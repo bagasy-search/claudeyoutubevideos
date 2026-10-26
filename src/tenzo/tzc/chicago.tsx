@@ -266,3 +266,74 @@ export const Recuerdo: React.FC<{ children: React.ReactNode; desde?: number }> =
 };
 
 export type { Look };
+
+// ---------- texto en pantalla RECTO y LIMPIO (Ojo del Director 26-oct: la letra a mano no se leía) ----------
+// Reemplaza a ManoLeo / ManoMara / TextoMano en tz05 y tz07: Fredoka recta sobre una pastilla oscura, palabra por palabra,
+// siempre dentro del cuadro (se acomoda sola si x deja la frase afuera). Misma firma que los de hud.tsx para cambiar sólo el import.
+type VozP = { texto: string; x: number; y: number; desde: number; hasta?: number; tam?: number; vel?: number; centro?: boolean; color?: string; rot?: number; brillo?: boolean };
+const VozLimpia: React.FC<VozP & { tinta: string; borde: string }> = ({ texto, x, y, desde, hasta, tam = 64, vel = 1.5, centro, tinta, borde }) => {
+  const f = useF();
+  if (f < desde || (hasta !== undefined && f > hasta)) return null;
+  const pal = texto.split(" ");
+  const n = (f - desde) * (vel / 5) + 1; // ~1 palabra cada 3 cuadros
+  const o = (hasta !== undefined ? interpolate(f, [hasta - 8, hasta], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1) * interpolate(f, [desde, desde + 5], [0, 1], { extrapolateRight: "clamp" });
+  const t = Math.max(48, Math.min(66, tam * 0.82));
+  const ancho = texto.length * t * 0.5 + 64; // ancho aproximado de la pastilla
+  const cx = centro ? Math.max(ancho / 2 + 40, Math.min(1880 - ancho / 2, x)) : Math.max(40 + ancho / 2, Math.min(1880 - ancho / 2, x + ancho / 2));
+  const top = Math.max(60, Math.min(1080 - t * 1.6 - 50, y));
+  return (
+    <div style={{ position: "absolute", left: cx, top, transform: "translateX(-50%)", opacity: o, whiteSpace: "nowrap", background: "rgba(12,10,10,0.78)", border: `2px solid ${borde}`, borderRadius: 16, padding: "8px 30px 12px", fontFamily: F_HUD, fontWeight: 600, fontSize: t, lineHeight: 1.15, color: tinta, letterSpacing: 0.5, boxShadow: "0 6px 24px rgba(0,0,0,0.45)" }}>
+      {pal.map((w, i) => <span key={i} style={{ opacity: Math.max(0, Math.min(1, n - i)) }}>{w}{i < pal.length - 1 ? " " : ""}</span>)}
+    </div>
+  );
+};
+export const ManoLeo: React.FC<VozP> = (p) => <VozLimpia {...p} tinta="#f4efe4" borde="rgba(244,239,228,0.25)" />;
+export const ManoMara: React.FC<VozP> = (p) => <VozLimpia {...p} tinta={ACENTO} borde={`${ACENTO}88`} />;
+export const TextoMano: React.FC<VozP> = (p) => <VozLimpia {...p} tinta={p.color ?? "#f4efe4"} borde="rgba(244,239,228,0.25)" />;
+
+// ---------- cámaras tipo para cortar las charlas (campo / contracampo / dos / inserto), con empuje lento de 6 % ----------
+const lento = (X: number, Y: number, z: number, s: number, extra: Partial<Clave> = {}): Clave[] => [mira(0, X, Y, z, extra), mira(Math.round(s * 30), X, Y, z * 1.06, { ...extra, curva: "inout" })];
+export const CAM = {
+  leo: (s: number, z = 2.2) => lento(L.leo + 40, LAV_PISO - 285, z, s),
+  tenzo: (s: number, z = 2.2) => lento(L.tenzo + 90, LAV_PISO - 220, z, s),
+  dos: (s: number, z = 1.5) => lento(1450, LAV_PISO - 270, z, s),
+  mesa: (s: number) => lento(L.tenzo - 110, LAV_PISO - 150, 3.2, s),
+  // por detrás del hombro de Leo: Leo grande y desenfocado a la izquierda, Tenzo al fondo
+  hombroLeo: (s: number) => lento(L.leo + 380, LAV_PISO - 300, 1.9, s),
+  mara: (s: number) => lento(L.leo - 160, LAV_PISO - 430, 1.5, s, { rot: -2 }),
+  // cuarto: Leo en la cama, plano medio y primer plano
+  cama: (s: number, z = 1.7) => lento(C.colchon + 40, CTO_PISO - 240, z, s),
+  camaPP: (s: number) => lento(C.colchon + 30, CTO_PISO - 270, 2.4, s),
+};
+
+// aguja con hilo en la mano de Tenzo (para que se vea que COSE): el hilo ondea
+export const Aguja: React.FC = () => {
+  const f = useF();
+  return (
+    <g>
+      <line x1={0} y1={0} x2={30} y2={-22} stroke="#e8ecf0" strokeWidth={3} strokeLinecap="round" />
+      <path d={`M30,-22 q${20 + 6 * Math.sin(f / 5)},${30} ${-6},${70 + 8 * Math.sin(f / 7)}`} stroke="#f4efe4" strokeWidth={1.8} fill="none" opacity={0.85} />
+    </g>
+  );
+};
+
+// fachada de un edificio de vidrio para los reels de Tyler (en coordenadas del teléfono 440x900): torre con grilla de
+// ventanas que reflejan el cielo, una palmera y la vereda — en vez de barras lisas
+export const EdificioVidrio: React.FC = () => {
+  const f = useF();
+  return (
+    <g>
+      <rect x={40} y={40} width={360} height={520} fill="#6f8fb4" />
+      {Array.from({ length: 13 }).map((_, r) => Array.from({ length: 6 }).map((__, c) => (
+        <rect key={`${r}-${c}`} x={52 + c * 58} y={52 + r * 39} width={50} height={31} fill={(r * 3 + c) % 5 === 0 ? "#dfeaf4" : "#9ab6d4"} opacity={0.75 + 0.2 * Math.sin((f + r * 9 + c * 13) / 40)} />
+      )))}
+      <path d="M40,40 L400,40 L400,70 L40,70 Z" fill="#4e6a8a" />
+      <path d="M40,560 L400,560 L400,600 L40,600 Z" fill="#3a4a5a" />
+      <g transform="translate(380,610)">
+        <path d="M0,0 Q8,-120 -6,-230" stroke="#6a4a2a" strokeWidth={10} fill="none" />
+        <path d="M-6,-230 q-60,8 -84,56 M-6,-230 q60,0 84,46 M-6,-230 q-16,-46 -70,-60 M-6,-230 q24,-46 76,-54" stroke="#3a8a4a" strokeWidth={12} fill="none" strokeLinecap="round" />
+      </g>
+      <rect x={0} y={600} width={440} height={300} fill="#c9ccd2" />
+    </g>
+  );
+};
