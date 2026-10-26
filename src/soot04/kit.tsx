@@ -193,7 +193,7 @@ export const Colinas: React.FC<{ capas: string[]; base?: number; dx?: number; se
 export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; color?: string; x: number; y: number; size?: number; centro?: boolean; tinta?: string }> = ({ t, t0, t1 = 1e9, text, color = C.violeta, x, y, size: size0 = 62, centro, tinta = "#fff" }) => {
   if (t < t0 || t > t1 + 0.3) return null;
   const size = Math.max(size0, 56); // vuelta 4: nada de etiquetas chicas
-  const s0 = ent(t, t0, 0, { damping: 11, stiffness: 180 });
+  const s0 = 0.62 + 0.38 * ent(t, t0, 0, { damping: 11, stiffness: 180 }); // vuelta 6: no nace diminuta
   const out = interpolate(t, [t1, t1 + 0.3], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const w = anchoTxt(text, size) + size * 0.84, z = seguro(centro ? x : x + w / 2, y, w, size * 1.5);
   const s = s0 * z.k;
@@ -207,14 +207,14 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
 // zona segura (vuelta 3 OJO): mete la caja del texto dentro del cuadro con margen para el empuje de cámara
 // devuelve centro x/y corregido y escala para que entre; w/h = caja estimada en px
 export const seguro = (cx: number, cy: number, w: number, h: number) => {
-  const MX = 90, MY = 80;
+  const MX = 110, MY = 96; // vuelta 6: más margen (el empuje de cámara llevaba textos al borde)
   const k = Math.min(1, (1920 - 2 * MX) / w, (1080 - 2 * MY) / h);
   const ww = w * k, hh = h * k;
   const x = Math.min(Math.max(cx, MX + ww / 2), 1920 - MX - ww / 2);
   const y = Math.min(Math.max(cy, MY + hh / 2), 1080 - MY - hh / 2);
   return { x, y, k };
 };
-export const anchoTxt = (txt: string, size: number) => txt.length * size * 0.62;
+export const anchoTxt = (txt: string, size: number) => txt.length * size * 0.67;
 // texto grande con contorno (títulos)
 export const Grande: React.FC<{ t: number; t0: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string }> = ({ t, t0, text, x = 960, y, size = 150, color = C.crema, borde = C.noche }) => {
   if (t < t0) return null;

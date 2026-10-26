@@ -1,20 +1,16 @@
 import React from "react";
 import { interpolate, Easing } from "remotion";
 import { C, ent, prog, fontFamily, seguro, anchoTxt } from "./kit";
+import { Ambiente } from "./ambiente";
 
 // Insertos a pantalla completa (vara del molde de Soot): fondo limpio de rayos o degradé, personaje GRANDE actuando,
 // un texto fuerte. Entran y salen por iris sobre el mundo continuo. Cada inserto vive en [a, b) en tiempo absoluto.
 export type Ins = { a: number; b: number; fondo: (t: number) => React.ReactNode; d: (t: number) => React.ReactNode; z?: number };
 
-export const Rayos2: React.FC<{ t: number; c1: string; c2: string; cx?: number; cy?: number; n?: number; vel?: number }> = ({ t, c1, c2, cx = 960, cy = 540, n = 16, vel = 6 }) => {
-  const g = 360 / n;
-  return (
-    <>
-      <div style={{ position: "absolute", inset: 0, background: `repeating-conic-gradient(from ${t * vel}deg at ${cx}px ${cy}px, ${c1} 0deg ${g / 2}deg, ${c2} ${g / 2}deg ${g}deg)` }} />
-      <div style={{ position: "absolute", inset: 0, background: `radial-gradient(circle at ${cx}px ${cy}px, rgba(255,255,255,.22) 0%, rgba(255,255,255,0) 38%, rgba(10,6,30,.38) 100%)` }} />
-    </>
-  );
-};
+// vuelta 6 OJO: el sunburst se reemplazó por ambientes ilustrados del tramo (ver ambiente.tsx); se conserva la firma
+export const Rayos2: React.FC<{ t: number; c1: string; c2: string; cx?: number; cy?: number; n?: number; vel?: number }> = ({ t, c1, c2, cx = 960, cy = 540 }) => (
+  <Ambiente t={t} c1={c1} c2={c2} cx={cx} cy={cy} />
+);
 export const Grad: React.FC<{ c1: string; c2: string; ang?: number }> = ({ c1, c2, ang = 180 }) => (
   <div style={{ position: "absolute", inset: 0, background: `linear-gradient(${ang}deg, ${c1}, ${c2})` }} />
 );
@@ -71,7 +67,7 @@ export const Dice: React.FC<{ t: number; t0: number; t1?: number; text: string; 
 // rótulo grande con salida
 export const Rot: React.FC<{ t: number; t0: number; t1?: number; text: string; x?: number; y: number; size?: number; color?: string; tiembla?: boolean }> = ({ t, t0, t1 = 1e9, text, x = 960, y, size = 130, color = C.crema, tiembla }) => {
   if (t < t0 || t > t1 + 0.2) return null;
-  const s = ent(t, t0, 0, { damping: 9, stiffness: 190 }) * interpolate(t, [t1, t1 + 0.2], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const s = (0.6 + 0.4 * ent(t, t0, 0, { damping: 9, stiffness: 190 })) * interpolate(t, [t1, t1 + 0.2], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const dx = tiembla ? Math.sin(t * 47) * 6 : 0, dy = tiembla ? Math.cos(t * 53) * 5 : 0;
   const z = seguro(x, y, anchoTxt(text, size) * 1.05 + size * 0.2, size * 1.3);
   return (
@@ -104,7 +100,7 @@ export const MostrarInsertos: React.FC<{ t: number; lista: Ins[] }> = ({ t, list
   }
   const i = lista[idx];
   // el contenido arranca ya armado (los elementos que entraban en `a` dejaban el primer cuadro vacío o un disco oscuro)
-  const tc = Math.max(tt, i.a + 0.3);
+  const tc = tt + 0.6 * Math.max(0, 1 - (tt - i.a));
   // vuelta 5: el iris/barrido muestreado a mitad parecía un disco negro o una mancha tapando la escena → corte seco siempre
   const tipo = "corte" as "iris" | "barrido" | "zoom" | "corte";
   const IN = 0.2;

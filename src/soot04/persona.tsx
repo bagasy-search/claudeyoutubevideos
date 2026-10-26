@@ -190,10 +190,13 @@ export const Persona: React.FC<Props> = (p) => {
           )}
           {casco === "capitan" && (
             <g>
+              {/* vuelta 6 OJO: la visera tapaba los ojos como antifaz → gorra y visera 34 px más arriba */}
+              <g transform="translate(0 -34)">
               <path d="M -96 -500 Q -100 -570 0 -572 Q 100 -570 96 -500 Z" fill={c("#1d2440")} />
               <path d="M -120 -500 Q 0 -540 120 -500 L 110 -482 Q 0 -506 -110 -482 Z" fill={c("#2a3358")} />
               <path d="M -86 -486 Q 0 -460 86 -486 L 92 -470 Q 0 -446 -92 -470 Z" fill={c("#10142a")} />
-              {!sombra && <circle cx={0} cy={-520} r={13} fill="#f7c548" />}
+              </g>
+              {!sombra && <circle cx={0} cy={-554} r={13} fill="#f7c548" />}
             </g>
           )}
           {casco === "galera" && (

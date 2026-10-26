@@ -1,9 +1,11 @@
 import React from "react";
 import { Persona, GREEN, MARINO, CAPITAN, Expr } from "./persona";
 
+const GRANJA = { ...GREEN, tunica: "#c0603a", tunica2: "#8e3e24", cinto: "#5a3418" };
 // el protagonista (el greenhand): camisa azul a rayas, pantalón oscuro; gorro rojo desde que se embarca
 export const Chico: React.FC<{ x: number; y: number; h?: number; t: number; expr?: Expr; habla?: boolean; camina?: number; bI?: number; bD?: number; cI?: number; cD?: number; mira?: number; miraY?: number; flip?: boolean; gorro?: boolean | "paja"; salta?: number; aparece?: number; inclina?: number; manoD?: React.ReactNode; manoI?: React.ReactNode; viejo?: boolean }> = ({ gorro = true, h = 230, ...p }) => (
-  <Persona {...p} h={h} seed={7} ropa={GREEN} rayas="#eaf2ff" pantalon="#2a3a5a" casco={gorro === "paja" ? "paja" : gorro ? "gorro" : "no"} />
+  // vuelta 6 OJO (continuidad): de granjero (sombrero de paja) lleva camisa de campo lisa; las rayas recién al embarcarse
+  <Persona {...p} h={h} seed={7} ropa={gorro === "paja" ? GRANJA : GREEN} rayas={gorro === "paja" ? undefined : "#eaf2ff"} pantalon={gorro === "paja" ? "#5a4a3a" : "#2a3a5a"} casco={gorro === "paja" ? "paja" : gorro ? "gorro" : "no"} />
 );
 
 // la tripulación del LYDIA, siempre la misma gente en el mismo lugar de la cubierta (x local del barco)

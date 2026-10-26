@@ -205,7 +205,7 @@ export const INS_C: Ins[] = [
       return (
         <>
           <Persona x={300} y={1290} h={900} t={t} seed={44} ropa={MARINO(2)} casco="no" barba="#7a5a2a" pantalon="#2a3a5a" expr={t < 680 ? "triste" : "miedo"} bD={t > 680 ? 150 : 30} cD={t > 680 ? 150 : 20} mira={1} />
-          {t < 680.5 && (
+          {t < 680.0 && (
             <div style={{ position: "absolute", left: 1060, top: 520, transform: `translate(-50%,-50%) scale(${ent(t, 676.4)})`, width: 640, height: 560, background: "#fff", border: `12px solid ${C.noche}`, borderRadius: 30, fontFamily, fontWeight: 700, textAlign: "center", color: C.noche }}>
               <div style={{ background: C.rojo, color: "#fff", fontSize: 70, padding: 16 }}>{t < 678.0 ? "AUG 1819" : "NOV 1820"}</div>
               <div style={{ fontSize: 230, lineHeight: "300px" }}>{t < 677.8 ? Math.min(15, Math.floor((t - 676.4) * 11)) : 20}</div>
@@ -247,18 +247,40 @@ export const INS_C: Ins[] = [
     a: 695.6, b: 702.5, z: 0.02,
     fondo: (t) => <Mar t={t * 3} y={420} cielo={["#a8b0b8", "#dce2e8"]} mar={["#3a6a8a", "#1a3a5a"]} />,
     d: (t) => {
-      const v = interpolate(t, [696.4, 700.7], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-      const golpe = t > 700.7;
-      const sac = golpe && t < 701.4 ? Math.sin(t * 60) * 16 * (701.4 - t) : 0;
+      // vuelta 6 OJO: la ballena venía vertical y quieta; ahora carga DE COSTADO desde la derecha, acelera con estela,
+      // golpe con flash blanco, la proa se astilla y la cámara tiembla y se acerca
+      const v = interpolate(t, [696.2, 700.7], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+      const golpe = t >= 700.7;
+      const wx = 2600 - (2600 - 1660) * (0.45 * v + 0.55 * v * v); // entra ya en cuadro y acelera
+      const sac = golpe && t < 702.0 ? Math.sin(t * 70) * 26 * (702.0 - t) : 0;
+      const zoom = 1 + 0.18 * v * v + (golpe ? 0.06 : 0);
+      const flash = golpe ? Math.max(0, 1 - (t - 700.7) / 0.25) : 0;
       return (
-        <div style={{ position: "absolute", inset: 0, transform: `translate(${sac}px, ${sac * 0.6}px)` }}>
-          <Ballenero x={960} y={560} t={t} escala={0.55} nombre="ESSEX" roto={golpe ? 0.12 : 0} />
-          <Svg x={960} y={interpolate(v * v, [0, 1], [460, 700])} s={0.25 + v * v * 1.1}><g transform="rotate(-90)"><Cachalote x={0} y={0} t={t} s={1} nada={1} enojo /></g></Svg>
-          {golpe && <Splash x={960} y={600} t={t} t0={700.7} s={3} />}
-          {!golpe && <Chip t={t} t0={697.5} text="STRAIGHT AT THE ESSEX" color={C.rojo} x={960} y={150} centro size={60} />}
-          {!golpe && <Chip t={t} t0={699.0} text="FASTER… AND FASTER" color={C.noche} x={960} y={250} centro size={54} />}
-          <Rot t={t} t0={700.7} text="RAM!" x={960} y={220} size={200} color={C.oro} tiembla />
-        </div>
+        <>
+          <div style={{ position: "absolute", inset: 0, transform: `translate(${sac}px, ${sac * 0.6}px) scale(${zoom})`, transformOrigin: "1250px 600px" }}>
+            <Ballenero x={760} y={560} t={t} escala={0.55} nombre="ESSEX" roto={golpe ? 0.12 * Math.min(1, (t - 700.7) / 0.4) : 0} />
+            {/* estela de espuma detrás de la ballena (crece con la velocidad) */}
+            {Array.from({ length: 14 }, (_, k) => {
+              const ex = wx + 420 + k * (60 + 120 * v);
+              return <div key={k} style={{ position: "absolute", left: ex, top: 600 - 10 + Math.sin(t * 8 + k) * 6, width: 90 + v * 70, height: 34 - k * 1.6, marginLeft: -45, borderRadius: "50%", background: "rgba(240,250,255,.8)", opacity: Math.max(0, 0.9 - k * 0.06) }} />;
+            })}
+            {!golpe && <Cachalote x={wx} y={600} t={t} s={0.85} flip nada={1 + v} enojo />}
+            {golpe && <Cachalote x={1660 + Math.sin(Math.min(1, (t - 700.7) / 0.6) * Math.PI) * 70} y={600} t={t} s={0.85} flip nada={0.5} enojo />}
+            {/* líneas de velocidad */}
+            {v > 0.3 && !golpe && Array.from({ length: 8 }, (_, k) => <div key={`l${k}`} style={{ position: "absolute", left: wx + 300 + ((k * 137 + t * 900) % 500), top: 470 + k * 34, width: 160 + v * 200, height: 6, borderRadius: 3, background: "rgba(255,255,255,.75)" }} />)}
+            {golpe && <Splash x={1240} y={590} t={t} t0={700.7} s={3.2} />}
+            {/* astillas de la proa */}
+            {golpe && Array.from({ length: 16 }, (_, k) => {
+              const u = Math.min(1, (t - 700.7) / 1.2), ang = -Math.PI * (0.15 + 0.7 * ((k * 7) % 16) / 16);
+              const vv = 500 + (k % 4) * 160;
+              return <div key={`a${k}`} style={{ position: "absolute", left: 1240 + Math.cos(ang) * vv * u, top: 560 + Math.sin(ang) * vv * u + 900 * u * u, width: 46 - (k % 3) * 10, height: 12, background: k % 2 ? "#7a4a26" : "#9a6a3a", border: "3px solid #2a1810", transform: `rotate(${k * 47 + u * 720}deg)`, opacity: 1 - u * 0.6 }} />;
+            })}
+          </div>
+          {!golpe && <Chip t={t} t0={697.5} text="STRAIGHT AT THE ESSEX" color={C.rojo} x={960} y={130} centro size={60} />}
+          {!golpe && <Chip t={t} t0={699.0} text="FASTER… AND FASTER" color={C.noche} x={960} y={230} centro size={56} />}
+          <Rot t={t} t0={700.7} text="RAM!" x={960} y={200} size={200} color={C.oro} tiembla />
+          {flash > 0 && <div style={{ position: "absolute", inset: 0, background: "#fff", opacity: flash }} />}
+        </>
       );
     },
   },
@@ -350,7 +372,7 @@ export const INS_C: Ins[] = [
           <Chip t={t} t0={737.9} text="THE OTHER WAY →" color={C.oro} tinta={C.noche} x={1250} y={200} centro size={58} />
           <Pollard x={1480} y={1290} h={820} t={t} expr={t > 747 ? "triste" : "enojado"} flip bD={100} cD={10} />
           <Monto t={t} ks={[[744.0, 0], [744.6, 4000]]} x={1000} y={960} size={90} pre="" suf="+ KM" color={C.crema} />
-          {t >= 738.8 && <div style={{ position: "absolute", left: 60, top: 900, fontFamily, fontWeight: 700, fontSize: 70, color: C.crema, WebkitTextStroke: `6px ${C.noche}`, paintOrder: "stroke fill" }}>DAY {dias}</div>}
+          {t >= 738.8 && <div style={{ position: "absolute", left: 150, top: 850, fontFamily, fontWeight: 700, fontSize: 70, color: C.crema, WebkitTextStroke: `6px ${C.noche}`, paintOrder: "stroke fill" }}>DAY {dias}</div>}
           <Rot t={t} t0={747.1} text="THE WHOLE TRAGEDY" x={960} y={160} size={110} color={C.rojo} />
         </>
       );
@@ -506,7 +528,7 @@ export const INS_C: Ins[] = [
             <Svg x={1250} y={620} s={0.5 * ent(t, 808.2)}><Cachalote x={0} y={0} t={t} s={1} /></Svg>
             <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><line x1={950} y1={440} x2={950 + 600 * prog(t, 808.6, 808.9)} y2={440 + 360 * prog(t, 808.6, 808.9)} stroke={C.noche} strokeWidth={26} strokeLinecap="round" /></svg>
             <Chip t={t} t0={808.6} text="IT WAS NOT THE WHALE" color={C.noche} x={1250} y={870} centro size={60} />
-            <Chip t={t} t0={809.9} text="ONLY 1 SHIP THAT DAY" color={C.violeta} x={1250} y={985} centro size={58} />
+            <Chip t={t} t0={809.9} text="ONLY 1 SHIP THAT DAY" color={C.violeta} x={1250} y={900} centro size={58} />
           </>
         )}
       </>

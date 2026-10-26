@@ -33,8 +33,8 @@ export const INS_A: Ins[] = [
       const tc = t < 10.9 ? 10.0 : t < 12.3 ? 10.95 : 12.35;
       return (
         <>
-          <svg style={{ position: "absolute", left: 1260, top: 560, overflow: "visible" }} width={1} height={1}>
-            <g transform={`scale(${ent(t, 9.8)})`}>
+          <svg style={{ position: "absolute", left: 1260, top: 520, overflow: "visible" }} width={1} height={1}>
+            <g transform={`scale(${0.88 * ent(t, 9.8)})`}>
               <circle r={330} fill={C.oro} stroke={C.noche} strokeWidth={12} />
               {t < tc && <text y={80} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={240} fill={C.noche} transform={`scale(${1 + Math.sin(t * 6) * 0.06})`}>?</text>}
               {Array.from({ length: n }, (_, i) => { const a = (i / n) * Math.PI * 2 - Math.PI / 2; const u = prog(t, tc + (i / n) * 0.35, tc + (i / n) * 0.35 + 0.1); return <line key={i} x1={0} y1={0} x2={Math.cos(a) * 330 * u} y2={Math.sin(a) * 330 * u} stroke="#a8781a" strokeWidth={n > 50 ? 2 : 6} opacity={n > 50 ? 0.45 : 1} />; })}
@@ -43,7 +43,7 @@ export const INS_A: Ins[] = [
           </svg>
           <Rot key={n} t={t} t0={tc} text={`1/${n}`} x={1260} y={150} size={n === 175 ? 150 : 120} color={n === 175 ? C.rojo : C.crema} />
           {t >= 10.85 && t < 12.3 && <div style={{ position: "absolute", left: 1150, top: 150, width: 220, height: 12, background: C.rojo, transform: `rotate(-8deg) scaleX(${prog(t, 11.0, 11.2)})`, transformOrigin: "left" }} />}
-          <Chip t={t} t0={9.85} t1={12.9} text="ONE SHARE = ?" color={C.violeta} x={1260} y={960} centro size={56} />
+          <Chip t={t} t0={9.85} t1={12.9} text="ONE SHARE = ?" color={C.violeta} x={1260} y={950} centro size={60} />
           <Chip t={t} t0={13.0} text="← YOU" color={C.rojo} x={1440} y={330} size={58} />
           <Chico x={470} y={1250} h={1050} t={t} gorro={false} expr={t < 12.4 ? "sorpresa" : "miedo"} bD={t > 12.8 ? 95 : 20} cD={t > 12.8 ? 10 : 30} mira={0.5} salta={12.45} />
           {t >= 12.5 && <Emote t={t} t0={12.5} tipo="sudor" x={600} y={300} s={1.1} />}

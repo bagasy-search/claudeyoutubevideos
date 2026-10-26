@@ -58,14 +58,14 @@ export const INS_B: Ins[] = [
         <Lampara x={960} y={200} t={t} s={1.5} />
         {t >= 278.6 && [0, 1, 2].map((k) => <Zzz key={k} x={[480, 1500, 600][k]} y={[300, 480, 680][k]} t={t + k} />)}
         <Monto t={t} ks={[[278.3, 0], [278.6, 20]]} x={330} y={150} size={100} color={C.crema} pre="" suf=" MEN" />
-        <Chip t={t} t0={282.5} text="SIZE OF A SMALL KITCHEN" color={C.violeta} x={1500} y={190} centro size={52} />
-        <Chip t={t} t0={284.6} text="NO WINDOWS" color={C.rojo} x={1500} y={290} centro size={52} />
-        <Chip t={t} t0={287.9} text="WHALE-OIL LAMP" color={C.ambar} tinta={C.noche} x={420} y={160} centro size={44} />
+        <Chip t={t} t0={282.5} t1={290.1} text="SIZE OF A SMALL KITCHEN" color={C.violeta} x={1500} y={190} centro size={52} />
+        <Chip t={t} t0={284.6} t1={290.1} text="NO WINDOWS" color={C.rojo} x={1500} y={290} centro size={52} />
+        <Chip t={t} t0={287.9} t1={290.1} text="WHALE-OIL LAMP" color={C.ambar} tinta={C.noche} x={1500} y={390} centro size={52} />
         {t >= 289.4 && <Gotas t={t} xs={[300, 520, 760, 1150, 1380, 1620, 860, 1040]} y0={0} y1={1080} />}
         <Marino i={3} x={590} y={1300} h={980} t={t} expr="dormido" flip />
         <Marino i={4} x={1330} y={1300} h={980} t={t} expr="dormido" />
         <Chico x={960} y={1260} h={1000} t={t} expr={t < 290 ? "triste" : "miedo"} bD={15} bI={15} cD={20} cI={20} />
-        <Rot t={t} t0={290.3} text="WET. FOR 4 YEARS." x={960} y={460} size={100} color="#8ac8f0" />
+        <Rot t={t} t0={290.3} text="WET. FOR 4 YEARS." x={960} y={230} size={110} color="#8ac8f0" />
       </>
     ),
   },
@@ -484,9 +484,9 @@ export const INS_B: Ins[] = [
             <path d="M 300 700 Q 900 760 1500 700" stroke="#2a3450" strokeWidth={10} fill="none" />
           </svg>
           {t < 565.2 && <Marino i={5} x={250} y={1300} h={980} t={t} expr={t < 560.6 ? "neutro" : "sorpresa"} mira={1} miraY={-0.4} salta={560.7} bD={t > 560.6 ? 120 : 60} cD={t > 560.6 ? 10 : 100} manoD={<path d="M -50 0 L 50 0 L 40 90 L -40 90 Z" fill="#8a8a9a" stroke={C.noche} strokeWidth={6} />} />}
-          <Chip t={t} t0={557.6} text="THE HEAD" color={C.violeta} x={960} y={90} centro size={56} />
-          <Rot t={t} t0={561.0} text="SPERMACETI" x={760} y={420} size={120} color={C.noche} />
-          <Chip t={t} t0={562.1} text="THE FINEST CANDLE WAX" color={C.ambar} tinta={C.noche} x={760} y={540} centro size={50} />
+          <Chip t={t} t0={557.6} t1={560.8} text="THE HEAD" color={C.violeta} x={960} y={90} centro size={56} />
+          <Rot t={t} t0={561.0} text="SPERMACETI" x={960} y={130} size={110} color={C.crema} />
+          <Chip t={t} t0={562.1} t1={565.7} text="THE FINEST CANDLE WAX" color={C.ambar} tinta={C.noche} x={960} y={1000} centro size={50} />
           {t >= 565.2 && (
             <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: "polygon(300px 240px, 1600px 240px, 1600px 620px, 300px 620px)" }}>
               <Marino i={2} x={interpolate(t, [565.3, 566.6], [1700, 1300], { extrapolateRight: "clamp" })} y={interpolate(t, [565.3, 566.6], [500, 760], { extrapolateRight: "clamp" })} h={600} t={t} expr="feliz" flip bD={t > 567.6 ? interpolate(Math.sin(t * 6), [-1, 1], [40, 140]) : 70} manoD={<path d="M -50 0 L 50 0 L 40 90 L -40 90 Z" fill="#8a8a9a" stroke={C.noche} strokeWidth={6} />} />

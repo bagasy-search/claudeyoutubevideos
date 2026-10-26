@@ -1,5 +1,4 @@
 import React from "react";
-import { interpolate, Easing } from "remotion";
 import { Chico } from "./reparto";
 import { Persona, MARINO, type Expr } from "./persona";
 
@@ -56,12 +55,12 @@ export const Primerplano: React.FC<{ t: number; lista: { a: number; b: number }[
     lado = j % 2;
   }
   const [a, b, expr, g, quien] = p;
-  const sube = Easing.out(Easing.cubic)(interpolate(t, [a, a + 0.3], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
-  const baja = interpolate(t, [b - 0.25, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const y = 1340 + (1 - sube) * 520 + baja * 520;
+  // vuelta 6 OJO: subía desde abajo y el corte lo agarraba con sólo los ojos asomando → entra ya armado (corte seco),
+  // más chico y más alto: cabeza y torso enteros dentro del cuadro
+  const y = 1250;
   // el gesto cambia a mitad de los tramos largos para que no quede posado
   const G2 = Math.floor((t - a) / 2.4) % 2 ? GESTO[g === "senala" ? "puno" : "senala"] : GESTO[g];
-  const comun = { x: lado ? 1630 : 290, y, h: 1150, t, expr, mira: lado ? -1 : 1, salta: a + 0.35, ...G2 };
+  const comun = { x: lado ? 1640 : 280, y, h: 980, t, expr, mira: lado ? -1 : 1, salta: a + 0.35, ...G2 };
   return quien === "essex"
     ? <Persona {...comun} seed={63} ropa={MARINO(3)} casco="gorro" gorroCol="#2b6ad0" pantalon="#2a3a5a" />
     : <Chico {...comun} />;
