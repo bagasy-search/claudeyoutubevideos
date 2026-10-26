@@ -3,7 +3,6 @@ import React from "react";
 import { AbsoluteFill, Audio, staticFile } from "remotion";
 import { Montaje, PlanoM, Trans } from "../../anikit/montaje";
 import * as A from "./planos";
-import { Respira } from "../respira";
 
 const CORTES: [number, React.FC, Trans?][] = [
   [0, A.P01Mini], [1.0, A.P02SemanaPasada, { tipo: "luz", d: 8 }], [2.62, A.P03Despierta, { tipo: "luz", d: 10, color: "#0e1430" }], [5.5, A.P04Rosa, { tipo: "fundido", d: 12 }],
@@ -21,7 +20,7 @@ export const OB02_FRAMES = 11460;
 const planos: PlanoM[] = CORTES.map(([t, El, trans], i) => {
   const a = Math.round(t * 30);
   const b = i + 1 < CORTES.length ? Math.round(CORTES[i + 1][0] * 30) : OB02_FRAMES;
-  return { dur: b - a, el: <Respira><El /></Respira>, trans };
+  return { dur: b - a, el: <El /> }; // corte seco siempre (OJO DEL DIRECTOR v1: fundidos = fantasmas y flashes)
 });
 
 export const Ob02: React.FC<{ audio?: boolean }> = ({ audio = true }) => (

@@ -23,7 +23,7 @@ export const OB01_FRAMES = 12250;
 const planos: PlanoM[] = CORTES.map(([t, El, trans], i) => {
   const a = Math.round(t * 30);
   const b = i + 1 < CORTES.length ? Math.round(CORTES[i + 1][0] * 30) : OB01_FRAMES;
-  return { dur: b - a, el: <El />, trans };
+  return { dur: b - a, el: <El /> }; // corte seco siempre (OJO DEL DIRECTOR v1: fundidos = fantasmas y flashes)
 });
 
 export const Ob01: React.FC<{ audio?: boolean }> = ({ audio = true }) => (

@@ -103,13 +103,13 @@ export const GranNumero: React.FC<{ rotulo: string; claves: { f: number; v: numb
 };
 
 // Texto escrito a mano (voz interior): las letras aparecen una a una con trazo, cada una apenas torcida
-export const TextoMano: React.FC<{ texto: string; x: number; y: number; desde: number; hasta?: number; color?: string; tam?: number; vel?: number; rot?: number; brillo?: boolean; centro?: boolean }> = ({ texto, x, y, desde, hasta, color = "#ff5fae", tam = 64, vel = 1.6, rot = -4, brillo = true, centro }) => {
+export const TextoMano: React.FC<{ texto: string; x: number; y: number; desde: number; hasta?: number; color?: string; tam?: number; vel?: number; rot?: number; brillo?: boolean; centro?: boolean; panel?: boolean }> = ({ texto, x, y, desde, hasta, color = "#ff5fae", tam = 64, vel = 1.6, rot = -4, brillo = true, centro, panel }) => {
   const f = useF();
   const n = Math.max(0, (f - desde) * (vel / 2));
   const o = hasta ? interpolate(f, [hasta - 12, hasta], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1;
   if (f < desde) return null;
   return (
-    <div style={{ position: "absolute", left: x, top: y, transform: `${centro ? "translateX(-50%) " : ""}rotate(${rot}deg)`, textAlign: centro ? "center" : undefined, fontFamily: F_MANO, fontWeight: 700, fontSize: tam, lineHeight: 1.05, color, opacity: o, whiteSpace: "pre", textShadow: brillo ? `0 0 14px ${color}99` : "0 3px 0 rgba(0,0,0,0.55), 0 0 22px rgba(0,0,0,0.7)" }}>
+    <div style={{ position: "absolute", left: x, top: y, transform: `${centro ? "translateX(-50%) " : ""}rotate(${rot}deg)`, textAlign: centro ? "center" : undefined, fontFamily: F_MANO, fontWeight: 700, fontSize: tam, lineHeight: 1.05, color, opacity: o * (panel ? Math.min(1, (f - desde) / 6) : 1), whiteSpace: "pre", ...(panel ? { background: "rgba(14,12,18,0.78)", padding: `${tam * 0.18}px ${tam * 0.42}px ${tam * 0.24}px`, borderRadius: tam * 0.35, boxShadow: "0 8px 24px rgba(0,0,0,0.35)" } : {}), textShadow: brillo ? `0 0 14px ${color}99` : "0 3px 0 rgba(0,0,0,0.55), 0 0 22px rgba(0,0,0,0.7)" }}>
       {texto.split("\n").map((lin, r, arr) => {
         const base = arr.slice(0, r).reduce((a, l) => a + l.length + 3, 0); // cada renglón arranca después del anterior (+pausa)
         return (
@@ -188,8 +188,8 @@ export const EtiquetaFlotante: React.FC<{ x: number; y: number; rotulo: string; 
   const v = typeof claves === "number" ? claves : valorEn(claves, f).v;
   return (
     <div style={{ position: "absolute", left: x, top: y, opacity: o, transform: `translate(-50%,-100%) scale(${0.7 + 0.3 * s})`, transformOrigin: "50% 100%", textAlign: "center", fontFamily: F_HUD, whiteSpace: "nowrap", textShadow: "0 3px 10px rgba(0,0,0,0.7)" }}>
-      <div style={{ fontWeight: 600, fontSize: tam, lineHeight: 1, color, fontVariantNumeric: "tabular-nums" }}>{v.toLocaleString("en-US", { minimumFractionDigits: dec, maximumFractionDigits: dec })}{sufijo}</div>
-      <div style={{ fontWeight: 500, fontSize: tam * 0.36, letterSpacing: 3, color: "#f4efe4", marginTop: 2 }}>{rotulo}</div>
+      <div style={{ display: "inline-block", fontWeight: 600, fontSize: tam, lineHeight: 1, color, fontVariantNumeric: "tabular-nums", background: "rgba(14,12,18,0.72)", borderRadius: tam * 0.3, padding: `${tam * 0.08}px ${tam * 0.26}px` }}>{v.toLocaleString("en-US", { minimumFractionDigits: dec, maximumFractionDigits: dec })}{sufijo}</div>
+      {rotulo && <div style={{ display: "table", margin: "4px auto 0", fontWeight: 600, fontSize: tam * 0.4, letterSpacing: 3, color: "#f4efe4", background: "rgba(14,12,18,0.72)", borderRadius: 10, padding: "2px 12px" }}>{rotulo}</div>}
       <div style={{ width: 3, height: tam * 0.4, background: color, margin: "6px auto 0", borderRadius: 2, opacity: 0.8 }} />
     </div>
   );

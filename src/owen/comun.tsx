@@ -31,7 +31,16 @@ export const HudOwen: React.FC<{ min?: number | ((f: number) => number); part?: 
 };
 
 // texto a mano de los videos de Owen: centrado en x, con sombra oscura (se lee sobre fondo claro) y nunca chico
-export const Mano: React.FC<React.ComponentProps<typeof TextoMano>> = ({ tam = 64, brillo = false, centro = true, ...r }) => <TextoMano {...r} tam={Math.max(62, tam)} brillo={brillo} centro={centro} />;
+// siempre sobre panel oscuro (se lee sobre carteles, ventanas y camas) y dentro de la zona segura (nunca cortado ni pegado al borde)
+export const Mano: React.FC<React.ComponentProps<typeof TextoMano>> = ({ tam = 64, brillo = false, centro = true, rot = -2, x, y, texto, ...r }) => {
+  const T = Math.max(64, tam);
+  const lin = texto.split(String.fromCharCode(10));
+  const ancho = Math.max(...lin.map((l) => l.length)) * T * 0.5 + T * 0.9;
+  const alto = lin.length * T * 1.05 + T * 0.5;
+  const X = centro ? Math.min(1920 - 70 - ancho / 2, Math.max(70 + ancho / 2, x)) : Math.min(1920 - 70 - ancho, Math.max(70, x));
+  const Y = Math.min(1080 - 150 - alto, Math.max(140, y));
+  return <TextoMano {...r} texto={texto} x={X} y={Y} tam={T} brillo={brillo} centro={centro} rot={rot} panel />;
+};
 
 // notas musicales que salen de alguien que tararea (en el MUNDO, dentro de medio)
 export const Notas: React.FC<{ x: number; y: number; desde?: number; hasta?: number; color?: string }> = ({ x, y, desde = 0, hasta = 1e9, color = "#ffd27a" }) => {

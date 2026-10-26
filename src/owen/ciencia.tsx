@@ -4,23 +4,39 @@ import React from "react";
 import { AbsoluteFill, interpolate, spring, useVideoConfig } from "remotion";
 import { F_HUD, F_MANO } from "../anikit/pantalla";
 import { useF } from "../anikit/camara";
-import { VERDE } from "./elenco";
+import { OWEN, VERDE } from "./elenco";
+import { Actor } from "../anikit/actor";
+import { EXPRESIONES } from "../anikit/personaje";
 
 const AMBAR = "#ffc24a", ROJO = "#ff5a4a", TINTA = "#f4efe4", FONDO = "#14203a";
 const ease = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (t) => 1 - Math.pow(1 - t, 3) });
 
-export const Pizarra: React.FC<{ children: React.ReactNode; titulo?: string; fuente?: string }> = ({ children, titulo, fuente }) => {
+// el que explica: Owen chiquito en la esquina que señala, habla, piensa y reacciona (la pizarra nunca queda sin personaje)
+const POSES_PROFE = ["señalar", "hablar", "pensar", "señalar", "manosCintura", "hablar", "encogerse", "señalar"];
+const CARAS_PROFE = ["neutral", "feliz", "pensar", "sorpresa", "neutral", "feliz"];
+const Profe: React.FC<{ f: number }> = ({ f }) => {
+  const per = 48;
+  const poses = Array.from({ length: 40 }).map((_, i) => ({ f: i * per, v: POSES_PROFE[i % POSES_PROFE.length] }));
+  const caras = Array.from({ length: 40 }).map((_, i) => ({ f: i * per + 10, v: CARAS_PROFE[i % CARAS_PROFE.length] in EXPRESIONES ? CARAS_PROFE[i % CARAS_PROFE.length] : "neutral" }));
+  return (
+    <g>
+      <ellipse cx={1745} cy={1036} rx={120} ry={18} fill="#0b1426" opacity={0.6} />
+      <Actor look={OWEN} escala={0.95} seed={9} ruta={[{ f: 0, x: 1760, y: 1030 }, { f: 300, x: 1760 }, { f: 330, x: 1700 }, { f: 600, x: 1700 }, { f: 630, x: 1760 }]} dir={[{ f: 0, v: -1 }]}
+        poses={poses} caras={caras} habla={Array.from({ length: 30 }).map((_, i) => [i * 70 + 6, i * 70 + 50] as [number, number])} miradas={[{ f: 0, v: { x: -0.6, y: -0.2 } }, { f: 200, v: { x: 0.3, y: 0.2 } }, { f: 260, v: { x: -0.6, y: -0.2 } }]} />
+    </g>
+  );
+};
+
+export const Pizarra: React.FC<{ children: React.ReactNode; titulo?: string; fuente?: string; profe?: boolean }> = ({ children, titulo, fuente, profe = true }) => {
   const f = useF();
   return (
     <AbsoluteFill style={{ background: FONDO }}>
       <svg viewBox="0 0 1920 1080" width="100%" height="100%">
         <defs><radialGradient id="pzv" cx="0.5" cy="0.45" r="0.75"><stop offset="0.55" stopColor="#000" stopOpacity={0} /><stop offset="1" stopColor="#000" stopOpacity={0.45} /></radialGradient></defs>
-        {/* la grilla deriva siempre (nunca un cuadro quieto: el QC del farm marca congelado a los 2 s) */}
-        <g transform={`translate(${-((f * 0.7) % 80)},${-((f * 0.35) % 80)})`}>
-          {Array.from({ length: 26 }).map((_, i) => <rect key={`v${i}`} x={i * 80} y={0} width={2} height={1160} fill="#22325a" />)}
-          {Array.from({ length: 15 }).map((_, i) => <rect key={`h${i}`} x={0} y={i * 80} width={2000} height={2} fill="#22325a" />)}
-        </g>
-        <g transform={`translate(${Math.sin(f / 40) * 7},${Math.cos(f / 52) * 5})`}>{children}</g>
+        {Array.from({ length: 25 }).map((_, i) => <rect key={`v${i}`} x={i * 80} y={0} width={2} height={1080} fill="#22325a" />)}
+        {Array.from({ length: 14 }).map((_, i) => <rect key={`h${i}`} x={0} y={i * 80} width={1920} height={2} fill="#22325a" />)}
+        {children}
+        {profe && <Profe f={f} />}
         {titulo && <text x={960} y={178} fontFamily={F_HUD} fontWeight={600} fontSize={52} letterSpacing={4} fill={TINTA} textAnchor="middle" opacity={ease(f, 0, 10)}>{titulo}</text>}
         {fuente && <text x={60} y={1040} fontFamily={F_HUD} fontSize={24} fill="#8a9ac0" textAnchor="start" opacity={ease(f, 10, 25)}>{fuente}</text>}
         <rect width={1920} height={1080} fill="url(#pzv)" />
@@ -164,7 +180,7 @@ export const MensajeCel: React.FC<{ de: string; texto: string; extra?: string; d
   const e = ease(f, desde, desde + 14);
   const chars = Math.floor(Math.max(0, f - desde - 10) * 1.8);
   return (
-    <g transform={`translate(${x + Math.sin(f / 33) * 6},${y + (1 - e) * 500 + Math.sin(f / 24) * 9}) rotate(${Math.sin(f / 45) * 0.8}) scale(${s})`} opacity={e}>
+    <g transform={`translate(${x},${y + (1 - e) * 500}) scale(${s})`} opacity={e}>
       <rect x={-230} y={-430} width={460} height={860} rx={60} fill="#111317" />
       <rect x={-210} y={-400} width={420} height={800} rx={40} fill="#0f1a2c" />
       <rect x={-50} y={-418} width={100} height={18} rx={9} fill="#000" />

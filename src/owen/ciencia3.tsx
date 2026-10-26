@@ -4,7 +4,8 @@ import React from "react";
 import { interpolate } from "remotion";
 import { F_HUD, F_MANO } from "../anikit/pantalla";
 import { useF } from "../anikit/camara";
-import { VERDE } from "./elenco";
+import { VERDE, TEEN } from "./elenco";
+import { Actor } from "../anikit/actor";
 import { Pizarra } from "./ciencia";
 
 const AMBAR = "#ffc24a", ROJO = "#ff5a4a", TINTA = "#f4efe4", AZUL = "#6fa8ff", GRIS = "#2a3a62", ROSA_C = "#f2a7c0";
@@ -129,6 +130,21 @@ export const Gardner: React.FC<{ dDias?: number; dHoras?: number; dSintomas?: nu
   const sint = ["trouble speaking", "memory failing", "seeing things"];
   return (
     <Pizarra titulo="RANDY GARDNER · 17 · 1964" fuente="Gulevich, Dement & Johnson, Arch Gen Psychiatry, 1966">
+      {/* antes de los números: el chico despierto en su silla, el almanaque que pasa hojas */}
+      <g opacity={1 - ease(f, dDias - 12, dDias)}>
+        <rect x={420} y={760} width={360} height={24} rx={6} fill="#6a4630" />
+        <rect x={440} y={784} width={16} height={240} fill="#4a3020" /><rect x={744} y={784} width={16} height={240} fill="#4a3020" />
+        <Actor look={TEEN} escala={1.15} seed={17} ruta={[{ f: 0, x: 860, y: 1030 }]} dir={[{ f: 0, v: -1 }]} asiento={[{ f: 0, v: 120 }]}
+          poses={Array.from({ length: 8 }).map((_, i) => ({ f: i * 22, v: i % 3 === 0 ? { tronco: 8, pI: 88, rI: 88, pD: 92, rD: 92, hD: 120, cD: 140, cabeza: 14 } : i % 3 === 1 ? { tronco: -4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 150, cD: 20, hI: 150, cI: 20, cabeza: -8 } : "sentado" }))}
+          caras={[{ f: 0, v: "neutral" }, { f: 60, v: "cansado" }, { f: 120, v: "zombi" }]} />
+        <g transform="translate(1240,380)">
+          <rect x={-150} y={-20} width={300} height={360} rx={16} fill={TINTA} />
+          <rect x={-150} y={-20} width={300} height={70} rx={16} fill={ROJO} />
+          <T x={0} y={32} s={40} w={700}>JAN 1964</T>
+          <T x={0} y={250} s={180} c="#14203a" w={800}>{Math.min(11, 1 + Math.floor(f / 14))}</T>
+          {f % 14 < 7 && <rect x={-150} y={60 - (f % 14) * 30} width={300} height={280} rx={8} fill="#ddd6c6" opacity={1 - (f % 14) / 7} />}
+        </g>
+      </g>
       <g opacity={ease(f, dDias, dDias + 10)}>
         <rect x={360} y={330} width={520} height={380} rx={24} fill={TINTA} />
         <rect x={360} y={330} width={520} height={90} rx={24} fill={ROJO} />

@@ -23,6 +23,30 @@ export type ActorProps = {
   enManoD?: React.ReactNode | ((f: number) => React.ReactNode); enManoI?: React.ReactNode | ((f: number) => React.ReactNode);
   ajuste?: (p: Pose, f: number) => Pose; // retoque final (IK para agarrar algo, temblor de miedo…)
   opacidad?: (f: number) => number; // aparecer / desvanecerse (el demonio que se va)
+  vivo?: number; // actuación de fondo (0 = apagada): gestos que se encadenan cuando la pose de la línea de tiempo no cambia
+};
+
+// ACTUACIÓN DE FONDO: nadie se queda tieso. Cada ~2 s un gesto (asiente, habla con la mano, se rasca, abre los brazos,
+// cambia el peso) que entra y sale con curva. Sólo toca un brazo si está suelto (no pisa celular, volante ni manos a la cara).
+const GESTOS: Partial<Pose>[] = [
+  { cabeza: 12, tronco: 3 }, { hD: 40, cD: 55, cabeza: -5 }, { tronco: -6, cabeza: -8, hI: -14 }, { hD: 120, cD: 135, cabeza: 9 },
+  { hI: -34, cI: 30, hD: 34, cD: 30, cabeza: -6 }, { cabeza: -12, tronco: 5 }, { hI: -40, cI: 60, cabeza: 6 }, { tronco: 7, hD: 22, cD: 80, hI: -20, cI: 70 },
+];
+const actuar = (p: Pose, f: number, seed: number, amp: number): Pose => {
+  const per = 58 + ((seed * 13) % 17);
+  const t = f + seed * 23;
+  const n = Math.floor(t / per), u = (t % per) / per;
+  const env = Math.pow(Math.sin(Math.PI * Math.min(1, u / 0.85)), 2) * amp;
+  const g = GESTOS[(n * 5 + seed * 3) % GESTOS.length];
+  const suelto = (h: number, c: number) => Math.abs(h) < 70 && c < 100;
+  const q = { ...p };
+  const ks = Object.keys(g) as (keyof Pose)[];
+  for (const k of ks) {
+    if ((k === "hD" || k === "cD") && !suelto(p.hD, p.cD)) continue;
+    if ((k === "hI" || k === "cI") && !suelto(p.hI, p.cI)) continue;
+    q[k] = (q[k] as number) + (g[k] as number) * env;
+  }
+  return q;
 };
 
 const curvas = { inout: Easing.inOut(Easing.cubic), lineal: (t: number) => t, out: Easing.out(Easing.cubic), in: Easing.in(Easing.cubic) };
@@ -52,7 +76,9 @@ export const estadoActor = (a: ActorProps, f: number, fps: number) => {
   const w = Math.min(1, v / (1.6 * esc));
   const fase = r.d / (ZANCADA(correr, huesosDe(a.look.estilo, a.look.alto)) * esc);
   const base = a.poses ? enTiempo(a.poses.map((k) => ({ ...k, v: pose(k.v) })), f, fps, mezclaPose) : pose();
-  let p = w > 0.01 ? mezclaPose(base, caminar(fase, correr), w) : base;
+  const vivo = a.vivo ?? 1;
+  const actuada = vivo > 0 && w < 0.5 ? actuar(base, f, a.seed ?? 0, vivo * (1 - w * 2)) : base;
+  let p = w > 0.01 ? mezclaPose(actuada, caminar(fase, correr), w) : actuada;
   if (a.ajuste) p = a.ajuste(p, f);
   const e: Expr = a.caras ? enTiempo(a.caras.map((k) => ({ ...k, v: EXPRESIONES[k.v] })), f, fps, mezclaExpr, 150) : EXPRESIONES.neutral;
   // dirección: la fijada, o la del último movimiento

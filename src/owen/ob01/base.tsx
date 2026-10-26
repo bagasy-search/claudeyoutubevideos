@@ -56,7 +56,10 @@ export const OwenAlVolante: React.FC<{ o?: OwenVol }> = ({ o = {} }) => {
 export const EnBus: React.FC<{
   cl: Clave[]; hora?: Hora; min?: number | ((f: number) => number); part?: string | null; avance?: (f: number) => number; puertaF?: (f: number) => number; puertaT?: (f: number) => number;
   timbre?: (f: number) => boolean; paradas?: { a: number; num?: number }[]; pas?: Pas[]; owen?: OwenVol | null; medio?: React.ReactNode; detras?: React.ReactNode; hud?: React.ReactNode; seed?: number; mano?: number;
-}> = ({ cl, hora = "manana", min, part = "47/47", avance, puertaF, puertaT, timbre, paradas, pas = [], owen = {}, medio, detras, hud, seed = 1, mano = 2.5 }) => (
+}> = ({ cl: cl0, hora = "manana", min, part = "47/47", avance, puertaF, puertaT, timbre, paradas, pas = [], owen = {}, medio, detras, hud, seed = 1, mano = 2.5 }) => {
+  // nunca un plano general del bus con la gente chiquita: zoom mínimo 1,35 alrededor del mismo centro (OJO DEL DIRECTOR v1)
+  const cl = cl0.map((c) => (c.zoom >= 1.35 ? c : { ...c, x: (c.x / c.zoom) * 1.35, y: (c.y / c.zoom) * 1.35, zoom: 1.35 }));
+  return (
   <Escena Set={BusInterior} pal={PAL} claves={cl} seed={seed} mano={mano} setProps={{ hora, avance, puertaF, puertaT, timbre, paradas }}
     detras={detras}
     medio={<>
@@ -70,7 +73,8 @@ export const EnBus: React.FC<{
       <HudOwen min={min} part={part} />
     </>}
   />
-);
+  );
+};
 
 export const useFps = () => useVideoConfig().fps;
 

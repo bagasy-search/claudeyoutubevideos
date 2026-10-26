@@ -85,7 +85,8 @@ export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; ch
   // en el primer cuadro (antes de la 1ª clave no hay pasado) se mide hacia adelante: el plano entra YA en movimiento
   const q = f - 1 < claves[0].f ? poseEn(claves, f + 1, fps) : poseEn(claves, f - 1, fps);
   const vx = Math.abs(p.x - q.x), vy = Math.abs(p.y - q.y);
-  const sx = Math.min(60, vx * 0.5), sy = Math.min(60, vy * 0.5);
+  // sólo en barridos de verdad (>24 px/cuadro): en los empujes normales el desenfoque se leía como imagen borrosa / lag
+  const sx = vx > 24 ? Math.min(28, (vx - 24) * 0.35) : 0, sy = vy > 24 ? Math.min(28, (vy - 24) * 0.35) : 0;
   const mb = sx > 1.5 || sy > 1.5;
   const id = `mb${seed}`;
   return (
