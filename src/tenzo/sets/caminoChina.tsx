@@ -32,12 +32,12 @@ export const CaminoChina: React.FC<SetProps> = ({ capa, f }) => {
   if (capa === "lejos") {
     return (
       <g>
-        <Cielo c={["#e9925a", "#f6c27a", "#ffe6b0"]} />
+        <Cielo c={["#e9925a", "#f6c27a", "#ffe6b0"]} x={-4500} w={11000} />
         <Halo x={2300} y={330} r={520} color="#fff1c4" fuerza={0.85} />
         <circle cx={2300} cy={330} r={80} fill="#fff6dc" />
         {/* tres cordones de montañas suaves, de lejos a cerca */}
-        <path d="M-1500,560 Q-900,300 -300,520 Q300,260 900,500 Q1500,240 2100,480 Q2700,280 3300,500 Q3900,300 4600,520 L4600,900 L-1500,900 Z" fill="#e3a46a" />
-        <path d="M-1500,640 Q-700,440 0,620 Q700,420 1400,600 Q2100,440 2800,610 Q3500,450 4600,620 L4600,900 L-1500,900 Z" fill="#cf8e58" />
+        <path d="M-3500,560 Q-900,300 -300,520 Q300,260 900,500 Q1500,240 2100,480 Q2700,280 3300,500 Q3900,300 4600,520 L4600,900 L-3500,900 Z" fill="#e3a46a" />
+        <path d="M-3500,640 Q-700,440 0,620 Q700,420 1400,600 Q2100,440 2800,610 Q3500,450 4600,620 L4600,900 L-3500,900 Z" fill="#cf8e58" />
         {/* nubes largas */}
         {[[-400, 180], [900, 120], [2900, 200]].map(([x, y], i) => (
           <ellipse key={i} cx={x + Math.sin(f / 300 + i) * 30} cy={y} rx={260} ry={26} fill="#fff1cf" opacity={0.6} />
@@ -54,10 +54,10 @@ export const CaminoChina: React.FC<SetProps> = ({ capa, f }) => {
   if (capa === "frente") {
     return (
       <g>
-        <Polvo x={-200} y={300} w={4200} h={620} n={60} color="#fff0c8" f={f} seed={31} />
+        <Polvo x={-2700} y={300} w={6700} h={620} n={60} color="#fff0c8" f={f} seed={31} />
         {/* matas de pasto seco que pasan por delante */}
-        {Array.from({ length: 14 }).map((_, i) => {
-          const x = -600 + i * 360 + random(`pm${i}`) * 120;
+        {Array.from({ length: 21 }).map((_, i) => {
+          const x = -3000 + i * 360 + random(`pm${i}`) * 120;
           return (
             <g key={i} transform={`translate(${x},${P + 140})`}>
               {Array.from({ length: 7 }).map((__, k) => (
@@ -74,10 +74,10 @@ export const CaminoChina: React.FC<SetProps> = ({ capa, f }) => {
     <g>
       {/* campos en terrazas detrás del camino */}
       {[0, 1, 2].map((r) => (
-        <rect key={r} x={-900} y={P - 240 + r * 70} width={5400} height={74} fill={osc(CAMPO, 1 - r * 0.07)} />
+        <rect key={r} x={-3400} y={P - 240 + r * 70} width={7900} height={74} fill={osc(CAMPO, 1 - r * 0.07)} />
       ))}
-      {Array.from({ length: 70 }).map((_, i) => (
-        <path key={i} d={`M${-880 + i * 78},${P - 170} q4,-26 ${Math.sin(f / 40 + i) * 6},-44`} stroke="#8e7426" strokeWidth={5} fill="none" strokeLinecap="round" />
+      {Array.from({ length: 100 }).map((_, i) => (
+        <path key={i} d={`M${-3380 + i * 78},${P - 170} q4,-26 ${Math.sin(f / 40 + i) * 6},-44`} stroke="#8e7426" strokeWidth={5} fill="none" strokeLinecap="round" />
       ))}
       {/* aldeas en los dos extremos */}
       <g>{[-260, -40, 180].map((x, i) => <Casa key={i} x={x} y={P - 170} s={0.9 - i * 0.05} seed={i} />)}</g>
@@ -91,11 +91,11 @@ export const CaminoChina: React.FC<SetProps> = ({ capa, f }) => {
         ))}
       </g>
       {/* el camino de tierra (ancho, con huellas de carro) */}
-      <rect x={-900} y={P - 30} width={5400} height={900} fill={TIERRA} />
-      <rect x={-900} y={P - 34} width={5400} height={10} fill={osc(TIERRA, 0.85)} />
-      {[P + 30, P + 70].map((y, i) => <rect key={i} x={-900} y={y} width={5400} height={5} rx={2} fill={osc(TIERRA, 0.82)} />)}
-      {Array.from({ length: 40 }).map((_, i) => (
-        <ellipse key={i} cx={-860 + i * 135 + random(`pi${i}`) * 60} cy={P + 10 + random(`py${i}`) * 110} rx={8 + random(`pr${i}`) * 10} ry={4} fill={osc(TIERRA, 0.75)} />
+      <rect x={-3400} y={P - 30} width={7900} height={900} fill={TIERRA} />
+      <rect x={-3400} y={P - 34} width={7900} height={10} fill={osc(TIERRA, 0.85)} />
+      {[P + 30, P + 70].map((y, i) => <rect key={i} x={-3400} y={y} width={7900} height={5} rx={2} fill={osc(TIERRA, 0.82)} />)}
+      {Array.from({ length: 60 }).map((_, i) => (
+        <ellipse key={i} cx={-3360 + i * 135 + random(`pi${i}`) * 60} cy={P + 10 + random(`py${i}`) * 110} rx={8 + random(`pr${i}`) * 10} ry={4} fill={osc(TIERRA, 0.75)} />
       ))}
       {/* mojón de piedra con un carácter tallado */}
       <g transform={`translate(${CHINA_PUNTOS.mojon},${P - 20})`}>
