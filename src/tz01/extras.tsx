@@ -17,12 +17,12 @@ const CREMA = "#f4efe6";
 export const Pensamiento: React.FC<{ x: number; y: number; w: number; h: number; desde: number; hasta?: number; cola: { x: number; y: number }; children?: React.ReactNode; fondo?: string }> = ({ x, y, w, h, desde, hasta, cola, children, fondo = CREMA }) => {
   const f = useF();
   const { fps } = useVideoConfig();
+  const id = "pz" + React.useId().replace(/:/g, "");
   if (f < desde || (hasta !== undefined && f > hasta)) return null;
   const s = spring({ frame: f - desde, fps, config: { damping: 12, stiffness: 150 } });
   const o = hasta !== undefined ? lerp(f, hasta - 8, hasta, 1, 0) : 1;
   // burbujitas de la cola: del borde del globo a la cabeza
   const bx = x, by = y + h / 2;
-  const id = "pz" + React.useId().replace(/:/g, "");
   return (
     <AbsoluteFill style={{ opacity: o, pointerEvents: "none" }}>
       <svg width={1920} height={1080} style={{ position: "absolute" }}>
