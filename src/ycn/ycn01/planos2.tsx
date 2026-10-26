@@ -116,6 +116,7 @@ export const P41Once: React.FC = () => {
   const k = kDe(241.13);
   const f = useF();
   const min = Math.round(interpolate(f, [0, k(244.4)], [16, 27], { extrapolateRight: "clamp" }));
+  const seg = Math.round(interpolate(f, [0, k(244.4)], [0, 660], { extrapolateRight: "clamp" })); // el cronómetro corre 0:00 → 11:00
   return (
     <AbsoluteFill>
       <Sala cl={[mira(0, BA + 180, 640, 1.9), mira(k(244.8), BA + 200, 650, 2.1, { curva: "inout" })]} banco zapatos sp={{ tv: "alerta" }}
@@ -123,7 +124,7 @@ export const P41Once: React.FC = () => {
       <div style={{ position: "absolute", left: 1250, top: 110, fontFamily: F_HUD, fontWeight: 600, fontSize: 110, color: ROJO, fontVariantNumeric: "tabular-nums", textShadow: "0 0 30px rgba(255,74,61,0.6)" }}>8:{String(min).padStart(2, "0")} PM</div>
       <div style={{ position: "absolute", left: 1300, top: 300, width: 300, height: 300, borderRadius: 150, border: "10px solid #f4efe4", background: "rgba(10,12,20,0.75)" }}>
         <div style={{ position: "absolute", left: 140, top: 20, width: 10, height: 130, background: ROJO, transformOrigin: "5px 130px", transform: `rotate(${interpolate(f, [0, k(244.4)], [0, 330], { extrapolateRight: "clamp" })}deg)` }} />
-        <div style={{ position: "absolute", left: 0, right: 0, top: 190, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 56, color: "#f4efe4", fontVariantNumeric: "tabular-nums" }}>{min - 16}:00</div>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 190, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 56, color: "#f4efe4", fontVariantNumeric: "tabular-nums" }}>{Math.floor(seg / 60)}:{String(seg % 60).padStart(2, "0")}</div>
       </div>
       <Dice quien="rafi" t="11 minutes" x={1600} y={620} desde={k(243)} tam={80} />
       <HudDia dia={1} desde={9999} />
@@ -302,7 +303,7 @@ export const P54Metal: React.FC = () => (
 export const P55Rueda: React.FC = () => {
   const k = kDe(314.33);
   return (
-    <Sala cl={[mira(0, PU - 100, P - 120, 1.7), mira(k(318), PU - 320, P - 100, 1.9, { curva: "inout" }), mira(k(321), PU - 420, P - 90, 2.2, { curva: "inout" })]} sp={{ luz: "alerta", persiana: (ff: number) => interpolate(ff, [0, k(317.2)], [0.88, 1], { extrapolateRight: "clamp" }) }}
+    <Sala cl={[mira(0, PU - 100, P - 120, 1.7), mira(k(318), PU - 320, P - 20, 1.7, { curva: "inout" }), mira(k(321), PU - 360, P, 1.8, { curva: "inout" })]} sp={{ luz: "alerta", persiana: (ff: number) => interpolate(ff, [0, k(317.2)], [0.88, 1], { extrapolateRight: "clamp" }) }}
       gente={[{ l: MARLON, ruta: [{ f: 0, x: PU + 120, y: P }, { f: k(317.2), x: PU - 420, curva: "out" }], p: [{ f: 0, v: { tronco: 80, pI: 60, rI: 90, pD: 70, rD: 100, hD: 90, cD: 10, hI: 60, cI: 120 } }, { f: k(317.2), v: { ...{ tronco: -70, pI: -80, rI: 10, pD: -70, rD: 20 }, hI: 50, cI: 130, hD: 20, cD: 30, bajar: 120 } }], c: "miedo", d: -1, mD: <Maletin /> }]}
       hud={<Rotulo t="his LEFT arm" x={1150} y={720} desde={k(320.5)} flecha="izq" />} />
   );
@@ -486,13 +487,23 @@ export const P70DayOne: React.FC = () => {
   );
 };
 
+// la pantalla de la pista 8 en grande (inserto): DAY ONE en naranja con brillo, entra con un rebote corto
+const Pantallon: React.FC<{ desde: number }> = ({ desde }) => {
+  const f = useF();
+  if (f < desde) return null;
+  const u = interpolate(f, [desde, desde + 8, desde + 12], [0.6, 1.06, 1], { extrapolateRight: "clamp" });
+  return (
+    <div style={{ position: "absolute", left: 960, top: 300, transform: `translateX(-50%) scale(${u})`, width: 760, height: 300, borderRadius: 18, background: "#14100c", border: "10px solid #3a3530", boxShadow: "0 0 80px rgba(255,150,40,0.55)", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 150, color: "#ffa23a", letterSpacing: 6, textShadow: "0 0 30px rgba(255,150,40,0.9)" }}>DAY ONE</div>
+  );
+};
+
 // ---------- 71 · «para que lo vea desde cualquier lado» ----------
 export const P71Lado: React.FC = () => {
   const k = kDe(408.3);
   return (
     <Sala cl={[mira(0, pistaX(8) - 40, 721, 1.45), mira(k(410.6), pistaX(8) - 60, 480, 1.25, { curva: "inout" })]} sp={{ luz: "noche", persiana: 1, tiza: 1, dia: "DAY ONE" }}
       gente={[{ l: CAL, x: pistaX(8) - 60, p: "parado", c: "triste", d: -1, luz: RIM.pantalla }, { l: NELL, x: 1860, sent: 0, p: "sentadoSuelo", c: "neutral", d: 1, mir: { x: 0, y: -1 }, mD: <Walkie s={0.8} /> }]}
-      hud={<><HudDia dia={1} /><Dice quien="cal" t="So she can see it from anywhere." x={960} y={150} desde={k(408.5)} centro tam={64} /></>} />
+      hud={<><HudDia dia={1} /><Dice quien="cal" t="So she can see it from anywhere." x={960} y={150} desde={k(408.5)} centro tam={64} /><Pantallon desde={k(409.4)} /></>} />
   );
 };
 

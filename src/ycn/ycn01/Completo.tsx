@@ -19,7 +19,7 @@ const CORTES: [number, React.FC, Trans?][] = [
   [260.83, B.P45Puertas], [269.19, B.P46Waffle], [274.75, B.P47Nombre], [277.85, B.P48Cal], [282.95, B.P49Persiana, F(8)], [288.53, B.P50Tira], [291.41, B.P51Grita], [296.27, B.P52Walkie],
   [303.87, B.P53Tiro], [311.07, B.P54Metal], [314.33, B.P55Rueda], [323.11, B.P56Bien], [328.07, B.P57Golpes], [334.51, B.P58Palanca, { tipo: "cortina" }], [338.65, B.P59Paran], [344.2, B.P60Silencio, F(12)],
   [347.6, B.P61SeVan, F(10)], [351.41, B.P62Regla1, F(12)], [356.0, B.P63Regla2, F(10)], [361.3, B.P64Cuento], [369.4, B.P65Cuento2], [376.2, B.P66Freezer, { tipo: "cortina" }], [384.23, B.P67Tiza, F(10)],
-  [386.91, B.P68Raya], [396.77, B.P69Mira], [401.91, B.P70DayOne], [408.3, B.P71Lado], [410.6, B.P72Tres, F(16)], [414.75, B.P73Toc], [419.95, B.P74Frio, { tipo: "cortina" }], [427.13, B.P75Ley, F(10)],
+  [386.91, B.P68Raya], [396.77, B.P69Mira], [401.91, B.P70DayOne], [408.3, B.P71Lado], [410.6, B.P72Tres, F(16)], [414.75, B.P73Toc], [419.95, B.P74Frio], [427.13, B.P75Ley, F(10)],
   [433.49, B.P76Vivo], [439.71, B.P77NoPodia], [441.1, B.P78Gus, L(14, "#ffd38a")], [451.21, B.P79Uno, L(10, "#0b0a0c")], [456.5, B.P80Final, F(16)],
 ];
 export const YCN01_FRAMES = 466 * 30;

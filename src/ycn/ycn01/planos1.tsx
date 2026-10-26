@@ -7,6 +7,7 @@ import { Walkie } from "../../anikit/props";
 import { NELL, CAL, DOT, RAFI, MARLON, ANA, PINPAL, LIGA, LIGA2, LIGA3, RIM, ROJO, AMARILLO, zombi, WAFFLE } from "../elenco";
 import { pistaX, PISTAS_PUNTOS as PP } from "../sets/pistas";
 import { Bola, Linterna, Maletin, Pancho, Papas, Anotador } from "../utileria";
+import { Mapa, Velo as VeloX } from "../../anikit/explica";
 import { A, Afuera, Dice, Sacude, Foto, HudDia, kDe, Maquinas, P, Rotulo, Sala, Velo } from "../base";
 
 const CH = PP.cadena, PU = PP.puerta;
@@ -358,7 +359,9 @@ export const P28Sirenas: React.FC = () => {
   return (
     <Afuera cl={[mira(0, 1200, 760, 1.2), mira(k(172.7), 1450, 740, 1.05, { curva: "inout" })]} sp={{ sirenas: true }}
       gente={[{ l: zombi(WAFFLE), ruta: [{ f: 0, x: 900 }, { f: 130, x: 1500 }], p: "zombi", c: "zombi", d: 1, luz: RIM.neon }, { l: zombi(LIGA2), ruta: [{ f: 0, x: 2200 }, { f: 130, x: 1750 }], p: "zombi", c: "zombi", d: -1, luz: RIM.neon }]}
-      hud={<><Balizas /><Dice quien="rafi" t="not one." x={300} y={200} desde={k(170.7)} tam={70} /><Dice quien="rafi" t="all of them." x={900} y={260} desde={k(171.7)} tam={84} /></>} />
+      hud={<><Balizas /><VeloX desde={2} o={0.3} /><Mapa x={1370} y={560} w={860} h={560} desde={4} dur={80} estilo="mapa" titulo="SIRENS · ALL OF THEM" acento={ROJO} seed={7}
+        puntos={[{ x: 90, y: 420, rotulo: "ROUTE 4", lado: "der" }, { x: 250, y: 360, via: true }, { x: 400, y: 300, rotulo: "HIGH ST" }, { x: 560, y: 240, via: true }, { x: 720, y: 150, rotulo: "HOSPITAL", lado: "izq" }]} />
+        <Dice quien="rafi" t="not one." x={120} y={200} desde={k(170.7)} tam={70} /><Dice quien="rafi" t="all of them." x={120} y={320} desde={k(171.7)} tam={84} /></>} />
   );
 };
 

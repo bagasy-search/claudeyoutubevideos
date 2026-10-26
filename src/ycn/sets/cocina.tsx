@@ -22,13 +22,14 @@ export const CocinaYcn: React.FC<SetProps & { luz?: "prendida" | "noche"; puerta
   return (
     <g>
       {/* azulejos blancos */}
-      <rect x={-800} y={-1500} width={4200} height={P + 1500} fill={oscuro ? "#2a3236" : "#e2ddd0"} />
-      {Array.from({ length: 60 }).map((_, i) => <rect key={`h${i}`} x={-800} y={-1500 + i * 46} width={4200} height={2} fill={oscuro ? "#222a2e" : "#cfc8b8"} />)}
-      {Array.from({ length: 70 }).map((_, i) => <rect key={`v${i}`} x={-800 + i * 62} y={-1500} width={2} height={P + 1500} fill={oscuro ? "#222a2e" : "#cfc8b8"} />)}
+      <rect x={-800} y={-1500} width={4200} height={P + 1500} fill={oscuro ? "#384650" : "#e2ddd0"} />
+      {Array.from({ length: 60 }).map((_, i) => <rect key={`h${i}`} x={-800} y={-1500 + i * 46} width={4200} height={2} fill={oscuro ? "#2f3b43" : "#cfc8b8"} />)}
+      {Array.from({ length: 70 }).map((_, i) => <rect key={`v${i}`} x={-800 + i * 62} y={-1500} width={2} height={P + 1500} fill={oscuro ? "#2f3b43" : "#cfc8b8"} />)}
       <rect x={-800} y={P - 260} width={4200} height={14} fill={oscuro ? "#3a2a26" : "#3f9a55"} />
       {/* tubo fluorescente */}
       <rect x={700} y={-260} width={900} height={18} rx={9} fill={oscuro ? "#3a4a4e" : "#f4fbff"} />
       {!oscuro && <Cono x={1150} y={-240} alto={1150} ancho={1600} boca={900} color="#f4fbff" fuerza={0.16} />}
+      {oscuro && <Cono x={1150} y={-240} alto={1150} ancho={1600} boca={900} color="#9fc4ff" fuerza={0.07} />}
       {/* mesa de preparación */}
       <rect x={150} y={P - 230} width={550} height={18} rx={4} fill="#b9c4c8" />
       <rect x={170} y={P - 212} width={12} height={212} fill="#8a959a" /><rect x={668} y={P - 212} width={12} height={212} fill="#8a959a" />
