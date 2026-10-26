@@ -119,7 +119,7 @@ export const TarjetaSemana: React.FC<{ lineas: { t: string; desde: number; color
 };
 
 // ---------- celular en primer plano con un mensaje que se escribe ----------
-export const CeluMensaje: React.FC<{ de: string; lineas: string[]; desde: number; escribe?: number; x?: number; y?: number; esc?: number; vibra?: number }> = ({ de, lineas, desde, escribe, x = 960, y = 560, esc = 1, vibra = 0 }) => {
+export const CeluMensaje: React.FC<{ de: string; lineas: string[]; desde: number; escribe?: number; x?: number; y?: number; esc?: number; vibra?: number; hora?: string }> = ({ de, lineas, desde, escribe, x = 960, y = 560, esc = 1, vibra = 0, hora = "5:12" }) => {
   const f = useF();
   const { fps } = useVideoConfig();
   const s = spring({ frame: f - desde, fps, config: { damping: 14, stiffness: 90 } });
@@ -129,7 +129,7 @@ export const CeluMensaje: React.FC<{ de: string; lineas: string[]; desde: number
   return (
     <div style={{ position: "absolute", left: x - 230 * esc + vib, top: y - 420 * esc + (1 - s) * 700, width: 460 * esc, height: 860 * esc, borderRadius: 60 * esc, background: "#141418", boxShadow: "0 30px 80px rgba(0,0,0,0.6)", padding: 18 * esc, boxSizing: "border-box" }}>
       <div style={{ width: "100%", height: "100%", borderRadius: 44 * esc, background: "linear-gradient(#1d2733,#0e141b)", overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", top: 60 * esc, width: "100%", textAlign: "center", fontFamily: F_HUD, fontWeight: 500, color: "#e9eef2", fontSize: 92 * esc }}>5:12</div>
+        <div style={{ position: "absolute", top: 60 * esc, width: "100%", textAlign: "center", fontFamily: F_HUD, fontWeight: 500, color: "#e9eef2", fontSize: 92 * esc }}>{hora}</div>
         <div style={{ position: "absolute", top: 230 * esc, left: 22 * esc, right: 22 * esc, borderRadius: 28 * esc, background: "rgba(240,244,248,0.94)", padding: `${22 * esc}px ${24 * esc}px`, fontFamily: F_HUD, color: "#20242c" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 * esc, fontSize: 22 * esc, fontWeight: 600, color: "#2a6fd6" }}>
             <div style={{ width: 34 * esc, height: 34 * esc, borderRadius: 9 * esc, background: "#2a6fd6", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20 * esc }}>H</div>{de}
