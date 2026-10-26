@@ -18,7 +18,7 @@ export const keys0: K[] = [
   [16.9, 640, 520, 1.25], [17.9, YX + 30, 480, 2.0], [18.8, YX + 160, 470, 1.6], [20.4, YX + 140, 560, 1.05], [22.4, YX + 120, 560, 1.15],
   [23.1, YX + 10, 450, 2.3], [24.6, YX + 60, 440, 1.75], [26.6, YX + 80, 450, 1.55], [27.4, 1400, 500, 0.9], [28.7, 3100, 520, 0.85],
   [31.8, 3100, 500, 1.0], [33.6, 3100, 480, 0.9], [37.0, 3450, 470, 0.95], [38.5, 3500, 470, 1.0], [39.7, 3000, 455, 1.9], [41.4, 2980, 460, 2.1],
-  [42.6, 9000, 520, 0.3], [44.2, 22000, 500, 0.05], [47.0, 22000, 480, 0.052], [48.4, MC(1), 520, 0.62],
+  [42.6, 9000, 520, 0.3], [44.2, 22000, 500, 0.042], [47.0, 22000, 480, 0.044], [48.4, MC(1), 520, 0.62],
 ];
 export const amb0: [number, Pal][] = [[0, "tormenta"], [27, "noche"], [42, "tormenta"]];
 export const lluvia0: [number, number][] = [[0, 0.95], [13.8, 0.95], [14.4, 0.35], [17.6, 0.35], [17.9, 0.8], [20, 0.45], [27, 0.2], [42, 0.5]];
@@ -79,9 +79,10 @@ export const W0: React.FC<{ t: number; c: Cam }> = ({ t }) => {
         </div>
       )}
       {/* pines de las 7 trampas sobre los milecastles */}
-      {t > 44 && t < 49 && ["POSTING", "WEATHER", "SUPPLY", "BOREDOM", "NEIGHBORS", "THE NORTH", "THE END"].map((ic, i) => (
+      {/* se van ANTES del zoom a MC(1): con la cámara cerca, pines de escala 26 hacen capas gigantes y Chrome se cae en el farm */}
+      {t > 44 && t < 47.75 && <div style={{ position: "absolute", left: 0, top: 0, opacity: 1 - prog(t, 47.3, 47.7) }}>{["POSTING", "WEATHER", "SUPPLY", "BOREDOM", "NEIGHBORS", "THE NORTH", "THE END"].map((ic, i) => (
         <Pin key={i} t={t} t0={44.34 + i * 0.3} n={i + 1} x={MC(i + 1)} y={TOP - 520} s={26} icono={ic} act={t > 46.98 && i === 0} />
-      ))}
+      ))}</div>}
     </>
   );
 };
@@ -164,7 +165,7 @@ export const S0: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Gr t={t} w="refused to leave" d={38} txt="THEY REFUSED TO LEAVE" y={180} size={110} c={C.crema} dur={1.1} />
       <Sale t={t} t0={41.94} t1={42.7}><Chip t={t} t0={41.94} text="BUT FIRST..." color={C.violeta} x={960} y={150} centro size={70} /></Sale>
       <Gr t={t} w="survive it" d={41} txt="SURVIVE IT." y={540} size={180} c={C.rojo} borde="#fff" dur={0.95} />
-      <Gr t={t} w="seven traps" d={43} txt="7 TRAPS" y={150} size={150} c={C.ambar} dur={2.7} />
+      <Gr t={t} w="seven traps" d={43} txt="7 TRAPS" y={840} size={150} c={C.ambar} dur={2.4} />
       <Sale t={t} t0={47.18} t1={48.2}><Chip t={t} t0={47.18} text="LET'S GET YOU POSTED" color={C.teal} tinta={C.noche} x={960} y={950} centro size={66} /></Sale>
     </>
   );
