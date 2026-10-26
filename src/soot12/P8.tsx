@@ -55,6 +55,15 @@ const HachaMano: React.FC<{ a: number }> = ({ a }) => (
   </g>
 );
 
+// escudo redondo vikingo (va en la mano de adelante)
+const Escudo: React.FC = () => (
+  <g>
+    <circle r={80} fill="#9a5a2a" stroke="#2a1530" strokeWidth={8} />
+    <path d="M -80 0 L 80 0 M 0 -80 L 0 80" stroke="#6b3a1f" strokeWidth={8} />
+    <circle r={16} fill="#c8d0dc" stroke="#2a1530" strokeWidth={5} />
+  </g>
+);
+
 const Asoman: React.FC<{ t: number; xs: number[]; y: number; flaco: number }> = ({ t, xs, y, flaco }) => (
   <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1920} height={1080}>
     {xs.map((x, i) => { const r = 44 - flaco * 12; const dy = Math.sin(t * 1.3 + i * 2) * 6; return (
@@ -213,74 +222,65 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
         <AbsoluteFill style={{ background: "linear-gradient(180deg, #6ab8e8, #d8f0f8 60%)" }} />
         <Rayos t={t} x={1700} y={120} color="#fff8d0" op={0.25} />
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><circle cx={1700} cy={120} r={90} fill="#ffe28a" /><path d="M 0 760 Q 960 700 1920 760 L 1920 1080 L 0 1080 Z" fill="#6aaa4a" /></svg>
-        {/* OPEN BATTLE (v5): 3 filas en profundidad; cada fila tiene su pareja de choque en una línea diagonal (x 760/960/1150).
-            Carga 796,6-797,9 · choque 797,9 (el sajón de adelante clava la lanza al frente, el vikingo cae hacia atrás con «!»)
-            · con el sello (798,2) el bloque vikingo da media vuelta y corre 300 px a la derecha en 1 s con polvo. Alfred atrás con la
-            lanza VERTICAL al costado izquierdo (x−130), punta por encima de la corona; arenga con el puño derecho. */}
+        {/* OPEN BATTLE (v6): 3 filas en profundidad. Carga 796,6-797,9; desde 797,9 hasta el final, 3 PAREJAS TRABADAS en la línea
+            x≈880-1240: el inglés empuja la lanza al frente hasta ~20 px del escudo del vikingo; el vikingo tapa con el escudo y tiene
+            el hacha en alto (mano de atrás, sobre el casco) dando golpes cortos. El resto, detrás. Bloque vikingo siempre en x≤~1720
+            (con el zoom de la Escena queda <1800). Alfred adelante a la izquierda, lanza en la mano de atrás, lejos de la cara. */}
         {(() => {
-          const filas = [{ y: 765, h: 185, cx: 800 }, { y: 852, h: 225, cx: 980 }, { y: 950, h: 275, cx: 1160 }];
           const ez = (u: number) => u * u * (3 - 2 * u);
           const c = ez(prog(t, 796.6, 797.9));
           const corre = t > 796.6 && t < 797.9;
-          const choque = prog(t, 797.9, 798.15);
-          const huye = t > 798.2;
-          const fx = ez(prog(t, 798.2, 799.2)) * 300 + Math.max(0, t - 799.2) * 260;
-          const adv = ez(prog(t, 798.25, 800.0)) * 110;
+          const traba = t > 797.9;
+          const empuje = ez(prog(t, 798.2, 800.0)) * 50; // con el sello los ingleses los van haciendo retroceder
           const salta0 = (i: number) => (t < 796.6 ? Math.max(0, Math.sin(t * 6.5 + i * 1.9)) * 12 : 0);
-          // compensa el balanceo de brazos al caminar (persona.tsx) para que la lanza no barra la cabeza
           const bal = (cam: number) => (cam ? Math.sin(cam * t * Math.PI * 2) * 22 : 0);
+          const filas = [{ y: 765, h: 185, cx: 880 }, { y: 852, h: 225, cx: 1060 }, { y: 950, h: 275, cx: 1180 }];
           const out: React.ReactNode[] = [];
-          const emotes: React.ReactNode[] = [];
           filas.forEach((f, r) => {
-            const S = f.h / 245, d = 100 * S, sp = 165 * S;
-            // vikingos (atrás→adelante: k alto primero)
-            const nV = r === 0 ? 3 : 2;
-            for (let k = nV - 1; k >= 0; k--) {
+            const S = f.h / 560;
+            const D = 764 * S - 10; // pie a pie de la pareja: punta de lanza (largo 160) a 20 px del borde del escudo
+            const lucha = traba ? Math.sin(t * 9 + r * 2.1) * 8 : 0; // forcejeo: los dos se mueven juntos
+            const sp = 165 * (f.h / 245);
+            // vikingos: el de punta + uno detrás en las filas 0 y 2
+            const ksV = r === 1 ? [0] : [1, 0];
+            ksV.forEach((k) => {
               const frente = k === 0;
-              const golpe = frente ? choque : 0;
-              const x = f.cx + d + k * sp + (1 - c) * 220 + fx + golpe * 40 * S;
-              const cam = corre ? 1.9 : huye ? 2.4 : 0;
-              const bD = huye ? 30 : frente && t > 797.9 ? 150 : [150, 95, 125][(k + r) % 3] + Math.sin(t * 5 + k + r) * 14;
-              const cD = huye ? 20 : [20, 40, 10][(k + r) % 3];
-              out.push(<Persona key={`v${r}${k}`} x={x} y={f.y} h={f.h} t={t} seed={820 + r * 3 + k} ropa={VIK(r * 3 + k)} casco="vikingo" barba={barbaDe(r * 3 + k)}
-                expr={huye || golpe > 0 ? "miedo" : "enojado"} flip={!huye} mira={huye ? -0.7 : 0} camina={cam} salta={salta0(r * 3 + k + 7)}
-                inclina={huye ? 10 : golpe > 0 ? -30 * golpe : corre ? 8 : 0}
-                bD={bD} cD={cD} manoD={huye ? undefined : <HachaMano a={bD + cD + 25 + bal(cam)} />} />);
-              if (frente && r === 2) {
-                // «!» en el hueco entre las dos cabezas de la pareja de adelante (no toca ninguna caja de cabeza)
-                const hx = 1350, hy = 630;
-                emotes.push(<Emote key={`e${r}`} t={t} t0={797.95} t1={798.3} tipo="excl" x={hx - 130 * 0.42} y={hy + 150 * 0.42} s={0.42} />);
-              }
-            }
-            // sajones
-            const ks = r === 2 ? [0] : [1, 0];
-            ks.forEach((k) => {
+              const xV = f.cx + D / 2 + (r === 2 ? k * 170 : k * (r === 0 ? 126 : sp)) + (1 - c) * 20 + empuje + lucha;
+              const cam = corre ? 1.9 : 0;
+              const chop = traba ? Math.max(0, Math.sin(t * 7 + r + k)) * 22 : Math.sin(t * 5 + r + k) * 8;
+              const bI = frente && traba ? 170 : [150, 120][k] + Math.sin(t * 5 + k + r) * 10, cI = frente && traba ? 0 : 10;
+              out.push(<Persona key={`v${r}${k}`} x={xV} y={f.y + (frente ? 0 : -8)} h={f.h} t={t} seed={820 + r * 3 + k} ropa={VIK(r * 3 + k)} casco="vikingo" barba={barbaDe(r * 3 + k)}
+                expr={t > 798.6 && frente ? "miedo" : "enojado"} habla={traba && frente} flip mira={0} camina={cam} salta={salta0(r * 3 + k + 7)} inclina={corre ? 8 : traba && frente ? -6 : 0}
+                bD={frente ? 20 : 30} cD={frente ? 70 : 20} bI={bI} cI={cI}
+                manoD={frente ? <Escudo /> : undefined}
+                manoI={<g transform="scale(-1.35 1.35)"><HachaMano a={bI + cI - chop} /></g>} />);
+            });
+            // sajones: el de punta (lanza al frente) + uno detrás en filas 0 y 1
+            const ksS = r === 2 ? [0] : [1, 0];
+            ksS.forEach((k) => {
               const frente = k === 0;
-              const x = f.cx - d - k * sp - (1 - c) * 220 + adv;
-              const cam = corre || (t > 798.25 && t < 800) ? 1.8 : 0;
+              const xS = f.cx - D / 2 - k * (r === 0 ? 126 : sp) - (1 - c) * 220 + empuje + (frente ? lucha : 0);
+              const cam = corre || (!frente && t > 798.2 && t < 800) ? 1.8 : 0;
               const clava = frente && t > 797.75;
               const bD = clava ? 80 : 30, cD = clava ? 0 : 20;
-              out.push(<Persona key={`s${r}${k}`} x={x} y={f.y + (frente ? 0 : 6)} h={f.h} t={t} seed={800 + r * 3 + k} ropa={SAJON} casco="saxon" expr="enojado"
-                camina={cam} salta={salta0(r * 3 + k)} inclina={corre || clava ? 10 : 0}
-                bD={bD} cD={cD} manoD={<LanzaMano a={(clava ? 170 : bD + cD) + bal(cam)} largo={clava ? 300 : 340} />} />);
+              out.push(<Persona key={`s${r}${k}`} x={xS} y={f.y + (frente ? 0 : 6)} h={f.h} t={t} seed={800 + r * 3 + k} ropa={SAJON} casco="saxon" expr="enojado"
+                habla={clava} camina={cam} salta={salta0(r * 3 + k)} inclina={corre || clava ? 10 : 0}
+                bD={bD} cD={cD} manoD={<LanzaMano a={(clava ? 170 : bD + cD) + bal(cam)} largo={clava ? 160 : 340} />} />);
             });
           });
-          // Alfred: delante de todo (pies en y 1000), a la izquierda; su lanza (x−120) cae en un hueco sin cabezas
-          const fA = filas[2], SA = fA.h / 245;
-          const ax = fA.cx - 100 * SA - 2.64 * 165 * SA - (1 - c) * 220 + adv;
-          const camA = corre || (t > 798.25 && t < 800) ? 1.8 : 0;
+          // Alfred: delante de todo, a la izquierda; lanza en la mano izquierda (la de atrás), ~150 px detrás de la cara
+          const ax = 560 - (1 - c) * 220 + empuje;
+          const camA = corre ? 1.8 : 0;
           const arenga = prog(t, 793.6, 794.0) * (1 - prog(t, 796.4, 796.7));
-          const alfred = (
-            <React.Fragment key="alf">
-              <Persona x={ax} y={fA.y + 50} h={305} t={t} seed={371} ropa={ALFRED} expr="enojado" habla={t > 793.8 && t < 796.6} camina={camA} salta={salta0(4)}
-                bD={20 + arenga * 120 + Math.sin(t * 9) * 6 * arenga} cD={10 - arenga * 50} bI={0} cI={70}
-                manoI={<LanzaMano a={-70 + bal(camA)} largo={600} />} />
-              <Corona x={ax} y={fA.y + 50 - 305 * 1.02} s={0.34} t={t} t0={791.6} />
-            </React.Fragment>
+          return (
+            <>
+              {out}
+              <Persona x={ax} y={1000} h={305} t={t} seed={371} ropa={ALFRED} expr="enojado" habla={(t > 793.8 && t < 796.6) || t > 798.2} camina={camA} salta={salta0(4)}
+                bD={20 + arenga * 120 + Math.sin(t * 9) * 6 * arenga} cD={10 - arenga * 50} bI={35} cI={45}
+                manoI={<LanzaMano a={-80 + bal(camA)} largo={600} />} />
+              <Corona x={ax} y={1000 - 305 * 1.02} s={0.34} t={t} t0={791.6} />
+            </>
           );
-          // orden de dibujo: fila 0 (atrás) → fila 2 → Alfred
-          const n2 = out.length;
-          return <>{out.slice(0, n2)}{alfred}{emotes}</>;
         })()}
         {t > 797.6 && t < 799.6 && <Particulas t={t} tipo="polvo" n={40} seed={8} />}
         <Flash t={t} t0={797.9} dur={0.15} color="#fff3c4" />

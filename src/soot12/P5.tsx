@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona } from "./persona";
-import { C, ent, prog, Escena, Particulas, Emote } from "./kit";
+import { C, ent, prog, Escena, Particulas, Emote, fontFamily } from "./kit";
 import { Mundo, camEn, Key, SAJON, SENOR, VIK, barbaDe, gy } from "./mundo";
 import { G, Ch, Cartel, Cuenta, Sello, Flash, LanzaMano, Globo } from "./comun";
 import { Drakkar, Antorcha, Llamas, Tienda } from "./vik";
@@ -54,7 +54,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
       <Escena t={t} t0={498.49} t1={518.17} entra="zoom" zoom={0} golpes={[501.5, 503.6, 505.4, 507.8, 510.6, 515.0]}>
         <AbsoluteFill style={{ background: "linear-gradient(180deg, #16123d, #2a3a7a)" }} />
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><rect x={0} y={790} width={1920} height={290} fill="#1d4f7a" /></svg>
-        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `scale(${interpolate(t, [498.5, 506.1, 507.0, 510.4, 511.4, 518.1], [1.02, 1.08, 0.92, 0.92, 1.2, 1.18], { extrapolateRight: "clamp" })})`, transformOrigin: "1075px 700px" }}>
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `scale(${interpolate(t, [498.5, 506.1, 507.0, 510.4, 511.4, 518.1], [1.02, 1.08, 0.92, 0.92, 1.36, 1.34], { extrapolateRight: "clamp" })})`, transformOrigin: "1230px 820px" }}>
           {/* barco más chico y corrido a la derecha: la popa enrulada nunca queda encima del chico */}
           <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: "translate(100px, 0) scale(0.895)", transformOrigin: "960px 780px" }}>
           <Drakkar x={960} y={780} s={0.95} t={t} remos={t > 510.6 ? 1.2 : 0} escudos={t > 515} vela={0} />
@@ -69,7 +69,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
                 <circle cx={0} cy={-62} r={21} fill="#f2b48a" stroke="#2a1530" strokeWidth={4} />
                 <path d={`M -16 -58 Q 0 ${-28} 16 -58 Q 8 -46 0 -46 Q -8 -46 -16 -58 Z`} fill={bar} stroke="#2a1530" strokeWidth={3} />
                 <circle cx={6} cy={-66} r={3.4} fill="#2a1530" /><circle cx={-6} cy={-66} r={3.4} fill="#2a1530" />
-                <path d="M -23 -66 Q 0 -100 23 -66 Z" fill="#9aa4b8" stroke="#2a1530" strokeWidth={4} />
+                <path d="M -22 -74 Q 0 -104 22 -74 Z" fill="#9aa4b8" stroke="#2a1530" strokeWidth={4} />
               </g>
             </svg>; })}
           {/* gotas: mojado */}
@@ -84,11 +84,12 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
             {t > 509 && <line x1={1660} y1={955} x2={1660} y2={1015} stroke={C.ambar} strokeWidth={10} />}
           </svg>
         )}
+        {t > 507.8 && t < 510.6 && <div style={{ position: "absolute", left: 610 + 525 * prog(t, 507.8, 509.0), top: 925, transform: `translate(-50%,-50%) scale(${0.8 + 0.2 * ent(t, 507.8)})`, fontFamily, fontWeight: 700, fontSize: 40, color: C.noche, background: C.ambar, padding: "4px 18px", borderRadius: 12, boxShadow: "0 6px 0 rgba(20,10,50,.35)", whiteSpace: "nowrap" }}>≈24 M</div>}
         {/* vos con la antorcha: entero desde el cuadro 0; golpeás el casco, olés la brea, te gotea el río; con el zoom das un paso atrás */}
         {(() => { const kx = 215 - prog(t, 510.4, 511.1) * 25; const golpe = t > 501.5 && t < 503.2 ? Math.abs(Math.sin((t - 501.5) * 9)) * 50 : 0; return <>
           <Persona x={kx} y={1040} h={420} t={t} seed={3} ropa={SAJON} camina={t > 510.4 && t < 511.1 ? 1.2 : 0} mira={0.7} expr={t > 510.6 ? "miedo" : t > 507.7 ? "sorpresa" : t > 505.4 ? "triste" : t > 503.6 ? "enojado" : "neutro"}
-            bD={t > 501.5 && t < 503.2 ? 70 + golpe : 50} cD={t > 501.5 && t < 503.2 ? 60 : 30} inclina={t > 503.6 && t < 505.2 ? 10 : t > 510.4 && t < 511.1 ? -8 : 0}
-            manoI={<g><rect x={-7} y={-40} width={14} height={180} rx={5} fill="#8a5a32" stroke="#2a1530" strokeWidth={4} /><ellipse cx={0} cy={150} rx={22} ry={30} fill="#3a2418" stroke="#2a1530" strokeWidth={4} />{[0, 1, 2].map((i) => <path key={i} d={`M ${-8 + i * 8} 180 Q ${-20 + i * 8} ${220 + ((t * 60 + i * 30) % 60)} ${-4 + i * 8} 260`} stroke="#8a8aa0" strokeWidth={9} fill="none" strokeLinecap="round" opacity={0.6} />)}</g>} bI={170} cI={10} />
+            bD={t > 501.5 && t < 503.2 ? 70 + golpe : t > 510.6 ? 40 : 140} cD={t > 501.5 && t < 503.2 ? 60 : t > 510.6 ? 15 : -25} inclina={t > 503.6 && t < 505.2 ? 10 : t > 510.4 && t < 511.1 ? -8 : 0}
+            manoD={<g><rect x={-7} y={-40} width={14} height={180} rx={5} fill="#8a5a32" stroke="#2a1530" strokeWidth={4} /><ellipse cx={0} cy={150} rx={22} ry={30} fill="#3a2418" stroke="#2a1530" strokeWidth={4} /><path d={`M -20 160 Q -24 ${200 + Math.sin(t * 13) * 8} 0 ${222 + Math.sin(t * 9) * 10} Q 24 ${200 + Math.cos(t * 11) * 8} 20 160 Z`} fill="#ff8a2a" /><path d="M -9 162 Q -10 186 0 198 Q 10 186 9 162 Z" fill="#ffe07a" />{[0, 1, 2].map((i) => <path key={i} d={`M ${-8 + i * 8} 180 Q ${-20 + i * 8} ${220 + ((t * 60 + i * 30) % 60)} ${-4 + i * 8} 260`} stroke="#8a8aa0" strokeWidth={9} fill="none" strokeLinecap="round" opacity={0.6} />)}</g>} bI={t > 510.6 ? 40 : 18} cI={t > 510.6 ? 60 : 15} />
           {t > 503.6 && t < 505.4 && <Emote t={t} t0={503.6} tipo="enojo" x={kx + 20} y={560} s={0.8} />}
           {t > 505.4 && t < 507.7 && <Emote t={t} t0={505.4} tipo="sudor" x={kx + 20} y={620} s={0.8} />}
           {t > 510.6 && <Emote t={t} t0={510.7} tipo="excl" x={kx + 30} y={560} s={0.8} />}
@@ -98,7 +99,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
         <Ch t={t} t0={503.6} t1={507.6} text="SOAKED IN TAR" color={C.rojo} x={790} y={280} size={42} />
         <Ch t={t} t0={505.4} t1={507.6} text="WET FROM THE RIVER" color={C.teal} tinta={C.noche} x={1220} y={280} size={42} />
         <Ch t={t} t0={507.7} text="THE GOKSTAD SHIP" color={C.violeta} x={960} y={150} centro size={58} />
-        <Cuenta t={t} t0={508.6} t1={510.5} de={0} a={23} dur={0.6} x={1135} y={935} size={48} color={C.ambar} sufijo=" M" />
+        
         <Cuenta t={t} t0={510.6} de={0} a={32} dur={1.9} x={330} y={210} size={130} color={C.crema} />
         <Ch t={t} t0={511.0} text="MEN ON THE OARS" color={C.teal} tinta={C.noche} x={330} y={320} centro size={44} />
         <Cuenta t={t} t0={515.0} de={0} a={64} dur={0.7} x={1390} y={210} size={130} color={C.rojo} />

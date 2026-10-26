@@ -232,7 +232,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
           const dia = fase < 0.5;
           const a = Math.PI * (dia ? fase * 2 : (fase - 0.5) * 2);
           // el sol/luna giran en un arco chico en la esquina derecha (a la derecha del fuerte): nunca detrás de cabezas ni títulos
-          const cx = 1740 - Math.cos(a) * 125, cy = 600 - Math.sin(a) * 170;
+          const cx = 1690 - Math.cos(a) * 45, cy = 480 - Math.sin(a) * 70; // arco chico: entero, lejos del borde
           return (
             <>
               <AbsoluteFill style={{ background: dia ? `rgba(120,170,230,${0.5 * Math.sin(a)})` : "transparent" }} />
@@ -264,9 +264,9 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
           const carga = k === 3;
           const ida = ((t - 225.6) * 0.5) % 1;
           const xc = carga ? 1540 - Math.sin(ida * Math.PI) * 170 : px; // no pasa por delante del que clava en 1160 (la maza le cruzaba la cara)
-          return <Persona key={k} x={xc} y={606} h={190} t={t} seed={440 + k} ropa={VIK(k + 2)} casco="vikingo" barba={barbaDe(k + 2)} expr={k % 2 ? "enojado" : "orgullo"} flip={carga ? ida < 0.5 : k >= 2} aparece={225.7 + k * 0.1}
-            camina={carga ? 1.6 : 0} bD={carga ? 165 : golpe(t, hits, 50)} cD={30} bI={carga ? 165 : 20} cI={carga ? 30 : 20}
-            manoD={carga ? <rect x={-70} y={-14} width={160} height={26} rx={12} fill="#8a5a32" stroke="#2a1530" strokeWidth={4} /> : <Maza a={-90} />} />;
+          return <Persona key={k} x={xc} y={682} h={190} t={t} seed={440 + k} ropa={VIK(k + 2)} casco="vikingo" barba={barbaDe(k + 2)} expr={k % 2 ? "enojado" : "orgullo"} flip={carga ? ida < 0.5 : k >= 2} aparece={225.7 + k * 0.1}
+            camina={carga ? 1.6 : 0} bD={carga ? 50 : golpe(t, hits, 15, 75)} cD={carga ? 40 : 25} bI={carga ? 50 : 20} cI={carga ? 40 : 20}
+            manoD={carga ? <g transform="rotate(90)"><rect x={-80} y={-16} width={160} height={26} rx={12} fill="#8a5a32" stroke="#2a1530" strokeWidth={4} /></g> : <Maza a={-25} />} />;
         })}
         <G t={t} t0={225.6} text="A FORT" y={128} size={140} color={C.crema} />
         <Ch t={t} t0={227.0} t1={229.3} text="BUILT IN A FEW WEEKS" color={C.ambar} tinta={C.noche} x={960} y={335} centro size={54} />

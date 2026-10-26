@@ -63,8 +63,9 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
         <Ch t={t} t0={676.9} t1={680.1} text="DITCH: DRY ✓" color={C.lima} tinta={C.noche} x={110} y={330} size={50} />
         <Ch t={t} t0={678.4} t1={680.1} text="CAUGHT IN THEIR BEDS ✓" color={C.lima} tinta={C.noche} x={110} y={420} size={50} />
         <G t={t} t0={680.3} t1={681.5} text="CONGRATULATIONS" y={200} size={120} color={C.ambar} />
-        <Ch t={t} t0={681.6} text="THE MOST DANGEROUS TRAP OF ALL" color={C.rojo} x={900} y={140} centro size={54} />
-        <Cuenta t={t} t0={683.0} de={1} a={2000} dur={1.3} x={1690} y={150} size={96} color={C.crema} />
+        <Ch t={t} t0={681.6} text="THE MOST DANGEROUS TRAP OF ALL" color={C.rojo} x={840} y={140} centro size={54} />
+        <Cuenta t={t} t0={683.0} de={1} a={2000} dur={1.3} x={1600} y={140} size={96} color={C.crema} />
+        <Ch t={t} t0={683.3} text="VIKINGS IN ENGLAND" color={C.rojo} x={1600} y={235} centro size={40} />
         <G t={t} t0={683.0} text="THERE'S ALWAYS MORE OF THEM" y={985} size={84} color={C.crema} />
       </Escena>
       {/* 1 · no vivían en un campamento: vivían en una red · hermanos, primos, juramentados, otras flotas, otros ejércitos · y memoria larga */}
@@ -377,9 +378,12 @@ const Tiro84a: React.FC<{ t: number }> = ({ t }) => {
       <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "960px 900px", transform: `scale(${push})` }}>
         {[[420, 0], [780, 1], [1140, 2], [1500, 0]].map(([x, k]) => <Carpa84 key={x} t={t} x={x} base={812} s={0.72} k={k} duerme />)}
         {/* guardia dormido apoyado en la lanza (vertical, al costado) y el perro enroscado a sus pies */}
-        <Persona x={210} y={850} h={290} t={t} seed={77} ropa={VIK(3)} casco="vikingo" barba={barbaDe(3)} expr="dormido" ladea={10 + Math.sin(t * 1.3) * 3} inclina={4} bD={8} cD={4}
-          manoD={<LanzaMano a={-4} inclina={0} largo={330} />} />
-        <Perro x={330} y={842} s={0.36} t={t} modo="duerme" />
+        <Persona x={210} y={850} h={290} t={t} seed={77} ropa={VIK(3)} casco="vikingo" barba={barbaDe(3)} expr="dormido" ladea={10 + Math.sin(t * 1.3) * 3} inclina={4} bD={30} cD={10} />
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
+          <rect x={273} y={530} width={14} height={325} rx={6} fill="#8a5a32" stroke="#2a1530" strokeWidth={4} />
+          <path d="M 280 470 L 300 534 L 280 560 L 260 534 Z" fill="#c8d0dc" stroke="#2a1530" strokeWidth={5} />
+        </svg>
+        <Perro x={370} y={842} s={0.36} t={t} modo="duerme" />
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
           {[0, 1, 2].map((j) => { const q = ((t * 0.5 + j / 3) % 1); return <text key={j} x={250 + q * 50} y={560 - q * 110} fontSize={30 + q * 26} fontWeight={700} fontFamily={fontFamily} fill="#f4ead2" opacity={Math.sin(q * Math.PI)}>z</text>; })}
         </svg>
@@ -389,9 +393,9 @@ const Tiro84a: React.FC<{ t: number }> = ({ t }) => {
           const H = 380;
           const yo = i === 0;
           return <Persona key={i} x={x} y={1010} h={H} t={t} seed={yo ? 3 : 720 + i} ropa={yo ? SAJON : VERDE} casco={yo ? "no" : "saxon"}
-            expr={festeja ? "feliz" : llegan ? "orgullo" : i === 1 ? "miedo" : "neutro"} camina={llegan ? 0 : 0.7} inclina={llegan ? (festeja ? -4 : 6) : 20}
+            expr={festeja ? "feliz" : llegan ? "orgullo" : i === 1 ? "miedo" : "neutro"} camina={llegan ? 0 : 0.55} inclina={llegan ? (festeja ? -4 : 6) : 27}
             mira={festeja ? (yo ? -0.9 : 0.9) : Math.sin(t * 1.7 + i * 2) * 0.8} miraY={llegan ? 0 : 0.3}
-            bD={festeja ? 160 : llegan ? 20 : 30 + Math.sin(t * 4.4 + i) * 8} cD={festeja ? 30 : llegan ? 20 : 95} bI={festeja && !yo ? 150 : llegan ? 20 : 25 - Math.sin(t * 4.4 + i) * 8} cI={festeja && !yo ? 40 : llegan ? 20 : 90} salta={festeja ? 672.55 + i * 0.12 : undefined} />;
+            bD={festeja ? 160 : llegan ? 20 : 12 + Math.sin(t * 3.4 + i) * 3} cD={festeja ? 30 : llegan ? 20 : 70} bI={festeja && !yo ? 150 : llegan ? 20 : 10 - Math.sin(t * 3.4 + i) * 3} cI={festeja && !yo ? 40 : llegan ? 20 : 70} salta={festeja ? 672.55 + i * 0.12 : undefined} />;
         })}
         <Emote t={t} t0={668.6} t1={672.3} tipo="sudor" x={1180 + avance - 330} y={1010 - 380 * 0.8} s={0.8} />
       </div>
@@ -403,7 +407,9 @@ const Tiro84a: React.FC<{ t: number }> = ({ t }) => {
 const Tiro84b: React.FC<{ t: number }> = ({ t }) => {
   const am = prog(t, 673.85, 676.85);
   const seca = t > 674.0 && t < 675.6; // se seca la frente
-  const mira = t > 675.6 && t < 678.3; // mira el campamento atrás, asiente
+  const estira = t > 675.7 && t < 676.85; // se estira aliviado
+  const puno = t > 676.9 && t < 677.6; // saltito con el puño
+  const mira = t > 677.6 && t < 678.3; // mira el campamento atrás, asiente
   const pulgar = t > 678.4 && t < 680.2;
   const salta = t > 680.2;
   const X = 1380, Y = 1070, H = 640;
@@ -421,11 +427,11 @@ const Tiro84b: React.FC<{ t: number }> = ({ t }) => {
         {[[230, 0], [470, 1], [1640, 2], [1840, 0]].map(([x, k]) => <Carpa84 key={x} t={t} x={x} base={800} s={0.36} k={k} duerme />)}
       </div>
       <Persona x={X} y={Y} h={H} t={t} seed={3} ropa={SAJON}
-        expr={salta || pulgar ? "feliz" : seca ? (t < 674.5 ? "sorpresa" : "feliz") : "feliz"}
-        inclina={seca ? -9 * Math.sin(prog(t, 674.0, 675.6) * Math.PI) : salta ? -4 : 0} ladea={seca ? -6 : mira ? Math.sin((t - 675.6) * 5) * 6 : 0}
+        expr={estira ? "dormido" : salta || pulgar || puno ? "feliz" : seca ? (t < 674.5 ? "sorpresa" : "feliz") : "feliz"}
+        inclina={seca ? -9 * Math.sin(prog(t, 674.0, 675.6) * Math.PI) : estira ? -8 * Math.sin(prog(t, 675.7, 676.85) * Math.PI) : salta ? -4 : 0} ladea={seca ? -6 : estira ? Math.sin((t - 675.7) * 4) * 5 : mira ? Math.sin((t - 677.6) * 9) * 6 : 0}
         mira={mira ? -0.9 : pulgar ? 0.9 : salta ? 0 : -0.2} miraY={seca ? -0.3 : 0}
-        bD={salta ? 165 : pulgar ? 92 : 12} cD={salta ? 20 : pulgar ? -6 : 8}
-        bI={salta ? 165 : 12} cI={salta ? 20 : 8} salta={salta ? 680.25 : undefined}
+        bD={salta || estira ? 165 : puno ? 150 : pulgar ? 92 : 12} cD={salta || estira ? 20 : puno ? 40 : pulgar ? -6 : 8}
+        bI={salta || estira ? 165 : 12} cI={salta || estira ? 20 : 8} salta={salta ? 680.25 : puno ? 676.95 : undefined}
         />
       {t > 674.0 && t < 674.9 && [0, 1, 2].map((j) => { const q = prog(t, 674.0 + j * 0.1, 674.8 + j * 0.1); return <div key={j} style={{ position: "absolute", left: X - 190 - q * 130, top: Y - H * 0.74 + j * 26, width: 70 * (1 - q * 0.5), height: 14, borderRadius: 7, background: "#fff", opacity: (1 - q) * 0.8 }} />; })}
       <Globo t={t} t0={674.6} t1={678.3} x={960} y={420} text="PHEW… WE MADE IT?" size={50} cola="der" color="#fff" />
@@ -444,7 +450,7 @@ const Tiro84c: React.FC<{ t: number }> = ({ t }) => {
   return (
     <AbsoluteFill>
       <Cielo84 t={t} am={1} suelo={850} />
-      <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><circle cx={300} cy={330} r={150} fill="#fff2b0" opacity={0.25} /><circle cx={300} cy={330} r={90} fill="#ffe08a" /></svg>
+      <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><circle cx={1110} cy={330} r={60} fill="#ffe08a" /></svg>
       <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "960px 860px", transform: `scale(${push})` }}>
         {CARPAS.map(([x, k, t0]) => <Carpa84 key={x} t={t} x={x} base={858} s={0.86} k={k} duerme={t < t0} luz={t > t0} />)}
         {CARPAS.map(([x, k, t0], i) => {
