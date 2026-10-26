@@ -40,6 +40,7 @@ export const K4: Key[] = [
   [442.3, 3700, 1400, -1.6, 0.8],
   [446.4, 3800, 1460, -1.9, 0.7],
   [448.3, 3950, 1700, -1.5, 1.0],
+  [449.5, 4150, 1960, -1.9, 0.6],
   [451.3, 300, 2330, -1.8, 0.8],
   [452.1, 3600, 2340, -1.8, 6.5, "lineal"],
   [458.7, 2400, 2250, -0.75, 1.0],
@@ -82,9 +83,10 @@ export const A4: React.FC<{ t: number }> = ({ t }) => {
       {en(t, 438.8, 451.3) && <G><g transform={`translate(3640 ${CUB - 70}) rotate(${t > 448.4 ? Math.min(80, (t - 448.4) * 120) : 0})`}><Tablon largo={460} /></g></G>}
       {en(t, 438.8, 446.4) && <Persona x={3880} y={CUB - 86} h={250} t={t} seed={226} ropa={PIRATA(5)} expr="miedo" bD={40} bI={40} ladea={Math.sin(t * 3) * 6} />}
       {en(t, 448.3, 451.4) && (() => {
-        const cae = t < 449.4 ? arco(t, 448.4, 449.4, [3990, CUB - 86], [4180, 2030], 140) : { x: 4180, y: 2030 + Math.sin(t * 5) * 10, u: 1 };
+        const cae = t < 449.4 ? arco(t, 448.4, 449.4, [3990, CUB - 86], [4180, 2030], 140) : { x: 4180, y: 2030 + prog(t, 449.4, 449.8) * 70 + Math.sin(t * 5) * 10, u: 1 };
         return <>
           <Persona x={cae.x} y={cae.y} h={250} t={t} seed={226} ropa={PIRATA(5)} expr="miedo" bD={170 + Math.sin(t * 13) * 15} bI={170 - Math.sin(t * 13) * 15} cD={0} cI={0} inclina={t < 449.4 ? cae.u * 40 : Math.sin(t * 4) * 8} />
+          {t > 449.4 && <G><path d={`M 3900 2030 Q 3990 ${2015 + Math.sin(t * 4) * 8} 4080 2030 T 4260 2030 T 4440 2030 L 4440 2330 L 3900 2330 Z`} fill="url(#aguaKH)" /><defs><linearGradient id="aguaKH" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stopColor="#2f9ad0" stopOpacity={0} /><stop offset="0.3" stopColor="#2f9ad0" stopOpacity={0.9} /><stop offset="0.7" stopColor="#2f9ad0" stopOpacity={0.9} /><stop offset="1" stopColor="#2f9ad0" stopOpacity={0} /></linearGradient></defs></G>}
           {t > 449.4 && <G>{[0, 1, 2].map((k) => { const d = ((t - 449.4) * 0.9 + k / 3) % 1; return <ellipse key={k} cx={4180} cy={2035} rx={60 + d * 260} ry={(60 + d * 260) * 0.18} fill="none" stroke="#e8fbff" strokeWidth={8} opacity={1 - d} />; })}</G>}
         </>;
       })()}
