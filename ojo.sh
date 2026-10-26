@@ -16,4 +16,5 @@ ffmpeg -hide_banner -v info -i $M -vf "mpdecimate=hi=200:lo=64:frac=0.1,showinfo
 awk 'BEGIN{print "{\"tirones\":["} $2>=3 && $2<=22 {printf "%s[%d,%d]", (n++?",":""), $1, $2} END{print "]}"}' ojo_${S}_vivos.txt > ojo_${S}_lag.json
 # segundos totalmente quietos seguidos (plano muerto)
 awk -v D=$D '{v[$1]=$2} END{run=0; for(s=0;s<=D;s++){ if((v[s]+0)<=1){run++} else { if(run>=4) printf "quieto %d-%d (%ds)\n", s-run, s-1, run; run=0 } } }' ojo_${S}_vivos.txt > ojo_${S}_quietos.txt
+[ -s ojo_${S}_quietos.txt ] || echo ninguno > ojo_${S}_quietos.txt
 cat ojo_${S}_lag.json; cat ojo_${S}_quietos.txt
