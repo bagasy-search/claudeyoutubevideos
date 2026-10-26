@@ -9,6 +9,7 @@ import { World as WorldRaw, WorldProps, PT, JARS, screenOf, camSpeed, setKeys, K
 import AVW from "./avwin.json";
 import AVAIL from "./avail.json";
 import PLAN from "./plan.json";
+import CARAS from "./caras.json";
 import { BigNum, CH, Flash, HAND, P, Portal, SERIF, Tag, e, ei, s, LowerThird, Receipt } from "./lib";
 import { SteamWipe, Aroma, Nota, Pensado, Palomita, Stamp, Precio, Pill, Lista } from "./comp";
 import * as X from "./piezas";
@@ -24,6 +25,11 @@ const REEL_DUR = (AVAIL as { reelDur?: number }).reelDur ?? 1e9; // si el reel v
 // el reel puede venir unos décimos más corto que el audio: la última ventana se recorta, no se tira
 const wme = (w: Win) => Math.min(w.me, w.ms + REEL_DUR - 0.1 - w.off);
 const sinCara = (w: Win) => !REEL || wme(w) - w.ms < 1;
+const caraX = (t: number): number | null => {   // x en px de la cara de Lupe en la foto/toma de ese segundo (caras.py)
+  const p = (PL.parts as { a: number; b: number; c?: string }[]).find((q) => !!q.c && t >= q.a && t < q.b);
+  const v = p?.c ? (CARAS as Record<string, number>)[p.c] : undefined;
+  return v == null ? null : v * 1920;
+};
 const conCara = (t: number) => (PL.parts as { a: number; b: number; c?: string }[]).some((p) => !!p.c && p.c.startsWith("f_") && t >= p.a && t < p.b);   // foto con Lupe
 const inAv = (t: number) => WIN.some((w) => !sinCara(w) && t >= w.ms && t < wme(w));
 type Part = { a: number; b: number; c?: string; k0?: string; k1?: string };
@@ -160,31 +166,33 @@ const H = X.H;
 const POP = (p: Pop, t: number, a: number, o: number): React.ReactNode => {
   const g = p as Record<string, any>; // eslint-disable-line @typescript-eslint/no-explicit-any
   const x = num(g.x, 1420), y = num(g.y, 280), col = (g.col as string) ?? CH.maiz;
+  const fx = caraX(a + 0.5);
+  const sx = (d: number) => { const v = num(g.x, d); return fx != null && Math.abs(fx - v) < 400 ? 1920 - v : v; };   // pop lateral sobre la cara -> al otro lado
   const yc = (d: number) => (inAv(a + 0.5) || conCara(a + 0.5) ? 860 : num(g.y, d));   // con Lupe en cámara, lo centrado baja al pecho (nunca sobre la cara)
   const rows = (r: any[], step = 1.6) => r.map((q, i) => (Array.isArray(q) ? [q[0], num(q[1], a + i * step)] : { ...q, at: num(q.at, a + i * step) })); // eslint-disable-line @typescript-eslint/no-explicit-any
   switch (p.k) {
-    case "Stamp": return <Stamp t={t} at={a} out={o} text={g.text} x={num(g.x, 1380)} y={num(g.y, 290)} size={num(g.size, 80)} col={g.col ?? "#d8402c"} />;
-    case "Pill": return <Pill t={t} at={a} out={o} x={num(g.x, 1400)} y={num(g.y, 260)} text={g.text} col={g.col} />;
+    case "Stamp": return <Stamp t={t} at={a} out={o} text={g.text} x={sx(1380)} y={num(g.y, 290)} size={num(g.size, 80)} col={g.col ?? "#d8402c"} />;
+    case "Pill": return <Pill t={t} at={a} out={o} x={sx(1400)} y={num(g.y, 260)} text={g.text} col={g.col} />;
     case "Palomita": return <Palomita t={t} at={a} out={o} y={num(g.y, 240)} text={g.text} />;
-    case "Pensado": return <Pensado t={t} at={a} out={o} x={num(g.x, 1250)} y={num(g.y, 300)} text={g.text} size={num(g.size, 86)} />;
-    case "Nota": return <Nota t={t} at={a} out={o} x={num(g.x, 1480)} y={num(g.y, 300)} lines={g.lines} rot={num(g.rot, -3)} w={num(g.w, 520)} />;
-    case "Precio": return <Precio t={t} at={a} out={o} x={num(g.x, 1440)} y={num(g.y, 150)} top={g.top} sub={g.sub} />;
+    case "Pensado": return <Pensado t={t} at={a} out={o} x={sx(1250)} y={num(g.y, 300)} text={g.text} size={num(g.size, 86)} />;
+    case "Nota": return <Nota t={t} at={a} out={o} x={sx(1480)} y={num(g.y, 300)} lines={g.lines} rot={num(g.rot, -3)} w={num(g.w, 520)} />;
+    case "Precio": return <Precio t={t} at={a} out={o} x={sx(1440)} y={num(g.y, 150)} top={g.top} sub={g.sub} />;
     case "BigNum": return <BigNum t={t} at={a} text={g.text} size={num(g.size, 150)} y={num(g.y, 860)} col={g.col ?? CH.maiz} edge="#5a2a10" out={o} sub={g.sub} />;
     case "Card": return <X.Card t={t} at={a} out={o} x={x} y={y} from={g.from ?? "right"} col={col}><H s={50} c={col}>{g.top}</H>{g.sub && <H s={44} f={HAND}>{g.sub}</H>}</X.Card>;
     case "Tag": { const q = g.anchor ? screenOf(t, (PT as any)[g.anchor] ?? CA) : { x: num(g.x, 980), y: num(g.y, 560) }; return <Tag t={t} at={a} x={q.x} y={q.y} dx={num(g.dx, 300)} dy={num(g.dy, -240)} text={g.text} sub={g.sub} col={col} out={o} size={num(g.size, 54)} />; } // eslint-disable-line @typescript-eslint/no-explicit-any
     case "Cita": return <><X.Fondo o={0.42 * e(t, a, a + 0.5) * (1 - e(t, o - 0.4, o))} /><X.Cita t={t} at={a} out={o} x={960} y={yc(500)} text={g.text} who={g.who} size={num(g.size, 84)} w={1300} /></>;
     case "Versus": return <X.Versus t={t} at={a} out={o} x={960} y={yc(560)} a={g.a} b={g.b} rows={g.rows} w={num(g.w, 960)} />;
-    case "Senales": return <X.Senales t={t} out={o} x={num(g.x, 1420)} y={num(g.y, 420)} title={g.title} rows={rows(g.rows, 2) as { at: number; text: string }[]} />;
-    case "Lista": return <Lista t={t} at={a} out={o} x={num(g.x, 1400)} y={num(g.y, 300)} rows={rows(g.rows) as [string, number][]} />;
-    case "Cronometro": return <X.Cronometro t={t} at={a} out={o} x={num(g.x, 1450)} y={num(g.y, 430)} mins={g.mins} label={g.label} />;
-    case "Bascula": return <X.Bascula t={t} at={a} out={o} x={num(g.x, 1450)} y={num(g.y, 460)} kg={g.kg} label={g.label} sub={g.sub} />;
-    case "Onoma": return <X.Onoma t={t} at={a} out={o} x={num(g.x, 1350)} y={num(g.y, 300)} text={g.text} col={g.col ?? "#ffcf6a"} />;
-    case "FixCard": return <X.FixCard t={t} at={a} out={o} x={num(g.x, 1400)} y={num(g.y, 460)} prob={g.prob} fix={g.fix} fixAt={a + num(g.fixDt, 3)} />;
+    case "Senales": return <X.Senales t={t} out={o} x={sx(1420)} y={num(g.y, 420)} title={g.title} rows={rows(g.rows, 2) as { at: number; text: string }[]} />;
+    case "Lista": return <Lista t={t} at={a} out={o} x={sx(1400)} y={num(g.y, 300)} rows={rows(g.rows) as [string, number][]} />;
+    case "Cronometro": return <X.Cronometro t={t} at={a} out={o} x={sx(1450)} y={num(g.y, 430)} mins={g.mins} label={g.label} />;
+    case "Bascula": return <X.Bascula t={t} at={a} out={o} x={sx(1450)} y={num(g.y, 460)} kg={g.kg} label={g.label} sub={g.sub} />;
+    case "Onoma": return <X.Onoma t={t} at={a} out={o} x={sx(1350)} y={num(g.y, 300)} text={g.text} col={g.col ?? "#ffcf6a"} />;
+    case "FixCard": return <X.FixCard t={t} at={a} out={o} x={sx(1400)} y={num(g.y, 460)} prob={g.prob} fix={g.fix} fixAt={a + num(g.fixDt, 3)} />;
     case "Cifra": return <X.Cifra t={t} at={a} out={o} x={960} y={yc(520)} to={g.to} pre={g.pre ?? "$"} post={g.post ?? ""} sub={g.sub} col={col} />;
     case "Receipt": return <Receipt t={t} sc={num(g.sc, 0.8)} rows={rows(g.rows, 2) as { at: number; item: string; $: number }[]} totalAt={num(g.totalAt, 1e9)} x={num(g.x, 1300)} y={num(g.y, 140)} out={o} title={g.title} cur="$" />;
     case "LowerThird": return <LowerThird t={t} at={a} out={o} name={g.name} l2={g.l2} l2at={a + 2} />;
-    case "Calendario": return <X.Calendario t={t} at={a} out={o} x={1450} y={430} flipAt={a + num(g.flipDt, 1e9)} a={g.a} b={g.b} la={g.la} lb={g.lb} />;
-    case "FuegoNivel": return <X.FuegoNivel t={t} at={a} out={o} x={1450} y={430} lvl={g.lvl} label={g.label} />;
+    case "Calendario": return <X.Calendario t={t} at={a} out={o} x={sx(1450)} y={430} flipAt={a + num(g.flipDt, 1e9)} a={g.a} b={g.b} la={g.la} lb={g.lb} />;
+    case "FuegoNivel": return <X.FuegoNivel t={t} at={a} out={o} x={sx(1450)} y={430} lvl={g.lvl} label={g.label} />;
     case "Aroma": return <Aroma t={t} at={a} out={o} x={num(g.x, 1180)} y={num(g.y, 640)} />;
     case "Desc": return <X.DescCard t={t} at={a} out={o} x={num(g.x, 1440)} y={num(g.y, 780)} hl={a + 1.2} />;
     case "QR": return <QR t={t} at={a + 0.4} out={o} x={num(g.x, 1560)} y={num(g.y, 640)} />;
