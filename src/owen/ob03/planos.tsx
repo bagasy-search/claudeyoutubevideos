@@ -80,29 +80,35 @@ export const P03Palabras: React.FC = () => {
   const k = kDe(4.0);
   const txt = "I never want to be tired.";
   const n = Math.max(0, Math.floor((f - k(7.6)) * 1.1));
-  const zoom = interpolate(f, [0, 150], [1.0, 1.22]);
+  const zoom = interpolate(f, [0, 150], [1.25, 1.45]);
   const rebote = (d: number) => (f < d ? 0 : 1 + Math.exp(-(f - d) / 4) * Math.sin((f - d) * 0.9) * 0.25);
   const tipea = f >= k(5.4) && f < k(7.6) + 30;
-  const pulgar = tipea ? Math.sin(f * 1.7) * 18 : 40;
+  const pulgar = tipea ? Math.sin(f * 0.7) * 22 : 30; // lento: el temblor rápido se lee como lageo
+  const toca = tipea ? Math.max(0, Math.sin(f * 0.7 * 2)) : 0;
   return (
     <AbsoluteFill style={{ background: "#0a0e18" }}>
-      <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0, transform: `scale(${zoom})`, transformOrigin: "55% 40%" }}>
+      <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0, transform: `scale(${zoom})`, transformOrigin: "50% 38%" }}>
         <rect x={660} y={60} width={600} height={1100} rx={70} fill="#111317" />
         <rect x={685} y={90} width={550} height={1050} rx={50} fill="#0f1a2c" />
-        <g transform={`translate(720,200) scale(${rebote(2)})`}>
+        <g transform={`translate(700,170) scale(${1.15 * rebote(2)})`}>
           <rect x={0} y={0} width={480} height={150} rx={24} fill="#dfeaff" />
           <text x={25} y={45} fontFamily={F_HUD} fontSize={27} fill="#14203a">Is there anything you would like</text>
           <text x={25} y={82} fontFamily={F_HUD} fontSize={27} fill="#14203a">to change about your body</text>
           <text x={25} y={119} fontFamily={F_HUD} fontSize={27} fill="#14203a">for week three?</text>
         </g>
         {f >= k(5.4) && f < k(7.6) && <g transform="translate(1080,460)">{[0, 1, 2].map((i) => <circle key={i} cx={i * 34} cy={-Math.max(0, Math.sin(f / 4 - i)) * 10} r={11} fill="#8fa8d8" />)}</g>}
-        <g transform={`translate(1200,465) scale(${rebote(k(7.6))}) translate(-340,-45)`} opacity={f >= k(7.6) ? 1 : 0}>
-          <rect x={0} y={0} width={340} height={90} rx={24} fill="#2f7bf6" />
-          <text x={25} y={55} fontFamily={F_HUD} fontWeight={600} fontSize={34} fill="#fff">{txt.slice(0, n)}</text>
+        <g transform={`translate(1225,480) scale(${1.15 * rebote(k(7.6))}) translate(-470,-45)`} opacity={f >= k(7.6) ? 1 : 0}>
+          <rect x={0} y={0} width={470} height={90} rx={24} fill="#2f7bf6" />
+          <text x={25} y={57} fontFamily={F_HUD} fontWeight={700} fontSize={38} fill="#fff">{txt.slice(0, n)}</text>
         </g>
         <rect x={700} y={760} width={520} height={300} rx={20} fill="#1b2840" />
         {Array.from({ length: 30 }).map((_, i) => <rect key={i} x={716 + (i % 10) * 50} y={780 + Math.floor(i / 10) * 70} width={42} height={56} rx={8} fill={tipea && (Math.floor(f / 3) + i * 7) % 30 === 0 ? "#6fa8ff" : "#2c3c5c"} />)}
-        <g transform={`translate(${1010 + pulgar},${900 + Math.abs(pulgar) * 0.6})`}><ellipse cx={0} cy={0} rx={52} ry={130} fill="#1a1a1a" transform="rotate(-28)" /></g>
+        {/* mano de palito: brazo grueso desde abajo a la derecha, palma redonda y pulgar que toca las teclas */}
+        <g transform={`translate(${1060 + pulgar},${790 + toca * 14})`}>
+          <line x1={0} y1={0} x2={520} y2={420} stroke="#111" strokeWidth={34} strokeLinecap="round" />
+          <circle cx={0} cy={0} r={44} fill="#111" />
+          <line x1={-20} y1={-18} x2={-62} y2={-58 + toca * 16} stroke="#111" strokeWidth={22} strokeLinecap="round" />
+        </g>
       </svg>
       <Pildora texto="FOUR WORDS" x={960} y={980} desde={k(5.6)} color="#6fa8ff" />
       <HudOwen part="45/47" />
@@ -675,16 +681,19 @@ export const P33Duerme: React.FC = () => {
   const k = kDe(338.65);
   const salta = k(342.4), duerme = k(345.9);
   const cl = [mira(0, PIES.x + 20, PIES.y - 240, 2.2), mira(salta, PIES.x + 20, PIES.y - 260, 2.6, { curva: "inout" }), mira(duerme, PIES.x - 40, PIES.y - 180, 1.6, { curva: "inout" })];
-  const cae = interpolate(f, [duerme - 8, duerme + 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const cae = interpolate(f, [duerme - 6, duerme + 34], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (t) => 1 - Math.pow(1 - t, 3) }); // se recuesta suave contra la escalera
+  const boom = f - salta;
   return (
     <Escena Set={TwoFlatCorte} pal={PAL} claves={cl} seed={33} setProps={{ hora: "alba", luzCocina: false, luzBaño: false, luzDorm: false }}
-      medio={<g transform={`rotate(${-70 * cae} ${PIES.x} ${PIES.y - 74}) translate(0,${f > duerme + 10 ? Math.exp(-(f - duerme - 10) / 3) * Math.sin((f - duerme - 10) * 2) * 14 : 0})`}>
+      medio={<g transform={`rotate(${-55 * cae} ${PIES.x} ${PIES.y - 74})`}>
         <OwenEscalera caras={[{ f: 0, v: "neutral" }, { f: salta, v: "sorpresa" }, { f: salta + 30, v: "cansado" }, { f: duerme, v: "dormido" }]} poses={[{ f: 0, v: "celular" }, { f: salta + 20, v: { hD: 20, cD: 20, hI: 20, cI: 20, ...SENT_ESC } }]} />
       </g>}
       hud={<>
-        <Cansa cl={cl} x={PIES.x + 10} y={PIES.y - 74 - 240} pct={[{ f: salta, v: 0 }, { f: salta + 36, v: 100 }]} desde={0} hasta={duerme + 4} tam={1.2} />
+        <Cansa cl={cl} x={PIES.x + 10} y={PIES.y - 74 - 240} pct={0} desde={0} hasta={salta + 2} tam={1.2} />
         <Mano texto="for the first time in 3 days, it moves" x={1000} y={110} desde={k(339.0)} hasta={salta} color="#f4efe4" tam={64} />
-        {f > salta && f < duerme && <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 50% 35%, #fff3d8 0%, #ff3d2e 60%)", opacity: Math.max(0, 0.45 - (f - salta) / 30) }} />}
+        {boom >= 0 && boom < 70 && <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 50% 45%, #fff3d8 0%, #ff3d2e 55%, transparent 80%)", opacity: Math.max(0, 0.7 - boom / 60) }} />}
+        {boom >= 0 && boom < 70 && <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}>{Array.from({ length: 16 }).map((_, i) => { const a = (i / 16) * Math.PI * 2, r0 = 120 + boom * 14, r1 = r0 + 160; return <line key={i} x1={960 + Math.cos(a) * r0} y1={520 + Math.sin(a) * r0} x2={960 + Math.cos(a) * r1} y2={520 + Math.sin(a) * r1} stroke="#fff3d8" strokeWidth={14} strokeLinecap="round" opacity={Math.max(0, 1 - boom / 50)} />; })}</svg>}
+        {boom >= 0 && boom < 70 && <div style={{ position: "absolute", left: 960, top: 520, transform: `translate(-50%,-50%) scale(${Math.min(1, boom / 6) * (1 + Math.exp(-boom / 5) * 0.4)})`, fontFamily: F_HUD, fontWeight: 900, fontSize: 300, color: "#ff3d2e", WebkitTextStroke: "10px #fff", opacity: Math.max(0, Math.min(1, (64 - boom) / 12)) }}>100%</div>}
         <Mano texto="asleep before his head hits the pillow" x={960} y={180} desde={duerme + 6} color="#6fa8ff" tam={56} />
         <HudOwen min={314} part="44/47" />
       </>} />

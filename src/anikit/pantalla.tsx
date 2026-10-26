@@ -105,11 +105,13 @@ export const GranNumero: React.FC<{ rotulo: string; claves: { f: number; v: numb
 // Texto escrito a mano (voz interior): las letras aparecen una a una con trazo, cada una apenas torcida
 export const TextoMano: React.FC<{ texto: string; x: number; y: number; desde: number; hasta?: number; color?: string; tam?: number; vel?: number; rot?: number; brillo?: boolean; centro?: boolean; panel?: boolean }> = ({ texto, x, y, desde, hasta, color = "#ff5fae", tam = 64, vel = 1.6, rot = -4, brillo = true, centro, panel }) => {
   const f = useF();
-  const n = Math.max(0, (f - desde) * (vel / 2));
+  // 26-oct (ojo: «caja gris vacía»): con panel, las primeras letras ya están en el 1er cuadro y la caja entra con un pop, nunca vacía
+  const n = Math.max(0, (f - desde + (panel ? 4 : 0)) * (vel / 2));
+  const pop = panel ? 1 + Math.exp(-(f - desde) / 3) * Math.sin(Math.min(Math.PI, (f - desde) / 3)) * 0.12 : 1;
   const o = hasta ? interpolate(f, [hasta - 12, hasta], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1;
   if (f < desde) return null;
   return (
-    <div style={{ position: "absolute", left: x, top: y, transform: `${centro ? "translateX(-50%) " : ""}rotate(${rot}deg)`, textAlign: centro ? "center" : undefined, fontFamily: F_MANO, fontWeight: 700, fontSize: tam, lineHeight: 1.05, color, opacity: o * (panel ? Math.min(1, (f - desde) / 6) : 1), whiteSpace: "pre", ...(panel ? { background: "rgba(14,12,18,0.78)", padding: `${tam * 0.18}px ${tam * 0.42}px ${tam * 0.24}px`, borderRadius: tam * 0.35, boxShadow: "0 8px 24px rgba(0,0,0,0.35)" } : {}), textShadow: brillo ? `0 0 14px ${color}99` : "0 3px 0 rgba(0,0,0,0.55), 0 0 22px rgba(0,0,0,0.7)" }}>
+    <div style={{ position: "absolute", left: x, top: y, transform: `${centro ? "translateX(-50%) " : ""}rotate(${rot}deg) scale(${pop})`, textAlign: centro ? "center" : undefined, fontFamily: F_MANO, fontWeight: 700, fontSize: tam, lineHeight: 1.05, color, opacity: o * (panel ? Math.min(1, (f - desde + 2) / 4) : 1), whiteSpace: "pre", ...(panel ? { background: "rgba(14,12,18,0.78)", padding: `${tam * 0.18}px ${tam * 0.42}px ${tam * 0.24}px`, borderRadius: tam * 0.35, boxShadow: "0 8px 24px rgba(0,0,0,0.35)" } : {}), textShadow: brillo ? `0 0 14px ${color}99` : "0 3px 0 rgba(0,0,0,0.55), 0 0 22px rgba(0,0,0,0.7)" }}>
       {texto.split("\n").map((lin, r, arr) => {
         const base = arr.slice(0, r).reduce((a, l) => a + l.length + 3, 0); // cada renglón arranca después del anterior (+pausa)
         return (
