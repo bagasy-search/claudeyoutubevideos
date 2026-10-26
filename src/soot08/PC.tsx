@@ -15,14 +15,14 @@ import { Persona } from "./persona";
 export const C0 = 189.7, C1 = 295.7;
 
 const KM: K[] = [
-  [189.7, 3300, -1500, 0.32], [192.0, 3300, -1500, 0.33], [193.4, 2200, -300, 1.6], [196.8, 2200, -300, 1.65], [198.0, 3300, -380, 0.9], [200.2, 3300, -380, 0.95], [202.4, 3300, -420, 0.8], [204.8, 3500, -420, 0.9],
+  [189.7, 3300, -1500, 0.32], [192.0, 3300, -1500, 0.33], [193.4, 2200, -300, 1.6], [196.8, 2200, -300, 1.65], [198.0, 3500, -300, 1.1], [200.2, 3500, -300, 1.15], [202.4, 3500, -330, 1.0], [204.8, 3500, -420, 0.9],
   [214.3, 4520, -300, 1.35], [218.5, 4350, -300, 1.25], [220.8, 3500, -430, 0.8], [222.4, 3300, -430, 0.95], [224.4, 3180, -330, 1.85], [229.0, 3180, -320, 1.95],
   [232.6, 3300, -450, 0.7], [243.0, 3300, -450, 0.62], [245.5, 3200, -200, 1.0], [248.6, 3150, -150, 1.6], [251.7, 3150, -170, 1.5],
   [271.0, 3250, -280, 1.3], [277.0, 3350, -280, 1.35], [284.9, 3000, -380, 1.0], [287.0, 2600, -330, 1.2], [293.0, 2560, -280, 1.5], [295.7, 2560, -280, 1.6],
 ];
 const KL: K[] = [
   [204.8, -450, -380, 1.15], [207.4, 480, -380, 1.1], [208.4, 250, -540, 0.82], [210.3, 0, -560, 0.72], [214.3, 0, -560, 0.72],
-  [251.7, 200, -320, 1.0], [253.3, 560, -150, 1.9], [257.9, 480, -160, 1.8], [262.5, -330, -150, 2.3], [263.9, -420, -150, 2.3], [267.5, -480, -180, 2.0], [271.0, -400, -300, 1.4],
+  [251.7, 200, -320, 1.0], [253.3, 560, -150, 1.9], [257.9, 480, -330, 1.2], [262.5, -120, -330, 1.1], [263.9, -200, -330, 1.15], [267.5, -380, -330, 1.3], [271.0, -400, -300, 1.4],
 ];
 const lado = (t: number) => (t >= 204.8 && t < 214.3) || (t >= 251.7 && t < 271.0);
 
@@ -40,7 +40,7 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
 
   // ── adentro de la fábrica
   const chico: GenteFab = t < 214
-    ? { seed: 2, x: 2150, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t < 195.5 ? "neutro" : "orgullo", salta: 195.5, aparece: 192.3, mira: 1 }
+    ? { seed: 2, x: t > 197.5 ? 3000 : 2150, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t < 195.5 ? "neutro" : "orgullo", salta: 195.5, aparece: 192.3, mira: 1 }
     : t < 224 ? { seed: 2, x: interpolate(t, [214, 219.6, 220.9], [4180, 4180, 3050], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t > 220.8 ? "sorpresa" : "neutro", mira: 1, camina: t > 219.6 && t < 220.9 ? 3 : 0, flip: t > 219.6 && t < 220.9 }
     : t < 232.6 ? { seed: 2, x: 3150, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: "miedo", bD: t > 225 && t < 231 ? 160 : 20, cD: 20, mira: 1, inclina: t > 225 && t < 231 ? 6 : 0 }
     : t < 252 ? { seed: 2, x: 3300 + Math.sin((t - 232.6) * 0.9) * 900, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: "triste", camina: 1.6, flip: Math.cos((t - 232.6) * 0.9) < 0, descalzo: t > 246 } as GenteFab
@@ -118,7 +118,7 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
           <Espacio cam={cam}>
             <MulaPerfil t={t} u={uLado(t)} peligro={t > 263.6 && t < 271 ? prog(t, 263.6, 264.2) : 0}>
               {/* el scavenger: se arrastra panza abajo hasta debajo de los hilos (dibujado DETRÁS del carro) */}
-              {t > 251.7 && <Girado t={t} rot={-90} g={{ seed: 30, x: interpolate(t, [257.9, 262.4], [760, -330], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), y: -6, h: 250, ropa: NINO, gorro: "gorra", expr: t < 263.9 ? "neutro" : t < 267.5 ? "miedo" : "sorpresa", bD: 170 + Math.sin(t * 8) * 10, bI: 160, descalzo: true }} />}
+              {t > 251.7 && <Girado t={t} rot={-90} g={{ seed: 30, x: interpolate(t, [257.9, 262.4], [760, -330], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), y: -6, h: 420, ropa: NINO, gorro: "gorra", expr: t < 263.9 ? "neutro" : t < 267.5 ? "miedo" : "sorpresa", bD: 170 + Math.sin(t * 8) * 10, bI: 160, descalzo: true }} />}
               {t > 263.9 && t < 271 && <Emote t={t} t0={263.95} tipo="susto" x={-600} y={-120} s={0.6} />}
               {/* el hilandero, del otro lado del carro */}
               {t < 214.3 && <Persona t={t} seed={41} x={carroX(uLado(t)) + 420} y={0} h={480} ropa={HILANDERO} barba flip expr="neutro" bI={50} cI={40} camina={Math.abs(uLado(t + 0.05) - uLado(t)) > 0.002 ? 1.4 : 0} />}

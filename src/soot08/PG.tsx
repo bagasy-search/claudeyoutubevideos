@@ -118,7 +118,7 @@ export const PG: React.FC<{ t: number }> = ({ t }) => {
       <Lista t={t} t0={600.25} t1={607.7} x={110} y={200} titulo="IF YOU GOT HURT" size={70} items={[{ txt: "NO SICK PAY", t0: 600.3, ok: false }, { txt: "NO COMPENSATION", t0: 601.7, ok: false }, { txt: "NO JOB", t0: 606.0, ok: false }]} />
       <Primer t={t} t0={600.4} t1={610.6} lado="der" g={{ expr: "triste", bI: 40, cI: 110, manoI: <Venda /> }} emo="lagrimas" />
       <Chip t={t} t0={607.9} t1={610.6} text="SOME OWNERS PAID THE DOCTOR" color={C.lima} tinta={C.noche} x={960} y={110} centro size={60} />
-      <Tilde t={t} t0={608.2} t1={610.6} x={1460} y={330} s={0.7} />
+      <Tilde t={t} t0={608.2} t1={610.6} x={1540} y={110} s={0.6} />
       <Chip t={t} t0={609.95} t1={610.6} text="MANY DID NOT" color={C.rojo} x={960} y={470} centro size={70} />
       <Chip t={t} t0={610.9} t1={614.5} text="LOST A HAND AT 10 → BEGGING FOR LIFE" color={C.rojo} x={960} y={170} centro size={58} />
       <Chip t={t} t0={614.7} t1={617.5} text="ON THE STREET HE WALKED TO WORK" color={C.noche} x={960} y={170} centro size={60} />

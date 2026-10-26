@@ -145,7 +145,7 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={353.3} t1={355.3} text="LUNGS STOP WORKING" color={C.rojo} x={960} y={950} centro size={66} />
       <Gran t={t} t0={357.0} t1={359.7} text="BYSSINOSIS" y={180} size={150} color={C.crema} />
       <Chip t={t} t0={358.5} t1={359.7} text="“BROWN LUNG”" color={C.naranja} x={960} y={950} centro size={74} />
-      <Chip t={t} t0={359.9} t1={364.0} text="STARTED AT 9 →" color={C.violeta} x={960} y={150} centro size={70} />
+      <Chip t={t} t0={359.5} t1={364.0} text="STARTED AT 9 →" color={C.violeta} x={960} y={150} centro size={70} />
       <Chip t={t} t0={361.3} t1={364.0} text="A LIFE FIGHTING FOR BREATH" color={C.rojo} x={960} y={950} centro size={66} />
       <Gran t={t} t0={364.4} t1={366.3} text="THE NOISE" x={1150} y={200} size={190} color={C.ambar} rot={-3} />
       <Primer t={t} t0={364.5} t1={368.4} lado="izq" g={{ expr: "miedo", bD: 165, cD: 150, bI: 165, cI: 150 }} emo="susto" />

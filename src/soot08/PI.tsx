@@ -178,7 +178,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={720.45} t1={722.3} text="THE CHILDREN DID NOT STAY SILENT" color={C.violeta} x={960} y={150} centro size={62} />
       <Chip t={t} t0={722.5} t1={726.4} text="THEY DESCRIBED THEIR OWN DAY" color={C.noche} x={960} y={150} centro size={62} />
       <Sello t={t} t0={727.0} t1={729.7} text="IT CHANGED THE LAW" x={960} y={300} size={110} color={C.lima} />
-      <Chip t={t} t0={729.9} t1={731.2} text="IT STARTED WITH A LETTER" color={C.noche} x={960} y={150} centro size={64} />
+      <Chip t={t} t0={729.4} t1={731.2} text="IT STARTED WITH A LETTER" color={C.noche} x={960} y={150} centro size={64} />
       <Retrato t={t} t0={731.4} t1={739.0} x={1480} y={460} g={{ seed: 260, ropa: DUENO, gorro: "copa", expr: "enojado" }} nombre="RICHARD OASTLER" sub="YORKSHIRE LAND AGENT · 1830" s={0.9} />
       {t > 733 && t < 744.6 && <div style={{ position: "absolute", left: 0, top: 0, transform: `scale(${ent(t, 733) * (1 - prog(t, 744.3, 744.6))})`, transformOrigin: "560px 540px" }}><Pergamino x={560} y={560} w={640} abre={prog(t, 733.1, 733.9)} titulo="LEEDS MERCURY" /></div>}
       <Gran t={t} t0={736.5} t1={739.0} text="“YORKSHIRE SLAVERY”" y={200} size={110} color={C.rojo} />
@@ -250,7 +250,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Retrato t={t} t0={851.8} t1={854.6} x={290} y={480} g={{ seed: 261, ropa: DUENO, gorro: "copa", barba: true, expr: "neutro" }} nombre="ABRAHAM LINCOLN" sub="JANUARY 1863" s={0.85} />
       <Chip t={t} t0={851.8} t1={854.6} text="TO THE WORKING MEN OF MANCHESTER" color={C.noche} x={1150} y={130} centro size={54} />
       <Lista t={t} t0={861.8} t1={870.7} x={90} y={170} titulo="THE SAME PEOPLE WHO…" size={52} items={[{ txt: "WORKED THE MILLS AS KIDS", t0: 862.2, ok: true }, { txt: "PAID FOR THE STEAM", t0: 864.6, ok: true }, { txt: "WERE FINED FOR WHISTLING", t0: 866.4, ok: true }]} />
-      <Gran t={t} t0={867.5} t1={870.7} text="SOMEONE ELSE'S FREEDOM > THEIR OWN BREAD" y={860} size={70} color={C.ambar} />
+      <Chip t={t} t0={867.5} t1={870.7} text="SOMEONE ELSE'S FREEDOM > THEIR OWN BREAD" color={C.ambar} tinta={C.noche} x={960} y={1000} centro size={54} />
       <Chip t={t} t0={870.9} t1={873.6} text="MANCHESTER · STILL THERE TODAY" color={C.noche} x={960} y={150} centro size={60} />
       <Chip t={t} t0={877.4} t1={879.5} text="CARVED IN THE BASE: THAT LETTER" color={C.oro} tinta={C.noche} x={960} y={150} centro size={60} />
       <Chip t={t} t0={879.7} t1={882.4} text="MOST PEOPLE WALK RIGHT PAST IT · ON THEIR WAY TO WORK" color={C.violeta} x={960} y={150} centro size={48} />
@@ -276,7 +276,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       )}
       {t > 895.6 && <Velo t={t} t0={895.6} t1={1e9} op={0.55} />}
       <Gran t={t} t0={895.7} t1={1e9} text="WHICH HORROR GETS YOU FIRST?" y={260} size={96} color={C.ambar} />
-      <Carretes t={t} t0={896.3} n={7} y={620} s={1.0} />
+      <Carretes t={t} t0={896.3} n={7} y={980} s={0.8} />
       <Chip t={t} t0={897.2} t1={1e9} text="TELL ME IN THE COMMENTS" color={C.violeta} x={960} y={900} centro size={60} />
     </AbsoluteFill>
   );
