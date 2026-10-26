@@ -135,11 +135,6 @@ export const Gardner: React.FC<{ dDias?: number; dHoras?: number; dSintomas?: nu
     <Pizarra titulo="RANDY GARDNER · 17 · 1964" fuente="Gulevich, Dement & Johnson, Arch Gen Psychiatry, 1966">
       {/* antes de los números: el chico despierto en su silla, el almanaque que pasa hojas */}
       <g opacity={1 - ease(f, dDias - 12, dDias)}>
-        <rect x={420} y={760} width={360} height={24} rx={6} fill="#6a4630" />
-        <rect x={440} y={784} width={16} height={240} fill="#4a3020" /><rect x={744} y={784} width={16} height={240} fill="#4a3020" />
-        <Actor look={TEEN} escala={1.15} seed={17} ruta={[{ f: 0, x: 860, y: 1030 }]} dir={[{ f: 0, v: -1 }]} asiento={[{ f: 0, v: 120 }]}
-          poses={Array.from({ length: 8 }).map((_, i) => ({ f: i * 22, v: i % 3 === 0 ? { tronco: 8, pI: 88, rI: 88, pD: 92, rD: 92, hD: 120, cD: 140, cabeza: 14 } : i % 3 === 1 ? { tronco: -4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 150, cD: 20, hI: 150, cI: 20, cabeza: -8 } : "sentado" }))}
-          caras={[{ f: 0, v: "neutral" }, { f: 60, v: "cansado" }, { f: 120, v: "zombi" }]} />
         <g transform="translate(1240,380)">
           <rect x={-150} y={-20} width={300} height={360} rx={16} fill={TINTA} />
           <rect x={-150} y={-20} width={300} height={70} rx={16} fill={ROJO} />
@@ -148,6 +143,10 @@ export const Gardner: React.FC<{ dDias?: number; dHoras?: number; dSintomas?: nu
           {f % 14 < 7 && <rect x={-150} y={60 - (f % 14) * 30} width={300} height={280} rx={8} fill="#ddd6c6" opacity={1 - (f % 14) / 7} />}
         </g>
       </g>
+      {/* 26-oct v7 (ojo 6/10: Randy chico y quieto): Randy grande TODO el plano, cada vez más desarmado: se balancea más, la cabeza cae y se frota los ojos */}
+      <Actor look={TEEN} escala={2.5} seed={17} ruta={[{ f: 0, x: 250, y: 1230 }]} dir={[{ f: 0, v: 1 }]}
+        poses={Array.from({ length: 40 }).map((_, i) => { const d = Math.min(1, (i * 18) / Math.max(1, dHoras)); return { f: i * 18, v: i % 4 === 3 ? { tronco: 6 + d * 10, hD: 120, cD: 150, cabeza: 10 + d * 14 } : { tronco: (i % 2 ? 1 : -1) * (3 + d * 12), cabeza: (i % 2 ? 1 : -1) * 6 + d * 18, hD: 20 + d * 20, cD: 20, hI: 20 + d * 20, cI: 20 } }; })}
+        caras={[{ f: 0, v: "neutral" }, { f: Math.round(dDias * 0.5), v: "cansado" }, { f: dDias, v: "zombi" }, { f: dSintomas, v: "miedo" }, { f: dSintomas + 60, v: "zombi" }]} />
       <g opacity={ease(f, dDias, dDias + 10)}>
         <rect x={360} y={330} width={520} height={380} rx={24} fill={TINTA} />
         <rect x={360} y={330} width={520} height={90} rx={24} fill={ROJO} />
@@ -155,7 +154,7 @@ export const Gardner: React.FC<{ dDias?: number; dHoras?: number; dSintomas?: nu
         <T x={620} y={640} s={200} c="#14203a" w={800}>11</T>
       </g>
       <g opacity={ease(f, dHoras, dHoras + 10)}>
-        <T x={1340} y={520} s={150} c={AMBAR} w={800}>{n}</T>
+        <g transform={`translate(1340,470) scale(${1 + (f >= dHoras + 20 ? Math.exp(-(f - dHoras - 20) / 5) * 0.45 : 0)}) translate(-1340,-470)`}><T x={1340} y={520} s={150} c={AMBAR} w={800}>{n}</T></g>
         <T x={1340} y={590} s={44}>HOURS</T>
       </g>
       {sint.map((s, i) => <T key={s} x={1340} y={700 + i * 60} s={38} c={ROJO} o={ease(f, dSintomas + i * 40, dSintomas + i * 40 + 10)}>× {s}</T>)}
