@@ -363,7 +363,7 @@ B("keeps a bottle in the trunk", "img:r479", "cut", why="el baúl con la botella
 O("I taught fourth grade for 31 years", "quote", 5.0, text="I taught fourth grade for thirty-one years. I know how to check homework.", who="Mrs. Ellison", y=560)
 B("That's the difference. If you already own", "w:bench", "portal", why="el banco")
 # AV 1019.2-1024.2
-B("First, put your finger inside the tailpipe", "img:r429", "cut", why="Ramón con el dedo en el escape")
+B("First, put your finger inside the tailpipe", "img:r478", "cut", why="el escape del auto (r429 salió con gesto feo, 26-oct)")
 B("If it comes out black and oily", "ltx:r4_tailpipe|r429", "cut", why="el dedo sale negro")
 O("black and oily wet", "chips", 3.6, items=["BLACK + OILY = BURNER", "DRY GRAY = OK"], y=880)
 # AV 1036.9-1042.0
@@ -568,6 +568,10 @@ def clip_len(p):
     except Exception: return 0.0
 LTXD = PUB + f"{SL}/ltx/"; AGD = PUB + f"broll/{SL}/"; IMGD = PUB + f"{SL}/img/"
 ltx_ok = {f[:-4] for f in os.listdir(LTXD) if f.endswith(".mp4")} if os.path.isdir(LTXD) else set()
+# 25-oct (regla del creador): LTX = Ramón HACIENDO lo que narra (vlog, cámara fija). Los clips de texto-a-video viejos (r4_*/r5_*) salen;
+# cada foto con su cara tiene su toma en un clip de 3 tomas (ltx_vlog.py) → mapa foto → [clip, desde, largo].
+ltx_ok = {x for x in ltx_ok if x.startswith("rm04v")}
+VMAP = json.load(open("D:/rtmp_enrm04/ltx_vlog_mapa.json", encoding="utf8")) if os.path.exists("D:/rtmp_enrm04/ltx_vlog_mapa.json") else {}
 ag_ok = {f[:-4] for f in os.listdir(AGD) if f.endswith(".mp4")} if os.path.isdir(AGD) else set()
 img_ok = {f[:-4] for f in os.listdir(IMGD) if f.endswith(".jpg")}
 used, notes = set(), []
@@ -600,6 +604,9 @@ def resolve(base, a):
         notes.append(f"LTX {lid} no llegó → {alt}"); base = "img:" + alt
     force_ph = base.startswith("ph:")
     pid = base.split(":", 1)[1]
+    if not force_ph and pid in VMAP and VMAP[pid][0] in ltx_ok and ("vl_" + pid) not in used:
+        cid, fr, ln = VMAP[pid]; used.add("vl_" + pid); used.add(pid)
+        return {"k": "clip", "src": f"{SL}/ltx/{cid}.mp4", "from": fr, "len": ln, "id": "vl_" + pid}
     if not force_ph and pid in ag_ok and ("ag_" + pid) not in used:
         used.add("ag_" + pid); return {"k": "clip", "src": f"broll/{SL}/{pid}.mp4", "len": clip_len(AGD + pid + ".mp4"), "id": "ag_" + pid}
     if pid in img_ok and pid not in used:
