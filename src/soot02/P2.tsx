@@ -1,4 +1,5 @@
 import React from "react";
+import { TituloTrampa } from "./trampa";
 import { AbsoluteFill, interpolate } from "remotion";
 import { rnd } from "../soot/lib";
 import { Persona, APION, CIVIL } from "./persona";
@@ -87,10 +88,8 @@ const Nubecita: React.FC<{ t: number; t0: number; x1: number; y1: number; x2: nu
 export const P2: React.FC<{ t: number }> = ({ t }) => (
   <>
     {/* 211,74 · TRAP #2 · THE BENCH */}
-    <Escena t={t} t0={211.74} t1={214.4} entra="atraviesa" ix={960} iy={520} sale="nada" fondo="none" golpes={[212.1, 213.1]}>
-      <Galera x={interpolate(t, [211.7, 214.6], [500, 780])} y={720} s={0.5} t={t} boga={0.6} vela />
-      <Pancarta t={t} t0={211.8} n={2} titulo="THE BENCH" y={400} />
-      <Apion t={t} t0={211.9} x={1620} y={1050} h={420} borda={1020} acts={[[211.9, "habla"], [213.1, "piensa"]]} />
+    <Escena t={t} t0={211.74} t1={214.4} entra="atraviesa" ix={960} iy={520} sale="nada" fondo="#000" golpes={[212.1, 213.1]}>
+      <TituloTrampa t={t} t0={211.8} n={2} titulo="THE BENCH" acts={[[211.9, "habla"], [213.1, "piensa"]]} />
     </Escena>
 
     {/* 214,4 · "Let's go aboard. The quinquereme... 40 meters long... Polybius tells us what it carried. 300 rowers + 120 marines + officers" */}

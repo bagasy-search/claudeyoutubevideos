@@ -1,4 +1,5 @@
 import React from "react";
+import { TituloTrampa } from "./trampa";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona, APION, CIVIL, CENTURION } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, cabeza, Particulas, Pergamino, Pluma } from "./kit";
@@ -67,10 +68,8 @@ const Pino: React.FC<{ x: number; y: number; s?: number }> = ({ x, y, s = 1 }) =
 export const P6: React.FC<{ t: number }> = ({ t }) => (
   <>
     {/* 652,89 · TRAP #6 · THE STORM — la galera de la trampa 5 escora y atravesamos a la pancarta */}
-    <Escena t={t} t0={652.89} t1={655.33} entra="atraviesa" ix={960} iy={520} sale="fundido" fondo="none" golpes={[653.0, 654.3]}>
-      <Galera x={960} y={760} s={0.55} t={t} boga={0.4} vela={false} corvus={0} balanceo={9} ola={1} agua="#1b1f4c" />
-      <Pancarta t={t} t0={653.0} n={6} titulo="THE STORM" y={360} />
-      <Apion t={t} t0={653.1} x={1620} y={1050} h={420} borda={1020} acts={[[653.1, "miedo"]]} />
+    <Escena t={t} t0={652.89} t1={655.33} entra="atraviesa" ix={960} iy={520} sale="fundido" fondo="#000" golpes={[653.0, 654.3]}>
+      <TituloTrampa t={t} t0={653.0} n={6} titulo="THE STORM" acts={[[653.1, "miedo"]]} />
       <Relampago t={t} ts={[653.1, 654.35]} x={1300} />
     </Escena>
 
@@ -87,6 +86,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
     {/* 665,03 · "Polybius says the ship captains warned the consuls. Dangerous season, no safe harbors. The consuls ignored them." */}
     <Escena t={t} t0={665.03} t1={673.57} entra="fundido" sale="baja" fondo="none" quieta golpes={[665.1, 668.1, 669.5, 672.4]}>
       <Galera x={960} y={900} s={1.25} t={t} boga={0.2} vela={false} corvus={0} balanceo={0.6} ola={0.5} marines={false} />
+      <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><rect x={0} y={748} width={1920} height={34} fill="#b07a42" stroke="#5a3418" strokeWidth={5} />{Array.from({ length: 16 }, (_, i) => <line key={i} x1={i * 128 + 40} y1={748} x2={i * 128 + 40} y2={782} stroke="#5a3418" strokeWidth={4} />)}</svg>
       <Persona x={620} y={760} h={420} t={t} seed={161} ropa={CAPITAN} viejo expr={t < 672.4 ? "miedo" : "triste"} habla={t > 665.3 && t < 672.3} bD={t < 668 ? 120 : 150} cD={t < 668 ? 40 : 90} mira={1} />
       <Persona x={1310} y={760} h={450} t={t} seed={162} ropa={PULCRO} expr={t < 672.3 ? "neutro" : "enojado"} flip bD={t > 672.4 ? 80 : 20} cD={t > 672.4 ? 0 : 20} habla={t > 672.4} />
       <Emote t={t} t0={665.6} tipo="excl" {...L(620, 760, 420)} s={0.9} />
@@ -142,8 +142,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       {t < 696.69 && <MapaMar t={t} puntos={[{ n: "CAMARINA", t0: 694.2, color: C.rojo }]} zoom={{ n: "CAMARINA", z: 2.6, t: [694.0, 696.0] }} />}
       {t < 696.69 && <Relampago t={t} ts={[695.6]} x={1100} />}
       {t >= 696.4 && <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #2a2d52, #14122a 75%)", opacity: prog(t, 696.4, 696.75) }} />}
-      {t >= 696.69 && <Flota t={t} t0={696.69} n={364} hunde={284} tA={[698.9, 700.4]} x={820} y={640} cols={28} s={0.85} />}
-      {t >= 696.69 && <Apion t={t} t0={696.7} x={1710} y={1050} h={420} borda={1020} desde="nada" acts={[[696.7, "asombro"], [698.9, "miedo"]]} />}
+      {t >= 696.69 && <Flota t={t} t0={696.69} n={364} hunde={284} tA={[698.9, 700.4]} x={820} y={640} cols={28} s={0.85} mar />}
       {t >= 696.69 && t < 698.87 && <CuentaN t={t} t0={696.69} t1={697.5} de={300} a={364} x={820} y={190} size={140} color={C.crema} suf=" SHIPS" />}
       {t >= 698.87 && <CuentaN t={t} t0={698.87} t1={700.4} de={364} a={80} x={820} y={190} size={140} color="#ff6a6a" suf=" SHIPS LEFT" />}
             {t < 696.69 && <Chip t={t} t0={694.2} text="CAMARINA · 255 BC" color={C.rojo} x={960} y={150} centro size={60} />}
@@ -184,15 +183,15 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       {t < 715.15 && <Chip t={t} t0={712.81} text="2 YEARS LATER" color={C.violeta} x={960} y={250} centro size={52} />}
       {t >= 713.81 && t < 715.2 && <Grande t={t} t0={713.81} text="253 BC" x={1450} y={420} size={140} color={C.crema} />}
       {t >= 715.15 && <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #2a2d52, #14122a 75%)", opacity: prog(t, 715.15, 715.5) }} />}
-      {t >= 715.15 && <Flota t={t} t0={715.2} n={150} hunde={150} tA={[715.7, 718.3]} x={900} y={620} cols={15} s={1.25} />}
+      {t >= 715.15 && <Flota t={t} t0={715.2} n={150} hunde={150} tA={[715.7, 718.3]} x={900} y={620} cols={15} s={1.25} mar />}
       {t >= 715.15 && <CuentaN t={t} t0={715.75} t1={718.55} de={0} a={150} x={900} y={180} size={130} color={C.crema} pre="~" suf=" SUNK" />}
-      {t >= 715.15 && <Apion t={t} t0={715.2} x={1710} y={1050} h={420} borda={1020} desde="nada" acts={[[715.2, "asombro"], [716.3, "miedo"]]} />}
       <Relampago t={t} ts={[715.3, 716.5, 717.6]} x={1380} />
     </Escena>
 
     {/* 718,63 · 249 BC — Publius Claudius Pulcher y los pollos sagrados */}
     <Escena t={t} t0={718.63} t1={732.33} entra="fundido" sale="fundido" fondo="none" quieta golpes={[718.7, 720.3, 723.9, 726.2, 727.5, 729.7, 731.0]}>
       <Galera x={960} y={1040} s={1.5} t={t} boga={0} vela={false} corvus={0} balanceo={0.3} marines={false} />
+      <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><rect x={0} y={893} width={1920} height={34} fill="#b07a42" stroke="#5a3418" strokeWidth={5} />{Array.from({ length: 16 }, (_, i) => <line key={i} x1={i * 128 + 40} y1={893} x2={i * 128 + 40} y2={927} stroke="#5a3418" strokeWidth={4} />)}</svg>
       {t < 720.2 && <Grande t={t} t0={718.7} text="249 BC" x={960} y={250} size={150} color={C.crema} />}
       {<Persona x={1240} y={905} h={480} t={t} seed={164} ropa={PULCRO} expr={t < 723.9 ? "orgullo" : t < 727.4 ? "enojado" : "feliz"} habla={t > 729.6 && t < 732.3} bD={t > 727.4 && t < 728.4 ? 160 : 40} cD={t > 727.4 && t < 728.4 ? 10 : 30} flip />}
       <Persona x={560} y={905} h={380} t={t} seed={165} ropa={CIVIL(3)} expr={t < 726 ? "triste" : "sorpresa"} bD={70 + Math.sin(t * 3) * 10} cD={60} camina={t < 720.2 ? 1.2 : 0} />
@@ -220,9 +219,8 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
     {/* 732,33 · "He then lost the battle and more than 90 ships. In that same year, yet another Roman fleet was destroyed by a storm." */}
     <Escena t={t} t0={732.33} t1={739.43} entra="fundido" sale="fundido" fondo="none" golpes={[732.4, 733.6, 735.4, 736.3, 737.6]}>
       {t < 735.31 && <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #6a2a1a, #2a1530 75%)" }} />}
-      {t < 735.31 && <Flota t={t} t0={732.4} n={120} hunde={93} tA={[733.0, 735.0]} x={960} y={620} cols={15} s={1.25} />}
+      {t < 735.31 && <Flota t={t} t0={732.4} n={120} hunde={93} tA={[733.0, 735.0]} x={960} y={620} cols={15} s={1.25} mar />}
       {t < 735.31 && <CuentaN t={t} t0={733.0} t1={735.0} de={0} a={90} x={900} y={250} size={104} color={C.crema} pre="+" suf=" SHIPS LOST" />}
-      <Apion t={t} t0={732.4} t1={735.3} x={1710} y={1050} h={420} borda={1020} acts={[[732.5, "asombro"], [733.6, "enojado"], [735.4, "miedo"]]} />
       {t < 735.31 && <Chip t={t} t0={732.4} text="BATTLE OF DREPANA: LOST" color={C.rojo} x={960} y={850} centro size={52} />}
       {t >= 735.31 && [[420, 760, 0.5, 0], [1000, 720, 0.6, 0.6], [1560, 780, 0.45, 1.2]].map(([x, y, s, d], i) => (
         <div key={i} style={{ position: "absolute", inset: 0, transform: `rotate(${interpolate(t, [736.5 + d, 739.2], [0, 40 - i * 15], cl)}deg)`, transformOrigin: `${x}px ${y + 40}px` }}>
@@ -237,7 +235,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 739,43 · "Polybius adds it all up. In that one war against Carthage, Rome lost around 700 warships, not all to the enemy, a huge number to the weather" */}
     <Escena t={t} t0={739.43} t1={752.81} entra="fundido" sale="fundido" fondo="#14122a" golpes={[739.5, 741.2, 743.2, 745.7, 747.2, 749.1]}>
-      {t < 749.13 && <Cam t={t} k={[[739.5, 900, 600, 0.92], [749.1, 900, 580, 1.2]]}><Flota t={t} t0={739.5} n={700} hunde={t > 745.69 ? 700 : 0} tA={[745.8, 748.9]} x={900} y={600} cols={40} s={0.6} /></Cam>}
+      {t < 749.13 && <Cam t={t} k={[[739.5, 900, 600, 0.92], [749.1, 900, 580, 1.2]]}><Flota t={t} t0={739.5} n={700} hunde={t > 745.69 ? 700 : 0} tA={[745.8, 748.9]} x={900} y={600} cols={40} s={0.6} mar /></Cam>}
       {t < 749.13 && <CuentaN t={t} t0={743.17} t1={745.6} de={0} a={700} x={960} y={160} size={130} color={C.crema} pre="~" suf=" WARSHIPS" />}
       <Chip t={t} t0={739.5} t1={743.1} text="POLYBIUS ADDS IT UP" color={C.violeta} x={960} y={160} centro size={56} />
       <Chip t={t} t0={741.21} t1={743.1} text="ROME vs CARTHAGE" color={C.rojo} x={820} y={930} centro size={50} />
@@ -254,7 +252,6 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
           })}
         </svg>
       )}
-      <Apion t={t} t0={739.6} x={1710} y={1000} h={330} desde="nada" acts={[[739.7, "habla"], [743.2, "asombro"], [745.7, "miedo"], [749.2, "triste"]]} />
       {t >= 749.13 && <CuentaN t={t} t0={750.0} t1={752.0} a={200000} pre="≈ " suf=" MEN" x={900} y={960} size={100} color={C.crema} />}
       {t >= 749.13 && <Chip t={t} t0={749.13} text="EVERY SHIP = A FEW HUNDRED ROWERS" color={C.rojo} x={960} y={190} centro size={56} />}
     </Escena>
@@ -307,8 +304,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={765.87} text="ADMIRAL · FLEET OF MISENUM" color={C.violeta} x={960} y={140} centro size={52} />
       <Chip t={t} t0={767.4} text="+ FAMOUS WRITER" color={C.oro} tinta={C.noche} x={960} y={240} centro size={46} />
       <Chip t={t} t0={769.27} text="PLINY THE ELDER" color={C.rojo} x={560} y={330} centro size={60} />
-      {t > 767.4 && <Pergamino x={1560} y={470} w={320} abre={prog(t, 767.5, 768.0)} lineas={4} titulo="NATURAL HISTORY" />}
-      {t > 767.4 && <CuentaN t={t} t0={767.6} t1={768.6} a={37} suf=" BOOKS" x={1560} y={300} size={64} color={C.oro} />}
+      {t > 767.4 && <CuentaN t={t} t0={767.6} t1={768.6} a={37} suf=" BOOKS" x={1560} y={330} size={80} color={C.oro} />}
     </Escena>
 
     {/* 770,47 · "One summer afternoon, he saw a strange cloud rising over the bay, shaped like a pine tree. It was Mount Vesuvius, erupting." */}

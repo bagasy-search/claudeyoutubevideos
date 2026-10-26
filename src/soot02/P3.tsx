@@ -1,4 +1,5 @@
 import React from "react";
+import { TituloTrampa } from "./trampa";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona, APION, CIVIL } from "./persona";
 import { Franja, C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, Particulas, Rayos, Astro } from "./kit";
@@ -85,10 +86,8 @@ const Jarra: React.FC<{ t: number; t0: number; x: number; y: number; litros: num
 export const P3: React.FC<{ t: number }> = ({ t }) => (
   <>
     {/* 341,36 · TRAP #3 · THE RHYTHM */}
-    <Escena t={t} t0={341.36} t1={343.9} entra="atraviesa" ix={960} iy={600} sale="fundido" fondo="none" golpes={[341.7, 342.7]}>
-      <Galera x={960} y={720} s={0.5} t={t} boga={1.0} vela={false} />
-      <Pancarta t={t} t0={341.4} n={3} titulo="THE RHYTHM" y={400} />
-      <Apion t={t} t0={341.5} x={1620} y={1050} h={420} borda={1020} acts={[[341.5, "rema"], [342.7, "cansado"]]} />
+    <Escena t={t} t0={341.36} t1={343.9} entra="atraviesa" ix={960} iy={600} sale="fundido" fondo="#000" golpes={[341.7, 342.7]}>
+      <TituloTrampa t={t} t0={341.4} n={3} titulo="THE RHYTHM" acts={[[341.5, "rema"], [342.7, "cansado"]]} />
     </Escena>
 
     {/* 343,9 · "Now, the famous drum. Every movie has it. A huge bald man beating a drum, faster and faster, while the slaves suffer below." */}

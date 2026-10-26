@@ -4,6 +4,7 @@ import { rnd } from "../soot/lib";
 import { Persona, APION, CIVIL } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Particulas, Rayos, Emote, cabeza, Pergamino, Astro } from "./kit";
 import { Denario } from "./kit2";
+import { TituloTrampa } from "./trampa";
 import { Apion, Sala } from "./actor";
 import { Galera, Carta, DiplomaBronce, Coliseo, MapaMar, Pancarta, CuentaN, Flecha, Puerto, Volcan, Corte, Nubes } from "./mar";
 
@@ -127,10 +128,8 @@ export const Sello: React.FC<{ t: number; t0: number; text: string; x: number; y
 export const P1: React.FC<{ t: number }> = ({ t }) => (
   <>
     {/* 49,24 · TRAP #1 · THE CONTRACT — sobre el mar de día, la galera pasa al fondo */}
-    <Escena t={t} t0={49.24} t1={51.6} entra="atraviesa" ix={960} iy={600} sale="paneo" fondo="none" golpes={[49.68, 50.5]}>
-      <Galera x={interpolate(t, [49.2, 51.9], [700, 1200])} y={700} s={0.42} t={t} boga={0.6} vela />
-      <Pancarta t={t} t0={49.3} n={1} titulo="THE CONTRACT" y={300} />
-      <Apion t={t} t0={49.4} x={1620} y={1050} h={420} borda={1020} acts={[[49.4, "asombro"], [50.5, "miedo"]]} />
+    <Escena t={t} t0={49.24} t1={51.6} entra="atraviesa" ix={960} iy={600} sale="paneo" fondo="#000" golpes={[49.68, 50.5]}>
+      <TituloTrampa t={t} t0={49.3} n={1} titulo="THE CONTRACT" acts={[[49.4, "asombro"], [50.5, "miedo"]]} />
     </Escena>
 
     {/* 51,6 · "Let me introduce you to a real person. His name is Apion... a village in Egypt, 2nd century... just joined the fleet" */}

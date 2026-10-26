@@ -1,4 +1,5 @@
 import React from "react";
+import { TituloTrampa } from "./trampa";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona, APION, CIVIL } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, cabeza, Particulas, Rayos } from "./kit";
@@ -51,10 +52,8 @@ const Suscribir: React.FC<{ t: number; t0: number; x: number; y: number }> = ({ 
 export const P7: React.FC<{ t: number }> = ({ t }) => (
   <>
     {/* 797,89 · TRAP #7 · THE RETIREMENT — desde el casco vacío de Plinio subimos al sol */}
-    <Escena t={t} t0={797.89} t1={800.33} entra="sube" sale="fundido" fondo="none" golpes={[798.0, 799.2]}>
-      <Galera x={960} y={800} s={0.42} t={t} boga={0.4} vela corvus={null} />
-      <Pancarta t={t} t0={798.0} n={7} titulo="THE RETIREMENT" y={300} />
-      <Apion t={t} t0={798.1} x={1620} y={1050} h={420} borda={1020} acts={[[798.1, "piensa"], [799.2, "festeja"]]} />
+    <Escena t={t} t0={797.89} t1={800.33} entra="sube" sale="fundido" fondo="#000" golpes={[798.0, 799.2]}>
+      <TituloTrampa t={t} t0={798.0} n={7} titulo="THE RETIREMENT" acts={[[798.1, "piensa"], [799.2, "festeja"]]} />
     </Escena>
 
     {/* 800,33 · "But let's say you survived. The bench, the crabs, the rams, the storms." */}
@@ -121,7 +120,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
     {/* 826,83 · "Many veterans stayed near Misenum and Ravenna. Their tombstones still survive. The ship's name like a coat of arms. The Mars. The Triton. The Victoria. The Hope." */}
     <Escena t={t} t0={826.75} t1={831.19} entra="fundido" sale="fundido" fondo="#1f5c9c" golpes={[826.9, 828.2, 829.3]}>
       <MapaMar t={t} puntos={[{ n: "MISENUM", t0: 828.2, color: C.rojo }, { n: "RAVENNA", t0: 829.3, color: C.oro }]} zoom={{ n: "ROME", z: 2.2, t: [826.9, 828.0] }} />
-      <Apion t={t} t0={826.9} x={1660} y={1060} h={400} acts={[[827.0, "habla"], [828.2, "senala"], [829.3, "orgullo"]]} />
+      <Apion t={t} t0={826.9} x={1660} y={1040} h={400} viejo acts={[[827.0, "habla"], [828.2, "senala"], [829.3, "orgullo"]]} />
       <Chip t={t} t0={826.9} text="THE VETERANS STAYED" color={C.violeta} x={960} y={140} centro size={58} />
     </Escena>
     <Escena t={t} t0={831.19} t1={842.09} entra="fundido" sale="fundido" fondo="none" quieta golpes={[831.2, 833.4, 838.55, 839.4, 840.35, 841.4]}>
@@ -205,7 +204,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
           </svg>
         </>
       )}
-      <Apion t={t} t0={859.1} t1={862.55} x={1000} y={1020} h={320} acts={[[859.2, "asombro"], [861.6, "festeja"]]} />
+      <Apion t={t} t0={859.1} t1={862.55} x={1000} y={1020} h={320} viejo acts={[[859.2, "asombro"], [861.6, "festeja"]]} />
       <Chip t={t} t0={859.01} t1={862.4} text="THOUSANDS LINED UP" color={C.violeta} x={600} y={200} centro size={56} />
       <Chip t={t} t0={861.59} t1={862.4} text="WILLINGLY" color={C.rojo} x={600} y={300} centro size={60} />
       {t >= 862.59 && (

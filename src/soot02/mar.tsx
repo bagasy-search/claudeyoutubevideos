@@ -597,11 +597,37 @@ const BarquitoIcono: React.FC<{ c: string }> = ({ c }) => (
 );
 const clampN = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
 // flota de N barquitos en grilla; `hunde` cuántos se dan vuelta entre tA[0] y tA[1]
-export const Flota: React.FC<{ t: number; t0: number; n: number; hunde: number; tA: [number, number]; x?: number; y?: number; cols?: number; s?: number }> = ({ t, t0, n, hunde, tA, x = 960, y = 560, cols = 28, s = 1 }) => {
+export const Flota: React.FC<{ t: number; t0: number; n: number; hunde: number; tA: [number, number]; x?: number; y?: number; cols?: number; s?: number; mar?: boolean }> = ({ t, t0, n, hunde, tA, x = 960, y = 560, cols = 28, s = 1, mar }) => {
   const orden = React.useMemo(() => { const r = rnd(7); return Array.from({ length: n }, (_, i) => i).sort(() => r() - 0.5); }, [n]);
+  const jit = React.useMemo(() => { const r = rnd(11); return Array.from({ length: n }, () => [r() - 0.5, r() - 0.5, r() * 6]); }, [n]);
   if (t < t0) return null;
   const e = ent(t, t0, 0, { damping: 14, stiffness: 150 });
   const rows = Math.ceil(n / cols);
+  if (mar) {
+    // la flota de verdad: filas en perspectiva sobre el mar (atrás chicas, adelante grandes), entran de atrás hacia adelante y se mecen
+    const H0 = 430;
+    return (
+      <svg style={{ position: "absolute", inset: 0, overflow: "visible" }} width={1920} height={1080}>
+        <defs><linearGradient id="fmar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#3a6aa8" /><stop offset="1" stopColor="#0d2246" /></linearGradient></defs>
+        <rect x={-300} y={H0} width={2520} height={1000} fill="url(#fmar)" opacity={Math.min(1, e)} />
+        <rect x={-300} y={H0 - 3} width={2520} height={6} fill="#bfe0ff" opacity={0.35} />
+        {Array.from({ length: 9 }, (_, k) => { const yy = H0 + 18 + k * k * 8.5; return <path key={k} d={`M -300 ${yy} Q 960 ${yy - 8 + Math.sin(t * 1.5 + k) * 6} 2220 ${yy}`} stroke="#a8d4ff" strokeWidth={1.5 + k * 0.5} opacity={0.16} fill="none" />; })}
+        {Array.from({ length: n }, (_, i) => {
+          const r = Math.floor(i / cols), c = i % cols;
+          const d = rows > 1 ? r / (rows - 1) : 1;
+          const paso = (1920 * (0.42 + 0.72 * d)) / cols;
+          const sc = (paso / 62) * 0.92;
+          const er = ent(t, t0 + d * 0.5, 0, { damping: 16, stiffness: 160 });
+          const k = orden.indexOf(i);
+          const td = tA[0] + ((k + 0.5) / Math.max(1, hunde)) * (tA[1] - tA[0]);
+          const u = k < hunde ? clampN((t - td) / 0.3, 0, 1) : 0;
+          const cx = 960 + (c - (cols - 1) / 2 + jit[i][0] * 0.5) * paso;
+          const cy = H0 + 14 + Math.pow(d, 1.25) * 600 + jit[i][1] * 6 * sc + Math.sin(t * 2.2 + jit[i][2]) * 3 * sc;
+          return <g key={i} transform={`translate(${cx} ${cy + u * 14 * sc}) scale(${sc * er}) rotate(${u * 150})`} opacity={(1 - u * 0.6) * Math.min(1, er * 1.5)}><BarquitoIcono c={u > 0.5 ? "#6a6f92" : "#ffd27a"} /></g>;
+        })}
+      </svg>
+    );
+  }
   return (
     <svg style={{ position: "absolute", left: x - (cols * 62 * s) / 2, top: y - (rows * 46 * s) / 2, overflow: "visible", transform: `scale(${e})` }} width={cols * 62 * s} height={rows * 46 * s}>
       {Array.from({ length: n }, (_, i) => {

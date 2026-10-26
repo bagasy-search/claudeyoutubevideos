@@ -1,4 +1,5 @@
 import React from "react";
+import { TituloTrampa } from "./trampa";
 import { AbsoluteFill, interpolate } from "remotion";
 import { rnd } from "../soot/lib";
 import { Persona, APION } from "./persona";
@@ -37,10 +38,8 @@ const Piedra: React.FC<{ t: number; t0: number; x: number }> = ({ t, t0, x }) =>
 export const P4: React.FC<{ t: number }> = ({ t }) => (
   <>
     {/* 442,08 · TRAP #4 · THE RAM */}
-    <Escena t={t} t0={442.08} t1={444.1} entra="atraviesa" ix={1500} iy={640} sale="nada" fondo="none" golpes={[442.4, 443.2]}>
-      <Galera x={interpolate(t, [442, 444.2], [900, 1000])} y={700} s={0.5} t={t} boga={1.4} vela={false} />
-      <Pancarta t={t} t0={442.1} n={4} titulo="THE RAM" y={400} />
-      <Apion t={t} t0={442.2} x={1620} y={1050} h={420} borda={1020} acts={[[442.2, "asombro"], [443.2, "miedo"]]} />
+    <Escena t={t} t0={442.08} t1={444.1} entra="atraviesa" ix={1500} iy={640} sale="nada" fondo="#000" golpes={[442.4, 443.2]}>
+      <TituloTrampa t={t} t0={442.1} n={4} titulo="THE RAM" acts={[[442.2, "asombro"], [443.2, "miedo"]]} />
     </Escena>
 
     {/* 444,1 · "On the front of every Roman warship, right at the waterline, sits a huge bronze beak, the rostrum, the ram" */}

@@ -1,4 +1,5 @@
 import React from "react";
+import { TituloTrampa } from "./trampa";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona, APION, CIVIL, CENTURION } from "./persona";
 import { Franja, C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, cabeza, Particulas, Rayos } from "./kit";
@@ -41,10 +42,8 @@ const RemoAire: React.FC<{ t: number }> = ({ t }) => (
 export const P5: React.FC<{ t: number }> = ({ t }) => (
   <>
     {/* 537,95 · TRAP #5 · THE CROW */}
-    <Escena t={t} t0={537.95} t1={540.2} entra="atraviesa" ix={1300} iy={420} sale="fundido" fondo="none" golpes={[538.3, 539.2]}>
-      <Galera x={900} y={720} s={0.5} t={t} boga={0.6} vela={false} corvus={0} />
-      <Pancarta t={t} t0={538.0} n={5} titulo="THE CROW" y={380} />
-      <Apion t={t} t0={538.1} x={1620} y={1050} h={420} borda={1020} acts={[[538.1, "piensa"], [539.2, "asombro"]]} />
+    <Escena t={t} t0={537.95} t1={540.2} entra="atraviesa" ix={1300} iy={420} sale="fundido" fondo="#000" golpes={[538.3, 539.2]}>
+      <TituloTrampa t={t} t0={538.0} n={5} titulo="THE CROW" acts={[[538.1, "piensa"], [539.2, "asombro"]]} />
     </Escena>
 
     {/* 540,2 · "In 264 BC, Rome went to war with Carthage, the greatest naval power in the western Mediterranean, and Rome had a problem" */}
@@ -81,14 +80,13 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
       {t >= 559.1 && (
         <AbsoluteFill style={{ background: "#1b3a6b" }}>
           <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>{Array.from({ length: 30 }, (_, i) => <line key={i} x1={0} y1={i * 40} x2={1920} y2={i * 40} stroke="#fff" strokeOpacity={0.08} strokeWidth={2} />)}{Array.from({ length: 50 }, (_, i) => <line key={"v" + i} x1={i * 40} y1={0} x2={i * 40} y2={1080} stroke="#fff" strokeOpacity={0.08} strokeWidth={2} />)}</svg>
-          <Flota t={t} t0={558.75} n={120} hunde={0} tA={[0, 1]} x={900} y={600} cols={15} s={1.45} />
+          <Flota t={t} t0={558.75} n={120} hunde={0} tA={[0, 1]} x={900} y={600} cols={15} s={1.45} mar />
         </AbsoluteFill>
       )}
       <Chip t={t} t0={554.3} t1={558.9} text="RAN AGROUND" color="#7a5bd1" x={1050} y={150} centro size={60} />
       <Chip t={t} t0={556.7} t1={558.9} text="CAPTURED" color={C.rojo} x={1050} y={260} centro size={56} />
       <CuentaN t={t} t0={559.2} t1={559.8} de={100} a={120} suf=" SHIPS" x={560} y={150} size={110} color={C.crema} />
       <Chip t={t} t0={559.9} text="100 QUINQUEREMES + 20 TRIREMES" color={C.violeta} x={960} y={1000} centro size={46} />
-      <Apion t={t} t0={559.15} x={1710} y={1075} h={380} acts={[[559.2, "asombro"], [561.0, "festeja"]]} />
       <CuentaN t={t} t0={561.0} t1={562.8} a={60} pre="IN " suf=" DAYS" x={1420} y={150} size={110} color={C.oro} />
     </Escena>
 

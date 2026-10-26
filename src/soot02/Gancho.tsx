@@ -115,12 +115,10 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
       {/* 18,40 · "284 Roman warships" — la flota entera como grilla: 364 barcos, se dan vuelta 284 */}
       <Escena t={t} t0={18.4} t1={21.14} entra="fundido" sale="baja" fondo="none" golpes={[18.4]}>
         <AbsoluteFill style={{ background: "rgba(16,14,40,.72)" }} />
-        <Flota t={t} t0={18.42} n={364} hunde={284} tA={[18.5, 20.7]} y={650} cols={26} s={1.12} />
+        <Flota t={t} t0={18.42} n={364} hunde={284} tA={[18.5, 20.7]} y={650} cols={26} s={1.12} mar />
         <CuentaN t={t} t0={18.4} t1={20.0} a={284} x={960} y={190} size={230} color={C.rojo} />
         <Chip t={t} t0={19.64} text="ROMAN WARSHIPS" color={C.violeta} x={960} y={330} centro size={56} />
         <Relampago t={t} ts={[20.1]} x={300} />
-        <Persona x={1640} y={pp(520, 600)} h={520} t={t} seed={2} ropa={APION} expr={t < 19.6 ? "neutro" : "miedo"} bD={t < 19.6 ? 20 : 150 + Math.sin(t * 10) * 12} cD={t < 19.6 ? 20 : 150} mira={-0.6} />
-        <Emote t={t} t0={19.7} tipo="sudor" {...L(1640, pp(520, 600), 520)} />
       </Escena>
 
       {/* 21,14 · "By some estimates, close to 100,000 men drowned" — la cámara baja al fondo con ellos */}
