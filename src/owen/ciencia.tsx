@@ -18,7 +18,7 @@ export const Pizarra: React.FC<{ children: React.ReactNode; titulo?: string; fue
         {Array.from({ length: 25 }).map((_, i) => <rect key={`v${i}`} x={i * 80} y={0} width={2} height={1080} fill="#22325a" />)}
         {Array.from({ length: 14 }).map((_, i) => <rect key={`h${i}`} x={0} y={i * 80} width={1920} height={2} fill="#22325a" />)}
         <g transform={`translate(${Math.sin(f / 70) * 4},${Math.cos(f / 90) * 3})`}>{children}</g>
-        {titulo && <text x={960} y={120} fontFamily={F_HUD} fontWeight={600} fontSize={54} letterSpacing={4} fill={TINTA} textAnchor="middle" opacity={ease(f, 0, 10)}>{titulo}</text>}
+        {titulo && <text x={960} y={178} fontFamily={F_HUD} fontWeight={600} fontSize={52} letterSpacing={4} fill={TINTA} textAnchor="middle" opacity={ease(f, 0, 10)}>{titulo}</text>}
         {fuente && <text x={1860} y={1040} fontFamily={F_HUD} fontSize={24} fill="#8a9ac0" textAnchor="end" opacity={ease(f, 10, 25)}>{fuente}</text>}
         <rect width={1920} height={1080} fill="url(#pzv)" />
       </svg>
