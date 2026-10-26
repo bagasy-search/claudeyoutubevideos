@@ -1,0 +1,25 @@
+# Compuerta OJO DEL DIRECTOR: planilla de contacto (1 cuadro / 10 s + tira de cada corte) y lageos del MP4 final. Rama ojo-*.
+name: ojo
+on:
+  push:
+    branches: ['ojo-*']
+permissions:
+  contents: write
+jobs:
+  uno:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env: { GH_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q "opencv-python-headless==4.10.0.84" "numpy<2" pillow && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core >/dev/null || true
+      - name: ojo
+        run: |
+          S=$(cat slug.txt)
+          for n in 1 2 3 4 5; do gh release download "$S" -R "$GITHUB_REPOSITORY" -p "$S.mp4" --clobber && break; sleep $((n*10)); done
+          test -s "$S.mp4"
+          python3 ojo.py "$S"
+          T=$GITHUB_REF_NAME
+          gh release view "$T" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create "$T" -R "$GITHUB_REPOSITORY" --title "$T" --notes "ojo del director"
+          gh release upload "$T" out/* -R "$GITHUB_REPOSITORY" --clobber
+          git push "https://x-access-token:${GH_TOKEN}@github.com/$GITHUB_REPOSITORY.git" --delete "$GITHUB_REF_NAME" || true
