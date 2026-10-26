@@ -264,7 +264,7 @@ export const TelSvg: React.FC<{ x: number; y: number; w?: number; ang?: number; 
   const h = w * 1.95;
   return (
     <g transform={`translate(${x},${y}) rotate(${ang})`}>
-      {prendido > 0 && <circle r={w * 1.3} fill={ACENTO} opacity={0.12 * prendido} />}
+      {prendido > 0 && <><defs><radialGradient id="telHalo"><stop offset="0" stopColor={ACENTO} stopOpacity={0.35} /><stop offset="1" stopColor={ACENTO} stopOpacity={0} /></radialGradient></defs><circle r={w * 1.5} fill="url(#telHalo)" opacity={prendido} /></>}
       <rect x={-w / 2} y={-h / 2} width={w} height={h} rx={w * 0.14} fill="#15171c" stroke="#3a3d44" strokeWidth={6} />
       <rect x={-w / 2 + 10} y={-h / 2 + 10} width={w - 20} height={h - 20} rx={w * 0.1} fill="#0b0c0f" />
       <rect x={-w / 2 + 10} y={-h / 2 + 10} width={w - 20} height={h - 20} rx={w * 0.1} fill={ACENTO} opacity={0.85 * prendido} />
@@ -383,3 +383,41 @@ export const BiciDib: React.FC<{ color?: string; jinete?: boolean; t?: number }>
 // el viejo de la parada (dibujo de burbuja)
 export const ViejoDib: React.FC = () => <g><rect x={-120} y={30} width={240} height={90} fill="#3a3d44" /><rect x={-90} y={30} width={180} height={10} fill="#6a707b" /><Retrato x={0} y={-20} r={56} tipo="viejo36" cara="triste" /></g>;
 export const MamaDib: React.FC = () => <g><rect x={-120} y={-120} width={240} height={240} fill="#e8d8c0" /><Retrato x={0} y={-6} r={60} tipo="mama" cara="triste" /><path d="M48,-40 q16,-6 22,6 M58,-56 q20,-8 28,8" stroke="#8a5a3a" strokeWidth={4} fill="none" /></g>;
+// pétalos / papel picado que caen (pantalla): desde = cuadro en que arrancan
+export const Petalos: React.FC<{ f: number; desde: number; n?: number; colores?: string[] }> = ({ f, desde, n = 34, colores = ["#f2c14a", "#e85a6a", "#fff2c8", "#e8833a"] }) => {
+  const t = f - desde;
+  if (t < 0) return null;
+  return (
+    <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+      {Array.from({ length: n }).map((_, k) => {
+        const x0 = ((k * 397) % 1920), v = 9 + (k % 5) * 2.2, y = -40 - (k % 7) * 60 + t * v;
+        const x = x0 + Math.sin(t / 9 + k) * 30;
+        return <ellipse key={k} cx={x} cy={y} rx={11} ry={6} fill={colores[k % colores.length]} transform={`rotate(${(t * 7 + k * 40) % 360} ${x} ${y})`} />;
+      })}
+    </svg>
+  );
+};
+// bebé alzado y despierto (en mano): pataleta y bracitos que se agitan con f
+export const BebeAlzado: React.FC<{ s?: number; f: number }> = ({ s = 1, f }) => {
+  const a = Math.sin(f / 4) * 14, p = Math.sin(f / 3.3) * 10;
+  return (
+    <g transform={`scale(${s})`}>
+      <path d={`M-14,30 l${-6 + p * 0.4},26 M14,30 l${6 - p * 0.4},26`} stroke="#e2ad78" strokeWidth={9} strokeLinecap="round" />
+      <path d="M-30,-8 Q-34,30 0,40 Q34,30 30,-8 Q0,-24 -30,-8 Z" fill="#fff2dc" stroke="#d9c4a0" strokeWidth={3} />
+      <path d={`M-26,0 q-18,${-10 + a} -26,${-24 + a}`} stroke="#e2ad78" strokeWidth={9} fill="none" strokeLinecap="round" />
+      <path d={`M26,0 q18,${-10 - a} 26,${-24 - a}`} stroke="#e2ad78" strokeWidth={9} fill="none" strokeLinecap="round" />
+      <circle cx={0} cy={-34} r={26} fill="#e2ad78" stroke="#c8905a" strokeWidth={2} />
+      <circle cx={-9} cy={-37} r={3.6} fill="#3a2618" /><circle cx={9} cy={-37} r={3.6} fill="#3a2618" />
+      <path d="M-8,-24 q8,7 16,0" stroke="#a8503a" strokeWidth={3} fill="none" strokeLinecap="round" />
+      <circle cx={-16} cy={-28} r={4} fill="#e88a7a" opacity={0.6} /><circle cx={16} cy={-28} r={4} fill="#e88a7a" opacity={0.6} />
+    </g>
+  );
+};
+// reloj de pared (pantalla o mundo): h/m en horas y minutos, brillo 0..1
+export const RelojDig: React.FC<{ x: number; y: number; t: string; s?: number; parpadeo?: boolean }> = ({ x, y, t, s = 1, parpadeo }) => (
+  <g transform={`translate(${x},${y}) scale(${s})`}>
+    <rect x={-120} y={-52} width={240} height={104} rx={18} fill="#121418" stroke="#2c3038" strokeWidth={5} />
+    <circle cx={0} cy={0} r={150} fill="#ff4a3d" opacity={0.08} />
+    <text x={0} y={26} textAnchor="middle" fontFamily="monospace" fontWeight={700} fontSize={74} fill="#ff4a3d" opacity={parpadeo ? 0.55 : 1}>{t}</text>
+  </g>
+);

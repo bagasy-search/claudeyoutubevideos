@@ -9,14 +9,14 @@ import { ManoLeo, ManoMara, Rotulo } from "../tenzo/hud";
 import { BolsoRopa, Elefante, FarolMano, Mandarina, Tel } from "../tenzo/utileria";
 import { TelGrande } from "../tenzo/graficos";
 import { Escena } from "../anikit/escena";
-import { Comparacion, Mapa, Velo } from "../anikit/explica";
+import { Comparacion, LineaTiempo, Mapa, Velo } from "../anikit/explica";
 import { Broadway } from "../tenzo/sets/broadway";
 import { CEL_SENT, DOBLA_A, kDe, Lav, LAV_PUNTOS, LP, rimFrio, rimOro, SENTADO } from "../tz01/base";
 import { Fondo, fade } from "../tz01/planos1";
 import { A, Hud2, K, Kap, KP, PRINCESA } from "./base";
 import {
-  Bandeja, BebeMano, BebeVivo, Burbuja, cl, Divan, Etiqueta, FlorMarchita, FlorMuertaMano, Guirnalda, GuirnaldaColgante, Hielo, Icono, Lagrimas, lerp, Lienzo,
-  ManoGrande, MiniPalacio, Notas, osc01, Recto, Sitar, suave, Tambor, TarjetaIcono, TelMarco, TelSvg, Trazo, TxtSvg, Uva, Uvas, usePop,
+  Bandeja, BebeVivo, Burbuja, cl, Divan, Etiqueta, FlorMarchita, FlorMuertaMano, Guirnalda, GuirnaldaColgante, Hielo, Icono, Lagrimas, lerp, Lienzo,
+  ManoGrande, MiniPalacio, Notas, osc01, Petalos, BebeAlzado, Recto, Sitar, suave, Tambor, TarjetaIcono, TelMarco, TelSvg, Trazo, TxtSvg, Uva, Uvas, usePop,
 } from "./extras";
 
 const L = LAV_PUNTOS;
@@ -36,7 +36,7 @@ export const ciclo = (a: object, b: object, per: number, hasta: number, desde = 
 // dónde poner en la capa de FRENTE (z 1,4) algo que tiene que caer en (sx, sy) de pantalla con la cámara c
 export const aFrente = (c: Clave, sx: number, sy: number) => { const Z = 1 + (c.zoom - 1) * 1.4; return { x: 960 + (sx - 960 + 1.4 * c.x) / Z, y: 540 + (sy - 540 + 1.4 * c.y) / Z }; };
 // hombro en primer término (plano por encima del hombro): silueta oscura desenfocada con borde de luz, en pantalla
-const Silueta: React.FC<{ lado: "izq" | "der"; pelo?: "puntas" | "calvo"; borde: string }> = ({ lado, pelo = "puntas", borde }) => {
+export const Silueta: React.FC<{ lado: "izq" | "der"; pelo?: "puntas" | "calvo"; borde: string }> = ({ lado, pelo = "puntas", borde }) => {
   const sx = lado === "izq" ? 1 : -1, x0 = lado === "izq" ? 0 : 1920;
   const T = (x: number) => x0 + sx * x;
   const cuerpo = `M${T(-40)},1080 L${T(-40)},860 Q${T(120)},760 ${T(330)},800 Q${T(520)},840 ${T(600)},1080 Z`;
@@ -304,31 +304,49 @@ export const Q15Titila: React.FC = () => {
     </>
   );
 };
-// ---------- 16 · Kapilavastu, al pie del Himalaya ----------
+// ---------- 16 · Kapilavastu, al pie del Himalaya · «2,500 years ago» = línea de tiempo que viaja de hoy al pasado ----------
 export const Q16Kapila: React.FC = () => {
   const f = useF();
+  const LT = 58; // «2,500» cae en 75.4 s = cuadro 82: el cursor llega al pasado en el cuadro ~100
   return (
-    <Kap cl={[mira(0, 1750, 560, 1.0), mira(147, 1250, 600, 1.15, { curva: "inout" })]} sp={{ flores: 0.4 }}
-      medio={<>
-        <Elefante x={interpolate(f, [0, 147], [2250, 1750])} piso={KP} dir={-1} s={0.95} paso={f / 34} />
-        <A look={ALDEANA} seed={46} ruta={[{ f: 0, x: 560, y: KP }, { f: 147, x: 1100, y: KP, curva: "lineal" }]} poses={[{ f: 0, v: { hD: 160, cD: 20 } }]} enManoD={<Recto ang={180}><g transform="translate(0,-26)"><path d="M-20,0 Q-24,-36 0,-40 Q24,-36 20,0 Z" fill="#c8703a" stroke="#6a3a1a" strokeWidth={3} /></g></Recto>} caras={[{ f: 0, v: "feliz" }]} ajuste={(p) => ({ ...p, hD: 160, cD: 20 })} />
-        <A look={ALDEANO} seed={47} ruta={[{ f: 0, x: 380, y: KP }, { f: 147, x: 860, y: KP, curva: "lineal" }]} caras={[{ f: 0, v: "feliz" }]} />
-        <A look={ALDEANO} seed={48} escala={ESC * 0.72} ruta={[{ f: 0, x: 1400, y: KP }, { f: 147, x: 900, y: KP, curva: "lineal" }]} correr={0.6} caras={[{ f: 0, v: "risa" }]} />
-      </>}
-      hud={<><Etiqueta texto="2,500 YEARS AGO" x={960} y={150} desde={30} tam={64} color="#fff2c8" /><Rotulo texto="KAPILAVASTU · FOOT OF THE HIMALAYAS" desde={8} /></>} />
+    <>
+      <Kap cl={[mira(0, 1500, 650, 1.38), mira(147, 1300, 650, 1.5, { curva: "inout" })]} sp={{ flores: 0.6 }}
+        medio={<>
+          <Elefante x={interpolate(f, [0, 147], [2150, 1720])} piso={KP} dir={-1} s={0.95} paso={f / 34} />
+          <A look={ALDEANO} seed={47} ruta={[{ f: 0, x: 1980, y: KP }, { f: 60, x: 1880, y: KP }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { hD: 30, cD: 20 } }, { f: 20, v: { hD: 150, cD: 30, hI: 20, cI: 20 } }, { f: 40, v: { hD: 120, cD: 50, hI: 20, cI: 20 } }, { f: 60, v: { hD: 150, cD: 30, hI: 20, cI: 20 } }]} caras={[{ f: 0, v: "risa" }]} miradas={[{ f: 0, v: { x: -0.9, y: -0.1 } }]} />
+          <A look={ALDEANA} seed={46} ruta={[{ f: 0, x: 860, y: KP }, { f: 147, x: 1330, y: KP, curva: "lineal" }]} poses={[{ f: 0, v: { hD: 160, cD: 20 } }]} enManoD={<Recto ang={180}><g transform="translate(0,-26)"><path d="M-20,0 Q-24,-36 0,-40 Q24,-36 20,0 Z" fill="#c8703a" stroke="#6a3a1a" strokeWidth={3} /></g></Recto>} caras={[{ f: 0, v: "feliz" }]} ajuste={(p) => ({ ...p, hD: 160, cD: 20 })} />
+          <A look={ALDEANO} seed={48} escala={ESC * 0.72} ruta={[{ f: 0, x: 1650, y: KP }, { f: 147, x: 1020, y: KP, curva: "lineal" }]} correr={0.7} caras={[{ f: 0, v: "risa" }]} />
+        </>}
+        hud={<Rotulo texto="KAPILAVASTU · FOOT OF THE HIMALAYAS" desde={8} hasta={LT + 6} />} />
+      <Velo desde={LT} o={0.5} />
+      <div style={{ position: "absolute", inset: 0, transform: "scale(1.45)", transformOrigin: "960px 540px" }}>
+        <LineaTiempo y={560} desde={LT} paso={10} viaje={16} espacio={900} x0={420} ancho={1600} acento="#ffd38a"
+          eventos={[{ año: "TODAY", texto: "New York" }, { año: "2,500 YEARS AGO", texto: "Kapilavastu", color: "#ffd38a" }]} />
+      </div>
+    </>
   );
 };
 // rey en el trono (sala)
 const Rey: React.FC<{ o?: object }> = ({ o = {} }) => <A look={REY} seed={31} ruta={[{ f: 0, x: K.trono, y: KP }]} asiento={[{ f: 0, v: 56 }]} poses={[{ f: 0, v: SENTADO }]} dir={[{ f: 0, v: -1 }]} caras={[{ f: 0, v: "feliz" }]} {...o} />;
-// ---------- 17 · un rey llamado Suddhodana acaba de tener un hijo ----------
-export const Q17Rey: React.FC = () => (
-  <Kap cl={[mira(0, K.trono - 60, 610, 1.55), mira(93, K.trono - 60, 590, 1.7, { curva: "inout" })]}
-    medio={<A look={REY} seed={31} ruta={[{ f: 0, x: K.trono, y: KP }, { f: 20, x: K.trono, y: KP }, { f: 40, x: K.trono - 90, y: KP }]} asiento={[{ f: 0, v: 56 }, { f: 14, v: undefined }]} dir={[{ f: 0, v: -1 }]}
-      poses={[{ f: 0, v: { ...SENTADO, hD: 60, cD: 80, hI: 50, cI: 90 } }, { f: 16, v: { hD: 70, cD: 80, hI: 60, cI: 90 } }, { f: 44, v: { hD: 125, cD: 30, hI: 120, cI: 30, cabeza: -12, tronco: -6 } }]}
-      caras={[{ f: 0, v: "feliz" }, { f: 44, v: "risa" }]} miradas={[{ f: 0, v: { x: -0.6, y: 0.5 } }, { f: 44, v: { x: -0.2, y: -0.9 } }]}
-      enManoD={(fr: number) => <Recto ang={fr < 30 ? 140 : 149}><BebeMano s={1.2} /></Recto>} />}
-    hud={<Pildora texto="KING SUDDHODANA" x={960} y={110} desde={10} color="#ffe2a6" tam={40} />} />
-);
+// ---------- 17 · un rey llamado Suddhodana acaba de tener un hijo: se para del trono y lo alza; la corte festeja ----------
+export const Q17Rey: React.FC = () => {
+  const f = useF();
+  return (
+    <>
+      <Kap cl={[mira(0, K.trono - 40, 600, 1.5), mira(93, K.trono - 60, 585, 1.62, { curva: "inout" })]}
+        medio={<>
+          <A look={ALDEANA} seed={49} ruta={[{ f: 0, x: K.trono - 470, y: KP }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: { hD: 30, cD: 30, hI: 30, cI: 30 } }, ...ciclo({ hD: 70, cD: 70, hI: 60, cI: 80 }, { hD: 60, cD: 40, hI: 50, cI: 40 }, 8, 93, 50)]} caras={[{ f: 0, v: "feliz" }, { f: 50, v: "risa" }]} miradas={[{ f: 0, v: { x: 0.9, y: -0.2 } }]} />
+          <A look={ALDEANO} seed={50} ruta={[{ f: 0, x: K.trono + 330, y: KP }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { hD: 20, cD: 20 } }, { f: 64, v: { hD: 160, cD: 20, hI: 160, cI: 20 } }, { f: 76, v: { hD: 140, cD: 40, hI: 140, cI: 40 } }, { f: 88, v: { hD: 160, cD: 20, hI: 160, cI: 20 } }]} caras={[{ f: 0, v: "sorpresa" }, { f: 60, v: "risa" }]} miradas={[{ f: 0, v: { x: -0.9, y: -0.3 } }]} />
+          <A look={REY} seed={31} ruta={[{ f: 0, x: K.trono, y: KP }, { f: 20, x: K.trono, y: KP }, { f: 40, x: K.trono - 60, y: KP }]} asiento={[{ f: 0, v: 56 }, { f: 14, v: undefined }]} dir={[{ f: 0, v: -1 }]}
+            poses={[{ f: 0, v: { ...SENTADO, hD: 60, cD: 80, hI: 50, cI: 90 } }, { f: 16, v: { hD: 70, cD: 80, hI: 60, cI: 90 } }, { f: 44, v: { hD: 150, cD: 20, hI: 150, cI: 20, cabeza: -14, tronco: -8 } }, { f: 80, v: { hD: 160, cD: 10, hI: 160, cI: 10, cabeza: -16, tronco: -10 } }]}
+            caras={[{ f: 0, v: "feliz" }, { f: 44, v: "risa" }]} miradas={[{ f: 0, v: { x: -0.6, y: 0.5 } }, { f: 44, v: { x: -0.1, y: -0.9 } }]}
+            enManoD={(fr: number) => <Recto ang={fr < 30 ? 120 : 170} dy={-20}><BebeAlzado s={1.55} f={fr} /></Recto>} />
+        </>}
+        hud={<><Pildora texto="KING SUDDHODANA" x={960} y={110} desde={10} color="#ffe2a6" tam={40} /><Etiqueta texto="A SON!" x={1500} y={330} desde={68} tam={84} color="#ffd38a" /></>} />
+      <Petalos f={f} desde={66} />
+    </>
+  );
+};
 // ---------- 18 · un bebé hermoso. Le dicen Siddhartha ----------
 export const Q18Bebe: React.FC = () => {
   const f = useF();
@@ -481,19 +499,26 @@ export const Q27Noche: React.FC = () => {
       hud={<Etiqueta texto="GONE BY MORNING" x={960} y={140} desde={110} tam={48} color="#f4efe6" />} />
   );
 };
-// ---------- 28 · Siddhartha crece entre caras jóvenes, música y jardines perfectos ----------
+// ---------- 28 · Siddhartha crece entre caras jóvenes (juega con amigos) · música (sitar y tambor) · jardines perfectos (florecen) ----------
 export const Q28Crece: React.FC = () => {
   const f = useF();
   const e = lerp(f, 0, 140, 0.68, 1);
+  const flor = lerp(f, 100, 130, 0, 1); // «perfect gardens» 137.6 s = cuadro 107
   return (
-    <Kap cl={[mira(0, 1420, 650, 1.5), mira(150, 1480, 640, 1.6, { curva: "inout" })]} sp={{ flores: 0.8 }}
+    <Kap cl={[mira(0, 1440, 660, 1.36), mira(150, 1460, 655, 1.42, { curva: "inout" })]} sp={{ flores: 0.5 + flor * 0.5 }}
       medio={<>
-        <A look={ALDEANA} seed={60} ruta={[{ f: 0, x: 1120, y: KP }]} dir={[{ f: 0, v: 1 }]} poses={ciclo({ hD: 60, cD: 80, hI: 50, cI: 90 }, { hD: 75, cD: 60, hI: 65, cI: 70 }, 10, 150)} caras={[{ f: 0, v: "risa" }]} />
-        <A look={ALDEANO} seed={61} ruta={[{ f: 0, x: 1820, y: KP }]} dir={[{ f: 0, v: -1 }]} poses={ciclo({ hD: 60, cD: 80, hI: 50, cI: 90 }, { hD: 75, cD: 60, hI: 65, cI: 70 }, 12, 150)} caras={[{ f: 0, v: "feliz" }]} />
+        <Musico x={930} inst="sitar" seed={60} look={ALDEANA} />
+        <Musico x={1990} inst="tambor" seed={61} dir={-1} per={9} />
+        {f >= 60 && <><Notas x={950} y={KP - 330} f={f} /><Notas x={1970} y={KP - 320} f={f + 30} color="#ffd38a" /></>}
+        {[1080, 1250, 1640, 1830].map((x, k) => <g key={x} transform={`translate(${x},${KP - 4}) scale(${1.7 * suave(lerp(f, 104 + k * 5, 118 + k * 5, 0, 1))})`}><path d="M0,0 L0,-60" stroke="#4a8a3a" strokeWidth={6} /><circle cy={-66} r={18} fill={["#e85a6a", "#f2c14a", "#fff2c8", "#e8833a"][k]} /><circle cy={-66} r={7} fill="#7a4a1a" /></g>)}
         <A look={SIDDHARTHA} seed={30} escala={ESC * e} ruta={[{ f: 0, x: 1200, y: KP }, { f: 40, x: 1700, y: KP }, { f: 80, x: 1350, y: KP }, { f: 130, x: 1560, y: KP }]} caras={[{ f: 0, v: "risa" }, { f: 90, v: "feliz" }]} />
-        <A look={ALDEANO} seed={62} escala={ESC * e * 0.98} ruta={[{ f: 0, x: 1050, y: KP }, { f: 44, x: 1550, y: KP }, { f: 84, x: 1200, y: KP }, { f: 134, x: 1380, y: KP }]} caras={[{ f: 0, v: "risa" }]} />
+        <A look={ALDEANO} seed={62} escala={ESC * e * 0.98} ruta={[{ f: 0, x: 1150, y: KP }, { f: 44, x: 1550, y: KP }, { f: 84, x: 1200, y: KP }, { f: 134, x: 1380, y: KP }]} caras={[{ f: 0, v: "risa" }]} />
+        <A look={ALDEANA} seed={63} escala={ESC * e * 0.95} ruta={[{ f: 0, x: 1800, y: KP }, { f: 50, x: 1450, y: KP }, { f: 100, x: 1750, y: KP }]} caras={[{ f: 0, v: "risa" }]} />
       </>}
-      hud={<Contador x={90} y={200} alinear="der" tam={54} lineas={[{ etiqueta: "AGE", claves: [{ f: 0, v: 6 }, { f: 30, v: 10, d: 30 }, { f: 80, v: 15, d: 30 }, { f: 120, v: 19, d: 24 }], color: "#ffd38a" }]} />} />
+      hud={<><Contador x={90} y={200} alinear="der" tam={54} lineas={[{ etiqueta: "AGE", claves: [{ f: 0, v: 6 }, { f: 30, v: 10, d: 30 }, { f: 80, v: 15, d: 30 }, { f: 120, v: 19, d: 24 }], color: "#ffd38a" }]} />
+        <Pildora texto="YOUNG FACES" x={420} y={110} desde={20} color="#fff2c8" tam={34} />
+        <Pildora texto="BEAUTIFUL MUSIC" x={960} y={110} desde={74} color="#fff2c8" tam={34} />
+        <Pildora texto="PERFECT GARDENS" x={1500} y={110} desde={106} color="#fff2c8" tam={34} /></>} />
   );
 };
 // ---------- 29 · se casa con una princesa; tiene todo lo que un hombre puede querer ----------
@@ -641,35 +666,60 @@ export const Q38Contador: React.FC = () => {
 };
 // ---------- 39-40 · «one night» — y Leo, muy despacio, le pone el tel en la mano · la pantalla se apaga ----------
 const k39 = kDe(183.87);
-const ManosEntrega: React.FC<{ t: number; tiembla: number; apaga: number; f: number }> = ({ t, tiembla, apaga, f }) => {
-  const trem = Math.sin(f * 1.9) * 5 * tiembla;
-  const suelta = t > 0.82;
-  const lx = 420 + t * 420 + trem, ly = 560 + trem * 0.6;
-  const telY = suelta ? 580 + Math.min(1, (t - 0.82) * 10) * 60 : ly - 30;
+// inserto macro (pantalla): la mano de Tenzo abierta abajo a la derecha; la de Leo entra desde la izquierda con el tel
+// agarrado, temblando; lo deja sobre la palma y se va. apaga 0..1 = la pantalla colapsa en una raya y queda negra con
+// el reflejo de la cara de Leo. zoom = empuje lento hacia el tel.
+const ManosEntrega: React.FC<{ t: number; tiembla: number; apaga: number; f: number; zoom?: number }> = ({ t, tiembla, apaga, f, zoom = 1 }) => {
+  const trem = Math.sin(f * 1.9) * 6 * tiembla + Math.sin(f * 3.1) * 3 * tiembla;
+  const tr = suave(Math.min(1, t / 0.82)); // viaje de la mano de Leo
+  const sol = suave(Math.min(1, Math.max(0, (t - 0.82) / 0.13))); // el tel pasa de mano
+  const lx = 180 + tr * 800 + trem, ly = 430 + tr * 120 + trem * 0.5;
+  const peso = Math.sin(Math.min(1, Math.max(0, (t - 0.9) / 0.1)) * Math.PI) * 14; // la palma baja con el peso
+  const PX = 1330, PY = 870 + peso;
+  const tx = (lx + 70) * (1 - sol) + (PX - 60) * sol, ty = (ly - 70) * (1 - sol) + (PY - 100) * sol;
+  const ta = (-8 + trem * 0.4) * (1 - sol) + -62 * sol;
+  const a1 = Math.min(1, apaga * 2), a2 = Math.max(0, apaga * 2 - 1);
+  const W = 150, H = W * 1.95;
   return (
     <Lienzo>
-      <defs><radialGradient id="farol39"><stop offset="0" stopColor="#ffc46a" stopOpacity={0.5} /><stop offset="1" stopColor="#ffc46a" stopOpacity={0} /></radialGradient></defs>
-      <rect width={1920} height={1080} fill="#26231f" /><circle cx={1500} cy={260} r={560} fill="url(#farol39)" /><rect y={820} width={1920} height={260} fill="#45423b" />
-      <ManoGrande x={1340} y={680} ang={-100} piel="#f2bf8f" manga="#8e8a82" palma />
-      <TelSvg x={suelta ? 1130 : lx + 150} y={suelta ? telY : ly - 40} w={170} ang={suelta ? -86 : -80 + trem} prendido={1 - apaga} reflejo={apaga} />
-      <g opacity={suelta ? Math.max(0, 1 - (t - 0.82) * 4) : 1}><ManoGrande x={suelta ? lx - (t - 0.82) * 900 : lx} y={ly + 40} ang={95} piel="#ecc9a3" manga="#24242a" /></g>
+      <defs>
+        <radialGradient id="farol39"><stop offset="0" stopColor="#ffc46a" stopOpacity={0.55} /><stop offset="1" stopColor="#ffc46a" stopOpacity={0} /></radialGradient>
+        <filter id="bok39"><feGaussianBlur stdDeviation="14" /></filter>
+      </defs>
+      <rect width={1920} height={1080} fill="#2a2621" />
+      <g filter="url(#bok39)" opacity={0.55}>{[0, 1, 2, 3, 4].map((k) => <g key={k}><rect x={-60 + k * 420} y={40} width={360} height={420} rx={20} fill="#d8d4cc" opacity={0.35} /><circle cx={120 + k * 420} cy={250} r={120} fill="#1e1d1f" opacity={0.7} /></g>)}</g>
+      <circle cx={1500} cy={300} r={620} fill="url(#farol39)" />
+      <g transform={`translate(${tx} ${ty}) scale(${zoom}) translate(${-tx} ${-ty})`}>
+        <rect x={-200} y={880} width={2400} height={400} fill="#4a463e" />
+        <ManoGrande x={PX} y={PY} ang={-40} piel="#f2bf8f" manga="#8e8a82" palma s={1.5} />
+        <TelSvg x={tx} y={ty} w={W} ang={ta} prendido={apaga > 0 ? 0 : 1} reflejo={a2}>
+          {apaga > 0 && a2 < 1 && <rect x={-(W - 20) / 2 * (1 - a2)} y={-Math.max(3, (H - 20) / 2 * (1 - a1))} width={(W - 20) * (1 - a2)} height={Math.max(6, (H - 20) * (1 - a1))} rx={6} fill={a1 < 1 ? "#ffb48a" : "#ffffff"} opacity={1 - a2 * 0.8} />}
+        </TelSvg>
+        <g opacity={1 - sol}><ManoGrande x={sol > 0 ? lx - sol * 700 : lx} y={ly} ang={100} piel="#ecc9a3" manga="#24242a" s={1.2} /></g>
+      </g>
     </Lienzo>
   );
 };
+const AFERRA_MIRA = { ...AFERRA, cabeza: 14 };
 export const Q39Entrega: React.FC = () => {
   const f = useF();
-  const ins = k39(184.7);
-  if (f < ins) return (
-    <Lav cl={[mira(0, 1450, 630, 1.6), mira(ins, 1450, 630, 1.66)]} toalla={-1}
+  const c1 = k39(185.5), ins = k39(186.35); // plano medio → primer plano de Leo (decide) → inserto de manos en «very slowly»
+  if (f < c1) return (
+    <Lav cl={[mira(0, 1450, 630, 1.6), mira(c1, 1450, 630, 1.68)]} toalla={-1}
       tenzo={{ poses: [{ f: 0, v: OFRECE }], caras: [{ f: 0, v: "feliz" }], miradas: [{ f: 0, v: MIRA_L }], habla: [[0, k39(184.6)]] }}
       leo={leoSent({ poses: [{ f: 0, v: AFERRA }], caras: [{ f: 0, v: "miedo" }] })} hud={<Hud2 />} />
   );
-  const t = lerp(f, ins + 10, 170, 0, 1);
-  return <AbsoluteFill><ManosEntrega t={suave(t)} tiembla={1 - lerp(f, 140, 160, 0, 1)} apaga={0} f={f} /><Etiqueta texto="VERY SLOWLY" x={420} y={180} desde={ins + 30} tam={46} color="#fff2c8" /><Hud2 /></AbsoluteFill>;
+  if (f < ins) return (
+    <Lav cl={[mira(c1, L.leo + 30, 600, 2.5), mira(ins, L.leo + 50, 600, 2.65)]} toalla={-1}
+      tenzo={{ poses: [{ f: 0, v: OFRECE }], caras: [{ f: 0, v: "feliz" }], miradas: [{ f: 0, v: MIRA_L }] }}
+      leo={leoSent({ poses: [{ f: 0, v: AFERRA_MIRA }, { f: c1 + 8, v: AFERRA_MIRA }, { f: ins - 4, v: { ...CEL_SENT, hD: 70, cD: 30, cabeza: 2 } }], caras: [{ f: 0, v: "miedo" }, { f: c1 + 12, v: "triste" }], miradas: [{ f: 0, v: { x: 0.2, y: 0.8 } }, { f: c1 + 12, v: MIRA_T }] })} hud={<Hud2 />} />
+  );
+  const t = lerp(f, ins + 4, k39(189.2), 0, 1);
+  return <AbsoluteFill><ManosEntrega t={t} tiembla={1 - lerp(f, k39(188.4), k39(188.9), 0, 1)} apaga={0} f={f} zoom={lerp(f, ins, 184, 1, 1.12)} /><Etiqueta texto="VERY SLOWLY" x={500} y={200} desde={ins + 4} tam={54} color="#fff2c8" /><Hud2 /></AbsoluteFill>;
 };
 export const Q40Negro: React.FC = () => {
   const f = useF();
-  return <AbsoluteFill><ManosEntrega t={1} tiembla={0} apaga={lerp(f, 4, 22, 0, 1)} f={f} /><Hud2 /></AbsoluteFill>;
+  return <AbsoluteFill><ManosEntrega t={1} tiembla={0} apaga={lerp(f, 13, 26, 0, 1)} f={f} zoom={lerp(f, 0, 48, 1.12, 1.55)} /><Hud2 /></AbsoluteFill>;
 };
 // ---------- 41 · detrás del hombro de Leo, la sombra sisea ----------
 export const Q41Sisea: React.FC = () => {
