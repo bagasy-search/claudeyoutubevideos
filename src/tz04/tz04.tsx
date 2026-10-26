@@ -77,7 +77,7 @@ const RioMundo: React.FC<{ t: number; caraChica?: string; caraEkido?: string; ca
       )}
       <Actor look={TANZAN} escala={ESC} seed={22} luz={L_ANT} ruta={[{ f: 0, x: tx, y: JP + hundir(tx) }]} dir={[{ f: 0, v: 1 }]}
         poses={[{ f: 0, v: alzada(t) ? POSE_CARGA : pasoT ? { hD: 15, cD: 25, hI: 15, cI: 25 } : { hD: 10, cD: 20, hI: 10, cI: 20 } }]} caras={[{ f: 0, v: caraTanzan }]} />
-      {alzada(t) && <ChicaEnBrazos x={tx + 140} y={JP + hundir(tx) - 105} caras={[{ f: 0, v: t < 152 ? "sorpresa" : "feliz" }]} />}
+      {alzada(t) && <ChicaEnBrazos x={tx + 360} y={JP + hundir(tx) - 165} caras={[{ f: 0, v: t < 152 ? "sorpresa" : "feliz" }]} />}
     </>
   );
 };
@@ -177,7 +177,7 @@ const Cuadro0: React.FC = () => {
         <Escena Set={RioCrecido} pal={PAL_ANT} claves={[mira(0, 1500, 700, 1.6 * z), mira(216, 1520, 700, 1.6 * 0.9)]}
           medio={<>
             <Actor look={TANZAN} escala={ESC * 1.3} seed={22} luz={L_ANT} ruta={[{ f: 0, x: tx, y: JP + 95 }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: POSE_CARGA }]} caras={[{ f: 0, v: "risa" }]} />
-            <ChicaEnBrazos x={tx + 250} y={JP + 95 - 105} esc={1.3} caras={[{ f: 0, v: "feliz" }]} />
+            <ChicaEnBrazos x={tx + 350} y={JP + 95 - 195} esc={1.3} caras={[{ f: 0, v: "feliz" }]} />
             <RioFrente f={f} />
           </>} />
       </AbsoluteFill>
@@ -346,7 +346,10 @@ const Ekido8: React.FC = () => {
         miradas={[{ f: 0, v: { x: 0.2, y: 1 } }]} giros={[{ f: 0, v: 0 }, { f: L(121), v: -0.6 }, { f: L(122), v: 0.6 }, { f: L(123), v: 0 }]} />} />
   );
 };
-const Rio9: React.FC = () => <Rio T={126} claves={[mira(0, 700, 560, 0.85), mira(fr(134.8, 126), 1000, 600, 1.15), mira(fr(141.7, 126), 960, 630, 1.4)]} />;
+const Rio9: React.FC = () => <Rio T={126} claves={[mira(0, 700, 560, 0.85), mira(fr(130, 126), 820, 580, 1.0)]} />;
+const Rio9b: React.FC = () => <Rio T={130} claves={[mira(0, RIO.chica, JP - 230, 2.3), mira(fr(134.8, 130), RIO.chica - 20, JP - 230, 2.5)]} />;
+const Rio9c: React.FC = () => <Rio T={134.8} claves={[mira(0, RIO.chica, JP - 60, 3.0), mira(fr(138.3, 134.8), RIO.chica + 30, JP - 70, 3.2)]} />;
+const Rio9d: React.FC = () => <Rio T={138.3} claves={[mira(0, 1600, 560, 1.0), mira(fr(141.7, 138.3), 1100, 600, 1.3)]} />;
 const Mira10: React.FC = () => <Rio T={141.7} caraEkido="enojo" claves={[mira(0, 640, 640, 1.8), mira(fr(143.2, 141.7), 660, 640, 1.9), mira(fr(144.4, 141.7), 820, 620, 1.4), mira(fr(147.8, 141.7), 900, 620, 1.5)]} />;
 const Cruza11: React.FC = () => {
   const T = 147.8, f = useF(), L = (t: number) => fr(t, T);
@@ -459,12 +462,25 @@ const Foto16: React.FC = () => {
         <g transform={`translate(960,500) rotate(${-4 + arruga * 18}) scale(${1 - arruga * 0.55},${1 - arruga * 0.75})`}>
           <rect x={-260} y={-330} width={520} height={620} rx={10} fill="#f4efe4" />
           <rect x={-230} y={-300} width={460} height={500} fill="#2a3a3a" />
-          <path d="M0,-240 C60,-240 78,-180 70,-130 C64,-90 40,-76 34,-60 C90,-46 120,0 104,80 L104,200 L-104,200 L-104,80 C-120,0 -90,-46 -34,-60 C-40,-76 -64,-90 -70,-130 C-78,-180 -60,-240 0,-240 Z" fill="#ffb27a" opacity={0.9} />
-          <rect x={-140} y={-40} width={280} height={60} rx={20} fill="#3f9a6a" />
+          <path d="M-200,200 L-185,30 C-170,-20 -100,-40 -40,-50 L40,-50 C100,-40 170,-20 185,30 L200,200 Z" fill="#4a4e58" />
+          <path d="M-56,-46 L0,90 L56,-46 Z" fill="#7fb6c9" />
+          <rect x={-26} y={-80} width={52} height={44} fill="#e0aa7c" />
+          <ellipse cx={0} cy={-150} rx={78} ry={92} fill="#e0aa7c" />
+          <path d="M-86,-150 C-92,-262 92,-262 86,-150 L86,-70 C74,-100 66,-178 0,-190 C-66,-178 -74,-100 -86,-70 Z" fill="#2a1a12" />
+          <circle cx={-28} cy={-160} r={8} fill="#2a1a12" /><circle cx={28} cy={-160} r={8} fill="#2a1a12" />
+          <path d="M-30,-112 Q0,-90 30,-112" stroke="#5a2a20" strokeWidth={7} fill="none" strokeLinecap="round" />
+          <path d="M-96,-60 Q0,-10 96,-60 L104,-24 Q0,30 -104,-24 Z" fill="#3f9a6a" />
+          <rect x={40} y={-24} width={44} height={150} rx={12} fill="#3f9a6a" />
+          {f > L(233.6) && <g opacity={ent(f, L(233.6), L(234.2))}>
+            <ellipse cx={0} cy={-150} rx={80} ry={94} fill="#14100c" />
+            <circle cx={-30} cy={-166} r={11} fill={ACENTO} /><circle cx={30} cy={-166} r={11} fill={ACENTO} />
+            <path d="M-50,-120 Q0,-70 50,-120" stroke={ACENTO} strokeWidth={9} fill="none" strokeLinecap="round" />
+          </g>}
           {arruga > 0.1 && [0, 1, 2, 3].map((k) => <path key={k} d={`M${-240 + k * 130},-320 L${-200 + k * 120},280`} stroke="#c9c2b4" strokeWidth={6} opacity={arruga} />)}
         </g>
       </svg>
       <ManoLeo texto="the picture is not her." x={560} y={900} desde={6} tam={72} />
+      {f > L(233.8) && <ManoLeo texto="your hunger, wearing her face." x={540} y={980} desde={L(233.8)} tam={54} />}
       <Hud min={320} dia={8} />
     </AbsoluteFill>
   );
@@ -786,9 +802,13 @@ const FotoPlana: React.FC<{ x: number; y: number; s?: number; rot?: number }> = 
   <g transform={`translate(${x},${y}) rotate(${rot}) scale(${s})`}>
     <rect x={-215} y={-250} width={430} height={520} rx={8} fill="#f4efe4" />
     <rect x={-190} y={-225} width={380} height={400} fill="#3a4a52" />
-    <path d="M0,-170 C50,-170 66,-120 60,-80 C56,-50 36,-40 30,-28 C80,-16 104,24 92,90 L92,175 L-92,175 L-92,90 C-104,24 -80,-16 -30,-28 C-36,-40 -56,-50 -60,-80 C-66,-120 -50,-170 0,-170 Z" fill="#d9a27a" />
-    <path d="M-62,-110 C-60,-176 60,-176 62,-110 L62,-86 C40,-130 -40,-130 -62,-86 Z" fill="#2a1a12" />
-    <rect x={-120} y={-4} width={240} height={52} rx={20} fill="#3f9a6a" />
+    <path d="M-150,175 L-140,40 C-130,0 -80,-14 -30,-22 L30,-22 C80,-14 130,0 140,40 L150,175 Z" fill="#4a4e58" />
+    <path d="M-44,-20 L0,70 L44,-20 Z" fill="#7fb6c9" />
+    <rect x={-22} y={-50} width={44} height={36} fill="#d9a27a" />
+    <ellipse cx={0} cy={-96} rx={60} ry={72} fill="#d9a27a" />
+    <path d="M-66,-96 C-70,-180 70,-180 66,-96 L66,-40 C56,-60 50,-120 0,-130 C-50,-120 -56,-60 -66,-40 Z" fill="#2a1a12" />
+    <path d="M-74,-30 Q0,10 74,-30 L82,0 Q0,44 -82,0 Z" fill="#3f9a6a" />
+    <rect x={30} y={0} width={34} height={110} rx={10} fill="#3f9a6a" />
     <path d="M-22,-62 Q0,-46 22,-62" stroke="#5a2a20" strokeWidth={6} fill="none" strokeLinecap="round" />
     <circle cx={-20} cy={-92} r={6} fill="#2a1a12" /><circle cx={20} cy={-92} r={6} fill="#2a1a12" />
   </g>
@@ -801,7 +821,7 @@ const Dia8b: React.FC = () => {
     <Parada dia={8} min={230} claves={[mira(0, BWY_PUNTOS.parada36 - 320, 560, 0.85), mira(L(14.3), BWY_PUNTOS.parada36 - 220, 590, 1.0, { curva: "inout" })]}
       leoRuta={[{ f: 0, x: LEO_PARADA - 1100, y: BP }, { f: L(10.4), x: LEO_PARADA - 1100, y: BP }, { f: L(13.4), x: LEO_PARADA, y: BP }]}
       leoPoses={[{ f: 0, v: BOLSILLOS }]} leoCara={[{ f: 0, v: "neutral" }]}
-      hud={<RelojDia min={460} x={1580} y={60} />} />
+      hud={<><RelojDia min={460} x={1580} y={60} /><GranNumero rotulo="DAY" claves={[{ f: 0, v: 8 }]} x={960} y={300} tam={170} desde={0} hasta={L(9.0)} color="#fff3dc" /></>} />
   );
 };
 // «he was there yesterday too, and the day before»: tres días, la misma hora, el mismo lugar
@@ -810,7 +830,7 @@ const TresDias: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: "#0d0f14" }}>
       {[6, 7, 8].map((d, k) => {
-        const e = ent(f, 4 + k * 22, 16 + k * 22);
+        const e = k === 0 ? 1 : ent(f, k * 20 - 8, k * 20 + 4);
         const x = 380 + k * 580;
         const hoy = d === 8;
         const mira_ = interpolate(f, [16 + k * 22, 26 + k * 22], [0, 1], cl); // Leo gira la cabeza hacia la chica
@@ -860,15 +880,17 @@ const MayaVerde: React.FC = () => (
     </>} />
 );
 // 24,8-29,2 / 274,2-280,1 · el libro de papel en macro: la esquina de la hoja se dobla
-const LibroMacro: React.FC<{ dobla?: number; titulo?: string; sub?: string; dia: number; min: number }> = ({ dobla = 40, titulo, sub, dia, min }) => {
+const LibroMacro: React.FC<{ dobla?: number; titulo?: string; sub?: string; dia: number; min: number }> = ({ dobla = 8, titulo, sub, dia, min }) => {
   const f = useF();
   const d = ent(f, dobla, dobla + 22);
-  const z = 1 + 0.05 * ent(f, 0, 170);
+  const z = 1 + (titulo ? 0.35 : 0.18) * ent(f, 0, 150);
+  const hoja = ent(f, titulo ? 112 : 72, titulo ? 140 : 104); // la hoja derecha pasa a la izquierda
+  const sello = titulo ? ent(f, 69, 76) : 0;
   const s = 120 * d;
   const pasa = ent(f, 120, 150); // el pulgar acomoda la hoja
   return (
     <AbsoluteFill style={{ background: "#4a4e58" }}>
-      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, transform: `scale(${z})`, transformOrigin: "50% 55%" }}>
+      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, transform: `scale(${z}) rotate(${-3 + 3 * ent(f, 0, 150)}deg)`, transformOrigin: titulo ? "33% 45%" : "50% 55%" }}>
         <path d="M0,0 L1920,0 L1920,70 C1500,120 420,40 0,110 Z" fill="#3f9a6a" />
         <g transform="translate(960,590) rotate(-3)">
           <rect x={-650} y={-350} width={1300} height={720} rx={16} fill="#2e5a8a" />
@@ -887,6 +909,14 @@ const LibroMacro: React.FC<{ dobla?: number; titulo?: string; sub?: string; dia:
           {s > 1 && <path d={`M${620 - s},-330 L620,${-330 + s} L${620 - s},${-330 + s} Z`} fill="#d9cfb9" stroke="#bfb4a0" strokeWidth={2} />}
           <ellipse cx={-590} cy={300 - pasa * 12} rx={70} ry={46} fill="#d9a27a" stroke="#8a5a3a" strokeWidth={4} />
           <ellipse cx={600} cy={290} rx={70} ry={46} fill="#d9a27a" stroke="#8a5a3a" strokeWidth={4} />
+          {hoja > 0 && hoja < 1 && <g transform={`translate(12,0) scale(${Math.cos(Math.PI * hoja)},1)`}>
+            <path d="M0,-310 L608,-330 L608,330 L0,340 Z" fill={hoja < 0.5 ? "#efe7d4" : "#e4dac4"} stroke="#c9bfa9" strokeWidth={3} />
+            {Array.from({ length: 10 }).map((_, k) => <rect key={k} x={60} y={-260 + k * 50} width={440} height={8} rx={4} fill="#b4ab9c" opacity={hoja < 0.5 ? 1 : 0.3} />)}
+          </g>}
+          {sello > 0 && <g transform={`translate(-316,170) rotate(-8) scale(${1.8 - 0.8 * sello})`} opacity={sello}>
+            <rect x={-250} y={-46} width={500} height={92} rx={10} fill="none" stroke="#a8322a" strokeWidth={8} />
+            <text x={0} y={16} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={42} letterSpacing={4} fill="#a8322a">TRANSLATED FROM PALI</text>
+          </g>}
         </g>
       </svg>
       <Hud min={min} dia={dia} />
@@ -977,7 +1007,7 @@ const Noche4b: React.FC = () => {
 };
 const TelFeed: React.FC = () => (
   <AbsoluteFill style={{ background: "#07090e" }}>
-    <TelGrande modo="feed" vel={20} pulgar x={960} y={560} s={0.95} desde={0} />
+    <TelGrande modo="feed" vel={20} pulgar x={960} y={560} s={0.95} desde={-30} />
     <Hud min={[{ f: 0, v: 230 }, { f: 30, v: 280, d: 70 }]} dia={8} estado="sube" />
   </AbsoluteFill>
 );
@@ -1104,22 +1134,22 @@ const Ekido8b: React.FC = () => {
 };
 const EkidoAparta: React.FC = () => <Rio T={141.7} caraEkido="enojo" claves={[mira(0, 640, 590, 1.5), mira(81, 650, 590, 1.62, { curva: "in" })]} />;
 const TanzanVa: React.FC = () => <Rio T={144.4} caraEkido="enojo" claves={[mira(0, 760, 600, 1.15), mira(fr(147.8, 144.4), 900, 610, 1.3)]} />;
-const Camina12b: React.FC = () => {
-  const T = 160.3, f = useF(), L = (t: number) => fr(t, T);
+const Camina12b: React.FC<{ o?: number; cerca?: boolean }> = ({ o = 0, cerca }) => {
+  const T = 160.3, f = useF() + o, L = (t: number) => fr(t, T);
   const ex = 1300 + f * 0.9;
   const rojo = ent(f, L(164.8), L(172));
   const sol = interpolate(f, [0, L(174)], [170, 520], cl);
   return (
-    <Escena Set={CaminoMontana} pal={PAL_ANT} claves={[mira(0, 1500, 580, 0.95), mira(L(164.8), ex + 120, 600, 1.3), mira(L(174), ex + 160, 600, 1.42)]}
+    <Escena Set={CaminoMontana} pal={PAL_ANT} claves={cerca ? [mira(0, ex + f * 0.9 + 40, JP - 250, 2.3)] : [mira(0, 1500, 580, 0.95), mira(L(164.8), ex + f * 0.9 + 140, 600, 1.3), mira(L(174), ex + f * 0.9 + 160, 600, 1.42)]}
       medio={<>
         <Actor look={TANZAN} escala={ESC} seed={22} luz={L_ANT} ruta={[{ f: 0, x: ex + 280, y: JP }, { f: 600, x: ex + 280 + 540, y: JP }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "feliz" }]} />
         <Actor look={EKIDO} escala={ESC} seed={23} luz={L_ANT} ruta={[{ f: 0, x: ex, y: JP }, { f: 600, x: ex + 540, y: JP }]} dir={[{ f: 0, v: 1 }]}
           poses={[{ f: 0, v: { hD: 20, cD: 120, hI: 20, cI: 120, cabeza: 6 } }, { f: L(166.3), v: { hD: 8, cD: 150, hI: 8, cI: 150, cabeza: 16, tronco: 8 } }]} caras={[{ f: 0, v: "neutral" }, { f: L(166.3), v: "enojo" }]} />
-        <Halo x={ex} y={JP - 330} r={220} color="#ff5a3a" fuerza={0.5 * rojo} />
+        <Halo x={ex + f * 0.9} y={JP - 300} r={130} color="#ff3a2a" fuerza={0.6 * rojo} />
       </>}
       hud={<>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}><circle cx={1660} cy={sol} r={120} fill="#ffcf7a" opacity={0.25} /><circle cx={1660} cy={sol} r={58} fill="#ffd890" opacity={0.95} /></svg>
-        <GranNumero rotulo="HOURS WALKING" claves={[{ f: 0, v: 0 }, { f: L(162.3), v: 1 }, { f: L(163.6), v: 2 }, { f: L(172.2), v: 3 }, { f: L(173.2), v: 4 }]} x={960} y={60} color="#fff3dc" tam={110} desde={L(162.1)} />
+        <GranNumero rotulo="HOURS WALKING" claves={[{ f: -999, v: o > 0 ? 2 : 0 }, { f: L(162.3) - o, v: 1 }, { f: L(163.6) - o, v: 2 }, { f: L(172.2) - o, v: 3 }, { f: L(173.2) - o, v: 4 }].filter((k) => k.f >= -999)} x={960} y={60} color="#fff3dc" tam={110} desde={o > 0 ? -30 : L(162.1)} />
       </>} />
   );
 };
@@ -1194,7 +1224,7 @@ const PersonaFoto: React.FC = () => {
       <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
         {[L(229.6), L(230.3)].map((c, k) => f > c && <g key={k} opacity={ent(f, c, c + 6)}><FotoPlana x={1060 + k * 420} y={560 + k * 30} s={0.75} rot={k ? 7 : -5} /></g>)}
       </svg>
-      {f > L(229.5) && <ManoLeo texto="and use, and use." x={1050} y={150} desde={L(229.5)} tam={62} />}
+      {f > L(229.5) && <ManoLeo texto="and use, and use." x={1050} y={240} desde={L(229.5)} tam={62} />}
       <Hud min={320} dia={8} />
     </AbsoluteFill>
   );
@@ -1221,7 +1251,7 @@ const FotoVsReal: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: "#0b0c10" }}>
       <AbsoluteFill style={{ clipPath: "inset(0 0 0 964px)" }}>
-        <Parada dia={8} min={320} leoX={-5000} claves={[mira(0, MAYA_X - 270, 600, 1.8), mira(204, MAYA_X - 270, 596, 1.86)]}
+        <Parada dia={8} min={320} leoX={-5000} claves={[mira(0, MAYA_X - 220, 560, 2.2), mira(204, MAYA_X - 220, 556, 2.28)]}
           mayaPoses={[{ f: 0, v: POSE_LIBRO }, { f: L(243.4), v: { ...POSE_LIBRO, hI: 40, cI: 145, cabeza: 6 } }, { f: L(244.7), v: POSE_LIBRO }, { f: L(245.5), v: { ...POSE_LIBRO, cabeza: -8, tronco: -8 } }, { f: L(246.4), v: { ...POSE_LIBRO, cabeza: -2, tronco: -2 } }, { f: L(247.0), v: { ...POSE_LIBRO, cabeza: -8, tronco: -8 } }, { f: L(247.7), v: { hD: 60, cD: 60, hI: 30, cI: 40, cabeza: -4 } }]}
           mayaCara={[{ f: 0, v: "cansado" }, { f: L(245.3), v: "risa" }, { f: L(247.6), v: "duda" }]} mayaHabla={[[L(247.9), L(249.5)]]}
           hud={<Globo texto="And you?" x={1500} y={300} desde={L(248.0)} hasta={L(249.9)} cola="abajo" tam={50} />} />
@@ -1232,7 +1262,7 @@ const FotoVsReal: React.FC = () => {
         <rect x={958} y={0} width={6} height={1080} fill="#f4efe6" opacity={0.8} />
       </svg>
       <div style={{ position: "absolute", left: 0, width: 960, top: 46, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 44, letterSpacing: 6, color: "#c9c2b4" }}>THE PICTURE</div>
-      <div style={{ position: "absolute", left: 960, width: 960, top: 46, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 44, letterSpacing: 6, color: "#3f9a6a", textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}>THE REAL ONE</div>
+      <div style={{ position: "absolute", left: 1240, width: 400, top: 36, padding: "8px 0", textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 44, letterSpacing: 6, color: "#7fe0a6", background: "rgba(10,12,16,.85)", borderRadius: 12 }}>THE REAL ONE</div>
       {filas.map((r, k) => {
         const e = ent(f, r.d, r.d + 10);
         return <div key={k} style={{ position: "absolute", left: 130, top: 780 + k * 78, fontFamily: F_HUD, fontWeight: 600, fontSize: 46, color: "#f4efe6", opacity: e, transform: `translateX(${(1 - e) * -24}px)`, whiteSpace: "nowrap" }}><span style={{ color: ACENTO, marginRight: 18 }}>✕</span>{r.t}</div>;
@@ -1499,7 +1529,7 @@ const TresCosas: React.FC = () => {
   );
 };
 const TenzoEscucha: React.FC = () => (
-  <TenzoLav dur={138} leo="parado" dia={9} min={110} cara={[{ f: 0, v: "feliz" }]} poses={alterna({ hD: 10, cD: 20, hI: 10, cI: 20, cabeza: 2 }, { hD: 10, cD: 20, hI: 10, cI: 20, cabeza: 14 }, 0, 138, 14)} />
+  <TenzoLav dur={138} leo="parado" dia={9} min={110} cara={[{ f: 0, v: "cansado" }]} poses={alterna({ hD: 10, cD: 20, hI: 10, cI: 20, cabeza: 0 }, { hD: 10, cD: 20, hI: 10, cI: 20, cabeza: 16 }, 0, 138, 18)} />
 );
 const TenzoPregunta: React.FC = () => (
   <TenzoLav dur={75} leo="parado" dia={9} min={110} cara={[{ f: 0, v: "neutral" }]} habla={[[0, 60]]} poses={[{ f: 0, v: T_HABLA_A }, { f: 20, v: T_HABLA_B }]}
@@ -1516,7 +1546,7 @@ const LeoReal: React.FC = () => (
     hud={<Globo texto="It felt like cheating on someone real." x={640} y={290} desde={2} hasta={90} cola="abajo" tam={46} />} />
 );
 const Suelta23b: React.FC = () => (
-  <Rio T={154.2} vel={0.7} claves={[mira(0, 2350, 610, 1.45), mira(87, 2400, 610, 1.52)]}
+  <Rio T={156.2} vel={0.7} claves={[mira(0, 2400, 600, 1.6), mira(87, 2440, 600, 1.7)]}
     hud={<Frase texto="You put her down at the river." desde={6} y={930} tam={64} />} />
 );
 // «now you can walk next to her»: Leo y Maya caminando juntos por Broadway
@@ -1615,7 +1645,7 @@ const Notif10: React.FC = () => {
   const e = ent(f, 6, 18);
   return (
     <AbsoluteFill style={{ background: "#0d1016" }}>
-      <TelGrande modo="hora" texto="6:42" sub="AM" x={960} y={560} s={0.95} desde={0} />
+      <TelGrande modo="hora" texto="6:42" sub="AM" x={960} y={560} s={0.95} desde={-30} />
       <div style={{ position: "absolute", left: 960 - 230, top: 150 + (1 - e) * -120, width: 460, height: 120, borderRadius: 28, background: "#2d323b", border: `3px solid ${ACENTO}`, opacity: e, boxShadow: `0 0 40px ${ACENTO}66`, fontFamily: F_HUD }}>
         <div style={{ position: "absolute", left: 18, top: 18, width: 84, height: 84, borderRadius: 18, background: `radial-gradient(circle, ${ACENTO}, #5a1e10)` }} />
         <div style={{ position: "absolute", left: 120, top: 20, fontSize: 30, fontWeight: 600, color: "#f4efe6" }}>New for you ✦</div>
@@ -1680,13 +1710,18 @@ const Pregunta27: React.FC = () => {
 };
 const Gancho27: React.FC = () => {
   const f = useF();
+  const ex = 760 + Math.min(f, 120) * 1.6 - (f > 140 ? 18 * Math.abs(Math.sin((f - 140) / 12)) : 0);
+  const tira = f > 120;
+  const zg = ent(f, 120, 260);
   return (
     <AbsoluteFill>
       <TarjetaFinal proximo="The Elephant and the Tiny Rope" frase="why the biggest animal stays tied · Day 11" />
       <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
-        <g opacity={ent(f, 30, 60)}><Elefante x={480} piso={930} dir={1} s={0.55} paso={0} adorno={false} /></g>
-        <path d={`M600,880 C660,900 700,930 760,930`} stroke="#c9a86a" strokeWidth={5} fill="none" opacity={ent(f, 50, 70)} />
-        <rect x={756} y={900} width={12} height={34} rx={4} fill="#8a6a4a" opacity={ent(f, 50, 70)} />
+        <g transform={`translate(${-260 * zg},${-300 * zg}) scale(${1 + 0.3 * zg})`}>
+          <g opacity={ent(f, 0, 14)}><Elefante x={ex} piso={930} dir={-1} s={0.62} paso={tira ? (f % 40) / 40 : (f % 26) / 26} adorno={false} /></g>
+          <path d={`M${ex - 70},880 C${ex - 120},${tira ? 900 : 920} 650,${tira ? 915 : 940} 600,930`} stroke="#c9a86a" strokeWidth={6} fill="none" />
+          <rect x={592} y={900} width={14} height={36} rx={4} fill="#8a6a4a" transform={`rotate(${tira ? 4 * Math.sin(f / 3) : 0} 600 934)`} />
+        </g>
       </svg>
       <AbsoluteFill style={{ background: "#000", opacity: interpolate(f, [250, 294], [0, 1], cl) }} />
     </AbsoluteFill>
@@ -1721,11 +1756,16 @@ const TRAMOS: TramoS[] = [
   { t0: 99.1, t1: 102.7, el: <Farol7b /> },
   { t0: 102.7, t1: 116.0, el: <Camino8 />, trans: { tipo: "luz", d: 18 } },
   { t0: 116.0, t1: 126.0, el: <Ekido8b /> },
-  { t0: 126.0, t1: 141.7, el: <Rio9 />, trans: { tipo: "fundido", d: 12 } },
+  { t0: 126.0, t1: 130.0, el: <Rio9 />, trans: { tipo: "fundido", d: 12 } },
+  { t0: 130.0, t1: 134.8, el: <Rio9b /> },
+  { t0: 134.8, t1: 138.3, el: <Rio9c /> },
+  { t0: 138.3, t1: 141.7, el: <Rio9d /> },
   { t0: 141.7, t1: 144.4, el: <EkidoAparta /> },
   { t0: 144.4, t1: 147.8, el: <TanzanVa /> },
   { t0: 147.8, t1: 160.3, el: <Cruza11 /> },
-  { t0: 160.3, t1: 174.0, el: <Camina12b />, trans: { tipo: "fundido", d: 14 } },
+  { t0: 160.3, t1: 166.3, el: <Camina12b />, trans: { tipo: "fundido", d: 14 } },
+  { t0: 166.3, t1: 170.0, el: <Camina12b o={180} cerca /> },
+  { t0: 170.0, t1: 174.0, el: <Camina12b o={291} /> },
   { t0: 174.0, t1: 177.7, el: <Porton12 />, trans: { tipo: "fundido", d: 12 } },
   { t0: 177.7, t1: 187.9, el: <Grito13 /> },
   { t0: 187.9, t1: 198.7, el: <Tanzan14 /> },
