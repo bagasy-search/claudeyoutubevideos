@@ -572,7 +572,7 @@ export const INS_C: Ins[] = [
           <div style={{ fontSize: 190, color: C.rojo, textAlign: "center", lineHeight: "170px", transform: `scale(${ent(t, 813.8)})` }}>X</div>
         </div>
         <Chico x={480} y={1290} h={900} t={t} expr="miedo" bD={100} cD={20} mira={1} />
-        <Rot t={t} t0={812.4} text="THE REAL TRAP" x={1200} y={110} size={90} color={C.noche} />
+        <Rot t={t} t0={812.4} text="THE REAL TRAP" x={1200} y={130} size={90} color={C.crema} />
       </>
     ),
   },

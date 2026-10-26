@@ -24,7 +24,7 @@ const LUGAR: [number, number, Esc][] = [
   [662.8, 676.2, "puerto"], // el Essex sale de Nantucket
   [579, 600, "cubierta"], // el capitán, delante de su tripulación
   [837.6, 846, "interior"], // Pollard viejo
-  [858, 872, "campo"], // petróleo en Pennsylvania
+  [851.4, 861.2, "campo"], // petróleo en Pennsylvania
 ];
 const verde = (c: string) => { const [r, g, b] = [1, 3, 5].map((i) => parseInt(c.slice(i, i + 2), 16)); return g > r + 10 && g > b; };
 const escenario = (t: number, c1 = "#000000"): Esc =>

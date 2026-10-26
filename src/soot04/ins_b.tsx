@@ -280,7 +280,7 @@ export const INS_B: Ins[] = [
           {t >= 433.0 && <Humo x={760} y={420} t={t} s={1.6} n={14} col="#e8e4e0" op={0.8} />}
           <Monto t={t} ks={[[428.6, 0], [429.8, 80], [431.0, 160], [432.2, 240], [433.4, 320], [434.5, 400]]} x={1400} y={170} size={150} pre="" suf=" M" color={C.crema} t0={428.6} />
           {metros > 0 && <Chip t={t} t0={429.6} text="HUNDREDS OF METERS OF ROPE" color={C.violeta} x={1400} y={330} centro size={48} />}
-          <Rot t={t} t0={433.1} text="THE WOOD SMOKES" x={1450} y={470} size={80} color={C.naranja} tiembla />
+          <Rot t={t} t0={433.1} text="THE WOOD SMOKES" x={560} y={430} size={80} color={C.naranja} tiembla />
           <Marino i={3} x={1150} y={1260} h={700} t={t} expr="miedo" flip bD={t > 434.8 ? 120 : 60} cD={t > 434.8 ? 40 : 90} manoD={<g transform={`rotate(${t > 434.8 ? 120 : 0})`}><path d="M -50 0 L 50 0 L 40 90 L -40 90 Z" fill="#8a8a9a" stroke={C.noche} strokeWidth={6} /></g>} />
           {t >= 434.9 && Array.from({ length: 10 }, (_, k) => { const u = ((t * 2 + k / 10) % 1); return <div key={k} style={{ position: "absolute", left: 980 - u * 260, top: 420 + u * 120 + (k % 3) * 10, width: 22, height: 22, borderRadius: 11, background: "#8ad0ff" }} />; })}
         </>
@@ -305,7 +305,7 @@ export const INS_B: Ins[] = [
           {t >= 440.4 && Array.from({ length: 16 }, (_, k) => { const u = (t * 2.2 + k / 16) % 1; return <div key={k} style={{ position: "absolute", left: (k * 137) % 1920, top: 1080 - u * 1300, width: 6, height: 140, background: "rgba(200,230,255,.35)" }} />; })}
           <Chip t={t} t0={438.9} t1={440.2} text="YOUR ARM…" color={C.violeta} x={600} y={160} centro size={60} />
           <Chip t={t} t0={439.7} t1={440.2} text="…OR YOUR ANKLE" color={C.rojo} x={1360} y={160} centro size={60} />
-          <Rot t={t} t0={441.7} text="STRAIGHT DOWN" x={960} y={300} size={130} color={C.crema} />
+          <Rot t={t} t0={441.7} text="STRAIGHT DOWN" x={960} y={170} size={120} color={C.crema} />
           <Chip t={t} t0={443.7} text="AT THE SPEED OF A WHALE" color={C.rojo} x={960} y={460} centro size={58} />
         </>
       );
@@ -467,10 +467,10 @@ export const INS_B: Ins[] = [
         <Humo x={1180} y={1080} t={t + 1.3} s={1.3} n={12} col="#241c1c" op={0.7} viento={-40} />
         <Chico x={640} y={1300} h={1150} t={t} expr={t < 549 ? "triste" : "enojado"} bD={t > 553.4 ? 140 : 20} cD={t > 553.4 ? 150 : 30} />
         {t >= 545.5 && [[560, 420], [720, 470], [600, 560], [680, 380]].map(([x, y], k) => <div key={k} style={{ position: "absolute", left: x, top: y, width: 70, height: 40, borderRadius: "50%", background: "rgba(20,16,16,.55)", transform: `scale(${ent(t, 545.6 + k * 0.4)})` }} />)}
-        <Chip t={t} t0={544.4} text="BLACK, GREASY SMOKE" color="#2a2224" x={1400} y={150} centro size={56} />
-        <Chip t={t} t0={546.7} text="BURNING MEAT + WET DOG" color={C.tierra} x={1400} y={250} centro size={52} />
+        <Chip t={t} t0={544.4} t1={553.4} text="BLACK, GREASY SMOKE" color="#2a2224" x={1400} y={150} centro size={56} />
+        <Chip t={t} t0={546.7} t1={553.4} text="BURNING MEAT + WET DOG" color={C.tierra} x={1400} y={250} centro size={52} />
         {["HAIR", "SKIN", "BUNK", "HARDTACK"].map((w, k) => <Chip key={w} t={t} t0={[550.0, 550.7, 551.6, 552.3][k]} text={w} color="#3a3034" x={1180 + (k % 2) * 380} y={440 + Math.floor(k / 2) * 110} centro size={54} />)}
-        <Rot t={t} t0={553.6} text="SMELL IT BEFORE YOU SEE IT" x={1280} y={800} size={74} color={C.crema} />
+        <Rot t={t} t0={553.6} text="SMELL IT BEFORE YOU SEE IT" x={1250} y={150} size={72} color={C.crema} />
       </>
     ),
   },
@@ -502,7 +502,7 @@ export const INS_B: Ins[] = [
           {t < 565.2 && <Marino i={5} x={250} y={1300} h={980} t={t} expr={t < 560.6 ? "neutro" : "sorpresa"} mira={1} miraY={-0.4} salta={560.7} bD={t > 560.6 ? 120 : 60} cD={t > 560.6 ? 10 : 100} manoD={<path d="M -50 0 L 50 0 L 40 90 L -40 90 Z" fill="#8a8a9a" stroke={C.noche} strokeWidth={6} />} />}
           <Chip t={t} t0={557.6} t1={560.8} text="THE HEAD" color={C.violeta} x={960} y={90} centro size={56} />
           <Rot t={t} t0={561.0} t1={565.6} text="SPERMACETI" x={960} y={130} size={110} color={C.crema} />
-          <Chip t={t} t0={562.1} t1={565.7} text="THE FINEST CANDLE WAX" color={C.ambar} tinta={C.noche} x={960} y={940} centro size={50} />
+          <Chip t={t} t0={562.1} t1={565.7} text="THE FINEST CANDLE WAX" color={C.ambar} tinta={C.noche} x={960} y={300} centro size={50} />
           {t >= 565.2 && (
             <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: "polygon(300px 240px, 1600px 240px, 1600px 620px, 300px 620px)" }}>
               <Marino i={2} x={interpolate(t, [565.3, 566.6], [1700, 1300], { extrapolateRight: "clamp" })} y={interpolate(t, [565.3, 566.6], [500, 760], { extrapolateRight: "clamp" })} h={600} t={t} expr="feliz" flip bD={t > 567.6 ? interpolate(Math.sin(t * 6), [-1, 1], [40, 140]) : 70} manoD={<path d="M -50 0 L 50 0 L 40 90 L -40 90 Z" fill="#8a8a9a" stroke={C.noche} strokeWidth={6} />} />

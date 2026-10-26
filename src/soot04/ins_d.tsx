@@ -127,7 +127,7 @@ export const INS_D: Ins[] = [
           <div style={{ position: "absolute", left: -40, top: 860, width: 1300, height: 260, background: "#7a4a26", borderTop: "14px solid #9a6a3a" }} />
           <Chico x={interpolate(t, [237.6, 239.0], [400, 640], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={1290} h={1000} t={t} expr={v < 0 ? "triste" : "neutro"} camina={t >= 237.6 && t < 239 ? 2 : 0} bD={10} bI={10} />
           <div style={{ position: "absolute", left: 1380, top: 470, transform: `translate(-50%,-50%) rotate(4deg) scale(${ent(t, 230.55)})`, width: 520, padding: 30, background: "#f6ecd2", border: "8px solid #5a3418", fontFamily, fontWeight: 700, color: "#2a1530", textAlign: "center" }}>
-            <div style={{ fontSize: 36 }}>CREW ACCOUNT · PAID OFF</div>
+            <div style={{ fontSize: 36 }}>{v < 0 ? "CREW ACCOUNT · YOU OWE" : "CREW ACCOUNT · PAID OFF"}</div>
             <div style={{ fontSize: 120, color: v < 0 ? C.rojo : "#2a7a3a" }}>{v < 0 ? "-" : ""}${Math.abs(v).toFixed(2)}</div>
             <div style={{ fontSize: 30 }}>AFTER 4 YEARS AT SEA</div>
           </div>
@@ -214,7 +214,7 @@ export const INS_D: Ins[] = [
     a: 389.4, b: 394.7,
     fondo: (t) => <Mar t={t} y={620} />,
     d: (t) => {
-      const baja = interpolate(t, [389.5, 390.5], [300, 700], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+      const baja = interpolate(t, [389.4, 390.5], [540, 700], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
       return (
         <>
           {t < 390.5 && <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><line x1={600} y1={0} x2={600} y2={baja - 40} stroke="#e8d28a" strokeWidth={8} /><line x1={1320} y1={0} x2={1320} y2={baja - 40} stroke="#e8d28a" strokeWidth={8} /></svg>}
