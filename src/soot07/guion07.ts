@@ -450,7 +450,7 @@ ins({ v: "corte", t: M.insulae, t1: M.sinagua - 0.1, titulo: "AN INSULA, SLICED 
 ins({ v: "corte", t: M.tira, t1: M.tira + 5.2, titulo: "NO PLUMBING? WINDOW.", fondo: "verde", pose: "cabeza", modo: "tira", tTira: M.tira + 0.9, objeto: "orinal" });
 ins({ v: "doc", t: M.accion, t1: M.jurista - 0.15, titulo: "THERE WAS A LAW FOR IT", fondo: "violeta", pose: "lee", lineas: [[M.latin, "DE EFFUSIS VEL DEIECTIS"], [M.paga, "THE TENANT PAYS"], [M.adrede, "ON PURPOSE OR NOT"], [M.doble, "RUINED CLOTHES: x2"], [M.oro, "FREE MAN KILLED: 50 GOLD"]], encabezado: true });
 ins({ v: "retrato", t: M.jurista, t1: M.regla2 - 0.15, titulo: "AND YOUR SCARS?", fondo: "noche", pose: "triste", nombre: "A ROMAN JURIST", datos: [[M.cita, "\"A FREE MAN'S BODY"], [M.cita + 1.3, "HAS NO PRICE\""]], viejo: true, expr: "neutro", seed: 91, ico: "tabla", tIco: M.cita });
-ins({ v: "doc", t: M.regla2, t1: M.maceta - 0.15, titulo: "RULE NUMBER TWO", fondo: "ambar", pose: "senala", lineas: [[M.regla2 + 0.6, "POSITUM AUT SUSPENSUM"], [M.regla2 + 2.6, "NOTHING PLACED OR HUNG"], [M.regla2 + 5.2, "OVER A PUBLIC WAY"]], sello: "FINE", tSello: M.regla2 + 6.6, encabezado: true });
+ins({ v: "doc", t: M.regla2, t1: M.maceta - 0.15, titulo: "RULE NUMBER TWO", fondo: "ambar", pose: "senala", lineas: [[M.regla2 + 0.4, "POSITUM AUT SUSPENSUM"], [M.regla2 + 1.2, "NOTHING PLACED OR HUNG"], [M.regla2 + 2.0, "OVER A PUBLIC WAY"]], sello: "FINE", tSello: M.regla2 + 6.6, encabezado: true });
 ins({ v: "vs", t: M.policia, t1: M.dueno + 0.6, titulo: "WHO DO YOU CALL?", fondo: "azul", pose: "tiembla", a: { titulo: "TODAY", ico: "escudo", lineas: ["POLICE", "PATROLS"], col: T }, b: { titulo: "NIGHT ROME", ico: "daga", lineas: ["NO NUMBER", "NO PATROL"], col: R }, tb: M.numero, gana: "a", tMarca: M.dueno - 0.3 });
 ins({ v: "retrato", t: M.suetonio, t1: M.disfraz + 2.0, titulo: "THE EMPEROR IN DISGUISE", fondo: "rojo", pose: "tiembla", nombre: "NERO · EMPEROR", datos: [[M.suetonio + 1.0, "SOURCE: SUETONIUS"], [M.disfraz, "NIGHT HOBBY: STREET FIGHTS"]], laurel: true, expr: "orgullo", seed: 55, ico: "puno", tIco: M.disfraz + 0.4 });
 ins({ v: "doc", t: M.tablas12, t1: M.peor - 0.15, titulo: "THE TWELVE TABLES", fondo: "rojo", pose: "tiembla", lineas: [[M.tablas12 + 0.6, "TABLE VIII · THIEVES"], [M.matar, "BY NIGHT: MAY BE KILLED"], [M.dia2, "BY DAY: ONLY IF ARMED"]], sello: "LEGAL", tSello: M.matar + 1.6, bronce: true, encabezado: true });
@@ -473,12 +473,13 @@ INS.sort((a, b) => a.t - b.t);
 
 // OJO v4: escenas en la CALLE EN PERSPECTIVA (set del molde) — trampas como planos de acción y caminatas hacia cámara
 export type EscTipo = "camina" | "gente" | "oscuro" | "oscuro2" | "linterna" | "carro" | "carro2" | "ventanas" | "baldazo" | "basura" | "maceta" | "ladron" | "agua" | "fuego" | "huida" | "vigiles" | "cadena";
-export type Esc = { t: number; d: number; tipo: EscTipo; p?: number };
+export type Esc = { t: number; d: number; tipo: EscTipo; p?: number; f?: boolean; m?: boolean };
 export const ESC: Esc[] = [];
-const es = (t: number, d: number, tipo: EscTipo, p?: number) => {
-  ESC.push({ t, d, tipo, p });
-  s(t, "whoosh_big", -4);
-  const x = (dt: number, pool: string, g = -4) => s(t + dt, pool, g);
+const es = (t: number, d: number, tipo: EscTipo, p?: number, f = false, mudo = false) => {
+  ESC.push({ t, d, tipo, p, f, m: mudo });
+  if (mudo) return t;
+  if (!f) s(t, "whoosh_big", -4);
+  const x = (dt: number, pool: string, g = -4) => { if (dt < d) s(t + dt, pool, g + (f ? -5 : 0)); };
   if (tipo === "camina" || tipo === "gente" || tipo === "linterna") [0.4, 1.0, 1.6, 2.2, 2.8, 3.4, 4.0, 4.6].forEach((dt) => x(dt, "step", -12));
   if (tipo === "gente") x(0.5, "crowd_angry", -16);
   if (tipo === "oscuro" || tipo === "oscuro2") { x(0.2, "drone", -8); x(2.4, "suspense", -6); x(3.6, "gasp", -6); }
@@ -516,6 +517,28 @@ es(828, 6, "camina");
 es(868, 6, "camina");
 // ninguna escena pisa un inserto
 for (let k = ESC.length - 1; k >= 0; k--) { const e = ESC[k]; const ch = INS.find((i) => i.t < e.t + e.d && i.t1 + 0.5 > e.t); if (ch) { if (ch.t - e.t >= 4) e.d = ch.t - e.t; else ESC.splice(k, 1); } }
+
+// OJO v5: la calle en perspectiva es el set de TODO el video. Entre las escenas clave, planos de relleno de la
+// trampa de esa sección (corte seco). Debajo de un inserto van caminatas mudas (se ven tras el velo del inserto).
+{
+  const sec = (t: number): EscTipo[] => t < M.t1 ? ["camina", "gente"] : t < M.t2 ? ["oscuro", "camina", "linterna"] : t < M.t3 ? ["carro", "camina", "carro2"] : t < M.t4 ? ["ventanas", "baldazo", "camina", "basura", "maceta"] : t < M.t5 ? ["ladron", "camina", "oscuro2"] : t < M.t6 ? ["agua", "camina"] : t < M.t7 ? ["fuego", "huida"] : t < M.pregunta ? ["vigiles", "cadena", "fuego"] : ["gente", "camina"];
+  const clave = [...ESC].sort((a, b) => a.t - b.t);
+  const rel: [number, number, EscTipo, boolean][] = [];
+  let t = 12, n = 0;
+  for (const c of [...clave, { t: DUR / 30, d: 0 }]) {
+    while (c.t - t > 1.2) {
+      let d = Math.min(5.5, c.t - t);
+      if (c.t - t - d < 1.2) d = c.t - t;
+      const bajo = INS.some((i) => i.t < t + d && i.t1 + 0.5 > t);
+      const ops = sec(t);
+      rel.push([t, d, bajo ? "camina" : ops[n++ % ops.length], bajo]);
+      t += d;
+    }
+    t = Math.max(t, c.t + c.d);
+  }
+  rel.forEach(([t0, d, tipo, bajo]) => es(t0, d, tipo, tipo === "maceta" ? 4.3 : undefined, true, bajo));
+  ESC.sort((a, b) => a.t - b.t);
+}
 
 // caminata y oscuridad, ordenadas
 VEL.sort((a, b) => a[0] - b[0]); OSC.sort((a, b) => a[0] - b[0]); FUEGO.sort((a, b) => a[0] - b[0]); PLANOS.sort((a, b) => a[0] - b[0]);

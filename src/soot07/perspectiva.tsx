@@ -32,6 +32,7 @@ const edificios = (seed: number): Ed[] => {
   return out;
 };
 const PISO = 225;
+const Z = 0.62; // OJO v5: el nene más cerca de cámara (~35 % del alto)
 
 /** La calle (fondo): cielo, Coliseo, fachadas, adoquines. cz = cuánto retrocedió la cámara. */
 const Calle: React.FC<{ t: number; e: Esc; cz: number; eds: Ed[]; fuego: number }> = ({ t, e, cz, eds, fuego }) => {
@@ -64,7 +65,12 @@ const Calle: React.FC<{ t: number; e: Esc; cz: number; eds: Ed[]; fuego: number 
       {/* el suelo */}
       <polygon points={poly([P(-HW, 0, 30), P(HW, 0, 30), P(HW, 0, 8000), P(-HW, 0, 8000)])} fill="url(#psuelo)" />
       {Array.from({ length: 13 }, (_, j) => { const x = -HW + (j * 2 * HW) / 12; const a = P(x, 0, 40), b = P(x, 0, 8000); return <line key={j} x1={a[0]} y1={a[1]} x2={b[0]} y2={b[1]} stroke="#2a1c14" strokeWidth={3} opacity={0.45} />; })}
-      {lineas}
+      {(() => { const out: React.ReactNode[] = []; const PAL = ["#3e2c22", "#463226", "#33251c", "#4c372a", "#3a2a20", "#52392a"]; const r0 = Math.floor((40 - cz) / 64);
+        for (let r = r0; r < r0 + 46; r++) { const d0 = r * 64 + cz, d1 = d0 + 54; if (d0 < 34 || d0 > 3200) continue; const off = r % 2 ? 0.5 : 0;
+          for (let c = -1; c < 12; c++) { const x0 = -HW + ((c + off + (h(r * 3 + c) - 0.5) * 0.25) * 2 * HW) / 11 + 6, x1 = x0 + (2 * HW) / 11 * (0.75 + h(r + c * 5) * 0.2); if (x1 < -HW || x0 > HW) continue; const xa = Math.max(-HW, x0), xb = Math.min(HW, x1);
+            out.push(<polygon key={`${r}_${c}`} points={poly([P(xa, 0, d0), P(xb, 0, d0), P(xb, 0, d1), P(xa, 0, d1)])} fill={PAL[Math.floor(h(r * 13 + c * 7) * PAL.length)]} stroke="#24170f" strokeWidth={Math.max(0.8, 700 / d0)} strokeLinejoin="round" />);
+            if (d0 < 900) { const g = P((xa + xb) / 2, 0, d0 + 8); out.push(<line key={`h${r}_${c}`} x1={g[0] - (F * (xb - xa)) / d0 * 0.3} y1={g[1]} x2={g[0] + (F * (xb - xa)) / d0 * 0.3} y2={g[1]} stroke="#b08660" strokeWidth={Math.max(1, 900 / d0)} opacity={0.3} strokeLinecap="round" />); } } }
+        return out; })()}
       <polygon points={poly([P(-25, 0, 40), P(25, 0, 40), P(25, 0, 8000), P(-25, 0, 8000)])} fill="#1e140e" opacity={0.6} />
       {/* fachadas, de lejos a cerca */}
       {vis.map((b, i) => {
@@ -79,6 +85,7 @@ const Calle: React.FC<{ t: number; e: Esc; cz: number; eds: Ed[]; fuego: number 
           const y0 = p * PISO + 60, y1 = y0 + 110;
           const ard = fuego > 0 && b.lado > 0 && h(b.seed + p * 3 + c) < fuego;
           const luz = ard || h(b.seed + p * 5 + c * 2) > 0.68;
+          ven.push(<polygon key={`s${p}-${c}`} points={quadL(x, y0 - 4, y1 + 4, da - (db - da) * 0.42, da)} fill="#6a3a22" stroke={K} strokeWidth={Math.max(1, 1200 / da)} />, <polygon key={`s2${p}-${c}`} points={quadL(x, y0 - 4, y1 + 4, db, db + (db - da) * 0.42)} fill="#5a3020" stroke={K} strokeWidth={Math.max(1, 1200 / da)} />);
           ven.push(<polygon key={`${p}-${c}`} points={quadL(x, y0, y1, da, db)} fill={ard ? "#ff7a1f" : luz ? "#ffcf6a" : "#2a1a2a"} stroke={K} strokeWidth={Math.max(1, 1600 / da)} />);
           if (ard) { const q = P(x, y1, (da + db) / 2); ven.push(<path key={`f${p}-${c}`} d={`M ${q[0] - 3000 / da} ${q[1]} Q ${q[0]} ${q[1] - (9000 + Math.sin(t * 9 + p) * 2000) / da} ${q[0] + 3000 / da} ${q[1]} Z`} fill="#ffd23a" stroke="#ff5a1f" strokeWidth={4} />); }
           if (p === 2 && c === 1) { const y = y0 - 10; ven.push(<polygon key={`b${p}`} points={poly([P(x, y, da - 20), P(x - b.lado * 70, y, da - 20), P(x - b.lado * 70, y, db + 20), P(x, y, db + 20)])} fill="#5a3a26" stroke={K} strokeWidth={2} />, <polygon key={`r${p}`} points={poly([P(x - b.lado * 70, y, da - 20), P(x - b.lado * 70, y + 50, da - 20), P(x - b.lado * 70, y + 50, db + 20), P(x - b.lado * 70, y, db + 20)])} fill="none" stroke="#3a2416" strokeWidth={Math.max(1, 2400 / da)} />); }
@@ -88,7 +95,8 @@ const Calle: React.FC<{ t: number; e: Esc; cz: number; eds: Ed[]; fuego: number 
           <g key={i}>
             <polygon points={quadL(x, 0, alto, d0, d1)} fill={b.col} stroke={K} strokeWidth={2} />
             {/* hiladas de piedra */}
-            {Array.from({ length: b.pisos * 3 }, (_, r) => { const y = r * (PISO / 3); const a = P(x, y, d0), c = P(x, y, d1); return <line key={r} x1={a[0]} y1={a[1]} x2={c[0]} y2={c[1]} stroke="#5a3e2a" strokeWidth={1.5} opacity={0.45} />; })}
+            {Array.from({ length: b.pisos * 3 }, (_, r) => { const y = r * (PISO / 3); const a = P(x, y, d0), c = P(x, y, d1); return <line key={r} x1={a[0]} y1={a[1]} x2={c[0]} y2={c[1]} stroke="#3e2a1c" strokeWidth={Math.max(1.5, 1400 / d0)} opacity={0.75} />; })}
+            {d0 < 1600 && Array.from({ length: b.pisos * 3 }, (_, r) => Array.from({ length: 6 }, (_, j) => { const y = r * (PISO / 3), dd = d0 + ((j + (r % 2) * 0.5 + 0.2) * (d1 - d0)) / 6; if (dd < 40) return null; const a = P(x, y, dd), c = P(x, y + PISO / 3, dd); return <line key={`${r}j${j}`} x1={a[0]} y1={a[1]} x2={c[0]} y2={c[1]} stroke="#3e2a1c" strokeWidth={Math.max(1, 1000 / dd)} opacity={0.6} />; }))}
             <polygon points={quadL(x, alto - 20, alto, d0, d1)} fill="#6a4a32" />
             {ven}
             {/* la taberna o el portón de planta baja */}
@@ -312,6 +320,10 @@ const plan = (e: Esc, t: number) => {
       }
       if (e.tipo === "gente") ac.push({ x: 300, d: 900 + cz, seed: 88, ropa: { ...CIVIL(1), tunica: "#f2ead8", tunica2: "#c9bfa8" }, expr: "feliz", habla: true, bD: 120, cD: 60, manoD: <g><ellipse cx={0} cy={-20} rx={70} ry={18} fill="#c9673f" stroke={K} strokeWidth={5} />{[-40, 0, 40].map((x) => <ellipse key={x} cx={x} cy={-38} rx={22} ry={14} fill="#e8b45a" stroke={K} strokeWidth={4} />)}</g> });
       kexpr = e.tipo === "gente" ? "sorpresa" : "neutro";
+      { const vr = Math.floor(h(s + 5) * 4);
+        if (vr === 1) { kx = lp(lt, 0, 5.5, -280, 260); kd = 640; kmira = 0.9; kexpr = "orgullo"; }
+        else if (vr === 2) { kc = 2.6; kd = 900 - 150 * lt; kexpr = "miedo"; kbD = 150; kcD = 40; kinc = 6; }
+        else if (vr === 3) { kd = 640 - 40 * lt; kc = lt > 2.5 ? 0 : 1.6; kexpr = lt > 2.5 ? "sorpresa" : "neutro"; kmira = lt > 2.5 ? -0.9 : kmira; if (lt > 2.5) { kbI = 150; kcI = 40; } } }
       break;
     }
     case "oscuro": {
@@ -334,11 +346,11 @@ const plan = (e: Esc, t: number) => {
       kd = pega ? 520 - 10 * lt : 700 - 90 * lt;
       kx = pega ? -340 : lp(lt, tl - 0.7, tl - 0.2, -30, -330);
       if (!pega) ksalta = tt(tl - 0.7);
-      const dCar = kd + (tl - lt) * 900;
+      const dCar = kd * Z + (tl - lt) * 900;
       extra.push(<CarroF key="c" t={t} x={pega ? -110 : 90} d={dCar + cz} carga={pega ? "#cfc8ba" : "#d8d2c4"} />);
       if (lt > tl - 1.2) { kexpr = "miedo"; kbD = 150; kcD = 40; kbI = 150; kcI = 40; kinc = -10; kc = 0; }
       // otro carro más atrás
-      extra.unshift(<CarroF key="c2" t={t + 0.3} x={-60} d={kd + (tl + 3.2 - lt) * 700 + cz} carga="#b5452c" />);
+      extra.unshift(<CarroF key="c2" t={t + 0.3} x={-60} d={kd * Z + (tl + 3.2 - lt) * 700 + cz} carga="#b5452c" />);
       break;
     }
     case "ventanas": {
@@ -359,7 +371,7 @@ const plan = (e: Esc, t: number) => {
       break;
     }
     case "maceta": {
-      const tC = e.p ?? 4.3, dW = 620;
+      const tC = e.p ?? 4.3, dW = 860;
       kd = 900 - 60 * lt;
       ac.push({ x: -150, d: lp(lt, 0, tC, 1200, 700) + cz, seed: 31, camina: lt < tC ? 1.3 : 0, ropa: CIVIL(4), expr: lt > tC ? "sorpresa" : "feliz", salta: tt(tC), bD: lt > tC ? 150 : undefined, bI: lt > tC ? 150 : undefined });
       // la maceta tambalea en el balcón y cae
@@ -376,16 +388,16 @@ const plan = (e: Esc, t: number) => {
       osc = 0.6;
       kd = 760 - 80 * lt;
       const sale = 1.4, ve = 3.0;
-      ac.push({ x: lp(lt, sale, sale + 1, HW - 40, 120), d: kd + 260, seed: 17, sombra: "#0e0716", camina: lt > sale ? 1.4 : 0, h: 190, bD: 100, cD: 60, manoD: <path d="M 0 0 L 8 -60 L 16 0 Z" fill="#e8eef8" stroke={K} strokeWidth={3} opacity={(t * 3) % 1 < 0.5 ? 1 : 0.6} /> });
-      extra.push(<Ojos key="o" t={t} pares={[[lp(lt, sale, sale + 1, HW - 40, 120), 150, kd + 255]]} />);
+      ac.push({ x: lp(lt, sale, sale + 1, HW - 40, 120), d: kd * Z + 260, seed: 17, sombra: "#0e0716", camina: lt > sale ? 1.4 : 0, h: 190, bD: 100, cD: 60, manoD: <path d="M 0 0 L 8 -60 L 16 0 Z" fill="#e8eef8" stroke={K} strokeWidth={3} opacity={(t * 3) % 1 < 0.5 ? 1 : 0.6} /> });
+      extra.push(<Ojos key="o" t={t} pares={[[lp(lt, sale, sale + 1, HW - 40, 120), 150, kd * Z + 255]]} />);
       if (lt > ve) { kexpr = "miedo"; kc = 3.0; kd = 760 - 80 * ve - 260 * (lt - ve); kmira = 0.9; kbI = 90; kcI = 60; }
       break;
     }
     case "oscuro2": {
       osc = 0.88; kexpr = "miedo"; kmira = Math.sin(lt * 2) * 1;
-      ac.push({ x: 60, d: kd + 420, seed: 17, sombra: "#0e0716", camina: 1.6, h: 185 });
-      ac.push({ x: -120, d: kd + 900, seed: 18, sombra: "#0e0716", camina: 1.6, h: 180 });
-      extra.push(<Ojos key="o" t={t} pares={[[60, 150, kd + 418], [-120, 145, kd + 898]]} />);
+      ac.push({ x: 60, d: kd * Z + 420, seed: 17, sombra: "#0e0716", camina: 1.6, h: 185 });
+      ac.push({ x: -120, d: kd * Z + 900, seed: 18, sombra: "#0e0716", camina: 1.6, h: 180 });
+      extra.push(<Ojos key="o" t={t} pares={[[60, 150, kd * Z + 418], [-120, 145, kd * Z + 898]]} />);
       break;
     }
     case "agua": {
@@ -429,9 +441,9 @@ const plan = (e: Esc, t: number) => {
       break;
     }
   }
-  const kid: Ac = { x: kx, d: kd + cz - cz, h: KH, seed: 1, ropa: LUCIUS, expr: kexpr, camina: kc, mira: kmira, bD: kbD, cD: kcD, bI: kbI, cI: kcI, salta: ksalta, inclina: kinc, manoD: lam && kbD === 55 ? <Lampara t={t} on={1} /> : undefined };
+  const kid: Ac = { x: kx, d: kd * Z, h: KH, seed: 1, ropa: LUCIUS, expr: kexpr, camina: kc, mira: kmira, bD: kbD, cD: kcD, bI: kbI, cI: kcI, salta: ksalta, inclina: kinc, manoD: lam && kbD === 55 ? <Lampara t={t} on={1} /> : undefined };
   // el nene está en coordenadas de cámara (su d ya es relativo a la cámara)
-  ac.push(kid);
+  if (!e.m) ac.push(kid);
   if (lam) luz.push({ x: kx + 40, y: 110, d: kid.d, r: osc > 0.5 ? 340 : 220 });
   return { lt, cz, ac, luz, osc, nivel, fuego, extra };
 };
@@ -472,7 +484,7 @@ export const Perspectiva: React.FC<{ t: number }> = ({ t }) => {
   const pl = plan(e, t);
   const eds = edificios(Math.round(e.t * 7));
   const k = ESC.indexOf(e);
-  const entra = cl(pl.lt / 0.28);
+  const entra = e.f ? 1 : cl(pl.lt / 0.28);
   const clip = k % 3 === 0 ? `inset(0 ${(1 - entra) * 100}% 0 0)` : k % 3 === 1 ? `inset(0 0 0 ${(1 - entra) * 100}%)` : `circle(${entra * 1300}px at 960px 540px)`;
   const sway = Math.sin(t * 0.7) * 0.35;
   const luces = [...pl.luz];

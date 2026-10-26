@@ -37,14 +37,16 @@ const pose = (p: Pose, lt: number): Partial<React.ComponentProps<typeof Persona>
 // ── fondos: plano saturado + rayos que giran + motas (el molde)
 const Fondo: React.FC<{ t: number; col: string; col2: string; ciudad?: boolean }> = ({ t, col, col2, ciudad }) => (
   <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
-    <rect width={1920} height={1080} fill={col} />
+    {/* OJO v5: el inserto es un VELO de color sobre la calle en perspectiva (el mundo sigue vivo detrás) */}
+    <rect width={1920} height={1080} fill="#0a0614" opacity={0.4} />
+    <rect width={1920} height={1080} fill={col} opacity={0.72} />
     <g transform={`translate(560 720) rotate(${t * 9})`}>
-      {Array.from({ length: 16 }, (_, k) => <path key={k} d="M 0 0 L 2400 -240 L 2400 240 Z" transform={`rotate(${k * 22.5})`} fill={col2} opacity={k % 2 ? 0 : 0.55} />)}
+      {Array.from({ length: 16 }, (_, k) => <path key={k} d="M 0 0 L 2400 -240 L 2400 240 Z" transform={`rotate(${k * 22.5})`} fill={col2} opacity={k % 2 ? 0 : 0.22} />)}
     </g>
     {/* CTA: la ciudad dormida detrás, con la ventana de casa encendida */}
     {ciudad && <g>
       {Array.from({ length: 12 }, (_, k) => { const w = 150 + ((k * 53) % 80), h = 260 + ((k * 97) % 260), x = k * 165 - 20; return <g key={k}><rect x={x} y={1080 - h} width={w} height={h} fill="#2a1850" />{Array.from({ length: 6 }, (_, j) => { const on = ((k * 7 + j * 3) % 5) < 2 || (k === 5 && j === 2); return <rect key={j} x={x + 24 + (j % 2) * 64} y={1080 - h + 40 + Math.floor(j / 2) * 80} width={36} height={46} fill={on ? (k === 5 && j === 2 ? "#ffd27a" : "#ffb347") : "#1a1038"} opacity={on ? 0.75 + 0.25 * Math.sin(t * 2 + k + j) : 1} />; })}</g>; })}
-      <g transform={`translate(${5 * 165 - 20 + 24 + 18} ${1080 - (260 + ((5 * 97) % 260)) + 40 + 80 - 40}) scale(${1 + 0.06 * Math.sin(t * 3)})`}><text textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={30} fill="#ffd27a">HOME</text></g>
+      <g transform={`translate(${5 * 165 - 20 + 24 + 18} ${1080 - (260 + ((5 * 97) % 260)) + 40 + 80 - 40}) scale(${1 + 0.06 * Math.sin(t * 3)})`}><text textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={48} fill="#ffd27a" stroke="#1a0d24" strokeWidth={8} paintOrder="stroke">HOME</text></g>
     </g>}
     {Array.from({ length: 26 }, (_, k) => { const u = ((t * 0.08 + k * 0.137) % 1); return <circle key={k} cx={(k * 331) % 1920} cy={1080 - u * 1180} r={5 + (k % 4) * 3} fill="#fff" opacity={0.16 * Math.sin(u * Math.PI)} />; })}
     <rect width={1920} height={1080} fill="url(#insVin)" />
@@ -376,7 +378,7 @@ const Uno: React.FC<{ i: Ins; t: number; px: number; py: number; sopa?: boolean 
     return out as ReturnType<typeof pose>;
   })();
   const acerca = 1 + 0.05 * cl(lt / 12);
-  const tituloE = ent(t, i.t + 0.25, 0, { damping: 11, stiffness: 190 });
+  const tituloE = 0.6 + 0.4 * ent(t, i.t + 0.05, 0, { damping: 11, stiffness: 190 });
   // OJO v3: rompe la plantilla: uno sí y uno no, el nene a la derecha y el componente corrido a la izquierda
   const espejo = i.v !== "cta" && !i.otro && i.nx === undefined && INS.indexOf(i) % 2 === 1;
   const NX = i.nx ?? (espejo ? 1500 : 420);

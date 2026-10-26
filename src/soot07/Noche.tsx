@@ -6,7 +6,7 @@ import { Ambiente, lucesVinetas } from "./ambiente";
 import { C, ent, fontFamily, Chip, Grande, Emote } from "./kit";
 import { Persona, LUCIUS, CIVIL, Ropa, Expr } from "./persona";
 import { ICO } from "./iconos";
-import { B, M, DUR, Beat } from "./guion07";
+import { B, M, DUR, Beat, INS } from "./guion07";
 import { FPS, X, V, cam, temaEn, oscuridad, fuego, CALLE, edifEn, X_CASA } from "./motor07";
 import { CieloNoche, Horizonte, Siluetas, Suelo, Fachada, Frente, Oscuridad, Capa, SvgMundo, paleta, pantalla, altoEdif, Luz, tabernas } from "./mundo";
 import { Carro, Carga, Caidas, Caida, tCaida, Asomado, Inundacion, Chorro, Derrumbe, Escalera, subidaPos, Puntales, Ratones, Lampara, Gente, Peligros, MuroSombras, ventana, cl, en, lerp } from "./piezas";
@@ -507,8 +507,8 @@ export const Noche: React.FC = () => {
       </CamaraMano>
       {/* OJO v3: carteles e inserts fuera de la cámara en mano (el balanceo los sacaba del cuadro por arriba) */}
       <Perspectiva t={t} />
-      <Piezas t={t} />
-      <Hud t={t} />
+      {/* OJO v5: el inserto es un velo translúcido: lo del mundo viejo (chips, HUD) no se transparenta detrás */}
+      <div style={{ position: "absolute", inset: 0, opacity: INS.some((i) => t >= i.t + 0.2 && t < i.t1) ? 0 : 1 }}><Piezas t={t} /><Hud t={t} /></div>
       {(() => { const q = pz(px, pyProt - H * 0.82); return <Inserto t={t} px={cl(q.x, 0, 1920)} py={cl(q.y, 0, 1080)} sopa={sopa && t < M.limpia} />; })()}
       <Portada t={t} />
     </AbsoluteFill>
