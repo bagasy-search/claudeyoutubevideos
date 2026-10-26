@@ -142,14 +142,14 @@ export const INS_B: Ins[] = [
         <>
           <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
             <rect x={590} y={600} width={36} height={600} fill="#5a3418" />
-            {grita && <g transform={`translate(1600 712) scale(${ent(t, 346.6)})`}><path d="M 0 0 Q -30 -90 -10 -140 M 0 0 Q 0 -110 10 -150 M 0 0 Q 30 -90 20 -140" stroke="#fff" strokeWidth={14} fill="none" strokeLinecap="round" /><ellipse cx={0} cy={6} rx={60} ry={14} fill="#2a3a5a" /></g>}
+            {grita && <g transform={`translate(1600 712) scale(${2.2 * ent(t, 346.6)})`}><path d="M 0 0 Q -30 -90 -10 -140 M 0 0 Q 0 -110 10 -150 M 0 0 Q 30 -90 20 -140" stroke="#fff" strokeWidth={14} fill="none" strokeLinecap="round" /><ellipse cx={0} cy={6} rx={60} ry={14} fill="#2a3a5a" /></g>}
           </svg>
           <Chico x={600} y={940} h={700} t={t} expr={grita ? "sorpresa" : t < 340 ? "neutro" : "triste"} mira={grita ? 1 : Math.sin(t * 0.7) * 0.9} bD={grita ? 150 : 100} cD={grita ? 10 : 120} salta={346.6} />
           <svg style={{ position: "absolute", left: 600, top: 660, overflow: "visible" }} width={1} height={1}><path d="M -170 0 L 170 0 L 140 230 L -140 230 Z" fill="#7a4a26" stroke="#3a2010" strokeWidth={10} />{[60, 130, 200].map((y) => <line key={y} x1={-160 + y * 0.12} y1={y} x2={160 - y * 0.12} y2={y} stroke="#5a3418" strokeWidth={8} />)}</svg>
           {t < 346.4 && <Monto t={t} ks={[[335.8, 1], [337.8, 23], [339.8, 48], [341.8, 71], [343.8, 97]]} x={1360} y={300} size={170} pre="DAY " color={C.crema} />}
           {t < 346.4 && t >= 341.7 && <Chip t={t} t0={341.8} text="2 HOURS ON WATCH" color={C.violeta} x={1360} y={460} centro size={52} />}
           {t < 346.4 && t >= 343.6 && <Chip t={t} t0={343.7} text="EMPTY OCEAN" color={C.teal} tinta={C.noche} x={1360} y={560} centro size={52} />}
-          {grita && <Rot t={t} t0={346.6} text="THERE SHE BLOWS!" x={1320} y={260} size={110} color={C.oro} tiembla />}
+          {grita && <Rot t={t} t0={346.6} text="THERE SHE BLOWS!" x={1150} y={200} size={110} color={C.oro} tiembla />}
           {dia > 1 && dia < 97 && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 720, background: `rgba(10,10,40,${0.25 * Math.abs(Math.sin(t * 3))})` }} />}
         </>
       );
