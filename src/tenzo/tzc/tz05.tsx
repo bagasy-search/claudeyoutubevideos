@@ -22,6 +22,8 @@ import {
 import { PARABOLA05 } from "./parabola05";
 import { partir, planosDe, TramoS } from "./tramos";
 import { Inserto } from "../../anikit/inserto";
+import { Prop } from "../../anikit/utileria";
+import { Figurante } from "../../anikit/figurante";
 import { PAL } from "../elenco";
 import { Abrigo, Aguja, CAM, EdificioVidrio } from "./chicago";
 
@@ -179,8 +181,8 @@ const T = (): TramoS[] => [
   ), [
     [93.5, CAM.hombroLeo(3.5)],
     [97.0, CAM.leo(2.6)],
-    [99.6, [mira(0, 1450, 600, 1.3), mira(90, LAV.farol, P - 210, 1.9, { curva: "inout" })]],
-  ]),
+    [99.6, CAM.dos(3.0)],
+  ]).map((t) => (t.t0 === 99.6 ? { ...t, el: <KiotoRecuerdo /> } : t)),
   { t0: 102.6, t1: 106.0, el: <LlamaCrece /> },
   ...PARABOLA05,
 
@@ -269,12 +271,13 @@ const T = (): TramoS[] => [
     [283.0, CAM.leo(3.0, 2.0)],
     [286.0, CAM.hombroLeo(1.6)],
     [287.6, CAM.mesa(1.5)],
-  ]),
+  ]).map((t) => (t.t0 === 286.0 ? { ...t, el: <EstacaSeMueve /> } : t)),
   { t0: 289.1, t1: 291.2, el: <Inserto objeto="aguja" look={TENZO} pal={PAL} acento={ACENTO} accion="tocar" caras={[{ f: 0, v: "neutral" }, { f: 40, v: "feliz" }]} esquina="der" toques={[18, 36]} /> },
   ...partir(291.2, 301.2, (cam) => (
     <EnLavadero cam={cam}
       tenzo={{ caras: [{ f: 0, v: "feliz" }], habla: hab(291.2, [[291.2, 293.3], [292.9, 297.8], [297.8, 301.2]]), miradas: [{ f: 0, v: { x: -0.9, y: 0 } }], poses: [{ f: 0, v: TENZO_MESA }, { f: 70, v: { hD: 30, cD: 30, hI: 32, cI: 92 } }, { f: 140, v: TENZO_MESA }, { f: 200, v: { hD: 80, cD: 60, hI: 32, cI: 92, cabeza: -4 } }] }}
       leo={{ caras: [{ f: 0, v: "duda" }, { f: 150, v: "neutral" }, { f: 220, v: "sorpresa" }], miradas: [{ f: 0, v: { x: 0.9, y: 0 } }, { f: 200, v: { x: -0.6, y: -0.4 } }] }}
+      medio={<EstacaMesa desde={loc(291.2, 291.9)} mueve={loc(291.2, 293.4)} />}
       hud={<Rayitas desde={20} />} />
   ), [
     [291.2, CAM.dos(3.3, 1.5)],
@@ -454,6 +457,33 @@ const EstacaSeMueve: React.FC = () => {
 };
 
 // el teléfono queda prendido sobre el colchón desde el cuadro `desde`
+// 99,6-102,6 · «a circus came to Kyoto… an elephant and a rope»: el recuerdo de Tenzo, de día, la gente mirando
+const KiotoRecuerdo: React.FC = () => {
+  const f = useF();
+  const PI = CIRCO_PISO, EX = CIRCO_PUNTOS.elefanta;
+  const tob = tobillo(EX, PI, 1, 1);
+  const chicos = [{ c: "#4a6a9a", x: EX - 840 }, { c: "#8a5a9a", x: EX - 640 }, { c: "#e8e2d4", x: EX - 450 }];
+  return (
+    <Escena Set={Circo} pal={PALETAS.parabola} seed={71} mano={1.6}
+      claves={[mira(0, EX - 160, PI - 260, 1.25), mira(90, EX - 120, PI - 250, 1.38, { curva: "inout" })]}
+      medio={<>
+        {chicos.map((k, i) => (
+          <Figurante key={i} look={{ estilo: "frijol", piel: "#f0d6b0", camisa: k.c, alto: 0.72, accesorios: [{ t: "pelo", forma: i === 1 ? "bob" : "corto", color: "#2a2018" }] }}
+            x={k.x} piso={PI - 6} escala={ESC * 1.1} seed={i * 5 + 2} atiende={{ x: EX, y: PI - 300 }} cara={i === 0 ? "sorpresa" : "feliz"} reacciones={[{ f: 40 + i * 12, pose: { hD: 120, cD: 30 } }]} />
+        ))}
+        <Elefanta x={EX} y={PI} f={f} balanceo={8} oreja={0.8} trompa={0.4 + 0.35 * Math.sin(f / 10)} />
+        <Soga a={tob} b={{ x: CIRCO_PUNTOS.estaca, y: PI + 10 }} tension={0.35} />
+        <Estaca x={CIRCO_PUNTOS.estaca} y={PI + 10} />
+      </>}
+      hud={<div style={{ position: "absolute", left: 92, bottom: 86, fontFamily: F_HUD, fontWeight: 600, fontSize: 56, letterSpacing: 10, color: "#fff4dc", background: "rgba(30,18,10,0.78)", padding: "8px 30px 12px", borderRadius: 14, opacity: interpolate(f, [8, 20], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>KYOTO</div>} />
+  );
+};
+// la estaca (utilería del kit) sobre la mesa de doblar: cae en `desde` y desde `mueve` se sacude como si tiraran de ella
+const EstacaMesa: React.FC<{ desde: number; mueve: number }> = ({ desde, mueve }) => {
+  const f = useF();
+  const r = f > mueve ? 9 * Math.sin((f - mueve) / 2.2) * Math.exp(-(f - mueve) / 40) + 4 : 0;
+  return <Prop name="estaca" x={LAV.mesa + 300} y={P - 150} s={1.15} rot={-70 + r} desde={desde} entra="cae" />;
+};
 const TelDespues: React.FC<{ desde: number }> = ({ desde }) => (useF() >= desde ? <TelMesa x={CTO.colchon + 160} y={PC - CTO.COLCHON_ALTO + 4} /> : null);
 
 // 220,6 · la soga ámbar finita que va del teléfono de Leo a su tobillo (la soga de los 14), se dibuja de arriba abajo

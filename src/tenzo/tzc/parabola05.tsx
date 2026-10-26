@@ -5,10 +5,11 @@ import React from "react";
 import { interpolate } from "remotion";
 import { Clave, mira, useF } from "../../anikit/camara";
 import { Actor } from "../../anikit/actor";
+import { Figurante } from "../../anikit/figurante";
 import { Escena } from "../../anikit/escena";
 import { Halo } from "../../anikit/luz";
 import { F_HUD } from "../../anikit/pantalla";
-import { TextoMano } from "./chicago";
+import { TextoMano, ActorVivo } from "./chicago";
 import { PALETAS } from "../../anikit/paletas";
 import { Look } from "../../anikit/personaje";
 import { Circo, CIRCO_PISO, CIRCO_PUNTOS as C } from "../sets/circo";
@@ -68,7 +69,7 @@ const Kioto: React.FC = () => (
     claves={[mira(0, 520, P - 260, 1.35), mira(240, 1380, P - 270, 1.45, { curva: "inout" })]}
     medio={<>
       {CHICOS.map((lk, i) => (
-        <Actor key={i} look={lk} escala={ESC * 1.25} seed={60 + i} luz={CALIDA}
+        <ActorVivo key={i} look={lk} escala={ESC * 1.25} seed={60 + i} luz={CALIDA}
           ruta={[{ f: 0, x: 120 + i * 170, y: P }, { f: 240, x: 1050 + i * 190, y: P, curva: "lineal" }]}
           poses={[{ f: 0, v: i === 2 ? "saludar" : "parado" }]} caras={[{ f: 0, v: i === 0 ? "risa" : "feliz" }]} />
       ))}
@@ -84,7 +85,7 @@ const Detras: React.FC<{ cam?: Clave[] }> = ({ cam }) => (
     medio={<>
       <Ele balanceo={5} />
       <EstacaSoga />
-      <Actor look={TENZO_NINO} escala={ESC} seed={53} luz={CALIDA}
+      <ActorVivo look={TENZO_NINO} escala={ESC} seed={53} luz={CALIDA}
         ruta={[{ f: 0, x: 1820, y: P }, { f: 110, x: C.nino, y: P }]}
         poses={[{ f: 0, v: "parado" }, { f: 120, v: "firme" }]} caras={[{ f: 0, v: "neutral" }, { f: 130, v: "sorpresa" }]}
         miradas={[{ f: 0, v: { x: 0.6, y: 0 } }, { f: 130, v: { x: 0.9, y: -0.6 } }]} dir={[{ f: 0, v: 1 }]} />
@@ -99,7 +100,7 @@ const Revela: React.FC = () => (
     medio={<>
       <Ele balanceo={6} oreja={0.9} />
       <EstacaSoga />
-      <Actor look={TENZO_NINO} escala={ESC} seed={53} luz={CALIDA} ruta={[{ f: 0, x: C.nino, y: P }]} dir={[{ f: 0, v: 1 }]}
+      <ActorVivo look={TENZO_NINO} escala={ESC} seed={53} luz={CALIDA} ruta={[{ f: 0, x: C.nino, y: P }]} dir={[{ f: 0, v: 1 }]}
         poses={[{ f: 0, v: "firme" }]} caras={[{ f: 0, v: "sorpresa" }]} miradas={[{ f: 0, v: { x: 0.8, y: -0.9 } }]} />
     </>}
   />
@@ -112,7 +113,7 @@ const LaEstaca: React.FC = () => (
     medio={<>
       <Ele balanceo={4} />
       <EstacaSoga />
-      <Actor look={TENZO_NINO} escala={ESC} seed={53} luz={CALIDA}
+      <ActorVivo look={TENZO_NINO} escala={ESC} seed={53} luz={CALIDA}
         ruta={[{ f: 0, x: C.nino, y: P }, { f: 150, x: C.estaca - 110, y: P }]} dir={[{ f: 0, v: 1 }]}
         poses={[{ f: 0, v: "firme" }, { f: 160, v: "agacharse" }, { f: 220, v: { ...{ tronco: 38, pI: 70, rI: 115, pD: 80, rD: 120, cabeza: -20 }, hD: 75, cD: 10, hI: 60, cI: 20 } }]}
         caras={[{ f: 0, v: "duda" }, { f: 220, v: "sorpresa" }]} miradas={[{ f: 0, v: { x: 0.9, y: 0.6 } }]} />
@@ -143,7 +144,7 @@ const Busca: React.FC = () => (
       <Ele balanceo={6} />
       <EstacaSoga />
       <ActorEntrenador habla={[]} cara="neutral" />
-      <Actor look={TENZO_NINO} escala={ESC} seed={53} luz={CALIDA}
+      <ActorVivo look={TENZO_NINO} escala={ESC} seed={53} luz={CALIDA}
         ruta={[{ f: 0, x: C.estaca - 60, y: P }, { f: 110, x: C.balde - 260, y: P }]}
         poses={[{ f: 0, v: "parado" }]} caras={[{ f: 0, v: "neutral" }]} miradas={[{ f: 80, v: { x: 0.8, y: -0.3 } }]} />
     </>}
@@ -151,7 +152,7 @@ const Busca: React.FC = () => (
 );
 
 const ActorEntrenador: React.FC<{ habla: [number, number][]; cara?: string; caras?: { f: number; v: string }[]; poses?: { f: number; v: any }[] }> = ({ habla, cara = "neutral", caras, poses }) => (
-  <Actor look={ENTRENADOR} escala={ESC * 1.05} seed={58} luz={{ lado: -1, color: "#ffcf84", fuerza: 0.85 }}
+  <ActorVivo look={ENTRENADOR} escala={ESC * 1.05} seed={58} luz={{ lado: -1, color: "#ffcf84", fuerza: 0.85 }}
     ruta={[{ f: 0, x: C.balde, y: P }]} dir={[{ f: 0, v: -1 }]} asiento={[{ f: 0, v: 70 }]}
     poses={poses ?? [{ f: 0, v: { ...{ tronco: 6, pI: 80, rI: 82, pD: 88, rD: 86 }, hD: 40, cD: 120, hI: 20, cI: 60 } }]}
     caras={caras ?? [{ f: 0, v: cara }]} miradas={[{ f: 0, v: { x: -0.8, y: 0.2 } }]} habla={habla}
@@ -164,7 +165,7 @@ const Pregunta: React.FC = () => (
     claves={[mira(0, C.balde - 260, P - 160, 2.1), mira(156, C.balde - 240, P - 170, 2.25, { curva: "inout" })]}
     medio={<>
       <ActorEntrenador habla={[]} />
-      <Actor look={TENZO_NINO} escala={ESC} seed={53} luz={CALIDA} ruta={[{ f: 0, x: C.balde - 260, y: P }]} dir={[{ f: 0, v: 1 }, { f: 40, v: -1 }, { f: 100, v: 1 }]}
+      <ActorVivo look={TENZO_NINO} escala={ESC} seed={53} luz={CALIDA} ruta={[{ f: 0, x: C.balde - 260, y: P }]} dir={[{ f: 0, v: 1 }, { f: 40, v: -1 }, { f: 100, v: 1 }]}
         poses={[{ f: 0, v: "parado" }, { f: 40, v: "señalar" }, { f: 100, v: { hD: 60, cD: 60, hI: 50, cI: 60 } }]}
         caras={[{ f: 0, v: "duda" }, { f: 90, v: "sorpresa" }]} habla={[[0, 150]]} miradas={[{ f: 0, v: { x: 0.8, y: -0.4 } }, { f: 40, v: { x: -0.9, y: 0 } }, { f: 100, v: { x: 0.8, y: -0.4 } }]} />
     </>}
@@ -187,16 +188,21 @@ const Cria: React.FC<{ tramo: "tira" | "noche" | "rinde" }> = ({ tramo }) => {
   const lag = tramo === "noche" ? ((f % 90) / 90) : 0;
   // tirones de verdad: arranca, la soga se tensa de golpe y la frena; entre tirón y tirón, afloja
   const tiron = tira ? Math.pow(Math.abs(Math.sin(f / (tramo === "noche" ? 14 : 10))), 0.6) : 0;
-  const dx = tira ? 6 + 26 * tiron : 0;
+  const dx = tira ? 6 + 52 * tiron : 0;
   const tens = tira ? 0.35 + 0.65 * tiron : 0.1;
   return (
     <Escena Set={Circo} pal={pal} setProps={{ variante: tramo === "noche" ? "noche" : undefined }} seed={61} mano={1.6}
       claves={tramo === "rinde"
         ? [mira(0, (TOBC.x + C.estaca) / 2, P - 40, 3.0), mira(80, (TOBC.x + C.estaca) / 2, P - 40, 3.1), mira(82, ELX + 100, P - 150, 2.4), mira(189, ELX + 100, P - 150, 2.6, { curva: "inout" })]
-        : tramo === "tira" ? [mira(0, ELX - 60, P - 130, 1.5), mira(120, ELX - 40, P - 120, 1.65, { curva: "inout" }), mira(128, (TOBC.x + C.estaca) / 2, P - 50, 2.6), mira(264, (TOBC.x + C.estaca) / 2, P - 50, 2.8)]
+        : tramo === "tira" ? [mira(0, ELX - 80, P - 120, 2.2), mira(120, ELX - 50, P - 110, 2.4, { curva: "inout" }), mira(128, (TOBC.x + C.estaca) / 2, P - 50, 2.6), mira(264, (TOBC.x + C.estaca) / 2, P - 50, 2.8)]
         : [mira(0, ELX + 40, P - 140, 2.0), mira(90, ELX + 40, P - 140, 2.1), mira(92, (TOBC.x + C.estaca) / 2, P - 50, 2.7), mira(180, (TOBC.x + C.estaca) / 2, P - 50, 2.85)]}
       medio={<>
-        <g transform={`translate(${dx},0) rotate(${-4 * tiron},${ELX},${P})`}>
+        {/* la gente del circo de fondo mira a la cría (de día): respiran, la siguen con la cabeza y se apenan */}
+        {tramo === "tira" && <>
+          <Figurante look={CHICOS[1]} x={ELX - 330} piso={P - 14} escala={ESC * 0.95} seed={4} atiende={{ x: ELX + dx, y: P - 120 }} cara="duda" reacciones={tramo === "tira" ? [{ f: 70, cara: "triste", pose: { hI: 60, cI: 120, hD: 60, cD: 120 } }] : [{ f: 90, cara: "triste" }]} />
+          <Figurante look={ENTRENADOR} x={ELX - 520} piso={P - 24} escala={ESC * 1.02} seed={9} atiende={{ x: ELX + dx, y: P - 140 }} cara="neutral" reacciones={[{ f: 110, pose: { hD: 80, cD: 40, cabeza: 6 } }]} />
+        </>}
+        <g transform={`translate(${dx},0) rotate(${-8 * tiron},${ELX},${P})`}>
           <Elefanta x={ELX} y={P} s={0.38} cria f={f} balanceo={tira ? 0 : 2} fase={tira ? f / 26 : undefined}
             cabeza={tramo === "rinde" ? interpolate(f, [30, 120], [0, 16], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : tira ? -6 : 0}
             trompa={tira ? 0.55 + 0.25 * Math.sin(f / 7) : 0} lagrima={lag} ojo={tramo === "rinde" ? interpolate(f, [60, 140], [1, 0.45], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1} />
@@ -220,16 +226,19 @@ const Golpea: React.FC = () => (
 );
 
 // 184,5-188,7 · «She grew up. She grew so big she could pull down this whole tent.»
-const Crecio: React.FC = () => (
+const Crecio: React.FC = () => {
+  const f = useF();
+  return (
   <Escena Set={Circo} pal={pal} seed={63} mano={2}
     claves={[mira(0, 1900, 430, 0.72), mira(126, 2300, 470, 0.95, { curva: "inout" })]}
     medio={<>
-      <Ele balanceo={6} oreja={0.6} />
+      <Ele balanceo={10} oreja={0.9} trompa={0.5 + 0.4 * Math.sin(f / 11)} cabeza={-6 + 5 * Math.sin(f / 19)} />
       <EstacaSoga />
       <ActorEntrenador habla={[[0, 126]]} />
     </>}
   />
-);
+  );
+};
 
 // 188,9-196,1 · «in her head she is still that baby… She still believes the rope is stronger… So she never tries again.»
 // la sombra en la lona de la carpa: de adulta a cría
@@ -254,7 +263,11 @@ const Ojo: React.FC = () => {
   return (
     <Escena Set={Circo} pal={pal} seed={65} mano={1.2}
       claves={[mira(0, ELX + 395, 395, 2.4), mira(117, ELX + 395, 395, 2.75, { curva: "inout" })]}
-      medio={<><Ele balanceo={1.5} ojo={interpolate(f, [40, 80], [1, 0.75], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} /></>}
+      medio={<><Ele balanceo={3} trompa={0.25 + 0.2 * Math.sin(f / 13)} cabeza={interpolate(f, [0, 117], [-4, 8])} ojo={interpolate(f, [40, 80], [1, 0.7], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} lagrima={interpolate(f, [60, 117], [0, 0.8], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
+        {/* el RECUERDO de la soga: una soga fina y clara cruza delante del ojo y se tensa (la memoria que la ata) */}
+        <g opacity={interpolate(f, [20, 50], [0, 0.75], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}>
+          <Soga a={{ x: ELX + 180, y: 470 + 6 * Math.sin(f / 9) }} b={{ x: ELX + 640, y: 300 }} tension={interpolate(f, [30, 90], [0.2, 0.95], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} grosor={7} />
+        </g></>}
       hud={<TextoMano texto={"the memory of the rope holds her."} x={960} y={930} centro desde={60} color="#fbf4e6" tam={76} vel={1.6} rot={0} brillo={false} />}
     />
   );

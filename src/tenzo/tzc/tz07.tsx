@@ -9,7 +9,7 @@ import { Escena } from "../../anikit/escena";
 import { Halo } from "../../anikit/luz";
 import { Montaje } from "../../anikit/montaje";
 import { F_HUD, RelojDia } from "../../anikit/pantalla";
-import { CAM, EdificioVidrio, ManoLeo, ManoMara, TextoMano } from "./chicago";
+import { CAM, EdificioVidrio, ManoLeo, ManoMara, TextoMano, Torres } from "./chicago";
 import { Aula, AULA_PISO } from "../../anikit/sets/aula";
 import { ACENTO, ESC, LEO, MARA, PAL, PAL_ANT } from "../elenco";
 import { HudTenzo, MarcaTenzo } from "../hud";
@@ -314,6 +314,28 @@ const DosHoras: React.FC = () => {
 };
 
 // ---------- los planos de Chicago ----------
+// 72,2-79,1 · «Screen time, 3 hours and 55 minutes. The counter is climbing again.»: el contador grande que sube
+const Contador: React.FC = () => {
+  const f = useF();
+  const m = Math.min(59, 52 + Math.floor(f / 34));
+  return (
+    <div style={{ position: "absolute", left: "50%", transform: `translateX(-50%) scale(${1 + 0.04 * Math.max(0, 1 - (f % 34) / 8)})`, top: 70, fontFamily: F_HUD, fontWeight: 600, fontSize: 72, color: "#f4efe4", background: "rgba(12,10,10,0.78)", padding: "10px 30px 14px", borderRadius: 16 }}>
+      SCREEN TIME <span style={{ color: ACENTO }}>3h {m}m</span> <span style={{ color: ACENTO }}>▲</span>
+    </div>
+  );
+};
+// 405,8-410,4 · «puts the phone face down. 20 minutes later, it buzzes.»: boca abajo en la mesa y, desde `desde`, zumba
+const TelZumba: React.FC<{ desde: number }> = ({ desde }) => {
+  const f = useF();
+  const on = f >= desde && Math.floor((f - desde) / 12) % 2 === 0;
+  const x = LAV.mesa + 260, y = P - 150;
+  return (
+    <g>
+      <TelMesa x={x} y={y} bocaAbajo vibra={on ? 4 * Math.sin(f * 2.6) : 0} />
+      {on && [0, 1].map((k) => <path key={k} d={`M${x - 70 - k * 22},${y - 40} q-14,22 0,44 M${x + 70 + k * 22},${y - 40} q14,22 0,44`} stroke={ACENTO} strokeWidth={4} fill="none" opacity={0.8 - k * 0.3} />)}
+    </g>
+  );
+};
 const T = (): TramoS[] => [
   // ACTO 1 · gancho
   { t0: 0, t1: 6.5, el: <Cuadro0 /> },
@@ -330,11 +352,9 @@ const T = (): TramoS[] => [
       hud={<RelojDia min={23 * 60} x={1640} y={150} desde={loc(8.3, 10.1)} />} />
   ) },
   { t0: 11.6, t1: 17.5, el: <ConCara caras={[{ f: 0, v: "neutral" }, { f: 60, v: "sorpresa" }, { f: 125, v: "triste" }]}><ReelTyler dur={177} vistas={[38, 40]} caption={9999} toca={100} /></ConCara> },
-  { t0: 17.5, t1: 21.5, el: (
-    <EnCuarto cam={[mira(0, CTO.colchon + 25, PC - 275, 2.5), mira(120, CTO.colchon + 25, PC - 280, 2.75)]}
-      leo={{ poses: [{ f: 0, v: SENTADO_TEL }, { f: 60, v: { ...SENTADO_TEL, cabeza: 22 } }], caras: [{ f: 0, v: "triste" }], miradas: [{ f: 0, v: { x: 0.3, y: 0.7 } }], enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 1 } }} />
-  ) },
-  { t0: 21.5, t1: 26.0, el: <ConCara esquina="der" caras={[{ f: 0, v: "duda" }, { f: 80, v: "triste" }]}><ReelTyler dur={135} vistas={[40, 41]} caption={loc(21.5, 22.9)} z={[1.3, 1.5]} /></ConCara> },
+  // «a glass apartment behind him, with the whole city shining»: la ciudad de vidrio que Leo mira, con su cara en la esquina
+  { t0: 17.5, t1: 21.5, el: <ConCara caras={[{ f: 0, v: "duda" }, { f: 70, v: "triste" }]}><Torres /></ConCara> },
+  { t0: 21.5, t1: 26.0, el: <ConCara esquina="der" caras={[{ f: 0, v: "duda" }, { f: 80, v: "triste" }]}><ReelTyler dur={135} vistas={[40, 41]} caption={loc(21.5, 22.9)} z={[1.05, 1.15]} /></ConCara> },
   { t0: 26.0, t1: 35.3, trans: { tipo: "fundido", d: 12 }, el: <AulaArte /> },
   { t0: 35.3, t1: 43.9, trans: { tipo: "fundido", d: 12 }, el: (
     <EnCuarto cam={[mira(0, PIN.x - 120, PC - 330, 1.6), mira(loc(35.3, 39.5), PIN.x - 60, PC - 360, 1.7, { curva: "inout" }), mira(258, PIN.x + 40, PIN.y + 30, 2.7, { curva: "inout" })]}
@@ -360,8 +380,9 @@ const T = (): TramoS[] => [
   ) },
   ...partir(72.2, 79.1, (cam) => (
     <EnCuarto cam={cam}
-      leo={{ poses: [{ f: 0, v: SENTADO_TEL }, { f: loc(72.2, 75.6), v: { ...SENTADO_TEL, cabeza: 30, tronco: 12 } }], miradas: [{ f: 0, v: { x: 0.3, y: 0.7 } }], caras: [{ f: 0, v: "triste" }], enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 0.8 } }} />
-  ), [[72.2, [mira(0, CTO.colchon + 40, PC - 270, 1.9), mira(207, CTO.colchon + 30, PC - 275, 2.3, { curva: "inout" })]], [75.6, CAM.camaPP(3.5)]]),
+      leo={{ poses: [{ f: 0, v: SENTADO_TEL }, { f: loc(72.2, 75.6), v: { ...SENTADO_TEL, cabeza: 30, tronco: 12 } }], miradas: [{ f: 0, v: { x: 0.3, y: 0.7 } }], caras: [{ f: 0, v: "triste" }], enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 0.8 } }}
+      hud={<Contador />} />
+  ), [[72.2, [mira(0, CTO.colchon + 40, PC - 270, 1.9), mira(207, CTO.colchon + 30, PC - 275, 2.3, { curva: "inout" })]], [75.6, [mira(0, CTO.colchon + 190, PC - 300, 2.15, { rot: -3 }), mira(105, CTO.colchon + 170, PC - 300, 2.35, { rot: -2, curva: "inout" })]]]),
   { t0: 79.1, t1: 84.6, el: <Reflejo /> },
 
   // ACTO 2 · Spin City, 3 a. m.
@@ -473,7 +494,7 @@ const T = (): TramoS[] => [
       medio={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />} />
   ), [[364.6, CAM.leo(2.2, 2.5)], [366.8, CAM.mesa(2.3)]]),
   { t0: 369.1, t1: 373.6, trans: { tipo: "luz", d: 8 }, el: (
-    <EnCuarto cam={CAM.cama(4.5, 2.0)} leo={{ poses: [{ f: 0, v: SENTADO_TEL }], caras: [{ f: 0, v: "triste" }], enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 0.8 } }}
+    <EnCuarto cam={[mira(0, CTO.colchon - 130, PC - 255, 1.9, { rot: 2 }), mira(135, CTO.colchon - 110, PC - 260, 2.1, { rot: 1, curva: "inout" })]} leo={{ poses: [{ f: 0, v: SENTADO_TEL }], caras: [{ f: 0, v: "triste" }], enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 0.8 } }}
       hud={<div style={{ position: "absolute", left: "50%", transform: "translateX(-50%)", top: 70, fontFamily: F_HUD, fontWeight: 600, fontSize: 76, color: "#f4efe4", background: "rgba(12,10,10,0.78)", padding: "10px 30px 14px", borderRadius: 16 }}>DAY 1 · <span style={{ color: ACENTO }}>9h 42m</span></div>} />
   ) },
   { t0: 373.6, t1: 377.0, el: (
@@ -502,7 +523,7 @@ const T = (): TramoS[] => [
     </PantallaTel></ConCara>
   ) },
   ...partir(405.8, 410.4, (cam) => (
-    <EnLavadero tel={{ bocaAbajo: true, vibra: 0 }} cam={cam}
+    <EnLavadero tel={null} medio={<TelZumba desde={loc(405.8, 407.4)} />} cam={cam}
       leo={{ poses: [{ f: 0, v: SENTADO }, { f: 70, v: { ...SENTADO, hD: 60, cD: 70 } }], caras: [{ f: 0, v: "duda" }], miradas: [{ f: 0, v: { x: 0.6, y: 0.6 } }] }}
       tenzo={{ poses: [{ f: 0, v: TENZO_MESA }], caras: [{ f: 0, v: "neutral" }], miradas: [{ f: 0, v: { x: -0.7, y: 0.3 } }] }}
       hud={<DosHoras />} />
@@ -532,7 +553,7 @@ const T = (): TramoS[] => [
       maya={{ habla: [[loc(434.2, 439.2), 240]], caras: [{ f: 0, v: "feliz" }, { f: loc(434.2, 439.2), v: "risa" }], poses: [{ f: 0, v: { ...SENTADO, hD: 60, cD: 100, hI: 55, cI: 105 } }, { f: loc(434.2, 439.2), v: { ...SENTADO, tronco: -10, cabeza: -14, hD: 40, cD: 130, hI: 40, cI: 130 } }] }}
       leo={{ caras: [{ f: 0, v: "feliz" }], habla: hab(434.2, [[436.7, 439.1]]), poses: [{ f: 0, v: SENTADO }, { f: 40, v: { ...SENTADO, hD: 80, cD: 60 } }, { f: 90, v: SENTADO }] }} />
   ) },
-  { t0: 442.2, t1: 453.1, el: <DibujaBarril /> },
+  { t0: 442.2, t1: 453.1, el: <ConCara esquina="der" caras={[{ f: 0, v: "determinado" }, { f: 150, v: "feliz" }]}><DibujaBarril /></ConCara> },
 
   // ACTO 5 · gancho a tz08
   ...partir(453.1, 457.6, (cam) => (
@@ -560,7 +581,7 @@ const T = (): TramoS[] => [
   ), [[471.0, [mira(0, CTO.colchon + 50, PC - 280, 1.9), mira(105, CTO.colchon + 40, PC - 285, 2.2, { curva: "inout" })]], [474.5, CAM.camaPP(4.5)]]),
   { t0: 479.0, t1: 488.2, el: <Picazon /> },
   { t0: 488.2, t1: 494.3, el: (
-    <EnCuarto dia momento="lluvia" cam={[mira(0, CTO.colchon + 230, PC - 320, 1.9, { rot: 2 }), mira(120, CTO.colchon + 210, PC - 320, 2.05, { rot: 1, curva: "inout" })]} leo={{ poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }], caras: [{ f: 0, v: "neutral" }, { f: 70, v: "duda" }], miradas: [{ f: 0, v: { x: 0.7, y: -0.6 } }] }}
+    <EnCuarto dia momento="lluvia" cam={[mira(0, CTO.colchon + 130, PC - 285, 1.8, { rot: 2 }), mira(120, CTO.colchon + 110, PC - 280, 1.95, { rot: 1, curva: "inout" })]} leo={{ poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }], caras: [{ f: 0, v: "neutral" }, { f: 70, v: "duda" }], miradas: [{ f: 0, v: { x: 0.7, y: -0.6 } }] }}
       medio={<DosDibujos />}
       hud={<ManoLeo texto="who is your tyler?" x={960} y={920} centro desde={10} />} />
   ) },

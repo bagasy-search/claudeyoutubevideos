@@ -4,7 +4,7 @@
 import React from "react";
 import { AbsoluteFill, interpolate, spring, useVideoConfig } from "remotion";
 import { Clave, mira, useF } from "../../anikit/camara";
-import { Actor, ActorProps } from "../../anikit/actor";
+import { Actor, ActorProps, posRuta } from "../../anikit/actor";
 import { Escena } from "../../anikit/escena";
 import { Halo } from "../../anikit/luz";
 import { F_GLOBO, F_HUD } from "../../anikit/pantalla";
@@ -43,6 +43,14 @@ const GESTOS: Partial<Pose>[] = [
   { hD: 88, cD: 22, cabeza: 8 }, { hI: 48, cI: 100, cabeza: -10, tronco: -3 }, { hD: 42, cD: 118, cabeza: 6, tronco: 5 },
 ];
 const GESTOS_IZQ: Partial<Pose>[] = [{ hI: 58, cI: 46, cabeza: -6 }, { hI: 44, cI: 96, tronco: 6, cabeza: 5 }, { cabeza: 9, tronco: -4 }];
+// posturas de reposo entre frases (con algo en la mano derecha sólo se mueve la izquierda)
+const VIVO: ((manoOcupada: boolean) => Partial<Pose>)[] = [
+  (o) => ({ cabeza: 9, tronco: 4, ...(o ? { hI: 40, cI: 70 } : { hD: 48, cD: 80 }) }),
+  () => ({ cabeza: -8, tronco: -3 }),
+  (o) => ({ cabeza: 4, tronco: 7, ...(o ? { hI: 62, cI: 110 } : { hI: 58, cI: 104, hD: 44, cD: 92 }) }),
+  (o) => ({ cabeza: -12, tronco: 2, ...(o ? {} : { hD: 72, cD: 30 }) }),
+  () => ({ cabeza: 12, tronco: -5 }),
+];
 type K<T> = { f: number; v: T; d?: number };
 const baseEn = <T,>(ks: K<T>[], f: number) => { let v = ks[0].v; for (const k of ks) if (k.f <= f) v = k.v; return v; };
 const mas = (b: Partial<Pose>, g: Partial<Pose>): Partial<Pose> => ({
@@ -76,6 +84,19 @@ const actuar = (a: ActorProps | null, otro: ActorProps | null, hacia: { x: numbe
     }
     if (mirarLibre) { nM.push({ f: d + 4, v: hacia }); nM.push({ f: h + 24, v: m0 }); }
   });
+  // VIVO (v9, Ojo 26-oct: «misma pose en los 3 cuadros»): fuera de las frases, cada ~1,6 s cambia de postura y de
+  // mirada (cabeza, tronco y una mano), con el ritmo corrido por la semilla: ningún still de la escena repite pose
+  const ocupado = (fr: number) => [...yo, ...el].some(([d, h]) => fr > d - 10 && fr < h + 30);
+  if (libre) for (let k = 0; k < 24; k++) {
+    const fk = 16 + k * 48 + ((semilla * 7) % 13);
+    if (ocupado(fk)) continue;
+    nP.push({ f: fk, v: mas(baseEn(ps, fk) as Partial<Pose>, VIVO[(k + semilla) % VIVO.length](!!a.enManoD)) });
+  }
+  if (mirarLibre) for (let k = 0; k < 24; k++) {
+    const fk = 30 + k * 48 + ((semilla * 11) % 17);
+    if (ocupado(fk)) continue;
+    nM.push({ f: fk, v: k % 3 === 1 ? hacia : { x: m0.x + (k % 2 ? 0.35 : -0.3), y: m0.y + (k % 4 === 0 ? 0.25 : -0.1) } });
+  }
   if (!nP.length && !nM.length) return a;
   const orden = <T,>(xs: K<T>[]) => xs.sort((x, y) => x.f - y.f).filter((k, i, arr) => i === 0 || k.f > arr[i - 1].f);
   return {
@@ -83,6 +104,37 @@ const actuar = (a: ActorProps | null, otro: ActorProps | null, hacia: { x: numbe
     poses: nP.length ? orden([...ps, ...nP]) : a.poses,
     miradas: nM.length ? orden([{ f: 0, v: m0 }, ...nM]) : a.miradas,
   } as ActorProps;
+};
+
+// ENCUADRE SEGURO (v9, Ojo 26-oct: «Leo al 15-25 % en los generales»): todo general (zoom < zmin) que dura más de
+// 1,7 s se cambia por un plano medio sobre el protagonista y se queda ahí hasta la próxima clave cerrada. El lado del
+// medio (izquierda/centro/derecha del cuadro) cambia según el plano, para que dos medios seguidos no sean idénticos.
+type Blanco = (f: number) => { x: number; y: number; z: number };
+const seguro = (cam: Clave[], blanco: Blanco | null, zmin = 1.7): Clave[] => {
+  if (!blanco || !cam.length) return cam;
+  const lado = ((Math.round(Math.abs(cam[0].x) + Math.abs(cam[0].y) + cam.length * 7) % 3) - 1) * 95;
+  const out: Clave[] = [];
+  let dentro = false;
+  cam.forEach((c, i) => {
+    if (c.zoom >= zmin) { out.push(c); dentro = false; return; }
+    const b = blanco(c.f + 40);
+    if (dentro) { out.push(mira(c.f, b.x + lado / b.z, b.y, b.z * 1.04, { curva: "inout" })); return; }
+    const dur = (cam[i + 1]?.f ?? Infinity) - c.f;
+    // el general se REEMPLAZA por el medio (no se empuja: el empuje a mitad de camino salía movido en el still)
+    if (dur > 52) { out.push(mira(c.f, b.x + lado / b.z, b.y, b.z, { ...(c.rot !== undefined ? { rot: c.rot } : {}) })); dentro = true; }
+    else out.push(c);
+  });
+  return out;
+};
+const xEn = (a: ActorProps | null | undefined, f: number) => (a?.ruta?.length ? posRuta(a.ruta, f).x : undefined);
+
+// Actor con VIVO automático (parábolas, Diógenes, Alejandro, el entrenador): mismo uso que <Actor>, pero entre frases
+// cambia de postura y mirada; los que ya traen una coreografía (3+ poses) quedan como están
+export const ActorVivo: React.FC<ActorProps> = (p) => {
+  const base = p.poses?.length ? p : ({ ...p, poses: [{ f: 0, v: {} }] } as ActorProps);
+  const m0 = (base.miradas?.[0]?.v as { x: number; y: number } | undefined) ?? { x: 0, y: 0 };
+  const v = actuar(base, null, { x: -m0.x * 0.6 + 0.3, y: m0.y }, (p.seed ?? 0) + 2);
+  return <Actor {...(v ?? base)} />;
 };
 
 // abrigo gris sobre la mesa: `doblez` 0 (abierto) → 1 (doblado), `boton` muestra el botón nuevo
@@ -111,8 +163,15 @@ export const EnLavadero: React.FC<LavP> = ({ cam, leo, tenzo, mara, extra = [], 
   const a = actuar(a0, t0, { x: 0.9, y: -0.05 }, 0), t = actuar(t0, a0, { x: -0.9, y: -0.08 }, 3);
   const m = res(mara, f);
   const mm = m ? mk({ look: MARA, escala: ESC * 1.1, seed: 5, ruta: [{ f: 0, x: L.leo - 170, y: P - 40 }], dir: [{ f: 0, v: 1 }], caras: [{ f: 0, v: "feliz" }], opacidad: () => 0.92, poses: [{ f: 0, v: { hD: 60, cD: 60, hI: 40, cI: 70, cabeza: 14 } }] }, m) : null;
+  const sentado = (x: ActorProps | null) => !!(x?.asiento as K<number>[] | undefined)?.[0]?.v;
+  const blanco: Blanco | null = a || t ? (fr) => {
+    const xa = xEn(a, fr), xt = xEn(t, fr);
+    if (xa !== undefined && xt !== undefined && Math.abs(xa - xt) < 700) return { x: (xa + xt) / 2 + 40, y: P - 275, z: 1.9 };
+    if (xa !== undefined) return { x: xa - 70, y: P - (sentado(a) ? 285 : 330), z: 2.05 };
+    return { x: (xt ?? L.tenzo) + 90, y: P - 230, z: 2.05 };
+  } : null;
   return (
-    <Escena Set={Lavadero} pal={PAL} seed={seed} mano={mano} claves={cam} setProps={{ tren, luzFarol, girando: [3, 7, 12, 22, 31] }}
+    <Escena Set={Lavadero} pal={PAL} seed={seed} mano={mano} claves={seguro(cam, blanco)} setProps={{ tren, luzFarol, girando: [3, 7, 12, 22, 31] }}
       medio={<>
         {mm && <Actor {...mm} />}
         {abrigo !== null && <Abrigo x={L.mesa + 90} y={P - 150} doblez={abrigo} />}
@@ -130,7 +189,43 @@ export const LAV = { ...L, P: LAV_PISO };
 // ---------- el cuarto de Leo (Wilson Avenue) ----------
 // la pared detrás de la cama: guirnalda de lucecitas cálidas que titilan, póster, estante con libros y planta, corcho
 // con dibujos chiquitos y fotos (que en el plano medio y en el primer plano el fondo cuente quién es Leo)
-const DecoCuarto: React.FC = () => {
+// ventana de la pared (v9): por ella se ve la hora del cierre — noche con ventanitas de edificios, lluvia que corre por
+// el vidrio, o el amanecer que sube — sin ella el `momento` del cuarto no se notaba
+const VentanaCuarto: React.FC<{ momento?: Momento }> = ({ momento }) => {
+  const f = useF();
+  const P = CTO_PISO, X = C.colchon - 400, Y = P - 610, W = 250, H = 250;
+  const cielo = momento === "amanecer" ? ["#f3a36a", "#ffd2a0"] : momento === "lluvia" ? ["#2c3a4c", "#46566a"] : ["#0f1626", "#1d2a40"];
+  const sol = momento === "amanecer" ? interpolate(f, [0, 240], [H + 30, H * 0.55], { extrapolateRight: "clamp" }) : 0;
+  return (
+    <g transform={`translate(${X},${Y})`}>
+      <defs><clipPath id="vcto"><rect x={0} y={0} width={W} height={H} /></clipPath><linearGradient id={`vcg${momento ?? "n"}`} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor={cielo[0]} /><stop offset="1" stopColor={cielo[1]} /></linearGradient></defs>
+      <g clipPath="url(#vcto)">
+        <rect x={0} y={0} width={W} height={H} fill={`url(#vcg${momento ?? "n"})`} />
+        {momento === "amanecer" && <><circle cx={W * 0.62} cy={sol} r={46} fill="#fff1c9" /><circle cx={W * 0.62} cy={sol} r={80} fill="#ffe2a8" opacity={0.35} /></>}
+        {[[0, 150, 70], [78, 110, 60], [146, 170, 54], [204, 130, 60]].map(([x, top, w], i) => (
+          <g key={i}>
+            <rect x={x} y={top} width={w} height={H - top} fill={momento === "amanecer" ? "#7a5a5e" : "#141a26"} />
+            {Array.from({ length: 8 }).map((_, k) => <rect key={k} x={x + 8 + (k % 3) * 18} y={top + 12 + Math.floor(k / 3) * 24} width={9} height={12} fill={ACENTO} opacity={momento === "amanecer" ? 0.25 : ((k + i) % 3 ? 0.75 : 0.2)} />)}
+          </g>
+        ))}
+        {momento === "lluvia" && Array.from({ length: 34 }).map((_, k) => {
+          const x0 = (k * 61) % W, y0 = ((f * (9 + (k % 4)) + k * 97) % (H + 60)) - 40;
+          return <line key={k} x1={x0} y1={y0} x2={x0 - 6} y2={y0 + 26} stroke="#c9d6e6" strokeWidth={2} opacity={0.55} />;
+        })}
+        {momento === "lluvia" && Array.from({ length: 6 }).map((_, k) => {
+          const x0 = 20 + k * 40, y0 = (f * (0.8 + k * 0.17) + k * 50) % H;
+          return <g key={k}><circle cx={x0} cy={y0} r={5} fill="#dbe6f2" opacity={0.7} /><line x1={x0} y1={y0 - 4} x2={x0} y2={Math.max(0, y0 - 40)} stroke="#dbe6f2" strokeWidth={2} opacity={0.35} /></g>;
+        })}
+      </g>
+      <rect x={-10} y={-10} width={W + 20} height={H + 20} fill="none" stroke="#2a2d35" strokeWidth={16} />
+      <line x1={W / 2} y1={0} x2={W / 2} y2={H} stroke="#2a2d35" strokeWidth={10} />
+      <line x1={0} y1={H / 2} x2={W} y2={H / 2} stroke="#2a2d35" strokeWidth={10} />
+      <rect x={-26} y={H + 8} width={W + 52} height={16} rx={4} fill="#3a3f48" />
+      {momento === "amanecer" && <path d={`M0,${H + 24} L${-60},${H + 300} L${W + 160},${H + 300} L${W},${H + 24} Z`} fill="#ffc98a" opacity={0.12} />}
+    </g>
+  );
+};
+const DecoCuarto: React.FC<{ momento?: Momento }> = ({ momento }) => {
   const f = useF();
   const P = CTO_PISO, X = C.colchon;
   const luces = Array.from({ length: 15 }).map((_, i) => {
@@ -147,7 +242,8 @@ const DecoCuarto: React.FC = () => {
         </g>
       ))}
       {/* póster: sol ámbar sobre un horizonte (el único color fuerte del cuarto) */}
-      <g transform={`translate(${X - 400},${P - 440}) rotate(-2) scale(0.85)`}>
+      <VentanaCuarto momento={momento} />
+      <g transform={`translate(${X - 660},${P - 440}) rotate(-2) scale(0.85)`}>
         <rect x={0} y={0} width={230} height={320} fill="#1b1d24" stroke="#3a3f48" strokeWidth={6} />
         <circle cx={115} cy={140} r={62} fill={ACENTO} />
         <rect x={14} y={170} width={202} height={136} fill="#14161b" />
@@ -197,9 +293,11 @@ export const EnCuarto: React.FC<CtoP> = ({ momento, cam, leo, mara, dia, luzPuer
   const a = a1 ? actuar(a1, null, ((a1.miradas?.[0]?.v as { x: number; y: number }) ?? { x: 0, y: 0 }), 1) : a1;
   const m = res(mara, f);
   const mm = m ? mk({ look: MARA, escala: ESC * 1.1, seed: 5, ruta: [{ f: 0, x: C.colchon - 200, y: P - 30 }], dir: [{ f: 0, v: 1 }], caras: [{ f: 0, v: "feliz" }], opacidad: () => 0.9 }, m) : null;
+  const sent = !!(a?.asiento as K<number>[] | undefined)?.[0]?.v;
+  const blanco: Blanco | null = a ? (fr) => ({ x: (xEn(a, fr) ?? C.colchon) + 40, y: P - (sent ? 245 : 320), z: 1.95 }) : null;
   return (
-    <Escena Set={momento ? CUARTO_M[momento] : Cuarto} pal={momento ? palMomento(dia ? PAL_DIA : PAL, momento) : dia ? PAL_DIA : PAL} seed={seed} mano={mano} claves={cam} setProps={{ luzPuerta, lampara, tren }}
-      detras={<><DecoCuarto />{detras}</>}
+    <Escena Set={momento ? CUARTO_M[momento] : Cuarto} pal={momento ? palMomento(dia ? PAL_DIA : PAL, momento) : dia ? PAL_DIA : PAL} seed={seed} mano={mano} claves={seguro(cam, blanco)} setProps={{ luzPuerta, lampara, tren }}
+      detras={<><DecoCuarto momento={momento} />{detras}</>}
       medio={<>{mm && <Actor {...mm} />}{a && <Actor {...a} />}{medio}</>} frente={frente} hud={hud} />
   );
 };
@@ -209,8 +307,9 @@ export const CTO = { ...C, P: CTO_PISO, COLCHON_ALTO };
 export const EnCalle: React.FC<{ cam: Clave[]; leo?: ActF; extra?: ActF[]; dia?: boolean; tren?: number; hud?: React.ReactNode; medio?: React.ReactNode; seed?: number }> = ({ cam, leo, extra = [], dia, tren = -1, hud, medio, seed = 4 }) => {
   const f = useF();
   const a = mk({ look: LEO_CAPUCHA, escala: ESC, seed: 1, luz: RIM_FRIO, ruta: [{ f: 0, x: 600, y: BWY_PISO }], caras: [{ f: 0, v: "neutral" }] }, res(leo, f));
+  const blanco: Blanco | null = a ? (fr) => ({ x: xEn(a, fr) ?? 600, y: BWY_PISO - 330, z: 1.9 }) : null;
   return (
-    <Escena Set={Broadway} pal={dia ? PAL_DIA : PAL} seed={seed} mano={2} claves={cam} setProps={{ hora: dia ? "dia" : "noche", tren }}
+    <Escena Set={Broadway} pal={dia ? PAL_DIA : PAL} seed={seed} mano={2} claves={seguro(cam, blanco, 1.55)} setProps={{ hora: dia ? "dia" : "noche", tren }}
       medio={<>{a && <Actor {...a} />}{extra.map((e, i) => { const x = res(e, f); return x ? <Actor key={i} {...(x as ActorProps)} /> : null; })}{medio}</>} hud={hud} />
   );
 };
@@ -406,8 +505,11 @@ const VozLimpia: React.FC<VozP & { tinta: string; borde: string }> = ({ texto, x
   const o = (hasta !== undefined ? interpolate(f, [hasta - 8, hasta], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1) * interpolate(f, [desde, desde + 5], [0, 1], { extrapolateRight: "clamp" });
   const t = Math.max(48, Math.min(66, tam * 0.82));
   const ancho = texto.length * t * 0.5 + 64; // ancho aproximado de la pastilla
-  const cx = centro ? Math.max(ancho / 2 + 40, Math.min(1880 - ancho / 2, x)) : Math.max(40 + ancho / 2, Math.min(1880 - ancho / 2, x + ancho / 2));
-  const top = Math.max(60, Math.min(1080 - t * 1.6 - 50, y));
+  // FRANJA SEGURA (v9, Ojo 26-oct: los subtítulos pisaban la planta, el tablero y los pies de Leo): siempre arriba y
+  // centrados, debajo del HUD; dos frases a la vez se apilan (la que venía de la mitad de abajo va al 2º renglón)
+  void x; void centro;
+  const cx = Math.max(ancho / 2 + 40, Math.min(1880 - ancho / 2, 960));
+  const top = y < 540 ? 112 : 112 + t * 1.15 + 34;
   return (
     <div style={{ position: "absolute", left: cx, top, transform: "translateX(-50%)", opacity: o, whiteSpace: "nowrap", background: "rgba(12,10,10,0.78)", border: `2px solid ${borde}`, borderRadius: 16, padding: "8px 30px 12px", fontFamily: F_HUD, fontWeight: 600, fontSize: t, lineHeight: 1.15, color: tinta, letterSpacing: 0.5, boxShadow: "0 6px 24px rgba(0,0,0,0.45)" }}>
       {pal.map((w, i) => <span key={i} style={{ opacity: Math.max(0, Math.min(1, n - i)) }}>{w}{i < pal.length - 1 ? " " : ""}</span>)}
