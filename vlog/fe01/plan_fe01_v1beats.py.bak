@@ -1,0 +1,715 @@
+# fe01 · «Lo que pasa en el panteón cuando todos se van del entierro» (Don Ernesto, el Funerario) · plan del video ENTERO escrito A MANO,
+# plano por plano, sobre la frase de ese segundo (at() sobre words.json, frases copiadas del guion). → segs.json, ov.json, avail.json,
+# edl.json en src/fe01 y D:/rtmp/fe01_PLAN_MxM.md (una línea por plano). Las ventanas del avatar las manda avwin.json (av_temprano):
+# ahí la base es el avatar y al salir vuelve el plano que corresponde.
+# Bases: "img:<id>" foto (si su toma LTX-vlog ya llegó, va el clip de Ernesto haciendo eso) · "ph:<id>" foto quieta
+# · "ltx:<id>|<respaldo>" clip LTX de lugar (si todavía no llegó, el respaldo) · "bk[:<id>]" foto oscurecida para piezas grandes
+# · "fill" el siguiente clip/foto que nadie pidió (nunca se repite nada).
+# ⛔ Nunca cuerpos, ataúd abierto ni restos en pantalla. Sin voz todavía: corre con words SIMULADAS del guion (--sim) para probar.
+import json, os, re, subprocess, unicodedata, sys, statistics
+
+sys.stdout.reconfigure(encoding="utf-8")
+SL = "fe01"
+R = f"D:/wt/{SL}/"
+S = R + f"src/{SL}/"
+PUB = R + "public/"
+WAV = PUB + f"{SL}cut.wav"
+SIM = "--sim" in sys.argv or not os.path.exists(S + "words.json")
+
+def norm(x):
+    x = unicodedata.normalize("NFD", x.lower())
+    return re.sub(r"[^a-z0-9ñ]", "", "".join(c for c in x if unicodedata.category(c) != "Mn"))
+
+if SIM:  # palabras simuladas del guion (2,55 palabras/s, pausas en punto y aparte) sólo para probar el plan antes de la voz
+    W, t = [], 0.4
+    for par in open("D:/rtmp_fe01/guion.txt", encoding="utf8").read().split("\n"):
+        for w in par.split():
+            W.append([w, round(t, 2)]); t += 1 / 2.55 + (0.28 if w[-1] in ".?!" else 0.1 if w[-1] in ",:;" else 0)
+        t += 0.55
+    END = t + 1.0
+else:
+    W = [[w, a] for w, a, b in json.load(open(S + "words.json", encoding="utf8"))]
+    END = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", WAV]).decode())
+TOK = [norm(w) for w, _ in W]
+TS = [float(s) for _, s in W]
+AVW = json.load(open(S + "avwin.json", encoding="utf8")).get("win", [])
+if not AVW:  # sin av_temprano todavía: ventanas de prueba (0 s + cada ~17 s, 4,5 s) → ~27 %
+    AVW = [{"ms": 0.0, "me": 6.0}] + [{"ms": round(x, 2), "me": round(x + 4.6, 2)} for x in [6.0 + 17.0 * k for k in range(1, int(END / 17))] if x + 4.6 < END - 3]
+cur = 0
+miss = []
+
+def at(ph, d=0.0):
+    """tiempo de la 1ª palabra de la frase, buscando hacia adelante desde el cursor (difuso: ≥75 % de las palabras en orden)."""
+    global cur
+    q = [norm(x) for x in ph.split() if norm(x)]
+    def score(i):
+        j, k, hit = i, 0, 0
+        while k < len(q) and j < len(TOK) and j < i + len(q) + 3:
+            if TOK[j] == q[k] or (len(q[k]) > 4 and TOK[j][:5] == q[k][:5]): hit += 1; k += 1; j += 1
+            elif k + 1 < len(q) and TOK[j] == q[k + 1]: k += 1
+            else: j += 1
+        return hit
+    need = max(2, int(0.75 * len(q) + 0.5)) if len(q) > 1 else 1
+    for lo, hi in ((cur, min(len(TOK), cur + 900)), (0, len(TOK))):
+        for i in range(lo, hi):
+            if score(i) >= need:
+                if lo == cur: cur = i
+                return round(TS[i] + d, 2)
+    miss.append(ph)
+    return None
+
+BEATS, OVS = [], []
+def B(ph, base, tr=None, d=0.0, why="", **kw):
+    a = at(ph, d)
+    if a is not None: BEATS.append(dict(a=a, base=base, tr=tr, ph=ph, why=why, **kw))
+def O(ph, k, L, d=0.0, **kw):
+    a = at(ph, d)
+    if a is not None: OVS.append(dict(k=k, a=a, b=round(a + L, 2), **kw))
+def T(ph, t0=0.0):
+    """segundo de una frase buscando desde t0 (la entrada de la pieza) SIN mover el cursor (para los 'at' internos de las piezas)."""
+    global cur
+    c = cur; cur = next((i for i, x in enumerate(TS) if x >= t0 - 3), 0); v = at(ph); cur = c; return v
+CEMPA, ROJO, VERDE = "#f39a1e", "#b8322a", "#3f9d5a"
+
+# =====================================================================================================================
+# 0:00 GANCHO — usted junto a la tumba, el último coche (los mejores LTX de lugar; ningún plano > ~3 s; el avatar en 0 s)
+# =====================================================================================================================
+B("Usted está parado junto a la tumba", "ltx:fe_tripie_coronas|n02", "fade", why="la tumba recién tapada con las coronas de tripié")
+B("Ya se fue el último coche", "ltx:fe_ultimo_coche|n03", "cut", why="el coche que se va por el andador")
+B("El mariachi guardó las trompetas", "img:n01", "swipeL", why="el mariachi guardando las trompetas")
+B("la tía que más lloró ya se subió", "img:e01", "cut", why="Ernesto junto a la tumba, la gente yéndose")
+B("alguien le está diciendo", "fill", "cut", why="la gente caminando a la salida")
+O("ándele, vámonos", "quote", 3.2, text="«Ándele, vámonos, ya no hay nada que hacer aquí.»", who="la familia", y=820, w=1200)
+B("Y usted voltea una última vez", "img:e02", "swipeR", why="la última mirada a la tumba")
+B("La tierra todavía está suelta", "ltx:fe_tierra_apisonada|n11", "cut", why="la tierra suelta, la bota que la aprieta")
+B("Las flores todavía están frescas", "img:n02", "cut", why="las flores frescas")
+B("Y se va pensando que ahí se queda todo", "ltx:fe_amanecer_panteon|m003", "zoom", why="el panteón quieto")
+O("Pues no", "stamp", 2.0, text="PUES NO.", col=ROJO, rot=-6, x=1400, y=330)
+B("Lo que pasa en el panteón cuando todos se van", "ltx:fe_sepulturero_lejos|n09", "cut", why="el sepulturero de espaldas, solo")
+O("cinco minutos después de que usted se sube", "big", 3.2, text="5 MIN", sub="después de que usted se va", x=1460, y=330, size=190, col=CEMPA)
+B("cinco minutos después de que usted se sube al coche", "img:n03", "cut", why="el coche saliendo por la reja")
+B("Ni la funeraria, ni el panteón, ni el padre", "bk", "zoom", why="nadie se lo cuenta")
+O("Ni la funeraria, ni el panteón, ni el padre", "chips", 3.6, items=["NI LA FUNERARIA", "NI EL PANTEÓN", "NI EL PADRE"], y=560)
+B("Yo sí se lo voy a contar", "img:e03", "portal", why="Ernesto en la oficina, mirando a cámara")
+O("Mi nombre es Ernesto Navarro", "lower", 5.5, name="DON ERNESTO NAVARRO", l2="Funerario · más de 40 años · Analco, Guadalajara")
+B("Empecé a los trece barriendo la capilla", "img:n04", "cut", why="la escoba en la capilla vieja")
+B("aquí en Analco, en Guadalajara", "ltx:fe_analco_templo|n05", "swipeL", why="la calle de Analco y el templo")
+O("aquí en Analco, en Guadalajara", "mapa", 4.4, city="gdl", pins=[{"at": "aquí en Analco", "l": "analco", "tx": "ANALCO"}], title="Guadalajara", x=1380, y=520, sc=0.72)
+B("enterré a más de seis mil personas", "bk", "zoom", why="contador: 6.000")
+O("enterré a más de seis mil personas", "cuenta", 3.4, from_=0, to=6000, pre="", suf="+", sub="familias que despedí", size=210)
+B("aquí y en San Antonio, Texas", "fill", "cut", why="el panteón")
+O("aquí y en San Antonio, Texas", "mapa", 3.4, city="sa", pins=[{"at": "en San Antonio, Texas", "l": "westside", "tx": "WEST SIDE"}], title="San Antonio, Texas", x=1400, y=520, sc=0.66)
+B("qué pasa con la fosa", "fill", "cut", why="la fosa")
+B("con las flores, con el papel", "fill", "cut", why="las flores")
+B("esa misma tarde, esa noche", "ltx:fe_reja_cierra|n30", "swipeR", why="la reja que se cierra al anochecer")
+O("esa misma tarde, esa noche, a los nueve días", "chips", 5.0, items=["ESA TARDE", "ESA NOCHE", "9 DÍAS", "6 AÑOS", "10 AÑOS"], y=880)
+B("lo último que le voy a contar es lo que nadie hace", "bk", "zoom", why="la promesa")
+O("lo último que le voy a contar es lo que nadie hace", "stamp", 3.0, text="LO QUE NADIE HACE", col=ROJO, rot=-5, x=960, y=540, size=110)
+B("Y es lo único que de verdad cuida", "fill", "cut", why="la tumba cuidada")
+B("Siéntese", "fill", "cut", why="la oficina")
+O("lo que yo le diría a mi propia madre", "quote", 4.0, text="Lo que yo le diría a mi propia madre.", who="Don Ernesto", y=820, w=1100)
+
+# Presentación: la oficina de Don Refugio
+B("Esta oficina era de mi papá", "ltx:fe_oficina_manana|e04", "portal", why="la oficina por la mañana: el escritorio, el crucifijo")
+B("Don Refugio Navarro. Abrió Funerales Navarro", "img:e04", "cut", why="Ernesto en el escritorio de su papá")
+O("Abrió Funerales Navarro en mil novecientos cincuenta y ocho", "foto", 5.0, src=f"{SL}/img/f02.jpg", pie="Funerales Navarro · 1958", x=1360, y=520, w=620, rot=4)
+B("a dos cuadras del templo de San Sebastián", "img:n05", "cut", why="el templo de Analco")
+B("ese crucifijo lo colgó él", "img:n06", "cut", why="el crucifijo en la pared")
+B("en esos cajones están los expedientes", "img:e05", "swipeL", why="Ernesto abre el archivero verde")
+B("Hoy la funeraria la lleva mi hijo Rafa", "fill", "cut", why="la funeraria")
+O("Hoy la funeraria la lleva mi hijo Rafa", "tag", 3.0, x=1300, y=420, text="RAFA", sub="mi hijo · lleva la funeraria", col=CEMPA)
+B("a tomarme un café de olla", "ltx:fe_cafe_olla|e06", "cut", why="el café de olla servido en el escritorio")
+B("y a contarle a usted lo que en cuarenta años", "img:e06", "cut", why="Ernesto con su taza")
+B("la última noche de Día de Muertos que pasé con mi papá", "img:n07", "fade", why="la noche de veladoras de 1999")
+O("Fue en mil novecientos noventa y nueve", "foto", 5.0, src=f"{SL}/img/f01.jpg", pie="Mi papá, Don Refugio · 1999", x=1360, y=500, w=600, rot=-4)
+B("Esa noche él me dijo una cosa", "bk", "zoom", why="el recuerdo")
+B("Lo que pasa en los primeros veinte minutos", "fill", "cut", why="el panteón recién vacío")
+O("Lo que pasa en los primeros veinte minutos", "big", 3.0, text="20 MIN", sub="los primeros", x=1440, y=340, size=170, col=CEMPA)
+
+# =====================================================================================================================
+# 1 · EL SEPULTURERO
+# =====================================================================================================================
+B("Número uno. El sepulturero", "bk", "zoom", why="capítulo 1")
+O("Número uno. El sepulturero", "cap", 3.6, n="1", title="El sepulturero")
+B("El sepulturero es un señor con camisa de trabajo", "img:e07", "cut", why="Ernesto con el sepulturero de camisa de trabajo")
+B("una pala con el mango pulido", "img:n08", "cut", why="el mango pulido de la pala")
+B("con la pala recargada en un árbol", "ltx:fe_pala_arbol|n09", "swipeL", why="la pala recargada en el árbol")
+B("Él no se acerca mientras la familia está", "fill", "cut", why="el sepulturero lejos, esperando")
+O("Es una regla que nadie escribe", "stamp", 2.8, text="UNA REGLA QUE NADIE ESCRIBE", col=CEMPA, rot=-4, x=960, y=820, size=70)
+B("En cuanto se va el último coche, empieza a trabajar", "fill", "cut", why="empieza el trabajo")
+B("unas tapas de concreto", "img:n10", "cut", why="las tapas de concreto")
+B("para que la tierra no caiga directo", "ltx:fe_losas_concreto|n10", "cut", why="las losas cubriendo la fosa")
+B("Luego se echa la tierra", "img:n11", "cut", why="la tierra que cae")
+B("Paletada por paletada", "img:e09", "swipeR", why="Ernesto mirando cómo echan la tierra")
+B("Y se apisona", "fill", "cut", why="la tierra apisonada")
+B("Mi papá le decía a cada sepulturero nuevo", "bk", "zoom", why="el dicho de Don Refugio")
+O("La tierra se echa despacio", "dicho", 5.4, text="La tierra se echa despacio, como si la familia todavía estuviera viendo.")
+B("los hombres se quedan y echan la tierra ellos mismos", "img:n12", "cut", why="los hombres del pueblo echando la tierra")
+B("Es una manera de despedirse con las manos", "fill", "cut", why="manos y tierra")
+B("Aquí en la ciudad eso se fue perdiendo", "fill", "swipeL", why="el panteón de ciudad")
+B("porque hay que dar de comer en la casa", "fill", "cut", why="la familia se va")
+O("No es falta de cariño", "stamp", 2.4, text="NO ES FALTA DE CARIÑO", col=VERDE, rot=-5, x=1400, y=780, size=64)
+B("y si puede, una propina", "img:e08", "cut", why="Ernesto le da la mano al sepulturero")
+B("las manos llenas de tierra", "img:n13", "cut", why="las manos con tierra")
+B("la tumba queda como un montoncito de tierra", "img:e10", "swipeR", why="el montoncito de tierra más alto que el suelo")
+O("Así debe quedar", "stamp", 2.4, text="ASÍ DEBE QUEDAR", col=VERDE, rot=-6, x=1420, y=320)
+B("en la oficina del panteón pasa otra cosa", "fill", "portal", why="la oficina del panteón")
+B("Un empleado agarra el permiso de inhumación", "img:n14", "cut", why="el permiso de inhumación sobre el mostrador")
+O("el permiso de inhumación", "recibo", 9.0, title="Libro de registro", folio="Panteón municipal",
+  rows=[{"at": "Nombre, fecha", "tx": "Nombre y fecha"}, {"at": "sección", "tx": "Sección"}, {"at": "fila", "tx": "Fila"}, {"at": "número de fosa", "tx": "Número de fosa"}],
+  sello={"at": "número de fosa", "tx": "REGISTRADO"})
+B("lo anota en el libro de registro del panteón", "ltx:fe_libro_registro|n15", "cut", why="el libro de registro abierto")
+B("libros grandotes, de pasta dura", "img:n15", "cut", why="los libros de pasta dura")
+B("Hoy ya muchos lo pasan a la computadora", "fill", "cut", why="la oficina")
+O("esa línea en el libro es lo único que dice", "ficha", 5.0, kicker="LO ÚNICO OFICIAL", title="Una línea en el libro", sub="dice que su gente está ahí")
+B("esa línea en el libro es lo único que dice", "bk:n15", "zoom", why="ficha")
+B("llegan al panteón buscando a un abuelo", "fill", "cut", why="gente buscando entre las tumbas")
+B("Vaya primero a la administración", "img:n16", "cut", why="la ventanilla de la administración")
+O("Vaya primero a la administración", "chips", 5.0, items=["NOMBRE COMPLETO", "AÑO", "ACTA DE DEFUNCIÓN"], y=880)
+B("Eso le ahorra un día entero", "fill", "cut", why="el sol en el panteón")
+B("me mandaba al panteón con los papeles", "fill", "cut", why="los papeles")
+B("no te regreses sin el sello", "img:e11", "cut", why="Ernesto con el fólder sellado")
+O("no te regreses sin el sello", "dicho", 4.4, text="Ernesto, no te regreses sin el sello.")
+B("Porque un papel sin sello", "ltx:fe_sello_papel|e11", "cut", why="el sello sobre el permiso")
+B("por la Calzada Independencia", "ltx:fe_camion_calzada|n17", "swipeL", why="el camión por la Calzada")
+O("por la Calzada Independencia", "mapa", 4.4, city="gdl", pins=[{"at": "por la Calzada", "l": "analco", "tx": "ANALCO"}, {"at": "con el fólder", "l": "mezquitan", "tx": "MEZQUITÁN"}], route={"at": "por la Calzada", "from": "analco", "to": "mezquitan"}, x=1380, y=520, sc=0.72)
+B("con el fólder bajo el brazo", "img:n18", "cut", why="el fólder bajo el brazo")
+B("Y eso me lleva a la segunda cosa", "fill", "cut", why="transición")
+
+# =====================================================================================================================
+# 2 · LA LÁPIDA NO SE PONE ESE DÍA
+# =====================================================================================================================
+B("Número dos. La lápida no se pone ese día", "bk", "zoom", why="capítulo 2")
+O("Número dos. La lápida no se pone ese día", "cap", 3.6, n="2", title="La lápida no se pone ese día")
+B("Muchas familias me preguntaban", "fill", "cut", why="la familia en la oficina")
+B("La tierra que se acaba de echar está suelta", "img:e12", "cut", why="Ernesto señala la tierra suelta")
+B("Con las lluvias, con el peso", "ltx:fe_lluvia_tumbas|n20", "swipeR", why="la lluvia sobre las tumbas")
+B("a los pocos meses la lápida se le chuequea", "ltx:fe_lapida_chueca|n19", "cut", why="la lápida chueca y rajada")
+B("se le cuartea, o se le hunde de un lado", "img:n19", "cut", why="la lápida hundida")
+B("Por eso los marmoleros serios le dicen que espere", "img:e13", "cut", why="Ernesto con el marmolero")
+O("hasta que pase la temporada de lluvias", "ficha", 5.0, kicker="GUADALAJARA", title="Temporada de lluvias", dato="junio → septiembre", sub="esa agua acomoda la tierra")
+B("Aquí en Guadalajara llueve fuerte", "img:n20", "cut", why="el aguacero")
+B("no compre la lápida en la funeraria el mismo día", "img:e14", "portal", why="Ernesto: no el mismo día")
+O("no compre la lápida en la funeraria el mismo día", "stamp", 3.0, text="NO EL MISMO DÍA", col=ROJO, rot=-6, x=1420, y=330)
+B("Ese día usted no está para decidir nada", "fill", "cut", why="el día del entierro")
+B("letras doradas y una foto en porcelana", "img:n22", "cut", why="las letras doradas")
+B("una foto en porcelana", "img:n21", "cut", why="la foto en porcelana")
+B("Espere. La lápida puede esperar", "fill", "cut", why="la tumba de tierra")
+B("Se llamaba la señora Delgado", "img:e15", "swipeL", why="Ernesto recordando a la señora Delgado")
+O("lo que le cotizaron fueron once mil dólares", "cuenta", 4.0, from_=0, to=11000, pre="US$", sub="lo que le cotizaron a la señora Delgado", size=190, col=ROJO)
+B("lo que le cotizaron fueron once mil dólares", "bk", "zoom", why="contador")
+B("Por ahora nada más le digo esto", "fill", "cut", why="la lápida")
+O("la lápida puede esperar", "stamp", 2.6, d=0.0, text="LA LÁPIDA PUEDE ESPERAR", col=VERDE, rot=-4, x=960, y=820, size=72)
+
+# =====================================================================================================================
+# 3 · LAS FLORES
+# =====================================================================================================================
+B("Número tres. Las flores", "bk", "zoom", why="capítulo 3")
+O("Número tres. Las flores", "cap", 3.4, n="3", title="Las flores")
+B("coronas, ramos, cempasúchil, gladiolas, rosas blancas", "img:n23", "cut", why="las coronas y los ramos")
+B("Y piensa que ahí se quedan", "fill", "cut", why="las flores")
+B("Las flores aguantan", "img:e16", "cut", why="Ernesto junto a las flores al sol")
+B("Luego se secan, se pudren", "ltx:fe_flores_secas|n24", "swipeL", why="las flores secas")
+B("el agua de los floreros se estanca", "img:n24", "cut", why="el agua estancada")
+B("el mosco del dengue se cría justamente ahí", "img:n25", "cut", why="el mosco")
+O("el mosco del dengue", "ficha", 5.0, kicker="JALISCO · SALUD", title="Agua estancada = mosco", dato="dengue", sub="arena en vez de agua")
+B("que llene los floreros con arena", "ltx:fe_florero_arena|e17", "cut", why="la arena en el florero")
+B("voltean los floreros boca abajo", "img:n26", "cut", why="floreros boca abajo")
+B("El personal del panteón", "img:e17", "swipeR", why="Ernesto con el florero de arena")
+B("las ponen en carretillas", "ltx:fe_carretilla_flores|n27", "cut", why="la carretilla con flores secas")
+B("las de tripié, casi siempre se retiran primero", "img:n28", "cut", why="las coronas de tripié")
+B("esas flores ya hicieron su trabajo", "fill", "cut", why="las flores")
+B("Un ramito de cempasúchil", "ltx:fe_ramito_cempa|e18", "cut", why="el ramito de cempasúchil")
+B("de los que venden afuera del panteón", "img:e18", "cut", why="Ernesto con el ramito")
+O("Eso dice mucho más que una corona", "stamp", 2.8, text="UN RAMITO > UNA CORONA", col=CEMPA, rot=-4, x=1400, y=780, size=66)
+
+# =====================================================================================================================
+# 4 · QUIÉN CUIDA EL PANTEÓN DE NOCHE
+# =====================================================================================================================
+B("Número cuatro. Quién cuida el panteón de noche", "bk", "zoom", why="capítulo 4")
+O("Número cuatro. Quién cuida el panteón de noche", "cap", 3.8, n="4", title="Quién cuida el panteón de noche")
+B("La gente cree que el panteón de noche está solo", "ltx:fe_rondin_lampara|n29", "fade", why="la lámpara del velador entre los ángeles")
+B("En los panteones municipales hay veladores", "img:e19", "cut", why="Ernesto con el velador")
+B("hacen rondines con una lámpara", "img:n29", "cut", why="la lámpara")
+B("cierran la reja", "img:n30", "cut", why="la reja con cadena")
+B("tienen un perro o dos", "ltx:fe_perro_velador|n29", "swipeL", why="el perro en la caseta")
+B("conocí a un velador del Panteón de Mezquitán", "fill", "cut", why="el panteón de noche")
+O("Se llamaba don Chencho", "tag", 3.4, x=1320, y=420, text="DON CHENCHO", sub="velador de Mezquitán · 20+ años", col=CEMPA)
+O("Que lo que da miedo son los vivos", "quote", 4.6, d=-2.5, text="De noche el panteón no da miedo. Lo que da miedo son los vivos.", who="don Chencho, velador", y=560)
+B("Lo que pasa de noche en un panteón no son fantasmas", "bk", "zoom", why="la frase de don Chencho")
+B("Se roban las placas de bronce", "ltx:fe_placa_arrancada|e20", "cut", why="la placa arrancada")
+B("las cruces de metal", "img:n31", "cut", why="cruces de metal")
+B("los floreros de latón", "img:n32", "cut", why="floreros de latón")
+B("las rejitas que rodean las tumbas", "img:n33", "cut", why="rejitas")
+O("para venderlos por kilo", "stamp", 2.4, text="POR KILO", col=ROJO, rot=-7, x=1420, y=330)
+B("Ha salido en las noticias de aquí", "img:e20", "swipeR", why="Ernesto ante la tumba sin placa")
+B("letras grabadas en la misma piedra", "img:n34", "cut", why="letras en la piedra")
+B("el Panteón de Mezquitán abrió sus puertas", "ltx:fe_mezq_portada_dia|n35", "portal", why="la portada de cantera de Mezquitán")
+O("el Panteón de Mezquitán abrió sus puertas", "ficha", 5.6, kicker="PANTEÓN DE MEZQUITÁN", title="Abrió un 2 de noviembre", dato="1896", sub="un Día de Muertos")
+B("sobre la Calzada Federalismo", "img:n35", "cut", why="la Calzada Federalismo")
+O("sobre la Calzada Federalismo", "mapa", 4.0, city="gdl", pins=[{"at": "sobre la Calzada", "l": "mezquitan", "tx": "MEZQUITÁN"}], title="Calzada Federalismo", x=1380, y=520, sc=0.72)
+B("Ahí hay tumbas de más de cien años", "ltx:fe_angeles_cantera|e21", "cut", why="los ángeles de cantera")
+B("mausoleos con vitrales", "img:n36", "cut", why="vitrales")
+B("tumbas que nadie ha visitado en cincuenta años", "img:e21", "cut", why="Ernesto en una tumba vieja")
+B("porque es lo que más me duele de este oficio", "fill", "cut", why="la sección vieja")
+
+# Interludio: 1999 con Don Refugio
+B("Pero antes déjeme contarle lo de mi papá", "bk", "fade", why="el recuerdo de 1999")
+O("Mil novecientos noventa y nueve. Primero de noviembre", "lugar", 4.6, tx="Panteón de Mezquitán", sub="1 de noviembre de 1999")
+B("Mi papá ya tenía más de setenta años", "img:n37", "cut", why="el bastón de Don Refugio")
+O("Por eso. Porque ya no estoy para eso", "dicho", 4.2, text="Por eso. Porque ya no estoy para eso.")
+B("Y él me miró por encima de los lentes", "fill", "cut", why="los lentes")
+B("Agarramos dos sillas plegables", "img:e22", "cut", why="Ernesto con las sillas plegables")
+B("un termo de café de olla", "img:n38", "cut", why="el termo")
+B("pan de muerto, y nos fuimos", "img:n39", "cut", why="el pan de muerto")
+B("con las veladoras ya bajitas", "img:n40", "fade", why="las veladoras bajitas a las 2 a. m.")
+O("tú ya sabes dónde está el papel de esta tumba", "dicho", 4.6, text="Ernesto, ¿tú ya sabes dónde está el papel de esta tumba?")
+B("Y yo no supe qué contestarle", "fill", "cut", why="la noche")
+
+# =====================================================================================================================
+# 5 · EL PAPEL QUE NADIE LEE
+# =====================================================================================================================
+B("Número cinco. El papel que nadie lee", "bk", "zoom", why="capítulo 5")
+O("Número cinco. El papel que nadie lee", "cap", 3.6, n="5", title="El papel que nadie lee")
+B("le dan un papel", "fill", "cut", why="el papel")
+B("Puede ser un título, una constancia", "img:n41", "cut", why="títulos y constancias")
+O("Puede ser un título, una constancia", "chips", 4.0, items=["TÍTULO", "CONSTANCIA", "RECIBO", "CONTRATO"], y=880)
+B("si esa fosa es a perpetuidad o es temporal", "img:e23", "cut", why="Ernesto lee el título")
+O("si esa fosa es a perpetuidad o es temporal", "recibo", 11.0, title="Título de fosa", folio="Sección · Fila · Número",
+  rows=[{"at": "A perpetuidad quiere decir", "tx": "A perpetuidad", "v": "para siempre*", "ok": 1}, {"at": "Temporal quiere decir", "tx": "Temporal", "v": "por años"}],
+  sello={"at": "A eso se le dice el refrendo", "tx": "REFRENDO"})
+B("A perpetuidad quiere decir", "img:n42", "cut", why="el papel a perpetuidad")
+B("Temporal quiere decir", "fill", "cut", why="gavetas")
+B("las gavetas de uso temporal", "img:n43", "cut", why="las gavetas")
+O("Hay fuentes que hablan de diez años", "refrendo", 6.0, from_=2016, years=10, venceAt="para las gavetas", title="Gaveta temporal", label="10 AÑOS · REFRENDO")
+B("Hay fuentes que hablan de diez años", "bk:n43", "zoom", why="las fichas del calendario")
+B("la ley de ingresos del municipio", "img:n44", "cut", why="la ley de ingresos")
+B("con su papel en la mano", "img:e24", "cut", why="Ernesto con el papel en la mano")
+B("guarda el papel en un cajón", "img:e25", "swipeL", why="el papel al cajón")
+B("en una bolsa de plástico con las actas", "img:n45", "cut", why="la bolsa con actas")
+B("el hermano que vive en Tijuana", "img:n46", "cut", why="el hermano en Tijuana")
+O("Y diez años después nadie sabe dónde está", "stamp", 2.6, text="¿DÓNDE ESTÁ?", col=ROJO, rot=-6, x=1420, y=330)
+B("no sabía dónde estaba el papel", "img:e26", "cut", why="Ernesto buscando el papel")
+
+# =====================================================================================================================
+# 6 · EL REFRENDO, Y QUÉ PASA SI NO SE PAGA
+# =====================================================================================================================
+B("Número seis. El refrendo", "bk", "zoom", why="capítulo 6")
+O("Número seis. El refrendo", "cap", 3.6, n="6", title="El refrendo", sub="y qué pasa si no se paga")
+B("El refrendo es el pago", "fill", "cut", why="el pago")
+B("Se paga ante el municipio", "img:n47", "cut", why="la ventanilla del municipio")
+B("Si la fosa es temporal y se vence el plazo", "fill", "cut", why="la fosa temporal")
+B("llevarlos a un osario", "img:n48", "cut", why="el osario (pared de nichos cerrados)")
+B("vuelve a quedar libre para otra familia", "fill", "cut", why="el lugar libre")
+B("El reglamento de panteones de Guadalajara", "bk", "zoom", why="el reglamento")
+O("El reglamento de panteones de Guadalajara", "ficha", 6.4, kicker="REGLAMENTO DE PANTEONES · GDL", title="Exhumación prematura", dato="antes de 6 años", sub="mayores de 15 · 5 años si es menor de 15")
+B("Por eso los plazos de las fosas temporales", "fill", "cut", why="las fosas")
+B("Eso tiene su propio video", "fill", "cut", why="respeto")
+B("No llega un camión a media noche", "img:n49", "cut", why="el panteón tranquilo")
+B("Llega un aviso", "img:e27", "cut", why="Ernesto lee el aviso")
+B("una lista en la entrada del panteón", "ltx:fe_aviso_lista|n50", "cut", why="la lista pegada en la entrada")
+B("una notificación al domicilio", "img:n50", "cut", why="la notificación")
+B("una casa donde ya nadie lo conoce", "img:n51", "swipeR", why="la casa vacía")
+B("apunte la fecha en que se vence", "img:e28", "portal", why="Ernesto apunta la fecha")
+B("En el calendario de la cocina", "ltx:fe_calendario_cocina|n52", "cut", why="el calendario de la cocina")
+O("En el calendario de la cocina", "chips", 4.0, items=["CALENDARIO", "TELÉFONO", "LIBRETA"], y=880)
+B("Que no sea un solo hermano el que sabe", "img:n52", "cut", why="la familia")
+
+# =====================================================================================================================
+# 7 · A LOS NUEVE DÍAS
+# =====================================================================================================================
+B("Número siete. Lo que pasa a los nueve días", "bk", "zoom", why="capítulo 7")
+O("Número siete. Lo que pasa a los nueve días", "cap", 3.8, n="7", title="Lo que pasa a los nueve días")
+B("Volvamos al principio", "fill", "cut", why="la casa")
+B("Nueve días de rosario", "img:n53", "cut", why="el rosario")
+B("Se reza en la casa", "img:e29", "cut", why="Ernesto en el novenario")
+B("se pone un altarcito con la foto", "ltx:fe_novenario_altar|n53", "cut", why="el altarcito con veladora")
+B("se levanta la cruz", "img:n54", "cut", why="la cruz")
+B("Muchas familias, al terminar el novenario", "fill", "swipeL", why="el panteón")
+B("Y muchas veces se espantan", "fill", "cut", why="la tumba a los 9 días")
+B("La tierra se hundió un poco", "img:n55", "cut", why="la tierra hundida")
+B("Hay hojas secas encima", "img:n56", "cut", why="hojas secas")
+O("No pasó nada malo", "stamp", 2.6, text="NO PASÓ NADA MALO", col=VERDE, rot=-5, x=1400, y=330, size=80)
+B("No pasó nada malo", "fill", "cut", why="la tumba")
+B("llevar una escobita", "img:e30", "cut", why="Ernesto con la escobita")
+B("un trapo, una cubeta con agua", "ltx:fe_escobita_cubeta|n57", "cut", why="la señora limpiando la tumba")
+B("señoras de ochenta años hincadas", "img:e31", "cut", why="Ernesto mira a una señora hincada")
+B("quitando hierba con las manos", "img:n58", "cut", why="las manos quitando hierba")
+B("Ahí está su recuerdo", "fill", "cut", why="la tumba limpia")
+
+# =====================================================================================================================
+# 8 · EN ESTADOS UNIDOS ES OTRA COSA
+# =====================================================================================================================
+B("Número ocho. En Estados Unidos es otra cosa", "bk", "zoom", why="capítulo 8")
+O("Número ocho. En Estados Unidos es otra cosa", "cap", 3.8, n="8", title="En Estados Unidos es otra cosa")
+B("Yo trabajé veinticinco años", "fill", "cut", why="San Antonio")
+O("Familias de Guadalupe Street", "mapa", 5.0, city="sa", pins=[{"at": "Guadalupe Street", "l": "guadalupe", "tx": "GUADALUPE ST"}, {"at": "de Zarzamora", "l": "zarzamora", "tx": "ZARZAMORA"}, {"at": "de Commerce", "l": "westside", "tx": "WEST SIDE"}], title="San Antonio, Texas", x=1380, y=520, sc=0.7)
+B("Guadalupe Street, de Zarzamora", "img:n59", "cut", why="la calle del West Side")
+B("allá el cementerio cierra", "img:e32", "cut", why="Ernesto ante la reja del cementerio de Texas")
+O("allá el cementerio cierra", "big", 2.8, text="1", sub="el cementerio cierra", x=1500, y=320, size=180, col=CEMPA)
+B("el guardia le va a pedir que se vaya", "img:n60", "cut", why="el guardia")
+O("allá casi nunca se ve al sepulturero con pala", "big", 2.8, text="2", sub="no hay pala: hay máquina", x=1500, y=320, size=180, col=CEMPA)
+B("allá casi nunca se ve al sepulturero con pala", "fill", "cut", why="el cementerio de pasto")
+B("Se usa una máquina, una retroexcavadora chiquita", "img:n61", "cut", why="la retroexcavadora chiquita")
+B("Se despide en una carpa", "img:e33", "swipeL", why="Ernesto bajo la carpa")
+B("Y luego llega la máquina", "fill", "cut", why="la máquina")
+O("allá casi todos los cementerios piden", "big", 2.8, text="3", sub="la caja de concreto", x=1500, y=320, size=180, col=CEMPA)
+B("Le dicen grave liner o vault", "img:e34", "cut", why="Ernesto junto a la bóveda de concreto (cerrada, vacía)")
+B("Es como un cajón de concreto", "img:n62", "cut", why="el cajón de concreto")
+B("pueda pasar parejito", "img:n63", "cut", why="la podadora en el pasto parejo")
+O("eso no lo pide la ley del gobierno", "stamp", 3.2, text="LO PIDE EL CEMENTERIO, NO LA LEY", col=ROJO, rot=-4, x=960, y=820, size=64)
+B("eso no lo pide la ley del gobierno", "bk:n62", "zoom", why="sello")
+B("La ley federal de allá", "img:n64", "cut", why="la regla federal")
+O("La ley federal de allá", "ficha", 5.6, kicker="FTC · LEY FEDERAL DE EE. UU.", title="No le pueden decir que la ley lo obliga", sub="si no es cierto")
+B("Y esa caja cuesta", "img:e35", "cut", why="Ernesto con la cotización")
+O("Y esa caja cuesta", "recibo", 9.0, title="Cementerio · San Antonio", folio="cotización",
+  rows=[{"at": "una bóveda sencilla anda", "tx": "Bóveda sencilla", "v": "US$1,500-1,700"}, {"at": "abrir y cerrar la fosa", "tx": "Abrir y cerrar la fosa", "v": "+US$1,000"}],
+  total={"at": "pasa de mil dólares", "tx": "Antes de la lápida", "v": "+US$2,500"})
+B("abrir y cerrar la fosa", "img:n65", "cut", why="la fosa en el pasto")
+O("Y cuarto: las flores", "big", 2.8, text="4", sub="las flores", x=1500, y=320, size=180, col=CEMPA)
+B("todo lo que no esté en un florero permitido, se va", "img:e36", "cut", why="Ernesto con el florero permitido")
+B("Muñequitos, velas, banderitas, fotos", "img:n66", "cut", why="los muñequitos y banderitas")
+B("se encuentran todo en la basura", "img:n67", "cut", why="todo en la basura")
+B("En el San Fernando", "img:n68", "swipeR", why="el San Fernando")
+O("En el San Fernando", "mapa", 4.0, city="sa", pins=[{"at": "En el San Fernando", "l": "sanfer1", "tx": "SAN FERNANDO"}], title="West Side", x=1380, y=520, sc=0.7)
+B("Pero siempre con su horario", "fill", "cut", why="el horario")
+
+# =====================================================================================================================
+# 9 · LA NOCHE DEL 1 AL 2 DE NOVIEMBRE
+# =====================================================================================================================
+B("Número nueve. La noche del primero al dos de noviembre", "bk", "zoom", why="capítulo 9")
+O("Número nueve. La noche del primero al dos de noviembre", "cap", 4.0, n="9", title="La noche del 1 al 2 de noviembre")
+B("Ahora sí, la noche de la que todos quieren saber", "fill", "cut", why="la noche")
+B("el día de los santos, de los niños, los angelitos", "img:n69", "cut", why="los angelitos")
+O("El primero de noviembre, en la tradición", "chips", 5.4, items=["1 NOV · LOS ANGELITOS", "2 NOV · LOS FIELES DIFUNTOS"], y=880)
+B("la familia pasa la noche en el panteón", "ltx:fe_sillas_termo|n38", "cut", why="las sillas y el termo junto a la tumba")
+B("En Guadalajara, en los panteones grandes", "fill", "cut", why="el panteón grande")
+B("con cubetas, con brochas, con pintura blanca", "img:n70", "cut", why="brochas y cal")
+B("Le pintan la tumba a su gente", "ltx:fe_pintar_cal|e37", "cut", why="la tumba pintada de cal")
+B("Le quitan la hierba", "img:e37", "cut", why="Ernesto pintando la tumba")
+B("Le ponen cempasúchil", "img:e38", "cut", why="Ernesto con el cempasúchil")
+B("Mucho cempasúchil", "ltx:fe_cempa_montones|n71", "swipeL", why="montones de cempasúchil")
+B("les marca el camino a los difuntos", "img:n71", "cut", why="el camino de pétalos")
+B("Prenden veladoras", "ltx:fe_veladoras_noche|e39", "fade", why="cientos de veladoras")
+B("Llevan la comida que le gustaba", "img:e39", "cut", why="Ernesto con la comida")
+B("A veces contratan un mariachi", "ltx:fe_mariachi_lejos|n72", "cut", why="el mariachi a lo lejos")
+B("Y platican. Platican con él", "img:n72", "cut", why="la familia platicando")
+B("mi papá y yo estábamos sentados frente a la tumba", "fill", "fade", why="1999")
+O("mi papá y yo estábamos sentados frente a la tumba", "lugar", 4.0, tx="Mezquitán · tumba de mi abuela", sub="noche del 1 de noviembre de 1999")
+B("una veladora, un pan", "ltx:fe_pan_cafe_tumba|n39", "cut", why="el pan y el café en la tumba")
+B("una tacita de café", "img:e40", "cut", why="Ernesto con la tacita")
+B("Le tocaron Amor eterno", "img:n73", "cut", why="el mariachi de la tumba de junto")
+B("Y mi papá se quedó callado toda la canción", "fill", "cut", why="silencio")
+O("La gente no viene al panteón por los muertos", "dicho", 7.0, d=-1.0, text="Ernesto, fíjate bien. La gente no viene al panteón por los muertos. Viene porque no sabe dónde más poner lo que siente.")
+B("La gente no viene al panteón por los muertos", "img:n74", "cut", why="la gente en el panteón")
+B("Y luego me dijo la otra cosa", "fill", "cut", why="la noche")
+
+# =====================================================================================================================
+# 10 · LAS OFRENDAS
+# =====================================================================================================================
+B("Número diez. Las ofrendas", "bk", "zoom", why="capítulo 10")
+O("Número diez. Las ofrendas", "cap", 3.6, n="10", title="Las ofrendas", sub="y qué pasa con la comida")
+B("qué pasa con la comida que se deja en las tumbas", "ltx:fe_ofrenda_comida|n75", "cut", why="la ofrenda en la tumba")
+B("El mole, los tamales, la fruta", "img:n75", "cut", why="mole y tamales")
+B("la cervecita, el tequila, los cigarros", "img:n76", "cut", why="tequila y cigarros")
+B("La tradición dice que los difuntos vienen", "fill", "cut", why="la ofrenda")
+B("la fruta de la ofrenda, al otro día", "img:n77", "cut", why="la fruta")
+B("se la llevan los perros, los pájaros", "img:n78", "cut", why="perros y pájaros")
+B("Otra parte se la llevan personas", "fill", "cut", why="el panteón")
+B("sacan toneladas de basura", "img:e42", "cut", why="Ernesto ante la basura del 3 de noviembre")
+O("sacan toneladas de basura", "stamp", 2.4, text="TONELADAS", col=ROJO, rot=-6, x=1420, y=330)
+B("Flores secas, veladoras, platos, botellas", "ltx:fe_basura_dos_nov|n79", "cut", why="las bolsas de basura")
+B("lleve poquito, lleve lo que le gustaba", "fill", "cut", why="poquito")
+O("lleve poquito, lleve lo que le gustaba", "chips", 4.0, items=["LLEVE POQUITO", "LO QUE LE GUSTABA", "REPÁRTALO"], y=880)
+B("Doña Cuca, que hoy tiene ochenta y un años", "fill", "cut", why="Analco")
+O("Doña Cuca, que hoy tiene ochenta y un años", "tag", 3.4, x=1320, y=420, text="DOÑA CUCA", sub="81 años · Analco", col=CEMPA)
+B("repartir los tamales de la ofrenda", "img:e41", "cut", why="Ernesto con los tamales")
+O("a mi viejo le hubiera gustado más así", "quote", 3.8, text="A mi viejo le hubiera gustado más así.", who="Doña Cuca", y=820, w=1100)
+B("Ella sí sabe dónde está cada papel", "img:n79", "cut", why="el papel")
+
+# =====================================================================================================================
+# 11 · LAS TUMBAS OLVIDADAS
+# =====================================================================================================================
+B("Número once. Las tumbas olvidadas", "bk", "zoom", why="capítulo 11")
+O("Número once. Las tumbas olvidadas", "cap", 3.6, n="11", title="Las tumbas olvidadas")
+B("Esto es lo que más me duele de este oficio", "fill", "cut", why="la sección vieja")
+B("Camine un día por el Panteón de Mezquitán", "fill", "cut", why="Mezquitán")
+B("Va a ver ángeles de cantera sin nariz", "img:n80", "cut", why="ángel sin nariz")
+B("Capillitas con la puerta de fierro oxidada", "ltx:fe_capilla_oxidada|e43", "cut", why="la capilla oxidada")
+B("Nombres que ya no se leen", "ltx:fe_nombre_borrado|e44", "cut", why="el nombre borrado")
+B("Fechas de mil novecientos diez", "img:n81", "cut", why="1910")
+O("Fechas de mil novecientos diez", "big", 3.0, text="1910", sub="nadie viene hace 50 años", x=1460, y=330, size=170, col="#cdbfa6")
+B("que nadie ha visitado en cincuenta años", "img:e43", "cut", why="Ernesto en la capilla vieja")
+B("Los nietos se fueron a Estados Unidos", "img:n82", "swipeL", why="la familia que se fue")
+B("Y nadie sabe dónde está la tumba", "img:e44", "cut", why="Ernesto ante el nombre borrado")
+O("la tierra, la hierba, el tiempo y el olvido", "quote", 5.0, text="La tierra, la hierba, el tiempo y el olvido no leen papeles.", who="Don Ernesto", y=560)
+B("la tierra, la hierba, el tiempo y el olvido", "img:n84", "zoom", why="la hierba sobre la tumba")
+B("Venían con un nombre, un pueblo", "img:n83", "cut", why="la familia de San Antonio con un nombre")
+O("nadie había pagado el refrendo desde hacía treinta años", "stamp", 3.0, text="30 AÑOS SIN REFRENDO", col=ROJO, rot=-5, x=960, y=820, size=74)
+B("nadie había pagado el refrendo", "fill", "cut", why="la tumba perdida")
+B("Y eso me lleva a lo último", "fill", "cut", why="transición")
+
+# =====================================================================================================================
+# 12 · LO QUE NADIE HACE (el sobre amarillo + 5 pasos)
+# =====================================================================================================================
+B("Número doce. Lo que nadie hace", "bk", "zoom", why="capítulo 12")
+O("Número doce. Lo que nadie hace", "cap", 3.6, n="12", title="Lo que nadie hace")
+B("ya cuando empezaba a clarear", "img:n85", "fade", why="el amanecer en el panteón")
+B("sacó de la bolsa de su saco un sobre amarillo", "ltx:fe_sobre_amarillo|e45", "cut", why="las manos sacan el sobre amarillo")
+B("Un sobre viejo, doblado", "img:e45", "cut", why="Ernesto con el sobre amarillo")
+B("Adentro estaba el papel de la tumba", "img:n86", "cut", why="el papel de la tumba")
+O("Adentro estaba el papel de la tumba", "recibo", 11.0, title="Título · Panteón de Mezquitán", folio="tumba de mi abuela",
+  rows=[{"at": "con el número de la fosa", "tx": "Número de fosa", "ok": 1}, {"at": "la sección", "tx": "Sección", "ok": 1}, {"at": "la fecha", "tx": "Fecha", "ok": 1}],
+  sello={"at": "Y atrás, con su letra", "tx": "LO MÁS IMPORTANTE"})
+O("junto al pirul grande, la tercera tumba", "dicho", 5.0, d=-2.0, text="Entrando a la derecha, junto al pirul grande, la tercera tumba.")
+B("junto al pirul grande", "ltx:fe_pirul_grande|e46", "cut", why="el pirul grande")
+B("la tercera tumba", "img:e46", "cut", why="Ernesto junto al pirul")
+O("este es el papel más importante", "dicho", 5.4, text="Este es el papel más importante que te voy a dar. Más que la funeraria.")
+B("este es el papel más importante", "bk", "zoom", why="el dicho")
+B("Yo no lo entendí", "fill", "cut", why="la oficina")
+B("Mi papá se murió unos años después", "fill", "fade", why="la tumba de Don Refugio")
+O("No es caro. No cuesta nada", "stamp", 2.6, text="NO CUESTA NADA", col=VERDE, rot=-5, x=1420, y=330)
+B("Primero. Junte los papeles", "img:e47", "cut", why="Ernesto junta los papeles")
+O("Primero. Junte los papeles", "big", 2.6, text="1", sub="junte los papeles", x=1500, y=320, size=180, col=CEMPA)
+B("Los títulos, los recibos de refrendo", "ltx:fe_carpeta_papeles|n87", "cut", why="todo en una carpeta")
+B("Todos en un solo sobre", "img:n87", "cut", why="el sobre")
+B("Segundo. Escriba en cada uno, a mano", "img:e48", "cut", why="Ernesto escribe a mano")
+O("Segundo. Escriba en cada uno, a mano", "big", 2.6, text="2", sub="cómo se llega, a mano", x=1500, y=320, size=180, col=CEMPA)
+B("Entrando por la puerta de Federalismo", "fill", "cut", why="la puerta del panteón")
+B("un árbol de cincuenta años sigue ahí", "img:n88", "cut", why="el árbol viejo")
+B("Tercero. Apunte cuáles son temporales", "fill", "cut", why="el calendario")
+O("Tercero. Apunte cuáles son temporales", "big", 2.6, text="3", sub="la fecha del refrendo", x=1500, y=320, size=180, col=CEMPA)
+B("Tómele una foto a cada tumba", "img:e49", "cut", why="Ernesto toma la foto")
+O("Cuarto. Tómele una foto", "big", 2.6, text="4", sub="una foto de cada tumba", x=1500, y=320, size=180, col=CEMPA)
+B("con algo de alrededor que se reconozca", "img:n89", "cut", why="la capilla de referencia")
+O("dele una copia a alguien más joven", "big", 2.6, text="5", sub="alguien más joven", x=1500, y=320, size=180, col=CEMPA)
+B("dele una copia a alguien más joven", "fill", "cut", why="el nieto")
+B("Llévelo un día al panteón", "img:e50", "swipeR", why="Ernesto con su nieto en el panteón")
+O("No el mármol. No el bronce", "chips", 4.6, items=["NO EL MÁRMOL", "NO EL BRONCE", "ALGUIEN QUE SEPA LLEGAR"], y=880)
+B("No el mármol. No el bronce", "fill", "cut", why="la tumba")
+B("Se tapa la fosa, se asienta la tierra", "fill", "cut", why="el repaso")
+B("y poco a poco, si nadie hace nada, se olvida", "img:n90", "fade", why="la tumba olvidada")
+B("Y lo único que lo detiene es que alguien vuelva", "fill", "cut", why="alguien vuelve")
+
+# CTA: comentarios + suscribir + el siguiente video (sin guía todavía, sin links en pantalla)
+B("Cuénteme en los comentarios", "fill", "cut", why="la pregunta")
+O("Cuénteme en los comentarios", "comment", 5.4, text="En mi pueblo nos quedamos toda la noche y los hombres echan la tierra. — Michoacán", x=1300, y=800)
+B("Yo los leo todos", "img:e51", "cut", why="Ernesto leyendo los comentarios con los lentes")
+B("Y si esto le sirvió, suscríbase", "fill", "cut", why="la oficina")
+O("Y si esto le sirvió, suscríbase", "big", 3.2, text="SUSCRÍBASE", sub="todos los días, lo que nadie le dice", x=960, y=420, size=130, col=CEMPA)
+B("las nueve cosas que yo nunca pagaría", "fill", "cut", why="el próximo video")
+O("las nueve cosas que yo nunca pagaría", "big", 3.4, text="9", sub="cosas que nunca pagaría · el próximo video", x=1460, y=330, size=200, col=ROJO)
+O("la de los once mil dólares", "stamp", 2.6, text="US$11,000", col=ROJO, rot=-6, x=1420, y=760)
+B("Hágalo por su gente", "fill", "cut", why="los papeles")
+B("Que Dios lo bendiga", "img:e52", "fade", why="Ernesto se despide")
+
+# ---------------- medios disponibles ----------------
+def clip_len(p):
+    try: return round(float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p]).decode()), 2)
+    except Exception: return 0.0
+LTXD = PUB + f"{SL}/ltx/"; IMGD = PUB + f"{SL}/img/"
+ltx_ok = {f[:-4] for f in os.listdir(LTXD) if f.endswith(".mp4")} if os.path.isdir(LTXD) else set()
+VMAP = json.load(open("D:/rtmp_fe01/ltx_vlog_mapa.json", encoding="utf8")) if os.path.exists("D:/rtmp_fe01/ltx_vlog_mapa.json") else {}
+img_ok = {f[:-4] for f in os.listdir(IMGD) if f.endswith(".jpg")} if os.path.isdir(IMGD) else set()
+if SIM and not img_ok:  # prueba sin fotos todavía: se asumen todas las del pedido
+    img_ok = {k for k in json.load(open("D:/rtmp_fe01/img/anclas.json", encoding="utf8"))} | {"f01", "f02"}
+REF = set()
+for b in BEATS:
+    for p in re.split(r"[:|]", b["base"])[1:]: REF.add(p)
+LTX_ALL = [x["id"] for x in json.load(open("D:/rtmp_fe01/ltx/pedidos.json", encoding="utf8"))]
+POOL_CLIP = [x for x in LTX_ALL if x not in REF]
+# cada foto tiene SU frase (anclas.json / anclas2.json): el relleno de un segundo es la foto libre anclada más cerca de ese segundo
+ANC = {}
+for fn in ("anclas.json", "anclas2.json"):
+    if os.path.exists("D:/rtmp_fe01/img/" + fn): ANC.update(json.load(open("D:/rtmp_fe01/img/" + fn, encoding="utf8")))
+if SIM and os.path.exists("D:/rtmp_fe01/img/anclas2.json"): img_ok |= set(json.load(open("D:/rtmp_fe01/img/anclas2.json", encoding="utf8")))
+AT = {}
+for fn in ("anclas.json", "anclas2.json"):  # cada lista va en el orden del guion → búsqueda secuencial (no la 1ª coincidencia difusa)
+    if not os.path.exists("D:/rtmp_fe01/img/" + fn): continue
+    c0 = cur; cur = 0
+    for k, ph in json.load(open("D:/rtmp_fe01/img/" + fn, encoding="utf8")).items():
+        if k in ("f01", "f02"): continue
+        v = at(ph)
+        if v is not None: AT[k] = v
+    cur = c0
+POOL_IMG = sorted((x for x in img_ok if x not in REF and x not in ("f01", "f02")), key=lambda x: AT.get(x, 9e9))
+used, notes, FILLS_USED = set(), [], []
+def fill_img(t=None):
+    libres = [f for f in POOL_IMG if f not in used]
+    if not libres: return None
+    if t is not None:
+        cerca = [f for f in libres if f in AT and t - 12 <= AT[f] <= t + 18]
+        f = min(cerca, key=lambda f: abs(AT[f] - t - 1.5)) if cerca else None
+        if f is None and t is not None: return None
+    else: f = libres[0]
+    used.add(f); FILLS_USED.append(f); return f
+def clip_libre():
+    for c in POOL_CLIP:
+        if c in ltx_ok and c not in used:
+            used.add(c); return {"k": "clip", "src": f"{SL}/ltx/{c}.mp4", "len": clip_len(LTXD + c + ".mp4"), "id": c}
+    return None
+def fill_seg(t=None):
+    f = fill_img(t)  # 1º la foto de ESA frase
+    if f: return {"k": "img", "src": f"{SL}/img/{f}.jpg", "id": f}
+    c = clip_libre()  # 2º un clip de lugar que nadie pidió
+    if c: return c
+    # 3º otro recorte (inserto de detalle) de una foto de esa misma frase ya usada
+    for u in sorted((u for u in img_ok if u in used and u in AT and abs(AT[u] - t) <= 15) if t is not None else [], key=lambda u: abs(AT[u] - t)):
+        if "det_" + u not in used:
+            used.add("det_" + u); h = len(used) % 4
+            return {"k": "img", "src": f"{SL}/img/{u}.jpg", "id": "det_" + u, "det": 1, "dz": [[-260, -60], [0, -120], [240, 60], [-120, 110]][h]}
+    f = fill_img(None)
+    if f: notes.append(f"relleno lejos de su frase @{t}: {f}"); return {"k": "img", "src": f"{SL}/img/{f}.jpg", "id": f}
+    # todo usado: un relleno vuelve UNA vez como inserto de detalle (otro recorte, otra zona), nunca el mismo cuadro
+    for u in FILLS_USED:
+        if "det_" + u not in used:
+            used.add("det_" + u); h = len(used) % 4
+            return {"k": "img", "src": f"{SL}/img/{u}.jpg", "id": "det_" + u, "det": 1, "dz": [[-260, -60], [0, -120], [240, 60], [-120, 110]][h]}
+    notes.append("¡pool de relleno vacío!"); return {"k": "bk"}
+
+def resolve(base, a):
+    """base → dict de plano. Nunca repite un clip ni una foto."""
+    if base.startswith("bk"):
+        pid = base[3:]
+        if pid in img_ok and ("bk_" + pid) not in used: used.add("bk_" + pid); return {"k": "bk", "src": f"{SL}/img/{pid}.jpg"}
+        f = fill_img(a) or fill_img(None); return {"k": "bk", "src": f"{SL}/img/{f}.jpg"} if f else {"k": "bk"}
+    if base == "fill": return fill_seg(a)
+    if base.startswith("ltx:"):
+        lid, alt = base[4:].split("|")
+        if lid in ltx_ok and lid not in used:
+            used.add(lid); return {"k": "clip", "src": f"{SL}/ltx/{lid}.mp4", "len": clip_len(LTXD + lid + ".mp4"), "id": lid}
+        notes.append(f"LTX {lid} no llegó → {alt}"); base = "img:" + alt
+    force_ph = base.startswith("ph:")
+    pid = base.split(":", 1)[1]
+    if not force_ph and pid in VMAP and VMAP[pid][0] in ltx_ok and ("vl_" + pid) not in used:
+        cid, fr, ln = VMAP[pid]; used.add("vl_" + pid); used.add(pid)
+        return {"k": "clip", "src": f"{SL}/ltx/{cid}.mp4", "from": fr, "len": ln, "id": "vl_" + pid}
+    if pid in img_ok and pid not in used:
+        used.add(pid); return {"k": "img", "src": f"{SL}/img/{pid}.jpg", "id": pid}
+    if pid in img_ok and ("det_" + pid) not in used:
+        used.add("det_" + pid); h = len(used) % 4
+        return {"k": "img", "src": f"{SL}/img/{pid}.jpg", "id": "det_" + pid, "det": 1, "dz": [[-260, -60], [0, -120], [240, 60], [-120, 110]][h]}
+    notes.append(f"{base} sin medio → relleno"); return fill_seg(a)
+
+BEATS.sort(key=lambda b: b["a"])
+ZS = [[1.03, 1.13], [1.13, 1.03], [1.05, 1.12], [1.04, 1.15]]
+segs = []
+for n, b in enumerate(BEATS):
+    g = {"a": b["a"], "tr": b["tr"] or "cut", "why": b["why"], "ph": b["ph"], **resolve(b["base"], b["a"])}
+    segs.append(g)
+segs[0]["a"] = 0.0
+# el avatar pisa sus ventanas; al salir vuelve lo que corresponda (una foto/clip ya empezado no se retoma → relleno)
+for w in AVW:
+    ms, me = w["ms"], w["me"]
+    before = [g for g in segs if g["a"] <= me]
+    active = before[-1] if before else segs[0]
+    segs = [g for g in segs if not (ms <= g["a"] < me)]
+    segs.append({"a": round(ms, 2), "k": "av", "tr": "zoom" if len(segs) % 2 else "iris", "why": "avatar", "ph": ""})
+    nxt = [g for g in segs if g["a"] >= me]
+    if not nxt or nxt[0]["a"] - me > 0.8:
+        r = dict(active); r["a"] = round(me, 2); r["tr"] = "swipeL"
+        if r["k"] in ("img", "clip") and active["a"] < ms: r = {"a": round(me, 2), "tr": "swipeL", "why": "relleno tras el avatar", "ph": "", **fill_seg(me)}
+        segs.append(r)
+    segs.sort(key=lambda g: g["a"])
+segs[0]["tr"] = "cut"
+out = []
+for g in segs:
+    if out and g["a"] - out[-1]["a"] < 1.0 and out[-1]["k"] != "av" and g["k"] != "av": out[-1] = g; continue
+    out.append(g)
+segs = out
+# planos largos: foto > ~4 s (3 s en el 1er minuto) o clip que se queda corto → otro plano (nunca > ~4 s quieto)
+add = []
+for i, g in enumerate(segs):
+    b = segs[i + 1]["a"] if i + 1 < len(segs) else END
+    lim = min(g.get("len", 3) + 1.0, 6.0) if g["k"] == "clip" else (3.0 if g["a"] < 60 else 4.0) if g["k"] == "img" else 5.5 if g["k"] == "bk" else 99
+    t0 = g["a"] + lim
+    while g["k"] in ("img", "clip", "bk") and b - t0 > 1.2:
+        x = {"a": round(t0, 2), "tr": "cut", "why": "el plano se acaba → otro", "ph": "", **fill_seg(t0)}
+        add.append(x); t0 += min(x.get("len", 3) + 1.0, 6.0) if x["k"] == "clip" else (3.0 if t0 < 60 else 4.0)
+segs = sorted(segs + add, key=lambda g: g["a"])
+segs = [g for i, g in enumerate(segs) if g["k"] == "av" or i + 1 >= len(segs) or segs[i + 1]["a"] - g["a"] >= 0.7]
+for n, g in enumerate(segs):
+    if g.get("k") == "img" and "det" in g:
+        g["z"] = [1.32, 1.42]; g["ox"], g["oy"] = g.pop("dz"); g.pop("det")
+    elif g.get("k") == "img":
+        h = n % 4; g["z"] = ZS[h]; g["ox"] = [0, -30, 30, 0][h]; g["oy"] = [0, 10, -10, -20][h]
+
+# ---------------- piezas: "at" de texto → segundos ----------------
+ov = []
+for o in OVS:
+    for lk in ("items", "rows", "pins"):
+        if lk in o and o[lk] and isinstance(o[lk][0], dict):
+            for it in o[lk]:
+                if isinstance(it.get("at"), str):
+                    a = T(it["at"], o["a"]); it["at"] = a if a is not None and a < o["b"] else round(o["a"] + 0.6 + 0.7 * o[lk].index(it), 2)
+    for dk in ("route", "total", "sello"):
+        if dk in o and isinstance(o[dk].get("at"), str):
+            a = T(o[dk]["at"], o["a"]); o[dk]["at"] = a if a is not None and a < o["b"] else round(o["b"] - 1.6, 2)
+    for kk in ("venceAt",):
+        if isinstance(o.get(kk), str):
+            v = T(o[kk], o["a"])
+            if v is None: print("  ! ancla interna sin encontrar:", o["k"], kk, o[kk]); v = o["a"] + 1.5
+            o[kk] = v
+    if "from_" in o: o["from"] = o.pop("from_")
+    ov.append(o)
+# las piezas no van encima del avatar (le tapan la cara): si entra ≥2 s antes de la ventana se recorta; si no, se corre a la
+# salida de la ventana (si eso es ≤5 s después de su frase) con su largo; si tampoco, sale
+nv = []
+for o in sorted(ov, key=lambda o: o["a"]):
+    a, b = o["a"], o["b"]
+    for _ in range(3):
+        w = next((w for w in AVW if a < w["me"] and b > w["ms"]), None)
+        if not w: break
+        if w["ms"] - a >= 2.0: b = w["ms"]; break
+        if w["me"] - o["a"] <= 5.0: L = b - a; a = w["me"] + 0.15; b = a + L; continue
+        a = None; break
+    if a is None or next((w for w in AVW if a < w["me"] and b > w["ms"]), None):
+        notes.append(f"pieza {o['k']} @{o['a']} quedó bajo el avatar → sale"); continue
+    x = dict(o); sh = round(a - o["a"], 2); x["a"], x["b"] = round(a, 2), round(b, 2)
+    if sh:  # las anclas internas se corren con la pieza
+        for lk in ("items", "rows", "pins"):
+            if lk in x and x[lk] and isinstance(x[lk][0], dict): x[lk] = [{**it, "at": round(it["at"] + sh, 2)} for it in x[lk]]
+        for dk in ("route", "total", "sello"):
+            if dk in x: x[dk] = {**x[dk], "at": round(x[dk]["at"] + sh, 2)}
+        if "venceAt" in x: x["venceAt"] = round(x["venceAt"] + sh, 2)
+    nv.append(x)
+ov = sorted(nv, key=lambda o: o["a"])
+lost = [n for n in notes if n.startswith("pieza")]
+
+reel = os.path.exists(PUB + f"{SL}/reel0.mp4")
+rl = clip_len(PUB + f"{SL}/reel0.mp4") if reel else 0
+if not SIM:
+    json.dump([{k: v for k, v in g.items() if k not in ("why", "ph", "id")} for g in segs], open(S + "segs.json", "w", encoding="utf8"), ensure_ascii=False)
+    json.dump(ov, open(S + "ov.json", "w", encoding="utf8"), ensure_ascii=False)
+    json.dump({"reel": reel, "reelLen": round(rl, 3), "end": round(END, 3)}, open(S + "avail.json", "w", encoding="utf8"))
+    shots = [{"a": g["a"], "b": round(segs[i + 1]["a"] if i + 1 < len(segs) else END, 2), "k": g["k"], "src": g.get("src"), "len": g.get("len")} for i, g in enumerate(segs)]
+    json.dump({"end": round(END, 3), "shots": shots}, open(S + "edl.json", "w", encoding="utf8"))
+
+# ---------------- el plan minuto a minuto (una línea por plano) ----------------
+def mmss(x): return f"{int(x // 60):02d}:{x % 60:04.1f}"
+lines = [f"# {SL} · PLAN MxM (generado de plan_fe01.py, escrito a mano plano por plano){' · SIMULADO sin voz' if SIM else ''} · END {mmss(END)}", "mm:ss-mm:ss · frase · plano · componente · sonido", ""]
+for i, g in enumerate(segs):
+    b = segs[i + 1]["a"] if i + 1 < len(segs) else END
+    pz = [o["k"] for o in ov if g["a"] - 0.2 <= o["a"] < b]
+    what = g["k"] + (":" + (g.get("src") or "").split("/")[-1] if g.get("src") else "")
+    snd = "voz" if g["k"] == "av" else "voz + audio nativo del clip −26 dB" if g["k"] == "clip" else "voz + foley suave (viento, pájaros, grava)"
+    lines.append(f"{mmss(g['a'])}-{mmss(b)} · {g.get('ph', '')[:48]} · {what} ({g.get('why', '')}) · {', '.join(pz) or '—'} · {snd}")
+open(f"D:/rtmp/{SL}_PLAN_MxM{'_SIM' if SIM else ''}.md", "w", encoding="utf8").write("\n".join(lines))
+
+# ---------------- medición ----------------
+dur = [(segs[i + 1]["a"] if i + 1 < len(segs) else END) - g["a"] for i, g in enumerate(segs)]
+tot = {k: round(sum(d for g, d in zip(segs, dur) if g["k"] == k), 1) for k in ("av", "img", "clip", "bk")}
+gap, last = 0, 0
+for g, d in zip(segs, dur):
+    if g["k"] == "av": last = g["a"] + d
+    else: gap = max(gap, g["a"] + d - last)
+m1 = [d for g, d in zip(segs, dur) if g["a"] < 60]
+print(f"{'SIMULADO · ' if SIM else ''}END {END:.1f}s · planos {len(segs)} · mediana {statistics.median(dur):.1f}s · máx {max(dur):.1f}s · 1er min {len(m1)} planos (máx {max(m1):.1f}s) · {tot} · av {100*tot['av']/END:.0f}% · hueco máx sin avatar {gap:.1f}s")
+print(f"piezas {len(ov)} (perdidas bajo el avatar {len(lost)}) · beats {len(BEATS)} · LTX llegados {len(ltx_ok)} · fotos {len(img_ok)} · reel {reel}")
+nl = sum(1 for g in segs if "/ltx/" in (g.get("src") or ""))
+print(f"clips LTX en pantalla {nl} · respaldos usados {sum(1 for n in notes if n.startswith('LTX'))}")
+long_ = [(mmss(g["a"]), round(d, 1), g["k"]) for g, d in zip(segs, dur) if d > 4.6 and g["k"] not in ("av",)]
+print("planos > 4,6 s (no avatar):", long_[:20], "…" if len(long_) > 20 else "")
+print("SIN ANCLAR:", miss if miss else "ninguna")
+for n in notes:
+    if not n.startswith("LTX"): print("  ", n)
