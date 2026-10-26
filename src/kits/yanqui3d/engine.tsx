@@ -88,7 +88,7 @@ export type Beat = { a: number; tr: Tr; p?: [number, number]; k?: string; r: (t:
 type Win = { ms: number; me: number; off: number };
 export type Kit = {
   at: (phrase: string, after?: number) => number;
-  Clip: React.FC<{ k: string; a: number; z?: [number, number]; dur?: number; style?: React.CSSProperties }>;
+  Clip: React.FC<{ k: string; a: number; z?: [number, number]; dur?: number; rate?: number; style?: React.CSSProperties }>;
   Avatar: React.FC<{ t: number; blur?: number; dark?: number; edge?: number }>;
   soft: (t: number, spans: [number, number][], amt?: number) => number;
   av: (ms: number) => number;
@@ -111,9 +111,9 @@ export const makeVideo = (spec: VideoSpec) => {
   const { T0, TEND } = spec;
   const at = makeAt(spec.caps);
   const HAS = spec.avail;
-  const Clip: Kit["Clip"] = ({ k, a, z = [1.03, 1.11], dur = 8, style }) => {
+  const Clip: Kit["Clip"] = ({ k, a, z = [1.03, 1.11], dur = 8, rate, style }) => {
     const t = useCurrentFrame() / 30, sc = z[0] + (z[1] - z[0]) * e(t, a, a + dur);
-    const inner = HAS.clips.includes(k) ? <Vid id={"ltx_" + k} at={a} /> : HAS.imgs.includes(k) ? <Vid id={"img_" + k} /> :
+    const inner = HAS.clips.includes(k) ? <Vid id={"ltx_" + k} at={a} rate={rate} /> : HAS.imgs.includes(k) ? <Vid id={"img_" + k} /> :
       <AbsoluteFill style={{ background: "linear-gradient(135deg,#1b2430,#0b0f14)", color: "#556", fontFamily: FONT, fontSize: 60, display: "flex", alignItems: "center", justifyContent: "center" }}>{k}</AbsoluteFill>;
     return <AbsoluteFill style={{ transform: `scale(${sc})`, ...style }}>{inner}</AbsoluteFill>;
   };

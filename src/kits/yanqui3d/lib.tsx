@@ -24,9 +24,9 @@ export const extrude = (n: number, col: string, dx = 0.6, dy = 1) =>
   Array.from({ length: n }, (_, i) => `${(i + 1) * dx}px ${(i + 1) * dy}px 0 ${col}`).join(", ") + `, ${n * dx + 6}px ${n * dy + 16}px 34px rgba(0,0,0,.6)`;
 
 // toma (LTX mp4 o foto) a cuadro completo
-export const Vid: React.FC<{ id: string; from?: number; at?: number; style?: React.CSSProperties; vol?: number }> = ({ id, from = 0, at, style, vol = 0 }) => {
+export const Vid: React.FC<{ id: string; from?: number; at?: number; style?: React.CSSProperties; vol?: number; rate?: number }> = ({ id, from = 0, at, style, vol = 0, rate }) => {
   if (id.startsWith("img_")) return <Img src={staticFile(P + id + ".jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", ...style }} />;
-  const v = <OffthreadVideo src={staticFile(P + id + ".mp4")} startFrom={s(from)} muted={vol === 0} volume={vol} style={{ width: "100%", height: "100%", objectFit: "cover", ...style }} />;
+  const v = <OffthreadVideo src={staticFile(P + id + ".mp4")} startFrom={s(from)} muted={vol === 0} volume={vol} playbackRate={rate ?? 1} style={{ width: "100%", height: "100%", objectFit: "cover", ...style }} />;
   // at = segundo de la composición en que arranca la toma (la toma corre desde su cuadro `from`)
   return at === undefined ? v : <Sequence from={s(at)} layout="none">{v}</Sequence>;
 };
