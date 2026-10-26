@@ -339,12 +339,12 @@ export const P2Pant: React.FC<{ t: number }> = ({ t }) => (
     <Senal t={t} t0={201.8} t1={203.6} text="CLOAK · SPECIAL COLOR" x={520} y={420} ax={900} ay={640} />
     <Senal t={t} t0={203.7} t1={205.5} text="A PARTICULAR HAT" x={520} y={300} ax={900} ay={470} color={C.teal} />
     <Senal t={t} t0={205.6} t1={208.3} text="A RIBBON ON YOUR SLEEVE" x={480} y={300} ax={800} ay={640} color={C.lima} />
-    <Titulo t={t} t0={210.25} t1={213.0} text="A WALKING WARNING SIGN" y={200} size={100} color={C.ambar} />
-    <Chip t={t} t0={213.1} t1={215.8} text="...SOME TRULY STRANGE PROBLEMS" color={C.violeta} x={960} y={150} centro size={56} />
+    <Titulo t={t} t0={210.25} t1={213.0} text="A WALKING WARNING SIGN" y={950} size={100} color={C.ambar} />
+    <Chip t={t} t0={213.1} t1={215.8} text="...SOME TRULY STRANGE PROBLEMS" color={C.violeta} x={960} y={985} centro size={56} />
     <Titulo t={t} t0={216.0} t1={218.2} text="WHO BUILDS THE GALLOWS?" y={180} size={96} color={C.crema} />
     <Chip t={t} t0={218.35} t1={220.9} text="IT'S THE EXECUTIONER'S TOOL" color={C.rojo} x={960} y={150} centro size={58} />
     <Sello t={t} t0={221.1} t1={224.4} text="TOUCH IT = DISHONORED" x={1180} y={620} size={80} rot={-6} />
-    <Chip t={t} t0={224.55} t1={226.7} text="THE SOLUTION..." color={C.teal} tinta={C.noche} x={960} y={150} centro size={60} />
+    <Chip t={t} t0={224.55} t1={226.7} text="THE SOLUTION..." color={C.teal} tinta={C.noche} x={960} y={985} centro size={60} />
     <Chip t={t} t0={226.9} t1={230.7} text="EVERY CARPENTER · SAME TIME" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={60} />
     <Chip t={t} t0={230.8} t1={233.2} text="MASTERS + APPRENTICES" color={C.teal} tinta={C.noche} x={960} y={150} centro size={60} />
     <Chip t={t} t0={233.3} t1={236.9} text="WITH MUSIC · COUNCIL WATCHING" color={C.violeta} x={960} y={150} centro size={56} />

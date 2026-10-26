@@ -170,7 +170,7 @@ export const P7Mundo: React.FC<{ t: number }> = ({ t }) => {
         <>
           {[5930, 6030, 6130, 6230].map((cx, i) => <Persona key={cx} x={cx} y={SUELO - 30} h={250} t={t} seed={730 + i} ropa={{ ...CIVIL(95 + i), tunica: "#8a8070", tunica2: "#6a6050" }} expr={i % 2 ? "triste" : "neutro"} bD={i === 1 ? 120 : 20} cD={i === 1 ? 70 : 10} flip />)}
           <Franz x={5780} y={SUELO - 10} t={t} expr="orgullo" bD={100} cD={0} manoD={<g><rect x={-30} y={-40} width={60} height={70} rx={6} fill="#fff6e0" stroke="#7a3d14" strokeWidth={4} /></g>} />
-          <TextoMundo x={6080} y={SUELO - 400} text="ONE LINE, PLEASE" size={70} color="#fff3d6" borde="#2b1c14" />
+          <TextoMundo x={6080} y={SUELO - 760} text="ONE LINE, PLEASE" size={70} color="#fff3d6" borde="#2b1c14" />
         </>
       )}
       {/* ── la casa del farol rojo (guiño) */}

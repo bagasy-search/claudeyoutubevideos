@@ -124,8 +124,8 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
           {t > 738.6 && <Svg>{Array.from({ length: 9 }, (_, i) => <g key={i}><rect x={CASA - 380 + (i % 3) * 64 - (Math.floor(i / 3) % 2) * 32} y={SUELO - 50 - Math.floor(i / 3) * 46} width={60} height={42} rx={20} fill="#8a5a2a" stroke="#4a2810" strokeWidth={4} /><circle cx={CASA - 380 + (i % 3) * 64 - (Math.floor(i / 3) % 2) * 32 + 14} cy={SUELO - 29 - Math.floor(i / 3) * 46} r={10} fill="#d9a870" /></g>)}</Svg>}
           {vig(t, 737.2, 741.1) && (
             <>
-              <TextoMundo x={CASA} y={SUELO - 780} text="FREE HOUSE ✓" size={70} color={C.lima} borde="#1b2a10" />
-              {t > 738.6 && <TextoMundo x={CASA - 320} y={SUELO - 240} text="FREE FIREWOOD ✓" size={46} color={C.lima} borde="#1b2a10" />}
+              <TextoMundo x={CASA} y={SUELO - 780} text="FREE HOUSE ✓" size={110} color={C.lima} borde="#1b2a10" />
+              {t > 738.6 && <TextoMundo x={CASA - 320} y={SUELO - 240} text="FREE FIREWOOD ✓" size={80} color={C.lima} borde="#1b2a10" />}
               <Particulas t={t} tipo="destellos" n={24} seed={8} />
             </>
           )}

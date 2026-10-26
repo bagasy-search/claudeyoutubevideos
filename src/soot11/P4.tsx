@@ -187,7 +187,7 @@ export const P4Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={425.4} t1={427.9} text="ONE BANK: MERCHANTS OPEN" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={58} />
     <Chip t={t} t0={428.0} t1={429.8} text="THE OTHER: CHURCH BELLS" color={C.teal} tinta={C.noche} x={960} y={150} centro size={58} />
     <Chip t={t} t0={431.4} t1={435.3} text="NOBODY EVER LOOKS UP" color={C.rojo} x={960} y={150} centro size={64} />
-    <Chip t={t} t0={435.5} t1={439.1} text="WHAT THE HOUSE SAYS EVERY MORNING:" color={C.violeta} x={960} y={150} centro size={52} />
+    <Chip t={t} t0={435.5} t1={439.1} text="WHAT THE HOUSE SAYS EVERY MORNING:" color={C.violeta} x={960} y={990} centro size={52} />
     <Sello t={t} t0={441.95} t1={445.7} text="YOUR FAMILY'S FUTURE?" x={960} y={300} size={80} color={C.violeta} rot={-4} />
   </>
 );

@@ -202,7 +202,7 @@ const Lista: React.FC<{ t: number; t0: number; t1: number }> = ({ t, t0, t1 }) =
 export const P1Pant: React.FC<{ t: number }> = ({ t }) => (
   <>
     <CartelTrampa t={t} t0={59.65} t1={62.1} n={1} titulo="YOU DON'T APPLY" />
-    <Chip t={t} t0={62.6} t1={66.2} text="NOBODY CHOSE THIS JOB" color={C.violeta} x={960} y={150} centro size={62} />
+    <Chip t={t} t0={62.6} t1={66.2} text="NOBODY CHOSE THIS JOB" color={C.violeta} x={960} y={985} centro size={62} />
     <Titulo t={t} t0={66.75} t1={69.2} text="BORN INTO IT" y={190} size={130} color={C.ambar} />
     <Chip t={t} t0={69.4} t1={71.6} text="ONE REAL FAMILY" color={C.teal} tinta={C.noche} x={960} y={150} centro size={62} />
     <Chip t={t} t0={75.5} t1={77.5} text="A NOBLEMAN IN CHARGE" color={C.violeta} x={960} y={140} centro size={56} />
@@ -214,7 +214,7 @@ export const P1Pant: React.FC<{ t: number }> = ({ t }) => (
     <Globo t={t} t0={89.8} t1={91.3} text="N-no...?" x={1250} y={320} size={64} cola="der" />
     <Chip t={t} t0={92.9} t1={95.4} text="NO WAS NOT AN OPTION" color={C.rojo} x={960} y={150} centro size={60} />
     <Globo t={t} t0={95.6} t1={97.3} text="...yes." x={1250} y={320} size={64} cola="der" />
-    <Titulo t={t} t0={97.4} t1={99.6} text="RUINED FOREVER" y={180} size={120} color={C.rojo} borde="#2b0a14" />
+    <Titulo t={t} t0={97.4} t1={99.6} text="RUINED FOREVER" y={110} size={100} color={C.rojo} borde="#2b0a14" />
     <Chip t={t} t0={105.9} t1={108.2} text="NO MORE BIRDS" color={C.naranja} x={960} y={960} centro size={58} />
     <Sello t={t} t0={108.5} t1={111.0} text="NO GUILD" x={470} y={300} size={84} />
     <Sello t={t} t0={111.2} t1={113.9} text="NO WEDDING" x={1420} y={860} size={90} rot={10} />
@@ -226,7 +226,7 @@ export const P1Pant: React.FC<{ t: number }> = ({ t }) => (
         <svg width={120} height={560} viewBox="-60 -500 120 560" style={{ overflow: "visible" }}><path d="M -26 -60 L -26 -400 L 0 -480 L 26 -400 L 26 -60 Z" fill="#e8eef4" stroke="#2b2140" strokeWidth={8} /><rect x={-80} y={-70} width={160} height={24} rx={10} fill="#c98f2a" /><rect x={-14} y={-46} width={28} height={90} rx={8} fill="#4a2810" /></svg>
       </div>
     )}
-    <Chip t={t} t0={121.0} t1={124.0} text="WHAT YOU IMAGINE" color={C.violeta} x={360} y={250} centro size={44} />
+    <Chip t={t} t0={121.0} t1={124.0} text="WHAT YOU IMAGINE" color={C.violeta} x={420} y={985} centro size={44} />
     {vig(t, 122.6, 124) && <Tacha t={t} t0={122.6} x={360} y={560} w={420} rot={-40} g={28} />}
     <Chip t={t} t0={124.0} t1={126.8} text="NO POINT AT ALL" color={C.rojo} x={520} y={150} centro size={66} />
     <Chip t={t} t0={126.9} t1={128.0} text="FLAT..." color={C.ambar} tinta={C.noche} x={1340} y={420} size={60} />

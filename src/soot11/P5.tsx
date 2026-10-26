@@ -172,7 +172,7 @@ export const P5Mundo: React.FC<{ t: number }> = ({ t }) => {
                   bD={tieneEspada(i) ? 70 : i === 1 ? 40 + Math.sin(t * 2) * 10 : 15} cD={tieneEspada(i) ? 60 : 10} bI={i === 5 ? 120 : 15} habla={i === 4 && vig(t, 511, 514.8)} mira={i < 3 ? 1 : -1}
                   expr={i === 3 && vig(t, 520.7, 527.3) ? "miedo" : i === 0 && vig(t, 527.3, 531.6) ? "feliz" : i === 5 ? "sorpresa" : "orgullo"} flip={i === 0 && vig(t, 527.3, 531.6)} />
                 {(t < 514.9 || t > 527.3) && <TextoMundo x={gx} y={SUELO - 480} text={["I", "II", "III", "IV", "V", "VI"][i]} size={56} color={C.ambar} borde="#2b1c14" />}
-                {(t < 514.9 || t > 527.3) && <TextoMundo x={gx} y={SUELO - 425} text={["1688", "1707", "1726", "1754", "1795", "1840"][i]} size={30} color="#fff3d6" borde="#2b1c14" />}
+                {(t < 514.9 || t > 527.3) && <TextoMundo x={gx} y={SUELO - 425} text={["1688", "1707", "1726", "1754", "1795", "1840"][i]} size={54} color="#fff3d6" borde="#2b1c14" />}
               </React.Fragment>
             );
           })}
@@ -221,13 +221,13 @@ export const P5Pant: React.FC<{ t: number }> = ({ t }) => (
   <>
     <CartelTrampa t={t} t0={445.9} t1={447.6} n={5} titulo="WHO YOU MARRY" />
     <Lista t={t} />
-    <Chip t={t} t0={453.4} t1={454.8} text="ONE PROBLEM..." color={C.rojo} x={960} y={150} centro size={62} />
+    <Chip t={t} t0={453.4} t1={454.8} text="ONE PROBLEM..." color={C.rojo} x={960} y={985} centro size={62} />
     <Chip t={t} t0={454.9} t1={458.6} text="NO FAMILY WANTS THEIR DAUGHTER MARRYING YOU" color={C.noche} x={960} y={150} centro size={48} />
     <Chip t={t} t0={458.7} t1={462.7} text="...OR THEIR SON MARRYING YOURS" color={C.noche} x={960} y={150} centro size={54} />
     <Titulo t={t} t0={462.85} t1={464.9} text="SO THEY MARRIED EACH OTHER" y={90} size={70} color={C.crema} />
     <Chip t={t} t0={465.0} t1={470.0} text="SON OF ONE TOWN ♥ DAUGHTER OF THE NEXT" color={C.rojo} x={960} y={950} centro size={54} />
     <Chip t={t} t0={470.2} t1={474.7} text="THEIR KIDS: THREE TOWNS AWAY" color={C.violeta} x={960} y={950} centro size={54} />
-    <Titulo t={t} t0={474.9} t1={478.2} text="DYNASTIES" y={200} size={150} color={C.rojo} borde="#2b0a14" />
+    <Titulo t={t} t0={474.9} t1={478.2} text="DYNASTIES" y={960} size={120} color={C.rojo} borde="#2b0a14" />
     <Chip t={t} t0={478.4} t1={482.9} text="WHOLE REGIONS · ALL RELATED" color={C.violeta} x={960} y={950} centro size={54} />
     <Chip t={t} t0={483.0} t1={487.2} text="THE JOB · THE SWORDS · THE KNOWLEDGE" color={C.noche} x={960} y={950} centro size={54} />
     <Chip t={t} t0={487.4} t1={489.4} text="AND YOUR CHILDREN?" color={C.violeta} x={960} y={150} centro size={60} />

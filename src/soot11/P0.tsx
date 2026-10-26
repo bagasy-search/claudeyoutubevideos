@@ -190,16 +190,16 @@ export const P0Pant: React.FC<{ t: number }> = ({ t }) => (
     {vig(t, 3.8, 6) && <div style={{ position: "absolute", left: 200, top: 230, display: "flex", gap: 12 }}>{Array.from({ length: 7 }, (_, i) => <div key={i} style={{ width: 56, height: 56, borderRadius: 12, background: t > 3.9 + i * 0.28 ? C.lima : "rgba(27,18,64,.6)", transform: `scale(${t > 3.9 + i * 0.28 ? 1 : 0.8})` }} />)}</div>}
     <Barras t={t} t0={6.0} t1={9.1} x={540} y={470} alto={280} ancho={110} items={[{ label: "BAKER", v: 30, color: "#e0a63a" }, { label: "SMITH", v: 36, color: "#7d8796" }, { label: "CARPENTER", v: 33, color: C.tierra }, { label: "YOU", v: 100, color: C.rojo, t0: 7.6 }]} />
     <Titulo t={t} t0={9.15} t1={13.3} text="20 YEARS" y={190} size={150} color={C.crema} />
-    <Chip t={t} t0={14.6} t1={17.0} text="ALONE · BY THE DOOR" color={C.rojo} x={1240} y={190} centro size={58} />
+    <Chip t={t} t0={14.6} t1={17.0} text="ALONE · BY THE DOOR" color={C.rojo} x={1240} y={980} centro size={58} />
     <Chip t={t} t0={19.5} t1={22.3} text="↻ UPSIDE DOWN" color={C.ambar} tinta={C.noche} x={960} y={170} centro size={70} />
     <Chip t={t} t0={21.3} t1={22.4} text="JUST FOR YOU" color={C.violeta} x={960} y={280} centro size={54} />
     <Chip t={t} t0={23.7} t1={25.0} text="*silence*" color={C.noche} x={960} y={190} centro size={64} />
-    <Chip t={t} t0={27.2} t1={28.2} text="YOUR STOOL" color={C.rojo} x={960} y={200} centro size={80} />
+    <Chip t={t} t0={27.2} t1={28.2} text="YOUR STOOL" color={C.rojo} x={960} y={980} centro size={80} />
     <Chip t={t} t0={28.3} t1={29.9} text="NOBODY ELSE. EVER." color={C.violeta} x={960} y={200} centro size={66} />
     {/* revelación */}
     {vig(t, 30, 31.8) && <div style={{ position: "absolute", inset: 0, background: `radial-gradient(ellipse at 50% 55%, transparent 25%, rgba(40,0,20,${0.75 * clamp((t - 30) * 3, 0, 1)}) 75%)` }} />}
     {vig(t, 30.0, 31.8) && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, opacity: clamp((t - 30) * 4, 0, 1) }}><Espada x={1600} y={1050} s={1.1 * clamp((t - 30) * 3, 0, 1)} rot={12} /></div>}
-    <Titulo t={t} t0={30.15} t1={31.75} text="THE EXECUTIONER" y={190} size={150} color={C.rojo} borde="#2b0a14" />
+    <Titulo t={t} t0={30.15} t1={31.75} text="THE EXECUTIONER" y={940} size={150} color={C.rojo} borde="#2b0a14" />
     <Chip t={t} t0={31.8} t1={33.6} text="BY THE END OF THIS VIDEO..." color={C.violeta} x={960} y={150} centro size={56} />
     <Chip t={t} t0={33.9} t1={36.0} text="☀ DAYTIME: THEY AVOID YOU" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={56} />
     <Chip t={t} t0={37.4} t1={39.6} text="☾ NIGHT: THEY KNOCK" color={C.teal} tinta={C.noche} x={960} y={150} centro size={60} />

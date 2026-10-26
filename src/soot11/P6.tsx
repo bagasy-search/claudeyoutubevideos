@@ -224,7 +224,7 @@ export const P6Pant: React.FC<{ t: number }> = ({ t }) => (
     <Film t={t} />
     <Sello t={t} t0={542.9} t1={544.2} text="WRONG" x={1350} y={560} size={130} />
     <Chip t={t} t0={544.35} t1={547.3} text="FORGET THE BLACK HOOD" color={C.noche} x={960} y={150} centro size={62} />
-    <Chip t={t} t0={547.45} t1={550.9} text="MASKS = A LATER INVENTION (AND HOLLYWOOD)" color={C.violeta} x={960} y={150} centro size={50} />
+    <Chip t={t} t0={547.45} t1={550.9} text="MASKS = A LATER INVENTION (AND HOLLYWOOD)" color={C.violeta} x={960} y={990} centro size={50} />
     <Chip t={t} t0={551.1} t1={555.0} text="EVERYBODY KNEW WHO YOU WERE" color={C.teal} tinta={C.noche} x={960} y={150} centro size={58} />
     <Chip t={t} t0={556.6} t1={558.0} text="THE MAN ON THE BRIDGE" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={60} />
     <Titulo t={t} t0={558.1} t1={560.0} text="NOTHING TO HIDE" y={190} size={110} color={C.crema} />

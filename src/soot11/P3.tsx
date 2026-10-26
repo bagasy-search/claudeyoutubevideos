@@ -127,7 +127,7 @@ export const P3Mundo: React.FC<{ t: number }> = ({ t }) => {
           {[PAN - 100, PAN, PAN + 100].map((x) => <Hogaza key={x} x={x} y={SUELO - 400} s={0.5} />)}
           {[PAN - 100, PAN + 100].map((x) => <Hogaza key={x} x={x} y={SUELO - 290} s={0.5} />)}
           <G x={PAN} y={SUELO - 290 - 38}><g transform={`rotate(${t > 320.3 ? 180 : interp(t, [319.6, 320.3], [0, 180])})`}><g transform="translate(0 38)"><path d="M -40 0 Q -43 -35 0 -38 Q 43 -35 40 0 Z" fill="#c9773a" /><rect x={-41} y={-3} width={82} height={6} rx={3} fill="#a8582a" /></g></g></G>
-          {t > 320.5 && <G x={PAN} y={SUELO - 230}><rect x={-80} y={0} width={160} height={36} rx={8} fill="#2b1c14" /><text x={0} y={26} textAnchor="middle" fontSize={22} fontFamily={fontFamily} fontWeight={700} fill={C.ambar}>LE BOURREAU</text></G>}
+          {t > 320.5 && <G x={PAN - 300} y={SUELO - 560}><rect x={-80} y={0} width={160} height={36} rx={8} fill="#2b1c14" /><text x={0} y={26} textAnchor="middle" fontSize={22} fontFamily={fontFamily} fontWeight={700} fill={C.ambar}>LE BOURREAU</text></G>}
           <Persona x={PAN - 120} y={SUELO - 10} h={290} t={t} seed={520} ropa={{ ...CIVIL(3), tunica: "#f2ead8", tunica2: "#d9cdb8" }} gorro="panadero" expr={t > 320.3 ? "orgullo" : "feliz"} bD={vig(t, 319.4, 320.6) ? 150 : 10} flip />
           {/* la casa: la hogaza boca abajo en la mesa, ¡mala suerte! */}
           <Fachwerk x={CASA_P - 190} w={380} h={540} abierta fondo="#e9d3b0" muro="#efe4d0" viga="#c9bca4" techo="#5a6a8a" pisos={1} />
@@ -208,7 +208,7 @@ export const P3Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={291.8} t1={294.1} text="...PREFERABLY FROM A DISTANCE" color={C.violeta} x={960} y={150} centro size={56} />
     <Chip t={t} t0={294.3} t1={296.8} text="THE TAVERN: EVEN MORE AWKWARD" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={56} />
     <Chip t={t} t0={297.0} t1={300.0} text="YOUR OWN TABLE" color={C.teal} tinta={C.noche} x={960} y={150} centro size={62} />
-    <Chip t={t} t0={300.2} t1={301.4} text="...OR YOUR OWN STOOL" color={C.teal} tinta={C.noche} x={960} y={150} centro size={62} />
+    <Chip t={t} t0={300.2} t1={301.4} text="...OR YOUR OWN STOOL" color={C.teal} tinta={C.noche} x={960} y={985} centro size={62} />
     <Chip t={t} t0={301.5} t1={302.9} text="WITH 3 LEGS" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={66} />
     <Chip t={t} t0={303.0} t1={304.3} text="SET APART" color={C.rojo} x={960} y={150} centro size={66} />
     <Chip t={t} t0={304.45} t1={305.6} text="YOUR OWN CUP" color={C.violeta} x={960} y={150} centro size={62} />
