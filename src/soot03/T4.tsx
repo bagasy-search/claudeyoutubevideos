@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
-import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Zzz } from "./kit";
+import { C, fontFamily, fontMano, ent, prog, Chip, Grande, Emote, cabeza, Zzz } from "./kit";
 import { Papiro } from "./kit2";
 import { Persona, CIVIL, CENTURION } from "./persona";
 import { TOP, BASE, MC, K, Cam, Pal, Plano, CartelTrampa, pant } from "./mundo";
@@ -19,8 +19,8 @@ export const keys4: K[] = [
   [432.0, 19000, 560, 0.33], [433.9, YO4, 470, 1.5], ck("absolutely nothing", D, YO4, 470, 2.1), ck("you are posted", D, M4, 520, 1.0),
   ck("or worse", D, TU, 470, 0.9), ck("with just a handful", D, TU, 450, 1.3, 0.5), ck("your job is to stand", D, YO4, 470, 1.6, 0.5),
   ck("then you climb down", D, YO4, 560, 1.1), ck("and you go back", D, YO4 - 500, 640, 0.8), ck("there is a gate", D, M4, 760, 0.75),
-  ck("who is crossing", D, M4 + 450, 700, 0.95), ck("many historians now", D, M4, 640, 0.5), ck("so the soldiers did", D, YO4, 470, 1.5),
-  ck("at vindolanda", D, YO4, 470, 1.6), ck("and one letter", D, FIESTA, 720, 0.8), ck("a birthday party", D, FIESTA, 740, 1.0),
+  ck("who is crossing", D, M4 + 450, 700, 0.95), ck("many historians now", D, M4, 640, 0.5), ck("so the soldiers did", D, YO4, 760, 1.4),
+  ck("at vindolanda", D, YO4, 760, 1.5), ck("and one letter", D, FIESTA, 720, 0.8), ck("a birthday party", D, FIESTA, 740, 1.0),
   ck("on the edge of the world", D, FIESTA, 640, 0.5), ck("because somebody had", D, FIESTA, 740, 1.2), ck("meanwhile", D, M4 - 300, 760, 0.9),
   ck("rome could not always", D, M4 - 250, 700, 1.15), ck("and that was the good part", D, M4 - 250, 700, 0.85), [536.3, 25500, 580, 0.42],
 ];
@@ -108,10 +108,13 @@ const Cumple: React.FC<{ t: number }> = ({ t }) => {
   const a = T("and one letter", D), h = T("it is one of the oldest surviving", D);
   return (
     <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #ffb3c8, #8a2a5a 85%)" }}>
-      <Persona x={230} y={1050} h={460} t={t} seed={77} ropa={{ ...CIVIL(1), tunica: C.violeta, tunica2: "#3a1a7a" }} {...gesto(t, [[a, "habla"], [T("writes to her friend", D), "escribe"], [T("come to my birthday", D), "festeja"], [h, "lee"]])} />
-      <TablillaGrande t={t} t0={T("writes to her friend", D)} x={1100} y={480} w={1380} vel={34} titulo="CLAUDIA SEVERA → SULPICIA LEPIDINA · VINDOLANDA"
+      {t > T("come to my birthday", D) && <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={200}>{Array.from({ length: 16 }, (_, i) => <path key={i} d={`M ${i * 124} ${40 + Math.sin(i * 0.8) * 6} l 62 ${20 + 6 * Math.sin(t * 3 + i)} l 62 -20 Z`} fill={[C.ambar, C.rosa, C.teal, C.lima][i % 4]} opacity={prog(t, T("come to my birthday", D) + i * 0.04, T("come to my birthday", D) + 0.3 + i * 0.04)} />)}<path d="M 0 40 Q 960 90 1920 40" stroke="#fff" strokeWidth={4} fill="none" /></svg>}
+      {t > T("come to my birthday", D) && t < h && <svg style={{ position: "absolute", left: 760, top: 760, overflow: "visible", transform: `scale(${ent(t, T("come to my birthday", D) + 0.3)})`, transformOrigin: "120px 220px" }} width={240} height={220}><rect x={20} y={110} width={200} height={100} rx={14} fill="#f6d8e4" stroke="#8a2a5a" strokeWidth={6} /><rect x={50} y={50} width={140} height={70} rx={12} fill="#ffe9f1" stroke="#8a2a5a" strokeWidth={6} />{[80, 120, 160].map((x) => <g key={x}><rect x={x - 5} y={18} width={10} height={34} fill="#fff" /><ellipse cx={x} cy={8 + Math.sin(t * 12 + x) * 2} rx={7} ry={12} fill="#ffb020" /></g>)}</svg>}
+      <Persona x={1810} y={1050} h={380} t={t} seed={78} mujer flip ropa={{ ...CIVIL(4), tunica: C.teal, tunica2: "#1c6a62", pelo: "#2a1a10" }} aparece={T("writes to her friend", D)} {...gesto(t, [[T("writes to her friend", D), "lee"], [T("come to my birthday", D) + 0.4, "festeja"], [h, "habla"]])} />
+      <Persona x={230} y={1050} h={460} t={t} seed={77} mujer ropa={{ ...CIVIL(1), tunica: C.violeta, tunica2: "#3a1a7a", pelo: "#6b3a1f" }} {...gesto(t, [[a, "habla"], [T("writes to her friend", D), "escribe"], [T("come to my birthday", D), "festeja"], [h, "lee"]])} />
+      <TablillaGrande t={t} t0={T("writes to her friend", D)} x={1030} y={450} w={1220} vel={34} titulo="CLAUDIA SEVERA → SULPICIA LEPIDINA"
         lineas={["“On the 11th of September, sister,", "for the day of my birthday,", "come to us… you will make the day", "more pleasant by your presence.”"]} />
-      {t > h && <div style={{ position: "absolute", left: 480, right: 120, top: 890, height: 110, background: "#fff", borderRadius: 20, transform: `scale(${ent(t, h)}) rotate(-1.5deg)`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Segoe Script','Brush Script MT',cursive", fontSize: 56, color: "#3a1a5a" }}>“Farewell, sister, my dearest soul.”</div>}
+      {t > h && <div style={{ position: "absolute", left: 480, right: 120, top: 890, height: 110, background: "#fff", borderRadius: 20, transform: `scale(${ent(t, h)}) rotate(-1.5deg)`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: fontMano, fontWeight: 700, fontSize: 56, color: "#3a1a5a" }}>“Farewell, sister, my dearest soul.”</div>}
       <Chip t={t} t0={a} t1={T("writes to her friend", D)} text="A BIRTHDAY INVITATION" color={C.rosa} x={1100} y={460} centro size={80} />
       <Chip t={t} t0={T("a woman named", D)} t1={T("writes to her friend", D) + 0.2} text="CLAUDIA SEVERA · A COMMANDER'S WIFE" color={C.violeta} x={1100} y={600} centro size={52} />
       {t > h && <Chip t={t} t0={h + 0.3} text="A WOMAN'S OWN HANDWRITING · LATIN" color={C.ambar} tinta={C.noche} x={1100} y={130} centro size={54} />}
@@ -126,7 +129,7 @@ const Partes: React.FC<{ t: number }> = ({ t }) => {
       {Array.from({ length: 14 }, (_, i) => <div key={i} style={{ position: "absolute", left: 120 + (i % 2) * 60, top: 900 - i * 34 - (1 - ent(t, T("the officers file", D) + i * 0.08)) * 600, width: 380, height: 40, background: i % 2 ? "#c9a46a" : "#d8b87a", border: "4px solid #8a6a3a", borderRadius: 6 }} />)}
       {Array.from({ length: 14 }, (_, i) => <div key={"b" + i} style={{ position: "absolute", left: 1420 + (i % 2) * 40, top: 900 - i * 34 - (1 - ent(t, T("duty reports", D) + i * 0.08)) * 600, width: 380, height: 40, background: i % 2 ? "#c9a46a" : "#d8b87a", border: "4px solid #8a6a3a", borderRadius: 6 }} />)}
       <Persona x={1640} y={1060} h={400} t={t} seed={91} ropa={CENTURION} casco="centurion" {...gesto(t, [[T("the officers file", D), "escribe"], [T("duty reports", D), "golpea"], [T("who was sent to the workshops", D), "escribe"], [T("who was sent to collect", D), "señala"]])} />
-      <Cu t={t} w="the officers file" d={D} de={0} a={37} sube={6} dur={9} x={960} y={120} size={70} pre="REPORTS TODAY: " color="#fff" />
+      <Cu t={t} w="the officers file" d={D} de={12} a={37} sube={6} dur={9} x={960} y={120} size={70} pre="REPORTS TODAY: " color="#fff" />
       <Papiro t={t} x={900} y={580} w={820} t0={T("the officers file", D) + 0.2} tacha={false} titulo="TODAY · CENTURY OF FLAVIUS" items={it.map(([w, tx]) => ({ txt: tx, t0: T(w, D), monto: "✓" }))} />
     </AbsoluteFill>
   );
@@ -140,8 +143,8 @@ export const W4: React.FC<{ t: number; c: Cam }> = ({ t }) => {
   return (
     <>
       {/* vos, de guardia arriba (y bajando) */}
-      {!aduana && t < T("and one letter", D) && <Persona x={YO4} y={abajo ? BASE : TOP + (t > T("then you climb down", D) ? 300 * prog(t, T("then you climb down", D), T("then you climb down", D) + 0.6) : 0)} h={230} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" capa="#3f6b2a"
-        {...gesto(t, [[432, "encoge"], [T("absolutely nothing", D), "duerme"], [T("you are posted", D), "triste"], [T("your job is to stand", D), "habla"], [T("in the wind", D), "tiembla"], [T("then you climb down", D), "encoge"], [T("so the soldiers did", D), "duerme"], [T("they invented ways", D), "festeja"]])} />}
+      {!aduana && (t < T("and one letter", D) || t > T("rome could not always", D) - 0.3) && <Persona x={YO4} y={abajo ? BASE : TOP + (t > T("then you climb down", D) ? 300 * prog(t, T("then you climb down", D), T("then you climb down", D) + 0.6) : 0)} h={230} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" capa="#3f6b2a"
+        {...gesto(t, [[432, "encoge"], [T("absolutely nothing", D), "duerme"], [T("you are posted", D), "triste"], [T("your job is to stand", D), "habla"], [T("in the wind", D), "tiembla"], [T("then you climb down", D), "encoge"], [T("so the soldiers did", D), "duerme"], [T("they invented ways", D), "festeja"], [T("rome could not always", D) - 0.3, "tiembla"], [T("it could always keep", D), "lee"], [T("and that was the good part", D), "festeja"]])} />}
       {t > T("someone else climbs up", D) && t < T("there is a gate", D) && <Persona x={YO4 + 250} y={TOP} h={230} t={t} seed={27} ropa={AUX(4)} casco="legion" expr="triste" aparece={T("someone else climbs up", D)} />}
       {/* la guarnición del milecastle */}
       {t > T("you are posted", D) && t < T("or worse", D) + 0.4 && Array.from({ length: 14 }, (_, i) => <Persona key={i} x={M4 - 640 + i * 98} y={TOP - 120} h={170} t={t} seed={110 + i} ropa={AUX(i)} casco="legion" aparece={T("you are posted", D) + 0.6 + i * 0.07} {...gesto(t, [[T("you are posted", D), ["habla", "duerme", "encoge", "triste"][i % 4] as Gesto]])} />)}

@@ -2,6 +2,7 @@ import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Rayos, Emote, cabeza, Pergamino, Aguila, Casa } from "./kit";
 import { Craneo } from "./kit2";
+import { BRIT, IRL } from "./T6";
 import { TOP, MC, K, Cam, Pal, pant, Plano, Relampago } from "./mundo";
 import { Yo, Otro, Picto, Ojos, Rayitas, Pin, DiplomaBronce, Gr, Cu, Sale } from "./kit3";
 
@@ -89,7 +90,7 @@ export const N0: React.FC<{ t: number; c: Cam }> = ({ t }) => {
   const baja = t > 30 ? prog(t, 30.5, 31.2) : 0;
   return (
     <div style={{ position: "absolute", left: 0, top: 0, transform: `translateY(${baja * 260}px)` }}>
-      {Array.from({ length: 9 }, (_, i) => <Picto key={i} x={(t > 30 ? 1700 : 560) + i * 130 + (i % 2) * 40} y={330 + (i % 3) * 18} s={0.6 + (i % 3) * 0.1} t={t} seed={i + 2} sube={t > 30 ? 30.2 : 15.38 + i * 0.07} grita={t < 17 || t > 30.4} />)}
+      {Array.from({ length: 9 }, (_, i) => <Picto key={i} x={(t > 30 ? 1700 : 460) + i * 190 + (i % 2) * 40} y={360 + (i % 3) * 24} s={1.15 + (i % 3) * 0.15} t={t} seed={i + 2} sube={t > 30 ? 30.2 : 15.38 + i * 0.07} grita={t < 17 || t > 30.4} />)}
       {Array.from({ length: 6 }, (_, i) => t < 17 ? <Ojos key={i} x={520 + i * 190} y={250 + (i % 2) * 40} t={t} t0={15.3 + i * 0.05} s={0.8} seed={i} /> : null)}
     </div>
   );
@@ -99,8 +100,6 @@ export const N0: React.FC<{ t: number; c: Cam }> = ({ t }) => {
 export const S0: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
   if (t > 49.5) return null;
   const ojo = pant(YX + 20, CAB.y + 0, c);
-  const [mx0] = pant(-9000, 600, c);
-  const [mx1] = pant(47000, 600, c);
   return (
     <>
       {/* pines de las 7 trampas sobre los milecastles: en PANTALLA (en el mundo eran de escala 26 = capas de ~4700 px que
@@ -120,20 +119,27 @@ export const S0: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       </Plano>
       <Gr t={t} w="end of the world" d={4} txt="THE END OF THE WORLD" y={170} size={120} c={C.crema} dur={1.2} />
       <Sale t={t} t0={7.0} t1={8.1}><Chip t={t} t0={7.0} text="IT'S A WALL." color={C.violeta} x={960} y={150} centro size={80} /></Sale>
-      {/* 73 millas de mar a mar */}
-      {t > 8.2 && t < 13.8 && (
-        <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
-          <line x1={mx0} y1={430} x2={mx0 + (mx1 - mx0) * prog(t, 8.22, 9.3)} y2={430} stroke="#fff" strokeWidth={8} strokeDasharray="20 14" />
-          <line x1={mx0} y1={400} x2={mx0} y2={460} stroke="#fff" strokeWidth={8} />
-          {t > 9.3 && <line x1={mx1} y1={400} x2={mx1} y2={460} stroke="#fff" strokeWidth={8} />}
-        </svg>
-      )}
+      {/* 73 millas de mar a mar: el cuello de Britania (×3) con el muro que se dibuja de costa a costa */}
+      <Plano t={t} t0={8.2} t1={13.75} fondo="#1b3a6a">
+        <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 55%, #3d7fc9, #1b3a6a 85%)" }}>
+          <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+            <g transform={`translate(985 640) scale(${3 - 0.25 * prog(t, 8.2, 13.7)}) translate(-985 -522)`}>
+              <path d={IRL} fill="#5f8a4a" stroke="#fff" strokeWidth={2} />
+              <path d={BRIT} fill="#7fa05a" stroke="#fff" strokeWidth={2} />
+              <line x1={872} y1={524} x2={1098} y2={518} stroke="#f6efe2" strokeWidth={6} strokeLinecap="round" pathLength={1} strokeDasharray={`${prog(t, 8.4, 9.6)} 1`} />
+              {[0, 1, 2, 3, 4, 5, 6].map((k) => <rect key={k} x={878 + k * 35} y={514 - k * 0.9} width={7} height={9} fill="#b89a6a" opacity={prog(t, 8.5 + k * 0.16, 8.7 + k * 0.16)} />)}
+            </g>
+            {Array.from({ length: 14 }, (_, k) => { const q = ((t - 8.2) * 0.35 + k / 14) % 1; return <path key={k} d={`M ${(k % 2 ? 200 : 1480) + (k * 37) % 200} ${300 + (k * 61) % 600 + Math.sin(t + k) * 8} q 20 -10 40 0 t 40 0`} stroke="#9fd0ff" strokeWidth={5} fill="none" opacity={0.6 * Math.sin(q * Math.PI)} />; })}
+          </svg>
+          <Yo x={1580} y={1040} h={300} t={t} frio expr={t < 11 ? "sorpresa" : "triste"} mira={-0.6} />
+        </AbsoluteFill>
+      </Plano>
       <Cu t={t} w="73 miles" d={7} de={0} a={73} sube={1.0} dur={5.3} y={330} size={190} suf=" MILES" color={C.ambar} />
-      <Sale t={t} t0={10.54} t1={13.8}><Chip t={t} t0={10.54} text="IRISH SEA" color={C.teal} tinta={C.noche} x={Math.max(170, mx0)} y={700} centro size={50} /></Sale>
-      <Sale t={t} t0={10.9} t1={13.8}><Chip t={t} t0={10.9} text="NORTH SEA" color={C.teal} tinta={C.noche} x={Math.min(1750, mx1)} y={700} centro size={50} /></Sale>
+      <Sale t={t} t0={10.54} t1={13.8}><Chip t={t} t0={10.54} text="IRISH SEA" color={C.teal} tinta={C.noche} x={420} y={700} centro size={58} /></Sale>
+      <Sale t={t} t0={10.9} t1={13.8}><Chip t={t} t0={10.9} text="NORTH SEA" color={C.teal} tinta={C.noche} x={1430} y={520} centro size={58} /></Sale>
       <Gr t={t} w="cold" d={11} txt="COLD." x={700} y={850} size={130} c="#bfe6ff" dur={1.4} />
       <Gr t={t} w="wet neck" d={11} txt="WET." x={1220} y={850} size={130} c="#7fd6ff" dur={0.9} />
-      <Sale t={t} t0={13.22} t1={14.25}><Chip t={t} t0={13.22} text="NORTHERN BRITAIN" color={C.violeta} x={960} y={960} centro size={64} /></Sale>
+      <Sale t={t} t0={12.4} t1={13.75}><Chip t={t} t0={12.4} text="NORTHERN BRITAIN" color={C.violeta} x={760} y={960} centro size={64} /></Sale>
       {/* el otro lado / tu lado */}
       <Sale t={t} t0={14.42} t1={16.6}><Chip t={t} t0={14.42} text="↑ THE OTHER SIDE" color="#2a2350" x={960} y={110} centro size={60} /></Sale>
       <Sale t={t} t0={15.6} t1={16.6}><Chip t={t} t0={15.6} text="PEOPLE WHO HATE YOU" color={C.rojo} x={960} y={960} centro size={80} /></Sale>
@@ -148,15 +154,15 @@ export const S0: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Gr t={t} w="rain" d={17} txt="RAIN." y={180} size={170} c="#bfe6ff" dur={1.0} />
       {/* el trato */}
       {t > 18.72 && t < 20.4 && <Pergamino x={1450} y={520} w={520} abre={prog(t, 18.72, 19.3) * 0.75} titulo="THE DEAL" lineas={6} firma={prog(t, 19.5, 20.2)} />}
-      {t > 18.9 && t < 20.4 && ["25 YEARS ✓", "LOW PAY ✓", "CITIZENSHIP ✓"].map((k, i) => <Chip key={k} t={t} t0={19.0 + i * 0.35} text={k} color={i === 2 ? C.oro : "#fff"} tinta={C.noche} x={1450} y={430 + i * 90} centro size={46} />)}
+      {t > 18.9 && t < 20.4 && ["25 YEARS ✓", "IF STILL ALIVE ✓", "CITIZENSHIP ✓"].map((k, i) => <Chip key={k} t={t} t0={19.0 + i * 0.35} text={k} color={i === 2 ? C.oro : "#fff"} tinta={C.noche} x={1450} y={430 + i * 90} centro size={46} />)}
       <Cu t={t} w="25 years" d={19} de={0} a={25} sube={0.8} dur={2.6} x={1380} y={330} size={210} suf=" YEARS" color={C.ambar} />
       <Cu t={t} w="years on this wall" d={19} de={1} a={9131} sube={1.7} dur={2.0} x={1380} y={520} size={80} pre="DAY " color="#fff" dt={0.2} />
       {t > 20.4 && t < 22.4 && <AbsoluteFill style={{ background: "#0b0826", opacity: 0.35 * (0.5 + 0.5 * Math.sin(t * 40)) }} />}
       <Sale t={t} t0={23.08} t1={24.5}><Craneo x={1460} y={460} t={t} t0={23.08} s={1.5} rot={Math.sin(t * 10) * 6} /></Sale>
       {t > 23.1 && t < 24.5 && (
-        <div style={{ position: "absolute", left: 1160, top: 640, width: 600, height: 54, borderRadius: 27, background: "#2a1530", border: "6px solid #fff", overflow: "hidden" }}>
+        <div style={{ position: "absolute", left: 1160, top: 640, width: 640, height: 76, borderRadius: 38, background: "#2a1530", border: "6px solid #fff", overflow: "hidden" }}>
           <div style={{ width: `${100 - 78 * prog(t, 23.2, 24.2)}%`, height: "100%", background: `linear-gradient(90deg, ${C.rojo}, #ff8a5a)` }} />
-          <div style={{ position: "absolute", inset: 0, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 32, lineHeight: "42px", color: "#fff" }}>SURVIVAL ODDS</div>
+          <div style={{ position: "absolute", inset: 0, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 42, lineHeight: "64px", color: "#fff", WebkitTextStroke: "6px #2a1530", paintOrder: "stroke fill" }}>SURVIVAL ODDS</div>
         </div>
       )}
       <Sale t={t} t0={23.46} t1={24.5}><Chip t={t} t0={23.46} text="IF YOU'RE STILL ALIVE" color={C.rojo} x={960} y={950} centro size={70} /></Sale>
@@ -165,6 +171,8 @@ export const S0: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Sale t={t} t0={24.64} t1={27.0}><div style={{ position: "absolute", inset: 0, transform: `translateY(${(1 - prog(t, 24.64, 25.3)) * -500}px)` }}><DiplomaBronce x={1400} y={430} t={t} t0={24.64} abre={prog(t, 25.1, 25.8)} s={0.9} /></div></Sale>
       <Sale t={t} t0={25.86} t1={27.0}><Chip t={t} t0={25.86} text="★ ROMAN CITIZEN ★" color={C.oro} tinta={C.noche} x={1400} y={780} centro size={64} /></Sale>
       <Emote t={t} t0={25.9} t1={27} tipo="brillos" {...(() => { const [x, y] = pant(YX, CAB.y, c); return { x, y }; })()} s={c.z * 0.4} />
+      {/* de dónde venían los de la fila */}
+      {t > 31.2 && t < 35.2 && ["BELGIUM", "SYRIA", "SPAIN", "IRAQ", "HOLLAND", "MOROCCO"].map((n, i) => { const [x, y] = pant(FILA[i], TOP - 330 - (i % 2) * 70, c); return <Chip key={n} t={t} t0={31.2 + i * 0.12} text={n} color={[C.ambar, C.rojo, C.teal, C.violeta, C.lima, C.naranja][i]} tinta={i === 0 || i === 2 || i === 4 ? C.noche : "#fff"} x={x} y={y} centro size={Math.max(26, 40 * c.z)} />; })}
       {/* la parte rara */}
       <Sale t={t} t0={27.04} t1={28.5}><Chip t={t} t0={27.2} text="THE STRANGE PART" color={C.violeta} x={960} y={150} centro size={76} /></Sale>
       <Sale t={t} t0={30.46} t1={31.7}><Chip t={t} t0={30.46} text="KEEPING THE BARBARIANS OUT" color="#2a2350" x={960} y={140} centro size={62} /></Sale>

@@ -40,14 +40,14 @@ const BARRO = "#6b4a2f";
 // el muro sobre su cresta de roca negra, viento que llega del Atlántico (corte)
 const Cresta: React.FC<{ t: number }> = ({ t }) => {
   const a = T("the wind sill", D), b = T("with cliffs facing north", D), c = T("it is also exactly", D);
-  const up = prog(t, a - 0.6, a + 0.4);
+  const p0 = T("the central part", D) + 0.6, up = prog(t, p0, p0 + 0.9);
   return (
     <AbsoluteFill style={{ background: "linear-gradient(180deg,#5c6f8f,#a9b8cc)" }}>
       <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
         <path d={`M 0 1080 L 0 ${980 - 60 * up} L 420 ${960 - 120 * up} L 700 ${880 - 320 * up} L 760 ${880 - 420 * up} L 900 ${880 - 440 * up} L 1300 ${900 - 360 * up} L 1920 ${940 - 200 * up} L 1920 1080 Z`} fill="#2a2a36" />
         <path d={`M 700 ${880 - 320 * up} L 760 ${880 - 420 * up} L 790 ${880 - 300 * up} L 740 ${880 - 200 * up} Z`} fill="#40404f" opacity={prog(t, b, b + 0.4)} />
         {Array.from({ length: 6 }, (_, i) => <path key={i} d={`M ${720 + i * 90} ${470 + i * 8} l 26 -34 l 26 34`} stroke="#5a5a6e" strokeWidth={6} fill="none" opacity={up} />)}
-        <rect x={860} y={880 - 440 * up - 130} width={90} height={130} fill="#c9b8a0" stroke="#8a7a64" strokeWidth={6} opacity={prog(t, a + 0.3, a + 0.7)} />
+        <rect x={860} y={880 - 440 * up - 130} width={90} height={130} fill="#c9b8a0" stroke="#8a7a64" strokeWidth={6} opacity={up} />
         <path d={`M 940 ${1080} L 1920 1080 L 1920 ${940 - 200 * up} L 1300 ${900 - 360 * up} Z`} fill="#7fb34a" opacity={0.75} />
         {t > c && Array.from({ length: 16 }, (_, i) => {
           const k = ((t - c) * 1.3 + i * 0.13) % 1;
@@ -58,7 +58,7 @@ const Cresta: React.FC<{ t: number }> = ({ t }) => {
       {up > 0.5 && <Persona {...gesto(t, [[a, "señala"], [T("it is beautiful", D) - 0.6, "festeja"], [c, "miedo"], [T("with nothing to stop", D), "tiembla"]])} x={905} y={880 - 440 * up - 130} h={240} t={t} seed={3} ropa={TUNGRO} casco="legion" malla capa="#3f6b2a" inclina={t > c ? -14 : 0} />}
       <div style={{ position: "absolute", left: 60, top: 60, fontFamily, fontWeight: 700, fontSize: 54, color: "#fff" }}>← NORTH</div>
       <div style={{ position: "absolute", right: 60, top: 60, fontFamily, fontWeight: 700, fontSize: 54, color: "#fff" }}>SOUTH →</div>
-      {t > a && <Chip t={t} t0={a} text="THE WHIN SILL" color="#2a2a36" x={1380} y={430} centro size={64} />}
+      {t > Math.min(a, p0 + 0.5) && <Chip t={t} t0={Math.min(a, p0 + 0.5)} text="THE WHIN SILL" color="#2a2a36" x={1380} y={430} centro size={64} />}
       {t > b && <Chip t={t} t0={b} text="CLIFFS FACING NORTH" color={C.violeta} x={520} y={820} centro size={50} />}
       {t > c && <Chip t={t} t0={c} text="ATLANTIC WIND →" color={C.teal} tinta={C.noche} x={460} y={200} centro size={62} />}
       {t > T("with nothing to stop", D) && <Grande t={t} t0={T("with nothing to stop", D)} text="NOTHING TO STOP IT" y={980} size={84} color={C.ambar} />}
@@ -112,7 +112,7 @@ const Edicto: React.FC<{ t: number }> = ({ t }) => {
           return <div key={i} style={{ marginLeft: 70, marginTop: 34, fontFamily, fontWeight: 700, fontSize: 50, color: hl ? "#fff" : "#4a2a17", background: hl ? C.rojo : "transparent", width: 1060, padding: "6px 14px", borderRadius: 12, opacity: t > a + 0.3 + i * 0.2 ? 1 : 0 }}>{l}</div>;
         })}
       </div>
-      <Persona x={170} y={1060} h={420} t={t} seed={3} ropa={TUNGRO} casco="legion" malla capa="#3f6b2a" pantalon="#6b4a2f" {...gesto(t, [[a + 0.2, "lee"], [b, "señala"], [b + 1.4, "festeja"]])} />
+      <Persona x={210} y={1030} h={370} t={t} seed={3} ropa={TUNGRO} casco="legion" malla capa="#3f6b2a" pantalon="#6b4a2f" {...gesto(t, [[a + 0.2, "lee"], [b, "señala"], [b + 1.4, "festeja"]])} />
       {t > b && <Chip t={t} t0={b + 0.2} text="THE BRITISH HOODED CLOAK" color={C.ambar} tinta={C.noche} x={960} y={1010} centro size={58} />}
     </AbsoluteFill>
   );
@@ -125,7 +125,7 @@ const Excava: React.FC<{ t: number }> = ({ t }) => {
     <AbsoluteFill style={{ background: "#9fc6e0" }}>
       {["#7fb34a", "#8a6a3a", "#6b4a2f", "#4a3420", "#2f2418"].map((col, i) => <div key={i} style={{ position: "absolute", left: 0, right: 0, top: 300 + i * 160, height: 160, background: col }} />)}
       <div style={{ position: "absolute", left: 640, top: 300, width: 640, height: 640 * prog(t, a, a + 1.2), background: "rgba(20,12,8,.55)", borderRadius: "0 0 40px 40px" }} />
-      <Persona x={960} y={300 + 600 * prog(t, a, a + 1.2) * 0.9} h={300} t={t} seed={77} ropa={CIVIL(2)} expr={t > a + 1.6 ? "sorpresa" : "neutro"} bD={60 + Math.sin(t * 8) * 30} cD={40} />
+      <Persona x={1340} y={330} h={320} t={t} seed={77} ropa={CIVIL(2)} flip {...gesto(t, [[a, "cava"], [a + 1.6, "sorpresa"], [b, "festeja"], [c, "señala"]])} />
       {Array.from({ length: n }, (_, i) => {
         const x = 700 + ((i * 137) % 520), y = 820 - ((i * 53) % 160) - (i < 6 ? 0 : 0);
         return <div key={i} style={{ position: "absolute", left: x, top: y, width: 110, height: 50, background: "#c9a46a", border: "4px solid #8a6a3a", borderRadius: 6, transform: `rotate(${(i * 23) % 30 - 15}deg)` }}><div style={{ margin: "12px 10px", height: 4, background: "#1d120a", opacity: 0.7 }} /><div style={{ margin: "0 10px", height: 4, width: 60, background: "#1d120a", opacity: 0.7 }} /></div>;
@@ -133,7 +133,7 @@ const Excava: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={a} text="VINDOLANDA · 1973" color={C.violeta} x={960} y={140} centro size={64} />
       {[["LETTERS", "letters"], ["LISTS", "lists"], ["REPORTS", "reports"]].map(([tx, w], i) => t > T(w, D) && t < b + 0.4 ? <Chip key={i} t={t} t0={T(w, D)} text={tx} color={[C.rojo, C.teal, C.ambar][i]} tinta={i ? C.noche : "#fff"} x={400 + i * 560} y={240} centro size={56} /> : null)}
       {t > b && <Grande t={t} t0={b} text="HUNDREDS" y={240} size={120} color={C.ambar} />}
-      {t > c && <Chip t={t} t0={c} text="WET, AIRLESS MUD = ~2,000 YEARS" color="#2f2418" x={960} y={1010} centro size={52} />}
+      {t > c && <Chip t={t} t0={c} t1={T("most of them were written", D)} text="WET MUD = 2,000 YEARS SAFE" color="#2f2418" x={960} y={1000} centro size={56} />}
     </AbsoluteFill>
   );
 };
@@ -151,12 +151,12 @@ const Parte: React.FC<{ t: number }> = ({ t }) => {
         const cx = 110 + (i % 47) * 31, cy = 280 + Math.floor(i / 47) * 36;
         return t > T("the first cohort", D) + i * 0.002 ? <div key={i} style={{ position: "absolute", left: cx, top: cy, width: 22, height: 30, borderRadius: "11px 11px 4px 4px", background: col(i) }} /> : null;
       })}
-      <Cu t={t} w="752 men" d={D} de={0} a={752} sube={1} dur={3.2} y={170} size={130} suf=" ON THE BOOKS" color="#fff" />
-      <Cu t={t} w="only 296" d={D} de={752} a={296} sube={0.8} dur={3.2} y={170} size={130} suf=" AT THE FORT" color={C.teal} />
+      <Cu t={t} w="752 men" d={D} de={0} a={752} sube={1} dur={Math.min(3.2, T("only 296", D) - T("752 men", D) - 0.3)} y={170} size={130} suf=" ON THE BOOKS" color="#fff" />
+      <Cu t={t} w="only 296" d={D} de={752} a={296} sube={0.8} dur={Math.min(3.2, T("31 were unfit", D) - T("only 296", D) - 0.3)} y={170} size={130} suf=" AT THE FORT" color={C.teal} />
       <Cu t={t} w="31 were unfit" d={D} de={0} a={31} sube={0.6} dur={2.0} y={170} size={130} suf=" UNFIT" color="#ff8aa0" />
-      {t > d1 && <Chip t={t} t0={d1} text="15 SICK" color={C.lima} tinta={C.noche} x={400} y={180} centro size={64} />}
-      {t > d2 && <Chip t={t} t0={d2} text="6 WOUNDED" color={C.rojo} x={960} y={180} centro size={64} />}
-      {t > d3 && <Chip t={t} t0={d3} text="10 · INFLAMED EYES" color={C.ambar} tinta={C.noche} x={1500} y={180} centro size={64} />}
+      {t > d1 && <Chip t={t} t0={d1} text="15 SICK" color={C.lima} tinta={C.noche} x={300} y={180} centro size={52} />}
+      {t > d2 && <Chip t={t} t0={d2} text="6 WOUNDED" color={C.rojo} x={760} y={180} centro size={52} />}
+      {t > d3 && <Chip t={t} t0={d3} text="10 · INFLAMED EYES" color={C.ambar} tinta={C.noche} x={1350} y={180} centro size={52} />}
       <Persona x={1760} y={1000} h={400} t={t} seed={91} ropa={{ ...AUX(0), tunica: "#a3202f", tunica2: "#5e0f1d" }} casco="centurion" {...gesto(t, [[T("the first cohort", D), "lee"], [b, "sorpresa"], [c, "enojado"], [d3, "niega"]])} />
       <Chip t={t} t0={T("the first cohort", D)} t1={b} text="1st COHORT OF TUNGRIANS" color={C.violeta} x={960} y={1000} centro size={56} />
       {t > T("men from belgium", D) && t < b && <Chip t={t} t0={T("men from belgium", D)} text="FROM BELGIUM · LIKE YOU" color={C.teal} tinta={C.noche} x={960} y={920} centro size={46} />}
@@ -186,6 +186,16 @@ const Termas: React.FC<{ t: number }> = ({ t }) => {
       {r.map(([n, col, w], i) => (
         <div key={i} style={{ position: "absolute", left: 120 + i * 580, top: 260, width: 520, height: 520, background: t > T(w, D) ? col : "#4a3a7a", borderRadius: 24, transition: "none", opacity: t > T(w, D) ? 1 : 0.4 }}>
           <div style={{ position: "absolute", top: 20, width: "100%", textAlign: "center", fontFamily, fontWeight: 700, fontSize: 52, color: "#fff", WebkitTextStroke: "6px #2a1530", paintOrder: "stroke fill" }}>{n}</div>
+          {i === 2 && t > T(w, D) && (
+            <>
+              <Persona x={260} y={470 + 18 * Math.sin(t * 1.4)} h={250} t={t} seed={44} ropa={TUNGRO} {...gesto(t, [[T(w, D), "sorpresa"], [T(w, D) + 0.8, "tiembla"]])} />
+              <svg style={{ position: "absolute", left: 0, top: 250 }} width={520} height={270}>
+                <path d={`M 0 ${40 + Math.sin(t * 3) * 8} ${Array.from({ length: 11 }, (_, k) => `L ${k * 52} ${40 + Math.sin(t * 3 + k * 0.9) * 10}`).join(" ")} L 520 270 L 0 270 Z`} fill="#bff3ff" opacity={0.6} />
+                {[0, 1, 2].map((k) => <rect key={k} x={90 + k * 140} y={20 + Math.sin(t * 2 + k) * 8} width={60} height={60} rx={10} fill="#fff" stroke="#8fdcea" strokeWidth={5} transform={`rotate(${15 + k * 20} ${120 + k * 140} ${50})`} />)}
+              </svg>
+            </>
+          )}
+          {i === 1 && t > T(w, D) && <Persona x={260} y={500} h={300} t={t} seed={45} ropa={AUX(5)} {...gesto(t, [[T(w, D), "festeja"], [T(w, D) + 1.2, "duerme"]])} />}
           {i < 2 && t > T(w, D) && Array.from({ length: 6 }, (_, k) => { const kk = (t * 0.6 + k / 6) % 1; return <div key={k} style={{ position: "absolute", left: 60 + k * 70, top: 440 - kk * 360, width: 70, height: 70, borderRadius: "50%", background: "#fff", opacity: 0.45 * (1 - kk) }} />; })}
         </div>
       ))}
@@ -193,7 +203,7 @@ const Termas: React.FC<{ t: number }> = ({ t }) => {
         {Array.from({ length: 10 }, (_, i) => <div key={i} style={{ position: "absolute", left: 30 + i * 108, top: 0, width: 40, height: 150, background: "#8a5a3a" }} />)}
         {t > f && Array.from({ length: 9 }, (_, i) => <div key={"f" + i} style={{ position: "absolute", left: 76 + i * 108, top: 70 - Math.abs(Math.sin(t * 9 + i)) * 30, width: 40, height: 80, borderRadius: "50% 50% 30% 30%", background: i % 2 ? "#ff7a3d" : "#ffb020" }} />)}
       </div>
-      {t > f && <Chip t={t} t0={f} text="FIRES UNDER THE FLOOR · ALL WINTER" color={C.naranja} x={960} y={1010} centro size={50} />}
+      {t > f && <Chip t={t} t0={f} text="FIRES UNDER THE FLOOR" color={C.naranja} x={960} y={1000} centro size={50} />}
       {(() => { const t0 = T("with a hot room", D); const x = t < f ? 1540 - 1160 * prog(t, t0 + 0.4, t0 + 2.4) : 380; return <Persona x={x} y={760} h={380} t={t} seed={3} ropa={TUNGRO} {...gesto(t, [[t0, "tiembla"], [T("a warm room", D), "encoge"], [f, "habla"], [feliz, "festeja"]])} camina={t > t0 + 0.4 && t < t0 + 2.4 ? 1.4 : 0} flip={t < t0 + 2.4} />; })()}
       <Chip t={t} t0={T("every fort had one", D)} t1={f} text="EVERY FORT HAD ONE" color={C.violeta} x={960} y={150} centro size={60} />
       {t > T("it was not rome", D) && <Chip t={t} t0={T("it was not rome", D)} text="ROME ✗" color="#2a2350" x={700} y={170} centro size={70} />}
@@ -256,7 +266,7 @@ export const S2: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       {t > T("then it rains sideways", D) && t < T("it snows", D) && Array.from({ length: 40 }, (_, i) => { const k = (t * 3 + i * 0.173) % 1; return <div key={i} style={{ position: "absolute", left: -200 + k * 2400, top: (i * 61) % 1080, width: 180, height: 6, borderRadius: 3, background: "#d6e6ff", opacity: 0.7 }} />; })}
       <Gr t={t} w="for a change" d={D} txt="FOR A CHANGE…" y={880} size={90} c={C.crema} dur={1.0} />
       <Gr t={t} w="the roads turn into mud" d={D} txt="MUD." y={200} size={170} c="#c9a36a" dur={1.3} />
-      {t > T("one merchant", D) && t < T("so you adapt", D) && <TablillaGrande t={t} t0={T("one merchant", D) + 0.4} x={1330} y={150} w={900} vel={26} titulo="A MERCHANT · VINDOLANDA TABLET"
+      {t > T("one merchant", D) && t < T("so you adapt", D) && <TablillaGrande t={t} t0={T("one merchant", D) + 0.4} x={1170} y={300} w={1320} vel={26} titulo="A MERCHANT · VINDOLANDA TABLET"
         lineas={["“I would have collected the goods already…", "…but I did not want to injure the animals", "while the roads are bad.”"]} />}
       <Ch t={t} w="so you adapt" d={D} txt="SO YOU ADAPT" y={150} c={C.teal} tinta={C.noche} size={66} dur={1.0} />
       <Ch t={t} w="no proper roman" d={D} txt="NO PROPER ROMAN WOULD…" y={150} c={C.rojo} size={60} dur={3.4} />
@@ -278,10 +288,10 @@ export const S2: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Plano t={t} t0={T("in the 1970s", D) - 0.1} t1={T("most of them were written", D) + 2.2} desde={[960, 760]} fondo="#9fc6e0"><Excava t={t} /></Plano>
       <Ch t={t} w="most of them were written" d={D} txt="WRITTEN ~AD 85-130" y={1000} c={C.ambar} tinta={C.noche} size={56} dur={4.2} dt={0.2} />
       <Ch t={t} w="the wall went up" d={D} txt="← AS THE WALL WENT UP" y={900} c={C.teal} tinta={C.noche} size={50} dur={1.4} />
-      <Gr t={t} w="a letter from home" d={D} txt="A LETTER FROM HOME" y={940} size={110} c={C.rosa} dur={1.2} />
+      <Gr t={t} w="a letter from home" d={D} txt="A LETTER FROM HOME" y={930} size={110} c="#fff" borde="#b0255a" dur={1.2} />
       {t > T("it says", D) && t < T("somewhere", D) + 0.2 && (
         <>
-          <TablillaGrande t={t} t0={T("it says", D)} x={960} y={330} w={1500} vel={30} lineas={["“I have sent you… socks,", "two pairs of sandals,", "and two pairs of underpants.”"]} />
+          <TablillaGrande t={t} t0={T("it says", D)} x={1000} y={250} w={1300} vel={30} lineas={["“I have sent you… socks,", "two pairs of sandals,", "and two pairs of underpants.”"]} />
           <Ropa k="medias" x={520} y={800} t={t} t0={T("i have sent you socks", D) + 0.6} s={1.2} rot={-10} />
           <Ropa k="sandalia" x={860} y={810} t={t} t0={T("two pairs of sandals", D)} s={1.1} rot={6} />
           <Ropa k="sandalia" x={1000} y={830} t={t} t0={T("two pairs of sandals", D) + 0.25} s={1.1} rot={18} />

@@ -1,7 +1,7 @@
 import React from "react";
-import { AbsoluteFill } from "remotion";
+import { AbsoluteFill, Easing } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Casa } from "./kit";
-import { Fuerte, Bolsa } from "./kit2";
+import { Fuerte, Bolsa, Mula } from "./kit2";
 import { Persona, CIVIL } from "./persona";
 import { TOP, BASE, MC, K, Cam, Pal, Plano, CartelTrampa, pant, FUERTE_H } from "./mundo";
 import { Gr, Ch, T, ck, TUNGRO, AUX, Esqueleto, TablillaGrande, Picto, Ojos, gesto } from "./kit3";
@@ -30,7 +30,7 @@ export const sol5: [number, number, number, boolean?][] = [[538.8, 1450, 220], [
 // excavación de 1930: piso de arcilla, los dos esqueletos y el cuchillo
 const Piso: React.FC<{ t: number }> = ({ t }) => {
   const a = T("archaeologists in the 1930s", D), b = T("under the clay floor", D), c = T("they found two skeletons", D), k = T("and the man still had", D);
-  const cav = prog(t, b, c);
+  const cav = prog(t, a + 0.4, c);
   return (
     <AbsoluteFill style={{ background: "#2a1a10" }}>
       <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 360, background: "linear-gradient(180deg,#e8b98a,#c98a5a)" }} />
@@ -39,7 +39,8 @@ const Piso: React.FC<{ t: number }> = ({ t }) => {
       <div style={{ position: "absolute", left: 360, top: 360, width: 1200, height: 520 * cav, background: "rgba(10,6,4,.6)", borderRadius: "0 0 60px 60px" }} />
       {t > c - 0.2 && <Esqueleto x={760} y={640} s={1.1} t={t} t0={c} />}
       {t > c && <Esqueleto x={1240} y={720} s={1.1} t={t} t0={c + 0.4} rot={180} cuchillo={t > k} />}
-      <Persona x={330} y={430} h={300} t={t} seed={77} ropa={CIVIL(2)} {...gesto(t, [[a, "cava"], [c, "sorpresa"], [c + 1.4, "miedo"], [k, "señala"]])} />
+      <Persona x={t < c ? 520 : 300} y={t < c ? 420 + 420 * cav : 430} h={300} t={t} seed={77} ropa={CIVIL(2)} {...gesto(t, [[a, "cava"], [c, "sorpresa"], [c + 1.4, "miedo"], [k, "señala"]])} />
+      {t > a + 0.4 && t < c && Array.from({ length: 8 }, (_, i) => { const q = ((t - a) * 1.4 + i / 8) % 1; return <div key={i} style={{ position: "absolute", left: 600 + q * (220 + i * 30), top: 360 + 420 * cav - Math.sin(q * Math.PI) * (200 + i * 20), width: 26, height: 22, borderRadius: 8, background: "#a8783a", opacity: 1 - q * 0.5 }} />; })}
       <Chip t={t} t0={a} text="HOUSESTEADS · 1930s" color={C.violeta} x={960} y={110} centro size={60} />
       {t > b && t < c + 1 && <Chip t={t} t0={b} text="UNDER THE CLAY FLOOR" color="#a8783a" x={960} y={410} centro size={50} />}
       {t > T("a man and a woman", D) && <Chip t={t} t0={T("a man and a woman", D)} text="A MAN" color="#3d7fc9" x={1240} y={880} centro size={54} />}
@@ -56,8 +57,11 @@ const Informe: React.FC<{ t: number }> = ({ t }) => {
   return (
     <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #6b4ac9, #1b1240 80%)" }}>
       <Persona x={230} y={1050} h={440} t={t} seed={95} ropa={{ ...AUX(4), tunica: "#c9a23d", tunica2: "#8f7025" }} casco="legion" malla {...gesto(t, [[a, "escribe"], [T("they have no armor", D), "festeja"], [b, "señala"], [T("it is the only time", D), "habla"]])} />
-      <TablillaGrande t={t} t0={a + 0.5} x={1100} y={470} w={1360} vel={30} titulo="VINDOLANDA · A REPORT ON THE BRITONS"
-        lineas={["“…the Britons are unprotected by armour.", "There are very many cavalry…", "…nor do the Brittunculi mount", "in order to throw javelins.”"]} />
+      <div style={{ position: "absolute", inset: 0, transform: `scale(${1 + 0.55 * Easing.inOut(Easing.cubic)(prog(t, T("it is the only time", D), T("it is the only time", D) + 1.4))})`, transformOrigin: "960px 500px" }}>
+        <TablillaGrande t={t} t0={a + 0.5} x={1100} y={470} w={1360} vel={30} titulo="VINDOLANDA · A REPORT ON THE BRITONS"
+          lineas={["“…the Britons are unprotected by armour.", "There are very many cavalry…", "…nor do the Brittunculi mount", "in order to throw javelins.”"]} />
+        {t > T("it is the only time", D) + 0.6 && <div style={{ position: "absolute", left: 790, top: 452, width: 340, height: 84, borderRadius: 42, border: `8px solid ${C.rojo}`, transform: `scale(${ent(t, T("it is the only time", D) + 0.6)})` }} />}
+      </div>
       {[["they have no armor", "NO ARMOR", 520, C.rojo], ["they have lots of cavalry", "LOTS OF CAVALRY", 1400, C.teal]].map(([p, tx, x, col], i) => t > T(p as string, D) && t < b ? <Chip key={i} t={t} t0={T(p as string, D)} text={tx as string} color={col as string} tinta={i ? C.noche : "#fff"} x={(x as number) === 520 ? 820 : 1460} y={900} centro size={60} /> : null)}
       {t > b && <div style={{ position: "absolute", left: 560, right: 160, top: 780, height: 150, background: C.ambar, borderRadius: 24, transform: `scale(${ent(t, b + 0.4)}) rotate(-2deg)`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700, fontSize: 96, color: C.noche, letterSpacing: 4 }}>BRITTUNCULI</div>}
       {t > w && <Chip t={t} t0={w} t1={T("and it was written", D) - 0.2} text="= “WRETCHED LITTLE BRITONS”" color={C.rojo} x={1100} y={990} centro size={60} />}
@@ -105,6 +109,9 @@ export const W5: React.FC<{ t: number; c: Cam }> = ({ t }) => {
       {ROT.map(([w, tx], i) => t > T(w, D) && t < T("it was not always", D) ? <div key={i} style={{ position: "absolute", left: CASAS[i * 2] - 140, top: BASE - 380, width: 280, height: 80, background: "#f6e3b4", border: "7px solid #8a5a2a", borderRadius: 10, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 46, lineHeight: "66px", color: C.rojo, transform: `scale(${ent(t, T(w, D))}) rotate(${(i - 1) * 4}deg)` }}>{tx}</div> : null)}
       {/* chimeneas */}
       {t > crece + 2 && CASAS.map((x, i) => [0, 1, 2].map((k) => { const kk = (t * 0.4 + k / 3 + i * 0.1) % 1; return <div key={i + "-" + k} style={{ position: "absolute", left: x + 40 + kk * 40, top: BASE - 330 - kk * 260, width: 60 + kk * 70, height: 60 + kk * 70, borderRadius: "50%", background: "#d8d0c8", opacity: 0.5 * (1 - kk) }} />; }))}
+      {/* comerciantes que llegan con la mula mientras crece el pueblo */}
+      {t > crece && t < T("families that the law", D) - 0.3 && [0, 1].map((i) => <Persona key={"c" + i} x={VI + 1200 + i * 220 - 900 * prog(t, crece + i * 0.3, crece + 4 + i * 0.3)} y={BASE} h={230} t={t} seed={160 + i} ropa={CIVIL(i + 5)} flip camina={1.3} expr="feliz" />)}
+      {t > crece && t < T("families that the law", D) - 0.3 && <div style={{ position: "absolute", left: 0, top: 0, transform: "scaleX(-1)", transformOrigin: `${VI + 1650 - 900 * prog(t, crece, crece + 4)}px 0px` }}><Mula x={VI + 1650 - 900 * prog(t, crece, crece + 4)} y={BASE - 150} t={t} camina={1.5} s={0.75} carga /></div>}
       {/* familias, comerciantes, soldados */}
       {t > T("families that the law", D) - 0.3 && t < T("at the fort of", D) && (
         <>
@@ -167,7 +174,7 @@ export const S5: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       {t > T("still unsolved", D) && t < T("then there are the locals", D) && <div style={{ position: "absolute", left: 960 - 300, top: 330, width: 600, height: 150, border: `14px solid ${C.rojo}`, borderRadius: 20, fontFamily, fontWeight: 700, fontSize: 100, color: C.rojo, textAlign: "center", lineHeight: "122px", transform: `rotate(-8deg) scale(${1.6 - 0.6 * ent(t, T("still unsolved", D))})`, opacity: ent(t, T("still unsolved", D)) }}>UNSOLVED</div>}
       <Ch t={t} w="then there are the locals" d={D} txt="THE LOCALS BEYOND THE WALL" y={150} c={C.violeta} size={58} dur={2.2} />
       <Plano t={t} t0={T("one roman report", D) - 0.1} t1={T("but here is the problem", D) - 0.15} desde={[960, 400]} fondo="#1b1240"><Informe t={t} /></Plano>
-      <Ch t={t} w="and it was written" d={D} txt="BY A SOLDIER · ABOUT THE PEOPLE HE KEPT OUT" y={1000} c={C.teal} tinta={C.noche} size={46} dur={3.8} />
+      <Ch t={t} w="and it was written" d={D} txt="WRITTEN BY A SOLDIER ON THE WALL" y={1000} c={C.teal} tinta={C.noche} size={50} dur={3.8} />
       <Ch t={t} w="but here is the problem" d={D} txt="THE PROBLEM WITH “WRETCHED”…" y={150} c={C.rojo} size={58} dur={2.6} />
       <Plano t={t} t0={T("they know the land", D) - 0.1} t1={T("which brings us", D) - 0.15} desde={[960, 360]} fondo="#7fa05a"><Terreno t={t} /></Plano>
       <Ch t={t} w="which brings us" d={D} txt="THE REASON THE WALL WAS BUILT…" y={150} c="#2a2350" size={58} dur={3.2} />

@@ -21,7 +21,7 @@ type Props = {
   bI?: number; bD?: number; cI?: number; cD?: number; // hombro y codo, grados (0 = colgando)
   mira?: number; miraY?: number; flip?: boolean; casco?: "no" | "legion" | "centurion"; viejo?: boolean;
   sombra?: string; manoD?: React.ReactNode; manoI?: React.ReactNode; inclina?: number; opacity?: number; aparece?: number; ladea?: number; salta?: number;
-  pantalon?: string; capa?: string; malla?: boolean;
+  pantalon?: string; capa?: string; malla?: boolean; mujer?: boolean;
 };
 
 const BOCA: Record<Expr, string> = {
@@ -135,7 +135,15 @@ export const Persona: React.FC<Props> = (p) => {
         <g transform={`translate(0 ${respira * 0.6}) rotate(${ladea} 0 -360)`}>
           <circle cx={-96} cy={-440} r={18} fill={c(ropa.piel2)} />
           <circle cx={96} cy={-440} r={18} fill={c(ropa.piel2)} />
+          {/* mujer: pelo largo por detrás, rodete y aros */}
+          {p.mujer && casco === "no" && (
+            <g fill={c(p.viejo ? "#c9c4c0" : ropa.pelo)}>
+              <path d="M -110 -470 Q -160 -330 -104 -286 Q -40 -300 0 -296 Q 40 -300 104 -286 Q 160 -330 110 -470 Z" />
+              <circle cx={0} cy={-580} r={46} />
+            </g>
+          )}
           <ellipse cx={0} cy={-450} rx={100} ry={104} fill={piel} />
+          {p.mujer && <><circle cx={-96} cy={-414} r={9} fill="#f7c548" /><circle cx={96} cy={-414} r={9} fill="#f7c548" /></>}
           {/* pelo (rulos) */}
           {casco === "no" && (
             <g fill={c(p.viejo ? "#c9c4c0" : ropa.pelo)}>

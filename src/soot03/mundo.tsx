@@ -273,9 +273,12 @@ export const Plano: React.FC<{ t: number; t0: number; t1: number; desde?: [numbe
   const s = interpolate(t, [t1, t1 + 0.3], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.cubic) });
   const a = -300 + 2520 * e, b = -300 + 2520 * s;
   const clip = `polygon(${b + 300}px 0, ${a + 300}px 0, ${a}px 1080px, ${b}px 1080px)`;
+  // cámara orgánica: empuje lento + deriva de mano, para que ningún panel quede clavado
+  const d = t - t0, k = Math.min(1, d / Math.max(2, t1 - t0));
+  const z = 1 + 0.035 * Easing.inOut(Easing.sin)(k), dx = Math.sin(d * 0.37) * 12, dy = Math.cos(d * 0.29) * 7;
   return (
     <AbsoluteFill style={{ clipPath: clip, background: fondo, overflow: "hidden" }}>
-      <AbsoluteFill style={{ transform: `translateX(${(1 - e) * -120 + s * 120}px)` }}>{children}</AbsoluteFill>
+      <AbsoluteFill style={{ transform: `translateX(${(1 - e) * -120 + s * 120 + dx}px) translateY(${dy}px) scale(${z})`, transformOrigin: "50% 50%" }}>{children}</AbsoluteFill>
       {(e < 1 || s > 0) && <div style={{ position: "absolute", left: (e < 1 ? a : b) + 270 + 11, top: -40, width: 60, height: 1160, background: "#fff", transform: "skewX(-15.5deg)", transformOrigin: "0 0" }} />}
     </AbsoluteFill>
   );

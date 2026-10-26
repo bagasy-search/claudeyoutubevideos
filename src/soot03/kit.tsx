@@ -1,12 +1,14 @@
 import React from "react";
 import { AbsoluteFill, spring, interpolate, Easing } from "remotion";
 import { loadFont } from "@remotion/google-fonts/Fredoka";
+import { loadFont as loadMano } from "@remotion/google-fonts/Kalam";
 import { rnd, clamp } from "./lib";
 import MAPA from "./mapa.json";
 
 // Kit de Soot v3: TODO en código (cero imágenes). Cielos por capas, colinas con paralaje, objetos,
 // mapa de puntos real, chapitas y contadores. Paleta saturada de complementarios (vara del short de los zombies).
 export const { fontFamily } = loadFont("normal", { weights: ["500", "600", "700"] });
+export const fontMano = loadMano("normal", { weights: ["700"] }).fontFamily;
 export const FPS = 30;
 export const C = {
   noche: "#1b1240", noche2: "#2d1b69", violeta: "#5b2bb5", lila: "#9b7bf0", teal: "#2ec4d6", lima: "#9be15d",

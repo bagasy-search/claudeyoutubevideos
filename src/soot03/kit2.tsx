@@ -1,6 +1,6 @@
 import React from "react";
 import { rnd } from "./lib";
-import { C, ent, fontFamily, prog } from "./kit";
+import { C, ent, fontFamily, fontMano, prog } from "./kit";
 
 // Objetos del video completo (trampas 1-7). Todo vector plano saturado, sombra propia abajo-derecha y brillo arriba-izquierda.
 // Cada objeto se dibuja centrado en (x, y); con t/t0 entra con rebote (escala + giro) y con t1 sale.
@@ -285,7 +285,7 @@ export const Tablilla: React.FC<Pos & { texto?: string[] }> = ({ texto = [], ...
     <rect x={-316} y={-146} width={620} height={280} rx={14} fill="#c9a46a" />
     {Array.from({ length: 7 }, (_, i) => <path key={i} d={`M -300 ${-120 + i * 40} q 150 ${i % 2 ? 8 : -8} 300 0 t 300 0`} stroke="#b08a50" strokeWidth={3} fill="none" />)}
     <line x1={-6} y1={-146} x2={-6} y2={134} stroke="#8a6a3a" strokeWidth={6} />
-    {texto.map((l, i) => <text key={i} x={-280} y={-80 + i * 60} fontFamily="'Brush Script MT', cursive" fontStyle="italic" fontSize={46} fill="#2a1a10">{l}</text>)}
+    {texto.map((l, i) => <text key={i} x={-280} y={-80 + i * 60} fontFamily={fontMano} fontWeight={700} fontSize={46} fill="#2a1a10">{l}</text>)}
   </Obj>
 );
 export const Ropa: React.FC<Pos & { k: "medias" | "sandalia" | "calzon" }> = ({ k, ...p }) => (

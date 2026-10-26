@@ -4,6 +4,7 @@ import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Moneda, Bota, Pe
 import { Soldadito, Mula, Bolsa } from "./kit2";
 import { Persona } from "./persona";
 import { TOP, BASE, MC, K, Cam, Pal, Plano, CartelTrampa } from "./mundo";
+import { Laurel } from "./T1";
 import { Gr, Ch, T, ck, Yo, Otro, Carro, Barril, Burbuja, DiplomaBronce, Pin, gesto, Actua } from "./kit3";
 
 // TRAMPA 7 · EL FINAL (746,5-822 s). La línea de abastecimiento vuelve: hacia el 400 Roma saca ejércitos de Britania,
@@ -18,7 +19,7 @@ export const keys7: K[] = [
   [746.7, 36000, 560, 0.5], ck("remember the supply line", D, M7 - 1200, 600, 0.75), ck("by around the year 400", D, M7 - 600, 640, 0.55),
   ck("armies are being pulled", D, M7 + 400, 700, 0.7), ck("and something very small", D, M7, 600, 0.9), ck("think about what that means", D, YO7, 520, 1.2),
   ck("you have spent your whole life", D, YO7, 500, 1.45), ck("and now", D, YO7, 500, 1.6, 0), ck("no great final battle", D, YO7, 520, 1.0),
-  ck("just a letter and then silence", D, YO7 - 200, 540, 0.6), [801.9, YO7 - 300, 540, 0.45], ck("why did nobody want", D, 22000, 430, 0.04),
+  ck("just a letter and then silence", D, YO7 + 120, 470, 1.9), [801.9, YO7 - 300, 540, 0.45], ck("why did nobody want", D, 22000, 430, 0.04),
   [818.0, 22000, 430, 0.041], [821.9, 22000, 430, 0.042],
 ];
 export const amb7: [number, Pal][] = [[746.6, "atardecer"], [783.7, "atardecer"], [797.3, "gris"], [802.2, "dia"]];
@@ -45,9 +46,9 @@ const Linea: React.FC<{ t: number }> = ({ t }) => {
         );
       })}
       <Persona x={1500} y={1000} h={360} t={t} seed={97} ropa={{ tunica: "#8a5a2a", tunica2: "#5a3a1a", cinto: "#3a2410", piel: "#e8b48a", piel2: "#c98d66", pelo: "#3a2418" }} flip {...gesto(t, [[a, "carga"], [b, "sorpresa"], [b + 1.2, "encoge"]])} />
-      <Chip t={t} t0={a} t1={b} text="THE SUPPLY LINE" color={C.ambar} tinta={C.noche} x={960} y={180} centro size={64} />
-      {t > b && <Chip t={t} t0={b} text="THE SUPPLY LINE… STOPS." color={C.rojo} x={960} y={180} centro size={64} />}
-      <Grande t={t} t0={b + 0.3} text="TRAP #3 IS BACK" y={330} size={84} color={C.crema} />
+      <Chip t={t} t0={a} t1={b} text="THE SUPPLY LINE" color={C.ambar} tinta={C.noche} x={960} y={300} centro size={64} />
+      {t > b && <Chip t={t} t0={b} text="THE SUPPLY LINE… STOPS." color={C.rojo} x={960} y={300} centro size={64} />}
+      <Grande t={t} t0={b + 0.3} text="TRAP #3 IS BACK" y={450} size={84} color={C.crema} />
     </AbsoluteFill>
   );
 };
@@ -58,7 +59,7 @@ const Cadena: React.FC<{ t: number }> = ({ t }) => {
     ["no coins", "COINS", <Moneda x={0} y={0} r={70} t={t} />],
     ["no pay", "PAY", <Bolsa x={0} y={0} s={0.6} txt="PAY" />],
     ["no beer", "BEER", <Barril x={0} y={0} s={0.55} />],
-    ["no boots", "BOOTS", <Bota x={-60} y={-60} s={1.2} />],
+    ["no boots", "BOOTS", <Bota x={-20} y={0} s={1.2} />],
     ["no convoy", "CONVOY", <Carro x={0} y={0} s={0.35} t={0} />],
   ];
   return (
@@ -70,7 +71,7 @@ const Cadena: React.FC<{ t: number }> = ({ t }) => {
         return <Moneda key={i} x={200 + k * 1520} y={420 - Math.sin(k * Math.PI) * 180} r={44} t={t} gira={2} />;
       })}
       {t > m && t < T("no coins means", D) + 0.3 && <Grande t={t} t0={m + 0.6} text="NEW COINS: STOPPED." y={820} size={100} color={C.rojo} borde="#fff" />}
-      <Actua t={t} beats={[[m - 0.2, "camina"], [m + 1.4, "sorpresa"], [T("no coins means", D), "niega"], [T("no pay", D), "triste"], [T("no beer", D), "enojado"], [T("no boots", D), "tiembla"], [T("no convoy", D), "encoge"]]} x0={2050} x1={1760} y={1070} h={330} frio />
+      <Actua t={t} beats={[[m - 0.2, "camina"], [m + 1.4, "sorpresa"], [T("no coins means", D), "niega"], [T("no pay", D), "triste"], [T("no beer", D), "enojado"], [T("no boots", D), "tiembla"], [T("no convoy", D), "encoge"]]} x0={2100} x1={1720} y={1075} h={470} frio />
       {pasos.map(([w, tx, ico], i) => {
         const t0 = i === 0 ? T("no coins means", D) : T(w, D);
         if (t < t0) return null;
@@ -97,10 +98,13 @@ const Carta: React.FC<{ t: number }> = ({ t }) => {
   const a = T("the emperor honoros", D), s = T("it says", D);
   return (
     <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #7a2a9a, #1b1240 85%)" }}>
-      <Persona x={250} y={1040} h={440} t={t} seed={93} ropa={{ tunica: C.oro, tunica2: "#8f7025", cinto: "#5a3418", piel: "#f2c09a", piel2: "#d99a72", pelo: "#3a2418" }} capa="#7a2a9a" {...gesto(t, [[a, "escribe"], [s, "habla"], [T("you are on your own now", D), "señala"], [T("look after your own", D), "encoge"]])} />
+      <Persona x={250} y={1040} h={500} t={t} seed={93} ropa={{ tunica: C.oro, tunica2: "#8f7025", cinto: "#5a3418", piel: "#f2c09a", piel2: "#d99a72", pelo: "#3a2418" }} capa="#7a2a9a" {...gesto(t, [[a, "escribe"], [s, "habla"], [T("you are on your own now", D), "señala"], [T("look after your own", D), "encoge"]])} />
+      <Laurel x={250} y={1040 - 450 * (500 / 560) - 70 * (500 / 560)} s={0.85} />
       <Pergamino x={1120} y={570} w={1040} abre={prog(t, a + 0.2, a + 1.2)} lineas={t > T("you are on your own now", D) ? 0 : 7} firma={prog(t, T("look after your own", D) + 0.6, T("look after your own", D) + 1.6)} titulo="TO THE CITIES OF BRITAIN" />
-      {t > T("you are on your own now", D) && <Grande t={t} t0={T("you are on your own now", D)} text="YOU ARE ON YOUR OWN NOW." x={1120} y={520} size={72} color="#1b1240" borde="#f6efe2" />}
-      {t > T("look after your own", D) && <Grande t={t} t0={T("look after your own", D)} text="LOOK AFTER YOUR OWN DEFENSE." x={1120} y={650} size={60} color={C.rojo} borde="#f6efe2" />}
+      {t > T("you are on your own now", D) && <Grande t={t} t0={T("you are on your own now", D)} text="YOU ARE ON" x={1120} y={420} size={104} color="#1b1240" borde="#f6efe2" />}
+      {t > T("you are on your own now", D) && <Grande t={t} t0={T("you are on your own now", D) + 0.25} text="YOUR OWN NOW." x={1120} y={540} size={104} color="#1b1240" borde="#f6efe2" />}
+      {t > T("look after your own", D) && <Grande t={t} t0={T("look after your own", D)} text="LOOK AFTER YOUR" x={1120} y={690} size={72} color={C.rojo} borde="#f6efe2" />}
+      {t > T("look after your own", D) && <Grande t={t} t0={T("look after your own", D) + 0.2} text="OWN DEFENSE." x={1120} y={780} size={72} color={C.rojo} borde="#f6efe2" />}
       <Chip t={t} t0={T("according to a later", D)} t1={a} text="A LATER HISTORIAN SAYS…" color={C.violeta} x={1120} y={130} centro size={56} />
       {t > a && <Chip t={t} t0={a} text="EMPEROR HONORIUS" color={C.oro} tinta={C.noche} x={1120} y={130} centro size={60} />}
       {t > T("more or less", D) && t < T("you are on your own now", D) + 0.4 && <Chip t={t} t0={T("more or less", D)} text="(MORE OR LESS)" color="#2a2350" x={1120} y={985} centro size={44} />}
@@ -118,8 +122,15 @@ export const W7: React.FC<{ t: number; c: Cam }> = ({ t }) => {
       {/* los ejércitos se van del muro, hacia el sur (a la derecha) */}
       {t > sacan - 0.4 && t < viejo && Array.from({ length: 12 }, (_, i) => {
         const k = Math.max(0, t - sacan - i * 0.15);
-        return <Soldadito key={i} x={M7 - 900 + (i % 6) * 170 + k * 240} y={BASE - (i < 6 ? 0 : 60)} s={1.2} t={t} seed={300 + i} avanza={1} />;
+        return <Soldadito key={i} x={M7 - 1000 + (i % 6) * 230 + (i < 6 ? 0 : 110) + k * 240} y={BASE - (i < 6 ? 0 : 70)} s={i < 6 ? 1.25 : 1.05} t={t} seed={300 + i} avanza={1} />;
       })}
+      {t > sacan && t < viejo && (() => { const n = 8 - Math.round(8 * prog(t, sacan + 0.6, sacan + 3.6)); return (
+        <div style={{ position: "absolute", left: M7 + 260, top: TOP - 150, width: 0, height: 0 }}>
+          {Array.from({ length: n }, (_, i) => <div key={i} style={{ position: "absolute", left: -90 + (i % 4) * 46, top: -40 - Math.floor(i / 4) * 34, width: 44, height: 44, borderRadius: "50%", background: C.oro, border: "5px solid #8f7025" }} />)}
+          <div style={{ position: "absolute", left: -120, top: 0, width: 240, height: 130, background: "#8a5a2a", border: "8px solid #3a2410", borderRadius: 14 }} />
+          <div style={{ position: "absolute", left: -120, top: -100, width: 240, height: 40, background: "#a06a32", border: "8px solid #3a2410", borderRadius: 14, transform: "rotate(-24deg)", transformOrigin: "0 40px" }} />
+          {n === 0 && <div style={{ position: "absolute", left: -110, top: 150, fontFamily, fontWeight: 700, fontSize: 52, color: "#fff", WebkitTextStroke: "8px #1b1240", paintOrder: "stroke fill" }}>EMPTY</div>}
+        </div>); })()}
       {/* el puñado que queda en el muro */}
       {t > sacan && t < viejo && [0, 1].map((i) => <Otro key={i} i={i + 2} x={M7 - 300 + i * 260} y={TOP} t={t} expr="triste" mira={0.7} />)}
       {/* vos, ya viejo, en el muro */}

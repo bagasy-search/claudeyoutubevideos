@@ -18,8 +18,8 @@ export const keys8: K[] = [
   [822.2, 22000, 430, 0.042], [822.9, 22000, 430, 0.043], ck("remember who stood", D, FILA, 470, 0.85), ck("at the beginning", D, FILA, 480, 0.72),
   ck("and those men did", D, FILA, 520, 0.6), ck("they stayed", D, FILA, 500, 1.0), ck("at south shields", D, 34000, 500, 0.09),
   ck("at the eastern end", D, ESTE + 300, 560, 0.5), ck("a syrian and a british", D, ESTE, 720, 1.15), ck("on the wall nobody wanted", D, ESTE, 700, 0.9),
-  ck("and when rome finally left", D, ESTE + 300, 600, 0.42), ck("nobody wanted to guard", D, ESTE - 300, 600, 0.3), ck("some of them simply could not", D, ESTE, 700, 0.6),
-  ck("because by then it was home", D, ESTE, 720, 0.85), ck("if you enjoyed surviving", D, ESTE + 200, 640, 0.5), [919.6, ESTE + 300, 620, 0.42],
+  ck("and when rome finally left", D, ESTE + 300, 600, 0.42), ck("nobody wanted to guard", D, ESTE - 300, 600, 0.3), ck("some of them simply could not", D, ESTE - 300, 680, 1.1),
+  ck("because by then it was home", D, ESTE - 350, 680, 1.5), ck("if you enjoyed surviving", D, ESTE + 200, 640, 0.5), [919.6, ESTE + 300, 620, 0.42],
 ];
 export const amb8: [number, Pal][] = [[822.2, "dia"], [845.4, "dia"], [849.2, "gris"], [869.3, "calido"], [875.2, "atardecer"], [895.9, "calido"], [905.5, "atardecer"]];
 export const lluvia8: [number, number][] = [[822.2, 0.1], [845.4, 0], [849.2, 0.2], [869.3, 0], [919.6, 0]];
@@ -41,11 +41,12 @@ const Ladrillos: React.FC<{ t: number }> = ({ t }) => {
         const k = prog(t, t0, t0 + 0.35);
         const x = 300 + c * 220 + (r % 2) * 110, y = 800 - r * 100;
         return (
-          <div key={i} style={{ position: "absolute", left: x, top: y - (1 - k) * 600, width: 210, height: 92, borderRadius: 10, background: ["#c9b28a", "#d8c29a", "#bfa67c"][i % 3], border: "5px solid #8a7450", display: "flex", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700, fontSize: 24, color: "#5a4020" }}>
+          <div key={i} style={{ position: "absolute", left: x, top: y - (1 - k) * 600, width: 210, height: 92, borderRadius: 10, background: ["#c9b28a", "#d8c29a", "#bfa67c"][i % 3], border: "5px solid #8a7450", display: "flex", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700, fontSize: 34, color: "#5a4020" }}>
             {ORIG[i % 6].replace("BOATMEN FROM ", "")}
           </div>
         );
       }))}
+      <Persona x={170} y={1030} h={400} t={t} seed={95} ropa={{ ...CIVIL(0), tunica: "#c81d2e", tunica2: "#8a1420" }} casco="centurion" malla capa="#7a2a9a" {...gesto(t, [[a, "señala"], [b, "sorpresa"], [b + 1.6, "festeja"]])} />
       <Chip t={t} t0={a} t1={b} text="ROME'S LAST LINE OF DEFENSE…" color={C.violeta} x={960} y={140} centro size={56} />
       {t > b && <Grande t={t} t0={b} text="BUILT OUT OF BARBARIANS." y={150} size={96} color={C.rojo} borde="#fff" />}
       <Cu t={t} w="and it worked for almost" d={D} de={0} a={300} sube={1.0} dur={2.4} x={960} y={985} size={110} pre="~" suf=" YEARS" color={C.oro} />
@@ -61,7 +62,7 @@ const Regina: React.FC<{ t: number }> = ({ t }) => {
       {!mapa && (
         <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `scale(${interpolate(t, [849, 869], [1, 1.08])})`, transformOrigin: "620px 560px" }}>
           <Lapida2 x={620} y={560} s={1.1} lineas={["D · M · REGINA", "LIBERTA ET", "CONIUGE"]} pie="BARATES" />
-          <Persona x={1000} y={1010} h={340} t={t} seed={432} ropa={{ ...CIVIL(4), tunica: "#3d7fc9", tunica2: "#25548f" }} flip opacity={1 - prog(t, T("who died at 30", D), T("who died at 30", D) + 0.8)} {...gesto(t, [[T("it belongs to a woman", D), "habla"], [T("a former slave", D), "triste"]])} />
+          <Persona x={1000} y={1010} h={340} t={t} seed={432} ropa={{ ...CIVIL(4), tunica: "#3d7fc9", tunica2: "#25548f", pelo: "#6b3a1f" }} mujer flip opacity={1 - prog(t, T("who died at 30", D), T("who died at 30", D) + 0.8)} {...gesto(t, [[T("it belongs to a woman", D), "habla"], [T("a former slave", D), "triste"]])} />
           {t > T("it was set up by her", D) - 0.3 && <Persona x={190} y={1030} h={400} t={t} seed={430} ropa={{ ...CIVIL(1), tunica: "#c9a23d", tunica2: "#8f7025" }} {...gesto(t, [[T("it was set up by her", D) - 0.3, "golpea"], [lat, "escribe"], [tr, "triste"]])} />}
           {t > ar && (
             <svg style={{ position: "absolute", left: 400, top: 900, overflow: "visible" }} width={440} height={80}>
@@ -77,13 +78,15 @@ const Regina: React.FC<{ t: number }> = ({ t }) => {
           <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
             <path d="M 280 260 L 420 220 L 470 330 L 380 420 L 300 400 Z" fill="#7fa05a" stroke="#fff" strokeWidth={5} />
             <path d="M 560 520 L 1300 480 L 1700 620 L 1660 860 L 1100 900 L 700 800 Z" fill="#c9b28a" stroke="#fff" strokeWidth={5} opacity={0.85} />
-            <path d="M 1560 760 Q 1000 120 380 330" stroke={C.ambar} strokeWidth={14} fill="none" strokeDasharray="30 22" pathLength={1} strokeDashoffset={0} opacity={prog(t, pal, pal + 0.3)} />
+            <path d="M 1560 760 Q 1000 120 380 330" stroke={C.ambar} strokeWidth={14} fill="none" strokeLinecap="round" pathLength={1} strokeDasharray={`${prog(t, pal + 0.2, pal + 2.4)} 1`} />
+            {(() => { const k = prog(t, pal + 0.2, pal + 2.4), u = 1 - k; const px = u * u * 1560 + 2 * u * k * 1000 + k * k * 380, py = u * u * 760 + 2 * u * k * 120 + k * k * 330; return k > 0 && k < 1 ? <circle cx={px} cy={py} r={20} fill="#fff" stroke={C.noche} strokeWidth={6} /> : null; })()}
             <circle cx={1560} cy={760} r={22} fill={C.rojo} stroke="#fff" strokeWidth={5} />
             <circle cx={380} cy={330} r={22} fill={C.rojo} stroke="#fff" strokeWidth={5} />
           </svg>
           <Chip t={t} t0={pal} text="PALMYRA" color={C.rojo} x={1560} y={850} centro size={52} />
-          <Chip t={t} t0={pal + 0.4} text="BRITAIN" color={C.rojo} x={380} y={430} centro size={52} />
-          {t > T("in the syrian desert", D) && <Chip t={t} t0={T("in the syrian desert", D)} text="THE SYRIAN DESERT" color={C.ambar} tinta={C.noche} x={1300} y={980} centro size={46} />}
+          {t > pal + 1.0 && <Chip t={t} t0={pal + 1.0} text="~4,000 KM" color="#2a2350" x={1000} y={300} centro size={54} />}
+          <Chip t={t} t0={pal + 0.4} text="SOUTH SHIELDS · BRITAIN" color={C.rojo} x={560} y={440} centro size={50} />
+          {t > T("in the syrian desert", D) && <Chip t={t} t0={T("in the syrian desert", D)} text="THE SYRIAN DESERT" color={C.ambar} tinta={C.noche} x={1560} y={650} centro size={46} />}
         </>
       )}
       {!mapa && (
@@ -172,6 +175,7 @@ const Comentarios: React.FC<{ t: number; t0: number }> = ({ t, t0 }) => {
       <div style={{ position: "absolute", left: 420, top: 530, width: 1180, fontFamily, fontWeight: 600, fontSize: 44, color: "#1b1240" }}>{(() => { const msg = "#2 THE RAIN. I'd be gone by week one."; const n = Math.floor(msg.length * prog(t, t0 + 0.8, t0 + 3.0)); return msg.slice(0, n) + (n < msg.length && Math.floor(t * 3) % 2 ? "|" : ""); })()}</div>
       <div style={{ position: "absolute", left: 420, top: 600, fontFamily, fontWeight: 700, fontSize: 34, color: C.rojo, opacity: prog(t, t0 + 3.1, t0 + 3.4) }}>♥ {Math.round(240 * prog(t, t0 + 3.1, t0 + 5))}</div>
       {tr.map((ic, i) => <Pin key={i} t={t} t0={t0 + 0.6 + i * 0.12} n={i + 1} x={420 + i * 180} y={820} s={0.7} icono={ic} act={Math.floor(t * 2.5) % 7 === i} />)}
+      {t > T("which one of these seven", D) && tr.map((_, i) => <div key={"q" + i} style={{ position: "absolute", left: 420 + i * 180 + 52, top: 690 - Math.abs(Math.sin(t * 5 + i)) * 18, fontFamily, fontWeight: 700, fontSize: 66, color: C.noche, WebkitTextStroke: "6px #fff", paintOrder: "stroke fill", transform: `scale(${ent(t, T("which one of these seven", D) + i * 0.08)})` }}>?</div>)}
       <Yo x={1790} y={1060} h={330} t={t} frio {...gesto(t, [[t0, "señala"], [t0 + 2.5, "habla"], [t0 + 4.2, "festeja"]])} />
     </div>
   );
@@ -191,6 +195,7 @@ export const W8: React.FC<{ t: number; c: Cam }> = ({ t }) => {
           <React.Fragment key={i}>
             <Otro i={i} x={x} y={TOP} h={220} t={t} expr={t > quedan ? "feliz" : t > T("all of these men were", D) ? "orgullo" : "neutro"} salta={t > quedan ? quedan + i * 0.08 : undefined} />
             {t > t0 && <Chip t={t} t0={t0} text={o === "BOATMEN FROM IRAQ" ? "IRAQ" : o} color={[C.violeta, C.teal, C.ambar, C.rojo, "#3f8a3a", "#3d7fc9"][i]} tinta={i === 1 || i === 2 ? C.noche : "#fff"} x={x} y={TOP - 300} centro size={44} />}
+            {t > T("all of these men were", D) && t < T("romes last line", D) && (() => { const t0b = T("all of these men were", D) + i * 0.1, fl = T("all of these men were", D) + 1.5 + i * 0.1, g = t > fl; const sy = Math.abs(Math.cos(Math.PI * prog(t, fl - 0.15, fl + 0.15))); return <div style={{ position: "absolute", left: 0, top: 0, transform: `scaleY(${t > fl - 0.15 && t < fl + 0.15 ? sy : 1})`, transformOrigin: `${x}px ${TOP + 70 + (i % 2) * 70}px` }}><Chip t={t} t0={t0b} text={g ? "ROMAN DEFENDER" : "BARBARIAN"} color={g ? C.violeta : C.rojo} x={x} y={TOP + 70 + (i % 2) * 70} centro size={36} /></div>; })()}
             {t > quedan && <Emote t={t} t0={quedan + i * 0.1} t1={quedan + 1.6} tipo="brillos" {...cabeza(x, TOP, 220)} s={0.5} />}
           </React.Fragment>
         );
@@ -200,7 +205,7 @@ export const W8: React.FC<{ t: number; c: Cam }> = ({ t }) => {
       {t > 868 && (
         <>
           <Persona x={ESTE - 120} y={BASE} h={300} t={t} seed={430} ropa={{ ...CIVIL(1), tunica: "#c9a23d", tunica2: "#8f7025" }} mira={0.6} {...gesto(t, [[868, "habla"], [T("building a life", D), "festeja"], [T("on the wall nobody wanted", D), "habla"]])} />
-          <Persona x={ESTE + 80} y={BASE} h={280} t={t} seed={431} ropa={{ ...CIVIL(4), tunica: "#3d7fc9", tunica2: "#25548f" }} flip mira={-0.6} {...gesto(t, [[868, "lee"], [T("building a life", D), "festeja"], [T("on the wall nobody wanted", D), "señala"]])} />
+          <Persona x={ESTE + 80} y={BASE} h={280} t={t} seed={431} ropa={{ ...CIVIL(4), tunica: "#3d7fc9", tunica2: "#25548f", pelo: "#6b3a1f" }} mujer flip mira={-0.6} {...gesto(t, [[868, "lee"], [T("building a life", D), "festeja"], [T("on the wall nobody wanted", D), "señala"]])} />
           {t > T("building a life", D) && t < 876 && <Emote t={t} t0={T("building a life", D)} t1={875.5} tipo="brillos" x={ESTE - 20} y={BASE - 360} s={0.7} />}
           {t > T("a syrian and a british", D) && t < 875 && <Chip t={t} t0={T("a syrian and a british", D)} text="A SYRIAN + A BRITON" color={C.violeta} x={ESTE - 20} y={BASE - 470} centro size={42} />}
         </>
@@ -238,8 +243,8 @@ export const S8: React.FC<{ t: number; c: Cam }> = ({ t }) => {
       <Ch t={t} w="if you enjoyed surviving" d={D} txt="SURVIVED A WINTER ON THE EDGE OF ROME?" y={150} c={C.violeta} size={56} dur={3.3} />
       {t > sub - 0.1 && t < T("because next time we are", D) && (
         <>
-          <Suscribir t={t} t0={sub} tClick={sub + 0.7} x={860} y={560} />
-          <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `scale(${ent(t, sub + 0.4)})`, transformOrigin: "1330px 560px" }}><Campana x={1330} y={560} s={0.8} t={t} t0b={sub + 1.0} /></div>
+          <Suscribir t={t} t0={sub} tClick={sub + 0.7} x={520} y={250} />
+          <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `scale(${ent(t, sub + 0.4)})`, transformOrigin: "990px 250px" }}><Campana x={990} y={250} s={0.8} t={t} t0b={sub + 1.0} /></div>
         </>
       )}
       <Plano t={t} t0={T("because next time we are", D) - 0.05} t1={com - 0.15} desde={[960, 540]} fondo="#2a4a7a"><Ballenero t={t} /></Plano>

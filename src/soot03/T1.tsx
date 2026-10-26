@@ -18,13 +18,13 @@ const frente = (t: number) => OB0 + (OB1 - OB0) * u1(t);
 const YOX = M1 + 330;
 
 export const keys1: K[] = [
-  [48.6, M1, 520, 0.62], ck("year 122", D, M1 - 300, 600, 0.45), ck("hadrian has just", D, 3150, 700, 1.45), ck("biographer", D, 3420, 720, 1.6),
-  ck("he was the first", D, 3380, 700, 1.35), ck("80 miles long", D, 4000, 600, 0.4, 0.5), ck("to separate the", D, 4000, 520, 0.42),
+  [48.6, M1, 520, 0.62], ck("year 122", D, M1 - 300, 600, 0.45), ck("hadrian has just", D, 3150, 700, 1.45), ck("biographer", D, 3260, 770, 1.9),
+  ck("he was the first", D, 3260, 770, 1.9), ck("80 miles long", D, 4000, 600, 0.4, 0.5), ck("to separate the", D, 4000, 520, 0.42),
   ck("80 roman miles", D, 4000, 560, 0.35), [68.6, 487, 700, 1.1], [70.0, 1448, 700, 1.05], [71.5, 2477, 700, 1.0], [73.0, 3507, 700, 1.0], [74.5, 4536, 700, 0.95], ck("a small fort every", D, M1, 560, 0.48), ck("two watchtowers", D, 7000, 520, 0.2),
   ck("behind it", D, 7000, 520, 0.2, -0.3), ck("and eventually", D, 19000, 600, 0.036), ck("changed their minds", D, 6900, 640, 0.9),
   ck("the wall was planned", D, 6900, 640, 0.9), ck("then the legions go home", D, 5600, 640, 0.6), ck("needs somebody", D, M1 + 200, 560, 0.62),
   ck("that somebody is you", D, YOX, 470, 1.9), ck("you are an auxiliary", D, YOX + 60, 470, 1.6), ck("not a citizen of rome", D, YOX + 60, 470, 1.8),
-  ck("rome recruited men", D, YOX + 60, 470, 1.8), ck("your pay is lower", D, YOX + 200, 480, 1.4), ck("and your reward", D, YOX + 160, 460, 1.6),
+  ck("rome recruited men", D, YOX - 120, 500, 1.35), ck("your pay is lower", D, YOX + 200, 480, 1.4), ck("and your reward", D, YOX + 160, 460, 1.6),
   ck("so on paper", D, YOX + 100, 470, 1.4), ck("in practice", D, YOX, 480, 1.0), ck("who do not consider", D, YOX - 200, 500, 1.25),
   ck("to protect them", D, YOX, 470, 1.15), ck("that was the good news", D, YOX, 440, 1.5), [182.3, YOX, 450, 1.3],
 ];
@@ -41,7 +41,7 @@ const Obrero: React.FC<{ t: number; x: number; i: number; carga: boolean }> = ({
     bD={carga ? 160 : 40 + Math.sin(t * 6 + i) * 30} cD={carga ? 30 : 60}
     manoD={carga ? <rect x={-50} y={-70} width={100} height={56} rx={6} fill="#c9b8a0" stroke="#8a7a64" strokeWidth={6} /> : undefined} expr={i % 3 === 0 ? "enojado" : "neutro"} />
 );
-const Laurel: React.FC<{ x: number; y: number; s: number }> = ({ x, y, s }) => (
+export const Laurel: React.FC<{ x: number; y: number; s: number }> = ({ x, y, s }) => (
   <svg style={{ position: "absolute", left: x - 120 * s, top: y - 60 * s, overflow: "visible" }} width={240 * s} height={120 * s} viewBox="-120 -60 240 120">
     {[-1, 1].map((k) => Array.from({ length: 6 }, (_, i) => <ellipse key={k + "" + i} cx={k * (30 + i * 15)} cy={-18 + i * 9} rx={16} ry={8} fill="#5fa23a" transform={`rotate(${k * (20 + i * 12)} ${k * (30 + i * 15)} ${-18 + i * 9})`} />))}
   </svg>
@@ -216,9 +216,9 @@ const Ancho: React.FC<{ t: number }> = ({ t }) => {
 };
 // mapa de los orígenes: rutas DESDE cada borde HACIA Britania
 const ORIG: { w: string; a: string; txt: string; dx?: number }[] = [
-  { w: "belgians", a: "GAUL", txt: "BELGIANS" }, { w: "dutch", a: "GERMANY", txt: "DUTCH", dx: -80 }, { w: "spaniards", a: "SPAIN", txt: "SPANIARDS" },
-  { w: "germans", a: "GERMANY", txt: "GERMANS", dx: 90 }, { w: "romanians from dacia", a: "DANUBE", txt: "DACIANS" }, { w: "archers from syria", a: "SYRIA", txt: "SYRIAN ARCHERS" },
-  { w: "moors from north africa", a: "AFRICA", txt: "MOORS" }, { w: "a unit of boatmen", a: "SYRIA", txt: "TIGRIS BOATMEN", dx: 0 },
+  { w: "belgians", a: "GAUL", txt: "BELGIANS" }, { w: "dutch", a: "GERMANY", txt: "DUTCH", dx: -170 }, { w: "spaniards", a: "SPAIN", txt: "SPANIARDS" },
+  { w: "germans", a: "GERMANY", txt: "GERMANS", dx: 170 }, { w: "romanians from dacia", a: "DANUBE", txt: "DACIANS" }, { w: "archers from syria", a: "SYRIA", txt: "SYRIAN ARCHERS" },
+  { w: "moors from north africa", a: "AFRICA", txt: "MOORS" }, { w: "a unit of boatmen", a: "SYRIA", txt: "TIGRIS BOATMEN", dx: 160 },
 ];
 const Origenes: React.FC<{ t: number }> = ({ t }) => {
   const b = lugar("BRITAIN");
@@ -247,8 +247,8 @@ const Origenes: React.FC<{ t: number }> = ({ t }) => {
         const px = q * q * x0 + 2 * q * u * mx + u * u * b.x, py = q * q * y0 + 2 * q * u * my + u * u * b.y;
         return u < 1 ? <Soldadito key={i} x={px} y={py + 10} s={0.32} t={t} seed={i + 5} avanza={1} color={i === 7 ? C.teal : undefined} /> : null;
       })}
-      {z < 1.15 && ORIG.map((o, i) => { const l = lugar(o.a); const t0 = T(o.w, D); return t > t0 ? <Chip key={i} t={t} t0={t0} text={o.txt} color={i === 7 ? C.teal : C.violeta} tinta={i === 7 ? C.noche : "#fff"} x={Math.max(200, Math.min(1720, l.x + (o.dx ?? 0)))} y={l.y + 50 + (i === 7 ? 96 : (i % 2) * 44)} centro size={36} /> : null; })}
-      {t > T("stationed at the mouth", D) + 0.8 && <Chip t={t} t0={T("stationed at the mouth", D) + 0.8} text="ARBEIA · SOUTH SHIELDS" color={C.rojo} x={b.x + 60} y={b.y + 60} centro size={22} />}
+      {z < 1.15 && ORIG.map((o, i) => { const l = lugar(o.a); const t0 = T(o.w, D); return t > t0 ? <Chip key={i} t={t} t0={t0} text={o.txt} color={i === 7 ? C.teal : C.violeta} tinta={i === 7 ? C.noche : "#fff"} x={Math.max(200, Math.min(1720, l.x + (o.dx ?? 0)))} y={l.y + 50 + (i === 7 ? 60 : (i % 2) * 50)} centro size={42} /> : null; })}
+      {t > T("stationed at the mouth", D) + 0.8 && <Chip t={t} t0={T("stationed at the mouth", D) + 0.8} text="ARBEIA · SOUTH SHIELDS" color={C.rojo} x={b.x + 30} y={b.y + 46} size={22} />}
     </AbsoluteFill>
   );
 };
@@ -310,7 +310,7 @@ export const S1: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       {t > T("not a legionary", D) && t < T("rome recruited men", D) && (
         <div style={{ position: "absolute", left: 1400, top: 420, width: 440, height: 500, background: "#f6e3b4", border: "8px solid #8a5a2a", borderRadius: 14, transform: `scale(${ent(t, T("not a legionary", D))}) rotate(3deg)`, fontFamily, fontWeight: 700, color: "#5a3418", padding: 30, boxSizing: "border-box" }}>
           <div style={{ fontSize: 40 }}>SERVICE RECORD</div>
-          <div style={{ fontSize: 30, marginTop: 20, opacity: 0.8 }}>NAME: YOU<br />AGE: 19<br />FROM: BELGIUM</div>
+          <div style={{ fontSize: 38, marginTop: 20, opacity: 0.85 }}>NAME: YOU<br />AGE: 19<br />FROM: BELGIUM</div>
           <div style={{ position: "absolute", left: 40, top: 300, fontSize: 60, color: C.rojo, border: `8px solid ${C.rojo}`, borderRadius: 12, padding: "4px 18px", transform: `rotate(-12deg) scale(${t > T("you are an auxiliary", D) ? 1 + 2 * (1 - prog(t, T("you are an auxiliary", D), T("you are an auxiliary", D) + 0.18)) : 0})`, opacity: t > T("you are an auxiliary", D) ? 1 : 0 }}>AUXILIARY</div>
         </div>
       )}
@@ -320,7 +320,7 @@ export const S1: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
         return [0, 1].map((k) => (
           <div key={k} style={{ position: "absolute", left: 1300 + k * 230, top: 330, width: 230, height: 420, overflow: "hidden", transform: `translate(${r * (k ? 700 : -200)}px, ${r * (k ? -300 : 500)}px) rotate(${r * (k ? 70 : -50)}deg) scale(${ent(t, T("on paper", D))})`, opacity: 1 - prog(t, T("dampest corner", D), T("dampest corner", D) + 0.6) }}>
             <div style={{ position: "absolute", left: -k * 230, width: 460, height: 420, background: "#f6e3b4", border: "8px solid #8a5a2a", boxSizing: "border-box", fontFamily, fontWeight: 700, color: "#5a3418", padding: 28 }}>
-              <div style={{ fontSize: 40 }}>CAREER PLAN</div><div style={{ fontSize: 30, marginTop: 18, lineHeight: 1.5 }}>✓ 25 YEARS<br />✓ STEADY PAY<br />✓ CITIZENSHIP<br />✓ FAMILY</div>
+              <div style={{ fontSize: 50 }}>CAREER PLAN</div><div style={{ fontSize: 40, marginTop: 18, lineHeight: 1.5 }}>✓ 25 YEARS<br />✓ STEADY PAY<br />✓ CITIZENSHIP<br />✓ FAMILY</div>
             </div>
           </div>
         ));
@@ -328,7 +328,7 @@ export const S1: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Ch t={t} w="not a legionary" d={D} txt="LEGIONARY ✗" x={560} y={220} c={C.rojo} size={64} dur={1.4} />
       <Ch t={t} w="you are an auxiliary" d={D} txt="AUXILIARY ✓" x={1360} y={220} c={C.teal} tinta={C.noche} size={64} dur={2.1} dt={0.4} />
       <Ch t={t} w="a provincial" d={D} txt="PROVINCIAL" x={1360} y={330} c={C.violeta} size={50} dur={1.4} />
-      <Gr t={t} w="not a citizen of rome" d={D} txt="NOT A CITIZEN" y={880} size={110} c={C.rojo} borde="#fff" dur={1.4} />
+      <Gr t={t} w="not a citizen of rome" d={D} txt="NOT A CITIZEN" y={880} size={110} c={C.rojo} borde="#fff" dur={1.6} dt={0.35} />
       <Plano t={t} t0={T("rome recruited men", D)} t1={T("your pay is lower", D) - 0.2} desde={[yo[0], yo[1]]} fondo={C.noche}><Origenes t={t} /></Plano>
       <Ch t={t} w="a completely different edge" d={D} txt="→ THE OPPOSITE EDGE" y={1000} c={C.rojo} size={56} dur={2.2} />
       {/* la paga */}

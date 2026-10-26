@@ -40,7 +40,7 @@ const Masclus: React.FC<{ t: number }> = ({ t }) => {
   const a = T("one of the most famous", D), b = T("my fellow soldiers have", D), c = T("please order some", D);
   return (
     <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #6b4ac9, #1b1240 80%)" }}>
-      <Persona x={230} y={1040} h={430} t={t} seed={95} ropa={{ ...AUX(4), tunica: "#c9a23d", tunica2: "#8f7025" }} casco="legion" malla {...gesto(t, [[a, "escribe"], [b - 0.3, "triste"], [c, "habla"]])} />
+      <Persona x={230} y={1040} h={430} t={t} seed={95} ropa={{ ...AUX(4), tunica: "#c9a23d", tunica2: "#8f7025" }} casco="centurion" malla {...gesto(t, [[a, "escribe"], [b - 0.3, "triste"], [c, "habla"]])} />
       <div style={{ position: "absolute", inset: 0 }}><TablillaGrande t={t} t0={a + 0.3} x={1090} y={420} w={1380} vel={30} titulo="MASCLUS, CAVALRY OFFICER → CERIALIS, COMMANDER"
         lineas={["“Masclus to Cerialis, his king, greetings.", "Please, my lord, give instructions", "for what you want done tomorrow…”"]} /></div>
       {t > b && <div style={{ position: "absolute", left: 420, right: 60, top: 760, height: 130, background: C.ambar, borderRadius: 20, transform: `scale(${ent(t, b)}) rotate(-2deg)`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700, fontSize: 64, color: C.noche }}>“MY FELLOW SOLDIERS HAVE NO BEER.”</div>}
@@ -58,7 +58,7 @@ const Lista: React.FC<{ t: number }> = ({ t }) => {
     <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #ffcf7a, #c9773a 85%)" }}>
       <Chip t={t} t0={T("other tablets read", D) + 0.3} t1={T("barley", 374)} text="A SHOPPING LIST FOR A SMALL TOWN" color={C.violeta} x={960} y={120} centro size={56} />
       {t < m + 0.2 && <Persona x={1700} y={1040} h={420} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" {...gesto(t, [[T("other tablets read", D), "lee"], [T("barley", 374), "señala"], [T("vintage wine", 374), "festeja"], [T("celtic beer", 374), "festeja"], [T("and grain in", 374), "sorpresa"]])} />}
-      {t < m + 0.2 && <Papiro t={t} x={820} y={560} w={1000} t0={T("other tablets read", D) + 0.2} tacha={false} titulo="VINDOLANDA · SHOPPING LIST" items={LISTA.map(([w, tx]) => ({ txt: tx, t0: T(w, 374) }))} />}
+      {t < m + 0.2 && <Papiro t={t} x={820} y={560} w={1000} t0={T("other tablets read", D) + 0.2} tacha={false} titulo="VINDOLANDA · SHOPPING LIST" items={LISTA.map(([w, tx]) => ({ txt: tx, t0: T(w, 374), monto: "✓" }))} />}
       {t > m && (
         <>
           {Array.from({ length: 27 }, (_, i) => <Item key={i} k="grano" x={140 + (i % 9) * 170} y={1000 - Math.floor(i / 9) * 150 - (1 - ent(t, m + i * 0.04)) * 900} s={0.7} />)}
@@ -146,7 +146,7 @@ export const S3: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
         </div>
       ) : null)}
       <Ch t={t} w="and above all" d={D} txt="AND ABOVE ALL…" y={150} c={C.teal} tinta={C.noche} size={60} dur={0.9} />
-      {t > T("beer", 345) && t < T("the soldiers on the northern", D) + 0.2 && <Barril x={960} y={600} s={1.6} t={t} t0={T("beer", 345)} />}
+      {t > T("beer", 345) && t < T("one of the most famous", D) && <Barril x={960 + 560 * prog(t, T("the soldiers on the northern", D), T("the soldiers on the northern", D) + 0.6)} y={600 + 120 * prog(t, T("the soldiers on the northern", D), T("the soldiers on the northern", D) + 0.6)} s={1.6 - 0.5 * prog(t, T("the soldiers on the northern", D), T("the soldiers on the northern", D) + 0.6)} t={t} t0={T("beer", 345)} />}
       <Gr t={t} w="yes beer" d={D} txt="YES. BEER." y={200} size={170} c={C.ambar} dur={1.6} />
       <Ch t={t} w="a local beer called" d={D} txt="CERVESA" y={150} c={C.ambar} tinta={C.noche} size={90} dur={3.6} dt={0.6} />
       <Ch t={t} w="they took it extremely" d={D} txt="TAKEN EXTREMELY SERIOUSLY" y={150} c={C.rojo} size={60} dur={2.0} />

@@ -1,7 +1,7 @@
 import React from "react";
 import { interpolate, Easing } from "remotion";
 import { rnd, at } from "./lib";
-import { C, fontFamily, ent, prog, Chip, Grande } from "./kit";
+import { C, fontFamily, fontMano, ent, prog, Chip, Grande } from "./kit";
 import { Persona, Ropa as RopaT, CIVIL, Expr } from "./persona";
 import { Obj } from "./kit2";
 import { Cuenta } from "./P1";
@@ -187,7 +187,7 @@ export const TablillaGrande: React.FC<{ t: number; t0: number; lineas: string[];
         {lineas.map((l, i) => {
           const vis = Math.max(0, Math.min(l.length, resto));
           resto -= l.length;
-          return <div key={i} style={{ position: "absolute", left: 60, top: 100 + i * 92, fontFamily: "'Segoe Script','Brush Script MT',cursive", fontSize: fs, color: "#1d120a", whiteSpace: "nowrap" }}>{l.slice(0, vis)}{vis > 0 && vis < l.length ? <span style={{ opacity: 0.5 }}>|</span> : null}</div>;
+          return <div key={i} style={{ position: "absolute", left: 60, top: 100 + i * 92, fontFamily: fontMano, fontWeight: 700, fontSize: fs, color: "#1d120a", whiteSpace: "nowrap" }}>{l.slice(0, vis)}{vis > 0 && vis < l.length ? <span style={{ opacity: 0.5 }}>|</span> : null}</div>;
         })}
       </div>
       {n < tot && <div />}

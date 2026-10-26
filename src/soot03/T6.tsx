@@ -1,7 +1,8 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Moneda } from "./kit";
-import { Soldadito, Barco } from "./kit2";
+import { Soldadito, Barco, Lluvia } from "./kit2";
+import { Laurel } from "./T1";
 import { Persona, CIVIL } from "./persona";
 import { TOP, BASE, MC, K, Cam, Pal, Plano, CartelTrampa, pant, Relampago } from "./mundo";
 import { Gr, Cu, Ch, T, ck, TUNGRO, AUX, Picto, Ojos, gesto, Actua } from "./kit3";
@@ -31,8 +32,8 @@ export const rayos6: number[] = [627.0, 631.0, 693.0, 694.9, 701.1];
 export const sol6: [number, number, number, boolean?][] = [[712.3, 1500, 170, true], [741.3, -999, 0]];
 
 // ── mapa de Britania (dibujado a mano, norte arriba)
-const BRIT = "M 905 70 L 960 60 L 1010 90 L 990 150 L 1030 190 L 1010 260 L 1060 300 L 1040 350 L 1080 400 L 1050 440 L 1100 520 L 1120 600 L 1160 660 L 1200 720 L 1230 790 L 1180 840 L 1240 880 L 1200 940 L 1100 960 L 980 980 L 880 990 L 800 1000 L 760 960 L 840 920 L 900 880 L 860 840 L 820 800 L 870 760 L 880 700 L 840 640 L 860 580 L 900 540 L 880 500 L 840 470 L 860 420 L 820 380 L 830 330 L 800 290 L 840 240 L 810 200 L 850 150 L 830 110 Z";
-const IRL = "M 600 470 L 690 450 L 740 500 L 730 600 L 700 690 L 620 720 L 560 680 L 540 590 L 570 520 Z";
+export const BRIT = "M 905 70 L 960 60 L 1010 90 L 990 150 L 1030 190 L 1010 260 L 1060 300 L 1040 350 L 1080 400 L 1050 440 L 1100 520 L 1120 600 L 1160 660 L 1200 720 L 1230 790 L 1180 840 L 1240 880 L 1200 940 L 1100 960 L 980 980 L 880 990 L 800 1000 L 760 960 L 840 920 L 900 880 L 860 840 L 820 800 L 870 760 L 880 700 L 840 640 L 860 580 L 900 540 L 880 500 L 840 470 L 860 420 L 820 380 L 830 330 L 800 290 L 840 240 L 810 200 L 850 150 L 830 110 Z";
+export const IRL = "M 600 470 L 690 450 L 740 500 L 730 600 L 700 690 L 620 720 L 560 680 L 540 590 L 570 520 Z";
 const YORK: [number, number] = [1090, 660];
 const Mapa: React.FC<{ t: number; children?: React.ReactNode; antonino?: number; adriano?: number }> = ({ t, children, antonino = 0, adriano = 1 }) => (
   <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 50%, #3d7fc9, #1b3a6a 85%)" }}>
@@ -61,6 +62,7 @@ const Frontera: React.FC<{ t: number }> = ({ t }) => {
   const an = t < g ? prog(t, a, a + 1.2) : 1 + prog(t, g + 0.4, g + 1.6);
   return (
     <Mapa t={t} antonino={an}>
+      {t < a && <Chip t={t} t0={T("and the frontier", D) + 0.3} text="THE FRONTIER NEVER STOPPED MOVING" color={C.rojo} x={960} y={980} centro size={52} />}
       <Cu t={t} w="only 20 years after" d={D} de={0} a={20} sube={0.8} dur={2.6} x={460} y={200} size={110} suf=" YEARS LATER" color="#fff" />
       {t > a && <Chip t={t} t0={a + 0.3} text="THE ANTONINE WALL" color="#7a5a2a" x={540} y={360} centro size={50} />}
       {t > T("made mostly of turf", D) && <Chip t={t} t0={T("made mostly of turf", D)} t1={g} text="MOSTLY TURF" color={C.lima} tinta={C.noche} x={540} y={440} centro size={42} />}
@@ -71,12 +73,14 @@ const Frontera: React.FC<{ t: number }> = ({ t }) => {
         const sube = prog(t, a + 0.2 + i * 0.12, a + 1.6 + i * 0.12), baja = prog(t, g + 0.6 + i * 0.15, g + 3.8 + i * 0.15);
         return t > a ? <Soldadito key={i} x={880 + i * 26} y={540 - 150 * sube + 150 * baja} s={0.32} t={t} seed={300 + i} avanza={1} /> : null;
       })}
-      <Actua t={t} beats={[[a, "camina"], [a + 2.2, "carga"], [g, "enojado"], [g + 1.4, "camina"], [T("to your wall", D), "encoge"]]} x0={1900} x1={1560} y={1060} h={420} frio />
+      <Actua t={t} beats={[[T("and the frontier", D) + 0.2, "encoge"], [a, "camina"], [a + 2.2, "carga"], [g, "enojado"], [g + 1.4, "camina"], [T("to your wall", D), "encoge"]]} x0={1900} x1={1560} y={1060} h={420} frio />
     </Mapa>
   );
 };
 // 2a) Severo marcha al norte al frente de la columna
 const SEVERO = { ...CIVIL(0), tunica: "#7a2a9a", tunica2: "#4a1a6a" };
+// corona de laurel sobre la cabeza de una Persona (emperador)
+const Corona: React.FC<{ x: number; y: number; h: number }> = ({ x, y, h }) => { const cb = cabeza(x, y, h); return <Laurel x={x} y={cb.y - 70 * cb.s} s={cb.s * 0.95} />; };
 const SeveroMarcha: React.FC<{ t: number }> = ({ t }) => {
   const a = T("in the year 208", D), e = T("the emperor septimius", D), h = T("with a huge army", D), m = T("he marched deep", D);
   const av = prog(t, a, m + 2.5);
@@ -89,7 +93,8 @@ const SeveroMarcha: React.FC<{ t: number }> = ({ t }) => {
       <div style={{ position: "absolute", left: 1620, top: 560, width: 18, height: 260, background: "#6b4a2f" }} />
       <div style={{ position: "absolute", left: 1500, top: 560, padding: "10px 26px", background: "#f6efe2", border: "6px solid #6b4a2f", fontFamily, fontWeight: 700, fontSize: 44, color: C.noche }}>SCOTLAND →</div>
       {Array.from({ length: 22 }, (_, i) => t > h - 0.2 || i < 4 ? <Soldadito key={i} x={-200 + 300 * av + 1100 - (i % 11) * 95 - Math.floor(i / 11) * 50} y={880 + Math.floor(i / 11) * 70} s={0.9 + Math.floor(i / 11) * 0.15} t={t} seed={330 + i} avanza={1} /> : null)}
-      <Persona x={-100 + 300 * av + 1250} y={900} h={360} t={t} seed={89} ropa={SEVERO} casco="no" {...gesto(t, [[a, "camina"], [e, "habla"], [h, "señala"], [m, "camina"]])} />
+      <Persona x={-100 + 300 * av + 1250} y={900} h={360} t={t} seed={89} ropa={SEVERO} casco="no" capa="#5a1a7a" {...gesto(t, [[a, "camina"], [e, "habla"], [h, "señala"], [m, "camina"]])} />
+      <Corona x={-100 + 300 * av + 1250} y={900} h={360} />
       <Gr t={t} w="in the year 208" d={D} txt="AD 208" y={150} x={420} size={130} c={C.ambar} dur={2.2} />
       <Chip t={t} t0={e} text="EMPEROR SEPTIMIUS SEVERUS" color="#7a2a9a" x={1200} y={150} centro size={46} />
       {t > h && <Chip t={t} t0={h} text="+ A HUGE ARMY" color={C.rojo} x={1200} y={240} centro size={46} />}
@@ -105,6 +110,7 @@ const SeveroCienaga: React.FC<{ t: number }> = ({ t }) => {
         <path d="M 0 600 Q 400 420 800 560 T 1500 500 T 1920 560 L 1920 1080 L 0 1080 Z" fill="#4a6a3a" />
         <rect x={0} y={760} width={1920} height={320} fill="#4a4a2a" />
       </svg>
+      <Lluvia t={t} n={140} op={0.5} seed={62} />
       {[0, 1, 2, 3, 4].map((i) => { const k = prog(t, f + 0.3 + i * 0.25, f + 1.2 + i * 0.25); return <div key={i} style={{ position: "absolute", left: 300 + i * 300, top: 0, opacity: 1 - k }}><Picto x={0} y={560 - (i % 2) * 40 + k * 120} s={0.8} t={t} seed={350 + i} /></div>; })}
       {Array.from({ length: 9 }, (_, i) => { const hunde = prog(t, l + i * 0.35, l + 1.4 + i * 0.35); return <div key={i} style={{ position: "absolute", left: 0, top: 0, clipPath: "inset(0 0 230px 0)", width: 1920, height: 1080 }}><Soldadito x={260 + i * 175} y={850 + hunde * 170} s={1.2} t={t} seed={360 + i} avanza={hunde < 0.05 ? 1 : 0} /></div>; })}
       {Array.from({ length: 10 }, (_, i) => <div key={"c" + i} style={{ position: "absolute", left: 140 + i * 180, top: 846 + Math.sin(t * 3 + i) * 5, width: 130, height: 18, borderRadius: 9, background: "#6a6a3a" }} />)}
@@ -121,7 +127,8 @@ const SeveroMuere: React.FC<{ t: number }> = ({ t }) => {
     <Mapa t={t}>
       <Flecha t={t} t0={y - 0.4} d={`M 960 220 Q 1040 420 ${YORK[0]} ${YORK[1] - 20}`} col={C.violeta} w={26} dur={1.1} />
       <div style={{ position: "absolute", left: YORK[0] - 40, top: YORK[1] - 110, fontFamily, fontWeight: 700, fontSize: 90, color: "#fff", WebkitTextStroke: "10px #1b1240", paintOrder: "stroke fill", transform: `scale(${ent(t, y + 0.8)})` }}>†</div>
-      <Persona x={360} y={1000} h={380} t={t} seed={89} ropa={SEVERO} viejo {...gesto(t, [[y, "tiembla"], [y + 1.6, "triste"]])} />
+      <Persona x={360} y={1000} h={380} t={t} seed={89} ropa={SEVERO} viejo capa="#5a1a7a" {...gesto(t, [[y, "tiembla"], [y + 1.6, "triste"]])} />
+      <Corona x={360} y={1000} h={380} />
       <Chip t={t} t0={y + 0.8} text="DIES AT YORK · AD 211" color="#2a2350" x={1460} y={760} centro size={50} />
     </Mapa>
   );
@@ -149,6 +156,7 @@ const Cienaga: React.FC<{ t: number }> = ({ t }) => (
     <Persona x={960} y={960} h={520} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" capa="#3f6b2a" expr={t > T("is the first piece", D) ? "feliz" : "triste"} bD={t > T("is the first piece", D) ? 150 : 20} cD={t > T("is the first piece", D) ? 160 : 0} />
     <div style={{ position: "absolute", left: 0, right: 0, top: 820, bottom: 0, background: "#3a3a20" }} />
     {Array.from({ length: 8 }, (_, i) => <div key={i} style={{ position: "absolute", left: 200 + i * 220, top: 830 + Math.sin(t * 3 + i) * 6, width: 120, height: 16, borderRadius: 8, background: "#6a6a3a" }} />)}
+    <Lluvia t={t} n={170} op={0.6} seed={61} />
     <Chip t={t} t0={T("if you are the soldier freezing", D)} text="A BOG · SCOTLAND" color="#4a4a2a" x={960} y={140} centro size={56} />
     {t > T("is the first piece", D) && <Grande t={t} t0={T("genuinely useful", D)} text="GENUINELY USEFUL." y={260} size={110} color={C.lima} />}
   </AbsoluteFill>
@@ -179,10 +187,11 @@ const Conspira: React.FC<{ t: number }> = ({ t }) => {
         <Flecha t={t} t0={s} d="M 600 560 Q 760 540 860 580" col={C.lima} w={34} />
         <Flecha t={t} t0={x} d="M 1560 760 Q 1380 720 1200 730" col={C.ambar} w={34} />
       </div>
+      {([[p, 930, 120, 960, 500], [s, 600, 560, 860, 580], [x, 1560, 760, 1200, 730]] as const).map(([t0, x0, y0, x1, y1], i) => t > t0 ? [0, 1, 2].map((j) => { const k = prog(t, t0 + 0.3 + j * 0.35, t0 + 2.6 + j * 0.35); return <div key={i + "-" + j} style={{ position: "absolute", left: 0, top: 0, opacity: k > 0 && k < 1 ? 1 : 0 }}><Picto x={x0 + (x1 - x0) * k + (j - 1) * 30} y={y0 + (y1 - y0) * k + 40} s={0.32} t={t} seed={500 + i * 3 + j} grita /></div>; }) : null)}
       {t > p && <Chip t={t} t0={p} text="PICTS · NORTH" color="#2a2350" x={620} y={160} centro size={50} />}
       {t > s && <Chip t={t} t0={s} text="SCOTS · IRELAND" color="#3f8a3a" x={420} y={760} centro size={50} />}
       {t > x && <Chip t={t} t0={x} text="SAXONS · THE SEA" color={C.naranja} x={1560} y={870} centro size={50} />}
-      {t > a && <Grande t={t} t0={a} text="ALL AT ONCE." x={1400} y={600} size={100} color={C.rojo} borde="#fff" />}
+      {t > a && <Grande t={t} t0={a} text="ALL AT ONCE." x={470} y={930} size={90} color={C.rojo} borde="#fff" />}
       <Chip t={t} t0={T("the historian ammianus", D)} t1={p} text="“A BARBARIAN CONSPIRACY”" color={C.rojo} x={960} y={150} centro size={60} />
       {t > T("the roman commander of the coast", D) && <Chip t={t} t0={T("the roman commander of the coast", D)} text="COAST COMMANDER · KILLED" color={C.rojo} x={1450} y={330} centro size={44} />}
       {t > T("the general in charge", D) && <Chip t={t} t0={T("the general in charge", D)} text="FRONTIER GENERAL · CAPTURED" color={C.rojo} x={1450} y={420} centro size={44} />}
@@ -198,11 +207,11 @@ const Teodosio: React.FC<{ t: number }> = ({ t }) => {
     <Mapa t={t}>
       <Barco x={1500 - 380 * k} y={1020 - 60 * k} s={0.35} t={t} />
       {pueblos.map(([x, y], i) => t > r + i * 0.3 ? <div key={i} style={{ position: "absolute", left: x - 22, top: y - 22, width: 44, height: 44, borderRadius: "50%", background: C.rojo, border: "6px solid #fff", transform: `scale(${ent(t, r + i * 0.3)})` }} /> : null)}
-      <Persona x={300} y={1040} h={420} t={t} seed={91} ropa={{ ...AUX(0), tunica: "#7a2a9a", tunica2: "#4a1a6a" }} casco="centurion" malla capa="#c81d2e" {...gesto(t, [[a, "habla"], [r, "señala"], [d2, "niega"]])} />
+      <Persona x={300} y={990} h={420} t={t} seed={91} ropa={{ ...AUX(0), tunica: "#7a2a9a", tunica2: "#4a1a6a" }} casco="centurion" malla capa="#c81d2e" {...gesto(t, [[a, "habla"], [r, "señala"], [d2, "niega"]])} />
       {t > r && <div style={{ position: "absolute", left: 1320, top: 380, fontFamily, fontWeight: 700, fontSize: 56, color: "#fff", WebkitTextStroke: "8px #1b1240", paintOrder: "stroke fill" }}>TOWNS RETAKEN: {pueblos.filter((_, i) => t > r + i * 0.3).length}</div>}
       <Chip t={t} t0={a} text="GENERAL THEODOSIUS" color={C.violeta} x={1460} y={180} centro size={54} />
       {t > r && <Chip t={t} t0={r} text="TOWN BY TOWN" color={C.rojo} x={1460} y={270} centro size={48} />}
-      {t > d2 && <Chip t={t} t0={d2} text="SCOUTS: DISBANDED ✗" color="#2a2350" x={560} y={270} centro size={50} />}
+      {t > d2 && <Chip t={t} t0={d2} text="SCOUTS: DISBANDED ✗" color="#2a2350" x={640} y={330} centro size={50} />}
     </Mapa>
   );
 };
@@ -217,10 +226,11 @@ export const W6: React.FC<{ t: number; c: Cam }> = ({ t }) => {
       {/* el norte cruza el muro */}
       {t > cruza - 0.2 && t < T("rome called it", D) + 0.5 && Array.from({ length: 10 }, (_, i) => {
         const k = prog(t, cruza + i * 0.25, cruza + 3 + i * 0.25);
-        return <Picto key={i} x={M6 - 1200 + i * 260} y={TOP - 10 + k * 310} s={1.1} t={t} seed={200 + i} sube={cruza + i * 0.12} grita />;
+        const corre = Math.max(0, t - (cruza + 3 + i * 0.25));
+        return <Picto key={i} x={M6 - 1200 + i * 260 + (i % 3) * 40 + 140 * k + corre * (70 + (i % 3) * 25)} y={TOP - 10 + k * 310 - 190 * Math.sin(Math.PI * k) + (i % 2) * 30 - (corre > 0 ? Math.abs(Math.sin(t * 7 + i)) * 22 : 0)} s={1.0 + (i % 3) * 0.15} t={t} seed={200 + i} sube={cruza + i * 0.12} grita />;
       })}
       {t > fuego && t < T("rome called it", D) + 0.5 && [M6 - 300, M6 + 200, M6 + 600].map((x, i) => <React.Fragment key={i}>{[0, 1, 2].map((k) => <div key={k} style={{ position: "absolute", left: x - 70 + k * 50, top: TOP - 230 - Math.abs(Math.sin(t * 8 + k + i)) * 60, width: 90, height: 160, borderRadius: "50% 50% 30% 30%", background: k % 2 ? C.naranja : C.ambar, opacity: 0.9 }} />)}</React.Fragment>)}
-      {t > T("and cut down a roman", D) - 0.3 && t < T("rome called it", D) + 0.5 && Array.from({ length: 7 }, (_, i) => <Soldadito key={i} x={M6 + 100 + i * 120} y={BASE} s={1.3} t={t} seed={210 + i} cae={T("and cut down a roman", D) + 0.6 + i * 0.12} />)}
+      {t > T("and cut down a roman", D) - 0.3 && t < T("rome called it", D) + 0.5 && Array.from({ length: 7 }, (_, i) => <Soldadito key={i} x={M6 + 100 + i * 120} y={BASE} s={i === 3 ? 1.7 : 1.3} t={t} seed={210 + i} cae={T("and cut down a roman", D) + 0.6 + i * 0.12} />)}
       {/* los areani: salen al norte, vuelven con plata */}
       {t > T("rome had a group", D) - 0.3 && t < T("and you", 729) && [0, 1, 2].map((i) => {
         const x = M6 - 1200 + i * 260;
