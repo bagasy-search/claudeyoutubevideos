@@ -13,7 +13,7 @@ import { Aguja, Bateria, Crono, Ecu, Fondo, Ventanilla } from "./ecu2d";
 import { CamaraMano } from "../kits/camara/CamaraMano";
 
 type Tr = "cut" | "swipeL" | "swipeR" | "up" | "down" | "portal" | "iris" | "zoom" | "fade" | "wipe";
-type Seg = { a: number; k: "av" | "s" | "b" | "w"; tr?: Tr; key?: string; z?: [number, number]; ox?: number; oy?: number; tone?: string };
+type Seg = { a: number; k: "av" | "s" | "b" | "w"; tr?: Tr; key?: string; z?: [number, number]; ox?: number; oy?: number; tone?: string; re?: number };
 type Piece = { c: string; a: number; b: number; p: Record<string, unknown> };
 const PL = PLAN as unknown as { end: number; segs: Seg[]; pieces: Piece[] };
 export const FULL_END = PL.end;
@@ -50,7 +50,7 @@ const base = (s: Seg, i: number, t: number): React.ReactNode => {
   if (s.k === "av") return <CamaraMano intensidad={0.7} seed={11}><Avatar t={t} /></CamaraMano>;
   if (s.k === "w") return <World t={t} />;
   if (s.k === "b") return <CamaraMano intensidad={0.5} seed={7}><Mundo t={t} tone={s.tone ?? "#070c14"} /></CamaraMano>;
-  return <CamaraMano seed={i % 9}><Shot k={s.key!} t={t} a={s.a} z={s.z} ox={s.ox} oy={s.oy} dur={Math.max(2, dur + D)} /></CamaraMano>;
+  return <CamaraMano seed={i % 9}><Shot k={s.key!} t={t} a={s.a} re={s.re} z={s.z} ox={s.ox} oy={s.oy} dur={Math.max(2, dur + D)} /></CamaraMano>;
 };
 
 const Trans: React.FC<{ t: number; s: Seg; from: React.ReactNode; to: React.ReactNode }> = ({ t, s, from, to }) => {

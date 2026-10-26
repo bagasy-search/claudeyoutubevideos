@@ -16,6 +16,8 @@ import { COL, FONT, P, Vid, e, ei, extrude, s, spr } from "./lib";
 const REEL = (AVAIL as { reel: boolean }).reel; // reel del avatar (public/enrm03/reel0.mp4, 1 /run de RunPod)
 const LTX = new Set((AVAIL as { ltx: string[] }).ltx); // tomas LTX ya bajadas (public/enrm03/ltx_<k>.mp4); si no, el cuadro clave
 export const clip = (k: string) => (LTX.has(k) ? "ltx_" + k : "img_" + k);
+// 25-oct: foto con la cara de Ramón → su toma del clip LTX vlog de 28 s (3 tomas por clip): [clip, desde, largo]
+const VMAP = ((AVAIL as { vmap?: Record<string, [string, number, number]> }).vmap ?? {});
 const REEL_LEN = (AVAIL as { reelLen?: number }).reelLen ?? 264.8;
 export const WIN: { ms: number; me: number; off: number; reel?: number }[] = (AVW as { win: { ms: number; me: number; off: number; reel?: number }[] }).win;
 // reel 1 = la COLA (2º /run sólo con lo que el 1º no cubrió, tope ~600 s de RunPod): public/<slug>/reel1.mp4
@@ -42,14 +44,15 @@ export const World: React.FC<{ t: number }> = ({ t }) => {
   );
 };
 
-export const Shot: React.FC<{ k: string; t: number; a: number; z?: [number, number]; ox?: number; oy?: number; dur?: number; shake?: number }> = ({ k, t, a, z = [1.03, 1.12], ox = 0, oy = 0, dur = 8, shake = 0 }) => {
-  const q = e(t, a, a + dur), sc = z[0] + (z[1] - z[0]) * q;
-  const id = clip(k), sh = shake ? Math.sin(t * 61) * shake : 0;
+export const Shot: React.FC<{ k: string; t: number; a: number; z?: [number, number]; ox?: number; oy?: number; dur?: number; shake?: number; re?: number }> = ({ k, t, a, z = [1.03, 1.12], ox = 0, oy = 0, dur = 8, shake = 0, re = 0 }) => {
+  const vm = re ? undefined : VMAP[k];   // la toma vlog va quieta (cámara fija): sin zoom ni paneo encima
+  const q = vm ? 0 : e(t, a, a + dur), sc = vm ? 1.02 : z[0] + (z[1] - z[0]) * q;
+  const id = vm ? "ltx_" + vm[0] : clip(k), sh = shake ? Math.sin(t * 61) * shake : 0, L = vm ? Math.min(vm[2], dur + 0.4) : 3.05;
   // clip de 3 s: corre y después se funde a su foto (nunca a negro); sin clip, la foto sola
-  const isClip = id.startsWith("ltx_"), cl = isClip ? 1 - e(t, a + 2.75, a + 3.05) : 0;
+  const isClip = id.startsWith("ltx_"), cl = isClip ? 1 - e(t, a + L - 0.3, a + L) : 0;
   return <AbsoluteFill style={{ transform: `scale(${sc}) translate(${ox * q + sh}px, ${oy * q - sh * 0.6}px)` }}>
     <Vid id={"img_" + k} />
-    {isClip && cl > 0.01 && <AbsoluteFill style={{ opacity: cl }}><Sequence from={s(a)} durationInFrames={s(3.05)} layout="none"><Vid id={id} /></Sequence></AbsoluteFill>}
+    {isClip && cl > 0.01 && <AbsoluteFill style={{ opacity: cl }}><Sequence from={s(a)} durationInFrames={s(L)} layout="none"><Vid id={id} from={vm ? vm[1] : 0} /></Sequence></AbsoluteFill>}
   </AbsoluteFill>;
 };
 export const Swipe: React.FC<{ t: number; a: number; b: number; from: React.ReactNode; to: React.ReactNode; dir?: number; vert?: boolean }> = ({ t, a, b, from, to, dir = 1, vert }) => {
