@@ -183,9 +183,10 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
         <Ch t={t} t0={849.8} text="EVERYBODY KNEW: PARIS PAYS" color={C.rojo} x={1300} y={560} centro size={50} />
       </Escena>
       {/* 6 · paciencia o plata · la lanza en la oscuridad: lo único para lo que estaban listos */}
-      <Escena t={t} t0={851.61} t1={858.7} entra="diag" golpes={[852.6, 853.8, 856.2]}>
-        <AbsoluteFill style={{ background: "#16123d" }} />
-        <div style={{ position: "absolute", left: 480, top: 470, transform: `translate(-50%,-50%) scale(${ent(t, 852.6)})`, textAlign: "center" }}>
+      <Escena t={t} t0={851.61} t1={858.7} entra="diag" golpes={[851.75, 853.8, 856.2]}>
+        <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #3a3290 0%, #241d63 45%, #16123d 100%)" }} />
+        <AbsoluteFill style={{ background: "radial-gradient(circle at 25% 45%, rgba(232,192,112,0.35) 0%, rgba(232,192,112,0) 30%), radial-gradient(circle at 75% 50%, rgba(255,200,80,0.3) 0%, rgba(255,200,80,0) 30%)" }} />
+        <div style={{ position: "absolute", left: 480, top: 470, transform: `translate(-50%,-50%) scale(${ent(t, 851.75)})`, textAlign: "center" }}>
           <svg width={260} height={340} viewBox="-130 -170 260 340"><path d="M -100 -160 L 100 -160 L 10 0 L 100 160 L -100 160 L -10 0 Z" fill="#cfe8ff" stroke="#c9a24a" strokeWidth={14} /><path d={`M -60 ${-130 + prog(t, 852.6, 858) * 100} L 60 ${-130 + prog(t, 852.6, 858) * 100} L 0 -10 Z`} fill="#e8c070" /><path d={`M -80 150 L 80 150 L 0 ${150 - prog(t, 852.6, 858) * 100} Z`} fill="#e8c070" /></svg>
           <div style={{ fontFamily: "Fredoka", fontWeight: 700, fontSize: 70, color: C.teal }}>PATIENCE</div>
         </div>
