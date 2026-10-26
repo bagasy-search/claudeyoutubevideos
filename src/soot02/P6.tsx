@@ -2,6 +2,7 @@ import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona, APION, CIVIL, CENTURION } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, cabeza, Particulas, Pergamino, Pluma } from "./kit";
+import { Apion } from "./actor";
 import { Galera, Corte, MapaMar, Pancarta, CuentaN, Flecha, Salpica, Playa, Flota, Relampago, Pollo, Volcan, Burbujas, Anfora } from "./mar";
 import { Sello } from "./P1";
 
@@ -69,6 +70,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={652.89} t1={655.33} entra="atraviesa" ix={960} iy={520} sale="fundido" fondo="none" golpes={[653.0, 654.3]}>
       <Galera x={960} y={760} s={0.55} t={t} boga={0.4} vela={false} corvus={0} balanceo={9} ola={1} agua="#1b1f4c" />
       <Pancarta t={t} t0={653.0} n={6} titulo="THE STORM" y={360} />
+      <Apion t={t} t0={653.1} x={1620} y={1110} h={440} borda={960} acts={[[653.1, "miedo"]]} />
       <Relampago t={t} ts={[653.1, 654.35]} x={1300} />
     </Escena>
 
@@ -78,6 +80,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       {t < 662.3 && <Grande t={t} t0={655.4} text="255 BC" x={960} y={170} size={140} color={C.crema} />}
       <Chip t={t} t0={658.5} t1={662.0} text="RESCUE MISSION · AFRICA" color="#7a5bd1" x={960} y={960} centro size={54} />
       <Chip t={t} t0={661.9} text="SAILING HOME" color={C.rojo} x={960} y={150} centro size={60} />
+      <Apion t={t} t0={655.5} x={1710} y={1075} h={360} acts={[[655.6, "habla"], [658.5, "senala"], [661.9, "festeja"], [663.4, "piensa"]]} />
       <Chip t={t} t0={663.4} text="SOUTH COAST OF SICILY" color={C.oro} tinta={C.noche} x={960} y={960} centro size={52} />
     </Escena>
 
@@ -138,9 +141,10 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       {t < 696.69 && <MapaMar t={t} puntos={[{ n: "CAMARINA", t0: 694.2, color: C.rojo }]} zoom={{ n: "CAMARINA", z: 2.6, t: [694.0, 696.0] }} />}
       {t < 696.69 && <Relampago t={t} ts={[695.6]} x={1100} />}
       {t >= 696.4 && <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #2a2d52, #14122a 75%)", opacity: prog(t, 696.4, 696.75) }} />}
-      {t >= 696.69 && <Flota t={t} t0={696.69} n={364} hunde={284} tA={[698.9, 700.4]} x={960} y={640} cols={28} s={0.95} />}
-      {t >= 696.69 && t < 698.87 && <CuentaN t={t} t0={696.69} t1={697.5} de={300} a={364} x={960} y={190} size={140} color={C.crema} suf=" SHIPS" />}
-      {t >= 698.87 && <CuentaN t={t} t0={698.87} t1={700.4} de={364} a={80} x={960} y={190} size={140} color="#ff6a6a" pre="ONLY " suf=" SURVIVED" />}
+      {t >= 696.69 && <Flota t={t} t0={696.69} n={364} hunde={284} tA={[698.9, 700.4]} x={820} y={640} cols={28} s={0.85} />}
+      {t >= 696.69 && <Apion t={t} t0={696.7} x={1710} y={1110} h={420} borda={960} desde="nada" acts={[[696.7, "asombro"], [698.9, "miedo"]]} />}
+      {t >= 696.69 && t < 698.87 && <CuentaN t={t} t0={696.69} t1={697.5} de={300} a={364} x={820} y={190} size={140} color={C.crema} suf=" SHIPS" />}
+      {t >= 698.87 && <CuentaN t={t} t0={698.87} t1={700.4} de={364} a={80} x={820} y={190} size={140} color="#ff6a6a" pre="ONLY " suf=" SURVIVED" />}
             {t < 696.69 && <Chip t={t} t0={694.2} text="CAMARINA · 255 BC" color={C.rojo} x={960} y={150} centro size={60} />}
     </Escena>
 
@@ -151,6 +155,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
         <Restos t={t} t0={700.6} n={38} />
       </Cam>
       {t >= 704.03 && <AbsoluteFill style={{ background: "rgba(20,18,42,.72)", opacity: prog(t, 704.0, 704.4) }} />}
+      <Apion t={t} t0={700.6} x={1640} y={1075} h={440} acts={[[700.8, "triste"], [704.1, "piensa"], [706.0, "asombro"]]} />
       <Chip t={t} t0={700.6} t1={704.0} text="WRECKAGE" color={C.rojo} x={960} y={150} centro size={64} />
       <Chip t={t} t0={702.3} t1={704.0} text="FOR MILES" color={C.oro} tinta={C.noche} x={960} y={260} centro size={56} />
       {t >= 704.03 && <Pergamino x={960} y={560} w={900} abre={prog(t, 704.1, 704.6)} lineas={6} titulo="POLYBIUS · HISTORIES I.37" />}
@@ -164,6 +169,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
         <Galera x={960} y={680} s={0.8} t={t} boga={0} vela={false} corvus={0} balanceo={1} ola={1} agua={null} marines={false} />
       </div>
       <AbsoluteFill style={{ top: 780 }}><svg width={1920} height={300}><path d={`M 0 40 Q 240 ${10 + Math.sin(t * 3) * 20} 480 40 T 960 40 T 1440 40 T 1920 40 L 1920 300 L 0 300 Z`} fill="#1b1f4c" /></svg></AbsoluteFill>
+      <Apion t={t} t0={707.9} x={260} y={1110} h={440} borda={960} flip={false} acts={[[708.0, "piensa"], [709.5, "miedo"]]} />
       <Chip t={t} t0={707.9} text="HISTORIANS SUSPECT" color={C.violeta} x={960} y={130} centro size={52} />
       <Chip t={t} t0={709.5} text="THE CROW MADE IT WORSE" color={C.rojo} x={960} y={230} centro size={58} />
       <Flecha t={t} t0={709.6} x1={1500} y1={320} x2={1180} y2={470} color={C.oro} grosor={16} />
@@ -177,9 +183,10 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       {t < 715.15 && <Chip t={t} t0={712.81} text="2 YEARS LATER" color={C.violeta} x={960} y={250} centro size={52} />}
       {t >= 713.81 && t < 715.2 && <Grande t={t} t0={713.81} text="253 BC" x={1450} y={420} size={140} color={C.crema} />}
       {t >= 715.15 && <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #2a2d52, #14122a 75%)", opacity: prog(t, 715.15, 715.5) }} />}
-      {t >= 715.15 && <Flota t={t} t0={715.2} n={150} hunde={150} tA={[716.3, 718.3]} x={960} y={620} cols={15} s={1.3} />}
-      {t >= 715.15 && <CuentaN t={t} t0={716.3} t1={718.3} de={0} a={150} x={960} y={180} size={130} color={C.crema} pre="~" suf=" SUNK" />}
-      <Relampago t={t} ts={[715.3, 716.5, 717.6]} x={960} />
+      {t >= 715.15 && <Flota t={t} t0={715.2} n={150} hunde={150} tA={[715.7, 718.3]} x={900} y={620} cols={15} s={1.25} />}
+      {t >= 715.15 && <CuentaN t={t} t0={715.75} t1={718.55} de={0} a={150} x={900} y={180} size={130} color={C.crema} pre="~" suf=" SUNK" />}
+      {t >= 715.15 && <Apion t={t} t0={715.2} x={1710} y={1110} h={420} borda={960} desde="nada" acts={[[715.2, "asombro"], [716.3, "miedo"]]} />}
+      <Relampago t={t} ts={[715.3, 716.5, 717.6]} x={1380} />
     </Escena>
 
     {/* 718,63 · 249 BC — Publius Claudius Pulcher y los pollos sagrados */}
@@ -213,7 +220,8 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={732.33} t1={739.43} entra="fundido" sale="fundido" fondo="none" golpes={[732.4, 733.6, 735.4, 736.3, 737.6]}>
       {t < 735.31 && <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #6a2a1a, #2a1530 75%)" }} />}
       {t < 735.31 && <Flota t={t} t0={732.4} n={120} hunde={93} tA={[733.0, 735.0]} x={960} y={620} cols={15} s={1.25} />}
-      {t < 735.31 && <CuentaN t={t} t0={733.0} t1={735.0} de={0} a={90} x={960} y={210} size={104} color={C.crema} pre="+" suf=" SHIPS LOST" />}
+      {t < 735.31 && <CuentaN t={t} t0={733.0} t1={735.0} de={0} a={90} x={900} y={250} size={104} color={C.crema} pre="+" suf=" SHIPS LOST" />}
+      <Apion t={t} t0={732.4} t1={735.3} x={1710} y={1110} h={420} borda={960} acts={[[732.5, "asombro"], [733.6, "enojado"], [735.4, "miedo"]]} />
       {t < 735.31 && <Chip t={t} t0={732.4} text="BATTLE OF DREPANA: LOST" color={C.rojo} x={960} y={980} centro size={52} />}
       {t >= 735.31 && [[420, 760, 0.5, 0], [1000, 720, 0.6, 0.6], [1560, 780, 0.45, 1.2]].map(([x, y, s, d], i) => (
         <div key={i} style={{ position: "absolute", inset: 0, transform: `rotate(${interpolate(t, [736.5 + d, 739.2], [0, 40 - i * 15], cl)}deg)`, transformOrigin: `${x}px ${y + 40}px` }}>
@@ -227,7 +235,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 739,43 · "Polybius adds it all up. In that one war against Carthage, Rome lost around 700 warships, not all to the enemy, a huge number to the weather" */}
     <Escena t={t} t0={739.43} t1={752.81} entra="fundido" sale="fundido" fondo="#14122a" golpes={[739.5, 741.2, 743.2, 745.7, 747.2, 749.1]}>
-      {t < 749.13 && <Flota t={t} t0={739.5} n={700} hunde={t > 745.69 ? 700 : 0} tA={[745.8, 748.9]} x={960} y={600} cols={44} s={0.62} />}
+      {t < 749.13 && <Flota t={t} t0={739.5} n={700} hunde={t > 745.69 ? 700 : 0} tA={[745.8, 748.9]} x={900} y={600} cols={40} s={0.6} />}
       {t < 749.13 && <CuentaN t={t} t0={743.17} t1={745.6} de={0} a={700} x={960} y={160} size={130} color={C.crema} pre="~" suf=" WARSHIPS" />}
       <Chip t={t} t0={739.5} t1={743.1} text="POLYBIUS ADDS IT UP" color={C.violeta} x={960} y={160} centro size={56} />
       <Chip t={t} t0={741.21} t1={743.1} text="ONE WAR · ROME vs CARTHAGE" color={C.rojo} x={960} y={930} centro size={50} />
@@ -244,6 +252,8 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
           })}
         </svg>
       )}
+      <Apion t={t} t0={739.6} x={1710} y={1075} h={330} acts={[[739.7, "habla"], [743.2, "asombro"], [745.7, "miedo"], [749.2, "triste"]]} />
+      {t >= 749.13 && <CuentaN t={t} t0={750.0} t1={752.0} a={200000} pre="≈ " suf=" MEN" x={900} y={960} size={100} color={C.crema} />}
       {t >= 749.13 && <Chip t={t} t0={749.13} text="EVERY SHIP = A FEW HUNDRED ROWERS" color={C.rojo} x={960} y={190} centro size={56} />}
     </Escena>
 
@@ -278,6 +288,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       {t > 762.6 && <div style={{ position: "absolute", left: 960, top: 420, width: 520, height: 26, background: C.rojo, borderRadius: 13, transform: `translate(-50%,-50%) rotate(-24deg) scaleX(${ent(t, 762.6)})` }} />}
       <Chip t={t} t0={761.5} text="SOMETIMES IT WASN'T" color={C.violeta} x={960} y={150} centro size={56} />
       <Chip t={t} t0={763.0} text="THE WEATHER AT ALL" color={C.rojo} x={960} y={260} centro size={56} />
+      <Apion t={t} t0={761.4} x={1640} y={1075} h={420} acts={[[761.5, "piensa"], [762.6, "festeja"], [763.0, "asombro"]]} />
     </Escena>
 
     {/* 764,39 · "In the year 79, the admiral of the fleet at Misenum was a famous writer, Pliny the Elder." */}
@@ -294,6 +305,8 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={765.87} text="ADMIRAL · FLEET OF MISENUM" color={C.violeta} x={960} y={140} centro size={52} />
       <Chip t={t} t0={767.4} text="+ FAMOUS WRITER" color={C.oro} tinta={C.noche} x={960} y={240} centro size={46} />
       <Chip t={t} t0={769.27} text="PLINY THE ELDER" color={C.rojo} x={960} y={330} centro size={60} />
+      {t > 767.4 && <Pergamino x={1380} y={640} w={380} abre={prog(t, 767.5, 768.0)} lineas={5} titulo="NATURAL HISTORY" />}
+      {t > 767.4 && <CuentaN t={t} t0={767.6} t1={768.6} a={37} suf=" BOOKS" x={1380} y={480} size={70} color={C.oro} />}
     </Escena>
 
     {/* 770,47 · "One summer afternoon, he saw a strange cloud rising over the bay, shaped like a pine tree. It was Mount Vesuvius, erupting." */}
@@ -323,6 +336,13 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={778.2} t1={780.7} text="WHAT AN ADMIRAL DOES" color={C.violeta} x={960} y={140} centro size={54} />
       <Chip t={t} t0={780.73} text="ALL SHIPS OUT" color={C.rojo} x={420} y={140} size={56} />
       <Chip t={t} t0={782.27} text="STRAIGHT TOWARD THE VOLCANO" color={C.oro} tinta={C.noche} x={420} y={240} size={46} />
+      {t >= 780.73 && (
+        <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+          <path d="M 260 860 Q 900 700 1420 640" stroke="#fff" strokeWidth={10} strokeDasharray="6 22" strokeLinecap="round" fill="none" pathLength={1} style={{ strokeDasharray: `${prog(t, 780.9, 784.8)} 1` }} />
+          <circle cx={1420} cy={640} r={22} fill={C.rojo} opacity={prog(t, 784.6, 784.9)} />
+        </svg>
+      )}
+      {t >= 782.27 && <CuentaN t={t} t0={782.3} t1={784.8} a={30} pre="~" suf=" KM" x={900} y={620} size={100} color={C.crema} />}
       <Chip t={t} t0={784.91} text="TO RESCUE PEOPLE ON THE COAST" color={C.violeta} x={420} y={330} size={42} />
     </Escena>
 
@@ -356,7 +376,8 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       {t < 795.1 && <Persona x={560} y={1000} h={500} t={t} seed={167} ropa={SOBRINO} expr="triste" bD={80 + Math.sin(t * 14) * 6} cD={100} />}
       {t < 794.99 && <Pergamino x={1240} y={560} w={760} abre={prog(t, 793.2, 793.7)} lineas={8} titulo="PLINY THE YOUNGER" />}
       {t < 794.99 && <Chip t={t} t0={793.15} text="HIS NEPHEW WROTE IT DOWN" color={C.violeta} x={960} y={140} centro size={52} />}
-      {t >= 794.99 && <AbsoluteFill style={{ opacity: prog(t, 794.9, 795.1) }}><Corte t={t} boga={0} agua={0.06} heroeExpr="miedo" luz={0.25} oscuro={0.7} hortator={false} vacio /></AbsoluteFill>}
+      {t >= 794.99 && <AbsoluteFill style={{ opacity: prog(t, 794.9, 795.1) }}><Corte t={t} boga={0} agua={0.06} heroeExpr="miedo" luz={0.45} oscuro={0.4} hortator={false} vacio /></AbsoluteFill>}
+      {t >= 794.99 && <Apion t={t} t0={795.0} x={1600} y={1075} h={460} desde="nada" acts={[[795.0, "piensa"], [796.6, "triste"]]} />}
       {t >= 794.99 && <Chip t={t} t0={795.0} text="HIS ROWERS?" color={C.rojo} x={960} y={160} centro size={70} />}
       {t >= 796.6 && <Grande t={t} t0={796.6} text="?" x={960} y={560} size={260} color={C.crema} />}
     </Escena>

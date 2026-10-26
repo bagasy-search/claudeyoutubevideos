@@ -6,6 +6,7 @@ import { Persona, APION, LUCIUS } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Particulas, Emote, cabeza } from "./kit";
 import { Pergamino } from "./kit";
 import { Escudo } from "./kit2";
+import { Apion } from "./actor";
 import { Galera, Corte, Remo, Olas, Nubes, Relampago, Flota, Burbujas, Submarino, IconoTrampa, CuentaN, Flecha, AguaFrente, Playa, Espolon, Salpica } from "./mar";
 
 // soot02 · gancho (0-49,24 s). Mundo continuo: abrimos ADENTRO del casco, caemos al mar, subimos al contrato,
@@ -78,8 +79,8 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
         <Cam t={t} k={[[9.06, 800, 720, 1.9], [10.2, 800, 700, 1.6], [12.4, 900, 620, 1.15]]}>
           <Corte t={t} boga={0.6} agua={0.1} oscuro={0.35} heroeExpr="cansado" />
         </Cam>
-        <Chip t={t} t0={9.2} text="← YOU FACE THIS WAY" color={C.rojo} x={90} y={150} size={58} />
-        <Chip t={t} t0={9.6} text="SHIP GOES THIS WAY →" color={C.teal} tinta={C.noche} x={1830} y={150} size={58} />
+        <Chip t={t} t0={9.2} text="← YOU FACE THIS WAY" color={C.rojo} x={90} y={90} size={54} />
+        <Chip t={t} t0={9.6} text="SHIP GOES THIS WAY →" color={C.teal} tinta={C.noche} x={1830} y={90} size={54} />
         <Remo x={interpolate(t, [10.3, 12.3], [1500, 900], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={560} s={1.6} t={t} t0={10.3} rot={-8} />
         <Chip t={t} t0={10.6} text="GIANT PIECE OF WOOD" color={C.ambar} tinta={C.noche} x={960} y={880} centro size={74} />
         <Flecha t={t} t0={9.7} x1={1250} y1={260} x2={1700} y2={260} color={C.teal} grosor={16} />
@@ -94,6 +95,7 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
         <Relampago t={t} ts={[12.6, 14.3]} />
         <Grande t={t} t0={12.66} text="255 BC" y={380} size={260} color={C.crema} />
         <Chip t={t} t0={13.92} text="BEFORE CHRIST" color={C.violeta} x={960} y={570} centro size={56} />
+        <Apion t={t} t0={12.3} x={1640} y={1110} h={440} borda={960} acts={[[12.66, "asombro"], [13.92, "miedo"]]} />
       </Escena>
 
       {/* 15,14 · "one single storm off the coast of Sicily destroyed..." — la flota en olas gigantes; la primera se da vuelta */}
@@ -106,6 +108,7 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
         <Relampago t={t} ts={[15.7, 17.6]} x={900} />
         <Chip t={t} t0={15.34} text="ONE STORM" color={C.rojo} x={110} y={160} size={78} />
         <Chip t={t} t0={17.2} text="SICILY" color={C.oro} tinta={C.noche} x={1500} y={170} size={66} />
+        <Apion t={t} t0={15.14} x={1640} y={1110} h={440} borda={960} desde="nada" acts={[[15.14, "miedo"], [17.64, "asombro"]]} />
       </Escena>
 
       {/* 18,40 · "284 Roman warships" — la flota entera como grilla: 364 barcos, se dan vuelta 284 */}
@@ -169,7 +172,7 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
               <Olas t={t} y0={760} ola={0.25} capas={4} />
               <Playa t={t} />
               <Galera x={1100 + interpolate(t, [30.8, 32.4], [700, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={640} s={0.62} t={t} boga={0.6} vela agua="#2a74b8" />
-              <Persona x={interpolate(t, [31.0, 32.6], [-100, 420], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={980} h={420} t={t} seed={2} ropa={APION} expr="feliz" camina={t < 32.6 ? 1.8 : 0} salta={32.6} />
+              {t >= 31.4 && <Persona x={interpolate(t, [31.4, 32.6], [-480, 420], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={980} h={420} t={t} seed={2} ropa={APION} expr="feliz" camina={t < 32.6 ? 1.8 : 0} salta={32.6} />}
             </div>
             <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }}>
               <Playa t={t} />
@@ -188,20 +191,20 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
 
       {/* 34,72 · "what Rome could build out of wood, bronze, and 300 tired men" — la galera se arma pieza por pieza en el agua */}
       <Escena t={t} t0={34.72} t1={39.76} entra="fundido" sale="fundido" fondo="none" golpes={[36.62, 37.26, 38.08]}>
-        <AbsoluteFill style={{ clipPath: `inset(0 ${100 - 100 * prog(t, 35.4, 36.7)}% 0 0)` }}>
+        {t < 39.76 && <AbsoluteFill style={{ clipPath: `inset(0 ${100 - 100 * prog(t, 35.4, 36.7)}% 0 0)` }}>
           <Galera x={960} y={600} s={0.95} t={t} boga={t < 38.1 ? 0 : 0.6} vela={t > 38.6} marines={false} agua="#1f5c9c" />
-        </AbsoluteFill>
+        </AbsoluteFill>}
         {t < 37.4 && <Espolon x={interpolate(t, [37.0, 37.3], [2300, 1830], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={662} s={0.25} />}
         <Salpica t={t} t0={37.28} x={1840} y={650} />
         <Chip t={t} t0={35.6} t1={39.4} text="ROME BUILDS" color={C.violeta} x={120} y={150} size={56} />
         <Chip t={t} t0={36.62} t1={39.4} text="WOOD" color="#a8622c" x={420} y={300} centro size={76} />
         <Chip t={t} t0={37.26} t1={39.4} text="BRONZE" color="#d9962e" tinta={C.noche} x={1700} y={480} centro size={76} />
-        {t < 39.6 && <CuentaN t={t} t0={38.08} t1={38.6} a={300} x={960} y={250} size={210} color={C.crema} />}
+        {t < 39.76 && <CuentaN t={t} t0={38.08} t1={38.6} a={300} x={960} y={250} size={210} color={C.crema} />}
         <Chip t={t} t0={38.6} t1={39.4} text="TIRED MEN" color={C.rojo} x={960} y={400} centro size={64} />
       </Escena>
 
       {/* 39,76 · "the most dangerous thing on a Roman warship was not the enemy" — llega el enemigo... y se tacha. Al fondo, una nube. */}
-      <Escena t={t} t0={39.76} t1={45.08} entra="fundido" sale="fundido" fondo="none" golpes={[43.76]}>
+      <Escena t={t} t0={39.76} t1={45.08} entra="corte" sale="fundido" fondo="none" golpes={[43.76]}>
         <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
           <g opacity={prog(t, 41.5, 43)} transform="translate(1500 260)"><ellipse cx={0} cy={0} rx={260} ry={80} fill="#4a4f78" /><circle cx={-90} cy={-40} r={90} fill="#4a4f78" /><circle cx={60} cy={-60} r={110} fill="#4a4f78" /></g>
         </svg>
@@ -210,7 +213,8 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
         <Galera x={interpolate(t, [39.8, 41.6], [2400, 1400], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={670} s={0.6} t={t + 1} boga={0.7} flip color="#3a2a3a" franja="#1a1a1a" />
         <Chip t={t} t0={41.32} text="MOST DANGEROUS THING?" color={C.violeta} x={960} y={150} centro size={62} />
         {t > 43.76 && <svg style={{ position: "absolute", left: 1150, top: 450 }} width={500} height={400}><g opacity={ent(t, 43.76)}><line x1={40} y1={40} x2={40 + 420 * prog(t, 43.76, 43.96)} y2={40 + 320 * prog(t, 43.76, 43.96)} stroke={C.rojo} strokeWidth={40} strokeLinecap="round" /><line x1={460} y1={40} x2={460 - 420 * prog(t, 43.9, 44.1)} y2={40 + 320 * prog(t, 43.9, 44.1)} stroke={C.rojo} strokeWidth={40} strokeLinecap="round" /></g></svg>}
-        <Grande t={t} t0={44.0} text="NOT THE ENEMY" y={920} size={120} color={C.crema} />
+        <Grande t={t} t0={44.0} text="NOT THE ENEMY" x={1100} y={920} size={120} color={C.crema} />
+        <Apion t={t} t0={39.9} x={230} y={1070} h={430} acts={[[40.3, "habla"], [41.32, "piensa"], [43.76, "asombro"], [44.5, "senala"]]} flip={false} />
         <Chip t={t} t0={44.6} text="?" color={C.ambar} tinta={C.noche} x={1500} y={300} centro size={90} />
       </Escena>
 

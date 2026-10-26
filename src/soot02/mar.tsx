@@ -583,10 +583,10 @@ export const Relampago: React.FC<{ t: number; ts: number[]; x?: number }> = ({ t
   for (let i = 1; i < 9; i++) pts.push([pts[i - 1][0] + (r() - 0.5) * 140, i * 80]);
   return (
     <>
-      {u < 0.07 && <AbsoluteFill style={{ background: "#eef4ff", opacity: 0.22, pointerEvents: "none" }} />}
+      {u < 0.06 && <AbsoluteFill style={{ background: "#eef4ff", opacity: 0.12, pointerEvents: "none" }} />}
       <svg style={{ position: "absolute", inset: 0, pointerEvents: "none" }} width={1920} height={1080}>
         <polyline points={pts.map((p) => p.join(",")).join(" ")} fill="none" stroke="#fff" strokeWidth={14} strokeLinejoin="round" opacity={Math.max(0, 1 - u * 2.6)} />
-        <polyline points={pts.map((p) => p.join(",")).join(" ")} fill="none" stroke="#bcd8ff" strokeWidth={34} strokeLinejoin="round" opacity={Math.max(0, 0.4 - u)} />
+        <polyline points={pts.map((p) => p.join(",")).join(" ")} fill="none" stroke="#bcd8ff" strokeWidth={26} strokeLinejoin="round" opacity={Math.max(0, 0.3 - u)} />
       </svg>
     </>
   );
@@ -647,8 +647,9 @@ export const IconoTrampa: React.FC<{ n: number; s?: number }> = ({ n, s = 1 }) =
 // contador con separador de miles
 export const CuentaN: React.FC<{ t: number; t0: number; t1: number; de?: number; a: number; x: number; y: number; size?: number; color?: string; pre?: string; suf?: string; borde?: string }> = ({ t, t0, t1, de = 0, a, x, y, size = 150, color = "#fff", pre = "", suf = "", borde = "#2a1530" }) => {
   if (t < t0) return null;
-  const v = Math.round(de + (a - de) * prog(t, t0, t1));
-  return <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) scale(${ent(t, t0)})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.08}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", textShadow: `0 ${size * 0.06}px 0 ${borde}` }}>{pre}{v.toLocaleString("en-US")}{suf}</div>;
+  // lineal: el número acompaña lo que se ve (barcos que se hunden de a uno), sin saltos en el medio
+  const v = Math.round(de + (a - de) * interpolate(t, [t0, t1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+  return <div style={{ position: "absolute", left: x, top: y, opacity: prog(t, t0, t0 + 0.1), transform: `translate(-50%,-50%) scale(${0.6 + 0.4 * ent(t, t0)})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.08}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", textShadow: `0 ${size * 0.06}px 0 ${borde}` }}>{pre}{v.toLocaleString("en-US")}{suf}</div>;
 };
 // flecha dibujada que señala algo
 export const Flecha: React.FC<{ t: number; t0: number; x1: number; y1: number; x2: number; y2: number; color?: string; grosor?: number }> = ({ t, t0, x1, y1, x2, y2, color = "#fff", grosor = 12 }) => {

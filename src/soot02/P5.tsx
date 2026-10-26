@@ -2,6 +2,7 @@ import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona, APION, CIVIL, CENTURION } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, cabeza, Particulas, Rayos } from "./kit";
+import { Apion, Sala } from "./actor";
 import { Galera, Corte, Remero, MapaMar, Pancarta, CuentaN, Flecha, Salpica, Playa, Flota, Columna, Nubes } from "./mar";
 import { Laurel } from "./P1";
 
@@ -43,6 +44,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={537.95} t1={540.2} entra="atraviesa" ix={1300} iy={420} sale="fundido" fondo="none" golpes={[538.3, 539.2]}>
       <Galera x={900} y={720} s={0.5} t={t} boga={0.6} vela={false} corvus={0} />
       <Pancarta t={t} t0={538.0} n={5} titulo="THE CROW" y={380} />
+      <Apion t={t} t0={538.1} x={1620} y={1110} h={440} borda={960} acts={[[538.1, "piensa"], [539.2, "asombro"]]} />
     </Escena>
 
     {/* 540,2 · "In 264 BC, Rome went to war with Carthage, the greatest naval power in the western Mediterranean, and Rome had a problem" */}
@@ -51,7 +53,8 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
       <Grande t={t} t0={540.3} text="264 BC" x={960} y={170} size={140} color={C.crema} />
       <Chip t={t} t0={543.2} text="ROME vs CARTHAGE" color={C.rojo} x={960} y={300} centro size={60} />
       <Chip t={t} t0={545.0} text="GREATEST NAVAL POWER" color="#7a5bd1" x={540} y={960} centro size={52} />
-      <Chip t={t} t0={547.9} text="ROME HAD A PROBLEM" color={C.oro} tinta={C.noche} x={1400} y={960} centro size={56} />
+      <Chip t={t} t0={547.9} text="ROME HAD A PROBLEM" color={C.oro} tinta={C.noche} x={1260} y={960} centro size={56} />
+      <Apion t={t} t0={540.4} x={1710} y={1075} h={360} acts={[[540.6, "habla"], [543.2, "senala"], [545.0, "asombro"], [547.9, "miedo"]]} />
     </Escena>
 
     {/* 549,4 · "Rome did not really have a navy. So, according to Polybius, they copied one." — un legionario en un botecito */}
@@ -78,13 +81,14 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
       {t >= 559.1 && (
         <AbsoluteFill style={{ background: "#1b3a6b" }}>
           <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>{Array.from({ length: 30 }, (_, i) => <line key={i} x1={0} y1={i * 40} x2={1920} y2={i * 40} stroke="#fff" strokeOpacity={0.08} strokeWidth={2} />)}{Array.from({ length: 50 }, (_, i) => <line key={"v" + i} x1={i * 40} y1={0} x2={i * 40} y2={1080} stroke="#fff" strokeOpacity={0.08} strokeWidth={2} />)}</svg>
-          <Flota t={t} t0={559.2} n={120} hunde={0} tA={[0, 1]} y={600} cols={15} s={1.5} />
+          <Flota t={t} t0={558.75} n={120} hunde={0} tA={[0, 1]} x={900} y={600} cols={15} s={1.45} />
         </AbsoluteFill>
       )}
       <Chip t={t} t0={554.3} t1={558.9} text="RAN AGROUND" color="#7a5bd1" x={1050} y={150} centro size={60} />
       <Chip t={t} t0={556.7} t1={558.9} text="CAPTURED" color={C.rojo} x={1050} y={260} centro size={56} />
       <CuentaN t={t} t0={559.2} t1={559.8} de={100} a={120} suf=" SHIPS" x={560} y={150} size={110} color={C.crema} />
       <Chip t={t} t0={559.9} text="100 QUINQUEREMES + 20 TRIREMES" color={C.violeta} x={960} y={1000} centro size={46} />
+      <Apion t={t} t0={559.15} x={1710} y={1075} h={380} acts={[[559.2, "asombro"], [561.0, "festeja"]]} />
       <CuentaN t={t} t0={561.0} t1={562.8} a={60} pre="IN " suf=" DAYS" x={1420} y={150} size={110} color={C.oro} />
     </Escena>
 
@@ -169,7 +173,11 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
       {t < 612.3 && <Persona x={1640} y={1010} h={440} t={t} seed={190} ropa={DUILIO} expr="orgullo" bD={interpolate(t, [609.3, 610.2], [10, 115], cl)} cD={0} mira={-0.7} />}
       {t < 612.3 && <Chip t={t} t0={611.3} text="MYLAE · SICILY" color={C.rojo} x={1500} y={300} centro size={50} />}
       {t >= 612.3 && t < 615.4 && (
-        <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #5b2bb5, #1b1240 80%)" }}>
+        <AbsoluteFill>
+          <Sala t={t} />
+          {/* maqueta del cuervo sobre la mesa del cónsul */}
+          <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><rect x={1300} y={800} width={520} height={34} rx={8} fill="#6b3a1f" /><rect x={1340} y={834} width={26} height={250} fill="#4a2814" /><rect x={1750} y={834} width={26} height={250} fill="#4a2814" /></svg>
+          <Galera x={1560} y={770} s={0.2} t={t} boga={0} vela={false} corvus={prog(t, 613.6, 614.4)} agua={null} marines={false} />
           <Persona x={960} y={pp(820, 440)} h={820} t={t} seed={190} ropa={DUILIO} expr="orgullo" bD={120 + Math.sin(t * 4) * 15} cD={40} bI={30 + Math.sin(t * 3) * 10} habla={t > 613.6} />
         </AbsoluteFill>
       )}
@@ -251,6 +259,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
           );
         })()}
       </Cam>
+      <Apion t={t} t0={638.5} x={1700} y={1110} h={440} borda={960} acts={[[638.7, "habla"], [641.6, "piensa"], [643.95, "senala"], [648.5, "habla"], [650.4, "miedo"]]} />
       <Chip t={t} t0={638.43} t1={643.6} text="THAT HEAVY BRIDGE" color={C.oro} tinta={C.noche} x={500} y={150} centro size={58} />
       <Chip t={t} t0={639.5} t1={643.6} text="HIGH AT THE FRONT" color={C.violeta} x={500} y={260} centro size={52} />
       <Chip t={t} t0={641.6} t1={643.6} text="A VERY BIG PROBLEM" color={C.rojo} x={500} y={960} centro size={56} />

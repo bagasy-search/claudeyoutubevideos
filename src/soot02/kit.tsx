@@ -227,10 +227,11 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
   const izq = Math.max(64, Math.min(1856 - w, centro ? x0 - w / 2 : x0));
   const x = centro ? izq + w / 2 : izq;
   const y = Math.max(90 + h / 2, Math.min(1016 - h / 2, y0));
-  const s = ent(t, t0, 0, { damping: 11, stiffness: 180 });
+  // entra desde 60 % con fundido corto: nunca "nace microscópica"
+  const s = 0.6 + 0.4 * ent(t, t0, 0, { damping: 11, stiffness: 180 });
   const out = interpolate(t, [t1, t1 + 0.3], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
-    <div style={{ position: "absolute", left: x, top: y, transform: `translate(${centro ? "-50%" : "0"}, -50%) scale(${s * out}) rotate(${(1 - s) * -8}deg)`, overflow: "hidden", transformOrigin: centro ? "center" : "left center", fontFamily, fontWeight: 700, fontSize: size, color: tinta, background: color, padding: `${size * 0.16}px ${size * 0.42}px`, borderRadius: size * 0.3, boxShadow: "0 8px 0 rgba(20,10,50,.35)", letterSpacing: 1, whiteSpace: "nowrap", lineHeight: 1.15 }}>
+    <div style={{ position: "absolute", left: x, top: y, opacity: prog(t, t0, t0 + 0.1) * Math.min(1, out * 1.6), transform: `translate(${centro ? "-50%" : "0"}, -50%) scale(${s * (0.7 + 0.3 * out)}) rotate(${(1 - s) * -12}deg)`, overflow: "hidden", transformOrigin: centro ? "center" : "left center", fontFamily, fontWeight: 700, fontSize: size, color: tinta, background: color, padding: `${size * 0.16}px ${size * 0.42}px`, borderRadius: size * 0.3, boxShadow: "0 8px 0 rgba(20,10,50,.35)", letterSpacing: 1, whiteSpace: "nowrap", lineHeight: 1.15 }}>
       {text}
       <div style={{ position: "absolute", top: 0, bottom: 0, width: size * 0.9, left: `${interpolate(t, [t0 + 0.12, t0 + 0.6], [-30, 130], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}%`, background: "linear-gradient(100deg, transparent, rgba(255,255,255,.55), transparent)", transform: "skewX(-20deg)" }} />
     </div>
@@ -239,10 +240,10 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
 // texto grande con contorno (títulos)
 export const Grande: React.FC<{ t: number; t0: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string }> = ({ t, t0, text, x = 960, y: y0, size = 150, color = C.crema, borde = C.noche }) => {
   if (t < t0) return null;
-  const s = ent(t, t0, 0, { damping: 9, stiffness: 190 });
+  const s = 0.6 + 0.4 * ent(t, t0, 0, { damping: 9, stiffness: 190 });
   const y = Math.max(80 + size * 0.6, Math.min(1000 - size * 0.6, y0));
   return (
-    <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${s})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}` }}>
+    <div style={{ position: "absolute", left: x, top: y, opacity: prog(t, t0, t0 + 0.1), transform: `translate(-50%, -50%) scale(${s})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}` }}>
       {text}
     </div>
   );

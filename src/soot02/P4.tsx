@@ -3,6 +3,7 @@ import { AbsoluteFill, interpolate } from "remotion";
 import { rnd } from "../soot/lib";
 import { Persona, APION } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, cabeza } from "./kit";
+import { Apion, Sala } from "./actor";
 import { Galera, Corte, Remero, Espolon, MapaMar, Pancarta, CuentaN, Flecha, Salpica, Submarino, Burbujas } from "./mar";
 
 // soot02 · trampa 4, EL ESPOLÓN (442,08-537,95 s). La proa → el rostrum → los espolones de las Égadas en el fondo del mar
@@ -39,6 +40,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={442.08} t1={444.1} entra="atraviesa" ix={1500} iy={640} sale="nada" fondo="none" golpes={[442.4, 443.2]}>
       <Galera x={interpolate(t, [442, 444.2], [900, 1000])} y={700} s={0.5} t={t} boga={1.4} vela={false} />
       <Pancarta t={t} t0={442.1} n={4} titulo="THE RAM" y={400} />
+      <Apion t={t} t0={442.2} x={1620} y={1110} h={440} borda={960} acts={[[442.2, "asombro"], [443.2, "miedo"]]} />
     </Escena>
 
     {/* 444,1 · "On the front of every Roman warship, right at the waterline, sits a huge bronze beak, the rostrum, the ram" */}
@@ -51,21 +53,22 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={444.1} t1={445.9} text="THE FRONT OF EVERY WARSHIP" color={C.violeta} x={960} y={150} centro size={56} />
       <Chip t={t} t0={446.1} text="AT THE WATERLINE" color="#1d6f8a" x={960} y={150} centro size={56} />
       <Chip t={t} t0={447.06} text="A HUGE BRONZE BEAK" color={C.oro} tinta={C.noche} x={960} y={260} centro size={58} />
-      <Grande t={t} t0={449.26} text="ROSTRUM" y={880} size={150} color={C.crema} />
+      <Apion t={t} t0={444.2} x={250} y={1110} h={440} borda={960} flip={false} acts={[[444.3, "habla"], [446.1, "senala"], [449.3, "asombro"]]} />
+      <Grande t={t} t0={449.26} text="ROSTRUM" x={1060} y={880} size={150} color={C.crema} />
     </Escena>
 
     {/* 451,3 · "In the sea off western Sicily..." mapa → 453,2 abajo del agua: "divers found 20+ rams on the seabed... 241 BC... inscriptions with names of officials who paid" */}
     <Escena t={t} t0={451.3} t1={465.2} entra="baja" sale="fundido" fondo="#143e70" golpes={[451.3, 454.4, 458.4, 461.8]}>
-      {t < 453.3 && <MapaMar t={t} puntos={[{ n: "AEGATES", t0: 451.4, label: true }]} zoom={{ n: "AEGATES", z: 3.2, t: [451.4, 453.2] }} />}
-      {t >= 453.2 && (
-        <AbsoluteFill style={{ opacity: prog(t, 453.2, 453.6) }}>
+      {t < 453.35 && <MapaMar t={t} puntos={[{ n: "AEGATES", t0: 451.4, label: true }]} zoom={{ n: "AEGATES", z: 3.2, t: [451.4, 453.2] }} />}
+      {t >= 452.95 && (
+        <AbsoluteFill style={{ opacity: prog(t, 452.95, 453.3) }}>
           <Submarino t={t} />
           <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
             <path d="M 0 900 Q 400 860 900 890 Q 1400 920 1920 870 L 1920 1080 L 0 1080 Z" fill="#c9b07a" />
             <path d="M 0 960 Q 600 930 1200 960 Q 1600 980 1920 950 L 1920 1080 L 0 1080 Z" fill="#b39860" />
             {[[200, 120], [560, 220], [1700, 160]].map(([x, h], i) => <path key={i} d={`M ${x} 900 q ${Math.sin(t * 1.5 + i) * 20} ${-h / 2} 0 ${-h}`} stroke="#3f8f3e" strokeWidth={14} fill="none" strokeLinecap="round" />)}
           </svg>
-          {[[300, 880, 0.26, -8], [700, 900, 0.3, 6], [1100, 905, 0.24, -4], [1450, 885, 0.28, 10], [1750, 900, 0.22, -12], [520, 950, 0.2, 14], [1280, 960, 0.22, -10]].map(([x, y, s, r], i) => <Espolon key={i} x={x} y={y} s={s * ent(t, 453.4 + i * 0.14)} rot={r} />)}
+          {[[300, 880, 0.26, -8], [700, 900, 0.3, 6], [1100, 905, 0.24, -4], [1450, 885, 0.28, 10], [1750, 900, 0.22, -12], [520, 950, 0.2, 14], [1280, 960, 0.22, -10]].map(([x, y, s, r], i) => <Espolon key={i} x={x} y={y} s={s * (0.55 + 0.45 * ent(t, 453.1 + i * 0.1))} rot={r} />)}
           {/* buzo */}
           <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
             <g transform={`translate(${interpolate(t, [453.2, 465], [1500, 760])} ${560 + Math.sin(t * 1.2) * 20}) rotate(-12)`}>
@@ -94,7 +97,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 465,2 · "one ram found off the coast of Israel weighs 465 kilos of solid bronze" */}
     <Escena t={t} t0={465.2} t1={471.8} entra="fundido" sale="fundido" fondo="#2d1b69" golpes={[465.9, 467.4, 468.5, 471.3]}>
-      <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #5b2bb5, #1b1240 80%)" }} />
+      <Sala t={t} />
       {/* báscula */}
       <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
         <rect x={560} y={820} width={800} height={60} rx={14} fill="#c8ccd4" stroke="#4a4f5f" strokeWidth={8} />
@@ -129,6 +132,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
           </>
         );
       })()}
+      <Apion t={t} t0={472.0} x={1710} y={1075} h={360} acts={[[472.4, "habla"], [474.1, "rema"], [477.2, "festeja"], [479.4, "rema"], [482.0, "miedo"]]} />
       <Chip t={t} t0={472.4} t1={477.4} text="SIMPLE + BRUTAL" color={C.rojo} x={120} y={130} size={60} />
       {t < 479.3 && <CuentaN t={t} t0={474.1} t1={474.9} a={300} suf=" MEN SPRINT" x={600} y={960} size={90} color={C.crema} />}
       <Grande t={t} t0={477.2} text="PUNCH!" x={1340} y={220} size={170} color={C.rojo} />
@@ -138,12 +142,14 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 485,2 · "the part that should worry you. Rowers sit facing the back of the ship. You never see where you are going... the enemy... their ram. The only warning is the crash." */}
     <Escena t={t} t0={485.2} t1={498.7} entra="fundido" sale="fundido" fondo="none" quieta golpes={[487.2, 488.6, 490.5, 492.6, 494.1, 496.6]}>
+      <div style={{ position: "absolute", inset: 0, transform: t > 496.5 && t < 497.1 ? `translate(${Math.sin(t * 90) * 22 * (497.1 - t)}px, ${Math.cos(t * 77) * 16 * (497.1 - t)}px)` : undefined }}>
       <Cam t={t} k={[[485.2, 960, 540, 1.0], [487.0, 960, 540, 1.0], [488.4, 620, 560, 1.7], [493.9, 620, 560, 1.7], [495.6, 960, 540, 1.0], [498.7, 960, 540, 1.0]]}>
         <Galera x={760} y={650} s={0.75} t={t} boga={0.6} vela={false} marines={false} rompe={prog(t, 496.5, 496.8)} />
         {/* el remero de espaldas, con globo de visión hacia atrás */}
         {/* el enemigo que viene por detrás de tu espalda (desde la derecha) */}
         {t > 492.6 && <Galera x={interpolate(t, [492.6, 496.5], [2700, 1720], cl)} y={660} s={0.75} t={t} boga={1.6} vela={false} flip color="#3a2a3a" franja="#1a1a1a" marines={false} />}
       </Cam>
+      </div>
       {t > 488.4 && t < 496.6 && <div style={{ position: "absolute", left: 120, top: 560, width: 440, height: 440, borderRadius: 220, overflow: "hidden", background: "radial-gradient(circle, #6a3a1e, #2a1408)", border: "10px solid #2fb5d8", transform: `scale(${ent(t, 488.4) * (1 - prog(t, 496.2, 496.6))})` }}>
         <svg style={{ position: "absolute", inset: 0 }} width={440} height={440}><g transform="translate(250 330) scale(0.95)"><Remero fase={t * 3.6} ropa="#2fb5d8" piel="#c98b62" pelo="#1d1410" expr={t > 494 ? "miedo" : "cansado"} seed={2} t={t} /></g></svg>
       </div>}
@@ -155,6 +161,10 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={490.5} text="✕ WHERE YOU'RE GOING" color={C.noche} x={120} y={240} size={46} />
       <Chip t={t} t0={492.6} text="✕ THE ENEMY" color={C.noche} x={120} y={330} size={46} />
       <Chip t={t} t0={494.1} text="✕ THEIR RAM" color={C.rojo} x={120} y={420} size={46} />
+      {t > 496.45 && <div style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
+        <Salpica t={t} t0={496.5} x={1090} y={640} s={2.0} n={30} />
+        <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>{Array.from({ length: 16 }, (_, i) => { const u = t - 496.5; const a = -2.6 + (i / 15) * 2.2; const v = 500 + (i % 4) * 160; return <rect key={i} x={1090 + Math.cos(a) * v * u} y={640 + Math.sin(a) * v * u + 900 * u * u} width={34} height={10} rx={3} fill={i % 2 ? "#9a5a2a" : "#c9874a"} transform={`rotate(${u * 720 * (i % 2 ? 1 : -1)} ${1090 + Math.cos(a) * v * u} ${640 + Math.sin(a) * v * u + 900 * u * u})`} opacity={Math.max(0, 1 - u * 0.8)} />; })}</svg>
+      </div>}
       <Grande t={t} t0={496.6} text="CRASH." y={860} size={200} color={C.crema} />
     </Escena>
 
@@ -186,6 +196,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={515.1} t1={525.3} entra="fundido" sale="paneo" fondo="none" golpes={[515.1, 516.4, 519.3, 522.2]}>
       <Galera x={900} y={interpolate(t, [520, 524.2], [640, 720], cl)} s={0.7} t={t} boga={0} vela={false} marines={false} rompe={1} balanceo={0.4} color="#3a2a3a" franja="#1a1a1a" agua="#1f5c9c" aguaY={interpolate(t, [520, 524.2], [70, -20], cl)} />
       <Piedra t={t} t0={516.4} x={1600} />
+      <Apion t={t} t0={515.2} x={260} y={1110} h={440} borda={960} flip={false} acts={[[515.3, "piensa"], [519.3, "asombro"], [522.2, "senala"]]} />
       <Chip t={t} t0={515.1} text="THE STRANGEST PART?" color={C.violeta} x={960} y={140} centro size={62} />
       <Chip t={t} t0={516.4} t1={518.6} text="DIDN'T SINK LIKE STONES" color={C.rojo} x={1500} y={250} centro size={52} />
       <Chip t={t} t0={519.3} text="WOOD + NO BALLAST" color={C.oro} tinta={C.noche} x={120} y={250} size={56} />
@@ -202,6 +213,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
           <Galera x={560 + dx} y={700} s={0.5} t={t} boga={0} vela={false} marines={false} rompe={1} color="#3a2a3a" franja="#1a1a1a" aguaY={-20} balanceo={0.3} />
         </>
       ); })()}
+      <Apion t={t} t0={525.4} x={1700} y={1110} h={440} borda={960} acts={[[525.6, "habla"], [528.3, "festeja"], [529.6, "triste"]]} />
       <Chip t={t} t0={526.35} text="TOWED AWAY" color={C.violeta} x={120} y={140} size={60} />
       <Chip t={t} t0={528.27} text="THE SHIP SURVIVED ✓" color={C.lima} tinta={C.noche} x={960} y={880} centro size={60} />
       <Chip t={t} t0={529.55} text="THE BOTTOM ROW... ✕" color={C.rojo} x={960} y={990} centro size={60} />
@@ -209,7 +221,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 531,4 · "this is the kind of war Rome had to learn from scratch. Which brings us to the most famous trick in Roman naval history" */}
     <Escena t={t} t0={531.4} t1={538.0} entra="fundido" sale="atraviesa" sx={1300} sy={420} fondo="#2d1b69" golpes={[532.4, 534.6, 536.4]}>
-      <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #5b2bb5, #1b1240 80%)" }} />
+      <Sala t={t} />
       <Persona x={560} y={pp(760, 470)} h={760} t={t} seed={140} ropa={{ tunica: "#f2ead8", tunica2: "#c9b8a0", cinto: "#a3202f", piel: "#f2b48a", piel2: "#d98d66", pelo: "#3a2214" }} expr={t < 534.5 ? "triste" : "sorpresa"} bD={t > 534.5 ? 150 + Math.sin(t * 5) * 12 : 80 + Math.sin(t * 4) * 25} cD={t > 534.5 ? 10 : 40 + Math.sin(t * 4) * 20} salta={534.6} habla={t < 534.4} manoD={<rect x={-5} y={-10} width={10} height={220} rx={4} fill="#8a5a2a" transform="rotate(-80)" />} />
       {t > 532.0 && <svg style={{ position: "absolute", left: 760, top: 420, transform: `scale(${ent(t, 532.0)})` }} width={420} height={300}><rect x={10} y={20} width={400} height={260} rx={14} fill="#3a2a1a" stroke="#8a5a2a" strokeWidth={14} /><text x={210} y={110} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={44} fill="#f2ead8">NAVAL WAR</text><text x={210} y={180} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={60} fill={C.oro}>101</text><path d="M 60 230 L 160 230" stroke="#f2ead8" strokeWidth={6} /></svg>}
       {t > 535.0 && (

@@ -3,6 +3,7 @@ import { AbsoluteFill, interpolate } from "remotion";
 import { rnd } from "../soot/lib";
 import { Persona, APION, CIVIL } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, cabeza, Zzz, Estrellas, Astro } from "./kit";
+import { Apion, Sala } from "./actor";
 import { Galera, Corte, Remero, Remo, Cojin, Correa, Galleta, Anfora, Pancarta, CuentaN, Flecha, Playa, Nubes, Salpica } from "./mar";
 
 // soot02 · trampa 2, EL BANCO (211,74-341,36 s). Subimos a bordo: el barco por fuera → cuántos son → atravesamos el casco
@@ -89,6 +90,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={211.74} t1={214.4} entra="atraviesa" ix={960} iy={520} sale="nada" fondo="none" golpes={[212.1, 213.1]}>
       <Galera x={interpolate(t, [211.7, 214.6], [500, 780])} y={720} s={0.5} t={t} boga={0.6} vela />
       <Pancarta t={t} t0={211.8} n={2} titulo="THE BENCH" y={400} />
+      <Apion t={t} t0={211.9} x={1620} y={1110} h={440} borda={960} acts={[[211.9, "habla"], [213.1, "piensa"]]} />
     </Escena>
 
     {/* 214,4 · "Let's go aboard. The quinquereme... 40 meters long... Polybius tells us what it carried. 300 rowers + 120 marines + officers" */}
@@ -96,7 +98,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       <Cam t={t} k={[[214.4, 960, 560, 0.55], [216.2, 960, 560, 1.0], [224.5, 960, 560, 1.0], [225.6, 960, 470, 1.0], [235, 960, 470, 1.0], [236.4, 980, 640, 1.5]]}>
         <Galera x={960} y={560} s={1.0} t={t} boga={t < 225.6 ? 0.55 : 0.2} vela={t < 225.6} marines />
         {/* regla de 40 m */}
-        {t > 219.6 && t < 225.7 && (() => { const u = prog(t, 219.7, 220.6); return (
+        {t > 219.6 && t < 225.7 && (() => { const u = prog(t, 219.7, 220.1); return (
           <svg style={{ position: "absolute", inset: 0, overflow: "visible" }} width={1920} height={1080}>
             <line x1={240} y1={700} x2={240 + 1580 * u} y2={700} stroke="#fff" strokeWidth={10} />
             <line x1={240} y1={670} x2={240} y2={730} stroke="#fff" strokeWidth={10} />
@@ -105,7 +107,8 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       </Cam>
       <Chip t={t} t0={215.6} t1={225.4} text="QUINQUEREME" color={C.rojo} x={960} y={130} centro size={80} />
       <Chip t={t} t0={217.4} t1={225.4} text="'FIVE-OARED'" color={C.violeta} x={960} y={240} centro size={48} />
-      <Chip t={t} t0={219.9} t1={225.4} text="≈ 40 METERS" color={C.oro} tinta={C.noche} x={960} y={790} centro size={64} />
+      <Chip t={t} t0={220.4} t1={225.4} text="≈ 40 METERS" color={C.oro} tinta={C.noche} x={960} y={790} centro size={76} />
+      <Apion t={t} t0={216.0} t1={232.8} x={1710} y={1075} h={360} acts={[[216.3, "habla"], [219.7, "senala"], [222.2, "piensa"], [225.9, "asombro"], [231.3, "miedo"]]} flip />
       <Chip t={t} t0={222.2} t1={225.4} text="POLYBIUS" color="#1d6f8a" x={960} y={920} centro size={56} />
       {/* los 400: barco en sección y gente llenándolo */}
       {t > 225.6 && <div style={{ position: "absolute", left: 300, top: 690, width: 1320, height: 360, borderRadius: 28, background: "linear-gradient(180deg, #3a2590, #241660)", border: "6px solid #7fd6ff", boxShadow: "0 12px 0 rgba(10,5,30,.4)", transform: `scale(${ent(t, 225.6)})` }} />}
@@ -234,7 +237,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 304,7 inventario · 309,2 "That was all you owned on board: a stick, a pillow, and a strap." */}
     <Escena t={t} t0={304.4} t1={313.4} entra="fundido" sale="fundido" fondo="#2d1b69" golpes={[304.74, 305.54, 306.34, 310.6, 311.8, 312.5]}>
-      <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #5b2bb5, #1b1240 80%)" }} />
+      <Sala t={t} tipo="bodega" />
       {t > 304.6 && <Remo x={960} y={420} s={ent(t, 304.74) * 1.4} />}
       {t > 305.4 && <Cojin x={560} y={680} s={ent(t, 305.54) * 1.2} />}
       {t > 306.2 && <Correa x={1360} y={680} s={ent(t, 306.34) * 1.2} />}
@@ -293,7 +296,8 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       <Galera x={960} y={700} s={0.32} t={t} boga={0.7} vela={false} balanceo={interpolate(t, [336.2, 339], [1, 5], cl)} agua="#1d2a5a" ola={interpolate(t, [336.2, 339], [0.3, 1], cl)} />
       <Salpica t={t} t0={338.6} x={1100} y={700} />
       <Chip t={t} t0={336.3} text="FAR FROM A BEACH?" color={C.violeta} x={960} y={150} centro size={62} />
-      <Chip t={t} t0={339.7} text="REMEMBER THAT." color={C.rojo} x={960} y={950} centro size={70} />
+      <Chip t={t} t0={339.7} text="REMEMBER THAT." color={C.rojo} x={960} y={270} centro size={70} />
+      <Apion t={t} t0={336.3} x={1640} y={1110} h={440} borda={960} acts={[[336.5, "piensa"], [338.6, "miedo"]]} />
     </Escena>
   </>
 );

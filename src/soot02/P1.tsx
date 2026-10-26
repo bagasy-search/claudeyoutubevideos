@@ -4,6 +4,7 @@ import { rnd } from "../soot/lib";
 import { Persona, APION, CIVIL } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Particulas, Rayos, Emote, cabeza, Pergamino, Astro } from "./kit";
 import { Denario } from "./kit2";
+import { Apion, Sala } from "./actor";
 import { Galera, Carta, DiplomaBronce, Coliseo, MapaMar, Pancarta, CuentaN, Flecha, Puerto, Volcan, Corte, Nubes } from "./mar";
 
 // soot02 · trampa 1, EL CONTRATO (49,24-211,74 s). Un viaje continuo: la aldea en Egipto → la carta → el mar con Serapis
@@ -129,6 +130,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={49.24} t1={51.6} entra="atraviesa" ix={960} iy={600} sale="paneo" fondo="none" golpes={[49.68, 50.5]}>
       <Galera x={interpolate(t, [49.2, 51.9], [700, 1200])} y={700} s={0.42} t={t} boga={0.6} vela />
       <Pancarta t={t} t0={49.3} n={1} titulo="THE CONTRACT" y={430} />
+      <Apion t={t} t0={49.4} x={1620} y={1110} h={440} borda={960} acts={[[49.4, "asombro"], [50.5, "miedo"]]} />
     </Escena>
 
     {/* 51,6 · "Let me introduce you to a real person. His name is Apion... a village in Egypt, 2nd century... just joined the fleet" */}
@@ -137,7 +139,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
         <Egipto t={t} />
         <Galera x={interpolate(t, [58.8, 61.4], [2400, 1500], cl)} y={720} s={0.3} t={t} boga={0.7} vela agua="#3a9ad0" />
         <Persona x={960} y={980} h={520} t={t} seed={2} ropa={APION} aparece={53.85} expr={t < 59.4 ? "feliz" : "orgullo"} habla={t > 54.3 && t < 56} bD={t > 59.4 ? 150 : 10} cD={40} />
-        {Array.from({ length: 3 }, (_, i) => <Persona key={i} x={420 + i * 900} y={1000 + (i % 2) * 20} h={380} t={t} seed={60 + i} ropa={CIVIL(i + 1)} expr="neutro" flip={i === 2} bD={i === 1 ? 120 : 10} />)}
+        {Array.from({ length: 2 }, (_, i) => <Persona key={i} x={600 + i * 760} y={1000 + (i % 2) * 20} h={380} t={t} seed={60 + i} ropa={CIVIL(i + 1)} expr="neutro" flip={i === 2} bD={i === 1 ? 120 : 10} />)}
       </Cam>
       <Chip t={t} t0={52.7} text="A REAL PERSON" color={C.violeta} x={120} y={150} size={56} />
       <Grande t={t} t0={54.3} text="APION" y={260} size={170} color={C.crema} />
@@ -193,7 +195,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 85,2 · "And third, he has a new name. The navy renamed him... no longer Apion... now Antonius Maximus" */}
     <Escena t={t} t0={85.2} t1={93.2} entra="atraviesa" ix={960} iy={600} sale="fundido" fondo="#2d1b69" golpes={[87.8, 91.3]}>
-      <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #7a3fd0, #1b1240 80%)" }} />
+      <Sala t={t} />
       <Carta x={680} y={560} t={t} t0={85.25} lineas={4} escribe={1} tachado="APION" nuevo="ANTONIUS MAXIMUS" tn={89.5} />
       <Persona x={1450} y={pp(820, 470)} h={820} t={t} seed={2} ropa={APION} expr={t < 87.8 ? "neutro" : t < 91.3 ? "sorpresa" : "orgullo"} salta={87.8} mira={-0.6} bI={t < 87.6 ? 70 + Math.sin(t * 3) * 8 : 115} cI={t < 87.6 ? 30 : 0} bD={t > 91.3 ? 150 : 15} cD={t > 91.3 ? 40 : 10} />
       <Emote t={t} t0={88.0} t1={91} tipo="preg" {...L(1450, pp(820, 470), 820)} s={1.4} />
@@ -219,6 +221,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
           {Array.from({ length: 60 }, (_, i) => { const r = rnd(i + 80); const x = (r() * 1960 + (r() < 0.5 ? 1 : -1) * (t - 93) * 40) % 1960; return <g key={i} transform={`translate(${x} ${940 + r() * 90})`}><circle cx={0} cy={-26} r={9} fill={["#f2b48a", "#c98b62", "#8d5a3b"][i % 3]} /><rect x={-9} y={-18} width={18} height={22} rx={7} fill={["#9a6a4a", "#2fb5d8", "#8a5a7a", "#6a7a4a"][i % 4]} /></g>; })}
         </svg>
       </Cam>
+      <Apion t={t} t0={93.4} x={250} y={1070} h={430} acts={[[93.9, "habla"], [97.7, "senala"], [99.9, "asombro"], [101.9, "festeja"]]} flip={false} />
       <Chip t={t} t0={94.2} text="BIGGEST FLEET IN THE EMPIRE" color="#1d6f8a" x={960} y={140} centro size={62} />
       <Chip t={t} t0={97.7} text="VOLCANIC BAY" color={C.rojo} x={960} y={250} centro size={54} />
       <Chip t={t} t0={99.9} t1={101.6} text="NAMES ON THEIR BOWS" color={C.oro} tinta={C.noche} x={960} y={950} centro size={58} />
@@ -256,8 +259,8 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={112.6} text="TOO HOT" color={C.rojo} x={110} y={150} size={70} />
       <Chip t={t} t0={115.3} text="THE VELARIUM" color={C.oro} tinta={C.noche} x={960} y={140} centro size={70} />
       <Chip t={t} t0={117.1} text="SAILS + ROPES" color="#1d6f8a" x={960} y={250} centro size={52} />
-      <CuentaN t={t} t0={119.3} t1={120.1} a={50000} x={960} y={930} size={130} color={C.crema} />
-      <Chip t={t} t0={120.1} text="SPECTATORS" color={C.violeta} x={1500} y={930} centro size={50} />
+      <CuentaN t={t} t0={119.3} t1={120.6} a={50000} x={1450} y={560} size={130} color={C.crema} />
+      <Chip t={t} t0={120.1} text="SPECTATORS" color={C.violeta} x={1450} y={680} centro size={50} />
       <Chip t={t} t0={122.0} text="WHO KNOWS ROPES BETTER?" color={C.teal} tinta={C.noche} x={960} y={160} centro size={60} />
     </Escena>
 
@@ -282,6 +285,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={130.6} t1={143.7} entra="paneo" sale="fundido" fondo="#1f5c9c" golpes={[133.4, 140.9]}>
       <MapaMar t={t} puntos={[{ n: "MISENUM", t0: 131.4, color: C.teal }, { n: "EGYPT", t0: 137.2 }, { n: "THRACE", t0: 138.1 }, { n: "DALMATIA", t0: 138.8 }, { n: "SYRIA", t0: 139.5 }]}
         rutas={[{ de: "EGYPT", a: "MISENUM", t0: 137.3 }, { de: "THRACE", a: "MISENUM", t0: 138.2 }, { de: "DALMATIA", a: "MISENUM", t0: 138.9 }, { de: "SYRIA", a: "MISENUM", t0: 139.6 }]} />
+      <Apion t={t} t0={131.0} x={1680} y={1060} h={420} acts={[[131.5, "habla"], [133.4, "asombro"], [137.2, "senala"], [140.9, "triste"]]} flip />
       <Chip t={t} t0={131.2} text="THE DEAL" color={C.violeta} x={110} y={140} size={60} />
       <Chip t={t} t0={133.4} text="NOT ROMAN AT ALL" color={C.rojo} x={110} y={250} size={60} />
       <Chip t={t} t0={134.8} text="FREE MEN" color={C.teal} tinta={C.noche} x={1600} y={140} centro size={60} />
@@ -292,10 +296,10 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 143,7 · "Rome had a very simple offer. Serve 26 years, one year longer than the legion, lower pay, less respect..." */}
     <Escena t={t} t0={143.7} t1={153.0} entra="fundido" sale="atraviesa" sx={960} sy={540} fondo="#2d1b69" golpes={[146.7, 152.3]}>
-      <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #5b2bb5, #1b1240 80%)" }} />
+      <Sala t={t} />
       <Chip t={t} t0={144.3} text="A VERY SIMPLE OFFER" color={C.oro} tinta={C.noche} x={960} y={130} centro size={64} />
       <Tabla t={t} y={560} filas={[{ a: "26 YRS", b: "25 YRS", t0: 146.7, malo: true }, { a: "LOWER", b: "MORE", t0: 149.9, malo: true }, { a: "LESS", b: "MORE", t0: 151.4, malo: true }]} />
-      <Persona x={1720} y={1030} h={360} t={t} seed={2} ropa={APION} expr={t < 151 ? "neutro" : "triste"} mira={-0.8} bD={t > 146.7 ? 120 + Math.sin(t * 5) * 15 : 10} cD={60} />
+      <Apion t={t} t0={143.8} x={1640} y={1060} h={430} acts={[[144.3, "habla"], [146.7, "asombro"], [149.9, "enojado"], [151.4, "triste"]]} flip />
     </Escena>
 
     {/* 153,0 · "and at the end, you get the one thing your family never had. Roman citizenship. For you, your wife, your children" */}
@@ -316,25 +320,27 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
     {/* 160,7 · "a little bronze document, two small plates tied together with wire, a military diploma. Archaeologists found hundreds" */}
     <Escena t={t} t0={160.7} t1={173.4} entra="fundido" sale="fundido" fondo="#1b1240" golpes={[161.8, 166.2, 168.3]}>
       <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #3a2a7a, #120c30 80%)" }} />
-      {t < 167.2 && <DiplomaBronce x={960} y={520} s={1.25} t={t} t0={160.8} abre={interpolate(t, [163.1, 164.0, 164.6, 165.3], [1, 0.05, 0.05, 1], cl)} />}
-      {t >= 167.2 && (
+      {t < 167.5 && <DiplomaBronce x={960} y={520} s={1.25} t={t} t0={160.8} abre={interpolate(t, [163.1, 164.0, 164.6, 165.3], [1, 0.05, 0.05, 1], cl)} />}
+      {t >= 166.95 && (
         <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
           <rect x={0} y={640} width={1920} height={440} fill="#8a5a3a" />
-          {Array.from({ length: 30 }, (_, i) => { const e = ent(t, 167.3 + i * 0.04); const x = 120 + (i % 10) * 185, y = 700 + Math.floor(i / 10) * 120; return <g key={i} transform={`translate(${x} ${y}) scale(${e * 0.75}) rotate(${(i * 37) % 30 - 15})`}><rect x={-60} y={-40} width={56} height={80} rx={5} fill="#d08a3a" stroke="#6a3a10" strokeWidth={4} /><rect x={4} y={-40} width={56} height={80} rx={5} fill="#e9a94a" stroke="#6a3a10" strokeWidth={4} /></g>; })}
+          {Array.from({ length: 30 }, (_, i) => { const e = 0.5 + 0.5 * ent(t, 166.95 + i * 0.03); const x = 120 + (i % 10) * 185, y = 700 + Math.floor(i / 10) * 120; return <g key={i} transform={`translate(${x} ${y}) scale(${e * 0.75}) rotate(${(i * 37) % 30 - 15})`}><rect x={-60} y={-40} width={56} height={80} rx={5} fill="#d08a3a" stroke="#6a3a10" strokeWidth={4} /><rect x={4} y={-40} width={56} height={80} rx={5} fill="#e9a94a" stroke="#6a3a10" strokeWidth={4} /></g>; })}
         </svg>
       )}
       {t >= 167.2 && <Persona x={1560} y={1000} h={560} t={t} seed={80} ropa={CIVIL(4)} expr="sorpresa" bD={interpolate(t, [167.4, 168.4], [10, 160], cl)} cD={20} manoD={<g transform="translate(0 40)"><rect x={-36} y={-30} width={32} height={50} rx={4} fill="#d08a3a" stroke="#6a3a10" strokeWidth={3} /><rect x={2} y={-30} width={32} height={50} rx={4} fill="#e9a94a" stroke="#6a3a10" strokeWidth={3} /></g>} />}
       <Chip t={t} t0={161.8} t1={167} text="BRONZE" color="#d08a3a" x={110} y={150} size={66} />
       <Chip t={t} t0={163.6} t1={167} text="2 PLATES + WIRE" color={C.violeta} x={110} y={260} size={52} />
       <Chip t={t} t0={165.7} t1={167} text="MILITARY DIPLOMA" color={C.oro} tinta={C.noche} x={960} y={950} centro size={68} />
-      <Chip t={t} t0={167.4} text="ARCHAEOLOGISTS" color={C.teal} tinta={C.noche} x={110} y={150} size={56} />
+      <Chip t={t} t0={167.1} text="ARCHAEOLOGISTS" color={C.teal} tinta={C.noche} x={110} y={150} size={56} />
       <Chip t={t} t0={168.3} text="HUNDREDS FOUND" color={C.ambar} tinta={C.noche} x={110} y={260} size={60} />
+      {t >= 168.3 && <CuentaN t={t} t0={168.3} t1={170.0} a={400} x={1250} y={230} size={110} color={C.crema} suf="+" />}
       <Chip t={t} t0={170.2} text="PROOF A FEW MADE IT" color={C.violeta} x={960} y={420} centro size={58} />
     </Escena>
 
     {/* 173,4 · "The fine print is the same as always. You only get the diploma if you are still alive to receive it" */}
     <Escena t={t} t0={173.4} t1={178.8} entra="fundido" sale="fundido" fondo="#2d1b69" golpes={[177.3]}>
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, #2d1b69, #5b2bb5)" }} />
+      <Sala t={t} />
+      <Apion t={t} t0={173.5} x={1090} y={1060} h={380} acts={[[173.9, "piensa"], [176.6, "miedo"]]} />
       <DiplomaBronce x={700} y={540} s={1.1} abre={1} />
       {t > 173.9 && <svg style={{ position: "absolute", left: interpolate(t, [173.9, 176.5], [380, 700], cl), top: 330, transform: `scale(${ent(t, 173.9)})` }} width={320} height={420}><circle cx={140} cy={140} r={110} fill="rgba(200,240,255,.2)" stroke="#e9a92a" strokeWidth={20} /><line x1={220} y1={220} x2={300} y2={360} stroke="#6b3a1f" strokeWidth={34} strokeLinecap="round" /></svg>}
       <Chip t={t} t0={173.9} text="THE FINE PRINT" color={C.violeta} x={1500} y={200} centro size={60} />
@@ -366,11 +372,12 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
       })()}
       <Chip t={t} t0={190.2} text="ONLY AS FAST AS ITS WORST ROWER" color={C.violeta} x={700} y={200} centro size={52} />
       <Chip t={t} t0={192.6} text="CHAINED = SLOW" color={C.rojo} x={700} y={320} centro size={60} />
+      <Apion t={t} t0={186.0} x={1700} y={1110} h={440} borda={960} acts={[[186.5, "habla"], [189.6, "rema"], [192.6, "cansado"]]} />
     </Escena>
 
     {/* 194,5 · "In real emergencies, Rome did use slaves, but it freed them first. Octavian... 20,000 slaves free... trained as oarsmen" */}
     <Escena t={t} t0={194.5} t1={204.9} entra="fundido" sale="fundido" fondo="#2d1b69" golpes={[197.7, 199.3, 201.7]}>
-      <AbsoluteFill style={{ background: "radial-gradient(circle at 30% 40%, #7a3fd0, #1b1240 80%)" }} />
+      <Sala t={t} tipo="bodega" />
       {Array.from({ length: 6 }, (_, i) => <Persona key={i} x={760 + i * 200} y={1000} h={380} t={t} seed={90 + i} ropa={CIVIL(i)} expr={t < 197.7 ? "triste" : "feliz"} salta={197.8 + i * 0.06 + Math.floor(Math.max(0, t - 197.8) / 1.3) * 1.3} bI={t > 197.8 ? 150 + Math.sin(t * 6 + i) * 20 : 10 + Math.sin(t * 2 + i) * 4} bD={t > 197.8 ? 150 + Math.sin(t * 6 + i + 1) * 20 : 10} inclina={t < 197.7 ? 8 : 0} />)}
       <Cadena x1={640} y1={880} x2={1880} y2={880} rompe={prog(t, 197.7, 198.4)} />
       <Persona x={360} y={pp(820, 430)} h={820} t={t} seed={95} ropa={{ tunica: "#f2ead8", tunica2: "#c9b8a0", cinto: "#a3202f", piel: "#f2c7a0", piel2: "#d8a07a", pelo: "#7a4a22" }} expr="orgullo" aparece={199.2} bD={t > 200.5 ? 130 : 10} cD={30} />
@@ -384,7 +391,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 204,9 · "So, no chains. Just a contract. Which, as you will see, is worse. Because you signed it yourself." — vuelve la firma del gancho */}
     <Escena t={t} t0={204.9} t1={211.74} entra="fundido" sale="atraviesa" sx={960} sy={520} fondo="#2d1b69" golpes={[205.7, 206.8, 209.5, 210.6]}>
-      <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #6b3fc0, #1b1240 75%)" }} />
+      <Sala t={t} />
       {t < 206.6 && <Cadena x1={300} y1={540} x2={1620} y2={540} rompe={prog(t, 205.6, 206.4)} />}
       {t >= 206.6 && <Pergamino x={760} y={600} w={720} abre={prog(t, 206.6, 207.1)} lineas={8} firma={1} titulo="CLASSIS · NAVY" />}
       {t > 210.5 && <svg style={{ position: "absolute", left: 470, top: 780 }} width={560} height={160}><ellipse cx={280} cy={70} rx={260} ry={70} fill="none" stroke={C.ambar} strokeWidth={12} pathLength={1} strokeDasharray={`${prog(t, 210.5, 211.0)} 1`} /></svg>}

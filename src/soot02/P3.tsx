@@ -3,6 +3,7 @@ import { AbsoluteFill, interpolate } from "remotion";
 import { Persona, APION, CIVIL } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, Particulas, Rayos, Astro } from "./kit";
 import { Calor } from "./kit2";
+import { Apion, Sala } from "./actor";
 import { Galera, Corte, Remero, Galleta, Anfora, Pancarta, CuentaN, Flecha, Salpica } from "./mar";
 import { CintaCine, Sello, Cadena } from "./P1";
 
@@ -87,6 +88,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={341.36} t1={343.9} entra="atraviesa" ix={960} iy={600} sale="fundido" fondo="none" golpes={[341.7, 342.7]}>
       <Galera x={960} y={720} s={0.5} t={t} boga={1.0} vela={false} />
       <Pancarta t={t} t0={341.4} n={3} titulo="THE RHYTHM" y={400} />
+      <Apion t={t} t0={341.5} x={1620} y={1110} h={440} borda={960} acts={[[341.5, "rema"], [342.7, "cansado"]]} />
     </Escena>
 
     {/* 343,9 · "Now, the famous drum. Every movie has it. A huge bald man beating a drum, faster and faster, while the slaves suffer below." */}
@@ -109,13 +111,13 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
       </Cam>
       <Chip t={t} t0={353.9} t1={356.8} text="HOLLYWOOD: ALMOST RIGHT" color={C.oro} tinta={C.noche} x={960} y={150} centro size={62} />
       <Chip t={t} t0={355.9} t1={358.6} text="A MAN WHO KEEPS TIME" color={C.violeta} x={960} y={950} centro size={56} />
-      <Grande t={t} t0={359.5} text="HORTATOR" x={960} y={880} size={150} color={C.crema} />
-      <Chip t={t} t0={361.06} text="'THE ENCOURAGER'" color="#1d6f8a" x={960} y={150} centro size={56} />
+      <Grande t={t} t0={359.5} text="HORTATOR" x={960} y={180} size={150} color={C.crema} />
+      <Chip t={t} t0={361.06} text="'THE ENCOURAGER'" color="#1d6f8a" x={960} y={320} centro size={56} />
     </Escena>
 
     {/* 362,3 · "instead of a big drum, a mallet, the portisculus, banging out the beat, and a flute player, the symphoniacus... 300 men pull at exactly the same moment. And they had to." */}
     <Escena t={t} t0={362.3} t1={376.1} entra="fundido" sale="paneo" fondo="#2d1b69" golpes={[362.4, 363.9, 365.7, 368.3, 369.3, 374.7]}>
-      <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #5b2bb5, #1b1240 80%)" }} />
+      <Sala t={t} tipo="bodega" />
       {t < 370.5 && (() => {
         const g = Math.max(0, Math.cos(t * 1.1 * Math.PI * 2)) ** 6;
         return (
@@ -130,6 +132,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
       })()}
       {t >= 370.5 && <AbsoluteFill style={{ opacity: prog(t, 370.5, 370.9) }}><Corte t={t} boga={0.7} agua={0.06} heroeExpr="neutro" hortator /></AbsoluteFill>}
       {t >= 370.6 && Array.from({ length: 3 }, (_, i) => { const u = ((t * 0.7 + i / 3) % 1); return <div key={i} style={{ position: "absolute", left: 960 - 900 * u, top: 540 - 900 * u, width: 1800 * u, height: 1800 * u, borderRadius: "50%", border: `${14 * (1 - u)}px solid ${C.oro}`, opacity: 1 - u }} />; })}
+      <Apion t={t} t0={362.5} t1={370.5} x={1720} y={1075} h={400} acts={[[362.6, "habla"], [363.9, "rema"]]} />
       <Chip t={t} t0={362.4} t1={370.3} text="NO BIG DRUM" color={C.rojo} x={660} y={190} centro size={56} />
       <Chip t={t} t0={365.7} t1={370.3} text="PORTISCULUS (MALLET)" color={C.oro} tinta={C.noche} x={660} y={920} centro size={50} />
       <Chip t={t} t0={369.34} t1={370.3} text="SYMPHONIACUS (FLUTE)" color="#1d6f8a" x={1380} y={920} centro size={50} />
@@ -141,7 +144,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
     {/* 376,1 · "Your oar is more than four meters long... a forest of other oars. Late by half a second: your blade crashes... the handle swings back into your chest like a club" */}
     <Escena t={t} t0={376.1} t1={388.4} entra="paneo" sale="fundido" fondo="none" quieta golpes={[376.6, 381.0, 383.0, 385.1]}>
       <Cam t={t} k={[[376.1, 960, 540, 1.0], [380.4, 960, 560, 1.15], [381.2, 960, 540, 1.0], [388.4, 960, 540, 1.0]]}>
-        {t < 381 && <Galera x={960} y={560} s={1.25} t={t} boga={0.6} vela={false} marines={false} />}
+        {t < 381 && <Galera x={900} y={540} s={0.85} t={t} boga={0.6} vela={false} marines={false} />}
         {t < 381 && t > 376.1 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><line x1={200} y1={980} x2={200 + 1520 * prog(t, 376.5, 377.4)} y2={980} stroke="#fff" strokeWidth={10} /></svg>}
       </Cam>
       {t >= 381 && (
@@ -152,6 +155,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
           {t > 385.05 && t < 385.4 && <AbsoluteFill style={{ background: "#fff", opacity: 0.3 * (1 - prog(t, 385.05, 385.4)) }} />}
         </AbsoluteFill>
       )}
+      <Apion t={t} t0={376.2} t1={381} x={1700} y={1110} h={420} borda={960} acts={[[376.6, "senala"], [378.2, "asombro"]]} />
       <Chip t={t} t0={376.6} t1={380.8} text="OAR: 4+ METERS" color={C.oro} tinta={C.noche} x={960} y={900} centro size={64} />
       <Chip t={t} t0={378.2} t1={380.8} text="A FOREST OF OARS" color={C.violeta} x={960} y={150} centro size={58} />
       <Chip t={t} t0={381.04} t1={384.8} text="0.5 SECONDS LATE" color={C.rojo} x={960} y={150} centro size={62} />
@@ -187,6 +191,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
           })()}
         </svg>
       )}
+      <Apion t={t} t0={388.5} t1={392.1} x={1680} y={1110} h={440} borda={960} acts={[[388.7, "asombro"], [390.4, "miedo"]]} />
       {t < 392.1 && <Grande t={t} t0={388.9} text="'CATCHING A CRAB'" y={170} size={120} color={C.crema} />}
       <Chip t={t} t0={392.2} text="NOT EVEN 1 OAR PER MAN" color={C.violeta} x={960} y={140} centro size={58} />
       <Chip t={t} t0={394.5} text="2 MEN · 1 OAR" color={C.oro} tinta={C.noche} x={960} y={250} centro size={70} />
@@ -199,6 +204,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
       <Costillas t={t} t0={401.6} x={620} y={540} />
       <Chip t={t} t0={402.34} text="CRACKED RIBS" color={C.rojo} x={1350} y={420} centro size={64} />
       <Chip t={t} t0={403.6} text="+ THE WHOLE ROW JAMS" color={C.violeta} x={1350} y={560} centro size={54} />
+      <Apion t={t} t0={401.5} x={1740} y={1075} h={400} acts={[[401.6, "miedo"], [403.6, "enojado"]]} />
     </Escena>
 
     {/* 405,2 · "So you row in perfect time, for hours, under the summer sun... several liters of water a day" */}
@@ -208,6 +214,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
       <Calor t={t} y={480} op={0.45} />
       <Galera x={760} y={720} s={0.6} t={t} boga={0.6} vela={false} />
       <Jarra t={t} t0={410.5} x={1560} y={720} litros={5} />
+      <Apion t={t} t0={405.3} x={270} y={1110} h={440} borda={960} flip={false} acts={[[405.4, "rema"], [408.0, "cansado"], [410.5, "asombro"], [412.0, "triste"]]} />
       <Chip t={t} t0={405.3} text="PERFECT TIME" color={C.violeta} x={120} y={140} size={60} />
       <Chip t={t} t0={407.0} text="FOR HOURS" color={C.rojo} x={120} y={250} size={60} />
       <Chip t={t} t0={408.0} text="SUMMER SUN" color={C.oro} tinta={C.noche} x={120} y={360} size={56} />
@@ -229,8 +236,8 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={415.5} t1={424.4} text="ALMOST NO WATER" color="#1d6f8a" x={960} y={140} centro size={60} />
       <Chip t={t} t0={418.4} t1={424.4} text="HARD DRY BISCUIT" color={C.oro} tinta={C.noche} x={520} y={780} centro size={54} />
       {(["BREAKFAST", "LUNCH", "DINNER"] as const).map((n, i) => <Chip key={n} t={t} t0={[424.7, 425.56, 425.9][i]} text={n} color={[C.ambar, C.teal, C.violeta][i]} tinta={i < 2 ? C.noche : "#fff"} x={420 + i * 540} y={760} centro size={54} />)}
-      <Persona x={1790} y={1010} h={380} t={t} seed={2} ropa={APION} expr={t > 420.2 && t < 424.6 ? "enojado" : t < 424.6 ? "neutro" : "triste"} bD={t > 419.6 && t < 421.0 ? 150 : t > 421.0 && t < 424.6 ? 80 : 10} cD={t > 419.6 && t < 421.0 ? 110 : 40} manoD={t > 419.6 && t < 424.6 ? <path d="M -16 -10 L 16 -10 L 12 26 L -12 26 Z" fill="#c9773f" stroke="#6a3a10" strokeWidth={4} /> : undefined} mira={-0.6} />
-      <Emote t={t} t0={420.4} t1={424.4} tipo="enojo" x={1790} y={1010 - 330} s={1.1} />
+      <Persona x={1680} y={1010} h={380} t={t} seed={2} ropa={APION} expr={t > 420.2 && t < 424.6 ? "enojado" : t < 424.6 ? "neutro" : "triste"} bD={t > 419.6 && t < 421.0 ? 150 : t > 421.0 && t < 424.6 ? 80 : 10} cD={t > 419.6 && t < 421.0 ? 110 : 40} manoD={t > 419.6 && t < 424.6 ? <path d="M -16 -10 L 16 -10 L 12 26 L -12 26 Z" fill="#c9773f" stroke="#6a3a10" strokeWidth={4} /> : undefined} mira={-0.6} />
+      <Emote t={t} t0={420.4} t1={424.4} tipo="enojo" x={1680} y={1010 - 330} s={1.1} />
       <Chip t={t} t0={426.2} text="...OF CHAMPIONS" color={C.rojo} x={960} y={930} centro size={62} />
     </Escena>
 
@@ -261,7 +268,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={438.08} text="YOU," color="#2fb5d8" tinta={C.noche} x={300} y={160} centro size={66} />
       <Chip t={t} t0={438.46} text="PERSONALLY," color={C.violeta} x={700} y={160} centro size={58} />
       <Chip t={t} t0={439.26} text="ARE THE ENGINE" color={C.rojo} x={1250} y={160} centro size={66} />
-      <Chip t={t} t0={439.94} text="THE WEAPON IS NEXT →" color={C.oro} tinta={C.noche} x={960} y={950} centro size={58} />
+      <Chip t={t} t0={439.94} text="THE WEAPON IS NEXT →" color={C.rojo} x={1240} y={930} centro size={72} />
     </Escena>
   </>
 );
