@@ -105,7 +105,7 @@ export const INS_C: Ins[] = [
         })}
         <Pollard x={260} y={1290} h={1000} t={t} expr={t < 622.5 ? "enojado" : "neutro"} bD={t < 622.5 ? 140 : 90} cD={t < 622.5 ? 150 : 10} />
         <Rot t={t} t0={619.9} text="DESERTION" x={1100} y={150} size={140} color={C.rojo} />
-        <Chip t={t} t0={620.6} text="SO COMMON" color={C.noche} x={1100} y={250} centro size={56} />
+        <Chip t={t} t0={620.6} text="SO COMMON" color={C.noche} x={1100} y={300} centro size={56} />
         <Sello t={t} t0={622.5} text="NEW CREW · HALFWAY" x={1150} y={420} size={70} rot={-5} />
       </>
     ),
@@ -186,11 +186,11 @@ export const INS_C: Ins[] = [
             <Pollard x={420} y={1290} h={920} t={t} expr={t < 671.6 ? "orgullo" : "neutro"} habla={t < 671.6} salta={668.4} bD={t < 671.6 ? 100 + Math.sin(t * 4) * 25 : 40} cD={t < 671.6 ? 10 : 20} bI={60} cI={110} />
             <Persona x={960} y={1290} h={900} t={t} seed={44} ropa={MARINO(2)} casco="no" barba="#7a5a2a" pantalon="#2a3a5a" expr="neutro" salta={671.8} opacity={t > 671.6 ? 1 : 0} />
             {t >= 674.8 && [1380, 1600].map((x, k) => <Persona key={k} x={x} y={1290} h={640} t={t} seed={70 + k} ropa={MARINO(k + 1)} casco={k ? "gorro" : "no"} pantalon="#3a3a4a" expr="sorpresa" salta={674.9 + k * 0.15} />)}
-            <Chip t={t} t0={668.6} text="CAPT. GEORGE POLLARD" color={C.noche} x={420} y={180} centro size={44} />
-            <Monto t={t} ks={[[670.2, 28]]} x={420} y={310} size={110} pre="" color={C.oro} suf=" YRS" />
-            <Chip t={t} t0={672.0} text="1ST MATE OWEN CHASE" color={C.noche} x={1000} y={180} centro size={44} />
-            <Monto t={t} ks={[[673.4, 23]]} x={1000} y={310} size={110} pre="" color={C.oro} suf=" YRS" />
-            <Chip t={t} t0={675.2} text="TEENAGERS" color={C.rojo} x={1490} y={260} centro size={60} />
+            <Chip t={t} t0={668.6} text="CAPT. GEORGE POLLARD" color={C.noche} x={560} y={140} centro size={52} />
+            <Monto t={t} ks={[[670.2, 28]]} x={560} y={270} size={110} pre="" color={C.oro} suf=" YRS" />
+            <Chip t={t} t0={672.0} text="1ST MATE OWEN CHASE" color={C.noche} x={1400} y={140} centro size={52} />
+            <Monto t={t} ks={[[673.4, 23]]} x={1400} y={270} size={110} pre="" color={C.oro} suf=" YRS" />
+            <Chip t={t} t0={675.2} text="TEENAGERS" color={C.rojo} x={1490} y={420} centro size={60} />
           </>
         )}
       </>
@@ -212,10 +212,15 @@ export const INS_C: Ins[] = [
               <div style={{ fontSize: 50 }}>{t < 677.8 ? "MONTHS" : "NOVEMBER"}</div>
             </div>
           )}
+          {/* vuelta 7 OJO: cada mes que pasa se arranca una hoja del calendario y sale volando */}
+          {t >= 676.5 && t < 678.4 && [0, 1, 2].map((k) => {
+            const u = ((t - 676.5) * 4 + k / 3) % 1;
+            return <div key={k} style={{ position: "absolute", left: 1060 + u * 620, top: 330 - u * 260 + u * u * 520, width: 220, height: 150, marginLeft: -110, background: "#fff", border: `8px solid ${C.noche}`, borderRadius: 14, transform: `rotate(${u * 540}deg)`, opacity: 1 - u }} />;
+          })}
           {t >= 680.0 && (
             <>
               <Ballenero x={interpolate(lejos, [0, 1], [960, 1500])} y={520} t={t} escala={0.4 - lejos * 0.25} />
-              <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><line x1={1500} y1={900} x2={1500 - 1300 * lejos} y2={900} stroke={C.oro} strokeWidth={12} /><line x1={1500} y1={870} x2={1500} y2={930} stroke={C.oro} strokeWidth={12} /></svg>
+              <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><line x1={1500} y1={900} x2={1500 - 1300 * lejos} y2={900} stroke={C.oro} strokeWidth={12} />{lejos > 0.03 && <line x1={1500} y1={870} x2={1500} y2={930} stroke={C.oro} strokeWidth={12} />}</svg>
               <Monto t={t} ks={[[681.9, 0], [682.6, 3000]]} x={850} y={800} size={110} pre="" suf=" KM" color={C.crema} />
               <Chip t={t} t0={680.6} text="MIDDLE OF THE PACIFIC" color={C.violeta} x={960} y={150} centro size={62} />
               <Chip t={t} t0={683.6} text="TO THE NEAREST COAST" color={C.noche} x={850} y={960} centro size={48} />
@@ -254,7 +259,7 @@ export const INS_C: Ins[] = [
       const wx = 2600 - (2600 - 1660) * (0.45 * v + 0.55 * v * v); // entra ya en cuadro y acelera
       const sac = golpe && t < 702.0 ? Math.sin(t * 70) * 26 * (702.0 - t) : 0;
       const zoom = 1 + 0.18 * v * v + (golpe ? 0.06 : 0);
-      const flash = golpe ? Math.max(0, 1 - (t - 700.7) / 0.25) : 0;
+      const flash = golpe ? Math.max(0, 1 - (t - 700.7) / 0.1) * 0.85 : 0; // ≤3 cuadros
       return (
         <>
           <div style={{ position: "absolute", inset: 0, transform: `translate(${sac}px, ${sac * 0.6}px) scale(${zoom})`, transformOrigin: "1250px 600px" }}>
@@ -527,8 +532,8 @@ export const INS_C: Ins[] = [
           <>
             <Svg x={1250} y={620} s={0.5 * ent(t, 808.2)}><Cachalote x={0} y={0} t={t} s={1} /></Svg>
             <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><line x1={950} y1={440} x2={950 + 600 * prog(t, 808.6, 808.9)} y2={440 + 360 * prog(t, 808.6, 808.9)} stroke={C.noche} strokeWidth={26} strokeLinecap="round" /></svg>
-            <Chip t={t} t0={808.6} text="IT WAS NOT THE WHALE" color={C.noche} x={1250} y={870} centro size={60} />
-            <Chip t={t} t0={809.9} text="ONLY 1 SHIP THAT DAY" color={C.violeta} x={1250} y={900} centro size={58} />
+            <Chip t={t} t0={808.6} text="IT WAS NOT THE WHALE" color={C.noche} x={1250} y={815} centro size={60} />
+            <Chip t={t} t0={809.9} text="ONLY 1 SHIP THAT DAY" color={C.violeta} x={1250} y={935} centro size={58} />
           </>
         )}
       </>
@@ -547,7 +552,7 @@ export const INS_C: Ins[] = [
           <div style={{ fontSize: 190, color: C.rojo, textAlign: "center", lineHeight: "170px", transform: `scale(${ent(t, 813.8)})` }}>X</div>
         </div>
         <Chico x={480} y={1290} h={900} t={t} expr="miedo" bD={100} cD={20} mira={1} />
-        <Rot t={t} t0={812.4} text="THE REAL TRAP" x={1200} y={1010} size={80} color={C.noche} />
+        <Rot t={t} t0={812.4} text="THE REAL TRAP" x={1200} y={110} size={90} color={C.noche} />
       </>
     ),
   },
@@ -665,7 +670,7 @@ export const INS_C: Ins[] = [
           <Rot t={t} t0={856.4} text="PETROLEUM" x={1420} y={300} size={110} color="#141010" />
           <Chip t={t} t0={858.1} text="CHEAPER" color={C.lima} tinta={C.noche} x={1420} y={460} centro size={54} />
           <Chip t={t} t0={859.0} text="CLEANER" color={C.teal} tinta={C.noche} x={1420} y={560} centro size={54} />
-          <Chip t={t} t0={859.6} text="NOBODY ROWS TOWARD IT" color={C.rojo} x={1420} y={660} centro size={50} />
+          <Chip t={t} t0={859.6} text="NOBODY ROWS TOWARD IT" color={C.rojo} x={1420} y={680} centro size={50} />
         </>
       );
     },
@@ -748,7 +753,7 @@ export const INS_C: Ins[] = [
             <>
               <Rot t={t} t0={896.4} text="WHICH TRAP GOT YOU?" x={1220} y={200} size={100} color={C.crema} />
               {Array.from({ length: 7 }, (_, k) => <Svg key={k} x={860 + (k % 4) * 230 + (k > 3 ? 115 : 0)} y={480 + Math.floor(k / 4) * 260} s={0.95 * ent(t, 898.6 + k * 0.08) * (Math.floor(t * 2) % 7 === k ? 1.12 : 1)}><circle r={110} fill="#fff" stroke={C.noche} strokeWidth={10} /><Icono k={k + 1} /><text y={-80} x={80} fontFamily={fontFamily} fontWeight={700} fontSize={56} fill={C.rojo} stroke={C.noche} strokeWidth={4} paintOrder="stroke">{k + 1}</text></Svg>)}
-              <Chip t={t} t0={897.0} text="TELL ME IN THE COMMENTS" color={C.rojo} x={1220} y={1000} centro size={52} />
+              <Chip t={t} t0={897.0} text="TELL ME IN THE COMMENTS" color={C.rojo} x={1220} y={930} centro size={52} />
             </>
           )}
         </>

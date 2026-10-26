@@ -204,7 +204,7 @@ export const INS_B: Ins[] = [
       </>
     ),
     d: (t) => {
-      const dib = prog(t, 380.6, 381.8);
+      const dib = prog(t, 380.3, 381.0); // vuelta 7: el primer cuadro era la grilla vacía
       return (
         <>
           <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
@@ -392,7 +392,7 @@ export const INS_B: Ins[] = [
       return (
         <>
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
-          <g transform={`translate(560 560) scale(${ent(t, 498.4)})`}>
+          <g transform={`translate(560 560) scale(${0.6 + 0.4 * ent(t, 498.4)})`}>
             <circle r={230} fill="#ff8a1a" stroke={C.noche} strokeWidth={10} /><circle r={160} fill="#ffd08a" opacity={pela} />
             <path d="M 0 -230 A 230 230 0 1 1 -1 -230" fill="none" stroke="#e8701a" strokeWidth={60} strokeDasharray={1445} strokeDashoffset={1445 * pela} />
             <path d={`M 0 -230 Q ${120 + pela * 200} ${-300 - pela * 100} ${260 + pela * 260} ${-140 + pela * 300}`} stroke="#e8701a" strokeWidth={46} fill="none" strokeLinecap="round" opacity={pela > 0.05 ? 1 : 0} />
@@ -403,7 +403,7 @@ export const INS_B: Ins[] = [
             <path d={`M 380 -80 Q 420 -300 ${260 + pela * 60} -480`} stroke="#f0d0b0" strokeWidth={50} fill="none" strokeLinecap="round" opacity={pela} />
             <line x1={260 + pela * 60} y1={-480} x2={260 + pela * 60} y2={-640} stroke="#5a3418" strokeWidth={10} />
           </g>
-          <text x={560} y={940} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill={C.noche} opacity={prog(t, 501.3, 501.6)}>LIKE AN ORANGE…</text>
+          <text x={560} y={940} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill={C.noche} opacity={prog(t, 498.5, 498.8)}>LIKE PEELING AN ORANGE</text>
           <text x={1380} y={940} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill={C.noche} opacity={prog(t, 502.7, 503.0)}>…1 TON A STRIP</text>
         </svg>
         <Marino i={2} x={1000} y={1260} h={620} t={t} expr="enojado" bD={110 + Math.sin(t * 5) * 25} cD={60} manoD={<g transform="rotate(-150) scale(1.1)"><Pala x={0} y={0} /></g>} inclina={Math.sin(t * 5) * 5} />
@@ -441,7 +441,8 @@ export const INS_B: Ins[] = [
             {Array.from({ length: 24 }, (_, k) => { const r = Math.floor(k / 6), c = k % 6; return <rect key={k} x={-300 + c * 100 + (r % 2) * 50} y={-90 - r * 80} width={96} height={76} fill="#a8443a" stroke="#5a2018" strokeWidth={5} opacity={t > 526.6 + k * 0.03 ? 1 : 0} />; })}
             <rect x={-150} y={-260} width={300} height={170} fill="#1a0a0a" />
             {fuego > 0 && Array.from({ length: 9 }, (_, k) => { const f = Math.sin(t * 12 + k) * 30; return <path key={k} d={`M ${-140 + k * 35} -90 Q ${-150 + k * 35 + f} ${-200 - fuego * 120} ${-120 + k * 35} ${-260 - fuego * (180 + (k % 3) * 60)} Q ${-100 + k * 35} -200 ${-110 + k * 35} -90 Z`} fill={k % 2 ? "#ffb020" : "#ff5a1a"} />; })}
-            <ellipse cx={-180} cy={-430} rx={120} ry={60} fill="#3a3a3a" /><ellipse cx={180} cy={-430} rx={120} ry={60} fill="#3a3a3a" />
+            {/* vuelta 7: las ollas de grasa (try-pots) sobre el horno; antes eran óvalos grises sueltos */}
+            {[-160, 160].map((px) => <g key={px}><path d={`M ${px - 130} -430 L ${px + 130} -430 Q ${px + 120} -330 ${px} -325 Q ${px - 120} -330 ${px - 130} -430 Z`} fill="#2a2a2e" stroke="#0e0e12" strokeWidth={8} /><ellipse cx={px} cy={-430} rx={130} ry={26} fill="#4a4a52" stroke="#0e0e12" strokeWidth={8} /></g>)}
           </svg>
           {fuego > 0 && <div style={{ position: "absolute", inset: 0, background: `radial-gradient(circle at 960px 640px, rgba(255,150,40,${0.35 * fuego}), transparent 55%)` }} />}
           <Marino i={1} x={380} y={1240} h={760} t={t} expr="neutro" bD={60} />
@@ -482,6 +483,11 @@ export const INS_B: Ins[] = [
             <path d="M 300 300 Q 300 240 460 240 L 1300 240 Q 1600 260 1600 470 L 1600 560 Q 1500 620 1300 620 L 460 620 Q 300 620 300 540 Z" fill={`rgb(${200 + brilla * 55},${180 + brilla * 60},${100 + brilla * 60})`} stroke="#8a7030" strokeWidth={8} />
             {brilla > 0 && <path d="M 300 300 Q 300 240 460 240 L 1300 240 Q 1600 260 1600 470 L 1600 560 Q 1500 620 1300 620 L 460 620 Q 300 620 300 540 Z" fill="#fff6c8" opacity={0.25 + 0.15 * Math.sin(t * 6)} />}
             <path d="M 300 700 Q 900 760 1500 700" stroke="#2a3450" strokeWidth={10} fill="none" />
+            {/* vuelta 7 OJO: «THE HEAD» era un blob ilegible → ojo, mandíbula con dientes y aleta: se lee cachalote */}
+            <circle cx={1660} cy={720} r={30} fill="#fff" stroke={C.noche} strokeWidth={6} /><circle cx={1652} cy={724} r={14} fill={C.noche} />
+            <path d="M 1780 820 Q 1300 960 420 900 L 440 940 Q 1300 1010 1760 860 Z" fill="#8a9ab8" stroke={C.noche} strokeWidth={8} />
+            {Array.from({ length: 12 }, (_, k) => <path key={k} d={`M ${560 + k * 95} ${905 + k * 2} l 14 -30 l 14 30 Z`} fill="#f4f0e8" />)}
+            <path d="M 1100 900 Q 1180 1040 1320 1060 Q 1240 980 1220 900 Z" fill="#33425f" />
           </svg>
           {t < 565.2 && <Marino i={5} x={250} y={1300} h={980} t={t} expr={t < 560.6 ? "neutro" : "sorpresa"} mira={1} miraY={-0.4} salta={560.7} bD={t > 560.6 ? 120 : 60} cD={t > 560.6 ? 10 : 100} manoD={<path d="M -50 0 L 50 0 L 40 90 L -40 90 Z" fill="#8a8a9a" stroke={C.noche} strokeWidth={6} />} />}
           <Chip t={t} t0={557.6} t1={560.8} text="THE HEAD" color={C.violeta} x={960} y={90} centro size={56} />

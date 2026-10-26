@@ -500,9 +500,9 @@ export const Splash: React.FC<{ x: number; y: number; t: number; t0: number; s?:
       {Array.from({ length: 18 }, (_, i) => {
         const a = -Math.PI * (0.1 + 0.8 * (i / 17));
         const v = 380 + (i % 3) * 140;
-        return <circle key={i} cx={Math.cos(a) * v * k} cy={-Math.sin(-a) * v * k * 1.3 + 900 * k * k} r={(20 - k * 14) * (1 + (i % 2))} fill={col} opacity={1 - k} />;
+        return <circle key={i} cx={Math.cos(a) * v * k} cy={-Math.sin(-a) * v * k * 1.3 + 900 * k * k} r={(20 - k * 14) * (1 + (i % 2))} fill={col} opacity={Math.min(1, k * 10) * (1 - k)} />; // vuelta 7: en k≈0 era un disco blanco pegado
       })}
-      <ellipse cx={0} cy={0} rx={200 * Math.sqrt(k) + 40} ry={30} fill="none" stroke={col} strokeWidth={10 * (1 - k)} />
+      <ellipse cx={0} cy={0} rx={200 * Math.sqrt(k) + 40} ry={30} fill="none" stroke={col} strokeWidth={10 * (1 - k)} opacity={Math.min(1, k * 10)} />
     </Svg>
   );
 };

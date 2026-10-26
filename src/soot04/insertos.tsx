@@ -31,15 +31,16 @@ export const Mar: React.FC<{ t: number; y?: number; cielo?: [string, string]; ma
 // monto que rueda por saltos: ks = [[t, valor], ...]
 export const Monto: React.FC<{ t: number; ks: [number, number][]; x: number; y: number; size?: number; color?: string; pre?: string; suf?: string; t0?: number; signo?: boolean }> = ({ t, ks, x, y, size = 150, color = C.crema, pre = "$", suf = "", t0, signo }) => {
   if (t < (t0 ?? ks[0][0])) return null;
-  let v = ks[0][1];
-  for (let i = 1; i < ks.length; i++) v += (ks[i][1] - ks[i - 1][1]) * prog(t, ks[i][0], ks[i][0] + 0.45);
+  let v = ks[0][1] === 0 && ks.length > 1 ? Math.round(ks[1][1] * 0.6) : ks[0][1];
+  const v0 = v;
+  for (let i = 1; i < ks.length; i++) v += (ks[i][1] - (i === 1 ? v0 : ks[i - 1][1])) * prog(t, ks[i][0], ks[i][0] + 0.45);
   const n = Math.round(v);
   const golpe = ks.slice(1).reduce((m, k) => (t > k[0] && t < k[0] + 0.5 ? 1 + 0.18 * Math.sin(((t - k[0]) / 0.5) * Math.PI) : m), 1);
   const txt = `${n < 0 ? "-" : signo && n > 0 ? "+" : ""}${pre}${Math.abs(n).toLocaleString("en-US")}${suf}`;
   const fin = `${pre}${Math.abs(ks[ks.length - 1][1]).toLocaleString("en-US")}${suf}-`;
   const z = seguro(x, y, anchoTxt(fin, size) + size * 0.2, size * 1.25);
   return (
-    <div style={{ position: "absolute", left: z.x, top: z.y, transform: `translate(-50%, -50%) scale(${ent(t, t0 ?? ks[0][0]) * golpe * z.k})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.08}px ${C.noche}`, paintOrder: "stroke fill", textShadow: `0 ${size * 0.07}px 0 ${C.noche}`, whiteSpace: "nowrap" }}>{txt}</div>
+    <div style={{ position: "absolute", zIndex: 50, left: z.x, top: z.y, transform: `translate(-50%, -50%) scale(${(0.6 + 0.4 * ent(t, t0 ?? ks[0][0])) * golpe * z.k})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.08}px ${C.noche}`, paintOrder: "stroke fill", textShadow: `0 ${size * 0.07}px 0 ${C.noche}`, whiteSpace: "nowrap" }}>{txt}</div>
   );
 };
 // sello que cae y golpea
@@ -49,7 +50,7 @@ export const Sello: React.FC<{ t: number; t0: number; text: string; x: number; y
   const op = interpolate(t, [t0, t0 + 0.1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const z = seguro(x, y, anchoTxt(text, size) * 1.08 + size * 0.8, size * 1.5);
   return (
-    <div style={{ position: "absolute", left: z.x, top: z.y, transform: `translate(-50%, -50%) rotate(${rot}deg) scale(${k * z.k})`, opacity: op, fontFamily, fontWeight: 700, fontSize: size, color, border: `${size * 0.1}px solid ${color}`, borderRadius: size * 0.18, padding: `${size * 0.04}px ${size * 0.3}px`, background: "rgba(255,248,230,.92)", whiteSpace: "nowrap", letterSpacing: 3, boxShadow: "0 10px 0 rgba(20,10,50,.3)" }}>{text}</div>
+    <div style={{ position: "absolute", zIndex: 50, left: z.x, top: z.y, transform: `translate(-50%, -50%) rotate(${rot}deg) scale(${k * z.k})`, opacity: op, fontFamily, fontWeight: 700, fontSize: size, color, border: `${size * 0.1}px solid ${color}`, borderRadius: size * 0.18, padding: `${size * 0.04}px ${size * 0.3}px`, background: "rgba(255,248,230,.92)", whiteSpace: "nowrap", letterSpacing: 3, boxShadow: "0 10px 0 rgba(20,10,50,.3)" }}>{text}</div>
   );
 };
 // globo de diálogo
@@ -58,7 +59,7 @@ export const Dice: React.FC<{ t: number; t0: number; t1?: number; text: string; 
   const w = anchoTxt(text, size) + size, h = size * 1.7, z = seguro(x, y - h / 2, w, h);
   const s = z.k * ent(t, t0, 0, { damping: 10, stiffness: 200 }) * interpolate(t, [t1, t1 + 0.25], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
-    <div style={{ position: "absolute", left: z.x, top: z.y + h / 2, transform: `translate(-50%, -100%) scale(${s})`, transformOrigin: cola === "izq" ? "20% 100%" : "80% 100%", fontFamily, fontWeight: 700, fontSize: size, color: tinta, background: color, padding: `${size * 0.25}px ${size * 0.5}px`, borderRadius: size * 0.6, border: `${size * 0.08}px solid ${C.noche}`, whiteSpace: "nowrap", boxShadow: "0 8px 0 rgba(20,10,50,.3)" }}>
+    <div style={{ position: "absolute", zIndex: 50, left: z.x, top: z.y + h / 2, transform: `translate(-50%, -100%) scale(${s})`, transformOrigin: cola === "izq" ? "20% 100%" : "80% 100%", fontFamily, fontWeight: 700, fontSize: size, color: tinta, background: color, padding: `${size * 0.25}px ${size * 0.5}px`, borderRadius: size * 0.6, border: `${size * 0.08}px solid ${C.noche}`, whiteSpace: "nowrap", boxShadow: "0 8px 0 rgba(20,10,50,.3)" }}>
       {text}
       <div style={{ position: "absolute", bottom: -size * 0.42, [cola === "izq" ? "left" : "right"]: size * 0.6, width: 0, height: 0, borderLeft: `${size * 0.3}px solid transparent`, borderRight: `${size * 0.3}px solid transparent`, borderTop: `${size * 0.45}px solid ${C.noche}` }} />
     </div>
@@ -71,7 +72,7 @@ export const Rot: React.FC<{ t: number; t0: number; t1?: number; text: string; x
   const dx = tiembla ? Math.sin(t * 47) * 6 : 0, dy = tiembla ? Math.cos(t * 53) * 5 : 0;
   const z = seguro(x, y, anchoTxt(text, size) * 1.05 + size * 0.2, size * 1.3);
   return (
-    <div style={{ position: "absolute", left: z.x + dx, top: z.y + dy, transform: `translate(-50%, -50%) scale(${s * z.k})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${C.noche}` }}>{text}</div>
+    <div style={{ position: "absolute", zIndex: 50, left: z.x + dx, top: z.y + dy, transform: `translate(-50%, -50%) scale(${s * z.k})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${C.noche}` }}>{text}</div>
   );
 };
 // vuela de (x0,y0) a (x1,y1) entre t0 y t1 girando; los hijos son SVG centrado en el origen
@@ -100,7 +101,7 @@ export const MostrarInsertos: React.FC<{ t: number; lista: Ins[] }> = ({ t, list
   }
   const i = lista[idx];
   // el contenido arranca ya armado (los elementos que entraban en `a` dejaban el primer cuadro vacío o un disco oscuro)
-  const tc = tt + 0.6 * Math.max(0, 1 - (tt - i.a));
+  const tc = tt + 0.45 * Math.max(0, 1 - (tt - i.a) / 1.8); // vuelta 7: 0,6 s en 1 s (×0,4) daba cuadros casi iguales (lageo en 677)
   // vuelta 5: el iris/barrido muestreado a mitad parecía un disco negro o una mancha tapando la escena → corte seco siempre
   const tipo = "corte" as "iris" | "barrido" | "zoom" | "corte";
   const IN = 0.2;
@@ -112,7 +113,7 @@ export const MostrarInsertos: React.FC<{ t: number; lista: Ins[] }> = ({ t, list
   const z = punch * (1 + (i.z ?? 0.05) * ((t - i.a) / (i.b - i.a)) + (tipo === "zoom" ? 0.25 * (1 - e) : 0));
   const clip = r >= 1 ? undefined : tipo === "iris" ? `circle(${18 + e * 64}% at 50% 52%)` : tipo === "barrido" ? `inset(0 ${(1 - e) * 100}% 0 0)` : undefined;
   return (
-    <div style={{ position: "absolute", inset: 0, overflow: "hidden", clipPath: clip }}>
+    <div style={{ position: "absolute", inset: 0, zIndex: 100, isolation: "isolate", overflow: "hidden", clipPath: clip }}>
       <div style={{ position: "absolute", inset: 0, transform: `scale(${z})`, transformOrigin: "50% 55%" }}>
         {i.fondo(tc)}
         {i.d(tc)}

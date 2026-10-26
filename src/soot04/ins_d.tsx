@@ -265,7 +265,9 @@ export const INS_D: Ins[] = [
     fondo: (t) => <Mar t={t} y={640} cielo={["#ffb88a", "#ffe0c0"]} />,
     d: (t) => (
       <>
-        <div style={{ position: "absolute", left: -40, top: 260, width: 2000, height: 420, background: "#3a2a24", borderTop: "20px solid #7a4a26" }} />
+        {/* vuelta 7: el costado del barco se leía como un rectángulo negro → tablas, portas y borda */}
+        <div style={{ position: "absolute", left: -40, top: 260, width: 2000, height: 420, background: "repeating-linear-gradient(180deg,#6a4630 0 40px,#3e2818 40px 46px)", borderTop: "26px solid #9a6a3a", boxShadow: "inset 0 -60px 0 #2a1e24" }} />
+        {[240, 620, 1000, 1380, 1760].map((x) => <div key={x} style={{ position: "absolute", left: x - 34, top: 380, width: 68, height: 68, borderRadius: 34, background: "#1a2a3a", border: "10px solid #c8a040" }} />)}
         <Cachalote x={interpolate(t, [488.8, 491.3], [2300, 960], { extrapolateRight: "clamp" })} y={760} t={t} s={1.0} flip={false} />
         {t >= 490.3 && <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>{[700, 1200].map((x, k) => <path key={k} d={`M ${x} 680 L ${x + 20} 760`} stroke="#8a8a9a" strokeWidth={14} strokeDasharray="20 8" opacity={prog(t, 490.3 + k * 0.2, 490.6 + k * 0.2)} />)}</svg>}
         <div style={{ position: "absolute", left: 300, top: 640, width: 1300, height: 30, background: "#9a6a3a", border: "6px solid #5a3418", opacity: prog(t, 493.8, 494.2) }} />
