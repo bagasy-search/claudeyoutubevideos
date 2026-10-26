@@ -1,4 +1,5 @@
 import React from "react";
+import { Sala } from "./sets";
 import { AbsoluteFill } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Bota, Moneda } from "./kit";
 import { Papiro, Item, Mula } from "./kit2";
@@ -39,7 +40,8 @@ export const sol3: [number, number, number][] = [[331.3, -999, 0], [345.6, 1400,
 const Masclus: React.FC<{ t: number }> = ({ t }) => {
   const a = T("one of the most famous", D), b = T("my fellow soldiers have", D), c = T("please order some", D);
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #6b4ac9, #1b1240 80%)" }}>
+    <AbsoluteFill>
+      <Sala t={t} tono="violeta" />
       <Persona x={230} y={1040} h={430} t={t} seed={95} ropa={{ ...AUX(4), tunica: "#c9a23d", tunica2: "#8f7025" }} casco="centurion" malla {...gesto(t, [[a, "escribe"], [b - 0.3, "triste"], [c, "habla"]])} />
       <div style={{ position: "absolute", inset: 0 }}><TablillaGrande t={t} t0={a + 0.3} x={1090} y={420} w={1380} vel={30} titulo="MASCLUS, CAVALRY OFFICER → CERIALIS, COMMANDER"
         lineas={["“Masclus to Cerialis, his king, greetings.", "Please, my lord, give instructions", "for what you want done tomorrow…”"]} /></div>
@@ -55,7 +57,8 @@ const LISTA: [string, string][] = [["barley", "BARLEY"], ["pork fat", "PORK FAT"
 const Lista: React.FC<{ t: number }> = ({ t }) => {
   const m = T("one merchant mentions", D);
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #ffcf7a, #c9773a 85%)" }}>
+    <AbsoluteFill>
+      <Sala t={t} tono="calido" />
       <Chip t={t} t0={T("other tablets read", D) + 0.3} t1={T("barley", 374)} text="A SHOPPING LIST FOR A SMALL TOWN" color={C.violeta} x={960} y={120} centro size={56} />
       {t < m + 0.2 && <Persona x={1700} y={1040} h={420} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" {...gesto(t, [[T("other tablets read", D), "lee"], [T("barley", 374), "señala"], [T("vintage wine", 374), "festeja"], [T("celtic beer", 374), "festeja"], [T("and grain in", 374), "sorpresa"]])} />}
       {t < m + 0.2 && <Papiro t={t} x={820} y={560} w={1000} t0={T("other tablets read", D) + 0.2} tacha={false} titulo="VINDOLANDA · SHOPPING LIST" items={LISTA.map(([w, tx]) => ({ txt: tx, t0: T(w, 374), monto: "✓" }))} />}

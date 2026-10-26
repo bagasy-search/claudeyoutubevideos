@@ -1,4 +1,5 @@
 import React from "react";
+import { Sala } from "./sets";
 import { AbsoluteFill } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Moneda, Bota, Pergamino } from "./kit";
 import { Soldadito, Mula, Bolsa } from "./kit2";
@@ -63,7 +64,8 @@ const Cadena: React.FC<{ t: number }> = ({ t }) => {
     ["no convoy", "CONVOY", <Carro x={0} y={0} s={0.35} t={0} />],
   ];
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #f6efe2, #d8c8ae 90%)" }}>
+    <AbsoluteFill>
+      <Sala t={t} tono="piedra" />
       {/* el chorro de monedas que se corta */}
       {t < T("no coins means", D) + 0.3 && Array.from({ length: 9 }, (_, i) => {
         const k = ((t - 755) * 0.7 + i / 9) % 1;
@@ -97,7 +99,8 @@ const Cadena: React.FC<{ t: number }> = ({ t }) => {
 const Carta: React.FC<{ t: number }> = ({ t }) => {
   const a = T("the emperor honoros", D), s = T("it says", D);
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #7a2a9a, #1b1240 85%)" }}>
+    <AbsoluteFill>
+      <Sala t={t} tono="violeta" />
       <Persona x={250} y={1040} h={500} t={t} seed={93} ropa={{ tunica: C.oro, tunica2: "#8f7025", cinto: "#5a3418", piel: "#f2c09a", piel2: "#d99a72", pelo: "#3a2418" }} capa="#7a2a9a" {...gesto(t, [[a, "escribe"], [s, "habla"], [T("you are on your own now", D), "señala"], [T("look after your own", D), "encoge"]])} />
       <Laurel x={250} y={1040 - 450 * (500 / 560) - 70 * (500 / 560)} s={0.85} />
       <Pergamino x={1120} y={570} w={1040} abre={prog(t, a + 0.2, a + 1.2)} lineas={t > T("you are on your own now", D) ? 0 : 7} firma={prog(t, T("look after your own", D) + 0.6, T("look after your own", D) + 1.6)} titulo="TO THE CITIES OF BRITAIN" />

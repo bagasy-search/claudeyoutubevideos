@@ -1,4 +1,5 @@
 import React from "react";
+import { Sala } from "./sets";
 import { AbsoluteFill, Easing } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Casa } from "./kit";
 import { Fuerte, Bolsa, Mula } from "./kit2";
@@ -55,7 +56,8 @@ const Piso: React.FC<{ t: number }> = ({ t }) => {
 const Informe: React.FC<{ t: number }> = ({ t }) => {
   const a = T("one roman report", D), b = T("and the report gives", D), w = T("wretched little britons", D);
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #6b4ac9, #1b1240 80%)" }}>
+    <AbsoluteFill>
+      <Sala t={t} tono="violeta" />
       <Persona x={230} y={1050} h={440} t={t} seed={95} ropa={{ ...AUX(4), tunica: "#c9a23d", tunica2: "#8f7025" }} casco="legion" malla {...gesto(t, [[a, "escribe"], [T("they have no armor", D), "festeja"], [b, "señala"], [T("it is the only time", D), "habla"]])} />
       <div style={{ position: "absolute", inset: 0, transform: `scale(${1 + 0.55 * Easing.inOut(Easing.cubic)(prog(t, T("it is the only time", D), T("it is the only time", D) + 1.4))})`, transformOrigin: "960px 500px" }}>
         <TablillaGrande t={t} t0={a + 0.5} x={1100} y={470} w={1360} vel={30} titulo="VINDOLANDA · A REPORT ON THE BRITONS"

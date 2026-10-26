@@ -1,4 +1,5 @@
 import React from "react";
+import { Sala } from "./sets";
 import { AbsoluteFill } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Pergamino } from "./kit";
 import { Fuerte, Ropa, Mula } from "./kit2";
@@ -87,7 +88,8 @@ const Siria: React.FC<{ t: number }> = ({ t }) => {
 const Burla: React.FC<{ t: number }> = ({ t }) => {
   const a = T("for centuries", D);
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #fff3d6, #e8b98a 80%)" }}>
+    <AbsoluteFill>
+      <Sala t={t} tono="calido" />
       <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
         {[300, 520, 1400, 1620].map((x) => <rect key={x} x={x - 40} y={260} width={80} height={620} fill="#f6efe2" stroke="#c9b8a0" strokeWidth={6} />)}
         <rect x={0} y={880} width={1920} height={200} fill="#c9b8a0" />
@@ -104,7 +106,8 @@ const Burla: React.FC<{ t: number }> = ({ t }) => {
 const Edicto: React.FC<{ t: number }> = ({ t }) => {
   const a = T("much later", D) - 0.1, b = T("british hooded cloak", D);
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #6b4ac9, #1b1240 80%)" }}>
+    <AbsoluteFill>
+      <Sala t={t} tono="violeta" />
       <div style={{ position: "absolute", left: 360, top: 120, width: 1200, height: 860, background: "#f6e3b4", borderRadius: 20, border: "10px solid #8a5a2a", transform: `scale(${ent(t, a)}) rotate(-1.5deg)` }}>
         <div style={{ textAlign: "center", fontFamily, fontWeight: 700, fontSize: 52, color: "#7a3d14", marginTop: 30 }}>EDICT ON MAXIMUM PRICES · AD 301</div>
         {["WHEAT · 1 MODIUS ........ 100", "BEER · 1 SEXTARIUS ........ 4", "SOLDIER'S BOOTS ........ 100", "BIRRUS BRITANNICUS ........ 6,000", "SALT · 1 MODIUS ........ 100"].map((l, i) => {
@@ -146,7 +149,8 @@ const Parte: React.FC<{ t: number }> = ({ t }) => {
     return "#fff";
   };
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 50%, #2d1b69, #120a2c 80%)" }}>
+    <AbsoluteFill>
+      <Sala t={t} tono="noche" />
       {Array.from({ length: 752 }, (_, i) => {
         const cx = 110 + (i % 47) * 31, cy = 280 + Math.floor(i / 47) * 36;
         return t > T("the first cohort", D) + i * 0.002 ? <div key={i} style={{ position: "absolute", left: cx, top: cy, width: 22, height: 30, borderRadius: "11px 11px 4px 4px", background: col(i) }} /> : null;

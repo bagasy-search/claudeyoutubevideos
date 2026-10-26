@@ -1,4 +1,5 @@
 import React from "react";
+import { Sala } from "./sets";
 import { AbsoluteFill } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Moneda } from "./kit";
 import { Soldadito, Barco, Lluvia } from "./kit2";
@@ -137,7 +138,8 @@ const SeveroMuere: React.FC<{ t: number }> = ({ t }) => {
 const Consejo: React.FC<{ t: number }> = ({ t }) => {
   const r: [string, string, string][] = [["get along with each other", "GET ALONG WITH EACH OTHER", C.teal], ["make the soldiers rich", "MAKE THE SOLDIERS RICH", C.oro], ["and ignore everyone else", "IGNORE EVERYONE ELSE", C.rojo]];
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #7a2a9a, #1b1240 85%)" }}>
+    <AbsoluteFill>
+      <Sala t={t} tono="violeta" />
       <div style={{ position: "absolute", left: 180, top: 640, width: 760, height: 140, background: "#8a5a2a", borderRadius: 30 }} />
       <div style={{ position: "absolute", left: 200, top: 590, width: 700, height: 90, background: "#f6efe2", borderRadius: 40 }} />
       <Persona x={360} y={760} h={320} t={t} seed={88} ropa={SEVERO} viejo {...gesto(t, [[T("his last advice", D), "habla"], [T(r[0][0], D), "señala"], [T(r[1][0], D), "habla"], [T(r[2][0], D), "señala"]])} inclina={-62} />

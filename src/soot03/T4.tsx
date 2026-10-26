@@ -1,4 +1,5 @@
 import React from "react";
+import { Sala } from "./sets";
 import { AbsoluteFill } from "remotion";
 import { C, fontFamily, fontMano, ent, prog, Chip, Grande, Emote, cabeza, Zzz } from "./kit";
 import { Papiro } from "./kit2";
@@ -76,7 +77,8 @@ const Cuartel8: React.FC<{ t: number }> = ({ t }) => {
 };
 // dados, fichas, tablero
 const Juegos: React.FC<{ t: number }> = ({ t }) => (
-  <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 50%, #c9a46a, #6b4a2f 85%)" }}>
+  <AbsoluteFill>
+    <Sala t={t} tono="piedra" />
     <Tablero x={760} y={560} s={1.7} t={t} t0={T("at vindolanda", D)} />
     {Array.from({ length: 6 }, (_, i) => <div key={i} style={{ position: "absolute", left: 1220 + (i % 3) * 90, top: 420 + Math.floor(i / 3) * 90, width: 70, height: 70, borderRadius: "50%", background: i % 2 ? "#2a1530" : "#fff6e8", border: "6px solid #6a5a40", transform: `scale(${ent(t, T("and counters", D) + i * 0.06)})` }} />)}
     <Dado x={1300 + Math.sin(t * 9) * 10} y={760} s={1.3} t={t} t0={T("and dice", D)} n={6} rot={t * 140} />
@@ -94,7 +96,8 @@ const Box: React.FC<{ t: number }> = ({ t }) => {
   const golpe = Math.sin((t - a) * 7) > 0.6;
   const g = <g transform="scale(0.45)"><path d="M -50 -80 Q 40 -110 60 -20 Q 70 50 20 80 L -40 80 Q -70 0 -50 -80 Z" fill="#8a4a20" /></g>;
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #ff9a6a, #8a2a3a 85%)" }}>
+    <AbsoluteFill>
+      <Sala t={t} tono="calido" />
       <Guantes x={960} y={300} s={1.1} t={t} t0={a} />
       <Persona x={700 + (golpe ? 40 : 0)} y={960} h={420} t={t} seed={3} ropa={TUNGRO} expr={golpe ? "enojado" : "orgullo"} bD={golpe ? 95 : 60} cD={golpe ? 10 : 110} bI={70} cI={110} manoD={g} manoI={g} />
       <Persona x={1240} y={960} h={420} t={t} seed={25} ropa={AUX(2)} flip expr={golpe ? "sorpresa" : "enojado"} bD={70} cD={110} bI={60} cI={110} manoD={g} manoI={g} inclina={golpe ? 10 : 0} />
@@ -107,7 +110,8 @@ const Box: React.FC<{ t: number }> = ({ t }) => {
 const Cumple: React.FC<{ t: number }> = ({ t }) => {
   const a = T("and one letter", D), h = T("it is one of the oldest surviving", D);
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #ffb3c8, #8a2a5a 85%)" }}>
+    <AbsoluteFill>
+      <Sala t={t} tono="rosa" />
       {t > T("come to my birthday", D) && <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={200}>{Array.from({ length: 16 }, (_, i) => <path key={i} d={`M ${i * 124} ${40 + Math.sin(i * 0.8) * 6} l 62 ${20 + 6 * Math.sin(t * 3 + i)} l 62 -20 Z`} fill={[C.ambar, C.rosa, C.teal, C.lima][i % 4]} opacity={prog(t, T("come to my birthday", D) + i * 0.04, T("come to my birthday", D) + 0.3 + i * 0.04)} />)}<path d="M 0 40 Q 960 90 1920 40" stroke="#fff" strokeWidth={4} fill="none" /></svg>}
       {t > T("come to my birthday", D) && t < h && <svg style={{ position: "absolute", left: 760, top: 760, overflow: "visible", transform: `scale(${ent(t, T("come to my birthday", D) + 0.3)})`, transformOrigin: "120px 220px" }} width={240} height={220}><rect x={20} y={110} width={200} height={100} rx={14} fill="#f6d8e4" stroke="#8a2a5a" strokeWidth={6} /><rect x={50} y={50} width={140} height={70} rx={12} fill="#ffe9f1" stroke="#8a2a5a" strokeWidth={6} />{[80, 120, 160].map((x) => <g key={x}><rect x={x - 5} y={18} width={10} height={34} fill="#fff" /><ellipse cx={x} cy={8 + Math.sin(t * 12 + x) * 2} rx={7} ry={12} fill="#ffb020" /></g>)}</svg>}
       <Persona x={1810} y={1050} h={380} t={t} seed={78} mujer flip ropa={{ ...CIVIL(4), tunica: C.teal, tunica2: "#1c6a62", pelo: "#2a1a10" }} aparece={T("writes to her friend", D)} {...gesto(t, [[T("writes to her friend", D), "lee"], [T("come to my birthday", D) + 0.4, "festeja"], [h, "habla"]])} />
@@ -125,7 +129,8 @@ const Cumple: React.FC<{ t: number }> = ({ t }) => {
 const Partes: React.FC<{ t: number }> = ({ t }) => {
   const it: [string, string][] = [["strength reports", "STRENGTH REPORT"], ["duty reports", "DUTY REPORT"], ["lists of who was sent", "→ THE BATHHOUSE"], ["who was sent to the workshops", "→ THE WORKSHOPS"], ["who was sent to collect", "→ COLLECT CLAY"]];
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #7a5bd1, #1b1240 85%)" }}>
+    <AbsoluteFill>
+      <Sala t={t} tono="violeta" />
       {Array.from({ length: 14 }, (_, i) => <div key={i} style={{ position: "absolute", left: 120 + (i % 2) * 60, top: 900 - i * 34 - (1 - ent(t, T("the officers file", D) + i * 0.08)) * 600, width: 380, height: 40, background: i % 2 ? "#c9a46a" : "#d8b87a", border: "4px solid #8a6a3a", borderRadius: 6 }} />)}
       {Array.from({ length: 14 }, (_, i) => <div key={"b" + i} style={{ position: "absolute", left: 1420 + (i % 2) * 40, top: 900 - i * 34 - (1 - ent(t, T("duty reports", D) + i * 0.08)) * 600, width: 380, height: 40, background: i % 2 ? "#c9a46a" : "#d8b87a", border: "4px solid #8a6a3a", borderRadius: 6 }} />)}
       <Persona x={1640} y={1060} h={400} t={t} seed={91} ropa={CENTURION} casco="centurion" {...gesto(t, [[T("the officers file", D), "escribe"], [T("duty reports", D), "golpea"], [T("who was sent to the workshops", D), "escribe"], [T("who was sent to collect", D), "señala"]])} />
