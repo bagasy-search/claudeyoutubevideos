@@ -20,6 +20,7 @@ export const K1: Key[] = [
   [61.1, -13560, 1760, 2.1, 0.8],
   [62.6, -12100, 1560, 0.62, 1.4],
   [64.7, -8700, 1560, 0.95, 1.4],
+  [66.4, -7500, 1520, 1.15, 1.8],
   [69.9, -6500, 1330, 1.2, 0.9],
   [74.9, -6200, 1250, 0.7, 1.0],
   [79.4, -6250, 1100, 0.5, 0.7],
@@ -30,11 +31,11 @@ export const K1: Key[] = [
   [97.2, -3600, 1600, 0.6, 1.8],
   [99.7, -2150, 1720, 1.5, 0.6, "seco"],
   [103.0, -6000, 1380, 1.3, 0.7, "seco"],
-  [108.4, -4700, 1100, 0.34, 1.6],
+  [108.4, -6150, 1300, 1.05, 1.0],
   [112.0, -6150, -250, 1.0, 0.8],
   [113.6, -4500, 1250, 0.55, 1.0],
   [119.6, -6150, 1290, 1.2, 0.9],
-  [129.6, -6200, 1380, 1.7, 0.8],
+  [129.6, -6410, 1380, 1.5, 0.8],
   [134.8, -6950, 1410, 3.0, 0.4, "seco"],
   [138.8, -6650, 1360, 1.5, 0.7],
   [141.6, -1350, 1330, 1.5, 0.8],
@@ -138,7 +139,7 @@ export const Me1: React.FC<{ t: number }> = ({ t }) => {
       {crewOn && CREW.map((wx, i) => (
         <Persona key={i} x={wx - ox + forzado(i)} y={CUB} h={240} t={t} seed={90 + i} ropa={MARINO(i)} flip={i > 2}
           expr={en(t, 97, 113) ? "miedo" : en(t, 106.9, 112) ? "neutro" : t > 128 && i < 4 ? "triste" : "neutro"}
-          bD={en(t, 97.3, 100) && i > 2 ? 150 : en(t, 104.7, 108) ? 150 : 10} bI={en(t, 104.7, 108) ? 150 : 10} camina={t > 128 && t < 131 && i < 4 ? 1.4 : 0} />
+          bD={en(t, 97.3, 100) && i > 2 ? 150 : en(t, 104.7, 108) ? 150 : en(t, 108, 112) ? 35 : 10} bI={en(t, 104.7, 108) ? 150 : en(t, 108, 112) ? 35 : 10} cD={en(t, 108, 112) ? 80 : 10} cI={en(t, 108, 112) ? 80 : 10} camina={t > 128 && t < 131 && i < 4 ? 1.4 : 0} />
       ))}
       {/* capitán del mercante */}
       {t < 113 && <Persona x={capX} y={ALCA} h={260} t={t} seed={95} ropa={CAP_MERC} expr={en(t, 84.7, 94) ? "enojado" : "orgullo"} habla={en(t, 82.6, 94)} bD={en(t, 87.6, 89.4) ? 60 + Math.sin(t * 14) * 70 : 20} cD={30}
@@ -253,7 +254,7 @@ export const O1: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={134.9} t1={135.5} text="AND YOU?" y={170} size={150} color={C.oro} />
       <S t={134.9} p="zoom" g={-6} />
       {/* forzado, olvidado o rogando */}
-      {en(t, 141.8, 148.5) && <div style={{ position: "absolute", left: 420, top: 330 }}>
+      {en(t, 141.8, 148.5) && <div style={{ position: "absolute", left: 600, top: 330 }}>
         <svg width={1} height={1} style={{ overflow: "visible" }}>
           <Sello t={t} t0={141.9} txt="FORCED" size={70} rot={-10} />
           <g transform="translate(0 150)"><Sello t={t} t0={146.3} txt="FORGOTTEN" size={70} rot={6} c={C.violeta} /></g>

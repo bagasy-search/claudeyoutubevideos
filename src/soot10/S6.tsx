@@ -21,10 +21,10 @@ export const K6: Key[] = [
   [593.7, 2350, 1330, -3.2, 0.7],
   [598.4, 2150, 1340, -2.2, 0.8],
   [610.5, 2050, 1360, -1.7, 0.6, "seco"],
-  [615.0, CHAR + 300, 1720, 0.62, 1.6],
+  [615.0, CHAR + 250, 1680, 0.95, 0.6, "seco"],
   [622.6, CHAR + 500, 1820, 1.3, 1.0],
   [626.5, CHAR + 500, 1850, 2.2, 0.8],
-  [628.1, 2050, 1360, -1.8, 1.4],
+  [627.9, 2150, 1360, -1.8, 0.5, "seco"],
   [632.0, 2250, 1360, -2.6, 0.7],
   [636.7, 2050, 1370, -2.4, 0.7],
   [640.8, 2600, 1400, -3.2, 0.7],
@@ -52,7 +52,7 @@ export const A6: React.FC<{ t: number }> = ({ t }) => {
       })}
       {/* sin cirujano: el carpintero */}
       {en(t, 628, 642.6) && <Persona x={2400} y={CUB} h={275} t={t} seed={258} ropa={CARPINTERO} flip expr={t > 634.6 ? "orgullo" : "neutro"} bD={t > 632.2 ? 120 : 20} cD={40}
-        manoD={t > 632.2 ? <g transform="translate(0 -20) rotate(-30) scale(0.65)"><Sierra /></g> : undefined} />}
+        manoD={<g transform={`translate(0 -20) rotate(${-30 + (en(t, 632.2, 634.6) ? Math.sin(t * 14) * 20 : 0)}) scale(0.65)`}><Sierra /></g>} />}
       {en(t, 628, 642.6) && <Persona x={1900} y={CUB} h={250} t={t} seed={259} ropa={PIRATA(1)} expr="miedo" bD={en(t, 637.6, 642.6) ? 130 : 10} cD={60}
         manoD={en(t, 638.8, 642.6) ? <g transform="scale(0.28)"><Botella c="#7a3a1a" /></g> : undefined} />}
       {/* seguro: la tripulación festeja; el cuerpo con precios */}
@@ -61,8 +61,8 @@ export const A6: React.FC<{ t: number }> = ({ t }) => {
       {en(t, 663.5, 670) && [1600, 1780, 2320, 2500].map((x, i) => <Persona key={i} x={x} y={CUB} h={250} t={t} seed={265 + i} ropa={PIRATA(i + 1)} flip={i > 1} expr="orgullo" ladea={Math.sin(t * 6 + i) * 6} />)}
       <G>
         {/* espadas, cañones, enfermedad */}
-        <P t={t} t0={577.6} t1={581.2} x={1880} y={1220} s={0.45} rot={-30}><Sable /></P>
-        <P t={t} t0={578.5} t1={581.2} x={2050} y={1220} s={0.6}><circle r={60} fill="#2a2a34" /></P>
+        <P t={t} t0={577.6} t1={581.2} x={1880} y={1220} s={0.8} rot={-30}><Sable /></P>
+        <P t={t} t0={578.5} t1={581.2} x={2050} y={1220} s={1}><circle r={60} fill="#2a2a34" /></P>
         <P t={t} t0={578.3} t1={581.2} x={1880} y={1220} s={1}><Signo k="cross" /></P>
         <P t={t} t0={579.3} t1={581.2} x={2050} y={1220} s={1}><Signo k="cross" /></P>
         {en(t, 580.2, 581.3) && <g transform={`translate(2250 1230) scale(${0.4 + prog(t, 580.2, 580.6) * 0.5})`}><Microbio t={t} /></g>}
@@ -81,7 +81,9 @@ export const A6: React.FC<{ t: number }> = ({ t }) => {
         <S t={585.6} p="sad" g={-12} />
         {/* moretón al apoyarse */}
         {en(t, 591.3, 593.6) && <g><rect x={2120} y={1180} width={18} height={320} fill="#6b3a1f" /><circle cx={2100} cy={1360} r={10 + prog(t, 591.6, 592.2) * 14} fill="#7a3a9a" opacity={0.8} /></g>}
-        <Lbl t={t} t0={591.6} t1={593.6} x={2050} y={1250} txt="BRUISES" size={30} color={C.lila} />
+        <Lbl t={t} t0={591.6} t1={593.6} x={2050} y={1250} txt="BRUISES" size={48} color={C.lila} />
+        {en(t, 590.6, 592.4) && <rect x={2040} y={1260 + Math.min(1, (t - 590.6) / 0.6) ** 2 * 230} width={14} height={20} rx={5} fill="#fff8e8" stroke={TINTA} strokeWidth={3} transform={`rotate(${(t - 590.6) * 300} 2047 ${1270 + Math.min(1, (t - 590.6) / 0.6) ** 2 * 230})`} />}
+        <S t={591.2} p="tick" g={-6} pitch={1.6} />
         <S t={591.6} p="squish" g={-10} />
         {/* heridas viejas que se abren */}
         {en(t, 593.7, 598.3) && <path d={`M 2318 1328 l 10 -8 l 10 8 l 10 -8 l 10 8 l 10 -8`} stroke={t > 595.4 ? C.rojo : "#c98a7a"} strokeWidth={t > 595.4 ? 6 : 3} fill="none" strokeLinecap="round" />}
@@ -91,7 +93,7 @@ export const A6: React.FC<{ t: number }> = ({ t }) => {
         {/* el limón */}
         <P t={t} t0={599.2} t1={601.1} x={2150} y={1210} s={0.55} flota><Limon /></P>
         {en(t, 599.2, 601.1) && <circle cx={2150} cy={1210} r={70 + Math.sin(t * 5) * 6} fill="#fff3c4" opacity={0.25} />}
-        <Lbl t={t} t0={599.4} t1={601.1} x={2150} y={1145} txt="THE CURE (NOBODY KNEW)" size={32} color={C.oro} />
+        <Lbl t={t} t0={599.4} t1={601.1} x={2150} y={1145} txt="THE CURE (NOBODY KNEW)" size={58} color={C.oro} />
         <S t={599.2} p="sparkle" g={-8} />
         {/* mosquitos */}
         {en(t, 610.4, 615) && Array.from({ length: 12 }, (_, i) => <g key={i} transform={`translate(${1600 + ((i * 97 + t * (60 + i * 9)) % 1000)} ${1220 + Math.sin(t * 3 + i) * 80})`}><Mosquito t={t} s={0.22} /></g>)}
@@ -134,7 +136,7 @@ export const M6: React.FC<{ t: number }> = ({ t }) => {
       {en(t, 616, 629) && <Persona x={CHAR + 200} y={MAR - 60} h={270} t={t} seed={270} ropa={BARBANEGRA} expr="enojado" habla={en(t, 623.5, 628)} bD={en(t, 624.5, 628) ? 110 : 30} cD={30} />}
       {en(t, 622.5, 629) && [CHAR + 520, CHAR + 680, CHAR + 840].map((x, i) => <Persona key={i} x={x} y={MAR - 60} h={230} t={t} seed={271 + i} ropa={{ ...PIRATA(i), tunica: ["#e8e0d0", "#a8c0d8", "#d8b0c0"][i], gorro: "no", barba: undefined }} flip expr="miedo" bD={170} bI={170} cD={0} cI={0} />)}
       <G>
-        <Lbl t={t} t0={615.6} t1={622.4} x={CHAR - 450} y={MAR - 800} txt="BLACKBEARD" size={110} color={C.rojo} />
+        <Lbl t={t} t0={615.6} t1={622.4} x={CHAR + 250} y={MAR - 640} txt="BLACKBEARD" size={110} color={C.rojo} />
         <S t={615.0} p="whoosh_big" g={-4} />
         <S t={615.8} p="cannon" g={-10} />
         <S t={617.5} p="bell" g={-8} />
@@ -143,6 +145,7 @@ export const M6: React.FC<{ t: number }> = ({ t }) => {
         {en(t, 624.6, 626.4) && <g transform={`translate(${CHAR + 380} ${MAR - 200}) scale(0.5)`}><Pila n={3} oro /></g>}
         <P t={t} t0={625.6} t1={626.4} x={CHAR + 380} y={MAR - 230} s={0.8}><Signo k="cross" /></P>
         <S t={625.6} p="fail" g={-10} />
+        <Lbl t={t} t0={625.6} t1={626.4} x={CHAR + 380} y={MAR - 95} txt="NOT GOLD" size={50} color={C.rojo} />
         <P t={t} t0={626.5} x={CHAR + 480} y={MAR - 120} s={0.5}><Cofre t={t} abre={prog(t, 626.9, 627.4)} txt="MEDICINE" /></P>
         {en(t, 627.2, 629) && [0, 1, 2].map((i) => <g key={i} transform={`translate(${CHAR + 440 + i * 40} ${MAR - 170 - Math.sin(t * 3 + i) * 8}) scale(0.22)`}><Frasco c={["#7ac8e8", "#c8a0d8", "#9be15d"][i]} /></g>)}
         <S t={626.6} p="wood_hit" g={-6} />
@@ -185,13 +188,13 @@ export const O6: React.FC<{ t: number }> = ({ t }) => {
         pins={[{ lugar: "jamaica", t0: 603.6, txt: "CARIBBEAN", icono: "cruz" }, { lugar: "antigua", t0: 604.0, icono: "cruz" }, { lugar: "nassau", t0: 604.3, icono: "cruz" }, { lugar: "capecoast", t0: 605.0, txt: "WEST AFRICA", icono: "cruz" }, { lugar: "africa", t0: 605.4, icono: "cruz" }]} />
       <S t={601.2} p="unroll" g={-4} />
       {[603.6, 604.0, 604.3, 605.0, 605.4].map((a, i) => <S key={i} t={a} p="stamp" g={-10} pitch={1 + i * 0.05} />)}
-      <Txt t={t} t0={606.4} t1={608.2} text="YELLOW FEVER" y={170} size={120} color={C.oro} />
-      <Txt t={t} t0={608.3} t1={610.4} text="MALARIA" y={170} size={140} color={C.lima} />
+      <Txt t={t} t0={606.4} t1={608.2} text="YELLOW FEVER" y={900} size={120} color={C.oro} />
+      <Txt t={t} t0={608.3} t1={610.4} text="MALARIA" y={900} size={140} color={C.lima} />
       {en(t, 606.4, 610.4) && Array.from({ length: 8 }, (_, i) => <div key={i} style={{ position: "absolute", left: 200 + ((i * 233 + t * 140) % 1500), top: 380 + Math.sin(t * 4 + i) * 120 + (i % 3) * 150 }}><svg width={1} height={1} style={{ overflow: "visible" }}><Mosquito t={t} s={0.5} /></svg></div>)}
       <S t={606.4} p="mosquito" g={-6} d={4} />
       <Txt t={t} t0={612.0} t1={614.9} text="WHOLE CREWS · IN WEEKS" y={170} size={96} color={C.rojo} />
       <Txt t={t} t0={628.2} t1={631.9} text="NO REAL SURGEON" y={170} size={120} />
-      <Lista t={t} x={1260} y={250} size={40} w={560} titulo="THE OPERATION" t1={642.5}
+      <Lista t={t} x={70} y={260} size={40} w={560} titulo="THE OPERATION" t1={642.5}
         items={[{ txt: "ANESTHETIC", t0: 636.8, tacha: 637.3 }, { txt: "LEATHER STRAP", t0: 637.8, ok: true }, { txt: "BOTTLE OF RUM", t0: 639.0, ok: true }, { txt: "HOT TAR", t0: 640.9, ok: true }]} />
       {[636.8, 637.8, 639.0, 640.9].map((a, i) => <S key={i} t={a} p="write" g={-12} />)}
       <S t={637.3} p="fail" g={-10} />

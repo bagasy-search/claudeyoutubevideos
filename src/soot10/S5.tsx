@@ -30,12 +30,12 @@ export const K5: Key[] = [
   [519.7, 2500, 1420, -3.4, 0.6],
   [520.9, 2300, 1360, -2.2, 0.8],
   [524.5, 2550, 1420, -3.6, 0.7],
-  [527.9, 1950, 1250, -0.6, 1.2],
+  [527.9, 1950, 1330, -1.6, 1.0],
   [530.1, 1700, 1380, -2.0, 1.0],
   [535.4, 2700, 1380, -2.0, 1.0],
   [538.8, 3420, 1380, -2.4, 1.0],
-  [541.2, 3420, 1360, -3.0, 0.8],
-  [548.4, 3420, 1350, -3.6, 0.6, "seco"],
+  [541.2, 3370, 1360, -2.6, 0.8],
+  [548.4, 3370, 1350, -3.0, 0.6, "seco"],
   [552.4, 1750, 1640, -2.0, 1.2],
   [556.0, 1650, 1620, -3.4, 0.8],
   [560.5, 1720, 1620, -3.0, 0.7],
@@ -56,6 +56,8 @@ export const A5: React.FC<{ t: number }> = ({ t }) => {
     <>
       {/* el cocinero (pata de palo) y el chico */}
       {en(t, 468.4, 484.9) && <Persona x={1860} y={CUB} h={265} t={t} seed={240} ropa={COCINERO} expr="orgullo" habla={t < 471.3} bD={en(t, 471.3, 476) ? 100 : 20} cD={40} />}
+      {en(t, 468.4, 476) && <Persona x={2620} y={CUB} h={180} t={t} seed={7} ropa={GRUMETE} flip expr="feliz" bD={en(t, 469, 471.3) ? 125 + Math.abs(Math.sin(t * 6)) * 25 : 30} cD={en(t, 469, 471.3) ? 120 : 20} manoD={en(t, 469, 471.3) ? <g transform="scale(0.2)"><Galleta /></g> : undefined} />}
+      <S t={469.2} p="munch" g={-10} />
       {en(t, 476, 484.9) && <Persona x={2860} y={CUB} h={180} t={t} seed={7} ropa={GRUMETE} flip expr={t > 480.1 ? "miedo" : "neutro"} bD={120} cD={60} salta={480.1}
         manoD={t < 480.1 ? <g transform="scale(0.3)"><Galleta /></g> : undefined} />}
       {en(t, 494.3, 501.5) && <Persona x={2300} y={CUB} h={250} t={t} seed={241} ropa={PIRATA(2)} expr={t > 497.5 ? "dormido" : "enojado"} bD={t < 497.5 ? 90 + Math.abs(Math.sin(t * 9)) * 40 : 60} cD={40}
@@ -171,7 +173,6 @@ export const A5: React.FC<{ t: number }> = ({ t }) => {
         <S t={535.5} p="fail" g={-10} />
         {/* salmagundi */}
         {en(t, 538.7, 552.4) && <g transform={`translate(3440 ${CUB - 60}) scale(0.62)`}><Cuenco t={t} /></g>}
-        <Lbl t={t} t0={539.0} t1={541.1} x={3420} y={1200} txt="SALMAGUNDI" size={64} color={C.oro} />
         <S t={539.0} p="fanfare" g={-10} />
         {([[541.3, "carne"], [542.4, "huevo"], [543.4, "pepino"], [545.8, "cebolla"], [546.6, "ajo"]] as [number, string][]).map(([a, k], i) => {
           if (!en(t, a, a + 0.8)) return null;
@@ -181,7 +182,6 @@ export const A5: React.FC<{ t: number }> = ({ t }) => {
         {[541.3, 542.4, 543.4, 545.8, 546.6].map((a, i) => <S key={i} t={a + 0.6} p="splash" g={-14} pitch={1.3} />)}
         {([[541.6, "MEAT"], [542.6, "BOILED EGGS"], [543.6, "PICKLES"], [546.0, "ONIONS"], [546.8, "GARLIC"]] as [number, string][]).map(([a, txt], i) => <Lbl key={i} t={t} t0={a} t1={548.3} x={3170 + (i % 2) * 520} y={1225 + Math.floor(i / 2) * 45} txt={txt} size={24} color={C.crema} />)}
         {en(t, 547.2, 551) && Array.from({ length: 30 }, (_, i) => { const a = 547.2 + (i % 10) * 0.08; const p = arco(t, a, a + 0.9, [3440 + ((i * 37) % 60) - 30, 1240], [3380 + ((i * 53) % 130), CUB - 70], 30); return t > a && <circle key={i} cx={p.x} cy={p.y} r={4} fill={i % 2 ? C.rojo : C.naranja} />; })}
-        <Lbl t={t} t0={548.5} t1={552.3} x={3420} y={1230} txt="LOTS OF SPICE" size={44} color={C.rojo} />
         <S t={547.3} p="shake" g={-8} d={1.5} />
         <S t={549.6} p="sneeze" g={-6} />
         {/* noche: las hamacas */}
@@ -205,7 +205,7 @@ export const A5: React.FC<{ t: number }> = ({ t }) => {
         <S t={563.6} p="fart" g={-10} />
         <S t={565.2} p="snore" g={-8} d={3} />
         {t > 568 && <g transform={`translate(1750 ${BOD + 60})`}><Nube t={t} t0={568} r={110} n={7} /></g>}
-        <Lbl t={t} t0={568.4} t1={571.5} x={1750} y={2050} txt="THE BILGE · RIGHT THERE" size={36} color={C.lima} />
+        <Lbl t={t} t0={568.4} t1={571.5} x={1750} y={2050} txt="THE BILGE · RIGHT THERE" size={46} color={C.crema} />
         <S t={567.8} p="bubble" g={-8} d={3} />
         <S t={568.6} p="drip" g={-10} />
       </G>
@@ -234,6 +234,8 @@ export const O5: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={512.9} t1={515.3} text="THE ONLY THING NOT ALIVE" y={170} size={90} color={C.oro} />
       <Txt t={t} t0={515.4} t1={516.8} text="...AND THE RATS" y={170} size={120} color={C.rojo} />
       <Txt t={t} t0={528.0} t1={530.0} text="PIRATES RAIDED OFTEN" y={170} size={100} color={C.oro} />
+      <Txt t={t} t0={539.0} t1={541.1} text="SALMAGUNDI" y={170} size={120} color={C.oro} />
+      <Txt t={t} t0={548.5} t1={552.3} text="LOTS OF SPICE" y={170} size={110} color={C.rojo} />
       <Txt t={t} t0={552.5} t1={555.9} text="IF YOU WERE LUCKY: A HAMMOCK" y={170} size={84} />
     </>
   );

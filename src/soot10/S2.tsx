@@ -14,8 +14,8 @@ export const K2: Key[] = [
   [154.8, 1850, 1370, -1.6, 0.8],
   [158.7, 1700, 1330, -0.9, 0.9],
   [161.0, 640, 1370, -2.0, 0.8, "seco"],
-  [164.4, 3420, 1390, -2.4, 0.8, "seco"],
-  [168.1, 3430, 1350, -3.0, 0.5, "seco"],
+  [164.4, 3330, 1390, -2.4, 0.8, "seco"],
+  [168.1, 3340, 1350, -3.0, 0.5, "seco"],
   [170.7, 2400, 1430, -2.6, 0.7, "seco"],
   [174.3, 2000, 1380, -1.4, 0.7],
   [176.6, 2800, 1430, -2.4, 0.6, "seco"],
@@ -25,11 +25,12 @@ export const K2: Key[] = [
   [188.2, 1300, 900, -0.75, 0.8],
   [191.6, 760, 1100, -3.4, 0.6, "seco"],
   [196.7, 820, 1120, -2.2, 0.6],
-  [199.7, 2000, 1900, -0.85, 1.0],
+  [199.7, 2210, 1380, -1.9, 0.6, "seco"],
+  [201.2, 2000, 1900, -0.85, 1.0],
   [202.9, 1800, 2230, -1.7, 0.9],
   [210.1, 2210, 1380, -1.9, 0.8],
   [214.4, 2300, 1400, -1.9, 0.6],
-  [217.5, 2000, 900, -0.6, 1.0],
+  [217.5, 2000, 1330, -2.2, 0.8],
   [220.4, 1960, 1250, -1.3, 0.8],
   [222.0, 1980, 500, -1.15, 5.0, "lineal"],
   [227.2, 2100, 850, -0.55, 1.0],
@@ -44,7 +45,7 @@ export const K2: Key[] = [
   [262.6, 1800, 1300, -1.3, 1.5],
 ];
 
-const pumpY = (t: number) => (en(t, 210.1, 217.5) ? Math.sin((t - 210.1) * 6) * 40 : 0);
+const pumpY = (t: number) => (en(t, 199.7, 201.3) || en(t, 210.1, 217.5) ? Math.sin((t - 199.7) * 6) * 40 : 0);
 export const A2: React.FC<{ t: number }> = ({ t }) => {
   if (t < 151 || t > 266) return null;
   // dónde está el grumete en cada momento
@@ -63,7 +64,7 @@ export const A2: React.FC<{ t: number }> = ({ t }) => {
       {/* cocinero con pata de palo */}
       {en(t, 163.5, 171) && <Persona x={3270} y={CUB} h={240} t={t} seed={130} ropa={{ ...PIRATA(4), pataPalo: true, gorro: "gorra", gorroCol: "#fff" }} expr={t > 168.1 ? "sorpresa" : "feliz"} habla={en(t, 164.4, 168)} bD={60} cD={60} />}
       {/* bomberos de la bomba */}
-      {en(t, 209, 218) && [2120, 2290].map((x, i) => <Persona key={i} x={x} y={CUB} h={250} t={t} seed={140 + i} ropa={PIRATA(i + 1)} flip={i === 1} expr={t > 214.4 ? "enojado" : "neutro"} bD={110 + pumpY(t) * (i ? -1 : 1) * 0.6} bI={110} cD={40} />)}
+      {(en(t, 199.5, 201.3) || en(t, 209, 218)) && [2120, 2290].map((x, i) => <Persona key={i} x={x} y={CUB} h={250} t={t} seed={140 + i} ropa={PIRATA(i + 1)} flip={i === 1} expr={t > 214.4 ? "enojado" : "neutro"} bD={110 + pumpY(t) * (i ? -1 : 1) * 0.6} bI={110} cD={40} />)}
       {/* guardias: unos en cubierta, otros en hamacas */}
       {en(t, 243.5, 266) && [1250, 2350, 2700, 2950].map((x, i) => <Persona key={i} x={x} y={CUB} h={250} t={t} seed={150 + i} ropa={PIRATA(i + 2)} flip={i % 2 === 1} expr={t > 258.9 ? "triste" : "neutro"} salta={252.5} />)}
       {/* el grumete */}
@@ -71,7 +72,7 @@ export const A2: React.FC<{ t: number }> = ({ t }) => {
         <Persona x={boy.x} y={dormido ? 1610 : boy.y} h={180} t={t} seed={7} ropa={GRUMETE}
           expr={dormido ? "dormido" : en(t, 168.1, 170.7) ? "miedo" : en(t, 170.7, 174.3) ? "triste" : en(t, 196.7, 199.7) ? "miedo" : en(t, 214.4, 217.5) ? "enojado" : en(t, 227.2, 241.5) ? "miedo" : en(t, 252.4, 258.9) ? "sorpresa" : t > 258.9 ? "triste" : en(t, 183.8, 191.6) ? "feliz" : "neutro"}
           camina={en(t, 161, 162.4) || en(t, 174.3, 176.6) ? 2.2 : 0} flip={en(t, 161, 164.4)}
-          inclina={en(t, 170.7, 174.3) ? 38 : dormido ? 80 : 0}
+          inclina={en(t, 170.7, 174.3) ? 38 : dormido ? 80 : t > 258.9 ? 6 + Math.max(0, Math.sin((t - 258.9) * 2.2)) * 14 : 0}
           bD={trepa ? 160 + Math.sin(t * 6) * 15 : en(t, 161, 164.4) ? 70 : en(t, 170.7, 174.3) ? 90 + Math.sin(t * 9) * 30 : en(t, 183.8, 188.2) ? 120 : en(t, 214.4, 217.5) ? 140 : 10}
           bI={trepa ? 160 - Math.sin(t * 6) * 15 : en(t, 234, 238.6) ? 90 : 10} cD={en(t, 214.4, 217.5) ? 130 : 20}
           manoD={en(t, 161, 164.4) ? <g transform="translate(0 -10) scale(0.35)"><rect x={-90} y={-8} width={180} height={16} rx={6} fill="#c8ccd4" /><g transform="translate(0 -40) scale(0.6)"><Carne /></g></g>
@@ -128,10 +129,9 @@ export const A2: React.FC<{ t: number }> = ({ t }) => {
           return <g key={i} transform={`translate(${x} ${y}) rotate(${(t - a) * 60}) scale(0.32)`}>{k === "rata" ? <g transform="scale(2.4)"><Rata x={0} y={0} t={t} /></g> : k === "zapato" ? <Zapato /> : k === "carne" ? <Carne gris={1} /> : <Galleta />}</g>;
         })}
         {[207.7, 208.3, 208.9, 209.5].map((a, i) => <S key={i} t={a + 0.5} p="splash" g={-12} pitch={1 + i * 0.1} />)}
-        <Lbl t={t} t0={207.8} t1={210.1} x={1800} y={2020} txt="FALLS · SPILLS · ROTS · DIES" size={50} color={C.lima} />
         {/* la bomba: palanca y chorro */}
-        {en(t, 209.5, 218) && <g transform={`rotate(${pumpY(t) * 0.5} 2210 1400)`}><rect x={2050} y={1385} width={320} height={22} rx={10} fill="#5a2d14" /></g>}
-        {en(t, 210.4, 217.5) && Array.from({ length: 8 }, (_, i) => { const d = ((t * 2 + i / 8) % 1); return <circle key={i} cx={2260 + d * 300} cy={1395 - Math.sin(d * Math.PI) * 120 + d * 400} r={14 - d * 8} fill="#7aa85a" />; })}
+        {(en(t, 199.5, 201.3) || en(t, 209.5, 218)) && <g transform={`rotate(${pumpY(t) * 0.5} 2210 1400)`}><rect x={2050} y={1385} width={320} height={22} rx={10} fill="#5a2d14" /></g>}
+        {(en(t, 199.9, 201.3) || en(t, 210.4, 217.5)) && Array.from({ length: 8 }, (_, i) => { const d = ((t * 2 + i / 8) % 1); return <circle key={i} cx={2260 + d * 300} cy={1395 - Math.sin(d * Math.PI) * 120 + d * 400} r={14 - d * 8} fill="#7aa85a" />; })}
         <Lbl t={t} t0={210.6} t1={214.3} x={2210} y={1215} txt="TWICE A DAY" size={60} color={C.crema} />
         {[210.4, 211.4, 212.5, 213.5, 214.5, 215.5, 216.5].map((a, i) => <S key={i} t={a} p="creak" g={-12} />)}
         <S t={210.5} p="splash" g={-14} d={6} />
@@ -157,7 +157,7 @@ export const A2: React.FC<{ t: number }> = ({ t }) => {
         {/* guardias */}
         {en(t, 243.6, 266) && [1450, 1600, 1750, 2050].map((x, i) => <Hamaca key={i} x={x} y={1640} w={150} t={t} />)}
         <Lbl t={t} t0={244.2} t1={252.3} x={2600} y={1250} txt="WATCH A: 4H ON DECK" size={56} color={C.oro} />
-        <Lbl t={t} t0={245.6} t1={252.3} x={1700} y={1580} txt="WATCH B: 4H BELOW" size={48} color={C.teal} />
+        <Lbl t={t} t0={245.6} t1={252.3} x={1700} y={1790} txt="WATCH B: 4H BELOW" size={48} color={C.teal} />
         <S t={244.2} p="pop" g={-8} />
         <S t={245.6} p="pop" g={-8} pitch={0.8} />
         <S t={247.6} p="snore" g={-8} d={4.5} />
@@ -192,6 +192,7 @@ export const O2: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={196.9} t1={199.6} text="GUESS WHO GOT FLOGGED?" y={900} size={96} />
       <Txt t={t} t0={199.8} t1={201.1} text="THE PUMP" y={170} size={130} />
       <Txt t={t} t0={204.0} t1={207.5} text="THE BILGE" y={170} size={130} color={C.lima} />
+      <Txt t={t} t0={207.8} t1={210.1} text="FALLS · SPILLS · ROTS · DIES" y={930} size={84} color={C.lima} />
       <Txt t={t} t0={217.6} t1={220.3} text="THE WIND CHANGES..." y={170} size={100} />
       <Txt t={t} t0={220.5} t1={227.1} text="BOYS: LIGHT + FAST" y={170} size={100} color={C.teal} />
       <Txt t={t} t0={228.4} t1={230.7} text="NO HARNESS" y={900} size={120} color={C.rojo} />
@@ -203,6 +204,17 @@ export const O2: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={248.5} t1={252.3} text="MAX 4 HOURS" y={900} size={120} color={C.oro} />
       <Txt t={t} t0={259.0} t1={264.4} text="PERMANENTLY TIRED" y={170} size={110} color={C.lila} />
       <S t={259.0} p="sad" g={-12} />
+      {/* barra de energía del grumete */}
+      {en(t, 259.3, 264.6) && (
+        <div style={{ position: "absolute", left: 1390, top: 760, transform: `scale(${Math.min(1, (t - 259.3) * 5)})`, display: "flex", alignItems: "center", gap: 18, fontFamily: "Fredoka", fontWeight: 700, fontSize: 52, color: "#fff", WebkitTextStroke: "6px #2a1530", paintOrder: "stroke fill" }}>
+          ENERGY
+          <div style={{ width: 230, height: 90, border: "10px solid #2a1530", borderRadius: 18, background: "#f4ead2", padding: 8, position: "relative" }}>
+            <div style={{ width: `${Math.max(6, 22 - (t - 259.3) * 3)}%`, height: "100%", borderRadius: 8, background: (t * 2) % 1 < 0.5 ? "#e8344a" : "#a8202f" }} />
+            <div style={{ position: "absolute", right: -26, top: 22, width: 16, height: 30, background: "#2a1530", borderRadius: 4 }} />
+          </div>
+        </div>
+      )}
+      <S t={259.3} p="fail" g={-12} />
     </>
   );
 };

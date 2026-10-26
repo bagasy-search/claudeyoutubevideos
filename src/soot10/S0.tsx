@@ -29,7 +29,7 @@ export const K0: Key[] = [
   [31.9, 1950, 4620, 3.3, 1.0],
   [36.25, 1950, 4630, 4.4, 0.3, "seco"],
   [36.8, 1900, 4560, 2.6, 2.0],
-  [39.3, 1900, 1500, 0.5, 1.2, "seco"],
+  [39.3, 1950, 1380, -1.9, 0.6, "seco"],
   [41.3, 275, 1330, -7, 0.9],
   [50.3, 1720, 1370, -2.3, 0],
 ];
@@ -120,6 +120,17 @@ export const A0: React.FC<{ t: number }> = ({ t }) => {
           </G>
         </>
       )}
+      {/* hoy zarpás: el grumete iza la vela tirando del cabo, dos piratas lo ayudan */}
+      {en(t, 39.2, 41.5) && (() => {
+        const tira = Math.sin(t * 7);
+        return <>
+          <G><line x1={1950} y1={600} x2={1985} y2={CUB - 150 + tira * 18} stroke="#c9a06a" strokeWidth={9} /></G>
+          <Persona x={1950} y={CUB} h={190} t={t} seed={7} ropa={GRUMETE} expr="feliz" bD={165 + tira * 10} bI={160 + tira * 10} cD={10} cI={10} inclina={-8 + tira * 4} />
+          <Persona x={1700} y={CUB} h={250} t={t} seed={23} ropa={PIRATA(3)} expr="orgullo" bD={150 + tira * 12} cD={20} habla />
+          <Persona x={2230} y={CUB} h={250} t={t} seed={24} ropa={PIRATA(4)} flip expr="feliz" bD={30 + Math.abs(tira) * 120} cD={10} />
+          <S t={39.6} p="rope" g={-8} /><S t={40.3} p="rope" g={-8} pitch={1.1} /><S t={40.6} p="cheer" g={-14} />
+        </>;
+      })()}
       <S t={16.8} p="whoosh" g={-6} />
       <S t={16.9} p="unroll" g={-6} />
     </>
@@ -195,7 +206,6 @@ export const O0: React.FC<{ t: number }> = ({ t }) => {
   return (
     <>
       {hondo > 0 && <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 55% 55%, rgba(10,30,80,0) 35%, rgba(4,10,40,1) 95%)", opacity: hondo }} />}
-      <Flash t={t} t0={2.2} />
       <Txt t={t} t0={0.45} t1={5.2} text="AGE: 12" x={330} y={170} size={96} fondo={C.rojo} rot={-4} />
       <S t={0.45} p="pop" g={-6} />
       <Txt t={t} t0={5.34} t1={6.9} text="CONGRATULATIONS!" y={200} size={130} color={C.oro} />
@@ -218,7 +228,7 @@ export const O0: React.FC<{ t: number }> = ({ t }) => {
       <S t={41.9} p="unroll" g={-4} />
       {[45.6, 46.1, 46.6, 47.1, 47.6, 48.1, 48.6].map((x, i) => <S key={i} t={x} p="stamp" g={-10} pitch={1 + i * 0.05} />)}
       <S t={45.4} p="write" g={-10} d={3.6} />
-      <Txt t={t} t0={49.34} t1={50.4} text="7 TRAPS" y={540} size={240} color={C.rojo} />
+      <Txt t={t} t0={49.34} t1={50.4} text="7 TRAPS" y={930} size={200} color={C.rojo} />
       <S t={49.34} p="boom" g={-5} />
       <S t={50.4} p="unroll" g={-8} pitch={1.3} />
       <Columpio t={t} />

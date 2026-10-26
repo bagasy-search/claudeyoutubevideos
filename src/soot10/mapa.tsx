@@ -102,7 +102,7 @@ export const Mapa: React.FC<{ t: number; t0: number; t1: number; cam: CamMapa[];
           </g>
           {children}
         </svg>
-        {titulo && <div style={{ position: "absolute", left: w / 2 - 960 + 80, top: 60, fontFamily, fontWeight: 700, fontSize: 70, color: "#6b3a1f", letterSpacing: 4, opacity: prog(t, t0 + 0.4, t0 + 0.8) }}>{titulo}</div>}
+        {titulo && <div style={{ position: "absolute", left: 0, width: w, textAlign: "center", whiteSpace: "nowrap", top: 60, fontFamily, fontWeight: 700, fontSize: 70, color: "#6b3a1f", letterSpacing: 4, opacity: prog(t, t0 + 0.55, t0 + 0.85) * (t > t1 ? 0 : 1) }}>{titulo}</div>}
         {/* rollos de los bordes */}
         {[0, 1].map((k) => <div key={k} style={{ position: "absolute", top: -20, bottom: -20, width: 70, [k ? "right" : "left"]: -10, background: "linear-gradient(90deg,#8a5a2a,#e9cf94,#8a5a2a)", borderRadius: 30, boxShadow: "0 0 30px rgba(60,30,10,.6)" }} />)}
       </div>

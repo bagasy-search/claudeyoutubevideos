@@ -14,6 +14,7 @@ const MARINO: Ropa = { ...PIRATA(1), tunica: "#2a3a6a", tunica2: "#1a2448", gorr
 const ISLA = 7800;
 
 export const K4: Key[] = [
+  [369.7, 1950, 1150, -1.3, 0.9],
   [372.1, 1900, 1350, 0.22, 1.4],
   [378.3, 2000, 1330, -1.4, 1.0],
   [382.5, 2050, 1340, -2.2, 0.6, "seco"],
@@ -68,6 +69,7 @@ export const A4: React.FC<{ t: number }> = ({ t }) => {
       {pelea && <Persona x={2200} y={CUB} h={250} t={t} seed={216} ropa={PIRATA(4)} flip expr={t > 392 ? "sorpresa" : "enojado"} inclina={t > 392 ? -Math.min(20, (t - 392) * 80) : 0} habla={t < 391.8} />}
       {castigo && <Persona x={2050} y={CUB} h={250} t={t} seed={215} ropa={PIRATA(1)} flip expr="miedo" bD={170} bI={170} cD={0} cI={0} />}
       {castigo && <Persona x={2330} y={CUB} h={275} t={t} seed={217} ropa={PIRATA(3)} flip expr="enojado" bD={LATIGAZOS.some((a) => en(t, a, a + 0.12)) ? 30 : 150} cD={20} manoD={<g transform="scale(0.24) rotate(180)"><Gato9 t={t} /></g>} />}
+      {en(t, 398, 403.2) && <Persona x={2190} y={CUB} h={265} t={t} seed={217} ropa={PIRATA(3)} expr="orgullo" habla={en(t, 398.2, 403)} bD={100 + Math.sin(t * 3) * 6} cD={25} />}
       {/* el gato y su bolsa: la tripulación mira con terror */}
       {en(t, 410.7, 414) && [1750, 1950, 2150, 2350].map((x, i) => <Persona key={i} x={x} y={CUB} h={250} t={t} seed={220 + i} ropa={PIRATA(i)} flip={x > 2050} expr="miedo" ladea={(i - 1.5) * 4} />)}
       {/* robar / desertar */}
@@ -79,6 +81,13 @@ export const A4: React.FC<{ t: number }> = ({ t }) => {
       {/* el tablón (mito) */}
       {en(t, 438.8, 451.3) && <G><g transform={`translate(3640 ${CUB - 70}) rotate(${t > 448.4 ? Math.min(80, (t - 448.4) * 120) : 0})`}><Tablon largo={460} /></g></G>}
       {en(t, 438.8, 446.4) && <Persona x={3880} y={CUB - 86} h={250} t={t} seed={226} ropa={PIRATA(5)} expr="miedo" bD={40} bI={40} ladea={Math.sin(t * 3) * 6} />}
+      {en(t, 448.3, 451.4) && (() => {
+        const cae = t < 449.4 ? arco(t, 448.4, 449.4, [3990, CUB - 86], [4180, 2030], 140) : { x: 4180, y: 2030 + Math.sin(t * 5) * 10, u: 1 };
+        return <>
+          <Persona x={cae.x} y={cae.y} h={250} t={t} seed={226} ropa={PIRATA(5)} expr="miedo" bD={170 + Math.sin(t * 13) * 15} bI={170 - Math.sin(t * 13) * 15} cD={0} cI={0} inclina={t < 449.4 ? cae.u * 40 : Math.sin(t * 4) * 8} />
+          {t > 449.4 && <G>{[0, 1, 2].map((k) => { const d = ((t - 449.4) * 0.9 + k / 3) % 1; return <ellipse key={k} cx={4180} cy={2035} rx={60 + d * 260} ry={(60 + d * 260) * 0.18} fill="none" stroke="#e8fbff" strokeWidth={8} opacity={1 - d} />; })}</G>}
+        </>;
+      })()}
       {en(t, 446.4, 448.3) && [3300, 3480].map((x, i) => <Persona key={i} x={x} y={CUB} h={250} t={t} seed={227 + i} ropa={PIRATA(i + 1)} expr="orgullo" bD={30} />)}
       {/* paso por la quilla */}
       {en(t, 451.2, 461.8) && (() => {
@@ -119,9 +128,7 @@ export const A4: React.FC<{ t: number }> = ({ t }) => {
         <S t={379.5} p="run" g={-8} d={2} />
         <S t={380.7} p="cheer" g={-10} />
         {/* Phillips 1723 */}
-        <Lbl t={t} t0={385.5} t1={389.9} x={1000} y={895} txt="JOHN PHILLIPS · 1723" size={40} color={C.oro} />
         <S t={385.4} p="fanfare" g={-12} />
-        <P t={t} t0={386.3} t1={389.9} x={1250} y={1000} s={0.6} rot={-6} flota><Precio txt="PRICE LIST" t={t} /></P>
         <S t={386.3} p="paper" g={-6} />
         {/* golpe */}
         <S t={391.9} p="punch" g={-4} />
@@ -220,6 +227,16 @@ export const O4: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={372.2} t1={374.4} text="LET'S BE FAIR" y={150} size={100} />
       <Txt t={t} t0={382.6} t1={385.0} text="LIGHTER ≠ LIGHT" y={170} size={140} color={C.rojo} />
       <S t={382.6} p="stamp" g={-6} />
+      {en(t, 386.2, 390.0) && (
+        <div style={{ position: "absolute", left: 1180, top: 230, width: 660, transform: `scale(${prog(t, 386.2, 386.6)}) rotate(2deg)`, transformOrigin: "50% 0", background: "#f4ead2", border: `10px solid #8a5a2a`, borderRadius: 18, padding: "26px 36px", boxShadow: "0 16px 0 rgba(20,10,40,.4)", fontFamily: "Fredoka", fontWeight: 700, color: TINTA }}>
+          <div style={{ fontSize: 46, color: C.rojo, letterSpacing: 3 }}>JOHN PHILLIPS · 1723</div>
+          <div style={{ fontSize: 30, color: "#8a5a2a", marginBottom: 12 }}>THE PRICE LIST</div>
+          {[["STRIKE A MAN", "39 LASHES", 387.0], ["STEAL", "MAROONED", 387.8], ["DESERT", "MAROONED", 388.6]].map(([a, b, t0], i) => (
+            <div key={i} style={{ display: "flex", justifyContent: "space-between", fontSize: 40, lineHeight: 1.35, opacity: t > (t0 as number) ? 1 : 0, transform: `translateX(${t > (t0 as number) ? 0 : -40}px)` }}><span>{a}</span><span style={{ color: C.rojo }}>{b}</span></div>
+          ))}
+        </div>
+      )}
+      {[387.0, 387.8, 388.6].map((a, i) => <S key={i} t={a} p="write" g={-10} />)}
       <Txt t={t} t0={392.6} t1={394.4} text="MOSES' LAW" y={170} size={130} color={C.oro} />
       <S t={392.6} p="boom" g={-8} />
       <Contador t={t} t0={394.6} t1={398.0} de={0} a={39} x={960} y={190} size={170} color={C.rojo} post=" LASHES" tFin={398.0} />

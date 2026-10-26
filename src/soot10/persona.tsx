@@ -72,14 +72,23 @@ export const Persona: React.FC<Props> = (p) => {
   const salto = sl > 0 && sl < 0.7 ? -Math.abs(Math.sin(sl * 9)) * Math.exp(-sl * 4) * 80 : 0;
   // los ojos se mueven solos (micro sacadas) y la cabeza acompaña la respiración
   const sac = Math.round(Math.sin((t + desfase) * 0.9) * 2) * 0.12;
-  const ladea = (p.ladea ?? 0) + Math.sin((t + desfase) * 1.1) * 2;
+  const ladea = (p.ladea ?? 0) + Math.sin((t + desfase) * 1.1) * 2 + Math.sin((t + desfase) * 0.45) * 3;
   const fase = camina * t * Math.PI * 2;
   const pierna = camina ? Math.sin(fase) * 24 : 0;
   const bote = camina ? Math.abs(Math.sin(fase)) * -10 : 0;
   const balanceo = camina ? Math.sin(fase) * 22 : 0;
-  const bI = (p.bI ?? 8) + (camina ? -balanceo : Math.sin((t + desfase) * 1.7) * 2);
-  const bD = (p.bD ?? 8) + (camina ? balanceo : Math.sin((t + desfase) * 1.5 + 1) * 2);
-  const cI = p.cI ?? 10, cD = p.cD ?? 10;
+  // actuación de reposo: quien no tiene pose fija hace gestos propios (señala, gesticula, se rasca, se encoge de hombros)
+  const reposo = (v?: number) => v === undefined || v === 10;
+  const libre = reposo(p.bD) && reposo(p.bI) && p.manoD === undefined && p.manoI === undefined && !camina && expr !== "dormido";
+  const per = 3.4 + (desfase % 2.6);
+  const ug = ((t + desfase * 3.7) % per) / 1.5;
+  const tipo = Math.floor((t + desfase * 3.7) / per + desfase) % 4;
+  const env = libre && ug < 1 ? Math.sin(Math.PI * ug) : 0;
+  const gD = [[87, -10], [55 + Math.sin(t * 8) * 22, 60], [150, 115], [30, 75]][tipo];
+  const gI = [[0, 0], [20 + Math.sin(t * 7 + 1) * 15, 40], [0, 0], [30, 75]][tipo];
+  const bI = (libre ? 8 + gI[0] * env : p.bI ?? 8) + (camina ? -balanceo : Math.sin((t + desfase) * 1.7) * 2);
+  const bD = (libre ? 8 + gD[0] * env : p.bD ?? 8) + (camina ? balanceo : Math.sin((t + desfase) * 1.5 + 1) * 2);
+  const cI = libre ? 10 + gI[1] * env : p.cI ?? 10, cD = libre ? 10 + gD[1] * env : p.cD ?? 10;
   const bocaAbre = habla ? 0.5 + 0.5 * Math.sin(t * 17 + desfase) * Math.sin(t * 7.3) : 0;
   const c = (v: string) => sombra ?? v;
   const piel = sombra ?? `url(#${id}piel)`;

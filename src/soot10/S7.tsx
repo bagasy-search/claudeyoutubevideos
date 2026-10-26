@@ -28,7 +28,7 @@ export const K7: Key[] = [
   [705.6, 4100, 1300, 0.85, 0.9],
   [708.2, 3900, 1450, 0.55, 1.0],
   [712.2, 4600, 1550, 0.3, 1.6],
-  [719.5, 1850, 1350, -2.2, 1.2],
+  [719.4, 1850, 1350, -2.2, 0.5, "seco"],
   [723.2, 2200, 1800, -1.3, 0.9],
   [735.5, 2050, 1500, -1.6, 0.9],
   [741.0, 2050, 1500, -1.3, 0.6],
@@ -70,6 +70,9 @@ export const A7: React.FC<{ t: number }> = ({ t }) => {
   const mono = en(t, 719.4, 743.3) ? ruta(Math.max(t, 723.2)) : null;
   return (
     <>
+      {/* detrás del cartel: la tripulación afila los sables */}
+      {en(t, 668, 670.7) && [1700, 1900, 2200, 2400].map((x, i) => <Persona key={i} x={x} y={CUB} h={250} t={t} seed={276 + i} ropa={PIRATA(i)} flip={i > 1} expr="enojado"
+        bD={90 + Math.sin(t * 10 + i * 2) * 35} cD={40} manoD={<g transform="rotate(-80) scale(0.35)"><Sable /></g>} />)}
       {/* la pelea que todos imaginan */}
       {en(t, 670.6, 677.8) && [1850, 2250].map((x, i) => <Persona key={i} x={x + (i ? -1 : 1) * Math.abs(Math.sin(t * 5)) * 30} y={CUB} h={255} t={t} seed={280 + i} ropa={PIRATA(i + 2)} flip={i === 1}
         expr={t > 674.2 ? "neutro" : "enojado"} bD={t < 674.2 ? 60 + Math.sin(t * 9 + i) * 40 : 10} cD={20}
@@ -100,8 +103,8 @@ export const A7: React.FC<{ t: number }> = ({ t }) => {
         <P t={t} t0={674.3} t1={677.7} x={2050} y={1300} s={1.6}><Signo k="cross" /></P>
         <S t={674.3} p="fail" g={-8} />
         {/* bandera negra = mensaje */}
-        <Lbl t={t} t0={680.6} t1={686.8} x={2030} y={-430} txt="SURRENDER → LIVE" size={40} color={C.lima} anchor="end" />
-        <Lbl t={t} t0={684.4} t1={686.8} x={2030} y={-350} txt="RESIST → NO MERCY" size={40} color={C.rojo} anchor="end" />
+        
+        
         <S t={677.9} p="cloth" g={-6} />
         <S t={680.6} p="ding" g={-10} />
         <S t={684.4} p="boom" g={-6} />
@@ -114,6 +117,7 @@ export const A7: React.FC<{ t: number }> = ({ t }) => {
           return en(t, a, a + 1.6) && <g key={i}>{t < a + 1.1 ? <g transform={`translate(${p.x} ${p.y}) rotate(${(t - a) * 600}) scale(0.22)`}><Botella c="#7a5a3a" mecha={a} t={t} /></g> : <circle cx={MERC + 300 + i * 200} cy={1790} r={40 + (t - a - 1.1) * 300} fill="#ffb347" opacity={1 - (t - a - 1.1) * 2} />}</g>;
         })}
         {[702.3, 702.9, 703.5].map((a, i) => <S key={i} t={a} p="explo" g={-8} pitch={1.1 + i * 0.1} />)}
+        {en(t, 702.2, 712.2) && Array.from({ length: 9 }, (_, i) => { const a = 702.2 + i * 0.9, u = Math.max(0, t - a); return t > a && <circle key={i} cx={MERC + 300 + (i % 3) * 260 + u * 40} cy={1750 - u * 90} r={60 + u * 50} fill="#d8d4cc" opacity={Math.max(0, 0.75 - u * 0.22)} />; })}
         {/* mosquetes */}
         {en(t, 703.5, 705.6) && [2700, 2880, 3060].map((x, i) => ((t * 6 + i * 0.37) % 1) < 0.25 && <circle key={i} cx={x + 90} cy={CUB - 170} r={26} fill="#fff3c4" />)}
         {[703.6, 703.9, 704.2, 704.6, 704.9, 705.3].map((a, i) => <S key={i} t={a} p="gun" g={-10} pitch={1 + (i % 3) * 0.08} />)}
@@ -156,7 +160,9 @@ export const M7: React.FC<{ t: number }> = ({ t }) => {
       {en(t, 761.3, 779.4) && <BarcoLejos x={20500} y={MAR - 30} t={t} s={1.8} tipo="pirata" iza={t > 776 ? 1 - prog(t, 776, 777.5) : 1} />}
       {en(t, 761.3, 779.4) && <BarcoLejos x={18900} y={MAR - 30} t={t} s={2.0} tipo="marina" fuego={771.6} />}
       {en(t, 767.3, 776.1) && <Persona x={20250} y={MAR - 120} h={200} t={t} seed={310} ropa={ROBERTS} flip expr={t > 771.7 ? "sorpresa" : "orgullo"} inclina={t > 771.9 ? Math.min(80, (t - 771.9) * 160) : 0} />}
-      {en(t, 767.3, 771.6) && [20450, 20600, 20750].map((x, i) => <Persona key={i} x={x} y={MAR - 120} h={180} t={t} seed={311 + i} ropa={PIRATA(i)} expr="dormido" ladea={Math.sin(t * 2 + i) * 14} manoD={<g transform="scale(0.22)"><Botella c="#5a8a3a" /></g>} />)}
+      {en(t, 767.3, 771.6) && [20450, 20600, 20750].map((x, i) => <Persona key={i} x={x} y={MAR - 120} h={180} t={t} seed={311 + i} ropa={PIRATA(i)} expr="dormido" ladea={Math.sin(t * 2 + i) * 14} bD={100 + Math.sin(t * 4 + i) * 45} cD={50} manoD={<g transform="scale(0.22)"><Botella c="#5a8a3a" /></g>} />)}
+      {/* Cape Coast: los presos encadenados */}
+      {en(t, 783, 789.4) && [-450, -300, -150, 0, 150, 300, 450].map((dx, i) => <Persona key={i} x={CC + dx} y={MAR - 60} h={220} t={t} seed={320 + i} ropa={PIRATA(i)} expr="triste" bD={30} bI={30} cD={60} cI={60} inclina={6} camina={t < 786.5 ? 2 : 0} />)}
       <G>
         <Lbl t={t} t0={687.2} t1={696.8} x={5500} y={MAR - 820} txt="MERCHANT" size={90} color={C.crema} />
         {en(t, 689.4, 696.8) && <g transform={`translate(5500 ${MAR - 700}) scale(2.2)`}><Signo k="check" /></g>}
@@ -182,6 +188,9 @@ export const M7: React.FC<{ t: number }> = ({ t }) => {
         <S t={772.2} p="explo" g={-8} />
         <S t={776.5} p="splash" g={-6} />
         <Lbl t={t} t0={776.6} t1={779.3} x={20000} y={MAR - 300} txt="OVERBOARD · AS HE WISHED" size={56} color={C.crema} />
+        {/* Cape Coast: la cadena */}
+        {en(t, 783, 789.4) && <line x1={CC - 470} y1={MAR - 150} x2={CC + 470} y2={MAR - 150} stroke="#6a6a72" strokeWidth={8} strokeDasharray="18 8" />}
+        <S t={783.6} p="rattle" g={-10} d={2} />
         {/* Cape Coast */}
         <S t={783.0} p="whoosh_big" g={-4} />
         <S t={786.6} p="gavel" g={-4} />
@@ -233,6 +242,19 @@ export const O7: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={787.8} t1={789.3} text="52 HANGED" y={170} size={150} color={C.rojo} />
       <S t={787.8} p="boom" g={-6} />
       <Txt t={t} t0={794.6} t1={797.8} text="LEFT FOR THREE TIDES" y={170} size={100} color="#bff3ff" />
+      <Contador t={t} t0={795.0} t1={796.8} de={0} a={3} x={960} y={900} size={150} color="#bff3ff" pre="TIDE " post="" tFin={797.8} />
+      {/* rendite = vivís / resistí = sin piedad */}
+      {en(t, 680.6, 686.8) && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, display: "flex", opacity: prog(t, 680.6, 680.9) * (1 - prog(t, 686.4, 686.8)) }}>
+        {[["SURRENDER", "YOU LIVE", "✓", C.lima, 680.6], ["RESIST", "NO MERCY", "✗", C.rojo, 684.4]].map(([a, b, ic, c, t0], i) => (
+          <div key={i} style={{ flex: 1, height: 1080, background: i ? "rgba(60,10,14,0.88)" : "rgba(10,40,20,0.88)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", opacity: prog(t, t0 as number, (t0 as number) + 0.3), transform: `scale(${0.85 + 0.15 * prog(t, t0 as number, (t0 as number) + 0.3)})` }}>
+            <div style={{ fontFamily: "Fredoka, sans-serif", fontWeight: 700, fontSize: 110, color: "#fff8e8" }}>{a}</div>
+            <div style={{ fontFamily: "Fredoka, sans-serif", fontWeight: 700, fontSize: 260, color: c as string, lineHeight: 1 }}>{ic}</div>
+            <div style={{ fontFamily: "Fredoka, sans-serif", fontWeight: 700, fontSize: 96, color: c as string }}>{b}</div>
+          </div>))}
+      </div>}
+      {/* cartucho tras cartucho */}
+      {[[727.7, "×1"], [732.4, "×2"], [734.4, "×3"]].map(([a, x], i) => <Txt key={i} t={t} t0={a as number} t1={i < 2 ? [732.3, 734.3][i] : 735.4} text={`CARTRIDGE ${x}`} y={900} size={110} color={C.oro} />)}
+      <Txt t={t} t0={759.8} t1={761.4} text="HMS SWALLOW CLOSES IN" y={900} size={90} color={C.rojo} />
       <Contador t={t} t0={798.2} t1={799.4} de={0} a={2} x={960} y={190} size={150} color={C.oro} pre="1–" post=" YEARS" tFin={802.7} />
       <Txt t={t} t0={799.6} t1={802.7} text="A TYPICAL PIRATE CAREER" y={330} size={64} />
       <Txt t={t} t0={802.9} t1={805.8} text="RICH? SOMETIMES." y={170} size={120} color={C.oro} />

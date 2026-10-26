@@ -66,6 +66,8 @@ export const A8: React.FC<{ t: number }> = ({ t }) => {
   if (t < 807 || t > 862) return null;
   return (
     <>
+      {en(t, 809.4, 811.4) && <Persona x={2300} y={CUB} h={180} t={t} seed={7} ropa={GRUMETE} expr={t > 810.2 ? "sorpresa" : "triste"} bD={t > 810.2 ? 150 : 10} cD={30} />}
+      {en(t, 809.4, 811.4) && [1950, 2650].map((x, i) => <Persona key={i} x={x} y={CUB} h={250} t={t} seed={350 + i} ropa={PIRATA(i)} flip={i === 1} expr="neutro" />)}
       {en(t, 819.6, 843.6) && <Persona x={3700} y={CUB} h={260} t={t} seed={320} ropa={BELLAMY} expr={t > 832.8 ? "feliz" : "orgullo"} bD={t > 842.3 ? 150 : 20} cD={t > 842.3 ? 30 : 10} />}
       {en(t, 829.8, 843.6) && [3950, 4180].map((x, i) => <Persona key={i} x={x} y={CUB} h={245} t={t} seed={321 + i} ropa={PIRATA(i + 1)} expr={t > 832.8 ? "sorpresa" : "orgullo"} />)}
       {en(t, 843.5, 852.6) && <Persona x={t < 843.6 ? 3900 : 2600} y={CUB} h={175} t={t} seed={330} ropa={JOHN_P} expr={t > 848.8 ? "miedo" : "feliz"} bD={150} cD={30} ladea={t > 848.8 ? Math.sin(t * 3) * 8 : 0} />}
@@ -114,11 +116,11 @@ export const M8: React.FC<{ t: number }> = ({ t }) => {
         <S t={819.9} p="whoosh_big" g={-4} />
         <S t={820.0} p="sea" g={-14} d={6} />
         <S t={821.1} p="cloth" g={-8} />
-        <Lbl t={t} t0={822.9} t1={829.8} x={BON - 70} y={DK - 150} txt="JOHN KING" size={40} color={C.oro} />
-        <Lbl t={t} t0={825.9} t1={829.8} x={BON + 90} y={DK - 205} txt="HIS MOTHER" size={34} color={C.crema} />
+        <Lbl t={t} t0={822.9} t1={829.8} x={BON - 230} y={DK - 170} txt="JOHN KING" size={62} color={C.oro} />
+        <Lbl t={t} t0={825.9} t1={829.8} x={BON + 230} y={DK - 250} txt="HIS MOTHER" size={54} color={C.crema} />
         <S t={822.9} p="pop" g={-8} />
         <S t={825.9} p="pop" g={-10} />
-        <Lbl t={t} t0={827.4} t1={829.8} x={BON - 260} y={DK - 60} txt="AGE 8–11" size={46} color={C.lima} />
+        <Lbl t={t} t0={827.4} t1={829.8} x={BON - 260} y={DK - 90} txt="AGE 8–11" size={62} color={C.lima} />
         <S t={827.4} p="tick" g={-8} />
         {/* no se esconde: quiere ir */}
         <P t={t} t0={832.8} t1={834.5} x={BON - 260} y={DK - 200} s={0.5}><Globo txt="TAKE ME!" cola={1} /></P>
@@ -150,12 +152,12 @@ export const M8: React.FC<{ t: number }> = ({ t }) => {
         <Lbl t={t} t0={864.0} t1={866.4} x={WX + 150} y={FONDO - 300} txt="CANNONS" size={50} color={C.crema} />
         <Lbl t={t} t0={866.5} t1={867.7} x={WX + 550} y={FONDO - 380} txt="THE SHIP'S BELL" size={56} color={C.oro} />
         <Lbl t={t} t0={874.4} t1={878.3} x={CX} y={CY - 240} txt="SAND + IRON" size={56} color={C.crema} />
-        {en(t, 879.9, 883.8) && <circle cx={CX - 120} cy={CY - 20} r={150} fill="none" stroke={C.lima} strokeWidth={8} opacity={t < 881 ? 1 : 0.35} />}
-        {en(t, 880.9, 883.8) && <circle cx={CX + 60} cy={CY - 80} r={110} fill="none" stroke={C.lima} strokeWidth={8} opacity={t < 882.1 ? 1 : 0.35} />}
+        {en(t, 879.9, 883.8) && <circle cx={CX - 120} cy={CY - 20} r={150} fill="none" stroke={C.lima} strokeWidth={8} opacity={t < 881 ? 1 : 0} />}
+        {en(t, 880.9, 883.8) && <circle cx={CX + 60} cy={CY - 80} r={110} fill="none" stroke={C.lima} strokeWidth={8} opacity={t < 882.1 ? 1 : 0} />}
         {en(t, 882.1, 883.8) && <circle cx={CX + 130} cy={CY + 70} r={120} fill="none" stroke={C.oro} strokeWidth={10} />}
-        <Lbl t={t} t0={879.9} t1={883.8} x={CX - 300} y={CY - 200} txt="LEG BONE" size={40} color={C.lima} />
-        <Lbl t={t} t0={880.9} t1={883.8} x={CX + 200} y={CY - 210} txt="SILK STOCKING" size={40} color={C.lima} />
-        <Lbl t={t} t0={882.1} t1={883.8} x={CX + 360} y={CY + 230} txt="LEATHER SHOE" size={40} color={C.oro} />
+        <Lbl t={t} t0={879.9} t1={883.8} x={CX - 300} y={CY - 200} txt="LEG BONE" size={66} color={C.lima} />
+        <Lbl t={t} t0={880.9} t1={883.8} x={CX + 200} y={CY - 210} txt="SILK STOCKING" size={66} color={C.lima} />
+        <Lbl t={t} t0={882.1} t1={883.8} x={CX + 360} y={CY + 230} txt="LEATHER SHOE" size={72} color={C.oro} />
         <S t={861.5} p="bubble" g={-8} d={2} />
         <S t={862.4} p="suspense" g={-12} d={4} />
         <S t={863.4} p="coin" g={-8} />
@@ -330,7 +332,6 @@ export const O8: React.FC<{ t: number }> = ({ t }) => {
             <div style={{ position: "absolute", left: 960, top: 600, transform: `translate(-60%,-50%) scale(${pul})`, background: hecho ? "#5a5468" : "#e8344a", border: `8px solid ${TINTA}`, borderRadius: 30, padding: "24px 70px", fontFamily: "Fredoka", fontWeight: 700, fontSize: 96, color: "#fff", boxShadow: "0 14px 0 rgba(20,10,40,.45)" }}>{hecho ? "SUBSCRIBED" : "SUBSCRIBE"}</div>
             <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}>
               <Campana x={1480} y={690} t={t} s={1.2} golpes={[911.6]} />
-              {t > 909.8 && t < 911.9 && <path transform={`translate(${t < 910.9 ? mx : 1440 + (t - 910.9) * 0} ${t < 910.9 ? my : 640})`} d="M 0 0 L 0 70 L 18 54 L 32 84 L 44 78 L 30 50 L 54 50 Z" fill="#fff" stroke={TINTA} strokeWidth={5} />}
             </svg>
           </div>
         );
@@ -351,9 +352,9 @@ export const O8: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={916.7} t1={917.6} text="THE EXECUTIONER" y={170} size={150} color={C.rojo} />
       <S t={917.8} p="whoosh_big" g={-6} />
       <Txt t={t} t0={917.9} t1={923} text="WHICH TRAP GETS YOU FIRST?" y={150} size={96} color={C.oro} />
-      <Lista t={t} x={560} y={240} size={60} w={800} titulo="TELL ME IN THE COMMENTS"
-        items={["THE CAPTURE", "THE CHORES", "THE ARTICLES", "THE PUNISHMENTS", "THE FOOD", "THE FEVER", "THE BATTLE"].map((txt, i) => ({ txt: `${i + 1}. ${txt}`, t0: 918.4 + i * 0.3 }))} />
-      {Array.from({ length: 7 }, (_, i) => <S key={i} t={918.4 + i * 0.3} p="write" g={-14} pitch={1 + i * 0.04} />)}
+      <Lista t={t} x={560} y={230} size={50} w={800} titulo="TELL ME IN THE COMMENTS"
+        items={["THE CAPTURE", "THE CHORES", "THE ARTICLES", "THE PUNISHMENTS", "THE FOOD", "THE FEVER", "THE BATTLE"].map((txt, i) => ({ txt: `${i + 1}. ${txt}`, t0: 918.3 + i * 0.25 }))} />
+      {Array.from({ length: 7 }, (_, i) => <S key={i} t={918.3 + i * 0.25} p="write" g={-14} pitch={1 + i * 0.04} />)}
     </>
   );
 };

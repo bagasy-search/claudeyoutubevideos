@@ -26,9 +26,13 @@ export const camara = (t: number, keys: Key[]): Cam => {
   let c: Cam = { x: keys[0][1], y: keys[0][2], z: keys[0][3] };
   let ult = keys[0][0];
   for (let i = 1; i < keys.length; i++) {
-    const [k0, x, y, z, d = 0.9, tipo = "suave"] = keys[i];
+    const [k0, x, y, z, d0 = 0.9, tipo = "suave"] = keys[i];
+    let d = d0;
     if (t < k0) break;
-    const ease = tipo === "seco" ? Easing.out(Easing.cubic) : tipo === "lineal" ? Easing.linear : Easing.inOut(Easing.cubic);
+    // viaje largo (mucho cielo/mar vacío en el medio) = barrido rápido de 0,5 s en vez de un paneo lento por la nada
+    const lejos = Math.hypot(x - c.x, y - c.y) * Math.min(c.z, z) > 3000;
+    if (lejos) d = Math.min(d, 0.5);
+    const ease = lejos ? Easing.inOut(Easing.poly(5)) : tipo === "seco" ? Easing.out(Easing.cubic) : tipo === "lineal" ? Easing.linear : Easing.inOut(Easing.cubic);
     const u = d <= 0 ? 1 : interpolate(t, [k0, k0 + d], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease });
     // el zoom se interpola en escala logarítmica (el dolly se siente parejo)
     c = { x: c.x + (x - c.x) * u, y: c.y + (y - c.y) * u, z: Math.exp(Math.log(c.z) + (Math.log(z) - Math.log(c.z)) * u) };

@@ -252,7 +252,7 @@ export const Escenario: React.FC<{ t: number; keys: Key[]; abordo?: React.ReactN
       {cl.tormenta > 0.4 && <Lluvia t={t} n={160} angulo={24} op={0.5 * cl.tormenta} />}
       {t > 226.8 && t < 241 && <Lluvia t={t} n={110} angulo={14} op={0.45} />}
       {/* estela de paneo/dolly rápido */}
-      {(vel > 70 || dz > 0.05) && <Estela t={t} k={Math.min(1, Math.max((vel - 70) / 200, (dz - 0.05) * 6))} radial={dz > 0.05 && vel < 200} />}
+      {(vel > 260 || dz > 0.9) && <Estela t={t} k={Math.min(1, Math.max((vel - 260) / 300, (dz - 0.9) * 2))} radial={dz > 0.9 && vel < 260} />}
       {cl.noche > 0.4 && <AbsoluteFill style={{ background: "rgba(20,10,60,.25)", opacity: cl.noche, pointerEvents: "none" }} />}
     </AbsoluteFill>
   );

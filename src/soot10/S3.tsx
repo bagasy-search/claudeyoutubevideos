@@ -90,7 +90,7 @@ export const A3: React.FC<{ t: number }> = ({ t }) => {
         {/* el pergamino de los artículos sobre un barril */}
         {en(t, 266, 290) && <g><rect x={1880} y={1440} width={340} height={60} rx={8} fill="#8a4f22" />
           <rect x={1900} y={1330} width={300} height={110} fill="#f4ead2" stroke="#a8946a" strokeWidth={4} />
-          {Array.from({ length: 5 }, (_, i) => t > 270.4 + i * 0.6 && <line key={i} x1={1920} y1={1350 + i * 16} x2={2180 - (i % 2) * 40} y2={1350 + i * 16} stroke="#8a7a5a" strokeWidth={4} />)}
+          {Array.from({ length: 5 }, (_, i) => t > 267.0 + i * 0.5 && <line key={i} x1={1920} y1={1350 + i * 16} x2={2180 - (i % 2) * 40} y2={1350 + i * 16} stroke="#8a7a5a" strokeWidth={4} />)}
           {Array.from({ length: 7 }, (_, i) => t > 275 + i * 0.45 && <text key={`f${i}`} x={1915 + i * 40} y={1432} fontFamily="Fredoka, sans-serif" fontWeight={700} fontSize={22} fill="#5a2a1a">{i % 2 ? "X" : "✗"}</text>)}</g>}
         {[270.4, 271.0, 271.6, 272.2, 272.8].map((a, i) => <S key={i} t={a} p="write" g={-14} />)}
         {[275, 275.45, 275.9, 276.35, 276.8, 277.25, 277.7].map((a, i) => <S key={`f${i}`} t={a} p="stamp" g={-14} pitch={1.4} />)}
@@ -100,7 +100,7 @@ export const A3: React.FC<{ t: number }> = ({ t }) => {
         <Lbl t={t} t0={279.5} t1={284.6} x={1250} y={1440} txt="1724" size={60} color={C.oro} />
         <S t={278.3} p="paper" g={-6} />
         <S t={279.5} p="sparkle" g={-10} />
-        <Lbl t={t} t0={285.4} t1={290.8} x={1000} y={895} txt="BARTHOLOMEW ROBERTS" size={40} color={C.oro} />
+        <Lbl t={t} t0={285.4} t1={290.8} x={1000} y={1565} txt="BARTHOLOMEW ROBERTS" size={40} color={C.oro} />
         <S t={285.4} p="fanfare" g={-12} />
         {/* voto */}
         <S t={291.4} p="cloth" g={-8} />
@@ -127,11 +127,11 @@ export const A3: React.FC<{ t: number }> = ({ t }) => {
         {reparto && REPARTO.map(([x, txt, n, t0], i) => (
           <g key={i}>
             <g transform={`translate(${x} ${CUB - 6}) scale(0.5)`}><Pila n={n} t={t} t0={t0} oro /></g>
-            <Lbl t={t} t0={t0} t1={320.4} x={x} y={1205 - (i % 2) * 40} txt={txt} size={30} color={C.crema} />
+            <Lbl t={t} t0={t0} t1={320.4} x={x} y={CUB + 62 + (i % 2) * 34} txt={txt} size={30} color={C.crema} />
           </g>
         ))}
         {reparto && <g transform={`translate(2780 ${CUB - 6}) scale(0.5)`}><Pila n={0.5} t={t} t0={318.3} oro /></g>}
-        <Lbl t={t} t0={318.3} t1={320.4} x={2780} y={1250} txt="BOY · ½" size={40} color={C.oro} />
+        <Lbl t={t} t0={318.3} t1={320.4} x={2780} y={CUB + 80} txt="BOY · ½" size={40} color={C.oro} />
         {REPARTO.map(([, , , t0], i) => <S key={i} t={t0} p="coin" g={-8} pitch={1 + i * 0.05} />)}
         <S t={318.3} p="coin" g={-6} pitch={1.6} />
         {/* destituido */}
@@ -140,7 +140,6 @@ export const A3: React.FC<{ t: number }> = ({ t }) => {
         <S t={324.5} p="whoosh" g={-6} />
         <S t={325.7} p="splash" g={-6} />
         <Lbl t={t} t0={327.6} t1={333.1} x={2300} y={1050} txt="QUARTERMASTER" size={56} color={C.crema} />
-        <Lbl t={t} t0={330.9} t1={333.1} x={2300} y={1110} txt="THE MOST FEARED" size={40} color={C.rojo} />
         <S t={327.6} p="suspense" g={-10} d={2.5} />
         <S t={330.9} p="heart" g={-8} />
         {/* razones: la parte del chico sale de la de un hombre */}
@@ -204,10 +203,11 @@ export const O3: React.FC<{ t: number }> = ({ t }) => {
       {[291.2, 293.7, 296.2, 299.8, 302.3].map((a, i) => <S key={i} t={a} p="write" g={-14} />)}
       <Txt t={t} t0={306.9} t1={307.8} text="WITH SWORDS AND PISTOLS" y={900} size={84} color={C.rojo} />
       <Txt t={t} t0={308.0} t1={310.2} text="THE PRIZE: A FIXED SCALE" y={170} size={100} color={C.oro} />
+      <Txt t={t} t0={330.9} t1={333.1} text="THE MOST FEARED" y={170} size={120} color={C.rojo} />
       <Txt t={t} t0={320.6} t1={322.2} text="ALMOST FAIR?" y={170} size={120} />
       {/* artículo VI */}
       {en(t, 333.2, 344.4) && (
-        <div style={{ position: "absolute", left: 960, top: 300, transform: `translate(-50%,0) scale(${prog(t, 333.2, 333.6)}) rotate(-2deg)`, width: 1100, background: "#f4ead2", border: `10px solid #8a5a2a`, borderRadius: 18, padding: "30px 50px", boxShadow: "0 18px 0 rgba(20,10,40,.4)", fontFamily: "Fredoka, sans-serif", fontWeight: 700, color: TINTA, textAlign: "center" }}>
+        <div style={{ position: "absolute", left: 960, top: 70, transform: `translate(-50%,0) scale(${prog(t, 333.2, 333.6) * 0.88}) rotate(-2deg)`, transformOrigin: "50% 0", width: 1100, background: "#f4ead2", border: `10px solid #8a5a2a`, borderRadius: 18, padding: "30px 50px", boxShadow: "0 18px 0 rgba(20,10,40,.4)", fontFamily: "Fredoka, sans-serif", fontWeight: 700, color: TINTA, textAlign: "center" }}>
           <div style={{ fontSize: 80, color: C.rojo, letterSpacing: 6 }}>ARTICLE VI</div>
           <div style={{ fontSize: 58, lineHeight: 1.2, marginTop: 10, fontStyle: "italic" }}>
             {"“No boy or woman to be allowed amongst them.”".split(" ").map((w, i) => <span key={i} style={{ opacity: t > 334.6 + i * 0.36 ? 1 : 0.12 }}>{w} </span>)}
