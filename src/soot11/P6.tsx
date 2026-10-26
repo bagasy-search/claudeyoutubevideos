@@ -247,7 +247,7 @@ export const P6Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={590.45} t1={593.0} text="ARMED WITH WHATEVER WAS IN THEIR HANDS" color={C.noche} x={960} y={150} centro size={52} />
     <Titulo t={t} t0={593.1} t1={594.5} text="STONES." y={200} size={150} color={C.crema} />
     <Chip t={t} t0={594.6} t1={598.5} text="MORE THAN ONE EXECUTIONER..." color={C.violeta} x={960} y={150} centro size={58} />
-    <Titulo t={t} t0={598.6} t1={602.1} text="RUN FOR YOUR LIFE" y={960} size={110} color={C.ambar} />
+    <Titulo t={t} t0={598.6} t1={602.1} text="RUN FOR YOUR LIFE" y={880} size={110} color={C.ambar} />
     <Chip t={t} t0={602.25} t1={604.6} text="SOME NEVER MADE IT TO THE BRIDGE" color={C.noche} x={960} y={150} centro size={56} />
     <Titulo t={t} t0={604.75} t1={609.2} text="HOW DO YOU SURVIVE THIS?" y={200} size={96} color={C.crema} />
     <Chip t={t} t0={609.4} t1={611.1} text="FRANZ HAD A STRATEGY" color={C.teal} tinta={C.noche} x={960} y={150} centro size={60} />

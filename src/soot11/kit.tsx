@@ -201,15 +201,15 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
     // estilo del molde: palabras con contorno que entran de a una + subrayado del color (no una píldora tipo subtítulo)
     const sz = size * 1.12, borde = "#1b1230";
     const relleno = tinta === "#fff" ? "#fff6e0" : color;
-    const pal = text.split(" ");
+    const pal = text.split(" "), nPal = clamp((t - t0) / 0.05 + 1, 0, pal.length), kPal = Math.floor(nPal);
+    const chars = pal.slice(0, kPal).join(" ").length + (kPal < pal.length ? (pal[kPal].length + 1) * (nPal - kPal) : 0);
+    const rev = kPal >= pal.length ? 106 : (chars / text.length) * 100;
     const xs = segX(x0, anchoTxt(text, sz), true), ys = sinHud(xs, anchoTxt(text, sz), segY(y0 + 10, sz * 1.4), sz * 1.4);
     const sub = interpolate(t, [t0 + 0.1, t0 + 0.45], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
     return (
       <div style={{ position: "absolute", left: xs, top: ys, transform: `translate(-50%, -50%) scale(${out})`, fontFamily, fontWeight: 700, fontSize: sz, whiteSpace: "nowrap", lineHeight: 1.1, letterSpacing: 1 }}>
-        {pal.map((w, i) => {
-          const si = clamp((t - t0 - i * 0.05) / 0.12, 0, 1);
-          return <span key={i} style={{ display: "inline-block", marginRight: i < pal.length - 1 ? sz * 0.42 : 0, opacity: si, transform: `translateY(${(1 - si) * 10}px)`, color: relleno, WebkitTextStroke: `${sz * 0.1}px ${borde}`, paintOrder: "stroke fill", textShadow: `0 ${sz * 0.08}px 0 ${borde}` }}>{w}</span>;
-        })}
+        {/* una sola tira con espacios reales (el Chrome de Linux del farm encimaba los inline-block); las palabras se destapan con máscara */}
+        <span style={{ display: "inline-block", whiteSpace: "pre", wordSpacing: sz * 0.22, color: relleno, WebkitTextStroke: `${sz * 0.1}px ${borde}`, paintOrder: "stroke fill", textShadow: `0 ${sz * 0.08}px 0 ${borde}`, clipPath: `inset(-40% ${100 - rev}% -40% -6%)` }}>{text}</span>
         <div style={{ position: "absolute", left: "50%", bottom: -sz * 0.18, height: sz * 0.14, width: `${sub * 70}%`, transform: "translateX(-50%) rotate(-1deg)", background: tinta === "#fff" ? color : C.noche, borderRadius: sz * 0.07, boxShadow: "0 4px 0 rgba(20,10,50,.35)" }} />
       </div>
     );

@@ -334,7 +334,7 @@ export const P7Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={696.65} t1={700.7} text="ANYTHING FROM THE GALLOWS = MAGIC (SUPPOSEDLY)" color={C.noche} x={960} y={150} centro size={48} />
     <Chip t={t} t0={700.85} t1={704.8} text="HANGMAN'S ROPE = LUCK FOR GAMBLERS" color={C.lima} tinta={C.noche} x={960} y={150} centro size={54} />
     <Chip t={t} t0={704.95} t1={707.5} text="HEALING SALVES MADE FROM..." color={C.teal} tinta={C.noche} x={960} y={150} centro size={58} />
-    <Chip t={t} t0={707.6} t1={711.4} text="DON'T ASK." color={C.rojo} x={520} y={860} centro size={80} />
+    <Chip t={t} t0={707.6} t1={711.4} text="DON'T ASK." color={C.rojo} x={1250} y={150} centro size={80} />
     <Chip t={t} t0={711.55} t1={715.0} text="THE ONLY SUPPLIER IN TOWN" color={C.oro} tinta={C.noche} x={960} y={150} centro size={60} />
     <Sello t={t} t0={715.1} t1={718.5} text="LONELY" x={520} y={560} size={110} rot={-10} color={C.violeta} />
     <Sello t={t} t0={717.35} t1={718.5} text="DIRTY" x={960} y={760} size={110} rot={6} color="#8a6a3a" />

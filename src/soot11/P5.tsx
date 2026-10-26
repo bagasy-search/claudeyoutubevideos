@@ -225,11 +225,11 @@ export const P5Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={454.9} t1={458.6} text="NO FAMILY WANTS THEIR DAUGHTER MARRYING YOU" color={C.noche} x={960} y={150} centro size={48} />
     <Chip t={t} t0={458.7} t1={462.7} text="...OR THEIR SON MARRYING YOURS" color={C.noche} x={960} y={150} centro size={54} />
     <Titulo t={t} t0={462.85} t1={464.9} text="SO THEY MARRIED EACH OTHER" y={90} size={70} color={C.crema} />
-    <Chip t={t} t0={465.0} t1={470.0} text="SON OF ONE TOWN ♥ DAUGHTER OF THE NEXT" color={C.rojo} x={960} y={1012} centro size={44} />
-    <Chip t={t} t0={470.2} t1={474.7} text="THEIR KIDS: THREE TOWNS AWAY" color={C.violeta} x={960} y={1012} centro size={44} />
+    <Chip t={t} t0={465.0} t1={470.0} text="SON OF ONE TOWN ♥ DAUGHTER OF THE NEXT" color={C.rojo} x={960} y={950} centro size={54} />
+    <Chip t={t} t0={470.2} t1={474.7} text="THEIR KIDS: THREE TOWNS AWAY" color={C.violeta} x={960} y={950} centro size={54} />
     <Titulo t={t} t0={474.9} t1={478.2} text="DYNASTIES" y={200} size={150} color={C.rojo} borde="#2b0a14" />
-    <Chip t={t} t0={478.4} t1={482.9} text="WHOLE REGIONS · ALL RELATED" color={C.violeta} x={960} y={1012} centro size={44} />
-    <Chip t={t} t0={483.0} t1={487.2} text="THE JOB · THE SWORDS · THE KNOWLEDGE" color={C.noche} x={960} y={1012} centro size={44} />
+    <Chip t={t} t0={478.4} t1={482.9} text="WHOLE REGIONS · ALL RELATED" color={C.violeta} x={960} y={950} centro size={54} />
+    <Chip t={t} t0={483.0} t1={487.2} text="THE JOB · THE SWORDS · THE KNOWLEDGE" color={C.noche} x={960} y={950} centro size={54} />
     <Chip t={t} t0={487.4} t1={489.4} text="AND YOUR CHILDREN?" color={C.violeta} x={960} y={150} centro size={60} />
     <Chip t={t} t0={489.5} t1={491.7} text="AGE 5: THEY ALREADY KNEW" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={58} />
     <Sello t={t} t0={491.8} t1={494.4} text="NO GUILD" x={1480} y={860} size={100} />

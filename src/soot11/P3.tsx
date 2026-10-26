@@ -135,7 +135,6 @@ export const P3Mundo: React.FC<{ t: number }> = ({ t }) => {
           <G x={CASA_P} y={SUELO - 140}><g transform={`rotate(${t > 331.0 ? interp(t, [331.0, 331.5], [180, 360]) : 180})`}><path d="M -50 0 Q -54 -44 0 -48 Q 54 -44 50 0 Z" fill="#c9773a" /></g></G>
           <Persona x={CASA_P - 130} y={SUELO - 10} h={280} t={t} seed={530} ropa={CIVIL(22)} gorro="toca" expr={t > 328 ? "miedo" : "feliz"} bD={vig(t, 330.6, 331.6) ? 70 : 10} />
           <Persona x={CASA_P + 140} y={SUELO - 10} h={250} t={t} seed={531} ropa={CIVIL(23)} flip expr={t > 328 ? "sorpresa" : "feliz"} />
-          {vig(t, 328.3, 331.0) && <Emote t={t} t0={328.3} tipo="excl" x={CASA_P - 130} y={SUELO - 340} s={0.6} />}
         </>
       )}
       {/* ── el havage en el mercado de París */}
@@ -150,7 +149,7 @@ export const P3Mundo: React.FC<{ t: number }> = ({ t }) => {
             manoD={cuchara ? <g transform="rotate(180)"><Cucharon x={0} y={-20} s={interp(t, [350.75, 351.2], [0.3, 1.7])} /></g> : undefined}
             manoI={<Saco x={0} y={170} s={interp(t, [341, 360], [0.35, 0.9])} />} />}
           {vig(t, 346.3, 350.7) && <BurbujaM t={t} t0={346.5} t1={350.6} x={31200} y={SUELO - 470} text="NON! NOT YOUR HAND!" size={36} />}
-          {vig(t, 341.2, 346.3) && SACOS.slice(0, 3).map((sx, i) => vig(t, 342.2 + i * 1.2, 343.4 + i * 1.2) ? <TextoMundo key={sx} x={sx} y={SUELO - 190} text="-1 HANDFUL" size={46} color={C.rojo} borde="#fff" /> : null)}
+          {vig(t, 341.2, 346.3) && SACOS.slice(0, 3).map((sx, i) => vig(t, 342.2 + i * 1.2, 343.4 + i * 1.2) ? <TextoMundo key={sx} x={sx} y={SUELO - 80} text="-1 HANDFUL" size={46} color={C.rojo} borde="#fff" /> : null)}
           {/* el rey lo abolió y les pagó */}
           {t > 360.2 && (
             <>

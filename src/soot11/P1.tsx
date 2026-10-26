@@ -207,7 +207,7 @@ export const P1Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={69.4} t1={71.6} text="ONE REAL FAMILY" color={C.teal} tinta={C.noche} x={960} y={150} centro size={62} />
     <Chip t={t} t0={75.5} t1={77.5} text="A NOBLEMAN IN CHARGE" color={C.violeta} x={960} y={140} centro size={56} />
     <Chip t={t} t0={77.8} t1={79.7} text="3 PRISONERS" color={C.rojo} x={960} y={140} centro size={64} />
-    <Chip t={t} t0={79.9} t1={82.5} text="0 EXECUTIONERS" color={C.noche} x={960} y={140} centro size={64} />
+    <Chip t={t} t0={79.9} t1={82.5} text="0 EXECUTIONERS" color={C.rojo} x={960} y={140} centro size={64} />
     <Chip t={t} t0={85.1} t1={89.6} text="HEINRICH SCHMIDT · BIRDCATCHER" color={C.lima} tinta={C.noche} x={960} y={950} centro size={52} />
     <Globo t={t} t0={86.9} t1={88.5} text="YOU." x={700} y={330} size={84} />
     <Globo t={t} t0={88.55} t1={89.7} text="YOU DO IT TODAY." x={760} y={330} size={64} />
@@ -220,7 +220,7 @@ export const P1Pant: React.FC<{ t: number }> = ({ t }) => (
     <Sello t={t} t0={111.2} t1={113.9} text="NO WEDDING" x={1420} y={860} size={90} rot={10} />
     <Chip t={t} t0={114.1} t1={116.4} text="FRANZ · AGE 19" color={C.rojo} x={960} y={150} centro size={62} />
     <Lista t={t} t0={116.5} t1={118.9} />
-    <Chip t={t} t0={119.0} t1={120.8} text="HERE. TAKE IT." color={C.rojo} x={560} y={800} centro size={72} />
+    <Chip t={t} t0={119.0} t1={120.8} text="HERE. TAKE IT." color={C.rojo} x={1500} y={560} centro size={60} />
     {vig(t, 120.9, 124.0) && (
       <div style={{ position: "absolute", left: 360, top: 560, transform: `translate(-50%,-50%) rotate(-30deg) scale(${clamp((t - 120.9) / 0.3, 0, 1)})` }}>
         <svg width={120} height={560} viewBox="-60 -500 120 560" style={{ overflow: "visible" }}><path d="M -26 -60 L -26 -400 L 0 -480 L 26 -400 L 26 -60 Z" fill="#e8eef4" stroke="#2b2140" strokeWidth={8} /><rect x={-80} y={-70} width={160} height={24} rx={10} fill="#c98f2a" /><rect x={-14} y={-46} width={28} height={90} rx={8} fill="#4a2810" /></svg>

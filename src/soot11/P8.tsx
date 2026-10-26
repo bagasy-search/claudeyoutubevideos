@@ -196,7 +196,7 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
           <Persona x={ATRAS + 140} y={SUELO - 20} h={300} t={t} seed={790} ropa={MERCADER} gorro="capucha" capa="#1b2440" flip expr="miedo" habla={t > 798.7} bD={110} cD={120} manoD={<circle cx={0} cy={0} r={34} fill="#e2504a" opacity={0.7} />} inclina={-6} />
           <Svg><rect x={7020} y={SUELO - 240} width={72} height={230} fill="#ffd27a" opacity={clamp((t - 797.5) / 0.6, 0, 1) * 0.7} /></Svg>
           {t > 797.6 && <Franz x={6990} y={SUELO - 10} t={t} expr="neutro" mira={1} />}
-          <BurbujaM t={t} t0={800.4} t1={803.2} x={ATRAS + 260} y={SUELO - 470} text="please... don't tell anyone." size={42} />
+          <BurbujaM t={t} t0={800.4} t1={803.2} x={ATRAS + 110} y={SUELO - 470} text="please... don't tell anyone." size={42} />
         </>
       )}
       {/* ── Franz el médico: huesos, heridas, quemaduras, remedios */}
@@ -526,11 +526,11 @@ export const P8Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={869.6} t1={873.0} text="1634: NUREMBERG'S MOST RESPECTED CEMETERY" color={C.violeta} x={960} y={150} centro size={48} />
     <Titulo t={t} t0={875.45} t1={877.5} text="THE TOWN FOUND ROOM FOR HIM" y={220} size={90} color={C.oro} borde="#2b1c14" />
     <Titulo t={t} t0={877.65} t1={880.85} text="THE LONELIEST MAN IN TOWN?" y={220} size={100} color={C.crema} />
-    <Sello t={t} t0={880.9} t1={881.95} text="ABSOLUTELY." x={1220} y={840} size={100} />
+    <Sello t={t} t0={880.9} t1={881.95} text="ABSOLUTELY." x={960} y={840} size={100} />
     <Recap t={t} />
     <Titulo t={t} t0={888.15} t1={891.9} text="BUT THE TOWN NEEDED HIM TWICE" y={200} size={90} color={C.ambar} borde="#2b0a14" />
     <Chip t={t} t0={896.4} t1={898.3} text="IT JUST NEVER WANTED TO BE SEEN WITH HIM" color={C.noche} x={960} y={150} centro size={52} />
-    {vig(t, 898.6, 906.8) && <div style={{ position: "absolute", inset: 0, opacity: clamp((t - 898.6) / 0.3, 0, 1) * clamp((906.8 - t) / 0.3, 0, 1) }}><Franz x={interp(t, [898.6, 906.8], [330, 470])} y={1500} h={1000} t={t} viejoF camina={0.6} expr={t > 901 ? "feliz" : "neutro"} habla={vig(t, 899.2, 902.6)} bD={vig(t, 903, 906) ? 120 + Math.sin(t * 6) * 15 : 15} cD={20} /></div>}
+    {vig(t, 898.6, 906.8) && <div style={{ position: "absolute", inset: 0, opacity: clamp((t - 898.6) / 0.3, 0, 1) * clamp((906.8 - t) / 0.3, 0, 1) }}><Franz x={interp(t, [898.6, 906.8], [380, 640])} y={1010} h={660} t={t} viejoF camina={0.6} expr={t > 901 ? "feliz" : "neutro"} habla={vig(t, 899.2, 902.6)} bD={vig(t, 903, 906) ? 120 + Math.sin(t * 6) * 15 : 15} cD={20} /></div>}
     <Titulo t={t} t0={898.5} t1={902.8} text="THE MAN WHO KNEW EVERYBODY BEST" y={200} size={90} color={C.oro} borde="#2b1c14" />
     <Cta t={t} />
     <Titulo t={t} t0={907.0} t1={910.3} text="NEXT TIME: A SLEEPING VIKING CAMP" y={210} size={84} color={C.ambar} borde="#1a1440" />
