@@ -83,7 +83,7 @@ export const Cansa: React.FC<{ cl: Clave[]; x: number | ((f: number) => number);
   if (f < desde || (hasta !== undefined && f > hasta)) return null;
   const p = enPantalla(cl, f, fps, typeof x === "function" ? x(f) : x, typeof y === "function" ? y(f) : y);
   const z = cl.length ? cl[0].zoom : 1;
-  const s = Math.min(1, (f - desde) / 8) * Math.min(1.3, Math.max(0.85, z)) * Math.max(1.3, tam); // nunca chica (vara del director)
+  const s = (desde === 0 ? 1 : Math.min(1, (f - desde) / 8)) * Math.min(1.3, Math.max(0.85, z)) * Math.max(1.3, tam); // nunca chica (vara del director)
   return (
     <div style={{ position: "absolute", left: p.x, top: p.y, transform: `translate(-50%,-100%) scale(${s})`, transformOrigin: "50% 100%" }}>
       <CerebroSvg pct={valor(pct, f)} f={f} glitch={typeof glitch === "function" ? glitch(f) : glitch} />
