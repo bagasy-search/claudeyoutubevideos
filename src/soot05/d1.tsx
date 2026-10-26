@@ -12,7 +12,7 @@ const KX = 2430, VX = 2720; // carcelero y vos en la oficina
 
 // 52.2 «forget everything the movies taught you» · 54.96 prison was almost never the punishment
 cam(52.1, 2600, Y.baja - 300, 1.3, 1.0);
-act({ a: 50.5, b: 91.2, x: VX, y: Y.baja, h: 430, ropa: YO, seed: 1, flip: true, expr: [[0, "neutro"], [59.6, "miedo"], [62.6, "neutro"], [70.6, "triste"], [86.8, "miedo"]] });
+act({ a: 50.5, b: 91.2, x: VX, y: Y.baja, h: 430, ropa: YO, seed: 1, flip: true, expr: [[0, "neutro"], [59.6, "miedo"], [62.6, "neutro"], [70.6, "triste"], [86.8, "miedo"]], gesto: [[59.6, "encoge"], [62.6, "nada"], [70.6, "cuenta"], [76.7, "rasca"], [80.5, "nada"], [86.8, "encoge"]] });
 act({ a: 52, b: 81.2, x: KX, y: Y.baja, h: 450, ropa: CARCELERO, seed: 7, sobre: "gorro", expr: [[0, "orgullo"], [70.6, "feliz"]], habla: [[70.6, 71.6], [76.7, 80.4]], bD: 30, cD: 60 });
 o(52.8, "chip", { txt: "FORGET THE MOVIES", x: 960, y: 140, c: C.violeta, s: 62 });
 o(53.6, "ico", { ico: "ojo", x: 1500, y: 420, s: 0.9, txt: "X", t1: 55.4 });
@@ -61,15 +61,15 @@ s(90.0, "coin", -2); s(90.4, "coin", -4);
 // 91.4 «the meter starts running» → la factura, cargo por cargo
 o(92.9, "chip", { txt: "THE METER IS RUNNING", x: 820, y: 140, c: C.rojo, s: 60 });
 s(92.9, "roll", -4);
-act({ a: 91.2, b: 108.3, x: [VX - 40, VX], tw: [91.2, 92.3], y: Y.baja, h: 430, ropa: YO, seed: 1, flip: true, expr: [[0, "miedo"], [99, "triste"]] });
+act({ a: 91.2, b: 108.3, x: [VX - 40, VX], tw: [91.2, 92.3], y: Y.baja, h: 430, ropa: YO, seed: 1, flip: true, expr: [[0, "miedo"], [99, "triste"]], gesto: [[93, "cuenta"], [99, "encoge"]] });
 fee(95.08, 4, "ENTRY");
 w(95.1, "sello", { txt: "ADMITTED", x: VX - 60, y: Y.baja - 560, s: 40, t1: 96.4 });
 s(95.08, "stamp", -1);
 cam(95.8, 2650, Y.alta - 240, 1.35, 0.6);
 fee(96.5, 2, "BED");
-act({ a: 95.5, b: 100.6, x: 2360, y: Y.alta - 70, h: 330, ropa: PRESO(3), seed: 81, expr: "triste", rot: 90 });
-act({ a: 95.5, b: 100.6, x: 2420, y: Y.alta - 95, h: 330, ropa: PRESO(4), seed: 82, expr: "enojado", rot: 90 });
-act({ a: 95.5, b: 100.6, x: 2920, y: Y.alta - 75, h: 360, ropa: REY, seed: 83, expr: "dormido", rot: 90 });
+act({ a: 95.5, b: 100.6, x: 2300, y: Y.alta, h: 340, ropa: PRESO(3), seed: 81, expr: "orgullo", gesto: "cuenta" });
+act({ a: 95.5, b: 100.6, x: 2560, y: Y.alta, h: 340, ropa: PRESO(4), seed: 82, expr: "feliz", flip: true, manoD: "copa", bD: 70, cD: 60 });
+act({ a: 95.5, b: 100.6, x: 2920, y: Y.alta, h: 360, ropa: REY, seed: 83, expr: "orgullo", gesto: "saluda" });
 w(97.0, "chip", { txt: "SHARED", x: 2370, y: Y.alta - 360, c: C.violeta, s: 40, t1: 100.4 });
 w(98.3, "chip", { txt: "ALL YOURS", x: 2930, y: Y.alta - 360, c: C.oro, tinta: C.noche, s: 40, t1: 100.4 });
 fee(98.5, 3, "PRIVATE BED");
@@ -86,7 +86,7 @@ w(107.2, "chip", { txt: "1 WEEK OLD", x: 4200, y: Y.baja - 340, c: C.lima, tinta
 s(107.2, "drop", -4);
 // 108.3 los vecinos: garnish
 cam(108.2, 3500, Y.baja - 320, 1.05, 0.9);
-act({ a: 108.3, b: 130.2, x: 3200, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "miedo"], [113.8, "triste"], [116.6, "sorpresa"], [118.5, "miedo"], [121, "triste"], [123, "neutro"], [137.6, "feliz"], [139.7, "triste"], [142.2, "neutro"]], salta: [116.7] });
+act({ a: 108.3, b: 130.2, x: 3200, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "miedo"], [113.8, "triste"], [116.6, "sorpresa"], [118.5, "miedo"], [121, "triste"], [123, "neutro"], [137.6, "feliz"], [139.7, "triste"], [142.2, "neutro"]], salta: [116.7], gesto: [[113.8, "encoge"], [116.6, "nada"], [121, "rasca"], [123, "nada"]] });
 for (let i = 0; i < 5; i++)
   act({ a: 108.3, b: 122, x: [4500 + i * 110, 3420 + i * 150], tw: [108.4 + i * 0.25, 109.9 + i * 0.25], y: Y.baja + (i % 2) * 8, h: 390 + (i % 3) * 20, ropa: PRESO(i), seed: 90 + i, flip: true,
     expr: [[0, "neutro"], [112.8, "orgullo"], [114.6, "feliz"], [116.4, "enojado"], [118.5, "feliz"]], habla: [[110.1, 111.8]], manoD: i % 2 ? "jarra" : undefined, bD: i % 2 ? 60 : 8, cD: i % 2 ? 70 : 10, salta: [112.9 + i * 0.12, 114.5 + i * 0.1] });
@@ -111,7 +111,7 @@ for (let i = 0; i < 4; i++) s(128.6 + i * 0.3, "drop", -4);
 w(129.5, "chip", { txt: "THE LOAVES THAT CAME OUT WRONG", x: 3520, y: Y.baja - 560, c: C.ambar, tinta: C.noche, s: 36, t1: 130.5 });
 // 130.16 la reja a la calle, la caja en un palo, los que pasan
 cam(130.3, 4480, Y.baja - 280, 1.3, 0.9);
-act({ a: 130.2, b: 142.2, x: 4250, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "triste"], [136.4, "feliz"], [139.7, "triste"]], bD: 45, cD: 30 });
+act({ a: 130.2, b: 142.2, x: 4250, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "triste"], [136.4, "feliz"], [139.7, "triste"]], bD: 45, cD: 30, gesto: [[130.4, "saluda"], [134.0, "nada"], [139.7, "encoge"]] });
 act({ a: 130.2, b: 142.2, x: [5000, 4640], tw: [134.2, 135.6], y: Y.calle, h: 430, ropa: PRESO(7), seed: 101, flip: true, expr: [[0, "neutro"], [135.8, "feliz"]], bD: 60, cD: 40 });
 for (let i = 0; i < 3; i++) w(135.9 + i * 0.25, "ico", { ico: "moneda", x: 4660, y: Y.baja - 520, anim: "cae", s: 0.3, t1: 136.6 + i * 0.25 });
 s(136.0, "coin", -2); s(136.5, "coin", -4);
@@ -146,7 +146,7 @@ s(153.0, "whoosh_big", -3); s(153.2, "slam", 0); s(153.25, "boom", -5);
 o(153.25, "grande", { txt: "TRAP #2", y: 420, s: 170, c: C.oro, t1: 155.4 });
 o(154.4, "chip", { txt: "THE CHAINS", x: 960, y: 620, c: C.rojo, s: 84, t1: 155.4 });
 const CX = 3850; // vos en el cuarto de las cadenas
-act({ a: 153.0, b: 186.4, x: CX, y: Y.alta, h: 430, ropa: YO, seed: 1, expr: [[0, "neutro"], [156.3, "feliz"], [159.0, "sorpresa"], [163.4, "miedo"], [173.9, "feliz"], [179.2, "neutro"]], inclina: 0, salta: [163.5] });
+act({ a: 153.0, b: 186.4, x: CX, y: Y.alta, h: 430, ropa: YO, seed: 1, expr: [[0, "neutro"], [156.3, "feliz"], [159.0, "sorpresa"], [163.4, "miedo"], [173.9, "feliz"], [179.2, "neutro"]], inclina: 0, salta: [163.5], gesto: [[163.5, "tira"], [173.9, "cuenta"], [179.2, "nada"]] });
 w(156.3, "chip", { txt: "FREE?", x: CX + 200, y: Y.alta - 520, c: C.lima, tinta: C.noche, s: 44, t1: 158.7 });
 o(158.95, "sello", { txt: "NOT FREE", x: 960, y: 250, s: 120 });
 s(158.95, "fail", -2);
@@ -185,7 +185,7 @@ o(187.5, "chip", { txt: "RICH: LIGHT SHACKLES", x: 960, y: 140, c: C.oro, tinta:
 o(189.2, "chip", { txt: "...OR NONE AT ALL", x: 960, y: 140, c: C.oro, tinta: C.noche, s: 58, t1: 190.3 });
 cam(190.3, 3600, Y.baja - 280, 1.15, 0.6);
 act({ a: 190.3, b: 193.9, x: [3200, 4100], tw: [190.6, 192.6], y: Y.baja, h: 430, ropa: YO, seed: 1, expr: "triste", camina: 1.0, inclina: 12 });
-act({ a: 193.9, b: 210.9, x: [4100, 3300], tw: [193.9, 196.5], y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "triste"], [210.1, "feliz"]], camina: 1.0, inclina: 12 });
+act({ a: 193.9, b: 210.9, x: [4100, 3300], tw: [193.9, 196.5], y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "triste"], [210.1, "feliz"]], camina: 1.0, inclina: 12, gesto: [[196.6, "encoge"], [210.1, "nada"]] });
 o(191.3, "cuenta", { de: 0, a: 20, dur: 0.5, x: 1500, y: 300, s: 220, c: C.oro, t1: 193.9 });
 o(191.7, "chip", { txt: "POUNDS OF IRON", x: 1500, y: 470, c: C.rojo, s: 54, t1: 193.9 });
 s(190.9, "stomp", -6); s(191.5, "stomp", -6); s(192.1, "stomp", -6); s(192.7, "metal", -6);
@@ -270,7 +270,7 @@ export const X1 = (t: number, _c: Pose): React.ReactNode => (
     {/* caja en un palo por la reja de Newgate */}
     {t >= 134.0 && t < 142.2 && (() => {
       const u = prog(t, 134.0, 134.8);
-      return <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}><line x1={4300} y1={Y.baja - 330} x2={4300 + 380 * u} y2={Y.baja - 360} stroke="#8a5a2a" strokeWidth={14} /><rect x={4250 + 380 * u} y={Y.baja - 450} width={110} height={80} rx={8} fill="#7a4520" stroke={C.oro} strokeWidth={6} /></svg>;
+      return <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}><line x1={4330} y1={Y.baja - 240} x2={4330 + 380 * u} y2={Y.baja - 280} stroke="#8a5a2a" strokeWidth={14} /><rect x={4280 + 380 * u} y={Y.baja - 370} width={110} height={80} rx={8} fill="#7a4520" stroke={C.oro} strokeWidth={6} /></svg>;
     })()}
     {/* el barril que entra rodando a la habitación del obispo, y la soga por la ventana */}
     {t >= 230.4 && t < 237 && (() => {

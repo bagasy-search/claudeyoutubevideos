@@ -70,12 +70,13 @@ o(26.2, "chip", { txt: "THE PART THAT SOUNDS LIKE A JOKE", x: 960, y: 200, c: C.
 // 27.9 «Even if the judge says you are innocent» — luz, vuelo al tribunal
 cam(27.75, 6290, SUELO - 520, 1.1, 1.0);
 s(27.7, "whoosh_big", -3);
-act({ a: 27.7, b: 52, x: 6700, y: Y.estrado, h: 400, ropa: JUEZ, seed: 31, sobre: "cofia", viejo: true, expr: [[0, "neutro"], [40.5, "miedo"]], habla: [[28.3, 29.3]], bD: 120, cD: 40, manoD: "mazo", rot: 0, flip: true });
+act({ a: 27.7, b: 52, x: 6700, y: Y.estrado, h: 400, ropa: JUEZ, seed: 31, sobre: "cofia", viejo: true, expr: [[0, "neutro"], [40.5, "miedo"]], habla: [[28.3, 29.3]], bD: 120, cD: 40, manoD: "mazo", rot: 0, flip: true, gesto: [[28.3, "golpea"], [29.4, "nada"]] });
 act({ a: 27.7, b: 30.1, x: 5880, y: Y.sala, h: 430, ropa: YO, seed: 1, expr: [[0, "miedo"], [29.2, "feliz"]], salta: [29.25] });
-o(29.16, "sello", { txt: "INNOCENT", c: "#2a9a4a", x: 560, y: 260, s: 120 });
+o(29.16, "sello", { txt: "INNOCENT", c: "#2a9a4a", x: 620, y: 230, s: 110, fijo: true });
 s(29.1, "wood_hit", 0);
 // 30.0 «you still cannot walk out» — corre a la puerta; el carcelero la tapa con la mano extendida
 act({ a: 30.1, b: 33.9, x: [5880, 5240], tw: [30.1, 31.2], y: Y.sala, h: 430, ropa: YO, seed: 1, expr: [[0, "feliz"], [31.3, "sorpresa"]], camina: 2.2 });
+cam(28.8, 6290, SUELO - 420, 1.45, 0.4); // empuje al estrado (OJO v3: chico chico en sala vacía)
 cam(30.2, 5200, SUELO - 330, 1.25, 1.0);
 act({ a: 30.8, b: 34, x: 5000, y: Y.sala, h: 450, ropa: CARCELERO, seed: 7, sobre: "gorro", expr: "orgullo", bD: 100, cD: 0, aparece: 30.8, habla: [[31.7, 33]] });
 s(30.8, "spring", -2);
@@ -118,7 +119,7 @@ export const X0 = (t: number, c: Pose): React.ReactNode => (
   <>
     {t < 22.4 && <Grilletes t={t} x={YX} y={Y.baja} h={430} t0={0.12} aX={YX - 260} aY={Y.baja - 120} />}
     {t >= 22.4 && t < 28 && <Grilletes t={t} x={YX + 20} y={Y.baja} h={430} aX={YX - 260} aY={Y.baja - 120} />}
-    {t > 8.4 && t < 12.5 && <Recibo t={t} t0={8.75} x={YX - 195} y={Y.baja - 300} largo={290} w={210} items={[["CHAINS", "4d"], ["LOCKING", "1d"], ["KEY", "1d"]]} resalta={t > 9.7 ? 0 : -1} />}
+    {t > 8.4 && t < 9.65 && <Recibo t={t} t0={8.75} x={YX - 195} y={Y.baja - 300} largo={290} w={210} items={[["CHAINS", "4d"], ["LOCKING", "1d"], ["KEY", "1d"]]} resalta={t > 9.7 ? 0 : -1} />}
     <Pines t={t} t0={46.1} t1={48.8} z={c.z} P={[[L.oficina.x, SUELO - 700], [L.torre.x, SUELO - 2150], [L.tribunal.x, SUELO - 1450], [L.botella.x, SUELO + 600], [L.comun.x, SUELO - 1600], [L.fleet.x, SUELO - 1250], [L.puerta.x, SUELO - 1600]]} />
   </>
 );

@@ -53,7 +53,7 @@ export const Antorcha: React.FC<{ x: number; y: number; t: number; s?: number; s
   return (
     <SVG x={x - 200 * s} y={y - 260 * s} w={400 * s} h={400 * s}>
       <g transform={`scale(${s})`}>
-        <circle cx={200} cy={150} r={170 * f} fill="url(#glowT)" />
+        <circle cx={200} cy={150} r={260 * f} fill="url(#glowT)" />
         <rect x={192} y={170} width={16} height={90} rx={4} fill="#5a3418" />
         <rect x={182} y={160} width={36} height={22} rx={6} fill="#8a5a2a" />
         <path d={`M 200 ${168 - 70 * f} Q ${230 + Math.sin(t * 9 + seed) * 6} 140 214 166 Q 200 176 186 166 Q ${170 - Math.sin(t * 8 + seed) * 6} 140 200 ${168 - 70 * f} Z`} fill="#ff9a2e" />
@@ -66,11 +66,16 @@ export const Antorcha: React.FC<{ x: number; y: number; t: number; s?: number; s
 const Defs: React.FC = () => (
   <svg width={0} height={0} style={{ position: "absolute" }}>
     <defs>
-      <radialGradient id="glowT"><stop offset="0" stopColor="#ffb347" stopOpacity={0.55} /><stop offset="1" stopColor="#ffb347" stopOpacity={0} /></radialGradient>
+      <radialGradient id="glowT"><stop offset="0" stopColor="#ffb347" stopOpacity={0.7} /><stop offset="1" stopColor="#ffb347" stopOpacity={0} /></radialGradient>
       <radialGradient id="glowV"><stop offset="0" stopColor="#ffe9a0" stopOpacity={0.6} /><stop offset="1" stopColor="#ffe9a0" stopOpacity={0} /></radialGradient>
       <linearGradient id="tierra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#5a3428" /><stop offset="1" stopColor="#24121c" /></linearGradient>
       <linearGradient id="interior" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#3a2c66" /><stop offset="1" stopColor="#24183f" /></linearGradient>
-      <linearGradient id="sotano" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#2a1f45" /><stop offset="1" stopColor="#140d24" /></linearGradient>
+      {/* paletas por lugar (OJO v3: «un solo set violeta reusado ~40 veces») */}
+      <linearGradient id="calido" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#8a5232" /><stop offset="1" stopColor="#4a2618" /></linearGradient>
+      <linearGradient id="piedra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#465468" /><stop offset="1" stopColor="#1f2836" /></linearGradient>
+      <linearGradient id="hierro" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#3c3f4a" /><stop offset="1" stopColor="#1a1b22" /></linearGradient>
+      <linearGradient id="corte" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#7a2232" /><stop offset="1" stopColor="#3e0f1c" /></linearGradient>
+      <linearGradient id="sotano" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#1f2a24" /><stop offset="1" stopColor="#0c120f" /></linearGradient>
       <linearGradient id="rio" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#2ec4d6" /><stop offset="1" stopColor="#1a5a8a" /></linearGradient>
       <linearGradient id="dorado" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#ffe08a" /><stop offset="1" stopColor="#e8a23a" /></linearGradient>
       <linearGradient id="techo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#e8344a" /><stop offset="1" stopColor="#9e1f35" /></linearGradient>
@@ -215,13 +220,13 @@ const Newgate: React.FC<{ t: number }> = ({ t }) => (
       <rect x={-40} y={100} width={2560} height={40} fill="#2a2248" />
     </SVG>
     {/* 1er piso: lado de los que pagan (cálido) */}
-    <Sala x={2040} y={SUELO - 1260} w={1260} h={600} seed={31} luz={0.7} piso="#6b3a1f" />
+    <Sala x={2040} y={SUELO - 1260} w={1260} h={600} seed={31} luz={0.9} fondo="url(#calido)" piso="#6b3a1f" />
     {/* 1er piso derecha: depósito de grilletes y la tabla de precios de hierro */}
-    <Sala x={3320} y={SUELO - 1260} w={1120} h={600} seed={32} piso="#3b2a2a" />
+    <Sala x={3320} y={SUELO - 1260} w={1120} h={600} seed={32} fondo="url(#hierro)" piso="#3b2a2a" />
     {/* planta baja: oficina del carcelero */}
-    <Sala x={2040} y={SUELO - 620} w={860} h={620} seed={33} luz={0.5} piso="#5a3418" />
+    <Sala x={2040} y={SUELO - 620} w={860} h={620} seed={33} luz={0.8} fondo="url(#calido)" piso="#5a3418" />
     {/* planta baja: sala común */}
-    <Sala x={2920} y={SUELO - 620} w={1520} h={620} seed={34} piso="#3b2a2a" />
+    <Sala x={2920} y={SUELO - 620} w={1520} h={620} seed={34} fondo="url(#piedra)" piso="#3b2a2a" />
     {/* tabla de honorarios del carcelero */}
     <SVG x={2090} y={SUELO - 560} w={330} h={380}>
       <rect x={0} y={0} width={330} height={380} rx={10} fill="#f6e3b4" stroke="#8a5a2a" strokeWidth={10} />
@@ -298,7 +303,7 @@ const Tribunal: React.FC<{ t: number }> = ({ t }) => (
       <rect x={0} y={200} width={2200} height={1100} fill="#c9a36a" />
       <path d="M -60 220 L 1100 -120 L 2260 220 Z" fill="#7a3a2a" />
       <rect x={-60} y={200} width={2320} height={36} fill="#5a2a1f" />
-      <rect x={60} y={280} width={2080} height={1020} fill="#4a2c5a" />
+      <rect x={60} y={280} width={2080} height={1020} fill="url(#corte)" />
       {[0, 1, 2, 3, 4].map((i) => <rect key={i} x={160 + i * 420} y={330} width={150} height={260} rx={75} fill="#ffcf7a" opacity={0.75} />)}
       {/* estrado de los jueces */}
       <rect x={1500} y={760} width={560} height={260} fill="#7a3a1a" />

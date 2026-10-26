@@ -26,7 +26,7 @@ o(257.2, "chip", { txt: "THE ROYAL JUDGES", x: 960, y: 140, c: C.rojo, s: 64, t1
 w(258.2, "chip", { txt: "NOT HERE", x: 6680, y: SUELO - 860, c: C.violeta, s: 44, t1: 260.0 });
 for (let i = 0; i < 3; i++)
   act({ a: 259.9, b: 266.3, x: [6400 + i * 160, 7700 + i * 160], tw: [260.2 + i * 0.15, 264.0 + i * 0.15], y: Y.calle, h: 400, ropa: JUEZ, seed: 151 + i, sobre: "cofia", viejo: true, expr: "orgullo", camina: 1.1, manoD: "libro", bD: 40, cD: 40, aparece: 259.9 + i * 0.15 });
-cam(259.9, 6650, SUELO - 300, 1.1, 0.5);
+cam(259.45, 6650, SUELO - 300, 1.1, 0.45);
 cam(260.6, 7850, SUELO - 300, 1.1, 3.4);
 o(260.6, "chip", { txt: "ON CIRCUIT", x: 960, y: 140, c: C.oro, tinta: C.noche, s: 64, t1: 264.0 });
 o(261.6, "linea", { x: 300, y: 900, x2: 1620, y2: 900, c: C.oro, t1: 264.0 });
@@ -92,9 +92,9 @@ s(302.7, "unroll", -2);
 o(306.9, "sello", { txt: "HARD AND STRICT", x: 960, y: 300, s: 110 });
 s(306.9, "stamp", 0);
 // 308.56 la celda: piso pelado, casi nada para comer
-cam(308.5, 2720, Y.sotano - 260, 1.7, 0.8);
+cam(308.5, 2720, Y.sotano - 240, 2.2, 0.8);
 s(308.4, "whoosh_big", -3);
-act({ a: 308.5, b: 321.2, x: 2700, y: Y.sotano, h: 400, ropa: YO, seed: 1, expr: [[0, "triste"], [314.6, "feliz"], [317.3, "triste"]], inclina: 8 });
+act({ a: 308.5, b: 321.2, x: 2700, y: Y.sotano, h: 400, ropa: YO, seed: 1, expr: [[0, "triste"], [314.6, "feliz"], [317.3, "triste"]], gesto: [[308.5, "encoge"], [314.6, "rasca"], [317.3, "encoge"]], salta: [314.65] });
 w(311.5, "chip", { txt: "BARE FLOOR", x: 2700, y: Y.sotano + 30, c: C.violeta, s: 34, t1: 314.2 });
 wi(314.6, "pan", 2930, Y.sotano - 300, { s: 0.6, tag: "MONDAY", t1: 317.2 });
 wi(316.0, "agua", 2480, Y.sotano - 300, { s: 0.6, tag: "TUESDAY", t1: 317.2 });
@@ -160,11 +160,15 @@ o(364.5, "chip", { txt: "SAFEST", x: 1400, y: 880, c: C.lima, tinta: C.noche, s:
 s(362.5, "pop", -3); s(363.3, "pop", -3); s(364.5, "pop", -3);
 // 365.6 la palabra se resbaló hacia abajo
 cam(366.2, 13110, SUELO - 300, 0.8, 1.2);
-cam(368.4, 13110, SUELO + 140, 1.1, 1.0);
+cam(368.4, 13110, SUELO + 100, 0.85, 1.0);
 o(366.6, "chip", { txt: "OVER TIME...", x: 960, y: 140, c: C.violeta, s: 60, t1: 369.0 });
 w(368.4, "grande", { txt: "DUNGEON", x: 13110, y: SUELO - 160, s: 120, c: C.rojo, anim: "cae", t1: 373.8 });
 s(368.4, "fall", -3); s(369.1, "slam", -2);
 w(370.2, "chip", { txt: "THE DARK ROOM UNDERNEATH", x: 13110, y: SUELO + 380, c: C.violeta, s: 36, t1: 373.8 });
+// el chico adentro del cuarto oscuro de abajo (OJO v3: 370 sin personajes)
+act({ a: 366.2, b: 373.9, x: 13100, y: SUELO + 300, h: 235, ropa: YO, seed: 1, expr: [[0, "triste"], [368.45, "miedo"]], salta: [368.45], gesto: [[369.2, "encoge"]] });
+// asomado a la boca de la botella antes de que lo bajen (OJO v3: 380 sin personajes)
+act({ a: 374.0, b: 389.0, x: 19100, y: SUELO - 20, h: 360, ropa: YO, seed: 1, expr: [[0, "sorpresa"], [380.4, "miedo"]], miraY: 1, salta: [377.95], gesto: [[383.3, "encoge"]] });
 o(371.4, "chip", { txt: "FOR PEOPLE YOU NEVER WANT TO SEE AGAIN", x: 960, y: 920, c: C.rojo, s: 48, t1: 373.8 });
 // 374.0 St Andrews, Escocia
 cam(374.0, 18950, SUELO - 650, 0.42, 2.0);
@@ -196,7 +200,7 @@ s(393.0, "swish", -3);
 w(395.7, "ico", { ico: "pan", x: 19100, y: SUELO + 100, x2: 19150, y2: Y.botella - 60, anim: "vuela", dur: 1.0, s: 0.5, t1: 397.4 });
 s(395.7, "fall", -6); s(396.7, "drop", -4);
 w(397.5, "ico", { ico: "balde", x: 19300, y: Y.botella - 90, s: 0.5, t1: 401 });
-o(397.5, "chip", { txt: "EVERYTHING ELSE STAYED", x: 960, y: 160, c: C.lima, tinta: C.noche, s: 58, t1: 399.8 });
+o(397.5, "chip", { txt: "EVERYTHING ELSE STAYED", x: 960, y: 160, c: C.lima, tinta: C.noche, s: 58, t1: 401.2 });
 s(397.6, "drone", -6);
 // 399.96 está dentro de la Sea Tower · 1546, el cardenal Beaton
 cam(399.9, 19100, SUELO - 700, 0.45, 1.3);

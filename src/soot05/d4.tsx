@@ -99,7 +99,7 @@ o(815.4, "ico", { ico: "balde", x: 560, y: 420, s: 0.9, txt: "X", tag: "NOT A PI
 s(815.4, "fail", -6);
 cam(818.5, 10850, SUELO - 640, 0.75, 1.6);
 s(818.4, "whoosh_big", -2);
-o(818.7, "grande", { txt: "A PALACE", y: 300, s: 140, c: C.oro, t1: 821.0 });
+o(818.7, "chip", { txt: "A PALACE", x: 960, y: 260, s: 96, c: C.oro, tinta: C.noche, hx: 1, fijo: true, t1: 821.0 });
 s(818.7, "fanfare", -6); s(818.8, "glitter", -3);
 o(819.8, "chip", { txt: "ON THE THAMES", x: 960, y: 460, c: C.violeta, s: 52, t1: 822.2 });
 act({ a: 818.5, b: 837.6, x: 10850, y: Y.savoy, h: 460, ropa: JUAN, seed: 351, sobre: "coronaFR", expr: [[0, "feliz"], [827.2, "sorpresa"], [831, "orgullo"]], manoD: "copa", bD: 70, cD: 70, habla: [[822.5, 823.4]] });
@@ -113,16 +113,16 @@ o(824.8, "ico", { ico: "copa", x: 1160, y: 820, s: 0.6, tag: "FINE WINE", t1: 82
 o(825.6, "ico", { ico: "oveja", x: 1460, y: 820, s: 0.6, tag: "HUNTING", t1: 826.9 });
 for (let i = 0; i < 5; i++) s(822.5 + i * 0.78, "pop", -3);
 // 827.13 el rescate: 3 millones de coronas de oro
-o(827.2, "cuenta", { de: 0, a: 3000000, dur: 1.4, x: 960, y: 300, s: 170, c: C.oro, t1: 834.0 });
-o(828.4, "chip", { txt: "GOLD CROWNS · THE RANSOM", x: 960, y: 450, c: C.rojo, s: 54, t1: 834.0 });
+o(829.1, "chip", { txt: "THE RANSOM", x: 960, y: 140, c: C.rojo, s: 60, t1: 834.0 });
 for (let i = 0; i < 8; i++) s(827.2 + i * 0.17, "coin", -6);
 o(830.6, "chip", { txt: "SEVERAL × FRANCE'S YEARLY INCOME", x: 960, y: 900, c: C.violeta, s: 50, t1: 834.0 });
 o(834.1, "chip", { txt: "FRANCE COULD NEVER FINISH PAYING", x: 960, y: 140, c: C.rojo, s: 56, t1: 837.6 });
 s(834.1, "unroll", -2); s(835.0, "paper", -4);
 // 837.69 lo sueltan bajo palabra… y vuelve solo
 cam(837.6, 10850, SUELO - 520, 0.6, 1.0);
-act({ a: 837.6, b: 846.1, x: [10850, 12000], tw: [838.0, 840.4], y: Y.savoy, h: 460, ropa: JUAN, seed: 351, sobre: "coronaFR", expr: "feliz", camina: 1.2 });
-act({ a: 840.4, b: 846.1, x: [12000, 10850], tw: [840.6, 843.2], y: Y.savoy, h: 460, ropa: JUAN, seed: 351, sobre: "coronaFR", expr: [[0, "neutro"], [843.2, "feliz"]], camina: 1.2, flip: true });
+act({ a: 837.6, b: 840.4, x: [10850, 12000], tw: [838.0, 840.4], y: Y.savoy, h: 460, ropa: JUAN, seed: 351, sobre: "coronaFR", expr: "feliz", camina: 1.2, gesto: "saluda" });
+for (let i = 0; i < 2; i++) act({ a: 837.6, b: 846.1, x: [10550 - i * 220, 11700 - i * 220], tw: [838.2, 840.4], y: Y.savoy, h: 380, ropa: SIRV(i + 3), seed: 365 + i, expr: "feliz", camina: 1.2, manoD: i ? "jarra" : "pan", bD: 70, cD: 60 });
+act({ a: 840.4, b: 846.1, x: [12000, 11200], tw: [840.6, 843.2], y: Y.savoy, h: 460, ropa: JUAN, seed: 351, sobre: "coronaFR", expr: [[0, "feliz"], [843.2, "orgullo"]], camina: 1.2, flip: true, gesto: [[840.4, "saluda"], [843.2, "nada"]], manoD: "copa" });
 o(838.0, "chip", { txt: "RELEASED ON A PROMISE", x: 960, y: 140, c: C.teal, tinta: C.noche, s: 58, t1: 840.4 });
 o(840.6, "chip", { txt: "...AND CAME BACK BY CHOICE", x: 960, y: 140, c: C.oro, tinta: C.noche, s: 58, t1: 843.6 });
 s(840.6, "spring", -4);
@@ -139,8 +139,6 @@ o(848.3, "chip", { txt: "RICHARD THE LIONHEART", x: 960, y: 140, c: C.rojo, s: 6
 o(850.4, "ico", { ico: "cruz", x: 400, y: 520, s: 0.8, tag: "HOME FROM THE CRUSADES", t1: 853.0 });
 o(853.2, "chip", { txt: "HELD IN A GERMAN CASTLE", x: 960, y: 140, c: C.violeta, s: 60, t1: 857.6 });
 s(850.4, "pop", -3); s(853.2, "metal", -4);
-o(857.8, "cuenta", { de: 0, a: 150000, dur: 1.2, x: 960, y: 320, s: 200, c: C.oro, t1: 864.0 });
-o(858.9, "chip", { txt: "MARKS", x: 960, y: 480, c: C.rojo, s: 56, t1: 864.0 });
 for (let i = 0; i < 6; i++) s(857.8 + i * 0.2, "coin", -6);
 o(861.0, "chip", { txt: "1/4 OF EVERYTHING PEOPLE OWNED", x: 960, y: 900, c: C.violeta, s: 52, t1: 868.0 });
 o(864.2, "ico", { ico: "copa", x: 560, y: 560, s: 0.9, tag: "CHURCH GOLD", c: C.oro, t1: 868.0 });
@@ -148,13 +146,13 @@ o(865.0, "ico", { ico: "cruz", x: 1360, y: 560, s: 0.9, tag: "SILVER PLATE", c: 
 s(864.2, "metal", -4); s(865.0, "metal", -4);
 for (let i = 0; i < 12; i++) w(861.2 + i * 0.25, "ico", { ico: "moneda", x: 12500 + (i % 6) * 360, y: SUELO - 700, x2: 13400, y2: SUELO - 1500, anim: "vuela", dur: 0.9, s: 0.3, t1: 862.2 + i * 0.25 });
 s(861.2, "coin_rain", -4);
-o(868.3, "sello", { txt: "A KINGDOM PAID ONE PRISONER'S BILL", x: 960, y: 300, s: 64 });
+o(868.3, "sello", { txt: "A KINGDOM PAID ONE PRISONER'S BILL", x: 960, y: 900, s: 60, rot: 0, fijo: true });
 s(868.3, "stamp", 0);
 // 870.99 los presos comunes no juntaban ni 4 peniques
 cam(870.9, 4420, Y.baja - 300, 1.3, 1.6);
 s(870.8, "whoosh_big", -2);
-act({ a: 870.9, b: 877.0, x: 4250, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: "triste", bD: 100, cD: 10 });
-o(871.2, "chip", { txt: "ORDINARY PRISONERS:", x: 960, y: 140, c: C.violeta, s: 58, t1: 874.2 });
+act({ a: 870.9, b: 877.0, x: 4250, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: "triste", bD: 100, cD: 10, gesto: [[872.4, "cuenta"], [873.0, "encoge"]] });
+o(872.45, "chip", { txt: "ORDINARY PRISONERS:", x: 960, y: 140, c: C.violeta, s: 58, t1: 874.2 });
 o(872.4, "cuenta", { de: 0, a: 4, dur: 0.5, x: 1450, y: 330, s: 200, c: C.rojo, suf: "d", t1: 874.2 });
 o(873.0, "ico", { ico: "x", x: 1450, y: 330, s: 1.4, t1: 874.2 });
 s(873.0, "fail", -4);
@@ -181,13 +179,13 @@ o(889.4, "ico", { ico: "mazo", x: 560, y: 520, s: 0.9, txt: "X", tag: "NOT BUILT
 o(891.6, "ico", { ico: "balanza", x: 1360, y: 520, s: 1.1, tag: "BUILT TO SORT BY MONEY", c: C.oro, t1: 894.7 });
 s(889.4, "fail", -6); s(891.6, "ding", -2);
 cam(894.8, 3820, Y.pozo - 330, 1.0, 1.4);
-act({ a: 894.8, b: 900.8, x: 3820, y: Y.pozo, h: 400, ropa: YO, seed: 1, expr: [[0, "triste"], [898.4, "miedo"]], miraY: -1, bI: 150, bD: 150, cI: 20, cD: 20, salta: [898.45] });
-o(894.9, "chip", { txt: "AT THE BOTTOM OF THE PILE:", x: 960, y: 140, c: C.violeta, s: 58, t1: 900.7 });
-o(895.6, "chip", { txt: "THE JAIL", x: 480, y: 280, c: C.rojo, s: 52, t1: 900.7 });
-o(896.3, "chip", { txt: "THE FEVER", x: 960, y: 280, c: C.lima, tinta: C.noche, s: 52, t1: 900.7 });
-o(897.0, "chip", { txt: "THE DEBT", x: 1440, y: 280, c: C.oro, tinta: C.noche, s: 52, t1: 900.7 });
+act({ a: 894.8, b: 900.8, x: 3820, y: Y.pozo, h: 400, ropa: YO, seed: 1, expr: [[0, "triste"], [898.4, "miedo"]], miraY: -1, bI: 150, bD: 150, cI: 20, cD: 20, salta: [898.45], gesto: [[894.8, "tira"], [898.4, "nada"]] });
+o(894.9, "chip", { txt: "AT THE BOTTOM OF THE PILE:", x: 960, y: 140, hx: 1, fijo: true, c: C.violeta, s: 58, t1: 900.7 });
+o(895.6, "chip", { txt: "THE JAIL", x: 480, y: 860, hx: 1, fijo: true, c: C.rojo, s: 52, t1: 900.7 });
+o(896.3, "chip", { txt: "THE FEVER", x: 960, y: 860, hx: 1, fijo: true, c: C.lima, tinta: C.noche, s: 52, t1: 900.7 });
+o(897.0, "chip", { txt: "THE DEBT", x: 1440, y: 860, hx: 1, fijo: true, c: C.oro, tinta: C.noche, s: 52, t1: 900.7 });
 s(895.6, "pop", -3); s(896.3, "pop", -3); s(897.0, "pop", -3);
-o(898.4, "grande", { txt: "WORSE THAN DEATH", y: 520, s: 130, c: C.rojo, t1: 900.7 });
+o(898.4, "grande", { txt: "WORSE THAN DEATH", y: 470, s: 130, c: C.rojo, fijo: true, t1: 900.7 });
 s(898.4, "slam", -1);
 // 900.89 la muerte no te mandaba factura
 cam(900.8, 2600, Y.baja - 300, 1.2, 1.0);
@@ -214,6 +212,10 @@ o(913.0, "chip", { txt: "WHICH TRAP GOT YOU FIRST?", x: 960, y: 140, c: C.rojo, 
 o(914.0, "ico", { ico: "campana", x: 1560, y: 640, s: 0.8, anim: "gira", tag: "SUBSCRIBE", c: C.rojo, t1: 917.6 });
 o(914.6, "chip", { txt: "TELL ME IN THE COMMENTS", x: 960, y: 900, c: C.oro, tinta: C.noche, s: 56, t1: 917.6 });
 s(914.6, "pop", -3);
+
+// placas de dato (golpe.tsx): entrada con golpe
+for (const t of [70.5, 76.7, 190.3, 271.85, 299.1, 336.5, 462.15, 517.0, 552.45, 639.95, 690.3, 827.15, 857.8, 871.0]) { s(t, "whoosh_big", -3); s(t + 0.06, "boom", -6); }
+s(827.4, "coin_rain", -2); s(858.0, "coin_rain", -4); s(871.3, "fail", -4);
 
 export const X4 = (t: number, c: Pose): React.ReactNode => (
   <>

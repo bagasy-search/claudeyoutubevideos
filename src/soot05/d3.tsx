@@ -20,7 +20,7 @@ o(475.6, "ico", { ico: "soga", x: 1400, y: 520, s: 0.9, txt: "X", tag: "ANY ROPE
 s(473.9, "fail", -6); s(474.6, "fail", -6); s(475.6, "fail", -6);
 // 477.47 una noche cualquiera, desde adentro
 const VN = 3500;
-act({ a: 469.7, b: 552.3, x: VN, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "neutro"], [482.2, "miedo"], [489.4, "sorpresa"], [492.9, "miedo"], [499, "triste"], [520.2, "miedo"], [524, "triste"], [527, "dormido"], [531, "miedo"]], ronchas: [521.5, 526] });
+act({ a: 469.7, b: 552.3, x: VN, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "neutro"], [482.2, "miedo"], [489.4, "sorpresa"], [492.9, "miedo"], [499, "triste"], [520.2, "miedo"], [524, "triste"], [527, "dormido"], [531, "miedo"]], ronchas: [521.5, 526], gesto: [[489.4, "tose"], [492.9, "encoge"], [499, "tose"], [506.8, "rasca"], [511, "encoge"], [520.2, "tose"], [528, "rasca"], [538.5, "nada"]] });
 cam(477.4, VN, Y.baja - 260, 1.4, 1.0);
 o(478.2, "chip", { txt: "ONE ORDINARY NIGHT", x: 960, y: 140, c: C.violeta, s: 62, t1: 481.9 });
 act({ a: 477.4, b: 484.2, x: [VN - 330, 2930], tw: [482.0, 483.0], y: Y.baja, h: 450, ropa: CARCELERO, seed: 7, sobre: "gorro", expr: "orgullo", camina: 1.2, manoD: "llave", bD: 60, cD: 60 });
@@ -82,7 +82,7 @@ act({ a: 538.5, b: 552.3, x: 2430, y: Y.baja, h: 450, ropa: CARCELERO, seed: 7, 
 s(545.6, "fall", -3); s(545.9, "punch", -4);
 o(544.0, "chip", { txt: "THE KEEPER HIMSELF", x: 960, y: 140, c: C.rojo, s: 62, t1: 548.0 });
 o(546.2, "chip", { txt: "+ DOZENS OF PRISONERS", x: 960, y: 900, c: C.violeta, s: 56, t1: 548.0 });
-o(548.1, "grande", { txt: "KILLED BY HIS OWN JAIL", x: 1000, y: 120, s: 64, c: C.rojo, fijo: true, t1: 550.4 });
+o(548.1, "chip", { txt: "KILLED BY HIS OWN JAIL", x: 960, y: 130, s: 66, c: C.rojo, hx: 1, fijo: true, t1: 550.4 });
 s(548.1, "stamp", 0);
 o(550.4, "chip", { txt: "THE MOMENT I PROMISED YOU", x: 960, y: 140, c: C.oro, tinta: C.noche, s: 60, t1: 552.3 });
 s(550.4, "riser", -6);
@@ -124,6 +124,7 @@ o(583.1, "oscuro", { t1: 590.0, a: 0.55 });
 s(583.1, "slam", 0); s(583.2, "boom", -2);
 // 585.11 jail → court → home
 cam(585.0, 5500, SUELO - 400, 0.72, 1.2);
+cam(589.9, 5900, SUELO - 430, 0.95, 0.8); // reencuadre: juez adentro y multitud más grande (OJO v3)
 for (let i = 0; i < 8; i++) w(585.3 + i * 0.25, "ico", { ico: "piojo", x: 5900, y: SUELO - 300, x2: 4500 - i * 260, y2: SUELO - 520 - (i % 3) * 120, anim: "vuela", dur: 1.2, s: 0.35, t1: 590.0 });
 o(585.6, "chip", { txt: "JAIL → COURT", x: 600, y: 140, c: C.lima, tinta: C.noche, s: 56, t1: 590.0 });
 o(587.8, "chip", { txt: "COURT → HOME", x: 1320, y: 140, c: C.rojo, s: 56, t1: 590.0 });
@@ -174,14 +175,13 @@ o(628.5, "ico", { ico: "craneo", x: 960, y: 330, s: 0.8, txt: "X", tag: "NOT A M
 o(629.7, "ico", { ico: "pan", x: 1400, y: 330, s: 0.8, tag: "OWES A BAKER", c: C.ambar, t1: 631.4 });
 s(627.1, "pop", -3); s(628.5, "pop", -3); s(629.7, "pop", -3);
 o(631.6, "cuenta", { de: 1200, a: 1285, dur: 0.6, x: 1500, y: 300, s: 200, c: C.oro, t1: 636.0 });
-o(633.0, "chip", { txt: "A MERCHANT COULD JAIL YOU", x: 960, y: 140, c: C.rojo, s: 56, t1: 639.8 });
+o(633.0, "chip", { txt: "A MERCHANT COULD JAIL YOU", x: 960, y: 140, c: C.rojo, s: 56, t1: 639.4 });
 o(636.2, "sello", { txt: "UNTIL PAID IN FULL", x: 960, y: 820, s: 90 });
 s(636.2, "stamp", 0);
 // 639.93 el círculo vicioso
 cam(639.9, 3400, Y.baja - 300, 1.2, 1.6);
 s(639.8, "whoosh_big", -3);
-act({ a: 639.9, b: 656.0, x: 3400, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "triste"], [649.1, "miedo"], [654.2, "enojado"]], salta: [654.25, 654.95, 655.55], inclina: 8 });
-o(640.0, "chip", { txt: "SEE THE PROBLEM?", x: 960, y: 140, c: C.violeta, s: 60, t1: 641.1 });
+act({ a: 639.9, b: 656.0, x: 3400, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "triste"], [649.1, "miedo"], [654.2, "enojado"]], salta: [654.25, 654.95, 655.55], inclina: 8, gesto: [[641.2, "cuenta"], [649.1, "encoge"], [654.2, "nada"]] });
 o(641.2, "chip", { txt: "1 · IN PRISON FOR DEBT", x: 960, y: 260, c: C.rojo, s: 48, t1: 649.0 });
 o(643.4, "chip", { txt: "2 · CAN'T EARN IN PRISON", x: 1440, y: 620, c: C.violeta, s: 48, t1: 649.0 });
 o(646.2, "chip", { txt: "3 · RENT EVERY NIGHT", x: 480, y: 620, c: C.ambar, tinta: C.noche, s: 48, t1: 649.0 });
@@ -206,7 +206,7 @@ o(656.6, "chip", { txt: "THE FLEET: THE BEGGING GRATE", x: 960, y: 140, c: C.vio
 act({ a: 656.0, b: 675.6, x: 8560, y: Y.fleetB, h: 420, ropa: YO, seed: 1, flip: true, expr: [[0, "triste"], [667.7, "neutro"], [669.7, "triste"]], habla: [[667.7, 669.6]], bD: 100, cD: 10 });
 w(666.0, "ico", { ico: "bolsa", x: 8300, y: Y.fleetB - 330, s: 0.65, anim: "gira", t1: 675.6 });
 for (let i = 0; i < 3; i++)
-  act({ a: 659.3, b: 668.0, x: [7760 - i * 130, 8320 - i * 200], tw: [659.4 + i * 0.6, 662.0 + i * 0.6], y: Y.calle, h: 400, ropa: PRESO(i + 11), seed: 290 + i, expr: [[0, "neutro"], [664, "triste"]], camina: 1.0, flip: false });
+  act({ a: 659.3, b: 668.0, x: [7350 - i * 130, 8320 - i * 200], tw: [659.4 + i * 0.6, 662.4 + i * 0.6], y: Y.calle, h: 400, ropa: PRESO(i + 11), seed: 290 + i, expr: [[0, "neutro"], [664, "triste"]], camina: 1.0, flip: false });
 o(660.0, "chip", { txt: "DEBTORS TOOK TURNS", x: 960, y: 140, c: C.ambar, tinta: C.noche, s: 58, t1: 665.0 });
 o(667.75, "grande", { txt: "PRAY REMEMBER", y: 330, s: 110, c: C.oro, t1: 669.6 });
 o(668.4, "grande", { txt: "THE POOR PRISONERS!", y: 470, s: 100, c: C.oro, t1: 669.6 });

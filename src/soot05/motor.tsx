@@ -50,6 +50,22 @@ export type Act = {
   h?: number; expr?: Expr | [number, Expr][]; habla?: boolean | [number, number][]; flip?: boolean; camina?: number;
   bI?: number; bD?: number; cI?: number; cD?: number; mira?: number; miraY?: number; salta?: number[]; viejo?: boolean; aparece?: number;
   rot?: number | [number, number]; ronchas?: number | [number, number]; sobre?: Gorro; manoD?: IcoK; manoI?: IcoK; sombra?: string; ladea?: number; inclina?: number;
+  gesto?: Gesto | [number, Gesto][]; // acción continua del cuerpo (OJO v3: «el chico no actúa»)
+};
+export type Gesto = "nada" | "rasca" | "cuenta" | "tira" | "encoge" | "tose" | "saluda" | "golpea";
+// brazos/torso animados por gesto (0 = colgando; sube con el ángulo del hombro)
+const GESTO = (g: Gesto, t: number) => {
+  const w = (f: number, ph = 0) => Math.sin(t * f + ph);
+  switch (g) {
+    case "nada": return {} as { bD?: number; cD?: number; bI?: number; cI?: number; ladea?: number; inclina?: number };
+    case "rasca": return { bD: 150 + 12 * w(14), cD: 120 + 25 * w(14), bI: 20, cI: 30, ladea: 10, inclina: 4 };
+    case "cuenta": return { bD: 70 + 6 * w(9), cD: 80 + 20 * w(9), bI: 60, cI: 90, inclina: 8 + 3 * w(4.5), ladea: 6 };
+    case "tira": return { bD: 80, cD: 10 + 10 * w(11), bI: 80, cI: 10 + 10 * w(11, 1), inclina: -14 + 5 * w(5.5) };
+    case "encoge": return { bD: 35, cD: 135, bI: 35, cI: 135, inclina: 16 + 2 * w(9), ladea: -6 };
+    case "tose": { const k = Math.pow(Math.max(0, w(6)), 6); return { bD: 60 + 30 * k, cD: 120, bI: 15, cI: 20, inclina: 4 + 20 * k, ladea: 4 }; }
+    case "saluda": return { bD: 165, cD: 25 + 30 * w(9), bI: 10, cI: 10, ladea: 6 * w(4.5) };
+    case "golpea": { const k = Math.max(0, w(7)); return { bD: 120 - 70 * k, cD: 40, bI: 15, cI: 20, inclina: 6 * k }; }
+  }
 };
 export const YO_TUNICA = "#b39a76";
 export type Gorro = "corona" | "mitra" | "cofia" | "gorro" | "sombrero" | "capelo" | "barba" | "coronaFR" | "pelado" | "capYO";
@@ -83,10 +99,12 @@ export const Actores: React.FC<{ t: number; A: Act[]; x0: number; x1: number }> 
       const rot = p.rot === undefined ? 0 : typeof p.rot === "number" ? p.rot : lerpT(t, p.tw, p.rot);
       const ron = p.ronchas === undefined ? 0 : typeof p.ronchas === "number" ? p.ronchas : prog(t, p.ronchas[0], p.ronchas[1]);
       const flip = p.flip ?? (typeof p.x !== "number" ? p.x[1] < p.x[0] : false);
+      const gs = Array.isArray(p.gesto) ? p.gesto.filter(([tt]) => t >= tt).pop()?.[1] : p.gesto;
+      const G = gs ? GESTO(gs, t) : undefined;
       const el = (
         <Persona key={i} x={x} y={y} h={p.h ?? 420} t={t} seed={p.seed ?? i + 1} ropa={p.ropa ?? CIVIL(i)} expr={ex} habla={habla}
-          camina={mov ? p.camina ?? 1.7 : 0} flip={flip} bI={p.bI} bD={p.bD} cI={p.cI} cD={p.cD} mira={p.mira} miraY={p.miraY} salta={salta}
-          viejo={p.viejo} aparece={p.aparece} ronchas={ron} sobre={p.sobre ? GORRO[p.sobre] : p.ropa?.tunica === YO_TUNICA ? GORRO.capYO : undefined} manoD={mano(p.manoD)} manoI={mano(p.manoI)} sombra={p.sombra} ladea={p.ladea} inclina={p.inclina} />
+          camina={mov ? p.camina ?? 1.7 : 0} flip={flip} bI={G?.bI ?? p.bI} bD={G?.bD ?? p.bD} cI={G?.cI ?? p.cI} cD={G?.cD ?? p.cD} mira={p.mira} miraY={p.miraY} salta={salta}
+          viejo={p.viejo} aparece={p.aparece} ronchas={ron} sobre={p.sobre ? GORRO[p.sobre] : p.ropa?.tunica === YO_TUNICA ? GORRO.capYO : undefined} manoD={mano(p.manoD)} manoI={mano(p.manoI)} sombra={p.sombra} ladea={G?.ladea ?? p.ladea} inclina={G?.inclina ?? p.inclina} />
       );
       return rot ? <div key={i} style={{ position: "absolute", left: 0, top: 0, width: 1, height: 1, transformOrigin: `${x}px ${y}px`, transform: `rotate(${rot}deg)` }}>{el}</div> : el;
     })}
@@ -152,7 +170,7 @@ const Cuenta: React.FC<{ t: number; e: Ev }> = ({ t, e }) => {
   const v = Math.round((e.de ?? 0) + ((e.a ?? 0) - (e.de ?? 0)) * prog(t, e.t, e.t + (e.dur ?? 0.8)));
   const size = e.s ?? 200;
   const out = e.t1 !== undefined ? interpolate(t, [e.t1, e.t1 + 0.25], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1;
-  return <div style={{ position: "absolute", left: e.x ?? 960, top: e.y ?? 540, transform: `translate(-50%,-50%) scale(${ent(t, e.t) * out})`, fontFamily, fontWeight: 700, fontSize: size, color: e.c ?? "#fff", WebkitTextStroke: `${size * 0.08}px #2a1530`, paintOrder: "stroke fill", whiteSpace: "nowrap", textShadow: `0 ${size * 0.06}px 0 #2a1530` }}>{e.pre}{anio(e) ? String(v) : v.toLocaleString("en-US")}{e.suf}</div>;
+  return <div style={{ position: "absolute", left: e.x ?? 960, top: e.y ?? 540, transform: `translate(-50%,-50%) scale(${ent(t, e.t) * out})`, fontFamily, fontWeight: 700, fontSize: size, color: e.c ?? "#fff", WebkitTextStroke: `${size * 0.08}px #2a1530`, paintOrder: "stroke fill", whiteSpace: "nowrap", textShadow: `0 ${size * 0.06}px 0 #2a1530` }}>{e.pre}{anio(e) ? String(v) : v.toLocaleString("en-US")}{v === 1 && e.suf?.endsWith("S") ? e.suf.slice(0, -1) : e.suf}</div>;
 };
 
 const DUR: Partial<Record<Ev["k"], number>> = { chip: 2.6, grande: 2.4, ico: 2.6, sello: 2.2, cuenta: 2.8, emote: 1.6, globo: 2.6, flash: 0.35 };
