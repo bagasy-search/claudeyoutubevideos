@@ -366,14 +366,16 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
           const tira = t < 102.2;
           return <Persona x={260 + 800 * u + 40} y={700} h={300} t={t} seed={241} ropa={VIK(2)} casco="vikingo" barba={barbaDe(2)} expr="feliz" flip camina={tira ? 1.8 : 0} inclina={tira ? 14 : 0} bD={t > 102.4 && t < 103.2 ? 160 : tira ? 120 : 70} cD={tira ? 40 : 10} bI={tira ? 110 : 30} cI={tira ? 40 : 10} />;
         })()}
-        <Cuenta t={t} t0={102.4} de={0} a={50} dur={1.2} y={175} size={200} prefijo="" sufijo="+" />
-        <Ch t={t} t0={103.0} text="HECTARES" color={C.rojo} x={960} y={330} centro size={58} />
+        <Cuenta t={t} t0={102.4} de={0} a={50} dur={1.2} x={900} y={175} size={200} prefijo="" sufijo="+" />
+        <Ch t={t} t0={103.0} text="HECTARES" color={C.rojo} x={1180} y={175} size={58} />
         {/* comparación: un pueblo inglés a la MISMA escala que el campamento, que se achica con BIGGER */}
-        {t > 104.3 && (() => {
-          const k = interpolate(t, [104.3, 104.6, 105.0, 105.7], [0.85, 1.0, 1.0, 0.35], { extrapolateRight: "clamp", easing: (u) => 1 - (1 - u) * (1 - u) });
-          const op = prog(t, 104.3, 104.5);
+        {t > 103.7 && (() => {
+          // entra desde la derecha a escala del campamento, se queda, y con BIGGER se achica y se va a la esquina
+          const k = interpolate(t, [103.7, 104.1, 105.0, 105.7], [0.8, 0.9, 0.9, 0.35], { extrapolateRight: "clamp", easing: (u) => 1 - (1 - u) * (1 - u) });
+          const ex = interpolate(t, [103.7, 104.1, 105.0, 105.7], [2300, 1420, 1420, 1690], { extrapolateRight: "clamp", easing: (u) => 1 - (1 - u) * (1 - u) });
+          const ey = interpolate(t, [105.0, 105.7], [1015, 950], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
           return (
-            <div style={{ position: "absolute", left: 1450, top: 960, opacity: op, transform: `translate(-50%,-100%) scale(${k})`, transformOrigin: "50% 100%" }}>
+            <div style={{ position: "absolute", left: ex, top: ey, transform: `translate(-50%,-100%) scale(${k})`, transformOrigin: "50% 100%" }}>
               <svg width={700} height={320} viewBox="0 0 700 320">
                 <rect x={6} y={26} width={688} height={288} rx={30} fill="#3a6a4a" stroke="#fff3d6" strokeWidth={10} strokeDasharray="30 16" />
                 {[[40, 0], [150, 1], [260, 2], [370, 0], [480, 1], [590, 2]].map(([x, i]) => <g key={x}><rect x={x} y={160 - i * 12} width={80} height={110 + i * 12} fill={["#e8b98a", "#f0c79a", "#d8a878"][i]} stroke="#2a1530" strokeWidth={6} /><path d={`M ${x - 12} ${160 - i * 12} L ${x + 40} ${110 - i * 12} L ${x + 92} ${160 - i * 12} Z`} fill="#b5452c" stroke="#2a1530" strokeWidth={6} /><rect x={x + 28} y={225} width={24} height={45} fill="#5e3a1e" /></g>)}
@@ -382,8 +384,8 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
             </div>
           );
         })()}
-        <Ch t={t} t0={104.4} t1={105.0} text="AN ENGLISH TOWN" color={C.violeta} x={1450} y={598} centro size={44} />
-        <Ch t={t} t0={105.7} text="AN ENGLISH TOWN" color={C.violeta} x={1450} y={1005} centro size={40} />
+        <Ch t={t} t0={104.1} t1={105.0} text="AN ENGLISH TOWN" color={C.violeta} x={1420} y={700} centro size={44} />
+        <Ch t={t} t0={105.7} text="AN ENGLISH TOWN" color={C.violeta} x={1690} y={995} centro size={36} />
         <Sello t={t} t0={105.0} text="BIGGER" x={760} y={880} size={90} color={C.ambar} rot={-6} />
       </Escena>
       {/* E021 · no era sólo un campamento: el detector, banderitas por todos lados y los hallazgos a la vitrina */}
@@ -488,7 +490,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
       {/* E025 · la única entrada: campo abierto, cuesta arriba, a oscuras (el chico sube jadeando) */}
       <Escena t={t} t0={130.32} t1={135.2} zoom={0} entra="barrido" golpes={[132.6, 133.6, 134.4]}>
         <Mundo t={t} cam={cam} luna={LUNA} yo={(() => {
-          const bx = interpolate(t, [130.4, 135.2], [3300, 2350]);
+          const bx = interpolate(t, [130.4, 134.6, 135.2], [3300, 2330, 2285], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
           const jadea = Math.sin(t * 13) * 6;
           return (
             <>
@@ -498,9 +500,23 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
             </>
           );
         })()}>
-          <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
-            <path d={`M 1700 ${gy(1700) - 40} Q 2600 560 3400 ${gy(3400) - 60}`} stroke={C.rojo} strokeWidth={26} fill="none" strokeDasharray="60 40" pathLength={1000} style={{ strokeDasharray: `${prog(t, 130.6, 132.4) * 1000} 1000` }} strokeLinecap="round" />
-          </svg>
+          {(() => {
+            // ruta a ras del suelo (detrás del chico, a la altura de los pies): de la orilla (3280) cuesta arriba hasta la loma (1800), con punta de flecha
+            const N = 60, xa = 3280, xb = 1800;
+            const P = Array.from({ length: N + 1 }, (_, k) => { const x = xa + (xb - xa) * (k / N); return [x, gy(x) + 8] as [number, number]; });
+            const u = prog(t, 130.6, 132.4);
+            const m = Math.max(1, Math.round(u * N));
+            const d = P.slice(0, m + 1).map(([x, y], k) => `${k ? "L" : "M"} ${x} ${y}`).join(" ");
+            const [hx, hy] = P[m], [px, py] = P[m - 1];
+            const ang = (Math.atan2(hy - py, hx - px) * 180) / Math.PI;
+            return (
+              <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
+                <path d={d} stroke="rgba(10,6,30,.5)" strokeWidth={30} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                <path d={d} stroke={C.rojo} strokeWidth={18} fill="none" strokeDasharray="50 30" strokeLinecap="round" strokeLinejoin="round" />
+                <g transform={`translate(${hx} ${hy}) rotate(${ang})`}><path d="M 34 0 L -22 -30 L -10 0 L -22 30 Z" fill={C.rojo} stroke="#12081e" strokeWidth={5} strokeLinejoin="round" /></g>
+              </svg>
+            );
+          })()}
         </Mundo>
         <AbsoluteFill style={{ background: `rgba(4,3,16,${prog(t, 134.2, 135.0) * 0.5})` }} />
         <Ch t={t} t0={130.5} text="THE ONLY WAY IN" color={C.rojo} x={120} y={140} size={64} />
@@ -692,7 +708,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
                   <AbsoluteFill style={{ background: "linear-gradient(180deg, #16123d, #3a2a7a 70%)" }} />
                   {laguna}
                   {[[620, 880, 0], [1060, 900, 1]].map(([x, y, i]) => {
-                    const ax = x + (1 - prog(t, 170.9, 172.6)) * (i ? 300 : -300);
+                    const ax = x + (1 - prog(t, 170.9, 172.6)) * (i ? 180 : -300);
                     return (
                       <div key={i} style={{ position: "absolute", left: 0, top: 0 }}>
                         {[-1, 0, 1].map((k) => <Persona key={k} x={ax + k * 110} y={y - 20} h={190} t={t} seed={270 + i * 3 + k} ropa={VIK(k + 2 + i)} casco="vikingo" barba={barbaDe(k + 2)} expr="enojado" flip={i === 1} bD={50 + Math.sin(t * 5 + k) * 40} cD={30} bI={50 + Math.sin(t * 5 + k) * 40} cI={30} />)}
@@ -704,7 +720,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
                     <path d={`M 1480 ${900 - 150 + hund * 60} L 1480 ${900} L 1510 ${900} L 1510 ${900 - 150 + hund * 60} L 1495 ${900 - 175 + hund * 60} Z`} fill="#a8794a" stroke="#2a1530" strokeWidth={6} />
                     {t > 172.6 && golpe > 0.9 && <path d={`M 1495 ${730 + hund * 60} m -40 -10 l -20 -10 m 60 0 l 20 -10 m -40 -10 l 0 -20`} stroke="#ffd36a" strokeWidth={6} strokeLinecap="round" />}
                   </svg>
-                  <Persona x={1640} y={930} h={340} t={t} seed={275} ropa={VIK(0)} casco="vikingo" barba={barbaDe(0)} expr="enojado" flip bD={60 + golpe * 110} cD={20} bI={40}
+                  <Persona x={1640} y={930} h={340} t={t} seed={275} ropa={VIK(0)} casco="vikingo" barba={barbaDe(0)} expr="enojado" flip bD={15 + golpe * 45} cD={20} bI={40}
                     manoD={<g transform="rotate(180)"><rect x={-8} y={-10} width={16} height={150} fill="#8a5a32" /><rect x={-36} y={130} width={72} height={48} rx={8} fill="#6e4a2a" stroke="#2a1530" strokeWidth={5} /></g>} />
                 </AbsoluteFill>
               )}
@@ -723,9 +739,10 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
             </>
           );
         })()}
-        <G t={t} t0={171.2} t1={174.4} text="841" x={960} y={160} size={120} color={C.ambar} />
-        <Ch t={t} t0={172.4} t1={174.55} text="DUBH LINN · “BLACK POOL”" color={C.violeta} x={760} y={300} centro size={48} />
-        {t > 172.4 && t < 174.55 && <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}><path d={`M 760 340 Q 780 ${560} 820 ${560 + 220 * prog(t, 172.6, 173.1)}`} stroke="#fff3d6" strokeWidth={8} fill="none" strokeDasharray="18 12" strokeLinecap="round" opacity={0.85} /></svg>}
+        <G t={t} t0={171.0} t1={174.4} text="841" x={960} y={150} size={170} color={C.ambar} />
+        <Ch t={t} t0={172.4} t1={174.55} text="DUBH LINN · “BLACK POOL”" color={C.violeta} x={760} y={410} centro size={48} />
+        {/* la «laguna negra» se marca con un contorno que late (sin líneas que crucen a los remeros) */}
+        {t > 172.4 && t < 174.55 && <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible", opacity: prog(t, 172.4, 172.7) }} width={10} height={10}><ellipse cx={900} cy={890} rx={575 + 10 * Math.sin(t * 8)} ry={102 + 4 * Math.sin(t * 8)} fill="none" stroke="#fff3d6" strokeWidth={8} strokeDasharray="26 16" strokeDashoffset={-t * 80} opacity={0.9} /></svg>}
         <Ch t={t} t0={174.6} t1={177.4} text="A TRADING TOWN" color={C.teal} tinta={C.noche} x={960} y={150} centro size={60} />
         <G t={t} t0={177.6} text="DUBLIN" y={230} size={200} color={C.crema} />
       </Escena>

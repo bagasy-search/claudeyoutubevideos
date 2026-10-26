@@ -11,7 +11,8 @@ import { Perro, Caballo, Drakkar, Esqueleto, Tienda } from "./vik";
 // de Gokstad con sus 6 perros, Gunnar y su perro Sam (la saga de Njal), y vuelta al mundo: docenas de perros, un ladrido son diez.
 export const CAM3: Key[] = [
   [295.06, 3480, 880, 1.8], [297.31, 3720, 760, 1.5], [299.0, 3900, 700, 2.1], [303.25, 3980, 760, 1.6],
-  [305.0, 4200, 780, 2.0], [307.33, 4380, 800, 3.0],
+  // 305,1: el chico y el perro en el mismo cuadro; GRRR = CORTE SECO (1 cuadro) al primer plano del perro, sin paneo que corte al chico
+  [305.1, 4100, 790, 1.9], [305.12, 4330, 830, 2.6], [307.33, 4370, 830, 3.0],
   [371.68, 4300, 700, 1.2], [373.18, 4900, 680, 0.9], [378.0, 5300, 680, 0.85], [381.6, 4800, 720, 1.3],
   [386.8, 4500, 760, 1.6], [388.5, 5200, 620, 0.55], [393.39, 5300, 640, 0.6],
 ];
@@ -201,7 +202,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
         <CartelIzq t={t} t0={295.1} t1={297.3} n={3} nombre="THE DOGS" x={540} />
         <Ch t={t} t0={297.5} t1={303.2} text="ACROSS THE DITCH ✓" color={C.lima} tinta={C.noche} x={120} y={150} size={58} />
         <Ch t={t} t0={299.4} t1={303.2} text="BREATHE THROUGH YOUR MOUTH" color={C.violeta} x={120} y={260} size={52} />
-        <G t={t} t0={303.4} t1={305.0} text="INSIDE THE LINE" y={220} size={120} color={C.crema} />
+        <G t={t} t0={303.4} t1={305.0} text="INSIDE THE LINE" x={1130} y={190} size={120} color={C.crema} />
         <G t={t} t0={305.2} text="GRRRR…" x={700} y={170} size={140} color={C.rojo} />
       </Escena>
       {/* 1 · la vida vikinga estaba llena de animales · los perros no eran mascotas: eran defensa */}
@@ -209,21 +210,21 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
         <AbsoluteFill style={{ background: "linear-gradient(180deg, #2a3a7a, #3a5a4a 72%)" }} />
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><path d="M 0 790 Q 960 760 1920 790 L 1920 1080 L 0 1080 Z" fill="#2f5a40" /></svg>
         {/* cada animal HACE algo: el caballo come, la oveja bala, la gallina picotea los granos que tira la vikinga, el perro ladra a la derecha */}
-        <Caballo x={370} y={640} s={0.7} t={t} t0={309.0} come={t > 310.0 && (t - 310.0) % 2 < 1.3} />
-        {(() => { const bala = t > 309.9 && (t - 309.9) % 1.6 < 0.7; return (
+        <Caballo x={370} y={640} s={0.7} t={t} t0={307.2} come={t > 308.2 && (t - 308.2) % 2 < 1.3} />
+        {(() => { const bala = t > 308.3 && (t - 308.3) % 1.6 < 0.7; return (
           <>
-            <Oveja x={720} y={720 - (bala ? 12 : 0)} s={1.1} t={t} t0={309.6} />
+            <Oveja x={720} y={720 - (bala ? 12 : 0)} s={1.1} t={t} t0={307.25} />
             {bala && <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><ellipse cx={848} cy={688} rx={9} ry={12} fill="#2a1530" /></svg>}
             {bala && [0, 1].map((i) => <svg key={i} style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><path d={`M ${860 + i * 24} ${640 - i * 8} Q ${878 + i * 24} 680 ${860 + i * 24} ${720 + i * 8}`} stroke="#fff" strokeWidth={8} fill="none" strokeLinecap="round" /></svg>)}
-            {bala && <div style={{ position: "absolute", left: 790, top: 520, transform: `scale(${0.8 + 0.2 * Math.min(1, ((t - 309.9) % 1.6) / 0.15)})`, fontFamily: "Fredoka", fontWeight: 700, fontSize: 56, color: "#fff", WebkitTextStroke: `7px ${C.noche}`, paintOrder: "stroke" }}>BAA!</div>}
+            {bala && <div style={{ position: "absolute", left: 790, top: 520, transform: `scale(${0.8 + 0.2 * Math.min(1, ((t - 308.3) % 1.6) / 0.15)})`, fontFamily: "Fredoka", fontWeight: 700, fontSize: 56, color: "#fff", WebkitTextStroke: `7px ${C.noche}`, paintOrder: "stroke" }}>BAA!</div>}
           </>
         ); })()}
         {/* la vikinga tira granos cada 1,4 s y la gallina los picotea */}
-        {t > 310.6 && [0, 1, 2].map((r) => { const tr = 310.6 + r * 1.4; return t > tr && Array.from({ length: 7 }, (_, i) => { const u = prog(t, tr + i * 0.04, tr + 0.5 + i * 0.04); return <circle key={r + "-" + i} cx={1200 - u * (150 - i * 18)} cy={600 + u * 210 - Math.sin(u * Math.PI) * 90} r={7} fill="#f2d27a" stroke="#2a1530" strokeWidth={2} />; }); })}
-        <Ave x={1020} y={700} s={1.0} t={t} t0={310.2} pica={t > 311.1 ? Math.max(0, Math.sin((t - 311.1) * 9)) : 0} />
-        <Persona x={1260} y={880} h={340} t={t} seed={77} ropa={VIK(3)} mujer expr="feliz" aparece={310.3} flip habla={t > 312.0}
-          bD={t > 310.4 ? 60 + Math.max(0, Math.sin(((t - 310.4) / 1.4) * Math.PI * 2)) * 80 : 40} cD={20} />
-        <Can x={1530} y={880} s={0.8} t={t} t0={310.8} modo={t > 311.6 ? "ladra" : "alerta"} />
+        {t > 308.3 && [0, 1, 2, 3, 4].map((r) => { const tr = 308.3 + r * 1.4; return t > tr && Array.from({ length: 7 }, (_, i) => { const u = prog(t, tr + i * 0.04, tr + 0.5 + i * 0.04); return <circle key={r + "-" + i} cx={1200 - u * (150 - i * 18)} cy={600 + u * 210 - Math.sin(u * Math.PI) * 90} r={7} fill="#f2d27a" stroke="#2a1530" strokeWidth={2} />; }); })}
+        <Ave x={1020} y={700} s={1.0} t={t} t0={307.3} pica={t > 308.8 ? Math.max(0, Math.sin((t - 308.8) * 9)) : 0} />
+        <Persona x={1260} y={880} h={340} t={t} seed={77} ropa={VIK(3)} mujer expr="feliz" aparece={307.2} flip habla={t > 312.0}
+          bD={t > 308.1 ? 60 + Math.max(0, Math.sin(((t - 308.1) / 1.4) * Math.PI * 2)) * 80 : 40} cD={20} />
+        <Can x={1530} y={880} s={0.8} t={t} t0={307.3} modo={t > 309.4 ? "ladra" : "alerta"} />
         <Ch t={t} t0={307.6} text="WE FORGET THIS:" color={C.violeta} x={120} y={150} size={58} />
         <Ch t={t} t0={308.4} text="FULL OF ANIMALS" color={C.ambar} tinta={C.noche} x={120} y={260} size={64} />
         <Sello t={t} t0={312.0} text="NOT PETS" x={1300} y={300} size={80} rot={-8} />
@@ -231,44 +232,54 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
       </Escena>
       {/* 2 · Gokstad, Noruega: el jefe enterrado en su barco con 12 caballos, 2 halcones, 2 pavos reales y 6 perros */}
       <Escena t={t} t0={314.68} t1={318.0} zoom={0} entra="zoom">
-        {/* zoom directo del mapa al túmulo de Gokstad (1→3 en 2 s, después se mete en el montículo) y empalma con el barco enterrado */}
-        <MapaN t={t} cam={[[314.68, 1150, 330, 1.0], [316.7, 1232, 150, 3.0], [318.0, 1232, 152, 11.0]]} desde="NORWAY" pulsa={[{ n: "GOKSTAD", t0: 315.3, color: C.ambar, label: "GOKSTAD", lado: "der" }]}>
-          {t > 316.4 && (() => { const g = lugarN("GOKSTAD"); const e = ent(t, 316.4); return (
-            <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
-              <g transform={`translate(${g.x} ${g.y + 8}) scale(${e})`}>
-                <path d="M -46 10 Q 0 -34 46 10 Z" fill="#5e4428" stroke="#2a1530" strokeWidth={1.4} />
-                <path d="M -46 10 Q 0 -34 46 10" fill="none" stroke="#4a8a3a" strokeWidth={4} />
-                {t > 317.0 && <path d="M -24 4 Q 0 12 24 4 L 28 -2 L 20 2 Q 0 6 -20 2 L -28 -2 Z" fill="#8a5a32" stroke="#2a1530" strokeWidth={0.8} opacity={prog(t, 317.0, 317.4)} />}
-              </g>
-            </svg>
-          ); })()}
-        </MapaN>
-        {/* al llegar al túmulo: cuatro vikingos bajan el cuerpo envuelto al barco con sogas, cabezas gachas */}
-        {t > 316.3 && (() => {
-          const e = prog(t, 316.3, 316.7);
-          const baja = prog(t, 316.6, 317.9);
-          const by = 640 + baja * 70; // el cuerpo baja hacia el barco
-          const P = [900, 1010, 1190, 1300];
+        {/* tiro 1 (314,7-316,4): el mapa vuela a Gokstad */}
+        {t < 316.4 && <MapaN t={t} cam={[[314.68, 1150, 330, 1.0], [316.4, 1232, 150, 2.6]]} desde="NORWAY" pulsa={[{ n: "GOKSTAD", t0: 315.3, color: C.ambar, label: "GOKSTAD", lado: "der" }]} />}
+        {/* tiro 2 (316,4-318,0): SET PROPIO del entierro · cielo violeta, colina con el barco enterrado de frente,
+            4 vikingos separados tiran de sogas visibles; el bulto cuelga por ENCIMA de las cabezas y baja al barco */}
+        {t >= 316.4 && (() => {
+          const baja = prog(t, 316.55, 317.85);
+          const bx = 960, by = 450 + baja * 175; // centro del bulto
+          const tira = Math.sin(t * 9) * 4; // tirón de las sogas
+          // [x pies, y pies, h, mira hacia el bulto, punto de agarre]
+          const V: [number, number, number, boolean][] = [[420, 790, 270, false], [700, 1000, 330, false], [1220, 1000, 330, true], [1500, 790, 270, true]];
+          const S = (h: number) => h / 560;
+          const mano = (x: number, y: number, h: number, flip: boolean) => [x + (flip ? -1 : 1) * 180 * S(h), y - 458 * S(h)];
           return (
             <>
+              <AbsoluteFill style={{ background: "linear-gradient(180deg, #2a1d5c 0%, #5a3a8a 55%, #8a5a8a 100%)" }} />
               <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
-                <path d={`M 0 ${1080 - e * 300} Q 960 ${1080 - e * 360} 1920 ${1080 - e * 300} L 1920 1080 L 0 1080 Z`} fill="#2f4a32" />
+                {Array.from({ length: 26 }, (_, k) => <circle key={k} cx={(k * 293) % 1920} cy={40 + (k * 97) % 320} r={2 + (k % 3)} fill="#fff4d6" opacity={0.5 + 0.4 * Math.sin(t * 3 + k)} />)}
+                <circle cx={1740} cy={140} r={56} fill="#fff4d6" opacity={0.9} />
+                {/* colina del túmulo */}
+                <path d="M 0 820 Q 300 600 960 560 Q 1620 600 1920 820 L 1920 1080 L 0 1080 Z" fill="#3e5a3a" />
+                <path d="M 0 820 Q 300 600 960 560 Q 1620 600 1920 820" fill="none" stroke="#5a8a4a" strokeWidth={14} />
+                {/* el foso abierto y el barco enterrado de frente (popa y proa altas) */}
+                <ellipse cx={960} cy={700} rx={440} ry={60} fill="#2a1a12" />
+                <path d="M 560 610 Q 600 720 960 730 Q 1320 720 1360 610 Q 1180 650 960 650 Q 740 650 560 610 Z" fill="#8a5a32" stroke="#2a1530" strokeWidth={8} />
+                {[0, 1, 2].map((k) => <path key={k} d={`M ${590 + k * 10} ${640 + k * 22} Q 960 ${690 + k * 22} ${1330 - k * 10} ${640 + k * 22}`} fill="none" stroke="#6a4224" strokeWidth={5} />)}
+                <path d="M 560 610 Q 520 540 560 480 Q 590 470 588 500 Q 560 540 590 612 Z" fill="#8a5a32" stroke="#2a1530" strokeWidth={7} />
+                <path d="M 1360 610 Q 1400 540 1360 480 Q 1330 470 1332 500 Q 1360 540 1330 612 Z" fill="#8a5a32" stroke="#2a1530" strokeWidth={7} />
+                {/* tierra amontonada al costado */}
+                <path d="M 240 840 Q 330 760 430 840 Z M 1490 840 Q 1590 760 1690 840 Z" fill="#5e4428" stroke="#2a1530" strokeWidth={5} />
               </svg>
-              {P.map((x, i) => (
-                <Persona key={i} x={x} y={1080 - e * 300 + 40 + (i % 2) * 8} h={200} t={t} seed={600 + i} ropa={VIK(i + 1)} casco="vikingo" barba={barbaDe(i + 1)} expr="triste" miraY={0.9} mira={i < 2 ? 0.6 : -0.6} flip={i >= 2} inclina={8 + baja * 6}
-                  bD={70 - baja * 20} cD={40} bI={60 - baja * 20} cI={40} aparece={316.3 + i * 0.06} />
+              {V.map(([x, y, h, f], i) => (
+                <Persona key={i} x={x} y={y} h={h} t={t} seed={600 + i} ropa={VIK(i + 1)} casco="vikingo" barba={barbaDe(i + 1)} expr="triste" miraY={0.9} mira={f ? -0.5 : 0.5} flip={f} inclina={-6 - baja * 4}
+                  bD={140 + tira * 0.5} cD={0} bI={-40} cI={-50} />
               ))}
-              {e > 0.6 && (
-                <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
-                  {P.map((x, i) => <line key={i} x1={x + (i < 2 ? 40 : -40)} y1={1080 - e * 300 - 60} x2={i < 2 ? 1040 : 1160} y2={by} stroke="#c9a46a" strokeWidth={5} />)}
-                  <rect x={1020} y={by - 22} width={160} height={44} rx={22} fill="#e8dcc4" stroke="#2a1530" strokeWidth={5} />
-                  {[1060, 1100, 1140].map((bx) => <line key={bx} x1={bx} y1={by - 22} x2={bx} y2={by + 22} stroke="#a89878" strokeWidth={5} />)}
-                </svg>
-              )}
+              <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
+                {/* sogas: de la mano de cada uno a los extremos del bulto */}
+                {V.map(([x, y, h, f], i) => { const [mx, my] = mano(x, y, h, f); const ex = bx + (f ? 80 : -80) * (i === 0 || i === 3 ? 1 : 0.6); return <path key={i} d={`M ${mx} ${my} Q ${(mx + ex) / 2} ${(my + by) / 2 + 22} ${ex} ${by - 10}`} fill="none" stroke="#d8b478" strokeWidth={7} strokeLinecap="round" />; })}
+                {/* el cuerpo envuelto, colgando */}
+                <g transform={`translate(${bx} ${by}) rotate(${Math.sin(t * 2.2) * 2})`}>
+                  <rect x={-110} y={-26} width={220} height={52} rx={26} fill="#e8dcc4" stroke="#2a1530" strokeWidth={6} />
+                  {[-60, -10, 40, 80].map((k) => <line key={k} x1={k} y1={-26} x2={k} y2={26} stroke="#a89878" strokeWidth={6} />)}
+                </g>
+              </svg>
             </>
           );
         })()}
-        {t > 317.6 && <AbsoluteFill style={{ background: "#1e1840", opacity: prog(t, 317.6, 318.0) }} />}
+        <Flash t={t} t0={316.4} dur={0.12} color="#fff4d6" />
+        {t > 317.7 && <AbsoluteFill style={{ background: "#1e1840", opacity: prog(t, 317.7, 318.0) }} />}
         <Ch t={t} t0={314.8} text="NORWAY" color={C.teal} tinta={C.noche} x={120} y={150} size={60} />
         <Ch t={t} t0={315.9} text="THE GOKSTAD SHIP BURIAL" color={C.ambar} tinta={C.noche} x={120} y={260} size={54} />
       </Escena>
@@ -497,7 +508,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
             <AbsoluteFill style={{ background: "linear-gradient(180deg, #0a0826, #241a5c 70%)" }} />
             <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><path d="M 0 820 Q 960 790 1920 820 L 1920 1080 L 0 1080 Z" fill="#1e3a3a" /></svg>
             {[0, 1, 2, 3, 4].map((i) => {
-              const x = 240 + i * 360, tl = 388.75 + i * 0.4;
+              const x = 240 + i * 360, tl = 388.75 + i * 0.3;
               const sale = prog(t, tl + 0.25, tl + 1.0);
               return (
                 <React.Fragment key={i}>
@@ -505,18 +516,21 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
                   <Tienda x={x} y={694} s={0.7} t={t} k={i} luz={t > tl} />
                   {t > tl + 0.25 && (() => {
                     // sale con el casco en la mano · se lo pone (brazo arriba) · agarra el hacha y la levanta gritando
-                    const tp = tl + 1.0, pone = t > tp && t < tp + 0.35, puesto = t >= tp + 0.35;
-                    const hacha = puesto ? Math.min(1, (t - tp - 0.35) / 0.3) : 0;
+                    // (el gesto de ponerse el casco le tapaba la cara: el casco aparece puesto con el salto)
+                    const tp = tl + 0.9, pone = false, puesto = t >= tp + 0.35;
+                    const hacha = puesto ? Math.min(1, (t - tp - 0.35) / 0.18) : 0;
                     const casco = <g transform="rotate(180)"><path d="M -40 10 Q -42 -38 0 -44 Q 42 -38 40 10 Z" fill="#9aa6b8" stroke="#2a1530" strokeWidth={5} /><path d="M -40 -8 L -64 -46 L -36 -24 Z M 40 -8 L 64 -46 L 36 -24 Z" fill="#f4ead2" stroke="#2a1530" strokeWidth={4} /></g>;
-                    const hachaN = <g><rect x={-9} y={-40} width={18} height={300} rx={8} fill="#8a5a32" stroke="#2a1530" strokeWidth={5} /><path d="M 8 190 Q 100 170 108 270 Q 60 250 8 262 Z" fill="#dfe6f2" stroke="#2a1530" strokeWidth={6} /></g>;
-                    return <Persona x={x + sale * 70 * (i % 2 || i === 4 ? -1 : 1)} y={900 + sale * 70} h={340} t={t} seed={500 + i} ropa={VIK(i)} barba={barbaDe(i)} casco={puesto ? "vikingo" : "no"} expr="enojado" aparece={tl + 0.25} camina={sale < 1 ? 1.1 : 0} flip={i % 2 === 1}
+                    const bAx = 40 + (92 + Math.sin(t * 8 + i) * 8) * hacha; // brazo afuera (~132°): la mano queda lejos de la cabeza
+                    // hacha contra-rotada: siempre VERTICAL, la hoja hacia adentro y por encima del casco
+                    const hachaN = <g transform={`rotate(${bAx})`}><rect x={-9} y={-300} width={18} height={330} rx={8} fill="#8a5a32" stroke="#2a1530" strokeWidth={5} /><path d="M -8 -296 Q -50 -318 -112 -330 Q -92 -255 -112 -180 Q -50 -190 -8 -214 Z" fill="#dfe6f2" stroke="#2a1530" strokeWidth={6} /><path d="M -100 -316 Q -82 -255 -100 -194" fill="none" stroke="#9aa6b8" strokeWidth={7} /></g>;
+                    return <Persona x={x} y={900 + sale * 70} h={340} t={t} seed={500 + i} ropa={VIK(i)} barba={barbaDe(i)} casco={puesto ? "vikingo" : "no"} expr="enojado" aparece={tl + 0.25} camina={sale < 1 ? 1.1 : 0} flip={i % 2 === 1}
                       habla={puesto} salta={puesto ? tp + 0.35 : undefined}
-                      bD={pone ? 175 : puesto ? 40 + hacha * 105 + Math.sin(t * 8 + i) * 10 * hacha : 40} cD={pone ? 60 : puesto ? 0 : 20} manoD={puesto ? hachaN : casco} />;
+                      bD={pone ? 175 : puesto ? bAx : 40} cD={pone ? 60 : puesto ? 0 : 20} manoD={puesto ? hachaN : casco} />;
                   })()}
                 </React.Fragment>
               );
             })}
-            <Cuenta t={t} t0={388.75} de={0} a={5} dur={1.7} x={1720} y={330} size={130} color={C.ambar} sufijo="/5" />
+            <Cuenta t={t} t0={388.75} de={0} a={5} dur={1.3} x={1720} y={330} size={130} color={C.ambar} sufijo="/5" />
             <Ch t={t} t0={388.8} text="TENTS AWAKE" color={C.ambar} tinta={C.noche} x={1720} y={440} centro size={40} />
           </>
         )}

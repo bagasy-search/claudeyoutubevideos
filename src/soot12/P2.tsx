@@ -231,7 +231,8 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
           const fase = ((t - 226.4) / 0.9) % 1;
           const dia = fase < 0.5;
           const a = Math.PI * (dia ? fase * 2 : (fase - 0.5) * 2);
-          const cx = 960 - Math.cos(a) * 880, cy = 660 - Math.sin(a) * 240;
+          // el sol/luna giran en un arco chico en la esquina derecha (a la derecha del fuerte): nunca detrás de cabezas ni títulos
+          const cx = 1740 - Math.cos(a) * 125, cy = 600 - Math.sin(a) * 170;
           return (
             <>
               <AbsoluteFill style={{ background: dia ? `rgba(120,170,230,${0.5 * Math.sin(a)})` : "transparent" }} />
@@ -262,18 +263,18 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
           const hits = Array.from({ length: 14 }, (_, j) => 226.2 + j * 0.36 + k * 0.09);
           const carga = k === 3;
           const ida = ((t - 225.6) * 0.5) % 1;
-          const xc = carga ? 1500 - Math.sin(ida * Math.PI) * 300 : px;
+          const xc = carga ? 1540 - Math.sin(ida * Math.PI) * 170 : px; // no pasa por delante del que clava en 1160 (la maza le cruzaba la cara)
           return <Persona key={k} x={xc} y={606} h={190} t={t} seed={440 + k} ropa={VIK(k + 2)} casco="vikingo" barba={barbaDe(k + 2)} expr={k % 2 ? "enojado" : "orgullo"} flip={carga ? ida < 0.5 : k >= 2} aparece={225.7 + k * 0.1}
             camina={carga ? 1.6 : 0} bD={carga ? 165 : golpe(t, hits, 50)} cD={30} bI={carga ? 165 : 20} cI={carga ? 30 : 20}
             manoD={carga ? <rect x={-70} y={-14} width={160} height={26} rx={12} fill="#8a5a32" stroke="#2a1530" strokeWidth={4} /> : <Maza a={-90} />} />;
         })}
-        <G t={t} t0={225.6} text="A FORT" y={200} size={170} color={C.crema} />
-        <Ch t={t} t0={227.0} t1={229.3} text="BUILT IN A FEW WEEKS" color={C.ambar} tinta={C.noche} x={960} y={350} centro size={54} />
+        <G t={t} t0={225.6} text="A FORT" y={128} size={140} color={C.crema} />
+        <Ch t={t} t0={227.0} t1={229.3} text="BUILT IN A FEW WEEKS" color={C.ambar} tinta={C.noche} x={960} y={335} centro size={54} />
         <Cuenta t={t} t0={226.4} de={1} a={21} dur={4.2} x={1640} y={250} size={100} color={C.ambar} prefijo="DAY " />
         {["THANET", "SHEPPEY", "READING", "TORKSEY"].map((n, i) => (
           <Ch key={n} t={t} t0={228.0 + i * 0.5} text={`${n} ✓`} color={C.teal} tinta={C.noche} x={330 + i * 420} y={985} centro size={42} />
         ))}
-        <Ch t={t} t0={229.4} text="BY MEN WHO'D DONE IT MANY TIMES" color={C.rojo} x={960} y={350} centro size={52} />
+        <Ch t={t} t0={229.4} text="BY MEN WHO'D DONE IT MANY TIMES" color={C.rojo} x={960} y={335} centro size={52} />
       </Escena>
       {/* 4 · cruzar la zanja de noche: barro a las rodillas, la pared resbala, el que sale queda recortado contra el cielo */}
       <Escena t={t} t0={231.09} t1={247.68} zoom={0} entra="corte" golpes={[233.5, 238.5, 242.0]}>

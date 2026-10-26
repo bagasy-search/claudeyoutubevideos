@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona } from "./persona";
-import { C, ent, prog, Escena, Particulas, Rayos, Zzz, Emote } from "./kit";
+import { C, ent, prog, Escena, Particulas, Rayos, Zzz, Emote, fontFamily } from "./kit";
 import { Mundo, camEn, Key, SAJON, VIK, barbaDe, gy } from "./mundo";
 import { G, Ch, Cartel, Cuenta, Sello, Flash, LanzaMano } from "./comun";
 import { Cita } from "./escenas";
@@ -29,7 +29,8 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
       <Escena t={t} t0={393.39} t1={408.89} zoom={0} entra="corte" golpes={[401.2]}>
         <Mundo t={t} cam={cam} luna={[1700, 150, 70]}>
           {t > 395.8 && <Persona x={xyo} y={gy(xyo) + 4} h={320} t={t} seed={3} ropa={SAJON} expr={t > 406.3 ? "sorpresa" : "miedo"} inclina={22 + prog(t, 405.4, 406.2) * 6} miraY={prog(t, 405.4, 406.2) * 0.8} mira={t > 405.4 ? 0.4 : 0} camina={t < 405.4 ? 0.5 : 0} bD={30} cD={20} bI={t > 405.6 ? 70 : 8} cI={t > 405.6 ? 110 : 10} manoD={<LanzaMano a={50} inclina={-14} largo={420} />} />}
-          {t > 406.3 && <Emote t={t} t0={406.3} tipo="preg" x={5250} y={680} s={0.6} />}
+          {/* «?» arriba a la derecha de la cabeza, nunca encima de la cara */}
+          {t > 406.3 && <Emote t={t} t0={406.3} tipo="preg" x={5357} y={597} s={0.55} />}
           {/* el viento en la cara */}
           {t > 398.4 && t < 405.4 && (
             <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
@@ -37,7 +38,9 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
             </svg>
           )}
           {/* ronquidos */}
-          {[4840, 5380, 5480, 5720].map((x) => <div key={x} style={{ position: "absolute", left: x, top: 720 }}><Zzz x={0} y={0} t={t} /></div>)}
+          {t < 405.4 && [4840, 5380, 5480, 5720].map((x) => <div key={x} style={{ position: "absolute", left: x, top: 720 }}><Zzz x={0} y={0} t={t} /></div>)}
+          {/* con la cámara encima: ZZZ chiquitas pegadas a las cabezas de los durmientes del suelo (no al caballo) */}
+          {t >= 405.4 && [4930, 5600, 5670].map((x, j) => <React.Fragment key={x}>{[0, 1, 2].map((i) => { const k = ((t * 0.7 + i / 3 + j * 0.27) % 1); return <div key={i} style={{ position: "absolute", left: x + k * 40, top: 812 - k * 36, fontFamily, fontWeight: 700, fontSize: 18 + k * 18, color: "#fff", opacity: Math.sin(k * Math.PI) }}>z</div>; })}</React.Fragment>)}
         </Mundo>
         <Cartel t={t} t0={393.4} t1={395.8} n={4} nombre="THE SLEEPERS" />
         <Ch t={t} t0={396.0} t1={401.0} text="LET'S SAY YOU'RE LUCKY" color={C.lima} tinta={C.noche} x={120} y={150} size={58} />

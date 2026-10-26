@@ -18,7 +18,7 @@ export const CAM0: Key[] = [
   [10.26, 1400, 470, 2.1], [14.66, 1420, 470, 2.5],
   [28.7, 2050, 560, 1.25], [31.26, 2700, 690, 1.35],
   [36.66, 4150, 740, 1.15], [38.0, 4250, 770, 1.55], [39.0, 4330, 780, 2.3],
-  [39.01, 1480, 470, 2.2], [40.94, 1500, 430, 2.7], [40.941, 1420, 500, 1.55], [41.25, 1420, 500, 1.55], [42.5, 5575, -260, 0.17], [49.14, 5575, -260, 0.168], [50.7, 5575, -260, 0.172], [51.56, 1300, 450, 0.9],
+  [39.01, 1480, 470, 2.2], [40.94, 1500, 430, 2.7], [40.941, 1420, 500, 1.55], [41.25, 1420, 500, 1.55], [42.5, 5575, -260, 0.17], [49.14, 5575, -260, 0.168], [50.7, 5575, -260, 0.172], [51.559, 5300, -230, 0.2], [51.56, 1300, 450, 0.9],
 ];
 export const camYo = { x: 1480, y: 0 };
 
@@ -285,7 +285,7 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
       </Escena>
       {/* 12 · el recorrido del ataque, de la loma al río: las 7 trampas, una por una, mientras caminás el camino */}
       <Escena t={t} t0={40.94} t1={51.56} zoom={0} entra="corte" golpes={[49.2]}>
-        <Mundo t={t} cam={cam} luna={[1720, 130, 64]} yo={<>{<YoHill t={t} expr="enojado" sube={60} dosManos hombro={interpolate(t, [40.94, 41.4, 42.1, 42.4], [0, 1, 1, 0], CL)} />}{pasto}</>} />
+        <Mundo t={t} cam={cam} luna={[1720, 130, 64]} yo={<>{t < 50.7 && <YoHill t={t} expr="enojado" sube={60} dosManos hombro={interpolate(t, [40.94, 41.4, 42.1, 42.4], [0, 1, 1, 0], CL)} />}{pasto}</>} />
         {t > 42.3 && t < 50.8 && (() => {
           // camino en pantalla: 7 paradas parejas de x=200 a x=1720 sobre el campo de abajo
           const N = 7, X0 = 290, X1 = 1630; // la Escena escala ×1,08: en pantalla el camino va de x≈160 a x≈1760
@@ -323,7 +323,20 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
         <Ch t={t} t0={44.8} t1={46.3} text="…TO THE GATE" color={C.teal} tinta={C.noche} x={1180} y={420} size={54} />
         <Ch t={t} t0={46.6} t1={48.9} text="EVERY WAY IT KILLS YOU" color={C.rojo} x={860} y={300} centro size={64} />
         <G t={t} t0={49.2} t1={50.75} text="7 TRAPS" x={520} y={230} size={170} color={C.ambar} />
-        <G t={t} t0={50.7} text="LET'S GO" y={900} size={130} color={C.crema} />
+        {/* LET'S GO: el barbudo y el chico en primer plano sobre la loma (h≈360), arrancan hacia el campamento del fondo */}
+        {t >= 50.7 && (() => {
+          const u = interpolate(t, [50.7, 52.2], [0, 1], CL);
+          const op = interpolate(t, [50.7, 50.82], [0, 1], CL);
+          return <AbsoluteFill style={{ opacity: op }}>
+            <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
+              <ellipse cx={560 + 200 * u} cy={1004} rx={110} ry={16} fill="rgba(5,8,20,.45)" />
+              <ellipse cx={780 + 200 * u} cy={1000} rx={95} ry={14} fill="rgba(5,8,20,.45)" />
+            </svg>
+            <Persona x={500 + 200 * u} y={1006} h={370} t={t} seed={9} ropa={SENOR} barba="#3a2418" expr="enojado" camina={1.6} mira={0.9} />
+            <Persona x={740 + 200 * u} y={1000} h={340} t={t} seed={3} ropa={SAJON} expr="enojado" camina={1.6} mira={0.9} manoD={<LanzaMano a={40} largo={420} />} />
+          </AbsoluteFill>;
+        })()}
+        <G t={t} t0={50.7} text="LET'S GO" x={1180} y={250} size={130} color={C.crema} />
       </Escena>
     </AbsoluteFill>
   );
