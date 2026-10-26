@@ -4,7 +4,7 @@ import { C, ent, prog, Chip, Emote, Particulas, Pergamino } from "./kit";
 import { Termometro } from "./kit3";
 import { Lapida } from "./kit2";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, Nieve, NINO, NINA, OBRERO, GenteFab, FX0 } from "./mundo";
-import { Gran, Cuenta, Sello, Flash, sacudon, Velo, Horror, Latigo, Lista } from "./capas";
+import { Gran, Cuenta, Sello, Flash, sacudon, Velo, Horror, Latigo, Lista, Globo } from "./capas";
 import { Pulmones, Oreja, Primer } from "./piezas";
 import { Persona } from "./persona";
 
@@ -15,8 +15,8 @@ import { Persona } from "./persona";
 export const D0 = 295.7, D1 = 392.9;
 
 const KD: K[] = [
-  [295.7, 3300, -1500, 0.32], [297.8, 1900, -430, 1.0], [301.8, 2300, -430, 1.15], [302.9, 2600, -460, 0.8], [308.5, 2600, -460, 0.75], [314.2, 2600, -480, 0.95], [322.6, 2300, -600, 0.5], [324.5, 2300, -400, 1.2], [327.2, 2300, -400, 1.3],
-  [327.21, 3600, -420, 1.0], [331.9, 3350, -420, 1.2], [333.1, 2400, -330, 1.0], [336.4, 1800, -330, 0.95],
+  [295.7, 3300, -1500, 0.32], [297.8, 1900, -430, 1.0], [301.8, 2300, -430, 1.15], [302.9, 2600, -460, 0.8], [308.5, 2600, -460, 0.75], [314.2, 2600, -480, 0.95], [322.6, 2300, -600, 0.5], [324.5, 2350, -400, 1.05], [327.2, 2450, -400, 1.1],
+  [327.21, 3600, -420, 1.0], [331.9, 3350, -420, 1.2], [333.1, 2400, -330, 1.0], [336.4, 2050, -380, 0.85],
   [336.41, 1900, -1450, 0.85], [340.7, 1900, -1450, 0.95], [343.1, 1720, -1330, 1.45], [346.3, 1720, -1330, 1.3], [349.8, 1900, -1450, 0.8], [364.3, 1900, -1450, 0.85],
   [364.31, 3300, -500, 0.6], [368.0, 3300, -500, 0.66], [371.4, 3000, -400, 1.2], [374.8, 3000, -400, 1.3],
   [374.81, -1700, -380, 1.35], [380.9, -1700, -380, 1.4],
@@ -141,11 +141,12 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       <Oreja t={t} t0={368.5} t1={371.3} x={960} y={560} s={1.1} sorda={prog(t, 369.6, 370.6)} />
       <Chip t={t} t0={369.4} t1={371.3} text="HEARING: LOST" color={C.rojo} x={960} y={150} centro size={74} />
       <Chip t={t} t0={371.5} t1={374.7} text="TALKING BY READING LIPS" color={C.violeta} x={960} y={150} centro size={70} />
-      <Oreja t={t} t0={375.3} t1={380.8} x={1660} y={360} s={0.42} sorda={1} />
-      <Chip t={t} t0={375.4} t1={380.8} text="DEAF" color={C.rojo} x={1660} y={560} centro size={60} />
+      <Oreja t={t} t0={374.9} t1={380.8} x={1660} y={360} s={0.42} sorda={1} />
+      <Globo t={t} t0={375.6} t1={380.6} x={1180} y={330} text="WHAT? SAY AGAIN?" size={46} w={420} cola="der" />
+      <Chip t={t} t0={375.0} t1={380.8} text="DEAF" color={C.rojo} x={1660} y={560} centro size={60} />
       <Chip t={t} t0={375.0} t1={380.8} text="STILL DOING IT IN THE 1900s" color={C.teal} tinta={C.noche} x={960} y={150} centro size={66} />
       <Chip t={t} t0={377.6} t1={380.8} text="ACROSS A CROWDED ROOM · LONG RETIRED" color={C.noche} x={960} y={950} centro size={56} />
-      <Primer t={t} t0={381.1} t1={386.4} lado="der" g={{ expr: "sorpresa", mira: -1, bI: 120, cI: 110 }} emo="preg" />
+      <Primer t={t} t0={381.1} t1={386.4} lado="der" x={1480} g={{ expr: "sorpresa", mira: -1, bI: 120, cI: 110 }} emo="preg" />
       <Lista t={t} t0={381.0} t1={389.6} x={110} y={170} titulo="ALL OF THAT…" size={74} previa items={[{ txt: "THE HEAT", t0: 383.0 }, { txt: "THE DUST", t0: 383.6 }, { txt: "THE NOISE", t0: 384.3 }, { txt: "14 HOURS", t0: 385.0 }]} />
       <Flash t={t} at={[386.5]} />
       <Sello t={t} t0={386.5} t1={389.6} text="PERFECTLY LEGAL" x={1250} y={540} size={110} color={C.lima} rot={-8} />

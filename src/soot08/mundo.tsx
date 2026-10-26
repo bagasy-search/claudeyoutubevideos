@@ -106,7 +106,7 @@ const ParedFab: React.FC<{ y0: number; y1: number; tono?: string; t: number }> =
 );
 export type EstadoFab = {
   mulaU?: (t: number) => number; corta?: number[]; calor?: number; polvo?: number; vaporVel?: number; luces?: number; muro?: boolean;
-  gente?: GenteFab[]; gente1?: GenteFab[]; gente2?: GenteFab[]; vallas?: number; detenida?: boolean;
+  gente?: GenteFab[]; gente1?: GenteFab[]; gente2?: GenteFab[]; vallas?: number; detenida?: boolean; cartel?: string;
 };
 export const mulaVaiven = (t: number, per = 4.4) => { const k = (t % per) / per; return k < 0.55 ? Easing.inOut(Easing.sin)(k / 0.55) : 1 - Easing.inOut(Easing.cubic)((k - 0.55) / 0.45); };
 export const FabricaAdentro: React.FC<{ t: number; e?: EstadoFab }> = ({ t, e = {} }) => {
@@ -136,7 +136,7 @@ export const FabricaAdentro: React.FC<{ t: number; e?: EstadoFab }> = ({ t, e = 
       <div style={{ position: "absolute", left: 3500, top: -2000, width: 1700, height: 1000, background: "linear-gradient(180deg, #c9a87e, #a8865c)" }} />
       <div style={{ position: "absolute", left: 3500, top: -2000, width: 30, height: 1000, background: V.madera2 }} />
       <div style={{ position: "absolute", left: 3900, top: -1820, width: 760, height: 520, background: "#fbf3dc", border: `10px double ${T}`, boxShadow: "10px 12px 0 rgba(20,8,40,.3)" }}>
-        <div style={{ textAlign: "center", fontFamily, fontWeight: 700, fontSize: 56, color: T, marginTop: 14, letterSpacing: 4 }}>FINES</div>
+        <div style={{ textAlign: "center", fontFamily, fontWeight: 700, fontSize: 56, color: T, marginTop: 14, letterSpacing: 4 }}>{e.cartel ?? "FINES"}</div>
         {Array.from({ length: 6 }, (_, i) => <div key={i} style={{ margin: "18px 40px 0", height: 16, borderRadius: 8, background: "#c9b48a", width: `${60 + ((i * 37) % 30)}%` }} />)}
       </div>
       <Mesa x={4400} y={-1250} w={560} />

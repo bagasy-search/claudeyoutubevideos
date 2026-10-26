@@ -17,7 +17,7 @@ export const F0 = 473.5, F1 = 567.7;
 const KF: K[] = [
   [473.5, 3300, -1500, 0.32], [475.8, 3500, -450, 0.8], [482.8, 3150, -420, 1.0], [488.0, 2750, -360, 1.3], [493.1, 2780, -380, 1.5], [494.3, 2950, -430, 1.3], [507.8, 2950, -430, 1.35], [512.8, 2950, -430, 1.4],
   [512.81, 5800, -2420, 1.15], [521.2, 5780, -2420, 1.2],
-  [521.21, -2600, -420, 0.7], [527.5, -200, -420, 0.62], [533.1, 2600, -420, 0.8],
+  [521.21, -2700, -330, 1.0], [527.5, -150, -330, 0.95], [533.1, 2450, -340, 1.0],
   [533.11, 3000, -420, 1.0], [563.5, 3300, -420, 1.05], [567.7, 3300, -700, 0.6],
 ];
 const seg = (t: number) => (t < 512.81 ? "piso0" : t < 521.21 ? "cisterna" : t < 533.11 ? "calle" : "blincoe");
@@ -129,7 +129,7 @@ export const PF: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={524.7} t1={528.0} text="ORPHANS · WORKHOUSE CHILDREN" color={C.noche} x={960} y={950} centro size={64} />
       <Chip t={t} t0={528.1} t1={530.4} text="HUNDREDS OF MILES AWAY" color={C.violeta} x={960} y={150} centro size={70} />
       <Sello t={t} t0={530.5} t1={533.0} text="BOUND UNTIL ADULTHOOD" x={960} y={340} size={100} />
-      {s === "blincoe" && <Velo t={t} t0={533.1} t1={567.4} op={0.62} />}
+      {s === "blincoe" && <Velo t={t} t0={533.1} t1={567.4} op={0.3} />}
       <Retrato t={t} t0={533.3} t1={543.8} x={430} y={440} g={{ seed: 88, ropa: { ...NINO, tunica: "#8a8494", tunica2: "#5d5670" }, expr: t > 540 ? "feliz" : "neutro" }} nombre="ROBERT BLINCOE" sub="SENT NORTH AT ABOUT 7" s={1.05} />
       <Primer t={t} t0={544.0} t1={548.2} lado="izq" g={{ seed: 88, ropa: { ...NINO, tunica: "#8a8494", tunica2: "#5d5670" }, expr: "triste", gorro: undefined }} emo="lagrimas" />
       <Chip t={t} t0={536.6} t1={538.5} text="A LONDON WORKHOUSE" color={C.violeta} x={1300} y={200} centro size={62} />

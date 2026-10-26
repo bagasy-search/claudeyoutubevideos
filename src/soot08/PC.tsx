@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
-import { C, ent, prog, Chip, Emote, Pan, Bota } from "./kit";
+import { C, ent, prog, Chip, Emote, Pan, Bota, fontFamily } from "./kit";
 import { Moneda3, tramos, V } from "./kit3";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, NINO, NINA, HILANDERO, DUENO, GenteFab, mulaVaiven } from "./mundo";
 import { Gran, Cuenta, Sello, Flash, sacudon, Velo, Horror, Latigo } from "./capas";
@@ -16,9 +16,9 @@ export const C0 = 189.7, C1 = 295.7;
 
 const KM: K[] = [
   [189.7, 3300, -1500, 0.32], [192.0, 3300, -1500, 0.33], [193.4, 2200, -300, 1.6], [196.8, 2200, -300, 1.65], [198.0, 3300, -450, 0.62], [200.2, 3300, -460, 0.6], [202.4, 3300, -500, 0.55], [204.8, 3500, -420, 0.9],
-  [214.3, 4350, -450, 1.0], [218.5, 4100, -450, 0.9], [220.8, 3500, -430, 0.8], [222.4, 3300, -430, 0.95], [224.4, 3180, -330, 1.85], [229.0, 3180, -320, 1.95],
+  [214.3, 4520, -300, 1.35], [218.5, 4350, -300, 1.25], [220.8, 3500, -430, 0.8], [222.4, 3300, -430, 0.95], [224.4, 3180, -330, 1.85], [229.0, 3180, -320, 1.95],
   [232.6, 3300, -450, 0.7], [243.0, 3300, -450, 0.62], [245.5, 3200, -200, 1.0], [248.6, 3150, -150, 1.6], [251.7, 3150, -170, 1.5],
-  [271.0, 3300, -380, 0.95], [277.0, 3350, -380, 1.0], [284.9, 3000, -380, 1.0], [287.0, 2600, -330, 1.2], [293.0, 2560, -280, 1.5], [295.7, 2560, -280, 1.6],
+  [271.0, 3250, -280, 1.3], [277.0, 3350, -280, 1.35], [284.9, 3000, -380, 1.0], [287.0, 2600, -330, 1.2], [293.0, 2560, -280, 1.5], [295.7, 2560, -280, 1.6],
 ];
 const KL: K[] = [
   [204.8, -450, -380, 1.15], [207.4, 480, -380, 1.1], [208.4, 250, -540, 0.82], [210.3, 0, -560, 0.72], [214.3, 0, -560, 0.72],
@@ -54,7 +54,7 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
   // los doffers: cuatro chicos que corren a lo largo de la mula
   if (t > 271 && t < 285.5) for (let i = 0; i < 4; i++) {
     const ph = (t * 0.55 + i * 0.25) % 1;
-    gente.push({ seed: 10 + i, x: 2250 + ph * 2100, y: 0, h: 260 + (i % 2) * 30, ropa: i % 2 ? NINA : NINO, gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, camina: 3.2, inclina: 10, bD: 150, bI: 140, cD: 10, expr: "miedo", descalzo: true, aparece: 271.4 + i * 0.15 });
+    gente.push({ seed: 10 + i, x: 2250 + ph * 2100, y: 0, h: 260 + (i % 2) * 30, ropa: i % 2 ? NINA : NINO, gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, camina: parada ? 0 : 3.2, inclina: parada ? (i % 2 ? 24 : 4) : 10, bD: parada ? [150, 60, 120, 40][i] + 15 * Math.sin(t * 8 + i) : 150, bI: parada ? [60, 150, 30, 130][i] : 140, cD: parada ? [10, 90, 60, 100][i] : 10, expr: (["miedo", "triste", "enojado", "miedo"] as const)[i], descalzo: true, aparece: 271.4 + i * 0.15 });
   }
   if (t > 284.9) gente.push({ seed: 20, x: 2950, y: 0, h: 290, ropa: NINA, gorro: "cofia", largo: true, flip: false, bD: 120, cD: 70, expr: "triste" });
 
@@ -133,12 +133,21 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
       <Horror t={t} t0={189.75} n={2} nombre="THE MACHINE" t1={192.0} />
       <Chip t={t} t0={192.2} t1={193.9} text="LET'S GIVE YOU A JOB" color={C.violeta} x={960} y={150} centro size={74} />
       <Chip t={t} t0={194.0} t1={195.3} text="YOU ARE SMALL" color={C.noche} x={960} y={150} centro size={74} />
+      {/* regla de altura: chico contra el hueco bajo la máquina */}
+      {t > 193.9 && t < 197.2 && (() => { const e = ent(t, 194.0) * (1 - prog(t, 196.9, 197.2)); return (
+        <svg style={{ position: "absolute", left: 1330, top: 330, overflow: "visible", opacity: e }} width={1} height={1}>
+          <rect x={0} y={0} width={46} height={620} rx={8} fill="#f4d58a" stroke="#2a1530" strokeWidth={7} />
+          {Array.from({ length: 13 }, (_, i) => <line key={i} x1={0} y1={i * 48 + 20} x2={i % 2 ? 18 : 30} y2={i * 48 + 20} stroke="#2a1530" strokeWidth={5} />)}
+          <line x1={-260} y1={250 + (1 - e) * 300} x2={60} y2={250 + (1 - e) * 300} stroke={C.rojo} strokeWidth={8} strokeDasharray="22 12" />
+          <text x={70} y={235} fontFamily={fontFamily} fontWeight={700} fontSize={48} fill="#fff" stroke="#2a1530" strokeWidth={8} paintOrder="stroke">≈ 4 FT</text>
+          <text x={70} y={290} fontFamily={fontFamily} fontWeight={700} fontSize={34} fill="#fff" stroke="#2a1530" strokeWidth={7} paintOrder="stroke">FITS UNDER</text>
+        </svg>); })()}
       <Sello t={t} t0={195.5} t1={197.1} text="QUALIFIED" x={960} y={300} size={170} color={C.lima} rot={-8} />
       <Gran t={t} t0={198.3} t1={200.2} text="THE SPINNING MULE" y={170} size={130} color={C.ambar} />
       <Chip t={t} t0={200.6} t1={204.6} text="AS LONG AS A BUS" color={C.oro} tinta={C.noche} x={960} y={150} centro size={80} />
       <Chip t={t} t0={202.6} t1={204.6} text="HUNDREDS OF SPINDLES" color={C.noche} x={960} y={950} centro size={66} />
       <Chip t={t} t0={205.2} t1={207.6} text="ROLLS OUT →" color={C.teal} tinta={C.noche} x={960} y={150} centro size={74} />
-      <Chip t={t} t0={204.9} t1={207.6} text="THE CARRIAGE · IT NEVER STOPS" color={C.noche} x={960} y={260} centro size={54} />
+      <Chip t={t} t0={204.5} t1={207.6} text="THE CARRIAGE · IT NEVER STOPS" color={C.noche} x={960} y={260} centro size={60} />
       <Chip t={t} t0={206.0} t1={208.2} text="STRETCH + TWIST" color={C.violeta} x={760} y={950} centro size={62} />
       <Chip t={t} t0={208.5} t1={210.3} text="← ROLLS BACK" color={C.naranja} x={620} y={150} centro size={74} />
       {[[210.8, "OUT"], [211.5, "BACK"], [212.1, "OUT"], [212.8, "BACK"]].map(([t0, s], i) => <Gran key={i} t={t} t0={t0 as number} t1={(t0 as number) + 0.6} text={s as string} y={260} x={i % 2 ? 640 : 1280} size={150} color={i % 2 ? C.naranja : C.teal} />)}

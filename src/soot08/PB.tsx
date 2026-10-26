@@ -57,8 +57,8 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
 
   // sala: comité + testigo + sus hijas
   const gS: GenteFab[] = [
-    ...[-1150, -850, -560, -260].map((x, i) => ({ seed: 70 + i, x, y: -170, h: 470, ropa: DUENO, gorro: "copa" as const, barba: i % 2 === 0, expr: (t > 137 && t < 146 ? "sorpresa" : "neutro") as GenteFab["expr"], habla: i === 2 && t > 126.5 && t < 129.6, mira: 1 })),
-    { seed: 75, x: 820, y: -200, h: 500, ropa: HILANDERO, gorro: "gorra", flip: true, expr: t < 148 && t > 149 ? "neutro" : "triste", habla: t > 133 && t < 146, bD: t > 140.5 && t < 142.5 ? 60 : 0, mira: -1 },
+    ...[-1150, -850, -560, -260].map((x, i) => ({ seed: 70 + i, x, y: -170, h: [470, 440, 490, 455][i], ropa: i === 1 ? { ...DUENO, tunica: "#3d4a6b", tunica2: "#232a40" } : i === 3 ? { ...DUENO, tunica: "#5a3b4a", tunica2: "#33212a" } : DUENO, gorro: i === 1 ? undefined : "copa" as const, barba: i % 2 === 0, expr: (t > 137 && t < 146 ? "sorpresa" : (["neutro", "orgullo", "neutro", "enojado"] as const)[i]) as GenteFab["expr"], habla: (i === 2 && t > 126.5 && t < 129.6) || (i === 0 && t > 123.5 && t < 125.5), bD: i === 1 ? 70 + 10 * Math.sin(t * 9) : i === 3 && t > 133 ? 110 : undefined, cD: i === 1 ? 60 : i === 3 ? 90 : undefined, inclina: i === 1 ? 10 : 0, mira: 1 })),
+    { seed: 75, x: 820, y: -200, h: 500, ropa: HILANDERO, gorro: "gorra", flip: true, expr: t < 148 && t > 149 ? "neutro" : "triste", habla: t > 133 && t < 146, bD: t > 140.5 && t < 142.5 ? 60 : t > 129.5 && t < 136.5 ? 100 + 20 * Math.sin(t * 3) : 0, cD: t > 129.5 && t < 136.5 ? 60 : undefined, mira: -1 },
     { seed: 76, x: 1080, y: -200, h: 290, ropa: NINA, gorro: "cofia", largo: true, flip: true, expr: "dormido", aparece: 132.2 },
     { seed: 77, x: 1260, y: -200, h: 250, ropa: NINA, largo: true, flip: true, expr: "dormido", aparece: 132.5 },
   ];
@@ -163,7 +163,8 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={130.5} t1={133.0} text="SAMUEL COULSON · FATHER" color={C.violeta} x={960} y={150} centro size={72} />
       <Chip t={t} t0={132.4} t1={136.6} text="HIS DAUGHTERS" color={C.teal} tinta={C.noche} x={960} y={950} centro size={66} />
       <Chip t={t} t0={133.3} t1={136.6} text="BUSY SEASON · ABOUT 6 WEEKS" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={66} />
-      <Velo t={t} t0={136.7} t1={146.4} op={0.55} />
+      <Velo t={t} t0={136.7} t1={146.4} op={0.94} />
+      <Primer t={t} t0={139.0} t1={146.3} lado="izq" h={950} x={230} nena g={{ expr: t < 143.3 ? "triste" : "dormido", gorro: "cofia", largo: true }} />
       <BarraDia t={t} t0={136.8} t1={146.4} y={880} titulo="THE COULSON GIRLS · ONE DAY" tramos={[
         { de: 3, a: 12, t0: 137.0, t1: 138.4, color: C.rojo, txt: "AT THE MILL" },
         { de: 12, a: 22.5, t0: 138.4, t1: 140.0, color: C.rojo, txt: "STILL AT THE MILL" },

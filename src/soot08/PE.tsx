@@ -16,7 +16,7 @@ export const E0 = 392.9, E1 = 473.5;
 const KE: K[] = [
   [392.9, 4280, -1560, 1.15], [394.8, 4280, -1560, 1.2], [395.6, 4150, -1430, 0.82], [401.7, 4150, -1430, 0.78], [404.6, 4280, -1560, 1.0], [409.4, 4280, -1560, 1.05], [445.7, 4280, -1560, 1.1],
   [445.71, 2600, -330, 1.55], [453.6, 2600, -330, 1.65], [455.4, 2620, -340, 1.5], [459.39, 2620, -340, 1.55],
-  [459.4, 5900, -1450, 0.75], [463.4, 5900, -1450, 0.8], [467.9, 5900, -1450, 0.82],
+  [459.4, 5850, -1450, 0.75], [463.4, 5800, -1450, 0.8], [467.9, 5780, -1450, 0.82],
   [467.91, 3600, -1500, 0.32], [473.5, 3600, -1500, 0.34],
 ];
 
@@ -84,19 +84,19 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={404.7} t1={409.3} text="REAL PENALTIES · IN SHILLINGS" color={C.noche} x={960} y={150} centro size={70} />
       {t > 406.4 && t < 409.4 && [0, 1, 2, 3].map((i) => <Moneda3 key={i} t={t} t0={406.5 + i * 0.25} t1={409.2} x={660 + i * 200} y={560 + Math.min(1, (t - 406.5 - i * 0.25)) * 260} s={0.6} txt="1s" />)}
       <Chip t={t} t0={406.5} t1={409.3} text="STRAIGHT OUT OF YOUR PAY" color={C.rojo} x={960} y={950} centro size={66} />
-      {aviso && <Velo t={t} t0={409.4} t1={445.6} op={0.45} />}
+      {aviso && <Velo t={t} t0={409.4} t1={445.6} op={0.85} />}
       {aviso && (
         <div style={{ position: "absolute", inset: 0, opacity: 1 - prog(t, 445.3, 445.7) }}>
-          <Aviso t={t} t0={409.4} x={960} y={500} w={1320} titulo="TYLDESLEY MILL · FINES" items={ITEMS} foco={focoEn(t)} />
+          <Aviso t={t} t0={409.4} x={860} y={500} w={1150} titulo="TYLDESLEY MILL · FINES" items={ITEMS} foco={focoEn(t)} />
         </div>
       )}
       {/* anotaciones al costado del cartel */}
-      {t > 412.9 && t < 415.6 && <div style={{ position: "absolute", left: 60, top: 160, transform: `scale(${ent(t, 412.9) * 0.55})`, transformOrigin: "0 0" }}><div style={{ position: "relative" }}><Termometro x={0} y={860} nivel={0.86} /></div></div>}
+      {t > 412.9 && t < 415.6 && <div style={{ position: "absolute", left: 200, top: 160, transform: `scale(${ent(t, 412.9) * 0.55})`, transformOrigin: "0 0" }}><div style={{ position: "relative" }}><Termometro x={0} y={860} nivel={0.86} /></div></div>}
       <Chip t={t} t0={412.9} t1={415.6} text="REMEMBER: 80–84°F INSIDE" color={C.naranja} x={960} y={1010} centro size={52} />
       <Chip t={t} t0={422.7} t1={425.7} text="CAN'T BE DIRTY · CAN'T WASH" color={C.rojo} x={960} y={1010} centro size={56} />
       <Chip t={t} t0={428.6} t1={432.6} text="ONE SHILLING · EACH TIME" color={C.noche} x={960} y={1010} centro size={52} />
       <Chip t={t} t0={432.8} t1={437.8} text="AND THE BEST ONE…" color={C.violeta} x={960} y={1010} centro size={56} />
-      <Primer t={t} t0={415.9} t1={439.9} lado="der" x={1790} h={950} g={{ expr: t < 425.9 ? "triste" : t < 432.8 ? "enojado" : "miedo" }} emo={t < 428.6 ? undefined : "excl"} />
+      <Primer t={t} t0={415.9} t1={439.9} lado="der" x={1660} h={900} g={{ expr: t < 425.9 ? "triste" : t < 432.8 ? "enojado" : "miedo" }} emo={t < 428.6 ? undefined : "excl"} />
       <Flash t={t} at={[440.1]} />
       {t > 440.0 && t < 445.6 && (
         <>
@@ -118,12 +118,12 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
       )}
       <Chip t={t} t0={453.8} t1={455.3} text="SOME MILLS WENT FURTHER" color={C.noche} x={960} y={150} centro size={70} />
       <Gran t={t} t0={455.4} t1={457.4} text="THE TRUCK SYSTEM" y={190} size={130} color={C.ambar} />
-      {t > 455.4 && t < 459.4 && [0, 1, 2].map((i) => <Ficha key={i} t={t} t0={455.6 + i * 0.3} t1={459.2} x={interpolate(t, [455.6 + i * 0.3, 456.4 + i * 0.3], [1700, 1180 + i * 170], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={interpolate(t, [455.6 + i * 0.3, 456.4 + i * 0.3], [420, 640 - (i % 2) * 40], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} s={0.7} />)}
-      {t > 455.4 && t < 459.4 && <Persona t={t} seed={78} x={1780} y={900} h={420} ropa={CAPATAZ} flip mira={-1} expr="orgullo" bD={t < 457 ? 120 : 30} cD={t < 457 ? 80 : 20} aparece={455.4} />}
+      {t > 454.9 && t < 459.4 && [0, 1, 2].map((i) => <Ficha key={i} t={t} t0={454.9 + i * 0.3} t1={459.2} x={interpolate(t, [454.9 + i * 0.3, 455.7 + i * 0.3], [1700, 1180 + i * 170], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={interpolate(t, [454.9 + i * 0.3, 455.7 + i * 0.3], [420, 640 - (i % 2) * 40], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} s={0.7} />)}
+      {t > 454.9 && t < 459.4 && <Persona t={t} seed={78} x={1780} y={900} h={420} ropa={CAPATAZ} flip mira={-1} expr="orgullo" bD={t < 457 ? 120 : 30} cD={t < 457 ? 80 : 20} aparece={454.9} />}
       <Chip t={t} t0={457.6} t1={459.3} text="WAGES PAID IN TOKENS" color={C.noche} x={960} y={950} centro size={64} />
       <Chip t={t} t0={459.5} t1={461.4} text="ONLY GOOD AT THE BOSS'S SHOP" color={C.rojo} x={960} y={150} centro size={66} />
       <Chip t={t} t0={461.5} t1={463.5} text="PRICES SET BY THE BOSS" color={C.noche} x={960} y={950} centro size={66} />
-      <Velo t={t} t0={463.5} t1={465.9} op={0.65} />
+      <Velo t={t} t0={463.5} t1={465.9} op={0.3} />
       <Sello t={t} t0={463.6} t1={465.8} text="BANNED · TRUCK ACT 1831" x={960} y={900} size={100} color={C.lima} rot={-4} />
       <Chip t={t} t0={465.9} t1={467.8} text="…IT TOOK A LONG TIME TO DISAPPEAR" color={C.violeta} x={960} y={950} centro size={58} />
       <Chip t={t} t0={468.1} t1={471.7} text="14 HOURS · AND THE MONEY GOES BACK UP" color={C.noche} x={960} y={150} centro size={58} />

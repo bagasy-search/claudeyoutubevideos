@@ -21,9 +21,9 @@ const KA: K[] = [
   [2.05, FCX, -3440, 1.5], [3.4, FCX, -3440, 1.85],
   [3.85, 3380, -420, 1.25], [6.5, 3420, -400, 1.3], [8.0, 3560, -330, 1.75], [10.5, 3380, -380, 1.35], [13.3, 3500, -330, 1.3],
   [14.05, FCX, -330, 5.2], [14.7, 2850, -300, 1.6], [17.9, 2800, -300, 1.65], [18.8, 3300, -420, 1.55], [23.6, 3200, -420, 1.7],
-  [25.3, 2300, -1900, 0.31], [27.9, 2100, -2100, 0.27], [30.4, 1900, -2600, 0.2], [32.2, 1900, -700, 0.6], [34.4, 2650, -240, 1.3],
-  [35.2, 3150, -380, 1.3], [36.3, 3100, -420, 0.95], [38.6, 3100, -300, 1.1], [40.6, 3700, -560, 1.7], [43.4, 3000, -420, 1.15],
-  [45.7, 2800, -460, 1.05], [48.5, 2850, -460, 1.1], [49.4, 3300, -470, 1.5], [51.0, 3300, -470, 1.55],
+  [25.3, 2300, -1900, 0.31], [27.9, 2100, -2100, 0.27], [30.4, 1900, -2600, 0.2], [32.2, 1900, -700, 0.6], [34.4, 2650, -200, 1.35],
+  [35.2, 3150, -380, 1.3], [36.3, 3100, -420, 0.95], [38.6, 3100, -300, 1.1], [40.6, 3700, -560, 1.7], [43.4, 2950, -250, 1.55],
+  [45.7, 2850, -250, 1.6], [48.5, 2850, -460, 1.1], [49.4, 3300, -470, 1.5], [51.0, 3300, -470, 1.55],
   [51.9, -1110, -420, 1.0], [52.8, -1175, -395, 7.5],
 ];
 // adentro de la casa (otro espacio: entramos por la ventana del cuarto y salimos por la misma)
@@ -92,7 +92,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
           <Espacio cam={cam}>
             <CasaAdentro t={t} gente={casa} />
             {/* monedas en la mesa y el pan */}
-            {t > 54.9 && [0, 1, 2, 3].map((i) => <Moneda3 key={i} t={t} t0={54.9 + i * 0.22} x={430 + i * 150} y={-400} s={0.95} txt="d" oro />)}
+            {t > 54.9 && [0, 1, 2, 3].map((i) => <Moneda3 key={i} t={t} t0={54.9 + i * 0.22} x={430 + i * 150} y={-400} s={0.95} txt="1d" oro />)}
             {t > 58.5 && [0, 1].map((i) => <Moneda3 key={`s${i}`} t={t} t0={58.6 + i * 0.25} x={860 + i * 70} y={-370} s={0.42} txt="1s" t1={61.2} />)}
             {t > 60.3 && t < 61.25 && <Pan x={700} y={-420} s={1.2 * ent(t, 60.3)} />}
           </Espacio>
@@ -147,7 +147,6 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       {t > 27.9 && t < 32 && <Particulas t={t} tipo="lluviaoro" n={60} seed={5} />}
       <Chip t={t} t0={28.3} t1={32} text="THE RICHEST COUNTRY ON EARTH" color={C.oro} tinta={C.noche} x={960} y={150} centro size={74} />
       <Chip t={t} t0={30.4} t1={32} text="BUILT IN ROOMS LIKE THIS" color={C.noche} x={960} y={930} centro size={64} />
-      <Velo t={t} t0={33.6} t1={35.6} op={0.5} />
       <Gran t={t} t0={33.7} t1={34.5} text="CHILDREN" y={330} size={200} color={C.crema} />
       {t > 34.5 && t < 35.5 && <Gran t={t} t0={34.58} t1={35.5} text="WHY?" y={470} size={230} color={C.rojo} />}
       <Lista t={t} t0={36.3} t1={45.7} x={110} y={110} titulo="THE PERFECT WORKER" size={54} items={[{ txt: "SMALL", t0: 38.72 }, { txt: "NIMBLE", t0: 40.78 }, { txt: "TOO YOUNG TO ARGUE", t0: 43.56 }, { txt: "CHEAP", t0: 44.94 }]} />
@@ -172,6 +171,8 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       <Tachado t={t} t0={61.25} t1={62.1} x={960} y={420} w={420} h={300} />
       <Sello t={t} t0={63.6} t1={64.3} text="HIRED" x={960} y={300} size={170} color={C.lima} rot={8} />
       <Chip t={t} t0={64.5} t1={67.4} text="ONE WORKING LIFE" color={C.violeta} x={1180} y={140} centro size={74} />
+      {t > 65.3 && t < 67.5 && [0, 1, 2, 3, 4, 5, 6].map((i) => { const e = ent(t, 65.4 + i * 0.16, 0, { damping: 9, stiffness: 200 }) * (1 - prog(t, 67.2, 67.5)); return <div key={i} style={{ position: "absolute", left: 760 + i * 150, top: 900, width: 110, height: 110, borderRadius: 55, background: C.rojo, border: "8px solid #fff", transform: `translate(-50%,-50%) scale(${e})`, fontFamily, fontWeight: 800, fontSize: 60, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "6px 8px 0 rgba(10,5,30,.45)" }}>{i + 1}</div>; })}
+      <Chip t={t} t0={66.4} t1={67.4} text="7 WAYS IT TRIES TO BREAK YOU" color={C.noche} x={1220} y={760} centro size={48} />
       <Chip t={t} t0={65.0} t1={67.4} text="INSIDE A VICTORIAN MILL · 5:30 AM" color={C.ambar} tinta={C.noche} x={1180} y={250} centro size={50} />
       <Chip t={t} t0={68.7} t1={71.6} text="EVERY WAY IT TRIES TO BREAK YOU" color={C.rojo} x={960} y={140} centro size={66} />
       <Carretes t={t} t0={71.8} t1={73.6} n={7} y={940} s={0.95} />
