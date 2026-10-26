@@ -231,6 +231,9 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
         const top = pp(h, 560) + (i === 3 ? 0 : 30) - h * 0.92;
         return <svg key={"r" + i} style={{ position: "absolute", inset: 0, overflow: "visible" }} width={1920} height={1080}><line x1={x - 260} y1={top - 40} x2={x + 240} y2={top + 40} stroke="#c49058" strokeWidth={16} strokeLinecap="round" /><path d={`M ${x + 170} ${top + 30} L ${x + 260} ${top + 60} L ${x + 250} ${top + 20} Z`} fill="#d8a868" /></svg>;
       })}
+      <div style={{ position: "absolute", left: 830, top: 60, width: 200, height: 200, borderRadius: 100, overflow: "hidden", background: "radial-gradient(circle, #fff6dc, #e8c88a)", border: "9px solid #2a1530", transform: `scale(${t < 298.0 ? 0 : ent(t, 298.0)})` }}>
+        <Persona x={100} y={374} h={340} t={t} seed={121} ropa={CIVIL(5)} expr="neutro" habla={t > 298.4 && t < 302.6} />
+      </div>
       <Chip t={t} t0={297.9} text="THUCYDIDES" color={C.oro} tinta={C.noche} x={120} y={130} size={62} />
       <Chip t={t} t0={299.6} text="MARCHING TO A NEW SHIP" color={C.violeta} x={120} y={240} size={50} />
       <Chip t={t} t0={302.7} text="EACH CARRIES 3 THINGS" color={C.rojo} x={960} y={960} centro size={58} />
@@ -258,8 +261,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={314.6} t1={316.6} text="NO ROOM TO SLEEP" color={C.rojo} x={960} y={250} centro size={56} />
       <Persona x={1640} y={1050} h={430} t={t} seed={2} ropa={APION} expr={t < 316.7 ? "dormido" : t < 320.2 ? "triste" : "enojado"} bD={t > 316.8 ? 130 + Math.sin(t * 5) * 10 : 10} cD={70} manoD={t > 316.8 ? <circle r={22} fill="#d9a85a" stroke="#8a5a2a" strokeWidth={4} /> : undefined} inclina={t < 316.7 ? 10 : 0} />
       <Borda y={1020} />
-      {t > 316.7 && <Galleta x={360} y={330} s={0.8 * ent(t, 316.8)} />}
-      {t > 317.6 && <Anfora x={620} y={330} s={0.6 * ent(t, 317.7)} />}
+      {t > 316.7 && <svg style={{ position: "absolute", left: 120, top: 120 }} width={640} height={240}>{[["FOOD", 316.8, "#e8a23a", 0.15], ["WATER", 317.7, "#3fa9e0", 0.1]].map(([n, t0, col, v], i) => t < (t0 as number) ? null : <g key={i} transform={`translate(0 ${i * 110})`}><rect x={0} y={0} width={620} height={90} rx={20} fill="#1c1430" stroke="#fff" strokeWidth={5} /><text x={24} y={60} fontFamily={fontFamily} fontWeight={700} fontSize={44} fill="#fff">{n as string}</text><rect x={210} y={22} width={380} height={46} rx={12} fill="#3a2e52" /><rect x={210} y={22} width={380 * (v as number) * Math.min(1, (t - (t0 as number)) * 2) + 380 * (1 - Math.min(1, (t - (t0 as number)) * 2))} height={46} rx={12} fill={col as string} /></g>)}</svg>}
       <Chip t={t} t0={316.8} text="ALMOST NO FOOD" color={C.ambar} tinta={C.noche} x={1400} y={170} centro size={56} />
       <Chip t={t} t0={317.9} text="VERY LITTLE WATER" color="#1d6f8a" x={1400} y={280} centro size={52} />
       <Chip t={t} t0={320.2} text="+1 KG = SLOWER" color={C.rojo} x={960} y={970} centro size={66} />

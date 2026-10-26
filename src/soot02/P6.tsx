@@ -145,7 +145,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       {t >= 696.69 && <Flota t={t} t0={696.69} n={364} hunde={284} tA={[698.9, 700.4]} x={820} y={640} cols={28} s={0.85} />}
       {t >= 696.69 && <Apion t={t} t0={696.7} x={1710} y={1050} h={420} borda={1020} desde="nada" acts={[[696.7, "asombro"], [698.9, "miedo"]]} />}
       {t >= 696.69 && t < 698.87 && <CuentaN t={t} t0={696.69} t1={697.5} de={300} a={364} x={820} y={190} size={140} color={C.crema} suf=" SHIPS" />}
-      {t >= 698.87 && <CuentaN t={t} t0={698.87} t1={700.4} de={364} a={80} x={820} y={190} size={140} color="#ff6a6a" pre="ONLY " suf=" SURVIVED" />}
+      {t >= 698.87 && <CuentaN t={t} t0={698.87} t1={700.4} de={364} a={80} x={820} y={190} size={140} color="#ff6a6a" suf=" SHIPS LEFT" />}
             {t < 696.69 && <Chip t={t} t0={694.2} text="CAMARINA · 255 BC" color={C.rojo} x={960} y={150} centro size={60} />}
     </Escena>
 
@@ -240,7 +240,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       {t < 749.13 && <Flota t={t} t0={739.5} n={700} hunde={t > 745.69 ? 700 : 0} tA={[745.8, 748.9]} x={900} y={600} cols={40} s={0.6} />}
       {t < 749.13 && <CuentaN t={t} t0={743.17} t1={745.6} de={0} a={700} x={960} y={160} size={130} color={C.crema} pre="~" suf=" WARSHIPS" />}
       <Chip t={t} t0={739.5} t1={743.1} text="POLYBIUS ADDS IT UP" color={C.violeta} x={960} y={160} centro size={56} />
-      <Chip t={t} t0={741.21} t1={743.1} text="ONE WAR · ROME vs CARTHAGE" color={C.rojo} x={960} y={930} centro size={50} />
+      <Chip t={t} t0={741.21} t1={743.1} text="ROME vs CARTHAGE" color={C.rojo} x={820} y={930} centro size={50} />
       {t >= 745.69 && t < 749.13 && <Espadas x={560} y={930} s={0.55} />}
       {t >= 745.69 && t < 749.13 && <Chip t={t} t0={745.69} text="SOME: ENEMY" color={C.violeta} x={640} y={905} size={44} />}
       {t >= 747.17 && t < 749.13 && <Nube x={1150} y={930} s={0.55} />}

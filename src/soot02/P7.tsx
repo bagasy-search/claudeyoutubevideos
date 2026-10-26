@@ -167,7 +167,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
               <rect x={420} y={700} width={210} height={24} rx={8} fill="#6b3a1f" /><rect x={438} y={720} width={20} height={64} fill="#5a3418" /><rect x={592} y={720} width={20} height={64} fill="#5a3418" />
               <g transform={`translate(520 785) scale(1.1)`}><Remero fase={t * 0.5 * Math.PI * 2} ropa="#2fb5d8" piel="#c98b62" pelo="#d8d0c4" expr="cansado" seed={7} t={t} /></g>
             </svg>
-            {t > 846.6 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><g opacity={0.45}><rect x={1042} y={520} width={16} height={260} fill="#fff" /><path d="M 1058 520 L 1170 550 L 1058 580 Z" fill="#fff" /></g><text x={1050} y={830} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={36} fill="#fff" stroke="#2a1530" strokeWidth={8} paintOrder="stroke">PROMISED: 26</text></svg>}
+            {t > 846.6 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><g opacity={0.45}><rect x={1042} y={520} width={16} height={260} fill="#fff" /><path d="M 1058 520 L 1170 550 L 1058 580 Z" fill="#fff" /></g><text x={1050} y={850} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={62} fill="#fff" stroke="#2a1530" strokeWidth={8} paintOrder="stroke">PROMISED: 26</text></svg>}
             <CuentaN t={t} t0={846.6} t1={850.6} de={26} a={28} x={meta - 150} y={430} size={110} color={t > 849 ? "#ff6a6a" : C.crema} pre="SERVICE: " suf=" YRS" />
           </>
         );
@@ -212,8 +212,8 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
       {t >= 862.59 && (
         <>
           <Egipto t={t} />
-          <Persona x={interpolate(t, [862.6, 866.0, 868.6], [420, 620, 900], cl)} y={interpolate(t, [868.7, 872.6], [960, 640], cl)} h={380} t={t} seed={7} ropa={APION} camina={t < 868.6 ? 1.4 : 0} expr={t < 866 ? "neutro" : t < 868.7 ? "sorpresa" : "feliz"} mira={1} miraY={t > 866 ? -1 : 0} bI={t > 868.7 ? 150 + Math.sin(t * 6) * 20 : 10} bD={t > 868.7 ? 150 - Math.sin(t * 6) * 20 : 10} />
           {t >= 866.15 && <Escalera t={t} t0={866.2} x={960} y0={960} y1={200} />}
+          <Persona x={interpolate(t, [862.6, 866.0, 868.6], [420, 620, 900], cl)} y={interpolate(t, [868.7, 872.6], [960, 640], cl)} h={380} t={t} seed={7} ropa={APION} camina={t < 868.6 ? 1.4 : 0} expr={t < 866 ? "neutro" : t < 868.7 ? "sorpresa" : "feliz"} mira={1} miraY={t > 866 ? -1 : 0} bI={t > 868.7 ? 150 + Math.sin(t * 6) * 20 : 10} bD={t > 868.7 ? 150 - Math.sin(t * 6) * 20 : 10} />
           {t >= 868.71 && <Laurel x={960} y={170} s={1.5 * ent(t, 868.8)} />}
         </>
       )}
@@ -285,7 +285,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
       )}
       <Apion t={t} t0={901.0} t1={904.65} x={420} y={1075} h={420} flip={false} acts={[[901.2, "asombro"], [903.6, "senala"]]} />
       {t < 904.65 && <Chip t={t} t0={901.0} text="NEXT: THE EDGE OF THE WORLD" color={C.violeta} x={960} y={140} centro size={54} />}
-      {t >= 903.63 && t < 904.65 && <Grande t={t} t0={903.63} text="HADRIAN'S WALL" y={300} size={140} color={C.crema} />}
+      {t >= 903.0 && t < 904.65 && <Grande t={t} t0={903.0} text="HADRIAN'S WALL" y={300} size={140} color={C.crema} />}
       {t >= 904.65 && (
         <>
           <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, #2d1b69, #14122a 75%)", opacity: prog(t, 904.65, 905.0) }} />
@@ -296,6 +296,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
             })}
           </svg>
           <Chip t={t} t0={904.7} text="TELL ME IN THE COMMENTS" color={C.violeta} x={960} y={200} centro size={58} />
+          <Apion t={t} t0={904.8} x={1740} y={1070} h={330} desde="nada" acts={[[904.9, "senala"], [906.1, "piensa"], [907.6, "festeja"]]} />
           <Chip t={t} t0={906.01} text="WHICH TRAP GETS YOU FIRST?" color={C.rojo} x={960} y={860} centro size={58} />
         </>
       )}

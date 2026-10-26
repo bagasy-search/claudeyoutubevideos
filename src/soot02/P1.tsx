@@ -145,7 +145,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
       <Grande t={t} t0={54.3} text="APION" y={260} size={170} color={C.crema} />
       <Chip t={t} t0={56.8} text="EGYPT" color={C.ambar} tinta={C.noche} x={1600} y={170} centro size={66} />
       <Chip t={t} t0={57.7} text="2ND CENTURY AD" color={C.teal} tinta={C.noche} x={1600} y={280} centro size={52} />
-      <Chip t={t} t0={59.4} text="JOINED THE FLEET" color="#1d6f8a" x={960} y={950} centro size={66} />
+      <Chip t={t} t0={59.4} text="JOINED THE FLEET" color="#1d6f8a" x={1420} y={520} centro size={60} />
     </Escena>
 
     {/* 61,1 · "his letter home survived, written on papyrus, and you can still read it today" — la carta, y una vitrina de museo */}
@@ -225,7 +225,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
       <Apion t={t} t0={93.4} x={250} y={1010} h={400} acts={[[93.9, "habla"], [97.7, "senala"], [99.9, "asombro"], [101.9, "festeja"]]} flip={false} />
       <Chip t={t} t0={94.2} text="BIGGEST FLEET IN THE EMPIRE" color="#1d6f8a" x={960} y={140} centro size={62} />
       <Chip t={t} t0={97.7} text="VOLCANIC BAY" color={C.rojo} x={960} y={250} centro size={54} />
-      <Chip t={t} t0={99.9} t1={101.6} text="NAMES ON THEIR BOWS" color={C.oro} tinta={C.noche} x={960} y={820} centro size={58} />
+      <Chip t={t} t0={99.9} t1={101.6} text="NAMES ON THEIR BOWS" color={C.oro} tinta={C.noche} x={1300} y={990} centro size={58} />
       <Chip t={t} t0={101.9} text="THOUSANDS OF MEN" color={C.violeta} x={960} y={820} centro size={66} />
     </Escena>
 
@@ -300,7 +300,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
       <Sala t={t} />
       <Chip t={t} t0={144.3} text="A VERY SIMPLE OFFER" color={C.oro} tinta={C.noche} x={960} y={130} centro size={64} />
       <Tabla t={t} y={560} filas={[{ a: "26 YRS", b: "25 YRS", t0: 146.7, malo: true }, { a: "LOWER", b: "MORE", t0: 149.9, malo: true }, { a: "LESS", b: "MORE", t0: 151.4, malo: true }]} />
-      <Apion t={t} t0={143.8} x={1640} y={1060} h={430} acts={[[144.3, "habla"], [146.7, "asombro"], [149.9, "enojado"], [151.4, "triste"]]} flip />
+      <Apion t={t} t0={143.8} x={1760} y={1060} h={430} acts={[[144.3, "habla"], [146.7, "asombro"], [149.9, "enojado"], [151.4, "triste"]]} flip />
     </Escena>
 
     {/* 153,0 · "and at the end, you get the one thing your family never had. Roman citizenship. For you, your wife, your children" */}
@@ -401,7 +401,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
       <Emote t={t} t0={210.6} tipo="sudor" {...L(1300, pp(820, 470), 820)} s={1.4} />
       <Chip t={t} t0={205.7} text="NO CHAINS" color={C.teal} tinta={C.noche} x={440} y={110} centro size={62} />
       <Chip t={t} t0={206.8} text="JUST A CONTRACT" color={C.violeta} x={980} y={110} centro size={56} />
-      <Chip t={t} t0={209.5} text="WORSE" color={C.rojo} x={1650} y={240} centro size={80} />
+      <Chip t={t} t0={209.5} text="WORSE" color={C.rojo} x={180} y={600} centro size={80} />
       <Chip t={t} t0={210.6} text="YOU SIGNED IT" color={C.ambar} tinta={C.noche} x={760} y={980} centro size={64} />
     </Escena>
   </>

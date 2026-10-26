@@ -76,9 +76,10 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
 
       {/* 9,06 · "facing backwards, pulling a giant piece of wood" — atravesamos la tronera: adentro de nuevo */}
       <Escena t={t} t0={9.06} t1={12.22} entra="atraviesa" ix={800} iy={740} sale="fundido" quieta>
-        <Cam t={t} k={[[9.06, 800, 720, 1.9], [10.2, 800, 700, 1.6], [12.4, 900, 620, 1.15]]}>
+        <Cam t={t} k={[[9.06, 800, 640, 1.9], [10.2, 800, 610, 1.6], [12.4, 900, 560, 1.15]]}>
           <Corte t={t} boga={0.6} agua={0.1} oscuro={0.35} heroeExpr="cansado" />
         </Cam>
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 180, background: "linear-gradient(180deg, rgba(20,12,30,.92) 60%, rgba(20,12,30,0))", opacity: prog(t, 9.1, 9.4) }} />
         <Chip t={t} t0={9.2} text="← YOU FACE THIS WAY" color={C.rojo} x={90} y={90} size={54} />
         <Chip t={t} t0={9.6} text="SHIP GOES THIS WAY →" color={C.teal} tinta={C.noche} x={1830} y={90} size={54} />
         <Remo x={interpolate(t, [10.3, 12.3], [1500, 900], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={560} s={1.6} t={t} t0={10.3} rot={-8} />
@@ -209,8 +210,8 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
           <g opacity={prog(t, 41.5, 43)} transform="translate(1500 260)"><ellipse cx={0} cy={0} rx={260} ry={80} fill="#4a4f78" /><circle cx={-90} cy={-40} r={90} fill="#4a4f78" /><circle cx={60} cy={-60} r={110} fill="#4a4f78" /></g>
         </svg>
         <Relampago t={t} ts={[44.5]} x={1500} />
-        <Galera x={520} y={660} s={0.6} t={t} boga={0.7} vela />
-        <Galera x={interpolate(t, [39.8, 41.6], [2400, 1400], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={670} s={0.6} t={t + 1} boga={0.7} flip color="#3a2a3a" franja="#1a1a1a" />
+        <Galera x={760} y={660} s={0.6} t={t} boga={0.7} vela />
+        <Galera x={interpolate(t, [39.8, 41.6], [2400, 1560], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={670} s={0.6} t={t + 1} boga={0.7} flip color="#3a2a3a" franja="#1a1a1a" />
         <Chip t={t} t0={41.32} text="MOST DANGEROUS THING?" color={C.violeta} x={960} y={150} centro size={62} />
         {t > 43.76 && <svg style={{ position: "absolute", left: 1150, top: 450 }} width={500} height={400}><g opacity={ent(t, 43.76)}><line x1={40} y1={40} x2={40 + 420 * prog(t, 43.76, 43.96)} y2={40 + 320 * prog(t, 43.76, 43.96)} stroke={C.rojo} strokeWidth={40} strokeLinecap="round" /><line x1={460} y1={40} x2={460 - 420 * prog(t, 43.9, 44.1)} y2={40 + 320 * prog(t, 43.9, 44.1)} stroke={C.rojo} strokeWidth={40} strokeLinecap="round" /></g></svg>}
         <Grande t={t} t0={44.0} text="NOT THE ENEMY" x={1100} y={790} size={120} color={C.crema} />
