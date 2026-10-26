@@ -284,23 +284,23 @@ export const OvenDial: React.FC<{ t: number; at: number; out: number; text: stri
   if (!deg) return <Stat t={t} at={at} out={out} text={text} sub={sub} x={x} y={y} size={150} />;
   if (t < at - 0.05 || t > out + 0.6) return null;
   const kO = ei(t, out, out + 0.45), T = parseInt(deg[1]), o = e(t, at, at + 0.25) * (1 - ei(t, out + 0.15, out + 0.45)), k = spr(t, at, 0.8), kn = e(t, at + 0.15, at + 1.1), glow = e(t, at + 0.8, at + 1.4);
-  const fr = (T - 200) / 300, ang = -135 + 270 * fr * kn, R = 128;
+  const gid = "d" + Math.round(at * 100), fr = (T - 200) / 300, ang = -135 + 270 * fr * kn, R = 128;
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) translateY(${(1 - Math.min(1, k)) * 40 - kO * 20}px) scale(${0.8 + 0.2 * Math.min(1.03, k) - kO * 0.12})`, opacity: o, filter: blur((1 - e(t, at, at + 0.4)) * 10 + kO * 10), textAlign: "center", padding: "26px 34px 24px", borderRadius: 34, background: "linear-gradient(180deg, rgba(38,24,14,.82), rgba(16,10,6,.88))", boxShadow: `0 1px 0 rgba(255,255,255,.12) inset, 0 30px 60px rgba(0,0,0,.55), 0 0 0 1.5px ${C.gold}44` }}>
       <div style={{ position: "absolute", left: "50%", top: R + 26, width: 2 * R + 160, height: 2 * R + 160, transform: "translate(-50%,-50%)", borderRadius: "50%", background: `radial-gradient(closest-side, rgba(255,140,40,${0.42 * glow}), rgba(255,120,30,0))` }} />
-      <svg width={2 * R} height={2 * R} viewBox={`0 0 ${2 * R} ${2 * R}`} style={{ position: "relative", filter: "drop-shadow(0 20px 30px rgba(0,0,0,.55))" }}>
+      <svg width={2 * R} height={2 * R} viewBox={`0 0 ${2 * R} ${2 * R}`} style={{ position: "relative" }}>
         <defs>
-          <radialGradient id="dface" cx="40%" cy="32%" r="75%"><stop offset="0" stopColor="#fffaf0" /><stop offset=".65" stopColor="#efe1c4" /><stop offset="1" stopColor="#cdb48a" /></radialGradient>
-          <linearGradient id="drim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#f2f2f2" /><stop offset=".5" stopColor="#9a9a9a" /><stop offset="1" stopColor="#5a5a5a" /></linearGradient>
+          <radialGradient id={gid + "f"} cx="40%" cy="32%" r="75%"><stop offset="0" stopColor="#fffaf0" /><stop offset=".65" stopColor="#efe1c4" /><stop offset="1" stopColor="#cdb48a" /></radialGradient>
+          <linearGradient id={gid + "r"} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#f2f2f2" /><stop offset=".5" stopColor="#9a9a9a" /><stop offset="1" stopColor="#5a5a5a" /></linearGradient>
         </defs>
-        <circle cx={R} cy={R} r={R - 2} fill="url(#drim)" />
-        <circle cx={R} cy={R} r={R - 12} fill="url(#dface)" />
+        <circle cx={R} cy={R} r={R - 2} fill={`url(#${gid}r)`} />
+        <circle cx={R} cy={R} r={R - 12} fill={`url(#${gid}f)`} />
         {Array.from({ length: 31 }, (_, i) => { const a = ((-135 + i * 9) - 90) * Math.PI / 180, big = i % 5 === 0, r1 = R - 20, r2 = R - (big ? 40 : 30), hot = i / 30 <= fr * kn; return <line key={i} x1={R + r1 * Math.cos(a)} y1={R + r1 * Math.sin(a)} x2={R + r2 * Math.cos(a)} y2={R + r2 * Math.sin(a)} stroke={hot ? "#d0521f" : "#6b5a44"} strokeWidth={big ? 4 : 2} strokeLinecap="round" />; })}
         {[200, 300, 400, 500].map((v, i) => { const a = ((-135 + i * 90) - 90) * Math.PI / 180, r = R - 58; return <text key={v} x={R + r * Math.cos(a)} y={R + r * Math.sin(a) + 7} textAnchor="middle" fontFamily={SANS} fontWeight={800} fontSize={18} fill="#5a4630">{v}</text>; })}
         <g transform={`rotate(${ang} ${R} ${R})`}>
           <path d={`M ${R - 7} ${R + 14} L ${R} ${R - (R - 34)} L ${R + 7} ${R + 14} Z`} fill={C.wine} />
         </g>
-        <circle cx={R} cy={R} r={20} fill="url(#drim)" stroke="#444" strokeWidth={1} />
+        <circle cx={R} cy={R} r={20} fill={`url(#${gid}r)`} stroke="#444" strokeWidth={1} />
       </svg>
       <div style={{ position: "relative", marginTop: 6, fontFamily: SERIF, fontSize: 92, lineHeight: 1, ...goldText(8, e(t, at + 1.0, at + 2.0)) }}>{Math.round(200 + (T - 200) * kn)}°F</div>
       {sub && <div style={{ position: "relative", display: "inline-block", marginTop: 8, padding: "7px 18px", borderRadius: 30, background: `linear-gradient(180deg, ${C.wine}, ${C.wineD})`, color: C.goldL, fontFamily: SANS, fontWeight: 800, fontSize: 20, letterSpacing: 4, opacity: glow, boxShadow: "0 10px 24px rgba(0,0,0,.45)", whiteSpace: "nowrap" }}>{sub}</div>}
