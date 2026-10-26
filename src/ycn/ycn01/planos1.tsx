@@ -67,9 +67,9 @@ export const P03Agarra: React.FC = () => {
 
 // ---------- 4 · afuera: el letrero rosa bajo la lluvia ----------
 export const P04Fachada: React.FC = () => (
-  <Afuera cl={[mira(0, 2700, 100, 0.9), mira(130, 2050, 660, 1.1, { curva: "inout" })]} sp={{}}
+  <Afuera cl={[mira(0, 2700, -110, 0.9), mira(130, 2050, 660, 1.1, { curva: "inout" })]} sp={{}}
     gente={[{ l: LIGA, ruta: [{ f: 0, x: 1500 }, { f: 130, x: 2150 }], c: "feliz", mD: <Bola s={0.8} /> }, { l: LIGA3, ruta: [{ f: 0, x: 1300 }, { f: 130, x: 1950 }], c: "risa", habla: [[30, 110]] }]}
-    hud={<><Pildora texto="HOLLIS LANES · ROUTE 4 · HAMILTON, OH" x={960} y={140} desde={50} /><HudDia dia={1} desde={999} /></>} />
+    hud={<><Pildora texto="HOLLIS LANES · ROUTE 4 · HAMILTON, OH" x={960} y={960} desde={50} /><HudDia dia={1} desde={999} /></>} />
 );
 
 // ---------- 5 · la Route 4, cómo llegamos: autos, el letrero que zumba ----------
@@ -180,7 +180,7 @@ export const P14Cal: React.FC = () => {
   return (
     <Maquinas cl={[mira(0, 1700, 600, 1.4), mira(k(71.5), 1880, 600, 1.8, { curva: "inout" }), mira(k(74.7), 1900, 600, 2.0, { curva: "inout" })]} sp={{ encendidas: [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] }}
       gente={[{ l: CAL, x: 1830, p: [{ f: 0, v: "agarrarAlto" }, { f: 40, v: { hD: 120, cD: 40, hI: 100, cI: 30 } }, { f: 80, v: "agarrarAlto" }, { f: 130, v: { hD: 100, cD: 60, hI: 110, cI: 30 } }], c: "determinado", mI: <Linterna />, d: 1 }]}
-      hud={<><Rotulo t="CAL · 36 · Nell's dad" x={1100} y={140} desde={k(69.5)} flecha="izq" /><Pildora texto="THE MACHINE ROOM" x={960} y={960} desde={10} /></>} />
+      hud={<><div style={{ position: "absolute", left: 0, right: 0, top: 90, height: 150, background: "rgba(8,6,10,0.7)" }} /><Rotulo t="CAL · 36 · Nell's dad" x={1100} y={130} desde={k(69.5)} flecha="izq" /><Pildora texto="THE MACHINE ROOM" x={960} y={960} desde={10} /></>} />
   );
 };
 
@@ -285,14 +285,14 @@ export const P23Cinco: React.FC = () => {
   const k = kDe(130.48);
   const xs = [1550, 1700, 1900, 2100, 2300];
   return (
-    <Sala cl={[mira(0, 1925, 640, 1.6), mira(k(137.5), 1925, 650, 1.5, { curva: "inout" })]} sp={{ cerradas: [8] }}
+    <Sala cl={[mira(0, 1925, 640, 1.6), mira(k(137.5), 1925, 650, 1.5, { curva: "inout" })]} sp={{}}
       gente={[
         { l: CAL, x: xs[0], p: "brazosCruzados", c: "neutral", mI: <Linterna prendida={false} /> }, { l: NELL, x: xs[1], p: "parado", c: "neutral", mD: <Walkie s={0.8} /> },
         { l: DOT, x: xs[2], p: "manosCintura", c: "picaro", mD: <Bola color="#ff5fa8" s={0.8} />, d: -1 }, { l: RAFI, x: xs[3], p: "parado", c: "feliz", d: -1 }, { l: MARLON, x: xs[4], p: "parado", c: "picaro", d: -1, mD: <Maletin /> },
       ]}
       hud={<>
         {["a mechanic", "his kid", "a retired nurse", "a cook", "a salesman"].map((t, i) => <Dice key={t} quien="otro" t={t} x={330 + i * 290} y={i % 2 ? 300 : 230} desde={k(130.6 + i * 1.1)} tam={52} rot={-4 + i * 2} />)}
-        <Dice quien="otro" t="5 strangers. 1 bowling alley." x={960} y={860} desde={k(135.2)} centro tam={76} />
+        <Dice quien="otro" t="5 strangers. 1 bowling alley." x={960} y={80} desde={k(135.2)} centro tam={76} />
       </>} />
   );
 };
@@ -325,7 +325,8 @@ export const P25Golpe: React.FC = () => {
 export const P26Tv: React.FC = () => {
   const k = kDe(153.44);
   return (
-    <Sala cl={[mira(0, PP.tv, 120, 2.2), mira(k(158), PP.tv, 160, 2.6, { curva: "inout" }), mira(k(161), PP.tv - 150, 450, 1.1, { curva: "inout" })]} snack sp={{ tv: "alerta" }}
+    <Sala cl={[mira(0, PP.tv, 120, 2.2), mira(k(158), PP.tv, 160, 2.6, { curva: "inout" }), mira(k(161), PP.tv - 80, 430, 1.4, { curva: "inout" })]} snack sp={{ tv: "alerta" }}
+      gente={[{ l: LIGA, x: -380, p: "parado", c: "feliz", d: 1, mD: <Bola s={0.8} /> }, { l: LIGA2, x: -230, p: "hablar", c: "risa", d: -1, habla: [[0, 400]] }, { l: LIGA3, x: -90, p: "brazosCruzados", c: "feliz", d: -1 }, { l: PINPAL, x: 60, p: "celebrar", c: "risa", d: 1 }]}
       detras={[{ l: RAFI, x: -800, p: "pensar", c: [{ f: 0, v: "neutral" }, { f: k(160), v: "duda" }], mir: { x: 0.3, y: -0.8 }, d: 1 }]}
       hud={<><HudDia dia={1} desde={9999} hora="7:52 PM" /><Dice quien="tv" t="STAY INDOORS." x={1250} y={560} desde={k(160.5)} tam={72} /><Dice quien="tv" t="AVOID CONTACT WITH ANYONE WHO APPEARS ILL." x={960} y={980} desde={k(163.5)} centro tam={56} /></>} />
   );

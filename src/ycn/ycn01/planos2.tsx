@@ -80,8 +80,8 @@ export const P37Banco: React.FC = () => {
 export const P38Cara: React.FC = () => {
   const k = kDe(220.9);
   return (
-    <Sala cl={[mira(0, BA + 170, 700, 2.6), mira(k(226.4), BA + 170, 690, 3.1, { curva: "lineal" })]} banco zapatos sp={{ tv: "alerta" }}
-      gente={[{ l: DOT, x: BA + 170, p: "agacharse", c: [{ f: 0, v: "determinado" }, { f: k(221.8), v: "sorpresa" }, { f: k(224.5), v: "miedo" }], d: -1, mD: TOALLA, mir: { x: -0.6, y: 0.7 } }]}
+    <Sala cl={[mira(0, BA + 20, 700, 2.6), mira(k(226.4), BA + 30, 690, 3.1, { curva: "lineal" })]} banco zapatos sp={{ tv: "alerta" }}
+      gente={[{ l: DOT, x: BA + 10, p: "agacharse", c: [{ f: 0, v: "determinado" }, { f: k(221.8), v: "sorpresa" }, { f: k(224.5), v: "miedo" }], d: -1, mD: TOALLA, mir: { x: -0.6, y: 0.7 } }]}
       hud={<Dice quien="rafi" t="she had never seen that." x={300} y={820} desde={k(225)} tam={64} />} />
   );
 };
@@ -359,9 +359,9 @@ export const P58Palanca: React.FC = () => {
 
 // ---------- 59 · dieciséis máquinas se paran ----------
 export const P59Paran: React.FC = () => (
-  <Maquinas cl={[mira(0, 1900, 620, 1.6), mira(160, 2000, 600, 1.2, { curva: "inout" })]} sp={{ encendidas: [], luz: "noche" }}
+  <Maquinas cl={[mira(0, 1880, 709, 1.6), mira(160, 1930, 721, 1.45, { curva: "inout" })]} sp={{ encendidas: [], luz: "noche" }}
     gente={[{ l: CAL, x: 1800, p: [{ f: 0, v: "agarrarAlto" }, { f: 40, v: "manosCara" }], c: [{ f: 0, v: "determinado" }, { f: 40, v: "sorpresa" }], d: 1, mI: <Linterna />, luz: RIM.linterna }]}
-    hud={<Dice quien="rafi" t="all sixteen stopped." x={960} y={150} desde={4} centro tam={70} />} />
+    hud={<><div style={{ position: "absolute", left: 0, right: 0, top: 40, height: 170, background: "rgba(8,6,10,0.72)" }} /><Dice quien="rafi" t="all sixteen stopped." x={960} y={80} desde={4} centro tam={76} /></>} />
 );
 
 // ---------- 60 · los golpes se vuelven lentos, más bajos… ----------
@@ -604,8 +604,20 @@ export const P79Uno: React.FC = () => {
   );
 };
 
-// ---------- 80 · pantalla final: el Ep. 2 ----------
+// ---------- 80 · pantalla final: el Ep. 2 (tarjeta a la izquierda; la puerta del freezer golpea y Rafi retrocede a la derecha) ----------
+const GOLPES = [40, 52, 64, 160, 172, 184];
+const Toc: React.FC = () => {
+  const f = useF();
+  return (
+    <>
+      {GOLPES.map((g) => {
+        const u = interpolate(f, [g, g + 4, g + 14], [0, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+        return u > 0 ? <div key={g} style={{ position: "absolute", left: 900, top: 300, fontFamily: F_HUD, fontWeight: 800, fontSize: 90 + 30 * u, color: "#f4efe4", opacity: u, transform: `rotate(${g % 3 === 0 ? -6 : 5}deg)`, textShadow: "0 0 24px rgba(159,196,255,0.7)" }}>KNOCK</div> : null;
+      })}
+    </>
+  );
+};
 export const P80Final: React.FC = () => (
-  <Final ep={2} titulo={"Someone Is Knocking\nFrom Inside The Freezer"} fondo={<Cocina cl={[mira(0, CP.puerta, 500, 1.2), mira(300, CP.puerta - 200, 500, 1.0, { curva: "inout" })]} sp={{ luz: "noche", golpes: [40, 52, 64, 160, 172, 184] }}
-    gente={[{ l: RAFI, x: CP.puerta + 460, p: "encogerse", c: "miedo", d: -1, mI: <Linterna />, luz: RIM.linterna }]} />} />
+  <Final ep={2} lado titulo={"Someone Is Knocking\nFrom Inside The Freezer"} encima={<Toc />} fondo={<Cocina cl={[mira(0, CP.puerta - 26, 715, 1.52), mira(300, CP.puerta + 40, 705, 1.6, { curva: "inout" })]} sp={{ luz: "noche", golpes: GOLPES }}
+    gente={[{ l: RAFI, ruta: [{ f: 0, x: CP.puerta + 420 }, { f: 60, x: CP.puerta + 470, curva: "out" }, { f: 160, x: CP.puerta + 470 }, { f: 200, x: CP.puerta + 490, curva: "out" }], p: "encogerse", c: "miedo", d: -1, mI: <Linterna />, luz: RIM.linterna }]} />} />
 );
