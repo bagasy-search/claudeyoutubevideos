@@ -85,6 +85,11 @@ _dur = lambda f: float(subprocess.check_output(["ffprobe", "-v", "error", "-show
 CLN = {f[2:-4]: _dur(PUB + f) for f in os.listdir(PUB) if f.startswith("c_") and f.endswith(".mp4")}
 RATE = {k: 0.55 for k in CLN if k[0] == "c" and k[1:].isdigit()}   # agnes (~2,7 s, sin audio): cámara lenta en el render
 CLN = {k: v / RATE.get(k, 1) for k, v in CLN.items()}
+OFF, SRC = {}, {}   # LTX 25-oct: v01 (28 s, 3 tomas con corte) -> v01_1/_2/_3, cada una anclada a su frase
+for k in [k for k in CLN if k[0] == "v" and k[1:].isdigit()]:
+    for j, (o, l) in enumerate([(0.2, 9.4), (10.2, 8.4), (19.2, 8.4)], 1):
+        if CLN[k] >= o + l: CLN[f"{k}_{j}"] = l; OFF[f"{k}_{j}"] = o; SRC[f"{k}_{j}"] = k
+    del CLN[k]
 # ---------------- planos: cada foto (cNN, con su clip agnes si llegó) y cada clip LTX en SU frase ----------------
 SH = [
 ("h_lot_flags", "You're standing next to a silver SUV"), ("h_lanyard", "a young man with a lanyard around his neck"),
@@ -141,6 +146,8 @@ SH = [
 ("c44", "I'm still making peace with it"), ("e_whiteboard", "a number on a whiteboard"), ("c41", "and the last day of the month"),
 ("e_sunset", "You'll laugh when you hear which one"), ("c45", "I'll see you in the next one"),
 ]
+LTXB = [(f"v{i // 3 + 1:02d}_{i % 3 + 1}", ph) for i, (ph, _) in enumerate(json.load(open("D:/rtmp_enhc04/ltx_av/beats_" + SLUG + ".json", encoding="utf8")))]
+SH = [x for x in SH if x[1] not in {ph for _, ph in LTXB}] + LTXB   # 25-oct: Héctor HACIENDO lo que narra (LTX 3 tomas)
 for n, ph in SH:
     a = at(ph) if ph != "x" else None
     if a is not None: BEATS.append(dict(a=a, base="img:" + n, tr=None))
@@ -275,7 +282,7 @@ used = set()
 for b in BEATS:
     if b["base"].startswith("img:"):
         i = b["base"][4:]
-        if i in used or not (os.path.exists(PUB + "i_" + i + ".jpg") or os.path.exists(PUB + "c_" + i + ".mp4")): b["base"] = "skip"
+        if i in used or not (os.path.exists(PUB + "i_" + i + ".jpg") or i in CLN): b["base"] = "skip"
         used.add(i)
 BEATS = [b for b in BEATS if b["base"] != "skip"]
 def ov_av(a, b): return any(not (b <= w["ms"] or a >= w["me"]) for w in AVW)
@@ -369,6 +376,14 @@ for i, g in enumerate(segs):
     if pe < b - 1.0: add.append({"a": round(pe + 0.3, 2), "k": "w", "view": ["floor", "lot", "desk", "wide"][i % 4], "tr": "portal"})
 segs = sorted(segs + add, key=lambda g: g["a"])
 
+# sin flashes: un plano (no avatar) de menos de 1 s se funde con el anterior
+out = []
+for i, g in enumerate(segs):
+    b = segs[i + 1]["a"] if i + 1 < len(segs) else END
+    if out and g["k"] != "av" and b - g["a"] < 1.0: continue
+    out.append(g)
+segs = out
+
 def push(v, k=0.1):
     p, l, f = V[v]; return [round(p[i] + (l[i] - p[i]) * k, 3) for i in range(3)], l, f
 keys = []
@@ -396,7 +411,7 @@ ov = [o for o in OVS if not (o["k"] == "tag" and "pt" in o and base_at(o["a"] + 
 for o in ov:   # piezas grandes sobre el avatar: abajo, sin taparle la cara
     if o['k'] in ('big', 'money') and ov_av(o['a'], o['b']): o['y'] = 900; o['size'] = min(o.get('size', 220), 130)
 ev = {k: sorted(v) for k, v in EVR.items()}; ev["padq"] = sorted(PADQ, key=lambda x: x["a"])
-clips = sorted(f[2:-4] for f in os.listdir(PUB) if f.startswith("c_") and f.endswith(".mp4"))
+clips = sorted(CLN)
 reel = os.path.exists(REEL)
 dur_of = lambda f: float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).decode())
 rl = dur_of(REEL) if reel else 0
@@ -404,7 +419,7 @@ json.dump(segs, open(S + "segs.json", "w", encoding="utf8"), ensure_ascii=False)
 json.dump(ov, open(S + "ov.json", "w", encoding="utf8"), ensure_ascii=False)
 json.dump({"keys": ded}, open(S + "cam.json", "w", encoding="utf8"))
 json.dump(ev, open(S + "ev.json", "w", encoding="utf8"))
-json.dump({"reel": reel, "reelLen": round(rl, 3), "clips": clips, "clipLen": {c: round(CLN.get(c, dur_of(PUB + "c_" + c + ".mp4")), 2) for c in clips}, "rate": {c: RATE[c] for c in clips if c in RATE}, "end": round(END, 3)}, open(S + "avail.json", "w", encoding="utf8"))
+json.dump({"reel": reel, "reelLen": round(rl, 3), "clips": clips, "clipLen": {c: round(CLN[c], 2) for c in clips}, "rate": {c: RATE[c] for c in clips if c in RATE}, "off": OFF, "src": SRC, "end": round(END, 3)}, open(S + "avail.json", "w", encoding="utf8"))
 shots = [{"a": g["a"], "b": round(segs[i + 1]["a"] if i + 1 < len(segs) else END, 2), "k": g["k"]} for i, g in enumerate(segs)]
 json.dump({"end": round(END, 3), "shots": shots}, open(S + "edl.json", "w", encoding="utf8"))
 dur = [(segs[i + 1]["a"] if i + 1 < len(segs) else END) - g["a"] for i, g in enumerate(segs)]
