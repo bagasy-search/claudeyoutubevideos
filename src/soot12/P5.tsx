@@ -10,8 +10,8 @@ import { Drakkar, Antorcha, Llamas, Tienda } from "./vik";
 // brea, el barco de Gokstad (23 m, 32 remeros, 64 escudos), los rodillos, se van antes de que prendas la antorcha, menos de un
 // metro de calado, y la mitad del ejército que vuelve por el río detrás de vos.
 export const CAM5: Key[] = [
-  [483.71, 5300, 640, 0.6], [486.13, 6900, 700, 0.9], [488.09, 7050, 740, 1.3], [494.35, 7300, 760, 1.0],
-  [525.53, 7900, 700, 0.75], [528.8, 8000, 720, 0.85], [533.13, 7650, 820, 2.0], [538.05, 7800, 780, 1.1], [542.51, 8400, 760, 0.7],
+  [483.71, 5300, 640, 0.6], [486.13, 6380, 720, 1.05], [488.09, 6400, 730, 1.35], [491.4, 6410, 735, 1.45], [494.35, 7300, 760, 1.0],
+  [525.53, 7900, 700, 0.75], [528.8, 8000, 720, 0.85], [532.6, 7850, 720, 0.95], [533.6, 7540, 760, 1.6], [538.05, 7800, 780, 1.1], [542.51, 8400, 760, 0.7],
   [560.45, 7300, 690, 0.85], [562.35, 7260, 720, 0.95], [565.39, 7250, 740, 1.05],
 ];
 
@@ -22,13 +22,13 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
       {/* 0 · TRAMPA 5 · tu señor cambia el plan: olvidate de las tiendas, a los barcos */}
       <Escena t={t} t0={483.71} t1={491.4} zoom={0} entra="corte" golpes={[488.2, 490.0]}>
         <Mundo t={t} cam={cam}>
-          {t > 486 && (
-            <>
-              <Persona x={6980} y={gy(6980) + 6} h={260} t={t} seed={4} ropa={SENOR} expr="enojado" habla={t < 494} bD={t > 489.9 ? 120 : 30} cD={10} />
-              <Persona x={7120} y={gy(7120) + 6} h={250} t={t} seed={3} ropa={SAJON} expr={t > 490 ? "enojado" : "sorpresa"} flip bD={t > 490 ? 90 : 30} cD={20} />
-              {t > 490 && <Antorcha x={7060} y={gy(7120) - 190} s={0.38} t={t} />}
-            </>
-          )}
+          {t > 485.6 && (() => { const lit = t > 489.6; const tx = t < 488.9 ? 6400 : t < 489.6 ? 6400 - prog(t, 488.9, 489.4) * 90 : 6310 + prog(t, 489.6, 490.1) * 120; const ty = t < 488.9 ? 700 : t < 489.6 ? 700 + prog(t, 488.9, 489.4) * 60 : 760 - prog(t, 489.6, 490.1) * 110; return <>
+            {/* tu señor llega, señala los barcos y da la orden */}
+            <Persona x={6560 - (1 - prog(t, 485.6, 486.8)) * 300} y={gy(6560) + 6} h={260} t={t} seed={4} ropa={SENOR} expr="enojado" habla={t > 486.8 && t < 490.6} camina={t < 486.8 ? 1.2 : 0} flip bD={t > 489.9 ? 130 : 30} cD={10} bI={t > 487.4 && t < 489.9 ? 60 : 10} cI={60} />
+            {/* el chico: escucha, va a la fogata y prende la antorcha */}
+            <Persona x={6420 - prog(t, 488.6, 489.2) * 40} y={gy(6420) + 6} h={240} t={t} seed={3} ropa={SAJON} expr={lit ? "enojado" : t > 488.2 ? "miedo" : "sorpresa"} mira={t < 488.6 ? 0.7 : -0.5} camina={t > 488.6 && t < 489.2 ? 1 : 0} inclina={t > 488.9 && t < 489.6 ? -14 : 0} bD={lit ? 150 : 70} cD={20} />
+            <Antorcha x={tx} y={ty} s={0.34} t={t} apagada={!lit} rot={t > 488.9 && t < 489.6 ? -30 : 0} />
+          </>; })()}
         </Mundo>
         <Cartel t={t} t0={483.8} t1={486.0} n={5} nombre="THE SHIPS" />
         <Ch t={t} t0={486.3} t1={489.9} text="NEW PLAN" color={C.violeta} x={120} y={150} size={60} />
@@ -36,13 +36,15 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
         <G t={t} t0={490.0} text="BURN THE DRAGONS" y={900} size={120} color={C.ambar} />
       </Escena>
       {/* 1 · la fantasía: los barcos arden y los vikingos quedan atrapados de tu lado del mar · buena idea, todos la tuvieron, casi nunca funcionó */}
-      <Escena t={t} t0={491.4} t1={498.49} entra="iris" ix={960} iy={700} golpes={[492.4, 494.4, 495.7, 497.0]}>
+      <Escena t={t} t0={491.4} t1={498.49} entra="iris" ix={960} iy={700} zoom={0.02} golpes={[492.4, 494.4, 495.7, 497.0]}>
         <AbsoluteFill style={{ background: "linear-gradient(180deg, #2a0e2a, #8a2a2a 80%)" }} />
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><rect x={0} y={780} width={1920} height={300} fill="#1e2a5a" /></svg>
-        {[[520, 760, 0.5], [1100, 790, 0.56], [1620, 760, 0.46]].map(([x, y, s], i) => <Drakkar key={i} x={x} y={y} s={s} t={t} quema={prog(t, 491.6 + i * 0.25, 493.4 + i * 0.25)} />)}
-        {[0, 1, 2].map((i) => <Llamas key={i} t={t} x={520 + i * 560} y={620} s={1.4 * ent(t, 491.8 + i * 0.25)} ancho={220} seed={i + 3} />)}
+        {[[520, 760, 0.5], [1100, 790, 0.56], [1560, 760, 0.46]].map(([x, y, s], i) => <Drakkar key={i} x={x} y={y} s={s} t={t} quema={i === 1 ? 0 : prog(t, 491.6 + i * 0.25, 493.4 + i * 0.25)} />)}
+        {[0, 2].map((i) => <Llamas key={i} t={t} x={520 + i * 520} y={620} s={1.4 * ent(t, 491.8 + i * 0.25)} ancho={220} seed={i + 3} />)}
+        {/* el del medio no prende: humo gris que sube y se apaga */}
+        {t > 492.2 && Array.from({ length: 7 }, (_, i) => { const k = ((t - 492.2) * 0.5 + i / 7) % 1; return <div key={i} style={{ position: "absolute", left: 1100 + Math.sin(k * 6 + i) * 30 - 40 - k * 60, top: 700 - k * 360, width: 80 + k * 90, height: 80 + k * 90, borderRadius: "50%", background: "#8a86a0", opacity: (1 - k) * 0.55 }} />; })}
         <Particulas t={t} tipo="brasas" n={60} seed={9} />
-        {t > 492.4 && Array.from({ length: 5 }, (_, i) => <Persona key={i} x={300 + i * 340} y={1010} h={280} t={t} seed={540 + i} ropa={VIK(i)} casco="vikingo" barba={barbaDe(i)} expr="triste" sombra="#1a0a14" />)}
+        {t > 492.4 && Array.from({ length: 5 }, (_, i) => { const w = Math.sin(t * 6 + i * 1.3); return <Persona key={i} x={300 + i * 330} y={1000} h={250} t={t} seed={540 + i} ropa={VIK(i)} casco="vikingo" barba={barbaDe(i)} expr="triste" sombra="#1a0a14" aparece={492.4 + i * 0.1} bD={120 + w * 40} cD={30} bI={120 - w * 40} cI={30} salta={493.0 + i * 0.7} flip={i % 2 === 0} />; })}
         <Ch t={t} t0={492.4} t1={494.3} text="TRAPPED ON YOUR SIDE OF THE SEA" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={56} />
         <Ch t={t} t0={494.4} text="A GOOD IDEA ✓" color={C.lima} tinta={C.noche} x={300} y={150} size={56} />
         <Ch t={t} t0={495.7} text="EVERYBODY HAD IT" color={C.teal} tinta={C.noche} x={1000} y={150} size={56} />
@@ -53,51 +55,63 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
         <AbsoluteFill style={{ background: "linear-gradient(180deg, #16123d, #2a3a7a)" }} />
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><rect x={0} y={790} width={1920} height={290} fill="#1d4f7a" /></svg>
         <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `scale(${interpolate(t, [498.5, 506.1, 507.0, 518.1], [1.02, 1.1, 0.92, 0.95], { extrapolateRight: "clamp" })})`, transformOrigin: "960px 700px" }}>
-          <Drakkar x={960} y={740} s={1.05} t={t} remos={t > 510.6 ? 1.2 : 0} escudos={t > 515} vela={0} />
-          {t > 510.6 && Array.from({ length: 16 }, (_, i) => t > 510.6 + i * 0.12 && <div key={i} style={{ position: "absolute", left: 580 + i * 48, top: 680 + Math.sin(t * 3.6 + i * 0.2) * 4, transform: `scale(${ent(t, 510.6 + i * 0.12)})` }}><svg width={40} height={50} viewBox="-20 -25 40 50" style={{ overflow: "visible" }}><circle cx={0} cy={4} r={16} fill="#f2b48a" stroke="#2a1530" strokeWidth={4} /><path d="M -18 0 Q 0 -30 18 0 Z" fill="#9aa4b8" stroke="#2a1530" strokeWidth={4} /></svg></div>)}
+          <Drakkar x={960} y={780} s={0.95} t={t} remos={t > 510.6 ? 1.2 : 0} escudos={t > 515} vela={0} />
+          {t > 510.6 && Array.from({ length: 16 }, (_, i) => t > 510.6 + i * 0.12 && <div key={i} style={{ position: "absolute", left: 620 + i * 44, top: 728 + Math.sin(t * 3.6 + i * 0.2) * 4, transform: `scale(${ent(t, 510.6 + i * 0.12)})` }}><svg width={40} height={50} viewBox="-20 -25 40 50" style={{ overflow: "visible" }}><circle cx={0} cy={4} r={16} fill="#f2b48a" stroke="#2a1530" strokeWidth={4} /><path d="M -18 0 Q 0 -30 18 0 Z" fill="#9aa4b8" stroke="#2a1530" strokeWidth={4} /></svg></div>)}
           {/* gotas: mojado */}
-          {t > 505.4 && t < 507.2 && Array.from({ length: 16 }, (_, i) => { const k = ((t * 1.4 + i / 16) % 1); return <div key={i} style={{ position: "absolute", left: 500 + i * 60, top: 620 + k * 160, width: 12, height: 20, borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%", background: "#9ad8ff", opacity: 1 - k }} />; })}
+          {t > 505.4 && t < 507.2 && Array.from({ length: 16 }, (_, i) => { const k = ((t * 1.4 + i / 16) % 1); return <div key={i} style={{ position: "absolute", left: 540 + i * 55, top: 680 + k * 160, width: 12, height: 20, borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%", background: "#9ad8ff", opacity: 1 - k }} />; })}
         </div>
         {/* regla de 23 m */}
-        {t > 507.8 && (
+        {t > 507.8 && t < 510.6 && (
           <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
-            <line x1={330} y1={930} x2={330 + 1260 * prog(t, 507.8, 509.0)} y2={930} stroke={C.ambar} strokeWidth={12} />
-            <line x1={330} y1={900} x2={330} y2={960} stroke={C.ambar} strokeWidth={10} />
-            {t > 509 && <line x1={1590} y1={900} x2={1590} y2={960} stroke={C.ambar} strokeWidth={10} />}
+            <line x1={540} y1={1005} x2={540 + 840 * prog(t, 507.8, 509.0)} y2={1005} stroke={C.ambar} strokeWidth={12} />
+            <line x1={540} y1={975} x2={540} y2={1035} stroke={C.ambar} strokeWidth={10} />
+            {t > 509 && <line x1={1380} y1={975} x2={1380} y2={1035} stroke={C.ambar} strokeWidth={10} />}
           </svg>
         )}
+        {/* vos con la antorcha: golpeás el casco, olés la brea, te gotea el río encima */}
+        {(() => { const kx = -160 + prog(t, 498.6, 500.4) * 450; const golpe = t > 501.5 && t < 503.2 ? Math.abs(Math.sin((t - 501.5) * 9)) * 50 : 0; return <>
+          <Persona x={kx} y={1000} h={420} t={t} seed={3} ropa={SAJON} camina={t < 500.4 ? 1.2 : 0} mira={0.7} expr={t > 510.6 ? "miedo" : t > 507.7 ? "sorpresa" : t > 505.4 ? "triste" : t > 503.6 ? "enojado" : "neutro"}
+            bD={t > 501.5 && t < 503.2 ? 70 + golpe : 50} cD={t > 501.5 && t < 503.2 ? 60 : 30} inclina={t > 503.6 && t < 505.2 ? 10 : 0}
+            manoI={<g><rect x={-7} y={-40} width={14} height={180} rx={5} fill="#8a5a32" stroke="#2a1530" strokeWidth={4} /><ellipse cx={0} cy={150} rx={22} ry={30} fill="#3a2418" stroke="#2a1530" strokeWidth={4} />{[0, 1, 2].map((i) => <path key={i} d={`M ${-8 + i * 8} 180 Q ${-20 + i * 8} ${220 + ((t * 60 + i * 30) % 60)} ${-4 + i * 8} 260`} stroke="#8a8aa0" strokeWidth={9} fill="none" strokeLinecap="round" opacity={0.6} />)}</g>} bI={170} cI={10} />
+          {t > 503.6 && t < 505.4 && <Emote t={t} t0={503.6} tipo="enojo" x={kx} y={560} s={0.8} />}
+          {t > 505.4 && t < 507.7 && <Emote t={t} t0={505.4} tipo="sudor" x={kx} y={560} s={0.8} />}
+          {t > 510.6 && <Emote t={t} t0={510.7} tipo="excl" x={kx} y={560} s={0.8} />}
+        </>; })()}
         <Ch t={t} t0={498.7} t1={507.6} text="LOOK AT WHAT YOU'RE BURNING" color={C.violeta} x={960} y={150} centro size={58} />
-        <Ch t={t} t0={501.5} t1={507.6} text="OVERLAPPING OAK PLANKS" color={C.ambar} tinta={C.noche} x={300} y={280} centro size={48} />
-        <Ch t={t} t0={503.6} t1={507.6} text="SOAKED IN TAR" color={C.rojo} x={960} y={280} centro size={48} />
-        <Ch t={t} t0={505.4} t1={507.6} text="WET FROM THE RIVER" color={C.teal} tinta={C.noche} x={1600} y={280} centro size={48} />
+        <Ch t={t} t0={501.5} t1={507.6} text="OVERLAPPING OAK PLANKS" color={C.ambar} tinta={C.noche} x={120} y={280} size={42} />
+        <Ch t={t} t0={503.6} t1={507.6} text="SOAKED IN TAR" color={C.rojo} x={790} y={280} size={42} />
+        <Ch t={t} t0={505.4} t1={507.6} text="WET FROM THE RIVER" color={C.teal} tinta={C.noche} x={1220} y={280} size={42} />
         <Ch t={t} t0={507.7} text="THE GOKSTAD SHIP" color={C.violeta} x={960} y={150} centro size={58} />
-        <Cuenta t={t} t0={508.6} de={0} a={23} dur={0.6} x={960} y={970} size={80} color={C.ambar} sufijo=" M+" />
-        <Cuenta t={t} t0={510.6} de={0} a={32} dur={1.9} x={420} y={280} size={150} color={C.crema} />
-        <Ch t={t} t0={511.0} text="MEN ON THE OARS" color={C.teal} tinta={C.noche} x={420} y={400} centro size={44} />
-        <Cuenta t={t} t0={515.0} de={0} a={64} dur={0.7} x={1500} y={280} size={150} color={C.rojo} />
-        <Ch t={t} t0={515.4} text="SHIELDS" color={C.rojo} x={1500} y={400} centro size={44} />
+        <Cuenta t={t} t0={508.6} t1={510.5} de={0} a={23} dur={0.6} x={960} y={935} size={70} color={C.ambar} sufijo=" M+" />
+        <Cuenta t={t} t0={510.6} de={0} a={32} dur={1.9} x={330} y={210} size={130} color={C.crema} />
+        <Ch t={t} t0={511.0} text="MEN ON THE OARS" color={C.teal} tinta={C.noche} x={330} y={320} centro size={44} />
+        <Cuenta t={t} t0={515.0} de={0} a={64} dur={0.7} x={1390} y={210} size={130} color={C.rojo} />
+        <Ch t={t} t0={515.4} text="SHIELDS" color={C.rojo} x={1610} y={210} centro size={44} />
       </Escena>
       {/* 3 · prenderle fuego a roble mojado, a oscuras, a mano, con alguien gritando */}
-      <Escena t={t} t0={518.17} t1={525.53} entra="barrido" golpes={[519.4, 520.6, 521.8, 523.0]}>
+      <Escena t={t} t0={518.17} t1={525.53} entra="barrido" zoom={0.02} golpes={[519.4, 520.6, 521.8, 523.0]}>
         <AbsoluteFill style={{ background: "linear-gradient(180deg, #0a0826, #241a5c 70%)" }} />
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><rect x={0} y={880} width={1920} height={200} fill="#1d3a5a" /></svg>
-        <Drakkar x={1250} y={760} s={0.95} t={t} />
+        {t > 522.5 && <Persona x={1360} y={850} h={300} t={t} seed={590} ropa={VIK(2)} casco="vikingo" barba={barbaDe(2)} expr="enojado" habla aparece={522.6} flip bD={110 + Math.sin(t * 12) * 15} cD={40} mira={-0.8} />}
+        <Drakkar x={1150} y={760} s={0.8} t={t} />
         <Persona x={560} y={1000} h={560} t={t} seed={3} ropa={SAJON} expr={t > 523 ? "miedo" : "enojado"} bD={100 + Math.sin(t * 14) * 10} cD={40} />
         <Antorcha x={800} y={560} s={0.75} t={t} apagada={Math.sin(t * 7) < 0.5} />
         {/* chispas que se apagan */}
         {Array.from({ length: 8 }, (_, i) => { const k = ((t * 2 + i / 8) % 1); return <div key={i} style={{ position: "absolute", left: 830 + k * 140 + i * 6, top: 560 + k * 120 - i * 4, width: 10, height: 10, borderRadius: 5, background: "#ffb24a", opacity: (1 - k) * 0.8 }} />; })}
         <Emote t={t} t0={521.0} tipo="sudor" x={420} y={470} s={1.2} />
-        {t > 523 && <Globo t={t} t0={523.0} x={1480} y={560} text="WHO'S THERE?!" cola="izq" size={58} />}
-        <Ch t={t} t0={519.4} text="WET OAK" color={C.teal} tinta={C.noche} x={1000} y={130} size={52} />
-        <Ch t={t} t0={520.6} text="IN THE DARK" color={C.violeta} x={1000} y={220} size={52} />
-        <Ch t={t} t0={521.8} text="BY HAND" color={C.ambar} tinta={C.noche} x={1000} y={310} size={52} />
-        <Ch t={t} t0={523.0} text="SOMEONE SHOUTING" color={C.rojo} x={1000} y={400} size={52} />
+        {t > 523 && <Globo t={t} t0={523.0} x={1490} y={480} text="WHO'S THERE?!" cola="izq" size={52} />}
+        <Ch t={t} t0={519.4} text="WET OAK" color={C.teal} tinta={C.noche} x={130} y={150} size={52} />
+        <Ch t={t} t0={520.6} text="IN THE DARK" color={C.violeta} x={130} y={250} size={52} />
+        <Ch t={t} t0={521.8} text="BY HAND" color={C.ambar} tinta={C.noche} x={760} y={150} size={52} />
+        <Ch t={t} t0={523.0} text="SOMEONE SHOUTING" color={C.rojo} x={760} y={250} size={52} />
       </Escena>
       {/* 4 · lo mejor custodiado del campamento: tesoro, arma y camino a casa · en rodillos, listos para volver al agua · la alarma: ya reman */}
       <Escena t={t} t0={525.53} t1={542.53} zoom={0} entra="corte" golpes={[528.9, 530.3, 531.7, 533.2, 538.6]}>
-        <Mundo t={t} cam={cam} e={{ barcosAlAgua: 538.6, cuerno: 538.1 }}>
+        <Mundo t={t} cam={cam} e={{ barcosAlAgua: 538.6, cuerno: 538.1 }} luna={[1760, 150, 70]}>
           {/* guardias junto a los barcos */}
-          {[7560, 7720, 8150, 8380, 8860].map((x, i) => <Persona key={i} x={x} y={gy(Math.min(x, 7600)) + 4} h={300} t={t} seed={560 + i} ropa={VIK(i + 1)} casco="vikingo" barba={barbaDe(i + 1)} expr={t > 538.1 ? "enojado" : "neutro"} flip={i % 2 === 0} opacity={x > 7600 ? 0 : 1} manoD={<LanzaMano a={50} inclina={-10} largo={380} />} />)}
+          {/* ronda: un guardia camina la orilla junto a los barcos; con la alarma corre a empujar */}
+          {(() => { const v = Math.cos(t * 0.7); const x = t < 538.1 ? 7470 + (Math.sin(t * 0.7) + 1) * 55 : 7580 - Math.min(1, (t - 538.1) / 0.6) * 20; return <Persona x={x} y={gy(x) + 4} h={300} t={t} seed={560} ropa={VIK(1)} casco="vikingo" barba={barbaDe(1)} expr={t > 538.1 ? "enojado" : "neutro"} flip={t < 538.1 ? v < 0 : false} camina={t < 538.1 ? (Math.abs(v) > 0.2 ? 0.9 : 0) : 0} inclina={t > 538.6 ? 18 : 0} bI={t > 538.6 ? 80 : 8} manoD={<LanzaMano a={50} inclina={-10} largo={380} />} />; })()}
+          <Persona x={7330} y={gy(7330) + 4} h={280} t={t} seed={565} ropa={VIK(4)} casco="vikingo" barba={barbaDe(4)} expr={t > 538.1 ? "sorpresa" : "neutro"} salta={538.2} mira={0.6} bD={t > 538.1 ? 140 : 20} cD={30} manoD={<LanzaMano a={40} inclina={-10} largo={360} />} />
           {/* rodillos de madera bajo el primer barco */}
           {t > 533.1 && (
             <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
@@ -109,8 +123,8 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
         <Ch t={t} t0={528.9} t1={533.0} text="TREASURE" color={C.ambar} tinta={C.noche} x={420} y={270} centro size={56} />
         <Ch t={t} t0={530.3} t1={533.0} text="WEAPON" color={C.violeta} x={960} y={270} centro size={56} />
         <Ch t={t} t0={531.7} t1={533.0} text="WAY HOME" color={C.teal} tinta={C.noche} x={1500} y={270} centro size={56} />
-        <Ch t={t} t0={533.3} t1={538.0} text="ON WOODEN ROLLERS" color={C.ambar} tinta={C.noche} x={120} y={170} size={56} />
-        <Ch t={t} t0={535.0} t1={538.0} text="READY TO SLIDE BACK IN" color={C.teal} tinta={C.noche} x={120} y={280} size={52} />
+        <Ch t={t} t0={533.3} t1={538.0} text="ON WOODEN ROLLERS" color={C.ambar} tinta={C.noche} x={120} y={880} size={56} />
+        <Ch t={t} t0={535.0} t1={538.0} text="READY TO SLIDE BACK IN" color={C.teal} tinta={C.noche} x={120} y={980} size={52} />
         <Flash t={t} t0={538.1} dur={0.18} color="#fff3c4" />
         <G t={t} t0={538.6} text="ALARM!" y={210} size={150} color={C.rojo} />
         <Ch t={t} t0={539.6} text="ROWING AWAY BEFORE YOU LIGHT A TORCH" color={C.violeta} x={960} y={390} centro size={52} />
@@ -124,6 +138,8 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
           <line x1={0} y1={600} x2={1920} y2={600} stroke="#cfe8ff" strokeWidth={8} />
         </svg>
         <Drakkar x={620 + prog(t, 547.8, 550.2) * 220} y={580} s={0.6} t={t} remos={t > 547.8 ? 1 : 0} />
+        {/* vikingo en su barco: pasa saludando */}
+        <Persona x={560 + prog(t, 547.8, 550.2) * 220} y={590} h={170} t={t} seed={595} ropa={VIK(3)} casco="vikingo" barba={barbaDe(3)} expr={t > 548.2 ? "feliz" : "neutro"} bD={t > 548.2 ? 150 + Math.sin(t * 12) * 20 : 20} cD={30} mira={0.7} />
         {/* barco «normal» de quilla honda, encallado */}
         {t > 547.8 && (
           <svg style={{ position: "absolute", left: 1100, top: 300, overflow: "visible", transform: `scale(${ent(t, 547.8)})`, transformOrigin: "300px 300px" }} width={600} height={600} viewBox="0 0 600 600">
@@ -133,6 +149,9 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
             <path d="M 200 560 L 240 520 L 270 560 M 360 560 L 400 520 L 430 560" stroke={C.rojo} strokeWidth={10} fill="none" />
           </svg>
         )}
+        {/* marineros ingleses empujando el barco encallado, sin que se mueva */}
+        {t > 548.0 && [0, 1].map((i) => { const emp = Math.sin(t * 7 + i) * 4; return <Persona key={i} x={1610 + i * 100} y={890} h={260} t={t} seed={596 + i} ropa={i ? SENOR : SAJON} expr="enojado" flip inclina={-24 + emp} bD={95} cD={20} bI={85} cI={20} aparece={548.0 + i * 0.15} />; })}
+        {t > 548.4 && <Emote t={t} t0={548.4} tipo="sudor" x={1610} y={660} s={0.8} />}
         {/* regla de calado */}
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
           <line x1={260} y1={600} x2={260} y2={600 + 120 * prog(t, 544.9, 545.6)} stroke={C.ambar} strokeWidth={12} />
@@ -142,10 +161,10 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
         <Ch t={t} t0={542.8} t1={544.8} text="THE TRAP INSIDE THE TRAP" color={C.rojo} x={960} y={150} centro size={60} />
         <G t={t} t0={545.0} text="< 1 METER OF WATER" y={200} size={110} color={C.crema} />
         <Ch t={t} t0={547.9} text="PLACES NO OTHER SHIP COULD GO" color={C.violeta} x={620} y={960} centro size={46} />
-        <Sello t={t} t0={548.6} text="STUCK" x={1400} y={720} size={76} rot={8} />
+        <Sello t={t} t0={548.6} text="STUCK" x={1400} y={985} size={70} rot={6} />
       </Escena>
       {/* 6 · la mitad del ejército puede no estar: 10 millas río arriba, saqueando, y vuelven de noche por el agua, detrás de vos */}
-      <Escena t={t} t0={550.21} t1={560.45} entra="zoom" golpes={[551.8, 554.0, 557.6]}>
+      <Escena t={t} t0={550.21} t1={560.45} entra="zoom" zoom={0.03} golpes={[551.8, 554.0, 557.6]}>
         <AbsoluteFill style={{ background: "#2f5a40" }} />
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
           {Array.from({ length: 40 }, (_, i) => <circle key={i} cx={(i * 211) % 1920} cy={(i * 137) % 1080} r={26} fill="#2a5038" />)}
@@ -166,21 +185,25 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
           const u = t < 557.6 ? ida : 1 - vuelta;
           return [0, 1, 2].map((i) => { const [x, y] = at(Math.max(0, Math.min(1, u - i * 0.06))); return <div key={i} style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) scale(0.16) scaleX(${t < 557.6 ? -1 : 1})` }}><Drakkar x={0} y={0} s={1} t={t} vela={1} remos={1} /></div>; });
         })()}
-        <div style={{ position: "absolute", left: 1330, top: 900 }}><Persona x={0} y={0} h={230} t={t} seed={3} ropa={SAJON} expr={t > 558 ? "miedo" : "neutro"} mira={0.6} /></div>
-        <Ch t={t} t0={550.4} text="HALF THE ARMY MIGHT NOT EVEN BE THERE" color={C.violeta} x={640} y={1010} centro size={46} />
+        <div style={{ position: "absolute", left: 1330, top: 900 }}><Persona x={0} y={0} h={230} t={t} seed={3} ropa={SAJON} expr={t > 558 ? "miedo" : t > 554 ? "sorpresa" : "neutro"} mira={t > 558 ? 0.8 : -0.6} miraY={t > 554 && t < 558 ? -0.6 : 0} flip={t > 558} salta={558.2}
+          bI={t > 554 && t < 557.8 ? 150 : 8} cI={t > 554 && t < 557.8 ? 120 : 10} bD={t > 558.2 ? 120 : 8} cD={t > 558.2 ? 30 : 10} /></div>
+        {t > 558.2 && <Emote t={t} t0={558.2} tipo="susto" x={1330} y={790} s={0.6} />}
+        <Ch t={t} t0={550.4} t1={553.8} text="HALF THE ARMY MIGHT NOT EVEN BE THERE" color={C.violeta} x={130} y={985} size={46} />
         <Ch t={t} t0={554.0} text="10 MILES UP THE RIVER" color={C.ambar} tinta={C.noche} x={420} y={330} centro size={50} />
         <Ch t={t} t0={555.0} text="RAIDING THE NEXT VILLAGE" color={C.rojo} x={420} y={430} centro size={46} />
-        <Ch t={t} t0={557.6} text="BACK IN THE DARK · BY WATER" color={C.teal} tinta={C.noche} x={1450} y={930} centro size={48} />
+        <Ch t={t} t0={557.6} text="BACK IN THE DARK · BY WATER" color={C.teal} tinta={C.noche} x={130} y={985} size={48} />
         <Sello t={t} t0={558.8} text="BEHIND YOU" x={880} y={640} size={76} rot={-8} />
       </Escena>
       {/* 7 · viniste a cortarles la retirada · terminás parado entre sus barcos y sus amigos */}
       <Escena t={t} t0={560.45} t1={565.6} zoom={0} entra="corte" golpes={[562.4]}>
-        <Mundo t={t} cam={cam} e={{ flota: 559.0 }}>
+        <Mundo t={t} cam={cam} e={{ flota: 560.6 }} luna={[1760, 330, 55]}>
           <Persona x={7280} y={gy(7280) + 4} h={300} t={t} seed={3} ropa={SAJON} expr="miedo" mira={Math.sin(t * 2.4) * 0.8} bD={30} cD={20} manoD={<LanzaMano a={50} inclina={-14} largo={420} />} />
-          {Array.from({ length: 6 }, (_, i) => <Persona key={i} x={6500 + i * 110 + (t - 560.45) * 60} y={862} h={260} t={t} seed={580 + i} ropa={VIK(i)} casco="vikingo" barba={barbaDe(i)} expr="enojado" flip={false} camina={1.2} />)}
+          {/* los que vuelven del saqueo: caminan, se frenan y giran la cabeza hacia vos */}
+          {Array.from({ length: 6 }, (_, i) => { const x = 6380 + i * 92 + Math.min(t - 560.45, 1.9 - i * 0.12) * 130; const para = t > 562.35 - i * 0.12; return <Persona key={i} x={x} y={862} h={260} t={t} seed={580 + i} ropa={VIK(i)} casco="vikingo" barba={barbaDe(i)} expr={para ? "enojado" : "neutro"} camina={para ? 0 : 1.2} mira={para ? 1 : 0.3} bD={para && i % 2 === 0 ? 80 : 20} cD={30} manoD={i % 2 === 1 ? <LanzaMano a={40} inclina={-10} largo={340} /> : undefined} />; })}
+          {t > 562.6 && [0, 2, 4].map((i) => <Emote key={i} t={t} t0={562.6 + i * 0.1} tipo="excl" x={6380 + i * 92 + (1.9 - i * 0.12) * 130} y={640} s={0.6} />)}
         </Mundo>
         <Ch t={t} t0={560.6} t1={562.3} text="YOU CAME TO CUT OFF THEIR ESCAPE" color={C.violeta} x={960} y={150} centro size={56} />
-        <G t={t} t0={562.4} text="BETWEEN THEIR SHIPS AND THEIR FRIENDS" y={220} size={80} color={C.crema} />
+        <G t={t} t0={562.4} text="BETWEEN THEIR SHIPS AND THEIR FRIENDS" y={150} size={74} color={C.crema} />
       </Escena>
     </AbsoluteFill>
   );

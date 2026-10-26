@@ -21,6 +21,15 @@ export const prog = (t: number, a: number, b: number) =>
 // ── escena: monta a sus hijos en [t0, t1 + SOLAPE) — la siguiente entra ENCIMA con su transición — y les aplica
 // un empuje de cámara sorteado (in/out, foco 35-65 %) + golpes de zoom en las palabras fuertes.
 export const SOLAPE = 0.34;
+// cámara de la Escena (foco en px + escala) para que los textos calculen su zona segura EN PANTALLA, no en el lienzo
+export const CamCtx = React.createContext({ ox: 960, oy: 540, S: 1 });
+// ubica un rectángulo (centro cx,cy · ancho w · alto h, en px del lienzo) para que en pantalla quede a ≥M px del borde
+export const enCuadro = (cam: { ox: number; oy: number; S: number }, cx: number, cy: number, w: number, h: number, M = 80) => {
+  const { ox, oy, S } = cam;
+  const sx = Math.min(Math.max(ox + (cx - ox) * S, M + (w * S) / 2), 1920 - M - (w * S) / 2);
+  const sy = Math.min(Math.max(oy + (cy - oy) * S, M + (h * S) / 2), 1080 - M - (h * S) / 2);
+  return { x: ox + (sx - ox) / S, y: oy + (sy - oy) / S };
+};
 export type Entrada = "iris" | "barrido" | "zoom" | "diag" | "corte" | "sube";
 const ENTRADAS: Entrada[] = ["iris", "barrido", "zoom", "diag", "corte", "sube", "barrido", "zoom"];
 export const Escena: React.FC<{ t: number; t0: number; t1: number; children: React.ReactNode; zoom?: number; seed?: number; fondo?: string; entra?: Entrada; golpes?: number[]; banda?: string; ix?: number; iy?: number }> = ({ t, t0, t1, children, zoom, seed, fondo = C.noche, entra, golpes = [], banda, ix = 960, iy = 540 }) => {
@@ -50,7 +59,7 @@ export const Escena: React.FC<{ t: number; t0: number; t1: number; children: Rea
   return (
     <>
       <AbsoluteFill style={{ overflow: "hidden", backgroundColor: fondo, clipPath: clip, transform: tr, opacity: tipo === "zoom" ? Math.min(1, e * 2.2) : 1 }}>
-        <AbsoluteFill style={{ transformOrigin: `${ox}% ${oy}%`, transform: `scale(${1.04 + amp * k + golpe + corteGolpe})` }}>{children}</AbsoluteFill>
+        <AbsoluteFill style={{ transformOrigin: `${ox}% ${oy}%`, transform: `scale(${1.04 + amp * k + golpe + corteGolpe})` }}><CamCtx.Provider value={{ ox: ox * 19.2, oy: oy * 10.8, S: 1.04 + amp * k + golpe + corteGolpe }}>{children}</CamCtx.Provider></AbsoluteFill>
       </AbsoluteFill>
       {extra && <AbsoluteFill style={{ pointerEvents: "none" }}>{extra}</AbsoluteFill>}
     </>
@@ -191,13 +200,15 @@ export const Colinas: React.FC<{ capas: string[]; base?: number; dx?: number; se
 
 // ── chapita (CORNELL · 2015 de la ref)
 export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; color?: string; x: number; y: number; size?: number; centro?: boolean; tinta?: string }> = ({ t, t0, t1 = 1e9, text, color = C.violeta, x, y, size = 62, centro, tinta = "#fff" }) => {
+  const cam = React.useContext(CamCtx);
   if (t < t0 || t > t1 + 0.3) return null;
   const s = ent(t, t0, 0, { damping: 11, stiffness: 180 });
   const out = interpolate(t, [t1, t1 + 0.3], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  // zona segura: la Escena agranda hasta ~1,2x, así que el chip nunca queda a menos de ~150 px del borde (antes se cortaban arriba y a los costados)
-  const w = text.length * size * 0.62 + size * 0.84;
-  const xi = centro ? Math.min(Math.max(x, w / 2 + 150), 1770 - w / 2) : Math.min(Math.max(x, 150), 1770 - w);
-  const yi = Math.min(Math.max(y, 130), 960);
+  // zona segura EN PANTALLA (compensa el zoom de la Escena): el chip entero queda a ≥80 px del borde
+  const w = text.length * size * 0.64 + size * 0.84;
+  const p = enCuadro(cam, centro ? x : x + w / 2, y, w, size * 1.5);
+  const xi = centro ? p.x : p.x - w / 2;
+  const yi = p.y;
   return (
     <div style={{ position: "absolute", left: xi, top: yi, transform: `translate(${centro ? "-50%" : "0"}, -50%) scale(${s * out}) rotate(${(1 - s) * -8}deg)`, overflow: "hidden", transformOrigin: centro ? "center" : "left center", fontFamily, fontWeight: 700, fontSize: size, color: tinta, background: color, padding: `${size * 0.16}px ${size * 0.42}px`, borderRadius: size * 0.3, boxShadow: "0 8px 0 rgba(20,10,50,.35)", letterSpacing: 1, whiteSpace: "nowrap", lineHeight: 1.15 }}>
       {text}
@@ -207,12 +218,14 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
 };
 // texto grande con contorno (títulos)
 export const Grande: React.FC<{ t: number; t0: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string }> = ({ t, t0, text, x = 960, y, size = 150, color = C.crema, borde = C.noche }) => {
+  const cam = React.useContext(CamCtx);
   if (t < t0) return null;
   const s = ent(t, t0, 0, { damping: 9, stiffness: 190 });
-  // zona segura (igual que Chip): el título entero queda a ≥120 px del borde aunque la Escena agrande
-  const w = text.length * size * 0.6;
-  x = w > 1560 ? 960 : Math.min(Math.max(x, w / 2 + 130), 1790 - w / 2);
-  y = Math.min(Math.max(y, size * 0.6 + 90), 990 - size * 0.6);
+  // zona segura EN PANTALLA (compensa el zoom de la Escena); ancho real de Fredoka bold ≈ 0,68·size por letra:
+  // si en pantalla no entra en 1700 px se achica
+  let w = text.length * size * 0.68;
+  if (w * cam.S > 1700) { size = (size * 1700) / (w * cam.S); w = 1700 / cam.S; }
+  ({ x, y } = enCuadro(cam, x, y, w, size * 1.25));
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${s})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}` }}>
       {text}

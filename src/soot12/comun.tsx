@@ -2,7 +2,7 @@ import React from "react";
 import { Persona, Ropa, Expr } from "./persona";
 import { AbsoluteFill, interpolate } from "remotion";
 import { rnd } from "../soot/lib";
-import { C, ent, fontFamily, Grande, Chip } from "./kit";
+import { C, ent, fontFamily, Grande, Chip, CamCtx, enCuadro } from "./kit";
 import { PARADAS, gy } from "./mundo";
 
 // Piezas de pantalla compartidas por todas las partes de soot12.
@@ -82,11 +82,13 @@ export const Cuenta: React.FC<{ t: number; t0: number; t1?: number; de: number; 
 
 // sello que cae (STAMP)
 export const Sello: React.FC<{ t: number; t0: number; t1?: number; text: string; x: number; y: number; size?: number; color?: string; rot?: number }> = ({ t, t0, t1 = 1e9, text, x, y, size = 90, color = C.rojo, rot = -12 }) => {
+  const cam = React.useContext(CamCtx);
   if (t < t0 || t > t1) return null;
   const u = Math.min(1, (t - t0) / 0.14);
-  const w = text.length * size * 0.66 + size * 0.8;
-  x = Math.min(Math.max(x, w / 2 + 140), 1780 - w / 2);
-  y = Math.min(Math.max(y, size * 0.7 + 100), 980 - size * 0.7);
+  // zona segura EN PANTALLA (compensa el zoom de la Escena y el giro del sello)
+  const w = text.length * size * 0.68 + size * 0.8;
+  const rr = (Math.abs(rot) * Math.PI) / 180;
+  ({ x, y } = enCuadro(cam, x, y, w * Math.cos(rr) + size * 1.3 * Math.sin(rr), w * Math.sin(rr) + size * 1.3 * Math.cos(rr)));
   const s = 2.4 - 1.4 * u + (u >= 1 ? 0.06 * Math.exp(-(t - t0 - 0.14) * 12) : 0);
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) rotate(${rot}deg) scale(${s})`, opacity: Math.min(1, u * 2), fontFamily, fontWeight: 700, fontSize: size, color, border: `${size * 0.1}px solid ${color}`, borderRadius: size * 0.2, padding: `0 ${size * 0.3}px`, whiteSpace: "nowrap", letterSpacing: 4, background: "rgba(255,255,255,.08)" }}>{text}</div>
