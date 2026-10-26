@@ -109,7 +109,7 @@ export const P07Snack: React.FC = () => {
 export const P08Rafi: React.FC = () => {
   const k = kDe(33.88);
   return (
-    <Sala cl={[mira(0, -900, 470, 2.6), mira(k(36.3), -900, 470, 2.4), mira(k(36.9), -900, 600, 2.1, { curva: "inout" }), mira(k(39.3), -900, 600, 2.0), mira(k(40.1), -820, 420, 1.35, { curva: "inout" })]} snack
+    <Sala cl={[mira(0, -900, 663, 2.6), mira(k(36.3), -900, 669, 2.4), mira(k(36.9), -900, 600, 2.1, { curva: "inout" }), mira(k(39.3), -900, 600, 2.0), mira(k(40.1), -820, 731, 1.35, { curva: "inout" })]} snack
       detras={[{ l: RAFI, x: -900, p: [{ f: 0, v: "saludar" }, { f: k(36.5), v: "hablar" }, { f: k(39.5), v: { hD: 80, cD: 30 } }], c: [{ f: 0, v: "feliz" }, { f: k(39), v: "picaro" }], mD: (ff: number) => (ff > k(39.5) ? <Pancho /> : null), mir: { x: 0.2, y: 0 } }]}
       gente={[{ l: LIGA3, x: -620, p: "parado", c: "feliz", d: -1 }]}
       hud={<><Rotulo t="RAFI · 17 · me" x={1240} y={300} desde={k(34.3)} hasta={k(38.4)} flecha="izq" /><Pildora texto="CHILI DOG $5 · PRETZEL $2" x={960} y={900} desde={k(40)} /></>} />
@@ -239,7 +239,7 @@ export const P19Ocho: React.FC = () => {
   const f = useF();
   return (
     <AbsoluteFill>
-      <Sala cl={[mira(0, -760, 520, 2.6), mira(k(108.6), -760, 540, 2.9, { curva: "inout" })]} snack
+      <Sala cl={[mira(0, -760, 663, 2.6), mira(k(108.6), -760, 656, 2.9, { curva: "inout" })]} snack
         sobre={<A l={NELL} x={-760} sent={184} p={[{ f: 0, v: { hD: 30, cD: 60 } }, { f: k(104.5), v: { hD: 60, cD: 150, cabeza: 6 } }]} c={[{ f: 0, v: "neutral" }, { f: k(104.6), v: "feliz" }]} d={-1} mD={<Walkie s={0.8} luz={f > k(104.4)} />} />} />
       <Dice quien="ana" t="Goodnight, baby." x={1120} y={280} desde={k(105.6)} />
       <Rotulo t="3 miles away" x={1200} y={520} desde={k(107.2)} color="#9fd3ff" flecha="izq" />
@@ -367,7 +367,7 @@ export const P29Clic: React.FC = () => {
   const k = kDe(172.78);
   const f = useF();
   return (
-    <Sala cl={[mira(0, -760, 560, 2.0), mira(k(175.2), -760, 540, 2.4, { curva: "inout" })]} snack sp={{ tv: "alerta" }}
+    <Sala cl={[mira(0, -760, 560, 2.0), mira(k(175.2), -760, 669, 2.4, { curva: "inout" })]} snack sp={{ tv: "alerta" }}
       sobre={<A l={NELL} x={-760} sent={184} p={[{ f: 0, v: { hD: 30, cD: 50 } }, { f: k(175.2), v: { hD: 70, cD: 150, cabeza: 6 } }]} c={[{ f: 0, v: "neutral" }, { f: k(175.3), v: "sorpresa" }]} d={-1} mD={<Walkie s={0.85} luz={f % 20 < 10} />} />}
       hud={<HudDia dia={1} desde={9999} hora="8:00 PM" />} />
   );
@@ -378,7 +378,7 @@ export const P30Mama: React.FC = () => {
   const k = kDe(176.2);
   return (
     <AbsoluteFill>
-      <Sala cl={[mira(0, -740, 540, 2.4), mira(k(188.5), -740, 530, 2.8, { curva: "lineal" })]} snack sp={{ tv: "alerta" }}
+      <Sala cl={[mira(0, -740, 669, 2.4), mira(k(188.5), -740, 658, 2.8, { curva: "lineal" })]} snack sp={{ tv: "alerta" }}
         sobre={<A l={NELL} x={-760} sent={184} p={{ hD: 70, cD: 150, cabeza: 8 }} c={[{ f: 0, v: "sorpresa" }, { f: k(184), v: "miedo" }]} d={-1} mD={<Walkie s={0.85} luz />} mir={{ x: -0.3, y: 0.2 }} />} />
       <Dice quien="ana" t="Nell, baby, listen to me." x={250} y={130} desde={k(180.6)} hasta={k(188.4)} tam={60} />
       <Dice quien="ana" t="Stay with your dad." x={1200} y={300} desde={k(183.3)} hasta={k(188.4)} tam={60} />
@@ -395,7 +395,7 @@ export const P31Estatica: React.FC = () => {
   const pulsa = Array.from({ length: 8 }).flatMap((_, i) => [{ f: i * 18, v: { hD: 70, cD: 150, cabeza: 8 } }, { f: i * 18 + 9, v: { hD: 75, cD: 145, cabeza: 10 } }]);
   return (
     <AbsoluteFill>
-      <Sala cl={[mira(0, -760, 520, 2.6), mira(k(193.5), -760, 540, 2.2, { curva: "inout" })]} snack sp={{ tv: "alerta" }}
+      <Sala cl={[mira(0, -760, 663, 2.6), mira(k(193.5), -760, 676, 2.2, { curva: "inout" })]} snack sp={{ tv: "alerta" }}
         sobre={<A l={NELL} x={-760} sent={184} p={pulsa} c="triste" d={-1} mD={<Walkie s={0.85} luz={f % 6 < 3} />} habla={[[k(191.4), k(193.6)]]} />} />
       {Array.from({ length: 30 }).map((_, i) => <div key={i} style={{ position: "absolute", left: (i * 397 + f * 53) % 1920, top: (i * 211 + f * 31) % 1080, width: 60, height: 2, background: "#f4efe4", opacity: 0.18 }} />)}
       <Dice quien="nell" t="Mom?" x={1150} y={260} desde={k(191.4)} tam={56} />
@@ -411,7 +411,7 @@ export const P32Primavera: React.FC = () => {
   const k = kDe(193.52);
   return (
     <AbsoluteFill>
-      <Sala cl={[mira(0, pistaX(7), 580, 2.0), mira(k(195.3), pistaX(7), 560, 2.3, { curva: "inout" })]} sp={{ luz: "noche" }}
+      <Sala cl={[mira(0, pistaX(7), 580, 2.0), mira(k(195.3), pistaX(7), 673, 2.3, { curva: "inout" })]} sp={{ luz: "noche" }}
         gente={[{ l: DOT, x: pistaX(7), p: "brazosCruzados", c: "determinado", d: 1, mD: <Bola color="#ff5fa8" s={0.8} />, luz: RIM.neon }]} />
       <Velo color="#1a1020" o={0.35} />
       <Dice quien="rafi" t="She didn't make it to spring." x={960} y={820} desde={4} centro tam={70} />
