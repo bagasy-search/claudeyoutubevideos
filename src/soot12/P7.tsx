@@ -408,7 +408,7 @@ const Tiro84b: React.FC<{ t: number }> = ({ t }) => {
   const am = prog(t, 673.85, 676.85);
   const seca = t > 674.0 && t < 675.6; // se seca la frente
   const estira = t > 675.7 && t < 676.85; // se estira aliviado
-  const puno = t > 676.9 && t < 677.6; // saltito con el puño
+  const puno = t >= 676.85 && t < 677.6; // saltito con el puño (pegado al estirón: sin cuadro quieto)
   const mira = t > 677.6 && t < 678.3; // mira el campamento atrás, asiente
   const pulgar = t > 678.4 && t < 680.2;
   const salta = t > 680.2;
@@ -431,7 +431,7 @@ const Tiro84b: React.FC<{ t: number }> = ({ t }) => {
         inclina={seca ? -9 * Math.sin(prog(t, 674.0, 675.6) * Math.PI) : estira ? -8 * Math.sin(prog(t, 675.7, 676.85) * Math.PI) : salta ? -4 : 0} ladea={seca ? -6 : estira ? Math.sin((t - 675.7) * 4) * 5 : mira ? Math.sin((t - 677.6) * 9) * 6 : 0}
         mira={mira ? -0.9 : pulgar ? 0.9 : salta ? 0 : -0.2} miraY={seca ? -0.3 : 0}
         bD={salta || estira ? 165 : puno ? 150 : pulgar ? 92 : 12} cD={salta || estira ? 20 : puno ? 40 : pulgar ? -6 : 8}
-        bI={salta || estira ? 165 : 12} cI={salta || estira ? 20 : 8} salta={salta ? 680.25 : puno ? 676.95 : undefined}
+        bI={salta || estira ? 165 : 12} cI={salta || estira ? 20 : 8} salta={salta ? 680.25 : puno ? 676.85 : undefined}
         />
       {t > 674.0 && t < 674.9 && [0, 1, 2].map((j) => { const q = prog(t, 674.0 + j * 0.1, 674.8 + j * 0.1); return <div key={j} style={{ position: "absolute", left: X - 190 - q * 130, top: Y - H * 0.74 + j * 26, width: 70 * (1 - q * 0.5), height: 14, borderRadius: 7, background: "#fff", opacity: (1 - q) * 0.8 }} />; })}
       <Globo t={t} t0={674.6} t1={678.3} x={960} y={420} text="PHEW… WE MADE IT?" size={50} cola="der" color="#fff" />
