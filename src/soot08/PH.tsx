@@ -34,7 +34,7 @@ export const PH: React.FC<{ t: number }> = ({ t }) => {
   const sh = sacudon(t, [717.55]);
   const dobla = prog(t, 666.3, 670.6);
   const g0: GenteFab[] = [];
-  if (s === "fab") g0.push({ seed: 2, x: 2700, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t > 658.5 ? "triste" : "neutro", inclina: 12 * prog(t, 670.5, 672.2) + (t > 660.5 && t < 666.4 ? 2.2 * Math.sin(t * 11) : 0), ladea: 6 * dobla, mira: t > 653.4 && t < 658.4 ? (Math.floor((t - 653.6) / 0.75) % 2 ? -1 : 1) : 1, salta: [653.6, 654.4, 655.2, 655.9, 656.6, 657.6].filter((x) => x <= t).pop(), bD: t > 657.6 && t < 658.5 ? 150 : undefined, bI: t > 657.6 && t < 658.5 ? 150 : undefined });
+  if (s === "fab") g0.push({ seed: 2, x: 2700, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t > 658.5 ? "triste" : "neutro", inclina: 12 * prog(t, 670.5, 672.2) + (t > 663.6 && t < 666.3 ? 14 : 0) + (t > 660.5 && t < 666.4 ? 2.2 * Math.sin(t * 11) : 0), ladea: 6 * dobla, mira: t > 653.4 && t < 658.4 ? (Math.floor((t - 653.6) / 0.75) % 2 ? -1 : 1) : 1, salta: [653.0, 653.9, 654.8, 655.7, 656.6, 657.6].filter((x) => x <= t).pop(), bD: t > 657.6 && t < 658.5 ? 150 : t > 663.6 && t < 666.3 ? -20 + 12 * Math.sin(t * 9) : undefined, bI: t > 657.6 && t < 658.5 ? 150 : t > 663.6 && t < 666.3 ? -20 - 12 * Math.sin(t * 9) : undefined, cD: t > 663.6 && t < 666.3 ? 40 : undefined, cI: t > 663.6 && t < 666.3 ? 40 : undefined });
   const gS: GenteFab[] = [
     ...[-1150, -850, -560, -260].map((x, i) => ({ seed: 70 + i, x, y: -170, h: 470, ropa: DUENO, gorro: "copa" as const, barba: i % 2 === 0, expr: (t > 680.6 ? "sorpresa" : "neutro") as GenteFab["expr"], mira: 1 })),
     { seed: 78, x: interpolate(t, [674, 679.5], [1500, 800], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), y: -200, h: 480, ropa: OBRERO(2), flip: true, camina: t > 674 && t < 679.5 ? 0.6 : 0, expr: "triste", inclina: 10, bI: 8, manoI: <Muleta />, habla: t > 680.6 && t < 683.6 && Math.floor(t * 3) % 2 === 0 },
@@ -76,8 +76,8 @@ export const PH: React.FC<{ t: number }> = ({ t }) => {
       <Latigo t={t} at={[650.25, 673.61, 691.31, 711.31]} />
       <Horror t={t} t0={650.25} n={7} nombre="YOUR BODY" t1={652.1} />
       <Lista t={t} t0={652.4} t1={658.3} x={90} y={150} titulo="YOU SURVIVED…" size={52} previa items={[
-        { txt: "THE CLOCK", t0: 653.6, ok: true }, { txt: "THE MACHINE", t0: 654.4, ok: true }, { txt: "THE AIR", t0: 655.2, ok: true },
-        { txt: "THE FINES", t0: 655.9, ok: true }, { txt: "THE STRAP", t0: 656.6, ok: true }, { txt: "THE ACCIDENT", t0: 657.6, ok: true },
+        { txt: "THE CLOCK", t0: 653.0, ok: true }, { txt: "THE MACHINE", t0: 653.3, ok: true }, { txt: "THE AIR", t0: 653.6, ok: true },
+        { txt: "THE FINES", t0: 653.9, ok: true }, { txt: "THE STRAP", t0: 654.2, ok: true }, { txt: "THE ACCIDENT", t0: 654.5, ok: true },
       ]} />
       <Chip t={t} t0={658.6} t1={660.4} text="THE FACTORY STILL TAKES SOMETHING" color={C.rojo} x={960} y={150} centro size={62} />
       {t > 660.5 && t < 666.3 && <div style={{ position: "absolute", left: 1500, top: 180, transform: `scale(${ent(t, 660.6) * (1 - prog(t, 666, 666.3))})` }}><div style={{ position: "relative" }}><Reloj x={0} y={420} s={0.8} hora={6 + prog(t, 660.8, 665.6) * 14} /></div></div>}

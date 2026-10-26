@@ -130,7 +130,7 @@ export const PF: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={528.1} t1={530.4} text="HUNDREDS OF MILES AWAY" color={C.violeta} x={960} y={150} centro size={70} />
       <Sello t={t} t0={530.5} t1={533.0} text="BOUND UNTIL ADULTHOOD" x={960} y={340} size={100} />
       {s === "blincoe" && <Velo t={t} t0={533.1} t1={567.4} op={0.3} />}
-      <Retrato t={t} t0={533.3} t1={543.8} x={430} y={440} g={{ seed: 88, ropa: { ...NINO, tunica: "#8a8494", tunica2: "#5d5670" }, expr: t > 540 ? "feliz" : "neutro" }} nombre="ROBERT BLINCOE" sub="SENT NORTH AT ABOUT 7" s={1.05} />
+      <Retrato t={t} t0={533.3} t1={543.8} x={430} y={440} g={{ seed: 88, ropa: { ...NINO, tunica: "#8a8494", tunica2: "#5d5670" }, expr: t > 540 ? "feliz" : "neutro" }} nombre="ROBERT BLINCOE" sub="SENT NORTH · AGE 7" s={1.05} />
       <Primer t={t} t0={544.0} t1={548.2} lado="izq" g={{ seed: 88, ropa: { ...NINO, tunica: "#8a8494", tunica2: "#5d5670" }, expr: "triste", gorro: undefined }} emo="lagrimas" />
       <Chip t={t} t0={536.6} t1={538.5} text="A LONDON WORKHOUSE" color={C.violeta} x={1300} y={200} centro size={62} />
       <Chip t={t} t0={538.6} t1={543.8} text="PROMISED:" color={C.oro} tinta={C.noche} x={1300} y={200} centro size={66} />

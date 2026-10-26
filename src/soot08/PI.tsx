@@ -112,7 +112,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
               <Velero t={t} x={interpolate(t, [813.5, 815.0], [-2400, -1050], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={60} s={0.9} />
               {/* el bloqueo: la marina del Norte cierra el paso */}
               {t > 814.2 && <Velero t={t} x={interpolate(t, [814.2, 815.0], [900, 150], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={60} s={0.85} fardos={false} />}
-              {t > 814.7 && <svg style={{ position: "absolute", left: -560, top: -900, overflow: "visible", opacity: ent(t, 814.75) }} width={1} height={1}><line x1={0} y1={0} x2={0} y2={1000} stroke={C.rojo} strokeWidth={26} strokeDasharray="70 40" /><g transform="translate(0 -90)"><circle r={80} fill={C.rojo} stroke="#fff" strokeWidth={12} /><path d="M -34 -34 L 34 34 M 34 -34 L -34 34" stroke="#fff" strokeWidth={18} strokeLinecap="round" /></g></svg>}
+              {t > 814.7 && <svg style={{ position: "absolute", left: -560, top: -900, overflow: "visible", opacity: ent(t, 814.75) }} width={1} height={1}><line x1={0} y1={0} x2={0} y2={1000} stroke={C.rojo} strokeWidth={26} strokeDasharray="70 40" /><g transform="translate(0 -10)"><circle r={80} fill={C.rojo} stroke="#fff" strokeWidth={12} /><path d="M -34 -34 L 34 34 M 34 -34 L -34 34" stroke="#fff" strokeWidth={18} strokeLinecap="round" /></g></svg>}
             </RutaAlgodon>
           </Espacio>
         </>
@@ -202,7 +202,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Globo t={t} t0={774.7} t1={779.4} x={560} y={300} text="He's just big for his age!" size={48} w={620} />
       <Chip t={t} t0={775.5} t1={779.4} text="PARENTS NEEDED THE MONEY" color={C.rojo} x={1250} y={950} centro size={56} />
       <Velo t={t} t0={779.65} t1={786.0} op={0.25} />
-      <Sello t={t} t0={779.7} t1={786.0} text="TEN HOURS ACT · 1847" x={960} y={170} size={96} color={C.lima} rot={-6} />
+      <Sello t={t} t0={779.7} t1={786.0} text="TEN HOURS ACT · 1847" x={760} y={170} size={96} color={C.lima} rot={-6} />
       <Cuenta t={t} t0={782.6} t1={784.6} de={14} a={10} suf=" HOURS A DAY" x={960} y={960} size={100} color={C.ambar} fuera={786.0} />
       <Chip t={t} t0={786.1} t1={788.0} text="THEY CELEBRATED IN THE STREETS" color={C.oro} tinta={C.noche} x={960} y={150} centro size={62} />
       <Chip t={t} t0={788.2} t1={790.1} text="NOT THE END OF CHILD LABOUR" color={C.rojo} x={960} y={150} centro size={62} />

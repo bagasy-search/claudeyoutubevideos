@@ -22,7 +22,7 @@ const KM: K[] = [
 ];
 const KL: K[] = [
   [204.8, -450, -380, 1.15], [207.4, 480, -380, 1.1], [208.4, 250, -540, 0.82], [210.3, 0, -560, 0.72], [214.3, 0, -560, 0.72],
-  [251.7, 200, -320, 1.0], [253.3, 560, -150, 1.9], [257.9, 480, -160, 1.8], [262.5, -330, -200, 1.65], [263.9, -420, -200, 1.7], [267.5, -480, -200, 1.75], [271.0, -400, -300, 1.4],
+  [251.7, 200, -320, 1.0], [253.3, 560, -150, 1.9], [257.9, 480, -160, 1.8], [262.5, -330, -260, 1.15], [263.9, -420, -260, 1.15], [267.5, -480, -260, 1.22], [271.0, -400, -300, 1.4],
 ];
 const lado = (t: number) => (t >= 204.8 && t < 214.3) || (t >= 251.7 && t < 271.0);
 
@@ -41,13 +41,13 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
   // ── adentro de la fábrica
   const chico: GenteFab = t < 214
     ? { seed: 2, x: 2150, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t < 195.5 ? "neutro" : "orgullo", salta: 195.5, aparece: 192.3, mira: 1 }
-    : t < 224 ? { seed: 2, x: 3050, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t > 220.8 ? "sorpresa" : "neutro", mira: 1 }
+    : t < 224 ? { seed: 2, x: interpolate(t, [214, 219.6, 220.9], [4180, 4180, 3050], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t > 220.8 ? "sorpresa" : "neutro", mira: 1, camina: t > 219.6 && t < 220.9 ? 3 : 0, flip: t > 219.6 && t < 220.9 }
     : t < 232.6 ? { seed: 2, x: 3150, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: "miedo", bD: t > 225 && t < 231 ? 160 : 20, cD: 20, mira: 1, inclina: t > 225 && t < 231 ? 6 : 0 }
     : t < 252 ? { seed: 2, x: 3300 + Math.sin((t - 232.6) * 0.9) * 900, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: "triste", camina: 1.6, flip: Math.cos((t - 232.6) * 0.9) < 0, descalzo: t > 246 } as GenteFab
     : { seed: 2, x: 2520, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t < 292 ? "triste" : "triste", bD: 120, cD: 70, flip: true };
   const gente: GenteFab[] = [chico];
   if (t > 214 && t < 252) {
-    gente.push({ seed: 3, x: 4650, y: 0, h: 480, ropa: HILANDERO, flip: true, barba: true, expr: t > 218 && t < 221 ? "orgullo" : "neutro", habla: t > 214.3 && t < 220.8, bI: t > 217.5 && t < 220.5 ? 70 : 10 });
+    gente.push({ seed: 3, x: 4650 + (t < 220.8 ? 45 * Math.sin(t * 2.2) : 0), y: 0, h: 480, ropa: HILANDERO, flip: true, barba: true, expr: t > 218 && t < 221 ? "orgullo" : "neutro", habla: t > 214.3 && t < 220.8, inclina: t < 220.8 ? 12 : 0, bD: t < 220.8 ? 95 : 0, cD: t < 220.8 ? 15 : 0, bI: t > 217.5 && t < 220.5 ? 70 : t < 220.8 ? 95 : 10, cI: t < 217.5 ? 15 : 0 });
     gente.push({ seed: 4, x: 3450, y: 0, h: 280, ropa: NINA, gorro: "cofia", largo: true, expr: t > 220.8 && t < 223 ? "sorpresa" : "triste", aparece: 219.0 });
     gente.push({ seed: 5, x: 3800, y: 0, h: 250, ropa: { ...NINO, tunica: "#5e6b3a", tunica2: "#3b4424" }, expr: t > 220.8 && t < 223 ? "sorpresa" : "triste", aparece: 219.25, descalzo: true });
   }

@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
-import { C, ent, prog, Chip, Emote, Particulas, Pergamino } from "./kit";
+import { C, ent, prog, Chip, Emote, Particulas, Pergamino, fontFamily } from "./kit";
 import { Termometro } from "./kit3";
 import { Lapida } from "./kit2";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, Nieve, NINO, NINA, OBRERO, GenteFab, FX0 } from "./mundo";
@@ -48,7 +48,7 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
   const gP: GenteFab[] = [];
   if (s === "x1") {
     gP.push({ seed: 2, x: interpolate(t, [327.4, 332.5], [3600, 2900], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) + Math.sin(t * 40) * 3, y: 0, h: 300, ropa: NINO, gorro: "gorra", camina: t < 332.5 ? 1.2 : 0, flip: true, expr: "triste", bD: 25, bI: 25, cD: 120, cI: 120 });
-    if (t > 334.6) for (let i = 0; i < 4; i++) gP.push({ seed: 90 + i, x: interpolate(t, [334.6, 336.4], [1250, 1650]) + i * 150, y: 0, h: 460 + (i % 2) * 20, ropa: { ...OBRERO(i), tunica: "#2a2238", tunica2: "#140f1d" }, gorro: i % 2 ? "cofia" : "copa", largo: i % 2 === 1, camina: 0.9, expr: "triste", bD: i < 2 ? 160 : 0, cD: 10 });
+    if (t > 334.6) for (let i = 0; i < 4; i++) gP.push({ seed: 90 + i, x: interpolate(t, [334.6, 336.4], [1250, 1650]) + i * 205, y: 0, h: 460 + (i % 2) * 20, ropa: { ...OBRERO(i), tunica: "#2a2238", tunica2: "#140f1d" }, gorro: i % 2 ? "cofia" : "copa", largo: i % 2 === 1, camina: 0.9, expr: "triste", bD: i < 2 ? 160 : 0, cD: 10 });
   }
   if (s === "x2") {
     gP.push({ seed: 95, x: -2000, y: 0, h: 470, ropa: OBRERO(3), viejo: true, barba: true, expr: "feliz", habla: Math.floor(t * 1.1) % 2 === 0, mira: 1 });
@@ -85,7 +85,7 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
           return <path key={i} transform={`translate(${x - 90 + (i * 29) % 180} ${-260 + k * 260})`} d="M 0 -16 Q 10 0 0 8 Q -10 0 0 -16 Z" fill="#7fd6ff" opacity={1 - k} />;
         })}
         {/* el ataúd chico de la procesión */}
-        {s === "x1" && t > 334.6 && <div style={{ position: "absolute", left: interpolate(t, [334.6, 336.4], [1250, 1650]) - 40, top: -570, width: 260, height: 70, background: "#3b2434", borderRadius: 10, border: "6px solid #6a4a5a" }} />}
+        {s === "x1" && t > 334.6 && <div style={{ position: "absolute", left: interpolate(t, [334.6, 336.4], [1250, 1650]) - 40, top: -575, width: 340, height: 84, background: "linear-gradient(180deg, #8a5530, #5e3519)", clipPath: "polygon(0 30%, 18% 0, 100% 0, 100% 100%, 18% 100%, 0 70%)", border: "6px solid #2a1530" }}><div style={{ position: "absolute", left: 120, top: 18, width: 12, height: 40, background: "#e8d4a8" }} /><div style={{ position: "absolute", left: 106, top: 32, width: 40, height: 12, background: "#e8d4a8" }} /></div>}
       </Espacio>
       {s === "x1" && <Nieve t={t} n={140} />}
       {s === "i2" && <Particulas t={t} tipo="polvo" n={70} seed={7} />}
@@ -96,17 +96,29 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={298.0} t1={301.6} text="NOT THE NOISE…" color={C.violeta} x={960} y={150} centro size={74} />
       <Gran t={t} t0={301.85} t1={302.9} text="THE HEAT" y={200} size={200} color={C.naranja} />
       <Chip t={t} t0={303.0} t1={305.4} text="DRY AIR = BROKEN THREADS" color={C.noche} x={960} y={150} centro size={68} />
+      {/* el hilo que se seca y se corta */}
+      {t > 302.9 && t < 305.6 && (() => { const e = ent(t, 303.0) * (1 - prog(t, 305.3, 305.6)); const k = prog(t, 303.8, 304.1); return (
+        <svg style={{ position: "absolute", left: 1180, top: 330, overflow: "visible", transform: `scale(${e})`, transformOrigin: "300px 150px" }} width={1} height={1}>
+          <rect x={-40} y={-40} width={680} height={330} rx={30} fill="#fff6dc" stroke="#2a1530" strokeWidth={8} />
+          <ellipse cx={60} cy={150} rx={44} ry={80} fill="#f4ecd8" stroke="#2a1530" strokeWidth={6} />
+          <ellipse cx={540} cy={150} rx={44} ry={80} fill="#f4ecd8" stroke="#2a1530" strokeWidth={6} />
+          <path d={`M 100 150 L ${300 - 30 * k} ${150 + 60 * k}`} stroke="#c9a96a" strokeWidth={8} fill="none" />
+          <path d={`M ${300 + 30 * k} ${150 + 60 * k} L 500 150`} stroke="#c9a96a" strokeWidth={8} fill="none" />
+          {k > 0 && [0, 1, 2, 3, 4, 5].map((i) => <line key={i} x1={300} y1={130} x2={300 + Math.cos(i) * 70 * k} y2={130 + Math.sin(i * 1.7) * 70 * k} stroke={C.ambar} strokeWidth={6} strokeLinecap="round" />)}
+          {k > 0 && <text x={300} y={70} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={64} fill={C.rojo} opacity={k}>SNAP!</text>}
+          <text x={300} y={270} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={34} fill="#2a1530">COTTON THREAD · TOO DRY</text>
+        </svg>); })()}
       <Chip t={t} t0={305.5} t1={308.4} text="HOT AND DAMP · ON PURPOSE" color={C.naranja} x={960} y={950} centro size={70} />
       {t > 308.5 && t < 314.0 && <div style={{ position: "absolute", left: 0, top: 0, transform: `scale(${ent(t, 308.5) * (1 - prog(t, 313.7, 314))})`, transformOrigin: "960px 540px" }}><Pergamino x={960} y={540} w={760} abre={prog(t, 308.6, 309.4)} titulo="MILL RULES · 1823" /></div>}
       <Chip t={t} t0={310.2} t1={314.0} text="TYLDESLEY, NEAR MANCHESTER" color={C.violeta} x={960} y={950} centro size={64} />
       {t > 314.2 && t < 322.4 && (
-        <div style={{ position: "absolute", left: 1520, top: 120, transform: `scale(${ent(t, 314.2) * (1 - prog(t, 322.1, 322.4))})` }}><div style={{ position: "relative" }}><Termometro x={0} y={860} s={0.95} nivel={0.2 + prog(t, 314.4, 317.4) * 0.66} marcas={[60, 70, 80, 90]} /></div></div>
+        <div style={{ position: "absolute", left: 1650, top: 120, transform: `scale(${ent(t, 314.2) * (1 - prog(t, 322.1, 322.4))})` }}><div style={{ position: "relative" }}><Termometro x={0} y={860} s={0.95} nivel={0.2 + prog(t, 314.4, 317.4) * 0.66} marcas={[60, 70, 80, 90]} /></div></div>
       )}
       <Cuenta t={t} t0={314.6} t1={317.4} de={84} a={84} x={760} y={360} size={200} color={C.naranja} pre="80–" suf="°F" fuera={318.6} />
       <Cuenta t={t} t0={318.7} t1={319.6} de={20} a={28} x={760} y={360} size={220} color={C.rojo} pre="≈" suf="°C" fuera={322.4} />
       <Chip t={t} t0={320.2} t1={322.4} text="EVERY DAY · ALL YEAR" color={C.noche} x={760} y={560} centro size={64} />
       <Sello t={t} t0={322.7} t1={324.4} text="WINDOWS SHUT" x={960} y={330} size={130} />
-      <Cuenta t={t} t0={324.6} t1={325.6} de={14} a={14} x={960} y={200} size={128} color={C.crema} suf=" HOURS OF SWEAT" fuera={327.1} />
+      <Cuenta t={t} t0={324.6} t1={325.6} de={14} a={14} x={960} y={470} size={120} color={C.crema} suf=" HOURS OF SWEAT" fuera={327.1} />
       <Emote t={t} t0={324.6} t1={327.1} tipo="sudor" x={960 + (2300 - cam.x) * cam.z} y={540 + (-170 - cam.y) * cam.z} s={0.55 * cam.z} />
       <Chip t={t} t0={327.4} t1={331.8} text="A LANCASHIRE WINTER NIGHT" color={C.teal} tinta={C.noche} x={960} y={150} centro size={70} />
       <Chip t={t} t0={329.6} t1={333.0} text="SOAKING WET · THIN CLOTHES" color={C.violeta} x={960} y={950} centro size={66} />
@@ -126,7 +138,8 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={346.4} t1={349.6} text="“MILL FEVER”" color={C.ambar} tinta={C.noche} x={620} y={150} centro size={70} />
       <Chip t={t} t0={347.7} t1={349.6} text="“STRIPPER'S ASTHMA”" color={C.naranja} x={1300} y={150} centro size={70} />
       {t > 349.8 && t < 364.3 && <Velo t={t} t0={349.8} t1={364} op={0.9} />}
-      <Pulmones t={t} t0={349.9} t1={364.0} x={960} y={560} s={1.1} sucio={0.15 + prog(t, 350, 355) * 0.85} apaga={prog(t, 353.3, 355.4)} />
+      {t > 349.9 && t < 364.1 && <Persona t={t} seed={2} x={330} y={1010} h={620} ropa={NINO} gorro="gorra" expr={Math.sin(t * 3) > 0.4 ? "dormido" : "triste"} inclina={10 + 9 * Math.max(0, Math.sin(t * 3))} bD={150} cD={150} aparece={350.0} />}
+      <Pulmones t={t} t0={349.9} t1={364.0} x={1000} y={560} s={1.1} sucio={0.15 + prog(t, 350, 355) * 0.85} apaga={prog(t, 353.3, 355.4)} />
       <Chip t={t} t0={350.5} t1={355.3} text="A TIGHT CHEST" color={C.noche} x={420} y={330} centro size={56} />
       <Chip t={t} t0={351.6} t1={355.3} text="A COUGH THAT NEVER LEFT" color={C.noche} x={1340} y={330} centro size={56} />
       <Chip t={t} t0={353.3} t1={355.3} text="LUNGS STOP WORKING" color={C.rojo} x={960} y={950} centro size={66} />

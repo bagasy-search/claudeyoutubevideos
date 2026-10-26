@@ -163,8 +163,8 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={130.5} t1={133.0} text="SAMUEL COULSON · FATHER" color={C.violeta} x={960} y={150} centro size={72} />
       <Chip t={t} t0={132.4} t1={136.6} text="HIS DAUGHTERS" color={C.teal} tinta={C.noche} x={960} y={950} centro size={66} />
       <Chip t={t} t0={133.3} t1={136.6} text="BUSY SEASON · ABOUT 6 WEEKS" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={66} />
-      <Velo t={t} t0={136.7} t1={146.4} op={0.94} />
-      <Primer t={t} t0={139.0} t1={146.3} lado="izq" h={950} x={230} nena g={{ expr: t < 143.3 ? "triste" : "dormido", gorro: "cofia", largo: true }} />
+      <Velo t={t} t0={136.7} t1={146.4} op={1} />
+      {t > 138.9 && t < 146.4 && <Persona t={t} seed={23} x={interpolate(t, [139.0, 143.0], [360, 1660], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={690} h={260} ropa={NINA} gorro="cofia" largo camina={t < 143.0 ? 1.4 : 0} expr={t < 143.3 ? "triste" : "dormido"} inclina={t > 143.3 ? 10 : 4} aparece={139.0} />}
       <BarraDia t={t} t0={136.8} t1={146.4} y={880} titulo="THE COULSON GIRLS · ONE DAY" tramos={[
         { de: 3, a: 12, t0: 137.0, t1: 138.4, color: C.rojo, txt: "AT THE MILL" },
         { de: 12, a: 22.5, t0: 138.4, t1: 140.0, color: C.rojo, txt: "STILL AT THE MILL" },
@@ -172,7 +172,7 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
       ]} />
       <Chip t={t} t0={137.0} t1={138.7} text="LEAVE 3:00 AM" color={C.noche} x={500} y={170} centro size={66} />
       <Chip t={t} t0={138.8} t1={146.4} text="HOME 10:30 PM" color={C.noche} x={1420} y={170} centro size={66} />
-      <Cuenta t={t} t0={139.0} t1={140.4} de={0} a={19} x={960} y={420} size={190} color={C.crema} suf="½ HOURS" fuera={143.0} />
+      <Cuenta t={t} t0={139.0} t1={140.4} de={0} a={19} x={960} y={300} size={150} color={C.crema} suf="½ HOURS" fuera={143.0} />
       <Chip t={t} t0={140.9} t1={143.0} text="YOUNGEST: JUST OVER 8" color={C.rojo} x={960} y={600} centro size={66} />
       <Chip t={t} t0={143.4} t1={146.4} text="ALL BREAKS: ~1 HOUR" color={C.lima} tinta={C.noche} x={960} y={620} centro size={80} />
       <Chip t={t} t0={148.0} t1={150.4} text="CARRIED TO BED" color={C.violeta} x={960} y={150} centro size={76} />

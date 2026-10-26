@@ -127,7 +127,7 @@ export const PG: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={618.0} t1={624.6} text="WORKING IN HIS FATHER'S COTTON BUSINESS" color={C.violeta} x={760} y={150} centro size={52} />
       {/* el cuerpo: cada parte perdida se marca en rojo */}
       {t > 625.0 && t < 629.7 && (() => { const e = ent(t, 625.05) * (1 - prog(t, 629.4, 629.7)); const on = (i: number) => (t > 625.6 + i * 0.85 ? C.rojo : "#fff6dc"); return (
-        <svg style={{ position: "absolute", left: 1620, top: 300, overflow: "visible", transform: `scale(${e})`, transformOrigin: "120px 300px" }} width={1} height={1}>
+        <svg style={{ position: "absolute", left: 1560, top: 300, overflow: "visible", transform: `scale(${e})`, transformOrigin: "120px 300px" }} width={1} height={1}>
           <rect x={-60} y={-40} width={360} height={660} rx={30} fill="#2a1530" opacity={0.85} />
           <circle cx={120} cy={60} r={52} fill="#fff6dc" stroke="#fff" strokeWidth={4} />
           <rect x={70} y={120} width={100} height={200} rx={30} fill="#fff6dc" />
@@ -136,7 +136,7 @@ export const PG: React.FC<{ t: number }> = ({ t }) => {
           <circle cx={30} cy={352} r={11} fill={on(0)} /><circle cx={54} cy={356} r={11} fill={on(0)} /><circle cx={186} cy={356} r={11} fill={on(0)} /><circle cx={210} cy={352} r={11} fill={on(0)} />
           <rect x={74} y={330} width={42} height={230} rx={20} fill={on(3)} /><rect x={124} y={330} width={42} height={230} rx={20} fill={on(3)} />
         </svg>); })()}
-      {["FINGERS", "HANDS", "ARMS", "LEGS"].map((w, i) => <Chip key={w} t={t} t0={625.6 + i * 0.85} t1={629.5} text={`MISSING ${w}`} color={i % 2 ? C.noche : C.rojo} x={230 + i * 400} y={150} centro size={44} />)}
+      {["FINGERS", "HANDS", "ARMS", "LEGS"].map((w, i) => <Chip key={w} t={t} t0={625.6 + i * 0.85} t1={629.5} text={`MISSING ${w}`} color={i % 2 ? C.noche : C.rojo} x={260 + i * 390} y={150} centro size={34} />)}
       <Gran t={t} t0={629.8} t1={634.4} text="AN ARMY BACK FROM A WAR" y={180} size={110} color={C.crema} />
       <Chip t={t} t0={634.6} t1={636.8} text="EXCEPT THIS ARMY NEVER LEFT TOWN" color={C.noche} x={960} y={150} centro size={62} />
       <Gran t={t} t0={637.0} t1={638.5} text="IT HAD JUST GONE TO WORK" y={180} size={110} color={C.ambar} />

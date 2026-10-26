@@ -45,7 +45,7 @@ export const MulaPerfil: React.FC<{ t: number; u: number; peligro?: number; chil
         <circle cx={35} cy={478} r={34} fill={V.hierro} /><circle cx={265} cy={478} r={34} fill={V.hierro} />
       </svg>
       {/* la franja de peligro: el hueco entre cabezal y carro */}
-      {peligro > 0 && (
+      {false && peligro > 0 && (
         <div style={{ position: "absolute", left: MULA_X0, top: -300, width: Math.max(0, cx - MULA_X0), height: 300, background: `repeating-linear-gradient(45deg, rgba(232,59,74,${0.12 * peligro}) 0 30px, rgba(255,214,90,${0.08 * peligro}) 30px 60px)` }} />
       )}
       {children}

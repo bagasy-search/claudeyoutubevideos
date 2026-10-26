@@ -16,7 +16,7 @@ export const E0 = 392.9, E1 = 473.5;
 const KE: K[] = [
   [392.9, 4280, -1560, 1.15], [394.8, 4280, -1560, 1.2], [395.6, 4150, -1430, 0.82], [401.7, 4150, -1430, 0.78], [404.6, 4280, -1560, 1.0], [409.4, 4280, -1560, 1.05], [445.7, 4280, -1560, 1.1],
   [445.71, 2600, -330, 1.55], [453.6, 2600, -330, 1.65], [455.4, 2620, -340, 1.5], [459.39, 2620, -340, 1.55],
-  [459.4, 5850, -1450, 0.75], [463.4, 5800, -1450, 0.8], [467.9, 5780, -1450, 0.82],
+  [459.4, 5700, -1450, 0.75], [463.4, 5650, -1450, 0.8], [467.9, 5630, -1450, 0.82],
   [467.91, 3600, -1500, 0.32], [473.5, 3600, -1500, 0.34],
 ];
 
@@ -35,7 +35,7 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
   const cam = camara(t, KE);
   const sh = sacudon(t, [440.1, 451.4, 463.6, 471.9]);
   const g1: GenteFab[] = [
-    { seed: 60, x: t > 401.7 && t < 409.4 ? 3760 : 4300, y: -1000, h: 480, ropa: DUENO, gorro: "copa", barba: true, expr: t > 395 && t < 409 ? "orgullo" : t > 468 ? "feliz" : "neutro", bD: t > 395.2 && t < 401 ? 60 : t > 401.7 && t < 409.4 ? 110 + 10 * Math.sin(t * 4) : 0, cD: 60, flip: !(t > 401.7 && t < 409.4), mira: t > 401.7 && t < 409.4 ? 1 : 0 },
+    { seed: 60, x: t > 401.7 && t < 409.4 ? 3760 : 4300, y: -1000, h: 480, ropa: DUENO, gorro: "copa", barba: true, expr: t > 395 && t < 409 ? "orgullo" : t > 468 ? "feliz" : "neutro", bD: t > 395.2 && t < 401 ? 60 : t > 401.7 && t < 404.6 ? 150 + 30 * Math.sin(t * 16) : t > 401.7 && t < 409.4 ? 110 + 10 * Math.sin(t * 4) : 0, cD: t > 401.7 && t < 404.6 ? 20 : 60, manoD: t > 401.7 && t < 404.6 ? <div style={{ position: "absolute", left: -12, top: -70, width: 24, height: 90, background: "#8a5a2c", borderRadius: 6 }}><div style={{ position: "absolute", left: -26, top: -6, width: 76, height: 34, background: "#5d5670", borderRadius: 6 }} /></div> : undefined, flip: !(t > 401.7 && t < 409.4), mira: t > 401.7 && t < 409.4 ? 1 : 0 },
     { seed: 61, x: 4750, y: -1000, h: 470, ropa: CAPATAZ, gorro: "gorra", expr: "orgullo", mira: -1 },
   ];
   if (t > 399.4 && t < 405) for (let i = 0; i < 3; i++) g1.push({ seed: 62 + i, x: 3650 + i * 150, y: -1000, h: 440 + (i % 2) * 30, ropa: i === 1 ? HILANDERO : OBRERO(i + 2), expr: "enojado", habla: true, aparece: 399.5 + i * 0.15, bD: i === 0 ? 150 : 20 });
@@ -49,7 +49,7 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
       <CieloHora t={t} luz={1.7} />
       <Espacio cam={cam} para={0.35}><div style={{ position: "absolute", left: 0, top: -300 }}><Horizonte t={t} /></div></Espacio>
       <Espacio cam={cam}>
-        <Pueblo t={t} e={{ abre: 1, hora: 15, luz: 1.8 }} adentro={{ gente: g0, gente1: g1 }} />
+        <Pueblo t={t} e={{ abre: 1, hora: 15, luz: 1.8 }} adentro={{ gente: g0, gente1: g1, cartelLineas: ["WINDOW OPEN|1s", "DIRTY AT WORK|1s", "WHISTLING|1s", "LATE 5 MIN|1s"] }} />
         {/* etiquetas de precio de la tienda de la empresa: suben */}
         {t > 459.4 && t < 467.9 && Array.from({ length: 6 }, (_, i) => {
           const sube = t > 461.5 + i * 0.12;
@@ -87,11 +87,11 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
       {aviso && <Velo t={t} t0={409.4} t1={445.6} op={0.85} />}
       {aviso && (
         <div style={{ position: "absolute", inset: 0, opacity: 1 - prog(t, 445.3, 445.7) }}>
-          <Aviso t={t} t0={409.4} x={860} y={500} w={1150} titulo="TYLDESLEY MILL · FINES" items={ITEMS} foco={focoEn(t)} />
+          {t < 440.1 && <Aviso t={t} t0={409.4} x={860} y={500} w={1150} titulo="TYLDESLEY MILL · FINES" items={ITEMS} foco={focoEn(t)} />}
         </div>
       )}
       {/* anotaciones al costado del cartel */}
-      {t > 412.9 && t < 415.6 && <div style={{ position: "absolute", left: 200, top: 160, transform: `scale(${ent(t, 412.9) * 0.55})`, transformOrigin: "0 0" }}><div style={{ position: "relative" }}><Termometro x={0} y={860} nivel={0.86} /></div></div>}
+      {t > 412.9 && t < 415.6 && <div style={{ position: "absolute", left: 150, top: 160, transform: `scale(${ent(t, 412.9) * 0.55})`, transformOrigin: "0 0" }}><div style={{ position: "relative" }}><Termometro x={0} y={860} nivel={0.86} /></div></div>}
       <Chip t={t} t0={412.9} t1={415.6} text="REMEMBER: 80–84°F INSIDE" color={C.naranja} x={960} y={1010} centro size={52} />
       <Chip t={t} t0={422.7} t1={425.7} text="CAN'T BE DIRTY · CAN'T WASH" color={C.rojo} x={960} y={1010} centro size={56} />
       <Chip t={t} t0={428.6} t1={432.6} text="ONE SHILLING · EACH TIME" color={C.noche} x={960} y={1010} centro size={52} />
@@ -100,9 +100,9 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
       <Flash t={t} at={[440.1]} />
       {t > 440.0 && t < 445.6 && (
         <>
-          <AbsoluteFill style={{ background: "rgba(27,18,64,.97)", opacity: prog(t, 440, 440.2) * (1 - prog(t, 445.3, 445.6)) }} />
+          <AbsoluteFill style={{ background: "rgb(27,18,64)", opacity: prog(t, 440, 440.2) * (1 - prog(t, 445.3, 445.6)) }} />
           {Array.from({ length: 6 }, (_, i) => <Moneda3 key={i} t={t} t0={440.15 + i * 0.12} t1={445.3} x={300 + i * 190} y={640} s={0.85} txt="1s" />)}
-          <Persona t={t} seed={79} x={1700} y={1020} h={430} ropa={NINO} gorro="gorra" flip mira={-1} expr="triste" bD={150} cD={130} bI={150} cI={130} aparece={440.4} />
+          <Persona t={t} seed={79} x={1640} y={1040} h={640} ropa={NINO} gorro="gorra" flip mira={-1} expr="triste" bD={150} cD={130} bI={150} cI={130} aparece={440.4} />
           <Gran t={t} t0={440.1} t1={445.3} text="6 SHILLINGS" y={330} size={190} color={C.rojo} />
           <Chip t={t} t0={441.4} t1={445.3} text="YOU PAY FOR THE POWER IT DIDN'T USE ON YOU" color={C.ambar} tinta={C.noche} x={960} y={900} centro size={50} />
         </>
@@ -124,7 +124,7 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={459.5} t1={461.4} text="ONLY GOOD AT THE BOSS'S SHOP" color={C.rojo} x={960} y={150} centro size={66} />
       <Chip t={t} t0={461.5} t1={463.5} text="PRICES SET BY THE BOSS" color={C.noche} x={960} y={950} centro size={66} />
       <Velo t={t} t0={463.5} t1={465.9} op={0.3} />
-      <Sello t={t} t0={463.6} t1={465.8} text="BANNED · TRUCK ACT 1831" x={960} y={900} size={100} color={C.lima} rot={-4} />
+      <Sello t={t} t0={463.6} t1={465.6} text="WAGES IN GOODS: BANNED · TRUCK ACT 1831" x={960} y={900} size={70} color={C.lima} rot={-4} />
       <Chip t={t} t0={465.9} t1={467.8} text="…IT TOOK A LONG TIME TO DISAPPEAR" color={C.violeta} x={960} y={950} centro size={58} />
       <Chip t={t} t0={468.1} t1={471.7} text="14 HOURS · AND THE MONEY GOES BACK UP" color={C.noche} x={960} y={150} centro size={58} />
       <Gran t={t} t0={471.8} t1={473.4} text="HE ALREADY OWNS YOUR DAY" y={900} size={100} color={C.rojo} />

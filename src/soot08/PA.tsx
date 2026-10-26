@@ -22,7 +22,7 @@ const KA: K[] = [
   [3.85, 3250, -330, 1.6], [6.5, 3280, -330, 1.65], [8.0, 3560, -330, 1.75], [10.5, 3380, -380, 1.35], [13.3, 3500, -330, 1.3],
   [14.05, FCX, -330, 5.2], [14.7, 2850, -300, 1.6], [17.9, 2800, -300, 1.65], [18.8, 3300, -420, 1.55], [23.6, 3200, -420, 1.7],
   [25.3, 2300, -1900, 0.31], [27.9, 2100, -2100, 0.27], [30.4, 1900, -2600, 0.2], [32.2, 1900, -700, 0.6], [34.4, 2650, -200, 1.35],
-  [35.2, 3150, -300, 1.3], [36.3, 3100, -420, 0.95], [38.6, 3100, -300, 1.1], [40.6, 3700, -560, 1.7], [43.4, 2680, -250, 1.55],
+  [35.2, 3020, -300, 1.3], [36.3, 3100, -420, 0.95], [38.6, 3100, -300, 1.1], [40.6, 3700, -560, 1.7], [43.4, 2680, -250, 1.55],
   [45.7, 2620, -250, 1.6], [48.5, 2850, -460, 1.1], [49.4, 3300, -470, 1.5], [51.0, 3300, -470, 1.55],
   [51.9, -1110, -420, 1.0], [52.8, -1175, -395, 7.5],
 ];
@@ -92,7 +92,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
           <Espacio cam={cam}>
             <CasaAdentro t={t} gente={casa} />
             {/* monedas en la mesa y el pan */}
-            {t > 54.9 && [0, 1, 2, 3].map((i) => <Moneda3 key={i} t={t} t0={54.9 + i * 0.22} x={430 + i * 150} y={-400} s={0.95} txt="1d" oro />)}
+            {t > 54.9 && [0, 1, 2, 3].map((i) => <Moneda3 key={i} t={t} t0={54.9 + i * 0.22} x={330 + i * 95} y={-400} s={0.6} txt="1d" oro />)}
             {t > 58.5 && [0, 1].map((i) => <Moneda3 key={`s${i}`} t={t} t0={58.6 + i * 0.25} x={860 + i * 70} y={-370} s={0.42} txt="1s" t1={61.2} />)}
             {t > 60.3 && t < 61.25 && <Pan x={700} y={-420} s={1.2 * ent(t, 60.3)} />}
           </Espacio>
@@ -135,7 +135,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={11.4} t1={13.4} text="A FEW SHILLINGS A WEEK" color={C.ambar} tinta={C.noche} x={960} y={950} centro size={72} />
       <Cuenta t={t} t0={14.2} t1={14.9} de={0} a={14} x={960} y={300} size={300} color={C.ambar} suf=" HOURS" fuera={15.8} />
       <Chip t={t} t0={15.2} t1={16.2} text="ON YOUR FEET" color={C.violeta} x={960} y={520} centro size={80} />
-      {t > 14.2 && t < 16.4 && <div style={{ position: "absolute", left: 1620, top: 330, transform: `translate(-50%,-50%) scale(${ent(t, 14.25) * (1 - prog(t, 16.1, 16.4))})` }}><div style={{ position: "relative", width: 1, height: 1 }}><Reloj x={0} y={0} s={0.85} hora={5.5 + prog(t, 14.3, 15.9) * 14} /></div></div>}
+      {t > 14.2 && t < 16.4 && <div style={{ position: "absolute", left: 1640, top: 700, transform: `translate(-50%,-50%) scale(${ent(t, 14.25) * (1 - prog(t, 16.1, 16.4))})` }}><div style={{ position: "relative", width: 1, height: 1 }}><Reloj x={0} y={0} s={0.85} hora={5.5 + prog(t, 14.3, 15.9) * 14} /></div></div>}
       {t > 16.1 && t < 18.2 && <div style={{ position: "absolute", left: 1560, top: 170, transform: `scale(${ent(t, 16.1)})` }}><div style={{ position: "relative" }}><Termometro x={0} y={860} s={0.95} nivel={prog(t, 16.2, 17.4) * 0.92} /></div></div>}
       <Chip t={t} t0={16.6} t1={18.2} text="HOTTER THAN SPAIN IN SUMMER" color={C.naranja} x={800} y={160} centro size={68} />
       <Chip t={t} t0={18.4} t1={19.8} text="A MACHINE THAT DOES NOT STOP" color={C.noche} x={960} y={140} centro size={70} />
@@ -168,10 +168,10 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={55.6} t1={57} text="EVERY PENNY" color={C.oro} tinta={C.noche} x={960} y={950} centro size={76} />
       {/* el frasco de la familia: alquiler, pan, carbón */}
       {t > 55.4 && t < 60.3 && (() => { const e = ent(t, 55.45) * (1 - prog(t, 60.0, 60.3)); const n = Math.floor(Math.max(0, (t - 55.8) / 0.45)); return (
-        <div style={{ position: "absolute", left: 1560, top: 50, width: 300, height: 420, transform: `scale(${e})`, transformOrigin: "50% 100%", fontFamily }}>
+        <div style={{ position: "absolute", left: 1540, top: 50, width: 320, height: 420, transform: `scale(${e})`, transformOrigin: "50% 100%", fontFamily }}>
           <div style={{ position: "absolute", left: 20, top: 60, width: 260, height: 340, borderRadius: "40px 40px 60px 60px", background: "rgba(220,240,255,.35)", border: "8px solid #fff6dc" }} />
           {Array.from({ length: Math.min(n, 8) }, (_, i) => <div key={i} style={{ position: "absolute", left: 60 + (i % 3) * 60 + (i % 2) * 14, top: 340 - Math.floor(i / 3) * 38, width: 64, height: 26, borderRadius: "50%", background: C.oro, border: "4px solid #8a5a10" }} />)}
-          <div style={{ position: "absolute", left: 0, right: 0, top: 0, textAlign: "center", fontWeight: 700, fontSize: 34, color: "#fff6dc" }}>RENT · BREAD · COAL</div>
+          <div style={{ position: "absolute", left: 0, right: 0, top: 4, textAlign: "center", fontWeight: 700, fontSize: 30, color: "#fff6dc", whiteSpace: "nowrap" }}>RENT · BREAD · COAL</div>
         </div>); })()}
       <Chip t={t} t0={57.4} t1={58.4} text="DAD: WEAVER" color={C.violeta} x={420} y={170} centro size={60} />
       <Chip t={t} t0={60.36} t1={61.2} text="EATING" color={C.lima} tinta={C.noche} x={960} y={170} centro size={80} />
@@ -180,6 +180,12 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       <Sello t={t} t0={63.6} t1={64.3} text="HIRED" x={960} y={300} size={170} color={C.lima} rot={8} />
       <Chip t={t} t0={64.5} t1={67.4} text="ONE WORKING LIFE" color={C.violeta} x={1180} y={140} centro size={74} />
       {t > 65.3 && t < 67.5 && [0, 1, 2, 3, 4, 5, 6].map((i) => { const e = ent(t, 65.4 + i * 0.16, 0, { damping: 9, stiffness: 200 }) * (1 - prog(t, 67.2, 67.5)); return <div key={i} style={{ position: "absolute", left: 760 + i * 150, top: 900, width: 110, height: 110, borderRadius: 55, background: C.rojo, border: "8px solid #fff", transform: `translate(-50%,-50%) scale(${e})`, fontFamily, fontWeight: 800, fontSize: 60, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "6px 8px 0 rgba(10,5,30,.45)" }}>{i + 1}</div>; })}
+      {t > 64.7 && t < 67.5 && (() => { const e = ent(t, 64.75) * (1 - prog(t, 67.2, 67.5)); const k = prog(t, 64.9, 66.3); return (
+        <svg style={{ position: "absolute", left: 760, top: 470, overflow: "visible", opacity: e }} width={1} height={1}>
+          <line x1={0} y1={0} x2={980} y2={0} stroke="#fff6dc" strokeWidth={10} strokeLinecap="round" opacity={0.45} />
+          <line x1={0} y1={0} x2={980 * k} y2={0} stroke={C.ambar} strokeWidth={14} strokeLinecap="round" />
+          {[9, 11, 13, 15, 17].map((a, i) => <g key={a} transform={`translate(${i * 245} 0)`}><circle r={16} fill={k * 980 >= i * 245 ? C.ambar : "#fff6dc"} stroke="#2a1530" strokeWidth={5} /><text y={62} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={40} fill="#fff" stroke="#2a1530" strokeWidth={7} paintOrder="stroke">{`AGE ${a}`}</text></g>)}
+        </svg>); })()}
       <Chip t={t} t0={66.4} t1={67.4} text="7 WAYS IT TRIES TO BREAK YOU" color={C.noche} x={1220} y={760} centro size={48} />
       <Chip t={t} t0={65.0} t1={67.4} text="INSIDE A VICTORIAN MILL · 5:30 AM" color={C.ambar} tinta={C.noche} x={1180} y={250} centro size={50} />
       <Chip t={t} t0={68.7} t1={71.6} text="EVERY WAY IT TRIES TO BREAK YOU" color={C.rojo} x={960} y={140} centro size={66} />
@@ -191,6 +197,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
         const k = prog(t, 74.4, 75.3);
         return <Carta t={t} t0={74.4} x={1500 - k * 1050} y={420 + Math.sin(k * Math.PI) * -120} s={0.4 + k * 0.06} abre={0} />;
       })()}
+      <Primer t={t} t0={74.5} t1={79.3} lado="der" x={1620} h={820} g={{ expr: t < 76.5 ? "sorpresa" : "miedo", mira: -1, miraY: -0.4 }} emo={t > 77.6 ? "preg" : undefined} />
       <Chip t={t} t0={74.6} t1={77} text="A PRESIDENT" color={C.violeta} x={420} y={130} centro size={70} />
       <Chip t={t} t0={75.5} t1={79.2} text="4,000 MILES AWAY" color={C.teal} tinta={C.noche} x={420} y={760} centro size={62} />
       <Chip t={t} t0={77.6} t1={79.2} text="WHY?" color={C.rojo} x={420} y={130} centro size={90} />
