@@ -92,18 +92,18 @@ const Vitrina: React.FC<{ t: number; t0: number }> = ({ t, t0 }) => {
 };
 // tabla FLEET vs LEGION
 const Tabla: React.FC<{ t: number; filas: { a: string; b: string; t0: number; malo?: boolean }[]; x?: number; y?: number }> = ({ t, filas, x = 960, y = 520 }) => (
-  <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) scale(${ent(t, filas[0].t0 - 0.3)})`, background: "linear-gradient(180deg, #3a2590, #241660)", border: "6px solid #7fd6ff", borderRadius: 30, padding: "26px 40px", boxShadow: "0 14px 0 rgba(10,5,30,.45)", fontFamily, fontWeight: 700, color: "#fff", width: 1180 }}>
+  <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) scale(${0.82 * ent(t, filas[0].t0 - 0.3)})`, background: "linear-gradient(180deg, #f6e7c4, #e8cf9c)", border: "8px solid #6b3f1e", borderRadius: 30, padding: "26px 40px", boxShadow: "0 14px 0 rgba(10,5,30,.45)", fontFamily, fontWeight: 700, color: "#fff", width: 1180 }}>
     <div style={{ display: "flex", fontSize: 54, marginBottom: 14 }}>
-      <div style={{ flex: 1 }} /><div style={{ width: 300, textAlign: "center", color: "#7fd6ff" }}>FLEET</div><div style={{ width: 300, textAlign: "center", color: "#ff8a9a" }}>LEGION</div>
+      <div style={{ flex: 1 }} /><div style={{ width: 300, textAlign: "center", color: "#1d6f8a" }}>FLEET</div><div style={{ width: 300, textAlign: "center", color: "#b0302a" }}>LEGION</div>
     </div>
     {filas.map((f, i) => {
       const e = ent(t, f.t0);
       if (t < f.t0) return <div key={i} style={{ height: 96 }} />;
       return (
-        <div key={i} style={{ display: "flex", alignItems: "center", height: 96, fontSize: 52, transform: `translateX(${(1 - e) * -60}px)`, opacity: e, borderTop: "4px solid rgba(255,255,255,.12)" }}>
-          <div style={{ flex: 1, color: "#fff" }}>{["TERM", "PAY", "RESPECT"][i]}</div>
-          <div style={{ width: 300, textAlign: "center", color: f.malo ? C.rojo : C.lima }}>{f.a}</div>
-          <div style={{ width: 300, textAlign: "center", color: "#fff" }}>{f.b}</div>
+        <div key={i} style={{ display: "flex", alignItems: "center", height: 96, fontSize: 52, transform: `translateX(${(1 - e) * -60}px)`, opacity: e, borderTop: "4px solid rgba(90,52,24,.25)" }}>
+          <div style={{ flex: 1, color: "#3a2410" }}>{["TERM", "PAY", "RESPECT"][i]}</div>
+          <div style={{ width: 300, textAlign: "center", color: f.malo ? "#b0302a" : "#2e8b3a" }}>{f.a}</div>
+          <div style={{ width: 300, textAlign: "center", color: "#3a2410" }}>{f.b}</div>
         </div>
       );
     })}
@@ -237,7 +237,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
       {t > 108.2 && <svg style={{ position: "absolute", left: 120, top: 560, transform: `scale(${ent(t, 108.2)})`, transformOrigin: "200px 300px" }} width={420} height={300}><rect x={20} y={80} width={380} height={200} fill="#e8b98a" /><path d="M 0 90 L 210 10 L 420 90 Z" fill="#b5452c" />{[60, 160, 260].map((x) => <rect key={x} x={x} y={150} width={60} height={60} fill="#5a3418" />)}</svg>}
       <Chip t={t} t0={104.0} text="NOT ALL AT SEA" color={C.violeta} x={110} y={150} size={56} />
       <Chip t={t} t0={105.7} text="ROME" color={C.rojo} x={110} y={260} size={72} />
-      <Chip t={t} t0={108.3} text="SAILORS' BARRACKS" color="#1d6f8a" x={330} y={520} centro size={46} />
+      <Chip t={t} t0={108.3} text="SAILORS' BARRACKS" color="#1d6f8a" x={250} y={430} centro size={46} />
       <Chip t={t} t0={109.7} text="THE COLOSSEUM" color={C.oro} tinta={C.noche} x={1150} y={150} centro size={66} />
       <Chip t={t} t0={111.1} text="A VERY STRANGE JOB" color={C.rojo} x={960} y={960} centro size={62} />
     </Escena>
@@ -286,9 +286,9 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={130.6} t1={143.7} entra="paneo" sale="fundido" fondo="#1f5c9c" golpes={[133.4, 140.9]}>
       <MapaMar t={t} puntos={[{ n: "MISENUM", t0: 131.4, color: C.teal }, { n: "EGYPT", t0: 137.2 }, { n: "THRACE", t0: 138.1 }, { n: "DALMATIA", t0: 138.8 }, { n: "SYRIA", t0: 139.5 }]}
         rutas={[{ de: "EGYPT", a: "MISENUM", t0: 137.3 }, { de: "THRACE", a: "MISENUM", t0: 138.2 }, { de: "DALMATIA", a: "MISENUM", t0: 138.9 }, { de: "SYRIA", a: "MISENUM", t0: 139.6 }]} />
-      <Apion t={t} t0={131.0} x={1680} y={1060} h={420} acts={[[131.5, "habla"], [133.4, "asombro"], [137.2, "senala"], [140.9, "triste"]]} flip />
-      <Chip t={t} t0={131.2} text="THE DEAL" color={C.violeta} x={110} y={140} size={60} />
-      <Chip t={t} t0={133.4} text="NOT ROMAN AT ALL" color={C.rojo} x={110} y={250} size={60} />
+      <Apion t={t} t0={131.0} x={250} y={1060} h={420} acts={[[131.5, "habla"], [133.4, "asombro"], [137.2, "senala"], [140.9, "triste"]]} flip={false} />
+      <Chip t={t} t0={131.2} text="THE DEAL" color={C.violeta} x={110} y={120} size={60} />
+      <Chip t={t} t0={133.4} text="NOT ROMAN AT ALL" color={C.rojo} x={110} y={220} size={60} />
       <Chip t={t} t0={134.8} text="FREE MEN" color={C.teal} tinta={C.noche} x={1600} y={140} centro size={60} />
       <Chip t={t} t0={135.9} text="FROM THE EDGES" color={C.oro} tinta={C.noche} x={1600} y={250} centro size={50} />
       <Chip t={t} t0={140.9} text="NOT CITIZENS" color={C.rojo} x={960} y={960} centro size={66} />
@@ -299,7 +299,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={143.7} t1={153.0} entra="fundido" sale="atraviesa" sx={960} sy={540} fondo="#2d1b69" golpes={[146.7, 152.3]}>
       <Sala t={t} />
       <Chip t={t} t0={144.3} text="A VERY SIMPLE OFFER" color={C.oro} tinta={C.noche} x={960} y={130} centro size={64} />
-      <Tabla t={t} y={560} filas={[{ a: "26 YRS", b: "25 YRS", t0: 146.7, malo: true }, { a: "LOWER", b: "MORE", t0: 149.9, malo: true }, { a: "LESS", b: "MORE", t0: 151.4, malo: true }]} />
+      <Tabla t={t} x={800} y={560} filas={[{ a: "26 YRS", b: "25 YRS", t0: 146.7, malo: true }, { a: "LOWER", b: "MORE", t0: 149.9, malo: true }, { a: "LESS", b: "MORE", t0: 151.4, malo: true }]} />
       <Apion t={t} t0={143.8} x={1760} y={1060} h={430} acts={[[144.3, "habla"], [146.7, "asombro"], [149.9, "enojado"], [151.4, "triste"]]} flip />
     </Escena>
 
@@ -401,7 +401,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
       <Emote t={t} t0={210.6} tipo="sudor" {...L(1300, pp(820, 470), 820)} s={1.4} />
       <Chip t={t} t0={205.7} text="NO CHAINS" color={C.teal} tinta={C.noche} x={440} y={110} centro size={62} />
       <Chip t={t} t0={206.8} text="JUST A CONTRACT" color={C.violeta} x={980} y={110} centro size={56} />
-      <Chip t={t} t0={209.5} text="WORSE" color={C.rojo} x={180} y={600} centro size={80} />
+      <Chip t={t} t0={209.5} text="WORSE" color={C.rojo} x={250} y={600} centro size={80} />
       <Chip t={t} t0={210.6} text="YOU SIGNED IT" color={C.ambar} tinta={C.noche} x={760} y={980} centro size={64} />
     </Escena>
   </>

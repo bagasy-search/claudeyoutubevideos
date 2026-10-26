@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona, APION, CIVIL, CENTURION } from "./persona";
-import { C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, cabeza, Particulas, Rayos } from "./kit";
+import { Franja, C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, cabeza, Particulas, Rayos } from "./kit";
 import { Apion, Sala } from "./actor";
 import { Galera, Corte, Remero, MapaMar, Pancarta, CuentaN, Flecha, Salpica, Playa, Flota, Columna, Nubes } from "./mar";
 import { Laurel } from "./P1";
@@ -236,9 +236,12 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
         </AbsoluteFill>
       )}
       {t >= 636.3 && (
+        <>
         <Cam t={t} k={[[636.3, 860, 760, 1.6], [638.43, 820, 740, 1.9]]}>
           <Corte t={t} boga={0.55} agua={0.08} heroeExpr="cansado" oscuro={0.6} luz={0.4} />
         </Cam>
+        <Franja t={t} />
+        </>
       )}
       <Chip t={t} t0={632.27} t1={636.1} text="GREAT NEWS FOR DUILIUS" color={C.oro} tinta={C.noche} x={960} y={140} centro size={60} />
       <Chip t={t} t0={634.6} t1={636.1} text="GLORY → MARINES" color={C.rojo} x={960} y={960} centro size={60} />
@@ -256,7 +259,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
               {t > 643.9 && t < 650.4 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
                 {/* centro de gravedad que sube */}
                 {(() => { const cy = interpolate(t, [645.3, 646.6], [700, 520], cl); return <g transform={`translate(1000 ${cy})`}><circle r={34} fill="#fff" stroke={C.noche} strokeWidth={6} /><path d="M 0 -34 A 34 34 0 0 1 34 0 L 0 0 Z M 0 34 A 34 34 0 0 1 -34 0 L 0 0 Z" fill={C.noche} /></g>; })()}
-                {t > 645.3 && <text x={1060} y={500} fontFamily={fontFamily} fontWeight={700} fontSize={40} fill="#fff" stroke={C.noche} strokeWidth={8} paintOrder="stroke">CENTER OF GRAVITY ↑</text>}
+                {t > 645.3 && <text x={950} y={500} textAnchor="end" fontFamily={fontFamily} fontWeight={700} fontSize={40} fill="#fff" stroke={C.noche} strokeWidth={8} paintOrder="stroke">CENTER OF GRAVITY ↑</text>}
               </svg>}
             </div>
           );

@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona, APION, CIVIL } from "./persona";
-import { C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, Particulas, Rayos, Astro } from "./kit";
+import { Franja, C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, Particulas, Rayos, Astro } from "./kit";
 import { Calor } from "./kit2";
 import { Apion, Sala } from "./actor";
 import { Galera, Corte, Remero, Galleta, Anfora, Pancarta, CuentaN, Flecha, Salpica } from "./mar";
@@ -106,13 +106,30 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 352,2 · "Hollywood got it almost right. The Romans really did have a man whose job was keeping time... the hortator, the encourager" */}
     <Escena t={t} t0={352.2} t1={362.3} entra="fundido" sale="fundido" fondo="#3a1c0e" quieta golpes={[353.9, 359.5]}>
-      <Cam t={t} k={[[352.2, 960, 540, 1.0], [355.4, 960, 540, 1.0], [357.2, 330, 200, 1.9], [362.3, 330, 200, 1.9]]}>
+      <Cam t={t} k={[[352.2, 960, 540, 1.0], [357.2, 960, 560, 1.12]]}>
         <Corte t={t} boga={0.55} agua={0.06} heroeExpr="cansado" />
       </Cam>
+      <Franja t={t} />
+      {t >= 357.2 && (() => {
+        const g = Math.max(0, Math.cos(t * 1.1 * Math.PI * 2)) ** 4;
+        return (
+          <AbsoluteFill style={{ opacity: prog(t, 357.2, 357.6) }}>
+            <Sala t={t} tipo="bodega" />
+            <AbsoluteFill style={{ background: "radial-gradient(ellipse at 1300px 520px, rgba(255,200,120,.35), rgba(0,0,0,0) 55%)" }} />
+            <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+              <rect x={1500} y={760} width={34} height={250} fill="#5a3418" /><rect x={1660} y={760} width={34} height={250} fill="#5a3418" />
+              <ellipse cx={1597} cy={760} rx={150} ry={36} fill="#c9673f" /><rect x={1447} y={700} width={300} height={60} fill="#a8502a" /><ellipse cx={1597} cy={700} rx={150} ry={36} fill="#e8c9a0" stroke="#6b3a1f" strokeWidth={6} />
+              {g > 0.6 && <path d="M 1430 660 l -50 -30 M 1764 660 l 50 -30 M 1597 640 l 0 -60" stroke="#fff" strokeWidth={10} strokeLinecap="round" opacity={g} />}
+            </svg>
+            <Persona x={1280} y={1010} h={660} t={t} seed={131} ropa={CIVIL(2)} expr="enojado" habla={t > 359.6} mira={1} bD={70 + 35 * (1 - g)} cD={30} bI={30} cI={60}
+              manoD={<g transform="rotate(-90)"><rect x={-10} y={-10} width={20} height={170} rx={8} fill="#6b3a1f" /><rect x={-40} y={140} width={80} height={56} rx={14} fill="#8a5a2a" /></g>} />
+          </AbsoluteFill>
+        );
+      })()}
       <Chip t={t} t0={353.9} t1={356.8} text="HOLLYWOOD: ALMOST RIGHT" color={C.oro} tinta={C.noche} x={960} y={150} centro size={62} />
       <Chip t={t} t0={355.9} t1={358.6} text="A MAN WHO KEEPS TIME" color={C.violeta} x={960} y={950} centro size={56} />
-      <Grande t={t} t0={359.5} text="HORTATOR" x={960} y={180} size={150} color={C.crema} />
-      <Chip t={t} t0={361.06} text="'THE ENCOURAGER'" color="#1d6f8a" x={960} y={320} centro size={56} />
+      <Grande t={t} t0={359.5} text="HORTATOR" x={620} y={300} size={150} color={C.crema} />
+      <Chip t={t} t0={361.06} text="'THE ENCOURAGER'" color="#1d6f8a" x={620} y={440} centro size={56} />
     </Escena>
 
     {/* 362,3 · "instead of a big drum, a mallet, the portisculus, banging out the beat, and a flute player, the symphoniacus... 300 men pull at exactly the same moment. And they had to." */}
@@ -224,21 +241,24 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 415,5 · "the ship carries almost no water. What it does carry is hard dry biscuit and posca... sour wine mixed with water. Breakfast, lunch and dinner of champions." */}
     <Escena t={t} t0={415.5} t1={427.4} entra="paneo" sale="fundido" fondo="#7a4520" golpes={[416.5, 418.4, 419.4, 421.6, 424.7, 425.6, 425.9]}>
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, #8a5228, #5a3018)" }} />
+      <Sala t={t} tipo="bodega" />
       {t < 418.3 && <Jarra t={t} t0={415.6} x={960} y={600} litros={0.35} />}
       {t < 424.6 && (
         <>
-          {t > 418.3 && <Galleta x={520} y={500} s={1.4 * ent(t, 418.36)} />}
-          {t > 419.3 && <Anfora x={1300} y={520} s={1.0 * ent(t, 419.4)} txt="POSCA" />}
+          {t > 418.3 && <Persona x={620} y={1020} h={680} t={t} seed={2} ropa={APION} expr={t < 419.3 ? "enojado" : "triste"} mira={0.5}
+            bD={150} cD={125} bI={20} cI={20}
+            manoD={t >= 419.3 ? <g><rect x={-30} y={-40} width={60} height={80} rx={10} fill="#c9673f" stroke="#6b3a1f" strokeWidth={5} /><ellipse cx={0} cy={-40} rx={30} ry={9} fill="#7a2a3a" /></g> : <g transform={`rotate(${Math.sin(t * 9) * 6})`}><circle r={40} fill="#d9a85a" stroke="#8a5a2a" strokeWidth={6} /><circle cx={-10} cy={-6} r={6} fill="#8a5a2a" /><circle cx={12} cy={10} r={5} fill="#8a5a2a" /></g>}
+            aparece={418.3} />}
+          {t > 419.3 && <Chip t={t} t0={419.4} text="POSCA" color={C.violeta} x={1300} y={540} centro size={60} />}
           {t > 421.6 && <div style={{ position: "absolute", left: 1300, top: 860, transform: `translate(-50%,-50%) scale(${ent(t, 421.6)})`, display: "flex", gap: 20, alignItems: "center", whiteSpace: "nowrap", fontFamily, fontWeight: 700, fontSize: 56, color: "#fff" }}><span style={{ background: "#7a1f3a", padding: "6px 20px", borderRadius: 14 }}>SOUR WINE</span>+<span style={{ background: "#2a8fd0", padding: "6px 20px", borderRadius: 14 }}>WATER</span></div>}
         </>
       )}
       {t >= 424.6 && [0, 1, 2].map((i) => { const t0 = [424.7, 425.56, 425.9][i]; return t < t0 ? null : <React.Fragment key={i}><svg style={{ position: "absolute", left: 420 + i * 540 - 200, top: 380, transform: `scale(${ent(t, t0)})` }} width={400} height={300}><ellipse cx={200} cy={180} rx={190} ry={70} fill="#e8dcc4" /><ellipse cx={200} cy={170} rx={150} ry={50} fill="#f6efe0" /></svg><Galleta x={420 + i * 540} y={500} s={0.8 * ent(t, t0)} /></React.Fragment>; })}
       <Chip t={t} t0={415.5} t1={424.4} text="ALMOST NO WATER" color="#1d6f8a" x={960} y={140} centro size={60} />
-      <Chip t={t} t0={418.4} t1={424.4} text="HARD DRY BISCUIT" color={C.oro} tinta={C.noche} x={520} y={780} centro size={54} />
+      <Chip t={t} t0={418.4} t1={424.4} text="HARD DRY BISCUIT" color={C.oro} tinta={C.noche} x={1300} y={420} centro size={58} />
       {(["BREAKFAST", "LUNCH", "DINNER"] as const).map((n, i) => <Chip key={n} t={t} t0={[424.7, 425.56, 425.9][i]} text={n} color={[C.ambar, C.teal, C.violeta][i]} tinta={i < 2 ? C.noche : "#fff"} x={420 + i * 540} y={760} centro size={54} />)}
-      <Persona x={1680} y={1010} h={380} t={t} seed={2} ropa={APION} expr={t > 420.2 && t < 424.6 ? "enojado" : t < 424.6 ? "neutro" : "triste"} bD={t > 419.6 && t < 421.0 ? 150 : t > 421.0 && t < 424.6 ? 80 : 10} cD={t > 419.6 && t < 421.0 ? 110 : 40} manoD={t > 419.6 && t < 424.6 ? <path d="M -16 -10 L 16 -10 L 12 26 L -12 26 Z" fill="#c9773f" stroke="#6a3a10" strokeWidth={4} /> : undefined} mira={-0.6} />
-      <Emote t={t} t0={420.4} t1={424.4} tipo="enojo" x={1680} y={1010 - 330} s={1.1} />
+      {(t < 418.3 || t >= 424.6) && <Persona x={1680} y={1010} h={380} t={t} seed={2} ropa={APION} expr={t > 420.2 && t < 424.6 ? "enojado" : t < 424.6 ? "neutro" : "triste"} bD={t > 419.6 && t < 421.0 ? 150 : t > 421.0 && t < 424.6 ? 80 : 10} cD={t > 419.6 && t < 421.0 ? 110 : 40} manoD={t > 419.6 && t < 424.6 ? <path d="M -16 -10 L 16 -10 L 12 26 L -12 26 Z" fill="#c9773f" stroke="#6a3a10" strokeWidth={4} /> : undefined} mira={-0.6} />}
+      <Emote t={t} t0={420.4} t1={424.4} tipo="enojo" x={820} y={420} s={1.1} />
       <Chip t={t} t0={426.2} text="...OF CHAMPIONS" color={C.rojo} x={960} y={930} centro size={62} />
     </Escena>
 
@@ -249,6 +269,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
         <AbsoluteFill style={{ background: "#ff2a2a", opacity: t > 431 ? 0.18 + 0.12 * Math.sin(t * 14) : 0, mixBlendMode: "multiply" }} />
         {t > 433 && <Particulas t={t} tipo="brasas" n={30} seed={12} />}
       </Cam>
+      <Franja t={t} />
       <Chip t={t} t0={428.86} t1={430.9} text="THE CALL EVERY ROWER DREADS" color={C.violeta} x={960} y={150} centro size={56} />
       <Grande t={t} t0={431.08} text="FASTER." y={300} size={170} color={C.crema} />
       <Grande t={t} t0={431.94} text="RAMMING SPEED!" y={520} size={150} color={C.rojo} />

@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { rnd } from "../soot/lib";
 import { Persona, APION } from "./persona";
-import { C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, cabeza } from "./kit";
+import { Franja, C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Emote, cabeza } from "./kit";
 import { Apion, Sala } from "./actor";
 import { Galera, Corte, Remero, Espolon, MapaMar, Pancarta, CuentaN, Flecha, Salpica, Submarino, Burbujas } from "./mar";
 
@@ -54,7 +54,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={446.1} text="AT THE WATERLINE" color="#1d6f8a" x={1300} y={640} centro size={56} />
       <Chip t={t} t0={447.06} text="A HUGE BRONZE BEAK" color={C.oro} tinta={C.noche} x={960} y={260} centro size={58} />
       <Apion t={t} t0={444.2} x={250} y={1050} h={420} borda={1020} flip={false} acts={[[444.3, "habla"], [446.1, "senala"], [449.3, "asombro"]]} />
-      <Grande t={t} t0={449.26} text="ROSTRUM" x={1060} y={750} size={150} color={C.crema} />
+      <Grande t={t} t0={449.26} text="ROSTRUM" x={1250} y={820} size={150} color={C.crema} />
     </Escena>
 
     {/* 451,3 · "In the sea off western Sicily..." mapa → 453,2 abajo del agua: "divers found 20+ rams on the seabed... 241 BC... inscriptions with names of officials who paid" */}
@@ -182,6 +182,8 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
         {t > 512.0 && <Flecha t={t} t0={512.1} x1={800} y1={600} x2={520} y2={110} color={C.lima} />}
         {t > 512.0 && <Flecha t={t} t0={512.3} x1={1200} y1={600} x2={1420} y2={110} color={C.lima} />}
       </Cam>
+      <Franja t={t} />
+      <Franja t={t} abajo />
       <Chip t={t} t0={500.15} t1={504.8} text="THE HOLE: DOWN LOW" color={C.rojo} x={120} y={140} size={58} />
       <Chip t={t} t0={502.7} t1={504.8} text="= THE BOTTOM ROW" color={C.noche} x={120} y={250} size={58} />
       <Chip t={t} t0={505.3} t1={511.8} text="WATER: YOUR LEVEL FIRST" color="#1d6f8a" x={960} y={850} centro size={56} />
@@ -215,8 +217,8 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
       ); })()}
       <Apion t={t} t0={525.4} x={1700} y={1050} h={420} borda={1020} acts={[[525.6, "habla"], [528.3, "festeja"], [529.6, "triste"]]} />
       <Chip t={t} t0={526.35} text="TOWED AWAY" color={C.violeta} x={120} y={140} size={60} />
-      <Chip t={t} t0={528.27} text="THE SHIP SURVIVED ✓" color={C.lima} tinta={C.noche} x={960} y={750} centro size={60} />
-      <Chip t={t} t0={529.55} text="THE BOTTOM ROW... ✕" color={C.rojo} x={960} y={860} centro size={60} />
+      <Chip t={t} t0={528.27} text="THE SHIP SURVIVED ✓" color={C.lima} tinta={C.noche} x={760} y={240} centro size={60} />
+      <Chip t={t} t0={529.55} text="THE BOTTOM ROW... ✕" color={C.rojo} x={760} y={350} centro size={60} />
     </Escena>
 
     {/* 531,4 · "this is the kind of war Rome had to learn from scratch. Which brings us to the most famous trick in Roman naval history" */}

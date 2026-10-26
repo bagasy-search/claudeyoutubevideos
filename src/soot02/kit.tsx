@@ -440,3 +440,9 @@ export const Grilla: React.FC<{ t: number; t0: number; de: number; a: number; tA
     </div>
   );
 };
+
+// banda oscura arriba/abajo para los textos sobre vistas llenas de caras (los chips no pisan cabezas)
+export const Franja: React.FC<{ t: number; t0?: number; abajo?: boolean; alto?: number }> = ({ t, t0 = -1e9, abajo, alto = 250 }) =>
+  t < t0 ? null : (
+    <div style={{ position: "absolute", left: 0, width: 1920, height: alto, [abajo ? "bottom" : "top"]: 0, opacity: Math.min(1, (t - t0) * 4), background: `linear-gradient(${abajo ? "0deg" : "180deg"}, rgba(18,12,30,.96) 62%, rgba(18,12,30,0))` }} />
+  );

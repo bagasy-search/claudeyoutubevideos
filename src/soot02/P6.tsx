@@ -155,11 +155,11 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={5200} height={1080}><path d="M 0 760 Q 1300 720 2600 750 Q 3900 780 5200 740 L 5200 1080 L 0 1080 Z" fill="#8a7a7a" /><path d="M 0 800 Q 1300 770 2600 790 Q 3900 810 5200 780 L 5200 1080 L 0 1080 Z" fill="#a8968a" /></svg>
         <Restos t={t} t0={700.6} n={38} />
       </Cam>
-      {t >= 704.03 && <AbsoluteFill style={{ background: "rgba(20,18,42,.72)", opacity: prog(t, 704.0, 704.4) }} />}
+      {t >= 704.03 && <AbsoluteFill style={{ background: "rgba(20,18,42,.38)", opacity: prog(t, 704.0, 704.4) }} />}
       <Apion t={t} t0={700.6} x={1640} y={1075} h={440} acts={[[700.8, "triste"], [704.1, "piensa"], [706.0, "asombro"]]} />
       <Chip t={t} t0={700.6} t1={704.0} text="WRECKAGE" color={C.rojo} x={960} y={150} centro size={64} />
       <Chip t={t} t0={702.3} t1={704.0} text="FOR MILES" color={C.oro} tinta={C.noche} x={960} y={260} centro size={56} />
-      {t >= 704.03 && <Pergamino x={960} y={560} w={900} abre={prog(t, 704.1, 704.6)} lineas={6} titulo="POLYBIUS · HISTORIES I.37" />}
+      {t >= 704.03 && <Pergamino x={860} y={560} w={760} abre={prog(t, 704.1, 704.6)} lineas={6} titulo="POLYBIUS · HISTORIES I.37" />}
       <Chip t={t} t0={704.5} text="ONE OF THE GREATEST" color={C.violeta} x={960} y={440} centro size={58} />
       <Chip t={t} t0={705.3} text="DISASTERS AT SEA IN ALL HISTORY" color={C.rojo} x={960} y={540} centro size={52} />
     </Escena>
@@ -237,7 +237,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 739,43 · "Polybius adds it all up. In that one war against Carthage, Rome lost around 700 warships, not all to the enemy, a huge number to the weather" */}
     <Escena t={t} t0={739.43} t1={752.81} entra="fundido" sale="fundido" fondo="#14122a" golpes={[739.5, 741.2, 743.2, 745.7, 747.2, 749.1]}>
-      {t < 749.13 && <Flota t={t} t0={739.5} n={700} hunde={t > 745.69 ? 700 : 0} tA={[745.8, 748.9]} x={900} y={600} cols={40} s={0.6} />}
+      {t < 749.13 && <Cam t={t} k={[[739.5, 900, 600, 0.92], [749.1, 900, 580, 1.2]]}><Flota t={t} t0={739.5} n={700} hunde={t > 745.69 ? 700 : 0} tA={[745.8, 748.9]} x={900} y={600} cols={40} s={0.6} /></Cam>}
       {t < 749.13 && <CuentaN t={t} t0={743.17} t1={745.6} de={0} a={700} x={960} y={160} size={130} color={C.crema} pre="~" suf=" WARSHIPS" />}
       <Chip t={t} t0={739.5} t1={743.1} text="POLYBIUS ADDS IT UP" color={C.violeta} x={960} y={160} centro size={56} />
       <Chip t={t} t0={741.21} t1={743.1} text="ROME vs CARTHAGE" color={C.rojo} x={820} y={930} centro size={50} />
@@ -254,7 +254,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
           })}
         </svg>
       )}
-      <Apion t={t} t0={739.6} x={1710} y={1075} h={330} desde="nada" acts={[[739.7, "habla"], [743.2, "asombro"], [745.7, "miedo"], [749.2, "triste"]]} />
+      <Apion t={t} t0={739.6} x={1710} y={1000} h={330} desde="nada" acts={[[739.7, "habla"], [743.2, "asombro"], [745.7, "miedo"], [749.2, "triste"]]} />
       {t >= 749.13 && <CuentaN t={t} t0={750.0} t1={752.0} a={200000} pre="≈ " suf=" MEN" x={900} y={960} size={100} color={C.crema} />}
       {t >= 749.13 && <Chip t={t} t0={749.13} text="EVERY SHIP = A FEW HUNDRED ROWERS" color={C.rojo} x={960} y={190} centro size={56} />}
     </Escena>
@@ -307,8 +307,8 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={765.87} text="ADMIRAL · FLEET OF MISENUM" color={C.violeta} x={960} y={140} centro size={52} />
       <Chip t={t} t0={767.4} text="+ FAMOUS WRITER" color={C.oro} tinta={C.noche} x={960} y={240} centro size={46} />
       <Chip t={t} t0={769.27} text="PLINY THE ELDER" color={C.rojo} x={560} y={330} centro size={60} />
-      {t > 767.4 && <Pergamino x={1380} y={640} w={380} abre={prog(t, 767.5, 768.0)} lineas={5} titulo="NATURAL HISTORY" />}
-      {t > 767.4 && <CuentaN t={t} t0={767.6} t1={768.6} a={37} suf=" BOOKS" x={1380} y={480} size={70} color={C.oro} />}
+      {t > 767.4 && <Pergamino x={1560} y={470} w={320} abre={prog(t, 767.5, 768.0)} lineas={4} titulo="NATURAL HISTORY" />}
+      {t > 767.4 && <CuentaN t={t} t0={767.6} t1={768.6} a={37} suf=" BOOKS" x={1560} y={300} size={64} color={C.oro} />}
     </Escena>
 
     {/* 770,47 · "One summer afternoon, he saw a strange cloud rising over the bay, shaped like a pine tree. It was Mount Vesuvius, erupting." */}

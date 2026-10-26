@@ -164,8 +164,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
               {Array.from({ length: 12 }, (_, i) => <line key={i} x1={i * 170} y1={784} x2={i * 170} y2={1080} stroke="#6b3a1f" strokeWidth={6} />)}
               <rect x={meta - 8} y={520} width={16} height={260} fill="#fff" />
               <path d={`M ${meta + 8} 520 L ${meta + 120} 550 L ${meta + 8} 580 Z`} fill={C.rojo} />
-              <rect x={420} y={700} width={210} height={24} rx={8} fill="#6b3a1f" /><rect x={438} y={720} width={20} height={64} fill="#5a3418" /><rect x={592} y={720} width={20} height={64} fill="#5a3418" />
-              <g transform={`translate(520 785) scale(1.1)`}><Remero fase={t * 0.5 * Math.PI * 2} ropa="#2fb5d8" piel="#c98b62" pelo="#d8d0c4" expr="cansado" seed={7} t={t} /></g>
+                            <g transform={`translate(560 770) scale(1.6)`}><Remero fase={t * 0.5 * Math.PI * 2} ropa="#2fb5d8" piel="#c98b62" pelo="#d8d0c4" expr="cansado" seed={7} t={t} /></g>
             </svg>
             {t > 846.6 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><g opacity={0.45}><rect x={1042} y={520} width={16} height={260} fill="#fff" /><path d="M 1058 520 L 1170 550 L 1058 580 Z" fill="#fff" /></g><text x={1050} y={850} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={62} fill="#fff" stroke="#2a1530" strokeWidth={8} paintOrder="stroke">PROMISED: 26</text></svg>}
             <CuentaN t={t} t0={846.6} t1={850.6} de={26} a={28} x={meta - 150} y={430} size={110} color={t > 849 ? "#ff6a6a" : C.crema} pre="SERVICE: " suf=" YRS" />
@@ -234,7 +233,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={876.77} text="STILL IN THE NAVY" color={C.violeta} x={1500} y={260} centro size={46} />
       <Chip t={t} t0={878.05} text="SIGNS: ANTONIUS MAXIMUS" color={C.rojo} x={1500} y={360} centro size={40} />
       {t >= 880.17 && [0, 1, 2].map((i) => <Persona key={i} x={1360 + i * 150} y={900} h={240} t={t} seed={180 + i} ropa={CIVIL(i + 1)} expr="feliz" aparece={880.2 + i * 0.2} bD={i === 1 ? 150 : 30} />)}
-      {t >= 874.51 && <Apion t={t} t0={874.51} x={1260} y={960} h={420} desde="nada" acts={[[874.6, "habla"], [878.1, "orgullo"], [880.2, "festeja"]]} />}
+      {t >= 874.51 && <Apion t={t} t0={874.51} x={1260} y={960} h={420} viejo desde="nada" acts={[[874.6, "habla"], [878.1, "orgullo"], [880.2, "festeja"]]} />}
       <Chip t={t} t0={880.17} text="+ GREETINGS FROM HIS KIDS" color="#3fbf5a" x={1500} y={460} centro size={40} />
       <Sello t={t} t0={882.91} text="HE MADE IT" x={760} y={560} color="#3fbf5a" size={120} />
     </Escena>
@@ -251,8 +250,8 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
       {t >= 889.29 && (
         <>
           <AbsoluteFill style={{ background: "linear-gradient(180deg, #ffb86b, #ffd9a0 60%)", opacity: prog(t, 889.29, 889.6) }} />
-          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><path d="M 0 900 Q 960 860 1920 900 L 1920 1080 L 0 1080 Z" fill="#e8c07a" /><rect x={440} y={880} width={260} height={30} rx={8} fill="#6b3a1f" /></svg>
-          <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1920} height={1080}><g transform="translate(560 900) scale(1.4)"><Remero fase={t * 0.5 * Math.PI * 2} ropa="#2fb5d8" piel="#c98b62" pelo="#d8d0c4" expr="cansado" seed={7} t={t} /></g></svg>
+          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><path d="M 0 820 Q 960 790 1920 820 L 1920 1080 L 0 1080 Z" fill="#3a8fc0" /><path d="M 0 860 Q 480 840 960 860 T 1920 860" stroke="#bfe6ff" strokeWidth={6} fill="none" opacity={0.6} /><path d="M 1100 1080 Q 1500 930 1920 960 L 1920 1080 Z" fill="#e8c07a" /></svg>
+          <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1920} height={1080}><g transform="translate(560 880) scale(1.4)"><line x1={-60} y1={-70} x2={-250 + Math.sin(t * Math.PI) * 50} y2={90} stroke="#8a5a2a" strokeWidth={12} strokeLinecap="round" /><Remero fase={t * 0.5 * Math.PI * 2} ropa="#2fb5d8" piel="#c98b62" pelo="#d8d0c4" expr="cansado" seed={7} t={t} /></g><path d="M 220 880 L 900 880 Q 860 990 760 1000 L 320 1000 Q 240 980 220 880 Z" fill="#7a4520" stroke="#4a2810" strokeWidth={8} /><rect x={220} y={872} width={680} height={18} rx={8} fill="#a8692e" /></svg>
           <Flecha t={t} t0={889.6} x1={760} y1={420} x2={360} y2={420} color={C.rojo} grosor={18} />
           {t >= 891.9 && [0, 1].map((i) => <Persona key={i} x={1300 + i * 200} y={940} h={300 - i * 30} t={t} seed={172 + i} ropa={i ? HIJA : HIJO} expr="feliz" aparece={891.95 + i * 0.2} flip mira={1} />)}
           {t >= 891.9 && <Flecha t={t} t0={892.2} x1={1220} y1={420} x2={1680} y2={420} color="#3fbf5a" grosor={18} />}
@@ -265,7 +264,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
     {/* 894,67 · CTA — "26 years on a Roman bench, subscribe and hit the bell, next time... Hadrian's Wall, and tell me which trap would have got you first" */}
     <Escena t={t} t0={894.67} t1={900.95} entra="fundido" sale="paneo" fondo="none" quieta golpes={[894.7, 897.9, 898.9]}>
       <Suelo y={900} />
-      <Apion t={t} t0={894.7} x={560} y={960} h={480} seed={7} desde="nada" flip={false} acts={[[894.7, "habla"], [897.9, "senala"], [899.5, "festeja"]]} />
+      <Apion t={t} t0={894.7} x={560} y={960} h={480} seed={7} viejo desde="nada" flip={false} acts={[[894.7, "habla"], [897.9, "senala"], [899.5, "festeja"]]} />
       <Trampas t={t} t0={894.8} n={7} x={1180} y={760} on="#3fbf5a" />
       <Chip t={t} t0={894.7} text="26 YEARS ON A ROMAN BENCH" color={C.violeta} x={1180} y={260} centro size={52} />
       <Suscribir t={t} t0={897.91} x={1180} y={480} />

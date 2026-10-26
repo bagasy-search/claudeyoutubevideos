@@ -8,7 +8,7 @@ import { Emote, cabeza } from "./kit";
 export type Act = "habla" | "senala" | "rema" | "miedo" | "piensa" | "festeja" | "asombro" | "enojado" | "triste" | "cansado" | "orgullo";
 const cl = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const };
 
-export const Apion: React.FC<{ t: number; t0: number; x: number; y?: number; h?: number; acts: [number, Act][]; flip?: boolean; desde?: "izq" | "der" | "nada"; seed?: number; ropa?: Ropa; casco?: "no" | "legion" | "centurion"; t1?: number; borda?: number }> = ({ t, t0, x, y = 1040, h = 400, acts, flip, desde, seed = 2, ropa = APION, casco = "no", t1 = 1e9, borda }) => {
+export const Apion: React.FC<{ t: number; t0: number; x: number; y?: number; h?: number; acts: [number, Act][]; flip?: boolean; desde?: "izq" | "der" | "nada"; seed?: number; ropa?: Ropa; casco?: "no" | "legion" | "centurion"; t1?: number; borda?: number; viejo?: boolean }> = ({ t, t0, x, y = 1040, h = 400, acts, flip, desde, seed = 2, ropa = APION, casco = "no", t1 = 1e9, borda, viejo }) => {
   if (t < t0 || t > t1) return null;
   // zona segura: el personaje nunca queda cortado por los bordes del cuadro (ni los pies abajo si no hay baranda)
   const yy = borda === undefined ? Math.min(y, 1050) : y;
@@ -42,7 +42,7 @@ export const Apion: React.FC<{ t: number; t0: number; x: number; y?: number; h?:
   const c = cabeza(xx, yy, h);
   return (
     <>
-      <Persona x={xx} y={yy} h={h} t={t} seed={seed} ropa={ropa} casco={casco} expr={expr} habla={habla} camina={k < 1 ? 1.8 : 0} bD={bD} cD={cD} bI={bI} cI={cI} inclina={inclina} salta={salta} flip={flip ?? lado === "der"} />
+      <Persona x={xx} y={yy} h={h} t={t} seed={seed} ropa={ropa} casco={casco} expr={expr} habla={habla} camina={k < 1 ? 1.8 : 0} bD={bD} cD={cD} bI={bI} cI={cI} inclina={inclina} salta={salta} viejo={viejo} flip={flip ?? lado === "der"} />
       {borda !== undefined && <Borda y={borda} />}
       {emo && k >= 1 && <Emote t={t} t0={ta + 0.1} tipo={emo} x={c.x} y={c.y} s={c.s} />}
     </>
