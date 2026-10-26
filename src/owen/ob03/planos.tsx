@@ -158,14 +158,14 @@ export const P05Espejo: React.FC = () => {
 };
 
 // los 47 del ensayo en grilla: se encienden uno por uno, el 47 (Owen) se marca, dos se apagan
-const Participantes47: React.FC<{ desde: number; apaga: number; owen: number }> = ({ desde, apaga, owen }) => {
+export const Participantes47: React.FC<{ desde: number; apaga: number; owen: number; fuera?: number[] }> = ({ desde, apaga, owen, fuera: FUERA = [11, 29] }) => {
   const f = useF();
   return (
     <g transform="translate(450,440)">
       {Array.from({ length: 47 }).map((_, i) => {
         const x = (i % 16) * 68, y = Math.floor(i / 16) * 120;
         const on = f >= desde + i * 0.8;
-        const fuera = (i === 11 || i === 29) && f >= apaga + (i === 29 ? 8 : 0);
+        const fuera = FUERA.includes(i) && f >= apaga + FUERA.indexOf(i) * 8;
         const es47 = i === 46;
         const c = fuera ? "#3a4560" : es47 && f >= owen ? ROJO_OWEN : "#f4efe4";
         const s = on ? 1 + (es47 && f >= owen ? 0.25 + Math.sin((f - owen) / 5) * 0.08 : 0) : 0;

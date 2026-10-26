@@ -32,7 +32,7 @@ const Radiador: React.FC<{ x: number; y: number; f: number; golpe?: boolean }> =
   </g>
 );
 
-export const TwoFlatCorte: React.FC<SetProps & { hora?: Hora; radiador?: (f: number) => boolean; luzBaño?: boolean; luzCocina?: boolean; luzDorm?: boolean }> = ({ capa, f, hora = "alba", radiador = () => false, luzBaño = true, luzCocina = true, luzDorm = false }) => {
+export const TwoFlatCorte: React.FC<SetProps & { hora?: Hora; radiador?: (f: number) => boolean; luzBaño?: boolean; luzCocina?: boolean; luzDorm?: boolean; reloj?: string }> = ({ capa, f, hora = "alba", radiador = () => false, luzBaño = true, luzCocina = true, luzDorm = false, reloj = "5:12" }) => {
   const L = LUCES[hora];
   const P = TF_PISO, A = TF_ARRIBA;
   if (capa === "lejos") {
@@ -136,7 +136,7 @@ export const TwoFlatCorte: React.FC<SetProps & { hora?: Hora; radiador?: (f: num
         <rect x={TF_PUNTOS.cama - 230} y={A - 50} width={460} height={50} fill="#4a3a2a" />
         <rect x={TF_PUNTOS.cama + 260} y={A - 110} width={90} height={110} fill="#6a4630" />
         <rect x={TF_PUNTOS.cama + 270} y={A - 136} width={44} height={26} rx={5} fill="#1d1f24" />
-        <text x={TF_PUNTOS.cama + 292} y={A - 117} fontFamily={F_HUD} fontWeight={600} fontSize={16} fill="#ff4a3d" textAnchor="middle">5:12</text>
+        <text x={TF_PUNTOS.cama + 292} y={A - 117} fontFamily={F_HUD} fontWeight={600} fontSize={16} fill="#ff4a3d" textAnchor="middle">{reloj}</text>
         {[0, 1, 2].map((k) => <g key={k} transform={`translate(${TF_PUNTOS.cama + 330 + k * 16},${A - 112}) rotate(${k === 2 ? 80 : 0})`}><rect x={-6} y={-26} width={12} height={26} rx={3} fill="#2fd16a" /><rect x={-6} y={-18} width={12} height={8} fill="#141418" /></g>)}
         <Ventana x={-120} y={A - 400} w={200} h={200} luz={L.luz} apagada={mezclar(L.cielo[1], "#2d3b44", 0.4)} prendida={L.ventanas < 0.5} marco="#f4efe4" cortina="#5a6a8a" f={f} />
       </g>
