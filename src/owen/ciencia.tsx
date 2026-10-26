@@ -208,7 +208,7 @@ export const ListaDia: React.FC<{ items: string[]; titulo?: string; check?: bool
       {items.map((t, i) => {
         const a = tiempos ? tiempos[i] : 15 + i * 26;
         return (
-          <g key={i} opacity={0.22 + 0.78 * ease(f, a, a + 6)} transform={`rotate(-2 960 540) translate(${f >= a && f < a + 10 ? Math.sin((f - a) * 1.6) * 6 * (1 - (f - a) / 10) : 0},0)`}>
+          <g key={i} opacity={0.75 + 0.25 * ease(f, a, a + 6)} transform={`rotate(-2 960 540) translate(${f >= a && f < a + 10 ? Math.sin((f - a) * 1.6) * 6 * (1 - (f - a) / 10) : 0},0)`}>
             <text x={640} y={330 + i * 120} fontFamily={F_MANO} fontWeight={700} fontSize={70} fill="#2a2420">{t}</text>
             {check ? <path d={`M1200,${300 + i * 120} l24,26 l50,-60`} stroke={VERDE} strokeWidth={12} fill="none" strokeLinecap="round" strokeLinejoin="round" strokeDasharray={140} strokeDashoffset={140 * (1 - ease(f, a + 8, a + 16))} />
               : <path d={`M630,${310 + i * 120} q300,-12 640,4`} stroke={ROJO} strokeWidth={8} fill="none" strokeLinecap="round" strokeDasharray={700} strokeDashoffset={700 * (1 - ease(f, a + 12, a + 20))} />}

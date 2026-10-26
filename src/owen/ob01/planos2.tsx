@@ -43,8 +43,10 @@ export const P21Abernathy: React.FC = () => {
 
 // ---------- 22 · Owen se ríe ----------
 export const P22Rie: React.FC = () => (
-  <EnBus cl={[mira(0, 330, BUS_PISO - 250, 2.3), mira(93, 320, BUS_PISO - 260, 2.45)]} hora="manana" min={394} avance={() => 3200}
-    owen={{ caras: [{ f: 0, v: "risa" }], habla: [[4, 60]], miradas: [{ f: 0, v: { x: 1, y: 0 } }], giros: [{ f: 0, v: 0.6 }] }} />
+  <EnBus cl={[mira(0, 250, BUS_PISO - 250, 2.3), mira(93, 240, BUS_PISO - 260, 2.45)]} hora="manana" min={394} avance={() => 3200}
+    owen={{ caras: [{ f: 0, v: "risa" }], habla: [[4, 60]], miradas: [{ f: 0, v: { x: 1, y: 0 } }], giros: [{ f: 0, v: 0.6 }, { f: 30, v: 0.2 }, { f: 50, v: 0.7 }],
+      // 26-oct v5 (ojo: gesto chico): golpe al volante con la palma y rebote de risa hacia atrás
+      poses: [{ f: 0, v: "sentado" }, { f: 10, v: { tronco: -14, cabeza: -16 } }, { f: 22, v: { tronco: 10, hD: 110, cD: 40, cabeza: 8 } }, { f: 28, v: { tronco: 4, hD: 70, cD: 20, cabeza: 4 } }, { f: 36, v: { tronco: -12, cabeza: -18 } }, { f: 52, v: { tronco: 8, hD: 110, cD: 40 } }, { f: 58, v: { tronco: 2, hD: 70, cD: 20 } }, { f: 75, v: "sentado" }] }} />
 );
 
 export const P23Agarre: React.FC = () => <AbsoluteFill><Dinamometro lb={90} caida={11} desdeCaida={kDe(145.0)(154.7)} /><HudOwen part="47/47" /></AbsoluteFill>;
@@ -203,7 +205,9 @@ export const P33Solo: React.FC = () => {
   return (
     <EnBus cl={[mira(0, 520, 640, 1.6), mira(160, 360, BUS_PISO - 250, 2.2, { curva: "inout" })]} hora="dia" min={760} avance={(f) => 10000 + f * 10}
       pas={[sent(ESTUDIANTE, 1, { caras: [{ f: 0, v: "risa" }], habla: [[0, 160]], seed: 41 }), sent(SENORA, 2, { caras: [{ f: 0, v: "feliz" }], habla: [[30, 160]], seed: 42 })]}
-      owen={{ caras: [{ f: 0, v: "triste" }], miradas: [{ f: 0, v: { x: -1, y: 0.2 } }] }}
+      owen={{ caras: [{ f: 0, v: "triste" }, { f: 90, v: "cansado" }], miradas: [{ f: 0, v: { x: 1, y: 0 } }, { f: 70, v: { x: 0.2, y: 0.8 } }], giros: [{ f: 0, v: 0.8 }, { f: 60, v: 0.8 }, { f: 80, v: 0 }],
+        // 26-oct v5 (ojo: Owen chico, sin gesto): mira a los que charlan, baja la cabeza y suspira encogiendo los hombros
+        poses: [{ f: 0, v: "sentado" }, { f: 70, v: { tronco: 12, cabeza: 22 } }, { f: 100, v: { tronco: 4, cabeza: 14, hD: 40, cD: 70 } }, { f: 130, v: { tronco: 14, cabeza: 24 } }] }}
       hud={<>
         <Mano texto="last call with a friend: 3 months ago" x={960} y={170} desde={k(244.9)} hasta={k(247.1)} color="#ffd27a" tam={52} />
         <Mano texto="400 people a day. talks to ~0." x={960} y={170} desde={k(247.2)} color="#f4efe4" tam={52} />
