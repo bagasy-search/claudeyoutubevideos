@@ -1,6 +1,7 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { C, ent, prog, Chip, Emote } from "./kit";
+import { Persona } from "./persona";
 import { Moneda3 } from "./kit3";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, NINO, NINA, OBRERO, GenteFab } from "./mundo";
 import { Gran, Sello, Tilde, Flash, sacudon, Velo, Horror, Latigo, Lista } from "./capas";
@@ -45,7 +46,7 @@ export const PG: React.FC<{ t: number }> = ({ t }) => {
   const g2: GenteFab[] = [];
   if (s === "piso2") {
     if (t < 588.1) g2.push({ seed: 3, x: 2560, y: -2000, h: 280, ropa: NINA, gorro: "cofia", largo: true, flip: true, expr: t > 586.9 ? "miedo" : "neutro", inclina: t > 584.5 ? -22 * prog(t, 584.5, 585.4) : 0, bD: t > 584.6 ? 70 : 0, cD: 40 });
-    g2.push({ seed: 7, x: 3620, y: -2000, h: 230, ropa: NINO, gorro: "gorra", flip: true, expr: t > 597 ? "miedo" : "triste", inclina: -18, bD: 80 + Math.sin(t * 9) * 14, cD: 30 });
+    if (t < 600.4 || t > 610.6) g2.push({ seed: 7, x: 3620, y: -2000, h: 230, ropa: NINO, gorro: "gorra", flip: true, expr: t > 597 ? "miedo" : "triste", inclina: -18, bD: 80 + Math.sin(t * 9) * 14, cD: 30 });
     g2.push({ seed: 8, x: 4560, y: -2000, h: 240, ropa: NINA, gorro: "cofia", largo: true, expr: "triste", inclina: -14, bD: 70 + Math.sin(t * 8 + 1) * 12, cD: 30 });
   }
   if (s === "vallas") {
@@ -55,7 +56,7 @@ export const PG: React.FC<{ t: number }> = ({ t }) => {
   const gP: GenteFab[] = [];
   if (s === "calle") {
     // el chico mendigando frente a su casa y los obreros que pasan hacia la fábrica
-    gP.push({ seed: 21, x: -1300, y: 0, h: 290, ropa: NINO, expr: "triste", bD: 60, cD: 30, mira: 1, bI: 40, cI: 110, manoI: <Venda /> });
+    if (t < 600.4) gP.push({ seed: 21, x: -1300, y: 0, h: 290, ropa: NINO, expr: "triste", bD: 60, cD: 30, mira: 1, bI: 40, cI: 110, manoI: <Venda /> });
     for (let i = 0; i < 4; i++) {
       const x0 = -2600 - i * 420 + (t - 610.7) * 210;
       gP.push({ seed: 30 + i, x: x0, y: 0, h: 480 + (i % 2) * 30, ropa: OBRERO(i), gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, camina: 1.2, expr: "neutro" });
@@ -111,7 +112,9 @@ export const PG: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={584.6} t1={586.6} text="SHE LEANS OVER TO FIX A THREAD" color={C.noche} x={960} y={950} centro size={58} />
       <Flash t={t} at={[588.0]} />
       <Velo t={t} t0={588.05} t1={591.2} op={0.55} />
-      <Gran t={t} t0={588.15} t1={591.2} text="LESS THAN A SECOND" y={540} size={130} color={C.crema} />
+      <Gran t={t} t0={588.15} t1={591.2} text="LESS THAN A SECOND" y={440} size={120} color={C.crema} />
+      {/* vuelta 10 OJO: la silueta de la niña sigue en el plano (antes quedaba sólo el texto) */}
+      {t > 588.2 && t < 591.2 && <Persona t={t} seed={3} x={960} y={1060} h={420} ropa={NINA} gorro="cofia" largo expr="miedo" sombra="#d8455a" opacity={0.8 * ent(t, 588.3) * (1 - prog(t, 590.9, 591.2))} />}
       <Lista t={t} t0={591.5} t1={598.9} x={90} y={170} titulo="NEXT IN LINE…" size={56} items={[{ txt: "SLEEVES", t0: 591.6, ok: false }, { txt: "APRONS", t0: 592.3, ok: false }, { txt: "FINGERS", t0: 593.0, ok: false }]} />
       <Chip t={t} t0={594.1} t1={598.9} text="CLEANING MACHINES · STILL RUNNING" color={C.rojo} x={1250} y={950} centro size={58} />
       <Gran t={t} t0={599.35} t1={600.2} text="AND THEN WHAT?" y={540} size={130} color={C.ambar} />

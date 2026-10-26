@@ -6,6 +6,7 @@ import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, Sala, NINO, OBRERO, D
 import { Gran, Cuenta, Sello, Flash, sacudon, Velo, Horror, Latigo, Lista } from "./capas";
 import { Retrato } from "./piezas";
 import { Persona } from "./persona";
+import { ContraMula } from "./contra";
 
 // PARTE H · HORROR #7, TU CUERPO (650,2-718,8 s). El repaso de los seis horrores que sobreviviste → lo que la fábrica
 // se lleva despacio: 14 horas de pie doblan los huesos (las piernas que se arquean) → Hebergam ante el comité de Sadler,
@@ -73,6 +74,7 @@ export const PH: React.FC<{ t: number }> = ({ t }) => {
       )}
 
       {/* ── capas de pantalla ── */}
+      <ContraMula t={t} t0={660.5} t1={666.3} x={620} vel={1.3} g={{ expr: "triste", ...(t > 663.6 ? { bD: -20 + 12 * Math.sin(t * 9), bI: -20 - 12 * Math.sin(t * 9), cD: 40, cI: 40, inclina: 14 } : {}) }} />
       <Latigo t={t} at={[650.25, 673.61, 691.31, 711.31]} />
       <Horror t={t} t0={650.25} n={7} nombre="YOUR BODY" t1={652.1} />
       <Lista t={t} t0={652.4} t1={658.3} x={90} y={150} titulo="YOU SURVIVED…" size={52} previa items={[
@@ -82,7 +84,7 @@ export const PH: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={658.6} t1={660.4} text="THE FACTORY STILL TAKES SOMETHING" color={C.rojo} x={960} y={150} centro size={62} />
       {t > 660.5 && t < 666.3 && <div style={{ position: "absolute", left: 1500, top: 180, transform: `scale(${ent(t, 660.6) * (1 - prog(t, 666, 666.3))})` }}><div style={{ position: "relative" }}><Reloj x={0} y={420} s={0.8} hora={6 + prog(t, 660.8, 665.6) * 14} /></div></div>}
       <Cuenta t={t} t0={661.0} t1={665.0} de={0} a={14} suf=" HOURS STANDING" x={960} y={210} size={84} color={C.ambar} fuera={666.2} />
-      <Chip t={t} t0={663.0} t1={666.2} text="WHILE YOUR BONES ARE STILL GROWING" color={C.noche} x={960} y={950} centro size={58} />
+      <Chip t={t} t0={663.0} t1={666.2} text="WHILE YOUR BONES ARE STILL GROWING" color={C.noche} x={1340} y={960} centro size={50} />
       {t > 666.4 && t < 673.5 && <Velo t={t} t0={666.4} t1={673.4} op={0.45} />}
       {t > 666.3 && t < 673.5 && <Piernas t={t} t0={666.35} x={1420} y={960} s={1.25} dobla={dobla} />}
       <Chip t={t} t0={666.5} t1={673.4} text="“FACTORY CRIPPLES”" color={C.rojo} x={960} y={150} centro size={72} />

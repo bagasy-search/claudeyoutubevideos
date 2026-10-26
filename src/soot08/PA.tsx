@@ -2,6 +2,7 @@ import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { C, ent, prog, fontFamily, Chip, Emote, Pan, Particulas, Rayos } from "./kit";
 import { Persona } from "./persona";
+import { ContraMula } from "./contra";
 import { Reloj, Termometro, Moneda3, Rosbif, V, T, Carta } from "./kit3";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, CasaAdentro, NINO, NINA, HILANDERO, OBRERO, CAPATAZ, GenteFab, FCX, mulaVaiven } from "./mundo";
 import { Mini0 } from "./Mini0";
@@ -29,7 +30,7 @@ const KA: K[] = [
 // adentro de la casa (otro espacio: entramos por la ventana del cuarto y salimos por la misma)
 const KC: K[] = [[52.8, 610, -660, 4.2], [53.6, 0, -470, 1.25], [56.0, 80, -460, 1.3], [58.4, 240, -450, 1.32], [61.5, 380, -470, 1.3], [63.3, 610, -660, 1.4], [64.3, 610, -660, 5.0]];
 // afuera otra vez: de la ventana a la fábrica abierta con el mapa de los 7, y de ahí al horizonte
-const KB: K[] = [[64.3, -1175, -395, 5.5], [65.4, -600, -900, 0.9], [67.4, 2000, -1800, 0.26], [72.6, 2220, -1900, 0.22], [75.6, 2220, -1930, 0.21], [78.9, 2240, -1930, 0.215], [79.6, 2450, -220, 1.9], [81.3, 2430, -220, 2.0]];
+const KB: K[] = [[64.3, -1175, -395, 5.5], [65.4, -600, -900, 0.9], [67.4, 2000, -1800, 0.26], [72.6, 2220, -1900, 0.22], [75.6, 2220, -1930, 0.21], [78.9, 2240, -1930, 0.215], [79.6, 2560, -220, 1.9], [81.3, 2540, -220, 2.0]];
 
 // los 7 horrores marcados sobre la fábrica abierta (piso, x, y)
 const MARCAS: [number, number, string][] = [[FCX, -3440, "THE CLOCK"], [3300, -420, "THE MACHINE"], [1800, -1500, "THE AIR"], [4400, -1600, "THE FINES"], [5550, -420, "THE STRAP"], [2400, -2400, "THE ACCIDENT"], [-1110, -500, "YOUR BODY"]];
@@ -108,7 +109,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={0.12} t1={1.5} text="AGE 9" color={C.rojo} x={960} y={170} centro size={150} />
       <Chip t={t} t0={2.2} t1={3.4} text="5:30 AM" color={C.violeta} x={960} y={950} centro size={96} />
       <Flash t={t} at={[3.9, 4.2, 22.96]} />
-      <Sello t={t} t0={4.2} t1={6.4} text="FINED" x={960} y={430} size={190} />
+      <Sello t={t} t0={4.2} t1={6.4} text="FINED" x={1350} y={420} size={170} />
       {t > 5.1 && t < 8.4 && (
         <>
           <div style={{ position: "absolute", left: 1640, top: 260, transform: `translate(-50%,-50%) scale(${ent(t, 5.14) * (1 - prog(t, 8.1, 8.4))})` }}><div style={{ position: "relative", width: 1, height: 1 }}><Reloj x={0} y={200} s={0.8} hora={hora} /></div></div>
@@ -162,6 +163,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
           <Chip t={t} t0={47.2} text="CHILD" color={C.rojo} x={500} y={860} centro size={56} />
         </>
       )}
+      <ContraMula t={t} t0={45.8} t1={51.1} x={1300} g={{ expr: "miedo" }} />
       <Chip t={t} t0={49.6} t1={51.0} text="THE MACHINE DOESN'T CARE" color={C.noche} x={960} y={150} centro size={70} />
       <Gran t={t} t0={51.3} t1={53.4} text="YOUR PARENTS?" y={170} size={140} />
       <Chip t={t} t0={53.5} t1={54.3} text="NOT CRUEL" color={C.teal} tinta={C.noche} x={960} y={950} centro size={70} />
@@ -202,8 +204,8 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={75.5} t1={79.2} text="3,600 MILES AWAY" color={C.teal} tinta={C.noche} x={420} y={760} centro size={62} />
       <Chip t={t} t0={77.6} t1={79.2} text="WHY?" color={C.rojo} x={420} y={130} centro size={90} />
       <Velo t={t} t0={79.5} t1={81.5} op={0.25} />
-      <Gran t={t} t0={79.6} t1={81.3} text="YOUR SHIFT" y={390} size={170} />
-      <Gran t={t} t0={80.4} t1={81.3} text="STARTS NOW" y={590} size={190} color={C.ambar} />
+      <Gran t={t} t0={79.6} t1={81.3} text="YOUR SHIFT" x={560} y={390} size={140} />
+      <Gran t={t} t0={80.4} t1={81.3} text="STARTS NOW" x={560} y={570} size={150} color={C.ambar} />
     </AbsoluteFill>
   );
 };

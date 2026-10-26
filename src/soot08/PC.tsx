@@ -172,7 +172,7 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
       <Flash t={t} at={[224.4, 266.3]} color="#ffdcdc" />
       <Chip t={t} t0={224.5} t1={226.3} text="SNAP!" color={C.rojo} x={1180} y={200} centro size={90} />
       <Chip t={t} t0={226.4} t1={232.4} text="A FEW SECONDS TO FIX IT" color={C.violeta} x={960} y={150} centro size={70} />
-      <Chip t={t} t0={229.1} t1={232.4} text="THE CARRIAGE KEEPS MOVING" color={C.noche} x={960} y={950} centro size={64} />
+      <Chip t={t} t0={229.1} t1={232.4} text="THE CARRIAGE KEEPS MOVING" color={C.noche} x={960} y={260} centro size={64} />
       <Chip t={t} t0={232.7} t1={236.6} text="BACK AND FORTH · ALL SHIFT" color={C.violeta} x={960} y={150} centro size={70} />
       <Retrato t={t} t0={236.9} t1={242.9} x={1560} y={420} g={{ seed: 50, ropa: DUENO, gorro: "copa", barba: true, expr: "neutro" }} nombre="JOHN FIELDEN" sub="MILL OWNER · MP" s={0.95} />
       <Chip t={t} t0={238.4} t1={242.9} text="HOW FAR DOES A PIECER WALK?" color={C.noche} x={760} y={150} centro size={60} />

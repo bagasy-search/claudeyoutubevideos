@@ -27,7 +27,7 @@ const ITEMS = [
   { txt: "FOUND WASHING HIMSELF", t0: 419.0, monto: "1s" },
   { txt: "HEARD WHISTLING", t0: 425.9, monto: "1s" },
   { txt: "5 MINUTES AFTER THE BELL", t0: 428.6, monto: "1s" },
-  { txt: "SICK, NO REPLACEMENT: PAY FOR STEAM", t0: 432.8, monto: "6s" },
+  { txt: "SICK? PAY FOR STEAM", t0: 432.8, monto: "6s" },
 ];
 const focoEn = (t: number) => { let f = -1; ITEMS.forEach((it, i) => { if (t >= it.t0) f = i; }); return f; };
 
@@ -39,10 +39,10 @@ const VIN: { t0: number; t1: number; que: string }[] = [
 const Vineta: React.FC<{ t: number }> = ({ t }) => {
   const v = VIN.find((q) => t >= q.t0 && t < q.t1) ?? VIN[VIN.length - 1];
   const k = t - v.t0, e = ent(t, 415.85);
-  const L = 1150, T = 170, W = 700, H = 740;
+  const gr = prog(t, 425.9, 426.5), L = 1150 - 540 * gr, T = 170 - 50 * gr, W = 700, H = 740;
   const nino = { seed: 2, ropa: NINO, gorro: "gorra" as const };
   return (
-    <div style={{ position: "absolute", left: L, top: T, width: W, height: H, borderRadius: 30, overflow: "hidden", border: "10px solid #fff3d6", boxShadow: "0 18px 0 rgba(0,0,0,.35)", transform: `scale(${e})`, transformOrigin: "50% 50%", background: v.que === "enfermo" ? "linear-gradient(180deg,#3a2f5a,#241c3e)" : "linear-gradient(180deg,#e9c99a,#c9a274)" }}>
+    <div style={{ position: "absolute", left: L, top: T, width: W, height: H, borderRadius: 30, overflow: "hidden", border: "10px solid #fff3d6", boxShadow: "0 18px 0 rgba(0,0,0,.35)", transform: `scale(${e * (1 + 0.12 * gr)})`, transformOrigin: "50% 0%", background: v.que === "enfermo" ? "linear-gradient(180deg,#3a2f5a,#241c3e)" : "linear-gradient(180deg,#e9c99a,#c9a274)" }}>
       <div style={{ position: "absolute", left: 0, top: H - 150, width: W, height: 150, background: v.que === "enfermo" ? "#1a1430" : "#7a5230" }} />
       {/* la multa cae: moneda de 1s a la alcancía del patrón */}
       <div style={{ position: "absolute", left: W - 150, top: -60 + Math.min(1, k / 0.6) * 160, width: 96, height: 96, borderRadius: 48, background: "#d9dde3", border: "8px solid #8a8494", fontFamily, fontWeight: 700, fontSize: 40, color: "#4a4560", display: "flex", alignItems: "center", justifyContent: "center", opacity: k < 2.4 ? 1 : 0 }}>{v.que === "enfermo" ? "6s" : "1s"}</div>
@@ -143,16 +143,18 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
       {aviso && <Velo t={t} t0={409.4} t1={445.6} op={0.85} />}
       {aviso && (
         <div style={{ position: "absolute", inset: 0, opacity: 1 - prog(t, 445.3, 445.7) }}>
-          {t < 440.1 && <Aviso t={t} t0={409.4} x={t < 415.8 ? 860 : 860 - 300 * prog(t, 415.8, 416.4)} y={500} w={t < 415.8 ? 1150 : 1150 - 230 * prog(t, 415.8, 416.4)} titulo="TYLDESLEY MILL · FINES" items={ITEMS} foco={focoEn(t)} />}
+          {t < 426.5 && <div style={{ opacity: 1 - prog(t, 425.9, 426.4) }}><Aviso t={t} t0={409.4} x={t < 415.8 ? 860 : 860 - 300 * prog(t, 415.8, 416.4)} y={500} w={t < 415.8 ? 1150 : 1150 - 230 * prog(t, 415.8, 416.4)} titulo="TYLDESLEY MILL · FINES" items={ITEMS} foco={focoEn(t)} /></div>}
           {t > 415.8 && t < 440.1 && <Vineta t={t} />}
+          {/* vuelta 10 OJO: 2º diseño de E2 — la viñeta al centro y la cuenta de lo perdido en la semana */}
+          {t > 426.2 && t < 440.1 && <div style={{ position: "absolute", left: 120, top: 360, width: 400, padding: "26px 0", borderRadius: 26, background: "#2a1530", border: "8px solid #fff3d6", textAlign: "center", fontFamily, fontWeight: 700, color: "#fff3d6", transform: `scale(${ent(t, 426.2)})` }}><div style={{ fontSize: 40 }}>FINED SO FAR</div><div style={{ fontSize: 120, color: C.rojo }}>{t < 428.6 ? 4 : t < 432.8 ? 5 : 11}s</div></div>}
         </div>
       )}
       {/* anotaciones al costado del cartel */}
       {t > 412.9 && t < 415.6 && <div style={{ position: "absolute", left: 150, top: 160, transform: `scale(${ent(t, 412.9) * 0.55})`, transformOrigin: "0 0" }}><div style={{ position: "relative" }}><Termometro x={0} y={860} nivel={0.86} unidad="F" /></div></div>}
       <Chip t={t} t0={412.9} t1={415.6} text="REMEMBER: 80–84°F INSIDE" color={C.naranja} x={960} y={1010} centro size={52} />
       <Chip t={t} t0={422.7} t1={425.7} text="CAN'T BE DIRTY · CAN'T WASH" color={C.rojo} x={560} y={1000} centro size={56} />
-      <Chip t={t} t0={428.6} t1={432.6} text="ONE SHILLING · EACH TIME" color={C.noche} x={560} y={1000} centro size={52} />
-      <Chip t={t} t0={432.8} t1={437.8} text="AND THE BEST ONE…" color={C.violeta} x={560} y={1000} centro size={56} />
+      <Chip t={t} t0={428.6} t1={432.6} text="ONE SHILLING · EACH TIME" color={C.noche} x={960} y={1010} centro size={52} />
+      <Chip t={t} t0={432.8} t1={437.8} text="AND THE BEST ONE…" color={C.violeta} x={960} y={1010} centro size={56} />
       <Flash t={t} at={[440.1]} />
       {t > 440.0 && t < 445.6 && (
         <>

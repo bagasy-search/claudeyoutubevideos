@@ -62,8 +62,8 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
   if (s === "calle") {
     [-2100, -1700, -1350, -950, -550].forEach((x, i) => gP.push({ seed: 160 + i, x, y: 0, h: 460 + (i % 2) * 30, ropa: OBRERO(i), gorro: i % 2 ? "cofia" : "copa", largo: i % 2 === 1, expr: t > 744.8 ? "enojado" : t > 739.2 ? "sorpresa" : "neutro", flip: i % 2 === 0, habla: t > 744.8 && Math.floor(t * 4 + i) % 2 === 0, manoD: <div style={{ position: "absolute", left: -40, top: -50, width: 80, height: 100, background: "#f6ecd0", border: "4px solid #c9a96a" }} />, bD: t < 744.8 ? 60 : 150 + 25 * Math.sin(t * 9 + i * 2), cD: t < 744.8 ? 70 : 20, bI: t > 744.8 && i % 2 ? 140 + 20 * Math.sin(t * 8 + i) : 0, salta: t > 744.9 && t < 747.2 ? 744.9 + (i % 2) * 0.35 + Math.floor((t - 744.9 - (i % 2) * 0.35) / 0.75) * 0.75 : undefined }));
     // los chicos menores de 9 salen por el portón
-    if (t > 750.4) for (let i = 0; i < 5; i++) gP.push({ seed: 170 + i, x: FCX - 200 - Math.max(0, t - 750.6 - i * 0.4) * 230, y: 0, h: 220 + (i % 2) * 20, ropa: i % 2 ? NINA : NINO, gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, camina: 1.3, flip: true, expr: "feliz", opacity: ent(t, 750.6 + i * 0.4) });
-    if (t > 755.5) [1900, 2250, 2600, 2950].forEach((x, i) => gP.push({ seed: 180 + i, x, y: 0, h: 480, ropa: DUENO, gorro: "copa", expr: "neutro", aparece: 755.6 + i * 0.4, mira: 1 }));
+    if (t > 750.4) for (let i = 0; i < 5; i++) gP.push({ seed: 170 + i, x: FCX - 200 - Math.max(0, t - 750.6 - i * 0.4) * 230, y: 0, h: 330 + (i % 2) * 24, ropa: i % 2 ? NINA : NINO, gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, camina: 1.3, flip: true, expr: "feliz", opacity: ent(t, 750.6 + i * 0.4) });
+    if (t > 755.5) [1800, 2120, 2440, 2760].forEach((x, i) => gP.push({ seed: 180 + i, x, y: 0, h: 440, ropa: DUENO, gorro: "copa", expr: "neutro", aparece: 755.6 + i * 0.4, mira: 1 }));
   }
   if (s === "fiesta") {
     for (let i = 0; i < 9; i++) gP.push({ seed: 190 + i, x: 1700 + i * 260, y: 0, h: i % 3 === 2 ? 260 : 450 + (i % 2) * 40, ropa: i % 3 === 2 ? NINO : OBRERO(i), gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, expr: t < 788.1 ? "feliz" : "neutro", salta: t > 779.8 && t < 788.1 ? 779.8 + (i % 3) * 0.3 + Math.floor((t - 779.8 - (i % 3) * 0.3) / (t > 786 ? 0.7 : 1.6)) * (t > 786 ? 0.7 : 1.6) : undefined, bD: t > 786 && t < 788.1 ? 160 : t < 788.1 ? 90 + 50 * Math.sin(t * 6 + i) : 20, bI: t > 786 && t < 788.1 ? 160 : t < 788.1 ? 40 + 40 * Math.sin(t * 5 + i * 2) : 20, inclina: t > 788.1 ? 8 + 4 * Math.sin(t * 2 + i) : 0, habla: t > 788.1 && Math.floor(t * 3 + i) % 3 === 0, flip: i % 2 === 1 });
@@ -174,7 +174,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       {/* ── capas de pantalla ── */}
       <Latigo t={t} at={[729.8, 761.71, 779.6, 801.27, 817.5, 821.75, 823.95, 836.79, 848.47, 870.85]} />
       <Flash t={t} at={[718.85]} color="#fff3d6" />
-      <Gran t={t} t0={718.85} t1={720.3} text="THE TWIST" y={540} size={180} color={C.ambar} />
+      <Gran t={t} t0={718.85} t1={720.3} text="THE TWIST" y={200} size={160} color={C.ambar} />
       <Chip t={t} t0={720.45} t1={722.3} text="THE CHILDREN DID NOT STAY SILENT" color={C.violeta} x={960} y={150} centro size={62} />
       <Chip t={t} t0={722.5} t1={726.4} text="THEY DESCRIBED THEIR OWN DAY" color={C.noche} x={960} y={150} centro size={62} />
       <Sello t={t} t0={727.0} t1={729.7} text="IT CHANGED THE LAW" x={960} y={300} size={110} color={C.lima} />
@@ -188,9 +188,9 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={747.1} t1={749.1} text="THE LETTER WOULD NOT GO AWAY" color={C.violeta} x={960} y={150} centro size={64} />
       <Velo t={t} t0={749.3} t1={760.4} op={0.6} />
       <Sello t={t} t0={749.4} t1={760.3} text="FACTORY ACT · 1833" x={760} y={190} size={100} color={C.lima} rot={-6} />
-      <Lista t={t} t0={750.4} t1={760.3} x={1180} y={330} size={50} items={[{ txt: "UNDER 9: BANNED", t0: 750.6, ok: true }, { txt: "HOURS LIMITED", t0: 753.4, ok: true }, { txt: "FACTORY INSPECTORS", t0: 755.5, ok: true }]} />
-      <Cuenta t={t} t0={756.6} t1={757.8} de={0} a={4} suf=" INSPECTORS" x={1450} y={700} size={90} color={C.ambar} fuera={760.3} />
-      <Chip t={t} t0={757.9} t1={760.3} text="FOR THE WHOLE COUNTRY" color={C.rojo} x={1450} y={830} centro size={52} />
+      <Lista t={t} t0={750.4} t1={760.3} x={1180} y={230} size={50} items={[{ txt: "UNDER 9: BANNED", t0: 750.6, ok: true }, { txt: "HOURS LIMITED", t0: 753.4, ok: true }, { txt: "FACTORY INSPECTORS", t0: 755.5, ok: true }]} />
+      <Cuenta t={t} t0={756.6} t1={757.8} de={0} a={4} suf=" INSPECTORS" x={960} y={930} size={84} color={C.ambar} fuera={760.3} />
+      <Chip t={t} t0={757.9} t1={760.3} text="FOR THE WHOLE COUNTRY" color={C.rojo} x={960} y={1030} centro size={44} />
       <Chip t={t} t0={760.5} t1={761.6} text="BUT IT WAS A START" color={C.lima} tinta={C.noche} x={960} y={150} centro size={70} />
       <Chip t={t} t0={761.8} t1={763.4} text="ONE SMALL PROBLEM" color={C.noche} x={960} y={150} centro size={66} />
       <Gran t={t} t0={763.6} t1={765.4} text="HOW DO YOU PROVE A CHILD IS 9?" y={920} size={92} color={C.ambar} />
@@ -236,7 +236,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       {t > 832.3 && t < 836.8 && <Persona t={t} seed={262} x={1620} y={1010} h={560} ropa={DUENO} gorro="copa" flip mira={-1} expr="orgullo" bD={t < 834.8 ? 100 + 10 * Math.sin(t * 6) : 40} cD={t < 834.8 ? 30 : 20} habla={t < 834.6 && Math.floor(t * 4) % 2 === 0} aparece={832.3} manoD={<div style={{ position: "absolute", left: -55, top: -60, width: 110, height: 90, borderRadius: 18, background: "#fff", border: "6px solid #2a1530" }} />} />}
       <Globo t={t} t0={832.6} t1={834.6} x={1180} y={330} text="Back the South. Get your cotton." size={42} w={520} cola="der" />
       <Gran t={t} t0={834.8} t1={836.7} text="“NO.”" y={470} size={170} color={C.rojo} />
-      <Chip t={t} t0={827.0} t1={829.8} text="FURNITURE PAWNED · SOUP LINES" color={C.noche} x={960} y={150} centro size={68} />
+      <Chip t={t} t0={827.0} t1={829.8} text="FURNITURE PAWNED · SOUP LINES" color={C.noche} x={960} y={150} centro size={76} />
       <Sello t={t} t0={829.95} t1={832.2} text="LANCASHIRE COTTON FAMINE" x={960} y={330} size={54} rot={0} />
       <Chip t={t} t0={832.3} t1={836.7} text="THE EASY WAY: HELP THE SOUTH, GET THE COTTON" color={C.violeta} x={960} y={150} centro size={52} />
       <Chip t={t} t0={836.9} t1={842.2} text="FREE TRADE HALL · MANCHESTER · END OF 1862" color={C.oro} tinta={C.noche} x={960} y={150} centro size={56} />
@@ -275,9 +275,9 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
         </div>
       )}
       {t > 895.6 && <Velo t={t} t0={895.6} t1={1e9} op={0.55} />}
-      <Gran t={t} t0={895.7} t1={1e9} text="WHICH HORROR GETS YOU FIRST?" y={260} size={96} color={C.ambar} />
-      <Carretes t={t} t0={896.3} n={7} y={880} s={0.8} />
-      <Chip t={t} t0={897.2} t1={1e9} text="TELL ME IN THE COMMENTS" color={C.violeta} x={960} y={900} centro size={60} />
+      <Gran t={t} t0={895.7} t1={1e9} text="WHICH HORROR GETS YOU FIRST?" y={110} size={86} color={C.ambar} />
+      <Carretes t={t} t0={896.3} n={7} y={820} s={0.8} />
+      <Chip t={t} t0={897.2} t1={1e9} text="TELL ME IN THE COMMENTS" color={C.violeta} x={960} y={1030} centro size={52} />
     </AbsoluteFill>
   );
 };

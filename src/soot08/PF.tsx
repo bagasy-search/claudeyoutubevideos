@@ -124,7 +124,7 @@ export const PF: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={510.0} t1={512.7} text="A HEAVY WOODEN ROD FROM THE MACHINES" color={C.noche} x={960} y={950} centro size={56} />
       <Chip t={t} t0={513.0} t1={517.5} text="HEAD FIRST · INTO COLD WATER" color={C.teal} tinta={C.noche} x={960} y={150} centro size={70} />
       <Chip t={t} t0={517.7} t1={521.2} text="TO WAKE THEM UP…" color={C.violeta} x={960} y={150} centro size={70} />
-      <Chip t={t} t0={519.4} t1={521.2} text="STRAIGHT BACK TO WORK" color={C.rojo} x={960} y={950} centro size={68} />
+      <Chip t={t} t0={519.4} t1={521.2} text="STRAIGHT BACK TO WORK" color={C.rojo} x={960} y={160} centro size={68} />
       <Chip t={t} t0={521.4} t1={524.5} text="THE PAUPER APPRENTICES" color={C.rojo} x={960} y={150} centro size={76} />
       <Chip t={t} t0={524.7} t1={528.0} text="ORPHANS · WORKHOUSE CHILDREN" color={C.noche} x={960} y={950} centro size={64} />
       <Chip t={t} t0={528.1} t1={530.4} text="HUNDREDS OF MILES AWAY" color={C.violeta} x={960} y={150} centro size={70} />

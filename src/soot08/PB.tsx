@@ -164,7 +164,23 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={132.4} t1={136.6} text="HIS DAUGHTERS" color={C.teal} tinta={C.noche} x={960} y={950} centro size={66} />
       <Chip t={t} t0={133.3} t1={136.6} text="BUSY SEASON · ABOUT 6 WEEKS" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={66} />
       <Velo t={t} t0={136.7} t1={146.4} op={1} />
-      {t > 138.9 && t < 146.4 && <Persona t={t} seed={23} x={interpolate(t, [139.0, 143.0], [360, 1660], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={690} h={360} ropa={NINA} gorro="cofia" largo camina={t < 143.0 ? 1.4 : 0} expr={t < 143.3 ? "triste" : "dormido"} inclina={t > 143.3 ? 10 : 4} aparece={139.0} />}
+      {/* vuelta 10 OJO: la niña vuelve de noche por una calle de verdad (antes flotaba sobre fondo vacío) */}
+      {t > 136.8 && t < 146.4 && (
+        <AbsoluteFill style={{ opacity: prog(t, 136.8, 137.3) * (1 - prog(t, 146.1, 146.4)) }}>
+          <AbsoluteFill style={{ background: "linear-gradient(180deg,#141030,#2a1d4a 60%,#3a2a55)" }} />
+          <div style={{ position: "absolute", left: 1640, top: 90, width: 110, height: 110, borderRadius: 55, background: "#f4ecd0", boxShadow: "0 0 60px rgba(244,236,208,.5)" }} />
+          {Array.from({ length: 18 }, (_, i) => <div key={i} style={{ position: "absolute", left: (i * 211) % 1900, top: 40 + ((i * 97) % 260), width: 6, height: 6, borderRadius: 3, background: "#fff", opacity: 0.4 + 0.4 * Math.sin(t * 2 + i) }} />)}
+          {Array.from({ length: 8 }, (_, i) => { const w = 230 + (i % 3) * 30, hh = 330 + ((i * 53) % 140), x = i * 250 - 40; return (
+            <div key={i} style={{ position: "absolute", left: x, top: 760 - hh, width: w, height: hh, background: i % 2 ? "#4a2f3a" : "#5a3a3f", borderTop: "14px solid #2a1530" }}>
+              {[0, 1].map((j) => <div key={j} style={{ position: "absolute", left: 40 + j * 100, top: 60, width: 56, height: 74, background: (i + j) % 3 ? "#2a1530" : "#ffcf6b", border: "6px solid #2a1530" }} />)}
+              <div style={{ position: "absolute", left: w / 2 - 34, top: hh - 130, width: 68, height: 130, background: "#2a1530", borderRadius: "34px 34px 0 0" }} />
+            </div>); })}
+          <div style={{ position: "absolute", left: 1210, top: 340, width: 18, height: 420, background: "#2a1530" }} />
+          <div style={{ position: "absolute", left: 1186, top: 300, width: 66, height: 60, background: "#ffcf6b", border: "8px solid #2a1530", borderRadius: 10, boxShadow: "0 0 90px 30px rgba(255,207,107,.35)" }} />
+          <div style={{ position: "absolute", left: 0, top: 760, width: 1920, height: 320, background: "repeating-linear-gradient(90deg,#3a3550 0 70px,#332e48 70px 140px)" }} />
+        </AbsoluteFill>
+      )}
+      {t > 138.9 && t < 146.4 && <Persona t={t} seed={23} x={interpolate(t, [139.0, 143.0], [360, 1660], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={770} h={440} ropa={NINA} gorro="cofia" largo camina={t < 143.0 ? 1.4 : 0} expr={t < 143.3 ? "triste" : "dormido"} inclina={t > 143.3 ? 10 + 6 * Math.sin(t * 2.4) : 4 + 4 * Math.max(0, Math.sin(t * 3))} ladea={t > 143.3 ? -8 : 0} aparece={139.0} />}
       <BarraDia t={t} t0={136.8} t1={146.4} y={880} titulo="THE COULSON GIRLS · ONE DAY" tramos={[
         { de: 3, a: 12, t0: 137.0, t1: 138.4, color: C.rojo, txt: "AT THE MILL" },
         { de: 12, a: 22.5, t0: 138.4, t1: 140.0, color: C.rojo, txt: "STILL AT THE MILL" },
@@ -173,8 +189,8 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={137.0} t1={138.7} text="LEAVE 3:00 AM" color={C.noche} x={500} y={170} centro size={66} />
       <Chip t={t} t0={138.8} t1={146.4} text="HOME 10:30 PM" color={C.noche} x={1420} y={170} centro size={66} />
       <Cuenta t={t} t0={139.0} t1={140.4} de={0} a={19} x={700} y={230} size={140} color={C.crema} suf="½ HOURS" fuera={143.0} />
-      <Chip t={t} t0={140.9} t1={143.0} text="YOUNGEST: JUST OVER 8" color={C.rojo} x={960} y={600} centro size={66} />
-      <Chip t={t} t0={143.4} t1={146.4} text="ALL BREAKS: ~1 HOUR" color={C.lima} tinta={C.noche} x={960} y={620} centro size={80} />
+      <Chip t={t} t0={140.9} t1={143.0} text="YOUNGEST: JUST OVER 8" color={C.rojo} x={560} y={400} centro size={66} />
+      <Chip t={t} t0={143.4} t1={146.4} text="ALL BREAKS: ~1 HOUR" color={C.lima} tinta={C.noche} x={760} y={400} centro size={80} />
       <Chip t={t} t0={148.0} t1={150.4} text="CARRIED TO BED" color={C.violeta} x={960} y={150} centro size={76} />
       <Chip t={t} t0={150.9} t1={153.6} text="ASLEEP" color={C.noche} x={960} y={150} centro size={86} />
       <Chip t={t} t0={152.0} t1={153.6} text="FOOD STILL IN THEIR MOUTHS" color={C.rojo} x={960} y={950} centro size={70} />

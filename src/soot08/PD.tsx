@@ -3,7 +3,7 @@ import { AbsoluteFill, interpolate } from "remotion";
 import { C, ent, prog, Chip, Emote, Particulas, Pergamino, fontFamily } from "./kit";
 import { Termometro } from "./kit3";
 import { Lapida } from "./kit2";
-import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, Nieve, NINO, NINA, OBRERO, GenteFab, FX0 } from "./mundo";
+import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, Nieve, NINO, NINA, OBRERO, CAPATAZ, GenteFab, FX0 } from "./mundo";
 import { Gran, Cuenta, Sello, Flash, sacudon, Velo, Horror, Latigo, Lista, Globo } from "./capas";
 import { Pulmones, Oreja, Primer } from "./piezas";
 import { Persona } from "./persona";
@@ -47,7 +47,7 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
   // afuera: el chico empapado sale al invierno; el funeral chico; los viejos que todavía leen labios
   const gP: GenteFab[] = [];
   if (s === "x1") {
-    gP.push({ seed: 2, x: interpolate(t, [327.4, 332.5], [3600, 2900], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) + Math.sin(t * 40) * 3, y: 0, h: 300, ropa: NINO, gorro: "gorra", camina: t < 332.5 ? 1.2 : 0, flip: true, expr: "triste", bD: 25, bI: 25, cD: 120, cI: 120 });
+    gP.push({ seed: 2, x: interpolate(t, [327.4, 332.5], [3600, 2900], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) + Math.sin(t * 40) * 3, y: 0, h: 460, ropa: NINO, gorro: "gorra", camina: t < 332.5 ? 1.2 : 0, flip: true, expr: "triste", bD: 25, bI: 25, cD: 120, cI: 120 });
     if (t > 334.6) for (let i = 0; i < 4; i++) gP.push({ seed: 90 + i, x: interpolate(t, [334.6, 336.4], [1250, 1650]) + i * 205, y: 0, h: 460 + (i % 2) * 20, ropa: { ...OBRERO(i), tunica: "#2a2238", tunica2: "#140f1d" }, gorro: i % 2 ? "cofia" : "copa", largo: i % 2 === 1, camina: 0.9, expr: "triste", bD: i < 2 ? 160 : 0, cD: 10 });
   }
   if (s === "x2") {
@@ -121,7 +121,7 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       <Cuenta t={t} t0={324.6} t1={325.6} de={14} a={14} x={960} y={470} size={120} color={C.crema} suf=" HOURS OF SWEAT" fuera={327.1} />
       <Emote t={t} t0={324.6} t1={327.1} tipo="sudor" x={960 + (2300 - cam.x) * cam.z} y={540 + (-170 - cam.y) * cam.z} s={0.55 * cam.z} />
       <Chip t={t} t0={327.4} t1={331.8} text="A LANCASHIRE WINTER NIGHT" color={C.teal} tinta={C.noche} x={960} y={150} centro size={70} />
-      <Chip t={t} t0={329.6} t1={333.0} text="SOAKING WET · THIN CLOTHES" color={C.violeta} x={960} y={950} centro size={66} />
+      <Chip t={t} t0={329.6} t1={333.0} text="SOAKING WET · THIN CLOTHES" color={C.violeta} x={1350} y={960} centro size={56} />
       {t > 333.1 && t < 336.4 && (
         <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }}>
           <Chip t={t} t0={333.1} t1={336.3} text="COLD" color={C.teal} tinta={C.noche} x={330} y={140} centro size={80} />
@@ -164,7 +164,12 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       <Flash t={t} at={[386.5]} />
       <Sello t={t} t0={386.5} t1={389.6} text="PERFECTLY LEGAL" x={880} y={820} size={80} color={C.lima} rot={-8} />
       <Chip t={t} t0={388.1} t1={389.6} text="THAT WAS JUST THE JOB" color={C.noche} x={1250} y={800} centro size={60} />
-      <Gran t={t} t0={389.8} t1={392.8} text="NOW: INVENTED ON PURPOSE" y={200} size={82} color={C.rojo} />
+      {/* vuelta 10 OJO: el capataz clava el tablero de multas y un obrero mira (antes sala vacía) */}
+      {t > 389.8 && t < 392.9 && <>
+        <Persona t={t} seed={61} ropa={CAPATAZ} gorro="copa" x={1350} y={1010} h={640} flip expr="enojado" habla bD={t < 391 ? 150 : 95} cD={t < 391 ? 40 : 0} aparece={389.9} />
+        <Persona t={t} seed={44} ropa={OBRERO(1)} gorro="gorra" x={420} y={1010} h={560} expr="sorpresa" mira={1} aparece={390.2} />
+      </>}
+      <Gran t={t} t0={389.8} t1={392.8} text="NOW: INVENTED ON PURPOSE" y={120} size={82} color={C.rojo} />
     </AbsoluteFill>
   );
 };
