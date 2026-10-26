@@ -50,8 +50,9 @@ export const Lista: React.FC<{ t: number; x: number; y: number; items: { txt: st
     <div style={{ position: "absolute", left: x, top: y, width: w, transform: `scale(${e * out}) rotate(-2deg)`, transformOrigin: "top left", background: "#f4ead2", border: `8px solid ${TINTA}`, borderRadius: 24, padding: "22px 34px", boxShadow: `0 14px 0 rgba(20,10,40,.4)`, fontFamily, fontWeight: 700 }}>
       {titulo && <div style={{ fontSize: size * 0.8, color: C.rojo, marginBottom: 8, letterSpacing: 2 }}>{titulo}</div>}
       {items.map((it, i) => {
-        if (t < it.t0) return <div key={i} style={{ height: size * 1.25 }} />;
-        const s = ent(t, it.t0, 0, { damping: 10, stiffness: 220 });
+        const i0 = i === 0 ? it.t0 - 0.3 : it.t0;
+        if (t < i0) return <div key={i} style={{ height: size * 1.25 }} />;
+        const s = ent(t, i0, 0, { damping: 10, stiffness: 220 });
         const tw = it.tacha !== undefined ? interpolate(t, [it.tacha, it.tacha + 0.3], [0, 100], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 0;
         return (
           <div key={i} style={{ position: "relative", fontSize: size, color: TINTA, lineHeight: 1.25, transform: `translateX(${(1 - s) * -60}px)`, opacity: s, whiteSpace: "nowrap" }}>
