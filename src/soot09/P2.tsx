@@ -11,9 +11,9 @@ import { Globo, Lupa, Olor, Tacha } from "./kitj2";
 // TRAMPA 2 · EL VIAJE (138,1-213,7 s). Trabados frente a Kent comiéndose la comida, la bodega vista por una lupa
 // que viaja con el barco por el Atlántico, Smith preso, la llegada al "paraíso", la caja sellada en cubierta y el calendario.
 export const CAM2: K[] = [
-  [138.2, 7700, 600, 0.6], [139.4, 7800, 640, 0.85], [141.0, 7850, 620, 0.8], [143.6, 8300, 600, 0.6], [145.2, 8250, 560, 0.5],
-  [155.2, 8500, 600, 0.52], [156.4, 8800, 700, 1.4], [158.6, 9700, 640, 0.7], [163.0, 10300, 620, 0.55], [171.0, 15500, 620, 0.5],
-  [173.6, 17600, 620, 0.55], [176.6, 19000, 620, 0.62], [179.3, 23560, 560, 0.75], [180.3, 23560, 560, 0.78], [180.9, 23060, 830, 2.0],
+  [138.2, 7700, 600, 0.6], [139.4, 7800, 640, 0.85], [141.0, 7850, 620, 0.8], [143.6, 8300, 600, 0.6], [145.2, 8330, 690, 1.12],
+  [155.2, 8470, 690, 1.18], [156.4, 8800, 700, 1.4], [158.6, 9700, 640, 0.7], [163.0, 10300, 620, 0.55], [171.0, 15650, 690, 0.9],
+  [173.6, 17450, 690, 0.92], [176.6, 19000, 640, 0.7], [179.3, 23560, 560, 0.75], [180.3, 23560, 560, 0.78], [180.9, 23060, 830, 2.0],
   [181.6, 23080, 830, 2.05], [182.7, 21000, 680, 0.5], [183.9, 20900, 680, 0.52], [185.0, 18870, 700, 1.9], [191.6, 18915, 700, 2.0],
   [193.8, 18930, 700, 1.85], [197.6, 18956, 700, 1.7], [202.2, 18987, 700, 1.75], [204.2, 19400, 600, 0.5], [211.6, 19900, 600, 0.52],
   [213.8, 22650, 620, 0.75],
@@ -109,7 +109,14 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
     <AbsoluteFill>
       <Mundo t={t} cam={CAM2} cielo={CIELO2}>
         <Base t={t} />
-        <En x={7750} w={900}><Poste t={t} t0={138.3} x={7750} y={AGUA + 20} n={2} titulo="THE VOYAGE" s={1.25} /></En>
+        {t < 145.0 && <En x={7750} w={900}><Poste t={t} t0={138.3} x={7750} y={AGUA + 20} n={2} titulo="THE VOYAGE" s={1.25} /></En>}
+        {/* trabados frente a Kent: se comen la comida de Virginia en cubierta */}
+        {t > 144.6 && t < 155.6 && [-300, -200, -95, 10, 120].map((o, i) => {
+          const come = Math.sin(t * 5 + i * 1.7) > 0.2;
+          return <Persona key={`k${i}`} x={d.x + o} y={d.y} h={175} t={t} seed={230 + i} ropa={i === 2 ? TOM : COLONO(i)} gorro={i === 2 ? "sombrero" : i % 2 ? "gorra" : undefined} flip={i % 2 === 1} expr={t > 152.5 ? "triste" : i % 2 ? "neutro" : "sorpresa"} bD={come ? 130 : 40} cD={come ? 120 : 30} habla={come}
+            manoD={<g transform="translate(-10 -10) scale(0.5)"><path d="M -40 -20 Q 0 -50 40 -20 Q 44 20 0 26 Q -44 20 -40 -20 Z" fill="#d8a050" stroke="#7a4a1a" strokeWidth={8} /></g>} />;
+        })}
+        {t > 144.6 && t < 155.6 && [-250, 70].map((o, i) => <div key={`b${i}`} style={{ position: "absolute", left: 0, top: 0 }}><Barril x={d.x + o} y={d.y - 40} s={0.35} /></div>)}
         {/* frutillas en la orilla */}
         <En x={23060} w={500}>
           <svg style={{ position: "absolute", left: 22880, top: SUELO - 40, overflow: "visible" }} width={360} height={80}>
@@ -132,7 +139,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
             {t > 197.6 && t < 202.3 && [-330, -250, -170, -90].map((o, i) => { const c = cabeza(d.x + o, d.y, 165); return <Emote key={i} t={t} t0={197.8 + i * 0.25} t1={202.3} tipo="enojo" x={c.x} y={c.y} s={0.35} />; })}
           </>
         )}
-        {enCubierta && t > 195.0 && <Globo t={t} t0={195.0} t1={197.4} x={d.x - 120} y={d.y - 210} text="NOT YOU." size={30} cola="izq" />}
+        {enCubierta && t > 195.0 && <Globo t={t} t0={195.0} t1={197.4} x={d.x - 120} y={d.y - 210} text="NOT YOU." size={46} cola="izq" />}
         {/* el río: tan ancho que se traga un barco */}
         {t > 181.8 && t < 184.2 && (
           <div style={{ position: "absolute", left: 19000, top: AGUA - 380, width: 2200, height: 2, opacity: ent(t, 182.2) }}>
@@ -165,8 +172,8 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
       {t > 152.5 && t < 155.4 && (() => {
         const f = 1 - prog(t, 152.7, 155.0);
         return (
-          <div style={{ position: "absolute", left: 660, top: 820, width: 600, opacity: ent(t, 152.6) }}>
-            <div style={{ fontFamily, fontWeight: 700, fontSize: 36, color: "#fff", textAlign: "center", WebkitTextStroke: "7px #1b1240", paintOrder: "stroke fill" }}>FOOD FOR VIRGINIA</div>
+          <div style={{ position: "absolute", left: 560, top: 800, width: 800, opacity: ent(t, 152.6) }}>
+            <div style={{ fontFamily, fontWeight: 700, fontSize: 58, color: "#fff", textAlign: "center", WebkitTextStroke: "9px #1b1240", paintOrder: "stroke fill" }}>FOOD FOR VIRGINIA</div>
             <div style={{ marginTop: 10, height: 56, borderRadius: 28, background: "#2a1a2a", border: "6px solid #fff", overflow: "hidden" }}><div style={{ width: `${f * 100}%`, height: "100%", background: f > 0.4 ? C.lima : C.rojo }} /></div>
           </div>
         );
@@ -181,15 +188,15 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={159.8} t1={161.4} text="WET WOOL" color="#6a6a7a" x={1420} y={300} size={50} />
       <Chip t={t} t0={160.6} t1={161.4} text="VOMIT" color={C.lima} tinta={C.noche} x={1420} y={380} size={50} />
       <Chip t={t} t0={165.6} t1={171.0} text="JOHN SMITH" color={C.rojo} x={250} y={160} size={62} />
-      <Chip t={t} t0={164.16} t1={171.0} text="LOUD · STUBBORN · SOLDIER" color={C.ambar} tinta={C.noche} x={250} y={250} size={36} />
+      <Chip t={t} t0={164.16} t1={171.0} text="LOUD · STUBBORN · SOLDIER" color={C.ambar} tinta={C.noche} x={250} y={260} size={54} />
       <Chip t={t} t0={167.7} t1={171.0} text="MUTINY?" color={C.violeta} x={1440} y={260} size={60} />
       {t > 170.2 && t < 171.4 && <Grande t={t} t0={170.36} text="PRISONER" y={960} size={110} color="#ff5a6a" />}
       {/* la ficha de Smith que queda guardada */}
       {t > 171.0 && t < 184.2 && (
-        <div style={{ position: "absolute", left: 1580, top: 110, transform: `scale(${ent(t, 171.1) * (1 - prog(t, 183.6, 184.2))}) rotate(4deg)`, width: 260, height: 300, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 18, overflow: "hidden" }}>
+        <div style={{ position: "absolute", left: 120, top: 150, transformOrigin: "50% 0", transform: `scale(${1.35 * ent(t, 171.1) * (1 - prog(t, 183.6, 184.2))}) rotate(4deg)`, width: 260, height: 300, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 18, overflow: "hidden" }}>
           <Persona x={130} y={300} h={330} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" gorro="morion" expr="orgullo" />
-          <div style={{ position: "absolute", left: 0, top: 6, width: 260, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 30, color: C.rojo }}>REMEMBER HIM</div>
-          {t > 172.3 && <svg style={{ position: "absolute", left: 170, top: 40, transform: `scale(${ent(t, 172.64)}) rotate(${(t - 172.6) * 40}deg)` }} width={70} height={70} viewBox="-35 -35 70 70"><path d="M 0 -32 L 9 -10 L 32 -10 L 13 4 L 20 28 L 0 13 L -20 28 L -13 4 L -32 -10 L -9 -10 Z" fill={C.ambar} stroke="#2a1408" strokeWidth={4} /></svg>}
+          <div style={{ position: "absolute", left: 0, top: 6, width: 260, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 25, color: C.rojo }}>REMEMBER HIM</div>
+          {t > 172.3 && <svg style={{ position: "absolute", left: 180, top: 70, transform: `scale(${ent(t, 172.64)}) rotate(${(t - 172.6) * 40}deg)` }} width={70} height={70} viewBox="-35 -35 70 70"><path d="M 0 -32 L 9 -10 L 32 -10 L 13 4 L 20 28 L 0 13 L -20 28 L -13 4 L -32 -10 L -9 -10 Z" fill={C.ambar} stroke="#2a1408" strokeWidth={4} /></svg>}
         </div>
       )}
       <Chip t={t} t0={175.26} t1={178.6} text="APRIL 1607" color={C.lima} tinta={C.noche} x={960} y={140} centro size={64} />

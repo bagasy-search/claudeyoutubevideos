@@ -14,10 +14,10 @@ import { Globo, Lupa, Olor, Tacha } from "./kitj2";
 export const CAM4: K[] = [
   [342.8, 24350, 620, 0.65], [343.9, 21350, 640, 0.8], [345.0, 21350, 640, 0.8], [346.6, 24350, 640, 0.7], [348.0, 24350, 660, 0.8],
   [355.2, 24350, 660, 0.85], [356.8, 22950, 680, 0.8], [361.8, 23050, 700, 1.0], [366.3, 23150, 700, 1.1], [372.3, 23200, 700, 1.15],
-  [373.4, 23100, 680, 0.8], [377.8, 22950, 790, 1.4], [381.6, 22950, 790, 1.45], [383.2, 23000, 660, 0.75], [392.6, 22800, 650, 0.62],
-  [394.4, 22300, 660, 0.68], [396.5, 20600, 640, 0.55], [398.6, 20000, 640, 0.52], [404.6, 22900, 640, 0.6], [405.8, 24050, 680, 1.0],
+  [373.4, 23100, 680, 0.8], [377.8, 22950, 790, 1.4], [381.6, 22950, 790, 1.45], [383.2, 23450, 700, 1.0], [392.6, 23350, 700, 0.95],
+  [394.4, 22100, 700, 0.88], [396.5, 20600, 640, 0.55], [398.6, 20000, 640, 0.52], [404.6, 22900, 640, 0.6], [405.8, 24050, 680, 1.0],
   [416.4, 24150, 680, 1.05], [417.4, 24300, 600, 0.8], [419.4, 24300, 620, 0.8], [420.3, 24100, 700, 1.15], [427.9, 24150, 700, 1.2],
-  [429.0, 23700, 640, 0.6], [433.4, 23800, 640, 0.58], [438.9, 24100, 620, 0.55],
+  [429.0, 23900, 700, 0.82], [433.4, 23950, 700, 0.82], [438.9, 24100, 660, 0.72],
 ];
 const CIELO4: [number, string][] = [[342.0, "invierno"], [347.4, "hambre"], [355.3, "invierno"], [377.8, "primavera"], [405.4, "verano"], [434.0, "primavera"]];
 
@@ -81,9 +81,9 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
           const perf = of === "PERFUMER";
           return (
             <En key={i} x={xx} w={250}>
-              <Persona x={xx} y={SUELO} h={250} t={t} seed={400 + i} ropa={GENT(i)} gola gorro={perf ? "pluma" : i % 2 ? "copa" : "sombrero"} camina={t < 359.6 + i * 0.25 ? 1.5 : 0} expr={perf && t > 366.3 ? "orgullo" : t > 368.5 ? "sorpresa" : "feliz"}
+              <Persona x={xx} y={SUELO} h={250} t={t} seed={400 + i} ropa={GENT(i)} gola gorro={perf ? "pluma" : i % 2 ? "copa" : "sombrero"} camina={t < 359.6 + i * 0.25 ? 1.5 : 0} expr={perf && t > 366.3 ? "orgullo" : t > 368.5 ? "sorpresa" : "neutro"}
                 manoD={perf ? <g transform="scale(0.35)"><Frasco x={0} y={0} /></g> : undefined} bD={perf && t > 366 ? 70 : 0} />
-              {t > t0 && <div style={{ position: "absolute", left: x - 85, top: SUELO - (i % 2 ? 330 : 390), width: 170, textAlign: "center", transform: `scale(${ent(t, t0)})`, fontFamily, fontWeight: 700, fontSize: 28, color: "#fff", background: perf ? C.rosa : C.oro, borderRadius: 10, padding: "2px 0" }}>{of}</div>}
+              {t > t0 && <div style={{ position: "absolute", left: x - 115, top: SUELO - (i % 2 ? 340 : 410), width: 230, textAlign: "center", transform: `scale(${ent(t, t0)})`, fontFamily, fontWeight: 700, fontSize: 40, color: "#fff", background: perf ? C.rosa : C.oro, borderRadius: 10, padding: "2px 0" }}>{of}</div>}
               {perf && t > 366.5 && <Olor t={t} x={x + 60} y={SUELO - 230} color="#ff8fc8" />}
             </En>
           );
@@ -186,11 +186,12 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
       {t > 382.4 && t < 384.0 && <Grande t={t} t0={382.46} text="GOLD FEVER" y={200} size={140} color={C.oro} />}
       {/* la queja de Smith */}
       {t > 384.0 && t < 392.9 && (
-        <div style={{ position: "absolute", left: 70, top: 120, width: 520, opacity: ent(t, 384.1) * (1 - prog(t, 392.4, 392.9)), background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 20, padding: "14px 22px", fontFamily, fontWeight: 700 }}>
-          <div style={{ fontSize: 28, color: C.rojo }}>JOHN SMITH COMPLAINED:</div>
-          {[["NO TALK", 386.16], ["NO HOPE", 386.6], ["NO WORK", 387.72]].map(([s, t0]) => <div key={s as string} style={{ fontSize: 38, color: "#8a8a94", opacity: t > (t0 as number) ? 1 : 0, textDecoration: "line-through" }}>{s}</div>)}
-          {t > 388.58 && <div style={{ fontSize: 26, color: C.noche, marginTop: 6 }}>EXCEPT...</div>}
-          {[["DIG GOLD", 388.7], ["WASH GOLD", 389.9], ["REFINE GOLD", 390.86], ["LOAD GOLD", 391.96]].map(([s, t0]) => <div key={s as string} style={{ fontSize: 40, color: "#c8901a", opacity: t > (t0 as number) ? 1 : 0, transform: `scale(${t > (t0 as number) ? ent(t, t0 as number) : 0})`, transformOrigin: "left" }}>{s}</div>)}
+        <div style={{ position: "absolute", left: 1230, top: 110, width: 620, opacity: ent(t, 384.1) * (1 - prog(t, 392.4, 392.9)), background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 20, padding: "14px 22px", fontFamily, fontWeight: 700 }}>
+          <div style={{ fontSize: 40, color: C.rojo }}>JOHN SMITH COMPLAINED:</div>
+          <div style={{ position: "absolute", right: -30, bottom: -20, width: 220, height: 300, overflow: "hidden" }}><Persona x={110} y={300} h={300} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" gorro="morion" expr="enojado" habla flip /></div>
+          {[["NO TALK", 386.16], ["NO HOPE", 386.6], ["NO WORK", 387.72]].map(([s, t0]) => <div key={s as string} style={{ fontSize: 52, color: "#8a8a94", opacity: t > (t0 as number) ? 1 : 0, textDecoration: "line-through" }}>{s}</div>)}
+          {t > 388.58 && <div style={{ fontSize: 40, color: C.noche, marginTop: 6 }}>EXCEPT...</div>}
+          {[["DIG GOLD", 388.7], ["WASH GOLD", 389.9], ["REFINE GOLD", 390.86], ["LOAD GOLD", 391.96]].map(([s, t0]) => <div key={s as string} style={{ fontSize: 54, color: "#c8901a", opacity: t > (t0 as number) ? 1 : 0, transform: `scale(${t > (t0 as number) ? ent(t, t0 as number) : 0})`, transformOrigin: "left" }}>{s}</div>)}
         </div>
       )}
       <Chip t={t} t0={393.42} t1={396.4} text="A WHOLE SHIP OF IT" color={C.oro} tinta={C.noche} x={960} y={140} centro size={56} />
@@ -206,9 +207,31 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
         </div>
       )}
       {t > 400.3 && t < 401.6 && <Grande t={t} t0={400.34} text="FOOL'S GOLD" y={300} size={150} color={C.oro} />}
-      <Chip t={t} t0={401.42} t1={404.6} text="WEEKS OF PLANTING SEASON" color={C.lima} tinta={C.noche} x={960} y={140} centro size={54} />
-      <Chip t={t} t0={403.18} t1={404.6} text="→ GONE" color={C.rojo} x={960} y={220} centro size={54} />
-      {t > 404.0 && t < 405.4 && <Grande t={t} t0={404.12} text="FOR SAND" y={930} size={120} color="#e8d090" />}
+      {/* el reloj de arena: las semanas de siembra que se van mientras cargan arena */}
+      {t > 401.3 && t < 405.6 && (() => {
+        const e = ent(t, 401.4) * (1 - prog(t, 405.2, 405.6));
+        const u = prog(t, 401.6, 404.8);
+        return (
+          <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }}>
+            <div style={{ position: "absolute", inset: 0, background: "rgba(27,18,64,.5)", opacity: e }} />
+            <svg style={{ position: "absolute", left: 760, top: 250, transform: `scale(${e})`, transformOrigin: "200px 260px" }} width={400} height={520} viewBox="-200 -260 400 520">
+              <rect x={-170} y={-250} width={340} height={34} rx={14} fill="#8a5228" stroke="#3a1e0c" strokeWidth={8} />
+              <rect x={-170} y={216} width={340} height={34} rx={14} fill="#8a5228" stroke="#3a1e0c" strokeWidth={8} />
+              <path d="M -130 -216 L 130 -216 Q 130 -60 14 0 Q 130 60 130 216 L -130 216 Q -130 60 -14 0 Q -130 -60 -130 -216 Z" fill="rgba(220,240,255,.35)" stroke="#fff" strokeWidth={10} />
+              <path d={`M ${-120 + 100 * u} ${-200 + 190 * u} L ${120 - 100 * u} ${-200 + 190 * u} L 0 -6 Z`} fill="#4aa040" />
+              <path d={`M -120 206 L 120 206 L ${120 - 90 * u} ${206 - 150 * u} L ${-120 + 90 * u} ${206 - 150 * u} Z`} fill="#e8d090" />
+              <rect x={-5} y={-6} width={10} height={206 - 150 * u} fill="#e8d090" opacity={u < 1 ? 1 : 0} />
+            </svg>
+            {Array.from({ length: 6 }, (_, i) => {
+              const on = t > 401.8 + i * 0.45;
+              return <div key={i} style={{ position: "absolute", left: 300 + i * 230, top: 830, transform: `translate(-50%,0) scale(${e})`, width: 190, padding: "6px 0", textAlign: "center", fontFamily, fontWeight: 700, fontSize: 44, color: on ? "#8a8a94" : C.noche, background: "#fff3d6", border: "6px solid #2a1408", borderRadius: 14, textDecoration: on ? "line-through" : "none", textDecorationColor: C.rojo, textDecorationThickness: 8 }}>WEEK {i + 1}</div>;
+            })}
+          </div>
+        );
+      })()}
+      <Chip t={t} t0={401.42} t1={403.9} text="WEEKS OF PLANTING SEASON" color={C.lima} tinta={C.noche} x={960} y={140} centro size={54} />
+      <Chip t={t} t0={403.18} t1={403.9} text="→ GONE" color={C.rojo} x={960} y={220} centro size={54} />
+      {t > 404.0 && t < 405.4 && <Grande t={t} t0={404.12} text="FOR SAND" y={180} size={130} color="#e8d090" />}
       <Chip t={t} t0={406.4} t1={408.4} text="ONE MAN REFUSES" color={C.rojo} x={960} y={140} centro size={56} />
       <Chip t={t} t0={408.5} t1={410.7} text="JOHN SMITH" color={C.rojo} x={960} y={140} centro size={60} />
       <Chip t={t} t0={409.6} t1={410.7} text="FORMER PRISONER" color="#6a6a7a" x={960} y={220} centro size={46} />

@@ -15,8 +15,8 @@ export const CAM0: K[] = [
   [20.2, 23150, 600, 1.75], [21.3, 23000, 700, 1.4], [22.1, 22350, 1160, 1.15], [23.3, 22300, 1170, 1.2],
   [24.7, 23900, 520, 0.5], [27.6, FX, 520, 0.56], [29.4, 25100, 600, 0.8], [31.9, 25300, 620, 0.86],
   [32.4, 23150, 590, 2.0], [32.95, 23150, 590, 2.05], [34.75, 3000, 560, 0.55], [35.4, 3000, 600, 0.32],
-  [40.7, 28200, 640, 0.32], [42.4, 15400, 860, 0.074], [44.0, 15400, 860, 0.077], [45.0, 20950, 740, 0.82],
-  [49.6, 20750, 740, 0.92], [50.15, 20700, 740, 0.9], [51.35, 6250, 570, 0.88], [51.9, 6150, 580, 0.92],
+  [40.7, 28200, 640, 0.32], [42.4, 15400, 860, 0.074], [44.0, 15400, 860, 0.077], [45.0, 21100, 780, 1.25],
+  [49.6, 20850, 770, 1.3], [50.15, 20700, 740, 0.9], [51.35, 6250, 570, 0.88], [51.9, 6150, 580, 0.92],
 ];
 export const CIELO0: [number, string][] = [[0, "amanecer"], [6.8, "verano"], [10.6, "amanecer"], [27.6, "invierno"], [32.3, "amanecer"], [33.4, "londres"], [35.4, "mar"], [42.2, "primavera"], [50.3, "londres"]];
 
@@ -27,6 +27,16 @@ const tPaso = (x: number) => { for (let k = 35.4; k < 40.7; k += 1 / 30) if (cam
 // la multitud del otoño de 1609 (500 colonos) que se va apagando
 const MULTI = Array.from({ length: 44 }, (_, i) => ({ x: 23560 + ((i * 97) % 1560), h: 150 + ((i * 41) % 60), sale: i % 7 === 3 ? 1e9 : 11.0 + ((i * 53) % 44) * 0.048, entra: 8.05 + ((i * 29) % 44) * 0.03, seed: 300 + i }));
 
+const GRUPO = [-900, -760, -600, -480, -260, -140, 20, 160].map((d, i) => ({ x: FX + d - 200, h: 250 + (i % 3) * 30, dy: (i % 2) * 10 }));
+// fuego chico del campamento helado
+export const Fogata: React.FC<{ t: number; x: number; y: number }> = ({ t, x, y }) => (
+  <svg style={{ position: "absolute", left: x - 120, top: y - 240, overflow: "visible" }} width={240} height={240}>
+    <circle cx={120} cy={170} r={150 + Math.sin(t * 7) * 8} fill="#ff9a3a" opacity={0.18} />
+    {[-40, 0, 40].map((d) => <rect key={d} x={90 + d * 0.6} y={200} width={70} height={18} rx={8} fill="#5a3418" transform={`rotate(${d / 2} 120 210)`} />)}
+    {[0, 1, 2].map((i) => { const w = Math.sin(t * (9 + i) + i) * 6; return <path key={i} d={`M ${92 + i * 16} 206 Q ${84 + i * 18 + w} ${150 - i * 10} ${120 + w} ${110 + i * 14} Q ${150 - i * 14 - w} ${160} ${148 - i * 10} 206 Z`} fill={["#ff6a2a", "#ffb23a", "#fff0a0"][i]} />; })}
+    {[0, 1, 2, 3].map((i) => { const k = (t * 0.6 + i / 4) % 1; return <circle key={`b${i}`} cx={120 + Math.sin(i * 7 + t) * 30} cy={110 - k * 140} r={4} fill="#ffcf6a" opacity={1 - k} />; })}
+  </svg>
+);
 const Apaga: React.FC<{ t: number; t1: number; children: React.ReactNode; x: number; y: number }> = ({ t, t1, children, x, y }) => {
   if (t > t1 + 0.22) return null;
   const k = t < t1 ? 1 : 1 - (t - t1) / 0.22;
@@ -36,7 +46,7 @@ const Apaga: React.FC<{ t: number; t1: number; children: React.ReactNode; x: num
 export const P0: React.FC<{ t: number }> = ({ t }) => {
   if (t > 52.2) return null;
   const tabla = t < 0.9 ? 500 : t < 2.5 ? interpolate(t, [0.9, 2.5], [500, 60]) : t < 8.0 ? 60 : t < 8.9 ? interpolate(t, [8.0, 8.9], [60, 500]) : t < 10.9 ? 500 : t < 13.14 ? interpolate(t, [10.9, 13.14], [500, 60]) : 60;
-  const tablaOp = t < 32.4 ? 1 : Math.max(0, 1 - (t - 32.4) * 3);
+  const tablaOp = t > 23.7 && t < 27.8 ? 0 : t < 32.4 ? 1 : Math.max(0, 1 - (t - 32.4) * 3);
   const otono = t > 6.8 && t < 10.7;
   const yo1610 = t < 33.6;
   const flipYo = t > 4.18 && t < 17.9;
@@ -87,10 +97,17 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
         {t > 8.0 && t < 13.6 && MULTI.map((m, i) => (
           <En key={i} x={m.x} w={200}>
             <Apaga t={t} t1={m.sale} x={m.x} y={SUELO}>
-              <Persona x={m.x} y={SUELO + (i % 3) * 6} h={m.h} t={t} seed={m.seed} ropa={COLONO(i)} expr={i % 4 ? "feliz" : "neutro"} aparece={m.entra} gorro={i % 3 === 0 ? "sombrero" : undefined} flip={i % 2 === 0} />
+              <Persona x={m.x} y={SUELO + (i % 3) * 6} h={m.h} t={t} seed={m.seed} ropa={COLONO(i)} expr={t > 10.6 ? (i % 2 ? "miedo" : "triste") : i % 3 ? "neutro" : "feliz"} aparece={m.entra} gorro={i % 3 === 0 ? "sombrero" : undefined} flip={i % 2 === 0} />
             </Apaga>
           </En>
         ))}
+        {/* los 60 sobrevivientes: flacos, envueltos, alrededor del fuego frente al fuerte */}
+        {(t < 6.9 || (t > 10.6 && t < 33.5)) && GRUPO.map((g, i) => (
+          <En key={`g${i}`} x={g.x} w={200}>
+            <Persona x={g.x} y={SUELO + g.dy} h={g.h} t={t} seed={400 + i} ropa={COLONO(i)} expr={i % 3 === 0 ? "miedo" : "triste"} flaco={0.72} flip={g.x > FX - 380} gorro={i % 2 ? "sombrero" : undefined} mira={g.x > FX - 380 ? 0.3 : -0.3} bI={i % 2 ? 60 : 20} cI={i % 2 ? 100 : 40} bD={i % 2 ? 60 : 20} cD={i % 2 ? 100 : 40} inclina={i % 2 ? 6 : -4} />
+          </En>
+        ))}
+        {(t < 6.9 || (t > 10.6 && t < 33.5)) && <En x={FX - 380} w={200}><Fogata t={t} x={FX - 380} y={SUELO + 8} /></En>}
         {/* tumbas: la masacre sin batalla */}
         {t > 30.5 && t < 33.5 && Array.from({ length: 14 }, (_, i) => <En key={i} x={25350 + (i % 7) * 110} w={100}><Cruz x={25350 + (i % 7) * 110 + (i > 6 ? 55 : 0)} y={SUELO - 70 - (i > 6 ? 40 : 0)} s={i > 6 ? 0.75 : 0.9} t={t} t0={30.6 + i * 0.06} /></En>)}
         {/* colonos flacos que cargan los barcos (no festejan) */}
@@ -126,7 +143,7 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
       </Mundo>
 
       {/* ── capa de pantalla: tablero de sobrevivientes, textos y golpes */}
-      {t < 33 && <Tablero t={t} valor={tabla} rojo={t > 0.9 && t < 8 || t > 10.9} op={tablaOp} s={t < 2.6 ? 1.35 : 1} x={t < 2.6 ? 1500 : 1660} y={t < 2.6 ? 230 : 150} />}
+      {t < 33 && <Tablero t={t} valor={tabla} rojo={t > 0.9 && t < 8 || t > 10.9} op={tablaOp} s={t < 2.6 ? 1.5 : 1.2} x={t < 2.6 ? 1500 : 1680} y={t < 2.6 ? 250 : 170} />}
       {t > 0.9 && t < 2.8 && <Grande t={t} t0={2.45} text="-440" y={420} x={1500} size={120} color="#ff5a6a" />}
       <Chip t={t} t0={1.34} t1={2.25} text="VIRGINIA" color={C.teal} tinta={C.noche} x={420} y={180} centro size={70} />
       <Chip t={t} t0={2.48} t1={4.05} text="MAY 1610" color={C.ambar} tinta={C.noche} x={420} y={180} centro size={84} />
@@ -135,12 +152,12 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={8.4} t1={10.4} text="500 ENGLISH COLONISTS" color={C.rojo} x={960} y={930} centro size={64} />
       <Chip t={t} t0={10.58} t1={13.0} text="TODAY" color={C.ambar} tinta={C.noche} x={420} y={170} centro size={66} />
       {t > 13.1 && t < 14.4 && <Grande t={t} t0={13.14} text="60" y={520} size={330} color="#ff5a6a" />}
-      <Chip t={t} t0={14.92} t1={16.1} text="HELP ARRIVED... 🤨" color={C.teal} tinta={C.noche} x={960} y={160} centro size={64} />
+      <Chip t={t} t0={14.92} t1={16.1} text="HELP ARRIVED..." color={C.teal} tinta={C.noche} x={960} y={160} centro size={64} />
       <Chip t={t} t0={16.42} t1={17.8} text="PACKING UP TO LEAVE" color={C.rojo} x={960} y={160} centro size={64} />
       {t > 17.9 && t < 20.2 && (() => {
         const u = prog(t, 18.95, 19.4);
         return (
-          <svg style={{ position: "absolute", left: 760, top: 240 }} width={400} height={400}>
+          <svg style={{ position: "absolute", left: 120, top: 150 }} width={400} height={400}>
             <g transform={`translate(200 200) scale(${ent(t, 17.95)})`}>
               {[-1, 1].map((s) => <g key={s} transform={`rotate(${s * 40})`}><rect x={-12} y={-170} width={24} height={250} rx={6} fill="#dfe6f0" stroke="#6a7484" strokeWidth={5} /><rect x={-50} y={70} width={100} height={20} fill="#c9a24a" /><rect x={-10} y={90} width={20} height={60} fill="#6b3a1f" /></g>)}
             </g>
@@ -149,7 +166,7 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
           </svg>
         );
       })()}
-      <Chip t={t} t0={19.16} t1={20.2} text="NOT IN BATTLE" color={C.violeta} x={960} y={720} centro size={60} />
+      <Chip t={t} t0={19.16} t1={20.2} text="NOT IN BATTLE" color={C.violeta} x={320} y={600} centro size={60} />
       {t > 20.6 && t < 21.4 && <Grande t={t} t0={20.76} text="HUNGER" y={240} size={170} color={C.ambar} />}
       <Chip t={t} t0={22.28} t1={23.6} text="A RIVER FULL OF FISH" color={C.teal} tinta={C.noche} x={960} y={160} centro size={68} />
       {t > 23.9 && t < 27.6 && <Grande t={t} t0={24.0} text="JAMESTOWN" y={200} size={190} />}

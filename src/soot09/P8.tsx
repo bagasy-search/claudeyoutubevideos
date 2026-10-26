@@ -5,23 +5,23 @@ import { C, ent, prog, Chip, Grande, fontFamily, Pergamino } from "./kit";
 import { Trampas } from "./kit2";
 import { Mundo, K, En, SUELO, AGUA } from "./mundo";
 import { Base, FX } from "./base";
-import { GENT, COLONO, POW, Nave, Bote, Bicho, Tortuga, Tabaco, Barril, Tinte } from "./kitj";
+import { GENT, COLONO, POW, Nave, Bote, Bicho, Tortuga, Tabaco, Barril, Tinte, Cruz } from "./kitj";
 import { Icono } from "./kitj2";
 
 // EL GIRO (741,1-908,6 s). Deliverance y Patience llegan de Bermudas; 60 sobrevivientes; Gates abandona Jamestown;
 // río abajo, el bote del gancho (el de la farola, en la curva) trae a De La Warr; vuelven. Rolfe y el tabaco;
 // La Tempestad; 6.000 → 1.200; la lista de lo que salió mal; "un día y un bote chico"; CTA al grumete pirata.
 export const CAM8: K[] = [
-  [741.1, 24350, 610, 0.48], [742.6, 24350, 610, 0.52], [743.4, 21300, 640, 0.6], [747.3, 22000, 660, 0.75], [752.9, 22100, 660, 0.8],
+  [741.1, 24350, 610, 0.48], [742.6, 24350, 610, 0.52], [743.4, 20300, 680, 0.82], [747.3, 22000, 680, 0.9], [752.9, 22150, 680, 0.92],
   [753.6, 13700, 650, 0.62], [758.2, 13700, 650, 0.66], [758.9, 13700, 700, 0.85], [765.8, 13700, 700, 0.9], [766.5, 23200, 640, 0.6],
   [770.8, 23900, 650, 0.72], [776.2, 23900, 650, 0.72], [776.9, 22900, 650, 0.62], [781.3, 23300, 650, 0.62], [782.0, FX, 650, 0.75],
   [787.6, FX, 650, 0.75], [788.4, 21900, 640, 0.6], [794.3, 20900, 640, 0.6], [795.4, 20500, 680, 0.8], [802.6, 20550, 680, 0.85],
-  [803.6, 18000, 620, 0.42], [812.4, 18200, 620, 0.42], [813.2, 20600, 650, 0.62], [818.6, 22400, 650, 0.6], [819.5, 23300, 610, 0.42],
-  [826.2, 23300, 610, 0.44], [827.0, 13600, 690, 0.8], [832.8, 13600, 690, 0.85], [833.5, 25600, 680, 0.85], [838.2, 25700, 680, 0.88],
-  [839.0, 3300, 640, 0.85], [844.9, 3400, 640, 0.9], [845.6, 12800, 620, 0.4], [852.9, 13800, 620, 0.42], [853.6, 3300, 640, 0.85],
-  [859.9, 3350, 640, 0.95], [860.6, 24350, 600, 0.36], [872.6, 24350, 600, 0.36], [873.4, 3300, 620, 0.75], [879.8, 3300, 620, 0.78],
-  [880.5, 24350, 600, 0.3], [888.2, 24350, 600, 0.32], [889.0, 20900, 680, 0.9], [891.6, 20950, 680, 0.95], [892.4, 23800, 620, 0.55],
-  [908.6, 23900, 620, 0.58],
+  [803.6, 18100, 660, 0.62], [812.4, 18250, 660, 0.64], [813.2, 20600, 680, 0.78], [818.6, 22300, 680, 0.78], [819.5, 23700, 690, 0.75],
+  [826.2, 23800, 690, 0.8], [827.0, 13600, 690, 0.8], [832.8, 13600, 690, 0.85], [833.5, 25600, 680, 0.85], [838.2, 25700, 680, 0.88],
+  [839.0, 3300, 640, 1.05], [844.9, 3380, 640, 1.1], [845.6, 12800, 620, 0.4], [852.9, 13800, 620, 0.42], [853.6, 3300, 640, 0.85],
+  [859.9, 3350, 640, 0.95], [860.6, 24350, 700, 0.7], [872.6, 24400, 700, 0.75], [873.4, 3300, 620, 0.75], [879.8, 3300, 620, 0.78],
+  [880.5, 24350, 680, 0.55], [888.2, 24350, 680, 0.58], [889.0, 20900, 680, 0.9], [891.6, 20950, 680, 0.95], [892.4, 23950, 690, 0.75],
+  [908.6, 23750, 690, 0.78],
 ];
 const CIELO8: [number, string][] = [
   [741, "primavera"], [753.5, "verano"], [766.3, "primavera"], [776.8, "verano"], [794.8, "amanecer"], [796.5, "verano"],
@@ -118,7 +118,7 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
           </>
         )}
         {/* Rolfe en el Sea Venture naufragado */}
-        {t > 826.8 && t < 833.4 && <En x={13600} w={300}><Persona x={13600} y={SUELO} h={300} t={t} seed={900} ropa={GENT(3)} gorro="sombrero" expr="feliz" aparece={831.7} /></En>}
+        {t > 826.8 && t < 833.4 && <En x={13600} w={300}><Persona x={13600} y={SUELO} h={300} t={t} seed={900} ropa={GENT(3)} gorro="sombrero" expr={t > 831.7 ? "orgullo" : "neutro"} aparece={828.9} /></En>}
         {/* el tabaco dulce en Virginia */}
         {t > 833.3 && t < 838.9 && (
           <>
@@ -149,6 +149,14 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
             <Persona x={2780} y={SUELO} h={320} t={t} seed={920} ropa={GENT(0)} gola barba="#8a5a2a" expr="feliz" bD={110} cD={60} manoD={<path d="M 0 0 L 36 -40" stroke="#fff" strokeWidth={6} />} aparece={855.4} />
           </En>
         )}
+        {/* "un día antes": los que se iban, fantasmas de una Jamestown que no fue */}
+        {t > 819.4 && t < 826.4 && Array.from({ length: 6 }, (_, i) => { const x = 23250 + i * 190; return <En key={i} x={x} w={200}><div style={{ position: "absolute", left: 0, top: 0, opacity: 0.55 * (1 - prog(t, 821.8 + i * 0.25, 822.6 + i * 0.25)) }}><Persona x={x} y={SUELO} h={250} t={t} seed={940 + i} ropa={COLONO(i)} flaco={0.5} flip expr="triste" camina={1.1} /></div></En>; })}
+        {/* el público del Globe */}
+        {t > 853.4 && t < 860.4 && Array.from({ length: 7 }, (_, i) => { const x = 2980 + i * 110; return <En key={i} x={x} w={150}><Persona x={x} y={SUELO + 40} h={200} t={t} seed={950 + i} ropa={i % 2 ? GENT(i) : COLONO(i)} gorro={i % 3 === 0 ? "copa" : undefined} expr={t > 858.6 ? "sorpresa" : "neutro"} mira={(3 - i) * 0.15} miraY={-0.6} aparece={853.6 + i * 0.08} /></En>; })}
+        {/* 1607-1624: las cruces se suman detrás del conteo */}
+        {t > 860.5 && t < 880.5 && Array.from({ length: 14 }, (_, i) => { const x = FX - 1250 + i * 190 + (i > 6 ? 1000 : 0); return <En key={i} x={x} w={150}><Cruz x={x} y={SUELO - 80} s={0.6} t={t} t0={866.0 + i * 0.35} /></En>; })}
+        {/* los que sobrevivieron, despidiendo */}
+        {t > 892.2 && Array.from({ length: 5 }, (_, i) => { const x = FX - 450 + i * 220; return <En key={i} x={x} w={200}><Persona x={x} y={SUELO} h={260} t={t} seed={960 + i} ropa={i % 2 ? GENT(i) : COLONO(i)} flaco={0.3} expr={i % 2 ? "orgullo" : "neutro"} flip={i > 2} bD={i % 2 ? 150 + Math.sin(t * 7 + i) * 25 : undefined} aparece={892.4 + i * 0.1} /></En>; })}
         {/* el bote del final */}
         {t > 888.8 && t < 892.2 && <En x={20700} w={400}><Bote x={20700} y={AGUA - 20} t={t} s={1.3} /><svg style={{ position: "absolute", left: 20640, top: AGUA - 200, overflow: "visible" }} width={120} height={120}><circle cx={60} cy={60} r={30 + Math.sin(t * 9) * 6} fill="#ffe680" opacity={0.85} /><circle cx={60} cy={60} r={70} fill="#ffe680" opacity={0.25} /></svg></En>}
         {/* CTA: el barco pirata que viene */}
@@ -191,10 +199,10 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={801.69} t1={803.6} text="A MESSENGER" color={C.violeta} x={960} y={930} centro size={54} />
       {/* De La Warr */}
       {t > 803.6 && t < 812.8 && (
-        <div style={{ position: "absolute", left: 90, top: 170, transform: `scale(${ent(t, 803.75) * (1 - prog(t, 812.3, 812.8))}) rotate(-2deg)`, width: 340, height: 420, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 18, overflow: "hidden" }}>
+        <div style={{ position: "absolute", left: 90, top: 170, transformOrigin: "0 0", transform: `scale(${1.4 * ent(t, 803.75) * (1 - prog(t, 812.3, 812.8))}) rotate(-2deg)`, width: 340, height: 420, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 18, overflow: "hidden" }}>
           <Persona x={170} y={390} h={300} t={t} seed={930} ropa={GENT(0)} gola capa="#2a1a50" barba="#3a2416" gorro="sombrero" expr="orgullo" />
-          <div style={{ position: "absolute", left: 0, top: 8, width: 340, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 30, color: C.violeta }}>LORD DE LA WARR</div>
-          {t > 805.0 && <div style={{ position: "absolute", left: 0, bottom: 10, width: 340, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 30, color: C.rojo }}>NEW GOVERNOR</div>}
+          <div style={{ position: "absolute", left: 0, top: 8, width: 340, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 34, color: C.violeta }}>LORD DE LA WARR</div>
+          {t > 805.0 && <div style={{ position: "absolute", left: 0, bottom: 10, width: 340, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 34, color: C.rojo }}>NEW GOVERNOR</div>}
         </div>
       )}
       <Chip t={t} t0={807.87} t1={812.8} text="3 SHIPS" color={C.teal} tinta={C.noche} x={960} y={140} centro size={56} />
@@ -223,7 +231,7 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       {/* 6.000 → 1.200: cada punto, 100 personas */}
       {t > 862.4 && t < 873.0 && (
         <div style={{ position: "absolute", left: 460, top: 220, width: 1000, transform: `scale(${ent(t, 862.5) * (1 - prog(t, 872.6, 873.0))})`, transformOrigin: "50% 50%" }}>
-          <div style={{ fontFamily, fontWeight: 700, fontSize: 46, color: "#fff", textAlign: "center", marginBottom: 16, WebkitTextStroke: "8px #1b1240", paintOrder: "stroke fill" }}>1607 - 1624</div>
+          <div style={{ fontFamily, fontWeight: 700, fontSize: 84, color: C.ambar, textAlign: "center", marginBottom: 16, WebkitTextStroke: "12px #1b1240", paintOrder: "stroke fill" }}>1607 - 1624</div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 14, justifyContent: "center" }}>
             {Array.from({ length: 60 }, (_, i) => {
               const vis = t > 865.5 + i * 0.012;

@@ -1,5 +1,6 @@
 import React from "react";
 import { rnd } from "../soot/lib";
+import { invK } from "./invierno";
 
 // Personaje vector riggeado de Soot v3 (todo en código): cabezón con ojos grandes, ropa con degradé,
 // brazos con hombro + codo, piernas que caminan, parpadeo, boca que habla y 8 expresiones.
@@ -24,7 +25,7 @@ type Props = {
 };
 
 const BOCA: Record<Expr, string> = {
-  neutro: "M -16 -392 Q 0 -386 16 -392",
+  neutro: "M -15 -390 Q 0 -391 15 -389",
   feliz: "M -26 -398 Q 0 -366 26 -398 Z",
   orgullo: "M -22 -394 Q 0 -378 22 -394",
   miedo: "M -18 -384 Q 0 -404 18 -384 Q 0 -372 -18 -384 Z",
@@ -39,7 +40,9 @@ const CEJA: Record<Expr, [number, number]> = {
 };
 
 export const Persona: React.FC<Props> = (p) => {
-  const { x, y, h = 560, t, seed = 1, ropa = LUCIUS, expr = "neutro", habla = false, camina = 0, mira = 0, miraY = 0, flip = false, casco = "no", sombra, inclina = 0, opacity = 1 } = p;
+  const { x, y, h = 560, t, seed = 1, ropa = LUCIUS, expr: expr0 = "neutro", habla = false, camina = 0, mira = 0, miraY = 0, flip = false, casco = "no", sombra, inclina = 0, opacity = 1 } = p;
+  // en el invierno del hambre nadie sonríe
+  const expr: Expr = expr0 === "feliz" && invK(t) > 0.5 ? "triste" : expr0;
   const id = `p${seed}`;
   const S = h / 560;
   const r = React.useMemo(() => rnd(seed * 31 + 5), [seed]);

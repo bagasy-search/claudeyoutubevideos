@@ -13,8 +13,8 @@ import { Globo, Icono, Tacha, Almacen, Carreta, Olor, Torta } from "./kitj2";
 export const CAM1: K[] = [
   [51.9, 6150, 580, 0.92], [52.7, 5300, 560, 0.85], [54.0, 5150, 560, 0.9], [55.6, 4750, 580, 1.0], [57.3, 4450, 580, 0.96],
   [59.6, 4150, 600, 0.9], [62.6, 3950, 600, 0.95], [63.6, 3300, 560, 0.95], [67.2, 3300, 540, 1.0], [69.1, 2950, 600, 0.95],
-  [70.4, 2700, 640, 2.25], [86.9, 2700, 640, 2.4], [88.7, 2700, 818, 5.6], [89.7, 2700, 818, 5.8], [90.5, 2880, 600, 1.35],
-  [92.9, 2850, 600, 1.42], [93.7, 2150, 610, 0.85], [99.5, 2050, 610, 0.9], [101.6, 1700, 610, 0.95], [103.5, 1250, 650, 1.2],
+  [70.4, 2760, 610, 2.05], [86.9, 2760, 610, 2.2], [88.7, 2700, 818, 5.6], [89.7, 2700, 818, 5.8], [90.5, 2880, 600, 1.35],
+  [92.9, 2850, 600, 1.42], [93.7, 2150, 650, 1.25], [99.5, 2050, 650, 1.3], [101.6, 1700, 610, 0.95], [103.5, 1250, 650, 1.2],
   [104.9, 1250, 650, 1.26], [105.85, 6020, 600, 0.9], [110.6, 6020, 600, 0.93], [112.9, 5890, 560, 1.55], [118.9, 5890, 560, 1.6],
   [119.7, 6020, 600, 0.9], [127.9, 6060, 600, 0.95], [129.1, 7080, 600, 0.62], [132.8, 7120, 600, 0.65], [138.2, 7700, 600, 0.6],
 ];
@@ -38,7 +38,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
       <Mundo t={t} cam={CAM1} cielo={CIELO1}>
         <Base t={t} />
         {/* el cartel #1 clavado en la calle */}
-        <En x={5250} w={500}><Poste t={t} t0={51.66} x={5250} y={SUELO + 10} n={1} titulo="THE AD" s={1.1} /></En>
+        {t < 105.4 && <En x={5250} w={500}><Poste t={t} t0={51.66} x={5250} y={SUELO + 10} n={1} titulo="THE AD" s={1.55} /></En>}
         {/* carreta que cruza con su olor */}
         {t > 56.8 && t < 61.5 && (() => { const x = interpolate(t, [56.8, 61.5], [3700, 5300]); return <En x={x} w={500}><Carreta t={t} x={x} y={SUELO - 90} s={0.9} /><Olor t={t} x={x + 120} y={SUELO - 200} /><Olor t={t + 0.4} x={x - 160} y={SUELO - 160} color="#a8a8b8" /></En>; })()}
         {/* la gente que habla de Virginia en cada esquina */}
@@ -51,8 +51,8 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
         {/* la Virginia Company: inversores de galera, la carta real y la corona */}
         {t > 62.2 && t < 70.5 && (
           <>
-            <En x={3300} w={400}><div style={{ position: "absolute", left: 3300, top: 300, transform: `translate(-50%,-50%) scale(${ent(t, 64.6)}) rotate(${Math.sin(t * 2) * 2}deg)`, fontFamily, fontWeight: 700, fontSize: 34, color: "#ffe6b0", background: "#5a2a5a", border: "6px solid #2a1430", borderRadius: 10, padding: "6px 18px", whiteSpace: "nowrap" }}>VIRGINIA COMPANY</div></En>
-            {[3150, 3450].map((x, i) => <En key={x} x={x} w={250}><Persona x={x} y={SUELO} h={360} t={t} seed={110 + i} ropa={GENT(i + 2)} expr="orgullo" gorro="copa" gola flip={i === 1} aparece={63.0 + i * 0.2} barba={i ? "#5a3a2a" : undefined} /></En>)}
+            <En x={3300} w={400}><div style={{ position: "absolute", left: 3300, top: 300, transform: `translate(-50%,-50%) scale(${ent(t, 64.6)}) rotate(${Math.sin(t * 2) * 2}deg)`, fontFamily, fontWeight: 700, fontSize: 54, color: "#ffe6b0", background: "#5a2a5a", border: "6px solid #2a1430", borderRadius: 10, padding: "6px 18px", whiteSpace: "nowrap" }}>VIRGINIA COMPANY</div></En>
+            {[3150, 3450].map((x, i) => <En key={x} x={x} w={250}><Persona x={x} y={SUELO} h={360} t={t} seed={110 + i} ropa={GENT(i + 2)} expr={i ? "enojado" : "orgullo"} habla={i === 0} bD={i === 0 ? 110 : undefined} cD={i === 0 ? 30 : undefined} gorro="copa" gola flip={i === 1} aparece={63.0 + i * 0.2} barba={i ? "#5a3a2a" : undefined} /></En>)}
             {t > 66.4 && <Pergamino x={3300} y={540} w={360} abre={prog(t, 66.45, 66.9) * 0.55} lineas={5} firma={prog(t, 67.3, 68.2)} titulo="CHARTER" />}
             {t > 67.3 && <Corona x={3300} y={380} s={0.6} t={t} t0={67.32} />}
           </>
@@ -95,7 +95,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
             {OFICIO[f.i] && <Icono k={OFICIO[f.i][0]} x={f.x} y={SUELO - (f.chico ? 330 : 440)} s={0.42} t={t} t0={OFICIO[f.i][1]} />}
           </En>
         ))}
-        {enFila && t > 112.9 && t < 119.3 && <Globo t={t} t0={115.48} t1={118.9} x={5800} y={SUELO - 400} text="MANUAL LABOR? EW." size={30} cola="der" />}
+        {enFila && t > 112.9 && t < 119.3 && <Globo t={t} t0={115.48} t1={118.9} x={5800} y={SUELO - 400} text="MANUAL LABOR? EW." size={46} cola="der" />}
         {/* vos: caminás por Londres, mirás el cartel, y hacés la fila */}
         {t < 105.5 && <En x={yx} w={300}><Persona x={yx} y={yy} h={430} t={t} seed={8} ropa={TOM} gorro="sombrero" expr={t > 89.7 && t < 93 ? "sorpresa" : t > 99.6 && t < 101.5 ? "triste" : "feliz"} camina={mueve(YO, t) ? 1.5 : 0} flip={t > 52 && t < 94.6} mira={t > 69.4 && t < 89.7 ? -0.8 : 0} miraY={t > 69.4 && t < 89.7 ? -0.6 : 0} /></En>}
         {enFila && <En x={5600} w={300}><Persona x={5600} y={SUELO - 30} h={430} t={t} seed={8} ropa={TOM} gorro="sombrero" expr={t > 126 && t < 128 ? "miedo" : "feliz"} flip mira={-0.6} /></En>}
@@ -107,8 +107,8 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
 
       {/* pantalla */}
       {t < 56 && <Trampas t={t} t0={52.0} n={1} y={960} />}
-      <Chip t={t} t0={54.16} t1={57.1} text="DECEMBER 1606" color={C.ambar} tinta={C.noche} x={960} y={140} centro size={66} />
-      <Chip t={t} t0={56.6} t1={59.2} text="LONDON" color={C.rojo} x={420} y={140} centro size={58} />
+      <Chip t={t} t0={54.16} t1={57.1} text="DECEMBER 1606" color={C.ambar} tinta={C.noche} x={330} y={140} centro size={66} />
+      <Chip t={t} t0={56.6} t1={59.2} text="LONDON" color={C.rojo} x={330} y={240} centro size={58} />
       <Chip t={t} t0={58.22} t1={60.0} text="SMOKE" color="#6a6a7a" x={1380} y={240} size={50} />
       <Chip t={t} t0={58.78} t1={60.0} text="HORSES" color={C.tierra} x={1380} y={320} size={50} />
       <Chip t={t} t0={63.04} t1={66.1} text="INVESTORS" color={C.violeta} x={960} y={930} centro size={58} />
@@ -123,16 +123,25 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
       {t > 89.7 && t < 91.0 && <Grande t={t} t0={90.02} text="NOT A SETTLER" y={190} size={120} color="#ff5a6a" />}
       {t > 91.0 && t < 93.1 && <Grande t={t} t0={92.18} text="EMPLOYEE" y={190} size={140} color={C.ambar} />}
       {t > 93.6 && t < 99.5 && <Grande t={t} t0={93.74} text="7 YEARS" y={170} size={130} />}
-      <Chip t={t} t0={95.32} t1={96.8} text="GROW" color={C.lima} tinta={C.noche} x={1450} y={330} size={48} />
-      <Chip t={t} t0={95.96} t1={97.4} text="CATCH" color={C.teal} tinta={C.noche} x={1450} y={410} size={48} />
-      <Chip t={t} t0={96.36} t1={98.0} text="FIND" color={C.ambar} tinta={C.noche} x={1450} y={490} size={48} />
+      {t > 93.9 && t < 99.5 && Array.from({ length: 7 }, (_, i) => {
+        const e = ent(t, 94.1 + i * 0.16);
+        const x = 900 + (i - 3) * 140;
+        return <div key={`a${i}`} style={{ position: "absolute", left: x, top: 330, transform: `translate(-50%,-50%) scale(${e}) rotate(${(i - 3) * 2}deg)`, width: 128, height: 140, background: "#fff6e0", border: "6px solid #4e2a12", borderRadius: 12, fontFamily, fontWeight: 700, textAlign: "center", boxShadow: "0 8px 0 rgba(20,10,40,.35)" }}>
+          <div style={{ background: C.rojo, color: "#fff", fontSize: 26, padding: "4px 0" }}>YEAR</div>
+          <div style={{ fontSize: 64, color: "#2a1408", lineHeight: "90px" }}>{i + 1}</div>
+          {t > 95.0 + i * 0.5 && <svg style={{ position: "absolute", inset: 0 }} width={116} height={128}><path d="M 14 20 L 104 112 M 104 20 L 14 112" stroke={C.rojo} strokeWidth={12} strokeLinecap="round" opacity={0.85} /></svg>}
+        </div>;
+      })}
+      <Chip t={t} t0={95.32} t1={96.8} text="GROW" color={C.lima} tinta={C.noche} x={1060} y={540} centro size={58} />
+      <Chip t={t} t0={95.96} t1={97.4} text="CATCH" color={C.teal} tinta={C.noche} x={1060} y={630} centro size={58} />
+      <Chip t={t} t0={96.36} t1={98.0} text="FIND" color={C.ambar} tinta={C.noche} x={1060} y={720} centro size={58} />
       <Chip t={t} t0={99.82} t1={101.4} text="YOUR FOOD" color={C.naranja} x={960} y={930} centro size={56} />
       <Chip t={t} t0={101.64} t1={103.3} text="YOUR PROFIT → LONDON" color={C.violeta} x={960} y={140} centro size={56} />
       <Chip t={t} t0={103.36} t1={105.2} text="NEVER SET FOOT IN A SWAMP" color={C.rojo} x={960} y={930} centro size={54} />
       {t > 106.8 && t < 112.6 && <Tablero t={t} valor={interpolate(t, [107.4, 108.6], [0, 105], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} titulo="ON BOARD" x={1680} y={150} />}
       <Chip t={t} t0={108.54} t1={110.6} text="MEN AND BOYS" color={C.teal} tinta={C.noche} x={1680} y={290} centro size={42} />
-      <Torta t={t} t0={110.88} x={230} y={200} frac={1 / 3} />
-      <Chip t={t} t0={111.86} t1={112.8} text="GENTLEMEN" color={C.violeta} x={380} y={200} size={56} />
+      <Torta t={t} t0={110.88} x={330} y={300} frac={1 / 3} />
+      <Chip t={t} t0={111.86} t1={112.8} text="GENTLEMEN" color={C.violeta} x={500} y={300} size={56} />
       <Chip t={t} t0={115.48} t1={118.9} text="NEVER DONE MANUAL LABOR" color={C.rojo} x={960} y={930} centro size={56} />
       {t > 118.2 && t < 119.3 && <Grande t={t} t0={118.26} text="PROUD OF IT" y={170} size={110} color={C.ambar} />}
       {t > 125.9 && t < 128.3 && (

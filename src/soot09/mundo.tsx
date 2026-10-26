@@ -2,7 +2,13 @@ import React from "react";
 import { AbsoluteFill, Easing, interpolate } from "remotion";
 import { rnd } from "../soot/lib";
 import { C } from "./kit";
-import { CieloT, Olas, Pino, Cipres, Palmera, tonoEn, Tono } from "./kitj";
+import { CieloT, Olas, Pino, Cipres, Palmera, tonoEn, Tono, Nieve } from "./kitj";
+
+import { invK } from "./invierno";
+export { invK };
+const hx = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+const mz = (a: string, b: string, u: number) => { const A = hx(a), B = hx(b); return "#" + A.map((v, i) => Math.round(v + (B[i] - v) * u).toString(16).padStart(2, "0")).join(""); };
+const HELADO = { a: "#0c1230", b: "#27335e", c: "#6a7898" };
 
 // Motor del mundo continuo de soot09: UNA tira horizontal (Londres → Atlántico → Virginia) que la cámara recorre
 // durante todo el video. Coordenadas de mundo en px (a zoom 1 la pantalla muestra 1920x1080 alrededor de la cámara).
@@ -99,7 +105,9 @@ const Lejos: React.FC<{ cx: number; f: number; t: number; tono: Tono }> = ({ cx,
 // ── el mundo: cielo + capas lejanas + tierra/agua + hijos en coordenadas de mundo + capa cercana
 export const Mundo: React.FC<{ t: number; cam: K[]; cielo: [number, string][]; children: React.ReactNode; frente?: React.ReactNode; sinLejos?: boolean; cieloExtra?: React.ReactNode }> = ({ t, cam, cielo, children, frente, sinLejos, cieloExtra }) => {
   const c = camEn(cam, t);
-  const tono = tonoEn(cielo, t);
+  const ik = invK(t);
+  const t0n = tonoEn(cielo, t);
+  const tono = ik > 0 ? { a: mz(t0n.a, HELADO.a, ik), b: mz(t0n.b, HELADO.b, ik), c: mz(t0n.c, HELADO.c, ik) } : t0n;
   const blur = Math.min(14, Math.max(0, c.v - 40) / 14);
   const tr = `translate(960px, 540px) scale(${c.z}) translate(${-c.x}px, ${-c.y}px)`;
   const capa = (f: number) => {
@@ -113,13 +121,15 @@ export const Mundo: React.FC<{ t: number; cam: K[]; cielo: [number, string][]; c
         {cieloExtra}
         {!sinLejos && <AbsoluteFill style={capa(0.2)}><Lejos cx={c.x} f={0.2} t={t} tono={tono} /></AbsoluteFill>}
         {!sinLejos && <AbsoluteFill style={capa(0.45)}><Lejos cx={c.x} f={0.45} t={t} tono={tono} /></AbsoluteFill>}
-        <AbsoluteFill style={{ filter: blur > 0.5 ? `blur(${blur.toFixed(1)}px)` : undefined }}>
+        <AbsoluteFill style={{ filter: [blur > 0.5 ? `blur(${blur.toFixed(1)}px)` : "", ik > 0 ? `saturate(${(1 - 0.42 * ik).toFixed(2)}) brightness(${(1 - 0.12 * ik).toFixed(2)})` : ""].join(" ").trim() || undefined }}>
           <div style={{ position: "absolute", left: 0, top: 0, width: 0, height: 0, transform: tr, transformOrigin: "0 0" }}>
-            <Suelo t={t} cx={c.x} z={c.z} />
+            <Suelo t={t} cx={c.x} z={c.z} ik={ik} />
             {children}
             <AguaFrente t={t} cx={c.x} z={c.z} cy={c.y} />
           </div>
         </AbsoluteFill>
+        {ik > 0 && <Nieve t={t} n={110} op={0.85 * ik} viento={120} seed={21} />}
+        {ik > 0 && <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 40%, transparent 50%, #060a20 125%)", opacity: 0.75 * ik, pointerEvents: "none" }} />}
         {frente}
         {blur > 2 && <Rafagas t={t} op={Math.min(0.6, blur / 20)} />}
       </AbsoluteFill>
@@ -128,7 +138,7 @@ export const Mundo: React.FC<{ t: number; cam: K[]; cielo: [number, string][]; c
 };
 
 // tierra y agua visibles (se dibujan por tramos alrededor de la cámara)
-const Suelo: React.FC<{ t: number; cx: number; z: number }> = ({ t, cx, z }) => {
+const Suelo: React.FC<{ t: number; cx: number; z: number; ik?: number }> = ({ t, cx, z, ik = 0 }) => {
   const a = Math.floor((cx - 1100 / z) / 100) * 100, b = Math.ceil((cx + 1100 / z) / 100) * 100;
   const tramos: [number, number, boolean][] = [];
   for (let x = a; x < b; x += 100) {
@@ -146,13 +156,14 @@ const Suelo: React.FC<{ t: number; cx: number; z: number }> = ({ t, cx, z }) => 
         const X0 = x0 - a, X1 = x1 - a;
         const londres = x0 < 5600;
         const virginia = x0 > 22000;
-        const col = londres ? "#7a5a4a" : virginia ? "#5a8a3a" : "#e8d090";
-        const col2 = londres ? "#5a3e32" : virginia ? "#3e6a28" : "#c8a868";
+        const col = mz(londres ? "#7a5a4a" : virginia ? "#5a8a3a" : "#e8d090", "#e6eef8", virginia ? ik : ik * 0.6);
+        const col2 = mz(londres ? "#5a3e32" : virginia ? "#3e6a28" : "#c8a868", "#aebcd4", virginia ? ik : ik * 0.6);
         return <g key={i}>
           <path d={`M ${X0 - 40} ${SUELO + 60} Q ${X0} ${SUELO - 4} ${X0 + 60} ${SUELO} L ${X1 - 60} ${SUELO} Q ${X1} ${SUELO - 4} ${X1 + 40} ${SUELO + 60} L ${X1 + 40} 22000 L ${X0 - 40} 22000 Z`} fill={col} />
           <rect x={X0} y={SUELO + 40} width={X1 - X0} height={22000} fill={col2} />
           {londres && Array.from({ length: Math.floor((X1 - X0) / 90) }, (_, k) => <rect key={k} x={X0 + k * 90 + ((k * 37) % 20)} y={SUELO + 14 + (k % 3) * 22} width={60} height={14} rx={6} fill="#8a6a58" />)}
-          {virginia && Array.from({ length: Math.floor((X1 - X0) / 70) }, (_, k) => <path key={k} d={`M ${X0 + k * 70} ${SUELO + 4} q 8 -26 16 0 q 8 -20 14 0`} fill="#6aa040" />)}
+          {virginia && ik < 0.5 && Array.from({ length: Math.floor((X1 - X0) / 70) }, (_, k) => <path key={k} d={`M ${X0 + k * 70} ${SUELO + 4} q 8 -26 16 0 q 8 -20 14 0`} fill="#6aa040" />)}
+          {virginia && ik > 0 && Array.from({ length: Math.floor((X1 - X0) / 130) }, (_, k) => <ellipse key={`n${k}`} cx={X0 + k * 130 + ((k * 53) % 60)} cy={SUELO + 2} rx={70 + ((k * 31) % 40)} ry={14} fill="#ffffff" opacity={ik * 0.9} />)}
         </g>;
       })}
     </svg>

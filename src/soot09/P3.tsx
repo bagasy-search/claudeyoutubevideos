@@ -13,11 +13,11 @@ import { Globo, Tacha } from "./kitj2";
 export const CAM3: K[] = [
   [213.8, 22650, 620, 0.75], [214.6, 22950, 660, 0.9], [216.0, 22900, 640, 0.8], [218.0, 21000, 600, 0.45], [225.6, 20500, 600, 0.42],
   [226.4, 20800, 600, 0.42], [231.0, 22200, 640, 0.55], [232.6, 22760, 720, 1.0], [235.4, 22800, 720, 1.0], [236.3, 23050, 650, 0.7],
-  [237.3, 23400, 640, 0.6], [238.5, 25600, 700, 0.75], [240.0, 24350, 640, 0.62], [246.8, 24350, 620, 0.6], [248.3, 24300, 700, 1.25],
+  [237.3, 23400, 640, 0.6], [238.5, 25600, 700, 0.75], [240.0, 24330, 700, 0.85], [246.8, 24350, 690, 0.88], [248.3, 24300, 700, 1.25],
   [251.2, 24350, 700, 1.2], [252.6, 22880, 800, 1.7], [258.9, 22880, 800, 1.75], [259.8, 22880, 800, 1.55], [264.9, 22900, 800, 1.6],
   [266.0, 22450, 1180, 0.85], [273.6, 22550, 1180, 0.9], [275.2, 24250, 700, 1.0], [279.9, 24350, 700, 1.05], [281.2, 25550, 720, 0.9],
   [288.6, 25600, 720, 0.95], [290.2, 25960, 560, 0.85], [295.6, 25960, 520, 0.95], [311.6, 25900, 560, 0.85], [313.4, 24250, 680, 1.0],
-  [322.6, 24250, 680, 1.05], [330.4, 23500, 640, 0.55], [338.4, 23600, 640, 0.55], [340.0, 24350, 620, 0.62], [342.8, 24350, 620, 0.65],
+  [322.6, 24250, 680, 1.05], [330.4, 22800, 720, 0.75], [338.4, 22900, 720, 0.78], [340.0, 24350, 620, 0.62], [342.8, 24350, 620, 0.65],
 ];
 const CIELO3: [number, string][] = [[213.0, "primavera"], [251.0, "verano"], [280.3, "noche"], [289.0, "verano"], [329.8, "invierno"]];
 
@@ -57,6 +57,12 @@ const MapaRio: React.FC<{ t: number }> = ({ t }) => {
   );
 };
 
+const Apaga: React.FC<{ t: number; t1: number; children: React.ReactNode; x: number; y: number }> = ({ t, t1, children, x, y }) => {
+  if (t > t1 + 0.3) return null;
+  const k = t < t1 ? 1 : 1 - (t - t1) / 0.3;
+  return <div style={{ position: "absolute", left: 0, top: 0, transformOrigin: `${x}px ${y}px`, transform: `scale(${k}, ${0.4 + 0.6 * k})`, opacity: k }}>{children}</div>;
+};
+
 export const P3: React.FC<{ t: number }> = ({ t }) => {
   if (t < 213.6 || t > 342.9) return null;
   const s0 = flotaX(0, t);
@@ -71,7 +77,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
     <AbsoluteFill>
       <Mundo t={t} cam={CAM3} cielo={CIELO3}>
         <Base t={t} />
-        {t < 251.5 && <En x={22950} w={900}><Poste t={t} t0={213.8} x={22950} y={SUELO + 10} n={3} titulo="THE ISLAND" s={1.25} /></En>}
+        {(t < 218 || (t > 231.6 && t < 238.4)) && <En x={22950} w={900}><Poste t={t} t0={213.8} x={22950} y={SUELO + 10} n={3} titulo="THE ISLAND" s={1.25} /></En>}
         {/* el galeón español que no se anima a subir */}
         {t > 220.5 && t < 226.6 && (() => { const x = interpolate(t, [220.6, 223.6, 226.4], [17900, 19300, 18200], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }); return <En x={x} w={500}><Nave x={x} y={AGUA - 120} t={t} tam={0.95} casco="#3a2a2a" bandera={false} vela={1} /><svg style={{ position: "absolute", left: x - 60, top: AGUA - 700, overflow: "visible" }} width={120} height={120}><rect x={0} y={0} width={120} height={80} fill="#f4c020" /><rect x={0} y={20} width={120} height={40} fill="#c81d2e" /></svg></En>; })()}
         {/* la soga del barco al árbol */}
@@ -92,9 +98,9 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
         {/* los que construyen el fuerte */}
         {obra && OBREROS.map((x, i) => (
           <En key={x} x={x} w={200}>
-            <Persona x={x} y={SUELO} h={230} t={t} seed={300 + i} ropa={COLONO(i)} expr={i % 3 === 0 ? "enojado" : "neutro"} flip={x > FX} bD={60 + Math.abs(Math.sin(t * 6 + i)) * 70} cD={30}
+            <Persona x={x} y={SUELO} h={300} t={t} seed={300 + i} ropa={COLONO(i)} expr={i % 3 === 0 ? "enojado" : "neutro"} flip={x > FX} bD={60 + Math.abs(Math.sin(t * 6 + i)) * 70} cD={30}
               manoD={<g transform="rotate(-90)"><rect x={-6} y={-10} width={12} height={90} fill="#8a5a2a" /><rect x={-26} y={70} width={52} height={24} rx={4} fill="#4a4a54" /></g>} />
-            <Emote t={t} t0={239.6 + i * 0.3} tipo="sudor" x={cabeza(x, SUELO, 230).x} y={cabeza(x, SUELO, 230).y} s={0.5} />
+            <Emote t={t} t0={239.6 + i * 0.3} tipo="sudor" x={cabeza(x, SUELO, 300).x} y={cabeza(x, SUELO, 300).y} s={0.6} />
           </En>
         ))}
         {/* vos en la orilla, con sed */}
@@ -161,6 +167,40 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
             </En>
           );
         })()}
+        {/* otros dos con sed: sacan agua del río con el cuenco */}
+        {sedienta && [22720, 23090].map((x, i) => (
+          <En key={`s${i}`} x={x} w={300}>
+            <Persona x={x} y={SUELO + 4} h={240} t={t} seed={340 + i} ropa={COLONO(i + 2)} flip={i === 1} expr={t > 262.4 ? "miedo" : "triste"} inclina={i ? -14 : 14} bD={100 + Math.sin(t * 3 + i) * 30} cD={60}
+              manoD={<g><path d="M -20 -6 L 20 -6 L 16 26 L -16 26 Z" fill="#a0683a" stroke="#4e2a12" strokeWidth={4} /><rect x={-18} y={-4} width={36} height={9} fill={t > 261.8 ? "#6a8a3a" : "#8ab0c8"} /></g>} />
+            {t > 262.4 && <Mosquitos t={t} x={x} y={SUELO - 260} n={8} r={90} seed={20 + i} />}
+          </En>
+        ))}
+        {/* 1998: los científicos sacan una muestra del ciprés */}
+        {t > 289.4 && t < 296.2 && [25700, 26200].map((x, i) => (
+          <En key={`c${i}`} x={x} w={300}>
+            <Persona x={x} y={SUELO} h={330} t={t} seed={360 + i} ropa={{ tunica: "#f2f4f8", tunica2: "#c4c8d6", cinto: "#3a3a44", piel: i ? "#c98a62" : "#f2b48a", piel2: i ? "#a06a46" : "#d98d66", pelo: i ? "#1d1410" : "#a0602c" }} gorro="gorra" flip={i === 1} expr={t > 293.4 ? "sorpresa" : "neutro"} habla={t > 293.4 && i === 1} aparece={289.6 + i * 0.2}
+              bD={i === 0 ? 95 : 0} cD={i === 0 ? 10 : 0} manoD={i === 0 ? <g><rect x={-6} y={-8} width={170} height={16} rx={6} fill="#8a94a4" stroke="#3a3a44" strokeWidth={4} /><rect x={-30} y={-24} width={30} height={48} rx={6} fill="#c81d2e" /></g> : undefined} />
+          </En>
+        ))}
+        {t > 291.2 && t < 296.2 && <En x={25950} w={300}><svg style={{ position: "absolute", left: 25880, top: SUELO - 330, overflow: "visible" }} width={10} height={10}><rect x={0} y={0} width={140 * prog(t, 291.3, 292.6)} height={22} rx={10} fill="#d8a060" stroke="#6a3a1a" strokeWidth={5} />{Array.from({ length: 6 }, (_, k) => <line key={k} x1={14 + k * 20} y1={2} x2={14 + k * 20} y2={20} stroke={k === 2 || k === 3 ? C.rojo : "#6a3a1a"} strokeWidth={k === 2 || k === 3 ? 3 : 5} opacity={prog(t, 291.3 + k * 0.2, 291.5 + k * 0.2)} />)}</svg></En>}
+        {/* "seasoning": los recién llegados enfermos frente al fuerte, y vos */}
+        {t > 313.3 && t < 330.2 && [23780, 23960, 24720, 24900].map((x, i) => (
+          <En key={`e${i}`} x={x} w={250}>
+            {i % 2 === 0
+              ? <div style={{ position: "absolute", left: 0, top: 0, transformOrigin: `${x}px ${SUELO}px`, transform: "rotate(-84deg) translateY(30px)" }}><Persona x={x} y={SUELO} h={250} t={t} seed={370 + i} ropa={COLONO(i)} expr="dormido" flaco={0.4} /></div>
+              : <Persona x={x} y={SUELO} h={260} t={t} seed={370 + i} ropa={COLONO(i)} expr={t > 321.8 ? "orgullo" : "triste"} flaco={0.4} flip={x > FX} inclina={t > 321.8 ? 0 : 10} />}
+            {i % 2 === 0 && <Emote t={t} t0={314 + i * 0.3} tipo="sudor" x={x - 60} y={SUELO - 140} s={0.5} />}
+          </En>
+        ))}
+        {t > 313.3 && t < 330.2 && <En x={24250} w={300}><Persona x={24250} y={SUELO} h={330} t={t} seed={8} ropa={TOM} gorro="sombrero" expr={t > 321.8 && t < 323 ? "sorpresa" : t > 325.7 ? "miedo" : "triste"} mira={t > 322.7 ? 0 : -0.4} miraY={t > 322.7 ? -0.6 : 0} /></En>}
+        {/* enero de 1608: los que quedan, en la orilla, mirando llegar el barco */}
+        {t > 330.2 && t < 342.9 && [23020, 23140, 23260, 23400, 23540, 23680].map((x, i) => (
+          <En key={`o${i}`} x={x} w={200}>
+            <Apaga t={t} t1={i < 4 ? 336.0 + i * 0.35 : 1e9} x={x} y={SUELO}>
+              <Persona x={x} y={SUELO} h={260} t={t} seed={380 + i} ropa={i === 4 ? TOM : COLONO(i)} gorro={i === 4 ? "sombrero" : undefined} flaco={0.75} flip expr={i % 2 ? "triste" : "miedo"} bD={i % 2 && t > 334 ? 150 + Math.sin(t * 8 + i) * 20 : 0} cD={20} />
+            </Apaga>
+          </En>
+        ))}
         {/* la sequía: tierra rajada */}
         {t > 302.4 && t < 330 && (
           <svg style={{ position: "absolute", left: 22800, top: SUELO + 2, overflow: "visible", opacity: prog(t, 302.4, 304.6) }} width={10} height={10}>
@@ -176,9 +216,9 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
       {t < 218 && <Trampas t={t} t0={213.9} n={3} y={960} />}
       {t > 217.9 && t < 226.2 && (
         <div style={{ position: "absolute", left: 0, top: 0 }}>
-          <Pergamino x={960} y={330} w={760} abre={prog(t, 218.0, 218.6) * (1 - prog(t, 225.7, 226.2))} lineas={0} titulo="COMPANY INSTRUCTIONS" />
-          {t > 219.98 && <div style={{ position: "absolute", left: 960, top: 300, transform: `translate(-50%,0) scale(${ent(t, 220.0) * (1 - prog(t, 225.7, 226.2))})`, fontFamily, fontWeight: 700, fontSize: 40, color: C.noche, whiteSpace: "nowrap" }}>1. EASY TO DEFEND</div>}
-          {t > 222.62 && <div style={{ position: "absolute", left: 960, top: 360, transform: `translate(-50%,0) scale(${ent(t, 222.62) * (1 - prog(t, 225.7, 226.2))})`, fontFamily, fontWeight: 700, fontSize: 40, color: C.noche, whiteSpace: "nowrap" }}>2. FAR UPRIVER</div>}
+          <Pergamino x={960} y={440} w={760} abre={prog(t, 218.0, 218.6) * (1 - prog(t, 225.7, 226.2))} lineas={0} titulo="COMPANY INSTRUCTIONS" />
+          {t > 219.98 && <div style={{ position: "absolute", left: 960, top: 400, transform: `translate(-50%,0) scale(${ent(t, 220.0) * (1 - prog(t, 225.7, 226.2))})`, fontFamily, fontWeight: 700, fontSize: 64, color: C.noche, whiteSpace: "nowrap" }}>1. EASY TO DEFEND</div>}
+          {t > 222.62 && <div style={{ position: "absolute", left: 960, top: 490, transform: `translate(-50%,0) scale(${ent(t, 222.62) * (1 - prog(t, 225.7, 226.2))})`, fontFamily, fontWeight: 700, fontSize: 64, color: C.noche, whiteSpace: "nowrap" }}>2. FAR UPRIVER</div>}
         </div>
       )}
       <Chip t={t} t0={224.1} t1={226.3} text="SPANISH WARSHIP" color={C.rojo} x={420} y={930} centro size={52} />

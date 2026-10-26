@@ -12,11 +12,11 @@ import { Globo, Tacha } from "./kitj2";
 // la sequía también vacía sus campos; Smith capturado; la versión de Smith (Pocahontas) en un libro de cuentos con signo
 // de pregunta; la comida que llega al fuerte; la relación que sube y baja; otoño de 1609.
 export const CAM5: K[] = [
-  [439.4, 24100, 620, 0.55], [440.6, 28200, 660, 0.85], [441.8, 28200, 660, 0.85], [443.4, 26400, 600, 0.3], [451.6, 26600, 600, 0.3],
+  [439.4, 24100, 620, 0.55], [440.6, 28200, 660, 0.85], [441.8, 28200, 660, 0.85], [443.4, 27950, 690, 0.72], [451.6, 28150, 690, 0.8],
   [452.6, 28200, 720, 1.3], [457.0, 28200, 720, 1.35], [458.2, 24350, 680, 0.85], [461.9, 24350, 680, 0.9], [463.2, 26200, 700, 0.95],
   [471.4, 26300, 700, 0.95], [472.4, 26300, 700, 0.9], [477.2, 29500, 790, 1.15], [479.9, 29500, 790, 1.2], [481.0, 28800, 720, 1.05],
   [487.4, 28750, 720, 1.1], [488.6, 28200, 700, 1.25], [494.2, 28200, 700, 1.3], [495.4, 25600, 680, 0.85], [499.2, 26700, 680, 0.95],
-  [503.4, 28000, 680, 0.85], [504.6, 28150, 700, 0.95], [522.3, 28150, 700, 0.95], [524.6, 26800, 640, 0.6], [534.8, 25300, 640, 0.6],
+  [503.4, 28000, 680, 0.85], [504.6, 28150, 700, 0.95], [522.3, 28150, 700, 0.95], [524.6, 26950, 700, 0.95], [533.6, 25450, 700, 0.95], [534.8, 25300, 660, 0.8],
   [536.4, 24800, 620, 0.5], [545.9, 25200, 620, 0.48], [549.8, 24600, 600, 0.36],
 ];
 const CIELO5: [number, string][] = [[439.0, "verano"], [457.0, "primavera"], [471.7, "verano"], [494.4, "invierno"], [522.4, "primavera"], [546.0, "tormenta"]];
@@ -28,7 +28,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
   if (t < 439.2 || t > 550.8) return null;
   const jefe = 28200;
   // Smith capturado: camina río arriba, lo rodean y lo llevan
-  const smX = interpolate(t, [495.4, 498.9, 500.2, 503.4], [25200, 26650, 26650, 27980], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const smX = interpolate(t, [494.6, 498.9, 500.2, 503.4], [25350, 26650, 26650, 27980], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const capt = t > 499.0 && t < 504.6;
   const caravana = t > 524.6 && t < 535.2;
   return (
@@ -65,8 +65,9 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
         {/* la canasta que se va del plato de una familia */}
         {t > 480.2 && t < 487.6 && (() => { const u = prog(t, 481.0, 483.6); return <Canasta x={28950 - u * 900} y={SUELO - 140 - Math.sin(u * Math.PI) * 240} s={0.45} />; })()}
         {/* Smith río arriba, en invierno, capturado */}
-        {t > 495.0 && t < 504.6 && (
+        {t > 494.4 && t < 504.6 && (
           <En x={smX} w={500}>
+            {[1, 2].map((k) => { const huye = t > 499.3; const x = huye ? smX - 120 * k - (t - 499.3) * 700 : smX - 130 * k; return <Persona key={`c${k}`} x={x} y={SUELO} h={240} t={t} seed={585 + k} ropa={COLONO(k)} flaco={0.5} flip={huye} camina={t < 498.9 || huye ? 1.6 : 0} expr={huye ? "miedo" : "triste"} manoD={<ellipse cx={0} cy={20} rx={30} ry={22} fill="#c8b08a" stroke="#6a4a2a" strokeWidth={4} />} />; })}
             <Persona x={smX} y={SUELO} h={260} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" gorro="morion" camina={(t < 498.9 || (t > 500.2 && t < 503.4)) ? 1.4 : 0} expr={capt ? "miedo" : "neutro"} />
             {capt && [-170, -90, 90, 170].map((o, i) => <Persona key={o} x={smX + o} y={SUELO} h={280} t={t} seed={580 + i} ropa={POW(i)} plumaPelo flip={o > 0} camina={t > 500.2 && t < 503.4 ? 1.4 : 0} aparece={499.1 + i * 0.08} expr="enojado" />)}
             {t > 499.1 && t < 500.4 && <Emote t={t} t0={499.13} t1={500.4} tipo="susto" x={cabeza(smX, SUELO, 260).x} y={cabeza(smX, SUELO, 260).y} s={0.6} />}
@@ -80,7 +81,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
             <En key={i} x={x} w={250}>
               <Persona x={x} y={SUELO} h={nina ? 210 : 280} t={t} seed={nina ? 600 : 590 + i} ropa={POW(i)} plumaPelo flip camina={1.4} expr="feliz" bD={110} cD={60} />
               <Canasta x={x - 30} y={SUELO - (nina ? 230 : 300)} s={nina ? 0.26 : 0.32} />
-              {nina && t > 526.4 && <div style={{ position: "absolute", left: x - 90, top: SUELO - 330, width: 180, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 26, color: "#fff", background: C.rosa, borderRadius: 10 }}>POCAHONTAS</div>}
+              {nina && t > 526.4 && <div style={{ position: "absolute", left: x - 140, top: SUELO - 360, width: 280, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 40, color: "#fff", background: C.rosa, borderRadius: 12, padding: "2px 0" }}>POCAHONTAS</div>}
             </En>
           );
         })}
@@ -91,40 +92,68 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
       {/* pantalla */}
       {t < 444 && <Trampas t={t} t0={439.5} n={5} y={960} />}
       {t > 442.4 && t < 443.6 && <Grande t={t} t0={442.38} text="NOT ALONE" y={200} size={130} color={C.ambar} />}
-      {/* Tsenacommacah */}
-      {t > 444.5 && t < 451.8 && (
-        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, opacity: ent(t, 444.6) * (1 - prog(t, 451.3, 451.8)) }}>
-          <svg width={1920} height={1080} style={{ position: "absolute" }}>
-            <ellipse cx={960} cy={560} rx={760 * ent(t, 445.0)} ry={330 * ent(t, 445.0)} fill="rgba(200,149,90,.32)" stroke="#c8955a" strokeWidth={10} strokeDasharray="30 16" />
-            {Array.from({ length: 30 }, (_, i) => { const a = i * 2.4, r = 120 + ((i * 97) % 520); const on = t > 447.8 + i * 0.03; return <g key={i} opacity={on ? 1 : 0} transform={`translate(${960 + Math.cos(a) * r} ${560 + Math.sin(a) * r * 0.42}) scale(${on ? ent(t, 447.8 + i * 0.03) : 0})`}><circle r={16} fill="#8a5a2e" stroke="#fff" strokeWidth={5} /></g>; })}
-          </svg>
-          <Chip t={t} t0={445.06} t1={451.8} text="TSENACOMMACAH" color="#8a5a2e" x={960} y={140} centro size={64} />
-          <Chip t={t} t0={448.06} t1={451.8} text="~30 PEOPLES" color={C.tierra} x={660} y={930} centro size={52} />
-          <Chip t={t} t0={449.84} t1={451.8} text="~15,000 PEOPLE" color={C.violeta} x={1260} y={930} centro size={52} />
-        </div>
-      )}
+      {/* Tsenacommacah: mapa de la tierra Powhatan con sus ~30 pueblos */}
+      {t > 444.5 && t < 451.8 && (() => {
+        const e = ent(t, 444.6) * (1 - prog(t, 451.3, 451.8));
+        const rios = ["M 80 470 Q 300 420 520 330 T 980 160", "M 60 300 Q 260 280 420 220 T 760 90", "M 120 560 Q 420 540 640 470 T 1060 380"];
+        return (
+          <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }}>
+            <div style={{ position: "absolute", inset: 0, background: "rgba(27,18,64,.5)", opacity: e }} />
+            <div style={{ position: "absolute", left: 380, top: 220, width: 1160, height: 640, transform: `scale(${e}) rotate(-1.5deg)`, background: "#f1dfb6", border: "12px solid #6b3a1f", borderRadius: 26, overflow: "hidden", boxShadow: "0 16px 0 rgba(20,10,40,.4)" }}>
+              <svg width={1136} height={616} style={{ position: "absolute", left: 0, top: 0 }}>
+                <path d="M 0 0 L 160 0 Q 120 200 180 340 Q 120 480 160 616 L 0 616 Z" fill="#8ab8d8" />
+                {rios.map((d, i) => <path key={i} d={d} stroke="#7ab0d8" strokeWidth={22} fill="none" strokeLinecap="round" strokeDasharray="1400" strokeDashoffset={1400 * (1 - prog(t, 445.0 + i * 0.3, 446.6 + i * 0.3))} />)}
+                <path d="M 230 80 Q 700 10 1060 120 Q 1110 380 980 560 Q 600 610 230 540 Q 190 300 230 80 Z" fill="rgba(200,149,90,.25)" stroke="#a0683a" strokeWidth={8} strokeDasharray="26 14" opacity={prog(t, 446.4, 447.2)} />
+                {Array.from({ length: 30 }, (_, i) => { const x = 270 + ((i * 271) % 760), y = 120 + ((i * 137) % 400); const on = prog(t, 447.8 + i * 0.05, 448.1 + i * 0.05); return <g key={i} transform={`translate(${x} ${y}) scale(${on})`}><path d="M -22 10 L -22 -4 Q 0 -26 22 -4 L 22 10 Z" fill="#b08a5a" stroke="#5a3a1a" strokeWidth={4} /><rect x={-6} y={0} width={12} height={10} fill="#3a2416" /></g>; })}
+                <g transform={`translate(840 250) scale(${prog(t, 449.6, 450.0)})`}><circle r={30} fill={C.rojo} stroke="#fff" strokeWidth={6} /><path d="M -12 -2 L 0 -18 L 12 -2 L 8 14 L -8 14 Z" fill="#ffd34a" /></g>
+                <text x={250} y={600} fontFamily={fontFamily} fontWeight={700} fontSize={40} fill="#2a4a6a">CHESAPEAKE BAY</text>
+              </svg>
+            </div>
+            <Chip t={t} t0={445.06} t1={451.8} text="TSENACOMMACAH" color="#8a5a2e" x={960} y={140} centro size={64} />
+            <Chip t={t} t0={448.06} t1={451.8} text="~30 PEOPLES" color={C.tierra} x={660} y={950} centro size={54} />
+            <Chip t={t} t0={449.84} t1={451.8} text="~15,000 PEOPLE" color={C.violeta} x={1260} y={950} centro size={54} />
+          </div>
+        );
+      })()}
       <Chip t={t} t0={453.17} t1={455.3} text="WAHUNSENACAH" color="#8a5a2e" x={960} y={140} centro size={64} />
       <Chip t={t} t0={455.75} t1={457.0} text={'"POWHATAN"'} color={C.rojo} x={960} y={140} centro size={64} />
       <Chip t={t} t0={457.81} t1={459.4} text="THE UNCOMFORTABLE TRUTH" color={C.violeta} x={960} y={140} centro size={56} />
       <Chip t={t} t0={460.07} t1={462.0} text="NOT FEEDING THEMSELVES" color={C.rojo} x={960} y={930} centro size={56} />
       <Chip t={t} t0={463.37} t1={471.6} text="TRADE" color={C.lima} tinta={C.noche} x={760} y={140} centro size={56} />
       <Chip t={t} t0={464.75} t1={471.6} text="OR TAKE" color={C.rojo} x={1080} y={140} centro size={56} />
-      <Chip t={t} t0={467.09} t1={471.6} text="COPPER" color={C.naranja} x={300} y={300} size={44} />
-      <Chip t={t} t0={467.75} t1={471.6} text="BEADS" color={C.teal} tinta={C.noche} x={300} y={375} size={44} />
-      <Chip t={t} t0={468.41} t1={471.6} text="IRON TOOLS" color="#6a7484" x={300} y={450} size={44} />
-      <Chip t={t} t0={469.51} t1={471.6} text="HATCHETS" color="#4a4a54" x={300} y={525} size={44} />
+      <Chip t={t} t0={467.09} t1={471.6} text="COPPER" color={C.naranja} x={300} y={290} size={44} />
+      <Chip t={t} t0={467.75} t1={471.6} text="BEADS" color={C.teal} tinta={C.noche} x={300} y={378} size={44} />
+      <Chip t={t} t0={468.41} t1={471.6} text="IRON TOOLS" color="#6a7484" x={300} y={466} size={44} />
+      <Chip t={t} t0={469.51} t1={471.6} text="HATCHETS" color="#4a4a54" x={300} y={554} size={44} />
       <Chip t={t} t0={470.31} t1={471.6} text="FOR FOOD" color={C.oro} tinta={C.noche} x={1400} y={300} size={56} />
-      {t > 471.6 && t < 477.2 && (
-        <div style={{ position: "absolute", left: 0, top: 0, transform: `scale(${1 - prog(t, 476.7, 477.2)})`, transformOrigin: "960px 520px" }}>
-          <Anillos t={t} t0={471.8} x={960} y={500} r={260} tMarca={472.3} />
-        </div>
-      )}
+      {/* la sequía pega a todos: los dos maizales se secan bajo el mismo sol */}
+      {t > 471.6 && t < 477.2 && (() => {
+        const e = ent(t, 471.7) * (1 - prog(t, 476.7, 477.2));
+        const seca = prog(t, 472.6, 475.2);
+        const mz = (a: string, b: string, u: number) => { const p = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)); const A = p(a), B = p(b); return "#" + A.map((v, i) => Math.round(v + (B[i] - v) * u).toString(16).padStart(2, "0")).join(""); };
+        const planta = (x: number, k: number) => { const u = Math.max(0, Math.min(1, seca * 1.3 - k * 0.06)); const cae = u * 50; const col = mz("#3a9a3a", "#a08a4a", u); return <g key={x} transform={`translate(${x} 0)`}><path d={`M 0 0 Q ${cae * 0.3} -90 ${cae} ${-170 + cae * 1.4}`} stroke={col} strokeWidth={12} fill="none" strokeLinecap="round" /><path d={`M 0 -60 q -50 -10 -70 ${20 + cae}`} stroke={col} strokeWidth={10} fill="none" /><path d={`M 0 -100 q 50 -16 70 ${10 + cae}`} stroke={col} strokeWidth={10} fill="none" />{u < 0.6 && <ellipse cx={cae * 0.5 + 10} cy={-120 + cae} rx={14} ry={30} fill="#f0c43a" opacity={1 - u / 0.6} />}</g>; };
+        return (
+          <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }}>
+            <div style={{ position: "absolute", inset: 0, background: "rgba(60,30,10,.45)", opacity: e }} />
+            <svg style={{ position: "absolute", left: 0, top: 0, transform: `scale(${e})`, transformOrigin: "960px 540px" }} width={1920} height={1080}>
+              <g transform="translate(960 230)">{Array.from({ length: 12 }, (_, i) => <path key={i} transform={`rotate(${i * 30 + t * 20})`} d="M 0 -120 L 14 -170 L -14 -170 Z" fill="#ffd34a" />)}<circle r={95} fill="#ffb020" stroke="#fff3a0" strokeWidth={10} /></g>
+              {[0, 1].map((k) => <g key={k} transform={`translate(${k ? 1010 : 250} 400)`}>
+                <rect width={660} height={420} rx={26} fill="#fff3d6" stroke="#2a1408" strokeWidth={8} />
+                <text x={330} y={66} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={50} fill={k ? "#8a5a2e" : "#5a3418"}>{k ? "POWHATAN FIELDS" : "ENGLISH FIELDS"}</text>
+                <rect x={30} y={330} width={600} height={60} rx={12} fill={mz("#6a4a2a", "#c8a868", seca)} />
+                {Array.from({ length: 30 }, (_, i) => <path key={i} d={`M ${40 + i * 20} 340 l 12 ${12 + (i % 3) * 6}`} stroke="#5a3a1a" strokeWidth={4} opacity={seca} />)}
+                <g transform="translate(0 330)">{[100, 210, 320, 430, 540].map((x, i) => planta(x, i + k))}</g>
+              </g>)}
+            </svg>
+          </div>
+        );
+      })()}
       <Chip t={t} t0={474.61} t1={477.1} text="HITTING EVERYONE" color={C.rojo} x={960} y={930} centro size={56} />
       <Chip t={t} t0={478.69} t1={480.1} text="THEIR FIELDS: LESS" color="#a08a4a" x={960} y={140} centro size={56} />
       <Chip t={t} t0={481.07} t1={487.5} text="EVERY BASKET THEY GIVE" color={C.oro} tinta={C.noche} x={960} y={140} centro size={54} />
       <Chip t={t} t0={482.03} t1={483.6} text="STRANGE" color="#6a6a7a" x={330} y={300} size={44} />
-      <Chip t={t} t0={482.75} t1={483.6} text="HUNGRY" color={C.naranja} x={330} y={375} size={44} />
-      <Chip t={t} t0={483.33} t1={484.5} text="DEMANDING" color={C.rojo} x={330} y={450} size={44} />
+      <Chip t={t} t0={482.75} t1={483.6} text="HUNGRY" color={C.naranja} x={330} y={385} size={44} />
+      <Chip t={t} t0={483.33} t1={484.5} text="DEMANDING" color={C.rojo} x={330} y={470} size={44} />
       {t > 485.2 && t < 487.6 && <Grande t={t} t0={485.47} text="= THEIR KIDS DON'T EAT" y={930} size={86} color="#ff5a6a" />}
       {t > 491.3 && t < 494.5 && <Globo t={t} t0={491.31} t1={494.4} x={1260} y={260} text="WHY KEEP FEEDING THEM?" size={44} cola="izq" />}
       <Chip t={t} t0={492.73} t1={494.4} text="THEY ARE TAKING YOUR LAND" color={C.rojo} x={960} y={930} centro size={54} />
@@ -151,7 +180,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
           <Chip t={t} t0={507.61} t1={511.0} text="ABOUT TO BE EXECUTED" color={C.rojo} x={960} y={930} centro size={52} />
           <Chip t={t} t0={511.69} t1={515.3} text="POCAHONTAS · ABOUT 11" color={C.rosa} x={960} y={930} centro size={52} />
           {[["REALLY HAPPENED?", 516.93], ["A CEREMONY HE MISUNDERSTOOD?", 519.43], ["MADE UP TO SELL BOOKS?", 521.31]].map(([s, t0], i) => (
-            <Chip key={i} t={t} t0={t0 as number} t1={522.4} text={s as string} color={[C.teal, C.violeta, C.naranja][i]} tinta={i === 0 ? C.noche : undefined} x={960} y={895 + i * 62} centro size={40} />
+            <Chip key={i} t={t} t0={t0 as number} t1={522.4} text={s as string} color={[C.teal, C.violeta, C.naranja][i]} tinta={i === 0 ? C.noche : undefined} x={960} y={872 + i * 78} centro size={50} />
           ))}
         </div>
       )}

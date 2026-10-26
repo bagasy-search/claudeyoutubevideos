@@ -5,19 +5,20 @@ import { C, ent, prog, Chip, Grande, fontFamily, Emote, cabeza } from "./kit";
 import { Trampas } from "./kit2";
 import { Mundo, K, En, SUELO, AGUA } from "./mundo";
 import { Base, FX } from "./base";
-import { GENT, COLONO, POW, Poste, Bicho, Olla, Canasta, Tablero, Nieve, Pez, Tinte } from "./kitj";
+import { GENT, COLONO, POW, Poste, Bicho, Olla, Canasta, Tablero, Nieve, Pez, Tinte, Bote } from "./kitj";
 import { Tacha, Lupa } from "./kitj2";
+import { Fogata } from "./P0";
 
 // TRAMPA 7 · EL TIEMPO DEL HAMBRE (649,7-741,1 s). Percy presidente; Powhatan corta el comercio, emboscadas y sitio;
 // el menú que se va tachando (caballos → ratones → botas → almidón); los que se van; lo que no se cuenta;
 // Jane (2012); el río sin peces; de 500 a 60. Sin nada explícito: todo se dice con ausencias.
 export const CAM7: K[] = [
   [649.7, 24350, 620, 0.62], [650.6, 24650, 650, 0.95], [651.9, 24650, 650, 0.95], [652.7, 24350, 680, 1.05], [656.6, 24350, 680, 1.05],
-  [657.5, 28200, 640, 0.75], [659.0, 28200, 640, 0.75], [659.9, 26100, 640, 0.6], [663.2, 26300, 640, 0.6], [664.0, 24800, 620, 0.55],
-  [669.7, 25000, 610, 0.45], [673.4, 25000, 610, 0.45], [674.2, 24350, 680, 0.9], [687.5, 24400, 680, 0.95], [695.4, 24350, 640, 0.7],
-  [696.3, 25900, 620, 0.4], [702.5, 26100, 620, 0.42], [703.4, 24350, 600, 0.3], [707.9, 24350, 600, 0.24], [708.6, 24350, 780, 1.1],
-  [719.4, 24380, 780, 1.15], [720.3, 21900, 800, 0.85], [727.4, 22050, 800, 0.85], [728.2, 23400, 680, 0.6], [731.0, 23500, 680, 0.6],
-  [731.9, 24350, 610, 0.45], [741.1, 24350, 610, 0.48],
+  [657.5, 28200, 640, 0.75], [659.0, 28200, 640, 0.75], [659.9, 26150, 680, 0.82], [663.2, 26350, 680, 0.85], [664.0, 24900, 670, 0.72],
+  [669.7, 25150, 660, 0.66], [673.4, 25100, 660, 0.68], [674.2, 24350, 680, 0.9], [687.5, 24400, 680, 0.95], [695.4, 24350, 640, 0.7],
+  [696.3, 25500, 680, 0.66], [702.5, 26200, 680, 0.7], [703.4, 24350, 740, 1.0], [707.9, 24350, 740, 1.08], [708.6, 24350, 780, 1.1],
+  [719.4, 24380, 780, 1.15], [720.3, 22000, 780, 0.95], [727.4, 22150, 780, 0.98], [728.2, 23400, 680, 0.6], [731.0, 23500, 680, 0.6],
+  [731.9, 24350, 700, 0.85], [741.1, 24350, 700, 0.9],
 ];
 const CIELO7: [number, string][] = [[649, "invierno"], [652.3, "hambre"], [702.7, "noche"], [708.3, "primavera"], [719.7, "verano"], [725.7, "invierno"], [731.2, "primavera"]];
 
@@ -107,6 +108,12 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
             {t > 699.4 && [0, 1].map((i) => { const x = 25800 + i * 260; return <En key={i} x={x} w={200}><div style={{ position: "absolute", left: 0, top: 0, opacity: 1 - prog(t, 701.4 + i * 0.3, 702.2 + i * 0.3) }}><Persona x={x} y={SUELO} h={210} t={t} seed={795 + i} ropa={COLONO(i + 2)} inclina={30} bD={160 + Math.sin(t * 8 + i) * 20} flaco={0.35} expr="triste" aparece={699.6 + i * 0.2} /></div></En>; })}
           </>
         )}
+        {t > 702.9 && t < 708.4 && (
+          <En x={FX} w={900}>
+            <Fogata t={t} x={FX} y={SUELO + 8} />
+            {[-330, -200, 190, 320, -60].map((dx, i) => <Persona key={i} x={FX + dx} y={SUELO} h={i === 4 ? 200 : 250} t={t} seed={830 + i} ropa={i % 2 ? GENT(i) : COLONO(i)} flaco={0.5} inclina={dx < 0 ? 14 : -14} flip={dx > 0} expr={i === 4 ? "dormido" : i % 2 ? "miedo" : "triste"} mira={dx < 0 ? 0.6 : -0.6} />)}
+          </En>
+        )}
         {/* 2012: la excavación */}
         {t > 708.2 && t < 719.8 && (
           <En x={FX} w={900}>
@@ -127,6 +134,20 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
           const x = base + ((t * 60 + i * 90) % 300) - huye * 1400;
           return <En key={i} x={x} w={300}><Pez t={t} x={x} y={AGUA + 70 + (i % 3) * 40} s={i === 3 ? 2.0 : 1.1} esturion={i === 3} flip seed={i} /></En>;
         })}
+        {t > 719.5 && t < 728.2 && (
+          <En x={22150} w={700}>
+            <Bote x={22150} y={AGUA - 20} t={t} s={1.4} />
+            <Persona x={22150} y={AGUA - 30} h={240} t={t} seed={840} ropa={COLONO(1)} flaco={t > 725.7 ? 0.5 : 0.2} expr={t > 725.9 ? "triste" : t > 721.9 ? "sorpresa" : "neutro"} mira={0.4} manoD={<line x1={0} y1={0} x2={260} y2={-260} stroke="#6a4a2a" strokeWidth={8} />} />
+            <svg style={{ position: "absolute", left: 22150, top: AGUA - 270, overflow: "visible" }} width={10} height={10}>
+              <path d={`M 210 -20 Q 280 ${120 + Math.sin(t * 2) * 10} 300 300`} stroke="#ddd" strokeWidth={3} fill="none" />
+            </svg>
+          </En>
+        )}
+        {t > 731.5 && (
+          <En x={FX} w={1400}>
+            {Array.from({ length: 6 }, (_, i) => { const x = FX - 620 + i * 250 + (i > 2 ? 0 : -40); const vivo = t < 734.2 + i * 0.25 || i % 3 === 0; return <div key={i} style={{ position: "absolute", left: 0, top: 0, opacity: vivo ? 1 : 1 - prog(t, 734.2 + i * 0.25, 734.9 + i * 0.25) }}><Persona x={x} y={SUELO} h={260} t={t} seed={850 + i} ropa={i % 2 ? GENT(i) : COLONO(i)} flaco={0.55} expr={vivo ? "triste" : "miedo"} flip={i > 2} aparece={731.6 + i * 0.08} /></div>; })}
+          </En>
+        )}
         {/* las ostras, afuera de las murallas */}
         {t > 727.6 && t < 731.6 && (
           <En x={23300} w={800}>
@@ -162,8 +183,8 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
           <div style={{ fontSize: 64, color: C.noche, lineHeight: 1.05 }}>THEY ATE "ANYTHING AT ALL"</div>
         </div>
       )}
-      <Chip t={t} t0={690.45} t1={694.9} text="OTHER ACCOUNTS" color="#6a6a7a" x={300} y={140} size={44} />
-      {t > 693.8 && t < 695.6 && <Grande t={t} t0={694.81} text="PASTE" x={560} y={360} size={110} color={C.crema} />}
+      <Chip t={t} t0={690.45} t1={694.9} text="OTHER ACCOUNTS" color="#6a6a7a" x={300} y={140} size={56} />
+      {t > 693.8 && t < 695.6 && <Grande t={t} t0={694.81} text="PASTE" x={560} y={420} size={150} color={C.crema} />}
       <Chip t={t} t0={695.67} t1={699.4} text="RUN TO THE POWHATAN" color={C.tierra} x={960} y={140} centro size={54} />
       <Chip t={t} t0={698.33} t1={699.4} text="HOPING FOR MERCY" color={C.violeta} x={960} y={930} centro size={52} />
       <Chip t={t} t0={699.55} t1={702.6} text="DIG FOR ROOTS" color="#6a4a2a" x={960} y={140} centro size={54} />
@@ -197,6 +218,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={728.37} t1={731.1} text="OYSTERS" color="#8a8a94" x={960} y={140} centro size={56} />
       <Chip t={t} t0={729.77} t1={731.1} text="= OUTSIDE THE WALLS" color={C.rojo} x={960} y={930} centro size={52} />
       <Chip t={t} t0={731.31} t1={735.9} text="SPRING 1610" color={C.lima} tinta={C.noche} x={960} y={140} centro size={60} />
+      {t > 731.4 && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, pointerEvents: "none" }} />}
       {t > 732.6 && t < 739.4 && <Tablero t={t} valor={Math.round(interpolate(t, [733.7, 735.8], [500, 60], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }))} titulo="ALIVE" rojo={t > 735.6} x={960} y={430} s={2.2} />}
       {t > 739.5 && <Grande t={t} t0={739.67} text="THE STARVING TIME" y={420} size={140} color={C.ambar} />}
     </AbsoluteFill>

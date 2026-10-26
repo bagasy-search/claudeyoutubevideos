@@ -12,11 +12,11 @@ import { Lupa, Tacha } from "./kitj2";
 // tirando todo y cortando el palo mayor, Somers 3 días al timón, el arrecife de Bermudas; el resto llega a Jamestown
 // sin líderes, con ratas; Smith y la pólvora; se va y nunca vuelve.
 export const CAM6: K[] = [
-  [550.7, 24600, 600, 0.36], [551.7, 12600, 640, 0.85], [552.8, 12600, 640, 0.85], [553.7, 3300, 620, 0.85], [556.5, 3300, 620, 0.9],
+  [550.7, 24600, 600, 0.36], [551.7, 12600, 640, 0.85], [552.8, 12600, 640, 0.85], [553.7, 3300, 640, 1.3], [556.5, 3300, 640, 1.36],
   [557.6, 7100, 600, 0.4], [561.6, 7100, 600, 0.42], [562.4, 5900, 640, 0.95], [568.8, 6050, 640, 0.95], [569.6, 6500, 600, 0.6],
-  [571.4, 10700, 600, 0.45], [574.9, 11500, 600, 0.5], [578.0, 11700, 640, 0.6], [583.1, 11850, 680, 0.95], [588.5, 11950, 660, 0.9],
+  [571.4, 10700, 600, 0.45], [574.9, 11550, 640, 0.75], [578.0, 11750, 660, 0.8], [583.1, 11850, 680, 0.95], [588.5, 11950, 660, 0.9],
   [589.4, 11840, 700, 1.6], [592.3, 12020, 700, 1.55], [593.2, 12500, 640, 0.6], [597.2, 12900, 650, 0.62], [598.6, 13350, 680, 0.75],
-  [607.6, 13400, 640, 0.55], [608.4, 21800, 620, 0.5], [611.2, 22300, 620, 0.55], [612.3, 23500, 680, 0.75], [621.4, 23700, 680, 0.8],
+  [607.6, 13400, 640, 0.55], [608.4, 21800, 620, 0.5], [611.2, 22300, 620, 0.55], [612.3, 23620, 700, 1.0], [621.4, 23720, 700, 1.02],
   [622.4, 24580, 720, 1.15], [627.9, 24600, 720, 1.2], [628.7, 22250, 760, 1.25], [637.8, 22250, 790, 1.25], [638.9, 21700, 640, 0.6],
   [643.0, 20300, 620, 0.5], [643.8, 24350, 620, 0.6], [649.6, 24350, 620, 0.62],
 ];
@@ -68,7 +68,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
         {/* Londres: la compañía y su gran plan */}
         {t > 552.9 && t < 557.2 && (
           <>
-            {[3150, 3450].map((x, i) => <En key={x} x={x} w={250}><Persona x={x} y={SUELO} h={360} t={t} seed={120 + i} ropa={GENT(i)} gorro="copa" gola flip={i === 1} expr="orgullo" /></En>)}
+            {[3150, 3450].map((x, i) => <En key={x} x={x} w={250}><Persona x={x} y={SUELO} h={360} t={t} seed={120 + i} ropa={GENT(i)} gorro="copa" gola flip={i === 1} expr={i ? "enojado" : "neutro"} habla={i === 0} bD={i === 0 ? 120 : undefined} cD={i === 0 ? 20 : undefined} /></En>)}
             <Pergamino x={3300} y={560} w={340} abre={prog(t, 553.9, 554.5) * 0.55} lineas={5} titulo="FIX VIRGINIA" />
           </>
         )}
@@ -80,7 +80,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
             {[6280, 6420].map((x, i) => (
               <En key={x} x={x} w={250}>
                 <Persona x={x} y={SUELO - 30} h={300} t={t} seed={660 + i} ropa={GENT(i + 2)} gola gorro={i ? "sombrero" : "morion"} barba={i ? "#d8d0c8" : "#5a3a2a"} expr="orgullo" flip={i === 1} aparece={565.3 + i * 0.9} />
-                {t > 565.3 + i * 0.9 && <div style={{ position: "absolute", left: x - 110, top: SUELO - 380, width: 220, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 26, color: "#fff", background: i ? C.teal : C.violeta, borderRadius: 10, transform: `scale(${ent(t, 565.3 + i * 0.9)})` }}>{i ? "ADM. SOMERS" : "SIR THOMAS GATES"}</div>}
+                {t > 565.3 + i * 0.9 && <div style={{ position: "absolute", left: x - 180, top: SUELO - (i ? 400 : 470), width: 360, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 40, color: "#fff", background: i ? C.teal : C.violeta, borderRadius: 12, transform: `scale(${ent(t, 565.3 + i * 0.9)})` }}>{i ? "ADM. SOMERS" : "SIR THOMAS GATES"}</div>}
               </En>
             ))}
           </>
@@ -118,7 +118,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
         {/* Bermudas: todos vivos */}
         {t > 598.4 && t < 608 && Array.from({ length: 16 }, (_, i) => { const x = 13250 + i * 55 + (i % 2) * 20; return <En key={i} x={x} w={100}><Persona x={x} y={SUELO + (i % 2) * 10} h={150 + (i % 3) * 14} t={t} seed={700 + i} ropa={i % 4 === 0 ? GENT(i) : COLONO(i)} gola={i % 4 === 0} expr={t > 601 ? "triste" : "feliz"} aparece={598.7 + i * 0.05} salta={t < 600.8 ? Math.abs(Math.sin(t * 6 + i)) * 14 : 0} /></En>; })}
         {/* Jamestown: cientos de bocas nuevas, enfermas */}
-        {t > 611.8 && t < 628.6 && Array.from({ length: 14 }, (_, i) => { const x = 23000 + i * 85 + (i > 6 ? 900 : 0); return <En key={i} x={x} w={150}><Persona x={x} y={SUELO + (i % 2) * 8} h={200 + (i % 3) * 16} t={t} seed={720 + i} ropa={COLONO(i)} expr={i % 3 === 0 ? "triste" : "neutro"} flaco={i % 3 === 0 ? 0.3 : 0} aparece={612.3 + i * 0.06} />{i % 3 === 0 && t > 614.27 && <Emote t={t} t0={614.3 + i * 0.05} tipo="sudor" x={cabeza(x, SUELO, 210).x} y={cabeza(x, SUELO, 210).y} s={0.4} />}</En>; })}
+        {t > 611.8 && t < 628.6 && Array.from({ length: 14 }, (_, i) => { const x = 23000 + i * 85 + (i > 6 ? 900 : 0); return <En key={i} x={x} w={150}><Persona x={x} y={SUELO + (i % 2) * 8} h={200 + (i % 3) * 16} t={t} seed={720 + i} ropa={COLONO(i)} expr={t > 624.5 ? (i % 2 ? "miedo" : "sorpresa") : i % 3 === 0 ? "triste" : "neutro"} flaco={i % 3 === 0 ? 0.3 : 0} aparece={612.3 + i * 0.06} mira={t > 624.5 ? (x < 24580 ? 0.7 : -0.7) : 0} />{i % 3 === 0 && t > 614.27 && <Emote t={t} t0={614.3 + i * 0.05} tipo="sudor" x={cabeza(x, SUELO, 210).x} y={cabeza(x, SUELO, 210).y} s={0.4} />}</En>; })}
         {/* las ratas que se comen el maíz del almacén */}
         {t > 622.0 && t < 628.8 && (
           <>
@@ -131,7 +131,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
           <En x={smithBote} w={600}>
             <Bote x={smithBote} y={AGUA - 10} t={t} s={0.8} remos={0} />
             {salto < 0.02 ? (
-              <div style={{ position: "absolute", left: smithBote - 120, top: AGUA - 40, transform: "rotate(-84deg)", transformOrigin: "0 0" }}>
+              <div style={{ position: "absolute", left: smithBote + 100, top: AGUA - 52, transform: "rotate(-88deg)", transformOrigin: "0 0" }}>
                 <Persona x={0} y={0} h={220} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" expr={t < 634.9 ? "dormido" : "miedo"} />
               </div>
             ) : salto < 1 ? (
@@ -213,9 +213,9 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
       {t > 642.3 && t < 643.8 && <Grande t={t} t0={642.41} text="HE NEVER COMES BACK" y={200} size={100} color={C.ambar} />}
       {/* la ficha de Smith, tachada */}
       {t > 643.7 && t < 647.0 && (
-        <div style={{ position: "absolute", left: 810, top: 300, transform: `scale(${ent(t, 643.8) * (1 - prog(t, 646.5, 647.0))}) rotate(-3deg)`, width: 300, height: 340, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 18, overflow: "hidden" }}>
+        <div style={{ position: "absolute", left: 810, top: 260, transformOrigin: "150px 170px", transform: `scale(${1.5 * ent(t, 643.8) * (1 - prog(t, 646.5, 647.0))}) rotate(-3deg)`, width: 300, height: 340, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 18, overflow: "hidden" }}>
           <Persona x={150} y={350} h={340} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" gorro="morion" expr="triste" />
-          <div style={{ position: "absolute", left: 0, top: 6, width: 300, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 26, color: C.rojo }}>KEPT THEM ALIVE</div>
+          <div style={{ position: "absolute", left: 0, top: 6, width: 300, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 32, color: C.rojo }}>KEPT THEM ALIVE</div>
           <Tacha t={t} t0={646.0} x={150} y={170} r={130} />
         </div>
       )}

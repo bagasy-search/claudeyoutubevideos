@@ -192,6 +192,7 @@ export const Colinas: React.FC<{ capas: string[]; base?: number; dx?: number; se
 // ── chapita (CORNELL · 2015 de la ref)
 export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; color?: string; x: number; y: number; size?: number; centro?: boolean; tinta?: string }> = ({ t, t0, t1 = 1e9, text, color = C.violeta, x, y, size = 62, centro, tinta = "#fff" }) => {
   if (t < t0 || t > t1 + 0.3) return null;
+  size = Math.max(size, 54); // nada ilegible
   const s = ent(t, t0, 0, { damping: 11, stiffness: 180 });
   const out = interpolate(t, [t1, t1 + 0.3], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
@@ -204,7 +205,7 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
 // texto grande con contorno (títulos)
 export const Grande: React.FC<{ t: number; t0: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string }> = ({ t, t0, text, x = 960, y, size = 150, color = C.crema, borde = C.noche }) => {
   if (t < t0) return null;
-  const s = ent(t, t0, 0, { damping: 9, stiffness: 190 });
+  const s = ent(t, t0, 0, { damping: 15, stiffness: 210 });
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${s})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}` }}>
       {text}
