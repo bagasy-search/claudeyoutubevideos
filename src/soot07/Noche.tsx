@@ -496,11 +496,12 @@ export const Noche: React.FC = () => {
           <RelojNoche t={t} />
           <Balanza t={t} />
           <ReglaAltura t={t} />
-          <Piezas t={t} />
-          <Hud t={t} />
-          {(() => { const q = pz(px, pyProt - H * 0.82); return <Inserto t={t} px={cl(q.x, 0, 1920)} py={cl(q.y, 0, 1080)} sopa={sopa && t < M.limpia} />; })()}
         </AbsoluteFill>
       </CamaraMano>
+      {/* OJO v3: carteles e inserts fuera de la cámara en mano (el balanceo los sacaba del cuadro por arriba) */}
+      <Piezas t={t} />
+      <Hud t={t} />
+      {(() => { const q = pz(px, pyProt - H * 0.82); return <Inserto t={t} px={cl(q.x, 0, 1920)} py={cl(q.y, 0, 1080)} sopa={sopa && t < M.limpia} />; })()}
       <Portada t={t} />
     </AbsoluteFill>
   );

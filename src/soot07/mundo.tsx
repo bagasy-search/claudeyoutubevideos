@@ -346,8 +346,14 @@ const Cuartel: React.FC<{ e: Edif; pal: Pal }> = ({ e, pal }) => (
 
 const MuroLiso: React.FC<{ e: Edif; pal: Pal }> = ({ e, pal }) => (
   <g transform={`translate(${e.x} 0)`}>
-    <rect x={0} y={-560} width={e.w} height={560} fill={pal.muro[1]} />
-    {Array.from({ length: 7 }, (_, f) => Array.from({ length: Math.ceil(e.w / 120) }, (_, k) => <rect key={`${f}${k}`} x={k * 120 + (f % 2) * 60} y={-560 + f * 80} width={116} height={76} fill="#000" opacity={0.06 + ((f * 7 + k * 3) % 5) * 0.012} />))}
+    <rect x={0} y={-560} width={e.w} height={560} fill="#6e5038" />
+    {Array.from({ length: 7 }, (_, f) => Array.from({ length: Math.ceil(e.w / 120) }, (_, k) => <rect key={`${f}${k}`} x={k * 120 + (f % 2) * 60 + 3} y={-560 + f * 80 + 3} width={112} height={72} rx={6} fill={((f * 7 + k * 3) % 3) ? "#8a6446" : "#7a583e"} stroke="#2a1a10" strokeWidth={3} />))}
+    <rect x={0} y={-560} width={e.w} height={560} fill="url(#altoV)" />
+    <rect x={-14} y={-592} width={e.w + 28} height={36} fill="#a8865e" stroke="#2a1a10" strokeWidth={4} />
+    {/* musgo y una reja de cloaca al pie */}
+    {Array.from({ length: Math.ceil(e.w / 300) }, (_, k) => <path key={k} d={`M ${k * 300 + 40} -560 q 20 60 6 120 q 30 -40 26 -120 Z`} fill="#4a7a3a" opacity={0.8} />)}
+    <rect x={e.w / 2 - 90} y={-110} width={180} height={110} rx={12} fill="#1a120c" stroke="#2a1a10" strokeWidth={5} />
+    {[0, 1, 2, 3].map((k) => <rect key={k} x={e.w / 2 - 70 + k * 44} y={-104} width={12} height={104} fill="#5a5048" />)}
   </g>
 );
 

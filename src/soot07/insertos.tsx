@@ -109,8 +109,8 @@ const Vs: React.FC<{ t: number; i: Extract<Ins, { v: "vs" }> }> = ({ t, i }) => 
           <Ico k={c.ico} x={0} y={-30} s={1.05} />
           {c.lineas.map((l, j) => <text key={j} x={0} y={140 + j * 58} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={c.lineas.length > 1 ? 42 : 50} fill={K}>{l}</text>)}
           {i.gana && m > 0 && (mal
-            ? <g stroke={C.rojo} strokeWidth={26} strokeLinecap="round" opacity={0.92}><line x1={-170} y1={-170} x2={-170 + 340 * Math.min(1, m * 2)} y2={-170 + 340 * Math.min(1, m * 2)} />{m > 0.5 && <line x1={170} y1={-170} x2={170 - 340 * (m - 0.5) * 2} y2={-170 + 340 * (m - 0.5) * 2} />}</g>
-            : <path d="M -110 30 L -30 110 L 130 -80" stroke={C.lima} strokeWidth={34} fill="none" strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={`${m} 1`} />)}
+            ? <g stroke={C.rojo} strokeWidth={24} strokeLinecap="round" opacity={0.92}><line x1={-110} y1={-140} x2={-110 + 220 * Math.min(1, m * 2)} y2={-140 + 220 * Math.min(1, m * 2)} />{m > 0.5 && <line x1={110} y1={-140} x2={110 - 220 * (m - 0.5) * 2} y2={-140 + 220 * (m - 0.5) * 2} />}</g>
+            : <path d="M 130 -150 L 175 -105 L 250 -200" stroke={C.lima} strokeWidth={34} fill="none" strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={`${m} 1`} />)}
         </g>
       );
     })}
