@@ -130,8 +130,8 @@ const Miniatura: React.FC<{ k: (s: number) => number; apaga?: number }> = ({ k, 
   const br = interpolate(f, [apaga, apaga + 14], [1, 0.15], cl);
   return (
     <Escena Set={PasilloFarmacia} pal={PAL} setProps={{ llenado: 0.3, luzFarol: { x: 430, y: 820, on: 1 } }} seed={500} mano={1.5}
-      claves={[mira(0, 960, 540, 1), mira(k(1.0), 990, 560, 1.04, { curva: "inout" })]}
-      detras={<A {...act(THEO_CASA.accesorios ? THEO : THEO, 400, { ruta: [{ f: 0, x: 400, y: 850 }], escala: 0.5, luz: { lado: 1, color: "#ffb04a", fuerza: 1 }, poses: [{ f: 0, v: { hD: 30, cD: 60 } }], enManoD: farol(f), caras: [{ f: 0, v: "sorpresa" }] })} />}
+      claves={[mira(0, 960, 540, 1), mira(k(1.25), 1010, 520, 0.96, { curva: "inout" })]}
+      detras={<A {...act(THEO_CASA.accesorios ? THEO : THEO, 400, { ruta: [{ f: 0, x: 400, y: 850 }, { f: k(1.25), x: 470, y: 880 }], escala: 0.5, luz: { lado: 1, color: "#ffb04a", fuerza: 1 }, poses: [{ f: 0, v: { hD: 30, cD: 60 } }], enManoD: farol(f), caras: [{ f: 0, v: "sorpresa" }] })} />}
       medio={<A {...act({ ...JUNE, accesorios: [...(JUNE.accesorios ?? []), { t: "mochila", color: "#4a3426" }, { t: "parche", color: "#f2ece0", lado: 1 }] }, 1150, {
         ruta: [{ f: 0, x: 1450, y: 1480 }], escala: 3.2, dir: [{ f: 0, v: 1 }], luz: { lado: 1, color: "#ffb04a", fuerza: 1 },
         poses: [{ f: 0, v: { hD: 150, cD: 150, hI: 8, cI: 20, cabeza: -6 } }], caras: [{ f: 0, v: "triste" }], miradas: [{ f: 0, v: { x: 1, y: -0.4 } }],
@@ -224,8 +224,8 @@ const p02b: PlanB = {
   sfx: [[10.6, "door_glass", -10], [11.4, "pop", -6], [11.6, "birds", -18, { dur: 1 }]],
   el: (k) => (
     <Escena Set={Lobby} pal={PAL} setProps={{ luces: 1, afuera: "dia", pizarra: "" }} seed={503} mano={2}
-      claves={[mira(0, LOBBY_PUNTOS.puerta + 260, 600, 1.15), mira(k(12.6), LOBBY_PUNTOS.puerta + 200, 600, 1.2, { curva: "inout" })]}
-      medio={<><A {...act(LILY, LOBBY_PUNTOS.puerta + 420, { ruta: [{ f: 0, x: LOBBY_PUNTOS.puerta + 520, y: P }, { f: k(12.4), x: LOBBY_PUNTOS.puerta + 160, y: P }], dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: "parado" }, { f: k(11.3), v: "saludar" }], caras: [{ f: 0, v: "feliz" }], luz: BORDE_FRIO })} />
+      claves={[mira(0, LOBBY_PUNTOS.puerta + 440, 560, 1.55), mira(k(12.6), LOBBY_PUNTOS.puerta + 260, 560, 1.6, { curva: "inout" })]}
+      medio={<><A {...act(LILY, LOBBY_PUNTOS.puerta + 420, { ruta: [{ f: 0, x: LOBBY_PUNTOS.puerta + 520, y: P }, { f: k(12.4), x: LOBBY_PUNTOS.puerta + 160, y: P }], dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: { hI: 30, cI: 120 } }, { f: k(11.3), v: "saludar" }], caras: [{ f: 0, v: "feliz" }], luz: BORDE_FRIO })} />
         <A {...act(BEN, LOBBY_PUNTOS.puerta + 640, { ruta: [{ f: 0, x: LOBBY_PUNTOS.puerta + 720, y: P }, { f: k(12.4), x: LOBBY_PUNTOS.puerta + 360, y: P }], dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "risa" }], luz: BORDE_FRIO })} /></>}
       hud={<><H /><Txt t="DAY 2 · HOME" a={k(11.2)} b={k(12.6) + 4} top={150} tam={62} mano chip color={AMBAR} /></>} />
   ),
@@ -242,11 +242,11 @@ const p03: PlanB = {
       const osc = interpolate(f, [k(13.6), k(14.2)], [0, 0.6], cl);
       return (
         <AbsoluteFill>
-          <Liv claves={[mira(0, 820, 620, 1.35), mira(k(17.0), 830, 620, 1.4, { curva: "inout" })]} sp={{ farol: parpadea }}
+          <Liv claves={[mira(0, 1070, 630, 1.75), mira(k(17.0), 1080, 630, 1.82, { curva: "inout" })]} sp={{ farol: parpadea }}
             medio={<>
               <A {...lily({ caras: [{ f: 0, v: "cansado" }] })} />
               <MantaLily />
-              <A {...act(JUNE, 1100, { ruta: [{ f: 0, x: 1300, y: P }, { f: k(14.0), x: 1020, y: P }], poses: [{ f: 0, v: "parado" }, { f: k(14.2), v: "arrodillado" }, { f: k(16.5), v: { tronco: 10, pI: 0, rI: 90, pD: 90, rD: 90, hD: 120, cD: 40, hI: 10, cI: 30 } }], dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "determinado" }, { f: k(16.6), v: "duda" }], enManoD: farol(f) })} />
+              <A {...act(JUNE, 1100, { ruta: [{ f: 0, x: 1300, y: P }, { f: k(14.0), x: 1020, y: P }], poses: [{ f: 0, v: "parado" }, { f: k(14.2), v: "arrodillado" }, { f: k(16.5), v: { tronco: 10, pI: 0, rI: 90, pD: 90, rD: 90, hD: 120, cD: 40, hI: 10, cI: 30 } }], dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "determinado" }, { f: k(13.9), v: "duda" }, { f: k(14.9), v: "triste" }, { f: k(15.8), v: "duda" }, { f: k(16.6), v: "miedo" }], miradas: [{ f: 0, v: { x: -0.5, y: 0.3 } }, { f: k(13.9), v: { x: 1, y: -0.5 } }, { f: k(14.4), v: { x: -0.4, y: 0 } }, { f: k(14.9), v: { x: 1, y: -0.5 } }, { f: k(15.4), v: { x: -0.4, y: 0 } }, { f: k(15.8), v: { x: 1, y: 0.2 } }, { f: k(16.6), v: { x: 1, y: 0.2 } }], enManoD: farol(f) })} />
             </>} />
           <AbsoluteFill style={{ background: `linear-gradient(90deg, rgba(10,8,14,0) 40%, rgba(10,8,14,${osc}) 60%)` }} />
           <svg width={1920} height={1080} style={{ position: "absolute" }}>
@@ -276,7 +276,7 @@ const p04: PlanB = {
       return (
         <AbsoluteFill>
           <Escena Set={Farmacia} pal={PAL} setProps={{ luces: 0, apagar: 0.3, polvo: 1 }} seed={504} mano={2}
-            claves={[mira(0, FAR_PUNTOS.gondola2 + 260, 560, 1.0), mira(k(21.2), FAR_PUNTOS.gondola2 + 290, 560, 1.04, { curva: "inout" })]}
+            claves={[mira(0, FAR_PUNTOS.gondola3 - 520, 600, 1.5), mira(k(21.2), FAR_PUNTOS.gondola3 - 470, 600, 1.56, { curva: "inout" })]}
             medio={<A {...act(JUNE, FAR_PUNTOS.gondola1, { ruta: [{ f: 0, x: FAR_PUNTOS.gondola1 - 200, y: P }, { f: k(21.2), x: FAR_PUNTOS.gondola3 - 100, y: P }], dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { hD: 120, cD: 30 } }], caras: [{ f: 0, v: "triste" }], miradas: [{ f: 0, v: { x: 0.4, y: -0.3 } }], luz: { lado: 1, color: "#ffb04a", fuerza: 1 }, enManoD: farol(f) })} />} />
           <svg width={1920} height={1080} style={{ position: "absolute" }}>
             <g transform="translate(330,760) rotate(-6)">
@@ -315,9 +315,9 @@ const p05: PlanB = {
       const X = GRANJA_PUNTOS.porche;
       return (
         <Escena Set={Granja} pal={PAL} setProps={{ hora: "noche", estacion: "invierno", humo: 0.8 }} seed={505} mano={2} zLejos={0.3}
-          claves={[mira(0, X + 640, 640, 1.2), mira(k(25.6), X + 660, 630, 1.26, { curva: "inout" })]}
+          claves={[mira(0, X + 650, 560, 1.5), mira(k(25.6), X + 660, 550, 1.56, { curva: "inout" })]}
           medio={<>{DIEZ.map((l, i) => { const t0 = k(21.5 + i * 0.22); const xf = X + 160 + i * 110; return <A key={i} {...act(l, xf, { ruta: [{ f: 0, x: X - 40, y: P }, { f: t0, x: X - 40, y: P }, { f: t0 + 40, x: xf, y: P }], opacidad: (ff) => (ff > t0 ? 1 : 0), dir: [{ f: 0, v: 1 }, { f: t0 + 40, v: i % 2 ? -1 : 1 }], caras: [{ f: 0, v: i % 3 ? "determinado" : "duda" }], miradas: [{ f: 0, v: { x: 0, y: -0.3 } }], luz: { lado: 1, color: AMBAR, fuerza: 0.9 }, enManoD: i % 3 === 0 ? farol(f) : undefined, seed: 60 + i })} />; })}</>}
-          hud={<><H /><Txt t={"COULD TEN PEOPLE\nREBUILD MEDICINE?"} a={k(22.6)} b={k(25.6) + 4} top={140} tam={66} chip color="#f6ecd2" /></>} />
+          hud={<><H /><Txt t="COULD TEN PEOPLE REBUILD MEDICINE?" a={k(22.6)} b={k(25.6) + 4} top={140} tam={58} chip color="#f6ecd2" /></>} />
       );
     };
     return <Pl />;
@@ -361,7 +361,7 @@ export const Cuaderno: React.FC<{ abre?: number; lineas?: { t: string; desde: nu
 const p06: PlanB = {
   a: 25.6, b: 26.6, trans: { tipo: "corte" },
   sfx: [[25.65, "page", -4]],
-  el: (k) => <><Cuaderno abre={k(25.8)} lineas={[{ t: "POPULATION 10", desde: k(25.9), tam: 52 }]} /><H /></>,
+  el: (k) => <><Cuaderno abre={k(25.65)} lineas={[{ t: "POPULATION 10", desde: k(25.7), tam: 52 }]} /><H /></>,
 };
 
 // ============ 7 · última vez: la helada (granja de lc-b) ============
@@ -375,7 +375,7 @@ const p07: PlanB = {
       const pct = Math.round(interpolate(f, [k(28.0), k(29.2)], [100, 50], cl));
       return (
         <Escena Set={Granja} pal={PAL} setProps={{ hora: "alba", estacion: "verano", helada: interpolate(f, [k(27.6), k(29.0)], [0, 1], cl), crec: 1 }} seed={507} mano={2}
-          claves={[mira(0, X0 + 160, 690, 1.55), mira(k(30.6), X0 + 180, 690, 1.62, { curva: "inout" })]}
+          claves={[mira(0, X0 + 280, 650, 1.95), mira(k(30.6), X0 + 320, 640, 2.05, { curva: "inout" })]}
           medio={<>
             {Array.from({ length: 12 }).map((_, i) => <Planta key={i} x={X0 - 360 + i * 80} y={P + 30} s={1.1} i={i} muere={i < 6 ? interpolate(f, [k(27.9) + i * 4, k(27.9) + i * 4 + 8], [0, 1], cl) : 0} />)}
             <A {...act(MARCUS, X0 + 500, { dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: "agacharse" }, { f: k(29.2), v: { hD: 150, cD: 40, hI: 20, cI: 30, cabeza: -6 } }], caras: [{ f: 0, v: "duda" }, { f: k(29.2), v: "triste" }], miradas: [{ f: 0, v: { x: -0.6, y: 0.3 } }, { f: k(29.6), v: { x: 0.2, y: 0 } }], luz: { lado: -1, color: "#ffb08a", fuerza: 0.8 }, enManoD: (ff: number) => ff > k(29.2) ? <Planta x={0} y={0} muere={1} s={0.7} /> : null })} />
@@ -397,9 +397,9 @@ const p08: PlanB = {
       const yL = GR_HENIL;
       return (
         <Escena Set={Granero} pal={PAL} setProps={{ farol: 1 }} seed={508} mano={2.2}
-          claves={[mira(0, 1100, 620, 1.35), mira(k(33.0), 1040, 560, 1.45, { curva: "inout" })]}
+          claves={f < k(32.2) ? [mira(0, 1100, 620, 1.45), mira(k(32.2), 1080, 600, 1.55, { curva: "inout" })] : [mira(0, GR_PUNTOS.lily + 220, GR_HENIL - 150, 2.0), mira(k(33.0), GR_PUNTOS.lily + 230, GR_HENIL - 150, 2.08, { curva: "inout" })]}
           medio={<>
-            <A {...act(LILY_CAMA, GR_PUNTOS.lily, { ruta: [{ f: 0, x: GR_PUNTOS.lily, y: yL }], asiento: [{ f: 0, v: 20 }], poses: [{ f: 0, v: { tronco: -70, pI: 90, rI: 10, pD: 95, rD: 20, hD: 40, cD: 120, hI: 30, cI: 120, cabeza: -10 } }], caras: [{ f: 0, v: "cansado" }], dir: [{ f: 0, v: 1 }], luz: BORDE_CALIDO })} />
+            <A {...act(LILY_CAMA, GR_PUNTOS.lily, { ruta: [{ f: 0, x: GR_PUNTOS.lily, y: yL }], asiento: [{ f: 0, v: 20 }], poses: [{ f: 0, v: { tronco: -70, pI: 90, rI: 10, pD: 95, rD: 20, hD: 40, cD: 120, hI: 30, cI: 120, cabeza: -10 } }], caras: [{ f: 0, v: "cansado" }, { f: k(32.3), v: "miedo" }], dir: [{ f: 0, v: 1 }], luz: BORDE_CALIDO })} />
             <A {...act(JUNE, GR_PUNTOS.escalera, { ruta: [{ f: 0, x: GR_PUNTOS.escalera, y: P }, { f: k(32.2), x: GR_PUNTOS.escalera - 40, y: yL }, { f: k(33.0), x: GR_PUNTOS.lily + 330, y: yL }], poses: [{ f: 0, v: "agarrarAlto" }, { f: k(32.3), v: "parado" }], dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "determinado" }, { f: k(32.4), v: "miedo" }], enManoI: farol(f) })} />
           </>}
           hud={<><H l={[fiebre([{ f: 0, v: 101 }], k(31.2))]} /><Txt t="THE HAYLOFT" a={k(30.8)} b={k(32.6)} top={150} tam={48} chip /><Txt t="BURNING UP" a={k(31.6)} b={k(33.0) + 4} top={150} tam={58} mano chip color="#ff8a6a" /></>} />
@@ -499,14 +499,14 @@ const p10b: PlanB = {
       const velas = [{ x: 380, on: 1 }, { x: 1540, on: 1 }];
       return (
         <Escena Set={Mural} pal={PAL} setProps={{ velas, tono: "#2a2420", luz: "#ffd890" }} seed={510} mano={1.8}
-          claves={[mira(0, X, 640, 1.5), mira(k(60.4), X + 20, 630, 1.6, { curva: "inout" })]}
+          claves={[mira(0, X - 20, 600, 1.95), mira(k(60.4), X, 590, 2.05, { curva: "inout" })]}
           medio={<>
             <Halo x={X} y={P - 520} r={700} color="#ffe6a8" fuerza={0.7} />
             <g transform={`translate(${X},${P - 470})`}><path d="M-60,-30 L60,-30 L90,20 L-90,20 Z" fill="#3a3a44" /><circle cy={30} r={22} fill="#fff4c8" /></g>
             <rect x={X - 260} y={P - 210} width={520} height={34} rx={8} fill="#cfc4b0" /><rect x={X - 230} y={P - 176} width={20} height={176} fill="#5a4a3a" /><rect x={X + 210} y={P - 176} width={20} height={176} fill="#5a4a3a" />
             <path d={`M${X - 250},${P - 210} Q${X - 120},${P - 290} ${X},${P - 250} Q${X + 140},${P - 230} ${X + 250},${P - 212} Z`} fill="#f2ece0" stroke="#bfb4a0" strokeWidth={4} />
             <circle cx={X - 210} cy={P - 250} r={30} fill="#141018" />
-            <A {...act(LEVITA, X - 30, { ruta: [{ f: 0, x: X - 30, y: P }], dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { tronco: 28, hD: 70, cD: 50, hI: 60, cI: 60 } }, { f: k(57.0), v: { tronco: 34, hD: 80, cD: 30, hI: 70, cI: 50 } }, { f: k(58.0), v: { tronco: 28, hD: 70, cD: 50, hI: 60, cI: 60 } }], caras: [{ f: 0, v: "determinado" }], luz: { lado: 1, color: "#ffe6a8", fuerza: 0.9 } })} />
+            <A {...act(LEVITA, X - 30, { ruta: [{ f: 0, x: X - 30, y: P }], dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { tronco: 28, hD: 70, cD: 50, hI: 60, cI: 60 } }, { f: k(56.6), v: { tronco: 10, hD: 150, cD: 30, hI: 60, cI: 60 } }, { f: k(57.0), v: { tronco: 34, hD: 80, cD: 30, hI: 70, cI: 50 } }, { f: k(58.0), v: { tronco: 28, hD: 70, cD: 50, hI: 60, cI: 60 } }], caras: [{ f: 0, v: "determinado" }], luz: { lado: 1, color: "#ffe6a8", fuerza: 0.9 } })} />
             <A {...act(LEVITA_DELANTAL, X + 360, { dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: { tronco: 16, hD: 60, cD: 70, hI: 30, cI: 40 } }], caras: [{ f: 0, v: "neutral" }], luz: { lado: -1, color: "#ffe6a8", fuerza: 0.8 } })} />
             <A {...act(CIENTIFICO, X - 400, { dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { hD: 150, cD: 30, hI: 20, cI: 30 } }], caras: [{ f: 0, v: "duda" }], luz: { lado: 1, color: "#ffe6a8", fuerza: 0.7 }, enManoD: <FarolMano y={0} s={0.8} f={f} halo={0.6} /> })} />
             <A {...act(LEVITA_DELANTAL, X + 560, { escala: 0.95, dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: "brazosCruzados" }], caras: [{ f: 0, v: "duda" }], luz: { lado: -1, color: "#ffe6a8", fuerza: 0.6 }, seed: 77 })} />
@@ -528,9 +528,9 @@ const p11: PlanB = {
       const N = 34;
       return (
         <Escena Set={Granja} pal={PAL} setProps={{ hora: "ocaso", estacion: "invierno" }} seed={511} mano={2}
-          claves={[mira(0, 2500, 740, 1.5), mira(k(63.6), 2520, 740, 1.42, { curva: "inout" })]}
-          medio={<>{Array.from({ length: N }).map((_, i) => { const x = 1940 + ((i * 173) % 1120), y = P + 60 - ((i * 59) % 140); const s = interpolate(f, [k(61.2) + i * 1.9, k(61.2) + i * 1.9 + 5], [0, 1], cl); return s > 0 && <g key={i} transform={`translate(${x},${y}) scale(${s})`}><Cruz x={0} y={0} s={1.3 + (i % 3) * 0.2} /></g>; })}</>}
-          hud={<><H /><div style={{ position: "absolute", left: 0, right: 0, top: 140, textAlign: "center" }}><span style={{ fontFamily: FONT, fontWeight: 700, fontSize: 56, color: "#f6ecd2", background: "rgba(18,15,24,0.88)", padding: "10px 30px", borderRadius: 20 }}>DIED OF A <span style={{ color: "#ff8a6a" }}>STOMACH ACHE</span></span></div></>} />
+          claves={[mira(0, 2400, 700, 1.5), mira(k(63.6), 2420, 700, 1.42, { curva: "inout" })]}
+          medio={<><A {...act(JUNE, 2160, { escala: 1.5, ruta: [{ f: 0, x: 2160, y: P + 40 }], poses: [{ f: 0, v: "arrodillado" }, { f: k(62.2), v: { tronco: 20, pI: 0, rI: 90, pD: 90, rD: 90, hD: 110, cD: 70, hI: 100, cI: 70, cabeza: 18 } }], dir: [{ f: 0, v: 1 }], caras: [{ f: 0, v: "triste" }], miradas: [{ f: 0, v: { x: 1, y: -0.2 } }, { f: k(62.2), v: { x: 0.3, y: 0.6 } }], luz: { lado: 1, color: "#ffb08a", fuerza: 0.9 } })} />{Array.from({ length: N }).map((_, i) => { const x = 1940 + ((i * 173) % 1120), y = P + 60 - ((i * 59) % 140); const s = interpolate(f, [k(61.2) + i * 1.9, k(61.2) + i * 1.9 + 5], [0, 1], cl); return s > 0 && <g key={i} transform={`translate(${x},${y}) scale(${s})`}><Cruz x={0} y={0} s={1.3 + (i % 3) * 0.2} /></g>; })}</>}
+          hud={<><H /><div style={{ position: "absolute", left: 0, right: 0, top: 140, textAlign: "center" }}><span style={{ fontFamily: FONT, fontWeight: 700, fontSize: 56, color: "#f6ecd2", background: "rgba(18,15,24,0.88)", padding: "10px 30px", borderRadius: 20 }}>DIED OF A <span style={{ color: "#ff8a6a" }}>STOMACH ACHE</span></span></div><div style={{ position: "absolute", right: 90, bottom: 110, fontFamily: FONT, fontWeight: 700, fontSize: 96, color: "#f6ecd2", background: "rgba(18,15,24,0.85)", padding: "6px 30px", borderRadius: 20 }}>✝ {Math.min(N, Math.max(0, Math.floor((f - k(61.2)) / 1.9) + 1))}</div></>} />
       );
     };
     return <Pl />;
@@ -545,9 +545,9 @@ const p11b: PlanB = {
       const tiembla = Array.from({ length: 8 }).map((_, i) => ({ f: k(63.7 + i * 0.22), v: { tronco: 6, pI: 0, rI: 90, pD: 90, rD: 90, hD: 110 + (i % 2) * 6, cD: 70, hI: 100 + (i % 2) * 6, cI: 70, cabeza: 14 } }));
       return (
         <Escena Set={Granero} pal={PAL} setProps={{ farol: 1 }} seed={521} mano={2}
-          claves={[mira(0, GR_PUNTOS.lily + 260, GR_HENIL - 180, 2.3), mira(k(65.4), GR_PUNTOS.lily + 260, GR_HENIL - 180, 2.45, { curva: "inout" })]}
+          claves={[mira(0, GR_PUNTOS.lily + 260, GR_HENIL - 220, 2.3), mira(k(65.4), GR_PUNTOS.lily + 260, GR_HENIL - 220, 2.45, { curva: "inout" })]}
           medio={<A {...act(JUNE, GR_PUNTOS.lily + 260, { ruta: [{ f: 0, x: GR_PUNTOS.lily + 260, y: GR_HENIL }], poses: [{ f: 0, v: "arrodillado" }, ...tiembla], dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "triste" }, { f: k(64.4), v: "miedo" }], miradas: [{ f: 0, v: { x: -0.2, y: 0.6 } }] })} />}
-          hud={<><H /><Txt t="NOT A SURGEON" a={k(63.9)} b={k(65.4) + 4} top={140} tam={64} mano chip color={AMBAR} /></>} />
+          hud={<><H /><Txt t="NOT A SURGEON" a={k(63.9)} b={k(65.4) + 4} top={90} tam={58} mano chip color={AMBAR} /></>} />
       );
     };
     return <Pl />;
@@ -569,7 +569,7 @@ const p12: PlanB = {
       const sx = x - 150 + 260 * en, sy = P - 330 - Math.sin(en * Math.PI) * 40;
       return (
         <Escena Set={Lobby} pal={PAL} setProps={{ luces: 1, afuera: "dia" }} seed={512} mano={2}
-          claves={[mira(0, x, 600, 1.45), mira(k(70.8), x + 30, 590, 1.55, { curva: "inout" })]}
+          claves={f < k(66.9) ? [mira(0, x, 600, 1.5), mira(k(66.9), x + 10, 595, 1.6, { curva: "inout" })] : [mira(0, x - 10, 570, 2.1), mira(k(70.8), x + 10, 560, 2.2, { curva: "inout" })]}
           medio={<>
             <Halo x={x} y={P - 520} r={600} color="#ffffff" fuerza={0.45} />
             <rect x={x - 200} y={P - 200} width={400} height={30} rx={6} fill="#dfe8ec" /><rect x={x - 20} y={P - 170} width={40} height={170} fill="#8a96a4" />
@@ -604,13 +604,13 @@ const p13: PlanB = {
       const f = useF();
       const mesa = L.mesa;
       return (
-        <Liv claves={[mira(0, mesa + 20, 620, 1.55), mira(k(77.0), mesa + 30, 610, 1.65, { curva: "inout" })]}
+        <Liv claves={[mira(0, mesa - 10, 600, 1.95), mira(k(77.0), mesa - 10, 590, 2.05, { curva: "inout" })]}
           sp={{ farol: 1, libros: interpolate(f, [k(73.0), k(73.4)], [0, 1], cl) }}
           medio={<>
             <Halo x={mesa - 60} y={P - 300} r={420} color={AMBAR} fuerza={0.45} />
-            <A {...act(JUNE, mesa - 140, { asiento: [{ f: 0, v: 60 }], poses: [{ f: 0, v: "sentado" }, { f: k(73.6), v: { tronco: 14, pI: 88, rI: 88, pD: 92, rD: 92, hD: 75, cD: 30, hI: 60, cI: 40 } }, { f: k(74.6), v: { tronco: 14, pI: 88, rI: 88, pD: 92, rD: 92, hD: 95, cD: 10, hI: 60, cI: 40 } }, { f: k(75.0), v: { tronco: 14, pI: 88, rI: 88, pD: 92, rD: 92, hD: 75, cD: 30, hI: 60, cI: 40 } }, { f: k(75.6), v: { tronco: 14, pI: 88, rI: 88, pD: 92, rD: 92, hD: 95, cD: 10, hI: 60, cI: 40 } }, { f: k(76.0), v: { tronco: 4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 40, cD: 60, hI: 30, cI: 50 } }], dir: [{ f: 0, v: 1 }], caras: [{ f: 0, v: "duda" }, { f: k(76.0), v: "sorpresa" }], miradas: [{ f: 0, v: { x: 0.6, y: 0.5 } }, { f: k(76.0), v: { x: 0.2, y: -0.2 } }] })} />
+            <A {...act(JUNE, mesa - 140, { asiento: [{ f: 0, v: 60 }], poses: [{ f: 0, v: "sentado" }, { f: k(73.6), v: { tronco: 14, pI: 88, rI: 88, pD: 92, rD: 92, hD: 75, cD: 30, hI: 60, cI: 40 } }, { f: k(74.6), v: { tronco: 14, pI: 88, rI: 88, pD: 92, rD: 92, hD: 95, cD: 10, hI: 60, cI: 40 } }, { f: k(75.0), v: { tronco: 14, pI: 88, rI: 88, pD: 92, rD: 92, hD: 75, cD: 30, hI: 60, cI: 40 } }, { f: k(75.6), v: { tronco: 14, pI: 88, rI: 88, pD: 92, rD: 92, hD: 95, cD: 10, hI: 60, cI: 40 } }, { f: k(76.0), v: { tronco: 4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 160, cD: 20, hI: 30, cI: 50 } }], enManoD: (ff: number) => ff > k(76.0) ? <g transform="scale(0.7)"><Libro /></g> : null, dir: [{ f: 0, v: 1 }], caras: [{ f: 0, v: "duda" }, { f: k(76.0), v: "sorpresa" }], miradas: [{ f: 0, v: { x: 0.6, y: 0.5 } }, { f: k(76.0), v: { x: 0.2, y: -0.2 } }] })} />
             {f > k(73.4) && <g transform={`translate(${mesa + 20},${P - 240})`}><rect x={-90} y={-12} width={180} height={14} fill="#f2ece0" stroke="#5a4a3a" strokeWidth={3} /><path d={`M0,-12 L${interpolate(f % 30, [0, 30], [-80, 80])},-30 L0,-12`} stroke="#f2ece0" strokeWidth={4} fill="none" opacity={f > k(73.6) && f < k(76.0) ? 1 : 0} /></g>}
-            <A {...act(NAN, mesa + 260, { ruta: [{ f: 0, x: mesa + 600, y: P }, { f: k(73.0), x: mesa + 260, y: P }], dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: { hD: 40, cD: 80 } }, { f: k(73.2), v: { hD: 70, cD: 40, tronco: 10 } }, { f: k(74.0), v: "pensar" }], caras: [{ f: 0, v: "feliz" }], enManoD: (ff: number) => ff < k(73.2) ? <g transform="scale(0.6)"><Libro /></g> : null })} />
+            <A {...act(NAN, mesa + 260, { ruta: [{ f: 0, x: mesa + 600, y: P }, { f: k(73.0), x: mesa + 260, y: P }], dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: { hD: 40, cD: 80 } }, { f: k(73.2), v: { hD: 70, cD: 40, tronco: 10 } }, { f: k(74.0), v: "pensar" }], caras: [{ f: 0, v: "feliz" }, { f: k(76.1), v: "risa" }], enManoD: (ff: number) => ff < k(73.2) ? <g transform="scale(0.6)"><Libro /></g> : null })} />
           </>}
           hud={<><H /><Txt t="WHAT A GOOD NURSE DOES" a={k(71.4)} b={k(73.5)} top={140} tam={52} chip /><Txt t="WHAT HAS CHANGED?" a={k(73.6)} b={k(77.0) + 4} top={140} tam={58} mano chip color={AMBAR} /></>} />
       );
@@ -687,7 +687,7 @@ const p13d: PlanB = {
   a: 92.6, b: 94.4, trans: { tipo: "corte" },
   sfx: [[92.7, "chalk", -6, { dur: 0.9 }], [93.5, "chalk", -6, { dur: 0.9 }]],
   el: (k) => (
-    <Liv claves={[mira(0, GL_PIZARRA.x - 20, GL_PIZARRA.y + 200, 1.6), mira(k(94.4), GL_PIZARRA.x - 10, GL_PIZARRA.y + 200, 1.68, { curva: "inout" })]}
+    <Liv claves={[mira(0, GL_PIZARRA.x - 35, GL_PIZARRA.y + 157, 2.0), mira(k(94.4), GL_PIZARRA.x - 25, GL_PIZARRA.y + 157, 2.08, { curva: "inout" })]}
       sp={{ farol: 1, reglas: [{ t: "1. FRESH FIRST", desde: -100 }, { t: "2. NOTHING RISKY ALONE", desde: -100 }, { t: "3. ONE THING…", desde: -100 }, { t: "PLAN A: IV ANTIBIOTICS", desde: k(92.7), color: "#b8382c" }, { t: "PLAN B: THE TABLE", desde: k(93.5), color: "#b8382c" }] }}
       medio={<A {...act(JUNE, GL_PIZARRA.x - 170, { dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { hD: 120, cD: 40, hI: 20, cI: 30 } }, { f: k(93.3), v: { hD: 105, cD: 50, hI: 20, cI: 30 } }], caras: [{ f: 0, v: "determinado" }], luz: BORDE_CALIDO })} />}
       hud={<><H /><Txt t="TWO PARTS" a={k(92.8)} b={k(94.4) + 4} top={140} tam={58} chip color={AMBAR} /></>} />
@@ -709,7 +709,7 @@ const p14: PlanB = {
   sfx: [[94.5, "whoosh", -12], [95.2, "drip", -8], [95.9, "drip", -10], [96.5, "drip", -10]],
   el: (k) => (
     <Liv claves={[mira(0, L.suero - 120, 600, 1.6), mira(k(97.3), L.suero - 110, 600, 1.7, { curva: "inout" })]} sp={{ farol: 1, suero: 1, sueroNivel: 0.9 }}
-      medio={<><A {...lily({ caras: [{ f: 0, v: "cansado" }] })} /><MantaLily /></>}
+      medio={<><A {...lily({ caras: [{ f: 0, v: "cansado" }] })} /><MantaLily /><A {...act(JUNE, L.suero + 80, { ruta: [{ f: 0, x: L.suero + 420, y: P }, { f: k(95.4), x: L.suero + 90, y: P }], dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: "parado" }, { f: k(95.5), v: { hD: 165, cD: 20, hI: 20, cI: 30, cabeza: -10 } }, { f: k(96.6), v: { hD: 150, cD: 40, hI: 60, cI: 60, cabeza: -6 } }], caras: [{ f: 0, v: "determinado" }], miradas: [{ f: 0, v: { x: -0.3, y: -0.7 } }], luz: BORDE_CALIDO })} /></>}
       hud={<><H /><Txt t="PLAN A" a={k(94.4)} b={k(97.3) + 4} top={140} tam={66} chip color="#7ad08a" /><Txt t="IV ANTIBIOTICS" a={k(95.2)} b={k(97.3) + 4} top={240} tam={52} mano chip /></>} />
   ),
 };
@@ -756,7 +756,7 @@ const p15: PlanB = {
       const s = 1.7;
       return (
         <Escena Set={Panorama} pal={PAL} setProps={{ hora: "noche", luces: 0, nieve: 0.8, ventana: 0 }} seed={515} mano={2}
-          claves={[mira(0, 1760, P - 60, 1.5), mira(k(107.8), 2460, P - 60, 1.5)]}
+          claves={[mira(0, 1700 + 60 * s, P + 120 - 70 * s, 2.3), mira(k(107.8), 2500 + 60 * s, P + 120 - 70 * s, 2.3)]}
           medio={<>
             <path d={`M${x + 120 * s},${P + 40} L${x + 900},${P - 40} L${x + 900},${P + 160} Z`} fill="#ffeeb0" opacity={0.25 + 0.05 * Math.sin(f / 3)} />
             <Auto x={x} y={P + 120} color="#7a3a2a" tipo="pickup" s={s} faros nieve={0.3} />
@@ -781,14 +781,14 @@ const p15: PlanB = {
 
 const p15b: PlanB = {
   a: 107.8, b: 111.5, trans: { tipo: "corte" },
-  sfx: [[107.9, "wind_cold", -16, { dur: 3.5 }], [108.6, "car_door", -8], [109.4, "pop", -10]],
+  sfx: [[107.9, "wind_cold", -16, { dur: 3.5 }], [108.6, "car_door", -8], [109.2, "wood_hit", -8], [109.7, "wood_hit", -6], [110.3, "door", -8]],
   el: (k) => {
     const Pl: React.FC = () => {
       const f = useF();
       return (
         <Escena Set={StMarys} pal={PAL} setProps={{ hora: "noche", luces: 0, nieve: 0.8, ventana: interpolate(f, [k(108.6), k(109.4), k(110.6), k(111.3)], [0, 0.8, 0.8, 0], cl) }} seed={515} mano={2}
-          claves={[mira(0, 1150, 520, 0.9), mira(k(111.5), 1190, 480, 1.05, { curva: "inout" })]}
-          medio={<><A {...act(THEO, 900, { dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { hD: 40, cD: 70 } }], caras: [{ f: 0, v: "determinado" }], miradas: [{ f: 0, v: { x: 0.3, y: -0.6 } }], luz: BORDE_FRIO, enManoD: farol(f) })} /><A {...act(GUS, 760, { dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: "brazosCruzados" }], caras: [{ f: 0, v: "duda" }], miradas: [{ f: 0, v: { x: 0.3, y: -0.6 } }], luz: BORDE_FRIO })} /></>}
+          claves={[mira(0, 900, 560, 1.75), mira(k(111.5), 930, 550, 1.85, { curva: "inout" })]}
+          medio={<><A {...act(THEO, 900, { ruta: [{ f: 0, x: 860, y: P }, { f: k(109.0), x: 1060, y: P }], dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { hD: 40, cD: 70 } }, { f: k(109.1), v: { tronco: 22, hD: 90, cD: 0, hI: 80, cI: 10 } }, { f: k(109.6), v: { tronco: 30, hD: 95, cD: 0, hI: 85, cI: 5 } }, { f: k(110.2), v: { tronco: 22, hD: 90, cD: 0, hI: 80, cI: 10 } }], caras: [{ f: 0, v: "determinado" }], miradas: [{ f: 0, v: { x: 0.3, y: -0.6 } }], luz: BORDE_FRIO, enManoD: farol(f) })} /><A {...act(GUS, 760, { ruta: [{ f: 0, x: 700, y: P }, { f: k(109.0), x: 880, y: P }], dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: "brazosCruzados" }, { f: k(109.6), v: { hD: 150, cD: 40 } }], caras: [{ f: 0, v: "duda" }, { f: k(110.4), v: "sorpresa" }], miradas: [{ f: 0, v: { x: 0.3, y: -0.6 } }], luz: BORDE_FRIO })} /></>}
           hud={<><H l={[dia(330)]} /><Txt t="ST. MARY'S HOSPITAL" a={k(107.9)} b={k(109.4)} top={140} tam={54} chip /><Txt t="JUNE'S FIRST 3 DAYS AFTER THE WORLD WENT QUIET" a={k(109.4)} b={k(111.5) + 4} top={140} tam={42} chip color={AMBAR} /></>} />
       );
     };
@@ -826,8 +826,9 @@ const p16b: PlanB = {
       const f = useF();
       return (
         <Escena Set={PasilloFarmacia} pal={PAL} setProps={{ llenado: 0.55, luzFarol: { x: interpolate(f, [0, k(117.2)], [1100, 820], cl), y: interpolate(f, [0, k(117.2)], [1150, 900], cl), on: 1 } }} seed={516} mano={2}
-          claves={[mira(0, 900, 600, 1.0), mira(k(117.2), 820, 600, 1.12, { curva: "inout" })]}
+          claves={[mira(0, 1240, 860, 1.45), mira(k(117.2), 980, 760, 1.5, { curva: "inout" })]}
           medio={<>
+            <Halo x={interpolate(f, [0, k(117.2)], [1150, 880], cl)} y={interpolate(f, [0, k(117.2)], [900, 700], cl)} r={520} color="#ffc56a" fuerza={0.45} />
             <A {...act(THEO, 0, { ruta: [{ f: 0, x: 1150, y: 1180 }, { f: k(117.2), x: 860, y: 960 }], escala: 1.2, poses: [{ f: 0, v: { hD: 40, cD: 70 } }], enManoD: farol(f), luz: { lado: 1, color: "#ffb04a", fuerza: 1 } })} />
             <A {...act(GUS, 0, { ruta: [{ f: 0, x: 1400, y: 1240 }, { f: k(117.2), x: 1060, y: 990 }], escala: 1.25, poses: [{ f: 0, v: { hD: 50, cD: 150, cabeza: 6 } }], caras: [{ f: 0, v: "asco" }], luz: { lado: -1, color: "#ffb04a", fuerza: 0.8 } })} />
             {Array.from({ length: 40 }).map((_, i) => <circle key={i} cx={300 + ((i * 197) % 1400)} cy={200 + (((i * 83) + f * (0.6 + (i % 3) * 0.3)) % 900)} r={2 + (i % 3)} fill="#e8e0d0" opacity={0.4} />)}
@@ -850,7 +851,7 @@ const p17: PlanB = {
       const xt = interpolate(f, [0, k(121.0)], [1350, 1650], cl);
       return (
         <Escena Set={Farmacia} pal={PAL} setProps={{ cinta: 1 }} seed={517} mano={2}
-          claves={[mira(0, 1560, 560, 1.2), mira(k(122.6), 1720, 540, 1.12, { curva: "inout" })]}
+          claves={[mira(0, 1480, 590, 1.75), mira(k(122.6), 1760, 590, 1.75, { curva: "inout" })]}
           detras={<g opacity={1 - luz}><rect x={-1000} y={-800} width={5500} height={2500} fill="#05060c" opacity={0.6} /></g>}
           medio={<>
             <A {...act(THEO, 1500, { ruta: [{ f: 0, x: 1350, y: P }, { f: k(121.0), x: 1650, y: P }], poses: [{ f: 0, v: "agarrarAlto" }, { f: k(119.0), v: { hD: 40, cD: 70 } }], enManoD: farol(f), caras: [{ f: 0, v: "sorpresa" }, { f: k(121.0), v: "feliz" }], luz: { lado: 1, color: "#ffb04a", fuerza: 1 } })} />
@@ -927,7 +928,7 @@ const p17d: PlanB = {
 // ============ 18 · líquidos que se rompen · insulina necesita frío ============
 const p18: PlanB = {
   a: 135.4, b: 143.0, trans: { tipo: "corte" },
-  sfx: [[135.5, "whoosh", -12], [136.4, "pop", -6], [137.5, "fail", -8], [139.2, "pop", -6], [139.7, "fridge_tap", -8], [140.2, "fail", -10], [141.1, "pop", -6], [141.9, "sparkle", -8], [142.2, "ding", -8]],
+  sfx: [[135.5, "whoosh", -12], [135.7, "pop", -6], [136.0, "pop", -8], [136.3, "pop", -8], [137.5, "fail", -8], [139.7, "fridge_tap", -8], [140.2, "fail", -10], [141.1, "pop", -6], [141.9, "sparkle", -8], [142.2, "ding", -8]],
   el: (k) => {
     const Pl: React.FC = () => {
       const f = useF();
@@ -935,31 +936,31 @@ const p18: PlanB = {
       const turbio = interpolate(f, [k(137.4), k(138.4)], [0, 1], cl);
       const tempI = interpolate(f, [k(139.8), k(140.8)], [0.15, 0.85], cl);
       const brillo = 0.5 + 0.5 * Math.sin(f / 4);
-      const Col: React.FC<{ x: number; a: number; t: string; c: string; marca: string; mc: string; children: React.ReactNode }> = ({ x, a, t, c, marca, mc, children }) => {
+      const Col: React.FC<{ x: number; a: number; m: number; t: string; c: string; marca: string; mc: string; children: React.ReactNode }> = ({ x, a, m, t, c, marca, mc, children }) => {
         const e = ent(a);
         return e > 0 ? <g transform={`translate(${x},${560 + (1 - e) * 300})`} opacity={e}>
           <rect x={-250} y={-340} width={500} height={640} rx={28} fill="rgba(18,15,24,0.85)" stroke={c} strokeWidth={5} />
           <text x={0} y={-270} textAnchor="middle" fontFamily={FONT} fontWeight={700} fontSize={52} fill={c}>{t}</text>
           {children}
-          {f > k(a + 1.0) && <text x={0} y={260} textAnchor="middle" fontFamily={FONT} fontWeight={700} fontSize={80} fill={mc}>{marca}</text>}
+          {f > k(m) && <text x={0} y={260} textAnchor="middle" fontFamily={FONT} fontWeight={700} fontSize={80} fill={mc}>{marca}</text>}
         </g> : null;
       };
       return (
         <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 50%, #2a2e3a 0%, #10121a 80%)" }}>
           <svg width={1920} height={1080}>
-            <Col x={400} a={136.4} t="LIQUIDS" c="#ff8a6a" marca="✗" mc="#ff4a3a">
+            <Col x={400} a={135.7} m={137.5} t="LIQUIDS" c="#ff8a6a" marca="✗" mc="#ff4a3a">
               <rect x={-60} y={-180} width={120} height={300} rx={26} fill="#dfe8ec" stroke="#5a6a7a" strokeWidth={5} /><rect x={-30} y={-220} width={60} height={44} rx={8} fill="#5a6a7a" />
               <rect x={-52} y={-100} width={104} height={212} rx={20} fill={interpolateColors(turbio, [0, 1], ["#8ac8f0", "#8a7a4a"])} />
               {turbio > 0.3 && Array.from({ length: 10 }).map((_, i) => <circle key={i} cx={-36 + ((i * 29) % 72)} cy={-80 + ((i * 47) % 180)} r={5} fill="#5a4a2a" opacity={turbio} />)}
               <text x={0} y={180} textAnchor="middle" fontFamily={FONT} fontWeight={600} fontSize={34} fill="#f6ecd2">BREAK DOWN FASTER</text>
             </Col>
-            <Col x={960} a={139.2} t="INSULIN" c="#8fd3ff" marca="❄" mc="#8fd3ff">
+            <Col x={960} a={136.0} m={140.2} t="INSULIN" c="#8fd3ff" marca="❄" mc="#8fd3ff">
               <rect x={-110} y={-200} width={220} height={330} rx={16} fill="#e6eef4" stroke="#5a6a7a" strokeWidth={5} /><line x1={-110} y1={-80} x2={110} y2={-80} stroke="#5a6a7a" strokeWidth={4} />
               <rect x={-30} y={-40} width={30} height={60} rx={6} fill="#f4e6c8" stroke="#5a6a7a" strokeWidth={3} /><rect x={10} y={-40} width={30} height={60} rx={6} fill="#f4e6c8" stroke="#5a6a7a" strokeWidth={3} />
               <g transform="translate(160,-40)"><rect x={-12} y={-90} width={24} height={150} rx={12} fill="#2a2a32" stroke="#f6ecd2" strokeWidth={3} /><rect x={-7} y={-86 + 140 * (1 - tempI)} width={14} height={140 * tempI} fill="#d0302a" /><circle cy={74} r={20} fill="#d0302a" /></g>
               <text x={0} y={180} textAnchor="middle" fontFamily={FONT} fontWeight={600} fontSize={34} fill="#f6ecd2">NEEDS COLD</text>
             </Col>
-            <Col x={1520} a={141.1} t="PILLS & POWDERS" c="#7ad08a" marca="✓" mc="#5ac87a">
+            <Col x={1520} a={136.3} m={141.9} t="PILLS & POWDERS" c="#7ad08a" marca="✓" mc="#5ac87a">
               <Halo x={0} y={-60} r={200} color="#7ad08a" fuerza={0.35 * brillo} />
               <rect x={-80} y={-170} width={160} height={230} rx={22} fill="#e8a83a" opacity={0.9} stroke="#5a4020" strokeWidth={5} /><rect x={-90} y={-200} width={180} height={40} rx={10} fill="#f2f4f6" stroke="#5a6a7a" strokeWidth={4} />
               {Array.from({ length: 9 }).map((_, i) => <ellipse key={i} cx={-44 + (i % 3) * 44} cy={-110 + Math.floor(i / 3) * 50} rx={18} ry={10} fill="#fff" />)}
@@ -984,8 +985,8 @@ const p19: PlanB = {
       const f = useF();
       return (
         <Escena Set={Farmacia} pal={PAL} setProps={{ cinta: 1 }} seed={519} mano={2}
-          claves={[mira(0, 1600, 560, 1.12), mira(k(146.8), 1640, 560, 1.16, { curva: "inout" })]}
-          medio={<><Halo x={1400} y={P - 260} r={900} color="#ffc56a" fuerza={0.55} /><A {...act(THEO, 1300, { dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { hD: 40, cD: 70 } }, { f: k(145.8), v: { hD: 150, cD: 20 } }], caras: [{ f: 0, v: "determinado" }, { f: k(145.8), v: "feliz" }], enManoI: farol(f), luz: { lado: 1, color: "#ffb04a", fuerza: 1 } })} /></>}
+          claves={[mira(0, 1420, 600, 1.8), mira(k(146.8), 1440, 590, 1.88, { curva: "inout" })]}
+          medio={<><Halo x={1400} y={P - 260} r={900} color="#ffc56a" fuerza={0.55} /><A {...act(THEO, 1300, { dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { hD: 40, cD: 70 } }, { f: k(144.2), v: { hD: 120, cD: 10, tronco: -6 } }, { f: k(144.7), v: { hD: 60, cD: 10, tronco: 16 } }, { f: k(145.8), v: { hD: 150, cD: 20 } }], caras: [{ f: 0, v: "determinado" }, { f: k(145.8), v: "feliz" }], enManoI: farol(f), luz: { lado: 1, color: "#ffb04a", fuerza: 1 } })} /></>}
           hud={<><H l={[dosis(0, k(145.8))]} /><Txt t="THE MEDICINE COUNTER" a={k(143.3)} b={k(145.7)} top={140} tam={52} chip /><Mano t="DOSES" x={960} y={300} desde={k(145.8)} hasta={k(146.8) + 4} tam={150} /></>} />
       );
     };
@@ -1004,7 +1005,7 @@ const p19b: PlanB = {
       const pasadas = [147.0, 148.2, 149.4];
       return (
         <Escena Set={Farmacia} pal={PAL} setProps={{ cinta: 1, vaciar: interpolate(f, [k(147.0), k(150.0)], [0, 0.35], cl) }} seed={529} mano={2}
-          claves={[mira(0, X + 60, 600, 1.7), mira(k(150.3), X + 70, 600, 1.75, { curva: "inout" })]}
+          claves={[mira(0, X + 60, 610, 2.05), mira(k(150.3), X + 70, 610, 2.12, { curva: "inout" })]}
           medio={<>
             <Halo x={X} y={P - 260} r={700} color="#ffc56a" fuerza={0.55} />
             <g transform={`translate(${X + 220},${P})`}><path d="M-110,-150 L110,-150 L95,0 L-95,0 Z" fill="#b08a5a" stroke="#5a4020" strokeWidth={6} />{Array.from({ length: Math.floor(pasadas.filter((t) => f > k(t + 0.3)).length * 3) }).map((_, i) => <rect key={i} x={-80 + (i % 4) * 40} y={-176 - Math.floor(i / 4) * 30} width={36} height={30} rx={3} fill={["#e9ecef", "#cfe8f2", "#5a7442"][i % 3]} />)}</g>
@@ -1028,7 +1029,7 @@ const p19c: PlanB = {
       const caja = (t: number) => interpolate(f, [k(t), k(t + 0.4)], [0, 1], cl);
       return (
         <Escena Set={Panorama} pal={PAL} setProps={{ hora: "noche", luces: 0, nieve: 0.8, ventana: 0 }} seed={539} mano={2}
-          claves={[mira(0, xa + 60, P - 60, 1.55), mira(k(153.3), xa + 80, P - 60, 1.6, { curva: "inout" })]}
+          claves={[mira(0, xa - 40, P - 40, 1.95), mira(k(153.3), xa - 20, P - 40, 2.02, { curva: "inout" })]}
           medio={<>
             <Auto x={xa + 200} y={P + 120} color="#7a3a2a" tipo="pickup" s={1.7} nieve={0.3} />
             {Array.from({ length: Math.floor([151.2, 151.9, 152.6].filter((t) => f > k(t + 0.4)).length * 2 + 2) }).map((_, i) => <rect key={i} x={xa + 200 - 200 + (i % 4) * 46} y={P + 120 - 62 * 1.7 - 40 - Math.floor(i / 4) * 40} width={42} height={40} rx={3} fill={["#e9ecef", "#cfe8f2", "#5a7442"][i % 3]} />)}
@@ -1044,7 +1045,7 @@ const p19c: PlanB = {
 
 const p19d: PlanB = {
   a: 153.3, b: 156.9, trans: { tipo: "corte" },
-  sfx: [[153.4, "paper", -10], [153.6, "write", -8], [153.9, "lantern", -10, { dur: 1.2 }], [155.6, "sad", -16]],
+  sfx: [[153.4, "paper", -10], [153.6, "write", -8], [155.7, "lantern", -10, { dur: 1.2 }], [155.6, "sad", -16]],
   el: (k) => {
     const Pl: React.FC = () => {
       const f = useF();
@@ -1052,14 +1053,14 @@ const p19d: PlanB = {
       return (
         <AbsoluteFill style={{ background: "radial-gradient(circle at 40% 50%, #3a2a1e 0%, #120c08 80%)" }}>
           <svg width={1920} height={1080}>
-            <g transform="translate(560,560) rotate(-3)">
+            <g transform="translate(700,590) rotate(-3) scale(1.1)">
               <rect x={-330} y={-400} width={660} height={800} rx={20} fill="#efe4c8" stroke="#5a4020" strokeWidth={8} /><rect x={-100} y={-430} width={200} height={60} rx={12} fill="#8a96a4" />
               {items.map((t, i) => { const tick = f > k(153.5) + i * 16; return <g key={t} transform={`translate(-280,${-280 + i * 130})`}><rect x={0} y={-40} width={56} height={56} rx={8} fill="#fff" stroke="#3a3a44" strokeWidth={4} />{tick && <path d="M8,-12 L24,6 L50,-34" stroke="#3aa05a" strokeWidth={10} fill="none" strokeLinecap="round" />}<text x={80} y={4} fontFamily={FONT} fontWeight={600} fontSize={i === 4 ? 32 : 40} fill="#1d3a8a">{t}</text></g>; })}
             </g>
-            <g transform="translate(1420,640)"><FarolMano s={4.2} f={f} on={interpolate(f, [k(153.9), k(154.4)], [0, 1], cl)} halo={0.9} /></g>
+            <g transform="translate(1500,660)"><FarolMano s={4.6} f={f} on={interpolate(f, [k(153.5) + 66, k(153.5) + 76], [0, 1], cl)} halo={1} /></g>
           </svg>
           <H l={[dosis(184)]} />
-          <Txt t="THEY HOPE THEY NEVER USE IT" a={k(155.0)} b={k(156.9) + 4} top={140} left={1060} tam={46} chip color={AMBAR} />
+          <Txt t="THEY HOPE THEY NEVER USE IT" a={k(155.0)} b={k(156.9) + 4} top={140} left={1150} tam={44} chip color={AMBAR} />
         </AbsoluteFill>
       );
     };
@@ -1075,7 +1076,7 @@ const p20: PlanB = {
     const Pl: React.FC = () => {
       const f = useF();
       return (
-        <Liv claves={[mira(0, 950, 560, 1.15), mira(k(160.2), 900, 600, 1.45, { curva: "inout" }), mira(k(163.7), 880, 640, 2.0, { curva: "inout" })]}
+        <Liv claves={[mira(0, 820, 610, 1.55), mira(k(160.2), 820, 620, 1.7, { curva: "inout" }), mira(k(163.7), 880, 640, 2.0, { curva: "inout" })]}
           sp={{ farol: 1, suero: interpolate(f, [k(157.4), k(158.4)], [0, 1], cl) }}
           medio={<>
             <A {...lily({ caras: [{ f: 0, v: "cansado" }, { f: k(161.8), v: "neutral" }], poses: [{ f: 0, v: { tronco: 18, pI: 80, rI: 70, pD: 86, rD: 74, hD: 30, cD: 120, hI: 20, cI: 110, cabeza: 14 } }, { f: k(161.6), v: { tronco: 20, pI: 80, rI: 70, pD: 86, rD: 74, hD: 85, cD: 30, hI: 20, cI: 110, cabeza: 18 } }] })} />
@@ -1102,7 +1103,7 @@ const p21: PlanB = {
       const dia2 = f > k(167.3);
       const duerme = f > k(169.5);
       return (
-        <Liv claves={duerme ? [mira(0, 700, 600, 1.4), mira(k(173.6), 640, 610, 1.7, { curva: "inout" })] : [mira(0, 1100, 560, 0.95), mira(k(169.5), 1100, 560, 1.0)]}
+        <Liv claves={duerme ? [mira(0, 700, 600, 1.4), mira(k(173.6), 640, 610, 1.7, { curva: "inout" })] : [mira(0, 860, 600, 1.25), mira(k(169.5), 870, 600, 1.3)]}
           sp={{ farol: dia2 && !duerme ? 0.2 : 1, suero: 1, sueroNivel: dia2 ? 0.4 : 0.7, hora: f > k(164.9) && f < k(166.6) ? "dia" : f > k(167.3) && f < k(168.8) ? "dia" : "noche", sol: (f > k(164.9) && f < k(166.6)) || (f > k(167.3) && f < k(168.8)) ? 0.6 : 0 }}
           medio={<>
             <A {...lily({ caras: [{ f: 0, v: "cansado" }] })} /><MantaLily />
@@ -1125,13 +1126,13 @@ const GrafFiebre: React.FC<{ k: (s: number) => number }> = ({ k }) => {
   const u = interpolate(f, [k(164.8), k(169.4)], [0, 1], cl);
   const op = interpolate(f, [k(164.6), k(165.0), k(169.4), k(169.8)], [0, 1, 1, 0], cl);
   const X0 = 1300, Y0 = 520, W = 520, yv = (v: number) => Y0 - (v - 97) * 50;
-  return op > 0 ? <svg width={1920} height={1080} style={{ position: "absolute", opacity: op }}>
+  return op > 0 ? <svg width={1920} height={1080} style={{ position: "absolute", opacity: op }}><g transform="translate(1860,230) scale(1.25) translate(-1860,-230)">
     <rect x={X0 - 40} y={230} width={W + 80} height={340} rx={20} fill="rgba(18,15,24,0.88)" stroke="#f6ecd2" strokeWidth={3} />
     <line x1={X0} y1={yv(98.6)} x2={X0 + W} y2={yv(98.6)} stroke="#7ad08a" strokeWidth={4} strokeDasharray="12 10" /><text x={X0 + W} y={yv(98.6) + 34} textAnchor="end" fontFamily={FONT} fontSize={26} fill="#7ad08a">NORMAL 98.6</text>
     <path d={`M${X0},${yv(102)} L${X0 + W * u},${yv(102) + 6 * Math.sin(u * 20)}`} stroke="#ff6a5a" strokeWidth={10} fill="none" strokeLinecap="round" />
     <text x={X0} y={yv(102) - 24} fontFamily={FONT} fontWeight={700} fontSize={34} fill="#ff8a6a">102°F</text>
     {[0.5, 1].map((d, i) => <text key={i} x={X0 + W * d} y={Y0 + 40} textAnchor="end" fontFamily={FONT} fontWeight={700} fontSize={28} fill="#f6ecd2" opacity={u >= d - 0.02 ? 1 : 0.3}>{`DAY ${i + 1}`}</text>)}
-  </svg> : null;
+  </g></svg> : null;
 };
 
 // ============ 22 · tercera mañana: «toast»; baja la fiebre; día 7 caminando ============
@@ -1144,9 +1145,9 @@ const p22: PlanB = {
       const d7 = f > k(178.9);
       return d7 ? (
         <Escena Set={Granja} pal={PAL} setProps={{ hora: "dia", estacion: "verano", helada: 0.8, crec: 1 }} seed={522} mano={2}
-          claves={[mira(0, 3300, 560, 0.9), mira(k(184.6), 3200, 600, 1.3, { curva: "inout" })]}
+          claves={[mira(0, 3120, 640, 1.9), mira(k(184.6), 3200, 640, 2.0, { curva: "inout" })]}
           medio={<>
-            <A {...act(LILY, 3050, { ruta: [{ f: k(178.9), x: 2900, y: P }, { f: k(181.0), x: 3150, y: P }], poses: [{ f: 0, v: "parado" }, { f: k(181.4), v: "manosCintura" }], caras: [{ f: 0, v: "feliz" }, { f: k(181.4), v: "enojo" }], habla: [[k(181.4), k(184.0)]] })} />
+            <A {...act(LILY, 3050, { ruta: [{ f: k(178.9), x: 2900, y: P }, { f: k(181.0), x: 3150, y: P }], poses: [{ f: 0, v: "parado" }, { f: k(179.4), v: { hD: 150, cD: 20, hI: 30, cI: 30 } }, { f: k(179.9), v: { hD: 30, cD: 30, hI: 150, cI: 20 } }, { f: k(180.4), v: { hD: 150, cD: 20, hI: 30, cI: 30 } }, { f: k(180.9), v: "parado" }, { f: k(181.4), v: "manosCintura" }, { f: k(182.6), v: { hD: 160, cD: 10, hI: 20, cI: 30 } }], caras: [{ f: 0, v: "feliz" }, { f: k(181.4), v: "enojo" }], habla: [[k(181.4), k(184.0)]] })} />
             <A {...act(BEN, 3380, { dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: "encogerse" }], caras: [{ f: 0, v: "picaro" }] })} />
             <g transform={`translate(3280,${P - 10})`}>{[0, 1, 2].map((i) => <g key={i}><rect x={i * 30} y={-50} width={24} height={44} rx={5} fill="#cfe8f2" opacity={0.85} /><circle cx={i * 30 + 12} cy={-22} r={5} fill="#3a2a1a" /></g>)}</g>
           </>}
@@ -1176,7 +1177,7 @@ const p23: PlanB = {
       const pizarra = f < k(186.2);
       const n = Math.round(interpolate(f, [k(190.0), k(194.0)], [24, 12], cl));
       return (
-        <Liv claves={pizarra ? [mira(0, GL_PIZARRA.x - 20, GL_PIZARRA.y + 200, 1.6)] : [mira(0, L.mesa, 620, 1.3), mira(k(195.4), L.mesa, 600, 1.7, { curva: "inout" })]}
+        <Liv claves={pizarra ? [mira(0, GL_PIZARRA.x - 20, GL_PIZARRA.y + 200, 1.6)] : [mira(0, L.mesa - 60, 620, 1.45), mira(k(195.4), L.mesa - 60, 600, 1.75, { curva: "inout" })]}
           sp={{ farol: 1, reglas: [{ t: "1. FRESH FIRST", desde: -100 }, { t: "2. NOTHING RISKY ALONE", desde: -100 }, { t: "3. ONE THING…", desde: -100 }, { t: "PLAN A: IV ANTIBIOTICS", desde: -100, color: "#b8382c", tilde: k(185.3) }, { t: "PLAN B: THE TABLE", desde: -100, color: "#b8382c" }] }}
           medio={!pizarra && <>
             <A {...act(JUNE, L.mesa - 140, { asiento: [{ f: 0, v: 60 }], poses: [{ f: 0, v: "sentado" }, { f: k(188.8), v: { tronco: 14, pI: 88, rI: 88, pD: 92, rD: 92, hD: 80, cD: 20, hI: 25, cI: 50 } }], dir: [{ f: 0, v: 1 }], caras: [{ f: 0, v: "duda" }, { f: k(192.0), v: "triste" }], miradas: [{ f: 0, v: { x: 1, y: 0.5 } }] })} />
@@ -1197,7 +1198,7 @@ const p23: PlanB = {
 // ============ 24 · «not coming back» · Duluth de noche, nadie fabrica ============
 const p24: PlanB = {
   a: 195.4, b: 199.2, trans: { tipo: "fundido", d: 10 },
-  sfx: [[195.5, "wind_cold", -14, { dur: 3.5 }], [196.3, "creak", -12], [197.6, "metal_fall", -14], [198.5, "tick", -4]],
+  sfx: [[195.5, "wind_cold", -14, { dur: 3.5 }], [196.3, "creak", -12], [196.6, "birds", -16, { dur: 1 }], [197.6, "metal_fall", -14], [198.5, "tick", -4]],
   el: (k) => {
     const Pl: React.FC = () => {
       const f = useF();
@@ -1212,6 +1213,8 @@ const p24: PlanB = {
             <rect x={640} y={420} width={520} height={60} rx={8} fill="#e9ecef" /><text x={900} y={462} textAnchor="middle" fontFamily={FONT} fontWeight={700} fontSize={36} fill="#2f5a7a">PHARMA PLANT · DULUTH</text>
             {Array.from({ length: 50 }).map((_, i) => <circle key={i} cx={(i * 211 + f * (1 + (i % 3))) % 1920} cy={(i * 97 + f * (2 + (i % 4))) % 1080} r={2 + (i % 3)} fill="#fff" opacity={0.7} />)}
             <path d="M0,756 Q500,730 960,760 T1920,750 L1920,1080 L0,1080 Z" fill="#f2f4f8" />
+            {(() => { const u = interpolate(f, [k(196.0), k(198.6)], [0, 1], cl); const cx = 1900 - u * 1700, cy = 300 - Math.sin(u * Math.PI) * 90, al = Math.sin(f / 2) * 14; return u > 0 && u < 1 && <path d={`M${cx - 34},${cy - al} Q${cx - 14},${cy - 8} ${cx},${cy} Q${cx + 14},${cy - 8} ${cx + 34},${cy - al}`} stroke="#141018" strokeWidth={7} fill="none" strokeLinecap="round" />; })()}
+            <g transform={`translate(330,${1010 + Math.sin(f / 9) * 3})`}><Halo x={60} y={-260} r={260} color="#ffc56a" fuerza={0.5} /><g transform="scale(-1,1)"><Figu x={0} y={0} s={4.2} color="#1c2230" /></g></g>
           </svg>
           <H l={[dosis(96)]} />
           <Txt t="NOT COMING BACK" a={k(195.6)} b={k(197.4)} top={140} tam={56} chip />
@@ -1274,7 +1277,8 @@ const p26: PlanB = {
       );
       return (
         <Escena Set={Farmacia} pal={PAL} setProps={{ cinta: 1, vaciar: interpolate(f, [k(205.2), k(207.6)], [0.5, 1], cl), polvo: 1 }} seed={526} mano={2}
-          claves={[mira(0, 1700, 520, 0.85), mira(k(207.8), 1700, 520, 0.7, { curva: "inout" })]}
+          claves={[mira(0, 1250, 600, 1.9), mira(k(207.8), 1720, 600, 1.9)]}
+          medio={<A {...act(JUNE, 1300, { ruta: [{ f: k(205.0), x: 1100, y: P }, { f: k(207.8), x: 1800, y: P }], dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { hD: 40, cD: 70, cabeza: 8 } }, { f: k(206.6), v: { tronco: 10, hD: 30, cD: 60, cabeza: 18 } }], caras: [{ f: 0, v: "triste" }, { f: k(206.6), v: "cansado" }], miradas: [{ f: 0, v: { x: 0.6, y: -0.5 } }], enManoD: farol(f), luz: { lado: 1, color: "#ffb04a", fuerza: 1 } })} />}
           hud={<><H l={[dosis([{ f: 0, v: 95 }, { f: k(205.4), v: 0, d: 60 }]), anio([{ f: 0, v: 1 }, { f: k(205.2), v: 10, d: 50 }], k(205.2))]} /><Txt t="IN 10 YEARS, WHEN THE SHELVES ARE EMPTY?" a={k(205.4)} b={k(207.8) + 4} top={140} tam={46} mano chip color={AMBAR} /></>} />
       );
     };
@@ -1291,7 +1295,7 @@ const p27: PlanB = {
     const Pl: React.FC = () => {
       const f = useF();
       return (
-        <Liv claves={[mira(0, 2800, 730, 1.25), mira(k(211.4), 2820, 735, 1.32, { curva: "inout" })]} sp={{ farol: 1, libros: 1 }}
+        <Liv claves={f < k(209.4) ? [mira(0, 2800, 730, 1.3), mira(k(209.4), 2810, 730, 1.36, { curva: "inout" })] : [mira(0, L.mesa - 300, 640, 1.95), mira(k(211.4), L.mesa - 280, 640, 2.02, { curva: "inout" })]} sp={{ farol: 1, libros: 1 }}
           medio={<>
             <Halo x={2750} y={P - 300} r={900} color={AMBAR} fuerza={0.45} />
             {DIEZ.map((l, i) => i === 0
@@ -1394,7 +1398,7 @@ const p29: PlanB = {
     const Pl: React.FC = () => {
       const f = useF();
       if (f < k(237.3)) return (
-        <Liv claves={f < k(232.0) ? [mira(0, GL_PIZARRA.x - 20, GL_PIZARRA.y + 200, 1.6), mira(k(232.0), GL_PIZARRA.x - 10, GL_PIZARRA.y + 200, 1.66)] : [mira(0, 2680, 620, 1.25), mira(k(237.3), 2640, 620, 1.32, { curva: "inout" })]}
+        <Liv claves={f < k(232.0) ? [mira(0, GL_PIZARRA.x - 35, GL_PIZARRA.y + 157, 2.0), mira(k(232.0), GL_PIZARRA.x - 25, GL_PIZARRA.y + 157, 2.06)] : [mira(0, 2700, 640, 1.65), mira(k(237.3), 2680, 640, 1.72, { curva: "inout" })]}
           sp={{ farol: 1, reglas: [{ t: "1. FRESH FIRST", desde: -100 }, { t: "2. NOTHING RISKY ALONE", desde: -100 }, { t: "3. ONE THING…", desde: -100 }, { t: "PLAN A: IV ANTIBIOTICS", desde: -100, color: "#b8382c", tilde: -100 }, { t: "PLAN B: THE TABLE", desde: -100, color: "#b8382c" }, { t: "NEW LAW: WASH HANDS", desde: k(229.8), color: "#2f9a4a" }] }}
           medio={<>
             <Palangana x={2500} y={P - 180} espuma={1} f={f} /><rect x={2380} y={P - 180} width={260} height={180} fill="#6a4a30" />
@@ -1405,8 +1409,8 @@ const p29: PlanB = {
             <A {...act(DEV, 3100, { dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "neutral" }, { f: k(235.6), v: "picaro" }], poses: [{ f: 0, v: "parado" }, { f: k(235.8), v: { hD: 40, cD: 140, cabeza: 10 } }] })} />
           </>}
           hud={<><H />
-            <Txt t="BEFORE COOKING · BEFORE ANY CUT" a={k(232.4)} b={k(235.4)} top={150} tam={46} chip />
-            <Txt t="…BEFORE TOUCHING A BABY?" a={k(235.4)} b={k(237.3)} top={150} tam={46} chip color={AMBAR} /></>} />
+            <Txt t="BEFORE COOKING · BEFORE ANY CUT" a={k(232.4)} b={k(235.4)} top={140} tam={46} chip />
+            <Txt t="…BEFORE TOUCHING A BABY?" a={k(235.4)} b={k(237.3)} top={140} tam={46} chip color={AMBAR} /></>} />
       );
       return (
         <Escena Set={Granja} pal={PAL} setProps={{ hora: "invierno", estacion: "invierno", humo: 0.6 }} seed={529} mano={2}
@@ -1500,7 +1504,7 @@ const p31: PlanB = {
       const ax = GR_PUNTOS.alambique;
       return (
         <Escena Set={Granero} pal={PAL} setProps={{ farol: 1, alambique: 1, vapor: f > k(255.0) ? 1 : 0 }} seed={531} mano={2}
-          claves={[mira(0, ax, 560, 1.2), mira(k(257.4), ax - 60, 600, 1.5, { curva: "inout" }), mira(k(260.9), ax - 30, 640, 1.75, { curva: "inout" })]}
+          claves={[mira(0, ax - 80, 600, 1.55), mira(k(257.4), ax - 60, 610, 1.6, { curva: "inout" }), mira(k(260.9), ax - 30, 640, 1.75, { curva: "inout" })]}
           medio={<>
             <A {...act(DEV, ax - 260, { dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { tronco: 16, hD: 70, cD: 50 } }], caras: [{ f: 0, v: "determinado" }], ajuste: (p, ff) => ({ ...p, cD: p.cD + 10 * Math.sin(ff / 3) }) })} />
             <A {...act(MARCUS, ax + 300, { dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: { hD: 60, cD: 60 } }, { f: k(257.4), v: { hD: 110, cD: 20, tronco: -6 } }, { f: k(258.0), v: "brazosCruzados" }], caras: [{ f: 0, v: "neutral" }, { f: k(257.4), v: "enojo" }] })} />
@@ -1533,7 +1537,7 @@ const p32: PlanB = {
       const f = useF();
       if (f < k(271.9)) return (
         <Escena Set={Granja} pal={PAL} setProps={{ hora: "invierno", estacion: "invierno" }} seed={532} mano={2}
-          claves={[mira(0, 2600, 560, 0.85), mira(k(264.6), 2900, 600, 1.4, { curva: "inout" }), mira(k(271.9), 2900, 560, 1.5, { curva: "inout" })]}
+          claves={[mira(0, 2560, 620, 1.5), mira(k(264.6), 2850, 620, 1.7, { curva: "inout" }), mira(k(271.9), 2900, 610, 1.8, { curva: "inout" })]}
           medio={<>
             <Sauce x={3000} f={f} />
             <A {...act(NAN, 0, { ruta: [{ f: 0, x: 2400, y: P }, { f: k(264.4), x: 2760, y: P }], caras: [{ f: 0, v: "feliz" }], luz: BORDE_FRIO })} />
@@ -1603,7 +1607,7 @@ const p33: PlanB = {
     const Pl: React.FC = () => {
       const f = useF();
       return (
-        <Liv claves={f < k(282.0) ? [mira(0, L.mesa - 40, 610, 1.25), mira(k(282.0), L.mesa - 20, 600, 1.35, { curva: "inout" })] : f < k(285.0) ? [mira(0, L.mesa + 150, 580, 1.9), mira(k(285.0), L.mesa + 150, 570, 2.0, { curva: "inout" })] : [mira(0, L.mesa - 230, 600, 1.8), mira(k(288.7), L.mesa - 200, 600, 1.6, { curva: "inout" })]} sp={{ farol: 1 }}
+        <Liv claves={f < k(282.0) ? [mira(0, L.mesa - 40, 620, 1.6), mira(k(282.0), L.mesa - 20, 615, 1.68, { curva: "inout" })] : f < k(285.0) ? [mira(0, L.mesa + 150, 580, 1.9), mira(k(285.0), L.mesa + 150, 570, 2.0, { curva: "inout" })] : [mira(0, L.mesa - 230, 600, 1.8), mira(k(288.7), L.mesa - 200, 600, 1.6, { curva: "inout" })]} sp={{ farol: 1 }}
           medio={<>
             <A {...act(DEV, L.mesa + 150, { dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: "parado" }, { f: k(282.2), v: { hD: 130, cD: 30 } }], caras: [{ f: 0, v: "neutral" }, { f: k(282.2), v: "feliz" }], habla: [[k(282.2), k(285.0)]], enManoD: (ff: number) => ff > k(282.2) ? <PanMoho /> : null })} />
             <A {...act(JUNE, L.mesa - 250, { dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: "brazosCruzados" }, { f: k(285.2), v: { hI: 40, cI: 130, hD: 45, cD: 130, tronco: 26, cabeza: 10 } }], caras: [{ f: 0, v: "duda" }, { f: k(285.2), v: "risa" }], ajuste: (p, ff) => ff > k(285.2) && ff < k(287.6) ? { ...p, tronco: p.tronco + 14 * Math.abs(Math.sin(ff / 2.4)), cabeza: (p.cabeza ?? 0) + 8 * Math.abs(Math.sin(ff / 2.4)) } : p })} />
@@ -1624,7 +1628,7 @@ const p34: PlanB = {
     const Pl: React.FC = () => {
       const f = useF();
       const halo = interpolate(f, [k(291.0), k(292.4)], [30, 120], cl);
-      const z = interpolate(f, [0, k(295.0)], [1, 1.06], cl);
+      const z = interpolate(f, [0, k(295.0)], [1.15, 1.24], cl);
       return (
         <AbsoluteFill style={{ transform: `scale(${z})` }}>
           <Linea34 k={k} u={0}>
@@ -1634,7 +1638,7 @@ const p34: PlanB = {
               <ellipse rx={halo} ry={halo * 0.36} fill="#ffffff" opacity={0.55} />
               <ellipse rx={40 + 4 * Math.sin(f / 6)} ry={18} fill="#5a9a5a" /><circle cx={-12} cy={-4} r={9} fill="#7ac07a" /><circle cx={14} cy={4} r={7} fill="#7ac07a" />
             </g>
-            <g transform="translate(1340,600)"><circle cy={-200} r={60} fill="#141018" /><circle cx={-18} cy={-206} r={14} fill="#fff" /><circle cx={18} cy={-206} r={14} fill="#fff" /><circle cx={-14} cy={-204} r={6} fill="#141018" /><circle cx={14} cy={-204} r={6} fill="#141018" /><path d="M-90,-120 Q0,-150 90,-120 L110,80 L-110,80 Z" fill="#f2f4f6" stroke="#8a96a4" strokeWidth={4} /><path d="M-60,-40 L-200,-80" stroke="#f2f4f6" strokeWidth={34} strokeLinecap="round" /><circle cx={-210} cy={-84} r={22} fill="#141018" /></g>
+            <g transform="translate(1360,650) scale(1.45)"><circle cy={-200} r={60} fill="#141018" /><circle cx={-18} cy={-206} r={14} fill="#fff" /><circle cx={18} cy={-206} r={14} fill="#fff" /><circle cx={-14} cy={-204} r={6} fill="#141018" /><circle cx={14} cy={-204} r={6} fill="#141018" /><path d="M-90,-120 Q0,-150 90,-120 L110,80 L-110,80 Z" fill="#f2f4f6" stroke="#8a96a4" strokeWidth={4} /><path d="M-60,-40 L-200,-80" stroke="#f2f4f6" strokeWidth={34} strokeLinecap="round" /><circle cx={-210} cy={-84} r={22} fill="#141018" /></g>
           </Linea34>
           <H />
           <Txt t="ALEXANDER FLEMING" a={k(288.9)} b={k(290.6)} top={140} tam={56} chip />
@@ -1675,7 +1679,7 @@ const p34b: PlanB = {
       return (
         <AbsoluteFill>
           <Linea34 k={k} u={u}>
-            {[0, 1, 2, 3].map((i) => { const e = interpolate(f, [k(295.4 + i * 0.3), k(295.4 + i * 0.3) + 6], [0, 1], cl); return <g key={i} opacity={e} transform={`translate(${620 + i * 230},${640 + (1 - e) * 60})`}><Figu x={0} y={0} s={1.9} color="#f2f4f6" f={f} i={i} camina /><rect x={-30} y={-150} width={60} height={40} rx={6} fill="#cfe8f2" stroke="#5a6a7a" strokeWidth={3} transform={`rotate(${10 * Math.sin(f / 8 + i)})`} /></g>; })}
+            {[0, 1, 2, 3].map((i) => { const e = interpolate(f, [k(295.4 + i * 0.3), k(295.4 + i * 0.3) + 6], [0, 1], cl); return <g key={i} opacity={e} transform={`translate(${620 + i * 230},${640 + (1 - e) * 60})`}><Figu x={0} y={0} s={[1.8, 2.05, 1.9, 2.15][i]} color={["#f2f4f6", "#cfe0f0", "#f2e2c0", "#e0f0d8"][i]} f={f} i={i} camina={i % 2 === 0} /><rect x={-30} y={-150} width={60} height={40} rx={6} fill="#cfe8f2" stroke="#5a6a7a" strokeWidth={3} transform={`rotate(${10 * Math.sin(f / 8 + i)})`} /></g>; })}
             {f > k(298.0) && <g transform="translate(1620,560)"><rect x={-150} y={-60} width={300} height={100} rx={16} fill="#b8382c" /><text x={0} y={6} textAnchor="middle" fontFamily={FONT} fontWeight={700} fontSize={36} fill="#fff">1ST PATIENT</text></g>}
           </Linea34>
           <H />
@@ -1735,10 +1739,10 @@ const p35: PlanB = {
       const f = useF();
       return (
         <Escena Set={Granja} pal={PAL} setProps={{ hora: "ocaso", estacion: "invierno", humo: 0.4 }} seed={535} mano={2}
-          claves={[mira(0, GRANJA_PUNTOS.granero + 560, 640, 1.3), mira(k(314.5), GRANJA_PUNTOS.granero + 760, 300, 0.62, { curva: "inout" })]}
+          claves={[mira(0, GRANJA_PUNTOS.granero + 620, 600, 1.7), mira(k(311.6), GRANJA_PUNTOS.granero + 680, 560, 1.5, { curva: "inout" }), mira(k(314.5), GRANJA_PUNTOS.granero + 760, 520, 1.3, { curva: "inout" })]}
           medio={<>
             {[0, 1, 2].map((i) => <g key={i} transform={`translate(${GRANJA_PUNTOS.granero + 860 + i * 520},${P})`}><rect x={-200} y={-1400} width={400} height={1400} rx={40} fill="#3a3e4c" /><ellipse cy={-1400} rx={200} ry={40} fill="#4a4e5c" />{[0, 1, 2, 3].map((r) => <rect key={r} x={-200} y={-1200 + r * 300} width={400} height={10} fill="#2a2e3a" />)}</g>)}
-            <A {...act(DEV, GRANJA_PUNTOS.granero + 520, { dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { hD: 100, cD: 20 } }, { f: k(311.6), v: "encogerse" }], caras: [{ f: 0, v: "duda" }, { f: k(311.6), v: "triste" }], enManoD: (ff: number) => ff < k(311.6) ? <PanMoho /> : null, luz: { lado: -1, color: "#ffcf6e", fuerza: 0.8 } })} />
+            <A {...act(DEV, GRANJA_PUNTOS.granero + 520, { escala: 1.35, dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { hD: 100, cD: 20 } }, { f: k(311.6), v: "encogerse" }], caras: [{ f: 0, v: "duda" }, { f: k(311.6), v: "triste" }], enManoD: (ff: number) => ff < k(311.6) ? <PanMoho /> : null, luz: { lado: -1, color: "#ffcf6e", fuerza: 0.8 } })} />
           </>}
           hud={<><H /><Txt t="LABS · CHEMISTRY · HUGE TANKS" a={k(307.6)} b={k(311.0)} top={140} tam={52} chip /><Txt t="NOT IN A BARN. NOT YET." a={k(311.0)} b={k(314.5) + 4} top={140} tam={60} mano chip color={AMBAR} /></>} />
       );
@@ -1788,7 +1792,7 @@ const p37: PlanB = {
     const Pl: React.FC = () => {
       const f = useF();
       return (
-        <Liv claves={f < k(329.8) ? [mira(0, GL_PIZARRA.x - 20, GL_PIZARRA.y + 200, 1.6), mira(k(329.8), GL_PIZARRA.x - 10, GL_PIZARRA.y + 200, 1.66)] : [mira(0, 260, 540, 1.3), mira(k(330.8), 260 + golpe(f, k(330.8), 10), 560, 1.4), mira(k(335.2), 240, 580, 1.5, { curva: "inout" })]}
+        <Liv claves={f < k(329.8) ? [mira(0, GL_PIZARRA.x - 20, GL_PIZARRA.y + 200, 1.6), mira(k(329.8), GL_PIZARRA.x - 10, GL_PIZARRA.y + 200, 1.66)] : [mira(0, 240, 520, 1.65), mira(k(330.8), 240 + golpe(f, k(330.8), 10), 560, 1.72), mira(k(335.2), 220, 580, 1.8, { curva: "inout" })]}
           sp={{ farol: 1, reglas: [{ t: "1. FRESH FIRST", desde: -100 }, { t: "2. NOTHING RISKY ALONE", desde: -100 }, { t: "3. ONE THING…", desde: -100 }] }}
           medio={<>
             <Tiza d={`M${GL_PIZARRA.x + 10},${GL_PIZARRA.y + 78} h190`} f={f} desde={k(328.4)} dur={10} color="#b8382c" ancho={4} o={1} />
@@ -1809,14 +1813,14 @@ const p38: PlanB = {
   el: (k) => {
     const Pl: React.FC = () => {
       const f = useF();
-      if (f < k(338.9)) return (
+      if (f < k(336.4)) return (
         <Escena Set={Granja} pal={PAL} setProps={{ hora: "noche", estacion: "verano", crec: 0.6, helada: 0.5, humo: 0.5 }} seed={538} mano={2}
           claves={[mira(0, GRANJA_PUNTOS.casa + 400, 480, 0.7), mira(k(338.9), GRANJA_PUNTOS.casa + 300, 500, 0.8, { curva: "inout" })]}
           medio={<VentanaCasa />}
-          hud={<><H l={[dia(349)]} /><Txt t="DAY 349 · A COLD SEPTEMBER NIGHT" a={k(335.4)} b={k(338.9) + 4} top={140} tam={50} chip /></>} />
+          hud={<><H l={[dia(349)]} /><Txt t="DAY 349 · A COLD SEPTEMBER NIGHT" a={k(335.4)} b={k(336.4) + 4} top={140} tam={50} chip /></>} />
       );
       return (
-        <Liv claves={[mira(0, 800, 600, 1.6), mira(k(340.8), L.mesa - 100, 600, 1.5, { curva: "inout" }), mira(k(343.0), L.mesa - 60, 590, 1.7, { curva: "inout" })]} sp={{ farol: 0, fuego: 0.4 }}
+        <Liv claves={f < k(338.9) ? [mira(0, 860, 620, 1.75), mira(k(338.9), 880, 615, 1.82, { curva: "inout" })] : [mira(0, L.mesa - 60, 700, 2.0), mira(k(343.0), L.mesa - 40, 690, 2.1, { curva: "inout" })]} sp={{ farol: 0, fuego: 0.4 }}
           medio={<>
             <A {...lily({ poses: [{ f: 0, v: { tronco: 40, pI: 80, rI: 70, pD: 86, rD: 74, hD: 30, cD: 120, hI: 20, cI: 110, cabeza: 30 } }], caras: [{ f: 0, v: "neutral" }] })} /><MantaLily color="#2f7f86" />
             <Ore x={1010} y={P} dir={-1} s={0.8} f={f} echado={0.9} />
@@ -1825,7 +1829,7 @@ const p38: PlanB = {
             {Array.from({ length: 11 }).map((_, i) => <Vial key={i} x={L.mesa - 40 + (i % 6) * 32} y={P - 182 - Math.floor(i / 6) * 60} s={0.65} />)}
             <Vial x={interpolate(f, [k(341.4), k(342.0)], [L.mesa + 120, L.mesa + 200], cl)} y={P - 182 - 60 + 60 * interpolate(f, [k(341.4), k(342.0)], [0, 1], cl)} s={0.65} />
           </>}
-          hud={<><H l={[dosis([{ f: 0, v: 95 }, { f: k(341.6), v: 94, d: 8 }, { f: k(342.4), v: 93, d: 8 }]), dia(349)]} /><Txt t="LILY · ASLEEP · HEALTHY" a={k(338.9)} b={k(340.9)} top={140} tam={52} chip color="#7ad08a" /><Txt t="JUNE COUNTS DOSES BY CANDLELIGHT" a={k(340.9)} b={k(343.0) + 4} top={140} tam={48} chip /></>} />
+          hud={<><H l={[dosis([{ f: 0, v: 95 }, { f: k(341.6), v: 94, d: 8 }, { f: k(342.4), v: 93, d: 8 }]), dia(349)]} /><Txt t="DAY 349 · A COLD SEPTEMBER NIGHT" a={k(336.4)} b={k(338.9)} top={140} tam={50} chip /><Txt t="LILY · ASLEEP · HEALTHY" a={k(338.9)} b={k(340.9)} top={140} tam={52} chip color="#7ad08a" /><Txt t="JUNE COUNTS DOSES BY CANDLELIGHT" a={k(340.9)} b={k(343.0) + 4} top={140} tam={48} chip /></>} />
       );
     };
     return <Pl />;
@@ -1939,8 +1943,8 @@ const p41: PlanB = {
       );
       return (
         <Escena Set={Granja} pal={PAL} setProps={{ hora: "ocaso", estacion: "invierno" }} seed={541} mano={1.5}
-          claves={[mira(0, 4800, 420, 0.75), mira(k(379.74), 4880, 400, 0.8, { curva: "inout" })]}
-          medio={<>{Array.from({ length: 100 }).map((_, i) => <Figu key={i} x={4250 + (i % 34) * 32 + (Math.floor(i / 34) % 2) * 16} y={P - 10 + Math.floor(i / 34) * 18} s={0.34} color={COLS[i % COLS.length]} f={f} i={i} />)}</>}
+          claves={[mira(0, 5100, 820, 1.0), mira(k(379.74), 5140, 810, 1.04, { curva: "inout" })]}
+          medio={<>{Array.from({ length: 100 }).map((_, i) => <Figu key={i} x={4250 + (i % 34) * 52 + (Math.floor(i / 34) % 2) * 26} y={P - 10 + Math.floor(i / 34) * 30} s={0.6} color={COLS[i % COLS.length]} f={f} i={i} />)}</>}
           hud={<><HudC lineas={[POP(10), isla(100)]} /><Proximo ep={6} titulo="Could 100 People Restart Humanity?" desde={k(376.5)} /></>} />
       );
     };
