@@ -1,0 +1,59 @@
+// lc02 completo: «Can TWO people survive the first winter alone?» — 80 planos sobre la voz (D:/rtmp/lc02_PLAN_MxM.md).
+// HUD fuera del montaje con cuadros globales: °F, DAY y POPULATION cambian justo en la palabra.
+import React from "react";
+import { AbsoluteFill, Audio, staticFile } from "remotion";
+import { Montaje, PlanoM, Trans } from "../../anikit/montaje";
+import { MarcaCorto } from "../../anikit/pantalla";
+import { FRIO, Poblacion, Segundo } from "../hud";
+import * as A from "./lc02_planos1";
+import * as B from "./lc02_planos2";
+
+const S = (t: number) => Math.round(t * 30);
+const FUN = (d = 12): Trans => ({ tipo: "fundido", d });
+const LUZ = (d = 14, color?: string): Trans => ({ tipo: "luz", d, color });
+const CORT: Trans = { tipo: "cortina", color: "#1d1624" };
+
+const CORTES: [number, React.FC, Trans?][] = [
+  [0, A.P01Mini], [0.98, A.P02Enero, LUZ(10, "#eef4ff")], [2.98, A.P03Termo], [5.24, A.P04SinLuz, FUN(10)], [7.26, A.P05Nadie], [10.38, A.P06Cuarto, FUN()],
+  [15.48, A.P07Dia41, LUZ(10)], [18.26, A.P08Comida, FUN(10)], [23.12, A.P09Pregunta, FUN()], [28.52, A.P10Cuenta, CORT], [29.58, A.P11Puertas, FUN(10)],
+  [39.4, A.P12Plastico], [43.58, A.P13Corte, FUN()], [49.44, A.P14Inventario, FUN()], [59.16, A.P15Lenia], [62.02, A.P16Cuerdas, FUN(10)], [66.82, A.P17Cuerda, FUN(10)],
+  [71.4, A.P18Noviembre, FUN(10)], [74.62, A.P19Liniero], [79.5, A.P20Regla, CORT], [83.64, A.P21DeADos, FUN(10)], [87.56, A.P22Bosque, FUN()], [93.14, A.P23Seca, FUN(10)],
+  [99.09, A.P24DosEstufas], [103.65, A.P25Pila, FUN(10)], [107.97, A.P26Frio, FUN(14)], [112.69, A.P27Bajo, FUN(10)], [119.15, A.P28Piel], [122.81, A.P29Canios, FUN(10)],
+  [130.67, A.P30Capas, FUN(10)], [139.13, A.P31Salida], [146.95, A.P32Invisible, FUN(14)], [151.73, A.P33Parrilla, FUN(10)], [161.17, A.P34Ferreteria, FUN(10)], [164.5, A.P35Alarmas],
+  [167.57, A.P36Grita, FUN(10)], [170.81, A.P37Hollin], [172.69, A.P38Nieve, FUN(8)], [178.53, A.P39Nueve, FUN(10)], [182.89, A.P40Dia83, FUN(14)],
+  [188.05, B.P41Reloj, FUN(10)], [194.41, B.P42Torre, FUN(10)], [198.48, B.P43Fecha], [199.6, B.P44Cena, LUZ(12)], [204.38, B.P45Navidad, FUN(12)],
+  [208.1, B.P46Diente, FUN(16)], [216.08, B.P47Sabe], [220.54, B.P48Absceso, FUN(10)], [225.16, B.P49Cabeza], [230.4, B.P50Dentista, FUN(10)], [233.98, B.P51Farmacia],
+  [237.38, B.P52Tormenta, FUN(10)], [242.14, B.P53Frasco, FUN(10)], [252.28, B.P54Pinzas, FUN(10)], [259.28, B.P55Vela, FUN(12)], [263.32, B.P56Nieve, FUN(10)],
+  [271.3, B.P57Sonrie, LUZ(14)], [276.84, B.P58Silencio, FUN(16)], [284.2, B.P59Antartida, FUN(10)], [293.5, B.P60Mirada, FUN(10)], [298.89, B.P61Nadie],
+  [300.87, B.P62Regla3, CORT], [305.89, B.P63Lee, FUN(10)], [308.35, B.P64Pulso], [310.41, B.P65Cartas], [311.67, B.P66Caminan, LUZ(12)], [316.23, B.P67Hielo, FUN(10)],
+  [322.53, B.P68Lago, FUN(10)], [328.39, B.P69Sol, LUZ(16, "#fff3d8")], [335.45, B.P70Ultima, FUN(10)], [339.97, B.P71Abrazo], [343.93, B.P72Escaner, FUN(14)],
+  [352.63, B.P73Estatica, FUN(10)], [357.97, B.P74Voz], [362.09, B.P75Gus, FUN(10)], [368.57, B.P76Ventana, FUN(10)], [375.19, B.P77Agarra, FUN(10)],
+  [378.75, B.P78Tres, FUN(8)], [382.59, B.P79Cta, CORT], [391.05, B.P80Next, FUN(12)],
+];
+export const LC02_FRAMES = 11830;
+
+const planos: PlanoM[] = CORTES.map(([t, El, trans], i) => {
+  const a = S(t);
+  const b = i + 1 < CORTES.length ? S(CORTES[i + 1][0]) : LC02_FRAMES;
+  return { dur: b - a, el: <El />, trans };
+});
+
+const HudLc02: React.FC = () => (
+  <>
+    {/* cuadro 0 = la miniatura: −30°F arriba a la izquierda + POPULATION: 2 */}
+    <Segundo claves={[{ f: 0, v: -30 }, { f: S(3.2), v: -28, d: 10 }, { f: S(115), v: -4, d: 20 }, { f: S(118.1), v: -31, d: 16 }, { f: S(173.5), v: -20, d: 12 }, { f: S(183), v: -12, d: 12 }, { f: S(209), v: -15, d: 10 }, { f: S(271), v: -8, d: 12 }, { f: S(328.6), v: 18, d: 30 }]}
+      sufijo="°F" icono="temp" color={FRIO} y={122} desde={-60} signo />
+    <Segundo claves={[{ f: 0, v: 41 }, { f: S(29.7), v: 42, d: 6 }, { f: S(104.0), v: 60, d: 20 }, { f: S(183.1), v: 83, d: 20 }, { f: S(209.2), v: 90, d: 10 }, { f: S(274.2), v: 100, d: 12 }, { f: S(328.6), v: 130, d: 30 }]}
+      prefijo="DAY " icono="dia" y={196} desde={S(15.5)} />
+    <Poblacion claves={[{ f: 0, v: 2 }, { f: S(381.45), v: 3, d: 8 }]} desde={-60} />
+    <MarcaCorto />
+  </>
+);
+
+export const Lc02: React.FC<{ audio?: boolean }> = ({ audio = true }) => (
+  <AbsoluteFill style={{ background: "#000" }}>
+    <Montaje planos={planos} />
+    <HudLc02 />
+    {audio && <Audio src={staticFile("lc02.wav")} />}
+  </AbsoluteFill>
+);

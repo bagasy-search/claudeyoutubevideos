@@ -52,7 +52,7 @@ export const P32Baja: React.FC = () => {
   return (
     <Escena Set={Lobby} pal={PAL} claves={[mira(0, 1150, LOBBY_PISO - 230, 1.9), mira(k(184.9), 1150, LOBBY_PISO - 240, 2.0), mira(k(184.9) + 1, D.x + 40, D.y - 200, 1.9), mira(90, D.x + 40, D.y - 210, 2.0)]} seed={32} setProps={{ luces: 1, afuera: "noche" }}
       medio={<>
-        <Pj look={THEO} ruta={[{ f: 0, x: 1150, y: LOBBY_PISO }]} poses={[{ f: 0, v: { hD: -150, cD: -30, hI: 150, cI: 30 } }]} caras={[{ f: 0, v: "miedo" }]} giros={[{ f: 0, v: 0 }, { f: 6, v: 0.5 }, { f: 12, v: -0.5 }, { f: 18, v: 0.4 }, { f: 24, v: 0 }]} habla={[[0, k(184.9)]]} />
+        <Pj look={THEO} ruta={[{ f: 0, x: 1150, y: LOBBY_PISO }]} poses={[{ f: 0, v: { hD: 150, cD: 15, hI: 140, cI: 20 } }]} caras={[{ f: 0, v: "miedo" }]} giros={[{ f: 0, v: 0 }, { f: 6, v: 0.5 }, { f: 12, v: -0.5 }, { f: 18, v: 0.4 }, { f: 24, v: 0 }]} habla={[[0, k(184.9)]]} />
         <Pj look={JUNE} ruta={[{ f: 0, x: D.x + 60, y: D.y }]} dir={[{ f: 0, v: -1 }]} enManoD={<Matafuego />} poses={[{ f: 0, v: { hD: -60, cD: -80, hI: -30, cI: -90 } }, { f: k(185.2), v: "parado" }]} caras={[{ f: 0, v: "enojo" }, { f: k(185.5), v: "triste" }]} />
       </>} />
   );
