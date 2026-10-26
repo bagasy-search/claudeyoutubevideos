@@ -1,5 +1,5 @@
 import React from "react";
-import { C, prog } from "./kit";
+import { C, prog, Chip } from "./kit";
 import { Persona, GRUMETE, CAPITAN, PIRATA, Ropa } from "./persona";
 import { Key, CUB, ALCA, BAT, MAR, BarcoLejos, Canon } from "./barco";
 import { G, S, P, arco, Gato9, BolsaRoja, GatoAnimal, Tablon, Botella, Pistola, Cartucho, Moneda8, Precio, Sello, Signo, TINTA, Cota } from "./obj";
@@ -200,9 +200,6 @@ export const M4: React.FC<{ t: number }> = ({ t }) => {
         <P t={t} t0={421.5} x={ISLA + 20} y={1935} s={0.3}><Botella c="#3a3a3a" txt="☢" /></P>
         <P t={t} t0={422.6} x={ISLA + 90} y={1945} s={0.22} rot={-15}><Pistola t={t} /></P>
         <P t={t} t0={423.7} x={ISLA + 150} y={1940} s={0.25}><Cartucho /></P>
-        <Lbl t={t} t0={419.0} t1={421.3} x={ISLA - 230} y={1840} txt="WATER" size={26} color={C.crema} />
-        <Lbl t={t} t0={421.5} t1={424.6} x={ISLA + 20} y={1840} txt="POWDER" size={26} color={C.crema} />
-        <Lbl t={t} t0={423.7} t1={424.6} x={ISLA + 150} y={1870} txt="1 SHOT" size={26} color={C.rojo} />
         <Lbl t={t} t0={416.8} t1={418.6} x={ISLA} y={1640} txt="MAROONED" size={90} color={C.oro} />
         <S t={416.4} p="whoosh_big" g={-4} />
         <S t={417.0} p="sea" g={-12} d={6} />
@@ -245,6 +242,7 @@ export const O4: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={407.6} t1={410.6} text="LETTING THE CAT OUT OF THE BAG" y={170} size={84} color={C.oro} />
       <S t={407.6} p="sparkle" g={-10} />
       <Txt t={t} t0={424.8} t1={426.8} text="NOT FOR HUNTING" y={900} size={84} color={C.crema} />
+      {(["1 · WATER", "2 · POWDER", "3 · PISTOL", "4 · ONE SHOT"]).map((x, i) => <Chip key={i} t={t} t0={[419.0, 421.4, 422.4, 423.6][i]} t1={426.8} text={x} color={i === 3 ? C.rojo : C.teal} x={1380} y={260 + i * 115} size={56} />)}
       {en(t, 426.9, 429.3) && <div style={{ position: "absolute", inset: 0, background: `rgba(10,5,20,${0.55 * prog(t, 426.9, 428.2)})` }} />}
       <Txt t={t} t0={436.3} t1={438.8} text="“KISSING THE GUNNER'S DAUGHTER”" y={170} size={78} color={C.oro} />
       <S t={436.3} p="sparkle" g={-12} />

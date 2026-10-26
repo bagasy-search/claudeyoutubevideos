@@ -1,6 +1,6 @@
 import React from "react";
 import { interpolate } from "remotion";
-import { C, prog, Emote } from "./kit";
+import { C, prog, Emote, Chip } from "./kit";
 import { Persona, GRUMETE, CAPITAN, PIRATA, CIVIL, Ropa } from "./persona";
 import { Key, CUB, ALCA, MAR, BarcoLejos, Barril } from "./barco";
 import { G, S, P, arco, Moneda8, Galleta, Tijera, Balde, Cofre, Sierra, Frasco, Pistola, Botella, Sello, Globo, Signo, Cuenco, Libro, TINTA } from "./obj";
@@ -25,7 +25,7 @@ export const K1: Key[] = [
   [74.9, -6200, 1450, 0.7, 1.0],
   [79.4, -6250, 1350, 0.85, 0.7],
   [82.5, -7550, 1100, 1.7, 0.9],
-  [84.7, -7300, 1170, 2.3, 0.6, "seco"],
+  [84.7, -7300, 1090, 1.9, 0.6, "seco"],
   [89.5, -6700, 1390, 1.7, 0.8],
   [93.9, -4600, 1300, 0.36, 1.6],
   [97.2, -3600, 1600, 0.6, 1.8],
@@ -164,10 +164,8 @@ export const Me1: React.FC<{ t: number }> = ({ t }) => {
         {/* paga cortada, comida cortada, el chicotazo */}
         <P t={t} t0={84.9} t1={86.6} x={1000} y={1060} s={0.9}><Moneda8 r={44} t={t} /></P>
         <P t={t} t0={85.3} t1={86.6} x={1000} y={1060} s={0.6}><Tijera t={t} t0={85.3} /></P>
-        <Lbl t={t} t0={85.0} t1={86.6} x={1000} y={960} txt="WAGES" size={46} color={C.oro} />
         <P t={t} t0={86.6} t1={87.6} x={1000} y={1060} s={0.5}><Galleta /></P>
         <P t={t} t0={86.7} t1={87.6} x={1000} y={1060} s={0.6}><Tijera t={t} t0={86.7} /></P>
-        <Lbl t={t} t0={86.6} t1={87.6} x={1000} y={960} txt="FOOD" size={46} color={C.lima} />
         <S t={85.4} p="tear" g={-6} />
         <S t={86.8} p="tear" g={-6} pitch={1.2} />
         <S t={87.8} p="swish" g={-4} />
@@ -243,6 +241,10 @@ export const O1: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={70.0} t1={74.8} text="NOBODY IS BORN A PIRATE" y={170} size={100} palabras={[70, 72.2, 72.9, 73.5, 73.9]} />
       <Txt t={t} t0={75.0} t1={79.2} text="MERCHANT SAILORS" y={170} size={110} color={C.teal} />
       <Txt t={t} t0={82.6} t1={84.6} text="TOTAL POWER" y={170} size={120} color={C.rojo} />
+      <Chip t={t} t0={85.4} t1={89.5} text="− WAGES" color={C.rojo} x={1300} y={300} size={64} />
+      <Chip t={t} t0={86.6} t1={89.5} text="− FOOD" color={C.rojo} x={1300} y={420} size={64} />
+      <Chip t={t} t0={87.9} t1={89.5} text="+ ROPE'S END" color={C.violeta} x={1300} y={540} size={64} />
+      <Chip t={t} t0={90.4} t1={93.8} text="ALWAYS «TOO SLOW»" color={C.rojo} x={1080} y={300} size={60} />
       <S t={82.6} p="slam" g={-8} />
       <Txt t={t} t0={94.1} t1={97.2} text="ONE MORNING..." y={170} size={110} />
       <Txt t={t} t0={97.3} t1={99.6} text="FASTER THAN YOU" y={170} size={110} />
@@ -253,6 +255,7 @@ export const O1: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={107.0} t1={111.9} text="NOT DYING FOR SUGAR" y={170} size={110} palabras={[107, 110.2, 110.8, 111.2]} />
       <Txt t={t} t0={112.1} t1={113.5} text="FLAG DOWN" y={170} size={120} color={C.crema} />
       <Txt t={t} t0={119.8} t1={121.1} text="THEN THEY LOOK AT THE CREW" y={170} size={90} />
+      {(["CARPENTER ✓", "SURGEON ✓", "NAVIGATOR ✓", "MUSICIAN ✓"]).map((x, i) => <Chip key={i} t={t} t0={122.2 + i * 1.2} t1={128.0} text={x} color={C.teal} x={90} y={300 + i * 115} size={58} />)}
       <Txt t={t} t0={134.9} t1={135.5} text="AND YOU?" y={170} size={150} color={C.oro} />
       <S t={134.9} p="zoom" g={-6} />
       {/* forzado, olvidado o rogando */}
