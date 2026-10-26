@@ -44,8 +44,8 @@ export const Mundo: React.FC<{ t: number; c: CamP }> = ({ t }) => {
       })}
       {/* el cocinero que huye de la cocina en llamas */}
       {t > 780.2 && t < 785 && <Persona x={3500 - 600 * prog(t, 780.6, 783.6)} y={2965} h={300} t={t} seed={91} ropa={SIERVO(1)} expr="miedo" camina={3} flip bD={150} cD={40} bI={150} cI={40} />}
-      {t < 802 ? <Acostado x={5300} y={PISO - 10} h={260} t={t} seed={7} ropa={CHICO} expr={tose ? "miedo" : "dormido"} />
-        : <Persona x={5300} y={PISO} h={270} t={t} seed={7} ropa={CHICO} expr="miedo" />}
+      {t < 796.4 ? <Acostado x={5300} y={PISO - 10} h={260} t={t} seed={7} ropa={CHICO} expr={tose ? "miedo" : "dormido"} />
+        : <Persona x={5300 - 260 * prog(t, 797.2, 798.6)} y={PISO} h={270} t={t} seed={7} ropa={CHICO} expr="miedo" salta={796.4} camina={t > 797.2 && t < 798.6 ? 3 : 0} flip bD={150} cD={150} bI={150} cI={150} />}
       {/* el junco olvidado, encendido en el piso */}
       <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
         <g transform="translate(5300 2950) rotate(-70)"><rect x={-6} y={-90} width={12} height={100} rx={6} fill="#c9b26a" /></g>
@@ -83,7 +83,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
         return t >= t0 && p.x > 780 && (
           <React.Fragment key={i}>
             <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, overflow: "hidden", pointerEvents: "none" }}>
-              <div style={{ position: "absolute", left: p.x, top: p.y }}><Marcador t={t} t0={t0} x={0} y={0} n={i + 1} s={0.8} color={C.naranja} /></div>
+              <div style={{ position: "absolute", left: p.x, top: p.y }}><Marcador t={t} t0={t0} x={0} y={-130} n={i + 1} s={0.8} color={C.naranja} /></div>
             </div>
           </React.Fragment>
         );
@@ -93,7 +93,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       ))}
       {t > 760.8 && t < 762.5 && <Chip t={t} t0={760.83} text="(SOMETIMES THATCH)" color={C.oro} tinta={C.noche} x={1300} y={150} size={44} />}
       {t > 756.8 && t < 772.5 && (
-        <div style={{ position: "absolute", left: 1640, top: 880, transform: `translate(-50%,-50%) scale(${1 + 0.15 * Math.max(0, 1 - (t - (COSAS[n - 1]?.[3] ?? 0)) * 4)})`, fontFamily, fontWeight: 700, fontSize: 120, color: C.naranja, WebkitTextStroke: `10px ${C.noche}`, paintOrder: "stroke fill" }}>🔥 ×{n}</div>
+        <div style={{ position: "absolute", left: 1760, top: 700, transform: `translate(-50%,-50%) scale(${1 + 0.15 * Math.max(0, 1 - (t - (COSAS[n - 1]?.[3] ?? 0)) * 4)})`, fontFamily, fontWeight: 700, fontSize: 120, color: C.naranja, WebkitTextStroke: `10px ${C.noche}`, paintOrder: "stroke fill" }}>🔥 ×{n}</div>
       )}
       <Chip t={t} t0={769.61} t1={772.5} text="…SOMEONE WAS SUPPOSED TO COVER IT" color={C.violeta} x={960} y={950} centro size={50} />
       {/* la cocina aparte */}

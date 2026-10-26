@@ -14,10 +14,10 @@ export const CAM: Llave[] = [
   [55.9, 4600, 2690, 0.9], [57.9, 4700, 2650, 0.92], [62.6, 5800, 2560, 0.62], [63.9, 4980, 2700, 1.15], [65.8, 4990, 2690, 1.2],
   [74.0, 4990, 2690, 1.2], [76.2, 5000, 2700, 1.05], [77.4, 6880, 2560, 1.05], [82.9, 6850, 2560, 1.0],
   [84.4, 6600, 2620, 1.0], [93.0, 5020, 2700, 1.05], [93.6, 5020, 2700, 1.05], [94.6, 5060, 2790, 2.6], [104.2, 5060, 2790, 2.4], [104.9, 5060, 2760, 1.6],
-  [106.0, 5300, 2700, 0.95], [108.4, 5300, 2700, 0.95], [110.6, 2150, 3500, 1.35], [114.9, 2100, 3500, 1.35], [116.8, 5060, 2780, 1.6],
+  [106.0, 5300, 2700, 0.95], [108.4, 5300, 2700, 0.95], [110.6, 1950, 3480, 1.75], [114.9, 1920, 3480, 1.8], [116.8, 5060, 2780, 1.6],
   [131.6, 5060, 2780, 1.6], [133.0, 5060, 2800, 2.3], [138.2, 5060, 2800, 2.3], [139.4, 6880, 2600, 1.25],
   [167.6, 6880, 2600, 1.25], [168.8, 5060, 2760, 1.5], [177.0, 5060, 2760, 1.5],
-  [189.5, 5060, 2760, 1.5], [190.7, 2620, 1880, 1.1], [192.0, 2620, 1880, 1.1], [193.2, 5040, 2700, 1.25], [199.4, 5040, 2700, 1.3], [201.4, 5600, 2560, 0.6],
+  [189.7, 5060, 2760, 1.5], [189.75, 2620, 1880, 1.15], [190.7, 2620, 1880, 1.1], [192.0, 2620, 1880, 1.1], [193.2, 5040, 2700, 1.25], [199.4, 5040, 2700, 1.3], [201.4, 5600, 2560, 0.6],
 ];
 
 // comensales de los bancos, del más importante (cerca del estrado) al menos
@@ -169,8 +169,8 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       })}
       {t > 84 && t < 94 && (
         <div style={{ position: "absolute", left: 160, right: 160, top: 1010, height: 26, borderRadius: 13, background: `linear-gradient(90deg, ${C.noche}, ${C.oro})`, transform: `scaleX(${prog(t, 84, 85)})`, transformOrigin: "right center" }}>
-          <div style={{ position: "absolute", right: 0, top: -54, fontFamily, fontWeight: 700, fontSize: 40, color: C.oro }}>IMPORTANT</div>
-          <div style={{ position: "absolute", left: 0, top: -54, fontFamily, fontWeight: 700, fontSize: 40, color: "#fff" }}>NOT IMPORTANT</div>
+          <div style={{ position: "absolute", right: 0, top: -74, fontFamily, fontWeight: 700, fontSize: 60, color: C.oro, WebkitTextStroke: `8px ${C.noche}`, paintOrder: "stroke fill" }}>IMPORTANT</div>
+          <div style={{ position: "absolute", left: 0, top: -74, fontFamily, fontWeight: 700, fontSize: 60, color: "#fff", WebkitTextStroke: `8px ${C.noche}`, paintOrder: "stroke fill" }}>NOT IMPORTANT</div>
         </div>
       )}
       <Chip t={t} t0={92.16} t1={93.9} text="DRAFTY DOORS" color={C.teal} tinta={C.noche} x={puerta.x} y={puerta.y} centro size={46} />
@@ -189,6 +189,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       {/* calendario de días de pescado — nace del plato */}
       <Inserto t={t} t0={117.0} t1={132.4} ix={plato.x} iy={plato.y} fondo="#2d5bb5" fondo2={C.noche}>
         <Calendario t={t} />
+        <Yo t={t} t0={117.5} x={1450} h={420} flip expr={t > 129.3 ? "triste" : "sorpresa"} habla={t > 121 && t < 124} bD={110 + Math.sin(t * 5) * 8} cD={20} />
         <Chip t={t} t0={121.36} text="FRIDAYS" color={C.rojo} x={200} y={760} size={50} />
         <Chip t={t} t0={122.6} text="MANY WED + SAT" color={C.naranja} x={510} y={760} size={50} />
         <Chip t={t} t0={125.02} text="LENT + ADVENT" color={C.violeta} x={1010} y={760} size={50} />

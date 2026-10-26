@@ -58,7 +58,7 @@ export const Mundo: React.FC<{ t: number; c: CamP }> = ({ t }) => {
         </svg>
       )}
       {/* la cocina: ratas en el granero y en el caldero */}
-      {t > 589.4 && t < 593 && [[3200, 3520], [3550, 3300], [3300, 3620]].map(([x0, x1], i) => <Rata key={i} x={interpolate(t, [589.6 + i * 0.3, 592.4], [x0, x1], cl)} y={3690} s={0.6} t={t} flip={x1 < x0} />)}
+      {t > 589.4 && t < 593 && [[2900, 3600], [3700, 3000], [3100, 3750], [3600, 2950], [2950, 3500], [3450, 3050]].map(([x0, x1], i) => <Rata key={i} x={interpolate(t, [589.5 + i * 0.22, 591.6 + i * 0.22], [x0, x1], cl)} y={3690 - (i % 3) * 30 - Math.abs(Math.sin(t * 9 + i)) * 26} s={1.1} t={t} flip={x1 < x0} />)}
       {/* el gato */}
       {t > 596.2 && t < 608 && (
         <Gato x={interpolate(t, [596.4, 598.0], [5300, 6050], cl)} y={PISO - 70} s={0.75} t={t} susto={t > 602} flip={t > 603.5} />
@@ -190,8 +190,8 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
         ) : t < 626.2 ? (
           <>
             <Chip t={t} t0={617.13} text="TRICK #1" color={C.rojo} x={960} y={110} centro size={64} />
-            {[[460, 620], [960, 820], [1460, 620], [960, 420]].map(([x, y], i) => <div key={i} style={{ position: "absolute", left: x - 140, top: y - 60, width: 280, height: 120, background: "#e8c07a", border: `8px solid #a8743a`, borderRadius: 40, transform: `scale(${ent(t, 618.2 + i * 0.25)})` }}><div style={{ margin: "14px 18px", height: 70, borderRadius: 30, background: "#d6e8f2", opacity: prog(t, 619.6, 620.2) * 0.9 }} /></div>)}
-            <Yo t={t} t0={617.2} x={1760} h={470} y={1070} expr={t > 624.8 ? "feliz" : t > 622.2 ? "sorpresa" : "orgullo"} bD={t < 622.2 ? 90 : 140} cD={t < 622.2 ? 60 : 30} mira={-0.7} flip />
+            {[[460, 620], [960, 820], [1460, 620], [960, 420]].map(([x, y], i) => <div key={i} style={{ position: "absolute", left: x - 140, top: y - 60, width: 280, height: 120, background: "radial-gradient(ellipse at 50% 45%, #f6dca0 55%, #d9a45a 70%)", border: `14px solid #9a5a22`, borderRadius: "60px 60px 34px 34px", boxShadow: "inset 0 0 0 6px rgba(255,255,255,.55)", transform: `scale(${ent(t, 618.2 + i * 0.25)})` }}><div style={{ margin: "14px 18px", height: 70, borderRadius: 30, background: "#d6e8f2", opacity: prog(t, 619.6, 620.2) * 0.9 }} /></div>)}
+            <Yo t={t} t0={617.2} x={1670} h={470} y={1070} expr={t > 624.8 ? "feliz" : t > 622.2 ? "sorpresa" : "orgullo"} bD={t < 622.2 ? 90 : 140} cD={t < 622.2 ? 60 : 30} mira={-0.7} flip />
             <Chip t={t} t0={618.17} text="BREAD SLICES" color={C.oro} tinta={C.noche} x={160} y={220} size={50} />
             <Chip t={t} t0={619.57} text="+ STICKY GLUE" color={C.teal} tinta={C.noche} x={160} y={310} size={50} />
             {t > 622.2 && <div style={{ position: "absolute", left: 0, top: 0 }}><PanTrampa x={960} y={620} s={0.75} t={t} t0={622.3} /></div>}
@@ -259,10 +259,10 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                     const muere = i < 3 ? prog(t, 646.67 + i * 0.12, 647.0 + i * 0.12) : i < 5 ? prog(t, 647.25 + (i - 3) * 0.12, 647.6 + (i - 3) * 0.12) * 0.75 : 0;
                     return <div key={i} style={{ position: "absolute", left: 0, top: 0, opacity: 1 - muere * 0.85, filter: muere > 0.5 ? "grayscale(1)" : undefined }}><Persona x={260 + i * 155} y={720} h={300} t={t} seed={140 + i} ropa={SIERVO(i)} expr={muere > 0.5 ? "triste" : "miedo"} /></div>;
                   })}
-                  <Chip t={t} t0={646.67} text="1/3" color={C.rojo} x={260 + 155} y={790} centro size={64} />
-                  <Chip t={t} t0={647.25} text="…TO 1/2" color={C.rojo} x={260 + 155 * 3.5} y={790} centro size={64} />
-                  <Chip t={t} t0={647.57} text="OF EVERYONE IN EUROPE" color={C.crema} tinta={C.noche} x={960} y={870} centro size={56} />
-                  {t > 648.9 && <Chip t={t} t0={648.95} text="SOMETIMES: EVERYONE INSIDE A CASTLE" color={C.rojo} x={960} y={960} centro size={46} />}
+                  <Chip t={t} t0={646.67} text="1/3" color={C.rojo} x={260 + 155} y={330} centro size={64} />
+                  <Chip t={t} t0={647.25} text="…TO 1/2" color={C.rojo} x={260 + 155 * 3.5} y={330} centro size={64} />
+                  <Chip t={t} t0={647.57} text="OF EVERYONE IN EUROPE" color={C.crema} tinta={C.noche} x={960} y={800} centro size={56} />
+                  {t > 648.9 && <Chip t={t} t0={648.95} text="SOMETIMES: EVERYONE INSIDE A CASTLE" color={C.rojo} x={960} y={900} centro size={50} />}
                 </>
               )}
               {t >= 651.9 && (

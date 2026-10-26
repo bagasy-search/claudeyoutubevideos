@@ -16,7 +16,7 @@ export const CAM: Llave[] = [
   [417.8, 5200, 2850, 1.2], [421.0, 5300, 2800, 1.0], [427.4, 7150, 2700, 1.0], [428.6, 7450, 2400, 1.35], [434.2, 7450, 2420, 1.3],
   [437.2, 7480, 3150, 0.8], [440.5, 7560, 3550, 0.85], [443.0, 7600, 3400, 0.66], [448.6, 7650, 3250, 0.6],
   [456.6, 7450, 2400, 1.3], [459.6, 7450, 2420, 1.3], [461.6, 7480, 3000, 0.7], [464.4, 7480, 2950, 0.7], [465.6, 7450, 2400, 1.6], [474.8, 7450, 2420, 1.45],
-  [493.0, 7450, 2600, 1.0], [495.0, 7620, 3800, 1.0], [499.9, 7640, 3800, 1.05],
+  [493.0, 7450, 2600, 1.0], [495.0, 7590, 3620, 1.7], [499.9, 7600, 3620, 1.8],
   [511.3, 7640, 3800, 1.0], [513.8, 7450, 2700, 0.72], [538.6, 7450, 2750, 0.72], [542.4, 7450, 2950, 0.66],
   [544.2, 7450, 2420, 1.3], [546.6, 7250, 2650, 1.0], [549.6, 5350, 2800, 0.95],
 ];
@@ -70,6 +70,9 @@ export const Mundo: React.FC<{ t: number; c: CamP }> = ({ t }) => {
       {/* la caída por el caño (flecha) */}
       {t > 434.4 && t < 441.2 && (
         <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
+          {/* el caño en corte: tubo de piedra y lo que cae por él */}
+          <rect x={7380} y={2480} width={140} height={(SUELO - 2480) * prog(t, 434.5, 435.4)} fill="#2a2030" stroke="#8a8098" strokeWidth={14} />
+          {[0, 1].map((k) => { const u = prog(t, 436.2 + k * 1.6, 437.4 + k * 1.6); return u > 0 && u < 1 ? <ellipse key={k} cx={7450 + Math.sin(u * 12) * 18} cy={2500 + (SUELO - 2500) * u * u} rx={34} ry={44} fill="#6a4a22" stroke={C.noche} strokeWidth={6} /> : null; })}
           <line x1={7450} y1={2480} x2={7450} y2={2480 + (SUELO - 2480) * prog(t, 435.3, 440.1)} stroke={C.rojo} strokeWidth={24} strokeLinecap="round" strokeDasharray="40 30" strokeDashoffset={-t * 300} />
           {t > 440.1 && [0, 1, 2, 3, 4, 5].map((i) => { const u = prog(t, 440.1, 441.0); return <circle key={i} cx={7450 + Math.cos(i) * 140 * u} cy={SUELO + 30 - Math.sin(i * 0.5 + 0.4) * 160 * u + 300 * u * u} r={22} fill="#6a5a1a" />; })}
         </svg>
@@ -217,7 +220,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
             <Yo t={t} t0={475.2} x={1770} h={500} y={1070} expr={t > 479.1 ? "enojado" : "sorpresa"} bD={t > 479.1 ? 160 : 40} cD={t > 479.1 ? 150 : 20} mira={-0.8} flip tiembla={t > 479.1 && t < 480} />
             <Chip t={t} t0={475.35} text="AN OLD STORY" color={C.noche} x={960} y={110} centro size={56} />
             <Chip t={t} t0={476.49} text="CLOTHES HUNG IN THE GARDEROBE" color={C.oro} tinta={C.noche} x={960} y={940} centro size={50} />
-            {t >= 479.15 && t < 480.3 && <Grande t={t} t0={479.15} text="AMMONIA" y={760} size={130} color="#d9f04a" />}
+            {t >= 479.15 && t < 480.3 && <><div style={{ position: "absolute", left: 960, top: 760, width: 820, height: 190, transform: "translate(-50%,-50%)", borderRadius: 30, background: "rgba(14,8,40,.88)", opacity: ent(t, 479.15) }} /><Grande t={t} t0={479.15} text="AMMONIA" y={760} size={130} color="#d9f04a" /></>}
             {t > 480.3 && ["🦟", "🪲", "🦋", "🦟"].map((k, i) => <div key={i} style={{ position: "absolute", left: 500 + i * 300, top: interpolate(t, [480.4 + i * 0.12, 481.2 + i * 0.12], [500, 900], cl), fontSize: 80, transform: `rotate(${prog(t, 480.4, 481) * 180}deg)` }}>{k}</div>)}
             <Chip t={t} t0={480.31} text="KILLS FLEAS + MOTHS" color={C.rojo} x={960} y={760} centro size={58} />
           </>
@@ -228,7 +231,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
               <br />
               <span style={{ display: "inline-block", transform: `scale(${ent(t, 485.79)})`, fontSize: 120 }}>≈ WARD<span style={{ color: C.oro }}>ROBE</span></span>
             </div>
-            {t > 487 && <div style={{ position: "absolute", left: 1120, top: 180, transform: `rotate(8deg) scale(${ent(t, 487.01, 0, { damping: 7, stiffness: 260 })})`, border: `10px solid ${C.violeta}`, borderRadius: 16, padding: "4px 24px", background: "rgba(255,255,255,.92)", fontFamily, fontWeight: 700, fontSize: 52, color: C.violeta, whiteSpace: "nowrap" }}>HISTORIANS ARGUE</div>}
+            {t > 487 && <div style={{ position: "absolute", left: 1180, top: 95, transform: `rotate(4deg) scale(${ent(t, 487.01, 0, { damping: 7, stiffness: 260 })})`, border: `10px solid ${C.violeta}`, borderRadius: 16, padding: "4px 24px", background: "rgba(255,255,255,.92)", fontFamily, fontWeight: 700, fontSize: 52, color: C.violeta, whiteSpace: "nowrap" }}>HISTORIANS ARGUE</div>}
             <Chip t={t} t0={489.79} text="BOTH FROM OLD FRENCH" color={C.noche} x={960} y={720} centro size={56} />
             <Chip t={t} t0={491.41} text="« A PLACE TO GUARD YOUR ROBES »" color={C.oro} tinta={C.noche} x={960} y={830} centro size={56} />
           </>
@@ -282,7 +285,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                   <Persona x={subeX} y={subeY + 140} h={190} t={t} seed={31} ropa={GUARDIA} casco="medieval" expr="enojado" bI={170} bD={170} cI={10} cD={10} aparece={525.87} />
                   {[0, 1, 2].map((i) => <Persona key={i} x={1360 - i * 110} y={1000} h={240} t={t} seed={32 + i} ropa={GUARDIA} casco="medieval" expr="feliz" aparece={526.8 + i * 0.1} flip />)}
                   <Chip t={t} t0={526.79} text="A SOLDIER + A FEW COMPANIONS" color={C.ambar} tinta={C.noche} x={110} y={330} size={46} />
-                  {t >= 528.75 && t < 533.6 && <Grande t={t} t0={528.75} text="UP THE TOILET CHUTE" y={915} size={100} color={C.oro} />}
+                  {t >= 528.75 && t < 533.6 && <Grande t={t} t0={528.75} text="UP THE TOILET CHUTE" x={540} y={610} size={66} color={C.oro} />}
                   {t > 530.1 && (
                     <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
                       <path d="M 1300 1000 Q 1180 700 1240 455" stroke="#fff" strokeWidth={10} strokeDasharray="24 18" fill="none" pathLength={100} strokeDashoffset={100 - 100 * prog(t, 530.4, 531.9)} />

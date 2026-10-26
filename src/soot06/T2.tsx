@@ -83,7 +83,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       <Ficha t={t} t0={207.4} x={520} y={600} label="LIGHTS" color={C.rojo} tacha={207.9} icono={<g><rect x={-8} y={-60} width={16} height={130} fill="#3a3a48" /><circle cx={0} cy={-70} r={30} fill="#ffe08a" /></g>} />
       <Ficha t={t} t0={208.38} x={960} y={600} label="MOON" color={C.rojo} tacha={208.9} icono={<path d="M 30 -60 A 66 66 0 1 0 30 60 A 50 50 0 1 1 30 -60 Z" fill="#fff3b0" />} />
       </>}
-      {t >= 209.62 && t < 210.6 && <Grande t={t} t0={209.62} text="NOTHING." x={1400} y={600} size={120} color={C.rojo} />}
+      {t >= 209.62 && t < 210.6 && <><div style={{ position: "absolute", left: 1450, top: 600, width: 560, height: 180, transform: "translate(-50%,-50%)", borderRadius: 28, background: "rgba(14,8,40,.85)", opacity: ent(t, 209.62) }} /><Grande t={t} t0={209.62} text="NOTHING." x={1450} y={600} size={120} color={C.rojo} /></>}
       {/* adentro: la luz cuesta plata */}
       <Chip t={t} t0={210.78} t1={212.8} text="INSIDE…" color={C.ambar} tinta={C.noche} x={960} y={140} centro size={60} />
       {t >= 211.48 && t < 212.8 && <Grande t={t} t0={211.48} text="LIGHT COSTS MONEY" y={300} size={120} color={C.oro} />}
@@ -152,7 +152,9 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
             {t > 239.8 && (
               <svg style={{ position: "absolute", left: 1350, top: 470, transform: `scale(${ent(t, 239.8)})` }} width={300} height={300} viewBox="-150 -150 300 300">
                 <circle r={120} fill="#fff6e0" stroke={C.noche} strokeWidth={14} />
-                <path d={`M 0 0 L 0 -100 A 100 100 0 ${prog(t, 240.8, 242.5) > 0.5 ? 1 : 0} 1 ${Math.sin(prog(t, 240.8, 242.5) * Math.PI * 2 - 0.0001) * 100} ${-Math.cos(prog(t, 240.8, 242.5) * Math.PI * 2 - 0.0001) * 100} Z`} fill={C.rojo} />
+                {Array.from({ length: 12 }, (_, k) => <line key={k} x1={0} y1={-104} x2={0} y2={-88} stroke={C.noche} strokeWidth={8} transform={`rotate(${k * 30})`} />)}
+                <rect x={-22} y={-160} width={44} height={30} rx={8} fill={C.noche} />
+                <path d={`M 0 0 L 0 -100 A 100 100 0 ${prog(t, 239.9, 242.5) > 0.5 ? 1 : 0} 1 ${Math.sin(prog(t, 239.9, 242.5) * Math.PI * 2 - 0.0001) * 100} ${-Math.cos(prog(t, 239.9, 242.5) * Math.PI * 2 - 0.0001) * 100} Z`} fill={C.rojo} />
               </svg>
             )}
             <Chip t={t} t0={240.81} text="≈ 30 MIN" color={C.rojo} x={1500} y={820} centro size={64} />

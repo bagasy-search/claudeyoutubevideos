@@ -147,13 +147,13 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
             {/* corte de los juncos: capas que crecen con los años */}
             {Array.from({ length: 10 }, (_, i) => {
               const sube = prog(t, 328.3 + i * 0.32, 328.6 + i * 0.32);
-              return <div key={i} style={{ position: "absolute", left: 160, right: 160, top: 960 - (i + 1) * 60 * sube, height: 60 * sube, background: ["#8a6a3a", "#7a5a2a", "#9a7a3a", "#6a4a22", "#8a6a2a"][i % 5], borderTop: "4px solid rgba(255,255,255,.25)" }} />;
+              return <div key={i} style={{ position: "absolute", left: 160, right: 160, top: 880 - (i + 1) * 60 * sube, height: 60 * sube, background: ["#8a6a3a", "#7a5a2a", "#9a7a3a", "#6a4a22", "#8a6a2a"][i % 5], borderTop: "4px solid rgba(255,255,255,.25)" }} />;
             })}
-            <div style={{ position: "absolute", left: 160, right: 160, top: 960, height: 70, background: "#6b6b7a" }} />
-            <Acostado x={760} y={958 - 600 * prog(t, 328.3, 331.6)} h={300} t={t} seed={7} ropa={CHICO} expr={t > 339.9 ? "miedo" : t > 335.2 ? "sorpresa" : "dormido"} />
-            <div style={{ position: "absolute", left: 1600, top: 970, fontFamily, fontWeight: 700, fontSize: 40, color: "#fff" }}>STONE</div>
-            <Chip t={t} t0={325.94} text="FLOORS COVERED IN RUSHES" color={C.noche} x={160} y={110} size={50} />
-            <Chip t={t} t0={327.76} text="ONLY TOPPED UP" color={C.ambar} tinta={C.noche} x={160} y={200} size={50} />
+            <div style={{ position: "absolute", left: 160, right: 160, top: 880, height: 90, background: "#6b6b7a" }} />
+            <Acostado x={760} y={1050 - 600 * prog(t, 328.3, 331.6)} h={300} t={t} seed={7} ropa={CHICO} expr={t > 339.9 ? "miedo" : t > 335.2 ? "sorpresa" : "dormido"} />
+            <div style={{ position: "absolute", left: 1560, top: 895, fontFamily, fontWeight: 700, fontSize: 52, color: "#fff" }}>STONE</div>
+            <Chip t={t} t0={325.94} text="FLOORS COVERED IN RUSHES" color={C.noche} x={210} y={140} size={50} />
+            <Chip t={t} t0={327.76} text="ONLY TOPPED UP" color={C.ambar} tinta={C.noche} x={210} y={230} size={50} />
             {t > 331.6 && <div style={{ position: "absolute", left: 1450, top: 200, transform: `translate(-50%,-50%) scale(${ent(t, 331.64, 0, { damping: 8, stiffness: 220 })})`, fontFamily, fontWeight: 700, fontSize: 140, color: C.crema, WebkitTextStroke: `12px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap" }}>{Math.round(interpolate(t, [331.64, 332.6], [1, 20], cl))} YEARS</div>}
             {/* lo que hay adentro, cayendo y quedando enterrado */}
             {([["🍺 BEER", 335.2], ["🧈 GREASE", 336.35], ["🍖 FOOD SCRAPS", 337.08], ["🦴 BONES", 337.96], ["💦 SPIT", 339.31], ["🐕 DOG URINE", 339.99], ["🧍 …AND MEN'S", 341.06]] as const).map(([k, t0], i) => {
@@ -179,7 +179,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       <Chip t={t} t0={353.56} t1={355} text="STILL EATING" color={C.ambar} tinta={C.noche} x={P(6560, 2480).x} y={P(6560, 2480).y} centro size={44} />
       {/* la cuenta del salón */}
       {t > 357.9 && t < 363.5 && <div style={{ position: "absolute", left: 960, top: 180, transform: `translate(-50%,-50%) scale(${ent(t, 357.93)})`, fontFamily, fontWeight: 700, fontSize: 110, color: C.crema, WebkitTextStroke: `10px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap" }}>{Math.round(interpolate(t, [357.93, 358.8], [1, 30], cl))} PEOPLE</div>}
-      {t > 359.1 && t < 363.5 && <div style={{ position: "absolute", left: 960, top: 320, transform: `translate(-50%,-50%) scale(${ent(t, 359.11)})`, fontFamily, fontWeight: 700, fontSize: 90, color: C.tierra, WebkitTextStroke: `10px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap" }}>+ {Math.round(interpolate(t, [359.11, 359.8], [1, 12], cl))} DOGS</div>}
+      {t > 359.1 && t < 363.5 && <div style={{ position: "absolute", left: 960, top: 320, transform: `translate(-50%,-50%) scale(${ent(t, 359.11)})`, fontFamily, fontWeight: 700, fontSize: 90, background: "rgba(14,8,40,.82)", borderRadius: 24, padding: "0 30px", color: C.tierra, WebkitTextStroke: `10px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap" }}>+ {Math.round(interpolate(t, [359.11, 359.8], [1, 12], cl))} DOGS</div>}
       <Chip t={t} t0={360.38} t1={363.5} text="+ WHATEVER THE DOGS BROUGHT IN" color={C.rojo} x={960} y={950} centro size={50} />
       {t >= 362.94 && t < 364.4 && <Grande t={t} t0={362.94} text="…AND THE COLD" y={500} size={140} color="#bfefff" />}
       {/* escarcha en los bordes mientras hablamos del frío */}

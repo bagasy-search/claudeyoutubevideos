@@ -140,7 +140,8 @@ const HORAS: [number, number][] = [[55.2, 16], [201.5, 18], [281.6, 20], [415.5,
 const TRAMPA_T0 = [55.2, 201.5, 281.6, 415.5, 550.2, 660.9, 749.5];
 export const RelojNoche: React.FC<{ t: number }> = ({ t }) => {
   if (t < 58.0 || t > 813.3) return null;
-  const op = Math.min(prog(t, 58.0, 58.6), 1 - prog(t, 812.8, 813.3));
+  const ult = TRAMPA_T0.filter((x) => t >= x).pop() ?? 55.2; // sólo aparece ~6 s al empezar cada trampa: nunca pisa títulos
+  const op = Math.min(prog(t, ult + 2.4, ult + 2.9), 1 - prog(t, ult + 8.5, ult + 9.0));
   const hh = interpolate(t, HORAS.map((k) => k[0]), HORAS.map((k) => k[1]), { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const h24 = Math.floor(hh) % 24, mm = Math.floor((hh % 1) * 60 / 15) * 15;
   const lbl = `${h24 % 12 === 0 ? 12 : h24 % 12}:${String(mm).padStart(2, "0")} ${h24 >= 12 ? "PM" : "AM"}`;

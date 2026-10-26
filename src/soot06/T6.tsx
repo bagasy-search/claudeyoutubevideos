@@ -80,6 +80,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
   return (
     <>
       <TarjetaTrampa t={t} t0={660.89} t1={663.0} n={6} nombre="THE WATCH" hora="2 AM" color={C.teal} />
+      {t > 663.1 && t < 674.4 && <Yo t={t} t0={663.2} x={360} h={600} expr={t > 668 ? "miedo" : "neutro"} mira={0.6} habla={t > 664 && t < 666} bD={130} cD={140} tiembla={t > 668} />}
       {t >= 663.15 && t < 664.6 && <Grande t={t} t0={663.15} text="2 AM." y={180} size={150} color={C.crema} />}
       {t > 663.9 && t < 665.6 && <Emote t={t} t0={664.0} tipo="excl" {...cabeza(g.x, g.y, 330 * c.z)} />}
       <Chip t={t} t0={664.69} t1={668.5} text="THE NIGHT WATCH IS ON DUTY" color={C.teal} tinta={C.noche} x={960} y={140} centro size={56} />
@@ -145,7 +146,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                     <Chip t={t} t0={701.43} text="THE OLD CHRONICLE SAYS…" color={C.tierra} x={110} y={240} size={50} />
                     {t > 704.7 && <div style={{ position: "absolute", left: 1160, top: 120, width: 520, height: 230, borderRadius: 120, background: "#fff", border: `8px solid ${C.noche}`, transform: `scale(${ent(t, 704.8)})` }}>{t > 708.4 && [0, 1, 2].map((i) => <Vaca key={i} x={110 + i * 150} y={190} s={0.42} t={t} />)}</div>}
                     <Chip t={t} t0={705.39} text="DARK SHAPES IN THE FIELD" color={C.violeta} x={110} y={330} size={46} />
-                    {t >= 708.47 && <Grande t={t} t0={708.47} text="«JUST A FARMER'S CATTLE»" y={560} size={84} color={C.crema} />}
+                    {t >= 708.47 && <><div style={{ position: "absolute", left: 960, top: 560, width: 1260, height: 160, transform: "translate(-50%,-50%)", borderRadius: 30, background: "rgba(14,8,40,.85)", opacity: ent(t, 708.47) }} /><Grande t={t} t0={708.47} text="«JUST A FARMER'S CATTLE»" y={560} size={84} color={C.crema} /></>}
                   </>
                 )}
               </>
@@ -184,7 +185,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
               <Chip t={t} t0={714.09} text="SAME YEAR, A FEW WEEKS LATER" color={C.violeta} x={110} y={200} size={44} />
               <Chip t={t} t0={718.27} text="AT NIGHT" color={C.noche} x={110} y={280} size={50} />
               <Chip t={t} t0={719.21} text="BY CLIMBING THE CLIFF" color={C.rojo} x={110} y={360} size={50} />
-              {t > 720.5 && [0, 1, 2, 3].map((k) => <Persona key={k} x={1440 - (k % 2) * 60 + Math.sin(t * 5 + k) * 8} y={interpolate(t, [720.6 + k * 0.9, 729.5 + k * 0.9], [1150, 470], cl)} h={260} t={t} seed={71 + k} ropa={DOUGLAS} expr={t > 727.8 && k === 0 ? "feliz" : "enojado"} bI={155 + Math.sin(t * 9 + k) * 18} bD={155 - Math.sin(t * 9 + k) * 18} cI={10} cD={10} aparece={720.6 + k * 0.9} />)}
+              {t > 719.2 && [0, 1, 2, 3].map((k) => <Persona key={k} x={1440 - (k % 2) * 60 + Math.sin(t * 5 + k) * 8} y={interpolate(t, [719.3 + k * 0.7, 729.0 + k * 0.7], [1010, 470], cl)} h={260} t={t} seed={71 + k} ropa={DOUGLAS} expr={t > 727.8 && k === 0 ? "feliz" : "enojado"} bI={155 + Math.sin(t * 9 + k) * 18} bD={155 - Math.sin(t * 9 + k) * 18} cI={10} cD={10} aparece={720.6 + k * 0.9} />)}
               <Chip t={t} t0={720.57} text="ONE MAN USED TO BE IN THE GARRISON" color={C.teal} tinta={C.noche} x={110} y={480} size={40} />
               {t >= 724.23 && t < 725.6 && <Grande t={t} t0={724.23} text="A SECRET PATH" y={540} size={90} color={C.oro} />}
               {t > 727.8 && <div style={{ position: "absolute", left: 1600, top: 760, fontSize: 110, transform: `scale(${ent(t, 728.17, 0, { damping: 6, stiffness: 240 }) * (1 + 0.08 * Math.sin(t * 10))})` }}>❤️</div>}
@@ -194,8 +195,8 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
         })()}
       </Inserto>
       {/* los muros valen lo que los hombres que están arriba */}
-      {t >= 729.79 && t < 732.7 && <Grande t={t} t0={729.79} text="WALLS ARE ONLY AS GOOD…" y={170} size={84} color={C.crema} />}
-      <Chip t={t} t0={731.29} t1={732.7} text="…AS THE MEN ON THEM" color={C.rojo} x={960} y={950} centro size={56} />
+      {t >= 729.79 && t < 732.7 && <Grande t={t} t0={729.79} text="WALLS ARE ONLY AS GOOD…" y={850} size={84} color={C.crema} />}
+      <Chip t={t} t0={731.29} t1={732.7} text="…AS THE MEN ON THEM" color={C.rojo} x={960} y={985} centro size={56} />
       {[["COLD", "#bfefff", 733.63], ["BORED", C.violeta, 734.61], ["FULL OF ALE", C.ambar, 735.07]].map(([k, col, t0], i) => (
         <Chip key={i} t={t} t0={t0 as number} t1={736.3} text={k as string} color={col as string} tinta={i === 1 ? C.crema : C.noche} x={260 + i * 520} y={150} size={60} />
       ))}

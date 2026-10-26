@@ -4,7 +4,7 @@ import { C, prog, Chip, Grande, Emote, cabeza } from "./kit";
 import { Persona } from "./persona";
 import { CamP, Llave, aPantalla, SUELO } from "./mundo";
 import { CHICO, GUARDIA, Rata, Jarra, Trinchero, Campanita, Globo } from "./objetos";
-import { Marcador, Rastrillo, Confeti, Ficha } from "./comun";
+import { Marcador, Rastrillo, Confeti, Ficha, Yo } from "./comun";
 
 // GANCHO 0-55,2 s. Plan de director (un cambio cada ~0,7-1 s, todo dentro del mismo castillo):
 // 0-5   bandera en la torre en primerísimo plano → dolly hacia atrás: el castillo entero al atardecer, nieve, DECEMBER 1300
@@ -127,6 +127,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       <Chip t={t} t0={4.2} t1={5.3} text="NORTH OF ENGLAND" color={C.rojo} x={960} y={960} centro size={60} />
       {/* 5-10: el sol se va 16 horas */}
       <Chip t={t} t0={6.4} t1={9.5} text="SUNSET: 3:45 PM" color={C.naranja} x={960} y={150} centro size={70} />
+      {t >= 9.6 && t < 10.75 && <div style={{ position: "absolute", inset: 0, background: "rgba(14,8,40,.6)", opacity: prog(t, 9.6, 9.8) }} />}
       {t >= 9.7 && t < 10.75 && <Grande t={t} t0={9.7} text={`${horas} HOURS`} y={480} size={240} color={C.crema} />}
       {t >= 10.14 && t < 10.75 && <Grande t={t} t0={10.14} text="OF DARKNESS" y={700} size={120} color={C.lila} />}
       {t > 10.7 && t < 11.6 && <div style={{ position: "absolute", inset: 0, background: `repeating-linear-gradient(0deg, rgba(255,255,255,.08) 0 4px, transparent 4px 9px)` }} />}
@@ -143,12 +144,14 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       {/* 17-26: felicitaciones y defensas */}
       <Confeti t={t} t0={17.48} />
       {t >= 17.5 && t < 21.1 && <Grande t={t} t0={17.5} text="CONGRATULATIONS!" y={200} size={130} color={C.oro} />}
+      {t > 17.5 && t < 21.1 && <Yo t={t} t0={17.6} x={1690} h={720} expr="feliz" habla bD={150} cD={20} manoD={<g transform="rotate(-30)"><circle cx={0} cy={-70} r={34} fill="none" stroke="#f2c14e" strokeWidth={16} /><rect x={-8} y={-40} width={16} height={110} fill="#f2c14e" /><rect x={8} y={40} width={30} height={14} fill="#f2c14e" /><rect x={8} y={60} width={22} height={12} fill="#f2c14e" /></g>} />}
       <Chip t={t} t0={19.16} t1={21.1} text="STRONGEST BUILDING IN THE COUNTY" color={C.teal} tinta={C.noche} x={960} y={900} centro size={58} />
       <Chip t={t} t0={21.84} t1={23.3} text="THICKER THAN YOU ARE TALL" color={C.oro} tinta={C.noche} x={960} y={140} centro size={58} />
       <Chip t={t} t0={23.52} t1={24.1} text="A GATE" color={C.rojo} x={960} y={140} centro size={70} />
       <Chip t={t} t0={24.34} t1={25.0} text="A DITCH" color={C.teal} tinta={C.noche} x={960} y={140} centro size={70} />
       <Chip t={t} t0={25.3} t1={26.7} text="ARMED MEN" color={C.violeta} x={960} y={140} centro size={70} />
       {/* 27-36: y aun así… */}
+      {t > 28.0 && t < 30.7 && <Yo t={t} t0={28.1} x={1660} h={700} expr="miedo" tiembla bD={140} cD={120} bI={140} cI={120} />}
       {t >= 28.0 && t < 30.6 && <Grande t={t} t0={28.0} text="BY SUNRISE…" y={200} size={130} color={C.crema} />}
       {vb.map((tv, i) => {
         const k = ["FREEZE", "STARVE", "POISON", "BITE", "BURN", "FLUSH"][i];

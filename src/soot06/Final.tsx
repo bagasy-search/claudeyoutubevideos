@@ -18,7 +18,7 @@ export const CAM: Llave[] = [
   [814.6, 5000, 2300, 0.34], [823.4, 4900, 2300, 0.35], [825.2, 4900, 2300, 0.35], [827.2, 560, 3420, 0.95], [839.0, 560, 3440, 0.95], [840.4, 400, 3480, 1.35],
   [846.4, 420, 3480, 1.4], [848.0, 1100, 3450, 1.1], [849.0, 3400, 2700, 0.42], [850.6, 5300, 2850, 1.0], [856.4, 5300, 2850, 1.05],
   [858.2, 4900, 2400, 0.4], [862.0, 4900, 2400, 0.4], [863.2, 5300, 1500, 0.95], [866.6, 5300, 1500, 0.95],
-  [884.8, 5300, 1500, 0.9], [886.6, 4600, 2300, 0.3], [892.6, 4700, 2300, 0.31], [894.4, 5300, 2860, 1.45], [897.0, 5300, 2860, 1.55],
+  [884.8, 5300, 1500, 0.9], [886.6, 5300, 1520, 0.8], [892.6, 5300, 1520, 0.86], [894.4, 5300, 2860, 1.45], [897.0, 5300, 2860, 1.55],
   [911.6, 5300, 2860, 1.4],
 ];
 const cl = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -71,7 +71,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
   return (
     <>
       {/* amanecer: el recuento */}
-      {t < 823.5 && PINES.filter(([x, y]) => P(x, y).y < 560).map(([x, y, n]) => <div key={n} style={{ position: "absolute", left: 0, top: 0 }}><Marcador t={t} t0={814.4 + n * 0.1} x={P(x, y).x} y={P(x, y).y} n={n} s={0.7} color={C.rojo} /></div>)}
+      {t < 815.7 && PINES.map(([x, y, n]) => <div key={n} style={{ position: "absolute", left: 0, top: 0 }}><Marcador t={t} t0={814.4 + n * 0.1} x={P(x, y).x} y={P(x, y).y} n={n} s={0.7} color={C.rojo} /></div>)}
       {t >= 814.13 && t < 815.3 && <Grande t={t} t0={814.13} text="SUNRISE." y={180} size={130} color={C.oro} />}
       {t > 815.6 && t < 823.5 && <div style={{ position: "absolute", left: 70, top: 600, width: 1240, height: 400, borderRadius: 28, background: "rgba(18,10,28,.8)", border: `4px solid ${C.oro}`, opacity: ent(t, 815.7) }} />}
       {[["FROZEN ❄", "#bfefff", 815.73], ["UNDERFED", C.tierra, 816.65], ["HALF DRUNK 🍺", C.ambar, 817.67], ["BITTEN 🐀", C.violeta, 818.63], ["NEARLY BURNED 🔥", C.naranja, 819.31], ["…AND A HOLE IN THE WALL", C.rosa, 821.57]].map(([k, col, t0], i) => (
@@ -186,7 +186,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                 <div style={{ background: C.rojo, color: "#fff", fontFamily, fontWeight: 700, fontSize: 64, padding: "18px 44px", borderRadius: 20, border: `8px solid ${C.noche}`, boxShadow: "0 12px 0 rgba(14,8,40,.5)", transform: `scale(${1 + 0.05 * Math.sin(t * 6)})` }}>SUBSCRIBE</div>
               </div>
             )}
-            {t > 900.6 && t < 905.95 && <Yo t={t} t0={900.7} x={230} y={1080} h={620} expr="feliz" habla bD={112} cD={-10} />}
+            {t > 897.7 && t < 905.95 && <Yo t={t} t0={897.8} x={230} y={1080} h={620} expr="feliz" habla bD={112} cD={-10} />}
             {t > 901.4 && t < 905.95 && <div style={{ position: "absolute", left: 0, top: 0 }}><Campana x={940} y={350} s={0.9} t={t} t0={901.5} t0b={901.77} /></div>}
             {t > 902.5 && t < 905.95 && (
               <div style={{ position: "absolute", left: 1150, top: 230, width: 620, height: 380, borderRadius: 30, overflow: "hidden", border: `10px solid ${C.oro}`, background: "linear-gradient(#1c1240, #4a2a6a)", transform: `rotate(3deg) scale(${ent(t, 902.6)})`, boxShadow: "0 16px 0 rgba(14,8,40,.5)" }}>
@@ -205,7 +205,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                   WHICH OF THE <span style={{ color: C.rojo }}>7 TRAPS</span><br />WOULD GET YOU FIRST?
                 </div>
                 {[["🍲", "SUPPER"], ["🕯️", "DARK"], ["❄️", "COLD"], ["🚽", "TOILET"], ["🐀", "RATS"], ["🛡️", "WATCH"], ["🔥", "FIRE"]].map(([e, k], i) => (
-                  <div key={k} style={{ position: "absolute", left: 960 + (i - 3) * 236, top: 640, width: 216, height: 200, transform: `translate(-50%,-50%) scale(${ent(t, 907.4 + i * 0.08)})`, borderRadius: 24, background: C.crema, border: `8px solid ${C.noche}`, boxShadow: "0 10px 0 rgba(14,8,40,.45)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700 }}>
+                  <div key={k} style={{ position: "absolute", left: 960 + (i - 3) * 236, top: 640, width: 216, height: 200, transform: `translate(-50%,-50%) scale(${ent(t, 907.4 + i * 0.08)})`, borderRadius: 24, background: Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? "#fff3b0" : C.crema, border: `8px solid ${Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? C.oro : C.noche}`, boxShadow: Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? `0 0 40px ${C.oro}` : "0 10px 0 rgba(14,8,40,.45)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700 }}>
                     <div style={{ fontSize: 96, lineHeight: 1 }}>{e}</div>
                     <div style={{ fontSize: 38, color: C.noche, marginTop: 8 }}>{k}</div>
                   </div>
