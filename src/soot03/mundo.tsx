@@ -271,10 +271,12 @@ export const Plano: React.FC<{ t: number; t0: number; t1: number; desde?: [numbe
   const e = interpolate(t, [t0, t0 + 0.36], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
   const s = interpolate(t, [t1, t1 + 0.36], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.cubic) });
   const k = Math.min(e, s);
-  const zoom = 1.25 - 0.25 * e + (1 - s) * 0.5;
+  // empuje lento y continuo mientras está abierto (nunca un cuadro quieto: el QC marca congelado a los 2 s)
+  const vive = 0.012 * Math.min(t - t0, 12) + 0.006 * Math.sin((t - t0) * 0.9);
+  const zoom = 1.25 - 0.25 * e + (1 - s) * 0.5 + vive;
   return (
     <AbsoluteFill style={{ clipPath: `circle(${k * 125}% at ${desde[0]}px ${desde[1]}px)`, background: fondo, overflow: "hidden" }}>
-      <AbsoluteFill style={{ transformOrigin: `${desde[0]}px ${desde[1]}px`, transform: `scale(${zoom})` }}>{children}</AbsoluteFill>
+      <AbsoluteFill style={{ transformOrigin: `${desde[0]}px ${desde[1]}px`, transform: `translate(${Math.sin((t - t0) * 0.5) * 10}px, ${Math.cos((t - t0) * 0.4) * 6}px) scale(${zoom})` }}>{children}</AbsoluteFill>
       <AbsoluteFill style={{ boxShadow: "inset 0 0 0 14px rgba(255,255,255,.9)", borderRadius: k < 1 ? "50%" : 0, opacity: k < 0.98 ? 1 : 0 }} />
     </AbsoluteFill>
   );
