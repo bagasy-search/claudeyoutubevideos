@@ -14,16 +14,18 @@ const ease = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1],
 // el que explica: Owen chiquito en la esquina que señala, habla, piensa y reacciona (la pizarra nunca queda sin personaje)
 const POSES_PROFE = ["señalar", "hablar", "pensar", "señalar", "manosCintura", "hablar", "encogerse", "señalar"];
 const CARAS_PROFE = ["neutral", "feliz", "pensar", "sorpresa", "neutral", "feliz"];
+// 26-oct v6 (ojo: «Owen chico y quieto 20 s»): plano medio, los pies fuera de cuadro, 1/3 de la altura en el torso
+const Y_PROFE = 1330;
 const Profe: React.FC<{ f: number }> = ({ f }) => {
   const per = 22;
   const poses = Array.from({ length: 90 }).map((_, i) => ({ f: i * per, v: POSES_PROFE[(i * 3) % POSES_PROFE.length] }));
   const caras = Array.from({ length: 90 }).map((_, i) => ({ f: i * per + 6, v: CARAS_PROFE[i % CARAS_PROFE.length] in EXPRESIONES ? CARAS_PROFE[i % CARAS_PROFE.length] : "neutral" }));
   // camina de un lado al otro de su rincón cada ~4 s (pasos reales), se para a explicar
-  const ruta = Array.from({ length: 24 }).flatMap((_, i) => { const x = i % 2 ? 1660 : 1750; return [{ f: i * 120 + 40, x: i % 2 ? 1750 : 1660, y: 1050 }, { f: i * 120 + 100, x, y: 1050 }]; }); // 26-oct: más grande y dentro del área segura (a 1830 se cortaba en el borde)
+  const ruta = Array.from({ length: 24 }).flatMap((_, i) => { const x = i % 2 ? 1600 : 1700; return [{ f: i * 120 + 40, x: i % 2 ? 1700 : 1600, y: Y_PROFE }, { f: i * 120 + 100, x, y: Y_PROFE }]; }); // 26-oct: más grande y dentro del área segura (a 1830 se cortaba en el borde)
   const dir = Array.from({ length: 24 }).map((_, i) => ({ f: i * 120 + 40, v: (i % 2 ? -1 : 1) as 1 | -1 }));
   return (
     <g>
-      <Actor look={OWEN} escala={2.0} seed={9} ruta={[{ f: 0, x: 1750, y: 1050 }, ...ruta]} dir={[{ f: 0, v: -1 }, ...dir]}
+      <Actor look={OWEN} escala={3.1} seed={9} ruta={[{ f: 0, x: 1700, y: Y_PROFE }, ...ruta]} dir={[{ f: 0, v: -1 }, ...dir]}
         poses={poses} caras={caras} habla={Array.from({ length: 60 }).map((_, i) => [i * 45 + 4, i * 45 + 34] as [number, number])} miradas={[{ f: 0, v: { x: -0.7, y: -0.3 } }, { f: 150, v: { x: 0.4, y: 0.2 } }, { f: 200, v: { x: -0.7, y: -0.3 } }, { f: 400, v: { x: 0.3, y: 0 } }, { f: 440, v: { x: -0.7, y: -0.3 } }]} />
     </g>
   );
@@ -37,7 +39,8 @@ export const Pizarra: React.FC<{ children: React.ReactNode; titulo?: string; fue
         <defs><radialGradient id="pzv" cx="0.5" cy="0.45" r="0.75"><stop offset="0.55" stopColor="#000" stopOpacity={0} /><stop offset="1" stopColor="#000" stopOpacity={0.45} /></radialGradient></defs>
         {Array.from({ length: 25 }).map((_, i) => <rect key={`v${i}`} x={i * 80} y={0} width={2} height={1080} fill="#22325a" />)}
         {Array.from({ length: 14 }).map((_, i) => <rect key={`h${i}`} x={0} y={i * 80} width={1920} height={2} fill="#22325a" />)}
-        {children}
+        {/* con el profe grande a la derecha, el contenido se achica a los 3/4 izquierdos para no quedar tapado */}
+        {profe ? <g transform="translate(30,120) scale(0.77)">{children}</g> : children}
         {profe && <Profe f={f} />}
         {titulo && <text x={960} y={178} fontFamily={F_HUD} fontWeight={600} fontSize={52} letterSpacing={4} fill={TINTA} textAnchor="middle" opacity={ease(f, 0, 10)}>{titulo}</text>}
         {fuente && <text x={60} y={1040} fontFamily={F_HUD} fontSize={24} fill="#8a9ac0" textAnchor="start" opacity={ease(f, 10, 25)}>{fuente}</text>}
