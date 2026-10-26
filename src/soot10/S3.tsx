@@ -207,7 +207,7 @@ export const O3: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={320.6} t1={322.2} text="ALMOST FAIR?" y={170} size={120} />
       {/* artículo VI */}
       {en(t, 333.2, 344.4) && (
-        <div style={{ position: "absolute", left: 960, top: 70, transform: `translate(-50%,0) scale(${prog(t, 333.2, 333.6) * 0.88}) rotate(-2deg)`, transformOrigin: "50% 0", width: 1100, background: "#f4ead2", border: `10px solid #8a5a2a`, borderRadius: 18, padding: "30px 50px", boxShadow: "0 18px 0 rgba(20,10,40,.4)", fontFamily: "Fredoka, sans-serif", fontWeight: 700, color: TINTA, textAlign: "center" }}>
+        <div style={{ position: "absolute", left: 40, top: 90, transform: `scale(${prog(t, 333.2, 333.6) * 0.76}) rotate(-2deg)`, transformOrigin: "0 0", width: 1100, background: "#f4ead2", border: `10px solid #8a5a2a`, borderRadius: 18, padding: "30px 50px", boxShadow: "0 18px 0 rgba(20,10,40,.4)", fontFamily: "Fredoka, sans-serif", fontWeight: 700, color: TINTA, textAlign: "center" }}>
           <div style={{ fontSize: 80, color: C.rojo, letterSpacing: 6 }}>ARTICLE VI</div>
           <div style={{ fontSize: 58, lineHeight: 1.2, marginTop: 10, fontStyle: "italic" }}>
             {"“No boy or woman to be allowed amongst them.”".split(" ").map((w, i) => <span key={i} style={{ opacity: t > 334.6 + i * 0.36 ? 1 : 0.12 }}>{w} </span>)}
