@@ -6,6 +6,7 @@ import { Reloj, Termometro, Moneda3, Rosbif, V, T, Carta } from "./kit3";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, CasaAdentro, NINO, NINA, HILANDERO, OBRERO, CAPATAZ, GenteFab, FCX, mulaVaiven } from "./mundo";
 import { Mini0 } from "./Mini0";
 import { Gran, Cuenta, Sello, Tachado, Lista, Carretes, Flash, sacudon, Velo } from "./capas";
+import { Primer } from "./piezas";
 
 // PARTE A · gancho y premisa (0-81,3 s). Un solo pueblo: la calle de noche → el reloj → el portón que se cierra →
 // la cámara se zambulle por el portón y la fachada se abre (casa de muñecas) → la fábrica entera en el pueblo →
@@ -19,16 +20,16 @@ const KA: K[] = [
   [0, 2300, -330, 1.75], [1.5, 2800, -380, 1.6],
   [2.05, FCX, -3440, 1.5], [3.4, FCX, -3440, 1.85],
   [3.85, 3380, -420, 1.25], [6.5, 3420, -400, 1.3], [8.0, 3560, -330, 1.75], [10.5, 3380, -380, 1.35], [13.3, 3500, -330, 1.3],
-  [14.05, FCX, -330, 5.2], [14.7, 3000, -470, 1.15], [17.9, 2900, -470, 1.2], [18.8, 3300, -420, 1.55], [23.6, 3200, -420, 1.7],
+  [14.05, FCX, -330, 5.2], [14.7, 2850, -440, 1.6], [17.9, 2800, -440, 1.65], [18.8, 3300, -420, 1.55], [23.6, 3200, -420, 1.7],
   [25.3, 2300, -1900, 0.31], [27.9, 2100, -2100, 0.27], [30.4, 1900, -2600, 0.2], [32.2, 1900, -700, 0.6], [34.4, 2400, -420, 0.95],
   [35.2, 3150, -380, 1.3], [36.3, 3100, -420, 0.95], [38.6, 3100, -300, 1.1], [40.6, 3700, -560, 1.7], [43.4, 3000, -420, 1.15],
   [45.7, 2800, -460, 1.05], [48.5, 2850, -460, 1.1], [49.4, 3300, -470, 1.5], [51.0, 3300, -470, 1.55],
   [51.9, -1110, -420, 1.0], [52.8, -1175, -395, 7.5],
 ];
 // adentro de la casa (otro espacio: entramos por la ventana del cuarto y salimos por la misma)
-const KC: K[] = [[52.8, 610, -660, 4.2], [53.6, 60, -500, 0.95], [56.0, 120, -480, 1.0], [58.4, 260, -470, 1.08], [61.5, 380, -480, 1.15], [63.3, 610, -660, 1.4], [64.3, 610, -660, 5.0]];
+const KC: K[] = [[52.8, 610, -660, 4.2], [53.6, 0, -470, 1.25], [56.0, 80, -460, 1.3], [58.4, 240, -450, 1.32], [61.5, 380, -470, 1.3], [63.3, 610, -660, 1.4], [64.3, 610, -660, 5.0]];
 // afuera otra vez: de la ventana a la fábrica abierta con el mapa de los 7, y de ahí al horizonte
-const KB: K[] = [[64.3, -1175, -395, 5.5], [65.4, -600, -900, 0.9], [67.4, 1600, -1700, 0.33], [72.6, 2300, -1750, 0.27], [75.6, 6200, -2400, 0.36], [78.9, 6800, -2600, 0.42], [79.6, 3500, -420, 1.15], [81.3, 3500, -400, 1.3]];
+const KB: K[] = [[64.3, -1175, -395, 5.5], [65.4, -600, -900, 0.9], [67.4, 1600, -1700, 0.33], [72.6, 2300, -1750, 0.27], [75.6, 2250, -1800, 0.25], [78.9, 2400, -1800, 0.27], [79.6, 3500, -420, 1.15], [81.3, 3500, -400, 1.3]];
 
 // los 7 horrores marcados sobre la fábrica abierta (piso, x, y)
 const MARCAS: [number, number, string][] = [[FCX, -3440, "THE CLOCK"], [3300, -420, "THE MACHINE"], [1800, -1500, "THE AIR"], [4400, -1600, "THE FINES"], [5550, -420, "THE STRAP"], [2400, -2400, "THE ACCIDENT"], [-1110, -500, "YOUR BODY"]];
@@ -100,6 +101,9 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
 
       {/* cuadro 0 = la miniatura en código, que cobra vida y se zambulle en el reloj de la torre */}
       <Mini0 t={t} />
+      {/* primeros planos: el chico grande actuando en los planos anchos */}
+      <Primer t={t} t0={24.7} t1={30.3} lado="izq" g={{ expr: "miedo", miraY: -1 }} />
+      <Primer t={t} t0={64.5} t1={67.3} lado="izq" g={{ expr: "triste", camina: 1.3 }} />
       {/* ── capas de pantalla ── */}
       <Chip t={t} t0={0.12} t1={1.5} text="AGE 9" color={C.rojo} x={960} y={170} centro size={150} />
       <Chip t={t} t0={2.2} t1={3.4} text="5:30 AM" color={C.violeta} x={960} y={950} centro size={96} />
@@ -143,9 +147,10 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       {t > 27.9 && t < 32 && <Particulas t={t} tipo="lluviaoro" n={60} seed={5} />}
       <Chip t={t} t0={28.3} t1={32} text="THE RICHEST COUNTRY ON EARTH" color={C.oro} tinta={C.noche} x={960} y={150} centro size={74} />
       <Chip t={t} t0={30.4} t1={32} text="BUILT IN ROOMS LIKE THIS" color={C.noche} x={960} y={930} centro size={64} />
-      <Gran t={t} t0={33.7} t1={34.5} text="CHILDREN" y={180} size={200} color={C.crema} />
-      {t > 34.5 && t < 35.5 && <Gran t={t} t0={34.58} t1={35.5} text="WHY?" y={300} size={230} color={C.rojo} />}
-      <Lista t={t} t0={36.3} t1={45.7} x={70} y={70} titulo="THE PERFECT WORKER" size={54} items={[{ txt: "SMALL", t0: 38.72 }, { txt: "NIMBLE", t0: 40.78 }, { txt: "TOO YOUNG TO ARGUE", t0: 43.56 }, { txt: "CHEAP", t0: 44.94 }]} />
+      <Velo t={t} t0={33.6} t1={35.6} op={0.5} />
+      <Gran t={t} t0={33.7} t1={34.5} text="CHILDREN" y={330} size={200} color={C.crema} />
+      {t > 34.5 && t < 35.5 && <Gran t={t} t0={34.58} t1={35.5} text="WHY?" y={470} size={230} color={C.rojo} />}
+      <Lista t={t} t0={36.3} t1={45.7} x={110} y={110} titulo="THE PERFECT WORKER" size={54} items={[{ txt: "SMALL", t0: 38.72 }, { txt: "NIMBLE", t0: 40.78 }, { txt: "TOO YOUNG TO ARGUE", t0: 43.56 }, { txt: "CHEAP", t0: 44.94 }]} />
       <Chip t={t} t0={39.3} t1={40.6} text="FITS UNDER THE MACHINE" color={C.teal} tinta={C.noche} x={1300} y={930} centro size={60} />
       <Chip t={t} t0={41.8} t1={43.4} text="1 BROKEN THREAD · 1 SECOND" color={C.violeta} x={1250} y={930} centro size={60} />
       {/* balanza: hombre vs chico */}
@@ -170,10 +175,11 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={68.7} t1={71.6} text="EVERY WAY IT TRIES TO BREAK YOU" color={C.rojo} x={960} y={140} centro size={66} />
       <Carretes t={t} t0={71.8} t1={73.6} n={7} y={940} s={0.95} />
       <Gran t={t} t0={71.9} t1={73.6} text="7" y={180} size={260} color={C.rojo} />
+      <Velo t={t} t0={74.3} t1={79.3} op={0.5} />
       {/* la carta que viene de 4.000 millas */}
       {t > 74.4 && t < 79.4 && (() => {
         const k = prog(t, 74.4, 77.3);
-        return <Carta t={t} t0={74.4} x={1920 - k * 900} y={420 + Math.sin(k * Math.PI) * -120} s={0.55 + k * 0.15} abre={0} />;
+        return <Carta t={t} t0={74.4} x={1780 - k * 360} y={600 + Math.sin(k * Math.PI) * -120} s={0.42 + k * 0.1} abre={0} />;
       })()}
       <Chip t={t} t0={74.6} t1={77} text="A PRESIDENT" color={C.violeta} x={960} y={140} centro size={70} />
       <Chip t={t} t0={75.5} t1={79.2} text="4,000 MILES AWAY" color={C.teal} tinta={C.noche} x={960} y={940} centro size={70} />

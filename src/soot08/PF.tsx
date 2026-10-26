@@ -1,10 +1,10 @@
 import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
-import { C, ent, prog, Chip, Zzz } from "./kit";
+import { C, ent, prog, Chip, Zzz, fontFamily } from "./kit";
 import { Correa, Rodillo, Carro, Rosbif, Pudin, RelojBolsillo, Reloj } from "./kit3";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, NINO, NINA, CAPATAZ, OBRERO, GenteFab } from "./mundo";
 import { Gran, Sello, Tachado, Flash, sacudon, Velo, Horror, Latigo, Lista } from "./capas";
-import { Retrato, Girado } from "./piezas";
+import { Primer, Retrato, Girado } from "./piezas";
 import { V } from "./kit3";
 import { Persona } from "./persona";
 
@@ -15,10 +15,10 @@ import { Persona } from "./persona";
 export const F0 = 473.5, F1 = 567.7;
 
 const KF: K[] = [
-  [473.5, 3300, -1500, 0.32], [475.8, 3500, -450, 0.8], [482.8, 3400, -450, 0.75], [488.0, 2750, -360, 1.3], [493.1, 2780, -380, 1.5], [494.3, 2950, -430, 1.0], [507.8, 2950, -430, 1.05], [512.8, 2950, -430, 1.1],
-  [512.81, 5800, -2380, 0.95], [521.2, 5800, -2380, 1.05],
+  [473.5, 3300, -1500, 0.32], [475.8, 3500, -450, 0.8], [482.8, 3150, -420, 1.0], [488.0, 2750, -360, 1.3], [493.1, 2780, -380, 1.5], [494.3, 2950, -430, 1.3], [507.8, 2950, -430, 1.35], [512.8, 2950, -430, 1.4],
+  [512.81, 5800, -2420, 1.15], [521.2, 5780, -2420, 1.2],
   [521.21, -2600, -420, 0.7], [527.5, -200, -420, 0.62], [533.1, 2600, -420, 0.8],
-  [533.11, 3300, -1500, 0.33], [563.5, 3400, -1500, 0.32], [567.7, 3600, -1600, 0.29],
+  [533.11, 3000, -420, 1.0], [563.5, 3300, -420, 1.05], [567.7, 3300, -700, 0.6],
 ];
 const seg = (t: number) => (t < 512.81 ? "piso0" : t < 521.21 ? "cisterna" : t < 533.11 ? "calle" : "blincoe");
 
@@ -48,6 +48,8 @@ export const PF: React.FC<{ t: number }> = ({ t }) => {
     g0.push({ seed: 2, x: 2780, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t > 491.6 && t < 494.3 ? "dormido" : t > 494.3 ? "miedo" : "triste", ladea: t > 491.6 && t < 494.3 ? 14 : 0, mira: 1, bI: t > 496.5 && t < 499 ? 140 : 0, cI: 60 });
     g0.push({ seed: 3, x: 2350, y: 0, h: 280, ropa: NINA, gorro: "cofia", largo: true, expr: t > 500.9 ? "miedo" : "triste" });
   }
+  // de fondo, mientras se cuenta lo de Blincoe: la sala sigue trabajando
+  if (s === "blincoe") [2600, 3000, 3450, 3850].forEach((x, i) => g0.push({ seed: 120 + i, x, y: 0, h: 270 + (i % 2) * 30, ropa: i % 2 ? NINA : { ...NINO, tunica: "#8a8494", tunica2: "#5d5670" }, gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, expr: "triste", bD: 110 + Math.sin(t * 3 + i) * 20, cD: 60, mira: i % 2 ? -1 : 1 }));
   const g2: GenteFab[] = [];
   if (s === "cisterna") {
     g2.push({ seed: 41, x: 6250, y: -2000, h: 500, ropa: CAPATAZ, gorro: "gorra", barba: true, flip: true, expr: "enojado", bD: 60 });
@@ -128,7 +130,8 @@ export const PF: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={528.1} t1={530.4} text="HUNDREDS OF MILES AWAY" color={C.violeta} x={960} y={150} centro size={70} />
       <Sello t={t} t0={530.5} t1={533.0} text="BOUND UNTIL ADULTHOOD" x={960} y={340} size={100} />
       {s === "blincoe" && <Velo t={t} t0={533.1} t1={567.4} op={0.62} />}
-      <Retrato t={t} t0={533.3} t1={543.8} x={420} y={470} g={{ seed: 88, ropa: { ...NINO, tunica: "#8a8494", tunica2: "#5d5670" }, expr: t > 540 ? "feliz" : "neutro" }} nombre="ROBERT BLINCOE" sub="LEFT LONDON AT ~7" s={0.9} />
+      <Retrato t={t} t0={533.3} t1={543.8} x={430} y={440} g={{ seed: 88, ropa: { ...NINO, tunica: "#8a8494", tunica2: "#5d5670" }, expr: t > 540 ? "feliz" : "neutro" }} nombre="ROBERT BLINCOE" sub="SENT NORTH AT ABOUT 7" s={1.05} />
+      <Primer t={t} t0={544.0} t1={548.2} lado="izq" g={{ seed: 88, ropa: { ...NINO, tunica: "#8a8494", tunica2: "#5d5670" }, expr: "triste", gorro: undefined }} emo="lagrimas" />
       <Chip t={t} t0={536.6} t1={538.5} text="A LONDON WORKHOUSE" color={C.violeta} x={1300} y={200} centro size={62} />
       <Chip t={t} t0={538.6} t1={543.8} text="PROMISED:" color={C.oro} tinta={C.noche} x={1300} y={200} centro size={66} />
       <Rosbif t={t} t0={540.2} t1={547.9} x={1000} y={520} s={0.9} />
@@ -136,12 +139,23 @@ export const PF: React.FC<{ t: number }> = ({ t }) => {
       <RelojBolsillo t={t} t0={542.9} t1={547.9} x={1680} y={520} s={0.9} />
       {[1000, 1340, 1680].map((x, i) => <Tachado key={x} t={t} t0={544.2 + i * 0.2} t1={547.9} x={x} y={520} w={260} h={260} />)}
       <Chip t={t} t0={544.0} t1={548.2} text="WHAT HE GOT: WORK FROM DAWN TO NIGHT" color={C.rojo} x={1300} y={800} centro size={52} />
-      {t > 548.4 && t < 555.0 && <div style={{ position: "absolute", left: 700, top: 745, width: 1300, height: 46, borderRadius: 23, background: "#6b4a2e", opacity: ent(t, 548.4), border: "6px solid #2a1530" }} />}
-      {t > 548.4 && t < 555.0 && <Chancho x={1100} y={600} s={1.3 * ent(t, 548.5)} t={t} />}
-      {t > 548.4 && t < 555.0 && <div style={{ position: "absolute", left: 1300, top: 660, width: 460, height: 90, background: "#7a4a22", borderRadius: "0 0 40px 40px", transform: `scale(${ent(t, 548.6)})`, border: "8px solid #2a1530" }} />}
-      {t > 549.8 && t < 555 && <Persona t={t} seed={89} x={1690} y={750} h={300} ropa={{ ...NINO, tunica: "#8a8494", tunica2: "#5d5670" }} expr="triste" flip bD={70} cD={50} aparece={549.9} />}
+      {t > 548.4 && t < 552.3 && <div style={{ position: "absolute", left: 700, top: 745, width: 1300, height: 46, borderRadius: 23, background: "#6b4a2e", opacity: ent(t, 548.4), border: "6px solid #2a1530" }} />}
+      {t > 548.4 && t < 552.3 && <Chancho x={1100} y={600} s={1.3 * ent(t, 548.5)} t={t} />}
+      {t > 548.4 && t < 552.3 && <div style={{ position: "absolute", left: 1300, top: 660, width: 460, height: 90, background: "#7a4a22", borderRadius: "0 0 40px 40px", transform: `scale(${ent(t, 548.6)})`, border: "8px solid #2a1530" }} />}
+      {t > 549.8 && t < 552.3 && <Persona t={t} seed={89} x={1690} y={750} h={300} ropa={{ ...NINO, tunica: "#8a8494", tunica2: "#5d5670" }} expr="triste" flip bD={70} cD={50} aparece={549.9} />}
       <Chip t={t} t0={548.6} t1={552.0} text="SO HUNGRY THEY STOLE THE PIGS' FOOD" color={C.noche} x={960} y={150} centro size={58} />
       <Chip t={t} t0={552.1} t1={555.0} text="HIS BOOK SHOCKED THE COUNTRY" color={C.violeta} x={960} y={150} centro size={64} />
+      {/* el libro que se abre, y lectores que se tapan la boca */}
+      {t > 552.2 && t < 555.1 && (() => { const e = ent(t, 552.25), ab = prog(t, 552.6, 553.3); return (
+        <div style={{ position: "absolute", left: 960, top: 560, transform: `translate(-50%,-50%) scale(${e * (1 - prog(t, 554.8, 555.1))}) rotate(-3deg)` }}>
+          <div style={{ position: "relative", width: 760, height: 480 }}>
+            <div style={{ position: "absolute", left: 380, top: 0, width: 380, height: 480, background: "linear-gradient(90deg,#e9dcbc,#fbf3dc)", border: "8px solid #2a1530", borderRadius: "6px 18px 18px 6px" }}>{[0, 1, 2, 3, 4, 5, 6, 7].map((r) => <div key={r} style={{ position: "absolute", left: 36, top: 60 + r * 46, width: 290 - (r % 3) * 40, height: 12, borderRadius: 6, background: "#8a7a64", opacity: ab }} />)}</div>
+            <div style={{ position: "absolute", left: 380 - 380 * ab, top: 0, width: 380 * Math.max(ab, 0.02), height: 480, background: ab < 0.5 ? "#7a2f3a" : "linear-gradient(270deg,#e9dcbc,#fbf3dc)", border: "8px solid #2a1530", borderRadius: "18px 6px 6px 18px" }} />
+            {ab < 0.5 && <div style={{ position: "absolute", left: 400, top: 120, width: 340, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 44, color: C.oro, lineHeight: 1.15 }}>A MEMOIR OF<br />ROBERT BLINCOE</div>}
+            <div style={{ position: "absolute", left: 0, right: 0, top: 500, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 40, color: "#fff", WebkitTextStroke: "7px #2a1530", paintOrder: "stroke fill" }}>PUBLISHED 1828</div>
+          </div>
+        </div>); })()}
+      <Primer t={t} t0={552.4} t1={555.0} lado="der" g={{ seed: 140, ropa: OBRERO(2), gorro: "copa", barba: true, expr: "sorpresa", bD: 140, cD: 130 }} emo="excl" h={1050} />
       {/* colgado de las muñecas sobre una máquina en marcha: sólo silueta */}
       {t > 555.1 && t < 563.5 && (
         <>

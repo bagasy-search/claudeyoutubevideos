@@ -1,5 +1,5 @@
 import React from "react";
-import { interpolate } from "remotion";
+import { AbsoluteFill, interpolate } from "remotion";
 import { C, ent, prog, fontFamily } from "./kit";
 import { T, V } from "./kit3";
 
@@ -20,7 +20,7 @@ export const Sello: React.FC<{ t: number; t0: number; text: string; x: number; y
   const k = t - t0;
   const s = k < 0.12 ? 2.4 - (k / 0.12) * 1.4 : 1 + Math.sin((k - 0.12) * 30) * 0.05 * Math.exp(-(k - 0.12) * 8);
   return (
-    <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) rotate(${rot}deg) scale(${s * sale(t, t1)})`, opacity: Math.min(1, k * 10), fontFamily, fontWeight: 700, fontSize: size, color, border: `${size * 0.09}px solid ${color}`, borderRadius: size * 0.18, padding: `${size * 0.02}px ${size * 0.3}px`, letterSpacing: size * 0.06, background: "rgba(255,246,220,.12)", whiteSpace: "nowrap", lineHeight: 1.1 }}>
+    <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) rotate(${rot}deg) scale(${s * sale(t, t1)})`, opacity: Math.min(1, k * 10), fontFamily, fontWeight: 700, fontSize: size, color, border: `${size * 0.09}px solid ${color}`, borderRadius: size * 0.18, padding: `${size * 0.02}px ${size * 0.3}px`, letterSpacing: size * 0.06, background: "rgba(27,18,64,.82)", boxShadow: "10px 12px 0 rgba(20,8,40,.4)", whiteSpace: "nowrap", lineHeight: 1.1 }}>
       {text}
     </div>
   );
@@ -72,8 +72,12 @@ export const Horror: React.FC<{ t: number; t0: number; n: number; nombre: string
   if (t < t0 || t > t1 + 0.3) return null;
   const e = ent(t, t0, 0, { damping: 10, stiffness: 160 });
   const e2 = ent(t, t0 + 0.35, 0, { damping: 9, stiffness: 190 });
+  const fondo = prog(t, t0, t0 + 0.15) * (1 - prog(t, t1, t1 + 0.3));
   return (
     <>
+      {/* tarjeta a pantalla limpia: el mundo de atrás se apaga y salen rayos rojos */}
+      <AbsoluteFill style={{ opacity: fondo, background: "radial-gradient(circle at 50% 45%, #6e1a2a 0%, #2a0f2e 55%, #160a22 100%)" }} />
+      <AbsoluteFill style={{ opacity: fondo * 0.35, background: `repeating-conic-gradient(from ${t * 12}deg at 50% 45%, rgba(255,90,90,.5) 0deg 6deg, transparent 6deg 20deg)` }} />
       <div style={{ position: "absolute", left: 960, top: 390, transform: `translate(-50%,-50%) translateX(${(1 - e) * -1400}px) rotate(${(1 - e) * -12 - 2}deg) scale(${sale(t, t1)})`, background: C.rojo, border: "10px solid #fff3d6", borderRadius: 26, padding: "10px 60px", boxShadow: "14px 16px 0 rgba(20,8,40,.45)", fontFamily, fontWeight: 700, fontSize: 92, color: "#fff3d6", letterSpacing: 8, whiteSpace: "nowrap" }}>
         HORROR #{n}
       </div>
@@ -97,7 +101,7 @@ export const BarraDia: React.FC<{ t: number; t0: number; x?: number; y?: number;
       {tramos.map((r, i) => (
         <div key={i} style={{ position: "absolute", left: px(r.de), top: 10, height: 100, width: px(r.a - r.de) * prog(t, r.t0, r.t1), background: r.color, borderRadius: 12, overflow: "hidden", fontFamily, fontWeight: 700, fontSize: 40, color: "#fff", lineHeight: "100px", textAlign: "center", whiteSpace: "nowrap" }}>{r.txt}</div>
       ))}
-      {[0, 3, 6, 9, 12, 15, 18, 21, 24].map((h) => <div key={h} style={{ position: "absolute", left: px(h) - 30, top: 128, width: 60, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 30, color: "#fff", WebkitTextStroke: `5px ${T}`, paintOrder: "stroke fill" }}>{h === 24 ? "" : `${h % 12 || 12}${h < 12 ? "a" : "p"}`}</div>)}
+      {[0, 3, 6, 9, 12, 15, 18, 21, 24].map((h) => <div key={h} style={{ position: "absolute", left: px(h) - 40, top: 128, width: 80, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 38, color: "#fff", WebkitTextStroke: `6px ${T}`, paintOrder: "stroke fill" }}>{h === 24 ? "" : `${h % 12 || 12}${h < 12 ? "a" : "p"}`}</div>)}
     </div>
   );
 };

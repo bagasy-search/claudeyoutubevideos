@@ -84,7 +84,7 @@ export const Horizonte: React.FC<{ t: number; humo?: number; color?: string }> =
 
 // ── LA FÁBRICA por dentro (casa de muñecas): x 600..6600, pisos de 1000 (y 0, -1000, -2000), techo en -3000
 export const FX0 = 600, FX1 = 6600, FCX = 3600;
-export type GenteFab = { x: number; y: number; h?: number; ropa?: Ropa; expr?: Expr; camina?: number; flip?: boolean; seed: number; gorro?: "gorra" | "copa" | "cofia"; largo?: boolean; bI?: number; bD?: number; cI?: number; cD?: number; manoD?: React.ReactNode; manoI?: React.ReactNode; habla?: boolean; inclina?: number; delantal?: string; descalzo?: boolean; mira?: number; aparece?: number; salta?: number; opacity?: number; viejo?: boolean; barba?: boolean; ladea?: number };
+export type GenteFab = { x: number; y: number; h?: number; ropa?: Ropa; expr?: Expr; camina?: number; flip?: boolean; seed: number; gorro?: "gorra" | "copa" | "cofia"; largo?: boolean; bI?: number; bD?: number; cI?: number; cD?: number; manoD?: React.ReactNode; manoI?: React.ReactNode; habla?: boolean; inclina?: number; delantal?: string; descalzo?: boolean; mira?: number; miraY?: number; aparece?: number; salta?: number; opacity?: number; viejo?: boolean; barba?: boolean; ladea?: number };
 export const Gente: React.FC<{ t: number; g: GenteFab[] }> = ({ t, g }) => <>{g.map((p) => <Persona key={p.seed} t={t} h={p.h ?? 300} {...p} />)}</>;
 
 const Piso: React.FC<{ y: number; x0?: number; x1?: number }> = ({ y, x0 = FX0, x1 = FX1 }) => (

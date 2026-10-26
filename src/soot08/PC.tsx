@@ -4,7 +4,7 @@ import { C, ent, prog, Chip, Emote, Pan, Bota } from "./kit";
 import { Moneda3, tramos, V } from "./kit3";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, NINO, NINA, HILANDERO, DUENO, GenteFab, mulaVaiven } from "./mundo";
 import { Gran, Cuenta, Sello, Flash, sacudon, Velo, Horror, Latigo } from "./capas";
-import { Girado, Retrato, Huellas } from "./piezas";
+import { Girado, Retrato, Huellas, Primer } from "./piezas";
 import { MulaPerfil, carroX } from "./perfil";
 import { Persona } from "./persona";
 
@@ -15,14 +15,14 @@ import { Persona } from "./persona";
 export const C0 = 189.7, C1 = 295.7;
 
 const KM: K[] = [
-  [189.7, 3300, -1500, 0.32], [192.0, 3300, -1500, 0.33], [193.4, 2250, -430, 1.1], [196.8, 2250, -430, 1.15], [198.0, 3300, -450, 0.62], [200.2, 3300, -460, 0.6], [202.4, 3300, -500, 0.55], [204.8, 3500, -420, 0.9],
-  [214.3, 4350, -450, 1.0], [218.5, 4100, -450, 0.9], [220.8, 3500, -430, 0.8], [222.4, 3300, -430, 0.95], [224.4, 3220, -330, 1.3], [229.0, 3220, -320, 1.45],
+  [189.7, 3300, -1500, 0.32], [192.0, 3300, -1500, 0.33], [193.4, 2200, -300, 1.6], [196.8, 2200, -300, 1.65], [198.0, 3300, -450, 0.62], [200.2, 3300, -460, 0.6], [202.4, 3300, -500, 0.55], [204.8, 3500, -420, 0.9],
+  [214.3, 4350, -450, 1.0], [218.5, 4100, -450, 0.9], [220.8, 3500, -430, 0.8], [222.4, 3300, -430, 0.95], [224.4, 3180, -330, 1.85], [229.0, 3180, -320, 1.95],
   [232.6, 3300, -450, 0.7], [243.0, 3300, -450, 0.62], [245.5, 3200, -200, 1.0], [248.6, 3150, -150, 1.6], [251.7, 3150, -170, 1.5],
-  [271.0, 3300, -450, 0.7], [277.0, 3400, -500, 0.75], [284.9, 3300, -500, 0.7], [287.0, 2600, -330, 1.2], [293.0, 2560, -280, 1.5], [295.7, 2560, -280, 1.6],
+  [271.0, 3300, -380, 0.95], [277.0, 3350, -380, 1.0], [284.9, 3000, -380, 1.0], [287.0, 2600, -330, 1.2], [293.0, 2560, -280, 1.5], [295.7, 2560, -280, 1.6],
 ];
 const KL: K[] = [
   [204.8, 0, -560, 0.75], [210.3, 0, -560, 0.7], [214.3, 0, -560, 0.72],
-  [251.7, -150, -420, 0.8], [253.3, -150, -420, 0.8], [257.9, 400, -250, 1.35], [262.5, -330, -230, 1.6], [263.9, -420, -230, 1.7], [267.5, -480, -240, 1.9], [271.0, -400, -300, 1.4],
+  [251.7, 200, -320, 1.0], [253.3, 500, -220, 1.5], [257.9, 400, -250, 1.35], [262.5, -330, -260, 1.25], [263.9, -420, -260, 1.3], [267.5, -480, -260, 1.38], [271.0, -400, -300, 1.4],
 ];
 const lado = (t: number) => (t >= 204.8 && t < 214.3) || (t >= 251.7 && t < 271.0);
 
@@ -31,7 +31,10 @@ const uLado = (t: number) => (t < 240 ? tramos(t, [[204.8, 0], [207.4, 1], [208.
 
 export const PC: React.FC<{ t: number }> = ({ t }) => {
   const enLado = lado(t);
-  const cam = enLado ? camara(t, KL) : camara(t, KM);
+  const cam0 = enLado ? camara(t, KL) : camara(t, KM);
+  // el piecer va y viene: la cámara lo sigue de cerca en vez de mirar toda la sala
+  const sigue = t > 232.6 && t < 245.5 ? Math.min(prog(t, 232.6, 233.8), 1 - prog(t, 243.6, 245.5)) : 0;
+  const cam = sigue > 0 ? { x: cam0.x + (3300 + Math.sin((t - 232.6) * 0.9) * 900 - cam0.x) * sigue, y: cam0.y + (-300 - cam0.y) * sigue, z: cam0.z + (1.3 - cam0.z) * sigue } : cam0;
   const sh = sacudon(t, [195.5, 224.4, 266.3, 267.6]);
   const parada = t > 274 && t < 283.2; // los doffers cambian bobinas con la máquina detenida
 
@@ -77,7 +80,7 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
               return <Moneda3 key={i} t={t} t0={217.7 + i * 0.3} t1={220.6} x={4600 - k * (1150 - i * 350)} y={-420 - Math.sin(k * Math.PI) * 220} s={0.3} txt="d" oro />;
             })}
             {/* el hilo cortado: chispa roja donde se rompe */}
-            {t > 224.4 && t < 226 && <div style={{ position: "absolute", left: 3150, top: -560, width: 80, height: 80, borderRadius: 40, background: C.rojo, transform: `scale(${1 + Math.sin(t * 30) * 0.3})`, opacity: 0.8 }} />}
+            {t > 224.4 && t < 226.4 && (() => { const k = prog(t, 224.4, 225.0); return <svg style={{ position: "absolute", left: 3110, top: -640, overflow: "visible" }} width={80} height={200}><path d={`M 40 0 Q ${40 - k * 30} 60 ${40 - k * 50} ${80 + k * 30}`} stroke="#fffaf0" strokeWidth={5} fill="none" /><path d={`M 40 200 Q ${40 + k * 30} 140 ${40 + k * 50} ${120 - k * 30}`} stroke="#fffaf0" strokeWidth={5} fill="none" />{[0, 1, 2, 3, 4].map((i) => <line key={i} x1={40} y1={100} x2={40 + Math.cos(i * 1.3) * 60 * k} y2={100 + Math.sin(i * 1.3) * 60 * k} stroke={C.oro} strokeWidth={6} strokeLinecap="round" opacity={1 - prog(t, 225.2, 226.4)} />)}</svg>; })()}
             {/* aceite en el piso + zapato que patina */}
             {t > 246.5 && t < 251.7 && (
               <>
@@ -115,7 +118,7 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
           <Espacio cam={cam}>
             <MulaPerfil t={t} u={uLado(t)} peligro={t > 263.6 && t < 271 ? prog(t, 263.6, 264.2) : 0}>
               {/* el scavenger: se arrastra panza abajo hasta debajo de los hilos (dibujado DETRÁS del carro) */}
-              {t > 255 && <Girado t={t} rot={-90} g={{ seed: 30, x: interpolate(t, [257.9, 262.4], [760, -330], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), y: -6, h: 250, ropa: NINO, gorro: "gorra", expr: t < 263.9 ? "neutro" : t < 267.5 ? "miedo" : "sorpresa", bD: 170 + Math.sin(t * 8) * 10, bI: 160, descalzo: true }} />}
+              {t > 251.7 && <Girado t={t} rot={-90} g={{ seed: 30, x: interpolate(t, [257.9, 262.4], [760, -330], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), y: -6, h: 250, ropa: NINO, gorro: "gorra", expr: t < 263.9 ? "neutro" : t < 267.5 ? "miedo" : "sorpresa", bD: 170 + Math.sin(t * 8) * 10, bI: 160, descalzo: true }} />}
               {t > 263.9 && t < 271 && <Emote t={t} t0={263.95} tipo="susto" x={-600} y={-120} s={0.6} />}
               {/* el hilandero, del otro lado del carro */}
               {t < 214.3 && <Persona t={t} seed={41} x={carroX(uLado(t)) + 420} y={0} h={480} ropa={HILANDERO} barba flip expr="neutro" bI={50} cI={40} camina={Math.abs(uLado(t + 0.05) - uLado(t)) > 0.002 ? 1.4 : 0} />}
@@ -124,6 +127,7 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
         </>
       )}
 
+      <Primer t={t} t0={205.0} t1={214.2} lado="der" g={{ expr: t < 210.8 ? "sorpresa" : "miedo", mira: -1 }} />
       {/* ── capas de pantalla ── */}
       <Latigo t={t} at={[189.75, 204.8, 214.3, 251.7, 271.0]} />
       <Horror t={t} t0={189.75} n={2} nombre="THE MACHINE" t1={192.0} />
@@ -143,7 +147,7 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
       <Gran t={t} t0={220.9} t1={222.3} text="GUESS WHO?" y={190} size={150} color={C.ambar} />
       <Chip t={t} t0={222.5} t1={224.3} text="JOB 1 · THE PIECER" color={C.rojo} x={960} y={150} centro size={86} />
       <Flash t={t} at={[224.4, 266.3]} color="#ffdcdc" />
-      <Chip t={t} t0={224.5} t1={226.3} text="SNAP!" color={C.rojo} x={1250} y={300} centro size={90} />
+      <Chip t={t} t0={224.5} t1={226.3} text="SNAP!" color={C.rojo} x={1180} y={200} centro size={90} />
       <Chip t={t} t0={226.4} t1={232.4} text="A FEW SECONDS TO FIX IT" color={C.violeta} x={960} y={150} centro size={70} />
       <Chip t={t} t0={229.1} t1={232.4} text="THE CARRIAGE KEEPS MOVING" color={C.noche} x={960} y={950} centro size={64} />
       <Chip t={t} t0={232.7} t1={236.6} text="BACK AND FORTH · ALL SHIFT" color={C.violeta} x={960} y={150} centro size={70} />

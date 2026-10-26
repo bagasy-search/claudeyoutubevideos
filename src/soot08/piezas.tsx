@@ -1,8 +1,8 @@
 import React from "react";
 import { Persona } from "./persona";
-import { GenteFab, OBRERO } from "./mundo";
+import { GenteFab, OBRERO, NINO, NINA } from "./mundo";
 import { V } from "./kit3";
-import { C, ent, prog, fontFamily } from "./kit";
+import { C, ent, prog, fontFamily, Emote, Emo } from "./kit";
 
 // Piezas chicas que se repiten entre partes: gente acostada / cargada, el despertador con su pértiga, goteras.
 
@@ -63,7 +63,7 @@ export const Retrato: React.FC<{ t: number; t0: number; t1?: number; x: number; 
         <Persona t={t} h={620} {...g} x={172} y={600} />
       </div>
       <div style={{ position: "absolute", left: "50%", top: 420, transform: "translateX(-50%)", background: C.noche, color: "#fff", fontFamily, fontWeight: 700, fontSize: 40, padding: "8px 26px", borderRadius: 16, whiteSpace: "nowrap", border: "5px solid #fff3d6" }}>{nombre}</div>
-      {sub && <div style={{ position: "absolute", left: "50%", top: 500, transform: "translateX(-50%)", color: "#fff", fontFamily, fontWeight: 700, fontSize: 30, whiteSpace: "nowrap", WebkitTextStroke: "6px #2a1530", paintOrder: "stroke fill" }}>{sub}</div>}
+      {sub && <div style={{ position: "absolute", left: "50%", top: 500, transform: "translateX(-50%)", color: "#fff", fontFamily, fontWeight: 700, fontSize: 42, whiteSpace: "nowrap", WebkitTextStroke: "8px #2a1530", paintOrder: "stroke fill" }}>{sub}</div>}
     </div>
   );
 };
@@ -116,5 +116,26 @@ export const Oreja: React.FC<{ t: number; t0: number; t1?: number; x: number; y:
       <path d="M 40 -170 Q 170 -190 170 -40 Q 170 60 100 100 Q 60 130 60 190 Q 50 240 0 220 Q -30 200 -10 160 Q 20 110 40 60 Q 60 0 20 -40 Q -10 -80 30 -110 Z" fill={sorda > 0.5 ? "#c9a890" : "#f2c09a"} stroke="#2a1530" strokeWidth={10} />
       <path d="M 70 -120 Q 130 -110 120 -40 Q 110 10 70 30" stroke="#d9997a" strokeWidth={14} fill="none" strokeLinecap="round" />
     </svg>
+  );
+};
+
+// PRIMER PLANO: el protagonista a media figura (cortado por abajo, como el molde de Soot) que entra desde el borde
+// en los planos anchos — así nunca queda un plano sin alguien actuando lo que se dice. lado = "izq" | "der".
+export const Primer: React.FC<{ t: number; t0: number; t1: number; lado?: "izq" | "der"; g?: Partial<Omit<GenteFab, "x" | "y">>; nena?: boolean; emo?: Emo; h?: number; x?: number }> = ({ t, t0, t1, lado = "izq", g = {}, nena, emo, h = 1150, x }) => {
+  if (t < t0 - 0.05 || t > t1 + 0.35) return null;
+  const e = ent(t, t0, 0, { damping: 13, stiffness: 150 });
+  const out = prog(t, t1, t1 + 0.35);
+  const dir = lado === "izq" ? -1 : 1;
+  const x0 = x ?? (lado === "izq" ? 300 : 1620);
+  const px = x0 + dir * ((1 - e) * 700 + out * 800);
+  const py = 1080 + h * 0.36 + Math.sin(t * 2.1) * 6;
+  const ropa = g.ropa ?? (nena ? NINA : NINO);
+  const gorro = g.gorro ?? (nena ? "cofia" : "gorra");
+  const cab = { x: px, y: py - 450 * (h / 560) };
+  return (
+    <div style={{ position: "absolute", inset: 0, pointerEvents: "none", filter: "drop-shadow(0 18px 30px rgba(10,4,24,.55))" }}>
+      <Persona t={t} seed={g.seed ?? 900 + Math.round(t0)} h={h} {...g} ropa={ropa} gorro={gorro} largo={g.largo ?? nena} flip={g.flip ?? lado === "der"} mira={g.mira ?? (lado === "izq" ? 1 : -1)} x={px} y={py} />
+      {emo && <Emote t={t} t0={t0 + 0.25} t1={t1} tipo={emo} x={cab.x} y={cab.y} s={h / 560} />}
+    </div>
   );
 };

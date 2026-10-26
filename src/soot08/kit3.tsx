@@ -556,6 +556,13 @@ export const Estatua: React.FC<P & { t: number }> = ({ t, ...p }) => (
       <path d="M 130 -1080 Q 190 -1000 170 -900 L 140 -900 Q 150 -990 100 -1060 Z" />
       <ellipse cx={0} cy={-1220} rx={90} ry={110} />
       <path d="M -88 -1200 Q -80 -1090 0 -1080 Q 80 -1090 88 -1200 Q 60 -1140 0 -1136 Q -60 -1140 -88 -1200 Z" fill="#3a5244" />
+      {/* rasgos: pelo, cejas pesadas, ojos hundidos, nariz larga, boca seria (Lincoln) */}
+      <path d="M -92 -1250 Q -70 -1340 0 -1336 Q 80 -1336 94 -1252 Q 60 -1300 0 -1296 Q -50 -1300 -92 -1250 Z" fill="#3a5244" />
+      <path d="M -62 -1236 L -18 -1228 M 18 -1228 L 62 -1236" stroke="#2c4034" strokeWidth={12} strokeLinecap="round" />
+      <ellipse cx={-38} cy={-1208} rx={16} ry={10} fill="#2c4034" /><ellipse cx={38} cy={-1208} rx={16} ry={10} fill="#2c4034" />
+      <path d="M 0 -1222 L -10 -1172 Q 0 -1164 12 -1172" stroke="#2c4034" strokeWidth={8} fill="none" strokeLinecap="round" />
+      <path d="M -26 -1150 Q 0 -1144 26 -1150" stroke="#2c4034" strokeWidth={8} fill="none" strokeLinecap="round" />
+      <path d="M -40 -760 L 40 -760 L 52 -700 L -52 -700 Z" fill="#3a5244" />
     </g>
     <path d="M -50 -1290 Q -10 -1320 40 -1300" stroke="#8fb3a0" strokeWidth={10} fill="none" strokeLinecap="round" opacity={0.7} />
     <path d="M -110 -1000 Q -100 -900 -90 -800" stroke="#8fb3a0" strokeWidth={10} fill="none" opacity={0.5} />

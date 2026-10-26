@@ -4,7 +4,7 @@ import { C, ent, prog, Chip, Emote } from "./kit";
 import { Moneda3 } from "./kit3";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, NINO, NINA, OBRERO, GenteFab } from "./mundo";
 import { Gran, Sello, Tilde, Flash, sacudon, Velo, Horror, Latigo, Lista } from "./capas";
-import { Retrato } from "./piezas";
+import { Retrato, Primer } from "./piezas";
 
 // PARTE G · HORROR #6, EL ACCIDENTE (567,7-650,2 s). Piso 2 sin una sola valla: ejes, engranajes y correas a la altura
 // de la cabeza de un chico → el pelo largo (sólo el mechón y el destello, nada de sangre; queda la cofia en el piso) →
@@ -13,9 +13,9 @@ import { Retrato } from "./piezas";
 export const G0 = 567.7, G1 = 650.2;
 
 const KG: K[] = [
-  [567.7, 3300, -1500, 0.32], [570.4, 2600, -2450, 0.75], [574.2, 2550, -2620, 0.85], [578.9, 2400, -2330, 1.15], [582.4, 2400, -2300, 1.3], [586.8, 2420, -2290, 1.55], [588.3, 2420, -2290, 1.6], [591.3, 2500, -2380, 1.0],
-  [591.4, 3550, -2380, 0.95], [594.0, 3600, -2330, 1.25], [599.3, 3500, -2420, 0.8], [610.7, 3500, -2420, 0.72],
-  [610.71, -1500, -420, 0.95], [617.6, -1350, -420, 0.88], [624.8, -700, -440, 0.62], [634.5, 1300, -440, 0.62], [638.6, 2900, -520, 0.58],
+  [567.7, 3300, -1500, 0.32], [570.4, 2600, -2450, 0.75], [574.2, 2550, -2420, 1.1], [578.9, 2400, -2330, 1.15], [582.4, 2400, -2300, 1.3], [586.8, 2420, -2290, 1.55], [588.3, 2420, -2290, 1.6], [591.3, 2500, -2380, 1.0],
+  [591.4, 3550, -2380, 0.95], [594.0, 3600, -2330, 1.3], [599.3, 3620, -2300, 1.3], [610.7, 3600, -2300, 1.35],
+  [610.71, -1500, -420, 0.95], [617.6, -1350, -420, 0.88], [624.8, -200, -420, 0.9], [634.5, 1500, -420, 0.9], [638.6, 2400, -480, 0.75],
   [638.61, 2500, -2450, 0.72], [646.9, 2500, -2450, 0.68], [650.2, 3300, -1500, 0.32],
 ];
 const seg = (t: number) => (t < 610.71 ? "piso2" : t < 638.61 ? "calle" : "vallas");
@@ -115,12 +115,13 @@ export const PG: React.FC<{ t: number }> = ({ t }) => {
       <Lista t={t} t0={591.5} t1={598.9} x={90} y={170} titulo="NEXT IN LINE…" size={56} items={[{ txt: "SLEEVES", t0: 591.6, ok: false }, { txt: "APRONS", t0: 592.3, ok: false }, { txt: "FINGERS", t0: 593.0, ok: false }]} />
       <Chip t={t} t0={594.1} t1={598.9} text="CLEANING MACHINES · STILL RUNNING" color={C.rojo} x={1250} y={950} centro size={58} />
       <Gran t={t} t0={599.35} t1={600.2} text="AND THEN WHAT?" y={540} size={130} color={C.ambar} />
-      <Lista t={t} t0={600.25} t1={607.7} x={560} y={220} titulo="IF YOU GOT HURT" size={70} items={[{ txt: "NO SICK PAY", t0: 600.3, ok: false }, { txt: "NO COMPENSATION", t0: 601.7, ok: false }, { txt: "NO JOB", t0: 606.0, ok: false }]} />
+      <Lista t={t} t0={600.25} t1={607.7} x={110} y={200} titulo="IF YOU GOT HURT" size={70} items={[{ txt: "NO SICK PAY", t0: 600.3, ok: false }, { txt: "NO COMPENSATION", t0: 601.7, ok: false }, { txt: "NO JOB", t0: 606.0, ok: false }]} />
+      <Primer t={t} t0={600.4} t1={610.6} lado="der" g={{ expr: "triste", bI: 40, cI: 110, manoI: <Venda /> }} emo="lagrimas" />
       <Chip t={t} t0={607.9} t1={610.6} text="SOME OWNERS PAID THE DOCTOR" color={C.lima} tinta={C.noche} x={960} y={330} centro size={60} />
       <Tilde t={t} t0={608.2} t1={610.6} x={1460} y={330} s={0.7} />
       <Chip t={t} t0={609.95} t1={610.6} text="MANY DID NOT" color={C.rojo} x={960} y={470} centro size={70} />
-      <Chip t={t} t0={610.9} t1={614.5} text="LOST A HAND AT 10 → BEGGING FOR LIFE" color={C.rojo} x={960} y={150} centro size={58} />
-      <Chip t={t} t0={614.7} t1={617.5} text="ON THE STREET HE WALKED TO WORK" color={C.noche} x={960} y={150} centro size={60} />
+      <Chip t={t} t0={610.9} t1={614.5} text="LOST A HAND AT 10 → BEGGING FOR LIFE" color={C.rojo} x={960} y={170} centro size={58} />
+      <Chip t={t} t0={614.7} t1={617.5} text="ON THE STREET HE WALKED TO WORK" color={C.noche} x={960} y={170} centro size={60} />
       {t > 611.5 && t < 617.5 && [0, 1, 2].map((i) => <Moneda3 key={i} t={t} t0={612 + i * 1.6} t1={617.3} x={960 + (-1150 - cam.x) * cam.z + i * 30 - 30} y={540 + (-50 - cam.y) * cam.z - 180 + Math.min(1, (t - 612 - i * 1.6) * 3) * 150} s={0.35} />)}
       <Retrato t={t} t0={617.8} t1={624.6} x={1480} y={460} g={{ seed: 92, ropa: OBRERO(5), gorro: "copa", barba: true, expr: "neutro" }} nombre="FRIEDRICH ENGELS" sub="MANCHESTER · 1840s" s={0.9} />
       <Chip t={t} t0={618.0} t1={624.6} text="WORKING IN HIS FATHER'S COTTON BUSINESS" color={C.violeta} x={760} y={150} centro size={52} />
@@ -128,7 +129,7 @@ export const PG: React.FC<{ t: number }> = ({ t }) => {
       <Gran t={t} t0={629.8} t1={634.4} text="AN ARMY BACK FROM A WAR" y={180} size={110} color={C.crema} />
       <Chip t={t} t0={634.6} t1={636.8} text="EXCEPT THIS ARMY NEVER LEFT TOWN" color={C.noche} x={960} y={150} centro size={62} />
       <Gran t={t} t0={637.0} t1={638.5} text="IT HAD JUST GONE TO WORK" y={180} size={110} color={C.ambar} />
-      <Sello t={t} t0={639.4} t1={646.7} text="1844 · FENCE THE MACHINES" x={960} y={200} size={96} color={C.lima} />
+      <Sello t={t} t0={639.4} t1={646.7} text="1844 · FENCE THE MACHINES" x={960} y={270} size={84} color={C.lima} rot={-4} />
       <Chip t={t} t0={642.4} t1={646.7} text="NO CHILD CLEANS A MOVING MACHINE" color={C.noche} x={960} y={950} centro size={60} />
       <Gran t={t} t0={646.95} t1={647.9} text="THINK ABOUT THAT." y={540} size={130} color={C.crema} />
       <Chip t={t} t0={647.95} t1={650.0} text="SOMEBODY HAD TO WRITE IT INTO LAW" color={C.rojo} x={960} y={540} centro size={70} />

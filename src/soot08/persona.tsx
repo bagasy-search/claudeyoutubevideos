@@ -172,7 +172,7 @@ export const Persona: React.FC<Props> = (p) => {
             </g>
           )}
           {p.barba && <path d="M -96 -440 Q -90 -330 0 -318 Q 90 -330 96 -440 Q 80 -380 40 -372 Q 0 -360 -40 -372 Q -80 -380 -96 -440 Z" fill={c(ropa.pelo)} />}
-          {p.gorro === "gorra" && <g fill={c("#4a4458")}><path d="M -108 -470 Q -104 -572 6 -568 Q 112 -566 110 -478 Z" /><path d="M -60 -480 Q 40 -470 150 -458 Q 150 -440 110 -440 Q 10 -446 -60 -462 Z" fill={c("#36313f")} />{!sombra && <path d="M -70 -540 Q -20 -560 30 -552" stroke="#7a7290" strokeWidth={8} fill="none" strokeLinecap="round" />}</g>}
+          {p.gorro === "gorra" && <g fill={c("#4a4458")} transform="translate(0 -58)"><path d="M -108 -470 Q -104 -572 6 -568 Q 112 -566 110 -478 Z" /><path d="M -60 -480 Q 40 -470 150 -458 Q 150 -440 110 -440 Q 10 -446 -60 -462 Z" fill={c("#36313f")} />{!sombra && <path d="M -70 -540 Q -20 -560 30 -552" stroke="#7a7290" strokeWidth={8} fill="none" strokeLinecap="round" />}</g>}
           {p.gorro === "copa" && <g fill={c("#1d1724")}><rect x={-76} y={-720} width={152} height={210} rx={10} /><rect x={-130} y={-524} width={260} height={28} rx={14} />{!sombra && <rect x={-76} y={-560} width={152} height={22} fill="#7a2f3a" />}</g>}
           {p.gorro === "cofia" && <g fill={c("#f4efe6")}><path d="M -112 -440 Q -122 -580 0 -580 Q 122 -580 112 -440 Q 100 -500 0 -510 Q -100 -500 -112 -440 Z" />{!sombra && [-60, -20, 20, 60].map((k) => <circle key={k} cx={k} cy={-560 + Math.abs(k) * 0.3} r={9} fill="#ddd5c6" />)}</g>}
           {/* casco */}

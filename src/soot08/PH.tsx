@@ -14,10 +14,10 @@ import { Persona } from "./persona";
 export const H0 = 650.2, H1 = 718.8;
 
 const KH: K[] = [
-  [650.2, 3300, -1500, 0.32], [652.3, 3000, -450, 0.72], [658.5, 2900, -430, 1.0], [660.5, 2800, -400, 1.25], [666.4, 2600, -420, 1.1], [673.6, 2600, -420, 1.15],
+  [650.2, 3300, -1500, 0.32], [652.3, 2500, -380, 1.3], [658.5, 2600, -380, 1.35], [660.5, 2800, -400, 1.25], [666.4, 2600, -420, 1.1], [673.6, 2600, -420, 1.15],
   [673.61, 300, -600, 0.62], [677.9, 500, -580, 0.75], [680.6, 820, -520, 1.1], [683.8, 820, -520, 1.15], [691.3, 700, -560, 0.9],
-  [691.31, -1500, -600, 0.5], [699.5, -1100, -560, 0.55], [711.3, -700, -540, 0.6],
-  [711.31, 300, -420, 0.9], [716.0, -900, -420, 1.0], [718.8, -1110, -430, 1.3],
+  [691.31, -1500, -420, 0.85], [699.5, -1200, -420, 0.9], [711.3, -900, -420, 0.9],
+  [711.31, 300, -380, 1.3], [716.0, -900, -380, 1.35], [718.8, -1110, -430, 1.3],
 ];
 const seg = (t: number) => (t < 673.61 ? "fab" : t < 691.31 ? "sala" : t < 711.31 ? "calle" : "noche");
 
@@ -81,7 +81,7 @@ export const PH: React.FC<{ t: number }> = ({ t }) => {
       ]} />
       <Chip t={t} t0={658.6} t1={660.4} text="THE FACTORY STILL TAKES SOMETHING" color={C.rojo} x={960} y={150} centro size={62} />
       {t > 660.5 && t < 666.3 && <div style={{ position: "absolute", left: 1500, top: 180, transform: `scale(${ent(t, 660.6) * (1 - prog(t, 666, 666.3))})` }}><div style={{ position: "relative" }}><Reloj x={0} y={420} s={0.8} hora={6 + prog(t, 660.8, 665.6) * 14} /></div></div>}
-      <Cuenta t={t} t0={661.0} t1={665.0} de={0} a={14} suf=" HOURS STANDING" x={960} y={150} size={80} color={C.ambar} fuera={666.2} />
+      <Cuenta t={t} t0={661.0} t1={665.0} de={0} a={14} suf=" HOURS STANDING" x={960} y={210} size={84} color={C.ambar} fuera={666.2} />
       <Chip t={t} t0={663.0} t1={666.2} text="WHILE YOUR BONES ARE STILL GROWING" color={C.noche} x={960} y={950} centro size={58} />
       {t > 666.4 && t < 673.5 && <Velo t={t} t0={666.4} t1={673.4} op={0.45} />}
       {t > 666.4 && t < 673.5 && <Piernas t={t} t0={666.5} x={1420} y={960} s={1.25} dobla={dobla} />}
@@ -89,19 +89,19 @@ export const PH: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={668.6} t1={673.4} text="KNEES TURNED IN" color={C.violeta} x={500} y={460} centro size={56} />
       <Chip t={t} t0={670.2} t1={673.4} text="LEGS BOWED OUT" color={C.violeta} x={500} y={600} centro size={56} />
       <Chip t={t} t0={672.2} t1={673.4} text="SPINES CURVED" color={C.violeta} x={500} y={740} centro size={56} />
-      <Retrato t={t} t0={673.8} t1={680.4} x={380} y={480} g={{ seed: 78, ropa: OBRERO(2), expr: "triste" }} nombre="JOSEPH HEBERGAM" sub="BEFORE THE SADLER COMMITTEE" s={0.85} />
+      <Retrato t={t} t0={673.8} t1={680.4} x={380} y={480} g={{ seed: 78, ropa: OBRERO(2), expr: "triste" }} nombre="JOSEPH HEBERGAM" sub="BEFORE THE SADLER COMMITTEE" s={1.0} />
       <Chip t={t} t0={679.0} t1={680.5} text="STARTED WORK AT 7" color={C.oro} tinta={C.noche} x={1200} y={150} centro size={64} />
       <Chip t={t} t0={680.7} t1={683.8} text="NOW HE NEEDS HELP TO WALK" color={C.rojo} x={960} y={150} centro size={66} />
       {/* el chico de la fábrica al lado del chico del campo */}
       {t > 683.9 && t < 691.2 && (
         <>
           <Velo t={t} t0={683.9} t1={691.1} op={0.9} />
-          <div style={{ position: "absolute", left: 700, top: 340, width: 8, height: 560, background: "#fff3d6", opacity: 0.35 }} />
-          {[0, 1, 2, 3, 4].map((i) => <div key={i} style={{ position: "absolute", left: 690, top: 900 - i * 120, width: 28, height: 4, background: "#fff3d6", opacity: 0.4 }} />)}
-          <Persona t={t} seed={2} x={860} y={900} h={340} ropa={{ ...NINO, piel: "#f1e4da" }} gorro="gorra" expr="triste" viejo={t > 689} aparece={684} />
-          <Persona t={t} seed={140} x={1260} y={900} h={430} ropa={{ ...NINO, piel: "#c98b5e", tunica: "#6aa84f", tunica2: "#4b7d35" }} expr="feliz" aparece={684.3} />
-          <Chip t={t} t0={684.2} t1={691.1} text="MILL CHILD" color={C.rojo} x={860} y={960} centro size={44} />
-          <Chip t={t} t0={684.5} t1={691.1} text="FIELD CHILD" color={C.lima} tinta={C.noche} x={1260} y={960} centro size={44} />
+          <div style={{ position: "absolute", left: 560, top: 260, width: 8, height: 680, background: "#fff3d6", opacity: 0.35 }} />
+          {[0, 1, 2, 3, 4, 5].map((i) => <div key={i} style={{ position: "absolute", left: 550, top: 930 - i * 130, width: 28, height: 4, background: "#fff3d6", opacity: 0.4 }} />)}
+          <Persona t={t} seed={2} x={800} y={930} h={500} ropa={{ ...NINO, piel: "#f1e4da" }} gorro="gorra" expr="triste" viejo={t > 689} aparece={684} />
+          <Persona t={t} seed={140} x={1300} y={930} h={640} ropa={{ ...NINO, piel: "#c98b5e", tunica: "#6aa84f", tunica2: "#4b7d35" }} expr="feliz" aparece={684.3} />
+          <Chip t={t} t0={684.2} t1={691.1} text="MILL CHILD" color={C.rojo} x={800} y={1000} centro size={44} />
+          <Chip t={t} t0={684.5} t1={691.1} text="FIELD CHILD" color={C.lima} tinta={C.noche} x={1300} y={1000} centro size={44} />
         </>
       )}
       <Chip t={t} t0={684.0} t1={688.8} text="SHORTER · THINNER · PALER" color={C.noche} x={960} y={150} centro size={66} />
@@ -115,14 +115,14 @@ export const PH: React.FC<{ t: number }> = ({ t }) => {
           <Chip t={t} t0={699.6} t1={711.1} text="MANCHESTER · AVERAGE AGE AT DEATH" color={C.oro} tinta={C.noche} x={960} y={130} centro size={56} />
           {/* barras: obreros 17 contra gentry 38 */}
           <div style={{ position: "absolute", left: 420, top: 820 - 12 * 17 * prog(t, 699.8, 701.6), width: 360, height: 12 * 17 * prog(t, 699.8, 701.6), background: C.rojo, borderRadius: "16px 16px 0 0" }} />
-          {t > 704.3 && <div style={{ position: "absolute", left: 1140, top: 820 - 12 * 38 * prog(t, 704.4, 706), width: 360, height: 12 * 38 * prog(t, 704.4, 706), background: C.lima, borderRadius: "16px 16px 0 0" }} />}
+          {t > 704.3 && <div style={{ position: "absolute", left: 1140, top: 820 - 12 * 38 * prog(t, 704.4, 704.9), width: 360, height: 12 * 38 * prog(t, 704.4, 704.9), background: C.lima, borderRadius: "16px 16px 0 0" }} />}
           <div style={{ position: "absolute", left: 340, top: 820, width: 1240, height: 10, background: "#fff3d6" }} />
           <Chip t={t} t0={699.7} t1={711.1} text="LABOURERS' FAMILIES" color={C.rojo} x={600} y={880} centro size={44} />
           <Chip t={t} t0={704.4} t1={711.1} text="GENTRY" color={C.lima} tinta={C.noche} x={1320} y={880} centro size={44} />
         </>
       )}
       <Cuenta t={t} t0={699.8} t1={701.6} de={0} a={17} x={600} y={480} size={150} color={C.rojo} fuera={711.1} />
-      <Cuenta t={t} t0={704.4} t1={706.0} de={0} a={38} x={1320} y={260} size={150} color={C.lima} fuera={711.1} />
+      <Cuenta t={t} t0={704.4} t1={704.9} de={0} a={38} x={1320} y={260} size={150} color={C.lima} fuera={711.1} />
       <Chip t={t} t0={706.3} t1={711.1} text="MOSTLY BABIES & SMALL CHILDREN" color={C.violeta} x={960} y={1010} centro size={52} />
       <Chip t={t} t0={711.5} t1={714.0} text="THE WORLD YOU CAME HOME TO" color={C.noche} x={960} y={150} centro size={62} />
       <Gran t={t} t0={714.2} t1={717.4} text="A DEATH TRAP FOR A CHILD?" y={200} size={110} color={C.crema} />

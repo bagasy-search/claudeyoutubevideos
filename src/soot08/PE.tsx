@@ -4,6 +4,7 @@ import { C, ent, prog, Chip, Emote, fontFamily } from "./kit";
 import { Moneda3, Ficha, Aviso, Termometro } from "./kit3";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, NINO, NINA, OBRERO, DUENO, CAPATAZ, GenteFab, HILANDERO } from "./mundo";
 import { Gran, Cuenta, Sello, Tachado, Flash, sacudon, Velo, Horror, Latigo } from "./capas";
+import { Primer } from "./piezas";
 
 // PARTE E · HORROR #4, LAS MULTAS (392,9-473,5 s). Seguimos en la fábrica abierta: la oficina del dueño, el cartel de
 // multas de Tyldesley que los obreros imprimieron → el aviso renglón por renglón (ventana, sucio, lavarse, silbar,
@@ -13,7 +14,7 @@ export const E0 = 392.9, E1 = 473.5;
 
 const KE: K[] = [
   [392.9, 4280, -1560, 1.15], [394.8, 4280, -1560, 1.2], [395.6, 4150, -1430, 0.82], [401.7, 4150, -1430, 0.78], [404.6, 4280, -1560, 1.0], [409.4, 4280, -1560, 1.05], [445.7, 4280, -1560, 1.1],
-  [445.71, 2600, -330, 1.1], [453.6, 2600, -330, 1.2], [455.4, 2650, -360, 1.05], [459.39, 2650, -360, 1.1],
+  [445.71, 2600, -330, 1.55], [453.6, 2600, -330, 1.65], [455.4, 2620, -340, 1.5], [459.39, 2620, -340, 1.55],
   [459.4, 5900, -1450, 0.75], [463.4, 5900, -1450, 0.8], [467.9, 5900, -1450, 0.82],
   [467.91, 3600, -1500, 0.32], [473.5, 3600, -1500, 0.34],
 ];
@@ -89,15 +90,16 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
         </div>
       )}
       {/* anotaciones al costado del cartel */}
-      {t > 412.9 && t < 415.6 && <div style={{ position: "absolute", left: 1700, top: 160, transform: `scale(${ent(t, 412.9) * 0.55})`, transformOrigin: "0 0" }}><div style={{ position: "relative" }}><Termometro x={0} y={860} nivel={0.86} /></div></div>}
-      <Chip t={t} t0={412.9} t1={415.6} text="REMEMBER: 28°C INSIDE" color={C.naranja} x={960} y={1010} centro size={52} />
+      {t > 412.9 && t < 415.6 && <div style={{ position: "absolute", left: 60, top: 160, transform: `scale(${ent(t, 412.9) * 0.55})`, transformOrigin: "0 0" }}><div style={{ position: "relative" }}><Termometro x={0} y={860} nivel={0.86} /></div></div>}
+      <Chip t={t} t0={412.9} t1={415.6} text="REMEMBER: 80–84°F INSIDE" color={C.naranja} x={960} y={1010} centro size={52} />
       <Chip t={t} t0={422.7} t1={425.7} text="CAN'T BE DIRTY · CAN'T WASH" color={C.rojo} x={960} y={1010} centro size={56} />
       <Chip t={t} t0={428.6} t1={432.6} text="ONE SHILLING · EACH TIME" color={C.noche} x={960} y={1010} centro size={52} />
       <Chip t={t} t0={432.8} t1={437.8} text="AND THE BEST ONE…" color={C.violeta} x={960} y={1010} centro size={56} />
+      <Primer t={t} t0={415.9} t1={439.9} lado="der" x={1790} h={950} g={{ expr: t < 425.9 ? "triste" : t < 432.8 ? "enojado" : "miedo" }} emo={t < 428.6 ? undefined : "excl"} />
       <Flash t={t} at={[440.1]} />
       {t > 440.0 && t < 445.6 && (
         <>
-          <AbsoluteFill style={{ background: "rgba(27,18,64,.75)", opacity: prog(t, 440, 440.2) * (1 - prog(t, 445.3, 445.6)) }} />
+          <AbsoluteFill style={{ background: "rgba(27,18,64,.93)", opacity: prog(t, 440, 440.2) * (1 - prog(t, 445.3, 445.6)) }} />
           {Array.from({ length: 6 }, (_, i) => <Moneda3 key={i} t={t} t0={440.15 + i * 0.12} t1={445.3} x={460 + i * 200} y={640} s={0.85} txt="1s" />)}
           <Gran t={t} t0={440.1} t1={445.3} text="6 SHILLINGS" y={330} size={190} color={C.rojo} />
           <Chip t={t} t0={441.4} t1={445.3} text="YOU PAY FOR THE POWER IT DIDN'T USE ON YOU" color={C.ambar} tinta={C.noche} x={960} y={900} centro size={50} />
@@ -118,7 +120,8 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={457.6} t1={459.3} text="WAGES PAID IN TOKENS" color={C.noche} x={960} y={950} centro size={64} />
       <Chip t={t} t0={459.5} t1={461.4} text="ONLY GOOD AT THE BOSS'S SHOP" color={C.rojo} x={960} y={150} centro size={66} />
       <Chip t={t} t0={461.5} t1={463.5} text="PRICES SET BY THE BOSS" color={C.noche} x={960} y={950} centro size={66} />
-      <Sello t={t} t0={463.6} t1={465.8} text="BANNED · 1831" x={960} y={360} size={150} color={C.lima} rot={-6} />
+      <Velo t={t} t0={463.5} t1={465.9} op={0.65} />
+      <Sello t={t} t0={463.6} t1={465.8} text="BANNED · TRUCK ACT 1831" x={960} y={540} size={120} color={C.lima} rot={-4} />
       <Chip t={t} t0={465.9} t1={467.8} text="…IT TOOK A LONG TIME TO DISAPPEAR" color={C.violeta} x={960} y={950} centro size={58} />
       <Chip t={t} t0={468.1} t1={471.7} text="14 HOURS · AND THE MONEY GOES BACK UP" color={C.noche} x={960} y={150} centro size={58} />
       <Gran t={t} t0={471.8} t1={473.4} text="HE ALREADY OWNS YOUR DAY" y={900} size={100} color={C.rojo} />

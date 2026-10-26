@@ -5,7 +5,7 @@ import { Termometro } from "./kit3";
 import { Lapida } from "./kit2";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, Nieve, NINO, NINA, OBRERO, GenteFab, FX0 } from "./mundo";
 import { Gran, Cuenta, Sello, Flash, sacudon, Velo, Horror, Latigo, Lista } from "./capas";
-import { Pulmones, Oreja } from "./piezas";
+import { Pulmones, Oreja, Primer } from "./piezas";
 import { Persona } from "./persona";
 
 // PARTE D · HORROR #3, EL AIRE (295,7-392,9 s). La hilandería de la fábrica abierta: el calor a propósito (28 °C,
@@ -15,12 +15,12 @@ import { Persona } from "./persona";
 export const D0 = 295.7, D1 = 392.9;
 
 const KD: K[] = [
-  [295.7, 3300, -1500, 0.32], [297.8, 1900, -430, 1.0], [301.8, 2300, -430, 1.15], [302.9, 2600, -460, 0.8], [308.5, 2600, -460, 0.75], [314.2, 2400, -480, 0.9], [322.6, 2300, -600, 0.5], [324.5, 2300, -400, 1.2], [327.2, 2300, -400, 1.3],
+  [295.7, 3300, -1500, 0.32], [297.8, 1900, -430, 1.0], [301.8, 2300, -430, 1.15], [302.9, 2600, -460, 0.8], [308.5, 2600, -460, 0.75], [314.2, 2600, -480, 0.95], [322.6, 2300, -600, 0.5], [324.5, 2300, -400, 1.2], [327.2, 2300, -400, 1.3],
   [327.21, 3600, -420, 1.0], [331.9, 3350, -420, 1.2], [333.1, 2700, -450, 0.8], [336.4, 1900, -450, 0.75],
   [336.41, 1900, -1450, 0.85], [340.7, 1900, -1450, 0.95], [343.1, 1720, -1330, 1.45], [346.3, 1720, -1330, 1.3], [349.8, 1900, -1450, 0.8], [364.3, 1900, -1450, 0.85],
   [364.31, 3300, -500, 0.6], [368.0, 3300, -500, 0.66], [371.4, 3000, -400, 1.2], [374.8, 3000, -400, 1.3],
-  [374.81, -1750, -400, 0.95], [380.9, -1700, -400, 1.05],
-  [380.91, 3300, -1500, 0.32], [388.0, 3500, -1500, 0.33], [389.7, 4200, -1560, 0.8], [392.9, 4280, -1560, 1.15],
+  [374.81, -1700, -380, 1.35], [380.9, -1700, -380, 1.4],
+  [380.91, 3300, -1400, 0.42], [388.0, 3500, -1450, 0.45], [389.7, 4200, -1560, 0.8], [392.9, 4280, -1560, 1.15],
 ];
 const seg = (t: number) => (t < 327.2 ? "i1" : t < 336.4 ? "x1" : t < 364.3 ? "i2" : t < 374.8 ? "i3" : t < 380.9 ? "x2" : "i4");
 
@@ -102,22 +102,22 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       {t > 314.2 && t < 322.4 && (
         <div style={{ position: "absolute", left: 1520, top: 120, transform: `scale(${ent(t, 314.2) * (1 - prog(t, 322.1, 322.4))})` }}><div style={{ position: "relative" }}><Termometro x={0} y={860} s={0.95} nivel={0.2 + prog(t, 314.4, 317.4) * 0.66} marcas={[60, 70, 80, 90]} /></div></div>
       )}
-      <Cuenta t={t} t0={314.6} t1={317.4} de={80} a={84} x={760} y={360} size={200} color={C.naranja} pre="80–" suf="°F" fuera={318.6} />
+      <Cuenta t={t} t0={314.6} t1={317.4} de={84} a={84} x={760} y={360} size={200} color={C.naranja} pre="80–" suf="°F" fuera={318.6} />
       <Cuenta t={t} t0={318.7} t1={319.6} de={20} a={28} x={760} y={360} size={220} color={C.rojo} pre="≈" suf="°C" fuera={322.4} />
       <Chip t={t} t0={320.2} t1={322.4} text="EVERY DAY · ALL YEAR" color={C.noche} x={760} y={560} centro size={64} />
       <Sello t={t} t0={322.7} t1={324.4} text="WINDOWS SHUT" x={960} y={330} size={130} />
-      <Cuenta t={t} t0={324.6} t1={325.6} de={0} a={14} x={960} y={220} size={170} color={C.crema} suf=" HOURS OF SWEAT" fuera={327.1} />
+      <Cuenta t={t} t0={324.6} t1={325.6} de={14} a={14} x={960} y={220} size={170} color={C.crema} suf=" HOURS OF SWEAT" fuera={327.1} />
       <Emote t={t} t0={324.6} t1={327.1} tipo="sudor" x={960 + (2300 - cam.x) * cam.z} y={540 + (-170 - cam.y) * cam.z} s={0.55 * cam.z} />
       <Chip t={t} t0={327.4} t1={331.8} text="A LANCASHIRE WINTER NIGHT" color={C.teal} tinta={C.noche} x={960} y={150} centro size={70} />
       <Chip t={t} t0={329.6} t1={333.0} text="SOAKING WET · THIN CLOTHES" color={C.violeta} x={960} y={950} centro size={66} />
       {t > 333.1 && t < 336.4 && (
         <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }}>
-          <Chip t={t} t0={333.1} t1={336.3} text="COLD" color={C.teal} tinta={C.noche} x={360} y={300} centro size={80} />
-          <Chip t={t} t0={333.9} t1={336.3} text="→ FEVER" color={C.naranja} x={900} y={300} centro size={80} />
-          <Chip t={t} t0={334.8} t1={336.3} text="→ FUNERAL" color={C.noche} x={1500} y={300} centro size={80} />
+          <Chip t={t} t0={333.1} t1={336.3} text="COLD" color={C.teal} tinta={C.noche} x={330} y={300} centro size={80} />
+          <Chip t={t} t0={333.9} t1={336.3} text="→ FEVER" color={C.naranja} x={820} y={300} centro size={80} />
+          <Chip t={t} t0={334.8} t1={336.3} text="→ FUNERAL" color={C.noche} x={1390} y={300} centro size={80} />
         </div>
       )}
-      <Lapida t={t} t0={335.2} t1={336.3} x={1500} y={620} s={0.5} lineas={["AGED", "10"]} />
+      <Lapida t={t} t0={335.2} t1={336.3} x={1390} y={620} s={0.5} lineas={["AGED", "10"]} />
       <Gran t={t} t0={336.5} t1={339.9} text="THE DUST" y={190} size={190} color={C.crema} />
       <Chip t={t} t0={338.0} t1={340.6} text="THE CARD ROOM" color={C.violeta} x={960} y={950} centro size={70} />
       <Chip t={t} t0={340.7} t1={343.0} text="THICK WITH TINY FIBRES" color={C.noche} x={960} y={150} centro size={70} />
@@ -128,13 +128,14 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       {t > 349.8 && t < 364.3 && <Velo t={t} t0={349.8} t1={364} op={0.55} />}
       <Pulmones t={t} t0={349.9} t1={364.0} x={960} y={560} s={1.1} sucio={0.15 + prog(t, 350, 355) * 0.85} apaga={prog(t, 353.3, 355.4)} />
       <Chip t={t} t0={350.5} t1={355.3} text="A TIGHT CHEST" color={C.noche} x={420} y={330} centro size={56} />
-      <Chip t={t} t0={351.6} t1={355.3} text="A COUGH THAT NEVER LEFT" color={C.noche} x={1500} y={330} centro size={56} />
+      <Chip t={t} t0={351.6} t1={355.3} text="A COUGH THAT NEVER LEFT" color={C.noche} x={1340} y={330} centro size={56} />
       <Chip t={t} t0={353.3} t1={355.3} text="LUNGS STOP WORKING" color={C.rojo} x={960} y={950} centro size={66} />
       <Gran t={t} t0={357.0} t1={359.7} text="BYSSINOSIS" y={180} size={150} color={C.crema} />
       <Chip t={t} t0={358.5} t1={359.7} text="“BROWN LUNG”" color={C.naranja} x={960} y={950} centro size={74} />
       <Chip t={t} t0={359.9} t1={364.0} text="STARTED AT 9 →" color={C.violeta} x={960} y={150} centro size={70} />
       <Chip t={t} t0={361.3} t1={364.0} text="A LIFE FIGHTING FOR BREATH" color={C.rojo} x={960} y={950} centro size={66} />
-      <Gran t={t} t0={364.4} t1={366.3} text="THE NOISE" y={200} size={190} color={C.ambar} rot={-3} />
+      <Gran t={t} t0={364.4} t1={366.3} text="THE NOISE" x={1150} y={200} size={190} color={C.ambar} rot={-3} />
+      <Primer t={t} t0={364.5} t1={368.4} lado="izq" g={{ expr: "miedo", bD: 165, cD: 150, bI: 165, cI: 150 }} emo="susto" />
       <Chip t={t} t0={366.4} t1={368.5} text="DOZENS OF MACHINES · BELTS · SHAFTS" color={C.noche} x={960} y={950} centro size={58} />
       {t > 368.4 && t < 371.6 && <Velo t={t} t0={368.4} t1={371.3} op={0.45} />}
       <Oreja t={t} t0={368.5} t1={371.3} x={960} y={560} s={1.1} sorda={prog(t, 369.6, 370.6)} />
@@ -142,7 +143,7 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={371.5} t1={374.7} text="TALKING BY READING LIPS" color={C.violeta} x={960} y={150} centro size={70} />
       <Chip t={t} t0={375.0} t1={380.8} text="STILL DOING IT IN THE 1900s" color={C.teal} tinta={C.noche} x={960} y={150} centro size={66} />
       <Chip t={t} t0={377.6} t1={380.8} text="ACROSS A CROWDED ROOM · LONG RETIRED" color={C.noche} x={960} y={950} centro size={56} />
-      <Lista t={t} t0={381.0} t1={389.6} x={110} y={170} titulo="ALL OF THAT…" size={60} items={[{ txt: "THE HEAT", t0: 383.0 }, { txt: "THE DUST", t0: 383.6 }, { txt: "THE NOISE", t0: 384.3 }, { txt: "14 HOURS", t0: 385.0 }]} />
+      <Lista t={t} t0={381.0} t1={389.6} x={110} y={170} titulo="ALL OF THAT…" size={74} items={[{ txt: "THE HEAT", t0: 383.0 }, { txt: "THE DUST", t0: 383.6 }, { txt: "THE NOISE", t0: 384.3 }, { txt: "14 HOURS", t0: 385.0 }]} />
       <Flash t={t} at={[386.5]} />
       <Sello t={t} t0={386.5} t1={389.6} text="PERFECTLY LEGAL" x={1250} y={540} size={110} color={C.lima} rot={-8} />
       <Chip t={t} t0={388.1} t1={389.6} text="THAT WAS JUST THE JOB" color={C.noche} x={1250} y={800} centro size={60} />

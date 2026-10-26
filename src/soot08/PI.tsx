@@ -17,7 +17,7 @@ export const I0 = 718.8, I1 = 900.6;
 
 const KI: K[] = [
   [718.8, 0, -620, 2.0], [720.4, 300, -600, 0.62], [722.4, 700, -540, 1.0], [729.7, 400, -600, 0.65],
-  [729.8, -1300, -500, 0.8], [736.4, -1150, -480, 0.85], [744.8, -900, -470, 0.72], [748.6, -800, -470, 0.7], [750.3, 3000, -480, 0.65], [761.6, 3000, -480, 0.6],
+  [729.8, -1300, -500, 0.8], [736.4, -1150, -480, 0.85], [744.8, -1300, -400, 1.0], [748.6, -1250, -400, 1.0], [750.3, 3000, -420, 0.95], [761.6, 3000, -420, 0.95],
   [761.71, 4300, -1450, 0.95], [769.0, 4380, -1400, 1.25], [779.5, 4350, -1420, 1.1],
   [779.6, 2600, -520, 0.62], [790.2, 2700, -520, 0.7], [801.2, 2900, -520, 0.62],
   [801.27, -4700, -520, 0.5], [809.7, -4700, -460, 0.75], [813.8, -4500, -460, 0.8], [813.9, -1600, -520, 0.55], [817.4, -200, -520, 0.55],
@@ -25,7 +25,7 @@ const KI: K[] = [
   [823.95, -1900, -480, 0.68], [836.7, -1000, -480, 0.72],
   [836.79, 0, -620, 0.58], [848.4, 0, -600, 0.68],
   [848.47, -1300, -480, 0.72], [870.8, -900, -480, 0.78],
-  [870.85, 3600, -1000, 0.42], [877.3, 3600, -480, 0.95], [879.6, 3400, -700, 0.6], [885.7, 3500, -800, 0.5], [900.6, 3500, -820, 0.46],
+  [870.85, 3600, -1000, 0.42], [877.3, 3600, -480, 0.95], [879.6, 3400, -700, 0.6], [885.7, 3400, -560, 0.8], [900.6, 3450, -560, 0.82],
 ];
 type Z = "sala" | "calle" | "ofi" | "fiesta" | "ruta" | "mapa" | "muda" | "hambre" | "hall" | "carta" | "plaza";
 const seg = (t: number): Z =>
@@ -165,8 +165,9 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       {t > 733 && t < 744.6 && <div style={{ position: "absolute", left: 0, top: 0, transform: `scale(${ent(t, 733) * (1 - prog(t, 744.3, 744.6))})`, transformOrigin: "560px 540px" }}><Pergamino x={560} y={560} w={640} abre={prog(t, 733.1, 733.9)} titulo="LEEDS MERCURY" /></div>}
       <Gran t={t} t0={736.5} t1={739.0} text="“YORKSHIRE SLAVERY”" y={200} size={110} color={C.rojo} />
       <Chip t={t} t0={739.2} t1={744.6} text="MILL CHILDREN: TREATED WORSE THAN THE ENSLAVED" color={C.rojo} x={960} y={150} centro size={52} />
-      <Chip t={t} t0={744.9} t1={747.0} text="READERS WERE FURIOUS" color={C.noche} x={960} y={150} centro size={64} />
+      <Gran t={t} t0={744.9} t1={747.0} text="READERS WERE FURIOUS" y={200} size={110} color={C.rojo} />
       <Chip t={t} t0={747.1} t1={749.1} text="THE LETTER WOULD NOT GO AWAY" color={C.violeta} x={960} y={150} centro size={64} />
+      <Velo t={t} t0={749.3} t1={760.4} op={0.45} />
       <Sello t={t} t0={749.4} t1={760.3} text="FACTORY ACT · 1833" x={960} y={190} size={100} color={C.lima} rot={-6} />
       <Lista t={t} t0={750.4} t1={760.3} x={90} y={330} size={50} items={[{ txt: "UNDER 9: BANNED", t0: 750.6, ok: true }, { txt: "HOURS LIMITED", t0: 753.4, ok: true }, { txt: "FACTORY INSPECTORS", t0: 755.5, ok: true }]} />
       <Cuenta t={t} t0={756.6} t1={757.8} de={0} a={4} suf=" INSPECTORS" x={1300} y={420} size={90} color={C.ambar} fuera={760.3} />
@@ -179,8 +180,9 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={770.5} t1={772.4} text="CHECK THE TEETH" color={C.violeta} x={960} y={150} centro size={64} />
       <Chip t={t} t0={772.5} t1={774.5} text="SIGN A PAPER: «AGE 9»" color={C.noche} x={960} y={150} centro size={64} />
       <Tilde t={t} t0={773.0} t1={774.5} x={1420} y={150} s={0.6} />
-      <Globo t={t} t0={774.7} t1={779.4} x={300} y={260} text="He's just big for his age!" size={48} w={620} />
+      <Globo t={t} t0={774.7} t1={779.4} x={560} y={300} text="He's just big for his age!" size={48} w={620} />
       <Chip t={t} t0={775.5} t1={779.4} text="PARENTS NEEDED THE MONEY" color={C.rojo} x={1250} y={950} centro size={56} />
+      <Velo t={t} t0={779.65} t1={786.0} op={0.55} />
       <Sello t={t} t0={779.7} t1={786.0} text="TEN HOURS ACT · 1847" x={960} y={200} size={100} color={C.lima} rot={-6} />
       <Cuenta t={t} t0={782.6} t1={784.6} de={14} a={10} suf=" HOURS A DAY" x={960} y={420} size={110} color={C.ambar} fuera={786.0} />
       <Chip t={t} t0={786.1} t1={788.0} text="THEY CELEBRATED IN THE STREETS" color={C.oro} tinta={C.noche} x={960} y={150} centro size={62} />
@@ -205,7 +207,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={846.8} t1={848.4} text="WHILE GOING HUNGRY" color={C.rojo} x={960} y={950} centro size={68} />
       {t > 848.5 && t < 861.6 && (() => {
         const k = prog(t, 848.6, 850.8);
-        return <Carta t={t} t0={848.6} x={1920 - k * 1000} y={500} s={0.5 + k * 0.35} abre={prog(t, 854.6, 855.4)} lineas={t > 855 ? ["To the working men of Manchester:", "“…sublime Christian heroism", "not surpassed in any age", "or in any country.”"] : []} />;
+        return <Carta t={t} t0={848.6} x={1920 - k * 1000} y={500} s={0.32 + k * 0.22} abre={prog(t, 854.6, 855.4)} lineas={t > 855 ? ["To the working men of Manchester:", "“…sublime Christian heroism", "not surpassed in any age", "or in any country.”"] : []} />;
       })()}
       <Chip t={t} t0={848.6} t1={851.6} text="A LETTER FROM WASHINGTON" color={C.violeta} x={960} y={130} centro size={62} />
       <Retrato t={t} t0={851.8} t1={854.6} x={330} y={480} g={{ seed: 261, ropa: DUENO, gorro: "copa", barba: true, expr: "neutro" }} nombre="ABRAHAM LINCOLN" sub="JANUARY 1863" s={0.85} />
@@ -218,6 +220,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Gran t={t} t0={882.6} t1={885.6} text="EXACTLY THE POINT" y={200} size={120} color={C.crema} />
       {/* CTA */}
       <Chip t={t} t0={885.8} t1={890.4} text="SURVIVED A FULL SHIFT?" color={C.noche} x={960} y={150} centro size={66} />
+      <Velo t={t} t0={886.4} t1={895.6} op={0.5} />
       {t > 886.6 && t < 895.4 && (
         <div style={{ position: "absolute", left: 960 - 400, top: 380, width: 800, height: 150, borderRadius: 75, background: C.rojo, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontSize: 76, color: "#fff", letterSpacing: 3, whiteSpace: "nowrap", transform: `scale(${ent(t, 886.7) * (t > 888.4 && t < 888.7 ? 0.9 : 1) * (1 - prog(t, 895.1, 895.4))})`, boxShadow: "0 12px 0 #8a1d2a", fontFamily }}>
           {t > 888.6 ? "SUBSCRIBED ✓" : "SUBSCRIBE"}
@@ -237,7 +240,6 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Gran t={t} t0={895.7} t1={1e9} text="WHICH HORROR GETS YOU FIRST?" y={260} size={96} color={C.ambar} />
       <Carretes t={t} t0={896.3} n={7} y={620} s={1.0} />
       <Chip t={t} t0={897.2} t1={1e9} text="TELL ME IN THE COMMENTS" color={C.violeta} x={960} y={900} centro size={60} />
-      {s === "calle" && t > 744.8 && t < 749.1 && <Emote t={t} t0={744.9} tipo="enojo" x={960} y={330} />}
     </AbsoluteFill>
   );
 };

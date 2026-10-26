@@ -4,7 +4,7 @@ import { C, ent, prog, Chip, Emote, Pan, Zzz } from "./kit";
 import { Reloj, Moneda3, RelojBolsillo, Retrete } from "./kit3";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, CasaAdentro, Sala, NINO, NINA, HILANDERO, OBRERO, DUENO, GenteFab, FCX, CASA_NINO } from "./mundo";
 import { Gran, Cuenta, Sello, Tachado, Flash, sacudon, Velo, Horror, BarraDia, Latigo, Semana } from "./capas";
-import { Girado, Despertador, Goteras } from "./piezas";
+import { Girado, Despertador, Goteras, Primer } from "./piezas";
 import { Persona } from "./persona";
 
 // PARTE B · HORROR #1, EL RELOJ (81,3-189,7 s). Mismo pueblo, de noche: el despertador con la pértiga golpea la
@@ -18,14 +18,14 @@ const despX = (t: number) => (t < 120 ? interpolate(t, [87.6, 91.4], [-250, -880
 
 // pueblo (afuera)
 const KP: K[] = [
-  [81.3, 3500, -400, 1.3], [83.6, FCX, -1700, 0.42], [85.8, 600, -800, 0.55], [88.0, -700, -430, 1.0], [91.0, -1000, -420, 1.25], [92.3, -1100, -430, 1.55], [96.0, -1050, -420, 1.4], [99.5, -1000, -460, 1.1],
+  [81.3, 3500, -400, 1.3], [83.6, FCX, -1700, 0.42], [85.8, -450, -520, 0.95], [88.0, -700, -430, 1.1], [91.0, -1000, -420, 1.25], [92.3, -1100, -430, 1.55], [96.0, -1050, -420, 1.4], [99.5, -1000, -460, 1.1],
   [99.95, FCX, -3600, 1.3], [101.0, FCX, -3650, 1.12], [102.6, FCX, -3700, 1.05],
   [103.4, 1350, -480, 1.15], [104.7, 2300, -520, 0.7], [106.4, 3300, -1500, 0.32], [107.4, 3300, -1300, 0.36],
-  [108.2, 3250, -380, 1.15], [110.4, 3300, -380, 1.35], [113.2, 3320, -360, 1.55], [115.2, 3350, -420, 1.3],
+  [108.2, 3250, -380, 1.15], [110.4, 3300, -380, 1.35], [113.2, 3320, -360, 1.55], [115.2, 3320, -380, 1.65],
   [116.9, FCX, -3440, 1.25], [122.4, FCX, -3440, 1.4], [123.0, FCX, -3440, 7.0],
 ];
 // sala del comité, 1832
-const KS: K[] = [[123.0, 0, -620, 2.2], [123.8, 0, -640, 0.6], [126.3, -100, -620, 0.62], [127.2, -560, -560, 1.05], [130.0, -500, -560, 1.0], [130.8, 820, -520, 1.0], [133.6, 900, -500, 1.05], [136.8, 300, -640, 0.58], [146.2, 400, -620, 0.62], [147.4, 900, -500, 1.1]];
+const KS: K[] = [[123.0, 0, -620, 2.2], [123.8, -300, -600, 0.8], [126.3, -500, -580, 0.92], [127.2, -560, -560, 1.05], [130.0, -500, -560, 1.0], [130.8, 820, -520, 1.0], [133.6, 900, -500, 1.05], [136.8, 700, -560, 0.85], [146.2, 820, -540, 0.9], [147.4, 900, -500, 1.1]];
 // casa de noche: las nenas cargadas a la cama
 const KC1: K[] = [[147.4, 100, -500, 1.3], [148.2, 100, -500, 0.9], [150.6, -300, -460, 1.1], [152.3, -420, -420, 1.55], [153.8, -420, -420, 1.7]];
 // pueblo de día: los relojes trucados, la semana
@@ -131,7 +131,9 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
       <Flash t={t} at={[101.3, 103.4, 108.75]} />
       <Gran t={t} t0={101.35} t1={102.7} text="DONG!" y={240} size={200} color={C.oro} rot={-6} />
       <Chip t={t} t0={103.5} t1={104.6} text="6:00 · THE STEAM ENGINE" color={C.noche} x={960} y={150} centro size={70} />
-      <Gran t={t} t0={104.7} t1={107.0} text="EVERY MACHINE" y={880} size={130} color={C.ambar} />
+      <Gran t={t} t0={104.7} t1={107.0} text="EVERY MACHINE" x={1180} y={200} size={120} color={C.ambar} />
+      <Primer t={t} t0={104.75} t1={106.9} lado="izq" g={{ expr: "sorpresa", miraY: -0.6 }} emo="excl" />
+      <Primer t={t} t0={154.3} t1={156.9} lado="izq" g={{ expr: "miedo", miraY: -1 }} emo="preg" />
       <Chip t={t} t0={108.6} t1={110.0} text="THE GATE IS SHUT" color={C.noche} x={960} y={150} centro size={76} />
       <Sello t={t} t0={110.1} t1={112.3} text="DOCKED" x={960} y={330} size={180} />
       {t > 111.5 && t < 115.3 && (
@@ -158,16 +160,18 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={128.0} t1={130.2} text="ASKED WORKERS ABOUT THEIR HOURS" color={C.noche} x={960} y={950} centro size={58} />
       <Chip t={t} t0={130.5} t1={133.0} text="SAMUEL COULSON · FATHER" color={C.violeta} x={960} y={150} centro size={72} />
       <Chip t={t} t0={132.4} t1={136.6} text="HIS DAUGHTERS" color={C.teal} tinta={C.noche} x={960} y={950} centro size={66} />
-      <Chip t={t} t0={133.3} t1={136.6} text="BUSY SEASON · ~6 WEEKS" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={66} />
+      <Chip t={t} t0={133.3} t1={136.6} text="BUSY SEASON · ABOUT 6 WEEKS" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={66} />
+      <Velo t={t} t0={136.7} t1={146.4} op={0.55} />
       <BarraDia t={t} t0={136.8} t1={146.4} y={880} titulo="THE COULSON GIRLS · ONE DAY" tramos={[
-        { de: 3, a: 22.5, t0: 137.0, t1: 140.0, color: C.rojo, txt: "AT THE MILL" },
+        { de: 3, a: 12, t0: 137.0, t1: 138.4, color: C.rojo, txt: "AT THE MILL" },
+        { de: 12, a: 22.5, t0: 138.4, t1: 140.0, color: C.rojo, txt: "STILL AT THE MILL" },
         { de: 12, a: 13, t0: 143.6, t1: 145.6, color: C.lima, txt: "" },
       ]} />
       <Chip t={t} t0={137.0} t1={138.7} text="LEAVE 3:00 AM" color={C.noche} x={500} y={170} centro size={66} />
       <Chip t={t} t0={138.8} t1={146.4} text="HOME 10:30 PM" color={C.noche} x={1420} y={170} centro size={66} />
       <Cuenta t={t} t0={139.0} t1={140.4} de={0} a={19} x={960} y={420} size={190} color={C.crema} suf="½ HOURS" fuera={143.0} />
       <Chip t={t} t0={140.9} t1={143.0} text="YOUNGEST: JUST OVER 8" color={C.rojo} x={960} y={600} centro size={66} />
-      <Chip t={t} t0={143.4} t1={146.4} text="ALL BREAKS: ~1 HOUR" color={C.lima} tinta={C.noche} x={960} y={420} centro size={80} />
+      <Chip t={t} t0={143.4} t1={146.4} text="ALL BREAKS: ~1 HOUR" color={C.lima} tinta={C.noche} x={960} y={620} centro size={80} />
       <Chip t={t} t0={148.0} t1={150.4} text="CARRIED TO BED" color={C.violeta} x={960} y={150} centro size={76} />
       <Chip t={t} t0={150.9} t1={153.6} text="ASLEEP" color={C.noche} x={960} y={150} centro size={86} />
       <Chip t={t} t0={152.0} t1={153.6} text="FOOD STILL IN THEIR MOUTHS" color={C.rojo} x={960} y={950} centro size={70} />
@@ -175,7 +179,7 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={154.2} t1={157.0} text="THE CLOCK WASN'T ON YOUR SIDE" color={C.rojo} x={960} y={150} centro size={66} />
       {t > 157.0 && t < 166.0 && (
         <>
-          <Velo t={t} t0={157} t1={165.7} op={0.4} />
+          <Velo t={t} t0={157} t1={165.7} op={0.62} />
           {[0, 1].map((i) => {
             const h = i === 0 ? (t < 161 ? 5.67 + prog(t, 157, 159.4) * 0.33 : 19 + prog(t, 161, 161.6) * 0.33) : hora;
             return (
@@ -188,8 +192,8 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
           <Chip t={t} t0={157.4} t1={165.7} text="MILL CLOCK" color={C.rojo} x={1340} y={800} centro size={60} />
           <Chip t={t} t0={159.4} t1={161.4} text="MORNING: MOVED FORWARD" color={C.violeta} x={960} y={950} centro size={60} />
           <Chip t={t} t0={161.6} t1={163.0} text="EVENING: MOVED BACK" color={C.violeta} x={960} y={950} centro size={60} />
-          <Cuenta t={t} t0={163.2} t1={163.2} de={12} a={12} x={960} y={950} size={110} color={C.crema} suf="-HOUR DAY" fuera={164.95} />
-          <Cuenta t={t} t0={165.1} t1={165.1} de={13} a={13} x={960} y={950} size={130} color={C.rojo} suf=" HOURS" fuera={165.7} />
+          <Cuenta t={t} t0={163.2} t1={163.2} de={12} a={12} x={960} y={950} size={100} color={C.crema} pre="OFFICIAL: " suf="-HOUR DAY" fuera={164.95} />
+          <Cuenta t={t} t0={165.1} t1={165.1} de={13} a={13} x={960} y={950} size={120} color={C.rojo} pre="REALLY: " suf="+ HOURS" fuera={165.7} />
         </>
       )}
       <Flash t={t} at={[165.1]} color="#ffdddd" />
