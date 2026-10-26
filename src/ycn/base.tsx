@@ -97,7 +97,7 @@ export const HudDia: React.FC<{ dia: number | string; rayas?: number; desde?: nu
 export const COLOR_VOZ: Record<string, string> = { nell: AMARILLO, cal: "#8fc2ff", dot: "#ff8fb8", marlon: "#f4efe4", ana: "#9fd3ff", rafi: "#9be3a6", gus: "#f4efe4", otro: "#f4efe4", tv: "#ffd34d" };
 export const Dice: React.FC<{ quien: keyof typeof COLOR_VOZ; t: string; x: number; y: number; desde: number; hasta?: number; tam?: number; rot?: number; centro?: boolean }> = ({ quien, t, x, y, desde, hasta, tam = 66, rot = -3, centro }) => {
   const f = useF();
-  const n = Math.max(0, (f - desde) * 0.9);
+  const n = Math.max(0, (f - desde) * 1.8); // rápido: que ningún cuadro muestre media palabra mucho tiempo
   const o = hasta ? interpolate(f, [hasta - 10, hasta], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1;
   if (f < desde) return null;
   const color = COLOR_VOZ[quien];
@@ -124,13 +124,13 @@ export const Rotulo: React.FC<{ t: string; x: number; y: number; desde: number; 
 };
 
 // ---------- foto polaroid de alguien que no está (Ana en el hospital) ----------
-export const Foto: React.FC<{ l: Look; x: number; y: number; w?: number; rot?: number; fondo?: string; cara?: string; pie?: string; desde?: number }> = ({ l, x, y, w = 420, rot = -5, fondo = "#cfe0ee", cara = "feliz", pie, desde = 0 }) => {
+export const Foto: React.FC<{ l: Look; x: number; y: number; w?: number; rot?: number; fondo?: string; cara?: string; pie?: string; desde?: number; busto?: boolean }> = ({ l, x, y, w = 420, rot = -5, fondo = "#cfe0ee", cara = "feliz", pie, desde = 0, busto }) => {
   const f = useF();
   if (f < desde) return null;
   const u = interpolate(f, [desde, desde + 10], [0, 1], { extrapolateRight: "clamp" });
   return (
     <div style={{ position: "absolute", left: x, top: y, width: w, padding: 18, paddingBottom: 70, background: "#f6f1e6", transform: `rotate(${rot}deg) translateY(${(1 - u) * 40}px)`, opacity: u, boxShadow: "0 18px 40px rgba(0,0,0,0.55)" }}>
-      <svg viewBox="-220 -440 440 480" width={w - 36} height={(w - 36) * 1.09} style={{ background: fondo, display: "block" }}>
+      <svg viewBox={busto ? "-101 -352 202 220" : "-220 -440 440 480"} width={w - 36} height={(w - 36) * 1.09} style={{ background: fondo, display: "block" }}>
         <rect x={-220} y={-60} width={440} height={100} fill="#a9bfd0" />
         <Personaje x={0} y={-20} p={pose("parado")} e={cara} look={l} luz={RIM.liga} />
       </svg>

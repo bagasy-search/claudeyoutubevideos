@@ -10,6 +10,7 @@ import { pistaX, PISTAS_PUNTOS as PP } from "../sets/pistas";
 import { COCINA_YCN_PUNTOS as CP } from "../sets/cocina";
 import { FREEZER_PUNTOS as FP } from "../sets/freezer";
 import { Anotador, Bola, Linterna, Pancho, Papas, Tiza } from "../utileria";
+import { Comparacion, Mapa, Velo as VeloX } from "../../anikit/explica";
 import { A, Afuera, Cocina, Dice, EnFreezer, Foto, HudDia, kDe, Lista, P, Recuerdo, Rotulo, Sacude, Sala, Velo } from "../base";
 
 const PU = PP.puerta, CH = PP.cadena, SN = PP.snack;
@@ -71,7 +72,9 @@ export const P05Resumen: React.FC = () => {
       <Afuera cl={[mira(0, 1650, 520, 0.8), mira(k(18.6), 1900, 540, 1.0, { curva: "inout" })]} sp={{ sirenas: true, persiana: 1 }}
         gente={zs.map((l, i) => ({ l: zombi(l), ruta: [{ f: 0, x: 700 + i * 260, y: P + 80 + 14 * i }, { f: 200, x: 1100 + i * 230, y: P + 30 + 10 * i }], p: "zombi", c: "zombi", d: 1 as const, seed: i + 2 }))} />
       <Pildora texto="PREVIOUSLY · DAY ONE" x={960} y={140} desde={4} />
-      <Rotulo t="Hamilton, Ohio" x={240} y={760} desde={k(16.6)} flecha="der" />
+      <VeloX desde={k(14.3)} o={0.35} />
+      <Mapa x={1360} y={600} w={860} h={560} desde={k(14.4)} dur={70} estilo="mapa" titulo="HAMILTON, OHIO" acento={ROJO}
+        puntos={[{ x: 170, y: 380, rotulo: "HIGH ST" }, { x: 420, y: 300, via: true }, { x: 690, y: 170, rotulo: "HOLLIS LANES", lado: "izq" }]} />
     </AbsoluteFill>
   );
 };
@@ -89,7 +92,7 @@ export const P06Cinco: React.FC = () => {
 
 // ---------- 7-10 · el elenco, uno por uno ----------
 export const P07Cal: React.FC = () => (
-  <Sala cl={[mira(0, pistaX(8) - 200, 560, 2.3), mira(48, pistaX(8) - 180, 560, 2.6, { curva: "inout" })]} sp={D9}
+  <Sala cl={[mira(0, pistaX(8) - 200, 673, 2.3), mira(48, pistaX(8) - 180, 663, 2.6, { curva: "inout" })]} sp={D9}
     gente={[{ l: CAL, x: pistaX(8) - 200, p: [{ f: 0, v: "brazosCruzados" }, { f: 24, v: "pensar" }], c: "cansado", d: 1 }]}
     hud={<Rotulo t="CAL · the mechanic" x={1180} y={240} desde={4} flecha="izq" color="#8fc2ff" />} />
 );
@@ -99,14 +102,14 @@ export const P08Nell: React.FC = () => (
     hud={<Rotulo t="NELL · 9 · the yellow raincoat" x={1150} y={250} desde={6} flecha="izq" color={AMARILLO} />} />
 );
 export const P09Dot: React.FC = () => (
-  <Sala cl={[mira(0, pistaX(7), 540, 2.4), mira(46, pistaX(7) + 20, 540, 2.7, { curva: "inout" })]} sp={D9}
+  <Sala cl={[mira(0, pistaX(7), 669, 2.4), mira(46, pistaX(7) + 20, 660, 2.7, { curva: "inout" })]} sp={D9}
     gente={[{ l: DOT, x: pistaX(7), p: { hD: 100, cD: 60 }, c: "picaro", d: 1, mD: <Bola s={1.0} /> }]}
     hud={<Rotulo t="DOT · the old nurse" x={1150} y={240} desde={4} flecha="izq" color="#ff8fb8" />} />
 );
 export const P10Marlon: React.FC = () => {
   const k = kDe(28.9);
   return (
-    <Sala cl={[mira(0, SN - 300, 540, 1.9), mira(k(31), SN - 300, 540, 2.0), mira(k(32.6), SN + 200, 540, 2.0, { curva: "inout" })]} snack sp={D9}
+    <Sala cl={[mira(0, SN - 300, 690, 1.9), mira(k(31), SN - 300, 685, 2.0), mira(k(32.6), SN + 200, 685, 2.0, { curva: "inout" })]} snack sp={D9}
       detras={[{ l: RAFI, x: SN + 200, p: [{ f: 0, v: "parado" }, { f: k(31.4), v: "saludar" }], c: "feliz", d: -1 }]}
       gente={[{ l: MARLON, x: SN - 440, p: [{ f: 0, v: "brazosCruzados" }, { f: k(29.6), v: { hD: 70, cD: 60 } }, { f: k(30.6), v: "brazosCruzados" }], c: "picaro", d: 1, habla: [[0, 50]] }]}
       hud={<><Rotulo t="MARLON · insurance" x={200} y={220} desde={k(29.2)} hasta={k(31.2)} flecha="der" /><Rotulo t="RAFI · the cook (me)" x={1150} y={220} desde={k(31.4)} flecha="izq" color="#9be3a6" /></>} />
@@ -120,7 +123,7 @@ export const P11Primera: React.FC = () => {
   return (
     <AbsoluteFill>
       <Sacude en={gs} amp={4}>
-        <Cocina cl={[mira(0, 1400, 520, 1.0), mira(k(36.6), CP.puerta - 150, 500, 1.6, { curva: "inout" })]} sp={{ luz: "noche", golpes: gs }}
+        <Cocina cl={[mira(0, 1450, 680, 1.6), mira(k(36.6), CP.puerta - 150, 709, 1.7, { curva: "inout" })]} sp={{ luz: "noche", golpes: gs }}
           gente={[{ l: RAFI, x: 1500, p: "encogerse", c: "miedo", d: 1, mD: <Linterna />, luz: RIM.linterna }]} />
       </Sacude>
       <Recuerdo />
@@ -228,12 +231,12 @@ export const P20Recuento: React.FC = () => {
   const k = kDe(71.94);
   return (
     <AbsoluteFill>
-      <Sala cl={[mira(0, SN - 400, 500, 2.1), mira(k(75.1), SN - 420, 500, 2.3, { curva: "inout" }), mira(k(75.2), SN - 300, 640, 3.4), mira(k(78.8), SN - 300, 650, 3.7, { curva: "lineal" }), mira(k(78.9), SN - 450, 520, 2.4), mira(k(81.3), SN - 460, 530, 2.7, { curva: "inout" })]} snack sp={D9}
+      <Sala cl={[mira(0, SN - 400, 680, 2.1), mira(k(75.1), SN - 420, 673, 2.3, { curva: "inout" }), mira(k(75.2), SN - 300, 640, 3.4), mira(k(78.8), SN - 300, 650, 3.7, { curva: "lineal" }), mira(k(78.9), SN - 450, 669, 2.4), mira(k(81.3), SN - 460, 660, 2.7, { curva: "inout" })]} snack sp={D9}
         detras={[{ l: RAFI, x: SN - 300, p: "celular", c: [{ f: 0, v: "determinado" }, { f: k(77.7), v: "miedo" }], d: -1, mD: <Anotador /> }]} />
-      <Lista x={1150} y={160} tam={58} lineas={[
-        { t: "DAY 9", desde: k(72.3), color: AMARILLO },
-        { t: "41 → 6  CHIPS", desde: k(75.3) }, { t: "96 → 11  HOT DOGS", desde: k(77.7) }, { t: "18 → 3  PRETZELS", desde: k(79) }, { t: "CANDY  0", desde: k(80.1), color: ROJO },
-      ]} />
+      <VeloX desde={k(75.1)} hasta={k(79)} o={0.5} />
+      <Comparacion x={960} y={600} w={430} h={470} desde={k(75.2)} hasta={k(77.6)} izq={{ titulo: "DAY 1", dato: "41", sub: "bags of chips" }} der={{ titulo: "DAY 9", dato: "6", sub: "bags of chips", color: "#ff5a5a" }} />
+      <Comparacion x={960} y={600} w={430} h={470} desde={k(77.6)} hasta={k(79)} izq={{ titulo: "DAY 1", dato: "96", sub: "hot dogs" }} der={{ titulo: "DAY 9", dato: "11", sub: "hot dogs", color: "#ff5a5a" }} />
+      <Lista x={110} y={560} tam={66} lineas={[{ t: "18 → 3  PRETZELS", desde: k(79.1) }, { t: "CANDY  0", desde: k(80.1), color: ROJO }]} />
       <HudDia dia={9} rayas={9} />
     </AbsoluteFill>
   );
@@ -243,7 +246,7 @@ export const P20Recuento: React.FC = () => {
 export const P21Golosinas: React.FC = () => {
   const k = kDe(81.36);
   return (
-    <Sala cl={[mira(0, SN - 700, 540, 2.1), mira(k(83.6), SN - 720, 540, 2.4, { curva: "inout" })]} snack sp={D9}
+    <Sala cl={[mira(0, SN - 700, 680, 2.1), mira(k(83.6), SN - 720, 669, 2.4, { curva: "inout" })]} snack sp={D9}
       gente={[{ l: MARLON, x: SN - 760, p: [{ f: 0, v: "hablar" }, { f: 30, v: { hD: 60, cD: 100, hI: 60, cI: 100 } }], c: "picaro", d: 1, habla: [[0, k(83.5)]] }]}
       hud={<Dice quien="marlon" t="The candy just… disappeared." x={1060} y={200} desde={k(81.6)} tam={64} />} />
   );
@@ -296,7 +299,7 @@ export const P25Cuenta: React.FC = () => {
   const k = kDe(97.88);
   return (
     <AbsoluteFill>
-      <Sala cl={[mira(0, SN, 520, 1.1), mira(k(101.5), SN - 100, 520, 1.3, { curva: "inout" })]} snack sp={D9}
+      <Sala cl={[mira(0, SN - 50, 690, 1.5), mira(k(101.5), SN - 100, 700, 1.6, { curva: "inout" })]} snack sp={D9}
         detras={[{ l: DOT, x: SN, p: "celular", c: "determinado", d: -1, mD: <Anotador /> }]}
         gente={[{ l: CAL, x: SN - 600, p: "brazosCruzados", c: "cansado", d: 1 }, { l: NELL, x: SN - 400, sent: 184, p: "sentado", c: "neutral", d: 1 }, { l: RAFI, x: SN + 450, p: "parado", c: "cansado", d: -1 }, { l: MARLON, x: SN + 700, p: "brazosCruzados", c: "duda", d: -1 }]} />
       <Velo color="#0b0a0c" o={0.3} />
@@ -313,7 +316,7 @@ export const P26Cuatro: React.FC = () => {
   const k = kDe(101.52);
   return (
     <AbsoluteFill>
-      <Sala cl={[mira(0, SN, 520, 1.3), mira(k(104.6), PP.puertaCocina + 300, 520, 1.5, { curva: "inout" }), mira(k(106.2), PP.puertaCocina, 520, 1.9, { curva: "inout" })]} snack sp={D9}
+      <Sala cl={[mira(0, SN, 736, 1.3), mira(k(104.6), PP.puertaCocina + 300, 717, 1.5, { curva: "inout" }), mira(k(106.2), PP.puertaCocina, 690, 1.9, { curva: "inout" })]} snack sp={D9}
         detras={[{ l: DOT, x: SN, p: "brazosCruzados", c: "triste", d: -1 }]} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 120, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 150, color: ROJO, opacity: interpolate(useF(), [k(103), k(103.4)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), textShadow: "0 0 34px rgba(255,74,61,0.55)" }}>4 DAYS LEFT</div>
       <Dice quien="rafi" t="…unless we opened the freezer." x={960} y={330} desde={k(104.6)} centro tam={64} />
@@ -337,7 +340,7 @@ export const P28Comida: React.FC = () => {
   const k = kDe(109.39);
   return (
     <AbsoluteFill>
-      <EnFreezer cl={[mira(0, 300, 420, 1.6), mira(k(114), 900, 420, 1.5, { curva: "inout" }), mira(k(117.8), 1650, 440, 1.4, { curva: "inout" })]} sp={{ vacio: 0 }}
+      <EnFreezer cl={[mira(0, 300, 709, 1.6), mira(k(114), 900, 717, 1.5, { curva: "inout" }), mira(k(117.8), 1650, 726, 1.4, { curva: "inout" })]} sp={{ vacio: 0 }}
         gente={[{ l: RAFI, ruta: [{ f: 0, x: 250 }, { f: k(117), x: 1400 }], p: [{ f: 0, v: { hD: 150, cD: 30, hI: 150, cI: 30 } }, { f: 45, v: { hD: 120, cD: 20, hI: 130, cI: 20 } }, { f: 90, v: { hD: 150, cD: 30, hI: 150, cI: 30 } }], mD: <Bolsa />, c: "neutral", d: 1, luz: RIM.frio }]} />
       <Lista x={110} y={150} tam={56} lineas={[{ t: "200  PATTIES", desde: k(109.6) }, { t: "CASES OF FRIES", desde: k(111.5) }, { t: "HOT DOG BUNS", desde: k(113) }, { t: "ICE CREAM", desde: k(114.5) }]} />
       <Dice quien="rafi" t="a month. maybe more." x={1180} y={830} desde={k(115.6)} tam={66} />
@@ -350,7 +353,7 @@ export const P28Comida: React.FC = () => {
 export const P29Perilla: React.FC = () => {
   const k = kDe(117.8);
   return (
-    <EnFreezer cl={[mira(0, FP.puerta, 440, 1.3), mira(k(120.2), FP.perilla, 560, 2.6, { curva: "inout" }), mira(k(123.4), FP.perilla, 580, 3.2, { curva: "lineal" })]} sp={{ vacio: 0 }}
+    <EnFreezer cl={[mira(0, FP.puerta, 736, 1.3), mira(k(120.2), FP.perilla, 663, 2.6, { curva: "inout" }), mira(k(123.4), FP.perilla, 580, 3.2, { curva: "lineal" })]} sp={{ vacio: 0 }}
       gente={[{ l: zombi(GUS), x: FP.der - 320, p: "zombi", c: "zombi", d: -1, mir: { x: -1, y: 0 }, luz: RIM.frio }]}
       hud={<><Rotulo t="red safety knob" x={330} y={650} desde={k(119.6)} flecha="der" color={AMARILLO} /><Dice quien="rafi" t="nobody alive. 8 days." x={240} y={860} desde={k(121.4)} tam={70} /><HudDia dia={9} rayas={9} /></>} />
   );
@@ -361,10 +364,10 @@ export const P30Gus: React.FC = () => {
   const k = kDe(123.47);
   return (
     <AbsoluteFill>
-      <Cocina cl={[mira(0, 1000, 520, 1.2), mira(k(130.2), 1100, 520, 1.4, { curva: "inout" })]} sp={{ luz: "noche" }} />
+      <Cocina cl={[mira(0, 1000, 520, 1.2), mira(k(130.2), 1100, 726, 1.4, { curva: "inout" })]} sp={{ luz: "noche" }} />
       <Velo color="#0b0a0c" o={0.45} />
-      <Foto l={GUS} x={260} y={150} w={500} rot={-4} cara="feliz" pie="GUS PRUITT" desde={k(123.8)} />
-      <Lista x={980} y={240} tam={62} lineas={[{ t: "night manager", desde: k(125.6) }, { t: "61 years old", desde: k(127.2) }, { t: "31 years at Hollis", desde: k(128.6), color: AMARILLO }]} />
+      <Foto l={GUS} x={180} y={90} w={640} rot={-4} cara="feliz" pie="GUS PRUITT" fondo="#e9c98e" busto desde={k(123.8)} />
+      <Lista x={960} y={300} tam={76} lineas={[{ t: "night manager", desde: k(125.6) }, { t: "61 years old", desde: k(127.2) }, { t: "31 years at Hollis", desde: k(128.6), color: AMARILLO }]} />
     </AbsoluteFill>
   );
 };
@@ -375,7 +378,7 @@ export const P31Chili: React.FC = () => {
   const k = kDe(130.23);
   return (
     <AbsoluteFill>
-      <Cocina cl={[mira(0, CP.freidora - 200, 520, 1.8), mira(k(132), CP.freidora - 260, 520, 2.1, { curva: "inout" })]} sp={{ luz: "prendida" }}
+      <Cocina cl={[mira(0, CP.freidora - 200, 696, 1.8), mira(k(132), CP.freidora - 260, 680, 2.1, { curva: "inout" })]} sp={{ luz: "prendida" }}
         gente={[{ l: GUS, x: CP.freidora - 60, p: [{ f: 0, v: { hD: 70, cD: 50 } }, { f: 20, v: { hD: 60, cD: 70 } }, { f: 40, v: { hD: 70, cD: 50 } }], c: "feliz", d: -1, mD: <Olla />, habla: [[0, 50]] }, { l: RAFI, x: CP.freidora - 420, p: "parado", c: "feliz", d: 1 }]} />
       <Recuerdo />
       <Rotulo t="the chili" x={1200} y={200} desde={k(131.2)} flecha="izq" />
@@ -387,7 +390,7 @@ export const P32Plata: React.FC = () => {
   const k = kDe(132.1);
   return (
     <AbsoluteFill>
-      <Sala cl={[mira(0, SN - 200, 520, 2.0), mira(k(134.4), SN - 240, 520, 2.3, { curva: "inout" })]} snack sp={{ luz: "liga", tv: "normal" }}
+      <Sala cl={[mira(0, SN - 200, 685, 2.0), mira(k(134.4), SN - 240, 673, 2.3, { curva: "inout" })]} snack sp={{ luz: "liga", tv: "normal" }}
         detras={[{ l: GUS, x: SN - 100, p: [{ f: 0, v: "parado" }, { f: 16, v: { hD: 80, cD: 10 } }], c: "picaro", d: -1, mD: <Billete /> }, { l: RAFI, x: SN - 420, p: [{ f: 0, v: "parado" }, { f: 30, v: { hD: 70, cD: 20 } }], c: "feliz", d: 1 }]} />
       <Recuerdo />
       <Dice quien="rafi" t="cash, when the register was short" x={250} y={780} desde={k(132.5)} tam={58} />
@@ -398,7 +401,7 @@ export const P33Papas: React.FC = () => {
   const k = kDe(134.4);
   return (
     <AbsoluteFill>
-      <Cocina cl={[mira(0, 900, 540, 1.1), mira(k(138.4), 1500, 540, 1.2, { curva: "inout" }), mira(k(141.2), CP.puerta - 60, 520, 1.5, { curva: "inout" })]}
+      <Cocina cl={[mira(0, 900, 540, 1.1), mira(k(138.4), 1500, 540, 1.2, { curva: "inout" }), mira(k(141.2), CP.puerta - 60, 717, 1.5, { curva: "inout" })]}
         sp={{ luz: "prendida", puerta: (ff: number) => interpolate(ff, [k(138.4), k(139), k(140.4), k(141)], [0, 0.8, 0.8, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}
         gente={[
           { l: RAFI, x: 700, p: [{ f: 0, v: "hablar" }, { f: k(137), v: "señalar" }], c: "feliz", habla: [[k(136.2), k(138)]], d: 1 },
@@ -447,7 +450,7 @@ export const P36Peor: React.FC = () => (
 export const P37Educacion: React.FC = () => {
   const k = kDe(154.77);
   return (
-    <Sala cl={[mira(0, 1300, 560, 1.4), mira(k(156.8), 1100, 560, 2.0, { curva: "inout" }), mira(k(160.5), 1080, 560, 2.3, { curva: "lineal" })]} sp={D9}
+    <Sala cl={[mira(0, 1300, 560, 1.4), mira(k(156.8), 1100, 560, 2.0, { curva: "inout" }), mira(k(160.5), 1080, 673, 2.3, { curva: "lineal" })]} sp={D9}
       gente={[{ l: MARLON, x: 1050, p: [{ f: 0, v: "brazosCruzados" }, { f: k(157), v: "hablar" }, { f: k(159), v: { hD: 60, cD: 100, hI: 60, cI: 100 } }], c: [{ f: 0, v: "duda" }, { f: k(157), v: "picaro" }], d: 1, habla: [[k(157), k(160.5)]] }, { l: RAFI, x: 1640, sent: 0, p: sentadoPiso, c: "triste", d: -1 }]}
       hud={<><Dice quien="marlon" t="So we leave him in there…" x={1080} y={200} desde={k(157.2)} tam={62} /><Dice quien="marlon" t="…and we starve politely." x={1120} y={310} desde={k(158.8)} tam={62} /></>} />
   );
@@ -467,7 +470,7 @@ export const P38Primavera: React.FC = () => (
 export const P39Idea: React.FC = () => {
   const k = kDe(162.41);
   return (
-    <Sala cl={[mira(0, SN, 520, 1.3), mira(k(167.3), SN - 100, 520, 1.7, { curva: "inout" })]} snack sp={D9}
+    <Sala cl={[mira(0, SN, 736, 1.3), mira(k(167.3), SN - 100, 702, 1.7, { curva: "inout" })]} snack sp={D9}
       detras={[{ l: DOT, x: SN, p: [{ f: 0, v: "pensar" }, { f: k(165.5), v: "señalar" }], c: [{ f: 0, v: "duda" }, { f: k(165.5), v: "determinado" }], d: -1 }]}
       gente={[{ l: CAL, x: SN - 600, p: "brazosCruzados", c: "duda", d: 1 }, { l: RAFI, x: SN + 500, p: "parado", c: "duda", d: -1 }]}
       hud={<><Rotulo t="without anybody touching him" x={250} y={200} desde={k(165.6)} flecha="der" /><HudDia dia={9} rayas={9} /></>} />
@@ -487,7 +490,7 @@ export const P41Siguen: React.FC = () => {
   const zs = [LIGA, WAFFLE, LIGA3, PINPAL, LIGA2];
   return (
     <AbsoluteFill>
-      <Afuera cl={[mira(0, 1650, 540, 0.9), mira(k(175.4), 1200, 680, 0.7, { curva: "inout" })]} sp={{ sirenas: true, persiana: 1 }}
+      <Afuera cl={[mira(0, 1700, 690, 1.5), mira(k(175.4), 1250, 720, 1.3, { curva: "inout" })]} sp={{ sirenas: true, persiana: 1 }}
         gente={zs.map((l, i) => ({ l: zombi(l), ruta: [{ f: 0, x: 1400 + i * 150, y: P + 10 * i }, { f: k(171.6), x: 1380 + i * 150, y: P + 10 * i }, { f: k(175.4), x: 600 + i * 170, y: P + 120 + 10 * i }], p: "zombi", c: "zombi", d: [{ f: 0, v: 1 as const }, { f: k(171.8), v: -1 as const }], seed: i + 3 }))} />
       <Recuerdo />
       <Dice quien="rafi" t="they follow sound." x={960} y={140} desde={k(170)} centro tam={72} />

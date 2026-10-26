@@ -3,7 +3,7 @@
 // - Temblor de mano = suma de senos de frecuencias que no se repiten (0,23-1,7 Hz), amplitud en px reales.
 // - Paralaje: cada capa se mueve según su profundidad (z=0 fondo lejano, z=1 plano de foco, z>1 primer término).
 // - Foco: cada capa se desenfoca según su distancia al plano de foco (rack focus animable).
-import React, { createContext, useContext } from "react";
+import React, { createContext, useContext, useId } from "react";
 import { AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 
 // mira(X, Y, zoom): clave de cámara que CENTRA el punto (X, Y) del mundo (el Plano trabaja con el desvío)
@@ -13,7 +13,9 @@ export const mira = (f: number, X: number, Y: number, zoom: number, extra: Parti
 
 export type Pose = { x: number; y: number; zoom: number; rot?: number; foco?: number };
 // curva: en vez de resorte, tramo con easing y zoom LOGARÍTMICO (empujes enormes que aceleran o frenan parejo)
-export type Clave = Pose & { f: number; resorte?: { damping?: number; stiffness?: number; mass?: number }; curva?: "in" | "out" | "inout" };
+// "fluida": spline de Hermite en el TIEMPO que pasa por las claves SIN frenar en cada una (velocidad continua);
+// sólo arranca y termina en reposo en la primera y la última clave. Para recorridos de varias claves.
+export type Clave = Pose & { f: number; resorte?: { damping?: number; stiffness?: number; mass?: number }; curva?: "in" | "out" | "inout" | "fluida" };
 
 // Desfase de cuadro: un plano puede arrancar ANTES de su corte (entrada encimada) y seguir DESPUÉS (salida).
 // useF() = cuadro local respecto del corte nominal (negativo durante la entrada).
@@ -22,6 +24,19 @@ export const useF = () => useCurrentFrame() - useContext(OffsetCtx);
 const curvas = { in: Easing.in(Easing.cubic), out: Easing.out(Easing.cubic), inout: Easing.inOut(Easing.cubic) };
 
 type Estado = { x: number; y: number; zoom: number; rot: number; foco: number };
+// tramo i-1 → i de la spline fluida (tangentes de Catmull-Rom medidas en unidades por cuadro: velocidad continua
+// aunque las claves no estén equiespaciadas; zoom en escala logarítmica)
+const hermite = (cl: Clave[], i: number, f: number): Estado => {
+  const a = cl[i - 1], b = cl[i], pa = cl[i - 2], nb = cl[i + 1];
+  const T = b.f - a.f, u = Math.min(1, Math.max(0, (f - a.f) / T));
+  const h00 = 2 * u ** 3 - 3 * u ** 2 + 1, h10 = u ** 3 - 2 * u ** 2 + u, h01 = -2 * u ** 3 + 3 * u ** 2, h11 = u ** 3 - u ** 2;
+  const val = (c: Clave, k: "x" | "y" | "z" | "rot" | "foco") => (k === "z" ? Math.log(c.zoom) : k === "rot" ? c.rot ?? 0 : k === "foco" ? c.foco ?? 1 : c[k]);
+  // tangente en a: sólo si el tramo anterior también es fluido; en b: sólo si el siguiente también lo es
+  const ma = (k: "x" | "y" | "z" | "rot" | "foco") => (pa && a.curva === "fluida" ? ((val(b, k) - val(pa, k)) / (b.f - pa.f)) * T : 0);
+  const mb = (k: "x" | "y" | "z" | "rot" | "foco") => (nb && nb.curva === "fluida" ? ((val(nb, k) - val(a, k)) / (nb.f - a.f)) * T : 0);
+  const sp = (k: "x" | "y" | "z" | "rot" | "foco") => h00 * val(a, k) + h10 * ma(k) + h01 * val(b, k) + h11 * mb(k);
+  return { x: sp("x"), y: sp("y"), zoom: Math.exp(sp("z")), rot: sp("rot"), foco: sp("foco") };
+};
 const Ctx = createContext<Estado>({ x: 0, y: 0, zoom: 1, rot: 0, foco: 1 });
 
 // posición de cámara en el cuadro f: cada tramo entre claves avanza con un resorte (llega con inercia, rebota apenas)
@@ -32,6 +47,7 @@ export const poseEn = (claves: Clave[], f: number, fps: number): Estado => {
     if (f < k.f) {
       // el tramo arranca en la clave anterior
       const a = claves[i - 1];
+      if (k.curva === "fluida") return hermite(claves, i, f);
       if (k.curva) {
         const u = interpolate(f, [a.f, k.f], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: curvas[k.curva] });
         const z = Math.exp(interpolate(u, [0, 1], [Math.log(p.zoom), Math.log(k.zoom)]));
@@ -84,13 +100,13 @@ export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; ch
   // direccional. Medio obturador (180°) = la mitad del recorrido del cuadro. Sólo se activa en movimientos rápidos.
   // en el primer cuadro (antes de la 1ª clave no hay pasado) se mide hacia adelante: el plano entra YA en movimiento
   const q = f - 1 < claves[0].f ? poseEn(claves, f + 1, fps) : poseEn(claves, f - 1, fps);
-  // velocidad del punto del mundo que está en el centro (un empuje de zoom sobre un punto lejano NO es un paneo)
-  const vx = Math.abs(p.x / p.zoom - q.x / q.zoom) * p.zoom, vy = Math.abs(p.y / p.zoom - q.y / q.zoom) * p.zoom;
-  // salto >200 px en un cuadro = corte duro (dos claves pegadas): ese cuadro va nítido. Tope 12 px: un paneo se lee, no se embarra.
+  const vx = Math.abs(p.x - q.x), vy = Math.abs(p.y - q.y);
+  // rampa continua desde 0 (sin salto de nitidez al activarse) y tope bajo: más que 10 px se lee como tirón
+  // salto >200 px en un cuadro = corte duro (dos claves pegadas): ese cuadro va nítido
   const corte = vx > 200 || vy > 200;
-  const sx = corte ? 0 : Math.min(12, vx * 0.35), sy = corte ? 0 : Math.min(12, vy * 0.35);
-  const mb = sx > 1.5 || sy > 1.5;
-  const id = `mb${seed}`;
+  const sx = corte ? 0 : Math.min(4, Math.max(0, vx * 0.25 - 2)), sy = corte ? 0 : Math.min(4, Math.max(0, vy * 0.25 - 2));
+  const mb = sx > 0.3 || sy > 0.3;
+  const id = "mb" + useId().replace(/[^a-zA-Z0-9]/g, "");
   return (
     <AbsoluteFill style={{ background: fondo, overflow: "hidden" }}>
       {mb && (

@@ -68,14 +68,14 @@ export const Cortina: React.FC<{ d: number; color?: string; lado?: 1 | -1 }> = (
     <AbsoluteFill>
       <svg width={1920} height={1080} style={{ position: "absolute" }}>
         <defs>
-          <linearGradient id="cortg" x1="0" x2="1" y1="0" y2="0">
+          <linearGradient id={`cortg${color.replace(/[^a-zA-Z0-9]/g, "")}`} x1="0" x2="1" y1="0" y2="0">
             <stop offset="0" stopColor={color} stopOpacity={0} />
             <stop offset="0.18" stopColor={color} stopOpacity={1} />
             <stop offset="0.82" stopColor={color} stopOpacity={1} />
             <stop offset="1" stopColor={color} stopOpacity={0} />
           </linearGradient>
         </defs>
-        <rect x={x} y={-20} width={w} height={1120} fill="url(#cortg)" />
+        <rect x={x} y={-20} width={w} height={1120} fill={`url(#cortg${color.replace(/[^a-zA-Z0-9]/g, "")})`} />
       </svg>
     </AbsoluteFill>
   );
