@@ -365,8 +365,9 @@ export const P23Chofer: React.FC = () => {
     <EnBus cl={cl} hora="tarde" min={858} avance={(f) => 14000 + f * 11} owen={{ caras: [{ f: 0, v: "cansado" }], giro: (f) => Math.sin(f / 14) * 0.08 }}
       hud={<>
         <Bat cl={cl} x={OX} y={OY} pct={[{ f: 0, v: 22 }, { f: k(207.0), v: 19 }]} tam={1.1} />
-        <Mano texto="the battery stops being funny" x={1250} y={260} desde={k(203.2)} hasta={k(205.3)} color="#f4efe4" tam={58} />
+        <Mano texto="the battery stops being funny" x={1250} y={330} desde={k(203.2)} hasta={k(205.3)} color="#f4efe4" tam={58} />
         <Pildora texto="OWEN IS A DRIVER" x={960} y={950} desde={k(205.4)} color={ROJO_OWEN} />
+        <Pildora texto="What's YOUR battery at 2 PM? Comment it ↓" x={960} y={170} desde={k(203.4)} color={VERDE} />
       </>} />
   );
 };
