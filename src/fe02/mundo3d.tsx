@@ -76,7 +76,7 @@ const pose = (c: Cam, q: number) => {
   const s = ST[c.st] ?? ST.escritorio, p = v3(s.p), l = v3(s.l);
   const push = c.push ?? 0.1, side = c.side ?? 0;
   const d = p.clone().sub(l), r = new THREE.Vector3().crossVectors(d, new THREE.Vector3(0, 1, 0)).normalize();
-  const k = sm(q);
+  const k = 0.5 * cl(q) + 0.5 * sm(q);
   // empuje lento (dolly-in) + deslizamiento lateral, siempre hacia el sujeto
   const pp = l.clone().add(d.multiplyScalar(1 + push * (1 - k))).add(r.multiplyScalar(side * (k - 0.5) * 0.35));
   return { p: pp, l, fov: s.fov };
@@ -86,7 +86,7 @@ export const camAt = (t: number) => {
   const c = CS[i], len = Math.max(0.5, c.b - c.a), q = (t - c.a) / len;
   const end = pose(c, cl(q));
   if (!c.fly || i === 0) return end;
-  const pc = CS[i - 1], A = pose(pc, 1), B = pose(c, 0);
+  const pc = CS[i - 1], A = pose(pc, 1), B = end;
   const dist = A.p.distanceTo(B.p) + A.l.distanceTo(B.l) * 0.5;
   const F = Math.min(len * 0.5, Math.max(0.9, Math.min(2.2, 0.55 + dist * 0.11)));
   if (t >= c.a + F) return end;
@@ -288,6 +288,45 @@ const Silla: React.FC<{ p: V3; vel?: Tx }> = ({ p, vel }) => (
     {[[-0.2, -0.18], [0.2, -0.18], [-0.2, 0.18], [0.2, 0.18]].map(([x, z], i) => <Box key={i} p={[x, 0.21, z]} s={[0.04, 0.42, 0.04]} c="#3a2216" r={0.4} cc={0.6} rad={0.012} />)}
   </group>
 );
+
+// ---------------- AIRE: polvo que flota en la luz + haces de luz (aditivos, sin AO; deterministas en t) ----------------
+const motaTex = (() => { let tx: THREE.Texture | null = null; return () => tx ??= canvasTex(64, 64, (g) => {
+  const gr = g.createRadialGradient(32, 32, 0, 32, 32, 30); gr.addColorStop(0, "rgba(255,236,200,1)"); gr.addColorStop(0.4, "rgba(255,226,180,.45)"); gr.addColorStop(1, "rgba(255,220,170,0)");
+  g.fillStyle = gr; g.fillRect(0, 0, 64, 64); }); })();
+const hazTex = (() => { let tx: THREE.Texture | null = null; return () => tx ??= canvasTex(64, 256, (g) => {
+  const gr = g.createLinearGradient(0, 0, 0, 256); gr.addColorStop(0, "rgba(255,228,180,.9)"); gr.addColorStop(1, "rgba(255,228,180,0)");
+  g.fillStyle = gr; g.fillRect(0, 0, 64, 256);
+  const gx = g.createLinearGradient(0, 0, 64, 0); gx.addColorStop(0, "rgba(0,0,0,1)"); gx.addColorStop(0.5, "rgba(0,0,0,0)"); gx.addColorStop(1, "rgba(0,0,0,1)");
+  g.globalCompositeOperation = "destination-out"; g.fillStyle = gx; g.fillRect(0, 0, 64, 256); }); })();
+const POLVO = 900;
+const polvoBase = (() => { const a = new Float32Array(POLVO * 4); for (let i = 0; i < POLVO; i++) { a[i * 4] = -7 + rnd(i, 41) * 35; a[i * 4 + 1] = 0.2 + rnd(i, 42) * 2.8; a[i * 4 + 2] = -2.9 + rnd(i, 43) * 4.2; a[i * 4 + 3] = rnd(i, 44) * 6.28; } return a; })();
+const Aire: React.FC<{ t: number }> = ({ t }) => {
+  const geo = useMemo(() => { const g = new THREE.BufferGeometry(); g.setAttribute("position", new THREE.BufferAttribute(new Float32Array(POLVO * 3), 3)); return g; }, []);
+  useEffect(() => () => geo.dispose(), [geo]);
+  const pos = geo.attributes.position as THREE.BufferAttribute;
+  for (let i = 0; i < POLVO; i++) {
+    const x = polvoBase[i * 4], y = polvoBase[i * 4 + 1], z = polvoBase[i * 4 + 2], ph = polvoBase[i * 4 + 3];
+    pos.setXYZ(i, x + 0.18 * Math.sin(t * 0.13 + ph), y + 0.12 * Math.sin(t * 0.09 + ph * 1.7) - ((t * 0.012 + ph) % 0.4), z + 0.15 * Math.cos(t * 0.11 + ph * 0.6));
+  }
+  pos.needsUpdate = true;
+  const haz = (key: string, p: V3, rot: V3, w: number, h: number, op: number) => (
+    <mesh key={key} position={p} rotation={rot} userData={{ noAO: true }} renderOrder={5}>
+      <planeGeometry args={[w, h]} /><meshBasicMaterial map={hazTex()} transparent opacity={op} blending={THREE.AdditiveBlending} depthWrite={false} side={THREE.DoubleSide} toneMapped={false} fog={false} />
+    </mesh>);
+  return (
+    <group>
+      <points geometry={geo} userData={{ noAO: true }} renderOrder={6}>
+        <pointsMaterial map={motaTex()} size={0.022} sizeAttenuation transparent opacity={0.55} blending={THREE.AdditiveBlending} depthWrite={false} toneMapped={false} />
+      </points>
+      {/* atardecer que entra por la ventana de la oficina y cae sobre el escritorio */}
+      {[-0.3, 0, 0.3].map((dx, i) => haz("v" + i, [-4.45 + dx, 1.35, -2.0], [-0.95, 0, 0.12 * (i - 1)], 0.55, 2.6, 0.12 + 0.02 * Math.sin(t * 0.4 + i)))}
+      {/* cenital sobre el altar de la capilla */}
+      {[-0.25, 0.25].map((dx, i) => haz("c" + i, [11 + dx, 1.9, -2.2], [-0.25, 0, 0.1 * (i ? 1 : -1)], 0.9, 2.4, 0.08 + 0.015 * Math.sin(t * 0.5 + i)))}
+      {/* conos tenues bajo las lámparas de la sala */}
+      {[0.3, 1.9, 3.5, 6.2].map((x, i) => haz("l" + i, [x, 2.0, -0.4], [0, 0.6 * i, 0], 0.8, 1.8, 0.035))}
+    </group>
+  );
+};
 
 // ---------------- LA ESCENA ----------------
 const Mundo: React.FC<{ t: number; A: Assets }> = ({ t, A }) => {
@@ -605,6 +644,7 @@ const Mundo: React.FC<{ t: number; A: Assets }> = ({ t, A }) => {
       </group>
       {/* rótulo sobre la entrada de la oficina */}
       {rotulo && <mesh position={[-4.0, 3.4, -3.05]}><planeGeometry args={[3.0, 0.58]} /><meshStandardMaterial map={rotulo} roughness={0.6} emissive="#e8c77a" emissiveIntensity={0.08} emissiveMap={rotulo} /></mesh>}
+      <Aire t={t} />
       <Post bloom={0.45 + 0.08 * fv} threshold={0.97} ao exposure={1.0} env={0.45} />
     </>
   );

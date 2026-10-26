@@ -48,7 +48,7 @@ const Mundo: React.FC<{ t: number; bk: number }> = ({ t, bk }) => {
 type Tr = "cut" | "swipeL" | "swipeR" | "up" | "down" | "portal" | "iris" | "zoom" | "fade" | "wipe";
 type SegJ = { a: number; k: "av" | "w" | "bk"; st?: string; tr?: Tr; fly?: number; px?: number; py?: number };
 const SG = SEGS as SegJ[];
-const D = 0.36;
+const D = 0.3;
 
 // cuánto "bk" tiene el mundo en t (rampa de 0,5 s entre w y bk, sin segundo lienzo)
 const bkAt = (t: number, i: number) => {
@@ -60,7 +60,7 @@ const bkAt = (t: number, i: number) => {
 const Base: React.FC<{ g: SegJ; t: number; i: number }> = ({ g, t, i }) => g.k === "av" ? <Avatar t={t} /> : <Mundo t={t} bk={bkAt(t, i)} />;
 
 const Trans: React.FC<{ t: number; g: SegJ; from: React.ReactNode; to: React.ReactNode }> = ({ t, g, from, to }) => {
-  const k = ei(t, g.a, g.a + D), tr = g.tr ?? "fade";
+  const k = ei(t, g.a, g.a + D), tr = g.tr === "cut" ? "cut" : "fade";
   let px = g.px ?? 960, py = g.py ?? 540;
   if (tr === "swipeL" || tr === "swipeR" || tr === "up" || tr === "down") {
     const dir = tr === "swipeL" || tr === "up" ? 1 : -1, ax = tr === "up" || tr === "down" ? "Y" : "X", DD = ax === "Y" ? 1080 : 1920;
@@ -107,16 +107,23 @@ const Piece: React.FC<{ o: O; t: number }> = ({ o, t }) => {
   }
 };
 
+const DERIVA = new Set(["ficha", "quote", "dicho", "refrendo", "lista", "recibo", "mapa", "cap", "pluma", "balanza", "sobre", "etiqueta", "foto", "recap", "lugar"]);
+const Deriva: React.FC<{ o: O; t: number; children: React.ReactNode }> = ({ o, t, children }) => {
+  const q = Math.max(0, Math.min(1.2, (t - o.a) / Math.max(1, o.b - o.a)));
+  const sc = 1 + 0.045 * q, dx = Math.sin(o.a * 3.1) * 14 * q, dy = -10 * q, rot = Math.sin(o.a * 1.7) * 0.5 * q;
+  return <AbsoluteFill style={{ transform: `translate(${dx.toFixed(2)}px, ${dy.toFixed(2)}px) scale(${sc.toFixed(4)}) rotate(${rot.toFixed(3)}deg)` }}>{children}</AbsoluteFill>;
+};
+
 export const Main: React.FC = () => {
   const t = useCurrentFrame() / 30;
   let i = 0; while (i < SG.length - 1 && SG[i + 1].a <= t) i++;
   const g = SG[i], prev = SG[Math.max(0, i - 1)];
   // mundo→mundo nunca tiene transición 2D (la cámara vuela); sólo entre el avatar y el mundo
-  const inTr = i > 0 && t < g.a + D && g.tr !== "cut" && (g.k === "av" || prev.k === "av");
+  const inTr = i > 0 && t < g.a + D && g.tr !== "cut" && (g.k === "av" || prev.k === "av") && (g.k === "bk" || prev.k === "bk");
   return (
     <AbsoluteFill style={{ background: "#0f0d0b" }}>
       {inTr ? <Trans t={t} g={g} from={<Base g={prev} t={t} i={i - 1} />} to={<Base g={g} t={t} i={i} />} /> : <Base g={g} t={t} i={i} />}
-      {OVS.filter((o) => t >= o.a - 0.3 && t < o.b + 0.6).map((o, j) => <Piece key={j} o={o} t={t} />)}
+      {OVS.filter((o) => t >= o.a - 0.3 && t < o.b + 0.6).map((o, j) => DERIVA.has(o.k) ? <Deriva key={j} o={o} t={t}><Piece o={o} t={t} /></Deriva> : <Piece key={j} o={o} t={t} />)}
       <AbsoluteFill style={{ background: "#000", opacity: e(t, FULL_END - 0.9, FULL_END), pointerEvents: "none" }} />
     </AbsoluteFill>
   );
