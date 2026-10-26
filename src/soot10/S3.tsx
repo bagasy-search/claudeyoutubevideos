@@ -198,7 +198,7 @@ export const O3: React.FC<{ t: number }> = ({ t }) => {
       <S t={264.85} p="wood_hit" g={-4} />
       <Txt t={t} t0={266.9} t1={270.0} text="PIRATES GOT STRANGE" y={170} size={110} color={C.lila} />
       <Txt t={t} t0={270.3} t1={274.8} text="WRITTEN RULES" y={170} size={120} color={C.oro} />
-      <Lista t={t} x={60} y={230} size={40} w={560} titulo="ROBERTS' ARTICLES" t1={304.0}
+      <Lista t={t} x={1320} y={230} size={40} w={560} titulo="ROBERTS' ARTICLES" t1={304.0}
         items={[{ txt: "EVERY MAN A VOTE", t0: 291.2, ok: true }, { txt: "LIGHTS OUT AT 8", t0: 293.7, ok: true }, { txt: "DRINK ON DECK", t0: 296.2, ok: true }, { txt: "NO CARDS, NO DICE", t0: 299.8 }, { txt: "NO FIGHTING ON BOARD", t0: 302.3 }]} />
       {[291.2, 293.7, 296.2, 299.8, 302.3].map((a, i) => <S key={i} t={a} p="write" g={-14} />)}
       <Txt t={t} t0={306.9} t1={307.8} text="WITH SWORDS AND PISTOLS" y={900} size={84} color={C.rojo} />

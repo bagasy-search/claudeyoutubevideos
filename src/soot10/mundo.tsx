@@ -178,7 +178,7 @@ export const CastilloCapeCoast: React.FC<{ t: number; v: ReturnType<typeof vista
       {[-1, 1].map((s) => <g key={s}><rect x={x + s * 1300 - 180} y={MAR - 900} width={360} height={820} fill="#ece7da" /><path d={`M ${x + s * 1300 - 200} ${MAR - 900} L ${x + s * 1300 + 200} ${MAR - 900} L ${x + s * 1300 + 200} ${MAR - 960} L ${x + s * 1300 - 200} ${MAR - 960} Z`} fill="#d9d2c0" /></g>)}
       {Array.from({ length: 6 }, (_, i) => <rect key={i} x={x - 900 + i * 320} y={MAR - 420} width={60} height={110} rx={30} fill="#5a4a3a" />)}
       <rect x={x - 6} y={MAR - 1300} width={12} height={400} fill="#5a3418" />
-      <Rotulo x={x} y={MAR - 1400} txt="CAPE COAST CASTLE" size={120} />
+      <Rotulo x={x} y={MAR - 1250} txt="CAPE COAST CASTLE" size={120} />
       <Palmera x={x - 1900} y={MAR - 80} s={1.3} t={t} /><Palmera x={x + 1800} y={MAR - 100} s={1.1} t={t} />
     </svg>
   );

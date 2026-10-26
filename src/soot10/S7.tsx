@@ -40,7 +40,7 @@ export const K7: Key[] = [
   [771.7, 20250, 1800, 1.6, 0.6, "seco"],
   [776.1, 20000, 1900, 1.0, 0.9],
   [779.3, 21400, 1600, 0.5, 1.6],
-  [783.0, CC, 1300, 0.55, 1.4],
+  [783.0, CC, 1650, 0.95, 1.4],
   [787.7, CC, 1600, 0.9, 0.9],
   [789.4, LON - 100, 1500, 0.55, 2.0],
   [794.5, LON + 400, 1800, 0.95, 1.0],
@@ -215,7 +215,7 @@ export const O7: React.FC<{ t: number }> = ({ t }) => {
       <S t={668.48} p="whoosh_big" g={-4} />
       <S t={668.7} p="wood_hit" g={-4} />
       <Txt t={t} t0={674.4} t1={677.7} text="REALITY: AVOID THE FIGHT" y={170} size={100} color={C.lima} />
-      <Txt t={t} t0={677.9} t1={680.4} text="THE BLACK FLAG = A MESSAGE" y={170} size={90} />
+      <Txt t={t} t0={677.9} t1={680.4} text="THE BLACK FLAG = A MESSAGE" y={800} size={90} />
       <Txt t={t} t0={691.9} t1={694.7} text="NO POLITE CANNON DUELS" y={170} size={100} color={C.lila} />
       <Txt t={t} t0={697.1} t1={699.1} text="COME IN CLOSE" y={170} size={120} color={C.oro} />
       <Txt t={t} t0={703.6} t1={705.5} text="MUSKETS!" y={170} size={140} color={C.rojo} />
@@ -239,7 +239,7 @@ export const O7: React.FC<{ t: number }> = ({ t }) => {
       <S t={757.4} p="unroll" g={-4} />
       <S t={758.6} p="stamp" g={-8} />
       <Txt t={t} t0={771.8} t1={776.0} text="GRAPESHOT" y={170} size={140} color={C.rojo} />
-      <Txt t={t} t0={779.4} t1={782.9} text="THE PART NOBODY PUTS ON A POSTER" y={170} size={78} color={C.lila} />
+      <Txt t={t} t0={779.4} t1={782.9} text="THE PART NOBODY PUTS ON A POSTER" y={980} size={78} color={C.lila} />
       <Txt t={t} t0={786.6} t1={787.6} text="ON TRIAL" y={170} size={130} />
       <Txt t={t} t0={787.8} t1={789.3} text="52 HANGED" y={170} size={150} color={C.rojo} />
       <S t={787.8} p="boom" g={-6} />

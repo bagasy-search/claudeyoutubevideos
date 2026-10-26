@@ -186,6 +186,7 @@ export const O6: React.FC<{ t: number }> = ({ t }) => {
       <Mapa t={t} t0={601.2} t1={610.4} titulo="FEVER COUNTRY"
         cam={[[601.2, -60, 18, 1.6], [605.0, -40, 14, 1.4], [608.0, -40, 14, 1.5]]}
         pins={[{ lugar: "jamaica", t0: 603.6, txt: "CARIBBEAN", icono: "cruz" }, { lugar: "antigua", t0: 604.0, icono: "cruz" }, { lugar: "nassau", t0: 604.3, icono: "cruz" }, { lugar: "capecoast", t0: 605.0, txt: "WEST AFRICA", icono: "cruz" }, { lugar: "africa", t0: 605.4, icono: "cruz" }]} />
+      {en(t, 601.6, 610.4) && <Persona x={260} y={1100} h={380} t={t} seed={7} ropa={GRUMETE} expr="miedo" bD={70} cD={-40} aparece={601.6} />}
       <S t={601.2} p="unroll" g={-4} />
       {[603.6, 604.0, 604.3, 605.0, 605.4].map((a, i) => <S key={i} t={a} p="stamp" g={-10} pitch={1 + i * 0.05} />)}
       <Txt t={t} t0={606.4} t1={608.2} text="YELLOW FEVER" y={900} size={120} color={C.oro} />

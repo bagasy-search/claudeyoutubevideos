@@ -281,6 +281,7 @@ export const O8: React.FC<{ t: number }> = ({ t }) => {
       <Mapa t={t} t0={848.9} t1={851.6} titulo="CAPE COD · NEW ENGLAND"
         cam={[[848.9, -62, 36, 1.4], [850.8, -69.95, 41.9, 3.2]]}
         pins={[{ lugar: "capecod", t0: 850.6, icono: "x" }]} />
+      {en(t, 849.2, 851.6) && <Persona x={1680} y={1100} h={380} t={t} seed={7} ropa={GRUMETE} expr="feliz" bD={-60} cD={40} aparece={849.2} />}
       <S t={848.9} p="unroll" g={-6} />
       <S t={850.6} p="stamp" g={-8} />
       <Txt t={t} t0={852.8} t1={854.2} text="BROKE APART" y={170} size={150} color={C.rojo} />
