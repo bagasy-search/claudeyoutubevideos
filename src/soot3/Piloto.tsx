@@ -281,29 +281,45 @@ export const Piloto: React.FC = () => {
           <Chip t={t} t0={37.22} text="NEVER COLLECTED" color="#5d5a7a" x={760} y={330} centro size={56} />
         </Escena>
 
-        {/* 010 · así que hoy, VOS te alistás: llega al portón, pluma en la mano, y la ficha se llena con «YOU» */}
-        <Escena t={t} t0={39.22} t1={41.74} entra="corte" golpes={[40.08]}>
+        {/* 010 · así que hoy, VOS te alistás: llega al portón y FIRMA; la ficha se escribe sola (YOU / 17 / 25 YEARS) y cae el sello «½ NEVER CAME HOME» */}
+        <Escena t={t} t0={39.22} t1={41.74} zoom={0.05} entra="corte" golpes={[40.08, 41.08]}>
           <PuertaPretoria t={t} abre={1} guardia={false} dx={(t - 39.2) * 20} />
+          <AbsoluteFill style={{ background: "rgba(27,18,64,.18)" }} />
           {(() => {
-            const x = interpolate(t, [39.22, 39.85], [300, 560], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-            const llega = t > 39.85;
+            const x = interpolate(t, [39.22, 39.7], [420, 700], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+            const llega = t > 39.7;
+            const firma = t > 39.75 && t < 40.95;
+            const garabato = firma ? Math.sin(t * 34) * 9 : 0;
+            const sello = t > 41.08;
             return <>
-              <Persona x={x} y={1060} h={720} t={t} seed={1} casco="legion" giro={llega ? "34" : "perfil"} camina={llega ? 0 : 1.6} expr={t < 40.08 ? "orgullo" : "feliz"}
-                bD={llega ? interpolate(ent(t, 39.85), [0, 1], [30, 150]) : 30} cD={llega ? 20 : 30} agarra={<EnMano.pluma />} agarraAng={llega ? -100 : 40} mira={0.6} salta={40.7} />
-              <Emote t={t} t0={40.7} tipo="brillos" {...L(x, 1060, 720)} s={1.3} />
+              <Persona x={x} y={1060} h={720} t={t} seed={1} casco="legion" giro={llega ? "34" : "perfil"} camina={llega ? 0 : 1.6} expr={sello ? "sorpresa" : t < 40.08 ? "orgullo" : "feliz"} inclina={firma ? 9 : 0}
+                bD={llega ? interpolate(ent(t, 39.7), [0, 1], [30, 88]) + garabato : 30} cD={llega ? 6 + garabato * 0.6 : 30} agarra={<EnMano.pluma />} agarraAng={llega ? -35 + garabato * 2 : 40} mira={0.8} miraY={0.15}
+                reaccion={sello ? "ojos" : undefined} reaccionT0={41.12} />
+              {sello && <Emote t={t} t0={41.12} tipo="sudor" {...L(x, 1060, 720)} s={1.2} />}
             </>;
           })()}
-          {/* ficha de alistamiento colgada en el portón */}
-          <div style={{ position: "absolute", left: 1340, top: 600, width: 640, height: 520, transform: `translate(-50%,-50%) rotate(2deg) scale(${interpolate(t, [39.22, 39.5], [0.85, 1], { extrapolateRight: "clamp" })})`, background: "linear-gradient(180deg,#fbeec8,#f0d9a0)", border: "9px solid #8a5a2a", borderRadius: 22, boxShadow: "16px 18px 0 rgba(20,8,40,.35)", fontFamily, fontWeight: 700, color: "#4a2a10" }}>
+          {/* ficha de alistamiento clavada en el portón: se escribe a mano mientras él firma */}
+          <div style={{ position: "absolute", left: 1330, top: 600, width: 640, height: 520, transform: `translate(-50%,-50%) rotate(2deg) scale(${interpolate(t, [39.22, 39.5], [0.9, 1], { extrapolateRight: "clamp" })})`, background: "linear-gradient(180deg,#fbeec8,#f0d9a0)", border: "9px solid #8a5a2a", borderRadius: 22, boxShadow: "16px 18px 0 rgba(20,8,40,.35)", fontFamily, fontWeight: 700, color: "#4a2a10" }}>
             <div style={{ position: "absolute", top: 22, width: "100%", textAlign: "center", fontSize: 50, color: C.rojo, letterSpacing: 3 }}>LEGION ENLISTMENT</div>
-            {([["NAME", "YOU", 39.6], ["AGE", "18", 40.5], ["TERM", "25 YEARS", 40.9]] as const).map(([k, v, tv], i) => (
-              <div key={k} style={{ position: "absolute", left: 50, right: 50, top: 110 + i * 125, height: 104, borderBottom: "6px dashed #b98a4a", display: "flex", alignItems: "flex-end", gap: 24 }}>
-                <span style={{ fontSize: 40, color: "#8a5a2a", paddingBottom: 10 }}>{k}:</span>
-                {t >= tv && <span style={{ fontSize: i === 0 ? 96 : 64, color: i === 0 ? C.rojo : "#2b3a8f", transform: `scale(${ent(t, tv)})`, transformOrigin: "left bottom", lineHeight: 1 }}>{v}</span>}
-              </div>
-            ))}
+            {([["NAME", "YOU", 39.3, 0.35], ["AGE", "17", 39.8, 0.25], ["TERM", "25 YEARS", 40.2, 0.45]] as const).map(([k, v, tv, dur], i) => {
+              const w = prog(t, tv, tv + dur);
+              return (
+                <div key={k} style={{ position: "absolute", left: 50, right: 50, top: 110 + i * 125, height: 104, borderBottom: "6px dashed #b98a4a", display: "flex", alignItems: "flex-end", gap: 24 }}>
+                  <span style={{ fontSize: 40, color: "#8a5a2a", paddingBottom: 10 }}>{k}:</span>
+                  {w > 0 && <span style={{ fontSize: i === 0 ? 96 : 76, color: i === 0 ? C.rojo : "#2b3a8f", lineHeight: 1, display: "inline-block", transform: "rotate(-3deg)", clipPath: `inset(-20% ${100 - w * 100}% -20% 0)` }}>{v}</span>}
+                </div>
+              );
+            })}
           </div>
-          <Chip t={t} t0={40.9} text="JOIN THE LEGION" color={C.violeta} x={1340} y={210} centro size={56} />
+          {/* sello «½ NEVER CAME HOME» que cae sobre la ficha (cierra el loop del plano anterior) */}
+          {t > 41.08 && (() => {
+            const k = Math.min(1, (t - 41.08) / 0.14);
+            return <div style={{ position: "absolute", left: 1500, top: 850, transform: `translate(-50%,-50%) rotate(-9deg) scale(${2.3 - 1.3 * k})`, opacity: k, fontFamily, fontWeight: 700, color: C.rojo, border: `10px solid ${C.rojo}`, borderRadius: 22, padding: "6px 26px", background: "rgba(255,240,220,.55)", display: "flex", alignItems: "center", gap: 20, whiteSpace: "nowrap" }}>
+              <span style={{ fontSize: 110, lineHeight: 1 }}>½</span><span style={{ fontSize: 50, lineHeight: 1.05 }}>NEVER<br />CAME HOME</span>
+            </div>;
+          })()}
+          <Chip t={t} t0={39.3} text="SO TODAY..." color={C.violeta} x={700} y={190} centro size={56} t1={40.0} />
+          <Chip t={t} t0={40.08} text="YOU JOIN" color={C.rojo} x={700} y={190} centro size={70} />
         </Escena>
         {/* 011 · tu carrera entera, paso a paso: de perfil por la ruta, los mojones son los años */}
         <Escena t={t} t0={41.74} t1={45.0} zoom={0.04} entra="corte">

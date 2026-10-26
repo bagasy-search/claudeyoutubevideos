@@ -367,10 +367,10 @@ export const Persona: React.FC<Props> = (p) => {
               {/* mandíbula al piso */}
               {rx === "mandibula" && !sombra && (() => {
                 const j = Math.min(1.12, Math.max(0, 1 - Math.exp(-rt * 6) * Math.cos(rt * 13)));
-                const largo = 26 + j * 330, x0 = giro === "perfil" ? 40 : fx * 0.95;
+                const largo = 26 + j * 150, x0 = giro === "perfil" ? 40 : fx * 0.95;
                 return (
                   <g transform={`translate(${x0} 0)`}>
-                    <rect x={-36} y={-404} width={72} height={largo} rx={30} fill="#5a1a22" />
+                    <rect x={-44} y={-404} width={88} height={largo} rx={40} fill="#5a1a22" />
                     <rect x={-30} y={-402} width={60} height={12} rx={4} fill="#fff" />
                     <ellipse cx={0} cy={-404 + largo - 22} rx={26} ry={16} fill="#e8586a" />
                     <rect x={-30} y={-404 + largo - 12} width={60} height={10} rx={4} fill="#fff" />

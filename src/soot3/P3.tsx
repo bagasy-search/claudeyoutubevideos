@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
-import { Persona, CENTURION } from "./persona";
+import { Persona, CENTURION, CIVIL } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Cielo, Estrellas, Astro, Colinas, Chip, Grande, MapaPuntos, Tienda, Zzz, Particulas, Emote, cabeza } from "./kit";
 import { Gladius, Escudo, Pilum, Casco, Armadura, Item, Mula, Fuerte, Muro, Arco, Soldadito, Calor } from "./kit2";
 import { Cuenta } from "./P1";
@@ -88,7 +88,7 @@ const FURCA: [number, Carga, string][] = [
   [273.54, "olla", "POT"], [274.46, "sierra", "SAW"], [275.2, "cesta", "BASKET"], [276.82, "pico", "PICKAXE"], [277.72, "hoz", "SICKLE"],
   [278.72, "saco", "CLOTHES"], [280.22, "cadena", "CHAIN"], [281.54, "estaca", "2 STAKES"], [283.32, "grano", "GRAIN"],
 ];
-const Furca: React.FC<{ t: number; x0: number; y0: number; ang: number; len: number; items: [number, Carga, string][]; paso?: number; s?: number; d0?: number; etiquetas?: boolean }> = ({ t, x0, y0, ang, len, items, paso = 145, s = 0.6, d0 = 260, etiquetas }) => {
+const Furca: React.FC<{ t: number; x0: number; y0: number; ang: number; len: number; items: [number, Carga, string][]; paso?: number; s?: number; d0?: number; etiquetas?: boolean; racimo?: boolean }> = ({ t, x0, y0, ang, len, items, paso = 145, s = 0.6, d0 = 260, etiquetas, racimo }) => {
   const a = (ang * Math.PI) / 180;
   return (
     <>
@@ -96,14 +96,16 @@ const Furca: React.FC<{ t: number; x0: number; y0: number; ang: number; len: num
       {items.map(([t0, k, lab], i) => {
         if (t < t0 - 0.3) return null;
         const cae = prog(t, t0 - 0.3, t0);
-        const d = d0 + i * paso;
+        // racimo: 3 columnas al final del palo y cada fila cuelga debajo de la anterior (amontonado)
+        const d = racimo ? d0 + (i % 3) * paso : d0 + i * paso;
+        const cuelga = racimo ? Math.floor(i / 3) * 92 : 0;
         const px = x0 + d * Math.cos(a), py = y0 + d * Math.sin(a);
-        if (cae < 1) return <Item key={k} k={k} x={px} y={interpolate(cae, [0, 1], [-260, py + 88])} s={s} />;
+        if (cae < 1) return <Item key={k} k={k} x={px} y={interpolate(cae, [0, 1], [-260, py + 88 + cuelga])} s={s} />;
         const sw = Math.sin((t - t0) * 7 + i) * 10 * Math.exp(-(t - t0) * 0.9) + Math.sin(t * 4 + i) * 2;
         return (
           <div key={k} style={{ position: "absolute", inset: 0, transform: `rotate(${sw}deg)`, transformOrigin: `${px}px ${py}px` }}>
-            <div style={{ position: "absolute", left: px - 3, top: py, width: 6, height: 30, background: "#5a3418" }} />
-            <Item k={k} x={px} y={py + 88} s={s} />
+            <div style={{ position: "absolute", left: px - 3, top: py, width: 6, height: 30 + cuelga, background: "#5a3418" }} />
+            <Item k={k} x={px} y={py + 88 + cuelga} s={s} />
             {etiquetas && <div style={{ position: "absolute", left: px - 110, width: 220, top: py + 150 + (i % 2) * 46, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 34, color: "#fff", WebkitTextStroke: "7px #2a1530", paintOrder: "stroke fill" }}>{lab}</div>}
           </div>
         );
@@ -121,14 +123,27 @@ const Carga: React.FC<{ f: number; x: number; y: number; txt?: string }> = ({ f,
   </div>
 );
 // persona con el palo al hombro (coordenadas del palo derivadas de la cabeza)
-const ConFurca: React.FC<{ t: number; x: number; y: number; h: number; n: number; items: [number, Carga, string][]; len: number; paso?: number; d0?: number; s?: number; etiquetas?: boolean; expr?: React.ComponentProps<typeof Persona>["expr"]; camina?: number; inclina?: number; seed?: number }> = ({ t, x, y, h, n, items, len, paso, d0, s, etiquetas, expr = "neutro", camina = 0, inclina = 0, seed = 1 }) => {
+const ConFurca: React.FC<{ t: number; x: number; y: number; h: number; n: number; items: [number, Carga, string][]; len: number; paso?: number; d0?: number; s?: number; etiquetas?: boolean; expr?: React.ComponentProps<typeof Persona>["expr"]; camina?: number; inclina?: number; seed?: number; racimo?: boolean; agacha?: boolean }> = ({ t, x, y, h, n, items, len, paso, d0, s, etiquetas, expr = "neutro", camina = 0, inclina = 0, seed = 1, racimo, agacha }) => {
   const S = h / 560;
-  const x0 = x - 10 * S, y0 = y - 318 * S + n * 4;
+  // cada cosa que se cuelga lo hunde un poco (rebote que decae); con la carga pesada se dobla de rodillas
+  const dip = items.reduce((a, [tt]) => a + (t > tt ? Math.sin(Math.min(1, (t - tt) / 0.35) * Math.PI) * Math.exp(-(t - tt) * 3) * 22 : 0), 0);
+  const yy = y + n * 4 + dip;
+  const x0 = x - 10 * S + (agacha ? 18 * S : 0), y0 = yy - 318 * S + (agacha ? 92 * S : 0);
   return <>
-    <Persona x={x} y={y + n * 4} h={h} t={t} seed={seed} casco="legion" giro="34" expr={expr} camina={camina} inclina={inclina} bD={115} cD={85} />
-    <Furca t={t} x0={x0} y0={y0} ang={-7 + n * 1.1} len={len} items={items} paso={paso} d0={d0} s={s} etiquetas={etiquetas} />
+    <Persona x={x} y={yy} h={h} t={t} seed={seed} casco="legion" giro="34" expr={expr} camina={agacha ? 0 : camina} inclina={inclina} bD={115} cD={85} postura={agacha ? "agachado" : "parado"} />
+    <Furca t={t} x0={x0} y0={y0} ang={-7 + n * 1.1} len={len} items={items} paso={paso} d0={d0} s={s} etiquetas={etiquetas && !racimo} racimo={racimo} />
   </>;
 };
+// lista de lo que lleva colgado (cada renglón entra con su tilde cuando cae la cosa)
+const ListaCarga: React.FC<{ t: number; items: [number, Carga, string][]; x: number; y: number }> = ({ t, items, x, y }) => (
+  <>
+    {items.map(([t0, , lab], i) => {
+      if (t < t0) return null;
+      const e = ent(t, t0), nuevo = t - t0 < 0.9;
+      return <div key={lab} style={{ position: "absolute", left: x + Math.floor(i / 5) * 290, top: y + (i % 5) * 58, transform: `scale(${e})`, transformOrigin: "0 50%", fontFamily, fontWeight: 700, fontSize: nuevo ? 44 : 38, color: nuevo ? C.ambar : "#fff", WebkitTextStroke: "7px #2a1530", paintOrder: "stroke fill", whiteSpace: "nowrap" }}>✓ {lab}</div>;
+    })}
+  </>
+);
 
 export const P3: React.FC<{ t: number }> = ({ t }) => (
   <>
@@ -162,12 +177,13 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
       <PlazaArmas t={t} dx={(t - 258) * 12} />
       {(() => {
         const h = 680, x = 560, y = 1000, c = L(x, y, h), s = c.s;
-        const PZ: [number, number, string][] = [[258.48, 2, "HELMET"], [259.32, 9, "ARMOR ALONE"], [263.62, 8, "SHIELD"], [265.9, 4, "2 JAVELINS"], [267.04, 1.5, "SWORD"], [267.94, 0.8, "DAGGER"]];
+        // [se calza, kg, etiqueta, empieza a pesarse]: la armadura cuelga del intendente mientras sube la aguja y DESPUÉS vuela y se calza
+        const PZ: [number, number, string, number][] = [[258.48, 2, "HELMET", 258.13], [260.26, 9, "ARMOR ALONE", 259.32], [263.62, 8, "SHIELD", 263.27], [265.9, 4, "2 JAVELINS", 265.55], [267.04, 1.5, "SWORD", 266.69], [267.94, 0.8, "DAGGER", 267.59]];
         const T = PZ.map((p) => p[0]);
         let iz = -1;
-        PZ.forEach(([tt], i) => { if (t > tt - 0.35) iz = i; });
+        PZ.forEach(([, , , tw], i) => { if (t > tw) iz = i; });
         const prev = iz > 0 ? PZ[iz - 1][1] : 0;
-        const kgP = iz < 0 ? 0 : prev + (PZ[iz][1] - prev) * prog(t, PZ[iz][0] - 0.35, PZ[iz][0]);
+        const kgP = iz < 0 ? 0 : prev + (PZ[iz][1] - prev) * prog(t, PZ[iz][3], PZ[iz][3] + 0.4);
         const total = PZ.reduce((a, [tt, k]) => a + (t > tt ? k : 0), 0);
         const ox = 1330, oy = 560;
         const vuela = (t0: number, tx: number, ty: number) => { const k = prog(t, t0 - 0.35, t0); return { x: interpolate(k, [0, 1], [ox, tx]), y: interpolate(k, [0, 1], [oy, ty]) - Math.sin(k * Math.PI) * 160 }; };
@@ -179,20 +195,25 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
         const golpe = T.reduce((a, tt) => a + (t > tt ? Math.exp(-(t - tt) * 8) : 0), 0);
         const conEsc = t > 263.62, conPila = t > 265.9;
         return <>
-          <Persona x={1440} y={980} h={600} t={t} seed={9} ropa={INTENDENTE} casco="no" viejo flip giro="34" expr="orgullo" {...(tiro ? pose("lanzar", t - (tiro - 0.85)) : { bD: 20, bI: 15 })} />
-          <Persona x={x} y={y + total * 1.2 + golpe * 10} h={h} t={t} seed={1} casco={t > 259.32 ? "legion" : "no"} expr={total > 18 ? "miedo" : total > 8 ? "neutro" : "orgullo"}
+          <Balanza kg={kgP} x={1000} y={330} lab={iz >= 0 ? PZ[iz][2] : "EMPTY"} />
+          {t > 265.9 && <Marcador x={1000} y={640} txt={`TOTAL: ${total.toFixed(1)} KG`} color={C.rojo} size={44} />}
+          <Persona x={1440} y={980} h={600} t={t} seed={9} ropa={INTENDENTE} casco="no" viejo flip giro="34" expr="orgullo" {...(t > 259.32 && t < 259.75 ? { bD: 160, cD: 15, bI: 160, cI: 15 } : tiro ? pose("lanzar", t - (tiro - 0.85)) : { bD: 20, bI: 15 })} />
+          <Persona x={x} y={y + total * 1.2 + golpe * 10} h={h} t={t} seed={1} casco={t > 260.26 ? "legion" : "no"} giro="34" expr={total > 18 ? "miedo" : total > 8 ? "neutro" : "orgullo"}
             reaccion={t > 260.26 && t < 263.0 ? "ojos" : undefined} reaccionT0={260.26} inclina={total * 0.3}
             bD={conPila ? 30 : 40 - Math.min(total, 20)} cD={conPila ? 60 : 40} bI={conEsc ? 35 : 40} cI={conEsc ? 50 : 30}
             agarraI={conEsc ? <EnMano.escudo /> : undefined} agarraAngI={0} agarra={conPila ? <EnMano.lanza /> : undefined} agarraAng={-80} />
-          {t > 258.13 && t < 259.32 && <Casco x={casco.x} y={casco.y} s={0.8} />}
-          {t > 258.97 && t < 259.32 && (() => { const k = prog(t, 258.97, 259.32); return <Armadura x={interpolate(k, [0, 1], [ox, c.x])} y={interpolate(k, [0, 1], [oy, c.y + 200 * s]) - Math.sin(k * Math.PI) * 160} s={interpolate(k, [0, 1], [0.6, 0.42 * s])} />; })()}
+          {t > 258.13 && t < 260.26 && <Casco x={casco.x} y={casco.y} s={0.8} />}
+          {t > 259.32 && t < 260.26 && (() => {
+            // la levanta (se balancea pesándose) y a los 259,9 la tira: se calza al pecho con el golpe de 260,26
+            const k = prog(t, 259.75, 260.26), alza = prog(t, 259.32, 259.55);
+            const hx = 1420 + Math.sin(t * 9) * 12 * (1 - k), hy = oy - 230 * alza;
+            return <Armadura x={interpolate(k, [0, 1], [hx, c.x])} y={interpolate(k, [0, 1], [hy, c.y + 200 * s]) + Math.sin(k * Math.PI) * 150} s={interpolate(k, [0, 1], [0.6, 0.42 * s])} rot={interpolate(k, [0, 1], [Math.sin(t * 9) * 6, 0]) + Math.sin(k * Math.PI) * -25} />;
+          })()}
           {t > 263.27 && !conEsc && <Escudo x={esc.x} y={esc.y - 60} s={0.75 * s} rot={-4} />}
           {t > 265.55 && !conPila && [0, 1].map((i) => <Pilum key={i} x={p1.x + i * 24} y={p1.y + i * 20} s={0.85} rot={-74} />)}
           {t > 266.69 && <Gladius x={gl.x} y={gl.y} s={0.55} rot={170} />}
           {t > 267.94 && <Gladius x={x + 60 * s} y={c.y + 470 * s} s={0.32} rot={190} t={t} t0={267.94} />}
           {golpe > 0.3 && <Fogonazo x={c.x + 40} y={c.y + 220 * s} k={1 - golpe} s={0.8} />}
-          <Balanza kg={kgP} x={1000} y={330} lab={iz >= 0 ? PZ[iz][2] : "EMPTY"} />
-          {t > 265.9 && <Marcador x={1000} y={640} txt={`TOTAL: ${total.toFixed(1)} KG`} color={C.rojo} size={44} />}
           <Emote t={t} t0={265.0} tipo="sudor" {...c} s={1.3} />
         </>;
       })()}
@@ -227,11 +248,12 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 074-075 · en el palo al hombro: olla, sierra, cesta, pico, hoz, bolso de ropa — cada cosa cae con su etiqueta */}
     <Escena t={t} t0={270.3} t1={279.76} zoom={0.03} entra="corte" golpes={[270.8, 273.54, 274.46, 275.2, 276.82, 277.72, 278.72]}>
-      <Ruta t={t} hora="dia" verde={false} avance={(t - 270) * 70} />
+      <Ruta t={t} hora="dia" verde={false} avance={(Math.min(t, 278.72) - 270) * 70} />
       {(() => {
         const n = FURCA.filter(([tt]) => t > tt).length;
         return <>
-          <ConFurca t={t} x={420} y={975} h={580} paso={100} d0={190} s={0.5} n={n} items={FURCA.slice(0, 6)} len={1130} etiquetas expr={n > 3 ? "miedo" : n > 0 ? "neutro" : "orgullo"} camina={0.7} inclina={3 + n * 1.1} />
+          <ConFurca t={t} x={420} y={975} h={580} paso={125} d0={320} s={0.62} n={n} items={FURCA.slice(0, 6)} len={640} racimo agacha={n >= 6} expr={n > 3 ? "miedo" : n > 0 ? "neutro" : "orgullo"} camina={0.7} inclina={3 + n * 1.1} />
+          <ListaCarga t={t} items={FURCA} x={1240} y={210} />
           <Emote t={t} t0={277.0} tipo="sudor" {...L(420, 975, 580)} s={1.1} />
           <Carga f={n / 9} x={1220} y={110} />
         </>;
@@ -244,13 +266,14 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 076 · cadena, dos estacas y varios días de grano: el palo se comba, la carga llega al rojo */}
     <Escena t={t} t0={279.76} t1={284.34} zoom={0.04} entra="corte" golpes={[280.22, 281.54, 283.32]}>
-      <Ruta t={t} hora="tarde" verde={false} avance={(t - 270) * 70} />
+      <Ruta t={t} hora="tarde" verde={false} avance={(Math.min(t, 278.72) - 270) * 70} />
       {(() => {
         const n = FURCA.filter(([tt]) => t > tt).length;
         return <>
-          <ConFurca t={t} x={420} y={975} h={580} paso={100} d0={190} s={0.5} n={n} items={FURCA} len={1130} etiquetas expr="miedo" camina={0.5} inclina={3 + n * 1.1} />
-          <Emote t={t} t0={280.4} tipo="sudor" {...L(420, 1010, 580)} s={1.1} />
-          {t > 283.32 && <Emote t={t} t0={283.4} tipo="susto" {...L(420, 1011, 580)} s={1.1} />}
+          <ConFurca t={t} x={420} y={975} h={580} paso={125} d0={320} s={0.62} n={n} items={FURCA} len={640} racimo agacha={n >= 6} expr="miedo" camina={0.5} inclina={3 + n * 1.1} />
+          <ListaCarga t={t} items={FURCA} x={1240} y={210} />
+          <Emote t={t} t0={280.4} tipo="sudor" {...L(430, 1010 + 95 + n * 4, 580)} s={1.1} />
+          {t > 283.32 && <Emote t={t} t0={283.4} tipo="susto" {...L(430, 1011 + 95 + n * 4, 580)} s={1.1} />}
           <Carga f={n / 9} x={1220} y={110} txt={n >= 9 ? "FULL" : "LOAD"} />
         </>;
       })()}
@@ -371,21 +394,23 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
       </div>
       {(() => {
         const llega = prog(t, 309.3, 309.75);
-        const sentado = t > 309.75 && t < 311.05;
+        const sentado = t > 309.75 && t < 311.2;
         const px = interpolate(llega, [0, 1], [520, 700]);
-        const cx = interpolate(prog(t, 309.8, 310.8), [0, 1], [1700, 1060]);
-        const tiene = t > 311.05, cava = t > 312.0;
+        // el centurión entra ENTERO, se le planta delante y le clava la pala en la mano (310,45): de sonrisa a derretido
+        const cx = interpolate(prog(t, 309.3, 309.95), [0, 1], [1320, 1010]);
+        const tiene = t > 310.45, cava = t > 312.0;
         const P = cava ? pose("cavar", t, 1.4) : tiene ? { bD: 60, cD: 50, bI: 20, cI: 20, inclina: 0 } : { bD: 20, cD: 10, bI: 20, cI: 10, inclina: 0 };
         return <>
           <Banco x={720} y={985} w={230} piedra />
           <Persona x={px} y={985} h={540} t={t} seed={1} casco="legion" giro="34" postura={sentado ? "sentado" : "parado"} expr={cava ? "triste" : sentado ? "feliz" : "neutro"} camina={llega < 1 ? 1.4 : 0}
-            reaccion={tiene && !cava ? "mandibula" : undefined} reaccionT0={311.05} {...P}
+            reaccion={tiene && !cava ? "derrite" : undefined} reaccionT0={310.45} {...P}
             agarra={tiene ? <EnMano.pala /> : undefined} agarraAng={cava ? 75 + Math.sin(t * Math.PI * 2 * 1.4) * 20 : 95} />
-          {sentado && <Zzz x={820} y={520} t={t} />}
-          <Persona x={cx} y={985} h={600} t={t} seed={7} ropa={CENTURION} casco="centurion" giro="34" flip expr="enojado" camina={t > 309.8 && t < 310.8 ? 1.5 : 0}
-            bD={t > 310.7 && t < 311.1 ? 85 : t > 311.1 ? 100 : 30} cD={t > 311.1 ? 10 : 50} bI={30} cI={40}
-            agarra={t < 311.05 ? <EnMano.pala /> : undefined} agarraAng={t > 310.7 ? 70 : -80} />
-          {t > 311.05 && t < 311.4 && <Fogonazo x={880} y={760} k={prog(t, 311.05, 311.4)} s={0.6} />}
+          {sentado && !tiene && <Zzz x={560} y={430} t={t} />}
+          <Persona x={cx} y={985} h={600} t={t} seed={7} ropa={CENTURION} casco="centurion" giro="34" flip expr="enojado" camina={t < 309.95 ? 1.5 : 0} inclina={t > 309.95 && t < 310.6 ? 10 : 0}
+            bD={t > 309.95 && t < 310.5 ? interpolate(prog(t, 309.95, 310.4), [0, 1], [40, 95]) : t >= 310.5 ? 60 : 30} cD={t >= 310.5 ? 30 : 15} bI={t > 310.5 ? 60 : 30} cI={t > 310.5 ? 80 : 40}
+            agarra={t < 310.45 ? <EnMano.pala /> : undefined} agarraAng={t > 309.95 ? 80 : -80} />
+          {t > 310.45 && t < 310.8 && <Fogonazo x={830} y={790} k={prog(t, 310.45, 310.8)} s={0.6} />}
+          {t > 310.45 && t < 311.6 && <Emote t={t} t0={310.5} tipo="sudor" {...L(px, 985 + 66, 540)} s={1} />}
         </>;
       })()}
       <Particulas t={t} tipo="brasas" n={24} seed={91} />
@@ -457,19 +482,46 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
     {/* 088 · ocho soldados en una carpa, todas las noches, 25 años: por dentro, sentados codo a codo y dormidos; uno cabecea y arrastra a todos */}
     <Escena t={t} t0={328.94} t1={333.06} entra="zoom" golpes={[329.92, 331.6]}>
       <CarpaInterior t={t} />
-      <Banco x={960} y={975} w={1380} />
-      {Array.from({ length: 8 }, (_, i) => {
-        const x = 400 + i * 160, yo = i === 3;
-        const domino = prog(t, 331.7 + Math.abs(i - 3) * 0.09, 331.95 + Math.abs(i - 3) * 0.09);
-        const lado = i < 3 ? -1 : 1;
-        return <Persona key={i} x={x} y={975} h={430} t={t + i * 0.4} seed={yo ? 1 : 140 + i} casco={yo ? "legion" : "no"} postura="sentado" giro={i % 3 === 1 ? "34" : "frente"} flip={i > 3}
-          expr={yo && t > 331.7 ? "sorpresa" : "dormido"} ladea={(i % 2 ? 9 : -9) + domino * 26 * lado} inclina={domino * 8 * lado} bI={10} bD={10} />;
-      })}
-      <Zzz x={1300} y={520} t={t} />
-      <Zzz x={560} y={540} t={t + 0.7} />
+      {(() => {
+        // cuchetas de 2 pisos al frente: 8 acostados, cada uno distinto; el de al lado de Lucius ronca y él no pega un ojo
+        const cols = [250, 720, 1200, 1670], pisos = [585, 935], hh = 300;
+        const ropas = [CIVIL(0), CIVIL(1), CIVIL(2), CIVIL(3), CIVIL(4), CIVIL(6), CIVIL(7)];
+        const mantas = ["#7a4a8a", "#3f7a6a", "#c08a2a", "#4a6a9a", "#a83a5a", "#8a6a3a", "#b8432f", "#5c8f3e"];
+        const ronca = 5, yo = 6; // abajo: col 1 ronca, col 2 es Lucius
+        const fuerte = 0.5 + 0.5 * Math.sin(t * Math.PI * 2 * 0.9);
+        return <>
+          {cols.map((cx, c) => <React.Fragment key={c}>
+            {[-1, 1].map((sd) => <div key={sd} style={{ position: "absolute", left: cx + sd * 205 - 14, top: 430, width: 28, height: 650, borderRadius: 8, background: "#5a3418", boxShadow: "inset -6px 0 0 #3a2010" }} />)}
+          </React.Fragment>)}
+          {pisos.map((ym, f) => cols.map((cx, c) => {
+            const k = f * 4 + c, esYo = k === yo, esRonca = k === ronca;
+            const cy = ym - 52, px = cx + 10, py = cy + hh / 2;
+            const vuelta = esYo && t > 331.6 ? Math.sin(Math.min(1, (t - 331.6) * 3) * Math.PI) * 8 : 0;
+            const sube = esRonca ? fuerte * 5 : Math.sin(t * 2 + k) * 2;
+            return <React.Fragment key={k}>
+              <div style={{ position: "absolute", left: cx - 210, top: ym, width: 420, height: 30, borderRadius: 8, background: "#e8d4a8", borderBottom: "14px solid #6b3a1f" }} />
+              <div style={{ position: "absolute", left: cx - 196, top: ym - 46, width: 96, height: 50, borderRadius: 22, background: "#f6ead0", border: "4px solid #d8c49a" }} />
+              <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `rotate(${-90 + vuelta}deg)`, transformOrigin: `${px}px ${cy}px` }}>
+                <Persona x={px} y={py} h={hh} t={esYo ? t : t + k * 0.37} seed={esYo ? 1 : 150 + k} ropa={esYo ? undefined : ropas[k % ropas.length]} casco={esYo ? "legion" : "no"} viejo={k === 3}
+                  expr={esYo ? (t > 331.6 ? "enojado" : "triste") : "dormido"} habla={esRonca} plano bI={8} bD={8} cI={10} cD={10}
+                  reaccion={esYo ? "ojos" : undefined} reaccionT0={331.6} />
+              </div>
+              <div style={{ position: "absolute", left: cx - 50, top: ym - 68 - sube, width: 245, height: 72 + sube, borderRadius: "26px 30px 6px 6px", background: mantas[k], boxShadow: "inset 0 -10px 0 rgba(0,0,0,.18)" }} />
+              {esRonca && <>
+                <div style={{ position: "absolute", left: 0, top: 0, transformOrigin: `${cx - 150}px ${ym - 160}px`, transform: `scale(${1.5 + fuerte * 0.4})` }}><Zzz x={cx - 150} y={ym - 230} t={t} /></div>
+                {[0, 1, 2].map((w) => <div key={w} style={{ position: "absolute", left: cx - 60 + w * 34, top: ym - 150 - w * 14, width: 26 + w * 10, height: 50 + w * 22, borderRight: `9px solid rgba(255,250,230,${0.4 + 0.6 * fuerte})`, borderRadius: "50%" }} />)}
+              </>}
+              {esYo && t > 331.6 && <Emote t={t} t0={331.65} tipo="enojo" x={cx - 140} y={ym - 140} s={0.9} />}
+            </React.Fragment>;
+          }))}
+        </>;
+      })()}
       <Grande t={t} t0={329.08} text="8 IN ONE TENT" y={150} size={110} color="#fff" />
-      <Chip t={t} t0={331.6} text="x 9,125 NIGHTS" color={C.violeta} x={160} y={280} size={54} />
-      <Cuenta t={t} t0={331.6} t1={332.2} de={1} a={25} x={1560} y={320} size={120} color={C.oro} suf=" YRS" />
+      {t > 329.9 && (() => {
+        const v = Math.round(1 + 9124 * Math.pow(prog(t, 329.9, 332.4), 2.2));
+        return <div style={{ position: "absolute", left: 960, top: 300, transform: `translate(-50%,-50%) scale(${ent(t, 329.9)})`, padding: "8px 30px", borderRadius: 20, background: "#2a1530", border: "6px solid #fff", fontFamily, fontWeight: 700, fontSize: 64, color: C.oro, whiteSpace: "nowrap" }}>NIGHT {v.toLocaleString("en-US")}</div>;
+      })()}
+      <Chip t={t} t0={332.2} text="= 25 YEARS" color={C.violeta} x={1290} y={268} size={50} />
     </Escena>
 
     {/* 089 · a la mañana desarmás todo y lo hacés de nuevo (timelapse de 3 días) */}

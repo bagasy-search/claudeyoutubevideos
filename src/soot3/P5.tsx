@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona, CIVIL, LUCIUS, Ropa } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Chip, Grande, MapaPuntos, Rayos, Emote, cabeza, Pan, lugar } from "./kit";
-import { Gladius, Comida, Soldadito, Craneo, Calor, Mula } from "./kit2";
+import { Gladius, Comida, Soldadito, Craneo, Calor, Mula, Casco } from "./kit2";
 import { Cuenta } from "./P1";
 import { Campamento, CarpaInterior, PlazaArmas, PuertaPretoria, Valle, Interior, Ruta, Campo, Tablero, Multitud, EnMano, pose } from "./kit3";
 
@@ -210,13 +210,20 @@ const Saco: React.FC<{ x: number; y: number; s?: number }> = ({ x, y, s = 1 }) =
   </svg>
 );
 // protagonista al pie del mapa: de 3/4 mirando el mapa, con la mano en la boca; al remate, reacción
-const Testigo: React.FC<{ t: number; tReac?: number; x?: number }> = ({ t, tReac, x = 250 }) => (
-  <>
-    <div style={{ position: "absolute", left: x - 230, top: PISO + 10, width: 460, height: 90, borderRadius: "50%", background: "#3a2a78", boxShadow: "0 -6px 0 #5b48a8 inset" }} />
-    <Persona x={x} y={PISO + 40} h={480} t={t} seed={1} casco="legion" giro="34" expr="miedo" mira={0.6} miraY={-0.3}
-      bD={140 + Math.sin(t * 2.4) * 4} cD={140} bI={25} cI={70} reaccion={tReac !== undefined ? "mandibula" : undefined} reaccionT0={tReac} />
-  </>
-);
+// v5: entero (x 330), SEÑALA el mapa y da un salto («ojos») cada vez que un arco llega a un fuerte; el último es «susto».
+// modo "tiembla": la 2ª vez que aparece (9:56-9:59) ya no señala: se agarra la cabeza y tiembla (pose distinta).
+const Testigo: React.FC<{ t: number; llegadas?: number[]; susto?: number; x?: number; modo?: "senala" | "tiembla" }> = ({ t, llegadas = [], susto, x = 330, modo = "senala" }) => {
+  const ult = llegadas.filter((a) => t >= a).pop();
+  const enSusto = susto !== undefined && t >= susto;
+  const base = modo === "tiembla" ? pose("temblar", t) : { bD: 100 + Math.sin(t * 3) * 6, cD: 12, bI: 22, cI: 40 };
+  return (
+    <>
+      <div style={{ position: "absolute", left: x - 230, top: PISO + 10, width: 460, height: 90, borderRadius: "50%", background: "#3a2a78", boxShadow: "0 -6px 0 #5b48a8 inset" }} />
+      <Persona x={x} y={PISO + 40} h={480} t={t} seed={1} casco="legion" giro="34" expr={ult !== undefined ? "sorpresa" : "miedo"} mira={0.8} miraY={-0.4}
+        {...base} reaccion={enSusto ? "susto" : ult !== undefined ? "ojos" : undefined} reaccionT0={enSusto ? susto : ult} />
+    </>
+  );
+};
 // cuerpo caído: la persona gira sobre los pies hacia atrás (k 0-1)
 const Cae: React.FC<{ x: number; y: number; k: number; lado?: number; children: React.ReactNode }> = ({ x, y, k, lado = -1, children }) => (
   <div style={{ position: "absolute", inset: 0, transform: `rotate(${lado * 84 * k}deg)`, transformOrigin: `${x}px ${y - 20}px` }}>{children}</div>
@@ -388,7 +395,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
             agarra={tiene(1) ? <EnMano.esponja /> : undefined} agarraAng={-60} />
           <Persona x={1240} y={PIE} h={H_LET + 20} t={t} seed={1} casco="legion" postura="sentado" giro="34" flip expr={tiene(2) ? "miedo" : t > 577.98 ? "sorpresa" : "neutro"} mira={0.8} bI={14} cI={30}
             {...(tiene(2) ? { bD: 70, cD: 10 } : { bD: 14, cD: 30 })} agarra={tiene(2) ? <EnMano.esponja /> : undefined} agarraAng={-40}
-            reaccion={tiene(2) ? "mandibula" : undefined} reaccionT0={579.95} />
+            reaccion={tiene(2) ? "ojos" : undefined} reaccionT0={579.95} />
           {vuela && <svg style={{ position: "absolute", left: vuela[0] - 120, top: 470 - Math.sin(vuela[1] * Math.PI) * 120, overflow: "visible" }} width={10} height={10}>
             <g transform={`rotate(${-70 + vuela[1] * 360})`}><EnMano.esponja /></g>
           </svg>}
@@ -418,7 +425,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={585.1} t1={591.2} zoom={0.02} entra="corte" golpes={[585.96, 588.7, 590.51]}>
       <MapaPuntos t={t} desde="SYRIA" brillo="#7ad45a" pulsa={["SYRIA"]} t0Pulsa={588.7} />
       <Arcos t={t} desde="SYRIA" rutas={[{ a: "ROME", t0: 589.0 }, { a: "DANUBE", t0: 589.4 }, { a: "GAUL", t0: 589.8 }]} />
-      <Testigo t={t} tReac={590.55} />
+      <Testigo t={t} llegadas={[589.7, 590.1]} susto={590.5} />
       <Cuenta t={t} t0={585.96} t1={586.6} de={100} a={165} x={1460} y={200} size={150} color="#fff" pre="AD " />
       <Chip t={t} t0={588.7} text="FROM THE EAST" color={C.violeta} x={160} y={140} size={56} />
       <Virus t={t} t0={590.4} x={1720} y={420} r={100} />
@@ -450,22 +457,28 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
         ? <>
           <MapaPuntos t={t} desde="SYRIA" brillo="#7ad45a" />
           <Arcos t={t} desde="SYRIA" previas={["ROME", "DANUBE", "GAUL"]} rutas={[{ a: "EGYPT", t0: 596.2 }, { a: "BRITAIN", t0: 597.4 }, { a: "SPAIN", t0: 598.0 }, { a: "AFRICA", t0: 598.5 }]} />
-          <Testigo t={t} />
+          <Testigo t={t} modo="tiembla" llegadas={[596.9, 598.1, 598.7, 599.2]} />
         </>
         : (() => {
-          const nube = 300 + 260 * (t - 599.25);
+          const nube = 470 + 250 * (t - 599.25);
           const av = (t - 599.25) * 60;
           return <>
             <Ruta t={t} hora="tarde" avance={av * 2} />
             {Array.from({ length: 6 }, (_, i) => {
               const x = 620 + i * 150 + av;
-              const tc = 599.25 + (70 + i * 150) / 200;
+              const tc = 599.25 + (90 + i * 150) / 190;
               const k = prog(t, tc, tc + 0.35);
+              const tos = t > tc - 0.45 && t < tc + 0.1; // tose justo antes de caer
+              const hc = L(x, 950, 360);
               const r = enfermando(k > 0 ? 0.8 : 0, { ...LUCIUS, tunica: ["#d8443a", "#c83a3a", "#b8362f"][i % 3], piel: CIVIL(i + 3).piel, piel2: CIVIL(i + 3).piel2 });
-              return <Cae key={i} x={x} y={950} k={k}>
-                <Persona x={x} y={950} h={360} t={t + i * 0.13} seed={210 + i} casco="legion" ropa={r} giro="perfil" camina={k > 0 ? 0 : 1.3} expr={k > 0 ? "sorpresa" : "neutro"}
-                  agarraI={<EnMano.escudo />} agarraAngI={0} bI={40} cI={60} bD={20} cD={20} />
-              </Cae>;
+              return <React.Fragment key={i}>
+                <Cae x={x} y={950} k={k}>
+                  <Persona x={x} y={950} h={360} t={t + i * 0.13} seed={210 + i} casco="legion" ropa={r} giro="perfil" camina={k > 0 || tos ? 0 : 1.3} expr={k > 0 ? "sorpresa" : tos ? "triste" : "neutro"}
+                    inclina={tos ? 14 + Math.sin(t * 30) * 4 : 0} agarraI={k > 0.15 ? undefined : <EnMano.escudo />} agarraAngI={0} bI={40} cI={60} bD={tos ? 120 : 20} cD={tos ? 120 : 20} />
+                </Cae>
+                {tos && [0, 1, 2].map((j) => { const q = prog(t, tc - 0.45 + j * 0.1, tc - 0.05 + j * 0.1); return q > 0 && q < 1 && <div key={j} style={{ position: "absolute", left: hc.x + 40 + q * 70, top: hc.y + 20 - q * 30 + j * 10, width: 22 + q * 26, height: 22 + q * 26, borderRadius: "50%", background: "#9be15d", opacity: 0.85 * (1 - q) }} />; })}
+                {k > 0.15 && <svg style={{ position: "absolute", left: x - 70, top: 905, overflow: "visible" }} width={10} height={10}><g transform="rotate(-8)"><rect x={0} y={0} width={64} height={40} rx={8} fill={C.rojo} stroke="#7a1414" strokeWidth={4} /><circle cx={32} cy={20} r={8} fill="#e2a531" /></g></svg>}
+              </React.Fragment>;
             })}
             <Persona x={1680} y={PISO + 20} h={520} t={t} seed={1} casco="legion" giro={t > 601.0 ? "34" : "perfil"} flip={t > 601.0} camina={t > 601.0 ? 0 : 1.3}
               expr={t > 602.4 ? "miedo" : t > 601.0 ? "sorpresa" : "neutro"} bI={t > 602.4 ? 130 : 30} cI={t > 602.4 ? 130 : 40} bD={t > 602.4 ? 130 : 20} cD={t > 602.4 ? 130 : 20}
@@ -486,13 +499,20 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
         giro="34" flip={i >= 2} opacity={1 - 0.85 * prog(t, 605.0 + i * 0.3, 605.8 + i * 0.3)} bruma={0.2} />)}
       <div style={{ position: "absolute", left: 1290, top: 96, width: 520, padding: "10px 18px", borderRadius: 16, background: "#2a1530", fontFamily, fontWeight: 700, fontSize: 36, color: "#fff", border: "4px solid #fff" }}>LEGION STRENGTH<div style={{ marginTop: 8, height: 32, borderRadius: 16, background: "#4a3a5a" }}><div style={{ height: 32, borderRadius: 16, width: `${100 - 55 * prog(t, 604.4, 605.6) + 45 * prog(t, 607.3, 610.4)}%`, background: prog(t, 604.4, 605.6) > 0.5 && t < 607.3 ? C.rojo : C.lima }} /></div></div>
       <Persona x={300} y={1050} h={620} t={t} seed={1} casco="legion" giro="34" expr={t > 607.27 ? "sorpresa" : "triste"} mira={0.6}
-        bD={t > 607.27 ? 40 : 10} cD={t > 607.27 ? 100 : 10} reaccion="mandibula" reaccionT0={607.4} />
-      <Persona x={interpolate(t, [607.1, 608.3], [960, 760], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={interpolate(t, [607.1, 608.3], [920, 1050], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}
-        h={interpolate(t, [607.1, 608.3], [460, 620], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} t={t} seed={66} ropa={GLADIADOR} casco="no" expr="enojado" aparece={607.1}
-        camina={t < 608.3 ? 1.6 : 0} giro="34" flip bD={25} cD={10} bI={30} cI={50} agarra={<M.tridente />} agarraAng={-95} agarraI={<M.red />} agarraAngI={95} />
-      <Persona x={interpolate(t, [608.5, 609.6], [960, 1180], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={interpolate(t, [608.5, 609.6], [920, 1050], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}
-        h={interpolate(t, [608.5, 609.6], [440, 580], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} t={t} seed={67} ropa={CIVIL(6)} expr="triste" aparece={608.5}
-        camina={t < 609.6 ? 1.2 : 0} giro="34" bD={30} bI={30} cD={60} cI={60} agarra={<M.cadena />} agarraAng={20} agarraI={<M.cadena />} agarraAngI={20} />
+        bD={t > 607.27 ? 40 : 10} cD={t > 607.27 ? 100 : 10} reaccion="ojos" reaccionT0={607.4} />
+      {/* v5: entran CORRIENDO por la puerta, escalonados en profundidad (no en fila): gladiador, esclavo y otro que asoma */}
+      {(() => {
+        const cl = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const };
+        const g = prog(t, 607.1, 608.7), e = prog(t, 608.5, 610.5), o = prog(t, 609.7, 611.0);
+        return <>
+          {t > 609.7 && <Persona x={interpolate(o, [0, 1], [960, 1120])} y={interpolate(o, [0, 1], [915, 960])} h={interpolate(o, [0, 1], [430, 480])} t={t} seed={69} ropa={CIVIL(8)} expr="miedo" aparece={609.7}
+            corre={1.6} giro="perfil" bruma={0.15} agarra={<M.cadena />} agarraAng={30} />}
+          <Persona x={interpolate(e, [0, 1], [960, 1290])} y={interpolate(e, [0, 1], [920, 1000])} h={interpolate(e, [0, 1], [440, 560])} t={t} seed={67} ropa={CIVIL(6)} expr="triste" aparece={608.5}
+            corre={e < 1 ? 1.7 : 0} giro={e < 1 ? "perfil" : "34"} flip={e >= 1} bD={30} bI={30} cD={60} cI={60} agarra={<M.cadena />} agarraAng={20} agarraI={<M.cadena />} agarraAngI={20} />
+          <Persona x={interpolate(g, [0, 1], [960, 740], cl)} y={interpolate(g, [0, 1], [920, 1050], cl)} h={interpolate(g, [0, 1], [460, 640], cl)} t={t} seed={66} ropa={GLADIADOR} casco="no" expr="enojado" aparece={607.1}
+            corre={g < 1 ? 1.9 : 0} giro={g < 1 ? "perfil" : "34"} flip bD={25} cD={10} bI={30} cI={50} agarra={<M.tridente />} agarraAng={-95} agarraI={<M.red />} agarraAngI={95} />
+        </>;
+      })()}
       <Chip t={t} t0={605.13} text="HIT SO HARD..." color={C.violeta} x={160} y={140} size={56} t1={607.0} />
       <Chip t={t} t0={607.27} text="GLADIATORS" color={C.rojo} x={700} y={300} centro size={60} />
       <Chip t={t} t0={608.67} text="EVEN SLAVES" color={C.ambar} tinta={C.noche} x={1300} y={300} centro size={60} />
@@ -538,20 +558,26 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
       {(() => {
         const herr = t < 620.08 ? <M.pinza /> : t < 622.34 ? <M.bisturi /> : <M.extractor />;
         const ida = Math.sin(t * 5);
-        return <Persona x={1360} y={PISO} h={660} t={t} seed={68} ropa={MEDICO} viejo giro="34" flip expr="neutro" mira={0.4} miraY={0.9} inclina={6} bI={30} cI={40} bD={8 + ida * 5} cD={12 + ida * 8}
-          agarra={herr} agarraAng={95} />;
+        return <Persona x={1480} y={PISO} h={660} t={t} seed={68} ropa={MEDICO} viejo giro="34" flip expr="neutro" mira={0.5} miraY={0.9} inclina={20} bI={30} cI={40} bD={70 + ida * 6} cD={40 + ida * 10}
+          agarra={<g transform="scale(0.6)">{herr}</g>} agarraAng={80} />;
       })()}
       <div style={{ position: "absolute", left: 860, top: 820, width: 900, height: 40, borderRadius: 10, background: "#8a5a2a" }} />
       {[900, 1700].map((x) => <div key={x} style={{ position: "absolute", left: x, top: 860, width: 30, height: 140, background: "#6b3a1f" }} />)}
-      <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: "rotate(-90deg)", transformOrigin: "1560px 800px" }}>
-        <Persona x={1560} y={800} h={540} t={t} seed={1} casco="legion" expr="miedo" bI={8} bD={8} reaccion="ojos" reaccionT0={622.45} />
-      </div>
-      {/* palo entre los dientes */}
-      <div style={{ position: "absolute", left: 1560 - 388 * 540 / 560 - 10, top: 730, width: 20, height: 130, borderRadius: 10, background: "#a8703a", border: "3px solid #6b3a1f" }} />
-      <Emote t={t} t0={618.3} tipo="sudor" x={1560 - 470 * 540 / 560} y={700} s={0.9} />
+      {/* v5: paciente ACOSTADO DE PERFIL boca arriba sobre la mesa (cabeza a la izquierda), mordiendo un palo */}
+      {(() => {
+        const PX = 1640, PY = 792, PH = 520; // pies en (PX, PY) antes de rotar
+        const c = L(PX, PY, PH);
+        const mx = c.x + 56 * c.s, my = c.y + 62 * c.s; // boca (perfil mira a la derecha → tras rotar mira arriba)
+        return <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: "rotate(-90deg)", transformOrigin: `${PX}px ${PY}px`, clipPath: `inset(0px 0px ${1080 - PY + 2}px 0px)` }}>
+          <Persona x={PX} y={PY} h={PH} t={t} seed={1} casco="no" plano giro="perfil" expr="miedo" bI={6} cI={10} bD={10 + Math.sin(t * 9) * 4} cD={10} reaccion="ojos" reaccionT0={622.45} />
+          <div style={{ position: "absolute", left: mx - 30, top: my - 9, width: 74, height: 18, borderRadius: 9, background: "#a8703a", border: "3px solid #6b3a1f" }} />
+        </div>;
+      })()}
+      <Casco x={1010} y={975} s={0.3} rot={8} />
+      <Emote t={t} t0={618.3} tipo="sudor" x={1240} y={640} s={0.9} />
       {(() => {
         const sale = prog(t, 622.4, 622.9);
-        return <svg style={{ position: "absolute", left: 1200 - sale * 120, top: 800 - sale * 200, overflow: "visible", opacity: 1 - prog(t, 623.1, 623.4) }} width={20} height={20}><g transform="rotate(140)"><rect x={-6} y={-10} width={12} height={130} fill="#8a5a2a" /><path d="M -6 120 L -26 150 L -6 142 Z M 6 120 L 26 150 L 6 142 Z" fill="#e8e0d0" /></g><path d="M -20 0 L 0 -40 L 20 0 Z" fill="#7d8796" transform="translate(4 18)" /></svg>;
+        return <svg style={{ position: "absolute", left: 1330 - sale * 170, top: 770 - sale * 120, overflow: "visible", opacity: 1 - prog(t, 623.1, 623.4) }} width={20} height={20}><g transform="rotate(130)"><rect x={-6} y={-10} width={12} height={130} fill="#8a5a2a" /><path d="M -6 120 L -26 150 L -6 142 Z M 6 120 L 26 150 L 6 142 Z" fill="#e8e0d0" /></g><path d="M -20 0 L 0 -40 L 20 0 Z" fill="#7d8796" transform="translate(4 18)" /></svg>;
       })()}
     </Escena>
 
@@ -587,28 +613,40 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
             agarra={sick ? undefined : <EnMano.gladius madera />} agarraAng={pelea ? -20 : 80} reaccion={sick ? "derrite" : undefined} reaccionT0={634.5} />
           {t > 630.46 && t < 630.75 && <div style={{ position: "absolute", left: 420, top: 600, width: 120, height: 120, borderRadius: 60, background: "radial-gradient(circle, #fff, rgba(255,255,255,0) 70%)" }} />}
           {sick && <Emote t={t} t0={633.9} tipo="sudor" {...L(330, 1040, 620)} />}
-          {([[1, 629.5, 0.05], [3, 632.4, 0.5], [7, 633.6, 1]] as const).map(([dia, t0, k], i) => {
-            const cx = 1090 + i * 290, cy = 560;
-            if (t < t0) return <div key={dia} style={{ position: "absolute", left: cx - 120, top: cy - 120, width: 240, height: 240, borderRadius: 120, border: "10px dashed rgba(42,21,48,.55)", background: "rgba(255,255,255,.35)", boxSizing: "border-box", fontFamily, fontWeight: 700, fontSize: 96, color: "rgba(42,21,48,.55)", textAlign: "center", lineHeight: "220px" }}>?</div>;
-            const corte = dia > 1 || t > 630.46;
+          {/* v5: ZOOM AL DEDO en el cielo (no sobre la torre): DAY 1 corte rojo, DAY 3 verde hinchado, DAY 7 negro */}
+          {([[1, 629.5, "#f2b48a", "#d8443a", "#fff3d6", "#2a1530", "#fff"], [3, 632.4, "#c9cf7a", "#5fae2e", "#eef6d0", "#1d4a24", "#c6f04a"], [7, 633.6, "#5a4a52", "#141018", "#3a3040", "#141018", "#ff6a6a"]] as const).map(([dia, t0, piel, herida, fondo, chip, tinta], i) => {
+            const cx = 960 + i * 290, cy = 290;
+            if (t < t0) return <div key={dia} style={{ position: "absolute", left: cx - 120, top: cy - 120, width: 240, height: 240, borderRadius: 120, border: "10px dashed rgba(42,21,48,.45)", background: "rgba(255,255,255,.3)", boxSizing: "border-box", fontFamily, fontWeight: 700, fontSize: 96, color: "rgba(42,21,48,.5)", textAlign: "center", lineHeight: "220px" }}>?</div>;
+            const late = dia === 1 ? 1 : 1 + 0.06 * Math.sin(t * 6); // la herida late
+            const hinch = dia === 3 ? 1.12 : dia === 7 ? 1.06 : 1;
             return <div key={dia} style={{ position: "absolute", left: cx - 135, top: cy - 135, width: 270, height: 400, transform: `scale(${ent(t, t0)})` }}>
-              <div style={{ position: "absolute", left: 0, top: 0, width: 270, height: 270, borderRadius: 135, background: "#fff3d6", border: "12px solid #2a1530", overflow: "hidden", boxSizing: "border-box" }}>
-                <div style={{ position: "absolute", left: -30, top: 80, width: 330, height: 110, borderRadius: 55, background: mezcla("#f2b48a", "#b8d070", k) }} />
-                {corte && <div style={{ position: "absolute", left: 70, top: 128, width: 120, height: 12, borderRadius: 6, background: C.rojo, transform: "rotate(-14deg)" }} />}
-                {corte && <div style={{ position: "absolute", left: 130 - 30 - k * 50, top: 134 - 22 - k * 30, width: 60 + k * 100, height: 44 + k * 60, borderRadius: "50%", background: `rgba(${k > 0.4 ? "122,190,60" : "232,52,74"},${0.25 + k * 0.45})` }} />}
-              </div>
+              <svg style={{ position: "absolute", left: 0, top: 0 }} width={270} height={270} viewBox="-135 -135 270 270">
+                <defs><clipPath id={`dedo${dia}`}><circle r={123} /></clipPath></defs>
+                <circle r={129} fill={fondo} stroke="#2a1530" strokeWidth={12} />
+                <g clipPath={`url(#dedo${dia})`}>
+                  <g transform={`rotate(-28) scale(${hinch} 1)`}>
+                    <rect x={-190} y={-52} width={290} height={104} rx={52} fill={piel} stroke="rgba(42,21,48,.35)" strokeWidth={5} />
+                    <path d="M 40 -30 Q 82 -30 84 0 Q 82 30 40 30 Z" fill="rgba(255,255,255,.55)" stroke="rgba(42,21,48,.3)" strokeWidth={4} />
+                    {[-60, -120].map((xx) => <path key={xx} d={`M ${xx} -30 Q ${xx + 8} 0 ${xx} 30`} stroke="rgba(42,21,48,.25)" strokeWidth={4} fill="none" />)}
+                    {dia > 1 && <ellipse cx={-25} cy={0} rx={70 * late} ry={44 * late} fill={herida} opacity={0.45} />}
+                    <path d="M -60 -10 L 10 12" stroke={herida} strokeWidth={dia === 1 ? 10 : 14} strokeLinecap="round" />
+                    {dia === 1 && <circle cx={-14} cy={20 + 14 * ((t * 1.2) % 1)} r={7} fill={herida} />}
+                    {dia === 3 && [[-40, -18], [-6, 18], [-28, 14]].map(([x, y], j) => <circle key={j} cx={x} cy={y} r={7} fill="#e8f07a" />)}
+                  </g>
+                </g>
+              </svg>
               <div style={{ position: "absolute", left: 0, right: 0, top: 288, textAlign: "center" }}>
-                <span style={{ padding: "6px 22px", borderRadius: 16, background: k > 0.4 ? "#1d4a24" : "#2a1530", fontFamily, fontWeight: 700, fontSize: 48, color: k > 0.4 ? "#c6f04a" : "#fff" }}>DAY {dia}</span>
+                <span style={{ padding: "6px 22px", borderRadius: 16, background: chip, fontFamily, fontWeight: 700, fontSize: 48, color: tinta }}>DAY {dia}</span>
               </div>
             </div>;
           })}
-          {t >= 635.2 && <Craneo x={1670} y={560} s={0.75} t={t} t0={635.2} />}
+          {t >= 635.2 && <Craneo x={1730} y={330} s={0.6} t={t} t0={635.2} />}
         </>;
       })()}
       <Chip t={t} t0={629.86} text="A SMALL CUT" color={C.rojo} x={160} y={140} size={58} t1={633.7} />
       <Chip t={t} t0={632.46} text="HOT DAY · AFRICA" color={C.ambar} tinta={C.noche} x={160} y={250} size={54} t1={633.7} />
       <Chip t={t} t0={633.88} text="COULD KILL YOU" color={C.rojo} x={160} y={140} size={60} />
-      <Chip t={t} t0={635.36} text="= A BATTLE" color={C.violeta} x={1380} y={250} centro size={60} />
+      <Chip t={t} t0={635.36} text="= A BATTLE" color={C.violeta} x={1250} y={600} centro size={60} />
     </Escena>
 
     {/* 153 · al menos la comida era regular (dentro de la carpa, salta con el cuenco) */}
@@ -717,7 +755,7 @@ function Arcos({ t, desde, rutas, previas = [] }: { t: number; desde: string; ru
         const s = u;
         const cx = (1 - s) * (1 - s) * o.x + 2 * (1 - s) * s * mx + s * s * l.x, cy = (1 - s) * (1 - s) * o.y + 2 * (1 - s) * s * my + s * s * l.y;
         const kp = t0 < 0 ? 1 : Math.min(1, Math.max(0, (t - t0 - 0.7) / 0.35));
-        const pop = verde ? 1 + 0.5 * Math.sin(kp * Math.PI) : 0.85;
+        const pop = verde ? 1 + 0.9 * Math.sin(kp * Math.PI) : 0.85;
         return (
           <g key={a}>
             <path d={`M ${o.x} ${o.y} Q ${mx} ${my} ${l.x} ${l.y}`} stroke="#1d4a24" strokeWidth={22} fill="none" strokeLinecap="round" pathLength={1000} strokeDasharray={`${u * 1000} 1000`} />
@@ -725,6 +763,7 @@ function Arcos({ t, desde, rutas, previas = [] }: { t: number; desde: string; ru
             <g transform={`translate(${l.x} ${l.y}) scale(${pop * 1.25})`}>
               <path d="M -34 10 L -34 -30 L -22 -30 L -22 -20 L -10 -20 L -10 -30 L 10 -30 L 10 -20 L 22 -20 L 22 -30 L 34 -30 L 34 10 Z" fill={verde ? "#7ad45a" : "#c9a36a"} stroke="#1d1240" strokeWidth={5} />
               {verde && <circle r={44 + ((t * 40) % 20)} fill="none" stroke="#9be15d" strokeWidth={4} opacity={0.6} />}
+              {verde && kp < 1 && <circle r={40 + kp * 70} fill="none" stroke="#c6f04a" strokeWidth={10 * (1 - kp)} />}
             </g>
             {u > 0 && u < 1 && <g transform={`translate(${cx} ${cy})`}>
               {[-26, 0, 26].map((d, i) => <g key={i} transform={`translate(${d} ${Math.sin(t * 14 + i) * 3})`}><rect x={-10} y={-16} width={20} height={28} rx={5} fill={C.rojo} stroke="#fff" strokeWidth={3} /><circle cx={0} cy={-24} r={8} fill="#e2a531" /></g>)}

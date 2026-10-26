@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona, CIVIL, Ropa } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Cielo, Estrellas, Astro, Colinas, Chip, Grande, Pergamino, Pan, Mesa, Particulas, Frente, Emote, cabeza } from "./kit";
-import { Escudo, Poste, Pilum, Armadura, Mula, Comida, Soldadito, Craneo, Calor } from "./kit2";
+import { Escudo, Poste, Pilum, Armadura, Mula, Comida, Soldadito, Craneo, Calor, Item } from "./kit2";
 import { Cuenta } from "./P1";
 import { Campamento, Interior, Ruta, Valle, Campo, Tablero, Torre, pose, PlazaArmas, Multitud, EnMano, FilaLejana } from "./kit3";
 
@@ -297,7 +297,8 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       {t < 197.9
         ? <Persona x={380} y={1000} h={560} t={t} seed={1} casco="legion" giro="34" expr="enojado" {...pose("lanzar", Math.min(0.75, Math.max(0, (t - 196.2) * 1.2)))} />
         : <Persona x={380} y={1000} h={560} t={t} seed={1} casco="legion" giro="34" expr="orgullo" bD={interpolate(prog(t, 197.9, 198.3), [0, 1], [30, 120])} cD={20} bI={25} cI={70}
-            agarra={t > 198.1 ? <EnMano.gladius /> : undefined} agarraAng={-55} agarraI={<EnMano.escudo />} agarraAngI={0} />}
+            agarra={t > 198.1 ? <EnMano.gladius /> : undefined} agarraAng={-55} />}
+      {t >= 197.9 && <Escudo x={470} y={760} s={0.62} rot={-6} />}
       {(() => {
         const vuela = prog(t, 196.6, 197.46);
         const dob = t > 197.46 ? Math.min(1, (t - 197.46) * 4) : 0;
@@ -305,7 +306,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
         const forcejea = t > 198.9 && t < 199.7;
         const ex = interpolate(tira, [0, 1], [1210, 1080]) + (forcejea ? Math.sin(t * 22) * 10 : 0), ey = interpolate(tira, [0, 1], [640, 880], { easing: (u) => u * u }), er = interpolate(tira, [0, 1], [-8, -80]);
         return <>
-          <Persona x={1420} y={990} h={600} t={t} seed={77} ropa={BARBARO} flip giro="34" expr={t > 197.46 ? "enojado" : "orgullo"} reaccion={tira > 0 ? "mandibula" : undefined} reaccionT0={199.75}
+          <Persona x={1420} y={990} h={600} t={t} seed={77} ropa={BARBARO} flip giro="34" expr={t > 197.46 ? "enojado" : "orgullo"} reaccion={tira > 0 ? "ojos" : undefined} reaccionT0={199.75}
             bD={forcejea ? 95 + Math.sin(t * 22) * 12 : tira > 0 ? 40 : 70} cD={forcejea ? 20 : 60} bI={forcejea ? 80 + Math.cos(t * 22) * 12 : 60} cI={20} inclina={forcejea ? -10 + Math.sin(t * 22) * 4 : 0} />
           <div style={{ position: "absolute", inset: 0, transform: `rotate(${er + 8}deg)`, transformOrigin: `${ex}px ${ey}px` }}>
             <Escudo x={ex} y={ey} s={0.9} rot={-8} color="#5a3418" />
@@ -379,24 +380,38 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 057-058 · tres veces por mes, 10 millas de ida y 10 de vuelta con todo encima */}
     <Escena t={t} t0={213.48} t1={220.8} zoom={0.04} entra="diag" golpes={[213.64, 216.04, 217.18, 218.62]}>
-      <Campo t={t} />
-      {(() => { const sol = prog(t, 213.5, 220.8); return <Astro x={300 + sol * 1300} y={260 - Math.sin(sol * Math.PI) * 120} r={60} />; })()}
-      <Torre x={190} y={760} s={0.55} />
-      <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
-        <path d="M 300 800 C 640 520 1040 940 1640 600" stroke="#e8c88a" strokeWidth={46} fill="none" strokeLinecap="round" strokeDasharray="2 70" />
-        <circle cx={1640} cy={600} r={30} fill={C.ambar} stroke="#fff" strokeWidth={8} />
-        <rect x={1660} y={430} width={10} height={170} fill="#6b3a1f" /><path d="M 1670 430 L 1740 450 L 1670 470 Z" fill={C.rojo} />
-      </svg>
       {(() => {
-        const ida = prog(t, 214.6, 217.0), vuelta = prog(t, 217.2, 220.4);
-        const u = t < 217.1 ? ida : 1 - vuelta;
+        // la cámara arranca abierta (ruta entera) y se acerca al doble para SEGUIRLO corriendo la ruta, ida y vuelta
+        const ida = prog(t, 214.6, 217.0), vuelta = (t - 217.2) / (220.8 - 217.2);
+        const u = t < 217.1 ? ida : 1 - Math.min(1, Math.max(0, vuelta)) * 0.9;
         const bx = (s: number) => (1 - s) ** 3 * 300 + 3 * (1 - s) ** 2 * s * 640 + 3 * (1 - s) * s * s * 1040 + s ** 3 * 1640;
         const by = (s: number) => (1 - s) ** 3 * 800 + 3 * (1 - s) ** 2 * s * 520 + 3 * (1 - s) * s * s * 940 + s ** 3 * 600;
         const x = bx(u), y = by(u) + 20;
+        const vuelve = t > 217.1, corre = (t > 214.5 && t < 217.0) || t > 217.25;
+        const dir = vuelve ? -1 : 1;
+        const Z = interpolate(prog(t, 213.9, 214.9), [0, 1], [1, 1.85], { easing: (k) => k * k * (3 - 2 * k) });
+        const cx = Math.min(1920 - 960 / Z, Math.max(960 / Z, x + (vuelve ? -170 : 170)));
+        const cy = Math.min(1080 - 540 / Z, Math.max(540 / Z, y - 230));
+        const rebote = corre ? Math.abs(Math.sin(t * Math.PI * 1.8)) * 6 : 0;
+        const sol = prog(t, 213.5, 220.8);
         return <>
-          <Persona x={x} y={y} h={400} t={t} seed={1} casco="legion" giro="34" expr={t > 218.6 ? "triste" : "orgullo"} camina={1.9} flip={t > 217.1} inclina={t > 218.6 ? 12 : 3}
-            agarraI={<EnMano.escudo />} agarraAngI={0} bI={40} cI={50} agarra={<EnMano.lanza />} agarraAng={-75} bD={30} cD={60} reaccion={t > 219.9 ? "derrite" : undefined} reaccionT0={219.9} />
-          {t > 218.6 && <Emote t={t} t0={218.7} tipo="sudor" {...L(x, y, 380)} s={0.8} />}
+          <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "0 0", transform: `translate(${960 - Z * cx}px, ${540 - Z * cy + rebote}px) scale(${Z})` }}>
+            <Campo t={t} />
+            <Astro x={300 + sol * 1300} y={260 - Math.sin(sol * Math.PI) * 120} r={60} />
+            <Torre x={190} y={760} s={0.55} />
+            <svg style={{ position: "absolute", inset: 0, overflow: "visible" }} width={1920} height={1080}>
+              <path d="M 300 800 C 640 520 1040 940 1640 600" stroke="#e8c88a" strokeWidth={46} fill="none" strokeLinecap="round" strokeDasharray="2 70" />
+              {[0.2, 0.4, 0.6, 0.8].map((m, i) => <g key={i} transform={`translate(${bx(m)} ${by(m) - 34})`}><rect x={-14} y={-46} width={28} height={58} rx={8} fill="#d8d0c4" stroke="#7d7466" strokeWidth={4} /><text x={0} y={-10} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={18} fill="#5a5246">{["II", "IV", "VI", "VIII"][i]}</text></g>)}
+              <circle cx={1640} cy={600} r={30} fill={C.ambar} stroke="#fff" strokeWidth={8} />
+              <rect x={1660} y={430} width={10} height={170} fill="#6b3a1f" /><path d={`M 1670 430 Q ${1705} ${440 + Math.sin(t * 6) * 6} 1740 450 Q ${1705} ${462 + Math.sin(t * 6 + 1) * 6} 1670 470 Z`} fill={C.rojo} />
+            </svg>
+            {corre && [0, 1, 2].map((k) => { const ph = ((t * 3 + k / 3) % 1); return <div key={k} style={{ position: "absolute", left: x + (vuelve ? 1 : -1) * (40 + ph * 70) - 18, top: y - 14 - ph * 26, width: 36 * (1 - ph) + 8, height: 36 * (1 - ph) + 8, borderRadius: "50%", background: "#d8c08a", opacity: 0.8 * (1 - ph) }} />; })}
+            {/* escudo colgado a la espalda (FULL GEAR) */}
+            <Escudo x={x - dir * 70} y={y - 210} s={0.42} rot={dir * -14} />
+            <Persona x={x} y={y} h={400} t={t} seed={1} casco="legion" giro="34" expr={t > 218.6 ? "triste" : "orgullo"} corre={corre ? (t > 218.6 ? 1.4 : 1.8) : 0} flip={vuelve} inclina={t > 218.6 ? 6 : 0}
+              agarra={<EnMano.lanza />} agarraAng={-60} />
+            {t > 218.6 && <Emote t={t} t0={218.7} tipo="sudor" {...L(x, y, 380)} s={0.8} />}
+          </div>
         </>;
       })()}
       {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", left: 1420 + i * 120, top: 190, width: 90, height: 110, background: "#fff8ec", borderRadius: 12, border: "6px solid #2a1530", transform: `scale(${ent(t, 213.64 + i * 0.12)})`, fontFamily, fontWeight: 700, fontSize: 70, color: C.rojo, textAlign: "center", lineHeight: "100px" }}>✓</div>)}
@@ -408,9 +423,22 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 059 · si fallás, te cambian el trigo por cebada */}
     <Escena t={t} t0={220.8} t1={224.68} entra="barrido" golpes={[220.8, 223.78]}>
-      <Interior />
-      <AbsoluteFill style={{ background: "rgba(140,20,50,.25)" }} />
-      <Persona x={960} y={1030} h={560} t={t} seed={1} casco="legion" expr={t > 223.78 ? "triste" : "sorpresa"} {...pose("comer", t, 0.8)} />
+      <Campamento t={t} hora="tarde" tropa={false} />
+      <AbsoluteFill style={{ background: "rgba(140,20,50,.22)" }} />
+      {(() => {
+        // falla la marcha: la mochila de 30 kg le cae encima y lo dobla; se la saca de encima y le toca comer cebada
+        const cae = prog(t, 220.8, 221.0), sale = prog(t, 221.7, 222.1);
+        const doblado = t > 221.0 && t < 221.8;
+        const hy = cabeza(960, 1030, 560).y + (doblado ? 92 : 0);
+        const mx = interpolate(sale, [0, 1], [960, 1250]), my = t < 221.0 ? interpolate(cae, [0, 1], [-200, hy - 40]) : interpolate(sale, [0, 1], [hy - 40, 880], { easing: (k) => k * k });
+        return <>
+          <Persona x={960} y={1030} h={560} t={t} seed={1} casco="legion" expr={t > 223.78 ? "triste" : "sorpresa"} postura={doblado ? "agachado" : "parado"}
+            reaccion={doblado ? "susto" : undefined} reaccionT0={221.0} {...(doblado ? { bD: 150, cD: 30, bI: 150, cI: 30 } : t > 222.0 ? pose("comer", t, 0.8) : { bD: 30, cD: 20, bI: 30, cI: 20 })} />
+          <Item k="saco" x={mx} y={my} s={1.5} rot={sale * 30} />
+          {t > 221.0 && t < 221.3 && <Fogonazo x={960} y={hy - 60} k={prog(t, 221.0, 221.3)} s={0.9} />}
+          <Chip t={t} t0={220.95} t1={221.8} text="30 KG" color={C.rojo} x={1180} y={330} size={58} />
+        </>;
+      })()}
       <Comida k="trigo" x={520} y={560} s={1.6} t={t} t0={221.4} />
       {t > 223.34 && <svg style={{ position: "absolute", left: 330, top: 360 }} width={400} height={400}><path d="M 40 40 L 360 360 M 360 40 L 40 360" stroke="#fff" strokeWidth={34} strokeLinecap="round" strokeDasharray={460} strokeDashoffset={460 * (1 - prog(t, 223.34, 223.6))} /></svg>}
       <Comida k="cebada" x={1400} y={560} s={1.6} t={t} t0={223.78} />
@@ -473,12 +501,12 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
         return <>
           <div style={{ position: "absolute", left: 0, top: 0, width: w, height: 1080, overflow: "hidden" }}>
             <PlazaArmas t={t} />
-            <Multitud t={t} n={5} filas={2} x0={1100} x1={1800} y={760} h={240} seed={64} accion="golpear" vel={1.3} giro="34" />
-            <Poste x={790} y={760} s={0.95} />
-            <Persona x={500} y={1000} h={560} t={t} seed={1} casco="legion" giro="34" expr="orgullo" {...P} agarra={<EnMano.gladius madera />} agarraAng={angGolpe(t - 238.98, 1.5)} />
-            {k > 0.17 && k < 0.34 && <Fogonazo x={790} y={650} k={(k - 0.17) / 0.17} s={0.8} />}
-            <Banco x={150} y={1010} w={200} />
-            <Persona x={150} y={1010} h={460} t={t} seed={130} ropa={CIVIL(7)} viejo postura="sentado" giro="34" expr="neutro" {...pose("escribir", t, 1.2)} agarra={<EnMano.pluma />} agarraAng={-50} agarraI={<EnMano.tablilla />} agarraAngI={-20} />
+            <Multitud t={t} n={5} filas={2} x0={1200} x1={1820} y={760} h={240} seed={64} accion="golpear" vel={1.3} giro="34" />
+            <Poste x={1010} y={760} s={0.95} />
+            <Persona x={720} y={1000} h={560} t={t} seed={1} casco="legion" giro="34" expr="orgullo" {...P} agarra={<EnMano.gladius madera />} agarraAng={angGolpe(t - 238.98, 1.5)} />
+            {k > 0.17 && k < 0.34 && <Fogonazo x={1010} y={650} k={(k - 0.17) / 0.17} s={0.8} />}
+            <Banco x={330} y={1010} w={220} />
+            <Persona x={330} y={1010} h={460} t={t} seed={130} ropa={CIVIL(7)} viejo postura="sentado" giro="34" expr="neutro" {...pose("escribir", t, 1.2)} agarra={<EnMano.pluma />} agarraAng={-50} agarraI={<EnMano.tablilla />} agarraAngI={-20} />
           </div>
           {w < 1920 && <div style={{ position: "absolute", left: w, top: 0, width: 1920 - w, height: 1080, overflow: "hidden", borderLeft: "10px solid #fff" }}>
             <div style={{ position: "absolute", left: -w, top: 0, width: 1920, height: 1080 }}>
@@ -491,9 +519,21 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
           </div>}
         </>;
       })()}
-      <Chip t={t} t0={238.98} t1={240.0} text="JOSEPHUS WROTE:" color={C.violeta} x={160} y={140} size={50} />
-      <Grande t={t} t0={240.04} text="DRILLS =" x={480} y={150} size={90} color="#fff" />
-      <Grande t={t} t0={240.64} text="BLOODLESS BATTLES" x={480} y={270} size={54} color={C.teal} />
+      <Chip t={t} t0={238.98} text="JOSEPHUS WROTE:" color={C.violeta} x={130} y={200} size={46} />
+      {/* la cita se escribe en el globo de Josephus (sale de su cabeza, abajo a la izquierda) */}
+      {(() => {
+        const q = "THEIR DRILLS ARE BLOODLESS BATTLES...";
+        const n = Math.round(q.length * prog(t, 239.15, 240.64));
+        const e = ent(t, 239.0);
+        return <div style={{ position: "absolute", left: 130, top: 290, width: 500, transform: `scale(${e})`, transformOrigin: "160px 300px" }}>
+          <div style={{ position: "relative", padding: "26px 34px", borderRadius: 36, background: "#fff8ec", border: "7px solid #2a1530", boxShadow: "0 10px 0 rgba(42,21,48,.35)", fontFamily, fontWeight: 700, fontSize: 46, lineHeight: 1.12, color: "#2a1530", minHeight: 150 }}>
+            <span>{q.slice(0, Math.min(n, q.indexOf("BLOODLESS")))}</span>
+            {n > q.indexOf("BLOODLESS") && <span style={{ color: C.teal }}>{q.slice(q.indexOf("BLOODLESS"), n)}</span>}
+            {n < q.length && Math.floor(t * 4) % 2 === 0 && <span style={{ color: C.rojo }}>|</span>}
+            <svg style={{ position: "absolute", left: 190, bottom: -78, overflow: "visible" }} width={90} height={80}><path d="M 10 -6 L 22 74 L 70 -6 Z" fill="#fff8ec" stroke="#2a1530" strokeWidth={7} strokeLinejoin="round" /><rect x={14} y={-14} width={50} height={14} fill="#fff8ec" /></svg>
+          </div>
+        </div>;
+      })()}
       <Grande t={t} t0={242.12} text="BATTLES =" x={1440} y={150} size={90} color="#fff" />
       <Grande t={t} t0={242.7} text="BLOODY DRILLS" x={1440} y={270} size={66} color={C.rojo} borde="#fff" />
     </Escena>

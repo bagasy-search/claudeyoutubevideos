@@ -517,7 +517,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
     {/* 110-111 · el tribuno te toca con el garrote... y te pegan tus compañeros de carpa (plaza de armas de noche) */}
     <Escena t={t} t0={420.1} t1={427.8} zoom={0.05} entra="corte" golpes={[422.22, 424.78, 425.46, 426.14]}>
       <PlazaArmas t={t} hora="noche" />
-      <Persona x={960} y={1050} h={520} t={t} {...P} giro="frente" expr="miedo" bD={150} bI={150} cD={100} cI={100} inclina={t > 426.1 ? 10 : 0} reaccion={t > 425.5 ? "mandibula" : undefined} reaccionT0={425.5} />
+      <Persona x={960} y={1050} h={520} t={t} {...P} giro="frente" expr="miedo" bD={150} bI={150} cD={100} cI={100} inclina={t > 426.1 ? 10 : 0} reaccion={t > 425.5 ? "ojos" : undefined} reaccionT0={425.5} />
       <Persona x={420} y={1050} h={590} t={t} seed={62} ropa={TRIBUNO} casco="centurion" giro="34" expr="enojado" bD={t > 421.6 && t < 422.6 ? 80 : 110} cD={20} agarra={<EnMano.garrote />} agarraAng={t > 421.6 && t < 422.6 ? 0 : -45} bI={40} cI={70} agarraI={<EnMano.antorcha t={t} />} agarraAngI={-70} />
       {[[-640, 0], [-420, 1], [400, 2], [620, 3]].map(([dx, i]) => (
         <Persona key={i} x={960 + dx} y={1050 - (i % 2) * 14} h={480 + (i % 2) * 30} t={t} seed={140 + i} ropa={CIVIL(i + 2)} casco="no" giro="34" flip={dx > 0} expr="triste" aparece={423.5 + i * 0.15}
@@ -538,8 +538,26 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
         <Persona x={900} y={1050} h={480} t={t} {...P} postura="agachado" expr="miedo" bD={150} bI={150} cD={100} cI={100} />
       </> : <>
         <Valle t={t} hora="noche" />
-        <Tumbas t={t} t0={429.3} xs={[200, 400, 600]} y={960} />
-        <Persona x={interpolate(prog(t, 429.4, 431.2), [0, 1], [760, 900])} y={1040} h={480} t={t} {...P} giro="perfil" expr="triste" ladea={-8} inclina={6} camina={t < 431.2 ? 0.7 : 0} bI={30} />
+        {/* v5: fila de cruces al fondo (más chicas, apagadas) para que el prado no quede vacío */}
+        <div style={{ position: "absolute", inset: 0, transform: "scale(0.6)", transformOrigin: "0px 0px", opacity: 0.6 }}>
+          <Tumbas t={t} t0={429.3} xs={[260, 560, 860, 1160]} y={1450} />
+        </div>
+        <Tumbas t={t} t0={429.3} xs={[120, 300, 480]} y={960} />
+        {/* v5: la cruz nueva: él se agacha y deja el casco del compañero */}
+        <Monticulo x={650} y={960} w={190} h={60} color="#4a3a5a" />
+        <svg style={{ position: "absolute", left: 590, top: 760, overflow: "visible" }} width={120} height={150}><rect x={52} y={10} width={16} height={140} fill="#8a6a3a" /><rect x={20} y={40} width={80} height={16} fill="#8a6a3a" /></svg>
+        {t >= 430.55 && <div style={{ position: "absolute", inset: 0, transform: `translateY(${-30 * Math.abs(Math.sin(prog(t, 430.55, 430.9) * Math.PI))}px)` }}><Casco x={700} y={920} s={0.35} rot={-14 + 10 * (1 - prog(t, 430.55, 430.9))} /></div>}
+        {(() => {
+          const deja = t >= 429.95 && t < 431.05;
+          const x = t < 429.95 ? interpolate(prog(t, 429.3, 429.95), [0, 1], [1080, 900]) : 900;
+          const conCasco = t < 430.55;
+          const casco = conCasco ? <g transform="translate(46 0) rotate(-90) scale(0.36)"><path d="M -110 30 Q -116 -110 0 -110 Q 116 -110 110 30 L 124 40 L -124 40 Z" fill="#e9a92a" /><path d="M -124 40 L 124 40 L 132 58 L -132 58 Z" fill="#8a5414" /></g> : undefined;
+          return t < 429.95
+            ? <Persona x={x} y={1040} h={480} t={t} {...P} giro="perfil" flip expr="triste" camina={1.1} bI={20} bD={20} cD={10} agarra={casco} agarraAng={90} />
+            : deja
+              ? <Persona x={x} y={1040} h={480} t={t} {...P} postura="agachado" giro="34" flip expr="triste" mira={0.6} miraY={0.6} ladea={-6} bD={conCasco ? 76 : 40} cD={conCasco ? 8 : 40} bI={30} cI={60} agarra={casco} agarraAng={70} />
+              : <Persona x={x} y={1040} h={480} t={t} {...P} giro="34" expr="triste" mira={0.7} miraY={-0.2} ladea={-6} bI={20} cI={30} bD={20} cD={30} />;
+        })()}
         <div style={{ position: "absolute", left: 1120, top: 290, width: 520, height: 450, transform: `scale(${ent(t, 429.4)})` }}>
           <svg width={520} height={450} viewBox="0 0 560 480">
             <path d="M 80 220 L 280 60 L 480 220 Z" fill="#b5452c" /><rect x={120} y={210} width={320} height={230} fill="#e8b98a" /><rect x={240} y={310} width={80} height={130} fill="#6b3a1f" /><rect x={150} y={250} width={60} height={50} rx={6} fill="#ffd27a" />
@@ -837,7 +855,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
       <Tablilla x={640} y={800} s={0.35} t={t} texto={["REPORT ~~"]} />
       <Banco x={360} y={1050} w={200} alto={124} />
       <Persona x={360} y={1050} h={560} t={t} seed={65} ropa={CENTURION} casco="centurion" giro="34" postura="sentado" expr="enojado" {...pose("escribir", t)} agarra={<EnMano.pluma />} agarraAng={-30} />
-      <Persona x={940} y={1050} h={480} t={t} {...P} giro="34" expr={t > 535.6 ? "sorpresa" : "neutro"} mira={0.8} bI={20} reaccion={t > 535.7 ? "mandibula" : undefined} reaccionT0={535.7} />
+      <Persona x={940} y={1050} h={480} t={t} {...P} giro="34" expr={t > 535.6 ? "sorpresa" : "neutro"} mira={0.8} bI={20} reaccion={t > 535.7 ? "ojos" : undefined} reaccionT0={535.7} />
       <Informe t={t} t0={528.4} x={70} y={130} titulo="REPORT · VINDOLANDA" texto="THE BRITTUNCULI..." tEsc={[528.8, 531.0]} />
       <Grande t={t} t0={532.46} text="BRITTUNCULI" x={1410} y={180} size={96} color="#fff" borde={C.violeta} />
       <Chip t={t} t0={534.32} text="ROUGHLY TRANSLATES AS..." color={C.violeta} x={1410} y={370} centro size={50} t1={535.4} />

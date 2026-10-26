@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona } from "./persona";
-import { C, fontFamily, ent, prog, Escena, Chip, Grande, MapaPuntos, Particulas, Emote, cabeza, Aguila, lugar, Zzz } from "./kit";
+import { C, fontFamily, ent, prog, Escena, Chip, Grande, MapaPuntos, Particulas, Emote, cabeza, Aguila, lugar, Zzz, Niebla } from "./kit";
 import { Gladius, Escudo, Pilum, Soldadito, Craneo, Arbol, Lluvia } from "./kit2";
 import { Campamento, CarpaInterior, Interior, Valle, Bosque, Tablero, Multitud, EnMano, pose, TRAMPAS } from "./kit3";
 
@@ -328,10 +328,20 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={679.82} t1={683.91} zoom={0.02} entra="corte" golpes={[680.05, 681.51, 683.15]}>
       <Valle t={t} hora="tarde" />
       {t < 682.2 ? <>
-        {(() => { const d = interpolate(t, [679.8, 682.2], [0, -160]); return <Multitud t={t} n={7} filas={2} x0={1180 + d} x1={1720 + d} y={PIE} h={430} seed={65} ropa={GERMANO} casco="no" flip expr="enojado" poses={["brazos", "señala", "lanzar", "quieto"]} rompe={0} habla />; })()}
+        {/* carga bárbara: 2 filas escalonadas que bajan la colina corriendo (la de atrás más chica, sobre la ladera) */}
+        {[
+          { n: 4, x0: 1400, dx: 115, y: (x: number) => cerroY(x) + 170, h: 270, v: 95, s0: 6510 },
+          { n: 3, x0: 1290, dx: 190, y: () => PIE - 20, h: 400, v: 135, s0: 6520 },
+        ].map((f, fi) => Array.from({ length: f.n }, (_, i) => {
+          const x = f.x0 + i * f.dx + (i % 2) * 24 - (t - 679.82) * f.v;
+          const pelo = ["#c9a050", "#8a4a20", "#e0c070", "#5a3418"][(i + fi) % 4];
+          const tu = [["#3a5a2a", "#24401a"], ["#4a6a30", "#2e4a1c"], ["#5a4a2a", "#3a2e18"]][(i + fi * 2) % 3];
+          const arma = [<EnMano.garrote key="g" />, <EnMano.lanza key="l" />, <EnMano.garrote key="g2" />][(i + fi) % 3];
+          return <Persona key={`${fi}${i}`} x={x} y={f.y(x)} h={f.h * (1 + ((i * 37) % 7 - 3) * 0.02)} t={t + i * 0.13} seed={f.s0 + i} ropa={{ ...GERMANO, pelo, tunica: tu[0], tunica2: tu[1] }} casco="no" giro="perfil" flip corre={1.7 + (i % 3) * 0.15} expr="enojado" habla={i % 2 === 0} agarra={arma} agarraAng={-55 + (i % 2) * 15} bruma={fi === 0 ? 0.25 : 0} />;
+        }))}
         {Array.from({ length: 5 }, (_, i) => <Vuelo key={i} t={t} tr={679.85 + i * 0.18} x0={-60} y0={520 + i * 20} x1={1200 + i * 110} y1={860} dur={0.85} alto={260} s={0.45} />)}
-        <Persona x={300} y={PIE} h={460} t={t} seed={262} casco="legion" ropa={compa(262)} giro="34" expr="enojado" mira={0.8} agarraI={<EnMano.escudo />} agarraAngI={-90} bI={-50} cI={40} agarra={<EnMano.gladius />} agarraAng={-30} bD={60} cD={40} />
-        {(() => { const k = prog(t, 679.95, 680.6); return <Yo x={600} y={PIE} h={580} t={t} giro="34" expr="enojado" mira={0.8} agarraI={<EnMano.escudo />} agarraAngI={-90} bI={-50} cI={40} bD={interpolate(k, [0, 1], [10, 150])} cD={15} agarra={<EnMano.gladius />} agarraAng={interpolate(k, [0, 1], [95, -70])} />; })()}
+        <Persona x={300} y={PIE} h={460} t={t} seed={262} casco="legion" ropa={compa(262)} giro="34" expr="enojado" mira={0.8} agarraI={<EnMano.escudo />} agarraAngI={0} bI={-70} cI={20} agarra={<EnMano.gladius />} agarraAng={-30} bD={60} cD={40} inclina={6} />
+        {(() => { const k = prog(t, 679.95, 680.6); return <Yo x={600} y={PIE} h={580} t={t} giro="34" expr="enojado" mira={0.8} agarraI={<EnMano.escudo />} agarraAngI={0} bI={-70} cI={20} bD={interpolate(k, [0, 1], [10, 150])} cD={15} agarra={<EnMano.gladius />} agarraAng={interpolate(k, [0, 1], [95, -70])} inclina={4 + k * 4} />; })()}
         <Emote t={t} t0={680.6} t1={681.4} tipo="brillos" x={640} y={PIE - 560} s={1.1} />
         {t > 681.3 && <div style={{ position: "absolute", left: 1100, top: 150, width: 640, height: 330, borderRadius: 30, background: "#f6e3b4", border: "9px solid #2a1530", boxShadow: "0 12px 0 rgba(20,10,50,.35)", transform: `scale(${ent(t, 681.3)})` }}>
           <div style={{ position: "absolute", left: 0, right: 0, top: 14, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 58, color: C.rojo }}>THE GLADIUS</div>
@@ -430,9 +440,9 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
           {t > 699.6 && <Emote t={t} t0={699.6} tipo="sudor" {...L(xb, PIE - 60, 490)} />}
         </>;
       })()}
-      {([[1260, "FRONT LINE"], [760, "SECOND LINE"]] as const).map(([x, s]) => <div key={s} style={{ position: "absolute", left: x - 170, top: 945, width: 340, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 42, color: "#fff", WebkitTextStroke: "8px #2a1530", paintOrder: "stroke fill" }}>{s}</div>)}
-      <Chip t={t} t0={697.36} text="THE MEN BEHIND STEP FORWARD" color={C.violeta} x={180} y={140} size={48} />
-      <Chip t={t} t0={699.15} text="YOU STEP BACK TO BREATHE" color={C.teal} tinta={C.noche} x={180} y={245} size={48} />
+      {([[1260, "FRONT LINE"], [760, "SECOND LINE"]] as const).map(([x, s]) => <div key={s} style={{ position: "absolute", left: x - 170, top: 278, width: 340, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 42, color: "#fff", WebkitTextStroke: "8px #2a1530", paintOrder: "stroke fill" }}>{s}</div>)}
+      <Chip t={t} t0={697.36} t1={699.1} text="THE MEN BEHIND STEP FORWARD" color={C.violeta} x={180} y={140} size={48} />
+      <Chip t={t} t0={699.15} text="YOU STEP BACK TO BREATHE" color={C.teal} tinta={C.noche} x={180} y={140} size={48} />
     </Escena>
 
     {/* 171 · ese sistema le ganó muchas batallas a Roma: vos levantás el águila */}
@@ -719,20 +729,32 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       <Bosque t={t} luz={0.4} />
       <Lluvia t={t} n={90} angulo={20} op={0.35} />
       {(["XVII", "XVIII", "XIX"] as const).map((n, i) => {
-        const x = 760 + i * 400, tf = 760.67 + i * 0.18, f = prog(t, tf, tf + 1.0);
+        const x = 760 + i * 400, tf = 760.67 + i * 0.28, f = prog(t, tf, tf + 0.8);
         const tw = [758.51, 759.39, 760.05][i];
         const pul = 1 + (t > tw ? 0.14 * Math.exp(-(t - tw) * 6) : 0);
         const hombres = Math.round(5000 * (1 - f));
+        const marcha = (t - 756.77) * 22; // la columna avanza hacia el bosque
+        const vaiven = Math.sin(t * 2.1 + i * 1.7) * 4 + (t > tw ? Math.sin((t - tw) * 14) * 7 * Math.exp(-(t - tw) * 3) : 0);
         return (
           <React.Fragment key={n}>
-            <Signum x={x} y={620} s={0.55} n={n} op={1 - f * 0.9} dy={f * 160} pulso={pul} />
-            {Array.from({ length: 8 }, (_, j) => <div key={j} style={{ position: "absolute", left: 0, top: 0, opacity: 1 - prog(t, tf + j * 0.06, tf + j * 0.06 + 0.4) }}><Soldadito x={x - 150 + (j % 4) * 100} y={900 + Math.floor(j / 4) * 70} s={0.55} t={t} seed={500 + i * 10 + j} /></div>)}
+            <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `translateX(${marcha}px) rotate(${vaiven}deg)`, transformOrigin: `${x}px 980px` }}>
+              <Signum x={x} y={620} s={0.55} n={n} op={1 - f * 0.9} dy={f * 300} pulso={pul} />
+            </div>
+            {Array.from({ length: 8 }, (_, j) => { const tj = tf - 0.25 + (7 - j) * 0.05; return <div key={j} style={{ position: "absolute", left: 0, top: 0, opacity: 1 - prog(t, tj, tj + 0.35), transform: `translate(${marcha}px, ${prog(t, tj, tj + 0.35) * 40}px)` }}><Soldadito x={x - 150 + (j % 4) * 100 + Math.floor(j / 4) * 40} y={900 + Math.floor(j / 4) * 70} s={0.55} t={t + j * 0.11} seed={500 + i * 10 + j} avanza={1} /></div>; })}
             <div style={{ position: "absolute", left: x - 110, top: 300, width: 220, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 38, color: f > 0.5 ? "#8a8aa8" : "#fff", WebkitTextStroke: "7px #12061a", paintOrder: "stroke fill" }}>{hombres.toLocaleString("en-US")} MEN</div>
           </React.Fragment>
         );
       })}
+      {/* la niebla del bosque sube y se los va tragando */}
+      <Niebla t={t} y={interpolate(t, [756.8, 762], [990, 840])} color="#c8d0e0" op={0.25 + prog(t, 758, 761) * 0.35} alto={90} vel={30} seed={7} />
+      <Niebla t={t} y={interpolate(t, [757.5, 762], [1040, 900])} color="#dfe4ee" op={0.2 + prog(t, 759, 761.5) * 0.4} alto={70} vel={18} seed={11} />
       <AbsoluteFill style={{ background: `linear-gradient(180deg, transparent 55%, rgba(170,180,200,${prog(t, 760.6, 761.8) * 0.55}) 85%)` }} />
-      <Yo x={290} y={PIE} h={480} t={t} expr={t > 760.7 ? "triste" : "miedo"} mira={0.9} bD={20} cD={40} />
+      {(() => { const k = prog(t, 760.67, 761.2); const tiembla = Math.sin(t * 31) * 1.5; return <>
+        <Yo x={390 + tiembla} y={PIE} h={500} t={t} postura="agachado" giro="34" expr={t > 760.7 ? "triste" : "miedo"} mira={0.9} miraY={-0.2}
+          agarraI={<EnMano.antorcha t={t} />} agarraAngI={-90} bI={70} cI={70} bD={interpolate(k, [0, 1], [25, 95])} cD={interpolate(k, [0, 1], [70, 10])} inclina={6 + k * 6}
+          reaccion={t > 760.67 ? "ojos" : undefined} reaccionT0={760.7} />
+        {t > 760.7 && <Emote t={t} t0={760.75} tipo="susto" {...L(390, PIE, 420)} />}
+      </>; })()}
       <GrandeHasta t={t} t0={756.95} hasta={760.67} text="3 ENTIRE LEGIONS" x={1000} y={160} size={96} color="#fff" borde="#1d3a24" />
       <Grande t={t} t0={760.67} text="DISAPPEARED" x={1000} y={160} size={110} color="#8a9ad8" borde="#12061a" />
     </Escena>
@@ -741,7 +763,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={762.05} t1={766.63} zoom={0.02} entra="corte" golpes={[762.73, 763.45, 765.37]}>
       <Bosque t={t} luz={0.3} />
       <AbsoluteFill style={{ background: "rgba(10,8,24,.4)" }} />
-      <Num t={t} t0={762.1} t1={763.4} de={0} a={15000} x={600} y={270} size={130} />
+      <Num t={t} t0={762.1} t1={763.47} de={0} a={15000} x={600} y={270} size={130} />
       {t > 763.37 && <div style={{ position: "absolute", left: 930, top: 200, fontFamily, fontWeight: 700, fontSize: 130, color: "#fff", WebkitTextStroke: "10px #2a1530", paintOrder: "stroke fill" }}>–</div>}
       <Num t={t} t0={763.45} t1={764.1} de={15000} a={20000} x={1300} y={270} size={130} color={C.rojo} />
       {Array.from({ length: 20 }, (_, i) => { const td = i < 15 ? 762.15 + i * 0.08 : 763.45 + (i - 15) * 0.13; return t > td && <Casquito key={i} x={420 + i * 52} y={460} s={0.9} color={i < 15 ? "#e9a92a" : C.rojo} />; })}
