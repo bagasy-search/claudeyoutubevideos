@@ -7,9 +7,9 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { HallWorld, sceneOf, screenOfScene, PT } from "./hall3d";
-import { BigNum, COL, Card3D, Chips, Tag, e, setSlug, spr } from "../kits/yanqui3d/lib";
-import { makeVideo, Stamp } from "../kits/yanqui3d/engine";
-import { Words } from "../kits/yanqui3d/pieces";
+import { COL, Card3D, Tag, e, setSlug, spr } from "../kits/yanqui3d/lib";
+import { makeVideo } from "../kits/yanqui3d/engine";
+import { Stat, ZItem, ZocaloStack } from "./ui";
 import CAPS from "./caps.json";
 import AVW from "./avwin.json";
 import AVAIL from "./avail.json";
@@ -63,60 +63,64 @@ const M = makeVideo({
   ],
   pieces: (t, { at }) => {
     const L: React.ReactNode[] = [];
+    // piezas nivel nuevo (molde ck2510d/ui.tsx): el texto va al zócalo abajo-izq, los números en dorado a la izquierda
+    const ZS: ZItem[] = [];
+    const Z = (key: string, a: number, out: number, tone: ZItem["tone"], label: string, txt: string, x: Partial<ZItem> = {}) => ZS.push({ key, a, out, tone, label, txt, ...x });
     // A · la fuente tapada a los 0 s (hook de la tarjeta) en una tarjeta 3D junto a Loretta · 10:45
     {
       const a = 0.12, k = spr(t, a, 0.9);
       if (t < 3.6) L.push(<Card3D key="hk" id={vid("m_hook")} at={a} x={1080} y={150} w={760} h={428} ry={(1 - Math.min(1, k)) * -55 - 8} rx={3} z={(1 - Math.min(1, k)) * -1200} o={e(t, a, a + 0.12) * (1 - e(t, 3.3, 3.5))} label="SEVEN PANS · ONE LONG TABLE" labelCol={COL.amber} />);
     }
-    L.push(<BigNum key="1045" t={t} at={at("quarter")} text="10:45" x={360} y={300} size={140} col={COL.ink} sub="SERVICE AT ONE" out={3.4} />);
+    L.push(<Stat key="1045" t={t} at={at("quarter")} out={3.4} text="10:45" sub="SERVICE AT ONE" size={160} x={360} y={330} />);
     // B · el salón y las fuentes llegando
     if (t >= 3.52 && t < 14.3) {
       const u = t - 3.52;
       if (t < at("one", 10.5)) {
         const c = screenOfScene("hook", u, PT.pan(1));
         L.push(<Tag key="lt" t={t} at={at("long", 6.8)} x={c.x} y={c.y} dx={-240} dy={-170} text="THE LONG TABLE" col={COL.ink} out={at("one", 10.5) - 0.2} />);
-        L.push(<Words key="wc" t={t} items={[{ at: at("white", 9.5), txt: "A WHITE CLOTH" }]} out={at("one", 10.5) - 0.15} y={900} size={74} />);
+        Z("wc", at("white", 9.5), at("one", 10.5) - 0.15, "note", "THE FUNERAL LUNCH", "A WHITE CLOTH");
       }
-      L.push(<Words key="obo" t={t} items={[{ at: at("one", 10.5), txt: "ONE BY ONE…", col: COL.amber }]} out={14.2} y={150} size={96} />);
+      Z("obo", at("one", 10.5), 14.2, "tip", "THE FUNERAL LUNCH", "ONE BY ONE…");
     }
     // D · el repasador
-    L.push(<Words key="dt" t={t} items={[{ at: at("wrapped", 16.5), txt: "WRAPPED IN A DISH TOWEL" }]} out={20.3} y={900} size={72} />);
+    Z("dt", at("wrapped", 16.5), 20.3, "note", "THE FUNERAL LUNCH", "WRAPPED IN A DISH TOWEL");
     // E · junto a las otras
-    L.push(<Words key="nx" t={t} items={[{ at: at("next", 20), txt: "NEXT TO THE OTHERS", col: COL.amber }]} out={at("under", 23.5) - 0.2} y={150} size={84} />);
+    Z("nx", at("next", 20), at("under", 23.5) - 0.2, "tip", "THE FUNERAL LUNCH", "NEXT TO THE OTHERS");
     // F · 7 · la tarjetita
-    L.push(<BigNum key="7" t={t} at={at("under", 23.5) - 0.1} text="7" x={1500} y={300} size={220} col={COL.amber} sub="PANS IN A ROW" out={at("folded", 26) - 0.35} />);
+    L.push(<Stat key="7" t={t} at={at("under", 23.5) - 0.1} out={at("folded", 26) - 0.35} text="7" sub="PANS IN A ROW" />);
     if (t >= at("folded", 26) - 0.3 && t < 32.7) {
       const u = t - (at("folded", 26) - 0.3), c = screenOfScene("card:3", u, PT.card(3));
       L.push(<Tag key="fn" t={t} at={at("family", 29)} x={c.x} y={c.y - 40} dx={-300} dy={-200} text="A FAMILY NAME" col={COL.ink} out={32.6} />);
-      L.push(<Words key="home" t={t} items={[{ at: at("finds", 31), txt: "SO THE PAN FINDS ITS WAY HOME", col: COL.amber }]} out={32.65} y={900} size={70} />);
+      Z("home", at("finds", 31), 32.65, "tip", "THE LITTLE CARD", "SO THE PAN FINDS ITS WAY HOME");
     }
     // G · nadie lo planeó
-    L.push(<Words key="np" t={t} items={[{ at: at("Nobody", 33), txt: "NOBODY PLANNED IT." }, { at: at("Nobody", 34.5), txt: "NOBODY MADE A LIST.", col: COL.amber }]} out={36.2} y={880} size={84} />);
+    Z("np", at("Nobody", 33), 36.2, "list", "NOBODY CALLED ANYBODY", "", { items: [{ at: at("Nobody", 33), txt: "NOBODY PLANNED IT." }, { at: at("Nobody", 34.5), txt: "NOBODY MADE A LIST." }] });
     // H · ella sabía · 30 años
-    L.push(<Words key="kn" t={t} items={[{ at: at("knew", 37.5), txt: "SHE KNEW EXACTLY WHAT TO BRING" }]} out={at("same", 41) - 0.25} y={150} size={70} />);
-    L.push(<BigNum key="30" t={t} at={at("30", 43.5)} text="30 YEARS" x={1380} y={300} size={150} col={COL.amber} sub="THE SAME PAN · EVERY FUNERAL" out={at("when", 45) - 0.15} />);
+    Z("kn", at("knew", 37.5), at("same", 41) - 0.25, "note", "NOBODY CALLED ANYBODY", "SHE KNEW EXACTLY WHAT TO BRING");
+    L.push(<Stat key="30" t={t} at={at("30", 43.5)} out={at("when", 45) - 0.15} text="30" sub="YEARS · THE SAME PAN" />);
     // I · la familia
-    L.push(<Words key="cem" t={t} items={[{ at: at("after", 47.4), txt: "AFTER THE CEMETERY" }]} out={48.8} y={150} size={92} />);
+    Z("cem", at("after", 47.4), 48.8, "note", "THE FAMILY", "AFTER THE CEMETERY");
     // J · frío, cansados, sin hambre
-    L.push(<Chips key="cold" t={t} at={at("cold", 49)} items={["COLD", "TIRED", "NOT HUNGRY AT ALL"]} out={at("take", 52.3) - 0.1} y={860} />);
-    L.push(<Words key="sp" t={t} items={[{ at: at("spoonful", 52.8), txt: "ONE SPOONFUL OF EACH", col: COL.amber }]} out={54.45} y={880} size={80} />);
+    Z("cold", at("cold", 49), at("take", 52.3) - 0.1, "list", "THE FAMILY", "", { items: ["COLD", "TIRED", "NOT HUNGRY AT ALL"].map((txt, i) => ({ at: at("cold", 49) + i * 0.45, txt })) });
+    Z("sp", at("spoonful", 52.8), 54.45, "tip", "THE FAMILY", "ONE SPOONFUL OF EACH");
     // K · se sientan · 60 años
-    L.push(<Words key="sd" t={t} items={[{ at: at("first", 54.8), txt: "FOR THE FIRST TIME THAT DAY…" }, { at: at("sit", 56.5), txt: "THEY SAT DOWN.", col: COL.amber }]} out={at("stood", 57) - 0.3} y={150} size={80} />);
+    Z("sd", at("first", 54.8), at("stood", 57) - 0.3, "list", "THE FAMILY", "", { items: [{ at: at("first", 54.8), txt: "FIRST TIME THAT DAY…" }, { at: at("sit", 56.5), txt: "THEY SAT DOWN." }] });
     if (t >= 54.514 && t < 57.6) {
       const c = screenOfScene("head", t - 54.514, PT.head);
       L.push(<Tag key="ht" t={t} at={55.0} x={c.x} y={c.y} dx={260} dy={-160} text="THE FAMILY'S TABLE" col={COL.ink} out={57.4} size={40} />);
     }
-    L.push(<BigNum key="60" t={t} at={at("60", 59.3)} text="60 YEARS" x={1400} y={300} size={150} col={COL.amber} sub="BEHIND THAT TABLE" out={64.7} />);
+    L.push(<Stat key="60" t={t} at={at("60", 59.3)} out={64.7} text="60" sub="YEARS BEHIND THAT TABLE" />);
     // L · las siete
-    L.push(<Words key="t7" t={t} items={[{ at: at("seven", 65.2), txt: "7 FUNERAL CASSEROLES", col: COL.amber }]} out={at("Who", 68.4) - 0.1} y={880} size={92} />);
-    L.push(<Chips key="who" t={t} at={at("Who", 68.4)} items={["WHO BROUGHT IT", "WHY THAT ONE", "THE WHOLE RECIPE"]} out={at("because", 75.3)} y={860} />);
+    Z("t7", at("seven", 65.2), at("Who", 68.4) - 0.1, "tip", "TODAY", "7 FUNERAL CASSEROLES");
+    Z("who", at("Who", 68.4), at("because", 75.3), "list", "TODAY", "", { items: ["WHO BROUGHT IT", "WHY THAT ONE", "THE WHOLE RECIPE"].map((txt, i) => ({ at: at("Who", 68.4) + i * 0.45, txt })) });
     // M · la parte triste
-    L.push(<Stamp key="nm" t={t} at={at("Nobody", 77.6)} text="NOBODY MAKES THEM ANYMORE" x={960} y={330} rot={-5} size={86} out={at("order", 80) - 0.35} />);
+    Z("nm", at("Nobody", 77.6), at("order", 80) - 0.35, "warn", "THE SAD PART", "NOBODY MAKES THEM ANYMORE");
     // N · la bandeja
-    L.push(<Words key="ff" t={t} items={[{ at: at("tray", 81), txt: "A STORE-BOUGHT TRAY" }]} out={82.95} y={150} size={80} />);
+    Z("ff", at("tray", 81), 82.95, "note", "THE SAD PART", "A STORE-BOUGHT TRAY");
     // O · tu nombre bajo la tapa
-    L.push(<Words key="fd" t={t} items={[{ at: at("fine,", 84), txt: "IT'S FINE. IT'S FOOD." }]} out={at("but", 86) - 0.05} y={880} size={80} />);
-    L.push(<Words key="nm2" t={t} items={[{ at: at("but", 86), txt: "BUT IT ISN'T YOUR PAN", col: COL.amber }]} out={MIN1_END + 1} y={880} size={84} />);
+    Z("fd", at("fine,", 84), at("but", 86) - 0.05, "note", "THE SAD PART", "IT'S FINE. IT'S FOOD.");
+    Z("nm2", at("but", 86), MIN1_END + 1, "tip", "THE SAD PART", "BUT IT ISN'T YOUR PAN");
+    L.push(<ZocaloStack key="zs" t={t} items={ZS} />);
     return L;
   },
 });
