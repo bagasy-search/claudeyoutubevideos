@@ -82,7 +82,7 @@ const Cuadro0: React.FC = () => {
   const f = useF();
   const hx = 2780 - f * 5;
   return (
-    <Escena Set={Broadway} pal={PAL} setProps={{ nieve: false }} claves={[mira(0, 2250, 520, 1.0), mira(90, 2330, 520, 1.06, { curva: "in" })]}
+    <Escena Set={Broadway} pal={PAL} setProps={{ nieve: false }} claves={[mira(0, 2370, 540, 1.0), mira(90, 2440, 540, 1.06, { curva: "in" })]}
       medio={<>
         <NubePolvo x={hx + 420} piso={BWY_PISO + 130} k={0.6} f={f} color="#2a1a14" ancho={420} />
         <Montado x={hx} piso={BWY_PISO + 130} fase={(f % 14) / 14} dir={-1} s={1.8} variante="mara" look={LEO3} cara="miedo" escala={ESC * 1.5} luz={L_TEL}
@@ -555,7 +555,7 @@ const Monjes33: React.FC = () => {
   const f = useF();
   const JP = JAPON_PISO + 60;
   return (
-    <Escena Set={PortonMonasterio} pal={PAL_ANT} setProps={{ hora: 0.5 }} claves={[mira(0, 1600, 650, 0.95), mira(156, 1650, 660, 1.08)]}
+    <Escena Set={PortonMonasterio} pal={PAL_ANT} setProps={{ hora: 0.5 }} claves={[mira(0, 1600, 720, 1.3), mira(156, 1640, 720, 1.42)]}
       medio={<>
         {[0, 1, 2, 3, 4].map((k) => {
           const distraido = k === 3 && f > 30 && f < 110;
@@ -759,7 +759,7 @@ const Acostado6: React.FC = () => {
 // 44,3-47,5 · diez años: la línea de 14 a 24 con los celulares que fue teniendo
 const Linea10: React.FC = () => {
   const f = useF();
-  const p = interpolate(f, [6, 80], [0, 1], cl);
+  const p = interpolate(f, [0, 80], [0.2, 1], cl);
   const X0 = 300, X1 = 1620, Y = 640;
   const tels = [14, 16, 18, 20, 22, 24];
   return (
@@ -877,7 +877,7 @@ const PasarCorto: React.FC = () => {
     <Escena Set={PasilloWilson} pal={PAL} setProps={{ apertura: 1 }} claves={[mira(0, WILSON.tenzo - 10, 700, 2.2), mira(90, WILSON.tenzo - 10, 700, 2.3)]}
       medio={<>
         <Actor look={TENZO} escala={ESC} seed={2} luz={L_ORO_I} ruta={[{ f: 0, x: WILSON.tenzo, y: W }]} dir={[{ f: 0, v: -1 }]}
-          poses={[{ f: 0, v: FAROL }, ...alterna({ ...FAROL, hI: 80, cI: 120 }, { ...FAROL, hI: 70, cI: 100 }, 30, 90, 6)]} caras={[{ f: 0, v: "feliz" }, { f: 32, v: "cansado" }, { f: 70, v: "feliz" }]}
+          poses={[{ f: 0, v: FAROL }, ...alterna({ ...FAROL, hI: 80, cI: 120 }, { ...FAROL, hI: 70, cI: 100 }, 30, 90, 6)]} caras={[{ f: 0, v: "cansado" }, { f: 70, v: "feliz" }]}
           habla={[[0, 26], [32, 86]]} enManoD={<FarolMano />} />
         <NieveHombros x={WILSON.tenzo} y={W - 228} />
         <Copos x={WILSON.tenzo - 420} y={W - 620} w={840} h={620} n={26} />
@@ -1082,7 +1082,7 @@ const Gancho41: React.FC = () => {
 const LEO_CARA_Y = P - 203; // centro de la cara de Leo sentado en el colchón (medido en la planilla ojo_v1)
 const TENZO_CARA_Y = P - 119; // centro de la cara de Tenzo en loto
 // primer plano de Leo (la cara llena el cuadro; mira a la derecha, aire adelante)
-const PPLeo: React.FC<{ leo: LeoP; hud?: React.ReactNode; z?: number; dur?: number; dx?: number; dy?: number; antes?: React.ReactNode; despues?: React.ReactNode }> = ({ leo, hud, z = 3.5, dur = 120, dx = 110, dy = 40, antes, despues }) => (
+const PPLeo: React.FC<{ leo: LeoP; hud?: React.ReactNode; z?: number; dur?: number; dx?: number; dy?: number; antes?: React.ReactNode; despues?: React.ReactNode }> = ({ leo, hud, z = 4.1, dur = 120, dx = 110, dy = 20, antes, despues }) => (
   <CuartoCalido claves={[mira(0, LX + dx, LEO_CARA_Y + dy, z), mira(dur, LX + dx, LEO_CARA_Y + dy, z + 0.18, { curva: "in" })]} hud={hud}>
     {antes}
     <LeoSentado tel={false} luz={L_ORO_D} {...leo} />
@@ -1098,12 +1098,12 @@ const PPTenzo: React.FC<{ tenzo: TenzoP; hud?: React.ReactNode; z?: number; dur?
 // el hombro del otro en primer término (sobre el hombro): silueta oscura con borde de farol
 const Hombro: React.FC<{ lado: "izq" | "der"; quien: "tenzo" | "leo" }> = ({ lado, quien }) => {
   const s = lado === "izq" ? 1 : -1;
-  const cab = quien === "tenzo" ? "#5a4636" : "#16161b", cue = quien === "tenzo" ? "#3c3630" : "#121216";
+  const cab = quien === "tenzo" ? "#5a4636" : "#16161b", cue = quien === "tenzo" ? "#8e8a82" : "#121216";
   return (
     <svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0 }}>
       <g transform={`translate(${lado === "izq" ? 0 : 1920},0) scale(${s},1)`}>
         <path d="M-60,1080 L-60,700 Q40,600 250,610 Q440,625 520,800 L560,1080 Z" fill={cue} />
-        {quien === "leo" ? <path d="M40,640 Q20,330 220,300 Q420,290 430,520 Q440,640 380,690 Z" fill={cab} /> : <ellipse cx={230} cy={470} rx={190} ry={205} fill={cab} />}
+        {quien === "leo" ? <path d="M40,640 Q20,330 220,300 Q420,290 430,520 Q440,640 380,690 Z" fill={cab} /> : <g><rect x={170} y={600} width={130} height={90} fill="#d9a274" /><ellipse cx={230} cy={460} rx={185} ry={200} fill="#e0aa7c" /><ellipse cx={405} cy={480} rx={30} ry={52} fill="#d9a274" /><path d="M60,520 Q230,600 410,520" stroke="#c99068" strokeWidth={6} fill="none" opacity={0.6} /><path d="M-60,700 Q120,640 230,700 Q340,640 540,700 L540,760 L-60,760 Z" fill="#8e8a82" /><path d="M150,700 L300,1080" stroke="#7a2f22" strokeWidth={26} /></g>}
         <path d={quien === "leo" ? "M420,470 Q440,600 380,690" : "M405,400 Q440,500 400,600"} stroke={ORO} strokeWidth={10} fill="none" opacity={0.55} strokeLinecap="round" />
         <path d="M500,760 Q530,850 545,1080" stroke={ORO} strokeWidth={8} fill="none" opacity={0.4} />
       </g>
@@ -1127,6 +1127,7 @@ const SINGLE = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1
 
 // 0-3 · CUADRO 0 con el temporizador: «10:00» se rompe y pasa a «4:11»
 const Cuadro0b: React.FC = () => {
+  // (cámara corrida a la derecha: el cartel GREEN ya no queda mordido)
   const f = useF();
   const roto = f >= 46;
   const golpe = roto ? interpolate(f, [46, 54], [1.35, 1], cl) : 1;
@@ -1159,7 +1160,7 @@ const RelojLuz: React.FC<{ txt: string; x: number; y: number }> = ({ txt, x, y }
   </svg>
 );
 const AlbaTel2: React.FC = () => (
-  <Escena Set={Cuarto} pal={PAL} claves={[mira(0, LX + 120, LEO_CARA_Y + 50, 3.4), mira(81, LX + 115, LEO_CARA_Y + 50, 3.6)]}
+  <Escena Set={Cuarto} pal={PAL} claves={[mira(0, LX + 120, LEO_CARA_Y + 20, 3.9), mira(81, LX + 115, LEO_CARA_Y + 20, 4.1)]}
     detras={oscuro}
     medio={<><LeoSentado poses={alterna(SENT_CEL, { ...SENT_CEL, cD: 135 }, 0, 81, 8)} luz={{ lado: 1, color: ACENTO, fuerza: 0.85 }} /><Halo x={LX + 120} y={LEO_CARA_Y + 30} r={220} color="#7fb0ff" fuerza={0.25} /></>}
     hud={<RelojLuz txt="2:00" x={1480} y={820} />} />
@@ -1167,12 +1168,12 @@ const AlbaTel2: React.FC = () => (
 // 10-13,1 · «four hours… and eleven minutes»: el contador corre sobre la cara de ojos rojos
 const Cuenta4h2: React.FC = () => {
   const f = useF();
-  const m = Math.round(interpolate(f, [0, 33, 60, 72], [0, 240, 240, 251], cl));
+  const m = Math.round(interpolate(f, [0, 33, 72], [0, 240, 251], cl));
   const punch = interpolate(f, [72, 80], [1.3, 1], cl);
   return (
     <Escena Set={Cuarto} pal={PAL} claves={[mira(0, LX + 180, LEO_CARA_Y + 30, 3.0), mira(93, LX + 170, LEO_CARA_Y + 30, 3.2, { curva: "in" })]}
       detras={<Alba t={1} />}
-      medio={<><LeoSentado poses={[{ f: 0, v: SENT_CEL }, { f: 72, v: { ...SENT_CEL, cabeza: 8 } }]} caras={[{ f: 0, v: "cansado" }, { f: 74, v: "sorpresa" }]} /><Halo x={LX + 20} y={LEO_CARA_Y - 10} r={90} color="#ff3a2a" fuerza={0.3} /></>}
+      medio={<><LeoSentado poses={[...alterna(SENT_CEL, { ...SENT_CEL, cD: 138, cabeza: 26 }, 0, 70, 7), { f: 72, v: { ...SENT_CEL, cabeza: 8 } }]} caras={[{ f: 0, v: "cansado" }, { f: 74, v: "sorpresa" }]} /><Halo x={LX + 20} y={LEO_CARA_Y - 10} r={90} color="#ff3a2a" fuerza={0.3} /></>}
       hud={<>
         <svg {...svgP}><Halo x={1380} y={520} r={420} color={ACENTO} fuerza={0.22} /></svg>
         <div style={{ position: "absolute", left: 1040, top: 330, width: 760, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 230, color: f >= 72 ? ACENTO : "#f4efe6", transform: `scale(${punch})`, textShadow: "0 6px 24px rgba(0,0,0,.6)" }}>{`${Math.floor(m / 60)}:${String(m % 60).padStart(2, "0")}`}</div>
@@ -1313,7 +1314,7 @@ const Titere: React.FC = () => {
           return <path key={i} d={`M${sx},${sy} L${tx},${ty}`} stroke="#f4efe6" strokeWidth={2.5} opacity={0.8} />;
         })}
       </svg>
-      <ManoLeo texto="like it belongs to somebody else." x={110} y={120} desde={56} tam={58} />
+      <ManoLeo texto="like it belongs to somebody else." x={110} y={250} desde={56} tam={58} />
       <Hud min={390} dia={5} estado="sube" />
     </AbsoluteFill>
   );
@@ -1339,14 +1340,14 @@ const Linea10b: React.FC = () => {
         <rect x={X0} y={Y - 6} width={(X1 - X0) * p} height={12} rx={6} fill={ACENTO} />
         {[0, 2, 4, 6, 8, 10].map((k, i) => {
           const x = X0 + ((X1 - X0) * k) / 10;
-          const s = interpolate(f, [6 + k * 7.4, 14 + k * 7.4], [0, 1], cl);
+          const s = k <= 2 ? 1 : interpolate(f, [k * 7.4 - 14, k * 7.4 - 6], [0, 1], cl);
           return <g key={k}>
             <rect x={x - 3} y={Y + 14} width={6} height={26} fill={p >= k / 10 ? ACENTO : "#4a4f58"} />
             <text x={x} y={Y + 84} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={40} fill={p >= k / 10 ? "#f4efe6" : "#6a6f78"}>{14 + k}</text>
             {s > 0 && <MiniLeo x={x} y={Y - 20} s={(0.9 + i * 0.16) * s} />}
           </g>;
         })}
-        <text x={960} y={250} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={92} fill="#f4efe6" opacity={SINGLE(f, 0, 12)}>10 YEARS</text>
+        <text x={960} y={250} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={92} fill="#f4efe6" opacity={1}>10 YEARS</text>
         <text x={1640} y={410} textAnchor="end" fontFamily={F_HUD} fontWeight={600} fontSize={64} fill={ACENTO} opacity={SINGLE(f, 30, 40)}>AGE {edad}</text>
       </svg>
       <Hud min={390} dia={5} />
@@ -1485,7 +1486,7 @@ const Fachada10c: React.FC = () => {
         <Actor look={TENZO} escala={ESC} seed={2} luz={L_ORO_I} ruta={[{ f: 0, x: 1200, y: WILSON_PISO }, { f: L(72.6), x: 1560, y: WILSON_PISO }]}
           poses={[{ f: 0, v: FAROL }, { f: L(73.4), v: { ...FAROL, hI: 150, cI: 10, cabeza: -14 } }]} caras={[{ f: 0, v: "neutral" }, { f: L(73.6), v: "feliz" }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: L(72.8), v: { x: 0.5, y: -1 } }]} enManoD={<FarolMano />} />
       </>}
-      hud={<><Hud min={390} dia={5} /><ManoLeo texto="one blue window." x={120} y={160} desde={L(74.2)} tam={62} /></>} />
+      hud={<><Hud min={390} dia={5} /><ManoLeo texto="one blue window." x={120} y={250} desde={L(74.2)} tam={62} /></>} />
   );
 };
 // 76,3-78,7 · Tenzo baja la vista al celular (la luz azul le pega desde abajo)
@@ -1513,7 +1514,7 @@ const TelPrendido2: React.FC = () => (
 // 80,4-83,4 · «May I come in? It is cold and I am old»: tirita, se frota las manos, le sale vaho
 const Vaho: React.FC<{ x: number; y: number; f0: number }> = ({ x, y, f0 }) => {
   const f = useF();
-  return <g>{[0, 26, 52].map((d, i) => { const t = f - f0 - d; if (t < 0 || t > 30) return null; return <circle key={i} cx={x - t * 3} cy={y - t * 1.6} r={10 + t * 1.3} fill="#eef2f6" opacity={0.5 * (1 - t / 30)} />; })}</g>;
+  return <g>{[0, 26, 52].map((d, i) => { const t = f - f0 - d; if (t < 0 || t > 30) return null; return <circle key={i} cx={x - t * 3} cy={y - t * 1.6} r={10 + t * 1.3} fill="#eef2f6" opacity={0.8 * (1 - t / 30)} />; })}</g>;
 };
 const PasarCorto2: React.FC = () => {
   const W = WILSON_PISO;
@@ -1539,9 +1540,9 @@ const Cuarto12b: React.FC = () => {
       medio={<LeoSentado caras={[{ f: 0, v: "triste" }]} />}
       hud={<>
         <Hud min={390} dia={5} />
-        <ManoLeo texto="a mattress." x={140} y={180} desde={L(85.1)} hasta={L(86.4)} tam={70} />
-        <ManoLeo texto="pizza boxes." x={140} y={180} desde={L(86.7)} hasta={L(87.9)} tam={70} />
-        <ManoLeo texto="the delivery bag." x={140} y={180} desde={L(88.1)} hasta={L(89.3)} tam={70} />
+        <ManoLeo texto="a mattress." x={140} y={250} desde={L(85.1)} hasta={L(86.4)} tam={70} />
+        <ManoLeo texto="pizza boxes." x={140} y={250} desde={L(86.7)} hasta={L(87.9)} tam={70} />
+        <ManoLeo texto="the delivery bag." x={140} y={250} desde={L(88.1)} hasta={L(89.3)} tam={70} />
         <ManoLeo texto="drawings he never finished." x={140} y={900} desde={L(89.8)} tam={66} />
       </>} />
   );
@@ -1660,7 +1661,7 @@ const CaraRoja17b: React.FC = () => {
     <Escena Set={CaminoChina} pal={PAL_ANT} claves={cl2}
       medio={<>
         <ChinaJinete t={t} f={f} cara={f < L(139.6) ? "cansado" : "miedo"} pose={{ ...POSE_JINETE, tronco: 26, hI: f > L(141) ? 110 + Math.sin(f / 3) * 30 : 60, cI: 40 }} />
-        <Halo x={hxDe(t) - 10} y={CP - 400} r={120} color="#ff3a2a" fuerza={0.25 + 0.55 * rojo} />
+        <Halo x={hxDe(t) - 4} y={CP - 335} r={62} color="#ff2a1a" fuerza={0.2 + 0.7 * rojo} />
       </>}
       hud={<Lineas dir={-1} n={10} />} />
   );
@@ -1712,7 +1713,7 @@ const Fantasma20: React.FC = () => {
   const f = useF();
   return (
     <CuartoCalido claves={[mira(0, LX - 60, 640, 1.9), mira(111, LX - 60, 640, 2.0)]} hud={<><Hud min={390} dia={5} /><ManoLeo texto={"i'm the guy"} x={1200} y={180} desde={69} /><ManoLeo texto={"on the horse."} x={1260} y={270} desde={78} /></>}>
-      <g opacity={0.38 * SINGLE(f, 20, 50)}><Montado x={LX - 120} piso={P - 10} fase={(f % 14) / 14} dir={1} s={1.15} variante="mara" look={LEO3} cara="miedo" escala={ESC} luz={L_TEL} pose={{ ...POSE_JINETE, hD: 60, cD: 125, cabeza: 18 }} /></g>
+      <g opacity={0.55 * SINGLE(f, 10, 30)}><Montado x={LX - 120} piso={P - 10} fase={(f % 14) / 14} dir={1} s={1.15} variante="mara" look={LEO3} cara="miedo" escala={ESC} luz={L_TEL} pose={{ ...POSE_JINETE, hD: 60, cD: 125, cabeza: 18 }} /></g>
       <LeoSentado tel={false} luz={L_ORO_D} poses={[{ f: 0, v: { ...SENT, cabeza: 12 } }, { f: 70, v: { ...SENT, cabeza: 12, hD: 120, cD: 150 } }]} caras={[{ f: 0, v: "triste" }]} habla={[[0, 108]]} />
     </CuartoCalido>
   );
@@ -1726,7 +1727,7 @@ const CaballoAire: React.FC<{ f0: number; x: number; y: number; s?: number; dur?
   return (
     <svg {...svgP}>
       <defs><clipPath id={`ca${f0}`}><rect x={x - w / 2 - 40} y={y - 400 * s} width={(w + 80) * k} height={700 * s} /></clipPath></defs>
-      <g clipPath={`url(#ca${f0})`} opacity={0.9}><Caballo x={x} piso={y} fase={0.25} s={s} variante="mara" neon={neon} quieto /></g>
+      <g clipPath={`url(#ca${f0})`} opacity={0.55}><Caballo x={x} piso={y} fase={0.25} s={s} variante="mara" neon={neon} quieto /></g>
       {k < 1 && <circle cx={x - w / 2 + (w + 40) * k} cy={y - 200 * s} r={14} fill="#fff4dc" />}
     </svg>
   );
@@ -1737,7 +1738,7 @@ const Habito20: React.FC = () => {
     <SobreTenzo dur={147} tenzo={{ poses: [{ f: 0, v: HABLA_A }, { f: L(167.4), v: { ...LOTO, hD: 120, cD: 20 } }, { f: L(168.4), v: { ...LOTO, hD: 100, cD: 30 } }, { f: L(169.2), v: HABLA_B }], caras: [{ f: 0, v: "feliz" }, { f: L(167.5), v: "neutral" }], habla: [[0, 140]] }}
       hud={<>
         <Hud min={390} dia={5} />
-        <CaballoAire f0={L(167.4)} x={760} y={700} s={1.1} dur={40} />
+        <CaballoAire f0={L(167.4)} x={720} y={470} s={0.95} dur={40} />
         <div style={{ position: "absolute", left: 520, top: 150, width: 500, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 70, letterSpacing: 10, color: ORO, opacity: SINGLE(useF(), L(167.8), L(168.2)) }}>HABIT</div>
         <div style={{ position: "absolute", left: 520, top: 240, width: 500, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 46, letterSpacing: 6, color: "#f4efe6", opacity: SINGLE(useF(), L(168.8), L(169.2)) }}>10 YEARS</div>
       </>} />
@@ -1768,7 +1769,7 @@ const Bajarse21: React.FC = () => {
     <Escena Set={Broadway} pal={PAL} claves={[mira(0, hx - 30, BWY_PISO - 220, 1.9), ...Array.from({ length: 4 }, (_, k) => mira(k * 30 + 30, 4300 - (300 + k * 30 + 30) * 6.5 - 30, BWY_PISO - 220, 1.95))]}
       medio={<Montado x={hx} piso={BWY_PISO + 30} fase={(f % 14) / 14} dir={-1} s={1.3} variante="mara" look={LEO3} cara={f % 40 < 20 ? "miedo" : "duda"} escala={ESC} luz={L_TEL}
         pose={{ ...POSE_JINETE, tronco: 26, hD: 70, cD: 60, hI: 75, cI: 55, cabeza: 30, pD: 40 + Math.sin(f / 4) * 20 }} />}
-      hud={<><Hud min={390} dia={5} estado="sube" /><Lineas dir={1} /><ManoLeo texto="how do you get off?" x={120} y={160} desde={50} tam={64} /></>} />
+      hud={<><Hud min={390} dia={5} estado="sube" /><Lineas dir={1} /><ManoLeo texto="how do you get off?" x={120} y={250} desde={50} tam={64} /></>} />
   );
 };
 // 181,4-183,4 · inserto: un solo dedo que sube, con brillo
@@ -1794,9 +1795,9 @@ const Antes22b: React.FC = () => {
   const T = 183.4, f = useF(), L = (t: number) => fr(t, T);
   const items = [{ t: "before the sitting", a: L(186.9) }, { t: "before the chanting", a: L(188.0) }, { t: "before anything", a: L(189.2) }];
   return (
-    <CuartoCalido claves={[mira(0, LX - 520, LEO_CARA_Y + 60, 2.6), mira(L(190.7), LX - 520, LEO_CARA_Y + 60, 2.7)]} hud={<>
+    <CuartoCalido claves={[mira(0, LX + 300, LEO_CARA_Y + 60, 2.3), mira(L(190.7), LX + 280, LEO_CARA_Y + 40, 2.5, { curva: "in" })]} hud={<>
       <svg {...svgP}>
-        <Hoja x={720} y={520} w={1180} h={760} rot={-1.5}>
+        <Hoja x={1260} y={520} w={1040} h={720} rot={-1.5}><g transform="translate(560,0)">
           <text x={200} y={180} fontFamily={F_MANO} fontSize={66} fontWeight={700} fill="#2a2622" opacity={SINGLE(f, 0, 10)}>the first word:</text>
           <rect x={720} y={120} width={240} height={96} rx={10} fill="none" stroke={ACENTO} strokeWidth={6} opacity={SINGLE(f, 10, 20)} />
           <text x={840} y={190} textAnchor="middle" fontFamily={F_MANO} fontSize={70} fontWeight={700} fill={ACENTO} opacity={SINGLE(f, L(189.6), L(190.2))}>?</text>
@@ -1806,11 +1807,11 @@ const Antes22b: React.FC = () => {
               <rect x={240} y={346 + i * 120} width={640 * SINGLE(f, it.a + 4, it.a + 20)} height={6} rx={3} fill={ACENTO} />
             </g>
           ))}
-        </Hoja>
+        </g></Hoja>
       </svg>
       <Hud min={390} dia={5} />
     </>}>
-      <LeoSentado tel={false} luz={L_ORO_D} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: SENT }, { f: 20, v: { ...SENT, tronco: 22, cabeza: 14 } }]} caras={[{ f: 0, v: "duda" }]} miradas={[{ f: 0, v: { x: -1, y: 0.3 } }]} />
+      <LeoSentado tel={false} luz={L_ORO_D} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: SENT }, { f: 20, v: { ...SENT, tronco: 22, cabeza: 14 } }, ...items.flatMap((it) => [{ f: it.a, v: { ...SENT, tronco: 28, cabeza: 22, hD: 60, cD: 40 } }, { f: it.a + 14, v: { ...SENT, tronco: 20, cabeza: 10 } }]), { f: L(189.6), v: { ...SENT, tronco: 30, cabeza: 4, hD: 100, cD: 60 } }]} caras={[{ f: 0, v: "duda" }, { f: L(189.6), v: "sorpresa" }]} miradas={[{ f: 0, v: { x: -1, y: 0.3 } }, ...items.map((it, i) => ({ f: it.a, v: { x: -1, y: 0.1 + i * 0.25 } })), { f: L(189.6), v: { x: -1, y: -0.4 } }]} />
     </CuartoCalido>
   );
 };
@@ -1836,12 +1837,12 @@ const Gigante24: React.FC = () => {
   const fa = (f % 20) / 20;
   return (
     <Escena Set={Cuarto} pal={PAL} claves={[mira(0, 1500, 560, 0.7), mira(L(199.8), 1500, 600, 0.78, { curva: "in" })]}
-      detras={<>{oscuro}{oscuro}</>}
+      detras={<Halo x={760} y={P - 100} r={700} color={ORO} fuerza={0.3} />}
       medio={<>
         <Caballo x={1680} piso={P} fase={f < L(198.3) ? fa : 0.25} s={3.2} variante="mara" quieto={f >= L(198.3)} />
         <Actor look={LEO3} escala={ESC * 0.9} seed={1} luz={L_TEL} ruta={[{ f: 0, x: 760, y: P }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: { hD: 40, cD: 30, hI: 30, cI: 30 } }, { f: L(197.2), v: { hD: 130, cD: 40, hI: 120, cI: 40, tronco: -8 } }]} caras={[{ f: 0, v: "sorpresa" }, { f: L(197.2), v: "miedo" }]} miradas={[{ f: 0, v: { x: 1, y: -1 } }]} />
       </>}
-      hud={<><Hud min={390} dia={5} /><ManoLeo texto="bigger than you." x={140} y={160} desde={L(198.4)} tam={70} /></>} />
+      hud={<><Hud min={390} dia={5} /><ManoLeo texto="bigger than you." x={140} y={250} desde={L(198.4)} tam={70} /></>} />
   );
 };
 // 199,8-204,8 · «stop you. for one breath»: el círculo de una respiración sobre la cara de Leo
@@ -1850,13 +1851,13 @@ const Respiro24: React.FC = () => {
   const a = L(202.2), b = L(204.6);
   const k = f < a ? 0 : Math.sin(Math.PI * SINGLE(f, a, b));
   return (
-    <PPLeo dur={150} z={3.3} dx={-40} leo={{ poses: [{ f: 0, v: SENT }, { f: L(202.2), v: { ...SENT, cabeza: -6, tronco: -4 } }], caras: [{ f: 0, v: "duda" }, { f: L(202.0), v: "cansado" }] }}
+    <PPLeo dur={150} z={3.3} dx={-40} leo={{ poses: [{ f: 0, v: SENT }, { f: L(202.2), v: { ...SENT, cabeza: -6, tronco: -4 } }], caras: [{ f: 0, v: "duda" }, { f: L(202.0), v: "cansado" }, { f: L(203.6), v: "feliz" }] }}
       hud={<>
         <Hud min={390} dia={5} />
         <svg {...svgP}>
-          <circle cx={1560} cy={430} r={120 + 200 * k} fill={ORO} opacity={0.12 + 0.1 * k} />
-          <circle cx={1560} cy={430} r={120 + 200 * k} fill="none" stroke={ORO} strokeWidth={8} opacity={f >= a ? 0.85 : 0} />
-          <text x={1560} y={450} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={52} fill="#f4efe6" opacity={SINGLE(f, a, a + 10)}>1 BREATH</text>
+          <circle cx={1092} cy={420} r={300 + 160 * k} fill={ORO} opacity={0.06 + 0.08 * k} />
+          <circle cx={1092} cy={420} r={300 + 160 * k} fill="none" stroke={ORO} strokeWidth={10} opacity={f >= a ? 0.9 : 0.25} />
+          <text x={1092} y={960} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={52} fill="#f4efe6" opacity={SINGLE(f, a, a + 10)}>1 BREATH</text>
         </svg>
         <ManoLeo texto="stop you." x={1120} y={140} desde={L(200.7)} hasta={L(202.1)} tam={80} />
       </>} />
@@ -1880,7 +1881,7 @@ const Ve24b: React.FC = () => {
       </>}
       hud={<>
         <ManoLeo texto="you, on the horse." x={1180} y={150} desde={L(205)} hasta={L(207.8)} tam={60} />
-        <ManoLeo texto="you, seeing the horse." x={120} y={150} desde={L(210.8)} tam={60} />
+        <ManoLeo texto="you, seeing the horse." x={120} y={250} desde={L(210.8)} tam={60} />
       </>} />
   );
 };
@@ -1934,7 +1935,7 @@ const Scroll27b: React.FC = () => {
     <AbsoluteFill style={{ background: "#120d0a" }}>
       <PantallaMacro secuencia={[...SEC, ...SEC]} periodo={f < L(239.6) ? 24 : 14} desde={20} />
       <CaballoAire f0={L(243.8)} x={1420} y={900} s={0.8} dur={10} neon={ACENTO} />
-      <ManoLeo texto="the thumb is the horse." x={110} y={130} desde={L(243.6)} tam={66} />
+      <ManoLeo texto="the thumb is the horse." x={110} y={250} desde={L(243.6)} tam={66} />
       <Hud min={390 + Math.floor(Math.max(0, f - 20) / 26)} dia={5} estado="sube" />
     </AbsoluteFill>
   );
@@ -1945,7 +1946,7 @@ const Congela28b: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: "#120d0a" }}>
       <PantallaMacro secuencia={["choque", "chica", "perro", "baile"]} periodo={18} congela={L(248.7)} s={1.06} />
-      <ManoLeo texto="stop." x={140} y={160} desde={4} tam={90} />
+      <ManoLeo texto="stop." x={140} y={250} desde={4} tam={90} />
       <Hud min={406} dia={5} estado={(f) => (f < L(248.7) ? "sube" : "congelado")} />
     </AbsoluteFill>
   );
@@ -1959,7 +1960,7 @@ const MiCuarto29: React.FC = () => {
   const T = 253.1, L = (t: number) => fr(t, T);
   return (
     <CuartoCalido claves={[mira(0, LX + 60, LEO_CARA_Y + 40, 2.8), mira(L(254.5), LX + 60, LEO_CARA_Y + 40, 2.8), mira(L(255.6), CTO_PUNTOS.escritorio, 560, 1.3), mira(L(256.7), CTO_PUNTOS.ventana - 200, 520, 1.25)]}
-      hud={<><Hud min={406} dia={5} estado="congelado" /><ManoLeo texto="my room." x={140} y={170} desde={L(254.6)} tam={70} /></>}>
+      hud={<><Hud min={406} dia={5} estado="congelado" /><ManoLeo texto="my room." x={140} y={250} desde={L(254.6)} tam={70} /></>}>
       <LeoSentado telI tel luz={L_ORO_D} poses={[{ f: 0, v: { ...SENT_CEL, hD: 25, cD: 40 } }]} caras={[{ f: 0, v: "neutral" }, { f: 30, v: "duda" }]} habla={[[0, 42]]}
         miradas={[{ f: 0, v: { x: -1, y: 0 } }, { f: 30, v: { x: 1, y: -0.4 } }]} />
     </CuartoCalido>
@@ -2032,7 +2033,7 @@ const Bien30: React.FC = () => {
   const T = 267.2, L = (t: number) => fr(t, T);
   return (
     <PPTenzo dur={141} tenzo={{ poses: [{ f: 0, v: LOTO }, { f: L(268.1), v: { ...LOTO, cabeza: 16, tronco: 6 } }, { f: L(269.4), v: { ...LOTO, cabeza: 6, hD: 60, cD: 40 } }], caras: [{ f: 0, v: "feliz" }, { f: L(267.4), v: "risa" }, { f: L(268.6), v: "feliz" }], habla: [[0, 136]] }}
-      hud={<><Hud min={406} dia={5} estado="congelado" /><ManoLeo texto="the first true thing." x={140} y={170} desde={L(269.6)} tam={66} /></>} />
+      hud={<><Hud min={406} dia={5} estado="congelado" /><ManoLeo texto="the first true thing." x={140} y={250} desde={L(269.6)} tam={66} /></>} />
   );
 };
 // 271,9-274,6 · «Now, do you want to keep riding?» · detrás de Leo relincha el caballo de neón
@@ -2040,8 +2041,8 @@ const Seguir30: React.FC = () => {
   const f = useF();
   return (
     <SobreLeo dur={81} z={2.2} leo={{ tel: true, poses: [{ f: 0, v: SENT_CEL }], caras: [{ f: 0, v: "neutral" }, { f: 50, v: "duda" }], miradas: [{ f: 0, v: { x: 1, y: 0.2 } }] }}
-      antes={<g opacity={0.3 + 0.12 * Math.sin(f / 4)}><Caballo x={LX - 420} piso={P - 6} fase={0.25} s={1.6} variante="mara" quieto /></g>}
-      hud={<><Hud min={406} dia={5} estado="congelado" /><ManoLeo texto="keep riding?" x={140} y={160} desde={18} tam={72} /></>} />
+      antes={<g opacity={0.35 + 0.15 * Math.sin(f / 4)}><Caballo x={LX - 260} piso={P - 6} fase={(f % 30) / 30 * 0.2 + 0.2} s={1.0} variante="mara" neon={ACENTO} quieto /></g>}
+      hud={<><Hud min={406} dia={5} estado="congelado" /><ManoLeo texto="keep riding?" x={140} y={250} desde={18} tam={72} /></>} />
   );
 };
 // 274,6-278,8 · otra chica, otro perro: cada vez más rápido y más gris
@@ -2052,7 +2053,7 @@ const Otra30b: React.FC = () => {
       <AbsoluteFill style={{ filter: `grayscale(${SINGLE(f, 0, 110)})` }}>
         <PantallaMacro secuencia={["chica", "perro", "grito", "chica", "perro", "grito", "chica"]} periodo={f < 60 ? 22 : 13} s={1.02} />
       </AbsoluteFill>
-      <ManoLeo texto="another. another. another." x={130} y={140} desde={10} tam={60} />
+      <ManoLeo texto="another. another. another." x={130} y={250} desde={10} tam={60} />
       <Hud min={406} dia={5} estado="congelado" />
     </AbsoluteFill>
   );
@@ -2094,14 +2095,14 @@ const Silencio31b: React.FC = () => {
   const T = 284.8, f = useF(), L = (t: number) => fr(t, T);
   const VX = CTO_PUNTOS.ventana;
   return (
-    <CuartoCalido claves={[mira(0, 1700, 620, 1.05), mira(L(289.8), 1900, 580, 1.15), mira(L(290.4), VX, 470, 1.9), mira(L(292.3), VX, 470, 2.0)]}
+    <CuartoCalido claves={[mira(0, 1700, 620, 1.05), mira(L(289.0), 1900, 580, 1.15), mira(L(291.0), VX, 470, 1.9), mira(L(292.3), VX, 470, 2.0)]}
       hud={<>
         <Hud min={406} dia={5} estado="congelado" />
-        <ManoLeo texto="no train." x={140} y={160} desde={L(288.0)} tam={66} />
-        <ManoLeo texto="no music." x={140} y={250} desde={L(288.9)} tam={66} />
+        <ManoLeo texto="no train." x={140} y={300} desde={L(288.0)} tam={66} />
+        <ManoLeo texto="no music." x={140} y={390} desde={L(288.9)} tam={66} />
         <svg {...svgP}>
-          <rect x={130} y={190} width={330 * SINGLE(f, L(288.6), L(289.0))} height={8} fill={ACENTO} />
-          <rect x={130} y={280} width={330 * SINGLE(f, L(289.6), L(290.0))} height={8} fill={ACENTO} />
+          <rect x={130} y={330} width={330 * SINGLE(f, L(288.6), L(289.0))} height={8} fill={ACENTO} />
+          <rect x={130} y={420} width={330 * SINGLE(f, L(289.6), L(290.0))} height={8} fill={ACENTO} />
         </svg>
       </>}>
       <TelMesa x={LX + 150} y={P - AS + 2} bocaAbajo />
@@ -2131,12 +2132,12 @@ const Sien32: React.FC = () => {
   const T = 300.7, L = (t: number) => fr(t, T);
   return (
     <PPTenzo dur={129} tenzo={{ poses: [{ f: 0, v: HABLA_A }, { f: L(303.3), v: HABLA_B }, { f: L(304.3), v: { ...LOTO, hD: 150, cD: 150, cabeza: -6 } }], caras: [{ f: 0, v: "feliz" }], habla: [[0, 125]] }}
-      hud={<><Hud min={406} dia={5} /><ManoLeo texto="say the word." x={140} y={170} desde={L(303.3)} tam={64} /></>} />
+      hud={<><Hud min={406} dia={5} /><ManoLeo texto="say the word." x={140} y={250} desde={L(303.3)} tam={64} /></>} />
   );
 };
 // 305-315,5 · el diagrama se arma en vivo y un Leo chiquito lo recorre (rama roja con el caballo)
-const Diagrama32b: React.FC = () => {
-  const T = 305.0, f = useF(), L = (t: number) => fr(t, T);
+const Diagrama32b: React.FC<{ o?: number }> = ({ o: off = 0 }) => {
+  const T = 305.0, f = useF() + off, L = (t: number) => fr(t, T);
   const o = (a: number) => SINGLE(f, a, a + 10);
   const Caja: React.FC<{ x: number; y: number; w: number; t: string; a: number; c?: string }> = ({ x, y, w, t, a, c = "#2a2622" }) => (
     <g opacity={o(a)} transform={`translate(${x},${y}) scale(${0.85 + 0.15 * o(a)}) translate(${-x},${-y})`}>
@@ -2165,7 +2166,7 @@ const Diagrama32b: React.FC = () => {
           <Caja x={820} y={560} w={300} t="i know → go" a={L(309.6)} c="#3f7a4a" />
           <Flecha x1={1440} y1={320} x2={1400} y2={534} a={L(311.4)} />
           <Caja x={1360} y={600} w={600} t="ask the horse → put it down" a={L(312.2)} c="#8a3a2a" />
-          {f >= L(312.6) && <g opacity={o(L(312.6))}><Caballo x={1360} piso={790} fase={(f % 14) / 14} s={0.42} variante="mara" neon="#8a3a2a" /></g>}
+          {f >= L(312.6) && <g opacity={o(L(312.6))}><Caballo x={1360} piso={860} fase={(f % 14) / 14} s={0.7} variante="mara" neon="#8a3a2a" /></g>}
         </Hoja>
         {f >= L(305.6) && <g transform={`translate(${pos.x + 30},${pos.y + 60})`}><MiniLeo x={0} y={0} s={0.55} /></g>}
       </svg>
@@ -2175,16 +2176,16 @@ const Diagrama32b: React.FC = () => {
 };
 // 315,5-316,6 · «And if I forget?» (contraplano de Leo)
 const SiOlvido32: React.FC = () => (
-  <SobreLeo dur={33} leo={{ poses: [{ f: 0, v: { ...SENT, hD: 60, cD: 40, cabeza: 6 } }], caras: [{ f: 0, v: "duda" }], habla: [[0, 30]] }} hud={<><Hud min={406} dia={5} /><ManoLeo texto="and if i forget?" x={140} y={170} desde={2} tam={66} /></>} />
+  <SobreLeo dur={33} leo={{ poses: [{ f: 0, v: { ...SENT, hD: 60, cD: 40, cabeza: 6 } }], caras: [{ f: 0, v: "duda" }], habla: [[0, 30]] }} hud={<><Hud min={406} dia={5} /><ManoLeo texto="and if i forget?" x={140} y={250} desde={2} tam={66} /></>} />
 );
 // 316,6-322 · «you will forget many times a day… every time you remember, that is the practice»: las rayitas suman
 const Olvida32b: React.FC = () => {
   const f = useF();
   return (
-    <PPTenzo dur={162} z={2.9} tenzo={{ poses: [...alterna(HABLA_A, HABLA_B, 0, 100, 20), { f: 100, v: { ...LOTO, hD: 150, cD: 30 } }], caras: [{ f: 0, v: "risa" }, { f: 50, v: "feliz" }], habla: [[0, 156]] }}
+    <SobreTenzo dur={162} z={2.5} tenzo={{ poses: [...alterna(HABLA_A, HABLA_B, 0, 100, 20), { f: 100, v: { ...LOTO, hD: 150, cD: 30 } }], caras: [{ f: 0, v: "risa" }, { f: 50, v: "feliz" }], habla: [[0, 156]] }}
       hud={<>
         <Hud min={406} dia={5} />
-        <ManoLeo texto="every time you remember:" x={110} y={170} desde={80} tam={56} />
+        <ManoLeo texto="every time you remember:" x={110} y={250} desde={80} tam={56} />
         <div style={{ position: "absolute", left: 120, top: 260 }}><Rayitas2 n={Math.floor(interpolate(f, [86, 150], [0, 12], cl))} /></div>
       </>} />
   );
@@ -2211,7 +2212,7 @@ const Monjes33b: React.FC = () => {
 const Parado34b: React.FC = () => {
   const T = 327.2, L = (t: number) => fr(t, T);
   return (
-    <CuartoCalido claves={[mira(0, TX - 60, 700, 1.9), mira(L(329.6), TX - 60, 640, 2.0)]} hud={<Hud min={406} dia={5} />}>
+    <CuartoCalido claves={[mira(0, TX - 40, P - 60, 2.2), mira(L(329.6), TX - 40, P - 200, 2.3)]} hud={<Hud min={406} dia={5} />}>
       <TelMesa x={LX + 150} y={P - AS + 2} bocaAbajo />
       <Actor look={TENZO} escala={ESC} seed={2} luz={L_ORO_I} ruta={[{ f: 0, x: TX, y: P }]} dir={[{ f: 0, v: -1 }]} asiento={[{ f: 0, v: 8 }, { f: L(328.4), v: 8 }, { f: L(329.4), v: undefined, d: 50 }]}
         poses={[{ f: 0, v: LOTO }, { f: L(327.8), v: { ...LOTO, tronco: 30, hD: 70, cD: 10, hI: 60, cI: 20 } }, { f: L(329.4), v: { tronco: 20, hD: 40, cD: 60, hI: 30, cI: 50, pI: 20, rI: 30, pD: 30, rD: 40 } }]} caras={[{ f: 0, v: "feliz" }, { f: L(328), v: "cansado" }]} />
@@ -2239,7 +2240,7 @@ const Cruza35b: React.FC = () => {
   const T = 335.2, f = useF(), L = (t: number) => fr(t, T);
   const fl = SINGLE(f, L(337.5), L(337.9)) * (1 - SINGLE(f, L(338.6), L(339.3)));
   return (
-    <CuartoCalido claves={[mira(0, TX - 60, P - 300, 2.6), mira(L(342), TX - 60, P - 300, 3.0, { curva: "in" })]}
+    <CuartoCalido claves={[mira(0, TX - 20, P - 285, 2.9), mira(L(342), TX - 20, P - 290, 3.2, { curva: "in" })]}
       hud={<><Hud min={406} dia={5} />{fl > 0 && <svg {...svgP} style={{ position: "absolute", left: 0, top: 0, opacity: fl }}><Caballo x={760} piso={900} fase={0.4} s={1.6} variante="mara" neon={ORO} /></svg>}</>}>
       <TenzoParado caras={[{ f: 0, v: "neutral" }, { f: L(337.6), v: "triste" }, { f: L(339.4), v: "neutral" }]} poses={[{ f: 0, v: { hD: 10, cD: 20, hI: 10, cI: 20 } }, { f: L(337.6), v: { hD: 10, cD: 20, hI: 10, cI: 20, cabeza: 12 } }, { f: L(339.6), v: { hD: 10, cD: 20, hI: 10, cI: 20 } }]} />
     </CuartoCalido>
@@ -2271,7 +2272,7 @@ const Pared37: React.FC = () => {
   const n = interpolate(f, [L(352.4), L(357.6)], [0, 41], cl);
   const WX = CTO_PUNTOS.cajon - 120;
   return (
-    <Escena Set={Cuarto} pal={PAL} claves={[mira(0, WX + 260, 600, 1.6), mira(L(358.3), WX + 240, 590, 1.75)]}
+    <Escena Set={Cuarto} pal={PAL} claves={[mira(0, WX + 280, 640, 2.0), mira(L(358.3), WX + 260, 630, 2.2)]}
       detras={<><Alba t={0.6} /><Rayitas n={n} x={WX + 60} y={540} color="#1c1e24" alto={46} paso={13} porFila={20} />{n >= 41 && <text x={WX + 370} y={600} fontFamily={F_MANO} fontWeight={700} fontSize={70} fill="#1c1e24">41</text>}</>}
       medio={<Actor look={LEO3} escala={ESC} seed={1} luz={L_FRIO} ruta={[{ f: 0, x: WX + 470, y: P }]} dir={[{ f: 0, v: -1 }]}
         poses={[{ f: 0, v: { hD: 20, cD: 40 } }, ...alterna({ hD: 120, cD: 40, cabeza: -8 }, { hD: 105, cD: 55, cabeza: -6 }, L(352.4), L(357.6), 4), { f: L(357.6), v: { hD: 20, cD: 40 } }]} caras={[{ f: 0, v: "determinado" }]} miradas={[{ f: 0, v: { x: -1, y: -0.4 } }]} />}
@@ -2313,7 +2314,7 @@ const Manos38: React.FC = () => {
   const f = useF();
   return (
     <ParadaSola claves={[mira(0, LEO_PARADA + 20, BP - 200, 3.0), mira(102, LEO_PARADA + 20, BP - 210, 3.15)]} leoPose={{ hD: 30, cD: 60, hI: 20, cI: 50 }} leoCara={[{ f: 0, v: "neutral" }]}
-      hud={<><ManoLeo texto="no phone." x={1180} y={200} desde={8} tam={80} /><div style={{ position: "absolute", left: 1180, top: 330, fontFamily: F_HUD, fontWeight: 600, fontSize: 52, letterSpacing: 4, color: ACENTO }}>FIRST TIME IN 10 YEARS</div>{f < 0 && null}</>} />
+      hud={<><ManoLeo texto="no phone." x={1180} y={220} desde={8} tam={80} /><div style={{ position: "absolute", left: 1160, top: 330, padding: "10px 22px", background: "rgba(14,16,22,.82)", borderRadius: 12, fontFamily: F_HUD, fontWeight: 600, fontSize: 52, letterSpacing: 4, color: ACENTO }}>FIRST TIME IN 10 YEARS</div>{f < 0 && null}</>} />
   );
 };
 // 372,2-376,4 · levanta la vista: algo que se perdió cada mañana durante dos años
@@ -2322,8 +2323,8 @@ const Nota38: React.FC = () => (
     miradas={[{ f: 0, v: { x: 0.3, y: 0.8 } }, { f: 10, v: { x: 1, y: 0 } }]} hud={<ManoLeo texto="every single morning." x={1080} y={180} desde={50} tam={60} />} />
 );
 // 376,4-384,5 · Maya en insertos: bufanda verde · ambo · libro de papel · la esquina doblada
-const Maya38b: React.FC = () => {
-  const T = 376.4, f = useF(), L = (t: number) => fr(t, T);
+const Maya38b: React.FC<{ o?: number }> = ({ o = 0 }) => {
+  const T = 376.4, f = useF() + o, L = (t: number) => fr(t, T);
   const dob = f >= L(382.0);
   if (dob) {
     const k = ent(f, L(382.4), L(383.2));
@@ -2347,10 +2348,10 @@ const Maya38b: React.FC = () => {
       medio={<Actor look={MAYA} escala={ESC * 0.95} seed={8} luz={L_DIA} ruta={[{ f: 0, x: MAYA_X, y: BP }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { hD: 50, cD: 100, hI: 50, cI: 100, cabeza: 22 } }]} caras={[{ f: 0, v: "neutral" }]} enManoD={<Libro abierto color="#2e5a8a" />} />}
       hud={<>
         <Hud min={230} dia={7} />
-        <ManoLeo texto="a girl." x={140} y={170} desde={0} hasta={L(377.2)} tam={70} />
-        <ManoLeo texto="green scarf." x={140} y={170} desde={L(377.4)} hasta={L(378.4)} tam={70} />
-        <ManoLeo texto="nursing scrubs." x={140} y={170} desde={L(378.5)} hasta={L(380.2)} tam={70} />
-        <ManoLeo texto="a real paper book." x={140} y={170} desde={L(380.3)} tam={70} />
+        <ManoLeo texto="a girl." x={140} y={250} desde={0} hasta={L(377.2)} tam={70} />
+        <ManoLeo texto="green scarf." x={140} y={250} desde={L(377.4)} hasta={L(378.4)} tam={70} />
+        <ManoLeo texto="nursing scrubs." x={140} y={250} desde={L(378.5)} hasta={L(380.2)} tam={70} />
+        <ManoLeo texto="a real paper book." x={140} y={250} desde={L(380.3)} tam={70} />
       </>} />
   );
 };
@@ -2425,13 +2426,286 @@ const Gancho41c: React.FC = () => {
   );
 };
 
+// ===================== VUELTA OJO 3 (26-oct) =====================
+// 5,7-10 · «the sky over Lake Michigan was turning gray»: la ventana grande pasa de noche a gris; Leo levanta la cabeza
+const mezcla = (a: string, b: string, k: number) => { const h = (c: string, i: number) => parseInt(c.slice(1 + i * 2, 3 + i * 2), 16); return "#" + [0, 1, 2].map((i) => Math.round(h(a, i) + (h(b, i) - h(a, i)) * k).toString(16).padStart(2, "0")).join(""); };
+const Alba1b: React.FC = () => {
+  const T = 5.7, f = useF(), L = (t: number) => fr(t, T);
+  const k = ent(f, L(6.4), L(9.6));
+  const reloj = interpolate(f, [0, L(9.6)], [140, 371], cl);
+  return (
+    <AbsoluteFill>
+      <Escena Set={Cuarto} pal={PAL} claves={[mira(0, LX + 300, LEO_CARA_Y + 60, 2.3), mira(L(10), LX + 320, LEO_CARA_Y + 50, 2.45, { curva: "in" })]}
+        detras={oscuro}
+        medio={<LeoSentado poses={[{ f: 0, v: SENT_CEL }, { f: L(7.2), v: { ...SENT_CEL, cabeza: -16, cD: 100 } }]} caras={[{ f: 0, v: "cansado" }, { f: L(7.4), v: "sorpresa" }, { f: L(8.9), v: "triste" }]}
+          miradas={[{ f: 0, v: { x: 0.4, y: 0.8 } }, { f: L(7.2), v: { x: 1, y: -0.5 } }]} luz={{ lado: 1, color: mezcla("#3a5a9a", "#c9ccd2", k), fuerza: 0.6 + 0.3 * k }} />}
+        hud={<>
+          <svg {...svgP}>
+            <rect x={820} y={90} width={1000} height={720} rx={8} fill="#15161b" />
+            <defs><linearGradient id="cieloA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor={mezcla("#0b1430", "#8d96a3", k)} /><stop offset="1" stopColor={mezcla("#1c2a52", "#d6cfc4", k)} /></linearGradient></defs>
+            <rect x={850} y={120} width={940} height={660} fill="url(#cieloA)" />
+            <rect x={850} y={560} width={940} height={220} fill={mezcla("#0a1224", "#7d8794", k)} />
+            {[0, 1, 2, 3, 4, 5].map((i) => <rect key={i} x={900 + i * 150} y={590 + (i % 3) * 40} width={90 + (i % 2) * 40} height={4} rx={2} fill="#e9eef4" opacity={0.25 * k} />)}
+            <path d="M850,560 L900,520 L960,540 L1020,470 L1090,500 L1150,430 L1230,480 L1300,450 L1380,520 L1470,490 L1560,530 L1640,470 L1720,520 L1790,500 L1790,560 Z" fill={mezcla("#06080f", "#4a4f58", k)} />
+            <rect x={1310} y={120} width={14} height={660} fill="#15161b" /><rect x={850} y={440} width={940} height={14} fill="#15161b" />
+          </svg>
+          <ManoLeo texto="lake michigan. gray." x={900} y={860} desde={L(8.2)} tam={60} />
+          <RelojDia min={reloj} x={1580} y={60} />
+        </>} />
+    </AbsoluteFill>
+  );
+};
+// 13,1-15,8 · la burbuja en el aire libre, la cola hacia la cabeza
+const Cara2c: React.FC = () => {
+  const f = useF();
+  return (
+    <Escena Set={Cuarto} pal={PAL} claves={[mira(0, LX + 250, LEO_CARA_Y + 40, 2.5), mira(81, LX + 250, LEO_CARA_Y + 40, 2.65)]}
+      detras={<Alba t={1} />}
+      medio={<LeoSentado tel={false} poses={[{ f: 0, v: { ...SENT, cabeza: -10 } }, { f: 40, v: { ...SENT, cabeza: -10, hD: 30, cD: 150 } }, { f: 60, v: { ...SENT, cabeza: -6, hD: 40, cD: 160 } }]} caras={[{ f: 0, v: "cansado" }, { f: 40, v: "duda" }]} miradas={[{ f: 0, v: { x: 0.8, y: -0.8 } }]} luz={L_FRIO} />}
+      hud={<><RelojDia min={371} x={1580} y={60} /><Burbuja x={1360} y={360} f={f} /></>} />
+  );
+};
+// 83,4-92 · el inventario con luz de calle: la cámara se para en cada cosa, rótulos enteros y lejos del HUD
+const Cuarto12c: React.FC = () => {
+  const T = 83.4, L = (t: number) => fr(t, T);
+  return (
+    <Escena Set={Cuarto} pal={PAL} setProps={{ luzPuerta: 1 }}
+      claves={[mira(0, 1200, 640, 1.15), mira(L(84.9), 1220, 650, 1.2), mira(L(85.4), CTO_PUNTOS.colchon, 800, 1.9), mira(L(86.3), CTO_PUNTOS.colchon - 20, 800, 1.95), mira(L(86.7), CTO_PUNTOS.cajas, 790, 2.0), mira(L(87.7), CTO_PUNTOS.cajas + 20, 790, 2.05), mira(L(88.1), CTO_PUNTOS.bolso, 760, 2.0), mira(L(89.0), CTO_PUNTOS.bolso - 20, 760, 2.05), mira(L(89.5), CTO_PUNTOS.dibujos, 560, 1.6), mira(L(92), CTO_PUNTOS.dibujos + 30, 560, 1.7)]}
+      detras={<><Tibio k={0.9} x={200} y={P - 120} /><Halo x={CTO_PUNTOS.ventana} y={420} r={900} color="#9fb4d8" fuerza={0.3} /></>}
+      medio={<LeoSentado caras={[{ f: 0, v: "triste" }]} miradas={[{ f: 0, v: { x: -1, y: 0.4 } }]} luz={L_FRIO} />}
+      hud={<>
+        <Hud min={390} dia={5} />
+        <ManoLeo texto="a mattress." x={200} y={300} desde={L(85.1)} hasta={L(86.4)} tam={72} />
+        <ManoLeo texto="pizza boxes." x={200} y={300} desde={L(86.7)} hasta={L(87.9)} tam={72} />
+        <ManoLeo texto="the delivery bag." x={200} y={300} desde={L(88.1)} hasta={L(89.3)} tam={72} />
+        <ManoLeo texto="drawings he never finished." x={220} y={820} desde={L(89.8)} tam={64} />
+      </>} />
+  );
+};
+// 106,5-111 · tres noches, el mismo gesto a la vez (el pulgar baja sincronizado)
+const Mismo14b: React.FC = () => {
+  const f = useF();
+  return (
+    <Escena Set={Cuarto} pal={PAL} claves={[mira(0, 1240, 660, 1.35), mira(135, 1240, 660, 1.45)]}
+      detras={oscuro}
+      medio={<>{[-380, 0, 380].map((dx, i) => (
+        <g key={i} opacity={SINGLE(f, i * 10, i * 10 + 8)}>
+          <Actor look={LEO3} escala={ESC} seed={1} luz={L_TEL} ruta={[{ f: 0, x: LX + dx, y: P }]} dir={[{ f: 0, v: 1 }]} asiento={[{ f: 0, v: AS }]} poses={alterna(SENT_CEL, { ...SENT_CEL, cD: 140, cabeza: 26 }, 0, 135, 9)} caras={[{ f: 0, v: "cansado" }]} enManoD={<Tel />} />
+          <Halo x={LX + dx + 60} y={LEO_CARA_Y} r={170} color="#7fb0ff" fuerza={0.4} />
+        </g>
+      ))}</>}
+      hud={<>
+        <Hud min={390} dia={5} />
+        {["night 5", "night 6", "night 7"].map((t, i) => <ManoLeo key={i} texto={t} x={420 + i * 500} y={880} desde={i * 10} tam={54} />)}
+        <ManoLeo texto="always the same." x={1180} y={250} desde={60} tam={70} />
+      </>} />
+  );
+};
+// 113,1-118,7 · el farol titila y el cuarto se disuelve en el camino (sin HUD durante el portal)
+const Farol15c: React.FC = () => {
+  const T = 113.1, f = useF(), L = (t: number) => fr(t, T);
+  const r = interpolate(f, [L(115.6), L(118.4)], [0, 1300], { ...cl, easing: Easing.in(Easing.cubic) });
+  const tit = f > L(114.6) && f < L(115.6) ? 0.6 + 0.4 * Math.abs(Math.sin(f * 1.7)) : 1;
+  return (
+    <AbsoluteFill>
+      <CuartoCalido claves={[mira(0, LX + 200, LEO_CARA_Y + 120, 2.0), mira(L(114.4), LX + 220, LEO_CARA_Y + 140, 2.1), mira(L(115.4), FX, P - 140, 2.6), mira(L(118.7), FX, P - 140, 2.8)]} hud={r > 0 ? undefined : <Hud min={390} dia={5} />}>
+        <LeoSentado tel={false} luz={L_ORO_D} poses={[{ f: 0, v: SENT }, { f: 20, v: { ...SENT, tronco: 8, cabeza: 6 } }]} caras={[{ f: 0, v: "triste" }, { f: 40, v: "duda" }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: L(115), v: { x: 1, y: 0.5 } }]} />
+        <TenzoSentado habla={[[0, L(115.4)]]} poses={[{ f: 0, v: LOTO_ENSENA_ }]} />
+        <Halo x={FX} y={P - 90} r={260} color={ORO} fuerza={0.35 * tit} />
+      </CuartoCalido>
+      {r > 0 && (
+        <AbsoluteFill style={{ clipPath: `circle(${r}px at 960px 600px)` }}>
+          <AbsoluteFill style={{ background: "#f0c88a" }} />
+          <Escena Set={CaminoChina} pal={PAL_ANT} claves={[mira(0, 300, 600, 1.05), mira(L(118.7), 300, 600, 1.0)]} />
+        </AbsoluteFill>
+      )}
+      {r > 0 && <svg {...svgP}><circle cx={960} cy={600} r={r} fill="none" stroke={ORO} strokeWidth={14} opacity={0.6} /></svg>}
+    </AbsoluteFill>
+  );
+};
+// 144,3-148,2 · el granjero grita con las manos en la boca
+const Grito18c: React.FC = () => {
+  const T = 144.3, f = useF(), L = (tt: number) => fr(tt, T);
+  const GX = CHINA_PUNTOS.granjero;
+  return (
+    <Escena Set={CaminoChina} pal={PAL_ANT} claves={[mira(0, GX - 120, CP - 250, 1.6), mira(L(148.2), GX - 140, CP - 260, 1.85, { curva: "in" })]}
+      medio={<>
+        <Granjero dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { tronco: 8, hD: 40, cD: 60, hI: 45, cI: 70 } }, { f: L(145.6), v: { tronco: -8, hD: 150, cD: 165, hI: 150, cI: 165, cabeza: -10 } }]}
+          caras={[{ f: 0, v: "sorpresa" }, { f: L(145.8), v: "enojo" }]} habla={[[L(146.0), L(148.2)]]} />
+        <NubePolvo x={GX - 900} piso={CP + 40} k={0.7} f={f} ancho={700} />
+      </>}
+      hud={<Globo texto="Hey! Where are you going?!" x={420} y={220} desde={L(146.0)} hasta={L(148.2) + 5} cola="abajo" tam={52} />} />
+  );
+};
+// 148,2-151,6 · el muchacho mira por encima del hombro, sin soltar la crin
+const MiraAtras18: React.FC = () => {
+  const T = 148.2, f = useF(), t = T + f / 30;
+  const ks = Array.from({ length: 5 }, (_, k) => { const tt = T + k; return mira((tt - T) * 30, hxDe(tt) - 40, CP - 340, 2.0); });
+  return <Escena Set={CaminoChina} pal={PAL_ANT} claves={ks} medio={<ChinaJinete t={t} f={f} cara="miedo" giro={-0.9} pose={{ ...POSE_JINETE, cabeza: -6 }} />} hud={<Lineas dir={-1} n={10} />} />;
+};
+// 177,8-181,4 · primer plano nítido: mira el piso que corre (cámara pegada al caballo, sin carteles arriba)
+const Bajarse21b: React.FC = () => {
+  const f = useF() + 300;
+  const hx = 4300 - f * 6.5;
+  const ks = Array.from({ length: 5 }, (_, k) => mira(k * 30, 4300 - (300 + k * 30) * 6.5 - 10, BWY_PISO - 330, 1.45));
+  return (
+    <Escena Set={Broadway} pal={PAL} claves={ks}
+      medio={<Montado x={hx} piso={BWY_PISO + 30} fase={(f % 14) / 14} dir={-1} s={1.3} variante="mara" look={LEO3} cara={f % 40 < 20 ? "miedo" : "duda"} escala={ESC} luz={L_TEL}
+        pose={{ ...POSE_JINETE, tronco: 26, hD: 70, cD: 60, hI: 75, cI: 55, cabeza: 30 }} />}
+      hud={<><Hud min={390} dia={5} estado="sube" /><Lineas dir={1} n={10} /><ManoLeo texto="how do you get off?" x={1120} y={860} desde={50} tam={64} /></>} />
+  );
+};
+// 312,2-313,9 · «he shrugs»: Tenzo encoge los hombros
+const Hombros32: React.FC = () => (
+  <SobreTenzo dur={51} tenzo={{ poses: [{ f: 0, v: HABLA_A }, { f: 8, v: { ...LOTO, hD: 30, cD: 140, hI: 30, cI: 140, cabeza: 8, tronco: -6 } }, { f: 34, v: HABLA_B }], caras: [{ f: 0, v: "feliz" }, { f: 8, v: "risa" }], habla: [[0, 48]] }}
+    hud={<><Hud min={406} dia={5} /><ManoLeo texto="ask the horse." x={1080} y={250} desde={4} tam={66} /></>} />
+);
+// 329,6-331,8 · inserto de las rodillas: «crack»
+const Rodillas34b: React.FC = () => {
+  const f = useF();
+  return (
+    <CuartoCalido claves={[mira(0, TX - 10, P - 110, 3.4), mira(66, TX - 10, P - 115, 3.55)]} hud={<><Hud min={406} dia={5} /><ManoLeo texto="crack." x={1300} y={720} desde={4} tam={110} /><ManoLeo texto="crack." x={300} y={760} desde={18} tam={90} /></>}>
+      <Actor look={TENZO} escala={ESC} seed={2} luz={L_ORO_I} ruta={[{ f: 0, x: TX, y: P }]} dir={[{ f: 0, v: -1 }]} asiento={[{ f: 0, v: undefined }]}
+        poses={[{ f: 0, v: { tronco: 20, hD: 40, cD: 60, hI: 30, cI: 50, pI: 20, rI: 30, pD: 30, rD: 40 } }, { f: 30, v: { tronco: 6, hD: 20, cD: 40, hI: 20, cI: 40, pI: 6, rI: 8, pD: 8, rD: 10 } }]} caras={[{ f: 0, v: "cansado" }]} />
+      {f >= 4 && f < 16 && <circle cx={TX - 25} cy={P - 95} r={20 + (f - 4) * 6} fill="none" stroke="#f4efe6" strokeWidth={5} opacity={1 - (f - 4) / 12} />}
+      {f >= 18 && f < 30 && <circle cx={TX + 15} cy={P - 95} r={20 + (f - 18) * 6} fill="none" stroke="#f4efe6" strokeWidth={5} opacity={1 - (f - 18) / 12} />}
+    </CuartoCalido>
+  );
+};
+// 358,3-364,4 · DAY 7: 33, y el contador baja a «3h 50m» (como lo dice la voz)
+const Dia7b: React.FC = () => {
+  const T = 358.3, f = useF(), L = (t: number) => fr(t, T);
+  const n7 = interpolate(f, [L(359.4), L(360.6)], [0, 33], cl);
+  const m = Math.round(interpolate(f, [L(361.0), L(362.2)], [406, 230], cl));
+  const golpe = interpolate(f, [L(362.2), L(362.5)], [1.25, 1], cl);
+  return (
+    <AbsoluteFill style={{ background: "#3e3226" }}>
+      <svg {...svgP}>
+        <Halo x={1500} y={150} r={900} color="#e9e4d8" fuerza={0.25} />
+        <Hoja x={960} y={420} w={1120} h={440} rot={-2 + Math.sin(f / 40) * 0.6}>
+          <text x={420} y={300} fontFamily={F_MANO} fontSize={58} fontWeight={700} fill="#2a2622">day 7</text>
+          <Rayitas n={n7} x={520} y={330} color="#2a2622" alto={50} paso={13} />
+          {n7 >= 33 && <text x={1300} y={380} fontFamily={F_MANO} fontSize={66} fontWeight={700} fill="#2a2622">33</text>}
+        </Hoja>
+      </svg>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 700, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 40, letterSpacing: 8, color: "#e9e3d6", opacity: SINGLE(f, L(360.8), L(361.2)) }}>SCREEN TIME</div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 750, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 140, color: f >= L(362.2) ? ACENTO : "#f4efe6", transform: `scale(${golpe})`, opacity: SINGLE(f, L(360.8), L(361.2)) }}>{`${Math.floor(m / 60)}h ${String(m % 60).padStart(2, "0")}m`}</div>
+      <Hud min={f < L(362.2) ? 406 : 230} dia={7} estado={f >= L(362.2) ? "normal" : "congelado"} />
+    </AbsoluteFill>
+  );
+};
+// 376,4-384,5 · Maya: un plano medio y los detalles en insertos (bufanda verde · ambo celeste · libro de papel · la esquina doblada)
+const InsBufanda: React.FC = () => {
+  const f = useF();
+  return (
+    <AbsoluteFill style={{ background: "#c9ced6" }}>
+      <svg {...svgP}>
+        <Halo x={1300} y={200} r={900} color="#ffffff" fuerza={0.35} />
+        <path d="M420,1080 Q500,700 960,640 Q1420,700 1500,1080 Z" fill="#9fd3e0" />
+        <ellipse cx={960} cy={330} rx={230} ry={260} fill="#e8b98f" />
+        <g transform={`translate(0,${Math.sin(f / 9) * 3})`}>
+          <path d="M640,560 Q960,720 1280,560 L1300,700 Q960,860 620,700 Z" fill="#3f9a6a" />
+          {Array.from({ length: 9 }).map((_, i) => <path key={i} d={`M${680 + i * 70},${600 - Math.abs(4 - i) * 8} l0,110`} stroke="#2f7a52" strokeWidth={10} strokeLinecap="round" />)}
+          <path d="M1120,690 L1180,1000 L1060,1000 Z" fill="#3f9a6a" /><path d="M1070,1000 l0,40 M1100,1000 l0,48 M1130,1000 l0,44 M1160,1000 l0,40" stroke="#2f7a52" strokeWidth={8} />
+        </g>
+      </svg>
+      <ManoLeo texto="green scarf." x={150} y={250} desde={4} tam={74} />
+    </AbsoluteFill>
+  );
+};
+const InsAmbo: React.FC = () => {
+  const f = useF();
+  return (
+    <AbsoluteFill style={{ background: "#c9ced6" }}>
+      <svg {...svgP}>
+        <Halo x={1300} y={200} r={900} color="#ffffff" fuerza={0.35} />
+        <g transform={`translate(0,${Math.sin(f / 10) * 4})`}>
+          <path d="M300,1080 L360,180 Q960,90 1560,180 L1620,1080 Z" fill="#8cc4d6" />
+          <path d="M760,180 L960,460 L1160,180" fill="#6aa9bd" />
+          <rect x={1130} y={560} width={260} height={220} rx={14} fill="#7ab6c9" stroke="#5f9fb3" strokeWidth={6} />
+          <rect x={1190} y={500} width={18} height={140} rx={8} fill="#2a2f38" /><rect x={1240} y={510} width={18} height={120} rx={8} fill="#c23a3a" />
+          <rect x={560} y={520} width={220} height={60} rx={10} fill="#f4efe6" /><text x={670} y={562} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={30} fill="#2a2f38">RN · MAYA</text>
+        </g>
+      </svg>
+      <ManoLeo texto="nursing scrubs." x={150} y={250} desde={4} tam={74} />
+    </AbsoluteFill>
+  );
+};
+const InsLibro: React.FC = () => {
+  const f = useF();
+  return (
+    <AbsoluteFill style={{ background: "#c9ced6" }}>
+      <svg {...svgP}>
+        <Halo x={1300} y={200} r={900} color="#ffffff" fuerza={0.35} />
+        <g transform={`rotate(${-6 + Math.sin(f / 20) * 1.5} 960 560)`}>
+          <rect x={620} y={250} width={680} height={620} rx={14} fill="#2e5a8a" /><rect x={1270} y={250} width={40} height={620} fill="#f4efe6" />
+          <rect x={700} y={380} width={520} height={14} rx={7} fill="#e8c86a" /><rect x={760} y={420} width={400} height={10} rx={5} fill="#e8c86a" opacity={0.7} />
+          <path d="M600,880 Q620,780 700,760 L760,900 Z" fill="#e8b98f" /><path d="M1330,880 Q1320,780 1260,760 L1200,900 Z" fill="#e8b98f" />
+        </g>
+      </svg>
+      <ManoLeo texto="a real paper book." x={150} y={250} desde={4} tam={74} />
+    </AbsoluteFill>
+  );
+};
+const MayaPlano: React.FC = () => (
+  <Escena Set={Broadway} pal={PAL_DIA} setProps={{ hora: "dia", nieve: true }} claves={[mira(0, MAYA_X - 120, BP - 250, 2.0), mira(27, MAYA_X - 120, BP - 250, 2.1)]}
+    medio={<>
+      <Actor look={MAYA} escala={ESC * 0.95} seed={8} luz={L_DIA} ruta={[{ f: 0, x: MAYA_X + 220, y: BP }, { f: 27, x: MAYA_X, y: BP }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { hD: 50, cD: 100, hI: 50, cI: 100, cabeza: 22 } }]} caras={[{ f: 0, v: "neutral" }]} enManoD={<Libro abierto color="#2e5a8a" />} />
+      <Actor look={LEO3} escala={ESC} seed={1} luz={L_DIA} ruta={[{ f: 0, x: LEO_PARADA, y: BP }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: { hD: 20, cD: -40, hI: -20, cI: -40 } }]} caras={[{ f: 0, v: "sorpresa" }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }]} />
+    </>}
+    hud={<><Hud min={230} dia={7} /><ManoLeo texto="a girl." x={200} y={250} desde={0} tam={74} /></>} />
+);
+// 398,7-404,2 · el monje carga a la mujer y cruza el río (plano más cerrado)
+const Gancho41d: React.FC = () => {
+  const f = useF();
+  const s = (a: number) => interpolate(f, [a, a + 8], [1.3, 1], cl);
+  const mx = interpolate(f, [0, 165], [RIO.orillaI + 200, RIO.orillaI + 520]);
+  return (
+    <AbsoluteFill>
+      <Escena Set={RioCrecido} pal={PAL_ANT} claves={[mira(0, RIO.orillaI + 260, RIO.sup - 220, 1.5), mira(165, RIO.orillaI + 520, RIO.sup - 220, 1.6)]}
+        medio={<>
+          <Actor look={MONJE_SHOUNJI} escala={1.05} seed={42} luz={L_ANT} ruta={[{ f: 0, x: RIO.orillaI - 60, y: JAPON_PISO }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: { hD: 10, cD: 20, hI: 10, cI: 20 } }]} caras={[{ f: 0, v: "sorpresa" }, { f: 90, v: "enojo" }]} />
+          <Actor look={MONJE_SHOUNJI} escala={1.05} seed={40} luz={L_ANT} ruta={[{ f: 0, x: mx, y: RIO.sup + 20 }]} dir={[{ f: 0, v: 1 }]} poses={alterna({ hD: 95, cD: 70, hI: 95, cI: 70, tronco: 6 }, { hD: 95, cD: 70, hI: 95, cI: 70, tronco: 2 }, 0, 165, 12)} caras={[{ f: 0, v: "determinado" }]} />
+          <g transform={`translate(${mx + 30},${RIO.sup - 190}) rotate(-78)`}>
+            <Actor look={MAYA} escala={0.9} seed={41} ruta={[{ f: 0, x: 0, y: 0 }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: { hD: 160, cD: 30, hI: 40, cI: 40, pI: 10, pD: 14 } }]} caras={[{ f: 0, v: "sorpresa" }]} />
+          </g>
+        </>} />
+      <div style={{ position: "absolute", left: 0, right: 0, top: 90, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 64, letterSpacing: 8, color: "#f4efe6", textShadow: "0 4px 16px rgba(0,0,0,.6)", opacity: SINGLE(f, 6, 10), transform: `scale(${s(6)})` }}>DAY 8 · TOMORROW NIGHT</div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 180, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 84, color: ORO, textShadow: "0 4px 16px rgba(0,0,0,.6)", opacity: SINGLE(f, 40, 44), transform: `scale(${s(40)})` }}>Two Monks, a River and a Woman</div>
+    </AbsoluteFill>
+  );
+};
+// 404,2-409,2 · el farol se acerca; en «the hard way» se apaga
+const Cierre8: React.FC = () => {
+  const f = useF();
+  const k = interpolate(f, [0, 90], [0.6, 1.25], cl);
+  const luz = 1 - SINGLE(f, 88, 100);
+  const s = (a: number) => interpolate(f, [a, a + 8], [1.3, 1], cl);
+  return (
+    <AbsoluteFill style={{ background: "#07070b" }}>
+      <svg {...svgP}>
+        <Halo x={960} y={520} r={520 * k} color={ORO} fuerza={0.45 * luz} />
+        <g transform={`translate(960,${520 + Math.sin(f / 12) * 6}) scale(${k}) rotate(${Math.sin(f / 18) * 3})`}>
+          <path d="M0,-200 L0,-130" stroke="#3a2a1a" strokeWidth={6} />
+          <ellipse cx={0} cy={0} rx={95} ry={130} fill={mezcla("#2a2622", "#ffd08a", luz)} />
+          {[-60, -20, 20, 60].map((y) => <path key={y} d={`M${-Math.sqrt(1 - (y / 130) ** 2) * 95},${y} Q0,${y + 10} ${Math.sqrt(1 - (y / 130) ** 2) * 95},${y}`} stroke="#c98a3a" strokeWidth={3} fill="none" opacity={0.6} />)}
+          <rect x={-60} y={-142} width={120} height={18} rx={6} fill="#3a2a1a" /><rect x={-60} y={124} width={120} height={18} rx={6} fill="#3a2a1a" />
+        </g>
+      </svg>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 820, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 72, color: "#f4efe6", opacity: SINGLE(f, 6, 10), transform: `scale(${s(6)})` }}>Two Monks, a River and a Woman</div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 920, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 40, letterSpacing: 6, color: ORO, opacity: SINGLE(f, 36, 40), transform: `scale(${s(36)})` }}>lust is not love · Day 8</div>
+      <AbsoluteFill style={{ background: "#000", opacity: interpolate(f, [118, 150], [0, 1], cl) }} />
+    </AbsoluteFill>
+  );
+};
+
 // ---------- el montaje ----------
 const TRAMOS: TramoS[] = [
   { t0: 0, t1: 3.0, el: <Cuadro0b /> },
   { t0: 3.0, t1: 5.7, el: <AlbaTel2 /> },
-  { t0: 5.7, t1: 10.0, el: <Alba1 /> },
+  { t0: 5.7, t1: 10.0, el: <Alba1b /> },
   { t0: 10.0, t1: 13.1, el: <Cuenta4h2 /> },
-  { t0: 13.1, t1: 15.8, el: <Cara2b /> },
+  { t0: 13.1, t1: 15.8, el: <Cara2c /> },
   { t0: 15.8, t1: 21.1, el: <Dia5a2 />, trans: { tipo: "fundido", d: 12 } },
   { t0: 21.1, t1: 25.8, el: <Dia5b /> },
   { t0: 25.8, t1: 29.2, el: <Sonrisa5 /> },
@@ -2452,19 +2726,20 @@ const TRAMOS: TramoS[] = [
   { t0: 76.3, t1: 78.7, el: <MiraTel11 /> },
   { t0: 78.7, t1: 80.4, el: <TelPrendido2 /> },
   { t0: 80.4, t1: 83.4, el: <PasarCorto2 /> },
-  { t0: 83.4, t1: 92.0, el: <Cuarto12b /> },
+  { t0: 83.4, t1: 92.0, el: <Cuarto12c /> },
   { t0: 92.0, t1: 98.7, el: <Tibio13b /> },
   { t0: 98.7, t1: 100.7, el: <PPLeo dur={60} leo={{ tel: false, poses: [{ f: 0, v: SENT }, { f: 20, v: { ...SENT, cabeza: 10 } }], caras: [{ f: 0, v: "triste" }], habla: [[0, 56]] }} hud={<Hud min={390} dia={5} />} /> },
   { t0: 100.7, t1: 106.5, el: <Recuerdo14 />, trans: { tipo: "fundido", d: 10 } },
-  { t0: 106.5, t1: 111.0, el: <Mismo14 /> },
+  { t0: 106.5, t1: 111.0, el: <Mismo14b /> },
   { t0: 111.0, t1: 113.1, el: <Asiente14 /> },
-  { t0: 113.1, t1: 118.7, el: <Farol15b /> },
+  { t0: 113.1, t1: 118.7, el: <Farol15c /> },
   { t0: 118.7, t1: 128.0, el: <Camino16b /> },
   { t0: 128.0, t1: 131.5, el: <Galope17a /> },
   { t0: 131.5, t1: 133.9, el: <Galope17b /> },
   { t0: 133.9, t1: 138.1, el: <Galope17c /> },
   { t0: 138.1, t1: 144.3, el: <CaraRoja17b /> },
-  { t0: 144.3, t1: 151.6, el: <Grito18b /> },
+  { t0: 144.3, t1: 148.2, el: <Grito18c /> },
+  { t0: 148.2, t1: 151.6, el: <MiraAtras18 /> },
   { t0: 151.6, t1: 154.0, el: <Pregunta19b /> },
   { t0: 154.0, t1: 156.9, el: <Tos19 /> },
   { t0: 156.9, t1: 161.5, el: <Risa20b /> },
@@ -2472,7 +2747,7 @@ const TRAMOS: TramoS[] = [
   { t0: 165.2, t1: 170.1, el: <Habito20 /> },
   { t0: 170.1, t1: 174.5, el: <Habito21b />, trans: { tipo: "barrido", lado: -1 } },
   { t0: 174.5, t1: 177.8, el: <Habito21b o={132} z={1.8} y={560} asustado /> },
-  { t0: 177.8, t1: 181.4, el: <Bajarse21 /> },
+  { t0: 177.8, t1: 181.4, el: <Bajarse21b /> },
   { t0: 181.4, t1: 183.4, el: <Dedo22b /> },
   { t0: 183.4, t1: 190.7, el: <Antes22b /> },
   { t0: 190.7, t1: 193.2, el: <StopNegro2 /> },
@@ -2499,28 +2774,34 @@ const TRAMOS: TramoS[] = [
   { t0: 284.8, t1: 292.3, el: <Silencio31b /> },
   { t0: 292.3, t1: 300.7, el: <Sienta31b /> },
   { t0: 300.7, t1: 305.0, el: <Sien32 /> },
-  { t0: 305.0, t1: 315.5, el: <Diagrama32b />, trans: { tipo: "fundido", d: 10 } },
+  { t0: 305.0, t1: 312.2, el: <Diagrama32b />, trans: { tipo: "fundido", d: 10 } },
+  { t0: 312.2, t1: 313.9, el: <Hombros32 /> },
+  { t0: 313.9, t1: 315.5, el: <Diagrama32b o={Math.round((313.9 - 305.0) * 30)} /> },
   { t0: 315.5, t1: 316.6, el: <SiOlvido32 /> },
   { t0: 316.6, t1: 322.0, el: <Olvida32b /> },
   { t0: 322.0, t1: 327.2, el: <Monjes33b />, trans: { tipo: "luz", d: 14 } },
   { t0: 327.2, t1: 329.6, el: <Parado34b />, trans: { tipo: "luz", d: 12 } },
-  { t0: 329.6, t1: 331.8, el: <Rodillas34 /> },
+  { t0: 329.6, t1: 331.8, el: <Rodillas34b /> },
   { t0: 331.8, t1: 335.2, el: <Porque35b /> },
   { t0: 335.2, t1: 342.0, el: <Cruza35b /> },
   { t0: 342.0, t1: 346.6, el: <TenzoJoven />, trans: { tipo: "fundido", d: 10 } },
   { t0: 346.6, t1: 350.4, el: <SeVa36b />, trans: { tipo: "fundido", d: 8 } },
   { t0: 350.4, t1: 358.3, el: <Pared37 />, trans: { tipo: "fundido", d: 12 } },
-  { t0: 358.3, t1: 364.4, el: <Dia7 /> },
+  { t0: 358.3, t1: 364.4, el: <Dia7b /> },
   { t0: 364.4, t1: 368.8, el: <Parada38b />, trans: { tipo: "cortina", lado: 1 } },
   { t0: 368.8, t1: 372.2, el: <Manos38 /> },
   { t0: 372.2, t1: 376.4, el: <Nota38 /> },
-  { t0: 376.4, t1: 384.5, el: <Maya38b /> },
+  { t0: 376.4, t1: 377.3, el: <MayaPlano /> },
+  { t0: 377.3, t1: 378.5, el: <InsBufanda /> },
+  { t0: 378.5, t1: 380.3, el: <InsAmbo /> },
+  { t0: 380.3, t1: 382.0, el: <InsLibro /> },
+  { t0: 382.0, t1: 384.5, el: <Maya38b o={Math.round((382.0 - 376.4) * 30)} /> },
   { t0: 384.5, t1: 386.9, el: <Sonrie39b /> },
   { t0: 386.9, t1: 388.2, el: <Colorado39 /> },
   { t0: 388.2, t1: 392.5, el: <Relame40b /> },
   { t0: 392.5, t1: 398.7, el: <Cierre41b />, trans: { tipo: "fundido", d: 16 } },
-  { t0: 398.7, t1: 404.2, el: <Gancho41b />, trans: { tipo: "fundido", d: 12 } },
-  { t0: 404.2, t1: 409.2, el: <Gancho41c /> },
+  { t0: 398.7, t1: 404.2, el: <Gancho41d />, trans: { tipo: "fundido", d: 12 } },
+  { t0: 404.2, t1: 409.2, el: <Cierre8 /> },
 ];
 export const TZ03_DUR = Math.round(409.2 * 30); // 12.276
 const PLANOS = planosDe(TRAMOS);
