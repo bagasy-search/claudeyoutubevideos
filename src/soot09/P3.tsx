@@ -11,7 +11,7 @@ import { Globo, Tacha } from "./kitj2";
 // TRAMPA 3 · LA ISLA (213,7-342,7 s). Río arriba hasta la península, el fuerte en 19 días, el agua del río que vuelve,
 // mosquitos y fiebres, las cruces de noche, los anillos del ciprés (la peor sequía en 770 años), "seasoning" y 104 → 38.
 export const CAM3: K[] = [
-  [213.8, 22650, 620, 0.75], [214.6, 22950, 660, 0.9], [216.0, 22900, 640, 0.8], [218.0, 21000, 600, 0.45], [225.6, 20500, 600, 0.42],
+  [213.8, 22900, 560, 0.68], [214.6, 22950, 570, 0.74], [216.0, 22900, 600, 0.76], [218.0, 21000, 600, 0.45], [225.6, 20500, 600, 0.42],
   [226.4, 20800, 600, 0.42], [231.0, 22200, 640, 0.55], [232.6, 22760, 720, 1.0], [235.4, 22800, 720, 1.0], [236.3, 23050, 650, 0.7],
   [237.3, 23400, 640, 0.6], [238.5, 25600, 700, 0.75], [240.0, 24330, 700, 0.85], [246.8, 24350, 690, 0.88], [248.3, 24300, 700, 1.25],
   [251.2, 24350, 700, 1.2], [252.6, 22880, 800, 1.7], [258.9, 22880, 800, 1.75], [259.8, 22880, 800, 1.55], [264.9, 22900, 800, 1.6],
@@ -77,7 +77,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
     <AbsoluteFill>
       <Mundo t={t} cam={CAM3} cielo={CIELO3}>
         <Base t={t} />
-        {(t < 218 || (t > 231.6 && t < 238.4)) && <En x={22950} w={900}><Poste t={t} t0={213.8} x={22950} y={SUELO + 10} n={3} titulo="THE ISLAND" s={1.25} /></En>}
+        {t < 218 && <En x={22950} w={900}><Poste t={t} t0={213.8} x={22950} y={SUELO + 10} n={3} titulo="THE ISLAND" s={1.25} /></En>}
         {/* el galeón español que no se anima a subir */}
         {t > 220.5 && t < 226.6 && (() => { const x = interpolate(t, [220.6, 223.6, 226.4], [17900, 19300, 18200], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }); return <En x={x} w={500}><Nave x={x} y={AGUA - 120} t={t} tam={0.95} casco="#3a2a2a" bandera={false} vela={1} /><svg style={{ position: "absolute", left: x - 60, top: AGUA - 700, overflow: "visible" }} width={120} height={120}><rect x={0} y={0} width={120} height={80} fill="#f4c020" /><rect x={0} y={20} width={120} height={40} fill="#c81d2e" /></svg></En>; })()}
         {/* la soga del barco al árbol */}
@@ -217,7 +217,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
       {t > 217.9 && t < 226.2 && (
         <div style={{ position: "absolute", left: 0, top: 0 }}>
           <Pergamino x={960} y={440} w={760} abre={prog(t, 218.0, 218.6) * (1 - prog(t, 225.7, 226.2))} lineas={0} titulo="COMPANY INSTRUCTIONS" />
-          {t > 219.98 && <div style={{ position: "absolute", left: 960, top: 400, transform: `translate(-50%,0) scale(${ent(t, 220.0) * (1 - prog(t, 225.7, 226.2))})`, fontFamily, fontWeight: 700, fontSize: 64, color: C.noche, whiteSpace: "nowrap" }}>1. EASY TO DEFEND</div>}
+          {t > 218.7 && <div style={{ position: "absolute", left: 960, top: 400, transform: `translate(-50%,0) scale(${ent(t, 218.75) * (1 - prog(t, 225.7, 226.2))})`, fontFamily, fontWeight: 700, fontSize: 64, color: C.noche, whiteSpace: "nowrap" }}>1. EASY TO DEFEND</div>}
           {t > 222.62 && <div style={{ position: "absolute", left: 960, top: 490, transform: `translate(-50%,0) scale(${ent(t, 222.62) * (1 - prog(t, 225.7, 226.2))})`, fontFamily, fontWeight: 700, fontSize: 64, color: C.noche, whiteSpace: "nowrap" }}>2. FAR UPRIVER</div>}
         </div>
       )}
@@ -234,10 +234,10 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
           <div style={{ fontSize: 96, color: C.noche, lineHeight: 1 }}>{dia}<span style={{ fontSize: 40 }}> / 19</span></div>
         </div>
       )}
-      {t > 241.2 && t < 247.2 && <FuerteTriangulo x={1580} y={300} s={0.42} t={t} dibuja={prog(t, 241.3, 242.4)} />}
-      <Chip t={t} t0={241.98} t1={243.2} text="A TRIANGLE" color={C.tierra} x={1580} y={500} centro size={44} />
+      {t > 239.4 && t < 247.2 && <FuerteTriangulo x={1500} y={330} s={0.6} t={t} dibuja={prog(t, 239.5, 246.2)} />}
+      <Chip t={t} t0={241.98} t1={243.2} text="A TRIANGLE" color={C.tierra} x={1500} y={590} centro size={44} />
       <Chip t={t} t0={243.24} t1={247.0} text="WALLS · 4 METERS" color="#7a4620" x={960} y={930} centro size={54} />
-      <Chip t={t} t0={245.44} t1={247.0} text="3 CANNONS" color="#3a3a44" x={1580} y={500} centro size={44} />
+      <Chip t={t} t0={245.44} t1={247.0} text="3 CANNONS" color="#3a3a44" x={1500} y={590} centro size={44} />
       <Chip t={t} t0={248.3} t1={251.4} text="CHURCH" color={C.violeta} x={910} y={330} centro size={44} />
       <Chip t={t} t0={249.14} t1={251.4} text="STOREHOUSE" color={C.tierra} x={1380} y={380} centro size={44} />
       <Chip t={t} t0={250.2} t1={251.4} text="VERY BAD HOUSES" color={C.rojo} x={520} y={380} centro size={44} />

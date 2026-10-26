@@ -171,15 +171,21 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={355.88} t1={357.0} text="IN THE MIDDLE OF WINTER" color="#6a8ab8" x={960} y={930} centro size={54} />
       <Chip t={t} t0={357.82} t1={361.9} text="WHO CAME ON THE SHIP?" color={C.violeta} x={960} y={140} centro size={56} />
       {t > 366.3 && t < 368.4 && <Grande t={t} t0={366.32} text="YES." y={200} size={140} color={C.ambar} />}
-      <Chip t={t} t0={368.56} t1={372.4} text="STARVING SWAMP" color="#6a7a2a" x={300} y={160} size={46} />
-      <Chip t={t} t0={370.04} t1={372.4} text="DYSENTERY" color="#7a5a2a" x={300} y={240} size={46} />
+      <Chip t={t} t0={368.56} t1={371.3} text="STARVING SWAMP" color="#6a7a2a" x={960} y={930} centro size={58} />
+      <Chip t={t} t0={370.04} t1={371.3} text="DYSENTERY" color="#7a5a2a" x={960} y={140} centro size={58} />
       {t > 371.4 && t < 372.5 && <Grande t={t} t0={371.96} text="PERFUME?!" y={930} size={120} color={C.rosa} />}
-      {/* Londres: los inversores quieren ganancia ya */}
+      {/* Londres a pantalla completa: los inversores quieren ganancia ya */}
       {t > 372.4 && t < 377.8 && (
-        <div style={{ position: "absolute", left: 1290, top: 140, width: 520, height: 420, transformOrigin: "100% 0", transform: `scale(${1.45 * ent(t, 372.5) * (1 - prog(t, 377.3, 377.8))}) rotate(3deg)`, background: "#a9a0b8", border: "10px solid #2a1408", borderRadius: 24, overflow: "hidden" }}>
-          <div style={{ position: "absolute", left: 0, top: 6, width: 520, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 44, color: "#fff", WebkitTextStroke: "7px #1b1240", paintOrder: "stroke fill" }}>MEANWHILE, LONDON</div>
-          {[170, 350].map((x, i) => <Persona key={x} x={x} y={460} h={330} t={t} seed={120 + i} ropa={GENT(i)} gorro="copa" gola flip={i === 1} expr={t > 376 ? "enojado" : "orgullo"} />)}
-          {t > 375.4 && <Globo t={t} t0={375.46} x={260} y={130} text="PROFIT. FAST." size={34} />}
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, overflow: "hidden", opacity: ent(t, 372.45) * (1 - prog(t, 377.4, 377.8)), background: "linear-gradient(#8f86a8, #c9bfd6 62%, #6a5a5a 62%)" }}>
+          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
+            {Array.from({ length: 16 }, (_, i) => { const h = 180 + ((i * 53) % 140); return <rect key={i} x={i * 124 - 20} y={670 - h} width={118} height={h} fill={i % 2 ? "#5a4e6a" : "#4a4058"} />; })}
+            <rect x={880} y={330} width={160} height={340} fill="#3e3450" /><ellipse cx={960} cy={330} rx={120} ry={110} fill="#4a4058" /><rect x={952} y={190} width={16} height={50} fill="#3e3450" />
+            {Array.from({ length: 30 }, (_, i) => <rect key={`v${i}`} x={(i * 137) % 1900} y={480 + ((i * 71) % 160)} width={22} height={30} fill="#f7d47a" opacity={0.7} />)}
+          </svg>
+          <div style={{ position: "absolute", left: 0, top: 40, width: 1920, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 76, color: "#fff", WebkitTextStroke: "12px #1b1240", paintOrder: "stroke fill" }}>MEANWHILE, LONDON</div>
+          {[420, 760, 1160, 1500].map((x, i) => <Persona key={x} x={x} y={1120} h={760} t={t} seed={120 + i} ropa={GENT(i)} gorro="copa" gola flip={i > 1} barba={i % 2 ? "#5a3a2a" : undefined} expr={t > 376 ? "enojado" : "orgullo"} habla={i === 1 && t > 375.4} mira={i > 1 ? -0.3 : 0.3} bD={i === 2 ? 120 + Math.sin(t * 6) * 20 : undefined} cD={i === 2 ? 30 : undefined} />)}
+          <svg style={{ position: "absolute", left: 860, top: 860 }} width={220} height={200}>{Array.from({ length: 9 }, (_, k) => <ellipse key={k} cx={110} cy={180 - k * 16 * ent(t, 372.8 + k * 0.08)} rx={80} ry={18} fill="#ffd34a" stroke="#b07a10" strokeWidth={5} />)}</svg>
+          {t > 375.4 && <Globo t={t} t0={375.46} x={760} y={300} text="PROFIT. FAST." size={72} />}
         </div>
       )}
       <Chip t={t} t0={379.06} t1={381.6} text="SHINY YELLOW FLAKES" color={C.oro} tinta={C.noche} x={960} y={140} centro size={56} />

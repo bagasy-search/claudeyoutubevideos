@@ -17,8 +17,8 @@ export const CAM8: K[] = [
   [770.8, 23900, 650, 0.72], [776.2, 23900, 650, 0.72], [776.9, 22900, 650, 0.62], [781.3, 23300, 650, 0.62], [782.0, FX, 650, 0.75],
   [787.6, FX, 650, 0.75], [788.4, 21900, 640, 0.6], [794.3, 20900, 640, 0.6], [795.4, 20500, 680, 0.8], [802.6, 20550, 680, 0.85],
   [803.6, 18100, 660, 0.62], [812.4, 18250, 660, 0.64], [813.2, 20600, 680, 0.78], [818.6, 22300, 680, 0.78], [819.5, 23700, 690, 0.75],
-  [826.2, 23800, 690, 0.8], [827.0, 13600, 690, 0.8], [832.8, 13600, 690, 0.85], [833.5, 25600, 680, 0.85], [838.2, 25700, 680, 0.88],
-  [839.0, 3300, 640, 1.05], [844.9, 3380, 640, 1.1], [845.6, 12800, 620, 0.4], [852.9, 13800, 620, 0.42], [853.6, 3300, 640, 0.85],
+  [826.2, 23800, 690, 0.8], [827.0, 13600, 760, 1.45], [832.8, 13600, 760, 1.6], [833.5, 25600, 680, 0.85], [838.2, 25700, 680, 0.88],
+  [839.0, 3300, 640, 1.05], [844.9, 3380, 640, 1.1], [845.6, 12900, 660, 0.6], [852.9, 13700, 660, 0.64], [853.6, 3300, 640, 0.85],
   [859.9, 3350, 640, 0.95], [860.6, 24350, 700, 0.7], [872.6, 24400, 700, 0.75], [873.4, 3300, 620, 0.75], [879.8, 3300, 620, 0.78],
   [880.5, 24350, 680, 0.55], [888.2, 24350, 680, 0.58], [889.0, 20900, 680, 0.9], [891.6, 20950, 680, 0.95], [892.4, 23950, 690, 0.75],
   [908.6, 23750, 690, 0.78],
@@ -99,7 +99,7 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
           </>
         )}
         {/* 60 esqueletos andantes en el fuerte en ruinas */}
-        {t > 766.3 && t < 781.5 && Array.from({ length: 8 }, (_, i) => { const x = FX - 520 + i * 120; return <En key={i} x={x} w={150}><Persona x={x} y={SUELO + (i % 2) * 6} h={230} t={t} seed={850 + i} ropa={COLONO(i)} flaco={0.55} expr="triste" aparece={767.6 + i * 0.08} /></En>; })}
+        {t > 766.3 && t < 781.5 && Array.from({ length: 8 }, (_, i) => { const x = FX - 520 + i * 120; return <En key={i} x={x} w={150}><Persona x={x} y={SUELO + (i % 2) * 6} h={230} t={t} seed={850 + i} ropa={{ ...COLONO(i), tunica: "#7a7468", tunica2: "#5a5650" }} flaco={1} inclina={10 + (i % 3) * 6} camina={i % 3 === 0 ? 0.5 : 0} expr={i % 2 ? "miedo" : "dormido"} aparece={767.6 + i * 0.08} manoD={i % 2 ? <rect x={-5} y={-10} width={10} height={170} fill="#6a4a2a" /> : undefined} /></En>; })}
         {/* los recién llegados: Gates con los suyos en la playa */}
         {t > 766.3 && t < 777 && [23250, 23400, 23550].map((x, i) => <En key={x} x={x} w={200}><Persona x={x} y={SUELO} h={250} t={t} seed={860 + i} ropa={i === 1 ? GENT(1) : COLONO(i + 4)} gola={i === 1} gorro={i === 1 ? "morion" : undefined} expr={t < 767.6 ? "feliz" : t > 770.9 && i === 1 ? "triste" : "sorpresa"} camina={t < 767 ? 1.2 : 0} /></En>)}
         {/* todos a bordo */}
@@ -167,6 +167,8 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       {t > 819.4 && t < 826.4 && <Tinte color="#3a1020" op={0.35} />}
       {t > 741.2 && t < 743.2 && <Grande t={t} t0={741.3} text="THE TWIST" y={420} size={170} color={C.ambar} />}
       <Chip t={t} t0={743.25} t1={747.3} text="MAY 1610" color={C.lima} tinta={C.noche} x={960} y={140} centro size={60} />
+      <Chip t={t} t0={744.7} t1={747.3} text="DELIVERANCE" color={C.ambar} tinta={C.noche} x={560} y={300} centro size={56} />
+      <Chip t={t} t0={745.0} t1={747.3} text="PATIENCE" color={C.crema} tinta={C.noche} x={1360} y={300} centro size={56} />
       <Chip t={t} t0={744.79} t1={747.3} text="TWO SMALL SHIPS" color={C.teal} tinta={C.noche} x={960} y={930} centro size={54} />
       <Chip t={t} t0={748.13} t1={751.9} text="GATES" color={C.violeta} x={560} y={140} centro size={54} />
       <Chip t={t} t0={749.45} t1={751.9} text="SOMERS" color={C.teal} tinta={C.noche} x={960} y={140} centro size={54} />
@@ -215,10 +217,16 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       {t > 823.3 && t < 826.2 && <Grande t={t} t0={823.97} text="NO JAMESTOWN AT ALL" y={240} size={110} color={C.crema} />}
       {t > 826.2 && t < 828.4 && <Grande t={t} t0={826.4} text="ONE MORE TWIST" y={420} size={130} color={C.ambar} />}
       <Chip t={t} t0={828.83} t1={831.6} text="ON THE SEA VENTURE..." color={C.teal} tinta={C.noche} x={960} y={140} centro size={54} />
-      <Chip t={t} t0={831.81} t1={833.3} text="JOHN ROLFE" color={C.oro} tinta={C.noche} x={960} y={140} centro size={60} />
+      <Chip t={t} t0={829.0} t1={833.3} text="JOHN ROLFE" color={C.oro} tinta={C.noche} x={960} y={930} centro size={64} />
       <Chip t={t} t0={835.47} t1={838.3} text="SWEET TOBACCO" color={C.lima} tinta={C.noche} x={960} y={140} centro size={56} />
       <Chip t={t} t0={836.41} t1={838.3} text="SEEDS FROM THE CARIBBEAN" color={C.teal} tinta={C.noche} x={960} y={930} centro size={50} />
       {t > 839.2 && t < 840.8 && <Grande t={t} t0={839.43} text="A SENSATION" y={220} size={120} color={C.ambar} />}
+      {t > 840.4 && t < 845.4 && Array.from({ length: 9 }, (_, i) => { const k = prog(t, 840.5 + i * 0.18, 842.6 + i * 0.18); const m = prog(t, 841.6 + i * 0.18, 842.1 + i * 0.18); const x = 220 + i * 185; const y = 360 + k * 520 + Math.sin(t * 3 + i) * 10; return (
+        <svg key={i} style={{ position: "absolute", left: x - 60, top: y - 60, overflow: "visible", opacity: 1 - prog(t, 845.0, 845.4) }} width={120} height={120}>
+          <g transform={`translate(60 60) rotate(${(1 - m) * Math.sin(t * 4 + i) * 30}) scale(${1 - m}, 1)`}><path d="M 0 -56 Q 40 -20 0 56 Q -40 -20 0 -56 Z" fill="#7a9a3a" stroke="#3a5a1a" strokeWidth={5} /><line x1={0} y1={-50} x2={0} y2={50} stroke="#3a5a1a" strokeWidth={4} /></g>
+          {m > 0 && <g transform={`translate(60 60) scale(${m}, 1)`}><circle r={44} fill="#ffd34a" stroke="#b07a10" strokeWidth={7} /><text y={16} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={44} fill="#b07a10">£</text></g>}
+        </svg>
+      ); })}
       {t > 841.0 && t < 845.4 && <Grande t={t} t0={841.89} text="VIRGINIA'S GOLD" y={220} size={120} color={C.oro} />}
       <Chip t={t} t0={843.0} t1={845.4} text="IT GROWS IN THE GROUND" color={C.lima} tinta={C.noche} x={960} y={930} centro size={52} />
       <Chip t={t} t0={847.41} t1={853.1} text="THE HURRICANE" color="#5a5a80" x={300} y={160} size={46} />
@@ -269,25 +277,25 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       {/* CTA */}
       {t > 895.3 && t < 897.6 && (
         <div style={{ position: "absolute", left: 960, top: 820, transform: `translate(-50%,-50%) scale(${ent(t, 895.5) * (t > 896.0 ? 1 + 0.06 * Math.sin((t - 896) * 14) : 1)})`, display: "flex", alignItems: "center", gap: 20 }}>
-          <div style={{ background: t > 895.9 ? "#6a6a74" : "#e02020", borderRadius: 14, padding: "14px 40px", fontFamily, fontWeight: 700, fontSize: 54, color: "#fff" }}>{t > 895.9 ? "SUBSCRIBED" : "SUBSCRIBE"}</div>
-          <svg width={86} height={86} viewBox="-50 -50 100 100" style={{ transform: `rotate(${t > 896.1 ? Math.sin(t * 30) * 18 : 0}deg)` }}><path d="M -30 20 L -30 -6 Q -30 -36 0 -38 Q 30 -36 30 -6 L 30 20 L 38 28 L -38 28 Z" fill="#fff" stroke="#1b1240" strokeWidth={6} /><circle cx={0} cy={36} r={9} fill="#fff" stroke="#1b1240" strokeWidth={5} /></svg>
+          <div style={{ background: t > 895.9 ? "#6a6a74" : "#e02020", borderRadius: 18, padding: "18px 56px", fontFamily, fontWeight: 700, fontSize: 80, color: "#fff" }}>{t > 895.9 ? "SUBSCRIBED" : "SUBSCRIBE"}</div>
+          <svg width={120} height={120} viewBox="-50 -50 100 100" style={{ transform: `rotate(${t > 896.1 ? Math.sin(t * 30) * 18 : 0}deg)` }}><path d="M -30 20 L -30 -6 Q -30 -36 0 -38 Q 30 -36 30 -6 L 30 20 L 38 28 L -38 28 Z" fill="#fff" stroke="#1b1240" strokeWidth={6} /><circle cx={0} cy={36} r={9} fill="#fff" stroke="#1b1240" strokeWidth={5} /></svg>
         </div>
       )}
       <Chip t={t} t0={897.27} t1={902.3} text="NEXT TIME: A PIRATE SHIP" color="#2a1a14" x={960} y={140} centro size={56} />
       <Chip t={t} t0={901.49} t1={902.3} text="THE CABIN BOY" color={C.ambar} tinta={C.noche} x={960} y={930} centro size={56} />
       {/* las 7 trampas: ¿cuál te agarraba primero? */}
       {t > 902.3 && (
-        <div style={{ position: "absolute", left: 960, top: 520, transform: `translate(-50%,-50%) scale(${ent(t, 902.4)})`, width: 1240, background: "rgba(27,18,64,.88)", border: "8px solid #fff", borderRadius: 30, padding: "20px 36px" }}>
-          <div style={{ fontFamily, fontWeight: 700, fontSize: 46, color: C.ambar, textAlign: "center", marginBottom: 10 }}>WHICH TRAP GETS YOU FIRST?</div>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 26px", justifyContent: "center" }}>
+        <div style={{ position: "absolute", left: 960, top: 530, transform: `translate(-50%,-50%) scale(${ent(t, 902.4)})`, width: 1560, background: "rgba(27,18,64,.88)", border: "8px solid #fff", borderRadius: 30, padding: "20px 36px" }}>
+          <div style={{ fontFamily, fontWeight: 700, fontSize: 60, color: C.ambar, textAlign: "center", marginBottom: 14 }}>WHICH TRAP GETS YOU FIRST?</div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "14px 40px" }}>
             {TRAPS.map((s, i) => (
               <div key={s} style={{ display: "flex", alignItems: "center", gap: 12, opacity: ent(t, 903.0 + i * 0.12), transform: `scale(${t > 904.5 && Math.floor((t - 904.5) * 3) % 7 === i ? 1.12 : 1})` }}>
-                <div style={{ width: 56, height: 56, borderRadius: 28, background: C.rojo, border: "5px solid #fff", fontFamily, fontWeight: 700, fontSize: 32, color: "#fff", textAlign: "center", lineHeight: "46px" }}>{i + 1}</div>
-                <div style={{ fontFamily, fontWeight: 700, fontSize: 38, color: "#fff" }}>{s}</div>
+                <div style={{ width: 66, height: 66, borderRadius: 33, flexShrink: 0, background: C.rojo, border: "5px solid #fff", fontFamily, fontWeight: 700, fontSize: 40, color: "#fff", textAlign: "center", lineHeight: "56px" }}>{i + 1}</div>
+                <div style={{ fontFamily, fontWeight: 700, fontSize: 46, color: "#fff", whiteSpace: "nowrap" }}>{s}</div>
               </div>
             ))}
           </div>
-          <div style={{ fontFamily, fontWeight: 700, fontSize: 34, color: C.lima, textAlign: "center", marginTop: 12 }}>TELL ME IN THE COMMENTS</div>
+          <div style={{ fontFamily, fontWeight: 700, fontSize: 46, color: C.lima, textAlign: "center", marginTop: 14 }}>TELL ME IN THE COMMENTS</div>
         </div>
       )}
     </AbsoluteFill>

@@ -21,7 +21,7 @@ const hatillo = <circle cx={0} cy={20} r={40} fill="#b0905a" stroke="#5a3a1a" st
 const panfleto = <g><rect x={-40} y={-90} width={90} height={110} fill="#f4ecd8" stroke="#6a5a4a" strokeWidth={4} />{[0, 1, 2, 3].map((k) => <line key={k} x1={-28} y1={-70 + k * 22} x2={36} y2={-70 + k * 22} stroke="#8a7a6a" strokeWidth={4} />)}</g>;
 
 const E_: E[] = [
-  [35.5, 40.8, "D", { seed: 1101, ropa: COLONO(0), expr: "neutro", habla: true }],
+  [35.5, 38.9, "D", { seed: 1101, ropa: COLONO(0), expr: "neutro", habla: true }],
   [50.5, 53.6, "D", { seed: 1102, ropa: COLONO(1), expr: "feliz", bD: 150, cD: 30 }],
   [99.7, 104.8, "I", { seed: 1103, ropa: COLONO(2), expr: "triste", manoD: cuenco }],
   [135.5, 139.6, "D", { seed: 1104, ropa: GENT(2), gola: true, gorro: "copa", expr: "sorpresa", manoD: choclo }],
@@ -38,7 +38,6 @@ const E_: E[] = [
   [435.6, 441.0, "I", { seed: 1115, ropa: COLONO(0), expr: "feliz", manoD: azada }],
   [459.6, 465.0, "D", { seed: 1116, ropa: COLONO(3), expr: "neutro", flaco: 0.2, manoD: cuenco }],
   [529.6, 535.0, "I", { seed: 1117, ropa: SMITH, barba: "#8a4a1a", gorro: "morion", gola: true, expr: "orgullo", habla: true }],
-  [545.6, 550.4, "D", { seed: 1118, ropa: COLONO(2), expr: "miedo" }],
   [589.6, 596.2, "I", { seed: 1119, ropa: GENT(2), gola: true, gorro: "morion", expr: "triste", flaco: 0.2 }],
   [596.5, 600.6, "D", { seed: 1120, ropa: GENT(2), gola: true, gorro: "morion", expr: "sorpresa", bD: 150, cD: 40 }],
   [645.6, 649.4, "I", { seed: 1121, ropa: COLONO(1), expr: "triste", flaco: 0.3 }],

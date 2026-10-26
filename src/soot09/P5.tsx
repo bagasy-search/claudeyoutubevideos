@@ -198,8 +198,8 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
       )}
       {t > 541.4 && t < 546.0 && <Grande t={t} t0={543.21} text="THE ENGLISH DEPEND ON THEM" y={720} size={80} color={C.ambar} />}
       <Chip t={t} t0={544.47} t1={546.0} text="NOT THE OTHER WAY AROUND" color={C.rojo} x={960} y={860} centro size={50} />
-      <Chip t={t} t0={546.91} t1={550.6} text="AUTUMN 1609" color={C.naranja} x={960} y={140} centro size={60} />
-      {t > 548.7 && <Grande t={t} t0={548.71} text="EVERYTHING GOES WRONG" y={930} size={96} color="#ff5a6a" />}
+      <Chip t={t} t0={546.6} t1={550.6} text="AUTUMN 1609" color={C.naranja} x={960} y={140} centro size={84} />
+      {t > 548.7 && <Grande t={t} t0={548.71} text="EVERYTHING GOES WRONG" y={880} size={84} color="#ff5a6a" />}
       {t > 494.4 && t < 504.8 && <Nieve t={t} n={60} op={0.7} />}
     </AbsoluteFill>
   );

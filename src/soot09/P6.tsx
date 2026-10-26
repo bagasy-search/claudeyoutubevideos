@@ -17,7 +17,7 @@ export const CAM6: K[] = [
   [571.4, 10700, 600, 0.45], [574.9, 11550, 640, 0.75], [578.0, 11750, 660, 0.8], [583.1, 11850, 680, 0.95], [588.5, 11950, 660, 0.9],
   [589.4, 11840, 700, 1.6], [592.3, 12020, 700, 1.55], [593.2, 12500, 640, 0.6], [597.2, 12900, 650, 0.62], [598.6, 13350, 680, 0.75],
   [607.6, 13400, 640, 0.55], [608.4, 21800, 620, 0.5], [611.2, 22300, 620, 0.55], [612.3, 23620, 700, 1.0], [621.4, 23720, 700, 1.02],
-  [622.4, 24580, 720, 1.15], [627.9, 24600, 720, 1.2], [628.7, 22250, 760, 1.25], [637.8, 22250, 790, 1.25], [638.9, 21700, 640, 0.6],
+  [622.4, 24580, 720, 1.15], [627.9, 24600, 720, 1.2], [628.7, 22250, 760, 1.25], [633.6, 22300, 800, 1.6], [636.0, 22350, 780, 1.7], [637.8, 22400, 790, 1.55], [638.9, 21700, 640, 0.6],
   [643.0, 20300, 620, 0.5], [643.8, 24350, 620, 0.6], [649.6, 24350, 620, 0.62],
 ];
 const CIELO6: [number, string][] = [
@@ -135,11 +135,17 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
                 <Persona x={0} y={0} h={220} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" expr={t < 634.9 ? "dormido" : "miedo"} />
               </div>
             ) : salto < 1 ? (
-              <Persona x={smithBote + salto * 300} y={AGUA - 30 - Math.sin(salto * Math.PI) * 200 + salto * 120} h={220} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" expr="miedo" />
+              <>
+                <Persona x={smithBote + salto * 300} y={AGUA - 30 - Math.sin(salto * Math.PI) * 200 + salto * 120} h={220} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" expr="miedo" bD={170} bI={170} cD={20} cI={20} inclina={salto * 40} />
+                {/* el cuerpo en llamas mientras salta */}
+                <svg style={{ position: "absolute", left: smithBote + salto * 300 - 90, top: AGUA - 250 - Math.sin(salto * Math.PI) * 200 + salto * 120, overflow: "visible" }} width={180} height={220}>
+                  {Array.from({ length: 6 }, (_, i) => { const w = Math.sin(t * (11 + i) + i * 2) * 10; const x0 = 20 + i * 28; return <path key={i} d={`M ${x0} 200 Q ${x0 - 14 + w} ${120 - (i % 3) * 20} ${x0 + 10 + w} ${40 + (i % 2) * 30} Q ${x0 + 34 - w} 130 ${x0 + 26} 200 Z`} fill={["#ff5a1a", "#ffb23a", "#fff0a0"][i % 3]} opacity={0.9 * (1 - prog(t, 636.8, 637.0))} />; })}
+                </svg>
+              </>
             ) : null}
             {t > 631.8 && t < 636.1 && <svg style={{ position: "absolute", left: smithBote - 40, top: AGUA - 110, overflow: "visible" }} width={80} height={70}><path d="M 6 20 Q 40 -6 74 20 L 70 64 L 10 64 Z" fill="#6a5a3a" stroke="#3a2a12" strokeWidth={5} /><text x={40} y={52} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={18} fill="#fff">POWDER</text></svg>}
-            <Explosion t={t} t0={634.95} x={smithBote} y={AGUA - 80} s={0.6} />
-            {t > 636.9 && t < 638.8 && <svg style={{ position: "absolute", left: smithBote + 220, top: AGUA - 160, overflow: "visible" }} width={160} height={160}>{Array.from({ length: 9 }, (_, i) => { const k = prog(t, 637.0, 637.9); const a = -Math.PI / 2 + (i - 4) * 0.3; return <ellipse key={i} cx={80 + Math.cos(a) * 120 * k} cy={150 + Math.sin(a) * 150 * k + k * k * 80} rx={10} ry={16} fill="#8fd0ff" opacity={1 - k} />; })}</svg>}
+            <Explosion t={t} t0={634.95} x={smithBote} y={AGUA - 80} s={1.0} />
+            {t > 636.9 && t < 638.8 && <svg style={{ position: "absolute", left: smithBote + 220, top: AGUA - 160, overflow: "visible" }} width={160} height={160}>{Array.from({ length: 9 }, (_, i) => { const k = prog(t, 637.0, 637.9); const a = -Math.PI / 2 + (i - 4) * 0.3; return <ellipse key={i} cx={80 + Math.cos(a) * 200 * k} cy={150 + Math.sin(a) * 260 * k + k * k * 140} rx={18} ry={28} fill="#8fd0ff" stroke="#fff" strokeWidth={4} opacity={1 - k} />; })}</svg>}
           </En>
         )}
         {/* Smith vuelve a Inglaterra: el barco se va río abajo */}
@@ -158,6 +164,18 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={561.85} t1={565.2} text="CATTLE" color={C.tierra} x={260} y={160} size={44} />
       <Chip t={t} t0={562.49} t1={565.2} text="HORSES" color="#7a5a3a" x={260} y={235} size={44} />
       <Chip t={t} t0={563.19} t1={565.2} text="TOOLS" color="#6a7484" x={260} y={310} size={44} />
+      {/* plano medio de los nuevos jefes */}
+      {t > 565.2 && t < 569.7 && (
+        <div style={{ position: "absolute", left: 960, top: 560, width: 1100, height: 640, transform: `translate(-50%,-50%) scale(${ent(t, 565.25) * (1 - prog(t, 569.3, 569.7))}) rotate(-1.5deg)`, background: "#d8e6f0", border: "10px solid #2a1408", borderRadius: 28, overflow: "hidden" }}>
+          <div style={{ position: "absolute", left: 0, top: 440, width: 1100, height: 200, background: "#8a5a2e" }} />
+          {[300, 800].map((x, i) => t > 565.3 + i * 0.9 && (
+            <div key={x} style={{ position: "absolute", left: 0, top: 0 }}>
+              <Persona x={x} y={760} h={640} t={t} seed={660 + i} ropa={GENT(i + 2)} gola gorro={i ? "sombrero" : "morion"} barba={i ? "#d8d0c8" : "#5a3a2a"} expr="orgullo" flip={i === 1} mira={i ? -0.3 : 0.3} aparece={565.3 + i * 0.9} />
+              <div style={{ position: "absolute", left: x - 250, top: 560, width: 500, whiteSpace: "nowrap", textAlign: "center", fontFamily, fontWeight: 700, fontSize: 44, color: "#fff", background: i ? C.teal : C.violeta, border: "5px solid #1b1240", borderRadius: 14, transform: `scale(${ent(t, 565.4 + i * 0.9)})` }}>{i ? "ADM. GEORGE SOMERS" : "SIR THOMAS GATES"}</div>
+            </div>
+          ))}
+        </div>
+      )}
       <Chip t={t} t0={564.41} t1={569.6} text="THE NEW LEADERS" color={C.oro} tinta={C.noche} x={960} y={140} centro size={56} />
       <Chip t={t} t0={568.29} t1={569.6} text="ALL ON THE FLAGSHIP" color={C.rojo} x={960} y={930} centro size={54} />
       <Chip t={t} t0={570.95} t1={573.9} text="JULY 1609" color={C.naranja} x={960} y={140} centro size={60} />
@@ -203,6 +221,8 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
       {t > 617.4 && t < 622.2 && <Tablero t={t} valor={interpolate(t, [619.7, 620.6], [100, 500], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} titulo="MOUTHS TO FEED" rojo={t > 620.4} x={1640} y={150} s={1.2} />}
       <Chip t={t} t0={622.67} t1={624.5} text="ONE MORE PASSENGER..." color="#6a6a7a" x={960} y={140} centro size={54} />
       {t > 624.5 && t < 626.0 && <Grande t={t} t0={624.65} text="RATS" y={200} size={160} color="#c8c8d8" />}
+      {t > 634.9 && t < 635.6 && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, background: "#fff2c0", opacity: 0.85 * (1 - prog(t, 634.95, 635.6)) }} />}
+      {t > 636.9 && t < 638.2 && <Grande t={t} t0={636.95} text="SPLASH!" y={260} size={130} color="#8fd0ff" />}
       <Chip t={t} t0={626.13} t1={628.5} text="INTO THE STOREHOUSE" color={C.tierra} x={960} y={930} centro size={54} />
       <Chip t={t} t0={629.23} t1={631.5} text="SEPTEMBER" color={C.naranja} x={960} y={140} centro size={56} />
       <Chip t={t} t0={632.31} t1={634.9} text="GUNPOWDER ON HIS LAP" color={C.rojo} x={960} y={930} centro size={54} />

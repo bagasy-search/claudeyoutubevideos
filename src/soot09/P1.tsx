@@ -45,16 +45,19 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
         {t > 58.8 && t < 63.8 && ([[3640, "VIRGINIA!", 60.1], [3820, "GOLD!!", 60.94], [4140, "VIRGINIA?!", 61.84]] as [number, string, number][]).map(([x, s, t0], i) => (
           <En key={i} x={x} w={300}>
             <Persona x={x} y={SUELO} h={330} t={t} seed={90 + i} ropa={COLONO(i + 2)} expr={i === 1 ? "sorpresa" : "feliz"} habla flip={i === 1} gorro={i === 2 ? "gorra" : undefined} />
-            <Globo t={t} t0={t0} x={x + (i === 1 ? -40 : 40)} y={SUELO - 330} text={s} size={40} cola={i === 1 ? "der" : "izq"} />
+            <Globo t={t} t0={t0} x={x + (i === 1 ? -40 : 40)} y={SUELO - 360} text={s} size={58} cola={i === 1 ? "der" : "izq"} />
           </En>
         ))}
         {/* la Virginia Company: inversores de galera, la carta real y la corona */}
         {t > 62.2 && t < 70.5 && (
           <>
-            <En x={3300} w={400}><div style={{ position: "absolute", left: 3300, top: 300, transform: `translate(-50%,-50%) scale(${ent(t, 64.6)}) rotate(${Math.sin(t * 2) * 2}deg)`, fontFamily, fontWeight: 700, fontSize: 54, color: "#ffe6b0", background: "#5a2a5a", border: "6px solid #2a1430", borderRadius: 10, padding: "6px 18px", whiteSpace: "nowrap" }}>VIRGINIA COMPANY</div></En>
+            <En x={3300} w={400}><div style={{ position: "absolute", left: 3300, top: 230, transform: `translate(-50%,-50%) scale(${ent(t, 64.6)}) rotate(${Math.sin(t * 2) * 2}deg)`, fontFamily, fontWeight: 700, fontSize: 54, color: "#ffe6b0", background: "#5a2a5a", border: "6px solid #2a1430", borderRadius: 10, padding: "6px 18px", whiteSpace: "nowrap" }}>VIRGINIA COMPANY</div></En>
             {[3150, 3450].map((x, i) => <En key={x} x={x} w={250}><Persona x={x} y={SUELO} h={360} t={t} seed={110 + i} ropa={GENT(i + 2)} expr={i ? "enojado" : "orgullo"} habla={i === 0} bD={i === 0 ? 110 : undefined} cD={i === 0 ? 30 : undefined} gorro="copa" gola flip={i === 1} aparece={63.0 + i * 0.2} barba={i ? "#5a3a2a" : undefined} /></En>)}
             {t > 66.4 && <Pergamino x={3300} y={540} w={360} abre={prog(t, 66.45, 66.9) * 0.55} lineas={5} firma={prog(t, 67.3, 68.2)} titulo="CHARTER" />}
-            {t > 67.3 && <Corona x={3300} y={380} s={0.6} t={t} t0={67.32} />}
+            {/* el rey Jacobo entrega la carta */}
+            {t > 65.9 && <En x={3640} w={300}><Persona x={3640} y={SUELO} h={440} t={t} seed={119} ropa={{ ...GENT(0), tunica: "#8a1a2e", tunica2: "#5a0f1e" }} capa="#c9a24a" gola barba="#6a4a2a" expr="orgullo" flip bI={150} cI={10} aparece={65.95} manoI={<g transform="rotate(-20)"><rect x={-14} y={-60} width={28} height={110} rx={10} fill="#f6e3b4" stroke="#7a3d14" strokeWidth={5} /></g>} />
+              <Corona x={3640} y={SUELO - 462} s={0.48} t={t} t0={66.0} />
+              <div style={{ position: "absolute", left: 3640 - 180, top: SUELO - 600, width: 360, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 52, color: "#fff", WebkitTextStroke: "8px #1b1240", paintOrder: "stroke fill", opacity: ent(t, 66.2) }}>KING JAMES</div></En>}
           </>
         )}
         {/* el cartel de reclutamiento en la pared */}
@@ -95,7 +98,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
             {OFICIO[f.i] && <Icono k={OFICIO[f.i][0]} x={f.x} y={SUELO - (f.chico ? 330 : 440)} s={0.42} t={t} t0={OFICIO[f.i][1]} />}
           </En>
         ))}
-        {enFila && t > 112.9 && t < 119.3 && <Globo t={t} t0={115.48} t1={118.9} x={5800} y={SUELO - 400} text="MANUAL LABOR? EW." size={46} cola="der" />}
+        {enFila && t > 112.9 && t < 119.3 && <Globo t={t} t0={115.48} t1={118.9} x={6080} y={SUELO - 400} text="MANUAL LABOR? EW." size={54} cola="der" />}
         {/* vos: caminás por Londres, mirás el cartel, y hacés la fila */}
         {t < 105.5 && <En x={yx} w={300}><Persona x={yx} y={yy} h={430} t={t} seed={8} ropa={TOM} gorro="sombrero" expr={t > 89.7 && t < 93 ? "sorpresa" : t > 99.6 && t < 101.5 ? "triste" : "feliz"} camina={mueve(YO, t) ? 1.5 : 0} flip={t > 52 && t < 94.6} mira={t > 69.4 && t < 89.7 ? -0.8 : 0} miraY={t > 69.4 && t < 89.7 ? -0.6 : 0} /></En>}
         {enFila && <En x={5600} w={300}><Persona x={5600} y={SUELO - 30} h={430} t={t} seed={8} ropa={TOM} gorro="sombrero" expr={t > 126 && t < 128 ? "miedo" : "feliz"} flip mira={-0.6} /></En>}

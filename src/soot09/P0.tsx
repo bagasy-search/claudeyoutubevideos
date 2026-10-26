@@ -45,8 +45,9 @@ const Apaga: React.FC<{ t: number; t1: number; children: React.ReactNode; x: num
 
 export const P0: React.FC<{ t: number }> = ({ t }) => {
   if (t > 52.2) return null;
-  const tabla = t < 0.9 ? 500 : t < 2.5 ? interpolate(t, [0.9, 2.5], [500, 60]) : t < 8.0 ? 60 : t < 8.9 ? interpolate(t, [8.0, 8.9], [60, 500]) : t < 10.9 ? 500 : t < 13.14 ? interpolate(t, [10.9, 13.14], [500, 60]) : 60;
-  const tablaOp = t > 23.7 && t < 27.8 ? 0 : t < 32.4 ? 1 : Math.max(0, 1 - (t - 32.4) * 3);
+  // el contador sólo aparece cuando la voz dice "500" (5,6 s) y baja a 60 con "there are 60"
+  const tabla = t < 10.9 ? 500 : t < 13.14 ? interpolate(t, [10.9, 13.14], [500, 60]) : 60;
+  const tablaOp = (t > 0.9 && t < 5.6) || (t > 23.7 && t < 27.8) ? 0 : t < 32.4 ? 1 : Math.max(0, 1 - (t - 32.4) * 3);
   const otono = t > 6.8 && t < 10.7;
   const yo1610 = t < 33.6;
   const flipYo = t > 4.18 && t < 17.9;
@@ -143,7 +144,7 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
       </Mundo>
 
       {/* ── capa de pantalla: tablero de sobrevivientes, textos y golpes */}
-      {t < 33 && <Tablero t={t} valor={tabla} rojo={t > 0.9 && t < 8 || t > 10.9} op={tablaOp} s={t < 2.6 ? 1.5 : 1.2} x={t < 2.6 ? 1500 : 1680} y={t < 2.6 ? 250 : 170} />}
+      {t < 33 && <Tablero t={t} valor={tabla} rojo={t > 10.9} op={tablaOp} s={t < 2.6 ? 1.5 : 1.2} x={t < 2.6 ? 1500 : 1680} y={t < 2.6 ? 250 : 170} />}
       {t > 0.9 && t < 2.8 && <Grande t={t} t0={2.45} text="-440" y={420} x={1500} size={120} color="#ff5a6a" />}
       <Chip t={t} t0={1.34} t1={2.25} text="VIRGINIA" color={C.teal} tinta={C.noche} x={420} y={180} centro size={70} />
       <Chip t={t} t0={2.48} t1={4.05} text="MAY 1610" color={C.ambar} tinta={C.noche} x={420} y={180} centro size={84} />
@@ -183,6 +184,19 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
       )}
       <Chip t={t} t0={33.82} t1={35.2} text="SAIL THERE" color={C.teal} tinta={C.noche} x={960} y={880} centro size={64} />
       <Chip t={t} t0={36.82} t1={40.2} text="STEP BY STEP" color={C.violeta} x={960} y={150} centro size={62} />
+      {t > 38.9 && t < 42.6 && (
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, opacity: 1 - prog(t, 42.2, 42.6) }}>
+          <div style={{ position: "absolute", inset: 0, background: "rgba(27,18,64,.92)", opacity: ent(t, 38.95) }} />
+          {Array.from({ length: 7 }, (_, i) => {
+            const g = prog(t, 39.2 + i * 0.22, 39.5 + i * 0.22);
+            return (
+              <div key={i} style={{ position: "absolute", left: 130 + i * 240, top: 330, width: 210, height: 300, transform: `scaleX(${Math.abs(1 - 2 * g) || 0.02}) rotate(${(i - 3) * 2}deg)`, background: g > 0.5 ? "#f4e2b8" : "#5a3a1a", border: "8px solid #2a1408", borderRadius: 20, textAlign: "center", fontFamily, fontWeight: 700 }}>
+                {g > 0.5 && <><div style={{ fontSize: 44, color: "#7a1a24", marginTop: 26 }}>TRAP</div><div style={{ fontSize: 130, color: C.rojo, lineHeight: 1 }}>{i + 1}</div><div style={{ fontSize: 70, color: C.noche }}>?</div></>}
+              </div>
+            );
+          })}
+        </div>
+      )}
       <Chip t={t} t0={39.1} t1={41.4} text="EVERY SINGLE TRAP" color={C.rojo} x={960} y={930} centro size={62} />
       {t > 41.9 && t < 43.0 && <Grande t={t} t0={41.96} text="7 TRAPS" y={170} size={140} color={C.ambar} />}
       <Chip t={t} t0={44.64} t1={47.4} text="THE SURVIVORS... SAILING AWAY" color={C.violeta} x={960} y={150} centro size={56} />

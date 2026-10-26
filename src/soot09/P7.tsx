@@ -41,7 +41,7 @@ const Menu: React.FC<{ t: number }> = ({ t }) => {
         return (
           <div key={k} style={{ position: "absolute", left: 0, top: 0, opacity: t > sig + 0.3 ? 0.55 : 1 }}>
             <Bicho k={k} x={x - 70} y={y} s={0.42} t={t} t0={t0} />
-            <div style={{ position: "absolute", left: x - 10, top: y - 18, fontFamily, fontWeight: 700, fontSize: label.length > 10 ? 24 : 30, color: "#3a1a0a", whiteSpace: "nowrap" }}>{label}</div>
+            <div style={{ position: "absolute", left: x - 10, top: y - 18, fontFamily, fontWeight: 700, fontSize: label.length > 10 ? 38 : 46, color: "#3a1a0a", whiteSpace: "nowrap" }}>{label}</div>
             <Tacha t={t} t0={sig} x={x + 10} y={y} r={70} />
           </div>
         );
@@ -172,7 +172,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={660.99} t1={663.3} text="AMBUSHED" color={C.rojo} x={960} y={140} centro size={60} />
       <Chip t={t} t0={661.95} t1={663.3} text="MANY NEVER COME BACK" color={C.violeta} x={960} y={930} centro size={52} />
       <Chip t={t} t0={663.43} t1={665.8} text="BEHIND THE WALLS" color={C.tierra} x={960} y={140} centro size={56} />
-      <Chip t={t} t0={667.47} t1={669.8} text="GO OUT FOR FOOD?" color={C.naranja} x={960} y={140} centro size={56} />
+      <Chip t={t} t0={667.47} t1={669.8} text="GO OUT FOR FOOD?" color="#b0400a" x={960} y={140} centro size={66} />
       {t > 670.6 && t < 673.9 && <Grande t={t} t0={670.97} text="UNDER SIEGE" y={200} size={130} color={C.rojo} />}
       <Chip t={t} t0={672.77} t1={673.9} text="ALMOST NOTHING INSIDE" color="#6a6a7a" x={960} y={930} centro size={52} />
       {t > 674 && t < 695.6 && <Menu t={t} />}
@@ -184,11 +184,26 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
         </div>
       )}
       <Chip t={t} t0={690.45} t1={694.9} text="OTHER ACCOUNTS" color="#6a6a7a" x={300} y={140} size={56} />
+      {/* el almidón de las golas, hervido en la olla */}
+      {t > 691.9 && t < 695.6 && (() => { const hunde = prog(t, 692.4, 694.6); const o = ent(t, 691.95) * (1 - prog(t, 695.2, 695.6)); return (
+        <svg style={{ position: "absolute", left: 140, top: 480, overflow: "visible", opacity: o }} width={820} height={560}>
+          {[0, 1, 2].map((i) => { const k = (t * 0.7 + i / 3) % 1; return <path key={i} d={`M ${300 + i * 110} ${150 - k * 160} q 30 -40 0 -80 q -30 -40 0 -80`} stroke="#fff" strokeWidth={12} fill="none" opacity={0.6 * (1 - k)} strokeLinecap="round" />; })}
+          <g transform={`translate(410 ${170 + hunde * 120}) scale(${1 - hunde * 0.3})`}>
+            {Array.from({ length: 16 }, (_, i) => { const a = (i / 16) * Math.PI * 2; return <ellipse key={i} cx={Math.cos(a) * 120} cy={Math.sin(a) * 40} rx={40} ry={26} fill={hunde > 0.6 ? "#e8e2c8" : "#fff"} stroke="#c8c2b0" strokeWidth={4} transform={`rotate(${(a * 180) / Math.PI} ${Math.cos(a) * 120} ${Math.sin(a) * 40})`} />; })}
+          </g>
+          <ellipse cx={410} cy={250} rx={330} ry={70} fill="#e8e0c0" />
+          <path d="M 80 250 Q 80 520 410 530 Q 740 520 740 250 Z" fill="#2a2a30" stroke="#111" strokeWidth={10} />
+          <ellipse cx={410} cy={250} rx={330} ry={70} fill="none" stroke="#111" strokeWidth={14} />
+          {Array.from({ length: 5 }, (_, i) => <circle key={i} cx={260 + i * 70} cy={250 + Math.sin(t * 5 + i) * 10} r={14 + (i % 2) * 6} fill="#f4ecd0" stroke="#c8c0a0" strokeWidth={3} />)}
+          <text x={410} y={420} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={54} fill="#f4ecd0">COLLAR STARCH</text>
+        </svg>
+      ); })()}
       {t > 693.8 && t < 695.6 && <Grande t={t} t0={694.81} text="PASTE" x={560} y={420} size={150} color={C.crema} />}
       <Chip t={t} t0={695.67} t1={699.4} text="RUN TO THE POWHATAN" color={C.tierra} x={960} y={140} centro size={54} />
       <Chip t={t} t0={698.33} t1={699.4} text="HOPING FOR MERCY" color={C.violeta} x={960} y={930} centro size={52} />
       <Chip t={t} t0={699.55} t1={702.6} text="DIG FOR ROOTS" color="#6a4a2a" x={960} y={140} centro size={54} />
       <Chip t={t} t0={701.45} t1={702.6} text="NEVER COME BACK" color={C.rojo} x={960} y={930} centro size={52} />
+      {t > 705.2 && t < 708.2 && <div style={{ position: "absolute", left: 0, top: 455, width: 1920, height: 170, background: "rgba(14,10,30,.82)", opacity: ent(t, 705.25) * (1 - prog(t, 707.9, 708.2)) }} />}
       {t > 704.4 && t < 708.2 && <Grande t={t} t0={705.31} text="TOO DESPERATE TO DESCRIBE" y={540} size={84} color="#d8c8e0" />}
       <Chip t={t} t0={708.27} t1={711.2} text="2012" color={C.ambar} tinta={C.noche} x={960} y={140} centro size={64} />
       <Chip t={t} t0={709.77} t1={711.2} text="ARCHAEOLOGISTS" color={C.teal} tinta={C.noche} x={960} y={930} centro size={52} />
