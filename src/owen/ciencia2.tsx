@@ -77,8 +77,11 @@ export const Adenosina: React.FC<{ llenaHasta?: number; vaciaDesde?: number; vac
   const N = 70;
   const vis = Math.round(N * nivel);
   return (
-    <Pizarra titulo="ADENOSINE · THE TIRED METER">
-      <g transform="translate(760,580)">
+    <Pizarra titulo="ADENOSINE · THE TIRED METER" profe={false}>
+      {owenDesde < 1e8 && <Actor look={OWEN} escala={2.1} seed={1} ruta={[{ f: 0, x: 1690, y: 1170 }]} dir={[{ f: 0, v: -1 }]}
+        poses={Array.from({ length: 12 }).map((_, i) => ({ f: i * 50, v: i % 2 ? { hD: 150, cD: 150, cabeza: -12, tronco: -4 } : { hD: 25, cD: 25, hI: 25, cI: 25, cabeza: 4 } }))}
+        caras={[{ f: 0, v: "cansado" }, { f: owenDesde, v: "zombi" }]} miradas={[{ f: 0, v: { x: -1, y: -0.3 } }]} />}
+      <g transform="translate(700,580)">
         <Cerebro r={260} />
         {Array.from({ length: N }).map((_, k) => {
           const a = k * 2.399, rr = 30 + Math.sqrt(k / N) * 210;
@@ -89,13 +92,13 @@ export const Adenosina: React.FC<{ llenaHasta?: number; vaciaDesde?: number; vac
           return <circle key={k} cx={ox + (x - ox) * u} cy={oy + (y - oy) * u} r={13} fill={AMBAR} opacity={k < vis ? 0.95 : u > 0 && u < 1 ? u : 0} />;
         })}
       </g>
-      <g transform="translate(1340,300)">
-        <rect x={-50} y={0} width={100} height={500} rx={20} fill="none" stroke={GRIS} strokeWidth={8} />
-        <rect x={-40} y={490 - 480 * nivel} width={80} height={480 * nivel} rx={12} fill={nivel > 0.6 ? ROJO : AMBAR} />
-        <T x={0} y={580} s={34}>TIRED</T>
+      <g transform="translate(1260,290)">
+        <rect x={-65} y={0} width={130} height={520} rx={24} fill="none" stroke={GRIS} strokeWidth={10} />
+        <rect x={-53} y={508 - 496 * nivel} width={106} height={496 * nivel} rx={14} fill={nivel > 0.6 ? ROJO : AMBAR} />
+        <T x={0} y={600} s={60} w={800}>TIRED</T>
       </g>
-      <T x={760} y={1000} s={46} c={f < vaciaDesde ? AMBAR : AZUL}>{f < vaciaDesde ? "AWAKE: IT BUILDS UP" : "SLEEP: IT EMPTIES"}</T>
-      {f > owenDesde && <text x={1340} y={250} fontFamily={F_MANO} fontWeight={700} fontSize={56} fill={ROJO} textAnchor="middle" opacity={ease(f, owenDesde, owenDesde + 10)}>Owen: 5 h</text>}
+      <T x={700} y={1000} s={64} w={800} c={f < vaciaDesde ? AMBAR : AZUL}>{f < vaciaDesde ? "AWAKE: IT BUILDS UP" : "SLEEP: IT EMPTIES"}</T>
+      {f > owenDesde && <text x={1260} y={250} fontFamily={F_MANO} fontWeight={700} fontSize={92} fill={ROJO} textAnchor="middle" opacity={ease(f, owenDesde, owenDesde + 10)}>Owen: 5 h</text>}
     </Pizarra>
   );
 };
@@ -104,28 +107,28 @@ export const Adenosina: React.FC<{ llenaHasta?: number; vaciaDesde?: number; vac
 export const Receptores: React.FC<{ tapaDesde?: number }> = ({ tapaDesde = 60 }) => {
   const f = useF();
   return (
-    <Pizarra titulo="CAFFEINE DOESN'T ADD ENERGY">
+    <Pizarra titulo="CAFFEINE DOESN'T ADD ENERGY" profe={false}>
       {Array.from({ length: 5 }).map((_, k) => {
         const x = 400 + k * 280, u = ease(f, tapaDesde + k * 8, tapaDesde + k * 8 + 14);
         return (
-          <g key={k} transform={`translate(${x},640)`}>
+          <g key={k} transform={`translate(${x},700) scale(1.3)`}>
             <path d="M-70,0 v-60 a70,70 0 0,1 140,0 v60" fill="none" stroke={AZUL} strokeWidth={14} />
             <rect x={-90} y={0} width={180} height={40} rx={10} fill={GRIS} />
             {(() => { const t = ((f + k * 11) % 40) / 40; const yb = u < 0.5 ? -260 + 220 * Math.min(1, t * 1.6) : -260 + 180 * Math.sin(Math.min(1, t * 1.6) * Math.PI); return <circle cy={yb} r={28} fill={AMBAR} opacity={0.95} />; })()}
             <g transform={`translate(0,${-40 - 260 * (1 - u)})`} opacity={u}>
               <rect x={-55} y={-30} width={110} height={60} rx={14} fill="#7a4a2a" />
-              <T x={0} y={14} s={30} c={TINTA}>CAF</T>
+              <T x={0} y={14} s={38} c={TINTA} w={800}>CAF</T>
             </g>
           </g>
         );
       })}
-      <g transform="translate(960,330)">
+      <g transform="translate(960,330) scale(1.2)">
         <circle r={60} fill={ROJO} opacity={f < tapaDesde + 40 ? (f % 20 < 12 ? 1 : 0.4) : 0.15} />
         <T x={0} y={18} s={50}>!</T>
         <path d="M-90,40 q-20,-120 60,-130 q80,-10 120,90" fill="#d9a07a" stroke="#7a4a2a" strokeWidth={6} opacity={ease(f, tapaDesde + 40, tapaDesde + 55)} />
       </g>
-      <T x={960} y={880} s={64} c={AMBAR} w={800} o={ease(f, tapaDesde + 60, tapaDesde + 72)}>IT HIDES HOW TIRED YOU ARE</T>
-      <T x={960} y={950} s={34} c="#8a9ac0" o={ease(f, tapaDesde + 20, tapaDesde + 30)}>the tired signal bounces off · still piling up</T>
+      <T x={960} y={990} s={88} c={AMBAR} w={800} o={ease(f, tapaDesde + 60, tapaDesde + 72)}>IT HIDES HOW TIRED YOU ARE</T>
+      <T x={960} y={990} s={50} c="#c8d2ec" o={ease(f, tapaDesde + 20, tapaDesde + 30) * (1 - ease(f, tapaDesde + 54, tapaDesde + 60))}>the tired signal bounces off · still piling up</T>
     </Pizarra>
   );
 };
@@ -142,25 +145,25 @@ export const MedioVida: React.FC<{ d50?: number; d25?: number }> = ({ d50 = 40, 
     <g opacity={ease(f, d, d + 10)}>
       <line x1={X(h)} y1={Y(p)} x2={X(h)} y2={y0} stroke={TINTA} strokeWidth={3} strokeDasharray="10 10" />
       <circle cx={X(h)} cy={Y(p)} r={18} fill={AMBAR} />
-      <T x={X(h)} y={Y(p) - 40} s={58} c={AMBAR}>{Math.round(p * 100)}%</T>
-      <T x={X(h)} y={y0 + 60} s={34}>{et}</T>
+      <T x={X(h)} y={Y(p) - 44} s={84} c={AMBAR} w={800}>{Math.round(p * 100)}%</T>
+      <T x={X(h)} y={y0 + 70} s={54} w={700}>{et}</T>
     </g>
   );
   return (
-    <Pizarra titulo="CAFFEINE HALF-LIFE ≈ 5 HOURS">
+    <Pizarra titulo="CAFFEINE HALF-LIFE ≈ 5 HOURS" profe={false}>
       <line x1={x0} y1={y0} x2={x1} y2={y0} stroke={GRIS} strokeWidth={6} />
       <polyline points={pts} fill="none" stroke="#c98a5a" strokeWidth={12} strokeLinecap="round" />
       {(() => { const p = Math.pow(0.5, (hasta - 6) / 5); return <g>
         <circle cx={X(hasta)} cy={Y(p)} r={22} fill="#fff" stroke="#c98a5a" strokeWidth={8} />
-        <g transform="translate(1540,330)">
+        <g transform="translate(1560,400) scale(1.6)">
           <path d="M-70,-90 h140 l-14,180 h-112 Z" fill="#f4efe4" />
           <path d={`M${-70 + 14 * (1 - p)},${90 - 180 * p} h${140 - 28 * (1 - p)} l${-14 * p},${180 * p} h${-112 - 0 * p} Z`} fill="#7a4a2a" />
           <path d="M70,-50 q50,0 50,45 q0,45 -50,45" fill="none" stroke="#f4efe4" strokeWidth={14} />
-          <T x={0} y={150} s={50} c="#c98a5a" w={800}>{Math.round(p * 100)}%</T>
-          <T x={0} y={195} s={28}>CAFFEINE LEFT</T>
+          <T x={0} y={150} s={56} c="#c98a5a" w={800}>{Math.round(p * 100)}%</T>
+          <T x={0} y={192} s={30} w={700}>CAFFEINE LEFT</T>
         </g>
       </g>; })()}
-      <T x={X(6)} y={y0 + 60} s={34}>6 AM</T>
+      <T x={X(6)} y={y0 + 70} s={54} w={700}>6 AM</T>
       <circle cx={X(6)} cy={Y(1)} r={18} fill="#c98a5a" />
       {mark(11, 0.5, "11 AM", d50)}
       {mark(16, 0.25, "4 PM", d25)}
@@ -233,20 +236,20 @@ export const Alcohol: React.FC<{ d24?: number }> = ({ d24 = 150 }) => {
     const h = (v / 0.12) * 560 * u;
     return (
       <g opacity={ease(f, d - 5, d + 5)}>
-        <rect x={x - 110} y={880 - h} width={220} height={h} rx={14} fill={col} />
+        <rect x={x - 140} y={880 - h} width={280} height={h} rx={16} fill={col} />
         <g transform={`translate(${x - 250},${700})`}>
           <circle r={62} fill="#0e1830" stroke={TINTA} strokeWidth={6} />
           <line x1={0} y1={0} x2={0} y2={-48} stroke={col} strokeWidth={8} strokeLinecap="round" transform={`rotate(${u * (et.startsWith("24") ? 720 : 540)})`} />
-          <T x={0} y={100} s={30}>{Math.round(u * (et.startsWith("24") ? 24 : 18))} h</T>
+          <T x={0} y={110} s={48} w={700}>{Math.round(u * (et.startsWith("24") ? 24 : 18))} h</T>
         </g>
         <T x={x} y={860 - h} s={92} c={col}>{(v * u).toFixed(2)}</T>
-        <T x={x} y={950} s={54}>{et}</T>
+        <T x={x} y={955} s={64} w={800}>{et}</T>
       </g>
     );
   };
   const yl = 880 - (0.08 / 0.12) * 560;
   return (
-    <Pizarra titulo="AWAKE TOO LONG = DRUNK" fuente="Williamson & Feyer, Occup Environ Med, 2000 · blood alcohol equivalent">
+    <Pizarra titulo="AWAKE TOO LONG = DRUNK" fuente="Williamson & Feyer, Occup Environ Med, 2000 · blood alcohol equivalent" profe={false}>
       <line x1={420} y1={yl} x2={420 + 1080 * ease(f, 0, 24)} y2={yl} stroke={ROJO} strokeWidth={7} strokeDasharray="18 12" />
       <T x={1490} y={yl - 24} s={62} a="start" c={ROJO} w={800} o={ease(f, 14, 24)}>LEGAL</T>
       <T x={1490} y={yl + 44} s={62} a="start" c={ROJO} w={800} o={ease(f, 14, 24)}>LIMIT 0.08</T>
@@ -263,23 +266,23 @@ export const SiestaNasa: React.FC<{ dAlerta?: number }> = ({ dAlerta = 120 }) =>
     const u = ease(f, d, d + 30);
     return (
       <g opacity={ease(f, d - 5, d + 5)}>
-        <T x={260} y={y + 24} s={64} a="start" w={700}>{et}</T>
-        <rect x={760} y={y - 55} width={700 * (v / 60) * u} height={110} rx={16} fill={VERDE} />
-        <T x={780 + 700 * (v / 60) * u} y={y + 30} s={88} a="start" c={VERDE}>+{Math.round(v * u)}%</T>
+        <T x={160} y={y + 26} s={72} a="start" w={800}>{et}</T>
+        <rect x={720} y={y - 60} width={760 * (v / 60) * u} height={120} rx={18} fill={VERDE} />
+        <T x={745 + 760 * (v / 60) * u} y={y + 34} s={100} a="start" c={VERDE} w={800}>+{Math.round(v * u)}%</T>
       </g>
     );
   };
   return (
-    <Pizarra titulo="NASA · A 26-MINUTE NAP" fuente="Rosekind et al., NASA Ames, 1994 · long-haul pilots">
-      <g transform="translate(960,400) scale(1.5)">
+    <Pizarra titulo="NASA · A 26-MINUTE NAP" fuente="Rosekind et al., NASA Ames, 1994 · long-haul pilots" profe={false}>
+      <g transform="translate(900,420) scale(1.9)">
         <rect x={-330} y={-10} width={660} height={34} rx={14} fill="#3a4a72" />
         <g transform="rotate(-90 0 -20)"><Actor look={OWEN} escala={1.35} seed={13} vivo={0} ruta={[{ f: 0, x: 0, y: -20 }]} caras={[{ f: 0, v: "dormido" }]} ajuste={(q, ff) => ({ ...q, tronco: q.tronco + Math.sin(ff / 18) * 3, cabeza: q.cabeza + Math.sin(ff / 18 + 1) * 4, hD: q.hD + Math.sin(ff / 18) * 6 })} /></g>
         {[0, 1, 2].map((i) => { const t = ((f + i * 20) % 60) / 60; return <text key={i} x={-250 + t * 60} y={-10 - t * 60} fontFamily={F_HUD} fontWeight={800} fontSize={54 + i * 18} fill={AMBAR} opacity={Math.sin(t * Math.PI)}>Z</text>; })}
-        <T x={420} y={20} s={72} c={VERDE} w={800}>{Math.min(26, Math.floor(f / 8))}′</T>
+        <T x={330} y={20} s={64} c={VERDE} w={800}>{Math.min(26, Math.floor(f / 8))} min</T>
       </g>
       {bar(680, 34, "PERFORMANCE", 30)}
       {bar(840, 54, "ALERTNESS", dAlerta)}
-      <text x={960} y={960} fontFamily={F_MANO} fontWeight={700} fontSize={64} fill={AMBAR} textAnchor="middle" opacity={ease(f, dAlerta + 50, dAlerta + 60)}>short, not deep</text>
+      <text x={960} y={960} fontFamily={F_MANO} fontWeight={700} fontSize={96} fill={AMBAR} textAnchor="middle" opacity={ease(f, dAlerta + 50, dAlerta + 60)}>short, not deep</text>
     </Pizarra>
   );
 };
