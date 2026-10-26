@@ -47,7 +47,7 @@ const Pipa: React.FC<{ f: number }> = ({ f }) => (
 const Rotulo: React.FC<{ texto: string; desde: number; hasta: number }> = ({ texto, desde, hasta }) => {
   const f = useF();
   const o = interpolate(f, [desde, desde + 12, hasta - 12, hasta], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  return <div style={{ position: "absolute", left: 92, bottom: 86, fontFamily: F_HUD, fontWeight: 600, fontSize: 40, letterSpacing: 8, color: "#fff4dc", opacity: o, textShadow: "0 3px 10px rgba(40,20,10,0.6)" }}>{texto}</div>;
+  return <div style={{ position: "absolute", left: 92, bottom: 86, fontFamily: F_HUD, fontWeight: 600, fontSize: 64, letterSpacing: 10, color: "#fff4dc", opacity: o, background: "rgba(30,18,10,0.78)", padding: "8px 30px 12px", borderRadius: 14 }}>{texto}</div>;
 };
 
 const Ele: React.FC<Partial<React.ComponentProps<typeof Elefanta>>> = (p) => {
@@ -65,10 +65,10 @@ const EstacaSoga: React.FC<{ cria?: boolean; tension?: number; mueve?: number }>
 // 106,0-114,0 · «Kyoto… a big tent, red and gold… music, lanterns, children everywhere»
 const Kioto: React.FC = () => (
   <Escena Set={Circo} pal={pal} seed={51} mano={2}
-    claves={[mira(0, 800, 520, 0.8), mira(240, 1350, 540, 0.86, { curva: "inout" })]}
+    claves={[mira(0, 500, P - 260, 1.35), mira(240, 1500, P - 270, 1.45, { curva: "inout" })]}
     medio={<>
       {CHICOS.map((lk, i) => (
-        <Actor key={i} look={lk} escala={ESC} seed={60 + i} luz={CALIDA} correr={i === 1 ? 1 : 0.6}
+        <Actor key={i} look={lk} escala={ESC * 1.25} seed={60 + i} luz={CALIDA} correr={i === 1 ? 1 : 0.6}
           ruta={[{ f: i * 30, x: -200 + i * 120, y: P }, { f: 200 + i * 20, x: 1600 + i * 160, y: P, curva: "lineal" }]}
           poses={[{ f: 0, v: i === 2 ? "saludar" : "parado" }]} caras={[{ f: 0, v: i === 0 ? "risa" : "feliz" }]} />
       ))}
@@ -80,7 +80,7 @@ const Kioto: React.FC = () => (
 // 114,0-122,0 · «behind the tent, in the mud, a little boy with a shaved head… looking at something he cannot understand»
 const Detras: React.FC = () => (
   <Escena Set={Circo} pal={pal} seed={52} mano={2}
-    claves={[mira(0, 1900, 520, 0.95), mira(150, C.nino + 60, P - 170, 1.7, { curva: "inout" }), mira(240, C.nino + 80, P - 165, 1.8)]}
+    claves={[mira(0, 1900, 520, 0.95), mira(150, (C.nino + ELX) / 2 + 40, P - 330, 0.95, { curva: "inout" }), mira(240, (C.nino + ELX) / 2 + 40, P - 330, 1.0)]}
     medio={<>
       <Ele balanceo={5} />
       <EstacaSoga />
@@ -238,8 +238,9 @@ const Sombra: React.FC = () => {
   const u = interpolate(f, [40, 130], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <Escena Set={Circo} pal={pal} seed={64} mano={1.6}
-      claves={[mira(0, 1500, 560, 1.15), mira(216, 1520, 590, 1.3, { curva: "inout" })]}
+      claves={[mira(0, 1650, 540, 0.95), mira(216, 1650, 560, 1.05, { curva: "inout" })]}
       medio={<>
+        <Elefanta x={2050} y={P + 10} s={0.9} f={f} balanceo={4} />
         <g opacity={0.5 * (1 - u)}><Elefanta x={1450} y={P - 20} s={0.95} f={f} balanceo={6} piel="#4a1a16" luz="#4a1a16" /></g>
         <g opacity={0.55 * u}><Elefanta x={1450} y={P - 20} s={0.95 * 0.45} cria f={f} balanceo={2} cabeza={14} piel="#4a1a16" luz="#4a1a16" /></g>
       </>}
@@ -269,9 +270,9 @@ export const PARABOLA05: TramoS[] = [
   { t0: 152.2, t1: 157.5, el: <Pregunta /> },
   { t0: 157.5, t1: 161.2, el: <Sonrie /> },
   { t0: 161.2, t1: 170.0, el: <Cria tramo="tira" />, trans: { tipo: "fundido", d: 20 } },
-  { t0: 170.0, t1: 176.0, el: <Cria tramo="noche" />, trans: { tipo: "fundido", d: 18 } },
-  { t0: 176.0, t1: 182.3, el: <Cria tramo="rinde" />, trans: { tipo: "fundido", d: 18 } },
-  { t0: 182.3, t1: 184.5, el: <Golpea />, trans: { tipo: "fundido", d: 10 } },
+  { t0: 170.0, t1: 176.0, el: <Cria tramo="noche" /> },
+  { t0: 176.0, t1: 182.3, el: <Cria tramo="rinde" /> },
+  { t0: 182.3, t1: 184.5, el: <Golpea /> },
   { t0: 184.5, t1: 188.8, el: <Crecio /> },
   { t0: 188.8, t1: 196.1, el: <Sombra /> },
   { t0: 196.1, t1: 200.2, el: <Ojo /> },

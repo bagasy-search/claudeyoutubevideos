@@ -142,7 +142,7 @@ const AulaArte: React.FC = () => {
   const PA = AULA_PISO;
   return (
     <Escena Set={Aula} pal={PAL} setProps={{ variante: "gris", tiza: "ART · 2017" }} seed={150} mano={1.8}
-      claves={[mira(0, 1250, 560, 0.9), mira(loc(26.2, 30.3), 1300, PA - 260, 1.35, { curva: "inout" }), mira(273, 1320, PA - 260, 1.5)]}
+      claves={[mira(0, 1250, 560, 0.9), mira(loc(26.2, 30.3), 1300, PA - 260, 1.35, { curva: "inout" }), mira(273, 1320, PA - 300, 1.4)]}
       medio={<>
         <Actor look={{ ...LEO, alto: 0.85 }} escala={ESC} seed={1} luz={RIM_FRIO} ruta={[{ f: 0, x: 1180, y: PA }]} dir={[{ f: 0, v: 1 }]} asiento={[{ f: 0, v: 60 }]}
           poses={[{ f: 0, v: { ...SENTADO, hD: 50, cD: 90, cabeza: 18 } }, { f: 12, v: { ...SENTADO, hD: 58, cD: 80, cabeza: 18 } }, { f: 24, v: { ...SENTADO, hD: 50, cD: 90, cabeza: 18 } }, { f: 36, v: { ...SENTADO, hD: 58, cD: 80, cabeza: 18 } }, { f: 48, v: { ...SENTADO, hD: 50, cD: 90, cabeza: 18 } }]}
@@ -329,7 +329,7 @@ const T = (): TramoS[] => [
   { t0: 21.5, t1: 26.0, el: <ReelTyler dur={135} vistas={[40, 41]} caption={loc(21.5, 22.9)} /> },
   { t0: 26.0, t1: 35.3, trans: { tipo: "fundido", d: 12 }, el: <AulaArte /> },
   { t0: 35.3, t1: 43.9, trans: { tipo: "fundido", d: 12 }, el: (
-    <EnCuarto cam={[mira(0, PIN.x - 120, PC - 330, 1.6), mira(loc(35.3, 39.5), PIN.x - 60, PC - 360, 1.7, { curva: "inout" }), mira(258, PIN.x, PIN.y + 40, 2.0, { curva: "inout" })]}
+    <EnCuarto cam={[mira(0, PIN.x - 120, PC - 330, 1.6), mira(loc(35.3, 39.5), PIN.x - 60, PC - 360, 1.7, { curva: "inout" }), mira(258, PIN.x + 40, PIN.y + 30, 2.7, { curva: "inout" })]}
       leo={{ ruta: [{ f: 0, x: PIN.x - 260, y: PC }], asiento: [{ f: 0, v: undefined }], dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: "parado" }, { f: 70, v: { hD: 120, cD: 30, cabeza: -10 } }, { f: 150, v: { hD: 140, cD: 20, cabeza: -12 } }],
         caras: [{ f: 0, v: "triste" }, { f: 120, v: "neutral" }], miradas: [{ f: 0, v: { x: 0.8, y: -0.5 } }] }}
       medio={<DibujoPegado x={PIN.x} y={PIN.y} />} />
@@ -447,7 +447,7 @@ const T = (): TramoS[] => [
   { t0: 337.4, t1: 348.2, el: <PilaPantallas /> },
   { t0: 348.2, t1: 355.0, el: <NeneFuente /> },
   { t0: 355.0, t1: 364.6, el: (
-    <EnLavadero cam={[mira(0, LAV.leo - 60, P - 340, 1.2), mira(288, LAV.leo - 60, P - 330, 1.3)]}
+    <EnLavadero cam={[mira(0, LAV.leo - 60, P - 330, 1.6), mira(288, LAV.leo - 60, P - 320, 1.75)]}
       leo={{ caras: [{ f: 0, v: "triste" }], miradas: [{ f: 0, v: { x: 0.3, y: 0.8 } }] }}
       mara={(f) => ({ escala: ESC * interpolate(f, [0, 288], [1.7, 1.15], cl), habla: hab(355, [[359.5, 363.8]]), caras: [{ f: 0, v: "enojo" }] })}
       hud={<>
@@ -464,7 +464,7 @@ const T = (): TramoS[] => [
   ) },
   { t0: 369.1, t1: 373.6, trans: { tipo: "luz", d: 8 }, el: (
     <EnCuarto cam={CAM.cama(4.5, 2.0)} leo={{ poses: [{ f: 0, v: SENTADO_TEL }], caras: [{ f: 0, v: "triste" }], enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 0.8 } }}
-      hud={<div style={{ position: "absolute", left: 80, top: 80, fontFamily: F_HUD, fontWeight: 600, fontSize: 76, color: "#f4efe4", background: "rgba(12,10,10,0.78)", padding: "10px 30px 14px", borderRadius: 16 }}>DAY 1 · <span style={{ color: ACENTO }}>9h 42m</span></div>} />
+      hud={<div style={{ position: "absolute", left: "50%", transform: "translateX(-50%)", top: 70, fontFamily: F_HUD, fontWeight: 600, fontSize: 76, color: "#f4efe4", background: "rgba(12,10,10,0.78)", padding: "10px 30px 14px", borderRadius: 16 }}>DAY 1 · <span style={{ color: ACENTO }}>9h 42m</span></div>} />
   ) },
   { t0: 373.6, t1: 377.0, el: (
     <EnLavadero cam={CAM.tenzo(3.4)} tenzo={{ caras: [{ f: 0, v: "feliz" }], habla: hab(373.6, [[373.6, 377.0]]), miradas: [{ f: 0, v: { x: -0.9, y: 0 } }] }} medio={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />} />
@@ -549,7 +549,7 @@ const T = (): TramoS[] => [
   ) },
   { t0: 479.0, t1: 488.2, el: <Picazon /> },
   { t0: 488.2, t1: 494.3, el: (
-    <EnCuarto dia cam={[mira(0, PIN.x + 80, PIN.y + 60, 1.7), mira(183, PIN.x + 80, PIN.y + 60, 1.85)]} leo={null}
+    <EnCuarto dia cam={[mira(0, PIN.x + 80, PIN.y + 50, 2.6), mira(183, PIN.x + 80, PIN.y + 50, 2.85)]} leo={null}
       medio={<DosDibujos />}
       hud={<ManoLeo texto="who is your tyler?" x={960} y={920} centro desde={10} />} />
   ) },
