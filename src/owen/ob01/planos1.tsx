@@ -45,8 +45,8 @@ export const P01Mini: React.FC = () => {
         </>} />
       <EtiquetaFlotante x={1360} y={470} rotulo="REAL AGE" claves={31} desde={-30} color={VERDE} tam={88} />
       <EtiquetaFlotante x={1770} y={430} rotulo="REAL AGE" claves={58} desde={-30} color={VERDE} tam={88} />
-      <Marco x={80} y={60} w={720} h={400} radio={80} espejar><ReflejoOwen /></Marco>
-      <div style={{ position: "absolute", left: 600, top: 300, fontFamily: F_HUD, fontWeight: 700, fontSize: 150, color: ROJO_OWEN, textShadow: "0 0 24px rgba(255,90,74,0.8), 0 4px 12px rgba(0,0,0,0.6)" }}>47</div>
+      <div style={{ position: "absolute", inset: 0, transform: `scale(${1 + Math.exp(-useF() / 5) * 0.25})`, transformOrigin: "300px 260px" }}><Marco x={60} y={50} w={960} h={540} radio={90} espejar><ReflejoOwen /></Marco></div>
+      <div style={{ position: "absolute", left: 840, top: 380, fontFamily: F_HUD, fontWeight: 700, fontSize: 190, color: ROJO_OWEN, textShadow: "0 0 24px rgba(255,90,74,0.8), 0 4px 12px rgba(0,0,0,0.6)" }}>47</div>
       <MarcaCorto />
     </AbsoluteFill>
   );
@@ -75,11 +75,11 @@ export const P02Rebobina: React.FC = () => {
 export const P03Despierta: React.FC = () => {
   const f = useF();
   const k = kDe(1.9);
-  const cl = [mira(0, 380, A - 200, 2.1), mira(k(3.0), 120, A - 170, 1.8, { curva: "inout" }), mira(k(5.0), 250, A - 190, 1.7, { curva: "inout" })];
+  const cl = [mira(0, 380, A - 200, 2.1), mira(k(3.0), 120, A - 170, 1.8, { curva: "inout" }), mira(k(5.0), TF_PUNTOS.cama + 140, A - 230, 2.3, { curva: "inout" })];
   return (
     <Escena Set={TwoFlatCorte} pal={PAL} claves={cl} seed={3} setProps={{ hora: "noche", luzCocina: false, luzBaño: false, luzDorm: true, radiador: (ff: number) => ff > k(2.5) && ff % 10 < 6 }}
       medio={<Actor look={OWEN_CASA} escala={ESC} seed={6} ruta={[{ f: 0, x: TF_PUNTOS.cama + 140, y: A }]} dir={[{ f: 0, v: 1 }]}
-        poses={[{ f: 0, v: { tronco: 30, pI: 88, rI: 88, pD: 92, rD: 92, hI: 25, cI: 50, hD: 35, cD: 55 } }, { f: 20, v: "sentado" }, { f: k(3.0), v: { tronco: -4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 45, cD: 140 } }, { f: k(4.4), v: "sentado" }]}
+        poses={[{ f: 0, v: { tronco: 30, pI: 88, rI: 88, pD: 92, rD: 92, hI: 25, cI: 50, hD: 35, cD: 55 } }, { f: 20, v: "sentado" }, { f: k(3.0), v: { tronco: -4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 45, cD: 140 } }, { f: k(4.4), v: "sentado" }, { f: k(5.0), v: "agarrarAlto" }, { f: k(5.0) + 24, v: "sentado" }]}
         asiento={[{ f: 0, v: 110 }]} caras={[{ f: 0, v: "cansado" }, { f: k(2.6), v: "enojo" }, { f: k(4.6), v: "cansado" }]} miradas={[{ f: 0, v: { x: 0.2, y: 0.2 } }, { f: k(2.6), v: { x: -1, y: 0.3 } }]} />}
       hud={<HudOwen min={312} part={null} />} />
   );
@@ -108,7 +108,7 @@ export const P04Fachada: React.FC = () => {
         <Actor look={RUNNER} escala={ESC * 1.15} seed={41} ruta={[{ f: 0, x: 300, y: P + 60 }, { f: 99, x: 1900, y: P + 60, curva: "lineal" }]} correr={1} caras={[{ f: 0, v: "feliz" }]} />
         {diario > 0 && diario < 1.01 && <g transform={`translate(${dX},${dY}) rotate(${diario * 540})`}><rect x={-34} y={-12} width={68} height={24} rx={6} fill="#efe8d8" stroke="#8a847a" strokeWidth={3} /><rect x={-6} y={-12} width={12} height={24} fill="#c0392b" /></g>}
       </>}
-      hud={<><Pildora texto="S PAULINA ST · 5:13 AM" x={960} y={190} desde={8} color="#f4efe4" /><HudOwen min={313} part={null} /></>} />
+      hud={<><Pildora texto="S PAULINA ST · 5:13 AM" x={960} y={190} desde={8} color="#f4efe4" tam={84} /><HudOwen min={313} part={null} /></>} />
   );
 };
 
@@ -116,11 +116,14 @@ export const P04Fachada: React.FC = () => {
 const ROSA_COCINA = TF_PUNTOS.cocina + 90;
 export const P05Rosa: React.FC = () => {
   const k = kDe(9.5);
-  const rev = Array.from({ length: 9 }).map((_, i) => ({ f: i * 18, v: { hD: 55 + (i % 2) * 18, cD: 60 - (i % 2) * 20 } }));
+  // 26-oct v6 (ojo 6/10): plano medio de Rosa con 3 beats — revuelve, prueba el café, se da vuelta tarareando
+  const rev = Array.from({ length: 6 }).map((_, i) => ({ f: i * 14, v: { hD: 55 + (i % 2) * 18, cD: 60 - (i % 2) * 20 } }));
+  const prueba = 6 * 14 + 6, gira = prueba + 50;
+  const poses = [...rev, { f: prueba, v: { hD: 60, cD: 150, cabeza: -8 } }, { f: prueba + 30, v: { hD: 55, cD: 70, cabeza: 4 } }, { f: gira, v: "parado" }, ...Array.from({ length: 5 }).map((_, i) => ({ f: gira + 12 + i * 16, v: i % 2 ? { hD: 30, cD: 40, hI: 30, cI: 40, cabeza: 6 } : { hD: 40, cD: 70, hI: 40, cI: 70, cabeza: -6 } }))];
   return (
-    <Escena Set={TwoFlatCorte} pal={PAL} claves={[mira(0, 520, P - 260, 1.45), mira(k(14.9), 430, P - 260, 1.7, { curva: "inout" })]} seed={5} setProps={{ hora: "alba", luzBaño: false }}
+    <Escena Set={TwoFlatCorte} pal={PAL} claves={[mira(0, ROSA_COCINA - 60, P - 300, 1.9), mira(gira, ROSA_COCINA - 30, P - 310, 2.15, { curva: "inout" }), mira(k(14.9), ROSA_COCINA - 80, P - 290, 1.95, { curva: "inout" })]} seed={5} setProps={{ hora: "alba", luzBaño: false }}
       medio={<>
-        <Actor look={ROSA} escala={ESC} seed={5} ruta={[{ f: 0, x: ROSA_COCINA, y: P }]} dir={[{ f: 0, v: -1 }]} poses={rev} caras={[{ f: 0, v: "feliz" }]} habla={[[0, 400]]} miradas={[{ f: 0, v: { x: -0.4, y: 0.5 } }]} />
+        <Actor look={ROSA} escala={ESC} seed={5} ruta={[{ f: 0, x: ROSA_COCINA, y: P }]} dir={[{ f: 0, v: -1 }, { f: gira, v: 1 }]} poses={poses} caras={[{ f: 0, v: "feliz" }, { f: prueba + 6, v: "sorpresa" }, { f: prueba + 26, v: "feliz" }]} habla={[[0, prueba], [gira + 8, 400]]} miradas={[{ f: 0, v: { x: -0.4, y: 0.5 } }, { f: gira, v: { x: 0.6, y: -0.1 } }]} />
         <Notas x={ROSA_COCINA - 40} y={P - 300} />
       </>}
       hud={<HudOwen min={315} part={null} />} />
