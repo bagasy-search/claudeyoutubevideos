@@ -4,7 +4,7 @@ import React from "react";
 import { interpolate } from "remotion";
 import { F_HUD, F_MANO } from "../anikit/pantalla";
 import { useF } from "../anikit/camara";
-import { VERDE, TEEN } from "./elenco";
+import { VERDE, TEEN, OWEN_CASA } from "./elenco";
 import { Actor } from "../anikit/actor";
 import { Pizarra } from "./ciencia";
 
@@ -19,22 +19,26 @@ export const NoLaSiente: React.FC<{ dCorte?: number }> = ({ dCorte = 60 }) => {
   const f = useF();
   const lleno = interpolate(f, [0, 160], [0.25, 0.9], { extrapolateRight: "clamp" });
   const corte = ease(f, dCorte, dCorte + 14);
-  const pulso = (f % 30) / 30;
+  // 26-oct v8 (ojo: rótulos chicos): el pulso viaja del tubo al cerebro; tras el corte viaja hasta la X, choca y rebota
+  const ciclo = 40, p = (f % ciclo) / ciclo;
+  const xPulso = corte < 1 ? 700 + p * 540 : (p < 0.6 ? 700 + (p / 0.6) * 180 : 880 - ((p - 0.6) / 0.4) * 180);
+  const choque = corte >= 1 && p >= 0.6 ? Math.exp(-((p - 0.6) * ciclo) / 5) : 0;
+  const latido = 1 + 0.04 * Math.sin(f / 10);
   return (
-    <Pizarra titulo="OWEN'S BRAIN · THIS WEEK">
-      <rect x={520} y={330} width={140} height={480} rx={30} fill={GRIS} />
-      <rect x={530} y={340 + 460 * (1 - lleno)} width={120} height={460 * lleno} rx={24} fill={AMBAR} />
-      <T x={590} y={870} s={36}>ADENOSINE</T>
-      <T x={590} y={915} s={30} c={AMBAR}>still piling up</T>
+    <Pizarra titulo="OWEN'S BRAIN · THIS WEEK" profe={false}>
+      <rect x={430} y={300} width={180} height={540} rx={36} fill={GRIS} />
+      <rect x={442} y={312 + 516 * (1 - lleno)} width={156} height={516 * lleno} rx={28} fill={AMBAR} />
+      <T x={520} y={910} s={56} w={700}>ADENOSINE</T>
+      <T x={520} y={975} s={46} c={AMBAR}>still piling up</T>
       {/* el cable de la señal, con un pulso que se corta */}
-      <path d="M680,560 H1200" stroke={GRIS} strokeWidth={16} strokeLinecap="round" />
-      {(1 - corte) > 0.05 && <circle cx={680 + pulso * 520} cy={560} r={16} fill={AMBAR} opacity={1 - corte} />}
-      {corte > 0 && <g transform={`translate(940,560) scale(${corte})`}><circle r={60} fill="#1a1f33" stroke={ROJO} strokeWidth={10} /><path d="M-30,-30 L30,30 M30,-30 L-30,30" stroke={ROJO} strokeWidth={12} strokeLinecap="round" /></g>}
-      <g transform="translate(1340,560)">
-        <path d="M-120,0 C-125,-80 -60,-110 0,-85 C60,-110 125,-80 120,0 C125,60 55,80 0,70 C-55,80 -125,60 -120,0 Z" fill="#3a2a44" stroke={ROSA_C} strokeWidth={10} />
-        <T x={0} y={160} s={36}>"SLOW DOWN"</T>
-        <T x={0} y={205} s={30} c={ROJO} o={corte}>signal: OFF</T>
+      <path d="M640,570 H1250" stroke={GRIS} strokeWidth={22} strokeLinecap="round" />
+      <circle cx={xPulso} cy={570} r={24} fill={AMBAR} />
+      {corte > 0 && <g transform={`translate(960,570) rotate(${choque * 8 * Math.sin(f / 2.5)}) scale(${corte * (1 + choque * 0.12)})`}><circle r={84} fill="#1a1f33" stroke={ROJO} strokeWidth={14} /><path d="M-42,-42 L42,42 M42,-42 L-42,42" stroke={ROJO} strokeWidth={16} strokeLinecap="round" /></g>}
+      <T x={1440} y={330} s={60} w={700}>"SLOW DOWN"</T>
+      <g transform={`translate(1440,570) scale(${1.45 * latido})`}>
+        <path d="M-120,0 C-125,-80 -60,-110 0,-85 C60,-110 125,-80 120,0 C125,60 55,80 0,70 C-55,80 -125,60 -120,0 Z" fill="#3a2a44" stroke={ROSA_C} strokeWidth={8} />
       </g>
+      <T x={1440} y={800} s={56} c={ROJO} w={700} o={corte}>signal: OFF</T>
     </Pizarra>
   );
 };
@@ -71,30 +75,36 @@ export const Hipocampo: React.FC<{ dArchiva?: number; dTres?: number }> = ({ dAr
   const f = useF();
   const a = ease(f, 20, 40);
   const tarjeta = (i: number, d: number, guardada: boolean, label: string) => {
-    const t = ease(f, d, d + 40);
-    const x = interpolate(t, [0, 1], [700, guardada ? 1360 : 980]);
-    const y = interpolate(t, [0, 1], [560, guardada ? 420 + i * 10 : 860]);
+    const t = ease(f, d, d + 34);
+    const x = interpolate(t, [0, 1], [860, guardada ? 1470 : 1180]);
+    const y = interpolate(t, [0, 1], [560, guardada ? 430 + i * 12 : 900]) - Math.sin(t * Math.PI) * 190;
+    const rebote = guardada && t >= 1 ? 1 + Math.exp(-(f - d - 34) / 5) * 0.15 : 1;
     return (
-      <g key={label} transform={`translate(${x},${y}) rotate(${guardada ? 0 : 20 * t})`} opacity={guardada ? 1 : 1 - 0.6 * t}>
-        <rect x={-90} y={-55} width={180} height={110} rx={12} fill={TINTA} />
-        <T x={0} y={14} s={36} c="#14203a" w={700}>{label}</T>
-        {!guardada && t > 0.6 && <path d="M-80,-45 L80,45" stroke={ROJO} strokeWidth={8} />}
+      <g key={label} transform={`translate(${x},${y}) rotate(${guardada ? 0 : 28 * t}) scale(${1.45 * rebote})`}>
+        <rect x={-90} y={-55} width={180} height={110} rx={12} fill={TINTA} stroke="#14203a" strokeWidth={4} />
+        <T x={0} y={16} s={44} c="#14203a" w={800}>{label}</T>
+        {!guardada && t > 0.6 && <path d="M-80,-45 L80,45 M80,-45 L-80,45" stroke={ROJO} strokeWidth={10} />}
       </g>
     );
   };
+  // Owen grande a la izquierda: manotea cada tarjeta hacia el archivo
+  const beats = [dArchiva, dTres, dTres + 20, dTres + 40];
+  const poses = [{ f: 0, v: { hD: 20, cD: 20, hI: 20, cI: 20 } }, ...beats.flatMap((d) => [{ f: d - 8, v: { hD: 150, cD: 60, tronco: -6, cabeza: -6 } }, { f: d + 4, v: { hD: 80, cD: 10, tronco: 8, cabeza: 6 } }, { f: d + 22, v: { hD: 30, cD: 30, tronco: 2 } }])];
   return (
-    <Pizarra titulo="SLEEP FILES THE DAY" fuente="Rasch & Born, Physiological Reviews, 2013">
-      <g transform={`translate(560,560) scale(${a})`}>
+    <Pizarra titulo="SLEEP FILES THE DAY" fuente="Rasch & Born, Physiological Reviews, 2013" profe={false}>
+      <Actor look={OWEN_CASA} escala={2.3} seed={47} ruta={[{ f: 0, x: 240, y: 1190 }]} dir={[{ f: 0, v: 1 }]} poses={poses}
+        caras={[{ f: 0, v: "duda" }, { f: dTres + 30, v: "miedo" }]} />
+      <g transform={`translate(720,560) scale(${a * 1.3})`}>
         <path d="M0,-150 C70,-150 90,-80 50,-40 C100,-10 90,70 30,90 C60,140 20,190 -30,170 C0,140 -10,110 -40,100 C-90,60 -60,-10 -20,-30 C-60,-70 -50,-150 0,-150 Z" fill="#ffd27a" stroke="#c98a2a" strokeWidth={8} />
         <circle cx={10} cy={-110} r={10} fill="#14203a" />
         <T x={0} y={240} s={34}>HIPPOCAMPUS</T>
       </g>
-      <rect x={1240} y={300} width={260} height={360} rx={18} fill={GRIS} />
-      {[0, 1, 2].map((i) => <rect key={i} x={1260} y={320 + i * 115} width={220} height={95} rx={10} fill="#1d2a4a" />)}
-      <T x={1370} y={710} s={30} c="#9aa6c8">LONG-TERM</T>
+      <rect x={1300} y={260} width={340} height={440} rx={22} fill={GRIS} />
+      {[0, 1, 2].map((i) => <rect key={i} x={1322} y={284 + i * 138} width={296} height={118} rx={12} fill="#1d2a4a" />)}
+      <T x={1470} y={760} s={46} c="#9aa6c8" w={700}>LONG-TERM</T>
       {f >= dArchiva && tarjeta(0, dArchiva, true, "TODAY")}
       {f >= dTres && <>{tarjeta(1, dTres, true, "MON")}{tarjeta(2, dTres + 20, false, "TUE")}{tarjeta(3, dTres + 40, false, "WED")}</>}
-      {f >= dTres + 70 && <T x={960} y={980} s={48} c={ROJO} w={700}>3 days lived · 1 saved</T>}
+      {f >= dTres + 70 && <T x={1100} y={1000} s={66} c={ROJO} w={800}>3 days lived · 1 saved</T>}
     </Pizarra>
   );
 };
@@ -106,22 +116,25 @@ export const Glinfatico: React.FC<{ dCrece?: number; dLava?: number; dNombre?: n
   const lava = ease(f, dLava, dLava + 120);
   const owen = ease(f, dOwen, dOwen + 20);
   const sep = 1 + 0.6 * g * (1 - owen);
-  const basura = Array.from({ length: 26 }).map((_, i) => ({ x: 280 + ((i * 197) % 1080), y: 380 + ((i * 113) % 420) }));
+  const basura = Array.from({ length: 26 }).map((_, i) => ({ x: 380 + ((i * 197) % 1160), y: 360 + ((i * 113) % 470) }));
+  const trash = Math.round(owen > 0 ? 100 : 100 - 60 * lava);
+  const frente = 200 + lava * 1600; // la oleada barre de izquierda a derecha
   return (
-    <Pizarra titulo="THE BRAIN TAKES OUT ITS TRASH" fuente="Xie et al., Science, 2013 · University of Rochester">
+    <Pizarra titulo="THE BRAIN TAKES OUT ITS TRASH" fuente="Xie et al., Science, 2013 · University of Rochester" profe={false}>
       {Array.from({ length: 12 }).map((_, i) => {
-        const cx = 820 + ((i % 4) - 1.5) * 230 * sep, cy = 590 + (Math.floor(i / 4) - 1) * 170 * sep;
-        return <ellipse key={i} cx={cx} cy={cy} rx={95} ry={68} fill="#3a2a44" stroke={ROSA_C} strokeWidth={6} />;
+        const cx = 960 + ((i % 4) - 1.5) * 240 * sep, cy = 600 + (Math.floor(i / 4) - 1) * 150 * sep;
+        return <ellipse key={i} cx={cx} cy={cy} rx={106} ry={76} fill="#3a2a44" stroke={ROSA_C} strokeWidth={7} />;
       })}
+      {lava > 0 && lava < 1 && owen === 0 && <path d={`M${frente - 60},300 C${frente + 30},450 ${frente - 50},700 ${frente + 20},900`} fill="none" stroke={AZUL} strokeWidth={80} opacity={0.5} strokeLinecap="round" />}
       {basura.map((b, i) => {
-        const sale = owen > 0 ? 0 : lava * (1 + (i % 5) * 0.2);
-        return <circle key={i} cx={b.x + sale * 900} cy={b.y} r={12} fill={AMBAR} opacity={Math.max(0, 1 - sale) + owen} />;
+        const pasada = owen > 0 ? 0 : Math.max(0, Math.min(1, (frente - b.x) / 300));
+        const sale = (i % 5) < 3 ? pasada : 0; // ~60 % se va con la oleada
+        return <circle key={i} cx={b.x + sale * 260} cy={b.y} r={17} fill={AMBAR} opacity={Math.max(0, 1 - sale)} />;
       })}
-      {lava > 0 && owen === 0 && <path d={`M300,${590 + Math.sin(f / 6) * 20} C700,${540 + Math.sin(f / 5) * 30} 1200,${640 - Math.sin(f / 7) * 30} 1650,590`} fill="none" stroke={AZUL} strokeWidth={22} opacity={0.55} strokeLinecap="round" />}
-      <T x={960} y={240} s={40} c={AZUL} o={g * (1 - owen)}>asleep: +60% space between cells</T>
-      <T x={960} y={950} s={38} c={AMBAR} o={ease(f, dLava + 40, dLava + 60) * (1 - owen)}>washes out beta-amyloid (linked to Alzheimer's)</T>
-      <T x={960} y={1010} s={44} c={TINTA} w={700} o={ease(f, dNombre, dNombre + 15) * (1 - owen)}>the GLYMPHATIC system</T>
-      <T x={960} y={980} s={50} c={ROJO} w={700} o={owen}>Owen: 3 days of trash</T>
+      <T x={960} y={268} s={50} c={AZUL} w={700} o={g * (1 - owen)}>{`asleep: +60% space · TRASH ${trash}%`}</T>
+      <T x={960} y={975} s={44} c={AMBAR} o={ease(f, dLava + 40, dLava + 60) * (1 - ease(f, dNombre - 10, dNombre)) * (1 - owen)}>washes out beta-amyloid (linked to Alzheimer's)</T>
+      <T x={960} y={975} s={56} c={TINTA} w={700} o={ease(f, dNombre, dNombre + 15) * (1 - owen)}>the GLYMPHATIC system</T>
+      <T x={960} y={975} s={60} c={ROJO} w={800} o={owen}>Owen: 3 days · TRASH 100%</T>
     </Pizarra>
   );
 };

@@ -147,11 +147,13 @@ export const P05Espejo: React.FC = () => {
   return (
     <Escena Set={TwoFlatCorte} pal={PAL} claves={cl} seed={5} setProps={{ hora: "alba", luzBaño: true }}
       medio={<>
-        <defs><clipPath id="esp3"><rect x={ESP - 80} y={A - 410} width={160} height={180} rx={10} /></clipPath></defs>
+        <defs><clipPath id="esp3"><rect x={ESP - 115} y={A - 430} width={230} height={320} rx={12} /></clipPath></defs>
+        <rect x={ESP - 125} y={A - 440} width={250} height={340} rx={16} fill="#8a7a66" />
         <g clipPath="url(#esp3)">
-          <rect x={ESP - 80} y={A - 410} width={160} height={180} fill="#cfe0e4" />
-          <Actor look={OWEN_CASA} escala={ESC} seed={6} vivo={0} ruta={[{ f: 0, x: ESP + 30, y: A }]} dir={[{ f: 0, v: -1 }]} poses={LAVA.map((q) => ({ ...q, f: q.f + 8 }))} caras={[{ f: 0, v: "feliz" }, { f: k(25.0) + 10, v: "sorpresa" }]} />
-          <rect x={ESP - 80} y={A - 410} width={160} height={180} fill="#aac6cf" opacity={0.22} />
+          <rect x={ESP - 115} y={A - 430} width={230} height={320} fill="#cfe0e4" />
+          <Actor look={OWEN_CASA} escala={ESC} seed={6} vivo={0} ruta={[{ f: 0, x: ESP + 20, y: A }]} dir={[{ f: 0, v: -1 }]} poses={LAVA.map((q) => ({ ...q, f: q.f + 6 }))} caras={[{ f: 0, v: "feliz" }, { f: k(25.0) + 6, v: "sorpresa" }]} />
+          <rect x={ESP - 115} y={A - 430} width={230} height={320} fill="#aac6cf" opacity={0.2} />
+          <path d={`M${ESP - 90},${A - 400} L${ESP - 40},${A - 400} L${ESP - 100},${A - 300} Z`} fill="#fff" opacity={0.18} />
         </g>
         <Actor look={OWEN_CASA} escala={ESC} seed={6} vivo={0} ruta={[{ f: 0, x: ESP - 150, y: A }]} dir={[{ f: 0, v: 1 }]} poses={LAVA} caras={[{ f: 0, v: "feliz" }, { f: k(25.0), v: "sorpresa" }]} />
       </>}
@@ -664,14 +666,14 @@ export const P32Mensaje: React.FC = () => {
   const cambio = k(335.8);
   return (
     <AbsoluteFill>
-      <Escena Set={TwoFlatCorte} pal={PAL} claves={[mira(0, PIES.x - 60, PIES.y - 170, 1.85), mira(k(334), PIES.x - 70, PIES.y - 180, 2.0, { curva: "inout" })]} seed={32} setProps={{ hora: "alba", luzCocina: false, luzBaño: false, luzDorm: false }}
+      <Escena Set={TwoFlatCorte} pal={PAL} claves={[mira(0, PIES.x - 60, PIES.y - 150, 1.6), mira(k(334), PIES.x - 70, PIES.y - 160, 1.75, { curva: "inout" })]} seed={32} setProps={{ hora: "alba", luzCocina: false, luzBaño: false, luzDorm: false }}
         medio={<OwenEscalera caras={[{ f: 0, v: "cansado" }, { f: k(330.0), v: "sorpresa" }, { f: k(332.5), v: "duda" }, { f: k(335.8), v: "miedo" }]} poses={[{ f: 0, v: "celular" }, { f: k(332.5), v: { ...SENT_ESC, hD: 30, cD: 125, cabeza: 26, tronco: 10 } }, { f: k(335.8), v: "celular" }]} giros={[{ f: 0, v: 0.3 }]} />} />
-      <AbsoluteFill style={{ background: "radial-gradient(circle at 72% 45%, rgba(111,168,255,0.28) 0%, rgba(5,7,13,0.55) 45%)" }} />
+      <AbsoluteFill style={{ background: "radial-gradient(circle at 72% 45%, rgba(111,168,255,0.22) 0%, rgba(5,7,13,0.18) 55%)" }} />
       <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}>
         <MensajeCel de="Halden Clinic · Dr. Imani Hale" texto={"Week 3 complete.\nPlease sleep now,\nparticipant 47.\nYour next change\nbegins when you wake up."} desde={k(326.4)} x={560} s={1.25} />
       </svg>
-      <Contador lineas={[{ etiqueta: "PARTICIPANTS", claves: "45/47", color: VERDE }]} tam={38} hasta={cambio} />
-      <Contador lineas={[{ etiqueta: "PARTICIPANTS", claves: "44/47", color: ROJO_OWEN }]} tam={64} desde={cambio} />
+      {/* 26-oct v8 (ojo: el contador pisaba el reloj): cuenta propia arriba al centro, sobre pastilla, con pop al cambiar */}
+      <div style={{ position: "absolute", left: 1300, top: 70, transform: `translateX(-50%) scale(${1 + (f >= cambio ? Math.exp(-(f - cambio) / 6) * 0.25 : 0)})`, background: "rgba(10,14,28,0.92)", borderRadius: 18, padding: "12px 34px", fontFamily: F_HUD, fontWeight: 800, fontSize: 54, color: f >= cambio ? ROJO_OWEN : VERDE, whiteSpace: "nowrap" }}>PARTICIPANTS {f >= cambio ? "44/47" : "45/47"}</div>
       {/* 26-oct v7 (ojo: «44/47 con boom»): el número nuevo estalla en el centro y se va a su rincón */}
       {f >= cambio && f < cambio + 45 && <div style={{ position: "absolute", left: 1450, top: 520, transform: `translate(-50%,-50%) scale(${Math.min(1, (f - cambio) / 5) * (1 + Math.exp(-(f - cambio) / 6) * 0.5)})`, opacity: Math.min(1, (45 - (f - cambio)) / 10), fontFamily: F_HUD, fontWeight: 900, fontSize: 230, color: ROJO_OWEN, WebkitTextStroke: "8px #fff" }}>44/47</div>}
     </AbsoluteFill>
@@ -706,7 +708,7 @@ export const P33Duerme: React.FC = () => {
 // ---------- 34 · la semana que viene: etiquetas de precio ----------
 export const P34Precios: React.FC = () => {
   const k = kDe(348.25);
-  const cl = [mira(0, 1000, 640, 1.35), mira(k(352.3), 1350, 640, 1.4, { curva: "inout" }), mira(k(355.0), ASIENTO_X(8), BUS_PISO - 280, 1.9, { curva: "inout" })];
+  const cl = [mira(0, 1000, 660, 1.6), mira(k(352.3), 1450, 660, 1.65, { curva: "inout" }), mira(k(355.0), ASIENTO_X(8), BUS_PISO - 280, 2.1, { curva: "inout" })];
   const reac = ["sorpresa", "risa", "duda", "feliz", "enojo", "neutral"];
   const brazos: Record<string, number>[] = [{ hI: 140, cI: 20, hD: 150, cD: 15 }, { hD: 25, cD: 150 }, { hI: 40, cI: 140, hD: 45, cD: 140 }, { hD: 95, cD: 0 }, { hI: 30, cI: 115, hD: 35, cD: 110 }, {}];
   const filas = [2, 3, 4, 5, 7, 8];
@@ -715,10 +717,10 @@ export const P34Precios: React.FC = () => {
   return (
     <EnBus cl={cl} hora="manana" part="44/47" min={380} avance={(f) => 4000 + f * 10} pas={filas.map((fl, i) => sent(looks[i], fl, { seed: 90 + i, caras: [{ f: 0, v: "neutral" }, { f: k(349.0) + i * 14 + 4, v: reac[i] }], poses: [{ f: 0, v: "sentado" }, { f: k(349.0) + i * 14 + 4, v: { tronco: -4, pI: 88, rI: 88, pD: 92, rD: 92, ...brazos[i] } }] }))} owen={{ caras: [{ f: 0, v: "sorpresa" }] }}
       hud={<>
-        {filas.map((fl, i) => <Tag key={fl} cl={cl} x={ASIENTO_X(fl)} y={BUS_PISO - 250} texto={precios[i]} desde={k(349.0) + i * 14} color={i === 5 ? "#ffd27a" : VERDE} tam={i === 5 ? 1.5 : 1.25} />)}
-        <Pildora texto="NEXT WEEK · EVERYONE HAS A PRICE TAG" x={960} y={170} desde={0} hasta={k(352.2)} color="#ffd27a" />
-        <Mano texto="not what they earn. what they're WORTH." x={960} y={150} desde={k(352.3)} hasta={k(354.3)} color="#f4efe4" tam={56} />
-        <Mano texto="the most expensive one: the last he'd expect" x={960} y={150} desde={k(354.4)} color="#ffd27a" tam={54} />
+        {filas.map((fl, i) => <Tag key={fl} cl={cl} x={ASIENTO_X(fl)} y={BUS_PISO - 250} texto={precios[i]} desde={k(349.0) + i * 14} color={i === 5 ? "#ffd27a" : VERDE} tam={i === 5 ? 1.9 : 1.3} />)}
+        <Pildora texto="NEXT WEEK · EVERYONE HAS A PRICE TAG" x={960} y={960} desde={0} hasta={k(352.2)} color="#ffd27a" tam={64} />
+        <Mano texto="not what they earn. what they're WORTH." x={960} y={930} desde={k(352.3) - 3} hasta={k(354.3)} color="#f4efe4" tam={72} vel={8} />
+        <Mano texto="the most expensive one: the last he'd expect" x={960} y={930} desde={k(354.4) - 3} color="#ffd27a" tam={66} vel={8} />
       </>} />
   );
 };
@@ -734,10 +736,10 @@ export const P35Cta: React.FC = () => {
       medio={<g transform={`translate(0,-110) rotate(-90 ${CAMA} ${A - 60})`}><Actor look={OWEN_CASA} escala={ESC} seed={6} vivo={0} ruta={[{ f: 0, x: CAMA, y: A - 60 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "dormido" }]} ajuste={(q) => ({ ...q, tronco: q.tronco + resp * 3, cabeza: q.cabeza + resp * 4, hD: q.hD + resp * 5 })} /></g>}
       hud={<>
         {[0, 1, 2].map((i) => { const t = ((f + i * 20) % 60) / 60; return <div key={i} style={{ position: "absolute", left: 600 + t * 160, top: 560 - t * 260, fontFamily: F_HUD, fontWeight: 800, fontSize: 80 + i * 22, color: "#ffe04a", opacity: Math.sin(t * Math.PI), textShadow: "0 4px 10px rgba(0,0,0,0.5)" }}>Z</div>; })}
-        {f > k(361.6) && <div style={{ position: "absolute", left: 960, top: 800, transform: `translateX(-50%) scale(${1 + Math.max(0, Math.sin((f - k(361.6)) / 6)) * 0.05})`, display: "flex", alignItems: "center", gap: 18, background: "#e22a2a", color: "#fff", fontFamily: F_HUD, fontWeight: 800, fontSize: 84, padding: "20px 60px", borderRadius: 24, boxShadow: "0 10px 30px rgba(0,0,0,0.4)" }}>SUBSCRIBE <span style={{ display: "inline-block", fontSize: 74, transform: `rotate(${Math.sin(f / 3) * 14}deg)` }}>🔔</span></div>}
+        {f > k(361.6) && <div style={{ position: "absolute", left: 1560, top: 860, transform: `translateX(-50%) scale(${Math.min(1, (f - k(361.6)) / 6) * (1 + Math.max(0, Math.sin((f - k(361.6)) / 8)) * 0.04)})`, display: "flex", alignItems: "center", gap: 18, background: "#e22a2a", color: "#fff", fontFamily: F_HUD, fontWeight: 800, fontSize: 72, padding: "18px 50px", borderRadius: 24, boxShadow: "0 10px 30px rgba(0,0,0,0.4)" }}>SUBSCRIBE <span style={{ display: "inline-block", fontSize: 64, transform: `rotate(${Math.sin(f / 7) * 12}deg)` }}>🔔</span></div>}
         <Cansa cl={cl} x={CAMA + 260} y={A - 140} pct={100} desde={k(359.0)} tam={1.2} />
         <Mano texto={"how many hours did YOU" + String.fromCharCode(10) + "sleep last night?"} x={960} y={140} desde={k(358.3)} color="#ffd27a" tam={110} />
-        <Pildora texto="TELL US IN THE COMMENTS · WEEK 4 IS NEXT" x={960} y={960} desde={k(361.6)} color="#f4efe4" tam={40} />
+        <Pildora texto="TELL US IN THE COMMENTS · WEEK 4 IS NEXT" x={960} y={430} desde={k(361.6)} color="#f4efe4" tam={58} />
         <HudOwen part="44/47" />
       </>} />
   );
