@@ -162,10 +162,10 @@ const p03: PlanB = {
       const sale = interpolate(f, [k(11.0), k(14.6)], [I.casas - 200, I.casas - 700], cl);
       return (
         <Escena Set={Isla} pal={PAL} setProps={{ hora: "noche", estacion: "verano", luces: interpolate(f, [k(10.2), k(14.0)], [0, 1], cl) }} seed={603} mano={1.6}
-          claves={[mira(0, 2700, 600, 0.9), mira(k(14.6), 3000, 640, 1.1, { curva: "inout" }), mira(k(16.8), 3000, 560, 0.95, { curva: "inout" })]}
+          claves={[mira(0, I.casas - 60, 600, 1.6), mira(k(14.6), I.casas - 360, 610, 1.68, { curva: "inout" })]}
           medio={<>
-            <A {...act(ISLENO(3), sale, { escala: 1.05, ruta: [{ f: 0, x: I.casas - 200, y: P }, { f: k(11.0), x: I.casas - 200, y: P }, { f: k(14.6), x: I.casas - 700, y: P }], dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "neutral" }], luz: { lado: 1, color: AMBAR, fuerza: 1 }, enManoD: farol(f, 0.8), seed: 41 })} />
-            <A {...act(ISLENO(5), I.casas + 260, { escala: 1.0, dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: "brazosCruzados" }, { f: k(12.6), v: "saludar" }], caras: [{ f: 0, v: "feliz" }], luz: { lado: -1, color: AMBAR, fuerza: 0.9 }, seed: 42 })} />
+            <A {...act(ISLENO(3), sale, { escala: 1.4, ruta: [{ f: 0, x: I.casas - 200, y: P }, { f: k(11.0), x: I.casas - 200, y: P }, { f: k(14.6), x: I.casas - 700, y: P }], dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "neutral" }], luz: { lado: 1, color: AMBAR, fuerza: 1 }, enManoD: farol(f, 0.8), seed: 41 })} />
+            <A {...act(ISLENO(5), I.casas + 260, { escala: 1.4, dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: "brazosCruzados" }, { f: k(12.6), v: "saludar" }], caras: [{ f: 0, v: "feliz" }], luz: { lado: -1, color: AMBAR, fuerza: 0.9 }, seed: 42 })} />
           </>}
           hud={<><H sinIsla={f < k(14.9)} l={[]} />{f >= k(14.9) && <HudC lineas={[POP(10), isla([{ f: 0, v: 0 }, { f: k(15.0), v: 100, d: 40 }], k(14.9))]} marca={false} />}
             <Txt t="THE LARGEST GROUP LEFT ON EARTH" a={k(11.0)} b={k(14.8)} top={170} tam={52} chip />
@@ -214,7 +214,7 @@ const p05: PlanB = {
   sfx: [[20.1, "riser", -14, { dur: 2.6 }], [20.2, "waves", -20, { dur: 3 }], [21.0, "cloth", -12]],
   el: (k) => (
     <Escena Set={LagoHelado} pal={PAL} setProps={{ hora: "ocaso", agua: 1, arbolitos: 0 }} seed={605} mano={1.5}
-      claves={[mira(0, 1120, 560, 1.6), mira(k(23.2), 1120, 560, 1.0, { curva: "inout" })]}
+      claves={[mira(0, 1100, 640, 1.3), mira(k(23.2), 1110, 630, 1.24, { curva: "inout" })]}
       frente={<A {...act(ABBY, 640, { ruta: [{ f: 0, x: 780, y: 1040 }], escala: 1.4, dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: "parado" }, { f: k(21.0), v: "pensar" }], caras: [{ f: 0, v: "determinado" }], miradas: [{ f: 0, v: { x: 0.7, y: -0.2 } }], luz: { lado: 1, color: "#ffb08a", fuerza: 1 } })} />}
       hud={<><H /><Txt t={"COULD 100 PEOPLE\nRESTART HUMANITY?"} a={k(20.2)} b={k(23.2) + 4} top={640} left={980} tam={74} color="#f6ecd2" /></>} />
   ),
@@ -234,7 +234,7 @@ const p07: PlanB = {
   el: (k) => {
     const Pl: React.FC = () => { const f = useF(); return (
     <Escena Set={RadioGus} pal={PAL} setProps={{ luzRadio: 1, aguja: 0.62, isla: 1, linea: 1, ruta: interpolate(f, [k(27.4), k(29.6)], [0, 1], cl) }} seed={607} mano={2}
-      claves={[mira(0, RG_PUNTOS.silla + 60, 700, 1.75), mira(k(27.0), RG_PUNTOS.silla + 160, 680, 1.6, { curva: "inout" }), mira(k(30.0), RG_PUNTOS.mapa, 440, 1.45, { curva: "inout" })]}
+      claves={f < k(27.4) ? [mira(0, RG_PUNTOS.silla + 90, 640, 2.2), mira(k(27.4), RG_PUNTOS.silla + 110, 630, 2.3, { curva: "inout" })] : [mira(0, RG_PUNTOS.mapa, 460, 1.5), mira(k(30.0), RG_PUNTOS.mapa, 450, 1.56, { curva: "inout" })]}
       medio={<A {...act(GUS_RADIO, RG_PUNTOS.silla, { asiento: [{ f: 0, v: 60 }], dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { tronco: 8, pI: 88, rI: 88, pD: 92, rD: 92, hD: 70, cD: 130, hI: 25, cI: 50 } }, { f: k(27.2), v: { tronco: 2, pI: 88, rI: 88, pD: 92, rD: 92, hD: 70, cD: 130, hI: 95, cI: 10 } }], caras: [{ f: 0, v: "determinado" }, { f: k(26.4), v: "feliz" }], habla: [[k(25.0), k(27.0)]], luz: { lado: 1, color: "#7dffb0", fuerza: 0.9 }, enManoD: <MicMano s={0.8} ptt /> })} />}
       hud={<><H /><Txt t="LAST TIME" a={k(24.8)} b={k(26.8)} top={170} tam={44} chip /></>} />
     ); };
@@ -250,7 +250,7 @@ const p08: PlanB = {
     <Escena Set={EstacionIsla} pal={PAL} setProps={{ hora: "noche", temp: 54, afuera: "verano" }} seed={608} mano={2}
       claves={[mira(0, EI_PUNTOS.silla + 40, 700, 1.9), mira(k(34.9), EI_PUNTOS.silla + 120, 690, 1.8, { curva: "inout" })]}
       medio={<A {...act(ABBY_ADENTRO, EI_PUNTOS.silla, { asiento: [{ f: 0, v: 60 }], dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { tronco: 4, pI: 88, rI: 88, pD: 92, rD: 92, hI: 160, cI: 40, hD: 30, cD: 50 } }, { f: k(31.4), v: { tronco: 8, pI: 88, rI: 88, pD: 92, rD: 92, hD: 70, cD: 130, hI: 25, cI: 50 } }], caras: [{ f: 0, v: "feliz" }], habla: [[k(32.4), k(34.6)]], luz: { lado: 1, color: "#7dffb0", fuerza: 0.8 }, enManoD: (ff: number) => ff > k(31.4) ? <MicMano s={0.8} ptt /> : null })} />}
-      hud={<><H /><Txt t={"ABBY LACROIX · 40\nFORMER PARK RANGER"} a={k(30.4)} b={k(33.0)} top={200} left={1180} tam={50} chip /><Txt t="APOSTLE ISLANDS · WISCONSIN" a={k(33.0)} b={k(34.9) + 4} top={200} left={1080} tam={48} chip /></>} />
+      hud={<><H /><Txt t={"ABBY LACROIX · 40\nFORMER PARK RANGER"} a={k(30.4)} b={k(33.0)} top={270} left={120} tam={50} chip /><Txt t="APOSTLE ISLANDS · WISCONSIN" a={k(33.0)} b={k(34.9) + 4} top={270} left={120} tam={48} chip /></>} />
   ),
 };
 
@@ -297,12 +297,12 @@ const p10: PlanB = {
       const f = useF();
       return (
         <Escena Set={Isla} pal={PAL} setProps={{ hora: "dia", estacion: "verano" }} seed={610} mano={2}
-          claves={[mira(0, -560, 640, 1.05), mira(k(47.5), -260, 640, 1.15, { curva: "inout" })]}
+          claves={[mira(0, -520, 600, 1.55), mira(k(47.5), -320, 600, 1.62, { curva: "inout" })]}
           medio={<>
             {[0, 1, 2].map((i) => <Lancha key={i} x={interpolate(f, [k(42.0) + i * 20, k(44.0) + i * 30], [-2600 - i * 300, -900 + i * 180], cl)} y={P + 40 + i * 60} s={0.9 - i * 0.1} color={["#e8e4da", "#c8382c", "#2f6a5a"][i]} gente={2 + i} />)}
             {Array.from({ length: 6 }).map((_, i) => <A key={i} {...act(ISLENO(i + 13), 0, { ruta: [{ f: 0, x: -620 + i * 75, y: P - 10 }, { f: k(44.4) + i * 8, x: -620 + i * 75, y: P - 10 }, { f: k(47.4), x: -80 + i * 120, y: P }], escala: 1.05, dir: [{ f: 0, v: 1 }], caras: [{ f: 0, v: i % 2 ? "cansado" : "feliz" }], seed: 50 + i })} />)}
           </>}
-          hud={<><HudC lineas={[POP(10), isla([{ f: 0, v: 4 }, { f: k(43.0), v: 37, d: 30 }, { f: k(46.4), v: 68, d: 26 }])]} /><Txt t="BAYFIELD · ASHLAND · FISHING BOATS · CABINS" a={k(42.4)} b={k(47.5)} top={880} tam={46} chip /></>} />
+          hud={<><HudC lineas={[POP(10), isla([{ f: 0, v: 4 }, { f: k(43.0), v: 37, d: 30 }, { f: k(46.4), v: 68, d: 26 }])]} /><Txt t="BAYFIELD · ASHLAND · FISHING BOATS · CABINS" a={k(42.4)} b={k(47.5)} top={170} tam={46} chip /></>} />
       );
     };
     return <Pl />;
@@ -319,14 +319,14 @@ const p11: PlanB = {
   el: (k) => {
     const Pl: React.FC = () => {
       const f = useF();
-      const bote = f > k(49.6);
+      const bote = true;
       return (
         <Escena Set={LagoHelado} pal={PAL} setProps={{ hora: "noche", agua: 1, arbolitos: 0, islaLuz: 1 }} seed={611} mano={2}
-          claves={[mira(0, 1380, 760, 1.25), mira(k(52.3), 1300, 720, 1.5, { curva: "inout" })]}
+          claves={[mira(0, 1440, 800, 1.4), mira(k(52.3), 1340, 760, 1.55, { curva: "inout" })]}
           medio={<>
             <rect x={-2000} y={1040} width={6000} height={800} fill="#3a3a44" /><rect x={-2000} y={1036} width={6000} height={8} fill="#5a5a64" />
             {!bote ? <A {...act(ISLENO(4), 1500, { ruta: [{ f: 0, x: 1500, y: 1040 }], escala: 1.3, dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "sorpresa" }], miradas: [{ f: 0, v: { x: -0.7, y: -0.3 } }], luz: { lado: -1, color: AMBAR, fuerza: 0.4 } })} />
-              : <BoteRemo x={interpolate(f, [k(49.6), k(52.3)], [1500, 1260], cl)} y={interpolate(f, [k(49.6), k(52.3)], [1020, 820], cl)} s={interpolate(f, [k(49.6), k(52.3)], [1.6, 1.1], cl)} f={f} rema />}
+              : <BoteRemo x={interpolate(f, [0, k(52.3)], [1620, 1300], cl)} y={interpolate(f, [0, k(52.3)], [1000, 880], cl)} s={interpolate(f, [0, k(52.3)], [2.1, 1.7], cl)} f={f} rema />}
           </>}
           hud={<><HudC lineas={[POP(10), isla(68)]} /><Txt t="THE GENERATOR LIGHTS" a={k(48.4)} b={k(50.6)} top={200} tam={44} chip /></>} />
       );
@@ -411,7 +411,7 @@ const p15: PlanB = {
   sfx: [[68.9, "page", -6], [69.6, "tick", -6]],
   el: (k) => (
     <Escena Set={GranjaLiving} pal={PAL} setProps={{ hora: "noche", farol: 1 }} seed={616} mano={2}
-      claves={[mira(0, L.mesa + 320, 640, 1.3), mira(k(71.0), L.mesa + 330, 640, 1.42, { curva: "inout" })]}
+      claves={[mira(0, L.mesa + 300, 700, 1.9), mira(k(71.0), L.mesa + 310, 695, 2.0, { curva: "inout" })]}
       medio={<A {...act(NAN, L.mesa + 320, { asiento: [{ f: 0, v: 60 }], poses: [{ f: 0, v: { tronco: 6, pI: 88, rI: 88, pD: 92, rD: 92, hD: 60, cD: 80, hI: 50, cI: 80, cabeza: 10 } }], dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "determinado" }], enManoD: <g transform="scale(0.8)"><Libro abierto /></g> })} />}
       hud={<><H l={[gen(1, k(69.6))]} /><Txt t="THE SCARY VERSION" a={k(69.0)} b={k(71.0) + 4} top={200} tam={56} chip color="#ff8a6a" /></>} />
   ),
@@ -452,12 +452,12 @@ const p16: PlanB = {
       const cor = interpolate(f, [k(77.0), k(77.3)], [0, 1], cl);
       return (
         <Escena Set={Mural} pal={PAL} setProps={{ tono: "#1e2a26" }} seed={617} mano={1.6}
-          claves={[mira(0, 860, 500, 1.12), mira(k(75.5), 880, 520, 1.0, { curva: "inout" }), mira(k(78.3), 900, 530, 0.98, { curva: "inout" })]}
+          claves={[mira(0, 820, 540, 1.1), mira(k(78.3), 840, 540, 1.14, { curva: "inout" })]}
           detras={<>
             <ArbolFam desde={k(71.3)} gens={4} paso={k(72.9) - k(71.3)} />
             {cor > 0 && <g transform={`translate(960,${200 + 3 * 170 - 70}) scale(${cor * (1 + Math.sin(f / 5) * 0.06)})`}><path d="M0,18 C-40,-12 -24,-44 0,-24 C24,-44 40,-12 0,18 Z" fill="#ff5a6a" stroke="#141018" strokeWidth={5} /></g>}
           </>}
-          medio={<A {...act(NAN, 160, { escala: 1.05, dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: "parado" }, { f: k(71.6), v: "señalar" }, { f: k(77.0), v: "pensar" }], caras: [{ f: 0, v: "determinado" }, { f: k(77.0), v: "duda" }], miradas: [{ f: 0, v: { x: 1, y: -0.4 } }], habla: [[k(71.0), k(78.2)]] })} />}
+          medio={<A {...act(NAN, 300, { escala: 1.6, dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: "parado" }, { f: k(71.6), v: "señalar" }, { f: k(77.0), v: "pensar" }], caras: [{ f: 0, v: "determinado" }, { f: k(77.0), v: "duda" }], miradas: [{ f: 0, v: { x: 1, y: -0.4 } }], habla: [[k(71.0), k(78.2)]] })} />}
           hud={<><H l={[gen([{ f: 0, v: 1 }, { f: k(72.9), v: 2, d: 6 }, { f: k(74.5), v: 3, d: 6 }, { f: k(76.1), v: 4, d: 6 }])]} />
             <Txt t="COUSINS MARRY COUSINS" a={k(77.0)} b={k(78.3) + 4} top={880} tam={52} chip color="#ff8a6a" /></>} />
       );
@@ -542,9 +542,9 @@ const p18: PlanB = {
             {Array.from({ length: c50 }).map((_, i) => <Figu key={`a${i}`} x={800 + (i % 5) * 42} y={640} s={0.5} color={COLS[i % 9]} />)}
             {Array.from({ length: c500 }).map((_, i) => <Figu key={`b${i}`} x={1210 + (i % 6) * 42} y={640 + Math.floor(i / 6) * 62} s={0.5} color={COLS[(i + 3) % 9]} />)}
           </>}
-          medio={<A {...act({ ...CIENTIFICO, accesorios: [{ t: "chaleco", color: "#6a7a3a" }, { t: "gorroLana", color: "#b2342a" }] }, 520, { ruta: [{ f: 0, x: 380, y: P }, { f: k(93.6), x: 560, y: P }], dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: "parado" }, { f: k(93.8), v: "hablar" }, { f: k(95.0), v: "agarrarAlto" }, { f: k(96.4), v: "hablar" }, { f: k(97.6), v: "señalar" }], caras: [{ f: 0, v: "neutral" }, { f: k(95.0), v: "determinado" }, { f: k(98.4), v: "feliz" }], habla: [[k(92.3), k(99.5)]] })} />}
+          medio={<A {...act({ ...CIENTIFICO, accesorios: [{ t: "chaleco", color: "#6a7a3a" }, { t: "gorroLana", color: "#b2342a" }] }, 520, { escala: 1.5, ruta: [{ f: 0, x: 380, y: P }, { f: k(93.6), x: 560, y: P }], dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: "parado" }, { f: k(93.8), v: "hablar" }, { f: k(95.0), v: "agarrarAlto" }, { f: k(96.4), v: "hablar" }, { f: k(97.6), v: "señalar" }], caras: [{ f: 0, v: "neutral" }, { f: k(95.0), v: "determinado" }, { f: k(98.4), v: "feliz" }], habla: [[k(92.3), k(99.5)]] })} />}
           hud={<><H l={[gen(4)]} />
-            <Txt t="ENDANGERED-SPECIES SCIENTISTS" a={k(92.8)} b={k(96.9)} top={880} tam={48} chip /></>} />
+            <Txt t="ENDANGERED-SPECIES SCIENTISTS" a={k(92.8)} b={k(96.9)} top={960} tam={48} chip /></>} />
       );
     };
     return <Pl />;
@@ -697,10 +697,10 @@ const p23: PlanB = {
       const bx = interpolate(f, [0, k(132.9)], [3200, 2620], cl);
       return (
         <Escena Set={IslaLejana} pal={PAL} setProps={{ tipo: "pitcairn" }} seed={624} mano={2}
-          claves={[mira(0, 2350, 640, 1.05), mira(k(132.9), 2250, 660, 1.2, { curva: "inout" })]}
+          claves={[mira(0, 3000, 600, 1.45), mira(k(132.9), 2560, 610, 1.55, { curva: "inout" })]}
           medio={<g><Velero x={bx} y={P + 20 + Math.sin(f / 14) * 6} s={1.15} />
-            {[0, 1, 2].map((i) => <Figu key={i} x={bx - 90 + i * 70} y={P - 40 + Math.sin(f / 14) * 6} s={0.55} color={["#efe6d2", "#2f5a7a", "#efe6d2"][i]} />)}</g>}
-          hud={<><H l={[anio([{ f: 0, v: 1700 }, { f: k(129.3), v: 1790, d: 30 }], k(129.1))]} /><Txt t="PITCAIRN ISLAND · PACIFIC" a={k(127.3)} b={k(129.6)} top={880} tam={48} chip /><Txt t="HMS BOUNTY · MUTINEERS" a={k(131.0)} b={k(132.9) + 4} top={880} tam={48} chip color={AMBAR} /></>} />
+            {[0, 1, 2].map((i) => <Figu key={i} x={bx - 110 + i * 90} y={P - 40 + Math.sin(f / 14) * 6} s={0.8} color={["#efe6d2", "#2f5a7a", "#efe6d2"][i]} />)}</g>}
+          hud={<><H l={[anio([{ f: 0, v: 1700 }, { f: k(129.3), v: 1790, d: 30 }], k(129.1))]} /><Txt t="PITCAIRN ISLAND · PACIFIC" a={k(127.3)} b={k(129.6)} top={140} tam={48} chip /><Txt t="HMS BOUNTY · MUTINEERS" a={k(131.0)} b={k(132.9) + 4} top={140} tam={48} chip color={AMBAR} /></>} />
       );
     };
     return <Pl />;
@@ -838,18 +838,18 @@ const p27b: PlanB = {
       const nuevo = interpolate(f, [k(163.6), k(164.0)], [0, 1], cl);
       return (
         <Escena Set={IslaLejana} pal={PAL} setProps={{ tipo: "tristan", casitas: 0.6, barco: interpolate(f, [0, k(160.6)], [0.4, 1], cl) }} seed={6282} mano={2}
-          claves={[mira(0, 2150, 640, 1.15), mira(k(160.6), 2000, 650, 1.25, { curva: "inout" }), mira(k(164.8), 1820, 650, 1.35, { curva: "inout" })]}
+          claves={f < k(160.6) ? [mira(0, 2150, 620, 1.55), mira(k(160.6), 2100, 620, 1.62, { curva: "inout" })] : [mira(0, 1900, 620, 1.65), mira(k(164.8), 1860, 620, 1.72, { curva: "inout" })]}
           medio={<>
             <A {...act(ISLENO(44), 1600, { dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: "parado" }, { f: k(162.4), v: "saludar" }], caras: [{ f: 0, v: "duda" }, { f: k(162.4), v: "feliz" }], seed: 90, luz: BORDE_FRIO })} />
             <A {...act({ ...CIENTIFICO, accesorios: [{ t: "gorroLana", color: "#3a6ab0" }] }, 2300, { ruta: [{ f: 0, x: 2380, y: P }, { f: k(160.6), x: 2380, y: P }, { f: k(162.4), x: 1840, y: P }], dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: "parado" }, { f: k(162.4), v: "saludar" }], caras: [{ f: 0, v: "feliz" }], luz: BORDE_FRIO })} />
-            <g transform={`translate(1720,${P - 470}) scale(1.6)`}>
-              <Cabecita x={-120} y={0} c={COLS[1]} u={1} /><Cabecita x={0} y={0} c={COLS[2]} u={1} /><Cabecita x={120} y={0} c={AMBAR} u={nuevo} />
-              {nuevo > 0 && <text x={120} y={-50} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={700} fontSize={36} fill={AMBAR} stroke="#141018" strokeWidth={5} paintOrder="stroke" opacity={nuevo}>NEW</text>}
-            </g>
           </>}
           hud={<><H />
+            {f >= k(160.6) && <svg width={1920} height={1080} style={{ position: "absolute" }}><g transform="translate(1500,330) scale(1.4)">
+              <Cabecita x={-120} y={0} c={COLS[1]} u={1} /><Cabecita x={0} y={0} c={COLS[2]} u={1} /><Cabecita x={120} y={0} c={AMBAR} u={nuevo} />
+              {nuevo > 0 && <text x={120} y={-50} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={700} fontSize={36} fill={AMBAR} stroke="#141018" strokeWidth={5} paintOrder="stroke" opacity={nuevo}>NEW</text>}
+            </g></svg>}
             <Mano t="SHIPS." x={960} y={250} desde={k(159.5)} hasta={k(160.6)} tam={130} />
-            <Txt t="VISITORS · NEW GENES" a={k(160.6)} b={k(164.8) + 4} top={900} tam={54} mano chip color={AMBAR} /></>} />
+            <Txt t="VISITORS · NEW GENES" a={k(160.6)} b={k(164.8) + 4} top={140} tam={54} mano chip color={AMBAR} /></>} />
       );
     };
     return <Pl />;
@@ -888,7 +888,7 @@ const p29: PlanB = {
       const doc = f > k(169.9);
       return (
         <Escena Set={IglesiaDentro} pal={PAL} setProps={{ plan: interpolate(f, [k(168.0), k(169.4)], [0, 1], cl) }} seed={630} mano={2}
-          claves={doc ? [mira(0, IG_PUNTOS.puerta + 300, 560, 1.4), mira(k(174.0), IG_PUNTOS.puerta + 400, 560, 1.6, { curva: "inout" })] : [mira(0, 1500, 560, 0.75), mira(k(169.9), 2000, 560, 0.85, { curva: "inout" })]}
+          claves={doc ? [mira(0, IG_PUNTOS.puerta + 300, 560, 1.4), mira(k(174.0), IG_PUNTOS.puerta + 400, 560, 1.6, { curva: "inout" })] : [mira(0, IG_PUNTOS.pizarra - 80, 560, 1.25), mira(k(169.9), IG_PUNTOS.pizarra - 40, 560, 1.32, { curva: "inout" })]}
           medio={<>
             {fieles(k)}
             <A {...act(ABBY_ADENTRO, IG_PUNTOS.pizarra - 260, { dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: "parado" }, { f: k(168.0), v: { hD: 120, cD: 40, tronco: 8 } }, { f: k(169.4), v: "manosCintura" }], caras: [{ f: 0, v: "determinado" }] })} />
@@ -908,9 +908,9 @@ const p30: PlanB = {
   sfx: [[174.1, "static", -20, { dur: 3 }], [175.4, "breath", -8], [176.0, "cloth", -8]],
   el: (k) => (
     <Escena Set={RadioGus} pal={PAL} setProps={{ luzRadio: 1, aguja: 0.62, lampara: 0.8 }} seed={631} mano={2}
-      claves={[mira(0, RG_PUNTOS.silla + 140, 700, 1.45), mira(k(177.4), RG_PUNTOS.silla + 120, 700, 1.55, { curva: "inout" })]}
+      claves={[mira(0, RG_PUNTOS.silla + 30, 610, 2.3), mira(k(177.4), RG_PUNTOS.silla + 20, 600, 2.4, { curva: "inout" })]}
       medio={<A {...act(GUS_RADIO, RG_PUNTOS.silla, { asiento: [{ f: 0, v: 60 }], dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { tronco: 4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 30, cD: 50, hI: 25, cI: 50 } }, { f: k(175.8), v: "brazosCruzados" }], caras: [{ f: 0, v: "neutral" }, { f: k(174.6), v: "sorpresa" }, { f: k(175.3), v: "enojo" }], miradas: [{ f: 0, v: { x: 1, y: 0 } }, { f: k(175.0), v: { x: 0, y: -1 } }, { f: k(175.8), v: { x: -1, y: 0 } }], luz: { lado: 1, color: "#7dffb0", fuerza: 0.9 } })} />}
-      hud={<><H /><Txt t="NO RELATION." a={k(174.4)} b={k(177.4) + 4} top={200} tam={66} mano chip color={AMBAR} /><Txt t="(VERY ANNOYING)" a={k(175.9)} b={k(177.4) + 4} top={300} tam={44} chip color="#ff8a6a" /></>} />
+      hud={<><H /><Txt t="NO RELATION." a={k(174.4)} b={k(177.4) + 4} top={270} left={120} tam={66} mano chip color={AMBAR} /><Txt t="(VERY ANNOYING)" a={k(175.9)} b={k(177.4) + 4} top={370} left={120} tam={44} chip color="#ff8a6a" /></>} />
   ),
 };
 
@@ -1421,14 +1421,14 @@ const p46: PlanB = {
       const xc = RG_PUNTOS.silla + 330;
       return (
         <Escena Set={RadioGus} pal={PAL} setProps={{ luzRadio: 1, aguja: 0.62 }} seed={650} mano={2}
-          claves={[mira(0, RG_PUNTOS.silla + 200 + g, 680, 1.4), mira(k(266.6), RG_PUNTOS.silla + 200, 680, 1.48, { curva: "inout" })]}
+          claves={[mira(0, RG_PUNTOS.silla + 120 + g, 640, 1.9), mira(k(266.6), RG_PUNTOS.silla + 120, 640, 1.98, { curva: "inout" })]}
           medio={<>
             <g transform={`translate(${xc},500)`}><rect x={-90} y={-70} width={180} height={170} rx={8} fill="#f2ead8" stroke="#2a1c18" strokeWidth={5} /><rect x={-90} y={-70} width={180} height={44} fill="#2f4a6a" /><text y={-38} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={700} fontSize={26} fill="#fff">NOVEMBER</text>
               {Array.from({ length: 12 }).map((_, i) => <rect key={i} x={-74 + (i % 4) * 38} y={-12 + Math.floor(i / 4) * 34} width={28} height={24} fill="#d8ccb0" />)}
               {tacha > 0 && <><path d={`M-80,-60 L${-80 + 160 * tacha},${-60 + 150 * tacha}`} stroke="#c0352c" strokeWidth={12} strokeLinecap="round" /><path d={`M80,-60 L${80 - 160 * tacha},${-60 + 150 * tacha}`} stroke="#c0352c" strokeWidth={12} strokeLinecap="round" /></>}</g>
             <A {...act(GUS_RADIO, RG_PUNTOS.silla, { asiento: [{ f: 0, v: 60 }], dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: { tronco: 8, pI: 88, rI: 88, pD: 92, rD: 92, hD: 70, cD: 130, hI: 25, cI: 50 } }, { f: k(263.0), v: { tronco: 14, pI: 88, rI: 88, pD: 92, rD: 92, hD: 70, cD: 130, hI: 80, cI: 10 } }, { f: k(263.4), v: { tronco: 16, pI: 88, rI: 88, pD: 92, rD: 92, hD: 70, cD: 130, hI: 55, cI: 20 } }, { f: k(264.4), v: "señalar" }], caras: [{ f: 0, v: "determinado" }, { f: k(263.4), v: "enojo" }], habla: [[k(262.4), k(266.2)]], luz: { lado: 1, color: "#7dffb0", fuerza: 0.9 }, enManoD: <MicMano s={0.8} ptt /> })} />
           </>}
-          hud={<><H /><Txt t="NO SMALL BOATS IN NOVEMBER" a={k(263.4)} b={k(266.6) + 4} top={200} tam={58} mano chip color={AMBAR} /></>} />
+          hud={<><H /><Txt t="NO SMALL BOATS IN NOVEMBER" a={k(263.4)} b={k(266.6) + 4} top={270} left={120} tam={58} mano chip color={AMBAR} /></>} />
       );
     };
     return <Pl />;
@@ -1830,7 +1830,7 @@ const p60: PlanB = {
       const X0 = L.mesa - 1200;
       return (
         <Escena Set={GranjaLiving} pal={PAL} setProps={{ hora: "noche", farol: 1 }} seed={664} mano={2}
-          claves={[mira(0, L.mesa - 420, 600, 0.95), mira(k(354.0), L.mesa - 420, 610, 0.95), mira(k(355.0), L.mesa - 420, 960, 0.95, { curva: "inout" })]}
+          claves={f < k(354.6) ? [mira(0, L.mesa - 420, 620, 1.15), mira(k(354.6), L.mesa - 410, 620, 1.2)] : [mira(0, L.mesa - 420, 960, 1.05), mira(k(355.6), L.mesa - 420, 960, 1.08)]}
           medio={<>
             <rect x={X0 - 400} y={P + 6} width={2400} height={900} fill="#2a1e16" />
             <g transform={`translate(${X0 + 300},${P + 60})`} opacity={interpolate(f, [k(354.2), k(354.8)], [0, 1], cl)}>
@@ -1848,7 +1848,7 @@ const p60: PlanB = {
             {DIEZ.map((_, i) => { const s = interpolate(f, [k(352.0) + i * 2.4, k(352.0) + i * 2.4 + 5], [0, 1], cl); return s > 0 && <g key={i} transform={`translate(${L.mesa - 760 + i * 120},${P - 480}) scale(${s})`}><circle r={30} fill={AMBAR} stroke="#141018" strokeWidth={5} /><text y={13} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={700} fontSize={36} fill="#141018">{i + 1}</text></g>; })}
             {f > k(353.6) && <g transform={`translate(${L.mesa - 960},${P - 200}) scale(${interpolate(f, [k(353.6), k(353.8)], [0, 1], cl)})`}><circle r={30} fill="#7ad08a" stroke="#141018" strokeWidth={5} /><text y={13} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={700} fontSize={36} fill="#141018">1</text></g>}
           </>}
-          hud={<><H />{["TEN PEOPLE", "ONE DOG", "ONE ROOT CELLAR"].map((t, i) => <Txt key={t} t={t} a={k([351.95, 353.0, 354.1][i])} b={k(355.6) + 4} top={140 + i * 80} left={1300} tam={54} mano chip color={AMBAR} />)}</>} />
+          hud={<><H />{["TEN PEOPLE", "ONE DOG", "ONE ROOT CELLAR"].map((t, i) => <Txt key={t} t={t} a={k([351.95, 353.0, 354.1][i])} b={k(355.6) + 4} top={270 + i * 80} left={120} tam={50} mano chip color={AMBAR} />)}</>} />
       );
     };
     return <Pl />;
@@ -1969,7 +1969,7 @@ const p64: PlanB = {
             <FilaCamino n={60} t0={0.2} t1={0.99} avanza={interpolate(f, [0, k(376.0)], [0.06, 0.1], cl)} faroles />
             <A {...act(ABBY, 1720, { ruta: [{ f: 0, x: 1720, y: 1010 }], escala: 1.45, dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: "parado" }, { f: k(371.6), v: { hD: 150, cD: 10, hI: 30, cI: 60 } }, { f: k(373.8), v: "señalar" }, { f: k(375.4), v: "celebrar" }], caras: [{ f: 0, v: "determinado" }, { f: k(373.8), v: "picaro" }, { f: k(375.4), v: "feliz" }], miradas: [{ f: 0, v: { x: -0.2, y: 0 } }, { f: k(373.8), v: { x: 0.6, y: 0.1 } }], luz: { lado: -1, color: AMBAR, fuerza: 1 }, enManoI: farol(f, 1) })} />
           </>}
-          hud={<><HudC lineas={[POP(110, { fmt: (n) => `${Math.round(n)}?` }), isla(100)]} /><Txt t={"IF YOU WERE ON THAT ISLAND…\nWOULD YOU CROSS THE ICE?"} a={k(371.2)} b={k(373.8)} top={140} tam={56} chip /><Txt t="TELL ME IN THE COMMENTS" a={k(373.8)} b={k(375.3)} top={140} tam={56} mano chip color={AMBAR} /><BotonSub desde={k(375.2)} top={860} /></>} />
+          hud={<><HudC lineas={[POP(110, { fmt: (n) => `${Math.round(n)}?` }), isla(100)]} /><Txt t={"IF YOU WERE ON THAT ISLAND…\nWOULD YOU CROSS THE ICE?"} a={k(371.2)} b={k(373.8)} top={250} tam={52} chip /><Txt t="TELL ME IN THE COMMENTS" a={k(373.8)} b={k(375.3)} top={250} tam={56} mano chip color={AMBAR} /><BotonSub desde={k(375.2)} top={860} /></>} />
       );
     };
     return <Pl />;
