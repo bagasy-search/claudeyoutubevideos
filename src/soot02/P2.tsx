@@ -303,7 +303,6 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       <Salpica t={t} t0={338.6} x={1100} y={700} />
       <Chip t={t} t0={336.3} text="FAR FROM A BEACH?" color={C.violeta} x={960} y={150} centro size={62} />
       <Chip t={t} t0={339.7} text="REMEMBER THAT." color={C.rojo} x={960} y={270} centro size={70} />
-      <Apion t={t} t0={336.3} x={1640} y={1050} h={420} borda={1020} acts={[[336.5, "piensa"], [338.6, "miedo"]]} />
     </Escena>
   </>
 );

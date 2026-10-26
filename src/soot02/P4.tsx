@@ -197,7 +197,6 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={515.1} t1={525.3} entra="fundido" sale="paneo" fondo="none" golpes={[515.1, 516.4, 519.3, 522.2]}>
       <Galera x={900} y={interpolate(t, [520, 524.2], [640, 720], cl)} s={0.7} t={t} boga={0} vela={false} marines={false} rompe={1} balanceo={0.4} color="#3a2a3a" franja="#1a1a1a" agua="#1f5c9c" aguaY={interpolate(t, [520, 524.2], [70, -20], cl)} />
       <Piedra t={t} t0={516.4} x={1600} />
-      <Apion t={t} t0={515.2} x={260} y={1050} h={420} borda={1020} flip={false} acts={[[515.3, "piensa"], [519.3, "asombro"], [522.2, "senala"]]} />
       <Chip t={t} t0={515.1} text="THE STRANGEST PART?" color={C.violeta} x={960} y={140} centro size={62} />
       <Chip t={t} t0={516.4} t1={518.6} text="DIDN'T SINK LIKE STONES" color={C.rojo} x={1500} y={250} centro size={52} />
       <Chip t={t} t0={519.3} text="WOOD + NO BALLAST" color={C.oro} tinta={C.noche} x={120} y={250} size={56} />
@@ -214,7 +213,6 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
           <Galera x={560 + dx} y={700} s={0.5} t={t} boga={0} vela={false} marines={false} rompe={1} color="#3a2a3a" franja="#1a1a1a" aguaY={-20} balanceo={0.3} />
         </>
       ); })()}
-      <Apion t={t} t0={525.4} x={1700} y={1050} h={420} borda={1020} acts={[[525.6, "habla"], [528.3, "festeja"], [529.6, "triste"]]} />
       <Chip t={t} t0={526.35} text="TOWED AWAY" color={C.violeta} x={120} y={140} size={60} />
       <Chip t={t} t0={528.27} text="THE SHIP SURVIVED ✓" color={C.lima} tinta={C.noche} x={760} y={240} centro size={60} />
       <Chip t={t} t0={529.55} text="THE BOTTOM ROW... ✕" color={C.rojo} x={760} y={350} centro size={60} />

@@ -130,7 +130,6 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       })()}
       <Relampago t={t} ts={[689.1, 692.1]} x={700} />
       <Flecha t={t} t0={690.95} x1={1100} y1={300} x2={1300} y2={560} color={C.oro} grosor={16} />
-      <Apion t={t} t0={688.6} x={250} y={1050} h={420} borda={1020} flip={false} acts={[[688.7, "senala"], [690.95, "miedo"]]} />
       <Chip t={t} t0={688.6} text="ABOVE YOU: THE CROW" color={C.violeta} x={960} y={130} centro size={56} />
       <Chip t={t} t0={690.95} text="PULLING THE SHIP OVER" color={C.rojo} x={1400} y={250} centro size={48} />
       <Chip t={t} t0={692.03} text="+ A LITTLE MORE" color={C.oro} tinta={C.noche} x={1400} y={340} centro size={42} />
@@ -169,7 +168,6 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
         <Galera x={960} y={680} s={0.8} t={t} boga={0} vela={false} corvus={0} balanceo={1} ola={1} agua={null} marines={false} />
       </div>
       <AbsoluteFill style={{ top: 780 }}><svg width={1920} height={300}><path d={`M 0 40 Q 240 ${10 + Math.sin(t * 3) * 20} 480 40 T 960 40 T 1440 40 T 1920 40 L 1920 300 L 0 300 Z`} fill="#1b1f4c" /></svg></AbsoluteFill>
-      <Apion t={t} t0={707.9} x={260} y={1050} h={420} borda={1020} flip={false} acts={[[708.0, "piensa"], [709.5, "miedo"]]} />
       <Chip t={t} t0={707.9} text="HISTORIANS SUSPECT" color={C.violeta} x={960} y={130} centro size={52} />
       <Chip t={t} t0={709.5} text="THE CROW MADE IT WORSE" color={C.rojo} x={960} y={230} centro size={58} />
       <Flecha t={t} t0={709.6} x1={1500} y1={320} x2={1180} y2={470} color={C.oro} grosor={16} />

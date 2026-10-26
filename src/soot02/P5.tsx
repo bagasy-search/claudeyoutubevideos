@@ -113,7 +113,6 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={580.4} t1={585.2} entra="paneo" sale="fundido" fondo="none" golpes={[580.7, 583.2]}>
       {(() => { const a = (t - 580.4) * 1.1; return <Galera x={960 + Math.cos(a) * 520} y={680 + Math.sin(a) * 30} s={0.36} t={t} boga={1.2} vela={false} flip={Math.sin(a) > 0} color="#3a2a3a" franja="#1a1a1a" />; })()}
       <Galera x={960} y={720} s={0.42} t={t} boga={0.4} vela={false} balanceo={3} />
-      <Apion t={t} t0={580.5} x={1700} y={1050} h={420} borda={1020} desde="nada" acts={[[580.5, "piensa"], [583.2, "senala"]]} />
       <Chip t={t} t0={580.73} text="FAR BETTER SAILORS" color="#7a5bd1" x={960} y={150} centro size={62} />
       <Chip t={t} t0={583.2} text="SO ROME CHANGED THE GAME" color={C.rojo} x={960} y={830} centro size={62} />
     </Escena>
@@ -144,7 +143,6 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={595.3} text="ENEMY CLOSE..." color="#7a5bd1" x={960} y={140} centro size={60} />
       <Grande t={t} t0={597.0} text="DROP IT!" x={500} y={300} size={140} color={C.rojo} />
       <Grande t={t} t0={599.0} text="SMASH!" x={1450} y={300} size={150} color={C.oro} />
-      <Apion t={t} t0={595.2} x={230} y={1050} h={420} borda={1020} flip={false} desde="nada" acts={[[595.2, "miedo"], [597.0, "senala"], [599.0, "festeja"], [600.6, "orgullo"]]} />
       <Chip t={t} t0={600.2} text="LOCKED TOGETHER" color={C.violeta} x={960} y={830} centro size={66} />
     </Escena>
 

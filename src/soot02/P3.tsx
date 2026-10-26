@@ -207,7 +207,6 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
           })()}
         </svg>
       )}
-      <Apion t={t} t0={388.5} t1={392.1} x={1680} y={1050} h={420} borda={1020} acts={[[388.7, "asombro"], [390.4, "miedo"]]} />
       {t < 392.1 && <Grande t={t} t0={388.9} text="'CATCHING A CRAB'" y={170} size={120} color={C.crema} />}
       <Chip t={t} t0={392.2} text="NOT EVEN 1 OAR PER MAN" color={C.violeta} x={960} y={140} centro size={58} />
       <Chip t={t} t0={394.5} text="2 MEN · 1 OAR" color={C.oro} tinta={C.noche} x={960} y={250} centro size={70} />
