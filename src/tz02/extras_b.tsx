@@ -116,27 +116,28 @@ export const CicloPorton: React.FC<{ t: { cada: number; sale: number; una: numbe
       <rect y={Y + 60} width={1920} height={420} fill="#e2b47e" />
       <path d={`M${GATE + 80},${Y + 60} L1920,${Y + 10} L1920,${Y + 120} L${GATE + 80},${Y + 100} Z`} fill="#c8925a" />
       {[1150, 1380, 1650].map((xx, k) => <g key={k} transform={`translate(${xx},${Y + 10 - k * 4})`}><rect x={-6} y={-60} width={12} height={60} fill="#6a4020" /><circle cy={-80} r={40 - k * 6} fill="#8aa04a" /></g>)}
-      <g transform={`translate(${PAL_X},${Y - 40})`}><MiniPalacio s={1.7} /></g>
-      <g transform={`translate(${GATE},${Y + 60})`}>
+      <g transform={`translate(${PAL_X},${Y - 20})`}><MiniPalacio s={2.3} /></g>
+      <g transform={`translate(${GATE},${Y + 60}) scale(1.5)`}>
         <rect x={-120} y={-300} width={240} height={300} fill="#d9a86e" stroke="#8a5a2a" strokeWidth={5} />
         <path d="M-70,0 L-70,-170 Q0,-250 70,-170 L70,0 Z" fill="#fff2c8" />
         {[-1, 1].map((sd) => <path key={sd} d={`M${sd * 70},0 L${sd * 70},-170 Q${sd * 35},-215 0,-220 L0,0 Z`} fill="#8a5a2a" stroke="#5a3418" strokeWidth={4} transform={`translate(${sd * 70},0) scale(${1 - lerp(f, t.sale - 10, t.sale, 0, 0.85)},1) translate(${-sd * 70},0)`} />)}
       </g>
       <path d={`M${PAL_X + 60},${Y + 150} C${GATE - 100},${Y + 230} ${GATE + 200},${Y + 230} ${ROAD},${Y + 150}`} stroke="#5a3418" strokeWidth={8} fill="none" strokeDasharray="22 18" strokeDashoffset={0} opacity={ida > 0 ? 1 : 0} pathLength={1000} style={{ strokeDasharray: `${ida * 1000} 1000` }} />
       {vuelta && <path d={`M${ROAD},${Y + 180} C${GATE + 200},${Y + 280} ${GATE - 100},${Y + 280} ${PAL_X + 60},${Y + 180}`} stroke={ACENTO} strokeWidth={8} fill="none" pathLength={1000} style={{ strokeDasharray: `${vue * 1000} 1000` }} />}
-      <g transform={`translate(${x},${Y + 60 + Math.abs(paso) * -0.4})`}>
+      {/* v4: el caminante al DOBLE (≈430 px de alto): se lee quién sale y adónde mira */}
+      <g transform={`translate(${x},${Y + 60 + Math.abs(paso) * -0.4}) scale(1.8)`}>
         <ellipse cy={4} rx={40} ry={10} fill="#000" opacity={0.18} />
         <path d={`M-12,-70 L${-14 + paso},0 M12,-70 L${14 - paso},0`} stroke="#3a2a22" strokeWidth={14} strokeLinecap="round" />
         <rect x={-30} y={-170} width={60} height={110} rx={26} fill="#8e8a82" />
         <g transform={`translate(0,-205) rotate(${mira * 14})`}><circle r={36} fill="#f2bf8f" stroke="#3a2618" strokeWidth={4} /><circle cx={vuelta ? -12 : 12} cy={-4} r={4.5} fill="#2a1a10" /><circle cx={vuelta ? 6 : 26} cy={-4} r={4.5} fill="#2a1a10" /></g>
       </g>
-      {f >= t.mira && f < t.vuelve && <g opacity={lerp(f, t.mira, t.mira + 8, 0, 1)}>{[0, 1, 2].map((k) => <path key={k} d={`M${ROAD + 50},${Y - 140} q${60 + k * 30},${-20 - k * 10} ${130 + k * 60},${10 - k * 20}`} stroke="#5a3418" strokeWidth={4} fill="none" strokeDasharray="8 10" />)}</g>}
+      {f >= t.mira && f < t.vuelve && <g opacity={lerp(f, t.mira, t.mira + 8, 0, 1)}>{[0, 1, 2].map((k) => <path key={k} d={`M${ROAD + 70},${Y - 300} q${60 + k * 30},${-20 - k * 10} ${130 + k * 60},${10 - k * 20}`} stroke="#5a3418" strokeWidth={4} fill="none" strokeDasharray="8 10" />)}</g>}
       <g transform="translate(960,120)">
         {Array.from({ length: 7 }).map((_, k) => <g key={k} transform={`translate(${(k - 3) * 92},0)`}><rect x={-38} y={-38} width={76} height={76} rx={14} fill={k < dia ? ACENTO : "#fff6e6"} stroke="#8a5a2a" strokeWidth={4} />{k < dia && <path d="M-16,0 L-4,14 L18,-14" stroke="#fff" strokeWidth={8} fill="none" strokeLinecap="round" strokeLinejoin="round" />}</g>)}
       </g>
       {f >= t.cada && <text x={960} y={235} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={52} fill="#5a3418" letterSpacing={6}>EVERY DAY</text>}
-      {f >= t.una && <g transform={`translate(${GATE},${Y - 330}) scale(${Math.min(1, (f - t.una) / 6)})`}><circle r={58} fill={ACENTO} /><text y={20} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={58} fill="#fff">1×</text></g>}
-      {f >= t.mira && <text x={ROAD} y={Y - 300} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={46} fill="#5a3418">LOOK AT THE ROAD</text>}
+      {f >= t.una && <g transform={`translate(${GATE - 230},${Y - 330}) scale(${Math.min(1, (f - t.una) / 6)})`}><circle r={58} fill={ACENTO} /><text y={20} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={58} fill="#fff">1×</text></g>}
+      {f >= t.mira && <text x={ROAD} y={Y - 440} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={46} fill="#5a3418">LOOK AT THE ROAD</text>}
       {vuelta && <text x={(PAL_X + ROAD) / 2 + 80} y={Y + 360} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={46} fill={ACENTO} opacity={vue > 0.05 ? 1 : 0}>THEN COME BACK · IF YOU WANT</text>}
     </Lienzo>
   );
@@ -189,3 +190,67 @@ export const SombraGira: React.FC<{ x: number; piso: number; ang: number; largo?
     <path d={`M-38,0 L-30,${-largo} Q0,${-largo - 50} 30,${-largo} L38,0 Z`} fill="#14161a" />
   </g>
 );
+
+// ---------- Q83 (v4) · plano final: AMANECER sobre Broadway. El cielo pasa de azul noche a naranja, el sol sube detrás de la vía,
+// las ventanas se apagan; Leo (silueta a contraluz, capucha) se aleja por la vereda hacia el sol con las manos en los bolsillos;
+// en la puerta iluminada del lavadero Tenzo lo saluda. p = 0..1 avance del amanecer; f = cuadro local.
+export const AmanecerCalle: React.FC<{ f: number; dur: number }> = ({ f, dur }) => {
+  const p = suave(Math.min(1, f / (dur * 0.8)));
+  const mez = (a: number[], b: number[], t: number) => `rgb(${a.map((v, i) => Math.round(v + (b[i] - v) * t)).join(",")})`;
+  const cieloA = mez([22, 30, 58], [96, 126, 190], p), cieloB = mez([52, 62, 96], [255, 176, 110], p);
+  const solY = 900 - p * 520;
+  const empuje = 1 + f / dur * 0.06;
+  // Leo camina hacia el sol: de 760 a 1330, y se achica (se aleja)
+  const u = Math.min(1, f / dur);
+  const lx = 760 + u * 570, ls = 1.25 - u * 0.45;
+  const paso = Math.sin(f * 0.5);
+  const saludo = Math.sin(f * 0.45);
+  const edif = [[0, 520, 260], [240, 470, 200], [420, 560, 240], [640, 430, 180], [1180, 500, 230], [1390, 450, 200], [1600, 540, 320]];
+  return (
+    <Lienzo>
+      <defs>
+        <linearGradient id="amC" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor={cieloA} /><stop offset="1" stopColor={cieloB} /></linearGradient>
+        <radialGradient id="amSol"><stop offset="0" stopColor="#fff2c8" /><stop offset="0.35" stopColor="#ffd27a" stopOpacity={0.9} /><stop offset="1" stopColor="#ff9a50" stopOpacity={0} /></radialGradient>
+        <radialGradient id="amPuerta"><stop offset="0" stopColor="#ffd38a" stopOpacity={0.7} /><stop offset="1" stopColor="#ffd38a" stopOpacity={0} /></radialGradient>
+      </defs>
+      <g transform={`translate(960,700) scale(${empuje}) translate(-960,-700)`}>
+        <rect x={-100} y={-100} width={2120} height={1280} fill="url(#amC)" />
+        <circle cx={1180} cy={solY} r={360} fill="url(#amSol)" opacity={0.4 + 0.6 * p} />
+        <circle cx={1180} cy={solY} r={92} fill="#ffe2a0" opacity={0.3 + 0.7 * p} />
+        {/* edificios (silueta) con ventanas que se apagan con el día */}
+        {edif.map(([x, h, w], k) => (
+          <g key={k}>
+            <rect x={x} y={860 - h} width={w} height={h} fill="#1a1d26" />
+            {Array.from({ length: 6 }).map((_, j) => <rect key={j} x={x + 26 + (j % 3) * (w / 3.4)} y={860 - h + 50 + Math.floor(j / 3) * 90} width={34} height={46} fill="#ffd38a" opacity={(1 - p) * (((k + j) % 3) ? 0.85 : 0.2)} />)}
+          </g>
+        ))}
+        {/* la vía elevada recortada contra el cielo */}
+        <rect x={-100} y={500} width={2120} height={46} fill="#14161c" />
+        <rect x={-100} y={546} width={2120} height={10} fill="#22262e" />
+        {[60, 420, 780, 1140, 1500, 1860].map((x) => <rect key={x} x={x - 14} y={546} width={28} height={314} fill="#14161c" />)}
+        {/* vereda */}
+        <rect x={-100} y={860} width={2120} height={320} fill={mez([34, 38, 48], [70, 62, 66], p)} />
+        <rect x={-100} y={860} width={2120} height={8} fill={mez([90, 100, 120], [255, 190, 130], p)} opacity={0.7} />
+        {/* el lavadero a la izquierda: puerta iluminada y Tenzo que saluda */}
+        <rect x={-100} y={560} width={420} height={300} fill="#22252e" />
+        <rect x={150} y={650} width={120} height={210} fill="#ffcf86" />
+        <circle cx={210} cy={760} r={260} fill="url(#amPuerta)" />
+        <g transform="translate(210,860)">
+          <rect x={-26} y={-150} width={52} height={110} rx={22} fill="#15171c" />
+          <path d="M-10,-44 L-12,0 M10,-44 L12,0" stroke="#15171c" strokeWidth={13} strokeLinecap="round" />
+          <circle cy={-178} r={30} fill="#15171c" />
+          <path d={`M18,-138 L${46 + saludo * 10},${-196 - Math.abs(saludo) * 6}`} stroke="#15171c" strokeWidth={12} strokeLinecap="round" />
+        </g>
+        {/* Leo: silueta con capucha, manos en los bolsillos, se aleja hacia el sol (con sombra larga hacia la cámara) */}
+        <g transform={`translate(${lx},880) scale(${ls})`}>
+          <ellipse cx={-40} cy={34} rx={110} ry={14} fill="#000" opacity={0.25} transform="skewX(-30)" />
+          <path d={`M-12,-80 L${-14 + paso * 16},0 M12,-80 L${14 - paso * 16},0`} stroke="#0f1116" strokeWidth={20} strokeLinecap="round" />
+          <path d="M-38,-210 Q-44,-150 -36,-78 L36,-78 Q44,-150 38,-210 Q0,-232 -38,-210 Z" fill="#0f1116" />
+          <path d="M-36,-200 Q-48,-150 -30,-120 M36,-200 Q48,-150 30,-120" stroke="#0f1116" strokeWidth={16} fill="none" strokeLinecap="round" />
+          <path d="M-40,-236 Q-44,-296 0,-302 Q44,-296 40,-236 Q30,-210 0,-208 Q-30,-210 -40,-236 Z" fill="#0f1116" />
+          <path d="M-44,-262 Q-50,-312 0,-318 Q50,-312 44,-262" stroke={mez([60, 70, 100], [255, 190, 120], p)} strokeWidth={4} fill="none" opacity={0.8} />
+        </g>
+      </g>
+    </Lienzo>
+  );
+};
