@@ -16,7 +16,7 @@ import { HudTenzo, MarcaTenzo } from "../hud";
 import { Tel, TelMesa } from "../utileria";
 import { Agora, AGORA_PISO, SombraRey } from "../sets/agora";
 import {
-  Burbuja, CabeceraChat, CajaEscribir, CTO, EnColectivo, EnCuarto, EnLavadero, Hora, LAV, Negro, PantallaTel, Pulgar, Recuerdo,
+  Burbuja, ConCara, CabeceraChat, CajaEscribir, CTO, EnColectivo, EnCuarto, EnLavadero, Hora, LAV, Negro, PantallaTel, Pulgar, Recuerdo,
   RIM_FRIO, RostroLuz, SENTADO, SENTADO_TEL, TarjetaFinal, TENZO_MESA,
 } from "./chicago";
 import { ALEJANDRO, REY_ESC, BarrilCon, BX, DiogenesViejo, MarchaSinFin, NeneFuente, PARABOLA07, REY } from "./parabola07";
@@ -329,12 +329,12 @@ const T = (): TramoS[] => [
       leo={{ poses: [{ f: 0, v: SENTADO_TEL }], caras: [{ f: 0, v: "triste" }], miradas: [{ f: 0, v: { x: 0.3, y: 0.7 } }], enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 0.6 } }}
       hud={<RelojDia min={23 * 60} x={1640} y={150} desde={loc(8.3, 10.1)} />} />
   ) },
-  { t0: 11.6, t1: 17.5, el: <ReelTyler dur={177} vistas={[38, 40]} caption={9999} toca={100} /> },
+  { t0: 11.6, t1: 17.5, el: <ConCara caras={[{ f: 0, v: "neutral" }, { f: 60, v: "sorpresa" }, { f: 125, v: "triste" }]}><ReelTyler dur={177} vistas={[38, 40]} caption={9999} toca={100} /></ConCara> },
   { t0: 17.5, t1: 21.5, el: (
     <EnCuarto cam={[mira(0, CTO.colchon + 25, PC - 275, 2.5), mira(120, CTO.colchon + 25, PC - 280, 2.75)]}
       leo={{ poses: [{ f: 0, v: SENTADO_TEL }, { f: 60, v: { ...SENTADO_TEL, cabeza: 22 } }], caras: [{ f: 0, v: "triste" }], miradas: [{ f: 0, v: { x: 0.3, y: 0.7 } }], enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 1 } }} />
   ) },
-  { t0: 21.5, t1: 26.0, el: <ReelTyler dur={135} vistas={[40, 41]} caption={loc(21.5, 22.9)} z={[1.3, 1.5]} /> },
+  { t0: 21.5, t1: 26.0, el: <ConCara esquina="der" caras={[{ f: 0, v: "duda" }, { f: 80, v: "triste" }]}><ReelTyler dur={135} vistas={[40, 41]} caption={loc(21.5, 22.9)} z={[1.3, 1.5]} /></ConCara> },
   { t0: 26.0, t1: 35.3, trans: { tipo: "fundido", d: 12 }, el: <AulaArte /> },
   { t0: 35.3, t1: 43.9, trans: { tipo: "fundido", d: 12 }, el: (
     <EnCuarto cam={[mira(0, PIN.x - 120, PC - 330, 1.6), mira(loc(35.3, 39.5), PIN.x - 60, PC - 360, 1.7, { curva: "inout" }), mira(258, PIN.x + 40, PIN.y + 30, 2.7, { curva: "inout" })]}
@@ -342,14 +342,14 @@ const T = (): TramoS[] => [
         caras: [{ f: 0, v: "triste" }, { f: 120, v: "neutral" }], miradas: [{ f: 0, v: { x: 0.8, y: -0.5 } }] }}
       medio={<DibujoPegado x={PIN.x} y={PIN.y} />} />
   ) },
-  { t0: 43.9, t1: 57.0, el: <GrillaPerfil /> },
+  { t0: 43.9, t1: 57.0, el: <ConCara caras={[{ f: 0, v: "neutral" }, { f: 120, v: "sorpresa" }, { f: 260, v: "triste" }]}><GrillaPerfil /></ConCara> },
   { t0: 57.0, t1: 60.8, el: (
-    <EnCuarto cam={[mira(0, CTO.colchon - 100, PC - 420, 1.0, { rot: -3 }), mira(114, CTO.colchon - 110, PC - 440, 1.08, { rot: -4 })]}
+    <EnCuarto cam={[mira(0, CTO.colchon - 90, PC - 380, 1.45, { rot: -3 }), mira(114, CTO.colchon - 100, PC - 390, 1.55, { rot: -4 })]}
       leo={{ poses: [{ f: 0, v: SENTADO_TEL }], caras: [{ f: 0, v: "triste" }], enManoD: <Tel /> }}
       mara={{ escala: ESC * 2.1, ruta: [{ f: 0, x: CTO.colchon - 240, y: PC - 20 }], caras: [{ f: 0, v: "risa" }], poses: [{ f: 0, v: { hD: 80, cD: 50, hI: 70, cI: 60, cabeza: 16 } }] }} />
   ) },
   { t0: 60.8, t1: 72.2, el: (
-    <EnCuarto cam={[mira(0, CTO.colchon - 80, PC - 380, 1.15), mira(342, CTO.colchon - 80, PC - 380, 1.25)]}
+    <EnCuarto cam={[mira(0, CTO.colchon - 80, PC - 370, 1.3), mira(342, CTO.colchon - 20, PC - 320, 1.9, { curva: "inout" })]}
       leo={{ poses: [{ f: 0, v: SENTADO_TEL }], caras: [{ f: 0, v: "triste" }], enManoD: <Tel /> }}
       mara={{ escala: ESC * 2.1, ruta: [{ f: 0, x: CTO.colchon - 240, y: PC - 20 }], caras: [{ f: 0, v: "feliz" }], habla: hab(60.8, [[67.9, 72.1]]), poses: [{ f: 0, v: { hD: 80, cD: 50, hI: 70, cI: 60, cabeza: 16 } }] }}
       hud={<>
@@ -403,7 +403,7 @@ const T = (): TramoS[] => [
       hud={<ManoLeo texto="he copied my homework." x={960} y={920} centro desde={loc(103.9, 106.0)} />} />
   ), [[103.9, CAM.tenzo(1.5)], [105.3, CAM.leo(3.4)], [108.7, CAM.dos(3.0)]]),
   { t0: 111.7, t1: 117.4, el: (
-    <EnLavadero tren={40} cam={[mira(0, LAV.leo + 100, P - 300, 1.3), mira(loc(111.7, 114.5), 2100, P - 330, 1.05, { curva: "inout" }), mira(171, LAV.expendedora, P - 320, 1.2, { curva: "inout" })]}
+    <EnLavadero tren={40} cam={[mira(0, LAV.leo + 80, P - 290, 1.75), mira(loc(111.7, 114.5), 2100, P - 330, 1.3, { curva: "inout" }), mira(171, LAV.expendedora, P - 320, 1.45, { curva: "inout" })]}
       leo={{ poses: [{ f: 0, v: { ...SENTADO, hD: 110, cD: 10 } }, { f: 40, v: { ...SENTADO, hD: 130, cD: 5 } }, { f: 100, v: { ...SENTADO, hD: 110, cD: 10 } }], caras: [{ f: 0, v: "triste" }], habla: hab(111.7, [[116.5, 117.3]]) }}
       medio={<CajaArroz x={MESA_X} y={P - 150} />}
       hud={<ManoLeo texto="this." x={960} y={900} centro desde={loc(111.7, 116.5)} tam={96} />} />
@@ -457,7 +457,7 @@ const T = (): TramoS[] => [
   { t0: 337.4, t1: 348.2, el: <PilaPantallas /> },
   { t0: 348.2, t1: 355.0, el: <NeneFuente /> },
   { t0: 355.0, t1: 364.6, el: (
-    <EnLavadero cam={[mira(0, LAV.leo - 60, P - 330, 1.6), mira(288, LAV.leo - 60, P - 320, 1.75)]}
+    <EnLavadero cam={[mira(0, LAV.leo - 60, P - 300, 2.0), mira(288, LAV.leo - 40, P - 290, 2.25)]}
       leo={{ caras: [{ f: 0, v: "triste" }], miradas: [{ f: 0, v: { x: 0.3, y: 0.8 } }] }}
       mara={(f) => ({ escala: ESC * interpolate(f, [0, 288], [1.7, 1.15], cl), habla: hab(355, [[359.5, 363.8]]), caras: [{ f: 0, v: "enojo" }] })}
       hud={<>
@@ -488,9 +488,9 @@ const T = (): TramoS[] => [
       leo={{ caras: [{ f: 0, v: "duda" }, { f: loc(378.3, 381.0), v: "feliz" }], habla: hab(378.3, [[381.0, 383.4]]), poses: [{ f: 0, v: { ...SENTADO, hD: 95, cD: 135, cabeza: 10 } }, { f: loc(378.3, 381.0), v: SENTADO }], miradas: [{ f: 0, v: { x: 0.3, y: -0.5 } }, { f: loc(378.3, 381), v: { x: 0.9, y: 0 } }] }}
       hud={<ManoLeo texto="yeah. he's winning." x={960} y={920} centro desde={loc(378.3, 381.0)} />} />
   ), [[378.3, CAM.leo(2.7, 2.7)], [381.0, CAM.dos(5.0, 1.85)]]),
-  { t0: 386.0, t1: 397.9, trans: { tipo: "fundido", d: 10 }, el: <Silenciar /> },
+  { t0: 386.0, t1: 397.9, trans: { tipo: "fundido", d: 10 }, el: <ConCara esquina="der" caras={[{ f: 0, v: "duda" }, { f: 200, v: "neutral" }, { f: 300, v: "feliz" }]}><Silenciar /></ConCara> },
   { t0: 397.9, t1: 405.8, el: (
-    <PantallaTel zoom0={1} zoom1={1.08} dur={237} luz={0.8} mano={<Pulgar toca={loc(397.9, 404.4)} x={392} y={830} piel="#e6c49a" />}>
+    <ConCara caras={[{ f: 0, v: "duda" }, { f: 120, v: "neutral" }, { f: 200, v: "feliz" }]}><PantallaTel zoom0={1} zoom1={1.08} dur={237} luz={0.8} mano={<Pulgar toca={loc(397.9, 404.4)} x={392} y={830} piel="#e6c49a" />}>
       <CabeceraChat nombre="Tyler" color="#3a5a8a" />
       <div style={{ position: "absolute", left: 0, right: 0, top: 96, textAlign: "center", fontFamily: F_HUD, fontSize: 20, color: "#8a8f98" }}>MAR 2019</div>
       <Burbuja texto="art class tomorrow?" y={130} desde={-100} />
@@ -499,7 +499,7 @@ const T = (): TramoS[] => [
       <div style={{ position: "absolute", left: 0, right: 0, top: 480, textAlign: "center", fontFamily: F_HUD, fontSize: 20, color: "#8a8f98" }}>TODAY 3:21 AM</div>
       <Burbuja texto="Congrats on the car man, hope you're good. For real." yo y={520} desde={loc(397.9, 404.6)} />
       <CajaEscribir texto="Congrats on the car man, hope you're good. For real." desde={loc(397.9, 400.3)} vel={2.2} />
-    </PantallaTel>
+    </PantallaTel></ConCara>
   ) },
   ...partir(405.8, 410.4, (cam) => (
     <EnLavadero tel={{ bocaAbajo: true, vibra: 0 }} cam={cam}
@@ -508,7 +508,7 @@ const T = (): TramoS[] => [
       hud={<DosHoras />} />
   ), [[405.8, [mira(0, LAV.mesa + 260, P - 170, 2.6), mira(60, LAV.mesa + 260, P - 170, 2.75)]], [407.8, CAM.dos(2.6)]]),
   { t0: 410.4, t1: 423.2, el: (
-    <PantallaTel zoom0={1} zoom1={1.1} dur={384} luz={0.8}>
+    <ConCara esquina="der" caras={[{ f: 0, v: "sorpresa" }, { f: 90, v: "duda" }, { f: 160, v: "triste" }, { f: 300, v: "feliz" }]}><PantallaTel zoom0={1} zoom1={1.1} dur={384} luz={0.8}>
       <CabeceraChat nombre="Tyler" color="#3a5a8a" />
       <Burbuja texto="Congrats on the car man, hope you're good. For real." yo y={70} desde={-100} />
       <Burbuja texto="Leo! wow, thanks bro." y={230} desde={loc(410.4, 410.4)} />
@@ -516,7 +516,7 @@ const T = (): TramoS[] => [
       <Burbuja texto="The car is leased. I work 80 hours a week. Haven't seen my dad in a year." y={410} desde={loc(410.4, 414.9)} />
       <Burbuja texto="Miss art class sometimes." y={610} desde={loc(410.4, 420.1)} />
       <Burbuja texto="You still draw?" y={700} desde={loc(410.4, 421.9)} />
-    </PantallaTel>
+    </PantallaTel></ConCara>
   ) },
   ...partir(423.2, 427.3, (cam) => (
     <EnLavadero cam={cam}
@@ -524,7 +524,7 @@ const T = (): TramoS[] => [
       tenzo={{ miradas: [{ f: 0, v: { x: -0.9, y: 0 } }], caras: [{ f: 0, v: "feliz" }] }} />
   ), [[423.2, [mira(0, LAV.leo + 40, P - 280, 2.3), mira(123, LAV.leo + 40, P - 280, 2.45)]], [425.3, CAM.dos(2.0, 1.9)]]),
   ...partir(427.3, 434.2, (cam) => (
-    <EnCuarto dia cam={cam}
+    <EnCuarto dia momento="amanecer" cam={cam}
       leo={{ poses: [{ f: 0, v: SENTADO }], caras: [{ f: 0, v: "feliz" }], miradas: [{ f: 0, v: { x: -0.5, y: -0.3 } }, { f: 100, v: { x: 0.6, y: -0.4 } }] }} medio={<><TelMesa x={CTO.cajon} y={PC - 2} bocaAbajo /><DosDibujos /></>} />
   ), [[427.3, [mira(0, CTO.colchon + 20, PC - 265, 1.9), mira(207, CTO.colchon - 40, PC - 290, 1.6, { curva: "inout" })]], [430.6, CAM.camaPP(3.6)]], { tipo: "fundido", d: 12 }),
   { t0: 434.2, t1: 442.2, trans: { tipo: "fundido", d: 12 }, el: (
@@ -536,31 +536,31 @@ const T = (): TramoS[] => [
 
   // ACTO 5 · gancho a tz08
   ...partir(453.1, 457.6, (cam) => (
-    <EnCuarto dia cam={cam}
+    <EnCuarto dia momento="lluvia" cam={cam}
       leo={{ poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }], caras: [{ f: 0, v: "neutral" }, { f: 80, v: "duda" }], miradas: [{ f: 0, v: { x: 0.6, y: 0.6 } }, { f: 60, v: { x: -0.5, y: -0.2 } }] }}
       medio={<><TelMesa x={CTO.colchon + 190} y={PC - CTO.COLCHON_ALTO + 4} bocaAbajo /><DosDibujos /></>}
       hud={<><Hora texto="SUN 3:40 PM" /><TextoMano texto="0 notifications" x={960} y={930} centro desde={50} color="#f4efe4" tam={60} rot={0} brillo={false} /></>} />
-  ), [[453.1, [mira(0, CTO.colchon + 80, PC - 270, 1.35), mira(135, CTO.colchon + 80, PC - 270, 1.45)]], [455.4, CAM.camaPP(2.2)]], { tipo: "fundido", d: 16 }),
+  ), [[453.1, [mira(0, CTO.colchon + 60, PC - 290, 2.0), mira(135, CTO.colchon + 60, PC - 290, 2.15)]], [455.4, CAM.camaPP(2.2)]], { tipo: "fundido", d: 16 }),
   { t0: 457.6, t1: 461.6, el: (
-    <EnCuarto dia cam={[mira(0, CTO.colchon + 150, PC - 330, 1.4), mira(120, CTO.colchon + 160, PC - 340, 1.5, { curva: "inout" })]} leo={{ poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }], caras: [{ f: 0, v: "neutral" }, { f: 70, v: "duda" }], miradas: [{ f: 0, v: { x: 0.7, y: -0.6 } }, { f: 50, v: { x: -0.9, y: -0.2 } }, { f: 95, v: { x: 0.2, y: 0.3 } }], giros: [{ f: 0, v: 0 }, { f: 45, v: -0.6 }, { f: 95, v: 0 }] }} medio={<DosDibujos />} />
+    <EnCuarto dia momento="lluvia" cam={[mira(0, CTO.colchon + 40, PC - 300, 2.2), mira(120, CTO.colchon + 30, PC - 300, 2.35, { curva: "inout" })]} leo={{ poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }], caras: [{ f: 0, v: "neutral" }, { f: 70, v: "duda" }], miradas: [{ f: 0, v: { x: 0.7, y: -0.6 } }, { f: 50, v: { x: -0.9, y: -0.2 } }, { f: 95, v: { x: 0.2, y: 0.3 } }], giros: [{ f: 0, v: 0 }, { f: 45, v: -0.6 }, { f: 95, v: 0 }] }} medio={<DosDibujos />} />
   ) },
   { t0: 461.6, t1: 467.0, el: (
-    <EnCuarto dia cam={[mira(0, CTO.colchon, PC - 330, 1.55, { rot: -3 }), mira(162, CTO.colchon + 20, PC - 320, 1.75, { rot: -2, curva: "inout" })]} leo={{ poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }], caras: [{ f: 0, v: "neutral" }, { f: 90, v: "feliz" }], miradas: [{ f: 0, v: { x: 0.6, y: -0.3 } }] }}
+    <EnCuarto dia momento="lluvia" cam={[mira(0, CTO.colchon - 20, PC - 300, 1.95, { rot: -3 }), mira(162, CTO.colchon, PC - 300, 2.2, { rot: -2, curva: "inout" })]} leo={{ poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }], caras: [{ f: 0, v: "neutral" }, { f: 90, v: "feliz" }], miradas: [{ f: 0, v: { x: 0.6, y: -0.3 } }] }}
       medio={<TelMesa x={CTO.colchon + 190} y={PC - CTO.COLCHON_ALTO + 4} bocaAbajo />} />
   ) },
   { t0: 467.0, t1: 471.0, el: (
-    <EnCuarto dia cam={[mira(0, CTO.colchon + 40, PC - 150, 3.0), mira(120, CTO.colchon + 40, PC - 155, 3.2, { curva: "inout" })]}
+    <EnCuarto dia momento="lluvia" cam={[mira(0, CTO.colchon + 40, PC - 150, 3.0), mira(120, CTO.colchon + 40, PC - 155, 3.2, { curva: "inout" })]}
       leo={{ poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }, { f: 60, v: { ...SENTADO, hD: 45, cD: 55, hI: 30, cI: 70, tronco: 6 } }], caras: [{ f: 0, v: "neutral" }], miradas: [{ f: 0, v: { x: 0.7, y: 0.7 } }] }}
       medio={<TelMesa x={CTO.colchon + 190} y={PC - CTO.COLCHON_ALTO + 4} bocaAbajo />} />
   ) },
   ...partir(471.0, 479.0, (cam) => (
-    <EnCuarto dia cam={cam}
+    <EnCuarto dia momento="lluvia" cam={cam}
       leo={{ caras: [{ f: 0, v: "neutral" }, { f: 120, v: "duda" }], poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }, { f: 110, v: { ...SENTADO, tronco: -10, cabeza: -8, hD: 30, cD: 70, hI: 30, cI: 70 } }], miradas: [{ f: 0, v: { x: 0.2, y: 0.6 } }, { f: 80, v: { x: -0.5, y: 0 } }, { f: 160, v: { x: 0.5, y: 0 } }] }}
       medio={<><TelMesa x={CTO.colchon + 190} y={PC - CTO.COLCHON_ALTO + 4} bocaAbajo /><DosDibujos /></>} />
-  ), [[471.0, [mira(0, CTO.colchon + 50, PC - 260, 1.5), mira(240, CTO.colchon + 40, PC - 265, 2.0, { curva: "inout" })]], [474.5, [mira(0, CTO.colchon + 60, PC - 250, 2.1), mira(135, CTO.colchon + 60, PC - 255, 2.25, { curva: "inout" })]]]),
+  ), [[471.0, [mira(0, CTO.colchon + 50, PC - 280, 1.9), mira(105, CTO.colchon + 40, PC - 285, 2.2, { curva: "inout" })]], [474.5, CAM.camaPP(4.5)]]),
   { t0: 479.0, t1: 488.2, el: <Picazon /> },
   { t0: 488.2, t1: 494.3, el: (
-    <EnCuarto dia cam={[mira(0, CTO.colchon + 150, PC - 330, 1.4), mira(120, CTO.colchon + 160, PC - 340, 1.5, { curva: "inout" })]} leo={{ poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }], caras: [{ f: 0, v: "neutral" }, { f: 70, v: "duda" }], miradas: [{ f: 0, v: { x: 0.7, y: -0.6 } }] }}
+    <EnCuarto dia momento="lluvia" cam={[mira(0, CTO.colchon + 230, PC - 320, 1.9, { rot: 2 }), mira(120, CTO.colchon + 210, PC - 320, 2.05, { rot: 1, curva: "inout" })]} leo={{ poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }], caras: [{ f: 0, v: "neutral" }, { f: 70, v: "duda" }], miradas: [{ f: 0, v: { x: 0.7, y: -0.6 } }] }}
       medio={<DosDibujos />}
       hud={<ManoLeo texto="who is your tyler?" x={960} y={920} centro desde={10} />} />
   ) },

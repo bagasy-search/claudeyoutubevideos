@@ -8,7 +8,9 @@ import { Actor, ActorProps } from "../../anikit/actor";
 import { Escena } from "../../anikit/escena";
 import { Halo } from "../../anikit/luz";
 import { F_GLOBO, F_HUD } from "../../anikit/pantalla";
-import { Look, Pose } from "../../anikit/personaje";
+import { ClaveT, Look, Pose } from "../../anikit/personaje";
+import { CaraEsquina } from "../../anikit/inserto";
+import { conMomento, Momento, palMomento } from "../../anikit/momento";
 import { ACENTO, ESC, FRIO, LEO, LEO_CAPUCHA, MARA, ORO, PAL, PAL_DIA, TENZO } from "../elenco";
 import { MAYA } from "../elenco_b";
 import { FarolMano, TelMesa, Tel } from "../utileria";
@@ -174,8 +176,21 @@ const DecoCuarto: React.FC = () => {
     </g>
   );
 };
-export type CtoP = { cam: Clave[]; leo?: ActF; mara?: ActF; dia?: boolean; luzPuerta?: number; lampara?: boolean; tren?: number; hud?: React.ReactNode; medio?: React.ReactNode; detras?: React.ReactNode; frente?: React.ReactNode; seed?: number; mano?: number };
-export const EnCuarto: React.FC<CtoP> = ({ cam, leo, mara, dia, luzPuerta = 0, lampara = false, tren = -1, hud, medio, detras, frente, seed = 3, mano = 2.5 }) => {
+export type CtoP = { momento?: Momento; cam: Clave[]; leo?: ActF; mara?: ActF; dia?: boolean; luzPuerta?: number; lampara?: boolean; tren?: number; hud?: React.ReactNode; medio?: React.ReactNode; detras?: React.ReactNode; frente?: React.ReactNode; seed?: number; mano?: number };
+// el cuarto a otra hora (el cierre no repite la misma luz); se arma UNA vez para que el set no se remonte cada cuadro
+const CUARTO_M: Record<Momento, React.FC<any>> = {
+  noche: conMomento(Cuarto, "noche", { interior: true, piso: CTO_PISO }),
+  lluvia: conMomento(Cuarto, "lluvia", { interior: true, piso: CTO_PISO }),
+  amanecer: conMomento(Cuarto, "amanecer", { interior: true, piso: CTO_PISO }),
+};
+// una pantalla (teléfono, feed, chat) con la CARA de quien la mira en un círculo de la esquina: nunca un teléfono solo
+export const ConCara: React.FC<{ caras: ClaveT<string>[]; look?: Look; esquina?: "izq" | "der"; desde?: number; habla?: [number, number][]; children: React.ReactNode }> = ({ caras, look = LEO, esquina = "izq", desde = 0, habla, children }) => (
+  <AbsoluteFill>
+    {children}
+    <AbsoluteFill><svg width={1920} height={1080} viewBox="0 0 1920 1080"><CaraEsquina look={look} pal={PAL} acento={ACENTO} esquina={esquina} desde={desde} caras={caras} habla={habla} id={`cc${esquina}${desde}`} /></svg></AbsoluteFill>
+  </AbsoluteFill>
+);
+export const EnCuarto: React.FC<CtoP> = ({ momento, cam, leo, mara, dia, luzPuerta = 0, lampara = false, tren = -1, hud, medio, detras, frente, seed = 3, mano = 2.5 }) => {
   const f = useF();
   const P = CTO_PISO;
   const a1 = mk({ look: LEO, escala: ESC, seed: 1, luz: RIM_FRIO, ruta: [{ f: 0, x: C.colchon, y: P }], dir: [{ f: 0, v: 1 }], asiento: [{ f: 0, v: COLCHON_ALTO }], poses: [{ f: 0, v: SENTADO }], caras: [{ f: 0, v: "neutral" }] }, res(leo, f));
@@ -183,7 +198,7 @@ export const EnCuarto: React.FC<CtoP> = ({ cam, leo, mara, dia, luzPuerta = 0, l
   const m = res(mara, f);
   const mm = m ? mk({ look: MARA, escala: ESC * 1.1, seed: 5, ruta: [{ f: 0, x: C.colchon - 200, y: P - 30 }], dir: [{ f: 0, v: 1 }], caras: [{ f: 0, v: "feliz" }], opacidad: () => 0.9 }, m) : null;
   return (
-    <Escena Set={Cuarto} pal={dia ? PAL_DIA : PAL} seed={seed} mano={mano} claves={cam} setProps={{ luzPuerta, lampara, tren }}
+    <Escena Set={momento ? CUARTO_M[momento] : Cuarto} pal={momento ? palMomento(dia ? PAL_DIA : PAL, momento) : dia ? PAL_DIA : PAL} seed={seed} mano={mano} claves={cam} setProps={{ luzPuerta, lampara, tren }}
       detras={<><DecoCuarto />{detras}</>}
       medio={<>{mm && <Actor {...mm} />}{a && <Actor {...a} />}{medio}</>} frente={frente} hud={hud} />
   );

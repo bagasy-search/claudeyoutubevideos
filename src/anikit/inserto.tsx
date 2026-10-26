@@ -148,7 +148,7 @@ export const Inserto: React.FC<InsertoProps> = (p) => {
 };
 
 // la cara del personaje en un círculo de la esquina, mirando al objeto; cada cambio de cara da un golpecito
-const CaraEsquina: React.FC<{ look: Look; pal: Paleta; acento: string; esquina: "izq" | "der"; desde: number; hasta?: number; caras?: ClaveT<string>[]; habla?: [number, number][]; id: string }> = ({ look, pal, acento, esquina, desde, hasta, caras, habla, id }) => {
+export const CaraEsquina: React.FC<{ look: Look; pal: Paleta; acento: string; esquina: "izq" | "der"; desde: number; hasta?: number; caras?: ClaveT<string>[]; habla?: [number, number][]; id: string }> = ({ look, pal, acento, esquina, desde, hasta, caras, habla, id }) => {
   const f = useF();
   const cx = esquina === "izq" ? 290 : 1630, cy = 300, r = 200;
   const dir = esquina === "izq" ? 1 : -1;
