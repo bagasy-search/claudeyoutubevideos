@@ -10,6 +10,7 @@ import { pistaX, PISTAS_PUNTOS as PP } from "../sets/pistas";
 import { COCINA_YCN_PUNTOS as CP } from "../sets/cocina";
 import { FREEZER_PUNTOS as FP } from "../sets/freezer";
 import { Anotador, Bola, Linterna, Maletin, Papas, Tiza } from "../utileria";
+import { Grafico } from "../../anikit/explica";
 import { A, Afuera, Cocina, Dice, EnFreezer, Final, HudDia, kDe, Lista, Maquinas, P, Recuerdo, Rotulo, Sacude, Sala, Velo } from "../base";
 
 const PU = PP.puerta, CH = PP.cadena, BA = PP.banco;
@@ -421,7 +422,9 @@ export const P65Cuento2: React.FC = () => {
       <Sala cl={[mira(0, -720, 640, 1.8), mira(k(376.2), -620, 640, 2.0, { curva: "inout" })]} snack sp={{ luz: "noche", tv: "apagada" }}
         detras={[{ l: RAFI, ruta: [{ f: 0, x: -800 }, { f: k(376), x: -560 }], p: "celular", c: "determinado", d: 1, mD: <Anotador /> }]}
         gente={[{ l: DOT, x: -380, p: "brazosCruzados", c: "picaro", d: -1, habla: [[k(374.3), k(376)]] }]} luzAct={RIM.linterna} />
-      <Lista x={1180} y={180} tam={58} lineas={[{ t: "41  CHIPS" }, { t: "96  HOT DOGS" }, { t: "18  PRETZELS", desde: k(370.5) }, { t: "12  CANDY BARS", desde: k(371.7) }, { t: "SODA  (doesn't count)", desde: k(374.3), color: "#ff8fb8" }]} />
+      <Grafico x={30} y={200} w={840} h={480} desde={k(369.5)} paso={18} tema="oscuro" titulo="THE COUNT" destacar={1} acento={ROJO}
+        datos={[{ rotulo: "CHIPS", v: 41 }, { rotulo: "HOT DOGS", v: 96 }, { rotulo: "PRETZELS", v: 18 }, { rotulo: "CANDY", v: 12 }]} />
+      <Dice quien="dot" t="soda doesn't count." x={1220} y={170} desde={k(374.3)} tam={70} />
     </AbsoluteFill>
   );
 };
