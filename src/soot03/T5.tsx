@@ -4,7 +4,7 @@ import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Casa } from "./k
 import { Fuerte, Bolsa } from "./kit2";
 import { Persona, CIVIL } from "./persona";
 import { TOP, BASE, MC, K, Cam, Pal, Plano, CartelTrampa, pant, FUERTE_H } from "./mundo";
-import { Gr, Ch, T, ck, TUNGRO, AUX, Esqueleto, TablillaGrande, Picto, Ojos } from "./kit3";
+import { Gr, Ch, T, ck, TUNGRO, AUX, Esqueleto, TablillaGrande, Picto, Ojos, gesto } from "./kit3";
 
 // TRAMPA 5 · LOS VECINOS (536,4-618,5 s). El vicus que crece afuera de Housesteads (tabernas, tiendas, talleres,
 // familias que la ley no reconoce, comerciantes); "suena acogedor" → no siempre: los dos esqueletos bajo el piso con
@@ -17,7 +17,7 @@ const CASAS = [VI - 900, VI - 560, VI - 220, VI + 120, VI + 460, VI + 800];
 const ROT: [string, string][] = [["pubs", "PUB"], ["shops", "SHOP"], ["workshops", "WORKSHOP"]];
 
 export const keys5: K[] = [
-  [536.6, 25200, 580, 0.42], ck("outside the gates", D, VI, 740, 0.6), ck("a small town grows", D, VI, 720, 0.75), ck("pubs", D, VI - 400, 740, 1.0),
+  [536.6, 25200, 580, 0.42], ck("outside the gates", D, VI, 760, 0.8), ck("a small town grows", D, VI, 740, 0.95), ck("pubs", D, VI - 400, 740, 1.0),
   ck("families that the law", D, VI + 300, 760, 1.2), ck("traders who came", D, VI + 700, 760, 1.25), ck("it sounds cozy", D, VI, 700, 0.7),
   ck("it was not always", D, VI + 400, 700, 0.55), ck("at the fort of", D, HX, 660, 0.5), ck("nobody knows who", D, HX - 800, 760, 0.9),
   ck("the wall had a murder", D, HX - 800, 740, 1.2), ck("then there are the locals", D, HX, 380, 0.5), ck("one roman report", D, HX, 400, 0.6),
@@ -39,7 +39,7 @@ const Piso: React.FC<{ t: number }> = ({ t }) => {
       <div style={{ position: "absolute", left: 360, top: 360, width: 1200, height: 520 * cav, background: "rgba(10,6,4,.6)", borderRadius: "0 0 60px 60px" }} />
       {t > c - 0.2 && <Esqueleto x={760} y={640} s={1.1} t={t} t0={c} />}
       {t > c && <Esqueleto x={1240} y={720} s={1.1} t={t} t0={c + 0.4} rot={180} cuchillo={t > k} />}
-      <Persona x={300} y={360} h={300} t={t} seed={77} ropa={CIVIL(2)} expr={t > c ? "sorpresa" : "neutro"} bD={70 + Math.sin(t * 8) * 30} cD={50} />
+      <Persona x={330} y={430} h={300} t={t} seed={77} ropa={CIVIL(2)} {...gesto(t, [[a, "cava"], [c, "sorpresa"], [c + 1.4, "miedo"], [k, "señala"]])} />
       <Chip t={t} t0={a} text="HOUSESTEADS · 1930s" color={C.violeta} x={960} y={110} centro size={60} />
       {t > b && t < c + 1 && <Chip t={t} t0={b} text="UNDER THE CLAY FLOOR" color="#a8783a" x={960} y={410} centro size={50} />}
       {t > T("a man and a woman", D) && <Chip t={t} t0={T("a man and a woman", D)} text="A MAN" color="#3d7fc9" x={1240} y={880} centro size={54} />}
@@ -55,12 +55,13 @@ const Informe: React.FC<{ t: number }> = ({ t }) => {
   const a = T("one roman report", D), b = T("and the report gives", D), w = T("wretched little britons", D);
   return (
     <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #6b4ac9, #1b1240 80%)" }}>
-      <TablillaGrande t={t} t0={a + 0.5} x={960} y={420} w={1600} vel={30} titulo="VINDOLANDA · A REPORT ON THE BRITONS"
+      <Persona x={230} y={1050} h={440} t={t} seed={95} ropa={{ ...AUX(4), tunica: "#c9a23d", tunica2: "#8f7025" }} casco="legion" malla {...gesto(t, [[a, "escribe"], [T("they have no armor", D), "festeja"], [b, "señala"], [T("it is the only time", D), "habla"]])} />
+      <TablillaGrande t={t} t0={a + 0.5} x={1100} y={470} w={1360} vel={30} titulo="VINDOLANDA · A REPORT ON THE BRITONS"
         lineas={["“…the Britons are unprotected by armour.", "There are very many cavalry…", "…nor do the Brittunculi mount", "in order to throw javelins.”"]} />
-      {[["they have no armor", "NO ARMOR", 520, C.rojo], ["they have lots of cavalry", "LOTS OF CAVALRY", 1400, C.teal]].map(([p, tx, x, col], i) => t > T(p as string, D) && t < b ? <Chip key={i} t={t} t0={T(p as string, D)} text={tx as string} color={col as string} tinta={i ? C.noche : "#fff"} x={x as number} y={900} centro size={60} /> : null)}
-      {t > b && <div style={{ position: "absolute", left: 360, right: 360, top: 780, height: 150, background: C.ambar, borderRadius: 24, transform: `scale(${ent(t, b + 0.4)}) rotate(-2deg)`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700, fontSize: 96, color: C.noche, letterSpacing: 4 }}>BRITTUNCULI</div>}
-      {t > w && <Chip t={t} t0={w} t1={T("and it was written", D) - 0.2} text="= “WRETCHED LITTLE BRITONS”" color={C.rojo} x={960} y={990} centro size={60} />}
-      {t > T("it is the only time", D) && <Chip t={t} t0={T("it is the only time", D)} text="THE ONLY TIME THIS WORD EVER APPEARS" color="#fff" tinta={C.noche} x={960} y={110} centro size={52} />}
+      {[["they have no armor", "NO ARMOR", 520, C.rojo], ["they have lots of cavalry", "LOTS OF CAVALRY", 1400, C.teal]].map(([p, tx, x, col], i) => t > T(p as string, D) && t < b ? <Chip key={i} t={t} t0={T(p as string, D)} text={tx as string} color={col as string} tinta={i ? C.noche : "#fff"} x={(x as number) === 520 ? 820 : 1460} y={900} centro size={60} /> : null)}
+      {t > b && <div style={{ position: "absolute", left: 560, right: 160, top: 780, height: 150, background: C.ambar, borderRadius: 24, transform: `scale(${ent(t, b + 0.4)}) rotate(-2deg)`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700, fontSize: 96, color: C.noche, letterSpacing: 4 }}>BRITTUNCULI</div>}
+      {t > w && <Chip t={t} t0={w} t1={T("and it was written", D) - 0.2} text="= “WRETCHED LITTLE BRITONS”" color={C.rojo} x={1100} y={990} centro size={60} />}
+      {t > T("it is the only time", D) && <Chip t={t} t0={T("it is the only time", D)} text="THE ONLY TIME THIS WORD EVER APPEARS" color="#fff" tinta={C.noche} x={1100} y={130} centro size={52} />}
     </AbsoluteFill>
   );
 };
@@ -80,7 +81,7 @@ const Terreno: React.FC<{ t: number }> = ({ t }) => {
         <rect x={1420} y={900} width={80} height={80} fill="#c9b8a0" stroke="#8a7a64" strokeWidth={6} />
       </svg>
       {t > p && <Persona x={1250} y={790} h={180} t={t} seed={27} ropa={AUX(4)} casco="legion" expr="dormido" />}
-      {[0, 1, 2].map((i) => <Picto key={i} x={200 + i * 120} y={360 + (i % 2) * 30} s={0.9} t={t} seed={70 + i} sube={a + i * 0.2} />)}
+      {[0, 1, 2].map((i) => <Picto key={i} x={160 + i * 120 + 700 * prog(t, f + 0.4, p + 2.5) + 300 * prog(t, n, n + 3)} y={640 + (i % 2) * 30 - 60 * prog(t, n, n + 3)} s={1.1} t={t} seed={70 + i} sube={a + i * 0.2} />)}
       {[[a, "THEY KNOW THE LAND", C.violeta, 160], [f, "WHICH VALLEYS FLOOD", "#3d7fc9", 260], [p, "WHEN THE PATROL IS LAZY", C.ambar, 160], [n, "HOW FAR YOUR TOWER SEES IN FOG", "#2a2350", 260]].map(([t0, tx, col, y], i) => t > (t0 as number) ? <Chip key={i} t={t} t0={t0 as number} t1={i === 0 ? f : i === 1 ? n - 0.1 : 1e9} text={tx as string} color={col as string} tinta={i === 2 ? C.noche : "#fff"} x={i === 1 ? 600 : i === 3 ? 1300 : 960} y={y as number} centro size={56} /> : null)}
       <Chip t={t} t0={T("and you do not", D)} t1={f} text="YOU DON'T" color={C.rojo} x={960} y={260} centro size={56} />
     </AbsoluteFill>
@@ -107,12 +108,12 @@ export const W5: React.FC<{ t: number; c: Cam }> = ({ t }) => {
       {/* familias, comerciantes, soldados */}
       {t > T("families that the law", D) - 0.3 && t < T("at the fort of", D) && (
         <>
-          <Persona x={VI + 150} y={BASE} h={230} t={t} seed={3} ropa={TUNGRO} casco="no" malla pantalon="#6b4a2f" capa="#3f6b2a" expr={noche ? "miedo" : "feliz"} />
-          <Persona x={VI + 330} y={BASE} h={215} t={t} seed={150} ropa={{ ...CIVIL(1), tunica: C.rosa, tunica2: "#c94a6a" }} expr={noche ? "miedo" : "feliz"} />
+          <Persona x={VI + 150} y={BASE} h={230} t={t} seed={3} ropa={TUNGRO} casco="no" malla pantalon="#6b4a2f" capa="#3f6b2a" {...gesto(t, [[T("families that the law", D) - 0.3, "festeja"], [T("traders who came", D), "habla"], [T("it sounds cozy", D), "festeja"], [T("it was not always", D), "miedo"]])} />
+          <Persona x={VI + 330} y={BASE} h={215} t={t} seed={150} ropa={{ ...CIVIL(1), tunica: C.rosa, tunica2: "#c94a6a" }} {...gesto(t, [[T("families that the law", D), "habla"], [T("it sounds cozy", D), "festeja"], [T("it was not always", D), "miedo"]])} />
           <Persona x={VI + 470} y={BASE} h={120} t={t} seed={151} ropa={CIVIL(3)} expr="feliz" salta={noche ? 0 : Math.abs(Math.sin(t * 6)) * 16} />
         </>
       )}
-      {t > T("traders who came", D) - 0.3 && t < T("at the fort of", D) && <><Persona x={VI + 900} y={BASE} h={240} t={t} seed={152} ropa={CIVIL(4)} flip expr="orgullo" habla bD={120} cD={30} /><Bolsa x={VI + 760} y={BASE - 150} s={0.5} t={t} t0={T("traders who came", D)} txt="$" /></>}
+      {t > T("traders who came", D) - 0.3 && t < T("at the fort of", D) && <><Persona x={VI + 900} y={BASE} h={240} t={t} seed={152} ropa={CIVIL(4)} flip {...gesto(t, [[T("traders who came", D), "señala"], [T("and stayed", D), "festeja"], [T("it was not always", D), "encoge"]])} /><Bolsa x={VI + 760} y={BASE - 150} s={0.5} t={t} t0={T("traders who came", D)} txt="$" /></>}
       {/* jinetes britanos en la loma del frente del muro (al norte, detrás) */}
     </>
   );

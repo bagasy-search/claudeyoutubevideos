@@ -194,8 +194,12 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
   if (t < t0 || t > t1 + 0.3) return null;
   const s = ent(t, t0, 0, { damping: 11, stiffness: 180 });
   const out = interpolate(t, [t1, t1 + 0.3], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  // nunca cortado por el borde: ancho estimado (Fredoka 700 en mayúsculas) y se encaja dentro de 40 px de margen
+  const wEst = text.length * (size * 0.66 + 1) + size * 0.84;
+  const ajuste = Math.min(1, 1840 / wEst);
+  if (x >= 0 && x <= 1920) x = centro ? Math.max(40 + (wEst * ajuste) / 2, Math.min(1880 - (wEst * ajuste) / 2, x)) : Math.max(40, Math.min(1880 - wEst * ajuste, x));
   return (
-    <div style={{ position: "absolute", left: x, top: y, transform: `translate(${centro ? "-50%" : "0"}, -50%) scale(${s * out}) rotate(${(1 - s) * -8}deg)`, overflow: "hidden", transformOrigin: centro ? "center" : "left center", fontFamily, fontWeight: 700, fontSize: size, color: tinta, background: color, padding: `${size * 0.16}px ${size * 0.42}px`, borderRadius: size * 0.3, boxShadow: "0 8px 0 rgba(20,10,50,.35)", letterSpacing: 1, whiteSpace: "nowrap", lineHeight: 1.15 }}>
+    <div style={{ position: "absolute", left: x, top: y, transform: `translate(${centro ? "-50%" : "0"}, -50%) scale(${s * out * ajuste})`, overflow: "hidden", transformOrigin: centro ? "center" : "left center", fontFamily, fontWeight: 700, fontSize: size, color: tinta, background: color, padding: `${size * 0.16}px ${size * 0.42}px`, borderRadius: size * 0.3, boxShadow: "0 8px 0 rgba(20,10,50,.35)", letterSpacing: 1, whiteSpace: "nowrap", lineHeight: 1.15 }}>
       {text}
       <div style={{ position: "absolute", top: 0, bottom: 0, width: size * 0.9, left: `${interpolate(t, [t0 + 0.12, t0 + 0.6], [-30, 130], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}%`, background: "linear-gradient(100deg, transparent, rgba(255,255,255,.55), transparent)", transform: "skewX(-20deg)" }} />
     </div>
@@ -205,8 +209,11 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
 export const Grande: React.FC<{ t: number; t0: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string }> = ({ t, t0, text, x = 960, y, size = 150, color = C.crema, borde = C.noche }) => {
   if (t < t0) return null;
   const s = ent(t, t0, 0, { damping: 9, stiffness: 190 });
+  const wEst = text.length * size * 0.68 + size * 0.2;
+  const ajuste = Math.min(1, 1800 / wEst);
+  x = Math.max(60 + (wEst * ajuste) / 2, Math.min(1860 - (wEst * ajuste) / 2, x));
   return (
-    <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${s})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}` }}>
+    <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${s * ajuste})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}` }}>
       {text}
     </div>
   );

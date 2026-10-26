@@ -176,6 +176,8 @@ export const TablillaGrande: React.FC<{ t: number; t0: number; lineas: string[];
   const n = Math.floor(Math.max(0, t - t0 - 0.3) * vel);
   let resto = n;
   const h = 200 + lineas.length * 92;
+  // la letra se achica para que la línea más larga entre siempre en la tablilla
+  const fs = Math.min(64, (w - 120) / (Math.max(...lineas.map((l) => l.length)) * 0.56));
   return (
     <div style={{ position: "absolute", left: x - w / 2, top: y - h / 2, width: w, height: h, transform: `scale(${e}) rotate(${(1 - e) * -6 - 1.5}deg)` }}>
       <div style={{ position: "absolute", inset: 0, transform: "translate(18px,18px)", background: "rgba(20,8,40,.35)", borderRadius: 18 }} />
@@ -185,7 +187,7 @@ export const TablillaGrande: React.FC<{ t: number; t0: number; lineas: string[];
         {lineas.map((l, i) => {
           const vis = Math.max(0, Math.min(l.length, resto));
           resto -= l.length;
-          return <div key={i} style={{ position: "absolute", left: 60, top: 100 + i * 92, fontFamily: "'Segoe Script','Brush Script MT',cursive", fontSize: 64, color: "#1d120a", whiteSpace: "nowrap" }}>{l.slice(0, vis)}{vis > 0 && vis < l.length ? <span style={{ opacity: 0.5 }}>|</span> : null}</div>;
+          return <div key={i} style={{ position: "absolute", left: 60, top: 100 + i * 92, fontFamily: "'Segoe Script','Brush Script MT',cursive", fontSize: fs, color: "#1d120a", whiteSpace: "nowrap" }}>{l.slice(0, vis)}{vis > 0 && vis < l.length ? <span style={{ opacity: 0.5 }}>|</span> : null}</div>;
         })}
       </div>
       {n < tot && <div />}

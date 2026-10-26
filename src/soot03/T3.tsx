@@ -4,7 +4,7 @@ import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Bota, Moneda } f
 import { Papiro, Item, Mula } from "./kit2";
 import { Persona, CIVIL } from "./persona";
 import { TOP, BASE, MC, K, Cam, Pal, Plano, CartelTrampa, pant } from "./mundo";
-import { Gr, Cu, Ch, T, ck, TUNGRO, AUX, Carro, Barril, Jarro, TablillaGrande, Picto } from "./kit3";
+import { Gr, Cu, Ch, T, ck, TUNGRO, AUX, Carro, Barril, Jarro, TablillaGrande, Picto, gesto } from "./kit3";
 
 // TRAMPA 3 · LA LÍNEA DE SUMINISTRO (331,2-431,6 s). Un campo donde no crece nada; el convoy que sube por el camino
 // (grano, vino, sal, clavos, cuero… cerveza); la tablilla de Masclus; la lista de compras; la lluvia de zapatos;
@@ -23,7 +23,7 @@ const conv = (t: number) => {
 
 export const keys3: K[] = [
   [331.4, M3 - 2000, 560, 0.4], ck("here is the thing", D, M3 + 200, 720, 0.9), ck("nothing grows there", D, M3 + 200, 740, 1.3),
-  ck("so everything has to come", D, CV0 + 1200, 700, 0.6), ck("grain", D, CV0 + 400, 720, 0.85), ck("and above all", D, CV0, 720, 1.0),
+  ck("so everything has to come", D, CV0 + 900, 720, 0.95), ck("grain", D, CV0 + 300, 740, 1.1), ck("and above all", D, CV0 - 100, 740, 1.2),
   ck("yes", D, CV0, 700, 1.4), ck("the soldiers on the northern", D, YO3, 720, 1.1), ck("they took it extremely", D, YO3, 700, 1.4),
   ck("one of the most famous", D, YO3, 700, 1.0), ck("that is it", D, YO3, 720, 1.5), ck("other tablets read", D, YO3 + 300, 700, 0.9),
   ck("and shoes", D, YO3, 720, 1.0), ck("because the wall", D, M3 - 1000, 680, 0.55), ck("was never just a place", D, M3 - 1200, 700, 0.7),
@@ -40,12 +40,13 @@ const Masclus: React.FC<{ t: number }> = ({ t }) => {
   const a = T("one of the most famous", D), b = T("my fellow soldiers have", D), c = T("please order some", D);
   return (
     <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #6b4ac9, #1b1240 80%)" }}>
-      <div style={{ position: "absolute", inset: 0, transform: `scale(${1 + 0.012 * Math.max(0, t - a)})` }}><TablillaGrande t={t} t0={a + 0.3} x={960} y={430} w={1640} vel={30} titulo="MASCLUS, CAVALRY OFFICER → CERIALIS, COMMANDER"
+      <Persona x={230} y={1040} h={430} t={t} seed={95} ropa={{ ...AUX(4), tunica: "#c9a23d", tunica2: "#8f7025" }} casco="legion" malla {...gesto(t, [[a, "escribe"], [b - 0.3, "triste"], [c, "habla"]])} />
+      <div style={{ position: "absolute", inset: 0 }}><TablillaGrande t={t} t0={a + 0.3} x={1090} y={420} w={1380} vel={30} titulo="MASCLUS, CAVALRY OFFICER → CERIALIS, COMMANDER"
         lineas={["“Masclus to Cerialis, his king, greetings.", "Please, my lord, give instructions", "for what you want done tomorrow…”"]} /></div>
-      {t > b && <div style={{ position: "absolute", left: 160, right: 160, top: 760, height: 130, background: C.ambar, borderRadius: 20, transform: `scale(${ent(t, b)}) rotate(-2deg)`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700, fontSize: 70, color: C.noche }}>“MY FELLOW SOLDIERS HAVE NO BEER.”</div>}
-      {t > c && <div style={{ position: "absolute", left: 300, right: 300, top: 910, height: 100, background: "#fff", borderRadius: 20, transform: `scale(${ent(t, c)}) rotate(1.5deg)`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700, fontSize: 54, color: C.noche }}>“PLEASE ORDER SOME TO BE SENT.”</div>}
-      <Chip t={t} t0={T("it is a work request", D)} t1={T("he adds the real reason", D)} text="A WORK REQUEST…" color={C.teal} tinta={C.noche} x={960} y={120} centro size={56} />
-      <Chip t={t} t0={T("he adds the real reason", D)} text="…AND THE REAL REASON:" color={C.rojo} x={960} y={120} centro size={56} />
+      {t > b && <div style={{ position: "absolute", left: 420, right: 60, top: 760, height: 130, background: C.ambar, borderRadius: 20, transform: `scale(${ent(t, b)}) rotate(-2deg)`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700, fontSize: 64, color: C.noche }}>“MY FELLOW SOLDIERS HAVE NO BEER.”</div>}
+      {t > c && <div style={{ position: "absolute", left: 560, right: 180, top: 910, height: 100, background: "#fff", borderRadius: 20, transform: `scale(${ent(t, c)}) rotate(1.5deg)`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700, fontSize: 54, color: C.noche }}>“PLEASE ORDER SOME TO BE SENT.”</div>}
+      <Chip t={t} t0={T("it is a work request", D)} t1={T("he adds the real reason", D)} text="A WORK REQUEST…" color={C.teal} tinta={C.noche} x={1090} y={130} centro size={56} />
+      <Chip t={t} t0={T("he adds the real reason", D)} text="…AND THE REAL REASON:" color={C.rojo} x={1090} y={130} centro size={56} />
     </AbsoluteFill>
   );
 };
@@ -56,11 +57,12 @@ const Lista: React.FC<{ t: number }> = ({ t }) => {
   return (
     <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #ffcf7a, #c9773a 85%)" }}>
       <Chip t={t} t0={T("other tablets read", D) + 0.3} t1={T("barley", 374)} text="A SHOPPING LIST FOR A SMALL TOWN" color={C.violeta} x={960} y={120} centro size={56} />
-      {t < m + 0.2 && <Papiro t={t} x={960} y={560} w={1100} t0={T("other tablets read", D) + 0.2} tacha={false} titulo="VINDOLANDA · SHOPPING LIST" items={LISTA.map(([w, tx]) => ({ txt: tx, t0: T(w, 374) }))} />}
+      {t < m + 0.2 && <Persona x={1700} y={1040} h={420} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" {...gesto(t, [[T("other tablets read", D), "lee"], [T("barley", 374), "señala"], [T("vintage wine", 374), "festeja"], [T("celtic beer", 374), "festeja"], [T("and grain in", 374), "sorpresa"]])} />}
+      {t < m + 0.2 && <Papiro t={t} x={820} y={560} w={1000} t0={T("other tablets read", D) + 0.2} tacha={false} titulo="VINDOLANDA · SHOPPING LIST" items={LISTA.map(([w, tx]) => ({ txt: tx, t0: T(w, 374) }))} />}
       {t > m && (
         <>
-          {Array.from({ length: 40 }, (_, i) => <Item key={i} k="grano" x={140 + (i % 10) * 180} y={1000 - Math.floor(i / 10) * 150 - (1 - ent(t, m + i * 0.04)) * 900} s={0.7} />)}
-          <Cu t={t} w="one merchant mentions" d={D} de={0} a={5000} sube={1.2} dur={5} y={200} size={150} suf=" MEASURES" color="#fff" dt={0.3} />
+          {Array.from({ length: 27 }, (_, i) => <Item key={i} k="grano" x={140 + (i % 9) * 170} y={1000 - Math.floor(i / 9) * 150 - (1 - ent(t, m + i * 0.04)) * 900} s={0.7} />)}
+          <Cu t={t} w="one merchant mentions" d={D} de={0} a={5000} sube={1.2} dur={5} y={190} size={150} suf=" MEASURES" color="#fff" dt={0.3} />
           {t > T("worrying about how", D) && <Persona x={1640} y={660} h={360} t={t} seed={81} ropa={CIVIL(3)} expr="miedo" bD={150} cD={150} bI={150} cI={150} aparece={T("worrying about how", D)} />}
           <Emote t={t} t0={T("worrying about how", D) + 0.2} tipo="sudor" x={1650} y={420} s={0.9} />
         </>
@@ -81,6 +83,7 @@ const Zapatos: React.FC<{ t: number }> = ({ t }) => {
         const s = i % 5 === 4 ? 0.45 : i % 3 === 0 ? 0.7 : 0.9;
         return <div key={i} style={{ position: "absolute", left: 0, top: 0, transform: `translate(0px, ${(k - 1) * 1100}px) rotate(${(i * 47) % 60 - 30}deg)`, transformOrigin: `${x}px ${yF}px` }}><Bota x={x} y={yF} s={s} /></div>;
       })}
+      <Persona x={960} y={1060 + 260 * prog(t, b, b + 3.5)} h={360} t={t} seed={3} ropa={TUNGRO} casco="legion" malla {...gesto(t, [[a, "sorpresa"], [a + 0.9, "señala"], [b, "miedo"]])} />
       {t > b && <Cu t={t} w="archaeologists have pulled" d={D} de={0} a={5000} sube={2.4} dur={4.2} y={200} size={140} pre="" suf="+ SHOES" color="#fff" dt={0.2} />}
       {[["mens boots", "MEN'S BOOTS", 400], ["womens sandals", "WOMEN'S SANDALS", 960], ["tiny shoes for children", "TINY SHOES FOR CHILDREN", 1500]].map(([w, tx, x], i) => t > T(w as string, D) ? <Chip key={i} t={t} t0={T(w as string, D)} text={tx as string} color={[C.violeta, C.rosa, C.ambar][i]} tinta={i === 2 ? C.noche : "#fff"} x={x as number} y={360 + i * 90} centro size={50} /> : null)}
     </AbsoluteFill>
@@ -107,7 +110,7 @@ export const W3: React.FC<{ t: number; c: Cam }> = ({ t }) => {
       {!sinConv && <Persona x={x0 - 800} y={BASE} h={220} t={t} seed={83} ropa={CIVIL(1)} camina={anda ? 1.4 : 0} flip expr={t > 409 ? "miedo" : "neutro"} />}
       {/* vos y tus compañeros al pie del muro */}
       {[-560, -300].map((dx, i) => <Persona key={i} x={YO3 + dx} y={BASE} h={220} t={t} seed={50 + i} ropa={AUX(i + 1)} casco="legion" malla={i === 1} pantalon="#5a4a3a"
-        expr={feliz ? "feliz" : t > 418 ? "triste" : "neutro"} bD={feliz ? 160 : 12} cD={feliz ? 30 : 0} salta={feliz ? Math.abs(Math.sin(t * 6 + i)) * 20 : 0}
+        {...gesto(t, [[331, "triste"], [T("so everything has to come", D) + 4.6, "carga"], [T("yes", D), "festeja"], [T("one of the most famous", D), "habla"], [T("because the wall", D), "habla"], [T("but here is the trap", D), "encoge"], [T("if the convoy is late", D), "triste"], [418, "tiembla"]])}
         manoD={feliz ? <g transform="translate(0 -40) scale(0.5)"><path d="M -60 -90 L 60 -90 L 50 100 L -50 100 Z" fill="#e8a83a" /><ellipse cx={0} cy={-92} rx={66} ry={22} fill="#fff8e8" /></g> : undefined} />)}
       <Persona x={YO3} y={BASE} h={240} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" capa="#3f6b2a"
         expr={t < 342 ? "triste" : feliz ? "feliz" : t < 372 ? "neutro" : t < 374.7 ? "sorpresa" : t < 414 ? "neutro" : t < 418 ? "triste" : t < 421.7 ? "orgullo" : "miedo"}

@@ -1,10 +1,10 @@
 import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Casa } from "./kit";
-import { Fuerte, Barco, Campana } from "./kit2";
+import { Fuerte, Barco, Campana, Soldadito } from "./kit2";
 import { Persona, CIVIL } from "./persona";
 import { TOP, BASE, K, Cam, Pal, Plano } from "./mundo";
-import { Gr, Cu, Ch, T, ck, Yo, Otro, Lapida2, Salon, Pin } from "./kit3";
+import { Gr, Cu, Ch, T, ck, Yo, Otro, Lapida2, Salon, Pin, gesto } from "./kit3";
 
 // EL GIRO + CIERRE (822-919,6 s). Los que cuidaban el muro también eran "bárbaros": el muro de Roma contra los
 // bárbaros estaba hecho de bárbaros, y funcionó casi 300 años. Se quedaron: la lápida de Regina en South Shields que
@@ -15,9 +15,9 @@ const FILA = 22000;
 const ESTE = 45300;
 
 export const keys8: K[] = [
-  [822.2, 22000, 430, 0.046], [822.9, 22000, 430, 0.047], ck("remember who stood", D, FILA, 470, 0.85), ck("at the beginning", D, FILA, 480, 0.72),
+  [822.2, 22000, 430, 0.042], [822.9, 22000, 430, 0.043], ck("remember who stood", D, FILA, 470, 0.85), ck("at the beginning", D, FILA, 480, 0.72),
   ck("and those men did", D, FILA, 520, 0.6), ck("they stayed", D, FILA, 500, 1.0), ck("at south shields", D, 34000, 500, 0.09),
-  ck("at the eastern end", D, ESTE + 300, 560, 0.5), ck("a syrian and a british", D, ESTE, 720, 1.15), ck("on the wall nobody wanted", D, ESTE + 200, 640, 0.55),
+  ck("at the eastern end", D, ESTE + 300, 560, 0.5), ck("a syrian and a british", D, ESTE, 720, 1.15), ck("on the wall nobody wanted", D, ESTE, 700, 0.9),
   ck("and when rome finally left", D, ESTE + 300, 600, 0.42), ck("nobody wanted to guard", D, ESTE - 300, 600, 0.3), ck("some of them simply could not", D, ESTE, 700, 0.6),
   ck("because by then it was home", D, ESTE, 720, 0.85), ck("if you enjoyed surviving", D, ESTE + 200, 640, 0.5), [919.6, ESTE + 300, 620, 0.42],
 ];
@@ -61,6 +61,8 @@ const Regina: React.FC<{ t: number }> = ({ t }) => {
       {!mapa && (
         <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `scale(${interpolate(t, [849, 869], [1, 1.08])})`, transformOrigin: "620px 560px" }}>
           <Lapida2 x={620} y={560} s={1.1} lineas={["D · M · REGINA", "LIBERTA ET", "CONIUGE"]} pie="BARATES" />
+          <Persona x={1000} y={1010} h={340} t={t} seed={432} ropa={{ ...CIVIL(4), tunica: "#3d7fc9", tunica2: "#25548f" }} flip opacity={1 - prog(t, T("who died at 30", D), T("who died at 30", D) + 0.8)} {...gesto(t, [[T("it belongs to a woman", D), "habla"], [T("a former slave", D), "triste"]])} />
+          {t > T("it was set up by her", D) - 0.3 && <Persona x={190} y={1030} h={400} t={t} seed={430} ropa={{ ...CIVIL(1), tunica: "#c9a23d", tunica2: "#8f7025" }} {...gesto(t, [[T("it was set up by her", D) - 0.3, "golpea"], [lat, "escribe"], [tr, "triste"]])} />}
           {t > ar && (
             <svg style={{ position: "absolute", left: 400, top: 900, overflow: "visible" }} width={440} height={80}>
               {Array.from({ length: 11 }, (_, i) => (
@@ -108,11 +110,14 @@ const Birdoswald: React.FC<{ t: number }> = ({ t }) => {
       <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, opacity: 1 - ruina * 0.55 }}>
         <Fuerte x={960} y={860} w={1300} piedra />
       </div>
+      {t > p && t < s + 0.5 && Array.from({ length: 6 }, (_, i) => <Soldadito key={"v" + i} x={760 + i * 90 + 900 * prog(t, p + 0.8 + i * 0.1, p + 3.4 + i * 0.1)} y={900} s={1.0} t={t} seed={450 + i} avanza={1} />)}
+      {t > p && t < s + 0.5 && <div style={{ position: "absolute", left: 640, top: 420, fontFamily, fontWeight: 700, fontSize: 52, color: "#fff", WebkitTextStroke: "7px #1b1240", paintOrder: "stroke fill" }}>PAY: {Math.max(0, 100 - Math.round(100 * prog(t, p + 0.4, p + 1.8)))} %</div>}
+      <Persona x={230} y={1030} h={380} t={t} seed={77} ropa={CIVIL(2)} {...gesto(t, [[a, "camina"], [p, "cava"], [s, "sorpresa"], [s + 1.5, "señala"]])} />
       {ruina > 0 && [0, 1, 2, 3, 4].map((i) => <div key={i} style={{ position: "absolute", left: 360 + i * 280, top: 640 + (i % 2) * 40, width: 170, height: 60, background: "#c9b28a", borderRadius: 8, transform: `rotate(${(i % 2 ? 1 : -1) * 18 * ruina}deg) translateY(${ruina * 120}px)` }} />)}
       {t > s && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `scale(${ent(t, s)})`, transformOrigin: "960px 860px" }}><Salon x={960} y={700} s={0.9} /></div>}
       {t > s + 1 && [0, 1, 2].map((i) => { const k = ((t - s) * 0.4 + i / 3) % 1; return <div key={i} style={{ position: "absolute", left: 1160 + k * 40, top: 360 - k * 260, width: 60 + k * 70, height: 60 + k * 70, borderRadius: "50%", background: "#ddd", opacity: 0.8 * (1 - k) }} />; })}
-      {t > T("maybe a local warlord", D) && <Persona x={700} y={900} h={300} t={t} seed={410} ropa={{ ...CIVIL(3), tunica: "#7a2a2a", tunica2: "#4a1a1a" }} expr="orgullo" />}
-      {t > T("maybe the grandsons", D) && [0, 1].map((i) => <Persona key={i} x={1250 + i * 180} y={900} h={250} t={t} seed={420 + i} ropa={CIVIL(i + 4)} expr="feliz" />)}
+      {t > T("maybe a local warlord", D) && <Persona x={700} y={900} h={300} t={t} seed={410} ropa={{ ...CIVIL(3), tunica: "#7a2a2a", tunica2: "#4a1a1a" }} {...gesto(t, [[T("maybe a local warlord", D), "festeja"], [T("maybe the grandsons", D), "señala"]])} />}
+      {t > T("maybe the grandsons", D) && [0, 1].map((i) => <Persona key={i} x={1250 + i * 180} y={900} h={250} t={t} seed={420 + i} ropa={CIVIL(i + 4)} {...gesto(t, [[T("maybe the grandsons", D) + i * 0.2, "festeja"], [T("still guarding the wall", D), "señala"]])} />)}
       <Chip t={t} t0={a} t1={p} text="BIRDOSWALD FORT" color={C.violeta} x={960} y={160} centro size={60} />
       {t > p && t < s && <Chip t={t} t0={p} text="THE ARMY: NO LONGER PAID" color={C.rojo} x={960} y={160} centro size={56} />}
       {t > s && t < T("maybe a local warlord", D) && <Chip t={t} t0={s} text="BIG TIMBER HALLS · ON TOP OF THE OLD FORT" color="#8a5a2a" x={960} y={160} centro size={52} />}
@@ -163,7 +168,11 @@ const Comentarios: React.FC<{ t: number; t0: number }> = ({ t, t0 }) => {
       <div style={{ position: "absolute", left: 320, top: 380, width: 90, height: 90, borderRadius: "50%", background: C.violeta }} />
       <div style={{ position: "absolute", left: 440, top: 395, fontFamily, fontWeight: 700, fontSize: 52, color: "#1b1240" }}>WHICH TRAP WOULD GET YOU FIRST?</div>
       <div style={{ position: "absolute", left: 440, top: 465, width: 1000, height: 6, background: "#ddd" }} />
+      <div style={{ position: "absolute", left: 320, top: 520, width: 70, height: 70, borderRadius: "50%", background: C.teal }} />
+      <div style={{ position: "absolute", left: 420, top: 530, width: 1180, fontFamily, fontWeight: 600, fontSize: 44, color: "#1b1240" }}>{(() => { const msg = "#2 THE RAIN. I'd be gone by week one."; const n = Math.floor(msg.length * prog(t, t0 + 0.8, t0 + 3.0)); return msg.slice(0, n) + (n < msg.length && Math.floor(t * 3) % 2 ? "|" : ""); })()}</div>
+      <div style={{ position: "absolute", left: 420, top: 600, fontFamily, fontWeight: 700, fontSize: 34, color: C.rojo, opacity: prog(t, t0 + 3.1, t0 + 3.4) }}>♥ {Math.round(240 * prog(t, t0 + 3.1, t0 + 5))}</div>
       {tr.map((ic, i) => <Pin key={i} t={t} t0={t0 + 0.6 + i * 0.12} n={i + 1} x={420 + i * 180} y={820} s={0.7} icono={ic} act={Math.floor(t * 2.5) % 7 === i} />)}
+      <Yo x={1790} y={1060} h={330} t={t} frio {...gesto(t, [[t0, "señala"], [t0 + 2.5, "habla"], [t0 + 4.2, "festeja"]])} />
     </div>
   );
 };
@@ -190,15 +199,15 @@ export const W8: React.FC<{ t: number; c: Cam }> = ({ t }) => {
       <Casa x={ESTE + 380} y={BASE} s={1.6} tono="#e8b98a" techo="#8a5a2a" luz={t > hogar} />
       {t > 868 && (
         <>
-          <Persona x={ESTE - 120} y={BASE} h={300} t={t} seed={430} ropa={{ ...CIVIL(1), tunica: "#c9a23d", tunica2: "#8f7025" }} expr="feliz" mira={0.6} bD={t > T("building a life", D) ? 40 : 10} />
-          <Persona x={ESTE + 80} y={BASE} h={280} t={t} seed={431} ropa={{ ...CIVIL(4), tunica: "#3d7fc9", tunica2: "#25548f" }} expr="feliz" flip mira={-0.6} bI={t > T("building a life", D) ? 40 : 10} />
+          <Persona x={ESTE - 120} y={BASE} h={300} t={t} seed={430} ropa={{ ...CIVIL(1), tunica: "#c9a23d", tunica2: "#8f7025" }} mira={0.6} {...gesto(t, [[868, "habla"], [T("building a life", D), "festeja"], [T("on the wall nobody wanted", D), "habla"]])} />
+          <Persona x={ESTE + 80} y={BASE} h={280} t={t} seed={431} ropa={{ ...CIVIL(4), tunica: "#3d7fc9", tunica2: "#25548f" }} flip mira={-0.6} {...gesto(t, [[868, "lee"], [T("building a life", D), "festeja"], [T("on the wall nobody wanted", D), "señala"]])} />
           {t > T("building a life", D) && t < 876 && <Emote t={t} t0={T("building a life", D)} t1={875.5} tipo="brillos" x={ESTE - 20} y={BASE - 360} s={0.7} />}
           {t > T("a syrian and a british", D) && t < 875 && <Chip t={t} t0={T("a syrian and a british", D)} text="A SYRIAN + A BRITON" color={C.violeta} x={ESTE - 20} y={BASE - 470} centro size={42} />}
         </>
       )}
       {/* al final: la familia que siguió, y un viejo que sigue mirando el norte desde el muro */}
       {t > hogar - 0.3 && [0, 1, 2].map((i) => <Persona key={"n" + i} x={ESTE - 420 + i * 150} y={BASE} h={170 + (i % 2) * 30} t={t} seed={440 + i} ropa={CIVIL(i + 2)} expr="feliz" salta={hogar + 2 + i * 0.7} />)}
-      {t > hogar - 0.3 && <Yo x={ESTE - 800} y={TOP} h={240} t={t} frio viejo casco={false} expr={t > T("because by then it was home", D) ? "feliz" : "neutro"} mira={-0.4} />}
+      {t > hogar - 0.3 && <Yo x={ESTE - 800} y={TOP} h={240} t={t} frio viejo casco={false} mira={-0.4} {...gesto(t, [[hogar, "lee"], [T("some of them simply could not", D), "niega"], [T("because by then it was home", D), "festeja"]])} />}
       {t > hogar && [0, 1, 2].map((i) => { const k = ((t - hogar) * 0.35 + i / 3) % 1; return <div key={"h" + i} style={{ position: "absolute", left: ESTE + 470 + k * 50, top: BASE - 380 - k * 300, width: 70 + k * 90, height: 70 + k * 90, borderRadius: "50%", background: "#e6e0d8", opacity: 0.75 * (1 - k) }} />; })}
     </>
   );
@@ -234,8 +243,8 @@ export const S8: React.FC<{ t: number; c: Cam }> = ({ t }) => {
         </>
       )}
       <Plano t={t} t0={T("because next time we are", D) - 0.05} t1={com - 0.15} desde={[960, 540]} fondo="#2a4a7a"><Ballenero t={t} /></Plano>
-      <Comentarios t={t} t0={com} />
-      <Ch t={t} w="and tell me in the comments" d={D} txt="TELL ME IN THE COMMENTS" y={180} c={C.rojo} size={60} dur={5.5} />
+      <Comentarios t={t} t0={com + 0.3} />
+      <Ch t={t} w="and tell me in the comments" d={D} txt="TELL ME IN THE COMMENTS" y={200} c={C.rojo} size={60} dur={5.5} dt={0.35} />
     </>
   );
 };

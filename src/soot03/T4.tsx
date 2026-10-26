@@ -4,7 +4,7 @@ import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Zzz } from "./ki
 import { Papiro } from "./kit2";
 import { Persona, CIVIL, CENTURION } from "./persona";
 import { TOP, BASE, MC, K, Cam, Pal, Plano, CartelTrampa, pant } from "./mundo";
-import { Gr, Cu, Ch, T, ck, TUNGRO, AUX, Guantes, Dado, Tablero, TablillaGrande, Carro, Jarro } from "./kit3";
+import { Gr, Cu, Ch, T, ck, TUNGRO, AUX, Guantes, Dado, Tablero, TablillaGrande, Carro, Jarro, gesto, Gesto } from "./kit3";
 
 // TRAMPA 4 · EL ABURRIMIENTO (431,6-536,4 s). Mirar al norte: lomas, pasto, más pasto, una oveja (tal vez);
 // el relevo; el cuartel de 8 en dos piecitas; la aduana de la puerta (¿quién? ¿qué? ¿peaje?); dados, tablero,
@@ -16,13 +16,13 @@ const TU = 24000; // la torrecita (turret)
 const FIESTA = M4 - 1600;
 
 export const keys4: K[] = [
-  [432.0, 19000, 560, 0.33], [433.9, YO4, 470, 1.5], ck("absolutely nothing", D, YO4, 470, 2.1), ck("you are posted", D, M4, 520, 0.6),
+  [432.0, 19000, 560, 0.33], [433.9, YO4, 470, 1.5], ck("absolutely nothing", D, YO4, 470, 2.1), ck("you are posted", D, M4, 520, 1.0),
   ck("or worse", D, TU, 470, 0.9), ck("with just a handful", D, TU, 450, 1.3, 0.5), ck("your job is to stand", D, YO4, 470, 1.6, 0.5),
   ck("then you climb down", D, YO4, 560, 1.1), ck("and you go back", D, YO4 - 500, 640, 0.8), ck("there is a gate", D, M4, 760, 0.75),
-  ck("who is crossing", D, M4 + 200, 760, 1.15), ck("many historians now", D, M4, 640, 0.5), ck("so the soldiers did", D, YO4, 470, 1.5),
+  ck("who is crossing", D, M4 + 450, 700, 0.95), ck("many historians now", D, M4, 640, 0.5), ck("so the soldiers did", D, YO4, 470, 1.5),
   ck("at vindolanda", D, YO4, 470, 1.6), ck("and one letter", D, FIESTA, 720, 0.8), ck("a birthday party", D, FIESTA, 740, 1.0),
   ck("on the edge of the world", D, FIESTA, 640, 0.5), ck("because somebody had", D, FIESTA, 740, 1.2), ck("meanwhile", D, M4 - 300, 760, 0.9),
-  ck("rome could not always", D, M4, 600, 0.55), ck("and that was the good part", D, M4 + 1500, 600, 0.5), [536.3, 25500, 580, 0.42],
+  ck("rome could not always", D, M4 - 250, 700, 1.15), ck("and that was the good part", D, M4 - 250, 700, 0.85), [536.3, 25500, 580, 0.42],
 ];
 export const amb4: [number, Pal][] = [[432.0, "gris"], [447.6, "gris"], [495.0, "atardecer"], [513.0, "calido"], [518.1, "gris"]];
 export const lluvia4: [number, number][] = [[432.0, 0.2], [447.6, 0.25], [463.0, 0.1], [478.4, 0.5], [480.0, 0.1], [495.0, 0], [518.0, 0.15], [536.3, 0.1]];
@@ -68,6 +68,8 @@ const Cuartel8: React.FC<{ t: number }> = ({ t }) => {
         const r = i < 4 ? 0 : 1, j = i % 4;
         return <Persona key={i} x={300 + r * 780 + j * 150} y={300 + Math.floor(j / 2) * 200 + 280 - (j % 2) * 30} h={200} t={t} seed={100 + i} ropa={i === 0 ? TUNGRO : AUX(i)} expr={i % 3 ? "triste" : "dormido"} aparece={a - 1.4 + i * 0.08} inclina={(j - 1.5) * 8} />;
       })}
+      {[0, 3, 6].map((i) => <Zzz key={i} x={360 + (i < 4 ? 0 : 780) + (i % 4) * 150} y={340} t={t} />)}
+      <Persona x={1900 - 500 * prog(t, a - 0.6, a + 1)} y={940} h={260} t={t} seed={27} ropa={AUX(4)} casco="legion" flip camina={t < a + 1 ? 1.4 : 0} {...gesto(t, [[a - 0.6, "tiembla"], [a + 1, "encoge"]])} />
       <Chip t={t} t0={a} text="8 MEN · 2 TINY ROOMS" color={C.rojo} x={960} y={110} centro size={70} />
     </AbsoluteFill>
   );
@@ -75,10 +77,12 @@ const Cuartel8: React.FC<{ t: number }> = ({ t }) => {
 // dados, fichas, tablero
 const Juegos: React.FC<{ t: number }> = ({ t }) => (
   <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 50%, #c9a46a, #6b4a2f 85%)" }}>
-    <Tablero x={760} y={560} s={1.7} t={t} t0={T("archaeologists found gaming", D)} />
+    <Tablero x={760} y={560} s={1.7} t={t} t0={T("at vindolanda", D)} />
     {Array.from({ length: 6 }, (_, i) => <div key={i} style={{ position: "absolute", left: 1220 + (i % 3) * 90, top: 420 + Math.floor(i / 3) * 90, width: 70, height: 70, borderRadius: "50%", background: i % 2 ? "#2a1530" : "#fff6e8", border: "6px solid #6a5a40", transform: `scale(${ent(t, T("and counters", D) + i * 0.06)})` }} />)}
     <Dado x={1300 + Math.sin(t * 9) * 10} y={760} s={1.3} t={t} t0={T("and dice", D)} n={6} rot={t * 140} />
     <Dado x={1500} y={760} s={1.3} t={t} t0={T("and dice", D) + 0.15} n={3} rot={-t * 110} />
+    <Persona x={230} y={1060} h={440} t={t} seed={3} ropa={TUNGRO} casco="legion" malla {...gesto(t, [[T("archaeologists found gaming", D), "habla"], [T("and dice", D), "festeja"]])} />
+    <Persona x={1760} y={1060} h={440} t={t} seed={25} ropa={AUX(2)} casco="legion" flip {...gesto(t, [[T("archaeologists found gaming", D), "lee"], [T("and dice", D), "enojado"]])} />
     <Chip t={t} t0={T("archaeologists found gaming", D)} text="GAMING BOARDS" color={C.violeta} x={760} y={200} centro size={60} />
     {t > T("and counters", D) && <Chip t={t} t0={T("and counters", D)} text="COUNTERS" color={C.teal} tinta={C.noche} x={1360} y={300} centro size={54} />}
     {t > T("and dice", D) && <Chip t={t} t0={T("and dice", D)} text="DICE" color={C.ambar} tinta={C.noche} x={1400} y={920} centro size={60} />}
@@ -104,12 +108,13 @@ const Cumple: React.FC<{ t: number }> = ({ t }) => {
   const a = T("and one letter", D), h = T("it is one of the oldest surviving", D);
   return (
     <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #ffb3c8, #8a2a5a 85%)" }}>
-      <TablillaGrande t={t} t0={T("writes to her friend", D)} x={960} y={500} w={1640} vel={34} titulo="CLAUDIA SEVERA → SULPICIA LEPIDINA · VINDOLANDA"
+      <Persona x={230} y={1050} h={460} t={t} seed={77} ropa={{ ...CIVIL(1), tunica: C.violeta, tunica2: "#3a1a7a" }} {...gesto(t, [[a, "habla"], [T("writes to her friend", D), "escribe"], [T("come to my birthday", D), "festeja"], [h, "lee"]])} />
+      <TablillaGrande t={t} t0={T("writes to her friend", D)} x={1100} y={480} w={1380} vel={34} titulo="CLAUDIA SEVERA → SULPICIA LEPIDINA · VINDOLANDA"
         lineas={["“On the 11th of September, sister,", "for the day of my birthday,", "come to us… you will make the day", "more pleasant by your presence.”"]} />
-      {t > h && <div style={{ position: "absolute", left: 300, right: 300, top: 900, height: 110, background: "#fff", borderRadius: 20, transform: `scale(${ent(t, h)}) rotate(-1.5deg)`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Segoe Script','Brush Script MT',cursive", fontSize: 56, color: "#3a1a5a" }}>“Farewell, sister, my dearest soul.”</div>}
-      <Chip t={t} t0={a} t1={T("writes to her friend", D)} text="A BIRTHDAY INVITATION" color={C.rosa} x={960} y={540} centro size={80} />
-      <Chip t={t} t0={T("a woman named", D)} t1={T("writes to her friend", D) + 0.2} text="CLAUDIA SEVERA · A COMMANDER'S WIFE" color={C.violeta} x={960} y={680} centro size={52} />
-      {t > h && <Chip t={t} t0={h + 0.3} text="A WOMAN'S OWN HANDWRITING · LATIN" color={C.ambar} tinta={C.noche} x={960} y={110} centro size={54} />}
+      {t > h && <div style={{ position: "absolute", left: 480, right: 120, top: 890, height: 110, background: "#fff", borderRadius: 20, transform: `scale(${ent(t, h)}) rotate(-1.5deg)`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Segoe Script','Brush Script MT',cursive", fontSize: 56, color: "#3a1a5a" }}>“Farewell, sister, my dearest soul.”</div>}
+      <Chip t={t} t0={a} t1={T("writes to her friend", D)} text="A BIRTHDAY INVITATION" color={C.rosa} x={1100} y={460} centro size={80} />
+      <Chip t={t} t0={T("a woman named", D)} t1={T("writes to her friend", D) + 0.2} text="CLAUDIA SEVERA · A COMMANDER'S WIFE" color={C.violeta} x={1100} y={600} centro size={52} />
+      {t > h && <Chip t={t} t0={h + 0.3} text="A WOMAN'S OWN HANDWRITING · LATIN" color={C.ambar} tinta={C.noche} x={1100} y={130} centro size={54} />}
     </AbsoluteFill>
   );
 };
@@ -120,7 +125,9 @@ const Partes: React.FC<{ t: number }> = ({ t }) => {
     <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #7a5bd1, #1b1240 85%)" }}>
       {Array.from({ length: 14 }, (_, i) => <div key={i} style={{ position: "absolute", left: 120 + (i % 2) * 60, top: 900 - i * 34 - (1 - ent(t, T("the officers file", D) + i * 0.08)) * 600, width: 380, height: 40, background: i % 2 ? "#c9a46a" : "#d8b87a", border: "4px solid #8a6a3a", borderRadius: 6 }} />)}
       {Array.from({ length: 14 }, (_, i) => <div key={"b" + i} style={{ position: "absolute", left: 1420 + (i % 2) * 40, top: 900 - i * 34 - (1 - ent(t, T("duty reports", D) + i * 0.08)) * 600, width: 380, height: 40, background: i % 2 ? "#c9a46a" : "#d8b87a", border: "4px solid #8a6a3a", borderRadius: 6 }} />)}
-      <Papiro t={t} x={960} y={540} w={860} t0={T("the officers file", D) + 0.2} tacha={false} titulo="TODAY · CENTURY OF FLAVIUS" items={it.map(([w, tx]) => ({ txt: tx, t0: T(w, D), monto: "✓" }))} />
+      <Persona x={1640} y={1060} h={400} t={t} seed={91} ropa={CENTURION} casco="centurion" {...gesto(t, [[T("the officers file", D), "escribe"], [T("duty reports", D), "golpea"], [T("who was sent to the workshops", D), "escribe"], [T("who was sent to collect", D), "señala"]])} />
+      <Cu t={t} w="the officers file" d={D} de={0} a={37} sube={6} dur={9} x={960} y={120} size={70} pre="REPORTS TODAY: " color="#fff" />
+      <Papiro t={t} x={900} y={580} w={820} t0={T("the officers file", D) + 0.2} tacha={false} titulo="TODAY · CENTURY OF FLAVIUS" items={it.map(([w, tx]) => ({ txt: tx, t0: T(w, D), monto: "✓" }))} />
     </AbsoluteFill>
   );
 };
@@ -134,18 +141,18 @@ export const W4: React.FC<{ t: number; c: Cam }> = ({ t }) => {
     <>
       {/* vos, de guardia arriba (y bajando) */}
       {!aduana && t < T("and one letter", D) && <Persona x={YO4} y={abajo ? BASE : TOP + (t > T("then you climb down", D) ? 300 * prog(t, T("then you climb down", D), T("then you climb down", D) + 0.6) : 0)} h={230} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" capa="#3f6b2a"
-        expr={t < 437 ? "neutro" : t < 456 ? "dormido" : t < 480 ? "triste" : "dormido"} mira={t > 447 && t < 456 ? 0 : 0.3} miraY={t > 447 && t < 456 ? -0.6 : 0} bD={t > 480 && t < 485 ? 160 : 10} cD={t > 480 && t < 485 ? 140 : 0} />}
+        {...gesto(t, [[432, "encoge"], [T("absolutely nothing", D), "duerme"], [T("you are posted", D), "triste"], [T("your job is to stand", D), "habla"], [T("in the wind", D), "tiembla"], [T("then you climb down", D), "encoge"], [T("so the soldiers did", D), "duerme"], [T("they invented ways", D), "festeja"]])} />}
       {t > T("someone else climbs up", D) && t < T("there is a gate", D) && <Persona x={YO4 + 250} y={TOP} h={230} t={t} seed={27} ropa={AUX(4)} casco="legion" expr="triste" aparece={T("someone else climbs up", D)} />}
       {/* la guarnición del milecastle */}
-      {t > T("you are posted", D) && t < T("or worse", D) + 0.4 && Array.from({ length: 14 }, (_, i) => <Persona key={i} x={M4 - 480 + i * 72} y={TOP - 120} h={120} t={t} seed={110 + i} ropa={AUX(i)} casco="legion" aparece={T("you are posted", D) + 0.6 + i * 0.07} expr="triste" />)}
+      {t > T("you are posted", D) && t < T("or worse", D) + 0.4 && Array.from({ length: 14 }, (_, i) => <Persona key={i} x={M4 - 640 + i * 98} y={TOP - 120} h={170} t={t} seed={110 + i} ropa={AUX(i)} casco="legion" aparece={T("you are posted", D) + 0.6 + i * 0.07} {...gesto(t, [[T("you are posted", D), ["habla", "duerme", "encoge", "triste"][i % 4] as Gesto]])} />)}
       {/* la torrecita con su puñadito */}
-      {t > T("or worse", D) && t < T("your job is to stand", D) + 0.4 && [0, 1, 2].map((i) => <Persona key={i} x={TU - 100 + i * 100} y={TOP - 290} h={140} t={t} seed={120 + i} ropa={AUX(i + 3)} casco="legion" aparece={T("the turrets", D) + i * 0.15} expr="triste" />)}
+      {t > T("or worse", D) && t < T("your job is to stand", D) + 0.4 && [0, 1, 2].map((i) => <Persona key={i} x={TU - 100 + i * 100} y={TOP - 290} h={140} t={t} seed={120 + i} ropa={AUX(i + 3)} casco="legion" aparece={T("or worse", D) + i * 0.15} expr="triste" />)}
       {/* la aduana: fila de viajeros en la puerta */}
       {aduana && (
         <>
-          <Persona x={M4 + 280} y={BASE} h={240} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" capa="#3f6b2a" expr={t > 478 ? "triste" : "neutro"} bD={100} cD={60} manoD={<rect x={-60} y={-80} width={120} height={80} rx={6} fill="#c9a46a" stroke="#8a6a3a" strokeWidth={5} />} />
+          <Persona x={M4 + 280} y={BASE} h={240} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" capa="#3f6b2a" {...gesto(t, [[T("there is a gate", D), "escribe"], [T("who is crossing", D), "habla"], [T("what are they carrying", D), "señala"], [T("are they paying the toll", D), "golpea"], [T("many historians now", D), "escribe"], [T("more like a border", D), "triste"]])} manoD={<rect x={-60} y={-80} width={120} height={80} rx={6} fill="#c9a46a" stroke="#8a6a3a" strokeWidth={5} />} />
           <div style={{ position: "absolute", left: M4 + 120, top: BASE - 120, width: 320, height: 120, background: "#8a5a2a", borderRadius: 8 }} />
-          {[0, 1, 2, 3].map((i) => <Persona key={i} x={M4 + 700 + i * 260} y={BASE} h={220} t={t} seed={130 + i} ropa={CIVIL(i)} flip expr={i === 0 ? "orgullo" : "neutro"} camina={0} manoD={i % 2 ? <g transform="translate(0 -20) scale(0.45)"><path d="M -60 -40 Q -90 70 0 76 Q 90 70 60 -40 Z" fill="#a8783a" /></g> : undefined} />)}
+          {[0, 1, 2, 3].map((i) => <Persona key={i} x={M4 + 700 + i * 260} y={BASE} h={220} t={t} seed={130 + i} ropa={CIVIL(i)} flip {...gesto(t, [[T("there is a gate", D), i === 0 ? "habla" : "encoge"], [T("are they paying the toll", D), i === 0 ? "niega" : "triste"], [T("many historians now", D), i % 2 ? "tiembla" : "habla"]])} manoD={i % 2 ? <g transform="translate(0 -20) scale(0.45)"><path d="M -60 -40 Q -90 70 0 76 Q 90 70 60 -40 Z" fill="#a8783a" /></g> : undefined} />)}
           <Carro x={M4 + 1900} y={BASE - 120} s={0.8} t={0} carga="barril" />
         </>
       )}
@@ -163,7 +170,7 @@ export const W4: React.FC<{ t: number; c: Cam }> = ({ t }) => {
         </>
       )}
       {/* el centurión con su pila de partes */}
-      {t > T("meanwhile", D) - 0.4 && t < T("rome could not always", D) + 1 && <Persona x={M4 - 300} y={BASE} h={250} t={t} seed={91} ropa={CENTURION} casco="centurion" expr="enojado" bD={100} cD={50} manoD={<rect x={-60} y={-200} width={120} height={200} rx={6} fill="#c9a46a" stroke="#8a6a3a" strokeWidth={5} />} />}
+      {t > T("meanwhile", D) - 0.4 && t < T("rome could not always", D) + 1 && <Persona x={M4 - 300} y={BASE} h={250} t={t} seed={91} ropa={CENTURION} casco="centurion" {...gesto(t, [[T("meanwhile", D) - 0.4, "carga"], [T("rome could not always", D), "tiembla"], [T("but it could always", D), "festeja"]])} manoD={<rect x={-60} y={-200} width={120} height={200} rx={6} fill="#c9a46a" stroke="#8a6a3a" strokeWidth={5} />} />}
     </>
   );
 };
@@ -197,7 +204,7 @@ export const S4: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Gr t={t} w="more like a border" d={D} txt="A BORDER CROSSING… IN THE RAIN" y={200} size={84} c={C.ambar} dur={1.7} />
       <Ch t={t} w="so the soldiers did" d={D} txt="WHAT BORED PEOPLE ALWAYS DO" y={150} c={C.violeta} size={56} dur={2.9} />
       {t > T("so the soldiers did", D) + 0.5 && t < T("at vindolanda", D) && <Zzz x={yo[0] + 40} y={yo[1] - 40} t={t} />}
-      <Gr t={t} w="they invented ways" d={D} txt="INVENT WAYS TO PASS THE TIME" y={880} size={74} c={C.lima} dur={2.3} />
+      <Gr t={t} w="they invented ways" d={D} txt="INVENT WAYS TO PASS THE TIME" y={200} size={74} c={C.lima} dur={2.3} />
       <Plano t={t} t0={T("at vindolanda", D) - 0.1} t1={T("they found a pair", D) - 0.15} desde={[yo[0], yo[1]]} fondo="#6b4a2f"><Juegos t={t} /></Plano>
       <Plano t={t} t0={T("they found a pair", D) - 0.05} t1={T("and one letter", D) - 0.15} desde={[960, 600]} fondo="#8a2a3a"><Box t={t} /></Plano>
       <Plano t={t} t0={T("and one letter", D)} t1={T("a birthday party", D) - 0.15} desde={[960, 600]} fondo="#8a2a5a"><Cumple t={t} /></Plano>
