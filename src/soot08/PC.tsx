@@ -21,8 +21,8 @@ const KM: K[] = [
   [271.0, 3300, -380, 0.95], [277.0, 3350, -380, 1.0], [284.9, 3000, -380, 1.0], [287.0, 2600, -330, 1.2], [293.0, 2560, -280, 1.5], [295.7, 2560, -280, 1.6],
 ];
 const KL: K[] = [
-  [204.8, 0, -560, 0.75], [210.3, 0, -560, 0.7], [214.3, 0, -560, 0.72],
-  [251.7, 200, -320, 1.0], [253.3, 500, -220, 1.5], [257.9, 400, -250, 1.35], [262.5, -330, -260, 1.25], [263.9, -420, -260, 1.3], [267.5, -480, -260, 1.38], [271.0, -400, -300, 1.4],
+  [204.8, -450, -380, 1.15], [207.4, 480, -380, 1.1], [208.4, 250, -540, 0.82], [210.3, 0, -560, 0.72], [214.3, 0, -560, 0.72],
+  [251.7, 200, -320, 1.0], [253.3, 560, -150, 1.9], [257.9, 480, -160, 1.8], [262.5, -330, -200, 1.65], [263.9, -420, -200, 1.7], [267.5, -480, -200, 1.75], [271.0, -400, -300, 1.4],
 ];
 const lado = (t: number) => (t >= 204.8 && t < 214.3) || (t >= 251.7 && t < 271.0);
 
@@ -127,7 +127,7 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
         </>
       )}
 
-      <Primer t={t} t0={205.0} t1={214.2} lado="der" g={{ expr: t < 210.8 ? "sorpresa" : "miedo", mira: -1 }} />
+      <Primer t={t} t0={208.3} t1={214.2} lado="der" g={{ expr: t < 210.8 ? "sorpresa" : "miedo", mira: -1 }} />
       {/* ── capas de pantalla ── */}
       <Latigo t={t} at={[189.75, 204.8, 214.3, 251.7, 271.0]} />
       <Horror t={t} t0={189.75} n={2} nombre="THE MACHINE" t1={192.0} />
@@ -137,7 +137,8 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
       <Gran t={t} t0={198.3} t1={200.2} text="THE SPINNING MULE" y={170} size={130} color={C.ambar} />
       <Chip t={t} t0={200.6} t1={204.6} text="AS LONG AS A BUS" color={C.oro} tinta={C.noche} x={960} y={150} centro size={80} />
       <Chip t={t} t0={202.6} t1={204.6} text="HUNDREDS OF SPINDLES" color={C.noche} x={960} y={950} centro size={66} />
-      <Chip t={t} t0={205.2} t1={207.6} text="ROLLS OUT →" color={C.teal} tinta={C.noche} x={1300} y={150} centro size={74} />
+      <Chip t={t} t0={205.2} t1={207.6} text="ROLLS OUT →" color={C.teal} tinta={C.noche} x={960} y={150} centro size={74} />
+      <Chip t={t} t0={204.9} t1={207.6} text="THE CARRIAGE · IT NEVER STOPS" color={C.noche} x={960} y={260} centro size={54} />
       <Chip t={t} t0={206.0} t1={208.2} text="STRETCH + TWIST" color={C.violeta} x={760} y={950} centro size={62} />
       <Chip t={t} t0={208.5} t1={210.3} text="← ROLLS BACK" color={C.naranja} x={620} y={150} centro size={74} />
       {[[210.8, "OUT"], [211.5, "BACK"], [212.1, "OUT"], [212.8, "BACK"]].map(([t0, s], i) => <Gran key={i} t={t} t0={t0 as number} t1={(t0 as number) + 0.6} text={s as string} y={260} x={i % 2 ? 640 : 1280} size={150} color={i % 2 ? C.naranja : C.teal} />)}

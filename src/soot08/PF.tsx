@@ -146,8 +146,8 @@ export const PF: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={548.6} t1={552.0} text="SO HUNGRY THEY STOLE THE PIGS' FOOD" color={C.noche} x={960} y={150} centro size={58} />
       <Chip t={t} t0={552.1} t1={555.0} text="HIS BOOK SHOCKED THE COUNTRY" color={C.violeta} x={960} y={150} centro size={64} />
       {/* el libro que se abre, y lectores que se tapan la boca */}
-      {t > 552.2 && t < 555.1 && (() => { const e = ent(t, 552.25), ab = prog(t, 552.6, 553.3); return (
-        <div style={{ position: "absolute", left: 960, top: 560, transform: `translate(-50%,-50%) scale(${e * (1 - prog(t, 554.8, 555.1))}) rotate(-3deg)` }}>
+      {t > 552.2 && t < 555.4 && (() => { const e = ent(t, 552.25), ab = prog(t, 552.6, 553.3); return (
+        <div style={{ position: "absolute", left: 820, top: 560, transform: `translate(-50%,-50%) scale(${1.3 * e * (1 - prog(t, 555.15, 555.4))}) rotate(-3deg)` }}>
           <div style={{ position: "relative", width: 760, height: 480 }}>
             <div style={{ position: "absolute", left: 380, top: 0, width: 380, height: 480, background: "linear-gradient(90deg,#e9dcbc,#fbf3dc)", border: "8px solid #2a1530", borderRadius: "6px 18px 18px 6px" }}>{[0, 1, 2, 3, 4, 5, 6, 7].map((r) => <div key={r} style={{ position: "absolute", left: 36, top: 60 + r * 46, width: 290 - (r % 3) * 40, height: 12, borderRadius: 6, background: "#8a7a64", opacity: ab }} />)}</div>
             <div style={{ position: "absolute", left: 380 - 380 * ab, top: 0, width: 380 * Math.max(ab, 0.02), height: 480, background: ab < 0.5 ? "#7a2f3a" : "linear-gradient(270deg,#e9dcbc,#fbf3dc)", border: "8px solid #2a1530", borderRadius: "18px 6px 6px 18px" }} />
@@ -155,7 +155,7 @@ export const PF: React.FC<{ t: number }> = ({ t }) => {
             <div style={{ position: "absolute", left: 0, right: 0, top: 500, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 40, color: "#fff", WebkitTextStroke: "7px #2a1530", paintOrder: "stroke fill" }}>PUBLISHED 1828</div>
           </div>
         </div>); })()}
-      <Primer t={t} t0={552.4} t1={555.0} lado="der" g={{ seed: 140, ropa: OBRERO(2), gorro: "copa", barba: true, expr: "sorpresa", bD: 140, cD: 130 }} emo="excl" h={1050} />
+      <Primer t={t} t0={552.4} t1={555.4} lado="der" x={1560} g={{ seed: 140, ropa: OBRERO(2), gorro: "copa", barba: true, expr: "sorpresa", bD: 140, cD: 130 }} emo="excl" h={900} />
       {/* colgado de las muñecas sobre una máquina en marcha: sólo silueta */}
       {t > 555.1 && t < 563.5 && (
         <>
@@ -171,7 +171,15 @@ export const PF: React.FC<{ t: number }> = ({ t }) => {
       )}
       <Chip t={t} t0={555.3} t1={558.2} text="HUNG BY HIS WRISTS" color={C.rojo} x={960} y={1010} centro size={62} />
       <Chip t={t} t0={558.4} t1={563.4} text="LEGS LIFTED · OVER A MOVING MACHINE" color={C.noche} x={960} y={1010} centro size={56} />
-      <Chip t={t} t0={563.7} t1={565.4} text="NOT EVERY MILL WAS LIKE THAT" color={C.violeta} x={960} y={300} centro size={68} />
+      {/* contraste: la fábrica buena (New Lanark: chicos chicos a la escuela, no a la máquina) */}
+      {t > 563.5 && t < 565.7 && (() => { const e = ent(t, 563.55), o = prog(t, 565.4, 565.7); return (
+        <div style={{ position: "absolute", left: 960, top: 600, width: 1240, height: 600, transform: `translate(-50%,-50%) scale(${e * (1 - o)})`, background: "linear-gradient(180deg,#fff3c4,#ffd98a)", border: "10px solid #2a1530", borderRadius: 34, overflow: "hidden" }}>
+          <div style={{ position: "absolute", left: 60, top: 60, width: 460, height: 270, background: "#2f4a3a", border: "12px solid #8a5a2c", borderRadius: 10, color: "#f4f1e6", fontFamily, fontWeight: 700, fontSize: 64, textAlign: "center", lineHeight: "120px" }}>A B C<br />1 2 3</div>
+          <div style={{ position: "absolute", left: 600, top: 60, width: 600, fontFamily, fontWeight: 800, fontSize: 58, color: "#2a1530", lineHeight: 1.05 }}>NEW LANARK MILL</div>
+          <div style={{ position: "absolute", left: 600, top: 140, width: 600, fontFamily, fontWeight: 700, fontSize: 38, color: "#6b4a2e", lineHeight: 1.15 }}>UNDER 10? SCHOOL,<br />NOT THE MACHINE</div>
+          {[0, 1, 2, 3].map((i) => <Persona key={i} t={t} seed={150 + i} x={680 + i * 150} y={570} h={i % 2 ? 250 : 270} ropa={i % 2 ? NINA : NINO} expr="feliz" bD={i === 1 && t > 564 ? 150 : 20} cD={i === 1 ? 120 : 20} aparece={563.7 + i * 0.12} />)}
+        </div>); })()}
+      <Chip t={t} t0={563.7} t1={565.4} text="NOT EVERY MILL WAS LIKE THAT" color={C.violeta} x={960} y={150} centro size={68} />
       <Gran t={t} t0={565.4} t1={567.6} text="NO LAW SAID IT COULDN'T BE" y={520} size={100} color={C.rojo} />
     </AbsoluteFill>
   );

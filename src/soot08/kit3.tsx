@@ -548,7 +548,7 @@ export const Estatua: React.FC<P & { t: number }> = ({ t, ...p }) => (
     <rect x={-300} y={-420} width={600} height={420} fill="#b9b2a6" />
     <rect x={-340} y={-460} width={680} height={60} fill="#d4cdc0" />
     <rect x={-340} y={-40} width={680} height={40} fill="#9a9488" />
-    <text x={0} y={-200} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={64} fill="#6e675c" letterSpacing={6}>LINCOLN</text>
+    <text x={0} y={-320} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={64} fill="#6e675c" letterSpacing={6}>LINCOLN</text>
     <g fill="#4f6b5a">
       <path d="M -60 -460 L -70 -820 L 70 -820 L 60 -460 Z" />
       <path d="M -130 -820 Q -150 -1100 0 -1120 Q 150 -1100 130 -820 L 160 -700 L -160 -700 Z" />

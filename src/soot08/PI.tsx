@@ -3,7 +3,7 @@ import { AbsoluteFill, interpolate } from "remotion";
 import { C, ent, prog, Chip, Emote, Particulas, Pergamino, fontFamily } from "./kit";
 import { Campana } from "./kit2";
 import { AtlanticoMapa, PlantaAlgodon, Carta, Estatua, Velero, Mar } from "./kit3";
-import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, Sala, RutaAlgodon, Arbolito, NINO, NINA, OBRERO, DUENO, GenteFab, FCX } from "./mundo";
+import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, Sala, RutaAlgodon, Arbolito, NINO, NINA, OBRERO, DUENO, GenteFab, Gente, FCX } from "./mundo";
 import { Gran, Cuenta, Sello, Tilde, Carretes, Flash, sacudon, Velo, Latigo, Lista, Globo } from "./capas";
 import { Retrato } from "./piezas";
 import { Persona } from "./persona";
@@ -16,11 +16,11 @@ import { Persona } from "./persona";
 export const I0 = 718.8, I1 = 900.6;
 
 const KI: K[] = [
-  [718.8, 0, -620, 2.0], [720.4, 300, -600, 0.62], [722.4, 700, -540, 1.0], [729.7, 400, -600, 0.65],
-  [729.8, -1300, -500, 0.8], [736.4, -1150, -480, 0.85], [744.8, -1300, -400, 1.0], [748.6, -1250, -400, 1.0], [750.3, 3000, -420, 0.95], [761.6, 3000, -420, 0.95],
+  [718.8, 0, -620, 2.0], [720.4, 300, -600, 0.62], [722.4, 350, -540, 0.92], [729.7, 300, -600, 0.7],
+  [729.8, -1300, -500, 0.8], [736.4, -1150, -480, 0.85], [744.8, -1300, -400, 1.0], [748.6, -1250, -400, 1.0], [750.3, 2750, -300, 1.2], [755.6, 2800, -300, 1.2], [756.5, 2900, -330, 0.95], [761.6, 2950, -330, 0.97],
   [761.71, 4300, -1450, 0.95], [769.0, 4380, -1400, 1.25], [779.5, 4350, -1420, 1.1],
   [779.6, 2600, -520, 0.62], [790.2, 2700, -520, 0.7], [801.2, 2900, -520, 0.62],
-  [801.27, -4700, -520, 0.5], [809.7, -4700, -460, 0.75], [813.8, -4500, -460, 0.8], [813.9, -1600, -520, 0.55], [817.4, -200, -520, 0.55],
+  [801.27, -4700, -420, 0.7], [805.0, -4800, -330, 1.1], [809.7, -4700, -330, 1.15], [813.8, -4500, -460, 0.8], [813.9, -1600, -520, 0.55], [817.4, -200, -520, 0.55],
   [821.75, 3300, -1500, 0.32], [823.9, 3300, -1500, 0.3],
   [823.95, -1900, -480, 0.68], [836.7, -1000, -480, 0.72],
   [836.79, 0, -620, 0.58], [848.4, 0, -600, 0.68],
@@ -75,10 +75,18 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
   if (s === "carta") {
     for (let i = 0; i < 7; i++) gP.push({ seed: 220 + i, x: -2100 + i * 300, y: 0, h: 440 + (i % 2) * 40, ropa: OBRERO(i), gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, expr: t > 854.7 ? "orgullo" : "sorpresa", mira: 1, flip: i > 3 });
   }
+  const gPf: GenteFab[] = [];
   if (s === "plaza") {
-    for (let i = 0; i < 6; i++) {
-      const x = 1500 + ((t - 870.85) * 170 + i * 520) % 4400;
-      gP.push({ seed: 230 + i, x, y: 0, h: 460 + (i % 3) * 30, ropa: OBRERO(i + 1), gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, camina: 1.2, expr: "neutro" });
+    // al pie de la estatua: dos chicos y una madre la miran (antes de «walk right past»)
+    if (t < 879.6) {
+      gPf.push({ seed: 240, x: FCX - 520, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: "sorpresa", mira: 1, miraY: -1 });
+      gPf.push({ seed: 241, x: FCX + 500, y: 0, h: 280, ropa: NINA, expr: "orgullo", flip: true, mira: -1, miraY: -1 });
+      gPf.push({ seed: 242, x: FCX + 760, y: 0, h: 450, ropa: OBRERO(3), gorro: "cofia", largo: true, flip: true, expr: "orgullo", miraY: -1 });
+    }
+    // «la mayoría pasa de largo»: caminan POR DELANTE, nunca tapados
+    if (t > 879.4) for (let i = 0; i < 5; i++) {
+      const x = FCX - 2200 + ((t - 879.4) * 230 + i * 700) % 4400;
+      gPf.push({ seed: 230 + i, x, y: 40, h: 470 + (i % 3) * 30, ropa: OBRERO(i + 1), gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, camina: 1.2, expr: "neutro" });
     }
   }
   const afuera = s === "calle" || s === "fiesta" || s === "hambre" || s === "carta" || s === "plaza";
@@ -97,7 +105,10 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
             <RutaAlgodon t={t}>
               {Array.from({ length: 14 }, (_, i) => <PlantaAlgodon key={i} t={t} seed={i + 3} x={-6200 + i * 260} y={0 + (i % 3) * 30} s={1} />)}
               {[-5300, -4900, -4500, -4100].map((x, i) => <Persona key={i} t={t} seed={240 + i} x={x} y={10} h={440} ropa={ESCLAVO(i)} expr="triste" inclina={8} bD={100} cD={40} flip={i % 2 === 1} />)}
-              <Velero t={t} x={interpolate(t, [813.9, 817.5], [-2200, 400], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={60} s={0.9} />
+              <Velero t={t} x={interpolate(t, [813.9, 815.6], [-2400, -1050], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={60} s={0.9} />
+              {/* el bloqueo: la marina del Norte cierra el paso */}
+              {t > 814.6 && <Velero t={t} x={interpolate(t, [814.6, 815.4], [900, 150], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={60} s={0.85} fardos={false} />}
+              {t > 815.3 && <svg style={{ position: "absolute", left: -560, top: -900, overflow: "visible", opacity: ent(t, 815.35) }} width={1} height={1}><line x1={0} y1={0} x2={0} y2={1000} stroke={C.rojo} strokeWidth={26} strokeDasharray="70 40" /><g transform="translate(0 -90)"><circle r={80} fill={C.rojo} stroke="#fff" strokeWidth={12} /><path d="M -34 -34 L 34 34 M 34 -34 L -34 34" stroke="#fff" strokeWidth={18} strokeLinecap="round" /></g></svg>}
             </RutaAlgodon>
           </Espacio>
         </>
@@ -143,9 +154,11 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
                 <Arbolito t={t} x={2700} y={0} s={1} />
                 <Arbolito t={t} x={4500} y={0} s={1.1} />
                 <Estatua t={t} x={FCX} y={0} s={0.85} />
-                {t > 877.3 && <svg style={{ position: "absolute", left: FCX - 230, top: -280, overflow: "visible", opacity: ent(t, 877.4) }} width={1} height={1}>
-                  {Array.from({ length: 4 }, (_, i) => <rect key={i} x={20} y={i * 40} width={[400, 360, 380, 260][i]} height={14} rx={7} fill="#6e675c" />)}
-                </svg>}
+                {t > 877.3 && <div style={{ position: "absolute", left: FCX - 250, top: -215, width: 500, textAlign: "center", fontFamily, fontWeight: 800, color: "#4a443a", opacity: ent(t, 877.4), lineHeight: 1.05 }}>
+                  <div style={{ fontSize: 38 }}>“SUBLIME CHRISTIAN HEROISM”</div>
+                  <div style={{ fontSize: 24, marginTop: 8, letterSpacing: 3 }}>A. LINCOLN TO THE WORKERS OF MANCHESTER · 1863</div>
+                </div>}
+                <Gente t={t} g={gPf} />
               </>
             )}
           </Espacio>
@@ -167,11 +180,11 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={739.2} t1={744.6} text="MILL CHILDREN: TREATED WORSE THAN THE ENSLAVED" color={C.rojo} x={960} y={150} centro size={52} />
       <Gran t={t} t0={744.9} t1={747.0} text="READERS WERE FURIOUS" y={200} size={110} color={C.rojo} />
       <Chip t={t} t0={747.1} t1={749.1} text="THE LETTER WOULD NOT GO AWAY" color={C.violeta} x={960} y={150} centro size={64} />
-      <Velo t={t} t0={749.3} t1={760.4} op={0.45} />
+      <Velo t={t} t0={749.3} t1={760.4} op={0.6} />
       <Sello t={t} t0={749.4} t1={760.3} text="FACTORY ACT · 1833" x={960} y={190} size={100} color={C.lima} rot={-6} />
-      <Lista t={t} t0={750.4} t1={760.3} x={90} y={330} size={50} items={[{ txt: "UNDER 9: BANNED", t0: 750.6, ok: true }, { txt: "HOURS LIMITED", t0: 753.4, ok: true }, { txt: "FACTORY INSPECTORS", t0: 755.5, ok: true }]} />
-      <Cuenta t={t} t0={756.6} t1={757.8} de={0} a={4} suf=" INSPECTORS" x={1300} y={420} size={90} color={C.ambar} fuera={760.3} />
-      <Chip t={t} t0={757.9} t1={760.3} text="FOR THE WHOLE COUNTRY" color={C.rojo} x={1300} y={560} centro size={52} />
+      <Lista t={t} t0={750.4} t1={760.3} x={1180} y={330} size={50} items={[{ txt: "UNDER 9: BANNED", t0: 750.6, ok: true }, { txt: "HOURS LIMITED", t0: 753.4, ok: true }, { txt: "FACTORY INSPECTORS", t0: 755.5, ok: true }]} />
+      <Cuenta t={t} t0={756.6} t1={757.8} de={0} a={4} suf=" INSPECTORS" x={1450} y={700} size={90} color={C.ambar} fuera={760.3} />
+      <Chip t={t} t0={757.9} t1={760.3} text="FOR THE WHOLE COUNTRY" color={C.rojo} x={1450} y={830} centro size={52} />
       <Chip t={t} t0={760.5} t1={761.6} text="BUT IT WAS A START" color={C.lima} tinta={C.noche} x={960} y={150} centro size={70} />
       <Chip t={t} t0={761.8} t1={763.4} text="ONE SMALL PROBLEM" color={C.noche} x={960} y={150} centro size={66} />
       <Gran t={t} t0={763.6} t1={765.4} text="HOW DO YOU PROVE A CHILD IS 9?" y={200} size={96} color={C.ambar} />
@@ -195,6 +208,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={804.8} t1={809.6} text="ALL THAT COTTON CAME FROM SOMEWHERE" color={C.noche} x={960} y={150} centro size={60} />
       <Chip t={t} t0={809.8} t1={813.8} text="THE AMERICAN SOUTH · PICKED BY ENSLAVED PEOPLE" color={C.rojo} x={960} y={150} centro size={52} />
       <Gran t={t} t0={813.95} t1={817.4} text="1861 · CIVIL WAR" y={200} size={120} color={C.crema} />
+      <Chip t={t} t0={815.3} t1={817.4} text="THE NAVAL BLOCKADE" color={C.rojo} x={960} y={950} centro size={66} />
       <Chip t={t} t0={818.1} t1={821.6} text="THE NORTH BLOCKADES THE SOUTHERN PORTS" color={C.noche} x={960} y={150} centro size={56} />
       <Chip t={t} t0={819.6} t1={821.6} text="THE COTTON STOPS" color={C.rojo} x={960} y={950} centro size={66} />
       <Gran t={t} t0={821.8} t1={823.9} text="THE MILLS WENT SILENT" y={540} size={120} color={C.crema} />
@@ -207,7 +221,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={846.8} t1={848.4} text="WHILE GOING HUNGRY" color={C.rojo} x={960} y={950} centro size={68} />
       {t > 848.5 && t < 861.6 && (() => {
         const k = prog(t, 848.6, 850.8);
-        return <Carta t={t} t0={848.6} x={1920 - k * 1000} y={500} s={0.32 + k * 0.22} abre={prog(t, 854.6, 855.4)} lineas={t > 855 ? ["To the working men of Manchester:", "“…sublime Christian heroism", "not surpassed in any age", "or in any country.”"] : []} />;
+        return <Carta t={t} t0={848.6} x={1920 - k * 960} y={300} s={0.3 + k * 0.32} abre={prog(t, 854.6, 855.4)} lineas={t > 855 ? ["Washington · 19 January 1863", "To the working men of Manchester:", "“…sublime Christian heroism,", "not surpassed in any age…”"] : []} />;
       })()}
       <Chip t={t} t0={848.6} t1={851.6} text="A LETTER FROM WASHINGTON" color={C.violeta} x={960} y={130} centro size={62} />
       <Retrato t={t} t0={851.8} t1={854.6} x={330} y={480} g={{ seed: 261, ropa: DUENO, gorro: "copa", barba: true, expr: "neutro" }} nombre="ABRAHAM LINCOLN" sub="JANUARY 1863" s={0.85} />

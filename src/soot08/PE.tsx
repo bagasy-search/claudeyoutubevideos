@@ -5,6 +5,7 @@ import { Moneda3, Ficha, Aviso, Termometro } from "./kit3";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, NINO, NINA, OBRERO, DUENO, CAPATAZ, GenteFab, HILANDERO } from "./mundo";
 import { Gran, Cuenta, Sello, Tachado, Flash, sacudon, Velo, Horror, Latigo } from "./capas";
 import { Primer } from "./piezas";
+import { Persona } from "./persona";
 
 // PARTE E · HORROR #4, LAS MULTAS (392,9-473,5 s). Seguimos en la fábrica abierta: la oficina del dueño, el cartel de
 // multas de Tyldesley que los obreros imprimieron → el aviso renglón por renglón (ventana, sucio, lavarse, silbar,
@@ -99,8 +100,9 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
       <Flash t={t} at={[440.1]} />
       {t > 440.0 && t < 445.6 && (
         <>
-          <AbsoluteFill style={{ background: "rgba(27,18,64,.93)", opacity: prog(t, 440, 440.2) * (1 - prog(t, 445.3, 445.6)) }} />
-          {Array.from({ length: 6 }, (_, i) => <Moneda3 key={i} t={t} t0={440.15 + i * 0.12} t1={445.3} x={460 + i * 200} y={640} s={0.85} txt="1s" />)}
+          <AbsoluteFill style={{ background: "rgba(27,18,64,.97)", opacity: prog(t, 440, 440.2) * (1 - prog(t, 445.3, 445.6)) }} />
+          {Array.from({ length: 6 }, (_, i) => <Moneda3 key={i} t={t} t0={440.15 + i * 0.12} t1={445.3} x={300 + i * 190} y={640} s={0.85} txt="1s" />)}
+          <Persona t={t} seed={79} x={1700} y={1020} h={430} ropa={NINO} gorro="gorra" flip mira={-1} expr="triste" bD={150} cD={130} bI={150} cI={130} aparece={440.4} />
           <Gran t={t} t0={440.1} t1={445.3} text="6 SHILLINGS" y={330} size={190} color={C.rojo} />
           <Chip t={t} t0={441.4} t1={445.3} text="YOU PAY FOR THE POWER IT DIDN'T USE ON YOU" color={C.ambar} tinta={C.noche} x={960} y={900} centro size={50} />
         </>
@@ -116,12 +118,13 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
       )}
       <Chip t={t} t0={453.8} t1={455.3} text="SOME MILLS WENT FURTHER" color={C.noche} x={960} y={150} centro size={70} />
       <Gran t={t} t0={455.4} t1={457.4} text="THE TRUCK SYSTEM" y={190} size={130} color={C.ambar} />
-      {t > 456.8 && t < 459.4 && [0, 1, 2].map((i) => <Ficha key={i} t={t} t0={456.9 + i * 0.25} t1={459.2} x={700 + i * 260} y={560} s={0.9} />)}
+      {t > 455.4 && t < 459.4 && [0, 1, 2].map((i) => <Ficha key={i} t={t} t0={455.6 + i * 0.3} t1={459.2} x={interpolate(t, [455.6 + i * 0.3, 456.4 + i * 0.3], [1700, 1180 + i * 170], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={interpolate(t, [455.6 + i * 0.3, 456.4 + i * 0.3], [420, 640 - (i % 2) * 40], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} s={0.7} />)}
+      {t > 455.4 && t < 459.4 && <Persona t={t} seed={78} x={1780} y={900} h={420} ropa={CAPATAZ} flip mira={-1} expr="orgullo" bD={t < 457 ? 120 : 30} cD={t < 457 ? 80 : 20} aparece={455.4} />}
       <Chip t={t} t0={457.6} t1={459.3} text="WAGES PAID IN TOKENS" color={C.noche} x={960} y={950} centro size={64} />
       <Chip t={t} t0={459.5} t1={461.4} text="ONLY GOOD AT THE BOSS'S SHOP" color={C.rojo} x={960} y={150} centro size={66} />
       <Chip t={t} t0={461.5} t1={463.5} text="PRICES SET BY THE BOSS" color={C.noche} x={960} y={950} centro size={66} />
       <Velo t={t} t0={463.5} t1={465.9} op={0.65} />
-      <Sello t={t} t0={463.6} t1={465.8} text="BANNED · TRUCK ACT 1831" x={960} y={540} size={120} color={C.lima} rot={-4} />
+      <Sello t={t} t0={463.6} t1={465.8} text="BANNED · TRUCK ACT 1831" x={960} y={900} size={100} color={C.lima} rot={-4} />
       <Chip t={t} t0={465.9} t1={467.8} text="…IT TOOK A LONG TIME TO DISAPPEAR" color={C.violeta} x={960} y={950} centro size={58} />
       <Chip t={t} t0={468.1} t1={471.7} text="14 HOURS · AND THE MONEY GOES BACK UP" color={C.noche} x={960} y={150} centro size={58} />
       <Gran t={t} t0={471.8} t1={473.4} text="HE ALREADY OWNS YOUR DAY" y={900} size={100} color={C.rojo} />

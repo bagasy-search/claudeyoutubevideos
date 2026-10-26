@@ -14,7 +14,7 @@ import { Persona } from "./persona";
 export const H0 = 650.2, H1 = 718.8;
 
 const KH: K[] = [
-  [650.2, 3300, -1500, 0.32], [652.3, 2500, -380, 1.3], [658.5, 2600, -380, 1.35], [660.5, 2800, -400, 1.25], [666.4, 2600, -420, 1.1], [673.6, 2600, -420, 1.15],
+  [650.2, 3300, -1500, 0.32], [652.3, 2500, -232, 1.9], [658.5, 2560, -226, 1.95], [660.5, 2820, -275, 1.6], [666.4, 2700, -290, 1.5], [673.6, 2600, -420, 1.15],
   [673.61, 300, -600, 0.62], [677.9, 500, -580, 0.75], [680.6, 820, -520, 1.1], [683.8, 820, -520, 1.15], [691.3, 700, -560, 0.9],
   [691.31, -1500, -420, 0.85], [699.5, -1200, -420, 0.9], [711.3, -900, -420, 0.9],
   [711.31, 300, -380, 1.3], [716.0, -900, -380, 1.35], [718.8, -1110, -430, 1.3],
@@ -34,7 +34,7 @@ export const PH: React.FC<{ t: number }> = ({ t }) => {
   const sh = sacudon(t, [717.55]);
   const dobla = prog(t, 666.4, 672.2);
   const g0: GenteFab[] = [];
-  if (s === "fab") g0.push({ seed: 2, x: 2700, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t > 658.5 ? "triste" : "neutro", inclina: 12 * prog(t, 670.5, 672.2), ladea: 6 * dobla, mira: 1 });
+  if (s === "fab") g0.push({ seed: 2, x: 2700, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t > 658.5 ? "triste" : "neutro", inclina: 12 * prog(t, 670.5, 672.2) + (t > 660.5 && t < 666.4 ? 2.2 * Math.sin(t * 11) : 0), ladea: 6 * dobla, mira: 1 });
   const gS: GenteFab[] = [
     ...[-1150, -850, -560, -260].map((x, i) => ({ seed: 70 + i, x, y: -170, h: 470, ropa: DUENO, gorro: "copa" as const, barba: i % 2 === 0, expr: (t > 680.6 ? "sorpresa" : "neutro") as GenteFab["expr"], mira: 1 })),
     { seed: 78, x: interpolate(t, [674, 679.5], [1500, 800], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), y: -200, h: 480, ropa: OBRERO(2), flip: true, camina: t > 674 && t < 679.5 ? 0.6 : 0, expr: "triste", inclina: 10, bI: 8, manoI: <Muleta />, habla: t > 680.6 && t < 683.6 && Math.floor(t * 3) % 2 === 0 },
@@ -75,7 +75,7 @@ export const PH: React.FC<{ t: number }> = ({ t }) => {
       {/* ── capas de pantalla ── */}
       <Latigo t={t} at={[650.25, 673.61, 691.31, 711.31]} />
       <Horror t={t} t0={650.25} n={7} nombre="YOUR BODY" t1={652.1} />
-      <Lista t={t} t0={652.4} t1={658.3} x={90} y={150} titulo="YOU SURVIVED…" size={52} items={[
+      <Lista t={t} t0={652.4} t1={658.3} x={90} y={150} titulo="YOU SURVIVED…" size={52} previa items={[
         { txt: "THE CLOCK", t0: 653.6, ok: true }, { txt: "THE MACHINE", t0: 654.4, ok: true }, { txt: "THE DUST", t0: 655.2, ok: true },
         { txt: "THE FINES", t0: 655.9, ok: true }, { txt: "THE STRAP", t0: 656.6, ok: true }, { txt: "THE GEARS", t0: 657.6, ok: true },
       ]} />

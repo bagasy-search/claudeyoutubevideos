@@ -20,8 +20,8 @@ const KA: K[] = [
   [0, 2300, -330, 1.75], [1.5, 2800, -380, 1.6],
   [2.05, FCX, -3440, 1.5], [3.4, FCX, -3440, 1.85],
   [3.85, 3380, -420, 1.25], [6.5, 3420, -400, 1.3], [8.0, 3560, -330, 1.75], [10.5, 3380, -380, 1.35], [13.3, 3500, -330, 1.3],
-  [14.05, FCX, -330, 5.2], [14.7, 2850, -440, 1.6], [17.9, 2800, -440, 1.65], [18.8, 3300, -420, 1.55], [23.6, 3200, -420, 1.7],
-  [25.3, 2300, -1900, 0.31], [27.9, 2100, -2100, 0.27], [30.4, 1900, -2600, 0.2], [32.2, 1900, -700, 0.6], [34.4, 2400, -420, 0.95],
+  [14.05, FCX, -330, 5.2], [14.7, 2850, -300, 1.6], [17.9, 2800, -300, 1.65], [18.8, 3300, -420, 1.55], [23.6, 3200, -420, 1.7],
+  [25.3, 2300, -1900, 0.31], [27.9, 2100, -2100, 0.27], [30.4, 1900, -2600, 0.2], [32.2, 1900, -700, 0.6], [34.4, 2650, -240, 1.3],
   [35.2, 3150, -380, 1.3], [36.3, 3100, -420, 0.95], [38.6, 3100, -300, 1.1], [40.6, 3700, -560, 1.7], [43.4, 3000, -420, 1.15],
   [45.7, 2800, -460, 1.05], [48.5, 2850, -460, 1.1], [49.4, 3300, -470, 1.5], [51.0, 3300, -470, 1.55],
   [51.9, -1110, -420, 1.0], [52.8, -1175, -395, 7.5],
@@ -29,7 +29,7 @@ const KA: K[] = [
 // adentro de la casa (otro espacio: entramos por la ventana del cuarto y salimos por la misma)
 const KC: K[] = [[52.8, 610, -660, 4.2], [53.6, 0, -470, 1.25], [56.0, 80, -460, 1.3], [58.4, 240, -450, 1.32], [61.5, 380, -470, 1.3], [63.3, 610, -660, 1.4], [64.3, 610, -660, 5.0]];
 // afuera otra vez: de la ventana a la fábrica abierta con el mapa de los 7, y de ahí al horizonte
-const KB: K[] = [[64.3, -1175, -395, 5.5], [65.4, -600, -900, 0.9], [67.4, 1600, -1700, 0.33], [72.6, 2300, -1750, 0.27], [75.6, 2250, -1800, 0.25], [78.9, 2400, -1800, 0.27], [79.6, 3500, -420, 1.15], [81.3, 3500, -400, 1.3]];
+const KB: K[] = [[64.3, -1175, -395, 5.5], [65.4, -600, -900, 0.9], [67.4, 2000, -1800, 0.26], [72.6, 2220, -1900, 0.22], [75.6, 2220, -1930, 0.21], [78.9, 2240, -1930, 0.215], [79.6, 3500, -420, 1.15], [81.3, 3500, -400, 1.3]];
 
 // los 7 horrores marcados sobre la fábrica abierta (piso, x, y)
 const MARCAS: [number, number, string][] = [[FCX, -3440, "THE CLOCK"], [3300, -420, "THE MACHINE"], [1800, -1500, "THE AIR"], [4400, -1600, "THE FINES"], [5550, -420, "THE STRAP"], [2400, -2400, "THE ACCIDENT"], [-1110, -500, "YOUR BODY"]];
@@ -44,7 +44,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
   // gente del pueblo: el chico, la fila de chicos al amanecer, los de adentro
   const gente: GenteFab[] = [];
   if (t < 13.6) gente.push({ seed: 1, x: chicoX(t), y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t < 3.9 ? "miedo" : t < 5.1 ? "sorpresa" : "triste", camina: t < 3.9 ? 2.4 : 0, inclina: t < 3.9 ? 8 : 0, bD: t > 4.2 && t < 6 ? 120 : undefined, cD: 40, mira: t > 4 ? 1 : 0 });
-  if (t > 30 && t < 36) for (let i = 0; i < 9; i++) gente.push({ seed: 40 + i, x: interpolate(t, [30, 36], [-200 + i * 330, 900 + i * 330]), y: 10 + (i % 2) * 14, h: 250 + (i % 3) * 22, ropa: i % 3 ? OBRERO(i) : i % 2 ? NINA : NINO, gorro: i % 3 === 1 ? "cofia" : "gorra", largo: i % 3 === 1, camina: 1.7, expr: i % 2 ? "triste" : "neutro" });
+  if (t > 30 && t < 36) for (let i = 0; i < 9; i++) gente.push({ seed: 40 + i, x: interpolate(Math.min(t, 33.6), [30, 36], [-200 + i * 330, 900 + i * 330]), y: 10 + (i % 2) * 14, h: 250 + (i % 3) * 22, ropa: i % 3 ? OBRERO(i) : i % 2 ? NINA : NINO, gorro: i % 3 === 1 ? "cofia" : "gorra", largo: i % 3 === 1, camina: t > 33.6 ? 0 : 1.7, expr: t > 33.6 ? (i % 2 ? "miedo" : "sorpresa") : i % 2 ? "triste" : "neutro", mira: t > 33.6 ? 0 : 1, bD: t > 33.7 && i % 3 === 0 ? 150 : undefined, cD: t > 33.7 && i % 3 === 0 ? 120 : undefined });
   const adentro: GenteFab[] = [
     { seed: 2, x: t < 38.7 ? 2700 : t < 40.6 ? interpolate(t, [38.7, 40.4], [2700, 3050]) : 2800, y: t > 38.7 && t < 40.6 ? 60 : 0, h: 300, ropa: NINO, gorro: "gorra", expr: t < 20 ? "miedo" : t < 23.7 ? "triste" : t < 45 ? "neutro" : "triste", inclina: t > 38.7 && t < 40.6 ? 78 : 0, bD: t > 40.6 && t < 43 ? 150 : undefined, cD: 60, mira: 1 },
     { seed: 3, x: 4300, y: 0, h: 470, ropa: HILANDERO, expr: t > 43.5 && t < 45 ? "enojado" : "neutro", habla: t > 43.5 && t < 45, flip: true, bD: 30 },
@@ -92,7 +92,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
           <Espacio cam={cam}>
             <CasaAdentro t={t} gente={casa} />
             {/* monedas en la mesa y el pan */}
-            {t > 54.9 && [0, 1, 2, 3].map((i) => <Moneda3 key={i} t={t} t0={54.9 + i * 0.22} x={560 + i * 70} y={-370} s={0.38} txt="d" oro />)}
+            {t > 54.9 && [0, 1, 2, 3].map((i) => <Moneda3 key={i} t={t} t0={54.9 + i * 0.22} x={430 + i * 150} y={-400} s={0.95} txt="d" oro />)}
             {t > 58.5 && [0, 1].map((i) => <Moneda3 key={`s${i}`} t={t} t0={58.6 + i * 0.25} x={860 + i * 70} y={-370} s={0.42} txt="1s" t1={61.2} />)}
             {t > 60.3 && t < 61.25 && <Pan x={700} y={-420} s={1.2 * ent(t, 60.3)} />}
           </Espacio>
@@ -171,19 +171,20 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={61.2} t1={62.1} text="NOT EATING" color={C.rojo} x={960} y={170} centro size={80} />
       <Tachado t={t} t0={61.25} t1={62.1} x={960} y={420} w={420} h={300} />
       <Sello t={t} t0={63.6} t1={64.3} text="HIRED" x={960} y={300} size={170} color={C.lima} rot={8} />
-      <Chip t={t} t0={65.3} t1={67.4} text="ONE WORKING LIFE" color={C.violeta} x={960} y={140} centro size={74} />
+      <Chip t={t} t0={64.5} t1={67.4} text="ONE WORKING LIFE" color={C.violeta} x={1180} y={140} centro size={74} />
+      <Chip t={t} t0={65.0} t1={67.4} text="INSIDE A VICTORIAN MILL · 5:30 AM" color={C.ambar} tinta={C.noche} x={1180} y={250} centro size={50} />
       <Chip t={t} t0={68.7} t1={71.6} text="EVERY WAY IT TRIES TO BREAK YOU" color={C.rojo} x={960} y={140} centro size={66} />
       <Carretes t={t} t0={71.8} t1={73.6} n={7} y={940} s={0.95} />
       <Gran t={t} t0={71.9} t1={73.6} text="7" y={180} size={260} color={C.rojo} />
       <Velo t={t} t0={74.3} t1={79.3} op={0.5} />
       {/* la carta que viene de 4.000 millas */}
       {t > 74.4 && t < 79.4 && (() => {
-        const k = prog(t, 74.4, 77.3);
-        return <Carta t={t} t0={74.4} x={1780 - k * 360} y={600 + Math.sin(k * Math.PI) * -120} s={0.42 + k * 0.1} abre={0} />;
+        const k = prog(t, 74.4, 75.3);
+        return <Carta t={t} t0={74.4} x={1500 - k * 1080} y={470 + Math.sin(k * Math.PI) * -140} s={0.4 + k * 0.08} abre={0} />;
       })()}
-      <Chip t={t} t0={74.6} t1={77} text="A PRESIDENT" color={C.violeta} x={960} y={140} centro size={70} />
-      <Chip t={t} t0={75.5} t1={79.2} text="4,000 MILES AWAY" color={C.teal} tinta={C.noche} x={960} y={940} centro size={70} />
-      <Chip t={t} t0={77.6} t1={79.2} text="WHY?" color={C.rojo} x={960} y={140} centro size={90} />
+      <Chip t={t} t0={74.6} t1={77} text="A PRESIDENT" color={C.violeta} x={420} y={130} centro size={70} />
+      <Chip t={t} t0={75.5} t1={79.2} text="4,000 MILES AWAY" color={C.teal} tinta={C.noche} x={420} y={760} centro size={62} />
+      <Chip t={t} t0={77.6} t1={79.2} text="WHY?" color={C.rojo} x={420} y={130} centro size={90} />
       <Velo t={t} t0={79.5} t1={81.5} op={0.25} />
       <Gran t={t} t0={79.6} t1={81.3} text="YOUR SHIFT" y={390} size={170} />
       <Gran t={t} t0={80.4} t1={81.3} text="STARTS NOW" y={590} size={190} color={C.ambar} />

@@ -134,6 +134,8 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
       <Gran t={t} t0={104.7} t1={107.0} text="EVERY MACHINE" x={1180} y={200} size={120} color={C.ambar} />
       <Primer t={t} t0={104.75} t1={106.9} lado="izq" g={{ expr: "sorpresa", miraY: -0.6 }} emo="excl" />
       <Primer t={t} t0={154.3} t1={156.9} lado="izq" g={{ expr: "miedo", miraY: -1 }} emo="preg" />
+      <Primer t={t} t0={174.3} t1={175.8} lado="izq" g={{ expr: "triste", camina: 1.1 }} />
+      <Chip t={t} t0={174.4} t1={175.7} text="FINALLY HOME · 8:30 PM" color={C.noche} x={1180} y={150} centro size={62} />
       <Chip t={t} t0={108.6} t1={110.0} text="THE GATE IS SHUT" color={C.noche} x={960} y={150} centro size={76} />
       <Sello t={t} t0={110.1} t1={112.3} text="DOCKED" x={960} y={330} size={180} />
       {t > 111.5 && t < 115.3 && (
@@ -179,7 +181,7 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={154.2} t1={157.0} text="THE CLOCK WASN'T ON YOUR SIDE" color={C.rojo} x={960} y={150} centro size={66} />
       {t > 157.0 && t < 166.0 && (
         <>
-          <Velo t={t} t0={157} t1={165.7} op={0.62} />
+          <Velo t={t} t0={157} t1={165.7} op={0.88} />
           {[0, 1].map((i) => {
             const h = i === 0 ? (t < 161 ? 5.67 + prog(t, 157, 159.4) * 0.33 : 19 + prog(t, 161, 161.6) * 0.33) : hora;
             return (
@@ -188,12 +190,14 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
               </div>
             );
           })}
+          {/* el patrón mueve la aguja del reloj de la fábrica */}
+          {t > 159.2 && t < 165.7 && <Persona t={t} seed={77} x={1700} y={1000} h={420} ropa={DUENO} gorro="copa" flip mira={-1} expr={t < 163.2 ? "orgullo" : "neutro"} aparece={159.3} bD={(t > 159.4 && t < 160.1) || (t > 161.6 && t < 162.4) ? 150 + 12 * Math.sin(t * 14) : 30} cD={(t > 159.4 && t < 160.1) || (t > 161.6 && t < 162.4) ? 110 : 20} />}
           <Chip t={t} t0={157.2} t1={165.7} text="REAL TIME" color={C.teal} tinta={C.noche} x={580} y={800} centro size={60} />
           <Chip t={t} t0={157.4} t1={165.7} text="MILL CLOCK" color={C.rojo} x={1340} y={800} centro size={60} />
           <Chip t={t} t0={159.4} t1={161.4} text="MORNING: MOVED FORWARD" color={C.violeta} x={960} y={950} centro size={60} />
           <Chip t={t} t0={161.6} t1={163.0} text="EVENING: MOVED BACK" color={C.violeta} x={960} y={950} centro size={60} />
-          <Cuenta t={t} t0={163.2} t1={163.2} de={12} a={12} x={960} y={950} size={100} color={C.crema} pre="OFFICIAL: " suf="-HOUR DAY" fuera={164.95} />
-          <Cuenta t={t} t0={165.1} t1={165.1} de={13} a={13} x={960} y={950} size={120} color={C.rojo} pre="REALLY: " suf="+ HOURS" fuera={165.7} />
+          <Cuenta t={t} t0={163.2} t1={163.2} de={12} a={12} x={960} y={130} size={100} color={C.crema} pre="OFFICIAL: " suf="-HOUR DAY" fuera={164.95} />
+          <Cuenta t={t} t0={165.1} t1={165.1} de={13} a={13} x={960} y={130} size={120} color={C.rojo} pre="REALLY: " suf="+ HOURS" fuera={165.7} />
         </>
       )}
       <Flash t={t} at={[165.1]} color="#ffdddd" />

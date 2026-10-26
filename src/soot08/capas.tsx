@@ -107,14 +107,16 @@ export const BarraDia: React.FC<{ t: number; t0: number; x?: number; y?: number;
 };
 
 // ── lista con tildes (renglones que entran)
-export const Lista: React.FC<{ t: number; t0: number; x: number; y: number; items: { txt: string; t0: number; ok?: boolean }[]; t1?: number; size?: number; titulo?: string; color?: string }> = ({ t, t0, x, y, items, t1 = 1e9, size = 56, titulo, color = C.violeta }) => {
+export const Lista: React.FC<{ t: number; t0: number; x: number; y: number; items: { txt: string; t0: number; ok?: boolean }[]; t1?: number; size?: number; titulo?: string; color?: string; previa?: boolean }> = ({ t, t0, x, y, items, t1 = 1e9, size = 56, titulo, previa, color = C.violeta }) => {
   if (t < t0 || t > t1 + 0.25) return null;
   const e = ent(t, t0);
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `scale(${e * sale(t, t1)})`, transformOrigin: "0 0", background: "rgba(27,18,64,.88)", borderRadius: 28, padding: "26px 44px 18px", boxShadow: "12px 14px 0 rgba(10,5,30,.45)", border: `6px solid ${color}` }}>
       {titulo && <div style={{ fontFamily, fontWeight: 700, fontSize: size * 0.8, color: C.ambar, marginBottom: 12, letterSpacing: 3 }}>{titulo}</div>}
       {items.map((it, i) => {
-        if (t < it.t0) return <div key={i} style={{ height: size * 1.35 }} />;
+        if (t < it.t0) return previa
+          ? <div key={i} style={{ display: "flex", alignItems: "center", gap: 22, height: size * 1.35, fontFamily, fontWeight: 700, fontSize: size, color: "#fff", opacity: 0.32, whiteSpace: "nowrap" }}><span style={{ display: "inline-block", width: size * 0.9 - 10, height: size * 0.9 - 10, borderRadius: size * 0.45, border: "5px solid #fff" }} />{it.txt}</div>
+          : <div key={i} style={{ height: size * 1.35 }} />;
         const a = ent(t, it.t0);
         return (
           <div key={i} style={{ display: "flex", alignItems: "center", gap: 22, height: size * 1.35, fontFamily, fontWeight: 700, fontSize: size, color: "#fff", transform: `translateX(${(1 - a) * -80}px)`, opacity: a, whiteSpace: "nowrap" }}>
