@@ -52,9 +52,9 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
   <>
     {/* 797,89 · TRAP #7 · THE RETIREMENT — desde el casco vacío de Plinio subimos al sol */}
     <Escena t={t} t0={797.89} t1={800.33} entra="sube" sale="fundido" fondo="none" golpes={[798.0, 799.2]}>
-      <Galera x={960} y={760} s={0.5} t={t} boga={0.4} vela corvus={null} />
-      <Pancarta t={t} t0={798.0} n={7} titulo="THE RETIREMENT" y={360} />
-      <Apion t={t} t0={798.1} x={1620} y={1110} h={440} borda={960} acts={[[798.1, "piensa"], [799.2, "festeja"]]} />
+      <Galera x={960} y={800} s={0.42} t={t} boga={0.4} vela corvus={null} />
+      <Pancarta t={t} t0={798.0} n={7} titulo="THE RETIREMENT" y={300} />
+      <Apion t={t} t0={798.1} x={1620} y={1050} h={420} borda={1020} acts={[[798.1, "piensa"], [799.2, "festeja"]]} />
     </Escena>
 
     {/* 800,33 · "But let's say you survived. The bench, the crabs, the rams, the storms." */}
@@ -121,12 +121,13 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
     {/* 826,83 · "Many veterans stayed near Misenum and Ravenna. Their tombstones still survive. The ship's name like a coat of arms. The Mars. The Triton. The Victoria. The Hope." */}
     <Escena t={t} t0={826.75} t1={831.19} entra="fundido" sale="fundido" fondo="#1f5c9c" golpes={[826.9, 828.2, 829.3]}>
       <MapaMar t={t} puntos={[{ n: "MISENUM", t0: 828.2, color: C.rojo }, { n: "RAVENNA", t0: 829.3, color: C.oro }]} zoom={{ n: "ROME", z: 2.2, t: [826.9, 828.0] }} />
+      <Apion t={t} t0={826.9} x={1660} y={1060} h={400} acts={[[827.0, "habla"], [828.2, "senala"], [829.3, "orgullo"]]} />
       <Chip t={t} t0={826.9} text="THE VETERANS STAYED" color={C.violeta} x={960} y={140} centro size={58} />
     </Escena>
     <Escena t={t} t0={831.19} t1={842.09} entra="fundido" sale="fundido" fondo="none" quieta golpes={[831.2, 833.4, 838.55, 839.4, 840.35, 841.4]}>
       <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><path d="M 0 820 Q 480 760 960 790 Q 1440 820 1920 770 L 1920 1080 L 0 1080 Z" fill="#5c8f3e" /><path d="M 0 880 Q 480 840 960 860 Q 1440 880 1920 850 L 1920 1080 L 0 1080 Z" fill="#4a7a30" /></svg>
       {[["MARS", 838.53], ["TRITON", 839.39], ["VICTORIA", 840.35], ["SPES", 841.39]].map(([b, t0], i) => {
-        const tt = t0 as number, x = 300 + i * 440;
+        const tt = t0 as number, x = 230 + i * 400;
         const luz = t >= tt ? ent(t, tt) : 0;
         return (
           <React.Fragment key={i}>
@@ -137,12 +138,12 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
         );
       })}
       {(() => {
-        const x = interpolate(t, [831.3, 834.0, 835.2, 837.4], [-120, 230, 230, 1400], cl);
+        const x = interpolate(t, [831.3, 834.0, 835.2, 837.4], [-120, 230, 230, 1640], cl);
         const agacha = t > 834.0 && t < 835.2;
         return (
           <>
             <Persona x={x} y={1000} h={420} t={t} seed={7} ropa={APION} viejo camina={agacha ? 0 : 1.1} expr="triste" inclina={agacha ? 12 : 4} bD={agacha ? 70 : 20} cD={30} manoD={t < 834.6 ? <g><circle r={14} fill="#ff6a8a" /><circle cx={12} cy={-8} r={12} fill="#ffd27a" /><line x1={0} y1={10} x2={0} y2={60} stroke="#3f8f3e" strokeWidth={6} /></g> : undefined} />
-            <Persona x={x - 120} y={1000} h={280} t={t} seed={172} ropa={HIJO} camina={agacha ? 0 : 1.4} expr="triste" bD={40} cD={20} />
+            <Persona x={x + 130} y={1000} h={280} t={t} seed={172} ropa={HIJO} camina={agacha ? 0 : 1.4} expr="triste" bD={40} cD={20} />
           </>
         );
       })()}
@@ -163,6 +164,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
               {Array.from({ length: 12 }, (_, i) => <line key={i} x1={i * 170} y1={784} x2={i * 170} y2={1080} stroke="#6b3a1f" strokeWidth={6} />)}
               <rect x={meta - 8} y={520} width={16} height={260} fill="#fff" />
               <path d={`M ${meta + 8} 520 L ${meta + 120} 550 L ${meta + 8} 580 Z`} fill={C.rojo} />
+              <rect x={420} y={700} width={210} height={24} rx={8} fill="#6b3a1f" /><rect x={438} y={720} width={20} height={64} fill="#5a3418" /><rect x={592} y={720} width={20} height={64} fill="#5a3418" />
               <g transform={`translate(520 785) scale(1.1)`}><Remero fase={t * 0.5 * Math.PI * 2} ropa="#2fb5d8" piel="#c98b62" pelo="#d8d0c4" expr="cansado" seed={7} t={t} /></g>
             </svg>
             {t > 846.6 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><g opacity={0.45}><rect x={1042} y={520} width={16} height={260} fill="#fff" /><path d="M 1058 520 L 1170 550 L 1058 580 Z" fill="#fff" /></g><text x={1050} y={830} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={36} fill="#fff" stroke="#2a1530" strokeWidth={8} paintOrder="stroke">PROMISED: 26</text></svg>}
@@ -204,6 +206,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
           </svg>
         </>
       )}
+      <Apion t={t} t0={859.1} t1={862.55} x={1000} y={1020} h={320} acts={[[859.2, "asombro"], [861.6, "festeja"]]} />
       <Chip t={t} t0={859.01} t1={862.4} text="THOUSANDS LINED UP" color={C.violeta} x={600} y={200} centro size={56} />
       <Chip t={t} t0={861.59} t1={862.4} text="WILLINGLY" color={C.rojo} x={600} y={300} centro size={60} />
       {t >= 862.59 && (
@@ -231,6 +234,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={876.77} text="STILL IN THE NAVY" color={C.violeta} x={1500} y={260} centro size={46} />
       <Chip t={t} t0={878.05} text="SIGNS: ANTONIUS MAXIMUS" color={C.rojo} x={1500} y={360} centro size={40} />
       {t >= 880.17 && [0, 1, 2].map((i) => <Persona key={i} x={1360 + i * 150} y={900} h={240} t={t} seed={180 + i} ropa={CIVIL(i + 1)} expr="feliz" aparece={880.2 + i * 0.2} bD={i === 1 ? 150 : 30} />)}
+      {t >= 874.51 && <Apion t={t} t0={874.51} x={1260} y={960} h={420} desde="nada" acts={[[874.6, "habla"], [878.1, "orgullo"], [880.2, "festeja"]]} />}
       <Chip t={t} t0={880.17} text="+ GREETINGS FROM HIS KIDS" color="#3fbf5a" x={1500} y={460} centro size={40} />
       <Sello t={t} t0={882.91} text="HE MADE IT" x={760} y={560} color="#3fbf5a" size={120} />
     </Escena>

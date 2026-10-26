@@ -448,8 +448,9 @@ export const Remo: React.FC<Pos & { largo?: number }> = ({ largo = 900, ...p }) 
 );
 export const Correa: React.FC<Pos> = (p) => (
   <Obj {...p} w={240} h={240}>
-    <ellipse cx={0} cy={0} rx={90} ry={60} fill="none" stroke="#7a4520" strokeWidth={26} />
-    <path d="M 80 -10 L 120 -40 L 130 -10 Z" fill="#7a4520" />
+    <ellipse cx={0} cy={0} rx={90} ry={60} fill="none" stroke="#2a160a" strokeWidth={36} />
+    <ellipse cx={0} cy={0} rx={90} ry={60} fill="none" stroke="#d9a05a" strokeWidth={24} />
+    <path d="M 80 -10 L 120 -40 L 130 -10 Z" fill="#d9a05a" stroke="#2a160a" strokeWidth={5} />
   </Obj>
 );
 export const Galleta: React.FC<Pos> = (p) => (
@@ -578,12 +579,12 @@ export const Relampago: React.FC<{ t: number; ts: number[]; x?: number }> = ({ t
   if (g === undefined) return null;
   const u = t - g;
   const r = rnd(Math.round(g * 100));
-  const xx = x + (r() - 0.5) * 700;
+  const xx = x + (r() - 0.5) * 160;
   const pts = [[xx, -20]];
   for (let i = 1; i < 9; i++) pts.push([pts[i - 1][0] + (r() - 0.5) * 140, i * 80]);
   return (
     <>
-      {u < 0.06 && <AbsoluteFill style={{ background: "#eef4ff", opacity: 0.12, pointerEvents: "none" }} />}
+      {u < 0.05 && <AbsoluteFill style={{ background: "#eef4ff", opacity: 0.07, pointerEvents: "none" }} />}
       <svg style={{ position: "absolute", inset: 0, pointerEvents: "none" }} width={1920} height={1080}>
         <polyline points={pts.map((p) => p.join(",")).join(" ")} fill="none" stroke="#fff" strokeWidth={14} strokeLinejoin="round" opacity={Math.max(0, 1 - u * 2.6)} />
         <polyline points={pts.map((p) => p.join(",")).join(" ")} fill="none" stroke="#bcd8ff" strokeWidth={26} strokeLinejoin="round" opacity={Math.max(0, 0.3 - u)} />

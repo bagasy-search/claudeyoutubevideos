@@ -88,7 +88,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={341.36} t1={343.9} entra="atraviesa" ix={960} iy={600} sale="fundido" fondo="none" golpes={[341.7, 342.7]}>
       <Galera x={960} y={720} s={0.5} t={t} boga={1.0} vela={false} />
       <Pancarta t={t} t0={341.4} n={3} titulo="THE RHYTHM" y={400} />
-      <Apion t={t} t0={341.5} x={1620} y={1110} h={440} borda={960} acts={[[341.5, "rema"], [342.7, "cansado"]]} />
+      <Apion t={t} t0={341.5} x={1620} y={1050} h={420} borda={1020} acts={[[341.5, "rema"], [342.7, "cansado"]]} />
     </Escena>
 
     {/* 343,9 · "Now, the famous drum. Every movie has it. A huge bald man beating a drum, faster and faster, while the slaves suffer below." */}
@@ -155,8 +155,8 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
           {t > 385.05 && t < 385.4 && <AbsoluteFill style={{ background: "#fff", opacity: 0.3 * (1 - prog(t, 385.05, 385.4)) }} />}
         </AbsoluteFill>
       )}
-      <Apion t={t} t0={376.2} t1={381} x={1700} y={1110} h={420} borda={960} acts={[[376.6, "senala"], [378.2, "asombro"]]} />
-      <Chip t={t} t0={376.6} t1={380.8} text="OAR: 4+ METERS" color={C.oro} tinta={C.noche} x={960} y={900} centro size={64} />
+      <Apion t={t} t0={376.2} t1={381} x={1700} y={1050} h={420} borda={1020} acts={[[376.6, "senala"], [378.2, "asombro"]]} />
+      <Chip t={t} t0={376.6} t1={380.8} text="OAR: 4+ METERS" color={C.oro} tinta={C.noche} x={960} y={770} centro size={64} />
       <Chip t={t} t0={378.2} t1={380.8} text="A FOREST OF OARS" color={C.violeta} x={960} y={150} centro size={58} />
       <Chip t={t} t0={381.04} t1={384.8} text="0.5 SECONDS LATE" color={C.rojo} x={960} y={150} centro size={62} />
       <Chip t={t} t0={383.0} t1={384.8} text="BLADES CRASH" color={C.ambar} tinta={C.noche} x={960} y={260} centro size={56} />
@@ -191,7 +191,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
           })()}
         </svg>
       )}
-      <Apion t={t} t0={388.5} t1={392.1} x={1680} y={1110} h={440} borda={960} acts={[[388.7, "asombro"], [390.4, "miedo"]]} />
+      <Apion t={t} t0={388.5} t1={392.1} x={1680} y={1050} h={420} borda={1020} acts={[[388.7, "asombro"], [390.4, "miedo"]]} />
       {t < 392.1 && <Grande t={t} t0={388.9} text="'CATCHING A CRAB'" y={170} size={120} color={C.crema} />}
       <Chip t={t} t0={392.2} text="NOT EVEN 1 OAR PER MAN" color={C.violeta} x={960} y={140} centro size={58} />
       <Chip t={t} t0={394.5} text="2 MEN · 1 OAR" color={C.oro} tinta={C.noche} x={960} y={250} centro size={70} />
@@ -214,11 +214,11 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
       <Calor t={t} y={480} op={0.45} />
       <Galera x={760} y={720} s={0.6} t={t} boga={0.6} vela={false} />
       <Jarra t={t} t0={410.5} x={1560} y={720} litros={5} />
-      <Apion t={t} t0={405.3} x={270} y={1110} h={440} borda={960} flip={false} acts={[[405.4, "rema"], [408.0, "cansado"], [410.5, "asombro"], [412.0, "triste"]]} />
+      <Apion t={t} t0={405.3} x={270} y={1050} h={420} borda={1020} flip={false} acts={[[405.4, "rema"], [408.0, "cansado"], [410.5, "asombro"], [412.0, "triste"]]} />
       <Chip t={t} t0={405.3} text="PERFECT TIME" color={C.violeta} x={120} y={140} size={60} />
       <Chip t={t} t0={407.0} text="FOR HOURS" color={C.rojo} x={120} y={250} size={60} />
       <Chip t={t} t0={408.0} text="SUMMER SUN" color={C.oro} tinta={C.noche} x={120} y={360} size={56} />
-      <Chip t={t} t0={412.0} text="LITERS OF SWEAT / DAY" color="#1d6f8a" x={1560} y={1010} centro size={46} />
+      <Chip t={t} t0={412.0} text="LITERS OF SWEAT / DAY" color="#1d6f8a" x={1560} y={880} centro size={46} />
     </Escena>
 
     {/* 415,5 · "the ship carries almost no water. What it does carry is hard dry biscuit and posca... sour wine mixed with water. Breakfast, lunch and dinner of champions." */}

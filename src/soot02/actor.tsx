@@ -40,18 +40,22 @@ export const Apion: React.FC<{ t: number; t0: number; x: number; y?: number; h?:
   return (
     <>
       <Persona x={xx} y={y} h={h} t={t} seed={seed} ropa={ropa} casco={casco} expr={expr} habla={habla} camina={k < 1 ? 1.8 : 0} bD={bD} cD={cD} bI={bI} cI={cI} inclina={inclina} salta={salta} flip={flip ?? lado === "der"} />
-      {borda !== undefined && (
-        // borda del barco en primer plano: el personaje está a bordo, agarrado a la baranda
-        <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
-          <rect x={-20} y={borda} width={1960} height={1100 - borda} fill="#7a4a24" />
-          <rect x={-20} y={borda} width={1960} height={26} fill="#a8723e" />
-          {Array.from({ length: 13 }, (_, i) => <rect key={i} x={i * 160 + 40} y={borda + 26} width={18} height={1080 - borda} fill="#5a3418" />)}
-        </svg>
-      )}
+      {borda !== undefined && <Borda y={borda} />}
       {emo && k >= 1 && <Emote t={t} t0={ta + 0.1} tipo={emo} x={c.x} y={c.y} s={c.s} />}
     </>
   );
 };
+
+// borda del barco en primer plano: el personaje está a bordo, detrás de la baranda
+export const Borda: React.FC<{ y: number }> = ({ y: borda }) => (
+        <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+          {Array.from({ length: 17 }, (_, i) => <rect key={i} x={i * 120 + 20} y={borda - 120} width={14} height={124} fill="#6b3f1e" />)}
+          <rect x={-20} y={borda - 132} width={1960} height={18} rx={9} fill="#c48a4c" stroke="#5a3418" strokeWidth={4} />
+          <rect x={-20} y={borda} width={1960} height={1100 - borda} fill="#7a4a24" />
+          <rect x={-20} y={borda} width={1960} height={16} fill="#a8723e" />
+          {Array.from({ length: 6 }, (_, i) => <circle key={i} cx={160 + i * 330} cy={borda + 40} r={9} fill="#3e2414" />)}
+        </svg>
+);
 
 // escenario interior para los planos que eran fondo violeta liso: oficina de reclutamiento / bodega del barco
 export const Sala: React.FC<{ t: number; tipo?: "oficina" | "bodega" }> = ({ t, tipo = "oficina" }) => {

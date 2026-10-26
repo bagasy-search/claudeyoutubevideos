@@ -95,7 +95,7 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
         <Relampago t={t} ts={[12.6, 14.3]} />
         <Grande t={t} t0={12.66} text="255 BC" y={380} size={260} color={C.crema} />
         <Chip t={t} t0={13.92} text="BEFORE CHRIST" color={C.violeta} x={960} y={570} centro size={56} />
-        <Apion t={t} t0={12.3} x={1640} y={1110} h={440} borda={960} acts={[[12.66, "asombro"], [13.92, "miedo"]]} />
+        <Apion t={t} t0={12.3} x={1640} y={1050} h={420} borda={1020} acts={[[12.66, "asombro"], [13.92, "miedo"]]} />
       </Escena>
 
       {/* 15,14 · "one single storm off the coast of Sicily destroyed..." — la flota en olas gigantes; la primera se da vuelta */}
@@ -106,9 +106,9 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
         <Galera x={480} y={640} s={0.58} t={t} boga={0.9} balanceo={5} hunde={prog(t, 17.64, 18.6)} agua="#151a40" ola={1} />
         <Salpica t={t} t0={17.7} x={480} y={640} s={1.4} n={24} />
         <Relampago t={t} ts={[15.7, 17.6]} x={900} />
-        <Chip t={t} t0={15.34} text="ONE STORM" color={C.rojo} x={110} y={160} size={78} />
+        <Chip t={t} t0={15.34} text="ONE STORM" color={C.rojo} x={150} y={160} size={78} />
         <Chip t={t} t0={17.2} text="SICILY" color={C.oro} tinta={C.noche} x={1500} y={170} size={66} />
-        <Apion t={t} t0={15.14} x={1640} y={1110} h={440} borda={960} desde="nada" acts={[[15.14, "miedo"], [17.64, "asombro"]]} />
+        <Apion t={t} t0={15.14} x={1640} y={1050} h={420} borda={1020} desde="nada" acts={[[15.14, "miedo"], [17.64, "asombro"]]} />
       </Escena>
 
       {/* 18,40 · "284 Roman warships" — la flota entera como grilla: 364 barcos, se dan vuelta 284 */}
@@ -213,8 +213,8 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
         <Galera x={interpolate(t, [39.8, 41.6], [2400, 1400], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={670} s={0.6} t={t + 1} boga={0.7} flip color="#3a2a3a" franja="#1a1a1a" />
         <Chip t={t} t0={41.32} text="MOST DANGEROUS THING?" color={C.violeta} x={960} y={150} centro size={62} />
         {t > 43.76 && <svg style={{ position: "absolute", left: 1150, top: 450 }} width={500} height={400}><g opacity={ent(t, 43.76)}><line x1={40} y1={40} x2={40 + 420 * prog(t, 43.76, 43.96)} y2={40 + 320 * prog(t, 43.76, 43.96)} stroke={C.rojo} strokeWidth={40} strokeLinecap="round" /><line x1={460} y1={40} x2={460 - 420 * prog(t, 43.9, 44.1)} y2={40 + 320 * prog(t, 43.9, 44.1)} stroke={C.rojo} strokeWidth={40} strokeLinecap="round" /></g></svg>}
-        <Grande t={t} t0={44.0} text="NOT THE ENEMY" x={1100} y={920} size={120} color={C.crema} />
-        <Apion t={t} t0={39.9} x={230} y={1070} h={430} acts={[[40.3, "habla"], [41.32, "piensa"], [43.76, "asombro"], [44.5, "senala"]]} flip={false} />
+        <Grande t={t} t0={44.0} text="NOT THE ENEMY" x={1100} y={790} size={120} color={C.crema} />
+        <Apion t={t} t0={39.9} x={230} y={1050} h={420} borda={1020} acts={[[40.3, "habla"], [41.32, "piensa"], [43.76, "asombro"], [44.5, "senala"]]} flip={false} />
         <Chip t={t} t0={44.6} text="?" color={C.ambar} tinta={C.noche} x={1500} y={300} centro size={90} />
       </Escena>
 

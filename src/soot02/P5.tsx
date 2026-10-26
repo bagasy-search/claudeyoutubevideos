@@ -44,7 +44,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={537.95} t1={540.2} entra="atraviesa" ix={1300} iy={420} sale="fundido" fondo="none" golpes={[538.3, 539.2]}>
       <Galera x={900} y={720} s={0.5} t={t} boga={0.6} vela={false} corvus={0} />
       <Pancarta t={t} t0={538.0} n={5} titulo="THE CROW" y={380} />
-      <Apion t={t} t0={538.1} x={1620} y={1110} h={440} borda={960} acts={[[538.1, "piensa"], [539.2, "asombro"]]} />
+      <Apion t={t} t0={538.1} x={1620} y={1050} h={420} borda={1020} acts={[[538.1, "piensa"], [539.2, "asombro"]]} />
     </Escena>
 
     {/* 540,2 · "In 264 BC, Rome went to war with Carthage, the greatest naval power in the western Mediterranean, and Rome had a problem" */}
@@ -108,15 +108,16 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={568.0} t1={572.4} text="SAME ORDER AS ON A SHIP" color={C.oro} tinta={C.noche} x={1300} y={130} size={46} />
       <Chip t={t} t0={570.4} t1={572.4} text="IMAGINARY OARS" color="#1d6f8a" x={1300} y={230} size={52} />
       <Chip t={t} t0={576.97} text="YOUR TRAINING:" color={C.violeta} x={960} y={140} centro size={58} />
-      <Grande t={t} t0={578.43} text="AIR ROWING" y={300} size={150} color={C.crema} />
+      <Grande t={t} t0={578.43} text="AIR ROWING" y={960} size={150} color={C.crema} />
     </Escena>
 
     {/* 580,4 · "Of course, the Carthaginians were far better sailors, so the Romans changed the game." */}
     <Escena t={t} t0={580.4} t1={585.2} entra="paneo" sale="fundido" fondo="none" golpes={[580.7, 583.2]}>
       {(() => { const a = (t - 580.4) * 1.1; return <Galera x={960 + Math.cos(a) * 520} y={680 + Math.sin(a) * 30} s={0.36} t={t} boga={1.2} vela={false} flip={Math.sin(a) > 0} color="#3a2a3a" franja="#1a1a1a" />; })()}
       <Galera x={960} y={720} s={0.42} t={t} boga={0.4} vela={false} balanceo={3} />
+      <Apion t={t} t0={580.5} x={1700} y={1050} h={420} borda={1020} desde="nada" acts={[[580.5, "piensa"], [583.2, "senala"]]} />
       <Chip t={t} t0={580.73} text="FAR BETTER SAILORS" color="#7a5bd1" x={960} y={150} centro size={62} />
-      <Chip t={t} t0={583.2} text="SO ROME CHANGED THE GAME" color={C.rojo} x={960} y={960} centro size={62} />
+      <Chip t={t} t0={583.2} text="SO ROME CHANGED THE GAME" color={C.rojo} x={960} y={830} centro size={62} />
     </Escena>
 
     {/* 585,2 · "They invented the corvus, the crow... boarding bridge about 11 meters long, mounted on a pole at the front... heavy iron spike under its tip, like a beak" */}
@@ -128,8 +129,9 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
       {t > 594.3 && <Cuervo x={1660} y={330} s={1.1 * ent(t, 594.3)} t={t} />}
       <Grande t={t} t0={585.2} text="THE CORVUS" x={500} y={170} size={130} color={C.crema} />
       <Chip t={t} t0={586.65} text="'THE CROW'" color={C.noche} x={500} y={300} centro size={56} />
-      <Chip t={t} t0={587.51} text="BOARDING BRIDGE · ~11 M" color={C.oro} tinta={C.noche} x={960} y={960} centro size={56} />
-      <Chip t={t} t0={590.09} text="ON A POLE AT THE FRONT" color="#1d6f8a" x={1400} y={960} centro size={44} />
+      <Chip t={t} t0={587.51} text="BOARDING BRIDGE · ~11 M" color={C.oro} tinta={C.noche} x={960} y={830} centro size={56} />
+      <Chip t={t} t0={590.09} text="ON A POLE AT THE FRONT" color="#1d6f8a" x={1400} y={830} centro size={44} />
+      <Apion t={t} t0={585.3} x={230} y={1050} h={420} borda={1020} flip={false} acts={[[585.4, "senala"], [587.5, "asombro"], [590.1, "piensa"], [592.1, "miedo"]]} />
       <Chip t={t} t0={592.13} text="IRON SPIKE" color={C.rojo} x={1500} y={600} centro size={56} />
     </Escena>
 
@@ -144,7 +146,8 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={595.3} text="ENEMY CLOSE..." color="#7a5bd1" x={960} y={140} centro size={60} />
       <Grande t={t} t0={597.0} text="DROP IT!" x={500} y={300} size={140} color={C.rojo} />
       <Grande t={t} t0={599.0} text="SMASH!" x={1450} y={300} size={150} color={C.oro} />
-      <Chip t={t} t0={600.2} text="LOCKED TOGETHER" color={C.violeta} x={960} y={960} centro size={66} />
+      <Apion t={t} t0={595.2} x={230} y={1050} h={420} borda={1020} flip={false} desde="nada" acts={[[595.2, "miedo"], [597.0, "senala"], [599.0, "festeja"], [600.6, "orgullo"]]} />
+      <Chip t={t} t0={600.2} text="LOCKED TOGETHER" color={C.violeta} x={960} y={830} centro size={66} />
     </Escena>
 
     {/* 603,1 · "And just like that, a sea battle became a land battle, which Rome was very, very good at." — los marines cruzan el puente */}
@@ -259,15 +262,15 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
           );
         })()}
       </Cam>
-      <Apion t={t} t0={638.5} x={1700} y={1110} h={440} borda={960} acts={[[638.7, "habla"], [641.6, "piensa"], [643.95, "senala"], [648.5, "habla"], [650.4, "miedo"]]} />
+      <Apion t={t} t0={638.5} x={1700} y={1050} h={420} borda={1020} acts={[[638.7, "habla"], [641.6, "piensa"], [643.95, "senala"], [648.5, "habla"], [650.4, "miedo"]]} />
       <Chip t={t} t0={638.43} t1={643.6} text="THAT HEAVY BRIDGE" color={C.oro} tinta={C.noche} x={500} y={150} centro size={58} />
       <Chip t={t} t0={639.5} t1={643.6} text="HIGH AT THE FRONT" color={C.violeta} x={500} y={260} centro size={52} />
-      <Chip t={t} t0={641.6} t1={643.6} text="A VERY BIG PROBLEM" color={C.rojo} x={500} y={960} centro size={56} />
+      <Chip t={t} t0={641.6} t1={643.6} text="A VERY BIG PROBLEM" color={C.rojo} x={500} y={830} centro size={56} />
       <Chip t={t} t0={643.95} text="HEAVY" color={C.rojo} x={120} y={140} size={56} />
       <Chip t={t} t0={645.33} text="+ HIGH" color={C.ambar} tinta={C.noche} x={360} y={140} size={56} />
       <Chip t={t} t0={646.07} text="= TOP-HEAVY" color={C.violeta} x={620} y={140} size={56} />
-      <Chip t={t} t0={648.51} t1={650.4} text="CALM WATER: FINE" color={C.lima} tinta={C.noche} x={960} y={960} centro size={58} />
-      <Chip t={t} t0={650.59} text="IN A STORM..." color={C.rojo} x={960} y={960} centro size={70} />
+      <Chip t={t} t0={648.51} t1={650.4} text="CALM WATER: FINE" color={C.lima} tinta={C.noche} x={960} y={830} centro size={58} />
+      <Chip t={t} t0={650.59} text="IN A STORM..." color={C.rojo} x={960} y={830} centro size={70} />
     </Escena>
   </>
 );

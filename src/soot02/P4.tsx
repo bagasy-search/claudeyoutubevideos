@@ -40,7 +40,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={442.08} t1={444.1} entra="atraviesa" ix={1500} iy={640} sale="nada" fondo="none" golpes={[442.4, 443.2]}>
       <Galera x={interpolate(t, [442, 444.2], [900, 1000])} y={700} s={0.5} t={t} boga={1.4} vela={false} />
       <Pancarta t={t} t0={442.1} n={4} titulo="THE RAM" y={400} />
-      <Apion t={t} t0={442.2} x={1620} y={1110} h={440} borda={960} acts={[[442.2, "asombro"], [443.2, "miedo"]]} />
+      <Apion t={t} t0={442.2} x={1620} y={1050} h={420} borda={1020} acts={[[442.2, "asombro"], [443.2, "miedo"]]} />
     </Escena>
 
     {/* 444,1 · "On the front of every Roman warship, right at the waterline, sits a huge bronze beak, the rostrum, the ram" */}
@@ -51,10 +51,10 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
         {t > 447.0 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><circle cx={1640} cy={612} r={30 + 60 * prog(t, 447.0, 447.6)} fill="none" stroke={C.oro} strokeWidth={6} opacity={1 - prog(t, 448, 449)} /></svg>}
       </Cam>
       <Chip t={t} t0={444.1} t1={445.9} text="THE FRONT OF EVERY WARSHIP" color={C.violeta} x={960} y={150} centro size={56} />
-      <Chip t={t} t0={446.1} text="AT THE WATERLINE" color="#1d6f8a" x={960} y={150} centro size={56} />
+      <Chip t={t} t0={446.1} text="AT THE WATERLINE" color="#1d6f8a" x={1300} y={640} centro size={56} />
       <Chip t={t} t0={447.06} text="A HUGE BRONZE BEAK" color={C.oro} tinta={C.noche} x={960} y={260} centro size={58} />
-      <Apion t={t} t0={444.2} x={250} y={1110} h={440} borda={960} flip={false} acts={[[444.3, "habla"], [446.1, "senala"], [449.3, "asombro"]]} />
-      <Grande t={t} t0={449.26} text="ROSTRUM" x={1060} y={880} size={150} color={C.crema} />
+      <Apion t={t} t0={444.2} x={250} y={1050} h={420} borda={1020} flip={false} acts={[[444.3, "habla"], [446.1, "senala"], [449.3, "asombro"]]} />
+      <Grande t={t} t0={449.26} text="ROSTRUM" x={1060} y={750} size={150} color={C.crema} />
     </Escena>
 
     {/* 451,3 · "In the sea off western Sicily..." mapa → 453,2 abajo del agua: "divers found 20+ rams on the seabed... 241 BC... inscriptions with names of officials who paid" */}
@@ -132,12 +132,12 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
           </>
         );
       })()}
-      <Apion t={t} t0={472.0} x={1710} y={1075} h={360} acts={[[472.4, "habla"], [474.1, "rema"], [477.2, "festeja"], [479.4, "rema"], [482.0, "miedo"]]} />
+      <Apion t={t} t0={472.0} x={1700} y={1050} h={400} borda={1020} acts={[[472.4, "habla"], [474.1, "rema"], [477.2, "festeja"], [479.4, "rema"], [482.0, "miedo"]]} />
       <Chip t={t} t0={472.4} t1={477.4} text="SIMPLE + BRUTAL" color={C.rojo} x={120} y={130} size={60} />
-      {t < 479.3 && <CuentaN t={t} t0={474.1} t1={474.9} a={300} suf=" MEN SPRINT" x={600} y={960} size={90} color={C.crema} />}
+      {t < 479.3 && <CuentaN t={t} t0={474.1} t1={474.9} a={300} suf=" MEN SPRINT" x={600} y={830} size={90} color={C.crema} />}
       <Grande t={t} t0={477.2} text="PUNCH!" x={1340} y={220} size={170} color={C.rojo} />
-      <Chip t={t} t0={479.4} text="NOW ROW BACKWARDS!" color={C.ambar} tinta={C.noche} x={960} y={960} centro size={62} />
-      <Chip t={t} t0={482.0} text="BEFORE YOU GET STUCK" color={C.violeta} x={960} y={850} centro size={50} />
+      <Chip t={t} t0={479.4} text="NOW ROW BACKWARDS!" color={C.ambar} tinta={C.noche} x={960} y={830} centro size={62} />
+      <Chip t={t} t0={482.0} text="BEFORE YOU GET STUCK" color={C.violeta} x={960} y={720} centro size={50} />
     </Escena>
 
     {/* 485,2 · "the part that should worry you. Rowers sit facing the back of the ship. You never see where you are going... the enemy... their ram. The only warning is the crash." */}
@@ -196,12 +196,12 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={515.1} t1={525.3} entra="fundido" sale="paneo" fondo="none" golpes={[515.1, 516.4, 519.3, 522.2]}>
       <Galera x={900} y={interpolate(t, [520, 524.2], [640, 720], cl)} s={0.7} t={t} boga={0} vela={false} marines={false} rompe={1} balanceo={0.4} color="#3a2a3a" franja="#1a1a1a" agua="#1f5c9c" aguaY={interpolate(t, [520, 524.2], [70, -20], cl)} />
       <Piedra t={t} t0={516.4} x={1600} />
-      <Apion t={t} t0={515.2} x={260} y={1110} h={440} borda={960} flip={false} acts={[[515.3, "piensa"], [519.3, "asombro"], [522.2, "senala"]]} />
+      <Apion t={t} t0={515.2} x={260} y={1050} h={420} borda={1020} flip={false} acts={[[515.3, "piensa"], [519.3, "asombro"], [522.2, "senala"]]} />
       <Chip t={t} t0={515.1} text="THE STRANGEST PART?" color={C.violeta} x={960} y={140} centro size={62} />
       <Chip t={t} t0={516.4} t1={518.6} text="DIDN'T SINK LIKE STONES" color={C.rojo} x={1500} y={250} centro size={52} />
       <Chip t={t} t0={519.3} text="WOOD + NO BALLAST" color={C.oro} tinta={C.noche} x={120} y={250} size={56} />
-      <Chip t={t} t0={522.2} text="FLOODED... BUT AFLOAT" color="#1d6f8a" x={960} y={960} centro size={60} />
-      <Chip t={t} t0={524.2} text="HALF UNDERWATER" color={C.noche} x={960} y={860} centro size={52} />
+      <Chip t={t} t0={522.2} text="FLOODED... BUT AFLOAT" color="#1d6f8a" x={960} y={830} centro size={60} />
+      <Chip t={t} t0={524.2} text="HALF UNDERWATER" color={C.noche} x={960} y={730} centro size={52} />
     </Escena>
 
     {/* 525,3 · "After the battle, the winners simply towed them away. The ship survived. The bottom row usually did not." */}
@@ -213,10 +213,10 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
           <Galera x={560 + dx} y={700} s={0.5} t={t} boga={0} vela={false} marines={false} rompe={1} color="#3a2a3a" franja="#1a1a1a" aguaY={-20} balanceo={0.3} />
         </>
       ); })()}
-      <Apion t={t} t0={525.4} x={1700} y={1110} h={440} borda={960} acts={[[525.6, "habla"], [528.3, "festeja"], [529.6, "triste"]]} />
+      <Apion t={t} t0={525.4} x={1700} y={1050} h={420} borda={1020} acts={[[525.6, "habla"], [528.3, "festeja"], [529.6, "triste"]]} />
       <Chip t={t} t0={526.35} text="TOWED AWAY" color={C.violeta} x={120} y={140} size={60} />
-      <Chip t={t} t0={528.27} text="THE SHIP SURVIVED ✓" color={C.lima} tinta={C.noche} x={960} y={880} centro size={60} />
-      <Chip t={t} t0={529.55} text="THE BOTTOM ROW... ✕" color={C.rojo} x={960} y={990} centro size={60} />
+      <Chip t={t} t0={528.27} text="THE SHIP SURVIVED ✓" color={C.lima} tinta={C.noche} x={960} y={750} centro size={60} />
+      <Chip t={t} t0={529.55} text="THE BOTTOM ROW... ✕" color={C.rojo} x={960} y={860} centro size={60} />
     </Escena>
 
     {/* 531,4 · "this is the kind of war Rome had to learn from scratch. Which brings us to the most famous trick in Roman naval history" */}

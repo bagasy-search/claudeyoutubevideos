@@ -70,7 +70,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={652.89} t1={655.33} entra="atraviesa" ix={960} iy={520} sale="fundido" fondo="none" golpes={[653.0, 654.3]}>
       <Galera x={960} y={760} s={0.55} t={t} boga={0.4} vela={false} corvus={0} balanceo={9} ola={1} agua="#1b1f4c" />
       <Pancarta t={t} t0={653.0} n={6} titulo="THE STORM" y={360} />
-      <Apion t={t} t0={653.1} x={1620} y={1110} h={440} borda={960} acts={[[653.1, "miedo"]]} />
+      <Apion t={t} t0={653.1} x={1620} y={1050} h={420} borda={1020} acts={[[653.1, "miedo"]]} />
       <Relampago t={t} ts={[653.1, 654.35]} x={1300} />
     </Escena>
 
@@ -130,6 +130,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       })()}
       <Relampago t={t} ts={[689.1, 692.1]} x={700} />
       <Flecha t={t} t0={690.95} x1={1100} y1={300} x2={1300} y2={560} color={C.oro} grosor={16} />
+      <Apion t={t} t0={688.6} x={250} y={1050} h={420} borda={1020} flip={false} acts={[[688.7, "senala"], [690.95, "miedo"]]} />
       <Chip t={t} t0={688.6} text="ABOVE YOU: THE CROW" color={C.violeta} x={960} y={130} centro size={56} />
       <Chip t={t} t0={690.95} text="PULLING THE SHIP OVER" color={C.rojo} x={1400} y={250} centro size={48} />
       <Chip t={t} t0={692.03} text="+ A LITTLE MORE" color={C.oro} tinta={C.noche} x={1400} y={340} centro size={42} />
@@ -142,7 +143,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       {t < 696.69 && <Relampago t={t} ts={[695.6]} x={1100} />}
       {t >= 696.4 && <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #2a2d52, #14122a 75%)", opacity: prog(t, 696.4, 696.75) }} />}
       {t >= 696.69 && <Flota t={t} t0={696.69} n={364} hunde={284} tA={[698.9, 700.4]} x={820} y={640} cols={28} s={0.85} />}
-      {t >= 696.69 && <Apion t={t} t0={696.7} x={1710} y={1110} h={420} borda={960} desde="nada" acts={[[696.7, "asombro"], [698.9, "miedo"]]} />}
+      {t >= 696.69 && <Apion t={t} t0={696.7} x={1710} y={1050} h={420} borda={1020} desde="nada" acts={[[696.7, "asombro"], [698.9, "miedo"]]} />}
       {t >= 696.69 && t < 698.87 && <CuentaN t={t} t0={696.69} t1={697.5} de={300} a={364} x={820} y={190} size={140} color={C.crema} suf=" SHIPS" />}
       {t >= 698.87 && <CuentaN t={t} t0={698.87} t1={700.4} de={364} a={80} x={820} y={190} size={140} color="#ff6a6a" pre="ONLY " suf=" SURVIVED" />}
             {t < 696.69 && <Chip t={t} t0={694.2} text="CAMARINA · 255 BC" color={C.rojo} x={960} y={150} centro size={60} />}
@@ -169,7 +170,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
         <Galera x={960} y={680} s={0.8} t={t} boga={0} vela={false} corvus={0} balanceo={1} ola={1} agua={null} marines={false} />
       </div>
       <AbsoluteFill style={{ top: 780 }}><svg width={1920} height={300}><path d={`M 0 40 Q 240 ${10 + Math.sin(t * 3) * 20} 480 40 T 960 40 T 1440 40 T 1920 40 L 1920 300 L 0 300 Z`} fill="#1b1f4c" /></svg></AbsoluteFill>
-      <Apion t={t} t0={707.9} x={260} y={1110} h={440} borda={960} flip={false} acts={[[708.0, "piensa"], [709.5, "miedo"]]} />
+      <Apion t={t} t0={707.9} x={260} y={1050} h={420} borda={1020} flip={false} acts={[[708.0, "piensa"], [709.5, "miedo"]]} />
       <Chip t={t} t0={707.9} text="HISTORIANS SUSPECT" color={C.violeta} x={960} y={130} centro size={52} />
       <Chip t={t} t0={709.5} text="THE CROW MADE IT WORSE" color={C.rojo} x={960} y={230} centro size={58} />
       <Flecha t={t} t0={709.6} x1={1500} y1={320} x2={1180} y2={470} color={C.oro} grosor={16} />
@@ -185,7 +186,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       {t >= 715.15 && <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #2a2d52, #14122a 75%)", opacity: prog(t, 715.15, 715.5) }} />}
       {t >= 715.15 && <Flota t={t} t0={715.2} n={150} hunde={150} tA={[715.7, 718.3]} x={900} y={620} cols={15} s={1.25} />}
       {t >= 715.15 && <CuentaN t={t} t0={715.75} t1={718.55} de={0} a={150} x={900} y={180} size={130} color={C.crema} pre="~" suf=" SUNK" />}
-      {t >= 715.15 && <Apion t={t} t0={715.2} x={1710} y={1110} h={420} borda={960} desde="nada" acts={[[715.2, "asombro"], [716.3, "miedo"]]} />}
+      {t >= 715.15 && <Apion t={t} t0={715.2} x={1710} y={1050} h={420} borda={1020} desde="nada" acts={[[715.2, "asombro"], [716.3, "miedo"]]} />}
       <Relampago t={t} ts={[715.3, 716.5, 717.6]} x={1380} />
     </Escena>
 
@@ -221,14 +222,15 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       {t < 735.31 && <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #6a2a1a, #2a1530 75%)" }} />}
       {t < 735.31 && <Flota t={t} t0={732.4} n={120} hunde={93} tA={[733.0, 735.0]} x={960} y={620} cols={15} s={1.25} />}
       {t < 735.31 && <CuentaN t={t} t0={733.0} t1={735.0} de={0} a={90} x={900} y={250} size={104} color={C.crema} pre="+" suf=" SHIPS LOST" />}
-      <Apion t={t} t0={732.4} t1={735.3} x={1710} y={1110} h={420} borda={960} acts={[[732.5, "asombro"], [733.6, "enojado"], [735.4, "miedo"]]} />
-      {t < 735.31 && <Chip t={t} t0={732.4} text="BATTLE OF DREPANA: LOST" color={C.rojo} x={960} y={980} centro size={52} />}
+      <Apion t={t} t0={732.4} t1={735.3} x={1710} y={1050} h={420} borda={1020} acts={[[732.5, "asombro"], [733.6, "enojado"], [735.4, "miedo"]]} />
+      {t < 735.31 && <Chip t={t} t0={732.4} text="BATTLE OF DREPANA: LOST" color={C.rojo} x={960} y={850} centro size={52} />}
       {t >= 735.31 && [[420, 760, 0.5, 0], [1000, 720, 0.6, 0.6], [1560, 780, 0.45, 1.2]].map(([x, y, s, d], i) => (
         <div key={i} style={{ position: "absolute", inset: 0, transform: `rotate(${interpolate(t, [736.5 + d, 739.2], [0, 40 - i * 15], cl)}deg)`, transformOrigin: `${x}px ${y + 40}px` }}>
           <Galera x={x} y={y + interpolate(t, [736.5 + d, 739.4], [0, 160], cl)} s={s} t={t} boga={0.2} vela={false} balanceo={6} ola={1} agua="#1b1f4c" hunde={prog(t, 736.5 + d, 739.4)} marines={false} />
         </div>
       ))}
       {t >= 735.31 && <Relampago t={t} ts={[735.5, 736.4, 737.7, 738.8]} x={960} />}
+      {t >= 735.31 && <Apion t={t} t0={735.35} x={1720} y={1050} h={420} borda={1020} desde="nada" acts={[[735.4, "asombro"], [736.4, "miedo"], [738.0, "triste"]]} />}
       {t >= 735.31 && <Chip t={t} t0={735.4} text="SAME YEAR: ANOTHER STORM" color={C.violeta} x={960} y={150} centro size={56} />}
       {t >= 735.31 && <Chip t={t} t0={736.3} text="ANOTHER FLEET GONE" color={C.rojo} x={960} y={250} centro size={52} />}
     </Escena>
@@ -304,7 +306,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       )}
       <Chip t={t} t0={765.87} text="ADMIRAL · FLEET OF MISENUM" color={C.violeta} x={960} y={140} centro size={52} />
       <Chip t={t} t0={767.4} text="+ FAMOUS WRITER" color={C.oro} tinta={C.noche} x={960} y={240} centro size={46} />
-      <Chip t={t} t0={769.27} text="PLINY THE ELDER" color={C.rojo} x={960} y={330} centro size={60} />
+      <Chip t={t} t0={769.27} text="PLINY THE ELDER" color={C.rojo} x={560} y={330} centro size={60} />
       {t > 767.4 && <Pergamino x={1380} y={640} w={380} abre={prog(t, 767.5, 768.0)} lineas={5} titulo="NATURAL HISTORY" />}
       {t > 767.4 && <CuentaN t={t} t0={767.6} t1={768.6} a={37} suf=" BOOKS" x={1380} y={480} size={70} color={C.oro} />}
     </Escena>
@@ -373,10 +375,10 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 793,09 · "His nephew wrote it all down. We do not know how many of his rowers made it home." */}
     <Escena t={t} t0={793.09} t1={797.89} entra="fundido" sale="fundido" fondo="#2a1530" quieta golpes={[793.1, 795.0, 796.6]}>
-      {t < 795.1 && <Persona x={560} y={1000} h={500} t={t} seed={167} ropa={SOBRINO} expr="triste" bD={80 + Math.sin(t * 14) * 6} cD={100} />}
+      {t < 794.99 && <Persona x={560} y={1000} h={500} t={t} seed={167} ropa={SOBRINO} expr="triste" bD={80 + Math.sin(t * 14) * 6} cD={100} />}
       {t < 794.99 && <Pergamino x={1240} y={560} w={760} abre={prog(t, 793.2, 793.7)} lineas={8} titulo="PLINY THE YOUNGER" />}
       {t < 794.99 && <Chip t={t} t0={793.15} text="HIS NEPHEW WROTE IT DOWN" color={C.violeta} x={960} y={140} centro size={52} />}
-      {t >= 794.99 && <AbsoluteFill style={{ opacity: prog(t, 794.9, 795.1) }}><Corte t={t} boga={0} agua={0.06} heroeExpr="miedo" luz={0.45} oscuro={0.4} hortator={false} vacio /></AbsoluteFill>}
+      {t >= 794.99 && <AbsoluteFill><Corte t={t} boga={0} agua={0.06} heroeExpr="miedo" luz={0.45} oscuro={0.4} hortator={false} vacio /></AbsoluteFill>}
       {t >= 794.99 && <Apion t={t} t0={795.0} x={1600} y={1075} h={460} desde="nada" acts={[[795.0, "piensa"], [796.6, "triste"]]} />}
       {t >= 794.99 && <Chip t={t} t0={795.0} text="HIS ROWERS?" color={C.rojo} x={960} y={160} centro size={70} />}
       {t >= 796.6 && <Grande t={t} t0={796.6} text="?" x={960} y={560} size={260} color={C.crema} />}

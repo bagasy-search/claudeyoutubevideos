@@ -129,8 +129,8 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
     {/* 49,24 · TRAP #1 · THE CONTRACT — sobre el mar de día, la galera pasa al fondo */}
     <Escena t={t} t0={49.24} t1={51.6} entra="atraviesa" ix={960} iy={600} sale="paneo" fondo="none" golpes={[49.68, 50.5]}>
       <Galera x={interpolate(t, [49.2, 51.9], [700, 1200])} y={700} s={0.42} t={t} boga={0.6} vela />
-      <Pancarta t={t} t0={49.3} n={1} titulo="THE CONTRACT" y={430} />
-      <Apion t={t} t0={49.4} x={1620} y={1110} h={440} borda={960} acts={[[49.4, "asombro"], [50.5, "miedo"]]} />
+      <Pancarta t={t} t0={49.3} n={1} titulo="THE CONTRACT" y={300} />
+      <Apion t={t} t0={49.4} x={1620} y={1050} h={420} borda={1020} acts={[[49.4, "asombro"], [50.5, "miedo"]]} />
     </Escena>
 
     {/* 51,6 · "Let me introduce you to a real person. His name is Apion... a village in Egypt, 2nd century... just joined the fleet" */}
@@ -221,11 +221,11 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
           {Array.from({ length: 60 }, (_, i) => { const r = rnd(i + 80); const x = (r() * 1960 + (r() < 0.5 ? 1 : -1) * (t - 93) * 40) % 1960; return <g key={i} transform={`translate(${x} ${940 + r() * 90})`}><circle cx={0} cy={-26} r={9} fill={["#f2b48a", "#c98b62", "#8d5a3b"][i % 3]} /><rect x={-9} y={-18} width={18} height={22} rx={7} fill={["#9a6a4a", "#2fb5d8", "#8a5a7a", "#6a7a4a"][i % 4]} /></g>; })}
         </svg>
       </Cam>
-      <Apion t={t} t0={93.4} x={250} y={1070} h={430} acts={[[93.9, "habla"], [97.7, "senala"], [99.9, "asombro"], [101.9, "festeja"]]} flip={false} />
+      <Apion t={t} t0={93.4} x={250} y={1010} h={400} acts={[[93.9, "habla"], [97.7, "senala"], [99.9, "asombro"], [101.9, "festeja"]]} flip={false} />
       <Chip t={t} t0={94.2} text="BIGGEST FLEET IN THE EMPIRE" color="#1d6f8a" x={960} y={140} centro size={62} />
       <Chip t={t} t0={97.7} text="VOLCANIC BAY" color={C.rojo} x={960} y={250} centro size={54} />
-      <Chip t={t} t0={99.9} t1={101.6} text="NAMES ON THEIR BOWS" color={C.oro} tinta={C.noche} x={960} y={950} centro size={58} />
-      <Chip t={t} t0={101.9} text="THOUSANDS OF MEN" color={C.violeta} x={960} y={950} centro size={66} />
+      <Chip t={t} t0={99.9} t1={101.6} text="NAMES ON THEIR BOWS" color={C.oro} tinta={C.noche} x={960} y={820} centro size={58} />
+      <Chip t={t} t0={101.9} text="THOUSANDS OF MEN" color={C.violeta} x={960} y={820} centro size={66} />
     </Escena>
 
     {/* 103,5 · "not all of their work was at sea. In Rome itself... barracks next to the Colosseum, for a very strange job" */}
@@ -260,7 +260,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={115.3} text="THE VELARIUM" color={C.oro} tinta={C.noche} x={960} y={140} centro size={70} />
       <Chip t={t} t0={117.1} text="SAILS + ROPES" color="#1d6f8a" x={960} y={250} centro size={52} />
       <CuentaN t={t} t0={119.3} t1={120.6} a={50000} x={1450} y={560} size={130} color={C.crema} />
-      <Chip t={t} t0={120.1} text="SPECTATORS" color={C.violeta} x={1450} y={680} centro size={50} />
+      <Chip t={t} t0={119.3} text="SPECTATORS" color={C.violeta} x={1450} y={680} centro size={50} />
       <Chip t={t} t0={122.0} text="WHO KNOWS ROPES BETTER?" color={C.teal} tinta={C.noche} x={960} y={160} centro size={60} />
     </Escena>
 
@@ -370,9 +370,10 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
         const v = interpolate(t, [189.6, 191.4, 192.6], [0.3, 0.9, 0.3], cl);
         return <svg style={{ position: "absolute", left: 1460, top: 90, transform: `scale(${ent(t, 189.5)})` }} width={400} height={260}><path d="M 40 220 A 160 160 0 0 1 360 220" stroke="#fff" strokeWidth={26} fill="none" opacity={0.3} /><path d="M 40 220 A 160 160 0 0 1 360 220" stroke={v > 0.6 ? C.lima : C.rojo} strokeWidth={26} fill="none" pathLength={1} strokeDasharray={`${v} 1`} /><line x1={200} y1={220} x2={200 - Math.cos(v * Math.PI) * 130} y2={220 - Math.sin(v * Math.PI) * 130} stroke="#fff" strokeWidth={12} strokeLinecap="round" /><circle cx={200} cy={220} r={18} fill="#fff" /></svg>;
       })()}
+      <Chip t={t} t0={189.6} text="SHIP SPEED" color="#1d6f8a" x={1660} y={390} centro size={44} />
       <Chip t={t} t0={190.2} text="ONLY AS FAST AS ITS WORST ROWER" color={C.violeta} x={700} y={200} centro size={52} />
       <Chip t={t} t0={192.6} text="CHAINED = SLOW" color={C.rojo} x={700} y={320} centro size={60} />
-      <Apion t={t} t0={186.0} x={1700} y={1110} h={440} borda={960} acts={[[186.5, "habla"], [189.6, "rema"], [192.6, "cansado"]]} />
+      <Apion t={t} t0={186.0} x={1700} y={1050} h={420} borda={1020} acts={[[186.5, "habla"], [189.6, "rema"], [192.6, "cansado"]]} />
     </Escena>
 
     {/* 194,5 · "In real emergencies, Rome did use slaves, but it freed them first. Octavian... 20,000 slaves free... trained as oarsmen" */}
