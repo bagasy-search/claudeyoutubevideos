@@ -94,6 +94,36 @@ export const useTextures = () => useMemo(() => ({
   siding: mk(256, 256, (g) => {
     for (let r = 0; r < 16; r++) { g.fillStyle = r % 2 ? "#d8d4ca" : "#cdc8bd"; g.fillRect(0, r * 16, 256, 16); g.fillStyle = "rgba(0,0,0,.18)"; g.fillRect(0, r * 16 + 14, 256, 2); }
   }, [3, 2]),
+  // empapelado damasco (fondo + motivo en tono) · lambrín de paneles · mármol veteado · terciopelo
+  damasco: mk(512, 512, (g) => {
+    g.fillStyle = "#ffffff"; g.fillRect(0, 0, 512, 512);
+    for (let x = 0; x < 512; x += 64) { g.fillStyle = "rgba(0,0,0,.06)"; g.fillRect(x, 0, 3, 512); }
+    const mot = (cx: number, cy: number) => { g.save(); g.translate(cx, cy); g.fillStyle = "rgba(0,0,0,.16)";
+      g.beginPath(); g.moveTo(0, -60); g.bezierCurveTo(34, -40, 30, -8, 0, 0); g.bezierCurveTo(-30, -8, -34, -40, 0, -60); g.fill();
+      g.beginPath(); g.moveTo(0, 60); g.bezierCurveTo(34, 40, 30, 8, 0, 0); g.bezierCurveTo(-30, 8, -34, 40, 0, 60); g.fill();
+      g.beginPath(); g.ellipse(0, 0, 44, 10, 0, 0, 6.3); g.fill(); g.fillStyle = "rgba(255,230,170,.10)"; g.beginPath(); g.arc(0, 0, 8, 0, 6.3); g.fill(); g.restore(); };
+    for (let r = 0; r < 4; r++) for (let c = 0; c < 4; c++) mot(c * 128 + (r % 2) * 64 + 32, r * 128 + 64);
+  }, [10, 3]),
+  runner: mk(512, 128, (g) => {
+    g.fillStyle = "#6e1a1f"; g.fillRect(0, 0, 512, 128);
+    g.fillStyle = "#c9a55a"; g.fillRect(0, 8, 512, 6); g.fillRect(0, 114, 512, 6);
+    g.fillStyle = "#4c1014"; g.fillRect(0, 20, 512, 4); g.fillRect(0, 104, 512, 4);
+    for (let x = 16; x < 512; x += 64) { g.fillStyle = "rgba(201,165,90,.35)"; g.beginPath(); g.moveTo(x, 64); g.lineTo(x + 16, 48); g.lineTo(x + 32, 64); g.lineTo(x + 16, 80); g.closePath(); g.fill(); }
+  }, [6, 1]),
+  lambrin: mk(512, 256, (g) => {
+    g.fillStyle = "#ffffff"; g.fillRect(0, 0, 512, 256);
+    for (let i = 0; i < 4; i++) { const x = 16 + i * 124; g.fillStyle = "rgba(0,0,0,.28)"; g.fillRect(x, 24, 108, 4); g.fillRect(x, 24, 4, 200); g.fillStyle = "rgba(255,255,255,.35)"; g.fillRect(x, 224, 108, 4); g.fillRect(x + 104, 24, 4, 204); g.fillStyle = "rgba(0,0,0,.08)"; g.fillRect(x + 14, 38, 80, 176); }
+    for (let k = 0; k < 40; k++) { g.strokeStyle = `rgba(60,30,10,${0.05 + rnd(k, 2) * 0.08})`; g.lineWidth = 1; g.beginPath(); g.moveTo(0, rnd(k, 3) * 256); g.lineTo(512, rnd(k, 4) * 256); g.stroke(); }
+  }, [4, 1]),
+  marmol: mk(512, 512, (g) => {
+    g.fillStyle = "#f2eee8"; g.fillRect(0, 0, 512, 512);
+    for (let k = 0; k < 14; k++) { g.strokeStyle = `rgba(120,110,100,${0.12 + rnd(k, 1) * 0.25})`; g.lineWidth = 0.8 + rnd(k, 2) * 2.5; g.beginPath(); let x = rnd(k, 3) * 512, y = 0; g.moveTo(x, y);
+      for (let j = 0; j < 12; j++) { x += (rnd(k * 13 + j, 4) - 0.5) * 90; y += 46; g.lineTo(x, y); } g.stroke(); }
+  }),
+  terciopelo: mk(128, 128, (g) => {
+    g.fillStyle = "#ffffff"; g.fillRect(0, 0, 128, 128);
+    for (let x = 0; x < 128; x += 16) { const gr = g.createLinearGradient(x, 0, x + 16, 0); gr.addColorStop(0, "rgba(0,0,0,.35)"); gr.addColorStop(0.5, "rgba(255,255,255,.15)"); gr.addColorStop(1, "rgba(0,0,0,.35)"); g.fillStyle = gr; g.fillRect(x, 0, 16, 128); }
+  }, [1, 1]),
   flake: mk(64, 64, (g) => {
     const gr = g.createRadialGradient(32, 32, 0, 32, 32, 30); gr.addColorStop(0, "rgba(255,255,255,1)"); gr.addColorStop(0.45, "rgba(255,255,255,.7)"); gr.addColorStop(1, "rgba(255,255,255,0)");
     g.fillStyle = gr; g.fillRect(0, 0, 64, 64);

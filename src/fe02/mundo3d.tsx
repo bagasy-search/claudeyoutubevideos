@@ -187,15 +187,15 @@ const drawCotiz = (g: CanvasRenderingContext2D, t: number) => {
 
 // ---------------- piezas del mundo ----------------
 type Tx = THREE.Texture | null | undefined;
-const Box: React.FC<{ p: V3; s: V3; c: string; r?: number; m?: number; e?: string; ei?: number; map?: Tx; rad?: number; rot?: V3; cast?: boolean }> = ({ p, s, c, r = 0.8, m = 0, e, ei = 0, map, rad = 0.02, rot, cast = true }) => (
+const Box: React.FC<{ p: V3; s: V3; c: string; r?: number; m?: number; e?: string; ei?: number; map?: Tx; rad?: number; rot?: V3; cast?: boolean; cc?: number }> = ({ p, s, c, r = 0.8, m = 0, e, ei = 0, map, rad = 0.02, rot, cast = true, cc = 0 }) => (
   <mesh position={p} rotation={rot} castShadow={cast} receiveShadow geometry={rbox(s[0], s[1], s[2], rad)}>
-    <meshStandardMaterial color={c} roughness={r} metalness={m} emissive={e ?? "#000"} emissiveIntensity={ei} map={map ?? undefined} />
+    <meshPhysicalMaterial color={c} roughness={r} metalness={m} emissive={e ?? "#000"} emissiveIntensity={ei} map={map ?? undefined} clearcoat={cc} clearcoatRoughness={0.12} />
   </mesh>
 );
 // muro con canto claro en el corte (se ve el espesor, como maqueta)
 const Muro: React.FC<{ p: V3; s: V3; c: string; map?: Tx }> = ({ p, s, c, map }) => (
   <group position={p}>
-    <mesh receiveShadow castShadow><boxGeometry args={s} /><meshStandardMaterial color={c} roughness={0.92} map={map ?? undefined} /></mesh>
+    <mesh receiveShadow castShadow><boxGeometry args={s} /><meshStandardMaterial color={c} roughness={0.85} map={map ?? undefined} /></mesh>
     <mesh position={[0, s[1] / 2 + 0.004, 0]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[s[0], s[2]]} /><meshStandardMaterial color="#e8dcc6" roughness={1} /></mesh>
   </group>
 );
@@ -221,20 +221,29 @@ const Cempas: React.FC<{ p: V3; n: number; r: number; seed?: number }> = ({ p, n
 );
 // ATAÚD CERRADO (tapa abovedada, molduras, asas) sobre su base · etiqueta de precio colgante que gira y se da vuelta
 const Ataud: React.FC<{ x: number; col: string; m: number; r: number; trim?: string }> = ({ x, col, m, r, trim = "#c9a55a" }) => {
-  const z = -0.45;
+  const z = -0.45, cc = m > 0.5 ? 1 : 0.8;
   return (
     <group position={[x, 0, z]}>
-      {/* base (andas) cubierta con paño */}
-      <Box p={[0, 0.27, 0]} s={[0.78, 0.54, 2.05]} c="#3a2b28" r={0.95} rad={0.03} />
-      <Box p={[0, 0.555, 0]} s={[0.84, 0.03, 2.12]} c="#6e1f22" r={0.9} rad={0.01} />
-      {/* cuerpo */}
-      <Box p={[0, 0.8, 0]} s={[0.64, 0.46, 1.98]} c={col} r={r} m={m} rad={0.05} />
-      <Box p={[0, 0.79, 0]} s={[0.67, 0.05, 2.01]} c={trim} r={0.35} m={0.85} rad={0.02} />
-      {/* tapa abovedada CERRADA */}
-      <mesh position={[0, 1.03, 0]} scale={[0.33, 0.1, 1.0]} castShadow receiveShadow geometry={rbox(2, 1, 2, 0.45)}><meshStandardMaterial color={col} roughness={r * 0.9} metalness={m} /></mesh>
-      {/* asas */}
-      {[-0.6, 0, 0.6].map((q, i) => <Box key={i} p={[0.345, 0.74, q]} s={[0.03, 0.035, 0.34]} c={trim} r={0.3} m={0.9} rad={0.012} />)}
-      {[-0.6, 0, 0.6].map((q, i) => <Box key={"b" + i} p={[-0.345, 0.74, q]} s={[0.03, 0.035, 0.34]} c={trim} r={0.3} m={0.9} rad={0.012} />)}
+      {/* andas cubiertas con paño de terciopelo que cae hasta el piso */}
+      <Box p={[0, 0.27, 0]} s={[0.8, 0.54, 2.08]} c="#2a1a17" r={0.95} rad={0.03} />
+      <Box p={[0, 0.5, 0]} s={[0.9, 0.12, 2.18]} c="#5e1619" r={0.75} rad={0.03} />
+      {Array.from({ length: 9 }, (_, i) => <Box key={"f" + i} p={[0, 0.5, -1.0 + i * 0.25]} s={[0.92, 0.1, 0.06]} c="#4c1114" r={0.8} rad={0.025} cast={false} />)}
+      {/* cuerpo laqueado con zócalo, cintura y paneles en relieve */}
+      <Box p={[0, 0.6, 0]} s={[0.7, 0.06, 2.06]} c={trim} r={0.25} m={0.9} rad={0.02} />
+      <Box p={[0, 0.8, 0]} s={[0.64, 0.38, 1.98]} c={col} r={r} m={m} rad={0.05} cc={cc} />
+      {[1, -1].map((sd) => [-0.62, 0, 0.62].map((q, i) => <Box key={sd + "p" + i} p={[sd * 0.322, 0.79, q]} s={[0.012, 0.24, 0.52]} c={col} r={r * 0.8} m={m} rad={0.006} cc={cc} />))}
+      <Box p={[0, 0.985, 0]} s={[0.69, 0.04, 2.03]} c={trim} r={0.2} m={0.92} rad={0.015} />
+      {/* tapa abovedada CERRADA en dos niveles con remate */}
+      <mesh position={[0, 1.04, 0]} scale={[0.335, 0.085, 1.0]} castShadow receiveShadow geometry={rbox(2, 1, 2, 0.45)}><meshPhysicalMaterial color={col} roughness={r * 0.8} metalness={m} clearcoat={cc} clearcoatRoughness={0.08} /></mesh>
+      <mesh position={[0, 1.12, 0]} scale={[0.25, 0.05, 0.86]} castShadow geometry={rbox(2, 1, 2, 0.45)}><meshPhysicalMaterial color={col} roughness={r * 0.7} metalness={m} clearcoat={cc} clearcoatRoughness={0.06} /></mesh>
+      <Box p={[0, 1.165, 0]} s={[0.04, 0.012, 1.4]} c={trim} r={0.2} m={0.95} rad={0.005} cast={false} />
+      {/* esquineros de bronce */}
+      {[[-1, -1], [1, -1], [-1, 1], [1, 1]].map(([sx, sz], i) => <Box key={"e" + i} p={[sx * 0.322, 0.8, sz * 0.985]} s={[0.05, 0.4, 0.05]} c={trim} r={0.2} m={0.95} rad={0.02} />)}
+      {/* barras de asas con soportes */}
+      {[1, -1].map((sd) => <group key={"a" + sd}>
+        <mesh position={[sd * 0.385, 0.76, 0]} rotation={[Math.PI / 2, 0, 0]} castShadow><cylinderGeometry args={[0.016, 0.016, 1.6, 16]} /><meshPhysicalMaterial color={trim} roughness={0.18} metalness={1} clearcoat={0.5} /></mesh>
+        {[-0.7, -0.23, 0.23, 0.7].map((q, i) => <Box key={i} p={[sd * 0.355, 0.76, q]} s={[0.07, 0.05, 0.05]} c={trim} r={0.2} m={0.95} rad={0.02} cast={false} />)}
+      </group>)}
     </group>
   );
 };
@@ -253,7 +262,7 @@ const tagTex = (front: string, back: string, sub: string) => canvasTex(512, 600,
 const half = (t: THREE.Texture | null, top: boolean) => { if (!t) return null; const c = t.clone(); c.repeat.set(1, 0.5); c.offset.set(0, top ? 0.5 : 0); c.needsUpdate = true; return c; };
 
 // urna (torno) — barro, madera, sencilla, mármol, metal
-const Urna: React.FC<{ p: V3; c: string; r: number; m: number; h?: number; shape?: number }> = ({ p, c, r, m, h = 0.32, shape = 0 }) => {
+const Urna: React.FC<{ p: V3; c: string; r: number; m: number; h?: number; shape?: number; map?: Tx }> = ({ p, c, r, m, h = 0.32, shape = 0, map }) => {
   const pts = useMemo(() => {
     const a: THREE.Vector2[] = [];
     for (let i = 0; i <= 16; i++) { const y = (i / 16) * h; const q = i / 16; const w = shape === 0 ? 0.07 + 0.06 * Math.sin(q * Math.PI) : shape === 1 ? 0.085 + 0.01 * q : 0.06 + 0.07 * Math.sin(q * Math.PI * 0.9) - 0.02 * q; a.push(new THREE.Vector2(Math.max(0.03, w), y)); }
@@ -261,17 +270,22 @@ const Urna: React.FC<{ p: V3; c: string; r: number; m: number; h?: number; shape
   }, [h, shape]);
   return (
     <group position={p}>
-      <mesh castShadow receiveShadow><latheGeometry args={[pts, 32]} /><meshStandardMaterial color={c} roughness={r} metalness={m} /></mesh>
-      <mesh position={[0, h + 0.012, 0]} castShadow><cylinderGeometry args={[0.05, 0.06, 0.03, 24]} /><meshStandardMaterial color={c} roughness={r} metalness={m} /></mesh>
+      <mesh castShadow receiveShadow><latheGeometry args={[pts, 48]} /><meshPhysicalMaterial color={c} map={map ?? undefined} roughness={r} metalness={m} clearcoat={r < 0.7 ? 1 : 0.2} clearcoatRoughness={0.1} /></mesh>
+      <mesh position={[0, h * 0.18, 0]}><torusGeometry args={[pts[3].x + 0.002, 0.006, 8, 48]} /><meshStandardMaterial color="#c9a55a" roughness={0.2} metalness={1} /></mesh>
+      <mesh position={[0, h + 0.012, 0]} castShadow><cylinderGeometry args={[0.05, 0.06, 0.03, 32]} /><meshPhysicalMaterial color={c} map={map ?? undefined} roughness={r} metalness={m} clearcoat={0.6} /></mesh>
+      <mesh position={[0, h + 0.04, 0]} castShadow><sphereGeometry args={[0.022, 20, 14]} /><meshStandardMaterial color="#c9a55a" roughness={0.2} metalness={1} /></mesh>
     </group>
   );
 };
 // silla de capilla
-const Silla: React.FC<{ p: V3 }> = ({ p }) => (
+const Silla: React.FC<{ p: V3; vel?: Tx }> = ({ p, vel }) => (
   <group position={p}>
-    <Box p={[0, 0.45, 0]} s={[0.44, 0.05, 0.42]} c="#d7cfc1" r={0.7} />
-    <Box p={[0, 0.72, -0.19]} s={[0.44, 0.5, 0.04]} c="#d7cfc1" r={0.7} />
-    {[[-0.19, -0.17], [0.19, -0.17], [-0.19, 0.17], [0.19, 0.17]].map(([x, z], i) => <Box key={i} p={[x, 0.22, z]} s={[0.03, 0.44, 0.03]} c="#7d7468" m={0.5} r={0.4} rad={0.01} />)}
+    <Box p={[0, 0.43, 0]} s={[0.46, 0.05, 0.44]} c="#3a2216" r={0.4} cc={0.6} rad={0.015} />
+    <Box p={[0, 0.48, 0.01]} s={[0.4, 0.06, 0.38]} c="#7a1d22" r={0.85} rad={0.03} map={vel} />
+    {[-0.2, 0.2].map((x, i) => <Box key={"r" + i} p={[x, 0.75, -0.2]} s={[0.04, 0.66, 0.04]} c="#3a2216" r={0.4} cc={0.6} rad={0.012} />)}
+    <Box p={[0, 0.84, -0.2]} s={[0.36, 0.34, 0.035]} c="#7a1d22" r={0.85} rad={0.02} map={vel} />
+    <Box p={[0, 1.06, -0.2]} s={[0.46, 0.05, 0.05]} c="#3a2216" r={0.4} cc={0.6} rad={0.015} />
+    {[[-0.2, -0.18], [0.2, -0.18], [-0.2, 0.18], [0.2, 0.18]].map(([x, z], i) => <Box key={i} p={[x, 0.21, z]} s={[0.04, 0.42, 0.04]} c="#3a2216" r={0.4} cc={0.6} rad={0.012} />)}
   </group>
 );
 
@@ -333,31 +347,38 @@ const Mundo: React.FC<{ t: number; A: Assets }> = ({ t, A }) => {
       <CamRig t={t} />
       <color attach="background" args={["#1a1420"]} />
       <fog attach="fog" args={["#1c1520", 14, 70]} />
-      <hemisphereLight args={["#ffd9a8", "#2a1d18", 0.16]} />
+      <hemisphereLight args={["#ffd9a8", "#2a1d18", 0.28]} />
+      <directionalLight position={[-8, 6, -10]} intensity={0.35} color="#9fb4ff" />
       {/* atardecer de Analco que entra de frente/arriba (única luz con sombras) */}
-      <directionalLight position={[6, 14, 12]} intensity={0.7} color="#ffc28a" castShadow shadow-mapSize-width={2048} shadow-mapSize-height={2048}
+      <directionalLight position={[6, 14, 12]} intensity={1.25} color="#ffc28a" castShadow shadow-mapSize-width={4096} shadow-mapSize-height={4096} shadow-radius={4}
         shadow-camera-left={-20} shadow-camera-right={20} shadow-camera-top={12} shadow-camera-bottom={-12} shadow-camera-near={1} shadow-camera-far={60} shadow-bias={-0.0004} shadow-normalBias={0.02} />
 
       {/* ===== piso y muros (casa de muñecas) ===== */}
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[10, 0, 0]} receiveShadow><planeGeometry args={[40, 7]} /><meshStandardMaterial map={T.planks} color="#a07a5c" roughness={0.8} /></mesh>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[10, 0, 0]} receiveShadow><planeGeometry args={[40, 7]} /><meshPhysicalMaterial map={T.planks} color="#9a7050" roughness={0.42} clearcoat={0.7} clearcoatRoughness={0.18} /></mesh>
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[24.5, 0.005, 0]} receiveShadow><planeGeometry args={[7, 7]} /><meshStandardMaterial map={T.block} color="#cbb89a" roughness={0.95} /></mesh>
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[10, -0.02, 10]} receiveShadow><planeGeometry args={[80, 14]} /><meshStandardMaterial color="#3a2f28" roughness={1} /></mesh>
       {/* muro de fondo con hueco de ventana en la oficina (x -5.15..-3.75, y 1.0..2.5) */}
-      <Muro p={[-6.1, 1.6, -3.1]} s={[1.9, 3.2, 0.2]} c="#b59b78" />
-      <Muro p={[-2.4, 1.6, -3.1]} s={[2.7, 3.2, 0.2]} c="#b59b78" />
+      <Muro p={[-6.1, 1.6, -3.1]} s={[1.9, 3.2, 0.2]} c="#b8946a" map={T.damasco} />
+      <Muro p={[-2.4, 1.6, -3.1]} s={[2.7, 3.2, 0.2]} c="#b8946a" map={T.damasco} />
       <Muro p={[-4.45, 0.5, -3.1]} s={[1.4, 1.0, 0.2]} c="#b59b78" />
       <Muro p={[-4.45, 2.85, -3.1]} s={[1.4, 0.7, 0.2]} c="#b59b78" />
-      <Muro p={[3.5, 1.6, -3.1]} s={[9.0, 3.2, 0.2]} c="#5e2a2a" />
-      <Muro p={[11, 1.6, -3.1]} s={[6.0, 3.2, 0.2]} c="#c9bba3" />
+      <Muro p={[3.5, 1.6, -3.1]} s={[9.0, 3.2, 0.2]} c="#7a2c2c" map={T.damasco} />
+      <Muro p={[11, 1.6, -3.1]} s={[6.0, 3.2, 0.2]} c="#d8c7a6" map={T.damasco} />
       <Muro p={[17.5, 1.6, -3.1]} s={[7.0, 3.2, 0.2]} c="#8d8a84" map={T.block} />
       {/* tabiques cortados entre salas (con puerta) */}
       {[-7.05, -1, 8, 14, 21].map((x, i) => <group key={i}>
-        <Muro p={[x, 1.6, -2.15]} s={[0.16, 3.2, 1.7]} c="#9c8466" />
+        <Muro p={[x, 1.6, -2.15]} s={[0.16, 3.2, 1.7]} c="#a07a56" />
         <Muro p={[x, 1.6, 1.35]} s={[0.16, 3.2, 3.3]} c="#9c8466" />
         <Muro p={[x, 2.85, -0.75]} s={[0.16, 0.7, 1.1]} c="#9c8466" />
       </group>)}
       {/* zócalo de madera en la oficina */}
-      <Box p={[-4.0, 0.45, -2.98]} s={[5.9, 0.9, 0.04]} c="#5b3b26" r={0.6} rad={0.005} cast={false} />
+      <Box p={[-4.0, 0.45, -2.98]} s={[5.9, 0.9, 0.04]} c="#6a4228" r={0.38} rad={0.005} cast={false} map={T.lambrin} cc={0.6} />
+      {[[-4.0, 5.9], [3.5, 9.0], [11, 6.0]].map(([x, w], i) => <group key={"cor" + i}>
+        <Box p={[x, 3.08, -2.96]} s={[w, 0.12, 0.1]} c="#e6d3a8" r={0.45} rad={0.03} cast={false} />
+        <Box p={[x, 2.99, -2.97]} s={[w, 0.04, 0.07]} c="#c9a55a" r={0.25} m={0.8} rad={0.01} cast={false} />
+        <Box p={[x, 0.93, -2.94]} s={[w, 0.05, 0.06]} c="#4a2c1a" r={0.35} cc={0.6} rad={0.015} cast={false} />
+        <Box p={[x, 0.06, -2.94]} s={[w, 0.12, 0.06]} c="#2e1b10" r={0.35} cc={0.6} rad={0.015} cast={false} />
+      </group>)}
 
       {/* ===== AFUERA por la ventana: Analco al atardecer y la cúpula del templo ===== */}
       <mesh position={[-4.5, 9, -40]}><planeGeometry args={[90, 34]} /><meshBasicMaterial color="#e89a62" toneMapped={false} fog={false} /></mesh>
@@ -388,11 +409,13 @@ const Mundo: React.FC<{ t: number; A: Assets }> = ({ t, A }) => {
       {[-4.8, -4.45, -4.1].map((x, i) => <Box key={i} p={[x, 1.75, -3.05]} s={[0.018, 1.5, 0.018]} c="#1d1b1a" m={0.6} r={0.5} rad={0.008} cast={false} />)}
 
       {/* ===== OFICINA de Ernesto ===== */}
-      <Box p={[-4.0, 0.39, -1.3]} s={[2.2, 0.78, 1.0]} c="#4a2c1a" r={0.55} rad={0.03} />
-      <Box p={[-4.0, 0.775, -1.3]} s={[2.3, 0.04, 1.08]} c="#5d3a22" r={0.4} rad={0.012} />
+      <Box p={[-4.0, 0.39, -1.3]} s={[2.2, 0.78, 1.0]} c="#4a2c1a" r={0.4} rad={0.03} cc={0.7} map={T.lambrin} />
+      <Box p={[-4.0, 0.775, -1.3]} s={[2.3, 0.04, 1.08]} c="#5d3a22" r={0.3} rad={0.012} cc={1} />
+      <mesh position={[-4.0, 0.796, -1.3]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[1.5, 0.7]} /><meshStandardMaterial color="#2f4a35" roughness={0.9} /></mesh>
       {/* sillón de Ernesto (vacío) y silla del cliente */}
-      <Box p={[-4.0, 0.5, -2.25]} s={[0.7, 0.12, 0.6]} c="#3d1f17" r={0.6} />
-      <Box p={[-4.0, 1.05, -2.52]} s={[0.7, 1.0, 0.12]} c="#3d1f17" r={0.6} rad={0.05} />
+      <Box p={[-4.0, 0.5, -2.25]} s={[0.7, 0.14, 0.6]} c="#4a1e16" r={0.45} rad={0.05} cc={0.5} />
+      <Box p={[-4.0, 1.05, -2.52]} s={[0.7, 1.0, 0.14]} c="#4a1e16" r={0.45} rad={0.06} cc={0.5} />
+      {[-0.36, 0.36].map((dx, i) => <Box key={"br" + i} p={[-4.0 + dx, 0.66, -2.28]} s={[0.1, 0.18, 0.62]} c="#4a1e16" r={0.45} rad={0.04} cc={0.5} />)}
       {/* archiveros verdes, crucifijo, foto de la calle, foto con el retrato de Don Refugio */}
       {[-6.55, -5.93].map((x, ci) => (
         <group key={ci}>
@@ -435,13 +458,13 @@ const Mundo: React.FC<{ t: number; A: Assets }> = ({ t, A }) => {
         <mesh position={[0, 0, 0.025]}><planeGeometry args={[0.54, 0.38]} /><meshStandardMaterial map={fotoCalle ?? undefined} color={fotoCalle ? "#fff" : "#887"} roughness={0.6} /></mesh>
       </group>
       {/* sobre el escritorio: veladora-lámpara (la LUZ de la oficina), retrato, cotización, pluma, sobre amarillo, la Carpeta */}
-      <Veladora p={[-5.0, 0.795, -1.55]} t={t} s={1.6} seed={1} light={2.4} />
-      <pointLight position={[-4.2, 1.8, 0.4]} intensity={0.55} distance={7} color="#ffd6a0" />
+      <Veladora p={[-5.0, 0.795, -1.55]} t={t} s={1.6} seed={1} light={1.5} />
+      <pointLight position={[-4.2, 1.8, 0.4]} intensity={0.95} distance={7} color="#ffd6a0" />
       <group position={[-4.72, 0.795, -1.72]} rotation={[-0.12, 0.25, 0]}>
         <Box p={[0, 0.2, 0]} s={[0.36, 0.42, 0.03]} c="#6b4a22" m={0.5} r={0.35} rad={0.01} />
         <mesh position={[0, 0.2, 0.017]}><planeGeometry args={[0.3, 0.36]} /><meshStandardMaterial map={retrato ?? undefined} color={retrato ? "#fff" : "#887"} roughness={0.5} /></mesh>
       </group>
-      <mesh position={[-3.85, 0.797, -0.98]} rotation={[-Math.PI / 2, 0, 0.04]} receiveShadow><planeGeometry args={[0.5, 0.68]} /><meshStandardMaterial map={cot.tx} roughness={0.85} /></mesh>
+      <mesh position={[-3.85, 0.797, -0.98]} rotation={[-Math.PI / 2, 0, 0.04]} receiveShadow><planeGeometry args={[0.5, 0.68]} /><meshStandardMaterial map={cot.tx} color="#cfc6b4" roughness={0.9} /></mesh>
       {/* pluma fuente: cuerpo negro con anillo dorado; la punta sigue el renglón que se tacha */}
       <group position={[penX, penY + 0.035, penZ]} rotation={[0, 0.5, penTilt]}>
         <mesh castShadow><cylinderGeometry args={[0.009, 0.007, 0.15, 12]} /><meshStandardMaterial color="#141210" roughness={0.25} metalness={0.3} /></mesh>
@@ -473,13 +496,20 @@ const Mundo: React.FC<{ t: number; A: Assets }> = ({ t, A }) => {
         <AtaudTag x={3.5} col="#7e848a" m={0.8} r={0.3} trim="#c9c9c9" faces={tagFaces[2]} flipAt={ev.tags[2]} t={t} seed={3} />
       </>}
       {/* sala: lambrín de madera y cortinas de terciopelo a los lados del fondo */}
-      <Box p={[3.5, 0.5, -2.98]} s={[9.0, 1.0, 0.04]} c="#4a2c1a" r={0.5} rad={0.005} cast={false} />
-      {[-0.6, 7.6].map((x, i) => <group key={i} position={[x, 1.65, -2.85]}>{Array.from({ length: 7 }).map((_, j) => <mesh key={j} position={[(j - 3) * 0.11, 0, 0.03 * Math.sin(j * 1.7)]}><cylinderGeometry args={[0.07, 0.08, 3.1, 10]} /><meshStandardMaterial color="#6a1a1e" roughness={0.75} /></mesh>)}</group>)}
+      <Box p={[3.5, 0.47, -2.98]} s={[9.0, 0.94, 0.04]} c="#4e2e1a" r={0.38} rad={0.005} cast={false} map={T.lambrin} cc={0.6} />
+      <Box p={[11, 0.47, -2.98]} s={[6.0, 0.94, 0.04]} c="#5b3b26" r={0.38} rad={0.005} cast={false} map={T.lambrin} cc={0.6} />
+      {/* alfombra de pasillo bajo los ataúdes y cuadros con marco dorado */}
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[3.2, 0.006, 0.9]} receiveShadow><planeGeometry args={[7.6, 1.3]} /><meshStandardMaterial map={T.runner} color="#ffffff" roughness={0.95} /></mesh>
+      {[[1.1, 2.3], [5.9, 2.3]].map(([x, y], i) => <group key={"cu" + i} position={[x, y, -2.96]}>
+        <Box p={[0, 0, 0]} s={[0.9, 0.62, 0.05]} c="#c9a55a" r={0.25} m={0.9} rad={0.02} />
+        <mesh position={[0, 0, 0.028]}><planeGeometry args={[0.76, 0.48]} /><meshStandardMaterial map={(i ? fotoCalle : fotoPapa) ?? undefined} color="#fff" roughness={0.5} /></mesh>
+      </group>)}
+      {[-0.6, 7.6].map((x, i) => <group key={i} position={[x, 1.65, -2.85]}>{Array.from({ length: 7 }).map((_, j) => <mesh key={j} position={[(j - 3) * 0.11, 0, 0.03 * Math.sin(j * 1.7)]}><cylinderGeometry args={[0.07, 0.08, 3.1, 16]} /><meshPhysicalMaterial color="#6a1a1e" roughness={0.6} sheen={1} sheenColor="#ff9a8a" sheenRoughness={0.4} /></mesh>)}</group>)}
       {/* lámparas de la sala */}
       {[0.3, 1.9, 3.5, 6.2].map((x, i) => <group key={i} position={[x, 2.9, -0.4]}>
         <mesh><cylinderGeometry args={[0.16, 0.22, 0.14, 20, 1, true]} /><meshStandardMaterial color="#c9a55a" metalness={0.8} roughness={0.35} side={THREE.DoubleSide} /></mesh>
         <mesh position={[0, -0.05, 0]}><sphereGeometry args={[0.06, 12, 12]} /><meshBasicMaterial color="#ffe0a8" toneMapped={false} /></mesh>
-        <pointLight position={[0, -0.2, 0]} intensity={0.75} distance={4.2} decay={1.7} color="#ffd6a0" />
+        <pointLight position={[0, -0.2, 0]} intensity={1.4} distance={5} decay={1.6} color="#ffd29a" />
       </group>)}
       {/* bóvedas: la básica de concreto y la de lujo (metal con forro de bronce) */}
       <group position={[5.3, 0, -0.9]}>
@@ -498,7 +528,7 @@ const Mundo: React.FC<{ t: number; A: Assets }> = ({ t, A }) => {
       <Urna p={[1.35, 1.325, -2.8]} c="#7a5634" r={0.6} m={0} shape={1} h={0.28} />
       <Urna p={[2.0, 1.325, -2.8]} c="#8e8a84" r={0.5} m={0.2} shape={2} />
       <Urna p={[2.65, 1.325, -2.8]} c="#5d6a74" r={0.3} m={0.8} shape={0} h={0.34} />
-      <Urna p={[3.3, 1.325, -2.8]} c="#ece6dc" r={0.15} m={0.05} shape={2} h={0.36} />
+      <Urna p={[3.3, 1.325, -2.8]} r={0.12} m={0.0} shape={2} h={0.36} map={T.marmol} c="#cfc8bc" />
       {urnTags && [[0.7, 0], [2.0, 1], [3.3, 2]].map(([x, i]) => <mesh key={i} position={[x, 1.2, -2.565]}><planeGeometry args={[0.36, 0.155]} /><meshStandardMaterial map={urnTags[i]} roughness={0.8} /></mesh>)}
 
       {/* ===== CAPILLA de velación ===== */}
@@ -514,14 +544,19 @@ const Mundo: React.FC<{ t: number; A: Assets }> = ({ t, A }) => {
         <Cempas p={[0, 1.08, 0.04]} n={16} r={0.14} seed={9} />
       </group>
       {Array.from({ length: 14 }).map((_, i) => <Veladora key={i} p={[9.7 + (i % 7) * 0.42, 0.16, -2.55 + Math.floor(i / 7) * 0.32]} t={t} seed={i * 1.7} col={i % 3 ? "#d9453a" : "#e8d9b5"} light={i === 3 || i === 10 ? 1.2 : 0} />)}
-      {[0, 1, 2].map((r) => [0, 1, 2, 3, 4, 5].map((c) => <Silla key={r + "_" + c} p={[9.4 + c * 0.66, 0, 0.1 + r * 0.9]} />))}
-      <pointLight position={[11, 2.6, 0.5]} intensity={0.6} distance={6} color="#ffd6a0" />
+      {[0, 1, 2].map((r) => [0, 1, 2, 3, 4, 5].map((c) => <Silla key={r + "_" + c} p={[9.4 + c * 0.66, 0, 0.1 + r * 0.9]} vel={T.terciopelo} />))}
+      <pointLight position={[11, 2.6, 0.5]} intensity={1.1} distance={7} color="#ffd6a0" />
+      <spotLight position={[11, 3.0, 0.6]} target-position={[11, 1.4, -2.9]} angle={0.45} penumbra={0.8} intensity={6} distance={7} color="#ffe2b0" />
 
       {/* ===== COCHERA con la carroza ===== */}
       <group position={[17.4, 0, -0.9]}>
-        <Box p={[0, 0.62, 0]} s={[4.8, 0.7, 1.75]} c="#1a1a20" r={0.2} m={0.7} rad={0.18} />
-        <Box p={[-0.4, 1.28, 0]} s={[3.6, 0.72, 1.62]} c="#1a1a20" r={0.2} m={0.7} rad={0.2} />
-        <Box p={[-0.35, 1.3, 0]} s={[3.3, 0.5, 1.64]} c="#3b4a55" r={0.06} m={0.9} rad={0.1} />
+        <Box p={[0, 0.62, 0]} s={[4.8, 0.7, 1.75]} c="#0e0e12" r={0.15} m={0.5} rad={0.18} cc={1} />
+        <Box p={[-0.4, 1.28, 0]} s={[3.6, 0.72, 1.62]} c="#0e0e12" r={0.15} m={0.5} rad={0.2} cc={1} />
+        <Box p={[1.95, 0.98, 0]} s={[0.95, 0.12, 1.5]} c="#0e0e12" r={0.15} m={0.5} rad={0.06} cc={1} />
+        {[[-1.6, 0.92], [1.6, 0.92], [-1.6, -0.92], [1.6, -0.92]].map(([x, z], i) => <mesh key={"gb" + i} position={[x, 0.42, z]} rotation={[Math.PI / 2, 0, 0]} castShadow><cylinderGeometry args={[0.42, 0.42, 0.14, 32, 1, true, -Math.PI / 2, Math.PI]} /><meshPhysicalMaterial color="#0e0e12" roughness={0.15} metalness={0.5} clearcoat={1} side={THREE.DoubleSide} /></mesh>)}
+        {[2.47, -2.47].map((x, i) => <Box key={"pg" + i} p={[x, 0.38, 0]} s={[0.1, 0.12, 1.8]} c="#e8e8e8" m={1} r={0.08} rad={0.05} />)}
+        <Box p={[-0.4, 1.68, 0]} s={[3.2, 0.03, 1.4]} c="#d8d8d8" m={1} r={0.12} rad={0.01} />
+        <Box p={[-0.35, 1.3, 0]} s={[3.3, 0.5, 1.64]} c="#20282e" r={0.03} m={0.9} rad={0.1} cc={1} />
         {/* cortinas plisadas detrás del vidrio lateral y landau cromado */}
         {[1, -1].map((sd) => <group key={sd}>
           {Array.from({ length: 11 }, (_, i) => <Box key={i} p={[-1.85 + i * 0.3, 1.3, sd * (0.832 + (i % 2) * 0.008)]} s={[0.33, 0.4, 0.012]} c={i % 2 ? "#5e1a1d" : "#702327"} r={0.9} cast={false} />)}
@@ -531,11 +566,15 @@ const Mundo: React.FC<{ t: number; A: Assets }> = ({ t, A }) => {
           <Box p={[-1.95, 1.28, sd * 0.83]} s={[0.36, 0.44, 0.012]} c="#1a1a20" r={0.2} m={0.7} cast={false} />
         </group>)}
         {[[-1.6, 0.98], [1.6, 0.98], [-1.6, -0.98], [1.6, -0.98]].map(([x, z], i) => <mesh key={"h" + i} position={[x, 0.34, z]} rotation={[Math.PI / 2, 0, 0]}><cylinderGeometry args={[0.17, 0.17, 0.02, 24]} /><meshStandardMaterial color="#d8d8d8" metalness={0.95} roughness={0.15} /></mesh>)}
-        {Array.from({ length: 6 }, (_, i) => <Box key={"g" + i} p={[2.43, 0.56 + i * 0.045, 0]} s={[0.03, 0.02, 0.9]} c="#d0d0d0" m={0.95} r={0.2} cast={false} />)}
+        {Array.from({ length: 6 }, (_, i) => <Box key={"g" + i} p={[2.465, 0.56 + i * 0.045, 0]} s={[0.03, 0.02, 0.86]} c="#d0d0d0" m={1} r={0.1} cast={false} />)}
         <Box p={[2.0, 1.3, 0]} s={[0.04, 0.4, 1.4]} c="#3b4a55" r={0.06} m={0.9} rad={0.02} cast={false} />
-        {[[-1.6, 0.86], [1.6, 0.86], [-1.6, -0.86], [1.6, -0.86]].map(([x, z], i) => <mesh key={i} position={[x, 0.34, z]} rotation={[Math.PI / 2, 0, 0]} castShadow><cylinderGeometry args={[0.34, 0.34, 0.22, 24]} /><meshStandardMaterial color="#111" roughness={0.8} /></mesh>)}
-        <Box p={[2.42, 0.72, 0]} s={[0.05, 0.2, 1.4]} c="#b9b9b9" m={0.9} r={0.25} rad={0.01} />
-        {[0.55, -0.55].map((z, i) => <mesh key={i} position={[2.43, 0.86, z]}><sphereGeometry args={[0.08, 14, 14]} /><meshBasicMaterial color={farosK > 0.05 ? "#fff6dc" : "#55524c"} toneMapped={farosK < 0.05} /></mesh>)}
+        {[[-1.6, 0.86], [1.6, 0.86], [-1.6, -0.86], [1.6, -0.86]].map(([x, z], i) => <mesh key={i} position={[x, 0.34, z]} rotation={[Math.PI / 2, 0, 0]} castShadow><cylinderGeometry args={[0.34, 0.34, 0.22, 40]} /><meshStandardMaterial color="#151515" roughness={0.7} /></mesh>)}
+        <Box p={[2.42, 0.72, 0]} s={[0.05, 0.2, 1.4]} c="#0e0e12" r={0.15} m={0.5} rad={0.01} cc={1} />
+        {[0.55, -0.55].map((z, i) => <group key={i} position={[2.44, 0.86, z]} rotation={[0, 0, Math.PI / 2]}>
+          <mesh><cylinderGeometry args={[0.12, 0.12, 0.08, 40]} /><meshStandardMaterial color="#e8e8e8" metalness={1} roughness={0.08} /></mesh>
+          <mesh position={[0, -0.045, 0]}><sphereGeometry args={[0.1, 32, 16, 0, Math.PI * 2, 0, Math.PI / 2]} /><meshPhysicalMaterial color={farosK > 0.05 ? "#fff6dc" : "#cfd6dc"} emissive="#fff1d0" emissiveIntensity={4 * farosK} roughness={0.05} clearcoat={1} toneMapped={farosK < 0.05} /></mesh>
+        </group>)}
+        <Box p={[2.44, 0.67, 0]} s={[0.04, 0.36, 0.96]} c="#e8e8e8" m={1} r={0.08} rad={0.03} cast={false} />
         {farosK > 0.05 && <spotLight position={[2.6, 0.86, 0]} target-position={[8, 0.2, 0]} angle={0.5} penumbra={0.6} intensity={3 * farosK} distance={9} color="#fff1d0" />}
         {/* cortinas de la ventana trasera */}
         <Box p={[-1.9, 1.3, 0]} s={[0.05, 0.42, 1.5]} c="#7a1f22" r={0.9} rad={0.01} />
@@ -547,7 +586,10 @@ const Mundo: React.FC<{ t: number; A: Assets }> = ({ t, A }) => {
 
       {/* ===== PATIO: nicho de cantera, lápida tallada, pirul, macetas de barro con cempasúchil ===== */}
       <group position={[24.6, 0, -2.75]}>
-        <Box p={[0, 1.55, 0]} s={[5.6, 3.1, 0.6]} c="#c9b99c" r={0.95} rad={0.04} />
+        <Box p={[0, 1.55, 0]} s={[5.6, 3.1, 0.6]} c="#d6c09a" r={0.9} rad={0.04} map={T.block} />
+        <Box p={[0, 3.18, 0.05]} s={[5.9, 0.18, 0.75]} c="#c4ab84" r={0.85} rad={0.04} />
+        <Box p={[0, 3.32, 0.02]} s={[5.7, 0.1, 0.65]} c="#b39a72" r={0.85} rad={0.03} />
+        <Box p={[0, 0.08, 0.1]} s={[5.9, 0.16, 0.8]} c="#b39a72" r={0.85} rad={0.03} />
         {[-2, -1, 1, 2].map((c) => [0, 1, 2].map((r) => <Box key={c + "_" + r} p={[c * 1.05, 0.62 + r * 0.92, 0.29]} s={[0.92, 0.78, 0.04]} c={rnd(c * 3 + r, 2) > 0.5 ? "#bfae90" : "#cbbb9e"} r={0.95} rad={0.012} cast={false} />))}
         <mesh position={[0, 1.55, 0.315]}><planeGeometry args={[1.0, 2.6 * 0.6]} /><meshStandardMaterial map={lapidaTex ?? undefined} color={lapidaTex ? "#fff" : "#cdbfa6"} roughness={0.95} /></mesh>
         <Cempas p={[0, 0.1, 0.65]} n={30} r={0.32} seed={11} />
@@ -559,11 +601,11 @@ const Mundo: React.FC<{ t: number; A: Assets }> = ({ t, A }) => {
       </group>)}
       <group position={[27.0, 0, -1.2]}>
         <mesh position={[0, 1.4, 0]} castShadow><cylinderGeometry args={[0.13, 0.22, 2.8, 10]} /><meshStandardMaterial color="#5a4433" roughness={1} /></mesh>
-        {Array.from({ length: 18 }).map((_, i) => <mesh key={i} position={[(rnd(i, 7) - 0.5) * 2.4, 2.6 + rnd(i, 8) * 1.4, (rnd(i, 9) - 0.5) * 1.6]} castShadow><icosahedronGeometry args={[0.45 + rnd(i, 10) * 0.25, 1]} /><meshStandardMaterial color={rnd(i, 11) > 0.5 ? "#5f7a3c" : "#4c6a32"} roughness={0.95} flatShading /></mesh>)}
+        {Array.from({ length: 46 }).map((_, i) => <mesh key={i} position={[(rnd(i, 7) - 0.5) * 2.8, 2.3 + rnd(i, 8) * 1.8, (rnd(i, 9) - 0.5) * 1.9]} scale={[1, 0.8, 1]} castShadow><sphereGeometry args={[0.32 + rnd(i, 10) * 0.28, 20, 14]} /><meshStandardMaterial color={["#56743a", "#4a6831", "#6a8a44", "#3f5a2b"][Math.floor(rnd(i, 11) * 4)]} roughness={0.85} /></mesh>)}
       </group>
       {/* rótulo sobre la entrada de la oficina */}
       {rotulo && <mesh position={[-4.0, 3.4, -3.05]}><planeGeometry args={[3.0, 0.58]} /><meshStandardMaterial map={rotulo} roughness={0.6} emissive="#e8c77a" emissiveIntensity={0.08} emissiveMap={rotulo} /></mesh>}
-      <Post bloom={0.55 + 0.1 * fv} threshold={0.86} ao={false} exposure={1.0} env={0.16} />
+      <Post bloom={0.45 + 0.08 * fv} threshold={0.97} ao exposure={1.0} env={0.45} />
     </>
   );
 };
