@@ -191,6 +191,7 @@ export type Accesorio =
   | { t: "mochila"; color: string }
   | { t: "lentes"; color?: string; forma?: "redondo" | "gato" }
   | { t: "sombrero"; color: string }
+  | { t: "corona"; color: string }
   | { t: "vincha"; color: string }
   | { t: "bata"; color: string }
   | { t: "corbata"; color: string; suelta?: boolean }
@@ -200,7 +201,10 @@ export type Accesorio =
   | { t: "delantal"; color: string }
   | { t: "chaleco"; color: string }
   | { t: "parche"; color: string; lado?: 1 | -1 }
-  | { t: "orejas"; color: string };
+  | { t: "orejas"; color: string }
+  | { t: "tunica"; color: string; largo?: number } // túnica de monje: falda que cae de la cadera (largo 0..1 de la pierna)
+  | { t: "rosario"; color: string } // collar de cuentas de madera sobre el pecho
+  | { t: "ojeras"; color?: string }; // medialunas oscuras bajo los ojos
 
 export type Estilo = "palo" | "frijol" | "demonio" | "zombi";
 export type Look = {
@@ -216,6 +220,7 @@ export type Look = {
   accesorios?: Accesorio[];
   alto?: number; // multiplica el largo de piernas/torso (niños 0,7)
   frontal?: boolean; // brazos a los costados del cuerpo (por defecto en frijol/demonio)
+  ceja?: string; // color de cejas (canas)
 };
 
 export const LOOKS = {
@@ -390,7 +395,7 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
   const cx = cara * 9 * dir; // los rasgos se corren hacia donde gira la cara (en local)
   const ab = Math.max(0.04, e.abre * (1 - parpadeo));
   const ojoS = frijol ? 12.5 : 13.5, ojoRx = frijol ? 8.2 : 9.8, ojoRy = (frijol ? 8.6 : 11) * ab;
-  const colorCeja = frijol ? "#2a2622" : zombi ? "#2c3528" : "#efe7d6";
+  const colorCeja = look.ceja ?? (frijol ? "#2a2622" : zombi ? "#2c3528" : "#efe7d6");
   const colorBoca = frijol ? "#3a2420" : zombi ? "#2c1e1a" : "#f1e9d8";
   const mx = mirar.x * dir * 3.6, my = mirar.y * 3.2;
   const by = 18 + (frijol ? 2 : 0);
@@ -426,7 +431,7 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
     return <path d="M-7,0 L7,0" transform={`translate(${ox},${oy}) rotate(${e.ceja * s * -1})`} stroke={colorCeja} strokeWidth={frijol ? 3.6 : 3} strokeLinecap="round" />;
   };
 
-  const gorra = tiene("gorra"), capucha = tiene("capucha"), pelo = tiene("pelo"), barba = tiene("barba"), sombrero = tiene("sombrero"), vincha = tiene("vincha");
+  const gorra = tiene("gorra"), capucha = tiene("capucha"), pelo = tiene("pelo"), barba = tiene("barba"), sombrero = tiene("sombrero"), vincha = tiene("vincha"), corona = tiene("corona");
   const Cabeza = () => (
     <g transform={`translate(${hx},${hy}) rotate(${p.tronco * 0.4 + p.cabeza})`}>
       <defs>
@@ -459,6 +464,7 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
       <g clipPath={`url(#hc${uid})`}>
         <Ojo s={-1} /><Ojo s={1} />
         {e.rubor > 0.01 && [-1, 1].map((s) => <ellipse key={s} cx={s * 22 + cx} cy={12} rx={8} ry={4} fill="#ff7a7a" opacity={0.35 * e.rubor} />)}
+        {tiene("ojeras") && [-1, 1].map((s) => <path key={`oj${s}`} d={`M${s * ojoS + cx - 8},${ojoRy - 1} Q${s * ojoS + cx},${ojoRy + 6} ${s * ojoS + cx + 8},${ojoRy - 1}`} stroke={tiene("ojeras").color ?? "#8a6a5a"} strokeWidth={2.4} fill="none" opacity={0.75} strokeLinecap="round" />)}
         {barba && <path d={`M${-Rk},${4} Q${-Rk * 0.6},${Rk + 16} 0,${Rk + 12} Q${Rk * 0.6},${Rk + 16} ${Rk},${4} Q${Rk * 0.3},${Rk * 0.55} 0,${Rk * 0.5} Q${-Rk * 0.3},${Rk * 0.55} ${-Rk},${4} Z`} fill={barba.color} />}
         <g transform={`translate(${cx * 0.9},${by})`}>
           {demonio ? (
@@ -515,6 +521,12 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
           <path d={`M${R + 2},${R * 0.2} Q${R * 0.9},${R * 0.75} ${R * 0.35},${R * 0.62}`} strokeWidth={3} />
         </g>
       )}
+      {corona && (
+        <g>
+          <path d={`M${-R * 0.7},${-R * 0.62} L${-R * 0.78},${-R - 18} L${-R * 0.4},${-R * 0.95} L0,${-R - 30} L${R * 0.4},${-R * 0.95} L${R * 0.78},${-R - 18} L${R * 0.7},${-R * 0.62} Q0,${-R * 0.8} ${-R * 0.7},${-R * 0.62} Z`} fill={corona.color} stroke={oscurecer(corona.color, 0.7)} strokeWidth={3} />
+          <circle cx={0} cy={-R * 0.82} r={6} fill="#c8323a" />
+        </g>
+      )}
       {vincha && <path d={`M${-R},${-R * 0.45} Q0,${-R * 0.85} ${R},${-R * 0.45}`} stroke={vincha.color} strokeWidth={7} fill="none" />}
     </g>
   );
@@ -529,10 +541,24 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
       <Pierna L={j.lI} atras />
       <Torso />
       <Pierna L={j.lD} />
+      {tiene("tunica") && (() => {
+        const tu = tiene("tunica"), L = (H.muslo + H.pierna) * (tu.largo ?? 0.8);
+        const pa = j.lI.pie, pb = j.lD.pie, rodI = j.lI.rod, rodD = j.lD.rod;
+        // la falda cubre de la cadera hacia los pies: abre según la separación de las rodillas, queda un poco sobre el piso
+        const izq = Math.min(rodI.x, rodD.x, pa.x, pb.x) - 22, der = Math.max(rodI.x, rodD.x, pa.x, pb.x) + 22;
+        const base = Math.min(-6, j.cad.y + L);
+        const cY = j.cad.y - 4;
+        return <path d={`M${-ancho / 2 + 4},${cY} L${ancho / 2 - 4},${cY} Q${der + 4},${(cY + base) / 2} ${der},${base} Q${(izq + der) / 2},${base + 6} ${izq},${base} Q${izq - 4},${(cY + base) / 2} ${-ancho / 2 + 4},${cY} Z`} fill={tu.color} stroke={contorno !== "none" ? contorno : undefined} strokeWidth={4} strokeLinejoin="round" />;
+      })()}
       {bufanda && (
         <g transform={`translate(${P(j.hombro)}) rotate(${ang})`}>
           <rect x={-ancho / 2 - 2} y={-6} width={ancho + 4} height={14} rx={7} fill={bufanda.color} />
           <rect x={ancho / 2 - 14} y={0} width={11} height={34} rx={5} fill={oscurecer(bufanda.color, 0.85)} />
+        </g>
+      )}
+      {tiene("rosario") && (
+        <g transform={`translate(${P(j.hombro)}) rotate(${ang})`}>
+          {Array.from({ length: 15 }).map((_, i) => { const a = (i / 14) * Math.PI; return <circle key={i} cx={-Math.cos(a) * ancho * 0.36} cy={4 + Math.sin(a) * tl * 0.5} r={5.2} fill={tiene("rosario").color} stroke="#2a1a10" strokeWidth={1.4} />; })}
         </g>
       )}
       {frontal ? <><Brazo B={j.bD} objeto={props.enManoD} /><Cabeza /></> : <><Cabeza /><Brazo B={j.bD} objeto={props.enManoD} /></>}
