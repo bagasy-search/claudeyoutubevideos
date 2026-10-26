@@ -35,12 +35,17 @@ const pose = (p: Pose, lt: number): Partial<React.ComponentProps<typeof Persona>
 };
 
 // ── fondos: plano saturado + rayos que giran + motas (el molde)
-const Fondo: React.FC<{ t: number; col: string; col2: string }> = ({ t, col, col2 }) => (
+const Fondo: React.FC<{ t: number; col: string; col2: string; ciudad?: boolean }> = ({ t, col, col2, ciudad }) => (
   <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
     <rect width={1920} height={1080} fill={col} />
     <g transform={`translate(560 720) rotate(${t * 9})`}>
       {Array.from({ length: 16 }, (_, k) => <path key={k} d="M 0 0 L 2400 -240 L 2400 240 Z" transform={`rotate(${k * 22.5})`} fill={col2} opacity={k % 2 ? 0 : 0.55} />)}
     </g>
+    {/* CTA: la ciudad dormida detrás, con la ventana de casa encendida */}
+    {ciudad && <g>
+      {Array.from({ length: 12 }, (_, k) => { const w = 150 + ((k * 53) % 80), h = 260 + ((k * 97) % 260), x = k * 165 - 20; return <g key={k}><rect x={x} y={1080 - h} width={w} height={h} fill="#2a1850" />{Array.from({ length: 6 }, (_, j) => { const on = ((k * 7 + j * 3) % 5) < 2 || (k === 5 && j === 2); return <rect key={j} x={x + 24 + (j % 2) * 64} y={1080 - h + 40 + Math.floor(j / 2) * 80} width={36} height={46} fill={on ? (k === 5 && j === 2 ? "#ffd27a" : "#ffb347") : "#1a1038"} opacity={on ? 0.75 + 0.25 * Math.sin(t * 2 + k + j) : 1} />; })}</g>; })}
+      <g transform={`translate(${5 * 165 - 20 + 24 + 18} ${1080 - (260 + ((5 * 97) % 260)) + 40 + 80 - 40}) scale(${1 + 0.06 * Math.sin(t * 3)})`}><text textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={30} fill="#ffd27a">HOME</text></g>
+    </g>}
     {Array.from({ length: 26 }, (_, k) => { const u = ((t * 0.08 + k * 0.137) % 1); return <circle key={k} cx={(k * 331) % 1920} cy={1080 - u * 1180} r={5 + (k % 4) * 3} fill="#fff" opacity={0.16 * Math.sin(u * Math.PI)} />; })}
     <rect width={1920} height={1080} fill="url(#insVin)" />
     <defs><radialGradient id="insVin" cx="0.5" cy="0.5" r="0.75"><stop offset="0.6" stopColor="#000" stopOpacity={0} /><stop offset="1" stopColor="#000" stopOpacity={0.35} /></radialGradient></defs>
@@ -360,7 +365,7 @@ const Uno: React.FC<{ i: Ins; t: number; px: number; py: number; sopa?: boolean 
   const lt = t - i.t;
   // OJO v3: en los inserts largos el nene cambia de reacción cada 4,5 s (mezcla suave), nada queda quieto
   const ps = (() => {
-    if (i.v === "cta" || lt < 4.5) return pose(i.pose, lt);
+    if (lt < 4.5) return pose(i.pose, lt);
     const ALT: Pose[] = ["senala", "piensa", "lee"];
     const pk = (n: number): Pose => (n <= 0 ? i.pose : n % 2 ? ALT[(n + Math.round(i.t)) % 3] : i.pose);
     const n = Math.floor(lt / 4.5), u = cl((lt - n * 4.5) / 0.35);
@@ -378,7 +383,7 @@ const Uno: React.FC<{ i: Ins; t: number; px: number; py: number; sopa?: boolean 
   const DX = espejo ? -560 : 0;
   return (
     <div style={{ position: "absolute", inset: 0, clipPath: `circle(${R}px at ${px}px ${py}px)` }}>
-      <Fondo t={t} col={c1} col2={c2} />
+      <Fondo t={t} col={c1} col2={c2} ciudad={i.v === "cta"} />
       {/* el nene grande, actuando */}
       <Persona x={NX + (i.pose === "corre" ? Math.sin(lt * 1.3) * 40 : 0)} y={1010} h={600} t={t} seed={1} ropa={LUCIUS} {...ps} flip={espejo || undefined} />
       {sopa && <svg style={{ position: "absolute", left: NX - 150, top: 1010 - 600, overflow: "visible" }} width={300} height={600} viewBox="-150 -560 300 560"><g transform="scale(2.074)">
