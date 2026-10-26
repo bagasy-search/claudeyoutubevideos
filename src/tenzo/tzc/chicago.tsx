@@ -8,7 +8,7 @@ import { Actor, ActorProps } from "../../anikit/actor";
 import { Escena } from "../../anikit/escena";
 import { Halo } from "../../anikit/luz";
 import { F_GLOBO, F_HUD } from "../../anikit/pantalla";
-import { Look } from "../../anikit/personaje";
+import { Look, Pose } from "../../anikit/personaje";
 import { ACENTO, ESC, FRIO, LEO, LEO_CAPUCHA, MARA, ORO, PAL, PAL_DIA, TENZO } from "../elenco";
 import { MAYA } from "../elenco_b";
 import { FarolMano, TelMesa, Tel } from "../utileria";
@@ -33,6 +33,56 @@ export const TENZO_MESA = { hD: 38, cD: 98, hI: 32, cI: 92 };
 
 const mk = (def: Partial<ActorProps>, over: Act | undefined): ActorProps | null => (over === null ? null : ({ ...def, ...(over ?? {}) } as ActorProps));
 
+// ACTUACIÓN automática en las charlas: el que habla gesticula en cada frase (mano que explica, palma abierta, las dos
+// manos, señala, se toca el pecho), se inclina y mira al otro; el que escucha lo mira, asiente y vuelve a lo suyo.
+// Sólo toca a los actores con 1-2 poses fijas y mirada fija (los planos ya coreografiados quedan como están).
+const GESTOS: Partial<Pose>[] = [
+  { hD: 70, cD: 40, cabeza: -6, tronco: 3 }, { hD: 55, cD: 95, tronco: 7, cabeza: 4 }, { hI: 60, cI: 50, hD: 62, cD: 48, cabeza: -4 },
+  { hD: 88, cD: 22, cabeza: 8 }, { hI: 48, cI: 100, cabeza: -10, tronco: -3 }, { hD: 42, cD: 118, cabeza: 6, tronco: 5 },
+];
+const GESTOS_IZQ: Partial<Pose>[] = [{ hI: 58, cI: 46, cabeza: -6 }, { hI: 44, cI: 96, tronco: 6, cabeza: 5 }, { cabeza: 9, tronco: -4 }];
+type K<T> = { f: number; v: T; d?: number };
+const baseEn = <T,>(ks: K<T>[], f: number) => { let v = ks[0].v; for (const k of ks) if (k.f <= f) v = k.v; return v; };
+const mas = (b: Partial<Pose>, g: Partial<Pose>): Partial<Pose> => ({
+  ...b, ...g, tronco: (b.tronco ?? 0) + (g.tronco ?? 0), cabeza: (b.cabeza ?? 0) + (g.cabeza ?? 0),
+});
+const actuar = (a: ActorProps | null, otro: ActorProps | null, hacia: { x: number; y: number }, semilla: number): ActorProps | null => {
+  if (!a) return a;
+  const ps = (a.poses ?? []) as K<string | Partial<Pose>>[];
+  const libre = ps.length > 0 && ps.length <= 2 && ps.every((k) => typeof k.v === "object");
+  const ms = (a.miradas ?? []) as K<{ x: number; y: number }>[];
+  const mirarLibre = ms.length <= 1;
+  const m0 = ms[0]?.v ?? { x: 0, y: 0 };
+  const yo = (a.habla ?? []).filter(([d, h]) => h - d >= 12);
+  const el = (otro?.habla ?? []).filter(([d, h]) => h - d >= 12);
+  const nP: K<string | Partial<Pose>>[] = [], nM: K<{ x: number; y: number }>[] = [];
+  const set = a.enManoD ? GESTOS_IZQ : GESTOS;
+  yo.forEach(([d, h], i) => {
+    if (libre) {
+      const g1 = set[(i * 2 + semilla) % set.length], g2 = set[(i * 2 + semilla + 1) % set.length];
+      nP.push({ f: d + 2, v: mas(baseEn(ps, d) as Partial<Pose>, g1) });
+      if (h - d > 70) nP.push({ f: d + Math.round((h - d) * 0.5), v: mas(baseEn(ps, d + (h - d) / 2) as Partial<Pose>, g2) });
+      nP.push({ f: h + 6, v: baseEn(ps, h + 6) });
+    }
+    if (mirarLibre) { nM.push({ f: d, v: hacia }); nM.push({ f: h + 20, v: m0 }); }
+  });
+  el.forEach(([d, h]) => {
+    if (libre && !yo.some(([x, y]) => x < h && y > d)) {
+      nP.push({ f: d + 14, v: mas(baseEn(ps, d) as Partial<Pose>, { cabeza: 7, tronco: 2 }) });
+      nP.push({ f: d + 32, v: baseEn(ps, d + 32) });
+      if (h - d > 90) { nP.push({ f: d + Math.round((h - d) * 0.6), v: mas(baseEn(ps, d) as Partial<Pose>, { cabeza: 6 }) }); nP.push({ f: d + Math.round((h - d) * 0.6) + 18, v: baseEn(ps, d) }); }
+    }
+    if (mirarLibre) { nM.push({ f: d + 4, v: hacia }); nM.push({ f: h + 24, v: m0 }); }
+  });
+  if (!nP.length && !nM.length) return a;
+  const orden = <T,>(xs: K<T>[]) => xs.sort((x, y) => x.f - y.f).filter((k, i, arr) => i === 0 || k.f > arr[i - 1].f);
+  return {
+    ...a,
+    poses: nP.length ? orden([...ps, ...nP]) : a.poses,
+    miradas: nM.length ? orden([{ f: 0, v: m0 }, ...nM]) : a.miradas,
+  } as ActorProps;
+};
+
 // abrigo gris sobre la mesa: `doblez` 0 (abierto) → 1 (doblado), `boton` muestra el botón nuevo
 export const Abrigo: React.FC<{ x: number; y: number; doblez?: number; boton?: boolean }> = ({ x, y, doblez = 0, boton = true }) => {
   const w = 300 - 170 * doblez, h = 16 + 26 * doblez;
@@ -54,8 +104,9 @@ export type LavP = {
 export const EnLavadero: React.FC<LavP> = ({ cam, leo, tenzo, mara, extra = [], tren = -1, luzFarol = 1, hud, medio, frente, seed = 1, mano = 2.5, abrigo = 0, tel = null }) => {
   const f = useF();
   const P = LAV_PISO;
-  const a = mk({ look: LEO, escala: ESC, seed: 1, luz: RIM_FRIO, ruta: [{ f: 0, x: L.leo, y: P }], dir: [{ f: 0, v: 1 }], asiento: [{ f: 0, v: 66 }], poses: [{ f: 0, v: SENTADO }], caras: [{ f: 0, v: "neutral" }] }, res(leo, f));
-  const t = mk({ look: TENZO, escala: ESC, seed: 2, luz: RIM_ORO, ruta: [{ f: 0, x: L.tenzo, y: P }], dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: TENZO_MESA }], caras: [{ f: 0, v: "neutral" }], miradas: [{ f: 0, v: { x: -0.2, y: 0.5 } }] }, res(tenzo, f));
+  const a0 = mk({ look: LEO, escala: ESC, seed: 1, luz: RIM_FRIO, ruta: [{ f: 0, x: L.leo, y: P }], dir: [{ f: 0, v: 1 }], asiento: [{ f: 0, v: 66 }], poses: [{ f: 0, v: SENTADO }], caras: [{ f: 0, v: "neutral" }] }, res(leo, f));
+  const t0 = mk({ look: TENZO, escala: ESC, seed: 2, luz: RIM_ORO, ruta: [{ f: 0, x: L.tenzo, y: P }], dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: TENZO_MESA }], caras: [{ f: 0, v: "neutral" }], miradas: [{ f: 0, v: { x: -0.2, y: 0.5 } }] }, res(tenzo, f));
+  const a = actuar(a0, t0, { x: 0.9, y: -0.05 }, 0), t = actuar(t0, a0, { x: -0.9, y: -0.08 }, 3);
   const m = res(mara, f);
   const mm = m ? mk({ look: MARA, escala: ESC * 1.1, seed: 5, ruta: [{ f: 0, x: L.leo - 170, y: P - 40 }], dir: [{ f: 0, v: 1 }], caras: [{ f: 0, v: "feliz" }], opacidad: () => 0.92, poses: [{ f: 0, v: { hD: 60, cD: 60, hI: 40, cI: 70, cabeza: 14 } }] }, m) : null;
   return (
@@ -127,7 +178,8 @@ export type CtoP = { cam: Clave[]; leo?: ActF; mara?: ActF; dia?: boolean; luzPu
 export const EnCuarto: React.FC<CtoP> = ({ cam, leo, mara, dia, luzPuerta = 0, lampara = false, tren = -1, hud, medio, detras, frente, seed = 3, mano = 2.5 }) => {
   const f = useF();
   const P = CTO_PISO;
-  const a = mk({ look: LEO, escala: ESC, seed: 1, luz: RIM_FRIO, ruta: [{ f: 0, x: C.colchon, y: P }], dir: [{ f: 0, v: 1 }], asiento: [{ f: 0, v: COLCHON_ALTO }], poses: [{ f: 0, v: SENTADO }], caras: [{ f: 0, v: "neutral" }] }, res(leo, f));
+  const a1 = mk({ look: LEO, escala: ESC, seed: 1, luz: RIM_FRIO, ruta: [{ f: 0, x: C.colchon, y: P }], dir: [{ f: 0, v: 1 }], asiento: [{ f: 0, v: COLCHON_ALTO }], poses: [{ f: 0, v: SENTADO }], caras: [{ f: 0, v: "neutral" }] }, res(leo, f));
+  const a = a1 ? actuar(a1, null, ((a1.miradas?.[0]?.v as { x: number; y: number }) ?? { x: 0, y: 0 }), 1) : a1;
   const m = res(mara, f);
   const mm = m ? mk({ look: MARA, escala: ESC * 1.1, seed: 5, ruta: [{ f: 0, x: C.colchon - 200, y: P - 30 }], dir: [{ f: 0, v: 1 }], caras: [{ f: 0, v: "feliz" }], opacidad: () => 0.9 }, m) : null;
   return (
@@ -258,10 +310,21 @@ export const Negro: React.FC<{ desde: number; d?: number }> = ({ desde, d = 30 }
 export const TarjetaFinal: React.FC<{ proximo: string; frase: string }> = ({ proximo, frase }) => {
   const f = useF();
   const o = interpolate(f, [0, 18], [0, 1], { extrapolateRight: "clamp" });
+  // movimiento continuo y suave en todo el cierre (empuje lento + chispas que suben): nunca un cuadro igual al anterior
+  const z = 1 + 0.045 * (f / 240);
   return (
     <AbsoluteFill style={{ background: "#0b0c10", alignItems: "center", justifyContent: "center" }}>
-      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}><FarolSolo f={f} /></svg>
-      <div style={{ opacity: o, textAlign: "center", fontFamily: F_HUD }}>
+      <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: "50% 30%" }}>
+        <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+          <FarolSolo f={f} />
+          {Array.from({ length: 26 }).map((_, i) => {
+            const r = (i * 7919) % 1000 / 1000, v = 0.6 + ((i * 131) % 100) / 100;
+            const y = 1100 - ((f * v * 1.6 + r * 1200) % 1200), x = 160 + r * 1600 + 30 * Math.sin(f / 40 + i);
+            return <circle key={i} cx={x} cy={y} r={2 + (i % 3)} fill={i % 4 ? ORO : ACENTO} opacity={0.25 + 0.3 * Math.sin(f / 17 + i * 2)} />;
+          })}
+        </svg>
+      </AbsoluteFill>
+      <div style={{ opacity: o, textAlign: "center", fontFamily: F_HUD, transform: `translateY(${-6 * (f / 240)}px)` }}>
         <div style={{ fontSize: 30, letterSpacing: 8, color: "#9a958c", marginBottom: 18 }}>TOMORROW NIGHT</div>
         <div style={{ fontSize: 74, fontWeight: 600, color: "#f4efe6", marginBottom: 34 }}>{proximo}</div>
         <div style={{ fontSize: 34, color: ORO }}>{frase}</div>
@@ -272,8 +335,8 @@ export const TarjetaFinal: React.FC<{ proximo: string; frase: string }> = ({ pro
 };
 const FarolSolo: React.FC<{ f: number }> = ({ f }) => (
   <g transform="translate(960,200)">
-    <Halo x={0} y={0} r={260} color={ORO} fuerza={0.35 + 0.05 * Math.sin(f / 10)} />
-    <g transform="translate(0,40) scale(0.9)"><FarolMano /></g>
+    <Halo x={0} y={0} r={260 + 14 * Math.sin(f / 23)} color={ORO} fuerza={0.36 + 0.08 * Math.sin(f / 7) + 0.05 * Math.sin(f / 3.1)} />
+    <g transform={`translate(0,40) rotate(${2.2 * Math.sin(f / 34)}) scale(0.9)`}><FarolMano /></g>
   </g>
 );
 

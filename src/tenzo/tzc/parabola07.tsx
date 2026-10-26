@@ -2,7 +2,7 @@
 // Cada plano = la frase de ese segundo (plan D:/rtmp/tz07_PLAN_MxM.md, acto 3). Tramos en SEGUNDOS ABSOLUTOS de la voz.
 import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
-import { mira, useF } from "../../anikit/camara";
+import { Clave, mira, useF } from "../../anikit/camara";
 import { Actor } from "../../anikit/actor";
 import { Escena } from "../../anikit/escena";
 import { Halo } from "../../anikit/luz";
@@ -127,9 +127,9 @@ const HaloSigue: React.FC<{ x0: number; x1: number; f1: number }> = ({ x0, x1, f
 
 // ---------- planos ----------
 // 133,2-142,0 · «Greece… Corinth, white stone, blue sea, a market full of people shouting…»
-const Corinto: React.FC = () => (
+const Corinto: React.FC<{ cam?: Clave[] }> = ({ cam }) => (
   <Escena Set={Agora} pal={pal} seed={101} mano={2}
-    claves={[mira(0, 600, 520, 0.78), mira(264, 1500, 540, 0.82, { curva: "inout" })]}
+    claves={cam ?? [mira(0, 600, 520, 0.78), mira(264, 1500, 540, 0.82, { curva: "inout" })]}
     medio={<Gente />}
     hud={<Rotulo texto="CORINTH · 336 BC" desde={8} hasta={258} />} />
 );
@@ -140,9 +140,9 @@ const LaEsquina: React.FC = () => (
     medio={<><Gente x0={1100} /><BarrilCon dio={{ caras: [{ f: 0, v: "feliz" }] }} /></>} />
 );
 // 156,2-157,7 · «His name is Diogenes.»
-const Nombre: React.FC = () => (
+const Nombre: React.FC<{ cam?: Clave[] }> = ({ cam }) => (
   <Escena Set={Agora} pal={pal} seed={103} mano={1.4}
-    claves={[mira(0, DIO.x + 20, P - 230, 2.4), mira(45, DIO.x + 20, P - 230, 2.5)]}
+    claves={cam ?? [mira(0, DIO.x + 20, P - 230, 2.4), mira(45, DIO.x + 20, P - 230, 2.5)]}
     medio={<BarrilCon dio={{ caras: [{ f: 0, v: "cansado" }] }} />}
     hud={<Rotulo texto="DIOGENES" desde={2} hasta={45} />} />
 );
@@ -171,9 +171,9 @@ const Aceitunas: React.FC = () => {
   );
 };
 // 162,3-173,5 · «Every morning he walks around the market with a lantern, in broad daylight… I am looking for an honest man.»
-const ConFarol: React.FC = () => (
+const ConFarol: React.FC<{ cam?: Clave[] }> = ({ cam }) => (
   <Escena Set={Agora} pal={pal} seed={105} mano={2.2}
-    claves={[mira(0, 2300, 560, 1.0), mira(336, 1450, 570, 1.12, { curva: "inout" })]}
+    claves={cam ?? [mira(0, 2300, 560, 1.0), mira(336, 1450, 570, 1.12, { curva: "inout" })]}
     medio={<>
       <Gente x0={1000} quietos />
       <Actor look={DIOGENES} escala={ESC} seed={71} luz={CALIDA} ruta={[{ f: 0, x: 2500, y: P + 20 }, { f: 120, x: 1990, y: P + 20 }, { f: 170, x: 1990, y: P + 20 }, { f: 260, x: 1650, y: P + 20 }]}
@@ -199,13 +199,13 @@ const ElVaso: React.FC = () => (
       poses={[{ f: 0, v: { hD: 50, cD: 80, hI: 20, cI: 30 } }]} caras={[{ f: 0, v: "neutral" }]} enManoD={<Vaso x={10} y={0} rot={-90} />} />} />
 );
 // 178,1-184,3 · «a little boy at the fountain drinking from his own two hands, and Diogenes threw his cup away»
-const LaFuente: React.FC = () => {
+const LaFuente: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
   const f = useF();
   const tira = loc(178.1, 182.6);
   const u = interpolate(f, [tira, tira + 26], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <Escena Set={Agora} pal={pal} seed={107} mano={2}
-      claves={[mira(0, A.fuente - 120, P - 220, 1.4), mira(186, A.fuente - 140, P - 220, 1.5)]}
+      claves={cam ?? [mira(0, A.fuente - 120, P - 220, 1.4), mira(186, A.fuente - 140, P - 220, 1.5)]}
       medio={<>
         <Actor look={NENE} escala={ESC} seed={120} luz={CALIDA} ruta={[{ f: 0, x: A.fuente + 40, y: P }]} dir={[{ f: 0, v: -1 }]}
           poses={[{ f: 0, v: { tronco: 22, hI: 70, cI: 80, hD: 70, cD: 80, cabeza: 8 } }, { f: 40, v: { tronco: 8, hI: 95, cI: 120, hD: 95, cD: 120, cabeza: -6 } }, { f: 80, v: { tronco: 22, hI: 70, cI: 80, hD: 70, cD: 80, cabeza: 8 } }, { f: 120, v: { tronco: 8, hI: 95, cI: 120, hD: 95, cD: 120, cabeza: -6 } }]} caras={[{ f: 0, v: "feliz" }]} />
@@ -268,12 +268,12 @@ const Mapa: React.FC<{ hasta?: number }> = ({ hasta = 1 }) => {
   );
 };
 // 204,5-213,4 · «Armies kneel… every philosopher in Greece has come running to bow to him. Every philosopher, except one.»
-const Reverencia: React.FC = () => {
+const Reverencia: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
   const filos: Look[] = [FILOSOFO("#e9e6e0", "#c99a70", "#ece2cc", "calvo", 0.95), FILOSOFO("#5a4a3a", "#d9a273", "#a8c0d0", "corto", 1.08), FILOSOFO("#b0a898", "#e0b48a", "#d9a86a", "calvo", 0.9),
     FILOSOFO("#2a1a10", "#b88a5a", "#9ab08a", "punta", 1.02), FILOSOFO("#d6d0c4", "#d9a878", "#c88a7a", "bob", 0.86)];
   return (
     <Escena Set={Agora} pal={pal} seed={110} mano={2}
-      claves={[mira(0, A.stoa - 100, P - 260, 1.1), mira(267, A.stoa + 1100, P - 260, 1.15, { curva: "inout" })]}
+      claves={cam ?? [mira(0, A.stoa - 100, P - 260, 1.1), mira(267, A.stoa + 1100, P - 260, 1.15, { curva: "inout" })]}
       medio={<>
         {filos.map((lk, i) => (
           <Actor key={i} look={lk} escala={ESC} seed={140 + i} luz={CALIDA} ruta={[{ f: 0, x: A.stoa - 260 + i * 320, y: P + (i % 2 ? 40 : -10) }]} dir={[{ f: 0, v: -1 }]}
@@ -285,13 +285,13 @@ const Reverencia: React.FC = () => {
   );
 };
 // 213,4-226,5 · «So Alexander… goes to find him, with his generals… gold on his armor shining like fire… the whole market goes quiet… He stops in front of the barrel.»
-const Marcha: React.FC = () => {
+const Marcha: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
   const f = useF();
   const ap = interpolate(f, [loc(213.4, 222.0), loc(213.4, 224.0)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const ruta = [{ f: 0, x: 900 }, { f: loc(213.4, 225.8), x: REY + 40 }];
   return (
     <Escena Set={Agora} pal={pal} seed={111} mano={2.2}
-      claves={[mira(0, 1300, 560, 0.95), mira(loc(213.4, 224.5), REY - 200, 560, 0.95, { curva: "inout" }), mira(393, REY - 220, 560, 1.05)]}
+      claves={cam ?? [mira(0, 1300, 560, 0.95), mira(loc(213.4, 224.5), REY - 200, 560, 0.95, { curva: "inout" }), mira(393, REY - 220, 560, 1.05)]}
       medio={<>
         <Gente x0={1500} quietos={ap > 0.3} apartarse={ap} />
         <BarrilCon />
@@ -327,7 +327,7 @@ const Presentan: React.FC = () => {
   );
 };
 // 241,0-251,9 · «Alexander smiles… ask me for anything… gold, a palace, a city, it is yours.»
-const Ofrece: React.FC = () => {
+const Ofrece: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
   const f = useF();
   const icon = (t: number) => interpolate(f, [loc(241, t), loc(241, t) + 16], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const oro = { fill: "#ffcf4a", stroke: "#8a5a10", strokeWidth: 5, strokeLinejoin: "round" as const, strokeLinecap: "round" as const };
@@ -340,14 +340,14 @@ const Ofrece: React.FC = () => {
   };
   return (
     <Escena Set={Agora} pal={pal} seed={115} mano={2}
-      claves={[mira(0, BX + 160, P - 330, 1.05), mira(327, BX + 160, P - 350, 1.12)]}
+      claves={cam ?? [mira(0, BX + 160, P - 330, 1.05), mira(327, BX + 160, P - 350, 1.12)]}
       medio={<>
         <BarrilCon />
         <Actor look={ALEJANDRO} escala={REY_ESC} seed={130} luz={{ lado: 1, color: "#fff0b0", fuerza: 1 }} ruta={[{ f: 0, x: REY + 40, y: P + 20 }]} dir={[{ f: 0, v: -1 }]}
           poses={[{ f: 0, v: "firme" }, { f: loc(241, 244.4), v: { hI: 120, cI: 20, hD: 115, cD: 25, cabeza: -6 } }]} caras={[{ f: 0, v: "risa" }, { f: 40, v: "feliz" }]} habla={hab(241, [[244.4, 251.9]])} />
-        {Disco({ x: BX - 220, y: P - 540, t: 248.4, lbl: "GOLD", children: <><rect {...oro} x={-62} y={-20} width={124} height={70} rx={8} /><path {...oro} d="M-62,-20 Q0,-80 62,-20 Z" /><rect x={-14} y={4} width={28} height={22} fill="#8a5a10" /></> })}
-        {Disco({ x: BX + 120, y: P - 600, t: 249.6, lbl: "PALACE", children: <><path {...oro} d="M-84,56 V0 L0,-62 L84,0 V56 Z" /><path d="M-50,52 V8 M-17,52 V8 M17,52 V8 M50,52 V8" stroke="#8a5a10" strokeWidth={8} /></> })}
-        {Disco({ x: BX + 460, y: P - 540, t: 250.6, lbl: "A CITY", children: <><path {...oro} d="M-90,56 V-14 H-50 V-46 H-10 V-4 H28 V-70 H70 V56 Z" /><path d="M-72,6 h12 M-34,-24 h12 M42,-40 h12 M42,0 h12" stroke="#8a5a10" strokeWidth={8} /></> })}
+        {Disco({ x: BX - 420, y: P - 680, t: 248.4, lbl: "GOLD", children: <><rect {...oro} x={-62} y={-20} width={124} height={70} rx={8} /><path {...oro} d="M-62,-20 Q0,-80 62,-20 Z" /><rect x={-14} y={4} width={28} height={22} fill="#8a5a10" /></> })}
+        {Disco({ x: BX - 120, y: P - 700, t: 249.6, lbl: "PALACE", children: <><path {...oro} d="M-84,56 V0 L0,-62 L84,0 V56 Z" /><path d="M-50,52 V8 M-17,52 V8 M17,52 V8 M50,52 V8" stroke="#8a5a10" strokeWidth={8} /></> })}
+        {Disco({ x: BX + 180, y: P - 680, t: 250.6, lbl: "A CITY", children: <><path {...oro} d="M-90,56 V-14 H-50 V-46 H-10 V-4 H28 V-70 H70 V56 Z" /><path d="M-72,6 h12 M-34,-24 h12 M42,-40 h12 M42,0 h12" stroke="#8a5a10" strokeWidth={8} /></> })}
       </>} />
   );
 };
@@ -368,12 +368,12 @@ const MiSol: React.FC = () => {
   );
 };
 // 259,3-269,0 · «The soldiers reach for their swords, the generals laugh nervously, somebody says, this man is crazy»
-const Espadas: React.FC = () => {
+const Espadas: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
   const f = useF();
   const e = interpolate(f, [10, 40], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <Escena Set={Agora} pal={pal} seed={117} mano={2.4}
-      claves={[mira(0, REY + 420, P - 300, 1.05), mira(291, REY + 460, P - 300, 1.12)]}
+      claves={cam ?? [mira(0, REY + 420, P - 300, 1.05), mira(291, REY + 460, P - 300, 1.12)]}
       medio={<>
         <BarrilCon />
         <Escolta x={REY + 180} dir={-1} espada={e} risa={f > 90} />
@@ -382,12 +382,12 @@ const Espadas: React.FC = () => {
   );
 };
 // 269,0-276,9 · «But Alexander does not laugh… looking at the man in the barrel… completely, perfectly happy in the sun.» (se corre: vuelve el sol)
-const SeCorre: React.FC = () => {
+const SeCorre: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
   const f = useF();
   const u = interpolate(f, [120, 190], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <Escena Set={Agora} pal={pal} seed={118} mano={1.4} detras={<Sol x={REY + 300} y={P - 560} r={100} />}
-      claves={[mira(0, BX + 160, P - 250, 1.25), mira(237, BX + 120, P - 240, 1.45, { curva: "inout" })]}
+      claves={cam ?? [mira(0, BX + 160, P - 250, 1.25), mira(237, BX + 120, P - 240, 1.45, { curva: "inout" })]}
       medio={<>
         <BarrilCon dio={{ caras: [{ f: 0, v: "cansado" }, { f: 200, v: "feliz" }] }} />
         <SombraRey x={REY + 40 + u * 260} y={P - 2} largo={560} fuerza={0.45 * (1 - u)} />
@@ -407,41 +407,41 @@ const Deseo: React.FC = () => (
 );
 
 export const PARABOLA07: TramoS[] = [
-  { t0: 133.2, t1: 142.0, el: <Corinto />, trans: { tipo: "luz", d: 20, color: "#ffd890" } },
+  ...partir(133.2, 142.0, (cam) => <Corinto cam={cam} />, [[133.2, [mira(0, 600, 520, 0.8), mira(120, 950, 530, 0.86, { curva: "inout" })]], [137.2, [mira(0, 1250, P - 250, 1.55), mira(144, 1500, P - 255, 1.65, { curva: "inout" })]]], { tipo: "luz", d: 20, color: "#ffd890" }),
   ...partir(142.0, 156.2, (cam) => <Escena Set={Agora} pal={pal} seed={102} mano={2} claves={cam} medio={<><Gente x0={1100} /><BarrilCon dio={{ caras: [{ f: 0, v: "feliz" }] }} /></>} />, [
     [142.0, [mira(0, 1900, 540, 0.85), mira(120, BX + 100, P - 220, 1.15, { curva: "inout" })]],
     [148.6, [mira(0, DIO.x + 20, P - 250, 2.3), mira(110, DIO.x + 20, P - 250, 2.45)]],
     [152.4, [mira(0, DIO.x + 140, P - 60, 2.6), mira(114, DIO.x + 100, P - 70, 2.75)]],
   ]),
-  { t0: 156.2, t1: 157.7, el: <Nombre /> },
+  { t0: 156.2, t1: 157.7, el: <Nombre cam={[mira(0, DIO.x + 80, P - 200, 2.8), mira(45, DIO.x + 80, P - 200, 2.95)]} /> },
   { t0: 157.7, t1: 162.3, el: <Aceitunas /> },
-  { t0: 162.3, t1: 167.0, el: <ConFarol /> },
+  { t0: 162.3, t1: 167.0, el: <ConFarol cam={[mira(0, 2250, P - 270, 1.45), mira(140, 1990, P - 280, 1.6, { curva: "inout" })]} /> },
   { t0: 167.0, t1: 173.5, el: <ConFarolPP /> },
   { t0: 173.5, t1: 178.1, el: <ElVaso /> },
-  { t0: 178.1, t1: 184.3, el: <LaFuente /> },
+  ...partir(178.1, 184.3, (cam) => <LaFuente cam={cam} />, [[178.1, [mira(0, A.fuente + 20, P - 200, 2.2), mira(75, A.fuente + 20, P - 205, 2.3)]], [180.6, [mira(0, A.fuente - 150, P - 230, 1.6), mira(111, A.fuente - 160, P - 230, 1.7)]]]),
   { t0: 184.3, t1: 189.4, el: <MeGano /> },
   { t0: 189.4, t1: 199.2, el: <LaPuerta />, trans: { tipo: "fundido", d: 12 } },
   { t0: 199.2, t1: 204.5, el: <Mapa /> },
-  { t0: 204.5, t1: 213.4, el: <Reverencia /> },
-  { t0: 213.4, t1: 226.5, el: <Marcha /> },
+  ...partir(204.5, 213.4, (cam) => <Reverencia cam={cam} />, [[204.5, [mira(0, A.stoa - 100, P - 260, 1.25), mira(123, A.stoa + 300, P - 260, 1.3, { curva: "inout" })]], [208.6, [mira(0, A.stoa + 1100, P - 280, 1.6), mira(144, A.stoa + 1250, P - 280, 1.7, { curva: "inout" })]]]),
+  ...partir(213.4, 226.5, (cam) => <Marcha cam={cam} />, [[213.4, [mira(0, 1000, P - 300, 1.35), mira(120, 1650, P - 300, 1.4)]], [217.4, [mira(0, 1990, P - 320, 1.6), mira(120, 1990, P - 320, 1.7)]], [221.4, [mira(0, REY - 200, P - 280, 1.2), mira(153, REY - 150, P - 290, 1.35, { curva: "inout" })]]]),
   { t0: 226.5, t1: 233.7, el: <Picado /> },
   { t0: 233.7, t1: 241.0, el: <Presentan /> },
-  { t0: 241.0, t1: 251.9, el: <Ofrece /> },
+  ...partir(241.0, 251.9, (cam) => <Ofrece cam={cam} />, [[241.0, [mira(0, REY + 40, P - 340, 2.0), mira(100, REY + 40, P - 345, 2.1)]], [244.4, [mira(0, BX + 160, P - 330, 1.05), mira(225, BX + 160, P - 350, 1.12)]]]),
   { t0: 251.9, t1: 259.3, el: <MiSol /> },
-  { t0: 259.3, t1: 269.0, el: <Espadas /> },
-  { t0: 269.0, t1: 276.9, el: <SeCorre /> },
+  ...partir(259.3, 269.0, (cam) => <Espadas cam={cam} />, [[259.3, [mira(0, REY + 420, P - 300, 1.05), mira(126, REY + 460, P - 300, 1.12)]], [263.5, [mira(0, REY + 40, P - 340, 2.2), mira(165, REY + 40, P - 345, 2.35)]]]),
+  ...partir(269.0, 276.9, (cam) => <SeCorre cam={cam} />, [[269.0, [mira(0, DIO.x + 170, P - 270, 1.85), mira(110, DIO.x + 170, P - 275, 1.95)]], [272.7, [mira(0, BX + 160, P - 250, 1.3), mira(126, BX + 120, P - 240, 1.45, { curva: "inout" })]]]),
   { t0: 276.9, t1: 284.1, el: <Deseo /> },
 ];
 // insertos que vuelven en el acto 4 (Alejandro marchando: el mapa que se llena; Diógenes viejo al sol)
 export const MapaLleno: React.FC = () => <Mapa />;
 export const DiogenesViejo: React.FC = () => (
   <Escena Set={Agora} pal={pal} seed={121} mano={1.4}
-    claves={[mira(0, BX - 20, P - 200, 1.6), mira(150, BX - 20, P - 200, 1.7)]}
+    claves={[mira(0, DIO.x + 140, P - 180, 2.5, { rot: -2 }), mira(111, DIO.x + 130, P - 185, 2.7, { rot: -1, curva: "inout" })]}
     medio={<><BarrilCon dio={{ look: { ...DIOGENES, accesorios: [{ t: "pelo", forma: "calvo", color: "#c99a70" }, { t: "barba", color: "#ece6da" }, { t: "tunica", color: "#9a8a6a", largo: 0.85 }] }, caras: [{ f: 0, v: "feliz" }] }} /><Halo x={DIO.x + 60} y={P - 180} r={380} color="#fff0b0" fuerza={0.45} /></>} />
 );
-export const MarchaSinFin: React.FC = () => (
+export const MarchaSinFin: React.FC<{ cam?: Clave[] }> = ({ cam }) => (
   <Escena Set={Agora} pal={pal} seed={122} mano={2}
-    claves={[mira(0, 800, P - 320, 1.3), mira(130, 1200, P - 320, 1.3, { curva: "inout" }), mira(300, 1900, P - 330, 1.2, { curva: "inout" })]}
+    claves={cam ?? [mira(0, 800, P - 320, 1.3), mira(130, 1200, P - 320, 1.3, { curva: "inout" }), mira(300, 1900, P - 330, 1.2, { curva: "inout" })]}
     medio={<>
       <Escolta x={0} ruta={[{ f: 0, x: 500 }, { f: 130, x: 1200 }, { f: 170, x: 1200 }, { f: 300, x: 700 }]} dir={1} />
       <Actor look={ALEJANDRO} escala={REY_ESC} seed={130} luz={CALIDA} ruta={[{ f: 0, x: 560, y: P + 20 }, { f: 130, x: 1260, y: P + 20 }, { f: 300, x: 2200, y: P + 20 }]} poses={[{ f: 0, v: "firme" }]} caras={[{ f: 0, v: "enojo" }, { f: 150, v: "triste" }]} />
