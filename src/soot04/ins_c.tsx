@@ -165,8 +165,11 @@ export const INS_C: Ins[] = [
         <CasaNan x={300} y={820} s={1.1} />
         <CasaNan x={1660} y={820} s={1.1} tono="#b0a090" />
         <div style={{ position: "absolute", left: 0, right: 0, top: 820, bottom: 0, background: "#8a8070" }} />
-        <Melville x={interpolate(t, [643.3, 645.6], [-200, 520], { extrapolateRight: "clamp" })} y={1200} h={820} t={t} expr={t > 651.4 ? "sorpresa" : "feliz"} camina={t < 645.6 ? 2.2 : 0} bD={t > 651.4 ? 100 : 20} cD={t > 651.4 ? 10 : 20} mira={1} />
-        <Pollard x={1180} y={1200} h={820} t={t} viejo expr={t < 650.6 ? "triste" : "neutro"} flip mira={-1} />
+        {/* vuelta 10 OJO: se dan la mano (antes: dos figuras paradas, una con ojos cerrados) */}
+        {(() => { const mano = t >= 647.0 && t < 649.6, sac = Math.sin(t * 11) * 9; return (<>
+        <Melville x={interpolate(t, [643.3, 645.6], [-200, 620], { extrapolateRight: "clamp" })} y={1200} h={820} t={t} expr={t > 651.4 ? "sorpresa" : "neutro"} camina={t < 645.6 ? 2.2 : 0} bD={t > 651.4 ? 100 : mano ? 92 + sac : 20} cD={t > 651.4 ? 10 : mano ? 0 : 20} mira={1} />
+        <Pollard x={1290} y={1200} h={820} t={t} viejo expr={t < 650.6 ? "triste" : "neutro"} flip mira={-1} bD={mano ? 92 + sac : undefined} cD={mano ? 0 : undefined} />
+        </>); })()}
         {t >= 649.2 && [1500, 1640, 1780].map((x, k) => <Persona key={k} x={x} y={1200} h={560} t={t} seed={300 + k} ropa={CUAQUERO} casco="cuaquero" pantalon="#3a3a3a" expr="neutro" flip={t < 650.4} camina={t > 650.4 ? 2 : 0} />)}
         <Chip t={t} t0={645.4} text="NANTUCKET" color={C.violeta} x={960} y={130} centro size={60} />
         <Chip t={t} t0={646.7} text="THE MAN WHO LIVED THROUGH IT" color={C.noche} x={1180} y={230} centro size={46} />
@@ -187,8 +190,8 @@ export const INS_C: Ins[] = [
         {t < 668.3 && <Monto t={t} ks={[[667.2, 0], [667.5, 21]]} x={960} y={960} size={110} pre="" suf=" MEN" color={C.oro} />}
         {t >= 668.3 && (
           <>
-            <Pollard x={420} y={1290} h={920} t={t} expr={t < 671.6 ? "orgullo" : "neutro"} habla={t < 671.6} salta={668.4} bD={t < 671.6 ? 100 + Math.sin(t * 4) * 25 : 40} cD={t < 671.6 ? 10 : 20} bI={60} cI={110} />
-            <Persona x={960} y={1290} h={900} t={t} seed={44} ropa={MARINO(2)} casco="no" barba="#7a5a2a" pantalon="#2a3a5a" expr="neutro" salta={671.8} opacity={t > 671.6 ? 1 : 0} />
+            <Pollard x={420} y={1290} h={920} t={t} expr={t < 671.6 ? "orgullo" : "neutro"} habla={t < 671.6} salta={668.4} bD={t >= 669.4 && t < 671.4 ? 92 + Math.sin(t * 11) * 9 : t < 671.6 ? 100 + Math.sin(t * 4) * 25 : 40} cD={t >= 669.4 && t < 671.4 ? 0 : t < 671.6 ? 10 : 20} bI={60} cI={110} />
+            <Persona x={1090} y={1290} h={900} t={t} seed={44} ropa={MARINO(2)} casco="no" barba="#7a5a2a" pantalon="#2a3a5a" expr={t > 671.6 ? "feliz" : "neutro"} flip bD={t >= 669.4 && t < 671.4 ? 92 + Math.sin(t * 11) * 9 : undefined} cD={t >= 669.4 && t < 671.4 ? 0 : undefined} habla={t > 672 && t < 673.4} />
             {t >= 674.8 && [1380, 1600].map((x, k) => <Persona key={k} x={x} y={1290} h={640} t={t} seed={70 + k} ropa={MARINO(k + 1)} casco={k ? "gorro" : "no"} pantalon="#3a3a4a" expr="sorpresa" salta={674.9 + k * 0.15} />)}
             <Chip t={t} t0={668.6} text="CAPT. GEORGE POLLARD" color={C.noche} x={560} y={140} centro size={52} />
             <Monto t={t} ks={[[670.2, 28]]} x={560} y={270} size={110} pre="" color={C.oro} suf=" YRS" />

@@ -21,6 +21,7 @@ const LUGAR: [number, number, Esc][] = [
   [240, 262, "puerto"], // Nantucket cuáquera
   [610, 637, "tropico"], // Marquesas / Melville
   [640, 655, "puerto"], // de vuelta en Nantucket
+  [662.8, 676.2, "puerto"], // el Essex sale de Nantucket
   [579, 600, "cubierta"], // el capitán, delante de su tripulación
   [837.6, 846, "interior"], // Pollard viejo
   [858, 872, "campo"], // petróleo en Pennsylvania
