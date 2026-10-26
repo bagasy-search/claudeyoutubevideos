@@ -192,21 +192,35 @@ export const Colinas: React.FC<{ capas: string[]; base?: number; dx?: number; se
 // ── chapita (CORNELL · 2015 de la ref)
 export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; color?: string; x: number; y: number; size?: number; centro?: boolean; tinta?: string }> = ({ t, t0, t1 = 1e9, text, color = C.violeta, x, y, size = 62, centro, tinta = "#fff" }) => {
   if (t < t0 || t > t1 + 0.3) return null;
-  const s = ent(t, t0, 0, { damping: 11, stiffness: 180 });
+  const s0 = ent(t, t0, 0, { damping: 11, stiffness: 180 });
   const out = interpolate(t, [t1, t1 + 0.3], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const w = anchoTxt(text, size) + size * 0.84, z = seguro(centro ? x : x + w / 2, y, w, size * 1.5);
+  const s = s0 * z.k;
   return (
-    <div style={{ position: "absolute", left: x, top: y, transform: `translate(${centro ? "-50%" : "0"}, -50%) scale(${s * out}) rotate(${(1 - s) * -8}deg)`, overflow: "hidden", transformOrigin: centro ? "center" : "left center", fontFamily, fontWeight: 700, fontSize: size, color: tinta, background: color, padding: `${size * 0.16}px ${size * 0.42}px`, borderRadius: size * 0.3, boxShadow: "0 8px 0 rgba(20,10,50,.35)", letterSpacing: 1, whiteSpace: "nowrap", lineHeight: 1.15 }}>
+    <div style={{ position: "absolute", left: centro ? z.x : z.x - (w * z.k) / 2, top: z.y, transform: `translate(${centro ? "-50%" : "0"}, -50%) scale(${s * out}) rotate(${(1 - s) * -8}deg)`, overflow: "hidden", transformOrigin: centro ? "center" : "left center", fontFamily, fontWeight: 700, fontSize: size, color: tinta, background: color, padding: `${size * 0.16}px ${size * 0.42}px`, borderRadius: size * 0.3, boxShadow: "0 8px 0 rgba(20,10,50,.35)", letterSpacing: 1, whiteSpace: "nowrap", lineHeight: 1.15 }}>
       {text}
       <div style={{ position: "absolute", top: 0, bottom: 0, width: size * 0.9, left: `${interpolate(t, [t0 + 0.12, t0 + 0.6], [-30, 130], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}%`, background: "linear-gradient(100deg, transparent, rgba(255,255,255,.55), transparent)", transform: "skewX(-20deg)" }} />
     </div>
   );
 };
+// zona segura (vuelta 3 OJO): mete la caja del texto dentro del cuadro con margen para el empuje de cámara
+// devuelve centro x/y corregido y escala para que entre; w/h = caja estimada en px
+export const seguro = (cx: number, cy: number, w: number, h: number) => {
+  const MX = 90, MY = 80;
+  const k = Math.min(1, (1920 - 2 * MX) / w, (1080 - 2 * MY) / h);
+  const ww = w * k, hh = h * k;
+  const x = Math.min(Math.max(cx, MX + ww / 2), 1920 - MX - ww / 2);
+  const y = Math.min(Math.max(cy, MY + hh / 2), 1080 - MY - hh / 2);
+  return { x, y, k };
+};
+export const anchoTxt = (txt: string, size: number) => txt.length * size * 0.62;
 // texto grande con contorno (títulos)
 export const Grande: React.FC<{ t: number; t0: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string }> = ({ t, t0, text, x = 960, y, size = 150, color = C.crema, borde = C.noche }) => {
   if (t < t0) return null;
-  const s = ent(t, t0, 0, { damping: 9, stiffness: 190 });
+  const z = seguro(x, y, anchoTxt(text, size) * 1.05 + size * 0.2, size * 1.3);
+  const s = ent(t, t0, 0, { damping: 9, stiffness: 190 }) * z.k;
   return (
-    <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${s})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}` }}>
+    <div style={{ position: "absolute", left: z.x, top: z.y, transform: `translate(-50%, -50%) scale(${s})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}` }}>
       {text}
     </div>
   );

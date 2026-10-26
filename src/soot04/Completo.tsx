@@ -21,6 +21,7 @@ import { INS_A } from "./ins_a";
 import { INS_B } from "./ins_b";
 import { INS_C } from "./ins_c";
 import { INS_D } from "./ins_d";
+import { Primerplano } from "./primerplano";
 
 // Soot 04 completo: UN mundo, UNA cámara. Cada parte aporta sus claves de cámara, su paleta y lo que pone
 // en el mundo (detrás de las olas / en el mundo / delante del agua) y en pantalla (hud). Tiempo absoluto.
@@ -62,6 +63,7 @@ export const Completo: React.FC = () => {
             <Olas pal={pal} frente />
             {act.map((p, i) => <React.Fragment key={`d${i}`}>{p.frente?.(t)}</React.Fragment>)}
           </CapaMundo>
+          <Primerplano t={t} />
           {act.map((p, i) => <React.Fragment key={`h${i}`}>{p.hud?.(t)}</React.Fragment>)}
           <MostrarInsertos t={t} lista={INSERTOS} />
         </CamCtx.Provider>

@@ -1,6 +1,6 @@
 import React from "react";
 import { interpolate, Easing } from "remotion";
-import { C, ent, prog, fontFamily } from "./kit";
+import { C, ent, prog, fontFamily, seguro, anchoTxt } from "./kit";
 
 // Insertos a pantalla completa (vara del molde de Soot): fondo limpio de rayos o degradé, personaje GRANDE actuando,
 // un texto fuerte. Entran y salen por iris sobre el mundo continuo. Cada inserto vive en [a, b) en tiempo absoluto.
@@ -40,8 +40,10 @@ export const Monto: React.FC<{ t: number; ks: [number, number][]; x: number; y: 
   const n = Math.round(v);
   const golpe = ks.slice(1).reduce((m, k) => (t > k[0] && t < k[0] + 0.5 ? 1 + 0.18 * Math.sin(((t - k[0]) / 0.5) * Math.PI) : m), 1);
   const txt = `${n < 0 ? "-" : signo && n > 0 ? "+" : ""}${pre}${Math.abs(n).toLocaleString("en-US")}${suf}`;
+  const fin = `${pre}${Math.abs(ks[ks.length - 1][1]).toLocaleString("en-US")}${suf}-`;
+  const z = seguro(x, y, anchoTxt(fin, size) + size * 0.2, size * 1.25);
   return (
-    <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${ent(t, t0 ?? ks[0][0]) * golpe})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.08}px ${C.noche}`, paintOrder: "stroke fill", textShadow: `0 ${size * 0.07}px 0 ${C.noche}`, whiteSpace: "nowrap" }}>{txt}</div>
+    <div style={{ position: "absolute", left: z.x, top: z.y, transform: `translate(-50%, -50%) scale(${ent(t, t0 ?? ks[0][0]) * golpe * z.k})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.08}px ${C.noche}`, paintOrder: "stroke fill", textShadow: `0 ${size * 0.07}px 0 ${C.noche}`, whiteSpace: "nowrap" }}>{txt}</div>
   );
 };
 // sello que cae y golpea
@@ -49,16 +51,18 @@ export const Sello: React.FC<{ t: number; t0: number; text: string; x: number; y
   if (t < t0) return null;
   const k = interpolate(t, [t0, t0 + 0.14], [2.4, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) });
   const op = interpolate(t, [t0, t0 + 0.1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const z = seguro(x, y, anchoTxt(text, size) * 1.08 + size * 0.8, size * 1.5);
   return (
-    <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) rotate(${rot}deg) scale(${k})`, opacity: op, fontFamily, fontWeight: 700, fontSize: size, color, border: `${size * 0.1}px solid ${color}`, borderRadius: size * 0.18, padding: `${size * 0.04}px ${size * 0.3}px`, background: "rgba(255,248,230,.92)", whiteSpace: "nowrap", letterSpacing: 3, boxShadow: "0 10px 0 rgba(20,10,50,.3)" }}>{text}</div>
+    <div style={{ position: "absolute", left: z.x, top: z.y, transform: `translate(-50%, -50%) rotate(${rot}deg) scale(${k * z.k})`, opacity: op, fontFamily, fontWeight: 700, fontSize: size, color, border: `${size * 0.1}px solid ${color}`, borderRadius: size * 0.18, padding: `${size * 0.04}px ${size * 0.3}px`, background: "rgba(255,248,230,.92)", whiteSpace: "nowrap", letterSpacing: 3, boxShadow: "0 10px 0 rgba(20,10,50,.3)" }}>{text}</div>
   );
 };
 // globo de diálogo
 export const Dice: React.FC<{ t: number; t0: number; t1?: number; text: string; x: number; y: number; size?: number; cola?: "izq" | "der"; color?: string; tinta?: string }> = ({ t, t0, t1 = 1e9, text, x, y, size = 64, cola = "izq", color = "#fff", tinta = C.noche }) => {
   if (t < t0 || t > t1 + 0.25) return null;
-  const s = ent(t, t0, 0, { damping: 10, stiffness: 200 }) * interpolate(t, [t1, t1 + 0.25], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const w = anchoTxt(text, size) + size, h = size * 1.7, z = seguro(x, y - h / 2, w, h);
+  const s = z.k * ent(t, t0, 0, { damping: 10, stiffness: 200 }) * interpolate(t, [t1, t1 + 0.25], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
-    <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -100%) scale(${s})`, transformOrigin: cola === "izq" ? "20% 100%" : "80% 100%", fontFamily, fontWeight: 700, fontSize: size, color: tinta, background: color, padding: `${size * 0.25}px ${size * 0.5}px`, borderRadius: size * 0.6, border: `${size * 0.08}px solid ${C.noche}`, whiteSpace: "nowrap", boxShadow: "0 8px 0 rgba(20,10,50,.3)" }}>
+    <div style={{ position: "absolute", left: z.x, top: z.y + h / 2, transform: `translate(-50%, -100%) scale(${s})`, transformOrigin: cola === "izq" ? "20% 100%" : "80% 100%", fontFamily, fontWeight: 700, fontSize: size, color: tinta, background: color, padding: `${size * 0.25}px ${size * 0.5}px`, borderRadius: size * 0.6, border: `${size * 0.08}px solid ${C.noche}`, whiteSpace: "nowrap", boxShadow: "0 8px 0 rgba(20,10,50,.3)" }}>
       {text}
       <div style={{ position: "absolute", bottom: -size * 0.42, [cola === "izq" ? "left" : "right"]: size * 0.6, width: 0, height: 0, borderLeft: `${size * 0.3}px solid transparent`, borderRight: `${size * 0.3}px solid transparent`, borderTop: `${size * 0.45}px solid ${C.noche}` }} />
     </div>
@@ -69,8 +73,9 @@ export const Rot: React.FC<{ t: number; t0: number; t1?: number; text: string; x
   if (t < t0 || t > t1 + 0.2) return null;
   const s = ent(t, t0, 0, { damping: 9, stiffness: 190 }) * interpolate(t, [t1, t1 + 0.2], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const dx = tiembla ? Math.sin(t * 47) * 6 : 0, dy = tiembla ? Math.cos(t * 53) * 5 : 0;
+  const z = seguro(x, y, anchoTxt(text, size) * 1.05 + size * 0.2, size * 1.3);
   return (
-    <div style={{ position: "absolute", left: x + dx, top: y + dy, transform: `translate(-50%, -50%) scale(${s})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${C.noche}` }}>{text}</div>
+    <div style={{ position: "absolute", left: z.x + dx, top: z.y + dy, transform: `translate(-50%, -50%) scale(${s * z.k})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${C.noche}` }}>{text}</div>
   );
 };
 // vuela de (x0,y0) a (x1,y1) entre t0 y t1 girando; los hijos son SVG centrado en el origen
@@ -85,21 +90,26 @@ export const Vuela: React.FC<{ t: number; t0: number; t1: number; x0: number; y0
   );
 };
 
-// montaje: el inserto activo entra con iris y sale con iris; empuje lento de cámara adentro
+// montaje: el inserto activo entra con una de 4 transiciones (iris / barrido / zoom / corte seco, alternadas
+// para que no sea siempre el mismo círculo) y sale por corte seco (el iris de salida dejaba cuadros vacíos); empuje lento adentro
 export const MostrarInsertos: React.FC<{ t: number; lista: Ins[] }> = ({ t, lista }) => {
-  const i = lista.find((k) => t >= k.a && t < k.b);
-  if (!i) return null;
-  const IN = 0.24, OUT = 0.2;
-  const r = Math.min(1, (t - i.a) / IN, (i.b - t) / OUT);
+  const idx = lista.findIndex((k) => t >= k.a && t < k.b);
+  if (idx < 0) return null;
+  const i = lista[idx];
+  const tipo = (["iris", "barrido", "zoom", "corte"] as const)[idx % 4];
+  const IN = 0.2;
+  const r = tipo === "corte" ? 1 : Math.min(1, (t - i.a) / IN);
   const e = Easing.out(Easing.cubic)(Math.max(0, r));
-  const z = 1 + (i.z ?? 0.05) * ((t - i.a) / (i.b - i.a));
+  const z = 1 + (i.z ?? 0.05) * ((t - i.a) / (i.b - i.a)) + (tipo === "zoom" ? 0.25 * (1 - e) : 0);
+  const clip = r >= 1 ? undefined : tipo === "iris" ? `circle(${e * 82}% at 50% 52%)` : tipo === "barrido" ? `inset(0 ${(1 - e) * 100}% 0 0)` : undefined;
   return (
-    <div style={{ position: "absolute", inset: 0, overflow: "hidden", clipPath: r >= 1 ? undefined : `circle(${e * 82}% at 50% 52%)` }}>
+    <div style={{ position: "absolute", inset: 0, overflow: "hidden", clipPath: clip, opacity: tipo === "zoom" ? Math.min(1, e * 1.6) : 1 }}>
       <div style={{ position: "absolute", inset: 0, transform: `scale(${z})`, transformOrigin: "50% 55%" }}>
         {i.fondo(t)}
         {i.d(t)}
       </div>
-      {r < 1 && <div style={{ position: "absolute", inset: 0, boxShadow: `inset 0 0 0 ${18 * (1 - e)}px #fff` }} />}
+      {r < 1 && tipo === "iris" && <div style={{ position: "absolute", inset: 0, boxShadow: `inset 0 0 0 ${18 * (1 - e)}px #fff` }} />}
+      {r < 1 && tipo === "barrido" && <div style={{ position: "absolute", top: 0, bottom: 0, left: `${e * 100}%`, width: 26, marginLeft: -13, background: C.oro, boxShadow: `0 0 0 6px ${C.noche}` }} />}
     </div>
   );
 };
