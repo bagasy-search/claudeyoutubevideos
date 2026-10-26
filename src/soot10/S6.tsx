@@ -194,7 +194,7 @@ export const O6: React.FC<{ t: number }> = ({ t }) => {
       <S t={606.4} p="mosquito" g={-6} d={4} />
       <Txt t={t} t0={612.0} t1={614.9} text="WHOLE CREWS · IN WEEKS" y={170} size={96} color={C.rojo} />
       <Txt t={t} t0={628.2} t1={631.9} text="NO REAL SURGEON" y={170} size={120} />
-      <Lista t={t} x={70} y={260} size={40} w={560} titulo="THE OPERATION" t1={642.5}
+      <Lista t={t} x={70} y={640} size={40} w={560} titulo="THE OPERATION" t1={642.5}
         items={[{ txt: "ANESTHETIC", t0: 636.8, tacha: 637.3 }, { txt: "LEATHER STRAP", t0: 637.8, ok: true }, { txt: "BOTTLE OF RUM", t0: 639.0, ok: true }, { txt: "HOT TAR", t0: 640.9, ok: true }]} />
       {[636.8, 637.8, 639.0, 640.9].map((a, i) => <S key={i} t={a} p="write" g={-12} />)}
       <S t={637.3} p="fail" g={-10} />

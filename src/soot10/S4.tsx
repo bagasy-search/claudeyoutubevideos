@@ -69,7 +69,7 @@ export const A4: React.FC<{ t: number }> = ({ t }) => {
       {pelea && <Persona x={2200} y={CUB} h={250} t={t} seed={216} ropa={PIRATA(4)} flip expr={t > 392 ? "sorpresa" : "enojado"} inclina={t > 392 ? -Math.min(20, (t - 392) * 80) : 0} habla={t < 391.8} />}
       {castigo && <Persona x={2050} y={CUB} h={250} t={t} seed={215} ropa={PIRATA(1)} flip expr="miedo" bD={170} bI={170} cD={0} cI={0} />}
       {castigo && <Persona x={2330} y={CUB} h={275} t={t} seed={217} ropa={PIRATA(3)} flip expr="enojado" bD={LATIGAZOS.some((a) => en(t, a, a + 0.12)) ? 30 : 150} cD={20} manoD={<g transform="scale(0.24) rotate(180)"><Gato9 t={t} /></g>} />}
-      {en(t, 398, 403.2) && <Persona x={2190} y={CUB} h={265} t={t} seed={217} ropa={PIRATA(3)} expr="orgullo" habla={en(t, 398.2, 403)} bD={100 + Math.sin(t * 3) * 6} cD={25} />}
+      {en(t, 389.6, 403.2) && <Persona x={2190} y={CUB} h={265} t={t} seed={217} ropa={PIRATA(3)} expr="orgullo" habla={en(t, 398.2, 403)} bD={100 + Math.sin(t * 3) * 6} cD={25} />}
       {/* el gato y su bolsa: la tripulación mira con terror */}
       {en(t, 410.7, 414) && [1750, 1950, 2150, 2350].map((x, i) => <Persona key={i} x={x} y={CUB} h={250} t={t} seed={220 + i} ropa={PIRATA(i)} flip={x > 2050} expr="miedo" ladea={(i - 1.5) * 4} />)}
       {/* robar / desertar */}
