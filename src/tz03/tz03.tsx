@@ -656,7 +656,7 @@ const Parada: React.FC<{ claves: ReturnType<typeof mira>[]; leoCara?: { f: numbe
     medio={<>
       {mara}
       <Actor look={LEO3} escala={ESC} seed={1} luz={L_DIA} ruta={[{ f: 0, x: LEO_PARADA, y: BP }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: { hD: 20, cD: -40, hI: -20, cI: -40 } }]} caras={leoCara} miradas={[{ f: 0, v: { x: 1, y: 0 } }]} />
-      <Actor look={MAYA} escala={ESC * 0.95} seed={8} luz={L_DIA} ruta={[{ f: 0, x: MAYA_X, y: BP }]} dir={[{ f: 0, v: -1 }]} poses={mayaCabeza} caras={mayaCara} enManoD={<Libro abierto color="#2e5a8a" />} />
+      <Actor look={MAYA} escala={ESC * 0.95} seed={8} luz={L_DIA} ruta={[{ f: 0, x: MAYA_X, y: BP }]} dir={[{ f: 0, v: -1 }]} poses={mayaCabeza} caras={mayaCara} enManoD={<g transform="scale(2.2)"><Libro color="#2e5a8a" /></g>} />
     </>}
     hud={<>{hud}<Hud min={230} dia={7} /></>} />
 );
@@ -1661,7 +1661,7 @@ const CaraRoja17b: React.FC = () => {
     <Escena Set={CaminoChina} pal={PAL_ANT} claves={cl2}
       medio={<>
         <ChinaJinete t={t} f={f} cara={f < L(139.6) ? "cansado" : "miedo"} pose={{ ...POSE_JINETE, tronco: 26, hI: f > L(141) ? 110 + Math.sin(f / 3) * 30 : 60, cI: 40 }} />
-        <Halo x={hxDe(t) - 4} y={CP - 335} r={62} color="#ff2a1a" fuerza={0.2 + 0.7 * rojo} />
+        
       </>}
       hud={<Lineas dir={-1} n={10} />} />
   );
@@ -1745,7 +1745,7 @@ const Habito20: React.FC = () => {
   );
 };
 // 170,1-174,5 · el hábito: Leo agarrado con las dos manos, estelas de luz
-const Habito21b: React.FC<{ o?: number; z?: number; y?: number; asustado?: boolean }> = ({ o = 0, z = 1.05, y = 620, asustado }) => {
+const Habito21b: React.FC<{ o?: number; z?: number; y?: number; asustado?: boolean }> = ({ o = 0, z = 1.05, y = 720, asustado }) => {
   const f = useF() + o;
   const hx = 4300 - f * 6.5;
   const ks = Array.from({ length: 13 }, (_, k) => mira(k * 30, 4300 - (k * 30 + o) * 6.5 - 120, y, z));
@@ -2098,11 +2098,11 @@ const Silencio31b: React.FC = () => {
     <CuartoCalido claves={[mira(0, 1700, 620, 1.05), mira(L(289.0), 1900, 580, 1.15), mira(L(291.0), VX, 470, 1.9), mira(L(292.3), VX, 470, 2.0)]}
       hud={<>
         <Hud min={406} dia={5} estado="congelado" />
-        <ManoLeo texto="no train." x={140} y={300} desde={L(288.0)} tam={66} />
-        <ManoLeo texto="no music." x={140} y={390} desde={L(288.9)} tam={66} />
+        <ManoLeo texto="no train." x={700} y={300} desde={L(288.0)} tam={66} />
+        <ManoLeo texto="no music." x={700} y={390} desde={L(288.9)} tam={66} />
         <svg {...svgP}>
-          <rect x={130} y={330} width={330 * SINGLE(f, L(288.6), L(289.0))} height={8} fill={ACENTO} />
-          <rect x={130} y={420} width={330 * SINGLE(f, L(289.6), L(290.0))} height={8} fill={ACENTO} />
+          <rect x={690} y={330} width={330 * SINGLE(f, L(288.6), L(289.0))} height={8} fill={ACENTO} />
+          <rect x={690} y={420} width={330 * SINGLE(f, L(289.6), L(290.0))} height={8} fill={ACENTO} />
         </svg>
       </>}>
       <TelMesa x={LX + 150} y={P - AS + 2} bocaAbajo />
@@ -2185,8 +2185,8 @@ const Olvida32b: React.FC = () => {
     <SobreTenzo dur={162} z={2.5} tenzo={{ poses: [...alterna(HABLA_A, HABLA_B, 0, 100, 20), { f: 100, v: { ...LOTO, hD: 150, cD: 30 } }], caras: [{ f: 0, v: "risa" }, { f: 50, v: "feliz" }], habla: [[0, 156]] }}
       hud={<>
         <Hud min={406} dia={5} />
-        <ManoLeo texto="every time you remember:" x={110} y={250} desde={80} tam={56} />
-        <div style={{ position: "absolute", left: 120, top: 260 }}><Rayitas2 n={Math.floor(interpolate(f, [86, 150], [0, 12], cl))} /></div>
+        <ManoLeo texto="every time you remember:" x={1100} y={300} desde={80} tam={56} />
+        <div style={{ position: "absolute", left: 1110, top: 330 }}><Rayitas2 n={Math.floor(interpolate(f, [86, 150], [0, 12], cl))} /></div>
       </>} />
   );
 };
@@ -2240,8 +2240,8 @@ const Cruza35b: React.FC = () => {
   const T = 335.2, f = useF(), L = (t: number) => fr(t, T);
   const fl = SINGLE(f, L(337.5), L(337.9)) * (1 - SINGLE(f, L(338.6), L(339.3)));
   return (
-    <CuartoCalido claves={[mira(0, TX - 20, P - 285, 2.9), mira(L(342), TX - 20, P - 290, 3.2, { curva: "in" })]}
-      hud={<><Hud min={406} dia={5} />{fl > 0 && <svg {...svgP} style={{ position: "absolute", left: 0, top: 0, opacity: fl }}><Caballo x={760} piso={900} fase={0.4} s={1.6} variante="mara" neon={ORO} /></svg>}</>}>
+    <CuartoCalido claves={[mira(0, TX - 20, P - 300, 2.9), mira(L(342), TX - 20, P - 305, 3.2, { curva: "in" })]}
+      hud={<><Hud min={406} dia={5} />{fl > 0 && <svg {...svgP} style={{ position: "absolute", left: 0, top: 0, opacity: fl }}><Caballo x={1500} piso={1020} fase={0.4} s={0.75} variante="mara" neon={ORO} /></svg>}</>}>
       <TenzoParado caras={[{ f: 0, v: "neutral" }, { f: L(337.6), v: "triste" }, { f: L(339.4), v: "neutral" }]} poses={[{ f: 0, v: { hD: 10, cD: 20, hI: 10, cI: 20 } }, { f: L(337.6), v: { hD: 10, cD: 20, hI: 10, cI: 20, cabeza: 12 } }, { f: L(339.6), v: { hD: 10, cD: 20, hI: 10, cI: 20 } }]} />
     </CuartoCalido>
   );
@@ -2345,7 +2345,7 @@ const Maya38b: React.FC<{ o?: number }> = ({ o = 0 }) => {
   return (
     <Escena Set={Broadway} pal={PAL_DIA} setProps={{ hora: "dia", nieve: true }}
       claves={[mira(0, MAYA_X - 20, BP - 290, 1.6), mira(L(377.2), MAYA_X - 10, BP - 300, 2.0), mira(L(377.4), MAYA_X - 10, BP - 250, 3.6), mira(L(378.4), MAYA_X - 10, BP - 250, 3.7), mira(L(378.5), MAYA_X - 10, BP - 170, 3.4), mira(L(380.2), MAYA_X - 10, BP - 170, 3.5), mira(L(380.3), MAYA_X + 60, BP - 190, 3.6), mira(L(382), MAYA_X + 60, BP - 190, 3.7)]}
-      medio={<Actor look={MAYA} escala={ESC * 0.95} seed={8} luz={L_DIA} ruta={[{ f: 0, x: MAYA_X, y: BP }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { hD: 50, cD: 100, hI: 50, cI: 100, cabeza: 22 } }]} caras={[{ f: 0, v: "neutral" }]} enManoD={<Libro abierto color="#2e5a8a" />} />}
+      medio={<Actor look={MAYA} escala={ESC * 0.95} seed={8} luz={L_DIA} ruta={[{ f: 0, x: MAYA_X, y: BP }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { hD: 50, cD: 100, hI: 50, cI: 100, cabeza: 22 } }]} caras={[{ f: 0, v: "neutral" }]} enManoD={<g transform="scale(2.2)"><Libro color="#2e5a8a" /></g>} />}
       hud={<>
         <Hud min={230} dia={7} />
         <ManoLeo texto="a girl." x={140} y={250} desde={0} hasta={L(377.2)} tam={70} />
@@ -2359,7 +2359,7 @@ const Maya38b: React.FC<{ o?: number }> = ({ o = 0 }) => {
 const Sonrie39b: React.FC = () => (
   <Escena Set={Broadway} pal={PAL_DIA} setProps={{ hora: "dia", nieve: true }} claves={[mira(0, MAYA_X - 60, BP - 300, 3.0), mira(72, MAYA_X - 60, BP - 300, 3.15)]}
     medio={<Actor look={MAYA} escala={ESC * 0.95} seed={8} luz={L_DIA} ruta={[{ f: 0, x: MAYA_X, y: BP }]} dir={[{ f: 0, v: -1 }]}
-      poses={[{ f: 0, v: { hD: 50, cD: 100, hI: 50, cI: 100, cabeza: 22 } }, { f: 8, v: { hD: 40, cD: 90, hI: 40, cI: 90, cabeza: -2 } }]} caras={[{ f: 0, v: "neutral" }, { f: 12, v: "sorpresa" }, { f: 40, v: "feliz" }]} enManoD={<Libro abierto color="#2e5a8a" />} />}
+      poses={[{ f: 0, v: { hD: 50, cD: 100, hI: 50, cI: 100, cabeza: 22 } }, { f: 8, v: { hD: 40, cD: 90, hI: 40, cI: 90, cabeza: -2 } }]} caras={[{ f: 0, v: "neutral" }, { f: 12, v: "sorpresa" }, { f: 40, v: "feliz" }]} enManoD={<g transform="scale(2.2)"><Libro color="#2e5a8a" /></g>} />}
     hud={<Hud min={230} dia={7} />} />
 );
 const Colorado39: React.FC = () => {
@@ -2470,7 +2470,7 @@ const Cuarto12c: React.FC = () => {
   const T = 83.4, L = (t: number) => fr(t, T);
   return (
     <Escena Set={Cuarto} pal={PAL} setProps={{ luzPuerta: 1 }}
-      claves={[mira(0, 1200, 640, 1.15), mira(L(84.9), 1220, 650, 1.2), mira(L(85.4), CTO_PUNTOS.colchon, 800, 1.9), mira(L(86.3), CTO_PUNTOS.colchon - 20, 800, 1.95), mira(L(86.7), CTO_PUNTOS.cajas, 790, 2.0), mira(L(87.7), CTO_PUNTOS.cajas + 20, 790, 2.05), mira(L(88.1), CTO_PUNTOS.bolso, 760, 2.0), mira(L(89.0), CTO_PUNTOS.bolso - 20, 760, 2.05), mira(L(89.5), CTO_PUNTOS.dibujos, 560, 1.6), mira(L(92), CTO_PUNTOS.dibujos + 30, 560, 1.7)]}
+      claves={[mira(0, LX + 40, LEO_CARA_Y + 90, 1.6), mira(L(85.3), LX + 50, LEO_CARA_Y + 90, 1.66), mira(L(85.4), CTO_PUNTOS.colchon, 800, 1.9), mira(L(86.6), CTO_PUNTOS.colchon - 20, 800, 1.95), mira(L(86.7), CTO_PUNTOS.cajas, 790, 2.0), mira(L(88.0), CTO_PUNTOS.cajas + 20, 790, 2.05), mira(L(88.1), CTO_PUNTOS.bolso, 760, 2.0), mira(L(89.4), CTO_PUNTOS.bolso - 20, 760, 2.05), mira(L(89.5), CTO_PUNTOS.dibujos, 560, 1.6), mira(L(92), CTO_PUNTOS.dibujos + 30, 560, 1.7)]}
       detras={<><Tibio k={0.9} x={200} y={P - 120} /><Halo x={CTO_PUNTOS.ventana} y={420} r={900} color="#9fb4d8" fuerza={0.3} /></>}
       medio={<LeoSentado caras={[{ f: 0, v: "triste" }]} miradas={[{ f: 0, v: { x: -1, y: 0.4 } }]} luz={L_FRIO} />}
       hud={<>
@@ -2478,7 +2478,7 @@ const Cuarto12c: React.FC = () => {
         <ManoLeo texto="a mattress." x={200} y={300} desde={L(85.1)} hasta={L(86.4)} tam={72} />
         <ManoLeo texto="pizza boxes." x={200} y={300} desde={L(86.7)} hasta={L(87.9)} tam={72} />
         <ManoLeo texto="the delivery bag." x={200} y={300} desde={L(88.1)} hasta={L(89.3)} tam={72} />
-        <ManoLeo texto="drawings he never finished." x={220} y={820} desde={L(89.8)} tam={64} />
+        <ManoLeo texto="drawings he" x={220} y={770} desde={L(89.5)} tam={64} /><ManoLeo texto="never finished." x={220} y={850} desde={L(90.3)} tam={64} />
       </>} />
   );
 };
@@ -2514,10 +2514,11 @@ const Farol15c: React.FC = () => {
         <Halo x={FX} y={P - 90} r={260} color={ORO} fuerza={0.35 * tit} />
       </CuartoCalido>
       {r > 0 && (
-        <AbsoluteFill style={{ clipPath: `circle(${r}px at 960px 600px)` }}>
-          <AbsoluteFill style={{ background: "#f0c88a" }} />
-          <Escena Set={CaminoChina} pal={PAL_ANT} claves={[mira(0, 300, 600, 1.05), mira(L(118.7), 300, 600, 1.0)]} />
-        </AbsoluteFill>
+        <div style={{ position: "absolute", left: 960 - r, top: 600 - r, width: 2 * r, height: 2 * r, borderRadius: "50%", overflow: "hidden", background: "#f0c88a" }}>
+          <div style={{ position: "absolute", left: r - 960, top: r - 600, width: 1920, height: 1080 }}>
+            <Escena Set={CaminoChina} pal={PAL_ANT} claves={[mira(0, 300, 600, 1.05), mira(L(118.7), 300, 600, 1.0)]} />
+          </div>
+        </div>
       )}
       {r > 0 && <svg {...svgP}><circle cx={960} cy={600} r={r} fill="none" stroke={ORO} strokeWidth={14} opacity={0.6} /></svg>}
     </AbsoluteFill>
@@ -2547,24 +2548,24 @@ const MiraAtras18: React.FC = () => {
 const Bajarse21b: React.FC = () => {
   const f = useF() + 300;
   const hx = 4300 - f * 6.5;
-  const ks = Array.from({ length: 5 }, (_, k) => mira(k * 30, 4300 - (300 + k * 30) * 6.5 - 10, BWY_PISO - 330, 1.45));
+  const ks = Array.from({ length: 5 }, (_, k) => mira(k * 30, 4300 - (300 + k * 30) * 6.5 - 10, BWY_PISO - 270, 1.45));
   return (
     <Escena Set={Broadway} pal={PAL} claves={ks}
       medio={<Montado x={hx} piso={BWY_PISO + 30} fase={(f % 14) / 14} dir={-1} s={1.3} variante="mara" look={LEO3} cara={f % 40 < 20 ? "miedo" : "duda"} escala={ESC} luz={L_TEL}
         pose={{ ...POSE_JINETE, tronco: 26, hD: 70, cD: 60, hI: 75, cI: 55, cabeza: 30 }} />}
-      hud={<><Hud min={390} dia={5} estado="sube" /><Lineas dir={1} n={10} /><ManoLeo texto="how do you get off?" x={1120} y={860} desde={50} tam={64} /></>} />
+      hud={<><Hud min={390} dia={5} estado="sube" /><ManoLeo texto="how do you get off?" x={1120} y={880} desde={30} tam={64} /></>} />
   );
 };
 // 312,2-313,9 · «he shrugs»: Tenzo encoge los hombros
 const Hombros32: React.FC = () => (
   <SobreTenzo dur={51} tenzo={{ poses: [{ f: 0, v: HABLA_A }, { f: 8, v: { ...LOTO, hD: 30, cD: 140, hI: 30, cI: 140, cabeza: 8, tronco: -6 } }, { f: 34, v: HABLA_B }], caras: [{ f: 0, v: "feliz" }, { f: 8, v: "risa" }], habla: [[0, 48]] }}
-    hud={<><Hud min={406} dia={5} /><ManoLeo texto="ask the horse." x={1080} y={250} desde={4} tam={66} /></>} />
+    hud={<><Hud min={406} dia={5} /><ManoLeo texto="ask the horse." x={1400} y={620} desde={4} tam={66} /></>} />
 );
 // 329,6-331,8 · inserto de las rodillas: «crack»
 const Rodillas34b: React.FC = () => {
   const f = useF();
   return (
-    <CuartoCalido claves={[mira(0, TX - 10, P - 110, 3.4), mira(66, TX - 10, P - 115, 3.55)]} hud={<><Hud min={406} dia={5} /><ManoLeo texto="crack." x={1300} y={720} desde={4} tam={110} /><ManoLeo texto="crack." x={300} y={760} desde={18} tam={90} /></>}>
+    <CuartoCalido claves={[mira(0, TX, P - 60, 4.5), mira(66, TX, P - 62, 4.7)]} hud={<><Hud min={406} dia={5} /><ManoLeo texto="crack." x={1350} y={400} desde={4} tam={110} /></>}>
       <Actor look={TENZO} escala={ESC} seed={2} luz={L_ORO_I} ruta={[{ f: 0, x: TX, y: P }]} dir={[{ f: 0, v: -1 }]} asiento={[{ f: 0, v: undefined }]}
         poses={[{ f: 0, v: { tronco: 20, hD: 40, cD: 60, hI: 30, cI: 50, pI: 20, rI: 30, pD: 30, rD: 40 } }, { f: 30, v: { tronco: 6, hD: 20, cD: 40, hI: 20, cI: 40, pI: 6, rI: 8, pD: 8, rD: 10 } }]} caras={[{ f: 0, v: "cansado" }]} />
       {f >= 4 && f < 16 && <circle cx={TX - 25} cy={P - 95} r={20 + (f - 4) * 6} fill="none" stroke="#f4efe6" strokeWidth={5} opacity={1 - (f - 4) / 12} />}
@@ -2602,7 +2603,7 @@ const InsBufanda: React.FC = () => {
       <svg {...svgP}>
         <Halo x={1300} y={200} r={900} color="#ffffff" fuerza={0.35} />
         <path d="M420,1080 Q500,700 960,640 Q1420,700 1500,1080 Z" fill="#9fd3e0" />
-        <ellipse cx={960} cy={330} rx={230} ry={260} fill="#e8b98f" />
+        <rect x={870} y={120} width={180} height={520} fill="#e0aa7c" /><ellipse cx={960} cy={-60} rx={260} ry={250} fill="#e8b98f" />
         <g transform={`translate(0,${Math.sin(f / 9) * 3})`}>
           <path d="M640,560 Q960,720 1280,560 L1300,700 Q960,860 620,700 Z" fill="#3f9a6a" />
           {Array.from({ length: 9 }).map((_, i) => <path key={i} d={`M${680 + i * 70},${600 - Math.abs(4 - i) * 8} l0,110`} stroke="#2f7a52" strokeWidth={10} strokeLinecap="round" />)}
@@ -2650,7 +2651,7 @@ const InsLibro: React.FC = () => {
 const MayaPlano: React.FC = () => (
   <Escena Set={Broadway} pal={PAL_DIA} setProps={{ hora: "dia", nieve: true }} claves={[mira(0, MAYA_X - 120, BP - 250, 2.0), mira(27, MAYA_X - 120, BP - 250, 2.1)]}
     medio={<>
-      <Actor look={MAYA} escala={ESC * 0.95} seed={8} luz={L_DIA} ruta={[{ f: 0, x: MAYA_X + 220, y: BP }, { f: 27, x: MAYA_X, y: BP }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { hD: 50, cD: 100, hI: 50, cI: 100, cabeza: 22 } }]} caras={[{ f: 0, v: "neutral" }]} enManoD={<Libro abierto color="#2e5a8a" />} />
+      <Actor look={MAYA} escala={ESC * 0.95} seed={8} luz={L_DIA} ruta={[{ f: 0, x: MAYA_X + 220, y: BP }, { f: 27, x: MAYA_X, y: BP }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { hD: 50, cD: 100, hI: 50, cI: 100, cabeza: 22 } }]} caras={[{ f: 0, v: "neutral" }]} enManoD={<g transform="scale(2.2)"><Libro color="#2e5a8a" /></g>} />
       <Actor look={LEO3} escala={ESC} seed={1} luz={L_DIA} ruta={[{ f: 0, x: LEO_PARADA, y: BP }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: { hD: 20, cD: -40, hI: -20, cI: -40 } }]} caras={[{ f: 0, v: "sorpresa" }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }]} />
     </>}
     hud={<><Hud min={230} dia={7} /><ManoLeo texto="a girl." x={200} y={250} desde={0} tam={74} /></>} />
@@ -2665,13 +2666,13 @@ const Gancho41d: React.FC = () => {
       <Escena Set={RioCrecido} pal={PAL_ANT} claves={[mira(0, RIO.orillaI + 260, RIO.sup - 220, 1.5), mira(165, RIO.orillaI + 520, RIO.sup - 220, 1.6)]}
         medio={<>
           <Actor look={MONJE_SHOUNJI} escala={1.05} seed={42} luz={L_ANT} ruta={[{ f: 0, x: RIO.orillaI - 60, y: JAPON_PISO }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: { hD: 10, cD: 20, hI: 10, cI: 20 } }]} caras={[{ f: 0, v: "sorpresa" }, { f: 90, v: "enojo" }]} />
-          <Actor look={MONJE_SHOUNJI} escala={1.05} seed={40} luz={L_ANT} ruta={[{ f: 0, x: mx, y: RIO.sup + 20 }]} dir={[{ f: 0, v: 1 }]} poses={alterna({ hD: 95, cD: 70, hI: 95, cI: 70, tronco: 6 }, { hD: 95, cD: 70, hI: 95, cI: 70, tronco: 2 }, 0, 165, 12)} caras={[{ f: 0, v: "determinado" }]} />
+          <Actor look={MONJE_SHOUNJI} escala={1.05} seed={40} luz={L_ANT} ruta={[{ f: 0, x: mx, y: RIO.sup + 20 }]} dir={[{ f: 0, v: 1 }]} poses={alterna({ hD: 70, cD: 90, hI: 70, cI: 90, tronco: 6 }, { hD: 70, cD: 90, hI: 70, cI: 90, tronco: 2 }, 0, 165, 12)} caras={[{ f: 0, v: "determinado" }]} />
           <g transform={`translate(${mx + 30},${RIO.sup - 190}) rotate(-78)`}>
-            <Actor look={MAYA} escala={0.9} seed={41} ruta={[{ f: 0, x: 0, y: 0 }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: { hD: 160, cD: 30, hI: 40, cI: 40, pI: 10, pD: 14 } }]} caras={[{ f: 0, v: "sorpresa" }]} />
+            <Actor look={{ ...MAYA, camisa: "#b8322a", pantalon: "#b8322a", accesorios: [] }} escala={0.9} seed={41} ruta={[{ f: 0, x: 0, y: 0 }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: { hD: 160, cD: 30, hI: 40, cI: 40, pI: 10, pD: 14 } }]} caras={[{ f: 0, v: "sorpresa" }]} />
           </g>
         </>} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 90, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 64, letterSpacing: 8, color: "#f4efe6", textShadow: "0 4px 16px rgba(0,0,0,.6)", opacity: SINGLE(f, 6, 10), transform: `scale(${s(6)})` }}>DAY 8 · TOMORROW NIGHT</div>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 180, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 84, color: ORO, textShadow: "0 4px 16px rgba(0,0,0,.6)", opacity: SINGLE(f, 40, 44), transform: `scale(${s(40)})` }}>Two Monks, a River and a Woman</div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 180, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 84, color: ORO, textShadow: "0 4px 16px rgba(0,0,0,.6)", opacity: 0 }}>Two Monks, a River and a Woman</div>
     </AbsoluteFill>
   );
 };
