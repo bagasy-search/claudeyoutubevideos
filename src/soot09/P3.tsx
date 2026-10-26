@@ -7,6 +7,7 @@ import { Mundo, K, En, SUELO, AGUA } from "./mundo";
 import { Base, FX, flotaX } from "./base";
 import { TOM, GENT, COLONO, Poste, Nave, Mosquitos, Anillos, Cruz, Barril, Olla, Tablero, Nieve, FuerteTriangulo, Tinte } from "./kitj";
 import { Globo, Tacha } from "./kitj2";
+import { Vineta } from "./vineta";
 
 // TRAMPA 3 · LA ISLA (213,7-342,7 s). Río arriba hasta la península, el fuerte en 19 días, el agua del río que vuelve,
 // mosquitos y fiebres, las cruces de noche, los anillos del ciprés (la peor sequía en 770 años), "seasoning" y 104 → 38.
@@ -228,7 +229,32 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={232.18} t1={235.3} text="DEEP WATER" color={C.teal} tinta={C.noche} x={960} y={930} centro size={56} />
       <Chip t={t} t0={234.84} t1={235.8} text="TIE UP TO THE TREES" color="#1f6a3a" x={960} y={140} centro size={52} />
       <Chip t={t} t0={236.48} t1={237.6} text="EASY TO DEFEND" color={C.lima} tinta={C.noche} x={960} y={140} centro size={56} />
-      {t > 237.8 && t < 239.0 && <Grande t={t} t0={237.94} text="ALSO A SWAMP" y={180} size={120} color="#9be15d" />}
+      {/* plano medio: el barco amarrado a un árbol de la orilla, un colono tira del cabo */}
+      <Vineta t={t} t0={232.6} t1={236.2} x={960} y={540} w={1180} h={660} cielo="#bfe0ee" suelo="#6a8a3a" sueloY={470}>
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1180} height={660}>
+          <rect x={0} y={430} width={420} height={230} fill="#2f6f8f" />
+          <path d="M -40 300 L 360 300 L 320 460 L -10 460 Z" fill="#7a3e1a" stroke="#3a1a08" strokeWidth={8} />
+          <rect x={150} y={20} width={20} height={290} fill="#5a3a1a" /><path d="M 175 50 Q 330 140 175 250 Z" fill="#f4ecd8" stroke="#8a7a6a" strokeWidth={5} />
+          <rect x={940} y={150} width={60} height={340} fill="#5a3a1a" /><circle cx={970} cy={130} r={150} fill="#2f7a3a" /><circle cx={880} cy={190} r={90} fill="#3a8a44" /><circle cx={1070} cy={200} r={100} fill="#3a8a44" />
+          <path d={`M 330 330 Q ${640} ${380 + Math.sin(t * 3) * 10 + 60 * (1 - prog(t, 233.0, 234.4))} 950 420`} stroke="#c8a060" strokeWidth={12} fill="none" />
+        </svg>
+        <Persona x={700} y={600} h={420} t={t} seed={1150} ropa={COLONO(1)} expr="neutro" flip inclina={-14 - Math.sin(t * 4) * 4} bI={70} bD={70} cI={30} cD={30} />
+        <Persona x={520} y={610} h={380} t={t} seed={1151} ropa={COLONO(3)} expr="feliz" mira={0.4} bD={120 + Math.sin(t * 5) * 15} habla={t > 234.8} />
+      </Vineta>
+      {/* plano medio: el pantano (barro, juncos, un colono hundido hasta las rodillas, mosquitos) */}
+      <Vineta t={t} t0={237.25} t1={239.35} x={960} y={540} w={1180} h={660} cielo="#c8d6a0" cielo2="#9aae6a" suelo="#4e4426" sueloY={430} titulo="ALSO A SWAMP" colorTitulo="#4e7a1a">
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1180} height={660}>
+          {[0, 1, 2].map((k) => <ellipse key={k} cx={240 + k * 380} cy={520 + (k % 2) * 40} rx={170} ry={34} fill="#6a6a3a" opacity={0.8} />)}
+          {Array.from({ length: 22 }, (_, k) => { const x = 30 + k * 54 + (k % 3) * 9, hh = 120 + (k * 37) % 90; return <path key={k} d={`M ${x} 470 Q ${x + Math.sin(t * 2 + k) * 10} ${470 - hh / 2} ${x + 8 + Math.sin(t * 2 + k) * 16} ${470 - hh}`} stroke="#5a7a2a" strokeWidth={9} fill="none" />; })}
+          {Array.from({ length: 6 }, (_, k) => <rect key={k} x={60 + k * 200} y={330 - (k % 2) * 30} width={14} height={60} rx={7} fill="#6a4a1a" />)}
+        </svg>
+        <Persona x={600} y={700} h={480} t={t} seed={1152} ropa={COLONO(2)} expr="miedo" bI={60 + Math.sin(t * 9) * 25} bD={60 - Math.sin(t * 9) * 25} cI={40} cD={40} habla />
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1180} height={660}>
+          <path d={`M 380 ${560 + Math.sin(t * 3) * 6} Q 600 ${520 + Math.sin(t * 3) * 6} 820 ${560 + Math.sin(t * 3) * 6} L 820 660 L 380 660 Z`} fill="#4e4426" />
+          {[0, 1, 2].map((k) => { const f = ((t * 1.3 + k * 0.33) % 1); return <circle key={k} cx={470 + k * 130} cy={560 - f * 30} r={10 + f * 8} fill="none" stroke="#8a7a4a" strokeWidth={4} opacity={1 - f} />; })}
+        </svg>
+        <div style={{ position: "absolute", left: 0, top: 0 }}><Mosquitos t={t} x={600} y={200} n={14} r={200} seed={8} /></div>
+      </Vineta>
       {/* el fuerte en 19 días */}
       {t > 239.3 && t < 247.2 && (
         <div style={{ position: "absolute", left: 80, top: 80, opacity: ent(t, 239.4) * (1 - prog(t, 246.9, 247.2)), fontFamily, fontWeight: 700, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 20, padding: "8px 26px", textAlign: "center" }}>
@@ -265,6 +291,18 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
       {noche && (
         <>
           <Chip t={t} t0={282.2} t1={288.9} text="3 OR 4 IN A NIGHT" color={C.rojo} x={960} y={140} centro size={60} />
+          <Vineta t={t} t0={284.05} t1={287.6} x={960} y={570} w={1240} h={640} cielo="#f0c8a0" cielo2="#c89a88" suelo="#7a6a4a" sueloY={500} titulo="EVERY MORNING" colorTitulo="#7a3a2a">
+            <svg style={{ position: "absolute", left: 0, top: 0 }} width={1240} height={640}>
+              <rect x={900} y={250} width={300} height={260} fill="#6a4a2a" stroke="#2a1408" strokeWidth={6} /><path d="M 870 260 L 1050 140 L 1230 260 Z" fill="#8a7a4a" stroke="#2a1408" strokeWidth={6} />
+              <rect x={960} y={340} width={110} height={170} fill="#1a1008" />
+              <circle cx={180} cy={140} r={70} fill="#ffd890" opacity={0.8} />
+            </svg>
+            {(() => { const d = (t - 284.05) * 70; return <>
+              <div style={{ position: "absolute", left: 610 - d, top: 560, transform: "rotate(90deg)", transformOrigin: "0 0" }}><Persona x={0} y={0} h={300} t={t} seed={1170} ropa={{ ...COLONO(3), tunica: "#8a8478", tunica2: "#6a665a" }} expr="dormido" flaco={0.6} bI={175} bD={175} /></div>
+              <svg style={{ position: "absolute", left: 0, top: 0 }} width={1240} height={640}><rect x={600 - d} y={525} width={250} height={46} rx={20} fill="#a89a7a" stroke="#5a4a3a" strokeWidth={5} /></svg>
+              {[[430, 1171, 0], [545, 1172, 1]].map(([x, seed, k]) => <Persona key={seed} x={x - d} y={620 + k * 8} h={400} t={t} seed={seed} ropa={COLONO(k)} expr="triste" flaco={0.55} flip camina={0.45} inclina={-16} bI={120} bD={120} cI={-20} cD={-20} />)}
+            </>; })()}
+          </Vineta>
           {t > 287.5 && <Grande t={t} t0={287.56} text="NOBODY COULD HAVE KNOWN" y={930} size={84} color={C.ambar} />}
         </>
       )}

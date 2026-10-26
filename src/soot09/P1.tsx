@@ -5,6 +5,7 @@ import { C, ent, prog, Chip, Grande, fontFamily, Particulas, Pergamino, Moneda }
 import { Trampas } from "./kit2";
 import { Mundo, K, En, SUELO, AGUA, kx, mueve, camEn, camV } from "./mundo";
 import { Base } from "./base";
+import { Vineta } from "./vineta";
 import { TOM, GENT, COLONO, Poste, Cartel, Corona, Choclo, Tablero, Pez, Nieve } from "./kitj";
 import { Globo, Icono, Tacha, Almacen, Carreta, Olor, Torta } from "./kitj2";
 
@@ -123,8 +124,28 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={68.72} t1={70.2} text="LOOKING FOR MEN" color={C.rojo} x={960} y={140} centro size={60} />
       {t > 70.1 && t < 71.8 && <Grande t={t} t0={70.56} text="IRRESISTIBLE" x={960} y={190} size={100} color={C.ambar} />}
       {t > 74.0 && t < 77.9 && <div style={{ position: "absolute", left: 0, top: 0 }}><Particulas t={t} tipo="destellos" n={26} seed={4} /></div>}
-      <Chip t={t} t0={76.68} t1={77.9} text="MEXICO & PERU" color={C.teal} tinta={C.noche} x={250} y={880} size={54} />
-      <Chip t={t} t0={77.3} t1={77.9} text="PERU" color={C.teal} tinta={C.noche} x={1450} y={880} size={46} />
+      {/* corte: los españoles cargando el oro de México y Perú */}
+      <Vineta t={t} t0={76.4} t1={78.3} x={1380} y={600} w={900} h={600} cielo="#f4d8a0" cielo2="#e8b870" suelo="#a8784a" sueloY={460} titulo="MEXICO & PERU" colorTitulo={C.teal} rot={2}>
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={900} height={600}>
+          <path d="M 520 470 L 820 470 L 760 330 L 690 380 L 640 300 L 580 390 Z" fill="#ffd34a" stroke="#c89a1a" strokeWidth={6} />
+          {Array.from({ length: 6 }, (_, k) => <rect key={k} x={560 + (k % 3) * 70} y={420 - Math.floor(k / 3) * 30} width={60} height={26} rx={4} fill="#f0c43a" stroke="#a07a1a" strokeWidth={4} />)}
+          {Array.from({ length: 5 }, (_, k) => { const f = (t * 1.2 + k * 0.2) % 1; return <path key={k} d="M 0 -14 L 4 -4 L 14 0 L 4 4 L 0 14 L -4 4 L -14 0 L -4 -4 Z" fill="#fff8c0" transform={`translate(${560 + k * 50} ${300 - f * 60}) scale(${Math.sin(f * Math.PI)})`} />; })}
+        </svg>
+        <Persona x={250} y={720} h={460} t={t} seed={1230} ropa={GENT(1)} gola gorro="morion" barba="#3a2a1a" expr="orgullo" mira={0.4} bD={130 + Math.sin(t * 6) * 10} cD={20} manoD={<rect x={-30} y={-14} width={60} height={26} rx={4} fill="#f0c43a" stroke="#a07a1a" strokeWidth={4} />} />
+        <Persona x={440} y={730} h={420} t={t} seed={1231} ropa={GENT(2)} gorro="morion" expr="feliz" camina={1.2} mira={0.4} />
+      </Vineta>
+      {/* corte: el río que cruza al Pacífico y a las especias de Asia */}
+      <Vineta t={t} t0={78.3} t1={84.4} x={1380} y={600} w={900} h={600} cielo="#cfe7f2" suelo="#cfe7f2" sueloY={600} titulo="TO THE PACIFIC?" colorTitulo={C.violeta} rot={-1.5}>
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={900} height={600}>
+          <rect x={0} y={0} width={900} height={600} fill="#2f7fae" /><path d="M 0 120 Q 300 60 640 150 L 900 120 L 900 600 L 0 600 Z" fill="#9ac46a" stroke="#4a6a2a" strokeWidth={6} /><path d="M 560 600 L 900 600 L 900 250 Q 760 300 700 420 Z" fill="#2f7fae" />
+          <path d="M 60 300 Q 300 260 420 360 T 760 420" stroke="#2f7fae" strokeWidth={20} fill="none" strokeDasharray="1000" strokeDashoffset={1000 * (1 - prog(t, 78.7, 81.0))} strokeLinecap="round" />
+          <path d="M 60 300 Q 300 260 420 360 T 760 420" stroke="#fff" strokeWidth={6} fill="none" strokeDasharray="20 16" opacity={prog(t, 80.5, 81.0)} />
+          <text x={70} y={250} fontFamily={fontFamily} fontWeight={700} fontSize={40} fill="#1b1240">VIRGINIA</text>
+          <text x={780} y={520} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={40} fill="#fff">PACIFIC</text>
+          {t > 81.5 && <g transform={`translate(780 300) scale(${ent(t, 81.6)})`}><circle r={70} fill="#fff3d6" stroke="#2a1408" strokeWidth={6} />{[[-24, 0, "#c0392b"], [0, -18, "#e0a020"], [22, 6, "#7a4a1a"]].map(([x, y, c], k) => <ellipse key={k} cx={x as number} cy={y as number} rx={22} ry={16} fill={c as string} />)}<text y={56} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={22} fill="#1b1240">SPICES</text></g>}
+          <g transform={`translate(${60 + 700 * prog(t, 79.0, 83.0)} ${300 + 120 * prog(t, 79.0, 83.0) - Math.sin(prog(t, 79.0, 83.0) * Math.PI) * 30}) scale(0.5)`}><path d="M -60 0 L 60 0 L 40 30 L -40 30 Z" fill="#7a3e1a" /><rect x={-4} y={-80} width={8} height={80} fill="#3a2010" /><path d="M 6 -76 Q 50 -40 6 -6 Z" fill="#f4ecd8" /></g>
+        </svg>
+      </Vineta>
       {t > 86.6 && t < 88.4 && <Particulas t={t} tipo="lluviaoro" n={50} seed={6} />}
       <Chip t={t} t0={88.82} t1={89.7} text="THE FINE PRINT" color={C.rojo} x={960} y={960} centro size={58} />
       {t > 89.7 && t < 91.0 && <Grande t={t} t0={90.02} text="NOT A SETTLER" y={190} size={120} color="#ff5a6a" />}

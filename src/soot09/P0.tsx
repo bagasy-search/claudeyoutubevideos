@@ -4,6 +4,7 @@ import { Persona } from "./persona";
 import { C, ent, prog, Chip, Grande, fontFamily, Particulas } from "./kit";
 import { Mundo, K, camEn, camV, En, SUELO, AGUA } from "./mundo";
 import { Base, FX } from "./base";
+import { Vineta } from "./vineta";
 import { TOM, COLONO, Tablero, Nave, Pez, Cruz, Barril, Poste, Olla, Tinte, Bote } from "./kitj";
 
 // GANCHO 0-51,7 s. Mundo continuo: playa de Jamestown 1610 → el fuerte → flashback del otoño → bajo el río →
@@ -174,9 +175,19 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={22.28} t1={23.6} text="A RIVER FULL OF FISH" color={C.teal} tinta={C.noche} x={960} y={160} centro size={68} />
       {t > 23.9 && t < 27.6 && <Grande t={t} t0={24.0} text="JAMESTOWN" y={200} size={190} />}
       <Chip t={t} t0={25.06} t1={27.6} text="1st PERMANENT ENGLISH COLONY" color={C.rojo} x={960} y={930} centro size={58} />
-      <Chip t={t} t0={29.36} t1={32.2} text="ALMOST EVERY WINTER" color={C.lila} tinta={C.noche} x={960} y={940} centro size={62} />
-      {t > 30.6 && t < 32.2 && <Grande t={t} t0={30.64} text="A MASSACRE" y={300} size={150} color="#ff5a6a" />}
-      {t > 31.0 && t < 32.2 && <Grande t={t} t0={31.06} text="WITHOUT A BATTLE" y={470} size={100} />}
+      <Chip t={t} t0={29.36} t1={32.2} text="ALMOST EVERY WINTER" color={C.lila} tinta={C.noche} x={960} y={1000} centro size={54} />
+      {/* plano medio: el cementerio del fuerte. Un colono cava, otro llora con el sombrero en la mano; nadie peleó */}
+      <Vineta t={t} t0={29.5} t1={32.3} x={960} y={650} w={1240} h={520} cielo="#b8b4c8" cielo2="#d8c8c0" suelo="#6a5a3a" sueloY={400} rot={-1}>
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1240} height={520}>
+          {Array.from({ length: 22 }, (_, k) => <rect key={k} x={k * 58} y={150} width={50} height={250} fill="#7a5530" stroke="#3a2412" strokeWidth={3} />)}
+          {Array.from({ length: 7 }, (_, k) => { const x = 120 + k * 150 + (k > 3 ? 120 : 0), sube = prog(t, 29.6 + k * 0.18, 29.9 + k * 0.18); return <g key={k} transform={`translate(${x} ${420 + (k % 2) * 30}) scale(1 ${sube})`}><rect x={-9} y={-150} width={18} height={150} fill="#e8e0d0" stroke="#5a4a3a" strokeWidth={4} /><rect x={-50} y={-120} width={100} height={18} fill="#e8e0d0" stroke="#5a4a3a" strokeWidth={4} /></g>; })}
+          <ellipse cx={720} cy={470} rx={130} ry={30} fill="#3a2a1a" /><path d="M 830 470 Q 900 400 960 470 Z" fill="#7a6a4a" />
+        </svg>
+        <Persona x={720} y={560} h={360} t={t} seed={1220} ropa={COLONO(2)} expr="triste" flaco={0.5} inclina={14 + Math.sin(t * 5) * 8} bD={60 + Math.sin(t * 5) * 30} cD={40} manoD={<g><rect x={-5} y={-150} width={10} height={180} fill="#6a4a2a" /><path d="M -22 30 L 22 30 L 18 80 Q 0 92 -18 80 Z" fill="#7a7a84" /></g>} />
+        <Persona x={430} y={540} h={340} t={t} seed={1221} ropa={COLONO(0)} expr="triste" flaco={0.4} inclina={8} miraY={0.5} bI={40} cI={70} manoI={<ellipse cx={0} cy={0} rx={40} ry={14} fill="#3a2a1a" />} />
+      </Vineta>
+      {t > 30.6 && t < 32.2 && <Grande t={t} t0={30.64} text="A MASSACRE" y={190} size={130} color="#ff5a6a" />}
+      {t > 31.0 && t < 32.2 && <Grande t={t} t0={31.06} text="WITHOUT A BATTLE" y={320} size={78} />}
       {/* rebobinado: banda y año que gira hacia atrás */}
       {t > 32.95 && t < 35.4 && (
         <AbsoluteFill style={{ pointerEvents: "none" }}>
@@ -196,6 +207,8 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
               </div>
             );
           })}
+          {/* el protagonista va dando vuelta las cartas */}
+          {(() => { const k = Math.min(6, Math.max(0, (t - 37.0) / 0.45)); const x = 235 + k * 240; return <Persona x={x} y={1380} h={760} t={t} seed={7} ropa={TOM} gorro="sombrero" expr={t > 40 ? "miedo" : "sorpresa"} flaco={0.2} bD={150 + Math.sin(t * 14) * 12} cD={30} mira={0.2} miraY={-0.5} />; })()}
         </div>
       )}
       <Chip t={t} t0={36.82} t1={40.2} text="STEP BY STEP" color={C.violeta} x={960} y={150} centro size={62} />

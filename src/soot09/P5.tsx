@@ -177,12 +177,23 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
           <div style={{ position: "absolute", left: 360, top: 120, width: 1200, height: 760, background: "#f1dfb6", border: "14px solid #6b3a1f", borderRadius: 24, overflow: "hidden", filter: "sepia(.55)", transform: `rotate(${-1.5 + Math.sin(t * 0.8) * 0.5}deg)` }}>
             <div style={{ position: "absolute", left: 0, top: 18, width: 1200, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 52, color: "#6b3a1f" }}>SMITH'S STORY</div>
             {/* Smith tendido en el piso */}
-            <div style={{ position: "absolute", left: 470, top: 660, transform: "rotate(-90deg)", transformOrigin: "0 0" }}><Persona x={0} y={0} h={330} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" expr="miedo" /></div>
+            <div style={{ position: "absolute", left: 590, top: 660, transform: "rotate(-90deg)", transformOrigin: "0 0" }}><Persona x={0} y={0} h={330} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" expr="miedo" /></div>
             {/* los garrotes en alto (sin golpe) */}
-            {[340, 860].map((x, i) => <div key={x} style={{ position: "absolute", left: 0, top: 0 }}><Persona x={x} y={700} h={420} t={t} seed={620 + i} ropa={POW(i)} plumaPelo flip={i === 1} expr="enojado" bD={t > 507.6 && t < 512.9 ? 160 : 40} cD={20} manoD={<rect x={-10} y={-10} width={20} height={130} rx={10} fill="#5a3418" />} /></div>)}
-            <Persona x={600} y={700} h={380} t={t} seed={540} ropa={POW(2)} viejo plumaPelo capa="#6a3a1a" expr="neutro" />
+            {[130, 720].map((x, i) => <div key={x} style={{ position: "absolute", left: 0, top: 0 }}><Persona x={x} y={700} h={420} t={t} seed={620 + i} ropa={POW(i)} plumaPelo flip={i === 1} expr={t > 512.85 ? "sorpresa" : "enojado"} inclina={t > 512.85 ? (i ? 8 : -8) * prog(t, 512.85, 513.3) : 0} bD={t > 507.6 && t < 515.3 ? 160 : 40} cD={20} manoD={<rect x={-10} y={-10} width={20} height={130} rx={10} fill="#5a3418" />} /></div>)}
+            <Persona x={1020} y={700} h={380} t={t} seed={540} ropa={POW(2)} viejo plumaPelo capa="#6a3a1a" expr={t > 512.85 ? "sorpresa" : "neutro"} flip mira={-0.4} />
             {/* Pocahontas */}
-            {t > 504.9 && (() => { const x = interpolate(t, [511.4, 512.9], [1050, 560], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }); const tendida = t > 512.9; return tendida ? <div style={{ position: "absolute", left: 430, top: 610, transform: "rotate(-90deg)", transformOrigin: "0 0" }}><Persona x={0} y={0} h={240} t={t} seed={600} ropa={POW(0)} plumaPelo expr="miedo" /></div> : <Persona x={x} y={700} h={240} t={t} seed={600} ropa={POW(0)} plumaPelo flip camina={2.5} expr="miedo" />; })()}
+            {t > 504.9 && (() => {
+              // corre (511,2-512,3), se tira en palomita (512,3-512,8) y queda tendida sobre Smith
+              const x = interpolate(t, [511.2, 512.3, 512.8], [1180, 860, 680], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+              if (t > 512.8) return <div style={{ position: "absolute", left: 560, top: 600, transform: "rotate(-90deg)", transformOrigin: "0 0" }}><Persona x={0} y={0} h={280} t={t} seed={600} ropa={POW(0)} plumaPelo expr="miedo" bI={170} bD={170} /></div>;
+              const salta = prog(t, 512.3, 512.8);
+              return <Persona x={x} y={700 - Math.sin(salta * Math.PI) * 90} h={300} t={t} seed={600} ropa={POW(0)} plumaPelo flip camina={salta > 0 ? 0 : 3.2} inclina={salta * 70} bI={8 + salta * 160} bD={8 + salta * 160} expr="miedo" habla={t > 511.6} />;
+            })()}
+            {/* el garrote se frena en el aire */}
+            {t > 512.8 && t < 515.3 && <svg style={{ position: "absolute", left: 0, top: 0 }} width={1200} height={760}>
+              {[[130, 230], [720, 230]].map(([x, y], i) => <g key={i} transform={`translate(${x + (i ? -60 : 60)} ${y}) scale(${ent(t, 512.85)})`}><path d="M -70 0 L -20 -20 L 0 -75 L 20 -20 L 70 0 L 20 20 L 0 75 L -20 20 Z" fill="#fff3c4" stroke={C.rojo} strokeWidth={6} /></g>)}
+              <text x={600} y={250} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={130} fill={C.rojo} stroke="#fff" strokeWidth={8} paintOrder="stroke" transform={`translate(600 210) scale(${ent(t, 512.85)}) translate(-600 -210)`}>STOP!</text>
+            </svg>}
             {t > 515.4 && <div style={{ position: "absolute", right: 60, top: 140, fontFamily, fontWeight: 700, fontSize: 300, color: C.rojo, lineHeight: 1, transform: `scale(${ent(t, 515.5)}) rotate(12deg)`, filter: "none" }}>?</div>}
           </div>
           <Chip t={t} t0={507.61} t1={511.0} text="ABOUT TO BE EXECUTED" color={C.rojo} x={960} y={930} centro size={52} />

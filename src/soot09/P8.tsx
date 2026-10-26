@@ -7,6 +7,7 @@ import { Mundo, K, En, SUELO, AGUA } from "./mundo";
 import { Base, FX } from "./base";
 import { GENT, COLONO, POW, Nave, Bote, Bicho, Tortuga, Tabaco, Barril, Tinte, Cruz } from "./kitj";
 import { Icono } from "./kitj2";
+import { Vineta } from "./vineta";
 
 // EL GIRO (741,1-908,6 s). Deliverance y Patience llegan de Bermudas; 60 sobrevivientes; Gates abandona Jamestown;
 // río abajo, el bote del gancho (el de la farola, en la curva) trae a De La Warr; vuelven. Rolfe y el tabaco;
@@ -191,9 +192,19 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={762.49} t1={765.9} text="NOT MAKING THIS UP" color={C.rojo} x={960} y={930} centro size={52} />
       {t > 764.0 && t < 766.3 && <Grande t={t} t0={764.17} text="DELIVERANCE" y={200} size={130} color={C.ambar} />}
       {t > 765.0 && t < 766.3 && <Grande t={t} t0={765.11} text="& PATIENCE" y={350} size={110} color={C.crema} />}
-      <Chip t={t} t0={766.53} t1={767.9} text="FULL OF HOPE" color={C.lima} tinta={C.noche} x={960} y={140} centro size={56} />
-      {t > 767.9 && t < 770.95 && <Grande t={t} t0={768.0} text="60 WALKING SKELETONS" y={200} size={84} color={C.rojo} />}
-      <Chip t={t} t0={769.71} t1={770.9} text="A RUINED FORT" color="#6a5a4a" x={960} y={930} centro size={64} />
+      <Chip t={t} t0={766.53} t1={767.9} text="FULL OF HOPE" color={C.lima} tinta={C.noche} x={960} y={190} centro size={56} />
+      {t > 767.9 && t < 770.95 && <Grande t={t} t0={768.0} text="60 WALKING SKELETONS" y={190} size={80} color={C.rojo} />}
+      {/* plano medio: llegan con esperanza y se frenan ante el fuerte en ruinas y los esqueletos que caminan */}
+      <Vineta t={t} t0={766.6} t1={771.0} x={960} y={610} w={1300} h={640} cielo="#c8c4b8" cielo2="#a8a094" suelo="#6a5a3a" sueloY={500} rot={-1}>
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1300} height={640}>
+          {Array.from({ length: 16 }, (_, k) => { const roto = [2, 3, 7, 11, 12].includes(k), caido = [5, 9, 14].includes(k), hh = roto ? 90 + (k * 23) % 70 : 230; return caido ? <rect key={k} x={480 + k * 50 - 40} y={480} width={150} height={30} rx={6} fill="#4a3018" transform={`rotate(${k % 2 ? 12 : -9} ${480 + k * 50} 495)`} /> : <path key={k} d={`M ${480 + k * 50} 505 L ${480 + k * 50} ${505 - hh} L ${500 + k * 50} ${505 - hh - 24} L ${520 + k * 50} ${505 - hh} L ${520 + k * 50} 505 Z`} fill={roto ? "#3a2614" : "#6a4a26"} stroke="#2a1408" strokeWidth={4} />; })}
+          {[[700, 1], [1000, 0]].map(([x, q], k) => <g key={k}><rect x={x - 80} y={330} width={160} height={110} fill="#5a4a3a" /><path d={`M ${x - 100} 335 L ${x - 30} 270 L ${x + 20} 300 L ${x + 100} 335 Z`} fill="#1e1a16" />{q === 1 && <path d={`M ${x - 40} 335 L ${x - 10} 300 L ${x + 30} 335`} fill="#c8541a" opacity={0.6 + Math.sin(t * 13) * 0.3} />}</g>)}
+          {Array.from({ length: 7 }, (_, k) => { const f = ((t * 0.35 + k / 7) % 1); return <circle key={k} cx={700 + (k % 2) * 300 + Math.sin(f * 6 + k) * 30 + f * 60} cy={270 - f * 280} r={30 + f * 60} fill="#5a5450" opacity={0.55 * (1 - f)} />; })}
+        </svg>
+        {[[860, 1160], [1010, 1161], [1150, 1162]].map(([x, seed], k) => t > 767.9 + k * 0.35 && <Persona key={k} x={x - (t - 767.9) * 25} y={600 + (k % 2) * 10} h={360} t={t} seed={seed} ropa={{ ...COLONO(k), tunica: "#7a7468", tunica2: "#4e4a42" }} flaco={0.8} expr="triste" flip camina={0.5} inclina={8 + Math.sin(t * 2 + k) * 4} bI={20} bD={60} cD={60} aparece={767.9 + k * 0.35} />)}
+        {[[180, 1163, GENT(3), true], [360, 1164, COLONO(1), false]].map(([x, seed, ropa, g], k) => { const frena = prog(t, 767.9, 768.4); return <Persona key={k} x={(x as number) + (1 - frena) * (t - 766.6) * 60} y={610} h={420} t={t} seed={seed as number} ropa={ropa as any} gola={g as boolean} gorro={g ? "morion" : undefined} expr={t < 767.9 ? "feliz" : "miedo"} camina={t < 767.9 ? 1.4 : 0} inclina={-14 * frena} bD={t < 767.9 ? 140 : 100 + 30 * frena} cD={t < 767.9 ? 20 : 80} mira={0.5} salta={767.95} />; })}
+      </Vineta>
+      <Chip t={t} t0={769.71} t1={770.9} text="A RUINED FORT" color="#6a5a4a" x={960} y={1000} centro size={60} />
       <Chip t={t} t0={770.97} t1={774.7} text="GATES DECIDES" color={C.violeta} x={960} y={140} centro size={56} />
       {t > 774.6 && t < 776.5 && <Grande t={t} t0={774.77} text="JAMESTOWN IS FINISHED" y={220} size={104} color={C.rojo} />}
       <Chip t={t} t0={776.47} t1={781.4} text="7 JUNE 1610" color={C.naranja} x={960} y={140} centro size={60} />

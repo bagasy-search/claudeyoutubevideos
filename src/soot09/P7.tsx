@@ -8,6 +8,7 @@ import { Base, FX } from "./base";
 import { GENT, COLONO, POW, Poste, Bicho, Olla, Canasta, Tablero, Nieve, Pez, Tinte, Bote } from "./kitj";
 import { Tacha, Lupa } from "./kitj2";
 import { Fogata } from "./P0";
+import { Vineta } from "./vineta";
 
 // TRAMPA 7 · EL TIEMPO DEL HAMBRE (649,7-741,1 s). Percy presidente; Powhatan corta el comercio, emboscadas y sitio;
 // el menú que se va tachando (caballos → ratones → botas → almidón); los que se van; lo que no se cuenta;
@@ -175,7 +176,15 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={661.95} t1={663.3} text="MANY NEVER COME BACK" color={C.violeta} x={960} y={930} centro size={52} />
       <Chip t={t} t0={663.43} t1={665.8} text="BEHIND THE WALLS" color={C.tierra} x={960} y={140} centro size={56} />
       <Chip t={t} t0={667.47} t1={669.8} text="GO OUT FOR FOOD?" color="#b0400a" x={960} y={140} centro size={66} />
-      {t > 670.6 && t < 673.9 && <Grande t={t} t0={670.65} text="UNDER SIEGE" y={200} size={130} color={C.rojo} />}
+      <Vineta t={t} t0={670.3} t1={674.0} x={960} y={560} w={1300} h={700} cielo="#5a6a7a" cielo2="#8a9aa8" suelo="#5a4a30" sueloY={560} titulo="UNDER SIEGE" colorTitulo={C.rojo}>
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1300} height={700}>
+          {[100, 300, 520, 760, 980, 1180].map((x, k) => <g key={x}><rect x={x - 18} y={120} width={36} height={200} fill="#1e2a1e" /><circle cx={x} cy={110} r={90 + (k % 2) * 20} fill="#1e3a24" /></g>)}
+          {[220, 640, 1080].map((x, k) => { const asoma = prog(t, 670.6 + k * 0.5, 671.2 + k * 0.5); return <g key={x} transform={`translate(${x + 40 * asoma} 300)`} opacity={asoma}><circle cx={0} cy={-60} r={26} fill="#121812" /><path d="M -30 0 Q 0 -40 30 0 L 26 60 L -26 60 Z" fill="#121812" /><path d="M 2 -86 L 12 -130" stroke="#121812" strokeWidth={8} /><path d="M -50 -30 Q -70 20 -50 60" stroke="#121812" strokeWidth={6} fill="none" /></g>; })}
+          {Array.from({ length: 26 }, (_, k) => <path key={k} d={`M ${k * 52} 700 L ${k * 52} 380 L ${26 + k * 52} 350 L ${52 + k * 52} 380 L ${52 + k * 52} 700 Z`} fill="#7a5530" stroke="#3a2412" strokeWidth={4} />)}
+          {[[420, 470, 671.5], [880, 430, 672.6]].map(([x, y, t0], k) => { const v = prog(t, t0, t0 + 0.25); return t > t0 - 0.3 && <g key={k} transform={`translate(${x - (1 - v) * 500} ${y - (1 - v) * 120}) rotate(${-14 + Math.sin(Math.max(0, t - t0 - 0.25) * 40) * 6 * Math.exp(-Math.max(0, t - t0 - 0.25) * 5)})`}><line x1={-150} y1={0} x2={0} y2={0} stroke="#3a2412" strokeWidth={9} /><path d="M -150 0 L -180 -18 M -150 0 L -180 18 M -136 0 L -166 -18 M -136 0 L -166 18" stroke="#c8c0a8" strokeWidth={6} /></g>; })}
+        </svg>
+        {[[300, 1200], [620, 1201], [1000, 1202]].map(([x, seed], k) => <Persona key={seed} x={x} y={780} h={460} t={t} seed={seed} ropa={k === 1 ? GENT(3) : COLONO(k)} gola={k === 1} flaco={0.5} expr={t > 671.6 + k * 0.4 ? "miedo" : "triste"} mira={0} miraY={-0.6} salta={k === 0 ? 671.75 : k === 2 ? 672.8 : undefined} bI={30} bD={k === 1 ? 140 : 40} />)}
+      </Vineta>
       <Chip t={t} t0={672.77} t1={673.9} text="ALMOST NOTHING INSIDE" color="#6a6a7a" x={960} y={930} centro size={52} />
       {t > 674 && t < 695.6 && <Menu t={t} />}
       <Chip t={t} t0={684.11} t1={687.5} text="BOILED" color={C.naranja} x={300} y={140} size={56} />
@@ -236,7 +245,13 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={729.77} t1={731.1} text="= OUTSIDE THE WALLS" color={C.rojo} x={960} y={930} centro size={52} />
       <Chip t={t} t0={731.31} t1={735.9} text="SPRING 1610" color={C.lima} tinta={C.noche} x={960} y={140} centro size={60} />
       {t > 731.4 && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, pointerEvents: "none" }} />}
-      {t > 732.6 && t < 739.4 && <Tablero t={t} valor={Math.round(interpolate(t, [733.7, 735.8], [500, 60], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }))} titulo="ALIVE" rojo={t > 735.6} x={960} y={300} s={1.8} />}
+      <Vineta t={t} t0={736.1} t1={741.15} x={960} y={620} w={1300} h={620} cielo="#7a8494" cielo2="#a8b0bc" suelo="#6a5a44" sueloY={470}>
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1300} height={620}>{Array.from({ length: 26 }, (_, k) => <rect key={k} x={k * 52} y={250} width={46} height={230} fill="#5a4026" stroke="#2a1a0c" strokeWidth={3} />)}<rect x={560} y={420} width={170} height={70} fill="#3a2a1a" /></svg>
+        <div style={{ position: "absolute", left: 645, top: 520 }}><Fogata t={t} x={0} y={0} /></div>
+        {[[200, 1210, 1, 4], [400, 1211, 0, -6], [890, 1212, 2, 8], [1090, 1213, 3, -4]].map(([x, seed, c, inc], k) => <Persona key={seed} x={x} y={620} h={420} t={t} seed={seed} ropa={{ ...COLONO(c), tunica: "#7a7468", tunica2: "#4e4a42" }} flaco={0.95} expr={k === 2 ? "dormido" : "triste"} flip={k > 1} mira={k > 1 ? -0.5 : 0.5} inclina={inc + Math.sin(t * 1.4 + k) * 3} bI={k % 2 ? 40 : 20} bD={k % 2 ? 60 : 30} cD={80} />)}
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1300} height={620}><path d="M 560 560 Q 645 600 730 560" stroke="#5a5a64" strokeWidth={10} fill="#8a8a94" /></svg>
+      </Vineta>
+      {t > 732.6 && t < 736.2 && <Tablero t={t} valor={Math.round(interpolate(t, [733.7, 735.8], [500, 60], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }))} titulo="ALIVE" rojo={t > 735.6} x={960} y={300} s={1.8} />}
       {t > 739.5 && <Grande t={t} t0={739.67} text="THE STARVING TIME" y={200} size={130} color={C.ambar} />}
     </AbsoluteFill>
   );
