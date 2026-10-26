@@ -76,7 +76,7 @@ o(29.16, "sello", { txt: "INNOCENT", c: "#2a9a4a", x: 620, y: 230, s: 110, fijo:
 s(29.1, "wood_hit", 0);
 // 30.0 «you still cannot walk out» — corre a la puerta; el carcelero la tapa con la mano extendida
 act({ a: 30.1, b: 33.9, x: [5880, 5240], tw: [30.1, 31.2], y: Y.sala, h: 430, ropa: YO, seed: 1, expr: [[0, "feliz"], [31.3, "sorpresa"]], camina: 2.2 });
-cam(28.8, 6290, SUELO - 420, 1.45, 0.4); // empuje al estrado (OJO v3: chico chico en sala vacía)
+cam(28.8, 6290, SUELO - 560, 1.1, 0.4); // empuje al estrado (OJO v3: chico chico en sala vacía)
 cam(30.2, 5200, SUELO - 330, 1.25, 1.0);
 act({ a: 30.8, b: 34, x: 5000, y: Y.sala, h: 450, ropa: CARCELERO, seed: 7, sobre: "gorro", expr: "orgullo", bD: 100, cD: 0, aparece: 30.8, habla: [[31.7, 33]] });
 s(30.8, "spring", -2);

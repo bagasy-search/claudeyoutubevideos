@@ -23,7 +23,7 @@ s(255.3, "stamp", 0);
 cam(256.4, 6450, SUELO - 640, 1.05, 1.3);
 s(256.3, "whoosh_big", -3);
 o(257.2, "chip", { txt: "THE ROYAL JUDGES", x: 960, y: 140, c: C.rojo, s: 64, t1: 260.0 });
-w(258.2, "chip", { txt: "NOT HERE", x: 6680, y: SUELO - 860, c: C.violeta, s: 44, t1: 260.0 });
+w(258.2, "chip", { txt: "NOT HERE", x: 6680, y: SUELO - 820, c: C.violeta, s: 44, t1: 260.0 });
 for (let i = 0; i < 3; i++)
   act({ a: 259.9, b: 266.3, x: [6400 + i * 160, 7700 + i * 160], tw: [260.2 + i * 0.15, 264.0 + i * 0.15], y: Y.calle, h: 400, ropa: JUEZ, seed: 151 + i, sobre: "cofia", viejo: true, expr: "orgullo", camina: 1.1, manoD: "libro", bD: 40, cD: 40, aparece: 259.9 + i * 0.15 });
 cam(259.45, 6650, SUELO - 300, 1.1, 0.45);

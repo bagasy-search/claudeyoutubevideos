@@ -75,7 +75,7 @@ o(797.3, "sello", { txt: "YOU HAD TO PAY FOR IT", x: 960, y: 360, s: 100 });
 s(797.3, "stamp", 0);
 act({ a: 793.0, b: 802.6, x: 3400, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "triste"], [799.6, "neutro"]] });
 // 799.63 ¿peor que la muerte? · 802.69 el giro
-o(799.7, "grande", { txt: "WORSE THAN DEATH?", x: 760, y: 150, s: 100, c: C.rojo, t1: 802.6 });
+o(799.7, "grande", { txt: "WORSE THAN DEATH?", x: 760, y: 160, fijo: true, s: 100, c: C.rojo, t1: 802.6 });
 s(799.7, "suspense", -4);
 o(802.7, "grande", { txt: "THE TWIST", y: 420, s: 170, c: C.oro, t1: 804.6 });
 s(802.7, "slam", 0); s(802.75, "boom", -2); s(802.8, "riser", -8);
@@ -185,14 +185,14 @@ o(895.6, "chip", { txt: "THE JAIL", x: 480, y: 860, hx: 1, fijo: true, c: C.rojo
 o(896.3, "chip", { txt: "THE FEVER", x: 960, y: 860, hx: 1, fijo: true, c: C.lima, tinta: C.noche, s: 52, t1: 900.7 });
 o(897.0, "chip", { txt: "THE DEBT", x: 1440, y: 860, hx: 1, fijo: true, c: C.oro, tinta: C.noche, s: 52, t1: 900.7 });
 s(895.6, "pop", -3); s(896.3, "pop", -3); s(897.0, "pop", -3);
-o(898.4, "grande", { txt: "WORSE THAN DEATH", y: 470, s: 130, c: C.rojo, fijo: true, t1: 900.7 });
+o(898.4, "grande", { txt: "WORSE THAN DEATH", x: 960, y: 290, s: 130, c: C.rojo, fijo: true, t1: 900.7 });
 s(898.4, "slam", -1);
 // 900.89 la muerte no te mandaba factura
 cam(900.8, 2600, Y.baja - 300, 1.2, 1.0);
 act({ a: 900.8, b: 903.8, x: 2430, y: Y.baja, h: 450, ropa: CARCELERO, seed: 7, sobre: "gorro", expr: "feliz", bD: 90, cD: 0 });
 o(901.0, "oscuro", { t1: 903.8, a: 0.55 });
-o(901.6, "grande", { txt: "DEATH DID NOT SEND", y: 360, s: 110, c: C.oro, t1: 903.8 });
-o(902.3, "grande", { txt: "YOU A BILL", y: 520, s: 150, c: C.oro, t1: 903.8 });
+o(901.6, "grande", { txt: "DEATH DID NOT SEND", x: 960, y: 740, fijo: true, s: 110, c: C.oro, t1: 903.8 });
+o(902.3, "grande", { txt: "YOU A BILL", x: 960, y: 900, fijo: true, s: 150, c: C.oro, t1: 903.8 });
 s(901.6, "boom", -2); s(902.3, "slam", 0);
 // 903.81 CTA: salís con las orejas puestas → suscribite → la próxima: una noche en un castillo
 cam(903.8, 1850, SUELO - 420, 1.2, 1.0);
