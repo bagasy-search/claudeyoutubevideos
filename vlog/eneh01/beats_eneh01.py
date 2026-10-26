@@ -51,7 +51,10 @@ LTX_ALT = {"l01": "w:outside", "l04": "w:sensor", "l08": "w:van", "l09": "w:stai
            "l38": "w:led", "l39": "w:filter", "l41": "w:pump", "l42": "w:pump", "l46": "w:books", "l47": "w:sw", "l53": "w:cigar", "l55": "w:vanside",
            "l56": "w:thermo", "l57": "w:window", "l58": "w:house"}
 _cyc = ["w:doll", "w:wide", "w:outside", "w:house", "w:bench", "w:duct"]
-for j, it in enumerate(json.load(open(f"D:/rtmp/enzo/ltx/{SL}_pedidos.json", encoding="utf8"))):
+# 25-oct v2: tomas LTX de Enzo HACIENDO lo que narra (D:/rtmp/enzo/ltx2) → c_<clip><a|b|c>.mp4, cada una a su frase
+_T2 = json.load(open(f"D:/rtmp/enzo/ltx2/{SL}_tomas.json", encoding="utf8")); _F2 = {x["frase"] for x in _T2}
+for x in _T2: B(x["frase"], "img:" + x["id"], "cut", alt="w:wide")
+for j, it in enumerate(x for x in json.load(open(f"D:/rtmp/enzo/ltx/{SL}_pedidos.json", encoding="utf8")) if x["frase"] not in _F2):
     B(it["frase"], "img:" + it["id"], "cut", alt=LTX_ALT.get(it["id"], _cyc[j % len(_cyc)]))
 
 # ======================= GANCHO (0-60 s) =======================
