@@ -476,7 +476,7 @@ export const P37Educacion: React.FC = () => {
   return (
     <Sala cl={[mira(0, 1300, 560, 1.4), mira(k(156.8), 1100, 560, 2.0, { curva: "inout" }), mira(k(160.5), 1080, 673, 2.3, { curva: "lineal" })]} sp={D9}
       gente={[{ l: MARLON, x: 1050, p: [{ f: 0, v: "brazosCruzados" }, { f: k(157), v: "hablar" }, { f: k(159), v: { hD: 60, cD: 100, hI: 60, cI: 100 } }], c: [{ f: 0, v: "duda" }, { f: k(157), v: "picaro" }], d: 1, habla: [[k(157), k(160.5)]] }, { l: RAFI, x: 1640, sent: 0, p: sentadoPiso, c: "triste", d: -1 }]}
-      hud={<><Dice quien="marlon" t="So we leave him in there…" x={1080} y={200} desde={k(157.2)} tam={62} /><Dice quien="marlon" t="…and we starve politely." x={1120} y={310} desde={k(158.8)} tam={62} /></>} />
+      hud={<><Dice quien="marlon" t="So we leave him in there…" x={1080} y={200} desde={k(157.2)} hasta={k(158.7)} tam={62} /><Dice quien="marlon" t="…and we starve politely." x={1080} y={200} desde={k(158.8)} tam={62} /></>} />
   );
 };
 

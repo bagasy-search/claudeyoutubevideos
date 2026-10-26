@@ -153,7 +153,7 @@ export const Final: React.FC<{ ep: number; titulo: string; fondo: React.ReactNod
   if (lado) {
     // tarjeta en el tercio izquierdo, la escena viva a la derecha; un cursor va a SUBSCRIBE y hace clic
     const cx = interpolate(f, [40, 80], [900, 430], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (t) => 1 - Math.pow(1 - t, 3) });
-    const cy = interpolate(f, [40, 80], [1060, 905], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (t) => 1 - Math.pow(1 - t, 3) });
+    const cy = interpolate(f, [40, 80], [1060, 755], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (t) => 1 - Math.pow(1 - t, 3) });
     const clic = f >= 86;
     const pulso = interpolate(f, [86, 92, 100], [1, 0.9, 1.06], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
     const onda = interpolate(f, [86, 116], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
@@ -161,13 +161,13 @@ export const Final: React.FC<{ ep: number; titulo: string; fondo: React.ReactNod
       <AbsoluteFill>
         {fondo}
         <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(8,6,10,0.78) 0%, rgba(8,6,10,0.6) 38%, rgba(8,6,10,0) 62%)", opacity: u }} />
-        <div style={{ position: "absolute", left: 60, top: 170, width: 700, height: 560, borderRadius: 26, border: `6px solid ${AMARILLO}`, background: "rgba(0,0,0,0.55)", opacity: u, transform: `translateX(${(1 - u) * -80}px)`, boxShadow: "0 0 50px rgba(242,194,48,0.35)" }}>
+        <div style={{ position: "absolute", left: 60, top: 200, width: 700, height: 400, borderRadius: 26, border: `6px solid ${AMARILLO}`, background: "rgba(0,0,0,0.55)", opacity: u, transform: `translateX(${(1 - u) * -80}px)`, boxShadow: "0 0 50px rgba(242,194,48,0.35)" }}>
           <div style={{ position: "absolute", left: 36, top: 28, fontFamily: F_HUD, fontWeight: 600, fontSize: 38, color: AMARILLO, letterSpacing: 3 }}>NEXT · EPISODE {ep}</div>
           <div style={{ position: "absolute", left: 36, right: 36, top: 100, fontFamily: F_MANO, fontWeight: 700, fontSize: 76, lineHeight: 1.02, color: "#f4efe4", textShadow: "0 4px 0 rgba(0,0,0,0.5)" }}>{titulo}</div>
           <div style={{ position: "absolute", right: 36, bottom: 24, fontSize: 80, color: AMARILLO, transform: `translateX(${Math.sin(f / 8) * 8}px)` }}>▶</div>
         </div>
-        <div style={{ position: "absolute", left: 160, top: 800, width: 500, height: 110, borderRadius: 55, background: clic ? "#b0161c" : ROJO, transform: `scale(${pulso})`, opacity: u, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: F_HUD, fontWeight: 800, fontSize: 54, letterSpacing: 4, color: "#fff", boxShadow: "0 8px 0 rgba(0,0,0,0.45)" }}>{clic ? "SUBSCRIBED ✓" : "SUBSCRIBE"}</div>
-        {onda > 0 && onda < 1 && <div style={{ position: "absolute", left: 410 - 160 * onda, top: 855 - 160 * onda, width: 320 * onda, height: 320 * onda, borderRadius: "50%", border: `5px solid rgba(244,239,228,${1 - onda})` }} />}
+        <div style={{ position: "absolute", left: 160, top: 650, width: 500, height: 110, borderRadius: 55, background: clic ? "#b0161c" : ROJO, transform: `scale(${pulso})`, opacity: u, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: F_HUD, fontWeight: 800, fontSize: 54, letterSpacing: 4, color: "#fff", boxShadow: "0 8px 0 rgba(0,0,0,0.45)" }}>{clic ? "SUBSCRIBED ✓" : "SUBSCRIBE"}</div>
+        {onda > 0 && onda < 1 && <div style={{ position: "absolute", left: 410 - 160 * onda, top: 705 - 160 * onda, width: 320 * onda, height: 320 * onda, borderRadius: "50%", border: `5px solid rgba(244,239,228,${1 - onda})` }} />}
         {encima}
         <svg width={70} height={90} viewBox="0 0 70 90" style={{ position: "absolute", left: cx, top: cy, transform: `scale(${clic && f < 96 ? 0.85 : 1})`, transformOrigin: "0 0", opacity: u }}>
           <path d="M4,4 L4,70 L22,54 L34,82 L46,76 L34,50 L58,50 Z" fill="#fff" stroke="#111" strokeWidth={5} strokeLinejoin="round" />

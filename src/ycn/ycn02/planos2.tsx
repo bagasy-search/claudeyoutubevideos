@@ -46,7 +46,7 @@ const Vaho: React.FC<{ x: number; y: number; u: number }> = ({ x, y, u }) => (
 export const P43Explica: React.FC = () => {
   const k = kDe(178.79);
   return (
-    <Maquinas cl={[mira(0, PIN_PUNTOS.banco, 717, 1.5), mira(k(184.9), PIN_PUNTOS.banco + 300, 702, 1.7, { curva: "inout" })]} sp={{ encendidas: [], luz: "prendida" }}
+    <Maquinas cl={[mira(0, PIN_PUNTOS.banco + 80, 717, 1.5), mira(k(184.9), PIN_PUNTOS.banco + 300, 702, 1.7, { curva: "inout" })]} sp={{ encendidas: [], luz: "prendida" }}
       gente={[{ l: CAL, x: PIN_PUNTOS.banco + 100, p: [{ f: 0, v: "hablar" }, { f: 60, v: "señalar" }, { f: 120, v: "hablar" }], c: "determinado", d: 1, habla: [[0, 180]] }, { l: RAFI, x: PIN_PUNTOS.banco - 250, p: "pensar", c: "duda", d: 1 }]}
       hud={<><Dice quien="rafi" t="very slowly. like I was five." x={1100} y={200} desde={k(182.4)} tam={60} /><Lista x={120} y={170} tam={50} lineas={[{ t: "1 · BALL HITS PINS", desde: 20 }, { t: "2 · RAKE SWEEPS", desde: 50 }, { t: "3 · BELT LIFTS", desde: 80 }, { t: "4 · TURRET RESETS", desde: 110, color: AMARILLO }]} /><HudDia dia={9} rayas={9} /></>} />
   );
@@ -282,7 +282,7 @@ export const P58Cuarenta: React.FC = () => {
   return (
     <Sala cl={[mira(0, ZA + 20, 620, 1.6), mira(k(242.2), ZA + 50, 640, 2.1, { curva: "inout" })]} zapatos sp={N9}
       gente={[{ l: NELL, x: ZA + 60, p: [{ f: 0, v: "parado" }, { f: k(241), v: { hD: 80, cD: 10 } }], c: "miedo", d: -1, mD: <Linterna />, luz: RIM.linterna }]}
-      hud={<><Rotulo t="40 ft" x={300} y={200} desde={k(238.5)} flecha="der" color={ROJO} /><HudDia dia={9} rayas={9} hora="3:00 AM" /></>} />
+      hud={<><Pildora texto="40 FT FROM THE KITCHEN" x={620} y={220} desde={k(238.5)} color={ROJO} tam={54} /><HudDia dia={9} rayas={9} hora="3:00 AM" /></>} />
   );
 };
 
@@ -612,7 +612,7 @@ export const P87Conteo: React.FC = () => {
     <AbsoluteFill>
       <EnFreezer cl={[mira(0, 300, 702, 1.7), mira(k(369.8), 620, 702, 1.7, { curva: "inout" }), mira(k(369.9), 900, 663, 2.6), mira(k(372.8), 1000, 658, 2.8, { curva: "lineal" }), mira(k(372.9), 1150, 640, 2.5), mira(k(377.2), 1650, 640, 2.6, { curva: "inout" })]} sp={{ puerta: 1, vacio: 0, delantal: true }}
         gente={[{ l: RAFI, ruta: [{ f: 0, x: 300 }, { f: k(377), x: 1600 }], p: "celular", c: "determinado", d: 1, luz: RIM.linterna }]} />
-      <Lista x={1150} y={140} tam={56} lineas={[{ t: "212  PATTIES", desde: k(367.7) }, { t: "6  CASES OF FRIES", desde: k(369.9) }, { t: "30  PACKS HOT DOGS", desde: k(371.3) }, { t: "40  BUNS (solid)", desde: k(372.9) }, { t: "14  TUBS VANILLA", desde: k(375) }]} />
+      <Lista x={1020} y={120} tam={74} lineas={[{ t: "212  PATTIES", desde: k(367.7) }, { t: "6  CASES OF FRIES", desde: k(369.9) }, { t: "30  PACKS HOT DOGS", desde: k(371.3) }, { t: "40  BUNS (solid)", desde: k(372.9) }, { t: "14  TUBS VANILLA", desde: k(375) }]} />
     </AbsoluteFill>
   );
 };
@@ -622,8 +622,8 @@ export const P88Cuenta: React.FC = () => {
   const k = kDe(377.26);
   return (
     <AbsoluteFill>
-      <Sala cl={[mira(0, 1700, 560, 1.5), mira(k(384.2), 1760, 685, 2.0, { curva: "inout" })]} sp={{ ...N9C, luz: "liga" }}
-        gente={[{ l: DOT, x: 1780, p: [{ f: 0, v: "agarrarAlto" }, { f: 30, v: { hD: 140, cD: 30 } }, { f: 60, v: "agarrarAlto" }], c: "determinado", d: 1, mD: <Tiza /> }, { l: NELL, x: 1560, p: "parado", c: "feliz", d: 1 }]} />
+      <Sala cl={[mira(0, 1480, 717, 1.45), mira(k(384.2), 1520, 712, 1.55, { curva: "inout" })]} sp={{ ...N9C, luz: "liga" }}
+        gente={[{ l: DOT, x: 1780, p: [{ f: 0, v: "agarrarAlto" }, { f: 30, v: { hD: 140, cD: 30 } }, { f: 60, v: "agarrarAlto" }], c: "determinado", d: 1, mD: <Tiza /> }, { l: NELL, x: 1600, p: "parado", c: "feliz", d: 1 }, { l: RAFI, x: 1440, p: "brazosCruzados", c: "duda", d: 1 }, { l: CAL, x: 1920, p: "manosCintura", c: "determinado", d: -1 }, { l: MARLON, x: 2050, p: "brazosCruzados", c: "neutral", d: -1 }]} />
       <Lista x={160} y={150} tam={64} lineas={[{ t: "5 PEOPLE", desde: k(379.7) }, { t: "× 2 MEALS A DAY", desde: k(380.6) }, { t: "= 40 DAYS", desde: k(381.2), color: AMARILLO }, { t: "careful: 50", desde: k(382.6), color: "#9be3a6" }]} />
       <HudDia dia={9} rayas={9} />
     </AbsoluteFill>
@@ -650,11 +650,12 @@ export const P90Llave: React.FC = () => {
       <EnFreezer cl={[mira(0, FP.delantal - 120, 620, 2.2), mira(k(393.3), FP.delantal - 120, 630, 2.5, { curva: "lineal" })]} sp={{ puerta: 1, vacio: 0.3, delantal: true }}
         gente={[{ l: RAFI, x: FP.delantal - 300, p: [{ f: 0, v: "parado" }, { f: k(389.2), v: { hD: 100, cD: 0 } }, { f: k(390.4), v: { hD: 60, cD: 80 } }], c: [{ f: 0, v: "duda" }, { f: k(390.4), v: "sorpresa" }], d: 1, mI: <Linterna />, luz: RIM.linterna }]} />
       <Velo color="#0b0a0c" o={0.35 * u} />
-      <svg width={700} height={420} viewBox="0 0 700 420" style={{ position: "absolute", left: 980, top: 300 - (1 - u) * 60, opacity: u, transform: `rotate(${-8 + Math.sin(f / 14) * 2}deg)` }}>
+      <svg width={700} height={420} viewBox="0 0 700 420" style={{ position: "absolute", left: 980, top: 300 - (1 - u) * 60, opacity: u, overflow: "visible", transform: `rotate(${-8 + Math.sin(f / 14) * 2}deg)` }}>
         <circle cx={150} cy={210} r={70} fill="none" stroke="#c9b27a" strokeWidth={22} />
         <rect x={210} y={196} width={260} height={30} rx={8} fill="#c9b27a" />
         {[0, 1, 2].map((i) => <rect key={i} x={400 + i * 24} y={226} width={16} height={30 + (i % 2) * 14} fill="#c9b27a" />)}
         <path d="M80,210 L20,150" stroke="#8a8a92" strokeWidth={6} />
+        <path d="M150,140 L150,-400" stroke="#d8d0c0" strokeWidth={5} />
         <g transform="translate(-40,40) rotate(-20)"><rect x={0} y={60} width={150} height={86} rx={12} fill="#ff7a1a" /><circle cx={22} cy={103} r={9} fill="#2a2420" /><text x={84} y={118} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={40} fill="#2a1a10">TRASH</text></g>
       </svg>
       <Dice quien="rafi" t="the dumpster key." x={960} y={150} desde={k(390.6)} centro tam={70} />
