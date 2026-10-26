@@ -159,7 +159,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
       {tormenta && <Lluvia t={t} n={140} angulo={22} op={0.6} />}
       <Chip t={t} t0={553.03} t1={556.5} text="LONDON" color={C.rojo} x={960} y={140} centro size={56} />
       <Chip t={t} t0={554.77} t1={557.2} text="ONCE AND FOR ALL" color={C.violeta} x={960} y={930} centro size={56} />
-      {t > 556.9 && t < 559.2 && <Grande t={t} t0={556.97} text="THE BIGGEST FLEET" y={200} size={110} color={C.ambar} />}
+      {t > 556.65 && t < 559.2 && <Grande t={t} t0={556.7} text="THE BIGGEST FLEET" y={200} size={110} color={C.ambar} />}
       <Chip t={t} t0={559.29} t1={562.3} text="9 SHIPS" color={C.teal} tinta={C.noche} x={760} y={140} centro size={60} />
       <Chip t={t} t0={560.33} t1={562.3} text="500-600 PEOPLE" color={C.violeta} x={1160} y={140} centro size={60} />
       <Chip t={t} t0={561.85} t1={565.2} text="CATTLE" color={C.tierra} x={260} y={160} size={44} />

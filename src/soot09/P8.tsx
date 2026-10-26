@@ -167,8 +167,6 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       {t > 819.4 && t < 826.4 && <Tinte color="#3a1020" op={0.35} />}
       {t > 741.2 && t < 743.2 && <Grande t={t} t0={741.3} text="THE TWIST" y={420} size={170} color={C.ambar} />}
       <Chip t={t} t0={743.25} t1={747.3} text="MAY 1610" color={C.lima} tinta={C.noche} x={960} y={140} centro size={60} />
-      <Chip t={t} t0={744.7} t1={747.3} text="DELIVERANCE" color={C.ambar} tinta={C.noche} x={560} y={300} centro size={56} />
-      <Chip t={t} t0={745.0} t1={747.3} text="PATIENCE" color={C.crema} tinta={C.noche} x={1360} y={300} centro size={56} />
       <Chip t={t} t0={744.79} t1={747.3} text="TWO SMALL SHIPS" color={C.teal} tinta={C.noche} x={960} y={930} centro size={54} />
       {t > 748.0 && t < 752.0 && (
         <div style={{ position: "absolute", left: 960, top: 560, width: 1100, height: 640, transform: `translate(-50%,-50%) scale(${ent(t, 748.05) * (1 - prog(t, 751.6, 752.0))}) rotate(1.5deg)`, background: "#cfe0ea", border: "10px solid #2a1408", borderRadius: 28, overflow: "hidden" }}>
@@ -212,7 +210,7 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       {/* De La Warr */}
       {t > 803.6 && t < 812.8 && (
         <div style={{ position: "absolute", left: 70, top: 110, transformOrigin: "0 0", transform: `scale(${1.15 * ent(t, 803.75) * (1 - prog(t, 812.3, 812.8))}) rotate(-2deg)`, width: 340, height: 420, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 18, overflow: "hidden" }}>
-          <Persona x={170} y={390} h={300} t={t} seed={930} ropa={GENT(0)} gola capa="#2a1a50" barba="#3a2416" gorro="sombrero" expr="orgullo" />
+          <Persona x={170} y={350} h={270} t={t} seed={930} ropa={GENT(0)} gola capa="#2a1a50" barba="#3a2416" gorro="sombrero" expr="orgullo" />
           <div style={{ position: "absolute", left: 0, top: 8, width: 340, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 34, color: C.violeta }}>LORD DE LA WARR</div>
           {t > 805.0 && <div style={{ position: "absolute", left: 0, bottom: 10, width: 340, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 34, color: C.rojo }}>NEW GOVERNOR</div>}
         </div>
@@ -258,7 +256,7 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
           <div style={{ display: "flex", flexWrap: "wrap", gap: 14, justifyContent: "center" }}>
             {Array.from({ length: 60 }, (_, i) => {
               const vis = t > 865.5 + i * 0.012;
-              const muere = i >= 12 && t > 870.9 + ((i * 37) % 48) * 0.006;
+              const muere = i >= 12 && t > 870.3 + ((i * 37) % 48) * 0.006;
               return <div key={i} style={{ width: 50, height: 50, borderRadius: 25, background: muere ? "#5a5470" : C.lima, border: "5px solid #1b1240", opacity: vis ? (muere ? 0.45 : 1) : 0, transform: `scale(${vis ? 1 : 0})` }} />;
             })}
           </div>
@@ -280,7 +278,7 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       {t > 880.0 && t < 888.8 && (
         <div style={{ position: "absolute", left: 300, top: 150, width: 1320, padding: "30px 40px 10px", background: "rgba(27,18,64,.82)", borderRadius: 30, boxSizing: "border-box" }}>
           {([["THE WRONG PEOPLE", 880.63, C.violeta], ["THE WRONG PLACE", 881.85, C.lima], ["THE WRONG TREASURE", 883.37, C.oro], ["THE WORST DROUGHT IN 7 CENTURIES", 884.71, C.naranja], ["SOMEONE ELSE'S LAND", 886.9, C.teal]] as [string, number, string][]).map(([s, t0, col], i) => (
-            <div key={s} style={{ display: "flex", alignItems: "center", gap: 24, marginBottom: 22, opacity: t > t0 ? 1 : 0, transform: `translateX(${(1 - ent(t, t0, 0, { damping: 20, stiffness: 200 })) * -200}px)` }}>
+            <div key={s} style={{ display: "flex", alignItems: "center", gap: 24, marginBottom: 22, opacity: t > t0 ? 1 : 0, transform: `translateX(${(1 - prog(t, t0, t0 + 0.3)) * -200}px)` }}>
               <div style={{ width: 84, height: 84, borderRadius: 42, background: col, border: "6px solid #fff", fontFamily, fontWeight: 700, fontSize: 48, color: C.noche, textAlign: "center", lineHeight: "72px" }}>{i + 1}</div>
               <div style={{ fontFamily, fontWeight: 700, fontSize: 58, whiteSpace: "nowrap", color: "#fff", WebkitTextStroke: "10px #1b1240", paintOrder: "stroke fill" }}>{s}</div>
             </div>

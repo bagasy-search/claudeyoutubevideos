@@ -121,7 +121,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={63.04} t1={66.1} text="INVESTORS" color={C.violeta} x={960} y={930} centro size={58} />
       <Chip t={t} t0={66.44} t1={69.0} text="ROYAL CHARTER · KING JAMES" color={C.oro} tinta={C.noche} x={960} y={930} centro size={56} />
       <Chip t={t} t0={68.72} t1={70.2} text="LOOKING FOR MEN" color={C.rojo} x={960} y={140} centro size={60} />
-      {t > 70.1 && t < 71.8 && <Grande t={t} t0={70.56} text="IRRESISTIBLE" x={960} y={130} size={100} color={C.ambar} />}
+      {t > 70.1 && t < 71.8 && <Grande t={t} t0={70.56} text="IRRESISTIBLE" x={960} y={190} size={100} color={C.ambar} />}
       {t > 74.0 && t < 77.9 && <div style={{ position: "absolute", left: 0, top: 0 }}><Particulas t={t} tipo="destellos" n={26} seed={4} /></div>}
       <Chip t={t} t0={76.68} t1={77.9} text="MEXICO & PERU" color={C.teal} tinta={C.noche} x={250} y={880} size={54} />
       <Chip t={t} t0={77.3} t1={77.9} text="PERU" color={C.teal} tinta={C.noche} x={1450} y={880} size={46} />

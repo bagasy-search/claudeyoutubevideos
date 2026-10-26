@@ -131,7 +131,7 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
           </>
         )}
         {/* peces que saltan en el río, al lado de los que pasan hambre */}
-        {t > 20.6 && t < 23.4 && [0, 1, 2, 3].map((i) => { const u = ((t - 20.7 - i * 0.55) / 1.1); if (u < 0 || u > 1) return null; const x = 22560 + i * 130 + u * 160; return <Pez key={`s${i}`} t={t} x={x} y={AGUA + 10 - Math.sin(u * Math.PI) * 230} s={0.9} flip={i % 2 === 1} seed={i + 30} />; })}
+        {t > 20.6 && t < 23.4 && [0, 1, 2, 3].map((i) => { const u = ((t - 20.7 - i * 0.55) / 1.1); if (u < 0 || u > 1) return null; const x = 22560 + i * 130 + u * 160; return <Pez key={`s${i}`} t={t} x={x} y={AGUA + 30 - Math.sin(u * Math.PI) * 130} s={0.9} flip={i % 2 === 1} seed={i + 30} />; })}
         {/* los 7 carteles: aparecen cuando la cámara pasa en el vuelo hacia adelante */}
         {t > 35.3 && t < 37.0 && POSTES.map(([n, x, txt]) => <En key={n} x={x} w={900}><Poste t={t} t0={tPaso(x)} x={x} y={x > 5600 && x < 22800 ? AGUA + 20 : SUELO + 10} n={n} titulo={txt} s={1.7} /></En>)}
         {/* LONDRES 1606: vos sano, en el muelle, al lado del Susan Constant */}
@@ -170,7 +170,7 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
         );
       })()}
       <Chip t={t} t0={19.16} t1={20.2} text="NOT IN BATTLE" color={C.violeta} x={320} y={600} centro size={60} />
-      {t > 20.6 && t < 21.4 && <Grande t={t} t0={20.76} text="HUNGER" y={240} size={170} color={C.ambar} />}
+      {t > 20.6 && t < 21.4 && <Grande t={t} t0={20.76} text="HUNGER" y={170} size={150} color={C.ambar} />}
       <Chip t={t} t0={22.28} t1={23.6} text="A RIVER FULL OF FISH" color={C.teal} tinta={C.noche} x={960} y={160} centro size={68} />
       {t > 23.9 && t < 27.6 && <Grande t={t} t0={24.0} text="JAMESTOWN" y={200} size={190} />}
       <Chip t={t} t0={25.06} t1={27.6} text="1st PERMANENT ENGLISH COLONY" color={C.rojo} x={960} y={930} centro size={58} />

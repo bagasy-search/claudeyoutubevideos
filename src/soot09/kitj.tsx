@@ -171,7 +171,7 @@ export const Cipres: React.FC<Pos & { anillos?: boolean }> = ({ anillos, ...p })
 );
 export const Pantano: React.FC<{ t: number; x: number; y: number; w: number }> = ({ t, x, y, w }) => (
   <svg style={{ position: "absolute", left: x, top: y, overflow: "visible" }} width={w} height={200}>
-    <path d={`M 0 40 Q ${w * 0.25} 0 ${w * 0.5} 30 Q ${w * 0.75} 60 ${w} 30 L ${w} 200 L 0 200 Z`} fill="#4a6a3a" />
+    <path d={`M 0 50 Q ${w * 0.25} 0 ${w * 0.5} 30 Q ${w * 0.75} 60 ${w} 40 Q ${w * 1.02} 90 ${w * 0.85} 96 Q ${w * 0.5} 110 ${w * 0.15} 96 Q ${-w * 0.02} 90 0 50 Z`} fill="#4a6a3a" /><ellipse cx={w * 0.35} cy={70} rx={w * 0.12} ry={10} fill="#5a7a8a" opacity={0.8} /><ellipse cx={w * 0.68} cy={66} rx={w * 0.09} ry={8} fill="#5a7a8a" opacity={0.8} />
     {Array.from({ length: Math.floor(w / 60) }, (_, i) => <path key={i} d={`M ${i * 60 + 20} 50 Q ${i * 60 + 18 + Math.sin(t * 2 + i) * 6} 10 ${i * 60 + 30} -20`} stroke="#6a8a3a" strokeWidth={6} fill="none" />)}
     {Array.from({ length: 6 }, (_, i) => { const k = (t * 0.6 + i / 6) % 1; return <circle key={i} cx={(i * 211) % w} cy={80 - k * 30} r={6 + k * 6} fill="none" stroke="#a8c080" strokeWidth={3} opacity={1 - k} />; })}
   </svg>

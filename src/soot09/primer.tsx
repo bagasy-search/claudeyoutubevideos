@@ -29,7 +29,6 @@ const E_: E[] = [
   [278.6, 284.0, "D", { seed: 1105, ropa: GENT(1), gola: true, gorro: "pluma", expr: "triste", flaco: 0.3, manoD: pluma }],
   [284.3, 290.6, "I", { seed: 1106, ropa: COLONO(3), expr: "miedo", flaco: 0.45 }],
   [291.0, 300.4, "I", { seed: 1107, ropa: CIENT, expr: "sorpresa", habla: true, bD: 80, cD: 60, manoD: <g><rect x={-6} y={-20} width={12} height={150} fill="#8a8a94" /><rect x={-40} y={-30} width={80} height={16} rx={6} fill="#6a4a2a" /></g> }],
-  [308.5, 314.3, "D", { seed: 1142, ropa: CIENT, expr: "sorpresa", habla: true, bD: 150, cD: 30 }],
   [314.6, 319.1, "I", { seed: 1143, ropa: COLONO(3), expr: "triste", flaco: 0.45 }],
   [345.6, 350.4, "I", { seed: 1108, ropa: COLONO(0), expr: "miedo" }],
   [350.6, 355.0, "D", { seed: 1109, ropa: COLONO(2), expr: "triste", manoD: balde }],

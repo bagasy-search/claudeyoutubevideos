@@ -106,7 +106,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
         {t > 695.5 && t < 703.0 && (
           <>
             {[0, 1, 2].map((i) => { const x = interpolate(t, [695.8 + i * 0.4, 699.8 + i * 0.4], [FX + 400, 27200 + i * 120], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }); return <En key={i} x={x} w={200}><Persona x={x} y={SUELO} h={220} t={t} seed={790 + i} ropa={COLONO(i)} camina={1.2} flaco={0.35} expr="triste" /></En>; })}
-            {t > 699.4 && [0, 1].map((i) => { const x = 25800 + i * 260; return <En key={i} x={x} w={200}><div style={{ position: "absolute", left: 0, top: 0, opacity: 1 - prog(t, 701.4 + i * 0.3, 702.2 + i * 0.3) }}><Persona x={x} y={SUELO} h={210} t={t} seed={795 + i} ropa={COLONO(i + 2)} inclina={30} bD={160 + Math.sin(t * 8 + i) * 20} flaco={0.35} expr="triste" aparece={699.6 + i * 0.2} manoD={<g><rect x={-5} y={-20} width={10} height={130} fill="#6a4a2a" /><path d="M -22 104 L 22 104 L 16 150 Q 0 162 -16 150 Z" fill="#7a7a84" /></g>} /><svg style={{ position: "absolute", left: x + 30, top: SUELO - 30, overflow: "visible" }} width={10} height={10}><ellipse cx={60} cy={30} rx={90} ry={26} fill="#5a3a1a" />{[0, 1, 2].map((j) => <path key={j} d={`M ${20 + j * 40} 20 q 10 ${-30 - j * 6} 30 -${40 * prog(t, 700.2 + j * 0.4 + i * 0.2, 700.8 + j * 0.4 + i * 0.2)}`} stroke="#b08a5a" strokeWidth={9} fill="none" strokeLinecap="round" />)}</svg></div></En>; })}
+            {t > 699.4 && [0, 1].map((i) => { const x = 25800 + i * 260; return <En key={i} x={x} w={200}><div style={{ position: "absolute", left: 0, top: 0, opacity: 1 - prog(t, 701.4 + i * 0.3, 702.2 + i * 0.3) }}><Persona x={x} y={SUELO} h={210} t={t} seed={795 + i} ropa={COLONO(i + 2)} inclina={14} bD={160 + Math.sin(t * 8 + i) * 20} flaco={0.35} expr="triste" aparece={699.6 + i * 0.2} manoD={<g><rect x={-5} y={-20} width={10} height={130} fill="#6a4a2a" /><path d="M -22 104 L 22 104 L 16 150 Q 0 162 -16 150 Z" fill="#7a7a84" /></g>} /><svg style={{ position: "absolute", left: x + 30, top: SUELO - 30, overflow: "visible" }} width={10} height={10}><ellipse cx={60} cy={30} rx={90} ry={26} fill="#5a3a1a" />{[0, 1, 2].map((j) => <path key={j} d={`M ${20 + j * 40} 20 q 10 ${-30 - j * 6} 30 -${40 * prog(t, 700.2 + j * 0.4 + i * 0.2, 700.8 + j * 0.4 + i * 0.2)}`} stroke="#b08a5a" strokeWidth={9} fill="none" strokeLinecap="round" />)}</svg></div></En>; })}
           </>
         )}
         {t > 702.9 && t < 708.4 && (
@@ -175,7 +175,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={661.95} t1={663.3} text="MANY NEVER COME BACK" color={C.violeta} x={960} y={930} centro size={52} />
       <Chip t={t} t0={663.43} t1={665.8} text="BEHIND THE WALLS" color={C.tierra} x={960} y={140} centro size={56} />
       <Chip t={t} t0={667.47} t1={669.8} text="GO OUT FOR FOOD?" color="#b0400a" x={960} y={140} centro size={66} />
-      {t > 670.6 && t < 673.9 && <Grande t={t} t0={670.97} text="UNDER SIEGE" y={200} size={130} color={C.rojo} />}
+      {t > 670.6 && t < 673.9 && <Grande t={t} t0={670.65} text="UNDER SIEGE" y={200} size={130} color={C.rojo} />}
       <Chip t={t} t0={672.77} t1={673.9} text="ALMOST NOTHING INSIDE" color="#6a6a7a" x={960} y={930} centro size={52} />
       {t > 674 && t < 695.6 && <Menu t={t} />}
       <Chip t={t} t0={684.11} t1={687.5} text="BOILED" color={C.naranja} x={300} y={140} size={56} />

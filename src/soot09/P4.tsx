@@ -83,7 +83,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
             <En key={i} x={xx} w={250}>
               <Persona x={xx} y={SUELO} h={250} t={t} seed={400 + i} ropa={GENT(i)} gola gorro={perf ? "pluma" : i % 2 ? "copa" : "sombrero"} camina={t < 359.6 + i * 0.25 ? 1.5 : 0} expr={perf && t > 366.3 ? "orgullo" : t > 368.5 ? "sorpresa" : "neutro"}
                 manoD={perf ? <g transform="scale(0.35)"><Frasco x={0} y={0} /></g> : undefined} bD={perf && t > 366 ? 70 : 0} />
-              {t > t0 && (i === 0 || NUEVOS[i - 1][1] !== of) && <div style={{ position: "absolute", left: x - 150, top: SUELO - ([0, 0, 1, 0, 0, 1][i] ? 450 : 350), width: 300, textAlign: "center", transform: `scale(${ent(t, t0)})`, fontFamily, fontWeight: 700, fontSize: 48, color: "#fff", background: perf ? C.rosa : C.oro, borderRadius: 10, padding: "2px 0" }}>{of}</div>}
+              {t > t0 && (i === 0 || NUEVOS[i - 1][1] !== of) && <div style={{ position: "absolute", left: x - 150, top: SUELO - ([0, 0, 1, 0, 0, 1][i] ? 500 : 400), width: 300, textAlign: "center", transform: `scale(${ent(t, t0)})`, fontFamily, fontWeight: 700, fontSize: 48, color: "#fff", background: perf ? C.rosa : C.oro, borderRadius: 10, padding: "2px 0" }}>{of}</div>}
               {perf && t > 366.5 && <Olor t={t} x={x + 60} y={SUELO - 230} color="#ff8fc8" />}
             </En>
           );
@@ -170,7 +170,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={353.88} t1={355.2} text="THE MINISTER'S BOOKS" color="#5a3418" x={320} y={500} size={46} />
       <Chip t={t} t0={355.88} t1={357.0} text="IN THE MIDDLE OF WINTER" color="#6a8ab8" x={960} y={930} centro size={54} />
       <Chip t={t} t0={357.82} t1={361.9} text="WHO CAME ON THE SHIP?" color={C.violeta} x={960} y={140} centro size={56} />
-      {t > 366.3 && t < 368.4 && <Grande t={t} t0={366.32} text="YES." y={200} size={140} color={C.ambar} />}
+      {t > 366.3 && t < 368.4 && <Grande t={t} t0={366.32} text="YES." y={900} size={140} color={C.ambar} />}
       <Chip t={t} t0={368.56} t1={371.3} text="STARVING SWAMP" color="#6a7a2a" x={960} y={930} centro size={58} />
       <Chip t={t} t0={370.04} t1={371.3} text="DYSENTERY" color="#7a5a2a" x={960} y={140} centro size={58} />
       {t > 371.4 && t < 372.5 && <Grande t={t} t0={371.96} text="PERFUME?!" y={930} size={120} color={C.rosa} />}

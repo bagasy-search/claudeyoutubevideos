@@ -126,7 +126,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
           </svg>
         </En>
         {/* juntando frutillas en la playa */}
-        {t > 178.6 && t < 182.0 && [[22920, 1], [23200, 0], [23420, 1]].map(([x, f], i) => <En key={i} x={x} w={260}><Persona x={x} y={SUELO} h={290} t={t} seed={190 + i} ropa={COLONO(i + 1)} inclina={f ? 24 : -24} flip={!!f} expr="feliz" mira={f ? 0.5 : -0.5} miraY={0.6} bD={170 + Math.sin(t * 9 + i) * 20} cD={50} aparece={178.7 + i * 0.1} manoD={<g><path d="M -14 -12 Q 0 -18 14 -12 Q 12 12 0 20 Q -12 12 -14 -12 Z" fill="#e8283a" /><path d="M -10 -14 L 0 -22 L 10 -14" stroke="#3a8a2a" strokeWidth={6} fill="none" /></g>} /></En>)}
+        {t > 178.6 && t < 182.0 && [[22920, 1], [23200, 0], [23420, 1]].map(([x, f], i) => <En key={i} x={x} w={260}><Persona x={x} y={SUELO} h={290} t={t} seed={190 + i} ropa={COLONO(i + 1)} inclina={f ? 8 : -8} flip={!!f} expr="feliz" mira={f ? 0.5 : -0.5} miraY={0.6} bD={170 + Math.sin(t * 9 + i) * 20} cD={50} aparece={178.7 + i * 0.1} manoD={<g><path d="M -14 -12 Q 0 -18 14 -12 Q 12 12 0 20 Q -12 12 -14 -12 Z" fill="#e8283a" /><path d="M -10 -14 L 0 -22 L 10 -14" stroke="#3a8a2a" strokeWidth={6} fill="none" /></g>} /></En>)}
         {/* cubierta: la caja sellada, el consejo y Smith */}
         {enCubierta && (
           <>
