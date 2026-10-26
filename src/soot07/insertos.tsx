@@ -63,7 +63,7 @@ const Doc: React.FC<{ t: number; i: Extract<Ins, { v: "doc" }> }> = ({ t, i }) =
         return <g key={`r${k}`} opacity={e * 0.5}>{[0, 1].map((f) => <rect key={f} x={-370} y={y - 34 + f * 40} width={(f ? 420 + ((k * 97) % 260) : 700 - ((k * 61) % 180)) * e} height={14} rx={7} fill={i.bronce ? "#5a3410" : "#9a7a4a"} />)}</g>;
       })}
       {abre > 0.9 && (
-        <g transform={`translate(-300 ${H / 2 - 110}) scale(${ent(t, i.t + 1.2, 0, { damping: 10, stiffness: 200 })})`}>
+        <g transform={`translate(-330 ${H / 2 + 70}) scale(${0.8 * ent(t, i.t + 1.2, 0, { damping: 10, stiffness: 200 })})`}>
           <path d="M 0 -70 C 40 -72 72 -40 70 0 C 74 44 38 72 0 70 C -42 74 -72 40 -70 0 C -74 -40 -40 -70 0 -70 Z" fill="#b0202e" stroke={K} strokeWidth={6} />
           <circle r={46} fill="none" stroke="#7a1018" strokeWidth={5} />
           <text y={14} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={34} fill="#ffd9a0">SPQR</text>
@@ -360,15 +360,24 @@ const Uno: React.FC<{ i: Ins; t: number; px: number; py: number; sopa?: boolean 
   const lt = t - i.t;
   const ps = pose(i.pose, lt);
   const tituloE = ent(t, i.t + 0.25, 0, { damping: 11, stiffness: 190 });
-  const NX = i.nx ?? 420;
+  // OJO v3: rompe la plantilla: uno sí y uno no, el nene a la derecha y el componente corrido a la izquierda
+  const espejo = i.v !== "cta" && !i.otro && i.nx === undefined && INS.indexOf(i) % 2 === 1;
+  const NX = i.nx ?? (espejo ? 1500 : 420);
+  const DX = espejo ? -560 : 0;
   return (
     <div style={{ position: "absolute", inset: 0, clipPath: `circle(${R}px at ${px}px ${py}px)` }}>
       <Fondo t={t} col={c1} col2={c2} />
       {/* el nene grande, actuando */}
-      <Persona x={NX + (i.pose === "corre" ? Math.sin(lt * 1.3) * 40 : 0)} y={1010} h={600} t={t} seed={1} ropa={LUCIUS} {...ps} />
-      {sopa && <svg style={{ position: "absolute", left: NX - 150, top: 1010 - 600, overflow: "visible" }} width={300} height={600} viewBox="-150 -560 300 560">{[[-30, -280, 30], [36, -230, 24], [-6, -340, 20]].map(([x, y, r], k) => <ellipse key={k} cx={x} cy={y} rx={r} ry={r * 0.8} fill="#c7b23a" opacity={0.9} />)}</svg>}
+      <Persona x={NX + (i.pose === "corre" ? Math.sin(lt * 1.3) * 40 : 0)} y={1010} h={600} t={t} seed={1} ropa={LUCIUS} {...ps} flip={espejo || undefined} />
+      {sopa && <svg style={{ position: "absolute", left: NX - 150, top: 1010 - 600, overflow: "visible" }} width={300} height={600} viewBox="-150 -560 300 560"><g transform="scale(2.074)">
+        <path d="M -40 -262 Q -30 -282 0 -284 Q 30 -282 40 -262 Q 30 -256 22 -262 Q 10 -254 0 -262 Q -12 -254 -24 -262 Q -32 -256 -40 -262 Z" fill="#d9a83a" stroke="#8a5a18" strokeWidth={3} />
+        <path d={`M -44 -258 Q -50 -230 -46 ${-206 + ((t * 20) % 10)}`} stroke="#d9a83a" strokeWidth={8} strokeLinecap="round" fill="none" />
+        <path d={`M 44 -256 Q 50 -232 46 ${-212 + ((t * 24) % 10)}`} stroke="#d9a83a" strokeWidth={8} strokeLinecap="round" fill="none" />
+        <path d="M 12 -282 l 14 -8 l 6 10 l -14 6 Z" fill="#4fa85a" /><path d="M -22 -280 l 10 -10 l 8 8 l -12 8 Z" fill="#3f8f4a" />
+        <path d="M -30 -150 Q -10 -158 6 -146 L 4 -96 Q 0 -86 -4 -96 L -6 -130 Q -20 -124 -24 -132 Z" fill="#d9a83a" stroke="#8a5a18" strokeWidth={3} opacity={0.85} />
+      </g></svg>}
       {i.otro && <Persona x={i.otro.x} y={1010} h={i.otro.h ?? 520} t={t} seed={i.otro.seed ?? 400} ropa={i.otro.ropa ?? CIVIL(1)} {...pose(i.otro.pose, lt)} flip={i.otro.flip} />}
-      <svg style={{ position: "absolute", inset: 0, overflow: "visible" }} width={1920} height={1080}>
+      <svg style={{ position: "absolute", inset: 0, overflow: "visible" }} width={1920} height={1080}><g transform={`translate(${DX} 0)`}>
         {i.v === "doc" && <Doc t={t} i={i} />}
         {i.v === "vs" && <Vs t={t} i={i} />}
         {i.v === "barras" && <Barras t={t} i={i} />}
@@ -378,10 +387,10 @@ const Uno: React.FC<{ i: Ins; t: number; px: number; py: number; sopa?: boolean 
         {i.v === "retrato" && <Retrato t={t} i={i} parte="fondo" />}
         {i.v === "linea" && <Linea t={t} i={i} />}
         {i.v === "cta" && <Cta t={t} />}
-      </svg>
-      {i.v === "retrato" && <RetratoCara t={t} i={i} />}
+      </g></svg>
+      {i.v === "retrato" && <div style={{ position: "absolute", inset: 0, transform: `translateX(${DX}px)` }}><RetratoCara t={t} i={i} /></div>}
       <svg style={{ position: "absolute", inset: 0, overflow: "visible" }} width={1920} height={1080}>
-        {i.v === "retrato" && <Retrato t={t} i={i} parte="frente" />}
+        {i.v === "retrato" && <g transform={`translate(${DX} 0)`}><Retrato t={t} i={i} parte="frente" /></g>}
         <g transform={`translate(960 118) scale(${tituloE})`}>
           <Tx x={0} y={0} s={i.tamTitulo ?? 92} col="#fff">{i.titulo}</Tx>
         </g>
