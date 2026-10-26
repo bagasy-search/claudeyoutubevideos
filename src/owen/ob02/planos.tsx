@@ -268,7 +268,7 @@ export const P16MedioVida: React.FC = () => { const k = kDe(123.14); return <Abs
 export const P17Abernathy: React.FC = () => {
   const k = kDe(132.57);
   const ab: Pas = { look: ABERNATHY, seed: 2, aparece: 0, ruta: [{ f: 0, x: BUS_PUNTOS.puertaF + 40, y: BUS_PISO }, { f: k(135.5), x: BUS_PUNTOS.validador + 40, y: BUS_PISO }, { f: k(137.5), x: ASIENTO_X(3), y: BUS_PISO }], dir: [{ f: 0, v: 1 }, { f: k(137.5), v: -1 }], sentado: k(137.7), caras: [{ f: 0, v: "feliz" }], enManoD: <Banana />, enManoI: <Bolsa />, habla: [[k(142.9), k(146.6)]], poses: [{ f: 0, v: "parado" }, { f: k(134.0), v: "saludar" }, { f: k(135.2), v: "parado" }, { f: k(137.7), v: "sentado" }, { f: k(139.5), v: { ...SIT, hD: 60, cD: 130 } }, { f: k(141.0), v: "sentado" }, { f: k(142.9), v: { ...SIT, hD: 120, cD: 60 } }, { f: k(144.4), v: { ...SIT, hD: 90, cD: 20 } }, { f: k(146.0), v: "sentado" }] };
-  const cl = [mira(0, 640, 660, 1.85), mira(k(136.0), 860, 660, 1.95, { curva: "inout" }), mira(k(142.8), 760, 650, 1.8, { curva: "inout" })];
+  const cl = [mira(0, BUS_PUNTOS.puertaF - 120, 660, 2.0), mira(k(136.0), BUS_PUNTOS.validador - 120, 660, 2.05, { curva: "inout" }), mira(k(138.0), ASIENTO_X(3) - 170, 650, 2.15, { curva: "inout" })];
   return (
     <EnBus cl={cl} hora="manana" min={380} avance={() => 6000} puertaF={() => 1} paradas={[{ a: 6000, num: 4 }]} pas={[ab]} owen={{ caras: [{ f: 0, v: "feliz" }, { f: k(142.9), v: "risa" }], giros: [{ f: 0, v: 0.6 }], miradas: [{ f: 0, v: { x: 1, y: 0 } }], habla: [[k(134.0), k(135.4)]], manos: "I", poses: [{ f: 0, v: "sentado" }, { f: k(134.0), v: { hD: 150, cD: 30 } }, { f: k(135.4), v: "sentado" }] }}
       hud={<>
@@ -366,7 +366,7 @@ export const P21Caida: React.FC = () => {
   return (
     <EnBus cl={cl} hora="tarde" min={(f) => 840 + Math.round(f / 30)} avance={(f) => 12000 + f * 10} pas={gente.map((g) => g[0])} owen={{ caras: [{ f: 0, v: "cansado" }, { f: k(189.8), v: "duda" }], miradas: [{ f: 0, v: { x: 0.4, y: -0.6 } }] }}
       hud={<>
-        {gente.map(([p, a, b], i) => i > 0 && <Bat key={i} cl={cl} x={p.ruta[0].x} y={(p.sentado !== undefined ? SY : PY) - (i % 2) * 130} pct={caida(a, b)} desde={k(179.0) + i * 3} tam={1.3} alerta={false} />)}
+        {gente.map(([p, a, b], i) => i === 1 && <Bat key={i} cl={cl} x={p.ruta[0].x + 170} y={(p.sentado !== undefined ? SY : PY) + 60} pct={caida(a, b)} desde={k(179.0) + i * 3} tam={1.3} alerta={false} />)}
         <Bat cl={cl} x={OX} y={OY} pct={caida(30, 22)} desde={0} />
         <Pildora texto="2 PM · EVERYONE DROPS" x={960} y={950} desde={k(180.8)} hasta={k(189.6)} color="#ffd27a" tam={70} />
         <Mano texto="is the power broken?" x={1250} y={170} desde={k(189.9)} color="#f4efe4" tam={80} />
@@ -433,9 +433,9 @@ export const P27Cien: React.FC = () => {
         hud={<>
           <Bat cl={cl} x={ASIENTO_X(4)} y={SY} pct={100} desde={k(240.0)} tam={1.2} />
           <Pildora texto="IT DOESN'T MOVE." x={960} y={950} desde={k(240.3)} hasta={k(248.8)} color="#f4efe4" tam={72} />
-          <Pildora tam={78} texto="not when he sits" x={1400} y={220} desde={k(243.2)} hasta={k(244.3)} color="#ffd27a" />
-          <Pildora tam={78} texto="not when the bus brakes" x={1400} y={220} desde={k(244.3)} hasta={k(245.5)} color="#ffd27a" />
-          <Pildora tam={78} texto="not when he yawns" x={1400} y={220} desde={k(245.5)} hasta={k(246.6)} color="#ffd27a" />
+          <Pildora tam={66} texto="not when he sits" x={440} y={430} desde={k(243.2)} hasta={k(244.3)} color="#ffd27a" />
+          <Pildora tam={66} texto="not when the bus brakes" x={440} y={430} desde={k(244.3)} hasta={k(245.5)} color="#ffd27a" />
+          <Pildora tam={66} texto="not when he yawns" x={440} y={430} desde={k(245.5)} hasta={k(246.6)} color="#ffd27a" />
           <Pildora texto="OFF AT STOP 38 · LIKE LAST TIME" x={960} y={950} desde={k(248.9)} color="#f4efe4" tam={66} />
           <HudOwen min={880} part={PART} />
         </>} />
@@ -557,7 +557,7 @@ export const P33Nasa: React.FC = () => { const k = kDe(289.33); return <Absolute
 export const P34Despacio: React.FC = () => {
   const f = useF();
   const bx = (ff: number) => 900 + ff * 5;
-  const cl = [mira(0, bx(0) + 460, ASH_CARRIL - 360, 1.6), mira(130, bx(130) + 640, ASH_CARRIL - 380, 1.95, { curva: "inout" })];
+  const cl = [mira(0, bx(0) + 560, ASH_CARRIL - 340, 1.85), mira(130, bx(130) + 760, ASH_CARRIL - 360, 2.25, { curva: "inout" })];
   return (
     <Escena Set={Ashland} pal={PAL} claves={cl} seed={34} setProps={{ hora: "tarde", centro: (ff: number) => bx(ff) + 500 }}
       medio={<Bus9 x={bx(f)} y={ASH_CARRIL} esc={0.85} dir={1} hora="tarde" rueda={f * 4} />}
@@ -693,7 +693,7 @@ export const P39Gancho: React.FC = () => {
         asiento={[{ f: 0, v: 110 }, { f: 58, v: undefined }]} caras={[{ f: 0, v: "sorpresa" }, { f: 132, v: "duda" }, { f: 262, v: "sorpresa" }, { f: k(368.9), v: "miedo" }]} miradas={[{ f: 0, v: { x: 0, y: 0 } }, { f: 132, v: { x: -1, y: -0.3 } }, { f: 262, v: { x: 1, y: 0.4 } }]} />}
       hud={<>
         <Calendario texto="NEXT WEEK" x={90} y={110} desde={-12} hasta={k(365.9)} tam={80} />
-        <Bat cl={cl} x={ox} y={A - 268} pct={100} desde={k(360.5)} tam={1.3} />
+        <Bat cl={cl} x={(ff) => ox(ff) + 230} y={A - 230} pct={100} desde={k(360.5)} tam={1.3} />
         <Mano texto="no yawning. no fog. no sleep." x={1300} y={180} desde={k(362.2)} hasta={k(369.9)} color="#f4efe4" tam={70} />
         {f >= k(366.0) && <Calendario texto={`NIGHT ${noche} · ${reloj} AM`} x={90} y={110} desde={k(366.0)} tam={64} />}
         <Mano texto="why we sleep at all" x={1300} y={180} desde={k(370.0) - 3} color={ROJO_OWEN} tam={80} vel={8} />
@@ -718,7 +718,7 @@ export const P40Cta: React.FC = () => {
         <div style={{ position: "absolute", left: 960 + (ASIENTO_X(1) - 560) * 1.5, top: 540 + (BUS_PISO - 200 - 640) * 1.5, transform: "translate(-50%,0)", fontFamily: F_HUD, fontWeight: 800, fontSize: 84, color: "#ffd27a", textShadow: "0 3px 10px rgba(0,0,0,0.7)" }}>YOU?</div>
         <Pildora texto="What's YOUR battery at right now?" x={960} y={960} desde={k(373.2)} hasta={k(377.0)} color={VERDE} tam={68} />
         <Pildora texto="TELL US IN THE COMMENTS · WEEK 3 IS NEXT" x={960} y={960} desde={k(377.1)} color="#f4efe4" tam={58} />
-        {f > k(378.5) && <div style={{ position: "absolute", left: 1690, top: 150, transform: `translateX(-50%) scale(${Math.min(1, (f - k(378.5)) / 6) * (1 + Math.max(0, Math.sin((f - k(378.5)) / 6)) * 0.05)})`, display: "flex", alignItems: "center", gap: 18, background: "#e22a2a", color: "#fff", fontFamily: F_HUD, fontWeight: 800, fontSize: 66, padding: "16px 44px", borderRadius: 18, boxShadow: "0 10px 30px rgba(0,0,0,0.4)" }}>SUBSCRIBE <span style={{ display: "inline-block", fontSize: 46, transform: `rotate(${Math.sin(f / 3) * 14}deg)` }}>🔔</span></div>}
+        {f > k(378.5) && <div style={{ position: "absolute", left: 1660, top: 820, transform: `translateX(-50%) scale(${Math.min(1, (f - k(378.5)) / 6) * (1 + Math.max(0, Math.sin((f - k(378.5)) / 6)) * 0.05)})`, display: "flex", alignItems: "center", gap: 18, background: "#e22a2a", color: "#fff", fontFamily: F_HUD, fontWeight: 800, fontSize: 66, padding: "16px 44px", borderRadius: 18, boxShadow: "0 10px 30px rgba(0,0,0,0.4)" }}>SUBSCRIBE <span style={{ display: "inline-block", fontSize: 46, transform: `rotate(${Math.sin(f / 3) * 14}deg)` }}>🔔</span></div>}
       </>} />
   );
 };

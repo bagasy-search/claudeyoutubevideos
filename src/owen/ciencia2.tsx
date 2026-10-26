@@ -155,7 +155,7 @@ export const MedioVida: React.FC<{ d50?: number; d25?: number }> = ({ d50 = 40, 
       <polyline points={pts} fill="none" stroke="#c98a5a" strokeWidth={12} strokeLinecap="round" />
       {(() => { const p = Math.pow(0.5, (hasta - 6) / 5); return <g>
         <circle cx={X(hasta)} cy={Y(p)} r={22} fill="#fff" stroke="#c98a5a" strokeWidth={8} />
-        <g transform="translate(1560,400) scale(1.6)">
+        <g transform="translate(1580,330) scale(1.3)">
           <path d="M-70,-90 h140 l-14,180 h-112 Z" fill="#f4efe4" />
           <path d={`M${-70 + 14 * (1 - p)},${90 - 180 * p} h${140 - 28 * (1 - p)} l${-14 * p},${180 * p} h${-112 - 0 * p} Z`} fill="#7a4a2a" />
           <path d="M70,-50 q50,0 50,45 q0,45 -50,45" fill="none" stroke="#f4efe4" strokeWidth={14} />
