@@ -217,10 +217,11 @@ export const P47Nombre: React.FC = () => {
 export const P48Cal: React.FC = () => {
   const k = kDe(277.85);
   return (
-    <Sala cl={[mira(0, CH - 1750, 700, 1.5), mira(k(282.9), CH - 120, 700, 1.6, { curva: "lineal" })]} sp={{ luz: "alerta" }}
+    <Sala cl={[mira(0, CH - 1820, 695, 1.8), mira(k(282.9), CH - 60, 695, 1.8, { curva: "lineal" })]} sp={{ luz: "alerta" }}
       gente={[
         { l: CAL, ruta: [{ f: 0, x: CH - 1900 }, { f: k(282.9), x: CH - 60, curva: "lineal" }], correr: 1, c: "determinado", d: 1, mI: <Linterna prendida={false} /> },
-        { l: LIGA, ruta: [{ f: 0, x: 3600 }, { f: k(282.9), x: 2600 }], correr: 1, c: "miedo", d: -1 },
+        { l: zombi(LIGA2), ruta: [{ f: 0, x: CH + 900 }, { f: k(282.9), x: CH + 380 }], p: "zombi", c: "zombi", d: -1 },
+        { l: zombi(PINPAL), ruta: [{ f: 0, x: CH + 1150 }, { f: k(282.9), x: CH + 600 }], p: "zombi", c: "zombi", d: -1 },
       ]}
       hud={<Dice quien="rafi" t="not the doors. the chain." x={960} y={150} desde={k(280.2)} tam={66} />} />
   );

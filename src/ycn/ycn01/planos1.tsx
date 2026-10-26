@@ -100,7 +100,7 @@ export const P06Sala: React.FC = () => {
 export const P07Snack: React.FC = () => {
   const k = kDe(31.5);
   return (
-    <Sala cl={[mira(0, -1240, 690, 1.9), mira(k(33.9), -1190, 682, 2.1, { curva: "inout" })]} snack
+    <Sala cl={[mira(0, -1250, 660, 2.4), mira(k(33.9), -1230, 655, 2.7, { curva: "inout" })]} snack
       detras={[{ l: RAFI, x: -1250, p: [{ f: 0, v: "hablar" }, { f: 30, v: { hD: 70, cD: 60 } }], c: "cansado", d: -1 }]}
       hud={<Rotulo t="the snack bar" x={1200} y={200} desde={8} flecha="izq" />} />
   );
@@ -110,9 +110,9 @@ export const P07Snack: React.FC = () => {
 export const P08Rafi: React.FC = () => {
   const k = kDe(33.88);
   return (
-    <Sala cl={[mira(0, -900, 663, 2.6), mira(k(36.3), -900, 669, 2.4), mira(k(36.9), -900, 600, 2.1, { curva: "inout" }), mira(k(39.3), -900, 600, 2.0), mira(k(40.1), -880, 700, 1.8, { curva: "inout" })]} snack
-      detras={[{ l: RAFI, x: -900, p: [{ f: 0, v: "saludar" }, { f: k(36.5), v: "hablar" }, { f: k(39.5), v: { hD: 80, cD: 30 } }], c: [{ f: 0, v: "feliz" }, { f: k(39), v: "picaro" }], mD: (ff: number) => (ff > k(39.5) ? <Pancho /> : null), mir: { x: 0.2, y: 0 } }]}
-      hud={<><Rotulo t="RAFI · 17 · me" x={1240} y={300} desde={k(34.3)} hasta={k(38.4)} flecha="izq" /><Pildora texto="CHILI DOG $5 · PRETZEL $2" x={960} y={900} desde={k(40)} /></>} />
+    <Sala cl={[mira(0, -780, 690, 2.4), mira(k(36.9), -790, 686, 2.2, { curva: "inout" }), mira(k(40.1), -820, 700, 1.9, { curva: "inout" })]} snack
+      gente={[{ l: RAFI, x: -760, p: [{ f: 0, v: "saludar" }, { f: k(36.5), v: "hablar" }, { f: k(39.5), v: { hD: 80, cD: 30 } }], c: [{ f: 0, v: "feliz" }, { f: k(39), v: "picaro" }], mD: (ff: number) => (ff > k(39.5) ? <Pancho /> : null), mir: { x: 0.2, y: 0 } }]}
+      hud={<><Rotulo t="RAFI · 17 · me" x={1420} y={470} desde={k(34.3)} hasta={k(38.4)} flecha="izq" /><Pildora texto="CHILI DOG $5 · PRETZEL $2" x={960} y={960} desde={k(40)} /></>} />
   );
 };
 
@@ -249,7 +249,7 @@ const Reloj8: React.FC<{ k8: number }> = ({ k8 }) => {
         <line x1={0} y1={0} x2={0} y2={-150} stroke="#c0392b" strokeWidth={9} strokeLinecap="round" transform={`rotate(${m})`} />
         <circle r={14} fill="#2a2420" />
       </svg>
-      <div style={{ textAlign: "center", fontFamily: F_HUD, fontWeight: 700, fontSize: 64, color: f > k8 ? "#ffd84a" : "#f4efe4", textShadow: "0 3px 10px rgba(0,0,0,0.7)" }}>{f > k8 ? "8:00 PM" : "7:58 PM"}</div>
+      <div style={{ margin: "6px auto 0", width: 300, borderRadius: 18, background: "rgba(20,16,14,0.85)", textAlign: "center", fontFamily: F_HUD, fontWeight: 700, fontSize: 64, color: f > k8 ? "#ffd84a" : "#f4efe4", textShadow: "0 3px 10px rgba(0,0,0,0.7)" }}>{f > k8 ? "8:00 PM" : "7:58 PM"}</div>
     </div>
   );
 };
