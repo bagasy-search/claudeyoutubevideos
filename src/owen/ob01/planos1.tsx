@@ -64,8 +64,8 @@ export const P02Rebobina: React.FC = () => {
       <EnBus cl={cl} hora={u < 0.5 ? "ocaso" : "alba"} part={null} pas={PAS_MINI.map((p) => ({ ...p, n: undefined }))} owen={{ caras: [{ f: 0, v: "sorpresa" }] }} />
       <AbsoluteFill style={{ background: "#0e1430", opacity: 0.25 + 0.6 * u }} />
       {Array.from({ length: 14 }).map((_, k) => <div key={k} style={{ position: "absolute", left: ((k * 263 + f * 90) % 2200) - 200, top: 80 + k * 70, width: 300, height: 4, background: "#f4efe4", opacity: 0.25 * (1 - u) }} />)}
-      <div style={{ position: "absolute", left: 0, right: 0, top: 380, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 220, color: "#f4efe4", fontVariantNumeric: "tabular-nums", textShadow: "0 8px 30px rgba(0,0,0,0.5)" }}>
-        {h12}:{String(m % 60).padStart(2, "0")} <span style={{ fontSize: 110 }}>{h < 12 ? "AM" : "PM"}</span>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 330, textAlign: "center", fontFamily: F_HUD, fontWeight: 700, fontSize: 300, color: "#f4efe4", fontVariantNumeric: "tabular-nums", textShadow: "0 8px 30px rgba(0,0,0,0.5)" }}>
+        {h12}:{String(m % 60).padStart(2, "0")} <span style={{ fontSize: 150 }}>{h < 12 ? "AM" : "PM"}</span>
       </div>
     </AbsoluteFill>
   );
@@ -135,7 +135,7 @@ export const P06Baja: React.FC = () => {
   const k = kDe(14.9);
   const ruta = [{ f: 0, ...escalon(14) }, ...[10, 6, 2].map((s, i) => ({ f: Math.round(((i + 1) / 4) * k(16.4)), ...escalon(s), curva: "lineal" as const })), { f: k(16.4), ...escalon(0), curva: "lineal" as const }, { f: k(17.6), x: 830, y: P, curva: "out" as const }];
   return (
-    <Escena Set={TwoFlatCorte} pal={PAL} claves={[mira(0, 1700, A + 150, 1.0), mira(k(16.4), 1250, P - 250, 1.1, { curva: "inout" }), mira(k(17.9), 760, P - 250, 1.2, { curva: "inout" })]} seed={6} setProps={{ hora: "alba", luzBaño: false }}
+    <Escena Set={TwoFlatCorte} pal={PAL} claves={[mira(0, 1650, A + 120, 1.35), mira(k(16.4), 1200, P - 260, 1.5, { curva: "inout" }), mira(k(17.9), 760, P - 260, 1.6, { curva: "inout" })]} seed={6} setProps={{ hora: "alba", luzBaño: false }}
       medio={<>
         <Actor look={ROSA} escala={ESC} seed={5} ruta={[{ f: 0, x: ROSA_COCINA, y: P }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { hD: 60, cD: 60 } }]} caras={[{ f: 0, v: "feliz" }]} habla={[[0, 90]]} />
         <Actor look={OWEN_CASA} escala={ESC} seed={6} ruta={ruta} caras={[{ f: 0, v: "cansado" }, { f: k(17.5), v: "sorpresa" }]} />
@@ -269,18 +269,18 @@ export const P15Garaje: React.FC = () => {
   const k = kDe(88.7);
   const golpe = k(95.2);
   const hoja = (ff: number) => (ff < golpe ? 0 : Math.max(0, 1 - (ff - golpe) / 8));
-  const cl = [mira(0, 700, GAR_PISO - 280, 1.15), mira(k(92), 560, GAR_PISO - 270, 1.45, { curva: "inout" })];
+  const cl = [mira(0, 700, GAR_PISO - 340, 1.6), mira(k(92), 560, GAR_PISO - 330, 1.9, { curva: "inout" })];
   return (
     <Escena Set={Garaje} pal={PAL} claves={cl} seed={15} setProps={{ hora: "alba", hoja }}
       medio={<>
         <Actor look={TINY} escala={ESC * 1.1} seed={7} ruta={[{ f: 0, x: GAR_PUNTOS.ventanilla, y: GAR_PISO }]} dir={[{ f: 0, v: 1 }]}
-          poses={[{ f: 0, v: "brazosCruzados" }, { f: golpe - 12, v: { hD: 150, cD: 30 } }, { f: golpe, v: { hD: 75, cD: -5, tronco: 10 } }, { f: golpe + 20, v: "manosCintura" }]} caras={[{ f: 0, v: "picaro" }, { f: golpe, v: "risa" }]} habla={[[golpe + 4, golpe + 40]]} />
+          poses={[{ f: 0, v: "brazosCruzados" }, { f: golpe - 30, v: { hD: 150, cD: 30, hI: 150, cI: 30 } }, { f: golpe - 18, v: { hD: 120, cD: 60, hI: 160, cI: 10 } }, { f: golpe - 8, v: { hD: 160, cD: 20, hI: 120, cI: 60 } }, { f: golpe, v: { hD: 75, cD: -5, tronco: 10 } }, { f: golpe + 20, v: "manosCintura" }]} caras={[{ f: 0, v: "picaro" }, { f: golpe, v: "risa" }]} habla={[[golpe + 4, golpe + 40]]} />
         <MostradorDespacho />
         <Actor look={OWEN} escala={ESC} seed={6} ruta={[{ f: 0, x: 1250, y: GAR_PISO }, { f: k(91.8), x: GAR_PUNTOS.mostrador + 120, y: GAR_PISO }]} caras={[{ f: 0, v: "cansado" }, { f: golpe, v: "sorpresa" }, { f: golpe + 15, v: "cansado" }]} />
       </>}
       hud={<>
-        <Pildora texto="74TH STREET GARAGE" x={960} y={950} desde={k(89)} hasta={k(92.5)} color="#f4efe4" />
-        <Pildora texto="DISPATCHER MARCUS «TINY»" x={960} y={950} desde={k(92.8)} hasta={k(96.8)} color="#ffd27a" />
+        <Pildora texto="74TH STREET GARAGE" x={960} y={950} desde={k(89)} hasta={k(92.5)} color="#f4efe4" tam={70} />
+        <Pildora texto="DISPATCHER MARCUS «TINY»" x={960} y={950} desde={k(92.8)} hasta={k(96.8)} color="#ffd27a" tam={70} />
         <HudOwen min={340} part="47/47" />
       </>} />
   );
@@ -291,16 +291,16 @@ export const P15Garaje: React.FC = () => {
 export const P16Ruta: React.FC = () => {
   const k = kDe(96.8);
   const bx = (ff: number) => 400 + ff * 15;
-  const cam = (ff: number) => 1400 + ff * 3.75;
-  const cl = [mira(0, cam(0), 820, 0.55), mira(240, cam(240), 820, 0.55)];
+  const cam = (ff: number) => bx(ff) + 560;
+  const cl = [mira(0, cam(0), 760, 0.85), mira(240, cam(240), 760, 0.95, { curva: "lineal" })];
   const f = useF();
   return (
     <Escena Set={Ashland} pal={PAL} claves={cl} seed={16} setProps={{ hora: "alba", centro: cam, paradas: [{ x: 3000, num: 1, refugio: true }] }}
       medio={<Bus9 x={bx(f)} y={ASH_CARRIL} esc={0.62} dir={1} hora="alba" rueda={f * 9} />}
       hud={<>
-        <Pildora texto="ROUTE 9 · ASHLAND AVENUE" x={960} y={950} desde={k(97.2)} hasta={k(99.0)} color="#ffb02e" />
-        <Pildora texto="17 MILES · NORTH TO SOUTH AND BACK" x={960} y={950} desde={k(99.1)} hasta={k(102.2)} color="#ffb02e" />
-        <Pildora texto="~400 FACES A SHIFT" x={960} y={950} desde={k(102.3)} color="#ffb02e" />
+        <Pildora texto="ROUTE 9 · ASHLAND AVENUE" x={960} y={950} desde={k(97.2)} hasta={k(99.0)} color="#ffb02e" tam={66} />
+        <Pildora texto="17 MILES · NORTH TO SOUTH AND BACK" x={960} y={950} desde={k(99.1)} hasta={k(102.2)} color="#ffb02e" tam={62} />
+        <Pildora texto="~400 FACES A SHIFT" x={960} y={950} desde={k(102.3)} color="#ffb02e" tam={70} />
         <HudOwen min={345} part="47/47" />
       </>} />
   );
@@ -328,7 +328,7 @@ export const P18Puertas: React.FC = () => {
   const puertaF = (ff: number) => interpolate(ff, [k(108.3), k(108.9)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <EnBus cl={[mira(0, 380, 660, 1.75), mira(k(110.9), 470, 650, 1.55, { curva: "inout" })]} hora="alba" min={360} avance={avance} puertaF={puertaF} paradas={[{ a: 600, num: 1 }]}
-      owen={{ caras: [{ f: 0, v: "cansado" }, { f: k(109.6), v: "sorpresa" }], miradas: [{ f: 0, v: { x: -1, y: 0 } }, { f: k(108.4), v: { x: 1, y: 0.1 } }], giros: [{ f: 0, v: 0 }, { f: k(108.4), v: 0.7 }] }} />
+      owen={{ caras: [{ f: 0, v: "cansado" }, { f: k(109.6), v: "sorpresa" }], miradas: [{ f: 0, v: { x: -1, y: 0 } }, { f: k(108.4), v: { x: 1, y: 0.1 } }], giros: [{ f: 0, v: 0 }, { f: k(108.4), v: 0.7 }], manos: "I", poses: [{ f: 0, v: "sentado" }, { f: k(109.0), v: { hD: 150, cD: 30 } }, { f: k(109.4), v: { hD: 150, cD: 60 } }, { f: k(109.8), v: { hD: 150, cD: 30 } }, { f: k(110.3), v: "sentado" }], habla: [[k(109.0), k(110.0)]] }} />
   );
 };
 
@@ -355,12 +355,12 @@ export const P20Cuentas: React.FC = () => {
   const f = useF();
   return (
     <EnBus cl={[mira(0, 330, BUS_PISO - 250, 2.3), mira(150, 300, BUS_PISO - 260, 2.5)]} hora="manana" min={375} avance={() => 2000}
-      owen={{ caras: [{ f: 0, v: "duda" }, { f: k(127), v: "determinado" }], miradas: [{ f: 0, v: { x: 0.3, y: -0.6 } }] }}
+      owen={{ caras: [{ f: 0, v: "duda" }, { f: k(127), v: "determinado" }], miradas: [{ f: 0, v: { x: 0.3, y: -0.6 } }], manos: "I", poses: [{ f: 0, v: "sentado" }, ...[125.4, 126.2, 127.0].flatMap((t) => [{ f: k(t) - 4, v: { hD: 120, cD: 50 } }, { f: k(t) + 10, v: { hD: 100, cD: 80 } }]), { f: k(128.2), v: "sentado" }], habla: [[k(125.4), k(127.8)]] }}
       detras={<g transform={`translate(40,${BUS_PISO - 470})`}><rect x={-22} y={-60} width={44} height={120} rx={10} fill="#1d1f24" /><circle cy={-34} r={14} fill={f % 40 < 38 ? "#ff3d2e" : "#5a1a14"} /><circle cy={0} r={14} fill="#3a3a20" /><circle cy={34} r={14} fill="#163a20" /><rect x={-4} y={60} width={8} height={300} fill="#3a3f46" /></g>}
       hud={<>
-        <Mano texto="31 − 19 = +12" x={1250} y={300} desde={k(125.4)} color={VERDE} tam={60} />
-        <Mano texto="52 − 44 = +8" x={1290} y={420} desde={k(126.2)} color={VERDE} tam={60} />
-        <Mano texto="33 − 40 = −7" x={1270} y={540} desde={k(127.0)} color="#ffd27a" tam={60} />
+        <Mano texto="31 − 19 = +12" x={1300} y={250} desde={k(125.4)} color={VERDE} tam={86} />
+        <Mano texto="52 − 44 = +8" x={1300} y={420} desde={k(126.2)} color={VERDE} tam={86} />
+        <Mano texto="33 − 40 = −7" x={1300} y={590} desde={k(127.0)} color="#ffd27a" tam={86} />
       </>} />
   );
 };

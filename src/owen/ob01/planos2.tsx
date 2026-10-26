@@ -89,7 +89,7 @@ export const P26Fumador: React.FC = () => {
       </>}
       hud={<>
         <Pildora texto="STOP 12" x={960} y={950} desde={0} hasta={k(173)} color="#f4efe4" tam={66} />
-        {f >= k(174.4) && f < k(176) && <ManoMundo cl={cl} x={PUERTA - 300} y={ASH_PISO - 230} texto="+9" desde={k(174.4)} color={ROJO_OWEN} tam={190} />}
+        {f >= k(174.4) && <ManoMundo cl={cl} x={PUERTA - 300} y={ASH_PISO - 230} texto="+9" desde={k(174.4)} color={ROJO_OWEN} tam={190} />}
         <Pildora texto="SMOKING = ONE OF THE STRONGEST CLOCK ACCELERATORS" x={960} y={950} desde={k(175.8)} color="#ffd27a" tam={58} />
         <HudOwen min={430} part="47/47" />
       </>} />
@@ -165,7 +165,7 @@ export const P28Caminan: React.FC = () => {
   );
 };
 
-export const P29Velocidad: React.FC = () => <AbsoluteFill><Velocimetro ms={1.3} etiqueta="WALKING SPEED" /><Mano texto="faster pace → longer life" x={960} y={140} desde={kDe(206.8)(212.7)} color={VERDE} tam={82} /><HudOwen part="47/47" /></AbsoluteFill>;
+export const P29Velocidad: React.FC = () => <AbsoluteFill><Velocimetro ms={1.3} etiqueta="WALKING SPEED" /><Mano texto="faster pace → longer life" x={960} y={330} desde={kDe(206.8)(212.7)} color={VERDE} tam={82} /><HudOwen part="47/47" /></AbsoluteFill>;
 
 export const P30SuDia: React.FC = () => {
   const k = kDe(215.7);
@@ -469,7 +469,7 @@ const BatMundo: React.FC<{ cl: ReturnType<typeof mira>[]; x: number; y: number; 
 };
 export const P45Baterias: React.FC = () => {
   const k = kDe(385.0);
-  const cl = [mira(0, 1150, 660, 1.25), mira(k(393.0), 1300, 660, 1.3), mira(k(393.4), ASIENTO_X(7) - 60, 680, 1.9, { curva: "out" })];
+  const cl = [mira(0, 1150, 660, 1.5), mira(k(393.0), 1300, 660, 1.55, { curva: "inout" }), mira(k(393.4), ASIENTO_X(7) - 60, 680, 2.1, { curva: "out" })];
   const pas: Pas[] = [sent(SCRUBS, 2, { seed: 61, poses: [{ f: 0, v: "celular" }] }), sent(OBRERO, 4, { seed: 62, enManoD: <VasoCafe />, poses: [{ f: 0, v: "sentado" }, { f: 60, v: { ...SIT, hD: 150, cD: 150, cabeza: -10 } }, { f: 90, v: "sentado" }] }), sent(ESTUDIANTE, 6, { caras: [{ f: 0, v: "feliz" }, { f: 70, v: "risa" }], seed: 63, habla: [[60, 110]], poses: [{ f: 0, v: "sentado" }, { f: 60, v: { ...SIT, hD: 150, cD: 20 } }, { f: 110, v: "sentado" }] }), sent(SENORA, 7, { caras: [{ f: 0, v: "cansado" }], seed: 64, poses: [{ f: 0, v: "sentado" }, { f: k(393.5), v: { ...SIT, tronco: 10, cabeza: 26 } }] })];
   return (
     <EnBus cl={cl} hora="manana" part="46/47" min={400} avance={(f) => 2000 + f * 12} pas={pas} owen={{ caras: [{ f: 0, v: "sorpresa" }] }}
@@ -488,7 +488,7 @@ const CtaSuscribir: React.FC<{ desde: number }> = ({ desde }) => {
   const f = useF();
   if (f < desde) return null;
   const e = Math.min(1, (f - desde) / 8);
-  return <div style={{ position: "absolute", left: 960, top: 110, transform: `translateX(-50%) scale(${e * (1 + Math.max(0, Math.sin((f - desde) / 6)) * 0.05)})`, display: "flex", alignItems: "center", gap: 18, background: "#e22a2a", color: "#fff", fontFamily: F_HUD, fontWeight: 800, fontSize: 80, padding: "20px 56px", borderRadius: 24, boxShadow: "0 10px 30px rgba(0,0,0,0.4)" }}>SUBSCRIBE <span style={{ display: "inline-block", fontSize: 46, transform: `rotate(${Math.sin(f / 3) * 14}deg)` }}>🔔</span></div>;
+  return <div style={{ position: "absolute", left: 330, top: 90, transform: `translateX(-50%) scale(${e * (1 + Math.max(0, Math.sin((f - desde) / 6)) * 0.05)})`, display: "flex", alignItems: "center", gap: 18, background: "#e22a2a", color: "#fff", fontFamily: F_HUD, fontWeight: 800, fontSize: 80, padding: "20px 56px", borderRadius: 24, boxShadow: "0 10px 30px rgba(0,0,0,0.4)" }}>SUBSCRIBE <span style={{ display: "inline-block", fontSize: 46, transform: `rotate(${Math.sin(f / 3) * 14}deg)` }}>🔔</span></div>;
 };
 export const P46Cta: React.FC = () => {
   const k = kDe(396.8);
@@ -500,7 +500,7 @@ export const P46Cta: React.FC = () => {
       owen={{ caras: [{ f: 0, v: "feliz" }, { f: 70, v: "risa" }, { f: 110, v: "feliz" }], giros: [{ f: 0, v: 0.6 }, { f: 100, v: 0 }, { f: 130, v: 1 }], miradas: [{ f: 0, v: { x: 1, y: 0 } }, { f: 130, v: { x: 0, y: 0 } }], habla: [[70, 100]], manos: "I", poses: [{ f: 0, v: "sentado" }, { f: 70, v: { hD: 150, cD: 30 } }, { f: 104, v: "sentado" }, { f: 140, v: { hD: 120, cD: 60 } }, { f: 180, v: "sentado" }] }}
       hud={<>
         <div style={{ position: "absolute", left: q.x, top: q.y, transform: "translate(-50%,-100%)", textAlign: "center", fontFamily: F_HUD, textShadow: "0 3px 10px rgba(0,0,0,0.7)" }}>
-          <div style={{ fontWeight: 800, fontSize: 180, lineHeight: 1, color: VERDE, transform: `scale(${1 + 0.06 * Math.sin(f / 10)})` }}>??</div>
+          <div style={{ fontWeight: 800, fontSize: 180, lineHeight: 1, marginBottom: 40, color: VERDE, transform: `scale(${1 + 0.06 * Math.sin(f / 10)})` }}>??</div>
           <div style={{ fontWeight: 600, fontSize: 52, lineHeight: 1.1, letterSpacing: 3, color: "#f4efe4", whiteSpace: "nowrap" }}>YOUR REAL AGE</div>
         </div>
         <Pildora texto="What number would float over YOUR head?" x={960} y={860} desde={k(397.2)} color={VERDE} tam={64} />
