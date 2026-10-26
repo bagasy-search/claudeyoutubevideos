@@ -68,12 +68,13 @@ export const CaminoMontana: React.FC<SetProps> = ({ capa, f }) => {
 // agua que corre: bandas que se desplazan (en coordenadas del mundo)
 const Agua: React.FC<{ f: number; x: number; w: number; y: number; h: number; seed: number; frente?: boolean }> = ({ f, x, w, y, h, seed, frente }) => (
   <g>
-    <path d={`M${x},${y + 8} ${Array.from({ length: 12 }).map((_, k) => `Q${x + (k + 0.5) * w / 12},${y + (k % 2 ? -10 : 14) + Math.sin(f / 6 + k) * 5} ${x + (k + 1) * w / 12},${y + 8}`).join(" ")} L${x + w},${y + h} L${x},${y + h} Z`} fill="#a06a38" />
+    <path d={`M${x},${y + 8} ${Array.from({ length: 12 }).map((_, k) => `Q${x + (k + 0.5) * w / 12},${y + (k % 2 ? -10 : 14) + Math.sin(f / 6 + k) * 5} ${x + (k + 1) * w / 12},${y + 8}`).join(" ")} L${x + w},${y + h} L${x},${y + h} Z`} fill="#c08a4c" />
+    <rect x={x} y={y + 4} width={w} height={10} fill="#ffe2a8" opacity={0.55} />
     {Array.from({ length: frente ? 10 : 18 }).map((_, i) => {
       const yy = y + 10 + random(`ay${seed}${i}`) * (h - 20);
       const L = 90 + random(`al${seed}${i}`) * 160;
       const xx = x + ((random(`ax${seed}${i}`) * w + f * (7 + random(`av${seed}${i}`) * 5)) % w);
-      return <rect key={i} x={xx} y={yy} width={Math.min(L, x + w - xx)} height={frente ? 6 : 5} rx={3} fill="#e9c08a" opacity={0.55} />;
+      return <rect key={i} x={xx} y={yy} width={Math.min(L, x + w - xx)} height={frente ? 7 : 6} rx={3} fill="#fff0cc" opacity={0.7} />;
     })}
   </g>
 );

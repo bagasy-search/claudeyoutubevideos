@@ -81,10 +81,10 @@ export const Hoja: React.FC<{ x: number; y: number; w?: number; h?: number; rot?
 );
 
 // ---------- pantalla del celular en macro (HUD, coordenadas de pantalla) ----------
-type Tarjeta = "baile" | "grito" | "perro" | "choque" | "chica" | "video";
+type Tarjeta = "baile" | "grito" | "perro" | "choque" | "chica" | "video" | "luz";
 const Contenido: React.FC<{ t: Tarjeta; f: number; w: number; h: number }> = ({ t, f, w, h }) => {
   const cx = w / 2, cy = h / 2;
-  const fondo = { baile: "#3a2a4a", grito: "#2a3440", perro: "#3a3a2a", choque: "#402a26", chica: "#2a3a3a", video: "#30303a" }[t];
+  const fondo = { baile: "#3a2a4a", grito: "#2a3440", perro: "#3a3a2a", choque: "#402a26", chica: "#2a3a3a", video: "#30303a", luz: "#1c1210" }[t];
   const s = (k: number) => Math.sin(f / 4 + k);
   return (
     <g>
@@ -130,6 +130,14 @@ const Contenido: React.FC<{ t: Tarjeta; f: number; w: number; h: number }> = ({ 
           <path d="M-40,-150 q10,-10 20,0 M20,-150 q10,-10 20,0" stroke="#2a1a1a" strokeWidth={8} fill="none" strokeLinecap="round" />
           <path d="M-30,-110 Q0,-90 30,-110" stroke="#c0503a" strokeWidth={10} fill="none" strokeLinecap="round" />
           <rect x={-120} y={-60} width={240} height={260} rx={60} fill={ACENTO} />
+        </g>
+      )}
+      {t === "luz" && (
+        // «una chica hecha de luz» (tz04): silueta ámbar sin rasgos, sólo contorno y halo; nada explícito
+        <g transform={`translate(${cx},${cy + 30})`}>
+          <ellipse cx={0} cy={-20} rx={210} ry={300} fill={ACENTO} opacity={0.16} />
+          <path d="M0,-260 C60,-260 78,-200 70,-150 C64,-110 40,-96 34,-80 C90,-66 120,-20 104,60 C96,110 70,150 74,230 L-74,230 C-70,150 -96,110 -104,60 C-120,-20 -90,-66 -34,-80 C-40,-96 -64,-110 -70,-150 C-78,-200 -60,-260 0,-260 Z" fill="#ffb27a" opacity={0.85} />
+          <path d="M0,-260 C60,-260 78,-200 70,-150 C64,-110 40,-96 34,-80 C90,-66 120,-20 104,60 C96,110 70,150 74,230 L-74,230 C-70,150 -96,110 -104,60 C-120,-20 -90,-66 -34,-80 C-40,-96 -64,-110 -70,-150 C-78,-200 -60,-260 0,-260 Z" fill="none" stroke="#fff1d8" strokeWidth={6} />
         </g>
       )}
       {t === "video" && (
