@@ -1,0 +1,2813 @@
+{
+"TEND": 2664.875,
+"beats": [
+{
+"a": 0,
+"kind": "AV",
+"tr": "cut"
+},
+{
+"a": 3.52,
+"kind": "W",
+"scene": "hook",
+"tr": "portal"
+},
+{
+"a": 5.92,
+"kind": "W",
+"scene": "stairs",
+"tr": "whipL"
+},
+{
+"a": 14.28,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 20.39,
+"kind": "CL",
+"k": "k001",
+"tr": "push"
+},
+{
+"a": 32.708,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 36.248,
+"kind": "CL",
+"k": "k001",
+"tr": "push",
+"from": 12.318
+},
+{
+"a": 42.13,
+"kind": "W",
+"scene": "table~0",
+"tr": "whipL"
+},
+{
+"a": 48.86,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 54.514,
+"kind": "W",
+"scene": "head",
+"tr": "whipL"
+},
+{
+"a": 58.0,
+"kind": "W",
+"scene": "table",
+"tr": "portal"
+},
+{
+"a": 64.811,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 70.203,
+"kind": "W",
+"scene": "row:open",
+"tr": "whipL"
+},
+{
+"a": 76.603,
+"kind": "W",
+"scene": "row~0",
+"tr": "whipL"
+},
+{
+"a": 82.963,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 86.304,
+"kind": "W",
+"scene": "pan:6c",
+"tr": "portal"
+},
+{
+"a": 92.704,
+"kind": "W",
+"scene": "head~0",
+"tr": "whipL"
+},
+{
+"a": 97.564,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 102.604,
+"kind": "W",
+"scene": "pan:6",
+"tr": "whipL"
+},
+{
+"a": 107.88,
+"kind": "CL",
+"k": "k003",
+"tr": "whip"
+},
+{
+"a": 115.291,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 121.431,
+"kind": "CL",
+"k": "k004",
+"tr": "whipL"
+},
+{
+"a": 125.031,
+"kind": "W",
+"scene": "clock~0",
+"tr": "whipL"
+},
+{
+"a": 129.64,
+"kind": "CL",
+"k": "k005",
+"tr": "whipL"
+},
+{
+"a": 133.961,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 137.289,
+"kind": "CL",
+"k": "k006",
+"tr": "whip"
+},
+{
+"a": 140.889,
+"kind": "W",
+"scene": "stairs~0",
+"tr": "whipL"
+},
+{
+"a": 145.58,
+"kind": "CL",
+"k": "k007",
+"tr": "whip"
+},
+{
+"a": 148.334,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 154.288,
+"kind": "CL",
+"k": "k008",
+"tr": "whipL"
+},
+{
+"a": 160.62,
+"kind": "CL",
+"k": "k009",
+"tr": "push"
+},
+{
+"a": 167.548,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 171.833,
+"kind": "CL",
+"k": "k010",
+"tr": "whipL"
+},
+{
+"a": 175.433,
+"kind": "W",
+"scene": "row:open~0",
+"tr": "whipL"
+},
+{
+"a": 180.4,
+"kind": "W",
+"scene": "book:001",
+"tr": "whipL"
+},
+{
+"a": 182.904,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 186.796,
+"kind": "CL",
+"k": "k011",
+"tr": "whip"
+},
+{
+"a": 193.196,
+"kind": "W",
+"scene": "table~1",
+"tr": "whipL"
+},
+{
+"a": 197.566,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 203.45,
+"kind": "W",
+"scene": "book:028",
+"tr": "whipL"
+},
+{
+"a": 208.28,
+"kind": "CL",
+"k": "k012",
+"tr": "whipL"
+},
+{
+"a": 216.21,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 220.641,
+"kind": "CL",
+"k": "k013",
+"tr": "whip"
+},
+{
+"a": 225.52,
+"kind": "W",
+"scene": "book:030f028",
+"tr": "whipL"
+},
+{
+"a": 230.275,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 235.52,
+"kind": "CL",
+"k": "k014",
+"tr": "whip"
+},
+{
+"a": 248.798,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 253.238,
+"kind": "CL",
+"k": "k014",
+"tr": "push",
+"from": 13.278
+},
+{
+"a": 258.16,
+"kind": "W",
+"scene": "row~1",
+"tr": "whipL"
+},
+{
+"a": 266.875,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 270.272,
+"kind": "CL",
+"k": "k015",
+"tr": "whipL"
+},
+{
+"a": 276.672,
+"kind": "W",
+"scene": "head~1",
+"tr": "whipL"
+},
+{
+"a": 281.342,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 286.195,
+"kind": "W",
+"scene": "serve",
+"tr": "whipL"
+},
+{
+"a": 291.6,
+"kind": "W",
+"scene": "pan:0c",
+"tr": "portal"
+},
+{
+"a": 294.98,
+"kind": "W",
+"scene": "book:030",
+"tr": "whipL"
+},
+{
+"a": 300.326,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 305.894,
+"kind": "CL",
+"k": "k016",
+"tr": "push"
+},
+{
+"a": 312.294,
+"kind": "W",
+"scene": "pan:0~0",
+"tr": "portal"
+},
+{
+"a": 317.141,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 322.965,
+"kind": "CL",
+"k": "k017",
+"tr": "whip"
+},
+{
+"a": 329.365,
+"kind": "W",
+"scene": "card:0~0",
+"tr": "whipL"
+},
+{
+"a": 334.36,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 340.52,
+"kind": "CL",
+"k": "k018",
+"tr": "whip"
+},
+{
+"a": 346.92,
+"kind": "W",
+"scene": "book:030~0",
+"tr": "whipL"
+},
+{
+"a": 352.151,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 358.128,
+"kind": "W",
+"scene": "row:open~0",
+"tr": "whipL"
+},
+{
+"a": 362.128,
+"kind": "W",
+"scene": "table~0",
+"tr": "portal"
+},
+{
+"a": 366.128,
+"kind": "W",
+"scene": "pan:0~1",
+"tr": "whipL"
+},
+{
+"a": 370.642,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 374.905,
+"kind": "CL",
+"k": "k019",
+"tr": "flip"
+},
+{
+"a": 387.399,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 392.285,
+"kind": "CL",
+"k": "k019",
+"tr": "push",
+"from": 12.494
+},
+{
+"a": 397.991,
+"kind": "CL",
+"k": "k021",
+"tr": "whipL"
+},
+{
+"a": 404.953,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 408.64,
+"kind": "CL",
+"k": "k021",
+"tr": "push",
+"from": 6.962
+},
+{
+"a": 418.556,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 424.41,
+"kind": "CL",
+"k": "k021",
+"tr": "push",
+"from": 16.878
+},
+{
+"a": 425.732,
+"kind": "W",
+"scene": "card:0~1",
+"tr": "whipL"
+},
+{
+"a": 427.7,
+"kind": "CL",
+"k": "k023",
+"tr": "flip"
+},
+{
+"a": 437.491,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 442.052,
+"kind": "CL",
+"k": "k024",
+"tr": "whip"
+},
+{
+"a": 445.652,
+"kind": "W",
+"scene": "book:030~1",
+"tr": "whipL"
+},
+{
+"a": 450.16,
+"kind": "CL",
+"k": "k025",
+"tr": "push"
+},
+{
+"a": 453.883,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 458.335,
+"kind": "W",
+"scene": "row:open~1",
+"tr": "portal"
+},
+{
+"a": 462.335,
+"kind": "W",
+"scene": "table~1",
+"tr": "whipL"
+},
+{
+"a": 468.869,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 473.2,
+"kind": "CL",
+"k": "k026",
+"tr": "flip"
+},
+{
+"a": 475.66,
+"kind": "CL",
+"k": "k027",
+"tr": "whip"
+},
+{
+"a": 482.06,
+"kind": "W",
+"scene": "pan:0~2",
+"tr": "whipL"
+},
+{
+"a": 486.965,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 492.359,
+"kind": "W",
+"scene": "pan:1c",
+"tr": "whipL"
+},
+{
+"a": 496.28,
+"kind": "W",
+"scene": "book:031f030",
+"tr": "portal"
+},
+{
+"a": 498.68,
+"kind": "CL",
+"k": "k028",
+"tr": "whip"
+},
+{
+"a": 503.896,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 508.815,
+"kind": "CL",
+"k": "k029",
+"tr": "flip"
+},
+{
+"a": 512.415,
+"kind": "W",
+"scene": "pan:1~0",
+"tr": "portal"
+},
+{
+"a": 517.7,
+"kind": "CL",
+"k": "k030",
+"tr": "whipL"
+},
+{
+"a": 521.075,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 525.911,
+"kind": "CL",
+"k": "k031",
+"tr": "push"
+},
+{
+"a": 532.311,
+"kind": "W",
+"scene": "card:1~0",
+"tr": "portal"
+},
+{
+"a": 538.898,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 542.27,
+"kind": "W",
+"scene": "book:031~0",
+"tr": "whipL"
+},
+{
+"a": 546.27,
+"kind": "W",
+"scene": "row:open~0",
+"tr": "whipL"
+},
+{
+"a": 553.512,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 557.986,
+"kind": "CL",
+"k": "k032",
+"tr": "whip"
+},
+{
+"a": 564.386,
+"kind": "W",
+"scene": "table~0",
+"tr": "whipL"
+},
+{
+"a": 571.307,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 575.541,
+"kind": "W",
+"scene": "pan:1~1",
+"tr": "whipL"
+},
+{
+"a": 579.541,
+"kind": "W",
+"scene": "card:1~1",
+"tr": "portal"
+},
+{
+"a": 587.339,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 591.785,
+"kind": "CL",
+"k": "k033",
+"tr": "whip"
+},
+{
+"a": 601.176,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 606.556,
+"kind": "CL",
+"k": "k033",
+"tr": "push",
+"from": 9.391
+},
+{
+"a": 615.365,
+"kind": "CL",
+"k": "k034",
+"tr": "whip"
+},
+{
+"a": 618.477,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 623.117,
+"kind": "CL",
+"k": "k035",
+"tr": "whipL"
+},
+{
+"a": 633.586,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 639.707,
+"kind": "CL",
+"k": "k035",
+"tr": "push",
+"from": 10.469
+},
+{
+"a": 647.438,
+"kind": "CL",
+"k": "k038",
+"tr": "whipL"
+},
+{
+"a": 650.606,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 654.677,
+"kind": "CL",
+"k": "k039",
+"tr": "whip"
+},
+{
+"a": 661.703,
+"kind": "CL",
+"k": "k040",
+"tr": "flip"
+},
+{
+"a": 668.205,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 671.95,
+"kind": "CL",
+"k": "k041",
+"tr": "whip"
+},
+{
+"a": 682.304,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 688.611,
+"kind": "W",
+"scene": "book:031~1",
+"tr": "whipL"
+},
+{
+"a": 692.611,
+"kind": "W",
+"scene": "row:open~1",
+"tr": "whipL"
+},
+{
+"a": 696.611,
+"kind": "W",
+"scene": "table~1",
+"tr": "portal"
+},
+{
+"a": 701.811,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 706.478,
+"kind": "W",
+"scene": "pan:1~2",
+"tr": "whipL"
+},
+{
+"a": 710.478,
+"kind": "W",
+"scene": "card:1~2",
+"tr": "whipL"
+},
+{
+"a": 718.139,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 722.186,
+"kind": "CL",
+"k": "k042",
+"tr": "whip"
+},
+{
+"a": 732.029,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 738.182,
+"kind": "W",
+"scene": "table",
+"tr": "whipL"
+},
+{
+"a": 744.582,
+"kind": "W",
+"scene": "book:031~2",
+"tr": "whipL"
+},
+{
+"a": 752.425,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 757.083,
+"kind": "W",
+"scene": "pan:2c",
+"tr": "portal"
+},
+{
+"a": 759.483,
+"kind": "W",
+"scene": "book:032f031",
+"tr": "whipL"
+},
+{
+"a": 762.343,
+"kind": "CL",
+"k": "k043",
+"tr": "flip"
+},
+{
+"a": 768.343,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 772.357,
+"kind": "CL",
+"k": "k044",
+"tr": "whip"
+},
+{
+"a": 778.757,
+"kind": "W",
+"scene": "pan:2~0",
+"tr": "whipL"
+},
+{
+"a": 784.617,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 789.057,
+"kind": "CL",
+"k": "k045",
+"tr": "push"
+},
+{
+"a": 795.457,
+"kind": "W",
+"scene": "card:2~0",
+"tr": "portal"
+},
+{
+"a": 801.879,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 805.316,
+"kind": "CL",
+"k": "k046",
+"tr": "whip"
+},
+{
+"a": 811.716,
+"kind": "W",
+"scene": "book:032~0",
+"tr": "whipL"
+},
+{
+"a": 816.88,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 822.527,
+"kind": "W",
+"scene": "row:open~0",
+"tr": "portal"
+},
+{
+"a": 826.527,
+"kind": "W",
+"scene": "table~0",
+"tr": "whipL"
+},
+{
+"a": 830.527,
+"kind": "W",
+"scene": "pan:2~1",
+"tr": "whipL"
+},
+{
+"a": 835.933,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 841.472,
+"kind": "CL",
+"k": "k047",
+"tr": "whipL"
+},
+{
+"a": 843.872,
+"kind": "CL",
+"k": "k048",
+"tr": "whip"
+},
+{
+"a": 853.524,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 857.458,
+"kind": "CL",
+"k": "k048",
+"tr": "push",
+"from": 9.652
+},
+{
+"a": 866.006,
+"kind": "W",
+"scene": "card:2~1",
+"tr": "portal"
+},
+{
+"a": 867.99,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 873.848,
+"kind": "CL",
+"k": "k049",
+"tr": "whipL"
+},
+{
+"a": 886.849,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 890.895,
+"kind": "CL",
+"k": "k049",
+"tr": "push",
+"from": 13.001
+},
+{
+"a": 896.094,
+"kind": "CL",
+"k": "k052",
+"tr": "whipL"
+},
+{
+"a": 902.943,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 908.729,
+"kind": "CL",
+"k": "k053",
+"tr": "whip"
+},
+{
+"a": 915.223,
+"kind": "CL",
+"k": "k054",
+"tr": "flip"
+},
+{
+"a": 920.964,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 924.3,
+"kind": "CL",
+"k": "k055",
+"tr": "whip"
+},
+{
+"a": 930.7,
+"kind": "W",
+"scene": "book:032~1",
+"tr": "whipL"
+},
+{
+"a": 935.706,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 939.083,
+"kind": "CL",
+"k": "k056",
+"tr": "push"
+},
+{
+"a": 948.759,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 954.595,
+"kind": "W",
+"scene": "pan:3c",
+"tr": "portal"
+},
+{
+"a": 957.663,
+"kind": "W",
+"scene": "book:033f032",
+"tr": "whipL"
+},
+{
+"a": 968.038,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 973.005,
+"kind": "W",
+"scene": "pan:3",
+"tr": "whipL"
+},
+{
+"a": 979.405,
+"kind": "W",
+"scene": "pan:3~0",
+"tr": "portal"
+},
+{
+"a": 983.884,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 987.699,
+"kind": "CL",
+"k": "k057",
+"tr": "whipL"
+},
+{
+"a": 994.099,
+"kind": "W",
+"scene": "card:3~0",
+"tr": "whipL"
+},
+{
+"a": 998.215,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 1003.612,
+"kind": "CL",
+"k": "k058",
+"tr": "whipL"
+},
+{
+"a": 1006.012,
+"kind": "CL",
+"k": "k059",
+"tr": "whip"
+},
+{
+"a": 1012.412,
+"kind": "W",
+"scene": "book:033~0",
+"tr": "whipL"
+},
+{
+"a": 1016.581,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 1020.828,
+"kind": "CL",
+"k": "k060",
+"tr": "whip"
+},
+{
+"a": 1030.628,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 1035.782,
+"kind": "CL",
+"k": "k061",
+"tr": "whipL"
+},
+{
+"a": 1042.182,
+"kind": "W",
+"scene": "row:open~0",
+"tr": "whipL"
+},
+{
+"a": 1046.977,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 1051.283,
+"kind": "W",
+"scene": "table~0",
+"tr": "portal"
+},
+{
+"a": 1055.283,
+"kind": "W",
+"scene": "pan:3~1",
+"tr": "whipL"
+},
+{
+"a": 1063.13,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 1067.72,
+"kind": "CL",
+"k": "k062",
+"tr": "flip"
+},
+{
+"a": 1078.291,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 1083.777,
+"kind": "CL",
+"k": "k062",
+"tr": "push",
+"from": 10.571
+},
+{
+"a": 1091.406,
+"kind": "W",
+"scene": "card:3~1",
+"tr": "whipL"
+},
+{
+"a": 1097.037,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 1101.124,
+"kind": "CL",
+"k": "k063",
+"tr": "push"
+},
+{
+"a": 1103.524,
+"kind": "W",
+"scene": "pan:3",
+"tr": "portal"
+},
+{
+"a": 1113.49,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 1116.996,
+"kind": "CL",
+"k": "k064",
+"tr": "whip"
+},
+{
+"a": 1125.444,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 1131.118,
+"kind": "CL",
+"k": "k065",
+"tr": "flip"
+},
+{
+"a": 1137.518,
+"kind": "W",
+"scene": "book:033~1",
+"tr": "portal"
+},
+{
+"a": 1144.923,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 1149.542,
+"kind": "CL",
+"k": "k066",
+"tr": "whipL"
+},
+{
+"a": 1155.942,
+"kind": "W",
+"scene": "row:open~1",
+"tr": "whipL"
+},
+{
+"a": 1160.27,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 1165.457,
+"kind": "W",
+"scene": "table~1",
+"tr": "portal"
+},
+{
+"a": 1169.457,
+"kind": "W",
+"scene": "pan:3~2",
+"tr": "whipL"
+},
+{
+"a": 1173.457,
+"kind": "W",
+"scene": "card:3~2",
+"tr": "whipL"
+},
+{
+"a": 1178.235,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 1182.675,
+"kind": "CL",
+"k": "k067",
+"tr": "whip"
+},
+{
+"a": 1185.075,
+"kind": "CL",
+"k": "k068",
+"tr": "whipL"
+},
+{
+"a": 1187.805,
+"kind": "W",
+"scene": "pan:4c",
+"tr": "whipL"
+},
+{
+"a": 1193.057,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 1197.16,
+"kind": "CL",
+"k": "k069",
+"tr": "whipL"
+},
+{
+"a": 1207.423,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 1211.383,
+"kind": "CL",
+"k": "k070",
+"tr": "whip"
+},
+{
+"a": 1217.783,
+"kind": "W",
+"scene": "pan:4~0",
+"tr": "whipL"
+},
+{
+"a": 1224.713,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 1230.031,
+"kind": "CL",
+"k": "k071",
+"tr": "whip"
+},
+{
+"a": 1236.431,
+"kind": "W",
+"scene": "card:4~0",
+"tr": "whipL"
+},
+{
+"a": 1242.669,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 1247.307,
+"kind": "CL",
+"k": "k072",
+"tr": "push"
+},
+{
+"a": 1249.707,
+"kind": "CL",
+"k": "k073",
+"tr": "whipL"
+},
+{
+"a": 1256.921,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 1262.963,
+"kind": "CL",
+"k": "k073",
+"tr": "push",
+"from": 7.214
+},
+{
+"a": 1273.949,
+"kind": "W",
+"scene": "book:034~0",
+"tr": "whipL"
+},
+{
+"a": 1276.394,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 1280.631,
+"kind": "CL",
+"k": "k074",
+"tr": "whip"
+},
+{
+"a": 1291.893,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 1295.842,
+"kind": "CL",
+"k": "k074",
+"tr": "push",
+"from": 11.262
+},
+{
+"a": 1302.78,
+"kind": "W",
+"scene": "row:open~0",
+"tr": "whipL"
+},
+{
+"a": 1309.067,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 1313.811,
+"kind": "CL",
+"k": "k075",
+"tr": "whipL"
+},
+{
+"a": 1316.211,
+"kind": "CL",
+"k": "k076",
+"tr": "whip"
+},
+{
+"a": 1318.611,
+"kind": "W",
+"scene": "pan:4",
+"tr": "whipL"
+},
+{
+"a": 1325.447,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 1329.287,
+"kind": "CL",
+"k": "k077",
+"tr": "whip"
+},
+{
+"a": 1339.018,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 1344.688,
+"kind": "CL",
+"k": "k078",
+"tr": "whipL"
+},
+{
+"a": 1351.846,
+"kind": "CL",
+"k": "k079",
+"tr": "push"
+},
+{
+"a": 1358.044,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 1362.616,
+"kind": "CL",
+"k": "k080",
+"tr": "whipL"
+},
+{
+"a": 1369.016,
+"kind": "W",
+"scene": "table~0",
+"tr": "whipL"
+},
+{
+"a": 1375.021,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 1379.902,
+"kind": "CL",
+"k": "k081",
+"tr": "flip"
+},
+{
+"a": 1386.302,
+"kind": "W",
+"scene": "pan:4~1",
+"tr": "portal"
+},
+{
+"a": 1391.367,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 1394.742,
+"kind": "W",
+"scene": "head",
+"tr": "whipL"
+},
+{
+"a": 1401.142,
+"kind": "W",
+"scene": "card:4~1",
+"tr": "whipL"
+},
+{
+"a": 1405.957,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 1410.439,
+"kind": "CL",
+"k": "k082",
+"tr": "whipL"
+},
+{
+"a": 1413.006,
+"kind": "CL",
+"k": "k083",
+"tr": "whip"
+},
+{
+"a": 1420.999,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 1424.44,
+"kind": "W",
+"scene": "coffee",
+"tr": "whipL"
+},
+{
+"a": 1426.84,
+"kind": "CL",
+"k": "k084",
+"tr": "whip"
+},
+{
+"a": 1436.818,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 1441.65,
+"kind": "CL",
+"k": "k084",
+"tr": "push",
+"from": 9.978
+},
+{
+"a": 1449.872,
+"kind": "W",
+"scene": "book:034~1",
+"tr": "whipL"
+},
+{
+"a": 1450.986,
+"kind": "CL",
+"k": "k086",
+"tr": "whipL"
+},
+{
+"a": 1453.954,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 1457.561,
+"kind": "W",
+"scene": "pan:5c",
+"tr": "whipL"
+},
+{
+"a": 1459.961,
+"kind": "W",
+"scene": "book:035f034",
+"tr": "whipL"
+},
+{
+"a": 1469.092,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 1475.236,
+"kind": "CL",
+"k": "k087",
+"tr": "whip"
+},
+{
+"a": 1482.606,
+"kind": "CL",
+"k": "k088",
+"tr": "whipL"
+},
+{
+"a": 1488.583,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 1493.884,
+"kind": "W",
+"scene": "pan:5",
+"tr": "whipL"
+},
+{
+"a": 1501.065,
+"kind": "CL",
+"k": "k089",
+"tr": "whipL"
+},
+{
+"a": 1505.514,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 1509.321,
+"kind": "CL",
+"k": "k090",
+"tr": "whip"
+},
+{
+"a": 1519.106,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 1523.744,
+"kind": "W",
+"scene": "pan:5~0",
+"tr": "whipL"
+},
+{
+"a": 1527.744,
+"kind": "W",
+"scene": "card:5~0",
+"tr": "portal"
+},
+{
+"a": 1531.744,
+"kind": "W",
+"scene": "book:035~0",
+"tr": "whipL"
+},
+{
+"a": 1537.384,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 1542.458,
+"kind": "CL",
+"k": "k091",
+"tr": "push"
+},
+{
+"a": 1553.107,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 1557.616,
+"kind": "CL",
+"k": "k091",
+"tr": "push",
+"from": 10.649
+},
+{
+"a": 1565.167,
+"kind": "W",
+"scene": "row:open~0",
+"tr": "whipL"
+},
+{
+"a": 1569.845,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 1574.285,
+"kind": "CL",
+"k": "k092",
+"tr": "flip"
+},
+{
+"a": 1580.685,
+"kind": "W",
+"scene": "table~0",
+"tr": "portal"
+},
+{
+"a": 1586.202,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 1590.648,
+"kind": "W",
+"scene": "pan:5",
+"tr": "whipL"
+},
+{
+"a": 1597.048,
+"kind": "W",
+"scene": "pan:5~1",
+"tr": "whipL"
+},
+{
+"a": 1602.042,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 1607.026,
+"kind": "CL",
+"k": "k093",
+"tr": "whipL"
+},
+{
+"a": 1609.746,
+"kind": "CL",
+"k": "k094",
+"tr": "whip"
+},
+{
+"a": 1614.986,
+"kind": "CL",
+"k": "k095",
+"tr": "flip"
+},
+{
+"a": 1620.562,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 1624.388,
+"kind": "CL",
+"k": "k096",
+"tr": "whip"
+},
+{
+"a": 1630.788,
+"kind": "W",
+"scene": "card:5~1",
+"tr": "whipL"
+},
+{
+"a": 1636.515,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 1640.209,
+"kind": "W",
+"scene": "book:035~1",
+"tr": "whipL"
+},
+{
+"a": 1644.209,
+"kind": "W",
+"scene": "row:open~1",
+"tr": "portal"
+},
+{
+"a": 1651.097,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 1656.784,
+"kind": "CL",
+"k": "k097",
+"tr": "whip"
+},
+{
+"a": 1659.184,
+"kind": "W",
+"scene": "pan:6c",
+"tr": "whipL"
+},
+{
+"a": 1665.065,
+"kind": "W",
+"scene": "book:036f035",
+"tr": "portal"
+},
+{
+"a": 1669.357,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 1673.286,
+"kind": "CL",
+"k": "k098",
+"tr": "whipL"
+},
+{
+"a": 1676.886,
+"kind": "W",
+"scene": "pan:6~0",
+"tr": "whipL"
+},
+{
+"a": 1682.248,
+"kind": "CL",
+"k": "k099",
+"tr": "whipL"
+},
+{
+"a": 1685.313,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 1691.185,
+"kind": "CL",
+"k": "k100",
+"tr": "whip"
+},
+{
+"a": 1697.585,
+"kind": "W",
+"scene": "card:6~0",
+"tr": "whipL"
+},
+{
+"a": 1703.445,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 1708.343,
+"kind": "CL",
+"k": "k101",
+"tr": "whip"
+},
+{
+"a": 1713.388,
+"kind": "CL",
+"k": "k102",
+"tr": "whipL"
+},
+{
+"a": 1719.814,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 1723.21,
+"kind": "W",
+"scene": "book:036~0",
+"tr": "whipL"
+},
+{
+"a": 1727.21,
+"kind": "W",
+"scene": "row:open~0",
+"tr": "portal"
+},
+{
+"a": 1734.764,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 1740.17,
+"kind": "CL",
+"k": "k103",
+"tr": "whip"
+},
+{
+"a": 1752.897,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 1757.041,
+"kind": "CL",
+"k": "k103",
+"tr": "push",
+"from": 12.727
+},
+{
+"a": 1762.514,
+"kind": "CL",
+"k": "k104",
+"tr": "whip"
+},
+{
+"a": 1768.013,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 1772.166,
+"kind": "CL",
+"k": "k104",
+"tr": "push",
+"from": 5.499
+},
+{
+"a": 1781.706,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 1787.667,
+"kind": "CL",
+"k": "k104",
+"tr": "push",
+"from": 15.039
+},
+{
+"a": 1790.828,
+"kind": "CL",
+"k": "k105",
+"tr": "whipL"
+},
+{
+"a": 1800.416,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 1804.738,
+"kind": "CL",
+"k": "k106",
+"tr": "whip"
+},
+{
+"a": 1808.338,
+"kind": "W",
+"scene": "table~0",
+"tr": "whipL"
+},
+{
+"a": 1813.068,
+"kind": "CL",
+"k": "k107",
+"tr": "whip"
+},
+{
+"a": 1816.664,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 1821.792,
+"kind": "W",
+"scene": "pan:6~1",
+"tr": "whipL"
+},
+{
+"a": 1825.792,
+"kind": "W",
+"scene": "card:6~1",
+"tr": "whipL"
+},
+{
+"a": 1833.303,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 1836.766,
+"kind": "CL",
+"k": "k108",
+"tr": "whipL"
+},
+{
+"a": 1843.166,
+"kind": "W",
+"scene": "book:036~1",
+"tr": "whipL"
+},
+{
+"a": 1849.951,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 1853.355,
+"kind": "CL",
+"k": "k109",
+"tr": "flip"
+},
+{
+"a": 1858.48,
+"kind": "CL",
+"k": "x01",
+"tr": "whip"
+},
+{
+"a": 1862.08,
+"kind": "W",
+"scene": "book:001~0",
+"tr": "whipL"
+},
+{
+"a": 1866.18,
+"kind": "CL",
+"k": "x28",
+"tr": "push"
+},
+{
+"a": 1870.12,
+"kind": "CL",
+"k": "x29",
+"tr": "whipL"
+},
+{
+"a": 1872.52,
+"kind": "CL",
+"k": "x30",
+"tr": "whip"
+},
+{
+"a": 1874.92,
+"kind": "CL",
+"k": "x02",
+"tr": "flip"
+},
+{
+"a": 1878.52,
+"kind": "W",
+"scene": "table~0",
+"tr": "portal"
+},
+{
+"a": 1890.5,
+"kind": "CL",
+"k": "x31",
+"tr": "whipL"
+},
+{
+"a": 1892.9,
+"kind": "CL",
+"k": "x03",
+"tr": "push"
+},
+{
+"a": 1899.86,
+"kind": "CL",
+"k": "x04",
+"tr": "whipL"
+},
+{
+"a": 1905.92,
+"kind": "CL",
+"k": "x32",
+"tr": "whip"
+},
+{
+"a": 1909.52,
+"kind": "W",
+"scene": "row:open~0",
+"tr": "whipL"
+},
+{
+"a": 1916.0,
+"kind": "CL",
+"k": "x33",
+"tr": "whip"
+},
+{
+"a": 1920.32,
+"kind": "CL",
+"k": "x34",
+"tr": "whipL"
+},
+{
+"a": 1927.12,
+"kind": "CL",
+"k": "x05",
+"tr": "push"
+},
+{
+"a": 1930.72,
+"kind": "W",
+"scene": "head~0",
+"tr": "portal"
+},
+{
+"a": 1938.72,
+"kind": "CL",
+"k": "x35",
+"tr": "whip"
+},
+{
+"a": 1942.32,
+"kind": "W",
+"scene": "stairs~0",
+"tr": "whipL"
+},
+{
+"a": 1946.42,
+"kind": "CL",
+"k": "x06",
+"tr": "whip"
+},
+{
+"a": 1964.62,
+"kind": "W",
+"scene": "row~0",
+"tr": "whipL"
+},
+{
+"a": 1969.447,
+"kind": "CL",
+"k": "x36",
+"tr": "push"
+},
+{
+"a": 1973.047,
+"kind": "W",
+"scene": "book:001~1",
+"tr": "portal"
+},
+{
+"a": 1987.607,
+"kind": "CL",
+"k": "x37",
+"tr": "whip"
+},
+{
+"a": 1991.207,
+"kind": "W",
+"scene": "table~1",
+"tr": "whipL"
+},
+{
+"a": 1999.807,
+"kind": "CL",
+"k": "x08",
+"tr": "whip"
+},
+{
+"a": 2002.727,
+"kind": "CL",
+"k": "x38",
+"tr": "whipL"
+},
+{
+"a": 2009.447,
+"kind": "CL",
+"k": "x09",
+"tr": "push"
+},
+{
+"a": 2013.047,
+"kind": "W",
+"scene": "row:open~1",
+"tr": "portal"
+},
+{
+"a": 2018.727,
+"kind": "CL",
+"k": "x39",
+"tr": "whip"
+},
+{
+"a": 2025.367,
+"kind": "CL",
+"k": "x10",
+"tr": "flip"
+},
+{
+"a": 2028.967,
+"kind": "W",
+"scene": "head~1",
+"tr": "portal"
+},
+{
+"a": 2035.447,
+"kind": "CL",
+"k": "x11",
+"tr": "whipL"
+},
+{
+"a": 2037.847,
+"kind": "CL",
+"k": "x40",
+"tr": "push"
+},
+{
+"a": 2041.447,
+"kind": "W",
+"scene": "stairs~1",
+"tr": "portal"
+},
+{
+"a": 2045.967,
+"kind": "CL",
+"k": "x41",
+"tr": "whip"
+},
+{
+"a": 2049.327,
+"kind": "CL",
+"k": "x42",
+"tr": "flip"
+},
+{
+"a": 2053.607,
+"kind": "CL",
+"k": "x12",
+"tr": "whip"
+},
+{
+"a": 2057.207,
+"kind": "W",
+"scene": "row~1",
+"tr": "whipL"
+},
+{
+"a": 2068.347,
+"kind": "CL",
+"k": "x43",
+"tr": "push"
+},
+{
+"a": 2071.947,
+"kind": "W",
+"scene": "book:001~2",
+"tr": "portal"
+},
+{
+"a": 2080.033,
+"kind": "CL",
+"k": "x44",
+"tr": "whip"
+},
+{
+"a": 2082.433,
+"kind": "CL",
+"k": "x45",
+"tr": "flip"
+},
+{
+"a": 2086.033,
+"kind": "W",
+"scene": "table~2",
+"tr": "portal"
+},
+{
+"a": 2093.693,
+"kind": "CL",
+"k": "x13",
+"tr": "whipL"
+},
+{
+"a": 2097.293,
+"kind": "W",
+"scene": "row:open~2",
+"tr": "whipL"
+},
+{
+"a": 2101.273,
+"kind": "CL",
+"k": "x46",
+"tr": "whipL"
+},
+{
+"a": 2104.573,
+"kind": "CL",
+"k": "x14",
+"tr": "whip"
+},
+{
+"a": 2111.893,
+"kind": "CL",
+"k": "x15",
+"tr": "flip"
+},
+{
+"a": 2118.493,
+"kind": "CL",
+"k": "x47",
+"tr": "whip"
+},
+{
+"a": 2122.093,
+"kind": "W",
+"scene": "head~2",
+"tr": "whipL"
+},
+{
+"a": 2127.733,
+"kind": "CL",
+"k": "x16",
+"tr": "push"
+},
+{
+"a": 2133.293,
+"kind": "CL",
+"k": "x48",
+"tr": "whipL"
+},
+{
+"a": 2135.693,
+"kind": "CL",
+"k": "x17",
+"tr": "whip"
+},
+{
+"a": 2139.293,
+"kind": "W",
+"scene": "stairs~2",
+"tr": "whipL"
+},
+{
+"a": 2145.933,
+"kind": "CL",
+"k": "x18",
+"tr": "whip"
+},
+{
+"a": 2164.133,
+"kind": "W",
+"scene": "row~2",
+"tr": "whipL"
+},
+{
+"a": 2167.973,
+"kind": "CL",
+"k": "x49",
+"tr": "push"
+},
+{
+"a": 2171.573,
+"kind": "W",
+"scene": "book:001~3",
+"tr": "portal"
+},
+{
+"a": 2181.093,
+"kind": "CL",
+"k": "x20",
+"tr": "whip"
+},
+{
+"a": 2185.02,
+"kind": "CL",
+"k": "x50",
+"tr": "flip"
+},
+{
+"a": 2192.14,
+"kind": "CL",
+"k": "x21",
+"tr": "whip"
+},
+{
+"a": 2195.74,
+"kind": "W",
+"scene": "table~3",
+"tr": "whipL"
+},
+{
+"a": 2203.2,
+"kind": "CL",
+"k": "x51",
+"tr": "push"
+},
+{
+"a": 2206.8,
+"kind": "W",
+"scene": "row:open~3",
+"tr": "portal"
+},
+{
+"a": 2214.66,
+"kind": "CL",
+"k": "x22",
+"tr": "whip"
+},
+{
+"a": 2217.06,
+"kind": "CL",
+"k": "x52",
+"tr": "flip"
+},
+{
+"a": 2219.46,
+"kind": "CL",
+"k": "x53",
+"tr": "whip"
+},
+{
+"a": 2225.18,
+"kind": "CL",
+"k": "x23",
+"tr": "whipL"
+},
+{
+"a": 2227.94,
+"kind": "CL",
+"k": "x24",
+"tr": "push"
+},
+{
+"a": 2231.54,
+"kind": "W",
+"scene": "head~3",
+"tr": "portal"
+},
+{
+"a": 2238.0,
+"kind": "CL",
+"k": "x54",
+"tr": "whip"
+},
+{
+"a": 2241.6,
+"kind": "W",
+"scene": "stairs~3",
+"tr": "whipL"
+},
+{
+"a": 2253.58,
+"kind": "CL",
+"k": "x55",
+"tr": "whip"
+},
+{
+"a": 2257.18,
+"kind": "W",
+"scene": "row~3",
+"tr": "whipL"
+},
+{
+"a": 2266.86,
+"kind": "CL",
+"k": "x56",
+"tr": "push"
+},
+{
+"a": 2271.3,
+"kind": "CL",
+"k": "x25",
+"tr": "whipL"
+},
+{
+"a": 2289.5,
+"kind": "CL",
+"k": "x26",
+"tr": "whip"
+},
+{
+"a": 2292.06,
+"kind": "CL",
+"k": "x27",
+"tr": "flip"
+},
+{
+"a": 2297.935,
+"kind": "CL",
+"k": "x57",
+"tr": "whip"
+},
+{
+"a": 2300.335,
+"kind": "CL",
+"k": "k110",
+"tr": "whipL"
+},
+{
+"a": 2305.303,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 2310.743,
+"kind": "CL",
+"k": "k111",
+"tr": "push"
+},
+{
+"a": 2316.375,
+"kind": "CL",
+"k": "k112",
+"tr": "whipL"
+},
+{
+"a": 2323.52,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 2328.401,
+"kind": "CL",
+"k": "k112",
+"tr": "push",
+"from": 7.145
+},
+{
+"a": 2339.636,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 2343.778,
+"kind": "W",
+"scene": "book:001~0",
+"tr": "whipL"
+},
+{
+"a": 2347.778,
+"kind": "W",
+"scene": "table~0",
+"tr": "portal"
+},
+{
+"a": 2353.964,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 2360.226,
+"kind": "CL",
+"k": "k113",
+"tr": "whipL"
+},
+{
+"a": 2366.626,
+"kind": "W",
+"scene": "row:open~0",
+"tr": "whipL"
+},
+{
+"a": 2372.433,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 2377.416,
+"kind": "CL",
+"k": "k114",
+"tr": "whipL"
+},
+{
+"a": 2383.816,
+"kind": "W",
+"scene": "head~0",
+"tr": "whipL"
+},
+{
+"a": 2389.599,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 2395.667,
+"kind": "CL",
+"k": "k115",
+"tr": "flip"
+},
+{
+"a": 2399.267,
+"kind": "W",
+"scene": "stairs~0",
+"tr": "portal"
+},
+{
+"a": 2405.475,
+"kind": "CL",
+"k": "k116",
+"tr": "whipL"
+},
+{
+"a": 2407.714,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 2412.154,
+"kind": "CL",
+"k": "k117",
+"tr": "push"
+},
+{
+"a": 2414.554,
+"kind": "W",
+"scene": "book:001",
+"tr": "portal"
+},
+{
+"a": 2424.689,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 2428.803,
+"kind": "CL",
+"k": "k118",
+"tr": "whip"
+},
+{
+"a": 2440.599,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 2445.481,
+"kind": "CL",
+"k": "k118",
+"tr": "push",
+"from": 11.796
+},
+{
+"a": 2451.885,
+"kind": "W",
+"scene": "row~0",
+"tr": "portal"
+},
+{
+"a": 2458.238,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 2462.286,
+"kind": "CL",
+"k": "k119",
+"tr": "whipL"
+},
+{
+"a": 2468.686,
+"kind": "W",
+"scene": "book:001~1",
+"tr": "whipL"
+},
+{
+"a": 2474.146,
+"kind": "AV",
+"tr": "light"
+},
+{
+"a": 2478.613,
+"kind": "W",
+"scene": "card:5",
+"tr": "portal"
+},
+{
+"a": 2483.715,
+"kind": "W",
+"scene": "row:open",
+"tr": "whipL"
+},
+{
+"a": 2487.695,
+"kind": "W",
+"scene": "pan:0",
+"tr": "whipL"
+},
+{
+"a": 2490.203,
+"kind": "AV",
+"tr": "whipL"
+},
+{
+"a": 2494.351,
+"kind": "W",
+"scene": "pan:1",
+"tr": "portal"
+},
+{
+"a": 2496.751,
+"kind": "W",
+"scene": "pan:2",
+"tr": "whipL"
+},
+{
+"a": 2499.151,
+"kind": "W",
+"scene": "pan:3",
+"tr": "whipL"
+},
+{
+"a": 2501.655,
+"kind": "W",
+"scene": "pan:4",
+"tr": "portal"
+},
+{
+"a": 2504.895,
+"kind": "W",
+"scene": "pan:5",
+"tr": "whipL"
+},
+{
+"a": 2507.46,
+"kind": "AV",
+"tr": "whip"
+},
+{
+"a": 2512.676,
+"kind": "W",
+"scene": "pan:6",
+"tr": "whipL"
+},
+{
+"a": 2519.076,
+"kind": "W",
+"scene": "table~1",
+"tr": "portal"
+},
+{
+"a": 2524.385,
+"kind": "AV",
+"tr": "push"
+},
+{
+"a": 2530.336,
+"kind": "CL",
+"k": "k120",
+"tr": "whipL"
+},
+{
+"a": 2533.936,
+"kind": "W",
+"scene": "row:open~1",
+"tr": "whipL"
+},
+{
+"a": 2539.195,
+"kind": "CL",
+"k": "y01",
+"tr": "whipL"
+},
+{
+"a": 2542.795,
+"kind": "W",
+"scene": "head~1",
+"tr": "whipL"
+},
+{
+"a": 2550.835,
+"kind": "CL",
+"k": "x58",
+"tr": "flip"
+},
+{
+"a": 2553.235,
+"kind": "CL",
+"k": "k121",
+"tr": "whip"
+},
+{
+"a": 2556.835,
+"kind": "W",
+"scene": "stairs~1",
+"tr": "whipL"
+},
+{
+"a": 2570.695,
+"kind": "CL",
+"k": "y02",
+"tr": "push"
+},
+{
+"a": 2588.895,
+"kind": "W",
+"scene": "row~1",
+"tr": "portal"
+},
+{
+"a": 2596.535,
+"kind": "CL",
+"k": "k122",
+"tr": "whip"
+},
+{
+"a": 2600.135,
+"kind": "W",
+"scene": "book:001~2",
+"tr": "whipL"
+},
+{
+"a": 2604.695,
+"kind": "CL",
+"k": "y03",
+"tr": "whip"
+},
+{
+"a": 2608.295,
+"kind": "W",
+"scene": "table~2",
+"tr": "whipL"
+},
+{
+"a": 2615.095,
+"kind": "CL",
+"k": "k123",
+"tr": "push"
+},
+{
+"a": 2618.695,
+"kind": "W",
+"scene": "row:open~2",
+"tr": "portal"
+},
+{
+"a": 2625.635,
+"kind": "CL",
+"k": "x59",
+"tr": "whip"
+},
+{
+"a": 2633.055,
+"kind": "W",
+"scene": "book:028",
+"tr": "whipL"
+},
+{
+"a": 2637.695,
+"kind": "CL",
+"k": "k124",
+"tr": "whip"
+},
+{
+"a": 2643.955,
+"kind": "CL",
+"k": "x60",
+"tr": "whipL"
+},
+{
+"a": 2647.555,
+"kind": "W",
+"scene": "head~2",
+"tr": "whipL"
+},
+{
+"a": 2653.735,
+"kind": "CL",
+"k": "x61",
+"tr": "whipL"
+},
+{
+"a": 2660.375,
+"kind": "W",
+"scene": "table",
+"tr": "whipL"
+}
+]
+}
