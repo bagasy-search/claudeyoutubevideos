@@ -54,7 +54,7 @@ export const TelGrande: React.FC<{ modo: "hora" | "screentime" | "feed" | "apaga
               <div style={{ position: "absolute", left: 40, right: 40, top: 430, height: 300, display: "flex", alignItems: "flex-end", gap: 12 }}>
                 {[0.2, 0.1, 0.05, 0.0, 0.0, 0.1, 0.3, 0.45, 0.4, 0.6, 0.55, 0.7, 0.8, 0.9, 1].map((v, q) => <div key={q} style={{ flex: 1, height: `${100 * v * interpolate(f, [desde + 6 + q * 2, desde + 18 + q * 2], [0, 1], cl)}%`, borderRadius: 6, background: q > 10 ? ACENTO : "#5a606b" }} />)}
               </div>
-              {["Social", "Video", "Games"].map((n, q) => <div key={n} style={{ position: "absolute", left: 40, right: 40, top: 770 + q * 56, height: 40, color: "#c9ced6", fontSize: 30, display: "flex", justifyContent: "space-between" }}><span>{n}</span><span style={{ color: q === 0 ? ACENTO : "#c9ced6" }}>{["5h 51m", "2h 37m", "1h 14m"][q]}</span></div>)}
+              {["Social", "Video", "Games"].map((n, q) => <div key={n} style={{ position: "absolute", left: 40, right: 40, top: 770 + q * 56, height: 40, color: "#c9ced6", fontSize: 30, display: "flex", justifyContent: "space-between" }}><span>{n}</span><span style={{ color: q === 0 ? ACENTO : "#c9ced6" }}>{/* parciales proporcionales al total: siempre suman lo que dice la pantalla */}{hm(q === 2 ? m - Math.round(m * 0.6) - Math.round(m * 0.27) : Math.round(m * [0.6, 0.27][q]))}</span></div>)}
             </div>
           )}
           {modo === "feed" && (

@@ -890,11 +890,12 @@ export const Q81Premio: React.FC = () => (
 );
 // ---------- 82 · Leo agarra el tel ----------
 // v4: las piernas van estiradas hacia atrás sobre el colchón (antes se encimaban con el torso = mancha) y la cámara abre: cuerpo entero.
-const ACOST82 = { ...ACOST, pI: -92, rI: -14, pD: -86, rD: -8 };
+// v4b: de costado con rodillas dobladas (como Q80, se lee cadera y rodilla) y el brazo izq. detrás del torso (no asoma bajo la rodilla)
+const ACOST82 = { ...ACOST, tronco: -82, pI: -96, rI: 45, pD: -88, rD: 55, hI: 160, cI: 10 };
 export const Q82Agarra: React.FC = () => {
   const f = useF();
   return (
-    <Cto cl={[mira(0, CTO_PUNTOS.colchon - 20, 690, 2.15), mira(54, CTO_PUNTOS.colchon - 10, 690, 2.3)]}
+    <Cto cl={[mira(0, CTO_PUNTOS.colchon - 20, 740, 2.1), mira(54, CTO_PUNTOS.colchon - 10, 720, 2.25)]}
       leo={{ poses: [{ f: 0, v: ACOST82 }, { f: 14, v: { ...ACOST82, tronco: -40, cabeza: 6, hD: 90, cD: 20 } }, { f: 40, v: { ...ACOST82, tronco: -30, cabeza: 18, hD: 30, cD: 125 } }],
         enManoD: (fr: number) => (fr >= 26 ? <Tel /> : null), caras: [{ f: 0, v: "duda" }, { f: 30, v: "cansado" }], miradas: [{ f: 0, v: { x: 0.8, y: 0.3 } }, { f: 40, v: { x: 0.3, y: 0.7 } }] }}
       medio={<>{f < 26 && <TelMesa x={CTO_PUNTOS.colchon + 200} y={CP - 40} vibra={1} />}</>} hud={<Hud2 m={126} dia={4} est="sube" />} />
