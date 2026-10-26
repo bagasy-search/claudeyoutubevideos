@@ -241,7 +241,7 @@ export const Pistas: React.FC<PistasProps> = ({ capa, f, pal, luz = "liga", dia,
       <rect x={1890} y={-1200} width={62} height={P + 1200} fill="#24343a" />
       <rect x={1890} y={-1200} width={10} height={P + 1200} fill="#1a262a" />
       <rect x={1890} y={P - 40} width={62} height={40} fill="#1a262a" />
-      {tiza > 0 && <Rayitas n={Math.floor(tiza)} nueva={tiza % 1 || 1} x={1904} y={P - 560} />}
+      {tiza > 0 && <Rayitas n={Math.ceil(tiza)} nueva={tiza % 1 || 1} x={1904} y={P - 205} />}
       <LetreroSala oscuro={oscuro} />
       {/* monitores */}
       {Array.from({ length: 16 }).map((_, i) => <Monitor key={`t${i}`} cx={pistaX(i + 1)} n={i + 1} prendido={!oscuro} dia={i + 1 === 8 ? dia : undefined} f={f} />)}
@@ -347,7 +347,7 @@ export const Pistas: React.FC<PistasProps> = ({ capa, f, pal, luz = "liga", dia,
       </>}
       {oscuro && dia && <Monitor cx={pistaX(8)} n={8} prendido dia={dia} f={f} />}
       {oscuro && <><rect x={5030} y={P - 720} width={140} height={56} rx={6} fill="#1a0a0a" /><text x={5100} y={P - 680} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={40} fill={pal.acento}>EXIT</text></>}
-      {oscuro && tiza > 0 && <Rayitas n={Math.floor(tiza)} nueva={tiza % 1 || 1} x={1904} y={P - 560} color={mezclar(TIZA, "#ff9a3d", 0.15)} />}
+      {oscuro && tiza > 0 && <Rayitas n={Math.ceil(tiza)} nueva={tiza % 1 || 1} x={1904} y={P - 205} color={mezclar(TIZA, "#ff9a3d", 0.15)} />}
     </g>
   );
 };
