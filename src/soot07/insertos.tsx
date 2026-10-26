@@ -358,7 +358,19 @@ const Uno: React.FC<{ i: Ins; t: number; px: number; py: number; sopa?: boolean 
   if (R <= 1) return null;
   const [c1, c2] = PALETA[i.fondo] ?? PALETA.violeta;
   const lt = t - i.t;
-  const ps = pose(i.pose, lt);
+  // OJO v3: en los inserts largos el nene cambia de reacción cada 4,5 s (mezcla suave), nada queda quieto
+  const ps = (() => {
+    if (i.v === "cta" || lt < 4.5) return pose(i.pose, lt);
+    const ALT: Pose[] = ["senala", "piensa", "lee"];
+    const pk = (n: number): Pose => (n <= 0 ? i.pose : n % 2 ? ALT[(n + Math.round(i.t)) % 3] : i.pose);
+    const n = Math.floor(lt / 4.5), u = cl((lt - n * 4.5) / 0.35);
+    const a = pose(pk(n - 1), lt), b = pose(pk(n), lt);
+    const out: Record<string, unknown> = { ...b };
+    (["bI", "bD", "cI", "cD", "ladea", "inclina", "mira", "miraY"] as const).forEach((k) => { const va = (a as unknown as Record<string, number | undefined>)[k] ?? 0, vb = (b as unknown as Record<string, number | undefined>)[k] ?? 0; out[k] = va + (vb - va) * u; });
+    out.expr = u < 0.5 ? a.expr : b.expr;
+    return out as ReturnType<typeof pose>;
+  })();
+  const acerca = 1 + 0.05 * cl(lt / 12);
   const tituloE = ent(t, i.t + 0.25, 0, { damping: 11, stiffness: 190 });
   // OJO v3: rompe la plantilla: uno sí y uno no, el nene a la derecha y el componente corrido a la izquierda
   const espejo = i.v !== "cta" && !i.otro && i.nx === undefined && INS.indexOf(i) % 2 === 1;
@@ -377,7 +389,7 @@ const Uno: React.FC<{ i: Ins; t: number; px: number; py: number; sopa?: boolean 
         <path d="M -30 -150 Q -10 -158 6 -146 L 4 -96 Q 0 -86 -4 -96 L -6 -130 Q -20 -124 -24 -132 Z" fill="#d9a83a" stroke="#8a5a18" strokeWidth={3} opacity={0.85} />
       </g></svg>}
       {i.otro && <Persona x={i.otro.x} y={1010} h={i.otro.h ?? 520} t={t} seed={i.otro.seed ?? 400} ropa={i.otro.ropa ?? CIVIL(1)} {...pose(i.otro.pose, lt)} flip={i.otro.flip} />}
-      <svg style={{ position: "absolute", inset: 0, overflow: "visible" }} width={1920} height={1080}><g transform={`translate(${DX} 0)`}>
+      <svg style={{ position: "absolute", inset: 0, overflow: "visible" }} width={1920} height={1080}><g transform={`translate(${DX} 0) translate(1240 560) scale(${acerca}) translate(-1240 -560)`}>
         {i.v === "doc" && <Doc t={t} i={i} />}
         {i.v === "vs" && <Vs t={t} i={i} />}
         {i.v === "barras" && <Barras t={t} i={i} />}
