@@ -28,11 +28,11 @@ export const K8: Key[] = [
   [819.9, 4000, 1450, 0.33, 0.6],
   [822.0, 4300, 1550, 0.4, 2.0],
   [823.3, BON - 20, 1760, 1.5, 1.0],
-  [827.4, BON - 70, 1770, 2.1, 1.4],
+  [827.4, BON - 70, 1760, 2.8, 1.4],
   [830.6, 4900, 1650, 0.85, 1.0],
-  [833.0, BON - 150, 1750, 1.6, 0.8],
-  [839.0, BON - 100, 1760, 1.3, 4.0],
-  [840.4, BON - 20, 1760, 1.9, 0.7],
+  [833.0, BON - 150, 1745, 2.4, 0.8],
+  [839.0, BON - 100, 1755, 2.0, 4.0],
+  [840.4, BON - 40, 1750, 2.8, 0.7],
   [842.4, 4700, 1650, 0.8, 0.8],
   [843.6, 3900, 1450, -1.0, 0.6],
   [846.0, 2300, 1100, -0.42, 2.2],
@@ -48,15 +48,15 @@ export const K8: Key[] = [
   [870.2, WX + 520, 4500, 1.4, 0.8],
   [874.6, CX, 4500, 1.2, 1.2],
   [879.0, CX, 4540, 1.5, 2.0],
-  [883.9, CX + 130, CY + 60, 3.6, 0.45, "seco"],
+  [883.9, CX + 190, CY + 70, 3.6, 0.45, "seco"],
   [885.2, CX + 100, 4580, 2.4, 1.0],
   [889.8, CX, 4500, 1.0, 4.5],
   [892.6, CX, 1800, 0.55, 2.6],
   [898.6, CX + 100, 1750, 0.6, 5.0],
   [900.0, CX + 200, 1950, 1.5, 1.2],
   [903.2, CX + 200, 2150, 1.7, 2.4],
-  [904.6, CX + 130, CY + 60, 2.6, 1.4],
-  [907.9, CX + 130, CY + 60, 3.2, 3.2],
+  [904.6, CX + 190, CY + 70, 2.6, 1.4],
+  [907.9, CX + 190, CY + 70, 3.2, 3.2],
   [909.4, CX, 1500, 0.5, 1.4],
   [923, CX + 300, 1500, 0.55, 13],
 ];
@@ -108,6 +108,12 @@ export const M8: React.FC<{ t: number }> = ({ t }) => {
       {salto && <Persona x={salto.x} y={salto.y} h={112 + prog(t, 842.5, 843.5) * 63} t={t} seed={330} ropa={JOHN} flip expr="feliz" bD={160} bI={160} />}
       {en(t, 822.3, 843.6) && <Persona x={BON + 90} y={DK} h={165} t={t} seed={340} ropa={MADRE} flip expr={t > 840.4 ? "sorpresa" : t > 832.8 ? "miedo" : "neutro"} bD={en(t, 832.8, 843.6) ? 120 : 15} cD={60} />}
       <G>
+        {en(t, 822.3, 843.6) && <g>
+          <rect x={BON - 600} y={DK - 62} width={1150} height={16} rx={6} fill="#6b3a1f" />
+          {Array.from({ length: 17 }, (_, i) => <rect key={i} x={BON - 590 + i * 70} y={DK - 50} width={12} height={52} fill="#7a4a2a" />)}
+          <path d={`M ${BON - 420} ${DK - 60} L ${BON - 300} ${DK - 600}`} stroke="#4a2e22" strokeWidth={6} />
+          <path d={`M ${BON + 380} ${DK - 60} L ${BON + 260} ${DK - 600}`} stroke="#4a2e22" strokeWidth={6} />
+        </g>}
         <Lbl t={t} t0={812.3} t1={813.4} x={4900} y={MAR - 120} txt="REMEMBER?" size={44} color={C.ambar} />
         <S t={812.2} p="splash" g={-10} />
         <S t={812.3} p="ding" g={-10} />
@@ -126,7 +132,7 @@ export const M8: React.FC<{ t: number }> = ({ t }) => {
         <P t={t} t0={832.8} t1={834.5} x={BON - 260} y={DK - 200} s={0.5}><Globo txt="TAKE ME!" cola={1} /></P>
         <S t={832.8} p="pop" g={-6} />
         <S t={833.0} p="cheer" g={-12} d={1.5} />
-        <P t={t} t0={840.5} t1={842.4} x={BON - 260} y={DK - 200} s={0.5}><Globo txt="LET ME GO!" cola={1} /></P>
+        <P t={t} t0={840.5} t1={842.4} x={BON - 170} y={DK - 150} s={0.45}><Globo txt="LET ME GO!" cola={1} /></P>
         <S t={840.5} p="gasp" g={-8} />
         <S t={842.5} p="whoosh" g={-6} />
         <S t={843.4} p="thud" g={-6} />
@@ -143,8 +149,8 @@ export const M8: React.FC<{ t: number }> = ({ t }) => {
             {[[-3600, 5], [-3540, 10], [-3480, 3], [-3250, 8], [-3200, 2], [-3420, 6]].map(([x, d], i) => <g key={i} transform={`translate(${x} ${FONDO - d}) scale(0.35)`}><Moneda8 r={40} oro t={t} /></g>)}
             {/* la campana: sube un poco con el buzo */}
             <Campana x={WX + 550} y={FONDO - 30 - interpolate(t, [865, 867.4], [0, 90], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} t={t} s={1.4} txt="WHYDAH GALLY 1716" golpes={[870.5, 871.7, 872.6, 873.3]} />
-            <g transform={`translate(${CX} ${CY})`}><Concrecion rayos={prog(t, 877.6, 878.6)} t={t} /></g>
-            {t > 883.8 && <g transform={`translate(${CX + 130} ${CY + 70}) scale(0.9)`}><Zapato brillo={prog(t, 883.84, 884.6)} t={t} /></g>}
+            {t > 873.0 && <g transform={`translate(${CX} ${CY + (1 - prog(t, 873.0, 874.0)) * 120})`} opacity={prog(t, 873.0, 873.8)}><Concrecion rayos={prog(t, 877.6, 878.6)} t={t} sinZapato={t > 883.8} /></g>}
+            {t > 883.8 && <g transform={`translate(${CX + 190} ${CY + 80}) scale(0.7)`}><Zapato brillo={prog(t, 883.84, 884.6)} t={t} /></g>}
             {en(t, 861.4, 868.5) && <g transform={`translate(${interpolate(t, [861.4, 864.5, 866], [WX - 1200, WX - 200, WX + 300], { extrapolateRight: "clamp" })} ${FONDO - 170 + Math.sin(t) * 12}) scale(0.42)`}><Buzo t={t} luz={prog(t, 861.8, 862.6)} /></g>}
           </g>
         )}
@@ -152,12 +158,12 @@ export const M8: React.FC<{ t: number }> = ({ t }) => {
         <Lbl t={t} t0={864.0} t1={866.4} x={WX + 150} y={FONDO - 300} txt="CANNONS" size={50} color={C.crema} />
         <Lbl t={t} t0={866.5} t1={867.7} x={WX + 550} y={FONDO - 380} txt="THE SHIP'S BELL" size={56} color={C.oro} />
         <Lbl t={t} t0={874.4} t1={878.3} x={CX} y={CY - 240} txt="SAND + IRON" size={56} color={C.crema} />
-        {en(t, 879.9, 883.8) && <circle cx={CX - 120} cy={CY - 20} r={150} fill="none" stroke={C.lima} strokeWidth={8} opacity={t < 881 ? 1 : 0} />}
-        {en(t, 880.9, 883.8) && <circle cx={CX + 60} cy={CY - 80} r={110} fill="none" stroke={C.lima} strokeWidth={8} opacity={t < 882.1 ? 1 : 0} />}
-        {en(t, 882.1, 883.8) && <circle cx={CX + 130} cy={CY + 70} r={120} fill="none" stroke={C.oro} strokeWidth={10} />}
-        <Lbl t={t} t0={879.9} t1={883.8} x={CX - 300} y={CY - 200} txt="LEG BONE" size={66} color={C.lima} />
-        <Lbl t={t} t0={880.9} t1={883.8} x={CX + 200} y={CY - 210} txt="SILK STOCKING" size={66} color={C.lima} />
-        <Lbl t={t} t0={882.1} t1={883.8} x={CX + 360} y={CY + 230} txt="LEATHER SHOE" size={72} color={C.oro} />
+        {en(t, 879.9, 883.8) && <circle cx={CX - 180} cy={CY} r={150} fill="none" stroke={C.lima} strokeWidth={8} opacity={t < 881 ? 1 : 0} />}
+        {en(t, 880.9, 883.8) && <circle cx={CX + 30} cy={CY - 30} r={125} fill="none" stroke={C.lima} strokeWidth={8} opacity={t < 882.1 ? 1 : 0} />}
+        {en(t, 882.1, 883.8) && <circle cx={CX + 190} cy={CY + 80} r={100} fill="none" stroke={C.oro} strokeWidth={10} />}
+        <Lbl t={t} t0={879.9} t1={883.8} x={CX - 220} y={CY - 190} txt="LEG BONE" size={66} color={C.lima} />
+        <Lbl t={t} t0={880.9} t1={883.8} x={CX + 120} y={CY - 200} txt="SILK STOCKING" size={66} color={C.lima} />
+        <Lbl t={t} t0={882.1} t1={883.8} x={CX + 230} y={CY + 220} txt="LEATHER SHOE" size={72} color={C.oro} />
         <S t={861.5} p="bubble" g={-8} d={2} />
         <S t={862.4} p="suspense" g={-12} d={4} />
         <S t={863.4} p="coin" g={-8} />
@@ -179,7 +185,6 @@ export const M8: React.FC<{ t: number }> = ({ t }) => {
       </G>
       {en(t, 869.9, 873.95) && <Persona x={WX + 380} y={FONDO} h={210} t={t} seed={330} ropa={JOHN_P} opacity={0.5 * prog(t, 869.9, 870.4)} expr="neutro"
         bD={[870.5, 871.7, 872.6, 873.3].some((g) => en(t, g - 0.2, g + 0.1)) ? 120 : 70} cD={40} />}
-      {en(t, 886.6, 890.2) && <Persona x={CX + 330} y={FONDO} h={210} t={t} seed={330} ropa={JOHN_P} opacity={0.45 * prog(t, 886.6, 887.3)} expr="feliz" flip />}
       {en(t, 859.4, 861.4) && <Burbujas t={t} x={2600} y={3500} w={600} n={20} />}
     </>
   );
@@ -252,6 +257,7 @@ export const O8: React.FC<{ t: number }> = ({ t }) => {
         pins={[{ lugar: "antigua", t0: 815.6, txt: "ANTIGUA", icono: "barco" }]} />
       <S t={813.3} p="unroll" g={-4} />
       <S t={815.6} p="stamp" g={-8} />
+      {en(t, 813.8, 819.6) && <Persona x={300} y={1050} h={470} t={t} seed={320} ropa={BELLAMY} expr={t > 816.6 ? "feliz" : "orgullo"} bD={en(t, 816.6, 819.6) ? 160 : 20} cD={10} aparece={813.8} />}
       <Txt t={t} t0={813.8} t1={816.4} text="SAMUEL BELLAMY" y={900} size={100} color={C.oro} />
       <Txt t={t} t0={816.6} t1={819.6} text="CAPTURES THE BONETTA" y={900} size={90} />
       <S t={816.6} p="cannon" g={-10} />
@@ -304,6 +310,7 @@ export const O8: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={883.9} t1={885.0} text="A CHILD'S SHOE" y={170} size={140} color={C.crema} />
       <Txt t={t} t0={885.1} t1={886.6} text="IT BELONGED TO..." y={170} size={110} />
       <Txt t={t} t0={886.7} t1={887.6} text="JOHN KING" y={170} size={180} color={C.oro} />
+      {en(t, 887.7, 890.1) && <Persona x={1680} y={1050} h={400} t={t} seed={330} ropa={JOHN_P} flip expr="orgullo" bD={20} cD={30} aparece={887.7} />}
       <Txt t={t} t0={887.7} t1={890.1} text="THE YOUNGEST PIRATE WHOSE NAME WE KNOW" y={170} size={66} />
       {/* los sellos vuelven */}
       {en(t, 891.4, 892.7) && <div style={{ position: "absolute", left: 960, top: 600 }}><svg width={1} height={1} style={{ overflow: "visible" }}><Sello t={t} t0={891.5} txt="NO BOYS" size={140} /></svg></div>}

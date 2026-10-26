@@ -188,9 +188,17 @@ export const MuelleLondres: React.FC<{ t: number; v: ReturnType<typeof vista>; x
   const r = rnd(9);
   return (
     <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}>
+      {/* Londres 1720: la cúpula de San Pablo + casas de techo a dos aguas, nada de torres */}
+      <g transform={`translate(${x - 1300} ${MAR - 200})`} fill="#5a5a7a"><rect x={-260} y={-520} width={520} height={520} /><path d="M -220 -520 Q -220 -860 0 -880 Q 220 -860 220 -520 Z" /><rect x={-30} y={-990} width={60} height={120} /><circle cx={0} cy={-1000} r={26} /></g>
       {Array.from({ length: 10 }, (_, i) => {
-        const xx = x - 2400 + i * 500, h = 500 + r() * 500;
-        return <g key={i}><rect x={xx} y={MAR - 200 - h} width={440} height={h} fill={["#6a6a8a", "#7a7a9a", "#5a5a7a"][i % 3]} />{Array.from({ length: Math.floor(h / 120) }, (_, k) => <rect key={k} x={xx + 60} y={MAR - 160 - h + k * 120} width={320} height={50} rx={6} fill="#ffd27a" opacity={0.5} />)}</g>;
+        const xx = x - 2400 + i * 500, h = 260 + r() * 220, techo = 150 + r() * 80;
+        const muro = ["#8a5a4a", "#9a6a52", "#7a5a5a"][i % 3];
+        return <g key={i}>
+          <rect x={xx + 300} y={MAR - 200 - h - techo - 60} width={40} height={90} fill="#4a3a3a" />
+          <path d={`M ${xx - 10} ${MAR - 200 - h} L ${xx + 220} ${MAR - 200 - h - techo} L ${xx + 450} ${MAR - 200 - h} Z`} fill="#4a3a4a" />
+          <rect x={xx} y={MAR - 200 - h} width={440} height={h} fill={muro} />
+          {Array.from({ length: Math.max(1, Math.floor(h / 130)) }, (_, k) => [70, 190, 310].map((wx) => <rect key={`${k}-${wx}`} x={xx + wx} y={MAR - 170 - h + k * 130} width={60} height={70} rx={4} fill="#ffd27a" opacity={0.75} />))}
+        </g>;
       })}
       <rect x={x - 2600} y={MAR - 200} width={5200} height={220} fill="#7a6a5a" />
       {/* horca de la marea (silueta) */}

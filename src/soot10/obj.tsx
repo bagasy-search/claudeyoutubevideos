@@ -339,16 +339,16 @@ export const Media: React.FC = () => (
 export const Hueso: React.FC = () => (
   <g><rect x={-12} y={-130} width={24} height={260} rx={10} fill="#f2ead8" />{[-1, 1].map((d) => <g key={d}><circle cx={-12} cy={d * 130} r={20} fill="#f2ead8" /><circle cx={12} cy={d * 130} r={20} fill="#f2ead8" /></g>)}</g>
 );
-export const Concrecion: React.FC<{ rayos?: number; t?: number }> = ({ rayos = 0, t = 0 }) => (
+export const Concrecion: React.FC<{ rayos?: number; t?: number; sinZapato?: boolean }> = ({ rayos = 0, t = 0, sinZapato }) => (
   <g>
     <path d="M -300 60 Q -340 -90 -180 -150 Q -40 -230 120 -170 Q 300 -140 320 0 Q 330 130 150 160 Q -60 200 -220 150 Q -320 130 -300 60 Z" fill="#8a7a6a" />
     {Array.from({ length: 14 }, (_, i) => { const r = rnd(i + 30); return <circle key={i} cx={-240 + r() * 480} cy={-130 + r() * 260} r={10 + r() * 26} fill={r() < 0.5 ? "#7a6a5a" : "#a8987a"} />; })}
     {rayos > 0 && (
       <g opacity={rayos}>
         <path d="M -300 60 Q -340 -90 -180 -150 Q -40 -230 120 -170 Q 300 -140 320 0 Q 330 130 150 160 Q -60 200 -220 150 Q -320 130 -300 60 Z" fill="#0a2a4a" />
-        <g transform="translate(-120 -20) rotate(70)" opacity={0.9}><Hueso /></g>
-        <g transform="translate(60 -40) rotate(-10) scale(0.8)"><Media /></g>
-        <g transform="translate(130 70) scale(0.9)"><Zapato /></g>
+        <g transform="translate(-180 0) scale(0.8)" opacity={0.9}><Hueso /></g>
+        <g transform="translate(20 20) scale(0.8)"><Media /></g>
+        {!sinZapato && <g transform="translate(190 80) scale(0.7)"><Zapato /></g>}
         {Array.from({ length: 6 }, (_, i) => <line key={i} x1={-300} y1={-150 + ((t * 120 + i * 60) % 330)} x2={320} y2={-150 + ((t * 120 + i * 60) % 330)} stroke="#7ad8ff" strokeWidth={3} opacity={0.3} />)}
       </g>
     )}
