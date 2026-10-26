@@ -16,7 +16,7 @@ import { TRAJE, pasajero } from "../owen/extras_b";
 import { HudSerie, CartelM, ROJO } from "../owen/cartel";
 import { Persona, PersonaP } from "../owen/b/gente";
 import { armar, PlanB, K, sentadoBus, parado, POSE_CELU_SENTADO, Pizarra, GloboM, Vineta, TarjetaSemana, CeluMensaje, NumeroM, FuenteB } from "../owen/b/lib";
-import { BusInterior, Bus9, BUS_PISO, BUS_PUNTOS, ASIENTO_X, alVolante, Volante, marchaParadas, kneelEn } from "../owen/mundo/bus";
+import { BusInterior, Bus9, BUS_PISO, BUS_PUNTOS, ASIENTO_X, alVolante, Volante, marchaParadas, kneelEn } from "./bus5";
 import { Ashland, ASH_PISO, ASH_CARRIL } from "../owen/mundo/ashland";
 import { TwoFlatCorte, TF_PISO, TF_ARRIBA, TF_PUNTOS } from "../owen/mundo/twoflat";
 import { Halden, HAL_PISO, HAL_PUNTOS, LogoHalden } from "../owen/mundo/halden";
@@ -58,11 +58,11 @@ const q01: PlanB = {
       const Y = ASH_CARRIL - 80;
       return (
         <Escena Set={Ashland} pal={PAL} setProps={{ hora: "manana", centro: () => 1300, paradas: [{ x: 1040, num: 30, refugio: true }], autos: 3 }} seed={501} mano={3}
-          claves={[mira(0, 1250, 870, 1.05), mira(k(1.2), 1270, 880, 1.2, { curva: "inout" }), mira(k(3.4), 1310, 905, 2.05, { curva: "inout" }), mira(k(6.26), 1310, 900, 2.2)]}
+          claves={[mira(0, 1230, 850, 1.62), mira(k(2.2), 1260, 870, 1.72, { curva: "inout" }), mira(k(3.4), 1310, 900, 2.1, { curva: "inout" }), mira(k(6.26), 1310, 900, 2.25)]}
           medio={<>
-            <Persona {...parado(SENORA, 0, Y, { ruta: [{ f: 0, x: 560, y: Y }, { f: k(1.6), x: 700, y: Y }, { f: k(2.4), x: 700, y: Y }, { f: k(4.4), x: 420, y: Y }], cartel: { claves: 310000, tam: 26 }, caras: [{ f: 0, v: "feliz" }], seed: 520 })} />
-            <Persona {...parado(OBRERO, 960, Y, { ruta: [{ f: 0, x: 960, y: Y }, { f: k(2.2), x: 960, y: Y }, { f: k(4.2), x: 640, y: Y }], dir: [{ f: 0, v: 1 }, { f: k(2.2), v: -1 }], poses: [{ f: 0, v: "celular" }], enManoD: <Celular s={0.9} brillo="#ffd27a" />, caras: [{ f: 0, v: "neutral" }, { f: k(3.6), v: "sorpresa" }], miradas: [{ f: 0, v: { x: 0.3, y: 0.6 } }, { f: k(3.6), v: { x: 1, y: -0.3 } }], cartel: { claves: 180000, tam: 26 }, seed: 521 })} />
-            <Persona {...parado(ESTUDIANTE, 0, Y, { ruta: [{ f: 0, x: 2050, y: Y }, { f: k(2.0), x: 1720, y: Y }, { f: k(2.6), x: 1720, y: Y }, { f: k(4.4), x: 2120, y: Y }], dir: [{ f: 0, v: -1 }, { f: k(2.6), v: 1 }], poses: [{ f: 0, v: {} }, { f: k(3.0), v: "celular" }], enManoD: (ff) => ff > k(3.0) ? <Celular s={0.9} brillo="#ff6ab4" /> : null, cartel: { claves: 52000, tam: 26 }, seed: 522 })} />
+            <Persona {...parado(SENORA, 0, Y, { ruta: [{ f: 0, x: 700, y: Y }, { f: k(1.6), x: 820, y: Y }, { f: k(2.4), x: 820, y: Y }, { f: k(4.4), x: 520, y: Y }], cartel: { claves: 310000, tam: 32 }, caras: [{ f: 0, v: "feliz" }], seed: 520 })} />
+            <Persona {...parado(OBRERO, 960, Y, { ruta: [{ f: 0, x: 1010, y: Y }, { f: k(2.2), x: 1010, y: Y }, { f: k(4.2), x: 640, y: Y }], dir: [{ f: 0, v: 1 }, { f: k(2.2), v: -1 }], poses: [{ f: 0, v: "celular" }], enManoD: <Celular s={0.9} brillo="#ffd27a" />, caras: [{ f: 0, v: "neutral" }, { f: k(3.6), v: "sorpresa" }], miradas: [{ f: 0, v: { x: 0.3, y: 0.6 } }, { f: k(3.6), v: { x: 1, y: -0.3 } }], cartel: { claves: 180000, tam: 32 }, seed: 521 })} />
+            <Persona {...parado(ESTUDIANTE, 0, Y, { ruta: [{ f: 0, x: 1960, y: Y }, { f: k(1.4), x: 1640, y: Y }, { f: k(2.6), x: 1640, y: Y }, { f: k(4.4), x: 2120, y: Y }], dir: [{ f: 0, v: -1 }, { f: k(2.6), v: 1 }], poses: [{ f: 0, v: {} }, { f: k(3.0), v: "celular" }], enManoD: (ff) => ff > k(3.0) ? <Celular s={0.9} brillo="#ff6ab4" /> : null, cartel: { claves: 52000, tam: 32 }, seed: 522 })} />
             <Persona look={OWEN} seed={47} luz={RIM.sol} ruta={[{ f: 0, x: 1310, y: Y }]} dir={[{ f: 0, v: 1 }]}
               poses={[{ f: 0, v: "celular" }, { f: k(2.4), v: { hD: 40, cD: 70 } }, { f: k(3.4), v: "manosCara" }, { f: k(4.6), v: { hI: 150, cI: 20, hD: 40, cD: 80 } }]}
               caras={[{ f: 0, v: "neutral" }, { f: k(2.4), v: "sorpresa" }, { f: k(4.6), v: "risa" }]} miradas={[{ f: 0, v: { x: 0.4, y: 0.7 } }, { f: k(2.4), v: { x: 0.1, y: -1 } }, { f: k(4.6), v: { x: -0.4, y: -0.3 } }]}
@@ -105,23 +105,25 @@ const q02: PlanB = {
 // ====================== 2b · la pregunta: la app de Screen Time que trepa ======================
 const q02b: PlanB = {
   a: 8.92, b: 11.34, trans: { tipo: "luz", d: 8, color: "#d8fff2" },
-  sfx: [[8.95, "whoosh"], [9.2, "roll", -4, { dur: 1.8 }], [9.6, "tick", -6], [10.0, "tick", -6], [10.4, "tick", -6], [10.8, "pop", -2]],
+  sfx: [[8.95, "whoosh"], [9.2, "roll", -4, { dur: 1.8 }], [9.4, "cloth", -6], [9.6, "tick", -6], [10.0, "tick", -6], [10.4, "tick", -6], [10.8, "pop", -2]],
   el: (k) => {
     const Pl: React.FC = () => {
       const f = useF();
       const u = interpolate(f, [k(9.1), k(11.0)], [0, 1], { ...cl, easing: (t) => 1 - Math.pow(1 - t, 2) });
-      const sube = interpolate(f, [0, 12], [260, 0], { ...cl, easing: (t) => 1 - Math.pow(1 - t, 3) });
+      const sube = interpolate(f, [0, 8], [120, 0], { ...cl, easing: (t) => 1 - Math.pow(1 - t, 3) });
       return (
         <FondoCalido a="#2a4a50" b="#0c1418">
           <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}>
-            <g transform={`translate(0,${sube}) rotate(${-4 + Math.sin(f / 30) * 1.2},1340,620)`}>
-              <ManoPOV x={1240} y={760} s={1.25} />
-              <AppUso x={1360} y={560} esc={0.98} min={u * 424} llenar={u} f={f} />
+            <g transform={`translate(0,${sube}) rotate(${-3 + Math.sin(f / 30) * 1.2},1440,560)`}>
+              <AppUso x={1440} y={560} esc={0.9} min={u * 424} llenar={u} f={f} />
             </g>
+            <Persona look={OWEN} seed={47} luz={RIM.tubo} escala={2.9} ruta={[{ f: 0, x: 420, y: 1330 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
+              poses={[{ f: 0, v: { hD: 40, cD: 70, hI: 8, cI: 30 } }, { f: k(9.5), v: { hD: 112, cD: 8, tronco: 4, hI: 8, cI: 30 } }, { f: k(10.4), v: { hD: 118, cD: 6, tronco: 6, hI: 40, cI: 140, cabeza: 6 } }]}
+              caras={[{ f: 0, v: "duda" }, { f: k(9.6), v: "neutral" }, { f: k(10.4), v: "sorpresa" }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: k(9.5), v: { x: 1, y: -0.4 } }]}
+              habla={[[k(9.0), k(11.2)]]} />
           </svg>
-          <div style={{ position: "absolute", left: 130, top: 300, width: 860, fontFamily: F_HUD, fontWeight: 600, fontSize: 78, lineHeight: 1.12, color: "#f4efe4", textShadow: "0 4px 14px rgba(0,0,0,0.6)" }}>
-            {["How many hours", "of your life went", "into a screen"].map((l, i) => <div key={i} style={{ opacity: interpolate(f, [4 + i * 6, 10 + i * 6], [0, 1], cl), transform: `translateX(${interpolate(f, [4 + i * 6, 12 + i * 6], [-40, 0], cl)}px)` }}>{l}</div>)}
-            <div style={{ color: VERDE, fontSize: 110, opacity: interpolate(f, [k(10.4), k(10.4) + 6], [0, 1], cl), transform: `scale(${interpolate(f, [k(10.4), k(10.4) + 8], [1.4, 1], cl)})`, transformOrigin: "0 50%" }}>today?</div>
+          <div style={{ position: "absolute", left: 110, top: 150, width: 1060, fontFamily: F_HUD, fontWeight: 600, fontSize: 66, lineHeight: 1.12, color: "#f4efe4", textShadow: "0 4px 14px rgba(0,0,0,0.6)" }}>
+            {["How many hours of your life", "went into a screen"].map((l, i) => <div key={i} style={{ opacity: interpolate(f, [2 + i * 6, 8 + i * 6], [0, 1], cl), transform: `translateX(${interpolate(f, [2 + i * 6, 10 + i * 6], [-40, 0], cl)}px)` }}>{l}{i === 1 && <span style={{ color: VERDE, fontSize: 92, display: "inline-block", marginLeft: 22, opacity: interpolate(f, [k(10.4), k(10.4) + 6], [0, 1], cl), transform: `scale(${interpolate(f, [k(10.4), k(10.4) + 8], [1.4, 1], cl)})`, transformOrigin: "0 70%" }}>today?</span>}</div>)}
           </div>
         </FondoCalido>
       );
@@ -143,7 +145,7 @@ const CamaOwen: React.FC<{ f: number; celuEnCama: boolean; luz?: string }> = ({ 
 // frazada de los pies a la cintura (tapa también la almohada del set, que queda a los pies)
 const Frazada: React.FC = () => <path d="M96,210 q60,-16 120,-4 q70,12 130,-6 q40,-8 66,4 l6,66 h-326 Z" fill="#4f6fa8" stroke="#3a5288" strokeWidth={4} />;
 // despertador grande ENCIMA del chiquito del set (tapa el «5:12» del set)
-const Reloj5: React.FC<{ t: string; brillo?: number }> = ({ t, brillo = 1 }) => <Despertador x={640} y={276} t={t} esc={0.95} brillo={brillo} />;
+const Reloj5: React.FC<{ t: string; brillo?: number }> = ({ t }) => <Despertador x={640} y={276} t={t} esc={0.95} brillo={0} />; // sin halo rosa (vuelta 1 del director)
 const OWEN_ACOSTADO = (extra: Partial<PersonaP>): PersonaP => ({ look: OWEN_CASA, seed: 47, ruta: [{ f: 0, x: 0, y: 0 }], dir: [{ f: 0, v: -1 }], sombra: 0, luz: { lado: 1, color: "#9fc4ff", fuerza: 0.6 }, ...extra });
 const ACOST = (hD: number, cD: number, hI = 4, cI = 6, cab = 0) => ({ hD, cD, hI, cI, cabeza: CAB + cab });
 const q03: PlanB = {
@@ -247,7 +249,7 @@ const q04b: PlanB = {
       const pulgar = Math.sin(f / 2.2) * 6;
       return (
         <Escena Set={TwoFlatCorte} pal={PAL} setProps={{ hora: "noche", luzCocina: false, luzDorm: false }} seed={5041} mano={1.5}
-          claves={[mira(0, 470, 215, 2.3), mira(k(33.48), 520, 200, 2.7, { curva: "inout" })]}
+          claves={[mira(0, 490, 195, 2.75), mira(k(33.48), 515, 185, 3.05, { curva: "inout" })]}
           medio={<>
             <CamaOwen f={f} celuEnCama={false} />
             <Acostado x={PIE_CAMA.x} y={PIE_CAMA.y} rot={90}>
@@ -257,11 +259,11 @@ const q04b: PlanB = {
                 enManoD: <Celular s={1} brillo="#9fd0ff" /> })} />
             </Acostado>
             <Frazada />
-            <Halo x={515} y={190} r={300} color="#7ab8ff" fuerza={0.75} />
+            <Halo x={515} y={190} r={340} color="#9fd0ff" fuerza={0.9} />
             <Reloj5 t="2:47" />
-            <defs><radialGradient id="noche47" cx={515} cy={185} r={620} gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#0a1434" stopOpacity={0} /><stop offset="0.35" stopColor="#0a1434" stopOpacity={0.35} /><stop offset="1" stopColor="#0a1434" stopOpacity={0.72} /></radialGradient></defs>
+            <defs><radialGradient id="noche47" cx={515} cy={185} r={720} gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#0a1434" stopOpacity={0} /><stop offset="0.45" stopColor="#0a1434" stopOpacity={0.12} /><stop offset="1" stopColor="#0a1434" stopOpacity={0.42} /></radialGradient></defs>
             <rect x={-900} y={-500} width={2400} height={1400} fill="url(#noche47)" />
-            <CartelM x={420} y={86} claves={[{ f: 0, v: 0 }, { f: k(29.6), v: 4, d: 80 }]} fmt={hm} icono="reloj" tam={40} f={f} desde={k(29.0)} />
+            <CartelM x={500} y={128} claves={[{ f: 0, v: 0 }, { f: k(29.6), v: 4, d: 80 }]} fmt={hm} icono="reloj" tam={30} f={f} desde={k(29.0)} />
           </>} />
       );
     };
@@ -282,7 +284,7 @@ const TableroTrial: React.FC<{ f: number; k: K }> = ({ f, k }) => {
       <text x={1810} y={240} fontFamily={F_HUD} fontWeight={600} fontSize={52} fill="#ffffff" textAnchor="end" opacity={interpolate(f, [4, 10], [0, 1], cl)}>WEEK 5</text>
       {Array.from({ length: 47 }).map((_, i) => {
         const cx = x0 + (i % 12) * 58 + 20, cy = y0 + Math.floor(i / 12) * 84 + 10;
-        const t = interpolate(f, [2 + i * 0.6, 8 + i * 0.6], [0, 1], cl);
+        const t = interpolate(f, [-4 + i * 0.25, 2 + i * 0.25], [0.35, 1], cl);
         const baja = BAJAS.includes(i) && f >= k(36.84) + BAJAS.indexOf(i) * 4;
         const yo = i === 46;
         const c = baja ? "#c3c8d0" : yo && f >= k(35.58) ? "#3fbf4a" : "#2a6fd6";
@@ -358,7 +360,7 @@ const q06: PlanB = {
             <Persona look={OWEN} seed={47} luz={RIM.cocina} ruta={[{ f: 0, x: 1250, y: P }, { f: k(40.0), x: 1250, y: P }, { f: k(42.0), x: 860, y: P }]} dir={[{ f: 0, v: -1 }]}
               poses={[{ f: 0, v: {} }, { f: k(42.0), v: { hI: 20, cI: 30, hD: 20, cD: 30 } }]} caras={[{ f: 0, v: "neutral" }, { f: k(42.2), v: "feliz" }]} miradas={[{ f: 0, v: { x: -1, y: 0.2 } }]} />
           </>}
-          hud={<Rot t="the SUNDAY paper - on Monday" a={k(38.6)} b={k(43.2) + 4} tam={56} mano pos="abajo" rot={-1} />} />
+          hud={<Rot t="the SUNDAY paper - on Monday" a={k(38.6)} b={k(43.2) + 4} tam={56} mano pos="izq" top={170} rot={-1} />} />
       );
     };
     return <Pl />;
@@ -431,8 +433,8 @@ const q06c: PlanB = {
               <svg x={680} y={230} width={760} height={520} viewBox="-380 -260 760 520"><Hermana f={f} saluda={interpolate(f, [k(49.0), k(49.4)], [0, 1], cl)} /></svg>
               <rect x={1240} y={560} width={180} height={150} rx={14} fill="#c0d4e0" stroke="#fff" strokeWidth={5} />
               <circle cx={1330} cy={630} r={42} fill="#141418" /><path d="M1290,604 q40,-50 80,0" fill="#e8e4dc" /><circle cx={1316} cy={628} r={9} fill="#fff" /><circle cx={1344} cy={628} r={9} fill="#fff" />
-              <rect x={720} y={262} width={300} height={64} rx={32} fill="rgba(10,12,16,0.7)" />
-              <text x={870} y={308} fontFamily={F_HUD} fontWeight={600} fontSize={44} fill="#fff" textAnchor="middle" style={{ fontVariantNumeric: "tabular-nums" }}>{fin ? "11 min ✓" : `${Math.floor(seg / 60)}:${String(seg % 60).padStart(2, "0")}`}</text>
+              <rect x={1120} y={296} width={300} height={64} rx={32} fill="rgba(10,12,16,0.78)" />
+              <text x={1270} y={342} fontFamily={F_HUD} fontWeight={600} fontSize={44} fill="#fff" textAnchor="middle" style={{ fontVariantNumeric: "tabular-nums" }}>{fin ? "11 min ✓" : `${Math.floor(seg / 60)}:${String(seg % 60).padStart(2, "0")}`}</text>
               <circle cx={1060} cy={712} r={34} fill="#e2483a" opacity={fin ? 0.4 : 1} /><path d="M1042,712 h36" stroke="#fff" strokeWidth={8} strokeLinecap="round" />
               <ManoPOV x={600} y={760} s={1.1} rot={-20} />
             </g>
@@ -447,22 +449,52 @@ const q06c: PlanB = {
 
 // ====================== 7 · el bus: los números están en todos lados ======================
 const BUSY = 735; // centro de cámara para planos medios de pasajeros sentados (los anuncios quedan fuera)
+const SENT_B = { tronco: -4, pI: 88, rI: 88, pD: 92, rD: 92 };
+// 7 (vuelta 1 del director: «fila de 5 muñecos diminutos quieta») → DOS planos medios de a dos, cada uno haciendo algo distinto
 const q07: PlanB = {
-  a: 51.4, b: 53.32, trans: { tipo: "barrido", d: 10 },
-  sfx: [[51.45, "bus_engine", -12, { dur: 18 }], [51.6, "pop", -4], [51.85, "pop", -4], [52.1, "pop", -4], [52.35, "pop", -4], [52.6, "pop", -4], [52.9, "whoosh", -8]],
+  a: 51.4, b: 52.36, trans: { tipo: "barrido", d: 10 },
+  sfx: [[51.45, "bus_engine", -12, { dur: 18 }], [51.5, "cloth", -6], [51.6, "pop", -4], [51.9, "pop", -4], [52.0, "type", -14, { dur: 0.4 }]],
   el: (k) => {
+    const x1 = ASIENTO_X(1), x2 = ASIENTO_X(2);
     const Pl: React.FC = () => {
+      const f = useF();
       return (
-        <Escena Set={BusInterior} pal={PAL} setProps={{ hora: "alba", avance: marchaParadas([], 14) }} seed={507} mano={2.5}
-          claves={[mira(0, 1292, 700, 1.52), mira(k(53.32), 1292, 710, 1.62, { curva: "inout" })]}
+        <Escena Set={BusInterior} pal={PAL} setProps={{ hora: "alba", avance: marchaParadas([], 14) }} seed={507} mano={2}
+          claves={[mira(0, (x1 + x2) / 2 - 10, BUSY + 20, 2.4), mira(k(52.36), (x1 + x2) / 2, BUSY + 15, 2.5)]}
           medio={<>
-            {[[1, SCRUBS, 48, -1], [2, FUMADOR, 95, -1], [3, SENORA, 22, -1], [4, RUNNER, 37, -1], [5, TEEN, 151, -1]].map(([fi, l, v], i) => (
-              <Persona key={i} {...sentadoBus(l as any, ASIENTO_X(fi as number), { seed: 540 + i, poses: [{ f: 0, v: i % 2 ? POSE_CELU_SENTADO : "sentado" }], enManoD: i % 2 ? <Celular s={0.9} brillo="#7ab8ff" /> : undefined,
-                caras: [{ f: 0, v: "neutral" }, { f: k(51.6) + i * 9 + 6, v: i % 3 === 0 ? "sorpresa" : "neutral" }],
-                cartel: reloj(v as number, { tam: 30, desde: k(51.6) + i * 9 }) })} />
-            ))}
+            <Persona {...sentadoBus(SCRUBS, x1, { seed: 540, poses: [{ f: 0, v: { ...SENT_B, hI: 140, cI: 40, hD: 150, cD: 30, cabeza: -12 } }, { f: k(51.9), v: { ...SENT_B, hI: 60, cI: 120, hD: 70, cD: 110, cabeza: 4 } }],
+              caras: [{ f: 0, v: "cansado" }, { f: k(51.75), v: "sorpresa" }], miradas: [{ f: 0, v: { x: 0, y: -1 } }, { f: k(51.75), v: { x: 0.2, y: -1 } }], habla: [[0, k(51.7)]],
+              cartel: reloj([{ f: 0, v: 0 }, { f: k(51.7), v: 48, d: 14 }], { tam: 30, desde: k(51.6) }) })} />
+            <Persona {...sentadoBus(FUMADOR, x2, { seed: 541, poses: [{ f: 0, v: POSE_CELU_SENTADO }], ajuste: (p, ff) => ({ ...p, cD: (p.cD ?? 125) + 8 * Math.sin(ff / 1.4) }),
+              caras: [{ f: 0, v: "zombi" }], miradas: [{ f: 0, v: { x: -0.3, y: 1 } }], enManoD: <Celular s={0.95} brillo="#7ab8ff" />,
+              cartel: reloj([{ f: 0, v: 0 }, { f: k(52.0), v: 95, d: 12 }], { tam: 30, desde: k(51.9) }) })} />
           </>}
-          hud={<Rot t="the numbers are everywhere" a={k(51.6)} b={k(53.32) + 4} tam={56} mano pos="abajo" />} />
+          hud={<Rot t="the numbers are everywhere" a={k(51.55)} b={k(53.32)} tam={56} mano pos="abajo" />} />
+      );
+    };
+    return <Pl />;
+  },
+};
+const q07x: PlanB = {
+  a: 52.36, b: 53.32, trans: { tipo: "corte" },
+  sfx: [[52.4, "pop", -4], [52.6, "paper", -6], [52.75, "pop", -4], [52.9, "whoosh", -8]],
+  el: (k) => {
+    const x3 = ASIENTO_X(3), x4 = ASIENTO_X(4);
+    const Pl: React.FC = () => {
+      const f = useF();
+      const bob = 6 * Math.sin(f / 2.5);
+      return (
+        <Escena Set={BusInterior} pal={PAL} setProps={{ hora: "alba", avance: marchaParadas([], 14) }} seed={5070} mano={2}
+          claves={[mira(0, (x3 + x4) / 2 + 10, BUSY + 20, 2.5), mira(k(53.32), (x3 + x4) / 2, BUSY + 15, 2.4)]}
+          medio={<>
+            <Persona {...sentadoBus(SENORA, x3, { seed: 542, poses: [{ f: 0, v: { ...SENT_B, hD: 60, cD: 100, hI: 50, cI: 110, cabeza: 14 } }, { f: k(52.8), v: { ...SENT_B, hD: 70, cD: 90, hI: 50, cI: 110, cabeza: 2 } }],
+              caras: [{ f: 0, v: "feliz" }, { f: k(52.8), v: "sorpresa" }], miradas: [{ f: 0, v: { x: -0.2, y: 0.8 } }, { f: k(52.8), v: { x: 0.6, y: -0.6 } }],
+              enManoD: <Celular s={0.95} brillo="#ffd27a" />,
+              cartel: reloj([{ f: 0, v: 0 }, { f: k(52.5), v: 22, d: 12 }], { tam: 30, desde: k(52.4) }) })} />
+            <Persona {...sentadoBus(TEEN, x4, { seed: 543, poses: [{ f: 0, v: POSE_CELU_SENTADO }], ajuste: (p) => ({ ...p, cabeza: (p.cabeza ?? 0) + bob, tronco: (p.tronco ?? 0) + bob * 0.3 }),
+              caras: [{ f: 0, v: "picaro" }], miradas: [{ f: 0, v: { x: -0.3, y: 1 } }], enManoD: <Celular s={0.95} brillo="#ff6ab4" />,
+              cartel: reloj([{ f: 0, v: 0 }, { f: k(52.8), v: 151, d: 12 }], { tam: 30, desde: k(52.7) }) })} />
+          </>} />
       );
     };
     return <Pl />;
@@ -510,7 +542,7 @@ const q07c: PlanB = {
               enManoD: <Celular s={0.95} brillo="#ff6ab4" />,
               cartel: reloj([{ f: 0, v: 0 }, { f: k(59.45), v: 120, d: 36 }], { tam: 44, desde: k(58.0) }) })} />
           </>}
-          hud={<Rot t="maybe 15" a={k(58.1)} b={k(61.18) + 4} tam={58} mano pos="der" top={330} rot={-3} />} />
+          hud={<Rot t="maybe 15?" a={k(58.1)} b={k(61.18) + 4} tam={84} mano pos="der" top={300} rot={-3} />} />
       );
     };
     return <Pl />;
@@ -555,20 +587,20 @@ const q07e: PlanB = {
       const seg = 3 * 3600 + (f + k(67.08) - k(62.2)) / 30 + 0 * f;
       return (
         <Escena Set={BusInterior} pal={PAL} setProps={{ hora: "alba", avance: marchaParadas([], 14) }} seed={5074} mano={2}
-          claves={[mira(0, 320, 610, 2.0), mira(k(70.22), 300, 600, 2.15, { curva: "inout" })]}
+          claves={[mira(0, 120, 712, 2.55), mira(k(70.22), 105, 716, 2.7, { curva: "inout" })]}
           medio={<>
             <Persona {...owenVolante({ caras: [{ f: 0, v: "duda" }, { f: k(68.0), v: "sorpresa" }, { f: k(69.2), v: "duda" }], miradas: [{ f: 0, v: { x: 0.6, y: -1 } }, { f: k(68.0), v: { x: 0.8, y: -0.8 } }] })} />
             <Volante />
             {/* el espejo retrovisor: adentro el ejecutivo con su taxímetro amarillo */}
-            <g transform="translate(60,590)">
+            <g transform="translate(-70,640) scale(0.8)">
               <rect x={-150} y={-70} width={300} height={140} rx={60} fill="#20242c" />
               <rect x={-138} y={-58} width={276} height={116} rx={52} fill="#c9d6dc" />
               <circle cx={30} cy={10} r={30} fill="#141418" /><path d="M-10,58 q40,-50 80,0" fill="#3a3f4a" /><circle cx={20} cy={6} r={7} fill="#fff" /><circle cx={40} cy={6} r={7} fill="#fff" />
               <path d="M-138,-58 l70,0 l-110,116 Z" fill="#fff" opacity={0.3} />
             </g>
-            <CartelM x={60} y={510} claves={0} texto={hms(seg)} icono="reloj" tam={40} f={f} color="#ffc94a" latido={(Math.floor(f / 15) % 2) * 0.6} />
+            <CartelM x={-75} y={757} claves={0} texto={hms(seg)} icono="reloj" tam={34} f={f} color="#ffc94a" latido={(Math.floor(f / 15) % 2) * 0.6} />
           </>}
-          hud={<Rot t="like a taxi meter" a={k(67.4)} b={k(70.22) + 4} tam={60} mano pos="der" top={560} rot={2} />} />
+          hud={<Rot t="like a taxi meter" a={k(67.4)} b={k(70.22) + 4} tam={62} mano pos="izq" top={880} rot={-1} />} />
       );
     };
     return <Pl />;
@@ -617,17 +649,17 @@ const q09: PlanB = {
       const celu = interpolate(f, [k(79.7), k(80.2)], [0, 1], { ...cl, easing: (t) => 1 - Math.pow(1 - t, 3) });
       return (
         <Escena Set={Living} pal={PAL} setProps={{ hora: "tarde", tele: false }} seed={509} mano={2}
-          claves={[mira(0, SOFA_X + 40, 670, 2.3), mira(k(79.6), SOFA_X + 50, 665, 2.4), mira(k(82.38), SOFA_X + 70, 660, 2.55, { curva: "inout" })]}
+          claves={[mira(0, SOFA_X + 120, 655, 2.85), mira(k(79.6), SOFA_X + 130, 650, 2.95), mira(k(82.38), SOFA_X + 140, 648, 3.05, { curva: "inout" })]}
           medio={<>
             <Persona look={RUNNER} seed={91} luz={{ lado: 1, color: "#ffd88a", fuerza: 0.7 }} ruta={[{ f: 0, x: SOFA_X - 40, y: LIV_PISO }]} dir={[{ f: 0, v: 1 }]} asiento={[{ f: 0, v: LIV_PUNTOS.asiento }]}
               poses={[{ f: 0, v: POSE_CELU_SENTADO }, { f: k(77.6), v: { ...POSE_CELU_SENTADO, hI: 30, cI: 150, cabeza: -10 } }, { f: k(79.7), v: { ...POSE_CELU_SENTADO, hD: 80, cD: 20, cabeza: 6 } }, { f: k(81.6), v: { pI: 85, rI: -80, pD: 88, rD: -85, hI: 40, cI: 140, hD: 80, cD: 20, cabeza: 6 } }]}
               caras={[{ f: 0, v: "neutral" }, { f: k(77.6), v: "picaro" }, { f: k(80.4), v: "duda" }, { f: k(81.6), v: "sorpresa" }]}
               miradas={[{ f: 0, v: { x: 0.5, y: 0.8 } }, { f: k(77.6), v: { x: 0.4, y: -1 } }, { f: k(80.2), v: { x: 1, y: 0 } }]}
               enManoD={<Celular s={0.95} brillo="#7ab8ff" />} />
-            <GloboM x={SOFA_X - 40} y={592} texto={"about 2 hours,\nmaybe?"} desde={k(77.6)} hasta={k(79.8)} tam={26} lado={1} pensamiento />
-            {celu > 0 && <g transform={`translate(${SOFA_X + 290},${650 + (1 - celu) * 200}) scale(${0.3 * celu}) rotate(4)`}><AppUso x={0} y={0} esc={1} min={u * 422} llenar={u} f={f} /></g>}
+            <GloboM x={SOFA_X + 10} y={640} texto={"about 2 hours,\nmaybe?"} desde={k(77.6)} hasta={k(79.8)} tam={26} lado={1} pensamiento />
           </>}
           hud={<>
+            {celu > 0 && <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}><g transform={`translate(1430,${560 + (1 - celu) * 600}) rotate(${4 - 2 * celu})`}><AppUso x={0} y={0} esc={0.86} min={u * 422} llenar={u} f={f} /></g></svg>}
             <Rot t="THE REAL DATA" a={k(76.1)} b={k(77.5)} tam={64} color={VERDE} />
             <Rot t="what the phone actually records" a={k(80.2)} b={k(82.38) + 4} tam={50} mano pos="abajo" />
           </>} />
@@ -641,7 +673,7 @@ const Icono: React.FC<{ d: string; x: number; y: number; s: number; t: string; c
   <g transform={`translate(${x},${y}) scale(${s})`}>
     <circle r={46} fill="#0f1e26" stroke={color} strokeWidth={4} />
     <path d={d} fill="none" stroke={color} strokeWidth={4.5} strokeLinejoin="round" strokeLinecap="round" />
-    <text y={78} fontFamily={F_HUD} fontWeight={600} fontSize={22} fill={color} textAnchor="middle" letterSpacing={2}>{t}</text>
+    <text y={92} fontFamily={F_HUD} fontWeight={600} fontSize={38} fill={color} textAnchor="middle" letterSpacing={2}>{t}</text>
   </g>
 );
 const PANT = [
@@ -651,7 +683,7 @@ const PANT = [
 ];
 const Fuente: React.FC<{ t: string; a: number; b: number }> = ({ t, a, b }) => {
   const f = useF();
-  return <div style={{ position: "absolute", left: 110, bottom: 96, fontFamily: F_HUD, fontWeight: 500, fontSize: 28, color: "#e9e3d6", opacity: ent(f, a, b, 10) * 0.9, textShadow: "0 2px 6px rgba(0,0,0,0.7)" }}>{t}</div>;
+  return <div style={{ position: "absolute", left: 110, bottom: 96, fontFamily: F_HUD, fontWeight: 600, fontSize: 44, color: "#e9e3d6", opacity: ent(f, a, b, 10) * 0.92, textShadow: "0 2px 6px rgba(0,0,0,0.7)" }}>{t}</div>;
 };
 const arco = (cx: number, cy: number, r: number, a0: number, a1: number) => {
   const p = (a: number) => [cx + r * Math.sin(a), cy - r * Math.cos(a)];
@@ -665,7 +697,7 @@ const q09b: PlanB = {
     const Pl: React.FC = () => {
       const f = useF();
       const h = interpolate(f, [k(83.0), k(85.0)], [0, 7], { ...cl, easing: (t) => 1 - Math.pow(1 - t, 2) });
-      const CX = 1210, CY = 520, R = 270;
+      const CX = 760, CY = 590, R = 270;
       const ini = interpolate(f, [0, 10], [0, 1], cl);
       let acum = 0;
       return (
@@ -676,7 +708,7 @@ const q09b: PlanB = {
             <g opacity={ini}>
               <circle cx={CX} cy={CY} r={R} fill="#13262f" stroke="#2c4450" strokeWidth={44} />
               {Array.from({ length: 24 }).map((_, i) => { const a = (i / 24) * Math.PI * 2; return <line key={i} x1={CX + (R - 40) * Math.sin(a)} y1={CY - (R - 40) * Math.cos(a)} x2={CX + (R - (i % 6 ? 52 : 66)) * Math.sin(a)} y2={CY - (R - (i % 6 ? 52 : 66)) * Math.cos(a)} stroke="#5a7480" strokeWidth={i % 6 ? 3 : 6} />; })}
-              {["0", "6", "12", "18"].map((t, i) => { const a = (i / 4) * Math.PI * 2; return <text key={t} x={CX + (R - 100) * Math.sin(a)} y={CY - (R - 100) * Math.cos(a) + 14} fontFamily={F_HUD} fontWeight={600} fontSize={36} fill="#7a95a0" textAnchor="middle">{t}</text>; })}
+              {["0", "6", "12", "18"].map((t, i) => { const a = (i / 4) * Math.PI * 2; return <text key={t} x={CX + (R - 100) * Math.sin(a)} y={CY - (R - 100) * Math.cos(a) + 14} fontFamily={F_HUD} fontWeight={600} fontSize={44} fill="#7a95a0" textAnchor="middle">{t}</text>; })}
               {h > 0.02 && <path d={arco(CX, CY, R, 0, (h / 24) * Math.PI * 2)} stroke={VERDE} strokeWidth={44} fill="none" strokeLinecap="round" />}
               <text x={CX} y={CY + 30} fontFamily={F_HUD} fontWeight={600} fontSize={150} fill={VERDE} textAnchor="middle" style={{ fontVariantNumeric: "tabular-nums" }}>{h.toFixed(1)}</text>
               <text x={CX} y={CY + 92} fontFamily={F_HUD} fontWeight={600} fontSize={44} fill="#f4efe4" textAnchor="middle">HOURS A DAY</text>
@@ -687,13 +719,13 @@ const q09b: PlanB = {
               const ix = CX + (R + 150) * Math.sin(am), iy = CY - (R + 150) * Math.cos(am);
               return t > 0 ? <g key={i}><path d={arco(CX, CY, R + 34, a0 + 0.04, a1 - 0.04)} stroke="#f4efe4" strokeWidth={8} fill="none" opacity={t} /><Icono d={p.d} x={ix} y={iy} s={1.2 * t} t={p.t} color="#f4efe4" /></g> : null;
             })}
-            <Persona look={OWEN} seed={47} luz={RIM.tubo} escala={2.05} ruta={[{ f: 0, x: 500, y: 1130 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
-              poses={[{ f: 0, v: { hD: 120, cD: 10, hI: 10, cI: 20 } }, { f: k(85.2), v: { hD: 125, cD: 6, hI: 10, cI: 20 } }, { f: k(88.4), v: "manosCintura" }]}
+            <Persona look={OWEN} seed={47} luz={RIM.tubo} escala={2.6} ruta={[{ f: 0, x: 1560, y: 1260 }]} dir={[{ f: 0, v: -1 }]} sombra={0}
+              poses={[{ f: 0, v: { hD: 110, cD: 10, hI: 10, cI: 20 } }, { f: k(85.2), v: { hD: 118, cD: 6, hI: 10, cI: 20, tronco: 4 } }, { f: k(86.2), v: { hD: 100, cD: 30, hI: 40, cI: 140, cabeza: 6 } }, { f: k(88.4), v: "manosCintura" }]}
               caras={[{ f: 0, v: "determinado" }, { f: k(85.1), v: "sorpresa" }, { f: k(88.4), v: "duda" }]} miradas={[{ f: 0, v: { x: 1, y: -0.3 } }]} habla={[[0, k(85.0)]]} />
           </>}
           hud={<>
             <Rot t="THE AVERAGE U.S. ADULT" a={k(82.5)} b={k(90.66) + 4} tam={54} pos="izq" top={170} color={VERDE} />
-            <Fuente t="Source: device-tracking studies of U.S. adults (DataReportal, Nielsen)" a={k(83.0)} b={k(90.5)} />
+            <Fuente t="Source: DataReportal · Nielsen" a={k(83.0)} b={k(90.5)} />
           </>} />
       );
     };
@@ -720,7 +752,7 @@ const q09c: PlanB = {
           </>}
           hud={<>
             <Rot t={"TEENAGERS · just for fun"} a={k(91.0)} b={k(97.38) + 4} tam={54} pos="izq" top={330} color="#ff8a5a" />
-            <Fuente t="Source: Common Sense Media census, media use by tweens and teens" a={k(91.2)} b={k(97.3)} />
+            <Fuente t="Source: Common Sense Media" a={k(91.2)} b={k(97.3)} />
           </>} />
       );
     };
@@ -734,12 +766,12 @@ const q09d: PlanB = {
   el: (k) => {
     const Pl: React.FC = () => {
       const f = useF();
-      const sueno = interpolate(f, [k(97.6), k(98.6)], [0, 1], { ...cl, easing: (t) => 1 - Math.pow(1 - t, 2) });
-      const pant = interpolate(f, [k(98.4), k(99.2)], [0, 1], { ...cl, easing: (t) => 1 - Math.pow(1 - t, 2) });
+      const sueno = interpolate(f, [0, k(98.6)], [0.12, 1], { ...cl, easing: (t) => 1 - Math.pow(1 - t, 2) });
+      const pant = interpolate(f, [0, k(99.2)], [0.08, 1], { ...cl, easing: (t) => 1 - Math.pow(1 - t, 1.6) });
       const Bar: React.FC<{ y: number; w: number; u: number; c: string; t: string; v: string; icon: React.ReactNode }> = ({ y, w, u, c, t, v, icon }) => (
-        <g transform={`translate(330,${y})`}>
+        <g transform={`translate(620,${y})`}>
           <g transform="translate(-100,52) scale(1.3)">{icon}</g>
-          <rect x={0} y={0} width={1100} height={104} rx={22} fill="#1a2c36" />
+          <rect x={0} y={0} width={1120} height={104} rx={22} fill="#1a2c36" />
           <rect x={0} y={0} width={w * u} height={104} rx={22} fill={c} />
           <text x={4} y={-22} fontFamily={F_HUD} fontWeight={600} fontSize={52} fill="#f4efe4">{t}</text>
           <text x={w * u + 22} y={74} fontFamily={F_HUD} fontWeight={600} fontSize={64} fill={c} opacity={u}>{v}</text>
@@ -751,12 +783,12 @@ const q09d: PlanB = {
           medio={<>
             <Bar y={260} w={720} u={sueno} c="#7ab8ff" t="SLEEP" v="~7.5 h" icon={<g><path d="M-44,10 h88 v-24 h-88 Z M-44,-14 v-22 h20 v22" fill="none" stroke="#7ab8ff" strokeWidth={6} strokeLinejoin="round" /><text x={20} y={-30} fontFamily={F_MANO} fontWeight={700} fontSize={34} fill="#7ab8ff">z</text></g>} />
             <Bar y={530} w={816} u={pant} c="#ff8a5a" t="SCREENS (just for fun)" v="8.5 h" icon={<path d="M-14,-30 h28 a6,6 0 0 1 6,6 v48 a6,6 0 0 1 -6,6 h-28 a6,6 0 0 1 -6,-6 v-48 a6,6 0 0 1 6,-6 Z" fill="none" stroke="#ff8a5a" strokeWidth={6} />} />
-            {pant > 0.98 && <text x={330 + 1000} y={490} fontFamily={F_MANO} fontWeight={700} fontSize={64} fill="#ff8a9a" textAnchor="middle" transform={`rotate(-4,1330,480)`} opacity={interpolate(f, [k(99.2), k(99.5)], [0, 1], cl)}>MORE!</text>}
-            <Persona look={TEEN} seed={151} luz={RIM.tubo} escala={1.9} ruta={[{ f: 0, x: 1640, y: 1190 }]} dir={[{ f: 0, v: -1 }]} sombra={0}
+            {pant > 0.98 && <text x={1560} y={490} fontFamily={F_MANO} fontWeight={700} fontSize={64} fill="#ff8a9a" textAnchor="middle" transform={`rotate(-4,1560,480)`} opacity={interpolate(f, [k(99.2), k(99.5)], [0, 1], cl)}>MORE!</text>}
+            <Persona look={TEEN} seed={151} luz={RIM.tubo} escala={1.85} ruta={[{ f: 0, x: 270, y: 1010 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
               poses={[{ f: 0, v: "celular" }, { f: k(99.6), v: "encogerse" }]} caras={[{ f: 0, v: "zombi" }, { f: k(99.6), v: "duda" }]} miradas={[{ f: 0, v: { x: 0.3, y: 0.8 } }, { f: k(99.6), v: { x: 0, y: 0 } }]}
               enManoD={(ff) => ff < k(99.6) ? <Celular s={0.9} brillo="#ff6ab4" /> : null} />
           </>}
-          hud={<Rot t="and most people have no idea" a={k(99.7)} b={k(101.94) + 4} tam={58} mano pos="izq" top={800} />} />
+          hud={<Rot t="and most people have no idea" a={k(99.7)} b={k(101.94) + 4} tam={58} mano pos="der" top={790} />} />
       );
     };
     return <Pl />;
@@ -820,10 +852,10 @@ const q10b: PlanB = {
               enManoD: <Diario hoja={1} />,
               cartel: reloj(11, { tam: 44 }) })} />
             <Taza x={640} y={680} />
-            {f > k(109.6) && <g transform={`translate(700,568) scale(${sello}) rotate(-8)`}>
+            {f > k(109.6) && <g transform={`translate(800,600) scale(${sello}) rotate(-8)`}>
               <circle r={44} fill="#3fbf4a" stroke="#fff" strokeWidth={6} /><path d="M-20,2 l14,14 l26,-30" stroke="#fff" strokeWidth={10} fill="none" strokeLinecap="round" strokeLinejoin="round" />
             </g>}
-            <Chispas x={700} y={560} f={f} desde={k(109.6)} r={90} />
+            <Chispas x={800} y={592} f={f} desde={k(109.6)} r={90} />
           </>}
           hud={<Rot t="the only honest number on Paulina Street" a={k(109.8)} b={k(111.56) + 4} tam={52} mano pos="abajo" color="#bfffb0" />} />
       );
@@ -903,7 +935,7 @@ const q11b: PlanB = {
               {RAFAGAS.map(([s, p, t], i) => {
                 const u = interpolate(f, [k(s), k(s) + 5], [0, 1], { ...cl, easing: (x) => 1 - Math.pow(1 - x, 3) });
                 const x = W0 + (W1 - W0) * p;
-                return u > 0 ? <g key={i} transform={`translate(${x},${Y + 9})`}><rect x={-9} y={-34 * u} width={t === "2m" ? 26 : 16} height={68 * u} rx={6} fill={VERDE} /><text y={-46} fontFamily={F_HUD} fontWeight={600} fontSize={42} fill={VERDE} textAnchor="middle" opacity={u}>{t}</text></g> : null;
+                return u > 0 ? <g key={i} transform={`translate(${x},${Y + 9})`}><rect x={-9} y={-34 * u} width={t === "2m" ? 26 : 16} height={68 * u} rx={6} fill={VERDE} /><text y={-46} fontFamily={F_HUD} fontWeight={600} fontSize={50} fill={VERDE} textAnchor="middle" opacity={u}>{t}</text></g> : null;
               })}
             </svg>
             <Rot t="41 minutes · all in short bursts" a={k(116.5)} b={k(121.96) + 4} tam={54} pos="izq" top={170} color={VERDE} />
@@ -1027,25 +1059,27 @@ const Tragamonedas: React.FC<{ f: number; sims: string[]; girando: boolean; pala
   </g>
 );
 const q13: PlanB = {
-  a: 133.74, b: 138.34, trans: { tipo: "luz", d: 12, color: "#fff3d0" },
+  a: 133.74, b: 138.34, trans: { tipo: "corte" },
   sfx: [[133.8, "whoosh"], [134.4, "type", -12, { dur: 1 }], [135.64, "slam", -2], [135.8, "metal", -4], [136.4, "coin_rain", -12, { dur: 1 }], [137.6, "spring", -4]],
   el: (k) => {
     const Pl: React.FC = () => {
       const f = useF();
       const m = interpolate(f, [k(135.64), k(136.3)], [0, 1], { ...cl, easing: (x) => 1 - Math.pow(1 - x, 3) });
+      const tiro = interpolate(f, [k(137.6), k(137.6) + 5, k(137.6) + 14], [0, 1, 0], cl);
       return (
-        <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#1e1418", luz: "#ffc94a" }} seed={513} mano={2} claves={[mira(0, 960, 540, 1.0), mira(k(138.34), 960, 540, 1.05, { curva: "inout" })]}
+        <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#1e1418", luz: "#ffc94a" }} seed={513} mano={2} claves={[mira(0, 960, 560, 1.0), mira(k(138.34), 960, 560, 1.06, { curva: "inout" })]}
           medio={<>
-            <Persona look={RUNNER} seed={91} luz={{ lado: 1, color: "#ffc94a", fuerza: 0.8 }} escala={1.9} ruta={[{ f: 0, x: 520, y: 1150 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
-              poses={[{ f: 0, v: "celular" }, { f: k(134.4), v: { hD: 90, cD: 10, hI: 10, cI: 20 } }, { f: k(135.64), v: { hD: 60, cD: 60, hI: 10, cI: 20, cabeza: -6 } }]} caras={[{ f: 0, v: "neutral" }, { f: k(135.64), v: "sorpresa" }, { f: k(137.0), v: "picaro" }]}
-              miradas={[{ f: 0, v: { x: 0.5, y: 0.8 } }, { f: k(135.64), v: { x: 1, y: -0.3 } }]} enManoD={(ff) => ff < k(135.64) ? <Celular s={1.1} brillo="#7ab8ff" /> : null} />
-            <g transform={`translate(1200,${interpolate(f, [k(133.9), k(134.4)], [1300, 560], { ...cl, easing: (x) => 1 - Math.pow(1 - x, 3) })}) scale(0.9) rotate(${3 - 3 * m})`}>
-              <Tragamonedas f={f} sims={["♥", "★", "💬"]} girando={f > k(137.0)} palanca={0} titulo={m > 0.5 ? "PULL TO REFRESH" : "FEED"} feed={1 - m} lev={m} cas={m > 0.5} />
+            <g transform={`translate(820,600) scale(0.86) rotate(${3 - 3 * m})`}>
+              <Tragamonedas f={f} sims={["♥", "★", "💬"]} girando={f > k(137.0)} palanca={tiro} titulo={m > 0.5 ? "PULL TO REFRESH" : "FEED"} feed={1 - m} lev={m} cas={m > 0.5} />
             </g>
+            <Persona look={RUNNER} seed={91} luz={{ lado: -1, color: "#ffc94a", fuerza: 0.8 }} escala={2.5} ruta={[{ f: 0, x: 1330, y: 1120 }]} dir={[{ f: 0, v: -1 }]} sombra={0}
+              poses={[{ f: 0, v: "celular" }, { f: k(134.4), v: { hD: 100, cD: 10, hI: 10, cI: 20 } }, { f: k(135.64), v: { hD: 140, cD: 20, hI: 10, cI: 20, cabeza: -6 } }, { f: k(137.6), v: { hD: 80, cD: 10, hI: 10, cI: 20 } }, { f: k(138.0), v: { hD: 140, cD: 20, hI: 10, cI: 20 } }]}
+              caras={[{ f: 0, v: "neutral" }, { f: k(135.64), v: "sorpresa" }, { f: k(137.0), v: "picaro" }]}
+              miradas={[{ f: 0, v: { x: 0.5, y: 0.8 } }, { f: k(134.4), v: { x: 1, y: 0 } }, { f: k(135.64), v: { x: 1, y: -0.3 } }]} enManoD={(ff) => ff < k(134.4) ? <Celular s={1.1} brillo="#7ab8ff" /> : null} />
           </>}
           hud={<>
-            <Rot t="not just a screen…" a={k(134.0)} b={k(135.6)} tam={60} pos="izq" top={170} />
-            <Rot t="it's a SLOT MACHINE" a={k(135.7)} b={k(138.34) + 4} tam={64} pos="izq" top={170} color="#ffc94a" />
+            <Rot t="not just a screen…" a={k(134.0)} b={k(135.6)} tam={60} pos="izq" top={120} />
+            <Rot t="it's a SLOT MACHINE" a={k(135.7)} b={k(138.34) + 4} tam={64} pos="izq" top={120} color="#ffc94a" />
           </>} />
       );
     };
@@ -1068,16 +1102,16 @@ const q13b: PlanB = {
       const RES = [["A MESSAGE!", VERDE], ["A LIKE!", "#ff8a9a"], ["…NOTHING", "#9aa4ac"]];
       const pop = res >= 0 ? interpolate(f, [stops[res], stops[res] + 6], [1.4, 1], cl) : 1;
       return (
-        <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#1e1418", luz: "#ffc94a" }} seed={5131} mano={2} claves={[mira(0, 960, 540, 1.04), mira(k(143.74), 960, 545, 1.1, { curva: "inout" })]}
+        <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#1e1418", luz: "#ffc94a" }} seed={5131} mano={2} claves={[mira(0, 960, 560, 1.06), mira(k(143.74), 960, 565, 1.12, { curva: "inout" })]}
           medio={<>
-            <g transform="translate(1060,520) scale(0.95)"><Tragamonedas f={f} sims={res >= 0 ? SIMS[res] : ["?", "?", "?"]} girando={girando} palanca={palanca} titulo="PULL TO REFRESH" cas={res === 0 || res === 1} /></g>
+            <g transform="translate(820,560) scale(0.86)"><Tragamonedas f={f} sims={res >= 0 ? SIMS[res] : ["?", "?", "?"]} girando={girando} palanca={palanca} titulo="PULL TO REFRESH" cas={res === 0 || res === 1} /></g>
             {/* el que tira: brazo arriba y abajo con la palanca */}
-            <Persona look={RUNNER} seed={91} luz={{ lado: 1, color: "#ffc94a", fuerza: 0.8 }} escala={1.9} ruta={[{ f: 0, x: 500, y: 1150 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
+            <Persona look={RUNNER} seed={91} luz={{ lado: -1, color: "#ffc94a", fuerza: 0.8 }} escala={2.5} ruta={[{ f: 0, x: 1330, y: 1120 }]} dir={[{ f: 0, v: -1 }]} sombra={0}
               poses={[{ f: 0, v: { hD: 150, cD: 10 } }, { f: k(138.6), v: { hD: 70, cD: 10 } }, { f: k(141.02), v: { hD: 150, cD: 30, hI: 150, cI: 30 } }, { f: k(141.5), v: { hD: 70, cD: 10 } }, { f: k(141.9), v: { hD: 150, cD: 30, hI: 150, cI: 30 } }, { f: k(142.3), v: { hD: 70, cD: 10 } }, { f: k(142.8), v: "encogerse" }]}
               caras={[{ f: 0, v: "determinado" }, { f: k(139.2), v: "duda" }, { f: k(141.02), v: "risa" }, { f: k(141.9), v: "feliz" }, { f: k(142.8), v: "triste" }]} miradas={[{ f: 0, v: { x: 1, y: -0.2 } }]} />
-            {res >= 0 && <text x={1060} y={1000} fontFamily={F_HUD} fontWeight={600} fontSize={80} fill={RES[res][1]} textAnchor="middle" transform={`translate(1060,975) scale(${pop}) translate(-1060,-975)`}>{RES[res][0]}</text>}
+            {res >= 0 && <text x={820} y={1010} fontFamily={F_HUD} fontWeight={600} fontSize={84} fill={RES[res][1]} textAnchor="middle" transform={`translate(820,985) scale(${pop}) translate(-820,-985)`}>{RES[res][0]}</text>}
           </>}
-          hud={<Rot t="you never know what you'll get" a={k(138.5)} b={k(141.0)} tam={56} pos="izq" top={170} />} />
+          hud={<Rot t="you never know what you'll get" a={k(138.5)} b={k(141.0)} tam={56} pos="arriba" top={40} />} />
       );
     };
     return <Pl />;
@@ -1140,21 +1174,21 @@ const q13d: PlanB = {
       return (
         <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#1e1418", luz: "#ffc94a" }} seed={5133} mano={2} claves={[mira(0, 960, 540, 1.0), mira(k(151.36), 960, 540, 1.08, { curva: "inout" })]}
           medio={<>
-            <g transform="translate(1200,520)">
+            <g transform="translate(1270,575) scale(1.08)">
               <g transform={`rotate(${rot})`}>
                 <path d="M0,-260 A260,260 0 1 1 -225,130" fill="none" stroke="#ffc94a" strokeWidth={22} strokeLinecap="round" />
                 <path d="M-225,130 l-10,-70 l66,30 Z" fill="#ffc94a" />
               </g>
               <text y={70} fontFamily={F_HUD} fontWeight={600} fontSize={240} fill="#f4efe4" textAnchor="middle" opacity={0.7 + 0.3 * Math.sin(f / 3)}>?</text>
-              <text y={-310} fontFamily={F_HUD} fontWeight={600} fontSize={52} fill="#f4efe4" textAnchor="middle">CHECK</text>
-              <text y={360} fontFamily={F_HUD} fontWeight={600} fontSize={52} fill="#ffc94a" textAnchor="middle">CHECK AGAIN</text>
+              <text y={-300} fontFamily={F_HUD} fontWeight={600} fontSize={60} fill="#f4efe4" textAnchor="middle">CHECK</text>
+              <text y={345} fontFamily={F_HUD} fontWeight={600} fontSize={60} fill="#ffc94a" textAnchor="middle">CHECK AGAIN</text>
             </g>
-            <Persona look={RUNNER} seed={91} luz={{ lado: 1, color: "#ffc94a", fuerza: 0.8 }} escala={1.9} ruta={[{ f: 0, x: 480, y: 1150 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
+            <Persona look={RUNNER} seed={91} luz={{ lado: 1, color: "#ffc94a", fuerza: 0.8 }} escala={2.6} ruta={[{ f: 0, x: 500, y: 1170 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
               poses={Array.from({ length: 8 }).map((_, i) => ({ f: i * 10, v: i % 2 ? { hD: 20, cD: 20, cabeza: 0 } : { hD: 30, cD: 125, cabeza: 22, tronco: 6, hI: 8, cI: 30 } }))}
-              caras={[{ f: 0, v: "duda" }]} miradas={Array.from({ length: 8 }).map((_, i) => ({ f: i * 10, v: i % 2 ? { x: 1, y: 0 } : { x: 0.5, y: 0.8 } }))}
+              caras={[{ f: 0, v: "duda" }, { f: 10, v: "sorpresa" }, { f: 20, v: "duda" }, { f: 30, v: "feliz" }, { f: 40, v: "cansado" }, { f: 50, v: "sorpresa" }, { f: 60, v: "triste" }]} miradas={Array.from({ length: 8 }).map((_, i) => ({ f: i * 10, v: i % 2 ? { x: 1, y: 0 } : { x: 0.5, y: 0.8 } }))}
               enManoD={<Celular s={1.1} brillo="#7ab8ff" />} />
           </>}
-          hud={<Rot t="the not knowing makes you check again" a={k(148.9)} b={k(151.36) + 4} tam={54} mano pos="izq" top={170} />} />
+          hud={<Rot t="the not knowing makes you check again" a={k(148.9)} b={k(151.36) + 4} tam={54} mano pos="izq" top={150} />} />
       );
     };
     return <Pl />;
@@ -1202,7 +1236,7 @@ const q14c: PlanB = {
       const temb = f > k(163.66) ? Math.sin(f * 2.3) * 6 : 0;
       return (
         <Escena Set={BusInterior} pal={PAL} setProps={{ hora: "manana", avance: () => 0 }} seed={5144} mano={1.5}
-          claves={[mira(0, 900, 640, 2.4), mira(k(161.6), 905 + temb, 610, 2.75, { curva: "inout" }), mira(k(164.9), 905, 605, 2.85)]}
+          claves={[mira(0, 900, 600, 2.4), mira(k(161.6), 905 + temb, 565, 2.75, { curva: "inout" }), mira(k(164.9), 905, 560, 2.85)]}
           medio={<Persona look={ABRIGO} seed={9} luz={{ lado: 1, color: "#ff6a5a", fuerza: f > k(161.6) ? 0.9 : 0.4 }} ruta={[{ f: 0, x: 900, y: BP }]} dir={[{ f: 0, v: -1 }]}
             poses={[{ f: 0, v: { hD: 8, cD: 6, hI: 8, cI: 6 } }]} caras={[{ f: 0, v: "neutral" }]} miradas={[{ f: 0, v: { x: 0, y: 0 } }]}
             cartel={reloj([{ f: 0, v: 0 }, { f: k(159.95), v: 1439, d: 48 }], { tam: 42, color: "#ff6a5a", latido: f > k(161.6) ? 0.6 : 0 })} />}
@@ -1259,8 +1293,8 @@ const q14e: PlanB = {
             {f > k(169.1) && f < k(170.4) && <g transform={`translate(${x9 + 170},${BP - 200}) scale(0.9)`} opacity={interpolate(f, [k(169.1), k(169.3)], [0, 1], cl)}><circle r={52} fill="none" stroke="#ff6a5a" strokeWidth={8} /><path d="M-36,36 L36,-36" stroke="#ff6a5a" strokeWidth={8} /><g transform="scale(1.4)"><Celular s={1} brillo="#7ab8ff" prendido={false} /></g></g>}
           </>}
           hud={<>
-            <Rot t="no phone in his hands" a={k(169.1)} b={k(170.4)} tam={58} mano pos="abajo" />
-            <Rot t="eyes open · fixed on nothing" a={k(170.42)} b={k(172.66) + 4} tam={58} mano pos="abajo" />
+            <Rot t="no phone in his hands" a={k(169.1)} b={k(170.4)} tam={58} mano pos="izq" top={600} />
+            <Rot t="eyes open · fixed on nothing" a={k(170.42)} b={k(172.66) + 4} tam={58} mano pos="izq" top={600} />
           </>} />
       );
     };
@@ -1302,7 +1336,7 @@ const q14g: PlanB = {
       const frio = interpolate(f, [k(179.8), k(181.2)], [0, 1], cl);
       return (
         <Escena Set={BusInterior} pal={PAL} setProps={{ hora: "manana", avance: () => 0, puertaF: (ff: number) => interpolate(ff, [0, k(178.3), k(179.4), k(179.8)], [0, 1, 1, 0], cl) }} seed={5147} mano={2}
-          claves={[mira(0, 520, 600, 1.8), mira(k(179.5), 300, 640, 2.2, { curva: "inout" }), mira(k(182.68), 170, 700, 3.2, { curva: "inout" })]}
+          claves={[mira(0, 600, 610, 2.05), mira(k(179.5), 280, 650, 2.6, { curva: "inout" }), mira(k(182.68), 170, 700, 3.3, { curva: "inout" })]}
           medio={<>
             <Persona {...owenVolante({ caras: [{ f: 0, v: "duda" }, { f: k(179.7), v: "miedo" }], miradas: [{ f: 0, v: { x: 1, y: 0 } }, { f: k(179.7), v: { x: -0.4, y: 0.8 } }] })} /><Volante />
             {f < k(179.6) && <Persona look={ABRIGO} seed={9} luz={{ lado: 1, color: "#b8c4cc", fuerza: 0.6 }} ruta={[{ f: 0, x: 900, y: BP }, { f: k(178.3), x: 900, y: BP }, { f: k(179.5), x: 540, y: BP }]} dir={[{ f: 0, v: -1 }]}
@@ -1457,14 +1491,30 @@ const q16b: PlanB = {
 const q16c: PlanB = {
   a: 197.9, b: 200.3, trans: { tipo: "corte" },
   sfx: [[197.95, "roll", -2, { dur: 1.6 }], [199.6, "ding", -4], [199.8, "cloth", -6]],
-  el: (k) => (
-    <Escena Set={BusInterior} pal={PAL} setProps={{ hora: "manana", avance: (ff: number) => 3000 + ff * 14 }} seed={5163} mano={2}
-      claves={[mira(0, 300, 600, 2.3), mira(k(200.3), 290, 585, 2.55, { curva: "inout" })]}
-      medio={<><Persona {...owenVolante({ caras: [{ f: 0, v: "feliz" }, { f: k(199.6), v: "risa" }], miradas: [{ f: 0, v: { x: -1, y: -0.4 } }],
-        ajuste: (p, ff) => ({ ...alVolante(ch, 1)(p, ff), cabeza: 5 * Math.sin(ff / 5) }),
-        cartel: { claves: [{ f: 0, v: 1 }, { f: k(198.1), v: 1000, d: 42 }], fmt: (v: number) => `${Math.round(v).toLocaleString("en-US")}×`, rotulo: "TIMES PAST THIS VIEW", icono: "reloj", tam: 44, color: "#ffc94a" } })} /><Volante /></>}
-      hud={<Rot t="he's driven past that view a thousand times" a={k(198.0)} b={k(200.3) + 4} tam={50} mano pos="abajo" />} />
-  ),
+  el: (k) => {
+    const Pl: React.FC = () => {
+      const f = useF();
+      const v = Math.round(interpolate(f, [k(198.1), k(198.1) + 42], [1, 1000], { ...cl, easing: (x) => 1 - Math.pow(1 - x, 2) }));
+      const pop = f < k(199.6) ? 1 : interpolate(f, [k(199.6), k(199.6) + 6], [1.18, 1], cl);
+      return (
+        <Escena Set={BusInterior} pal={PAL} setProps={{ hora: "manana", avance: (ff: number) => 3000 + ff * 14 }} seed={5163} mano={2}
+          claves={[mira(0, 110, 600, 2.3), mira(k(200.3), 100, 590, 2.45, { curva: "inout" })]}
+          medio={<><Persona {...owenVolante({ caras: [{ f: 0, v: "feliz" }, { f: k(199.6), v: "risa" }], miradas: [{ f: 0, v: { x: -1, y: -0.4 } }],
+            ajuste: (p, ff) => ({ ...alVolante(ch, 1)(p, ff), cabeza: 5 * Math.sin(ff / 5) }) })} /><Volante /></>}
+          hud={<>
+            <svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0 }}>
+              <g transform={`translate(900,330) scale(${pop})`}>
+                <rect x={-330} y={-170} width={660} height={300} rx={40} fill="#14181c" opacity={0.92} stroke="#ffc94a" strokeWidth={6} />
+                <text y={-100} fontFamily={F_HUD} fontWeight={600} fontSize={46} fill="#f4efe4" textAnchor="middle" letterSpacing={2}>TIMES PAST THIS VIEW</text>
+                <text y={70} fontFamily={F_HUD} fontWeight={600} fontSize={150} fill="#ffc94a" textAnchor="middle">{v.toLocaleString("en-US")}×</text>
+              </g>
+            </svg>
+            <Rot t="he's driven past that view a thousand times" a={k(198.0)} b={k(200.3) + 4} tam={50} mano pos="izq" top={740} />
+          </>} />
+      );
+    };
+    return <Pl />;
+  },
 };
 // ====================== 16d · un halcón en el poste de la parada 22 ======================
 const Halcon: React.FC<{ f: number; alas: number; gira: number }> = ({ f, alas, gira }) => (
@@ -1599,13 +1649,13 @@ const q17: PlanB = {
         <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#0f1e26" }} seed={517} mano={1.5}
           claves={[mira(0, 960, 540, 1.0), mira(k(217.76), 975, 548, 1.05, { curva: "inout" })]}
           medio={<>
-            <Monitor x={1230} y={600} w={780} h={440}>
+            <Monitor x={1260} y={620} w={720} h={410}>
               <Ventana x={0} y={0} w={700} h={360} i={app} s={interpolate(f % 36, [0, 6], [0.92, 1], cl)} />
               {/* el rastro de la mirada que salta (eye-tracking) */}
               {f > k(213.4) && <g transform="translate(-1230,-600)">{[0, 1, 2, 3, 4].map((i) => { const tt = t - i * 0.12; return <circle key={i} cx={1230 + Math.sin(tt * 1.3) * 300} cy={610 + Math.sin(tt * 2.1) * 140} r={18 - i * 3} fill="#ff4a5a" opacity={0.8 - i * 0.15} />; })}<circle cx={ojoX} cy={ojoY} r={30} fill="none" stroke="#ff4a5a" strokeWidth={5} /></g>}
             </Monitor>
-            <Persona look={SCRUBS} seed={61} luz={RIM.tubo} escala={1.9} ruta={[{ f: 0, x: 430, y: 1130 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
-              poses={[{ f: 0, v: { hD: 30, cD: 60, hI: 20, cI: 90 } }, { f: k(213.2), v: { hD: 100, cD: 20, hI: 20, cI: 90 } }, { f: k(215.8), v: { hD: 40, cD: 70, hI: 50, cI: 100 } }]}
+            <Persona look={SCRUBS} seed={61} luz={RIM.tubo} escala={2.6} ruta={[{ f: 0, x: 470, y: 1190 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
+              poses={[{ f: 0, v: { hD: 30, cD: 60, hI: 20, cI: 90 } }, { f: k(211.3), v: { hD: 105, cD: 5, hI: 20, cI: 90, tronco: 3 } }, { f: k(213.2), v: { hD: 30, cD: 60, hI: 20, cI: 90 } }, { f: k(214.2), v: { hD: 100, cD: 10, hI: 20, cI: 90, tronco: 3 } }, { f: k(215.8), v: { hD: 40, cD: 70, hI: 50, cI: 100 } }, { f: k(216.8), v: { hD: 110, cD: 5, hI: 20, cI: 90, tronco: 3 } }]}
               caras={[{ f: 0, v: "neutral" }, { f: k(213.4), v: "determinado" }, { f: k(215.8), v: "duda" }]}
               miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: k(215.8), v: { x: 0.6, y: 0.8 } }]} habla={[[k(209.4), k(211.0)]]}
               enManoD={(ff) => <Cronometro f={ff} corre={ff > k(213.4)} />}
@@ -1646,12 +1696,12 @@ const q17b: PlanB = {
         <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#14202a", luz: "#ffc94a" }} seed={5172} mano={1.5}
           claves={[mira(0, 960, 540, 1.0), mira(k(222.66), 970, 545, 1.04, { curva: "inout" })]}
           medio={<>
-            <Persona look={TRAJE} seed={23} luz={RIM.tubo} escala={1.8} ruta={[{ f: 0, x: 330, y: 1130 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
+            <Persona look={TRAJE} seed={23} luz={RIM.tubo} escala={2.4} ruta={[{ f: 0, x: 300, y: 1200 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
               poses={[{ f: 0, v: { hD: 70, cD: 40, hI: 60, cI: 50 } }]} ajuste={(p, ff) => ({ ...p, cD: 40 + 8 * Math.sin(ff / 3), cI: 50 + 8 * Math.cos(ff / 3) })}
               caras={[{ f: 0, v: "neutral" }, { f: k(221.3), v: "feliz" }]} miradas={[{ f: 0, v: { x: 1, y: 0.3 } }]} />
             <CRT x={640} f={f} />
-            <text x={BARRA_X} y={420} fontFamily={F_HUD} fontWeight={600} fontSize={56} fill="#ffc94a">EARLY 2000s</text>
-            <text x={BARRA_X} y={480} fontFamily={F_HUD} fontWeight={500} fontSize={44} fill="#c9d0d6">one screen, before switching</text>
+            <text x={BARRA_X} y={390} fontFamily={F_HUD} fontWeight={600} fontSize={84} fill="#ffc94a">EARLY 2000s</text>
+            <text x={BARRA_X} y={470} fontFamily={F_HUD} fontWeight={600} fontSize={52} fill="#e4e8ec">one screen, before switching</text>
             <rect x={BARRA_X} y={520} width={BARRA_W} height={100} rx={20} fill="#22303a" />
             <rect x={BARRA_X} y={520} width={BARRA_W * b1} height={100} rx={20} fill={VERDE} />
             <text x={BARRA_X + BARRA_W / 2} y={770} fontFamily={F_HUD} fontWeight={600} fontSize={130} fill={VERDE} textAnchor="middle" opacity={b1}>≈ 2½ MIN</text>
@@ -1675,13 +1725,13 @@ const q17c: PlanB = {
           claves={[mira(0, 960, 540, 1.0), mira(k(226.4), 975, 545, 1.05, { curva: "inout" })]}
           medio={<>
             {[0, 1, 2].map((i) => <Ventana key={i} x={480 + (i - 1) * 190} y={340 + Math.abs(i - 1) * 40} w={260} h={190} i={salta + i * 3} s={0.9} />)}
-            <Persona look={TRAJE} seed={23} luz={RIM.tubo} escala={1.8} ruta={[{ f: 0, x: 330, y: 1130 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
+            <Persona look={TRAJE} seed={23} luz={RIM.tubo} escala={2.4} ruta={[{ f: 0, x: 300, y: 1200 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
               poses={[{ f: 0, v: "celular" }]} caras={[{ f: 0, v: "duda" }, { f: k(225.9), v: "miedo" }]}
               miradas={[{ f: 0, v: { x: 1, y: 0.5 } }]} ajuste={(p, ff) => ({ ...p, cabeza: 12 * Math.sin(Math.floor(ff / 15) * 2.1) })} enManoD={<Celular s={1.1} brillo="#7ab8ff" />} />
-            <text x={BARRA_X} y={420} fontFamily={F_HUD} fontWeight={600} fontSize={48} fill="#9aa4ac">EARLY 2000s</text>
+            <text x={BARRA_X} y={418} fontFamily={F_HUD} fontWeight={600} fontSize={64} fill="#c9d0d6">EARLY 2000s</text>
             <rect x={BARRA_X} y={440} width={BARRA_W} height={80} rx={18} fill="#5a6a74" />
             <text x={BARRA_X + BARRA_W - 20} y={500} fontFamily={F_HUD} fontWeight={600} fontSize={48} fill="#f4efe4" textAnchor="end">2½ MIN</text>
-            <text x={BARRA_X} y={640} fontFamily={F_HUD} fontWeight={600} fontSize={56} fill="#ff8a5a" opacity={interpolate(f, [k(223.0), k(223.4)], [0, 1], cl)}>RECENT STUDIES</text>
+            <text x={BARRA_X} y={640} fontFamily={F_HUD} fontWeight={600} fontSize={72} fill="#ff8a5a" opacity={interpolate(f, [k(223.0), k(223.4)], [0, 1], cl)}>RECENT STUDIES</text>
             <rect x={BARRA_X} y={660} width={BARRA_W * b2} height={100} rx={20} fill="#ff8a5a" />
             <text x={BARRA_X + BARRA_W * b2 + 30} y={746} fontFamily={F_HUD} fontWeight={600} fontSize={96} fill="#ff8a5a" opacity={b2 > 0.05 ? 1 : 0}>47 SEC</text>
           </>}
@@ -1703,18 +1753,18 @@ const q17d: PlanB = {
       const vib = f > k(226.5) && f < k(227.2) ? Math.sin(f * 2.4) * 6 : 0;
       return (
         <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#1a1820", luz: "#ffc94a" }} seed={5174} mano={2}
-          claves={[mira(0, 960, 540, 1.0), mira(k(231.14), 980, 550, 1.06, { curva: "inout" })]}
+          claves={[mira(0, 880, 590, 1.14), mira(k(231.14), 890, 595, 1.2, { curva: "inout" })]}
           medio={<>
-            <Persona look={TRAJE} seed={23} luz={RIM.tubo} escala={1.8} ruta={[{ f: 0, x: 380, y: 1130 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
+            <Persona look={TRAJE} seed={23} luz={RIM.tubo} escala={2.5} ruta={[{ f: 0, x: 380, y: 1210 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
               poses={[{ f: 0, v: { hD: 70, cD: 40, hI: 60, cI: 50 } }, { f: k(227.2), v: "celular" }, { f: k(228.2), v: "manosCara" }]}
               caras={[{ f: 0, v: "determinado" }, { f: k(226.6), v: "sorpresa" }, { f: k(228.2), v: "duda" }, { f: k(230.6), v: "cansado" }]}
               miradas={[{ f: 0, v: { x: 1, y: 0.3 } }, { f: k(228.2), v: { x: 0.4, y: -0.8 } }]}
               enManoD={(ff) => (ff > k(227.2) && ff < k(228.2) ? <Celular s={1.1} brillo="#7ab8ff" /> : null)} />
-            {f < k(227.2) && <g transform={`translate(${640 + vib},850) rotate(90)`}><Celular s={2.2} brillo="#7ab8ff" /></g>}
+            {f < k(227.2) && <g transform={`translate(${700 + vib},850) rotate(90)`}><Celular s={2.2} brillo="#7ab8ff" /></g>}
             <circle cx={CX} cy={CY} r={R} fill="#1f2a33" stroke="#2c3a44" strokeWidth={40} />
             {u > 0.01 && <path d={arco(CX, CY, R, 0, u * Math.PI * 2 * 0.999)} stroke="#ffc94a" strokeWidth={40} fill="none" strokeLinecap="round" />}
             <text x={CX} y={CY + 10} fontFamily={F_HUD} fontWeight={600} fontSize={130} fill="#ffc94a" textAnchor="middle">{Math.round(u * 20)}+</text>
-            <text x={CX} y={CY + 80} fontFamily={F_HUD} fontWeight={600} fontSize={48} fill="#f4efe4" textAnchor="middle">MINUTES</text>
+            <text x={CX} y={CY + 80} fontFamily={F_HUD} fontWeight={600} fontSize={52} fill="#f4efe4" textAnchor="middle">MINUTES</text>
             <text x={CX} y={CY + R + 110} fontFamily={F_HUD} fontWeight={600} fontSize={50} fill="#f4efe4" textAnchor="middle" opacity={interpolate(f, [k(228.6), k(229)], [0, 1], cl)}>to get fully back</text>
           </>}
           frente={<Escritorio x={470} w={560} />}
@@ -1807,12 +1857,12 @@ const q18b: PlanB = {
     const Pl: React.FC = () => {
       const f = useF();
       return (
-        <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#0e1a20", luz: "#ffc94a" }} seed={5182} mano={2} claves={[mira(0, 960, 560, 1.03), mira(k(241.1), 970, 560, 1.07)]}
+        <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#0e1a20", luz: "#ffc94a" }} seed={5182} mano={2} claves={[mira(0, 690, 600, 1.75), mira(k(240.02), 700, 590, 1.85), mira(k(240.18), 960, 560, 1.03, { curva: "inout" }), mira(k(241.1), 970, 560, 1.07)]}
           medio={<>
-            <Persona {...OWEN_CTA(520, { poses: [{ f: 0, v: "brazosCruzados" }, { f: k(240.1), v: { hD: 92, cD: 4, hI: 10, cI: 20 } }], caras: [{ f: 0, v: "picaro" }, { f: k(240.1), v: "feliz" }], miradas: [{ f: 0, v: { x: 0.3, y: 0 } }, { f: k(240.1), v: { x: 1, y: 0 } }], habla: [[k(239.15), k(241.0)]] })} />
+            <Persona {...OWEN_CTA(520, { poses: [{ f: 0, v: { hD: 100, cD: 0, hI: 10, cI: 20, tronco: 3 } }, { f: k(239.7), v: { hD: 108, cD: 6, hI: 60, cI: 90 } }, { f: k(240.1), v: { hD: 92, cD: 4, hI: 10, cI: 20 } }], caras: [{ f: 0, v: "picaro" }, { f: k(239.6), v: "determinado" }, { f: k(240.1), v: "feliz" }], miradas: [{ f: 0, v: { x: 0, y: 0 } }, { f: k(240.1), v: { x: 1, y: 0 } }], habla: [[k(239.15), k(241.0)]] })} />
             <Comentario f={f} desde={k(240.1)} texto="today: 6h 40m" />
           </>}
-          hud={<Rot t={f < k(240.1) ? "BE HONEST." : "put it in the comments"} a={k(239.15)} b={k(241.1) + 4} tam={f < k(240.1) ? 110 : 66} pos="der" top={170} color={f < k(240.1) ? "#ffc94a" : VERDE} />} />
+          hud={<Rot t={f < k(240.1) ? "BE HONEST." : "put it in the comments"} a={k(239.15)} b={k(241.1) + 4} tam={f < k(240.1) ? 110 : 66} pos="der" top={f < k(240.1) ? 400 : 170} color={f < k(240.1) ? "#ffc94a" : VERDE} />} />
       );
     };
     return <Pl />;
@@ -1857,7 +1907,7 @@ const q18d: PlanB = {
 // ====================== 19 · miércoles a la noche: Dee llega del doble turno ======================
 const s19 = LIV_PUNTOS.sofa;
 const LIBRO = <g><rect x={-28} y={-20} width={56} height={40} rx={3} fill="#c94a3a" /><rect x={-2} y={-20} width={4} height={40} fill="#8a2a22" /></g>;
-const OWEN_LEE = (extra: Partial<PersonaP>): PersonaP => ({ look: OWEN_CASA, seed: 47, luz: RIM.noche, ruta: [{ f: 0, x: 1800, y: LP }], dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: { hD: 70, cD: 80, hI: 60, cI: 90, cabeza: 14 } }], caras: [{ f: 0, v: "neutral" }], miradas: [{ f: 0, v: { x: -0.3, y: 0.8 } }], enManoD: LIBRO, cartel: reloj(19, { tam: 30 }), ...extra });
+const OWEN_LEE = (extra: Partial<PersonaP>): PersonaP => ({ look: OWEN_CASA, seed: 47, luz: RIM.noche, ruta: [{ f: 0, x: 1800, y: LP }], dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: { hD: 70, cD: 80, hI: 60, cI: 90, cabeza: 14 } }], caras: [{ f: 0, v: "neutral" }], miradas: [{ f: 0, v: { x: -0.3, y: 0.8 } }], enManoD: LIBRO, cartel: reloj(19, { tam: 44 }), ...extra });
 const q19: PlanB = {
   a: 244.36, b: 247.42, trans: { tipo: "cortina", lado: -1 },
   sfx: [[244.4, "door", -4], [245.0, "step", -4], [245.7, "step", -4], [246.4, "step", -4], [247.1, "step", -4]],
@@ -1922,7 +1972,7 @@ const q19d: PlanB = {
       const f = useF();
       const M = HAL_PUNTOS.mesa;
       return (
-        <Escena Set={Halden} pal={PAL} setProps={{ hora: "dia" }} seed={5195} mano={2}
+        <Escena Set={Halden} pal={PAL} setProps={{ hora: "dia", tablet: "" }} seed={5195} mano={2}
           claves={[mira(0, M + 150, HAL_PISO - 300, 2.0), mira(k(260.82), M + 170, HAL_PISO - 310, 2.25, { curva: "inout" })]}
           medio={<>
             <g transform={`translate(${M + 230},${HAL_PISO - 250})`}>
@@ -1930,8 +1980,10 @@ const q19d: PlanB = {
               <rect x={-130} y={-30} width={200} height={20} rx={6} fill="#c9ced2" />
               <rect x={-210} y={-300} width={420} height={270} rx={14} fill="#22303a" />
               <rect x={-196} y={-286} width={392} height={242} rx={8} fill="#eaf4fb" />
-              <text x={-180} y={-252} fontFamily={F_HUD} fontWeight={600} fontSize={24} fill="#1a4fae">PATIENT CHART · BED 12</text>
-              {FILAS19.map((t, i) => <text key={i} x={-180} y={-212 + i * 36} fontFamily={F_HUD} fontWeight={600} fontSize={22} fill="#22303a" opacity={interpolate(f, [k(256.0 + i * 0.9), k(256.0 + i * 0.9) + 4], [0, 1], cl)}>{t}</text>)}
+              <text x={-180} y={-246} fontFamily={F_HUD} fontWeight={600} fontSize={30} fill="#1a4fae">PATIENT CHART</text>
+              <clipPath id="clip19"><rect x={-196} y={-286} width={392} height={242} /></clipPath><g clipPath="url(#clip19)">{(() => { const vis = FILAS19.map((_, i) => k(256.0 + i * 0.9)).filter((t) => f >= t).length; const ini = Math.max(0, vis - 3);
+                return FILAS19.slice(ini, Math.max(vis, 1)).map((t, j) => { const i = ini + j; const sube = vis >= 4 ? interpolate(f, [k(256.0 + (vis - 1) * 0.9), k(256.0 + (vis - 1) * 0.9) + 5], [62, 0], cl) : 0;
+                  return <text key={i} x={-180} y={-186 + j * 62 + sube} fontFamily={F_HUD} fontWeight={600} fontSize={32} fill="#22303a" opacity={interpolate(f, [k(256.0 + i * 0.9), k(256.0 + i * 0.9) + 4], [0, 1], cl)}>{t}</text>; }); })()}</g>
             </g>
             <Persona look={DEE} seed={34} luz={RIM.clinica} ruta={[{ f: 0, x: M + 20, y: HAL_PISO }]} dir={[{ f: 0, v: 1 }]}
               poses={[{ f: 0, v: { hD: 70, cD: 30, hI: 70, cI: 30 } }]} ajuste={(p, ff) => ({ ...p, cD: 30 + 10 * Math.sin(ff / 1.6), cI: 30 + 10 * Math.cos(ff / 1.4) })}
@@ -2233,21 +2285,28 @@ const q21c: PlanB = {
   el: (k) => {
     const Pl: React.FC = () => {
       const f = useF();
-      const u = interpolate(f, [k(298.6), k(299.9)], [0, 1], { ...cl, easing: (x) => 1 - Math.pow(1 - x, 2) });
+      const u = interpolate(f, [k(298.6), k(299.9)], [0.14, 1], { ...cl, easing: (x) => 1 - Math.pow(1 - x, 2) });
       const H = 520, B = 900;
       return (
         <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#0c1426" }} seed={5213} mano={1.5} claves={[mira(0, 960, 540, 1.0), mira(k(301.6), 960, 545, 1.04)]}
           medio={<>
             <NumeroM x={960} y={210} texto="MELATONIN" rotulo="THE HORMONE THAT TELLS YOUR BODY IT'S NIGHT" desde={k(298.4)} tam={110} color="#c9b6ff" />
-            <g transform="translate(1420,300)"><circle r={70} fill="#f4efe4" /><circle cx={30} cy={-18} r={62} fill="#0c1426" /></g>
-            {[["PRINTED BOOK", 1, "#ffc94a", 640], ["TABLET", 0.45, "#9fd0ff", 1180]].map(([t, v, c, x], i) => {
-              const h = H * (v as number) * u;
+            <g transform="translate(1180,330)"><circle r={60} fill="#f4efe4" /><circle cx={26} cy={-16} r={54} fill="#0c1426" /></g>
+            {[["PRINTED BOOK", 1, "#ffc94a", 470], ["TABLET", 0.45, "#9fd0ff", 900]].map(([t, v, c, x], i) => {
+              const h = H * (v as number) * u, X = x as number;
               return <g key={i}>
-                <rect x={(x as number) - 120} y={B - h} width={240} height={h} rx={16} fill={c as string} />
-                <text x={x as number} y={B + 70} fontFamily={F_HUD} fontWeight={600} fontSize={50} fill="#f4efe4" textAnchor="middle">{t as string}</text>
+                <rect x={X - 120} y={B - h} width={240} height={h} rx={16} fill={c as string} />
+                <g transform={`translate(${X},${B - h - 80})`}>{i === 0
+                  ? <g><path d="M-70,-40 Q-35,-55 0,-40 Q35,-55 70,-40 V40 Q35,25 0,40 Q-35,25 -70,40 Z" fill="#f4efe4" stroke="#c99b2a" strokeWidth={6} /><path d="M0,-40 V40" stroke="#c99b2a" strokeWidth={5} />{[0, 1, 2].map((r) => <g key={r}><rect x={-58} y={-24 + r * 18} width={46} height={6} rx={3} fill="#b8a888" /><rect x={12} y={-24 + r * 18} width={46} height={6} rx={3} fill="#b8a888" /></g>)}</g>
+                  : <g><rect x={-60} y={-46} width={120} height={92} rx={14} fill="#15151a" /><rect x={-50} y={-37} width={100} height={74} rx={6} fill="#9fd0ff" opacity={0.9} /><circle cx={0} cy={0} r={46} fill="#cfe8ff" opacity={0.25 + 0.15 * Math.sin(f / 4)} /></g>}</g>
+                <text x={X} y={B + 70} fontFamily={F_HUD} fontWeight={600} fontSize={50} fill="#f4efe4" textAnchor="middle">{t as string}</text>
               </g>;
             })}
-            <text x={1180} y={B - H * 0.45 * u - 30} fontFamily={F_HUD} fontWeight={600} fontSize={70} fill="#ff8a5a" textAnchor="middle" opacity={interpolate(f, [k(300.0), k(300.3)], [0, 1], cl)}>LESS</text>
+            <text x={1040} y={B - H * 0.45 * u + 20} fontFamily={F_HUD} fontWeight={600} fontSize={70} fill="#ff8a5a" textAnchor="start" opacity={interpolate(f, [k(300.0), k(300.3)], [0, 1], cl)}>LESS</text>
+            <Persona look={OWEN_CASA} seed={47} luz={{ lado: -1, color: "#9fd0ff", fuerza: 0.7 }} escala={2.5} ruta={[{ f: 0, x: 1580, y: 1160 }]} dir={[{ f: 0, v: -1 }]} sombra={0}
+              poses={[{ f: 0, v: { hD: 70, cD: 80, hI: 60, cI: 90, cabeza: 10 } }, { f: k(299.9), v: { hD: 20, cD: 30, hI: 60, cI: 90, cabeza: 0 } }, { f: k(300.4), v: "manosCintura" }]}
+              caras={[{ f: 0, v: "neutral" }, { f: k(299.0), v: "duda" }, { f: k(300.0), v: "sorpresa" }, { f: k(300.8), v: "determinado" }]}
+              miradas={[{ f: 0, v: { x: -0.3, y: 0.8 } }, { f: k(298.8), v: { x: -1, y: 0.1 } }]} enManoD={(ff) => (ff < k(299.9) ? LIBRO : null)} />
           </>} />
       );
     };
@@ -2320,7 +2379,7 @@ const CeluG: React.FC<{ x?: number; top?: number; w?: number; h?: number; f: num
 const BUSQ = [["Halden Clinic", 308.64], ["Halden Clinic complaints", 309.74], ["Halden Clinic missing participants", 311.2], ["Halden Clinic Fulton Market", 313.06]] as const;
 const Busquedas: React.FC<{ f: number; k: K }> = ({ f, k }) => (
   <>
-    <div style={{ margin: "34px 26px 18px", padding: "16px 24px", borderRadius: 40, background: "#e3e8ee", fontSize: 44, fontWeight: 600, color: "#5a6470" }}>search…</div>
+    <div style={{ margin: "34px 26px 18px", padding: "16px 24px", borderRadius: 40, background: "#e3e8ee", fontSize: 44, fontWeight: 600, color: "#20242c" }}>🔍 {(() => { const act = [...BUSQ].reverse().find(([, t0]) => f >= k(t0 as number) - 30); const q = act ? act[0] : BUSQ[0][0]; const t0 = act ? k(act[1] as number) - 30 : 0; return q.slice(0, Math.max(1, Math.floor((f - t0) * 1.1))); })()}{(f % 20) < 10 ? "|" : ""}</div>
     {BUSQ.map(([t, s], i) => {
       if (f < k(s)) return null;
       const roja = i === 2;
@@ -2341,14 +2400,12 @@ const q22c: PlanB = {
       const f = useF();
       return (
         <AbsoluteFill style={{ background: "#2a2230" }}>
-          <Escena Set={Living} pal={PAL} setProps={{ hora: "noche", tele: false }} seed={5223} mano={1.5} claves={[mira(0, s19 + 300, 640, 1.4)]} />
-          <AbsoluteFill style={{ background: "rgba(10,12,24,0.45)" }} />
-          <Vineta x={110} y={330} w={720} desde={k(307.4)} hasta={k(313.06) + 4} rot={-2}>
-            <Escena Set={Living} pal={PAL} setProps={{ hora: "noche", tele: false }} seed={5224} mano={1} claves={[mira(0, s19 + 88, 690, 3.6)]}
-              medio={<><Persona {...OWEN_SOFA({ caras: [{ f: 0, v: "duda" }, { f: k(311.3), v: "miedo" }], miradas: [{ f: 0, v: { x: -0.6, y: 0.4 } }], luz: { lado: -1, color: "#9fd0ff", fuerza: 1 } })} /><Halo x={s19 + 60} y={700} r={90} color="#9fd0ff" fuerza={0.45} /></>} />
-          </Vineta>
-          <CeluG f={f} desde={0}><Busquedas f={f} k={k} /></CeluG>
-          <Rot t="a page of search results" a={k(307.3)} b={k(309.6)} tam={50} mano pos="izq" top={180} />
+          <Escena Set={Living} pal={PAL} setProps={{ hora: "noche", tele: false }} seed={5223} mano={1.5} claves={[mira(0, s19 + 270, 690, 2.6), mira(k(313.06), s19 + 260, 700, 2.8, { curva: "inout" })]}
+            medio={<><Persona {...OWEN_SOFA({ poses: [{ f: 0, v: { ...POSE_CELU_SENTADO, tronco: -8, cabeza: 16 } }], ajuste: (p, ff) => ({ ...p, cD: (p.cD ?? 125) + 7 * Math.sin(ff / 1.2) }),
+              caras: [{ f: 0, v: "duda" }, { f: k(309.8), v: "determinado" }, { f: k(311.3), v: "miedo" }], miradas: [{ f: 0, v: { x: -0.5, y: 0.7 } }],
+              enManoD: <Celular s={1} brillo="#7ab8ff" />, luz: { lado: -1, color: "#9fd0ff", fuerza: 1 } })} /><Halo x={s19 + 60} y={700} r={110} color="#9fd0ff" fuerza={0.5} /></>} />
+          <CeluG f={f} desde={-10} x={1380}><Busquedas f={f} k={k} /></CeluG>
+          <Rot t="a page of search results" a={k(307.3)} b={k(309.6)} tam={50} mano pos="izq" top={140} />
         </AbsoluteFill>
       );
     };
@@ -2400,12 +2457,17 @@ const q22e: PlanB = {
       const f = useF();
       return (
         <AbsoluteFill style={{ background: "#1c1a26" }}>
-          <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#1c1a26", luz: "#ff6a5a" }} seed={5226} mano={1} claves={[mira(0, 960, 540, 1.0)]} />
-          <div style={{ position: "absolute", left: 110, top: 160, fontFamily: F_HUD, fontWeight: 600, fontSize: 54, color: "#f4efe4", opacity: interpolate(f, [4, 10], [0, 1], cl) }}>FORUM · <span style={{ color: "#ff8a5a" }}>«paid study chicago»</span></div>
+          <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#1c1a26", luz: "#ff6a5a" }} seed={5226} mano={1} claves={[mira(0, 960, 540, 1.0)]}
+            medio={<Persona look={OWEN_CASA} seed={47} luz={{ lado: 1, color: "#9fd0ff", fuerza: 0.9 }} escala={2.5} ruta={[{ f: 0, x: 300, y: 1160 }]} dir={[{ f: 0, v: 1 }]} sombra={0}
+              poses={[{ f: 0, v: "celular" }]} ajuste={(p, ff) => ({ ...p, cabeza: (p.cabeza ?? 0) + 3 * Math.sin(ff / 9) })}
+              caras={[{ f: 0, v: "duda" }, { f: k(318.3), v: "sorpresa" }, { f: k(320.1), v: "miedo" }]} miradas={[{ f: 0, v: { x: 0.5, y: 0.8 } }, { f: k(318.3), v: { x: 1, y: 0 } }, { f: k(318.9), v: { x: 0.5, y: 0.8 } }]}
+              enManoD={<Celular s={1.1} brillo="#7ab8ff" />} />} />
+          <div style={{ position: "absolute", left: 640, top: 70, fontFamily: F_HUD, fontWeight: 600, fontSize: 54, color: "#f4efe4" }}>FORUM · <span style={{ color: "#ff8a5a" }}>«paid study chicago»</span></div>
           {POSTS.map(([u, t, n, s], i) => {
-            const o = interpolate(f, [k(s), k(s) + 8], [0, 1], { ...cl, easing: (x) => 1 - Math.pow(1 - x, 3) });
+            const o = i === 0 ? 1 : interpolate(f, [k(s), k(s) + 8], [0, 1], { ...cl, easing: (x) => 1 - Math.pow(1 - x, 3) });
+            const atras = POSTS.filter(([, , , s2], j) => j > i && f >= k(s2)).length;
             return (
-              <div key={i} style={{ position: "absolute", left: 110 + i * 580, top: 290 + (1 - o) * 80 + (i % 2) * 40, width: 550, opacity: o, transform: `rotate(${[-1.5, 1, -0.5][i]}deg)`, background: "#f4efe4", borderRadius: 26, padding: "24px 26px", boxSizing: "border-box", fontFamily: F_HUD, color: "#20242c", boxShadow: "0 18px 40px rgba(0,0,0,0.45)" }}>
+              <div key={i} style={{ position: "absolute", left: 600 + i * 330, top: 140 + i * 215 + (1 - o) * 80, width: 600, opacity: o, filter: `brightness(${1 - 0.25 * atras})`, transform: `rotate(${[-1.5, 1, -0.5][i]}deg)`, background: "#f4efe4", borderRadius: 26, padding: "24px 26px", boxSizing: "border-box", fontFamily: F_HUD, color: "#20242c", boxShadow: "0 18px 40px rgba(0,0,0,0.45)" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 14, fontSize: 44, fontWeight: 600, color: "#5a6470" }}><div style={{ width: 54, height: 54, borderRadius: 27, background: ["#ff8a5a", "#7ab8ff", "#3fbf4a"][i] }} />{u}</div>
                 <div style={{ fontSize: 54, fontWeight: 600, lineHeight: 1.14, marginTop: 18 }}>{t}</div>
                 <div style={{ fontSize: 52, fontWeight: 600, color: "#c23a2e", marginTop: 22 }}>#{n}</div>
@@ -2525,7 +2587,7 @@ const q23c: PlanB = {
   sfx: [[339.45, "roll", -2, { dur: 0.8 }], [340.3, "ding", -2], [340.5, "paper", -2], [341.2, "paper", -4], [341.6, "sparkle", -4]],
   el: (k) => (
     <Escena Set={Ashland} pal={PAL} setProps={{ hora: "dia", centro: () => 2600, paradas: [], autos: 1 }} seed={5233} mano={2}
-      claves={[mira(0, 2700, 840, 2.1), mira(k(342.32), 2700, 845, 2.4, { curva: "inout" })]}
+      claves={[mira(0, 2700, 905, 2.1), mira(k(342.32), 2700, 905, 2.4, { curva: "inout" })]}
       medio={<Persona look={LENA} seed={18} luz={RIM.sol} ruta={[{ f: 0, x: 2620, y: ASH_CARRIL - 80 }]} dir={[{ f: 0, v: 1 }]}
         poses={[{ f: 0, v: { hD: 60, cD: 80 } }, { f: k(340.44), v: { hD: 38, cD: 22, hI: 20, cI: 30 } }]}
         caras={[{ f: 0, v: "determinado" }, { f: k(340.44), v: "feliz" }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: k(340.5), v: { x: 1, y: 0.5 } }]}
@@ -2688,7 +2750,7 @@ const q25b: PlanB = {
               poses={[{ f: 0, v: "celular" }, { f: k(361.6), v: { hD: 30, cD: 100, hI: 30, cI: 150, cabeza: 6 } }]}
               caras={[{ f: 0, v: "duda" }, { f: k(359.6), v: "miedo" }, { f: k(361.4), v: "sorpresa" }]} miradas={[{ f: 0, v: { x: 0.3, y: 0.8 } }, { f: k(361.6), v: { x: 1, y: 0 } }]}
               enManoD={<Celular s={0.9} brillo="#7ab8ff" />} />} />
-          <CeluG f={f} desde={-20} x={1300}><ChatG f={f} k={k} de="Dee" ini="D" color="#3fa39a" msgs={MSG_DEE} titulo="4:07 AM" /></CeluG>
+          <CeluG f={f} desde={-20} x={1300} top={190} w={580} h={660}><ChatG f={f} k={k} de="Dee" ini="D" color="#3fa39a" msgs={MSG_DEE} titulo="4:07 AM" /></CeluG>
         </AbsoluteFill>
       );
     };
@@ -2770,7 +2832,7 @@ const q27: PlanB = {
         <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#0f1e26" }} seed={527} mano={1.5} claves={[mira(0, 960, 560, 1.0), mira(k(371.54), 950, 560, 1.04)]}
           medio={<>
             <CuerpoAnat x={720} y={590} esc={0.72} flujo={0} f={f} nudo={0.6} />
-            <Persona {...OWEN_PIZ(1520, { poses: [{ f: 0, v: { hD: 92, cD: 4, hI: 30, cI: 120 } }], caras: [{ f: 0, v: "determinado" }], miradas: [{ f: 0, v: { x: -1, y: 0 } }], habla: [[k(369.6), k(371.4)]] })} />
+            <Persona {...OWEN_PIZ(1150, { escala: 2.4, ruta: [{ f: 0, x: 1150, y: 1180 }], poses: [{ f: 0, v: { hD: 100, cD: 4, hI: 30, cI: 120, tronco: 4 } }], ajuste: (p, ff) => ({ ...p, hD: (p.hD ?? 100) + 4 * Math.sin(ff / 4) }), caras: [{ f: 0, v: "determinado" }, { f: k(370.4), v: "duda" }], miradas: [{ f: 0, v: { x: -1, y: 0.2 } }], habla: [[k(369.6), k(371.4)]] })} />
           </>}
           hud={<Rot t="stress in your stomach" a={k(369.6)} b={k(371.54) + 4} tam={60} pos="der" top={170} color="#ffc94a" />} />
       );
@@ -2837,7 +2899,7 @@ const q27c: PlanB = {
 
 // ====================== 28 · 5:12 p.m., el mensaje ======================
 const q28: PlanB = {
-  a: 379.9, b: 382.12, trans: { tipo: "fundido", d: 8 },
+  a: 379.9, b: 382.12, trans: { tipo: "corte" },
   sfx: [[380.0, "phone_buzz", -2], [380.9, "phone_buzz", -2], [381.3, "cloth", -4]],
   el: (k) => {
     const Pl: React.FC = () => {
@@ -2895,7 +2957,7 @@ const q28c: PlanB = {
           <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
             <Flecha x1={820} y1={420} x2={590} y2={150} u={u} color="#ff4a3d" w={14} curva={-0.2} />
           </svg>
-          <div style={{ position: "absolute", left: 1150, top: 380, fontFamily: F_HUD, fontWeight: 600, fontSize: 210, color: "#ff4a3d", textShadow: `${gl}px 0 0 #7ab8ff, 0 6px 20px rgba(0,0,0,0.6)`, opacity: u }}>42<span style={{ color: "#f4efe4", fontSize: 140 }}> / 47</span></div>
+          <div style={{ position: "absolute", left: 1160, top: 330, padding: "10px 44px 18px", borderRadius: 36, background: "rgba(14,16,22,0.9)", border: "6px solid #ff4a3d", fontFamily: F_HUD, fontWeight: 600, fontSize: 220, lineHeight: 1, color: "#ff4a3d", textShadow: `${gl}px 0 0 #7ab8ff`, opacity: u, transform: `scale(${interpolate(u, [0, 1], [1.3, 1])})` }}>42<span style={{ color: "#ffffff", fontSize: 150 }}> / 47</span></div>
           <Rot t="the counter in the corner" a={k(389.5)} b={k(392.36) + 4} tam={54} mano pos="abajo" />
         </AbsoluteFill>
       );
@@ -2984,8 +3046,8 @@ const q29c: PlanB = {
       return (
         <Escena Set={Pizarra} pal={PAL} setProps={{ tono: "#0e1a20", luz: "#ffc94a" }} seed={5293} mano={2} claves={[mira(0, 960, 560, 1.03), mira(k(402.18), 970, 560, 1.07)]}
           medio={<>
-            <Persona {...OWEN_CTA(520, { poses: [{ f: 0, v: "celular" }, { f: k(400.4), v: { hD: 92, cD: 4, hI: 10, cI: 20 } }], caras: [{ f: 0, v: "feliz" }], miradas: [{ f: 0, v: { x: 1, y: 0 } }], habla: [[k(399.5), k(402.1)]], enManoD: (ff) => (ff < k(400.4) ? <Celular s={1} brillo="#7ab8ff" /> : null) })} />
-            <Comentario f={f} desde={k(399.9)} texto="today: 4h 12m" />
+            <Persona {...OWEN_CTA(430, { escala: 2.7, ruta: [{ f: 0, x: 430, y: 1200 }], poses: [{ f: 0, v: "celular" }, { f: k(400.0), v: { hD: 100, cD: 4, hI: 10, cI: 20, tronco: 4 } }], caras: [{ f: 0, v: "feliz" }, { f: k(400.0), v: "determinado" }, { f: k(401.6), v: "risa" }], miradas: [{ f: 0, v: { x: 1, y: 0 } }], habla: [[k(399.5), k(402.1)]], enManoD: (ff) => (ff < k(400.0) ? <Celular s={1} brillo="#7ab8ff" /> : null) })} />
+            <Comentario f={f} desde={k(399.5)} texto="today: 4h 12m" />
           </>}
           hud={<Rot t="WHAT'S YOUR SCREEN TIME TODAY?" a={k(399.5)} b={k(402.18) + 4} tam={56} pos="der" top={170} color={VERDE} />} />
       );
@@ -3015,7 +3077,7 @@ const q29d: PlanB = {
   },
 };
 
-export const PLANOS_OB05: PlanB[] = [q01, q02, q02b, q03, q03b, q04, q04b, q05, q06, q06b, q06c, q07, q07b, q07c, q07d, q07e, q08, q09, q09b, q09c, q09d, q10, q10b, q11, q11b, q11c, q11d, q12, q13, q13b, q13c, q13d, q14, q14b, q14c, q14d, q14e, q14f, q14g, q15, q15b, q16, q16b, q16c, q16d, q16e, q16f, q17, q17b, q17c, q17d, q17e, q18, q18b, q18c, q18d, q19, q19b, q19c, q19d, q19e, q19f, q20, q20b, q20c, q20d, q20e, q21, q21b, q21c, q21d, q22, q22b, q22c, q22d, q22e, q22f, q22g, q22h, q23, q23b, q23c, q23d, q24, q24b, q25, q25b, q26, q26b, q26c, q27, q27b, q27c, q28, q28b, q28c, q29, q29b, q29c, q29d];
+export const PLANOS_OB05: PlanB[] = [q01, q02, q02b, q03, q03b, q04, q04b, q05, q06, q06b, q06c, q07, q07x, q07b, q07c, q07d, q07e, q08, q09, q09b, q09c, q09d, q10, q10b, q11, q11b, q11c, q11d, q12, q13, q13b, q13c, q13d, q14, q14b, q14c, q14d, q14e, q14f, q14g, q15, q15b, q16, q16b, q16c, q16d, q16e, q16f, q17, q17b, q17c, q17d, q17e, q18, q18b, q18c, q18d, q19, q19b, q19c, q19d, q19e, q19f, q20, q20b, q20c, q20d, q20e, q21, q21b, q21c, q21d, q22, q22b, q22c, q22d, q22e, q22f, q22g, q22h, q23, q23b, q23c, q23d, q24, q24b, q25, q25b, q26, q26b, q26c, q27, q27b, q27c, q28, q28b, q28c, q29, q29b, q29c, q29d];
 export const OB05 = armar(PLANOS_OB05);
 
 // reloj del día (minutos desde medianoche); null = sin reloj (pizarras / celulares)
