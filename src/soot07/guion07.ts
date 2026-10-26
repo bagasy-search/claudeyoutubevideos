@@ -31,6 +31,23 @@ export type Beat =
   | { k: "ico"; t: number; ico: string; x: number; y: number; s?: number; t1?: number; tacha?: number; label?: string }
   | { k: "cuenta"; t: number; t1: number; de: number; a: number; x: number; y: number; size?: number; suf?: string; pre?: string; col?: string; fin?: number };
 export const B: Beat[] = [];
+// ── insertos (insertos.tsx): plano gráfico saturado con el nene grande actuando + un componente de concepto
+export type Pose = "senala" | "cabeza" | "celebra" | "piensa" | "tiembla" | "corre" | "lee" | "enojo" | "triste" | "camina";
+type InsBase = { t: number; t1: number; titulo: string; fondo: string; pose: Pose; nx?: number; tamTitulo?: number; otro?: { x: number; h?: number; seed?: number; ropa?: import("./persona").Ropa; pose: Pose; flip?: boolean } };
+type Carta = { titulo: string; ico: string; lineas: string[]; col?: string };
+export type Ins = InsBase & (
+  | { v: "doc"; lineas: [number, string][]; sello?: string; tSello?: number; bronce?: boolean; encabezado?: boolean }
+  | { v: "vs"; a: Carta; b: Carta; tb?: number; gana?: "a" | "b"; tMarca?: number }
+  | { v: "barras"; items: [string, number, string, string?][]; tItems?: number[]; pre?: string; suf?: string }
+  | { v: "pictos"; ico: string; n: number; cols?: number; de?: number; a?: number; pre?: string; suf?: string; col?: string; baja?: boolean; tFin?: number }
+  | { v: "corte"; modo: "pisos" | "materiales" | "fuego" | "tira"; etiquetas?: string[]; tFuego?: number; durFuego?: number; tTira?: number; objeto?: string }
+  | { v: "laberinto"; pines: [number, string, string, number, number][]; pie: string }
+  | { v: "retrato"; nombre: string; datos: [number, string][]; ropa?: import("./persona").Ropa; expr?: import("./persona").Expr; seed?: number; laurel?: boolean; viejo?: boolean; habla?: boolean; fondo?: string; ico?: string; tIco?: number; casco?: "no" | "legion" | "centurion" }
+  | { v: "cta" }
+  | { v: "linea"; marcas: [number, string, string][]; rango: [number, number]; rotulo: string; tRango?: number; extra?: [number, string] }
+);
+export const INS: Ins[] = [];
+
 export type Cue = [number, string, number | null, Record<string, number>?];
 export const SFX: Cue[] = [];
 const s = (t: number, pool: string, g: number | null = null, o?: Record<string, number>) => { SFX.push(o ? [t, pool, g, o] : [t, pool, g]); return t; };
@@ -40,8 +57,10 @@ const bg = (t: number, txt: string, o: Partial<{ y: number; x: number; col: stri
 const ic = (t: number, ico: string, x: number, y: number, o: Partial<{ s: number; t1: number; tacha: number; label: string }> = {}) => { B.push({ k: "ico", t, ico, x, y, ...o }); return t; };
 const cu = (t: number, t1: number, de: number, a: number, x: number, y: number, o: Partial<{ size: number; suf: string; pre: string; col: string; fin: number }> = {}) => { B.push({ k: "cuenta", t, t1, de, a, x, y, ...o }); return t; };
 const tr = (t: number, n: number, name: string) => { B.push({ k: "trap", t, n, name }); return t; };
+// inserto: iris que abre desde la cabeza del nene (whoosh), título (pop) y cierre (swish)
+const ins = (i: Ins) => { INS.push(i); s(i.t, "whoosh", -4); s(i.t + 0.25, "pop", -2); s(i.t1, "swish", -6); return i.t; };
 // fila de íconos que entran uno por palabra (lista)
-const fila = (items: [number, string, string][], y = 860, s0 = 1, pool = "pop") => items.forEach(([t, ico, label], i) => { ic(t, ico, 960 + (i - (items.length - 1) / 2) * 300, y, { s: s0, label, t1: items[items.length - 1][0] + 2.6 }); s(t, pool, pool === "pop" ? 0 : -4, pool === "pop" ? { pitch: i } : undefined); });
+const fila = (items: [number, string, string][], y = 860, s0 = 1, pool = "pop") => { const paso = Math.min(1700 / Math.max(1, items.length - 1 || 1), Math.max(300, Math.max(...items.map((x) => x[2].length)) * 24 + 90)); items.forEach(([t, ico, label], i) => { ic(t, ico, 960 + (i - (items.length - 1) / 2) * paso, y, { s: s0, label, t1: items[items.length - 1][0] + 2.6 }); s(t, pool, pool === "pop" ? 0 : -4, pool === "pop" ? { pitch: i } : undefined); }); };
 
 // ── cámara y caminata (keyframes; la cámara sigue al protagonista con un desvío dx)
 // v = velocidad de caminata (u/s); plano = [t, dx, y, z] (y = centro vertical de cámara en el mundo; suelo y = 0)
@@ -53,7 +72,7 @@ export const SALTOS: [number, number][] = []; // teletransportes de X (sólo con
 const v = (t: number, vel: number) => VEL.push([t, vel]);
 const pl = (t: number, dx: number, y: number, z: number, d = 1.1) => PLANOS.push([t, dx, y, z, d]);
 const os = (t: number, a: number) => OSC.push([t, a]);
-const BASE = { dx: 200, y: -330, z: 1 };
+const BASE = { dx: 170, y: -255, z: 1.35 }; // OJO v2: nene ~34 % del alto de cuadro
 const pb = (t: number, d = 1.1) => pl(t, BASE.dx, BASE.y, BASE.z, d);
 
 // ── momentos de las piezas grandes (los usa Noche.tsx)
@@ -131,21 +150,21 @@ M.lampara = at("small clay oil lamp"); s(M.lampara, "flash", -6); s(M.lampara + 
 M.vela = at("birthday candle"); ic(M.vela, "vela", 1500, 330, { s: 1.2, label: "= 1 BIRTHDAY CANDLE", t1: M.vela + 3 }); s(M.vela, "sparkle", -4);
 M.viento = at("wind blows"); s(M.viento - 0.4, "wind", -2, { dur: 1.6 }); s(M.viento + 0.2, "blowout", -2); s(M.viento + 1.3, "flash", -8);
 M.piso = at("and what are you walking on"); pl(M.piso, 180, -60, 1.5, 1.4); v(M.piso, 120); os(M.piso, 0.72);
-ch(at("polygonal stones"), "MAIN ROADS: STONE", "tl", T, N); ch(at("packed earth"), "SIDE STREETS: MUD", "tl2", A, N);
+ch(M.polig = at("polygonal stones"), "MAIN ROADS: STONE", "tl", T, N); ch(M.tierra = at("packed earth"), "SIDE STREETS: MUD", "tl2", A, N);
 fila([[at("animal dung"), "bosta", "DUNG"], [at("broken pottery"), "tiesto", "POTTERY"], [at("rotting vegetables"), "verdura", "ROTTING VEG"], [at("the deep ruts"), "surco", "RUTS"]], 300, 0.95);
  
 ch(at("was not a road"), "NOT A ROAD", "tr", R); M.pies = at("feel with your feet"); ch(M.pies, "A TRAP YOU FEEL", "tr2", V); s(M.pies, "suspense", -6, { dur: 1.5 });
 M.sinnombre = at("no names"); pb(M.sinnombre - 0.4, 1.2); ic(M.sinnombre, "cartel", 1450, 330, { s: 1.2, t1: ah("if you asked") });
 s(M.sinnombre, "pop", 0); ch(at("no street signs"), "NO SIGNS", "tl", R); M.numeros = at("no house numbers"); ch(M.numeros, "NO NUMBERS", "tl2", R); s(M.numeros, "fail", -6);
 M.vecino = at("if you asked for directions"); v(M.vecino, 0); s(M.vecino, "pop", -2);
-fila([[at("old fig tree"), "higuera", "OLD FIG TREE"], [at("shrine of the crossroads"), "santuario", "CROSSROADS SHRINE"], [at("fullers shop"), "batan", "FULLER'S SHOP"]], 240, 1);
+fila([[M.higuera = at("old fig tree"), "higuera", "OLD FIG TREE"], [M.santuario = at("shrine of the crossroads"), "santuario", "CROSSROADS SHRINE"], [M.batan = at("fullers shop"), "batan", "FULLER'S SHOP"]], 240, 1);
  
-ch(at("perfect advice"), "PERFECT ADVICE", "tr", L, N); M.dia = at("in daylight"); s(M.dia, "sparkle", -4); s(M.dia + 0.9, "drone", -6, { dur: 1.5 });
+ch(M.perfecto = at("perfect advice"), "PERFECT ADVICE", "tr", L, N); M.dia = at("in daylight"); s(M.dia, "sparkle", -4); s(M.dia + 0.9, "drone", -6, { dur: 1.5 });
 M.igual = at("every alley"); v(M.igual, 140); ch(M.igual, "EVERY ALLEY = THE SAME", "tc", V);
 M.mal = at("wrong one"); s(M.mal, "fail", -2); bg(M.mal, "WRONG WAY", { y: 200, col: R, size: 110, t1: M.mal + 2.4 });
 M.hora = at("check the time"); pl(M.hora, 200, -900, 0.9, 1.6); s(M.hora, "whoosh", -4); v(M.hora, 70);
 M.doce = at("12 hours"); bg(M.doce, "12 NIGHT HOURS", { y: 160, col: "#fff3d6", size: 100, t1: ah("the army divided") - 0.2 }); s(M.doce, "tick", -2);
-M.invierno = at("in winter"); ch(M.invierno, "WINTER HOUR: LONG", "tl", T, N); ch(at("in summer"), "SUMMER HOUR: SHORT", "tl2", A, N);
+M.invierno = at("in winter"); ch(M.invierno, "WINTER HOUR: LONG", "tl", T, N); ch(M.verano = at("in summer"), "SUMMER HOUR: SHORT", "tl2", A, N);
 M.guardias = at("four watches"); s(M.guardias, "warhorn", -4, { dur: 1.8 }); ch(M.guardias, "ARMY: 4 WATCHES", "tr", R);
 M.civil = at("you a civilian"); pb(M.civil, 1.2); ch(at("have nothing"), "YOU: NOTHING", "tr2", V);
 fila([[at("no clock"), "reloj", "NO CLOCK"], [at("no watch"), "trompeta", "NO WATCH"]], 280, 1);
@@ -161,13 +180,13 @@ ch(at("most people do not know"), "MOST PEOPLE DON'T KNOW", "tc", V);
 M.ley = at("a traffic law"); s(M.ley, "stamp", 0); bg(at("it was brutal"), "BRUTAL", { y: 860, col: R, size: 110, t1: ah("around 45") });
 ch(at("around 45"), "45 BC", "tl", R); M.cesar = at("julius caesar"); s(M.cesar, "fanfare", -8, { dur: 1.4 }); ch(M.cesar, "JULIUS CAESAR'S LAW", "tl2", V);
 M.prohibe = at("banned most wheeled"); s(M.prohibe, "stamp", -2); s(M.prohibe + 0.2, "fail", -6);
-M.franja = at("from sunrise"); s(M.franja, "write", -2, { dur: 2.2 }); ch(at("10th hour"), "SUNRISE → 10TH HOUR", "tl", A, N);
+M.franja = at("from sunrise"); s(M.franja, "write", -2, { dur: 2.2 }); ch(M.decima = at("10th hour"), "SUNRISE → 10TH HOUR", "tl", A, N);
 ch(at("no carts"), "NO CARTS", "tr", R);
-M.excep = at("a few exceptions"); s(M.excep + 0.6, "ding", -4); ch(at("stone for temples"), "TEMPLE STONE: OK", "tl2", L, N);
+M.excep = at("a few exceptions"); s(M.excep + 0.6, "ding", -4); ch(M.templo = at("stone for temples"), "TEMPLE STONE: OK", "tl2", L, N);
 M.espera = at("everything else waited"); s(M.espera, "tick", -6); s(M.espera + 0.4, "tick", -6);
 M.lista = at("think about what"); pl(M.lista, 200, -380, 0.92, 1.2); v(M.lista, 60);
-ch(at("a million people"), "1,000,000 MOUTHS", "tl", T, N);
-fila([[at("food"), "pan", "FOOD"], [at("wine"), "anfora", "WINE"], [at("firewood"), "lena", "FIREWOOD"], [at("bricks"), "ladrillo", "BRICKS"], [at("marble"), "marmol", "MARBLE"], [at("timber"), "tronco", "TIMBER"]], 250, 0.85);
+ch(M.millon = at("a million people"), "1,000,000 MOUTHS", "tl", T, N);
+fila([[M.comida = at("food"), "pan", "FOOD"], [at("wine"), "anfora", "WINE"], [at("firewood"), "lena", "FIREWOOD"], [at("bricks"), "ladrillo", "BRICKS"], [at("marble"), "marmol", "MARBLE"], [at("timber"), "tronco", "TIMBER"]], 250, 0.85);
  
 ch(at("every single day"), "EVERY SINGLE DAY", "tr", R);
 M.ruedas = at("came in on wheels"); s(M.ruedas, "roll", -6, { dur: 0.8 }); M.denoche = at("came in at night"); bg(M.denoche + 0.3, "AT NIGHT", { y: 870, col: A, size: 130, golpe: true, t1: M.denoche + 2.6 });
@@ -221,7 +240,7 @@ ch(M.cuenco + 0.6, "BEST CASE.", "tr", A, N);
 M.increible = at("here is the incredible"); s(M.increible, "riser", -6, { dur: 1.5 });
 M.accion = at("special legal action"); s(M.accion, "stamp", 0); ch(M.accion, "A SPECIAL LAWSUIT", "tl", V);
 M.latin = at("poured or thrown"); bg(at("in latin"), "DE EFFUSIS VEL DEIECTIS", { y: 150, col: O, size: 84, t1: ah("if something was thrown") }); s(ah("in latin"), "slam", -2);
-M.paga = at("the person living there"); s(M.paga, "ding", -4); ch(M.paga, "THE TENANT PAYS", "tl", R); ch(at("meant it or not"), "ON PURPOSE OR NOT", "tl2", A, N);
+M.paga = at("the person living there"); s(M.paga, "ding", -4); ch(M.paga, "THE TENANT PAYS", "tl", R); ch(M.adrede = at("meant it or not"), "ON PURPOSE OR NOT", "tl2", A, N);
 M.ropa = at("damage to your clothes"); ic(M.ropa, "tunica", 1450, 360, { s: 1.1, t1: M.ropa + 3 }); M.doble = at("paid double"); bg(M.doble, "×2", { x: 1650, y: 300, col: A, size: 160, t1: M.doble + 1.8 }); s(M.doble, "coin", -2);
 M.cincuenta = at("free person was killed"); M.oro = at("50 gold coins"); s(M.oro, "coin_rain", -2); cu(M.oro, ah("50 gold coins", 1.3), 0, 50, 960, 230, { size: 170, suf: " GOLD COINS", col: O });
 M.cicatriz = at("no price for the scars"); ch(M.cicatriz, "SCARS: NO PRICE", "tl", T, N); s(M.cicatriz, "pop", -2);
@@ -243,7 +262,7 @@ M.pasos = at("footsteps stop"); v(M.pasos - 1.2, 120); v(M.pasos - 0.2, 0); v(M.
 [-1.0, -0.6, 0.7, 1.1].forEach((d) => { s(M.pasos + d, "step", -4); s(M.pasos + d + 0.22, "step", -9); });
 ch(M.pasos, "...THEY STOP TOO", "tr", R); s(at("yours stop"), "heart", -6, { dur: 2 });
 M.policia = at("no police"); v(M.policia, 100); ic(M.policia, "escudo", 1500, 320, { s: 1.1, tacha: M.policia + 0.6, label: "POLICE", t1: ah("no patrol", 1.5) }); s(M.policia + 0.6, "fail", -4);
-ch(at("no number to call"), "NO NUMBER TO CALL", "tl", V); ch(at("no patrol"), "NO PATROL", "tl2", R);
+ch(M.numero = at("no number to call"), "NO NUMBER TO CALL", "tl", V); ch(at("no patrol"), "NO PATROL", "tl2", R);
 M.dueno = at("belonged to whoever"); ch(M.dueno, "THE NIGHT BELONGS TO WHOEVER'S OUT", "bc", A, N);
 M.ladron1 = at("burglars broke"); s(M.ladron1, "wood_hit", -2); s(M.ladron1 + 0.5, "wood_hit", -4); ch(M.ladron1, "BURGLARS", "tl", R);
 M.bolsa = at("cut purses"); s(M.bolsa, "swish", -2); s(M.bolsa + 0.3, "coin", -4); ch(M.bolsa, "PURSE CUTTERS", "tl2", V); M.capa = at("stole cloaks"); s(M.capa, "cloth", -2); ch(M.capa, "CLOAK THIEVES", "tr", A, N);
@@ -288,7 +307,7 @@ M.pantanos = at("used to be marshes"); s(M.pantanos, "bubbles", -6, { dur: 1.4 }
 M.cloaca = at("cloaca maxima"); s(M.cloaca, "slam", -2); bg(M.cloaca, "CLOACA MAXIMA", { y: 150, col: T, size: 110, t1: ah("in places the drains") - 0.3 });
 M.hoy = at("still exists today"); s(M.hoy, "ding", -2); ch(M.hoy, "STILL THERE TODAY", "bc", L, N);
 M.bajada = at("in places the drains"); pl(M.bajada, 200, -150, 1.1, 1.8); s(M.bajada, "whoosh_big", -2); os(M.bajada + 1, 0.72);
-ch(at("were covered"), "COVERED", "tl", T, N); ch(at("they were not"), "...OR NOT", "tl2", R);
+ch(M.cubierto = at("were covered"), "COVERED", "tl", T, N); ch(at("they were not"), "...OR NOT", "tl2", R);
 M.agujero = at("looks exactly like the ground"); s(M.agujero + 0.8, "whoosh", -6); s(M.agujero + 1.2, "splash", 0); s(M.agujero + 1.4, "sad", -6, { dur: 1.4 });
 M.inunda = at("flooded the low parts"); pl(M.inunda, 200, -400, 0.8, 1.4); s(M.inunda, "bubbles", -2, { dur: 2.5 }); ch(at("again and again"), "AGAIN AND AGAIN", "tr", T, N);
 M.reversa = at("came up through the drains"); s(M.reversa, "splash", -4); s(M.reversa + 0.6, "splash", -6); bg(at("backwards"), "BACKWARDS", { y: 160, col: T, size: 120, t1: ah("backwards", 2.2) });
@@ -307,7 +326,7 @@ M.t6 = tr(at("trap number six"), 6, "THE FIRE"); s(M.t6, "boom", -2); s(M.t6 + 0
 FUEGO.push([M.t6, 1]);
 M.rey = at("true king"); s(M.rey, "fanfare", -8, { dur: 1.5 }); ch(M.rey, "KING OF THE NIGHT", "tl", R);
 M.madera = at("what an insula was made of"); pl(M.madera, 380, -560, 0.8, 1.3); v(M.madera, 0); s(M.madera, "whoosh", -4);
-fila([[at("wooden floors"), "tabla", "FLOORS: WOOD"], [at("wooden beams"), "viga", "BEAMS: WOOD"], [at("wooden stairs"), "escalera", "STAIRS: WOOD"]], 230, 0.95);
+fila([[M.pisosM = at("wooden floors"), "tabla", "FLOORS: WOOD"], [at("wooden beams"), "viga", "BEAMS: WOOD"], [at("wooden stairs"), "escalera", "STAIRS: WOOD"]], 230, 0.95);
  
 ch(at("timber frame"), "WALLS: TIMBER + RUBBLE", "tl", A, N);
 M.llamas = at("lit by open flames"); s(M.llamas, "flame", -6, { dur: 0.8 });
@@ -386,13 +405,13 @@ M.turno = at("the busiest shift"); ch(M.turno, "NIGHT = THE BUSIEST SHIFT", "tr"
 fila([[at("wagons"), "rueda", "WAGONS"], [at("bakers"), "pan", "BAKERS"], [at("slaves carrying lanterns"), "lampara", "LANTERNS"], [at("the vigils on patrol"), "cubo", "VIGILES"], [at("thousands of people"), "gente", "DINER GUESTS"]], 250, 0.82);
  
 ch(at("exactly like you"), "EXACTLY LIKE YOU", "bc", T, N);
-ch(at("the streets were dark"), "DARK, NOT EMPTY", "tl", V); M.noVacio = at("not empty");
+ch(M.oscuras = at("the streets were dark"), "DARK, NOT EMPTY", "tl", V); M.noVacio = at("not empty");
 M.oscuro = at("the darker part"); s(M.oscuro, "drone", -4, { dur: 2 });
 M.casaPeligro = at("home was not safe"); pl(M.casaPeligro, 380, -620, 0.72, 1.6); v(M.casaPeligro - 1, 0); bg(M.casaPeligro, "HOME WASN'T SAFE EITHER", { y: 150, col: R, size: 84, t1: ah("the great orator") });
 M.ciceron = at("the great orator cicero"); s(M.ciceron, "fanfare", -8, { dur: 1.2 }); ch(M.ciceron + 0.4, "CICERO · LANDLORD", "tl", V); s(at("wrote to a friend"), "write", -4, { dur: 1.4 });
 M.cayeron = at("had fallen down"); s(M.cayeron, "collapse", -2); s(M.cayeron + 0.2, "boom", -6); ch(M.cayeron, "2 SHOPS: COLLAPSED", "tr", R);
 M.grietas = at("cracking"); s(M.grietas, "creak", 0); ch(M.grietas, "THE REST: CRACKING", "tr2", A, N);
-M.ratones = at("even the mice"); [0, 0.25, 0.5, 0.8, 1.1, 1.4].forEach((d) => s(M.ratones + 0.5 + d, "squeak", -4)); bg(at("had moved out"), "EVEN THE MICE LEFT", { y: 860, col: "#fff3d6", size: 84, t1: ah("juvenal said that rome") });
+M.ratones = at("even the mice"); [0, 0.25, 0.5, 0.8, 1.1, 1.4].forEach((d) => s(M.ratones + 0.5 + d, "squeak", -4)); bg(M.mudaron = at("had moved out"), "EVEN THE MICE LEFT", { y: 860, col: "#fff3d6", size: 84, t1: ah("juvenal said that rome") });
 M.juv6 = at("juvenal said that rome"); s(M.juv6, "slam", -6); ch(M.juv6, "JUVENAL AGAIN (x6)", "tl", V); M.puntales = at("thin props"); s(M.puntales, "creak", -2); ch(M.puntales, "ROME ON THIN PROPS", "tr", R);
 M.parche = at("patch a crack"); s(M.parche, "write", -4, { dur: 1 }); ch(at("sleep peacefully"), "\"SLEEP WELL!\"", "tr2", L, N);
 M.alquiler = at("what one year"); s(M.alquiler, "coin", -2); pl(M.alquiler, 200, -480, 1, 1.4);
@@ -414,6 +433,38 @@ M.proximo = at("victorian"); s(M.proximo, "whoosh", -2); s(M.proximo + 0.4, "met
 M.turnoLargo = at("a very long shift"); s(M.turnoLargo, "tick", -2);
 M.comenta = at("tell me in the comments"); s(M.comenta, "pop", -1); M.cual = at("which one of these"); for (let i = 0; i < 7; i++) s(M.cual + 0.2 + i * 0.22, "pop", -2, { pitch: i });
 M.fin = VOZ_FIN; s(VOZ_FIN - 0.2, "boom", -8);
+
+// ── INSERTOS (OJO vuelta 2): el nene se mete en un plano gráfico saturado con el concepto de esa frase
+ins({ v: "retrato", t: M.juv1, t1: M.testa + 1.3, titulo: "ROME'S ADVICE COLUMNIST", fondo: "ambar", pose: "senala", nombre: "JUVENAL · POET", datos: [[M.juv1 + 1.4, "ROMAN SATIRIST · c. AD 100"], [M.testa - 0.4, "\"WRITE YOUR WILL FIRST\""]], seed: 40, viejo: true, ico: "craneo", tIco: M.testa });
+ins({ v: "retrato", t: M.domiciano, t1: M.adios - 0.3, titulo: "DINNER UNDER DOMITIAN", fondo: "violeta", pose: "celebra", nombre: "EMPEROR DOMITIAN", datos: [[M.domiciano + 1.0, "ROME · AD 90"], [M.liron, "MENU: STUFFED DORMOUSE"]], laurel: true, seed: 77, ico: "liron", tIco: M.liron });
+ins({ v: "vs", t: M.sinluz, t1: M.tablas - 0.15, titulo: "STREETLIGHTS", fondo: "noche", pose: "tiembla", a: { titulo: "YOUR CITY", ico: "farol", lineas: ["A LAMP", "EVERY 30 M"], col: T }, b: { titulo: "ROME", ico: "farol", lineas: ["PUBLIC LAMPS:", "ZERO"], col: R }, tb: M.sinluz + 1.4, gana: "a", tMarca: M.ninguna + 0.6 });
+ins({ v: "vs", t: M.notienes, t1: M.viento - 0.1, titulo: "WHO GETS TO SEE?", fondo: "ambar", pose: "triste", a: { titulo: "THE RICH", ico: "farol", lineas: ["SLAVE + TORCH", "LATERNARIUS"], col: T }, b: { titulo: "YOU", ico: "lampara", lineas: ["1 CLAY LAMP", "= BIRTHDAY CANDLE"], col: R }, tb: M.lampara, gana: "a", tMarca: M.vela + 0.6 });
+ins({ v: "vs", t: M.polig - 0.3, t1: M.tierra + 3.3, titulo: "WHAT'S UNDER YOUR FEET", fondo: "teal", pose: "piensa", a: { titulo: "MAIN ROADS", ico: "ladrillo", lineas: ["POLYGONAL", "STONE"], col: T }, b: { titulo: "SIDE STREETS", ico: "barro", lineas: ["MUD + WHATEVER", "THE DAY LEFT"], col: R }, tb: M.tierra, gana: "a", tMarca: M.tierra + 1.6 });
+ins({ v: "laberinto", t: M.vecino, t1: M.mal + 0.2, titulo: "ROMAN DIRECTIONS", fondo: "verde", pose: "piensa", pines: [[M.higuera, "higuera", "OLD FIG TREE", 1, 1], [M.santuario, "santuario", "SHRINE", 3, 3], [M.batan, "batan", "FULLER'S SHOP", 4, 4]], pie: "IN THE DARK, EVERY ALLEY LOOKS THE SAME" });
+ins({ v: "barras", t: M.invierno - 0.3, t1: M.guardias - 0.1, titulo: "ONE NIGHT HOUR =", fondo: "azul", pose: "piensa", items: [["WINTER", 75, T, "manta"], ["SUMMER", 45, A, "reloj"]], tItems: [M.invierno + 0.3, M.verano], suf: " MIN" });
+ins({ v: "doc", t: M.ley, t1: M.franja - 0.15, titulo: "ROME'S TRAFFIC LAW", fondo: "rojo", pose: "lee", lineas: [[M.ley + 0.7, "LEX IULIA · c. 45 BC"], [M.cesar, "BY JULIUS CAESAR:"], [M.prohibe, "NO WHEELED WAGONS"], [M.prohibe + 1.4, "IN ROME BY DAY"]], sello: "BANNED", tSello: M.prohibe + 2.4, bronce: true, encabezado: true });
+ins({ v: "linea", t: M.franja, t1: M.espera + 0.6, titulo: "WHEN CARTS MAY ROLL", fondo: "naranja", pose: "senala", marcas: [[0, "reloj", "SUNRISE"], [0.72, "reloj", "10TH HOUR"], [1, "rueda", "NIGHT: CARTS!"]], rango: [0, 0.72], rotulo: "NO CARTS", tRango: M.decima, extra: [M.excep, "ONLY EXCEPTION: STONE FOR TEMPLES"] });
+ins({ v: "pictos", t: M.millon - 0.2, t1: M.comida + 2.6, titulo: "MOUTHS TO FEED", fondo: "rosa", pose: "cabeza", ico: "gente", n: 40, cols: 10, de: 0, a: 1000000, tFin: M.comida + 1.2 });
+ins({ v: "retrato", t: M.foca - 0.1, t1: M.pared - 0.15, titulo: "LOUD ENOUGH TO WAKE...", fondo: "azul", pose: "cabeza", nombre: "EMPEROR CLAUDIUS", datos: [[M.claudio + 0.6, "FAMOUS FOR NAPPING ANYWHERE"]], laurel: true, viejo: true, expr: "dormido", habla: false, seed: 81, ico: "foca", tIco: M.foca + 0.2 });
+ins({ v: "corte", t: M.insulae, t1: M.sinagua - 0.1, titulo: "AN INSULA, SLICED OPEN", fondo: "teal", pose: "senala", modo: "pisos" });
+ins({ v: "corte", t: M.tira, t1: M.tira + 5.2, titulo: "NO PLUMBING? WINDOW.", fondo: "verde", pose: "cabeza", modo: "tira", tTira: M.tira + 0.9, objeto: "orinal" });
+ins({ v: "doc", t: M.accion, t1: M.jurista - 0.15, titulo: "THERE WAS A LAW FOR IT", fondo: "violeta", pose: "lee", lineas: [[M.latin, "DE EFFUSIS VEL DEIECTIS"], [M.paga, "THE TENANT PAYS"], [M.adrede, "ON PURPOSE OR NOT"], [M.doble, "RUINED CLOTHES: x2"], [M.oro, "FREE MAN KILLED: 50 GOLD"]], encabezado: true });
+ins({ v: "retrato", t: M.jurista, t1: M.regla2 - 0.15, titulo: "AND YOUR SCARS?", fondo: "noche", pose: "triste", nombre: "A ROMAN JURIST", datos: [[M.cita, "\"A FREE MAN'S BODY"], [M.cita + 1.3, "HAS NO PRICE\""]], viejo: true, expr: "neutro", seed: 91, ico: "tabla", tIco: M.cita });
+ins({ v: "doc", t: M.regla2, t1: M.maceta - 0.15, titulo: "RULE NUMBER TWO", fondo: "ambar", pose: "senala", lineas: [[M.regla2 + 0.6, "POSITUM AUT SUSPENSUM"], [M.regla2 + 2.6, "NOTHING PLACED OR HUNG"], [M.regla2 + 5.2, "OVER A PUBLIC WAY"]], sello: "FINE", tSello: M.regla2 + 6.6, encabezado: true });
+ins({ v: "vs", t: M.policia, t1: M.dueno + 0.6, titulo: "WHO DO YOU CALL?", fondo: "azul", pose: "tiembla", a: { titulo: "TODAY", ico: "escudo", lineas: ["POLICE", "PATROLS"], col: T }, b: { titulo: "NIGHT ROME", ico: "daga", lineas: ["NO NUMBER", "NO PATROL"], col: R }, tb: M.numero, gana: "a", tMarca: M.dueno - 0.3 });
+ins({ v: "retrato", t: M.suetonio, t1: M.disfraz + 2.0, titulo: "THE EMPEROR IN DISGUISE", fondo: "rojo", pose: "tiembla", nombre: "NERO · EMPEROR", datos: [[M.suetonio + 1.0, "SOURCE: SUETONIUS"], [M.disfraz, "NIGHT HOBBY: STREET FIGHTS"]], laurel: true, expr: "orgullo", seed: 55, ico: "puno", tIco: M.disfraz + 0.4 });
+ins({ v: "doc", t: M.tablas12, t1: M.peor - 0.15, titulo: "THE TWELVE TABLES", fondo: "rojo", pose: "tiembla", lineas: [[M.tablas12 + 0.6, "TABLE VIII · THIEVES"], [M.matar, "BY NIGHT: MAY BE KILLED"], [M.dia2, "BY DAY: ONLY IF ARMED"]], sello: "LEGAL", tSello: M.matar + 1.6, bronce: true, encabezado: true });
+ins({ v: "vs", t: M.cubierto - 0.2, t1: M.agujero - 0.15, titulo: "ROME'S DRAINS", fondo: "teal", pose: "piensa", a: { titulo: "SOME", ico: "cloaca", lineas: ["COVERED"], col: T }, b: { titulo: "OTHERS", ico: "cloaca", lineas: ["OPEN HOLE"], col: R }, tb: M.cubierto + 1.4, gana: "a", tMarca: M.cubierto + 3.0 });
+ins({ v: "corte", t: M.madera - 0.2, t1: M.llamas - 0.1, titulo: "WOOD. WOOD. WOOD.", fondo: "naranja", pose: "piensa", modo: "materiales", etiquetas: ["SHOP", "WOOD FLOOR", "WOOD BEAMS", "WOOD STAIRS", "TIMBER WALLS", "OIL LAMPS"] });
+ins({ v: "corte", t: M.planta, t1: M.nosabes + 1.4, titulo: "THE TOP FLOOR KNOWS LAST", fondo: "noche", pose: "tiembla", modo: "fuego", tFuego: M.planta + 0.6, durFuego: M.tercero - M.planta + 1.2, etiquetas: ["FIRE STARTS", "1ST", "2ND", "3RD · SMOKING", "4TH", "5TH · ASLEEP"] });
+ins({ v: "retrato", t: M.craso, t1: M.quinientos + 2.4, titulo: "PROFIT FROM THE FLAMES", fondo: "ambar", pose: "enojo", nombre: "MARCUS CRASSUS", datos: [[M.craso + 1.2, "RICHEST MAN IN ROME"], [M.quinientos, "500+ SLAVE BUILDERS"]], expr: "orgullo", seed: 66, ico: "ladrillo", tIco: M.plutarco });
+ins({ v: "retrato", t: M.aug2 - 0.3, t1: M.cohortes + 1.4, titulo: "FINALLY: FIREFIGHTERS", fondo: "rojo", pose: "celebra", nombre: "AUGUSTUS · AD 6", datos: [[M.cohortes, "7 COHORTS OF VIGILES"]], laurel: true, seed: 70, ico: "cubo", tIco: M.cohortes });
+ins({ v: "vs", t: M.victima, t1: M.sonrie - 0.1, titulo: "WHAT THEY SEE", fondo: "violeta", pose: "tiembla", a: { titulo: "VICTIM", ico: "gente", lineas: ["HELP HIM?"], col: T }, b: { titulo: "SUSPECT", ico: "daga", lineas: ["STOP HIM!"], col: R }, tb: M.sospechoso, gana: "b", tMarca: M.sospechoso + 0.5 });
+ins({ v: "vs", t: M.turno, t1: M.turno + 3.6, titulo: "BUSIEST SHIFT IN ROME", fondo: "azul", pose: "senala", a: { titulo: "DAY", ico: "pan", lineas: ["NO CARTS"], col: T }, b: { titulo: "NIGHT", ico: "rueda", lineas: ["WAGONS, BAKERS"], col: R }, tb: M.turno + 0.9, gana: "b", tMarca: M.turno + 2.0 });
+ins({ v: "doc", t: M.ciceron, t1: M.juv6 - 0.15, titulo: "A LANDLORD'S LETTER", fondo: "rosa", pose: "lee", lineas: [[M.ciceron + 0.7, "CICERO TO ATTICUS"], [M.cayeron, "TWO OF MY SHOPS FELL"], [M.grietas, "THE REST ARE CRACKING"], [M.ratones, "EVEN THE MICE MOVED OUT"]], encabezado: true });
+ins({ v: "vs", t: M.ollaFuera - 0.2, t1: M.puertaCasa - 0.15, titulo: "PICK YOUR DANGER", fondo: "naranja", pose: "cabeza", a: { titulo: "OUTSIDE", ico: "olla", lineas: ["FALLING POT"], col: T }, b: { titulo: "INSIDE", ico: "derrumbe", lineas: ["FALLING CEILING"], col: R }, tb: M.techoDentro });
+ins({ v: "cta", t: M.cta + 0.3, t1: M.fin + 10, titulo: "YOU SURVIVED THE NIGHT", fondo: "violeta", pose: "celebra" });
+INS.sort((a, b) => a.t - b.t);
 
 // caminata y oscuridad, ordenadas
 VEL.sort((a, b) => a[0] - b[0]); OSC.sort((a, b) => a[0] - b[0]); FUEGO.sort((a, b) => a[0] - b[0]); PLANOS.sort((a, b) => a[0] - b[0]);

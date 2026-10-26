@@ -110,7 +110,7 @@ const Cohortes: React.FC<{ t: number }> = ({ t }) => (
       return (
         <g key={i} transform={`translate(${x} ${y}) scale(${e})`}>
           <rect x={-86} y={-76} width={172} height={152} rx={18} fill={on ? col : "#6d4466"} stroke={K} strokeWidth={6} opacity={on ? 0.95 : 0.7} />
-          {i % 2 === 0 && on && <g transform={`translate(0 -4) scale(${ent(t, M.dosde14 + c * 0.28)})`}><Ico k="cubo" x={0} y={0} s={0.42} /></g>}
+          {on && <g transform={`translate(0 -4) scale(${ent(t, M.dosde14 + c * 0.28 + (i % 2) * 0.12)})`}><Ico k="cubo" x={0} y={0} s={0.42} /></g>}
         </g>
       );
     })}

@@ -383,8 +383,8 @@ export const Frente: React.FC<{ cam: Cam; t: number; temaEn: (x: number) => Tema
     const tema = temaEn(i * W / P);
     const x = i * W + r() * 500;
     if (tema === "rio") continue;
-    if (r() < 0.3) out.push(<g key={i}><rect x={x} y={-1500} width={80} height={2400} fill="#0d0716" /><rect x={x - 20} y={-40} width={150} height={60} fill="#0d0716" /></g>);
-    else out.push(<g key={i} transform={`translate(${x} ${560})`}><ellipse rx={260} ry={120} fill="#0d0716" /><ellipse cx={240} cy={30} rx={160} ry={90} fill="#0d0716" />{r() < 0.5 && <path d={`M -60 -100 L -40 -260 L -20 -100 Z`} fill="#0d0716" />}</g>);
+    r(); // (los postes oscuros de primer plano tapaban al nene: fuera, OJO vuelta 2)
+    out.push(<g key={i} transform={`translate(${x} ${560})`}><ellipse rx={260} ry={120} fill="#0d0716" /><ellipse cx={240} cy={30} rx={160} ry={90} fill="#0d0716" />{r() < 0.5 && <path d={`M -60 -100 L -40 -260 L -20 -100 Z`} fill="#0d0716" />}</g>);
   }
   return <Capa cam={cam} p={P} style={{ opacity: op }}><SvgMundo>{out}</SvgMundo></Capa>;
 };

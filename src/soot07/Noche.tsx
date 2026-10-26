@@ -1,6 +1,7 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, interpolate, Easing } from "remotion";
 import { Mano2D as CamaraMano } from "./Mano2D";
+import { Inserto } from "./insertos";
 import { C, ent, fontFamily, Chip, Grande, Emote } from "./kit";
 import { Persona, LUCIUS, CIVIL, Ropa, Expr } from "./persona";
 import { ICO } from "./iconos";
@@ -99,7 +100,7 @@ const hundido = (t: number) => (t > M.agujero + 1.2 && t < M.agujero + 2.7 ? 80 
 
 // ═════ piezas de pantalla ═════
 const SLOT: Record<string, { x: number; y: number; a: "l" | "r" | "c" }> = {
-  tl: { x: 64, y: 78, a: "l" }, tl2: { x: 64, y: 162, a: "l" }, tr: { x: 1856, y: 78, a: "r" }, tr2: { x: 1856, y: 162, a: "r" }, tc: { x: 960, y: 78, a: "c" }, bc: { x: 960, y: 972, a: "c" },
+  tl: { x: 64, y: 78, a: "l" }, tl2: { x: 64, y: 182, a: "l" }, tr: { x: 1856, y: 78, a: "r" }, tr2: { x: 1856, y: 182, a: "r" }, tc: { x: 960, y: 78, a: "c" }, bc: { x: 960, y: 972, a: "c" },
 };
 type Pz = Beat & { fin: number };
 const PIEZAS: Pz[] = (() => {
@@ -121,7 +122,7 @@ const PIEZAS: Pz[] = (() => {
   });
   return out;
 })();
-const CHIP_SIZE = 46;
+const CHIP_SIZE = 54;
 const anchoChip = (txt: string) => txt.length * CHIP_SIZE * 0.74 + CHIP_SIZE * 0.9;
 
 const PiezaIco: React.FC<{ t: number; b: Extract<Beat, { k: "ico" }>; fin: number }> = ({ t, b, fin }) => {
@@ -271,7 +272,7 @@ export const Noche: React.FC = () => {
   const tema = temaEn(cv.x);
   const pal = paleta(tema);
   const fu = fuego(t);
-  const osc = Math.min(0.9, oscuridad(t) * 0.84);
+  const osc = Math.min(0.75, oscuridad(t) * 0.72); // OJO v2: menos negro (se perdía todo)
   const px = X(t), vel = V(t);
   const lam = lampara(t);
   const expr = exprEn(t);
@@ -457,6 +458,7 @@ export const Noche: React.FC = () => {
           <ReglaAltura t={t} />
           <Piezas t={t} />
           <Hud t={t} />
+          {(() => { const q = pz(px, pyProt - H * 0.82); return <Inserto t={t} px={cl(q.x, 0, 1920)} py={cl(q.y, 0, 1080)} sopa={sopa && t < M.limpia} />; })()}
         </AbsoluteFill>
       </CamaraMano>
       <Portada t={t} />
