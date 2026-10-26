@@ -99,7 +99,8 @@ export const articulaciones = (p: Pose, asiento?: number, H: Huesos = HUESOS, se
   const cad = { x: 0, y: caderaY };
   const t = dirV(180 + p.tronco, H.torso); // torso hacia arriba
   const hombro = { x: cad.x + t.x, y: cad.y + t.y };
-  const c = dirV(180 + p.tronco + p.cabeza, H.cuello + H.cabezaR);
+  // la cabeza gira sobre el hombro: con cabezas grandes un ángulo >16° la despega del cuerpo (viejo doblado de tz02) → tope ±16
+  const c = dirV(180 + p.tronco + Math.max(-16, Math.min(16, p.cabeza)), H.cuello + H.cabezaR);
   const cabeza = { x: hombro.x + c.x, y: hombro.y + c.y };
   const brazo = (h: number, k: number, dx: number) => {
     const o = { x: hombro.x + dx, y: hombro.y + 6 };
@@ -187,7 +188,7 @@ export type Accesorio =
   | { t: "capucha"; color: string }
   | { t: "pelo"; forma: "corto" | "punta" | "bob" | "cola" | "calvo"; color: string }
   | { t: "barba"; color: string }
-  | { t: "bufanda"; color: string }
+  | { t: "bufanda"; color: string; grande?: boolean }
   | { t: "mochila"; color: string }
   | { t: "lentes"; color?: string; forma?: "redondo" | "gato" }
   | { t: "sombrero"; color: string }
@@ -445,6 +446,8 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
         </radialGradient>
         <clipPath id={`hc${uid}`}><circle r={Rk} /></clipPath>
       </defs>
+      {/* el arco del auricular va DETRÁS de la cabeza: sólo asoma por arriba, nunca cruza la cara al girar */}
+      {tiene("auriculares") && <path d={`M${-R - 3},${-R * 0.05} Q0,${-R * 2 - 16} ${R + 3},${-R * 0.05}`} stroke={tiene("auriculares").color} fill="none" strokeLinecap="round" strokeWidth={5} />}
       {capucha && <path d={`M${-R * 1.05},${R * 0.95} Q${-R * 1.25},${-R * 0.1} ${-R * 0.7},${-R * 0.78} Q${-R * 0.2},${-R * 1.12} ${R * 0.25},${-R * 1.02} Q${-R * 0.35},${-R * 0.55} ${-R * 0.55},${R * 0.2} Q${-R * 0.2},${R * 1.05} ${R * 0.75},${R * 0.92} Q${R * 0.2},${R * 1.3} ${-R * 1.05},${R * 0.95} Z`} fill={capucha.color} />}
       {pelo?.forma === "bob" && <path d={`M${-R - 8},${R * 0.75} Q${-R - 12},${-R - 10} 0,${-R - 9} Q${R + 12},${-R - 10} ${R + 8},${R * 0.75} Z`} fill={pelo.color} />}
       {pelo?.forma === "cola" && <path d={`M${-R + 2},${-R * 0.2} Q${-R - 30},${R * 0.2} ${-R - 22},${R * 1.2} Q${-R - 6},${R * 0.5} ${-R + 4},${R * 0.2} Z`} fill={pelo.color} />}
@@ -516,9 +519,8 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
       )}
       {tiene("auriculares") && (
         <g stroke={tiene("auriculares").color} fill="none" strokeLinecap="round">
-          <path d={`M${-R - 3},${-R * 0.05} Q0,${-R - 22} ${R + 3},${-R * 0.05}`} strokeWidth={5} />
           <rect x={R - 4} y={-R * 0.15} width={12} height={22} rx={5} fill={tiene("auriculares").color} strokeWidth={0} />
-          <path d={`M${R + 2},${R * 0.2} Q${R * 0.9},${R * 0.75} ${R * 0.35},${R * 0.62}`} strokeWidth={3} />
+          <path d={`M${R + 2},${R * 0.2} Q${R * 1.18},${R * 0.75} ${R * 0.8},${R * 1.12}`} strokeWidth={3} />
         </g>
       )}
       {corona && (
@@ -552,8 +554,20 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
       })()}
       {bufanda && (
         <g transform={`translate(${P(j.hombro)}) rotate(${ang})`}>
-          <rect x={-ancho / 2 - 2} y={-6} width={ancho + 4} height={14} rx={7} fill={bufanda.color} />
-          <rect x={ancho / 2 - 14} y={0} width={11} height={34} rx={5} fill={oscurecer(bufanda.color, 0.85)} />
+          {bufanda.grande ? (
+            <>
+              {/* bufanda gruesa: dos vueltas al cuello y dos puntas largas que caen por el pecho */}
+              <rect x={-ancho / 2 - 8} y={-14} width={ancho + 16} height={30} rx={13} fill={bufanda.color} />
+              <rect x={-ancho / 2 - 4} y={-2} width={ancho + 8} height={6} rx={3} fill={oscurecer(bufanda.color, 0.8)} />
+              <rect x={ancho / 2 - 30} y={6} width={19} height={84} rx={8} fill={oscurecer(bufanda.color, 0.86)} transform="rotate(-6)" />
+              <rect x={ancho / 2 - 50} y={8} width={17} height={66} rx={8} fill={bufanda.color} transform="rotate(4)" />
+            </>
+          ) : (
+            <>
+              <rect x={-ancho / 2 - 2} y={-6} width={ancho + 4} height={14} rx={7} fill={bufanda.color} />
+              <rect x={ancho / 2 - 14} y={0} width={11} height={34} rx={5} fill={oscurecer(bufanda.color, 0.85)} />
+            </>
+          )}
         </g>
       )}
       {tiene("rosario") && (

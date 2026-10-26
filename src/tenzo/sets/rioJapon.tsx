@@ -68,13 +68,17 @@ export const CaminoMontana: React.FC<SetProps> = ({ capa, f }) => {
 // agua que corre: bandas que se desplazan (en coordenadas del mundo)
 const Agua: React.FC<{ f: number; x: number; w: number; y: number; h: number; seed: number; frente?: boolean }> = ({ f, x, w, y, h, seed, frente }) => (
   <g>
-    <path d={`M${x},${y + 8} ${Array.from({ length: 12 }).map((_, k) => `Q${x + (k + 0.5) * w / 12},${y + (k % 2 ? -10 : 14) + Math.sin(f / 6 + k) * 5} ${x + (k + 1) * w / 12},${y + 8}`).join(" ")} L${x + w},${y + h} L${x},${y + h} Z`} fill="#c08a4c" />
-    <rect x={x} y={y + 4} width={w} height={10} fill="#ffe2a8" opacity={0.55} />
+    <path d={`M${x},${y + 8} ${Array.from({ length: 16 }).map((_, k) => `Q${x + (k + 0.5) * w / 16},${y + (k % 2 ? -26 : 20) + Math.sin(f / 3 + k * 1.7) * 14} ${x + (k + 1) * w / 16},${y + 8}`).join(" ")} L${x + w},${y + h} L${x},${y + h} Z`} fill="#7a5434" />
+    {/* crestas de espuma que corren con la corriente */}
+    {Array.from({ length: 9 }).map((_, k) => {
+      const cx = x + ((k * w) / 9 + f * 9) % w, cy = y + 2 + Math.sin(f / 4 + k) * 8;
+      return <path key={k} d={`M${cx - 70},${cy + 10} Q${cx - 20},${cy - 26} ${cx + 40},${cy - 4} Q${cx + 10},${cy - 2} ${cx - 10},${cy + 10} Z`} fill="#f4ead6" opacity={0.85} />;
+    })}
     {Array.from({ length: frente ? 10 : 18 }).map((_, i) => {
       const yy = y + 10 + random(`ay${seed}${i}`) * (h - 20);
       const L = 90 + random(`al${seed}${i}`) * 160;
-      const xx = x + ((random(`ax${seed}${i}`) * w + f * (7 + random(`av${seed}${i}`) * 5)) % w);
-      return <rect key={i} x={xx} y={yy} width={Math.min(L, x + w - xx)} height={frente ? 7 : 6} rx={3} fill="#fff0cc" opacity={0.7} />;
+      const xx = x + ((random(`ax${seed}${i}`) * w + f * (20 + random(`av${seed}${i}`) * 12)) % w);
+      return <rect key={i} x={xx} y={yy} width={Math.min(L, x + w - xx)} height={frente ? 7 : 6} rx={3} fill="#e8d2a8" opacity={0.55} />;
     })}
   </g>
 );
@@ -94,6 +98,16 @@ export const RioCrecido: React.FC<SetProps> = ({ capa, f }) => {
   return (
     <g>
       {Array.from({ length: 12 }).map((_, i) => <Cedro key={i} x={-700 + i * 420 + random(`rc${i}`) * 160} y={P - 150} s={0.9} />)}
+      {/* la casa de la familia en la otra orilla: farol encendido (llegar antes de que oscurezca) */}
+      <g transform={`translate(2980,${P - 150})`}>
+        <circle cx={150} cy={-150} r={150} fill="#ffcf7a" opacity={0.18 + 0.05 * Math.sin(f / 9)} />
+        <rect x={-150} y={-220} width={300} height={220} fill="#d9b483" stroke="#5a3a20" strokeWidth={6} />
+        <path d="M-200,-210 L0,-330 L200,-210 Z" fill="#7a3a22" stroke="#4a2414" strokeWidth={6} />
+        <rect x={-40} y={-120} width={80} height={120} fill="#5a3a20" />
+        <rect x={-120} y={-170} width={60} height={50} fill="#ffd890" />
+        <line x1={150} y1={-210} x2={150} y2={-150} stroke="#3a2414" strokeWidth={4} />
+        <ellipse cx={150} cy={-128} rx={20} ry={28} fill="#ffb84a" />
+      </g>
       {/* lecho: el agua llena el hueco entre las dos orillas en pendiente */}
       <Agua f={f} x={RIO.orillaI - 200} w={W + 400} y={RIO.sup} h={900} seed={1} />
       {/* espuma en las piedras */}

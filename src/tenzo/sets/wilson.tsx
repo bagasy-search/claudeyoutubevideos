@@ -119,7 +119,7 @@ export const FachadaWilson: React.FC<SetProps> = ({ capa, f, pal }) => {
 };
 
 export const COLECTIVO_PISO = 900;
-export const COLECTIVO = { ventanas: [600, 1100, 1600, 2100, 2600], asientoLeo: 1350, asientoMaya: 1530, puerta: 2900, asiento: 60 };
+export const COLECTIVO = { ventanas: [600, 1100, 1600, 2100, 2600], asientoLeo: 1350, asientoMaya: 1530, puerta: 2900, asiento: 74 };
 
 // Broadway que pasa por la ventana: fachadas, el cartel del Green Mill, la parada de Lawrence
 export const Colectivo36: React.FC<SetProps & { vel?: number; dia?: boolean }> = ({ capa, f, pal, vel = 6, dia = true }) => {
@@ -171,10 +171,10 @@ export const Colectivo36: React.FC<SetProps & { vel?: number; dia?: boolean }> =
       {/* asientos azules de dos plazas */}
       {[300, 900, 1440, 2000, 2550].map((x, i) => (
         <g key={i} transform={`translate(${x},${P})`}>
-          <rect x={-150} y={-150} width={300} height={40} rx={12} fill="#2f4a7a" />
-          <rect x={-170} y={-330} width={40} height={210} rx={14} fill="#2f4a7a" />
-          <rect x={-150} y={-110} width={12} height={110} fill="#2c3038" />
-          <rect x={138} y={-110} width={12} height={110} fill="#2c3038" />
+          <rect x={-160} y={-92} width={320} height={38} rx={12} fill="#2f4a7a" />
+          <rect x={-180} y={-300} width={40} height={238} rx={14} fill="#2f4a7a" />
+          <rect x={-150} y={-56} width={12} height={56} fill="#2c3038" />
+          <rect x={138} y={-56} width={12} height={56} fill="#2c3038" />
         </g>
       ))}
       <rect x={-800} y={P} width={5200} height={900} fill="#3a3d44" />
