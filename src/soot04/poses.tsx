@@ -67,8 +67,18 @@ export const ANIMO: Record<string, (keyof typeof POSES)[]> = {
 
 // aplica vida a un personaje SÓLO si la escena no le dio brazos a mano (no pisa la puesta en escena)
 export const conVida = <P extends { t: number; bI?: number; bD?: number; cI?: number; cD?: number; camina?: number; expr?: unknown; inclina?: number }>(p: P, seed: number): P => {
-  if (p.bI !== undefined || p.bD !== undefined || p.camina) return p;
+  if (p.camina) return p;
   const lista = p.expr === "miedo" || p.expr === "sorpresa" ? ANIMO.miedo : p.expr === "feliz" || p.expr === "orgullo" ? ANIMO.alegre : p.expr === "triste" ? ANIMO.triste : ANIMO.charla;
   const v = vida(p.t, seed, lista);
-  return { ...p, bI: v.bI, bD: v.bD, cI: v.cI, cD: v.cD, inclina: p.inclina ?? v.inclina, ladea: v.ladea } as P;
+  if (p.bI === undefined && p.bD === undefined) return { ...p, bI: v.bI, bD: v.bD, cI: v.cI, cD: v.cD, inclina: p.inclina ?? v.inclina, ladea: v.ladea } as P;
+  // vuelta 10 OJO: con un brazo fijado por la escena (señalar, sostener) el otro sigue vivo y el fijado oscila apenas
+  // (el «brazo extendido» quieto se repetía en todo el video)
+  const w = (k: number) => Math.sin(p.t * 1.6 + seed + k) * 5;
+  const libreI = p.bI === undefined, libreD = p.bD === undefined;
+  return {
+    ...p,
+    bI: libreI ? v.bI : (p.bI as number) + w(0), cI: p.cI ?? (libreI ? v.cI : undefined),
+    bD: libreD ? v.bD : (p.bD as number) + w(1), cD: p.cD ?? (libreD ? v.cD : undefined),
+    inclina: p.inclina ?? (v.inclina ?? 0) * 0.5, ladea: (v.ladea ?? 0) * 0.5,
+  } as P;
 };
