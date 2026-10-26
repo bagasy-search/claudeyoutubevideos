@@ -1,0 +1,28 @@
+# Compuerta Ojo del Director: planilla cada 10 s + cortes de escena + lageos sobre el MP4 final. Rama ojo-*.
+name: ojo
+on:
+  push:
+    branches: ['ojo-*']
+permissions:
+  contents: write
+jobs:
+  uno:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    env: { GH_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get install -y -qq ffmpeg imagemagick >/dev/null
+      - name: medir
+        run: |
+          for S in $(cat slugs.txt); do
+            for n in 1 2 3 4 5; do gh release download "$S" -R "$GITHUB_REPOSITORY" -p "$S.mp4" --clobber && break; sleep $((n*10)); done
+            test -s "$S.mp4"; bash ojo.sh "$S"
+          done
+          ls -la
+      - name: publicar
+        run: |
+          T=$GITHUB_REF_NAME
+          gh release view "$T" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create "$T" -R "$GITHUB_REPOSITORY" --title "$T" --notes "ojo del director"
+          gh release upload "$T" ojo_*.jpg ojo_*.txt ojo_*.json -R "$GITHUB_REPOSITORY" --clobber
+          git push "https://x-access-token:${GH_TOKEN}@github.com/$GITHUB_REPOSITORY.git" --delete "$GITHUB_REF_NAME" || true
