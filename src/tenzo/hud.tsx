@@ -67,5 +67,5 @@ export const Frase: React.FC<{ texto: string; desde?: number; hasta?: number; ta
 export const Rotulo: React.FC<{ texto: string; desde?: number; hasta?: number }> = ({ texto, desde = 0, hasta }) => {
   const f = useF();
   const o = interpolate(f, [desde, desde + 12], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) * (hasta ? interpolate(f, [hasta - 12, hasta], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1);
-  return <div style={{ position: "absolute", left: 70, bottom: 56, opacity: o * 0.9, fontFamily: F_HUD, fontWeight: 500, fontSize: 30, letterSpacing: 4, color: "#e8e4dc", textShadow: "0 2px 10px rgba(0,0,0,0.7)" }}>{texto}</div>;
+  return <div style={{ position: "absolute", left: 90, bottom: 70, opacity: o * 0.9, fontFamily: F_HUD, fontWeight: 500, fontSize: 46, letterSpacing: 6, color: "#e8e4dc", textShadow: "0 2px 10px rgba(0,0,0,0.7)" }}>{texto}</div>;
 };
