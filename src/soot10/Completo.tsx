@@ -15,6 +15,7 @@ import { K6, A6, M6, O6 } from "./S6";
 import { K7, A7, M7, O7 } from "./S7";
 import { K8, A8, M8, O8 } from "./S8";
 import { Cuadro0 } from "./Cuadro0";
+import { Insertos } from "./insertos";
 
 // soot10 completo: UN mundo y UNA cámara. Cada sección aporta llaves de cámara (K), gente/objetos a bordo (A),
 // cosas en el mundo (M) y textos de pantalla (O), todo con tiempo absoluto.
@@ -58,6 +59,7 @@ export const Completo: React.FC = () => {
           <Escenario t={t} keys={KEYS} abordo={<>{SECC.map((s, i) => <s.A key={i} t={t} />)}</>} mundo={<>{SECC.map((s, i) => <s.M key={i} t={t} />)}</>} mercante={<>{SECC.map((s, i) => (s.Me ? <s.Me key={i} t={t} /> : null))}</>} />
         </AbsoluteFill>
       </CamaraMano>
+      <Insertos t={t} />
       {SECC.map((s, i) => <s.O key={i} t={t} />)}
       <Cuadro0 t={t} />
     </AbsoluteFill>
