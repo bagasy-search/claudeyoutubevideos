@@ -1,6 +1,6 @@
 import React from "react";
 import { rnd } from "../soot/lib";
-import { C, ent, fontFamily, prog } from "./kit";
+import { C, ent, fontFamily, prog, luzActual } from "./kit";
 
 // Objetos del video completo (trampas 1-7). Todo vector plano saturado, sombra propia abajo-derecha y brillo arriba-izquierda.
 // Cada objeto se dibuja centrado en (x, y); con t/t0 entra con rebote (escala + giro) y con t1 sale.
@@ -337,14 +337,21 @@ export const Comida: React.FC<Pos & { k: "molino" | "porridge" | "queso" | "toci
 );
 
 // ── batalla y muerte
-export const Soldadito: React.FC<{ x: number; y: number; s?: number; t: number; seed?: number; enemigo?: boolean; cae?: number; avanza?: number; color?: string }> = ({ x, y, s = 1, t, seed = 1, enemigo, cae, avanza = 0, color }) => {
-  const r = rnd(seed);
+// v5: cada soldadito varía SOLO (altura ±8 %, piel, inclinación del escudo, desfase) según su posición, lleva sombra plana
+// y luz de borde del set → las filas dejan de ser clones aunque la parte no pase seed.
+const PIELES = [["#f2b48a", "#d98d66"], ["#c98b62", "#a2643f"], ["#8d5a3b", "#6a3f26"], ["#f5c7a0", "#dc9d78"]];
+export const Soldadito: React.FC<{ x: number; y: number; s?: number; t: number; seed?: number; enemigo?: boolean; cae?: number; avanza?: number; color?: string }> = ({ x, y, s = 1, t, seed, enemigo, cae, avanza = 0, color }) => {
+  const r = rnd(seed ?? 1);
   const ph = r() * 6;
+  const v = rnd((seed ?? 0) * 131 + Math.round(x * 7.3 + y * 3.1));
+  const alto = 1 + (v() - 0.5) * 0.16, piel = PIELES[Math.floor(v() * 4)], esc = (v() - 0.5) * 14, ph2 = v() * 6;
+  const L = luzActual();
   const c = cae !== undefined && t > cae ? Math.min(1, (t - cae) / 0.35) : 0;
   const bob = Math.sin(t * 6 + ph) * 3 * (avanza ? 1 : 0.3);
   return (
     <svg style={{ position: "absolute", left: x - 60 * s, top: y - 200 * s, overflow: "visible" }} width={120 * s} height={200 * s} viewBox="-60 -200 120 200">
-      <g transform={`translate(0 ${bob + c * 30}) rotate(${c * (enemigo ? 80 : -80)} 0 -10)`} opacity={1 - c * 0.4}>
+      {!color && c === 0 && <ellipse cx={-L.lado * 18 * L.largo} cy={0} rx={44 + 20 * L.largo} ry={8} fill="#1d0f33" opacity={L.sombraOp} />}
+      <g transform={`translate(0 ${bob + c * 30}) rotate(${c * (enemigo ? 80 : -80) + Math.sin(t * 1.3 + ph2) * 1.5} 0 -10) scale(1 ${alto})`} opacity={1 - c * 0.4}>
         {enemigo ? (
           <g fill={color ?? "#2a1530"}>
             <rect x={-26} y={-120} width={52} height={110} rx={18} />
@@ -357,11 +364,15 @@ export const Soldadito: React.FC<{ x: number; y: number; s?: number; t: number; 
           <g>
             <rect x={-20} y={-110} width={40} height={100} rx={14} fill="#c81d2e" />
             <rect x={-22} y={-100} width={44} height={40} fill="#b9c2cf" />
-            <circle cx={0} cy={-136} r={26} fill="#f2b48a" />
+            <circle cx={0} cy={-136} r={26} fill={piel[0]} />
+            <path d={`M ${-L.lado * 26} -146 A 26 26 0 0 ${L.lado > 0 ? 0 : 1} ${-L.lado * 6} -112`} stroke={piel[1]} strokeWidth={8} fill="none" opacity={0.6} />
             <path d="M -28 -136 Q -30 -170 0 -170 Q 30 -170 28 -136 Z" fill="#e9a92a" />
+            <path d={`M ${L.lado * 6} -168 Q ${L.lado * 28} -164 ${L.lado * 28} -138`} stroke={L.borde} strokeWidth={5} fill="none" opacity={L.bordeOp} />
             <rect x={-6} y={-12} width={8} height={14} fill="#6b3a1f" /><rect x={4} y={-12} width={8} height={14} fill="#6b3a1f" />
-            <rect x={8} y={-120} width={44} height={110} rx={12} fill={color ?? "#c81d2e"} stroke="#ffcf5a" strokeWidth={5} />
-            <circle cx={30} cy={-65} r={9} fill="#ffcf5a" />
+            <g transform={`rotate(${esc} 30 -10)`}>
+              <rect x={8} y={-120} width={44} height={110} rx={12} fill={color ?? "#c81d2e"} stroke="#ffcf5a" strokeWidth={5} />
+              <circle cx={30} cy={-65} r={9} fill="#ffcf5a" />
+            </g>
           </g>
         )}
       </g>

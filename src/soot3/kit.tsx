@@ -18,6 +18,66 @@ export const ent = (t: number, t0: number, d = 0, cfg = { damping: 12, stiffness
 export const prog = (t: number, a: number, b: number) =>
   interpolate(t, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
 
+// ── LUZ del set (arte base v5, 26-oct). Cada lugar la fija al dibujarse (`fijarLuz`) y cada Persona la lee al dibujarse
+// (`luzActual`), así las partes no cambian nada: sombra proyectada plana del lado opuesto al sol, luz de borde cálida del
+// lado del sol, tinte del set sobre la ropa y bruma (perspectiva atmosférica). React dibuja en orden (lugar → personajes),
+// y Escena la reinicia al empezar, así cada escena arranca con la luz de día.
+export type Luz = {
+  lado: 1 | -1; // de qué lado viene el sol (1 = derecha)
+  borde: string; bordeOp: number; // luz de borde
+  sombraOp: number; largo: number; // sombra proyectada: opacidad y largo (0 = sol arriba)
+  forma: number; // opacidad del sombreado de volumen (lado oscuro)
+  tinte: string; tinteK: number; // tinte del set sobre la ropa (0 = nada)
+  bruma: string; // color de la bruma de fondo
+};
+export const LUCES: Record<"dia" | "tarde" | "noche" | "interior" | "carpa" | "bosque" | "polvo", Luz> = {
+  dia: { lado: 1, borde: "#fff8dc", bordeOp: 0.85, sombraOp: 0.32, largo: 0.6, forma: 0.17, tinte: "#ffe7b0", tinteK: 0.04, bruma: "#d6eef8" },
+  tarde: { lado: 1, borde: "#ffc27a", bordeOp: 1, sombraOp: 0.34, largo: 1.2, forma: 0.22, tinte: "#ff7a5a", tinteK: 0.12, bruma: "#ffb894" },
+  noche: { lado: -1, borde: "#a9bcff", bordeOp: 0.6, sombraOp: 0.32, largo: 0.35, forma: 0.24, tinte: "#2c2f8a", tinteK: 0.3, bruma: "#4a3f8f" },
+  interior: { lado: 1, borde: "#fff0cc", bordeOp: 0.7, sombraOp: 0.28, largo: 0.35, forma: 0.16, tinte: "#ffb466", tinteK: 0.06, bruma: "#e8d6b4" },
+  carpa: { lado: 1, borde: "#ffcf7a", bordeOp: 0.9, sombraOp: 0.32, largo: 0.6, forma: 0.22, tinte: "#ff9a3d", tinteK: 0.16, bruma: "#7a4a2a" },
+  bosque: { lado: 1, borde: "#d8f0c8", bordeOp: 0.5, sombraOp: 0.3, largo: 0.4, forma: 0.22, tinte: "#2f6a5a", tinteK: 0.2, bruma: "#9fb8a8" },
+  polvo: { lado: 1, borde: "#fff0c0", bordeOp: 0.85, sombraOp: 0.28, largo: 0.8, forma: 0.15, tinte: "#ffb060", tinteK: 0.08, bruma: "#fbd6a0" },
+};
+let luzVigente: Luz = LUCES.dia;
+export const fijarLuz = (l: keyof typeof LUCES | Partial<Luz>, base: keyof typeof LUCES = "dia") => {
+  luzVigente = typeof l === "string" ? LUCES[l] : { ...LUCES[base], ...l };
+};
+export const luzActual = () => luzVigente;
+// mezcla dos colores #rgb/#rrggbb (k = 0 → a, 1 → b); si alguno no es hex devuelve a
+const hex = (s: string) => {
+  if (s[0] !== "#") return null;
+  const h = s.length === 4 ? s.slice(1).split("").map((c) => c + c).join("") : s.slice(1, 7);
+  if (h.length !== 6) return null;
+  return [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16));
+};
+export const mezcla = (a: string, b: string, k: number) => {
+  if (k <= 0) return a;
+  const A = hex(a), B = hex(b);
+  if (!A || !B) return a;
+  return "#" + A.map((v, i) => Math.round(v + (B[i] - v) * k).toString(16).padStart(2, "0")).join("");
+};
+// bruma: banda que aclara/desatura lo de atrás (perspectiva atmosférica), plana, sin blur
+export const Bruma: React.FC<{ y0: number; y1: number; color?: string; op?: number; sube?: boolean }> = ({ y0, y1, color, op = 0.4, sube }) => {
+  const c = color ?? luzVigente.bruma;
+  return <div style={{ position: "absolute", left: 0, right: 0, top: y0, height: y1 - y0, pointerEvents: "none", opacity: op, background: `linear-gradient(${sube ? "0deg" : "180deg"}, ${c}00, ${c} 60%, ${c})` }} />;
+};
+// niebla en capas: banda ondulada plana que se desplaza lento (Valle, Bosque, cualquier fondo)
+export const Niebla: React.FC<{ t: number; y: number; color?: string; op?: number; alto?: number; vel?: number; seed?: number }> = ({ t, y, color = "#ffffff", op = 0.35, alto = 70, vel = 14, seed = 2 }) => {
+  const r = rnd(seed);
+  const desp = (t * vel + r() * 400) % 480;
+  let d = `M ${-480 - desp} ${y + alto * 1.6} L ${-480 - desp} ${y}`;
+  for (let k = -1; k <= 5; k++) d += ` Q ${k * 480 + 120 - desp} ${y - alto * (0.5 + r() * 0.5)} ${k * 480 + 240 - desp} ${y} Q ${k * 480 + 360 - desp} ${y + alto * 0.25} ${k * 480 + 480 - desp} ${y}`;
+  d += ` L ${2880 - desp} ${y + alto * 1.6} Z`;
+  return (
+    <svg style={{ position: "absolute", inset: 0, pointerEvents: "none" }} width={1920} height={1080}>
+      <path d={d} fill={color} opacity={op} />
+    </svg>
+  );
+};
+// tinte del set: capa plana encima del fondo (debajo de los personajes)
+export const Tinte: React.FC<{ color: string; op: number }> = ({ color, op }) => <AbsoluteFill style={{ background: color, opacity: op, pointerEvents: "none" }} />;
+
 // ── escena: monta a sus hijos en [t0, t1 + SOLAPE) — la siguiente entra ENCIMA con su transición — y les aplica
 // un empuje de cámara sorteado (in/out, foco 35-65 %) + golpes de zoom en las palabras fuertes.
 export const SOLAPE = 0.34;
@@ -39,6 +99,7 @@ export type Entrada = "iris" | "barrido" | "zoom" | "diag" | "corte" | "sube";
 const ENTRADAS: Entrada[] = ["iris", "barrido", "zoom", "diag", "corte", "sube", "barrido", "zoom"];
 export const Escena: React.FC<{ t: number; t0: number; t1: number; children: React.ReactNode; zoom?: number; seed?: number; fondo?: string; entra?: Entrada; golpes?: number[]; banda?: string; ix?: number; iy?: number }> = ({ t, t0, t1, children, zoom, seed, fondo = C.noche, entra, golpes = [], banda, ix = 960, iy = 540 }) => {
   if (t < t0 || t >= t1 + SOLAPE) return null;
+  luzVigente = LUCES.dia; // cada escena arranca con luz de día; su lugar la cambia al dibujarse
   const r = rnd(seed ?? Math.round(t0 * 1000) + 3);
   const vel = 0.012 + r() * 0.012;
   const amp = Math.min(0.07, zoom ?? vel * (t1 - t0));
