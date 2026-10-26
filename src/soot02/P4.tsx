@@ -101,7 +101,9 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
         <rect x={900} y={880} width={120} height={140} fill="#8a8f9f" />
         <rect x={700} y={1010} width={520} height={50} rx={12} fill="#6a6f82" />
       </svg>
-      <Espolon x={960} y={interpolate(t, [465.9, 466.5], [-300, 690], cl) + (t > 466.5 ? Math.sin((t - 466.5) * 30) * Math.max(0, 14 - (t - 466.5) * 30) : 0)} s={0.95} />
+      <Espolon x={960} y={interpolate(t, [465.2, 465.9], [-300, 690], cl) + (t > 465.9 ? Math.sin((t - 465.9) * 30) * Math.max(0, 14 - (t - 465.9) * 30) : 0)} s={0.95} />
+      <Persona x={1560} y={1010} h={460} t={t} seed={2} ropa={APION} expr={t < 465.9 ? "miedo" : "sorpresa"} salta={465.95} mira={-0.8} bI={t > 466 ? 150 + Math.sin(t * 6) * 15 : 30} bD={t > 466 ? 150 + Math.sin(t * 6 + 1) * 15 : 30} />
+      <Emote t={t} t0={468.6} tipo="excl" x={1560} y={1010 - 360} s={1.2} />
       <CuentaN t={t} t0={468.5} t1={469.8} a={465} suf=" KG" x={960} y={300} size={170} color={C.crema} />
       <Chip t={t} t0={467.4} text="ATHLIT RAM · ISRAEL" color="#1d6f8a" x={960} y={130} centro size={56} />
       <Chip t={t} t0={471.0} text="SOLID BRONZE" color={C.oro} tinta={C.noche} x={960} y={1030} centro size={52} />
@@ -122,7 +124,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
             <GaleraArriba x={x} y={560} rot={0} s={1.1} t={t} boga={t < 474.1 ? 0.3 : t < 477.6 ? 1.6 : t < 479.4 ? 0 : -1.4} />
             {t > 474.3 && t < 477.6 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>{Array.from({ length: 6 }, (_, i) => <line key={i} x1={x - 520 - i * 60} y1={480 + i * 30} x2={x - 360 - i * 60} y2={480 + i * 30} stroke="#fff" strokeWidth={8} opacity={0.6} strokeLinecap="round" />)}</svg>}
             <Salpica t={t} t0={477.6} x={1260} y={560} s={1.8} />
-            {t > 477.6 && t < 478.0 && <AbsoluteFill style={{ background: "#fff", opacity: 1 - prog(t, 477.6, 478.0) }} />}
+            {t > 477.6 && t < 478.0 && <AbsoluteFill style={{ background: "#fff", opacity: 0.3 * (1 - prog(t, 477.6, 478.0)) }} />}
             {t > 479.4 && <Flecha t={t} t0={479.6} x1={x - 200} y1={760} x2={x - 520} y2={760} color={C.ambar} />}
           </>
         );
@@ -139,14 +141,14 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
       <Cam t={t} k={[[485.2, 960, 540, 1.0], [487.0, 960, 540, 1.0], [488.4, 620, 560, 1.7], [493.9, 620, 560, 1.7], [495.6, 960, 540, 1.0], [498.7, 960, 540, 1.0]]}>
         <Galera x={760} y={650} s={0.75} t={t} boga={0.6} vela={false} marines={false} rompe={prog(t, 496.5, 496.8)} />
         {/* el remero de espaldas, con globo de visión hacia atrás */}
-        {t > 488.4 && t < 495.6 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
-          <g transform={`translate(620 660) scale(0.55)`}><Remero fase={t * 3.6} ropa="#2fb5d8" piel="#c98b62" pelo="#1d1410" expr={t > 494 ? "miedo" : "cansado"} seed={2} t={t} /></g>
-          <path d="M 560 560 L 360 480 L 360 680 Z" fill="#fff8c4" opacity={0.25} />
-        </svg>}
         {/* el enemigo que viene por detrás de tu espalda (desde la derecha) */}
         {t > 492.6 && <Galera x={interpolate(t, [492.6, 496.5], [2700, 1720], cl)} y={660} s={0.75} t={t} boga={1.6} vela={false} flip color="#3a2a3a" franja="#1a1a1a" marines={false} />}
       </Cam>
-      {t > 496.5 && t < 497.0 && <AbsoluteFill style={{ background: "#fff", opacity: 1 - prog(t, 496.5, 497.0) }} />}
+      {t > 488.4 && t < 496.6 && <div style={{ position: "absolute", left: 120, top: 560, width: 440, height: 440, borderRadius: 220, overflow: "hidden", background: "radial-gradient(circle, #6a3a1e, #2a1408)", border: "10px solid #2fb5d8", transform: `scale(${ent(t, 488.4) * (1 - prog(t, 496.2, 496.6))})` }}>
+        <svg style={{ position: "absolute", inset: 0 }} width={440} height={440}><g transform="translate(250 330) scale(0.95)"><Remero fase={t * 3.6} ropa="#2fb5d8" piel="#c98b62" pelo="#1d1410" expr={t > 494 ? "miedo" : "cansado"} seed={2} t={t} /></g></svg>
+      </div>}
+      {t > 488.4 && t < 496.6 && <svg style={{ position: "absolute", inset: 0, pointerEvents: "none" }} width={1920} height={1080}><path d={`M 560 780 L 1000 ${640} L 1000 760 Z`} fill="#fff8c4" opacity={0.18 * ent(t, 488.6)} /></svg>}
+      {t > 496.5 && t < 497.0 && <AbsoluteFill style={{ background: "#fff", opacity: 0.3 * (1 - prog(t, 496.5, 497.0)) }} />}
       <Chip t={t} t0={485.2} t1={488.2} text="THE PART THAT SHOULD WORRY YOU" color={C.rojo} x={960} y={150} centro size={56} />
       <Chip t={t} t0={488.6} text="YOU FACE BACKWARDS" color={C.violeta} x={120} y={130} size={54} />
       <Chip t={t} t0={488.6} t1={495.4} text="SHIP GOES →" color="#1d6f8a" x={1400} y={130} size={54} />
@@ -172,11 +174,11 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
       </Cam>
       <Chip t={t} t0={500.15} t1={504.8} text="THE HOLE: DOWN LOW" color={C.rojo} x={120} y={140} size={58} />
       <Chip t={t} t0={502.7} t1={504.8} text="= THE BOTTOM ROW" color={C.noche} x={120} y={250} size={58} />
-      <Chip t={t} t0={505.3} t1={511.8} text="WATER: YOUR LEVEL FIRST" color="#1d6f8a" x={960} y={140} centro size={56} />
-      <Chip t={t} t0={507.2} t1={511.8} text="WEDGED IN" color={C.violeta} x={960} y={250} centro size={56} />
-      <Chip t={t} t0={509.83} t1={511.8} text="OARS" color={C.oro} tinta={C.noche} x={1500} y={380} centro size={46} />
-      <Chip t={t} t0={510.27} t1={511.8} text="MEN" color={C.ambar} tinta={C.noche} x={1500} y={470} centro size={46} />
-      <Chip t={t} t0={511.13} t1={511.8} text="DARK" color={C.noche} x={1500} y={560} centro size={46} />
+      <Chip t={t} t0={505.3} t1={511.8} text="WATER: YOUR LEVEL FIRST" color="#1d6f8a" x={960} y={850} centro size={56} />
+      <Chip t={t} t0={507.2} t1={511.8} text="WEDGED IN" color={C.violeta} x={960} y={960} centro size={56} />
+      <Chip t={t} t0={509.83} t1={511.8} text="OARS" color={C.oro} tinta={C.noche} x={1760} y={380} centro size={46} />
+      <Chip t={t} t0={510.27} t1={511.8} text="MEN" color={C.ambar} tinta={C.noche} x={1760} y={470} centro size={46} />
+      <Chip t={t} t0={511.13} t1={511.8} text="DARK" color={C.noche} x={1760} y={560} centro size={46} />
       <Chip t={t} t0={512.05} text="ALL FOR THE SAME FEW OPENINGS" color={C.rojo} x={960} y={960} centro size={58} />
     </Escena>
 
@@ -208,7 +210,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
     {/* 531,4 · "this is the kind of war Rome had to learn from scratch. Which brings us to the most famous trick in Roman naval history" */}
     <Escena t={t} t0={531.4} t1={538.0} entra="fundido" sale="atraviesa" sx={1300} sy={420} fondo="#2d1b69" golpes={[532.4, 534.6, 536.4]}>
       <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #5b2bb5, #1b1240 80%)" }} />
-      <Persona x={560} y={pp(760, 470)} h={760} t={t} seed={140} ropa={{ tunica: "#f2ead8", tunica2: "#c9b8a0", cinto: "#a3202f", piel: "#f2b48a", piel2: "#d98d66", pelo: "#3a2214" }} expr={t < 534.5 ? "triste" : "sorpresa"} bD={t > 534.5 ? 150 : 40} cD={t > 534.5 ? 10 : 90} salta={534.6} />
+      <Persona x={560} y={pp(760, 470)} h={760} t={t} seed={140} ropa={{ tunica: "#f2ead8", tunica2: "#c9b8a0", cinto: "#a3202f", piel: "#f2b48a", piel2: "#d98d66", pelo: "#3a2214" }} expr={t < 534.5 ? "triste" : "sorpresa"} bD={t > 534.5 ? 150 + Math.sin(t * 5) * 12 : 80 + Math.sin(t * 4) * 25} cD={t > 534.5 ? 10 : 40 + Math.sin(t * 4) * 20} salta={534.6} habla={t < 534.4} manoD={<rect x={-5} y={-10} width={10} height={220} rx={4} fill="#8a5a2a" transform="rotate(-80)" />} />
       {t > 532.0 && <svg style={{ position: "absolute", left: 760, top: 420, transform: `scale(${ent(t, 532.0)})` }} width={420} height={300}><rect x={10} y={20} width={400} height={260} rx={14} fill="#3a2a1a" stroke="#8a5a2a" strokeWidth={14} /><text x={210} y={110} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={44} fill="#f2ead8">NAVAL WAR</text><text x={210} y={180} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={60} fill={C.oro}>101</text><path d="M 60 230 L 160 230" stroke="#f2ead8" strokeWidth={6} /></svg>}
       {t > 535.0 && (
         <svg style={{ position: "absolute", left: 1300 - 300, top: 420 - 260, transform: `scale(${ent(t, 535.0)})`, overflow: "visible" }} width={600} height={520} viewBox="-300 -260 600 520">

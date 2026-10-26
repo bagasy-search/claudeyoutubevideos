@@ -83,20 +83,20 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
       )}
       <Chip t={t} t0={554.3} t1={558.9} text="RAN AGROUND" color="#7a5bd1" x={1050} y={150} centro size={60} />
       <Chip t={t} t0={556.7} t1={558.9} text="CAPTURED" color={C.rojo} x={1050} y={260} centro size={56} />
-      <CuentaN t={t} t0={559.3} t1={561.4} a={120} suf=" SHIPS" x={560} y={150} size={110} color={C.crema} />
+      <CuentaN t={t} t0={559.2} t1={559.8} de={100} a={120} suf=" SHIPS" x={560} y={150} size={110} color={C.crema} />
       <Chip t={t} t0={559.9} text="100 QUINQUEREMES + 20 TRIREMES" color={C.violeta} x={960} y={1000} centro size={46} />
       <CuentaN t={t} t0={561.0} t1={562.8} a={60} pre="IN " suf=" DAYS" x={1420} y={150} size={110} color={C.oro} />
     </Escena>
 
     {/* 563,8 · "while the ships were still being built, the new rowers trained on land... benches on the beach... pulled imaginary oars through the air while an officer shouted the rhythm. That was your training." */}
     <Escena t={t} t0={563.8} t1={580.4} entra="fundido" sale="paneo" fondo="none" quieta golpes={[565.9, 568.0, 572.0, 574.3, 577.0, 578.4]}>
-      <Cam t={t} k={[[563.8, 960, 540, 1.0], [572.6, 960, 560, 1.0], [574.0, 1500, 330, 1.6], [576.4, 1500, 330, 1.6], [577.6, 830, 800, 1.7], [580.4, 830, 800, 1.8]]}>
+      <Cam t={t} k={[[563.8, 960, 540, 1.0], [572.6, 960, 560, 1.0], [574.0, 1500, 440, 1.6], [576.4, 1500, 440, 1.6], [577.6, 830, 800, 1.7], [580.4, 830, 800, 1.8]]}>
         <Playa t={t} />
         {/* esqueletos de barco en construcción al fondo */}
         <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>{[300, 900].map((x, i) => <g key={i} transform={`translate(${x} 700)`}><path d="M -220 0 Q 0 60 220 0" stroke="#8a5a2a" strokeWidth={12} fill="none" />{Array.from({ length: 9 }, (_, k) => <path key={k} d={`M ${-200 + k * 50} ${10 + Math.abs(k - 4) * -3} q -10 -60 0 -110`} stroke="#a8622c" strokeWidth={9} fill="none" />)}</g>)}</svg>
         <RemoAire t={t} />
-        <Persona x={1500} y={pp(520, 330)} h={520} t={t} seed={170} ropa={CENTURION} casco="centurion" expr="enojado" habla={Math.sin(t * 0.6 * Math.PI * 2) > 0.3} bD={100} cD={60} flip />
-        <Emote t={t} t0={572.2} tipo="enojo" {...L(1500, pp(520, 330), 520)} s={1.2} />
+        <Persona x={1500} y={pp(380, 470)} h={380} t={t} seed={170} ropa={CENTURION} casco="centurion" expr="enojado" habla={Math.sin(t * 0.6 * Math.PI * 2) > 0.3} bD={100} cD={60} flip />
+        <Emote t={t} t0={572.2} tipo="enojo" {...L(1500, pp(380, 470), 380)} s={1.2} />
       </Cam>
       {t > 572.0 && t < 576.6 && <div style={{ position: "absolute", left: 220, top: 220, transform: `scale(${1 + 0.15 * Math.max(0, Math.cos(t * 0.6 * Math.PI * 2)) ** 6})`, fontFamily, fontWeight: 700, fontSize: 110, color: C.crema, WebkitTextStroke: `10px ${C.noche}`, paintOrder: "stroke fill" }}>{Math.cos(t * 0.6 * Math.PI * 2) > 0 ? "PULL!" : "...AND"}</div>}
       <Chip t={t} t0={563.8} t1={572.4} text="SHIPS NOT READY YET" color={C.violeta} x={120} y={130} size={52} />
@@ -136,7 +136,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
         <Galera x={interpolate(t, [595.2, 597.6], [2700, 760 + 0.8 * 1500], cl)} y={680} s={0.8} t={t} boga={t < 597.6 ? 1.0 : 0} vela={false} flip color="#3a2a3a" franja="#1a1a1a" marines={false} />
         <Salpica t={t} t0={599.0} x={760 + 0.8 * 990} y={600} s={1.6} />
       </Cam>
-      {t > 599.0 && t < 599.3 && <AbsoluteFill style={{ background: "#fff", opacity: 1 - prog(t, 599.0, 599.3) }} />}
+      {t > 599.0 && t < 599.3 && <AbsoluteFill style={{ background: "#fff", opacity: 0.3 * (1 - prog(t, 599.0, 599.3)) }} />}
       <Chip t={t} t0={595.3} text="ENEMY CLOSE..." color="#7a5bd1" x={960} y={140} centro size={60} />
       <Grande t={t} t0={597.0} text="DROP IT!" x={500} y={300} size={140} color={C.rojo} />
       <Grande t={t} t0={599.0} text="SMASH!" x={1450} y={300} size={150} color={C.oro} />
@@ -166,9 +166,11 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
     {/* 609,0 · "In 260 BC, at Mylae, the consul Gaius Duilius tried it for the first time. The Carthaginians came in fast and confident. The crows came down, and Roman marines poured across." */}
     <Escena t={t} t0={609.0} t1={622.25} entra="fundido" sale="fundido" fondo="none" quieta golpes={[609.0, 611.3, 612.3, 615.4, 618.0, 619.9]}>
       {t < 612.3 && <MapaMar t={t} puntos={[{ n: "MYLAE", t0: 611.2, color: C.rojo }]} zoom={{ n: "MYLAE", z: 2.6, t: [610.6, 612.3] }} />}
+      {t < 612.3 && <Persona x={1640} y={1010} h={440} t={t} seed={190} ropa={DUILIO} expr="orgullo" bD={interpolate(t, [609.3, 610.2], [10, 115], cl)} cD={0} mira={-0.7} />}
+      {t < 612.3 && <Chip t={t} t0={611.3} text="MYLAE · SICILY" color={C.rojo} x={1500} y={300} centro size={50} />}
       {t >= 612.3 && t < 615.4 && (
         <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #5b2bb5, #1b1240 80%)" }}>
-          <Persona x={960} y={pp(820, 440)} h={820} t={t} seed={190} ropa={DUILIO} expr="orgullo" aparece={612.3} bD={120} cD={40} />
+          <Persona x={960} y={pp(820, 440)} h={820} t={t} seed={190} ropa={DUILIO} expr="orgullo" bD={120 + Math.sin(t * 4) * 15} cD={40} bI={30 + Math.sin(t * 3) * 10} habla={t > 613.6} />
         </AbsoluteFill>
       )}
       {t >= 615.4 && (
@@ -205,10 +207,12 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
       {t > 624.5 && t < 627.6 && <Laurel x={1600} y={360 - 80} s={1.6} />}
       {t >= 627.6 && <Columna x={960} y={560} s={0.95} t={t} tR={628.6} />}
       {t >= 627.6 && <Particulas t={t} tipo="destellos" n={20} seed={14} />}
+      {t >= 627.6 && <Persona x={1500} y={1010} h={520} t={t} seed={190} ropa={DUILIO} expr="orgullo" bI={interpolate(t, [627.8, 628.5], [10, 120], cl) + Math.sin(t * 3) * 6} cI={0} mira={-0.8} habla={t > 629.6} />}
+      {t >= 627.6 && <Laurel x={1500} y={1010 - 450 * (520 / 560) - 60} s={1.3} />}
       <Chip t={t} t0={622.25} t1={627.4} text="DOZENS OF SHIPS CAPTURED" color={C.rojo} x={760} y={150} centro size={58} />
       <Chip t={t} t0={624.61} t1={627.4} text="1ST NAVAL TRIUMPH" color={C.oro} tinta={C.noche} x={760} y={270} centro size={52} />
-      <Chip t={t} t0={627.67} text="COLUMNA ROSTRATA" color={C.violeta} x={1420} y={300} centro size={44} />
-      <Chip t={t} t0={629.6} text="DECORATED WITH RAMS" color={C.rojo} x={1420} y={390} centro size={40} />
+      <Chip t={t} t0={627.67} text="COLUMNA ROSTRATA" color={C.violeta} x={430} y={300} centro size={44} />
+      <Chip t={t} t0={629.6} text="DECORATED WITH RAMS" color={C.rojo} x={430} y={400} centro size={40} />
     </Escena>
 
     {/* 632,27 · "Great news for Duilius. For you, the marines took the glory. You stayed below and rowed." */}

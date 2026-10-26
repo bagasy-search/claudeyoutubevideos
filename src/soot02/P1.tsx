@@ -91,7 +91,7 @@ const Vitrina: React.FC<{ t: number; t0: number }> = ({ t, t0 }) => {
 };
 // tabla FLEET vs LEGION
 const Tabla: React.FC<{ t: number; filas: { a: string; b: string; t0: number; malo?: boolean }[]; x?: number; y?: number }> = ({ t, filas, x = 960, y = 520 }) => (
-  <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) scale(${ent(t, filas[0].t0 - 0.3)})`, background: "rgba(27,18,64,.94)", borderRadius: 30, padding: "26px 40px", boxShadow: "0 14px 0 rgba(10,5,30,.45)", fontFamily, fontWeight: 700, color: "#fff", width: 1180 }}>
+  <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) scale(${ent(t, filas[0].t0 - 0.3)})`, background: "linear-gradient(180deg, #3a2590, #241660)", border: "6px solid #7fd6ff", borderRadius: 30, padding: "26px 40px", boxShadow: "0 14px 0 rgba(10,5,30,.45)", fontFamily, fontWeight: 700, color: "#fff", width: 1180 }}>
     <div style={{ display: "flex", fontSize: 54, marginBottom: 14 }}>
       <div style={{ flex: 1 }} /><div style={{ width: 300, textAlign: "center", color: "#7fd6ff" }}>FLEET</div><div style={{ width: 300, textAlign: "center", color: "#ff8a9a" }}>LEGION</div>
     </div>
@@ -100,7 +100,7 @@ const Tabla: React.FC<{ t: number; filas: { a: string; b: string; t0: number; ma
       if (t < f.t0) return <div key={i} style={{ height: 96 }} />;
       return (
         <div key={i} style={{ display: "flex", alignItems: "center", height: 96, fontSize: 52, transform: `translateX(${(1 - e) * -60}px)`, opacity: e, borderTop: "4px solid rgba(255,255,255,.12)" }}>
-          <div style={{ flex: 1, color: "#d8d0f0" }}>{["TERM", "PAY", "RESPECT"][i]}</div>
+          <div style={{ flex: 1, color: "#fff" }}>{["TERM", "PAY", "RESPECT"][i]}</div>
           <div style={{ width: 300, textAlign: "center", color: f.malo ? C.rojo : C.lima }}>{f.a}</div>
           <div style={{ width: 300, textAlign: "center", color: "#fff" }}>{f.b}</div>
         </div>
@@ -163,7 +163,8 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
       <Nubes t={t} n={6} seed={21} color="#3a3d5e" op={0.85 * (1 - prog(t, 73.9, 75))} vel={60} alto={280} />
       {t > 73.7 && <Rayos t={t} x={1350} y={300} op={0.12 * prog(t, 73.7, 74.4)} />}
       <Serapis x={1350} y={330} s={0.9} t={t} t0={69.7} />
-      <Galera x={560} y={700} s={0.36} t={t} boga={0.6} vela balanceo={interpolate(t, [70, 72, 74, 75], [1, 5, 5, 1], cl)} agua="#1d2a5a" ola={interpolate(t, [70, 72, 74, 75], [0.3, 1, 1, 0.3], cl)} />
+      <Galera x={560} y={700} s={0.36} t={t} boga={0.6} vela balanceo={interpolate(t, [70, 72, 74, 75], [1, 5, 5, 1], cl)} agua={null} />
+      <Persona x={1600} y={pp(520, 560)} h={520} t={t} seed={2} ropa={APION} expr={t < 73.9 ? "miedo" : "feliz"} bI={t < 73.9 ? 120 + Math.sin(t * 7) * 10 : 160} bD={t < 73.9 ? 120 + Math.sin(t * 7 + 1) * 10 : 160} cI={t < 73.9 ? 90 : 20} cD={t < 73.9 ? 90 : 20} mira={-0.5} salta={73.95} />
       <Chip t={t} t0={68.7} text="1" color={C.rojo} x={110} y={160} size={70} />
       <Chip t={t} t0={69.8} text="THE GOD SERAPIS" color={C.oro} tinta={C.noche} x={250} y={160} size={60} />
       <Chip t={t} t0={72.3} text="DANGER AT SEA" color={C.rojo} x={250} y={270} size={56} />
@@ -176,7 +177,12 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
       <Volcan x={520} y={430} s={0.38} t={t} erupcion={0} />
       <Puerto t={t} />
       {[0, 1, 2].map((i) => <Galera key={i} x={1000 + i * 380} y={630 + i * 6} s={0.22} t={t + i} boga={0} vela={i !== 1} agua="#2a74b8" marines={false} />)}
-      <Persona x={interpolate(t, [76.9, 78.8], [-120, 760], cl)} y={1010} h={460} t={t} seed={2} ropa={APION} camina={t < 78.8 ? 1.6 : 0} expr={t < 81 ? "sorpresa" : "feliz"} bD={t > 81 ? 60 : 10} cD={t > 81 ? 90 : 10} salta={81.4} />
+      <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+        <rect x={-20} y={1004} width={1120} height={40} fill="#a8723e" stroke="#6b4320" strokeWidth={5} />
+        {Array.from({ length: 14 }, (_, i) => <line key={i} x1={i * 80} y1={1004} x2={i * 80} y2={1044} stroke="#6b4320" strokeWidth={4} />)}
+        {[60, 380, 700, 1020].map((x) => <rect key={x} x={x} y={1040} width={30} height={60} fill="#6b4320" />)}
+      </svg>
+      <Persona x={interpolate(t, [76.9, 78.8], [-120, 760], cl)} y={1006} h={460} t={t} seed={2} ropa={APION} camina={t < 78.8 ? 1.6 : 0} expr={t < 81 ? "sorpresa" : "feliz"} bD={t > 81 ? 60 : 10} cD={t > 81 ? 90 : 10} salta={81.4} />
       {[0, 1, 2].map((i) => <Denario key={i} x={820 + i * 70} y={interpolate(t, [81.4 + i * 0.25, 81.7 + i * 0.25], [-80, 640 - i * 20], cl)} r={40} t={t} t0={81.4 + i * 0.25} gira={1.5} />)}
       <Chip t={t} t0={77.6} text="2" color={C.ambar} tinta={C.noche} x={110} y={160} size={70} />
       <Chip t={t} t0={79.3} text="MISENUM" color="#1d6f8a" x={250} y={160} size={70} />
@@ -189,7 +195,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={85.2} t1={93.2} entra="atraviesa" ix={960} iy={600} sale="fundido" fondo="#2d1b69" golpes={[87.8, 91.3]}>
       <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #7a3fd0, #1b1240 80%)" }} />
       <Carta x={680} y={560} t={t} t0={85.25} lineas={4} escribe={1} tachado="APION" nuevo="ANTONIUS MAXIMUS" tn={89.5} />
-      <Persona x={1450} y={pp(820, 470)} h={820} t={t} seed={2} ropa={APION} expr={t < 87.8 ? "neutro" : t < 91.3 ? "sorpresa" : "orgullo"} salta={87.8} mira={-0.6} />
+      <Persona x={1450} y={pp(820, 470)} h={820} t={t} seed={2} ropa={APION} expr={t < 87.8 ? "neutro" : t < 91.3 ? "sorpresa" : "orgullo"} salta={87.8} mira={-0.6} bI={t < 87.6 ? 70 + Math.sin(t * 3) * 8 : 115} cI={t < 87.6 ? 30 : 0} bD={t > 91.3 ? 150 : 15} cD={t > 91.3 ? 40 : 10} />
       <Emote t={t} t0={88.0} t1={91} tipo="preg" {...L(1450, pp(820, 470), 820)} s={1.4} />
       <Chip t={t} t0={85.3} text="3" color={C.teal} tinta={C.noche} x={110} y={160} size={70} />
       <Chip t={t} t0={86.3} text="A NEW NAME" color={C.violeta} x={250} y={160} size={64} />
@@ -223,6 +229,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={103.5} t1={112.0} entra="paneo" sale="fundido" fondo="none" golpes={[105.7, 109.7, 111.1]}>
       <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><rect x={0} y={760} width={1920} height={320} fill="#c9a46a" /><rect x={0} y={760} width={1920} height={24} fill="#a8834e" /></svg>
       <Coliseo x={1150} y={520} s={1.0} t={t} t0={105.6} />
+      <Persona x={interpolate(t, [103.5, 106.2], [-100, 640], cl)} y={pp(430, 590)} h={430} t={t} seed={2} ropa={APION} camina={t < 106.2 ? 1.7 : 0} expr={t < 109.7 ? "sorpresa" : "feliz"} mira={0.8} bD={t > 109.7 ? 140 : 10} cD={30} />
       {t > 108.2 && <svg style={{ position: "absolute", left: 120, top: 560, transform: `scale(${ent(t, 108.2)})`, transformOrigin: "200px 300px" }} width={420} height={300}><rect x={20} y={80} width={380} height={200} fill="#e8b98a" /><path d="M 0 90 L 210 10 L 420 90 Z" fill="#b5452c" />{[60, 160, 260].map((x) => <rect key={x} x={x} y={150} width={60} height={60} fill="#5a3418" />)}</svg>}
       <Chip t={t} t0={104.0} text="NOT ALL AT SEA" color={C.violeta} x={110} y={150} size={56} />
       <Chip t={t} t0={105.7} text="ROME" color={C.rojo} x={110} y={260} size={72} />
@@ -240,6 +247,12 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
         <Coliseo x={960} y={600} s={1.1} velario={prog(t, 114.9, 116.6)} />
         {Array.from({ length: 8 }, (_, i) => { const u = prog(t, 114.0 + i * 0.05, 115.0 + i * 0.05); return <g key={i}><svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><g transform={`translate(${330 + i * 180} ${440 - u * 90})`}><circle cx={0} cy={-30} r={14} fill="#c98b62" /><rect x={-12} y={-18} width={24} height={30} rx={8} fill="#2fb5d8" /><line x1={0} y1={-10} x2={0} y2={-90} stroke="#c9a46a" strokeWidth={4} /></g></svg></g>; })}
       </Cam>
+      {t < 121.6 && [0, 1, 2].map((i) => { const tira = Math.sin(t * 4 + i * 0.9); return (
+        <React.Fragment key={i}>
+          <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><line x1={300 + i * 260} y1={-20} x2={330 + i * 260 + tira * 14} y2={860} stroke="#c9a46a" strokeWidth={10} /></svg>
+          <Persona x={300 + i * 260} y={pp(380, 760) + tira * 6} h={380} t={t} seed={2 + i * 7} ropa={i === 1 ? APION : CIVIL(i + 2)} expr="enojado" bI={165 - tira * 12} bD={165 + tira * 12} cI={15} cD={15} inclina={tira * 4} />
+        </React.Fragment>
+      ); })}
       <Chip t={t} t0={112.6} text="TOO HOT" color={C.rojo} x={110} y={150} size={70} />
       <Chip t={t} t0={115.3} text="THE VELARIUM" color={C.oro} tinta={C.noche} x={960} y={140} centro size={70} />
       <Chip t={t} t0={117.1} text="SAILS + ROPES" color="#1d6f8a" x={960} y={250} centro size={52} />
@@ -282,7 +295,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
       <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #5b2bb5, #1b1240 80%)" }} />
       <Chip t={t} t0={144.3} text="A VERY SIMPLE OFFER" color={C.oro} tinta={C.noche} x={960} y={130} centro size={64} />
       <Tabla t={t} y={560} filas={[{ a: "26 YRS", b: "25 YRS", t0: 146.7, malo: true }, { a: "LOWER", b: "MORE", t0: 149.9, malo: true }, { a: "LESS", b: "MORE", t0: 151.4, malo: true }]} />
-      <Persona x={1700} y={1080} h={420} t={t} seed={2} ropa={APION} expr={t < 151 ? "neutro" : "triste"} mira={-0.8} />
+      <Persona x={1720} y={1030} h={360} t={t} seed={2} ropa={APION} expr={t < 151 ? "neutro" : "triste"} mira={-0.8} bD={t > 146.7 ? 120 + Math.sin(t * 5) * 15 : 10} cD={60} />
     </Escena>
 
     {/* 153,0 · "and at the end, you get the one thing your family never had. Roman citizenship. For you, your wife, your children" */}
@@ -310,7 +323,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
           {Array.from({ length: 30 }, (_, i) => { const e = ent(t, 167.3 + i * 0.04); const x = 120 + (i % 10) * 185, y = 700 + Math.floor(i / 10) * 120; return <g key={i} transform={`translate(${x} ${y}) scale(${e * 0.75}) rotate(${(i * 37) % 30 - 15})`}><rect x={-60} y={-40} width={56} height={80} rx={5} fill="#d08a3a" stroke="#6a3a10" strokeWidth={4} /><rect x={4} y={-40} width={56} height={80} rx={5} fill="#e9a94a" stroke="#6a3a10" strokeWidth={4} /></g>; })}
         </svg>
       )}
-      {t >= 167.2 && <Persona x={1500} y={pp(600, 300)} h={600} t={t} seed={80} ropa={CIVIL(4)} expr="sorpresa" bD={120} cD={40} />}
+      {t >= 167.2 && <Persona x={1560} y={1000} h={560} t={t} seed={80} ropa={CIVIL(4)} expr="sorpresa" bD={interpolate(t, [167.4, 168.4], [10, 160], cl)} cD={20} manoD={<g transform="translate(0 40)"><rect x={-36} y={-30} width={32} height={50} rx={4} fill="#d08a3a" stroke="#6a3a10" strokeWidth={3} /><rect x={2} y={-30} width={32} height={50} rx={4} fill="#e9a94a" stroke="#6a3a10" strokeWidth={3} /></g>} />}
       <Chip t={t} t0={161.8} t1={167} text="BRONZE" color="#d08a3a" x={110} y={150} size={66} />
       <Chip t={t} t0={163.6} t1={167} text="2 PLATES + WIRE" color={C.violeta} x={110} y={260} size={52} />
       <Chip t={t} t0={165.7} t1={167} text="MILITARY DIPLOMA" color={C.oro} tinta={C.noche} x={960} y={950} centro size={68} />
@@ -358,7 +371,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
     {/* 194,5 · "In real emergencies, Rome did use slaves, but it freed them first. Octavian... 20,000 slaves free... trained as oarsmen" */}
     <Escena t={t} t0={194.5} t1={204.9} entra="fundido" sale="fundido" fondo="#2d1b69" golpes={[197.7, 199.3, 201.7]}>
       <AbsoluteFill style={{ background: "radial-gradient(circle at 30% 40%, #7a3fd0, #1b1240 80%)" }} />
-      {Array.from({ length: 6 }, (_, i) => <Persona key={i} x={760 + i * 200} y={1000} h={380} t={t} seed={90 + i} ropa={CIVIL(i)} expr={t < 197.7 ? "triste" : "feliz"} salta={197.8 + i * 0.06} bI={t > 197.8 ? 150 : 10} bD={t > 197.8 ? 150 : 10} />)}
+      {Array.from({ length: 6 }, (_, i) => <Persona key={i} x={760 + i * 200} y={1000} h={380} t={t} seed={90 + i} ropa={CIVIL(i)} expr={t < 197.7 ? "triste" : "feliz"} salta={197.8 + i * 0.06 + Math.floor(Math.max(0, t - 197.8) / 1.3) * 1.3} bI={t > 197.8 ? 150 + Math.sin(t * 6 + i) * 20 : 10 + Math.sin(t * 2 + i) * 4} bD={t > 197.8 ? 150 + Math.sin(t * 6 + i + 1) * 20 : 10} inclina={t < 197.7 ? 8 : 0} />)}
       <Cadena x1={640} y1={880} x2={1880} y2={880} rompe={prog(t, 197.7, 198.4)} />
       <Persona x={360} y={pp(820, 430)} h={820} t={t} seed={95} ropa={{ tunica: "#f2ead8", tunica2: "#c9b8a0", cinto: "#a3202f", piel: "#f2c7a0", piel2: "#d8a07a", pelo: "#7a4a22" }} expr="orgullo" aparece={199.2} bD={t > 200.5 ? 130 : 10} cD={30} />
       {t > 199.2 && <Laurel x={360} y={pp(820, 430) - 450 * (820 / 560) - 70} s={2.0} />}
@@ -375,11 +388,11 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
       {t < 206.6 && <Cadena x1={300} y1={540} x2={1620} y2={540} rompe={prog(t, 205.6, 206.4)} />}
       {t >= 206.6 && <Pergamino x={760} y={600} w={720} abre={prog(t, 206.6, 207.1)} lineas={8} firma={1} titulo="CLASSIS · NAVY" />}
       {t > 210.5 && <svg style={{ position: "absolute", left: 470, top: 780 }} width={560} height={160}><ellipse cx={280} cy={70} rx={260} ry={70} fill="none" stroke={C.ambar} strokeWidth={12} pathLength={1} strokeDasharray={`${prog(t, 210.5, 211.0)} 1`} /></svg>}
-      <Persona x={1500} y={pp(820, 470)} h={820} t={t} seed={2} ropa={APION} expr={t < 209.4 ? "neutro" : "miedo"} mira={-0.8} salta={209.5} />
-      <Emote t={t} t0={210.6} tipo="sudor" {...L(1500, pp(820, 470), 820)} s={1.4} />
+      <Persona x={1300} y={pp(820, 470)} h={820} t={t} seed={2} ropa={APION} expr={t < 209.4 ? "neutro" : "miedo"} mira={-0.8} salta={209.5} bI={t > 206.8 && t < 209.4 ? 105 + Math.sin(t * 14) * 6 : 15} cI={t > 206.8 && t < 209.4 ? 40 : 10} manoI={t > 206.8 && t < 209.4 ? <g transform="rotate(-30)"><path d="M 0 0 L -8 -110 Q 20 -150 30 -110 Z" fill="#f2ead8" stroke="#8a7a5a" strokeWidth={4} /></g> : undefined} />
+      <Emote t={t} t0={210.6} tipo="sudor" {...L(1300, pp(820, 470), 820)} s={1.4} />
       <Chip t={t} t0={205.7} text="NO CHAINS" color={C.teal} tinta={C.noche} x={440} y={110} centro size={62} />
       <Chip t={t} t0={206.8} text="JUST A CONTRACT" color={C.violeta} x={980} y={110} centro size={56} />
-      <Chip t={t} t0={209.5} text="WORSE" color={C.rojo} x={1500} y={240} centro size={80} />
+      <Chip t={t} t0={209.5} text="WORSE" color={C.rojo} x={1650} y={240} centro size={80} />
       <Chip t={t} t0={210.6} text="YOU SIGNED IT" color={C.ambar} tinta={C.noche} x={760} y={980} centro size={64} />
     </Escena>
   </>

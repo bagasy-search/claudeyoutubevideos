@@ -583,7 +583,7 @@ export const Relampago: React.FC<{ t: number; ts: number[]; x?: number }> = ({ t
   for (let i = 1; i < 9; i++) pts.push([pts[i - 1][0] + (r() - 0.5) * 140, i * 80]);
   return (
     <>
-      <AbsoluteFill style={{ background: "#eef4ff", opacity: Math.max(0, 0.75 - u * 3) * (u < 0.08 || u > 0.14 ? 1 : 0.2), pointerEvents: "none" }} />
+      {u < 0.07 && <AbsoluteFill style={{ background: "#eef4ff", opacity: 0.22, pointerEvents: "none" }} />}
       <svg style={{ position: "absolute", inset: 0, pointerEvents: "none" }} width={1920} height={1080}>
         <polyline points={pts.map((p) => p.join(",")).join(" ")} fill="none" stroke="#fff" strokeWidth={14} strokeLinejoin="round" opacity={Math.max(0, 1 - u * 2.6)} />
         <polyline points={pts.map((p) => p.join(",")).join(" ")} fill="none" stroke="#bcd8ff" strokeWidth={34} strokeLinejoin="round" opacity={Math.max(0, 0.4 - u)} />

@@ -109,8 +109,8 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
       </Cam>
       <Chip t={t} t0={353.9} t1={356.8} text="HOLLYWOOD: ALMOST RIGHT" color={C.oro} tinta={C.noche} x={960} y={150} centro size={62} />
       <Chip t={t} t0={355.9} t1={358.6} text="A MAN WHO KEEPS TIME" color={C.violeta} x={960} y={950} centro size={56} />
-      <Grande t={t} t0={359.5} text="HORTATOR" x={1300} y={420} size={150} color={C.crema} />
-      <Chip t={t} t0={361.06} text="'THE ENCOURAGER'" color="#1d6f8a" x={1300} y={600} centro size={56} />
+      <Grande t={t} t0={359.5} text="HORTATOR" x={960} y={880} size={150} color={C.crema} />
+      <Chip t={t} t0={361.06} text="'THE ENCOURAGER'" color="#1d6f8a" x={960} y={150} centro size={56} />
     </Escena>
 
     {/* 362,3 · "instead of a big drum, a mallet, the portisculus, banging out the beat, and a flute player, the symphoniacus... 300 men pull at exactly the same moment. And they had to." */}
@@ -149,7 +149,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
           <Cam t={t} k={[[381, 960, 540, 1.0], [384.6, 960, 540, 1.0], [385.2, HX, HY + 40, 2.1], [388.4, HX, HY + 40, 2.1]]}>
             <Corte t={t} boga={0.6} caos={interpolate(t, [381, 383], [0, 1], cl)} heroeExpr={t < 383 ? "cansado" : "miedo"} />
           </Cam>
-          {t > 385.05 && t < 385.4 && <AbsoluteFill style={{ background: "#fff", opacity: 1 - prog(t, 385.05, 385.4) }} />}
+          {t > 385.05 && t < 385.4 && <AbsoluteFill style={{ background: "#fff", opacity: 0.3 * (1 - prog(t, 385.05, 385.4)) }} />}
         </AbsoluteFill>
       )}
       <Chip t={t} t0={376.6} t1={380.8} text="OAR: 4+ METERS" color={C.oro} tinta={C.noche} x={960} y={900} centro size={64} />
@@ -229,6 +229,8 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={415.5} t1={424.4} text="ALMOST NO WATER" color="#1d6f8a" x={960} y={140} centro size={60} />
       <Chip t={t} t0={418.4} t1={424.4} text="HARD DRY BISCUIT" color={C.oro} tinta={C.noche} x={520} y={780} centro size={54} />
       {(["BREAKFAST", "LUNCH", "DINNER"] as const).map((n, i) => <Chip key={n} t={t} t0={[424.7, 425.56, 425.9][i]} text={n} color={[C.ambar, C.teal, C.violeta][i]} tinta={i < 2 ? C.noche : "#fff"} x={420 + i * 540} y={760} centro size={54} />)}
+      <Persona x={1790} y={1010} h={380} t={t} seed={2} ropa={APION} expr={t > 420.2 && t < 424.6 ? "enojado" : t < 424.6 ? "neutro" : "triste"} bD={t > 419.6 && t < 421.0 ? 150 : t > 421.0 && t < 424.6 ? 80 : 10} cD={t > 419.6 && t < 421.0 ? 110 : 40} manoD={t > 419.6 && t < 424.6 ? <path d="M -16 -10 L 16 -10 L 12 26 L -12 26 Z" fill="#c9773f" stroke="#6a3a10" strokeWidth={4} /> : undefined} mira={-0.6} />
+      <Emote t={t} t0={420.4} t1={424.4} tipo="enojo" x={1790} y={1010 - 330} s={1.1} />
       <Chip t={t} t0={426.2} text="...OF CHAMPIONS" color={C.rojo} x={960} y={930} centro size={62} />
     </Escena>
 
@@ -252,6 +254,10 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
         <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>{Array.from({ length: 12 }, (_, i) => { const x = ((i * 180 - t * 900) % 2100 + 2100) % 2100 - 100; return <line key={i} x1={x} y1={300 + (i * 67) % 500} x2={x + 160} y2={300 + (i * 67) % 500} stroke="#fff" strokeWidth={8} opacity={0.5} strokeLinecap="round" />; })}</svg>
         {t > 439.9 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><circle cx={interpolate(t, [436.6, 442.1], [700, 1050]) + 0.85 * 850} cy={640 + 20} r={40 + 30 * Math.sin(t * 12)} fill="#ffe08a" opacity={0.6} /></svg>}
       </Cam>
+      <div style={{ position: "absolute", left: 100, top: 540, width: 380, height: 380, borderRadius: 190, overflow: "hidden", background: "radial-gradient(circle, #6a3a1e, #2a1408)", border: "10px solid #2fb5d8", transform: `scale(${ent(t, 436.8)})` }}>
+        <Persona x={190} y={pp(560, 210)} h={560} t={t} seed={2} ropa={APION} expr="miedo" bI={95 + Math.sin(t * 12) * 30} bD={95 + Math.sin(t * 12) * 30} cI={60 - Math.sin(t * 12) * 30} cD={60 - Math.sin(t * 12) * 30} inclina={Math.sin(t * 12) * 8} />
+        <Emote t={t} t0={437.2} tipo="sudor" x={190} y={150} s={1.2} />
+      </div>
       <Chip t={t} t0={438.08} text="YOU," color="#2fb5d8" tinta={C.noche} x={300} y={160} centro size={66} />
       <Chip t={t} t0={438.46} text="PERSONALLY," color={C.violeta} x={700} y={160} centro size={58} />
       <Chip t={t} t0={439.26} text="ARE THE ENGINE" color={C.rojo} x={1250} y={160} centro size={66} />

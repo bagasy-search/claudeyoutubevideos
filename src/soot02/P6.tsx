@@ -104,7 +104,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
           </Cam>
         );
       })()}
-      <Relampago t={t} ts={[675.8, 679.9, 684.2]} x={960} />
+      {[675.8, 679.9, 684.2].map((g) => t > g && t < g + 0.25 ? <AbsoluteFill key={g} style={{ background: "linear-gradient(90deg, transparent 0%, rgba(200,220,255,.22) 15%, transparent 30%, rgba(200,220,255,.22) 50%, transparent 65%, rgba(200,220,255,.22) 85%, transparent 100%)", opacity: 1 - (t - g) / 0.25, pointerEvents: "none" }} /> : null)}
       {t > 681.8 && [360, 960, 1560].map((x, i) => <Salpica key={i} t={t} t0={681.9 + i * 0.25} x={x} y={560 + i * 30} s={1.2} />)}
       {t > 683.8 && [500, 1200].map((x, i) => <Salpica key={"b" + i} t={t} t0={683.8 + i * 0.4} x={x} y={860} s={1.4} />)}
       <Chip t={t} t0={675.71} t1={678.5} text="NO SKY" color={C.violeta} x={960} y={140} centro size={70} />
@@ -136,10 +136,10 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
     {/* 693,99 · "The storm hit near a town called Camarina. Of 364 ships, only 80 survived." */}
     <Escena t={t} t0={693.97} t1={700.51} entra="fundido" sale="fundido" fondo="#1f5c9c" golpes={[694.0, 696.7, 698.9]}>
       {t < 696.69 && <MapaMar t={t} puntos={[{ n: "CAMARINA", t0: 694.2, color: C.rojo }]} zoom={{ n: "CAMARINA", z: 2.6, t: [694.0, 696.0] }} />}
-      {t < 696.69 && <Relampago t={t} ts={[694.3, 695.6]} x={1100} />}
-      {t >= 696.69 && <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #2a2d52, #14122a 75%)" }} />}
+      {t < 696.69 && <Relampago t={t} ts={[695.6]} x={1100} />}
+      {t >= 696.4 && <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #2a2d52, #14122a 75%)", opacity: prog(t, 696.4, 696.75) }} />}
       {t >= 696.69 && <Flota t={t} t0={696.69} n={364} hunde={284} tA={[698.9, 700.4]} x={960} y={640} cols={28} s={0.95} />}
-      {t >= 696.69 && t < 698.87 && <CuentaN t={t} t0={696.69} t1={698.6} de={0} a={364} x={960} y={190} size={140} color={C.crema} suf=" SHIPS" />}
+      {t >= 696.69 && t < 698.87 && <CuentaN t={t} t0={696.69} t1={697.5} de={300} a={364} x={960} y={190} size={140} color={C.crema} suf=" SHIPS" />}
       {t >= 698.87 && <CuentaN t={t} t0={698.87} t1={700.4} de={364} a={80} x={960} y={190} size={140} color="#ff6a6a" pre="ONLY " suf=" SURVIVED" />}
             {t < 696.69 && <Chip t={t} t0={694.2} text="CAMARINA · 255 BC" color={C.rojo} x={960} y={150} centro size={60} />}
     </Escena>
@@ -185,9 +185,9 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
     {/* 718,63 · 249 BC — Publius Claudius Pulcher y los pollos sagrados */}
     <Escena t={t} t0={718.63} t1={732.33} entra="fundido" sale="fundido" fondo="none" quieta golpes={[718.7, 720.3, 723.9, 726.2, 727.5, 729.7, 731.0]}>
       <Galera x={960} y={1040} s={1.5} t={t} boga={0} vela={false} corvus={0} balanceo={0.3} marines={false} />
-      {t < 720.2 && <Grande t={t} t0={718.7} text="249 BC" x={960} y={300} size={150} color={C.crema} />}
-      {t >= 720.2 && <Persona x={1240} y={820} h={480} t={t} seed={164} ropa={PULCRO} expr={t < 723.9 ? "orgullo" : t < 727.4 ? "enojado" : "feliz"} habla={t > 729.6 && t < 732.3} bD={t > 727.4 && t < 728.4 ? 160 : 40} cD={t > 727.4 && t < 728.4 ? 10 : 30} flip />}
-      {t >= 720.2 && <Persona x={560} y={820} h={380} t={t} seed={165} ropa={CIVIL(3)} expr={t < 726 ? "triste" : "sorpresa"} bD={70} cD={60} />}
+      {t < 720.2 && <Grande t={t} t0={718.7} text="249 BC" x={960} y={250} size={150} color={C.crema} />}
+      {<Persona x={1240} y={820} h={480} t={t} seed={164} ropa={PULCRO} expr={t < 723.9 ? "orgullo" : t < 727.4 ? "enojado" : "feliz"} habla={t > 729.6 && t < 732.3} bD={t > 727.4 && t < 728.4 ? 160 : 40} cD={t > 727.4 && t < 728.4 ? 10 : 30} flip />}
+      <Persona x={560} y={820} h={380} t={t} seed={165} ropa={CIVIL(3)} expr={t < 726 ? "triste" : "sorpresa"} bD={70 + Math.sin(t * 3) * 10} cD={60} camina={t < 720.2 ? 1.2 : 0} />
       {/* jaula con los pollos sagrados y el plato de grano intacto */}
       {t >= 723.0 && (
         <svg style={{ position: "absolute", left: 640, top: 600, overflow: "visible" }} width={360} height={240}>
@@ -213,7 +213,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={732.33} t1={739.43} entra="fundido" sale="fundido" fondo="none" golpes={[732.4, 733.6, 735.4, 736.3, 737.6]}>
       {t < 735.31 && <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #6a2a1a, #2a1530 75%)" }} />}
       {t < 735.31 && <Flota t={t} t0={732.4} n={120} hunde={93} tA={[733.0, 735.0]} x={960} y={620} cols={15} s={1.25} />}
-      {t < 735.31 && <CuentaN t={t} t0={733.0} t1={735.0} de={0} a={90} x={960} y={190} size={120} color={C.crema} pre="+" suf=" SHIPS LOST" />}
+      {t < 735.31 && <CuentaN t={t} t0={733.0} t1={735.0} de={0} a={90} x={960} y={210} size={104} color={C.crema} pre="+" suf=" SHIPS LOST" />}
       {t < 735.31 && <Chip t={t} t0={732.4} text="BATTLE OF DREPANA: LOST" color={C.rojo} x={960} y={980} centro size={52} />}
       {t >= 735.31 && [[420, 760, 0.5, 0], [1000, 720, 0.6, 0.6], [1560, 780, 0.45, 1.2]].map(([x, y, s, d], i) => (
         <div key={i} style={{ position: "absolute", inset: 0, transform: `rotate(${interpolate(t, [736.5 + d, 739.2], [0, 40 - i * 15], cl)}deg)`, transformOrigin: `${x}px ${y + 40}px` }}>
@@ -227,9 +227,9 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 739,43 · "Polybius adds it all up. In that one war against Carthage, Rome lost around 700 warships, not all to the enemy, a huge number to the weather" */}
     <Escena t={t} t0={739.43} t1={752.81} entra="fundido" sale="fundido" fondo="#14122a" golpes={[739.5, 741.2, 743.2, 745.7, 747.2, 749.1]}>
-      {t < 749.13 && <Flota t={t} t0={741.2} n={700} hunde={t > 745.69 ? 700 : 0} tA={[745.8, 748.9]} x={960} y={560} cols={40} s={0.7} />}
+      {t < 749.13 && <Flota t={t} t0={739.5} n={700} hunde={t > 745.69 ? 700 : 0} tA={[745.8, 748.9]} x={960} y={600} cols={44} s={0.62} />}
       {t < 749.13 && <CuentaN t={t} t0={743.17} t1={745.6} de={0} a={700} x={960} y={160} size={130} color={C.crema} pre="~" suf=" WARSHIPS" />}
-      <Chip t={t} t0={739.5} t1={743.1} text="POLYBIUS ADDS IT UP" color={C.violeta} x={960} y={150} centro size={56} />
+      <Chip t={t} t0={739.5} t1={743.1} text="POLYBIUS ADDS IT UP" color={C.violeta} x={960} y={160} centro size={56} />
       <Chip t={t} t0={741.21} t1={743.1} text="ONE WAR · ROME vs CARTHAGE" color={C.rojo} x={960} y={930} centro size={50} />
       {t >= 745.69 && t < 749.13 && <Espadas x={560} y={930} s={0.55} />}
       {t >= 745.69 && t < 749.13 && <Chip t={t} t0={745.69} text="SOME: ENEMY" color={C.violeta} x={640} y={905} size={44} />}
@@ -264,6 +264,9 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
           <Galera x={960} y={660} s={0.6} t={t} boga={0} vela={false} corvus={0} balanceo={3} agua={null} marines={false} />
         </div>
       )}
+      {t >= 757.25 && [[420, 0], [700, 0.7], [1240, 0.3], [1520, 1.1]].map(([x, d], i) => (
+        <Persona key={i} x={x + Math.sin(t * 2 + i) * 20} y={1010 + Math.sin(t * 5 + i) * 12} h={300} t={t} seed={230 + i} ropa={i === 1 ? APION : CIVIL(i)} expr="miedo" bI={150 + Math.sin(t * 9 + i) * 25} bD={150 + Math.cos(t * 9 + i) * 25} cI={30} cD={30} aparece={757.6 + (d as number)} />
+      ))}
       {t >= 757.25 && <AbsoluteFill style={{ top: 760 }}><svg width={1920} height={320}><path d={`M 0 40 Q 240 ${10 + Math.sin(t * 3) * 20} 480 40 T 960 40 T 1440 40 T 1920 40 L 1920 320 L 0 320 Z`} fill="#1b1f4c" /></svg></AbsoluteFill>}
       {t >= 757.25 && <Chip t={t} t0={757.3} text="FAR FROM THE BEACH" color={C.oro} tinta={C.noche} x={960} y={140} centro size={52} />}
       <Sello t={t} t0={760.09} text="CONTRACT: OVER" x={960} y={420} size={110} />
@@ -279,13 +282,13 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 764,39 · "In the year 79, the admiral of the fleet at Misenum was a famous writer, Pliny the Elder." */}
     <Escena t={t} t0={764.39} t1={771.89} entra="fundido" sale="paneo" fondo="none" quieta golpes={[764.4, 765.9, 769.3]}>
-      {t < 765.87 && <Grande t={t} t0={764.45} text="AD 79" x={960} y={400} size={170} color={C.crema} />}
-      {t >= 765.87 && (
+      {t < 765.87 && <Grande t={t} t0={764.45} text="AD 79" x={960} y={300} size={170} color={C.crema} />}
+      {(
         <>
           <Galera x={420} y={840} s={0.45} t={t} boga={0} vela corvus={null} balanceo={0.4} />
           <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><rect x={640} y={880} width={640} height={200} fill="#b5a080" /><rect x={640} y={880} width={640} height={22} fill="#d8c8a8" />{Array.from({ length: 8 }, (_, i) => <line key={i} x1={640 + i * 80} y1={902} x2={640 + i * 80} y2={1080} stroke="#8a7a60" strokeWidth={4} />)}</svg>
           <Galera x={1560} y={860} s={0.42} t={t} boga={0} vela corvus={null} balanceo={0.4} flip />
-          <Persona x={960} y={890} h={500} t={t} seed={166} ropa={PLINIO} viejo expr={t < 769.2 ? "neutro" : "orgullo"} habla={t > 769.3} bD={110} cD={90} manoD={<g transform="translate(0 0)"><rect x={-30} y={-60} width={60} height={110} rx={10} fill="#f2ead8" stroke="#c9b8a0" strokeWidth={6} /></g>} />
+          <Persona x={interpolate(t, [764.4, 767.6], [700, 960], cl)} y={890} h={500} t={t} seed={166} ropa={PLINIO} viejo camina={t < 767.6 ? 1.3 : 0} expr={t < 769.2 ? "neutro" : "orgullo"} habla={t > 769.3} bD={110 + Math.sin(t * 2.5) * 12} cD={90} bI={t > 769.3 ? 120 + Math.sin(t * 4) * 20 : 15} cI={20} manoD={<g transform="translate(0 0)"><rect x={-30} y={-60} width={60} height={110} rx={10} fill="#f2ead8" stroke="#c9b8a0" strokeWidth={6} /></g>} />
         </>
       )}
       <Chip t={t} t0={765.87} text="ADMIRAL · FLEET OF MISENUM" color={C.violeta} x={960} y={140} centro size={52} />
@@ -350,10 +353,10 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 793,09 · "His nephew wrote it all down. We do not know how many of his rowers made it home." */}
     <Escena t={t} t0={793.09} t1={797.89} entra="fundido" sale="fundido" fondo="#2a1530" quieta golpes={[793.1, 795.0, 796.6]}>
-      {t < 794.99 && <Persona x={560} y={1000} h={500} t={t} seed={167} ropa={SOBRINO} expr="triste" bD={80} cD={100} />}
+      {t < 795.1 && <Persona x={560} y={1000} h={500} t={t} seed={167} ropa={SOBRINO} expr="triste" bD={80 + Math.sin(t * 14) * 6} cD={100} />}
       {t < 794.99 && <Pergamino x={1240} y={560} w={760} abre={prog(t, 793.2, 793.7)} lineas={8} titulo="PLINY THE YOUNGER" />}
       {t < 794.99 && <Chip t={t} t0={793.15} text="HIS NEPHEW WROTE IT DOWN" color={C.violeta} x={960} y={140} centro size={52} />}
-      {t >= 794.99 && <AbsoluteFill style={{ opacity: prog(t, 795.0, 795.4) }}><Corte t={t} boga={0} agua={0.06} heroeExpr="miedo" luz={0.25} oscuro={0.7} hortator={false} vacio /></AbsoluteFill>}
+      {t >= 794.99 && <AbsoluteFill style={{ opacity: prog(t, 794.9, 795.1) }}><Corte t={t} boga={0} agua={0.06} heroeExpr="miedo" luz={0.25} oscuro={0.7} hortator={false} vacio /></AbsoluteFill>}
       {t >= 794.99 && <Chip t={t} t0={795.0} text="HIS ROWERS?" color={C.rojo} x={960} y={160} centro size={70} />}
       {t >= 796.6 && <Grande t={t} t0={796.6} text="?" x={960} y={560} size={260} color={C.crema} />}
     </Escena>

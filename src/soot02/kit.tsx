@@ -32,14 +32,14 @@ export const Escena: React.FC<{ t: number; t0: number; t1: number; children: Rea
   if (t < t0 || t >= t1 + SOLAPE) return null;
   const r = rnd(seed ?? Math.round(t0 * 1000) + 3);
   const vel = 0.018 + r() * 0.02;
-  const amp = quieta ? 0 : zoom ?? Math.min(0.08, vel * (t1 - t0));
+  const amp = quieta ? 0 : Math.min(0.035, zoom ?? vel * (t1 - t0));
   const dentro = r() < 0.5;
   const ox = 35 + r() * 30, oy = 35 + r() * 30;
   const tipo = entra ?? ENTRADAS[Math.floor(r() * ENTRADAS.length)];
   const col = banda ?? [C.rojo, C.ambar, C.teal, C.violeta, C.rosa][Math.floor(r() * 5)];
   const u = interpolate(t, [t0, t1 + SOLAPE], [0, 1], { easing: Easing.inOut(Easing.sin) });
   const k = dentro ? u : 1 - u;
-  const golpe = golpes.reduce((a, g) => a + (t >= g ? 0.075 * Math.exp(-(t - g) * 7) : 0), 0);
+  const golpe = golpes.reduce((a, g) => a + (t >= g ? 0.035 * Math.exp(-(t - g) * 7) : 0), 0);
   const transp = fondo === "none";
   const salida: Salida = sale ?? (transp ? "fundido" : "nada");
   // entrada (0 → 1 en ~0,32 s)
@@ -70,7 +70,7 @@ export const Escena: React.FC<{ t: number; t0: number; t1: number; children: Rea
   return (
     <>
       <AbsoluteFill style={{ overflow: "hidden", backgroundColor: transp ? undefined : fondo, clipPath: clip, transform: tr, transformOrigin: salida === "atraviesa" && t >= t1 ? `${sx}px ${sy}px` : tipo === "atraviesa" ? `${ix}px ${iy}px` : undefined, opacity: tipo === "zoom" ? Math.min(1, e * 2.2) : zoomIn ? op : op }}>
-        <AbsoluteFill style={{ transformOrigin: `${ox}% ${oy}%`, transform: `scale(${1.04 + amp * k + golpe + corteGolpe})` }}>{children}</AbsoluteFill>
+        <AbsoluteFill style={{ transformOrigin: `${ox}% ${oy}%`, transform: `scale(${1 + amp * k + golpe + corteGolpe})` }}>{children}</AbsoluteFill>
       </AbsoluteFill>
       {extra && <AbsoluteFill style={{ pointerEvents: "none" }}>{extra}</AbsoluteFill>}
     </>
@@ -219,8 +219,14 @@ export const Colinas: React.FC<{ capas: string[]; base?: number; dx?: number; se
 );
 
 // ── chapita (CORNELL · 2015 de la ref)
-export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; color?: string; x: number; y: number; size?: number; centro?: boolean; tinta?: string }> = ({ t, t0, t1 = 1e9, text, color = C.violeta, x, y, size = 62, centro, tinta = "#fff" }) => {
+export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; color?: string; x: number; y: number; size?: number; centro?: boolean; tinta?: string }> = ({ t, t0, t1 = 1e9, text, color = C.violeta, x: x0, y: y0, size: size0 = 62, centro, tinta = "#fff" }) => {
   if (t < t0 || t > t1 + 0.3) return null;
+  // zona segura: nunca cortado contra los bordes (90 px arriba, 64 a los costados) ni ilegible (≥34 px)
+  const size = Math.max(34, size0);
+  const w = text.length * size * 0.64 + size * 0.84, h = size * 1.47;
+  const izq = Math.max(64, Math.min(1856 - w, centro ? x0 - w / 2 : x0));
+  const x = centro ? izq + w / 2 : izq;
+  const y = Math.max(90 + h / 2, Math.min(1016 - h / 2, y0));
   const s = ent(t, t0, 0, { damping: 11, stiffness: 180 });
   const out = interpolate(t, [t1, t1 + 0.3], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
@@ -231,9 +237,10 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
   );
 };
 // texto grande con contorno (títulos)
-export const Grande: React.FC<{ t: number; t0: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string }> = ({ t, t0, text, x = 960, y, size = 150, color = C.crema, borde = C.noche }) => {
+export const Grande: React.FC<{ t: number; t0: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string }> = ({ t, t0, text, x = 960, y: y0, size = 150, color = C.crema, borde = C.noche }) => {
   if (t < t0) return null;
   const s = ent(t, t0, 0, { damping: 9, stiffness: 190 });
+  const y = Math.max(80 + size * 0.6, Math.min(1000 - size * 0.6, y0));
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${s})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}` }}>
       {text}

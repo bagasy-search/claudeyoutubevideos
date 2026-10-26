@@ -108,6 +108,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={219.9} t1={225.4} text="≈ 40 METERS" color={C.oro} tinta={C.noche} x={960} y={790} centro size={64} />
       <Chip t={t} t0={222.2} t1={225.4} text="POLYBIUS" color="#1d6f8a" x={960} y={920} centro size={56} />
       {/* los 400: barco en sección y gente llenándolo */}
+      {t > 225.6 && <div style={{ position: "absolute", left: 300, top: 690, width: 1320, height: 360, borderRadius: 28, background: "linear-gradient(180deg, #3a2590, #241660)", border: "6px solid #7fd6ff", boxShadow: "0 12px 0 rgba(10,5,30,.4)", transform: `scale(${ent(t, 225.6)})` }} />}
       {t > 225.6 && <Gentio t={t} x={330} y={710} w={1260} cols={42} grupos={[{ n: 300, color: "#2fb5d8", t0: 225.9 }, { n: 120, color: C.rojo, t0: 227.0 }, { n: 24, color: C.oro, t0: 229.2 }]} />}
       <Chip t={t} t0={225.94} text="300 ROWERS" color="#1d6f8a" x={120} y={130} size={60} />
       <Chip t={t} t0={227.04} text="+120 MARINES" color={C.rojo} x={640} y={130} size={60} />
@@ -129,14 +130,14 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={240.5} t1={242.6} text="YOUR CAREER IS DECIDED HERE" color={C.rojo} x={960} y={960} centro size={56} />
       <Chip t={t} t0={244.0} t1={247} text="LUCKY: TOP ROW" color={C.lima} tinta={C.noche} x={960} y={160} centro size={66} />
       <Chip t={t} t0={245.2} t1={247} text="AIR + LIGHT" color={C.oro} tinta={C.noche} x={960} y={950} centro size={58} />
-      <Chip t={t} t0={247.2} text="UNLUCKY..." color={C.rojo} x={960} y={160} centro size={66} />
-      <Chip t={t} t0={248.7} text="THE BOTTOM" color={C.noche} x={960} y={950} centro size={70} />
+      <Chip t={t} t0={247.2} text="UNLUCKY..." color={C.rojo} x={960} y={840} centro size={66} />
+      <Chip t={t} t0={248.7} text="THE BOTTOM" color={C.noche} x={960} y={960} centro size={70} />
     </Escena>
 
     {/* 249,9 · "The bottom row sat almost at the waterline. Your oar went out through a hole... sealed with a leather sleeve. Most of the time it worked." */}
     <Escena t={t} t0={249.9} t1={259.0} entra="fundido" sale="fundido" fondo="#5a3018" golpes={[250.9, 254.9, 257.3]}>
       <Tronera t={t} fuga={prog(t, 257.4, 258.0)} />
-      <Chip t={t} t0={249.9} text="AT THE WATERLINE" color="#1d6f8a" x={1550} y={400} centro size={50} />
+      <Chip t={t} t0={250.4} text="AT THE WATERLINE" color="#1d6f8a" x={1550} y={400} centro size={50} />
       <Chip t={t} t0={252.6} text="A HOLE IN THE HULL" color={C.rojo} x={120} y={140} size={60} />
       <Chip t={t} t0={254.9} text="LEATHER SLEEVE" color="#8a4a22" x={120} y={250} size={60} />
       <Flecha t={t} t0={255.1} x1={700} y1={330} x2={1040} y2={500} color={C.ambar} />
@@ -240,6 +241,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={304.74} text={t < 310.6 ? "OAR" : "A STICK"} color={C.oro} tinta={C.noche} x={960} y={300} centro size={62} />
       <Chip t={t} t0={305.54} text={t < 311.8 ? "CUSHION" : "A PILLOW"} color="#8a4a22" x={560} y={860} centro size={58} />
       <Chip t={t} t0={306.34} text={t < 312.5 ? "OAR STRAP" : "A STRAP"} color="#1d6f8a" x={1360} y={860} centro size={58} />
+      <Persona x={1700} y={1010} h={420} t={t} seed={2} ropa={APION} expr={t < 309.2 ? "orgullo" : "triste"} bI={t > 304.7 ? 100 + Math.sin(t * 4) * 12 : 10} cI={20} mira={-0.8} habla={t > 309.2 && t < 311} />
       <Chip t={t} t0={309.2} text="ALL YOU OWNED ON BOARD" color={C.rojo} x={960} y={160} centro size={58} />
     </Escena>
 
@@ -250,6 +252,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       {t > 316.0 && t < 316.7 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><line x1={880} y1={300} x2={1100} y2={480} stroke={C.rojo} strokeWidth={22} strokeLinecap="round" /><line x1={1100} y1={300} x2={880} y2={480} stroke={C.rojo} strokeWidth={22} strokeLinecap="round" /></svg>}
       <Chip t={t} t0={313.6} t1={316.6} text="AT NIGHT..." color={C.violeta} x={960} y={140} centro size={62} />
       <Chip t={t} t0={314.6} t1={316.6} text="NO ROOM TO SLEEP" color={C.rojo} x={960} y={250} centro size={56} />
+      <Persona x={1640} y={1010} h={440} t={t} seed={2} ropa={APION} expr={t < 316.7 ? "dormido" : t < 320.2 ? "triste" : "enojado"} bD={t > 316.8 ? 130 + Math.sin(t * 5) * 10 : 10} cD={70} manoD={t > 316.8 ? <circle r={22} fill="#d9a85a" stroke="#8a5a2a" strokeWidth={4} /> : undefined} inclina={t < 316.7 ? 10 : 0} />
       {t > 316.7 && <Galleta x={360} y={330} s={0.8 * ent(t, 316.8)} />}
       {t > 317.6 && <Anfora x={620} y={330} s={0.6 * ent(t, 317.7)} />}
       <Chip t={t} t0={316.8} text="ALMOST NO FOOD" color={C.ambar} tinta={C.noche} x={1400} y={170} centro size={56} />

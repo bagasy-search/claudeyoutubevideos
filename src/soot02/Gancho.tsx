@@ -82,6 +82,9 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
         <Chip t={t} t0={9.6} text="SHIP GOES THIS WAY →" color={C.teal} tinta={C.noche} x={1830} y={150} size={58} />
         <Remo x={interpolate(t, [10.3, 12.3], [1500, 900], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={560} s={1.6} t={t} t0={10.3} rot={-8} />
         <Chip t={t} t0={10.6} text="GIANT PIECE OF WOOD" color={C.ambar} tinta={C.noche} x={960} y={880} centro size={74} />
+        <Flecha t={t} t0={9.7} x1={1250} y1={260} x2={1700} y2={260} color={C.teal} grosor={16} />
+        <CuentaN t={t} t0={11.0} t1={11.9} a={170} x={1560} y={420} size={130} color={C.crema} />
+        <Chip t={t} t0={11.3} text="OARS PER SIDE" color={C.rojo} x={1560} y={530} centro size={44} />
       </Escena>
 
       {/* 12,22 · "In the year 255 before Christ" — el mundo se vuelve tormenta: relámpago y la fecha */}
@@ -112,6 +115,8 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
         <CuentaN t={t} t0={18.4} t1={20.0} a={284} x={960} y={190} size={230} color={C.rojo} />
         <Chip t={t} t0={19.64} text="ROMAN WARSHIPS" color={C.violeta} x={960} y={330} centro size={56} />
         <Relampago t={t} ts={[20.1]} x={300} />
+        <Persona x={1640} y={pp(520, 600)} h={520} t={t} seed={2} ropa={APION} expr={t < 19.6 ? "neutro" : "miedo"} bD={t < 19.6 ? 20 : 150 + Math.sin(t * 10) * 12} cD={t < 19.6 ? 20 : 150} mira={-0.6} />
+        <Emote t={t} t0={19.7} tipo="sudor" {...L(1640, pp(520, 600), 520)} />
       </Escena>
 
       {/* 21,14 · "By some estimates, close to 100,000 men drowned" — la cámara baja al fondo con ellos */}
@@ -188,11 +193,11 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
         </AbsoluteFill>
         {t < 37.4 && <Espolon x={interpolate(t, [37.0, 37.3], [2300, 1830], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={662} s={0.25} />}
         <Salpica t={t} t0={37.28} x={1840} y={650} />
-        <Chip t={t} t0={35.6} text="ROME BUILDS" color={C.violeta} x={120} y={150} size={56} />
-        <Chip t={t} t0={36.62} text="WOOD" color="#a8622c" x={420} y={300} centro size={76} />
-        <Chip t={t} t0={37.26} text="BRONZE" color="#d9962e" tinta={C.noche} x={1700} y={480} centro size={76} />
-        <CuentaN t={t} t0={38.08} t1={38.6} a={300} x={960} y={250} size={210} color={C.crema} />
-        <Chip t={t} t0={38.6} text="TIRED MEN" color={C.rojo} x={960} y={400} centro size={64} />
+        <Chip t={t} t0={35.6} t1={39.4} text="ROME BUILDS" color={C.violeta} x={120} y={150} size={56} />
+        <Chip t={t} t0={36.62} t1={39.4} text="WOOD" color="#a8622c" x={420} y={300} centro size={76} />
+        <Chip t={t} t0={37.26} t1={39.4} text="BRONZE" color="#d9962e" tinta={C.noche} x={1700} y={480} centro size={76} />
+        {t < 39.6 && <CuentaN t={t} t0={38.08} t1={38.6} a={300} x={960} y={250} size={210} color={C.crema} />}
+        <Chip t={t} t0={38.6} t1={39.4} text="TIRED MEN" color={C.rojo} x={960} y={400} centro size={64} />
       </Escena>
 
       {/* 39,76 · "the most dangerous thing on a Roman warship was not the enemy" — llega el enemigo... y se tacha. Al fondo, una nube. */}
@@ -212,7 +217,7 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
       {/* 45,08 · "There are seven traps waiting for you on board. Let's find you a bench." — el tablero del viaje: 7 paradas a lo largo del barco */}
       <Escena t={t} t0={45.08} t1={49.24} entra="fundido" sale="atraviesa" sx={960} sy={640} fondo="none" golpes={[45.34]}>
         <Cam t={t} k={[[45.08, 960, 560, 1.0], [47.6, 960, 560, 1.0], [49.3, 760, 640, 2.4]]}>
-          <Galera x={960} y={560} s={1.0} t={t} boga={0.5} vela marines={false} />
+          <Galera x={960} y={560} s={1.0} t={t} boga={0.5} vela marines={false} balanceo={2.2} ola={0.8} />
           <svg style={{ position: "absolute", inset: 0, overflow: "visible" }} width={1920} height={1080}>
             <path d={`M ${260} 760 C 600 ${700} 1300 ${820} 1700 740`} stroke="#fff" strokeWidth={8} strokeDasharray="4 20" strokeLinecap="round" fill="none" pathLength={1} style={{ strokeDasharray: `${prog(t, 45.3, 46.6)} 1` }} />
             {Array.from({ length: 7 }, (_, i) => {

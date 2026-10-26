@@ -80,8 +80,8 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
       {t < 807.49 && <CuentaN t={t} t0={805.8} t1={807.3} de={0} a={26} x={960} y={420} size={220} color={C.crema} suf=" YEARS" />}
       {t < 807.49 && <Particulas t={t} tipo="destellos" n={30} seed={4} />}
       {t >= 807.49 && <Suelo y={900} />}
-      {t >= 807.49 && <Persona x={760} y={940} h={520} t={t} seed={7} ropa={APION} viejo expr={t < 809 ? "neutro" : "triste"} inclina={t > 809.13 ? 14 : 0} bD={t > 810.7 ? 70 : 10} cD={t > 810.7 ? 100 : 10} />}
-      {t >= 809.13 && <Emote t={t} t0={809.2} tipo="sudor" {...L(760, 940, 520)} s={1} />}
+      {t >= 807.49 && <Persona x={interpolate(t, [807.5, 810.6], [420, 760], cl)} y={940 + (t < 810.6 ? Math.abs(Math.sin(t * 3.2)) * -6 : 0)} h={520} t={t} seed={7} ropa={APION} viejo camina={t < 810.6 ? 0.8 : 0} expr={t < 809 ? "neutro" : "triste"} inclina={t > 809.13 ? 14 + Math.sin(t * 3.2) * 2 : 4} bI={t > 809.13 ? 200 : 10} cI={t > 809.13 ? 80 : 10} bD={t > 810.7 ? 70 : 10} cD={t > 810.7 ? 100 + Math.sin(t * 2) * 10 : 10} mira={t > 810.7 ? 0.6 : 0} miraY={t > 810.7 ? 0.8 : 0} />}
+      {t >= 809.13 && <Emote t={t} t0={809.2} tipo="sudor" {...L(interpolate(t, [807.5, 810.6], [420, 760], cl), 940, 520)} s={1} />}
       {t >= 811.99 && <Emote t={t} t0={812.0} tipo="preg" x={640} y={400} s={0.9} />}
       {t >= 807.49 && <Grande t={t} t0={807.49} text="AGE 46" x={1380} y={260} size={150} color={C.crema} />}
       <Chip t={t} t0={809.13} text="BACK: RUINED" color={C.rojo} x={1380} y={420} centro size={52} />
@@ -100,11 +100,14 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
       {t >= 819.15 && (
         <>
           <Suelo y={890} c={["#7aae5a", "#5c8f3e"]} />
-          <Persona x={640} y={920} h={500} t={t} seed={7} ropa={APION} viejo expr="orgullo" bD={60} cD={40} />
-          <Persona x={900} y={920} h={460} t={t} seed={171} ropa={ESPOSA} expr="feliz" aparece={819.2} />
+          <Persona x={640} y={920} h={500} t={t} seed={7} ropa={APION} viejo expr="orgullo" bD={60 + Math.sin(t * 2) * 4} cD={40} habla={t > 822.8} />
+          <Persona x={interpolate(t, [819.15, 819.9], [1000, 900], cl)} y={920} h={460} t={t} seed={171} ropa={ESPOSA} expr="feliz" camina={t < 819.9 ? 1.5 : 0} bI={60 + Math.sin(t * 2) * 4} cI={40} />
           {t >= 820.99 && <Persona x={1140} y={920} h={300} t={t} seed={172} ropa={HIJO} expr="feliz" aparece={821.0} salta={Math.abs(Math.sin(t * 5)) * 14} />}
           {t >= 820.99 && <Persona x={1300} y={920} h={270} t={t} seed={173} ropa={HIJA} expr="feliz" aparece={821.2} />}
           <Emote t={t} t0={819.3} tipo="brillos" {...L(900, 920, 460)} s={0.8} />
+          {t < 822.77 && <svg style={{ position: "absolute", left: 770 - 110, top: 330, overflow: "visible" }} width={220} height={140}>
+            <g transform={`translate(${110 - 40 * (1 - prog(t, 819.3, 819.9))} 70) scale(${ent(t, 819.25)})`}><circle cx={-26} r={42} fill="none" stroke="#ffd27a" strokeWidth={14} /><circle cx={26} r={42} fill="none" stroke="#e9a92a" strokeWidth={14} /><circle cx={-26} cy={-44} r={10} fill="#bfe8ff" /></g>
+          </svg>}
         </>
       )}
       <Chip t={t} t0={819.15} t1={822.7} text="LEGAL WIFE ✓" color="#3fbf5a" x={1500} y={160} centro size={50} />
@@ -131,6 +134,17 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
           </React.Fragment>
         );
       })}
+      {(() => {
+        const x = interpolate(t, [831.3, 834.0, 835.2, 837.4], [-120, 230, 230, 1520], cl);
+        const agacha = t > 834.0 && t < 835.2;
+        return (
+          <>
+            <Persona x={x} y={1000} h={420} t={t} seed={7} ropa={APION} viejo camina={agacha ? 0 : 1.1} expr="triste" inclina={agacha ? 12 : 4} bD={agacha ? 70 : 20} cD={30} manoD={t < 834.6 ? <g><circle r={14} fill="#ff6a8a" /><circle cx={12} cy={-8} r={12} fill="#ffd27a" /><line x1={0} y1={10} x2={0} y2={60} stroke="#3f8f3e" strokeWidth={6} /></g> : undefined} />
+            <Persona x={x - 150} y={1000} h={280} t={t} seed={172} ropa={HIJO} camina={agacha ? 0 : 1.4} expr="triste" bD={40} cD={20} />
+          </>
+        );
+      })()}
+      {t > 834.6 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><g transform={`translate(330 ${880}) scale(${ent(t, 834.6)})`}><circle r={16} fill="#ff6a8a" /><circle cx={18} cy={-6} r={14} fill="#ffd27a" /><circle cx={-16} cy={-4} r={13} fill="#c98bff" /><path d="M -10 10 L 0 40 M 10 10 L 4 40" stroke="#3f8f3e" strokeWidth={5} /></g></svg>}
       <Chip t={t} t0={831.19} t1={838.4} text="THEIR TOMBSTONES SURVIVE" color={C.violeta} x={960} y={130} centro size={56} />
       <Chip t={t} t0={833.41} t1={838.4} text="THE SHIP = THE FAMILY CREST" color={C.rojo} x={960} y={230} centro size={50} />
     </Escena>
@@ -165,6 +179,8 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={854.43} t1={859.01} entra="fundido" sale="fundido" fondo="#2e2a5c" golpes={[854.55, 857.75]}>
       <Grande t={t} t0={854.55} text="A DEATH TRAP?" y={430} size={170} color={C.crema} />
       <Trampas t={t} t0={855.2} n={7} y={600} />
+      <Particulas t={t} tipo="polvo" n={40} seed={21} />
+      <Persona x={1700} y={1010} h={360} t={t} seed={7} ropa={APION} viejo expr={t < 857.7 ? "triste" : "sorpresa"} bI={60 + Math.sin(t * 3) * 20} bD={60 - Math.sin(t * 3) * 20} cI={90} cD={90} salta={857.8} mira={-0.8} />
       <Chip t={t} t0={857.75} text="HERE IS THE TWIST" color={C.rojo} x={960} y={800} centro size={66} />
     </Escena>
 
@@ -188,7 +204,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
       {t >= 862.59 && (
         <>
           <Egipto t={t} />
-          <Persona x={620} y={960} h={380} t={t} seed={7} ropa={APION} expr={t < 866 ? "neutro" : t < 868.7 ? "sorpresa" : "feliz"} mira={1} miraY={-1} />
+          <Persona x={interpolate(t, [862.6, 866.0, 868.6], [420, 620, 900], cl)} y={interpolate(t, [868.7, 872.6], [960, 640], cl)} h={380} t={t} seed={7} ropa={APION} camina={t < 868.6 ? 1.4 : 0} expr={t < 866 ? "neutro" : t < 868.7 ? "sorpresa" : "feliz"} mira={1} miraY={t > 866 ? -1 : 0} bI={t > 868.7 ? 150 + Math.sin(t * 6) * 20 : 10} bD={t > 868.7 ? 150 - Math.sin(t * 6) * 20 : 10} />
           {t >= 866.15 && <Escalera t={t} t0={866.2} x={960} y0={960} y1={200} />}
           {t >= 868.71 && <Laurel x={960} y={170} s={1.5 * ent(t, 868.8)} />}
         </>
@@ -225,7 +241,8 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={885.37} t1={889.2} text="THE SEA: ON THE BACKS OF ROWERS" color={C.rojo} x={960} y={140} centro size={52} />
       {t >= 889.29 && (
         <>
-          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><path d="M 0 900 Q 960 860 1920 900 L 1920 1080 L 0 1080 Z" fill="#e8c07a" /></svg>
+          <AbsoluteFill style={{ background: "linear-gradient(180deg, #ffb86b, #ffd9a0 60%)", opacity: prog(t, 889.29, 889.6) }} />
+          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><path d="M 0 900 Q 960 860 1920 900 L 1920 1080 L 0 1080 Z" fill="#e8c07a" /><rect x={440} y={880} width={260} height={30} rx={8} fill="#6b3a1f" /></svg>
           <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1920} height={1080}><g transform="translate(560 900) scale(1.4)"><Remero fase={t * 0.5 * Math.PI * 2} ropa="#2fb5d8" piel="#c98b62" pelo="#d8d0c4" expr="cansado" seed={7} t={t} /></g></svg>
           <Flecha t={t} t0={889.6} x1={760} y1={420} x2={360} y2={420} color={C.rojo} grosor={18} />
           {t >= 891.9 && [0, 1].map((i) => <Persona key={i} x={1300 + i * 200} y={940} h={300 - i * 30} t={t} seed={172 + i} ropa={i ? HIJA : HIJO} expr="feliz" aparece={891.95 + i * 0.2} flip mira={1} />)}
