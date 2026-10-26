@@ -16,8 +16,8 @@ export const K0: Key[] = [
   [2.4, 1660, 1390, -2.7, 0.9],
   [3.85, 1640, 1390, -3.1, 0.6],
   [5.55, 1950, 840, -0.4, 1.7],
-  [8.85, 1820, 1410, -2.55, 0.6, "seco"],
-  [10.0, 1870, 1385, -2.8, 0.45, "seco"],
+  [8.85, 1820, 1410, -2.3, 0.6, "seco"],
+  [10.0, 1870, 1395, -2.4, 0.45, "seco"],
   [11.3, 1900, 1350, -1.45, 0.8],
   [14.0, 1800, 1390, -2.3, 0.9],
   [16.8, 650, 1360, -2.25, 0.7, "seco"],
@@ -206,7 +206,7 @@ export const O0: React.FC<{ t: number }> = ({ t }) => {
   return (
     <>
       {hondo > 0 && <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 55% 55%, rgba(10,30,80,0) 35%, rgba(4,10,40,1) 95%)", opacity: hondo }} />}
-      <Txt t={t} t0={0.45} t1={5.2} text="AGE: 12" x={330} y={170} size={96} fondo={C.rojo} rot={-4} />
+      <Txt t={t} t0={0.45} t1={5.2} text="AGE: 12" x={1050} y={150} size={96} fondo={C.rojo} rot={-4} />
       <S t={0.45} p="pop" g={-6} />
       <Txt t={t} t0={5.34} t1={6.9} text="CONGRATULATIONS!" y={200} size={130} color={C.oro} />
       <Txt t={t} t0={6.2} t1={8.7} text="CABIN BOY" y={170} size={140} />
@@ -221,11 +221,12 @@ export const O0: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={36.3} t1={39.0} text="WHOSE?" y={540} size={260} color={C.rojo} />
       <Txt t={t} t0={39.4} t1={41.3} text="TODAY, YOU SAIL." y={170} size={120} />
       <S t={41.3} p="zoom" g={-8} />
-      <Mapa t={t} t0={41.9} t1={50.4} titulo="ONE VOYAGE · 1716"
-        cam={[[41.9, -55, 26, 1.9], [45.3, -42, 22, 2.15], [49.3, -38, 18, 2.3]]}
+      <Mapa t={t} t0={41.55} t1={50.4} titulo="ONE VOYAGE · 1716"
+        cam={[[41.55, -55, 26, 1.9], [45.3, -42, 22, 2.15], [49.3, -38, 18, 2.3]]}
         ruta={[{ lugares: ["jamaica", "isla", "antigua", "p4", "p5", "africa", "capecoast"], t0: 45.4, t1: 49.0 }]}
         pins={[["jamaica", 45.6], ["isla", 46.1], ["antigua", 46.6], ["p4", 47.1], ["p5", 47.6], ["africa", 48.1], ["capecoast", 48.6]].map(([l, t0], i) => ({ lugar: l as string, t0: t0 as number, n: i + 1, icono: "calavera" as const }))} />
-      <S t={41.9} p="unroll" g={-4} />
+      <S t={41.55} p="unroll" g={-4} />
+      {en(t, 42.4, 50.3) && <Persona x={230} y={1050} h={380} t={t} seed={7} ropa={GRUMETE} expr={t > 45.6 ? "miedo" : "neutro"} bD={en(t, 45.4, 49) ? 150 : 20} cD={40} aparece={42.4} />}
       {[45.6, 46.1, 46.6, 47.1, 47.6, 48.1, 48.6].map((x, i) => <S key={i} t={x} p="stamp" g={-10} pitch={1 + i * 0.05} />)}
       <S t={45.4} p="write" g={-10} d={3.6} />
       <Txt t={t} t0={49.34} t1={50.4} text="7 TRAPS" y={985} size={160} color={C.rojo} />
