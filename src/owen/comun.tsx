@@ -1,7 +1,10 @@
 // Piezas que reusan todos los videos de Owen: etiqueta en coordenadas de mundo, HUD fijo, notas musicales, espejo.
 import React from "react";
 import { AbsoluteFill, useVideoConfig } from "remotion";
-import { Clave, enPantalla, useF } from "../anikit/camara";
+import { Clave, enPantalla, setAcerque, useF } from "../anikit/camara";
+
+// Owen: la vara del director pide personajes grandes; los planos abiertos se cierran un 25 % (los primeros planos casi igual)
+setAcerque(0.25);
 import { Contador, EtiquetaFlotante, MarcaCorto, RelojDia, TextoMano, F_HUD } from "../anikit/pantalla";
 import { VERDE } from "./elenco";
 

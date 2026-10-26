@@ -19,11 +19,11 @@ const Profe: React.FC<{ f: number }> = ({ f }) => {
   const poses = Array.from({ length: 90 }).map((_, i) => ({ f: i * per, v: POSES_PROFE[(i * 3) % POSES_PROFE.length] }));
   const caras = Array.from({ length: 90 }).map((_, i) => ({ f: i * per + 6, v: CARAS_PROFE[i % CARAS_PROFE.length] in EXPRESIONES ? CARAS_PROFE[i % CARAS_PROFE.length] : "neutral" }));
   // camina de un lado al otro de su rincón cada ~4 s (pasos reales), se para a explicar
-  const ruta = Array.from({ length: 24 }).flatMap((_, i) => { const x = i % 2 ? 1560 : 1770; return [{ f: i * 120 + 40, x: i % 2 ? 1770 : 1560, y: 1040 }, { f: i * 120 + 100, x, y: 1040 }]; });
+  const ruta = Array.from({ length: 24 }).flatMap((_, i) => { const x = i % 2 ? 1740 : 1830; return [{ f: i * 120 + 40, x: i % 2 ? 1830 : 1740, y: 1040 }, { f: i * 120 + 100, x, y: 1040 }]; });
   const dir = Array.from({ length: 24 }).map((_, i) => ({ f: i * 120 + 40, v: (i % 2 ? -1 : 1) as 1 | -1 }));
   return (
     <g>
-      <Actor look={OWEN} escala={1.35} seed={9} ruta={[{ f: 0, x: 1770, y: 1040 }, ...ruta]} dir={[{ f: 0, v: -1 }, ...dir]}
+      <Actor look={OWEN} escala={1.45} seed={9} ruta={[{ f: 0, x: 1830, y: 1040 }, ...ruta]} dir={[{ f: 0, v: -1 }, ...dir]}
         poses={poses} caras={caras} habla={Array.from({ length: 60 }).map((_, i) => [i * 45 + 4, i * 45 + 34] as [number, number])} miradas={[{ f: 0, v: { x: -0.7, y: -0.3 } }, { f: 150, v: { x: 0.4, y: 0.2 } }, { f: 200, v: { x: -0.7, y: -0.3 } }, { f: 400, v: { x: 0.3, y: 0 } }, { f: 440, v: { x: -0.7, y: -0.3 } }]} />
     </g>
   );

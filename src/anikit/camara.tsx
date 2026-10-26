@@ -9,7 +9,11 @@ import { AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoCon
 // mira(X, Y, zoom): clave de cámara que CENTRA el punto (X, Y) del mundo (el Plano trabaja con el desvío)
 // mira: clave que deja el punto del mundo (X,Y) en el CENTRO del cuadro con ese zoom (la capa escala desde el centro
 // y después se traslada, por eso el desplazamiento va multiplicado por el zoom)
-export const mira = (f: number, X: number, Y: number, zoom: number, extra: Partial<Clave> = {}): Clave => ({ f, x: (X - 960) * zoom, y: (Y - 540) * zoom, zoom, ...extra });
+// acerque global opcional (lo prende un canal con setAcerque): los planos abiertos se cierran más, los primeros planos casi no cambian
+let ACERQUE = 0;
+export const setAcerque = (a: number) => { ACERQUE = a; };
+const acerca = (z: number) => z * (1 + ACERQUE * Math.min(1, Math.max(0, (2.2 - z) / 1.2)));
+export const mira = (f: number, X: number, Y: number, zoom0: number, extra: Partial<Clave> = {}): Clave => { const zoom = acerca(zoom0); return { f, x: (X - 960) * zoom, y: (Y - 540) * zoom, zoom, ...extra }; };
 
 export type Pose = { x: number; y: number; zoom: number; rot?: number; foco?: number };
 // curva: en vez de resorte, tramo con easing y zoom LOGARÍTMICO (empujes enormes que aceleran o frenan parejo)

@@ -50,17 +50,17 @@ export const Combustible: React.FC<{ dHigado?: number; dMusculo?: number; dCereb
         return <circle key={i} cx={x} cy={y} r={11} fill={AMBAR} opacity={Math.sin(t * Math.PI) * 0.9} />;
       })}
       {barra(720, 400, 500, "MUSCLES", dMusculo, AMBAR)}
-      <g transform="translate(1380,560)" opacity={0.25 + 0.75 * ease(f, dCerebro - 6, dCerebro + 4)}>
+      <g transform="translate(1240,520)" opacity={0.25 + 0.75 * ease(f, dCerebro - 6, dCerebro + 4)}>
         <g transform={`scale(${1 + (f > dCerebro ? Math.max(0, Math.sin((f - dCerebro) / 5)) * 0.04 : 0)})`}><Cerebro r={190} /></g>
         {f > dCerebro && Array.from({ length: 6 }).map((_, i) => { const a = i * 1.05 + f / 20; return <path key={i} d={`M${Math.cos(a) * 210},${Math.sin(a) * 150} l${Math.cos(a) * 40},${Math.sin(a) * 30}`} stroke={AZUL} strokeWidth={8} strokeLinecap="round" opacity={(f + i * 5) % 20 < 10 ? 1 : 0.2} />; })}
         <circle cx={-330} cy={330} r={70} fill="none" stroke={GRIS} strokeWidth={22} />
         <circle cx={-330} cy={330} r={70} fill="none" stroke={AZUL} strokeWidth={22} strokeDasharray={`${440 * 0.02 * uc} 440`} transform="rotate(-90 -330 330)" />
         <T x={-330} y={345} s={40} c={AZUL}>2%</T>
         <T x={-330} y={450} s={28}>OF BODY WEIGHT</T>
-        <circle cx={330} cy={330} r={70} fill="none" stroke={GRIS} strokeWidth={22} />
-        <circle cx={330} cy={330} r={70} fill="none" stroke={ROJO} strokeWidth={22} strokeDasharray={`${440 * 0.2 * uc} 440`} transform="rotate(-90 330 330)" />
-        <T x={330} y={345} s={40} c={ROJO}>20%</T>
-        <T x={330} y={450} s={28}>OF ALL ENERGY</T>
+        <circle cx={250} cy={330} r={70} fill="none" stroke={GRIS} strokeWidth={22} />
+        <circle cx={250} cy={330} r={70} fill="none" stroke={ROJO} strokeWidth={22} strokeDasharray={`${440 * 0.2 * uc} 440`} transform="rotate(-90 250 330)" />
+        <T x={250} y={345} s={40} c={ROJO}>20%</T>
+        <T x={250} y={450} s={28}>OF ALL ENERGY</T>
       </g>
     </Pizarra>
   );
@@ -262,22 +262,22 @@ export const SiestaNasa: React.FC<{ dAlerta?: number }> = ({ dAlerta = 120 }) =>
     return (
       <g opacity={ease(f, d - 5, d + 5)}>
         <T x={300} y={y + 20} s={50} a="start" w={700}>{et}</T>
-        <rect x={760} y={y - 40} width={900 * (v / 60) * u} height={80} rx={14} fill={VERDE} />
-        <T x={780 + 900 * (v / 60) * u} y={y + 22} s={64} a="start" c={VERDE}>+{Math.round(v * u)}%</T>
+        <rect x={760} y={y - 40} width={700 * (v / 60) * u} height={80} rx={14} fill={VERDE} />
+        <T x={780 + 700 * (v / 60) * u} y={y + 22} s={64} a="start" c={VERDE}>+{Math.round(v * u)}%</T>
       </g>
     );
   };
   return (
     <Pizarra titulo="NASA · A 26-MINUTE NAP" fuente="Rosekind et al., NASA Ames, 1994 · long-haul pilots">
-      <g transform="translate(420,300)">
+      <g transform="translate(820,430) scale(1.5)">
         <rect x={-180} y={-10} width={360} height={30} rx={12} fill="#3a4a72" />
         <g transform="rotate(-90 0 -20)"><Actor look={OWEN} escala={0.7} seed={13} vivo={0} ruta={[{ f: 0, x: 0, y: -20 }]} caras={[{ f: 0, v: "zombi" }]} ajuste={(q, ff) => ({ ...q, tronco: q.tronco + Math.sin(ff / 18) * 3 })} /></g>
-        {[0, 1, 2].map((i) => { const t = ((f + i * 20) % 60) / 60; return <text key={i} x={140 + t * 80} y={-120 - t * 120} fontFamily={F_HUD} fontWeight={800} fontSize={44 + i * 14} fill={AMBAR} opacity={Math.sin(t * Math.PI)}>Z</text>; })}
-        <T x={-260} y={-60} s={60} c={VERDE} w={800}>{Math.min(26, Math.floor(f / 8))}′</T>
+        {[0, 1, 2].map((i) => { const t = ((f + i * 20) % 60) / 60; return <text key={i} x={140 + t * 80} y={-100 - t * 70} fontFamily={F_HUD} fontWeight={800} fontSize={44 + i * 14} fill={AMBAR} opacity={Math.sin(t * Math.PI)}>Z</text>; })}
+        <T x={-330} y={10} s={60} c={VERDE} w={800}>{Math.min(26, Math.floor(f / 8))}′</T>
       </g>
-      {bar(560, 34, "PERFORMANCE", 30)}
-      {bar(760, 54, "ALERTNESS", dAlerta)}
-      <text x={960} y={920} fontFamily={F_MANO} fontWeight={700} fontSize={64} fill={AMBAR} textAnchor="middle" opacity={ease(f, dAlerta + 50, dAlerta + 60)}>short, not deep</text>
+      {bar(640, 34, "PERFORMANCE", 30)}
+      {bar(800, 54, "ALERTNESS", dAlerta)}
+      <text x={960} y={960} fontFamily={F_MANO} fontWeight={700} fontSize={64} fill={AMBAR} textAnchor="middle" opacity={ease(f, dAlerta + 50, dAlerta + 60)}>short, not deep</text>
     </Pizarra>
   );
 };
