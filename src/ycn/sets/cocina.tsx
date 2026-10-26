@@ -74,8 +74,8 @@ export const CocinaYcn: React.FC<SetProps & { luz?: "prendida" | "noche"; puerta
               <rect x={x} y={P - 580} width={w + 340 * ab * 0.25} height={580} rx={6} fill={oscuro ? "#5a6468" : "#d6dde0"} stroke="#8a959a" strokeWidth={6} />
               {ab < 0.5 && <>
                 {/* manija grande + bisagras */}
-                <rect x={x + w - 60} y={P - 340} width={36} height={130} rx={10} fill="#5a6468" />
-                <rect x={x + w - 82} y={P - 300} width={70} height={26} rx={6} fill="#3a4448" />
+                <rect x={x + w - 60} y={P - 340} width={36} height={130} rx={10} fill="#8d989c" stroke="#c9d3d6" strokeWidth={4} />
+                <rect x={x + w - 82} y={P - 300} width={70} height={26} rx={6} fill="#b9c3c6" stroke="#e8eef0" strokeWidth={3} />
                 {[P - 520, P - 120].map((y) => <rect key={y} x={x - 4} y={y} width={20} height={60} rx={4} fill="#8a959a" />)}
                 {/* escarcha en el borde */}
                 {Array.from({ length: 22 }).map((_, i) => <circle key={i} cx={x + random(`fr${i}`) * w} cy={P - 580 + (i % 2 ? 6 : 574)} r={6 + random(`fs${i}`) * 10} fill="#f4fbff" opacity={0.6} />)}
