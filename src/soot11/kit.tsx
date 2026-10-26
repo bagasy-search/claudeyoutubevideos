@@ -197,6 +197,23 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
   const x = segX(x0, anchoTxt(text, size) + size * 0.84, !!centro), y = segY(y0, size * 1.5);
   const s = ent(t, t0, 0, { damping: 11, stiffness: 180 });
   const out = interpolate(t, [t1 - 0.12, t1 + 0.02], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  if (centro) {
+    // estilo del molde: palabras con contorno que entran de a una + subrayado del color (no una píldora tipo subtítulo)
+    const sz = size * 1.12, borde = "#1b1230";
+    const relleno = tinta === "#fff" ? "#fff6e0" : color;
+    const pal = text.split(" ");
+    const xs = segX(x0, anchoTxt(text, sz), true), ys = segY(y0 + 10, sz * 1.4);
+    const sub = interpolate(t, [t0 + 0.1, t0 + 0.45], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+    return (
+      <div style={{ position: "absolute", left: xs, top: ys, transform: `translate(-50%, -50%) scale(${out})`, fontFamily, fontWeight: 700, fontSize: sz, whiteSpace: "nowrap", lineHeight: 1.1, letterSpacing: 1 }}>
+        {pal.map((w, i) => {
+          const si = ent(t, t0 + i * 0.07, 0, { damping: 10, stiffness: 210 });
+          return <span key={i} style={{ display: "inline-block", marginRight: i < pal.length - 1 ? sz * 0.26 : 0, transform: `translateY(${(1 - si) * 40}px) scale(${si})`, color: relleno, WebkitTextStroke: `${sz * 0.1}px ${borde}`, paintOrder: "stroke fill", textShadow: `0 ${sz * 0.08}px 0 ${borde}` }}>{w}</span>;
+        })}
+        <div style={{ position: "absolute", left: "50%", bottom: -sz * 0.18, height: sz * 0.14, width: `${sub * 70}%`, transform: "translateX(-50%) rotate(-1deg)", background: tinta === "#fff" ? color : C.noche, borderRadius: sz * 0.07, boxShadow: "0 4px 0 rgba(20,10,50,.35)" }} />
+      </div>
+    );
+  }
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(${centro ? "-50%" : "0"}, -50%) scale(${s * out}) rotate(${(1 - s) * -8}deg)`, overflow: "hidden", transformOrigin: centro ? "center" : "left center", fontFamily, fontWeight: 700, fontSize: size, color: tinta, background: color, padding: `${size * 0.16}px ${size * 0.42}px`, borderRadius: size * 0.3, boxShadow: "0 8px 0 rgba(20,10,50,.35)", letterSpacing: 1, whiteSpace: "nowrap", lineHeight: 1.15 }}>
       {text}
