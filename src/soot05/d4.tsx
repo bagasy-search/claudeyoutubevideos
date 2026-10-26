@@ -209,7 +209,7 @@ cam(912.3, 1250, SUELO - 400, 1.15, 1.4);
 o(912.5, "sello", { txt: "PAID?", x: 1640, y: 330, s: 90, rot: -10, t1: 917.6 });
 s(912.5, "stamp", -2);
 o(913.0, "chip", { txt: "WHICH TRAP GOT YOU FIRST?", x: 960, y: 140, c: C.rojo, s: 64, t1: 917.6 });
-o(914.0, "ico", { ico: "campana", x: 1560, y: 640, s: 0.8, anim: "gira", tag: "SUBSCRIBE", c: C.rojo, t1: 917.6 });
+o(914.0, "ico", { ico: "campana", x: 1560, y: 640, s: 0.8, tag: "SUBSCRIBE", c: C.rojo, t1: 917.6 });
 o(914.6, "chip", { txt: "TELL ME IN THE COMMENTS", x: 960, y: 900, c: C.oro, tinta: C.noche, s: 56, t1: 917.6 });
 s(914.6, "pop", -3);
 

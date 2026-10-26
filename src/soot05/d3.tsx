@@ -116,7 +116,7 @@ w(574.9, "ico", { ico: "craneo", x: 6250, y: Y.sala - 520, s: 0.5, tag: "THE SHE
 w(576.3, "ico", { ico: "craneo", x: 5300, y: Y.jurado - 420, s: 0.5, tag: "THE JURY", c: C.rojo, t1: 583 });
 s(573.5, "fall", -4); s(574.9, "fall", -4); s(576.3, "fall", -4); s(576.6, "fall", -6);
 o(577.7, "oscuro", { t1: 583.0, a: 0.62 });
-o(578.0, "cuenta", { de: 0, a: 300, dur: 2.0, x: 960, y: 690, s: 200, fijo: true, c: C.rojo, pre: "~", t1: 583.0 });
+o(578.0, "cuenta", { de: 0, a: 300, dur: 2.0, x: 960, y: 620, s: 200, fijo: true, c: C.rojo, pre: "~", t1: 583.0 });
 o(579.5, "chip", { txt: "DEAD IN OXFORD", x: 960, y: 900, hx: 1, fijo: true, c: C.violeta, s: 58, t1: 583.0 });
 for (let i = 0; i < 8; i++) s(578.1 + i * 0.24, "tick", -6);
 o(583.1, "grande", { txt: "THE BLACK ASSIZE", y: 400, s: 140, c: C.rojo, t1: 585.0 });
@@ -124,7 +124,7 @@ o(583.1, "oscuro", { t1: 590.0, a: 0.55 });
 s(583.1, "slam", 0); s(583.2, "boom", -2);
 // 585.11 jail → court → home
 cam(585.0, 5500, SUELO - 400, 0.72, 1.2);
-cam(589.9, 6050, SUELO - 430, 0.88, 0.8); // reencuadre: juez adentro y multitud más grande (OJO v3)
+cam(588.6, 6050, SUELO - 430, 0.88, 0.8); // reencuadre: juez adentro y multitud más grande (OJO v3)
 for (let i = 0; i < 8; i++) w(585.3 + i * 0.25, "ico", { ico: "piojo", x: 5900, y: SUELO - 300, x2: 4500 - i * 260, y2: SUELO - 520 - (i % 3) * 120, anim: "vuela", dur: 1.2, s: 0.35, t1: 590.0 });
 o(585.6, "chip", { txt: "JAIL → COURT", x: 600, y: 140, c: C.lima, tinta: C.noche, s: 56, t1: 590.0 });
 o(587.8, "chip", { txt: "COURT → HOME", x: 1320, y: 140, c: C.rojo, s: 56, t1: 590.0 });
