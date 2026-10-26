@@ -36,8 +36,8 @@ export const P7K: Llave[] = [
   [707.6, PUESTO - 60, 560, 2.3, 0.8],
   [711.5, PUESTO, 560, 0.9, 0.9],
   [715.0, 5800, 420, 0.5, 1.2],
-  [718.6, 6000, 520, 0.17, 1.4],
-  [721.2, 6000, 520, 0.17, 1.0],
+  [718.6, 6000, 360, 0.16, 1.4],
+  [721.2, 6000, 360, 0.16, 1.0],
   [723.3, 7300, 600, 1.2, 1.2],
   [726.3, ATRAS, 620, 1.35, 0.9],
   [728.0, ATRAS - 40, 600, 1.7, 0.7],
@@ -228,7 +228,7 @@ export const P7Mundo: React.FC<{ t: number }> = ({ t }) => {
       {vig(t, 717.8, 722.2) && (
         <>
           {["BLOOD", "TOUCH", "CHURCH", "ADDRESS", "MARRIAGE", "STAGE", "JOBS"].map((l, i) => (
-            <Pin key={i} t={t} t0={718.7 + i * 0.22} x={1700 + i * 1430} y={SUELO - 100 - (i % 2) * 350} n={i + 1} s={3.4} label={l} />
+            <Pin key={i} t={t} t0={718.7 + i * 0.22} x={1700 + i * 1430} y={SUELO - 100 - (i % 2) * 220} n={i + 1} s={3.4} label={l} />
           ))}
         </>
       )}
@@ -255,14 +255,14 @@ export const P7Mundo: React.FC<{ t: number }> = ({ t }) => {
 const Rollo: React.FC<{ t: number }> = ({ t }) => {
   if (t < 647.4 || t > 654.6) return null;
   const items = ["EXECUTIONS", "DEAD ANIMALS", "STRAY DOGS", "LATRINES", "BEGGARS", "...", "EVERYTHING ELSE"];
-  const u = clamp((t - 647.6) / 4.5, 0, 1);
+  const u = clamp((t - 647.6) / 2.6, 0, 1);
   const e = clamp((t - 647.4) / 0.3, 0, 1) * clamp((654.6 - t) / 0.3, 0, 1);
   return (
-    <div style={{ position: "absolute", left: 1420, top: 120, transform: `scale(${e})`, transformOrigin: "50% 0", width: 560, marginLeft: -280, fontFamily, fontWeight: 700 }}>
+    <div style={{ position: "absolute", left: 1420, top: 120, transform: `scale(${e * 0.82})`, transformOrigin: "50% 0", width: 560, marginLeft: -280, fontFamily, fontWeight: 700 }}>
       <div style={{ height: 40, background: "#a8805a", borderRadius: 20 }} />
       <div style={{ background: "#fbecc8", borderLeft: "8px solid #7a3d14", borderRight: "8px solid #7a3d14", height: 40 + u * 640, overflow: "hidden", padding: "0 30px" }}>
         <div style={{ fontSize: 40, color: "#7a3d14", paddingTop: 14 }}>TO DO:</div>
-        {items.map((x, i) => <div key={x} style={{ fontSize: 46, color: i === items.length - 1 ? C.rojo : "#5a2a10", marginTop: 14 }}>☐ {x}</div>)}
+        {items.map((x, i) => <div key={x} style={{ fontSize: 46, color: i === items.length - 1 ? C.rojo : "#5a2a10", marginTop: 14 }}><span style={{ color: t > 650.6 + i * 0.45 ? "#2f8a3a" : undefined }}>{t > 650.6 + i * 0.45 ? "☑" : "☐"}</span> {x}</div>)}
       </div>
       <div style={{ height: 40, background: "#a8805a", borderRadius: 20 }} />
     </div>
@@ -305,7 +305,7 @@ export const P7Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={678.85} t1={682.2} text="EVERY MISERABLE JOB FOUND YOUR DOOR" color={C.violeta} x={960} y={150} centro size={52} />
     <Titulo t={t} t0={682.35} t1={684.1} text="...WITH A PRICE" y={200} size={120} color={C.oro} borde="#5a3a10" />
     <Menu t={t} />
-    <Sello t={t} t0={691.4} t1={694.0} text="YOU'RE NOT WELCOME" x={1300} y={820} size={70} rot={-10} />
+    <Sello t={t} t0={691.4} t1={694.0} text="YOU'RE NOT WELCOME" x={620} y={330} size={70} rot={-10} />
     <Chip t={t} t0={694.15} t1={696.5} text="AND ON THE SIDE..." color={C.violeta} x={960} y={150} centro size={60} />
     <Chip t={t} t0={696.65} t1={700.7} text="ANYTHING FROM THE GALLOWS = MAGIC (SUPPOSEDLY)" color={C.noche} x={960} y={150} centro size={48} />
     <Chip t={t} t0={700.85} t1={704.8} text="HANGMAN'S ROPE = LUCK FOR GAMBLERS" color={C.lima} tinta={C.noche} x={960} y={150} centro size={54} />

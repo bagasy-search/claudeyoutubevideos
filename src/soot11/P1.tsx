@@ -2,7 +2,7 @@ import React from "react";
 import { clamp } from "../soot/lib";
 import { C, Chip, Particulas, Emote, fontFamily } from "./kit";
 import { Persona, CIVIL } from "./persona";
-import { SUELO, Llave, G, Calle, Fachwerk, Ventana, Vent, enV, interp, TextoMundo } from "./mundo";
+import { SUELO, Llave, G, Calle, Fachwerk, Ventana, Vent, enV, interp, TextoMundo, Espada } from "./mundo";
 import { PT } from "./pueblo";
 import { Franz, HEINRICH, Gente, CartelTrampa, Sello, Globo, Tacha, Titulo, Cuenta, vig } from "./actores";
 
@@ -35,8 +35,8 @@ export const P1K: Llave[] = [
   enV(V_ARBOL, 108.3, 960, 540, 1.0, 0.6),
   enV(V_ARBOL, 114.1, 560, 640, 2.3, 0.7),
   enV(V_ARBOL, 116.5, 760, 560, 1.2, 0.6),
-  [120.85, PT.espadaPared + 300, 575, 1.6, 1.9],
-  [123.9, PT.espadaPared + 300, 575, 1.7, 0.5],
+  [120.85, PT.espadaPared + 420, 575, 1.6, 1.9],
+  [123.9, PT.espadaPared + 420, 575, 1.7, 0.5],
   [126.9, PT.espadaPared, 545, 4.6, 0.8],
   [129.4, PT.espadaPared, 560, 1.85, 0.6],
   [133.1, PT.espadaPared, 700, 3.2, 0.6],
@@ -159,6 +159,8 @@ export const P1Mundo: React.FC<{ t: number }> = ({ t }) => {
   const escribe = vig(t, 69, 72) || vig(t, 149.5, 157.9);
   return (
     <>
+      {/* el brillo que baja por el acero mientras se lee el grabado */}
+      {vig(t, 138.0, 146.2) && <Espada x={PT.espadaPared} y={SUELO - 150} s={0.42} brillo={((t - 138.0) / 1.4) % 1} />}
       <Tablon t={t} />
       {t >= 62.5 && <Franz x={x} y={SUELO - 10} t={t} flip={!sale} camina={sale && t < 160.6 ? 1.5 : 0}
         expr={vig(t, 146.3, 149.3) ? "orgullo" : escribe ? "feliz" : "neutro"} mira={escribe ? -1 : 0} miraY={escribe ? 1 : 0}
@@ -226,7 +228,7 @@ export const P1Pant: React.FC<{ t: number }> = ({ t }) => (
     )}
     <Chip t={t} t0={121.0} t1={124.0} text="WHAT YOU IMAGINE" color={C.violeta} x={360} y={250} centro size={44} />
     {vig(t, 122.6, 124) && <Tacha t={t} t0={122.6} x={360} y={560} w={420} rot={-40} g={28} />}
-    <Chip t={t} t0={124.0} t1={126.8} text="NO POINT AT ALL" color={C.rojo} x={960} y={150} centro size={66} />
+    <Chip t={t} t0={124.0} t1={126.8} text="NO POINT AT ALL" color={C.rojo} x={520} y={150} centro size={66} />
     <Chip t={t} t0={126.9} t1={128.0} text="FLAT..." color={C.ambar} tinta={C.noche} x={1340} y={420} size={60} />
     <Chip t={t} t0={128.05} t1={129.2} text="...OR ROUNDED" color={C.ambar} tinta={C.noche} x={1340} y={420} size={60} />
     <Chip t={t} t0={129.3} t1={131.0} text="✗ NOT FOR STABBING" color={C.noche} x={1180} y={360} size={50} />

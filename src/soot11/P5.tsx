@@ -2,7 +2,7 @@ import React from "react";
 import { clamp } from "../soot/lib";
 import { C, Chip, Emote, fontFamily } from "./kit";
 import { Persona, CIVIL, Ropa } from "./persona";
-import { SUELO, Llave, G, interp, TextoMundo, Ventana, Vent, enV } from "./mundo";
+import { SUELO, Llave, G, interp, TextoMundo, Ventana, Vent, enV, Espada } from "./mundo";
 import { Franz, Gente, CartelTrampa, Sello, Titulo, BurbujaM, vig } from "./actores";
 
 // P5 · Trampa 5 "Who you marry" (445,8-537,8 s). Franz con flores → la puerta que se cierra en la orilla → la
@@ -53,8 +53,8 @@ const Corazon: React.FC<{ x: number; y: number; s?: number; color?: string }> = 
 
 // ── el mapa de Franconia adentro del cuadro de la pared
 const PUEBLOS: Record<string, [number, number]> = {
-  NUREMBERG: [960, 560], BAMBERG: [800, 290], BAYREUTH: [1300, 330], HOF: [1500, 200], ANSBACH: [640, 740],
-  "WÜRZBURG": [440, 380], REGENSBURG: [1400, 800], AUGSBURG: [880, 920],
+  NUREMBERG: [960, 560], BAMBERG: [800, 290], BAYREUTH: [1300, 330], HOF: [1520, 280], ANSBACH: [640, 740],
+  "WÜRZBURG": [440, 380], REGENSBURG: [1400, 760], AUGSBURG: [880, 860],
 };
 const Mapa: React.FC<{ t: number }> = ({ t }) => {
   const linea = (a: string, b: string, t0: number, color = C.rojo) => {
@@ -98,7 +98,7 @@ const Mapa: React.FC<{ t: number }> = ({ t }) => {
           return <g key={i} transform={`translate(${x1 + (x2 - x1) * u} ${y1 + (y2 - y1) * u}) rotate(-30)`}><rect x={-6} y={-60} width={12} height={80} fill="#dfe6ee" stroke="#2b2140" strokeWidth={3} /><rect x={-24} y={16} width={48} height={10} fill="#8a5414" /></g>;
         })}
       </Svg>
-      {(t < 474.7 || t > 478.4) && <TextoMundo x={960} y={150} text="FRANCONIA" size={70} color="#7a3d14" borde="#f3dcae" />}
+      {(t < 462.7 || t > 465.1) && (t < 474.7 || t > 478.4) && <TextoMundo x={960} y={150} text="FRANCONIA" size={70} color="#7a3d14" borde="#f3dcae" />}
     </>
   );
 };
@@ -153,15 +153,26 @@ export const P5Mundo: React.FC<{ t: number }> = ({ t }) => {
       {/* ── París: los Sanson, seis generaciones */}
       {t > 508.5 && (
         <>
+          {/* la línea de tiempo y la espada que pasa de mano en mano, generación por generación */}
+          <G x={0} y={0}><rect x={GEN[0]} y={SUELO + 18} width={(GEN[5] - GEN[0]) * clamp((t - 511) / 3.4, 0, 1)} height={8} rx={4} fill={C.oro} /></G>
+          {(() => {
+            const k = clamp((t - 511.3) / 3.4, 0, 1) * 5;
+            const sx = interp(k, [0, 1, 2, 3, 4, 5], GEN);
+            return t > 511.3 && t < 518.3 ? <Espada x={sx + 70} y={SUELO - 60 - Math.abs(Math.sin(k * Math.PI)) * 60} s={0.24} rot={-15} brillo={1} /> : null;
+          })()}
           {GEN.map((gx, i) => {
             const t0 = 511.0 + i * 0.6;
             if (t < t0) return null;
             const adelante = i === 3 && vig(t, 518.3, 527.3) ? 1 : 0;
+            const tieneEspada = (j: number) => t > 511.3 && t < 518.3 && Math.round(clamp((t - 511.3) / 3.4, 0, 1) * 5) === j;
             return (
               <React.Fragment key={gx}>
-                <Persona x={gx} y={SUELO - 10 + adelante * 30} h={300 - (i === 0 ? 0 : 0)} t={t} seed={670 + i} ropa={SANSON} gorro="verdugo" capa="#a3202f" barba={i % 2 ? "#2a1a10" : undefined} viejo={i === 0} aparece={t0}
-                  expr={i === 3 && vig(t, 520.7, 527.3) ? "miedo" : i === 0 && vig(t, 527.3, 531.6) ? "feliz" : "orgullo"} flip={i === 0 && vig(t, 527.3, 531.6)} />
-                <TextoMundo x={gx} y={SUELO - 360} text={["I", "II", "III", "IV", "V", "VI"][i]} size={50} color={C.ambar} borde="#2b1c14" />
+                <Persona x={gx} y={SUELO - 10 + adelante * 30} h={[300, 320, 290, 330, 305, 270][i]} t={t} seed={670 + i} ropa={{ ...SANSON, tunica: ["#1d1430", "#2a1838", "#1d1430", "#341a3a", "#1d1430", "#2a1838"][i] }} gorro="verdugo" capa="#a3202f"
+                  barba={[ "#d8d2cc", "#9c958f", "#2a1a10", undefined, "#6a3a1a", undefined][i]} viejo={i < 2} aparece={t0} inclina={i < 2 ? 5 : 0}
+                  bD={tieneEspada(i) ? 70 : i === 1 ? 40 + Math.sin(t * 2) * 10 : 15} cD={tieneEspada(i) ? 60 : 10} bI={i === 5 ? 120 : 15} habla={i === 4 && vig(t, 511, 514.8)} mira={i < 3 ? 1 : -1}
+                  expr={i === 3 && vig(t, 520.7, 527.3) ? "miedo" : i === 0 && vig(t, 527.3, 531.6) ? "feliz" : i === 5 ? "sorpresa" : "orgullo"} flip={i === 0 && vig(t, 527.3, 531.6)} />
+                <TextoMundo x={gx} y={SUELO - 400} text={["I", "II", "III", "IV", "V", "VI"][i]} size={56} color={C.ambar} borde="#2b1c14" />
+                <TextoMundo x={gx} y={SUELO + 50} text={["1688", "1707", "1726", "1754", "1795", "1840"][i]} size={34} color="#fff3d6" borde="#2b1c14" />
               </React.Fragment>
             );
           })}
@@ -213,7 +224,7 @@ export const P5Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={453.4} t1={454.8} text="ONE PROBLEM..." color={C.rojo} x={960} y={150} centro size={62} />
     <Chip t={t} t0={454.9} t1={458.6} text="NO FAMILY WANTS THEIR DAUGHTER MARRYING YOU" color={C.noche} x={960} y={150} centro size={48} />
     <Chip t={t} t0={458.7} t1={462.7} text="...OR THEIR SON MARRYING YOURS" color={C.noche} x={960} y={150} centro size={54} />
-    <Titulo t={t} t0={462.85} t1={464.9} text="SO THEY MARRIED EACH OTHER" y={190} size={92} color={C.crema} />
+    <Titulo t={t} t0={462.85} t1={464.9} text="SO THEY MARRIED EACH OTHER" y={90} size={70} color={C.crema} />
     <Chip t={t} t0={465.0} t1={470.0} text="SON OF ONE TOWN ♥ DAUGHTER OF THE NEXT" color={C.rojo} x={960} y={950} centro size={50} />
     <Chip t={t} t0={470.2} t1={474.7} text="THEIR KIDS: THREE TOWNS AWAY" color={C.violeta} x={960} y={950} centro size={54} />
     <Titulo t={t} t0={474.9} t1={478.2} text="DYNASTIES" y={200} size={150} color={C.rojo} borde="#2b0a14" />
@@ -221,11 +232,11 @@ export const P5Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={483.0} t1={487.2} text="THE JOB · THE SWORDS · THE KNOWLEDGE" color={C.noche} x={960} y={950} centro size={52} />
     <Chip t={t} t0={487.4} t1={489.4} text="AND YOUR CHILDREN?" color={C.violeta} x={960} y={150} centro size={60} />
     <Chip t={t} t0={489.5} t1={491.7} text="AGE 5: THEY ALREADY KNEW" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={58} />
-    <Sello t={t} t0={491.8} t1={494.4} text="NO GUILD" x={1300} y={340} size={100} />
+    <Sello t={t} t0={491.8} t1={494.4} text="NO GUILD" x={1480} y={860} size={100} />
     <Chip t={t} t0={494.5} t1={498.8} text="LIKE A BAKER'S SON LEARNS TO KNEAD" color={C.teal} tinta={C.noche} x={960} y={150} centro size={54} />
     <Chip t={t} t0={498.95} t1={502.6} text="SHE LEARNS TO RUN AN EXECUTIONER'S HOUSE" color={C.violeta} x={960} y={150} centro size={50} />
     <Chip t={t} t0={502.7} t1={504.6} text="...SHE WILL MARRY INTO ONE" color={C.rojo} x={960} y={150} centro size={58} />
-    <Sello t={t} t0={504.65} t1={505.8} text="NOBODY ASKED THEM" x={960} y={330} size={84} rot={-6} />
+    <Sello t={t} t0={504.65} t1={505.8} text="NOBODY ASKED THEM" x={960} y={900} size={84} rot={-6} />
     <Titulo t={t} t0={505.9} t1={507.4} text="NOBODY ASKED YOU EITHER" y={190} size={90} color={C.crema} />
     <Titulo t={t} t0={509.0} t1={510.8} text="PARIS" y={540} size={170} color={C.crema} />
     <Chip t={t} t0={510.95} t1={514.8} text="THE SANSON FAMILY · 6 GENERATIONS" color={C.rojo} x={960} y={150} centro size={56} />

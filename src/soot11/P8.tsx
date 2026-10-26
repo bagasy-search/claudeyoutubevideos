@@ -46,7 +46,7 @@ export const P8K: Llave[] = [
   [841.9, PLAZA + 500, 580, 0.9, 1.4],
   [847.3, CASA, 600, 1.2, 1.2, 0.3],
   [851.7, 6440, 620, 1.9, 0.9],
-  [857.5, PLAZA, 560, 1.0, 1.2, 0.35],
+  [855.9, PLAZA, 560, 1.0, 1.2, 0.35],
   [860.0, PLAZA, 520, 1.5, 0.8],
   [864.9, PLAZA, 600, 1.15, 0.8],
   [867.9, CEM, -950, 0.95, 1.0],
@@ -61,8 +61,8 @@ export const P8K: Llave[] = [
   [902.9, 6100, 420, 0.24, 2.0],
   [906.9, 6100, -950, 0.95, 1.0],
   [908.3, VIK, -950, 0.95, 1.2],
-  [909.7, VIK + 250, 660, 1.1, 1.2],
-  [913.9, VIK + 250, 640, 0.98, 4.0],
+  [909.7, VIK + 250, 540, 1.1, 1.2],
+  [913.9, VIK + 250, 500, 0.98, 4.0],
 ];
 // 0 = día, 1 = atardecer, 2 = noche
 export const P8H: [number, number][] = [
@@ -220,7 +220,7 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
               <Persona x={6300} y={SUELO - 10} h={200} t={t} seed={850} ropa={CIVIL(160)} expr="feliz" bD={130} cD={30} manoD={<rect x={-5} y={-120} width={10} height={130} fill="#8a5a2a" />} />
               <Persona x={6200} y={SUELO - 10} h={180} t={t} seed={851} ropa={{ ...CIVIL(161), tunica: "#c8447a" }} gorro="toca" expr="feliz" />
               {t > 849.2 && <Svg><g opacity={clamp((t - 849.2) / 0.5, 0, 1)}><ellipse cx={6250} cy={SUELO - 320} rx={130} ry={46} fill="#3a3046" /><ellipse cx={6200} cy={SUELO - 350} rx={70} ry={40} fill="#3a3046" />{[0, 1, 2].map((i) => <line key={i} x1={6200 + i * 40} y1={SUELO - 280} x2={6190 + i * 40} y2={SUELO - 240} stroke="#7a8aa8" strokeWidth={5} />)}</g></Svg>}
-              {t > 849.2 && <TextoMundo x={6250} y={SUELO - 470} text="THE CURSE" size={64} color="#fff3d6" borde="#2b1c14" />}
+              {t > 849.2 && <TextoMundo x={6250} y={SUELO - 250} text="THE CURSE" size={64} color="#fff3d6" borde="#2b1c14" />}
             </>
           )}
           {t > 853.3 && Array.from({ length: 10 }, (_, i) => {
@@ -231,7 +231,7 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
         </>
       )}
       {/* ── 1624: el emperador firma → el primer apretón de manos */}
-      {vig(t, 856.4, 868.4) && (
+      {vig(t, 855.5, 868.4) && (
         <>
           <Svg><rect x={PLAZA - 260} y={SUELO - 80} width={520} height={70} fill="#a3202f" /><rect x={PLAZA - 280} y={SUELO - 100} width={560} height={24} fill={C.oro} /></Svg>
           <Persona x={PLAZA - 60} y={SUELO - 100} h={320} t={t} seed={860} ropa={EMPERADOR} barba="#8a6a4a" capa="#f6efe6" expr="orgullo" bD={vig(t, 859.5, 862) ? 100 + Math.sin(t * 12) * 10 : 30} cD={50}
@@ -310,7 +310,7 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
           <Tienda x={VIK - 480} y={SUELO - 6} s={1.4} />
           <Tienda x={VIK - 110} y={SUELO - 6} s={1.2} />
           {/* fogata */}
-          <G x={VIK + 110} y={SUELO - 6}>{[0, 1, 2].map((i) => <path key={i} d={`M ${-30 + i * 30} 0 Q ${-50 + i * 30 + Math.sin(t * 9 + i) * 10} -80 ${-20 + i * 30} -${110 + Math.sin(t * 7 + i) * 20} Q ${10 + i * 30} -60 ${-10 + i * 30} 0 Z`} fill={i === 1 ? "#ffd27a" : "#ff8a3a"} />)}<rect x={-60} y={-12} width={120} height={16} rx={8} fill="#5a3418" /></G>
+          <G x={VIK + 110} y={SUELO - 6} s={1.7}>{[0, 1, 2].map((i) => <path key={i} d={`M ${-30 + i * 30} 0 Q ${-50 + i * 30 + Math.sin(t * 9 + i) * 10} -80 ${-20 + i * 30} -${110 + Math.sin(t * 7 + i) * 20} Q ${10 + i * 30} -60 ${-10 + i * 30} 0 Z`} fill={i === 1 ? "#ffd27a" : "#ff8a3a"} />)}<rect x={-60} y={-12} width={120} height={16} rx={8} fill="#5a3418" /></G>
           {/* acostados alrededor del fuego, respirando bajo la manta */}
           {[[-560, 0], [-250, 1], [330, 2], [-60, 3]].map(([dx, i]) => {
             const resp = Math.sin(t * 2.2 + i * 1.7);
@@ -318,12 +318,11 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
             return (
               <React.Fragment key={i}>
                 <Persona x={VIK + dx} y={SUELO + 62 + resp * 2} h={280} t={t} seed={900 + i} ropa={VIKINGO(i)} barba={VIKINGO(i).pelo} expr="dormido" inclina={lado * 86} bD={0} />
-                <G x={VIK + dx + lado * 30} y={SUELO - 4}><path d={`M -120 0 Q -126 ${-58 - resp * 6} -40 ${-64 - resp * 7} Q 60 ${-70 - resp * 8} 118 ${-40 - resp * 4} Q 132 -10 120 0 Z`} fill={["#6a4a8a", "#8a3a2a", "#3a6a5a", "#7a6a3a"][i]} stroke="#1a2832" strokeWidth={5} /></G>
+                <G x={VIK + dx - lado * 70} y={SUELO - 4}><path d={`M -150 4 Q -158 ${-70 - resp * 6} -50 ${-80 - resp * 8} Q 60 ${-88 - resp * 9} 140 ${-50 - resp * 5} Q 156 -14 150 4 Z`} fill={["#6a4a8a", "#8a3a2a", "#3a6a5a", "#7a6a3a"][i]} stroke="#1a2832" strokeWidth={5} /></G>
                 <TextoMundo x={VIK + dx - lado * 120} y={SUELO - 190 - ((t * 40 + i * 20) % 60)} text="z Z z" size={44} color="#bfe6ff" borde="#1a2832" />
               </React.Fragment>
             );
           })}
-          {[[-380, 0], [470, 1]].map(([dx, i]) => <Casco key={i} x={VIK + dx} y={SUELO + 196} h={280} />)}
           <Particulas t={t} tipo="brasas" n={26} seed={17} />
         </>
       )}
@@ -402,7 +401,7 @@ const Cta: React.FC<{ t: number }> = ({ t }) => {
         </div>
       )}
       {q > 0 && (
-        <div style={{ position: "absolute", left: 960, top: 330, transform: `translate(-50%,-50%) scale(${q})`, background: "rgba(27,18,64,.92)", borderRadius: 30, padding: "26px 40px", fontFamily, fontWeight: 700, textAlign: "center", boxShadow: "0 12px 0 rgba(10,5,30,.4)" }}>
+        <div style={{ position: "absolute", left: 960, top: 175, transform: `translate(-50%,-50%) scale(${q})`, background: "rgba(27,18,64,.92)", borderRadius: 30, padding: "26px 40px", fontFamily, fontWeight: 700, textAlign: "center", boxShadow: "0 12px 0 rgba(10,5,30,.4)" }}>
           <div style={{ fontSize: 52, color: "#fff3d6" }}>WHICH TRAP WOULD GET YOU FIRST?</div>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", marginTop: 18 }}>
             {trampas.map((x, i) => <div key={x} style={{ fontSize: 30, background: [C.rojo, C.violeta, C.teal, C.ambar, C.rosa, C.naranja, C.lima][i], color: i > 1 ? C.noche : "#fff", padding: "8px 16px", borderRadius: 14, opacity: t > 910.6 + i * 0.12 ? 1 : 0 }}>{i + 1} {x}</div>)}
@@ -439,7 +438,6 @@ const Flash: React.FC<{ t: number; t0: number }> = ({ t, t0 }) => (t > t0 && t <
 
 export const P8Pant: React.FC<{ t: number }> = ({ t }) => (
   <>
-    <Flash t={t} t0={729.25} />
     <Titulo t={t} t0={729.3} t1={730.5} text="THE TWIST" y={540} size={220} color={C.ambar} borde="#2b0a14" />
     <Chip t={t} t0={730.55} t1={733.4} text="ONE OF THE BEST-PAID MEN IN TOWN" color={C.oro} tinta={C.noche} x={960} y={150} centro size={56} />
     <Chip t={t} t0={733.5} t1={735.5} text="A WEEKLY SALARY FROM THE CITY" color={C.teal} tinta={C.noche} x={960} y={150} centro size={56} />
@@ -470,7 +468,6 @@ export const P8Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={808.5} t1={810.0} text="HIS OWN MEDICINES ✓" color={C.ambar} tinta={C.noche} x={1540} y={150} centro size={48} />
     <Chip t={t} t0={810.05} t1={812.9} text="LATER, HE WROTE DOWN THE COUNT" color={C.violeta} x={960} y={150} centro size={56} />
     <Cuenta t={t} t0={813.0} t1={816.0} de={0} a={15000} dur={2.4} x={960} y={300} size={180} suf="+ PATIENTS" color={C.lima} />
-    <Flash t={t} t0={816.05} />
     <Barras t={t} t0={816.1} t1={820.0} x={960} y={900} items={[{ label: "PATIENTS: 15,000", v: 15000, color: C.lima }, { label: "EXECUTIONS: ~400", v: 400, color: C.rojo, t0: 817.6 }]} alto={560} ancho={300} />
     <Cuarenta t={t} />
     <Titulo t={t} t0={820.1} t1={825.1} text="HEALED ~40x MORE" y={210} size={120} color={C.lima} borde="#1b2a10" />
@@ -486,7 +483,6 @@ export const P8Pant: React.FC<{ t: number }> = ({ t }) => (
     <Sello t={t} t0={855.6} t1={859.4} text="1624" x={1450} y={420} size={130} color={C.violeta} rot={-8} />
     <Chip t={t} t0={857.55} t1={859.4} text="ABOUT 70 YEARS OLD" color={C.teal} tinta={C.noche} x={960} y={150} centro size={58} />
     <Chip t={t} t0={859.5} t1={862.0} text="THE HOLY ROMAN EMPEROR HIMSELF" color={C.rojo} x={960} y={150} centro size={56} />
-    <Flash t={t} t0={862.0} />
     <Sello t={t} t0={862.05} t1={864.85} text="HONOR RESTORED" x={960} y={170} size={110} color="#2a8a3a" rot={-6} />
     <Chip t={t} t0={865.0} t1={867.8} text="HIS CHILDREN COULD CHOOSE A DIFFERENT LIFE" color={C.teal} tinta={C.noche} x={860} y={150} centro size={48} />
     <Chip t={t} t0={869.6} t1={873.0} text="1634: NUREMBERG'S MOST RESPECTED CEMETERY" color={C.violeta} x={960} y={150} centro size={48} />

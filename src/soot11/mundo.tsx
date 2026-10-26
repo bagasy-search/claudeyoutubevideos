@@ -89,10 +89,9 @@ export const Mundo: React.FC<{ t: number; keys: Llave[]; horas: [number, number]
           <AbsoluteFill style={{ transformOrigin: "0 0", transform: `translate(${960 - cam.x * 0.35 * Math.sqrt(cam.z)}px, ${540 - (cam.y - 540) * 0.3 - 540 * Math.sqrt(cam.z)}px) scale(${Math.sqrt(cam.z)})` }}>{lejos}</AbsoluteFill>
         )}
         <AbsoluteFill style={{ transformOrigin: "0 0", transform: tr }}>{children}</AbsoluteFill>
-        {noche > 0.01 && <AbsoluteFill style={{ background: "#2a2470", mixBlendMode: "multiply", opacity: noche * 0.55, pointerEvents: "none" }} />}
+        {noche > 0.01 && <AbsoluteFill style={{ background: "#2a2470", mixBlendMode: "multiply", opacity: noche * 0.36, pointerEvents: "none" }} />}
         {tarde > 0.01 && <AbsoluteFill style={{ background: "#ff8a4d", mixBlendMode: "soft-light", opacity: tarde * 0.35, pointerEvents: "none" }} />}
       </AbsoluteFill>
-      {vel > 160 && <Rafaga t={t} dx={cam.x - prev.x} op={clamp((vel - 160) / 300, 0, 0.35)} />}
     </MundoCtx.Provider>
   );
 };

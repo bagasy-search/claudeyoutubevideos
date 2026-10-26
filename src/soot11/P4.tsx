@@ -80,8 +80,8 @@ export const P4Mundo: React.FC<{ t: number }> = ({ t }) => {
           {vig(t, 389.1, 394.3) && (
             <>
               <TextoMundo x={9900} y={SUELO - 640} text="THE WALL" size={110} color="#fff3d6" borde="#2b1c14" />
-              <TextoMundo x={CHOZA} y={SUELO - 360} text="YOU" size={130} color={C.rojo} borde="#fff" />
-              <TextoMundo x={BASURA - 30} y={SUELO - 260} text="RUBBISH" size={96} color="#fff3d6" borde="#2b1c14" />
+              <TextoMundo x={CHOZA} y={SUELO - 560} text="YOU" size={130} color={C.rojo} borde="#fff" />
+              <TextoMundo x={BASURA - 260} y={SUELO - 70} text="RUBBISH" size={96} color="#fff3d6" borde="#2b1c14" />
               <TextoMundo x={11000} y={SUELO - 440} text="DEAD ANIMALS" size={96} color="#fff3d6" borde="#2b1c14" />
             </>
           )}
@@ -113,7 +113,7 @@ export const P4Mundo: React.FC<{ t: number }> = ({ t }) => {
             <React.Fragment key={tx}>
               <Persona x={tx} y={SUELO - 30} h={260} t={t} seed={610 + i} ropa={{ tunica: i ? "#f27a3d" : "#3ab5a5", tunica2: i ? "#c25a2a" : "#2a857a", cinto: "#2b2140", piel: "#f2c09a", piel2: "#d99872", pelo: "#5a3a2a" }} flip={i === 1} bD={120} cD={70}
                 manoD={<g><rect x={-30} y={-40} width={60} height={42} rx={8} fill="#2b2140" /><circle cx={0} cy={-19} r={12} fill="#8ad0ff" /></g>} />
-              {Math.sin((t - 418) * 9 + i * 2) > 0.85 && <Svg><circle cx={tx + (i ? -60 : 60)} cy={SUELO - 190} r={60} fill="#fff" opacity={0.8} /></Svg>}
+              {Math.sin((t - 418) * 9 + i * 2) > 0.85 && <Svg><g transform={`translate(${tx + (i ? -70 : 70)} ${SUELO - 200})`}>{[0, 1, 2, 3, 4, 5].map((k) => <line key={k} x1={Math.cos(k * 1.047) * 14} y1={Math.sin(k * 1.047) * 14} x2={Math.cos(k * 1.047) * 38} y2={Math.sin(k * 1.047) * 38} stroke="#ffe28a" strokeWidth={8} strokeLinecap="round" />)}</g></Svg>}
             </React.Fragment>
           ))}
           {/* amanece: los comerciantes abren en una orilla… */}

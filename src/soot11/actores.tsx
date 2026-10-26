@@ -42,8 +42,8 @@ export const CartelTrampa: React.FC<{ t: number; t0: number; t1: number; n: numb
   const sube = interpolate(t, [t1, t1 + 0.45], [0, -800], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.cubic) });
   const bal = Math.sin(lt * 4.2) * 9 * Math.exp(-lt * 1.1);
   return (
-    <div style={{ position: "absolute", left: 960, top: 0, transform: `translateY(${baja + sube}px) rotate(${bal}deg)`, transformOrigin: "0 0" }}>
-      <svg style={{ position: "absolute", left: -520, top: 0, overflow: "visible" }} width={1040} height={560}>
+    <div style={{ position: "absolute", left: 960, top: 0, transform: `translateY(${baja + sube}px) rotate(${bal}deg) scale(0.74)`, transformOrigin: "0 0" }}>
+      <svg style={{ position: "absolute", left: -520, top: -60, overflow: "visible" }} width={1040} height={560}>
         <line x1={300} y1={0} x2={330} y2={170} stroke="#3b2a1a" strokeWidth={10} />
         <line x1={740} y1={0} x2={710} y2={170} stroke="#3b2a1a" strokeWidth={10} />
         <rect x={110} y={160} width={820} height={330} rx={36} fill="#5a3418" />

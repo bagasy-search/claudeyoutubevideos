@@ -109,7 +109,7 @@ export const P2Mundo: React.FC<{ t: number }> = ({ t }) => {
           {/* la cinta en la manga y el cartel de advertencia */}
           {t > 205.0 && t < 213.6 && <G x={x - 62} y={SUELO - 170} s={clamp((t - 205) / 0.3, 0, 1)}><rect x={-34} y={-12} width={68} height={24} rx={6} fill={C.ambar} stroke="#7a4a10" strokeWidth={4} /><path d="M 20 10 L 34 50 L 10 40 Z" fill={C.ambar} /></G>}
           {t > 208.3 && t < 213.6 && (
-            <G x={x} y={SUELO - 420 + Math.sin(t * 3) * 6} s={clamp((t - 208.3) / 0.3, 0, 1)}>
+            <G x={x + 270} y={SUELO - 470 + Math.sin(t * 3) * 6} s={0.85 * clamp((t - 208.3) / 0.3, 0, 1)}>
               <rect x={-4} y={0} width={8} height={70} fill="#5a3418" />
               <path d="M 0 -150 L 120 50 L -120 50 Z" fill={C.ambar} stroke="#2b1c14" strokeWidth={10} strokeLinejoin="round" />
               <text x={0} y={30} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={130} fill="#2b1c14">!</text>
@@ -180,7 +180,7 @@ export const P2Mundo: React.FC<{ t: number }> = ({ t }) => {
             return (
               <Svg>
                 {parte === 0 ? (
-                  <g transform={`translate(${HORCA} ${SUELO - 660 + Math.sin(t * 2) * 10}) scale(${e})`}>
+                  <g transform={`translate(${HORCA + 380} ${SUELO - 540 + Math.sin(t * 2) * 10}) scale(${e})`}>
                     {[[-90, 0, 80], [0, -30, 100], [90, 0, 80], [-40, 30, 70], [50, 34, 70]].map(([cx, cy, r], i) => <circle key={i} cx={cx} cy={cy} r={r} fill="#5b2b80" />)}
                     <text x={0} y={20} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={64} fill="#f2e6ff">SHAME</text>
                   </g>
@@ -188,7 +188,7 @@ export const P2Mundo: React.FC<{ t: number }> = ({ t }) => {
                   Array.from({ length: 16 }, (_, i) => {
                     // pedazos que salen disparados en abanico y caen con gravedad
                     const a = (i / 16) * Math.PI * 2 + 0.3, v = 520 + (i % 4) * 140, k = Math.min(parte * 1.4, 1);
-                    const px = HORCA + Math.cos(a) * v * k, py = SUELO - 660 + Math.sin(a) * v * 0.6 * k + 520 * k * k;
+                    const px = HORCA + 380 + Math.cos(a) * v * k, py = SUELO - 540 + Math.sin(a) * v * 0.6 * k + 520 * k * k;
                     const r = 46 * (1 - parte) + 4;
                     return <path key={i} transform={`translate(${px} ${py}) rotate(${i * 47 + parte * 400})`} d={`M ${-r} 0 Q 0 ${-r * 1.3} ${r} 0 Q 0 ${r * 0.7} ${-r} 0 Z`} fill={i % 3 ? "#5b2b80" : "#8a4ab8"} stroke="#2b1240" strokeWidth={4} />;
                   })
@@ -196,6 +196,13 @@ export const P2Mundo: React.FC<{ t: number }> = ({ t }) => {
               </Svg>
             );
           })()}
+          {/* los carpinteros se niegan: brazos cruzados, señalan la horca y se van */}
+          {t > 214.2 && t < 226.6 && [0, 1, 2].map((i) => {
+            const sx = HORCA + 330 + i * 150;
+            const vete = clamp((t - 223.5 - i * 0.3) / 2.5, 0, 1);
+            return <Persona key={i} x={sx + vete * 1200} y={SUELO - 10} h={280} t={t} seed={330 + i} ropa={CARP(i + 3)} gorro="campesino" flip={vete === 0} camina={vete > 0 && vete < 1 ? 1.7 : 0}
+              expr={i === 1 ? "enojado" : "sorpresa"} bD={i === 0 && vete === 0 ? 150 + Math.sin(t * 6) * 12 : 30} bI={i === 2 ? 110 : 30} cD={20} manoD={i === 1 ? <Martillo /> : undefined} habla={i === 0} />;
+          })}
           {/* el primero que toca: queda gris */}
           {t > 220.5 && t < 226.8 && <Persona x={HORCA - 230} y={SUELO - 205} h={260} t={t} seed={340} ropa={t > 221.6 ? GRIS : CARP(1)} gorro="campesino" expr={t > 221.6 ? "triste" : "neutro"} bD={t < 221.6 ? 80 : 10} salta={221.7} />}
           {/* el gremio entero llega con música */}
@@ -282,15 +289,15 @@ const Prohibido: React.FC<{ t: number }> = ({ t }) => {
   ];
   const sale = clamp((t - 179.1) / 0.4, 0, 1);
   return (
-    <div style={{ position: "absolute", left: 0, top: 760, width: 1920, display: "flex", justifyContent: "center", gap: 60, opacity: 1 - sale }}>
+    <div style={{ position: "absolute", left: 0, top: 730, width: 1920, display: "flex", justifyContent: "center", gap: 60, opacity: 1 - sale }}>
       {items.map((it) => {
         const e = clamp((t - it.t0) / 0.25, 0, 1);
         const x = t > 177.7;
         return (
-          <div key={it.label} style={{ transform: `scale(${e})`, width: 280, height: 230, background: "#fff6e0", borderRadius: 28, border: `8px solid ${x ? C.rojo : "#2b2140"}`, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", boxShadow: "0 10px 0 rgba(20,10,50,.35)" }}>
+          <div key={it.label} style={{ transform: `scale(${e})`, width: 280, height: 190, marginBottom: 60, background: "#fff6e0", borderRadius: 28, border: `8px solid ${x ? C.rojo : "#2b2140"}`, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", position: "relative", boxShadow: "0 10px 0 rgba(20,10,50,.35)" }}>
             <svg width={140} height={120} viewBox="-70 -60 140 120"><path d={it.d} stroke="#2b2140" strokeWidth={8} fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
-            <div style={{ fontFamily, fontWeight: 700, fontSize: 34, color: "#2b2140" }}>{it.label}</div>
-            {x && <svg style={{ position: "absolute", inset: 0 }} width={280} height={230} viewBox="0 0 280 230"><path d="M 50 40 L 230 190 M 230 40 L 50 190" stroke={C.rojo} strokeWidth={22} strokeLinecap="round" strokeDasharray={240} strokeDashoffset={240 * (1 - clamp((t - 177.7) / 0.2, 0, 1))} /></svg>}
+            <div style={{ position: "absolute", top: 200, left: -40, right: -40, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 38, color: "#fff3d6", WebkitTextStroke: "7px #2b2140", paintOrder: "stroke fill", whiteSpace: "nowrap" }}>{it.label}</div>
+            {x && <svg style={{ position: "absolute", inset: 0 }} width={280} height={190} viewBox="0 0 280 230" preserveAspectRatio="none"><path d="M 50 40 L 230 190 M 230 40 L 50 190" stroke={C.rojo} strokeWidth={22} strokeLinecap="round" strokeDasharray={240} strokeDashoffset={240 * (1 - clamp((t - 177.7) / 0.2, 0, 1))} /></svg>}
           </div>
         );
       })}
@@ -334,7 +341,7 @@ export const P2Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={213.1} t1={215.8} text="...SOME TRULY STRANGE PROBLEMS" color={C.violeta} x={960} y={150} centro size={56} />
     <Titulo t={t} t0={216.0} t1={218.2} text="WHO BUILDS THE GALLOWS?" y={180} size={96} color={C.crema} />
     <Chip t={t} t0={218.35} t1={220.9} text="IT'S THE EXECUTIONER'S TOOL" color={C.rojo} x={960} y={150} centro size={58} />
-    <Sello t={t} t0={221.1} t1={224.4} text="TOUCH IT = DISHONORED" x={960} y={300} size={80} rot={-6} />
+    <Sello t={t} t0={221.1} t1={224.4} text="TOUCH IT = DISHONORED" x={1180} y={620} size={80} rot={-6} />
     <Chip t={t} t0={224.55} t1={226.7} text="THE SOLUTION..." color={C.teal} tinta={C.noche} x={960} y={150} centro size={60} />
     <Chip t={t} t0={226.9} t1={230.7} text="EVERY CARPENTER · SAME TIME" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={60} />
     <Chip t={t} t0={230.8} t1={233.2} text="MASTERS + APPRENTICES" color={C.teal} tinta={C.noche} x={960} y={150} centro size={60} />

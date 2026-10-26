@@ -15,8 +15,8 @@ const GUARDIA: Ropa = { tunica: "#a3202f", tunica2: "#5e0f1d", cinto: "#3b230f",
 const TIRAN = [4260, 4380, 4500, 5100, 5220, 5340];
 
 export const P6K: Llave[] = [
-  [538.6, 31450, -950, 0.95, 1.0],
-  [539.9, PLAZA, -950, 0.95, 1.2],
+  [538.6, 31450, 100, 0.95, 1.0],
+  [539.9, PLAZA, 250, 0.95, 1.2],
   [541.15, PLAZA, 600, 0.95, 1.1],
   [542.9, PLAZA, ESC - 240, 2.4, 0.6],
   [544.3, PLAZA, ESC - 280, 1.5, 0.5],
@@ -217,7 +217,7 @@ export const P6Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={556.6} t1={558.0} text="THE MAN ON THE BRIDGE" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={60} />
     <Titulo t={t} t0={558.1} t1={560.0} text="NOTHING TO HIDE" y={190} size={110} color={C.crema} />
     <Chip t={t} t0={560.2} t1={562.2} text="WHAT YOU HAD: AN AUDIENCE" color={C.violeta} x={960} y={150} centro size={58} />
-    <Cuenta t={t} t0={562.25} t1={564.7} de={0} a={1000} dur={2.0} x={960} y={250} size={150} pre="" suf="s OF PEOPLE" color={C.ambar} />
+    <Cuenta t={t} t0={562.25} t1={564.7} de={0} a={1000} dur={1.1} x={960} y={250} size={150} pre="" suf="s OF PEOPLE" color={C.ambar} />
     <Chip t={t} t0={564.85} t1={567.6} text="MARKET STALLS · KIDS ON SHOULDERS" color={C.teal} tinta={C.noche} x={960} y={150} centro size={54} />
     <Chip t={t} t0={567.75} t1={571.1} text="PRIESTS · GUARDS · THE COUNCIL, DRESSED UP" color={C.violeta} x={960} y={150} centro size={50} />
     <Chip t={t} t0={571.25} t1={573.4} text="A PERFORMANCE" color={C.rojo} x={960} y={150} centro size={64} />
