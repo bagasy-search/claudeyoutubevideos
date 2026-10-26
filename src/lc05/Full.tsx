@@ -161,15 +161,15 @@ const p05: PlanB = {
 const VentanaCasa: React.FC = () => <g><rect x={20} y={P - 330} width={90} height={80} fill={AMBAR} opacity={0.95} /><Halo x={65} y={P - 290} r={260} color={AMBAR} fuerza={0.8} /></g>;
 
 // ============ 6 · «Let's count it.» el cuaderno se abre en 10 ============
-const Cuaderno: React.FC<{ abre?: number; lineas?: { t: string; desde: number; y?: number; tam?: number; color?: string }[]; cierra?: number }> = ({ abre = 0, lineas = [], cierra }) => {
+export const Cuaderno: React.FC<{ abre?: number; lineas?: { t: string; desde: number; x?: number; y?: number; tam?: number; color?: string }[]; cierra?: number }> = ({ abre = 0, lineas = [], cierra }) => {
   const f = useF();
   const abierto = f >= abre && (cierra === undefined || f < cierra);
   return (
     <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #5a3a28 0%, #2a1a12 70%)" }}>
-      <svg width={1920} height={1080} viewBox="0 0 1920 1080">
-        <Halo x={1300} y={300} r={700} color="#ffcf6e" fuerza={0.35} />
+      <svg width={1920} height={1080} viewBox="0 0 1920 1080" style={{ transform: `translate(${Math.sin(f / 47) * 10}px, ${Math.cos(f / 61) * 7}px) scale(${1 + Math.min(f, 900) / 900 * 0.09}) rotate(${Math.sin(f / 83) * 0.6}deg)`, transformOrigin: "55% 50%" }}>
+        <Halo x={1300} y={300} r={700} color="#ffcf6e" fuerza={0.32 + 0.05 * Math.sin(f / 5) + 0.03 * Math.sin(f / 2.3)} />
         <CuadernoCenso x={960} y={560} s={abierto ? 2.6 : 2.2} abierto={abierto} rot={-2} />
-        {abierto && lineas.map((l, i) => <Escrito key={i} t={l.t} x={l.y !== undefined ? 1010 : 1010} y={l.y ?? 380 + i * 70} f={f} desde={l.desde} tam={l.tam ?? 56} color={l.color ?? "#1d3a8a"} />)}
+        {abierto && lineas.map((l, i) => <Escrito key={i} t={l.t} x={l.x ?? 1010} y={l.y ?? 380 + i * 70} f={f} desde={l.desde} tam={l.tam ?? 56} color={l.color ?? "#1d3a8a"} />)}
       </svg>
     </AbsoluteFill>
   );
@@ -1061,7 +1061,7 @@ const p39: PlanB = {
 };
 
 // ============ 40 · «This is Abby, on Madeline Island» · el mapa · ¿cuántos son? · «One hundred.» ============
-const Ondas: React.FC<{ x: number; y: number; on: number }> = ({ x, y, on }) => {
+export const Ondas: React.FC<{ x: number; y: number; on: number }> = ({ x, y, on }) => {
   const f = useF();
   return <g opacity={on}>{[0, 1, 2].map((i) => { const r = 40 + ((f * 3 + i * 40) % 120); return <path key={i} d={`M${x + r * 0.7},${y - r * 0.7} A${r},${r} 0 0 1 ${x + r * 0.7},${y + r * 0.7}`} stroke={AMBAR} strokeWidth={6} fill="none" opacity={1 - r / 160} />; })}</g>;
 };
