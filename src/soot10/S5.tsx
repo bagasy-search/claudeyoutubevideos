@@ -1,5 +1,5 @@
 import React from "react";
-import { C, prog } from "./kit";
+import { C, prog, Chip } from "./kit";
 import { Persona, GRUMETE, PIRATA, Ropa } from "./persona";
 import { Key, CUB, BAT, BOD, Hamaca, Rata, Barril } from "./barco";
 import { G, S, P, arco, Galleta, Gorgojo, Queso, Carne, Arvejas, Diente, Tortuga, Fruta, Cuenco, Pupitre, Balde, Nube, Globo, Cota, Botella, TINTA } from "./obj";
@@ -228,6 +228,9 @@ export const O5: React.FC<{ t: number }> = ({ t }) => {
       <Contador t={t} t0={483.5} t1={484.8} de={1} a={8} x={960} y={190} size={140} color={C.crema} pre="WEEK " tFin={484.9} />
       <S t={483.5} p="tick" g={-8} d={1.3} />
       <Txt t={t} t0={494.5} t1={497.4} text="TAP, TAP, TAP" y={170} size={110} color={C.oro} />
+      <Chip t={t} t0={471.3} t1={483.4} text="DAY 1" color={C.teal} x={60} y={60} size={54} />
+      <Chip t={t} t0={484.9} t1={501.4} text="WEEK 8" color={C.rojo} x={60} y={60} size={54} />
+      <Chip t={t} t0={530.3} t1={538.8} text="GOOD WEEK ✓ MEAT · TURTLES · FRUIT" color={C.teal} x={90} y={300} size={52} />
       {en(t, 497.5, 501.4) && <div style={{ position: "absolute", inset: 0, background: `rgba(6,3,14,${0.6 * prog(t, 497.5, 498.3)})` }} />}
       {en(t, 498.3, 501.4) && <div style={{ position: "absolute", left: 960, top: 480, transform: "translate(-50%,-50%)", display: "flex", gap: 30 }}>{[0, 1].map((i) => <div key={i} style={{ width: 46, height: (t * 2) % 3 < 0.15 ? 6 : 46, borderRadius: 23, background: "#fff" }} />)}</div>}
       <Txt t={t} t0={498.5} t1={501.4} text="EAT IN THE DARK" y={760} size={96} color={C.crema} />

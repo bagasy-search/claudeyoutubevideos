@@ -288,7 +288,7 @@ export const O8: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={852.8} t1={854.2} text="BROKE APART" y={170} size={150} color={C.rojo} />
       {/* 140 → 2 */}
       {en(t, 854.4, 858.2) && <Hombres t={t} />}
-      <Txt t={t} t0={854.9} t1={856.8} text="140+ MEN ON BOARD" y={200} size={100} />
+      <Txt t={t} t0={854.9} t1={856.4} text="140+ MEN ON BOARD" y={200} size={100} />
       <Txt t={t} t0={856.9} t1={858.2} text="ONLY 2 SURVIVED" y={200} size={110} color={C.lima} />
       {[854.9, 855.1, 855.3, 855.5].map((a, i) => <S key={i} t={a} p="popcluster" g={-12} pitch={1 + i * 0.05} />)}
       <S t={856.9} p="fail" g={-10} />
