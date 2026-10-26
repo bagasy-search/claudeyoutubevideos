@@ -188,7 +188,7 @@ export const P0Pant: React.FC<{ t: number }> = ({ t }) => (
     <Sello t={t} t0={2.55} t1={3.75} text="RENT: 0" x={960} y={330} color={C.teal} size={120} rot={-8} />
     <Chip t={t} t0={3.85} t1={5.9} text="PAID EVERY WEEK" color={C.ambar} tinta={C.noche} x={200} y={170} size={58} />
     {vig(t, 3.8, 6) && <div style={{ position: "absolute", left: 200, top: 230, display: "flex", gap: 12 }}>{Array.from({ length: 7 }, (_, i) => <div key={i} style={{ width: 56, height: 56, borderRadius: 12, background: t > 3.9 + i * 0.28 ? C.lima : "rgba(27,18,64,.6)", transform: `scale(${t > 3.9 + i * 0.28 ? 1 : 0.8})` }} />)}</div>}
-    <Barras t={t} t0={6.0} t1={9.1} x={540} y={660} alto={400} ancho={110} items={[{ label: "BAKER", v: 30, color: "#e0a63a" }, { label: "SMITH", v: 36, color: "#7d8796" }, { label: "CARPENTER", v: 33, color: C.tierra }, { label: "YOU", v: 100, color: C.rojo, t0: 7.6 }]} />
+    <Barras t={t} t0={6.0} t1={9.1} x={540} y={470} alto={280} ancho={110} items={[{ label: "BAKER", v: 30, color: "#e0a63a" }, { label: "SMITH", v: 36, color: "#7d8796" }, { label: "CARPENTER", v: 33, color: C.tierra }, { label: "YOU", v: 100, color: C.rojo, t0: 7.6 }]} />
     <Titulo t={t} t0={9.15} t1={13.3} text="20 YEARS" y={190} size={150} color={C.crema} />
     <Chip t={t} t0={14.6} t1={17.0} text="ALONE · BY THE DOOR" color={C.rojo} x={1240} y={190} centro size={58} />
     <Chip t={t} t0={19.5} t1={22.3} text="↻ UPSIDE DOWN" color={C.ambar} tinta={C.noche} x={960} y={170} centro size={70} />

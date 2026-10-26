@@ -240,7 +240,10 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
       {/* ── los hijos y las peticiones */}
       {vig(t, 846.0, 857.8) && (
         <>
-          <Franz x={6560} y={SUELO - 10} t={t} flip viejoF expr={t > 851.7 ? "neutro" : "triste"} mira={-1} bD={t > 851.7 ? 70 : 10} cD={t > 851.7 ? 70 : 10} />
+          <Franz x={6560} y={SUELO - 10} t={t} flip viejoF expr={t > 851.7 ? "neutro" : "triste"} mira={-1} miraY={t > 851.7 && t < 853.3 ? 1 : 0} habla={t > 853.3} bD={t > 851.7 ? (t < 853.3 ? 75 + Math.sin(t * 15) * 12 : 120 + Math.sin(t * 6) * 25) : 10} cD={t > 851.7 ? 70 : 10}
+            manoD={t > 851.7 ? <g><path d="M 0 0 L 8 -70 Q 30 -90 22 -40 Z" fill="#fff6e0" stroke="#7a3d14" strokeWidth={3} /></g> : undefined} />
+          {t > 851.7 && <Svg>{Array.from({ length: Math.min(12, Math.floor((t - 851.7) * 4)) }, (_, k) => <rect key={k} x={6380 + ((k * 37) % 9) - 4} y={SUELO - 150 - k * 9} width={90} height={8} rx={2} fill={k % 2 ? "#f6ecd2" : "#fff6e0"} stroke="#7a3d14" strokeWidth={2} />)}</Svg>}
+          {t > 851.7 && <TextoMundo x={6425} y={SUELO - 290} text={`PETITION #${Math.min(40, 1 + Math.floor((t - 851.7) * 9))}`} size={34} color={C.ambar} borde="#2b1c14" />}
           {t < 851.8 && (
             <>
               <Persona x={6300} y={SUELO - 10} h={200} t={t} seed={850} ropa={CIVIL(160)} expr="feliz" bD={130} cD={30} manoD={<rect x={-5} y={-120} width={10} height={130} fill="#8a5a2a" />} />
@@ -372,7 +375,7 @@ const Lamina: React.FC<{ t: number }> = ({ t }) => {
   );
   const B = "#f6efe6", K = "#7a6a5a";
   return (
-    <div style={{ position: "absolute", left: 560, top: 560, transform: `translate(-50%,-50%) scale(${e * 0.88}) rotate(-2deg)`, background: "#fbecc8", border: "10px solid #7a3d14", borderRadius: 24, padding: 10, boxShadow: "0 14px 0 rgba(20,10,50,.35)" }}>
+    <div style={{ position: "absolute", left: 560 - clamp((t - 762.6) / 0.5, 0, 1) * 230, top: 560 + clamp((t - 762.6) / 0.5, 0, 1) * 20, transform: `translate(-50%,-50%) scale(${e * (0.88 - clamp((t - 762.6) / 0.5, 0, 1) * 0.2)}) rotate(-2deg)`, background: "#fbecc8", border: "10px solid #7a3d14", borderRadius: 24, padding: 10, boxShadow: "0 14px 0 rgba(20,10,50,.35)" }}>
       <svg width={720} height={760} viewBox="-40 0 720 760">
         <g stroke={K} strokeWidth={5}>
           <circle cx={300} cy={100} r={62} fill={B} />
@@ -484,7 +487,7 @@ export const P8Pant: React.FC<{ t: number }> = ({ t }) => (
     <Titulo t={t} t0={750.75} t1={752.5} text="BUT THE REAL SECRET..." y={200} size={100} color={C.crema} />
     <Chip t={t} t0={752.6} t1={755.9} text="THINK ABOUT HIS WHOLE CAREER" color={C.violeta} x={960} y={150} centro size={58} />
     <Lamina t={t} />
-    <Chip t={t} t0={762.95} t1={764.85} text="HOW A BODY IS PUT TOGETHER" color={C.teal} tinta={C.noche} x={560} y={150} centro size={52} />
+    <Chip t={t} t0={762.95} t1={764.85} text="HOW A BODY IS PUT TOGETHER" color={C.teal} tinta={C.noche} x={960} y={150} centro size={52} />
     <Chip t={t} t0={765.0} t1={768.4} text="BETTER THAN MANY OFFICIAL DOCTORS" color={C.noche} x={960} y={150} centro size={56} />
     <Barras t={t} t0={768.5} t1={770.5} x={1540} y={760} items={[{ label: "DOCTOR", v: 2, color: "#5a4a8a" }, { label: "FRANZ", v: 9, color: C.lima, t0: 769.0 }]} alto={360} ancho={120} />
     <Titulo t={t} t0={770.65} t1={773.4} text="THE TOWN'S SECRET DOCTOR" y={200} size={100} color={C.lima} borde="#1b2a10" />

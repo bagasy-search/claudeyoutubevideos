@@ -456,7 +456,7 @@ export const Muralla: React.FC<{ x: number; w: number }> = ({ x, w }) => {
     <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
       <rect x={x} y={SUELO - 520} width={w} height={520} fill={p1} />
       {Array.from({ length: Math.floor(w / 80) }, (_, i) => <rect key={i} x={x + i * 80} y={SUELO - 570} width={48} height={60} fill={p1} />)}
-      {Array.from({ length: 9 }, (_, f) => Array.from({ length: Math.ceil(w / 120) }, (_, c) => <rect key={`${f}${c}`} x={x + c * 120 + (f % 2) * 60} y={SUELO - 500 + f * 56} width={110} height={50} rx={6} fill={p2} opacity={0.35} />))}
+      {Array.from({ length: 9 }, (_, f) => Array.from({ length: Math.ceil(w / 120) }, (_, c) => { const bx = x + c * 120 + (f % 2) * 60, bw = Math.min(110, x + w - 6 - bx); return bw > 20 ? <rect key={`${f}${c}`} x={bx} y={SUELO - 500 + f * 56} width={bw} height={50} rx={6} fill={p2} opacity={0.35} /> : null; }))}
       <path d={`M ${x + w / 2 - 120} ${SUELO} L ${x + w / 2 - 120} ${SUELO - 220} Q ${x + w / 2} ${SUELO - 340} ${x + w / 2 + 120} ${SUELO - 220} L ${x + w / 2 + 120} ${SUELO} Z`} fill="#3b2614" />
       {Array.from({ length: 7 }, (_, i) => <line key={i} x1={x + w / 2 - 105 + i * 35} y1={SUELO - 270} x2={x + w / 2 - 105 + i * 35} y2={SUELO} stroke="#6b5a4a" strokeWidth={8} />)}
     </svg>

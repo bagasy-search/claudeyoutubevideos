@@ -233,7 +233,7 @@ export const P2Mundo: React.FC<{ t: number }> = ({ t }) => {
           {/* el concejo mira */}
           {t > 233 && t < 243.5 && [11420, 11520, 11620].map((cx, i) => <Persona key={cx} x={cx} y={SUELO - 10} h={300} t={t} seed={390 + i} ropa={{ tunica: "#2b2140", tunica2: "#1b1530", cinto: C.oro, piel: "#e9b08a", piel2: "#c98f6a", pelo: "#d8d2cc" }} gorro="noble" barba="#d8d2cc" expr={golpe ? "orgullo" : "neutro"} bD={20} bI={20} />)}
           {/* el golpe */}
-          {vig(t, 239.4, 240.3) && <Svg><g transform={`translate(${HORCA} ${SUELO - 420}) scale(${1 + (t - 239.4) * 3})`} opacity={1 - (t - 239.4) / 0.9}><path d="M 0 -160 L 40 -50 L 160 -60 L 70 20 L 120 140 L 0 70 L -120 140 L -70 20 L -160 -60 L -40 -50 Z" fill="#fff6c8" stroke={C.ambar} strokeWidth={10} /></g></Svg>}
+          {vig(t, 239.4, 240.0) && <Svg><g transform={`translate(${HORCA} ${SUELO - 470})`} opacity={1 - (t - 239.4) / 0.6}>{Array.from({ length: 12 }, (_, k) => { const a = (k * Math.PI) / 6, r0 = 60 + (t - 239.4) * 300, r1 = r0 + 70; return <line key={k} x1={Math.cos(a) * r0} y1={Math.sin(a) * r0} x2={Math.cos(a) * r1} y2={Math.sin(a) * r1} stroke="#ffe28a" strokeWidth={14} strokeLinecap="round" />; })}</g></Svg>}
         </>
       )}
       {/* ── el entierro: nadie carga el cajón… salvo los verdugos de los pueblos vecinos */}
@@ -327,7 +327,7 @@ export const P2Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={171.6} t1={173.9} text="AN ORDINARY CARPENTER" color={C.teal} tinta={C.noche} x={960} y={150} centro size={60} />
     <Prohibido t={t} />
     <Sello t={t} t0={177.75} t1={179.2} text="= HONOR LOST" x={960} y={330} size={100} rot={-8} />
-    <Sello t={t} t0={179.4} t1={180.9} text="KICKED OUT" x={1350} y={300} size={90} rot={8} />
+    <Sello t={t} t0={179.4} t1={180.9} text="KICKED OUT" x={1000} y={420} size={90} rot={-6} />
     <Chip t={t} t0={180.95} t1={183.1} text="CUSTOMERS: GONE" color={C.rojo} x={960} y={150} centro size={62} />
     <Titulo t={t} t0={183.3} t1={185.9} text="ONE HANDSHAKE..." y={180} size={110} color={C.crema} />
     <Titulo t={t} t0={186.0} t1={188.1} text="...AND NOBODY KNOWS YOU" y={180} size={90} color={C.rojo} borde="#2b0a14" />

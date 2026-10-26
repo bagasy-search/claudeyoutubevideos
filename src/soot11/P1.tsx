@@ -124,8 +124,8 @@ const Arbol: React.FC<{ t: number }> = ({ t }) => {
       <TextoMundo x={960} y={470} text="HEINRICH" size={40} color="#7a3d14" borde="#f6e3b4" />
       <TextoMundo x={560} y={800} text="FRANZ" size={44} color="#a3202f" borde="#f6e3b4" />
       <Sello t={t} t0={101.6} text="UNCLEAN" x={1240} y={300} size={70} rot={-10} />
-      {hijos.map((x, i) => <Sello key={x} t={t} t0={102.85 + i * 0.22} text="UNCLEAN" x={x + 150} y={470} size={34} rot={-12 + i * 5} />)}
-      {nietos.map((x, i) => <Sello key={x} t={t} t0={104.35 + i * 0.16} text="UNCLEAN" x={x + 40} y={900} size={28} rot={-14 + i * 4} />)}
+      {hijos.map((x, i) => <Sello key={x} t={t} t0={102.85 + i * 0.22} text="UNCLEAN" x={x} y={700} size={34} rot={-12 + i * 5} />)}
+      {nietos.map((x, i) => <Sello key={x} t={t} t0={104.35 + i * 0.16} text="UNCLEAN" x={x} y={1012} size={26} rot={-14 + i * 4} />)}
       {t > 114 && t < 118.9 && <Svg><circle cx={560} cy={640} r={170} fill="none" stroke="#e8344a" strokeWidth={10} strokeDasharray={1070} strokeDashoffset={1070 * (1 - clamp((t - 114) / 0.5, 0, 1))} /></Svg>}
     </>
   );
@@ -216,7 +216,7 @@ export const P1Pant: React.FC<{ t: number }> = ({ t }) => (
     <Globo t={t} t0={95.6} t1={97.3} text="...yes." x={1250} y={320} size={64} cola="der" />
     <Titulo t={t} t0={97.4} t1={99.6} text="RUINED FOREVER" y={180} size={120} color={C.rojo} borde="#2b0a14" />
     <Chip t={t} t0={105.9} t1={108.2} text="NO MORE BIRDS" color={C.naranja} x={960} y={960} centro size={58} />
-    <Sello t={t} t0={108.5} t1={111.0} text="NO GUILD" x={1500} y={930} size={84} />
+    <Sello t={t} t0={108.5} t1={111.0} text="NO GUILD" x={470} y={300} size={84} />
     <Sello t={t} t0={111.2} t1={113.9} text="NO WEDDING" x={1420} y={860} size={90} rot={10} />
     <Chip t={t} t0={114.1} t1={116.4} text="FRANZ · AGE 19" color={C.rojo} x={960} y={150} centro size={62} />
     <Lista t={t} t0={116.5} t1={118.9} />

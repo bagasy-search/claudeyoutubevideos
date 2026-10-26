@@ -44,6 +44,7 @@ export const P4Mundo: React.FC<{ t: number }> = ({ t }) => {
   const afuera = t < 394.5;
   const llega = interp(t, [397.5, 401.5], [5700, CASA]);
   const saluda = vig(t, 431.4, 435.4);
+  const martilla = vig(t, 402.2, 405.8);
   return (
     <>
       {afuera && (
@@ -98,8 +99,13 @@ export const P4Mundo: React.FC<{ t: number }> = ({ t }) => {
         <>
           {t > 397.4 && <Franz x={t < 401.5 ? llega : CASA} y={SUELO - 10} t={t} camina={vig(t, 397.5, 401.5) ? 1.4 : 0} flip={t > 421 && t < 435.4}
             expr={vig(t, 412, 418.1) ? "feliz" : saluda ? "feliz" : t > 435.4 ? "triste" : "neutro"}
-            bD={saluda ? 150 + Math.sin(t * 9) * 18 : vig(t, 397.5, 401.5) ? 140 : 8} cD={saluda ? 30 : 60}
-            manoD={vig(t, 397.5, 401.5) ? <g><line x1={0} y1={0} x2={60} y2={-80} stroke="#6b3a1f" strokeWidth={8} /><circle cx={70} cy={-96} r={34} fill="#c9a36a" /></g> : undefined} />}
+            bD={saluda ? 150 + Math.sin(t * 9) * 18 : vig(t, 397.5, 401.5) ? 140 : martilla ? 110 + Math.max(0, Math.sin(t * 11)) * 50 : vig(t, 412, 418) ? 135 + Math.sin(t * 7) * 12 : 8} cD={saluda ? 30 : martilla ? 70 : vig(t, 412, 418) ? 10 : 60}
+            bI={vig(t, 405.9, 409.4) ? 120 : vig(t, 412, 418) ? 135 - Math.sin(t * 7) * 12 : vig(t, 418.1, 421.2) ? 140 + Math.sin(t * 8) * 20 : undefined} cI={vig(t, 405.9, 409.4) || vig(t, 412, 418) ? 15 : undefined}
+            mira={vig(t, 405.9, 407.3) ? -1 : vig(t, 407.3, 409.4) ? 1 : vig(t, 423, 429.6) ? (Math.sin(t * 1.6) > 0 ? -1 : 1) : 0} miraY={vig(t, 409.5, 412) ? -1 : undefined}
+            salta={vig(t, 412.2, 413.4) ? 412.3 : vig(t, 414.8, 416) ? 414.9 : undefined} habla={vig(t, 412, 418) || vig(t, 423, 429.6)}
+            manoD={vig(t, 397.5, 401.5) ? <g><line x1={0} y1={0} x2={60} y2={-80} stroke="#6b3a1f" strokeWidth={8} /><circle cx={70} cy={-96} r={34} fill="#c9a36a" /></g> : martilla ? <g><line x1={0} y1={0} x2={0} y2={-70} stroke="#6b3a1f" strokeWidth={10} /><rect x={-26} y={-92} width={52} height={26} rx={5} fill="#7a7a8a" /></g> : undefined} />}
+          {martilla && Math.sin(t * 11) < -0.85 && <TextoMundo x={CASA + 150} y={SUELO - 360} text="TOK" size={60} color={C.ambar} borde="#2b1c14" />}
+          {vig(t, 401.5, 406) && <Saco x={CASA - 120} y={SUELO - 70} s={0.5} color="#c9a36a" />}
           {/* orillas: "this bank / that bank / the middle" */}
           {vig(t, 405.9, 411.9) && (
             <>

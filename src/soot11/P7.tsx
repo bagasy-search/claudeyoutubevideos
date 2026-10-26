@@ -36,8 +36,8 @@ export const P7K: Llave[] = [
   [707.6, PUESTO - 60, 560, 2.3, 0.8],
   [711.5, PUESTO, 560, 0.9, 0.9],
   [715.0, 5800, 420, 0.5, 1.2],
-  [718.6, 6000, 360, 0.16, 1.4],
-  [721.2, 6000, 360, 0.16, 1.0],
+  [718.6, 6000, -500, 0.185, 1.4],
+  [721.2, 6000, -500, 0.185, 1.0],
   [723.3, 7300, 600, 1.2, 1.2],
   [726.3, ATRAS, 620, 1.35, 0.9],
   [728.0, ATRAS - 40, 600, 1.7, 0.7],
@@ -245,8 +245,14 @@ export const P7Mundo: React.FC<{ t: number }> = ({ t }) => {
       {/* ── el mapa con las 7 trampas */}
       {vig(t, 717.8, 722.2) && (
         <>
+          <Svg>
+            <rect x={-3000} y={SUELO + 600} width={18000} height={5000} fill="#5e8a63" />
+            <rect x={-3000} y={SUELO + 600} width={18000} height={60} fill="#4f7a56" />
+            {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((k) => <ellipse key={k} cx={300 + k * 1400} cy={SUELO + 1150 + (k % 3) * 260} rx={420} ry={110} fill="#6f9a6a" />)}
+            <path d={["BLOOD", "TOUCH", "CHURCH", "ADDRESS", "MARRIAGE", "STAGE", "JOBS"].map((_, i) => `${i ? "L" : "M"} ${1700 + i * 1430} ${SUELO - 700 - (i % 2) * 300 - 560}`).join(" ")} stroke="#fff" strokeWidth={34} strokeDasharray="60 50" fill="none" strokeLinecap="round" opacity={clamp((t - 718.7) / 1.6, 0, 1) * 0.85} />
+          </Svg>
           {["BLOOD", "TOUCH", "CHURCH", "ADDRESS", "MARRIAGE", "STAGE", "JOBS"].map((l, i) => (
-            <Pin key={i} t={t} t0={718.7 + i * 0.22} x={1700 + i * 1430} y={SUELO - 100 - (i % 2) * 220} n={i + 1} s={3.4} label={l} />
+            <Pin key={i} t={t} t0={718.7 + i * 0.22} x={1700 + i * 1430} y={SUELO - 700 - (i % 2) * 300} n={i + 1} s={3.4} label={l} />
           ))}
         </>
       )}
