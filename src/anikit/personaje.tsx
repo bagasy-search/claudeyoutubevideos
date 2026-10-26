@@ -446,6 +446,8 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
         </radialGradient>
         <clipPath id={`hc${uid}`}><circle r={Rk} /></clipPath>
       </defs>
+      {/* el arco del auricular va DETRÁS de la cabeza: sólo asoma por arriba, nunca cruza la cara al girar */}
+      {tiene("auriculares") && <path d={`M${-R - 3},${-R * 0.05} Q0,${-R * 2 - 16} ${R + 3},${-R * 0.05}`} stroke={tiene("auriculares").color} fill="none" strokeLinecap="round" strokeWidth={5} />}
       {capucha && <path d={`M${-R * 1.05},${R * 0.95} Q${-R * 1.25},${-R * 0.1} ${-R * 0.7},${-R * 0.78} Q${-R * 0.2},${-R * 1.12} ${R * 0.25},${-R * 1.02} Q${-R * 0.35},${-R * 0.55} ${-R * 0.55},${R * 0.2} Q${-R * 0.2},${R * 1.05} ${R * 0.75},${R * 0.92} Q${R * 0.2},${R * 1.3} ${-R * 1.05},${R * 0.95} Z`} fill={capucha.color} />}
       {pelo?.forma === "bob" && <path d={`M${-R - 8},${R * 0.75} Q${-R - 12},${-R - 10} 0,${-R - 9} Q${R + 12},${-R - 10} ${R + 8},${R * 0.75} Z`} fill={pelo.color} />}
       {pelo?.forma === "cola" && <path d={`M${-R + 2},${-R * 0.2} Q${-R - 30},${R * 0.2} ${-R - 22},${R * 1.2} Q${-R - 6},${R * 0.5} ${-R + 4},${R * 0.2} Z`} fill={pelo.color} />}
@@ -517,7 +519,6 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
       )}
       {tiene("auriculares") && (
         <g stroke={tiene("auriculares").color} fill="none" strokeLinecap="round">
-          <path d={`M${-R - 3},${-R * 0.05} Q0,${-R * 2 - 16} ${R + 3},${-R * 0.05}`} strokeWidth={5} />
           <rect x={R - 4} y={-R * 0.15} width={12} height={22} rx={5} fill={tiene("auriculares").color} strokeWidth={0} />
           <path d={`M${R + 2},${R * 0.2} Q${R * 1.18},${R * 0.75} ${R * 0.8},${R * 1.12}`} strokeWidth={3} />
         </g>
