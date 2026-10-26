@@ -123,13 +123,13 @@ export const Glinfatico: React.FC<{ dCrece?: number; dLava?: number; dNombre?: n
     <Pizarra titulo="THE BRAIN TAKES OUT ITS TRASH" fuente="Xie et al., Science, 2013 · University of Rochester" profe={false}>
       {Array.from({ length: 12 }).map((_, i) => {
         const cx = 960 + ((i % 4) - 1.5) * 240 * sep, cy = 600 + (Math.floor(i / 4) - 1) * 150 * sep;
-        return <ellipse key={i} cx={cx} cy={cy} rx={106} ry={76} fill="#3a2a44" stroke={ROSA_C} strokeWidth={7} />;
+        return <ellipse key={i} cx={cx} cy={cy} rx={106 + 4 * Math.sin(f / 16 + i)} ry={76 + 3 * Math.sin(f / 19 + i * 2)} fill="#3a2a44" stroke={ROSA_C} strokeWidth={7} />;
       })}
       {lava > 0 && lava < 1 && owen === 0 && <path d={`M${frente - 60},300 C${frente + 30},450 ${frente - 50},700 ${frente + 20},900`} fill="none" stroke={AZUL} strokeWidth={80} opacity={0.5} strokeLinecap="round" />}
       {basura.map((b, i) => {
         const pasada = owen > 0 ? 0 : Math.max(0, Math.min(1, (frente - b.x) / 300));
         const sale = (i % 5) < 3 ? pasada : 0; // ~60 % se va con la oleada
-        return <circle key={i} cx={b.x + sale * 260} cy={b.y} r={17} fill={AMBAR} opacity={Math.max(0, 1 - sale)} />;
+        return <circle key={i} cx={b.x + sale * 260 + 8 * Math.sin(f / 20 + i)} cy={b.y + 8 * Math.cos(f / 23 + i * 1.7)} r={17} fill={AMBAR} opacity={Math.max(0, 1 - sale)} />;
       })}
       <T x={960} y={268} s={50} c={AZUL} w={700} o={g * (1 - owen)}>{`asleep: +60% space · TRASH ${trash}%`}</T>
       <T x={960} y={975} s={44} c={AMBAR} o={ease(f, dLava + 40, dLava + 60) * (1 - ease(f, dNombre - 10, dNombre)) * (1 - owen)}>washes out beta-amyloid (linked to Alzheimer's)</T>

@@ -666,16 +666,15 @@ export const P32Mensaje: React.FC = () => {
   const cambio = k(335.8);
   return (
     <AbsoluteFill>
-      <Escena Set={TwoFlatCorte} pal={PAL} claves={[mira(0, PIES.x - 60, PIES.y - 150, 1.6), mira(k(334), PIES.x - 70, PIES.y - 160, 1.75, { curva: "inout" })]} seed={32} setProps={{ hora: "alba", luzCocina: false, luzBaño: false, luzDorm: false }}
+      <Escena Set={TwoFlatCorte} pal={PAL} claves={[mira(0, PIES.x - 170, PIES.y - 150, 2.5), mira(k(334), PIES.x - 170, PIES.y - 160, 2.65, { curva: "inout" })]} seed={32} setProps={{ hora: "alba", luzCocina: false, luzBaño: false, luzDorm: false }}
         medio={<OwenEscalera caras={[{ f: 0, v: "cansado" }, { f: k(330.0), v: "sorpresa" }, { f: k(332.5), v: "duda" }, { f: k(335.8), v: "miedo" }]} poses={[{ f: 0, v: "celular" }, { f: k(332.5), v: { ...SENT_ESC, hD: 30, cD: 125, cabeza: 26, tronco: 10 } }, { f: k(335.8), v: "celular" }]} giros={[{ f: 0, v: 0.3 }]} />} />
-      <AbsoluteFill style={{ background: "radial-gradient(circle at 72% 45%, rgba(111,168,255,0.22) 0%, rgba(5,7,13,0.18) 55%)" }} />
       <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}>
         <MensajeCel de="Halden Clinic · Dr. Imani Hale" texto={"Week 3 complete.\nPlease sleep now,\nparticipant 47.\nYour next change\nbegins when you wake up."} desde={k(326.4)} x={560} s={1.25} />
       </svg>
       {/* 26-oct v8 (ojo: el contador pisaba el reloj): cuenta propia arriba al centro, sobre pastilla, con pop al cambiar */}
-      <div style={{ position: "absolute", left: 1300, top: 70, transform: `translateX(-50%) scale(${1 + (f >= cambio ? Math.exp(-(f - cambio) / 6) * 0.25 : 0)})`, background: "rgba(10,14,28,0.92)", borderRadius: 18, padding: "12px 34px", fontFamily: F_HUD, fontWeight: 800, fontSize: 54, color: f >= cambio ? ROJO_OWEN : VERDE, whiteSpace: "nowrap" }}>PARTICIPANTS {f >= cambio ? "44/47" : "45/47"}</div>
+      <div style={{ position: "absolute", left: 1640, top: 60, transform: `translateX(-50%) scale(${1 + (f >= cambio ? Math.exp(-(f - cambio) / 6) * 0.25 : 0)})`, background: "rgba(10,14,28,0.92)", borderRadius: 18, padding: "12px 34px", fontFamily: F_HUD, fontWeight: 800, fontSize: 54, color: f >= cambio ? ROJO_OWEN : VERDE, whiteSpace: "nowrap" }}>PARTICIPANTS {f >= cambio ? "44/47" : "45/47"}</div>
       {/* 26-oct v7 (ojo: «44/47 con boom»): el número nuevo estalla en el centro y se va a su rincón */}
-      {f >= cambio && f < cambio + 45 && <div style={{ position: "absolute", left: 1450, top: 520, transform: `translate(-50%,-50%) scale(${Math.min(1, (f - cambio) / 5) * (1 + Math.exp(-(f - cambio) / 6) * 0.5)})`, opacity: Math.min(1, (45 - (f - cambio)) / 10), fontFamily: F_HUD, fontWeight: 900, fontSize: 230, color: ROJO_OWEN, WebkitTextStroke: "8px #fff" }}>44/47</div>}
+      {f >= cambio && f < cambio + 45 && <div style={{ position: "absolute", left: 1170, top: 850, transform: `translate(-50%,-50%) scale(${Math.min(1, (f - cambio) / 5) * (1 + Math.exp(-(f - cambio) / 6) * 0.5)})`, opacity: Math.min(1, (45 - (f - cambio)) / 10), fontFamily: F_HUD, fontWeight: 900, fontSize: 170, color: ROJO_OWEN, WebkitTextStroke: "7px #fff" }}>44/47</div>}
     </AbsoluteFill>
   );
 };
