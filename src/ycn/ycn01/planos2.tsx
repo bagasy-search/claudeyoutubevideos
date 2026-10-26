@@ -175,6 +175,13 @@ export const P45Puertas: React.FC = () => {
         { l: LIGA2, ruta: [{ f: 0, x: PU - 300 }, { f: 200, x: PU + 100 }], correr: 1, c: "miedo", d: 1 }, { l: PINPAL, ruta: [{ f: 0, x: PU - 500 }, { f: 220, x: PU - 50 }], correr: 1, c: "miedo", d: 1, seed: 6 },
         { l: LIGA, ruta: [{ f: 0, x: PU + 300 }, { f: 220, x: PU - 600 }], correr: 1, c: "miedo", d: -1, seed: 7 },
         { l: zombi(LIGA3), ruta: [{ f: 0, x: PU + 420 }, { f: 250, x: PU - 120 }], p: "zombi", c: "zombi", d: -1, op: (ff) => (ff > k(266) ? 1 : 0) },
+        { l: zombi(WAFFLE), ruta: [{ f: 0, x: PU + 200 }, { f: 250, x: PU + -260 }], p: "zombi", c: "zombi", d: -1, seed: 11, esc: 0.95 },
+        { l: zombi(LIGA), ruta: [{ f: 0, x: PU + 520 }, { f: 250, x: PU + 40 }], p: "zombi", c: "zombi", d: -1, seed: 12, esc: 1.0 },
+        { l: PINPAL, ruta: [{ f: 0, x: PU + -800 }, { f: 250, x: PU + -200 }], correr: 1, c: "miedo", d: 1, seed: 13, esc: 0.92 },
+        { l: LIGA2, ruta: [{ f: 0, x: PU + -1000 }, { f: 250, x: PU + -120 }], correr: 1, c: "miedo", d: 1, seed: 14, esc: 1.0 },
+        { l: zombi(PINPAL), ruta: [{ f: 0, x: PU + 650 }, { f: 250, x: PU + 150 }], p: "zombi", c: "zombi", d: -1, seed: 15, esc: 0.9 },
+        { l: LIGA3, ruta: [{ f: 0, x: PU + -650 }, { f: 250, x: PU + 350 }], correr: 1, c: "miedo", d: 1, seed: 16, esc: 1.0 },
+        { l: zombi(LIGA2), ruta: [{ f: 0, x: PU + 800 }, { f: 250, x: PU + 300 }], p: "zombi", c: "zombi", d: -1, seed: 17, esc: 1.05 },
       ]}
       hud={<Dice quien="rafi" t="some weren't people anymore" x={260} y={160} desde={k(266)} tam={62} />} />
   );
@@ -204,9 +211,9 @@ export const P47Nombre: React.FC = () => {
 export const P48Cal: React.FC = () => {
   const k = kDe(277.85);
   return (
-    <Sala cl={[mira(0, 3000, 560, 0.8), mira(k(282.9), CH - 400, 560, 1.1, { curva: "inout" })]} sp={{ luz: "alerta" }}
+    <Sala cl={[mira(0, CH - 900, 560, 1.0), mira(k(282.9), CH - 450, 560, 1.1, { curva: "inout" })]} sp={{ luz: "alerta" }}
       gente={[
-        { l: CAL, ruta: [{ f: 0, x: 2100 }, { f: k(282.9), x: CH - 60, curva: "lineal" }], correr: 1, c: "determinado", d: 1, mI: <Linterna prendida={false} /> },
+        { l: CAL, ruta: [{ f: 0, x: CH - 1900 }, { f: k(282.9), x: CH - 60, curva: "lineal" }], correr: 1, c: "determinado", d: 1, mI: <Linterna prendida={false} /> },
         { l: LIGA, ruta: [{ f: 0, x: 3600 }, { f: k(282.9), x: 2600 }], correr: 1, c: "miedo", d: -1 },
       ]}
       hud={<Dice quien="rafi" t="not the doors. the chain." x={300} y={170} desde={k(280.2)} tam={66} />} />
@@ -268,7 +275,7 @@ export const P53Tiro: React.FC = () => {
     <Sacude en={[k(309.9)]} amp={14}>
       <Sala cl={[mira(0, PU - 260, P - 200, 1.6), mira(k(309.9), PU - 120, P - 100, 2.6, { curva: "in" })]} sp={{ luz: "alerta", persiana: (ff: number) => interpolate(ff, [0, k(309.9)], [0.86, 1], { extrapolateRight: "clamp" }) }}
         gente={[
-          { l: RAFI, ruta: [{ f: 0, x: PU - 900 }, { f: k(305.6), x: PU - 360, curva: "out" }, { f: k(310.5), x: PU - 720, curva: "out" }], correr: 1, p: [{ f: 0, v: "parado" }, { f: k(305.6), v: { tronco: 40, hD: 80, cD: 10, hI: 70, cI: 20 } }, { f: k(307.5), v: { tronco: -14, hD: 40, cD: 60, hI: 40, cI: 60, pI: -30, pD: 20 } }], c: [{ f: 0, v: "miedo" }, { f: k(307.5), v: "determinado" }], d: [{ f: 0, v: 1 }] },
+          { l: RAFI, ruta: [{ f: 0, x: PU - 900 }, { f: k(305.6), x: PU - 360, curva: "out" }, { f: k(310.5), x: PU - 720, curva: "out" }], correr: 1, p: [{ f: 0, v: "parado" }, { f: k(305.6), v: { tronco: 78, hD: 95, cD: 0, hI: 90, cI: 10, pI: -40, rI: 30, pD: -50, rD: 20 } }, { f: k(307.5), v: { tronco: -14, hD: 40, cD: 60, hI: 40, cI: 60, pI: -30, pD: 20 } }], c: [{ f: 0, v: "miedo" }, { f: k(307.5), v: "determinado" }], d: [{ f: 0, v: 1 }] },
           { l: NELL, ruta: [{ f: 0, x: PU - 200 }, { f: k(306), x: PU - 200 }, { f: k(310.5), x: PU - 560, curva: "out" }], p: [{ f: 0, v: gateo }, { f: k(307), v: "sentadoSuelo" }], c: "miedo", d: 1 },
         ]}
         hud={<Dice quien="rafi" t="I dove." x={1250} y={180} desde={k(304)} tam={90} />} />
@@ -464,7 +471,7 @@ export const P71Lado: React.FC = () => {
   return (
     <Sala cl={[mira(0, 1900, 360, 0.9), mira(k(410.6), 1900, 400, 0.7, { curva: "inout" })]} sp={{ luz: "noche", persiana: 1, tiza: 1, dia: "DAY ONE" }}
       gente={[{ l: CAL, x: pistaX(8) - 60, p: "parado", c: "triste", d: -1, luz: RIM.pantalla }, { l: NELL, x: 1860, sent: 0, p: "sentadoSuelo", c: "neutral", d: 1, mir: { x: 0, y: -1 }, mD: <Walkie s={0.8} /> }]}
-      hud={<><HudDia dia={1} /><Dice quien="cal" t="So she can see it from anywhere." x={960} y={860} desde={k(408.5)} centro tam={64} /></>} />
+      hud={<><HudDia dia={1} /><Dice quien="cal" t="So she can see it from anywhere." x={960} y={150} desde={k(408.5)} centro tam={64} /></>} />
   );
 };
 
@@ -484,7 +491,7 @@ export const P73Toc: React.FC = () => {
   const gs = [k(415), k(415.6), k(416.2)];
   return (
     <Sacude en={gs} amp={5}>
-      <Sala cl={[mira(0, -1100, 560, 1.8), mira(k(417), PP.puertaCocina + 200, 560, 1.6, { curva: "inout" })]} snack sp={{ luz: "noche", tv: "apagada" }}
+      <Sala cl={[mira(0, -1100, 470, 2.6), mira(k(416.6), -1100, 480, 2.4), mira(k(418.5), PP.puertaCocina + 200, 560, 1.6, { curva: "inout" })]} snack sp={{ luz: "noche", tv: "apagada" }}
         detras={[{ l: RAFI, x: -1100, p: "parado", c: "miedo", d: [{ f: 0, v: 1 }, { f: k(417), v: -1 }], mir: { x: -1, y: 0 } }]}
         hud={<><Dice quien="otro" t="knock." x={300} y={300} desde={k(415)} tam={70} /><Dice quien="otro" t="knock." x={460} y={400} desde={k(415.6)} tam={70} /><Dice quien="otro" t="knock." x={620} y={500} desde={k(416.2)} tam={70} /><HudDia dia={1} hora="3:10 AM" /></>} />
     </Sacude>

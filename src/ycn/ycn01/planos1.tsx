@@ -38,10 +38,8 @@ export const P02Cadena: React.FC = () => {
         { l: CAL, x: CH - 40, p: tironCadena(16), c: "determinado", d: 1 },
         { l: NELL, x: PU - 200, p: { tronco: 58, pI: 70, rI: 120, pD: 80, rD: 125, hD: 92, cD: 0, hI: 70, cI: 20, cabeza: -30 }, c: "miedo", d: 1 },
         { l: DOT, x: PU - 640, p: [{ f: 0, v: "señalar" }, { f: 40, v: "hablar" }], c: "enojo", habla: [[0, 120]], d: 1 },
-        { l: zombi(WAFFLE), x: PU + 260, p: "zombi", c: "zombi", d: -1, op: () => 0.8 },
-        { l: zombi(LIGA2), x: PU + 430, p: "zombi", c: "zombi", d: -1, op: () => 0.7 },
       ]}
-      hud={<><HudDia dia={1} rayas={1} /><Dice quien="nell" t="(my walkie!)" x={300} y={760} desde={k(5)} hasta={k(11.4)} tam={56} /></>} /></Sacude>
+      hud={<><HudDia dia={1} rayas={1} /><Dice quien="nell" t="(my walkie!)" x={300} y={200} desde={k(5)} hasta={k(11.4)} tam={56} /></>} /></Sacude>
   );
 };
 
@@ -109,10 +107,10 @@ export const P07Snack: React.FC = () => {
 export const P08Rafi: React.FC = () => {
   const k = kDe(33.88);
   return (
-    <Sala cl={[mira(0, -900, 560, 1.9), mira(k(38.5), -760, 420, 1.6, { curva: "inout" }), mira(k(41), -900, 380, 1.5, { curva: "inout" })]} snack
+    <Sala cl={[mira(0, -900, 470, 2.6), mira(k(36.3), -900, 470, 2.4), mira(k(36.9), -900, 600, 2.1, { curva: "inout" }), mira(k(39.3), -900, 600, 2.0), mira(k(40.1), -820, 420, 1.35, { curva: "inout" })]} snack
       detras={[{ l: RAFI, x: -900, p: [{ f: 0, v: "saludar" }, { f: k(36.5), v: "hablar" }, { f: k(39.5), v: { hD: 80, cD: 30 } }], c: [{ f: 0, v: "feliz" }, { f: k(39), v: "picaro" }], mD: (ff: number) => (ff > k(39.5) ? <Pancho /> : null), mir: { x: 0.2, y: 0 } }]}
       gente={[{ l: LIGA3, x: -500, p: "parado", c: "feliz", d: -1 }]}
-      hud={<><Rotulo t="RAFI · 17 · me" x={760} y={180} desde={k(34.3)} hasta={k(38.4)} flecha="izq" /><Pildora texto="CHILI DOG $5 · PRETZEL $2" x={960} y={900} desde={k(40)} /></>} />
+      hud={<><Rotulo t="RAFI · 17 · me" x={1240} y={300} desde={k(34.3)} hasta={k(38.4)} flecha="izq" /><Pildora texto="CHILI DOG $5 · PRETZEL $2" x={960} y={900} desde={k(40)} /></>} />
   );
 };
 
@@ -122,7 +120,7 @@ export const P09Martes: React.FC = () => {
   return (
     <Sala cl={[mira(0, 1920, -250, 1.0), mira(k(45.6), 1700, 300, 0.75, { curva: "inout" })]} sp={{ tiros: [{ pista: 5, f0: 20 }, { pista: 9, f0: 60 }] }}
       gente={[{ l: LIGA, x: pistaX(5), p: "tirarSuelta", c: "feliz" }, { l: LIGA2, x: pistaX(9), p: "celebrar", c: "risa" }]}
-      hud={<Dice quien="otro" t="Tuesday. October." x={1180} y={110} desde={10} tam={80} />} />
+      hud={<Dice quien="otro" t="Tuesday. October." x={1180} y={900} desde={10} tam={80} />} />
   );
 };
 
@@ -306,7 +304,7 @@ export const P24Cta: React.FC = () => {
       <Velo color="#0b0a0c" o={0.45} />
       <Pildora texto="A SERIES · ONLY FORWARD" x={960} y={150} desde={k(141.7)} hasta={k(145)} />
       <Pildora texto="SUBSCRIBE FOR DAY 2" x={960} y={150} desde={k(145.1)} color={ROJO} />
-      <Dice quien="nell" t={"Would you have pulled\nthat shutter down\nwith people still outside?"} x={960} y={330} desde={k(147.7)} centro tam={84} rot={-2} />
+      <Dice quien="nell" t={"Would you have pulled\nthat shutter down\nwith people still outside?"} x={960} y={330} desde={k(147.7)} centro tam={64} rot={-2} />
       <HudDia dia={1} rayas={1} />
     </AbsoluteFill>
   );
@@ -340,12 +338,24 @@ export const P27Nadie: React.FC = () => {
   );
 };
 
+// luces de patrullero barriendo la pared (rojo / azul)
+const Balizas: React.FC = () => {
+  const f = useF();
+  const a = Math.sin(f / 4), b = Math.sin(f / 4 + Math.PI);
+  return (
+    <AbsoluteFill style={{ mixBlendMode: "screen", pointerEvents: "none" }}>
+      <AbsoluteFill style={{ background: `radial-gradient(ellipse at ${30 + 25 * Math.sin(f / 11)}% 60%, rgba(255,40,40,${0.35 * Math.max(0, a)}) 0%, rgba(0,0,0,0) 55%)` }} />
+      <AbsoluteFill style={{ background: `radial-gradient(ellipse at ${70 - 25 * Math.sin(f / 13)}% 55%, rgba(40,90,255,${0.4 * Math.max(0, b)}) 0%, rgba(0,0,0,0) 55%)` }} />
+    </AbsoluteFill>
+  );
+};
+
 // ---------- 28 · las sirenas en la Route 4: todas ----------
 export const P28Sirenas: React.FC = () => {
   const k = kDe(168.76);
   return (
     <Afuera cl={[mira(0, 1200, 1000, 0.8), mira(k(172.7), 1500, 800, 0.6, { curva: "inout" })]} sp={{ sirenas: true }}
-      hud={<><Dice quien="rafi" t="not one." x={300} y={200} desde={k(170.7)} tam={70} /><Dice quien="rafi" t="all of them." x={900} y={260} desde={k(171.7)} tam={84} /></>} />
+      hud={<><Balizas /><Dice quien="rafi" t="not one." x={300} y={200} desde={k(170.7)} tam={70} /><Dice quien="rafi" t="all of them." x={900} y={260} desde={k(171.7)} tam={84} /></>} />
   );
 };
 

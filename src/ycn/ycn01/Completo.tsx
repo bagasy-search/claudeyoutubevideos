@@ -10,7 +10,7 @@ const F = (d = 10): Trans => ({ tipo: "fundido", d });
 const L = (d = 10, color?: string): Trans => ({ tipo: "luz", d, ...(color ? { color } : {}) });
 // [inicio en s, plano, transición de entrada]
 const CORTES: [number, React.FC, Trans?][] = [
-  [0, A.P01Mano], [3.7, A.P02Cadena], [11.58, A.P03Agarra], [18.04, A.P04Fachada, F(14)], [22.36, A.P05Ruta, F(10)], [27.4, A.P06Sala, L(10)], [31.5, A.P07Snack],
+  [0, A.P01Mano], [3.7, A.P02Cadena], [11.58, A.P03Agarra], [18.04, A.P04Fachada], [22.36, A.P05Ruta, F(10)], [27.4, A.P06Sala, L(10)], [31.5, A.P07Snack],
   [33.88, A.P08Rafi], [42.42, A.P09Martes, F(8)], [45.68, A.P10PinPals], [52.68, A.P11Dot], [58.3, A.P12Enfermera], [63.82, A.P13Rota, { tipo: "barrido" }], [67.86, A.P14Cal, { tipo: "cortina" }],
   [74.78, A.P15Parche], [79.74, A.P16Nell, { tipo: "cortina" }], [91.12, A.P17Papas], [96.72, A.P18Ana, F(10)], [103.3, A.P19Ocho], [108.74, A.P20Lluvia, F(8)], [115.32, A.P21Marlon, L(10)],
   [122.92, A.P22Chief], [130.48, A.P23Cinco, F(10)], [140.04, A.P24Cta, F(12)], [152.12, A.P25Golpe], [153.44, A.P26Tv, L(8, "#2a4aff")], [165.96, A.P27Nadie], [168.76, A.P28Sirenas],
