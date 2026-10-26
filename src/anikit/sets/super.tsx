@@ -26,7 +26,7 @@ const Gondola: React.FC<{ x: number; w: number; piso: number; seed: number; vaci
   return (
     <g>
       <rect x={x} y={piso - 560} width={w} height={560} fill={fondo} />
-      <rect x={x} y={piso - 560} width={w} height={560} fill="url(#spsombra)" />
+      <rect x={x} y={piso - 560} width={w} height={560} fill={fondo === "#e9ebe6" ? "url(#spsombra)" : "url(#spsombraz)"} />
       {Array.from({ length: filas }).map((_, r) => {
         const ys = piso - 470 + r * 100;
         const n = Math.floor(w / 34);
@@ -90,11 +90,11 @@ export const Supermercado: React.FC<SetProps> = ({ capa, f, pal, variante }) => 
   return (
     <g>
       <defs>
-        <linearGradient id="spsombra" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#000" stopOpacity={0} /><stop offset="1" stopColor="#000" stopOpacity={zombi ? 0.45 : 0.15} /></linearGradient>
-        <linearGradient id="sppiso" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor={zombi ? "#3a4644" : "#d9ddd6"} /><stop offset="1" stopColor={zombi ? "#1f2826" : "#b9c0b8"} /></linearGradient>
+        <linearGradient id={zombi ? "spsombraz" : "spsombra"} x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#000" stopOpacity={0} /><stop offset="1" stopColor="#000" stopOpacity={zombi ? 0.45 : 0.15} /></linearGradient>
+        <linearGradient id={zombi ? "sppisoz" : "sppiso"} x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor={zombi ? "#3a4644" : "#d9ddd6"} /><stop offset="1" stopColor={zombi ? "#1f2826" : "#b9c0b8"} /></linearGradient>
       </defs>
       {/* piso de baldosas con reflejos */}
-      <rect x={-800} y={P} width={6000} height={900} fill="url(#sppiso)" />
+      <rect x={-800} y={P} width={6000} height={900} fill={zombi ? "url(#sppisoz)" : "url(#sppiso)"} />
       {Array.from({ length: 60 }).map((_, i) => <line key={i} x1={-800 + i * 110} y1={P} x2={-800 + i * 110 - 60} y2={P + 300} stroke="#000" strokeOpacity={0.08} strokeWidth={2} />)}
       {[0, 1, 2].map((r) => <line key={r} x1={-800} y1={P + 30 + r * 50} x2={5200} y2={P + 30 + r * 50} stroke="#000" strokeOpacity={0.08} strokeWidth={2} />)}
       {/* entrada de vidrio con la noche afuera */}
