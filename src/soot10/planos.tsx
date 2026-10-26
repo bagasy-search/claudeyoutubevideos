@@ -5,6 +5,8 @@ import { Rayos, Emote, fontFamily } from "./kit";
 import { Persona, GRUMETE, CAPITAN, PIRATA, CIVIL, Ropa } from "./persona";
 import { Txt, Contador, Lista, en } from "./dsl";
 import { Cuenco, Carne, Botella, Libro, Mosquito, Astillas, Sello, Concrecion } from "./obj";
+import { Precio, Dado, BolsaRoja, Gorgojo, Queso } from "./obj";
+import { Rata, Hamaca } from "./barco";
 import { Zapato, Buzo, Signo, Sierra, Moneda8, Diente, Nube, Gato9, Cofre, Fruta, Tortuga, Galleta, Balde, Sable, Pistola, Microbio, TINTA } from "./obj";
 import { Campana, Fuerte, Ciudad, Craneo, Bolsa, Lluvia, Trampas } from "./kit2";
 import { Zzz, Pergamino } from "./kit";
@@ -164,6 +166,182 @@ const Bandera: React.FC<{ t: number; sube: number }> = ({ t, sube }) => (
 const cae = (t: number, t0: number) => interpolate(t, [t0, t0 + 0.5], [0, 82], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) });
 
 export const PLANOS: Pl[] = [
+  // ── v9 · tapar los planos generales con figuras chicas (huecos de mundo)
+  { t0: 10.06, t1: 11.5, c: ["#ffe2a0", "#5a3418"], set: "bodega", r: (t) => <>
+    <B x={760} y={1050} h={820} t={t} expr="miedo" bD={60} cD={100} mira={8} miraY={6} inclina={-6} manoD={<g transform="scale(0.9)"><Galleta t={t} bichos={6} camina={1} /></g>} />
+    <Txt t={t} t0={10.1} t1={11.45} text="THE FOOD MOVES" x={1360} y={300} size={96} color={C.lima} />
+  </> },
+  { t0: 11.5, t1: 17.9, c: ["#fff0c0", "#7a5a2a"], set: "camarote", r: (t) => <>
+    {[0, 1].map((i) => <Persona key={i} x={[330, 1590][i]} y={1060} h={800} t={t} seed={140 + i} ropa={PIRATA(i + 2)} expr="orgullo" flip={i === 1} bD={t > 12.2 + i * 0.4 ? 160 + osc(t, 3 + i, 8) : 30} cD={10} habla={i === 0} />)}
+    <B x={960} y={1060} h={760} t={t} expr={t > 14.9 ? "miedo" : "sorpresa"} bD={t > 14.9 ? 70 : 20} cD={t > 14.9 ? 120 : 10} mira={osc(t, 0.8, 6)} />
+    {t > 14.9 && <V><g transform="translate(1180 560) scale(1.1)"><Precio txt="ARM = ?" t={t} /></g></V>}
+    <Txt t={t} t0={11.6} t1={14.8} text="THEY VOTED. IN WRITING." y={130} size={92} color={C.crema} />
+    <Txt t={t} t0={14.9} t1={17.8} text="YOUR ARM HAS A PRICE" y={130} size={96} color={C.oro} />
+  </> },
+  { t0: 24.1, t1: 26.3, c: ["#fff0c0", "#8a5a2a"], set: "cubierta", r: (t) => <>
+    <Persona x={1400} y={1060} h={880} t={t} seed={12} ropa={CAPITAN} expr="enojado" bD={110} cD={0} flip mira={-8} habla />
+    <B x={620} y={1060} h={760} t={t} expr="sorpresa" bD={40} cD={120} bI={40} cI={120} salta={Math.abs(Math.sin(t * 5)) * 6} />
+    <Txt t={t} t0={24.15} t1={26.25} text="NO BOYS ALLOWED" y={130} size={110} color={C.rojo} />
+    <Emote t={t} t0={24.4} tipo="preg" x={760} y={330} />
+  </> },
+  { t0: 94.02, t1: 99.8, c: ["#d8e8ff", "#2a4a7a"], set: "mar", r: (t) => <>
+    <BarcoLejos x={1450} y={620} t={t} s={0.5 + prog(t, 94.1, 99.7) * 1.1} tipo="pirata" />
+    <B x={560} y={1060} h={860} t={t} expr={t > 96.1 ? "miedo" : "sorpresa"} bD={150} cD={0} mira={8} miraY={-4} inclina={-4} />
+    <Txt t={t} t0={94.1} t1={96.0} text="A SAIL!" y={130} size={130} color={C.crema} />
+    <Txt t={t} t0={96.1} t1={99.7} text="BIGGER. FASTER." y={130} size={116} color={C.rojo} />
+    <Emote t={t} t0={96.3} tipo="sudor" x={700} y={360} />
+  </> },
+  { t0: 164.42, t1: 170.74, c: ["#ffd8a0", "#5a2a10"], set: "cocina", r: (t) => <>
+    <Persona x={1350} y={1060} h={860} t={t} seed={60} ropa={PIRATA(5)} expr="feliz" flip bD={95 + osc(t, 6, 25)} cD={60} habla manoD={<path d="M 0 0 L 0 120" stroke="#8a5a2a" strokeWidth={14} strokeLinecap="round" />} />
+    <B x={560} y={1060} h={780} t={t} expr={t > 166.9 ? "miedo" : "neutro"} bD={60} cD={90} bI={60} cI={90} ladea={osc(t, 3, 3)} manoD={<g transform="scale(0.5)"><Cuenco t={t} /></g>} />
+    <Txt t={t} t0={164.5} t1={166.9} text="TINY KITCHEN" y={130} size={110} color={C.crema} />
+    <Txt t={t} t0={167.0} t1={170.7} text="OPEN FIRE + WOODEN SHIP" y={130} size={90} color={C.rojo} />
+    <Emote t={t} t0={167.2} tipo="sudor" x={700} y={360} />
+  </> },
+  { t0: 200.3, t1: 210.14, c: ["#ffe2a0", "#3a2a18"], set: "bodega", r: (t) => <>
+    <V><rect x={0} y={1080 - prog(t, 200.3, 210) * 160} width={1920} height={200} fill="#4a6a4a" opacity={0.75} /><g transform="translate(1450 900) scale(1.5)"><Balde t={t} peste agua="#5a7a3a" /></g>{t > 204.8 && <Rata x={300 + ((t - 204.8) * 260) % 1400} y={960} s={1.2} t={t} />}</V>
+    <B x={760} y={1050} h={820} t={t} expr={t > 204.8 ? "enojado" : "triste"} bD={90 + osc(t, 7, 40)} cD={50} bI={90 + osc(t, 7, 40)} cI={50} inclina={osc(t, 7, 8, 8)} />
+    <Contador t={t} t0={200.5} t1={204.7} de={0} a={50} y={130} size={110} color={C.oro} pre="PUMP ×" tFin={204.8} />
+    <Txt t={t} t0={204.9} t1={210.0} text="THE BILGE" y={130} size={130} color={C.lima} />
+  </> },
+  { t0: 291.1, t1: 297.3, c: ["#fff0c0", "#7a5a2a"], set: "camarote", r: (t) => <>
+    {[0, 1, 2].map((i) => <Persona key={i} x={[340, 960, 1580][i]} y={1060} h={i === 1 ? 760 : 820} t={t} seed={i === 1 ? 7 : 150 + i} ropa={i === 1 ? GRUMETE : PIRATA(i + 3)} expr={i === 1 ? "sorpresa" : "orgullo"} flip={i === 2} bD={t > 291.5 + i * 0.5 ? 160 + osc(t, 4 + i, 6) : 30} cD={10} />)}
+    <Txt t={t} t0={291.2} t1={294.3} text="EVERY MAN VOTES" y={130} size={104} color={C.crema} />
+    <Txt t={t} t0={294.4} t1={297.2} text="LIGHTS OUT · 8 PM" y={130} size={104} color={C.oro} />
+  </> },
+  { t0: 297.3, t1: 304.1, c: ["#3a4a7a", "#0e1424"], set: "noche", r: (t) => <>
+    <Persona x={700} y={1060} h={860} t={t} seed={155} ropa={PIRATA(2)} expr="feliz" bD={140 + osc(t, 2, 10)} cD={60} ladea={osc(t, 1.5, 6)} inclina={osc(t, 1.2, 5)} manoD={<g transform="scale(1.1)"><Botella c="#8a4a1a" txt="RUM" /></g>} />
+    {t > 300.7 && <V><g transform="translate(1350 820) scale(2.4)"><Dado n={6} /></g><g transform="translate(1350 820) scale(2.2)"><Signo k="cross" s={1} /></g></V>}
+    <Txt t={t} t0={297.4} t1={300.6} text="DRINK? ON DECK." y={130} size={104} color={C.crema} />
+    <Txt t={t} t0={300.7} t1={304.0} text="NO DICE · NO FIGHTS" y={130} size={104} color={C.rojo} />
+  </> },
+  { t0: 398.3, t1: 403.3, c: ["#ffd8a0", "#5a2a1a"], set: "cubierta", r: (t) => <>
+    <Persona x={1350} y={1060} h={880} t={t} seed={44} ropa={PIRATA(6)} expr="enojado" flip bD={60} cD={20} manoD={<g transform="scale(0.55)"><Gato9 t={t} /></g>} />
+    <B x={560} y={1060} h={760} t={t} expr="miedo" bD={70} cD={130} bI={70} cI={130} inclina={-8} ladea={osc(t, 12, 2)} />
+    <Txt t={t} t0={398.4} t1={403.2} text="CAT O' NINE TAILS" y={130} size={110} color={C.rojo} />
+    <Emote t={t} t0={399.0} tipo="susto" x={700} y={380} />
+  </> },
+  { t0: 403.3, t1: 410.8, c: ["#fff0c0", "#7a2a2a"], set: "camarote", r: (t) => <>
+    <V><g transform={`translate(1300 760) scale(${2.4 + osc(t, 2, 0.05)})`}><BolsaRoja abre={prog(t, 407, 409)} /></g></V>
+    <Persona x={600} y={1060} h={860} t={t} seed={44} ropa={PIRATA(6)} expr="orgullo" bD={110} cD={20} habla mira={8} />
+    <Txt t={t} t0={403.4} t1={406.9} text="KEPT IN A RED BAG" y={130} size={104} color={C.crema} />
+    <Txt t={t} t0={407.0} t1={410.7} text="THE CAT OUT OF THE BAG" y={130} size={96} color={C.oro} />
+  </> },
+  { t0: 410.8, t1: 414.6, c: ["#ffe0c0", "#5a2a2a"], set: "cubierta", r: (t) => <>
+    {[0, 1, 2].map((i) => <Persona key={i} x={[340, 960, 1580][i]} y={1060} h={i === 1 ? 760 : 820} t={t} seed={i === 1 ? 7 : 160 + i} ropa={i === 1 ? GRUMETE : PIRATA(i + 1)} expr="miedo" flip={i === 2} bD={50 + i * 10} cD={110} bI={50} cI={110} inclina={-6 + i * 6} ladea={osc(t, 10 + i, 2)} />)}
+    <Txt t={t} t0={410.9} t1={414.5} text="NOBODY WANTED IT OPEN" y={130} size={96} color={C.crema} />
+  </> },
+  { t0: 483.46, t1: 488.8, c: ["#ffe2a0", "#4a2a14"], set: "bodega", r: (t) => <>
+    <V><g transform="translate(1300 760) scale(2.0)"><Carne gris={prog(t, 483.5, 486)} /></g><g transform="translate(1500 940) scale(1.3)"><Queso t={t} cara habla={t > 487.2} verde={prog(t, 487, 488)} /></g></V>
+    <B x={600} y={1060} h={800} t={t} expr="triste" bD={30} cD={130} mira={8} inclina={-8} />
+    <Contador t={t} t0={483.6} t1={488.7} de={1} a={8} y={130} size={110} color={C.oro} pre="WEEK " tFin={488.8} />
+    <Emote t={t} t0={487.3} tipo="preg" x={1500} y={700} />
+  </> },
+  { t0: 488.8, t1: 497.52, c: ["#ffd8a0", "#3a2010"], set: "bodega", r: (t) => <>
+    <V><rect x={1000} y={900} width={800} height={30} rx={10} fill="#6b3a1f" />{t > 493.6 && [0, 1, 2, 3, 4].map((i) => <Gorgojo key={i} x={1200 + i * 110 + (t - 493.6) * 60 * (i % 2 ? 1 : -1)} y={880} t={t} s={1.4} />)}</V>
+    <B x={760} y={1060} h={820} t={t} expr={t > 493.6 ? "enojado" : "miedo"} bD={t > 493.6 ? 90 + Math.abs(Math.sin(t * 9)) * 40 : 70} cD={40} manoD={<g transform="scale(0.8)"><Galleta t={t} bichos={6} camina={1} /></g>} />
+    <Txt t={t} t0={488.9} t1={493.5} text="WEEVILS" y={130} size={140} color={C.lima} />
+    <Txt t={t} t0={493.6} t1={497.4} text="TAP, TAP, TAP" y={130} size={120} color={C.crema} />
+  </> },
+  { t0: 501.46, t1: 508.8, c: ["#ffe2a0", "#3a2a18"], set: "bodega", r: (t) => <>
+    <V>{[0, 1].map((i) => <Barril key={i} x={1300 + i * 260} y={1000} s={1.7} c={i ? "#4a6a3a" : "#5a6a3a"} txt="WATER" />)}</V>
+    <B x={620} y={1060} h={800} t={t} expr={t > 504.9 ? "enojado" : "neutro"} bD={60} cD={110} inclina={t > 504.9 ? -10 : 0} manoD={<rect x={-30} y={-50} width={60} height={70} rx={10} fill={t > 504.9 ? "#6a8a3a" : "#8ab8d8"} stroke={TINTA} strokeWidth={5} />} />
+    <Txt t={t} t0={501.6} t1={504.8} text="WATER IN BARRELS" y={130} size={100} color={C.crema} />
+    <Txt t={t} t0={505.1} t1={508.7} text="IT TURNS GREEN" y={130} size={116} color={C.lima} />
+  </> },
+  { t0: 508.8, t1: 514.9, c: ["#ffd8a0", "#6a3a1a"], set: "cubierta", r: (t) => <>
+    {[0, 1].map((i) => <Persona key={i} x={[560, 1360][i]} y={1060} h={860} t={t} seed={170 + i} ropa={PIRATA(i + 3)} expr="feliz" flip={i === 1} bD={130 + osc(t, 2 + i, 15)} cD={60} ladea={osc(t, 1.4 + i, 5)} manoD={<g transform="scale(1.1)"><Botella c={i ? "#5a3a1a" : "#8a4a1a"} txt={i ? "BEER" : "RUM"} /></g>} />)}
+    <Txt t={t} t0={508.9} t1={511.9} text="BEER AND RUM" y={130} size={110} color={C.oro} />
+    <Txt t={t} t0={512.0} t1={514.8} text="NOT ONLY FOR FUN" y={130} size={104} color={C.crema} />
+  </> },
+  { t0: 514.9, t1: 520.9, c: ["#ffe2a0", "#3a2a18"], set: "bodega", r: (t) => <>
+    <V>{[0, 1, 2, 3].map((i) => <Rata key={i} x={((t - 514.9) * (300 + i * 60) + i * 400) % 1900} y={980 - (i % 2) * 40} s={1.3} t={t + i} />)}</V>
+    <B x={960} y={1060} h={800} t={t} expr="miedo" bD={150} cD={0} bI={150} cI={0} salta={Math.abs(Math.sin(t * 6)) * 30} />
+    <Txt t={t} t0={515.0} t1={517.2} text="AND THE RATS" y={130} size={120} color={C.crema} />
+    <Txt t={t} t0={517.3} t1={520.8} text="THEY ATE FIRST" y={130} size={116} color={C.rojo} />
+  </> },
+  { t0: 520.9, t1: 527.92, c: ["#ffd8a0", "#4a2a14"], set: "cocina", r: (t) => <>
+    <Persona x={700} y={1060} h={880} t={t} seed={175} ropa={PIRATA(1)} expr="feliz" bD={120} cD={70} habla manoD={<g transform="scale(1.1)"><Rata x={0} y={0} s={1} t={t} /></g>} />
+    <B x={1400} y={1060} h={780} t={t} expr="miedo" flip bD={60} cD={120} bI={60} cI={120} inclina={8} />
+    <Txt t={t} t0={521.0} t1={524.9} text="SO THEY ATE THE RATS" y={130} size={100} color={C.rojo} />
+    <Txt t={t} t0={525.0} t1={527.8} text="FAIR IS FAIR" y={130} size={116} color={C.oro} />
+    <Emote t={t} t0={521.4} tipo="susto" x={1400} y={380} />
+  </> },
+  { t0: 538.76, t1: 545.8, c: ["#ffd8a0", "#5a2a10"], set: "cocina", r: (t) => <>
+    <Persona x={1300} y={1060} h={880} t={t} seed={60} ropa={PIRATA(5)} expr="orgullo" flip bD={100 + osc(t, 5, 25)} cD={60} habla />
+    <V><g transform="translate(1000 900) scale(2.2)"><Cuenco t={t} /></g>{[0, 1, 2].map((i) => en(t, 541.2 + i * 1.2, 545.8) && <g key={i} transform={`translate(${900 + i * 90} ${700 + ((t - 541.2 - i * 1.2) * 300) % 160}) scale(0.6)`}><Carne /></g>)}</V>
+    <B x={480} y={1060} h={780} t={t} expr="sorpresa" bD={90} cD={60} mira={8} />
+    <Txt t={t} t0={538.9} t1={545.7} text="SALMAGUNDI" y={130} size={130} color={C.oro} />
+  </> },
+  { t0: 552.36, t1: 556.02, c: ["#3a4a6a", "#10141f"], set: "bodega", r: (t) => <>
+    <V><Hamaca x={960} y={640} w={900} t={t} /><Zzz x={1150} y={420} t={t} /></V>
+    <B x={960} y={760} h={620} t={t} expr="dormido" inclina={80} bD={20} bI={20} />
+    <Txt t={t} t0={552.5} t1={555.9} text="A HAMMOCK, IF LUCKY" y={130} size={100} color={C.crema} />
+  </> },
+  { t0: 581.32, t1: 586.8, c: ["#e8f0c0", "#3a4a2a"], set: "bodega", r: (t) => <>
+    <V><g transform="translate(1350 700) scale(2.2)"><Fruta k="pina" /></g><g transform="translate(1600 760) scale(2.0)"><Fruta k="banana" /></g><g transform="translate(1450 720) scale(2.6)"><Signo k="cross" s={1} /></g></V>
+    <B x={600} y={1060} h={820} t={t} expr="triste" bD={30} cD={40} mira={8} />
+    <Txt t={t} t0={581.4} t1={583.1} text="SCURVY" y={130} size={140} color={C.lima} />
+    <Contador t={t} t0={583.2} t1={586.7} de={0} a={2} y={130} size={110} color={C.oro} post=" MONTHS, NO FRUIT" />
+  </> },
+  { t0: 586.8, t1: 591.5, c: ["#ffe0c0", "#4a2a3a"], set: "camarote", r: (t) => <>
+    <Persona x={760} y={1060} h={900} t={t} seed={180} ropa={PIRATA(4)} expr="triste" bD={140} cD={160} habla />
+    <V>{t > 588.9 && <g transform={`translate(${1180 + (t - 588.9) * 40} ${520 + (t - 588.9) * 260}) scale(1.6)`}><Diente /></g>}</V>
+    <Txt t={t} t0={586.9} t1={589.1} text="PURPLE GUMS" y={130} size={120} color={C.rojo} />
+    <Txt t={t} t0={589.2} t1={591.4} text="LOOSE TEETH" y={130} size={120} color={C.crema} />
+  </> },
+  { t0: 591.5, t1: 598.38, c: ["#ffe0c0", "#5a2a2a"], set: "camarote", r: (t) => <>
+    <Persona x={760} y={1060} h={900} t={t} seed={180} ropa={PIRATA(4)} expr={t > 595.2 ? "miedo" : "triste"} bD={70} cD={110} mira={8} miraY={6} />
+    <V>{t > 595.2 && <path d={`M 860 640 l ${prog(t, 595.3, 597) * 160} ${prog(t, 595.3, 597) * 50}`} stroke={C.rojo} strokeWidth={14} strokeLinecap="round" />}</V>
+    <Txt t={t} t0={591.6} t1={595.1} text="BRUISES FROM LEANING" y={130} size={96} color={C.crema} />
+    <Txt t={t} t0={595.2} t1={598.3} text="OLD WOUNDS REOPEN" y={130} size={100} color={C.rojo} />
+    <Emote t={t} t0={595.5} tipo="susto" x={1000} y={380} />
+  </> },
+  { t0: 653.34, t1: 664.18, c: ["#fff0c0", "#6a4a2a"], set: "camarote", r: (t) => <>
+    <Persona x={760} y={1060} h={900} t={t} seed={95} ropa={PIRATA(3)} expr="sorpresa" bD={95} cD={0} bI={95} cI={0} mira={osc(t, 0.7, 6)} />
+    <V>
+      {t > 655.1 && <g transform="translate(1180 560) scale(1.2)"><Precio txt="600" t={t} /></g>}
+      {t > 659.0 && <g transform="translate(330 560) scale(1.2)"><Precio txt="500" t={t + 1} /></g>}
+      {t > 661.5 && <g transform="translate(1180 300) scale(1.1)"><Precio txt="100" t={t + 2} c={C.crema} /></g>}
+    </V>
+    <Txt t={t} t0={653.4} t1={656.9} text="THE OLD BUCCANEERS" y={130} size={100} color={C.crema} />
+    <Contador t={t} t0={657.0} t1={658.9} de={0} a={600} y={130} size={110} color={C.oro} post=" PIECES OF EIGHT" tFin={659} />
+    <Txt t={t} t0={659.1} t1={664.1} text="RIGHT · LEFT · EYE" y={130} size={110} color={C.oro} />
+  </> },
+  { t0: 664.18, t1: 668.48, c: ["#ffe0b0", "#5a3a2a"], set: "camarote", r: (t) => <>
+    <B x={760} y={1060} h={820} t={t} expr="miedo" bD={70} cD={100} mira={8} miraY={6} ladea={osc(t, 3, 3)} />
+    <Pergamino x={1380} y={560} w={520} abre={prog(t, 664.3, 665.3)} lineas={6} titulo="PRICE LIST" />
+    <Txt t={t} t0={664.3} t1={668.4} text="YOUR BODY HAD A PRICE" y={130} size={96} color={C.rojo} />
+  </> },
+  { t0: 741.44, t1: 748.9, c: ["#e8c8a0", "#3a2a2a"], set: "cubierta", r: (t) => <>
+    <V><Canon x={1550} y={960} t={t} dispara={744.9} s={1.6} />{t > 744.9 && <Astillas t={t} t0={745} n={24} dir={-1} vel={1.4} />}</V>
+    <B x={620} y={1060} h={800} t={t} expr={t > 744.9 ? "miedo" : "neutro"} bD={t > 745 ? 150 : 40} cD={t > 745 ? 150 : 20} bI={t > 745 ? 150 : 40} cI={t > 745 ? 150 : 20} inclina={t > 745 ? -14 : 0} />
+    <Txt t={t} t0={741.6} t1={744.8} text="NOT EVEN THE WORST" y={130} size={100} color={C.crema} />
+    <Txt t={t} t0={744.9} t1={748.8} text="SPLINTERS" y={130} size={140} color={C.rojo} />
+  </> },
+  { t0: 748.9, t1: 757.38, c: ["#ffd8a0", "#4a2a1a"], set: "cubierta", r: (t) => <>
+    <Persona x={760} y={1060} h={880} t={t} seed={190} ropa={PIRATA(2)} expr="miedo" bD={80} cD={120} inclina={-6} ladea={osc(t, 9, 2)} />
+    <V><g transform={`translate(1300 600) rotate(${-20 + osc(t, 2, 4)})`}><rect x={-300} y={-22} width={600} height={44} rx={12} fill="#c8935a" stroke={TINTA} strokeWidth={6} /></g></V>
+    <Txt t={t} t0={749.0} t1={751.8} text="OAK · AS LONG AS AN ARM" y={130} size={92} color={C.crema} />
+    <Txt t={t} t0={752.1} t1={757.3} text="WOOD, NOT IRON" y={130} size={120} color={C.oro} />
+  </> },
+  { t0: 813.2, t1: 819.7, c: ["#d8e8ff", "#2a4a7a"], set: "mar", r: (t) => <>
+    <BarcoLejos x={1500} y={620} t={t} s={1.2} tipo="mercante" />
+    <Persona x={620} y={1060} h={900} t={t} seed={320} ropa={BELLAMY} expr="orgullo" bD={150} cD={0} mira={8} habla />
+    <Txt t={t} t0={813.3} t1={816.2} text="NOVEMBER 1716" y={130} size={110} color={C.crema} />
+    <Txt t={t} t0={816.3} t1={819.6} text="SAM BELLAMY · THE BONETTA" y={130} size={88} color={C.oro} />
+  </> },
+  { t0: 822.4, t1: 829.9, c: ["#fff0c0", "#7a5a2a"], set: "puerto", r: (t) => <>
+    <Persona x={1250} y={1060} h={860} t={t} seed={331} ropa={MADRE} expr="neutro" flip bD={30} cD={10} habla />
+    <JOHNP x={800} y={1060} h={680} t={t} expr="feliz" bD={30} bI={25} cI={10} salta={Math.abs(Math.sin(t * 3)) * 6} />
+    <Txt t={t} t0={822.5} t1={825.9} text="A PASSENGER" y={130} size={120} color={C.crema} />
+    <Txt t={t} t0={826.0} t1={829.8} text="JOHN KING" y={130} size={130} color={C.oro} />
+  </> },
+  { t0: 842.34, t1: 843.56, c: ["#ffe0b0", "#4a2a2a"], set: "cubierta", r: (t) => <>
+    <Persona x={1350} y={1060} h={900} t={t} seed={320} ropa={BELLAMY} expr="orgullo" flip bD={150} cD={0} />
+    <JOHNP x={720} y={1060} h={680} t={t} expr="sorpresa" bD={40} cD={120} />
+    <Txt t={t} t0={842.4} t1={843.5} text="SO BELLAMY TOOK HIM" y={130} size={100} color={C.rojo} />
+  </> },
   // ── v7 · premisa: el zapato en las manos del chico y la pregunta
   { t0: 32.14, t1: 36.3, c: ["#2a8ab8", "#0a2a4a"], luz: [960, 260], set: "playa", r: (t) => <>
     <V>{Array.from({ length: 12 }, (_, i) => <circle key={i} cx={160 + i * 150} cy={1000 - ((t * 90 + i * 130) % 1000)} r={8 + (i % 3) * 5} fill="#bfefff" opacity={0.4} />)}</V>
