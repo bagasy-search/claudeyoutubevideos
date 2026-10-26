@@ -23,3 +23,6 @@ export const segMundo = (cam: Cam, x: number, y: number, w: number, h: number, a
   const ok = (d: number) => (Math.abs(d) < 420 ? d : 0);
   return { x: x + ok(dx) / z, y: y + ok(dy) / z };
 };
+// el contador HANDSHAKES ocupa la esquina de arriba a la derecha: un texto que llegue hasta ahí baja por debajo
+export const HUD = { x0: 1500, y1: 150 };
+export const sinHud = (xc: number, w: number, y: number, h: number) => (xc + (w * 1.12) / 2 > HUD.x0 && y - h / 2 < HUD.y1 ? HUD.y1 + h / 2 + 6 : y);

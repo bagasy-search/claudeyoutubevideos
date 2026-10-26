@@ -114,8 +114,8 @@ export const P4Mundo: React.FC<{ t: number }> = ({ t }) => {
                 <path d={`M 7500 ${SUELO - 300} l 0 -120`} stroke="#fff" strokeWidth={12} />
                 {t > 408.5 && <path d={`M ${CASA} ${SUELO - 760} l 0 -100 M ${CASA - 30} ${SUELO - 790} l 30 30 l 30 -30`} stroke={C.ambar} strokeWidth={14} fill="none" />}
               </Svg>
-              <TextoMundo x={5700} y={SUELO - 440} text="THIS BANK ✗" size={120} color="#fff3d6" borde="#2b1c14" />
-              {t > 407.2 && <TextoMundo x={7500} y={SUELO - 440} text="THAT BANK ✗" size={120} color="#fff3d6" borde="#2b1c14" />}
+              {(vig(t, 405.9, 407.4) || t > 409.3) && <TextoMundo x={5700} y={SUELO - 440} text="THIS BANK ✗" size={120} color="#fff3d6" borde="#2b1c14" />}
+              {(vig(t, 407.2, 408.3) || t > 409.3) && <TextoMundo x={7500} y={SUELO - 440} text="THAT BANK ✗" size={120} color="#fff3d6" borde="#2b1c14" />}
               {t > 408.5 && <TextoMundo x={CASA} y={SUELO - 880} text="THE MIDDLE ✓" size={110} color={C.ambar} borde="#2b1c14" />}
             </>
           )}

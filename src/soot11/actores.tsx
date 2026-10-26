@@ -4,7 +4,7 @@ import { rnd, clamp } from "../soot/lib";
 import { C, fontFamily, ent } from "./kit";
 import { Persona, Ropa, CIVIL, Expr } from "./persona";
 import { SUELO, useMundo } from "./mundo";
-import { segX, segY, segMundo, anchoTxt } from "./zona";
+import { segX, segY, segMundo, anchoTxt, sinHud } from "./zona";
 
 
 // Actores y gráficos de pantalla de soot11.
@@ -12,9 +12,13 @@ export const FRANZ: Ropa = { tunica: "#7a1f3d", tunica2: "#4a0f26", cinto: "#1d1
 export const HEINRICH: Ropa = { tunica: "#5c8f3e", tunica2: "#3a6224", cinto: "#5a3418", piel: "#e9a77e", piel2: "#c98660", pelo: "#6a4a2a" };
 type FP = Omit<React.ComponentProps<typeof Persona>, "ropa">;
 // Franz, el verdugo: gorro granate con pluma, barba, capa negra. Siempre igual: el espectador lo reconoce en todo plano.
-export const Franz: React.FC<FP & { viejoF?: boolean }> = ({ viejoF, ...p }) => (
-  <Persona h={300} seed={7} gorro="verdugo" barba={viejoF ? "#d8d2cc" : "#3a2414"} capa="#2b0a14" ropa={FRANZ} viejo={viejoF} {...p} />
-);
+// Franz nunca queda de estatua: si la escena no le da acción, cambia el peso de pie y hace un ademán cada ~4,6 s
+export const Franz: React.FC<FP & { viejoF?: boolean }> = ({ viejoF, ...p }) => {
+  const quieto = !p.camina;
+  const g = (p.t + 1.7) % 4.6, gest = quieto && g < 1.3 ? Math.sin((g / 1.3) * Math.PI) : 0;
+  const idle = quieto ? { bD: p.bD ?? 8 + gest * 70, cD: p.cD ?? 10 + gest * 55, inclina: p.inclina ?? Math.sin(p.t * 1.1) * 2.5, mira: p.mira ?? (Math.sin(p.t * 0.7) > 0.6 ? 1 : 0) } : {};
+  return <Persona h={300} seed={7} gorro="verdugo" barba={viejoF ? "#d8d2cc" : "#3a2414"} capa="#2b0a14" ropa={FRANZ} viejo={viejoF} {...p} {...idle} />;
+};
 // multitud: n personas en fila con ropa, gorro y expresión sorteados; `mira` = hacia dónde miran; `aleja` = se apartan
 const GORROS = [undefined, "campesino", "toca", undefined, "noble", undefined, "toca", "campesino"] as const;
 export const Gente: React.FC<{ t: number; x0: number; x1: number; n: number; y?: number; h?: number; seed?: number; expr?: Expr | ((i: number) => Expr); mira?: number; flipDe?: number; aleja?: { desde: number; dx: number; t0: number }; habla?: boolean; salta?: number; brazos?: number }> = ({ t, x0, x1, n, y = SUELO - 10, h = 270, seed = 1, expr = "neutro", mira = 0, flipDe, aleja, habla, salta, brazos }) => {
@@ -180,7 +184,7 @@ export const Pin: React.FC<{ t: number; t0: number; x: number; y: number; n: num
 // título grande con contorno que entra con resorte y SALE (t1)
 export const Titulo: React.FC<{ t: number; t0: number; t1: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string; rot?: number }> = ({ t, t0, t1, text, x: x0 = 960, y: y0, size = 150, color = C.crema, borde = C.noche, rot = 0 }) => {
   if (t < t0 || t > t1 + 0.02) return null;
-  const x = segX(x0, anchoTxt(text, size) + size * 0.2), y = segY(y0, size * 1.2);
+  const x = segX(x0, anchoTxt(text, size) + size * 0.2), y = sinHud(x, anchoTxt(text, size) + size * 0.2, segY(y0, size * 1.2), size * 1.2);
   const s = ent(t, t0, 0, { damping: 9, stiffness: 190 }) * interpolate(t, [t1 - 0.12, t1 + 0.02], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${s}) rotate(${rot}deg)`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}`, textAlign: "center", lineHeight: 1.05 }}>

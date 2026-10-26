@@ -3,7 +3,7 @@ import { AbsoluteFill, spring, interpolate, Easing } from "remotion";
 import { loadFont } from "@remotion/google-fonts/Fredoka";
 import { rnd, clamp } from "../soot/lib";
 import MAPA from "./mapa.json";
-import { segX, segY, anchoTxt } from "./zona";
+import { segX, segY, anchoTxt, sinHud } from "./zona";
 
 
 // Kit de Soot v3: TODO en código (cero imágenes). Cielos por capas, colinas con paralaje, objetos,
@@ -16,7 +16,7 @@ export const C = {
 };
 
 export const ent = (t: number, t0: number, d = 0, cfg = { damping: 12, stiffness: 170 }) =>
-  spring({ frame: Math.round((t - t0 - d) * FPS), fps: FPS, config: cfg });
+  spring({ frame: Math.max(0, (t - t0 - d) * FPS), fps: FPS, config: cfg });
 export const prog = (t: number, a: number, b: number) =>
   interpolate(t, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
 
@@ -202,13 +202,13 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
     const sz = size * 1.12, borde = "#1b1230";
     const relleno = tinta === "#fff" ? "#fff6e0" : color;
     const pal = text.split(" ");
-    const xs = segX(x0, anchoTxt(text, sz), true), ys = segY(y0 + 10, sz * 1.4);
+    const xs = segX(x0, anchoTxt(text, sz), true), ys = sinHud(xs, anchoTxt(text, sz), segY(y0 + 10, sz * 1.4), sz * 1.4);
     const sub = interpolate(t, [t0 + 0.1, t0 + 0.45], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
     return (
       <div style={{ position: "absolute", left: xs, top: ys, transform: `translate(-50%, -50%) scale(${out})`, fontFamily, fontWeight: 700, fontSize: sz, whiteSpace: "nowrap", lineHeight: 1.1, letterSpacing: 1 }}>
         {pal.map((w, i) => {
           const si = ent(t, t0 + i * 0.07, 0, { damping: 10, stiffness: 210 });
-          return <span key={i} style={{ display: "inline-block", marginRight: i < pal.length - 1 ? sz * 0.26 : 0, transform: `translateY(${(1 - si) * 40}px) scale(${si})`, color: relleno, WebkitTextStroke: `${sz * 0.1}px ${borde}`, paintOrder: "stroke fill", textShadow: `0 ${sz * 0.08}px 0 ${borde}` }}>{w}</span>;
+          return <span key={i} style={{ display: "inline-block", marginRight: i < pal.length - 1 ? sz * 0.42 : 0, opacity: Math.min(1, si * 1.6), transform: `translateY(${(1 - si) * 40}px) scale(${0.7 + 0.3 * Math.min(1, si)})`, color: relleno, WebkitTextStroke: `${sz * 0.1}px ${borde}`, paintOrder: "stroke fill", textShadow: `0 ${sz * 0.08}px 0 ${borde}` }}>{w}</span>;
         })}
         <div style={{ position: "absolute", left: "50%", bottom: -sz * 0.18, height: sz * 0.14, width: `${sub * 70}%`, transform: "translateX(-50%) rotate(-1deg)", background: tinta === "#fff" ? color : C.noche, borderRadius: sz * 0.07, boxShadow: "0 4px 0 rgba(20,10,50,.35)" }} />
       </div>
@@ -224,7 +224,7 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
 // texto grande con contorno (títulos)
 export const Grande: React.FC<{ t: number; t0: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string }> = ({ t, t0, text, x: x0 = 960, y: y0, size = 150, color = C.crema, borde = C.noche }) => {
   if (t < t0) return null;
-  const x = segX(x0, anchoTxt(text, size)), y = segY(y0, size * 1.2);
+  const x = segX(x0, anchoTxt(text, size)), y = sinHud(x, anchoTxt(text, size), segY(y0, size * 1.2), size * 1.2);
   const s = ent(t, t0, 0, { damping: 9, stiffness: 190 });
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${s})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}` }}>

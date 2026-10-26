@@ -20,20 +20,20 @@ export const P6K: Llave[] = [
   [541.15, PLAZA, 600, 0.95, 1.1],
   [542.9, PLAZA, ESC - 240, 2.4, 0.6],
   [544.3, PLAZA, ESC - 280, 1.5, 0.5],
-  [547.45, PLAZA, 560, 1.25, 0.8],
-  [551.1, PLAZA, 600, 0.9, 0.8],
-  [553.0, 4450, 640, 1.35, 0.7],
-  [556.6, 6560, 580, 1.15, 0.7],
+  [547.45, PLAZA, 480, 1.25, 0.8],
+  [551.1, PLAZA, 570, 0.9, 0.8],
+  [553.0, 4450, 470, 1.35, 0.7],
+  [556.6, PLAZA + 120, ESC - 220, 1.7, 0.7],
   [558.05, PLAZA, 560, 1.0, 0.7],
   [560.15, PLAZA, 420, 0.46, 1.2],
-  [564.8, 4420, 600, 1.25, 0.8],
-  [567.75, 5250, 520, 1.15, 0.8],
+  [564.8, 4420, 480, 1.25, 0.8],
+  [567.75, 5250, 500, 1.15, 0.8],
   [571.2, PLAZA, 470, 0.95, 0.7],
   [575.55, PLAZA, ESC - 200, 1.7, 0.6],
   [578.1, PLAZA, ESC - 220, 2.3, 0.6],
   [583.6, PLAZA, ESC - 200, 2.8, 0.5],
-  [587.25, PLAZA, 560, 1.0, 0.6],
-  [590.4, 4450, 640, 1.4, 0.6],
+  [587.25, PLAZA, 540, 1.0, 0.6],
+  [590.4, 4450, 460, 1.4, 0.6],
   [593.1, 4750, 560, 0.85, 0.6],
   [594.6, 5300, 600, 1.0, 0.8],
   [598.6, 5950, 600, 1.0, 3.6],
@@ -104,7 +104,7 @@ export const P6Mundo: React.FC<{ t: number }> = ({ t }) => {
           <div style={{ position: "absolute", left: 0, top: 0, transform: `translateX(${tiembla}px)` }}>
             <Franz x={fx} y={fy} t={t} gorro={capucha ? "capucha" : "verdugo"} capa={capucha ? "#0a0a10" : undefined}
               expr={capucha ? "enojado" : corre ? "miedo" : vig(t, 583.6, 590) ? "miedo" : vig(t, 578, 583.6) ? "orgullo" : "neutro"} camina={corre && t < 601.6 ? 2.4 : 0} flip={false}
-              bD={vig(t, 583.6, 587.2) ? 60 : corre ? 40 + Math.sin(t * 15) * 40 : 8} cD={vig(t, 583.6, 587.2) ? 90 : 10} bI={corre ? 40 - Math.sin(t * 15) * 40 : 8} />
+              bD={vig(t, 555.6, 558) ? 115 + Math.sin(t * 5) * 8 : vig(t, 583.6, 587.2) ? 60 : corre ? 40 + Math.sin(t * 15) * 40 : 8} habla={vig(t, 556.5, 558)} cD={vig(t, 583.6, 587.2) ? 90 : 10} bI={corre ? 40 - Math.sin(t * 15) * 40 : 8} />
           </div>
           {/* la capucha sale volando */}
           {vig(t, 544.3, 546.5) && <G x={PLAZA + (t - 544.3) * 500} y={ESC - 330 - (t - 544.3) * 520 + (t - 544.3) ** 2 * 120} rot={(t - 544.3) * 400}><path d="M -50 40 Q -60 -60 0 -70 Q 60 -60 50 40 Z" fill="#0a0a10" /><rect x={-26} y={-20} width={18} height={10} rx={4} fill="#fff" /><rect x={8} y={-20} width={18} height={10} rx={4} fill="#fff" /></G>}
@@ -144,6 +144,18 @@ export const P6Mundo: React.FC<{ t: number }> = ({ t }) => {
             bD={vig(t, 615.4, 618.3) ? 90 : 60} cD={vig(t, 615.4, 618.3) ? 0 : 60}
             manoD={vig(t, 615.4, 618.3) ? <g><rect x={-30} y={-30} width={60} height={60} rx={10} fill="#fff6e0" /><path d="M -14 0 L 14 0" stroke={C.rojo} strokeWidth={8} /></g> : <g><path d="M -22 -40 L 22 -40 L 16 16 L -16 16 Z" fill="#bfe6ff" stroke="#5a8aa8" strokeWidth={4} /></g>} />}
           {vig(t, 615.4, 618.3) && <G x={6600} y={SUELO - 300} rot={interp(t, [615.4, 616], [0, -50])}><Jarra x={0} y={0} s={0.6} /></G>}
+          {/* el diario: la pluma escribe renglón por renglón en la página vacía */}
+          {vig(t, 622.6, 628.4) && (() => {
+            const u = clamp((t - 622.8) / 3.4, 0, 1), nl = 7, k = u * nl;
+            const fila = Math.min(nl - 1, Math.floor(k)), fr = k - fila;
+            const px = 6338 + fr * 88, py = 566 + fila * 19;
+            return (
+              <Svg>
+                {Array.from({ length: nl }, (_, i) => i <= fila && <path key={i} d={`M 6338 ${566 + i * 19} ${Array.from({ length: 12 }, (_, j) => `L ${6338 + (j + 1) * 7.3 * (i < fila ? 1 : fr)} ${566 + i * 19 + (j % 2 ? -4 : 3)}`).join(" ")}`} stroke="#3a2414" strokeWidth={2.4} fill="none" strokeLinecap="round" strokeLinejoin="round" />)}
+                {u < 1 && <g transform={`translate(${px} ${py}) rotate(${-35 + Math.sin(t * 22) * 6})`}><path d="M 0 0 L 4 -10 L 40 -70 Q 52 -78 46 -60 L 8 -6 Z" fill="#fff6e0" stroke="#5a3418" strokeWidth={2} /><line x1={0} y1={0} x2={34} y2={-58} stroke="#c9a36a" strokeWidth={1.5} /></g>}
+              </Svg>
+            );
+          })()}
           {/* el concejo, en el puente */}
           {vig(t, 630.3, 637.4) && (
             <>
@@ -167,9 +179,9 @@ export const P6Mundo: React.FC<{ t: number }> = ({ t }) => {
 
 // gráfico del diario: el espectáculo baja, la rapidez sube
 const Grafico: React.FC<{ t: number }> = ({ t }) => {
-  if (t < 624.6 || t > 630.6) return null;
+  if (t < 624.6 || t > 630.3) return null;
   const u = clamp((t - 624.8) / 3.2, 0, 1);
-  const e = clamp((t - 624.6) / 0.3, 0, 1) * clamp((630.6 - t) / 0.3, 0, 1);
+  const e = clamp((t - 624.6) / 0.3, 0, 1) * clamp((630.3 - t) / 0.3, 0, 1);
   const n = 30;
   const pts = (f: (k: number) => number) => Array.from({ length: Math.max(2, Math.floor(n * u)) }, (_, i) => `${80 + (i / n) * 640},${f(i / n)}`).join(" ");
   return (

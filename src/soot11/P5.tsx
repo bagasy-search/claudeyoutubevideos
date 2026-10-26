@@ -43,7 +43,7 @@ export const P5K: Llave[] = [
   [525.45, GEN[3] + 60, 560, 2.0, 0.6],
   [527.3, GEN[0] - 110, 600, 1.5, 0.9],
   [531.6, 31450, 560, 0.75, 1.0],
-  [534.0, 31450, 520, 0.6, 3.0],
+  [534.0, 31450, 520, 0.6, 2.3],
 ];
 export const P5H: [number, number][] = [[445.8, 0], [447.3, 0.5], [500.0, 0.5], [501.5, 0.15], [531.5, 0.15], [535.5, 1], [537.8, 1]];
 
@@ -104,9 +104,9 @@ const Mapa: React.FC<{ t: number }> = ({ t }) => {
 };
 
 export const P5Mundo: React.FC<{ t: number }> = ({ t }) => {
-  const enCasa = t < 453.4 || (t > 462.5 && t < 507.5);
+  const enCasa = t < 453.4 || (t > 461.6 && t < 507.5);
   const camina = vig(t, 453.4, 455.4);
-  const fx = t < 453.4 ? CASA : t < 458.7 ? interp(t, [453.4, 455.4], [CASA, PUERTA - 170]) : CASA;
+  const fx = t < 453.4 ? CASA : t < 458.7 ? interp(t, [453.4, 455.4], [5950, PUERTA - 170]) : CASA;
   const flores = t > 451.2 && t < 458.0;
   const portazo = clamp((t - 457.4) / 0.25, 0, 1);
   const muestra = vig(t, 494.5, 498.9);
@@ -116,7 +116,7 @@ export const P5Mundo: React.FC<{ t: number }> = ({ t }) => {
       <Svg><rect x={V_MAPA.x - 10} y={V_MAPA.y - 10} width={V_MAPA.w + 20} height={V_MAPA.w * 0.5625 + 20} rx={6} fill="#7a3d14" /></Svg>
       <Ventana v={V_MAPA}><Mapa t={t} /></Ventana>
       {(enCasa || t < 458.8) && <Franz x={fx} y={SUELO - 10} t={t} camina={camina ? 1.5 : 0} flip={vig(t, 453.4, 458.8)}
-        expr={t > 457.5 && t < 462.5 ? "triste" : flores ? "feliz" : vig(t, 505.8, 507.5) ? "neutro" : "neutro"} mira={vig(t, 505.8, 507.5) ? 0 : 0}
+        expr={t > 457.5 && t < 463.5 ? "triste" : flores ? "feliz" : vig(t, 505.8, 507.5) ? "neutro" : "neutro"} mira={vig(t, 505.8, 507.5) ? 0 : 0}
         bD={flores ? 100 : muestra ? interp(t % 1.2, [0, 0.6, 1.2], [40, 160, 40]) : 8} cD={flores ? 70 : 10}
         manoD={flores ? <Flores /> : muestra ? <g><rect x={-8} y={-180} width={16} height={180} fill="#c9a36a" /><rect x={-30} y={-10} width={60} height={12} fill="#8a5414" /></g> : undefined} />}
       {vig(t, 451.3, 453.3) && <Emote t={t} t0={451.4} tipo="brillos" x={CASA + 40} y={SUELO - 360} s={0.6} />}

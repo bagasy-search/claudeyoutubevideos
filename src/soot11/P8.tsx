@@ -59,7 +59,8 @@ export const P8K: Llave[] = [
   [777.0, PLAZA + 60, 560, 1.25, 0.8],
   [782.0, PLAZA + 350, 580, 1.1, 0.9],
   [785.4, 5900, 600, 1.0, 1.4],
-  [788.6, ATRAS + 60, 600, 1.4, 2.4],
+  [787.4, 6450, 600, 1.2, 1.2],
+  [788.6, ATRAS + 60, 600, 1.4, 1.0],
   [789.6, 7950, 600, 1.1, 0.9, 0.3],
   [796.4, ATRAS + 60, 600, 1.45, 1.0, 0.3],
   [800.5, ATRAS + 120, 560, 2.2, 1.2],
@@ -72,18 +73,18 @@ export const P8K: Llave[] = [
   [841.9, PLAZA + 500, 580, 0.9, 1.4],
   [847.3, CASA, 600, 1.2, 1.2, 0.3],
   [851.7, 6440, 620, 1.9, 0.9],
-  [855.9, PLAZA, 560, 1.0, 1.2, 0.35],
+  [857.6, PLAZA, 560, 1.0, 1.2, 0.35],
   [860.0, PLAZA, 520, 1.5, 0.8],
   [864.9, PLAZA, 600, 1.15, 0.8],
-  [867.9, CEM, 250, 0.95, 1.0],
+  [867.9, CEM, 420, 0.95, 1.0],
   [869.6, CEM, 560, 0.9, 1.4],
   [873.1, CEM + 80, 580, 1.4, 1.0],
-  [877.6, 6300, 400, 0.32, 1.6, 0.2],
-  [882.0, 2400, 600, 0.9, 1.0],
+  [877.6, CEM, 480, 0.7, 1.6],
+  [882.0, 2400, 600, 0.9, 1.0, 0.4],
   [888.1, 5200, 600, 0.9, 5.9],
   [891.9, PLAZA, 560, 1.0, 1.0],
   [894.5, ATRAS + 60, 600, 1.4, 1.2],
-  [898.4, 6100, 420, 0.22, 1.6],
+  [899.0, 6100, 420, 0.22, 1.4],
   [902.9, 6100, 420, 0.24, 2.0],
   [906.9, 6100, 250, 0.95, 1.0],
   [908.3, VIK, 250, 0.95, 1.2],
@@ -195,7 +196,7 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
           <Persona x={ATRAS + 140} y={SUELO - 20} h={300} t={t} seed={790} ropa={MERCADER} gorro="capucha" capa="#1b2440" flip expr="miedo" habla={t > 798.7} bD={110} cD={120} manoD={<circle cx={0} cy={0} r={34} fill="#e2504a" opacity={0.7} />} inclina={-6} />
           <Svg><rect x={7020} y={SUELO - 240} width={72} height={230} fill="#ffd27a" opacity={clamp((t - 797.5) / 0.6, 0, 1) * 0.7} /></Svg>
           {t > 797.6 && <Franz x={6990} y={SUELO - 10} t={t} expr="neutro" mira={1} />}
-          <BurbujaM t={t} t0={800.4} t1={803.2} x={ATRAS + 100} y={SUELO - 470} text="please... don't tell anyone." size={42} />
+          <BurbujaM t={t} t0={800.4} t1={803.2} x={ATRAS + 260} y={SUELO - 470} text="please... don't tell anyone." size={42} />
         </>
       )}
       {/* ── Franz el médico: huesos, heridas, quemaduras, remedios */}
@@ -524,10 +525,11 @@ export const P8Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={869.6} t1={873.0} text="1634: NUREMBERG'S MOST RESPECTED CEMETERY" color={C.violeta} x={960} y={150} centro size={48} />
     <Titulo t={t} t0={875.45} t1={877.5} text="THE TOWN FOUND ROOM FOR HIM" y={220} size={90} color={C.oro} borde="#2b1c14" />
     <Titulo t={t} t0={877.65} t1={880.85} text="THE LONELIEST MAN IN TOWN?" y={220} size={100} color={C.crema} />
-    <Sello t={t} t0={880.9} t1={881.95} text="ABSOLUTELY." x={1480} y={880} size={100} />
+    <Sello t={t} t0={880.9} t1={881.95} text="ABSOLUTELY." x={1220} y={840} size={100} />
     <Recap t={t} />
     <Titulo t={t} t0={888.15} t1={891.9} text="BUT THE TOWN NEEDED HIM TWICE" y={200} size={90} color={C.ambar} borde="#2b0a14" />
     <Chip t={t} t0={896.4} t1={898.3} text="IT JUST NEVER WANTED TO BE SEEN WITH HIM" color={C.noche} x={960} y={150} centro size={52} />
+    {vig(t, 898.6, 906.8) && <div style={{ position: "absolute", inset: 0, opacity: clamp((t - 898.6) / 0.3, 0, 1) * clamp((906.8 - t) / 0.3, 0, 1) }}><Franz x={interp(t, [898.6, 906.8], [230, 560])} y={1060} h={440} t={t} viejoF camina={1.1} expr={t > 901 ? "feliz" : "neutro"} habla={vig(t, 899.2, 902.6)} bD={vig(t, 903, 906) ? 120 + Math.sin(t * 6) * 15 : 15} cD={20} /></div>}
     <Titulo t={t} t0={898.5} t1={902.8} text="THE MAN WHO KNEW EVERYBODY BEST" y={200} size={90} color={C.oro} borde="#2b1c14" />
     <Cta t={t} />
     <Titulo t={t} t0={907.0} t1={910.3} text="NEXT TIME: A SLEEPING VIKING CAMP" y={210} size={84} color={C.ambar} borde="#1a1440" />

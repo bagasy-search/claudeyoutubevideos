@@ -17,7 +17,8 @@ export type Cam = { x: number; y: number; z: number };
 const eio = Easing.inOut(Easing.cubic);
 export const camEn = (keys: Llave[], t: number): Cam => {
   let i = 0;
-  while (i + 1 < keys.length && t >= keys[i + 1][0] - (keys[i + 1][4] ?? 0.7)) i++;
+  // la llave i es la última a la que la cámara YA llegó; el viaje a la siguiente arranca dur segundos antes
+  while (i + 1 < keys.length && t >= keys[i + 1][0]) i++;
   const k0 = keys[i];
   const drift = (tt: number, k: Llave) => 1 + Math.min(0.06, Math.max(0, tt - k[0]) * 0.006);
   if (i + 1 >= keys.length || t < keys[i + 1][0] - (keys[i + 1][4] ?? 0.7)) {

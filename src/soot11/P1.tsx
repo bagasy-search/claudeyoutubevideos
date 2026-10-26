@@ -104,7 +104,7 @@ const Arbol: React.FC<{ t: number }> = ({ t }) => {
   const hijos = [560, 960, 1360], nietos = [300, 540, 780, 1140, 1380, 1620];
   const pajaros = t > 105.8 ? clamp((t - 105.8) / 1.8, 0, 1) : 0;
   return (
-    <>
+    <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: "translateY(-30px) scale(0.9)", transformOrigin: "960px 540px" }}>
       <TextoMundo x={960} y={96} text="THE SCHMIDT FAMILY" size={70} color="#7a3d14" borde="#f6e3b4" />
       <Svg>
         <g stroke="#7a3d14" strokeWidth={8} fill="none" strokeLinecap="round">
@@ -127,7 +127,7 @@ const Arbol: React.FC<{ t: number }> = ({ t }) => {
       {hijos.map((x, i) => <Sello key={x} t={t} t0={102.85 + i * 0.22} text="UNCLEAN" x={x} y={700} size={34} rot={-12 + i * 5} />)}
       {nietos.map((x, i) => <Sello key={x} t={t} t0={104.35 + i * 0.16} text="UNCLEAN" x={x} y={1012} size={26} rot={-14 + i * 4} />)}
       {t > 114 && t < 118.9 && <Svg><circle cx={560} cy={640} r={170} fill="none" stroke="#e8344a" strokeWidth={10} strokeDasharray={1070} strokeDashoffset={1070 * (1 - clamp((t - 114) / 0.5, 0, 1))} /></Svg>}
-    </>
+    </div>
   );
 };
 

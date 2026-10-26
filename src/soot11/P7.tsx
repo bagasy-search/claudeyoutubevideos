@@ -182,15 +182,15 @@ export const P7Mundo: React.FC<{ t: number }> = ({ t }) => {
             <circle cx={FAROL + 40} cy={SUELO - 435} r={90} fill="#ff3a4a" opacity={0.18 + 0.08 * Math.sin(t * 6)} />
           </Svg>
           <Persona x={FAROL - 30} y={SUELO - 10} h={280} t={t} seed={740} ropa={{ ...CIVIL(100), tunica: "#c8447a", tunica2: "#8a2a54" }} gorro="toca" expr="feliz" bD={110} cD={120} ladea={8} />
-          {t > 675.9 && <Franz x={FAROL - 230} y={SUELO - 10} t={t} expr="neutro" bD={90} cD={0} manoD={<g><rect x={-30} y={-40} width={60} height={70} rx={6} fill="#fff6e0" stroke="#7a3d14" strokeWidth={4} /></g>} />}
+          {t > 675.9 && t < 679.0 && <Franz x={interp(t, [677.0, 679.0], [FAROL - 230, CASA + 300])} y={SUELO - 10} t={t} camina={vig(t, 677.0, 679.0) ? 2.4 : 0} flip={t > 677.0} expr="neutro" bD={90} cD={0} manoD={<g><rect x={-30} y={-40} width={60} height={70} rx={6} fill="#fff6e0" stroke="#7a3d14" strokeWidth={4} /></g>} />}
           <Emote t={t} t0={676.4} tipo="brillos" x={FAROL - 30} y={SUELO - 380} s={0.7} />
         </>
       )}
       {/* ── todo llega a tu puerta, y todo tiene precio */}
-      {vig(t, 678.0, 684.6) && (
+      {vig(t, 677.2, 684.6) && (
         <>
-          <Franz x={CASA + 300} y={SUELO - 10} t={t} expr="sorpresa" bD={120} cD={60} />
-          {Array.from({ length: 7 }, (_, i) => <Persona key={i} x={interp(t, [678.8 + i * 0.25, 680.5 + i * 0.25], [8100 + i * 120, 7000 + i * 120])} y={SUELO - 20} h={260} t={t} seed={750 + i} ropa={CIVIL(110 + i)} flip camina={1.5} expr="neutro" bD={100} cD={40}
+          {t >= 679.0 && <Franz x={CASA + 300} y={SUELO - 10} t={t} expr="sorpresa" bD={120} cD={60} />}
+          {Array.from({ length: 7 }, (_, i) => <Persona key={i} x={interp(t, [677.2 + i * 0.25, 680.5 + i * 0.25], [7700 + i * 120, 7000 + i * 120])} y={SUELO - 20} h={260} t={t} seed={750 + i} ropa={CIVIL(110 + i)} flip camina={1.5} expr="neutro" bD={100} cD={40}
             manoD={i % 2 ? <Svg><Moneda x={0} y={0} /></Svg> : <g><rect x={-30} y={-22} width={60} height={44} rx={4} fill="#fff6e0" stroke="#7a3d14" strokeWidth={4} /></g>} />)}
           {t > 682.3 && Array.from({ length: 8 }, (_, i) => {
             const u = clamp((t - 682.3 - i * 0.12) / 0.5, 0, 1);
