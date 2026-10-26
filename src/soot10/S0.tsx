@@ -228,7 +228,7 @@ export const O0: React.FC<{ t: number }> = ({ t }) => {
       <S t={41.9} p="unroll" g={-4} />
       {[45.6, 46.1, 46.6, 47.1, 47.6, 48.1, 48.6].map((x, i) => <S key={i} t={x} p="stamp" g={-10} pitch={1 + i * 0.05} />)}
       <S t={45.4} p="write" g={-10} d={3.6} />
-      <Txt t={t} t0={49.34} t1={50.4} text="7 TRAPS" y={930} size={200} color={C.rojo} />
+      <Txt t={t} t0={49.34} t1={50.4} text="7 TRAPS" y={985} size={160} color={C.rojo} />
       <S t={49.34} p="boom" g={-5} />
       <S t={50.4} p="unroll" g={-8} pitch={1.3} />
       <Columpio t={t} />

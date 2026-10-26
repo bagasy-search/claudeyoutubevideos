@@ -221,6 +221,7 @@ export const O4: React.FC<{ t: number }> = ({ t }) => {
   if (t < 369 || t > 468) return null;
   return (
     <>
+      {en(t, 407.6, 410.6) && <Persona x={330} y={1100} h={420} t={t} seed={7} ropa={GRUMETE} expr="miedo" bD={140} cD={100} aparece={407.6} />}
       <CartelTrampa t={t} t0={369.84} n={4} nombre="THE PUNISHMENTS" t1={372.0} />
       <S t={369.84} p="whoosh_big" g={-4} />
       <S t={370.05} p="wood_hit" g={-4} />
@@ -247,7 +248,7 @@ export const O4: React.FC<{ t: number }> = ({ t }) => {
       {en(t, 426.9, 429.3) && <div style={{ position: "absolute", inset: 0, background: `rgba(10,5,20,${0.55 * prog(t, 426.9, 428.2)})` }} />}
       <Txt t={t} t0={436.3} t1={438.8} text="“KISSING THE GUNNER'S DAUGHTER”" y={170} size={78} color={C.oro} />
       <S t={436.3} p="sparkle" g={-12} />
-      <Txt t={t} t0={439.0} t1={440.5} text="WALKING THE PLANK?" y={170} size={110} />
+      <Txt t={t} t0={439.0} t1={440.5} text="WALKING THE PLANK?" y={930} size={110} />
       {en(t, 440.6, 442.3) && <div style={{ position: "absolute", left: 1180, top: 330 }}><svg width={1} height={1} style={{ overflow: "visible" }}><Sello t={t} t0={440.6} txt="MYTH" size={130} /></svg></div>}
       <Txt t={t} t0={446.5} t1={448.2} text="NO THEATER NEEDED" y={170} size={100} color={C.lila} />
       <Txt t={t} t0={448.5} t1={451.2} text="THE SEA IS ENOUGH" y={170} size={110} color={C.teal} />

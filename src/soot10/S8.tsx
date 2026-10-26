@@ -116,11 +116,11 @@ export const M8: React.FC<{ t: number }> = ({ t }) => {
         <S t={819.9} p="whoosh_big" g={-4} />
         <S t={820.0} p="sea" g={-14} d={6} />
         <S t={821.1} p="cloth" g={-8} />
-        <Lbl t={t} t0={822.9} t1={829.8} x={BON - 230} y={DK - 170} txt="JOHN KING" size={62} color={C.oro} />
-        <Lbl t={t} t0={825.9} t1={829.8} x={BON + 230} y={DK - 250} txt="HIS MOTHER" size={54} color={C.crema} />
+        <Lbl t={t} t0={822.9} t1={829.5} x={BON - 230} y={DK - 170} txt="JOHN KING" size={62} color={C.oro} />
+        <Lbl t={t} t0={825.9} t1={829.5} x={BON + 110} y={DK - 265} txt="HIS MOTHER" size={54} color={C.crema} />
         <S t={822.9} p="pop" g={-8} />
         <S t={825.9} p="pop" g={-10} />
-        <Lbl t={t} t0={827.4} t1={829.8} x={BON - 260} y={DK - 90} txt="AGE 8–11" size={62} color={C.lima} />
+        <Lbl t={t} t0={827.4} t1={829.5} x={BON - 260} y={DK - 90} txt="AGE 8–11" size={62} color={C.lima} />
         <S t={827.4} p="tick" g={-8} />
         {/* no se esconde: quiere ir */}
         <P t={t} t0={832.8} t1={834.5} x={BON - 260} y={DK - 200} s={0.5}><Globo txt="TAKE ME!" cola={1} /></P>
@@ -239,6 +239,9 @@ export const O8: React.FC<{ t: number }> = ({ t }) => {
   if (t < 807.5) return null;
   return (
     <>
+      {/* el chico vuelve: los sellos y el CTA */}
+      {en(t, 895.2, 903.6) && <Persona x={1500} y={1100} h={440} t={t} seed={7} ropa={GRUMETE} flip expr={t > 900.9 ? "feliz" : "triste"} bD={t > 900.9 ? 160 : 20} cD={30} aparece={895.2} />}
+      {en(t, 908.0, 912.3) && <Persona x={1720} y={1100} h={420} t={t} seed={7} ropa={GRUMETE} flip expr="feliz" bD={en(t, 911.3, 911.9) ? 170 : 130 + Math.sin(t * 9) * 30} cD={20} aparece={908.0} />}
       <Txt t={t} t0={807.9} t1={810.8} text="SO... A DEATH TRAP?" y={170} size={110} />
       <Txt t={t} t0={810.9} t1={811.9} text="HERE'S THE TWIST" y={170} size={140} color={C.oro} />
       <S t={810.9} p="whoosh_big" g={-4} />
@@ -270,9 +273,9 @@ export const O8: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={845.1} t1={847.0} text="APRIL 1717" y={170} size={140} color={C.lila} />
       <Txt t={t} t0={847.1} t1={848.8} text="HIS FLAGSHIP: THE WHYDAH" y={170} size={100} color={C.oro} />
       <S t={843.6} p="thunder" g={-6} />
-      <Flash t={t} t0={846.2} d={0.22} c="#e8f0ff" />
+      <Flash t={t} t0={846.2} d={0.1} c="rgba(232,240,255,0.55)" />
       <S t={846.2} p="thunder" g={-4} />
-      <Flash t={t} t0={850.1} d={0.22} c="#e8f0ff" />
+      <Flash t={t} t0={850.1} d={0.1} c="rgba(232,240,255,0.55)" />
       <S t={850.1} p="thunder" g={-4} />
       <S t={844.0} p="sea" g={-8} d={8} />
       <Mapa t={t} t0={848.9} t1={851.6} titulo="CAPE COD · NEW ENGLAND"
@@ -281,7 +284,6 @@ export const O8: React.FC<{ t: number }> = ({ t }) => {
       <S t={848.9} p="unroll" g={-6} />
       <S t={850.6} p="stamp" g={-8} />
       <Txt t={t} t0={852.8} t1={854.2} text="BROKE APART" y={170} size={150} color={C.rojo} />
-      <Flash t={t} t0={852.7} d={0.2} />
       {/* 140 → 2 */}
       {en(t, 854.4, 858.2) && <Hombres t={t} />}
       <Txt t={t} t0={854.9} t1={856.8} text="140+ MEN ON BOARD" y={200} size={100} />
@@ -298,7 +300,6 @@ export const O8: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={874.0} t1={876.6} text="YEARS LATER..." y={170} size={110} />
       <Txt t={t} t0={876.7} t1={879.8} text="ARCHAEOLOGISTS LOOK INSIDE" y={170} size={90} color="#bff3ff" />
       <Txt t={t} t0={883.9} t1={885.0} text="A CHILD'S SHOE" y={170} size={140} color={C.crema} />
-      <Flash t={t} t0={883.9} d={0.3} />
       <Txt t={t} t0={885.1} t1={886.6} text="IT BELONGED TO..." y={170} size={110} />
       <Txt t={t} t0={886.7} t1={887.6} text="JOHN KING" y={170} size={180} color={C.oro} />
       <Txt t={t} t0={887.7} t1={890.1} text="THE YOUNGEST PIRATE WHOSE NAME WE KNOW" y={170} size={66} />
@@ -349,7 +350,7 @@ export const O8: React.FC<{ t: number }> = ({ t }) => {
       <S t={916.7} p="bell" g={-6} pitch={0.5} />
       <Txt t={t} t0={912.5} t1={914.4} text="NEXT TIME..." y={170} size={120} />
       <Txt t={t} t0={914.4} t1={916.6} text="THE MOST HATED MAN IN TOWN" y={170} size={86} color={C.crema} />
-      <Txt t={t} t0={916.7} t1={917.6} text="THE EXECUTIONER" y={170} size={150} color={C.rojo} />
+      <Txt t={t} t0={916.7} t1={917.3} text="THE EXECUTIONER" y={170} size={150} color={C.rojo} />
       <S t={917.8} p="whoosh_big" g={-6} />
       <Txt t={t} t0={917.9} t1={923} text="WHICH TRAP GETS YOU FIRST?" y={150} size={96} color={C.oro} />
       <Lista t={t} x={560} y={230} size={50} w={800} titulo="TELL ME IN THE COMMENTS"

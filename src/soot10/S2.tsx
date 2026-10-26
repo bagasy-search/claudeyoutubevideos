@@ -88,8 +88,8 @@ export const A2: React.FC<{ t: number }> = ({ t }) => {
         <S t={162.4} p="glass" g={-10} />
         {/* fuego en la cocina */}
         {en(t, 164.4, 171) && Array.from({ length: 7 }, (_, i) => { const k = t > 168.1 ? 1 + prog(t, 168.1, 168.8) * 1.6 : 1; return <path key={i} d={`M ${3360 + i * 26} ${CUB - 120} q 14 ${(-50 - Math.sin(t * 11 + i) * 24) * k} 24 0`} fill={i % 2 ? "#ffb020" : "#ff6a3d"} />; })}
-        <Lbl t={t} t0={166.0} t1={170.6} x={3430} y={1230} txt="OPEN FIRE" size={44} color={C.ambar} />
-        <Lbl t={t} t0={166.8} t1={170.6} x={3430} y={1290} txt="+ WOODEN SHIP" size={36} color={C.crema} />
+        <Lbl t={t} t0={166.0} t1={168.1} x={3430} y={1230} txt="OPEN FIRE" size={44} color={C.ambar} />
+        <Lbl t={t} t0={166.8} t1={168.1} x={3430} y={1290} txt="+ WOODEN SHIP" size={36} color={C.crema} />
         <S t={164.5} p="fire" g={-10} d={6} />
         <S t={168.1} p="whoosh_big" g={-6} />
         <S t={168.3} p="gasp" g={-8} />
@@ -176,6 +176,8 @@ export const O2: React.FC<{ t: number }> = ({ t }) => {
   if (t < 152 || t > 266) return null;
   return (
     <>
+      {/* el chico reacciona en primer plano */}
+      {en(t, 207.6, 210.1) && <Persona x={300} y={1100} h={400} t={t} seed={7} ropa={GRUMETE} expr="miedo" ladea={Math.sin(t * 3) * 6} bD={110} cD={60} aparece={207.6} />}
       <CartelTrampa t={t} t0={152.56} n={2} nombre="THE CHORES" t1={154.6} />
       <S t={152.56} p="whoosh_big" g={-4} />
       <S t={152.75} p="wood_hit" g={-4} />
@@ -184,7 +186,7 @@ export const O2: React.FC<{ t: number }> = ({ t }) => {
       <Lista t={t} x={60} y={250} size={46} w={470} titulo="CHORES" t1={180.3}
         items={[{ txt: "SERVE", t0: 161.1, ok: true }, { txt: "CLEAN", t0: 163.2, ok: true }, { txt: "COOK", t0: 164.5, ok: true }, { txt: "SCRUB", t0: 170.8, ok: true }, { txt: "MESSAGES", t0: 174.4, ok: true }, { txt: "TOOLS", t0: 175.4, ok: true }, { txt: "BUCKETS", t0: 176.6, ok: true }, { txt: "KEEP TIME", t0: 179.2, ok: true }]} />
       {[161.1, 163.2, 164.5, 170.8, 174.4, 175.4, 176.6, 179.2].map((a, i) => <S key={i} t={a} p="write" g={-14} />)}
-      <Txt t={t} t0={168.2} t1={170.6} text="AS SAFE AS IT SOUNDS" y={900} size={90} color={C.ambar} />
+      <Txt t={t} t0={168.2} t1={170.6} text="AS SAFE AS IT SOUNDS" y={170} size={90} color={C.ambar} />
       <Txt t={t} t0={172.4} t1={174.2} text="UNTIL YOUR KNEES BLEED" y={900} size={90} color={C.rojo} />
       <Txt t={t} t0={189.0} t1={191.5} text="×48 A DAY" y={880} size={130} color={C.oro} />
       <S t={189.0} p="coin" g={-10} />
@@ -201,7 +203,7 @@ export const O2: React.FC<{ t: number }> = ({ t }) => {
       <S t={230.9} p="tick" g={-6} d={3.2} />
       <Txt t={t} t0={234.1} t1={238.5} text="ONE HAND FOR YOU, ONE FOR THE SHIP" y={900} size={76} />
       <Txt t={t} t0={241.6} t1={243.7} text="AND SLEEP?" y={170} size={130} color={C.lila} />
-      <Txt t={t} t0={248.5} t1={252.3} text="MAX 4 HOURS" y={900} size={120} color={C.oro} />
+      <Txt t={t} t0={248.5} t1={252.3} text="MAX 4 HOURS" y={170} size={120} color={C.oro} />
       <Txt t={t} t0={259.0} t1={264.4} text="PERMANENTLY TIRED" y={170} size={110} color={C.lila} />
       <S t={259.0} p="sad" g={-12} />
       {/* barra de energía del grumete */}

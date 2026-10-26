@@ -31,7 +31,7 @@ export const camara = (t: number, keys: Key[]): Cam => {
     if (t < k0) break;
     // viaje largo (mucho cielo/mar vacío en el medio) = barrido rápido de 0,5 s en vez de un paneo lento por la nada
     const lejos = Math.hypot(x - c.x, y - c.y) * Math.min(c.z, z) > 3000;
-    if (lejos) d = Math.min(d, 0.5);
+    if (lejos) d = Math.min(d, 0.3);
     const ease = lejos ? Easing.inOut(Easing.poly(5)) : tipo === "seco" ? Easing.out(Easing.cubic) : tipo === "lineal" ? Easing.linear : Easing.inOut(Easing.cubic);
     const u = d <= 0 ? 1 : interpolate(t, [k0, k0 + d], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease });
     // el zoom se interpola en escala logarítmica (el dolly se siente parejo)
@@ -413,7 +413,7 @@ export const Barco: React.FC<EstadoBarco & { children?: React.ReactNode }> = (p)
         {/* cañones del puente */}
         {[560, 900, 1240, 1900, 2620, 2960, 3300].map((x, i) => <Canon key={x} x={x} y={BAT} t={t} dispara={dispara[i % Math.max(1, dispara.length)]} />)}
         {/* bodega: carga */}
-        {[[1000, "RUM"], [1130, ""], [1700, "WATER"], [1830, "WATER"], [2800, "PORK"], [2930, ""]].map(([x, txt], i) => <Barril key={i} x={+x} y={BOD} s={1.15} txt={txt as string} c={i % 2 ? "#9a5a28" : "#a8682f"} />)}
+        {[[1000, "RUM"], [1130, ""], [1700, "WATER"], [1830, "BEER"], [2800, "PORK"], [2930, ""]].map(([x, txt], i) => <Barril key={i} x={+x} y={BOD} s={1.15} txt={txt as string} c={i % 2 ? "#9a5a28" : "#a8682f"} />)}
         <Barril x={1065} y={BOD - 138} s={1.05} />
         {[1300, 1400, 2050, 3060, 3170].map((x, i) => <Saco key={x} x={x} y={BOD} s={1.1} c={i % 2 ? "#d9b98a" : "#c9a370"} />)}
         {/* pólvora */}

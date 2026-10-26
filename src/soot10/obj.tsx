@@ -326,7 +326,7 @@ export const Pupitre: React.FC = () => (
 );
 export const Zapato: React.FC<{ brillo?: number; t?: number }> = ({ brillo = 0, t = 0 }) => (
   <g>
-    {brillo > 0 && <circle r={170} fill="#fff3c4" opacity={brillo * (0.25 + 0.08 * Math.sin(t * 3))} />}
+    {brillo > 0 && Array.from({ length: 10 }, (_, i) => { const a = (i / 10) * Math.PI * 2 + t * 0.6, r0 = 150, r1 = 150 + 50 * brillo + 14 * Math.sin(t * 5 + i); return <line key={i} x1={Math.cos(a) * r0} y1={Math.sin(a) * r0 * 0.6} x2={Math.cos(a) * r1} y2={Math.sin(a) * r1 * 0.6} stroke="#ffe27a" strokeWidth={10} strokeLinecap="round" />; })}
     <path d="M -110 30 L -110 -40 Q -110 -70 -80 -70 L -30 -70 Q -20 -20 30 -14 Q 110 -6 120 20 L 120 34 L -110 34 Z" fill="#1d1420" />
     <rect x={-116} y={28} width={240} height={16} rx={6} fill="#3a2a2a" />
     <rect x={-60} y={-46} width={40} height={14} rx={4} fill="#c8ccd4" />

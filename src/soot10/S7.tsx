@@ -162,7 +162,7 @@ export const M7: React.FC<{ t: number }> = ({ t }) => {
       {en(t, 767.3, 776.1) && <Persona x={20250} y={MAR - 120} h={200} t={t} seed={310} ropa={ROBERTS} flip expr={t > 771.7 ? "sorpresa" : "orgullo"} inclina={t > 771.9 ? Math.min(80, (t - 771.9) * 160) : 0} />}
       {en(t, 767.3, 771.6) && [20450, 20600, 20750].map((x, i) => <Persona key={i} x={x} y={MAR - 120} h={180} t={t} seed={311 + i} ropa={PIRATA(i)} expr="dormido" ladea={Math.sin(t * 2 + i) * 14} bD={100 + Math.sin(t * 4 + i) * 45} cD={50} manoD={<g transform="scale(0.22)"><Botella c="#5a8a3a" /></g>} />)}
       {/* Cape Coast: los presos encadenados */}
-      {en(t, 783, 789.4) && [-450, -300, -150, 0, 150, 300, 450].map((dx, i) => <Persona key={i} x={CC + dx} y={MAR - 60} h={220} t={t} seed={320 + i} ropa={PIRATA(i)} expr="triste" bD={30} bI={30} cD={60} cI={60} inclina={6} camina={t < 786.5 ? 2 : 0} />)}
+      {en(t, 779.4, 789.4) && [-450, -300, -150, 0, 150, 300, 450].map((dx, i) => <Persona key={i} x={CC + dx} y={MAR - 60} h={220} t={t} seed={320 + i} ropa={PIRATA(i)} expr="triste" bD={30} bI={30} cD={60} cI={60} inclina={6} camina={t < 786.5 ? 2 : 0} />)}
       <G>
         <Lbl t={t} t0={687.2} t1={696.8} x={5500} y={MAR - 820} txt="MERCHANT" size={90} color={C.crema} />
         {en(t, 689.4, 696.8) && <g transform={`translate(5500 ${MAR - 700}) scale(2.2)`}><Signo k="check" /></g>}
@@ -189,7 +189,7 @@ export const M7: React.FC<{ t: number }> = ({ t }) => {
         <S t={776.5} p="splash" g={-6} />
         <Lbl t={t} t0={776.6} t1={779.3} x={20000} y={MAR - 300} txt="OVERBOARD · AS HE WISHED" size={56} color={C.crema} />
         {/* Cape Coast: la cadena */}
-        {en(t, 783, 789.4) && <line x1={CC - 470} y1={MAR - 150} x2={CC + 470} y2={MAR - 150} stroke="#6a6a72" strokeWidth={8} strokeDasharray="18 8" />}
+        {en(t, 779.4, 789.4) && <line x1={CC - 470} y1={MAR - 150} x2={CC + 470} y2={MAR - 150} stroke="#6a6a72" strokeWidth={8} strokeDasharray="18 8" />}
         <S t={783.6} p="rattle" g={-10} d={2} />
         {/* Cape Coast */}
         <S t={783.0} p="whoosh_big" g={-4} />
@@ -209,6 +209,8 @@ export const O7: React.FC<{ t: number }> = ({ t }) => {
   if (t < 668 || t > 809) return null;
   return (
     <>
+      {/* Execution Dock: la gente mira */}
+      {en(t, 790.2, 797.8) && [180, 380, 1540, 1740].map((x, i) => <Persona key={i} x={x} y={1110} h={380} t={t} seed={410 + i} ropa={PIRATA(i)} flip={i > 1} expr={i % 2 ? "triste" : "miedo"} bD={i === 0 ? 120 : 20} cD={40} aparece={790.2 + i * 0.12} />)}
       <CartelTrampa t={t} t0={668.48} n={7} nombre="THE BATTLE" t1={670.6} />
       <S t={668.48} p="whoosh_big" g={-4} />
       <S t={668.7} p="wood_hit" g={-4} />
@@ -254,8 +256,8 @@ export const O7: React.FC<{ t: number }> = ({ t }) => {
       </div>}
       {/* cartucho tras cartucho */}
       {[[727.7, "×1"], [732.4, "×2"], [734.4, "×3"]].map(([a, x], i) => <Txt key={i} t={t} t0={a as number} t1={i < 2 ? [732.3, 734.3][i] : 735.4} text={`CARTRIDGE ${x}`} y={900} size={110} color={C.oro} />)}
-      <Txt t={t} t0={759.8} t1={761.4} text="HMS SWALLOW CLOSES IN" y={900} size={90} color={C.rojo} />
-      <Contador t={t} t0={798.2} t1={799.4} de={0} a={2} x={960} y={190} size={150} color={C.oro} pre="1–" post=" YEARS" tFin={802.7} />
+      <Txt t={t} t0={759.8} t1={761.4} text="HMS SWALLOW CLOSES IN" y={990} size={74} color={C.rojo} />
+      <Txt t={t} t0={798.2} t1={802.7} text="1–2 YEARS" y={190} size={150} color={C.oro} />
       <Txt t={t} t0={799.6} t1={802.7} text="A TYPICAL PIRATE CAREER" y={330} size={64} />
       <Txt t={t} t0={802.9} t1={805.8} text="RICH? SOMETIMES." y={170} size={120} color={C.oro} />
       <Txt t={t} t0={806.0} t1={807.8} text="OLD? ALMOST NEVER." y={170} size={120} color={C.rojo} />

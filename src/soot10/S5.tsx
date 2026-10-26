@@ -217,6 +217,7 @@ export const O5: React.FC<{ t: number }> = ({ t }) => {
   if (t < 466 || t > 573) return null;
   return (
     <>
+      {en(t, 527.9, 530.0) && [1380, 1620].map((x, i) => <Persona key={i} x={x} y={1100} h={430} t={t} seed={400 + i} ropa={PIRATA(i + 2)} flip={i === 1} expr="enojado" bD={100 + Math.sin(t * 8 + i) * 40} cD={30} aparece={527.9 + i * 0.15} />)}
       <CartelTrampa t={t} t0={466.14} n={5} nombre="THE FOOD" t1={468.4} />
       <S t={466.14} p="whoosh_big" g={-4} />
       <S t={466.35} p="wood_hit" g={-4} />
@@ -226,7 +227,7 @@ export const O5: React.FC<{ t: number }> = ({ t }) => {
       <Contador t={t} t0={483.5} t1={484.8} de={1} a={8} x={960} y={190} size={140} color={C.crema} pre="WEEK " tFin={484.9} />
       <S t={483.5} p="tick" g={-8} d={1.3} />
       <Txt t={t} t0={494.5} t1={497.4} text="TAP, TAP, TAP" y={170} size={110} color={C.oro} />
-      {en(t, 497.5, 501.4) && <div style={{ position: "absolute", inset: 0, background: `rgba(6,3,14,${0.88 * prog(t, 497.5, 498.3)})` }} />}
+      {en(t, 497.5, 501.4) && <div style={{ position: "absolute", inset: 0, background: `rgba(6,3,14,${0.6 * prog(t, 497.5, 498.3)})` }} />}
       {en(t, 498.3, 501.4) && <div style={{ position: "absolute", left: 960, top: 480, transform: "translate(-50%,-50%)", display: "flex", gap: 30 }}>{[0, 1].map((i) => <div key={i} style={{ width: 46, height: (t * 2) % 3 < 0.15 ? 6 : 46, borderRadius: 23, background: "#fff" }} />)}</div>}
       <Txt t={t} t0={498.5} t1={501.4} text="EAT IN THE DARK" y={760} size={96} color={C.crema} />
       <S t={498.4} p="crunch" g={-8} />

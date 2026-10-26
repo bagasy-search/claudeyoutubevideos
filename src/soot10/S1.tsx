@@ -186,7 +186,7 @@ export const Me1: React.FC<{ t: number }> = ({ t }) => {
         ))}
         {[126.2, 126.4, 126.6, 126.8].map((a, i) => <P key={i} t={t} t0={a} t1={128} x={CREW[i] - ox + 70} y={1240} s={0.5}><Signo k="check" /></P>)}
         <S t={126.2} p="ding" g={-8} />
-        <Lbl t={t} t0={128.1} t1={131} x={1300} y={1000} txt="FORCED" size={110} color={C.rojo} />
+        <Lbl t={t} t0={128.1} t1={131} x={1800} y={1180} txt="FORCED" size={110} color={C.rojo} />
         <S t={128.1} p="rope" g={-6} />
         <S t={128.4} p="stomp" g={-8} />
         {/* firmar, amablemente, con una pistola cerca */}

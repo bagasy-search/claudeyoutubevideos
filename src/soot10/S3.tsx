@@ -127,11 +127,11 @@ export const A3: React.FC<{ t: number }> = ({ t }) => {
         {reparto && REPARTO.map(([x, txt, n, t0], i) => (
           <g key={i}>
             <g transform={`translate(${x} ${CUB - 6}) scale(0.5)`}><Pila n={n} t={t} t0={t0} oro /></g>
-            <Lbl t={t} t0={t0} t1={320.4} x={x} y={CUB + 62 + (i % 2) * 34} txt={txt} size={30} color={C.crema} />
+            <Lbl t={t} t0={t0} t1={320.4} x={x} y={CUB - 130 - (i % 2) * 36} txt={txt} size={34} color={C.crema} />
           </g>
         ))}
         {reparto && <g transform={`translate(2780 ${CUB - 6}) scale(0.5)`}><Pila n={0.5} t={t} t0={318.3} oro /></g>}
-        <Lbl t={t} t0={318.3} t1={320.4} x={2780} y={CUB + 80} txt="BOY · ½" size={40} color={C.oro} />
+        <Lbl t={t} t0={318.3} t1={320.4} x={2780} y={CUB - 100} txt="BOY · ½" size={48} color={C.oro} />
         {REPARTO.map(([, , , t0], i) => <S key={i} t={t0} p="coin" g={-8} pitch={1 + i * 0.05} />)}
         <S t={318.3} p="coin" g={-6} pitch={1.6} />
         {/* destituido */}

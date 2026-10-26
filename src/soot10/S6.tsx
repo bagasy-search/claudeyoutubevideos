@@ -93,7 +93,6 @@ export const A6: React.FC<{ t: number }> = ({ t }) => {
         {/* el limón */}
         <P t={t} t0={599.2} t1={601.1} x={2150} y={1210} s={0.55} flota><Limon /></P>
         {en(t, 599.2, 601.1) && <circle cx={2150} cy={1210} r={70 + Math.sin(t * 5) * 6} fill="#fff3c4" opacity={0.25} />}
-        <Lbl t={t} t0={599.4} t1={601.1} x={2150} y={1145} txt="THE CURE (NOBODY KNEW)" size={58} color={C.oro} />
         <S t={599.2} p="sparkle" g={-8} />
         {/* mosquitos */}
         {en(t, 610.4, 615) && Array.from({ length: 12 }, (_, i) => <g key={i} transform={`translate(${1600 + ((i * 97 + t * (60 + i * 9)) % 1000)} ${1220 + Math.sin(t * 3 + i) * 80})`}><Mosquito t={t} s={0.22} /></g>)}
@@ -112,7 +111,7 @@ export const A6: React.FC<{ t: number }> = ({ t }) => {
         {Array.from({ length: 8 }, (_, i) => <S key={i} t={646.5 + i * 0.24} p="coin" g={-10} pitch={1 + (i % 4) * 0.08} />)}
         <S t={646.3} p="cheer" g={-10} />
         {/* el cuerpo con precios */}
-        {([[656.6, 1760, 1260, "RIGHT ARM · 600", "M 1880 1280 L 1990 1320"], [658.8, 2340, 1260, "LEFT ARM · 500", "M 2230 1280 L 2110 1320"], [660.7, 1760, 1440, "FINGER · 100", "M 1880 1440 L 1985 1420"], [661.8, 2340, 1120, "EYE · 100", "M 2230 1140 L 2080 1235"]] as [number, number, number, string, string][]).map(([a, x, y, txt, d], i) => (
+        {([[656.6, 1760, 1260, "RIGHT ARM · 600", "M 1880 1280 L 1990 1320"], [658.8, 2340, 1260, "LEFT ARM · 500", "M 2230 1280 L 2110 1320"], [660.7, 1760, 1440, "FINGER · 100", "M 1880 1440 L 1985 1420"], [661.8, 2340, 1440, "EYE · 100", "M 2230 1420 L 2080 1260"]] as [number, number, number, string, string][]).map(([a, x, y, txt, d], i) => (
           <g key={i}>
             {en(t, a, 668.5) && <g transform={`translate(${x} ${y}) scale(${0.36 * prog(t, a, a + 0.25)}) rotate(${i % 2 ? 6 : -6})`}><rect x={-230} y={-50} width={460} height={100} rx={18} fill={i < 2 ? C.oro : C.crema} stroke={TINTA} strokeWidth={8} /><text x={0} y={22} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={700} fontSize={58} fill={TINTA}>{txt}</text></g>}
             <Flecha t={t} t0={a + 0.1} t1={668.5} d={d} w={6} />
@@ -182,6 +181,7 @@ export const O6: React.FC<{ t: number }> = ({ t }) => {
       <S t={588.1} p="squish" g={-8} />
       <S t={590.3} p="rattle" g={-8} d={1} />
       <Txt t={t} t0={598.5} t1={601.0} text="A LEMON." y={900} size={110} color={C.oro} />
+      <Txt t={t} t0={599.4} t1={601.1} text="THE CURE (NOBODY KNEW)" y={170} size={96} color={C.oro} />
       {/* fiebres tropicales */}
       <Mapa t={t} t0={601.2} t1={610.4} titulo="FEVER COUNTRY"
         cam={[[601.2, -60, 18, 1.6], [605.0, -40, 14, 1.4], [608.0, -40, 14, 1.5]]}
@@ -207,7 +207,7 @@ export const O6: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={663.7} t1={668.4} text="YOUR BODY HAD A PRICE LIST" y={170} size={96} color={C.oro} />
       {en(t, 665.2, 668.4) && <div style={{ position: "absolute", left: 1500, top: 720 }}><svg width={1} height={1} style={{ overflow: "visible" }}><Sello t={t} t0={665.3} txt="EVERYONE KNEW" size={70} /></svg></div>}
       <S t={665.3} p="stamp" g={-6} />
-      <Flash t={t} t0={644.7} d={0.2} />
+      
     </>
   );
 };
