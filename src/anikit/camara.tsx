@@ -75,6 +75,10 @@ export const golpe = (f: number, f0: number, amp = 3) => (f < f0 ? 0 : amp * Mat
 export const respira = (f: number, fps: number) => 1 + 0.003 * Math.sin((f / fps) * 0.25 * 2 * Math.PI);
 
 // Plano: aplica la cámara a sus capas. claves en coordenadas del mundo (px de 1920x1080 alrededor del centro)
+// interruptor global del motion blur de obturador (un canal que no lo quiere lo apaga desde su entry: setMotionBlur(false))
+let MB_ON = true;
+export const setMotionBlur = (on: boolean) => { MB_ON = on; };
+
 export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; children: React.ReactNode; fondo?: string; extra?: { x?: number; y?: number; zoom?: number } }> = ({ claves, mano = 4, seed = 0, children, fondo = "#000", extra = {} }) => {
   const f = useF();
   const { fps } = useVideoConfig();
@@ -86,7 +90,7 @@ export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; ch
   const q = f - 1 < claves[0].f ? poseEn(claves, f + 1, fps) : poseEn(claves, f - 1, fps);
   const vx = Math.abs(p.x - q.x), vy = Math.abs(p.y - q.y);
   const sx = Math.min(60, vx * 0.5), sy = Math.min(60, vy * 0.5);
-  const mb = sx > 1.5 || sy > 1.5;
+  const mb = MB_ON && (sx > 1.5 || sy > 1.5);
   const id = `mb${seed}`;
   return (
     <AbsoluteFill style={{ background: fondo, overflow: "hidden" }}>

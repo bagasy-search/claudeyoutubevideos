@@ -21,9 +21,12 @@ export const DuoFrente: React.FC<{ looks: [Look, Look]; xs?: [number, number]; y
     <Pj look={looks[1]} ruta={[{ f: 0, x: xs[1], y: y + 40 }]} escala={escala * 0.93} dir={[{ f: 0, v: dir }]} caras={[{ f: 0, v: caras[1] }]} miradas={[{ f: 0, v: { x: dir, y: -0.1 } }]} luz={luz} seed={2} enManoD={manoJune} />
   </svg>
 );
-export const Pj: React.FC<{ look: Look; ruta: Paso[]; poses?: Clv<string | Partial<Pose>>; caras?: Clv<string>; dir?: Clv<1 | -1>; habla?: [number, number][]; enManoD?: React.ReactNode; enManoI?: React.ReactNode; miradas?: Clv<{ x: number; y: number }>; escala?: number; seed?: number; luz?: any; asiento?: Clv<number | undefined>; ajuste?: (p: Pose, f: number) => Pose; giros?: Clv<number>; opacidad?: (f: number) => number; correr?: number }> = (p) => (
+// sin `asiento` explícito, «sentadoSuelo» se apoya en el piso (antes la cadera quedaba en el aire)
+const asientoAuto = (poses?: Clv<string | Partial<Pose>>): Clv<number | undefined> | undefined =>
+  poses && poses.some((k) => k.v === "sentadoSuelo") ? poses.map((k) => ({ f: k.f, v: k.v === "sentadoSuelo" ? 8 : undefined })) : undefined;
+export const Pj: React.FC<{ look: Look; ruta: Paso[]; poses?: Clv<string | Partial<Pose>>; caras?: Clv<string>; dir?: Clv<1 | -1>; habla?: [number, number][]; enManoD?: React.ReactNode | ((f: number) => React.ReactNode); enManoI?: React.ReactNode | ((f: number) => React.ReactNode); miradas?: Clv<{ x: number; y: number }>; escala?: number; seed?: number; luz?: any; asiento?: Clv<number | undefined>; ajuste?: (p: Pose, f: number) => Pose; giros?: Clv<number>; opacidad?: (f: number) => number; correr?: number }> = (p) => (
   <Actor look={p.look} ruta={llenarY(p.ruta)} poses={p.poses ?? [{ f: 0, v: "parado" }]} caras={p.caras ?? [{ f: 0, v: "neutral" }]} dir={p.dir} habla={p.habla}
-    enManoD={p.enManoD} enManoI={p.enManoI} miradas={p.miradas} escala={p.escala ?? 1} seed={p.seed ?? 1} luz={p.luz} asiento={p.asiento} ajuste={p.ajuste} giros={p.giros} opacidad={p.opacidad} correr={p.correr} />
+    enManoD={p.enManoD} enManoI={p.enManoI} miradas={p.miradas} escala={p.escala ?? 1} seed={p.seed ?? 1} luz={p.luz} asiento={p.asiento ?? asientoAuto(p.poses)} ajuste={p.ajuste} giros={p.giros} opacidad={p.opacidad} correr={p.correr} />
 );
 
 // ---- props chicos en la mano ----

@@ -14,15 +14,15 @@ const LUZ = (d = 14, color?: string): Trans => ({ tipo: "luz", d, color });
 
 const CORTES: [number, React.FC, Trans?][] = [
   [0, A.P01Mini], [1.2, A.P02Despierta, LUZ(10, "#fff3d8")], [6.42, A.P03Radio], [9.18, A.P04Calle, FUN()], [15.06, A.P05Vereda], [16.38, A.P06Autos], [17.54, A.P07Ciudad],
-  [18.76, A.P08Ocho, LUZ(12)], [23.14, A.P09Pregunta, FUN()], [29.4, A.P10Real, FUN(10)], [35.38, A.P11Cuenta, { tipo: "cortina", color: "#1d1624" }],
-  [36.18, A.P12Hora, FUN(16)], [42.28, A.P13Theo, FUN()], [50.7, A.P14Bus, FUN(10)], [58.36, A.P15Superior, FUN(10)], [63.52, A.P16Campera], [70.22, A.P17Grita, FUN(10)],
-  [72.7, A.P18Lugares], [77.54, A.P19Holiday], [82.6, A.P20Censo, FUN(16)], [95.7, A.P21Existe, LUZ(12)], [103.44, A.P22Luces, FUN()], [109.19, A.P23Represa, FUN()],
-  [123.17, A.P24Semaforos, FUN(10)], [129.83, A.P25Colina, FUN(14)], [141.99, A.P26Ventana], [151.37, A.P27June, LUZ(12)], [162.59, A.P28Quedo, FUN(10)], [169.31, A.P29Interruptor, FUN(10)],
-  [173.93, B.P30Lobby, FUN(10)], [178.85, B.P31Pizarra], [183.97, B.P32Baja], [186.77, B.P33Dos, FUN(10)], [191.73, B.P34Super, LUZ(12)], [201.37, B.P35Gondola],
-  [215.13, B.P36Calorias, FUN(10)], [221.69, B.P37Ciudad, FUN(10)], [229.01, B.P38Fresco, FUN(10)], [240.61, B.P39Regla1, { tipo: "cortina", color: "#1d1624" }], [246.37, B.P40Agua, FUN()],
-  [258.49, B.P41Lago, FUN()], [265.17, B.P42Mata, FUN(14)], [275.91, B.P43Chicas], [282.21, B.P44Dentista, FUN(10)], [289.61, B.P45Regla2, { tipo: "cortina", color: "#1d1624" }],
-  [299.43, B.P46Casa, LUZ(14)], [310.5, B.P47Nafta, FUN(10)], [326.52, B.P48Lista, FUN(10)], [339.96, B.P49Nieve], [347.48, B.P50Menos30, FUN(10)], [360.54, B.P51Helada, FUN(10)],
-  [365.98, B.P52Cuentas, FUN(12)], [383.32, B.P53Puente, FUN(16)], [392.68, B.P54Apagon], [406.26, B.P55Vela, FUN(10)], [410.22, B.P56Linea, FUN(10)], [421.8, B.P57Cta, FUN(16)],
+  [18.76, A.P08Ocho, LUZ(12)], [23.14, A.P09Pregunta], [29.4, A.P10Real], [35.38, A.P11Cuenta, { tipo: "cortina", color: "#1d1624" }],
+  [36.18, A.P12Hora, FUN(16)], [42.28, A.P13Theo], [50.7, A.P14Bus], [58.36, A.P15Superior], [63.52, A.P16Campera], [70.22, A.P17Grita],
+  [72.7, A.P18Lugares], [77.54, A.P19Holiday], [82.6, A.P20Censo, FUN(16)], [95.7, A.P21Existe, LUZ(12)], [103.44, A.P22Luces], [109.19, A.P23Represa],
+  [123.17, A.P24Semaforos], [129.83, A.P25Colina], [141.99, A.P26Ventana], [151.37, A.P27June, LUZ(12)], [162.59, A.P28Quedo], [169.31, A.P29Interruptor],
+  [173.93, B.P30Lobby], [178.85, B.P31Pizarra], [183.97, B.P32Baja], [186.77, B.P33Dos], [191.73, B.P34Super, LUZ(12)], [201.37, B.P35Gondola],
+  [215.13, B.P36Calorias], [221.69, B.P37Ciudad], [229.01, B.P38Fresco], [240.61, B.P39Regla1, { tipo: "cortina", color: "#1d1624" }], [246.37, B.P40Agua],
+  [258.49, B.P41Lago], [265.17, B.P42Mata], [275.91, B.P43Chicas], [282.21, B.P44Dentista], [289.61, B.P45Regla2, { tipo: "cortina", color: "#1d1624" }],
+  [299.43, B.P46Casa, LUZ(14)], [310.5, B.P47Nafta], [326.52, B.P48Lista], [339.96, B.P49Nieve, FUN(16)], [347.48, B.P50Menos30], [360.54, B.P51Helada],
+  [365.98, B.P52Cuentas], [383.32, B.P53Puente, FUN(16)], [392.68, B.P54Apagon], [406.26, B.P55Vela], [410.22, B.P56Linea], [421.8, B.P57Cta, FUN(16)],
 ];
 export const LC01_FRAMES = 13020;
 

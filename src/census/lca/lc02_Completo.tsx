@@ -14,21 +14,21 @@ const LUZ = (d = 14, color?: string): Trans => ({ tipo: "luz", d, color });
 const CORT: Trans = { tipo: "cortina", color: "#1d1624" };
 
 const CORTES: [number, React.FC, Trans?][] = [
-  [0, A.P01Mini], [0.98, A.P02Enero, LUZ(10, "#eef4ff")], [2.98, A.P03Termo], [5.24, A.P04SinLuz, FUN(10)], [7.26, A.P05Nadie], [10.38, A.P06Cuarto, FUN()],
-  [15.48, A.P07Dia41, LUZ(10)], [18.26, A.P08Comida, FUN(10)], [23.12, A.P09Pregunta, FUN()], [28.52, A.P10Cuenta, CORT], [29.58, A.P11Puertas, FUN(10)],
-  [39.4, A.P12Plastico], [43.58, A.P13Corte, FUN()], [49.44, A.P14Inventario, FUN()], [59.16, A.P15Lenia], [62.02, A.P16Cuerdas, FUN(10)], [66.82, A.P17Cuerda, FUN(10)],
-  [71.4, A.P18Noviembre, FUN(10)], [74.62, A.P19Liniero], [79.5, A.P20Regla, CORT], [83.64, A.P21DeADos, FUN(10)], [87.56, A.P22Bosque, FUN()], [93.14, A.P23Seca, FUN(10)],
-  [99.09, A.P24DosEstufas], [103.65, A.P25Pila, FUN(10)], [107.97, A.P26Frio, FUN(14)], [112.69, A.P27Bajo, FUN(10)], [119.15, A.P28Piel], [122.81, A.P29Canios, FUN(10)],
-  [130.67, A.P30Capas, FUN(10)], [139.13, A.P31Salida], [146.95, A.P32Invisible, FUN(14)], [151.73, A.P33Parrilla, FUN(10)], [161.17, A.P34Ferreteria, FUN(10)], [164.5, A.P35Alarmas],
-  [167.57, A.P36Grita, FUN(10)], [170.81, A.P37Hollin], [172.69, A.P38Nieve, FUN(8)], [178.53, A.P39Nueve, FUN(10)], [182.89, A.P40Dia83, FUN(14)],
-  [188.05, B.P41Reloj, FUN(10)], [194.41, B.P42Torre, FUN(10)], [198.48, B.P43Fecha], [199.6, B.P44Cena, LUZ(12)], [204.38, B.P45Navidad, FUN(12)],
-  [208.1, B.P46Diente, FUN(16)], [216.08, B.P47Sabe], [220.54, B.P48Absceso, FUN(10)], [225.16, B.P49Cabeza], [230.4, B.P50Dentista, FUN(10)], [233.98, B.P51Farmacia],
-  [237.38, B.P52Tormenta, FUN(10)], [242.14, B.P53Frasco, FUN(10)], [252.28, B.P54Pinzas, FUN(10)], [259.28, B.P55Vela, FUN(12)], [263.32, B.P56Nieve, FUN(10)],
-  [271.3, B.P57Sonrie, LUZ(14)], [276.84, B.P58Silencio, FUN(16)], [284.2, B.P59Antartida, FUN(10)], [293.5, B.P60Mirada, FUN(10)], [298.89, B.P61Nadie],
-  [300.87, B.P62Regla3, CORT], [305.89, B.P63Lee, FUN(10)], [308.35, B.P64Pulso], [310.41, B.P65Cartas], [311.67, B.P66Caminan, LUZ(12)], [316.23, B.P67Hielo, FUN(10)],
-  [322.53, B.P68Lago, FUN(10)], [328.39, B.P69Sol, LUZ(16, "#fff3d8")], [335.45, B.P70Ultima, FUN(10)], [339.97, B.P71Abrazo], [343.93, B.P72Escaner, FUN(14)],
-  [352.63, B.P73Estatica, FUN(10)], [357.97, B.P74Voz], [362.09, B.P75Gus, FUN(10)], [368.57, B.P76Ventana, FUN(10)], [375.19, B.P77Agarra, FUN(10)],
-  [378.75, B.P78Tres, FUN(8)], [382.59, B.P79Cta, CORT], [391.05, B.P80Next, FUN(12)],
+  [0, A.P01Mini], [0.98, A.P02Enero, LUZ(10, "#eef4ff")], [2.98, A.P03Termo], [5.24, A.P04SinLuz], [7.26, A.P05Nadie], [10.38, A.P06Cuarto],
+  [15.48, A.P07Dia41, LUZ(10)], [18.26, A.P08Comida], [23.12, A.P09Pregunta], [28.52, A.P10Cuenta, CORT], [29.58, A.P11Puertas, FUN(10)],
+  [39.4, A.P12Plastico], [43.58, A.P13Corte], [49.44, A.P14Inventario], [59.16, A.P15Lenia], [62.02, A.P16Cuerdas], [66.82, A.P17Cuerda],
+  [71.4, A.P18Noviembre, FUN(10)], [74.62, A.P19Liniero], [79.5, A.P20Regla, CORT], [83.64, A.P21DeADos], [87.56, A.P22Bosque], [93.14, A.P23Seca],
+  [99.09, A.P24DosEstufas], [103.65, A.P25Pila], [107.97, A.P26Frio, FUN(14)], [112.69, A.P27Bajo], [119.15, A.P28Piel], [122.81, A.P29Canios],
+  [130.67, A.P30Capas], [139.13, A.P31Salida], [146.95, A.P32Invisible], [151.73, A.P33Parrilla], [161.17, A.P34Ferreteria], [164.5, A.P35Alarmas],
+  [167.57, A.P36Grita], [170.81, A.P37Hollin], [172.69, A.P38Nieve], [178.53, A.P39Nueve], [182.89, A.P40Dia83, FUN(14)],
+  [188.05, B.P41Reloj, FUN(10)], [194.41, B.P42Torre], [198.48, B.P43Fecha], [199.6, B.P44Cena, LUZ(12)], [204.38, B.P45Navidad, FUN(12)],
+  [208.1, B.P46Diente, FUN(16)], [216.08, B.P47Sabe], [220.54, B.P48Absceso], [225.16, B.P49Cabeza], [230.4, B.P50Dentista], [233.98, B.P51Farmacia],
+  [237.38, B.P52Tormenta], [242.14, B.P53Frasco], [252.28, B.P54Pinzas], [259.28, B.P55Vela], [263.32, B.P56Nieve],
+  [271.3, B.P57Sonrie, LUZ(14)], [276.84, B.P58Silencio, FUN(16)], [284.2, B.P59Antartida], [293.5, B.P60Mirada], [298.89, B.P61Nadie],
+  [300.87, B.P62Regla3, CORT], [305.89, B.P63Lee], [308.35, B.P64Pulso], [310.41, B.P65Cartas], [311.67, B.P66Caminan, LUZ(12)], [316.23, B.P67Hielo],
+  [322.53, B.P68Lago], [328.39, B.P69Sol, LUZ(16, "#fff3d8")], [335.45, B.P70Ultima], [339.97, B.P71Abrazo], [343.93, B.P72Escaner, FUN(14)],
+  [352.63, B.P73Estatica], [357.97, B.P74Voz], [362.09, B.P75Gus], [368.57, B.P76Ventana], [375.19, B.P77Agarra],
+  [378.75, B.P78Tres], [382.59, B.P79Cta, CORT], [391.05, B.P80Next, FUN(12)],
 ];
 export const LC02_FRAMES = 11830;
 

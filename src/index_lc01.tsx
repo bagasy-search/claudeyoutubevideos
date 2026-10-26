@@ -2,6 +2,8 @@
 import React from "react";
 import { Composition, registerRoot } from "remotion";
 import { Lc01, LC01_FRAMES } from "./census/lca/lc01_Completo";
+import { setMotionBlur } from "./anikit/camara";
+setMotionBlur(false); // The Last Census: sin motion blur (director 26-oct)
 
 const Mudo: React.FC = () => <Lc01 audio={false} />;
 const Root = () => (
