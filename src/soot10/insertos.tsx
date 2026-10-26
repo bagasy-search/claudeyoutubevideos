@@ -20,7 +20,6 @@ export const INSERTOS: Ins[] = [
   { t0: 557.0, t1: 560.4, der: true, expr: "triste", bD: 30, bI: 30, cD: 20 },
   { t0: 563.2, t1: 567.4, expr: "miedo", bD: 150, cD: 120, ladea: true },
   { t0: 697.3, t1: 701.2, der: true, ropa: PIRATA(2), seed: 406, expr: "enojado", bD: 170, cD: 20, habla: true },
-  { t0: 704.0, t1: 707.4, ropa: PIRATA(4), seed: 407, expr: "orgullo", bD: 160, bI: 40, cD: 10, salta: true },
 ];
 
 const UNO: React.FC<{ t: number; i: Ins }> = ({ t, i }) => {

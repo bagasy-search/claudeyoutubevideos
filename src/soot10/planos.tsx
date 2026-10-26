@@ -2,10 +2,10 @@ import React from "react";
 import { AbsoluteFill, interpolate, Easing } from "remotion";
 import { C, prog } from "./kit";
 import { Rayos, Emote, fontFamily } from "./kit";
-import { Persona, GRUMETE, CAPITAN, PIRATA, Ropa } from "./persona";
-import { Txt, Contador, en } from "./dsl";
-import { Zapato, Buzo, Signo, Sierra, Gato9, Cofre, Fruta, Tortuga, Galleta, Balde, Sable, Pistola, Microbio, TINTA } from "./obj";
-import { Campana, Fuerte, Ciudad, Craneo } from "./kit2";
+import { Persona, GRUMETE, CAPITAN, PIRATA, CIVIL, Ropa } from "./persona";
+import { Txt, Contador, Lista, en } from "./dsl";
+import { Zapato, Buzo, Signo, Sierra, Moneda8, Diente, Nube, Gato9, Cofre, Fruta, Tortuga, Galleta, Balde, Sable, Pistola, Microbio, TINTA } from "./obj";
+import { Campana, Fuerte, Ciudad, Craneo, Bolsa } from "./kit2";
 import { Canon } from "./barco";
 import { ROBERTS } from "./S3";
 import { CAP_MERC } from "./S1";
@@ -15,6 +15,7 @@ import { JOHN } from "./S8";
 // Reemplazan los generales con gente diminuta, la utilería sola y los cortes sobre cubierta vacía.
 const BARBANEGRA: Ropa = { ...CAPITAN, tunica: "#1d1420", tunica2: "#0e0a14", barba: "#0e0a14", pelo: "#0e0a14", gorroCol: "#0e0a14" };
 const BELLAMY: Ropa = { ...CAPITAN, tunica: "#2a2a3a", tunica2: "#16161f" };
+const MADRE: Ropa = { ...CIVIL(0), tunica: "#c94f8a", tunica2: "#8a2f5e" };
 const QM: Ropa = { ...PIRATA(5), tunica: "#3a3a4a", tunica2: "#1d1d28", barba: "#1d1410", parche: true, gorro: "bandana", gorroCol: "#1d1420" };
 
 type Pl = { t0: number; t1: number; c: [string, string]; suelo?: string; luz?: [number, number]; r: (t: number) => React.ReactNode };
@@ -71,6 +72,117 @@ const Bandera: React.FC<{ t: number; sube: number }> = ({ t, sube }) => (
 const cae = (t: number, t0: number) => interpolate(t, [t0, t0 + 0.5], [0, 82], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) });
 
 export const PLANOS: Pl[] = [
+  // v6 · trampa 4a: la lista de precios de John Phillips (1723)
+  { t0: 385.08, t1: 394.6, c: ["#fff0c8", "#8a4a3a"], suelo: "#5a3418", luz: [700, 300], r: (t) => <>
+    <Persona x={500} y={1050} h={800} t={t} seed={47} ropa={{ ...CAPITAN, tunica: "#3a5a3a", tunica2: "#1d3a1d" }} expr="orgullo" bD={100} cD={20} habla />
+    <Lista t={t} x={960} y={300} titulo="J. PHILLIPS · 1723" size={50} w={860} items={[{ txt: "NO STEALING", t0: 386.0 }, { txt: "NO DESERTING", t0: 387.0 }, { txt: "STRIKE A MAN = 39 LASHES", t0: 390.1 }]} />
+    <Txt t={t} t0={385.2} t1={389.9} text="THE PRICE LIST" y={150} size={110} color={C.oro} />
+  </> },
+  // v6 · gancho: «the pay is a joke» — moneda chiquita
+  { t0: 8.95, t1: 10.06, c: ["#fff0b0", "#c8803a"], suelo: "#6b3a1f", luz: [960, 380], r: (t) => <>
+    <Persona x={820} y={1040} h={760} t={t} seed={7} ropa={GRUMETE} expr="triste" bD={80} cD={70} mira={8} miraY={4} manoD={<g transform="scale(0.5)"><Moneda8 r={30} oro t={t} gira={1.5} /></g>} />
+    <Txt t={t} t0={9.0} t1={10.0} text="THE PAY…" x={1400} y={420} size={120} color={C.oro} />
+  </> },
+  // v6 · trampa 1a: marineros comunes, el barco mercante era una cárcel
+  { t0: 74.92, t1: 82.42, c: ["#d8e8ff", "#3a4a6a"], suelo: "#5a3418", luz: [960, 300], r: (t) => <>
+    {[0, 1, 2].map((i) => <Persona key={i} x={520 + i * 440} y={1030} h={640} t={t} seed={70 + i} ropa={PIRATA(i + 1)} expr={t > 78.6 ? "triste" : "neutro"} bD={t > 78.6 ? 100 : 15} cD={t > 78.6 ? 30 : 0} ladea={Math.sin(t * 2 + i) * 3} />)}
+    <V>{t > 78.6 && Array.from({ length: 9 }, (_, i) => <rect key={i} x={160 + i * 200} y={-1080 + Math.min(1, (t - 78.6) * 3) * 1080} width={26} height={1000} rx={10} fill="#3a3a4a" />)}</V>
+    <Txt t={t} t0={75.0} t1={78.5} text="ORDINARY SAILORS" y={170} size={110} color={C.crema} />
+    <Txt t={t} t0={78.7} t1={82.3} text="A FLOATING PRISON" y={170} size={110} color={C.rojo} />
+  </> },
+  // v6 · trampa 1b: la tripulación mercante no iba a morir por el azúcar de otro
+  { t0: 106.98, t1: 112.04, c: ["#fff0d0", "#6a8ab8"], suelo: "#8a4a20", luz: [700, 300], r: (t) => <>
+    <Persona x={700} y={1030} h={780} t={t} seed={75} ropa={PIRATA(2)} expr={t > 109.2 ? "enojado" : "neutro"} bD={70} bI={70} cD={110} cI={110} habla />
+    <Bolsa x={1420} y={800} s={1.5} t={t} t0={107.3} txt="SUGAR" />
+    <V>{t > 109.4 && <g transform="translate(1600 600)"><Signo k="cross" s={1.4} /></g>}</V>
+    <Txt t={t} t0={109.4} t1={112.0} text="NOT WORTH DYING FOR" y={170} size={100} color={C.oro} />
+  </> },
+  // v6 · trampa 1b: «forgotten, or begging»
+  { t0: 146.2, t1: 150.55, c: ["#ffe0c0", "#7a4a6a"], suelo: "#5a3418", luz: [960, 300], r: (t) => <>
+    <Persona x={960} y={1050} h={760} t={t} seed={7} ropa={GRUMETE} expr="triste" bD={55} bI={55} cD={115} cI={115} miraY={-8} ladea={Math.sin(t * 3) * 3} habla />
+    <Txt t={t} t0={147.4} t1={150.5} text="BEGGING" y={170} size={150} color={C.oro} />
+  </> },
+  // v6 · trampa 2b: vértigo arriba del mástil; abajo está la cubierta, no el agua
+  { t0: 238.64, t1: 243.78, c: ["#d8f0ff", "#4a8ac8"], luz: [960, 200], r: (t) => <>
+    <V>
+      <rect x={1180} y={0} width={70} height={1080} fill="#8a4520" />
+      <path d="M 1215 380 L 1215 960" stroke="#fff" strokeWidth={10} strokeDasharray="30 20" />
+      <path d="M 1185 950 L 1215 1010 L 1245 950" fill="#fff" />
+      <rect x={1000} y={1000} width={500} height={80} fill="#8a4520" />
+    </V>
+    <Persona x={900} y={760} h={620} t={t} seed={7} ropa={GRUMETE} expr="miedo" bD={80} cD={10} mira={10} miraY={14} ladea={Math.sin(t * 9) * 4} />
+    <Emote t={t} t0={239.0} tipo="sudor" x={900} y={330} />
+    <Txt t={t} t0={238.8} t1={241.5} text="30 M" x={1500} y={520} size={130} color={C.crema} />
+    <Txt t={t} t0={241.6} t1={243.7} text="DECK, NOT WATER" y={150} size={110} color={C.rojo} />
+  </> },
+  // v6 · trampa 3b: hacerse útil para no ser «another mouth»
+  { t0: 360.48, t1: 366.2, c: ["#fff0c0", "#b87a3a"], suelo: "#6b3a1f", luz: [960, 300], r: (t) => <>
+    <Persona x={420} y={1040} h={700} t={t} seed={81} ropa={PIRATA(4)} expr="enojado" bD={35} bI={35} cD={135} cI={135} />
+    <Persona x={1500} y={1040} h={700} t={t} seed={82} ropa={PIRATA(1)} expr="enojado" flip bD={35} bI={35} cD={135} cI={135} />
+    <Persona x={960} y={1050} h={560} t={t} seed={7} ropa={GRUMETE} expr={t > 363 ? "miedo" : "neutro"} bD={60 + Math.sin(t * 10) * 30} cD={60} inclina={14} />
+    <Txt t={t} t0={360.6} t1={362.9} text="USEFUL. VERY USEFUL." y={170} size={100} color={C.lima} />
+    <Txt t={t} t0={363.0} t1={366.1} text="JUST ANOTHER MOUTH?" y={170} size={100} color={C.rojo} />
+  </> },
+  // v6 · trampa 5a: el biscuit rompe un diente
+  { t0: 476.06, t1: 483.46, c: ["#fff2c0", "#c8803a"], suelo: "#6b3a1f", luz: [960, 340], r: (t) => <>
+    <Persona x={860} y={1050} h={780} t={t} seed={7} ropa={GRUMETE} expr={t > 480.6 ? "miedo" : t > 479 ? "enojado" : "neutro"} bD={120} cD={110} ladea={en(t, 479, 480.6) ? Math.sin(t * 30) * 3 : 0}
+      manoD={<g transform="scale(0.55)"><Galleta t={t} /></g>} />
+    <V>{t > 480.6 && <g transform={`translate(${900 + (t - 480.6) * 500} ${380 - Math.sin(Math.min(1, (t - 480.6) * 1.4) * Math.PI) * 220 + Math.max(0, t - 481.3) * 600}) rotate(${(t - 480.6) * 400}) scale(1.6)`}><Diente /></g>}</V>
+    <Txt t={t} t0={476.2} t1={480.0} text="HARD FOR MONTHS" y={170} size={100} color={C.crema} />
+    <Txt t={t} t0={480.6} t1={483.4} text="CRACK!" x={1400} y={300} size={150} color={C.rojo} />
+  </> },
+  // v6 · trampa 5b: piratas que asaltan seguido
+  { t0: 527.92, t1: 530.14, c: ["#fff4c0", "#e0903a"], suelo: "#8a4a20", luz: [960, 300], r: (t) => <>
+    {[0, 1, 2].map((i) => <Persona key={i} x={500 + i * 460} y={1040} h={660} t={t} seed={90 + i} ropa={PIRATA(i + 2)} expr="feliz" bD={150} bI={150} cD={30} cI={30} salta={Math.abs(Math.sin(t * 7 + i)) * 20} habla={i === 1} />)}
+    <Txt t={t} t0={528.0} t1={530.1} text="RAID!" y={170} size={150} color={C.oro} />
+  </> },
+  // v6 · trampa 5b: la sentina, justo debajo
+  { t0: 567.58, t1: 571.54, c: ["#c8d8a0", "#2a3a2a"], suelo: "#3a2a1a", luz: [960, 300], r: (t) => <>
+    <Persona x={760} y={1040} h={760} t={t} seed={7} ropa={GRUMETE} expr="enojado" bD={150} cD={150} ladea={Math.sin(t * 4) * 3} />
+    <V><g transform="translate(1350 880) scale(1.6)"><Balde t={t} agua="#5a8a3a" peste /></g><g transform="translate(1300 560)"><Nube t={t} t0={567.7} r={170} /></g></V>
+    <Txt t={t} t0={567.7} t1={571.5} text="THE BILGE" y={170} size={130} color={C.lima} />
+  </> },
+  // v6 · trampa 6: no sables, no cañones: la enfermedad
+  { t0: 577.26, t1: 581.32, c: ["#e8f8c0", "#3a5a2a"], suelo: "#5a3418", luz: [960, 300], r: (t) => <>
+    <V><g transform={`translate(960 430) scale(${2.2 + Math.sin(t * 3) * 0.1})`} opacity={prog(t, 579.5, 580.2)}><Microbio t={t} s={1.6} /></g></V>
+    <V>
+      <g transform="translate(330 560) rotate(-30) scale(1.4)"><Sable /></g>{t > 577.8 && <g transform="translate(330 560)"><Signo k="cross" s={1.5} /></g>}
+      {t > 578.8 && <g transform="translate(1600 560)"><Signo k="cross" s={1.5} /></g>}
+    </V>
+    <V><Canon x={1600} y={700} s={1.6} t={t} /></V>
+    <Persona x={960} y={1050} h={640} t={t} seed={7} ropa={GRUMETE} expr={t > 579.8 ? "miedo" : "neutro"} mira={t > 579.8 ? -10 : 0} miraY={t > 579.8 ? -10 : 0} bD={20} />
+    <Txt t={t} t0={579.6} t1={581.2} text="DISEASE" y={170} size={150} color={C.lima} />
+  </> },
+  // v6 · trampa 6b: el seguro pirata, $800 por un miembro
+  { t0: 646.12, t1: 653.34, c: ["#fff0b0", "#b87a2a"], suelo: "#6b3a1f", luz: [960, 300], r: (t) => <>
+    <Persona x={700} y={1040} h={800} t={t} seed={95} ropa={PIRATA(3)} expr={t > 649 ? "feliz" : "triste"} bD={10} bI={t > 649 ? 150 : 10} cI={20} />
+    <Bolsa x={1380} y={760} s={1.6} t={t} t0={647.5} txt="$" />
+    <Contador t={t} t0={648.0} t1={651.0} de={0} a={800} x={1380} y={380} size={160} color={C.oro} pre="$" />
+    <Txt t={t} t0={646.2} t1={647.9} text="PIRATE INSURANCE" y={150} size={100} color={C.crema} />
+  </> },
+  // v6 · trampa 7a: abordaje colgado de la soga
+  { t0: 703.53, t1: 707.52, c: ["#ffe0b0", "#4a6a9a"], luz: [960, 300], r: (t) => {
+    const u = prog(t, 703.6, 706.2); const a = -55 + u * 110; const R = 600;
+    const hx = 960 + Math.sin((a * Math.PI) / 180) * R, hy = -60 + Math.cos((a * Math.PI) / 180) * R;
+    return <>
+      <V><path d={`M 960 -60 L ${hx} ${hy}`} stroke="#c9a06a" strokeWidth={12} /><path d="M 0 900 Q 960 860 1920 900 L 1920 1080 L 0 1080 Z" fill="#2a8ab8" /></V>
+      <Persona x={hx} y={hy + 640} h={680} t={t} seed={44} ropa={PIRATA(4)} expr="enojado" habla bD={175} cD={0} bI={120} manoI={<g transform="rotate(-80)"><Sable /></g>} inclina={-a * 0.4} />
+      <Txt t={t} t0={703.7} t1={707.4} text="SWING ACROSS!" y={170} size={120} color={C.oro} />
+    </>;
+  } },
+  // v6 · giro: John King quiere unirse
+  { t0: 829.9, t1: 842.34, c: ["#ffe9c0", "#3a5a8a"], suelo: "#5a3418", luz: [700, 300], r: (t) => <>
+    <Persona x={1450} y={1040} h={760} t={t} seed={331} ropa={MADRE} expr={t > 839.9 ? "miedo" : "triste"} flip bD={t > 839.9 ? 160 : 40} bI={t > 839.9 ? 160 : 40} cD={140} cI={140} />
+    <Persona x={680} y={1050} h={620} t={t} seed={330} ropa={JOHN} expr={t > 834.4 ? "enojado" : t > 832.8 ? "feliz" : "sorpresa"} bD={t > 832.8 ? 165 : 30} bI={t > 834.4 ? 40 : 30} cD={0} habla={t > 832.8} salta={en(t, 832.8, 834.4) ? Math.abs(Math.sin(t * 9)) * 22 : 0} />
+    <Txt t={t} t0={830.0} t1={832.7} text="AGE 8 TO 11" y={170} size={110} color={C.crema} />
+    <Txt t={t} t0={832.8} t1={842.2} text="I WANT TO JOIN!" y={170} size={120} color={C.oro} />
+  </> },
+  // v6 · CTA: «except the one who did»
+  { t0: 903.62, t1: 907.98, c: ["#ffe9b0", "#2a3a5a"], luz: [1300, 400], r: (t) => <>
+    <Persona x={620} y={1050} h={760} t={t} seed={330} ropa={JOHN} expr="orgullo" bD={20} cD={10} />
+    <V><g transform="translate(1340 640) scale(2.2)"><Zapato brillo={prog(t, 906.4, 907)} t={t} /></g></V>
+    <Txt t={t} t0={906.58} t1={907.9} text="EXCEPT THE ONE WHO DID" y={170} size={100} color={C.oro} />
+  </> },
   // trampa 1: a los oficios los forzaban a venir, «politely, with a pistol nearby»
   { t0: 127.98, t1: 133.44, c: ["#fff0c0", "#d88a3a"], suelo: "#6b3a1f", luz: [700, 300], r: (t) => <>
     <Persona x={620} y={1030} h={700} t={t} seed={21} ropa={PIRATA(6)} expr={t > 129.6 ? "miedo" : "triste"} bD={15} cD={10} manoD={<g transform="rotate(80) scale(0.9)"><Sierra /></g>} ladea={Math.sin(t * 9) * 2} />
@@ -132,7 +244,7 @@ export const PLANOS: Pl[] = [
     <Txt t={t} t0={184.0} t1={186.4} text="½ HOUR" x={1140} y={200} size={100} color={C.crema} />
   </> },
   // trampa 2: «guess who got flogged?»
-  { t0: 196.72, t1: 199.68, c: ["#ffc0a0", "#8a1d2a"], luz: [700, 400], r: (t) => <>
+  { t0: 196.72, t1: 200.3, c: ["#ffc0a0", "#8a1d2a"], luz: [700, 400], r: (t) => <>
     <Persona x={700} y={1060} h={760} t={t} seed={7} ropa={GRUMETE} expr="miedo" mira={10} bD={140} bI={140} cD={130} cI={130} ladea={Math.sin(t * 18) * 3} />
     <Emote t={t} t0={197.0} tipo="sudor" x={700} y={440} />
     <V><g transform={`translate(${interpolate(t, [196.8, 197.6], [2200, 1500], { extrapolateRight: "clamp", easing: Easing.out(Easing.back(1.4)) })} 400) rotate(-30) scale(1.4)`}><Gato9 t={t} latigo={198.6} /></g></V>
@@ -164,7 +276,7 @@ export const PLANOS: Pl[] = [
     <Persona x={900} y={760} h={520} t={t} seed={7} ropa={GRUMETE} expr="miedo" inclina={-75} bD={150} bI={150} />
     <Persona x={1520} y={1040} h={760} t={t} seed={46} ropa={PIRATA(4)} expr="enojado" flip bD={en(t, 434.5, 438.9) ? 170 - Math.max(0, Math.sin((t - 434.5) * 4)) * 90 : 150} cD={20}
       manoD={<rect x={-8} y={0} width={16} height={260} rx={6} fill="#8a4520" />} />
-    <Txt t={t} t0={436.2} t1={438.8} text="KISSING THE GUNNER'S DAUGHTER" y={170} size={78} color={C.oro} />
+    <Txt t={t} t0={436.2} t1={438.5} text="KISSING THE GUNNER'S DAUGHTER" y={170} size={78} color={C.oro} />
   </> },
   // trampa 5: semana buena / semana mala
   { t0: 530.14, t1: 538.76, c: ["#fff2b0", "#5ab85a"], suelo: "#8a4a20", luz: [480, 300], r: (t) => <>
@@ -200,7 +312,7 @@ export const PLANOS: Pl[] = [
     </V>
   </> },
   // trampa 7: la bandera era un mensaje: rendite y vivís / resistí y no hay piedad
-  { t0: 680.44, t1: 686.88, c: ["#e0f4ff", "#5a9ac8"], suelo: "#8a4a20", luz: [480, 300], r: (t) => <>
+  { t0: 680.44, t1: 691.72, c: ["#e0f4ff", "#5a9ac8"], suelo: "#8a4a20", luz: [480, 300], r: (t) => <>
     <Persona x={480} y={1020} h={720} t={t} seed={80} ropa={CAP_MERC} expr="miedo" bD={170} bI={170} cD={10} cI={10} />
     <V><g transform="translate(760 330)">{t > 681.5 && <Signo k="check" s={1.4} />}</g></V>
     <Txt t={t} t0={680.6} t1={686.8} text="SURRENDER" x={480} y={170} size={100} color={C.lima} />
@@ -209,18 +321,20 @@ export const PLANOS: Pl[] = [
       <Craneo x={1700} y={420} s={1.2} t={t} t0={685.4} />
       <Txt t={t} t0={684.4} t1={686.8} text="RESIST" x={1440} y={170} size={100} color={C.rojo} />
     </Mitad>
+    <Txt t={t} t0={687.0} t1={691.6} text="MOST SURRENDERED" y={170} size={110} color={C.oro} />
   </> },
   // trampa 7: muere Roberts
   { t0: 771.66, t1: 776.2, c: ["#ffd0a0", "#3a2030"], suelo: "#5a3418", luz: [960, 320], r: (t) => <>
-    <Persona x={960} y={1040} h={840} t={t} seed={265} ropa={ROBERTS} expr={t > 772.6 ? "sorpresa" : "orgullo"} bD={t > 772.6 ? 160 : 40} cD={t > 772.6 ? 150 : 10} inclina={-cae(t, 774.4) * 0.9} />
-    <V>{t > 772.3 && Array.from({ length: 9 }, (_, i) => { const k = Math.min(1, (t - 772.3) * 4); return <circle key={i} cx={1920 - k * (900 - i * 12) + (i % 3) * 20} cy={420 + (i % 4) * 22} r={14} fill="#3a3a4a" />; })}</V>
+    <Persona x={960} y={1040} h={840} t={t} seed={265} ropa={ROBERTS} expr={t > 772.0 ? "sorpresa" : "enojado"} bD={t > 772.0 ? 160 : 40} cD={t > 772.0 ? 150 : 10} inclina={-cae(t, 774.4) * 0.9} />
+    <V>{t > 771.8 && Array.from({ length: 9 }, (_, i) => { const k = Math.min(1, (t - 771.8) * 4); return <circle key={i} cx={1920 - k * (900 - i * 12) + (i % 3) * 20} cy={420 + (i % 4) * 22} r={14} fill="#3a3a4a" />; })}</V>
     <Txt t={t} t0={772.4} t1={776.1} text="GRAPE SHOT" y={170} size={120} color={C.rojo} />
   </> },
   // trampa 7: Cape Coast Castle, 52 colgados (no Londres)
-  { t0: 783.02, t1: 789.3, c: ["#fff0c0", "#c8803a"], suelo: "#c8a870", luz: [960, 200], r: (t) => <>
+  { t0: 779.32, t1: 789.3, c: ["#fff0c0", "#c8803a"], suelo: "#c8a870", luz: [960, 200], r: (t) => <>
     <Fuerte x={960} y={470} s={1.1} t={t} piedra />
     {[0, 1, 2, 3, 4].map((i) => <Persona key={i} x={300 + i * 330} y={1040} h={520} t={t} seed={90 + i} ropa={PIRATA(i)} expr="triste" bD={15} bI={15} cD={60} cI={60} />)}
     <V><path d={`M 240 ${830} L 1680 830`} stroke="#5a5a6a" strokeWidth={10} strokeDasharray="22 10" /></V>
+    <Txt t={t} t0={779.4} t1={782.8} text="THE REST OF THE CREW" y={150} size={100} color={C.crema} />
     <Txt t={t} t0={783.2} t1={787.6} text="CAPE COAST CASTLE" y={150} size={100} color={C.crema} />
     <Txt t={t} t0={787.7} t1={789.2} text="52 HANGED" y={150} size={150} color={C.rojo} />
   </> },
