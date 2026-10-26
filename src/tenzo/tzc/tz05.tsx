@@ -81,7 +81,7 @@ const T = (): TramoS[] => [
       leo={{ poses: [{ f: 0, v: SENTADO }, { f: 18, v: { ...SENTADO, hI: 160, cI: 20, hD: 165, cD: 15, tronco: -8, cabeza: -10 } }, { f: 62, v: SENTADO }], caras: [{ f: 0, v: "feliz" }] }} />
   ) },
   { t0: 7.1, t1: 11.8, el: (
-    <EnCuarto cam={[mira(0, CTO.colchon + 60, PC - 260, 1.4), mira(141, CTO.bolso - 120, PC - 280, 1.35, { curva: "inout" })]}
+    <EnCuarto cam={[mira(0, CTO.colchon + 40, PC - 270, 1.9), mira(141, CTO.bolso - 140, PC - 285, 1.8, { curva: "inout" })]}
       leo={{ ruta: [{ f: 0, x: CTO.colchon, y: PC }, { f: 30, x: CTO.colchon, y: PC }, { f: 100, x: CTO.bolso - 160, y: PC }], asiento: [{ f: 0, v: CTO.COLCHON_ALTO }, { f: 26, v: undefined }], caras: [{ f: 0, v: "feliz" }], poses: [{ f: 0, v: SENTADO }, { f: 26, v: "parado" }] }}
       mara={(f) => ({ ruta: [{ f: 0, x: CTO.bolso + 220, y: PC - 60 }], escala: ESC * 1.35, opacidad: () => interpolate(f, [60, 130], [0, 0.55], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), dir: [{ f: 0, v: -1 }] })} />
   ) },
@@ -268,7 +268,7 @@ const T = (): TramoS[] => [
       tenzo={{ caras: [{ f: 0, v: "feliz" }], habla: hab(278.7, [[278.7, 283.0], [283.1, 288.9]]), poses: cosiendo(0, 312, 14), enManoD: <Aguja />, miradas: [{ f: 0, v: { x: -0.9, y: 0 } }, { f: loc(278.7, 288.6), v: { x: -0.2, y: 0.6 } }] }}
       leo={{ caras: [{ f: 0, v: "duda" }, { f: loc(278.7, 284), v: "neutral" }], miradas: [{ f: 0, v: { x: 0.9, y: 0 } }], poses: [{ f: 0, v: SENTADO }, { f: loc(278.7, 284), v: { ...SENTADO, tronco: 10 } }] }} />
   ), [
-    [278.7, CAM.tenzo(4.3)],
+    [278.7, CAM.dos(4.3)],
     [283.0, CAM.leo(3.0, 2.0)],
     [286.0, CAM.hombroLeo(1.6)],
     [287.6, CAM.mesa(1.5)],
@@ -366,7 +366,12 @@ const T = (): TramoS[] => [
       medio={<DibujoPegado x={PIN.x} y={PIN.y} />}
       hud={<RelojDia min={23 * 60} x={1640} y={150} />} />
   ) },
-  { t0: 396.6, t1: 411.5, el: <PostTyler /> },
+  { t0: 396.6, t1: 401.6, el: <PostTyler t0={396.6} dur={150} /> },
+  { t0: 401.6, t1: 405.6, el: (
+    <EnCuarto cam={[mira(0, CTO.colchon + 25, PC - 275, 2.5), mira(120, CTO.colchon + 25, PC - 280, 2.75)]}
+      leo={{ poses: [{ f: 0, v: SENTADO_TEL }, { f: 60, v: { ...SENTADO_TEL, cabeza: 22 } }], caras: [{ f: 0, v: "neutral" }, { f: 50, v: "triste" }], miradas: [{ f: 0, v: { x: 0.3, y: 0.7 } }], enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 1 } }} />
+  ) },
+  { t0: 405.6, t1: 411.5, el: <PostTyler t0={405.6} dur={177} /> },
   { t0: 411.5, t1: 416.0, el: (
     <EnCuarto cam={[mira(0, CTO.colchon - 120, PC - 250, 2.3), mira(60, CTO.colchon - 120, PC - 250, 2.4), mira(66, CTO.colchon + 40, PC - 160, 1.5), mira(135, CTO.colchon + 60, PC - 200, 1.6)]}
       leo={{ poses: [{ f: 0, v: SENTADO_TEL }, { f: 70, v: { ...SENTADO, hD: 20, cD: 40, cabeza: 26 } }], caras: [{ f: 0, v: "triste" }], miradas: [{ f: 0, v: { x: 0.3, y: 0.8 } }, { f: 66, v: { x: 0, y: 1 } }], enManoD: (f) => (f < 70 ? <Tel /> : null) }}
@@ -442,8 +447,8 @@ const EstacaSeMueve: React.FC = () => {
   const inc = interpolate(f, [20, 30], [0, 7], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <Escena Set={Circo} pal={PALETAS.parabola} seed={77} mano={1}
-      claves={[mira(0, (tob.x + CIRCO_PUNTOS.estaca) / 2 - 60, PI - 220, 1.3), mira(63, (tob.x + CIRCO_PUNTOS.estaca) / 2 - 60, PI - 200, 1.42)]}
-      medio={<><Elefanta x={CIRCO_PUNTOS.elefanta + (f > 18 ? Math.min(12, (f - 18) * 1.2) : 0)} y={PI} f={f} balanceo={2} /><Soga a={{ x: tob.x + (f > 18 ? Math.min(12, (f - 18) * 1.2) : 0), y: tob.y }} b={{ x: CIRCO_PUNTOS.estaca, y: PI + 10 }} tension={f > 18 ? 0.95 : 0.3} grosor={6} /><Estaca x={CIRCO_PUNTOS.estaca} y={PI + 10} inclina={inc} />
+      claves={[mira(0, CIRCO_PUNTOS.elefanta - 80, PI - 330, 0.95), mira(63, CIRCO_PUNTOS.elefanta - 100, PI - 300, 1.05)]}
+      medio={<><Elefanta x={CIRCO_PUNTOS.elefanta + (f > 18 ? Math.min(12, (f - 18) * 1.2) : 0)} y={PI} f={f} balanceo={2} /><Soga a={{ x: tob.x + (f > 18 ? Math.min(12, (f - 18) * 1.2) : 0), y: tob.y }} b={{ x: CIRCO_PUNTOS.estaca, y: PI + 10 }} tension={f > 18 ? 0.95 : 0.3} grosor={10} /><Estaca x={CIRCO_PUNTOS.estaca} y={PI + 10} inclina={inc} />
         {f > 22 && [0, 1].map((k) => <circle key={k} cx={CIRCO_PUNTOS.estaca - 10 + k * 24} cy={PI + 4 - (f - 22) * 0.6} r={6 + (f - 22) * 0.4} fill="#c9a87a" opacity={Math.max(0, 0.5 - (f - 22) * 0.015)} />)}</>} />
   );
 };
@@ -483,13 +488,13 @@ export const DibujoSVG: React.FC<{ u: number; s?: number }> = ({ u, s = 1 }) => 
   // cada trazo aparece en orden (lápiz grueso oscuro) y después se rellena de gris claro: que se lea ELEFANTE de lejos
   const t = (i: number, n = 6) => Math.max(0, Math.min(1, u * n - i));
   const tr = (i: number) => ({ fill: "none", stroke: "#2a2a30", strokeWidth: 7 / Math.max(0.5, s), strokeLinecap: "round" as const, strokeLinejoin: "round" as const, pathLength: 1, strokeDasharray: 1, strokeDashoffset: 1 - t(i) });
-  const relleno = Math.max(0, Math.min(1, u * 3 - 2));
+  const relleno = Math.max(0, Math.min(1, u * 3 - 1));
   return (
     <g>
       <rect x={-260} y={-190} width={520} height={380} fill="#f1ece0" />
-      {/* carpa chica atrás a la izquierda */}
-      <path {...tr(0)} d="M-245,120 L-185,10 L-125,120 Z M-185,10 L-185,-20 L-160,-12 L-185,-4" />
-      <path {...tr(0)} d="M-255,124 Q0,116 255,124" />
+      {/* carpa chica atrás a la izquierda (se dibuja al final: primero tiene que leerse ELEFANTE) */}
+      <path {...tr(4)} d="M-245,120 L-185,10 L-125,120 Z M-185,10 L-185,-20 L-160,-12 L-185,-4" />
+      <path {...tr(3)} d="M-255,124 Q0,116 255,124" />
       {/* relleno del elefante */}
       <g opacity={relleno * 0.9}>
         <ellipse cx={30} cy={30} rx={130} ry={78} fill="#b9b6b0" />
@@ -499,14 +504,14 @@ export const DibujoSVG: React.FC<{ u: number; s?: number }> = ({ u, s = 1 }) => 
         <path d="M120,-50 Q70,-60 70,0 Q72,40 122,30 Z" fill="#a6a39c" />
       </g>
       {/* contorno: cuerpo, cabeza, oreja, trompa, patas, cola, ojo, colmillo */}
-      <ellipse {...tr(1)} cx={30} cy={30} rx={130} ry={78} />
-      <circle {...tr(2)} cx={160} cy={-20} r={62} />
-      <path {...tr(2)} d="M120,-50 Q70,-60 70,0 Q72,40 122,30" />
-      <path {...tr(3)} d="M200,10 Q232,60 214,110 Q208,124 196,118 Q206,70 178,28" />
-      <path {...tr(3)} d="M188,22 q22,10 30,-4" stroke="#f4efe4" />
-      <path {...tr(4)} d="M-70,92 v30 h36 v-30 M-20,100 v22 h36 v-22 M60,100 v22 h36 v-22 M110,92 v30 h36 v-30" />
-      <path {...tr(4)} d="M-98,20 q-24,10 -30,40" />
-      <circle cx={176} cy={-34} r={7} fill="#2a2a30" opacity={t(4)} />
+      <ellipse {...tr(0)} cx={30} cy={30} rx={130} ry={78} />
+      <circle {...tr(1)} cx={160} cy={-20} r={62} />
+      <path {...tr(1)} d="M120,-50 Q70,-60 70,0 Q72,40 122,30" />
+      <path {...tr(2)} d="M200,10 Q232,60 214,110 Q208,124 196,118 Q206,70 178,28" />
+      <path {...tr(2)} d="M188,22 q22,10 30,-4" stroke="#f4efe4" />
+      <path {...tr(3)} d="M-70,92 v30 h36 v-30 M-20,100 v22 h36 v-22 M60,100 v22 h36 v-22 M110,92 v30 h36 v-30" />
+      <path {...tr(3)} d="M-98,20 q-24,10 -30,40" />
+      <circle cx={176} cy={-34} r={7} fill="#2a2a30" opacity={t(2)} />
       {/* la soga suelta del tobillo y la estaca arrancada que arrastra */}
       <path {...tr(5)} stroke={ACENTO} d="M-52,118 Q-100,140 -150,132" />
       <path {...tr(5)} d="M-150,132 l-6,-34 l16,-2 l6,34 Z M-170,140 l-20,2 M-176,148 l-24,1" />
@@ -515,7 +520,7 @@ export const DibujoSVG: React.FC<{ u: number; s?: number }> = ({ u, s = 1 }) => 
 };
 const Dibujo: React.FC = () => {
   const f = useF();
-  const u = interpolate(f, [0, 150], [0, 1], { extrapolateRight: "clamp" });
+  const u = interpolate(f, [0, 120], [0.12, 1], { extrapolateRight: "clamp" });
   return (
     <AbsoluteFill style={{ background: "#2a2c31" }}>
       <svg width={1920} height={1080}><g transform={`translate(960,540) scale(${1.9 + f * 0.001})`}><DibujoSVG u={u} /></g></svg>
@@ -527,10 +532,10 @@ export const DibujoPegado: React.FC<{ x: number; y: number }> = ({ x, y }) => <g
 
 // 396,6-411,5 · el reel de Tyler: delante de un auto negro nuevo, llaves en la mano, departamento de vidrio
 export const TYLER = { estilo: "frijol" as const, piel: "#efcfa8", camisa: "#3a5a8a", pantalon: "#2a2a30", zapatos: "#f2f0ea", accesorios: [{ t: "pelo" as const, forma: "corto" as const, color: "#6a4a2a" }] };
-const PostTyler: React.FC = () => {
+const PostTyler: React.FC<{ t0?: number; dur?: number }> = ({ t0 = 396.6, dur = 447 }) => {
   const f = useF();
   return (
-    <PantallaTel zoom0={0.98} zoom1={1.1} dur={447} luz={0.8}>
+    <PantallaTel zoom0={0.98} zoom1={1.1} dur={dur} luz={0.8}>
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(#a9c4e0, #e9eef2 60%, #9aa0a8)" }} />
       <svg width={440} height={900} style={{ position: "absolute", inset: 0 }}>
         <EdificioVidrio />
@@ -544,7 +549,7 @@ const PostTyler: React.FC = () => {
           poses={[{ f: 0, v: { hD: 120, cD: 30 } }, { f: 30, v: { hD: 130, cD: 20 } }, { f: 60, v: { hD: 120, cD: 30 } }]} habla={[[10, 200]]}
           enManoD={<g><circle cx={0} cy={0} r={8} fill="#c9ccd2" /><rect x={6} y={-3} width={22} height={6} rx={3} fill="#c9ccd2" /></g>} />
       </svg>
-      <div style={{ position: "absolute", left: 22, right: 22, bottom: 40, fontFamily: F_HUD, fontSize: 28, color: "#fff", textShadow: "0 2px 8px rgba(0,0,0,0.7)", opacity: interpolate(f, [loc(396.6, 408.3), loc(396.6, 408.3) + 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>
+      <div style={{ position: "absolute", left: 22, right: 22, bottom: 40, fontFamily: F_HUD, fontSize: 28, color: "#fff", textShadow: "0 2px 8px rgba(0,0,0,0.7)", opacity: interpolate(f, [loc(t0, 408.3), loc(t0, 408.3) + 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>
         @tyler · Twenty-five and already made it. Grateful.
       </div>
       <div style={{ position: "absolute", left: 22, top: 22, fontFamily: F_HUD, fontSize: 24, color: "#fff", opacity: 0.9 }}>▶ Reels</div>
