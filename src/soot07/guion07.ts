@@ -478,7 +478,7 @@ VEL.sort((a, b) => a[0] - b[0]); OSC.sort((a, b) => a[0] - b[0]); FUEGO.sort((a,
   const extra: typeof PLANOS = [];
   PLANOS.forEach((p, k) => {
     const [t, , y, z, d] = p;
-    if (t < 15 || t > 884 || y < -2000) return;
+    if (t < 5 || t > 884 || y < -2000) return;
     const suelo = -y * z + 540;
     if (suelo > 1000 && suelo < 1350) p[2] = -(1030 - 540) / z;
     const next = PLANOS[k + 1]?.[0] ?? 1e9;

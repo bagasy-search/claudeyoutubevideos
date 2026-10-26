@@ -388,7 +388,6 @@ export const Noche: React.FC = () => {
           {/* ── mundo: piezas detrás de la gente */}
           <Capa cam={cv}>
             <SvgMundo>
-              {!adentro && <Ambiente t={t} camX={cv.x} ancho={1920 / cv.z + 400} />}
               <Escalera x={xFin} pisos={5} />
               <GatoCuerpo t={t} x={cv.x} />
               <Peligros t={t} t0={M.obst} t1={M.cielo + 0.5} x0={X(M.obst)} />
@@ -414,6 +413,7 @@ export const Noche: React.FC = () => {
               {/* la maceta que baila en el balcón antes de caer */}
               {en(t, M.maceta - 1, M.cayo - tCaida({ t0: 0, x: 0, y: W_MACETA.y + 110, k: "maceta", yFin: -235 })) && <g transform={`translate(${W_MACETA.x} ${W_MACETA.y + 110}) rotate(${Math.sin(t * 9) * 10 * cl((t - M.maceta) / 1)})`}><path d="M -40 -20 L 40 -20 L 30 40 L -30 40 Z" fill="#c9673f" stroke={K} strokeWidth={6} /><circle cx={-16} cy={-48} r={22} fill="#e8344a" stroke={K} strokeWidth={4} /><circle cx={18} cy={-56} r={20} fill="#ffb020" stroke={K} strokeWidth={4} /></g>}
             </SvgMundo>
+            {!adentro && <Ambiente t={t} camX={cv.x} ancho={1920 / cv.z + 400} />}
             {/* sombras chinescas de Nerón sobre el muro */}
             <MuroSombras t={t} t0={M.sombras} t1={M.eleccion - 0.8} x={xNero} luz={0.6 + lam * 0.5} />
             {en(t, M.sombras, M.eleccion) && (

@@ -3,7 +3,7 @@ import { Persona, CIVIL } from "./persona";
 import { rnd } from "../soot/lib";
 import { CALLE, temaEn, X } from "./motor07";
 import { M } from "./guion07";
-import { Tema } from "./mundo";
+import { Tema, SvgMundo } from "./mundo";
 
 // OJO v3: la calle nunca está vacía. Viñetas fijas en el mundo (plano medio, un poco más chicas que el nene):
 // vecinos charlando, borracho con ánfora, vendedor cargando, perro que olfatea, gato que salta al barril,
@@ -84,8 +84,8 @@ export const Ambiente: React.FC<{ t: number; camX: number; ancho: number }> = ({
         );
         if (v.tipo === 1) return <Persona key={v.x} x={v.x + Math.sin(t * 0.7 + ph) * 30} y={-8} h={h} t={t} seed={v.seed} ropa={CIVIL(v.seed % 7)} expr="feliz" inclina={Math.sin(t * 1.6 + ph) * 14} ladea={Math.sin(t * 1.1) * 10} manoD={anfora} bD={110 + Math.sin(t * 1.6) * 20} cD={70} habla={Math.sin(t * 0.5 + ph) > 0.4} />;
         if (v.tipo === 2) { const dx = Math.sin(t * 0.12 + ph) * 260; const dir = Math.cos(t * 0.12 + ph); return <Persona key={v.x} x={v.x + dx} y={-8} h={h} t={t} seed={v.seed} ropa={CIVIL(v.seed % 7)} expr="neutro" camina={0.9} flip={dir < 0} manoD={saco} bD={160} cD={40} />; }
-        if (v.tipo === 3) { const dx = Math.sin(t * 0.2 + ph) * 180; return <g key={v.x} transform={`translate(${v.x + dx} -6) scale(${Math.cos(t * 0.2 + ph) < 0 ? -1 : 1} 1)`}><Perro t={t + ph} s={0.9} /></g>; }
-        if (v.tipo === 4) return <g key={v.x} transform={`translate(${v.x} -6)`}><Gato t={t + ph} /></g>;
+        if (v.tipo === 3) { const dx = Math.sin(t * 0.2 + ph) * 180; return <SvgMundo key={v.x}><g transform={`translate(${v.x + dx} -6) scale(${Math.cos(t * 0.2 + ph) < 0 ? -1 : 1} 1)`}><Perro t={t + ph} s={0.9} /></g></SvgMundo>; }
+        if (v.tipo === 4) return <SvgMundo key={v.x}><g transform={`translate(${v.x} -6)`}><Gato t={t + ph} /></g></SvgMundo>;
         return (
           <React.Fragment key={v.x}>
             <Persona x={v.x} y={-8} h={h} t={t} seed={v.seed} ropa={{ ...CIVIL(1), tunica: "#f2ead8", tunica2: "#c9bfa8" }} expr="orgullo" camina={0.6} />
