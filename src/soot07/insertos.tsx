@@ -57,7 +57,21 @@ const Doc: React.FC<{ t: number; i: Extract<Ins, { v: "doc" }> }> = ({ t, i }) =
       <rect x={-430} y={-H / 2} width={860} height={H} rx={18} fill={i.bronce ? "#c98a3a" : "#f3e2b8"} stroke={K} strokeWidth={9} />
       {i.bronce && <rect x={-400} y={-H / 2 + 28} width={800} height={H - 56} rx={10} fill="none" stroke="#7a4a18" strokeWidth={6} />}
       {[-1, 1].map((d) => <rect key={d} x={-460} y={d * H / 2 - 26} width={920} height={52} rx={26} fill={i.bronce ? "#8a5a24" : "#c9a46a"} stroke={K} strokeWidth={8} />)}
-      {abre > 0.9 && i.lineas.map(([lt, txt], k) => {
+      {abre > 0.9 && Array.from({ length: Math.max(0, Math.floor((H - 260) / 100) - i.lineas.length) }, (_, k) => {
+        const e = pr(t, i.t + 1.0 + (i.lineas.length + k) * 0.35, i.t + 1.4 + (i.lineas.length + k) * 0.35);
+        const y = -H / 2 + 130 + (i.lineas.length + k) * 100;
+        return <g key={`r${k}`} opacity={e * 0.5}>{[0, 1].map((f) => <rect key={f} x={-370} y={y - 34 + f * 40} width={(f ? 420 + ((k * 97) % 260) : 700 - ((k * 61) % 180)) * e} height={14} rx={7} fill={i.bronce ? "#5a3410" : "#9a7a4a"} />)}</g>;
+      })}
+      {abre > 0.9 && (
+        <g transform={`translate(-300 ${H / 2 - 110}) scale(${ent(t, i.t + 1.2, 0, { damping: 10, stiffness: 200 })})`}>
+          <path d="M 0 -70 C 40 -72 72 -40 70 0 C 74 44 38 72 0 70 C -42 74 -72 40 -70 0 C -74 -40 -40 -70 0 -70 Z" fill="#b0202e" stroke={K} strokeWidth={6} />
+          <circle r={46} fill="none" stroke="#7a1018" strokeWidth={5} />
+          <text y={14} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={34} fill="#ffd9a0">SPQR</text>
+          <path d="M -30 66 L -44 120 L -20 106 L -8 128 L 6 70 Z" fill="#b0202e" stroke={K} strokeWidth={5} />
+        </g>
+      )}
+      {abre > 0.9 && i.lineas.map(([lt0, txt], k) => {
+        const lt = Math.min(lt0, i.t + 0.9 + k * 0.6);
         const e = pr(t, lt, lt + 0.45);
         if (e <= 0) return null;
         const y = -H / 2 + 130 + k * 100;
@@ -338,7 +352,7 @@ export const Inserto: React.FC<{ t: number; px: number; py: number; sopa?: boole
   <>{INS.filter((i) => p.t >= i.t && p.t < finDe(i)).map((i) => <Uno key={i.t} i={i} {...p} />)}</>
 );
 const Uno: React.FC<{ i: Ins; t: number; px: number; py: number; sopa?: boolean }> = ({ i, t, px, py, sopa }) => {
-  const abre = interpolate(t, [i.t, i.t + 0.42], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
+  const abre = interpolate(t, [i.t, i.t + 0.36], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
   const cierra = sigue(i) ? 1 : interpolate(t, [i.t1, i.t1 + 0.42], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
   const R = 2300 * Math.min(abre, cierra);
   if (R <= 1) return null;
@@ -372,6 +386,7 @@ const Uno: React.FC<{ i: Ins; t: number; px: number; py: number; sopa?: boolean 
           <Tx x={0} y={0} s={i.tamTitulo ?? 92} col="#fff">{i.titulo}</Tx>
         </g>
       </svg>
+      {R < 2200 && <div style={{ position: "absolute", left: px - R, top: py - R, width: R * 2, height: R * 2, borderRadius: "50%", border: "14px solid #fff8e0", boxSizing: "border-box" }} />}
     </div>
   );
 };

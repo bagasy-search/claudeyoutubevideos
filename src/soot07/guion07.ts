@@ -72,7 +72,7 @@ export const SALTOS: [number, number][] = []; // teletransportes de X (sólo con
 const v = (t: number, vel: number) => VEL.push([t, vel]);
 const pl = (t: number, dx: number, y: number, z: number, d = 1.1) => PLANOS.push([t, dx, y, z, d]);
 const os = (t: number, a: number) => OSC.push([t, a]);
-const BASE = { dx: 170, y: -255, z: 1.35 }; // OJO v2: nene ~34 % del alto de cuadro
+const BASE = { dx: 170, y: -240, z: 1.5 }; // OJO v3: nene ~38 % del alto de cuadro
 const pb = (t: number, d = 1.1) => pl(t, BASE.dx, BASE.y, BASE.z, d);
 
 // ── momentos de las piezas grandes (los usa Noche.tsx)
@@ -151,7 +151,7 @@ M.vela = at("birthday candle"); ic(M.vela, "vela", 1500, 330, { s: 1.2, label: "
 M.viento = at("wind blows"); s(M.viento - 0.4, "wind", -2, { dur: 1.6 }); s(M.viento + 0.2, "blowout", -2); s(M.viento + 1.3, "flash", -8);
 M.piso = at("and what are you walking on"); pl(M.piso, 180, -60, 1.5, 1.4); v(M.piso, 120); os(M.piso, 0.72);
 ch(M.polig = at("polygonal stones"), "MAIN ROADS: STONE", "tl", T, N); ch(M.tierra = at("packed earth"), "SIDE STREETS: MUD", "tl2", A, N);
-fila([[at("animal dung"), "bosta", "DUNG"], [at("broken pottery"), "tiesto", "POTTERY"], [at("rotting vegetables"), "verdura", "ROTTING VEG"], [at("the deep ruts"), "surco", "RUTS"]], 300, 0.95);
+fila([[(M.bosta = at("animal dung")), "bosta", "DUNG"], [at("broken pottery"), "tiesto", "POTTERY"], [at("rotting vegetables"), "verdura", "ROTTING VEG"], [at("the deep ruts"), "surco", "RUTS"]], 300, 0.95);
  
 ch(at("was not a road"), "NOT A ROAD", "tr", R); M.pies = at("feel with your feet"); ch(M.pies, "A TRAP YOU FEEL", "tr2", V); s(M.pies, "suspense", -6, { dur: 1.5 });
 M.sinnombre = at("no names"); pb(M.sinnombre - 0.4, 1.2); ic(M.sinnombre, "cartel", 1450, 330, { s: 1.2, t1: ah("if you asked") });
@@ -473,6 +473,19 @@ INS.sort((a, b) => a.t - b.t);
 
 // caminata y oscuridad, ordenadas
 VEL.sort((a, b) => a[0] - b[0]); OSC.sort((a, b) => a[0] - b[0]); FUEGO.sort((a, b) => a[0] - b[0]); PLANOS.sort((a, b) => a[0] - b[0]);
+// OJO v3: ningún plano general dura más de 4,5 s (vuelve al plano medio) y ninguna mirada arriba corta al nene por la mitad
+{
+  const extra: typeof PLANOS = [];
+  PLANOS.forEach((p, k) => {
+    const [t, , y, z, d] = p;
+    if (t < 15 || t > 884 || y < -2000) return;
+    const suelo = -y * z + 540;
+    if (suelo > 1000 && suelo < 1350) p[2] = -(1030 - 540) / z;
+    const next = PLANOS[k + 1]?.[0] ?? 1e9;
+    if ((z < 1.2 || y < -500) && next - t > d + 5.5) extra.push([t + d + 4.5, BASE.dx, BASE.y, BASE.z, 1.0]);
+  });
+  PLANOS.push(...extra); PLANOS.sort((a, b) => a[0] - b[0]);
+}
 
 // SFX automáticos de las piezas: chip = pop, texto grande = golpe, ícono = pop, contador = rodillo, título de trampa ya va a mano
 B.forEach((b, i) => {

@@ -30,9 +30,10 @@ export const SvgMundo: React.FC<{ children: React.ReactNode }> = ({ children }) 
 
 // ── paletas por tema
 type Pal = { cielo: string[]; muro: string[]; sombra: string; techo: string; suelo: string; suelo2: string; lejos: string; medio: string };
+// piedra cálida y cielo azul noche (molde: la miniatura elegida, OJO vuelta 3)
 const NOCHE: Pal = {
-  cielo: ["#0b0822", "#151036", "#24185a", "#3a2777"], muro: ["#6d4466", "#7c5060", "#5f4272", "#86604f", "#704a5a"],
-  sombra: "#2b1838", techo: "#8a3b30", suelo: "#3a2538", suelo2: "#2a1a2c", lejos: "#2a1d52", medio: "#211640",
+  cielo: ["#040820", "#0a1640", "#16265c", "#24386f"], muro: ["#8a6446", "#7d5a40", "#946c4a", "#83603f", "#9a7450"],
+  sombra: "#26170f", techo: "#8a3b28", suelo: "#4a3426", suelo2: "#3a281c", lejos: "#18204a", medio: "#121838",
 };
 const FUEGO: Pal = {
   cielo: ["#2a0612", "#6e1424", "#c2361f", "#ff8a3a"], muro: ["#7a3a3a", "#8c4a38", "#6e3346", "#9a5a3a", "#80403e"],
@@ -89,7 +90,7 @@ export const Horizonte: React.FC<{ cam: Cam; t: number; fuego?: number }> = ({ c
             {/* anfiteatro */}
             <g transform="translate(700 -330)">
               <path d="M -330 120 L -330 -80 Q 0 -150 330 -80 L 330 120 Z" />
-              {[0, 1, 2].map((fila) => Array.from({ length: 9 }, (_, i) => <rect key={`${fila}${i}`} x={-300 + i * 70} y={-60 + fila * 60} width={34} height={44} rx={17} fill="#3c2b70" opacity={0.9} />))}
+              {[0, 1, 2].map((fila) => Array.from({ length: 9 }, (_, i) => <rect key={`${fila}${i}`} x={-300 + i * 70} y={-60 + fila * 60} width={34} height={44} rx={17} fill="#ffb04a" opacity={0.5 + 0.1 * Math.sin(t * 0.7 + i + fila)} />))}
             </g>
             {/* acueducto */}
             <g transform="translate(3600 -260)">
@@ -163,6 +164,22 @@ export const construirCalle = (desde: number, hasta: number, temaEn: (x: number)
 const PISO = 200, BAJO = 270;
 export const altoEdif = (e: { pisos: number; tipo: string }) => (e.tipo === "domus" ? 330 : e.tipo === "santuario" ? 300 : BAJO + (e.pisos - 1) * PISO);
 
+// tabernas de la planta baja (determinístico: lo usa también Noche para agujerear la oscuridad)
+export const tabernas = (e: { x: number; w: number; seed: number; tema: Tema }) => {
+  const n = Math.max(1, Math.floor(e.w / 220));
+  const aw = e.w / n;
+  return Array.from({ length: n }, (_, k) => {
+    const r = rnd(e.seed * 53 + k * 11 + 1);
+    const lit = e.tema !== "fuego" && e.tema !== "casa" && r() < 0.5;
+    return { x0: aw * k + 22, aw, lit, antorcha: lit && r() < 0.6 };
+  });
+};
+const utileria = (e: { w: number; seed: number }) => {
+  const r = rnd(e.seed * 71 + 5);
+  const n = Math.floor(r() * 3);
+  return Array.from({ length: n }, () => ({ x: 40 + r() * (e.w - 80), tipo: Math.floor(r() * 3) }));
+};
+
 const Insula: React.FC<{ e: Edif; t: number; pal: Pal; arde: number }> = ({ e, t, pal, arde }) => {
   const r = rnd(e.seed);
   const muro = pal.muro[Math.floor(r() * pal.muro.length)];
@@ -173,7 +190,11 @@ const Insula: React.FC<{ e: Edif; t: number; pal: Pal; arde: number }> = ({ e, t
   return (
     <g transform={`translate(${e.x} 0)`}>
       <rect x={0} y={-H} width={e.w} height={H} fill={muro} />
-      <rect x={e.w - 46} y={-H} width={46} height={H} fill="#000" opacity={0.18} />
+      {arde === 0 && <rect x={0} y={-H} width={e.w} height={H} fill="url(#piedraP)" />}
+      <rect x={0} y={-H} width={e.w} height={H} fill="url(#altoV)" />
+      {/* esquineros de piedra clara */}
+      {Array.from({ length: Math.floor(H / 70) }, (_, k) => <rect key={k} x={k % 2 ? 0 : 0} y={-H + k * 70 + 4} width={k % 2 ? 44 : 70} height={62} fill="#fff" opacity={0.07} />)}
+      <rect x={e.w - 46} y={-H} width={46} height={H} fill="#000" opacity={0.22} />
       {/* revoque descascarado */}
       {[0, 1, 2].map((k) => <path key={k} d={`M ${30 + r() * (e.w - 120)} ${-H + 60 + r() * (H - 200)} q 30 -18 60 0 q 20 20 -10 30 q -40 8 -50 -30 Z`} fill="#000" opacity={0.08} />)}
       {/* pisos de arriba */}
@@ -224,18 +245,56 @@ const Insula: React.FC<{ e: Edif; t: number; pal: Pal; arde: number }> = ({ e, t
       <rect x={-20} y={-H - 26} width={e.w + 40} height={30} fill={pal.techo} />
       <path d={Array.from({ length: Math.ceil((e.w + 40) / 30) }, (_, k) => `M ${-20 + k * 30} ${-H - 26} q 15 -16 30 0`).join(" ")} stroke={pal.techo} strokeWidth={10} fill="none" />
       {r() < 0.5 && [0.3, 0.6].map((u, k) => <g key={u} transform={`translate(${e.w * u} ${-H - 40 + Math.max(0, Math.sin(t * 2 + k * 3)) * -4})`}><ellipse rx={18} ry={12} fill="#9a9ab0" /><circle cx={14} cy={-10} r={8} fill="#9a9ab0" /><path d="M 21 -10 L 28 -8 L 21 -6 Z" fill="#e0a040" /></g>)}
-      {/* planta baja: tabernas con tablones */}
-      {Array.from({ length: Math.max(1, Math.floor(e.w / 220)) }, (_, k) => {
-        const aw = e.w / Math.max(1, Math.floor(e.w / 220));
-        const x0 = aw * k + 22;
+      {/* planta baja: tabernas; las abiertas derraman luz cálida en el muro y en los adoquines (las únicas luces de la calle) */}
+      {tabernas(e).map(({ x0, aw, lit, antorcha }, k) => {
+        const ph = e.seed * 3 + k * 7;
+        const fl = 0.85 + 0.15 * Math.sin(t * 9 + ph) * Math.sin(t * 5.3 + ph);
         return (
           <g key={k}>
-            <path d={`M ${x0} 0 L ${x0} ${-BAJO + 90} Q ${x0 + (aw - 44) / 2} ${-BAJO + 20} ${x0 + aw - 44} ${-BAJO + 90} L ${x0 + aw - 44} 0 Z`} fill="#2a1622" />
-            {Array.from({ length: 6 }, (_, b) => <rect key={b} x={x0 + 6 + b * ((aw - 56) / 6)} y={-BAJO + 96} width={(aw - 56) / 6 - 4} height={BAJO - 96} fill={b % 2 ? "#5a3424" : "#6b3f2a"} />)}
-            <rect x={x0} y={-BAJO + 96} width={aw - 44} height={10} fill="#3a2014" />
+            {lit && <ellipse cx={x0 + (aw - 44) / 2} cy={-BAJO * 0.55} rx={aw * 0.95} ry={BAJO * 1.1} fill="url(#haloF)" opacity={0.85 * fl} />}
+            <path d={`M ${x0} 0 L ${x0} ${-BAJO + 90} Q ${x0 + (aw - 44) / 2} ${-BAJO + 20} ${x0 + aw - 44} ${-BAJO + 90} L ${x0 + aw - 44} 0 Z`} fill={lit ? "#ffb347" : "#2a1622"} />
+            {lit ? (
+              <g>
+                <path d={`M ${x0 + 14} 0 L ${x0 + 14} ${-BAJO + 104} Q ${x0 + (aw - 44) / 2} ${-BAJO + 40} ${x0 + aw - 58} ${-BAJO + 104} L ${x0 + aw - 58} 0 Z`} fill="#ffd27a" opacity={0.75 * fl} />
+                {/* mostrador con ánforas y una silueta adentro */}
+                <rect x={x0 + 10} y={-78} width={aw - 64} height={78} fill="#6b3a1f" />
+                <rect x={x0 + 10} y={-84} width={aw - 64} height={10} fill="#8a5028" />
+                {[0.22, 0.5].map((u) => <path key={u} d={`M ${x0 + (aw - 44) * u} -84 q -16 -10 -12 -40 q 4 -14 12 -16 q 8 2 12 16 q 4 30 -12 40 Z`} fill="#9a4a24" />)}
+                <g transform={`translate(${x0 + (aw - 44) * 0.76} -84)`} fill="#3a1e14">
+                  <circle cx={0} cy={-74 + Math.sin(t * 1.4 + ph) * 3} r={22} />
+                  <path d="M -30 0 Q -28 -50 0 -54 Q 28 -50 30 0 Z" />
+                </g>
+              </g>
+            ) : (
+              <g>
+                {Array.from({ length: 6 }, (_, b) => <rect key={b} x={x0 + 6 + b * ((aw - 56) / 6)} y={-BAJO + 96} width={(aw - 56) / 6 - 4} height={BAJO - 96} fill={b % 2 ? "#5a3424" : "#6b3f2a"} />)}
+                <rect x={x0} y={-BAJO + 96} width={aw - 44} height={10} fill="#3a2014" />
+              </g>
+            )}
+            {/* dintel de piedra */}
+            <path d={`M ${x0 - 10} ${-BAJO + 90} Q ${x0 + (aw - 44) / 2} ${-BAJO + 6} ${x0 + aw - 34} ${-BAJO + 90}`} stroke="#c9a77a" strokeWidth={12} fill="none" opacity={0.55} />
+            {/* derrame de luz sobre los adoquines */}
+            {lit && <ellipse cx={x0 + (aw - 44) / 2} cy={46} rx={aw * 0.7} ry={60} fill="url(#haloF)" opacity={0.7 * fl} />}
+            {antorcha && (
+              <g transform={`translate(${x0 + aw - 22} ${-BAJO + 40})`}>
+                <circle r={150} fill="url(#haloF)" opacity={0.9 * fl} />
+                <path d="M -18 30 L 0 18 L 0 4" stroke="#2a1a10" strokeWidth={7} fill="none" />
+                <rect x={-7} y={-20} width={14} height={40} rx={4} fill="#5a3418" />
+                <path d={`M 0 ${-66 - Math.sin(t * 11 + ph) * 10} Q 22 -30 10 -16 Q 0 -10 -10 -16 Q -22 -30 0 ${-66 - Math.sin(t * 11 + ph) * 10} Z`} fill="#ff9a2a" />
+                <path d={`M 0 ${-48 - Math.sin(t * 13 + ph) * 6} Q 10 -28 4 -20 Q 0 -16 -4 -20 Q -10 -28 0 ${-48 - Math.sin(t * 13 + ph) * 6} Z`} fill="#fff0a0" />
+              </g>
+            )}
           </g>
         );
       })}
+      {/* utilería al pie del muro: barriles, ánforas, cajones */}
+      {utileria(e).map(({ x, tipo }, k) => (
+        <g key={`u${k}`} transform={`translate(${x} 0)`}>
+          {tipo === 0 && <g><rect x={-34} y={-92} width={68} height={92} rx={14} fill="#6b4024" stroke="#26170f" strokeWidth={4} /><rect x={-36} y={-72} width={72} height={8} fill="#3a2a1e" /><rect x={-36} y={-28} width={72} height={8} fill="#3a2a1e" /><rect x={-20} y={-86} width={10} height={80} fill="#fff" opacity={0.12} /></g>}
+          {tipo === 1 && <g><path d="M -10 -120 L 10 -120 L 12 -104 Q 46 -84 38 -36 Q 30 -6 0 0 Q -30 -6 -38 -36 Q -46 -84 -12 -104 Z" fill="#a0502a" stroke="#26170f" strokeWidth={4} /><path d="M -12 -104 Q -30 -100 -26 -80 M 12 -104 Q 30 -100 26 -80" stroke="#26170f" strokeWidth={4} fill="none" /><ellipse cx={-14} cy={-60} rx={7} ry={22} fill="#fff" opacity={0.15} /></g>}
+          {tipo === 2 && <g><rect x={-46} y={-70} width={92} height={70} fill="#8a6038" stroke="#26170f" strokeWidth={4} /><path d="M -46 -70 L 46 0 M 46 -70 L -46 0" stroke="#5a3a20" strokeWidth={5} /></g>}
+        </g>
+      ))}
     </g>
   );
 };
@@ -319,7 +378,18 @@ export const Suelo: React.FC<{ cam: Cam; temaEn: (x: number) => Tema; pal: Pal }
   return (
     <Capa cam={cam}>
       <SvgMundo>
+        <defs>
+          <pattern id="adoqP" width={96} height={44} patternUnits="userSpaceOnUse">
+            <rect x={3} y={3} width={42} height={18} rx={8} fill="#6a4a34" stroke="#22150e" strokeWidth={3} />
+            <rect x={51} y={3} width={42} height={18} rx={8} fill="#5e4230" stroke="#22150e" strokeWidth={3} />
+            <rect x={-21} y={25} width={42} height={18} rx={8} fill="#5a3e2c" stroke="#22150e" strokeWidth={3} />
+            <rect x={27} y={25} width={42} height={18} rx={8} fill="#6e4e36" stroke="#22150e" strokeWidth={3} />
+            <rect x={75} y={25} width={42} height={18} rx={8} fill="#5a3e2c" stroke="#22150e" strokeWidth={3} />
+            <rect x={10} y={6} width={18} height={4} rx={2} fill="#d9a870" opacity={0.35} /><rect x={36} y={28} width={16} height={4} rx={2} fill="#d9a870" opacity={0.3} />
+          </pattern>
+        </defs>
         <rect x={cam.x - ancho} y={0} width={ancho * 2} height={900} fill={pal.suelo} />
+        <rect x={cam.x - ancho} y={0} width={ancho * 2} height={900} fill="url(#adoqP)" opacity={0.9} />
         <rect x={cam.x - ancho} y={0} width={ancho * 2} height={26} fill={pal.sombra} />
         <rect x={cam.x - ancho} y={26} width={ancho * 2} height={10} fill="#000" opacity={0.25} />
         {/* surcos de las ruedas */}
@@ -355,6 +425,14 @@ export const Fachada: React.FC<{ cam: Cam; t: number; calle: Edif[]; arde: (e: E
   return (
     <Capa cam={cam}>
       <SvgMundo>
+        <defs>
+          <pattern id="piedraP" width={120} height={64} patternUnits="userSpaceOnUse">
+            <path d="M 0 0.5 H 120 M 0 32.5 H 120 M 30 0 V 32 M 90 32 V 64" stroke="#2a1a10" strokeWidth={3} opacity={0.28} />
+            <rect x={4} y={4} width={22} height={10} fill="#fff" opacity={0.05} /><rect x={64} y={38} width={20} height={9} fill="#fff" opacity={0.05} />
+          </pattern>
+          <linearGradient id="altoV" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#0a0a24" stopOpacity={0.55} /><stop offset="0.6" stopColor="#0a0a24" stopOpacity={0.12} /><stop offset="1" stopColor="#0a0a24" stopOpacity={0} /></linearGradient>
+          <radialGradient id="haloF"><stop offset="0" stopColor="#ffb347" stopOpacity={0.75} /><stop offset="0.45" stopColor="#ff9a3a" stopOpacity={0.3} /><stop offset="1" stopColor="#ff9a3a" stopOpacity={0} /></radialGradient>
+        </defs>
         {vis.map((e) => {
           const pal = paleta(e.tema);
           if (e.tipo === "domus") return <Domus key={e.seed} e={e} t={t} />;
@@ -403,7 +481,7 @@ export const Oscuridad: React.FC<{ a: number; luces: Luz[] }> = ({ a, luces }) =
             <circle key={i} cx={l.x} cy={l.y} r={l.r} fill={`url(#${id}g)`} />
           ))}
         </mask>
-        <radialGradient id={`${id}g`}><stop offset="0" stopColor="#000" /><stop offset="0.45" stopColor="#000" /><stop offset="1" stopColor="#fff" /></radialGradient>
+        <radialGradient id={`${id}g`}><stop offset="0" stopColor="#000" /><stop offset="0.45" stopColor="#000" stopOpacity={0.85} /><stop offset="1" stopColor="#000" stopOpacity={0} /></radialGradient>
         <radialGradient id={`${id}c`}><stop offset="0" stopColor="#ffb347" stopOpacity={0.28} /><stop offset="1" stopColor="#ffb347" stopOpacity={0} /></radialGradient>
       </defs>
       <rect width={1920} height={1080} fill="#06040f" opacity={a} mask={`url(#${id})`} />

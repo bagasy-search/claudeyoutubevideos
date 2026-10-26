@@ -105,7 +105,7 @@ const Cohortes: React.FC<{ t: number }> = ({ t }) => (
     {REG.map(([x, y], i) => {
       const c = Math.floor(i / 2);
       const e = ent(t, M.cohortes + 0.3 + i * 0.05);
-      const on = t > M.dosde14 + c * 0.28;
+      const on = t > Math.min(M.dosde14 + c * 0.28, M.cohortes + 0.6 + i * 0.26);
       const col = ["#e8344a", "#ffb020", "#2ec4d6", "#9be15d", "#9b7bf0", "#ff6f91", "#f7c548"][c];
       return (
         <g key={i} transform={`translate(${x} ${y}) scale(${e})`}>

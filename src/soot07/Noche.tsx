@@ -2,12 +2,13 @@ import React from "react";
 import { AbsoluteFill, useCurrentFrame, interpolate, Easing } from "remotion";
 import { Mano2D as CamaraMano } from "./Mano2D";
 import { Inserto } from "./insertos";
+import { Ambiente, lucesVinetas } from "./ambiente";
 import { C, ent, fontFamily, Chip, Grande, Emote } from "./kit";
 import { Persona, LUCIUS, CIVIL, Ropa, Expr } from "./persona";
 import { ICO } from "./iconos";
 import { B, M, DUR, Beat } from "./guion07";
 import { FPS, X, V, cam, temaEn, oscuridad, fuego, CALLE, edifEn, X_CASA } from "./motor07";
-import { CieloNoche, Horizonte, Siluetas, Suelo, Fachada, Frente, Oscuridad, Capa, SvgMundo, paleta, pantalla, altoEdif, Luz } from "./mundo";
+import { CieloNoche, Horizonte, Siluetas, Suelo, Fachada, Frente, Oscuridad, Capa, SvgMundo, paleta, pantalla, altoEdif, Luz, tabernas } from "./mundo";
 import { Carro, Carga, Caidas, Caida, tCaida, Asomado, Inundacion, Chorro, Derrumbe, Escalera, subidaPos, Puntales, Ratones, Lampara, Gente, Peligros, MuroSombras, ventana, cl, en, lerp } from "./piezas";
 import { Portada } from "./Portada";
 import { MapaCielo, RelojNoche, Balanza, ReglaAltura, Estrellitas } from "./mapas";
@@ -289,6 +290,17 @@ export const Noche: React.FC = () => {
   const pz = (wx: number, wy: number) => pantalla(cv, wx, wy);
   if (lam > 0 && !adentro) { const q = pz(px + 60, -150 + pyProt); luces.push({ x: q.x, y: q.y, r: (300 + lam * 40) * cv.z }); }
   else if (!adentro) { const q = pz(px, -130); luces.push({ x: q.x, y: q.y, r: 90 * cv.z }); }
+  // tabernas abiertas y antorchas privadas: las únicas luces de la calle
+  (t > M.tuya - 0.45 ? SIN_ED : CALLE).forEach((e) => {
+    if (e.tipo !== "insula") return;
+    tabernas(e).forEach(({ x0, aw, lit, antorcha }) => {
+      if (!lit) return;
+      const q = pz(e.x + x0 + (aw - 44) / 2, -110);
+      if (q.x < -500 || q.x > 2420) return;
+      luces.push({ x: q.x, y: q.y, r: (antorcha ? 330 : 260) * cv.z });
+    });
+  });
+  lucesVinetas(cv.x - 1600, cv.x + 1600).forEach((l) => { const q = pz(l.x, l.y); luces.push({ x: q.x, y: q.y, r: 300 * cv.z }); });
   ASOM.forEach((a) => { if (en(t, a.t0, a.t1 + 0.4)) { const q = pz(a.x, a.y); luces.push({ x: q.x, y: q.y, r: 300 * cv.z }); } });
   CARROS.forEach((k) => { if (en(t, k.ta, k.frena ?? k.tb)) { const q = pz(carroX(k, t) - 100, -200 + (k.y ?? 0)); luces.push({ x: q.x, y: q.y, r: 380 * cv.z }); } });
   const xRico = X(M.rico) - 1100 + 150 * (t - M.rico);
@@ -307,16 +319,43 @@ export const Noche: React.FC = () => {
       return <Persona x={sp.x} y={sp.y} h={H} t={t} seed={1} ropa={LUCIUS} expr="neutro" camina={1.8} flip={sp.dir < 0} manoD={undefined} />;
     }
     const manoD = conLampara(t) ? <Lampara t={t} on={lam} /> : undefined;
+    // OJO v3: las trampas se VIVEN: resbalón en la bosta y baldazo de sopa (se cubre la cabeza)
+    const uR = cl((t - M.bosta - 0.3) / 1.3), resb = uR > 0 && uR < 1 ? Math.sin(uR * Math.PI) : 0;
+    const balde = en(t, M.sopa - 0.35, M.sopa + 1.3);
+    const agita = Math.sin(t * 22) * 25;
     return (
-      <Persona x={px + golpeado} y={pyProt} h={H} t={t} seed={1} ropa={LUCIUS} expr={expr} camina={vel > 4 ? vel / 150 : 0} mira={vel > 4 ? 0.6 : 0}
-        manoD={manoD} bD={contra ? 40 : manoD ? 55 : undefined} cD={manoD ? 55 : undefined} bI={contra ? 40 : corre ? 60 : undefined}
-        ladea={golpeado ? -18 : 0} inclina={contra ? -6 : corre ? 10 : 0} salta={M.cae} />
+      <Persona x={px + golpeado} y={pyProt} h={H} t={t} seed={1} ropa={LUCIUS} expr={resb > 0.1 ? "sorpresa" : balde ? "miedo" : expr} camina={vel > 4 ? vel / 150 : 0} mira={vel > 4 ? 0.6 : 0}
+        manoD={balde ? undefined : manoD} bD={balde ? 165 : resb > 0.1 ? 130 + agita : contra ? 40 : manoD ? 55 : undefined} cD={balde ? 70 : manoD ? 55 : undefined} bI={balde ? 165 : resb > 0.1 ? 120 - agita : contra ? 40 : corre ? 60 : undefined} cI={balde ? 70 : undefined}
+        ladea={golpeado ? -18 : 0} inclina={resb > 0 ? -28 * resb : contra ? -6 : corre ? 10 : 0} salta={t > M.sopa - 1 && t < M.sopa + 3 ? M.sopa : M.cae} />
     );
   })();
+  const salpica = en(t, M.sopa, M.sopa + 0.9) && (() => {
+    const u = (t - M.sopa) / 0.9;
+    return (
+      <svg style={{ position: "absolute", left: px - 100, top: pyProt - 300, overflow: "visible" }} width={200} height={300} viewBox="-100 -300 200 300">
+        {Array.from({ length: 18 }, (_, k) => { const a = -Math.PI * (0.05 + 0.9 * ((k * 0.381) % 1)); const v = 160 + ((k * 53) % 120); return <ellipse key={k} cx={Math.cos(a) * v * u} cy={-250 + Math.sin(a) * v * u + 400 * u * u} rx={12 - 6 * u} ry={16 - 8 * u} fill={k % 5 === 0 ? "#4fa85a" : "#e0b040"} stroke="#8a5a18" strokeWidth={2} opacity={1 - u * 0.6} />; })}
+        <ellipse cx={0} cy={-250} rx={90 * (0.4 + u)} ry={34 * (0.4 + u)} fill="#f0c860" opacity={0.7 * (1 - u)} />
+      </svg>
+    );
+  })();
+  const xBosta = X(M.bosta + 0.3) + 40;
+  const bosta = en(t, M.bosta - 3, M.bosta + 6) && (
+    <svg style={{ position: "absolute", left: xBosta - 60, top: -60, overflow: "visible" }} width={120} height={60} viewBox="-60 -60 120 60">
+      <path d="M -50 0 Q -46 -22 -20 -24 Q -14 -44 6 -40 Q 22 -52 30 -30 Q 52 -24 50 0 Z" fill="#6a4a1e" stroke="#2a1a08" strokeWidth={4} />
+      {[-20, 8, 30].map((x, k) => <path key={k} d={`M ${x} -50 q 8 -12 0 -24 q -8 -12 0 -24`} stroke="#9ab04a" strokeWidth={4} fill="none" opacity={0.5 + 0.4 * Math.sin(t * 4 + k)} />)}
+    </svg>
+  );
   const sopaMancha = sopa && !adentro && !subiendo && (
     <svg style={{ position: "absolute", left: px + golpeado - 100, top: pyProt - 300, overflow: "visible" }} width={200} height={300} viewBox="-100 -300 200 300">
-      {[[-14, -130, 20], [16, -100, 16], [-4, -160, 14], [22, -150, 10]].map(([x, y, r], i) => <ellipse key={i} cx={x} cy={y} rx={r} ry={r * 0.8} fill="#c7b23a" opacity={0.9} />)}
-      {t < M.limpia && [[-8, -205], [10, -225]].map(([x, y], i) => <path key={i} d={`M ${x} ${y} q 5 ${10 + ((t * 30 + i * 9) % 14)} 0 ${18 + ((t * 30 + i * 9) % 14)}`} stroke="#c7b23a" strokeWidth={7} strokeLinecap="round" fill="none" />)}
+      {/* chorreones de sopa (no lunares): mancha grande en la cabeza que baja por la túnica + trocitos de verdura */}
+      {t < M.limpia && <g>
+        <path d="M -40 -262 Q -30 -282 0 -284 Q 30 -282 40 -262 Q 30 -256 22 -262 Q 10 -254 0 -262 Q -12 -254 -24 -262 Q -32 -256 -40 -262 Z" fill="#d9a83a" stroke="#8a5a18" strokeWidth={3} />
+        <path d={`M -44 -258 Q -50 -230 -46 ${-206 + ((t * 20) % 10)}`} stroke="#d9a83a" strokeWidth={8} strokeLinecap="round" fill="none" />
+        <path d={`M 44 -256 Q 50 -232 46 ${-212 + ((t * 24) % 10)}`} stroke="#d9a83a" strokeWidth={8} strokeLinecap="round" fill="none" />
+        <path d="M 12 -282 l 14 -8 l 6 10 l -14 6 Z" fill="#4fa85a" /><path d="M -22 -280 l 10 -10 l 8 8 l -12 8 Z" fill="#3f8f4a" />
+      </g>}
+      <path d="M -30 -150 Q -10 -158 6 -146 L 4 -96 Q 0 -86 -4 -96 L -6 -130 Q -20 -124 -24 -132 Z" fill="#d9a83a" stroke="#8a5a18" strokeWidth={3} opacity={0.85} />
+      <circle cx={-4} cy={-140} r={6} fill="#c0392b" />
     </svg>
   );
 
@@ -345,6 +384,7 @@ export const Noche: React.FC = () => {
           {/* ── mundo: piezas detrás de la gente */}
           <Capa cam={cv}>
             <SvgMundo>
+              {!adentro && <Ambiente t={t} camX={cv.x} ancho={1920 / cv.z + 400} />}
               <Escalera x={xFin} pisos={5} />
               <GatoCuerpo t={t} x={cv.x} />
               <Peligros t={t} t0={M.obst} t1={M.cielo + 0.5} x0={X(M.obst)} />
@@ -417,7 +457,7 @@ export const Noche: React.FC = () => {
             {/* la vida en la calle de noche (giro): un panadero con su pan */}
             {/* el protagonista */}
             {prot}
-            {sopaMancha}
+            {bosta}{sopaMancha}{salpica}
             {en(t, M.cae, M.cae + 1.2) && <Emote t={t} t0={M.cae} t1={M.cae + 1.2} tipo="susto" x={px} y={-217} s={0.5} />}
             {en(t, M.mal, M.mal + 2) && <Emote t={t} t0={M.mal} t1={M.mal + 2} tipo="preg" x={px} y={-217} s={0.5} />}
             {en(t, M.cayo, M.cayo + 1.6) && <Emote t={t} t0={M.cayo} t1={M.cayo + 1.6} tipo="excl" x={W_MACETA.x} y={-230} s={0.5} />}
