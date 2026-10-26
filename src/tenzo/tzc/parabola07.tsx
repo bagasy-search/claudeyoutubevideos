@@ -276,11 +276,11 @@ const Reverencia: React.FC = () => {
       claves={[mira(0, A.stoa - 100, P - 260, 1.1), mira(267, A.stoa + 1100, P - 260, 1.15, { curva: "inout" })]}
       medio={<>
         {filos.map((lk, i) => (
-          <Actor key={i} look={lk} escala={ESC} seed={140 + i} luz={CALIDA} ruta={[{ f: 0, x: A.stoa - 200 + i * 230, y: P + (i % 2 ? 40 : -10) }]} dir={[{ f: 0, v: -1 }]}
+          <Actor key={i} look={lk} escala={ESC} seed={140 + i} luz={CALIDA} ruta={[{ f: 0, x: A.stoa - 260 + i * 320, y: P + (i % 2 ? 40 : -10) }]} dir={[{ f: 0, v: -1 }]}
             poses={[{ f: 0, v: "firme" }, { f: 20 + i * 26, v: { tronco: 46, cabeza: 16, hD: 30, cD: 60, hI: 30, cI: 60 } }]} caras={[{ f: 0, v: "neutral" }]} />
         ))}
         {/* el hueco: un sitio vacío al final de la fila */}
-        <ellipse cx={A.stoa - 200 + 5 * 230 + 60} cy={P + 4} rx={60} ry={10} fill="#000" opacity={0.08} />
+        <ellipse cx={A.stoa - 260 + 5 * 320 + 60} cy={P + 4} rx={60} ry={10} fill="#000" opacity={0.08} />
       </>} />
   );
 };

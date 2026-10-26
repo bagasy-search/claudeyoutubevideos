@@ -65,11 +65,11 @@ const EstacaSoga: React.FC<{ cria?: boolean; tension?: number; mueve?: number }>
 // 106,0-114,0 · «Kyoto… a big tent, red and gold… music, lanterns, children everywhere»
 const Kioto: React.FC = () => (
   <Escena Set={Circo} pal={pal} seed={51} mano={2}
-    claves={[mira(0, 500, P - 260, 1.35), mira(240, 1500, P - 270, 1.45, { curva: "inout" })]}
+    claves={[mira(0, 520, P - 260, 1.35), mira(240, 1380, P - 270, 1.45, { curva: "inout" })]}
     medio={<>
       {CHICOS.map((lk, i) => (
-        <Actor key={i} look={lk} escala={ESC * 1.25} seed={60 + i} luz={CALIDA} correr={i === 1 ? 1 : 0.6}
-          ruta={[{ f: i * 30, x: -200 + i * 120, y: P }, { f: 200 + i * 20, x: 1600 + i * 160, y: P, curva: "lineal" }]}
+        <Actor key={i} look={lk} escala={ESC * 1.25} seed={60 + i} luz={CALIDA}
+          ruta={[{ f: 0, x: 120 + i * 170, y: P }, { f: 240, x: 1050 + i * 190, y: P, curva: "lineal" }]}
           poses={[{ f: 0, v: i === 2 ? "saludar" : "parado" }]} caras={[{ f: 0, v: i === 0 ? "risa" : "feliz" }]} />
       ))}
     </>}
@@ -240,9 +240,9 @@ const Sombra: React.FC = () => {
     <Escena Set={Circo} pal={pal} seed={64} mano={1.6}
       claves={[mira(0, 1650, 540, 0.95), mira(216, 1650, 560, 1.05, { curva: "inout" })]}
       medio={<>
-        <Elefanta x={2050} y={P + 10} s={0.9} f={f} balanceo={4} />
-        <g opacity={0.5 * (1 - u)}><Elefanta x={1450} y={P - 20} s={0.95} f={f} balanceo={6} piel="#4a1a16" luz="#4a1a16" /></g>
-        <g opacity={0.55 * u}><Elefanta x={1450} y={P - 20} s={0.95 * 0.45} cria f={f} balanceo={2} cabeza={14} piel="#4a1a16" luz="#4a1a16" /></g>
+        <Elefanta x={2180} y={P + 10} s={0.9} f={f} balanceo={4} />
+        <g opacity={0.78 * (1 - u)}><Elefanta x={1300} y={P - 20} s={0.95} f={f} balanceo={6} piel="#4a1a16" luz="#4a1a16" /></g>
+        <g opacity={0.82 * u}><Elefanta x={1300} y={P - 20} s={0.95 * 0.45} cria f={f} balanceo={2} cabeza={14} piel="#4a1a16" luz="#4a1a16" /></g>
       </>}
     />
   );
