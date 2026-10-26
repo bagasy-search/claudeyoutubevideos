@@ -17,13 +17,13 @@ export const mira = (f: number, X: number, Y: number, zoom0: number, extra: Part
 
 export type Pose = { x: number; y: number; zoom: number; rot?: number; foco?: number };
 // curva: en vez de resorte, tramo con easing y zoom LOGARÍTMICO (empujes enormes que aceleran o frenan parejo)
-export type Clave = Pose & { f: number; resorte?: { damping?: number; stiffness?: number; mass?: number }; curva?: "in" | "out" | "inout" };
+export type Clave = Pose & { f: number; resorte?: { damping?: number; stiffness?: number; mass?: number }; curva?: "in" | "out" | "inout" | "lineal" };
 
 // Desfase de cuadro: un plano puede arrancar ANTES de su corte (entrada encimada) y seguir DESPUÉS (salida).
 // useF() = cuadro local respecto del corte nominal (negativo durante la entrada).
 export const OffsetCtx = createContext(0);
 export const useF = () => useCurrentFrame() - useContext(OffsetCtx);
-const curvas = { in: Easing.in(Easing.cubic), out: Easing.out(Easing.cubic), inout: Easing.inOut(Easing.cubic) };
+const curvas = { lineal: Easing.linear, in: Easing.in(Easing.cubic), out: Easing.out(Easing.cubic), inout: Easing.inOut(Easing.cubic) };
 
 type Estado = { x: number; y: number; zoom: number; rot: number; foco: number };
 const Ctx = createContext<Estado>({ x: 0, y: 0, zoom: 1, rot: 0, foco: 1 });

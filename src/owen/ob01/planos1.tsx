@@ -86,9 +86,31 @@ export const P03Despierta: React.FC = () => {
 };
 
 // ---------- 4 · la fachada de Paulina St ----------
-export const P04Fachada: React.FC = () => (
-  <Escena Set={TwoFlatFuera} pal={PAL} claves={[mira(0, 1050, 520, 0.72), mira(99, 1350, 520, 0.8, { curva: "inout" })]} seed={4} setProps={{ hora: "alba" }} hud={<HudOwen min={313} part={null} />} />
-);
+export const P04Fachada: React.FC = () => {
+  const f = useF();
+  // 26-oct (ojo director 4/10: fachada quieta): se prende la luz de Owen, su silueta cruza la ventana, pasa un corredor y el diariero tira el diario
+  const x0 = TF_PUNTOS.puerta - 415, wy = P - 680;
+  const luz = interpolate(f, [14, 22], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const sx = interpolate(f, [26, 80], [x0 + 40, x0 + 260], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const diario = interpolate(f, [40, 62], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const dX = interpolate(diario, [0, 1], [TF_PUNTOS.puerta + 420, TF_PUNTOS.puerta + 40]), dY = P - 40 - Math.sin(diario * Math.PI) * 180;
+  return (
+    <Escena Set={TwoFlatFuera} pal={PAL} claves={[mira(0, 900, 560, 0.9), mira(99, 1180, 500, 1.12, { curva: "inout" })]} seed={4} setProps={{ hora: "alba" }}
+      medio={<>
+        <defs><clipPath id="p04ven"><rect x={x0 + 55} y={wy} width={210} height={170} /></clipPath></defs>
+        <g clipPath="url(#p04ven)" opacity={luz}>
+          <rect x={x0 + 55} y={wy} width={210} height={170} fill="#ffd98a" opacity={0.85} />
+          <g transform={`translate(${sx},${wy + 175})`} fill="#3a2a22" opacity={0.85}>
+            <circle cx={0} cy={-128} r={24} /><rect x={-26} y={-104} width={52} height={104} rx={20} />
+          </g>
+        </g>
+        <Halo x={x0 + 160} y={wy + 85} r={220} color="#ffd98a" fuerza={0.35 * luz} />
+        <Actor look={RUNNER} escala={ESC * 1.15} seed={41} ruta={[{ f: 0, x: 300, y: P + 60 }, { f: 99, x: 1900, y: P + 60, curva: "lineal" }]} correr={1} caras={[{ f: 0, v: "feliz" }]} />
+        {diario > 0 && diario < 1.01 && <g transform={`translate(${dX},${dY}) rotate(${diario * 540})`}><rect x={-34} y={-12} width={68} height={24} rx={6} fill="#efe8d8" stroke="#8a847a" strokeWidth={3} /><rect x={-6} y={-12} width={12} height={24} fill="#c0392b" /></g>}
+      </>}
+      hud={<><Pildora texto="S PAULINA ST · 5:13 AM" x={960} y={190} desde={8} color="#f4efe4" /><HudOwen min={313} part={null} /></>} />
+  );
+};
 
 // ---------- 5 · Rosa tararea con el café ----------
 const ROSA_COCINA = TF_PUNTOS.cocina + 90;
@@ -124,13 +146,15 @@ export const P07Numero: React.FC = () => {
   const f = useF();
   const k = kDe(17.9);
   const brillo = interpolate(f, [k(18.2), k(22.6)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const cl = [mira(0, 560, P - 240, 1.55), mira(k(22.6), 430, P - 300, 2.0, { curva: "inout" }), mira(k(25.6), 560, P - 260, 1.6, { curva: "inout" })];
+  // 26-oct (ojo 5/10): 3 beats con cámara — Rosa revuelve y tararea, golpe de cámara al 64, Owen se inclina y se frota los ojos
+  const cl = [mira(0, 640, P - 250, 1.7), mira(k(21.8), 520, P - 280, 1.9, { curva: "inout" }), mira(k(22.8), 560, P - 300, 2.1, { curva: "out" }), mira(k(25.0), 570, P - 290, 2.05), mira(k(25.7), 640, P - 260, 1.85, { curva: "inout" })];
+  const rev = Array.from({ length: 14 }).map((_, i) => ({ f: i * 16, v: { hD: 55 + (i % 2) * 18, cD: 60 - (i % 2) * 20 } }));
   return (
     <Escena Set={TwoFlatCorte} pal={PAL} claves={cl} seed={7} setProps={{ hora: "alba", luzBaño: false }}
       medio={<>
         <Halo x={ROSA_COCINA} y={P - 320} r={60 + 80 * brillo} color={VERDE} fuerza={0.5 * brillo * (f < k(22.84) ? 1 : 0.4)} />
-        <Actor look={ROSA} escala={ESC} seed={5} ruta={[{ f: 0, x: ROSA_COCINA, y: P }]} dir={[{ f: 0, v: -1 }, { f: k(26.5), v: 1 }]} poses={[{ f: 0, v: { hD: 60, cD: 60 } }]} caras={[{ f: 0, v: "feliz" }]} habla={[[0, 60]]} />
-        <Actor look={OWEN_CASA} escala={ESC} seed={6} ruta={[{ f: 0, x: 830, y: P }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: "parado" }, { f: k(25.7), v: "manosCara" }, { f: k(27.0), v: "parado" }]} caras={[{ f: 0, v: "sorpresa" }, { f: k(25.7), v: "cansado" }, { f: k(26.9), v: "sorpresa" }]} />
+        <Actor look={ROSA} escala={ESC} seed={5} ruta={[{ f: 0, x: ROSA_COCINA, y: P }]} dir={[{ f: 0, v: -1 }, { f: k(26.5), v: 1 }]} poses={[...rev, { f: k(26.5), v: "parado" }]} caras={[{ f: 0, v: "feliz" }]} habla={[[0, 60], [90, 150]]} miradas={[{ f: 0, v: { x: -0.4, y: 0.5 } }]} />
+        <Actor look={OWEN_CASA} escala={ESC} seed={6} ruta={[{ f: 0, x: 830, y: P }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: "parado" }, { f: k(22.8), v: { tronco: 14, cabeza: 12, hD: 30, cD: 40 } }, { f: k(24.6), v: "parado" }, { f: k(25.7), v: "manosCara" }, { f: k(27.0), v: "parado" }]} caras={[{ f: 0, v: "neutral" }, { f: k(22.8), v: "sorpresa" }, { f: k(25.7), v: "cansado" }, { f: k(26.9), v: "sorpresa" }]} />
       </>}
       hud={<>
         <Etq cl={cl} x={ROSA_COCINA} y={P - 300} n={64} desde={k(22.7)} tam={78} />
@@ -187,7 +211,8 @@ export const P10Halden: React.FC = () => {
   const f = useF();
   const k = kDe(39.7);
   const HP = HAL_PISO;
-  const cl = [mira(0, 1000, HP - 300, 1.25), mira(k(44.0), 1080, HP - 300, 1.5, { curva: "inout" }), mira(k(49.4), 1240, HP - 250, 3.0, { curva: "inout" }), mira(k(52.4), 950, HP - 300, 1.3, { curva: "inout" }), mira(k(54.2), 720, HP - 340, 1.7, { curva: "inout" })];
+  // 26-oct (ojo 5/10: muñecos diminutos): planos más cerrados — firma en primer plano, cuenta, tablet, Hale de cerca
+  const cl = [mira(0, HAL_PUNTOS.silla - 100, HP - 260, 1.9), mira(k(43.6), HAL_PUNTOS.silla - 120, HP - 280, 2.0), mira(k(44.2), 1060, HP - 300, 1.6, { curva: "inout" }), mira(k(49.4), 1240, HP - 250, 3.0, { curva: "inout" }), mira(k(52.4), 980, HP - 230, 1.75, { curva: "inout" }), mira(k(54.2), HAL_PUNTOS.recepcion + 120, HP - 250, 2.1, { curva: "inout" })];
   const firma = interpolate(f, [k(40.6), k(43.0)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <Escena Set={Halden} pal={PAL} claves={cl} seed={10} setProps={{ hora: "manana", tablet: "47 / 47" }}

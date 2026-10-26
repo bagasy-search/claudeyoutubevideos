@@ -116,22 +116,24 @@ const CAFE = 1700;
 export const P27Lena: React.FC = () => {
   const k = kDe(182.2);
   const LX = CAFE + 640, OX = CAFE + 420;
-  const cl = [mira(0, 1450, ASH_PISO - 250, 0.72), mira(k(185.5), CAFE + 540, ASH_PISO - 260, 1.45, { curva: "inout" }), mira(k(192.0), LX - 40, ASH_PISO - 300, 1.9, { curva: "inout" }), mira(k(195.6), CAFE + 540, ASH_PISO - 270, 1.6, { curva: "inout" })];
+  // 26-oct (ojo 5/10: chicos, 17 s, caption cortado): cámara que sigue a Owen hasta el café, Lena prepara el café, personajes x1.25
+  const prepara = Array.from({ length: 14 }).map((_, i) => ({ f: k(186.3) + i * 14, v: i % 2 ? { hD: 70, cD: 40, hI: 40, cI: 70 } : { hD: 45, cD: 80, hI: 60, cI: 30 } }));
+  const cl = [mira(0, 1150, ASH_PISO - 230, 1.0), mira(k(185.5), CAFE + 540, ASH_PISO - 260, 1.55, { curva: "inout" }), mira(k(192.0), LX - 40, ASH_PISO - 300, 1.9, { curva: "inout" }), mira(k(195.6), CAFE + 540, ASH_PISO - 270, 1.6, { curva: "inout" })];
   return (
     <Escena Set={Ashland} pal={PAL} claves={cl} seed={27} setProps={{ hora: "manana", centro: () => 1500, cafe: CAFE, paradas: [{ x: 1000, num: 18, refugio: true }], autos: 2 }}
       medio={<>
         <Bus9 x={150} y={ASH_CARRIL - 120} esc={0.62} dir={1} hora="manana" puertas={1} chofer={false} />
-        <Actor look={LENA} escala={ESC * 0.8} seed={4} ruta={[{ f: 0, x: LX, y: ASH_PISO - 30 }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { hD: 50, cD: 70 } }, { f: k(190), v: { hD: 80, cD: 20 } }, { f: k(191), v: "parado" }]} caras={[{ f: 0, v: "feliz" }, { f: k(195.8), v: "picaro" }, { f: k(197.3), v: "risa" }]} habla={[[k(195.8), k(197.2)]]} />
+        <Actor look={LENA} escala={ESC} seed={4} ruta={[{ f: 0, x: LX, y: ASH_PISO - 30 }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { hD: 50, cD: 70 } }, ...prepara.filter((p) => p.f < k(190)), { f: k(190), v: { hD: 80, cD: 20 } }, { f: k(191), v: "parado" }]} caras={[{ f: 0, v: "feliz" }, { f: k(195.8), v: "picaro" }, { f: k(197.3), v: "risa" }]} habla={[[k(195.8), k(197.2)]]} />
         <g><rect x={CAFE + 60} y={ASH_PISO - 150} width={980} height={150} fill="#6a4630" /><rect x={CAFE + 50} y={ASH_PISO - 160} width={1000} height={18} rx={4} fill="#e9dcc4" /></g>
-        <Actor look={OWEN} escala={ESC * 0.8} seed={1} ruta={[{ f: 0, x: 900, y: ASH_PISO + 40 }, { f: k(186.2), x: OX, y: ASH_PISO + 20 }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: "parado" }, { f: k(190.4), v: { hD: 40, cD: 110 } }]} caras={[{ f: 0, v: "feliz" }, { f: k(197.3), v: "risa" }]} habla={[[k(197.3), k(198.5)]]} enManoD={(ff: number) => (ff > k(190.4) ? <VasoCafe /> : null)} />
+        <Actor look={OWEN} escala={ESC} seed={1} ruta={[{ f: 0, x: 900, y: ASH_PISO + 40 }, { f: k(186.2), x: OX, y: ASH_PISO + 20 }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: "parado" }, { f: k(190.4), v: { hD: 40, cD: 110 } }]} caras={[{ f: 0, v: "feliz" }, { f: k(197.3), v: "risa" }]} habla={[[k(197.3), k(198.5)]]} enManoD={(ff: number) => (ff > k(190.4) ? <VasoCafe /> : null)} />
       </>}
       hud={<>
         <Pildora texto="STOP 18 · ASHLAND & 18TH" x={960} y={950} desde={0} hasta={k(186)} color="#f4efe4" />
         <Pildora texto="LENA ORTIZ · 27" x={960} y={950} desde={k(186.3)} hasta={k(191.8)} color="#f4efe4" />
-        <Etq cl={cl} x={LX} y={ASH_PISO - 30 - 280} n={24} edad={27} desde={k(192.2)} tam={84} />
-        <Globo texto="What are you smiling at?" x={1250} y={250} desde={k(195.8)} hasta={k(197.3)} cola="abajo" tam={40} />
+        <Etq cl={cl} x={LX} y={ASH_PISO - 30 - 340} n={24} edad={27} desde={k(192.2)} tam={84} />
+        <Globo texto="What are you smiling at?" x={1620} y={560} desde={k(195.8)} hasta={k(197.3)} cola="abajo" tam={40} />
         <Globo texto="The coffee is great." x={700} y={300} desde={k(197.3)} hasta={k(199.7)} cola="abajo" tam={40} />
-        <Mano texto="(he hasn't tasted it)" x={720} y={880} desde={k(198.6)} color="#ffd27a" tam={52} />
+        <Mano texto="(he hasn't tasted it)" x={760} y={860} desde={k(197.6)} color="#ffd27a" tam={52} />
         <HudOwen min={555} part="47/47" />
       </>} />
   );
@@ -226,7 +228,8 @@ export const P34Abrigo: React.FC = () => {
     ruta: [{ f: k(252.5), x: BUS_PUNTOS.puertaF + 40, y: BUS_PISO }, { f: k(253.4), x: BUS_PUNTOS.validador + 40, y: BUS_PISO }, { f: k(254.2), x: BUS_PUNTOS.validador + 40, y: BUS_PISO }, { f: k(257.6), x: ASIENTO_X(FILA_ABRIGO), y: BUS_PISO }],
     sentado: k(257.7),
   };
-  const cl = [mira(0, 480, 650, 1.5), mira(k(254.2), 700, 650, 1.35, { curva: "inout" }), mira(k(257.5), 2700, 650, 1.1, { curva: "inout" })];
+  // 26-oct (ojo 5/10: paneo borroso, señor chico): más cerca ; pasa por detrás y la cámara se queda en la cara de Owen que lo sigue con la mirada (seguirlo era un barrido borroso); el espejo lo muestra sentado
+  const cl = [mira(0, 520, 640, 1.6), mira(k(254.2), BUS_PUNTOS.validador + 80, 640, 1.5, { curva: "inout" }), mira(k(255.6), 360, 650, 2.0, { curva: "inout" })];
   const espejo = f >= k(257.9);
   return (
     <AbsoluteFill>
