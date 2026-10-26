@@ -7,12 +7,14 @@ import { ESC, Esc, INS } from "./guion07";
 // a los costados, adoquines que corren, tabernas y antorchas que derraman luz, primer plano, y el nene caminando
 // HACIA cámara mientras la cámara retrocede. Cada trampa es un plano de acción armado acá (anticipa → golpe → reacción).
 const K = "#1a0d24";
-const F = 1000, HOR = 455, CAMH = 120, HW = 430, KH = 175;
+const F = 1000, HW = 430, KH = 175;
+// OJO v7: cámara por plano (altura, horizonte y corrimiento lateral) — se fija al principio de cada cuadro
+let HOR = 455, CAMH = 120, CX = 0;
 const h = (n: number) => { const v = Math.sin(n * 127.1 + 311.7) * 43758.5453; return v - Math.floor(v); };
 const cl = (v: number, a = 0, b = 1) => Math.min(b, Math.max(a, v));
 const lp = (t: number, a: number, b: number, va: number, vb: number) => va + (vb - va) * cl((t - a) / (b - a));
 type Pt = [number, number];
-const P = (x: number, y: number, d: number): Pt => [960 + (F * x) / d, HOR + (F * (CAMH - y)) / d];
+const P = (x: number, y: number, d: number): Pt => [960 + (F * (x - CX)) / d, HOR + (F * (CAMH - y)) / d];
 const poly = (pts: Pt[]) => pts.map((p) => `${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(" ");
 const quadL = (x: number, y0: number, y1: number, d0: number, d1: number) => poly([P(x, y0, d0), P(x, y1, d0), P(x, y1, d1), P(x, y0, d1)]);
 
@@ -38,7 +40,7 @@ const Z = 0.62; // OJO v5: el nene más cerca de cámara (~35 % del alto)
 const Calle: React.FC<{ t: number; e: Esc; cz: number; eds: Ed[]; fuego: number }> = ({ t, e, cz, eds, fuego }) => {
   const D = (d: number) => d + cz;
   const vis = eds.filter((b) => D(b.d0) < 7000).sort((a, b) => D(b.d1) - D(a.d1));
-  const colX = 960, colY = HOR, colS = F / D(5600);
+  const colX = 960 - (F * CX) / D(5600), colY = HOR, colS = F / D(5600);
   const lineas: React.ReactNode[] = [];
   for (let k = 0; k < 70; k++) {
     const d = 60 + k * 85 - (cz % 85);
@@ -316,7 +318,7 @@ const plan = (e: Esc, t: number) => {
   const extra: React.ReactNode[] = [];
   const s = Math.round(e.t * 10);
   // el nene: camina hacia cámara (d baja), con su lámpara
-  let kx = -40 + Math.sin(lt * 0.6) * 20, kd = 760 - 95 * lt, kc = 1.6, kexpr: Expr = "neutro", kmira = Math.sin(lt * 0.9) * 0.6, kbD: number | undefined = 55, kcD: number | undefined = 55, kbI: number | undefined, kcI: number | undefined, ksalta: number | undefined, kinc = 0;
+  let kx = -40 + Math.sin(lt * 0.6) * 20, kd = 760 - 95 * lt, kc = 1.6, kexpr: Expr = "neutro", kmira = Math.sin(lt * 0.9) * 0.6, kbD: number | undefined = 55, kcD: number | undefined = 55, kbI: number | undefined, kcI: number | undefined, ksalta: number | undefined, kinc = 0, khabla = false, klam = false;
   const lam = e.tipo !== "fuego" && e.tipo !== "huida" && e.tipo !== "vigiles" && e.tipo !== "cadena";
   const tt = (x: number) => e.t + x;
   switch (e.tipo) {
@@ -325,11 +327,18 @@ const plan = (e: Esc, t: number) => {
       for (let k = 0; k < n; k++) {
         const ida = h(s + k) > 0.5;
         const v = 70 + h(s + k * 3) * 50;
-        ac.push({ x: (h(s + k * 7) > 0.5 ? 1 : -1) * (150 + h(s + k * 5) * 190), d: (ida ? 300 + k * 260 + v * lt : 2200 + k * 300 - v * lt) + cz, seed: 60 + s % 40 + k, camina: 1.2, ropa: CIVIL(k + s), expr: (["neutro", "feliz", "orgullo"] as Expr[])[k % 3], manoD: k % 4 === 1 ? AntorchaM(t) : undefined, bD: k % 4 === 1 ? 70 : undefined, cD: k % 4 === 1 ? 40 : undefined, habla: k % 3 === 0 });
+        ac.push({ x: (h(s + k * 7) > 0.5 ? 1 : -1) * (150 + h(s + k * 5) * 190), d: (ida ? 300 + k * 260 + v * lt : 2200 + k * 300 - v * lt) + cz, seed: 60 + s % 40 + k, h: 178 + h(s + k * 9) * 48, camina: 1.0 + h(s + k * 4) * 0.8, ropa: CIVIL(k + s), expr: (["neutro", "feliz", "orgullo"] as Expr[])[k % 3], manoD: k % 4 === 1 ? AntorchaM(t) : undefined, bD: k % 4 === 1 ? 70 : undefined, cD: k % 4 === 1 ? 40 : undefined, habla: k % 3 === 0 });
       }
       if (e.tipo === "gente") ac.push({ x: 300, d: 900 + cz, seed: 88, ropa: { ...CIVIL(1), tunica: "#f2ead8", tunica2: "#c9bfa8" }, expr: "feliz", habla: true, bD: 120, cD: 60, manoD: <g><ellipse cx={0} cy={-20} rx={70} ry={18} fill="#c9673f" stroke={K} strokeWidth={5} />{[-40, 0, 40].map((x) => <ellipse key={x} cx={x} cy={-38} rx={22} ry={14} fill="#e8b45a" stroke={K} strokeWidth={4} />)}</g> });
       kexpr = e.tipo === "gente" ? "sorpresa" : "neutro";
-      { const vr = Math.floor(h(s + 5) * 4);
+      if (h(s + 21) > 0.45) { const dir = h(s + 22) > 0.5 ? 1 : -1; ac.push({ x: dir * lp(lt, 0, 5.5, -520, 520), d: 300 + cz * 0, seed: 70 + (s % 11), ropa: CIVIL(s + 3), camina: 1.5, expr: "neutro", manoD: h(s + 23) > 0.5 ? <g><ellipse cx={0} cy={-40} rx={34} ry={52} fill="#b8643a" stroke={K} strokeWidth={6} /><rect x={-12} y={-104} width={24} height={26} fill="#a0522d" stroke={K} strokeWidth={5} /></g> : undefined, bD: 150, cD: 20 }); }
+      { const vr = Math.floor(h(s + 5) * 8);
+        // OJO v7: el nene ACTÚA distinto en cada relleno (agacharse, mirar atrás, cubrirse, saltar un charco, alzar la lámpara, charlar)
+        if (vr === 4) { kd = 700 - 60 * lt; kc = 0.9; kinc = 14; kexpr = "miedo"; kmira = lt % 2 < 1 ? -1 : 1; kbI = 40; kcI = 90; }
+        else if (vr === 5) { kd = 640; kc = 0; kexpr = lt > 1.5 ? "sorpresa" : "neutro"; kbD = lt > 1 ? 165 : 55; kcD = lt > 1 ? 15 : 55; klam = true; kmira = -0.4; }
+        else if (vr === 6) { kd = 760 - 110 * lt; kc = 2.2; ksalta = tt(2.2); kexpr = lt > 2 && lt < 3.2 ? "feliz" : "neutro"; kbI = lt > 2 && lt < 3.2 ? 140 : undefined; kcI = 30; }
+        else if (vr === 7) { kd = 620; kc = 0; kx = -180; kexpr = "orgullo"; khabla = true; kmira = 1; kbI = 85; kcI = 50;
+          ac.push({ x: 60, d: 380 + cz, seed: 77 + (s % 9), ropa: CIVIL(s), expr: lt > 2.5 ? "sorpresa" : "feliz", habla: lt > 2.5, mira: -1, bD: 100, cD: 70, flip: true }); }
         if (vr === 1) { kx = lp(lt, 0, 5.5, -280, 260); kd = 640; kmira = 0.9; kexpr = "orgullo"; }
         else if (vr === 2) { kc = 2.6; kd = 900 - 150 * lt; kexpr = "miedo"; kbD = 150; kcD = 40; kinc = 6; }
         else if (vr === 3) { kd = 640 - 40 * lt; kc = lt > 2.5 ? 0 : 1.6; kexpr = lt > 2.5 ? "sorpresa" : "neutro"; kmira = lt > 2.5 ? -0.9 : kmira; if (lt > 2.5) { kbI = 150; kcI = 40; } } }
@@ -450,7 +459,7 @@ const plan = (e: Esc, t: number) => {
       break;
     }
   }
-  const kid: Ac = { x: kx, d: Math.max(kd, 600) * Z, h: KH, seed: 1, ropa: LUCIUS, expr: kexpr, camina: kc, mira: kmira, bD: kbD, cD: kcD, bI: kbI, cI: kcI, salta: ksalta, inclina: kinc, manoD: lam && kbD === 55 ? <Lampara t={t} on={1} /> : undefined };
+  const kid: Ac = { x: kx, d: Math.max(kd, 600) * Z, h: KH, seed: 1, ropa: LUCIUS, expr: kexpr, camina: kc, mira: kmira, bD: kbD, cD: kcD, bI: kbI, cI: kcI, salta: ksalta, inclina: kinc, habla: khabla, manoD: lam && (kbD === 55 || klam) ? <Lampara t={t} on={1} /> : undefined };
   // el nene está en coordenadas de cámara (su d ya es relativo a la cámara)
   if (!INS.some((i) => t >= i.t + 0.2 && t < i.t1)) ac.push(kid);
   if (lam) luz.push({ x: kx + 40, y: 110, d: kid.d, r: osc > 0.5 ? 340 : 220 });
@@ -490,6 +499,10 @@ export const escEn = (t: number) => ESC.find((e) => t >= e.t && t < e.t + e.d);
 export const Perspectiva: React.FC<{ t: number }> = ({ t }) => {
   const e = escEn(t);
   if (!e) return null;
+  // general / contrapicado / picado desde un balcón / pegado a la pared izq / der / bajo en diagonal
+  const CAMS: [number, number, number][] = [[455, 120, 0], [720, 40, 0], [150, 300, 0], [455, 120, -150], [455, 120, 150], [640, 55, -120]];
+  const cam = CAMS[Math.floor(h(ESC.indexOf(e) * 5.3 + 2) * CAMS.length)];
+  HOR = cam[0]; CAMH = cam[1]; CX = cam[2];
   const pl = plan(e, t);
   const eds = edificios(Math.round(e.t * 7));
   const k = ESC.indexOf(e);
@@ -500,6 +513,7 @@ export const Perspectiva: React.FC<{ t: number }> = ({ t }) => {
   const kid = pl.ac.find((a) => a.seed === 1);
   const luces = [...pl.luz, ...lucesCalle(pl.cz, eds).filter((l) => l.d < 2600).map((l) => ({ ...l, r: l.r * 0.8 })), ...pl.ac.filter((a) => a.d > 60 && a.d < 1400 && a !== kid).map((a) => ({ x: a.x, y: 100, d: a.d, r: 190 }))];
   if (kid) luces.push({ x: kid.x, y: 95, d: kid.d, r: 260 });
+  luces.push({ x: kid ? kid.x * 0.5 : 0, y: 0, d: 230, r: 150 }); // OJO v7: el primer plano del piso no queda en negro
   const noche = Math.max(pl.osc, 0.78);
   // OJO v6: encuadre distinto por plano (general / medio / cerrado / bajo) con un empuje lento
   const modo = Math.floor(h(k * 3.7 + 1) * 4);

@@ -120,9 +120,11 @@ const PIEZAS: Pz[] = (() => {
     else if (b.k === "cuenta") fin = b.fin ?? b.t1 + 1.8;
     else if (b.k === "trap") fin = b.t + 2.9;
     const baja = (y: number | undefined, min: number) => (y !== undefined && y < min ? min : y);
-    if (b.k === "big") out.push({ ...b, y: baja(b.y ?? 200, 300), fin });
-    else if (b.k === "cuenta") out.push({ ...b, y: baja(b.y, 300) as number, fin });
-    else if (b.k === "ico") out.push({ ...b, y: baja(b.y, 340) as number, fin });
+    // OJO v7: en la calle en perspectiva la cabeza del nene cae en 300-550 → títulos e íconos a la franja de arriba
+    void baja;
+    if (b.k === "big") out.push({ ...b, y: 165, fin });
+    else if (b.k === "cuenta") out.push({ ...b, y: 175, fin });
+    else if (b.k === "ico") out.push({ ...b, y: 205, fin });
     else out.push({ ...b, fin });
   });
   return out;
