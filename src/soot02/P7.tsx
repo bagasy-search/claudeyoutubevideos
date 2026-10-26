@@ -162,8 +162,8 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
     </Escena>
 
     {/* 854,43 · "So, was rowing on a Roman warship a death trap? Here is the twist." */}
-    <Escena t={t} t0={854.43} t1={859.01} entra="fundido" sale="fundido" fondo="#14122a" golpes={[855.0, 857.75]}>
-      <Grande t={t} t0={855.0} text="A DEATH TRAP?" y={430} size={170} color={C.crema} />
+    <Escena t={t} t0={854.43} t1={859.01} entra="fundido" sale="fundido" fondo="#2e2a5c" golpes={[854.55, 857.75]}>
+      <Grande t={t} t0={854.55} text="A DEATH TRAP?" y={430} size={170} color={C.crema} />
       <Trampas t={t} t0={855.2} n={7} y={600} />
       <Chip t={t} t0={857.75} text="HERE IS THE TWIST" color={C.rojo} x={960} y={800} centro size={66} />
     </Escena>
