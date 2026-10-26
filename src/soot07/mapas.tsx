@@ -169,11 +169,22 @@ export const MapaCielo: React.FC<{ t: number; camY: number }> = ({ t, camY }) =>
   const tipo = t < M.t1 ? "ruta" : t < M.t6 ? "colinas" : t < M.t7 ? "incendio" : t < M.pregunta ? "cohortes" : "cta";
   return (
     <svg style={{ position: "absolute", inset: 0, opacity: op }} width={1920} height={1080}>
-      {tipo === "ruta" && <Ruta t={t} />}
-      {tipo === "colinas" && <Colinas t={t} />}
-      {tipo === "incendio" && <Incendio t={t} />}
-      {tipo === "cohortes" && <Cohortes t={t} />}
-      {tipo === "cta" && <Cta t={t} />}
+      {/* respiración de cámara propia del mapa (nunca queda quieto) */}
+      <g transform={`translate(960 540) scale(${1.02 + 0.035 * Math.sin(t * 0.55)}) rotate(${Math.sin(t * 0.33) * 0.8}) translate(${-960 + Math.sin(t * 0.4) * 22} ${-540 + Math.cos(t * 0.29) * 14})`}>
+        {tipo === "ruta" && <Ruta t={t} />}
+        {tipo === "colinas" && <Colinas t={t} />}
+        {tipo === "incendio" && <Incendio t={t} />}
+        {tipo === "cohortes" && <Cohortes t={t} />}
+        {tipo === "cta" && <Cta t={t} />}
+      </g>
+      {/* partículas: burbujas del pantano / brasas del incendio */}
+      {(tipo === "colinas" || tipo === "incendio") && Array.from({ length: 40 }, (_, k) => {
+        const per = 3 + ((k * 37) % 7) * 0.4, u = ((t + k * 0.61) % per) / per;
+        const x = ((k * 211) % 1920) + Math.sin(t * 1.3 + k) * 30, y = 1100 - u * 1200;
+        return tipo === "incendio"
+          ? <circle key={k} cx={x} cy={y} r={3 + (k % 4) * 2} fill={k % 3 ? "#ff9a2a" : "#ffd36a"} opacity={0.8 * Math.sin(u * Math.PI)} />
+          : <circle key={k} cx={x} cy={y} r={4 + (k % 4) * 3} fill="none" stroke="#9fe0ff" strokeWidth={3} opacity={0.5 * Math.sin(u * Math.PI)} />;
+      })}
     </svg>
   );
 };
