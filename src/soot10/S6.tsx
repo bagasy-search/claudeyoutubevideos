@@ -181,7 +181,7 @@ export const O6: React.FC<{ t: number }> = ({ t }) => {
       <S t={588.1} p="squish" g={-8} />
       <S t={590.3} p="rattle" g={-8} d={1} />
       <Txt t={t} t0={598.5} t1={601.0} text="A LEMON." y={900} size={110} color={C.oro} />
-      <Txt t={t} t0={599.4} t1={601.1} text="THE CURE (NOBODY KNEW)" y={170} size={96} color={C.oro} />
+      <Txt t={t} t0={599.4} t1={601.1} text="THE CURE (NOBODY KNEW)" y={120} size={80} color={C.oro} />
       {/* fiebres tropicales */}
       <Mapa t={t} t0={601.2} t1={610.4} titulo="FEVER COUNTRY"
         cam={[[601.2, -60, 18, 1.6], [605.0, -40, 14, 1.4], [608.0, -40, 14, 1.5]]}

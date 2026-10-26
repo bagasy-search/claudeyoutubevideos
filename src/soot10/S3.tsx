@@ -127,7 +127,7 @@ export const A3: React.FC<{ t: number }> = ({ t }) => {
         {reparto && REPARTO.map(([x, txt, n, t0], i) => (
           <g key={i}>
             <g transform={`translate(${x} ${CUB - 6}) scale(0.5)`}><Pila n={n} t={t} t0={t0} oro /></g>
-            <Lbl t={t} t0={t0} t1={320.4} x={x} y={CUB - 130 - (i % 2) * 36} txt={txt} size={34} color={C.crema} />
+            <Lbl t={t} t0={t0} t1={320.4} x={x} y={CUB + 40 + (i % 2) * 42} txt={txt} size={30} color={C.crema} />
           </g>
         ))}
         {reparto && <g transform={`translate(2780 ${CUB - 6}) scale(0.5)`}><Pila n={0.5} t={t} t0={318.3} oro /></g>}
