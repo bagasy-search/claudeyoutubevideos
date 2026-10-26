@@ -91,7 +91,8 @@ export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; ch
   const vx = Math.abs(p.x - q.x), vy = Math.abs(p.y - q.y);
   // sólo en barridos de verdad (>24 px/cuadro): en los empujes normales el desenfoque se leía como imagen borrosa / lag
   const sx = vx > 24 ? Math.min(28, (vx - 24) * 0.35) : 0, sy = vy > 24 ? Math.min(28, (vy - 24) * 0.35) : 0;
-  const mb = sx > 1.5 || sy > 1.5;
+  // 26-oct: APAGADO. El filter sobre todo el plano en el farm (swangle) duplicaba capas (fantasmas) y el director lo leía como borrón
+  const mb = false && (sx > 1.5 || sy > 1.5);
   const id = `mb${seed}`;
   return (
     <AbsoluteFill style={{ background: fondo, overflow: "hidden" }}>
@@ -125,7 +126,9 @@ export const Capa: React.FC<{ z: number; children: React.ReactNode; desenfoqueMa
         ...resto,
       }}
     >
-      <AbsoluteFill style={{ filter: blur > 0.6 ? `blur(${blur.toFixed(1)}px)` : undefined }}>{children}</AbsoluteFill>
+      {/* 26-oct: SIN filter CSS. Aun en un hijo sin transform, en el farm (swangle) el blur seguía metiendo teselas de otra parte
+          del cuadro (fantasmas del café ob03 P11 y la pierna colgando de P13, sólo en el farm). El desenfoque de profundidad no vale ese riesgo. */}
+      <AbsoluteFill data-blur={blur > 0.6 ? blur.toFixed(1) : undefined}>{children}</AbsoluteFill>
     </AbsoluteFill>
   );
 };
