@@ -161,6 +161,7 @@ export const EXPRESIONES: Record<string, Expr> = {
   asco: E({ ceja: 18, parpado: 0.25, bocaW: 9, bocaC: -4, bocaO: 2, bocaIz: -3, bocaDe: 3 }),
   determinado: E({ ceja: 18, cejaY: 1, parpado: 0.18, bocaW: 8, bocaC: 0.5, pupila: 4.2 }),
   zombi: E({ abre: 1, pupila: 0, parpado: 0.25, bocaW: 9, bocaC: -2, bocaO: 4, dientes: 0.6 }),
+  dormido: E({ abre: 0.1, pupila: 0, ceja: -4, cejaY: 2, bocaW: 5, bocaC: 1.5, bocaO: 1.2 }), // ojos cerrados (el «zombi» acostado se leía como una «B»)
 };
 export const mezclaExpr = (a: Expr, b: Expr, t: number): Expr => {
   const o = { ...a };

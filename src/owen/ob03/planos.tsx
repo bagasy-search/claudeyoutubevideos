@@ -263,7 +263,8 @@ export const P12Noche: React.FC = () => {
   const lee = k(98.7), limpia = k(102.2), radia = k(103.8);
   const x = f < lee ? interpolate(f, [0, lee - 10], [CAMA - 300, CAMA], { extrapolateRight: "clamp" }) : f < limpia ? CAMA : f < radia ? 600 : 60;
   const y = f < limpia ? A : f < radia ? P : A;
-  const cl = [mira(0, 380, A - 200, 1.6), mira(lee, CAMA, A - 200, 2.0, { curva: "inout" }), mira(limpia, 600, P - 250, 1.6, { curva: "inout" }), mira(radia, 260, A - 180, 1.9, { curva: "inout" })];
+  // 26-oct: zoom ≥2 y centro alto: el cuadro queda dentro de UN piso (a 1.6 asomaba la cocina debajo del piso)
+  const cl = [mira(0, 420, A - 245, 2.1), mira(lee, CAMA, A - 240, 2.3, { curva: "inout" }), mira(limpia - 1, CAMA + 20, A - 240, 2.35), mira(limpia, 600, P - 250, 2.1), mira(radia - 1, 640, P - 250, 2.15), mira(radia, 300, A - 240, 2.2)]; // cortes secos entre pisos, nada de paneo por la losa
   const barre = Array.from({ length: 8 }).map((_, i) => ({ f: limpia + i * 6, v: i % 2 ? { hD: 120, cD: 30, hI: 110, cI: 40, tronco: 10 } : { hD: 80, cD: 50, hI: 70, cI: 60, tronco: 14 } }));
   const llave = Array.from({ length: 12 }).map((_, i) => ({ f: radia + 6 + i * 7, v: i % 2 ? { hD: 70, cD: 80, tronco: 20 } : { hD: 40, cD: 110, tronco: 22 } }));
   const min = Math.round(interpolate(f, [0, k(107.5)], [1320, 1700])) % 1440;
@@ -346,35 +347,59 @@ const NOMBRES = ["KOWALSKI, D. — 12", "REYES, M. — 03", "OKAFOR, T. — 29",
 export const P17Libreta: React.FC = () => {
   const f = useF();
   const k = kDe(161.97);
-  const e = interpolate(f, [0, 14], [0, 1], { extrapolateRight: "clamp" });
-  const zoom = interpolate(f, [k(168.3), k(171.5)], [1, 1.35], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const ult = f >= k(168.3);
+  const ESP = TF_PUNTOS.espejo;
+  const tach0 = k(166.6), ult = k(168.3), sello = k(170.0), bus = k(173.4), cara = k(175.0);
+  const e = interpolate(f, [8, 22], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (t) => 1 - Math.pow(1 - t, 3) });
+  const zoom = interpolate(f, [ult, ult + 40], [1, 1.1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  // Owen grande frente al espejo: lee la libreta, sigue los tachones con el dedo, se congela en MARSH, O., retrocede
+  const poses: { f: number; v: string | Record<string, number> }[] = [{ f: 0, v: { hD: 70, cD: 120, hI: 40, cI: 30 } },
+    ...Array.from({ length: 6 }).map((_, i) => ({ f: tach0 + i * 4, v: { hD: 70, cD: 120, hI: 60 + i * 6, cI: 70, cabeza: -4 + i * 2 } })),
+    { f: ult, v: { hD: 80, cD: 135, hI: 30, cI: 20, tronco: -8, cabeza: 6 } }, { f: sello, v: "manosCara" }, { f: sello + 40, v: { hD: 70, cD: 120, hI: 25, cI: 15, tronco: -4 } }];
+  const caras = [{ f: 0, v: "duda" }, { f: tach0, v: "neutral" }, { f: ult, v: "sorpresa" }, { f: sello, v: "miedo" }];
+  const ruta = [{ f: 0, x: ESP - 170, y: A }, { f: ult, x: ESP - 170, y: A }, { f: ult + 14, x: ESP - 190, y: A }];
+  const cl = [mira(0, ESP + 60, A - 250, 2.3), mira(ult, ESP + 40, A - 260, 2.7, { curva: "out" }), mira(sello + 20, ESP + 60, A - 250, 2.4, { curva: "inout" })];
+  const libreta = (pres: number) => (
+    <div style={{ position: "absolute", left: 1090, top: 150, width: 700, height: 740, transform: `scale(${zoom * pres}) rotate(-3deg)`, transformOrigin: f >= ult ? "50% 90%" : "50% 50%", background: "#f6f1e2", borderRadius: 10, boxShadow: "0 10px 40px rgba(0,0,0,0.5)", fontFamily: "'Courier New', monospace", overflow: "hidden" }}>
+      {Array.from({ length: 16 }).map((_, i) => <div key={i} style={{ position: "absolute", left: 0, right: 0, top: 60 + i * 44, height: 2, background: "#c9d6e8" }} />)}
+      <div style={{ position: "absolute", left: 50, top: 18, fontSize: 30, fontWeight: 700, color: "#2a2a2a" }}>HALDEN · WK 3</div>
+      {NOMBRES.map((n, i) => {
+        const tach = interpolate(f, [tach0 + i * 4, tach0 + i * 4 + 6], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+        return <div key={n} style={{ position: "absolute", left: 50, top: 92 + i * 84, fontSize: 38, color: "#2a2a2a" }}>{n}<div style={{ position: "absolute", left: -10, top: 22, height: 6, width: `${tach * 105}%`, background: "#c23a2e", transform: "rotate(-2deg)" }} /></div>;
+      })}
+      <div style={{ position: "absolute", left: 50, top: 92 + 6 * 84 + 16, fontSize: 46, fontWeight: 700, color: f >= ult ? "#c23a2e" : "#2a2a2a" }}>MARSH, O. — 47</div>
+      {f >= ult && <div style={{ position: "absolute", left: 24, top: 92 + 6 * 84, width: 500, height: 96, border: "6px solid #c23a2e", borderRadius: "50%", opacity: interpolate(f, [ult + 6, ult + 30], [0, 1], { extrapolateRight: "clamp" }) }} />}
+      {f >= sello && <div style={{ position: "absolute", left: 470, top: 470, transform: `rotate(-14deg) scale(${Math.max(1, 2.2 - (f - sello) / 4)})`, opacity: Math.min(1, (f - sello) / 4), border: "10px solid #c23a2e", borderRadius: 20, padding: "6px 26px", fontFamily: F_HUD, fontWeight: 800, fontSize: 90, color: "#c23a2e", background: "rgba(246,241,226,0.8)" }}>47</div>}
+    </div>
+  );
+  if (f < bus) return (
+    <Escena Set={TwoFlatCorte} pal={PAL} claves={cl} seed={17} setProps={{ hora: "noche", luzBaño: true, luzCocina: false, luzDorm: false }}
+      medio={<>
+        <defs><clipPath id="esp17"><rect x={ESP - 80} y={A - 410} width={160} height={180} rx={10} /></clipPath></defs>
+        <g clipPath="url(#esp17)">
+          <rect x={ESP - 80} y={A - 410} width={160} height={180} fill="#cfe0e4" />
+          <Actor look={OWEN_CASA} escala={ESC} seed={6} ruta={ruta.map((r) => ({ ...r, x: ESP + 30 - (r.x - (ESP - 170)) }))} dir={[{ f: 0, v: -1 }]} poses={poses} caras={caras} />
+          <rect x={ESP - 80} y={A - 410} width={160} height={180} fill="#aac6cf" opacity={0.22} />
+        </g>
+        <Actor look={OWEN_CASA} escala={ESC} seed={6} ruta={ruta} dir={[{ f: 0, v: 1 }]} poses={poses} caras={caras} enManoD={<Libro abierto />} />
+      </>}
+      hud={<>
+        {libreta(e)}
+        <Pildora texto="READ IN THE MIRROR · AT 5:12 AM" x={560} y={1010} desde={k(162.5)} hasta={k(166.5)} color="#f4efe4" />
+        <Pildora texto="NOT CROSSED OUT" x={560} y={1010} desde={k(169.0)} color={ROJO_OWEN} />
+        <HudOwen part={PART} sinReloj />
+      </>} />
+  );
+  // la parada 38: primero el del abrigo bajando entero por la puerta de atrás, después la cara de Owen que lo sigue
+  if (f < cara) return (
+    <EnBus cl={[mira(bus, BUS_PUNTOS.puertaT - 160, BUS_PISO - 250, 1.7), mira(cara, BUS_PUNTOS.puertaT - 60, BUS_PISO - 250, 1.75, { curva: "lineal" })]} hora="tarde" min={905} avance={() => 18000} paradas={[{ a: 18000, num: 38 }]} puertaT={() => 1}
+      pas={[{ look: ABRIGO, seed: 51, ruta: [{ f: bus, x: ASIENTO_X(8) - 60, y: BUS_PISO }, { f: cara - 6, x: BUS_PUNTOS.puertaT + 90, y: BUS_PISO }], dir: [{ f: 0, v: 1 }], poses: [{ f: 0, v: "parado" }], caras: [{ f: 0, v: "neutral" }] }]}
+      owen={{ caras: [{ f: 0, v: "miedo" }] }}
+      hud={<Pildora texto="STOP 38 · HE GETS OFF" x={960} y={950} desde={bus} color="#f4efe4" />} />
+  );
   return (
-    <AbsoluteFill style={{ background: "#14161c" }}>
-      <AbsoluteFill style={{ opacity: f < k(173.4) ? 1 : 0 }}>
-        <Marco x={340} y={110} w={1240} h={860} radio={120} borde="#2a2d34">
-          <AbsoluteFill style={{ background: "#3a3f48" }} />
-          <div style={{ position: "absolute", left: "50%", top: "50%", width: 760, height: 760, transform: `translate(-50%,-50%) scale(${zoom * e}) rotate(-3deg)`, transformOrigin: ult ? "50% 92%" : "50% 50%", background: "#f6f1e2", borderRadius: 10, boxShadow: "0 10px 40px rgba(0,0,0,0.5)", fontFamily: "'Courier New', monospace" }}>
-            {Array.from({ length: 16 }).map((_, i) => <div key={i} style={{ position: "absolute", left: 0, right: 0, top: 60 + i * 44, height: 2, background: "#c9d6e8" }} />)}
-            <div style={{ position: "absolute", left: 60, top: 20, fontSize: 30, fontWeight: 700, color: "#2a2a2a" }}>HALDEN · WK 3</div>
-            {NOMBRES.map((n, i) => {
-              const tach = interpolate(f, [k(166.6) + i * 4, k(166.6) + i * 4 + 6], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-              return <div key={n} style={{ position: "absolute", left: 70, top: 100 + i * 88, fontSize: 40, color: "#2a2a2a" }}>{n}<div style={{ position: "absolute", left: -10, top: 22, height: 6, width: `${tach * 105}%`, background: "#c23a2e", transform: "rotate(-2deg)" }} /></div>;
-            })}
-            <div style={{ position: "absolute", left: 70, top: 100 + 6 * 88 + 20, fontSize: 48, fontWeight: 700, color: ult ? "#c23a2e" : "#2a2a2a" }}>MARSH, O. — 47</div>
-            {ult && <div style={{ position: "absolute", left: 40, top: 100 + 6 * 88, width: 520, height: 100, border: "6px solid #c23a2e", borderRadius: "50%", opacity: interpolate(f, [k(168.5), k(169.5)], [0, 1], { extrapolateRight: "clamp" }) }} />}
-          </div>
-        </Marco>
-        <Pildora texto="READ IN THE MIRROR · 20 FEET AWAY" x={960} y={1010} desde={k(162.5)} hasta={k(166.5)} color="#f4efe4" />
-        <Pildora texto="NOT CROSSED OUT" x={960} y={1010} desde={k(169.0)} color={ROJO_OWEN} />
-        {f >= k(170.0) && <div style={{ position: "absolute", left: 1290, top: 640, transform: `rotate(-14deg) scale(${Math.max(1, 2.2 - (f - k(170.0)) / 4)})`, opacity: Math.min(1, (f - k(170.0)) / 4), border: "10px solid #c23a2e", borderRadius: 20, padding: "6px 26px", fontFamily: F_HUD, fontWeight: 800, fontSize: 90, color: "#c23a2e" }}>47</div>}
-      </AbsoluteFill>
-      {f >= k(173.4) && <EnBus cl={[mira(0, 520, BUS_PISO - 300, 2.0), mira(36, 760, BUS_PISO - 320, 1.6, { curva: "inout" })]} hora="tarde" min={905} avance={() => 18000} paradas={[{ a: 18000, num: 38 }]} puertaT={() => 1}
-        pas={[{ look: ABRIGO, seed: 51, ruta: [{ f: k(173.4), x: BUS_PUNTOS.puertaT - 200, y: BUS_PISO }, { f: k(175.2), x: BUS_PUNTOS.puertaT + 60, y: BUS_PISO }], dir: [{ f: 0, v: 1 }], seVa: k(175.0) }]}
-        owen={{ caras: [{ f: 0, v: "miedo" }], giros: [{ f: 0, v: 0.2 }, { f: k(174.2), v: 0.9 }], miradas: [{ f: 0, v: { x: 1, y: 0 } }] }}
-        hud={<Pildora texto="STOP 38 · HE GETS OFF. OWEN DOESN'T." x={960} y={950} desde={k(173.4)} color="#f4efe4" />} />}
-      <HudOwen part={PART} sinReloj />
-    </AbsoluteFill>
+    <EnBus cl={[mira(cara, OX + 170, OY + 40, 2.6), mira(cara + 60, OX + 150, OY + 40, 2.75, { curva: "lineal" })]} hora="tarde" min={905} avance={() => 18000} paradas={[{ a: 18000, num: 38 }]} puertaT={() => 1}
+      owen={{ caras: [{ f: 0, v: "miedo" }, { f: cara + 24, v: "duda" }], giros: [{ f: 0, v: 0.2 }, { f: cara + 6, v: 0.95 }], miradas: [{ f: 0, v: { x: 1, y: 0 } }] }}
+      hud={<Pildora texto="OWEN DOESN'T." x={960} y={950} desde={cara} color={ROJO_OWEN} />} />
   );
 };
 
@@ -647,10 +672,10 @@ export const P33Duerme: React.FC = () => {
   return (
     <Escena Set={TwoFlatCorte} pal={PAL} claves={cl} seed={33} setProps={{ hora: "alba", luzCocina: false, luzBaño: false, luzDorm: false }}
       medio={<g transform={`rotate(${-70 * cae} ${PIES.x} ${PIES.y - 74}) translate(0,${f > duerme + 10 ? Math.exp(-(f - duerme - 10) / 3) * Math.sin((f - duerme - 10) * 2) * 14 : 0})`}>
-        <OwenEscalera caras={[{ f: 0, v: "neutral" }, { f: salta, v: "sorpresa" }, { f: salta + 30, v: "cansado" }, { f: duerme, v: "zombi" }]} poses={[{ f: 0, v: "celular" }, { f: salta + 20, v: { hD: 20, cD: 20, hI: 20, cI: 20, ...SENT_ESC } }]} />
+        <OwenEscalera caras={[{ f: 0, v: "neutral" }, { f: salta, v: "sorpresa" }, { f: salta + 30, v: "cansado" }, { f: duerme, v: "dormido" }]} poses={[{ f: 0, v: "celular" }, { f: salta + 20, v: { hD: 20, cD: 20, hI: 20, cI: 20, ...SENT_ESC } }]} />
       </g>}
       hud={<>
-        <Cansa cl={cl} x={PIES.x + 10} y={PIES.y - 74 - 240} pct={[{ f: salta, v: 0 }, { f: salta + 8, v: 100 }]} desde={0} hasta={duerme + 4} tam={1.2} />
+        <Cansa cl={cl} x={PIES.x + 10} y={PIES.y - 74 - 240} pct={[{ f: salta, v: 0 }, { f: salta + 36, v: 100 }]} desde={0} hasta={duerme + 4} tam={1.2} />
         <Mano texto="for the first time in 3 days, it moves" x={1000} y={110} desde={k(339.0)} hasta={salta} color="#f4efe4" tam={64} />
         {f > salta && f < duerme && <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 50% 35%, #fff3d8 0%, #ff3d2e 60%)", opacity: Math.max(0, 0.45 - (f - salta) / 30) }} />}
         <Mano texto="asleep before his head hits the pillow" x={960} y={180} desde={duerme + 6} color="#6fa8ff" tam={56} />
@@ -683,16 +708,16 @@ export const P34Precios: React.FC = () => {
 export const P35Cta: React.FC = () => {
   const k = kDe(358.06);
   const f = useF();
-  const cl = [mira(0, CAMA - 20, A - 140, 1.6), mira(k(366), CAMA, A - 140, 1.75)];
+  const cl = [mira(0, CAMA + 40, A - 245, 2.1), mira(k(366), CAMA + 20, A - 235, 2.3, { curva: "lineal" })];
   const resp = Math.sin(f / 18);
   return (
     <Escena Set={TwoFlatCorte} pal={PAL} claves={cl} seed={35} setProps={{ hora: "dia", luzCocina: false, luzBaño: false, luzDorm: false }}
-      medio={<g transform={`translate(0,-110) rotate(-90 ${CAMA} ${A - 60})`}><Actor look={OWEN_CASA} escala={ESC} seed={6} vivo={0} ruta={[{ f: 0, x: CAMA, y: A - 60 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "zombi" }]} ajuste={(q) => ({ ...q, tronco: q.tronco + resp * 3, cabeza: q.cabeza + resp * 4, hD: q.hD + resp * 5 })} /></g>}
+      medio={<g transform={`translate(0,-110) rotate(-90 ${CAMA} ${A - 60})`}><Actor look={OWEN_CASA} escala={ESC} seed={6} vivo={0} ruta={[{ f: 0, x: CAMA, y: A - 60 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "dormido" }]} ajuste={(q) => ({ ...q, tronco: q.tronco + resp * 3, cabeza: q.cabeza + resp * 4, hD: q.hD + resp * 5 })} /></g>}
       hud={<>
-        {[0, 1, 2].map((i) => { const t = ((f + i * 20) % 60) / 60; return <div key={i} style={{ position: "absolute", left: 1000 + t * 140, top: 420 - t * 200, fontFamily: F_HUD, fontWeight: 800, fontSize: 80 + i * 22, color: "#ffe04a", opacity: Math.sin(t * Math.PI), textShadow: "0 4px 10px rgba(0,0,0,0.5)" }}>Z</div>; })}
+        {[0, 1, 2].map((i) => { const t = ((f + i * 20) % 60) / 60; return <div key={i} style={{ position: "absolute", left: 600 + t * 160, top: 560 - t * 260, fontFamily: F_HUD, fontWeight: 800, fontSize: 80 + i * 22, color: "#ffe04a", opacity: Math.sin(t * Math.PI), textShadow: "0 4px 10px rgba(0,0,0,0.5)" }}>Z</div>; })}
         {f > k(361.6) && <div style={{ position: "absolute", left: 960, top: 800, transform: `translateX(-50%) scale(${1 + Math.max(0, Math.sin((f - k(361.6)) / 6)) * 0.05})`, display: "flex", alignItems: "center", gap: 18, background: "#e22a2a", color: "#fff", fontFamily: F_HUD, fontWeight: 800, fontSize: 56, padding: "14px 40px", borderRadius: 18, boxShadow: "0 10px 30px rgba(0,0,0,0.4)" }}>SUBSCRIBE <span style={{ display: "inline-block", fontSize: 50, transform: `rotate(${Math.sin(f / 3) * 14}deg)` }}>🔔</span></div>}
         <Cansa cl={cl} x={CAMA + 260} y={A - 140} pct={100} desde={k(359.0)} tam={1.2} />
-        <Pildora texto="Honest answer: how many hours did YOU sleep last night?" x={960} y={170} desde={k(358.3)} color={VERDE} tam={44} />
+        <Mano texto={"how many hours did YOU" + String.fromCharCode(10) + "sleep last night?"} x={960} y={150} desde={k(358.3)} color="#ffd27a" tam={84} />
         <Pildora texto="TELL US IN THE COMMENTS · WEEK 4 IS NEXT" x={960} y={960} desde={k(361.6)} color="#f4efe4" tam={40} />
         <HudOwen part="44/47" />
       </>} />

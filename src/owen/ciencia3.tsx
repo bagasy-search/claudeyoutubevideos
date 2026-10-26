@@ -171,7 +171,8 @@ export const Factura: React.FC<{ dTotal?: number; dSexto?: number }> = ({ dTotal
   const tot = ease(f, dTotal, dTotal + 12);
   const sx = ease(f, dSexto, dSexto + 20);
   // las manos de Owen sostienen la hoja y tiemblan; cada renglón entra y su número cuenta hacia arriba; la birome encierra el total
-  const tiembla = Math.sin(f * 0.9) * 3 + Math.sin(f * 2.1) * 1.5;
+  // 26-oct: temblor LENTO (a 0,9 rad/cuadro el ojo lo marcaba como lageos y se veía trabado)
+  const tiembla = Math.sin(f * 0.17) * 3 + Math.sin(f * 0.29 + 1) * 1.5;
   const filas: [string, number, string][] = [["Surgery & anesthesia", 48920, ""], ["Hospital stay · 4 nights", 21300, ""], ["Physical therapy", 6410, ""], ["Insurance paid", 45218, "−"]];
   const tFila = (i: number) => 20 + i * Math.max(30, (dTotal - 40) / 4);
   const cuenta = Math.round(31412 * ease(f, dTotal, dTotal + 30));
@@ -194,7 +195,12 @@ export const Factura: React.FC<{ dTotal?: number; dSexto?: number }> = ({ dTotal
           <g opacity={tot} transform={`translate(300,330) scale(${0.8 + 0.2 * tot})`}><T x={0} y={0} s={96} c="#c23a2e" a="end" w={800}>{num(cuenta)}</T></g>
           {circ > 0 && <ellipse cx={110} cy={300} rx={240} ry={90} fill="none" stroke="#c23a2e" strokeWidth={8} strokeDasharray={1100} strokeDashoffset={1100 * (1 - circ)} transform="rotate(-4 130 300)" />}
           <T x={0} y={420} s={28} c="#777">FINAL NOTICE</T>
-          {[-1, 1].map((sd) => <g key={sd} transform={`translate(${sd * 360},380)`}><ellipse rx={70} ry={120} fill="#1a1a1a" transform={`rotate(${sd * -24})`} /><ellipse cx={-sd * 40} cy={-70} rx={30} ry={52} fill="#1a1a1a" transform={`rotate(${sd * -40})`} /></g>)}
+          {/* las manos de Owen (trazo de palito, como su cuerpo): brazo grueso que sube de abajo, palma redonda detrás y el pulgar por delante de la hoja */}
+          {[-1, 1].map((sd) => <g key={sd} transform={`translate(${sd * 372},360)`}>
+            <path d={`M${sd * 60},560 Q${sd * 40},300 0,40`} stroke="#1a1a1a" strokeWidth={34} fill="none" strokeLinecap="round" />
+            <circle r={58} fill="#1a1a1a" />
+            <path d={`M${-sd * 10},-20 Q${-sd * 60},-60 ${-sd * 70},-110`} stroke="#1a1a1a" strokeWidth={30} fill="none" strokeLinecap="round" />
+          </g>)}
         </g>
         {sx > 0 && <g opacity={sx} transform="translate(1340,560)">
           <rect x={-220} y={-300} width={440} height={600} rx={28} fill="#0e1428" stroke="#f4efe4" strokeWidth={4} />
