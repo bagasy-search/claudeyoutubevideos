@@ -100,7 +100,7 @@ export const P06Sala: React.FC = () => {
 export const P07Snack: React.FC = () => {
   const k = kDe(31.5);
   return (
-    <Sala cl={[mira(0, -1100, 620, 1.2), mira(k(33.9), -900, 640, 1.35, { curva: "inout" })]} snack
+    <Sala cl={[mira(0, -1240, 690, 1.9), mira(k(33.9), -1190, 682, 2.1, { curva: "inout" })]} snack
       detras={[{ l: RAFI, x: -1250, p: [{ f: 0, v: "hablar" }, { f: 30, v: { hD: 70, cD: 60 } }], c: "cansado", d: -1 }]}
       hud={<Rotulo t="the snack bar" x={1200} y={200} desde={8} flecha="izq" />} />
   );
@@ -110,9 +110,8 @@ export const P07Snack: React.FC = () => {
 export const P08Rafi: React.FC = () => {
   const k = kDe(33.88);
   return (
-    <Sala cl={[mira(0, -900, 663, 2.6), mira(k(36.3), -900, 669, 2.4), mira(k(36.9), -900, 600, 2.1, { curva: "inout" }), mira(k(39.3), -900, 600, 2.0), mira(k(40.1), -820, 731, 1.35, { curva: "inout" })]} snack
+    <Sala cl={[mira(0, -900, 663, 2.6), mira(k(36.3), -900, 669, 2.4), mira(k(36.9), -900, 600, 2.1, { curva: "inout" }), mira(k(39.3), -900, 600, 2.0), mira(k(40.1), -880, 700, 1.8, { curva: "inout" })]} snack
       detras={[{ l: RAFI, x: -900, p: [{ f: 0, v: "saludar" }, { f: k(36.5), v: "hablar" }, { f: k(39.5), v: { hD: 80, cD: 30 } }], c: [{ f: 0, v: "feliz" }, { f: k(39), v: "picaro" }], mD: (ff: number) => (ff > k(39.5) ? <Pancho /> : null), mir: { x: 0.2, y: 0 } }]}
-      gente={[{ l: LIGA3, x: -620, p: "parado", c: "feliz", d: -1 }]}
       hud={<><Rotulo t="RAFI · 17 · me" x={1240} y={300} desde={k(34.3)} hasta={k(38.4)} flecha="izq" /><Pildora texto="CHILI DOG $5 · PRETZEL $2" x={960} y={900} desde={k(40)} /></>} />
   );
 };
@@ -235,15 +234,36 @@ export const P18Ana: React.FC = () => {
 };
 
 // ---------- 19 · las ocho: el walkie hace clic, buenas noches desde 3 millas ----------
+// reloj grande: 7:58 -> 8:00 justo cuando dice «eight»
+const Reloj8: React.FC<{ k8: number }> = ({ k8 }) => {
+  const f = useF();
+  const o = interpolate(f, [0, 8], [0, 1], { extrapolateRight: "clamp" });
+  const m = interpolate(f, [0, k8], [348, 360], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const pul = f > k8 ? 1 + 0.08 * Math.max(0, Math.sin(((f - k8) / 12) * Math.PI)) * (f < k8 + 24 ? 1 : 0) : 1;
+  return (
+    <div style={{ position: "absolute", left: 1330, top: 120, width: 420, height: 500, opacity: o, transform: `scale(${pul})`, transformOrigin: "50% 40%" }}>
+      <svg width={420} height={420} viewBox="-210 -210 420 420">
+        <circle r={196} fill="#f4efe4" stroke="#2a2420" strokeWidth={16} />
+        {Array.from({ length: 12 }).map((_, i) => <line key={i} x1={0} y1={-170} x2={0} y2={i % 3 ? -150 : -135} stroke="#2a2420" strokeWidth={i % 3 ? 6 : 12} transform={`rotate(${i * 30})`} />)}
+        <line x1={0} y1={0} x2={0} y2={-95} stroke="#2a2420" strokeWidth={16} strokeLinecap="round" transform={`rotate(${240 + (m - 360) / 12})`} />
+        <line x1={0} y1={0} x2={0} y2={-150} stroke="#c0392b" strokeWidth={9} strokeLinecap="round" transform={`rotate(${m})`} />
+        <circle r={14} fill="#2a2420" />
+      </svg>
+      <div style={{ textAlign: "center", fontFamily: F_HUD, fontWeight: 700, fontSize: 64, color: f > k8 ? "#ffd84a" : "#f4efe4", textShadow: "0 3px 10px rgba(0,0,0,0.7)" }}>{f > k8 ? "8:00 PM" : "7:58 PM"}</div>
+    </div>
+  );
+};
+
 export const P19Ocho: React.FC = () => {
   const k = kDe(103.3);
   const f = useF();
   return (
     <AbsoluteFill>
-      <Sala cl={[mira(0, -760, 663, 2.6), mira(k(108.6), -760, 656, 2.9, { curva: "inout" })]} snack
+      <Sala cl={[mira(0, -860, 640, 2.2), mira(k(108.6), -840, 636, 2.45, { curva: "inout" })]} snack
         sobre={<A l={NELL} x={-760} sent={184} p={[{ f: 0, v: { hD: 30, cD: 60 } }, { f: k(104.5), v: { hD: 60, cD: 150, cabeza: 6 } }]} c={[{ f: 0, v: "neutral" }, { f: k(104.6), v: "feliz" }]} d={-1} mD={<Walkie s={0.8} luz={f > k(104.4)} />} />} />
-      <Dice quien="ana" t="Goodnight, baby." x={1120} y={280} desde={k(105.6)} />
-      <Rotulo t="3 miles away" x={1200} y={520} desde={k(107.2)} color="#9fd3ff" flecha="izq" />
+      <Dice quien="ana" t="Goodnight, baby." x={560} y={150} desde={k(105.6)} />
+      <Rotulo t="3 miles away" x={560} y={300} desde={k(107.2)} color="#9fd3ff" flecha="der" />
+      <Reloj8 k8={k(104.0)} />
       <HudDia dia={1} desde={9999} hora="8:00 PM" />
     </AbsoluteFill>
   );
@@ -322,13 +342,30 @@ export const P25Golpe: React.FC = () => {
 };
 
 // ---------- 26 · 7:52 la TV se pone azul: transmisión de emergencia ----------
+// la tele del snack en grande (recuadro): EMERGENCY · STAY INDOORS, con barrido de líneas; los bowlers abajo ni la miran
+const TeleGrande: React.FC<{ desde: number }> = ({ desde }) => {
+  const f = useF();
+  if (f < desde) return null;
+  const u = interpolate(f, [desde, desde + 8], [0, 1], { extrapolateRight: "clamp" });
+  const parpadeo = 0.85 + 0.15 * Math.abs(Math.sin(f / 5));
+  return (
+    <div style={{ position: "absolute", left: 1040, top: 70, width: 760, height: 420, borderRadius: 22, background: "#15161c", padding: 18, opacity: u, transform: `scale(${0.9 + 0.1 * u})`, transformOrigin: "100% 0", boxShadow: "0 0 70px rgba(80,140,255,0.45)" }}>
+      <div style={{ position: "relative", width: "100%", height: "100%", borderRadius: 10, overflow: "hidden", background: `linear-gradient(180deg, #1f4fd6, #0f2f8f)`, opacity: parpadeo }}>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 40, textAlign: "center", fontFamily: F_HUD, fontWeight: 800, fontSize: 92, color: "#fff", letterSpacing: 4 }}>EMERGENCY</div>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 160, textAlign: "center", fontFamily: F_HUD, fontWeight: 700, fontSize: 64, color: "#ffd23a" }}>STAY INDOORS</div>
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 64, background: ROJO, overflow: "hidden" }}><div style={{ position: "absolute", left: 0, top: 12, whiteSpace: "nowrap", fontFamily: F_HUD, fontWeight: 600, fontSize: 34, color: "#fff", transform: `translateX(${-((f - desde) * 6) % 900}px)` }}>· HAMILTON, OHIO · AVOID CONTACT · STAY INDOORS · HAMILTON, OHIO · AVOID CONTACT · STAY INDOORS ·</div></div>
+        <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(0deg, rgba(0,0,0,0.12) 0 3px, transparent 3px 7px)", transform: `translateY(${(f * 2) % 7}px)` }} />
+      </div>
+    </div>
+  );
+};
 export const P26Tv: React.FC = () => {
   const k = kDe(153.44);
   return (
-    <Sala cl={[mira(0, PP.tv, 120, 2.2), mira(k(158), PP.tv, 160, 2.6, { curva: "inout" }), mira(k(161), PP.tv - 80, 430, 1.4, { curva: "inout" })]} snack sp={{ tv: "alerta" }}
+    <Sala cl={[mira(0, PP.tv, 120, 2.2), mira(k(158), PP.tv, 160, 2.6, { curva: "inout" }), mira(k(161), -230, 650, 2.0, { curva: "inout" }), mira(k(165.9), -260, 650, 2.15, { curva: "lineal" })]} snack sp={{ tv: "alerta" }}
       gente={[{ l: LIGA, x: -380, p: "parado", c: "feliz", d: 1, mD: <Bola s={0.8} /> }, { l: LIGA2, x: -230, p: "hablar", c: "risa", d: -1, habla: [[0, 400]] }, { l: LIGA3, x: -90, p: "brazosCruzados", c: "feliz", d: -1 }, { l: PINPAL, x: 60, p: "celebrar", c: "risa", d: 1 }]}
       detras={[{ l: RAFI, x: -800, p: "pensar", c: [{ f: 0, v: "neutral" }, { f: k(160), v: "duda" }], mir: { x: 0.3, y: -0.8 }, d: 1 }]}
-      hud={<><HudDia dia={1} desde={9999} hora="7:52 PM" /><Dice quien="tv" t="STAY INDOORS." x={1250} y={560} desde={k(160.5)} tam={72} /><Dice quien="tv" t="AVOID CONTACT WITH ANYONE WHO APPEARS ILL." x={960} y={980} desde={k(163.5)} centro tam={56} /></>} />
+      hud={<><HudDia dia={1} desde={9999} hora="7:52 PM" /><TeleGrande desde={k(161)} /><Dice quien="tv" t="AVOID CONTACT WITH ANYONE WHO APPEARS ILL." x={960} y={980} desde={k(163.5)} centro tam={56} /></>} />
   );
 };
 
