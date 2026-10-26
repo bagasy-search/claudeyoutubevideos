@@ -117,7 +117,8 @@ export const TextoMano: React.FC<{ texto: string; x: number; y: number; desde: n
             {lin.split("").map((c, j) => {
               const i = base + j;
               const a = Math.min(1, Math.max(0, n - i));
-              return <span key={j} style={{ display: "inline-block", opacity: a, transform: `translateY(${(1 - a) * 6}px) rotate(${((i * 37) % 7) - 3}deg)`, clipPath: `inset(0 ${(1 - a) * 100}% 0 0)` }}>{c === " " ? " " : c}</span>;
+              // 26-oct: el clip a la caja de cada letra cortaba el palo de la «d» de Caveat (se leía «a»): margen negativo y sin clip al terminar
+              return <span key={j} style={{ display: "inline-block", opacity: a, transform: `translateY(${(1 - a) * 6}px) rotate(${((i * 37) % 7) - 3}deg)`, clipPath: a >= 1 ? undefined : `inset(-60% ${(1 - a) * 100}% -60% -40%)` }}>{c === " " ? " " : c}</span>;
             })}
           </div>
         );
