@@ -7,8 +7,9 @@ import { ClipB } from "./anikit/clips/ClipB";
 import { ClipC } from "./anikit/clips/ClipC";
 import { ClipD } from "./anikit/clips/ClipD";
 import * as EX from "./anikit/ExplicaDemo";
+import * as UT from "./anikit/UtileriaDemo";
 
-const DEMOS: [string, React.FC][] = [["Ex-Cuerpo", EX.ExCuerpo], ["Ex-Grafico", EX.ExGrafico], ["Ex-Comparacion", EX.ExComparacion], ["Ex-Cortina", EX.ExComparacionCortina], ["Ex-Mapa", EX.ExMapa], ["Ex-Plano", EX.ExPlano], ["Ex-Causa", EX.ExCausa], ["Ex-Medidor", EX.ExMedidor], ["Ex-Linea", EX.ExLinea], ["Ex-Lupa", EX.ExLupa], ["Ex-Multitud", EX.ExMultitud], ["Ex-Reacciones", EX.ExReacciones]];
+const DEMOS: [string, React.FC][] = [["Ex-Cuerpo", EX.ExCuerpo], ["Ex-Grafico", EX.ExGrafico], ["Ex-Comparacion", EX.ExComparacion], ["Ex-Cortina", EX.ExComparacionCortina], ["Ex-Mapa", EX.ExMapa], ["Ex-Plano", EX.ExPlano], ["Ex-Causa", EX.ExCausa], ["Ex-Medidor", EX.ExMedidor], ["Ex-Linea", EX.ExLinea], ["Ex-Lupa", EX.ExLupa], ["Ex-Multitud", EX.ExMultitud], ["Ex-Reacciones", EX.ExReacciones], ["Ut-Catalogo1", UT.UtCatalogo1], ["Ut-Catalogo2", UT.UtCatalogo2], ["Ut-Inserto", UT.UtInserto], ["Ut-Inserto2", UT.UtInserto2], ["Ut-Encuadre", UT.UtEncuadre], ["Ut-Noche", UT.UtNoche], ["Ut-Lluvia", UT.UtLluvia], ["Ut-Amanecer", UT.UtAmanecer], ["Ut-Escena", UT.UtEscena]];
 
 const Root = () => (
   <>
