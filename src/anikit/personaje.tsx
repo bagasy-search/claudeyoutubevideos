@@ -170,7 +170,8 @@ export const mezclaExpr = (a: Expr, b: Expr, t: number): Expr => {
 
 // claves en el tiempo: cada tramo llega con resorte (inercia leve, sin rebote exagerado)
 export type ClaveT<T> = { f: number; v: T; d?: number };
-export const enTiempo = <T,>(cl: ClaveT<T>[], f: number, fps: number, mezcla: (a: T, b: T, t: number) => T, rigidez = 120): T => {
+// 26-oct (ojo: tirones de brazos en 2-3 cuadros): rigidez 120→80 = amortiguamiento crítico, el gesto tarda ~7 cuadros y no rebota
+export const enTiempo = <T,>(cl: ClaveT<T>[], f: number, fps: number, mezcla: (a: T, b: T, t: number) => T, rigidez = 80): T => {
   let v = cl[0].v;
   for (let i = 1; i < cl.length; i++) {
     const k = cl[i];
