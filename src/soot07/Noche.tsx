@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, interpolate, Easing } from "remotion";
-import { CamaraMano } from "../kits/camara/CamaraMano";
+import { Mano2D as CamaraMano } from "./Mano2D";
 import { C, ent, fontFamily, Chip, Grande, Emote } from "./kit";
 import { Persona, LUCIUS, CIVIL, Ropa, Expr } from "./persona";
 import { ICO } from "./iconos";
