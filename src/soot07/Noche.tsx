@@ -76,6 +76,9 @@ const ASOM: As[] = [
 const FIESTA = [{ x: X(M.t1) - 200, v: 0, seed: 11, t0: M.t1 + 0.6, t1: M.puerta + 1.5, h: 240, expr: "feliz" as Expr }, { x: X(M.t1) + 420, v: 0, seed: 12, t0: M.t1 + 0.9, t1: M.puerta + 1.5, h: 250, expr: "feliz" as Expr }];
 const xMul = X(M.multitud);
 const MULTITUD = Array.from({ length: 11 }, (_, i) => ({ x: xMul + (i % 2 ? 1900 : -1500) + i * 90, v: i % 2 ? -(120 + i * 9) : 110 + i * 8, seed: 20 + i, t0: M.multitud - 0.4 + (i % 4) * 0.4, t1: M.casaPeligro - 0.5, h: 220 + (i % 3) * 25, expr: (i % 3 ? "neutro" : "feliz") as Expr }));
+// OJO v3: trampa VII: los vecinos huyen del fuego (corren hacia la izquierda, con miedo)
+const xHuye = X(M.huye);
+const HUIDA = Array.from({ length: 9 }, (_, i) => ({ x: xHuye + 700 + (i % 3) * 260 + i * 70, v: -(360 + (i % 4) * 40), seed: 140 + i, t0: M.huye - 0.6 + i * 0.35, t1: M.huye + 5.5 + i * 0.35, h: 225 + (i % 3) * 20, expr: "miedo" as Expr }));
 const TRANSEUNTE = [{ x: XS + 1100, v: -130, seed: 31, t0: M.cayo - (640 / 130), t1: M.cayo + 0.02, h: 250 }, { x: XS + 460, v: -40, seed: 31, t0: M.cayo, t1: M.limpia + 3, h: 250, expr: "sorpresa" as Expr }];
 
 // ═════ estado del protagonista ═════
@@ -427,6 +430,7 @@ export const Noche: React.FC = () => {
             <Gente t={t} lista={FIESTA} />
             <Gente t={t} lista={MULTITUD} />
             <Gente t={t} lista={TRANSEUNTE} />
+            <Gente t={t} lista={HUIDA} />
             {/* el abogado que le pone precio a tu cráneo */}
             {en(t, M.abogado - 0.2, M.martes) && <Persona x={X0 - 290} y={0} h={H * 1.02} t={t} seed={5} ropa={{ ...CIVIL(2), tunica: "#f2ead8", tunica2: "#c9bfa8" }} expr={t > M.cae ? "sorpresa" : "orgullo"} habla={en(t, M.abogado, M.cae)} aparece={M.abogado} bD={70} cD={60} salta={M.cae} />}
             {/* anfitrión de la cena en la villa */}
