@@ -85,10 +85,12 @@ _dur = lambda f: float(subprocess.check_output(["ffprobe", "-v", "error", "-show
 CLN = {f[2:-4]: _dur(PUB + f) for f in os.listdir(PUB) if f.startswith("c_") and f.endswith(".mp4")}
 RATE = {k: 0.55 for k in CLN if k[0] == "c" and k[1:].isdigit()}   # agnes (~2,7 s, sin audio): cámara lenta en el render
 CLN = {k: v / RATE.get(k, 1) for k, v in CLN.items()}
+TRA = json.load(open(f"D:/rtmp_{SLUG}/ltx_tramos.json"))
 OFF, SRC = {}, {}   # LTX 25-oct: v01 (28 s, 3 tomas con corte) -> v01_1/_2/_3, cada una anclada a su frase
 for k in [k for k in CLN if k[0] == "v" and k[1:].isdigit()]:
-    for j, (o, l) in enumerate([(0.2, 9.4), (10.2, 8.4), (19.2, 8.4)], 1):
-        if CLN[k] >= o + l: CLN[f"{k}_{j}"] = l; OFF[f"{k}_{j}"] = o; SRC[f"{k}_{j}"] = k
+    for j in (1, 2, 3):   # sólo el tramo LIMPIO de cada toma (ltx_tramos.json de tramos_av.py); <2 s = afuera
+        o, l = TRA.get(f"{k}_{j}", (0, 0))
+        if l >= 2 and CLN[k] >= o + l: CLN[f"{k}_{j}"] = l; OFF[f"{k}_{j}"] = o; SRC[f"{k}_{j}"] = k
     del CLN[k]
 # ---------------- planos: cada foto (cNN, con su clip agnes si llegó) y cada clip LTX en SU frase ----------------
 SH = [
