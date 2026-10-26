@@ -40,3 +40,12 @@ export const Rotulo: React.FC<{ texto: string; x: number; y: number; desde: numb
     </div>
   );
 };
+
+// ACCIÓN real (no respiración): alterna poses de trabajo/gesto entre los cuadros locales f0 y f1, una cada `cada` cuadros.
+// Ej.: palear = gestos(0, l(200), ["agacharse", "tirarSuelta"], 14); hablar = gestos(0, l(50), ["hablar", "manosCintura", "pensar"], 24).
+export const gestos = (f0: number, f1: number, lista: (string | Record<string, number>)[], cada = 18, fin?: string) => {
+  const out: { f: number; v: any }[] = [];
+  for (let f = f0, i = 0; f < f1; f += cada, i++) out.push({ f, v: lista[i % lista.length] });
+  if (fin) out.push({ f: f1, v: fin });
+  return out;
+};
