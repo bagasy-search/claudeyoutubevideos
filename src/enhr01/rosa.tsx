@@ -106,7 +106,7 @@ export const Cinco: React.FC<{ t: number; at: number; out: number; title?: strin
   const k = K(spr(t, at, 0.8));
   return (
     <div style={{ position: "absolute", inset: 0, opacity: o }}>
-      <div style={{ position: "absolute", left: 0, right: 0, top: y - 330, height: 560, background: "linear-gradient(180deg, rgba(20,17,15,0), rgba(20,17,15,.62) 30%, rgba(20,17,15,.62) 72%, rgba(20,17,15,0))" }} />
+      <div style={{ position: "absolute", left: 0, right: 0, top: 150, height: 900, background: "linear-gradient(180deg, rgba(20,17,15,0), rgba(20,17,15,.62) 18%, rgba(20,17,15,.62) 85%, rgba(20,17,15,0))" }} />
       {title && <div style={{ position: "absolute", left: 0, right: 0, top: 90, textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: 38, letterSpacing: 10, color: RO.azulejo2, textShadow: "0 3px 14px rgba(0,0,0,.9)", opacity: k }}>{title}</div>}
       {items.map((it, i) => {
         const q = K(spr(t, it.at, 0.8)), rot = [-3, 2.5, -1.5, 3, -2][i % 5], yy = 210 + i * 158, xx = 960 + [-60, 70, -30, 50, -10][i % 5];

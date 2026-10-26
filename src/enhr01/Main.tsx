@@ -86,7 +86,7 @@ const Piece: React.FC<{ o: O; t: number }> = ({ o, t }) => {
     case "big": return <BigNum t={t} at={o.a} out={o.b} text={p.text} sub={p.sub} x={p.x} y={p.y} size={p.size ?? 220} col={p.col} />;
     case "stamp": return <Stamp t={t} at={o.a} out={o.b} text={p.text} x={p.x ?? 960} y={p.y ?? 540} size={p.size ?? 100} col={p.col} rot={p.rot} />;
     case "chips": return <Chips t={t} at={o.a} out={o.b} items={p.items} y={p.y} />;
-    case "guia": return <GuideCTA t={t} at={o.a} out={o.b} pag={p.pag} note={p.note} />;
+    case "guia": return <GuideCTA t={t} at={o.a} out={o.b} pag={p.pag} note={p.note} tapa={p.tapa} kicker={p.kicker} />;
     case "comment": return <Comment t={t} at={o.a} typeAt={p.typeAt ?? o.a + 0.4} out={o.b} text={p.text} x={p.x ?? 960} y={p.y ?? 860} />;
     case "lower": return <LowerThird t={t} at={o.a} out={o.b} name={p.name} l2={p.l2} l2at={o.a + 0.5} />;
     case "x": return <DrawX t={t} at={o.a} x={p.x} y={p.y} w={p.w} h={p.h} />;

@@ -129,7 +129,7 @@ B("Catholics, Baptists, Jewish families", "img:n16", "cut", why="rosario, Biblia
 B("Nobody dies alone", "img:n17", "cut", why="dos manos juntas")
 O("Nobody dies alone, and nobody's family is alone either", "stamp", 3.2, text="NOBODY DIES ALONE", col=LILA, rot=-3, x=960, y=820, size=70)
 B("So whatever you see, call your hospice nurse", "img:r16", "cut", why="Rosa llama por teléfono")
-O("So whatever you see, call your hospice nurse", "stamp", 3.0, text="CALL YOUR HOSPICE NURSE", col=ROJO, rot=-4, x=1300, y=820, size=64)
+O("So whatever you see, call your hospice nurse", "stamp", 3.0, text="CALL YOUR HOSPICE NURSE", col=ROJO, rot=-4, x=1400, y=975, size=56)  # QC clips: bajo la barbilla de r16 → abajo
 B("at two in the morning too", "img:n18", "cut", why="el celular en la mesa de luz")
 B("From the chair", "img:r11", "fade", why="Rosa en la silla con la libreta")
 B("subscribe, so you can find me again when you need me", "img:r12", "cut", why="Rosa lee en la mesa")
@@ -226,7 +226,7 @@ B("That's what the night line is for", "img:n61", "cut", why="el teléfono de no
 B("They correct them", "fill", "cut", why="corrigen")
 B("Ramiro's been dead for seventy years", "img:n62", "cut", why="las chapas del ejército")
 B("So don't correct. Ask", "img:r22", "cut", why="Rosa pregunta junto a la cama")
-O("So don't correct. Ask", "stamp", 2.8, text="DON'T CORRECT. ASK.", col=AZ, rot=-4, x=1300, y=330, size=80)
+O("So don't correct. Ask", "stamp", 2.8, text="DON'T CORRECT. ASK.", col=AZ, rot=-4, x=1480, y=900, size=76)  # QC clips: le tapaba la cara en r22 → sobre la espalda del hijo
 O("who's here, Dad?", "chips", 4.6, items=[{"at": "who's here, Dad?", "tx": "WHO'S HERE, DAD?"}, {"at": "What is Ramiro saying?", "tx": "WHAT IS HE SAYING?"}, {"at": "Does he look good?", "tx": "DOES HE LOOK GOOD?"}], y=880)
 B("Does he look good?", "img:n63", "cut", why="la mano que señala el rincón")
 B("her father told her about Korea", "img:n64", "cut", why="la foto de Corea")
@@ -248,7 +248,7 @@ B("Where is my suitcase?", "img:n69", "cut", why="la valija en el placard")
 B("Did you find my passport?", "img:n70", "cut", why="el pasaporte")
 B("The train leaves soon", "img:n71", "cut", why="el andén")
 B("you can't even walk to the bathroom", "img:n72", "cut", why="el andador")
-O("Rosa, he's not confused", "dicho", 5.6, text="He's not confused. He's telling you he's leaving. Give the man his suitcase.", who="Lola Benavides")
+O("Rosa, he's not confused", "dicho", 5.6, text="He's not confused. He's telling you he's leaving. Give the man his suitcase.", who="Lola Benavides", x=1000, y=650, w=1180)  # QC clips: centrada le tapaba la cara a Rosa en r24 → más abajo (y 850 se cortaba)
 B("Rosa, he's not confused", "bk:n73", "zoom", why="el dicho de Lola")
 B("His wife brought the old brown suitcase", "img:r24", "cut", why="Rosa deja la valija al pie de la cama")
 B("Mr. Vogel looked at it and he smiled", "img:n74", "cut", why="la mano sobre la valija")
@@ -292,13 +292,15 @@ B("Like something heavy just fell off of him", "img:n96", "fade", why="la mano q
 # Respiro a mitad de camino
 B("Okay, take a breath with me, mija", "img:r29", "cut", why="Rosa respira")
 B("Drink some water", "img:n97", "cut", why="el vaso de agua")
-O("We're halfway there", "libreta", 6.4, title="So far", rows=[
+O("We're halfway there", "libreta", 5.9, title="So far", rows=[
     {"at": "We're halfway there", "tx": "1 · they sleep more", "ok": "We're halfway there"},
     {"at": "We're halfway there", "tx": "2 · eat and drink less"},
     {"at": "We're halfway there", "tx": "3 · talk to people we can't see"},
     {"at": "the next four are the ones", "tx": "4 · talk about a trip"},
     {"at": "the next four are the ones", "tx": "5 · finish their business"}])
 B("The last one is the one almost nobody does", "fill", "cut", why="la promesa")
+# CTA de la guía (26-oct, Hotmart LISTA): tapa 3D del libro 1 que se abre en la tabla real «lo que paga sola la familia vs. hospice»
+O("And remember what I said at the start", "guia", 6.4, pag="m5", tapa="tapa", note="What Medicare already pays for")
 
 # =====================================================================================================================
 # NÚMERO 6 · MANOS QUE BUSCAN
@@ -322,7 +324,7 @@ O("that belonged to her mother", "foto", 4.2, src="enhr01/img/n106.jpg", pie="Ma
 B("keep the room calm. Soft light", "img:n107", "fade", why="la lamparita")
 B("The radio low, with the music they love", "img:r32", "cut", why="Rosa prende la radio")
 B("For my mother it was Pedro Infante", "img:n108", "cut", why="el disco")
-O("For my mother it was Pedro Infante", "chips", 5.2, items=[{"at": "Pedro Infante", "tx": "PEDRO INFANTE"}, {"at": "it was gospel", "tx": "GOSPEL"}, {"at": "old German songs", "tx": "OLD GERMAN SONGS"}], y=880)
+O("For my mother it was Pedro Infante", "chips", 5.2, items=[{"at": "Pedro Infante", "tx": "PEDRO INFANTE"}, {"at": "Washington, it was gospel", "tx": "GOSPEL"}, {"at": "played old German songs", "tx": "OLD GERMAN SONGS"}], y=880)
 B("For Mrs. Washington, it was gospel", "img:n109", "cut", why="el casete y el abanico de iglesia")
 B("old German songs on a little cassette player", "img:n110", "cut", why="el grabadorcito")
 O("The room matters, honey", "stamp", 2.6, text="THE ROOM MATTERS", col=LILA, rot=-3, x=1300, y=330, size=80)
@@ -413,6 +415,8 @@ O("First. Write down the names", "big", 3.2, text="1", sub="WRITE DOWN THE NAMES
 B("today it's the only record that exists of her uncle", "img:n144", "cut", why="la libreta con la foto del tío")
 B("put the night number on the refrigerator", "img:r41", "cut", why="Rosa pega la tarjeta en la heladera")
 O("put the night number on the refrigerator", "tarjeta", 7.4, kicker="HOSPICE NIGHT LINE", title="Call. Any hour.", dato="24/7", mano="You're not bothering anybody.")
+# 2º momento de la guía: «7 days a week, and you are allowed to use it» → el libro 1 abierto en «The team Medicare already pays for»
+O("7 days a week, and you are allowed to use it", "guia", 9.6, pag="m20", tapa="tapa", kicker="BOOK 1 OF 5 · MEDICARE ALREADY PAYS FOR THIS", note="The team you're allowed to call")
 B("I didn't know who to call", "img:n145", "cut", why="la heladera con la tarjeta")
 B("we wish we had called sooner", "img:n146", "cut", why="el celular y el café frío")
 B("And third. Say one of the five things today", "img:r42", "cut", why="Rosa toma la mano")
@@ -583,7 +587,9 @@ for o in OVS:
                     if isinstance(it.get(kk2), str):
                         v2 = T(it[kk2], o["a"]); it[kk2] = v2 if v2 is not None and v2 < o["b"] else round(o["a"] + 1.2 + 0.7 * o[lk].index(it), 2)
                 if isinstance(it.get("at"), str):
-                    a = T(it["at"], o["a"]); it["at"] = a if a is not None and a < o["b"] else round(o["a"] + 0.6 + 0.7 * o[lk].index(it), 2)
+                    a = T(it["at"], o["a"])
+                    if a is not None and a < o["b"] + 6 and lk == "items": o["b"] = max(o["b"], round(a + 1.8, 2))  # QC 26-oct: el chip que se dice más tarde estira la pieza
+                    it["at"] = a if a is not None and a < o["b"] else round(o["a"] + 0.6 + 0.7 * o[lk].index(it), 2)
     for dk in ("route", "total", "sello"):
         if dk in o and isinstance(o[dk].get("at"), str):
             a = T(o[dk]["at"], o["a"]); o[dk]["at"] = a if a is not None and a < o["b"] else round(o["b"] - 1.6, 2)
@@ -600,7 +606,7 @@ nv = []
 for o in sorted(ov, key=lambda o: o["a"]):
     a, b = o["a"], o["b"]
     if o["k"] == "libreta" and (o.get("x") or 1500) >= 1400:  # QC 26-oct: la libreta va a la derecha (x 1500) y no le tapa la cara → puede ir sobre el avatar
-        nv.append(o); continue
+        nv.append({**o, "a0": o["a"]}); continue
     for _ in range(3):
         w = next((w for w in AVW if a < w["me"] and b > w["ms"]), None)
         if not w: break

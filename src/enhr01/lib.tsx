@@ -203,15 +203,16 @@ export const Bulb: React.FC<{ t: number; at: number; off: number; out: number; x
 };
 
 // fichas numeradas 3D (los pasos que vienen)
-export const Chips: React.FC<{ t: number; at: number; items: string[]; out: number; y?: number }> = ({ t, at, items, out, y = 760 }) => (
-  <div style={{ position: "absolute", left: 0, right: 0, top: y, display: "flex", justifyContent: "center", gap: 34, perspective: 1200 }}>
-    {items.map((it, i) => {
-      const a = at + i * 0.17, k = Math.min(1.1, spr(t, a)), o = e(t, a, a + 0.1) * (1 - e(t, out + i * 0.05, out + i * 0.05 + 0.25));
+export const Chips: React.FC<{ t: number; at: number; items: (string | { at: number; tx: string })[]; out: number; y?: number }> = ({ t, at, items, out, y = 760 }) => (
+  <div style={{ position: "absolute", left: 60, right: 60, top: y, display: "flex", justifyContent: "center", gap: 28, perspective: 1200 }}>
+    {items.map((raw, i) => {
+      const it = typeof raw === "string" ? raw : raw.tx;  // {at, tx}: cada chip entra en SU palabra
+      const a = typeof raw === "string" ? at + i * 0.17 : raw.at, k = Math.min(1.1, spr(t, a)), o = e(t, a, a + 0.1) * (1 - e(t, out + i * 0.05, out + i * 0.05 + 0.25));
       return (
-        <div key={i} style={{ opacity: o, transform: `translateY(${(1 - Math.min(1, k)) * 120}px) rotateX(${(1 - Math.min(1, k)) * 70}deg) rotateY(${(i - 1.5) * -6}deg)`, width: 210, padding: "18px 0 14px", borderRadius: 18,
+        <div key={i} style={{ opacity: o, transform: `translateY(${(1 - Math.min(1, k)) * 120}px) rotateX(${(1 - Math.min(1, k)) * 70}deg) rotateY(${(i - (items.length - 1) / 2) * -6}deg)`, minWidth: 210, maxWidth: 420, padding: "18px 26px 14px", borderRadius: 18,
           background: "linear-gradient(180deg, rgba(20,32,52,.95), rgba(10,16,28,.95))", boxShadow: `0 26px 50px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.18), 0 0 0 2px ${COL.ice}55`, textAlign: "center", fontFamily: FONT }}>
           <div style={{ fontWeight: 900, fontSize: 84, color: COL.ice, lineHeight: 1, textShadow: extrude(6, "#0a2a40") }}>{i + 1}</div>
-          <div style={{ fontWeight: 800, fontSize: 24, color: COL.ink, letterSpacing: 4, marginTop: 6 }}>{it}</div>
+          <div style={{ fontWeight: 800, fontSize: 24, color: COL.ink, letterSpacing: 3, marginTop: 6, lineHeight: 1.25 }}>{it}</div>
         </div>
       );
     })}
