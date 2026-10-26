@@ -4,6 +4,7 @@ import { Persona, CIVIL } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Cielo, Estrellas, Astro, Colinas, Chip, Grande, Pergamino, Pluma, Pan, Mesa, Particulas, Rayos, Frente, Emote, cabeza } from "./kit";
 import { Gladius, Escudo, Poste, Pilum, Armadura, Mula, Comida, Soldadito, Craneo, Trampas, Calor } from "./kit2";
 import { Cuenta } from "./P1";
+import { Campamento, Interior, Ruta, Valle, Campo, Tablero, pose } from "./kit3";
 
 // Parte 2 (163,26-253,76 s): trampa 2, el entrenamiento.
 const pp = (h: number, cy: number) => cy + 450 * (h / 560);
@@ -20,15 +21,21 @@ const Olas: React.FC<{ t: number; y: number }> = ({ t, y }) => (
     })}
   </svg>
 );
-// caballo de madera para el salto (los romanos practicaban sobre uno)
+// caballo de madera para el salto (los romanos practicaban sobre uno): cuerpo de barril, cuello, cabeza con orejas y crin
 const CaballoMadera: React.FC<{ x: number; y: number; s?: number }> = ({ x, y, s = 1 }) => (
-  <svg style={{ position: "absolute", left: x - 300 * s, top: y - 360 * s, overflow: "visible" }} width={600 * s} height={360 * s} viewBox="-300 -360 600 360">
+  <svg style={{ position: "absolute", left: x - 300 * s, top: y - 460 * s, overflow: "visible" }} width={600 * s} height={460 * s} viewBox="-300 -460 600 460">
     {[-200, -150, 150, 200].map((xx, i) => <rect key={i} x={xx - 16} y={-150} width={32} height={150} rx={6} fill="#7a4a1a" transform={`rotate(${i < 2 ? 8 : -8} ${xx} -150)`} />)}
-    <rect x={-240} y={-230} width={480} height={100} rx={40} fill="#a8783a" />
-    <rect x={-240} y={-230} width={480} height={30} rx={15} fill="#c9a46a" />
-    <path d="M 210 -220 L 290 -340 L 330 -320 L 270 -200 Z" fill="#a8783a" />
-    <path d="M 290 -340 L 360 -330 L 350 -300 L 320 -310 Z" fill="#8a5a2a" />
-    <rect x={-60} y={-250} width={120} height={30} rx={10} fill={C.rojo} />
+    <path d="M -240 -200 Q -300 -170 -290 -90 Q -270 -120 -250 -150 Z" fill="#5a3418" />
+    <rect x={-250} y={-240} width={500} height={110} rx={55} fill="#a8783a" />
+    <rect x={-240} y={-236} width={480} height={30} rx={15} fill="#c9a46a" />
+    <path d="M 170 -230 Q 200 -330 250 -380 L 320 -350 Q 270 -300 250 -200 Z" fill="#a8783a" />
+    <path d="M 186 -250 Q 206 -330 250 -380" stroke="#5a3418" strokeWidth={18} fill="none" strokeLinecap="round" strokeDasharray="14 10" />
+    <ellipse cx={310} cy={-370} rx={78} ry={44} fill="#a8783a" transform="rotate(28 310 -370)" />
+    <ellipse cx={360} cy={-340} rx={30} ry={24} fill="#8a5a2a" transform="rotate(28 360 -340)" />
+    <path d="M 270 -410 L 262 -460 L 296 -420 Z" fill="#8a5a2a" />
+    <circle cx={306} cy={-388} r={9} fill="#2a1a10" />
+    <path d="M -70 -246 Q 0 -280 70 -246 L 60 -220 L -60 -220 Z" fill={C.rojo} />
+    {[-90, 0, 90].map((xx) => <circle key={xx} cx={xx} cy={-186} r={8} fill="#5a3418" />)}
   </svg>
 );
 const Hito: React.FC<{ x: number; y: number; n: string }> = ({ x, y, n }) => (
@@ -39,26 +46,22 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
   <>
     {/* 044a · trampa número dos: el entrenamiento */}
     <Escena t={t} t0={163.26} t1={166.0} entra="corte" golpes={[163.48, 164.6]}>
-      <AbsoluteFill style={{ background: C.rojo }} />
-      <Rayos t={t} x={960} y={430} color="#fff" op={0.12} />
-      <Grande t={t} t0={163.48} text="TRAP #2" y={400} size={260} color="#fff" />
-      <Grande t={t} t0={164.6} text="THE TRAINING" y={650} size={120} color={C.oro} />
-      <Trampas t={t} t0={163.4} n={2} y={850} on="#2a1530" />
+      <Tablero t={t} t0={162.9} en={1} de={0} tAvanza={163.4} marca={164.4} hecho={1} />
+      <Chip t={t} t0={163.48} text="TRAP 2 OF 7" color={C.rojo} x={760} y={170} centro size={64} />
+      <Grande t={t} t0={164.6} text="THE TRAINING" x={900} y={400} size={130} />
     </Escena>
 
     {/* 044b · cuatro meses sos un tiro, un recluta, y tu trabajo es sufrir */}
     <Escena t={t} t0={166.0} t1={170.56} zoom={0.05} entra="barrido" golpes={[167.16, 169.68]}>
-      <Cielo tipo="polvo" />
-      <Rayos t={t} x={1500} y={300} op={0.1} />
-      <Astro x={1500} y={300} r={100} />
-      <Colinas capas={["#b9844a", "#9a6a34"]} base={620} seed={60} alto={70} />
-      <Suelo y={840} />
+      <Campamento t={t} dx={(t - 166) * 30} />
       <Calor t={t} y={620} op={0.25} />
-      <Persona x={760} y={pp(820, 560) + 30} h={820} t={t} seed={1} casco="legion" expr={t > 169.68 ? "triste" : t > 167.16 ? "miedo" : "neutro"} inclina={t > 169.68 ? 6 : 0} />
-      <Emote t={t} t0={169.8} tipo="sudor" {...L(760, pp(820, 560) + 30, 820)} s={1.3} />
-      <Emote t={t} t0={170.0} tipo="lagrimas" {...L(760, pp(820, 560) + 30, 820)} s={1.3} />
-      <Cuenta t={t} t0={165.9} t1={166.6} de={0} a={4} x={1450} y={540} size={260} color={C.oro} />
-      <Chip t={t} t0={166.1} text="MONTHS" color={C.violeta} x={1360} y={720} size={58} />
+      {/* calendario de 4 meses clavado en la torre, se tacha solo */}
+      <div style={{ position: "absolute", left: 1180, top: 760, display: "flex", gap: 10 }}>{Array.from({ length: 4 }, (_, i) => <div key={i} style={{ width: 70, height: 84, background: "#fff8ec", borderTop: `16px solid ${C.rojo}`, borderRadius: 8, fontFamily, fontWeight: 700, fontSize: 40, color: C.noche, textAlign: "center", lineHeight: "64px", position: "relative" }}>{i + 1}{t > 167.4 + i * 0.6 && <div style={{ position: "absolute", inset: 0, fontSize: 70, color: C.rojo, lineHeight: "70px" }}>✕</div>}</div>)}</div>
+      <Persona x={760} y={1020} h={680} t={t} seed={1} casco="legion" expr={t > 169.68 ? "triste" : t > 167.16 ? "miedo" : "neutro"} inclina={t > 169.68 ? 6 : 0} camina={t > 169.68 ? 0.6 : 0} />
+      <Emote t={t} t0={169.8} tipo="sudor" {...L(760, 1020, 680)} s={1.2} />
+      <Emote t={t} t0={170.0} tipo="lagrimas" {...L(760, 1020, 680)} s={1.2} />
+      <Cuenta t={t} t0={165.9} t1={166.6} de={0} a={4} x={1450} y={420} size={240} color={C.oro} />
+      <Chip t={t} t0={166.1} text="MONTHS" color={C.violeta} x={1360} y={590} size={58} />
       <Chip t={t} t0={167.16} text="TYRO = RECRUIT" color={C.teal} tinta={C.noche} x={160} y={140} size={60} />
       <Chip t={t} t0={169.68} text="NEW JOB: SUFFER" color={C.rojo} x={960} y={960} centro size={70} />
       <Particulas t={t} tipo="polvo" n={30} seed={61} />
@@ -66,9 +69,8 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 045 · dos veces por día, espada de madera y escudo de mimbre */}
     <Escena t={t} t0={170.56} t1={174.1} entra="iris" ix={960} iy={540} golpes={[172.3, 173.24]}>
-      <AbsoluteFill style={{ background: "linear-gradient(90deg, #4fb3e8 0%, #4fb3e8 50%, #2d1b69 50%, #2d1b69 100%)" }} />
-      <Astro x={480} y={200} r={80} />
-      <Astro x={1440} y={200} r={70} luna />
+      <Campamento t={t} hora={t < 172.3 ? "dia" : "noche"} tropa={false} />
+      <Persona x={960} y={1030} h={600} t={t} seed={1} casco="legion" expr="orgullo" {...pose("golpear", t, 1.4)} />
       <Gladius madera x={640} y={600} s={1.4} t={t} t0={172.06} rot={-20} />
       <Escudo mimbre x={1280} y={600} s={1.4} t={t} t0={173.12} rot={8} />
       <Chip t={t} t0={170.92} text="TWICE A DAY" color={C.ambar} tinta={C.noche} x={960} y={110} centro size={64} />
@@ -78,13 +80,13 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 046 · y pesan el doble que los de verdad */}
     <Escena t={t} t0={174.1} t1={178.3} zoom={0.05} entra="sube" golpes={[176.22]}>
-      <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #ff9a4d, #c2386a 60%, #4a1d5a)" }} />
+      <Campamento t={t} tropa={false} />
       {(() => {
-        const h = 1050, y = pp(h, 600), x = 960, peso = prog(t, 176.22, 176.7);
+        const h = 780, y = 1040, x = 960, peso = prog(t, 176.22, 176.7);
         return <>
           <Persona x={x} y={y + peso * 30} h={h} t={t} seed={1} casco="legion" expr={peso > 0.5 ? "miedo" : "orgullo"} bD={interpolate(peso, [0, 1], [80, 25])} cD={50} bI={interpolate(peso, [0, 1], [70, 20])} cI={40} inclina={peso * 4} />
-          <Gladius madera x={x + 330} y={y - 520 + peso * 220} s={1.1} rot={-30 + peso * 50} />
-          <Escudo mimbre x={x - 330} y={y - 470 + peso * 200} s={1.1} rot={-4} />
+          <Gladius madera x={x + 250} y={y - 400 + peso * 200} s={0.9} rot={-30 + peso * 50} />
+          <Escudo mimbre x={x - 250} y={y - 360 + peso * 180} s={0.9} rot={-4} />
           <Emote t={t} t0={176.4} tipo="sudor" {...L(x, y, h)} s={1.6} />
         </>;
       })()}
@@ -95,17 +97,15 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 047-048 · pegarle al poste: cabeza, rodillas, costillas, hasta que los brazos no responden */}
     <Escena t={t} t0={178.3} t1={185.14} zoom={0.04} entra="corte" golpes={[178.84, 179.28, 179.92, 181.06, 181.74, 182.56]}>
-      <Cielo tipo="atardecer" />
-      <Astro x={1600} y={340} r={80} />
-      <Colinas capas={["#7a3a6a", "#5a2a5a"]} base={660} seed={62} alto={50} />
-      <Suelo y={860} a="#a8622c" b="#5a2a10" />
+      <Campamento t={t} hora="tarde" tropa={false} />
       <Poste x={1180} y={640} s={1.2} />
+      <Cuenta t={t} t0={178.4} t1={185.0} de={1} a={1247} x={1600} y={150} size={90} color="#fff" pre="HITS " />
       {(() => {
         const golpes = [178.84, 179.28, 179.92, 181.06, 181.74, 182.56];
         const ult = golpes.filter((g) => t >= g).pop() ?? 0;
         const sw = ult ? Math.exp(-(t - ult) * 9) : 0;
         const cansado = prog(t, 183.3, 184.2);
-        const h = 760, x = 760, y = pp(h, 560) + 40;
+        const h = 700, x = 760, y = 1030;
         const blanco = t >= 182.56 ? 470 : t >= 181.74 ? 720 : 300;
         return <>
           <Persona x={x} y={y} h={h} t={t} seed={1} casco="legion" expr={cansado > 0.3 ? "triste" : "enojado"} bD={interpolate(cansado, [0, 1], [110 - sw * 80, 10])} cD={interpolate(cansado, [0, 1], [30, 0])} inclina={cansado * 8} />
@@ -116,7 +116,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       })()}
       <Chip t={t} t0={179.28} text="AGAIN" color={C.ambar} tinta={C.noche} x={160} y={140} size={56} t1={179.9} />
       <Chip t={t} t0={179.92} text="AND AGAIN" color={C.ambar} tinta={C.noche} x={160} y={140} size={56} t1={180.9} />
-      <Chip t={t} t0={181.06} text="HEAD" color={C.rojo} x={1400} y={260} size={54} />
+      <Chip t={t} t0={181.06} text="HEAD" color={C.rojo} x={1400} y={300} size={54} />
       <Chip t={t} t0={181.74} text="KNEES" color={C.rojo} x={1400} y={700} size={54} />
       <Chip t={t} t0={182.56} text="RIBS" color={C.rojo} x={1400} y={470} size={54} />
       <Chip t={t} t0={183.6} text="ARMS STOP ANSWERING" color={C.violeta} x={960} y={980} centro size={56} />
@@ -142,10 +142,8 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 050 · saltar al caballo por los dos lados, espada en mano */}
     <Escena t={t} t0={188.08} t1={192.54} zoom={0.04} entra="barrido" golpes={[188.52, 189.92, 191.26]}>
-      <Cielo tipo="polvo" />
-      <Colinas capas={["#b9844a", "#9a6a34"]} base={640} seed={63} alto={60} />
-      <Suelo y={860} />
-      <CaballoMadera x={960} y={860} s={1.3} />
+      <Campamento t={t} tropa={false} />
+      <CaballoMadera x={960} y={940} s={1.3} />
       {(() => {
         const lado = t < 189.92 ? -1 : 1;
         const t0 = t < 189.92 ? 188.52 : 189.92;
@@ -166,21 +164,19 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 051 · el pilum, jabalina pesada con cuello largo de hierro */}
     <Escena t={t} t0={192.54} t1={196.5} zoom={0.05} entra="diag" golpes={[193.38, 195.4]}>
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, #2d1b69, #7a2f8f)" }} />
-      <Estrellas t={t} n={40} seed={65} alto={600} />
-      <Rayos t={t} x={960} y={540} op={0.06} />
-      <Pilum x={interpolate(prog(t, 192.9, 193.5), [0, 1], [-500, 960])} y={500} s={1.6} rot={-6} />
+      <Campamento t={t} tropa={false} />
+      <Persona x={330} y={1030} h={620} t={t} seed={1} casco="legion" expr="orgullo" {...(t < 192.9 ? { bD: 160, cD: 20, bI: 50, cI: 30, inclina: -6 } : pose("lanzar", 0.9))} />
+      {t > 192.9 && <Pilum x={interpolate(prog(t, 192.9, 193.5), [0, 1], [420, 960])} y={interpolate(prog(t, 192.9, 193.5), [0, 1], [420, 500])} s={1.6} rot={-6} />}
       {t > 195.4 && <div style={{ position: "absolute", left: 1150, top: 380, width: 520, height: 240, borderRadius: 120, border: `10px solid ${C.ambar}`, transform: `scale(${ent(t, 195.4)})` }} />}
       <Chip t={t} t0={193.38} text="PILUM" color={C.rojo} x={160} y={140} size={72} />
       <Chip t={t} t0={194.08} text="HEAVY JAVELIN" color={C.violeta} x={160} y={260} size={56} />
-      <Chip t={t} t0={195.4} text="LONG IRON NECK" color={C.ambar} tinta={C.noche} x={1180} y={760} size={56} />
+      <Chip t={t} t0={195.4} text="LONG IRON NECK" color={C.ambar} tinta={C.noche} x={1180} y={700} size={56} />
     </Escena>
 
     {/* 052 · se dobla al pegar, para que no te la devuelvan */}
     <Escena t={t} t0={196.5} t1={200.56} zoom={0.04} entra="corte" golpes={[197.46, 198.78]}>
-      <Cielo tipo="atardecer" />
-      <Colinas capas={["#7a3a6a", "#5a2a5a"]} base={660} seed={66} alto={60} />
-      <Suelo y={860} a="#8a4a2a" b="#4a2418" />
+      <Valle t={t} />
+      <Persona x={230} y={1030} h={560} t={t} seed={1} casco="legion" expr="enojado" {...pose("lanzar", Math.min(0.75, Math.max(0, (t - 196.2) * 1.2)))} />
       {(() => {
         const vuela = prog(t, 196.6, 197.46);
         const dob = t > 197.46 ? Math.min(1, (t - 197.46) * 4) : 0;
@@ -188,21 +184,19 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
           <Soldadito x={1400} y={900} s={2.4} t={t} seed={3} enemigo />
           <Escudo x={1240} y={600} s={1} rot={-8} color="#5a3418" />
           {dob === 0
-            ? <Pilum x={interpolate(vuela, [0, 1], [-300, 1000])} y={interpolate(vuela, [0, 1], [300, 560])} s={1} rot={14} />
+            ? <Pilum x={interpolate(vuela, [0, 1], [300, 1000])} y={interpolate(vuela, [0, 1], [420, 560])} s={1} rot={14} />
             : <Pilum x={1010} y={580} s={1} rot={14} dobla={dob} />}
           <Emote t={t} t0={198.48} tipo="preg" x={1400} y={500} s={1.3} />
           <Emote t={t} t0={197.5} tipo="enojo" x={1400} y={520} s={1.2} />
         </>;
       })()}
-      <Chip t={t} t0={196.86} text="BENDS ON IMPACT" color={C.rojo} x={160} y={140} size={60} />
+      <Chip t={t} t0={196.86} text="BENDS ON IMPACT" color={C.rojo} x={700} y={190} size={60} />
       <Chip t={t} t0={198.78} text="CAN'T THROW IT BACK" color={C.violeta} x={960} y={970} centro size={60} />
     </Escena>
 
     {/* 053 · y después, aprendés a marchar */}
     <Escena t={t} t0={200.56} t1={202.5} entra="sube" banda={C.ambar} golpes={[201.64]}>
-      <Cielo tipo="dia" />
-      <Colinas capas={["#7fb06a", "#5a9050"]} base={640} seed={67} alto={60} dx={(t - 200.56) * 200} />
-      <Suelo y={860} />
+      <Ruta t={t} avance={(t - 200.56) * 420} />
       {Array.from({ length: 8 }, (_, i) => <Soldadito key={i} x={180 + i * 210} y={900 + (i % 2) * 20} s={1.6} t={t} seed={10 + i} avanza={1} />)}
       <Frente t={t} color="#2a3a1a" vel={260} seed={68} />
       <Grande t={t} t0={201.64} text="MARCH!" y={260} size={170} color="#fff" borde={C.rojo} />
@@ -233,18 +227,17 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 056 · unos 35 km antes del almuerzo */}
     <Escena t={t} t0={210.22} t1={213.48} entra="corte" golpes={[210.88, 212.6]}>
-      <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 50%, #ffd27a, #ff7a3d 60%, #c2386a)" }} />
-      <Rayos t={t} x={960} y={420} color="#fff" op={0.1} />
+      <Campamento t={t} tropa={false} />
       <Cuenta t={t} t0={210.88} t1={211.6} de={0} a={35} x={960} y={360} size={330} color="#fff" suf=" KM" />
       <Mesa x={1350} y={820} w={420} />
       <Pan x={1350} y={760} s={0.7} />
-      <Persona x={700} y={1080} h={520} t={t} seed={1} casco="legion" expr="dormido" inclina={interpolate(prog(t, 212.6, 213.2), [0, 1], [0, 30])} />
+      <Persona x={700} y={1030} h={560} t={t} seed={1} casco="legion" expr="dormido" inclina={interpolate(prog(t, 212.6, 213.2), [0, 1], [0, 30])} />
       <Chip t={t} t0={212.6} text="BEFORE LUNCH" color={C.violeta} x={960} y={620} centro size={70} />
     </Escena>
 
     {/* 057-058 · tres veces por mes, 10 millas de ida y 10 de vuelta con todo encima */}
     <Escena t={t} t0={213.48} t1={220.8} zoom={0.05} entra="diag" golpes={[213.64, 216.04, 217.18, 218.62]}>
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, #1b4a3a, #2a7a4a)" }} />
+      <Campo t={t} />
       <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
         <path d="M 260 760 C 600 460 1000 900 1660 520" stroke="#e8c88a" strokeWidth={46} fill="none" strokeLinecap="round" strokeDasharray="2 70" />
         <circle cx={260} cy={760} r={56} fill={C.rojo} stroke="#fff" strokeWidth={8} />
@@ -255,7 +248,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
         const u = t < 217.1 ? ida : 1 - vuelta;
         const bx = (s: number) => (1 - s) ** 3 * 260 + 3 * (1 - s) ** 2 * s * 600 + 3 * (1 - s) * s * s * 1000 + s ** 3 * 1660;
         const by = (s: number) => (1 - s) ** 3 * 760 + 3 * (1 - s) ** 2 * s * 460 + 3 * (1 - s) * s * s * 900 + s ** 3 * 520;
-        return <Persona x={bx(u)} y={by(u) + 20} h={300} t={t} seed={1} casco="legion" expr={t > 218.6 ? "triste" : "orgullo"} camina={1.8} flip={t > 217.1} />;
+        return <Persona x={bx(u)} y={by(u) + 20} h={360} t={t} seed={1} casco="legion" expr={t > 218.6 ? "triste" : "orgullo"} camina={1.8} flip={t > 217.1} />;
       })()}
       {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", left: 1400 + i * 120, top: 120, width: 90, height: 110, background: "#fff8ec", borderRadius: 12, border: "6px solid #2a1530", transform: `scale(${ent(t, 213.64 + i * 0.12)})`, fontFamily, fontWeight: 700, fontSize: 70, color: C.rojo, textAlign: "center", lineHeight: "100px" }}>✓</div>)}
       <Chip t={t} t0={213.8} text="3× A MONTH" color={C.violeta} x={160} y={140} size={60} />
@@ -266,7 +259,9 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 059 · si fallás, te cambian el trigo por cebada */}
     <Escena t={t} t0={220.8} t1={224.68} entra="barrido" golpes={[220.8, 223.78]}>
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, #8c1d34, #4a0f2a)" }} />
+      <Interior />
+      <AbsoluteFill style={{ background: "rgba(140,20,50,.25)" }} />
+      <Persona x={960} y={1040} h={520} t={t} seed={1} casco="legion" expr={t > 223.78 ? "triste" : "sorpresa"} {...pose("comer", t, 0.8)} />
       <Comida k="trigo" x={600} y={540} s={1.8} t={t} t0={222.0} />
       {t > 223.34 && <svg style={{ position: "absolute", left: 380, top: 320 }} width={440} height={440}><path d="M 40 40 L 400 400 M 400 40 L 40 400" stroke="#fff" strokeWidth={36} strokeLinecap="round" strokeDasharray={510} strokeDashoffset={510 * (1 - prog(t, 223.34, 223.6))} /></svg>}
       <Comida k="cebada" x={1320} y={540} s={1.8} t={t} t0={223.78} />
@@ -277,9 +272,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 060-061 · la cebada era comida de caballo: te alimentaban como a una mula */}
     <Escena t={t} t0={224.68} t1={231.2} zoom={0.05} entra="sube" golpes={[225.04, 228.96]}>
-      <Cielo tipo="atardecer" />
-      <Colinas capas={["#7a3a6a", "#5a2a5a"]} base={640} seed={70} alto={60} />
-      <Suelo y={860} a="#a8783a" b="#6b3a1f" />
+      <Campamento t={t} hora="tarde" tropa={false} />
       <Mula x={1300} y={760} s={1.3} t={t} />
       <Comida k="porridge" x={980} y={880} s={0.8} />
       <Comida k="cebada" x={1640} y={850} s={0.7} />
@@ -307,8 +300,9 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 064 · ejercicios = batallas sin sangre; batallas = ejercicios sangrientos */}
     <Escena t={t} t0={238.98} t1={243.86} entra="corte" golpes={[240.64, 242.7]}>
-      <AbsoluteFill style={{ background: t < 241.86 ? "linear-gradient(180deg, #2d1b69, #5b2bb5)" : "linear-gradient(180deg, #4a0f2a, #8c1d34)" }} />
-      <Rayos t={t} x={960} y={540} op={0.06} />
+      {t < 241.86 ? <Campamento t={t} /> : <Valle t={t} hora="tarde" />}
+      <AbsoluteFill style={{ background: t < 241.86 ? "rgba(27,18,64,.45)" : "rgba(120,10,30,.5)" }} />
+      {Array.from({ length: 6 }, (_, i) => <Soldadito key={i} x={260 + i * 280} y={1010} s={1.4} t={t + i * 0.2} seed={20 + i} enemigo={t > 241.86 && i % 2 === 1} />)}
       <Grande t={t} t0={240.04} text="DRILLS =" y={300} size={120} color="#fff" />
       <Grande t={t} t0={240.64} text="BLOODLESS BATTLES" y={440} size={110} color={C.teal} />
       <Grande t={t} t0={242.12} text="BATTLES =" y={660} size={120} color="#fff" />
@@ -317,15 +311,18 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 065 · no era un elogio */}
     <Escena t={t} t0={243.86} t1={245.88} entra="zoom" golpes={[244.92]}>
-      <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #7a2f8f, #1b1240)" }} />
-      <Persona x={960} y={pp(1100, 580)} h={1100} t={t} seed={130} ropa={CIVIL(7)} viejo expr="enojado" />
-      <Emote t={t} t0={244.3} tipo="enojo" {...L(960, pp(1100, 580), 1100)} s={1.8} />
+      <Interior />
+      <Mesa x={1180} y={800} w={520} />
+      <Pergamino x={1180} y={700} w={380} abre={1} lineas={5} />
+      <Persona x={760} y={1040} h={760} t={t} seed={130} ropa={CIVIL(7)} viejo expr="enojado" {...pose("escribir", t, 1.2)} />
+      <Emote t={t} t0={244.3} tipo="enojo" {...L(760, 1040, 760)} s={1.5} />
       <Chip t={t} t0={244.34} text="NOT A COMPLIMENT" color={C.rojo} x={960} y={960} centro size={70} />
     </Escena>
 
     {/* 066-067 · mil veces hecho, salvo la parte de morir */}
     <Escena t={t} t0={245.88} t1={253.76} zoom={0.06} entra="barrido" golpes={[248.64, 250.8, 252.6]}>
-      <AbsoluteFill style={{ background: t < 252.1 ? "linear-gradient(180deg, #1b4a3a, #2a7a4a)" : "linear-gradient(180deg, #1a0614, #4a0f2a)" }} />
+      <Campamento t={t} hora={t < 252.1 ? "dia" : "noche"} tropa={false} />
+      {t > 252.1 && <AbsoluteFill style={{ background: "rgba(90,10,30,.45)" }} />}
       {Array.from({ length: 24 }, (_, i) => (
         <div key={i} style={{ position: "absolute", left: 0, top: 0, opacity: t > 250.0 ? 1 : 0 }}>
           <Soldadito x={180 + (i % 8) * 220} y={360 + Math.floor(i / 8) * 260} s={0.9} t={t + i * 0.13} seed={40 + i} avanza={1} />

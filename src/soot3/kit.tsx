@@ -21,36 +21,50 @@ export const prog = (t: number, a: number, b: number) =>
 // ── escena: monta a sus hijos en [t0, t1 + SOLAPE) — la siguiente entra ENCIMA con su transición — y les aplica
 // un empuje de cámara sorteado (in/out, foco 35-65 %) + golpes de zoom en las palabras fuertes.
 export const SOLAPE = 0.34;
+// cámara de la escena activa: escala y foco en px. Chip y Grande la leen para quedar SIEMPRE dentro de la zona segura
+// (antes el empuje + golpes llegaban a x1,36 y sacaban de cuadro las chapitas de arriba/abajo).
+type Cam = { s: number; ox: number; oy: number };
+export const CamCtx = React.createContext<Cam>({ s: 1, ox: 960, oy: 540 });
+const SEG_X = 70, SEG_Y = 64;
+// devuelve la posición en coordenadas de la escena que cae dentro del cuadro seguro, dado el ancho/alto del bloque
+export const seguro = (cam: Cam, x: number, y: number, w: number, h: number, ancla: "izq" | "centro" = "centro") => {
+  const sx = cam.ox + (x - cam.ox) * cam.s, sy = cam.oy + (y - cam.oy) * cam.s;
+  const W = w * cam.s, H = h * cam.s;
+  const izq = ancla === "izq" ? sx : sx - W / 2;
+  const nx = Math.min(Math.max(izq, SEG_X), 1920 - SEG_X - W) + (ancla === "izq" ? 0 : W / 2);
+  const ny = Math.min(Math.max(sy, SEG_Y + H / 2), 1080 - SEG_Y - H / 2);
+  return { x: cam.ox + (nx - cam.ox) / cam.s, y: cam.oy + (ny - cam.oy) / cam.s };
+};
 export type Entrada = "iris" | "barrido" | "zoom" | "diag" | "corte" | "sube";
 const ENTRADAS: Entrada[] = ["iris", "barrido", "zoom", "diag", "corte", "sube", "barrido", "zoom"];
 export const Escena: React.FC<{ t: number; t0: number; t1: number; children: React.ReactNode; zoom?: number; seed?: number; fondo?: string; entra?: Entrada; golpes?: number[]; banda?: string; ix?: number; iy?: number }> = ({ t, t0, t1, children, zoom, seed, fondo = C.noche, entra, golpes = [], banda, ix = 960, iy = 540 }) => {
   if (t < t0 || t >= t1 + SOLAPE) return null;
   const r = rnd(seed ?? Math.round(t0 * 1000) + 3);
-  const vel = 0.018 + r() * 0.02;
-  const amp = zoom ?? Math.min(0.16, vel * (t1 - t0));
+  const vel = 0.012 + r() * 0.012;
+  const amp = Math.min(0.07, zoom ?? vel * (t1 - t0));
   const dentro = r() < 0.5;
   const ox = 35 + r() * 30, oy = 35 + r() * 30;
   const tipo = entra ?? ENTRADAS[Math.floor(r() * ENTRADAS.length)];
   const col = banda ?? [C.rojo, C.ambar, C.teal, C.violeta, C.rosa][Math.floor(r() * 5)];
   const u = interpolate(t, [t0, t1 + SOLAPE], [0, 1], { easing: Easing.inOut(Easing.sin) });
   const k = dentro ? u : 1 - u;
-  const golpe = golpes.reduce((a, g) => a + (t >= g ? 0.075 * Math.exp(-(t - g) * 7) : 0), 0);
+  const golpe = golpes.reduce((a, g) => a + (t >= g ? 0.045 * Math.exp(-(t - g) * 7) : 0), 0);
   // entrada (0 → 1 en ~0,32 s)
   const e = interpolate(t, [t0, t0 + 0.32], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
   let clip = "none", tr = "";
   let extra: React.ReactNode = null;
-  if (e < 1) {
-    if (tipo === "iris") clip = `circle(${e * 125}% at ${ix}px ${iy}px)`;
-    else if (tipo === "barrido") { tr = `translateX(${(1 - e) * 105}%)`; extra = <div style={{ position: "absolute", top: 0, bottom: 0, width: 140, left: `${(1 - e) * 105}%`, marginLeft: -140, background: col }} />; }
-    else if (tipo === "sube") { tr = `translateY(${(1 - e) * 105}%)`; extra = <div style={{ position: "absolute", left: 0, right: 0, height: 120, top: `${(1 - e) * 105}%`, marginTop: -120, background: col }} />; }
-    else if (tipo === "diag") { const p = e * 260 - 60; clip = `polygon(-10% -10%, ${p}% -10%, ${p - 60}% 110%, -10% 110%)`; }
-    else if (tipo === "zoom") tr = `scale(${1.6 - 0.6 * e})`;
-  }
-  const corteGolpe = tipo === "corte" ? 0.09 * Math.exp(-(t - t0) * 8) : 0;
+  // v4 (ojo director 26-oct): fuera iris/barridos/fundidos (dejaban franjas de color y dobles exposiciones). Toda entrada es
+  // un corte seco con empuje de cámara: la escena nueva entra 8 % más cerca y se asienta, motivada por el golpe de la frase.
+  if (e < 1 && tipo !== "corte") tr = `scale(${1.08 - 0.08 * e})`;
+  void ix; void iy; void col; void extra;
+  const corteGolpe = tipo === "corte" ? 0.05 * Math.exp(-(t - t0) * 8) : 0;
+  const esc = 1.02 + amp * k + golpe + corteGolpe;
   return (
     <>
-      <AbsoluteFill style={{ overflow: "hidden", backgroundColor: fondo, clipPath: clip, transform: tr, opacity: tipo === "zoom" ? Math.min(1, e * 2.2) : 1 }}>
-        <AbsoluteFill style={{ transformOrigin: `${ox}% ${oy}%`, transform: `scale(${1.04 + amp * k + golpe + corteGolpe})` }}>{children}</AbsoluteFill>
+      <AbsoluteFill style={{ overflow: "hidden", backgroundColor: fondo, clipPath: clip, transform: tr, opacity: 1 }}>
+        <AbsoluteFill style={{ transformOrigin: `${ox}% ${oy}%`, transform: `scale(${esc})` }}>
+          <CamCtx.Provider value={{ s: esc * 1.04, ox: ox * 19.2, oy: oy * 10.8 }}>{children}</CamCtx.Provider>
+        </AbsoluteFill>
       </AbsoluteFill>
       {extra && <AbsoluteFill style={{ pointerEvents: "none" }}>{extra}</AbsoluteFill>}
     </>
@@ -190,8 +204,11 @@ export const Colinas: React.FC<{ capas: string[]; base?: number; dx?: number; se
 );
 
 // ── chapita (CORNELL · 2015 de la ref)
-export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; color?: string; x: number; y: number; size?: number; centro?: boolean; tinta?: string }> = ({ t, t0, t1 = 1e9, text, color = C.violeta, x, y, size = 62, centro, tinta = "#fff" }) => {
+export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; color?: string; x: number; y: number; size?: number; centro?: boolean; tinta?: string }> = ({ t, t0, t1 = 1e9, text, color = C.violeta, x: x0, y: y0, size = 62, centro, tinta = "#fff" }) => {
+  const cam = React.useContext(CamCtx);
   if (t < t0 || t > t1 + 0.3) return null;
+  const ancho = text.length * size * 0.62 + size * 0.84, alto = size * 1.47;
+  const { x, y } = seguro(cam, x0, y0, ancho, alto, centro ? "centro" : "izq");
   const s = ent(t, t0, 0, { damping: 11, stiffness: 180 });
   const out = interpolate(t, [t1, t1 + 0.3], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
@@ -202,8 +219,10 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
   );
 };
 // texto grande con contorno (títulos)
-export const Grande: React.FC<{ t: number; t0: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string }> = ({ t, t0, text, x = 960, y, size = 150, color = C.crema, borde = C.noche }) => {
+export const Grande: React.FC<{ t: number; t0: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string }> = ({ t, t0, text, x: x0 = 960, y: y0, size = 150, color = C.crema, borde = C.noche }) => {
+  const cam = React.useContext(CamCtx);
   if (t < t0) return null;
+  const { x, y } = seguro(cam, x0, y0, text.length * size * 0.88, size * 1.15);
   const s = ent(t, t0, 0, { damping: 9, stiffness: 190 });
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${s})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}` }}>
