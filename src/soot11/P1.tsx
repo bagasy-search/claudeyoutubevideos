@@ -39,7 +39,7 @@ export const P1K: Llave[] = [
   [123.9, PT.espadaPared + 420, 575, 1.7, 0.5],
   [126.9, PT.espadaPared, 370, 3.0, 0.8],
   [129.4, PT.espadaPared, 560, 1.85, 0.6],
-  [133.1, PT.espadaPared, 700, 3.2, 0.6],
+  [133.1, PT.espadaPared - 90, 640, 1.9, 0.6],
   [137.8, PT.espadaPared, 640, 4.2, 0.6],
   [144.9, PT.espadaPared, 420, 5.2, 6.6],
   [146.2, 6730, 650, 1.6, 0.6],
@@ -49,7 +49,7 @@ export const P1K: Llave[] = [
   [158.0, 6800, 620, 1.4, 0.8],
   [161.4, 7350, 610, 1.3, 2.2],
 ];
-export const P1H: [number, number][] = [[59.6, 0], [162, 0]];
+export const P1H: [number, number][] = [[59.6, 0], [61.0, 0.35], [160.5, 0.35], [162, 0]];
 
 const Jaula: React.FC = () => (
   <g><rect x={-46} y={0} width={92} height={96} rx={14} fill="none" stroke="#7a4a20" strokeWidth={6} />{[-30, -10, 10, 30].map((d) => <line key={d} x1={d} y1={0} x2={d} y2={96} stroke="#7a4a20" strokeWidth={4} />)}<path d="M -46 0 Q 0 -50 46 0" fill="none" stroke="#7a4a20" strokeWidth={6} /></g>
@@ -160,11 +160,11 @@ export const P1Mundo: React.FC<{ t: number }> = ({ t }) => {
   return (
     <>
       {/* el brillo que baja por el acero mientras se lee el grabado */}
-      {vig(t, 138.0, 146.2) && <Espada x={PT.espadaPared} y={SUELO - 150} s={0.42} brillo={((t - 138.0) / 1.4) % 1} />}
+      {vig(t, 138.0, 146.2) && <Espada x={PT.espadaPared} y={SUELO - 150} s={0.42} brillo={((t - 138.0) / 1.4) % 1} texto={"WHEN I RAISE THIS SWORD".slice(0, Math.floor(clamp((t - 138.3) / 3.2, 0, 1) * 23))} />}
       <Tablon t={t} />
       {t >= 62.5 && <Franz x={x} y={SUELO - 10} t={t} flip={!sale} camina={sale && t < 160.6 ? 1.5 : 0}
-        expr={vig(t, 146.3, 149.3) ? "orgullo" : escribe ? "feliz" : "neutro"} mira={escribe ? -1 : 0} miraY={escribe ? 1 : 0}
-        bD={escribe ? 50 + Math.sin(t * 9) * 6 : 8} cD={escribe ? 70 : 10} viejoF={vig(t, 148.4, 149.6)}
+        expr={vig(t, 146.3, 149.3) ? "orgullo" : escribe ? "feliz" : vig(t, 129.3, 137.7) ? "orgullo" : "neutro"} mira={escribe ? -1 : 0} miraY={escribe ? 1 : 0}
+        bD={escribe ? 50 + Math.sin(t * 9) * 6 : vig(t, 129.3, 137.7) ? 125 + Math.sin(t * 3) * 6 : 8} cD={escribe ? 70 : vig(t, 129.3, 137.7) ? 20 : 10} habla={vig(t, 133.1, 137.6)} viejoF={vig(t, 148.4, 149.6)}
         manoD={escribe ? <g transform="rotate(-150)"><path d="M 0 0 Q -14 -60 6 -110 Q 20 -60 4 0 Z" fill="#fff6e8" /></g> : undefined} />}
       {adentro && <Ventana v={V_HOF} sepia={0.55}><Hof t={t} /></Ventana>}
       {adentro && <Ventana v={V_ARBOL}><Arbol t={t} /></Ventana>}
@@ -246,7 +246,7 @@ export const P1Pant: React.FC<{ t: number }> = ({ t }) => (
     <Sello t={t} t0={145.35} t1={146.2} text="COMFORTING." x={960} y={300} color={C.violeta} size={100} rot={-6} />
     <Cuenta t={t} t0={146.3} t1={149.3} de={0} a={45} dur={2.0} x={960} y={220} size={180} suf=" YEARS" color={C.ambar} />
     <Chip t={t} t0={149.4} t1={151.1} text="UNLIKE ALMOST EVERYONE ELSE..." color={C.violeta} x={960} y={150} centro size={54} />
-    <Titulo t={t} t0={151.3} t1={153.6} text="HE WROTE IT ALL DOWN" y={180} size={100} color={C.crema} />
+    <Chip t={t} t0={151.3} t1={153.6} text="HE WROTE IT ALL DOWN" color={C.noche} x={960} y={170} centro size={84} />
     {vig(t, 153.5, 157.8) && <Particulas t={t} tipo="destellos" n={24} seed={9} />}
     <Chip t={t} t0={153.7} t1={157.7} text="★ HIS JOURNAL SURVIVES ★" color={C.teal} tinta={C.noche} x={960} y={150} centro size={62} />
     <Chip t={t} t0={158.0} t1={161.9} text="RULE #1 OF YOUR NEW LIFE..." color={C.rojo} x={960} y={150} centro size={56} />

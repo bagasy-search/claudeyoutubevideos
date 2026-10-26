@@ -42,7 +42,7 @@ export const P7K: Llave[] = [
   [726.3, ATRAS, 620, 1.35, 0.9],
   [728.0, ATRAS - 40, 600, 1.7, 0.7],
 ];
-export const P7H: [number, number][] = [[645.1, 0], [721.0, 0], [722.2, 1], [725.6, 1], [726.4, 2], [729.3, 2]];
+export const P7H: [number, number][] = [[645.1, 0], [646.6, 0.6], [721.0, 0.6], [722.2, 1], [725.6, 1], [726.4, 2], [729.3, 2]];
 
 const Svg: React.FC<{ children: React.ReactNode }> = ({ children }) => <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>{children}</svg>;
 const Mosca: React.FC<{ t: number; x: number; y: number; i: number }> = ({ t, x, y, i }) => <circle cx={x + Math.sin(t * (5 + i) + i) * 40} cy={y + Math.cos(t * (6 + i) + i * 2) * 26} r={6} fill="#1d1430" />;
@@ -61,17 +61,36 @@ const PerroMuerto: React.FC<{ x: number; t: number; op?: number }> = ({ x, t, op
     <svg style={{ overflow: "visible" }}>{[0, 1, 2].map((i) => <Mosca key={i} t={t} x={0} y={-170} i={i} />)}</svg>
   </G>
 );
-const CaballoMuerto: React.FC<{ x: number; t: number }> = ({ x, t }) => (
-  <G x={x} y={SUELO - 6}>
-    <ellipse cx={0} cy={-70} rx={170} ry={64} fill="#8a5a3a" />
-    {[-110, -60, 60, 110].map((lx, k) => <g key={lx} transform={`rotate(${[-28, -10, 10, 28][k]} ${lx} -120)`}><rect x={lx - 13} y={-235} width={26} height={120} rx={11} fill="#7a4c30" stroke="#4a2a18" strokeWidth={4} /><rect x={lx - 15} y={-252} width={30} height={24} rx={6} fill="#2b1c14" /></g>)}
-    <path d="M -160 -90 L -250 -60 L -290 -90 L -260 -130 L -170 -120 Z" fill="#8a5a3a" />
-    <path d="M -170 -120 Q -200 -160 -160 -170" stroke="#3a2414" strokeWidth={16} fill="none" />
-    <svg style={{ overflow: "visible" }}><OjoX x={-240} y={-100} r={10} /></svg>
-    <path d="M 168 -80 q 60 0 70 50" stroke="#3a2414" strokeWidth={18} fill="none" strokeLinecap="round" />
-    <svg style={{ overflow: "visible" }}>{[0, 1, 2, 3].map((i) => <Mosca key={i} t={t} x={0} y={-230} i={i} />)}</svg>
-  </G>
-);
+// caballo muerto de costado, patas tiesas para arriba (lectura de dibujo animado), con crin, oreja, lengua y cola
+const CaballoMuerto: React.FC<{ x: number; t: number }> = ({ x, t }) => {
+  const L = "#4a2a18";
+  const pata = (bx: number, ang: number, k: number) => (
+    <g key={k} transform={`rotate(${ang} ${bx} -130)`}>
+      <path d={`M ${bx - 20} -120 L ${bx - 16} -230 L ${bx + 16} -230 L ${bx + 20} -120 Z`} fill="#a8703f" stroke={L} strokeWidth={6} strokeLinejoin="round" />
+      <path d={`M ${bx - 14} -232 L ${bx - 12} -320 L ${bx + 12} -320 L ${bx + 14} -232 Z`} fill="#9a6436" stroke={L} strokeWidth={6} strokeLinejoin="round" />
+      <path d={`M ${bx - 18} -320 L ${bx - 20} -352 L ${bx + 20} -352 L ${bx + 18} -320 Z`} fill="#2b1c14" />
+    </g>
+  );
+  return (
+    <G x={x} y={SUELO - 6}>
+      <ellipse cx={0} cy={4} rx={300} ry={22} fill="rgba(30,20,10,.28)" />
+      {[pata(-120, -24, 0), pata(-70, -8, 1), pata(80, 10, 2), pata(130, 26, 3)]}
+      {/* cola */}
+      {[0, 1, 2].map((i) => <path key={i} d={`M 190 -80 q ${50 + i * 8} ${-10 + i * 14} ${70 + i * 6} ${50 + i * 8}`} stroke="#3a2414" strokeWidth={14} fill="none" strokeLinecap="round" />)}
+      {/* cuerpo */}
+      <ellipse cx={0} cy={-85} rx={200} ry={84} fill="#a8703f" stroke={L} strokeWidth={7} />
+      <ellipse cx={10} cy={-60} rx={150} ry={40} fill="#c48a52" />
+      {/* cuello y cabeza apoyada en el piso */}
+      <path d="M -170 -120 Q -230 -120 -260 -80 L -360 -60 Q -400 -50 -400 -24 Q -398 2 -360 2 L -200 2 Q -170 -30 -150 -50 Z" fill="#a8703f" stroke={L} strokeWidth={7} strokeLinejoin="round" />
+      <ellipse cx={-385} cy={-22} rx={20} ry={14} fill="#7a4c30" />
+      {[0, 1, 2, 3, 4].map((i) => <path key={i} d={`M ${-175 - i * 22} ${-122 + i * 9} l -18 -30 l 16 4 Z`} fill="#3a2414" />)}
+      <path d="M -255 -86 L -246 -132 L -228 -92 Z" fill="#9a6436" stroke={L} strokeWidth={5} strokeLinejoin="round" />
+      <svg style={{ overflow: "visible" }}><OjoX x={-300} y={-52} r={12} /></svg>
+      <path d="M -370 2 q 6 26 26 22" fill="#e2706a" stroke="#8a2a2a" strokeWidth={4} />
+      <svg style={{ overflow: "visible" }}>{[0, 1, 2, 3].map((i) => <Mosca key={i} t={t} x={0} y={-230} i={i} />)}</svg>
+    </G>
+  );
+};
 const Carro: React.FC<{ x: number }> = ({ x }) => (
   <G x={x} y={SUELO}>
     <rect x={-160} y={-170} width={320} height={90} rx={8} fill="#7d4a24" stroke="#4a2810" strokeWidth={6} />

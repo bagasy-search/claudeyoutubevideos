@@ -45,7 +45,7 @@ export const P5K: Llave[] = [
   [531.6, 31450, 560, 0.75, 1.0],
   [534.0, 31450, 520, 0.6, 3.0],
 ];
-export const P5H: [number, number][] = [[445.8, 0], [531.5, 0], [535.5, 1], [537.8, 1]];
+export const P5H: [number, number][] = [[445.8, 0], [447.3, 0.5], [500.0, 0.5], [501.5, 0.15], [531.5, 0.15], [535.5, 1], [537.8, 1]];
 
 const Svg: React.FC<{ children: React.ReactNode }> = ({ children }) => <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>{children}</svg>;
 const Flores: React.FC = () => <g><line x1={0} y1={0} x2={0} y2={-70} stroke="#3a7a1a" strokeWidth={6} />{[[-18, -80, C.rosa], [14, -88, C.ambar], [0, -100, C.rojo]].map(([x, y, c], i) => <circle key={i} cx={x as number} cy={y as number} r={16} fill={c as string} />)}</g>;
@@ -167,7 +167,7 @@ export const P5Mundo: React.FC<{ t: number }> = ({ t }) => {
             const tieneEspada = (j: number) => t > 511.3 && t < 518.3 && Math.round(clamp((t - 511.3) / 3.4, 0, 1) * 5) === j;
             return (
               <React.Fragment key={gx}>
-                <Persona x={gx} y={SUELO - 10 + adelante * 30} h={[300, 320, 290, 330, 305, 270][i]} t={t} seed={670 + i} ropa={{ ...SANSON, tunica: ["#1d1430", "#2a1838", "#1d1430", "#341a3a", "#1d1430", "#2a1838"][i] }} gorro="verdugo" capa="#a3202f"
+                <Persona x={gx} y={SUELO - 10 + adelante * 30} h={[300, 320, 290, 330, 305, 270][i]} t={t} seed={670 + i} ropa={{ ...SANSON, tunica: ["#1d1430", "#5a2a6a", "#2a4a7a", "#7a2a2a", "#2a5a4a", "#6a4a1a"][i], tunica2: ["#0f0a1c", "#3a1a46", "#1a2e50", "#4e1a1a", "#1a3a30", "#4a3210"][i], cinto: ["#a3202f", "#c98f2a", "#1d1410", "#c98f2a", "#a3202f", "#1d1410"][i] }} gorro={(["verdugo", "noble", "verdugo", "capucha", "noble", "verdugo"] as const)[i]} capa={["#a3202f", "#2b0a14", "#c98f2a", "#1b2440", "#7a1f3d", "#3a2a1a"][i]}
                   barba={[ "#d8d2cc", "#9c958f", "#2a1a10", undefined, "#6a3a1a", undefined][i]} viejo={i < 2} aparece={t0} inclina={i < 2 ? 5 : 0}
                   bD={tieneEspada(i) ? 70 : i === 1 ? 40 + Math.sin(t * 2) * 10 : 15} cD={tieneEspada(i) ? 60 : 10} bI={i === 5 ? 120 : 15} habla={i === 4 && vig(t, 511, 514.8)} mira={i < 3 ? 1 : -1}
                   expr={i === 3 && vig(t, 520.7, 527.3) ? "miedo" : i === 0 && vig(t, 527.3, 531.6) ? "feliz" : i === 5 ? "sorpresa" : "orgullo"} flip={i === 0 && vig(t, 527.3, 531.6)} />

@@ -35,7 +35,7 @@ export const P4K: Llave[] = [
   [435.45, CASA, 400, 0.38, 1.0],
   [441.9, CASA, 580, 1.4, 0.9],
 ];
-export const P4H: [number, number][] = [[375.3, 0], [420.9, 0], [421.8, 1.6], [423.6, 1.6], [425.3, 0], [445.8, 0]];
+export const P4H: [number, number][] = [[375.3, 0], [376.8, 0.7], [420.9, 0.7], [421.8, 1.6], [423.6, 1.6], [425.3, 0], [445.8, 0]];
 
 const Svg: React.FC<{ children: React.ReactNode }> = ({ children }) => <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>{children}</svg>;
 const Mosca: React.FC<{ t: number; x: number; y: number; i: number }> = ({ t, x, y, i }) => <circle cx={x + Math.sin(t * (5 + i) + i) * 40} cy={y + Math.cos(t * (6 + i) + i * 2) * 26} r={6} fill="#1d1430" />;

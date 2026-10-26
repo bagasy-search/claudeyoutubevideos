@@ -42,9 +42,9 @@ export const abreCasaP0 = (t: number) => interp(t, [57.6, 58.6], [0, 1]);
 export const espadaP0 = (t: number) => t < 58.95;
 
 // pinchitos del mapa (orden = orden de las trampas)
-const PINES: [number, number, string][] = [[6620, "THE SWORD"], [8900, "TOUCH"], [3350, "THE SEAT"], [7300, "THE BRIDGE"], [950, "MARRIAGE"], [4800, "THE STAGE"], [11400, "DIRTY JOBS"]].map(([x, l], i) => [x as number, i, l as string]);
+const PINES: [number, number, string][] = [[950, "BLOOD"], [2650, "TOUCH"], [4350, "CHURCH"], [6050, "ADDRESS"], [7750, "MARRIAGE"], [9450, "STAGE"], [11150, "JOBS"]].map(([x, l], i) => [x as number, i, l as string]);
 // fila de cada pinchito (alto = 1) para que ninguno pise a otro ni al HUD
-const PIN_Y = (i: number) => SUELO - 1100 - [0, 0, 0, 1, 0, 1, 0][i] * 1600;
+const PIN_Y = (i: number) => SUELO - 1100 - (i % 2) * 1300;
 
 export const P0Mundo: React.FC<{ t: number }> = ({ t }) => {
   const caminaF = (a: number, b: number) => (t > a && t < b ? 1.5 : 0);
@@ -169,7 +169,7 @@ export const P0Mundo: React.FC<{ t: number }> = ({ t }) => {
           </svg>
           {PINES.map(([x, i, l]) => <Pin key={i} t={t} t0={43.2 + i * 0.8} x={x} y={PIN_Y(i)} n={i + 1} s={3.4} label={l} color={[C.rojo, C.violeta, C.ambar, C.teal, C.rosa, C.naranja, C.lima][i]} />)}
           {/* la espada al principio del camino y el sol que "baja" al final de la vida */}
-          {vig(t, 44.3, 53) && <Espada x={6620} y={SUELO - 2000} s={2.6 * clamp((t - 44.3) / 0.3, 0, 1)} rot={-20} />}
+          {vig(t, 44.3, 53) && <Espada x={950 + 620} y={SUELO - 300} s={1.3 * clamp((t - 44.3) / 0.3, 0, 1)} rot={-20} />}
         </>
       )}
 

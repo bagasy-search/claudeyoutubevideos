@@ -9,7 +9,7 @@ import { Franz, Gente, CartelTrampa, Sello, Titulo, BurbujaM, Cuenta, vig } from
 // ejecución). La versión Hollywood con capucha → la capucha vuela → el público: cientos, chicos en hombros, curas,
 // guardias, el concejo en el balcón → telón y reflector → si algo sale mal: piedras y a correr hasta el puente →
 // la estrategia de Franz: ni una gota → el diario: rápido, no cruel → 45 años en un timelapse de días y noches.
-const PLAZA = 4800, ESC = SUELO - 200;
+const PLAZA = 4800, ESC = SUELO - 340;
 const NOBLE: Ropa = { tunica: "#2b2140", tunica2: "#1b1530", cinto: C.oro, piel: "#e9b08a", piel2: "#c98f6a", pelo: "#d8d2cc" };
 const GUARDIA: Ropa = { tunica: "#a3202f", tunica2: "#5e0f1d", cinto: "#3b230f", piel: "#d99872", piel2: "#b06f4e", pelo: "#2a1a10" };
 const TIRAN = [4260, 4380, 4500, 5100, 5220, 5340];
@@ -81,7 +81,7 @@ export const P6Mundo: React.FC<{ t: number }> = ({ t }) => {
             </>
           )}
           {/* el cadalso (siempre vacío) con telón y reflector */}
-          <Cadalso x={PLAZA} y={SUELO} w={520} />
+          <Cadalso x={PLAZA} y={SUELO} w={520} alto={340} />
           {telon > 0 && (
             <>
               <Svg>
@@ -137,12 +137,12 @@ export const P6Mundo: React.FC<{ t: number }> = ({ t }) => {
       {vig(t, 605, 646) && (
         <>
           {t < 622.7 && ["#2a5a9a", "#2a7a4a", "#6a3a9a"].map((col, i) => (
-            <Persona key={i} x={6290 + i * 110} y={SUELO - 10} h={280} t={t} seed={160 + i} ropa={{ tunica: col, tunica2: "#1b1530", cinto: "#1d1410", piel: "#e9b08a", piel2: "#c98f6a", pelo: "#3a2414" }} gorro="verdugo" capa="#2b0a14"
-              expr="feliz" habla bD={110 + Math.sin(t * 3 + i) * 30} cD={60} manoD={<Jarra x={0} y={40} s={0.6} />} inclina={Math.sin(t * 2 + i) * 6} />
+            <Persona key={i} x={6250 + i * 140} y={SUELO - 10} h={[300, 265, 285][i]} t={t} seed={160 + i} ropa={{ tunica: col, tunica2: "#1b1530", cinto: "#1d1410", piel: ["#e9b08a", "#c98a62", "#f2c4a0"][i], piel2: "#c98f6a", pelo: ["#3a2414", "#8a4a1a", "#1a1410"][i] }} gorro={(["verdugo", "campesino", "capucha"] as const)[i]} capa={["#2b0a14", "#1b2440", "#3a2a1a"][i]} barba={i === 1 ? "#8a4a1a" : i === 0 ? "#3a2414" : undefined}
+              expr={Math.sin(t * 1.3 + i * 2) > 0.2 ? "feliz" : "orgullo"} habla={Math.sin(t * 1.1 + i * 2.2) > -0.2} bD={110 + Math.sin(t * 3 + i) * 30} cD={60} manoD={<Jarra x={0} y={0} s={0.6} />} inclina={Math.sin(t * 2 + i) * 6} salta={i === 1 ? 607 + Math.floor((t - 607) / 3) * 3 : undefined} />
           ))}
           {t < 630.4 && <Franz x={6720} y={SUELO - 10} t={t} flip expr={vig(t, 615.4, 618.3) ? "orgullo" : "neutro"} mira={vig(t, 622.6, 630.4) ? -1 : -1}
             bD={vig(t, 615.4, 618.3) ? 90 : 60} cD={vig(t, 615.4, 618.3) ? 0 : 60}
-            manoD={vig(t, 615.4, 618.3) ? <g><rect x={-30} y={-30} width={60} height={60} rx={10} fill="#fff6e0" /><path d="M -14 0 L 14 0" stroke={C.rojo} strokeWidth={8} /></g> : <g><path d="M -22 -50 L 22 -50 L 16 10 L -16 10 Z" fill="#bfe6ff" stroke="#5a8aa8" strokeWidth={4} /></g>} />}
+            manoD={vig(t, 615.4, 618.3) ? <g><rect x={-30} y={-30} width={60} height={60} rx={10} fill="#fff6e0" /><path d="M -14 0 L 14 0" stroke={C.rojo} strokeWidth={8} /></g> : <g><path d="M -22 -40 L 22 -40 L 16 16 L -16 16 Z" fill="#bfe6ff" stroke="#5a8aa8" strokeWidth={4} /></g>} />}
           {vig(t, 615.4, 618.3) && <G x={6600} y={SUELO - 300} rot={interp(t, [615.4, 616], [0, -50])}><Jarra x={0} y={0} s={0.6} /></G>}
           {/* el concejo, en el puente */}
           {vig(t, 630.3, 637.4) && (

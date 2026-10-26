@@ -2,7 +2,7 @@ import React from "react";
 import { clamp } from "../soot/lib";
 import { C, Chip, Emote, Particulas, Tienda, Estrellas, cabeza, fontFamily } from "./kit";
 import { Persona, CIVIL, Ropa } from "./persona";
-import { SUELO, Llave, G, interp, TextoMundo, Diario, Bolsa } from "./mundo";
+import { SUELO, Llave, G, interp, TextoMundo, Diario, Bolsa, camEn } from "./mundo";
 import { Franz, Gente, Sello, Titulo, BurbujaM, Cuenta, Barras, HUD, vig } from "./actores";
 
 // P8 · El giro + cierre (729,2-915,2 s). Sueldo de profesional (bolsa, leña, casa, sin impuestos) → el secreto: sabe
@@ -18,6 +18,32 @@ const NOBLE: Ropa = { tunica: "#2b2140", tunica2: "#1b1530", cinto: C.oro, piel:
 const EMPERADOR: Ropa = { tunica: "#a3202f", tunica2: "#6e1420", cinto: C.oro, piel: "#f0c09a", piel2: "#d09a76", pelo: "#8a6a4a" };
 const VIKINGO = (i: number): Ropa => ({ tunica: ["#5a6a4a", "#6a4a3a", "#3a4a6a", "#7a5a3a"][i % 4], tunica2: "#2b2a24", cinto: "#3b230f", piel: "#f0c09a", piel2: "#d09a76", pelo: ["#c9902a", "#8a4a1a", "#d8b060", "#5a3a1a"][i % 4] });
 
+// 15.000 pacientes contra ~400 ejecuciones, en la MISMA escala: cada cruz verde = 100 pacientes, cada hacha = 100 ejecuciones
+const Cruces: React.FC<{ t: number; t0: number; t1: number }> = ({ t, t0, t1 }) => {
+  if (t < t0 || t > t1 + 0.3) return null;
+  const op = clamp((t - t0) / 0.25, 0, 1) * clamp((t1 + 0.3 - t) / 0.3, 0, 1);
+  const n = Math.floor(clamp((t - t0 - 0.2) / 1.6, 0, 1) * 150);
+  const nh = Math.floor(clamp((t - t0 - 2.0) / 0.6, 0, 1) * 4);
+  const cuenta = Math.round(n * 100);
+  return (
+    <svg style={{ position: "absolute", left: 0, top: 0, opacity: op }} width={1920} height={1080}>
+      <rect x={250} y={250} width={1420} height={700} rx={34} fill="#1d1640" stroke="#fff3d6" strokeWidth={6} opacity={0.94} />
+      {Array.from({ length: n }, (_, i) => {
+        const c = i % 15, f = Math.floor(i / 15);
+        const x = 320 + c * 54, y = 330 + f * 52;
+        return <path key={i} d={`M ${x - 7} ${y - 20} h 14 v 13 h 13 v 14 h -13 v 13 h -14 v -13 h -13 v -14 h 13 Z`} fill={C.lima} stroke="#1a5a2a" strokeWidth={3} />;
+      })}
+      {Array.from({ length: nh }, (_, i) => (
+        <g key={i} transform={`translate(${1260 + (i % 2) * 90} ${390 + Math.floor(i / 2) * 90}) rotate(-30)`}>
+          <rect x={-5} y={-30} width={10} height={60} fill="#8a5a2a" /><path d="M -5 -30 L -34 -36 Q -40 -14 -34 6 L -5 0 Z" fill="#d8dde6" stroke="#2b2140" strokeWidth={3} />
+        </g>
+      ))}
+      <text x={720} y={880} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={64} fill={C.lima}>{cuenta.toLocaleString("en-US")} PATIENTS</text>
+      <text x={1350} y={880} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={56} fill="#ff6a5a" opacity={nh > 0 ? 1 : 0}>~400 EXECUTIONS</text>
+      <text x={1350} y={640} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={34} fill="#fff3d6">1 SYMBOL = 100</text>
+    </svg>
+  );
+};
 export const P8K: Llave[] = [
   [729.6, ATRAS - 40, 600, 1.0, 0.5],
   [731.0, CASA + 120, 560, 1.0, 1.0],
@@ -54,7 +80,7 @@ export const P8K: Llave[] = [
   [873.1, CEM + 80, 580, 1.4, 1.0],
   [877.6, 6300, 400, 0.32, 1.6, 0.2],
   [882.0, 2400, 600, 0.9, 1.0],
-  [888.1, 5200, 600, 0.9, 3.0],
+  [888.1, 5200, 600, 0.9, 5.9],
   [891.9, PLAZA, 560, 1.0, 1.0],
   [894.5, ATRAS + 60, 600, 1.4, 1.2],
   [898.4, 6100, 420, 0.22, 1.6],
@@ -155,7 +181,7 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
       {/* ── esa mañana: el mercader se tira al barro para no rozarte la manga */}
       {vig(t, 789.4, 796.5) && (
         <>
-          <Svg><ellipse cx={7880} cy={SUELO + 30} rx={150} ry={34} fill="#5a3a1e" /></Svg>
+          <Svg><ellipse cx={7880} cy={SUELO + 30} rx={150} ry={26} fill="#2e3f5e" stroke="#1a2438" strokeWidth={4} /><ellipse cx={7840} cy={SUELO + 24} rx={60} ry={7} fill="#8fb4e0" opacity={0.7} /></Svg>
           <Franz x={interp(t, [790.0, 795.5], [8350, 7600])} y={SUELO - 10} t={t} flip camina={1.3} expr="neutro" />
           <Persona x={interp(t, [790.0, 792.6, 793.2, 795.5], [7500, 7820, 7880, 8100])} y={SUELO - 10 + (vig(t, 792.6, 794.6) ? 40 : 0)} h={300} t={t} seed={790} ropa={MERCADER} gorro="noble"
             camina={vig(t, 792.6, 793.4) ? 0 : 1.4} expr={t > 792.6 ? "enojado" : "neutro"} inclina={vig(t, 792.6, 794.4) ? -16 : 0} bD={vig(t, 792.6, 794.4) ? 150 : 10} bI={vig(t, 792.6, 794.4) ? 150 : 10} />
@@ -298,6 +324,13 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
           <circle cx={CASA} cy={SUELO - 420} r={110 + Math.sin(t * 4) * 12} fill="#fff3c0" stroke={C.oro} strokeWidth={14} />
         </Svg>
       )}
+      {/* ── recap: Franz cruza el pueblo solo y cada grupo se aparta cuando pasa */}
+      {vig(t, 881.0, 888.4) && (
+        <>
+          {[2950, 3950, 4850].map((gx) => { let g0 = 888.4; for (let u = 881; u < 888.4; u += 0.05) if (camEn(P8K, u).x - 170 > gx - 480) { g0 = u; break; } return [gx, g0]; }).map(([gx, g0], i) => <Gente key={gx} t={t} x0={gx - 180} x1={gx + 180} n={4} y={SUELO - 10} h={265} seed={950 + i} expr={t > g0 ? "miedo" : "neutro"} mira={-1} aleja={{ desde: gx - 420, dx: 260, t0: g0 }} habla={t < g0} />)}
+          <Franz x={camEn(P8K, t).x - 170} y={SUELO + 60} t={t} camina={1.3} expr="triste" />
+        </>
+      )}
       {/* ── CTA: el campamento vikingo dormido */}
       {t > 906.5 && (
         <>
@@ -317,7 +350,7 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
             const lado = i % 2 ? 1 : -1;
             return (
               <React.Fragment key={i}>
-                <Persona x={VIK + dx} y={SUELO + 62 + resp * 2} h={280} t={t} seed={900 + i} ropa={VIKINGO(i)} barba={VIKINGO(i).pelo} expr="dormido" inclina={lado * 86} bD={0} />
+                {(() => { const u = i === 2 ? clamp((t - 912.3) / 0.6, 0, 1) : 0; return <Persona x={VIK + dx} y={SUELO + 62 + resp * 2 - u * 72} h={280} t={t} seed={900 + i} ropa={VIKINGO(i)} barba={VIKINGO(i).pelo} expr={u > 0.5 ? "sorpresa" : "dormido"} inclina={lado * 86 * (1 - u)} bD={u * 60} habla={u > 0.9} />; })()}
                 <G x={VIK + dx - lado * 70} y={SUELO - 4}><path d={`M -150 4 Q -158 ${-70 - resp * 6} -50 ${-80 - resp * 8} Q 60 ${-88 - resp * 9} 140 ${-50 - resp * 5} Q 156 -14 150 4 Z`} fill={["#6a4a8a", "#8a3a2a", "#3a6a5a", "#7a6a3a"][i]} stroke="#1a2832" strokeWidth={5} /></G>
                 <TextoMundo x={VIK + dx - lado * 120} y={SUELO - 190 - ((t * 40 + i * 20) % 60)} text="z Z z" size={44} color="#bfe6ff" borde="#1a2832" />
               </React.Fragment>
@@ -367,7 +400,7 @@ const Recap: React.FC<{ t: number }> = ({ t }) => {
   const items: [string, number][] = [["TOUCHED HIM", 882.05], ["SAT WITH HIM", 883.2], ["MARRIED IN", 884.45], ["CARRIED HIS COFFIN", 886.15]];
   const out = clamp((888.1 - t) / 0.3, 0, 1);
   return (
-    <div style={{ position: "absolute", left: 960, top: 640, transform: `translate(-50%,-50%) scale(${out})`, display: "flex", gap: 26, fontFamily, fontWeight: 700 }}>
+    <div style={{ position: "absolute", left: 960, top: 330, transform: `translate(-50%,-50%) scale(${out * 0.86})`, display: "flex", gap: 26, fontFamily, fontWeight: 700 }}>
       {items.map(([x, t0], i) => {
         const e = clamp((t - t0) / 0.25, 0, 1);
         return (
@@ -468,7 +501,7 @@ export const P8Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={808.5} t1={810.0} text="HIS OWN MEDICINES ✓" color={C.ambar} tinta={C.noche} x={1540} y={150} centro size={48} />
     <Chip t={t} t0={810.05} t1={812.9} text="LATER, HE WROTE DOWN THE COUNT" color={C.violeta} x={960} y={150} centro size={56} />
     <Cuenta t={t} t0={813.0} t1={816.0} de={0} a={15000} dur={2.4} x={960} y={300} size={180} suf="+ PATIENTS" color={C.lima} />
-    <Barras t={t} t0={816.1} t1={820.0} x={960} y={900} items={[{ label: "PATIENTS: 15,000", v: 15000, color: C.lima }, { label: "EXECUTIONS: ~400", v: 400, color: C.rojo, t0: 817.6 }]} alto={560} ancho={300} />
+    <Cruces t={t} t0={816.1} t1={820.0} />
     <Cuarenta t={t} />
     <Titulo t={t} t0={820.1} t1={825.1} text="HEALED ~40x MORE" y={210} size={120} color={C.lima} borde="#1b2a10" />
     <Chip t={t} t0={821.3} t1={825.1} text="...THAN HE EVER PUNISHED" color={C.noche} x={960} y={950} centro size={60} />
@@ -494,6 +527,7 @@ export const P8Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={896.4} t1={898.3} text="IT JUST NEVER WANTED TO BE SEEN WITH HIM" color={C.noche} x={960} y={150} centro size={52} />
     <Titulo t={t} t0={898.5} t1={902.8} text="THE MAN WHO KNEW EVERYBODY BEST" y={200} size={90} color={C.oro} borde="#2b1c14" />
     <Cta t={t} />
-    <Chip t={t} t0={907.0} t1={910.4} text="NEXT TIME: A SLEEPING VIKING CAMP" color={C.teal} tinta={C.noche} x={960} y={150} centro size={60} />
+    <Titulo t={t} t0={907.0} t1={910.3} text="NEXT TIME: A SLEEPING VIKING CAMP" y={210} size={84} color={C.ambar} borde="#1a1440" />
+    {t > 912.9 && <Chip t={t} t0={912.9} text="...OR IS IT?" color={C.rojo} x={1500} y={760} centro size={58} />}
   </>
 );

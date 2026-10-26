@@ -2,6 +2,8 @@ import React from "react";
 import { AbsoluteFill, interpolate, Easing } from "remotion";
 import { rnd, clamp } from "../soot/lib";
 import { C, fontFamily } from "./kit";
+import { segMundo, anchoTxt } from "./zona";
+
 
 // Mundo continuo de soot11: un solo pueblo (Núremberg) en coordenadas de mundo; la cámara VIAJA por él
 // (paneo, dolly, zoom a un detalle). Nada corta: lo que cambia es dónde mira la cámara y la hora del día.
@@ -111,15 +113,19 @@ const CieloVivo: React.FC<{ t: number; cam: Cam; hora: number }> = ({ t, cam, ho
       })}
       {hora < 1.4 && (
         <g opacity={1 - clamp((hora - 1) / 0.4, 0, 1)}>
-          <circle cx={1500 + off * 0.5} cy={solY} r={230} fill="#fff4c0" opacity={0.25} />
+          <defs><radialGradient id="solHalo"><stop offset="0.35" stopColor="#fff4c0" stopOpacity={0.5} /><stop offset="1" stopColor="#fff4c0" stopOpacity={0} /></radialGradient></defs>
+          <circle cx={1500 + off * 0.5} cy={solY} r={260} fill="url(#solHalo)" />
           <circle cx={1500 + off * 0.5} cy={solY} r={95} fill={hora > 0.6 ? "#ffd27a" : "#fff6cf"} />
         </g>
       )}
       {noche > 0 && (
         <g opacity={noche}>
-          <circle cx={420 + off * 0.5} cy={190} r={240} fill="#fff6d8" opacity={0.1} />
-          <circle cx={420 + off * 0.5} cy={190} r={80} fill="#fff6d8" />
-          <circle cx={444 + off * 0.5} cy={176} r={70} fill={cieloEn(hora)[0]} />
+          <defs>
+            <radialGradient id="lunaHalo"><stop offset="0.3" stopColor="#fff6d8" stopOpacity={0.22} /><stop offset="1" stopColor="#fff6d8" stopOpacity={0} /></radialGradient>
+            <mask id="lunaCorte"><rect x={0} y={0} width={1920} height={1080} fill="#fff" /><circle cx={444 + off * 0.5} cy={176} r={70} fill="#000" /></mask>
+          </defs>
+          <circle cx={420 + off * 0.5} cy={190} r={240} fill="url(#lunaHalo)" />
+          <circle cx={420 + off * 0.5} cy={190} r={80} fill="#fff6d8" mask="url(#lunaCorte)" />
         </g>
       )}
       {nubes.map((n, i) => {
@@ -283,22 +289,26 @@ export const G: React.FC<P & { children: React.ReactNode }> = ({ x, y, s = 1, ro
 );
 
 // espada de verdugo: punta CHATA (redondeada), acanaladura, inscripción, cruz recta, mango largo
-export const Espada: React.FC<P & { texto?: string; brillo?: number }> = ({ texto, brillo = 0, ...p }) => (
-  <G {...p}>
-    <rect x={-30} y={-120} width={60} height={-740} fill="#dfe6ee" />
-    <path d="M -30 -860 Q 0 -884 30 -860 Z" fill="#dfe6ee" />
-    <rect x={-30} y={-860} width={60} height={740} fill="#dfe6ee" />
-    <rect x={8} y={-860} width={22} height={740} fill="#b9c4d2" />
-    <path d="M -30 -860 Q 0 -886 30 -860 L 30 -850 L -30 -850 Z" fill="#c9d3df" />
-    <rect x={-6} y={-820} width={12} height={640} rx={6} fill="#a9b6c6" />
-    {texto && <text transform="translate(-14 -500) rotate(-90)" textAnchor="middle" fontSize={22} fontFamily={fontFamily} fontWeight={600} fill="#6a7a90" letterSpacing={2}>{texto}</text>}
-    {brillo > 0 && <rect x={-30} y={-860 + brillo * 740 - 60} width={60} height={60} fill="#fff" opacity={0.75} />}
-    <rect x={-120} y={-130} width={240} height={30} rx={14} fill="#8a5414" />
-    <rect x={-16} y={-100} width={32} height={210} rx={10} fill="#4a2810" />
-    {[0, 1, 2, 3, 4].map((i) => <line key={i} x1={-16} y1={-80 + i * 40} x2={16} y2={-60 + i * 40} stroke="#2b160a" strokeWidth={6} />)}
-    <circle cx={0} cy={124} r={28} fill="#c98f2a" />
-  </G>
-);
+// espada de verdugo (Richtschwert): hoja ancha de punta ROMA redondeada, canal central, filos biselados,
+// guarda recta con puntas curvas, empuñadura de cuero a dos manos y pomo
+export const Espada: React.FC<P & { texto?: string; brillo?: number }> = ({ texto, brillo = 0, ...p }) => {
+  const O = "#2b2140";
+  return (
+    <G {...p}>
+      <path d="M -46 -120 L -38 -800 Q -38 -880 0 -884 Q 38 -880 38 -800 L 46 -120 Z" fill="#dfe6ee" stroke={O} strokeWidth={8} strokeLinejoin="round" />
+      <path d="M 16 -120 L 14 -800 Q 14 -860 0 -866 L 0 -120 Z" fill="#b9c4d2" />
+      <path d="M -46 -120 L -38 -800 Q -38 -870 -12 -880 L -26 -800 L -32 -120 Z" fill="#f4f8fc" />
+      <rect x={-7} y={-760} width={14} height={600} rx={7} fill="#8f9db0" />
+      {texto && <text transform="translate(-14 -500) rotate(-90)" textAnchor="middle" fontSize={22} fontFamily={fontFamily} fontWeight={600} fill="#5a6a80" letterSpacing={2}>{texto}</text>}
+      {brillo > 0 && <path d={`M -40 ${-860 + brillo * 740} L 40 ${-900 + brillo * 740} L 40 ${-860 + brillo * 740} L -40 ${-820 + brillo * 740} Z`} fill="#fff" opacity={0.8} />}
+      <path d="M -150 -136 Q -176 -150 -168 -170 Q -150 -150 -120 -146 L 120 -146 Q 150 -150 168 -170 Q 176 -150 150 -136 L 120 -112 L -120 -112 Z" fill="#c98f2a" stroke={O} strokeWidth={7} strokeLinejoin="round" />
+      <rect x={-18} y={-112} width={36} height={220} rx={10} fill="#4a2810" stroke={O} strokeWidth={6} />
+      {[0, 1, 2, 3, 4].map((i) => <line key={i} x1={-18} y1={-92 + i * 42} x2={18} y2={-70 + i * 42} stroke="#2b160a" strokeWidth={6} />)}
+      <circle cx={0} cy={132} r={32} fill="#c98f2a" stroke={O} strokeWidth={7} />
+      <circle cx={-8} cy={124} r={9} fill="#ffe08a" />
+    </G>
+  );
+};
 // taburete de 3 patas
 export const Taburete: React.FC<P & { brillo?: boolean }> = ({ brillo, ...p }) => (
   <G {...p}>
@@ -357,13 +367,13 @@ export const Horca: React.FC<P> = (p) => (
   </G>
 );
 // cadalso (tarima de madera con escalera)
-export const Cadalso: React.FC<P & { w?: number }> = ({ w = 700, ...p }) => (
+export const Cadalso: React.FC<P & { w?: number; alto?: number }> = ({ w = 700, alto = 200, ...p }) => (
   <G {...p}>
-    <rect x={-w / 2} y={-200} width={w} height={36} fill="#a8622c" />
-    <rect x={-w / 2} y={-164} width={w} height={164} fill="#7d4a24" />
-    {Array.from({ length: Math.floor(w / 70) }, (_, i) => <line key={i} x1={-w / 2 + 35 + i * 70} y1={-164} x2={-w / 2 + 35 + i * 70} y2={0} stroke="#5a3418" strokeWidth={6} />)}
-    <path d={`M -170 -110 L 170 -110 M -170 -40 L 170 -40 M -170 -110 L 170 -40 M 170 -110 L -170 -40`} transform={`translate(${-w / 4} 0)`} stroke="#5a3418" strokeWidth={10} />
-    {Array.from({ length: 5 }, (_, i) => <rect key={i} x={w / 2 + i * 34} y={-170 + i * 36} width={40} height={14} fill="#a8622c" />)}
+    <rect x={-w / 2} y={-alto} width={w} height={36} fill="#a8622c" stroke="#4a2810" strokeWidth={5} />
+    <rect x={-w / 2} y={-alto + 36} width={w} height={alto - 36} fill="#7d4a24" />
+    {Array.from({ length: Math.floor(w / 70) }, (_, i) => <line key={i} x1={-w / 2 + 35 + i * 70} y1={-alto + 36} x2={-w / 2 + 35 + i * 70} y2={0} stroke="#5a3418" strokeWidth={6} />)}
+    <path d={`M -170 ${-alto + 90} L 170 ${-alto + 90} M -170 -40 L 170 -40 M -170 ${-alto + 90} L 170 -40 M 170 ${-alto + 90} L -170 -40`} transform={`translate(${-w / 4} 0)`} stroke="#5a3418" strokeWidth={10} />
+    {Array.from({ length: Math.round(alto / 40) }, (_, i) => <rect key={i} x={w / 2 + i * 34} y={-alto + 30 + i * 36} width={40} height={14} fill="#a8622c" />)}
   </G>
 );
 // diario de Franz abierto, con renglones (y líneas que se escriben solas)
@@ -396,7 +406,8 @@ export const Bolsa: React.FC<P> = (p) => (
 // farol (calle / puerta de atrás)
 export const Farol: React.FC<P & { on?: number }> = ({ on = 1, ...p }) => (
   <G {...p}>
-    <circle cx={0} cy={-40} r={120} fill="#ffcf6a" opacity={0.22 * on} />
+    <defs><radialGradient id="farolHalo"><stop offset="0" stopColor="#ffd98a" stopOpacity={0.55} /><stop offset="0.45" stopColor="#ffcf6a" stopOpacity={0.2} /><stop offset="1" stopColor="#ffcf6a" stopOpacity={0} /></radialGradient></defs>
+    <circle cx={0} cy={-40} r={150} fill="url(#farolHalo)" opacity={on} />
     <rect x={-26} y={-80} width={52} height={70} rx={10} fill={on > 0.3 ? "#ffd27a" : "#5a3418"} stroke="#2b1c14" strokeWidth={7} />
     <path d="M -34 -80 L 0 -112 L 34 -80 Z" fill="#2b1c14" />
   </G>
@@ -472,11 +483,15 @@ export const Vitral: React.FC<P & { t: number }> = ({ t, ...p }) => (
   </G>
 );
 // texto pintado EN el mundo (carteles, rótulos, números grandes sobre una pared)
-export const TextoMundo: React.FC<{ x: number; y: number; text: string; size?: number; color?: string; borde?: string; op?: number; rot?: number; anchor?: "start" | "middle" | "end" }> = ({ x, y, text, size = 60, color = C.crema, borde = C.noche, op = 1, rot = 0, anchor = "middle" }) => (
+export const TextoMundo: React.FC<{ x: number; y: number; text: string; size?: number; color?: string; borde?: string; op?: number; rot?: number; anchor?: "start" | "middle" | "end" }> = ({ x: x0, y: y0, text, size = 60, color = C.crema, borde = C.noche, op = 1, rot = 0, anchor = "middle" }) => {
+  const { cam } = useMundo();
+  const { x, y } = segMundo(cam, x0, y0, anchoTxt(text, size), size * 1.05, anchor);
+  return (
   <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible", opacity: op }} width={10} height={10}>
     <text x={x} y={y} transform={`rotate(${rot} ${x} ${y})`} textAnchor={anchor} fontFamily={fontFamily} fontWeight={700} fontSize={size} fill={color} stroke={borde} strokeWidth={size * 0.14} paintOrder="stroke" strokeLinejoin="round">{text}</text>
   </svg>
-);
+  );
+};
 export const interp = (t: number, a: number[], b: number[]) => interpolate(t, a, b, { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: eio });
 
 // ── ventana: un mundo de 1920x1080 ANIDADO dentro del mundo (un dibujo del diario, un cuadro en la pared).

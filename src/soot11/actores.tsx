@@ -3,7 +3,9 @@ import { interpolate, Easing } from "remotion";
 import { rnd, clamp } from "../soot/lib";
 import { C, fontFamily, ent } from "./kit";
 import { Persona, Ropa, CIVIL, Expr } from "./persona";
-import { SUELO } from "./mundo";
+import { SUELO, useMundo } from "./mundo";
+import { segX, segY, segMundo, anchoTxt } from "./zona";
+
 
 // Actores y gráficos de pantalla de soot11.
 export const FRANZ: Ropa = { tunica: "#7a1f3d", tunica2: "#4a0f26", cinto: "#1d1410", piel: "#f2b48a", piel2: "#d98d66", pelo: "#3a2414" };
@@ -17,7 +19,12 @@ export const Franz: React.FC<FP & { viejoF?: boolean }> = ({ viejoF, ...p }) => 
 const GORROS = [undefined, "campesino", "toca", undefined, "noble", undefined, "toca", "campesino"] as const;
 export const Gente: React.FC<{ t: number; x0: number; x1: number; n: number; y?: number; h?: number; seed?: number; expr?: Expr | ((i: number) => Expr); mira?: number; flipDe?: number; aleja?: { desde: number; dx: number; t0: number }; habla?: boolean; salta?: number; brazos?: number }> = ({ t, x0, x1, n, y = SUELO - 10, h = 270, seed = 1, expr = "neutro", mira = 0, flipDe, aleja, habla, salta, brazos }) => {
   const r = rnd(seed * 13 + 1);
-  const ps = Array.from({ length: n }, (_, i) => ({ x: x0 + ((x1 - x0) * (i + 0.5)) / n + (r() - 0.5) * 30, dy: (r() - 0.5) * 16, dh: r() * 40 - 20, g: GORROS[Math.floor(r() * GORROS.length)], s: Math.floor(r() * 50) }));
+  // multitud con variantes: alturas (algún chico), poses de brazos propias, reacción escalonada
+  const POSES: [number, number, number, number][] = [[8, 10, 8, 10], [34, 120, 34, 120], [70, 110, 8, 10], [8, 10, 95, 60], [120, 40, 8, 10], [20, 140, 20, 140]];
+  const ps = Array.from({ length: n }, (_, i) => {
+    const chico = r() < 0.16;
+    return { x: x0 + ((x1 - x0) * (i + 0.5)) / n + (r() - 0.5) * 60, dy: (r() - 0.5) * 22, dh: chico ? -h * 0.28 : r() * 90 - 50, g: GORROS[Math.floor(r() * GORROS.length)], s: Math.floor(r() * 50), pose: POSES[Math.floor(r() * POSES.length)], lag: r() * 0.35, ladea: (r() - 0.5) * 10 };
+  });
   return (
     <>
       {ps.map((p, i) => {
@@ -26,7 +33,8 @@ export const Gente: React.FC<{ t: number; x0: number; x1: number; n: number; y?:
         return (
           <Persona key={i} x={p.x + dx} y={y + p.dy} h={h + p.dh} t={t} seed={seed * 100 + p.s + i} ropa={CIVIL(p.s + i)} gorro={p.g as never}
             expr={typeof expr === "function" ? expr(i) : expr} mira={mira} flip={flipDe !== undefined ? p.x > flipDe : false} habla={habla && i % 2 === 0}
-            salta={salta !== undefined ? salta + i * 0.05 : undefined} bD={brazos} bI={brazos} inclina={huye * -8 * Math.sign(p.x - (aleja?.desde ?? 0))} />
+            salta={salta !== undefined ? salta + i * 0.05 + p.lag : undefined} bD={brazos ?? p.pose[0]} cD={brazos === undefined ? p.pose[1] : undefined} bI={brazos ?? p.pose[2]} cI={brazos === undefined ? p.pose[3] : undefined}
+            ladea={p.ladea} inclina={huye * -8 * Math.sign(p.x - (aleja?.desde ?? 0))} />
         );
       })}
     </>
@@ -71,8 +79,11 @@ export const HUD: React.FC<{ t: number; t0: number; t1: number; valor: number; t
   );
 };
 // sello que golpea en pantalla
-export const Sello: React.FC<{ t: number; t0: number; t1?: number; text: string; x: number; y: number; color?: string; rot?: number; size?: number }> = ({ t, t0, t1 = 1e9, text, x, y, color = C.rojo, rot = -12, size = 90 }) => {
+export const Sello: React.FC<{ t: number; t0: number; t1?: number; text: string; x: number; y: number; color?: string; rot?: number; size?: number }> = ({ t, t0, t1 = 1e9, text, x: x0, y: y0, color = C.rojo, rot = -12, size = 90 }) => {
   if (t < t0 || t > t1 + 0.25) return null;
+  const wS = text.length * (size * 0.66 + 4) + size * 0.8, hS = size * 1.4;
+  const ang = Math.abs(rot) * Math.PI / 180;
+  const x = segX(x0, wS * Math.cos(ang) + hS * Math.sin(ang)), y = segY(y0, hS * Math.cos(ang) + wS * Math.sin(ang));
   const s = interpolate(t, [t0, t0 + 0.12], [2.6, 1], { extrapolateRight: "clamp", easing: Easing.in(Easing.cubic) });
   const o = interpolate(t, [t0, t0 + 0.08], [0, 1], { extrapolateRight: "clamp" }) * interpolate(t, [t1, t1 + 0.25], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
@@ -112,9 +123,10 @@ export const Cuenta: React.FC<{ t: number; t0: number; t1?: number; de: number; 
   );
 };
 // globo de diálogo (en pantalla)
-export const Globo: React.FC<{ t: number; t0: number; t1: number; text: string; x: number; y: number; size?: number; cola?: "izq" | "der"; color?: string; tinta?: string }> = ({ t, t0, t1, text, x, y, size = 54, cola = "izq", color = "#fff", tinta = C.noche }) => {
+export const Globo: React.FC<{ t: number; t0: number; t1: number; text: string; x: number; y: number; size?: number; cola?: "izq" | "der"; color?: string; tinta?: string }> = ({ t, t0, t1, text, x: x0, y: y0, size = 54, cola = "izq", color = "#fff", tinta = C.noche }) => {
   if (t < t0 || t > t1 + 0.2) return null;
   const s = ent(t, t0, 0, { damping: 10, stiffness: 220 }) * interpolate(t, [t1, t1 + 0.2], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const x = segX(x0, anchoTxt(text, size) + size), y = segY(y0 - size * 0.8, size * 1.6) + size * 0.8;
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-100%) scale(${s})`, transformOrigin: cola === "izq" ? "10% 100%" : "90% 100%" }}>
       <div style={{ position: "relative", background: color, color: tinta, fontFamily, fontWeight: 700, fontSize: size, padding: `${size * 0.25}px ${size * 0.5}px`, borderRadius: size * 0.6, whiteSpace: "nowrap", boxShadow: "0 8px 0 rgba(20,10,50,.3)" }}>
@@ -136,9 +148,11 @@ export const BurbujaM: React.FC<{ t: number; t0: number; t1: number; x: number; 
   if (t < t0 || t > t1 + 0.2) return null;
   const s = ent(t, t0, 0, { damping: 10, stiffness: 220 }) * interpolate(t, [t1, t1 + 0.2], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const w = text.length * size * 0.62 + size * 0.9;
+  const { cam } = useMundo();
+  const q = segMundo(cam, x, y, w, size * 1.6);
   return (
     <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
-      <g transform={`translate(${x} ${y}) scale(${s})`}>
+      <g transform={`translate(${q.x} ${q.y}) scale(${s})`}>
         <rect x={-w / 2} y={-size * 1.5} width={w} height={size * 1.4} rx={size * 0.6} fill={color} />
         <path d={`M -10 -4 L 0 ${size * 0.4} L 14 -4 Z`} transform={`translate(0 ${-size * 0.12})`} fill={color} />
         <text x={0} y={-size * 0.5} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={size} fill={tinta}>{text}</text>
@@ -164,8 +178,9 @@ export const Pin: React.FC<{ t: number; t0: number; x: number; y: number; n: num
   );
 };
 // título grande con contorno que entra con resorte y SALE (t1)
-export const Titulo: React.FC<{ t: number; t0: number; t1: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string; rot?: number }> = ({ t, t0, t1, text, x = 960, y, size = 150, color = C.crema, borde = C.noche, rot = 0 }) => {
+export const Titulo: React.FC<{ t: number; t0: number; t1: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string; rot?: number }> = ({ t, t0, t1, text, x: x0 = 960, y: y0, size = 150, color = C.crema, borde = C.noche, rot = 0 }) => {
   if (t < t0 || t > t1 + 0.02) return null;
+  const x = segX(x0, anchoTxt(text, size) + size * 0.2), y = segY(y0, size * 1.2);
   const s = ent(t, t0, 0, { damping: 9, stiffness: 190 }) * interpolate(t, [t1 - 0.12, t1 + 0.02], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${s}) rotate(${rot}deg)`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}`, textAlign: "center", lineHeight: 1.05 }}>

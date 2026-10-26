@@ -50,7 +50,7 @@ export const P3K: Llave[] = [
   [372.75, 31600, 250, 0.95, 0.9],
   [374.4, 10300, 250, 0.95, 1.2],
 ];
-export const P3H: [number, number][] = [[270.3, 0], [375.3, 0]];
+export const P3H: [number, number][] = [[270.3, 0], [271.5, 0.3], [318.5, 0.3], [320.5, 0], [375.3, 0]];
 
 const Svg: React.FC<{ children: React.ReactNode }> = ({ children }) => <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>{children}</svg>;
 const Corona: React.FC<{ x: number; y: number }> = ({ x, y }) => <G x={x} y={y}><path d="M -60 0 L -70 -70 L -35 -35 L 0 -85 L 35 -35 L 70 -70 L 60 0 Z" fill={C.oro} stroke="#8a5414" strokeWidth={6} /><circle cx={0} cy={-20} r={10} fill={C.rojo} /></G>;
@@ -68,7 +68,7 @@ export const P3Mundo: React.FC<{ t: number }> = ({ t }) => {
     <>
       {iglesia && (
         <>
-          <Persona x={PT.altar + 10} y={SUELO - 150} h={300} t={t} seed={40} ropa={{ ...CIVIL(0), tunica: "#f2ead8", tunica2: "#c9bca4" }} gorro="cura" flip habla={vig(t, 283, 286.5)} bD={vig(t, 283, 286.7) ? 70 : 10} expr={vig(t, 288.6, 290) ? "miedo" : "neutro"} />
+          <Persona x={PT.altar + 175} y={SUELO - 40} h={300} t={t} seed={40} ropa={{ ...CIVIL(0), tunica: "#f2ead8", tunica2: "#c9bca4" }} gorro="cura" flip habla={vig(t, 283, 286.5)} bD={vig(t, 283, 286.7) ? 70 : 10} expr={vig(t, 288.6, 290) ? "miedo" : "neutro"} />
           {[620, 840, 1060, 1280].map((bx, b) => (
             <React.Fragment key={bx}>
               {!vig(t, 282.7, 287.5) && <Gente t={t} x0={bx - 95} x1={bx + 95} n={3} y={SUELO - 70} h={250} seed={60 + b} flipDe={-9} expr={vig(t, 287.5, 290) ? "sorpresa" : "neutro"} mira={vig(t, 286.8, 290) ? 1 : -1} />}

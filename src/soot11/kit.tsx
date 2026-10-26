@@ -3,6 +3,8 @@ import { AbsoluteFill, spring, interpolate, Easing } from "remotion";
 import { loadFont } from "@remotion/google-fonts/Fredoka";
 import { rnd, clamp } from "../soot/lib";
 import MAPA from "./mapa.json";
+import { segX, segY, anchoTxt } from "./zona";
+
 
 // Kit de Soot v3: TODO en código (cero imágenes). Cielos por capas, colinas con paralaje, objetos,
 // mapa de puntos real, chapitas y contadores. Paleta saturada de complementarios (vara del short de los zombies).
@@ -190,8 +192,9 @@ export const Colinas: React.FC<{ capas: string[]; base?: number; dx?: number; se
 );
 
 // ── chapita (CORNELL · 2015 de la ref)
-export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; color?: string; x: number; y: number; size?: number; centro?: boolean; tinta?: string }> = ({ t, t0, t1 = 1e9, text, color = C.violeta, x, y, size = 62, centro, tinta = "#fff" }) => {
+export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; color?: string; x: number; y: number; size?: number; centro?: boolean; tinta?: string }> = ({ t, t0, t1 = 1e9, text, color = C.violeta, x: x0, y: y0, size = 62, centro, tinta = "#fff" }) => {
   if (t < t0 || t > t1 + 0.02) return null;
+  const x = segX(x0, anchoTxt(text, size) + size * 0.84, !!centro), y = segY(y0, size * 1.5);
   const s = ent(t, t0, 0, { damping: 11, stiffness: 180 });
   const out = interpolate(t, [t1 - 0.12, t1 + 0.02], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
@@ -202,8 +205,9 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
   );
 };
 // texto grande con contorno (títulos)
-export const Grande: React.FC<{ t: number; t0: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string }> = ({ t, t0, text, x = 960, y, size = 150, color = C.crema, borde = C.noche }) => {
+export const Grande: React.FC<{ t: number; t0: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string }> = ({ t, t0, text, x: x0 = 960, y: y0, size = 150, color = C.crema, borde = C.noche }) => {
   if (t < t0) return null;
+  const x = segX(x0, anchoTxt(text, size)), y = segY(y0, size * 1.2);
   const s = ent(t, t0, 0, { damping: 9, stiffness: 190 });
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${s})`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}` }}>
