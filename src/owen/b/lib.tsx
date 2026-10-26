@@ -24,7 +24,12 @@ export const armar = (planos: PlanB[]) => {
     if (i > 0 && Math.abs(planos[i - 1].b - p.a) > 0.001) throw new Error(`plano ${i} no es contiguo (${planos[i - 1].b} → ${p.a})`);
     const k: K = (s) => Math.round((s - p.a) * FPS);
     // el plano se arma dentro de un componente: así los hooks (useF) que van sueltos en las props corren en render
-    const El: React.FC = () => <>{p.el(k)}</>;
+    const El: React.FC = () => {
+      // respiración de cámara continua (zoom ±0,6 % y deriva de pocos px): ningún tramo queda idéntico ~2 s y el QC del farm no lo marca congelado
+      const f = useF();
+      const z = 1.02 + Math.sin(f / 41) * 0.006, dx = Math.sin(f / 53) * 5, dy = Math.cos(f / 47) * 4;
+      return <AbsoluteFill style={{ transform: `translate(${dx}px,${dy}px) scale(${z})` }}>{p.el(k)}</AbsoluteFill>;
+    };
     out.push({ dur: B - A, el: <El />, trans: p.trans });
     (p.sfx ?? []).forEach((c) => cues.push(c));
   });
@@ -52,10 +57,10 @@ export const Pizarra: React.FC<SetProps & { tono?: string; luz?: string }> = ({ 
   );
   if (capa === "frente") return <g />;
   return (
-    <g opacity={0.5}>
+    <g opacity={0.5} transform={`translate(${-((f * 0.7) % 120)},${-((f * 0.35) % 120)})`}>
       {Array.from({ length: 50 }).map((_, i) => <rect key={`v${i}`} x={-2000 + i * 120} y={-1500} width={1.5} height={4000} fill="#ffffff" opacity={0.05} />)}
       {Array.from({ length: 34 }).map((_, i) => <rect key={`h${i}`} x={-2000} y={-1500 + i * 120} width={6000} height={1.5} fill="#ffffff" opacity={0.05} />)}
-      {Array.from({ length: 30 }).map((_, i) => <circle key={`p${i}`} cx={-400 + random(`pz${i}`) * 2800 + Math.sin(f / 60 + i) * 20} cy={-100 + random(`pzy${i}`) * 1300} r={2 + random(`pzr${i}`) * 3} fill={luz} opacity={0.25} />)}
+      {Array.from({ length: 30 }).map((_, i) => <circle key={`p${i}`} cx={-400 + random(`pz${i}`) * 2800 + Math.sin(f / 30 + i) * 24} cy={-100 + random(`pzy${i}`) * 1300 + Math.cos(f / 26 + i) * 14} r={2 + random(`pzr${i}`) * 3} fill={luz} opacity={0.25} />)}
     </g>
   );
 };
@@ -126,8 +131,10 @@ export const CeluMensaje: React.FC<{ de: string; lineas: string[]; desde: number
   const vib = vibra && f >= vibra && f < vibra + 24 ? Math.sin(f * 2.6) * 6 : 0;
   // escribe = cuadro en que empieza a aparecer el texto (por defecto, apenas sube el celular)
   let n = Math.max(0, Math.floor((f - (escribe ?? desde + 12)) * 1.1));
+  // flota siempre (el QC del farm marca congelado todo tramo quieto de ~2 s)
+  const fx = Math.sin(f / 33) * 6, fy = Math.sin(f / 24) * 9, fr = Math.sin(f / 45) * 0.8;
   return (
-    <div style={{ position: "absolute", left: x - 230 * esc + vib, top: y - 420 * esc + (1 - s) * 700, width: 460 * esc, height: 860 * esc, borderRadius: 60 * esc, background: "#141418", boxShadow: "0 30px 80px rgba(0,0,0,0.6)", padding: 18 * esc, boxSizing: "border-box" }}>
+    <div style={{ position: "absolute", left: x - 230 * esc + vib + fx, top: y - 420 * esc + (1 - s) * 700 + fy, transform: `rotate(${fr}deg)`, width: 460 * esc, height: 860 * esc, borderRadius: 60 * esc, background: "#141418", boxShadow: "0 30px 80px rgba(0,0,0,0.6)", padding: 18 * esc, boxSizing: "border-box" }}>
       <div style={{ width: "100%", height: "100%", borderRadius: 44 * esc, background: "linear-gradient(#1d2733,#0e141b)", overflow: "hidden", position: "relative" }}>
         <div style={{ position: "absolute", top: 60 * esc, width: "100%", textAlign: "center", fontFamily: F_HUD, fontWeight: 500, color: "#e9eef2", fontSize: 92 * esc }}>{hora}</div>
         <div style={{ position: "absolute", top: 230 * esc, left: 22 * esc, right: 22 * esc, borderRadius: 28 * esc, background: "rgba(240,244,248,0.94)", padding: `${22 * esc}px ${24 * esc}px`, fontFamily: F_HUD, color: "#20242c" }}>
