@@ -452,7 +452,7 @@ export const P29Deriva: React.FC = () => {
         : <Escena Set={Ashland} pal={PAL} claves={cl} seed={29} setProps={{ hora: "tarde", centro: (ff: number) => bx(ff) + 650, autos: 0 }}
           medio={<g transform={`rotate(${-interpolate(f, [k(262.2), k(265.3)], [0, 2.5], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} ${bx(f) + 1000} ${by(f)})`}><Bus9 x={bx(f)} y={by(f)} esc={0.62} dir={1} hora="tarde" rueda={f * 9} /></g>}
           hud={<><Pildora texto="DRIFTING TOWARD THE PARKED CARS" x={960} y={950} desde={k(262.4)} color={ROJO_OWEN} /><HudOwen min={921} part={PART} /></>} />}
-      <AbsoluteFill style={{ background: "#000", opacity: cierra }} />
+      <AbsoluteFill style={{ background: "#3a2a22", opacity: cierra }} />
       {cierra > 0.6 && <div style={{ position: "absolute", left: 0, right: 0, top: 500, textAlign: "center", fontFamily: F_HUD, fontWeight: 700, fontSize: 120, color: "#f4efe4", transform: `scale(${1 + 0.04 * Math.sin(f / 3)})` }}>1 second... 2...</div>}
     </AbsoluteFill>
   );
