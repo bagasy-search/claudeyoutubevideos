@@ -30,7 +30,9 @@ export const armar = (planos: PlanB[]) => {
       const z = 1.02 + Math.sin(f / 41) * 0.006, dx = Math.sin(f / 53) * 5, dy = Math.cos(f / 47) * 4;
       return <AbsoluteFill style={{ transform: `translate(${dx}px,${dy}px) scale(${z})` }}>{p.el(k)}</AbsoluteFill>;
     };
-    out.push({ dur: B - A, el: <El />, trans: p.trans });
+    // la «cortina» (silueta oscura que barre la lente) deja medio cuadro negro: el director la marcó como fea → disolvencia corta
+    const trans: Trans | undefined = p.trans?.tipo === "cortina" ? { tipo: "fundido", d: 10 } : p.trans;
+    out.push({ dur: B - A, el: <El />, trans });
     (p.sfx ?? []).forEach((c) => cues.push(c));
   });
   return { planos: out, cues, total: Math.round(planos[planos.length - 1].b * FPS) };
