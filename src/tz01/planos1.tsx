@@ -179,10 +179,10 @@ export const P10Sombra: React.FC = () => (
 );
 // ---------- 11 · «just one more»: se inclina al oído ----------
 export const P11UnaMas: React.FC = () => (
-  <Cto cl={[mira(0, 1110, 570, 1.6), mira(40, 1110, 575, 1.7)]}
-    leo={{ poses: scroll(CAMA, 0, 41, 14, 10) }}
-    detras={maraCuarto(ESC * 1.65, CTO_PUNTOS.colchon - 130, { caras: [{ f: 0, v: "picaro" }], habla: [[2, 34]], poses: [{ f: 0, v: { tronco: 8, cabeza: 10, hD: 105, cD: 55, hI: -105, cI: -55 } }, { f: 10, v: { tronco: 22, cabeza: 26, hD: 70, cD: 120, hI: -60, cI: -20 } }] })}
-    hud={<><Hud /><ManoMara texto="just one more" x={1180} y={230} desde={2} tam={84} /></>} />
+  <Cto cl={[mira(0, 1000, 600, 2.1), mira(40, 1015, 615, 2.3)]}
+    leo={{ poses: scroll(CAMA, 0, 41, 10, 12), miradas: [{ f: 0, v: { x: 0.4, y: 0.8 } }, { f: 16, v: { x: -0.7, y: -0.4 } }, { f: 30, v: { x: 0.4, y: 0.8 } }], caras: [{ f: 0, v: "cansado" }, { f: 18, v: "duda" }, { f: 30, v: "feliz" }] }}
+    detras={maraCuarto(ESC * 1.65, LX - 330, { dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "picaro" }], habla: [[2, 34]], poses: [{ f: 0, v: { tronco: 30, cabeza: 10, hD: 70, cD: 60, hI: -40, cI: -30 } }, { f: 12, v: { tronco: 50, cabeza: 20, hD: 40, cD: 110, hI: -20, cI: -40 } }] })}
+    hud={<><Hud /><ManoMara texto="just one more" x={1300} y={330} desde={1} tam={84} vel={2.4} /></>} />
 );
 // ---------- 12-13 · el recuerdo: Leo de 14 abre su primer tel; de la luz sale Mara chiquita y se le sube al hombro ----------
 const KX = 1350, KESC = ESC * 0.78;
@@ -308,19 +308,30 @@ export const P20NoSolo: React.FC = () => {
       hud={<Hud />} />
   );
 };
-// ---------- 21 · el tubo que titila → baja al viejo; llamadas: túnica gris, calvo, cejas blancas, cuentas ----------
+// ---------- 21 · el tubo que titila → la cámara baja al rincón y descubre al viejo; cada rasgo con su gesto: túnica, calva (brillo), cejas (las levanta), cuentas (las pasa) ----------
 const k21 = kDe(58.26);
-const c21 = [mira(0, 1700, -40, 2.0), mira(40, 1700, -30, 2.08, { curva: "inout" }), mira(41, 1745, 720, 1.9), mira(70, 1745, 722, 1.95, { curva: "inout" }), mira(110, 1745, 735, 2.7, { curva: "inout" }), mira(247, 1745, 730, 2.85)];
-export const P21Rincon: React.FC = () => (
-  <Lav cl={c21} leo={{ no: true }}
-    tenzo={{ poses: doblando(0, 250, 44), caras: [{ f: 0, v: "neutral" }, { f: k21(61.3), v: "feliz" }], miradas: [{ f: 0, v: { x: -0.3, y: 0.6 } }] }} toalla={(f) => Math.min(1, f / 247) * 0.4}
-    hud={<><Hud />
-      <LlamadaMundo cl={c21} X={1790} Y={830} dx={330} dy={40} texto="GREY ROBE" desde={k21(62.1)} />
-      <LlamadaMundo cl={c21} X={1745} Y={628} dx={-400} dy={-30} texto="BALD HEAD" desde={k21(63.3)} />
-      <LlamadaMundo cl={c21} X={1760} Y={652} dx={360} dy={-170} texto="WHITE EYEBROWS" desde={k21(64.24)} />
-      <LlamadaMundo cl={c21} X={1722} Y={771} dx={-430} dy={110} texto="WOODEN BEADS" desde={k21(65.3)} />
-    </>} />
-);
+const c21 = [mira(0, 1300, -60, 2.2), mira(14, 1305, -52, 2.25), mira(52, 1745, 700, 1.9, { curva: "inout" }), mira(110, 1760, 712, 1.95, { curva: "inout" }), mira(148, 1770, 705, 2.05, { curva: "inout" }), mira(166, 1795, 652, 2.8, { curva: "inout" }), mira(205, 1797, 650, 2.85), mira(226, 1790, 735, 2.7, { curva: "inout" }), mira(247, 1790, 738, 2.75)];
+const CUENTAS = (k: number) => ({ ...SENTADO, hI: 60, cI: 30, hD: 30, cD: 128 + (k % 2 ? 16 : 0), tronco: 4, cabeza: 10 });
+export const P21Rincon: React.FC = () => {
+  const f = useF();
+  const brillo = lerp(f, k21(63.3), k21(64.1), 0, 1);
+  return (
+    <Lav cl={c21} leo={{ no: true }}
+      tenzo={{ poses: [...doblando(0, k21(65.2), 44), ...Array.from({ length: 6 }).map((_, i) => ({ f: k21(65.3) + i * 6, v: CUENTAS(i) }))],
+        caras: [{ f: 0, v: "neutral" }, { f: k21(64.24), v: "sorpresa" }, { f: k21(64.9), v: "feliz" }], miradas: [{ f: 0, v: { x: -0.3, y: 0.6 } }, { f: k21(61.6), v: { x: -0.7, y: 0.1 } }, { f: k21(65.3), v: { x: -0.2, y: 0.8 } }] }}
+      toalla={(fr) => Math.min(1, fr / 247) * 0.4}
+      extra={<>
+        {brillo > 0 && brillo < 1 && <ellipse cx={1700 + 60 * brillo} cy={640} rx={9} ry={20} fill="#fffaf0" opacity={0.8 * Math.sin(brillo * Math.PI)} transform={`rotate(-35 ${1700 + 60 * brillo} 640)`} />}
+        {f >= k21(65.3) && <Halo x={1722} y={770} r={90} color={ORO} fuerza={0.35} />}
+      </>}
+      hud={<><Hud />
+        <LlamadaMundo cl={c21} X={1790} Y={830} dx={300} dy={40} texto="GREY ROBE" desde={k21(62.1)} hasta={k21(63.25)} />
+        <LlamadaMundo cl={c21} X={1728} Y={652} dx={-420} dy={-80} texto="BALD HEAD" desde={k21(63.3)} hasta={k21(65.2)} />
+        <LlamadaMundo cl={c21} X={1752} Y={640} dx={330} dy={-200} texto="WHITE EYEBROWS" desde={k21(64.24)} hasta={k21(65.25)} />
+        <LlamadaMundo cl={c21} X={1722} Y={771} dx={-430} dy={-120} texto="WOODEN BEADS" desde={k21(65.3)} />
+      </>} />
+  );
+};
 // ---------- 22 · las cuentas → la mesa → el farol con el loto que se enciende como a media tarde ----------
 const k22 = kDe(66.5);
 const c22 = [mira(0, 1725, 760, 3.2), mira(k22(67.9), 1700, 745, 3.2), mira(k22(69.1), 1645, 715, 3.6, { curva: "inout" }), mira(k22(70.9), 1641, 700, 5.2, { curva: "inout" }), mira(k22(72.5), 1641, 700, 5.2), mira(k22(74.2), 1560, 690, 1.7, { curva: "inout" }), mira(259, 1560, 690, 1.75)];

@@ -1,11 +1,12 @@
 // tz01 · planos 29-45 (112,4 → 211 s): la parábola. Vaishali, Amrapali, los monjes, el Buda y los 500.
 // Vuelta 2 (director): multitudes con función (pose/escala/profundidad/gesto distintos), componente por frase, cortes limpios.
 import React from "react";
-import { AbsoluteFill } from "remotion";
+import { AbsoluteFill, interpolate } from "remotion";
 import { mira, useF } from "../anikit/camara";
 import { Actor, ActorProps } from "../anikit/actor";
 import { Calendario, Contador, GranNumero, Globo, Pildora, Temporizador } from "../anikit/pantalla";
 import { Halo } from "../anikit/luz";
+import { Multitud } from "../anikit/explica";
 import { ACENTO, ALDEANA, ALDEANO, AMRAPALI, BUDA, ESC, LOTO, LOTO_ENSENA, MONJE_JOVEN, ORO, REY } from "../tenzo/elenco";
 import { Look } from "../anikit/personaje";
 import { Rotulo } from "../tenzo/hud";
@@ -13,7 +14,7 @@ import { Cuenco, Elefante } from "../tenzo/utileria";
 import { VAI_PISO, VAI_PUNTOS } from "../tenzo/sets/vaishali";
 import { CEL_SENT, kDe, Lav, LAV_PUNTOS, SENTADO, Vai } from "./base";
 import { Hud } from "./planos1";
-import { Espada, LlamadaMundo, Mango, Pensamiento, lerp } from "./extras";
+import { Chispa, Collar, EspadaDe, LlamadaMundo, Mango, Pensamiento, Rio, Salpica, lerp } from "./extras";
 
 const VP = VAI_PISO, V = VAI_PUNTOS;
 const A: React.FC<ActorProps> = (p) => <Actor escala={ESC} {...p} />;
@@ -119,37 +120,67 @@ export const P32Mangos: React.FC = () => (
     </>}
     hud={<Pildora texto="THE MOST BEAUTIFUL WOMAN IN INDIA" x={960} y={120} desde={k32(134.5)} color="#ffe2a6" />} />
 );
-// ---------- 33 · príncipes cruzaban ríos; dos reyes desenvainan frente a frente ----------
-const k33 = kDe(136.84);
+// ---------- 33 · «princes crossed rivers»: dos príncipes vadean un río con regalos en alto → corte: «kings fought wars»: dos reyes se baten a espada, chispas; ella mira aburrida ----------
+const PRINCIPE = (c: string): Look => ({ ...REY, camisa: c, pantalon: c, accesorios: [{ t: "pelo", forma: "corto", color: "#2a1a10" }, { t: "tunica", color: c, largo: 1 }, { t: "vincha", color: "#e0b040" }] });
+const ALTO_REGALO = { hD: 105, cD: 45, hI: 100, cI: 50, tronco: -4, cabeza: -6 };
+const REY_ALTO = { hD: 150, cD: 25, hI: 30, cI: 40, tronco: -6, cabeza: -4 };
+const REY_GOLPE = { hD: 78, cD: 6, hI: 20, cI: 30, tronco: 16, cabeza: 6, pI: -20, pD: 24, rD: 20 };
+const T33 = 65; // corte a los reyes
+const golpes = (desde: number, fase: number) => { const o: { f: number; v: typeof REY_ALTO }[] = [{ f: 0, v: REY_ALTO }]; for (let g = desde + fase; g < 125; g += 16) o.push({ f: g, v: REY_GOLPE }, { f: g + 8, v: REY_ALTO }); return o; };
+const angRey = (fase: number) => (f: number) => { const g = (f - T33 - fase + 1600) % 16; return g < 8 ? -25 + (g / 8) * 105 : 80 - ((g - 8) / 8) * 105; };
 export const P33Reyes: React.FC = () => {
   const f = useF();
+  const reyA: ActorProps = { look: REY, escala: ESC * 1.05, seed: 50, ruta: [{ f: 0, x: 1440, y: VP }], dir: [{ f: 0, v: 1 }], caras: [{ f: 0, v: "enojo" }], poses: golpes(T33 + 2, 0), habla: [[T33, 125]] };
+  const reyB: ActorProps = { look: { ...REY, camisa: "#3a5a8a", pantalon: "#3a5a8a", accesorios: [{ t: "barba", color: "#2a1a10" }, { t: "pelo", forma: "corto", color: "#2a1a10" }, { t: "tunica", color: "#3a5a8a", largo: 1 }, { t: "corona", color: "#e0b040" }] } as Look, escala: ESC * 1.05, seed: 51, ruta: [{ f: 0, x: 1790, y: VP }], dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "determinado" }, { f: T33 + 20, v: "enojo" }], poses: golpes(T33 + 2, 8) };
+  const choques = Array.from({ length: 8 }).map((_, i) => T33 + 2 + 4 + i * 8);
   return (
-    <Vai cl={[mira(0, 1300, 560, 0.95), mira(k33(138.9), 1360, 560, 1.0, { curva: "inout" }), mira(k33(138.9) + 1, 1600, 650, 1.8), mira(125, 1610, 650, 1.95)]}
-      medio={<>
-        <Elefante x={700 + Math.min(f, 60) * 6} piso={VP} dir={1} s={1.3} paso={f < 60 ? f / 28 : 0} />
-        <A look={REY} seed={50} ruta={[{ f: 0, x: 1380, y: VP }, { f: k33(139.2), x: 1460, y: VP }]} dir={[{ f: 0, v: 1 }]} enManoD={<Espada s={1.2} />} caras={[{ f: 0, v: "determinado" }, { f: k33(139.4), v: "enojo" }]}
-          poses={[{ f: 0, v: { hD: 20, cD: 20 } }, { f: k33(139.4), v: { hD: 150, cD: 20, tronco: 8 } }]} />
-        <A look={{ ...REY, camisa: "#3a5a8a" } as Look} seed={51} ruta={[{ f: 0, x: 1900, y: VP }, { f: k33(139.2), x: 1760, y: VP }]} dir={[{ f: 0, v: -1 }]} enManoD={<Espada s={1.2} />} caras={[{ f: 0, v: "determinado" }, { f: k33(139.4), v: "enojo" }]}
-          poses={[{ f: 0, v: { hD: 20, cD: 20 } }, { f: k33(139.5), v: { hD: 150, cD: 20, tronco: 8 } }]} />
-        <A look={AMRAPALI} seed={12} escala={ESC * 0.95} ruta={[{ f: 0, x: 1610, y: VP - 40 }]} dir={[{ f: 0, v: -1 }]} caras={[{ f: 0, v: "duda" }]} poses={[{ f: 0, v: "brazosCruzados" }]} />
+    <Vai cl={[mira(0, 900, 620, 1.3), mira(T33 - 1, 960, 620, 1.36), mira(T33, 1730, 640, 1.6), mira(125, 1730, 636, 1.7)]}
+      medio={f < T33 ? <>
+        {[0, 1].map((k) => {
+          const x0 = [520, 230][k], x1 = [1080, 760][k];
+          const x = interpolate(f, [0, T33], [x0, x1]);
+          return <g key={k}>
+            <A look={PRINCIPE(["#2e7a5a", "#7a3a8a"][k])} seed={52 + k} escala={ESC * (k ? 0.95 : 1.05)} ruta={[{ f: 0, x: x0, y: VP + 20 + k * 20 }, { f: T33, x: x1, y: VP + 20 + k * 20, curva: "lineal" }]} dir={[{ f: 0, v: 1 }]}
+              enManoD={k ? <Mango s={1.6} /> : <Collar s={1.8} />} caras={[{ f: 0, v: "determinado" }]} poses={[{ f: 0, v: ALTO_REGALO }]} ajuste={(p) => ({ ...p, ...ALTO_REGALO, hD: ALTO_REGALO.hD + 6 * Math.sin(f / 5 + k) })} />
+            <Salpica x={x} y={VP - 40} f={f + k * 7} />
+          </g>;
+        })}
+        <Rio y={VP - 30} />
+      </> : <>
+        <A look={AMRAPALI} seed={12} escala={ESC * 0.85} ruta={[{ f: 0, x: 2080, y: VP - 50 }]} dir={[{ f: 0, v: -1 }]} caras={[{ f: 0, v: "duda" }]} poses={[{ f: 0, v: "brazosCruzados" }]} miradas={[{ f: 0, v: { x: 0, y: 0.2 } }]} />
+        <A {...reyA} /><A {...reyB} />
+        <EspadaDe a={reyA} ang={angRey(0)} /><EspadaDe a={reyB} ang={angRey(8)} />
+        {choques.map((c) => <Chispa key={c} x={1615} y={VP - 330} f0={c} f={f} />)}
       </>}
-      hud={<Contador x={110} y={130} tam={46} alinear="der" lineas={[{ etiqueta: "RIVERS CROSSED", claves: [{ f: 0, v: 0 }, { f: 12, v: 7, d: 30 }], color: "#ffe2a6" }, ...(f >= k33(139.6) ? [{ etiqueta: "WARS", claves: [{ f: k33(139.6), v: 0 }, { f: k33(139.7), v: 2, d: 10 }], color: ACENTO }] : [])]} />} />
+      hud={<Contador x={110} y={130} tam={46} alinear="der" lineas={[{ etiqueta: "RIVERS CROSSED", claves: [{ f: 0, v: 0 }, { f: 12, v: 7, d: 40 }], color: "#ffe2a6" }, ...(f >= T33 ? [{ etiqueta: "WARS", claves: [{ f: T33, v: 0 }, { f: T33 + 10, v: 1, d: 6 }, { f: T33 + 34, v: 2, d: 6 }], color: ACENTO }] : [])]} />} />
   );
 };
-// ---------- 34 · todos sabían su nombre: la calle entera, a distintas distancias, la nombra ----------
-export const P34Todos: React.FC = () => (
-  <Vai cl={[mira(0, 1350, 600, 1.15), mira(172, 1420, 610, 1.3, { curva: "inout" })]}
-    medio={<>
-      {[0, 1, 2, 3, 4, 5].map((k) => {
-        const lejos = k % 3 === 2;
-        return <A key={k} look={HOMBRE(k)} seed={60 + k} escala={ESC * (lejos ? 0.72 : k === 1 ? 1.1 : 0.95)} ruta={[{ f: 0, x: 850 + k * 150, y: VP + (lejos ? -70 : k === 1 ? 40 : 0) }]}
-          dir={[{ f: 0, v: k % 2 ? -1 : 1 }, { f: 16 + k * 9, v: 1 }]} caras={[{ f: 0, v: "neutral" }, { f: 20 + k * 9, v: ["sorpresa", "feliz", "picaro", "sorpresa", "feliz", "duda"][k] }]}
-          poses={[{ f: 0, v: "parado" }, { f: 22 + k * 9, v: ["señalar", "manosCara", "saludar", "pensar", "señalar", "brazosCruzados"][k] }]} habla={[[24 + k * 9, 50 + k * 9]]} miradas={[{ f: 20 + k * 9, v: { x: 1, y: 0 } }]} />;
-      })}
-      <A look={AMRAPALI} seed={12} ruta={[{ f: 0, x: V.portal, y: VP }]} dir={[{ f: 0, v: -1 }]} caras={[{ f: 0, v: "feliz" }]} />
-    </>}
-    hud={<><Globo texto="Amrapali!" x={330} y={330} desde={30} hasta={110} cola="abajo" /><Globo texto="Amrapali…" x={820} y={260} desde={48} hasta={140} cola="abajo" /><Globo texto="Amrapali!!" x={1220} y={340} desde={70} hasta={172} cola="abajo" /></>} />
-);
+// ---------- 34 · «every man in Vaishali knew her name»: la ola de su nombre recorre a todos los hombres de la ciudad (Multitud) → «and every man wanted the same thing»: la calle entera avanza hacia ella con los brazos estirados; ella retrocede ----------
+const k34 = kDe(141.02);
+const T34 = k34(143.0);
+const QUIERE = { hD: 92, cD: 8, hI: 86, cI: 14, tronco: 10, cabeza: 4 };
+export const P34Todos: React.FC = () => {
+  const f = useF();
+  return (
+    <Vai cl={[mira(0, 1350, 600, 1.15), mira(T34 - 1, 1360, 600, 1.17), mira(T34, 1480, 620, 1.3), mira(173, 1590, 625, 1.42, { curva: "inout" })]}
+      medio={f < T34 ? null : <>
+        {[0, 1, 2, 3, 4, 5].map((k) => {
+          const lejos = k % 3 === 2;
+          const x0 = 700 + k * 150, x1 = 1320 + k * 70;
+          return <A key={k} look={HOMBRE(k)} seed={60 + k} escala={ESC * (lejos ? 0.8 : k === 1 ? 1.1 : 0.98)} ruta={[{ f: T34 + k * 3, x: x0, y: VP + (lejos ? -60 : k === 1 ? 40 : 0) }, { f: 165, x: x1, y: VP + (lejos ? -60 : k === 1 ? 40 : 0), curva: "lineal" }]}
+            dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: ["feliz", "picaro", "sorpresa", "feliz", "picaro", "risa"][k] }]} ajuste={(p, fr) => ({ ...p, ...QUIERE, hD: QUIERE.hD + 8 * Math.sin(fr / 4 + k), hI: QUIERE.hI + 8 * Math.sin(fr / 4 + k + 1.5) })}
+            habla={[[T34 + 10 + k * 7, T34 + 40 + k * 7]]} miradas={[{ f: 0, v: { x: 1, y: 0 } }]} />;
+        })}
+        <A look={AMRAPALI} seed={12} ruta={[{ f: T34, x: V.portal, y: VP }, { f: T34 + 30, x: V.portal + 40, y: VP }, { f: 160, x: V.portal + 110, y: VP }]} dir={[{ f: 0, v: -1 }]}
+          caras={[{ f: 0, v: "feliz" }, { f: T34 + 30, v: "duda" }]} ajuste={(p, fr) => (fr > T34 + 24 ? { ...p, hD: 100, cD: 35, tronco: -10, cabeza: -6 } : p)} />
+      </>}
+      hud={<>
+        {f < T34 && <Multitud x={960} y={500} w={1500} h={600} desde={0} hasta={T34} n={600} modo="ola" dur={42} color="#d9c7a8" acento={ACENTO} rotulo="AMRAPALI" contador="MEN WHO KNEW HER NAME" />}
+        {f >= T34 && <><Globo texto="Amrapali!" x={430} y={330} desde={T34 + 8} hasta={T34 + 60} cola="abajo" /><Globo texto="Amrapali…" x={820} y={260} desde={T34 + 22} hasta={T34 + 80} cola="abajo" /><Globo texto="Amrapali!!" x={1120} y={330} desde={T34 + 40} hasta={173} cola="abajo" />
+          <Pildora texto="THE SAME THING" x={960} y={120} desde={k34(144.6)} color="#ffe2a6" /></>}
+      </>} />
+  );
+};
 // ---------- 35 · una fila de monjes con cuencos por su calle ----------
 export const P35Monjes: React.FC = () => (
   <Vai cl={[mira(0, 900, 600, 1.2), mira(216, 1300, 600, 1.2, { curva: "inout" })]}

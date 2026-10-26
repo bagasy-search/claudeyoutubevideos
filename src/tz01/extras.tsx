@@ -354,3 +354,120 @@ export const PrimerTermino: React.FC<{ x: number; y: number; r?: number; quien: 
     </AbsoluteFill>
   );
 };
+
+// ================= vuelta 3 (ojo del director, escenas <8) =================
+import { estadoActor, ActorProps as AP } from "../anikit/actor";
+import { articulaciones, huesosDe } from "../anikit/personaje";
+// cara de Mara SIN sonrisa (el estilo demonio siempre sonríe): tapa los rasgos y dibuja ojos rasgados, cejas y boca recta→enojada.
+// Va en el MISMO contexto de mundo que el <Actor> de Mara (mismo Escalar), con sus mismas props.
+export const CaraMara: React.FC<{ a: AP; desde: number; enojo?: number; color?: string }> = ({ a, desde, enojo = 0, color = ACENTO }) => {
+  const f = useF();
+  const { fps } = useVideoConfig();
+  if (f < desde) return null;
+  const s = estadoActor(a, f, fps);
+  const H = huesosDe("demonio", a.look.alto);
+  const j = articulaciones(s.p, s.asiento, H, { h: 29, c: 15 });
+  const R = H.cabezaR, k = R / 40;
+  const t = lerp(f, desde, desde + 6, 0, 1);
+  const e = lerp(f, desde + 6, desde + 20, 0, enojo);
+  const op = a.opacidad ? a.opacidad(f) : 1;
+  return (
+    <g transform={`translate(${s.x},${s.y}) scale(${s.esc * s.dir},${s.esc})`} opacity={op * t}>
+      <g transform={`translate(${j.cabeza.x},${j.cabeza.y + 14}) rotate(${s.p.tronco * 0.4 + s.p.cabeza}) scale(${k})`}>
+        <circle r={37} fill="#0b0709" />
+        {[-1, 1].map((sd) => <g key={sd} stroke={color} strokeLinecap="round" fill="none">
+          <path d={`M${sd * 21},${-3 - 2 * e} L${sd * 6},${0}`} strokeWidth={4.5} />
+          <path d={`M${sd * 23},${-15 - 3 * e} L${sd * 5},${-9 + 2 * e}`} strokeWidth={4} />
+        </g>)}
+        <path d={`M-14,21 Q0,${21 - 9 * e} 14,21`} stroke={color} strokeWidth={4.5} fill="none" strokeLinecap="round" />
+      </g>
+    </g>
+  );
+};
+// río en primer término (mundo): banda de agua con oleaje que tapa piernas
+export const Rio: React.FC<{ y: number; x0?: number; x1?: number; alto?: number }> = ({ y, x0 = -800, x1 = 4200, alto = 420 }) => {
+  const f = useF();
+  const pts: string[] = [];
+  for (let x = x0; x <= x1; x += 40) pts.push(`${x},${y + 10 * Math.sin(x / 70 + f / 6)}`);
+  return (
+    <g>
+      <path d={`M${x0},${y + alto} L${pts.join(" L")} L${x1},${y + alto} Z`} fill="#4f8fb8" opacity={0.93} />
+      <path d={`M${pts.join(" L")}`} fill="none" stroke="#cfe8f4" strokeWidth={8} strokeLinecap="round" />
+      {Array.from({ length: 14 }).map((_, i) => { const xx = x0 + ((i * 397 + f * 3) % (x1 - x0)); return <path key={i} d={`M${xx},${y + 60 + (i % 4) * 70} q30,-12 60,0`} stroke="#bfe0f0" strokeWidth={5} fill="none" opacity={0.55} strokeLinecap="round" />; })}
+    </g>
+  );
+};
+// salpicadura alrededor de unas piernas que vadean (mundo)
+export const Salpica: React.FC<{ x: number; y: number; f: number }> = ({ x, y, f }) => (
+  <g>{[0, 1, 2, 3, 4].map((i) => { const t = ((f + i * 5) % 20) / 20; return <circle key={i} cx={x + (i - 2) * 22 * (1 + t)} cy={y - 40 * Math.sin(t * Math.PI) - 4} r={7 * (1 - t) + 2} fill="#dff1fa" opacity={1 - t} />; })}</g>
+);
+// chispa del choque de espadas (mundo)
+export const Chispa: React.FC<{ x: number; y: number; f0: number; f: number }> = ({ x, y, f0, f }) => {
+  const g = f - f0;
+  if (g < 0 || g > 10) return null;
+  return <g opacity={1 - g / 10}>{Array.from({ length: 8 }).map((_, i) => { const a = (i / 8) * Math.PI * 2; return <line key={i} x1={x + Math.cos(a) * (8 + g * 5)} y1={y + Math.sin(a) * (8 + g * 5)} x2={x + Math.cos(a) * (22 + g * 9)} y2={y + Math.sin(a) * (22 + g * 9)} stroke="#fff3b0" strokeWidth={6} strokeLinecap="round" />; })}<circle cx={x} cy={y} r={16 - g} fill="#fffbe0" /></g>;
+};
+// espada dibujada en el mundo con ángulo propio (desde la empuñadura)
+export const EspadaMundo: React.FC<{ x: number; y: number; ang: number; s?: number }> = ({ x, y, ang, s = 1.3 }) => (
+  <g transform={`translate(${x},${y}) rotate(${ang}) scale(${s})`}><rect x={-3} y={-120} width={7} height={110} rx={2} fill="#e4e8ee" stroke="#8a929c" strokeWidth={1.5} /><rect x={-16} y={-12} width={32} height={7} rx={2} fill="#c9963a" /><rect x={-3.5} y={-5} width={7} height={18} fill="#5a3a24" /></g>
+);
+// tel grande que se da vuelta sobre la mesa (mundo): giro 0 = pantalla a cámara, 1 = boca abajo
+export const TelVuelta: React.FC<{ x: number; y: number; giro: number; s?: number }> = ({ x, y, giro, s = 1 }) => {
+  const sy = Math.cos(giro * Math.PI);
+  const pantalla = sy > 0;
+  return (
+    <g transform={`translate(${x},${y}) scale(${s})`}>
+      {pantalla && <Halo x={0} y={-30} r={140 * sy} color={ACENTO} fuerza={0.45 * sy} />}
+      <g transform={`scale(1,${Math.max(0.08, Math.abs(sy))})`}>
+        <rect x={-34} y={-62} width={68} height={124} rx={10} fill="#15151a" stroke="#3a3a44" strokeWidth={3} />
+        {pantalla ? <rect x={-28} y={-54} width={56} height={108} rx={5} fill={ACENTO} /> : <circle cx={-16} cy={-44} r={6} fill="#2a2a32" />}
+      </g>
+    </g>
+  );
+};
+// caja de comentario del CTA (pantalla): «Tell me below» — sube desde abajo y se escribe sola
+export const CajaComentario: React.FC<{ x: number; y: number; desde: number; texto: string }> = ({ x, y, desde, texto }) => {
+  const f = useF();
+  const { fps } = useVideoConfig();
+  if (f < desde) return null;
+  const s = spring({ frame: f - desde, fps, config: { damping: 14, stiffness: 140 } });
+  const n = Math.floor(lerp(f, desde + 10, desde + 10 + texto.length * 1.6, 0, texto.length));
+  return (
+    <div style={{ position: "absolute", left: x, top: y + (1 - s) * 160, opacity: s, width: 760, padding: "22px 30px", borderRadius: 22, background: "#f8f3e8", boxShadow: "0 14px 30px rgba(0,0,0,0.35)", display: "flex", alignItems: "center", gap: 22 }}>
+      <div style={{ width: 64, height: 64, borderRadius: 32, background: "#2a2e36", flexShrink: 0 }} />
+      <div style={{ fontFamily: F_GLOBO, fontSize: 40, color: "#2a2420", whiteSpace: "nowrap", overflow: "hidden" }}>{texto.slice(0, n)}<span style={{ opacity: f % 16 < 8 ? 1 : 0 }}>|</span></div>
+    </div>
+  );
+};
+// tira de 30 días (pantalla): se pinta el 1, el 30 tiene «?»
+export const Tira30: React.FC<{ x: number; y: number; desde: number; hecho?: number }> = ({ x, y, desde, hecho = 1 }) => {
+  const f = useF();
+  if (f < desde) return null;
+  return (
+    <svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0 }}>
+      <text x={x} y={y - 26} fontFamily={F_HUD} fontWeight={600} fontSize={40} fill="#f4efe6" letterSpacing={3} opacity={lerp(f, desde, desde + 8, 0, 1)}>DAY 1 → DAY 30</text>
+      {Array.from({ length: 30 }).map((_, i) => {
+        const a = lerp(f, desde + i * 1.2, desde + i * 1.2 + 6, 0, 1);
+        const lleno = i < hecho;
+        return <g key={i} opacity={a}><rect x={x + i * 38} y={y} width={30} height={46} rx={6} fill={lleno ? ACENTO : "#2a2e36"} stroke={i === 29 ? "#ffe2a6" : "#4a4f58"} strokeWidth={i === 29 ? 4 : 2} />
+          {i === 29 && <text x={x + i * 38 + 15} y={y + 34} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={30} fill="#ffe2a6">?</text>}</g>;
+      })}
+    </svg>
+  );
+};
+// posición de la mano en el MUNDO (para colgar utilería con ángulo propio: espadas, collares que caen…)
+export const manoMundo = (a: AP, f: number, fps: number, lado: "D" | "I" = "D") => {
+  const s = estadoActor(a, f, fps);
+  const est = a.look.estilo;
+  const frontal = a.look.frontal ?? (est === "frijol" || est === "demonio");
+  const j = articulaciones(s.p, s.asiento, huesosDe(est, a.look.alto), frontal ? { h: 29, c: 15 } : { h: 6, c: 5 });
+  const m = lado === "D" ? j.bD.mano : j.bI.mano;
+  return { x: s.x + m.x * s.esc * s.dir, y: s.y + m.y * s.esc, dir: s.dir };
+};
+// espada en la mano de un actor, con el ángulo que da la función del cuadro
+export const EspadaDe: React.FC<{ a: AP; ang: (f: number) => number; s?: number }> = ({ a, ang, s = 1.3 }) => {
+  const f = useF();
+  const { fps } = useVideoConfig();
+  const m = manoMundo(a, f, fps);
+  return <EspadaMundo x={m.x} y={m.y} ang={ang(f) * m.dir} s={s} />;
+};
