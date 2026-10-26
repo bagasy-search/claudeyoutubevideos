@@ -107,8 +107,9 @@ export const Dinamometro: React.FC<{ lb?: number; caida?: number; desdeCaida?: n
   const { fps } = useVideoConfig();
   const sube = spring({ frame: f - 10, fps, config: { damping: 9 } });
   const baja = ease(f, desdeCaida, desdeCaida + 25);
-  const v = lb * sube - caida * baja;
-  const ang = -120 + (v / 140) * 240;
+  const pulso = Math.max(0, Math.sin(f / 9)) ** 3;
+  const v = lb * sube - caida * baja + pulso * 4 * sube;
+  const ang = -120 + (v / 140) * 240 + Math.sin(f * 1.3) * 1.2;
   return (
     <Pizarra titulo="GRIP STRENGTH" fuente="Leong et al., The Lancet, 2015 · ~140,000 people · 17 countries">
       <g transform="translate(760,600)">
@@ -123,7 +124,7 @@ export const Dinamometro: React.FC<{ lb?: number; caida?: number; desdeCaida?: n
       <g transform="translate(1440,560)">
         <rect x={-50} y={-180} width={100} height={360} rx={40} fill="#8a9096" />
         <rect x={-40} y={-60} width={80} height={120} rx={10} fill="#20242c" />
-        {[0, 1, 2, 3].map((k) => <rect key={k} x={-130 + sube * 30} y={-130 + k * 64} width={150} height={52} rx={26} fill="#e0a77e" />)}
+        {[0, 1, 2, 3].map((k) => <rect key={k} x={-130 + sube * 30 + pulso * 22} y={-130 + k * 64} width={150 - pulso * 14} height={52} rx={26} fill="#e0a77e" />)}
       </g>
       <g opacity={baja}>
         <text x={1440} y={860} fontFamily={F_HUD} fontWeight={600} fontSize={64} fill={ROJO} textAnchor="middle">−{caida} lb = +16% risk</text>
@@ -135,7 +136,7 @@ export const Dinamometro: React.FC<{ lb?: number; caida?: number; desdeCaida?: n
 // velocímetro de la caminata (m/s) de un viejo que camina sobre una cinta
 export const Velocimetro: React.FC<{ ms?: number; etiqueta?: string }> = ({ ms = 1.2, etiqueta = "WALKING SPEED" }) => {
   const f = useF();
-  const v = ms * ease(f, 10, 50);
+  const v = ms * ease(f, 10, 50) + (f > 50 ? Math.sin(f / 7) * 0.05 + Math.sin(f / 2.3) * 0.015 : 0);
   const ang = -120 + (v / 1.6) * 240;
   return (
     <Pizarra titulo={etiqueta} fuente="Studenski et al., JAMA, 2011 · ~35,000 older adults">
@@ -163,10 +164,12 @@ export const Cigarrillos: React.FC<{ n?: number }> = ({ n = 15 }) => {
         const x = 360 + (k % 5) * 250, y = 330 + Math.floor(k / 5) * 170;
         return (
           <g key={k} transform={`translate(${x},${y}) rotate(-8) scale(${on ? ease(f, 15 + k * 3, 21 + k * 3) : 0})`}>
-            <rect x={-100} y={-14} width={160} height={28} rx={6} fill={TINTA} />
+            {(() => { const q = Math.min(90, Math.max(0, f - 20 - k * 3) * 0.35); const fl = 0.7 + 0.3 * Math.sin(f * 0.9 + k); return <>
+            <rect x={-100 + q} y={-14} width={160 - q} height={28} rx={6} fill={TINTA} />
             <rect x={60} y={-14} width={46} height={28} rx={6} fill="#d98a3a" />
-            <rect x={-108} y={-14} width={12} height={28} rx={4} fill={ROJO} />
-            <path d={`M-112,-16 q-16,-30 0,-56 q16,-26 -4,-50`} stroke="#c9d3e0" strokeWidth={5} fill="none" opacity={0.4 + 0.2 * Math.sin(f / 7 + k)} />
+            <rect x={-108 + q} y={-14} width={12} height={28} rx={4} fill={ROJO} opacity={fl} />
+            {[0, 1].map((h) => { const t = ((f + k * 11 + h * 25) % 50) / 50; return <path key={h} d={`M${-112 + q},-16 q${-16 + Math.sin(f / 9 + k) * 8},-30 0,-56 q16,-26 -4,-50`} stroke="#c9d3e0" strokeWidth={5} fill="none" opacity={(1 - t) * 0.55} transform={`translate(${t * 10},${-t * 50})`} />; })}
+            </>; })()}
           </g>
         );
       })}
@@ -196,15 +199,15 @@ export const MensajeCel: React.FC<{ de: string; texto: string; extra?: string; d
 };
 
 // lista de «su día» que se va tachando en rojo
-export const ListaDia: React.FC<{ items: string[]; titulo?: string; check?: boolean; tiempos?: number[] }> = ({ items, titulo = "OWEN'S DAY", check, tiempos }) => {
+export const ListaDia: React.FC<{ items: string[]; titulo?: string; check?: boolean; tiempos?: number[]; profe?: boolean }> = ({ items, titulo = "OWEN'S DAY", check, tiempos, profe = true }) => {
   const f = useF();
   return (
-    <Pizarra titulo={titulo}>
+    <Pizarra titulo={titulo} profe={profe}>
       <rect x={560} y={200} width={800} height={180 + items.length * 120} rx={14} fill="#fbf6e8" transform="rotate(-2 960 540)" />
       {items.map((t, i) => {
         const a = tiempos ? tiempos[i] : 15 + i * 26;
         return (
-          <g key={i} opacity={ease(f, a, a + 6)} transform="rotate(-2 960 540)">
+          <g key={i} opacity={0.22 + 0.78 * ease(f, a, a + 6)} transform={`rotate(-2 960 540) translate(${f >= a && f < a + 10 ? Math.sin((f - a) * 1.6) * 6 * (1 - (f - a) / 10) : 0},0)`}>
             <text x={640} y={330 + i * 120} fontFamily={F_MANO} fontWeight={700} fontSize={70} fill="#2a2420">{t}</text>
             {check ? <path d={`M1200,${300 + i * 120} l24,26 l50,-60`} stroke={VERDE} strokeWidth={12} fill="none" strokeLinecap="round" strokeLinejoin="round" strokeDasharray={140} strokeDashoffset={140 * (1 - ease(f, a + 8, a + 16))} />
               : <path d={`M630,${310 + i * 120} q300,-12 640,4`} stroke={ROJO} strokeWidth={8} fill="none" strokeLinecap="round" strokeDasharray={700} strokeDashoffset={700 * (1 - ease(f, a + 12, a + 20))} />}

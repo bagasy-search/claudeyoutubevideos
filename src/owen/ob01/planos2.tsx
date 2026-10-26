@@ -56,7 +56,7 @@ export const P24Manos: React.FC = () => {
   return (
     <EnBus cl={cl} hora="manana" min={396} avance={(f) => 3200 + f * 12} owen={null}
       pas={[sent(ABERNATHY, 4, { poses: [{ f: 0, v: { tronco: -4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 120, cD: 20, hI: 25, cI: 50 } }], caras: [{ f: 0, v: "feliz" }], n: 58, edad: 72, desde: -20, seed: 2 })]}
-      hud={<><Mano texto="YOUR HANDS ARE A GAUGE" x={960} y={170} desde={0} color="#ffd27a" tam={64} /><Mano texto="40 years of mailbags" x={1300} y={860} desde={k(161.6)} color="#f4efe4" tam={58} /></>} />
+      hud={<><Mano texto="YOUR HANDS ARE A GAUGE" x={960} y={220} desde={0} color="#ffd27a" tam={64} /><Mano texto="40 years of mailbags" x={1300} y={860} desde={k(161.6)} color="#f4efe4" tam={58} /></>} />
   );
 };
 
@@ -189,7 +189,6 @@ export const P31Mediodia: React.FC = () => {
     <EnBus cl={cl} hora="dia" min={720} avance={(f) => 9000 + f * 10} pas={pas} owen={{ caras: [{ f: 0, v: "neutral" }] }}
       hud={<>
         <Pildora texto="NOON" x={960} y={170} desde={0} hasta={k(230)} color="#f4efe4" />
-        <Pildora texto="What number floats over YOUR head? Comment it ↓" x={960} y={940} desde={k(228.6)} hasta={k(236.2)} color={VERDE} tam={46} />
       </>} />
   );
 };
@@ -297,9 +296,10 @@ export const P37Casa: React.FC = () => {
   const k = kDe(277.9);
   const fin = k(283.0);
   return (
-    <Escena Set={TwoFlatFuera} pal={PAL} claves={[mira(0, 800, 560, 0.8), mira(fin, 1100, 560, 0.85, { curva: "inout" })]} seed={37} setProps={{ hora: "tarde" }}
-      medio={<Actor look={OWEN} escala={ESC * 0.85} seed={1} ruta={[{ f: 0, x: 200, y: TF_PISO + 40 }, { f: k(281.6), x: TF_PUNTOS.puerta - 20, y: TF_PISO + 40 }, { f: fin, x: TF_PUNTOS.puerta, y: TF_PISO - 60 }]} caras={[{ f: 0, v: "cansado" }]} />}
-      hud={<><Pildora texto="4:30 PM · SHIFT OVER" x={960} y={950} desde={k(278.0)} color="#f4efe4" /><HudOwen min={990} part="47/47" /></>} />
+    <Escena Set={TwoFlatFuera} pal={PAL} claves={[mira(0, 420, TF_PISO - 220, 1.5), mira(k(281.6), TF_PUNTOS.puerta - 120, TF_PISO - 230, 1.6), mira(fin, TF_PUNTOS.puerta, TF_PISO - 280, 1.9, { curva: "inout" })]} seed={37} setProps={{ hora: "tarde" }}
+      medio={<Actor look={OWEN} escala={ESC} seed={1} ruta={[{ f: 0, x: 200, y: TF_PISO + 40 }, { f: k(281.6), x: TF_PUNTOS.puerta - 20, y: TF_PISO + 40 }, { f: fin, x: TF_PUNTOS.puerta, y: TF_PISO - 60 }]} caras={[{ f: 0, v: "cansado" }, { f: k(280.2), v: "triste" }, { f: k(281.8), v: "cansado" }]}
+        poses={[{ f: 0, v: "parado" }, { f: k(279.0), v: { hD: 150, cD: 150, cabeza: 10 } }, { f: k(280.0), v: { hD: 150, cD: 130, cabeza: -8 } }, { f: k(281.0), v: "parado" }, { f: k(281.7), v: { hD: 80, cD: 10 } }, { f: k(282.4), v: "parado" }]} />}
+      hud={<><Pildora texto="4:30 PM · SHIFT OVER" x={960} y={190} desde={k(278.0)} color="#f4efe4" /><HudOwen min={990} part="47/47" /></>} />
   );
 };
 
@@ -309,7 +309,9 @@ export const P38Rosa: React.FC = () => {
   const f = useF();
   const k = kDe(283.1);
   const cose = Array.from({ length: 40 }).map((_, i) => ({ f: i * 20, v: { ...SENT_POSE, hD: 40 + (i % 2) * 14, cD: 90 - (i % 2) * 20 } }));
-  const cl = [mira(0, 640, P - 260, 1.45), mira(k(287.5), 560, P - 260, 1.6, { curva: "inout" }), mira(k(302.6), 640, P - 260, 1.5, { curva: "inout" }), mira(k(307.7), 560, P - 270, 1.85, { curva: "inout" })];
+  const RX = TF_PUNTOS.sillaRosa - 40, OXX = TF_PUNTOS.sillaOwen + 40;
+  const cl = [mira(0, 640, P - 260, 1.45), mira(k(287.5), RX + 40, P - 280, 2.1, { curva: "inout" }), mira(k(291.8), 640, P - 260, 1.55, { curva: "inout" }), mira(k(293.3), OXX - 30, P - 280, 2.0, { curva: "inout" }),
+    mira(k(294.7), RX + 40, P - 280, 2.2, { curva: "inout" }), mira(k(297.4), 640, P - 260, 1.6, { curva: "inout" }), mira(k(299.5), RX + 60, P - 270, 2.3, { curva: "inout" }), mira(k(302.6), 640, P - 260, 1.5, { curva: "inout" }), mira(k(305.8), OXX - 40, P - 280, 1.9, { curva: "inout" }), mira(k(307.7), RX + 60, P - 270, 2.0, { curva: "inout" })];
   const notas: [string, number, number][] = [["2 miles to the market, every day", 287.6, 291.7], ["never owned a car", 291.8, 293.2], ["dinner at 5:00", 293.3, 294.6], ["bed 9:30 → up at 5:00", 294.7, 297.3], ["talks to half the block", 297.4, 299.4], ["sews with the same strong hands", 299.5, 302.6]];
   return (
     <Escena Set={TwoFlatCorte} pal={PAL} claves={cl} seed={38} setProps={{ hora: "tarde", luzBaño: false }}
@@ -341,11 +343,11 @@ export const P39Dee: React.FC = () => {
         <Actor look={OWEN_CASA} escala={ESC} seed={6} ruta={[{ f: 0, x: TF_PUNTOS.sillaOwen + 60, y: P }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: "parado" }, { f: k(318.5), v: "señalar" }, { f: k(320.6), v: "parado" }, { f: k(323.5), v: "hablar" }]} caras={[{ f: 0, v: "determinado" }]} habla={[[k(318.5), k(326.4)]]} />
       </>}
       hud={<>
-        <Pildora texto="DEE · ER NURSE AT RUSH" x={960} y={950} desde={k(312.2)} hasta={k(318)} color="#f4efe4" />
+        <Pildora texto="DEE · ER NURSE AT RUSH" x={960} y={190} desde={k(312.2)} hasta={k(318)} color="#f4efe4" />
         <Globo texto="Prove it." x={620} y={300} desde={k(315.5)} hasta={k(317.8)} cola="abajo" tam={40} />
         <Etq cl={cl} x={TF_PUNTOS.sillaRosa - 40} y={P - 280} n={38} edad={34} desde={k(320.2)} />
-        <Mano texto="night shifts" x={1350} y={300} desde={k(323.5)} color="#ffd27a" tam={56} />
-        <Mano texto="4 hours of sleep" x={1350} y={410} desde={k(324.7)} color="#ffd27a" tam={56} />
+        <Mano texto="night shifts" x={1300} y={560} desde={k(323.5)} color="#ffd27a" tam={56} />
+        <Mano texto="4 hours of sleep" x={1300} y={670} desde={k(324.7)} color="#ffd27a" tam={56} />
         <Mano texto="her doctor said the same thing last week" x={960} y={900} desde={k(327.7)} color="#f4efe4" tam={50} />
         <HudOwen min={1290} part="47/47" />
       </>} />
@@ -357,7 +359,7 @@ export const P41Lista: React.FC = () => {
   const k = kDe(337.8);
   return (
     <AbsoluteFill>
-      <ListaDia check titulo="WHAT READS YOUNGER" items={["sleep enough", "move every day", "don't smoke", "stay close to people"]} tiempos={[k(340.2), k(341.3), k(342.0), k(342.9)]} />
+      <ListaDia check profe={false} titulo="WHAT READS YOUNGER" items={["sleep enough", "move every day", "don't smoke", "stay close to people"]} tiempos={[k(340.2), k(341.3), k(342.0), k(342.9)]} />
       <Mano texto="not overnight — but it moves." x={960} y={980} desde={k(344.7)} color={VERDE} tam={64} />
       <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}><Actor look={OWEN} escala={ESC * 1.1} seed={1} ruta={[{ f: 0, x: 420, y: 900 }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: "parado" }, ...[340.2, 341.3, 342.0, 342.9].flatMap((t) => [{ f: k(t) - 4, v: "señalar" }, { f: k(t) + 12, v: "parado" }]), { f: k(344.7), v: "celebrar" }]} caras={[{ f: 0, v: "duda" }, { f: k(340.2), v: "feliz" }, { f: k(344.7), v: "risa" }]} miradas={[{ f: 0, v: { x: 1, y: -0.4 } }]} /></svg>
       <HudOwen part="47/47" />
