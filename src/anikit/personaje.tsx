@@ -407,7 +407,11 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
           <path d={`M-9,2 Q0,${-8 * ab} 9,2`} stroke={neon} strokeWidth={4} fill="none" strokeLinecap="round" />
         ) : (
           <>
-            <ellipse rx={ojoRx} ry={ojoRy} fill={zombi ? "#d9dccb" : "#fbf8f0"} stroke={frijol ? contorno : undefined} strokeWidth={2.2} />
+            {ab < 0.2 ? ( // 26-oct: ojo cerrado = arco (la elipse finita acostada se leía como una «B»)
+              <path d={`M${-ojoRx},-1 Q0,${ojoRx * 0.8} ${ojoRx},-1`} stroke={frijol ? contorno : "#fbf8f0"} strokeWidth={3.4} fill="none" strokeLinecap="round" />
+            ) : (
+              <ellipse rx={ojoRx} ry={ojoRy} fill={zombi ? "#d9dccb" : "#fbf8f0"} stroke={frijol ? contorno : undefined} strokeWidth={2.2} />
+            )}
             {e.pupila > 0 && ab > 0.2 && (
               <>
                 <circle cx={mx} cy={my + 1} r={e.pupila * (frijol ? 1.05 : 1)} fill="#1a1412" />
