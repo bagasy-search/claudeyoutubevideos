@@ -20,13 +20,14 @@ import { MostrarInsertos, Ins } from "./insertos";
 import { INS_A } from "./ins_a";
 import { INS_B } from "./ins_b";
 import { INS_C } from "./ins_c";
+import { INS_D } from "./ins_d";
 
 // Soot 04 completo: UN mundo, UNA cámara. Cada parte aporta sus claves de cámara, su paleta y lo que pone
 // en el mundo (detrás de las olas / en el mundo / delante del agua) y en pantalla (hud). Tiempo absoluto.
 export const COMPLETO_DUR = Math.ceil(901.8 * FPS);
 const PARTES: Parte[] = [P0, P1, P2, P3, P4, P5, P6, P7, P8];
 const KEYS = PARTES.flatMap((p) => p.keys).sort((a, b) => a.t - b.t);
-const INSERTOS: Ins[] = [...INS_A, ...INS_B, ...INS_C].sort((a, b) => a.a - b.a);
+const INSERTOS: Ins[] = [...INS_A, ...INS_B, ...INS_C, ...INS_D].sort((a, b) => a.a - b.a);
 const PAL = PARTES.flatMap((p) => p.pal).sort((a, b) => a[0] - b[0]);
 
 const LejosBase: React.FC<{ t: number; noche: boolean }> = ({ t, noche }) => (
