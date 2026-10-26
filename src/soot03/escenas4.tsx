@@ -19,7 +19,7 @@ const loma = (y0: number, amp: number, fase: number, dx: number) => {
 };
 
 // cielo con sol y halo, nubes que derivan, 3 lomas con paralaje (la cámara se desliza sola), pasto que se mece al frente
-export const Exterior: React.FC<{ t: number; tono?: TonoE; viento?: number; horizonte?: number; children?: React.ReactNode }> = ({ t, tono = "dia", viento = 1, horizonte = 560, children }) => {
+export const Exterior: React.FC<{ t: number; tono?: TonoE; viento?: number; horizonte?: number; pasto?: boolean; children?: React.ReactNode }> = ({ t, tono = "dia", viento = 1, horizonte = 560, pasto = true, children }) => {
   const P = CIELO[tono];
   const pan = t * 18;
   return (
@@ -38,12 +38,12 @@ export const Exterior: React.FC<{ t: number; tono?: TonoE; viento?: number; hori
       </svg>
       {children}
       {/* pasto del frente, se mece con el viento */}
-      <svg style={{ position: "absolute", inset: 0, pointerEvents: "none" }} width={1920} height={1080}>
+      {pasto && <svg style={{ position: "absolute", inset: 0, pointerEvents: "none" }} width={1920} height={1080}>
         {Array.from({ length: 64 }, (_, i) => {
           const x = i * 31 + ((i * 53) % 17), h = 50 + ((i * 37) % 45), sw = (10 + 8 * Math.sin(t * 2.6 + i * 0.5)) * viento;
           return <path key={i} d={`M ${x} 1085 q ${sw * 0.5} ${-h / 2} ${sw} ${-h}`} stroke={i % 3 ? "#3f7a2a" : "#2f5a20"} strokeWidth={9} strokeLinecap="round" fill="none" />;
         })}
-      </svg>
+      </svg>}
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 40%, rgba(0,0,0,0) 60%, rgba(10,5,25,.3) 100%)", pointerEvents: "none" }} />
     </AbsoluteFill>
   );

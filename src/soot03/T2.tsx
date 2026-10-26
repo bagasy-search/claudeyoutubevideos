@@ -1,6 +1,7 @@
 import React from "react";
 import { Sala } from "./sets";
 import { Pantalones } from "./escenas4";
+import { NadieCuida } from "./escenas5";
 import { AbsoluteFill } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Pergamino } from "./kit";
 import { Fuerte, Ropa, Mula } from "./kit2";
@@ -171,7 +172,7 @@ const Parte: React.FC<{ t: number }> = ({ t }) => {
   };
   return (
     <AbsoluteFill>
-      <Sala t={t} tono="noche" />
+      <Sala t={t} tono="noche" estante={false} lampara={false} />
       {Array.from({ length: 752 }, (_, i) => {
         const cx = 110 + (i % 47) * 31, cy = 280 + Math.floor(i / 47) * 36;
         return t > T("the first cohort", D) + i * 0.002 ? <div key={i} style={{ position: "absolute", left: cx, top: cy, width: 22, height: 30, borderRadius: "11px 11px 4px 4px", background: col(i) }} /> : null;
@@ -291,13 +292,14 @@ export const S2: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       {t > T("then it rains sideways", D) && t < T("it snows", D) && Array.from({ length: 40 }, (_, i) => { const k = (t * 3 + i * 0.173) % 1; return <div key={i} style={{ position: "absolute", left: -200 + k * 2400, top: (i * 61) % 1080, width: 180, height: 6, borderRadius: 3, background: "#d6e6ff", opacity: 0.7 }} />; })}
       <Gr t={t} w="for a change" d={D} txt="FOR A CHANGE…" y={880} size={90} c={C.crema} dur={1.0} />
       <Gr t={t} w="the roads turn into mud" d={D} txt="MUD." y={200} size={170} c="#c9a36a" dur={1.3} />
-      {t > T("one merchant", D) && t < T("so you adapt", D) && <TablillaGrande t={t} t0={T("one merchant", D) + 0.4} x={1380} y={250} w={900} vel={26} titulo="A MERCHANT · VINDOLANDA TABLET"
-        lineas={["“I would have collected the goods already…", "…but I did not want to injure the animals", "while the roads are bad.”"]} />}
+      {t > T("one merchant", D) && t < T("so you adapt", D) && <TablillaGrande t={t} t0={T("one merchant", D) + 0.4} x={1480} y={340} w={780} vel={26} titulo="VINDOLANDA TABLET"
+        lineas={["“I would have collected", "the goods already… but I did", "not want to injure the animals", "while the roads are bad.”"]} />}
       <Plano t={t} t0={T("so you adapt", D) - 0.1} t1={T("for centuries", D) - 0.15} desde={[960, 600]} fondo="#b9a98e"><Pantalones t={t} t0={T("so you adapt", D)} tPant={T("you wear trousers", D)} /></Plano>
       <Ch t={t} w="so you adapt" d={D} txt="SO YOU ADAPT" y={150} c={C.teal} tinta={C.noche} size={66} dur={1.0} />
       <Ch t={t} w="no proper roman" d={D} txt="NO PROPER ROMAN WOULD…" y={150} c={C.rojo} size={60} dur={3.4} />
       <Gr t={t} w="you wear trousers" d={D} txt="TROUSERS." y={200} size={180} c={C.ambar} dur={1.4} />
       <Plano t={t} t0={T("for centuries", D) - 0.1} t1={T("on the wall", D) - 0.15} desde={[yo[0], yo[1] + 200]} fondo="#e8b98a"><Burla t={t} /></Plano>
+      <Plano t={t} t0={T("on the wall", D) - 0.1} t1={T("you want wool", D) - 0.15} desde={[960, 600]} fondo="#6f82a0"><NadieCuida t={t} t0={T("on the wall", D)} /></Plano>
       <Gr t={t} w="nobody cares" d={D} txt="NOBODY CARES." y={200} size={130} c={C.lima} dur={1.5} />
       <Ch t={t} w="you want wool" d={D} txt="WOOL. LOTS OF IT." y={150} c={C.violeta} size={66} dur={1.9} />
       {t > T("thick socks", D) && t < T("britain became so famous", D) && (

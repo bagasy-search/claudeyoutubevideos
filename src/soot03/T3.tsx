@@ -1,6 +1,7 @@
 import React from "react";
 import { Sala } from "./sets";
 import { Camino } from "./escenas4";
+import { CaminoLluvia } from "./escenas5";
 import { AbsoluteFill } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Bota, Moneda } from "./kit";
 import { Papiro, Item, Mula } from "./kit2";
@@ -166,6 +167,7 @@ export const S3: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Ch t={t} w="all of this travels" d={D} txt="LONG ROADS" x={560} y={150} c={C.violeta} size={60} dur={3.6} />
       <Ch t={t} w="in carts" d={D} txt="CARTS" x={1000} y={150} c={C.tierra} size={60} dur={2.9} />
       <Ch t={t} w="in the rain" d={D} txt="RAIN" x={1380} y={150} c="#3d7fc9" size={60} dur={2.1} />
+      <Plano t={t} t0={T("all of this travels", D) - 0.1} t1={T("if the convoy is late", D) - 0.15} desde={[960, 600]} fondo="#6f82a0"><CaminoLluvia t={t} t0={T("all of this travels", D)} tLadron={T("past people who would", D)} /></Plano>
       <Ch t={t} w="past people who would" d={D} txt="THIEVES" y={260} c={C.rojo} size={70} dur={1.6} />
       <Ch t={t} w="if the convoy is late" d={D} txt="CONVOY LATE?" y={150} c={C.ambar} tinta={C.noche} size={66} dur={1.9} />
       <Ch t={t} w="you eat what you have" d={D} txt="EAT WHAT YOU HAVE" y={260} c="#2a2350" size={54} dur={1.6} />

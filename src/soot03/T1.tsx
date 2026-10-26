@@ -5,6 +5,7 @@ import { Denario, Soldadito } from "./kit2";
 import { Persona, CENTURION, LUCIUS, CIVIL } from "./persona";
 import { TOP, BASE, MC, K, Cam, Pal, Plano, CartelTrampa, pant } from "./mundo";
 import { Exterior } from "./escenas4";
+import { Adriano } from "./escenas5";
 import { Yo, Picto, DiplomaBronce, Gr, Cu, Sale, Ch, T, ck, Actua } from "./kit3";
 
 // TRAMPA 1 · EL DESTINO (48,3-182,6 s). El muro se DESARMA al año 122 y lo levantan las legiones delante nuestro;
@@ -267,6 +268,7 @@ export const S1: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Ch t={t} w="hadrian has just" d={D} txt="EMPEROR HADRIAN" y={140} c="#7a2a9a" dt={0.3} dur={2.3} />
       <Ch t={t} w="visited britain" d={D} txt="VISITS BRITAIN" y={230} c={C.teal} tinta={C.noche} size={50} dur={1.8} />
       {t > T("his biographer", D) && t < T("he was the first", D) + 0.2 && <Pergamino x={1440} y={520} w={480} abre={prog(t, T("his biographer", D), T("his biographer", D) + 0.6) * 0.7} titulo="HIS BIOGRAPHY" lineas={5} />}
+      <Plano t={t} t0={T("he was the first", D) - 0.1} t1={T("80 miles long", D) - 0.45} desde={[960, 600]} fondo="#5fb4ea"><Adriano t={t} t0={T("he was the first", D) - 0.1} t1={T("80 miles long", D) - 0.45} /></Plano>
       <Ch t={t} w="he was the first" d={D} txt="“THE FIRST TO BUILD A WALL”" y={140} c={C.crema} tinta="#7a3d14" size={60} dur={2.5} />
       <Cu t={t} w="80 miles long" d={D} de={0} a={80} sube={0.8} dur={3.3} y={300} size={170} suf=" MILES" color={C.ambar} />
       {/* Adriano en primer plano señala la línea (de punta a punta) */}
@@ -276,7 +278,7 @@ export const S1: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       </Sale>
       {/* contador de obra: millas levantadas */}
       {t > 68.6 && t < 79.5 && (
-        <div style={{ position: "absolute", right: 60, bottom: 60, padding: "14px 28px", borderRadius: 22, background: "#2a1530", border: "6px solid #fff", fontFamily, fontWeight: 700, color: "#fff", fontSize: 44, transform: `scale(${ent(t, 68.6)})` }}>
+        <div style={{ position: "absolute", right: 60, top: 40, padding: "14px 28px", borderRadius: 22, background: "#2a1530", border: "6px solid #fff", fontFamily, fontWeight: 700, color: "#fff", fontSize: 44, transform: `scale(${ent(t, 68.6)})` }}>
           🧱 MILES BUILT: <span style={{ color: C.ambar }}>{Math.round(80 * prog(t, 68.6, 79))}</span> / 80
         </div>
       )}
@@ -303,7 +305,7 @@ export const S1: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Ch t={t} w="more than a dozen" d={D} txt="12+ FORTS" y={200} c={C.rojo} size={110} dur={3.2} />
       <Emote t={t} t0={T("changed their minds", D)} t1={T("the wall was planned", D)} tipo="preg" x={960} y={330} s={1.2} />
       <Ch t={t} w="changed their minds" d={D} txt="CHANGE OF PLANS" y={150} c={C.violeta} size={66} dur={2.4} />
-      <Plano t={t} t0={T("the wall was planned", D) - 0.1} t1={T("then the legions go home", D) - 0.2} desde={[960, 600]} fondo="#2d1b69"><Exterior t={t} tono="dia" horizonte={720}><Ancho t={t} /></Exterior></Plano>
+      <Plano t={t} t0={T("the wall was planned", D) - 0.1} t1={T("then the legions go home", D) - 0.2} desde={[960, 600]} fondo="#2d1b69"><Exterior t={t} tono="dia" horizonte={720} pasto={t < T("like a pair of trousers", D)}><Ancho t={t} /></Exterior></Plano>
       <Ch t={t} w="go home to their big" d={D} txt="→ YORK · CHESTER · CAERLEON" y={160} c={C.rojo} size={56} dur={3.0} />
       <Ch t={t} w="needs somebody" d={D} txt="SOMEBODY HAS TO STAND ON IT" y={160} c={C.violeta} size={58} dur={2.2} />
       <Gr t={t} w="that somebody is you" d={D} txt="YOU." y={190} size={200} c={C.ambar} dur={1.1} dt={0.3} />

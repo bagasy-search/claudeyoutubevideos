@@ -36,11 +36,26 @@ const Piso: React.FC<{ t: number }> = ({ t }) => {
     <AbsoluteFill style={{ background: "#2a1a10" }}>
       <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 360, background: "linear-gradient(180deg,#e8b98a,#c98a5a)" }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 360, height: 90, background: "#a8783a" }} />
+      <div style={{ position: "absolute", left: 1380, top: -120, width: 420, height: 420, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,240,190,.95) 0 14%, rgba(255,220,150,.3) 16%, rgba(255,220,150,0) 62%)" }} />
+      {/* las ruinas del fuerte en el horizonte */}
+      <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={460}>
+        {[[60, 250, 220], [330, 285, 140], [1500, 240, 260], [1800, 290, 120]].map(([x, y, w], i) => <g key={i}><rect x={x} y={y} width={w} height={360 - y} fill="#9a8a72" stroke="#6a5a44" strokeWidth={5} />{Array.from({ length: Math.floor(w / 60) }, (_, j) => <rect key={j} x={x + 8 + j * 60} y={y + 14 + (j % 2) * 30} width={44} height={20} rx={4} fill="#b9a98e" />)}</g>)}
+        {Array.from({ length: 40 }, (_, i) => { const x = i * 49 + ((i * 31) % 20), sw = 6 * Math.sin(t * 2.4 + i); return <path key={i} d={`M ${x} 362 q ${sw / 2} -14 ${sw} -28`} stroke="#5f8a3a" strokeWidth={6} strokeLinecap="round" fill="none" />; })}
+      </svg>
       <div style={{ position: "absolute", left: 0, right: 0, top: 450, bottom: 0, background: "repeating-linear-gradient(180deg,#5a3a22 0 60px,#4a3018 60px 120px)" }} />
+      <svg style={{ position: "absolute", left: 0, top: 450 }} width={1920} height={630}>
+        {Array.from({ length: 26 }, (_, i) => <ellipse key={i} cx={(i * 173) % 1920} cy={40 + ((i * 97) % 560)} rx={18 + (i % 4) * 8} ry={12 + (i % 3) * 5} fill="#7a6a5a" opacity={0.8} />)}
+      </svg>
+      {/* balde y pico al borde del pozo */}
+      <svg style={{ position: "absolute", left: 1600, top: 300, overflow: "visible" }} width={200} height={160}>
+        <path d="M 20 40 L 120 40 L 108 150 L 32 150 Z" fill="#8a6a4a" stroke="#4a3018" strokeWidth={6} />
+        <path d="M 20 40 Q 70 -10 120 40" stroke="#3a2a1a" strokeWidth={5} fill="none" />
+        <line x1={150} y1={150} x2={210} y2={10} stroke="#6b4a2f" strokeWidth={10} /><path d="M 170 20 Q 210 0 250 30" stroke="#5d6577" strokeWidth={12} fill="none" />
+      </svg>
       <div style={{ position: "absolute", left: 360, top: 360, width: 1200, height: 520 * cav, background: "rgba(10,6,4,.6)", borderRadius: "0 0 60px 60px" }} />
       {t > c - 0.2 && <Esqueleto x={760} y={640} s={1.1} t={t} t0={c} />}
       {t > c && <Esqueleto x={1240} y={720} s={1.1} t={t} t0={c + 0.4} rot={180} cuchillo={t > k} />}
-      <Persona x={t < c ? 520 : 300} y={t < c ? 420 + 420 * cav : 430} h={300} t={t} seed={77} ropa={CIVIL(2)} {...gesto(t, [[a, "cava"], [c, "sorpresa"], [c + 1.4, "miedo"], [k, "señala"]])} />
+      <Persona x={t < c ? 520 : 300} y={t < c ? 455 + 330 * cav : 560} h={420} t={t} seed={77} ropa={CIVIL(2)} {...gesto(t, [[a, "cava"], [c, "sorpresa"], [c + 1.4, "miedo"], [k, "señala"]])} />
       {t > a + 0.4 && t < c && Array.from({ length: 8 }, (_, i) => { const q = ((t - a) * 1.4 + i / 8) % 1; return <div key={i} style={{ position: "absolute", left: 600 + q * (220 + i * 30), top: 360 + 420 * cav - Math.sin(q * Math.PI) * (200 + i * 20), width: 26, height: 22, borderRadius: 8, background: "#a8783a", opacity: 1 - q * 0.5 }} />; })}
       <Chip t={t} t0={a} text="HOUSESTEADS · 1930s" color={C.violeta} x={960} y={110} centro size={60} />
       {t > b && t < c + 1 && <Chip t={t} t0={b} text="UNDER THE CLAY FLOOR" color="#a8783a" x={960} y={410} centro size={50} />}
@@ -67,7 +82,6 @@ const Informe: React.FC<{ t: number }> = ({ t }) => {
       {[["they have no armor", "NO ARMOR", 520, C.rojo], ["they have lots of cavalry", "LOTS OF CAVALRY", 1400, C.teal]].map(([p, tx, x, col], i) => t > T(p as string, D) && t < b ? <Chip key={i} t={t} t0={T(p as string, D)} text={tx as string} color={col as string} tinta={i ? C.noche : "#fff"} x={(x as number) === 520 ? 820 : 1460} y={900} centro size={60} /> : null)}
       {t > b && <div style={{ position: "absolute", left: 560, right: 160, top: 780, height: 150, background: C.ambar, borderRadius: 24, transform: `scale(${ent(t, b + 0.4)}) rotate(-2deg)`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700, fontSize: 96, color: C.noche, letterSpacing: 4 }}>BRITTUNCULI</div>}
       {t > w && <Chip t={t} t0={w} t1={T("and it was written", D) - 0.2} text="= “WRETCHED LITTLE BRITONS”" color={C.rojo} x={1100} y={990} centro size={60} />}
-      {t > T("it is the only time", D) && <Grande t={t} t0={T("it is the only time", D) + 0.3} text="“BRITTUNCULI”" x={1100} y={560} size={150} color={C.rojo} borde="#fff" />}
       {t > T("it is the only time", D) && <Chip t={t} t0={T("it is the only time", D)} text="THE ONLY TIME THIS WORD EVER APPEARS" color="#fff" tinta={C.noche} x={1100} y={130} centro size={52} />}
     </AbsoluteFill>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import { Sala } from "./sets";
 import { MiraNorte, Frio } from "./escenas4";
+import { Aduana } from "./escenas5";
 import { AbsoluteFill } from "remotion";
 import { C, fontFamily, fontMano, ent, prog, Chip, Grande, Emote, cabeza, Zzz } from "./kit";
 import { Papiro } from "./kit2";
@@ -208,6 +209,7 @@ export const S4: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Ch t={t} w="so a lot of your day" d={D} txt="NOT FIGHTING…" y={150} c={C.rojo} size={60} dur={2.2} />
       <Gr t={t} w="it is paperwork" d={D} txt="PAPERWORK." y={200} size={150} c={C.crema} dur={1.2} />
       {[["who is crossing", "WHO?", 500], ["what are they carrying", "WHAT?", 960], ["are they paying the toll", "TOLL?", 1420]].map(([w, tx, x], i) => <Ch key={i} t={t} w={w as string} d={D} txt={tx as string} x={x as number} y={170} c={[C.teal, C.ambar, C.rojo][i]} tinta={i < 2 ? C.noche : "#fff"} size={80} dur={3.6 - i * 1.1} />)}
+      <Plano t={t} t0={T("who is crossing", D) - 0.2} t1={T("less like a castle", D) - 0.15} desde={[960, 600]} fondo="#b9a98e"><Aduana t={t} t0={T("who is crossing", D) - 0.2} tQue={T("what are they carrying", D)} tPeaje={T("are they paying the toll", D)} /></Plano>
       <Ch t={t} w="many historians now" d={D} txt="A CUSTOMS BARRIER" x={560} y={160} c={C.teal} tinta={C.noche} size={58} dur={3.7} />
       <Ch t={t} w="as a battle" d={D} txt="AS MUCH AS A BATTLE LINE" x={1340} y={160} c={C.rojo} size={52} dur={1.0} />
       <Ch t={t} w="less like a castle" d={D} txt="LESS LIKE A CASTLE" y={150} c="#2a2350" size={58} dur={1.2} />

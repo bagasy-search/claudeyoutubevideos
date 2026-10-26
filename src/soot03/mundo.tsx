@@ -167,13 +167,10 @@ const hsh = (k: number, j = 0) => { const v = Math.sin(k * 91.7 + j * 47.3) * 43
 const Desgaste: React.FC<{ x0: number; x1: number; t: number; oscuro: string }> = ({ x0, x1, t, oscuro }) => {
   const out: React.ReactNode[] = [];
   for (let k = Math.floor(x0 / 380); k <= Math.ceil(x1 / 380); k++) {
-    const x = k * 380 + hsh(k) * 200, tipo = Math.floor(hsh(k, 1) * 5);
+    const x = k * 380 + hsh(k) * 200, tipo = [0, 1, 0, 3, 4][Math.floor(hsh(k, 1) * 5)];
     if (tipo === 0) out.push(<g key={k}>{[0, 1, 2].map((j) => <ellipse key={j} cx={x + j * 34} cy={BASE - 40 - hsh(k, j + 2) * 60} rx={46 - j * 8} ry={22} fill="#4f7a34" opacity={0.42} />)}</g>);
     else if (tipo === 1) out.push(<path key={k} d={`M ${x} ${TOP + 40} l 18 50 l -14 40 l 22 60 l -10 50`} stroke={oscuro} strokeWidth={5} fill="none" opacity={0.7} />);
-    else if (tipo === 2) {
-      const sw = 6 * Math.sin(t * 1.6 + k);
-      out.push(<g key={k}><path d={`M ${x} ${TOP + 10} q ${sw} 70 ${-8 + sw} 150 q ${-sw} 60 ${6} 120`} stroke="#3c6a2a" strokeWidth={6} fill="none" />{[0, 1, 2, 3, 4, 5].map((j) => <ellipse key={j} cx={x + (j % 2 ? 14 : -12) + sw * (j / 6)} cy={TOP + 30 + j * 44} rx={16} ry={10} fill={j % 2 ? "#4f8a34" : "#3f7a2a"} transform={`rotate(${j % 2 ? 30 : -30} ${x} ${TOP + 30 + j * 44})`} />)}</g>);
-    } else if (tipo === 3) out.push(<rect key={k} x={x} y={TOP + 60 + Math.floor(hsh(k, 4) * 4) * 60} width={56} height={26} rx={5} fill={oscuro} opacity={0.38} />);
+    else if (tipo === 3) out.push(<rect key={k} x={x} y={TOP + 60 + Math.floor(hsh(k, 4) * 4) * 60} width={56} height={26} rx={5} fill={oscuro} opacity={0.38} />);
     else out.push(<ellipse key={k} cx={x} cy={TOP + 120 + hsh(k, 5) * 120} rx={70} ry={110} fill={oscuro} opacity={0.16} />);
   }
   return <g>{out}</g>;
