@@ -52,10 +52,10 @@ const Base: React.FC<{ g: SegJ; t: number }> = ({ g, t }) => {
   if (g.k === "av") return <Avatar t={t} />;
   if (g.k === "img" || g.k === "clip") return <Shot g={g} t={t} />;
   // fondo de las piezas grandes: una foto REAL del taller, empuje lento y oscurecida (sin blur)
-  const q = Math.min(1, Math.max(0, (t - g.a) / 14));
+  const q = Math.min(1, Math.max(0, (t - g.a) / 8));  // QC 26-oct: más empuje (el farm marcaba congelado)
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#0f0d0b" }}>
-      {g.src ? <Img src={staticFile(g.src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.06 * q})` }} /> : null}
+      {g.src ? <Img src={staticFile(g.src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.1 * q})` }} /> : null}
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, rgba(18,12,6,.45), rgba(10,7,4,.86) 75%)" }} />
     </AbsoluteFill>
   );

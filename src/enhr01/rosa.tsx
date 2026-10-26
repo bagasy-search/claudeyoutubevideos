@@ -123,9 +123,11 @@ export const Cinco: React.FC<{ t: number; at: number; out: number; title?: strin
 export const Numero: React.FC<{ t: number; at: number; out: number; n: string; title: string; sub?: string; kicker?: string }> = ({ t, at, out, n, title, sub, kicker = "NUMBER" }) => {
   const o = vis(t, at, out); if (o <= 0.01) return null;
   const k = K(spr(t, at, 0.8)), k2 = ei(t, at + 0.25, at + 0.9);
+  const dr = Math.min(1, Math.max(0, (t - at) / Math.max(1, out - at)));  // QC 26-oct: empuje lento continuo (quieta 2-3 s = «congelado» en el farm)
   return (
     <div style={{ position: "absolute", inset: 0, opacity: o, fontFamily: FONT }}>
       <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 30% 55%, rgba(20,14,8,.3), rgba(16,12,8,.86) 70%)" }} />
+      <div style={{ position: "absolute", inset: 0, transform: `scale(${1 + 0.07 * dr}) translate(${-18 * dr}px, ${-8 * dr}px)`, transformOrigin: "45% 50%" }}>
       <div style={{ position: "absolute", left: 170, top: 270, width: 440, height: 440, borderRadius: 26, background: `linear-gradient(145deg, ${RO.azulejo2}, ${RO.azulejo})`, boxShadow: "0 40px 90px rgba(0,0,0,.6), inset 0 0 0 10px rgba(255,255,255,.25)", transform: `translateX(${(1 - k) * -160}px) rotate(${(1 - k) * -12}deg) scale(${0.8 + 0.2 * k})`, display: "flex", alignItems: "center", justifyContent: "center" }}>
         <div style={{ fontFamily: SERIF, fontSize: 340, fontWeight: 900, lineHeight: 1, color: RO.tinta, textShadow: extrude(8, "#9a7a20") }}>{n}</div>
       </div>
@@ -134,6 +136,7 @@ export const Numero: React.FC<{ t: number; at: number; out: number; n: string; t
         <div style={{ height: 5, width: 820 * k2, background: RO.lila, margin: "18px 0 22px", borderRadius: 3 }} />
         <div style={{ fontFamily: SERIF, fontSize: 96, fontWeight: 900, color: RO.ink, lineHeight: 1.05, textWrap: "balance" as any, transform: `translateY(${(1 - k2) * 40}px)`, opacity: k2, textShadow: "0 6px 30px rgba(0,0,0,.6)" }}>{title}</div>
         {sub && <div style={{ fontSize: 40, fontWeight: 700, color: RO.azulejo2, marginTop: 20, opacity: e(t, at + 0.8, at + 1.2) }}>{sub}</div>}
+      </div>
       </div>
     </div>
   );
