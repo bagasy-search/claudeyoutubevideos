@@ -50,12 +50,12 @@ const D = 0.36;
 const Base: React.FC<{ g: SegJ; t: number }> = ({ g, t }) => {
   if (g.k === "av") return <Avatar t={t} />;
   if (g.k === "img" || g.k === "clip") return <Shot g={g} t={t} />;
-  // fondo de las piezas grandes: una foto REAL del taller, empuje lento y oscurecida (sin blur)
-  const q = Math.min(1, Math.max(0, (t - g.a) / 14));
+  // fondo de las piezas grandes: una foto REAL del taller, empuje + balanceo lento y oscurecida (sin blur); nunca queda quieto aunque la pieza ya esté armada
+  const u = Math.min(9, Math.max(0, t - g.a)), fl = 0.035 * Math.sin(u * 2.3) + 0.02 * Math.sin(u * 5.1 + 1.3);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#0f0d0b" }}>
-      {g.src ? <Img src={staticFile(g.src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.06 * q})` }} /> : null}
-      <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, rgba(18,12,6,.45), rgba(10,7,4,.86) 75%)" }} />
+      {g.src ? <CamaraMano intensidad={0.9} seed={Math.round(g.a)}><Img src={staticFile(g.src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.06 + 0.02 * u}) translate(${-20 * u}px, ${-8 * u}px)` }} /></CamaraMano> : null}
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, rgba(18,12,6,.45), rgba(10,7,4,.86) 75%)", opacity: 0.93 + fl }} />
     </AbsoluteFill>
   );
 };
@@ -104,6 +104,14 @@ const Piece: React.FC<{ o: O; t: number }> = ({ o, t }) => {
   }
 };
 
+// luz de veladora sobre las piezas grandes: resplandor cálido que tiembla suave (la escala no queda nunca en un cuadro quieto)
+const Veladora: React.FC<{ t: number; a: number }> = ({ t, a }) => {
+  const u = t - a, fl = 0.5 + 0.22 * Math.sin(u * 11.3) + 0.16 * Math.sin(u * 17.9 + 2.1) + 0.12 * Math.sin(u * 4.7 + 0.6);
+  const x = 30 + 4 * Math.sin(u * 0.9), y = 62 + 3 * Math.sin(u * 1.3 + 1);
+  return <AbsoluteFill style={{ pointerEvents: "none", mixBlendMode: "soft-light", opacity: 0.55 * fl * Math.min(1, u / 0.6),
+    background: `radial-gradient(ellipse 70% 80% at ${x}% ${y}%, rgba(255,176,90,.9), rgba(255,150,60,.25) 55%, rgba(0,0,0,0) 85%)` }} />;
+};
+
 export const Main: React.FC = () => {
   const t = useCurrentFrame() / 30;
   let i = 0; while (i < SG.length - 1 && SG[i + 1].a <= t) i++;
@@ -112,7 +120,11 @@ export const Main: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: "#0f0d0b" }}>
       {inTr ? <Trans t={t} g={g} from={<Base g={prev} t={t} />} to={<Base g={g} t={t} />} /> : <Base g={g} t={t} />}
-      {OVS.filter((o) => t >= o.a - 0.3 && t < o.b + 0.6).map((o, j) => <Piece key={j} o={o} t={t} />)}
+      {OVS.filter((o) => t >= o.a - 0.3 && t < o.b + 0.6).map((o, j) => g.k === "bk"
+        // pieza grande sobre fondo: la cámara se sigue acercando al documento mientras se lee (nunca queda un cuadro quieto)
+        ? <AbsoluteFill key={j} style={{ transform: `scale(${1 + 0.011 * Math.min(5, Math.max(0, t - o.a))})` }}><Piece o={o} t={t} /></AbsoluteFill>
+        : <Piece key={j} o={o} t={t} />)}
+      {g.k === "bk" ? <Veladora t={t} a={g.a} /> : null}
       <AbsoluteFill style={{ background: "#000", opacity: e(t, FULL_END - 0.9, FULL_END), pointerEvents: "none" }} />
     </AbsoluteFill>
   );
