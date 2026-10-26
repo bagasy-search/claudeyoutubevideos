@@ -1,7 +1,7 @@
 import React from "react";
 import { Persona, LUCIUS, CIVIL, Ropa, Expr } from "./persona";
 import { Lampara } from "./piezas";
-import { ESC, Esc } from "./guion07";
+import { ESC, Esc, INS } from "./guion07";
 
 // OJO v4: el set del molde. Calle EN PERSPECTIVA con punto de fuga (Coliseo al fondo), fachadas de piedra cálida
 // a los costados, adoquines que corren, tabernas y antorchas que derraman luz, primer plano, y el nene caminando
@@ -16,7 +16,7 @@ const P = (x: number, y: number, d: number): Pt => [960 + (F * x) / d, HOR + (F 
 const poly = (pts: Pt[]) => pts.map((p) => `${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(" ");
 const quadL = (x: number, y0: number, y1: number, d0: number, d1: number) => poly([P(x, y0, d0), P(x, y1, d0), P(x, y1, d1), P(x, y0, d1)]);
 
-const MURO = ["#7a5a3e", "#6a4c36", "#86644a", "#5f4632", "#74553c", "#8c6a48"];
+const MURO = ["#4e3727", "#432f22", "#58402e", "#3c2b1f", "#4a3425", "#5e4430"]; // OJO v6: piedra de noche
 type Ed = { lado: -1 | 1; d0: number; d1: number; pisos: number; col: string; lit: boolean; seed: number };
 const edificios = (seed: number): Ed[] => {
   const out: Ed[] = [];
@@ -111,7 +111,7 @@ const Calle: React.FC<{ t: number; e: Esc; cz: number; eds: Ed[]; fuego: number 
 };
 
 /** Luces cálidas (antorchas de pared + tabernas) en modo pantalla, encima de la calle. */
-const Luces: React.FC<{ t: number; cz: number; eds: Ed[]; extra: { x: number; y: number; d: number; r: number; fuego?: boolean }[]; tenue: number }> = ({ t, cz, eds, extra, tenue }) => {
+const lucesCalle = (cz: number, eds: Ed[]) => {
   const D = (d: number) => d + cz;
   const L: { x: number; y: number; d: number; r: number; fuego?: boolean; antorcha?: boolean }[] = [];
   eds.forEach((b) => {
@@ -120,6 +120,10 @@ const Luces: React.FC<{ t: number; cz: number; eds: Ed[]; extra: { x: number; y:
     if (b.lit) L.push({ x: b.lado * (HW - 60), y: 60, d: dd, r: 320 });
     if (h(b.seed + 77) > 0.4) L.push({ x: b.lado * (HW - 8), y: 290, d: D(b.d0 + 30), r: 300, antorcha: true });
   });
+  return L;
+};
+const Luces: React.FC<{ t: number; cz: number; eds: Ed[]; extra: { x: number; y: number; d: number; r: number; fuego?: boolean }[]; tenue: number }> = ({ t, cz, eds, extra, tenue }) => {
+  const L = lucesCalle(cz, eds);
   extra.forEach((x) => L.push(x));
   return (
     <svg style={{ position: "absolute", inset: 0, mixBlendMode: "screen", opacity: tenue }} width={1920} height={1080}>
@@ -130,8 +134,8 @@ const Luces: React.FC<{ t: number; cz: number; eds: Ed[]; extra: { x: number; y:
         const fl = 1 + Math.sin(t * 11 + i * 1.7) * 0.05;
         return (
           <g key={i}>
-            <circle cx={q[0]} cy={q[1]} r={l.r * s * fl} fill={`url(#${l.fuego ? "pfuego" : "pglow"})`} />
-            <ellipse cx={g[0]} cy={g[1]} rx={l.r * 1.3 * s} ry={l.r * 0.32 * s} fill="url(#pglow)" opacity={0.55} />
+            <circle cx={q[0]} cy={q[1]} r={Math.min(380, l.r * s) * fl} fill={`url(#${l.fuego ? "pfuego" : "pglow"})`} />
+            <ellipse cx={g[0]} cy={g[1]} rx={Math.min(520, l.r * 1.3 * s)} ry={Math.min(130, l.r * 0.32 * s)} fill="url(#pglow)" opacity={0.85} />
           </g>
         );
       })}
@@ -209,6 +213,11 @@ const Asoma: React.FC<{ t: number; lado: -1 | 1; piso: number; d: number; lt: nu
   const vuelca = cl((lt - tVuelca) / 0.35);
   return (
     <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+      {/* OJO v6: la ventana de verdad en la fachada (marco, postigos abiertos, luz de adentro) */}
+      <polygon points={quadL(lado * HW, y - 30, y + 150, d - 70, d + 70)} fill="#ffcf6a" stroke={K} strokeWidth={Math.max(2, 3000 / d)} />
+      <polygon points={quadL(lado * HW, y - 30, y + 150, d - 140, d - 70)} fill="#6a3a22" stroke={K} strokeWidth={Math.max(1.5, 2000 / d)} />
+      <polygon points={quadL(lado * HW, y - 30, y + 150, d + 70, d + 140)} fill="#5a3020" stroke={K} strokeWidth={Math.max(1.5, 2000 / d)} />
+      <polygon points={poly([P(lado * HW, y - 30, d - 80), P(lado * (HW - 40), y - 30, d - 80), P(lado * (HW - 40), y - 30, d + 80), P(lado * HW, y - 30, d + 80)])} fill="#4a2e1c" stroke={K} strokeWidth={Math.max(1.5, 2000 / d)} />
       <g transform={`translate(${q[0] - lado * 40 * s * sale} ${q[1]}) scale(${s})`}>
         {/* la cabeza y los brazos */}
         <circle cx={0} cy={-50} r={46} fill="#f2b48a" stroke={K} strokeWidth={6} />
@@ -425,7 +434,7 @@ const plan = (e: Esc, t: number) => {
     case "vigiles": case "cadena": {
       fuego = e.tipo === "cadena" ? 0.6 : 0.3;
       if (e.tipo === "vigiles") {
-        for (let k = 0; k < 6; k++) ac.push({ x: -150 + (k % 3) * 150, d: 1700 - lt * 420 + k * 130 + cz, seed: 90 + k, ropa: VIGIL, casco: "legion", camina: 2, expr: k === 0 ? "enojado" : "orgullo", manoD: k === 0 ? AntorchaM(t) : BaldeM, bD: k === 0 ? 120 : 30, cD: 40 });
+        for (let k = 0; k < 6; k++) ac.push({ x: -150 + (k % 3) * 150, d: Math.max(520 + k * 90, 1700 - lt * 420 + k * 130) + cz, seed: 90 + k, ropa: VIGIL, casco: "legion", camina: 2, expr: k === 0 ? "enojado" : "orgullo", manoD: k === 0 ? AntorchaM(t) : BaldeM, bD: k === 0 ? 120 : 30, cD: 40 });
         kx = -330; kd = 600; kc = 0; kexpr = lt > 1.5 ? "feliz" : "sorpresa"; kbD = 120; kcD = 40;
         if (lt > 1.5) { kbI = 150; kcI = 30; }
       } else {
@@ -441,9 +450,9 @@ const plan = (e: Esc, t: number) => {
       break;
     }
   }
-  const kid: Ac = { x: kx, d: kd * Z, h: KH, seed: 1, ropa: LUCIUS, expr: kexpr, camina: kc, mira: kmira, bD: kbD, cD: kcD, bI: kbI, cI: kcI, salta: ksalta, inclina: kinc, manoD: lam && kbD === 55 ? <Lampara t={t} on={1} /> : undefined };
+  const kid: Ac = { x: kx, d: Math.max(kd, 600) * Z, h: KH, seed: 1, ropa: LUCIUS, expr: kexpr, camina: kc, mira: kmira, bD: kbD, cD: kcD, bI: kbI, cI: kcI, salta: ksalta, inclina: kinc, manoD: lam && kbD === 55 ? <Lampara t={t} on={1} /> : undefined };
   // el nene está en coordenadas de cámara (su d ya es relativo a la cámara)
-  if (!e.m) ac.push(kid);
+  if (!INS.some((i) => t >= i.t + 0.2 && t < i.t1)) ac.push(kid);
   if (lam) luz.push({ x: kx + 40, y: 110, d: kid.d, r: osc > 0.5 ? 340 : 220 });
   return { lt, cz, ac, luz, osc, nivel, fuego, extra };
 };
@@ -453,7 +462,7 @@ const Negrura: React.FC<{ a: number; luces: { x: number; y: number; d: number; r
   <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
     <defs>
       <radialGradient id={`${id}g`}><stop offset="0" stopColor="#000" stopOpacity="1" /><stop offset="0.55" stopColor="#000" stopOpacity="0.85" /><stop offset="1" stopColor="#000" stopOpacity="0" /></radialGradient>
-      <mask id={`${id}m`}><rect width={1920} height={1080} fill="#fff" />{luces.map((l, i) => { const q = P(l.x, l.y, l.d); return l.d > 40 && <circle key={i} cx={q[0]} cy={q[1]} r={(l.r * F) / l.d} fill={`url(#${id}g)`} />; })}</mask>
+      <mask id={`${id}m`}><rect width={1920} height={1080} fill="#fff" />{luces.map((l, i) => { const q = P(l.x, l.y, l.d); return l.d > 40 && <circle key={i} cx={q[0]} cy={q[1]} r={Math.min(420, (l.r * F) / l.d)} fill={`url(#${id}g)`} />; })}</mask>
     </defs>
     <rect width={1920} height={1080} fill="#05040f" opacity={a} mask={`url(#${id}m)`} />
   </svg>
@@ -484,22 +493,33 @@ export const Perspectiva: React.FC<{ t: number }> = ({ t }) => {
   const pl = plan(e, t);
   const eds = edificios(Math.round(e.t * 7));
   const k = ESC.indexOf(e);
-  const entra = e.f ? 1 : cl(pl.lt / 0.28);
+  const entra = 1; // OJO v6: corte seco (el barrido dejaba ver el mundo viejo debajo)
   const clip = k % 3 === 0 ? `inset(0 ${(1 - entra) * 100}% 0 0)` : k % 3 === 1 ? `inset(0 0 0 ${(1 - entra) * 100}%)` : `circle(${entra * 1300}px at 960px 540px)`;
   const sway = Math.sin(t * 0.7) * 0.35;
-  const luces = [...pl.luz];
+  // OJO v6: noche de verdad — todo oscuro salvo los charcos de antorchas/tabernas, la gente cercana y el nene
+  const kid = pl.ac.find((a) => a.seed === 1);
+  const luces = [...pl.luz, ...lucesCalle(pl.cz, eds).filter((l) => l.d < 2600).map((l) => ({ ...l, r: l.r * 0.8 })), ...pl.ac.filter((a) => a.d > 60 && a.d < 1400 && a !== kid).map((a) => ({ x: a.x, y: 100, d: a.d, r: 190 }))];
+  if (kid) luces.push({ x: kid.x, y: 95, d: kid.d, r: 260 });
+  const noche = Math.max(pl.osc, 0.78);
+  // OJO v6: encuadre distinto por plano (general / medio / cerrado / bajo) con un empuje lento
+  const modo = Math.floor(h(k * 3.7 + 1) * 4);
+  const pr = cl((t - e.t) / Math.max(1, e.d));
+  const sc = [1.04, 1.3, 1.62, 1.18][modo] * (1 + 0.05 * pr);
+  const kq = kid ? P(kid.x, (kid.h ?? KH) * (modo === 2 ? 0.75 : 0.5), kid.d) : [960, 540];
+  const tx = cl(960 + (kq[0] - 960) * 0.35 - sc * kq[0], 1920 * (1 - sc), 0);
+  const ty = cl((modo === 3 ? 470 : 560) + (kq[1] - 540) * 0.3 - sc * kq[1], 1080 * (1 - sc), 0);
   return (
     <div style={{ position: "absolute", inset: 0, overflow: "hidden", clipPath: entra < 1 ? clip : undefined, background: "#05040f" }}>
-      <div style={{ position: "absolute", inset: 0, transform: `rotate(${sway}deg) scale(1.03)` }}>
+      <div style={{ position: "absolute", inset: 0, transformOrigin: "0 0", transform: `translate(${tx}px, ${ty}px) scale(${sc}) rotate(${sway}deg)` }}>
         <Calle t={t} e={e} cz={pl.cz} eds={eds} fuego={pl.fuego} />
         <Antorchas t={t} cz={pl.cz} eds={eds} />
-        <Luces t={t} cz={pl.cz} eds={eds} extra={pl.luz} tenue={pl.osc > 0.85 ? 0.22 : 0.6} />
+        <Luces t={t} cz={pl.cz} eds={eds} extra={pl.luz} tenue={pl.osc > 0.85 ? 0.3 : 0.75} />
         <Agua t={t} nivel={pl.nivel} cz={pl.cz} />
         {pl.extra}
         <Gente t={t} ac={pl.ac} />
         {pl.nivel > 0 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>{pl.ac.filter((a) => a.d > 60).map((a, i) => { const q = P(a.x, pl.nivel * 0.6, a.d), hp = (F * (a.h ?? 165)) / a.d; return <g key={i}><ellipse cx={q[0]} cy={q[1]} rx={hp * 0.26} ry={hp * 0.07} fill="#3a8ea0" /><ellipse cx={q[0]} cy={q[1]} rx={hp * (0.3 + 0.05 * Math.sin(t * 4 + i))} ry={hp * 0.08} fill="none" stroke="#bff0f8" strokeWidth={3} /></g>; })}</svg>}
-        <Negrura a={pl.osc} luces={luces} id={`ng${k}`} />
-        <Frente t={t} e={e} lt={pl.lt} />
+        <Negrura a={noche} luces={luces} id={`ng${k}`} />
+        {modo === 0 && <Frente t={t} e={e} lt={pl.lt} />}
       </div>
       {entra < 1 && k % 3 < 2 && <div style={{ position: "absolute", top: 0, bottom: 0, width: 26, background: "#fff8e0", left: k % 3 === 0 ? `${entra * 100}%` : undefined, right: k % 3 === 1 ? `${entra * 100}%` : undefined }} />}
     </div>
