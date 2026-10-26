@@ -128,7 +128,8 @@ const Avatar: React.FC<{ t: number }> = ({ t }) => (
   </AbsoluteFill>
 );
 const Clip: React.FC<{ k: string; t: number; a: number; i: number; d?: number }> = ({ k, t, a, i, d = 6 }) => {
-  const pr = Math.max(0.4, Math.min(1, 2.9 / Math.max(0.1, d)));
+  // tomas LTX de Lety (pNN u-z, ~9 s, 25-oct): velocidad real; las de agnes (3 s) en cámara lenta
+  const pr = /[u-z]$/.test(k) ? Math.min(1, 8.6 / Math.max(0.1, d)) : Math.max(0.4, Math.min(1, 2.9 / Math.max(0.1, d)));
   const z = i % 3 === 0 ? [1.03, 1.11] : i % 3 === 1 ? [1.1, 1.03] : [1.06, 1.06];
   const sc = z[0] + (z[1] - z[0]) * e(t, a, a + 7), dx = i % 3 === 2 ? (i % 2 ? -1 : 1) * 30 * (e(t, a, a + 7) - 0.5) : 0;
   const inner = CLIPS.has(k)
