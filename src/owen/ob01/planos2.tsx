@@ -56,7 +56,7 @@ export const P24Manos: React.FC = () => {
   return (
     <EnBus cl={cl} hora="manana" min={396} avance={(f) => 3200 + f * 12} owen={null}
       pas={[sent(ABERNATHY, 4, { poses: [{ f: 0, v: { tronco: -4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 120, cD: 20, hI: 25, cI: 50 } }], caras: [{ f: 0, v: "feliz" }], n: 58, edad: 72, desde: -20, seed: 2 })]}
-      hud={<><Mano texto="YOUR HANDS ARE A GAUGE" x={960} y={220} desde={0} color="#ffd27a" tam={64} /><Mano texto="40 years of mailbags" x={1300} y={860} desde={k(161.6)} color="#f4efe4" tam={58} /></>} />
+      hud={<><Mano texto="YOUR HANDS ARE A GAUGE" x={560} y={860} desde={0} color="#ffd27a" tam={64} /><Mano texto="40 years of mailbags" x={1400} y={860} desde={k(161.6)} color="#f4efe4" tam={58} /></>} />
   );
 };
 
@@ -205,8 +205,8 @@ export const P33Solo: React.FC = () => {
       pas={[sent(ESTUDIANTE, 1, { caras: [{ f: 0, v: "risa" }], habla: [[0, 160]], seed: 41 }), sent(SENORA, 2, { caras: [{ f: 0, v: "feliz" }], habla: [[30, 160]], seed: 42 })]}
       owen={{ caras: [{ f: 0, v: "triste" }], miradas: [{ f: 0, v: { x: -1, y: 0.2 } }] }}
       hud={<>
-        <Mano texto="last call with a friend: 3 months ago" x={1250} y={470} desde={k(244.9)} color="#ffd27a" tam={52} />
-        <Mano texto="400 people a day. talks to ~0." x={1250} y={580} desde={k(247.2)} color="#f4efe4" tam={52} />
+        <Mano texto="last call with a friend: 3 months ago" x={960} y={170} desde={k(244.9)} hasta={k(247.1)} color="#ffd27a" tam={52} />
+        <Mano texto="400 people a day. talks to ~0." x={960} y={170} desde={k(247.2)} color="#f4efe4" tam={52} />
       </>} />
   );
 };
@@ -247,12 +247,13 @@ export const P34Abrigo: React.FC = () => {
 
 // ---------- 35 · la pulsera blanca de la Halden Clinic; baja en la 38 ----------
 const Pulsera: React.FC<{ o: number }> = ({ o }) => (
-  <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0, opacity: o }}>
+  <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0, opacity: o, transform: `scale(${1.25 - 0.25 * o})`, transformOrigin: "1080px 700px" }}>
     <rect width={1920} height={1080} fill="#1d2230" opacity={0.85} />
     <path d="M-50,760 C400,700 760,640 1100,600 L1180,860 C820,900 420,960 -50,1000 Z" fill="#7d8086" />
     <path d="M1080,560 q160,-30 300,30 q60,40 40,120 q-20,90 -120,120 q-120,20 -200,-40 Z" fill="#c98e6a" />
     <path d="M1000,585 q40,-10 70,-4 l70,270 q-30,8 -70,4 Z" fill="#f6f6f2" stroke="#d6dae0" strokeWidth={4} />
     <g transform="translate(1040,720) rotate(-76)"><LogoHalden x={-120} y={0} s={0.55} /></g>
+    <text x={1060} y={1000} fontFamily={F_HUD} fontWeight={700} fontSize={72} fill="#f4efe4" textAnchor="middle">HALDEN</text>
   </svg>
 );
 export const P35Pulsera: React.FC = () => {
@@ -265,7 +266,8 @@ export const P35Pulsera: React.FC = () => {
     ruta: [{ f: 0, x: ASIENTO_X(FILA_ABRIGO), y: BUS_PISO }, { f: sale, x: ASIENTO_X(FILA_ABRIGO), y: BUS_PISO }, { f: k(275.0), x: BUS_PUNTOS.puertaT + 40, y: BUS_PISO }],
     sentado: 0, levanta: sale, seVa: k(275.1),
   };
-  const pulsera = interpolate(f, [k(267.2), k(267.6), k(272.4), k(272.8)], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  // 26-oct (ojo 4/10: no se veía la revelación + tirón 267.2): la pulsera llega a 1 ANTES del cambio de plano (lo tapa) y entra con golpe de escala
+  const pulsera = interpolate(f, [k(266.8), k(267.15), k(272.4), k(272.8)], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <AbsoluteFill>
       {f < k(267.2) ? (
@@ -349,15 +351,15 @@ export const P39Dee: React.FC = () => {
         <Pildora texto="DEE · ER NURSE AT RUSH" x={960} y={190} desde={k(312.2)} hasta={k(318)} color="#f4efe4" />
         <Globo texto="Prove it." x={620} y={300} desde={k(315.5)} hasta={k(317.8)} cola="abajo" tam={40} />
         <Etq cl={cl} x={TF_PUNTOS.sillaRosa - 40} y={P - 280} n={38} edad={34} desde={k(320.2)} />
-        <Mano texto="night shifts" x={1300} y={560} desde={k(323.5)} color="#ffd27a" tam={56} />
-        <Mano texto="4 hours of sleep" x={1300} y={670} desde={k(324.7)} color="#ffd27a" tam={56} />
+        <Mano texto="night shifts" x={520} y={170} desde={k(323.5)} color="#ffd27a" tam={56} />
+        <Mano texto="4 hours of sleep" x={1400} y={170} desde={k(324.7)} color="#ffd27a" tam={56} />
         <Mano texto="her doctor said the same thing last week" x={960} y={900} desde={k(327.7)} color="#f4efe4" tam={50} />
         <HudOwen min={1290} part="47/47" />
       </>} />
   );
 };
 
-export const P40SeMueven: React.FC = () => <AbsoluteFill><DosRelojes cal={50} bio={44} titulo="NOT A LIFE SENTENCE" /><HudOwen part="47/47" /></AbsoluteFill>;
+export const P40SeMueven: React.FC = () => <AbsoluteFill><DosRelojes cal={38} bio={34} titulo="NOT A LIFE SENTENCE" /><HudOwen part="47/47" /></AbsoluteFill>;
 export const P41Lista: React.FC = () => {
   const k = kDe(337.8);
   return (

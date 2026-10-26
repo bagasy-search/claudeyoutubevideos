@@ -40,8 +40,9 @@ export const Combustible: React.FC<{ dHigado?: number; dMusculo?: number; dCereb
   };
   const uc = ease(f, dCerebro, dCerebro + 30);
   return (
-    <Pizarra titulo="STORED FUEL" fuente="Glycogen stores · adult averages">
-      <Actor look={OWEN} escala={0.85} seed={12} ruta={[{ f: 0, x: 180, y: 1000 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "feliz" }]}
+    <Pizarra titulo="STORED FUEL" fuente="Glycogen stores · adult averages" profe={false}>
+      {/* 26-oct (ojo 5/10: hígado apagado, Owen mini): barra del HÍGADO que faltaba + Owen x1.8 comiendo */}
+      <Actor look={OWEN} escala={1.5} seed={12} ruta={[{ f: 0, x: 170, y: 1010 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "feliz" }]}
         poses={Array.from({ length: 30 }).map((_, i) => ({ f: i * 16, v: i % 2 ? { hD: 150, cD: 150, cabeza: 6 } : { hD: 60, cD: 80 } }))} habla={Array.from({ length: 30 }).map((_, i) => [i * 16 + 2, i * 16 + 8] as [number, number])}
         enManoD={<g><rect x={-30} y={-18} width={60} height={30} rx={8} fill="#e8b866" /><rect x={-30} y={-6} width={60} height={8} fill="#7ac943" /></g>} />
       {Array.from({ length: 14 }).map((_, i) => {
@@ -49,6 +50,7 @@ export const Combustible: React.FC<{ dHigado?: number; dMusculo?: number; dCereb
         const x = 260 + (dest - 260) * t, y = 760 - Math.sin(t * Math.PI) * 260 + (1 - t) * 40;
         return <circle key={i} cx={x} cy={y} r={11} fill={AMBAR} opacity={Math.sin(t * Math.PI) * 0.9} />;
       })}
+      {barra(420, 100, 500, "LIVER", dHigado, "#c96a4a")}
       {barra(720, 400, 500, "MUSCLES", dMusculo, AMBAR)}
       <g transform="translate(1240,520)" opacity={0.25 + 0.75 * ease(f, dCerebro - 6, dCerebro + 4)}>
         <g transform={`scale(${1 + (f > dCerebro ? Math.max(0, Math.sin((f - dCerebro) / 5)) * 0.04 : 0)})`}><Cerebro r={190} /></g>

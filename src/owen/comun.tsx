@@ -36,13 +36,16 @@ export const HudOwen: React.FC<{ min?: number | ((f: number) => number); part?: 
 // texto a mano de los videos de Owen: centrado en x, con sombra oscura (se lee sobre fondo claro) y nunca chico
 // siempre sobre panel oscuro (se lee sobre carteles, ventanas y camas) y dentro de la zona segura (nunca cortado ni pegado al borde)
 export const Mano: React.FC<React.ComponentProps<typeof TextoMano>> = ({ tam = 64, brillo = false, centro = true, rot = -2, x, y, texto, ...r }) => {
-  const T = Math.max(64, tam);
+  // 26-oct (ojo: textos a mano «cortados»): se escriben enteros en ≤20 cuadros y achican si no entran en 1780 px
   const lin = texto.split(String.fromCharCode(10));
-  const ancho = Math.max(...lin.map((l) => l.length)) * T * 0.5 + T * 0.9;
+  const largo = Math.max(...lin.map((l) => l.length));
+  const T = Math.min(Math.max(64, tam), 1780 / (largo * 0.5 + 0.9));
+  const vel = r.vel ?? Math.max(1.6, (2 * (texto.length + 3 * lin.length)) / 20);
+  const ancho = largo * T * 0.5 + T * 0.9;
   const alto = lin.length * T * 1.05 + T * 0.5;
   const X = centro ? Math.min(1920 - 70 - ancho / 2, Math.max(70 + ancho / 2, x)) : Math.min(1920 - 70 - ancho, Math.max(70, x));
   const Y = Math.min(1080 - 150 - alto, Math.max(140, y));
-  return <TextoMano {...r} texto={texto} x={X} y={Y} tam={T} brillo={brillo} centro={centro} rot={rot} panel />;
+  return <TextoMano {...r} vel={vel} texto={texto} x={X} y={Y} tam={T} brillo={brillo} centro={centro} rot={rot} panel />;
 };
 
 // notas musicales que salen de alguien que tararea (en el MUNDO, dentro de medio)

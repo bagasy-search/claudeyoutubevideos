@@ -334,12 +334,12 @@ export const P19Suben: React.FC = () => {
   const k = kDe(110.9);
   const sube = (t0: number, destino: number, vale: number) => [{ f: k(t0), x: BUS_PUNTOS.puertaF + 40, y: BUS_PISO }, { f: k(t0) + 22, x: BUS_PUNTOS.validador + 40, y: BUS_PISO, curva: "out" as const }, { f: k(vale), x: BUS_PUNTOS.validador + 40, y: BUS_PISO }, { f: k(vale) + 50, x: destino, y: BUS_PISO }];
   const pas: Pas[] = [
-    { look: TEEN, ruta: sube(111.0, 1180, 112.2), poses: [{ f: 0, v: "parado" }, { f: k(113.6), v: "agarrarAlto" }], caras: [{ f: 0, v: "cansado" }], enManoI: <Lata color="#2fd16a" />, n: 31, edad: 19, desde: k(115.0), seed: 3 },
+    { look: TEEN, ruta: sube(111.0, 1380, 112.2), poses: [{ f: 0, v: "parado" }, { f: k(113.6), v: "agarrarAlto" }], caras: [{ f: 0, v: "cansado" }], enManoI: <Lata color="#2fd16a" />, n: 31, edad: 19, desde: k(115.0), seed: 3 },
     { look: SCRUBS, ruta: sube(115.4, ASIENTO_X(2), 116.4), sentado: k(116.4) + 52, caras: [{ f: 0, v: "cansado" }], n: 52, edad: 44, desde: k(119.1), seed: 11 },
-    { look: RUNNER, ruta: sube(119.5, 1560, 120.2), poses: [{ f: 0, v: "parado" }, { f: k(121.9), v: "agarrarAlto" }], caras: [{ f: 0, v: "feliz" }], n: 33, edad: 40, desde: k(122.1), seed: 12 },
+    { look: RUNNER, ruta: sube(119.5, 1740, 120.2), poses: [{ f: 0, v: "parado" }, { f: k(121.9), v: "agarrarAlto" }], caras: [{ f: 0, v: "feliz" }], n: 33, edad: 40, desde: k(122.1), seed: 12 },
   ];
   const pasV = pas.map((p) => ({ ...p, aparece: p.ruta[0].f }));
-  const cl = [mira(0, 560, 650, 1.45), mira(k(114.6), 980, 640, 1.3, { curva: "inout" }), mira(k(115.8), 700, 650, 1.35, { curva: "inout" }), mira(k(118.9), 900, 660, 1.3, { curva: "inout" }), mira(k(120.4), 800, 650, 1.25, { curva: "inout" }), mira(k(122.0), 1300, 650, 1.25, { curva: "inout" })];
+  const cl = [mira(0, 560, 650, 1.45), mira(k(114.6), 980, 640, 1.3, { curva: "inout" }), mira(k(115.8), 700, 650, 1.35, { curva: "inout" }), mira(k(118.9), 900, 660, 1.3, { curva: "inout" }), mira(k(120.4), 800, 650, 1.25, { curva: "inout" }), mira(k(122.0), 1400, 650, 1.25, { curva: "inout" })]; // 26-oct: pasajeros separados ≥320 px para que los rótulos 31/52/33 no se pisen
   return (
     <EnBus cl={cl} hora="manana" min={368} avance={() => 600} puertaF={() => 1} paradas={[{ a: 600, num: 1 }]} pas={pasV}
       owen={{ caras: [{ f: 0, v: "sorpresa" }, { f: k(116), v: "duda" }], miradas: [{ f: 0, v: { x: 1, y: 0 } }], giros: [{ f: 0, v: 0.6 }] }} />

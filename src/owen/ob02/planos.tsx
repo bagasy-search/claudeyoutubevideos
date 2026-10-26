@@ -116,8 +116,8 @@ export const P05Espejo: React.FC = () => {
         <Actor look={OWEN_CASA} escala={ESC} seed={6} vivo={0} ruta={[{ f: 0, x: ESP - 150, y: A }]} dir={[{ f: 0, v: 1 }]} poses={LAVA} caras={[{ f: 0, v: "cansado" }, { f: k(21.7), v: "miedo" }]} habla={[[150, 172], [210, 230]]} />
       </>}
       hud={<>
-        <Bat cl={cl} x={ESP - 150} y={A - 330} pct={38} desde={k(19.8)} tam={1.1} />
-        <Pildora texto="5:15 AM · HE HASN'T DONE ANYTHING YET" x={960} y={920} desde={k(22.2)} color="#f4efe4" tam={40} />
+        <Bat cl={cl} x={ESP - 150} y={A - 340} pct={38} desde={k(19.8)} tam={1.8} />
+        <Pildora texto="5:15 AM · HE HASN'T DONE ANYTHING YET" x={960} y={930} desde={k(22.2)} color="#f4efe4" tam={54} />
         <HudOwen min={315} part={null} />
       </>} />
   );
@@ -255,8 +255,8 @@ export const P14Capa: React.FC = () => {
         <BateriaSvg pct={38} capa={interpolate(f, [12, 80], [0, 17], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} f={f} />
       </div>
       {f > 4 && f < 90 && <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}><g transform={`translate(1080,${300 - Math.min(1, f / 10) * 40}) rotate(${-40 - Math.min(1, f / 14) * 60})`}><rect x={-34} y={-70} width={68} height={140} rx={14} fill="#2fd16a" /><rect x={-34} y={-70} width={68} height={22} fill="#1a8a44" /></g>{Array.from({ length: 8 }).map((_, i) => { const t = ((f + i * 5) % 20) / 20; return <circle key={i} cx={1010 - t * 20} cy={300 + t * 160} r={9} fill="#ffe04a" opacity={1 - t} />; })}</svg>}
-      <Mano texto="it just LOOKS full" x={960} y={180} desde={k(108.0)} color="#fff6c8" tam={70} />
-      {corte > 0 && <Mano texto="underneath: the same red" x={960} y={860} desde={k(110.6)} color={ROJO_OWEN} tam={70} />}
+      <Mano texto="it just LOOKS full" x={520} y={860} desde={k(108.0)} color="#fff6c8" tam={70} />
+      {corte > 0 && <Mano texto="underneath: the same red" x={1400} y={860} desde={k(110.6)} color={ROJO_OWEN} tam={70} />}
       <HudOwen part={PART} />
     </AbsoluteFill>
   );
@@ -358,7 +358,7 @@ export const P21Caida: React.FC = () => {
   const gente: [Pas, number, number][] = [
     [sent(NENE, 2, { seed: 41, caras: [{ f: 0, v: "feliz" }, { f: k(183.7), v: "cansado" }], poses: [{ f: 0, v: "sentado" }, { f: k(184.0), v: { ...SIT, tronco: 12, cabeza: 24 } }] }), 84, 76],
     [sent(OFICINISTA, 4, { seed: 42, caras: [{ f: 0, v: "neutral" }, { f: k(184.3), v: "cansado" }], poses: [{ f: 0, v: "celular" }, { f: k(184.6), v: { ...SIT, hD: 150, cD: 20, hI: 150, cI: 20, tronco: -8 } }, { f: k(185.8), v: { ...SIT, tronco: 10, cabeza: 22 } }], habla: [[k(184.6), k(185.6)]] }), 63, 55],
-    [parado(OBRERO, 1520, { seed: 43, enManoD: <Termo />, caras: [{ f: 0, v: "neutral" }, { f: k(184.3), v: "cansado" }] }), 70, 61],
+    [parado(OBRERO, 2000, { seed: 43, enManoD: <Termo />, caras: [{ f: 0, v: "neutral" }, { f: k(184.3), v: "cansado" }] }), 70, 61],
     [sent(SENORA, 7, { seed: 44, enManoD: <BolsaCompras />, caras: [{ f: 0, v: "feliz" }, { f: k(185.1), v: "cansado" }] }), 58, 51],
     [sent(SENORA, 8, { seed: 45, enManoD: <BolsaCompras />, caras: [{ f: 0, v: "neutral" }, { f: k(185.1), v: "cansado" }] }), 66, 57],
   ];
@@ -421,7 +421,7 @@ export const P27Cien: React.FC = () => {
   const f = useF();
   const k = kDe(239.33);
   const freno = k(244.4);
-  const sac = f > freno && f < freno + 14 ? Math.sin((f - freno) * 2) * 12 * (1 - (f - freno) / 14) : 0;
+  const sac = f > freno && f < freno + 14 ? Math.sin((f - freno) * 1.2) * 6 * (1 - (f - freno) / 14) : 0;
   const cl = [mira(0, ASIENTO_X(4) + 40, BUS_PISO - 170, 2.5), mira(k(242.6), ASIENTO_X(4) - 20, BUS_PISO - 270, 2.0, { curva: "inout" })];
   const hoja = (ff: number) => [k(240.6), k(247.4), k(249.8)].some((t) => ff > t && ff < t + 16);
   return (
@@ -439,7 +439,7 @@ export const P27Cien: React.FC = () => {
           <Pildora texto="OFF AT STOP 38 · LIKE LAST TIME" x={960} y={950} desde={k(248.9)} color="#f4efe4" />
           <HudOwen min={880} part={PART} />
         </>} />
-      {f >= k(246.6) && f < k(248.9) && <Marco x={1300} y={640} w={560} h={320} radio={70} espejar><Escena Set={BusInterior} pal={PAL} claves={[mira(0, BUS_PUNTOS.chofer - 10, BUS_PISO - 300, 3.2)]} setProps={{ hora: "tarde" }} medio={<OwenAlVolante o={{ caras: [{ f: 0, v: "miedo" }] }} />} /></Marco>}
+      {false && <Marco x={1300} y={640} w={560} h={320} radio={70} espejar><Escena Set={BusInterior} pal={PAL} claves={[mira(0, BUS_PUNTOS.chofer - 10, BUS_PISO - 300, 3.2)]} setProps={{ hora: "tarde" }} medio={<OwenAlVolante o={{ caras: [{ f: 0, v: "miedo" }] }} />} /></Marco>}
     </AbsoluteFill>
   );
 };
@@ -469,7 +469,7 @@ export const P29Deriva: React.FC = () => {
   const cl = [mira(0, bx(k(262.2)) + 420, ASH_CARRIL - 340, 1.0), mira(k(262.2), bx(k(262.2)) + 420, ASH_CARRIL - 340, 1.0), mira(k(265.3), bx(k(265.3)) + 520, ASH_CARRIL - 320, 1.15)];
   return (
     <AbsoluteFill>
-      {!ext ? <EnBus cl={[mira(0, 330, BUS_PISO - 290, 2.8), mira(k(262.2), 320, BUS_PISO - 280, 3.2)]} hora="tarde" min={921} avance={(ff) => 21000 + ff * 11} owen={{ caras: [{ f: 0, v: "zombi" }], poses: [{ f: 0, v: "sentado" }, { f: 30, v: { tronco: 12, cabeza: 34, hD: 10, cD: 20 } }], giro: (ff) => 0.1 + ff * 0.002 }} hud={<Bat cl={[mira(0, 330, BUS_PISO - 290, 2.8)]} x={OX} y={OY} pct={5} alerta tam={1.2} />} />
+      {!ext ? <EnBus cl={[mira(0, 330, BUS_PISO - 290, 2.8), mira(k(262.2), 320, BUS_PISO - 280, 3.2)]} hora="tarde" min={921} avance={(ff) => 21000 + ff * 11} owen={{ caras: [{ f: 0, v: "zombi" }], poses: [{ f: 0, v: "sentado" }, { f: 30, v: { tronco: 12, cabeza: 34, hD: 10, cD: 20 } }], giro: (ff) => 0.1 + ff * 0.002 }} hud={f < k(259.6) ? <Bat cl={[mira(0, 330, BUS_PISO - 290, 2.8)]} x={OX} y={OY} pct={5} alerta tam={1.2} /> : null} />
         : <Escena Set={Ashland} pal={PAL} claves={cl} seed={29} setProps={{ hora: "tarde", centro: (ff: number) => bx(ff) + 650, autos: 0 }}
           medio={<g transform={`rotate(${-interpolate(f, [k(262.2), k(265.3)], [0, 2.5], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} ${bx(f) + 1000} ${by(f)})`}><Bus9 x={bx(f)} y={by(f)} esc={0.85} dir={1} hora="tarde" rueda={f * 9} /></g>}
           hud={<><Pildora texto="DRIFTING TOWARD THE PARKED CARS" x={960} y={190} desde={k(262.4)} color={ROJO_OWEN} /><HudOwen min={921} part={PART} /></>} />}
