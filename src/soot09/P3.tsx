@@ -51,7 +51,7 @@ const MapaRio: React.FC<{ t: number }> = ({ t }) => {
         <path d="M 1040 245 Q 1080 190 1150 205 Q 1170 245 1120 265 Q 1080 280 1040 245 Z" fill="#c8a040" stroke="#7a4a10" strokeWidth={8} />
         <text x={70} y={650} fontFamily={fontFamily} fontWeight={700} fontSize={50} fill="#1a3a5a">THE BAY</text>
         <text x={500} y={500} fontFamily={fontFamily} fontWeight={700} fontSize={52} fill="#1a3a5a" opacity={prog(t, 227.4, 227.8)}>JAMES RIVER</text>
-        <text x={660} y={260} fontFamily={fontFamily} fontWeight={700} fontSize={56} fill={C.rojo} opacity={prog(t, 229.1, 229.4)}>60 KM UPRIVER</text>
+        <text x={420} y={330} fontFamily={fontFamily} fontWeight={700} fontSize={60} fill={C.rojo} stroke="#fff" strokeWidth={12} paintOrder="stroke" opacity={prog(t, 229.1, 229.4)}>60 KM UPRIVER</text>
         {d > 0 && (() => { const k = d; const x = 120 + k * 980, y = 560 - k * 330 + Math.sin(k * 6) * 20; return <g transform={`translate(${x} ${y})`}><path d="M -30 0 L 30 0 L 20 18 L -20 18 Z" fill="#7a3e1a" /><path d="M 0 0 L 0 -50 L 28 -14 Z" fill="#fff" /></g>; })()}
       </svg>
       {t > 227.7 && <div style={{ position: "absolute", left: 760, top: 70, transform: `scale(${ent(t, 227.74)})`, fontFamily, fontWeight: 700, fontSize: 54, color: "#fff", background: C.violeta, borderRadius: 12, padding: "4px 16px", whiteSpace: "nowrap" }}>ALMOST AN ISLAND</div>}
@@ -118,7 +118,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
           const alto = interpolate(t, [259.5, 260.4, 261.8, 262.7], [0, -60, -60, 45], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
           return (
             <svg style={{ position: "absolute", left: 22300, top: AGUA, overflow: "visible" }} width={10} height={10}>
-              <rect x={0} y={alto} width={620} height={200} fill={alto < 0 ? "#2a7ac8" : "#5a6a3a"} opacity={0.9} />
+              <path d={`M -400 ${alto + 30} L -40 ${alto + 30} ${Array.from({ length: 9 }, (_, i) => `Q ${i * 80 + 40} ${alto - 18 + Math.sin(t * 4 + i) * 8} ${i * 80 + 80} ${alto + 4}`).join(" ")} L 700 ${alto + 40} Q 640 ${alto + 90} 560 140 L -400 140 Z`} fill={alto < 0 ? "#2a7ac8" : "#5a6a3a"} />
               {alto < 0 && Array.from({ length: 12 }, (_, i) => <rect key={i} x={30 + i * 48} y={alto - 20 - ((t * 120 + i * 37) % 80)} width={10} height={10} fill="#fff" transform={`rotate(45 ${35 + i * 48} ${alto - 15})`} />)}
               {alto > 0 && Array.from({ length: 9 }, (_, i) => <ellipse key={i} cx={40 + i * 66} cy={alto + 6} rx={26} ry={9} fill="#8a9a3a" />)}
             </svg>
@@ -236,8 +236,8 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
           <div style={{ fontSize: 96, color: C.noche, lineHeight: 1 }}>{dia}<span style={{ fontSize: 40 }}> / 19</span></div>
         </div>
       )}
-      {t > 239.4 && t < 247.2 && <div style={{ position: "absolute", left: 1160, top: 40, width: 680, height: 600, background: "#cfe3a8", border: "8px solid #2a1408", borderRadius: 26, opacity: ent(t, 239.45) * (1 - prog(t, 246.9, 247.2)) }} />}
-      {t > 239.4 && t < 247.2 && <FuerteTriangulo x={1500} y={330} s={0.6} t={t} dibuja={prog(t, 239.5, 246.2)} />}
+      {t > 239.4 && t < 247.2 && <div style={{ position: "absolute", left: 1200, top: 30, width: 620, height: 470, background: "#cfe3a8", border: "8px solid #2a1408", borderRadius: 26, opacity: ent(t, 239.45) * (1 - prog(t, 246.9, 247.2)) }} />}
+      {t > 239.4 && t < 247.2 && <FuerteTriangulo x={1510} y={270} s={0.5} t={t} dibuja={prog(t, 239.5, 246.2)} />}
       <Chip t={t} t0={241.98} t1={243.2} text="A TRIANGLE" color={C.tierra} x={1500} y={590} centro size={44} />
       <Chip t={t} t0={243.24} t1={247.0} text="WALLS · 4 METERS" color="#7a4620" x={960} y={930} centro size={54} />
       <Chip t={t} t0={245.44} t1={247.0} text="3 CANNONS" color="#3a3a44" x={1500} y={590} centro size={44} />

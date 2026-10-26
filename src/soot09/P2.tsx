@@ -197,7 +197,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
       {t > 171.0 && t < 184.2 && (
         <div style={{ position: "absolute", left: 120, top: 150, transformOrigin: "50% 0", transform: `scale(${1.35 * ent(t, 171.1) * (1 - prog(t, 183.6, 184.2))}) rotate(4deg)`, width: 260, height: 300, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 18, overflow: "hidden" }}>
           <Persona x={130} y={300} h={330} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" gorro="morion" expr="orgullo" />
-          <div style={{ position: "absolute", left: 0, top: 6, width: 260, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 31, color: C.rojo, whiteSpace: "nowrap" }}>REMEMBER HIM</div>
+          <div style={{ position: "absolute", left: 0, top: 246, width: 260, height: 54, lineHeight: "50px", textAlign: "center", fontFamily, fontWeight: 700, fontSize: 31, color: "#fff", background: C.rojo, whiteSpace: "nowrap" }}>REMEMBER HIM</div>
           {t > 172.3 && <svg style={{ position: "absolute", left: 180, top: 70, transform: `scale(${ent(t, 172.64)}) rotate(${(t - 172.6) * 40}deg)` }} width={70} height={70} viewBox="-35 -35 70 70"><path d="M 0 -32 L 9 -10 L 32 -10 L 13 4 L 20 28 L 0 13 L -20 28 L -13 4 L -32 -10 L -9 -10 Z" fill={C.ambar} stroke="#2a1408" strokeWidth={4} /></svg>}
         </div>
       )}

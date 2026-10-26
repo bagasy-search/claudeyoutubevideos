@@ -88,7 +88,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
             </En>
           );
         })}
-        {t > 368.4 && t < 372.4 && <Mosquitos t={t} x={23300} y={SUELO - 150} n={30} r={170} seed={6} />}
+        {t > 368.4 && t < 372.4 && <Mosquitos t={t} x={23300} y={SUELO - 360} n={12} r={240} seed={6} />}
         {/* la arena que brilla */}
         {t > 378.4 && t < 401.5 && <En x={22950} w={600}><Pepitas t={t} x={22950} y={SUELO - 6} n={34} w={420} seed={11} apaga={prog(t, 399.4, 400.8)} /></En>}
         {/* la fiebre: todos cavando, lavando, refinando, cargando */}

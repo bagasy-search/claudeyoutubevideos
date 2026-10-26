@@ -75,7 +75,7 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
           </En>
         )}
         {/* Deliverance y Patience */}
-        {t < 826.5 && [nX, nX - 420 * giro].map((x, i) => nave(x, i, (t > 744.6 && t < 747.4) || (t > 764.1 && t < 766.3 && false) ? ["DELIVERANCE", "PATIENCE"][i] : undefined))}
+        {t < 826.5 && [nX, nX - 420 * giro].map((x, i) => nave(x, i, undefined))}
         {/* Bermudas: 10 meses de cerdos, tortugas, pájaros y cedro */}
         {t > 753.3 && t < 766.3 && (
           <>
@@ -195,7 +195,7 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       {t > 765.0 && t < 766.3 && <Grande t={t} t0={765.11} text="& PATIENCE" y={350} size={110} color={C.crema} />}
       <Chip t={t} t0={766.53} t1={767.9} text="FULL OF HOPE" color={C.lima} tinta={C.noche} x={960} y={140} centro size={56} />
       {t > 767.9 && t < 770.95 && <Grande t={t} t0={768.0} text="60 WALKING SKELETONS" y={200} size={84} color={C.rojo} />}
-      <Chip t={t} t0={769.71} t1={770.9} text="A RUINED FORT" color="#6a5a4a" x={960} y={930} centro size={52} />
+      <Chip t={t} t0={769.71} t1={770.9} text="A RUINED FORT" color="#6a5a4a" x={960} y={930} centro size={64} />
       <Chip t={t} t0={770.97} t1={774.7} text="GATES DECIDES" color={C.violeta} x={960} y={140} centro size={56} />
       {t > 774.6 && t < 776.5 && <Grande t={t} t0={774.77} text="JAMESTOWN IS FINISHED" y={220} size={104} color={C.rojo} />}
       <Chip t={t} t0={776.47} t1={781.4} text="7 JUNE 1610" color={C.naranja} x={960} y={140} centro size={60} />
@@ -211,7 +211,7 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={801.69} t1={803.6} text="A MESSENGER" color={C.violeta} x={960} y={930} centro size={54} />
       {/* De La Warr */}
       {t > 803.6 && t < 812.8 && (
-        <div style={{ position: "absolute", left: 90, top: 170, transformOrigin: "0 0", transform: `scale(${1.4 * ent(t, 803.75) * (1 - prog(t, 812.3, 812.8))}) rotate(-2deg)`, width: 340, height: 420, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 18, overflow: "hidden" }}>
+        <div style={{ position: "absolute", left: 70, top: 110, transformOrigin: "0 0", transform: `scale(${1.15 * ent(t, 803.75) * (1 - prog(t, 812.3, 812.8))}) rotate(-2deg)`, width: 340, height: 420, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 18, overflow: "hidden" }}>
           <Persona x={170} y={390} h={300} t={t} seed={930} ropa={GENT(0)} gola capa="#2a1a50" barba="#3a2416" gorro="sombrero" expr="orgullo" />
           <div style={{ position: "absolute", left: 0, top: 8, width: 340, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 34, color: C.violeta }}>LORD DE LA WARR</div>
           {t > 805.0 && <div style={{ position: "absolute", left: 0, bottom: 10, width: 340, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 34, color: C.rojo }}>NEW GOVERNOR</div>}
@@ -253,7 +253,7 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={860.25} t1={862.4} text="NOT A HAPPY ENDING" color={C.rojo} x={960} y={140} centro size={56} />
       {/* 6.000 → 1.200: cada punto, 100 personas */}
       {t > 862.4 && t < 873.0 && (
-        <div style={{ position: "absolute", left: 460, top: 220, width: 1000, transform: `scale(${ent(t, 862.5) * (1 - prog(t, 872.6, 873.0))})`, transformOrigin: "50% 50%" }}>
+        <div style={{ position: "absolute", left: 440, top: 200, width: 1040, padding: "20px 0 26px", background: "rgba(27,18,64,.82)", borderRadius: 30, transform: `scale(${ent(t, 862.5) * (1 - prog(t, 872.6, 873.0))})`, transformOrigin: "50% 50%" }}>
           <div style={{ fontFamily, fontWeight: 700, fontSize: 84, color: C.ambar, textAlign: "center", marginBottom: 16, WebkitTextStroke: "12px #1b1240", paintOrder: "stroke fill" }}>1607 - 1624</div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 14, justifyContent: "center" }}>
             {Array.from({ length: 60 }, (_, i) => {
@@ -265,7 +265,7 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
           <div style={{ fontFamily, fontWeight: 700, fontSize: 64, color: t > 871.5 ? C.rojo : C.lima, textAlign: "center", marginTop: 20, WebkitTextStroke: "10px #1b1240", paintOrder: "stroke fill" }}>{t < 870.8 ? (t > 865.7 ? "6,000 SAILED" : "") : "1,200 ALIVE"}</div>
         </div>
       )}
-      <Chip t={t} t0={868.57} t1={870.8} text="THE KING TAKES CONTROL" color={C.oro} tinta={C.noche} x={960} y={120} centro size={70} />
+      <Chip t={t} t0={868.57} t1={872.8} text="THE KING TAKES CONTROL" color={C.oro} tinta={C.noche} x={960} y={120} centro size={70} />
       <Chip t={t} t0={872.81} t1={875.2} text="NOT ONE BAD WINTER" color={C.violeta} x={960} y={140} centro size={56} />
       {t > 875.0 && t < 880.2 && (
         <>
@@ -278,9 +278,9 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       )}
       {/* lo que salió mal */}
       {t > 880.0 && t < 888.8 && (
-        <div style={{ position: "absolute", left: 360, top: 170, width: 1200 }}>
+        <div style={{ position: "absolute", left: 300, top: 150, width: 1320, padding: "30px 40px 10px", background: "rgba(27,18,64,.82)", borderRadius: 30, boxSizing: "border-box" }}>
           {([["THE WRONG PEOPLE", 880.63, C.violeta], ["THE WRONG PLACE", 881.85, C.lima], ["THE WRONG TREASURE", 883.37, C.oro], ["THE WORST DROUGHT IN 7 CENTURIES", 884.71, C.naranja], ["SOMEONE ELSE'S LAND", 886.9, C.teal]] as [string, number, string][]).map(([s, t0, col], i) => (
-            <div key={s} style={{ display: "flex", alignItems: "center", gap: 24, marginBottom: 22, opacity: t > t0 ? 1 : 0, transform: `translateX(${(1 - ent(t, t0)) * -200}px)` }}>
+            <div key={s} style={{ display: "flex", alignItems: "center", gap: 24, marginBottom: 22, opacity: t > t0 ? 1 : 0, transform: `translateX(${(1 - ent(t, t0, 0, { damping: 20, stiffness: 200 })) * -200}px)` }}>
               <div style={{ width: 84, height: 84, borderRadius: 42, background: col, border: "6px solid #fff", fontFamily, fontWeight: 700, fontSize: 48, color: C.noche, textAlign: "center", lineHeight: "72px" }}>{i + 1}</div>
               <div style={{ fontFamily, fontWeight: 700, fontSize: 58, whiteSpace: "nowrap", color: "#fff", WebkitTextStroke: "10px #1b1240", paintOrder: "stroke fill" }}>{s}</div>
             </div>

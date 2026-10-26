@@ -91,7 +91,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
             {[0, 1, 2, 3, 4].map((i) => { const x = interpolate(t, [663.9, 665.4], [25200 + i * 90, FX - 40 + i * 30], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }); return t < 665.6 ? <En key={i} x={x} w={200}><Persona x={x} y={SUELO} h={220} t={t} seed={770 + i} ropa={COLONO(i)} camina={1.4} expr="miedo" flip /></En> : null; })}
             {t > 666.0 && (() => { const x = interpolate(t, [666.2, 667.8, 668.6, 669.6], [FX + 330, FX + 700, FX + 700, FX + 360], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }); return <En x={x} w={200}><Persona x={x} y={SUELO} h={220} t={t} seed={775} ropa={COLONO(3)} camina={t < 667.8 || t > 668.6 ? 1.4 : 0} flip={t > 668.6} expr={t > 668 ? "miedo" : "neutro"} flaco={0.25} /></En>; })()}
             {Array.from({ length: 9 }, (_, i) => { const x = 25250 + i * 130, y = SUELO - 120 - (i % 3) * 70; const parp = Math.sin(t * 3 + i * 1.7) > 0.93 ? 0.15 : 1; return <En key={i} x={x} w={60}><svg style={{ position: "absolute", left: x - 30, top: y - 10, opacity: prog(t, 667.9 + i * 0.12, 668.4 + i * 0.12) }} width={60} height={20}><ellipse cx={14} cy={10} rx={10} ry={8 * parp} fill="#fff4a0" /><ellipse cx={44} cy={10} rx={10} ry={8 * parp} fill="#fff4a0" /></svg></En>; })}
-            {t > 670.5 && <En x={FX} w={1000}><svg style={{ position: "absolute", left: FX - 560, top: SUELO - 420, overflow: "visible" }} width={1120} height={440}><rect x={0} y={0} width={1120} height={440} rx={60} fill="none" stroke={C.rojo} strokeWidth={10} strokeDasharray="40 24" strokeDashoffset={-t * 60} opacity={ent(t, 670.6)} /></svg></En>}
+            
             {t > 672.6 && <En x={FX + 60} w={300}><Canasta x={FX + 60} y={SUELO - 70} s={0.5} llena={0} /></En>}
           </>
         )}
@@ -236,8 +236,8 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={729.77} t1={731.1} text="= OUTSIDE THE WALLS" color={C.rojo} x={960} y={930} centro size={52} />
       <Chip t={t} t0={731.31} t1={735.9} text="SPRING 1610" color={C.lima} tinta={C.noche} x={960} y={140} centro size={60} />
       {t > 731.4 && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, pointerEvents: "none" }} />}
-      {t > 732.6 && t < 739.4 && <Tablero t={t} valor={Math.round(interpolate(t, [733.7, 735.8], [500, 60], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }))} titulo="ALIVE" rojo={t > 735.6} x={960} y={430} s={2.2} />}
-      {t > 739.5 && <Grande t={t} t0={739.67} text="THE STARVING TIME" y={420} size={140} color={C.ambar} />}
+      {t > 732.6 && t < 739.4 && <Tablero t={t} valor={Math.round(interpolate(t, [733.7, 735.8], [500, 60], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }))} titulo="ALIVE" rojo={t > 735.6} x={960} y={300} s={1.8} />}
+      {t > 739.5 && <Grande t={t} t0={739.67} text="THE STARVING TIME" y={200} size={130} color={C.ambar} />}
     </AbsoluteFill>
   );
 };

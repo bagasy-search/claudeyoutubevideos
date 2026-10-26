@@ -90,8 +90,8 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
         {/* playa 1610: las dos naves chicas de Bermudas */}
         {(t < 33.6 || t > 42) && (
           <>
-            <En x={nD} w={500}><Nave x={nD} y={AGUA - 70} t={t} tam={0.55} vela={t > 42 ? 1 : 0.2} nombre={t > 14.3 && t < 18 ? "DELIVERANCE" : undefined} /></En>
-            <En x={nP} w={500}><Nave x={nP} y={AGUA - 66} t={t + 1} tam={0.5} vela={t > 42 ? 1 : 0.2} casco="#6a3416" nombre={t > 14.3 && t < 18 ? "PATIENCE" : undefined} /></En>
+            <En x={nD} w={500}><Nave x={nD} y={AGUA - 70} t={t} tam={0.55} vela={t > 42 ? 1 : 0.2} nombre={undefined} /></En>
+            <En x={nP} w={500}><Nave x={nP} y={AGUA - 66} t={t + 1} tam={0.5} vela={t > 42 ? 1 : 0.2} casco="#6a3416" nombre={undefined} /></En>
           </>
         )}
         {/* la multitud del otoño (500) y su desaparición */}
@@ -185,7 +185,6 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
         </AbsoluteFill>
       )}
       <Chip t={t} t0={33.82} t1={35.2} text="SAIL THERE" color={C.teal} tinta={C.noche} x={960} y={880} centro size={64} />
-      <Chip t={t} t0={36.82} t1={40.2} text="STEP BY STEP" color={C.violeta} x={960} y={150} centro size={62} />
       {t > 36.8 && t < 42.6 && (
         <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, opacity: 1 - prog(t, 42.2, 42.6) }}>
           <div style={{ position: "absolute", inset: 0, background: "#1b1240", opacity: prog(t, 36.8, 37.1) }} />
@@ -199,6 +198,7 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
           })}
         </div>
       )}
+      <Chip t={t} t0={36.82} t1={40.2} text="STEP BY STEP" color={C.violeta} x={960} y={150} centro size={62} />
       <Chip t={t} t0={39.1} t1={41.4} text="EVERY SINGLE TRAP" color={C.rojo} x={960} y={930} centro size={62} />
       {t > 41.9 && t < 43.0 && <Grande t={t} t0={41.96} text="7 TRAPS" y={170} size={140} color={C.ambar} />}
       <Chip t={t} t0={44.64} t1={47.4} text="THE SURVIVORS... SAILING AWAY" color={C.violeta} x={960} y={150} centro size={56} />

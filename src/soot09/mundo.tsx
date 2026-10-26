@@ -218,7 +218,7 @@ export const Vegetacion: React.FC<{ t: number }> = ({ t }) => {
           {k < 0.3 ? <Cipres x={x} y={SUELO - 300 * s} s={s} /> : <Pino x={x} y={SUELO - 190 * s} s={s} color={k < 0.6 ? "#1f6a3a" : "#2a7a44"} />}
         </En>
       ))}
-      {[13350, 13700, 14150, 14450].map((x, i) => <En key={i} x={x}><Palmera t={t} x={x} y={SUELO - 230} s={0.9 + (i % 2) * 0.2} /></En>)}
+      {t > 540 && [13350, 13700, 14150, 14450].map((x, i) => <En key={i} x={x}><Palmera t={t} x={x} y={SUELO - 230} s={0.9 + (i % 2) * 0.2} /></En>)}
     </>
   );
 };

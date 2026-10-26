@@ -56,7 +56,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
           <>
             <En x={3300} w={400}><div style={{ position: "absolute", left: 3300, top: 230, transform: `translate(-50%,-50%) scale(${ent(t, 64.6)}) rotate(${Math.sin(t * 2) * 2}deg)`, fontFamily, fontWeight: 700, fontSize: 54, color: "#ffe6b0", background: "#5a2a5a", border: "6px solid #2a1430", borderRadius: 10, padding: "6px 18px", whiteSpace: "nowrap" }}>VIRGINIA COMPANY</div></En>
             {[3150, 3450].map((x, i) => <En key={x} x={x} w={250}><Persona x={x} y={SUELO} h={360} t={t} seed={110 + i} ropa={GENT(i + 2)} expr={i ? "enojado" : "orgullo"} habla={i === 0} bD={i === 0 ? 110 : undefined} cD={i === 0 ? 30 : undefined} gorro="copa" gola flip={i === 1} aparece={63.0 + i * 0.2} barba={i ? "#5a3a2a" : undefined} /></En>)}
-            {t > 66.4 && <Pergamino x={3300} y={430} w={360} abre={prog(t, 66.45, 66.9) * 0.55} lineas={5} firma={prog(t, 67.3, 68.2)} titulo="CHARTER" />}
+            {t > 66.4 && <Pergamino x={2880} y={430} w={360} abre={prog(t, 66.45, 66.9) * 0.55} lineas={5} firma={prog(t, 67.3, 68.2)} titulo="CHARTER" />}
             {/* el rey Jacobo entrega la carta */}
             {t > 65.9 && <En x={3640} w={300}><Persona x={3640} y={SUELO} h={440} t={t} seed={119} ropa={{ ...GENT(0), tunica: "#8a1a2e", tunica2: "#5a0f1e" }} capa="#c9a24a" gola barba="#6a4a2a" expr="orgullo" flip bI={150} cI={10} aparece={65.95} manoI={<g transform="rotate(-20)"><rect x={-14} y={-60} width={28} height={110} rx={10} fill="#f6e3b4" stroke="#7a3d14" strokeWidth={5} /></g>} />
               <Corona x={3640} y={SUELO - 462} s={0.48} t={t} t0={66.0} />
@@ -121,9 +121,9 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={63.04} t1={66.1} text="INVESTORS" color={C.violeta} x={960} y={930} centro size={58} />
       <Chip t={t} t0={66.44} t1={69.0} text="ROYAL CHARTER · KING JAMES" color={C.oro} tinta={C.noche} x={960} y={930} centro size={56} />
       <Chip t={t} t0={68.72} t1={70.2} text="LOOKING FOR MEN" color={C.rojo} x={960} y={140} centro size={60} />
-      {t > 70.1 && t < 71.8 && <Grande t={t} t0={70.56} text="IRRESISTIBLE" x={1380} y={180} size={110} color={C.ambar} />}
+      {t > 70.1 && t < 71.8 && <Grande t={t} t0={70.56} text="IRRESISTIBLE" x={960} y={130} size={100} color={C.ambar} />}
       {t > 74.0 && t < 77.9 && <div style={{ position: "absolute", left: 0, top: 0 }}><Particulas t={t} tipo="destellos" n={26} seed={4} /></div>}
-      <Chip t={t} t0={76.68} t1={77.9} text="MEXICO" color={C.teal} tinta={C.noche} x={250} y={880} size={46} />
+      <Chip t={t} t0={76.68} t1={77.9} text="MEXICO & PERU" color={C.teal} tinta={C.noche} x={250} y={880} size={54} />
       <Chip t={t} t0={77.3} t1={77.9} text="PERU" color={C.teal} tinta={C.noche} x={1450} y={880} size={46} />
       {t > 86.6 && t < 88.4 && <Particulas t={t} tipo="lluviaoro" n={50} seed={6} />}
       <Chip t={t} t0={88.82} t1={89.7} text="THE FINE PRINT" color={C.rojo} x={960} y={960} centro size={58} />

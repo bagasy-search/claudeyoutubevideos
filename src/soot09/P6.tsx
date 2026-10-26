@@ -12,8 +12,8 @@ import { Lupa, Tacha } from "./kitj2";
 // tirando todo y cortando el palo mayor, Somers 3 días al timón, el arrecife de Bermudas; el resto llega a Jamestown
 // sin líderes, con ratas; Smith y la pólvora; se va y nunca vuelve.
 export const CAM6: K[] = [
-  [550.7, 24400, 690, 0.8], [551.0, 24400, 690, 0.8], [551.12, 12600, 640, 0.85], [552.9, 12600, 640, 0.88], [553.02, 3300, 640, 1.3], [556.5, 3300, 640, 1.36],
-  [557.6, 7100, 600, 0.4], [561.6, 7100, 600, 0.42], [562.4, 5900, 640, 0.95], [568.8, 6050, 640, 0.95], [569.6, 6500, 600, 0.6],
+  [550.62, 24400, 690, 0.8], [550.74, 12600, 640, 0.85], [552.9, 12600, 640, 0.88], [553.02, 3300, 640, 1.3], [556.7, 3300, 640, 1.36],
+  [556.74, 7100, 600, 0.4], [561.6, 7100, 600, 0.42], [562.4, 5900, 640, 0.95], [568.8, 6050, 640, 0.95], [569.6, 6500, 600, 0.6],
   [571.4, 9900, 650, 0.8], [572.2, 11150, 650, 0.82], [574.9, 11550, 640, 0.75], [578.0, 11750, 660, 0.8], [583.1, 11850, 680, 0.95], [588.5, 11950, 660, 0.9],
   [589.4, 11840, 700, 1.6], [592.3, 12020, 700, 1.55], [593.2, 12500, 640, 0.6], [597.2, 12900, 650, 0.62], [598.6, 13350, 680, 0.75],
   [607.6, 13400, 640, 0.55], [608.4, 21800, 620, 0.5], [611.2, 22300, 620, 0.55], [612.3, 23620, 700, 1.0], [621.4, 23720, 700, 1.02],
@@ -138,11 +138,11 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
               </div>
             ) : salto < 1 ? (
               <>
-                <Persona x={smithBote + salto * 300} y={AGUA - 30 - Math.sin(salto * Math.PI) * 200 + salto * 120} h={220} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" expr="miedo" bD={170} bI={170} cD={20} cI={20} inclina={salto * 40} />
                 {/* el cuerpo en llamas mientras salta */}
-                <svg style={{ position: "absolute", left: smithBote + salto * 300 - 90, top: AGUA - 250 - Math.sin(salto * Math.PI) * 200 + salto * 120, overflow: "visible" }} width={180} height={220}>
-                  {Array.from({ length: 6 }, (_, i) => { const w = Math.sin(t * (11 + i) + i * 2) * 10; const x0 = 20 + i * 28; return <path key={i} d={`M ${x0} 200 Q ${x0 - 14 + w} ${120 - (i % 3) * 20} ${x0 + 10 + w} ${40 + (i % 2) * 30} Q ${x0 + 34 - w} 130 ${x0 + 26} 200 Z`} fill={["#ff5a1a", "#ffb23a", "#fff0a0"][i % 3]} opacity={0.9 * (1 - prog(t, 637.4, 637.6))} />; })}
+                <svg style={{ position: "absolute", left: smithBote + salto * 300 - 90, top: AGUA - 300 - Math.sin(salto * Math.PI) * 200 + salto * 120, overflow: "visible" }} width={180} height={220}>
+                  {Array.from({ length: 6 }, (_, i) => { const w = Math.sin(t * (11 + i) + i * 2) * 10; const x0 = 20 + i * 28; return <path key={i} d={`M ${x0} 200 Q ${x0 - 14 + w} ${120 - (i % 3) * 20} ${x0 + 10 + w} ${40 + (i % 2) * 30} Q ${x0 + 34 - w} 130 ${x0 + 26} 200 Z`} fill={["#ff5a1a", "#ffb23a", "#fff0a0"][i % 3]} opacity={0.75 * (1 - prog(t, 637.4, 637.6))} />; })}
                 </svg>
+                <Persona x={smithBote + salto * 300} y={AGUA - 30 - Math.sin(salto * Math.PI) * 200 + salto * 120} h={220} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" expr="miedo" bD={170} bI={170} cD={20} cI={20} inclina={salto * 40} />
               </>
             ) : null}
             {t > 628.6 && t < 636.1 && <svg style={{ position: "absolute", left: smithBote - 70, top: AGUA - 85, overflow: "visible", transform: "scale(1.5)" }} width={80} height={70}>{t > 633.6 && <g>{[0, 1, 2, 3].map((k) => <circle key={k} cx={40 + Math.sin(t * 30 + k) * 14} cy={-6 - k * 8} r={6 - k} fill={k % 2 ? "#ffd34a" : "#ff6a2a"} />)}</g>}<path d="M 6 20 Q 40 -6 74 20 L 70 64 L 10 64 Z" fill="#6a5a3a" stroke="#3a2a12" strokeWidth={5} /><text x={40} y={52} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={18} fill="#fff">POWDER</text></svg>}
@@ -157,7 +157,6 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
 
       {/* pantalla */}
       {tormenta && <Lluvia t={t} n={140} angulo={22} op={0.6} />}
-      {t < 553 && <Trampas t={t} t0={550.8} n={6} y={960} />}
       <Chip t={t} t0={553.03} t1={556.5} text="LONDON" color={C.rojo} x={960} y={140} centro size={56} />
       <Chip t={t} t0={554.77} t1={557.2} text="ONCE AND FOR ALL" color={C.violeta} x={960} y={930} centro size={56} />
       {t > 556.9 && t < 559.2 && <Grande t={t} t0={556.97} text="THE BIGGEST FLEET" y={200} size={110} color={C.ambar} />}
