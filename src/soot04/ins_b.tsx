@@ -403,7 +403,7 @@ export const INS_B: Ins[] = [
             <path d={`M 380 -80 Q 420 -300 ${260 + pela * 60} -480`} stroke="#f0d0b0" strokeWidth={50} fill="none" strokeLinecap="round" opacity={pela} />
             <line x1={260 + pela * 60} y1={-480} x2={260 + pela * 60} y2={-640} stroke="#5a3418" strokeWidth={10} />
           </g>
-          <text x={560} y={940} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill={C.noche} opacity={prog(t, 498.5, 498.8)}>LIKE PEELING AN ORANGE</text>
+          <text x={560} y={190} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill={C.noche} opacity={prog(t, 498.5, 498.8)}>LIKE PEELING AN ORANGE</text>
           <text x={1380} y={940} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill={C.noche} opacity={prog(t, 502.7, 503.0)}>…1 TON A STRIP</text>
         </svg>
         <Marino i={2} x={1000} y={1260} h={620} t={t} expr="enojado" bD={110 + Math.sin(t * 5) * 25} cD={60} manoD={<g transform="rotate(-150) scale(1.1)"><Pala x={0} y={0} /></g>} inclina={Math.sin(t * 5) * 5} />
@@ -491,15 +491,15 @@ export const INS_B: Ins[] = [
           </svg>
           {t < 565.2 && <Marino i={5} x={250} y={1300} h={980} t={t} expr={t < 560.6 ? "neutro" : "sorpresa"} mira={1} miraY={-0.4} salta={560.7} bD={t > 560.6 ? 120 : 60} cD={t > 560.6 ? 10 : 100} manoD={<path d="M -50 0 L 50 0 L 40 90 L -40 90 Z" fill="#8a8a9a" stroke={C.noche} strokeWidth={6} />} />}
           <Chip t={t} t0={557.6} t1={560.8} text="THE HEAD" color={C.violeta} x={960} y={90} centro size={56} />
-          <Rot t={t} t0={561.0} text="SPERMACETI" x={960} y={130} size={110} color={C.crema} />
+          <Rot t={t} t0={561.0} t1={565.6} text="SPERMACETI" x={960} y={130} size={110} color={C.crema} />
           <Chip t={t} t0={562.1} t1={565.7} text="THE FINEST CANDLE WAX" color={C.ambar} tinta={C.noche} x={960} y={1000} centro size={50} />
           {t >= 565.2 && (
             <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: "polygon(300px 240px, 1600px 240px, 1600px 620px, 300px 620px)" }}>
               <Marino i={2} x={interpolate(t, [565.3, 566.6], [1700, 1300], { extrapolateRight: "clamp" })} y={interpolate(t, [565.3, 566.6], [500, 760], { extrapolateRight: "clamp" })} h={600} t={t} expr="feliz" flip bD={t > 567.6 ? interpolate(Math.sin(t * 6), [-1, 1], [40, 140]) : 70} manoD={<path d="M -50 0 L 50 0 L 40 90 L -40 90 Z" fill="#8a8a9a" stroke={C.noche} strokeWidth={6} />} />
             </div>
           )}
-          <Chip t={t} t0={565.9} text="A MAN CLIMBS INSIDE" color={C.rojo} x={1300} y={1000} centro size={54} />
-          <Chip t={t} t0={567.7} text="+ A BUCKET" color={C.teal} tinta={C.noche} x={500} y={1000} centro size={54} />
+          <Chip t={t} t0={565.9} text="A MAN CLIMBS INSIDE" color={C.rojo} x={1250} y={140} centro size={54} />
+          <Chip t={t} t0={567.7} text="+ A BUCKET" color={C.teal} tinta={C.noche} x={1250} y={240} centro size={54} />
         </>
       );
     },

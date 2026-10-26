@@ -215,7 +215,7 @@ export const INS_C: Ins[] = [
           {/* vuelta 7 OJO: cada mes que pasa se arranca una hoja del calendario y sale volando */}
           {t >= 676.5 && t < 678.4 && [0, 1, 2].map((k) => {
             const u = ((t - 676.5) * 4 + k / 3) % 1;
-            return <div key={k} style={{ position: "absolute", left: 1060 + u * 620, top: 330 - u * 260 + u * u * 520, width: 220, height: 150, marginLeft: -110, background: "#fff", border: `8px solid ${C.noche}`, borderRadius: 14, transform: `rotate(${u * 540}deg)`, opacity: 1 - u }} />;
+            return <div key={k} style={{ position: "absolute", left: 1500 + u * 380, top: 560 - u * 140 + u * u * 520, width: 220, height: 150, marginLeft: -110, background: "#fff", border: `8px solid ${C.noche}`, borderRadius: 14, transform: `rotate(${u * 540}deg)`, opacity: 1 - u }} />;
           })}
           {t >= 680.0 && (
             <>
@@ -545,7 +545,7 @@ export const INS_C: Ins[] = [
     fondo: (t) => <Rayos2 t={t} c1="#f7c548" c2="#ecb83a" />,
     d: (t) => (
       <>
-        <div style={{ position: "absolute", left: 1200, top: 540, width: 620, height: 780, transform: `translate(-50%,-50%) rotate(${-4 + (1 - ent(t, 812.3)) * 40}deg) scale(${ent(t, 812.3)})`, background: "#f6ecd2", border: "10px solid #5a3418", padding: 40, fontFamily, fontWeight: 700, color: "#2a1530" }}>
+        <div style={{ position: "absolute", left: 1200, top: 610, width: 620, height: 780, transform: `translate(-50%,-50%) rotate(${-4 + (1 - ent(t, 812.3)) * 40}deg) scale(${0.82 * ent(t, 812.3)})`, background: "#f6ecd2", border: "10px solid #5a3418", padding: 40, fontFamily, fontWeight: 700, color: "#2a1530" }}>
           <div style={{ fontSize: 50, textAlign: "center" }}>SHIPPING PAPER</div>
           {Array.from({ length: 6 }, (_, k) => <div key={k} style={{ height: 14, background: "#cbb68e", margin: "26px 0", width: `${92 - (k % 3) * 14}%` }} />)}
           <div style={{ fontSize: 40 }}>LAY: 1/175</div>

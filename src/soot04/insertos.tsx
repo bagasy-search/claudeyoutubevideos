@@ -101,7 +101,7 @@ export const MostrarInsertos: React.FC<{ t: number; lista: Ins[] }> = ({ t, list
   }
   const i = lista[idx];
   // el contenido arranca ya armado (los elementos que entraban en `a` dejaban el primer cuadro vacío o un disco oscuro)
-  const tc = tt + 0.45 * Math.max(0, 1 - (tt - i.a) / 1.8); // vuelta 7: 0,6 s en 1 s (×0,4) daba cuadros casi iguales (lageo en 677)
+  const tc = tt + 0.3; // vuelta 8: cualquier cámara lenta de entrada daba cuadros casi iguales (lageos 677, 243) → adelanto fijo de 0,3 s a velocidad real
   // vuelta 5: el iris/barrido muestreado a mitad parecía un disco negro o una mancha tapando la escena → corte seco siempre
   const tipo = "corte" as "iris" | "barrido" | "zoom" | "corte";
   const IN = 0.2;
