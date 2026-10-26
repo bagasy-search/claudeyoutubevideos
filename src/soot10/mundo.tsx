@@ -84,7 +84,7 @@ export const estadoPirata = (t: number) => ({
   campana: [186.1, 187.9, 188.9, 189.7, 190.5, 255, 869.9, 909.6, 912.1],
   reloj: [184.9, 188.6, 189.4, 190.2, 193.2],
   agua: t > 200 && t < 218 ? prog(t, 203, 209) - prog(t, 211, 214) : 0.2,
-  humo: t < 5.5 ? 1 : t > 712 && t < 760 ? 0.8 : 0,
+  humo: t < 5.5 ? 1 : t > 712 && t < 719.4 ? 0.8 : 0,
 });
 
 // ── lugares del mundo (sólo se dibujan si están en cuadro)

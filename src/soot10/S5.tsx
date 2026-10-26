@@ -136,6 +136,7 @@ export const A5: React.FC<{ t: number }> = ({ t }) => {
         {/* ratas */}
         {ratas && Array.from({ length: 9 }, (_, i) => {
           const x = 1300 + ((t - 515.3) * (260 + i * 30) + i * 160) % 1700;
+          if (t > 519.4 && t < 524.4 && Math.abs(x - 2500) < 170) return null;
           return <Rata key={i} x={x} y={CUB - 4} s={0.9} t={t} />;
         })}
         {[515.4, 515.7, 516.1, 516.6].map((a, i) => <S key={i} t={a} p="squeak" g={-8} pitch={1 + i * 0.1} />)}
