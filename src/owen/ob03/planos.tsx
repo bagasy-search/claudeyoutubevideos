@@ -116,11 +116,11 @@ export const P04Lunes: React.FC = () => {
   const cl = [mira(0, 300, A - 200, 2.0), mira(k(12.0), 340, A - 210, 1.6, { curva: "inout" }), mira(k(17.0), 300, A - 220, 2.2, { curva: "inout" })];
   return (
     <Escena Set={TwoFlatCorte} pal={PAL} claves={cl} seed={4} setProps={{ hora: "noche", luzCocina: false, luzBaño: false, luzDorm: true }}
-      medio={<Actor look={OWEN_CASA} escala={ESC} seed={6} ruta={[{ f: 0, x: CAMA, y: A }, { f: k(19.3), x: CAMA }, { f: k(20.3), x: CAMA + 260 }]} dir={[{ f: 0, v: 1 }]}
+      medio={<Actor look={OWEN_CASA} escala={ESC} seed={6} ruta={[{ f: 0, x: CAMA, y: A }]} dir={[{ f: 0, v: 1 }]}
         poses={[{ f: 0, v: { tronco: 30, pI: 88, rI: 88, pD: 92, rD: 92, hI: 25, cI: 50, hD: 35, cD: 55 } }, { f: k(10.0), v: { tronco: 22, pI: 88, rI: 88, pD: 92, rD: 92, hD: 95, cD: 5, hI: 25, cI: 50 } }, { f: k(11.0), v: "sentado" },
           { f: k(13.0), v: { tronco: 40, pI: 70, rI: 110, pD: 92, rD: 92, hD: 70, cD: 20, hI: 70, cI: 20, cabeza: 10 } }, { f: k(14.6), v: { tronco: 40, pI: 92, rI: 92, pD: 70, rD: 110, hD: 70, cD: 20, hI: 70, cI: 20, cabeza: 10 } }, { f: k(15.8), v: "sentado" },
-          { f: k(16.8), v: { tronco: -6, pI: 88, rI: 88, pD: 92, rD: 92, hD: 150, cD: 20, hI: 150, cI: 20 } }, { f: k(18.6), v: "sentado" }, { f: k(19.3), v: "parado" }]}
-        asiento={[{ f: 0, v: 110 }, { f: k(19.0), v: 110 }, { f: k(19.3), v: undefined }]} caras={[{ f: 0, v: "neutral" }, { f: k(11.0), v: "sorpresa" }, { f: k(14.0), v: "feliz" }]} miradas={[{ f: 0, v: { x: 0.6, y: -0.2 } }, { f: k(13.0), v: { x: 0.2, y: 0.6 } }, { f: k(16.0), v: { x: 0.6, y: -0.2 } }]} />}
+          { f: k(16.8), v: { tronco: -6, pI: 88, rI: 88, pD: 92, rD: 92, hD: 150, cD: 20, hI: 150, cI: 20 } }, { f: k(18.6), v: "sentado" }, { f: k(19.4), v: { tronco: -4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 95, cD: 10, hI: 30, cI: 40, cabeza: -6 } }]}
+        asiento={[{ f: 0, v: 110 }]} caras={[{ f: 0, v: "neutral" }, { f: k(11.0), v: "sorpresa" }, { f: k(14.0), v: "feliz" }]} miradas={[{ f: 0, v: { x: 0.6, y: -0.2 } }, { f: k(13.0), v: { x: 0.2, y: 0.6 } }, { f: k(16.0), v: { x: 0.6, y: -0.2 } }]} />}
       hud={<>
         <Pildora texto="MONDAY · 5:12 AM" x={960} y={950} desde={0} hasta={k(12.5)} color="#ffd27a" />
         {[["no fog", 12.6], ["no heavy head", 13.8], ["no snooze button", 15.2]].map(([t, a], i) => <Mano key={i} texto={t as string} x={560} y={260 + i * 110} desde={k(a as number)} hasta={k(16.7)} color={VERDE} tam={60} />)}
@@ -289,7 +289,7 @@ export const P13Martes: React.FC = () => {
   return (
     <Escena Set={TwoFlatCorte} pal={PAL} claves={cl} seed={13} setProps={{ hora: "alba", luzBaño: true }}
       medio={<Actor look={OWEN_CASA} escala={ESC} seed={6} vivo={0} ruta={[{ f: 0, x: TF_PUNTOS.espejo - 190, y: A }, { f: k(109.8), x: TF_PUNTOS.espejo - 190 }, { f: k(110.6), x: TF_PUNTOS.espejo - 120 }]} dir={[{ f: 0, v: 1 }]}
-        poses={[...Array.from({ length: 12 }).map((_, i) => ({ f: i * 6, v: i % 2 ? { hD: 105, cD: 150, cabeza: -3 } : { hD: 95, cD: 160, cabeza: 3 } })), { f: 74, v: "parado" }, { f: k(110.6), v: "señalar" }, { f: k(111.4), v: { hD: 80, cD: 20 } }, { f: k(111.8), v: "pensar" }]}
+        poses={[...Array.from({ length: 6 }).map((_, i) => ({ f: i * 12, v: i % 2 ? { hD: 102, cD: 152, cabeza: -2 } : { hD: 97, cD: 158, cabeza: 2 } })), { f: 74, v: "parado" }, { f: k(110.6), v: "señalar" }, { f: k(111.4), v: { hD: 80, cD: 20 } }, { f: k(111.8), v: "pensar" }]}
         caras={[{ f: 0, v: "feliz" }, { f: k(110.9), v: "duda" }]} />}
       hud={<>
         <Cansa cl={cl} x={(ff) => (ff < k(110.6) ? TF_PUNTOS.espejo - 190 : TF_PUNTOS.espejo - 120)} y={A - 330} pct={0} desde={0} tam={1.2} glitch={(ff) => ff > k(110.9) && ff < k(111.5)} />
