@@ -10,7 +10,7 @@ import { BigNum, DrawX, Flash, LowerThird, Chips, P, Portal, Tag, e, ei, s } fro
 import { GuideCTA, QChapter, SayThis, FourSquare, LoanCompare, BuyersOrder, TilaBox, MiamiMap, YearStamp, QuoteCard, MoneyCounter, MenuBoard, Calc, Notebook, Checklist, LotClock, EndCard } from "./piezas";
 import { CamaraMano } from "../kits/camara/CamaraMano";
 
-export type Avail = { reel: boolean; reelLen: number; clips: string[]; clipLen?: Record<string, number>; rate?: Record<string, number>; end: number };
+export type Avail = { reel: boolean; reelLen: number; clips: string[]; clipLen?: Record<string, number>; rate?: Record<string, number>; off?: Record<string, number>; src?: Record<string, string>; end: number };
 export type Win = { ms: number; me: number; off: number };
 type Tr = "cut" | "swipeL" | "swipeR" | "up" | "down" | "portal" | "iris" | "zoom" | "fade" | "wipe";
 export type SegJ = { a: number; k: "w" | "av" | "img" | "bk"; id?: string; tr?: Tr; px?: number; py?: number; pt?: PtK; z?: [number, number]; ox?: number; oy?: number };
@@ -33,7 +33,7 @@ const Shot: React.FC<{ id: string; t: number; a: number; d: Data; z?: [number, n
   const q = e(t, a, a + 8), sc = z[0] + (z[1] - z[0]) * q;
   const clip = d.av.clips.includes(id), L = d.av.clipLen?.[id] ?? 3;
   const media = clip
-    ? <Sequence from={s(a) - 12} layout="none"><Freeze frame={s(L) - 2} active={(f) => f > s(L) - 2}><OffthreadVideo src={staticFile(P + "c_" + id + ".mp4")} playbackRate={d.av.rate?.[id] ?? 1} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></Freeze></Sequence>
+    ? <Sequence from={s(a) - 12} layout="none"><Freeze frame={s(L) - 2} active={(f) => f > s(L) - 2}><OffthreadVideo src={staticFile(P + "c_" + (d.av.src?.[id] ?? id) + ".mp4")} startFrom={s(d.av.off?.[id] ?? 0)} playbackRate={d.av.rate?.[id] ?? 1} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></Freeze></Sequence>
     : <Img src={staticFile(P + "i_" + id + ".jpg")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />;
   return <AbsoluteFill style={{ overflow: "hidden", background: "#0b0e12" }}><CamaraMano intensidad={0.9} seed={Math.round(a)}><AbsoluteFill style={{ transform: `scale(${sc}) translate(${ox * q}px, ${oy * q}px)` }}>{media}</AbsoluteFill></CamaraMano></AbsoluteFill>;
 };

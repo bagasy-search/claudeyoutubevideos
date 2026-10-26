@@ -109,7 +109,7 @@ export const DrawX: React.FC<{ t: number; at: number; x: number; y: number; w: n
 export const BigNum: React.FC<{ t: number; at: number; text: string; x?: number; y?: number; size?: number; col?: string; edge?: string; out?: number; sub?: string }> = ({ t, at, text, x = 960, y = 520, size = 260, col = COL.ink, edge = "#5a4a36", out = 1e9, sub }) => {
   const k = spr(t, at, 0.9), o = e(t, at, at + 0.1) * (1 - e(t, out, out + 0.3));
   if (o <= 0.01) return null;
-  size = Math.min(size, 1700 / Math.max(1, text.length * 0.62));  // frases largas: que entren a lo ancho
+  size = Math.min(size, 1500 / Math.max(1, text.length * 0.74));  // frases largas: que entren a lo ancho
   const ry = (1 - Math.min(1, k)) * -70 + Math.sin((t - at) * 0.9) * 6;
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: "translate(-50%,-50%)", perspective: 1200, opacity: o }}>
