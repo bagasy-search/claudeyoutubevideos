@@ -44,9 +44,11 @@ const BARRO = "#6b4a2f";
 const Cresta: React.FC<{ t: number }> = ({ t }) => {
   const a = T("the wind sill", D), b = T("with cliffs facing north", D), c = T("it is also exactly", D);
   const p0 = T("the central part", D) + 0.6, up = prog(t, p0, p0 + 0.9);
+  const xs = 905 + 330 * (1 - prog(t, p0 + 0.9, a + 1.6));
   return (
     <AbsoluteFill style={{ background: "linear-gradient(180deg,#4f6488,#9fb2cc 60%,#d8dfe8)" }}>
       <div style={{ position: "absolute", left: 1380, top: 60, width: 520, height: 520, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,236,190,.55), rgba(255,236,190,0) 65%)" }} />
+      {[0, 1, 2, 3].map((k) => <div key={"nb" + k} style={{ position: "absolute", left: ((t * (40 + k * 15) + k * 560) % 2400) - 300, top: 90 + k * 70, width: 260 + k * 40, height: 70, borderRadius: 40, background: "rgba(255,255,255,.55)" }} />)}
       <div style={{ position: "absolute", inset: 0, transform: "translateY(150px)" }}>
       <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
         <defs>
@@ -79,11 +81,11 @@ const Cresta: React.FC<{ t: number }> = ({ t }) => {
           return <path key={i} d={`M ${-300 + k * 2300} ${y} q 60 -18 120 0 t 120 0`} stroke="#fff" strokeWidth={8} fill="none" strokeLinecap="round" opacity={0.75 * Math.sin(k * Math.PI)} />;
         })}
       </svg>
-      {up > 0.5 && <Persona {...gesto(t, [[a, "señala"], [T("it is beautiful", D) - 0.6, "festeja"], [b, "señala"], [c, "miedo"], [T("with nothing to stop", D), "tiembla"]])} x={905} y={880 - 440 * up - 66} h={330} t={t} seed={3} ropa={TUNGRO} casco="legion" malla capa="#3f6b2a" inclina={t > c ? -14 : 0} />}
+      {up > 0.5 && <Persona {...gesto(t, [[a, "señala"], [T("it is beautiful", D) - 0.6, "festeja"], [b, "señala"], [c, "miedo"], [T("with nothing to stop", D), "tiembla"]])} x={xs} y={880 - 440 * up - 66 + (xs - 900) * (80 * up / 400)} h={330} t={t} seed={3} ropa={TUNGRO} casco="legion" malla capa="#3f6b2a" inclina={t > c ? -14 : 0} camina={t > p0 + 0.9 && t < a + 1.6 ? 1.3 : 0} flip={t < a + 1.6} />}
       </div>
       <div style={{ position: "absolute", left: 60, top: 60, fontFamily, fontWeight: 700, fontSize: 54, color: "#fff" }}>← NORTH</div>
       <div style={{ position: "absolute", right: 60, top: 60, fontFamily, fontWeight: 700, fontSize: 54, color: "#fff" }}>SOUTH →</div>
-      {t > Math.min(a, p0 + 0.5) && <Chip t={t} t0={Math.min(a, p0 + 0.5)} text="THE WHIN SILL" color="#2a2a36" x={1380} y={430} centro size={64} />}
+      {t > Math.min(a, p0 + 0.5) && <Chip t={t} t0={Math.min(a, p0 + 0.5)} text="THE WHIN SILL" color="#2a2a36" x={1500} y={640} centro size={64} />}
       {t > b && <Chip t={t} t0={b} t1={T("with nothing to stop", D) - 0.2} text="CLIFFS FACING NORTH" color={C.violeta} x={520} y={820} centro size={50} />}
       {t > c && <Chip t={t} t0={c} text="ATLANTIC WIND →" color={C.teal} tinta={C.noche} x={460} y={200} centro size={62} />}
       {t > T("with nothing to stop", D) && <Grande t={t} t0={T("with nothing to stop", D)} text="NOTHING TO STOP IT" y={880} size={84} color={C.ambar} />}
