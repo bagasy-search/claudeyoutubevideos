@@ -141,8 +141,8 @@ const FeedTres: React.FC<{ dur: number }> = ({ dur }) => {
 const AulaArte: React.FC = () => {
   const PA = AULA_PISO;
   return (
-    <Escena Set={Aula} pal={PAL} setProps={{ variante: "gris", tiza: "ART · 2017" }} seed={150} mano={1.8}
-      claves={[mira(0, 1250, 560, 0.9), mira(loc(26.2, 30.3), 1300, PA - 260, 1.35, { curva: "inout" }), mira(273, 1320, PA - 300, 1.4)]}
+    <Escena Set={Aula} pal={PAL} setProps={{ variante: "gris", tiza: "" }} seed={150} mano={1.8}
+      claves={[mira(0, 1250, 560, 0.9), mira(loc(26.2, 30.3), 1300, PA - 300, 1.2, { curva: "inout" }), mira(273, 1310, PA - 330, 1.2)]}
       medio={<>
         <Actor look={{ ...LEO, alto: 0.85 }} escala={ESC} seed={1} luz={RIM_FRIO} ruta={[{ f: 0, x: 1180, y: PA }]} dir={[{ f: 0, v: 1 }]} asiento={[{ f: 0, v: 60 }]}
           poses={[{ f: 0, v: { ...SENTADO, hD: 50, cD: 90, cabeza: 18 } }, { f: 12, v: { ...SENTADO, hD: 58, cD: 80, cabeza: 18 } }, { f: 24, v: { ...SENTADO, hD: 50, cD: 90, cabeza: 18 } }, { f: 36, v: { ...SENTADO, hD: 58, cD: 80, cabeza: 18 } }, { f: 48, v: { ...SENTADO, hD: 50, cD: 90, cabeza: 18 } }]}
@@ -151,7 +151,8 @@ const AulaArte: React.FC = () => {
           poses={[{ f: 0, v: SENTADO }, { f: loc(26.2, 33.6), v: { ...SENTADO, tronco: -14, cabeza: 14, hD: 50, cD: 90 } }]}
           caras={[{ f: 0, v: "neutral" }, { f: loc(26.2, 33.6), v: "picaro" }]} miradas={[{ f: 0, v: { x: -0.9, y: 0.4 } }]} />
         <rect x={1180 + 60} y={PA - 150} width={110} height={8} fill="#e9e1cf" />
-      </>} />
+      </>}
+      hud={<TextoMano texto="art class · 2017" x={960} y={930} centro desde={6} color="#f4efe4" tam={64} rot={0} brillo={false} />} />
   );
 };
 
@@ -365,7 +366,7 @@ const T = (): TramoS[] => [
       hud={<RelojDia min={180} x={1640} y={150} />} />
   ) },
   { t0: 92.3, t1: 96.4, el: (
-    <EnLavadero cam={[mira(0, LAV.leo + 260, P - 300, 1.5), mira(123, LAV.leo + 280, P - 300, 1.6)]}
+    <EnLavadero cam={[mira(0, LAV.leo + 180, P - 300, 1.9), mira(123, LAV.leo + 200, P - 300, 2.0)]}
       leo={{ poses: [{ f: 0, v: SENTADO }, { f: 20, v: { ...SENTADO, hD: 95, cD: 10 } }], caras: [{ f: 0, v: "triste" }], habla: hab(92.3, [[95.2, 95.8]]), miradas: [{ f: 0, v: { x: 0.9, y: 0 } }], enManoD: (f) => (f > 10 ? <Tel /> : null) }}
       medio={<CajaArroz x={MESA_X} y={P - 150} />}
       hud={<ManoLeo texto="look at this." x={960} y={920} centro desde={loc(92.3, 95.2)} />} />
@@ -381,7 +382,7 @@ const T = (): TramoS[] => [
     </AbsoluteFill>
   ) },
   { t0: 101.9, t1: 103.9, el: (
-    <EnLavadero cam={[mira(0, LAV.leo + 300, P - 300, 1.5)]}
+    <EnLavadero cam={[mira(0, LAV.leo + 260, P - 300, 1.75), mira(87, LAV.leo + 260, P - 300, 1.85)]}
       tenzo={{ poses: [{ f: 0, v: { hD: 90, cD: 10, hI: 32, cI: 92 } }, { f: 40, v: TENZO_MESA }], enManoD: (f) => (f < 30 ? <Tel /> : null) }}
       leo={{ poses: [{ f: 0, v: SENTADO }, { f: 24, v: { ...SENTADO, hD: 80, cD: 20 } }, { f: 50, v: SENTADO_TEL }], enManoD: (f) => (f > 30 ? <Tel /> : null), caras: [{ f: 0, v: "triste" }] }}
       medio={<CajaArroz x={MESA_X} y={P - 150} />} />
@@ -401,12 +402,12 @@ const T = (): TramoS[] => [
       hud={<ManoLeo texto="this." x={960} y={900} centro desde={loc(111.7, 116.5)} tam={96} />} />
   ) },
   { t0: 117.4, t1: 122.8, el: (
-    <EnLavadero cam={[mira(0, LAV.tenzo - 80, P - 260, 1.4), mira(162, LAV.tenzo - 100, P - 260, 1.5)]}
+    <EnLavadero cam={[mira(0, LAV.tenzo - 60, P - 270, 1.85), mira(162, LAV.tenzo - 80, P - 270, 2.0)]}
       tenzo={{ caras: [{ f: 0, v: "neutral" }, { f: 40, v: "feliz" }], enManoD: <Palitos />, poses: [{ f: 0, v: { hD: 60, cD: 120, hI: 32, cI: 92, cabeza: 12 } }, { f: 20, v: { hD: 30, cD: 150, hI: 32, cI: 92, cabeza: 4 } }, { f: 50, v: { hD: 60, cD: 120, hI: 32, cI: 92, cabeza: 12 } }, { f: 80, v: { hD: 30, cD: 150, hI: 32, cI: 92, cabeza: 4 } }, { f: 110, v: { hD: 60, cD: 120, hI: 32, cI: 92, cabeza: 12 } }] }}
       medio={<CajaArroz x={MESA_X} y={P - 150} />} />
   ) },
   { t0: 122.8, t1: 127.6, el: (
-    <EnLavadero cam={[mira(0, 1500, 600, 1.05), mira(144, LAV.farol - 80, P - 240, 1.5, { curva: "inout" })]}
+    <EnLavadero cam={[mira(0, 1450, P - 280, 1.45), mira(144, LAV.farol - 80, P - 240, 1.8, { curva: "inout" })]}
       tenzo={{ caras: [{ f: 0, v: "feliz" }], habla: hab(122.8, [[122.9, 127.6]]), miradas: [{ f: 0, v: { x: -0.9, y: 0 } }], enManoD: <Palitos /> }}
       leo={{ caras: [{ f: 0, v: "duda" }], miradas: [{ f: 0, v: { x: 0.9, y: -0.1 } }] }} medio={<CajaArroz x={MESA_X} y={P - 150} />} />
   ) },
@@ -415,7 +416,7 @@ const T = (): TramoS[] => [
 
   // ACTO 4 · la vuelta
   { t0: 284.1, t1: 290.3, trans: { tipo: "fundido", d: 18 }, el: (
-    <EnLavadero cam={[mira(0, LAV.leo + 220, P - 280, 1.3), mira(186, LAV.tenzo - 120, P - 260, 1.6, { curva: "inout" })]}
+    <EnLavadero cam={[mira(0, LAV.leo + 120, P - 285, 1.8), mira(186, LAV.tenzo - 120, P - 260, 1.9, { curva: "inout" })]}
       leo={{ caras: [{ f: 0, v: "neutral" }], miradas: [{ f: 0, v: { x: 0.9, y: 0 } }] }}
       tenzo={{ enManoD: <Palitos />, caras: [{ f: 0, v: "feliz" }], poses: [{ f: 0, v: TENZO_MESA }, { f: loc(284.1, 287.3), v: { hD: 60, cD: 120, hI: 32, cI: 92, cabeza: 12 } }, { f: loc(284.1, 289), v: { hD: 30, cD: 150, hI: 32, cI: 92, cabeza: 4 } }] }}
       medio={<CajaArroz x={MESA_X} y={P - 150} arroz={0.25} />} />
@@ -428,7 +429,7 @@ const T = (): TramoS[] => [
   ) },
   { t0: 306.0, t1: 309.7, el: <DiogenesViejo /> },
   { t0: 309.7, t1: 316.8, el: (
-    <EnLavadero cam={[mira(0, 1500, P - 300, 1.45), mira(loc(309.7, 312.0), 1500, P - 300, 1.5), mira(loc(309.7, 312.1), LAV.tenzo + 90, P - 220, 2.2), mira(213, LAV.tenzo + 90, P - 220, 2.35)]}
+    <EnLavadero cam={[mira(0, 1450, P - 290, 1.75), mira(loc(309.7, 312.0), 1450, P - 290, 1.85), mira(loc(309.7, 312.1), LAV.tenzo + 90, P - 220, 2.2), mira(213, LAV.tenzo + 90, P - 220, 2.35)]}
       leo={{ caras: [{ f: 0, v: "duda" }], habla: hab(309.7, [[309.7, 311.7]]), poses: [{ f: 0, v: SENTADO }, { f: 10, v: { ...SENTADO, hD: 80, cD: 40 } }, { f: 60, v: SENTADO }], miradas: [{ f: 0, v: { x: 0.9, y: 0 } }] }}
       tenzo={{ caras: [{ f: 0, v: "neutral" }, { f: loc(309.7, 312.2), v: "risa" }, { f: loc(309.7, 313.4), v: "feliz" }], habla: hab(309.7, [[312.2, 313.0], [313.2, 316.8]]), poses: [{ f: 0, v: TENZO_MESA }, { f: loc(309.7, 312.2), v: { ...TENZO_MESA, tronco: -8, cabeza: -10 } }, { f: loc(309.7, 313.2), v: TENZO_MESA }], miradas: [{ f: 0, v: { x: -0.9, y: 0 } }] }}
       medio={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />}
@@ -436,7 +437,7 @@ const T = (): TramoS[] => [
   ) },
   { t0: 316.8, t1: 324.8, el: <ElBarco /> },
   { t0: 324.8, t1: 330.7, el: (
-    <EnLavadero cam={[mira(0, LAV.tenzo - 60, P - 330, 2.3), mira(177, LAV.tenzo - 60, P - 330, 2.45)]}
+    <EnLavadero cam={[mira(0, LAV.tenzo - 20, P - 290, 1.9), mira(177, LAV.tenzo - 20, P - 290, 2.05)]}
       tenzo={{ caras: [{ f: 0, v: "feliz" }], habla: hab(324.8, [[324.8, 326.4]]), miradas: [{ f: 0, v: { x: -0.9, y: 0 } }] }}
       hud={<><RelojDia min={180} x={1640} y={150} /><TextoMano texto="nobody posts three in the morning." x={960} y={930} centro desde={loc(324.8, 325.0)} color="#f4efe4" tam={72} rot={0} brillo={false} /></>} />
   ) },
@@ -534,7 +535,7 @@ const T = (): TramoS[] => [
     <EnCuarto dia cam={[mira(0, PIN.x + 80, PIN.y + 50, 2.8), mira(120, PIN.x + 80, PIN.y + 50, 3.0)]} leo={null} medio={<DosDibujos />} />
   ) },
   { t0: 461.6, t1: 467.0, el: (
-    <EnCuarto dia cam={CAM.camaPP(5.4)} leo={{ poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }], caras: [{ f: 0, v: "neutral" }, { f: 90, v: "feliz" }], miradas: [{ f: 0, v: { x: 0.6, y: -0.3 } }] }}
+    <EnCuarto dia cam={[mira(0, CTO.colchon, PC - 330, 1.55, { rot: -3 }), mira(162, CTO.colchon + 20, PC - 320, 1.75, { rot: -2, curva: "inout" })]} leo={{ poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }], caras: [{ f: 0, v: "neutral" }, { f: 90, v: "feliz" }], miradas: [{ f: 0, v: { x: 0.6, y: -0.3 } }] }}
       medio={<TelMesa x={CTO.colchon + 190} y={PC - CTO.COLCHON_ALTO + 4} bocaAbajo />} />
   ) },
   { t0: 467.0, t1: 471.0, el: (
