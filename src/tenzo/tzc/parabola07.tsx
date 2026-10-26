@@ -277,7 +277,7 @@ const Reverencia: React.FC = () => {
       medio={<>
         {filos.map((lk, i) => (
           <Actor key={i} look={lk} escala={ESC} seed={140 + i} luz={CALIDA} ruta={[{ f: 0, x: A.stoa - 260 + i * 320, y: P + (i % 2 ? 40 : -10) }]} dir={[{ f: 0, v: -1 }]}
-            poses={[{ f: 0, v: "firme" }, { f: 20 + i * 26, v: { tronco: 46, cabeza: 16, hD: 30, cD: 60, hI: 30, cI: 60 } }]} caras={[{ f: 0, v: "neutral" }]} />
+            poses={[{ f: 0, v: "firme" }, { f: 20 + i * 26, v: { tronco: 22, cabeza: 24, hD: 30, cD: 60, hI: 30, cI: 60 } }]} caras={[{ f: 0, v: "neutral" }]} />
         ))}
         {/* el hueco: un sitio vacío al final de la fila */}
         <ellipse cx={A.stoa - 260 + 5 * 320 + 60} cy={P + 4} rx={60} ry={10} fill="#000" opacity={0.08} />

@@ -343,7 +343,7 @@ export const TextoMano: React.FC<VozP> = (p) => <VozLimpia {...p} tinta={p.color
 // ---------- cámaras tipo para cortar las charlas (campo / contracampo / dos / inserto), con empuje lento de 6 % ----------
 const lento = (X: number, Y: number, z: number, s: number, extra: Partial<Clave> = {}): Clave[] => [mira(0, X, Y, z, extra), mira(Math.round(s * 30), X, Y, z * 1.06, { ...extra, curva: "inout" })];
 export const CAM = {
-  leo: (s: number, z = 2.2) => lento(L.leo - 10, LAV_PISO - 285, z, s),
+  leo: (s: number, z = 2.2) => lento(L.leo - 70, LAV_PISO - 285, z, s),
   tenzo: (s: number, z = 2.2) => lento(L.tenzo + 90, LAV_PISO - 220, z, s),
   dos: (s: number, z = 1.8) => lento(1450, LAV_PISO - 275, z, s),
   mesa: (s: number) => lento(L.tenzo - 110, LAV_PISO - 150, 3.2, s),

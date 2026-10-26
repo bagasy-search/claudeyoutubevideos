@@ -177,7 +177,7 @@ const T = (): TramoS[] => [
       tenzo={{ caras: [{ f: 0, v: "feliz" }], habla: hab(93.5, [[93.5, 99.6], [99.6, 102.0]]), miradas: [{ f: 0, v: { x: -0.9, y: 0 } }], poses: [{ f: 0, v: TENZO_MESA }, { f: 60, v: { hD: 50, cD: 60, hI: 32, cI: 92 } }, { f: 150, v: { hD: 70, cD: 40, hI: 32, cI: 92, cabeza: -6 } }] }}
       leo={{ caras: [{ f: 0, v: "duda" }, { f: 120, v: "neutral" }], miradas: [{ f: 0, v: { x: 0.9, y: -0.1 } }], poses: [{ f: 0, v: SENTADO }, { f: 100, v: { ...SENTADO, tronco: 10, cabeza: 6 } }] }} />
   ), [
-    [93.5, CAM.tenzo(3.5)],
+    [93.5, CAM.hombroLeo(3.5)],
     [97.0, CAM.leo(2.6)],
     [99.6, [mira(0, 1450, 600, 1.3), mira(90, LAV.farol, P - 210, 1.9, { curva: "inout" })]],
   ]),
@@ -221,7 +221,7 @@ const T = (): TramoS[] => [
       leo={{ caras: [{ f: 0, v: "duda" }, { f: loc(229.4, 235), v: "triste" }], miradas: [{ f: 0, v: { x: 0.9, y: 0 } }, { f: loc(229.4, 235), v: { x: 0.2, y: 0.9 } }], poses: [{ f: 0, v: SENTADO }, { f: loc(229.4, 235), v: { ...SENTADO, cabeza: 22, tronco: 10 } }] }} />
   ), [
     [229.4, CAM.tenzo(3.2)],
-    [232.6, CAM.dos(2.8, 1.35)],
+    [232.6, CAM.dos(2.8, 1.5)],
     [235.4, CAM.leo(3.0)],
     [238.4, CAM.tenzo(3.9, 2.5)],
   ]),
@@ -253,10 +253,10 @@ const T = (): TramoS[] => [
       leo={{ caras: [{ f: 0, v: "duda" }, { f: loc(257.4, 268.5), v: "sorpresa" }, { f: loc(257.4, 270.5), v: "neutral" }], miradas: [{ f: 0, v: { x: 0.9, y: 0 } }], poses: [{ f: 0, v: SENTADO }, { f: loc(257.4, 268.5), v: { ...SENTADO, tronco: -6, cabeza: -8 } }] }}
       hud={<LaCuenta />} />
   ), [
-    [257.4, CAM.tenzo(3.1)],
-    [260.5, CAM.dos(8, 1.15)],
+    [257.4, CAM.hombroLeo(3.1)],
+    [260.5, CAM.dos(8, 1.5)],
     [268.5, CAM.leo(2.4, 2.4)],
-    [270.9, CAM.tenzo(2.5)],
+    [270.9, CAM.mesa(2.5)],
   ]),
   { t0: 273.4, t1: 278.7, el: (
     <EnLavadero cam={[mira(0, LAV.leo + 40, P - 280, 2.4), mira(159, LAV.leo + 40, P - 285, 2.55)]}
@@ -280,8 +280,8 @@ const T = (): TramoS[] => [
       leo={{ caras: [{ f: 0, v: "duda" }, { f: 150, v: "neutral" }, { f: 220, v: "sorpresa" }], miradas: [{ f: 0, v: { x: 0.9, y: 0 } }, { f: 200, v: { x: -0.6, y: -0.4 } }] }}
       hud={<Rayitas desde={20} />} />
   ), [
-    [291.2, CAM.dos(3.3, 1.4)],
-    [294.5, CAM.tenzo(3.3)],
+    [291.2, CAM.dos(3.3, 1.5)],
+    [294.5, CAM.tenzo(3.3, 2.7)],
     [297.8, CAM.leo(3.4, 2.3)],
   ]),
   // 301,2-314,1 · el tren pasa, las luces titilan; Leo se da vuelta y mira la sombra: enorme, pero finita como humo
@@ -577,7 +577,7 @@ export const FarolSeApaga: React.FC = () => {
   const luz = interpolate(f, [150, 230], [1, 0.05], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <AbsoluteFill>
-      <EnLavadero luzFarol={luz} leo={null} abrigo={1} cam={[mira(0, LAV.farol - 100, P - 300, 1.3), mira(249, LAV.farol - 40, P - 250, 1.6, { curva: "inout" })]}
+      <EnLavadero luzFarol={luz} leo={null} abrigo={1} cam={[mira(0, LAV.farol - 40, P - 330, 2.2), mira(249, LAV.farol, P - 340, 3.0, { curva: "inout" })]}
         tenzo={null} />
       <Negro desde={236} d={13} />
     </AbsoluteFill>
