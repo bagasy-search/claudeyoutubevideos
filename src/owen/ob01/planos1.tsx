@@ -135,10 +135,10 @@ export const P06Baja: React.FC = () => {
   const k = kDe(14.9);
   const ruta = [{ f: 0, ...escalon(14) }, ...[10, 6, 2].map((s, i) => ({ f: Math.round(((i + 1) / 4) * k(16.4)), ...escalon(s), curva: "lineal" as const })), { f: k(16.4), ...escalon(0), curva: "lineal" as const }, { f: k(17.6), x: 830, y: P, curva: "out" as const }];
   return (
-    <Escena Set={TwoFlatCorte} pal={PAL} claves={[mira(0, 1650, A + 120, 1.35), mira(k(16.4), 1200, P - 260, 1.5, { curva: "inout" }), mira(k(17.9), 760, P - 260, 1.6, { curva: "inout" })]} seed={6} setProps={{ hora: "alba", luzBaño: false }}
+    <Escena Set={TwoFlatCorte} pal={PAL} claves={[mira(0, escalon(14).x - 40, escalon(14).y - 170, 2.0), mira(k(16.4), escalon(0).x - 60, escalon(0).y - 180, 2.1, { curva: "inout" }), mira(k(17.9), 830, P - 190, 2.1, { curva: "inout" })]} seed={6} setProps={{ hora: "alba", luzBaño: false }}
       medio={<>
         <Actor look={ROSA} escala={ESC} seed={5} ruta={[{ f: 0, x: ROSA_COCINA, y: P }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { hD: 60, cD: 60 } }]} caras={[{ f: 0, v: "feliz" }]} habla={[[0, 90]]} />
-        <Actor look={OWEN_CASA} escala={ESC} seed={6} ruta={ruta} caras={[{ f: 0, v: "cansado" }, { f: k(17.5), v: "sorpresa" }]} />
+        <Actor look={OWEN_CASA} escala={ESC} seed={6} ruta={ruta} poses={[{ f: 0, v: { hD: 75, cD: 20, cabeza: 8 } }, { f: k(16.4), v: { hD: 75, cD: 20, cabeza: 4 } }, { f: k(16.4) + 10, v: "parado" }]} caras={[{ f: 0, v: "cansado" }, { f: k(17.5), v: "sorpresa" }]} />
       </>}
       hud={<HudOwen min={316} part={null} />} />
   );

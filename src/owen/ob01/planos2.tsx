@@ -165,7 +165,7 @@ export const P28Caminan: React.FC = () => {
   );
 };
 
-export const P29Velocidad: React.FC = () => <AbsoluteFill><Velocimetro ms={1.3} etiqueta="WALKING SPEED" /><Mano texto="faster pace → longer life" x={960} y={330} desde={kDe(206.8)(212.7)} color={VERDE} tam={82} /><HudOwen part="47/47" /></AbsoluteFill>;
+export const P29Velocidad: React.FC = () => <AbsoluteFill><Velocimetro ms={1.3} etiqueta="WALKING SPEED" /><Mano texto="faster pace → longer life" x={960} y={262} desde={kDe(206.8)(212.7)} color={VERDE} tam={82} /><HudOwen part="47/47" /></AbsoluteFill>;
 
 export const P30SuDia: React.FC = () => {
   const k = kDe(215.7);
@@ -182,13 +182,13 @@ export const P30SuDia: React.FC = () => {
 export const P31Mediodia: React.FC = () => {
   const k = kDe(227.4);
   const pas: Pas[] = [
-    sent(SENORA, 2, { caras: [{ f: 0, v: "triste" }], n: 71, edad: 58, desde: k(231.6), seed: 31 }),
-    sent(OBRERO, 4, { caras: [{ f: 0, v: "cansado" }], n: 63, edad: 49, desde: k(232.4), seed: 32 }),
-    sent(ESTUDIANTE, 6, { caras: [{ f: 0, v: "risa" }], habla: [[0, 300]], n: 21, edad: 26, desde: k(234.9), seed: 33 }),
-    sent(OFICINISTA, 7, { caras: [{ f: 0, v: "risa" }], habla: [[20, 280]], n: 33, edad: 39, desde: k(235.3), seed: 34 }),
-    { look: RUNNER, ruta: [{ f: 0, x: 1640, y: BUS_PISO }], poses: [{ f: 0, v: "agarrarAlto" }], dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "neutral" }], seed: 35 },
+    sent(SENORA, 2, { caras: [{ f: 0, v: "triste" }], n: 71, edad: 58, desde: k(231.6), seed: 31, poses: [{ f: 0, v: "sentado" }, { f: k(231.6), v: { pI: 88, rI: 88, pD: 92, rD: 92, hD: 60, cD: 120, cabeza: 10 } }, { f: k(232.8), v: "sentado" }] }),
+    sent(OBRERO, 4, { caras: [{ f: 0, v: "cansado" }], n: 63, edad: 49, desde: k(232.4), seed: 32, poses: [{ f: 0, v: "sentado" }, { f: k(232.4), v: { pI: 88, rI: 88, pD: 92, rD: 92, tronco: 10, cabeza: 16 } }] }),
+    sent(ESTUDIANTE, 6, { caras: [{ f: 0, v: "risa" }], habla: [[0, 300]], n: 21, edad: 26, desde: k(234.9), seed: 33, poses: [{ f: 0, v: "sentado" }, { f: k(234.9), v: { pI: 88, rI: 88, pD: 92, rD: 92, tronco: -10, cabeza: -10, hD: 40, cD: 120 } }, { f: k(236.0), v: "sentado" }] }),
+    sent(OFICINISTA, 8, { caras: [{ f: 0, v: "risa" }], habla: [[20, 280]], n: 33, edad: 39, desde: k(235.3), seed: 34, poses: [{ f: 0, v: "sentado" }, { f: k(235.3), v: { pI: 88, rI: 88, pD: 92, rD: 92, hD: 120, cD: 60, cabeza: 8 } }, { f: k(236.6), v: "sentado" }] }),
+    { look: RUNNER, ruta: [{ f: 0, x: 1800, y: BUS_PISO }], poses: [{ f: 0, v: "agarrarAlto" }], dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "neutral" }], seed: 35 },
   ];
-  const cl = [mira(0, 1050, 640, 1.1), mira(k(233.6), 1250, 640, 1.15, { curva: "inout" }), mira(k(234.6), 1950, 640, 1.15, { curva: "inout" }), mira(k(236.2), 2000, 640, 1.18)]; // rótulos de las filas 2-4 dentro del área segura
+  const cl = [mira(0, 1050, 640, 1.1), mira(k(233.6), 1250, 640, 1.15, { curva: "inout" }), mira(k(234.6), 2150, 640, 1.15, { curva: "inout" }), mira(k(236.2), 2200, 640, 1.18)]; // rótulos de las filas 2-4 dentro del área segura
   return (
     <EnBus cl={cl} hora="dia" min={720} avance={(f) => 9000 + f * 10} pas={pas} owen={{ caras: [{ f: 0, v: "neutral" }] }}
       hud={<>

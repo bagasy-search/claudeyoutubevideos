@@ -130,9 +130,10 @@ export const Dinamometro: React.FC<{ lb?: number; caida?: number; desdeCaida?: n
         <rect x={-40} y={-60} width={80} height={120} rx={10} fill="#20242c" />
         {[0, 1, 2, 3].map((k) => <rect key={k} x={-130 + sube * 30 + pulso * 22} y={-130 + k * 64} width={150 - pulso * 14} height={52} rx={26} fill="#e0a77e" />)}
       </g>
-      <g opacity={baja}>
-        <text x={1440} y={860} fontFamily={F_HUD} fontWeight={600} fontSize={64} fill={ROJO} textAnchor="middle">−{caida} lb = +16% risk</text>
-      </g>
+      {baja > 0 && <g transform={`translate(860,960) scale(${0.8 + 0.2 * baja + Math.exp(-Math.max(0, f - desdeCaida - 8) / 6) * 0.12 * baja})`} opacity={baja}>
+        <rect x={-430} y={-78} width={860} height={120} rx={24} fill="#0b1020" stroke={ROJO} strokeWidth={6} />
+        <text x={0} y={10} fontFamily={F_HUD} fontWeight={800} fontSize={88} fill="#ff4a3a" textAnchor="middle">−{caida} lb = +16% risk</text>
+      </g>}
     </Pizarra>
   );
 };
@@ -144,7 +145,7 @@ export const Velocimetro: React.FC<{ ms?: number; etiqueta?: string }> = ({ ms =
   const ang = -120 + (v / 1.6) * 240;
   return (
     <Pizarra titulo={etiqueta} fuente="Studenski et al., JAMA, 2011 · ~35,000 older adults">
-      <g transform="translate(960,640)">
+      <g transform="translate(960,720)">
         <path d="M-320,0 A320,320 0 1,1 320,0" fill="none" stroke="#2a3a62" strokeWidth={50} />
         <path d="M-320,0 A320,320 0 0,1 -230,-222" fill="none" stroke={ROJO} strokeWidth={50} />
         <path d="M160,-277 A320,320 0 0,1 320,0" fill="none" stroke={VERDE} strokeWidth={50} />
