@@ -239,18 +239,18 @@ export const Alcohol: React.FC<{ d24?: number }> = ({ d24 = 150 }) => {
           <line x1={0} y1={0} x2={0} y2={-48} stroke={col} strokeWidth={8} strokeLinecap="round" transform={`rotate(${u * (et.startsWith("24") ? 720 : 540)})`} />
           <T x={0} y={100} s={30}>{Math.round(u * (et.startsWith("24") ? 24 : 18))} h</T>
         </g>
-        <T x={x} y={860 - h} s={70} c={col}>{(v * u).toFixed(2)}</T>
-        <T x={x} y={940} s={40}>{et}</T>
+        <T x={x} y={860 - h} s={92} c={col}>{(v * u).toFixed(2)}</T>
+        <T x={x} y={950} s={54}>{et}</T>
       </g>
     );
   };
   const yl = 880 - (0.08 / 0.12) * 560;
   return (
     <Pizarra titulo="AWAKE TOO LONG = DRUNK" fuente="Williamson & Feyer, Occup Environ Med, 2000 · blood alcohol equivalent">
-      <line x1={420} y1={yl} x2={420 + 1080 * ease(f, 30, 60)} y2={yl} stroke={ROJO} strokeWidth={7} strokeDasharray="18 12" />
-      <T x={1510} y={yl - 20} s={44} a="start" c={ROJO} w={800} o={ease(f, 50, 62)}>LEGAL</T>
-      <T x={1510} y={yl + 30} s={44} a="start" c={ROJO} w={800} o={ease(f, 50, 62)}>LIMIT 0.08</T>
-      {bar(720, 0.05, "18 H AWAKE", 20, AMBAR)}
+      <line x1={420} y1={yl} x2={420 + 1080 * ease(f, 0, 24)} y2={yl} stroke={ROJO} strokeWidth={7} strokeDasharray="18 12" />
+      <T x={1490} y={yl - 24} s={62} a="start" c={ROJO} w={800} o={ease(f, 14, 24)}>LEGAL</T>
+      <T x={1490} y={yl + 44} s={62} a="start" c={ROJO} w={800} o={ease(f, 14, 24)}>LIMIT 0.08</T>
+      {bar(720, 0.05, "18 H AWAKE", 4, AMBAR)}
       {bar(1200, 0.10, "24 H AWAKE", d24, ROJO)}
     </Pizarra>
   );
