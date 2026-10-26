@@ -62,14 +62,14 @@ export const Recibo: React.FC<{ t: number; t0: number; x: number; y: number; lar
 };
 
 // nube verde de la fiebre: blobs que crecen desde (x,y) entre t0 y t1, se disipa en t2
-export const Nube: React.FC<{ t: number; t0: number; t1: number; t2?: number; x: number; y: number; r: number; seed?: number; color?: string }> = ({ t, t0, t1, t2 = 1e9, x, y, r, seed = 3, color = "#7be36a" }) => {
+export const Nube: React.FC<{ t: number; t0: number; t1: number; t2?: number; x: number; y: number; r: number; seed?: number; color?: string; op?: number }> = ({ t, t0, t1, t2 = 1e9, x, y, r, seed = 3, color = "#7be36a", op = 0.55 }) => {
   if (t < t0 || t > t2 + 0.6) return null;
   const u = prog(t, t0, t1);
   const out = 1 - prog(t, t2, t2 + 0.6);
   const R = rnd(seed);
   const bs = Array.from({ length: 18 }, () => ({ a: R() * Math.PI * 2, d: R(), s: 0.25 + R() * 0.35, f: R() * 6 }));
   return (
-    <svg style={{ position: "absolute", left: x - r * 1.6, top: y - r * 1.6, overflow: "visible", opacity: 0.55 * out }} width={r * 3.2} height={r * 3.2}>
+    <svg style={{ position: "absolute", left: x - r * 1.6, top: y - r * 1.6, overflow: "visible", opacity: op * out }} width={r * 3.2} height={r * 3.2}>
       {bs.map((b, i) => {
         const dd = b.d * r * u;
         return <circle key={i} cx={r * 1.6 + Math.cos(b.a + t * 0.2) * dd} cy={r * 1.6 + Math.sin(b.a + t * 0.2) * dd * 0.6} r={r * b.s * (0.3 + 0.7 * u) * (1 + 0.08 * Math.sin(t * 2 + b.f))} fill={color} />;

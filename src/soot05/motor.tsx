@@ -97,7 +97,7 @@ export const Actores: React.FC<{ t: number; A: Act[]; x0: number; x1: number }> 
 export type Ev = {
   t: number; t1?: number; k: "chip" | "grande" | "ico" | "sello" | "cuenta" | "flash" | "oscuro" | "emote" | "globo" | "linea";
   txt?: string; x?: number; y?: number; c?: string; tinta?: string; s?: number; ico?: IcoK; de?: number; a?: number; dur?: number; pre?: string; suf?: string;
-  rot?: number; anim?: "pop" | "cae" | "sube" | "vuela" | "gira"; hx?: number; hy?: number; emo?: Emo; tag?: string; icos?: IcoK[]; x2?: number; y2?: number;
+  rot?: number; anim?: "pop" | "cae" | "sube" | "vuela" | "gira"; hx?: number; hy?: number; emo?: Emo; tag?: string; ts?: number; fijo?: boolean; icos?: IcoK[]; x2?: number; y2?: number;
 };
 const Sello: React.FC<{ t: number; e: Ev }> = ({ t, e }) => {
   const u = Math.min(1, (t - e.t) / 0.18);
@@ -124,7 +124,7 @@ const IcoEv: React.FC<{ t: number; e: Ev; mundo?: boolean }> = ({ t, e }) => {
     <div style={{ position: "absolute", left: (e.x ?? 960) + dx - S / 2, top: (e.y ?? 540) + dy + flota - S / 2, width: S, transform: `rotate(${rot}deg) scale(${sc * out})`, transformOrigin: "50% 50%" }}>
       <Ico k={e.ico!} s={S} />
       {e.tag && (
-        <div style={{ position: "absolute", left: "50%", top: S * 0.92, transform: "translateX(-50%) rotate(-3deg)", fontFamily, fontWeight: 700, fontSize: 40 * Math.max(0.8, s0), color: "#fff", background: e.c ?? C.rojo, borderRadius: 12, padding: "2px 16px", whiteSpace: "nowrap", boxShadow: "0 6px 0 rgba(20,10,40,.3)" }}>{e.tag}</div>
+        <div style={{ position: "absolute", left: "50%", top: S * 0.92, transform: "translateX(-50%) rotate(-3deg)", fontFamily, fontWeight: 700, fontSize: e.ts ?? 40 * Math.max(0.8, s0), color: "#fff", background: e.c ?? C.rojo, borderRadius: 12, padding: "2px 16px", whiteSpace: "nowrap", boxShadow: "0 6px 0 rgba(20,10,40,.3)" }}>{e.tag}</div>
       )}
       {e.k === "ico" && e.txt === "X" && t > e.t + 0.35 && (
         <svg style={{ position: "absolute", inset: 0 }} width={S} height={S} viewBox="0 0 200 200"><path d={`M 20 20 L ${20 + 160 * prog(t, e.t + 0.35, e.t + 0.5)} ${20 + 160 * prog(t, e.t + 0.35, e.t + 0.5)} M 180 20 L ${180 - 160 * prog(t, e.t + 0.5, e.t + 0.65)} ${20 + 160 * prog(t, e.t + 0.5, e.t + 0.65)}`} stroke={C.rojo} strokeWidth={22} strokeLinecap="round" fill="none" /></svg>
@@ -146,11 +146,13 @@ const Globo: React.FC<{ t: number; e: Ev }> = ({ t, e }) => {
     </div>
   );
 };
+// años (1356, 1774…) sin separador de miles
+const anio = (e: Ev) => !e.suf && !e.pre && (e.a ?? 0) >= 1000 && (e.a ?? 0) <= 2100 && (e.de ?? 0) >= 1000;
 const Cuenta: React.FC<{ t: number; e: Ev }> = ({ t, e }) => {
   const v = Math.round((e.de ?? 0) + ((e.a ?? 0) - (e.de ?? 0)) * prog(t, e.t, e.t + (e.dur ?? 0.8)));
   const size = e.s ?? 200;
   const out = e.t1 !== undefined ? interpolate(t, [e.t1, e.t1 + 0.25], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1;
-  return <div style={{ position: "absolute", left: e.x ?? 960, top: e.y ?? 540, transform: `translate(-50%,-50%) scale(${ent(t, e.t) * out})`, fontFamily, fontWeight: 700, fontSize: size, color: e.c ?? "#fff", WebkitTextStroke: `${size * 0.08}px #2a1530`, paintOrder: "stroke fill", whiteSpace: "nowrap", textShadow: `0 ${size * 0.06}px 0 #2a1530` }}>{e.pre}{v.toLocaleString("en-US")}{e.suf}</div>;
+  return <div style={{ position: "absolute", left: e.x ?? 960, top: e.y ?? 540, transform: `translate(-50%,-50%) scale(${ent(t, e.t) * out})`, fontFamily, fontWeight: 700, fontSize: size, color: e.c ?? "#fff", WebkitTextStroke: `${size * 0.08}px #2a1530`, paintOrder: "stroke fill", whiteSpace: "nowrap", textShadow: `0 ${size * 0.06}px 0 #2a1530` }}>{e.pre}{anio(e) ? String(v) : v.toLocaleString("en-US")}{e.suf}</div>;
 };
 
 const DUR: Partial<Record<Ev["k"], number>> = { chip: 2.6, grande: 2.4, ico: 2.6, sello: 2.2, cuenta: 2.8, emote: 1.6, globo: 2.6, flash: 0.35 };
@@ -235,7 +237,7 @@ export const Camino: React.FC<{ t: number; T: number[]; visible: [number, number
 };
 
 // ── escena completa: cielo + mundo bajo la cámara + actores + eventos de mundo; encima los de pantalla
-export const Plano: React.FC<{ t: number; K: Llave[]; A: Act[]; W: Ev[]; extraMundo?: (c: Pose) => React.ReactNode; tinte?: number }> = ({ t, K, A, W, extraMundo, tinte = 0 }) => {
+export const Plano: React.FC<{ t: number; K: Llave[]; A: Act[]; W: Ev[]; extraMundo?: (c: Pose) => React.ReactNode; medio?: (c: Pose) => React.ReactNode; tinte?: number }> = ({ t, K, A, W, extraMundo, medio, tinte = 0 }) => {
   const c = camara(K, t);
   const p = camara(K, t - 1 / FPS);
   const vel = Math.hypot((c.x - p.x) * c.z, (c.y - p.y) * c.z) + Math.abs(Math.log(c.z / p.z)) * 900;
@@ -249,6 +251,12 @@ export const Plano: React.FC<{ t: number; K: Llave[]; A: Act[]; W: Ev[]; extraMu
           <Mundo t={t} x0={x0} x1={x1} />
           {extraMundo?.(c)}
           <Actores t={t} A={A} x0={x0} x1={x1} />
+        </div>
+      </AbsoluteFill>
+      {/* entre actores y rótulos de mundo: oscuros y carteles (los rótulos quedan siempre nítidos y opacos encima) */}
+      {medio?.(c)}
+      <AbsoluteFill style={{ overflow: "hidden", filter: blur ? `blur(${blur.toFixed(1)}px)` : undefined }}>
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1, height: 1, transformOrigin: "0 0", transform: `translate(${960 - c.x * c.z}px, ${540 - c.y * c.z}px) scale(${c.z})` }}>
           <Eventos t={t} E={W} mundo />
         </div>
       </AbsoluteFill>

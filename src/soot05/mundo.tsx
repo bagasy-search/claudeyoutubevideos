@@ -206,7 +206,6 @@ const Newgate: React.FC<{ t: number }> = ({ t }) => (
       {/* rastrillo */}
       {[0, 1, 2, 3, 4, 5].map((i) => <line key={i} x1={370 + i * 72} y1={830} x2={370 + i * 72} y2={980} stroke="#2a2440" strokeWidth={10} />)}
       <rect x={340} y={600} width={420} height={140} rx={16} fill="#2a1f45" />
-      <text x={550} y={694} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={82} fill={C.oro} letterSpacing={6}>NEWGATE</text>
       {[200, 900].map((xx) => <rect key={xx} x={xx - 30} y={300} width={60} height={130} rx={30} fill="#ffcf7a" opacity={0.85} />)}
     </SVG>
     {/* cuerpo de la cárcel, en corte: muros exteriores */}
@@ -240,7 +239,7 @@ const Newgate: React.FC<{ t: number }> = ({ t }) => (
       <rect x={270} y={150} width={110} height={90} rx={8} fill="#7a4520" stroke="#e8b84a" strokeWidth={6} />
     </SVG>
     {/* llavero gigante en la pared */}
-    <SVG x={2700} y={SUELO - 560} w={160} h={200}>
+    <SVG x={1930} y={SUELO - 600} w={160} h={200}>
       <circle cx={80} cy={50} r={40} fill="none" stroke="#e8b84a" strokeWidth={10} />
       {[-1, 0, 1].map((k) => <g key={k} transform={`rotate(${k * 22 + Math.sin(t * 2 + k) * 3} 80 90)`}><rect x={74} y={86} width={12} height={90} fill="#e8b84a" /><rect x={86} y={156} width={22} height={10} fill="#e8b84a" /></g>)}
     </SVG>
@@ -336,7 +335,6 @@ const Ludgate: React.FC<{ t: number }> = ({ t }) => (
       {/* abajo: sótano oscuro */}
       <rect x={60} y={1420} width={880} height={520} fill="url(#sotano)" />
       <rect x={60} y={1900} width={880} height={40} fill="#2a1a1a" />
-      <text x={500} y={176} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={80} fill={C.oro} letterSpacing={6}>LUDGATE</text>
     </SVG>
     <Gotera t={t} x={7700} y={SUELO + 30} h={480} seed={4} />
   </>
@@ -354,7 +352,6 @@ const Fleet: React.FC<{ t: number }> = ({ t }) => (
       <rect x={760} y={380} width={300} height={180} fill="#7a4520" />
       <path d="M 740 380 L 1080 380 L 1050 320 L 770 320 Z" fill={C.rojo} />
       {[0, 1, 2, 3].map((i) => <rect key={i} x={760 + i * 75} y={320} width={38} height={60} fill="#fff" opacity={0.85} />)}
-      <text x={600} y={100} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={80} fill={C.oro} letterSpacing={6}>THE FLEET</text>
     </SVG>
     {/* la reja de la calle (planta baja, cara izquierda) */}
     <SVG x={8400} y={SUELO - 420} w={240} h={300}>
@@ -403,7 +400,6 @@ const Savoy: React.FC<{ t: number }> = ({ t }) => (
       {[0, 1, 2, 3, 4, 5].map((i) => <ellipse key={i} cx={380 + i * 220} cy={1222} rx={46} ry={16} fill={["#d98a35", C.rojo, C.lima, C.oro, "#d98a35", C.rosa][i]} />)}
       <rect x={340} y={1284} width={30} height={170} fill="#5a3418" /><rect x={1530} y={1284} width={30} height={170} fill="#5a3418" />
       <rect x={120} y={1460} width={1660} height={40} fill="#c9a36a" />
-      <text x={950} y={370} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={84} fill="#7a1f35" letterSpacing={6}>THE SAVOY</text>
     </SVG>
     {/* banderas */}
     {[10050, 11650].map((x, k) => (
@@ -434,8 +430,6 @@ const Torre: React.FC<{ t: number }> = ({ t }) => (
       <ellipse cx={745} cy={560} rx={520} ry={200} fill="url(#glowV)" opacity={0.8} />
       <rect x={240} y={700} width={1010} height={30} fill="#6b3a1f" />
       <rect x={1250} y={470} width={90} height={160} rx={40} fill="#ffcf7a" />
-      <rect x={330} y={170} width={840} height={110} rx={22} fill="#2a1460" stroke="#fff3d6" strokeWidth={8} />
-      <text x={750} y={252} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill="#fff3d6" letterSpacing={5}>TOWER OF LONDON</text>
     </SVG>
     {/* Little Ease: celda mínima en el sótano */}
     <SVG x={12900} y={SUELO + 20} w={420} h={300}>
@@ -459,7 +453,6 @@ const Norte: React.FC<{ t: number }> = ({ t }) => (
     <g transform="translate(1900 640)">
       <rect x={-10} y={0} width={20} height={300} fill="#5a3418" />
       <path d="M -20 30 L 300 30 L 340 80 L 300 130 L -20 130 Z" fill={C.oro} />
-      <text x={150} y={102} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={50} fill="#5a2a08">SCOTLAND</text>
     </g>
   </SVG>
 );
@@ -480,7 +473,6 @@ const StAndrews: React.FC<{ t: number }> = ({ t }) => (
       <g transform="translate(700 -300)">
         <Bloques w={500} h={1840} seed={83} col="#b49a7a" jun="#6a5a4a" />
         {Array.from({ length: 4 }, (_, i) => <rect key={i} x={i * 130} y={-60} width={80} height={70} fill="#b49a7a" stroke="#6a5a4a" strokeWidth={3} />)}
-        <text x={250} y={140} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={56} fill="#4a2a1a">SEA TOWER</text>
       </g>
     </SVG>
     {/* roca y mazmorra botella */}
@@ -538,5 +530,42 @@ export const Mundo: React.FC<{ t: number; x0: number; x1: number }> = ({ t, x0, 
     {x0 < 1000 && x1 > 700 && <MuroCiudad x0={760} x1={900} />}
     {x1 > 9750 && x0 < 15000 && <Rio t={t} x0={9750} x1={15000} />}
     {PIEZAS.map(([a, b, P], i) => (b > x0 && a < x1 ? <P key={i} t={t} /> : null))}
+  </>
+);
+
+// carteles de los edificios: van en una capa ARRIBA de los actores (OJO v2: mitras y coronas tapaban «TOWER OF LONDON»)
+// y siempre enteros dentro del cuadro; el acomodador de rótulos los esquiva. x,y = centro en el mundo.
+export const CARTELES: { x: number; y: number; txt: string; fs: number; col: string }[] = [
+  { x: 1450, y: SUELO - 1500 + 666, txt: "NEWGATE", fs: 82, col: C.oro },
+  { x: 7900, y: SUELO - 1400 + 148, txt: "LUDGATE", fs: 80, col: C.oro },
+  { x: 9100, y: SUELO - 1100 + 72, txt: "THE FLEET", fs: 80, col: C.oro },
+  { x: 10850, y: SUELO - 1500 + 340, txt: "THE SAVOY", fs: 84, col: C.oro },
+  { x: 13450, y: SUELO - 2000 + 158, txt: "TOWER OF LONDON", fs: 58, col: "#fff3d6" },
+  { x: 19150, y: SUELO - 1500 - 300 + 120, txt: "SEA TOWER", fs: 56, col: C.oro },
+  { x: 16850, y: SUELO - 900 + 640 + 80, txt: "SCOTLAND →", fs: 50, col: C.oro },
+];
+const MARGEN = { x0: 96, y0: 54, x1: 1824, y1: 1026 };
+// caja en pantalla (ya metida en el margen seguro) o null si no se ve
+export const cartelPantalla = (k: (typeof CARTELES)[number], c: { x: number; y: number; z: number }) => {
+  const fs = Math.max(40, k.fs * c.z);
+  const w = [...k.txt].length * (fs * 0.66 + 4) + fs * 0.9, h = fs * 1.45;
+  let x = 960 + (k.x - c.x) * c.z, y = 540 + (k.y - c.y) * c.z;
+  const cx = Math.min(Math.max(x, MARGEN.x0 + w / 2), MARGEN.x1 - w / 2), cy = Math.min(Math.max(y, MARGEN.y0 + h / 2), MARGEN.y1 - h / 2);
+  // si el edificio está casi fuera de cuadro, el cartel no se muestra
+  if (Math.abs(cx - x) > w * 0.3 || Math.abs(cy - y) > h * 1.2) return null;
+  // nunca debajo de la factura (arriba a la derecha)
+  if (cx + w / 2 > 1490 && cy - h / 2 < 260) return null;
+  x = cx; y = cy;
+  return { x, y, fs, x0: x - w / 2, x1: x + w / 2, y0: y - h / 2, y1: y + h / 2 };
+};
+export const Carteles: React.FC<{ c: { x: number; y: number; z: number } }> = ({ c }) => (
+  <>
+    {CARTELES.map((k, i) => {
+      const p = cartelPantalla(k, c);
+      if (!p) return null;
+      return (
+        <div key={i} style={{ position: "absolute", left: p.x, top: p.y, transform: "translate(-50%,-50%)", fontFamily, fontWeight: 700, fontSize: p.fs, letterSpacing: 4, color: k.col, background: "rgba(27,18,64,.9)", border: `${Math.max(4, p.fs * 0.09)}px solid #fff3d6`, borderRadius: p.fs * 0.32, padding: `${p.fs * 0.08}px ${p.fs * 0.4}px`, whiteSpace: "nowrap", lineHeight: 1.15, boxShadow: "0 8px 0 rgba(10,5,24,.35)" }}>{k.txt}</div>
+      );
+    })}
   </>
 );

@@ -2,7 +2,7 @@ import React from "react";
 import { C } from "./kit";
 import { SUELO, L } from "./mundo";
 import { cam, act, o, w, wi, fee, s, trampa, Y, YO, CARCELERO, JUEZ, PRESO } from "./base";
-import { Grilletes, Recibo, Nube, Pines, Letrero, Ojos } from "./extras";
+import { Grilletes, Recibo, Pines, Letrero, Ojos } from "./extras";
 import type { Pose } from "./motor";
 
 // ═══ GANCHO 0-52 s: tobillo → cara → Newgate entera → la factura → «welcome» → lo que pagás → la oscuridad →
@@ -13,7 +13,6 @@ const YX = 3200; // dónde está «vos» en la sala común
 cam(0, YX, Y.baja - 40, 4.4);
 cam(0.55, YX, Y.baja - 330, 2.7, 1.1);
 cam(1.9, YX + 80, Y.baja - 440, 2.0, 0.5);
-o(0.12, "flash", { c: "#fff" });
 s(0.12, "metal", 2); s(0.14, "slam", 0);
 o(0.24, "cuenta", { de: 0, a: 31, dur: 0.5, x: 1500, y: 300, s: 260, c: C.oro, t1: 1.9 });
 o(0.78, "chip", { txt: "YEARS OLD", x: 1500, y: 470, c: C.violeta, s: 58, t1: 1.9 });
@@ -69,7 +68,7 @@ o(24.8, "oscuro", { t1: 28.0, a: 0.96 });
 s(24.8, "wind", -10); s(25.0, "suspense", -4);
 o(26.2, "chip", { txt: "THE PART THAT SOUNDS LIKE A JOKE", x: 960, y: 200, c: C.violeta, s: 54, t1: 27.8 });
 // 27.9 «Even if the judge says you are innocent» — luz, vuelo al tribunal
-cam(27.75, 6250, SUELO - 520, 0.95, 1.0);
+cam(27.75, 6290, SUELO - 520, 1.1, 1.0);
 s(27.7, "whoosh_big", -3);
 act({ a: 27.7, b: 52, x: 6700, y: Y.estrado, h: 400, ropa: JUEZ, seed: 31, sobre: "cofia", viejo: true, expr: [[0, "neutro"], [40.5, "miedo"]], habla: [[28.3, 29.3]], bD: 120, cD: 40, manoD: "mazo", rot: 0, flip: true });
 act({ a: 27.7, b: 30.1, x: 5880, y: Y.sala, h: 430, ropa: YO, seed: 1, expr: [[0, "miedo"], [29.2, "feliz"]], salta: [29.25] });
@@ -103,7 +102,7 @@ s(42.3, "fall", -2); s(43.1, "fall", -3); s(43.4, "fall", -4); s(44.2, "fall", -
 cam(45.95, 10200, SUELO - 300, 0.088, 1.5);
 s(45.9, "whoosh_big", 0); s(46.0, "riser", -6);
 for (let i = 0; i < 7; i++) s(46.32 + 0.22 * i, "tick", -2);
-o(47.3, "chip", { txt: "7 TRAPS", x: 960, y: 120, c: C.rojo, s: 72 });
+o(47.3, "chip", { txt: "7 TRAPS", x: 960, y: 120, c: C.rojo, s: 72, t1: 49.3 });
 // 48.84 «Let's go in.» — picada a Newgate y adentro
 cam(48.75, 1450, SUELO - 520, 1.05, 1.1);
 s(48.7, "whoosh_big", -2); s(49.6, "wood_hit", -4);
@@ -120,7 +119,6 @@ export const X0 = (t: number, c: Pose): React.ReactNode => (
     {t < 22.4 && <Grilletes t={t} x={YX} y={Y.baja} h={430} t0={0.12} aX={YX - 260} aY={Y.baja - 120} />}
     {t >= 22.4 && t < 28 && <Grilletes t={t} x={YX + 20} y={Y.baja} h={430} aX={YX - 260} aY={Y.baja - 120} />}
     {t > 8.4 && t < 12.5 && <Recibo t={t} t0={8.75} x={YX - 195} y={Y.baja - 300} largo={290} w={210} items={[["CHAINS", "4d"], ["LOCKING", "1d"], ["KEY", "1d"]]} resalta={t > 9.7 ? 0 : -1} />}
-    <Nube t={t} t0={40.0} t1={44.5} t2={45.6} x={5980} y={SUELO - 500} r={900} />
     <Pines t={t} t0={46.1} t1={48.8} z={c.z} P={[[L.oficina.x, SUELO - 700], [L.torre.x, SUELO - 2150], [L.tribunal.x, SUELO - 1450], [L.botella.x, SUELO + 600], [L.comun.x, SUELO - 1600], [L.fleet.x, SUELO - 1250], [L.puerta.x, SUELO - 1600]]} />
   </>
 );

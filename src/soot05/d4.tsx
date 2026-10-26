@@ -8,7 +8,9 @@ import type { Ropa } from "./persona";
 
 // ═══ TRAMPA 7 · LA PUERTA (734.77), EL GIRO (802.69) y CTA (903.81)
 trampa(734.77);
-cam(734.6, 1500, SUELO - 520, 0.9, 1.6);
+cam(734.6, 1560, SUELO - 470, 1.0, 1.6);
+// vos frente al portón de Newgate: cada trampa repasada te sacude
+act({ a: 734.6, b: 743.0, x: 1820, y: Y.calle, h: 430, ropa: YO, seed: 1, flip: true, expr: [[0, "neutro"], [738.85, "miedo"], [740.3, "triste"], [741.9, "orgullo"]], salta: [738.9, 739.65, 740.35, 741.15] });
 s(734.5, "whoosh_big", -2); s(734.77, "slam", 0); s(734.8, "boom", -4);
 o(734.8, "grande", { txt: "TRAP #7", y: 420, s: 170, c: C.oro, t1: 737.0 });
 o(736.1, "chip", { txt: "THE DOOR", x: 960, y: 620, c: C.rojo, s: 84, t1: 737.0 });
@@ -47,6 +49,8 @@ cam(767.8, 2750, SUELO + 380, 1.15, 1.6);
 s(767.7, "whoosh_big", -3);
 act({ a: 767.8, b: 775.0, x: [3300, 2700], tw: [768.0, 770.6], y: Y.sotano, h: 400, ropa: YO, seed: 1, expr: "triste", camina: 0.8, flip: true, inclina: 10 });
 w(768.4, "sello", { txt: "INNOCENT", x: 2750, y: Y.sotano - 520, s: 60, c: C.lima, t1: 775.0 });
+// el carcelero le cierra la reja en la cara
+act({ a: 769.4, b: 775.0, x: [3250, 3020], tw: [769.5, 770.5], y: Y.sotano, h: 440, ropa: CARCELERO, seed: 7, sobre: "gorro", expr: "orgullo", flip: true, camina: 1.0, bD: 110, cD: 0, habla: [[771.2, 772.4]], aparece: 769.4 });
 o(771.0, "chip", { txt: "COULD NOT AFFORD TO LEAVE", x: 960, y: 900, c: C.rojo, s: 58, t1: 775.0 });
 s(768.4, "stamp", -2); s(770.8, "metal", -2); s(771.0, "sad", -6);
 // 775.03 ¿cuánto duró? siglos · 1774 · dos años antes de 1776
@@ -71,7 +75,7 @@ o(797.3, "sello", { txt: "YOU HAD TO PAY FOR IT", x: 960, y: 360, s: 100 });
 s(797.3, "stamp", 0);
 act({ a: 793.0, b: 802.6, x: 3400, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "triste"], [799.6, "neutro"]] });
 // 799.63 ¿peor que la muerte? · 802.69 el giro
-o(799.7, "grande", { txt: "WORSE THAN DEATH?", y: 400, s: 130, c: C.rojo, t1: 802.6 });
+o(799.7, "grande", { txt: "WORSE THAN DEATH?", x: 760, y: 150, s: 100, c: C.rojo, t1: 802.6 });
 s(799.7, "suspense", -4);
 o(802.7, "grande", { txt: "THE TWIST", y: 420, s: 170, c: C.oro, t1: 804.6 });
 s(802.7, "slam", 0); s(802.75, "boom", -2); s(802.8, "riser", -8);
@@ -97,7 +101,7 @@ cam(818.5, 10850, SUELO - 640, 0.75, 1.6);
 s(818.4, "whoosh_big", -2);
 o(818.7, "grande", { txt: "A PALACE", y: 300, s: 140, c: C.oro, t1: 821.0 });
 s(818.7, "fanfare", -6); s(818.8, "glitter", -3);
-o(819.8, "chip", { txt: "THE SAVOY · ON THE THAMES", x: 960, y: 460, c: C.violeta, s: 52, t1: 822.2 });
+o(819.8, "chip", { txt: "ON THE THAMES", x: 960, y: 460, c: C.violeta, s: 52, t1: 822.2 });
 act({ a: 818.5, b: 837.6, x: 10850, y: Y.savoy, h: 460, ropa: JUAN, seed: 351, sobre: "coronaFR", expr: [[0, "feliz"], [827.2, "sorpresa"], [831, "orgullo"]], manoD: "copa", bD: 70, cD: 70, habla: [[822.5, 823.4]] });
 const SIRV = (i: number): Ropa => ({ ...PRESO(i), tunica: "#f4f0e8", tunica2: "#c8c0b0" });
 for (let i = 0; i < 3; i++)
@@ -122,8 +126,8 @@ act({ a: 840.4, b: 846.1, x: [12000, 10850], tw: [840.6, 843.2], y: Y.savoy, h: 
 o(838.0, "chip", { txt: "RELEASED ON A PROMISE", x: 960, y: 140, c: C.teal, tinta: C.noche, s: 58, t1: 840.4 });
 o(840.6, "chip", { txt: "...AND CAME BACK BY CHOICE", x: 960, y: 140, c: C.oro, tinta: C.noche, s: 58, t1: 843.6 });
 s(840.6, "spring", -4);
-cam(839.0, 11600, SUELO - 560, 0.8, 1.6);
-cam(841.6, 11000, SUELO - 560, 0.85, 1.6);
+cam(838.0, 11500, SUELO - 560, 0.95, 1.2);
+cam(840.6, 11300, SUELO - 560, 0.95, 2.6);
 o(843.7, "ico", { ico: "corona", x: 960, y: 340, s: 1.1, tag: "DIED THERE · STILL LIVING LIKE A KING", c: C.violeta, t1: 846.1 });
 // 846.17 Ricardo Corazón de León: 150.000 marcos
 cam(846.1, 13440, SUELO - 1400, 1.0, 1.6);
@@ -176,7 +180,8 @@ o(887.0, "chip", { txt: "THE REAL SECRET", x: 960, y: 140, c: C.oro, tinta: C.no
 o(889.4, "ico", { ico: "mazo", x: 560, y: 520, s: 0.9, txt: "X", tag: "NOT BUILT TO PUNISH", t1: 894.7 });
 o(891.6, "ico", { ico: "balanza", x: 1360, y: 520, s: 1.1, tag: "BUILT TO SORT BY MONEY", c: C.oro, t1: 894.7 });
 s(889.4, "fail", -6); s(891.6, "ding", -2);
-cam(894.8, 3600, SUELO + 500, 0.45, 1.4);
+cam(894.8, 3820, Y.pozo - 330, 1.0, 1.4);
+act({ a: 894.8, b: 900.8, x: 3820, y: Y.pozo, h: 400, ropa: YO, seed: 1, expr: [[0, "triste"], [898.4, "miedo"]], miraY: -1, bI: 150, bD: 150, cI: 20, cD: 20, salta: [898.45] });
 o(894.9, "chip", { txt: "AT THE BOTTOM OF THE PILE:", x: 960, y: 140, c: C.violeta, s: 58, t1: 900.7 });
 o(895.6, "chip", { txt: "THE JAIL", x: 480, y: 280, c: C.rojo, s: 52, t1: 900.7 });
 o(896.3, "chip", { txt: "THE FEVER", x: 960, y: 280, c: C.lima, tinta: C.noche, s: 52, t1: 900.7 });
@@ -192,7 +197,8 @@ o(901.6, "grande", { txt: "DEATH DID NOT SEND", y: 360, s: 110, c: C.oro, t1: 90
 o(902.3, "grande", { txt: "YOU A BILL", y: 520, s: 150, c: C.oro, t1: 903.8 });
 s(901.6, "boom", -2); s(902.3, "slam", 0);
 // 903.81 CTA: salís con las orejas puestas → suscribite → la próxima: una noche en un castillo
-cam(903.8, 1500, SUELO - 380, 1.0, 1.0);
+cam(903.8, 1850, SUELO - 420, 1.2, 1.0);
+cam(905.0, 1300, SUELO - 420, 1.2, 1.8);
 act({ a: 903.8, b: 917.6, x: [2000, 1150], tw: [903.9, 906.6], y: Y.calle, h: 430, ropa: YO, seed: 1, expr: [[0, "feliz"], [906.6, "orgullo"], [913.0, "sorpresa"], [914.6, "feliz"]], habla: [[913.0, 916.5]], camina: 1.4, flip: true, salta: [906.8, 913.1], bD: 140, cD: 30 });
 o(904.6, "ico", { ico: "oreja", x: 600, y: 330, s: 0.9, tag: "EARS: STILL ATTACHED", c: C.lima, t1: 907.3 });
 s(904.6, "ding", -3);

@@ -11,6 +11,8 @@ const G: Golpe[] = [
   { a: 45.95, b: 47.2, l1: "7 TRAPS", l2: "BEHIND ONE DOOR", fondo: "#2a1460", rayo: "#7a5bd1", ico: "llave", c1: C.oro, c2: C.crema },
   { a: 909.35, b: 912.25, l1: "NEXT TIME:", l2: "ONE NIGHT IN A MEDIEVAL CASTLE", fondo: "#14606a", rayo: "#3fa7a0", ico: "vela", c1: C.crema, c2: C.oro },
 ];
+// tamaño que entra en 1600 px (ancho medido de la letra ≈ 0,74 em + contorno)
+const cabe = (txt: string, max: number) => Math.min(max, 1600 / (txt.length * 0.74));
 export const Golpes: React.FC<{ t: number }> = ({ t }) => {
   const g = G.find((x) => t >= x.a && t < x.b + 0.15);
   if (!g) return null;
@@ -25,8 +27,8 @@ export const Golpes: React.FC<{ t: number }> = ({ t }) => {
           <Ico k={g.ico} s={260} />
         </div>
       )}
-      <Grande t={t} t0={g.a + 0.05} text={g.l1} y={largo ? 520 : 560} size={largo ? 120 : 170} color={g.c1} />
-      {g.l2 && <Grande t={t} t0={g.a + 0.35} text={g.l2} y={largo ? 700 : 770} size={largo ? 92 : 130} color={g.c2} />}
+      <Grande t={t} t0={g.a + 0.05} text={g.l1} y={largo ? 520 : 560} size={cabe(g.l1, largo ? 120 : 170)} color={g.c1} />
+      {g.l2 && <Grande t={t} t0={g.a + 0.35} text={g.l2} y={largo ? 700 : 770} size={cabe(g.l2, largo ? 92 : 130)} color={g.c2} />}
     </AbsoluteFill>
   );
 };

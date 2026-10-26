@@ -67,9 +67,9 @@ w(95.1, "sello", { txt: "ADMITTED", x: VX - 60, y: Y.baja - 560, s: 40, t1: 96.4
 s(95.08, "stamp", -1);
 cam(95.8, 2650, Y.alta - 240, 1.35, 0.6);
 fee(96.5, 2, "BED");
-act({ a: 95.5, b: 100.6, x: 2360, y: Y.alta - 120, h: 330, ropa: PRESO(3), seed: 81, expr: "triste", rot: 90 });
-act({ a: 95.5, b: 100.6, x: 2420, y: Y.alta - 150, h: 330, ropa: PRESO(4), seed: 82, expr: "enojado", rot: 90 });
-act({ a: 95.5, b: 100.6, x: 2920, y: Y.alta - 130, h: 360, ropa: REY, seed: 83, expr: "dormido", rot: 90 });
+act({ a: 95.5, b: 100.6, x: 2360, y: Y.alta - 70, h: 330, ropa: PRESO(3), seed: 81, expr: "triste", rot: 90 });
+act({ a: 95.5, b: 100.6, x: 2420, y: Y.alta - 95, h: 330, ropa: PRESO(4), seed: 82, expr: "enojado", rot: 90 });
+act({ a: 95.5, b: 100.6, x: 2920, y: Y.alta - 75, h: 360, ropa: REY, seed: 83, expr: "dormido", rot: 90 });
 w(97.0, "chip", { txt: "SHARED", x: 2370, y: Y.alta - 360, c: C.violeta, s: 40, t1: 100.4 });
 w(98.3, "chip", { txt: "ALL YOURS", x: 2930, y: Y.alta - 360, c: C.oro, tinta: C.noche, s: 40, t1: 100.4 });
 fee(98.5, 3, "PRIVATE BED");
@@ -89,7 +89,7 @@ cam(108.2, 3500, Y.baja - 320, 1.05, 0.9);
 act({ a: 108.3, b: 130.2, x: 3200, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "miedo"], [113.8, "triste"], [116.6, "sorpresa"], [118.5, "miedo"], [121, "triste"], [123, "neutro"], [137.6, "feliz"], [139.7, "triste"], [142.2, "neutro"]], salta: [116.7] });
 for (let i = 0; i < 5; i++)
   act({ a: 108.3, b: 122, x: [4500 + i * 110, 3420 + i * 150], tw: [108.4 + i * 0.25, 109.9 + i * 0.25], y: Y.baja + (i % 2) * 8, h: 390 + (i % 3) * 20, ropa: PRESO(i), seed: 90 + i, flip: true,
-    expr: [[0, "neutro"], [112.8, "orgullo"], [114.6, "feliz"], [116.4, "enojado"], [118.5, "feliz"]], habla: [[110.1, 111.8]], manoD: i % 2 ? "jarra" : undefined, bD: i % 2 ? 60 : 8, cD: i % 2 ? 70 : 10 });
+    expr: [[0, "neutro"], [112.8, "orgullo"], [114.6, "feliz"], [116.4, "enojado"], [118.5, "feliz"]], habla: [[110.1, 111.8]], manoD: i % 2 ? "jarra" : undefined, bD: i % 2 ? 60 : 8, cD: i % 2 ? 70 : 10, salta: [112.9 + i * 0.12, 114.5 + i * 0.1] });
 o(112.82, "grande", { txt: "GARNISH", y: 230, s: 170, c: C.oro, t1: 115.2 });
 s(112.82, "slam", 0);
 fee(114.5, 6, "DRINKS");
@@ -129,8 +129,11 @@ s(145.1, "ding", 0);
 cam(147.0, 2700, SUELO + 340, 0.9, 0.7);
 o(147.4, "chip", { txt: "UNDERGROUND", x: 960, y: 140, c: C.violeta, s: 66, t1: 148.4 });
 cam(148.3, 3300, Y.baja - 300, 1.4, 0.6);
-act({ a: 148.3, b: 153.2, x: 3240, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "miedo"], [151.5, "sorpresa"]] });
+act({ a: 148.3, b: 153.2, x: 3240, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "miedo"], [150.0, "enojado"], [151.5, "sorpresa"]], inclina: 14, bI: 160, cI: 10, salta: [150.1, 150.6] });
 s(148.96, "metal", -2);
+// el carcelero engancha la cadena a la pared y se va; vos tirás y no se suelta
+act({ a: 148.3, b: 150.5, x: [3000, 2900], tw: [149.6, 150.4], y: Y.baja, h: 450, ropa: CARCELERO, seed: 7, sobre: "gorro", expr: "orgullo", bD: 110, cD: 20, habla: [[148.4, 149.2]], camina: 1.2 });
+s(149.9, "step", -8);
 w(149.0, "chip", { txt: "CHAINED TO THE WALL", x: 3240, y: Y.baja - 560, c: C.rojo, s: 34, t1: 150.6 });
 cam(150.5, 4150, Y.baja - 170, 1.9, 0.6);
 wi(151.3, "balde", 4195, Y.baja - 330, { s: 0.6, tag: "MINIBAR", c: C.rojo, t1: 153.2 });
@@ -148,7 +151,7 @@ w(156.3, "chip", { txt: "FREE?", x: CX + 200, y: Y.alta - 520, c: C.lima, tinta:
 o(158.95, "sello", { txt: "NOT FREE", x: 960, y: 250, s: 120 });
 s(158.95, "fail", -2);
 // 159.82 grilletes pesados de llegada, abulonados al piso o a la pared
-cam(160.0, CX, Y.alta - 260, 1.5, 0.9);
+cam(159.4, CX, Y.alta - 260, 1.6, 0.6);
 w(163.4, "ico", { ico: "pesa", x: CX + 140, y: Y.alta - 90, anim: "cae", s: 0.7, t1: 172.5 });
 s(163.5, "metal_fall", 0); s(163.6, "stomp", -2);
 o(163.8, "chip", { txt: "HEAVY IRON FETTERS", x: 960, y: 140, c: C.violeta, s: 62, t1: 166.0 });
@@ -233,7 +236,8 @@ o(234.4, "sello", { txt: "A ROPE", x: 960, y: 260, s: 110, t1: 236.5 });
 s(235.9, "snore", -4); s(236.9, "cloth", -3);
 o(236.0, "chip", { txt: "GUARDS: DRUNK", x: 960, y: 140, c: C.violeta, s: 58, t1: 237.4 });
 // 238.2 baja por la pared
-cam(238.0, 13950, SUELO - 760, 0.62, 1.4);
+cam(238.0, 14050, SUELO - 1000, 1.05, 0.6);
+cam(238.9, 14250, SUELO - 320, 1.05, 0.9);
 act({ a: 238.1, b: 243.6, x: [13995, 14400], y: [SUELO - 1250, SUELO + 22], tw: [238.2, 239.8], h: 330, ropa: FL, seed: 131, sobre: "mitra", expr: [[0, "miedo"], [239.8, "feliz"]], camina: 0.6, bI: 160, bD: 160, cI: 10, cD: 10, salta: [240.1, 241.4] });
 s(238.3, "cloth", -2); s(238.8, "cloth", -4); s(239.8, "stomp", -2);
 o(240.1, "chip", { txt: "FIRST PRISONER", x: 960, y: 200, c: C.violeta, s: 64, t1: 243.6 });

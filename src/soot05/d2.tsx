@@ -20,13 +20,14 @@ s(252.3, "tick", -4); s(252.8, "tick", -6); s(253.3, "tick", -6);
 o(255.3, "sello", { txt: "NOBODY KNOWS", x: 960, y: 250, s: 120 });
 s(255.3, "stamp", 0);
 // 256.48 los jueces no estaban todo el año: salen de gira
-cam(256.4, 5950, SUELO - 520, 0.75, 1.3);
+cam(256.4, 6450, SUELO - 640, 1.05, 1.3);
 s(256.3, "whoosh_big", -3);
 o(257.2, "chip", { txt: "THE ROYAL JUDGES", x: 960, y: 140, c: C.rojo, s: 64, t1: 260.0 });
 w(258.2, "chip", { txt: "NOT HERE", x: 6680, y: SUELO - 860, c: C.violeta, s: 44, t1: 260.0 });
 for (let i = 0; i < 3; i++)
   act({ a: 259.9, b: 266.3, x: [6400 + i * 160, 7700 + i * 160], tw: [260.2 + i * 0.15, 264.0 + i * 0.15], y: Y.calle, h: 400, ropa: JUEZ, seed: 151 + i, sobre: "cofia", viejo: true, expr: "orgullo", camina: 1.1, manoD: "libro", bD: 40, cD: 40, aparece: 259.9 + i * 0.15 });
-cam(260.1, 6900, SUELO - 420, 0.85, 1.6);
+cam(259.9, 6650, SUELO - 300, 1.1, 0.5);
+cam(260.6, 7850, SUELO - 300, 1.1, 3.4);
 o(260.6, "chip", { txt: "ON CIRCUIT", x: 960, y: 140, c: C.oro, tinta: C.noche, s: 64, t1: 264.0 });
 o(261.6, "linea", { x: 300, y: 900, x2: 1620, y2: 900, c: C.oro, t1: 264.0 });
 for (let i = 0; i < 4; i++) s(260.4 + i * 0.6, "step", -9);
@@ -53,14 +54,18 @@ o(276.9, "chip", { txt: "MONTHS IN THE DARK", x: 1500, y: 520, c: C.violeta, s: 
 o(276.6, "oscuro", { t1: 282.2, a: 0.5 });
 for (let i = 0; i < 6; i++) s(276.5 + i * 0.17, "tick", -6);
 fee(279.8, 30, "180 NIGHTS");
+// las noches corren: contador grande + calendario que pasa hojas al lado tuyo
+o(279.9, "cuenta", { de: 1, a: 180, dur: 1.8, x: 1380, y: 300, s: 150, c: C.rojo, suf: " NIGHTS", t1: 282.2 });
+wi(279.9, "calendario", 3560, Y.baja - 300, { s: 0.7, anim: "gira", t1: 282.2 });
+cam(279.7, 3620, Y.baja - 280, 1.6, 2.4);
 s(279.8, "coin_rain", -2);
 w(280.2, "emote", { emo: "lagrimas", x: 3300, y: Y.baja - 480, s: 1.2 });
 
 // 282.36 ¿y si te negabas a ser juzgado?
-cam(282.3, 6280, SUELO - 420, 0.85, 1.2);
+cam(282.3, 6290, SUELO - 530, 0.98, 1.2);
 s(282.2, "whoosh_big", -3);
-act({ a: 282.3, b: 299.0, x: 5880, y: Y.sala, h: 430, ropa: YO, seed: 1, expr: [[0, "neutro"], [286, "miedo"], [294.7, "orgullo"]], flip: true });
-act({ a: 282.3, b: 299.0, x: 6700, y: Y.estrado, h: 400, ropa: JUEZ, seed: 151, sobre: "cofia", viejo: true, flip: true, expr: [[0, "neutro"], [294.7, "enojado"]], habla: [[282.4, 284.4]], bD: 40, cD: 70 });
+act({ a: 282.3, b: 308.5, x: 5880, y: Y.sala, h: 430, ropa: YO, seed: 1, expr: [[0, "neutro"], [286, "miedo"], [294.7, "orgullo"], [299.2, "sorpresa"], [306.9, "miedo"]], flip: true });
+act({ a: 282.3, b: 308.5, x: 6700, y: Y.estrado, h: 400, ropa: JUEZ, seed: 151, sobre: "cofia", viejo: true, flip: true, expr: [[0, "neutro"], [294.7, "enojado"], [299.2, "orgullo"]], habla: [[282.4, 284.4], [299.3, 301.0], [303.0, 304.8]], bD: 40, cD: 70, manoD: "mazo", salta: [306.9] });
 w(283.6, "globo", { x: 6680, y: Y.estrado - 470, txt: "HOW DO YOU PLEAD?", s: 30, hx: 0.3, t1: 286.0 });
 w(284.8, "emote", { emo: "excl", x: 5870, y: Y.sala - 520, s: 1.1 });
 o(284.8, "chip", { txt: "SOME MEN SAID NOTHING", x: 960, y: 140, c: C.violeta, s: 60, t1: 286.0 });
@@ -78,7 +83,8 @@ o(296.4, "chip", { txt: "NO VERDICT", x: 960, y: 420, c: C.violeta, s: 60, t1: 2
 o(297.6, "ico", { ico: "casa", x: 960, y: 700, s: 1.1, tag: "FAMILY KEEPS THE FARM", c: C.lima, t1: 299.0 });
 s(297.6, "ding", -4);
 // 299.1 la ley tenía respuesta: 1275, Westminster
-cam(299.0, 6500, SUELO - 520, 1.2, 1.0);
+cam(299.0, 6330, SUELO - 535, 1.04, 6.0);
+s(306.95, "wood_hit", -1);
 o(299.2, "chip", { txt: "THE LAW HAD AN ANSWER", x: 960, y: 140, c: C.rojo, s: 62, t1: 301.0 });
 o(301.0, "cuenta", { de: 1200, a: 1275, dur: 0.7, x: 960, y: 380, s: 220, c: C.oro, t1: 304.6 });
 o(302.7, "ico", { ico: "pergamino", x: 960, y: 700, s: 1.1, tag: "STATUTE OF WESTMINSTER", t1: 306.8 });
@@ -86,7 +92,7 @@ s(302.7, "unroll", -2);
 o(306.9, "sello", { txt: "HARD AND STRICT", x: 960, y: 300, s: 110 });
 s(306.9, "stamp", 0);
 // 308.56 la celda: piso pelado, casi nada para comer
-cam(308.5, 2750, SUELO + 380, 1.25, 1.2);
+cam(308.5, 2720, Y.sotano - 260, 1.7, 0.8);
 s(308.4, "whoosh_big", -3);
 act({ a: 308.5, b: 321.2, x: 2700, y: Y.sotano, h: 400, ropa: YO, seed: 1, expr: [[0, "triste"], [314.6, "feliz"], [317.3, "triste"]], inclina: 8 });
 w(311.5, "chip", { txt: "BARE FLOOR", x: 2700, y: Y.sotano + 30, c: C.violeta, s: 34, t1: 314.2 });
@@ -95,7 +101,8 @@ wi(316.0, "agua", 2480, Y.sotano - 300, { s: 0.6, tag: "TUESDAY", t1: 317.2 });
 s(314.6, "pop", -3); s(316.0, "drop", -3);
 o(317.3, "sello", { txt: "NEVER BOTH", x: 960, y: 250, s: 120 });
 s(317.3, "stamp", 0);
-o(319.3, "oscuro", { t1: 344.0, a: 0.45, c: "#1a0510" });
+o(319.3, "oscuro", { t1: 344.0, a: 0.3, c: "#1a0510" });
+cam(319.3, 2700, Y.sotano - 300, 2.1, 1.6);
 o(319.4, "chip", { txt: "THEN IT GOT WORSE", x: 960, y: 140, c: C.rojo, s: 62, t1: 321.2 });
 s(319.4, "suspense", -6);
 // 321.32 de espaldas, pesas sobre el pecho, cada día más
@@ -113,7 +120,7 @@ o(333.2, "grande", { txt: "PEINE FORTE", y: 400, s: 140, c: C.oro, t1: 336.4 });
 o(333.7, "grande", { txt: "ET DURE", y: 570, s: 140, c: C.oro, t1: 336.4 });
 s(333.2, "slam", 0); s(333.3, "boom", -5);
 // 336.48 una cantidad sorprendente lo eligió
-cam(336.4, 2750, Y.sotano - 260, 1.0, 1.0);
+cam(336.4, 2560, Y.sotano - 180, 1.35, 1.0);
 for (let i = 0; i < 3; i++) {
   act({ a: 336.4, b: 343.8, x: 2150 + i * 380, y: Y.sotano - 70 - (i === 1 ? 0 : 0), h: 340, ropa: PRESO(i + 2), seed: 170 + i, rot: 90, expr: [[0, "orgullo"], [338.7, "dormido"]], aparece: 336.5 + i * 0.25 });
   for (let k = 0; k < 3; k++) wi(336.7 + i * 0.25 + k * 0.2, "pesa", 2150 + i * 380 + 230, Y.sotano - 110 - k * 60, { s: 0.45, anim: "cae", t1: 343.8 });
@@ -189,7 +196,7 @@ s(393.0, "swish", -3);
 w(395.7, "ico", { ico: "pan", x: 19100, y: SUELO + 100, x2: 19150, y2: Y.botella - 60, anim: "vuela", dur: 1.0, s: 0.5, t1: 397.4 });
 s(395.7, "fall", -6); s(396.7, "drop", -4);
 w(397.5, "ico", { ico: "balde", x: 19300, y: Y.botella - 90, s: 0.5, t1: 401 });
-w(397.5, "chip", { txt: "EVERYTHING ELSE STAYED", x: 19100, y: Y.botella - 520, c: C.lima, tinta: C.noche, s: 32, t1: 399.8 });
+o(397.5, "chip", { txt: "EVERYTHING ELSE STAYED", x: 960, y: 160, c: C.lima, tinta: C.noche, s: 58, t1: 399.8 });
 s(397.6, "drone", -6);
 // 399.96 está dentro de la Sea Tower · 1546, el cardenal Beaton
 cam(399.9, 19100, SUELO - 700, 0.45, 1.3);
@@ -207,7 +214,7 @@ o(407.4, "chip", { txt: "BROKE IN", x: 960, y: 140, c: C.rojo, s: 62, t1: 409.6 
 o(409.7, "chip", { txt: "CARDINAL DAVID BEATON", x: 960, y: 900, c: C.violeta, s: 58, t1: 413.0 });
 w(413.3, "ico", { ico: "sal", x: 18700, y: Y.calle - 260, s: 0.8, tag: "SALT", t1: 415.0 });
 s(413.3, "popcluster", -4);
-cam(414.4, 19100, SUELO + 700, 0.62, 1.0);
+cam(414.4, 19100, Y.botella - 260, 0.95, 1.0);
 act({ a: 414.4, b: 430.5, x: 19050, y: [SUELO - 40, Y.botella - 40], tw: [414.6, 415.9], h: 380, ropa: BEATON, seed: 181, sobre: "capelo", viejo: true, expr: "dormido", rot: 90 });
 s(414.6, "fall", -2); s(415.9, "punch", -2);
 o(416.6, "ico", { ico: "calendario", x: 1500, y: 320, s: 0.9, tag: "FOR MONTHS", t1: 418.2 });
@@ -215,7 +222,7 @@ o(418.3, "chip", { txt: "THE MOST POWERFUL CHURCHMAN IN SCOTLAND", x: 960, y: 14
 o(420.2, "sello", { txt: "IN HIS OWN PIT", x: 960, y: 320, s: 100 });
 s(420.2, "stamp", 0);
 // 421.94 oubliette = olvidar; la tapa se cierra
-cam(421.9, 19100, SUELO + 600, 0.7, 0.8);
+cam(421.9, 19100, Y.botella - 320, 1.15, 0.8);
 o(424.3, "grande", { txt: "OUBLIETTE", y: 300, s: 160, c: C.oro, t1: 427.6 });
 s(424.3, "slam", -1);
 o(425.8, "chip", { txt: "OUBLIER = TO FORGET", x: 960, y: 470, c: C.violeta, s: 60, t1: 427.6 });
