@@ -27,6 +27,11 @@ const Ruta: React.FC<{ t: number }> = ({ t }) => {
   const q = ent(t, M.casaQ);
   return (
     <g>
+      {/* OJO v3: la ciudad debajo de la ruta (manzanas, Coliseo, templo, acueducto) */}
+      {Array.from({ length: 13 * 7 }, (_, k) => { const cx = k % 13, cy = Math.floor(k / 13); const r = ((k * 37) % 11) / 11; return r < 0.25 ? null : <rect key={k} x={230 + cx * 118 + (cy % 2) * 30} y={250 + cy * 96} width={90 - r * 30} height={64 - r * 18} rx={8} fill="#22305e" opacity={0.75} />; })}
+      <g transform="translate(780 430)" opacity={0.95}><ellipse rx={110} ry={72} fill="#c9a06a" stroke={K} strokeWidth={6} /><ellipse rx={64} ry={38} fill="#8a6a44" stroke={K} strokeWidth={5} />{T(0, 112, "COLOSSEUM", 26, C.crema)}</g>
+      <g transform="translate(1240 760)"><path d="M -60 0 L 0 -40 L 60 0 Z" fill="#e8d6b8" stroke={K} strokeWidth={5} />{[-44, -16, 16, 44].map((x) => <rect key={x} x={x - 6} y={0} width={12} height={46} fill="#e8d6b8" stroke={K} strokeWidth={3} />)}{T(0, 84, "TEMPLE", 26, C.crema)}</g>
+      <g transform="translate(300 300)" opacity={0.9}><rect x={0} y={0} width={420} height={18} fill="#9a8a7a" />{Array.from({ length: 8 }, (_, k) => <path key={k} d={`M ${k * 52 + 6} 18 L ${k * 52 + 6} 70 Q ${k * 52 + 26} 40 ${k * 52 + 46} 70 L ${k * 52 + 46} 18 Z`} fill="#9a8a7a" />)}{T(210, 104, "AQUEDUCT", 26, C.crema)}</g>
       <path d={RIO} stroke="#3a7fd0" strokeWidth={60} fill="none" opacity={0.5} strokeLinecap="round" />
       <path d={d} stroke={C.ambar} strokeWidth={14} fill="none" strokeDasharray="34 22" pathLength={1} strokeDashoffset={0} style={{ strokeDasharray: `${dib} 1` }} strokeLinecap="round" />
       <g transform={`translate(420 760) scale(${ent(t, M.ruta - 0.3)})`}><Ico k="lampara" x={0} y={-70} s={0.6} />{T(0, 60, "THE DINNER", 34)}</g>
@@ -41,6 +46,8 @@ const Ruta: React.FC<{ t: number }> = ({ t }) => {
           </g>
         );
       })}
+      {/* el nene recorre la ruta */}
+      {dib > 0.02 && (() => { const L = pts.length - 1; const f = Math.min(L - 0.001, dib * L); const a = pts[Math.floor(f)], b = pts[Math.floor(f) + 1]; const u = f - Math.floor(f); const x = a[0] + (b[0] - a[0]) * u, y = a[1] + (b[1] - a[1]) * u - 20 - Math.abs(Math.sin(t * 8)) * 12; return <g transform={`translate(${x} ${y})`}><circle r={30} fill="#f2b48a" stroke={K} strokeWidth={6} /><path d="M -30 -6 Q -28 -36 0 -36 Q 28 -36 30 -6 Q 10 -22 -30 -6 Z" fill="#4a2a17" /><circle cx={-10} cy={2} r={4} fill={K} /><circle cx={10} cy={2} r={4} fill={K} /><path d="M -22 30 L 22 30 L 26 70 L -26 70 Z" fill="#d8443a" stroke={K} strokeWidth={5} /></g>; })()}
       <g transform={`translate(1640 330) scale(${q * (1 + Math.sin(t * 6) * 0.05 * q)})`}>
         <path d="M -70 0 L 0 -70 L 70 0 L 70 80 L -70 80 Z" fill="#e8b98a" stroke={K} strokeWidth={8} />
         <path d="M -86 6 L 0 -84 L 86 6" stroke={C.rojo} strokeWidth={16} fill="none" />
