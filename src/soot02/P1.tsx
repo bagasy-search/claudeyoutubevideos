@@ -232,8 +232,8 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
     {/* 103,5 · "not all of their work was at sea. In Rome itself... barracks next to the Colosseum, for a very strange job" */}
     <Escena t={t} t0={103.5} t1={112.0} entra="paneo" sale="fundido" fondo="none" golpes={[105.7, 109.7, 111.1]}>
       <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><rect x={0} y={760} width={1920} height={320} fill="#c9a46a" /><rect x={0} y={760} width={1920} height={24} fill="#a8834e" /></svg>
-      <Coliseo x={1150} y={520} s={1.0} t={t} t0={105.6} />
-      <Persona x={interpolate(t, [103.5, 106.2], [-100, 640], cl)} y={pp(430, 590)} h={430} t={t} seed={2} ropa={APION} camina={t < 106.2 ? 1.7 : 0} expr={t < 109.7 ? "sorpresa" : "feliz"} mira={0.8} bD={t > 109.7 ? 140 : 10} cD={30} />
+      <Coliseo x={1270} y={520} s={0.9} t={t} t0={105.6} />
+      <Persona x={interpolate(t, [103.5, 106.2], [-100, 620], cl)} y={pp(430, 590)} h={430} t={t} seed={2} ropa={APION} camina={t < 106.2 ? 1.7 : 0} expr={t < 109.7 ? "sorpresa" : "feliz"} mira={0.8} bD={t > 109.7 ? 140 : 10} cD={30} />
       {t > 108.2 && <svg style={{ position: "absolute", left: 120, top: 560, transform: `scale(${ent(t, 108.2)})`, transformOrigin: "200px 300px" }} width={420} height={300}><rect x={20} y={80} width={380} height={200} fill="#e8b98a" /><path d="M 0 90 L 210 10 L 420 90 Z" fill="#b5452c" />{[60, 160, 260].map((x) => <rect key={x} x={x} y={150} width={60} height={60} fill="#5a3418" />)}</svg>}
       <Chip t={t} t0={104.0} text="NOT ALL AT SEA" color={C.violeta} x={110} y={150} size={56} />
       <Chip t={t} t0={105.7} text="ROME" color={C.rojo} x={110} y={260} size={72} />

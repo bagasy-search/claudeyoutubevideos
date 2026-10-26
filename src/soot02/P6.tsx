@@ -160,8 +160,8 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={700.6} t1={704.0} text="WRECKAGE" color={C.rojo} x={960} y={150} centro size={64} />
       <Chip t={t} t0={702.3} t1={704.0} text="FOR MILES" color={C.oro} tinta={C.noche} x={960} y={260} centro size={56} />
       {t >= 704.03 && <Pergamino x={960} y={560} w={900} abre={prog(t, 704.1, 704.6)} lineas={6} titulo="POLYBIUS · HISTORIES I.37" />}
-      <Chip t={t} t0={705.2} text="ONE OF THE GREATEST" color={C.violeta} x={960} y={440} centro size={58} />
-      <Chip t={t} t0={706.0} text="DISASTERS AT SEA IN ALL HISTORY" color={C.rojo} x={960} y={540} centro size={52} />
+      <Chip t={t} t0={704.5} text="ONE OF THE GREATEST" color={C.violeta} x={960} y={440} centro size={58} />
+      <Chip t={t} t0={705.3} text="DISASTERS AT SEA IN ALL HISTORY" color={C.rojo} x={960} y={540} centro size={52} />
     </Escena>
 
     {/* 707,89 · "Many historians suspect the heavy crows made it even worse" */}
@@ -365,7 +365,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
         <>
           <Playa t={t} noche={1} />
           <Volcan x={1560} y={560} s={0.55} t={t} erupcion={1} />
-          <Persona x={760} y={920} h={460} t={t} seed={166} ropa={PLINIO} viejo expr="triste" opacity={1 - prog(t, 791.8, 793.0)} mira={1} />
+          <Persona x={760} y={920} h={460} t={t} seed={166} ropa={PLINIO} viejo expr={t < 790.9 ? "miedo" : "triste"} inclina={Math.sin(t * 7) * 5} opacity={1 - prog(t, 791.8, 793.0)} mira={1} />
         </>
       )}
       <Particulas t={t} tipo="brasas" n={50} seed={12} />
@@ -378,7 +378,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
       {t < 794.99 && <Persona x={560} y={1000} h={500} t={t} seed={167} ropa={SOBRINO} expr="triste" bD={80 + Math.sin(t * 14) * 6} cD={100} />}
       {t < 794.99 && <Pergamino x={1240} y={560} w={760} abre={prog(t, 793.2, 793.7)} lineas={8} titulo="PLINY THE YOUNGER" />}
       {t < 794.99 && <Chip t={t} t0={793.15} text="HIS NEPHEW WROTE IT DOWN" color={C.violeta} x={960} y={140} centro size={52} />}
-      {t >= 794.99 && <AbsoluteFill><Corte t={t} boga={0} agua={0.06} heroeExpr="miedo" luz={0.45} oscuro={0.4} hortator={false} vacio /></AbsoluteFill>}
+      {t >= 794.99 && <Cam t={t} k={[[795.0, 960, 540, 1.0], [797.9, 1060, 560, 1.18]]}><Corte t={t} boga={0} agua={0.06} heroeExpr="miedo" luz={0.45} oscuro={0.4} hortator={false} vacio />{[[330, 880], [760, 600], [1150, 880], [1450, 420]].map(([x, y], i) => <Persona key={i} x={x} y={y} h={300} t={t} seed={180 + i} ropa={CIVIL(i + 2)} expr="triste" opacity={0.42 * (1 - prog(t, 795.6 + i * 0.4, 796.6 + i * 0.4))} />)}</Cam>}
       {t >= 794.99 && <Apion t={t} t0={795.0} x={1600} y={1075} h={460} desde="nada" acts={[[795.0, "piensa"], [796.6, "triste"]]} />}
       {t >= 794.99 && <Chip t={t} t0={795.0} text="HIS ROWERS?" color={C.rojo} x={960} y={160} centro size={70} />}
       {t >= 796.6 && <Grande t={t} t0={796.6} text="?" x={960} y={560} size={260} color={C.crema} />}

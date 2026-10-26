@@ -269,7 +269,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={438.08} text="YOU," color="#2fb5d8" tinta={C.noche} x={300} y={160} centro size={66} />
       <Chip t={t} t0={438.46} text="PERSONALLY," color={C.violeta} x={700} y={160} centro size={58} />
       <Chip t={t} t0={439.26} text="ARE THE ENGINE" color={C.rojo} x={1250} y={160} centro size={66} />
-      <Chip t={t} t0={439.94} text="THE WEAPON IS NEXT →" color={C.rojo} x={1240} y={930} centro size={72} />
+      <Chip t={t} t0={439.94} text="THE WEAPON IS NEXT →" color={C.rojo} x={1240} y={850} centro size={72} />
     </Escena>
   </>
 );

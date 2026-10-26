@@ -108,11 +108,11 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={215.6} t1={225.4} text="QUINQUEREME" color={C.rojo} x={960} y={130} centro size={80} />
       <Chip t={t} t0={217.4} t1={225.4} text="'FIVE-OARED'" color={C.violeta} x={960} y={240} centro size={48} />
       <Chip t={t} t0={220.4} t1={225.4} text="≈ 40 METERS" color={C.oro} tinta={C.noche} x={960} y={745} centro size={76} />
-      <Apion t={t} t0={216.0} t1={232.8} x={1700} y={1050} h={400} borda={1020} acts={[[216.3, "habla"], [219.7, "senala"], [222.2, "piensa"], [225.9, "asombro"], [231.3, "miedo"]]} flip />
+      <Apion t={t} t0={216.0} t1={232.8} x={1730} y={1050} h={400} borda={1020} acts={[[216.3, "habla"], [219.7, "senala"], [222.2, "piensa"], [225.9, "asombro"], [231.3, "miedo"]]} flip />
       <Chip t={t} t0={222.2} t1={225.4} text="POLYBIUS" color="#1d6f8a" x={960} y={850} centro size={56} />
       {/* los 400: barco en sección y gente llenándolo */}
-      {t > 225.6 && <div style={{ position: "absolute", left: 300, top: 690, width: 1320, height: 360, borderRadius: 28, background: "linear-gradient(180deg, #3a2590, #241660)", border: "6px solid #7fd6ff", boxShadow: "0 12px 0 rgba(10,5,30,.4)", transform: `scale(${ent(t, 225.6)})` }} />}
-      {t > 225.6 && <Gentio t={t} x={330} y={710} w={1260} cols={42} grupos={[{ n: 300, color: "#2fb5d8", t0: 225.9 }, { n: 120, color: C.rojo, t0: 227.0 }, { n: 24, color: C.oro, t0: 229.2 }]} />}
+      {t > 225.6 && <div style={{ position: "absolute", left: 250, top: 725, width: 1250, height: 330, borderRadius: 28, background: "linear-gradient(180deg, #3a2590, #241660)", border: "6px solid #7fd6ff", boxShadow: "0 12px 0 rgba(10,5,30,.4)", transform: `scale(${ent(t, 225.6)})` }} />}
+      {t > 225.6 && <Gentio t={t} x={280} y={742} w={1190} cols={40} grupos={[{ n: 300, color: "#2fb5d8", t0: 225.9 }, { n: 120, color: C.rojo, t0: 227.0 }, { n: 24, color: C.oro, t0: 229.2 }]} />}
       <Chip t={t} t0={225.94} text="300 ROWERS" color="#1d6f8a" x={120} y={130} size={60} />
       <Chip t={t} t0={227.04} text="+120 MARINES" color={C.rojo} x={640} y={130} size={60} />
       <Chip t={t} t0={229.22} text="+ OFFICERS" color={C.oro} tinta={C.noche} x={1210} y={130} size={60} />
@@ -133,8 +133,8 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={240.5} t1={242.6} text="YOUR CAREER IS DECIDED HERE" color={C.rojo} x={960} y={960} centro size={56} />
       <Chip t={t} t0={244.0} t1={247} text="LUCKY: TOP ROW" color={C.lima} tinta={C.noche} x={960} y={160} centro size={66} />
       <Chip t={t} t0={245.2} t1={247} text="AIR + LIGHT" color={C.oro} tinta={C.noche} x={960} y={950} centro size={58} />
-      <Chip t={t} t0={247.2} text="UNLUCKY..." color={C.rojo} x={960} y={840} centro size={66} />
-      <Chip t={t} t0={248.7} text="THE BOTTOM" color={C.noche} x={960} y={960} centro size={70} />
+      <Chip t={t} t0={247.2} text="UNLUCKY..." color={C.rojo} x={960} y={160} centro size={66} />
+      <Chip t={t} t0={248.7} text="THE BOTTOM" color={C.noche} x={960} y={270} centro size={70} />
     </Escena>
 
     {/* 249,9 · "The bottom row sat almost at the waterline. Your oar went out through a hole... sealed with a leather sleeve. Most of the time it worked." */}

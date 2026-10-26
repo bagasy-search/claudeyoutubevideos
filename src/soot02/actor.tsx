@@ -10,9 +10,12 @@ const cl = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as con
 
 export const Apion: React.FC<{ t: number; t0: number; x: number; y?: number; h?: number; acts: [number, Act][]; flip?: boolean; desde?: "izq" | "der" | "nada"; seed?: number; ropa?: Ropa; casco?: "no" | "legion" | "centurion"; t1?: number; borda?: number }> = ({ t, t0, x, y = 1040, h = 400, acts, flip, desde, seed = 2, ropa = APION, casco = "no", t1 = 1e9, borda }) => {
   if (t < t0 || t > t1) return null;
-  const lado = desde ?? (x < 960 ? "izq" : "der");
+  // zona segura: el personaje nunca queda cortado por los bordes del cuadro (ni los pies abajo si no hay baranda)
+  const yy = borda === undefined ? Math.min(y, 1050) : y;
+  const xs = Math.min(Math.max(x, h * 0.36 + 40), 1920 - h * 0.36 - 40);
+  const lado = desde ?? (xs < 960 ? "izq" : "der");
   const k = lado === "nada" ? 1 : interpolate(t, [t0, t0 + 0.55], [0, 1], cl);
-  const xx = lado === "nada" ? x : interpolate(k, [0, 1], [lado === "izq" ? -h * 0.5 : 1920 + h * 0.5, x]);
+  const xx = lado === "nada" ? xs : interpolate(k, [0, 1], [lado === "izq" ? -h * 0.5 : 1920 + h * 0.5, xs]);
   let i = -1;
   for (let j = 0; j < acts.length; j++) if (t >= acts[j][0]) i = j;
   const a: Act = i < 0 ? "habla" : acts[i][1];
@@ -36,10 +39,10 @@ export const Apion: React.FC<{ t: number; t0: number; x: number; y?: number; h?:
   if (a === "cansado") { expr = "triste"; bD = bI = 8; cD = cI = 10; inclina = 10 + Math.sin(t * 2) * 3; emo = "sudor"; }
   if (a === "orgullo") { expr = "orgullo"; bD = bI = 45; cD = cI = 150; habla = true; }
   if (expr === ("cansado" as never)) expr = "triste";
-  const c = cabeza(xx, y, h);
+  const c = cabeza(xx, yy, h);
   return (
     <>
-      <Persona x={xx} y={y} h={h} t={t} seed={seed} ropa={ropa} casco={casco} expr={expr} habla={habla} camina={k < 1 ? 1.8 : 0} bD={bD} cD={cD} bI={bI} cI={cI} inclina={inclina} salta={salta} flip={flip ?? lado === "der"} />
+      <Persona x={xx} y={yy} h={h} t={t} seed={seed} ropa={ropa} casco={casco} expr={expr} habla={habla} camina={k < 1 ? 1.8 : 0} bD={bD} cD={cD} bI={bI} cI={cI} inclina={inclina} salta={salta} flip={flip ?? lado === "der"} />
       {borda !== undefined && <Borda y={borda} />}
       {emo && k >= 1 && <Emote t={t} t0={ta + 0.1} tipo={emo} x={c.x} y={c.y} s={c.s} />}
     </>
