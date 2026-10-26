@@ -467,7 +467,7 @@ export const Comment: React.FC<{ t: number; at: number; typeAt: number; out: num
     <div style={{ ...dark, position: "absolute", left: x, top: y, opacity: o, width: 900, padding: "24px 30px", transform: `translate(-50%,-50%) scale(${0.7 + 0.3 * K(k)})`, display: "flex", gap: 22, alignItems: "center" }}>
       <div style={{ width: 80, height: 80, borderRadius: 40, background: "linear-gradient(135deg,#6fb4ff,#2f6db3)", flexShrink: 0 }} />
       <div style={{ flex: 1 }}>
-        <div style={{ color: COL.dim, fontWeight: 800, fontSize: 26 }}>Add a comment…</div>
+        <div style={{ color: COL.dim, fontWeight: 800, fontSize: 26 }}>Añadir un comentario…</div>
         <div style={{ color: "#fff", fontWeight: 800, fontSize: 52, borderBottom: "3px solid rgba(255,255,255,.4)", paddingBottom: 6, minHeight: 64 }}>{text.slice(0, n)}<span style={{ opacity: Math.sin(t * 8) > 0 && n < text.length ? 1 : 0 }}>|</span></div>
       </div>
       <div style={{ padding: "12px 24px", borderRadius: 30, background: sent > 0.5 ? "#7dff9e" : "#3a7bd5", color: sent > 0.5 ? "#0a3a1a" : "#fff", fontWeight: 900, fontSize: 32, transform: `scale(${1 + 0.15 * Math.sin(sent * Math.PI)})` }}>{sent > 0.5 ? "✓" : "COMENTAR"}</div>

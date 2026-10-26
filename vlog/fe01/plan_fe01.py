@@ -226,7 +226,7 @@ B("con las lluvias, con el peso", "ltx:fe_lluvia_tumbas|n20", "swipeR", why="la 
 B("Aquí en Guadalajara llueve fuerte de junio a septiembre", "img:n20", "cut", why="el aguacero")
 O("Aquí en Guadalajara llueve fuerte de junio a septiembre", "ficha", 4.8, kicker="GUADALAJARA", title="Temporada de lluvias", dato="junio → septiembre", sub="esa agua acomoda la tierra")
 B("Por eso la lápida no se pone ese día", "img:e12", "cut", why="Ernesto señala la tierra suelta")
-B("se le chuequea, se le cuartea", "ltx:fe_lapida_chueca|n19", "cut", why="la lápida chueca y rajada")
+B("se le chuequea, se le cuartea", "img:n19", "cut", why="la lápida chueca y rajada")
 B("Los marmoleros serios le van a decir que espere", "img:e13", "cut", why="Ernesto con el marmolero")
 B("no compre la lápida el mismo día del entierro", "img:e14", "portal", why="Ernesto: no el mismo día")
 O("no compre la lápida el mismo día del entierro", "stamp", 3.0, text="NO EL MISMO DÍA", col=ROJO, rot=-6, x=1420, y=330)
@@ -349,7 +349,7 @@ B("una línea en el libro de registro", "img:m033", "cut", why="PAGO de la semil
 O("¿Se acuerda del libro", "stamp", 3.0, text="¿SE ACUERDA DEL LIBRO?", col=ROJO, rot=-5, x=960, y=820, size=84)
 B("Eso fue todo lo que les quedó", "bk", "zoom", why="lo único que les quedó")
 B("Mi papá tenía en la pared de esta oficina un calendario", "ltx:fe_calendario_cocina|n52", "cut", why="el calendario con lápiz rojo")
-O("con lápiz rojo apuntaba las fechas de refrendo", "refrendo", 6.0, from_=1990, years=7, venceAt="en marzo vaya a la oficina", title="Fosa temporal", label="REFRENDO · LÁPIZ ROJO")
+O("con lápiz rojo apuntaba las fechas de refrendo", "refrendo", 10.5, from_=1990, years=7, venceAt="Porque se les olvidaba", title="Fosa temporal", label="REFRENDO · LÁPIZ ROJO")
 B("con lápiz rojo apuntaba las fechas de refrendo", "bk", "zoom", why="el calendario del refrendo")
 B("Porque se les olvidaba. A todas", "fill", "cut", why="la puerta en Analco")
 O("en marzo vaya a la oficina", "quote", 3.6, text="«Señora, en marzo vaya a la oficina. No se le olvide.»", who="Don Refugio", y=820, w=1100)
@@ -644,7 +644,7 @@ for o in sorted(ov, key=lambda o: o["a"]):
             if dk in x: x[dk] = {**x[dk], "at": round(x[dk]["at"] + sh, 2)}
         if "venceAt" in x: x["venceAt"] = round(x["venceAt"] + sh, 2)
     nv.append(x)
-ov = sorted(nv, key=lambda o: o["a"])
+ov = sorted(nv, key=lambda o: (o["a"], o["k"] != "cap"))  # a la par, el capítulo va primero
 # una pieza por vez (el rótulo de nombre/lugar convive): la que entra corta a la anterior; si a la anterior le quedan <1,2 s, la nueva espera
 SOLAS = ("lower", "lugar", "tag")
 CHICAS = {"stamp": (960, 540), "big": (960, 520), "comment": (1300, 800), "chips": (960, 880)}  # piezas que ocupan un lugar del cuadro
@@ -655,13 +655,83 @@ def choca(o, p):  # dos piezas chicas en lugares distintos del cuadro conviven; 
 for i, o in enumerate(ov):
     if o["k"] in SOLAS: continue
     for p in ov[:i]:
-        if p["k"] in SOLAS or p["b"] <= o["a"] or abs(o["a0"] - p["a0"]) < 0.6: continue  # las que entran juntas son un combo a propósito
+        if p["k"] in SOLAS or p["b"] <= o["a"] or (abs(o["a0"] - p["a0"]) < 0.6 and "cap" not in (o["k"], p["k"])): continue  # las que entran juntas son un combo a propósito (menos el capítulo)
         if not choca(o, p): continue
         if p["a"] - p["a0"] > 4.0 and o["a"] - o["a0"] < 1.5 and p["k"] not in ("cap", "big"): p["b"] = p["a"]; continue  # la corrida lejos de su frase cede el lugar (sale)
         keep = 3.0 if p["k"] == "cap" else 1.2  # lo mínimo que se ve la anterior (el capítulo, más)
         if o["a"] - p["a"] < keep: o["a"] = round(min(p["b"], p["a"] + keep) + 0.05, 2)  # la nueva espera (su final no se mueve)
         p["b"] = round(min(p["b"], o["a"] - 0.05), 2)
 ov = [o for o in ov if o["b"] - o["a"] >= 1.0 or notes.append(f"pieza {o['k']} @{o['a']} quedó <1 s al encimarse → sale")]
+# las piezas grandes no tapan una cara: se mira la cara del plano de abajo (haar, cacheado) y si la pieza la pisa se espeja al
+# otro lado (las de costado) o se baja/sube (las del centro)
+import cv2
+_YN = "D:/rtmp/lu30/modelos/yunet.onnx"
+_CF = "D:/rtmp_fe01/caras.json"; _CC = json.load(open(_CF)) if os.path.exists(_CF) else {}
+def caras(src):
+    f = PUB + src
+    if not os.path.exists(f): return []
+    key = f"{src}|{int(os.path.getmtime(f))}"
+    if key not in _CC:
+        if f.endswith(".mp4"):
+            cap = cv2.VideoCapture(f); n = int(cap.get(cv2.CAP_PROP_FRAME_COUNT)); cap.set(cv2.CAP_PROP_POS_FRAMES, n // 2); ok, im = cap.read(); cap.release()
+            im = im if ok else None
+        else: im = cv2.imread(f)
+        fs = []
+        if im is not None:
+            hh, ww = im.shape[:2]; d = cv2.FaceDetectorYN.create(_YN, "", (ww, hh), 0.75)
+            for r in (d.detect(im)[1] if d.detect(im)[1] is not None else []):
+                x, y, w, h = [float(v) for v in r[:4]]
+                fs.append([round((x - w * 0.3) / ww * 1920), round((y - h * 0.4) / hh * 1080), round((x + w * 1.3) / ww * 1920), round((y + h * 1.3) / hh * 1080)])
+        _CC[key] = fs
+    return _CC[key]
+GRANDES = {"ficha": (1380, 560, 760, 900), "recibo": (1340, 540, 820, 620), "foto": (1350, 520, 640, 600), "mapa": (960, 540, 640, 640),
+           "dicho": (960, 545, 1240, 420), "quote": (960, 545, 1300, 420), "refrendo": (960, 560, 900, 620)}
+def caja(o, x=None, y=None):
+    if o["k"] == "stamp":
+        sz = o.get("size", 110); wd = min(1800, len(o["text"]) * sz * 0.75 + 80); x = o["x"] if x is None else x; y = o["y"] if y is None else y
+        x = max(wd / 2 + 60, min(1860 - wd / 2, x)); return (x - wd / 2, y - 95, x + wd / 2, y + 95)
+    if o["k"] == "big":
+        sz = o.get("size", 220); ss = max(46, sz * 0.2); wd = max(len(o["text"]) * sz * 0.66, len(o.get("sub", "")) * ss * 0.66) + 80
+        x = o.get("x", 960) if x is None else x; y = o.get("y", 520) if y is None else y; x = max(wd / 2, min(1920 - wd / 2, x))
+        hh = sz + (ss + 14 if o.get("sub") else 0); return (x - wd / 2, y - hh / 2, x + wd / 2, y + hh / 2)
+    dx, dy, w, h = GRANDES[o["k"]]; w = o.get("w", w); x = o.get("x", dx) if x is None else x; y = o.get("y", dy) if y is None else y
+    if o["k"] in ("dicho", "quote"): return (x - w / 2, y - 210, x + w / 2, y - 210 + h)
+    return (x - w / 2, y - h / 2, x + w / 2, y + h / 2)
+def pisa(bx, fs): return sum(max(0, min(bx[2], f[2]) - max(bx[0], f[0])) * max(0, min(bx[3], f[3]) - max(bx[1], f[1])) for f in fs)
+movidas = 0
+for o in ov:
+    if o["k"] not in GRANDES and o["k"] not in ("stamp", "big"): continue
+    fs = [f for i, g in enumerate(segs) if g["k"] != "av" and g.get("src") and g["a"] < o["b"] and (segs[i + 1]["a"] if i + 1 < len(segs) else END) > o["a"] for f in caras(g["src"])]
+    if not fs or not pisa(caja(o), fs): continue
+    dx, dy = GRANDES.get(o["k"], (o.get("x"), o.get("y")))[:2]; x0, y0 = o.get("x", dx), o.get("y", dy)
+    if o["k"] in ("stamp", "big"): alts = [(x0, 860), (x0, 190), (1920 - x0, y0), (1920 - x0, 860)]
+    else: alts = [(1920 - x0, y0)] if abs(x0 - 960) > 150 else [(x0, 790), (x0, 300), (520, y0), (1400, y0)]
+    best = min([(x0, y0)] + alts, key=lambda p: pisa(caja(o, *p), fs))
+    if best != (x0, y0):
+        if o["k"] in ("dicho", "quote") and best[0] != x0: o["w"] = 860
+        o["x"], o["y"] = best; movidas += 1
+json.dump(_CC, open(_CF, "w"))
+notes.append(f"caras: {movidas} piezas corridas para no tapar una cara")
+# lo de adentro de una pieza (renglones, pines, sello, total, vence) tiene que pasar mientras se ve: si la pieza quedó más
+# corta o corrida y algo cae después de su final, se comprime todo ese adentro entre su entrada y 1 s antes de que salga
+apretadas = 0
+for o in ov:
+    refs = []
+    for lk in ("rows", "items", "pins"):
+        for it in (o.get(lk) or []):
+            if isinstance(it, dict):
+                for kk in ("at", "tacha", "ok"):
+                    if isinstance(it.get(kk), (int, float)) and it[kk] > 10: refs.append((it, kk))
+    for dk in ("route", "total", "sello"):
+        if isinstance(o.get(dk), dict) and isinstance(o[dk].get("at"), (int, float)): refs.append((o[dk], "at"))
+    if isinstance(o.get("venceAt"), (int, float)): refs.append((o, "venceAt"))
+    if not refs: continue
+    ts = [d[kk] for d, kk in refs]; lo, hi = o["a"] + 0.5, o["b"] - 1.0
+    if max(ts) <= hi and min(ts) >= o["a"]: continue
+    t0, t1 = min(ts), max(ts)
+    for d, kk in refs: d[kk] = round(lo + (d[kk] - t0) * (hi - lo) / (t1 - t0), 2) if t1 > t0 else round(lo, 2)
+    apretadas += 1
+notes.append(f"adentro: {apretadas} piezas con renglones/sello apretados para que se vean enteros")
 lost = [n for n in notes if n.startswith("pieza")]
 
 reel = os.path.exists(PUB + f"av/{SL}/reel0.mp4")

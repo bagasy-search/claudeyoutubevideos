@@ -109,11 +109,13 @@ export const BigNum: React.FC<{ t: number; at: number; text: string; x?: number;
   const k = spr(t, at, 0.9), o = e(t, at, at + 0.1) * (1 - e(t, out, out + 0.3));
   if (o <= 0.01) return null;
   const ry = (1 - Math.min(1, k)) * -70 + Math.sin((t - at) * 0.9) * 6;
+  const bw = Math.max(text.length * size * 0.66, sub ? sub.length * Math.max(46, size * 0.2) * 0.66 : 0) / 2 + 40;  // que el número y su renglón entren enteros en el cuadro
+  x = Math.max(bw, Math.min(1920 - bw, x));
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: "translate(-50%,-50%)", perspective: 1200, opacity: o }}>
       <div style={{ transform: `translateZ(${(1 - Math.min(1, k)) * -900}px) rotateY(${ry}deg) rotateX(6deg)`, fontFamily: FONT, fontWeight: 900, fontSize: size, color: col, lineHeight: 1, textShadow: extrude(16, edge), textAlign: "center", whiteSpace: "nowrap" }}>
         {text}
-        {sub && <div style={{ fontSize: size * 0.2, fontWeight: 800, letterSpacing: 8, color: COL.dim, textShadow: extrude(4, "#000") }}>{sub}</div>}
+        {sub && <div style={{ fontSize: Math.max(46, size * 0.2), fontWeight: 800, letterSpacing: 4, marginTop: 10, color: "#f3e9d8", textShadow: "0 3px 0 #000, 0 6px 18px rgba(0,0,0,.85)" }}>{sub}</div>}
       </div>
     </div>
   );
@@ -204,7 +206,7 @@ export const Chips: React.FC<{ t: number; at: number; items: string[]; out: numb
     {items.map((it, i) => {
       const a = at + i * 0.17, k = Math.min(1.1, spr(t, a)), o = e(t, a, a + 0.1) * (1 - e(t, out + i * 0.05, out + i * 0.05 + 0.25));
       return (
-        <div key={i} style={{ opacity: o, transform: `translateY(${(1 - Math.min(1, k)) * 120}px) rotateX(${(1 - Math.min(1, k)) * 70}deg) rotateY(${(i - 1.5) * -6}deg)`, width: 210, padding: "18px 0 14px", borderRadius: 18,
+        <div key={i} style={{ opacity: o, transform: `translateY(${(1 - Math.min(1, k)) * 120}px) rotateX(${(1 - Math.min(1, k)) * 70}deg) rotateY(${(i - 1.5) * -6}deg)`, minWidth: 210, padding: "18px 24px 14px", boxSizing: "border-box", borderRadius: 18,
           background: "linear-gradient(180deg, rgba(20,32,52,.95), rgba(10,16,28,.95))", boxShadow: `0 26px 50px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.18), 0 0 0 2px ${COL.ice}55`, textAlign: "center", fontFamily: FONT }}>
           <div style={{ fontWeight: 900, fontSize: 84, color: COL.ice, lineHeight: 1, textShadow: extrude(6, "#0a2a40") }}>{i + 1}</div>
           <div style={{ fontWeight: 800, fontSize: 24, color: COL.ink, letterSpacing: 4, marginTop: 6 }}>{it}</div>

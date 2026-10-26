@@ -364,7 +364,7 @@ export const Quote: React.FC<{ t: number; at: number; out: number; text: string;
   return (
     <div style={{ position: "absolute", left: x - w / 2, top: y - 200, width: w, opacity: o, fontFamily: FONT }}>
       <div style={{ ...card, padding: "50px 64px", transform: `scale(${0.94 + 0.06 * K(spr(t, at))})` }}>
-        <div style={{ position: "absolute", left: 30, top: -30, fontSize: 200, color: AMB, fontWeight: 900, lineHeight: 1 }}>“</div>
+        <div style={{ position: "absolute", left: 36, top: -118, fontSize: 200, color: AMB, fontWeight: 900, lineHeight: 1, textShadow: "0 6px 18px rgba(0,0,0,.45)" }}>“</div>
         <div style={{ fontSize: 62, fontWeight: 800, color: COL.ink, lineHeight: 1.18 }}>
           {words.map((wd, i) => <span key={i} style={{ opacity: e(t, at + 0.2 + (i / words.length) * dur, at + 0.35 + (i / words.length) * dur) }}>{wd} </span>)}
         </div>

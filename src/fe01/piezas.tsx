@@ -91,7 +91,7 @@ export const PriceGuide: React.FC<{ t: number; at: number; gAt: number; out: num
 export const Stamp: React.FC<{ t: number; at: number; out: number; text: string; x: number; y: number; rot?: number; size?: number; col?: string }> = ({ t, at, out, text, x, y, rot = -9, size = 110, col = COL.red }) => {
   const k = spr(t, at, 1.3), o = e(t, at, at + 0.06) * (1 - e(t, out, out + 0.25));
   if (o <= 0.01) return null;
-  const hw = (text.length * size * 0.7 + 80) / 2 * Math.cos(rot * Math.PI / 180) + 30;  // que el sello entero quede adentro del cuadro
+  const hw = (text.length * size * 0.84 + 80) / 2 * Math.cos(rot * Math.PI / 180) + 60;  // que el sello entero quede adentro del cuadro
   x = Math.max(hw, Math.min(1920 - hw, x));
   return (
     <div style={{ position: "absolute", left: x, top: y, opacity: o, transform: `translate(-50%,-50%) rotate(${rot}deg) scale(${2.4 - 1.4 * Math.min(1, k)})` }}>

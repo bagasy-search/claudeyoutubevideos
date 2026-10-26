@@ -42,13 +42,13 @@ export const Ficha: React.FC<{ t: number; at: number; out: number; kicker?: stri
           </svg>
           {/* luz cálida de abajo que parpadea */}
           <div style={{ position: "absolute", inset: 0, background: `linear-gradient(0deg, rgba(255,170,70,${0.3 * f}) 0%, rgba(255,170,70,0) 55%)`, mixBlendMode: "soft-light" }} />
-          <div style={{ position: "absolute", left: 0, right: 0, top: h * 0.13, textAlign: "center", color: "#3c3125" }}>
+          <div style={{ position: "absolute", left: 0, right: 0, top: h * (dato ? 0.13 : 0.19), textAlign: "center", color: "#3c3125" }}>
             <div style={{ fontFamily: SERIF_GRAB, fontWeight: 700, fontSize: w * 0.06, letterSpacing: w * 0.012, opacity: lt }}>✝</div>
-            {kicker && <div style={{ fontFamily: SERIF_GRAB, fontWeight: 700, fontSize: w * 0.042, letterSpacing: w * 0.008, marginTop: 6, opacity: lt }}>{kicker}</div>}
+            {kicker && <div style={{ fontFamily: SERIF_GRAB, fontWeight: 700, fontSize: w * 0.04, letterSpacing: w * 0.006, marginTop: 6, padding: `0 ${w * 0.13}px`, opacity: lt }}>{kicker}</div>}
             <div style={{ height: 3, width: w * 0.5 * lt, background: "#5d4e38", margin: `${w * 0.03}px auto`, opacity: 0.6 }} />
             <div style={{ fontFamily: SERIF_GRAB, fontWeight: 900, fontSize: w * 0.075, lineHeight: 1.12, padding: `0 ${w * 0.1}px`,
               textShadow: "0 -1px 0 rgba(0,0,0,.35), 0 1.5px 0 rgba(255,255,255,.45)", opacity: e(t, at + 0.5, at + 1.0) }}>{title}</div>
-            {dato && <div style={{ fontFamily: SERIF_GRAB, fontWeight: 900, fontSize: w * 0.2, lineHeight: 1, marginTop: w * 0.05, color: "#2e251b",
+            {dato && <div style={{ fontFamily: SERIF_GRAB, fontWeight: 900, fontSize: Math.min(w * 0.2, (w * 0.8) / (Math.max(...dato.split(" ").map((p) => p.length)) * 0.66), dato.length > 9 ? w * 0.12 : 1e9), lineHeight: 1.02, marginTop: w * 0.035, padding: `0 ${w * 0.06}px`, color: "#2e251b",
               textShadow: "0 -2px 0 rgba(0,0,0,.4), 0 2px 0 rgba(255,255,255,.5)", transform: `scale(${0.9 + 0.1 * K(spr(t, at + 1.0, 0.9))})`, opacity: e(t, at + 0.95, at + 1.3) }}>{dato}</div>}
             {sub && <div style={{ fontFamily: SERIF, fontWeight: 600, fontStyle: "italic", fontSize: w * 0.05, marginTop: w * 0.05, padding: `0 ${w * 0.1}px`, opacity: e(t, at + 1.4, at + 1.8) }}>{sub}</div>}
           </div>
@@ -109,7 +109,7 @@ export const Mapa: React.FC<{ t: number; at: number; out: number; city?: "gdl" |
     {line([[860, 120], [520, 470], [380, 900]], at + 0.3, "#d8cdb8", 9)}
     {line([[100, 250], [520, 470], [900, 760]], at + 0.4, "#d8cdb8", 9)}
     {line([[100, 520], [520, 470]], at + 0.5, "#a99e8a", 6)}
-    <text x={810} y={150} fill="#d8cdb8" fontSize={28} fontFamily={FONT} fontWeight={800} opacity={draw(at + 0.9)}>I-35</text>
+    <text x={878} y={132} fill="#d8cdb8" fontSize={28} fontFamily={FONT} fontWeight={800} opacity={draw(at + 0.9)}>I-35</text>
     <text x={110} y={240} fill="#d8cdb8" fontSize={28} fontFamily={FONT} fontWeight={800} opacity={draw(at + 0.9)}>I-10</text>
     <text x={800} y={300} fill={FE.cempa} fontSize={28} fontFamily={FONT} fontWeight={800} opacity={draw(at + 0.9)}>LOOP 410</text>
   </>;
@@ -146,7 +146,7 @@ export const Recibo: React.FC<{ t: number; at: number; out: number; title: strin
   const k = K(spr(t, at, 0.8));
   return (
     <div style={{ position: "absolute", left: x - w / 2, top: y - 330, width: w, opacity: o, transform: `perspective(1600px) rotateX(${(1 - k) * 25}deg) rotate(${rot + (1 - k) * -6}deg) translateY(${(1 - k) * 120}px)` }}>
-      <div style={{ background: `linear-gradient(180deg, ${FE.papel}, #e9dfc6)`, borderRadius: 6, padding: "44px 56px 50px", boxShadow: "0 40px 90px rgba(0,0,0,.6), 0 2px 0 rgba(255,255,255,.6) inset", position: "relative", color: FE.tinta }}>
+      <div style={{ background: `linear-gradient(180deg, ${FE.papel}, #e9dfc6)`, borderRadius: 6, padding: `44px 56px ${sello ? 150 : 50}px`, boxShadow: "0 40px 90px rgba(0,0,0,.6), 0 2px 0 rgba(255,255,255,.6) inset", position: "relative", color: FE.tinta }}>
         <div style={{ borderBottom: `3px double ${FE.tinta}`, paddingBottom: 14 }}>
           {folio && <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 24, letterSpacing: 2, color: FE.rojo, marginBottom: 6 }}>{folio}</div>}
           <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 46, lineHeight: 1.1 }}>{title}</div>
@@ -157,12 +157,12 @@ export const Recibo: React.FC<{ t: number; at: number; out: number; title: strin
             <span style={{ opacity: tq > 0.5 ? 0.55 : 1 }}>{r.tx}</span><span style={{ fontWeight: 900, opacity: tq > 0.5 ? 0.55 : 1 }}>{r.v ?? ""}</span>
             {tq > 0 && <svg width={w - 112} height={40} style={{ position: "absolute", left: -6, top: 20, overflow: "visible" }}>
               <path d={`M0,22 C${(w - 112) * 0.3},10 ${(w - 112) * 0.6},30 ${(w - 112) * tq},16`} stroke={FE.rojo} strokeWidth={6} fill="none" strokeLinecap="round" /></svg>}
-            {okq > 0 && <div style={{ position: "absolute", right: 150, top: 0, fontFamily: MANO, fontSize: 60, color: "#1f7a3a", transform: `scale(${okq})` }}>✓</div>}
+            {okq > 0 && <div style={{ position: "absolute", left: -50, top: 2, fontFamily: MANO, fontSize: 60, color: "#1f7a3a", transform: `scale(${okq})` }}>✓</div>}
           </div>;
         })}
         {total && <div style={{ display: "flex", justifyContent: "space-between", fontFamily: SERIF, fontWeight: 900, fontSize: 48, marginTop: 22, opacity: e(t, total.at, total.at + 0.3) }}>
           <span>{total.tx}</span><span style={{ color: FE.rojo }}>{total.v}</span></div>}
-        {sello && t >= sello.at && <div style={{ position: "absolute", left: 300, bottom: 30, transform: `rotate(-12deg) scale(${1.6 - 0.6 * K(spr(t, sello.at, 1.3))})`, opacity: e(t, sello.at, sello.at + 0.08) * 0.85,
+        {sello && t >= sello.at && <div style={{ position: "absolute", right: 60, bottom: 34, transform: `rotate(-8deg) scale(${1.6 - 0.6 * K(spr(t, sello.at, 1.3))})`, opacity: e(t, sello.at, sello.at + 0.08) * 0.85,
           border: `6px solid ${FE.rojo}`, borderRadius: 14, padding: "10px 26px", fontFamily: FONT, fontWeight: 900, fontSize: 52, letterSpacing: 4, color: FE.rojo }}>{sello.tx}</div>}
       </div>
     </div>
@@ -172,7 +172,7 @@ export const Recibo: React.FC<{ t: number; at: number; out: number; title: strin
 // ---------- 4. CALENDARIO DEL REFRENDO: los años pasan en fichas, el último se encierra en rojo ----------
 export const Refrendo: React.FC<{ t: number; at: number; out: number; from: number; years: number; venceAt?: number; title?: string; label?: string; x?: number; y?: number }> = ({ t, at, out, from, years, venceAt, title = "Fosa temporal", label = "VENCE · REFRENDO", x = 960, y = 560 }) => {
   const o = vis(t, at, out); if (o <= 0.01) return null;
-  const k = K(spr(t, at, 0.8)), n = years + 1, run = venceAt ? venceAt - at - 0.6 : 2.6;
+  const k = K(spr(t, at, 0.8)), n = years + 1, run = Math.min(venceAt ? venceAt - at - 0.6 : 2.6, out - at - 1.6);
   const lit = Math.floor(e(t, at + 0.5, at + 0.5 + Math.max(1, run)) * n + 0.0001);
   const tw = Math.min(150, 1500 / n);
   const vq = venceAt ? K(spr(t, venceAt, 1)) : 0;
@@ -233,7 +233,7 @@ export const Capitulo: React.FC<{ t: number; at: number; out: number; n: string;
     <div style={{ position: "absolute", inset: 0, opacity: o, fontFamily: FONT }}>
       <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 30% 55%, rgba(15,10,6,.25), rgba(12,9,6,.85) 70%)" }} />
       <div style={{ position: "absolute", left: 120, top: 210, width: 470, height: 620, background: `radial-gradient(ellipse at 50% 60%, rgba(255,180,80,${0.28 * f}), rgba(255,140,40,0) 65%)` }} />
-      <div style={{ position: "absolute", left: 150, top: 240, fontFamily: SERIF, fontSize: 500, fontWeight: 900, lineHeight: 1, color: FE.cempa, textShadow: extrude(12, "#6b3a08"), transform: `translateX(${(1 - k) * -140}px) scale(${0.82 + 0.18 * k})`, transformOrigin: "left center" }}>{n}</div>
+      <div style={{ position: "absolute", left: n.length > 1 ? 90 : 150, top: n.length > 1 ? 320 : 240, fontFamily: SERIF, fontSize: n.length > 1 ? 370 : 500, fontWeight: 900, lineHeight: 1, color: FE.cempa, textShadow: extrude(12, "#6b3a08"), transform: `translateX(${(1 - k) * -140}px) scale(${0.82 + 0.18 * k})`, transformOrigin: "left center" }}>{n}</div>
       <div style={{ position: "absolute", left: 640, top: 380, width: 1150 }}>
         <div style={{ fontSize: 34, fontWeight: 800, letterSpacing: 10, color: FE.dim, opacity: k2 }}>{kicker} {n}</div>
         <div style={{ height: 5, width: 860 * k2, background: FE.cempa, margin: "18px 0 22px", borderRadius: 3 }} />
@@ -251,7 +251,7 @@ export const Dicho: React.FC<{ t: number; at: number; out: number; text: string;
   return (
     <div style={{ position: "absolute", left: x - w / 2, top: y - 210, width: w, opacity: o, transform: `rotate(${-1.2 + (1 - k) * -4}deg) scale(${0.92 + 0.08 * k})` }}>
       <div style={{ background: `linear-gradient(180deg, ${FE.papel}, #e6dabd)`, padding: "54px 70px 46px", borderRadius: 6, boxShadow: "0 40px 90px rgba(0,0,0,.6)", position: "relative" }}>
-        <div style={{ position: "absolute", left: 26, top: -40, fontFamily: SERIF, fontSize: 210, color: FE.cempa, fontWeight: 900, lineHeight: 1 }}>“</div>
+        <div style={{ position: "absolute", left: 34, top: -128, fontFamily: SERIF, fontSize: 210, color: FE.cempa, fontWeight: 900, lineHeight: 1, textShadow: "0 6px 18px rgba(0,0,0,.45)" }}>“</div>
         <div style={{ fontFamily: MANO, fontWeight: 700, fontSize: 80, color: "#2b2418", lineHeight: 1.1 }}>
           {words.map((wd, i) => <span key={i} style={{ opacity: e(t, at + 0.2 + (i / words.length) * dur, at + 0.35 + (i / words.length) * dur) }}>{wd} </span>)}
         </div>
