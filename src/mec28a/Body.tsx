@@ -1,4 +1,4 @@
-// al28c (desde al28b) · EL VIDEO ENTERO (locución 0 → final). Un solo mundo (la pared de azulejos de la cocina de Doña Marta y la pared gigante en corte)
+// mec28a · EL VIDEO ENTERO (locución 0 → final). Un solo mundo (el garaje de Claudio con el auto y el banco)
 // y una sola cámara; el avatar entra y sale con corte seco; las fotos/clips entran por tramos (plan.json, cada uno
 // anclado a su frase); las piezas también vienen de plan.json (piezas.py → frase del ASR). Audio fuera de Remotion (encfin).
 import React from "react";
@@ -44,7 +44,7 @@ const CTA: React.FC<{ t: number; c: Cta; manual: string; img: string; pageTxt: s
   const pag = (pageTxt.match(/PÁG\.\s*\d+/) ?? [""])[0];
   const side = avOn(c.desc, c.end) && c.page === undefined;
   return <>
-    {c.guide !== undefined && <Chip t={t} at={c.guide} out={(c.book ?? c.page ?? c.desc) - 0.15} text="LA COLECCIÓN DEL HUERTO DE CLAUDIO · LIBRO 3" />}
+    {c.guide !== undefined && <Chip t={t} at={c.guide} out={(c.book ?? c.page ?? c.desc) - 0.15} text="LA GUÍA DE CLAUDIO MECÁNICO" />}
     {c.book !== undefined && <Chip t={t} at={c.book} out={(c.page ?? c.desc) - 0.15} text={manual} col="ice" />}
     {c.page !== undefined && <GuidePage t={t} at={c.page} out={c.desc - 0.2} img={img} tag={[manual.split("·")[0].trim(), pag].filter(Boolean).join(" · ")} />}
     <Desc t={t} at={c.desc} out={c.end - 0.3} x={side ? 440 : 960} y={side ? 880 : 640} scale={side ? 0.56 : 0.8} />
@@ -110,7 +110,7 @@ export const Body: React.FC = () => {
   return <AbsoluteFill style={{ background: "#000" }}>
     {/* cámara a mano virtual (balanceo lento, no temblor) sobre todo lo que se filma: mundo, fotos, clips y avatar */}
     <CamaraMano intensidad={0.8}><Stage t={t} /></CamaraMano>
-    <LowerThird t={t} at={PL.txt.lower[0]} out={PL.txt.lower[1]} name="CLAUDIO" l2="EL HUERTO DE CLAUDIO · EL PATIO" l2at={PL.txt.lower[0] + 1} />
+    <LowerThird t={t} at={PL.txt.lower[0]} out={PL.txt.lower[1]} name="CLAUDIO" l2="CLAUDIO MECÁNICO · 30 AÑOS EN EL TALLER" l2at={PL.txt.lower[0] + 1} />
     <CTA t={t} c={PL.cta1} manual={PL.cta1.manual ?? ""} img={PL.cta1.img ?? ""} pageTxt={PL.cta1.pageTxt ?? ""} />
     <CTA t={t} c={PL.cta2} manual={PL.cta2.manual ?? ""} img={PL.cta2.img ?? ""} pageTxt={PL.cta2.pageTxt ?? ""} />
     <CTA t={t} c={PL.cta3} manual="" img="" pageTxt="" />
