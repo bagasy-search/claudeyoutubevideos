@@ -118,7 +118,7 @@ export const HNotes: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} 
     <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(rgba(0,0,0,.18) 2px, transparent 2.5px)", backgroundSize: "14px 14px" }} />
     <div style={{ position: "absolute", left: 110, top: 80, fontFamily: MARK, fontSize: 70, color: "#2a1c0e" }}>Lo que la abuela NUNCA hacía</div>
     {N.map((n, i) => { const s = phys(tt, n.at - h.at, 6, 0.38), x = 400 + i * 560, r = [-5, 3, -2][i];
-      return <div key={i} style={{ position: "absolute", left: x - 230, top: 300, width: 460, height: 420, background: C[i], transform: `rotate(${r + (1 - cl(s)) * 20}deg) translateZ(0) scale(${1 + (1 - cl(s)) * 0.5})`, opacity: cl(s * 4), boxShadow: `${12 * cl(s)}px ${30 * cl(s)}px ${40 - 20 * cl(s)}px rgba(0,0,0,.45)`, padding: "70px 40px", fontFamily: HAND, fontWeight: 700, fontSize: 62, lineHeight: 1.05, color: "#2a2016" }}>
+      return <div key={i} style={{ position: "absolute", left: x - 230, top: 300, width: 460, height: 420, background: C[i], transform: `rotate(${r + (1 - cl(s)) * 20}deg) scale(${1 + (1 - cl(s)) * 0.5})`, opacity: cl(s * 4), boxShadow: `${12 * cl(s)}px ${30 * cl(s)}px ${40 - 20 * cl(s)}px rgba(0,0,0,.45)`, padding: "70px 40px", fontFamily: HAND, fontWeight: 700, fontSize: 62, lineHeight: 1.05, color: "#2a2016" }}>
         <div style={{ position: "absolute", left: 205, top: 14, width: 48, height: 48, borderRadius: 24, background: `radial-gradient(circle at 35% 35%, #ff8a7a, ${RED})`, boxShadow: "0 6px 10px rgba(0,0,0,.4)" }} />
         {n.l}
       </div>; })}
