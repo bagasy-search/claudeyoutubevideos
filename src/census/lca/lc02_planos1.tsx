@@ -10,7 +10,7 @@ import { Calendario, Globo, Pildora } from "../../anikit/pantalla";
 import { Carrito, Celular, Lata } from "../../anikit/props";
 import { Cocina, COCINA_PISO, COCINA_PUNTOS, Silla } from "../../anikit/sets/cocina";
 import { SUPER_PISO, SUPER_PUNTOS } from "../../anikit/sets/super";
-import { alcanzar, Look, Pose } from "../../anikit/personaje";
+import { alcanzar, Look, Pose, POSES } from "../../anikit/personaje";
 import { AMBAR, BORDE_CALIDO, BORDE_FRIO, JUNE, JUNE_INV, PAL, THEO, THEO_CASA, THEO_INV } from "../elenco";
 import { FRIO } from "../hud";
 import { NieveCae } from "../mundo/comun";
@@ -23,7 +23,7 @@ import { CuadernoGrande, CuadernoMano, kDe, Pj as PjBase } from "./base";
 import { Manta, Motosierra, Pino, Tablas, Termometro } from "./lc02_props";
 import {
   A_COLCHON, A_CUCLI, A_SILLA, A_SUELO, Aliento, AlarmaCO, aPantalla, Aserrin, BarraPower, CasaSeccion, Chispas, cl, CUCLI,
-  EscarchaR, EscenaL, EtiquetaObj, HumoChim, io, Lenio, ManoGuante, MarcoPeli, MedidorPPM,
+  EscarchaR, EscenaL, EtiquetaObj, HumoChim, io, Lenio, MarcoPeli, MedidorPPM,
   MantaVano, PlasticoVentana, pomo, Poste, Precio, Puerta, PuertaEstufa, RelojHielo, Rodajas, SENT, SUELO, Texto, Tic, Ventisca,
 } from "./lc02_planos1_comp";
 import { CalPared as CalParedE, Cota as CotaE, NotaReglas as NotaReglasE, PilaLena as PilaLenaE, puntaNota as puntaNotaE, RolloCinta as RolloCintaE, Rotulo3 as Rotulo3E, Servicio as ServicioE, TextoBarrido as TextoBarridoE, THEO_LINIERO as THEO_LINIERO_E, Tira90 as Tira90E, VeloRecuerdo as VeloRecuerdoE } from "./v3e_v3"; // v3e (P01-P20): alias con sufijo E para no chocar con v3f
@@ -32,6 +32,7 @@ import { altoPila, BolsaDormir2, CanioPared, GasNube, Palotes, PilaLena, Rot, Vo
 import { FilaCuerdas as FilaCuerdasE4, HumoSierra as HumoSierraE4, LenaLiv as LenaLivE4, SierraViva as SierraVivaE4, Subtomas as SubtomasE4, SuperOscuro as SuperOscuroE4 } from "./v4e_v4"; // v4e (P01-P20)
 import { Beep, Botas, CanioHollin, EscarchaCanio, Rama, SubFundido, TapaAlarma, TarjetaRopaV4, TermoPoste } from "./v4f_v4"; // v4f (P21-P40)
 import { golpe } from "../../anikit/camara"; // v4f
+import { FundidoSuave as FundidoV5, Linterna as LinternaV5, Miton as MitonV5, RotuloV5 } from "./v5a_v5"; // v5a (P03-P40)
 
 const P = LIV_PISO;
 const B = BARRIO_PISO;
@@ -119,15 +120,17 @@ export const P03Termo: React.FC = () => {
   const f = useF();
   const k = kDe(2.98);
   const tw = ramp(f, k(3.0), k(4.0)); // avance de la limpieza
-  const pts = Array.from({ length: 24 }).map((_, i) => i / 23).filter((t) => t <= tw).map((t) => ({ x: 1240 + 150 * Math.cos(t * Math.PI * 4 + 1), y: 560 + 230 * Math.sin(t * Math.PI * 4 + 1) * (0.6 + 0.4 * t) }));
-  const m = pts[pts.length - 1] ?? { x: 1500, y: 900 };
+  // v5a: el hueco limpio es un óvalo prolijo que crece con la pasada (antes: 24 círculos = una mancha con forma de arbusto)
+  const hx = 1240, hy = 560, hrx = 40 + 190 * tw, hry = 60 + 290 * tw;
+  const aM = tw * Math.PI * 4 + 1;
+  const m = tw > 0 ? { x: hx + hrx * 0.78 * Math.cos(aM), y: hy + hry * 0.78 * Math.sin(aM) } : { x: 1500, y: 900 };
   // v3e: después de limpiar, el guante golpea DOS veces el vidrio junto al termómetro y se va
   const tap = (q: number) => Math.max(0, Math.sin(Math.PI * ramp(q, k(4.38), k(4.58)))) + Math.max(0, Math.sin(Math.PI * ramp(q, k(4.62), k(4.82))));
-  const mano = f < k(4.3) ? { x: m.x + 40, y: m.y + 40 } : f < k(4.88) ? { x: interpolate(f, [k(4.3), k(4.38)], [m.x + 40, 1330], cl) + 26 * tap(f), y: interpolate(f, [k(4.3), k(4.38)], [m.y + 40, 640], cl) + 10 * tap(f) } : { x: interpolate(f, [k(4.88), k(5.2)], [1330, 1900], cl), y: interpolate(f, [k(4.88), k(5.2)], [640, 1300], cl) };
+  const mano = f < k(4.3) ? { x: m.x + 40, y: m.y + 40 } : f < k(4.88) ? { x: interpolate(f, [k(4.3), k(4.42)], [m.x + 40, 1440], cl) + 26 * tap(f), y: interpolate(f, [k(4.3), k(4.42)], [m.y + 40, 700], cl) + 10 * tap(f) } : { x: interpolate(f, [k(4.88), k(5.2)], [1440, 1900], cl), y: interpolate(f, [k(4.88), k(5.2)], [700, 1300], cl) };
   return (
     <AbsoluteFill style={{ background: "linear-gradient(#c6d1e3, #e2e8f2)" }}>
       <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}>
-        <defs><mask id="p03m"><rect x={0} y={0} width={1920} height={1080} fill="#fff" />{pts.map((p, i) => <circle key={i} cx={p.x} cy={p.y} r={120} fill="#000" />)}</mask></defs>
+        <defs><mask id="p03m"><rect x={0} y={0} width={1920} height={1080} fill="#fff" />{tw > 0 && <ellipse cx={hx} cy={hy} rx={hrx} ry={hry} fill="#000" />}</mask></defs>
         {/* afuera: la calle helada, gris de mediodía nublado (sin manchas oscuras detrás del termómetro) */}
         <rect x={0} y={790} width={1920} height={290} fill="#dfe6f2" />
         {Array.from({ length: 9 }).map((_, i) => <rect key={i} x={i * 230 - 40} y={720 - ((i * 53) % 60)} width={190} height={80 + ((i * 53) % 60)} fill="#8e98b0" />)}
@@ -136,10 +139,12 @@ export const P03Termo: React.FC = () => {
         <Termometro temp={interpolate(f, [k(3.0), k(3.4)], [-12, -28], cl)} x={1240} y={560} />
         {/* la escarcha, con el hueco que deja la mano */}
         <g mask="url(#p03m)"><rect x={0} y={0} width={1920} height={1080} fill="#d8e4f6" opacity={0.78} /><EscarchaR x={0} y={0} w={1920} h={1080} o={0.9} /></g>
+        {/* v5a: borde de escarcha del hueco (anillo blanco nítido, sin desenfoque) */}
+        {tw > 0 && <g fill="none"><ellipse cx={hx} cy={hy} rx={hrx} ry={hry} stroke="#f4f8ff" strokeWidth={14} opacity={0.75} /><ellipse cx={hx} cy={hy} rx={hrx + 12} ry={hry + 12} stroke="#ffffff" strokeWidth={4} opacity={0.5} strokeDasharray="22 14" /></g>}
         {/* marco de la ventana */}
         <path d="M0,0 H1920 V1080 H0 Z M70,70 V1010 H1850 V70 Z" fill="#e8d9b5" fillRule="evenodd" />
         <rect x={810} y={70} width={24} height={940} fill="#e8d9b5" />
-        <ManoGuante x={mano.x} y={mano.y} ang={-28} manga="#2f7f86" />
+        <MitonV5 x={mano.x} y={mano.y} ang={-28} manga="#2f7f86" />
       </svg>
       <Texto x={440} y={420} desde={k(3.2)} tam={170} color="#eaf6ff" peso={600}>−28°F</Texto>
       <Texto x={440} y={630} desde={k(3.4)} tam={44} color="#eaf6ff">OUTSIDE · AT NOON</Texto>
@@ -299,11 +304,14 @@ export const P08Comida: React.FC = () => {
   const lata1 = f > suelta + 2;
   return (
     <AbsoluteFill>
-      <EscenaL Set={SuperOscuroE4} pal={PAL} claves={[mira(0, 2000, SP - 356, 1.22), mira(k(20.0), 2030, SP - 356, 1.24, { curva: "inout" }), mira(k(21.2), 2000, SP - 366, 1.2, { curva: "inout" })]} seed={8} setProps={{}}
+      <EscenaL Set={SuperOscuroE4} pal={PAL} claves={[mira(0, 2000, SP - 416, 1.15), mira(k(20.0), 2030, SP - 416, 1.17, { curva: "inout" }), mira(k(21.2), 2000, SP - 422, 1.14, { curva: "inout" })]} /* v5a: góndolas más abajo → techo libre para los textos */ seed={8} setProps={{}}
         detras={<>
           {/* luz fría de la vidriera (izquierda) en el piso y el aire */}
           <Haces x={900} y={SP - 760} ang={-38} largo={1500} n={4} ancho={110} color="#9fb4d8" fuerza={0.1} f={f} seed={8} />
           <Halo x={1300} y={SP - 60} r={900} color="#8aa2c8" fuerza={0.22} />
+          {/* v5a: viga oscura del techo (tapa la franja de carteles del fondo): zona lisa para la tira de 90 días */}
+          <rect x={-3000} y={SP - 820} width={9000} height={128} fill="#151926" />
+          <rect x={-3000} y={SP - 696} width={9000} height={6} fill="#2a3044" />
         </>}
         medio={<>
           <Carrito x={cx(f)} y={SP} lleno={lata1 ? 0.4 : 0.3} rueda={f} />
@@ -319,8 +327,8 @@ export const P08Comida: React.FC = () => {
             ajuste={ik("D", (q) => entre(q, k(18.8), toma + 4) ? { x: 140, y: -150 } : entre(q, k(19.55), suelta + 2) ? { x: 84, y: -158 } : entre(q, k(20.4), toma2 + 4) ? { x: 140, y: -150 } : null)}
             enManoD={(q: number) => (q > toma && q < suelta) || q > toma2 ? <Lata color="#c0352c" /> : null} luz={BORDE_FRIO} />
         </>} />
-      <Rotulo3E texto="A CITY FULL OF FOOD" x={1180} y={96} desde={k(19.1)} hasta={k(20.6)} color={AMBAR} tam={42} />
-      <AbsoluteFill style={{ transform: "scale(0.66)", transformOrigin: "50% 92px" }}><Tira90E x={1060} y={92} desde={mira90} prog={ramp(f, k(20.9), k(22.6))} /></AbsoluteFill>
+      <RotuloV5 texto="A CITY FULL OF FOOD" x={1100} y={118} desde={k(19.1)} hasta={k(20.6)} color={AMBAR} tam={42} />
+      <AbsoluteFill style={{ transform: "scale(0.74)", transformOrigin: "1100px 118px" }}><Tira90E x={1100} y={118} desde={mira90} prog={ramp(f, k(20.9), k(22.6))} /></AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -439,7 +447,7 @@ export const P11Puertas: React.FC = () => {
 export const P12Plastico: React.FC = () => {
   const f = useF();
   const k = kDe(39.4);
-  const c = k(41.35);
+  const c = k(41.14); // v5a: el corte en «and» (el cuadro mid ya no cae en el fundido)
   const cae = ramp(f, k(39.84), k(40.6), 0.6, 1);
   // v4e: corte interno con fundido de 6 cuadros; pila de troncos de verdad; la toma del plástico es un medio a June +
   // ventana (zoom 1,4: June ~40 % del alto) y la píldora va en la pared a la izquierda, lejos del marco
@@ -462,7 +470,7 @@ export const P12Plastico: React.FC = () => {
   const yC = V.y + V.h + 34 - P - 18;
   const alisa = ramp(f, k(43.12), k(43.5));
   const tomaB = () => (
-    <EscenaL Set={Living} pal={PAL} claves={[mira(c, 1290, 556, 1.4), mira(k(43.5), 1310, 560, 1.42, { curva: "inout" })]} seed={12} setProps={{ ...LIV_INV, plastico: false, hora: "tormenta", lena: 0 }}
+    <EscenaL Set={Living} pal={PAL} claves={[mira(c, 1290, 556, 1.4), mira(k(42.9), 1300, 560, 1.42, { curva: "inout" }), mira(k(43.4), 1480, 660, 1.65, { curva: "inout" })]} seed={12} setProps={{ ...LIV_INV, plastico: false, hora: "tormenta", lena: 0 }}
       medio={<>
         <PlasticoVentana V={V} prog={prog} cintas={cin} f={f} />
         <Pj look={JUNE_INV} ruta={[{ f: 0, x: 965, y: P }, { f: k(42.42), x: 965 }, { f: k(42.9), x: 1620 }]}
@@ -471,9 +479,9 @@ export const P12Plastico: React.FC = () => {
           ajuste={ik("D", (q) => entre(q, k(42.1), k(42.45)) ? { x: V.x - 34 - 965 + 40, y: yC } : entre(q, k(42.88), k(43.1)) ? { x: 1620 - (V.x + V.w + 34 - 40), y: yC } : q < k(43.12) ? { x: 60, y: -160 } : { x: 1620 - (V.x + V.w - 20) + 120 * alisa, y: -330 - 40 * Math.sin(alisa * Math.PI * 2) })}
           enManoD={(q: number) => q < k(43.12) ? <RolloCintaE /> : null} />
       </>}
-      hud={<Pildora texto="PLASTIC ON THE WINDOWS" x={362} y={300} desde={k(41.78)} color={AMBAR} tam={28} />} />
+      hud={<Pildora texto="PLASTIC ON THE WINDOWS" x={420} y={300} desde={k(41.78)} hasta={k(42.8)} color={AMBAR} tam={28} />} />
   );
-  return <SubtomasE4 f={f} cortes={[c]} tomas={[tomaA, tomaB]} />;
+  return <FundidoV5 c={c} a={tomaA()} b={tomaB()} />; // v5a: fundido 8 en seno
 };
 
 // ---------- 13 · no se calienta una casa: se calienta un cuarto ----------
@@ -585,7 +593,7 @@ export const P16Cuerdas: React.FC = () => {
   // v3e: el MUNDO a escala (casa 520 px, Theo 307 px, 1 cuerda = 418 × 209 px = 8 × 4 ft): Theo deja su leño en su pilita
   // y aparecen 3 cuerdas de verdad en fila; arriba las 3 que pueden faltar (fantasma); él mira y se rasca la cabeza
   const suelta = k(63.5);
-  const claves = [mira(0, 2050, B - 330, 1.12), mira(k(64.55), 2080, B - 330, 1.12, { curva: "inout" }), mira(k(65.3), 2790, B - 420, 0.98, { curva: "inout" })];
+  const claves = [mira(0, 2280, B - 300, 1.32), mira(k(64.55), 2250, B - 310, 1.34, { curva: "inout" }), mira(k(65.3), 2790, B - 400, 0.98, { curva: "inout" })]; // v5a: Theo más grande en ini/mid
   const PX0 = 2330, CW = 418, CH = 209;
   return (
     <AbsoluteFill>
@@ -595,18 +603,17 @@ export const P16Cuerdas: React.FC = () => {
           <PilaLenaE x={1880} piso={B} w={240} h={70 + (f > suelta + 6 ? 8 : 0)} prog={1} seed={9} estacas={false} />
           {[0, 1, 2].map((i) => <PilaLenaE key={i} x={PX0 + i * CW} piso={B} w={CW} h={CH} prog={ramp(f, tres + i * 4, tres + i * 4 + 10)} seed={i} num={`${i + 1}`} prof={i === 2 ? 70 : 0} />)}
           <Pj look={THEO_INV} ruta={[{ f: 0, x: 2560, y: B }, { f: k(63.3), x: 2240 }]} dir={[{ f: 0, v: -1 }, { f: k(64.6), v: 1 }]}
-            poses={[{ f: 0, v: "parado" }, { f: suelta, v: "agacharse" }, { f: k(64.0), v: "manosCintura" }, { f: tres, v: "parado" }]}
-            caras={[{ f: 0, v: "determinado" }, { f: k(64.0), v: "neutral" }, { f: tres, v: "sorpresa" }, { f: seis + 4, v: "duda" }]}
-            miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: suelta, v: { x: 1, y: 0.6 } }, { f: k(64.6), v: { x: 1, y: 0.15 } }, { f: tres, v: { x: 1, y: 0.05 } }, { f: seis, v: { x: 0.6, y: -0.8 } }]}
+            poses={[{ f: 0, v: "parado" }, { f: suelta, v: "agacharse" }, { f: k(63.96), v: { hD: 122, cD: 0, hI: 20, cI: 30, tronco: -4, cabeza: -10 } }, { f: k(64.7), v: { hD: 70, cD: 40, hI: 55, cI: 45, tronco: 4 } }, { f: tres, v: "parado" }]}
+            caras={[{ f: 0, v: "determinado" }, { f: k(63.96), v: "duda" }, { f: k(64.7), v: "determinado" }, { f: tres, v: "sorpresa" }, { f: seis + 4, v: "duda" }]}
+            miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: suelta, v: { x: 1, y: 0.6 } }, { f: k(63.96), v: { x: 0.5, y: -0.85 } }, { f: k(64.7), v: { x: 1, y: 0.15 } }, { f: tres, v: { x: 0.7, y: -0.7 } }, { f: seis, v: { x: 0.6, y: -0.8 } }]}
             ajuste={ik("D", (q) => q < suelta ? { x: 60, y: -150 } : q > seis + 6 ? { x: 10 + 6 * Math.sin(q / 2), y: -300 } : null)}
             enManoD={(q: number) => q < suelta + 2 ? <Lenio s={0.6} rot={0} /> : null} luz={BORDE_FRIO} />
           <Aliento {...boca(interpolate(f, [0, k(63.3)], [2560, 2240], cl), B, f < k(64.6) ? -1 : 1)} f={f} />
         </>} frente={<NieveCae f={f} n={50} x0={1000} w={3000} y0={B - 1200} h={1300} />} />
-      <Pildora texto="ONE HOUSE · NORTHERN MINNESOTA" x={960} y={950} desde={k(62.26)} hasta={k(65.0)} color={FRIO} tam={38} />
-      <Rotulo3E texto="3 CORDS" x={960} y={96} desde={tres} hasta={seis - 2} color={AMBAR} tam={56} />
-      <Rotulo3E texto="3 – 6 CORDS" sub="OF WOOD · ONE WINTER" x={960} y={96} desde={seis + 8} color={AMBAR} tam={56} />
+      <Pildora texto="ONE HOUSE · NORTHERN MINNESOTA" x={960} y={978} desde={k(62.26)} hasta={k(65.0)} color={FRIO} tam={38} />
+      <RotuloV5 texto="3 – 6 CORDS" sub="OF WOOD · ONE WINTER" subDesde={seis + 4} x={960} y={118} desde={tres} color={AMBAR} tam={52} />
       {/* v4e: contador de cuerdas en el cielo (en vez de los bloques fantasma sobre las casas) */}
-      <FilaCuerdasE4 x={960} y={214} desde={tres - 4} llenas={[tres, tres + 4, tres + 8]} fantasma={seis} />
+      <FilaCuerdasE4 x={960} y={238} desde={tres - 4} llenas={[tres, tres + 4, tres + 8]} fantasma={seis} />
     </AbsoluteFill>
   );
 };
@@ -625,7 +632,7 @@ export const P17Cuerda: React.FC = () => {
   // largo («long»); las cotas: HIGH vertical en el hueco entre la casa de ladrillo y la cota, WIDE en el cielo con guía
   const tx = (q: number) => interpolate(q, [0, k(67.55), k(67.85)], [2830, 2830, 2960], cl);
   const pr = D * ramp(f, k(67.6), k(67.85));
-  const WX = 3075, WY = B - 640; // «4 FT WIDE» en el cielo, a la derecha del techo verde
+  const WX = 3117, WY = B - 542; // v5a: «4 FT WIDE» más abajo, en el cielo entre el techo verde y el violeta (borde sup. ≥ 190 px)
   const barre = ramp(f, largo, largo + 22);
   return (
     <AbsoluteFill>
@@ -654,8 +661,7 @@ export const P17Cuerda: React.FC = () => {
             enManoD={(q: number) => q < k(67.6) ? <Lenio s={0.55} rot={0} /> : null} luz={BORDE_FRIO} />
           <Aliento {...boca(tx(f), B, -1)} f={f} />
         </>} />
-      <Rotulo3E texto="ONE CORD" x={960} y={96} desde={k(66.98)} hasta={k(70.6)} color={AMBAR} tam={50} />
-      <Rotulo3E texto="ONE CORD" sub="4 × 4 × 8 FT" x={960} y={96} desde={k(70.6) + 10} color={AMBAR} tam={50} />
+      <RotuloV5 texto="ONE CORD" sub="4 × 4 × 8 FT" subDesde={k(70.5)} x={960} y={118} desde={k(66.98)} color={AMBAR} tam={46} />
     </AbsoluteFill>
   );
 };
@@ -734,7 +740,7 @@ export const P19Liniero: React.FC = () => {
           <HumoSierraE4 x={SX - 24} y={B - sierraY(f) + 18} f={f} desde={k(77.55)} dir={-1} n={10} />
           <Aliento {...boca(TX, B, 1)} f={f} />
         </>} />
-      <Rotulo3E texto="HE KNOWS CHAINSAWS" sub="· AND TREES ·" x={770} y={100} desde={k(76.4)} color={AMBAR} tam={30} />
+      <RotuloV5 texto="HE KNOWS CHAINSAWS" sub="AND TREES" subDesde={k(77.96)} subTam={28} x={750} y={120} desde={k(77.2)} color={AMBAR} tam={34} />
     </AbsoluteFill>
   );
 };
@@ -1154,7 +1160,7 @@ export const P29Canios: React.FC = () => {
   const k = kDe(122.81);
   const c = k(125.95);
   const raja = k(124.11);
-  const hielo = ramp(f, 0, k(124.05));
+  const hielo = ramp(f, 0, k(124.0), 0.28, 1); // v5a: la escarcha ya entró por las puntas en el cuadro 0 y se ve avanzar
   const crack1 = k(127.55), crack2 = k(129.63), seña = k(128.17);
   const A = (
     <AbsoluteFill>
@@ -1164,10 +1170,10 @@ export const P29Canios: React.FC = () => {
           <EscarchaCanio hielo={hielo} fisura={ramp(f, k(123.7), raja)} roto={f >= raja} />
         </g>
       </svg>
-      <Rot texto="WATER PIPES · EMPTY HOUSES" x={960} y={110} desde={0} hasta={k(124.35)} color={FRIO} tam={40} />
-      <Rot texto="ICE EXPANDS" x={1500} y={820} desde={k(123.3)} hasta={raja - 2} color="#ff5a4a" tam={36} />
+      <Rot texto="WATER PIPES · EMPTY HOUSES" x={960} y={152} desde={0} hasta={k(124.35)} color={FRIO} tam={40} />
+      <Rot texto="ICE EXPANDS" x={1500} y={820} desde={k(123.03)} hasta={raja - 2} color="#ff5a4a" tam={36} />
       {f >= raja && <Globo texto="BURST!" x={1520} y={330} desde={raja} hasta={c} tam={64} />}
-      <Rot texto="ALL OVER THE CITY" x={960} y={110} desde={k(124.51)} color={FRIO} tam={40} />
+      <Rot texto="ALL OVER THE CITY" x={960} y={152} desde={k(124.51)} color={FRIO} tam={40} />
     </AbsoluteFill>
   );
   const claves = [mira(c, 2380, B - 280, 1.42), mira(seña, 2400, B - 280, 1.44, { curva: "inout" }), mira(seña + 24, 2640, B - 275, 1.36, { curva: "inout" }), mira(236, 2660, B - 272, 1.4, { curva: "inout" })];
@@ -1189,12 +1195,12 @@ export const P29Canios: React.FC = () => {
           <Aliento {...boca(2280, B)} f={f} /><Aliento {...boca(2480, B, -1)} f={f} dir={-1} desfase={22} />
         </>} frente={<NieveCae f={f} n={80} x0={-400} w={4400} y0={-300} h={1300} />} />
       <Rot texto="YOU HEAR THEM AT NIGHT" x={960} y={1010} desde={c + 6} hasta={crack1 - 2} color={FRIO} tam={40} />
-      {f >= crack1 && f < seña + 30 && <Globo texto="CRACK!" x={1640} y={300} desde={crack1} hasta={seña + 30} tam={64} />}
+      {f >= crack1 && f < seña + 30 && <Globo texto="CRACK!" x={1780} y={235} desde={crack1} hasta={seña + 30} tam={64} />}
       {f >= crack2 && <Globo texto="CRACK!" x={Math.min(1640, g2.x)} y={260} desde={crack2} hasta={236} tam={64} />}
       <Rot texto="LIKE A GUNSHOT" x={960} y={1010} desde={crack2} color="#e2483a" tam={44} />
     </AbsoluteFill>
   );
-  return <SubFundido c={c} a={A} b={Bt} />;
+  return <FundidoV5 c={c} a={A} b={Bt} />; // v5a: fundido 8 en seno (el lineal de 6 medía lageo en 126,17)
 };
 
 // ---------- 30 · cada salida, una misión: capas, lana sí, algodón no ----------
@@ -1287,17 +1293,33 @@ export const P32Invisible: React.FC = () => {
       caras={[{ f: 0, v: "cansado" }, { f: k(147.37), v: "duda" }, { f: k(149.19), v: "miedo" }, { f: inv + 6, v: "cansado" }, { f: inv + 18, v: "dormido" }, { f: co, v: "sorpresa" }]}
       miradas={[{ f: 0, v: { x: -1, y: 0.2 } }, { f: k(147.8), v: { x: 1, y: 0 } }, { f: k(149.19), v: { x: 1, y: 0.2 } }, { f: inv + 6, v: { x: 1, y: 0.7 } }, { f: co, v: { x: 1, y: 0.3 } }]} />
   );
+  // v5a: (A) OTRO lugar del living (no el frontal de colchones): June de rodillas junto a la estufa, de noche, revisa
+  // con la luz del celular la puerta y el caño (el peligro que más teme); en «cold» mira atrás a la ventana helada y
+  // vuelve, acerca la palma a la estufa; en «invisible» olfatea → fundido 8 en seno al plano al ras del piso
+  const JX = 1690; const POSES_ARR = POSES.arrodillado;
+  const tA = [0, k(147.79), k(148.65), k(149.19), k(149.83)];
+  const manoD = [{ x: 112, y: -170 }, { x: 142, y: -250 }, { x: 104, y: -186 }, { x: 140, y: -246 }, { x: 140, y: -246 }];
+  const haz = [{ x: 1900, y: P - 190 }, { x: 1950, y: P - 470 }, { x: 1905, y: P - 176 }, { x: 1950, y: P - 430 }, { x: 1950, y: P - 430 }];
+  const tramo = (q: number, v: { x: number; y: number }[]) => {
+    let i = 0; while (i + 1 < tA.length && q >= tA[i + 1]) i++;
+    const u = i === 0 ? 0 : interpolate(q, [tA[i], tA[i] + 12], [0, 1], io);
+    const a = v[Math.max(0, i - 1)], b = v[i];
+    return i === 0 ? v[0] : { x: a.x + (b.x - a.x) * u, y: a.y + (b.y - a.y) * u };
+  };
+  const mD = tramo(f, manoD), hz = tramo(f, haz);
   const A = (
     <AbsoluteFill>
-      <EscenaL Set={Living} pal={PAL} claves={[mira(0, 1060, P - 220, 1.8), mira(inv + 5, 1080, P - 225, 1.9, { curva: "inout" })]} seed={32} setProps={sp}
+      <EscenaL Set={Living} pal={PAL} claves={[mira(0, 1840, P - 240, 1.8), mira(k(147.79) + 16, 1860, P - 290, 1.8, { curva: "inout" }), mira(k(148.65) + 16, 1780, P - 250, 1.7, { curva: "inout" }), mira(k(149.19) + 16, 1850, P - 260, 1.82, { curva: "inout" })]} seed={32} setProps={sp}
         medio={<>
-          <TapaAlarma piso={P} />
-          <PilaLena x={40} piso={P} cols={10} filas={6} seed={3} />
-          {theo}{june}
-          <Aliento {...boca(1070, P, 1, A_COLCHON)} f={f} desfase={10} />
-          <g opacity={interpolate(f, [inv - 6, inv + 6], [0, 1], cl)}><GasNube id="p32" x0={1900} x1={420} piso={P} alto={420} avance={gas} f={f} /></g>
+          <Pj look={JUNE} ruta={[{ f: 0, x: JX, y: P }]} dir={[{ f: 0, v: 1 }]}
+            poses={[{ f: 0, v: "arrodillado" }, { f: k(147.79), v: { ...POSES_ARR, tronco: -6, cabeza: -14 } }, { f: k(148.65), v: { ...POSES_ARR, tronco: 2, cabeza: 4 } }, { f: k(149.19), v: { ...POSES_ARR, tronco: 10, cabeza: -6 } }, { f: k(149.83), v: { ...POSES_ARR, tronco: 4, cabeza: -10 } }]}
+            caras={[{ f: 0, v: "duda" }, { f: k(147.79), v: "miedo" }, { f: k(148.65), v: "triste" }, { f: k(149.19), v: "determinado" }, { f: k(149.83), v: "duda" }]}
+            miradas={[{ f: 0, v: { x: 1, y: 0.1 } }, { f: k(147.79), v: { x: 0.5, y: -0.85 } }, { f: k(148.65), v: { x: -1, y: -0.15 } }, { f: k(149.19), v: { x: 1, y: 0 } }, { f: k(149.83), v: { x: 0.4, y: -0.7 } }]}
+            ajuste={ik2(ik("D", () => mD), ik("I", (q) => q >= k(149.19) + 4 ? { x: 150 * interpolate(q, [k(149.19) + 4, k(149.19) + 16], [0.5, 1], io), y: -170 } : null))}
+            enManoD={<Celular brillo="#fff3c8" />} seed={2} luz={BORDE_CALIDO} />
+          <LinternaV5 x0={JX + mD.x + 14} y0={P + mD.y} x1={hz.x} y1={hz.y} fuerza={0.3} />
         </>} />
-      <Rot texto="THE DANGER JUNE FEARS MOST" x={960} y={1010} desde={k(147.79)} hasta={inv - 6} color={AMBAR} tam={40} />
+      <Rot texto="THE DANGER JUNE FEARS MOST" x={1570} y={170} desde={k(147.79)} hasta={inv - 6} color={AMBAR} tam={40} />
     </AbsoluteFill>
   );
   const Bt = (
@@ -1311,11 +1333,11 @@ export const P32Invisible: React.FC = () => {
           <Botas x={560} piso={P + 160} s={1.35} />
           <GasNube id="p32c" x0={2100} x1={300} piso={P + 230} alto={240} avance={ramp(f, inv, co + 20)} f={f} o={0.8} moleculas={false} />
         </>} />
-      <Rot texto="INVISIBLE" x={620} y={150} desde={inv + 4} hasta={co - 1} color="#c8b4f0" tam={44} />
-      <Rot texto="CARBON MONOXIDE" x={620} y={150} desde={co} color="#e2483a" tam={44} />
+      <Rot texto="INVISIBLE" x={620} y={150} desde={inv + 4} hasta={co - 14} color="#c8b4f0" tam={44} />
+      <Rot texto="CARBON MONOXIDE" x={620} y={150} desde={co - 4} color="#e2483a" tam={44} />
     </AbsoluteFill>
   );
-  return <SubFundido c={inv} a={A} b={Bt} />;
+  return <FundidoV5 c={inv} a={A} b={Bt} />; // v5a
 };
 
 // ---------- 33 · generadores y parrillas adentro: sin olor, sin aviso, sólo sueño ----------
@@ -1604,13 +1626,14 @@ export const P39Nueve: React.FC = () => {
   const claves = [mira(0, 1250, P - 240, 2.4), mira(abre, 1260, P - 240, 2.45), mira(abre + 22, 900, P - 250, 1.6, { curva: "inout" })];
   return (
     <AbsoluteFill>
-      <EscenaL Set={Living} pal={PAL} claves={claves} seed={39} setProps={{ ...LIV_INV, hora: "alba", fuego: 0.4, cae: false }}
+      <EscenaL Set={Living} pal={PAL} claves={claves} seed={39} setProps={{ ...LIV_INV, hora: "alba", fuego: 0.4, cae: false, lena: 0 }}
+        detras={<LenaLivE4 lena={0.45} />} /* v5a: troncos de verdad (no la grilla de lunares del set) */
         medio={<>
           <AlarmaCO x={1262} y={P - 32} s={0.75} on={false} f={f} />
           <EnColchon look={THEO_CASA} x={720} poses={[{ f: 0, v: SENT }, { f: mitad + 10, v: { ...SENT, hD: 130, cD: 20 } }]} caras={[{ f: 0, v: "cansado" }, { f: mitad, v: "feliz" }]} miradas={[{ f: 0, v: { x: 1, y: 0.1 } }]} />
           <EnColchon look={JUNE} x={1070} seed={2} manta="#3a4a7a" poses={[{ f: 0, v: { ...SENT, hD: 60, cD: 60 } }, { f: k(179.6), v: { ...SENT, hD: 70, cD: 70, cabeza: 10 } }, { f: mitad + 6, v: { ...SENT, hD: 60, cD: 60, hI: 120, cI: 20 } }]}
             caras={[{ f: 0, v: "triste" }, { f: k(178.95), v: "sorpresa" }, { f: k(179.6), v: "feliz" }, { f: mitad, v: "risa" }]} miradas={[{ f: 0, v: { x: 1, y: 0.6 } }, { f: k(178.95), v: { x: 1, y: 0.2 } }, { f: mitad + 10, v: { x: -1, y: 0 } }]}
-            enManoD={(q: number) => <g><AlarmaCO s={0.5} /><Precio x={20} y={18} texto="$9" f={q} s={0.55} /></g>} />
+            enManoD={(q: number) => <g transform={`rotate(${interpolate(q, [0, k(179.6), k(179.6) + 10, mitad + 6, mitad + 16], [110, 110, 130, 130, 110], cl)})`}><AlarmaCO s={0.5} /><Precio x={20} y={18} texto="$9" f={q} s={0.55} /></g>} /> {/* v5a: la alarma y la etiqueta derechas (antes el $9 se leía «6$», girado con el antebrazo) */}
         </>} />
       <Texto x={1480} y={690} desde={k(178.67)} hasta={abre} tam={150} color={AMBAR}>$9</Texto>
       <Texto x={1480} y={880} desde={k(178.95)} hasta={abre} tam={40} color="#f6ecd2">ONE CO ALARM</Texto>
@@ -1634,18 +1657,19 @@ export const P40Dia83: React.FC = () => {
     const bx = PX + g * (paso * 4 + 26), by = PY + fila * (alto + 22);
     const punta = m === 4 ? { x: bx - 6 + (paso * 3 + 16) * u, y: by + 4 + (alto - 8) * (1 - u) } : { x: bx + m * paso, y: by + alto * u };
     const s = interpolate(f, [0, c], [1, 1.05], cl);
+    const sale = interpolate(f, [k(183.95), c - 2], [0, 1], io); // v5a: la mano con el lápiz sale de cuadro antes del corte
     A = (
       <AbsoluteFill style={{ background: "#2a2026" }}>
         <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}>
-          <g transform={`translate(960 540) scale(${s}) translate(-960 -540)`}>
+          <g transform={`translate(960 600) scale(${s * 0.9}) translate(-960 -580)`}> {/* v5a: cuaderno más chico y más abajo → el rótulo DAY 83 en zona libre */}
             <rect x={180} y={170} width={1560} height={820} rx={14} fill="#f4ecd6" />
             {Array.from({ length: 12 }).map((_, r) => <rect key={r} x={180} y={230 + r * 64} width={1560} height={2} fill="#c9d4e4" />)}
             <rect x={300 - 50} y={170} width={3} height={820} fill="#e2a0a0" />
             <Palotes x={PX} y={PY} n={n} ult={u} alto={alto} paso={paso} porFila={porFila} color="#2a2228" grosor={5} />
-            <ManoLapizE x={punta.x} y={punta.y} manga="#2f7f86" s={0.55} />
+            <ManoLapizE x={punta.x + 700 * sale} y={punta.y + 520 * sale} manga="#2f7f86" s={0.55} />
           </g>
         </svg>
-        <Rot texto="DAY 83" x={960} y={110} desde={k(182.95)} color={AMBAR} tam={44} />
+        <Rot texto="DAY 83" x={960} y={150} desde={k(182.95)} color={AMBAR} tam={44} />
       </AbsoluteFill>
     );
   }
@@ -1662,7 +1686,7 @@ export const P40Dia83: React.FC = () => {
             enManoD={<Rama s={1.15} />} />
         </>} />
       <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0, opacity: interpolate(f, [c, c + 9], [0, 1], cl) }}>
-        <g transform="translate(860 110)">
+        <g transform="translate(860 128)">
           <rect x={0} y={0} width={300} height={250} rx={18} fill="#f6f1e6" /><rect x={0} y={0} width={300} height={64} rx={18} fill="#c0352c" />
           <text x={150} y={46} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={600} fontSize={36} fill="#fff" letterSpacing={3}>DEC</text>
           <text x={120} y={190} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={600} fontSize={120} fill="#2a2228">25</text>
@@ -1672,5 +1696,5 @@ export const P40Dia83: React.FC = () => {
       <Rot texto="CHRISTMAS · PROBABLY" x={960} y={1015} desde={k(184.97)} color={AMBAR} tam={38} />
     </AbsoluteFill>
   );
-  return <SubFundido c={c} a={A} b={Bt} />;
+  return <FundidoV5 c={c} a={A} b={Bt} />; // v5a: fundido 8 en seno (184,2)
 };
