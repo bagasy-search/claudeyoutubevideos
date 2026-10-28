@@ -13,6 +13,7 @@ import { IconoGrande } from "../iconos";
 import { CallePintada, MurallaPintada, TabernaPintada } from "../sets/pintado";
 import { Carro, Gato, MURALLA_M, PAL_LONDRES as PAL, PISO } from "../sets/londres";
 import { B, cab, cl, E, Globos, M_, Me, P, Pi, reloj, ROPA_T2, Sudor, tomas, ubicado, Vapor, ventanas } from "./kit";
+import { PCuaderno, PReloj, PRumor } from "./Piezas";
 
 const tx = (L: string, es: string, en: string) => (L === "es" ? es : en);
 const VCOR = 232;
@@ -40,7 +41,7 @@ export const B11P: React.FC<B> = ({ D, L }) => {
   const { F, S } = reloj(L, PARES_B11);
   const hud = <>
     <Dato texto={tx(L, "DÍA 4", "DAY 4")} x={960} y={200} desde={0} hasta={F(1.1)} tam={130} color="#ffd23c" rot={0} />
-    <Dato texto={tx(L, "CIENTOS POR DÍA", "HUNDREDS A DAY")} x={960} y={190} desde={F(18.8)} hasta={F(21.3)} tam={104} color="#ff5a3c" rot={0} />
+    <PReloj a={F(17.9)} b={F(21.6)} cientos={F(18.9)} rot={tx(L, "CIENTOS\nPOR DÍA", "HUNDREDS\nA DAY")} />
     <IconoGrande tipo="campana_no" desde={F(23.5)} hasta={F(24.4)} />
     <IconoGrande tipo="gente_no" desde={F(24.4)} hasta={F(25.8)} />
   </>;
@@ -170,6 +171,7 @@ export const B12P: React.FC<B> = ({ D, L }) => {
         <Dato texto={tx(L, "EL QUE LA TRAJO", "THE ONE WHO BROUGHT IT")} x={960} y={170} desde={F(15.1)} hasta={F(16.2)} tam={96} color="#ff5a3c" rot={0} />
         <Dato texto={tx(L, "¡CORRE!", "RUN!")} x={960} y={190} desde={F(24.5)} hasta={F(25.8)} tam={170} color="#ff3b2a" rot={0} />
         <IconoGrande tipo="horquilla" desde={F(21.7)} hasta={F(24.3)} x={1500} y={300} />
+        <PRumor a={F(17.6)} b={F(20.9)} todos={F(20.0)} />
         <Globos F={F} L={L} lista={[
           { tipo: "lupa", desde: 3.6, hasta: 4.8, x: 1420, y: 230, cola: cab(Me((MUJ + HOM) / 2, 2.3), MUJ) },
           { tipo: "zapatilla", desde: 8.3, hasta: 9.5, x: 1420, y: 230, cola: cab(Me((MUJ + HOM) / 2, 2.3), MUJ) },
@@ -287,14 +289,10 @@ export const B14P: React.FC<B> = ({ D, L }) => {
         <IconoGrande tipo="corazon" desde={F(13.0)} hasta={F(14.2)} x={960} y={250} />
         <Dato texto={tx(L, "¡ACHÍS!", "ACHOO!")} x={1300} y={240} desde={F(16.6)} hasta={F(17.6)} tam={150} color="#8fd04a" rot={0} />
         <Dato texto={tx(L, "¡ACHÍS!", "ACHOO!")} x={1350} y={240} desde={F(18.6)} hasta={F(19.5)} tam={180} color="#8fd04a" rot={0} />
-        <IconoGrande tipo="vikingo" desde={F(23.7)} hasta={F(27.9)} x={600} y={300} />
-        <IconoGrande tipo="barco" desde={F(23.8)} hasta={F(27.9)} x={1320} y={330} tam={1.4} />
-        <Dato texto={tx(L, "AÑO 900", "YEAR 900")} x={960} y={170} desde={F(25.0)} hasta={F(26.5)} tam={130} color="#ffd23c" rot={0} />
-        <Dato texto={tx(L, "40 VIKINGOS", "40 VIKINGS")} x={960} y={170} desde={F(26.6)} hasta={F(27.95)} tam={120} color="#ff5a3c" rot={0} />
+        <PCuaderno a={F(21.2)} b={F(27.9)} hoja={F(23.6)} sello={F(25.0)} cuarenta={F(26.6)} tx={{ londres: tx(L, "LONDRES 1348", "LONDON 1348"), dias: tx(L, "4 DÍAS", "4 DAYS"), anio: tx(L, "AÑO 900", "YEAR 900") }} />
         <Dato texto={tx(L, "SUSCRÍBETE", "SUBSCRIBE")} x={960} y={170} desde={F(28.0)} hasta={F(30.3)} tam={130} color="#fff6e6" rot={0} />
         <Globos F={F} L={L} lista={[
           { texto: ["¿Y TÚ?", "AND YOU?"], desde: 30.6, hasta: 34, x: 1400, y: 260, cola: [1080, 360], tam: 0.9 },
-          { texto: ["¡NO!", "NO!"], desde: 21.3, hasta: 23.3, x: 1400, y: 260, cola: [1080, 360], tam: 1.2 },
         ]} />
       </>}
     />

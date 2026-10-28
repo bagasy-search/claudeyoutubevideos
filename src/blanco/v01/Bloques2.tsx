@@ -13,6 +13,7 @@ import { IconoGrande } from "../iconos";
 import { CallePintada, MurallaPintada, PuertoPintado, TabernaPintada } from "../sets/pintado";
 import { Gato, PAL_LONDRES as PAL, PISO, puntoSoga, Rata } from "../sets/londres";
 import { B, cab, cl, E, Estrellas, Globos, M_, Me, P, Pi, reloj, Repollo, ROPA_T1, ROPA_T2, Sudor, tomas, ubicado, Vapor, ventanas } from "./kit";
+import { PMapa, PRueda } from "./Piezas";
 
 const tx = (L: string, es: string, en: string) => (L === "es" ? es : en);
 const SIN_GORRO: Ropa = { ...ROPA_T1, sombrero: undefined };
@@ -80,7 +81,7 @@ export const B07P: React.FC<B> = ({ D, L }) => {
         <IconoGrande tipo="alerta" desde={F(2.7)} hasta={F(4.4)} />
         <Dato texto={tx(L, "DESDE FRANCIA", "FROM FRANCE")} x={960} y={190} desde={F(5.6)} hasta={F(6.5)} tam={110} color="#ffd23c" rot={0} />
         <IconoGrande tipo="calavera" desde={F(9.8)} hasta={F(11.3)} />
-        <IconoGrande tipo="calavera" desde={F(22.2)} hasta={F(23.35)} x={960} y={330} />
+        <PMapa a={F(19.8)} b={F(24.9)} llega={F(22.1)} muerte={F(22.2)} londres={tx(L, "LONDRES", "LONDON")} francia={tx(L, "FRANCIA", "FRANCE")} />
         <Globos F={F} L={L} lista={[
           { tipo: "barco", desde: 0.6, hasta: 2.5, x: 1450, y: 250, cola: cab(Me(1060, 1.75), 1000) },
           { texto: ["ES MARTES", "IT'S TUESDAY"], desde: 18.3, hasta: 19.6, x: 1250, y: 230, cola: cab(Me((ES1 + ES2) / 2, 2.3), ES2), tam: 0.85 },
@@ -234,6 +235,7 @@ export const B09P: React.FC<B> = ({ D, L }) => {
       </>}
       hud={<>
         <Dato texto="2" x={760} y={300} desde={F(2.4)} hasta={F(4.2)} tam={170} color="#ff5a3c" rot={0} />
+        <PRueda a={F(6.8)} b={F(10.1)} para={F(9.5)} remedios={tx(L, "REMEDIOS", "CURES")} />
         <Dato texto="10" x={1160} y={300} desde={F(4.3)} hasta={F(5.05)} tam={190} color="#ff5a3c" rot={0} />
         <IconoGrande tipo="olor" desde={F(12.1)} hasta={F(14.2)} />
         <IconoGrande tipo="mascara_no" desde={F(24.9)} hasta={F(26.5)} x={1380} y={300} />

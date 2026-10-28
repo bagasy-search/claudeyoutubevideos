@@ -13,6 +13,7 @@ import { IconoGrande } from "../iconos";
 import { CallePintada, TabernaPintada } from "../sets/pintado";
 import { PAL_LONDRES as PAL, PISO, Rata } from "../sets/londres";
 import { B, cab, cl, E, Globos, GloboDef, M_, Me, Moneda, P, Pi, Pulgas, reloj, ROPA_BOTAS, ROPA_T0, ROPA_T1, Sudor, tomas, tramo, ubicado, Vapor, ventanas } from "./kit";
+import { PBalanza, PLupa } from "./Piezas";
 
 const tx = (L: string, es: string, en: string) => (L === "es" ? es : en);
 
@@ -122,7 +123,6 @@ export const B03P: React.FC<B> = ({ D, L }) => {
     { texto: ["¡EH, TÚ!", "HEY, YOU!"], desde: 7.5, hasta: 9.1, x: 1380, y: 250, cola: [1060, 330], tam: 0.95 },
     { tipo: "camisa", desde: 12.2, hasta: 13.3, x: 1560, y: 220, cola: cab(camina2, T) },
     { tipo: "zapatilla", desde: 13.6, hasta: 15.0, x: 600, y: 230, cola: cab(par, X1) },
-    { tipo: "queso", desde: 22.6, hasta: 23.4, x: 1370, y: 260, cola: [1030, 330] },
   ];
   return (
     <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2} seed={31} dibujo={{}} profundidad={1}
@@ -154,6 +154,7 @@ export const B03P: React.FC<B> = ({ D, L }) => {
       </>}
       hud={<>
         <IconoGrande tipo="reloj" desde={F(0.3)} hasta={F(1.9)} />
+        <PBalanza a={F(19.4)} b={F(25.2)} m={[F(19.7), F(20.5), F(21.6), F(23.5)]} trato={tx(L, "¡TRATO!", "DEAL!")} />
         <IconoGrande tipo="bombilla" desde={F(9.6)} hasta={F(10.85)} />
         <IconoGrande tipo="olor" desde={F(17.9)} hasta={F(18.85)} x={1360} y={300} />
         <IconoGrande tipo="corazon" desde={F(26.0)} hasta={D} />
@@ -363,7 +364,7 @@ export const B05bP: React.FC<B> = ({ D, L, f0 = 0 }) => {
         {f >= F(18.5) && f < F(19.8) && <Moneda f={f} f0={F(18.7)} x={MESA} y={MESA_Y} s={0.9} />}
       </>}
       hud={<>
-        <IconoGrande tipo="calavera" desde={F(15.3)} hasta={F(17.0)} x={1450} y={300} />
+        <PLupa a={F(13.7)} b={F(17.1)} fuego={F(14.2)} muere={F(15.1)} />
         <IconoGrande tipo="corazon" desde={F(24.2)} hasta={F(25.65)} />
         <Dato texto="1348" x={960} y={190} desde={F(25.75)} hasta={D} tam={150} color="#ffd23c" rot={0} />
         <Globos F={F} L={L} lista={[
