@@ -36,7 +36,7 @@ const planos: PlanoM[] = CORTES.map(([t, El, trans], i) => {
 const HudLc01: React.FC = () => (
   <>
     {/* cuadro 0 = la miniatura: 8B tachado sobre POPULATION: 2 */}
-    <Poblacion claves={2} tachado="8,000,000,000" tachaF={-40} desde={-60} hasta={S(1.1)} grande y={78} />
+    <Poblacion claves={2} tachado="8,000,000,000" tachaF={-40} desde={-60} hasta={S(1.1)} grande y={112} />
     {/* el gancho: 8 mil millones → 2 */}
     <Poblacion claves={[{ f: 0, v: 8000000000 }, { f: S(20.4), v: 2, d: 40 }]} desde={S(1.25)} hasta={S(35.6)} tachado={undefined} />
     {/* la historia: POPULATION 1 (cuaderno) → 2 (June) */}
