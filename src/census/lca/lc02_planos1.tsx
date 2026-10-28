@@ -26,13 +26,14 @@ import {
   EscarchaR, EscenaL, EtiquetaObj, HumoChim, io, Lenio, MarcoPeli, MedidorPPM,
   MantaVano, PlasticoVentana, pomo, Poste, Precio, Puerta, PuertaEstufa, RelojHielo, Rodajas, SENT, SUELO, Texto, Tic, Ventisca,
 } from "./lc02_planos1_comp";
-import { CalPared as CalParedE, Cota as CotaE, NotaReglas as NotaReglasE, PilaLena as PilaLenaE, puntaNota as puntaNotaE, RolloCinta as RolloCintaE, Rotulo3 as Rotulo3E, Servicio as ServicioE, TextoBarrido as TextoBarridoE, THEO_LINIERO as THEO_LINIERO_E, Tira90 as Tira90E, VeloRecuerdo as VeloRecuerdoE } from "./v3e_v3"; // v3e (P01-P20): alias con sufijo E para no chocar con v3f
+import { CalPared as CalParedE, Cota as CotaE, NotaReglas as NotaReglasE, PilaLena as PilaLenaE, puntaNota as puntaNotaE, RolloCinta as RolloCintaE, Rotulo3 as Rotulo3E, Servicio as ServicioE, TextoBarrido as TextoBarridoE, THEO_LINIERO as THEO_LINIERO_E, Tira90 as Tira90E } from "./v3e_v3"; // v3e (P01-P20): alias con sufijo E para no chocar con v3f
 import { ManoLapiz as ManoLapizE } from "./lc01_planos2_comp"; // v3e
 import { altoPila, BolsaDormir2, CanioPared, GasNube, Palotes, PilaLena, Rot, Volutas, XRoja } from "./v3f_v3";
 import { FilaCuerdas as FilaCuerdasE4, HumoSierra as HumoSierraE4, LenaLiv as LenaLivE4, SierraViva as SierraVivaE4, Subtomas as SubtomasE4, SuperOscuro as SuperOscuroE4 } from "./v4e_v4"; // v4e (P01-P20)
 import { Beep, Botas, CanioHollin, EscarchaCanio, Rama, SubFundido, TapaAlarma, TarjetaRopaV4, TermoPoste } from "./v4f_v4"; // v4f (P21-P40)
 import { golpe } from "../../anikit/camara"; // v4f
 import { FundidoSuave as FundidoV5, Linterna as LinternaV5, Miton as MitonV5, RotuloV5 } from "./v5a_v5"; // v5a (P03-P40)
+import { RecuerdoV6 } from "./v6a_v6"; // v6a (P19, P32)
 
 const P = LIV_PISO;
 const B = BARRIO_PISO;
@@ -706,6 +707,7 @@ export const P19Liniero: React.FC = () => {
   // transformador; corte seco al presente: tira de la cuerda de arranque, humo de escape, la sierra vibra y corta
   if (f < fb) return (
     <AbsoluteFill>
+      <RecuerdoV6>{/* v6a: sin velo crema encima (lavaba el cuadro): filtro + tinte multiply + viñeta */}
       <EscenaL Set={Barrio} pal={PAL} claves={[mira(0, 2190, B - 480, 1.3), mira(fb, 2200, B - 500, 1.38, { curva: "inout" })]} seed={19} setProps={{ hora: "dia", luces: 0, nieve: 0.4, humo: 0 }}
         medio={<>
           <Poste x={2120} piso={B} />
@@ -715,7 +717,7 @@ export const P19Liniero: React.FC = () => {
             ajuste={ik2(ik("I", () => ({ x: 52, y: -280 })), ik("D", (q) => q < k(75.36) ? { x: 60, y: -320 } : { x: 70, y: -230 }))} />
           <Chispas x={2120} y={B - 700} f={f} desde={k(74.9)} />
         </>} />
-      <VeloRecuerdoE o={1} />
+      </RecuerdoV6>
       <Pildora texto="THEO WAS A LINEMAN" x={1240} y={150} desde={k(74.9)} color={AMBAR} tam={44} />
     </AbsoluteFill>
   );
@@ -740,7 +742,7 @@ export const P19Liniero: React.FC = () => {
           <HumoSierraE4 x={SX - 24} y={B - sierraY(f) + 18} f={f} desde={k(77.55)} dir={-1} n={10} />
           <Aliento {...boca(TX, B, 1)} f={f} />
         </>} />
-      <RotuloV5 texto="HE KNOWS CHAINSAWS" sub="AND TREES" subDesde={k(77.96)} subTam={28} x={750} y={120} desde={k(77.2)} color={AMBAR} tam={34} />
+      <Pildora texto="HE KNOWS CHAINSAWS · AND TREES" x={720} y={104} desde={k(77.2)} color={AMBAR} tam={36} />{/* v6a: una sola línea, tamaño normal */}
     </AbsoluteFill>
   );
 };
@@ -1296,30 +1298,36 @@ export const P32Invisible: React.FC = () => {
   // v5a: (A) OTRO lugar del living (no el frontal de colchones): June de rodillas junto a la estufa, de noche, revisa
   // con la luz del celular la puerta y el caño (el peligro que más teme); en «cold» mira atrás a la ventana helada y
   // vuelve, acerca la palma a la estufa; en «invisible» olfatea → fundido 8 en seno al plano al ras del piso
+  // v6a: (A) la linterna SUBE por el caño (la cámara la sigue con mira inout), June mira atrás a la ventana helada, acerca
+  // la palma a la estufa, OLFATEA y se le cierran los ojos: cabecea (la cabeza cae, se sacude, vuelve a caer) mientras la
+  // cámara baja hacia el piso → fundido seno de 8 al plano al ras del piso con el gas
   const JX = 1690; const POSES_ARR = POSES.arrodillado;
-  const tA = [0, k(147.79), k(148.65), k(149.19), k(149.83)];
-  const manoD = [{ x: 112, y: -170 }, { x: 142, y: -250 }, { x: 104, y: -186 }, { x: 140, y: -246 }, { x: 140, y: -246 }];
-  const haz = [{ x: 1900, y: P - 190 }, { x: 1950, y: P - 470 }, { x: 1905, y: P - 176 }, { x: 1950, y: P - 430 }, { x: 1950, y: P - 430 }];
+  const t1 = k(147.79), t2 = k(148.65), t3 = k(149.19), t4 = k(149.5);
+  const tA = [0, t1, t2, t3];
+  const dA = [1, 22, 12, 12];
+  const manoD = [{ x: 112, y: -170 }, { x: 136, y: -262 }, { x: 96, y: -150 }, { x: 100, y: -156 }];
+  const haz = [{ x: 1950, y: P - 190 }, { x: 1950, y: P - 660 }, { x: 1870, y: P - 20 }, { x: 1900, y: P - 34 }];
   const tramo = (q: number, v: { x: number; y: number }[]) => {
     let i = 0; while (i + 1 < tA.length && q >= tA[i + 1]) i++;
-    const u = i === 0 ? 0 : interpolate(q, [tA[i], tA[i] + 12], [0, 1], io);
+    const u = i === 0 ? 0 : interpolate(q, [tA[i], tA[i] + dA[i]], [0, 1], io);
     const a = v[Math.max(0, i - 1)], b = v[i];
     return i === 0 ? v[0] : { x: a.x + (b.x - a.x) * u, y: a.y + (b.y - a.y) * u };
   };
-  const mD = tramo(f, manoD), hz = tramo(f, haz);
+  const mD = tramo(f, manoD), hz0 = tramo(f, haz);
+  const hz = { x: hz0.x + 6 * Math.sin(f / 7), y: hz0.y + 5 * Math.sin(f / 5.3) }; // pulso de mano: el haz nunca queda clavado
   const A = (
     <AbsoluteFill>
-      <EscenaL Set={Living} pal={PAL} claves={[mira(0, 1840, P - 240, 1.8), mira(k(147.79) + 16, 1860, P - 290, 1.8, { curva: "inout" }), mira(k(148.65) + 16, 1780, P - 250, 1.7, { curva: "inout" }), mira(k(149.19) + 16, 1850, P - 260, 1.82, { curva: "inout" })]} seed={32} setProps={sp}
+      <EscenaL Set={Living} pal={PAL} claves={[mira(0, 1840, P - 240, 1.8), mira(t1 + 22, 1900, P - 330, 1.55, { curva: "inout" }), mira(t2 + 16, 1810, P - 260, 1.8, { curva: "inout" }), mira(t3 + 14, 1850, P - 250, 1.85, { curva: "inout" }), mira(inv + 8, 1800, P - 130, 2.0, { curva: "inout" })]} seed={32} setProps={sp}
         medio={<>
           <Pj look={JUNE} ruta={[{ f: 0, x: JX, y: P }]} dir={[{ f: 0, v: 1 }]}
-            poses={[{ f: 0, v: "arrodillado" }, { f: k(147.79), v: { ...POSES_ARR, tronco: -6, cabeza: -14 } }, { f: k(148.65), v: { ...POSES_ARR, tronco: 2, cabeza: 4 } }, { f: k(149.19), v: { ...POSES_ARR, tronco: 10, cabeza: -6 } }, { f: k(149.83), v: { ...POSES_ARR, tronco: 4, cabeza: -10 } }]}
-            caras={[{ f: 0, v: "duda" }, { f: k(147.79), v: "miedo" }, { f: k(148.65), v: "triste" }, { f: k(149.19), v: "determinado" }, { f: k(149.83), v: "duda" }]}
-            miradas={[{ f: 0, v: { x: 1, y: 0.1 } }, { f: k(147.79), v: { x: 0.5, y: -0.85 } }, { f: k(148.65), v: { x: -1, y: -0.15 } }, { f: k(149.19), v: { x: 1, y: 0 } }, { f: k(149.83), v: { x: 0.4, y: -0.7 } }]}
-            ajuste={ik2(ik("D", () => mD), ik("I", (q) => q >= k(149.19) + 4 ? { x: 150 * interpolate(q, [k(149.19) + 4, k(149.19) + 16], [0.5, 1], io), y: -170 } : null))}
+            poses={[{ f: 0, v: "arrodillado" }, { f: t1, v: { ...POSES_ARR, tronco: -8, cabeza: -24 }, d: 16 }, { f: t2, v: { ...POSES_ARR, tronco: 2, cabeza: 4 }, d: 12 }, { f: t3, v: { ...POSES_ARR, tronco: 10, cabeza: -6 }, d: 12 }, { f: t4, v: { ...POSES_ARR, tronco: 6, cabeza: -14 }, d: 10 }, { f: k(149.7), v: { ...POSES_ARR, tronco: 18, cabeza: 36 }, d: 12 }, { f: k(149.93), v: { ...POSES_ARR, tronco: 10, cabeza: 8 }, d: 8 }] as any}
+            caras={[{ f: 0, v: "duda" }, { f: t1, v: "miedo" }, { f: t2, v: "triste" }, { f: t3, v: "determinado" }, { f: t4, v: "duda" }, { f: k(149.62), v: "cansado" }, { f: k(149.72), v: "dormido" }, { f: k(149.93), v: "cansado" }, { f: k(150.03), v: "dormido" }]}
+            miradas={[{ f: 0, v: { x: 1, y: 0.1 } }, { f: t1, v: { x: 0.3, y: -1 } }, { f: t2, v: { x: -1, y: -0.15 } }, { f: t3, v: { x: 1, y: 0 } }, { f: t4, v: { x: 0.6, y: -0.3 } }, { f: k(149.62), v: { x: 0.8, y: 0.7 } }]}
+            ajuste={ik2(ik("D", () => mD), ik("I", (q) => q >= t3 + 4 ? { x: 150 * interpolate(q, [t3 + 4, t3 + 16], [0.5, 1], io), y: -170 + 40 * ramp(q, k(149.65), k(149.95)) } : null))}
             enManoD={<Celular brillo="#fff3c8" />} seed={2} luz={BORDE_CALIDO} />
           <LinternaV5 x0={JX + mD.x + 14} y0={P + mD.y} x1={hz.x} y1={hz.y} fuerza={0.3} />
         </>} />
-      <Rot texto="THE DANGER JUNE FEARS MOST" x={1570} y={170} desde={k(147.79)} hasta={inv - 6} color={AMBAR} tam={40} />
+      <Rot texto="JUNE'S BIGGEST FEAR" x={750} y={172} desde={t1} hasta={inv - 6} color={AMBAR} tam={32} />{/* v6a: entre la ventana y el caño */}
     </AbsoluteFill>
   );
   const Bt = (

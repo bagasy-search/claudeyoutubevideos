@@ -32,7 +32,9 @@ import { AvionTachado, GolpeOndas, PilaV4, RelojPulsera, Tomas } from "./v4g_v4"
 import { Contador } from "../../anikit/pantalla";
 import { SuperSinCarro } from "./v3c_v3";
 import { juntas } from "./lc02_planos2_comp";
-import { Cajon, EspaldaPj, GraficoPotenciaV5, InfeccionV5, ManosNieveV5, MejillaV5, PensamientoEnredo } from "./v5b_v5";
+import { Cajon, EspaldaPj, GraficoPotenciaV5, InfeccionV5, MejillaV5, PensamientoEnredo } from "./v5b_v5";
+import { FundidoSuave as FundidoV6a } from "./v5a_v5"; // v6a (P56)
+import { GloboV6 } from "./v6a_v6"; // v6a (P79)
 
 const P = LIV_PISO;
 const B = BARRIO_PISO;
@@ -703,28 +705,44 @@ export const P55Vela: React.FC = () => {
 export const P56Nieve: React.FC = () => {
   const f = useF();
   const k = kDe(263.32);
-  // v4g: 3 sub-tomas con fundido de 6 (antes: cortes secos = tirón). Inserto con manos de verdad (manga + puño + dedos).
-  const tomaC = (
-    <AbsoluteFill>
-      <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}>
-        <g transform={`translate(960,560) scale(${interpolate(f, [k(267.1), k(269.16)], [1, 1.06], cl)}) translate(-960,-560)`}>
-          {/* v5b: frotado CIRCULAR continuo (el vaivén con sin() se frenaba en cada punta: lageos 267,47 / 267,97) */}
-          <ManosNieveV5 f={f} manga="#2f7f86" frota={tr(f, k(267.1), k(267.5))} />
-        </g>
-      </svg>
-    </AbsoluteFill>
-  );
+  // v6a: SIN inserto (el de los brazos en V no se entendía y su entrada lageaba 3 vueltas): en «se lava las manos en la
+  // nieve» fundido seno de 8 desde la mesa a un PLANO MEDIO afuera: June arrodillada frente a un montón de nieve, se frota
+  // las dos manos con nieve en círculo continuo (nunca se frena), saltan copos; después se endereza y se sopla las manos
   const X = 1700;
+  const lava = 1 - tr(f, k(269.4), k(269.9)); // frotado fuerte → suave
+  const a = f * 0.32;
   const tomaD = (
       <AbsoluteFill>
         <EscenaNB Set={Barrio} pal={PAL} seed={57} setProps={{ hora: "noche", luces: 0, nieve: 1, cae: true, humo: 0.5 }}
-          claves={[mira(k(269.16), X + 30, B - 80, 2.1), mira(k(269.9), X + 30, B - 80, 2.1), mira(k(270.8), X + 10, B - 90, 2.25, { curva: "inout" })]}
-          medio={<PjM look={JUNE} ruta={[{ f: 0, x: X, y: B }]} dir={[{ f: 0, v: 1 }]} asiento={[{ f: 0, v: 0 }]} seed={2} luz={BORDE_FRIO}
-            poses={[{ f: 0, v: "arrodillado" }, { f: k(269.5), v: { tronco: 22, cabeza: 18 } }, { f: k(270.1), v: { tronco: 10, cabeza: -10 } }]}
-            caras={[{ f: 0, v: "triste" }, { f: k(269.5), v: "cansado" }, { f: k(270.1), v: "v3g_mirada" }]}
-            miradas={[{ f: 0, v: { x: 0.8, y: 1 } }, { f: k(270.1), v: { x: 1, y: -0.2 } }]}
-            ik={(q) => { const t = Math.sin(q * 0.55) * (1 - tr(q, k(270.0), k(270.3))); return { D: { x: X + 74 + 12 * t, y: B - 46 - 6 * Math.abs(t) }, I: { x: X + 66 - 12 * t, y: B - 50 }, wD: 1, wI: 1 }; }}
-            mundo={(j, q) => <>{[0, 1, 2].map((i) => { const c = ((q / 26 + i / 3) % 1); return <circle key={i} cx={j.boca.x + j.dir * (10 + c * 50)} cy={j.boca.y - c * 30} r={8 + c * 20} fill="#eef2fa" opacity={0.45 * (1 - c)} />; })}{Array.from({ length: 6 }).map((_, i) => <circle key={`n${i}`} cx={j.manoD.x + Math.sin(q / 3 + i) * 20} cy={j.manoD.y + 10 - ((q * 1.5 + i * 7) % 24)} r={3} fill="#fff" opacity={0.8} />)}</>} />} />
+          claves={[mira(k(267.1), X + 60, B - 100, 2.4), mira(k(268.9), X + 66, B - 94, 2.52, { curva: "inout" }), mira(k(269.9), X + 30, B - 130, 2.1, { curva: "inout" }), mira(k(270.8), X + 10, B - 135, 2.25, { curva: "inout" })]}
+          medio={<>
+            {/* el montón de nieve donde se lava (con la marca que dejan las manos) */}
+            <ellipse cx={X + 92} cy={B - 4} rx={96} ry={22} fill="#eef2fa" />
+            <ellipse cx={X + 86} cy={B - 14} rx={62} ry={18} fill="#f8faff" />
+            <ellipse cx={X + 90 + 10 * Math.cos(a)} cy={B - 12} rx={26} ry={6} fill="#c9d2e4" opacity={0.8 * lava} />
+            <PjM look={JUNE} ruta={[{ f: 0, x: X, y: B }]} dir={[{ f: 0, v: 1 }]} seed={2} luz={BORDE_FRIO}
+              poses={[{ f: 0, v: { ...POSES_V3H.arrodillado, tronco: 30, cabeza: 20 } }, { f: k(267.55), v: { ...POSES_V3H.arrodillado, tronco: 12, cabeza: 26 }, d: 14 }, { f: k(268.6), v: { ...POSES_V3H.arrodillado, tronco: 16, cabeza: 32 }, d: 16 }, { f: k(269.5), v: { tronco: 14, cabeza: 18 }, d: 14 }, { f: k(270.1), v: { tronco: 8, cabeza: -10 }, d: 12 }] as any}
+              caras={[{ f: 0, v: "triste" }, { f: k(268.2), v: "v3g_serio" }, { f: k(269.5), v: "cansado" }, { f: k(270.1), v: "v3g_mirada" }]}
+              miradas={[{ f: 0, v: { x: 0.8, y: 1 } }, { f: k(270.1), v: { x: 1, y: -0.2 } }]}
+              ik={(q) => {
+                // junta nieve del montón (k 267,1-267,55) → la sube al pecho y se frota las manos en círculo continuo
+                const sube = tr(q, k(267.25), k(267.6));
+                const t = 1 - tr(q, k(270.0), k(270.3));
+                const r = 0.45 + 0.55 * (1 - tr(q, k(269.4), k(269.9)));
+                const aa = q * 0.34;
+                const cx = X + 96 + 30 * (1 - sube), cy = B - 70 - 80 * sube;
+                return { D: { x: cx + 20 * r * Math.cos(aa) * t, y: cy - 9 * r * Math.sin(aa) * t }, I: { x: cx - 20 * r * Math.cos(aa) * t, y: cy + 9 * r * Math.sin(aa) * t }, wD: 1, wI: 1 };
+              }}
+              mundo={(j, q) => {
+                const mx = (j.manoD.x + j.manoI.x) / 2, my = (j.manoD.y + j.manoI.y) / 2;
+                const bola = tr(q, k(267.2), k(267.45)) * (1 - 0.7 * tr(q, k(268.0), k(269.6))); // la nieve en las manos se derrite
+                return <>
+                  {[0, 1, 2].map((i) => { const c = ((q / 26 + i / 3) % 1); return <circle key={i} cx={j.boca.x + j.dir * (10 + c * 50)} cy={j.boca.y - c * 30} r={8 + c * 20} fill="#eef2fa" opacity={0.45 * (1 - c)} />; })}
+                  {bola > 0.02 && <ellipse cx={mx + 4 * Math.cos(q * 0.34)} cy={my - 2} rx={22 * bola + 6} ry={14 * bola + 4} fill="#f8faff" stroke="#c9d2e4" strokeWidth={2} />}
+                  {Array.from({ length: 10 }).map((_, i) => { const c = ((q * 1.4 + i * 9) % 30) / 30; return <circle key={`n${i}`} cx={mx + Math.sin(i * 2.3) * (12 + 36 * c)} cy={my + 4 - 30 * c + 70 * c * c} r={2.5 + (i % 3)} fill="#fff" opacity={0.9 * (1 - c) * (0.35 + 0.65 * lava) * tr(q, k(267.2), k(267.4))} />; })}
+                </>;
+              }} />
+          </>} />
       </AbsoluteFill>
   );
   // A + B: en la mesa; Theo con el trapo en la cara habla, June no dice nada
@@ -750,7 +768,7 @@ export const P56Nieve: React.FC = () => {
   );
   return (
     <AbsoluteFill>
-      <Tomas cortes={[k(267.1), k(269.16)]} tomas={[tomaAB, tomaC, tomaD]} />
+      <FundidoV6a c={k(267.1)} a={tomaAB} b={tomaD} />{/* v6a: fundido seno de 8, sin inserto */}
       <Pildora texto="THE LONGEST 4 MINUTES OF HIS LIFE" x={960} y={128} desde={k(264.1)} hasta={k(265.9)} color={AMBAR} tam={40} />
       <Pildora texto="JUNE SAYS NOTHING" x={960} y={128} desde={k(266.32)} hasta={k(267.1)} color="#cfc8e8" tam={40} />
     </AbsoluteFill>
@@ -852,15 +870,15 @@ export const P59Antartida: React.FC = () => {
     <>
       {f >= C[4] - 6 && <Cajon x={xs[0] - 10} piso={S} w={120} h={62} />}
       <PjM look={PARKA_A} ruta={[{ f: 0, x: xs[0], y: S }]} dir={[{ f: 0, v: 1 }]} asiento={[{ f: 0, v: undefined }, { f: C[4] - 6, v: 72 }]}
-        poses={[{ f: 0, v: "parado" }, { f: k(286.6), v: { cabeza: 8 } }, { f: k(287.68), v: "manosCara" }, { f: k(288.3), v: { tronco: 8, cabeza: 14, hI: 10, hD: 10 } }, { f: C[4] - 6, v: { ...SENT_V5, tronco: 14, cabeza: 18, hI: 30, cI: 70, hD: 30, cD: 70 }, d: 2 }, { f: k(292.4), v: { ...SENT_V5, tronco: 18, cabeza: 24, hI: 34, cI: 76, hD: 34, cD: 76 }, d: 20 }]}
+        poses={[{ f: 0, v: "parado" }, { f: k(286.6), v: { cabeza: 8 } }, { f: k(287.68), v: "manosCara" }, { f: k(288.3), v: { tronco: 8, cabeza: 14, hI: 10, hD: 10 } }, { f: C[4] - 6, v: { ...SENT_V5, tronco: 14, cabeza: 18, hI: 30, cI: 70, hD: 30, cD: 70 }, d: 10 }, { f: k(292.4), v: { ...SENT_V5, tronco: 18, cabeza: 24, hI: 34, cI: 76, hD: 34, cD: 76 }, d: 20 }]}
         caras={[{ f: 0, v: "neutral" }, { f: k(286.6), v: "cansado" }, { f: k(287.68), v: "v3g_dormido" }, { f: k(288.2), v: "v3g_boca" }, { f: k(288.6), v: "cansado" }, { f: k(291.16), v: "v3g_mirada" }]}
         miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: k(286.6), v: { x: 0.6, y: 0.6 } }, { f: k(291.16), v: { x: 0.7, y: 0.7 } }]}
         extra={(p, q) => q >= k(287.68) && q < k(288.3) ? { ...p, cI: (p.cI ?? 0) + 14 * Math.sin(q * 0.9), cD: (p.cD ?? 0) - 14 * Math.sin(q * 0.9) } : p} />
-      <PjM look={PARKA_B} ruta={[{ f: 0, x: xs[1], y: S }]} dir={[{ f: 0, v: -1 }, { f: C[4] - 6, v: 1 }]} seed={2}
-        poses={[{ f: 0, v: "parado" }, { f: k(286.9), v: { cabeza: -6 } }, { f: k(288.76), v: "brazosCruzados" }, { f: k(289.1), v: "manosCintura" }, { f: C[4] - 6, v: { tronco: -4, cabeza: -12, hI: 8, cI: 10, hD: 8, cD: 10 }, d: 2 }, { f: k(292.6), v: { tronco: -6, cabeza: -16, hI: 8, cI: 10, hD: 8, cD: 10 }, d: 24 }]}
+      <PjM look={PARKA_B} ruta={[{ f: 0, x: xs[1], y: S }]} dir={[{ f: 0, v: -1 }]} seed={2}
+        poses={[{ f: 0, v: "parado" }, { f: k(286.9), v: { cabeza: -6 } }, { f: k(288.76), v: "brazosCruzados" }, { f: k(289.1), v: "manosCintura" }, { f: C[4] - 6, v: { tronco: -4, cabeza: -12, hI: 8, cI: 10, hD: 8, cD: 10 }, d: 12 }, { f: k(292.6), v: { tronco: -6, cabeza: -16, hI: 8, cI: 10, hD: 8, cD: 10 }, d: 24 }]}
         caras={[{ f: 0, v: "neutral" }, { f: k(286.9), v: "duda" }, { f: k(288.76), v: "enojo" }, { f: k(291.16), v: "v3g_mirada" }]}
         habla={[[k(288.8), k(289.3)]]}
-        miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: k(286.9), v: { x: -1, y: 0.1 } }, { f: k(288.8), v: { x: 1, y: 0.2 } }, { f: k(291.16), v: { x: 1, y: -0.35 } }]} />
+        miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: k(286.9), v: { x: -1, y: 0.1 } }, { f: k(288.8), v: { x: 1, y: 0.2 } }, { f: k(291.16), v: { x: -0.6, y: -0.5 } }]} />
       <PjM look={PARKA_C} ruta={[{ f: 0, x: xs[2], y: S }]} dir={[{ f: 0, v: -1 }]} seed={3}
         caras={[{ f: 0, v: "neutral" }, { f: k(289.42), v: "duda" }, { f: k(290.1), v: "sorpresa" }, { f: k(290.66), v: "duda" }, { f: k(291.16), v: "cansado" }]}
         miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: k(289.5), v: { x: 0.5, y: 0.8 } }, { f: k(290.66), v: { x: -0.4, y: -0.6 } }, { f: k(291.16), v: { x: -0.3, y: 0.5 } }]}
@@ -869,20 +887,21 @@ export const P59Antartida: React.FC = () => {
         mundo={(j, q) => <RelojPulsera x={j.manoI.x} y={j.manoI.y} f={q} o={tr(q, k(289.5), k(289.8)) * (1 - tr(q, k(290.5), k(290.7)))} loco={tr(q, k(289.8), k(290.1))} s={0.9} />} />
     </>
   );
-  const toma = (claves: ReturnType<typeof mira>[]) => <EscenaNB Set={SetAntartida} pal={PAL} seed={60} claves={claves} medio={gente} />;
+  // v6a: UNA sola toma (el fundido entre 6 sub-tomas dejaba 3 figuras fantasma encimadas): la cámara viaja de un
+  // síntoma al otro con mira() inout de 14-16 cuadros y deriva lenta entre medio; nunca dos tomas a la vez
   const io = { curva: "inout" as const };
-  const tomas = [
-    toma([mira(0, 960, 660, 1.36), mira(C[0], 960, 670, 1.44, io)]),
-    toma([mira(C[0], 960, 690, 1.5), mira(C[1], 960, 690, 1.58, io)]),
-    toma([mira(C[1], 660, 700, 2.3), mira(C[2], 650, 700, 2.36, io)]),
-    toma([mira(C[2], 960, 700, 2.0), mira(C[3], 960, 700, 2.05, io)]),
-    toma([mira(C[3], 1280, 700, 2.3), mira(C[4], 1290, 700, 2.4, io)]),
-    toma([mira(C[4], 960, 720, 1.7), mira(k(293.5), 960, 705, 1.88, io)]),
+  const claves = [
+    mira(0, 960, 668, 1.68), mira(C[0], 960, 676, 1.76, io),
+    mira(C[1], 950, 686, 1.86, io),
+    mira(C[1] + 14, 660, 700, 2.3, io), mira(C[2], 655, 700, 2.36, io),
+    mira(C[2] + 14, 960, 700, 2.0, io), mira(C[3], 962, 700, 2.03, io),
+    mira(C[3] + 14, 1280, 700, 2.3, io), mira(C[4], 1290, 700, 2.4, io),
+    mira(C[4] + 16, 960, 720, 1.7, io), mira(k(293.5), 960, 705, 1.88, io),
   ];
   const P = (t: string, a: number, b: number | undefined, c: string) => <Pildora texto={t} x={860} y={128} desde={a} hasta={b} color={c} tam={40} />;
   return (
     <AbsoluteFill>
-      <Tomas cortes={C} tomas={tomas} />
+      <EscenaNB Set={SetAntartida} pal={PAL} seed={60} claves={claves} medio={gente} />
       {P("POLAR RESEARCHERS · ANTARCTICA", k(284.3), C[1], "#9fd3ff")}
       {P("TROUBLE SLEEPING", C[1], C[2], "#9fd3ff")}
       {P("IRRITABILITY", C[2], C[3], "#e2483a")}
@@ -1562,10 +1581,10 @@ export const P79Cta: React.FC = () => {
   return (
     <AbsoluteFill>
       <EscenaNB Set={Living} pal={PAL} seed={79} setProps={{ ...LIVV, hora: "dia", fuego: 0.4, reglas: 3 }}
-        claves={[mira(0, 2400, P - 336, 1.4), mira(k(391.05), 2410, P - 336, 1.44, { curva: "inout" })]}
+        claves={[mira(0, 2400, P - 336, 1.4), mira(k(387.0), 2402, P - 336, 1.42, { curva: "inout" }), mira(k(388.5), 2380, P - 262, 1.7, { curva: "inout" }), mira(k(391.05), 2382, P - 258, 1.78, { curva: "inout" })]}
         medio={<>
           <PjM look={JUNE} ruta={[{ f: 0, x: XJ, y: P }]} seed={2} dir={[{ f: 0, v: 1 }]}
-            poses={[{ f: 0, v: "parado" }, { f: k(386.99), v: "hablar" }, { f: k(388.4), v: "saludar" }, { f: k(389.8), v: "celebrar" }]}
+            poses={[{ f: 0, v: "parado" }, { f: k(386.99), v: "hablar", d: 10 }, { f: k(388.4), v: "saludar", d: 12 }, { f: k(389.8), v: "celebrar", d: 12 }]}
             caras={[{ f: 0, v: "determinado" }, { f: k(383.6), v: "picaro" }, { f: k(385.6), v: "feliz" }, { f: k(388.4), v: "risa" }]}
             miradas={[{ f: 0, v: { x: 0.6, y: -1 } }, { f: k(385.6), v: { x: 0, y: 0 } }, { f: k(388.4), v: { x: 0.2, y: -0.1 } }]}
             habla={[[k(383.0), k(384.0)], [k(385.6), k(386.2)], [k(386.9), k(388.0)], [k(388.4), k(390.2)]]}
@@ -1577,9 +1596,11 @@ export const P79Cta: React.FC = () => {
       <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}>
         <TarjetasPop x={430} y={300} p={pp} salida={sal} marca={marca} voto={tr(f, k(385.4), k(385.8))} />
       </svg>
-      <Globo texto="Which ONE rule would you pick?" x={960} y={250} desde={k(383.0)} hasta={fin} tam={40} />
-      <Globo texto="Tell me in the comments!" x={960} y={300} desde={k(386.99)} hasta={k(391.05)} tam={50} />
-      <Pildora texto="SUBSCRIBE · THE CENSUS CONTINUES" x={960} y={340} desde={k(388.43)} color={AMBAR} tam={44} />
+      {/* v6a: globos OPACOS y grandes con pop; uno sale encogiéndose (6 cuadros) y recién ahí entra el otro; la cámara
+          se acerca a los dos con mira() inout de 45 cuadros hasta el saludo (antes: todo quieto en 387,27 = lageo) */}
+      <GloboV6 texto="Which ONE rule would you pick?" x={960} y={268} desde={k(383.0)} hasta={k(386.8)} tam={60} />
+      <GloboV6 texto="Tell me in the comments!" x={960} y={250} desde={k(387.0)} tam={58} colaX={0.35} />
+      <Pildora texto="SUBSCRIBE · THE CENSUS CONTINUES" x={960} y={292} desde={k(388.43)} color={AMBAR} tam={44} />
     </AbsoluteFill>
   );
 };
