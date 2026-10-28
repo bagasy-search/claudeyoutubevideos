@@ -41,9 +41,9 @@ const planos: PlanoM[] = CORTES.map(([t, El, trans], i) => {
 const HudLc02: React.FC = () => (
   <>
     {/* cuadro 0 = la miniatura: −30°F arriba a la izquierda + POPULATION: 2 */}
-    <Segundo claves={[{ f: 0, v: -30 }, { f: S(2.98), v: -28, d: 10 }, { f: S(112.69), v: -4, d: 20 }, { f: S(119.15), v: -31, d: 16 }, { f: S(172.69), v: -20, d: 12 }, { f: S(182.89), v: -12, d: 12 }, { f: S(208.1), v: -15, d: 10 }, { f: S(271.3), v: -8, d: 12 }, { f: S(328.39), v: 18, d: 30 }]}
+    <Segundo claves={[{ f: 0, v: -30 }, { f: S(2.98), v: -28, d: 1 }, { f: S(119.15), v: -31, d: 1 }, { f: S(172.69), v: -20, d: 1 }, { f: S(182.89), v: -12, d: 1 }, { f: S(208.1), v: -15, d: 1 }, { f: S(271.3), v: -8, d: 1 }, { f: S(328.39), v: 18, d: 1 }]}
       sufijo="°F" icono="temp" color={FRIO} y={122} desde={-60} signo />
-    <Segundo claves={[{ f: 0, v: 41 }, { f: S(29.58), v: 42, d: 6 }, { f: S(103.65), v: 60, d: 20 }, { f: S(182.89), v: 83, d: 20 }, { f: S(208.1), v: 90, d: 10 }, { f: S(276.84), v: 100, d: 12 }, { f: S(328.39), v: 130, d: 30 }]}
+    <Segundo claves={[{ f: 0, v: 41 }, { f: S(29.58), v: 42, d: 1 }, { f: S(103.65), v: 60, d: 1 }, { f: S(182.89), v: 83, d: 1 }, { f: S(208.1), v: 90, d: 1 }, { f: S(271.3), v: 100, d: 1 }, { f: S(328.39), v: 130, d: 1 }]}
       prefijo="DAY " icono="dia" y={196} desde={S(15.5)} />
     <Poblacion claves={[{ f: 0, v: 2 }, { f: S(381.45), v: 3, d: 8 }]} desde={-60} />
     <MarcaCorto />
