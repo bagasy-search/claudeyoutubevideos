@@ -86,6 +86,7 @@ const HS: H[] = (HEROES as H[]).map((h) => {
   const u = new Set<string>();
   const out: H = { ...h, stack: COMMENTS };
   if (h.imgAt !== undefined) out.img = imgNear(h.imgAt, u);
+  out.bg = imgNear(h.at + 1, u);
   if (h.imgsAt) out.imgs = (h.imgsAt as number[]).map((x) => imgNear(x, u));
   if (h.items) out.items = (h.items as any[]).map((it) => ({ ...it, img: it.img ?? imgNear(it.at, u) }));
   return out;

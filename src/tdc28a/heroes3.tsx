@@ -35,12 +35,13 @@ export const HFlow: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h
   return <>
     <Head tt={tt} kick="SI YA TENÉS ESTUFA" title="EL GAS NO SE TOCA" />
     <svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0 }}>
-      <path d="M 330 560 L 1590 560" stroke="rgba(255,255,255,.1)" strokeWidth={22} strokeLinecap="round" />
+      <path d="M 330 560 L 1590 560" stroke="rgba(255,255,255,.08)" strokeWidth={22} strokeLinecap="round" />
       <path d="M 330 560 L 1590 560" stroke={AMB} strokeWidth={10} strokeLinecap="round" pathLength={1} strokeDasharray={`${eio(tt, 0.6, 3.6)} 1`} />
       {tt > 3.6 && <circle cx={330 + 1260 * pulse} cy={560} r={20} fill="#fff" style={{ filter: `drop-shadow(0 0 20px ${AMB})` }} />}
     </svg>
     {N.map((n, i) => { const s = phys(tt, 0.4 + i * 0.9, 6, 0.45); return <div key={i} style={{ position: "absolute", left: 330 + i * 420, top: 560, transform: `translate(-50%,-50%) scale(${cl(s) + (s > 1 ? (s - 1) * 0.4 : 0)})`, textAlign: "center" }}>
-      <div style={{ width: 200, height: 200, borderRadius: 40, background: "linear-gradient(160deg,#2a2622,#141210)", boxShadow: `0 0 0 3px ${AMB}66, 0 30px 70px rgba(0,0,0,.6)`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 100 }}>{E[i]}</div>
+      <div style={{ position: "relative" }}><Photo id={h.imgs?.[i]} w={250} h={250} r={36} style={{ boxShadow: `0 0 0 3px ${AMB}88, 0 30px 70px rgba(0,0,0,.6)` }} />
+        <div style={{ position: "absolute", right: -18, bottom: -18, width: 76, height: 76, borderRadius: 38, background: "#16130f", boxShadow: `0 0 0 3px ${AMB}`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 40 }}>{E[i]}</div></div>
       <div style={{ marginTop: 18, fontWeight: 900, fontSize: 36, letterSpacing: 3 }}>{n}</div>
     </div>; })}
     <div style={{ position: "absolute", left: 960, top: 860, transform: "translateX(-50%)", display: "flex", alignItems: "center", gap: 24, opacity: cl(phys(tt, 4.0, 6, 0.5)) }}>
@@ -85,10 +86,11 @@ export const HTimeline: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={
     <div style={{ position: "absolute", left: X(now) - 14, top: 549, width: 28, height: 28, borderRadius: 14, background: AMB, boxShadow: `0 0 30px ${AMB}` }} />
     {Array.from({ length: 13 }, (_, i) => <div key={i} style={{ position: "absolute", left: X(7 + i), top: 590, transform: "translateX(-50%)", fontWeight: 800, fontSize: 28, color: DIM, opacity: cl(tt * 2 - i * 0.1) }}>{7 + i}</div>)}
     {mk.map((m, i) => { const s = phys(tt, m.at - h.at, 6, 0.45), up = i % 2 === 0, lit = m.on !== false;
-      return <div key={i} style={{ position: "absolute", left: X(m.hr), top: up ? (i % 4 === 0 ? 300 : 410) : (i % 4 === 1 ? 650 : 760), transform: `translateX(-50%) translateY(${(1 - s) * (up ? -120 : 120)}px)`, opacity: cl(s * 2) * (lit ? 1 : 0.45), textAlign: "center" }}>
-        {!up && <div style={{ width: 3, height: (i % 4 === 1 ? 60 : 170) * cl(s), background: lit ? AMB : DIM, margin: `${i % 4 === 1 ? -60 : -170}px auto 0` }} />}
-        <div style={{ padding: "16px 22px", borderRadius: 18, background: lit ? "rgba(255,180,80,.12)" : "rgba(255,255,255,.04)", border: `2px solid ${lit ? AMB : "rgba(255,255,255,.15)"}`, fontWeight: 900, fontSize: 30, whiteSpace: "nowrap" }}>{m.l}</div>
-        {up && <div style={{ width: 3, height: (i % 4 === 0 ? 140 : 70) * cl(s), background: lit ? AMB : DIM, margin: "0 auto" }} />}
+      return <div key={i} style={{ position: "absolute", left: X(m.hr), top: !lit ? 830 : up ? 300 : 650, transform: `translateX(-50%) translateY(${(1 - s) * (up ? -120 : 120)}px)`, opacity: cl(s * 2) * (lit ? 1 : 0.45), textAlign: "center" }}>
+        {!up && lit && <div style={{ width: 3, height: 60 * cl(s), background: lit ? AMB : DIM, margin: "-60px auto 0" }} />}
+        <div style={{ padding: lit && (m as any).img ? "10px 10px 14px" : "16px 22px", borderRadius: 18, background: lit ? "rgba(30,24,16,.92)" : "rgba(255,255,255,.04)", border: `2px solid ${lit ? AMB : "rgba(255,255,255,.15)"}`, fontWeight: 900, fontSize: 30, whiteSpace: "nowrap", boxShadow: lit ? "0 24px 50px rgba(0,0,0,.5)" : undefined }}>
+          {lit && (m as any).img && <Photo id={(m as any).img} w={240} h={140} r={12} style={{ marginBottom: 10 }} />}{m.l}</div>
+        {up && lit && <div style={{ width: 3, height: 140 * cl(s), background: lit ? AMB : DIM, margin: "0 auto" }} />}
       </div>; })}
   </>;
 }}</Stage>;
@@ -201,6 +203,8 @@ export const HCylinders: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t=
         <rect x={120} y={20} width={60} height={50} rx={8} fill="#8a8a90" />
         <path d="M40 120 Q40 70 150 70 Q260 70 260 120 L260 420 Q260 450 230 450 L70 450 Q40 450 40 420 Z" fill="#202024" stroke="rgba(255,255,255,.2)" strokeWidth={4} />
         <rect x={40} y={450 - 380 * f} width={220} height={380} fill={`url(#cg${i})`} clipPath={`url(#cy${i})`} />
+        <rect x={64} y={110} width={24} height={320} rx={12} fill="rgba(255,255,255,.2)" /><rect x={222} y={130} width={10} height={280} rx={5} fill="rgba(255,255,255,.08)" />
+        <path d="M40 200 L260 200 M40 380 L260 380" stroke="rgba(0,0,0,.35)" strokeWidth={6} />
       </svg>
       <div style={{ textAlign: "center", fontWeight: 900, fontSize: 34, color: f >= 1 ? AMB : DIM }}>{f >= 1 ? "10 kg ✓" : f > 0 ? `${(f * 10).toFixed(1).replace(".", ",")} kg` : "—"}</div>
     </div>; })}

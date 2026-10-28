@@ -28,7 +28,7 @@
 {"k": "danger", "at": 1193.97, "out": 1203.34},
 {"k": "night", "at": 1227.99, "out": 1239.27},
 {"k": "probe", "at": 1278.3, "out": 1288.37},
-{"k": "flow", "at": 1360.5, "out": 1372.62},
+{"k": "flow", "at": 1360.5, "out": 1372.62, "imgs": ["n_salamandra", "n_hervor_estufa", "f_cajon_suyo", "n_locro"]},
 {"k": "bricks", "at": 1381.15, "out": 1387.46},
 {"k": "timeline", "at": 1413.25, "out": 1425.27, "marks": [{"hr": 7, "l": "PRENDO LA ESTUFA", "at": 1415.3},
 {"hr": 7.5, "l": "POROTOS AL FUEGO", "at": 1423.6},

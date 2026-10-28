@@ -126,7 +126,10 @@ export const HBattery: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t
     <div style={{ position: "absolute", left: 960, top: 580, transform: "translate(-50%,-50%)" }}>
       <div style={{ width: 760, height: 330, borderRadius: 40, border: "14px solid #d8d4cc", padding: 20, position: "relative", boxShadow: "0 40px 100px rgba(0,0,0,.6)" }}>
         <div style={{ position: "absolute", right: -50, top: 100, width: 36, height: 130, borderRadius: "0 14px 14px 0", background: "#d8d4cc" }} />
-        <div style={{ height: "100%", width: `${cl(lv) * 100}%`, borderRadius: 22, background: `linear-gradient(180deg, ${c}, ${c}aa)`, boxShadow: `0 0 50px ${c}88` }} />
+        <div style={{ height: "100%", width: `${cl(lv) * 100}%`, borderRadius: 22, background: `linear-gradient(180deg, ${c}, ${c}aa)`, boxShadow: `0 0 50px ${c}88`, position: "relative", overflow: "hidden" }}>
+          {Array.from({ length: 9 }, (_, k) => <div key={k} style={{ position: "absolute", left: `${(k * 37 + tt * 60) % 100}%`, top: `${20 + (k * 29) % 60}%`, width: 10, height: 10, borderRadius: 5, background: "rgba(255,255,255,.35)" }} />)}
+        </div>
+        <div style={{ position: "absolute", left: 20, right: 20, top: 20, height: "38%", borderRadius: "22px 22px 60px 60px", background: "linear-gradient(180deg,rgba(255,255,255,.28),transparent)" }} />
         {boost > 0.05 && boost < 1.3 && <svg width={140} height={220} viewBox="0 0 140 220" style={{ position: "absolute", left: 310, top: 40, opacity: cl(1.3 - boost) }}><path d="M84 0 L20 120 L66 120 L48 220 L124 84 L76 84 Z" fill="#fff" /></svg>}
       </div>
       <div style={{ textAlign: "center", fontWeight: 900, fontSize: 92, marginTop: 24, color: c }}>{Math.round(cl(lv) * 100)}%</div>

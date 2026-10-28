@@ -103,7 +103,11 @@ export const HLeaflet: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t
 }}</Stage>;
 
 // ---- 3:52 · 9 DE 10: diez personas caen en fila; nueve se apagan, una se enciende ----
-const Person: React.FC<{ c: string }> = ({ c }) => <svg width={110} height={240} viewBox="0 0 110 240"><circle cx={55} cy={40} r={30} fill={c} /><path d="M15 240 L15 130 Q15 82 55 82 Q95 82 95 130 L95 240 Z" fill={c} /></svg>;
+let PID = 0;
+const Person: React.FC<{ c: string }> = ({ c }) => { const id = "pp" + (PID++ % 40); return <svg width={110} height={260} viewBox="0 0 110 260">
+  <defs><linearGradient id={id} x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stopColor={c} /><stop offset="55%" stopColor={c} /><stop offset="100%" stopColor="#000" stopOpacity={0.55} /></linearGradient></defs>
+  <circle cx={55} cy={40} r={30} fill={`url(#${id})`} /><path d="M15 240 L15 130 Q15 82 55 82 Q95 82 95 130 L95 240 Z" fill={`url(#${id})`} />
+  <ellipse cx={55} cy={250} rx={46} ry={8} fill="rgba(0,0,0,.45)" /></svg>; };
 export const HPeople: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="blinds">{(tt) => {
   const off = eio(tt, 2.0, 2.9);
   return <>
@@ -140,6 +144,7 @@ export const HKnob: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h
         <rect x={120} y={20} width={60} height={50} rx={8} fill="#8a8a90" />
         <path d="M40 120 Q40 70 150 70 Q260 70 260 120 L260 420 Q260 450 230 450 L70 450 Q40 450 40 420 Z" fill="#2c2c30" stroke="rgba(255,255,255,.15)" strokeWidth={3} />
         <rect x={40} y={70 + 380 * (1 - lvl)} width={220} height={380} fill="#e8a33c" clipPath="url(#gc)" opacity={0.9} />
+        <rect x={64} y={110} width={24} height={320} rx={12} fill="rgba(255,255,255,.18)" />
       </svg>
       <div style={{ position: "absolute", left: 0, right: 0, top: 480, textAlign: "center", fontWeight: 900, fontSize: 64 }}>{hrs.toFixed(1).replace(".", ",")} <span style={{ fontSize: 34, color: DIM }}>HORAS</span></div>
     </div>
