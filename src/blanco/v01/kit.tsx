@@ -52,8 +52,16 @@ export const tomas = (F: (s: number) => number, D: number, lista: [number, Enc, 
 
 // los globitos de un bloque (s ES); cada uno lleva un blip en la mezcla (D:/rtmp/blanco/v01/mezclar_blips_video.py)
 export type GloboDef = { tipo?: Parameters<typeof Globo>[0]["tipo"]; texto?: [string, string]; desde: number; hasta: number; x: number; y: number; cola: [number, number]; tam?: number };
+// 28-oct «salen del centro, tienen que salir de la persona que los dice»: el globo se arma al lado de la cabeza (`cola`),
+// del lado que tenga más aire, a ~250 px; x/y del GloboDef quedan sólo como lado preferido.
+export const junto = (g: { x: number; cola: [number, number]; tam?: number; texto?: [string, string]; tipo?: unknown }): [number, number] => {
+  const [cx, cy] = g.cola, t = g.tam ?? 1;
+  const lado = cx > 1280 ? -1 : cx < 640 ? 1 : Math.sign(g.x - cx) || 1;
+  const largo = g.texto && !g.tipo ? Math.max(150, g.texto[0].length * 17) : 135;
+  return [Math.min(1920 - largo * t - 60, Math.max(largo * t + 60, cx + lado * (largo + 120) * t)), Math.max(170 * t, cy - 200 * t)];
+};
 export const Globos: React.FC<{ lista: GloboDef[]; F: (s: number) => number; L: Idioma }> = ({ lista, F, L }) => (
-  <>{lista.map((g, i) => <Globo key={i} {...g} texto={g.texto ? (L === "es" ? g.texto[0] : g.texto[1]) : undefined} desde={F(g.desde)} hasta={F(g.hasta)} />)}</>
+  <>{lista.map((g, i) => { const [x, y] = junto(g); return <Globo key={i} {...g} x={x} y={y} texto={g.texto ? (L === "es" ? g.texto[0] : g.texto[1]) : undefined} desde={F(g.desde)} hasta={F(g.hasta)} />; })}</>
 );
 
 // fuera de cuadro salvo entre [a, b] (s locales): así un extra no se cuela en otro plano

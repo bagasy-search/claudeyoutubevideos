@@ -1,6 +1,7 @@
 // b01 · LA APERTURA (vara del creador 28-oct): abre los ojos en el barro, todo negro → parpadea → se aclara, la cámara
 // arranca pegada a su cara y se aleja hasta mostrar una Londres viva; en cada segundo pasa algo, pero limpio.
 // Todo va clavado a la PALABRA (tiempos del ASR de cada idioma, en segundos), no a fracciones del bloque.
+import { PBola } from "./Piezas2";
 import React from "react";
 import { AbsoluteFill, interpolate, spring, useVideoConfig } from "remotion";
 import { mira, useF } from "../../anikit/camara";
@@ -126,7 +127,7 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
   const gente = [...transeuntes({ x0: X - 2400, x1: X - 900, n: 4, seed: "b01a", dur: 33, quietos: 4 }), ...transeuntes({ x0: X + 1000, x1: X + 3000, n: 4, seed: "b01b", dur: 33, quietos: 4 })];
   return (
     <>
-      <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2.5} seed={11} dibujo={{}}
+      <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2.5} seed={11} corre={[[F(t.ventaja - 0.2), F(t.cuanto - 0.3), 300]]} dibujo={{}}
         claves={[
           mira(0, CARA[0] + 46, CARA[1] - 14, 4.4),
           mira(F(t.olor), CARA[0] + 34, CARA[1] - 20, 3.9, { curva: "inout" }),
@@ -191,7 +192,7 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
           <IconoGrande tipo="moneda_no" desde={F(t.dinero)} hasta={F(t.casa + 0.2)} />
           <IconoGrande tipo="casa_no" desde={F(t.casa + 0.25)} hasta={F(t.hablas + 0.55)} />
           <IconoGrande tipo="pregunta" desde={F(t.hablas + 0.6)} hasta={F(t.ventaja - 0.1)} />
-          <IconoGrande tipo="bombilla" desde={F(t.ventaja)} hasta={F(t.cuanto - 0.2)} tam={1.9} y={360} />
+          <PBola a={F(t.ventaja - 0.2)} b={F(t.cuanto - 0.3)} ve={F(t.sabes)} rotulo={tx("LO QUE VIENE", "WHAT'S COMING")} />
           <IconoGrande tipo="reloj" desde={F(t.cuanto)} hasta={F(t.hora + 1.5)} />
           <Aclara desde={F(t.ojos + 1.0)} dur={64} />
           <Despertar f0={F(t.ojos) - 4} fin={44} cx={960} cy={540} />

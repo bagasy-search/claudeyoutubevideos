@@ -2,6 +2,9 @@
 // PLANO POR FRASE. Base = plano medio corto (de la cintura para arriba llenando el cuadro, centrado, un ícono grande al
 // lado de la cabeza: la ref del creador), cortes de reacción en cada remate, insertos de objetos, encuadre nuevo cada
 // 2–4 s y cámara siempre curva. Personajes en modo dibujo (cel + contorno) para casar con los fondos pintados.
+import { PCasas } from "./Piezas2";
+import { Foco } from "./foco";
+import { luzCasa } from "../sets/pintado";
 import React from "react";
 import { AbsoluteFill, Easing, interpolate, spring } from "remotion";
 import { mira, useF } from "../../anikit/camara";
@@ -14,7 +17,7 @@ import { Globo, IconoGrande } from "../iconos";
 import { CallePintada, Pieza } from "../sets/pintado";
 import { Cerdo, Gallina, PAL_LONDRES as PAL, PISO, Rata } from "../sets/londres";
 import { Apertura } from "./Apertura";
-import { PMC, reloj } from "./kit";
+import { junto, PMC, reloj } from "./kit";
 export { PMC };
 
 const cl = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -28,7 +31,6 @@ const T2 = { mira: 0.7, esto: 1.9, unas: 4.2, casas: 7.0, asi: 11.3, nohay: 13.3
 export const GLOBOS: { tipo?: Parameters<typeof Globo>[0]["tipo"]; texto?: [string, string]; desde: number; hasta: number; x: number; y: number; cola: [number, number]; tam?: number }[] = [
   { tipo: "gente", texto: ["70.000", "70,000"], desde: 4.4, hasta: 6.9, x: 1270, y: 220, cola: [1050, 330], tam: 1.15 },
   { texto: ["¡AGUA VA!", "WATER BELOW!"], desde: 18.0, hasta: 19.05, x: 1470, y: 250, cola: [1010, 470], tam: 0.95 },
-  { tipo: "alerta", desde: 26.4, hasta: 27.0, x: 1400, y: 270, cola: [1080, 370] },
   { tipo: "gota", desde: 27.15, hasta: 28.05, x: 1580, y: 250, cola: [1330, 400] },
   { tipo: "inodoro", desde: 28.2, hasta: 29.05, x: 1430, y: 270, cola: [1090, 380] },
   { tipo: "basura", desde: 29.2, hasta: 30.7, x: 420, y: 230, cola: [650, 360] },
@@ -82,7 +84,7 @@ export const B02P: React.FC<{ D: number; L: Idioma }> = ({ D, L }) => {
   };
   const gente = (i: number, x: number, prof: number, guion: PasoGuion[]): Personaje => ({ x, ropa: ROPA[OFICIOS[(i * 5 + 2) % OFICIOS.length]], guion, semilla: 20 + i, prof, mov: (s) => fuera(s, x < X ? -1 : 1) });
   return (
-    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2} seed={21} dibujo={{}} profundidad={1}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2} seed={21} corre={[[F(8.6), F(13.3), 300]]} dibujo={{}} profundidad={2.6}
       claves={[
         // «Primero, mira a tu alrededor»: plano medio corto, él mira a un lado y al otro
         pmc(0, X - 10, {}, 0.1), pmc(F(1.6), X + 10, { rot: 0.6 }),
@@ -129,7 +131,8 @@ export const B02P: React.FC<{ D: number; L: Idioma }> = ({ D, L }) => {
         { x: RIO - 380, ropa: ROPA.pescadero, guion: [{ t: 0, accion: "cargar_caja", rotY: 80, expr: "feliz" }], semilla: 31, prof: -0.6 },
         { x: RIO + 360, ropa: ROPA[OFICIOS[3]], guion: [{ t: 0, accion: "explicar", rotY: 70, expr: "aburrido" }, { t: S(29.5), accion: "caminar", rotY: 90, expr: "aburrido" }], semilla: 32, prof: -1.6, escala: 0.9, mov: (s) => ({ dx: s < S(30.75) ? 0 : 9000 }) },
       ]}
-      detras={<><Pieza n="muelle" cx={RIO + 480} base={PISO + 60} alto={170} espejo />{f >= F(17.9) && f <= F(19.3) && <ParedVentana x={X} />}{f >= F(8.3) && f <= F(9.55) && <Callejon x={X} />}</>}
+      detras={<><Pieza n="muelle" cx={RIO + 480} base={PISO + 60} alto={170} espejo />{f >= F(17.9) && f <= F(19.3) && <ParedVentana x={X} />}{f >= F(8.3) && f <= F(9.55) && <Callejon x={X} />}
+        <Foco f={f} luces={[luzCasa(4, F(7.9), F(10.8)), luzCasa(3, F(8.05), F(10.8)), luzCasa(5, F(8.2), F(10.8)), { desde: F(25.5), hasta: F(29.4), x: RIO + 500, y: PISO + 60, rx: 1000, ry: 260 }]} /></>}
       sobre={<>
         {/* los animales 2D llevan el mismo trazo marrón que los personajes */}
         <g stroke="#3a2414" strokeWidth={5} strokeLinejoin="round">
@@ -147,9 +150,9 @@ export const B02P: React.FC<{ D: number; L: Idioma }> = ({ D, L }) => {
       hud={<>
         <Dato texto="CHEAPSIDE" x={960} y={120} desde={F(2.1)} hasta={F(4.1)} tam={120} color="#ffd23c" rot={0} />
         <IconoGrande tipo="pregunta" desde={F(0.1)} hasta={F(1.8)} />
-        <IconoGrande tipo="sol_no" desde={F(9.6)} hasta={F(13.2)} />
+        <PCasas a={F(8.6)} b={F(13.3)} pisos={[F(9.0), F(9.5), F(10.1)]} tapa={F(12.3)} />
         <IconoGrande tipo="cloaca_no" desde={F(13.45)} hasta={F(16.8)} />
-        {GLOBOS.map((g, i) => <Globo key={i} {...g} texto={g.texto ? tx(g.texto[0], g.texto[1]) : undefined} desde={F(g.desde)} hasta={F(g.hasta)} />)}
+        {GLOBOS.map((g, i) => { const [x, y] = junto(g); return <Globo key={i} {...g} x={x} y={y} texto={g.texto ? tx(g.texto[0], g.texto[1]) : undefined} desde={F(g.desde)} hasta={F(g.hasta)} />; })}
       </>}
     />
   );

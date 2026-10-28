@@ -14,19 +14,36 @@ import { OpcionesDibujo } from "./dibujo";
 
 export type Idioma = "es" | "en";
 
+// 28-oct «se nota un pa»: claves a 1-6 cuadros con un salto grande daban un latigazo de cámara (ni corte ni movimiento).
+// Esos tramos se vuelven corte seco: la toma anterior se sostiene hasta el cuadro previo y cambia en uno.
+export const secar = (cl: Clave[]): Clave[] => {
+  const o: Clave[] = [];
+  cl.forEach((k, i) => {
+    const a = o[o.length - 1];
+    const T = a ? k.f - a.f : 0;
+    const salto = a && (Math.abs(k.x - a.x) + Math.abs(k.y - a.y) > 60 || Math.abs(Math.log(k.zoom / a.zoom)) > 0.08);
+    if (a && i > 0 && T > 1 && T <= 6 && salto) o.push({ ...a, f: k.f - 1, curva: "inout", resorte: undefined });
+    o.push(k);
+  });
+  return o;
+};
+
 export const EscenaB: React.FC<{
   Set: React.FC<any>; pal: Paleta; claves: Clave[]; setProps?: Record<string, unknown>; momento?: Momento;
   personajes?: Personaje[]; luz?: LuzEscena; detras?: React.ReactNode; sobre?: React.ReactNode; frente?: React.ReactNode; hud?: React.ReactNode;
   mano?: number; seed?: number; zLejos?: number; interior?: boolean; zTras?: number; dibujo?: OpcionesDibujo; profundidad?: number;
-}> = ({ Set, pal, claves, setProps = {}, momento, personajes = [], luz, detras, sobre, frente, hud, mano = 3, seed = 0, zLejos = 0.25, interior, zTras, dibujo, profundidad = 0 }) => {
+  corre?: [number, number, number][]; // [cuadro desde, hasta, px]: la cámara se corre de costado (y vuelve) para dejarle lugar a una pieza lateral
+}> = ({ Set, pal, claves, setProps = {}, momento, personajes = [], luz, detras, sobre, frente, hud, mano = 3, seed = 0, zLejos = 0.25, interior, zTras, dibujo, profundidad = 2.6, corre = [] }) => { // 28-oct: primer plano con el fondo desenfocado en todo el video («lo mejor»)
   const f = useF();
   const S = momento ? conMomento(Set, momento, { interior }) : Set;
   const P = momento ? palMomento(pal, momento) : pal;
   const sp = { f, pal: P, ...setProps };
   const noche = momento === "noche";
+  const ease = (u: number) => (u <= 0 ? 0 : u >= 1 ? 1 : u * u * (3 - 2 * u));
+  const dx = corre.reduce((acc, [a, b, px]) => acc + px * ease((f - a + 10) / 18) * (1 - ease((f - b) / 20)), 0);
   return (
     <AbsoluteFill>
-      <Plano claves={claves} mano={mano} seed={seed} fondo={P.cielo[0]} mbMax={2.5}>
+      <Plano claves={secar(claves)} mano={mano} seed={seed} fondo={P.cielo[0]} mbMax={2.5} extra={{ x: dx }}>
         <CapaSVG z={zLejos} desenfoqueMax={3} desenfoqueZoom={profundidad * 1.3}><S capa="lejos" {...sp} /></CapaSVG>
         {zTras !== undefined && <CapaSVG z={zTras} desenfoqueMax={2} desenfoqueZoom={profundidad * 1.15}><S capa="tras" {...sp} /></CapaSVG>}
         <CapaSVG z={1} desenfoqueZoom={profundidad}><S capa="medio" {...sp} />{detras}</CapaSVG>

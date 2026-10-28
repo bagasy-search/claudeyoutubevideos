@@ -1,6 +1,9 @@
 // Bloques 7–10 al nivel del piloto. Pedido del creador (28-oct): «ir cambiando los fondos, uno por problema» → cada
 // bloque tiene su lugar y su luz, y en el 8 (avisar) cada frase pasa en un sitio distinto (panadería, taberna, puerto,
 // mercado, lluvia). Tiempos en s ES; `reloj` los lleva a la EN.
+import { PNegocio, PPizarra } from "./Piezas2";
+import { Foco } from "./foco";
+import { luzCasa } from "../sets/pintado";
 import React from "react";
 import { Easing, interpolate } from "remotion";
 import { useF } from "../../anikit/camara";
@@ -28,7 +31,7 @@ const RataSoga: React.FC<{ f: number; u: number; s?: number }> = ({ f, u, s = 1 
 const Bultos: React.FC<{ x: number; y: number; f: number }> = ({ x, y, f }) => (
   <g stroke={M_} strokeWidth={3}>{[[-10, 22, 10], [8, 26, 12]].map(([dx, dy, r], i) => {
     const k = 1 + 0.05 * Math.sin(f * 0.1 + i);
-    return <g key={i}><ellipse cx={x + dx} cy={y + dy} rx={r * 1.3 * k} ry={r * k} fill="#8a3a52" /><ellipse cx={x + dx - r * 0.35} cy={y + dy - r * 0.3} rx={r * 0.35} ry={r * 0.22} fill="#d88aa0" stroke="none" /></g>;
+    return <g key={i}><ellipse cx={x + dx} cy={y + dy} rx={r * 2.1} ry={r * 1.7} fill="#6a4a58" opacity={0.35} stroke="none" /><ellipse cx={x + dx} cy={y + dy} rx={r * 1.3 * k} ry={r * k} fill="#24141c" /><ellipse cx={x + dx - r * 0.35} cy={y + dy - r * 0.3} rx={r * 0.3} ry={r * 0.18} fill="#6a5a66" stroke="none" /></g>;
   })}</g>
 );
 
@@ -45,7 +48,7 @@ export const B07P: React.FC<B> = ({ D, L }) => {
   // las ratas: salen de la borda de a una cada 0,9 s y tardan 3 s en bajar
   const ratas = (t0: number) => Array.from({ length: 7 }).map((_, i) => <RataSoga key={i} f={f} u={1 - (f - F(t0) - i * 27) / 90} s={1.15} />);
   return (
-    <EscenaB Set={PuertoPintado} pal={PAL} mano={2} seed={71} dibujo={{}} profundidad={1}
+    <EscenaB Set={PuertoPintado} pal={PAL} mano={2} seed={71} dibujo={{}} profundidad={2.6}
       claves={tomas(F, D, [
         [0, Me(1000, 1.7), Me(1120, 1.85)], // Día 2: vas al puerto a buscar trabajo
         [2.6, P(X, 0), P(X, 0.3, -0.5)], // algo que te congela la sangre
@@ -70,7 +73,9 @@ export const B07P: React.FC<B> = ({ D, L }) => {
         { x: ES1, semilla: 74, ropa: ROPA.aguatero, mov: (s) => ({ dx: ventanas(s, [[S(16.3), S(19.7)]]) }), guion: [{ t: 0, accion: "reir", expr: "carcajada", rotY: 30 }] },
         { x: ES2, semilla: 75, ropa: ROPA.granjero, mov: (s) => ({ dx: ventanas(s, [[S(16.3), S(19.7)]]) }), guion: [{ t: 0, accion: "pose_brazos_cruzados", expr: "aburrido", rotY: -30 }] },
       ]}
+      detras={<Foco f={f} luces={[{ desde: F(4.6), hasta: F(6.4), x: 2850, y: PISO - 460, rx: 620, ry: 420 }]} />}
       sobre={<>
+        <Foco f={f} sobre luces={[{ desde: F(10.2), hasta: F(11.3), x: M2 + 30, y: PISO - 262, rx: 110, ry: 90 }, { desde: F(13.2), hasta: F(16.1), x: 2380, y: PISO - 150, rx: 360, ry: 230 }]} />
         {f >= F(6.6) && f < F(11.4) && <><Sudor f={f} x={M1} y={PISO - 330} desde={F(6.6)} hasta={F(8.8)} s={0.75} /><Sudor f={f} x={M2} y={PISO - 330} desde={F(6.6)} hasta={F(11.4)} s={0.75} /></>}
         {f >= F(8.8) && f < F(11.4) && <Bultos x={M2 + 30} y={PISO - 262} f={f} />}
         {f >= F(11.4) && f < F(16.3) && ratas(11.6)}
@@ -83,7 +88,6 @@ export const B07P: React.FC<B> = ({ D, L }) => {
         <IconoGrande tipo="calavera" desde={F(9.8)} hasta={F(11.3)} />
         <PMapa a={F(19.8)} b={F(24.9)} llega={F(22.1)} muerte={F(22.2)} londres={tx(L, "LONDRES", "LONDON")} francia={tx(L, "FRANCIA", "FRANCE")} />
         <Globos F={F} L={L} lista={[
-          { tipo: "barco", desde: 0.6, hasta: 2.5, x: 1450, y: 250, cola: cab(Me(1060, 1.75), 1000) },
           { texto: ["ES MARTES", "IT'S TUESDAY"], desde: 18.3, hasta: 19.6, x: 1250, y: 230, cola: cab(Me((ES1 + ES2) / 2, 2.3), ES2), tam: 0.85 },
         ]} />
       </>}
@@ -120,7 +124,7 @@ export const B08P: React.FC<B> = ({ D, L }) => {
   const hud = <>
     <IconoGrande tipo="alerta" desde={F(1.9)} hasta={F(2.75)} />
     <IconoGrande tipo="rayo" desde={F(15.5)} hasta={F(17.0)} />
-    <Dato texto={tx(L, "LECCIÓN Nº 1", "LESSON #1")} x={960} y={170} desde={F(19.9)} hasta={D} tam={120} color="#fff6e6" rot={0} />
+    <PPizarra a={F(19.7)} b={D - 4} t1={tx(L, "LECCIÓN Nº 1", "LESSON #1")} t2={tx(L, "SABER ≠ QUE TE CREAN", "KNOWING ≠ BEING BELIEVED")} dos={F(22.2)} />
     <Globos F={F} L={L} lista={[
       { tipo: "rata", desde: 3.4, hasta: 4.7, x: cab(Me(PANX + 100, 2.3), PANX)[0] - 260, y: 200, cola: cab(Me(PANX + 100, 2.3), PANX) },
       { tipo: "gota", desde: 5.4, hasta: 6.7, x: cab(Me(TABX + 20, 2.3), TABX + 200)[0] + 150, y: 200, cola: cab(Me(TABX + 20, 2.3), TABX + 200) },
@@ -198,10 +202,11 @@ export const B09P: React.FC<B> = ({ D, L }) => {
   const BARBERO: Ropa = { tunica: { color: "#a8302a", largo: 0.55, cinto: "#2a1a14" }, delantal: "#f4efe4", calzas: "#3a2a20", pelo: { color: "#2a2020", estilo: "corto" }, barba: "#2a2020", calzado: { tipo: "botas" } };
   const corre = (x0: number, d: number, sem: number, r: Ropa): Personaje => ubicado(x0, [{ t: 0, accion: "correr", rotY: d * 90, expr: "espantado" }], (s) => ventanas(s, [[S(7.0), S(9.9)]]) + x0 + d * (s - S(7.0)) * 232, { ropa: r, semilla: sem });
   return (
-    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} momento="lluvia" setProps={{ variante: "peste" }} mano={2} seed={91} dibujo={{}} profundidad={1}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} momento="lluvia" setProps={{ variante: "peste" }} mano={2} seed={91} dibujo={{}} profundidad={2.6}
       claves={tomas(F, D, [
         [0, Me(X, 1.1, -40), Me(X + 30, 1.25, -40, 0.5)], // Día 3. Y empieza.
-        [1.8, E(1150, PISO - 420, 1.05), E(1190, PISO - 430, 1.15, -0.5)], // primero dos casas, después diez
+        [1.8, E(1170, PISO - 420, 1.12)], // primero dos casas (se encienden) … la cámara se abre sola, sin corte …
+        [4.25, Me(1150, 0.66, -70), Me(1170, 0.7, -70, -0.4)], // … después diez: se van encendiendo todas
         [5.1, E(PUERTA, PISO - 230, 2.6), E(PUERTA, PISO - 250, 2.9, 0.5)], // en las puertas aparecen cruces
         [7.0, Me(2600, 1.6), Me(2620, 1.75, 0, -0.5)], // la ciudad entera se vuelve loca
         [9.9, P(FL, -0.05), P(FL, 0.2, 0.5)], // flores pegadas a la nariz
@@ -227,22 +232,19 @@ export const B09P: React.FC<B> = ({ D, L }) => {
         { x: PAC, semilla: 97, ropa: ROPA.pregonero, mov: (s) => ({ dx: ventanas(s, [[S(14.3), S(17.6)]]) }), guion: [{ t: 0, accion: "pose_temblando", expr: "llorando", rotY: -40 }] },
         { x: CLO, semilla: 98, ropa: ROPA.granjero, mov: (s) => ({ dx: ventanas(s, [[S(18.8), S(21.2)]]) }), guion: [{ t: 0, accion: "sentarse", expr: "feliz", rotY: 20 }, { t: S(20.3), accion: "sentarse", expr: "decidido", rotY: 20 }] },
       ]}
+      detras={<Foco f={f} luces={[luzCasa(3, F(2.4), F(5.0)), luzCasa(4, F(2.55), F(5.0)), ...[2, 5, 1, 6, 0].map((i, k) => luzCasa(i, F(4.3) + k * 4, F(5.0), 0.85))]} />}
       sobre={<>
-        {f >= F(9.9) && f < F(12.0) && <Flor x={FL + 16} y={PISO - 312} s={1.05} />}
+        {f >= F(9.9) && f < F(12.0) && <Flor x={FL + 30} y={PISO - 288} s={0.95} />}
         {f >= F(14.3) && f < F(17.6) && <path d={`M${PAC - 60} ${PISO - 190} q-10 ${30 + (f % 30)} -4 ${60 + (f % 30) * 2}`} stroke="#c8202a" strokeWidth={9} fill="none" strokeLinecap="round" />}
         {f >= F(18.8) && f < F(21.2) && <><Vapor f={f} x={CLO + 140} y={PISO - 40} color="#9ac85a" n={3} alto={240} s={1.2} /><Vapor f={f} x={CLO - 40} y={PISO - 300} color="#b8a070" n={2} alto={160} /></>}
         {f >= F(18.8) && f < F(21.2) && <ellipse cx={CLO + 140} cy={PISO + 6} rx={120} ry={20} fill="#5a6a2a" stroke={M_} strokeWidth={5} />}
       </>}
       hud={<>
-        <Dato texto="2" x={760} y={300} desde={F(2.4)} hasta={F(4.2)} tam={170} color="#ff5a3c" rot={0} />
         <PRueda a={F(6.8)} b={F(10.1)} para={F(9.5)} remedios={tx(L, "REMEDIOS", "CURES")} />
         <Dato texto="10" x={1160} y={300} desde={F(4.3)} hasta={F(5.05)} tam={190} color="#ff5a3c" rot={0} />
         <IconoGrande tipo="olor" desde={F(12.1)} hasta={F(14.2)} />
         <IconoGrande tipo="mascara_no" desde={F(24.9)} hasta={F(26.5)} x={1380} y={300} />
         <Globos F={F} L={L} lista={[
-          { tipo: "flor", desde: 10.7, hasta: 11.9, x: 1400, y: 250, cola: [1050, 340] },
-          { tipo: "sangre", desde: 15.9, hasta: 17.5, x: 1450, y: 220, cola: cab(Me((BAR + PAC) / 2, 2.4), PAC) },
-          { tipo: "olor", desde: 21.9, hasta: 23.1, x: 1450, y: 240, cola: [1060, 340] },
           { texto: ["+300 AÑOS", "+300 YEARS"], desde: 26.9, hasta: 28.5, x: 1400, y: 250, cola: [1060, 340], tam: 0.85 },
         ]} />
       </>}
@@ -279,7 +281,7 @@ export const B10P: React.FC<B> = ({ D, L }) => {
     const salto = interpolate(f, [F(12.1), F(12.1) + 12], [0, 1], { ...cl, easing: Easing.inOut(Easing.quad) });
     const gx = interpolate(salto, [0, 1], [NIN + 70, X - 20]), gy = interpolate(salto, [0, 1], [PISO - 125, PISO - 190]) - Math.sin(salto * Math.PI) * 120;
     return (
-      <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} momento="amanecer" mano={2} seed={101} dibujo={{}} profundidad={1}
+      <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} momento="amanecer" mano={2} seed={101} dibujo={{}} profundidad={2.6}
         claves={tomas(F, D, [
           [0, P(X, 0.1), P(X, 0.3, 0.5)], // pero tú sí sabes qué hacer
           [1.5, Me(X + 90, 2.2), Me(X + 100, 2.4, 0, -0.5)], // te lavas manos y cara con agua hervida
@@ -312,9 +314,8 @@ export const B10P: React.FC<B> = ({ D, L }) => {
         </>}
         hud={<>
           <IconoGrande tipo="bombilla" desde={F(0.2)} hasta={F(1.4)} />
-          <IconoGrande tipo="corazon" desde={F(9.6)} hasta={F(11.0)} />
+          <PNegocio a={F(9.3)} b={F(11.9)} gato={F(10.4)} gorro={tx(L, "GORRO", "HAT")} gatoTxt={tx(L, "GATO", "CAT")} />
           <Globos F={F} L={L} lista={[
-            { tipo: "espiral", desde: 4.0, hasta: 5.4, x: 1400, y: 250, cola: [1050, 340] },
             { tipo: "gato", desde: 11.3, hasta: 12.0, x: cab(Me((X + NIN) / 2, 2.4), X)[0] + 150, y: 200, cola: cab(Me((X + NIN) / 2, 2.4), X) },
           ]} />
         </>}
@@ -325,7 +326,7 @@ export const B10P: React.FC<B> = ({ D, L }) => {
   const R = 1250, FO = 1620;
   const caza = interpolate(f, [F(16.6), F(16.6) + 14], [0, 1], cl);
   return (
-    <EscenaB Set={TabernaPintada} pal={PAL} interior momento="noche" setProps={{ variante: "posada" }} mano={2} seed={102} dibujo={{}} profundidad={1}
+    <EscenaB Set={TabernaPintada} pal={PAL} interior momento="noche" setProps={{ variante: "posada" }} mano={2} seed={102} dibujo={{}} profundidad={2.6}
       claves={tomas(F, D, [
         [15.5, E(R + 120, PISO - 120, 2.6), E(R + 100, PISO - 110, 2.85, 0.5)], // se pasa la noche cazando ratas
         [17.7, E(FO + 165, PISO - 120, 2.1), E(FO + 165, PISO - 120, 2.25, -0.5)], // al lado de tu rincón

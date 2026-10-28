@@ -104,7 +104,8 @@ export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; ch
   const vx = Math.abs(p.x - q.x), vy = Math.abs(p.y - q.y);
   // rampa continua desde 0 (sin salto de nitidez al activarse) y tope bajo: más que 10 px se lee como tirón
   const sx = Math.min(mbMax, Math.max(0, vx * 0.5 - 2)), sy = Math.min(mbMax, Math.max(0, vy * 0.5 - 2));
-  const mb = sx > 0.3 || sy > 0.3;
+  const corte = vx > 150 || vy > 150 || Math.abs(Math.log(p.zoom / q.zoom)) > 0.12; // corte seco: sin estela de movimiento
+  const mb = !corte && (sx > 0.3 || sy > 0.3);
   const id = "mb" + useId().replace(/[^a-zA-Z0-9]/g, "");
   return (
     <AbsoluteFill style={{ background: fondo, overflow: "hidden" }}>

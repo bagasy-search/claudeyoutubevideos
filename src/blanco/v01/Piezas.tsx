@@ -9,11 +9,11 @@ import { F_MANO } from "../../anikit/pantalla";
 import { DibujoIcono, TipoIcono } from "../iconos";
 import { cl, M_ } from "./kit";
 
-const sp = (fr: number, damping = 12, stiffness = 150, mass = 0.8) => (fr <= 0 ? 0 : spring({ frame: fr, fps: 30, config: { damping, stiffness, mass } }));
-const eo = Easing.out(Easing.cubic);
-const ei = Easing.inOut(Easing.cubic);
+export const sp = (fr: number, damping = 12, stiffness = 150, mass = 0.8) => (fr <= 0 ? 0 : spring({ frame: fr, fps: 30, config: { damping, stiffness, mass } }));
+export const eo = Easing.out(Easing.cubic);
+export const ei = Easing.inOut(Easing.cubic);
 const rotulo = (tam: number, color = "#fff6e6"): React.CSSProperties => ({ fontFamily: F_MANO, fontWeight: 700, fontSize: tam, color, lineHeight: 1, whiteSpace: "pre", textAlign: "center", WebkitTextStroke: "3px #1d1410", textShadow: "0 6px 0 #1d1410" });
-const Txt: React.FC<{ x: number; y: number; t: string; tam: number; color?: string; s?: number; rot?: number }> = ({ x, y, t, tam, color, s = 1, rot = 0 }) => (
+export const Txt: React.FC<{ x: number; y: number; t: string; tam: number; color?: string; s?: number; rot?: number }> = ({ x, y, t, tam, color, s = 1, rot = 0 }) => (
   <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) rotate(${rot}deg) scale(${s})`, opacity: Math.min(1, s * 1.4), ...rotulo(tam, color) }}>{t}</div>
 );
 
@@ -46,7 +46,7 @@ const Pieza: React.FC<{ a: number; b: number; luz?: string; children: (t: number
     </AbsoluteFill>
   );
 };
-const Sombra: React.FC<{ x: number; y: number; w: number; o?: number }> = ({ x, y, w, o = 0.35 }) => <ellipse cx={x} cy={y} rx={w} ry={w * 0.12} fill={`rgba(20,10,4,${o})`} />;
+export const Sombra: React.FC<{ x: number; y: number; w: number; o?: number }> = ({ x, y, w, o = 0.35 }) => <ellipse cx={x} cy={y} rx={w} ry={w * 0.12} fill={`rgba(20,10,4,${o})`} />;
 
 // ═══ 1 · b03 · LA BALANZA DEL TRUEQUE: tus zapatillas de 2026 contra capa + botas + gorro de 1348; con el gorro queda pareja ═══
 export const PBalanza: React.FC<{ a: number; b: number; m: [number, number, number, number]; trato: string }> = ({ a, b, m, trato }) => {

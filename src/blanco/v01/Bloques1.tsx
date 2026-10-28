@@ -1,6 +1,9 @@
 // Bloques 3–6 al nivel del piloto («es un 9, seguí», 28-oct): plano medio corto de base, encuadre nuevo cada 2–4 s,
 // corte de reacción en cada remate, insertos de objetos, globitos con dibujo en vez de palabras. Tiempos en s de la voz
 // ES; `reloj` los lleva a la EN por palabras ancla. Nadie cortado por el borde: cada extra vive sólo en sus planos.
+import { PCama, PPenique } from "./Piezas2";
+import { Foco } from "./foco";
+import { luzCasa } from "../sets/pintado";
 import React from "react";
 import { Easing, interpolate } from "remotion";
 import { useF } from "../../anikit/camara";
@@ -121,11 +124,9 @@ export const B03P: React.FC<B> = ({ D, L }) => {
     { tipo: "espiral", desde: 5.7, hasta: 6.45, x: cab(dos, 20)[0] + 40, y: 180, cola: cab(dos, 20) },
     { tipo: "bolsa", desde: 6.5, hasta: 7.25, x: cab(dos, 160)[0] + 40, y: 190, cola: cab(dos, 160, 20) },
     { texto: ["¡EH, TÚ!", "HEY, YOU!"], desde: 7.5, hasta: 9.1, x: 1380, y: 250, cola: [1060, 330], tam: 0.95 },
-    { tipo: "camisa", desde: 12.2, hasta: 13.3, x: 1560, y: 220, cola: cab(camina2, T) },
-    { tipo: "zapatilla", desde: 13.6, hasta: 15.0, x: 600, y: 230, cola: cab(par, X1) },
   ];
   return (
-    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2} seed={31} dibujo={{}} profundidad={1}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2} seed={31} dibujo={{}} profundidad={2.6}
       claves={tomas(F, D, [
         [0, P(X0, -0.1), P(X0, 0.15, 0.6)], // «Primer problema, y llega rápido»
         [2.0, Pi(X0, 3.5), Pi(X0 + 15, 3.8)], // «Tu ropa»: las zapatillas
@@ -205,13 +206,11 @@ export const B04P: React.FC<B> = ({ D, L }) => {
   };
   const par = Me(2100, 2.3);
   const GLB: GloboDef[] = [
-    { tipo: "gota", desde: 9.6, hasta: 10.9, x: 1400, y: 250, cola: [1060, 340] },
     { texto: ["¡YO TE AYUDO!", "I'LL HELP!"], desde: 11.5, hasta: 12.55, x: cab(par, X)[0] + 60, y: 200, cola: cab(par, X), tam: 0.8 },
     { texto: ["¡CRAC!", "CRACK!"], desde: 23.4, hasta: 24.7, x: 1400, y: 260, cola: [1030, 360], tam: 0.95 },
-    { tipo: "moneda", desde: 26.5, hasta: 28.1, x: 1380, y: 270, cola: [1040, 350] },
   ];
   return (
-    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2} seed={41} dibujo={{}} profundidad={1}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2} seed={41} corre={[[F(26.6), D - 6, -300]]} dibujo={{}} profundidad={2.6}
       claves={tomas(F, D, [
         [0, P(X, 0.1), P(X, 0.3, -0.6)], // «el hambre»
         [4.2, E(HORNO - 100, PISO - 420, 1.25), E(HORNO - 80, PISO - 400, 1.4, 0.8)], // el olor a pan de la panadería
@@ -232,6 +231,7 @@ export const B04P: React.FC<B> = ({ D, L }) => {
         [26.5, P(X, -0.1), P(X, 0.1, 0.5)], // un penique = el sueldo de un día
       ])}
       personajes={[tz, panadero]}
+      detras={<Foco f={f} luces={[luzCasa(5, F(4.4), F(8.2))]} />}
       sobre={<>
         <Vapor f={f} x={HORNO - 20} y={PISO - 330} n={4} alto={260} s={1.3} />
         {f >= F(5.6) && f < F(6.8) && <Vapor f={f} x={X - 70} y={PISO - 250} n={3} alto={120} s={0.7} />}
@@ -245,7 +245,7 @@ export const B04P: React.FC<B> = ({ D, L }) => {
         <IconoGrande tipo="reloj" desde={F(17.5)} hasta={F(18.25)} x={960} y={260} />
         <IconoGrande tipo="brazo" desde={F(18.6)} hasta={F(20.3)} />
         <IconoGrande tipo="corazon" desde={F(25.0)} hasta={F(26.4)} />
-        <Dato texto={tx(L, "= 1 DÍA DE SUELDO", "= 1 DAY'S PAY")} x={1400} y={190} desde={F(28.2)} hasta={D} tam={78} color="#ffd23c" rot={0} />
+        <PPenique a={F(26.6)} b={D - 6} dia={tx(L, "= 1 DÍA DE SUELDO", "= 1 DAY'S PAY")} />
         <Globos lista={GLB} F={F} L={L} />
       </>}
     />
@@ -274,7 +274,7 @@ export const B05aP: React.FC<B> = ({ D, L }) => {
   const { F, S } = reloj(L, PARES_B05);
   const X = 5250, PES = 4900, RIO = 5800;
   return (
-    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2} seed={51} dibujo={{}} profundidad={1}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2} seed={51} dibujo={{}} profundidad={2.6}
       claves={tomas(F, D, [
         [0, P(X, 0.1), P(X, 0.3, 0.5)], // «Y ahora, sed»
         [1.6, Me(X + 230, 1.9), Me(X + 260, 2.05, 0, -0.5)], // lo lógico: el agua del río
@@ -298,7 +298,6 @@ export const B05aP: React.FC<B> = ({ D, L }) => {
         <IconoGrande tipo="alerta" desde={F(3.85)} hasta={F(4.45)} />
         <IconoGrande tipo="calavera" desde={F(5.4)} hasta={F(6.25)} x={960} y={300} />
         <Globos F={F} L={L} lista={[
-          { tipo: "gota", desde: 0.7, hasta: 1.55, x: 1380, y: 260, cola: [1040, 340] },
           { tipo: "gota_no", desde: 7.6, hasta: 8.9, x: 1390, y: 260, cola: [1050, 340] },
         ]} />
       </>}
@@ -335,7 +334,7 @@ export const B05bP: React.FC<B> = ({ D, L, f0 = 0 }) => {
     { t: S(20.2), accion: "festejar", expr: "carcajada" }, { t: S(21.7), accion: "idle", expr: "asqueado" }, { t: S(22.9), accion: "encogerse_de_hombros", expr: "confundido" },
     { t: S(24.1), accion: "idle", expr: "guino", mirada: "camara" }];
   return (
-    <EscenaB Set={TabernaPintada} pal={PAL} interior mano={2} seed={52} dibujo={{}} profundidad={1}
+    <EscenaB Set={TabernaPintada} pal={PAL} interior mano={2} seed={52} dibujo={{}} profundidad={2.6}
       claves={tomas(F, D, [
         [9.0, Me(BAR + 120, 2.1), Me(BAR + 140, 2.3, 0, 0.5)], // toman cerveza
         [10.1, P(BEB, -0.1), P(BEB, 0.15, -0.5)], // una cerveza floja, aguada
@@ -370,7 +369,6 @@ export const B05bP: React.FC<B> = ({ D, L, f0 = 0 }) => {
         <Globos F={F} L={L} lista={[
           { tipo: "jarra", desde: 9.1, hasta: 10.0, x: 1350, y: 250, cola: cab(Me(BAR + 120, 2.1), BAR) },
           { texto: ["¡HIP!", "HIC!"], desde: 11.0, hasta: 11.85, x: 1380, y: 250, cola: [1050, 330], tam: 0.9 },
-          { tipo: "pan", desde: 12.7, hasta: 13.8, x: 1380, y: 260, cola: [1040, 340] },
           { tipo: "pan", desde: 21.8, hasta: 22.8, x: 1380, y: 260, cola: [1040, 340] },
         ]} />
       </>}
@@ -391,7 +389,7 @@ export const B06aP: React.FC<B> = ({ D, L }) => {
   const ladron = (l: number, sem: number) => ubicado(X + l * 420, [{ t: 0, accion: "caminar", rotY: -l * 90, expr: "sonrisa_picara" }, { t: S(5.0), accion: "idle", rotY: -l * 60, expr: "sonrisa_picara" }],
     (s) => ventanas(s, [[S(4.1), S(5.1)]]) + X + l * interpolate(s, [S(4.1), S(5.0)], [430, 280], cl), { ropa: LADRON, semilla: sem });
   return (
-    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} momento="noche" mano={2} seed={61} dibujo={{}} profundidad={1}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} momento="noche" mano={2} seed={61} dibujo={{}} profundidad={2.6}
       claves={tomas(F, D, [
         [0, Me(X, 1.0, -60), Me(X + 40, 1.15, -60, 0.5)], // llega la noche
         [1.1, P(X, 0), P(X, 0.25, -0.5)], // oscura de verdad
@@ -415,7 +413,7 @@ export const B06bP: React.FC<B> = ({ D, L, f0 = 0 }) => {
   const X = 980, POS = 700, CAMA = 1500, PISOX = 1600; // Tiza · el posadero · la cama · donde duerme en el piso
   const RATA = 1150;
   return (
-    <EscenaB Set={TabernaPintada} pal={PAL} interior momento="noche" setProps={{ variante: "posada" }} mano={2} seed={62} dibujo={{}} profundidad={1}
+    <EscenaB Set={TabernaPintada} pal={PAL} interior momento="noche" setProps={{ variante: "posada" }} mano={2} seed={62} corre={[[F(10.5), F(13.4), 300]]} dibujo={{}} profundidad={2.6}
       claves={tomas(F, D, [
         [6.1, Me(840, 2.3), Me(850, 2.45, 0, 0.5)], // paga un lugar en la posada
         [8.6, P(POS, 0), P(POS, 0.2, -0.5)], // un lugar, no una cama
@@ -449,12 +447,10 @@ export const B06bP: React.FC<B> = ({ D, L, f0 = 0 }) => {
         <IconoGrande tipo="bombilla" desde={F(17.5)} hasta={F(18.8)} />
         <IconoGrande tipo="calavera" desde={F(21.3)} hasta={F(22.6)} />
         <IconoGrande tipo="olor" desde={F(22.7)} hasta={F(24.2)} />
+        <PCama a={F(10.5)} b={F(13.4)} cabezas={F(11.5)} />
         <Dato texto={tx(L, "DÍA 1: SOBREVIVIDO", "DAY 1: SURVIVED")} x={960} y={230} desde={F(32.0)} hasta={D} tam={96} color="#5fd47a" rot={0} />
         <Globos F={F} L={L} lista={[
-          { tipo: "moneda", desde: 6.9, hasta: 8.5, x: 1300, y: 230, cola: cab(Me(840, 2.3), X) },
-          { tipo: "cama", desde: 8.7, hasta: 9.35, x: 1390, y: 250, cola: [1050, 340] },
           { texto: ["¡NO!", "NOPE!"], desde: 9.4, hasta: 10.4, x: 1390, y: 250, cola: [1050, 340] },
-          { tipo: "gente", texto: ["5", "5"], desde: 11.4, hasta: 13.2, x: 960, y: 200, cola: [960, 420] },
           { texto: ["ZZZ…", "ZZZ…"], desde: 13.6, hasta: 15.0, x: 1300, y: 270, cola: [1000, 470] },
           { texto: ["zzz", "zzz"], desde: 30.0, hasta: 99, x: 1250, y: 380, cola: [960, 600], tam: 0.8 },
         ]} />

@@ -1,6 +1,8 @@
 // Bloques 11–14 al nivel del piloto, cada uno con su fondo (pedido del creador 28-oct): b11 posada al alba → calle de la
 // peste → la colina de las fosas a la tarde → la ciudad de noche · b12 la calle de día y la huida hacia el río · b13 la
 // puerta de Aldgate de día · b14 el campo al atardecer. Tiempos en s ES; `reloj` los lleva a la EN.
+import { PDedo, PPodio } from "./Piezas2";
+import { Foco } from "./foco";
 import React from "react";
 import { interpolate } from "remotion";
 import { useF } from "../../anikit/camara";
@@ -49,7 +51,7 @@ export const B11P: React.FC<B> = ({ D, L }) => {
     // la posada: los cinco ya no están; el posadero tose en la cocina
     const CAMA = 1500, X = 1100, FOG = 2050;
     return (
-      <EscenaB Set={TabernaPintada} pal={PAL} interior momento="amanecer" setProps={{ variante: "posada_vacia" }} mano={2} seed={111} dibujo={{}} profundidad={1}
+      <EscenaB Set={TabernaPintada} pal={PAL} interior momento="amanecer" setProps={{ variante: "posada_vacia" }} mano={2} seed={111} dibujo={{}} profundidad={2.6}
         claves={tomas(F, D, [
           [0, E(CAMA, PISO - 200, 1.2), E(CAMA - 60, PISO - 200, 1.35, 0.5)], // Día 4: te despiertas en una posada vacía
           [3.1, P(X, 0.1), P(X, 0.35, -0.5)], // los cinco de la cama ya no están
@@ -62,7 +64,7 @@ export const B11P: React.FC<B> = ({ D, L }) => {
             guion: [{ t: 0, accion: "pose_temblando", expr: "triste", rotY: -40 }, { t: S(5.4), accion: "facepalm", expr: "asqueado", rotY: -30 }] },
         ]}
         sobre={<>{f >= F(4.9) && <><Vapor f={f} x={FOG + 150} y={PISO - 300} color="#b0b0a8" n={2} alto={120} /><Sudor f={f} x={FOG + 120} y={PISO - 330} desde={F(5.0)} hasta={F(7.0)} s={0.8} /></>}</>}
-        hud={<>{hud}<Globos F={F} L={L} lista={[{ tipo: "gente_no", desde: 3.6, hasta: 4.8, x: 1420, y: 240, cola: [1060, 330] }]} /></>}
+        hud={<>{hud}</>}
       />
     );
   }
@@ -70,7 +72,7 @@ export const B11P: React.FC<B> = ({ D, L }) => {
     // la calle de la peste a media luz: pasa el carro tapado
     const X = 1800, cx = interpolate(f, [F(7.0), F(10.6)], [1100, 2400], cl);
     return (
-      <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} setProps={{ variante: "peste" }} mano={2} seed={113} dibujo={{}} profundidad={1}
+      <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} setProps={{ variante: "peste" }} mano={2} seed={113} dibujo={{}} profundidad={2.6}
         claves={tomas(F, D, [
           [7.0, Me(1450, 1.6), Me(1950, 1.7, 0, 0.5)], // afuera, por la calle, pasa un carro lleno de…
           [9.4, P(X, 0.1), P(X, 0.3, -0.5)], // mejor no mires
@@ -87,7 +89,7 @@ export const B11P: React.FC<B> = ({ D, L }) => {
     const FX = 4240, CAV = 3960, CAV2 = 4500;
     const cx = interpolate(f, [F(10.6), F(13.3)], [1700, 2650], cl);
     return (
-      <EscenaB Set={MurallaPintada} pal={PAL} setProps={{ hora: 1 }} momento="amanecer" mano={2} seed={114} dibujo={{}} profundidad={1}
+      <EscenaB Set={MurallaPintada} pal={PAL} setProps={{ hora: 1 }} momento="amanecer" mano={2} seed={114} dibujo={{}} profundidad={2.6}
         claves={tomas(F, D, [
           [10.6, E(1900, PISO - 330, 0.95), E(2500, PISO - 330, 1.0, 0.5)], // lo llevan a un campo nuevo fuera de las murallas
           [13.3, Me(FX, 1.7, 20), Me(FX + 10, 1.85, 20, -0.5)], // donde ya están cavando fosas enormes
@@ -97,6 +99,7 @@ export const B11P: React.FC<B> = ({ D, L }) => {
           { x: CAV, semilla: 115, ropa: ROPA.sereno, mov: (s) => ({ dx: ventanas(s, [[S(13.3), S(15.2)]]) }), guion: [{ t: 0, accion: "empujar", expr: "triste", rotY: 50 }] },
           { x: CAV2, semilla: 116, ropa: ROPA.granjero, mov: (s) => ({ dx: ventanas(s, [[S(13.3), S(15.2)]]) }), guion: [{ t: 0, accion: "empujar", expr: "aburrido", rotY: -50 }] },
         ]}
+        detras={<Foco f={f} luces={[{ desde: F(14.2), hasta: F(15.1), x: FX, y: PISO - 40, rx: 520, ry: 200 }]} />}
         sobre={<>{f < F(13.3) && <Carro x={cx} f={f} tapado ruedaGira={f * 3} />}{f >= F(13.3) && f < F(15.2) && <Fosa x={FX} f={f} />}</>}
         hud={<>{hud}<IconoGrande tipo="cruz" desde={F(15.6)} hasta={F(17.9)} /><Globos F={F} L={L} lista={[{ texto: ["LLENO", "FULL"], desde: 16.4, hasta: 17.9, x: 1350, y: 250, cola: [1100, 420] }]} /></>}
       />
@@ -105,7 +108,7 @@ export const B11P: React.FC<B> = ({ D, L }) => {
   // la ciudad de noche, en silencio: sin campanas, sin mercado, sólo carros
   const X = 2600, cx = interpolate(f, [F(25.6), D], [1900, 2900], cl);
   return (
-    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} momento="noche" mano={2} seed={117} dibujo={{}} profundidad={1}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} momento="noche" mano={2} seed={117} dibujo={{}} profundidad={2.6}
       claves={tomas(F, D, [
         [18.0, Me(X, 1.15, -40), Me(X + 40, 1.3, -40, 0.5)], // en Londres ya mueren cientos por día
         [20.6, P(X, 0.1), P(X, 0.3, -0.5)], // y la ciudad se queda en silencio
@@ -131,7 +134,7 @@ export const B12P: React.FC<B> = ({ D, L }) => {
   const turba = [[2950, "campesina"], [2760, "granjero"], [2600, "noble"], [2440, "aguatero"], [2300, "lavandera"]] as const;
   const runA = t0 + 0.1, xRun = (q: number) => xT(q);
   return (
-    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} setProps={{ variante: "peste" }} mano={2} seed={121} dibujo={{}} profundidad={1}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} setProps={{ variante: "peste" }} mano={2} seed={121} dibujo={{}} profundidad={2.6}
       claves={tomas(F, D, [
         [0, Me(X, 1.6, -10), Me(X - 30, 1.75, -10, 0.5)], // lo peor que le puede pasar a un forastero
         [2.9, Me((MUJ + HOM) / 2, 2.3), Me((MUJ + HOM) / 2 + 10, 2.45, 0, -0.5)], // la gente empieza a buscar culpables
@@ -175,9 +178,7 @@ export const B12P: React.FC<B> = ({ D, L }) => {
         <Globos F={F} L={L} lista={[
           { tipo: "lupa", desde: 3.6, hasta: 4.8, x: 1420, y: 230, cola: cab(Me((MUJ + HOM) / 2, 2.3), MUJ) },
           { tipo: "zapatilla", desde: 8.3, hasta: 9.5, x: 1420, y: 230, cola: cab(Me((MUJ + HOM) / 2, 2.3), MUJ) },
-          { tipo: "reloj", desde: 9.7, hasta: 11.0, x: 600, y: 230, cola: cab(Me((MUJ + HOM) / 2, 2.3), HOM) },
           { tipo: "pregunta", desde: 12.2, hasta: 14.0, x: 1420, y: 250, cola: [1060, 340] },
-          { tipo: "gato", desde: 26.2, hasta: 27.4, x: 1450, y: 230, cola: cab(Me(xRun(S(26.6)) - 200, 1.6), xRun(S(26.6))) },
         ]} />
       </>}
     />
@@ -202,7 +203,7 @@ export const B13P: React.FC<B> = ({ D, L }) => {
   const cx = (q: number) => C0 + Math.max(0, q - S(15.3)) * 150;
   const c = cx(f / 30), adentro = f >= F(7.6);
   return (
-    <EscenaB Set={MurallaPintada} pal={PAL} mano={2} seed={131} dibujo={{}} profundidad={1}
+    <EscenaB Set={MurallaPintada} pal={PAL} mano={2} seed={131} corre={[[F(10.9), F(14.2), 300]]} dibujo={{}} profundidad={2.6}
       claves={tomas(F, D, [
         [0, Me(PU - 330, 1.15, -60), Me(PU - 250, 1.25, -60, 0.5)], // llegas a la puerta de la muralla, la de Aldgate
         [2.5, Me(C0 + 80, 2.0), Me(C0 + 90, 2.15, 0, -0.5)], // un granjero saca su carro de heno de la ciudad
@@ -225,6 +226,7 @@ export const B13P: React.FC<B> = ({ D, L }) => {
         { x: G, semilla: 133, ropa: ROPA.guardia, 
           guion: [{ t: 0, accion: "idle", expr: "aburrido", rotY: 40 }, { t: S(9.6), accion: "caminar", expr: "enojado", rotY: 90 }, { t: S(10.8), accion: "empujar", expr: "enojado", rotY: 90 }, { t: S(14.1), accion: "caminar", expr: "aburrido", rotY: 90 }, { t: S(15.3), accion: "idle", expr: "aburrido", rotY: -30 }] },
       ]}
+      detras={<Foco f={f} luces={[{ desde: F(1.0), hasta: F(2.45), x: PU, y: PISO - 330, rx: 420, ry: 380 }]} />}
       sobre={<>
         <Carro x={c} f={f} heno ruedaGira={Math.max(0, f / 30 - S(15.3)) * 150 * 1.3} />
         {/* los ojos de Tiza asomando del heno mientras se esconde */}
@@ -235,7 +237,7 @@ export const B13P: React.FC<B> = ({ D, L }) => {
       </>}
       hud={<>
         <Dato texto="ALDGATE" x={960} y={180} desde={F(1.7)} hasta={F(2.45)} tam={120} color="#fff6e6" rot={0} />
-        <Dato texto={tx(L, "A UN DEDO", "ONE INCH")} x={960} y={170} desde={F(12.8)} hasta={F(14.0)} tam={130} color="#ff5a3c" rot={0} />
+        <PDedo a={F(10.9)} b={F(14.2)} pincha={F(11.3)} frena={F(12.5)} rotulo={tx(L, "1 DEDO", "1 INCH")} />
         <Dato texto={tx(L, "AFUERA. VIVO.", "OUT. ALIVE.")} x={960} y={170} desde={F(20.0)} hasta={F(21.5)} tam={120} color="#5fd47a" rot={0} />
         <Dato texto={tx(L, "4 DÍAS · 1348", "4 DAYS · 1348")} x={960} y={170} desde={F(21.6)} hasta={D} tam={110} color="#ffd23c" rot={0} />
         <Globos F={F} L={L} lista={[{ texto: ["¡NO RESPIRES!", "DON'T BREATHE!"], desde: 9.0, hasta: 9.55, x: 960, y: 230, cola: [1000, 420], tam: 1.15 }]} />
@@ -256,7 +258,7 @@ export const B14P: React.FC<B> = ({ D, L }) => {
   const cx = C + s * 60; // el carro anda despacio por el campo
   const mueve = s * 60;
   return (
-    <EscenaB Set={MurallaPintada} pal={PAL} setProps={{ hora: 1 }} momento="amanecer" mano={2} seed={141} dibujo={{}} profundidad={1}
+    <EscenaB Set={MurallaPintada} pal={PAL} setProps={{ hora: 1 }} momento="amanecer" mano={2} seed={141} corre={[[F(4.3), F(9.2), 300]]} dibujo={{}} profundidad={2.6}
       claves={tomas(F, D, [
         [0, E(C + 150, PISO - 380, 0.85), E(C + 250, PISO - 380, 0.92, 0.5)], // entonces, ¿cuánto duraste? cuatro días
         [3.0, E(C - 30 + S(3.0) * 60, PISO - 400, 2.5), E(C - 30 + S(9.0) * 60, PISO - 400, 2.7, -0.5)], // sobreviviste gracias a tres cosas
@@ -283,9 +285,7 @@ export const B14P: React.FC<B> = ({ D, L }) => {
       </>}
       hud={<>
         <Dato texto={tx(L, "4 DÍAS", "4 DAYS")} x={960} y={200} desde={F(1.6)} hasta={F(2.95)} tam={170} color="#ffd23c" rot={0} />
-        <IconoGrande tipo="gota_no" desde={F(5.0)} hasta={F(6.1)} />
-        <IconoGrande tipo="cama" desde={F(6.2)} hasta={F(7.3)} />
-        <IconoGrande tipo="gato" desde={F(7.4)} hasta={F(9.0)} />
+        <PPodio a={F(4.3)} b={F(9.2)} m={[F(5.0), F(6.2), F(7.4)]} />
         <IconoGrande tipo="corazon" desde={F(13.0)} hasta={F(14.2)} x={960} y={250} />
         <Dato texto={tx(L, "¡ACHÍS!", "ACHOO!")} x={1300} y={240} desde={F(16.6)} hasta={F(17.6)} tam={150} color="#8fd04a" rot={0} />
         <Dato texto={tx(L, "¡ACHÍS!", "ACHOO!")} x={1350} y={240} desde={F(18.6)} hasta={F(19.5)} tam={180} color="#8fd04a" rot={0} />

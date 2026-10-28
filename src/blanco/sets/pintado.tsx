@@ -54,6 +54,11 @@ const CASAS: [string, number, number, boolean?][] = [
   ["casa_f", 1960, 720], ["casa_g", 2560, 900, true], ["casa_b", 3000, 760, true], ["casa_d", 3500, 700], ["casa_e", 3950, 800, true],
   ["casa_posada", 4380, 820], ["casa_a", 4950, 820, true],
 ];
+// la luz de Foco (v01/foco.tsx) que abraza la casa i de la fila de la calle: centro y radios en coordenadas del mundo
+export const luzCasa = (i: number, desde: number, hasta: number, fuerza = 1) => {
+  const [n, cx, a] = CASAS[i], w = (a * TAM[n][0]) / TAM[n][1];
+  return { desde, hasta, x: cx, y: ACERA - a * 0.5, rx: w * 0.66, ry: a * 0.62, fuerza };
+};
 const TRAS: [string, number, number, boolean?][] = [
   ["casa_c", -300, 760, true], ["casa_a", 300, 820, true], ["casa_f", 860, 720, true], ["casa_g", 1380, 900], ["casa_b", 1920, 760],
   ["casa_d", 2500, 700], ["casa_e", 3060, 800], ["casa_a", 3600, 820], ["casa_c", 4150, 760], ["casa_posada", 4700, 820, true], ["casa_b", 5250, 760],
