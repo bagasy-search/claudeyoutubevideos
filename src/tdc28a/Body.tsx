@@ -140,9 +140,11 @@ const CTA: React.FC<{ t: number; c: Cta; manual: string; img: string; pageTxt: s
   {c.page !== undefined && <GuidePage t={t} at={c.page} out={c.end - 0.4} img={img} />}
   {c.page !== undefined && <Chip t={t} at={c.page + 0.4} out={c.end - 0.4} text={pageTxt} x={110} y={200} />}
   {c.page !== undefined && <QR t={t} at={c.page + 1.2} out={c.end - 0.4} />}
-  <Desc t={t} at={c.desc} out={c.end - 0.3} x={c.page !== undefined ? 1180 : 960} scale={0.78} />
+  <Desc t={t} at={c.desc} out={c.end - 0.3} x={c.page !== undefined ? 1180 : avOn(c.desc, c.end) ? 480 : 960} scale={avOn(c.desc, c.end) && c.page === undefined ? 0.6 : 0.78} />
 </>;
 
+// sobre el avatar, el rótulo de paso y la descripción van a la izquierda y más chicos: nunca tapan la cara
+const avOn = (a: number, b: number) => WIN.some((w) => a < w.me && b > w.ms);
 const Piece: React.FC<{ t: number; o: Ov }> = ({ t, o }) => {
   if (t < o.at - 0.6 || t > o.out + 0.8) return null;
   const col = C[o.col] ?? COL.amber;
@@ -151,7 +153,7 @@ const Piece: React.FC<{ t: number; o: Ov }> = ({ t, o }) => {
     case "big": return <BigNum t={t} at={o.at} out={o.out} text={o.txt} sub={o.sub || undefined} x={1350} y={470} size={o.txt.length > 7 ? 150 : 210} col={col} edge={EDGE[o.col] ?? "#5a2a00"} />;
     case "words": return <Words t={t} items={o.items.map((x: any) => ({ at: x.at, txt: x.txt, col: C[x.col] ?? COL.ink }))} out={o.out} y={200} size={96} />;
     case "stamp": return <Stamp t={t} at={o.at} out={o.out} text={o.txt} x={960} y={250} size={o.txt.length > 22 ? 64 : 80} />;
-    case "step": return <StepTitle t={t} at={o.at} out={o.out} n={o.n} name={o.name} />;
+    case "step": return <StepTitle t={t} at={o.at} out={o.out} n={o.n} name={o.name} {...(avOn(o.at, o.out) ? { x: 470, y: 540, sc: 0.62 } : {})} />;
     case "mistake": return <Mistake t={t} at={o.at} out={o.out} n={o.n} txt={o.txt} />;
     case "check": return <CheckList t={t} title={o.title} rows={o.rows} out={o.out} />;
     case "temp": return <TempRun t={t} at={o.at} out={o.out} a={o.a} b={o.b} sub={o.sub} col={o.col} />;

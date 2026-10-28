@@ -117,7 +117,7 @@ export const Desc: React.FC<{ t: number; at: number; out: number; x?: number; sc
         </div>
         {L(980)}{L(1040)}{L(760)}{L(900, 0.15)}
       </div>
-      <div style={{ position: "absolute", left: -560, top: -170, opacity: hl, transform: `translateX(${-30 * (1 - hl) + 10 * Math.sin(t * 6)}px)`, fontFamily: FONT, fontWeight: 900, fontSize: 54, color: "#ffd60a", textShadow: extrude(6, "#5a4500"), whiteSpace: "nowrap" }}>1ª LÍNEA ➜</div>
+      <div style={{ position: "absolute", left: -651 * scale, top: -198 * scale, opacity: hl, transform: `translateX(${-30 * (1 - hl) + 10 * Math.sin(t * 6)}px)`, fontFamily: FONT, fontWeight: 900, fontSize: 63 * scale, color: "#ffd60a", textShadow: extrude(6, "#5a4500"), whiteSpace: "nowrap" }}>1ª LÍNEA ➜</div>
     </div>
   );
 };
