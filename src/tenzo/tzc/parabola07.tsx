@@ -11,6 +11,7 @@ import { TextoMano, ActorVivo } from "./chicago";
 import { Look } from "../../anikit/personaje";
 import { ALDEANA, ALDEANO, PAL_ANT } from "../elenco";
 import { FarolMano } from "../utileria";
+import { Prop } from "../../anikit/utileria";
 import { Agora, AGORA_PISO, AGORA_PUNTOS as A, Barril, SombraRey } from "../sets/agora";
 import { partir, TramoS } from "./tramos";
 
@@ -127,10 +128,31 @@ const HaloSigue: React.FC<{ x0: number; x1: number; f1: number }> = ({ x0, x1, f
 
 // ---------- planos ----------
 // 133,2-142,0 · «Greece… Corinth, white stone, blue sea, a market full of people shouting…»
+// los pregones: cada mercadería salta en alto en el segundo en que la voz la nombra (reloj del tramo que empieza en t0)
+const Bol: React.FC<{ x: number; y: number; desde: number }> = ({ x, y, desde }) => {
+  const f = useF();
+  if (f < desde) return null;
+  const k = Math.min(1, (f - desde) / 6);
+  return <g transform={`translate(${x},${y}) scale(${k * 1.3})`}><path d="M-50,-10 Q0,50 50,-10 Z" fill="#c98a4a" stroke="#6a4424" strokeWidth={4} />
+    {Array.from({ length: 9 }).map((_, i) => <ellipse key={i} cx={-36 + (i % 5) * 18} cy={-14 - Math.floor(i / 5) * 12} rx={9} ry={7} fill={i % 3 ? "#5a7a2a" : "#3a4a1a"} />)}</g>;
+};
+const Anillo: React.FC<{ x: number; y: number; desde: number }> = ({ x, y, desde }) => {
+  const f = useF();
+  const u = (f - desde) / 16;
+  return u >= 0 && u < 1 ? <circle cx={x} cy={y} r={40 + 120 * u} fill="none" stroke="#fff0b0" strokeWidth={6} opacity={1 - u} /> : null;
+};
+const Pregones: React.FC<{ t0: number }> = ({ t0 }) => {
+  const l = (t: number) => Math.round((t - t0) * 30);
+  return <>
+    <Bol x={1740} y={P - 330} desde={l(141.5)} /><Anillo x={1740} y={P - 330} desde={l(141.6)} />
+    <Prop name="pescado" x={1960} y={P - 300} s={1.4} rot={-20} centro desde={l(142.5)} /><Anillo x={1960} y={P - 300} desde={l(142.6)} />
+    <Prop name="botella" x={2170} y={P - 300} s={1.1} color="#7a2440" centro desde={l(143.0)} /><Anillo x={2170} y={P - 300} desde={l(143.1)} />
+  </>;
+};
 const Corinto: React.FC<{ cam?: Clave[] }> = ({ cam }) => (
   <Escena Set={Agora} pal={pal} seed={101} mano={2}
     claves={cam ?? [mira(0, 600, 520, 0.78), mira(264, 1500, 540, 0.82, { curva: "inout" })]}
-    medio={<Gente />}
+    medio={<><Gente /><Pregones t0={133.2} /></>}
     hud={<Rotulo texto="CORINTH · 336 BC" desde={8} hasta={258} />} />
 );
 // 142,0-156,2 · «in the corner of the market, lying in the sun, inside a big clay barrel… is a man. Dirty beard, bare feet…»
@@ -142,7 +164,7 @@ const LaEsquina: React.FC = () => (
 // 156,2-157,7 · «His name is Diogenes.»
 const Nombre: React.FC<{ cam?: Clave[] }> = ({ cam }) => (
   <Escena Set={Agora} pal={pal} seed={103} mano={1.4}
-    claves={cam ?? [mira(0, DIO.x + 20, P - 230, 2.4), mira(45, DIO.x + 20, P - 230, 2.5)]}
+    claves={cam ?? [mira(0, DIO.x + 60, P - 190, 3.1, { rot: -4 }), mira(45, DIO.x + 60, P - 192, 3.25, { rot: -4 })]}
     medio={<BarrilCon dio={{ caras: [{ f: 0, v: "cansado" }, { f: 10, v: "sorpresa" }, { f: 26, v: "feliz" }], habla: [[8, 20]],
       poses: [{ f: 0, v: ACOSTADO }, { f: 8, v: { ...ACOSTADO, tronco: -20, hD: 150, cD: 30, hI: 150, cI: 30, cabeza: -24 } }, { f: 24, v: { ...ACOSTADO, tronco: -26, hD: 110, cD: 120, cabeza: -10 } },
         { f: 30, v: { ...ACOSTADO, tronco: -26, hD: 104, cD: 132, cabeza: -6 } }, { f: 36, v: { ...ACOSTADO, tronco: -26, hD: 110, cD: 120, cabeza: -10 } }, { f: 42, v: ACOSTADO }] }} />}
@@ -186,9 +208,11 @@ const ConFarol: React.FC<{ cam?: Clave[] }> = ({ cam }) => (
 // 167,0-173,5 · inserto: el farol encendido de día, la cara de Diógenes detrás
 const ConFarolPP: React.FC = () => (
   <Escena Set={Agora} pal={pal} seed={106} mano={1.4}
-    claves={[mira(0, 1990 - 60, P - 320, 2.4), mira(195, 1990 - 80, P - 320, 2.55, { curva: "inout" })]}
-    medio={<ActorVivo look={DIOGENES} escala={ESC} seed={71} luz={CALIDA} ruta={[{ f: 0, x: 1990, y: P + 20 }]} dir={[{ f: 0, v: -1 }]}
-      poses={[{ f: 0, v: { hD: 110, cD: 10 } }, { f: 90, v: { hD: 120, cD: 0 } }]} caras={[{ f: 0, v: "feliz" }]} habla={hab(167.0, [[168.4, 173.5]])} enManoD={<FarolMano />} miradas={[{ f: 0, v: { x: -0.6, y: -0.2 } }]} />} />
+    claves={[mira(0, 1990 - 180, P - 320, 2.2), mira(195, 1990 - 190, P - 322, 2.35, { curva: "inout" })]}
+    medio={<><ActorVivo look={ALDEANO} escala={ESC} seed={81} luz={CALIDA} ruta={[{ f: 0, x: 1990 - 330, y: P + 20 }]} dir={[{ f: 0, v: 1 }]}
+      poses={[{ f: 0, v: "parado" }, { f: 40, v: { tronco: -10, cabeza: -12, hD: 40, cD: 60 } }, { f: 120, v: "encogerse" }]} caras={[{ f: 0, v: "sorpresa" }, { f: 120, v: "risa" }]} miradas={[{ f: 0, v: { x: 0.9, y: 0 } }]} />
+      <ActorVivo look={DIOGENES} escala={ESC} seed={71} luz={CALIDA} ruta={[{ f: 0, x: 1990, y: P + 20 }]} dir={[{ f: 0, v: -1 }]}
+      poses={[{ f: 0, v: { hD: 110, cD: 10 } }, { f: 90, v: { hD: 120, cD: 0 } }]} caras={[{ f: 0, v: "feliz" }]} habla={hab(167.0, [[168.4, 173.5]])} enManoD={<FarolMano />} miradas={[{ f: 0, v: { x: -0.6, y: -0.2 } }]} /></>} />
 );
 // 173,5-178,1 · «Diogenes used to have one more thing, a wooden cup, for drinking water.»
 const Vaso: React.FC<{ x: number; y: number; rot?: number }> = ({ x, y, rot = 0 }) => (
@@ -196,9 +220,10 @@ const Vaso: React.FC<{ x: number; y: number; rot?: number }> = ({ x, y, rot = 0 
 );
 const ElVaso: React.FC = () => (
   <Escena Set={Agora} pal={pal} seed={106} mano={1.3}
-    claves={[mira(0, A.fuente - 260, P - 230, 2.6), mira(138, A.fuente - 260, P - 230, 2.8)]}
+    claves={[mira(0, A.fuente - 230, P - 270, 2.5), mira(138, A.fuente - 230, P - 272, 2.7, { curva: "inout" })]}
     medio={<ActorVivo look={DIOGENES} escala={ESC} seed={71} luz={CALIDA} ruta={[{ f: 0, x: A.fuente - 300, y: P }]} dir={[{ f: 0, v: 1 }]}
-      poses={[{ f: 0, v: { hD: 50, cD: 80, hI: 20, cI: 30 } }]} caras={[{ f: 0, v: "neutral" }]} enManoD={<Vaso x={10} y={0} rot={-90} />} />} />
+      poses={[{ f: 0, v: { hD: 120, cD: 110, cabeza: -14, tronco: -4 } }, { f: 40, v: { hD: 120, cD: 110, cabeza: -18, tronco: -6 } }, { f: 62, v: { hD: 80, cD: 60, cabeza: 10 } }, { f: 76, v: { hD: 110, cD: 20, cabeza: -4 } }]}
+      caras={[{ f: 0, v: "neutral" }, { f: 62, v: "feliz" }]} miradas={[{ f: 0, v: { x: 0.4, y: -0.6 } }, { f: 62, v: { x: 0.8, y: -0.2 } }]} enManoD={<g transform="scale(1.7)"><Vaso x={6} y={0} rot={-90} /></g>} />} />
 );
 // 178,1-184,3 · «a little boy at the fountain drinking from his own two hands, and Diogenes threw his cup away»
 const LaFuente: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
@@ -214,16 +239,19 @@ const LaFuente: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
         <ActorVivo look={DIOGENES} escala={ESC} seed={71} luz={CALIDA} ruta={[{ f: 0, x: A.fuente - 300, y: P }]} dir={[{ f: 0, v: 1 }]}
           poses={[{ f: 0, v: { hD: 50, cD: 80, hI: 20, cI: 30 } }, { f: tira - 8, v: { hD: -30, cD: 40 } }, { f: tira, v: { hD: 120, cD: 10 } }, { f: tira + 20, v: "parado" }]}
           caras={[{ f: 0, v: "sorpresa" }, { f: tira + 20, v: "risa" }]} enManoD={(fl) => (fl < tira ? <Vaso x={10} y={0} rot={-90} /> : null)} />
-        {f >= tira && <Vaso x={A.fuente - 270 - 380 * u} y={P - 260 - Math.sin(u * Math.PI) * 180 + u * 250} rot={u * 540} />}
+        {f >= tira && <g transform={`translate(${A.fuente - 270 - 420 * u},${P - 260 - Math.sin(u * Math.PI) * 200 + u * 250}) scale(1.8)`}><Vaso x={0} y={0} rot={u * 540} /></g>}
       </>} />
   );
 };
 // 184,3-189,4 · «A child has beaten me… I have been carrying something I did not need.»
 const MeGano: React.FC = () => (
   <Escena Set={Agora} pal={pal} seed={108} mano={1.6}
-    claves={[mira(0, A.fuente - 300, P - 260, 2.1), mira(153, A.fuente - 300, P - 260, 2.25)]}
-    medio={<ActorVivo look={DIOGENES} escala={ESC} seed={71} luz={CALIDA} ruta={[{ f: 0, x: A.fuente - 300, y: P }]} dir={[{ f: 0, v: 1 }]}
-      poses={[{ f: 0, v: { hD: 40, cD: 120, cabeza: -6 } }, { f: 60, v: "manosCintura" }]} caras={[{ f: 0, v: "risa" }, { f: 70, v: "feliz" }]} habla={hab(184.3, [[184.3, 186.7], [186.7, 189.4]])} />} />
+    claves={[mira(0, A.fuente - 300, P - 260, 2.3), mira(70, A.fuente - 310, P - 260, 2.4, { curva: "inout" }), mira(71, A.fuente - 470, P - 175, 2.1, { rot: 2 }), mira(153, A.fuente - 480, P - 178, 2.2, { rot: 2, curva: "inout" })]}
+    medio={<>
+      <g transform={`translate(${A.fuente - 700},${P - 14}) scale(1.8)`}><Vaso x={0} y={0} rot={100} /></g>
+      <ActorVivo look={DIOGENES} escala={ESC} seed={71} luz={CALIDA} ruta={[{ f: 0, x: A.fuente - 300, y: P }]} dir={[{ f: 0, v: 1 }, { f: 71, v: -1 }]}
+      poses={[{ f: 0, v: { hD: 40, cD: 120, cabeza: -6 } }, { f: 30, v: { hD: 150, cD: 20, hI: 150, cI: 20, cabeza: -10 } }, { f: 71, v: { hD: 30, cD: 20, cabeza: 14 } }, { f: 84, v: { hD: 80, cD: 10, hI: 80, cI: 10, cabeza: 6 } }, { f: 120, v: "manosCintura" }]}
+      caras={[{ f: 0, v: "risa" }, { f: 71, v: "neutral" }, { f: 100, v: "feliz" }]} miradas={[{ f: 0, v: { x: 0.9, y: 0 } }, { f: 71, v: { x: 0.6, y: 0.8 } }]} habla={hab(184.3, [[184.3, 186.7], [186.7, 189.4]])} /></>} />
 );
 // 189,4-199,2 · «Now. At the gates of Corinth comes the most powerful man in the world, Alexander… twenty years old.»
 const LaPuerta: React.FC = () => (
@@ -394,6 +422,7 @@ export const SeCorre: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
         <BarrilCon dio={{ caras: [{ f: 0, v: "cansado" }, { f: 200, v: "feliz" }] }} />
         <SombraRey x={REY + 40 + u * 260} y={P - 2} largo={560} fuerza={0.45 * (1 - u)} />
         <SombraEncima x={REY + 40} fuerza={0.42 * (1 - u)} />
+        <Escolta x={REY + 330} dir={-1} />
         <Halo x={DIO.x + 60} y={P - 180} r={380} color="#fff0b0" fuerza={0.45 * u} />
         <ActorVivo look={ALEJANDRO} escala={REY_ESC} seed={130} luz={{ lado: 1, color: "#fff0b0", fuerza: 1 }} ruta={[{ f: 0, x: REY + 40, y: P + 20 }, { f: 120, x: REY + 40, y: P + 20 }, { f: 190, x: REY + 300, y: P + 20 }]} dir={[{ f: 0, v: -1 }]}
           poses={[{ f: 0, v: "firme" }]} caras={[{ f: 0, v: "neutral" }]} miradas={[{ f: 0, v: { x: -0.8, y: 0.6 } }]} />
@@ -410,18 +439,19 @@ const Deseo: React.FC = () => (
 
 export const PARABOLA07: TramoS[] = [
   ...partir(133.2, 142.0, (cam) => <Corinto cam={cam} />, [[133.2, [mira(0, 1200, 520, 0.9), mira(44, 1250, 525, 0.95, { curva: "inout" })]], [134.7, [mira(0, 1050, P - 250, 2.1), mira(75, 1090, P - 252, 2.2, { curva: "inout" })]],
-    [137.2, [mira(0, 1500, P - 260, 1.9), mira(72, 1640, P - 262, 2.0, { curva: "inout" })]], [139.6, [mira(0, 1820, P - 255, 2.05), mira(72, 1880, P - 258, 2.15, { curva: "inout" })]]], { tipo: "luz", d: 20, color: "#ffd890" }),
-  ...partir(142.0, 156.2, (cam) => <Escena Set={Agora} pal={pal} seed={102} mano={2} claves={cam} medio={<><Gente x0={1100} /><BarrilCon dio={{ caras: [{ f: 0, v: "feliz" }] }} /></>} />, [
-    [142.0, [mira(0, BX + 300, P - 260, 1.8), mira(198, BX + 180, P - 240, 1.95, { curva: "inout" })]],
-    [148.6, [mira(0, DIO.x + 20, P - 250, 2.3), mira(110, DIO.x + 20, P - 250, 2.45)]],
+    [137.2, [mira(0, 1500, P - 260, 1.9), mira(72, 1640, P - 262, 2.0, { curva: "inout" })]], [139.6, [mira(0, 1820, P - 280, 2.05), mira(72, 1880, P - 290, 2.15, { curva: "inout" })]]], { tipo: "luz", d: 20, color: "#ffd890" }),
+  ...partir(142.0, 156.2, (cam) => <Escena Set={Agora} pal={pal} seed={102} mano={2} claves={cam} medio={<><Gente x0={1100} /><BarrilCon dio={{ caras: [{ f: 0, v: "feliz" }] }} /><Pregones t0={142.0} /></>} />, [
+    [142.0, [mira(0, 1990, P - 290, 2.05), mira(44, 2040, P - 292, 2.1, { curva: "inout" }), mira(45, BX + 300, P - 260, 1.8), mira(198, BX + 180, P - 240, 1.95, { curva: "inout" })]],
+    [148.6, [mira(0, DIO.x + 20, P - 300, 2.1), mira(110, DIO.x + 20, P - 300, 2.2)]],
     [152.4, [mira(0, DIO.x + 140, P - 60, 2.6), mira(114, DIO.x + 100, P - 70, 2.75)]],
   ]),
-  { t0: 156.2, t1: 157.7, el: <Nombre cam={[mira(0, DIO.x + 80, P - 200, 2.8), mira(45, DIO.x + 80, P - 200, 2.95)]} /> },
+  { t0: 156.2, t1: 157.7, el: <Nombre /> },
   { t0: 157.7, t1: 162.3, el: <Aceitunas /> },
   { t0: 162.3, t1: 167.0, el: <ConFarol cam={[mira(0, 2420, P - 260, 2.1), mira(120, 2010, P - 262, 2.2, { curva: "fluida" }), mira(141, 2000, P - 262, 2.25, { curva: "inout" })]} /> },
   { t0: 167.0, t1: 173.5, el: <ConFarolPP /> },
   { t0: 173.5, t1: 178.1, el: <ElVaso /> },
-  ...partir(178.1, 184.3, (cam) => <LaFuente cam={cam} />, [[178.1, [mira(0, A.fuente + 20, P - 200, 2.2), mira(75, A.fuente + 20, P - 205, 2.3)]], [180.6, [mira(0, A.fuente - 150, P - 230, 1.6), mira(111, A.fuente - 160, P - 230, 1.7)]]]),
+  ...partir(178.1, 184.3, (cam) => <LaFuente cam={cam} />, [[178.1, [mira(0, A.fuente + 20, P - 200, 2.2), mira(75, A.fuente + 20, P - 205, 2.3)]], [180.6, [mira(0, A.fuente - 150, P - 250, 1.95), mira(54, A.fuente - 160, P - 250, 2.05)]],
+    [182.4, [mira(0, A.fuente - 300, P - 290, 2.2), mira(36, A.fuente - 560, P - 250, 2.2, { curva: "fluida" }), mira(57, A.fuente - 600, P - 220, 2.25, { curva: "inout" })]]]),
   { t0: 184.3, t1: 189.4, el: <MeGano /> },
   { t0: 189.4, t1: 199.2, el: <LaPuerta />, trans: { tipo: "fundido", d: 12 } },
   { t0: 199.2, t1: 204.5, el: <Mapa /> },
@@ -433,7 +463,7 @@ export const PARABOLA07: TramoS[] = [
   ...partir(251.9, 259.3, (cam) => <MiSol cam={cam} />, [[251.9, [mira(0, BX + 140, P - 300, 1.6), mira(93, BX + 120, P - 300, 1.7)]], [255.0, [mira(0, DIO.x + 80, P - 200, 2.6), mira(129, DIO.x + 80, P - 205, 2.8)]]]),
   ...partir(259.3, 269.0, (cam) => <Espadas cam={cam} />, [[259.3, [mira(0, REY + 420, P - 300, 1.05), mira(126, REY + 460, P - 300, 1.12)]], [263.5, [mira(0, REY + 40, P - 340, 2.2), mira(165, REY + 40, P - 345, 2.35)]]]),
   ...partir(269.0, 276.9, (cam) => <SeCorre cam={cam} />, [[269.0, [mira(0, REY + 40, P - 390, 2.5), mira(57, REY + 40, P - 395, 2.6, { curva: "inout" })]], [270.9, [mira(0, DIO.x + 120, P - 210, 2.3, { rot: -3 }), mira(60, DIO.x + 110, P - 212, 2.4, { rot: -3, curva: "inout" })]],
-    [272.9, [mira(0, BX + 200, P - 270, 1.7), mira(72, BX + 240, P - 270, 1.8, { curva: "inout" })]], [275.3, [mira(0, DIO.x + 40, P - 170, 2.7), mira(48, DIO.x + 40, P - 172, 2.8, { curva: "inout" })]]]),
+    [272.9, [mira(0, BX + 470, P - 290, 1.75), mira(72, BX + 430, P - 290, 1.85, { curva: "inout" })]], [275.3, [mira(0, DIO.x + 40, P - 170, 2.7), mira(48, DIO.x + 40, P - 172, 2.8, { curva: "inout" })]]]),
   { t0: 276.9, t1: 284.1, el: <Deseo /> },
 ];
 // insertos que vuelven en el acto 4 (Alejandro marchando: el mapa que se llena; Diógenes viejo al sol)
@@ -454,9 +484,9 @@ export const MarchaSinFin: React.FC<{ cam?: Clave[] }> = ({ cam }) => (
 // el nene de la fuente (vuelve en el acto 4)
 export const NeneFuente: React.FC = () => (
   <Escena Set={Agora} pal={pal} seed={123} mano={1.6}
-    claves={[mira(0, A.fuente - 170, P - 250, 2.0), mira(150, A.fuente - 170, P - 250, 2.15)]}
+    claves={[mira(0, A.fuente - 170, P - 250, 2.0), mira(56, A.fuente - 170, P - 250, 2.1), mira(57, A.fuente + 30, P - 200, 2.7, { rot: 3 }), mira(116, A.fuente + 30, P - 204, 2.85, { rot: 3, curva: "inout" }), mira(117, A.fuente - 360, P - 260, 2.6, { rot: -2 }), mira(204, A.fuente - 360, P - 262, 2.75, { rot: -2, curva: "inout" })]}
     medio={<><ActorVivo look={{ ...DIOGENES, accesorios: [{ t: "pelo", forma: "calvo", color: "#c99a70" }, { t: "barba", color: "#ece6da" }, { t: "tunica", color: "#9a8a6a", largo: 0.85 }] }} escala={ESC} seed={71} luz={CALIDA} ruta={[{ f: 0, x: A.fuente - 380, y: P + 10 }]} dir={[{ f: 0, v: 1 }]}
-      poses={[{ f: 0, v: "parado" }]} caras={[{ f: 0, v: "feliz" }]} miradas={[{ f: 0, v: { x: 0.9, y: 0.3 } }]} />
+      poses={[{ f: 0, v: "parado" }, { f: 117, v: { hD: 80, cD: 10, hI: 80, cI: 10, cabeza: -6 } }, { f: 160, v: { hD: 40, cD: 120, cabeza: 6 } }]} caras={[{ f: 0, v: "feliz" }, { f: 140, v: "risa" }]} miradas={[{ f: 0, v: { x: 0.9, y: 0.3 } }, { f: 117, v: { x: 0.6, y: -0.2 } }]} />
     <ActorVivo look={NENE} escala={ESC} seed={120} luz={CALIDA} ruta={[{ f: 0, x: A.fuente + 40, y: P }]} dir={[{ f: 0, v: -1 }]}
       poses={[{ f: 0, v: { tronco: 22, hI: 70, cI: 80, hD: 70, cD: 80, cabeza: 8 } }, { f: 50, v: { tronco: 8, hI: 95, cI: 120, hD: 95, cD: 120, cabeza: -6 } }]} caras={[{ f: 0, v: "feliz" }]} /></>} />
 );

@@ -143,7 +143,7 @@ export const NoEsLuz: React.FC = () => {
   const X = CTO.colchon - 120;
   return (
     <EnCuarto leo={null}
-      cam={[mira(0, X + 280, PC - 300, 1.55), mira(165, X + 300, PC - 300, 1.68, { curva: "inout" })]}
+      cam={[mira(0, X + 280, PC - 300, 1.75), mira(ty - 1, X + 300, PC - 300, 1.85, { curva: "inout" }), mira(ty, X + 300, PC - 270, 2.35, { rot: -2 }), mira(165, X + 310, PC - 272, 2.45, { rot: -2, curva: "inout" })]}
       medio={<>
         {/* la chica de luz: aparece, la voz la nombra… y se apaga */}
         <g opacity={interpolate(f, [0, 10, chau, chau + 24], [0, 0.55, 0.55, 0], cl)}>
@@ -268,7 +268,7 @@ export const SombraChica: React.FC = () => {
   const t0 = 355.0;
   const achica = [loc(t0, 356.5), loc(t0, 358.4)], salto = [loc(t0, 358.6), loc(t0, 359.2)];
   const l1 = loc(t0, 359.5), l2 = loc(t0, 360.9), l3 = loc(t0, 362.6);
-  const sAtras = interpolate(f, achica, [1.45, 0.42], cl);
+  const sAtras = interpolate(f, achica, [1.45, 0.66], cl);
   const hombro = { x: LAV.leo + 10, y: P - 196 };
   const atras = { x: LAV.leo - 200, y: P - 30 };
   const u = interpolate(f, salto, [0, 1], cl);
@@ -283,13 +283,13 @@ export const SombraChica: React.FC = () => {
   };
   return (
     <EnLavadero leo={null} tenzo={null}
-      cam={[mira(0, LAV.leo - 110, P - 400, 1.45), mira(achica[1], LAV.leo - 70, P - 330, 1.85, { curva: "inout" }), mira(288, LAV.leo - 20, P - 300, 2.25, { curva: "inout" })]}
+      cam={[mira(0, LAV.leo - 110, P - 400, 1.45), mira(achica[1], LAV.leo - 70, P - 330, 1.85, { curva: "inout" }), mira(288, LAV.leo - 20, P - 330, 2.25, { curva: "inout" })]}
       medio={<>
         {f < salto[0] && <MaraEn x={atras.x} y={atras.y} s={sAtras} p={pMara} />}
         <Actor {...leoLav({ caras: [{ f: 0, v: "triste" }, { f: salto[1], v: "duda" }, { f: l1 + 10, v: "enojo" }, { f: l3 + 24, v: "triste" }],
           poses: [{ f: 0, v: SENTADO }, { f: salto[1], v: { ...SENTADO, cabeza: -10 } }, { f: l3 - 4, v: { ...SENTADO, hI: 150, cI: 70, cabeza: 10, tronco: -4 } }, { f: l3 + 22, v: SENTADO }, { f: l3 + 40, v: { ...SENTADO, cabeza: 16, tronco: 8 } }],
           miradas: [{ f: 0, v: { x: 0.9, y: 0 } }, { f: salto[1], v: { x: -0.8, y: -0.3 } }, { f: l3 + 30, v: { x: 0.4, y: 0.8 } }], giros: [{ f: 0, v: 0 }, { f: salto[1], v: -0.5 }, { f: l3 + 30, v: 0 }] })} />
-        {f >= salto[0] && <MaraEn x={mx} y={my} s={0.42} p={{ ...pMara, dir: [{ f: 0, v: 1 }] }} />}
+        {f >= salto[0] && <MaraEn x={mx} y={my} s={0.66} p={{ ...pMara, dir: [{ f: 0, v: 1 }] }} />}
       </>}
       hud={<>
         <ManoMara texto="he's laughing at you." x={960} y={300} desde={l1} hasta={l2} />
@@ -858,7 +858,7 @@ export const GolpeMesa: React.FC<{ caja?: React.ReactNode }> = ({ caja }) => {
     <EnLavadero medio={<><g transform={`translate(0,${-Math.max(0, ...toques.map((t) => (f >= t && f < t + 8 ? 22 * Math.sin(Math.PI * (f - t) / 8) : 0)))})`}>{caja}</g>{toques.map((t) => (f >= t && f < t + 6 ? [-1, 0, 1].map((k) => <path key={`${t}${k}`} d={`M${LAV.tenzo - 170 + k * 40},${P - 175} l${k * 14},-26`} stroke={ORO} strokeWidth={6} strokeLinecap="round" />) : null))}{toques.map((t) => { const u = (f - t) / 12; return u >= 0 && u < 1 ? <ellipse key={t} cx={LAV.tenzo - 170} cy={P - 152} rx={30 + 110 * u} ry={10 + 30 * u} fill="none" stroke={ORO} strokeWidth={5} opacity={1 - u} /> : null; })}</>}
       tenzo={{ caras: [{ f: 0, v: "feliz" }, { f: toques[1], v: "determinado" }], poses, miradas: [{ f: 0, v: { x: -0.9, y: 0.5 } }], habla: [[toques[2] + 4, 66]] }}
       leo={{ caras: [{ f: 0, v: "duda" }] }}
-      cam={[mira(0, LAV.tenzo - 150, P - 185, 2.8, { rot: -2 }), mira(69, LAV.tenzo - 150, P - 188, 2.95, { rot: -2, curva: "inout" })]} />
+      cam={[mira(0, LAV.tenzo - 110, P - 185, 2.8, { rot: -2 }), mira(69, LAV.tenzo - 110, P - 188, 2.95, { rot: -2, curva: "inout" })]} />
   );
 };
 
@@ -879,7 +879,7 @@ export const GanaEl: React.FC = () => (
   <EnLavadero
     tenzo={{ caras: [{ f: 0, v: "picaro" }], habla: [[0, 30]], poses: [{ f: 0, v: TENZO_MESA }, { f: 8, v: { ...TENZO_MESA, tronco: 14, cabeza: 14, hD: 80, cD: 60 } }, { f: 30, v: { ...TENZO_MESA, tronco: 16, cabeza: -10, hD: 90, cD: 40 } }], miradas: [{ f: 0, v: { x: -0.9, y: 0 } }] }}
     leo={{ caras: [{ f: 0, v: "duda" }] }}
-    cam={[mira(0, LAV.tenzo - 40, P - 240, 2.5), mira(39, LAV.tenzo - 60, P - 240, 2.65, { curva: "inout" })]}
+    cam={[mira(0, LAV.tenzo - 60, P - 300, 3.0, { rot: -4 }), mira(39, LAV.tenzo - 70, P - 300, 3.15, { rot: -4, curva: "inout" })]}
     hud={<ManoLeo texto="is he winning?" x={960} y={300} desde={6} />} />
 );
 

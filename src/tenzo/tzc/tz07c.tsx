@@ -371,3 +371,20 @@ export const Devuelve: React.FC<{ medio?: React.ReactNode }> = ({ medio }) => {
     [agarra, plano([mira(agarra, LAV.leo + 20, P - 260, 2.75, { rot: 3 }), mira(agarra + 30, LAV.leo + 10, P - 262, 2.85, { rot: 3, curva: "inout" })]), agarra],
   ]} />;
 };
+
+// la nuca de Leo de espaldas en primer plano abajo a la izquierda (POV sobre su hombro, en vez del círculo de cara)
+export const Nuca: React.FC<{ x?: number; luz?: boolean }> = ({ x = 300, luz = true }) => {
+  const f = useF();
+  const cab = 2 * Math.sin(f / 19);
+  return (
+    <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+      <g transform={`translate(${x},${1030 + cab}) rotate(-6)`}>
+        <path d="M-260,90 Q-240,-40 -70,-80 L70,-80 Q240,-40 260,90 Z" fill="#1c1c22" />
+        <circle cx={0} cy={-190} r={165} fill="#1c1c22" />
+        {[-120, -66, -12, 42, 96].map((xx, i) => <path key={i} d={`M${xx - 32},${-300 - (i % 2) * 10} l28,-${74 + (i % 3) * 14} l22,${78 + (i % 2) * 8} Z`} fill="#1c1c22" />)}
+        <path d="M150,-240 Q190,-190 165,-120" stroke="#f4efe4" strokeWidth={11} fill="none" opacity={0.75} />
+        {luz && <path d="M120,-330 Q175,-280 168,-200" stroke={ACENTO} strokeWidth={6} fill="none" opacity={0.6} />}
+      </g>
+    </svg>
+  );
+};
