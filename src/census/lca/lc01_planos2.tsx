@@ -394,7 +394,7 @@ export const P37Ciudad: React.FC = () => {
     <AbsoluteFill>
       <TomasSeco cortes={[CA]} tomas={[tomaA, tomaB]} />
       {conteo}
-      <BarrasVidaV6 x={670} y={160} w={760} desde={k(225.7)} d2={k(227.0)} />
+      <BarrasVidaV6 x={625} y={160} w={650} desde={k(225.7)} d2={k(227.0)} />
     </AbsoluteFill>
   );
 };
