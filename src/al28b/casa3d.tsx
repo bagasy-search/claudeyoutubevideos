@@ -335,7 +335,7 @@ export const World: React.FC<{ t: number }> = ({ t }) => {
       <Box p={[-2.15, 0.62, -2.82]} s={[0.4, 0.4, 0.16]} c="#f4f4f2" r={0.3} rad={0.04} />
       <Box p={[-0.15, 1.2, -2.0]} s={[0.04, 0.5, 0.3]} c="#c87f5a" r={0.95} rad={0.02} />
       {/* la ropa colgada adentro del baño (lo que no hay que hacer) */}
-      {s.clothes > 0.01 && <group position={[-2.3, 1.75, -1.2]} scale={[1, ease(s.clothes), 1]}>
+      {s.clothes > 0.01 && <group position={[-3.0, 1.85, -1.95]} scale={[1, ease(s.clothes), 1]}>
         <Box p={[0, 0.18, 0]} s={[1.6, 0.012, 0.012]} c="#888888" m={0.6} r={0.4} rad={0.002} />
         {["#3e6db5", "#d9534f", "#f0c419", "#6aa86a", "#e6e6e6"].map((c, i) => <Box key={i} p={[-0.6 + i * 0.3, -0.12, 0]} s={[0.24, 0.55 - (i % 2) * 0.15, 0.02]} c={c} r={0.95} rad={0.01} />)}
       </group>}
