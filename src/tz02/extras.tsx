@@ -251,9 +251,9 @@ export const TarjetaIcono: React.FC<{ y: number; t: React.ComponentProps<typeof 
   </div>
 );
 // manos (pantalla): mano de piel con manga, apuntando hacia `ang` (0 = hacia arriba)
-export const ManoGrande: React.FC<{ x: number; y: number; ang?: number; piel?: string; manga?: string; palma?: boolean; s?: number }> = ({ x, y, ang = 0, piel = "#e2ad78", manga = "#2a2c33", palma, s = 1 }) => (
+export const ManoGrande: React.FC<{ x: number; y: number; ang?: number; piel?: string; manga?: string; palma?: boolean; s?: number; largo?: number }> = ({ x, y, ang = 0, piel = "#e2ad78", manga = "#2a2c33", palma, s = 1, largo = 600 }) => (
   <g transform={`translate(${x},${y}) rotate(${ang}) scale(${s})`}>
-    <rect x={-70} y={40} width={140} height={600} rx={50} fill={manga} stroke="#121316" strokeWidth={8} />
+    <rect x={-70} y={40} width={140} height={largo} rx={50} fill={manga} stroke="#121316" strokeWidth={8} />
     <rect x={-58} y={-40} width={116} height={110} rx={50} fill={piel} stroke="#3a2618" strokeWidth={8} />
     {palma ? <><path d="M-58,-10 Q-110,-60 -96,-110 Q-84,-120 -70,-100 L-40,-40" fill={piel} stroke="#3a2618" strokeWidth={8} strokeLinejoin="round" />{[-34, -8, 18, 42].map((d, k) => <rect key={d} x={d - 13} y={-118 + Math.abs(k - 1.5) * 10} width={26} height={90} rx={13} fill={piel} stroke="#3a2618" strokeWidth={7} />)}<path d="M-30,10 Q0,30 34,8" stroke="#c8905a" strokeWidth={5} fill="none" /></>
       : <>{[-34, -8, 18].map((d) => <rect key={d} x={d - 14} y={-70} width={28} height={64} rx={14} fill={piel} stroke="#3a2618" strokeWidth={7} />)}<rect x={36} y={-50} width={28} height={70} rx={14} fill={piel} stroke="#3a2618" strokeWidth={7} transform="rotate(-30 50 -20)" /></>}

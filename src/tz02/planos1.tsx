@@ -18,7 +18,7 @@ import {
   Bandeja, BebeVivo, Burbuja, cl, Divan, Etiqueta, FlorMarchita, FlorMuertaMano, Guirnalda, GuirnaldaColgante, Hielo, Icono, Lagrimas, lerp, Lienzo,
   ManoGrande, MiniPalacio, Notas, osc01, Petalos, BebeAlzado, Recto, Sitar, suave, Tambor, TarjetaIcono, TelMarco, TelSvg, Trazo, TxtSvg, Uva, Uvas,
 } from "./extras";
-import { InsertoMandarina, InsertoPalma, PalacioAFeed, Placa, Reloj24, Sacude, TrenFrente, Desarma } from "./extras_a";
+import { InsertoMandarina, InsertoPalma, PalacioAFeed, Placa, Sacude, TrenFrente, Desarma } from "./extras_a";
 
 const L = LAV_PUNTOS;
 const MIRA_T = { x: 0.9, y: 0 }, MIRA_L = { x: -0.9, y: 0 };
@@ -148,20 +148,23 @@ const k05 = kDe(15.72);
 export const Q05Entra: React.FC = () => {
   const f = useF();
   const cB = k05(18.75), cC = k05(21.5), cae = k05(19.45);
+  // v3ra: la cámara entra con él por la puerta (zoom 1,9, lo acompaña): antes era el general detrás de la vidriera con Leo a 1/6 del alto
   if (f < cB) return (
-    <Lav cl={[mira(0, 3700, 470, 1.0), mira(cB, 3600, 480, 1.06)]} toalla={-1} sp={{ tren: 0 }} tenzo={{ no: true }}
+    <Lav cl={[mira(0, 4120, 640, 1.9), mira(30, 4100, 640, 1.9), mira(cB, 3560, 650, 1.95, { curva: "inout" })]} toalla={-1} sp={{ tren: 0 }} tenzo={{ no: true }}
       leo={{ ruta: [{ f: 0, x: 4300, y: LP }, { f: 40, x: 4180, y: LP }, { f: cB, x: 3420, y: LP, curva: "lineal" }], dir: [{ f: 0, v: -1 }], asiento: [{ f: 0, v: undefined }],
         poses: [{ f: 0, v: { hD: 30, cD: 110, hI: 10, cI: 10 } }], enManoI: <BolsoRopa />, enManoD: <Tel />, caras: [{ f: 0, v: "cansado" }], miradas: [{ f: 0, v: { x: -0.9, y: 0.1 } }, { f: 10, v: { x: 0.6, y: -0.5 } }, { f: 40, v: { x: -0.9, y: 0 } }] }}
       hud={<><Hud2 /><Placa texto="THE TRAIN GOES BY" x={960} y={170} desde={6} hasta={k05(17.4)} tam={40} /></>} />
   );
-  if (f < cC) return (
+  // v3ra: sin el primer plano de Tenzo (C): el plano B sigue hasta el corte y Leo, ya sentado, mira hacia el rincón del viejo «like the old man asked»
+  if (f < 999) return (
     <Sacude f0={[cae + 4]} amp={10}>
-      <Lav cl={[mira(cB, 1120, 640, 1.85), mira(cC, 1110, 650, 1.95)]} toalla={-1} tenzo={{ no: true }}
+      <Lav cl={[mira(cB, 1120, 640, 1.85), mira(cC, 1110, 650, 1.95), mira(229, 1180, 650, 2.1, { curva: "inout" })]} toalla={-1} tenzo={{ no: true }}
         extra={f >= cae ? <g transform={`translate(${L.leo - 150},${LP - 160 - Math.max(0, 4 - (f - cae)) * 30})`}><BolsoRopa s={1.5} /></g> : null}
         leo={{ ruta: [{ f: cB, x: 1400, y: LP }, { f: cae - 4, x: L.leo, y: LP }], dir: [{ f: 0, v: -1 }, { f: cae + 6, v: 1 }], asiento: [{ f: 0, v: undefined }, { f: cae + 14, v: 66 }],
           poses: [{ f: 0, v: { hD: 30, cD: 110, hI: 10, cI: 10 } }, { f: cae - 2, v: { hD: 30, cD: 110, hI: -50, cI: 10, tronco: 12 } }, { f: cae + 14, v: { ...SENTADO, hD: 30, cD: 110 } }, { f: k05(20.1), v: { ...SENTADO, hD: 120, cD: 40, cabeza: -4 } }, { f: k05(21.0), v: { ...CEL_SENT, cabeza: 6 } }],
-          enManoI: (fr: number) => (fr < cae ? <BolsoRopa /> : null), enManoD: <Tel s={1.2} />, caras: [{ f: 0, v: "cansado" }, { f: cae + 4, v: "neutral" }], miradas: [{ f: 0, v: { x: -0.9, y: 0 } }, { f: cae + 10, v: { x: 0.2, y: -0.4 } }, { f: k05(21.0), v: { x: 0.3, y: 0.7 } }] }}
-        hud={<><Hud2 /><Placa texto="PHONE IN HAND" x={1300} y={230} desde={k05(20.2)} tam={42} color="#ffd38a" /></>} />
+          enManoI: (fr: number) => (fr < cae ? <BolsoRopa /> : null), enManoD: <Tel s={1.2} />, caras: [{ f: 0, v: "cansado" }, { f: cae + 4, v: "neutral" }, { f: cC + 6, v: "duda" }], miradas: [{ f: 0, v: { x: -0.9, y: 0 } }, { f: cae + 10, v: { x: 0.2, y: -0.4 } }, { f: k05(21.0), v: { x: 0.3, y: 0.7 } }, { f: cC + 4, v: { x: 0.9, y: -0.1 } }],
+          giros: [{ f: 0, v: 0 }, { f: cC + 4, v: 0.35 }] }}
+        hud={<><Hud2 /><Placa texto="PHONE IN HAND" x={1300} y={230} desde={k05(20.2)} hasta={cC} tam={42} color="#ffd38a" /><Placa texto="LIKE THE OLD MAN ASKED" x={1300} y={230} desde={cC + 4} tam={40} /></>} />
     </Sacude>
   );
   return (
@@ -173,9 +176,8 @@ export const Q05Entra: React.FC = () => {
 };
 // ---------- 6 · Tenzo ya está: mismo rincón, misma túnica, el farol en la mesa ----------
 // v3: un plano por cada «same»: A) Tenzo saluda con la mandarina; B) gran general del lavadero con aro sobre SU rincón;
-// C) plano detalle de la túnica gris (se la acomoda); D) detalle del farol que brilla sobre la mesa plegable.
+// C+D) v3ra: un solo detalle extremo del farol, entra la manga gris de Tenzo con la palma abierta; detalle del farol que brilla sobre la mesa plegable.
 const k06 = kDe(23.38);
-const ACOMODA_A = { ...SENTADO, hD: 30, cD: 100, hI: 30, cI: 100, cabeza: 20, tronco: 8 }, ACOMODA_B = { ...SENTADO, hD: 20, cD: 70, hI: 20, cI: 70, cabeza: 22, tronco: 10 };
 export const Q06YaEsta: React.FC = () => {
   const f = useF();
   const { fps } = useVideoConfig();
@@ -196,15 +198,13 @@ export const Q06YaEsta: React.FC = () => {
           <Placa texto="SAME CORNER" x={t.x} y={t.y - 190} desde={cB + 4} tam={46} color="#ffd38a" /></>} />
     );
   }
-  if (f < cD) return (
-    <Lav cl={[mira(cC, 1740, 800, 3.3, { rot: 2 }), mira(cD, 1735, 795, 3.45, { rot: 2 })]} toalla={-1} leo={{ no: true }}
-      tenzo={tenzoPela({ enManoD: null, poses: ciclo(ACOMODA_A, ACOMODA_B, 14, cD, cC), caras: [{ f: 0, v: "feliz" }], miradas: [{ f: 0, v: { x: -0.1, y: 0.9 } }] })}
-      hud={<><Hud2 /><Placa texto="SAME GRAY ROBE" x={560} y={230} desde={cC + 3} tam={46} /></>} />
-  );
+  // v3ra: sin el detalle de la túnica (era otro primer plano del monje): el farol en primerísimo arranca en «same gray robe» con la MANGA gris que entra
   return (
-    <Lav cl={[mira(cD, L.farol - 50, LP - 200, 3.9), mira(226, L.farol - 40, LP - 195, 4.1)]} toalla={-1} leo={{ no: true }} sp={{ luzFarol: 1.2 + 0.5 * osc01(f, 18) + (f % 23 < 2 ? -0.6 : 0) }}
-      tenzo={tenzoPela({ enManoD: null, poses: [{ f: 0, v: DOBLA_A }], miradas: [{ f: 0, v: { x: -0.6, y: 0.2 } }] })}
-      hud={<><Hud2 /><Placa texto="SAME LITTLE LANTERN" x={600} y={230} desde={cD + 3} tam={46} color="#ffd38a" /></>} />
+    // v3ra: el farol en PRIMERÍSIMO (llena el cuadro) y la mano de Tenzo entra y lo gira apenas; sin su cara (no repetir el monje con farol)
+    <Lav cl={[mira(cC, L.farol - 10, LP - 215, 4.8), mira(226, L.farol, LP - 210, 5.6, { curva: "inout" })]} toalla={-1} leo={{ no: true }} sp={{ luzFarol: 1.25 + 0.25 * osc01(f, 22) }}
+      tenzo={{ ruta: [{ f: 0, x: L.tenzo + 260, y: LP }], poses: [{ f: 0, v: DOBLA_A }] }}
+      extra={(() => { const u = suave(lerp(f, cC + 2, cC + 34, 0, 1)); return <ManoGrande x={L.farol + 70 + (1 - u) * 160} y={LP - 150 + (1 - u) * 140} ang={-38} piel="#e0b48c" manga="#8a8c90" s={0.3} palma />; })()}
+      hud={<><Hud2 /><Placa texto="SAME GRAY ROBE" x={600} y={230} desde={cC + 3} hasta={cD} tam={46} /><Placa texto="SAME LITTLE LANTERN" x={600} y={230} desde={cD + 3} tam={46} color="#ffd38a" /></>} />
   );
 };
 // ---------- 7 · hoy no dobla toallas: pela una mandarina, despacio, en una sola espiral ----------
@@ -216,17 +216,20 @@ export const Q07Mandarina: React.FC = () => {
   const t1 = k07(35.5), t2 = k07(36.6);
   const toallas = 1 - lerp(f, 8, 44, 0, 1);
   const entra = lerp(f, 36, 70, 0, 1);
-  if (f >= t1 && f < t2) return (
-    <Lav cl={[mira(t1, 1650, 650, 2.9, { rot: -2 }), mira(t2, 1660, 655, 3.0, { rot: -2 })]} toalla={-1} leo={{ no: true }}
+  // v3ra: sin el corte al primer plano del monje en «very slowly»: el inserto de las manos pelando sigue de corrido
+  if (f < 0) return (
+    // v3ra: las MANOS pelando, de cerca y a la altura de la mesa (la cara apenas asoma arriba): no otro primer plano del monje
+    <Lav cl={[mira(t1, 1700, 760, 3.7, { rot: 2 }), mira(t2, 1705, 755, 3.85, { rot: 2 })]} toalla={-1} leo={{ no: true }} sp={{ farol: false }}
       tenzo={tenzoPela({ poses: ciclo(PELA, { ...PELA, hD: 60, cD: 95, cabeza: 20 }, 16, t2, t1), enManoD: <Mandarina pelada={0.6} s={1.3} />, caras: [{ f: 0, v: "feliz" }], miradas: [{ f: 0, v: { x: -0.2, y: 0.8 } }] })}
       hud={<><Hud2 /><Placa texto="VERY SLOWLY" x={700} y={210} desde={t1 + 2} tam={46} color="#fff2c8" /></>} />
   );
-  const p = f < t1 ? lerp(f, k07(33.3), t1, 0, 0.5) : lerp(f, t2, 222, 0.55, 1);
+  const p = lerp(f, k07(33.3), 222, 0, 1);
   return (
     <Fondo>
-      <InsertoMandarina f={f} p={p} toallas={toallas} entra={entra} zoom={f < t1 ? lerp(f, 0, t1, 1, 1.08) : lerp(f, t2, 228, 1.12, 0.96)} />
+      <InsertoMandarina f={f} p={p} toallas={toallas} entra={entra} zoom={lerp(f, 0, 228, 1, 1.12)} />
       <Placa texto="NOT FOLDING TOWELS" x={480} y={200} desde={k07(31.4)} hasta={k07(33.2)} tam={44} />
-      <Placa texto="PEELING A MANDARIN" x={480} y={200} desde={k07(33.9)} hasta={t1} tam={44} color="#ffb060" />
+      <Placa texto="PEELING A MANDARIN" x={480} y={200} desde={k07(33.9)} hasta={k07(35.4)} tam={44} color="#ffb060" />
+      <Placa texto="VERY SLOWLY" x={480} y={200} desde={k07(35.5)} hasta={k07(36.7)} tam={46} color="#fff2c8" />
       {f >= t2 && <Placa texto="1 PEEL · 0 BREAKS" x={1520} y={200} desde={t2 + 4} tam={44} color="#ffb060" />}
       <Placa texto="ONE LONG SPIRAL" x={480} y={200} desde={k07(36.8)} tam={48} color="#fff2c8" />
       <Hud2 />
@@ -253,9 +256,13 @@ export const Q09Mano: React.FC = () => {
   const f = useF();
   const cB = k09(43.45);
   if (f < cB) return (
-    <Lav cl={[mira(0, 1660, 650, 2.3), mira(cB, 1640, 650, 2.45)]} leo={{ no: true }} toalla={-1}
-      tenzo={{ poses: [{ f: 0, v: DOBLA_A }, { f: k09(42.4), v: { ...DOBLA_A, cabeza: -6 } }, { f: k09(42.9), v: OFRECE }], caras: [{ f: 0, v: "neutral" }, { f: k09(42.6), v: "feliz" }], miradas: [{ f: 0, v: { x: -0.3, y: 0.5 } }, { f: k09(42.3), v: MIRA_L }], giros: [{ f: 0, v: 0.2 }] }}
-      hud={<><Hud2 /><Placa texto="HE HOLDS OUT HIS HAND" x={700} y={170} desde={k09(42.3)} tam={44} /></>} />
+    // v3ra: DOS-SHOT de perfil a la altura de la mesa (antes: otro primer plano del monje con el farol). Tenzo tiende el brazo por encima
+    // de la mesa y Leo se echa atrás apretando el tel: la distancia entre los dos ES la escena.
+    <Lav cl={[mira(0, 1440, 700, 1.55), mira(cB, 1450, 705, 1.68, { curva: "inout" })]} toalla={-1} sp={{ luzFarol: 1.1 }}
+      tenzo={{ poses: [{ f: 0, v: DOBLA_A }, { f: k09(42.4), v: { ...DOBLA_A, cabeza: -6 } }, { f: k09(42.9), v: { ...OFRECE, tronco: 14 } }], caras: [{ f: 0, v: "neutral" }, { f: k09(42.6), v: "feliz" }], miradas: [{ f: 0, v: { x: -0.3, y: 0.5 } }, { f: k09(42.3), v: MIRA_L }], giros: [{ f: 0, v: 0 }] }}
+      leo={leoSent({ poses: [{ f: 0, v: { ...CEL_SENT, cabeza: 4 } }, { f: k09(42.7), v: { ...CEL_SENT, cabeza: -4, tronco: -2 } }, { f: k09(43.0), v: { ...AFERRA, tronco: -14, cabeza: -6 } }],
+        caras: [{ f: 0, v: "neutral" }, { f: k09(42.75), v: "sorpresa" }, { f: k09(43.1), v: "duda" }], miradas: [{ f: 0, v: { x: 0.3, y: 0.7 } }, { f: k09(42.7), v: MIRA_T }] })}
+      hud={<><Hud2 /><Placa texto="HE HOLDS OUT HIS HAND" x={960} y={170} desde={k09(42.3)} tam={44} /></>} />
   );
   const abre = suave(lerp(f, k09(43.55), k09(44.0), 0, 1));
   const retro = suave(lerp(f, k09(44.3), k09(44.9), 0, 1));
@@ -293,7 +300,8 @@ const ICONOS11: { t: "trabajo" | "mapa" | "chat" | "musica"; d: number; x: numbe
 export const Q11Necesito: React.FC = () => {
   const f = useF();
   const { fps } = useVideoConfig();
-  const cl11 = [mira(0, L.leo + 80, 620, 2.1), mira(95, L.leo + 80, 615, 2.2)];
+  // v3ra: otro encuadre que Q10: Leo en el TERCIO IZQUIERDO, de cuerpo entero sentado (zoom 1,6), y las cadenas cruzan todo el cuadro
+  const cl11 = [mira(0, L.leo + 360, 640, 1.6), mira(95, L.leo + 340, 650, 1.7, { curva: "inout" })];
   const t = enPantalla(cl11, f, fps, L.leo + 100, LP - 156);
   const tira = lerp(f, k11(50.6), k11(51.2), 0, 1);
   return (
@@ -338,21 +346,37 @@ export const Q11Necesito: React.FC = () => {
 const k12 = kDe(51.56);
 // v3: cortado en 3 — Tenzo levanta UN dedo (primer plano) → cronómetro de pantalla completa «24:00:00 · TOMORROW 3:00 AM» →
 // Tenzo cuenta (manos abiertas) y en «prince» brota la burbuja del príncipe en su palacio; en «phone» un tel con «?» entra a la burbuja.
-const DEDO = { ...SENTADO, hD: 150, cD: 10, hI: 20, cI: 40, cabeza: -4 };
 const CUENTA_A = { ...SENTADO, hD: 70, cD: 50, hI: 70, cI: 50, tronco: 8, cabeza: 2 }, CUENTA_B = { ...SENTADO, hD: 100, cD: 30, hI: 95, cI: 35, tronco: 4, cabeza: -6 };
 export const Q12UnaNoche: React.FC = () => {
   const f = useF();
   const { fps } = useVideoConfig();
   const c1 = k12(53.6), c2 = k12(55.45);
+  // v3ra: A) PRIMERÍSIMO de Leo (antes: otro primer plano del monje): oye «one night» otra vez, aprieta el tel y mira al viejo de reojo
   if (f < c1) return (
-    <Lav cl={[mira(0, 1700, 610, 2.7), mira(c1, 1690, 615, 2.85)]} toalla={-1} leo={{ no: true }}
-      tenzo={{ poses: [{ f: 0, v: OFRECE }, { f: 8, v: DOBLA_A }, { f: 16, v: DEDO }, { f: k12(52.3), v: { ...DEDO, hD: 140, cD: 25, cabeza: 4 } }, { f: k12(52.95), v: DEDO }],
-        enManoD: (fr: number) => (fr > 14 ? <g transform="rotate(170) translate(0,-14)"><rect x={-7} y={-40} width={14} height={44} rx={7} fill="#f2bf8f" stroke="#3a2618" strokeWidth={4} /></g> : null),
-        caras: [{ f: 0, v: "feliz" }, { f: 20, v: "determinado" }, { f: k12(52.3), v: "feliz" }], miradas: [{ f: 0, v: MIRA_L }], habla: [[k12(51.56), k12(52.2)]] }}
-      hud={<><Hud2 /><Placa texto="ONE NIGHT" x={700} y={230} desde={4} tam={58} color="#ffd38a" /></>} />
+    <Lav cl={[mira(0, L.leo + 40, 680, 3.0), mira(c1, L.leo + 50, 670, 3.2)]} toalla={-1} tenzo={{ no: true }}
+      leo={leoSent({ poses: [{ f: 0, v: AFERRA }, { f: 18, v: AFERRA2 }, { f: 40, v: { ...AFERRA2, tronco: -8, cabeza: 2 } }], caras: [{ f: 0, v: "duda" }, { f: 16, v: "triste" }, { f: 42, v: "determinado" }],
+        miradas: [{ f: 0, v: { x: 0.3, y: 0.7 } }, { f: 12, v: MIRA_T }, { f: 34, v: { x: 0.4, y: 0.8 } }, { f: 50, v: MIRA_T }] })}
+      hud={<><Hud2 /><Placa texto="«ONE NIGHT.»" x={1400} y={230} desde={4} tam={58} color="#ffd38a" /></>} />
   );
-  if (f < c2) return <AbsoluteFill><Reloj24 desde={c1} dur={c2 - c1} /><Hud2 /></AbsoluteFill>;
-  const cl12 = [mira(c2, 1640, 700, 2.2), mira(252, 1620, 690, 2.35, { curva: "inout" })];
+  // B) el RELOJ de la pared corre (las agujas dan la vuelta hasta las 3) y Leo, abajo, lo mira
+  if (f < c2) {
+    const u = lerp(f, c1, c2, 0, 1);
+    const ang = u * 720;
+    return (
+      <Lav cl={[mira(c1, L.leo + 150, 590, 1.55), mira(c2, L.leo + 150, 580, 1.62)]} toalla={-1} tenzo={{ no: true }}
+        extra={<g transform={`translate(${L.leo + 330},${LP - 545})`}>
+          <circle r={128} fill="#f4efe6" stroke="#2a2c32" strokeWidth={14} />
+          {Array.from({ length: 12 }).map((_, k) => <line key={k} x1={0} y1={-108} x2={0} y2={k % 3 ? -96 : -84} stroke="#2a2c32" strokeWidth={k % 3 ? 5 : 9} transform={`rotate(${k * 30})`} />)}
+          <line x1={0} y1={10} x2={0} y2={-60} stroke="#2a2c32" strokeWidth={12} strokeLinecap="round" transform={`rotate(${90 + ang / 12})`} />
+          <line x1={0} y1={14} x2={0} y2={-92} stroke="#ff6a2b" strokeWidth={7} strokeLinecap="round" transform={`rotate(${ang})`} />
+          <circle r={11} fill="#2a2c32" />
+        </g>}
+        leo={leoSent({ poses: [{ f: 0, v: AFERRA }], caras: [{ f: 0, v: "duda" }, { f: c1 + 30, v: "triste" }], miradas: [{ f: 0, v: { x: 0.5, y: -0.8 } }], giros: [{ f: 0, v: 0.2 }] })}
+        hud={<><Hud2 /><Pildora texto="TOMORROW · 3:00 AM" x={1380} y={900} tam={44} desde={c1 + 4} color="#ff6a2b" /></>} />
+    );
+  }
+  // C) Tenzo en el TERCIO IZQUIERDO, de cuerpo entero sentado, y la burbuja del príncipe ocupa la derecha
+  const cl12 = [mira(c2, L.tenzo + 330, 610, 1.7), mira(252, L.tenzo + 310, 620, 1.8, { curva: "inout" })];
   const cab = enPantalla(cl12, f, fps, 1700, LP - 270);
   const tel = lerp(f, k12(58.5), k12(59.2), 0, 1);
   return (
@@ -360,7 +384,7 @@ export const Q12UnaNoche: React.FC = () => {
       tenzo={{ poses: [{ f: 0, v: CUENTA_A }, ...ciclo(CUENTA_A, CUENTA_B, 34, k12(57.6), c2 + 6), { f: k12(57.8), v: { ...SENTADO, hD: 150, cD: 30, hI: 20, cI: 40, cabeza: -10 } }, { f: k12(58.6), v: { ...SENTADO, hD: 90, cD: 80, hI: 80, cI: 70, tronco: 10 } }],
         caras: [{ f: 0, v: "feliz" }, { f: k12(57.8), v: "risa" }], miradas: [{ f: 0, v: MIRA_L }, { f: k12(57.8), v: { x: -0.5, y: -0.6 } }], habla: [[0, k12(56.0)], [k12(56.8), k12(59.3)]] }}
       hud={<><Hud2 />
-        <Burbuja x={700} y={330} r={220} desde={k12(57.7)} cx={cab.x - 80} cy={cab.y - 40}>
+        <Burbuja x={1340} y={420} r={230} desde={k12(57.7)} cx={cab.x - 80} cy={cab.y - 40}>
           <rect x={-120} y={-120} width={240} height={240} fill="#ffd9a0" /><rect x={-120} y={50} width={240} height={80} fill="#e2b47e" />
           <g transform="translate(0,20)"><MiniPalacio s={0.8} /></g>
           <g transform="translate(-40,62)"><circle cx={0} cy={-46} r={14} fill="#dfa877" stroke="#2a2622" strokeWidth={3} /><path d="M-14,-32 L14,-32 L18,10 L-18,10 Z" fill="#f1e2c0" stroke="#2a2622" strokeWidth={3} /><path d="M-10,-60 L-6,-70 L0,-62 L6,-70 L10,-60 Z" fill="#e0b040" /></g>
@@ -376,12 +400,13 @@ const k13 = kDe(59.98);
 export const Q13Estira: React.FC = () => {
   const esc = k13(63.4);
   return (
-    <Lav cl={[mira(0, L.leo - 60, 680, 2.0), mira(139, L.leo - 80, 670, 2.25, { curva: "inout" })]} tenzo={{ no: true }} toalla={-1}
-      mara={{ opacidad: fade(0, 40, 0.96), poses: [{ f: 0, v: { tronco: 10, cabeza: 20, hD: 10, cD: 10, hI: 10, cI: 10 } }, { f: k13(61.8), v: { tronco: -8, cabeza: -14, hD: 170, cD: 20, hI: -170, cI: -20 } }, { f: k13(63.3), v: { hD: 70, cD: 80, hI: 30, cI: 60, tronco: 16, cabeza: 18 } }],
+    // v3ra: otro encuadre que Q10/Q11: plano abierto y bajo, Leo a la DERECHA y la sombra que se estira enorme a la izquierda, separada
+    <Lav cl={[mira(0, L.leo - 230, 560, 1.45), mira(139, L.leo - 200, 600, 1.6, { curva: "inout" })]} tenzo={{ no: true }} toalla={-1}
+      mara={{ ruta: [{ f: 0, x: L.leo - 380, y: LP - 10 }], escala: ESC * 1.35, opacidad: fade(0, 40, 0.96), poses: [{ f: 0, v: { tronco: 10, cabeza: 20, hD: 10, cD: 10, hI: 10, cI: 10 } }, { f: k13(61.8), v: { tronco: -8, cabeza: -14, hD: 170, cD: 20, hI: -170, cI: -20 } }, { f: k13(63.3), v: { hD: 70, cD: 80, hI: 30, cI: 60, tronco: 16, cabeza: 18 } }],
         caras: [{ f: 0, v: "cansado" }, { f: k13(62.8), v: "sorpresa" }, { f: k13(63.32), v: "picaro" }] }}
       leo={conReaccion(leoSent({ poses: [{ f: 0, v: AFERRA }, { f: k13(61.9), v: { ...AFERRA, cabeza: -6 } }], caras: [{ f: 0, v: "duda" }],
         miradas: [{ f: 0, v: MIRA_T }, { f: k13(61.9), v: { x: -0.6, y: -0.2 } }, { f: k13(62.6), v: MIRA_T }, { f: esc + 14, v: { x: -0.9, y: -0.4 } }], giros: [{ f: 0, v: 0 }, { f: esc + 14, v: -0.5 }] }) as Parameters<typeof conReaccion>[0], "miedo", esc, 60)}
-      hud={<><Hud2 /><Lienzo><ReaccionFx tipo="miedo" f0={esc} x={1150} y={430} dir={-1} s={1.4} /></Lienzo></>} />
+      hud={<><Hud2 /><Lienzo><ReaccionFx tipo="miedo" f0={esc} x={1330} y={420} dir={-1} s={1.4} /></Lienzo></>} />
   );
 };
 // ---------- 14 · «don't give it to him… you hate being alone with yourself» ----------
@@ -464,7 +489,7 @@ export const Q17Rey: React.FC = () => {
             caras={[{ f: 0, v: "feliz" }, { f: 44, v: "risa" }]} miradas={[{ f: 0, v: { x: -0.6, y: 0.5 } }, { f: 44, v: { x: -0.1, y: -0.9 } }]}
             enManoD={(fr: number) => <Recto ang={fr < 30 ? 120 : 170} dy={-20}><BebeAlzado s={1.55} f={fr} /></Recto>} />
         </>}
-        hud={<><Pildora texto="KING SUDDHODANA" x={960} y={110} desde={10} color="#ffe2a6" tam={40} /><Etiqueta texto="A SON!" x={1500} y={330} desde={68} tam={84} color="#ffd38a" /></>} />
+        hud={<><Pildora texto="KING SUDDHODANA" x={960} y={110} desde={10} color="#ffe2a6" tam={40} /><Pildora texto="A SON!" x={1500} y={330} desde={68} tam={72} color="#ffd38a" /></>} />
       <Petalos f={f} desde={66} />
     </>
   );

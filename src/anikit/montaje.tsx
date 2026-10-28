@@ -10,7 +10,7 @@ import React from "react";
 import { AbsoluteFill, Sequence, interpolate } from "remotion";
 import { Clave, OffsetCtx } from "./camara";
 
-export type Trans = { tipo: "corte" | "fundido" | "cortina" | "luz" | "barrido"; d?: number; color?: string; lado?: 1 | -1 };
+export type Trans = { tipo: "corte" | "fundido" | "cortina" | "luz" | "barrido"; d?: number; color?: string; lado?: 1 | -1; fuerza?: number };
 export type PlanoM = { dur: number; el: React.ReactNode; trans?: Trans }; // trans = cómo se ENTRA a este plano
 
 export const Montaje: React.FC<{ planos: PlanoM[] }> = ({ planos }) => {
@@ -42,7 +42,7 @@ export const Montaje: React.FC<{ planos: PlanoM[] }> = ({ planos }) => {
         const d = tr.d ?? (tr.tipo === "cortina" ? 14 : 16);
         return (
           <Sequence key={`t${i}`} from={cortes[i] - Math.ceil(d / 2)} durationInFrames={d} layout="none">
-            {tr.tipo === "cortina" ? <Cortina d={d} color={tr.color} lado={tr.lado} /> : <Destello d={d} color={tr.color} />}
+            {tr.tipo === "cortina" ? <Cortina d={d} color={tr.color} lado={tr.lado} /> : <Destello d={d} color={tr.color} fuerza={tr.fuerza} />}
           </Sequence>
         );
       })}
@@ -81,9 +81,10 @@ export const Cortina: React.FC<{ d: number; color?: string; lado?: 1 | -1 }> = (
   );
 };
 
-export const Destello: React.FC<{ d: number; color?: string }> = ({ d, color = "#fff3d8" }) => {
+// fuerza (opcional, 0-1, por defecto 1): techo de opacidad del destello
+export const Destello: React.FC<{ d: number; color?: string; fuerza?: number }> = ({ d, color = "#fff3d8", fuerza = 1 }) => {
   const f = useCurrentFrame();
-  const o = interpolate(f, [0, d * 0.5, d], [0, 1, 0], { extrapolateRight: "clamp" });
+  const o = fuerza * interpolate(f, [0, d * 0.5, d], [0, 1, 0], { extrapolateRight: "clamp" });
   return <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 45%, #ffffff 0%, ${color} 45%, ${color} 100%)`, opacity: o }} />;
 };
 

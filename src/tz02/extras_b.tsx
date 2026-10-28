@@ -65,18 +65,32 @@ const poly = (...p: P2[]) => p.map((q) => q.join(",")).join(" ");
 export const DoblaToalla: React.FC<{ p1: [number, number]; p2: [number, number] }> = ({ p1, p2 }) => {
   const f = useF();
   const a = suave(lerp(f, p1[0], p1[1], 0, 1)), b = suave(lerp(f, p2[0], p2[1], 0, 1));
-  const S = 250, C: P2 = [960, 640];
+  const S = 290, C: P2 = [900, 660];
   const TL: P2 = [C[0] - S, C[1] - S], TR: P2 = [C[0] + S, C[1] - S], BR: P2 = [C[0] + S, C[1] + S], BL: P2 = [C[0] - S, C[1] + S];
   const P = mix(TR, BL, a); // la punta que viaja
   const Q = mix(TL, BR, b); // segundo doblez
   const cara = "#efe4cf", dorso = "#d8c8ac", raya = "#c8603a";
-  const Tri: React.FC<{ pts: P2[]; fill: string }> = ({ pts, fill }) => <polygon points={poly(...pts)} fill={fill} stroke="#9a8a70" strokeWidth={4} strokeLinejoin="round" />;
+  // v3ra: toalla de RIZO con rayas (antes el triángulo liso parecía un avión de papel): patrón de rayas + puntitos de rizo
+  const pat = (fill: string) => (fill === cara ? "url(#rizoCara)" : "url(#rizoDorso)");
+  const Tri: React.FC<{ pts: P2[]; fill: string }> = ({ pts, fill }) => <g><polygon points={poly(...pts)} fill={pat(fill)} stroke="#9a8a70" strokeWidth={5} strokeLinejoin="round" /><polygon points={poly(...pts)} fill="url(#rizoRaya)" opacity={fill === cara ? 0.9 : 0.55} /></g>;
   // manos: derecha toma la punta móvil, izquierda sostiene la punta de llegada
   const mD = b > 0 ? Q : P;
   const angD = b > 0 ? interpolate(b, [0, 1], [-30, -150]) : interpolate(a, [0, 1], [-40, -10]);
   const sube = Math.sin(Math.PI * (b > 0 ? b : a)) * 40; // levanta la punta en el medio del gesto
   return (
     <Lienzo>
+      <defs>
+        {([["rizoCara", cara], ["rizoDorso", dorso]] as const).map(([id, base]) => (
+          <pattern key={id} id={id} patternUnits="userSpaceOnUse" width={600} height={24} x={C[0] - S} y={C[1] - S}>
+            <rect width={600} height={24} fill={base} />
+            {[0, 8, 16].map((dy) => Array.from({ length: 30 }, (_, k) => k).map((k) => <circle key={`${dy}-${k}`} cx={k * 20 + (dy % 16 ? 10 : 0)} cy={dy + 4} r={2.6} fill="#000" opacity={0.07} />))}
+          </pattern>
+        ))}
+        <pattern id="rizoRaya" patternUnits="userSpaceOnUse" width={580} height={580} x={C[0] - S} y={C[1] - S}>
+          <rect x={0} y={70} width={580} height={40} fill="#3f6fb0" /><rect x={0} y={122} width={580} height={14} fill="#3f6fb0" />
+          <rect x={0} y={444} width={580} height={14} fill="#3f6fb0" /><rect x={0} y={470} width={580} height={40} fill="#3f6fb0" />
+        </pattern>
+      </defs>
       <rect width={1920} height={1080} fill="#2a2d33" />
       {[0, 1, 2, 3, 4].map((k) => <g key={k} opacity={0.35}><rect x={60 + k * 380} y={40} width={330} height={300} rx={20} fill="#d8dce2" /><circle cx={225 + k * 380} cy={200} r={95} fill="#1d2026" /></g>)}
       <circle cx={1500} cy={300} r={520} fill="#ffc46a" opacity={0.12} />
@@ -92,8 +106,8 @@ export const DoblaToalla: React.FC<{ p1: [number, number]; p2: [number, number] 
           <Tri pts={[BL, C, [Q[0], Q[1] - sube]]} fill={b < 0.5 ? dorso : cara} />
         </>}
       </g>
-      <ManoGrande x={BL[0] - 40} y={BL[1] + 30} ang={50} piel="#f2bf8f" manga="#8e8a82" s={0.9} />
-      <ManoGrande x={mD[0] + 30} y={mD[1] - sube + 20} ang={angD} piel="#f2bf8f" manga="#8e8a82" s={0.9} />
+      <ManoGrande x={BL[0] - 40} y={BL[1] + 30} ang={50} piel="#f2bf8f" manga="#8e8a82" s={0.9} largo={1500} />
+      <ManoGrande x={mD[0] + 30} y={mD[1] - sube + 20} ang={angD} piel="#f2bf8f" manga="#8e8a82" s={0.9} largo={1500} />
     </Lienzo>
   );
 };
