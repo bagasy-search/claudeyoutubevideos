@@ -244,17 +244,35 @@ export const P50Semana1: React.FC = () => (
 );
 // ---------- 51 · la segunda semana: seda y jazmín; se sienta tan cerca que él oye su corazón (ondas al oído) ----------
 const k51 = kDe(232.11);
+// v3 (28-oct): plano INTERIOR (≠ P50): cerrado sobre las dos caras, entre las cortinas de seda del pabellón que se mecen en primer término
+const CortinaSeda: React.FC = () => {
+  const f = useF();
+  const m = (k: number) => 18 * Math.sin(f / 23 + k);
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <svg width={1920} height={1080} style={{ position: "absolute" }}>
+        <path d={`M0,0 L330,0 Q${250 + m(0)},420 ${300 + m(1)},1080 L0,1080 Z`} fill="#c8324a" opacity={0.82} />
+        <path d={`M0,0 L190,0 Q${140 + m(2)},500 ${170 + m(3)},1080 L0,1080 Z`} fill="#a8203a" opacity={0.9} />
+        <path d={`M1920,0 L1640,0 Q${1700 + m(4)},460 ${1660 + m(5)},1080 L1920,1080 Z`} fill="#e0b040" opacity={0.7} />
+        <path d={`M0,0 L1920,0 L1920,70 Q960,${130 + m(6)} 0,70 Z`} fill="#8a1a30" opacity={0.92} />
+      </svg>
+    </AbsoluteFill>
+  );
+};
 export const P51Semana2: React.FC = () => (
-  <Vai cl={[mira(0, MX + 110, 640, 2.0), mira(206, MX + 90, 650, 2.5)]} sp={{ noche: true }}
+  <>
+  <Vai cl={[mira(0, MX + 100, 650, 2.9), mira(206, MX + 92, 655, 3.15, { curva: "inout" })]} sp={{ noche: true }}
     medio={<>
       <MonjePab o={{ caras: [{ f: 0, v: "cansado" }, { f: k51(237.7), v: "sorpresa" }], miradas: [{ f: 0, v: { x: 0.8, y: 0 } }] }} />
       <A look={AMRAPALI} seed={12} ruta={[{ f: 0, x: MX + 300, y: VP - 40 }, { f: k51(235.3), x: MX + 190, y: VP - 40 }]} dir={[{ f: 0, v: -1 }]} asiento={[{ f: 0, v: undefined }, { f: k51(235.6), v: 40 }]}
         poses={[{ f: 0, v: { hD: 110, cD: 40, hI: -40, cI: 30 } }, { f: 40, v: { hD: 20, cD: 60, hI: -90, cI: 30 } }, { f: k51(235.6), v: { tronco: -14, pI: 88, rI: 88, pD: 92, rD: 92, hD: 70, cD: 50, hI: 20, cI: 30, cabeza: 10 } }]}
         caras={[{ f: 0, v: "feliz" }, { f: 110, v: "picaro" }]} giros={[{ f: 0, v: 0.3 }]} />
-      <Jazmin x={MX + 120} y={420} desde={k51(234.1)} />
+      <Jazmin x={MX + 120} y={530} desde={k51(234.1)} />
       <Latido x={MX + 150} y={735} hacia={{ x: MX + 30, y: 650 }} desde={k51(237.3)} s={0.7} />
     </>}
-    hud={<Calendario texto="WEEK 2" x={1560} y={70} desde={6} acento={ORO} />} />
+    hud={<Calendario texto="WEEK 2" x={1280} y={110} desde={6} acento={ORO} />} />
+  <CortinaSeda />
+  </>
 );
 // ---------- 52 · sintió el fuego: aprieta las rodillas, la llama crece; a los veinte años; ni huyó ni obedeció ----------
 const k52 = kDe(239.01);
@@ -437,7 +455,7 @@ export const P60Monja: React.FC = () => {
   const monja = f >= TM + 5;
   const barrido = lerp(f, TM - 2, TM + 8, 0, 1);
   return (
-    <Vai cl={[mira(0, 4560, 640, 1.75), mira(TM + 4, 4570, 642, 1.85), ...corte(TM + 5, 4600, 640, 2.7), mira(119, 4600, 636, 2.8)]}
+    <Vai cl={[mira(0, 4560, 640, 1.75), mira(TM + 4, 4570, 642, 1.85), ...corte(TM + 5, 4600, 690, 1.85), mira(119, 4600, 686, 1.92)]}
       medio={<>
         {!monja && [0, 1, 2].map((k) => <A key={k} look={HOMBRE(k + 2)} seed={95 + k} escala={ESC * 0.78} ruta={[{ f: 0, x: [4180, 4300, 4930][k], y: VP - 70 }]} dir={[{ f: 0, v: k === 2 ? -1 : 1 }]}
           caras={[{ f: 0, v: ["feliz", "risa", "feliz"][k] }]} poses={[{ f: 0, v: k === 1 ? "manosCara" : "parado" }]} />)}
@@ -635,12 +653,15 @@ export const P67Papel: React.FC = () => {
   // v4: «lifts the lantern a little» = general bajo desde el lado de Leo (no el encuadre de P68) · «a fire made of paper» = INSERTO: el farol en las dos manos,
   // los pulgares hunden el papel y la llama se ve adentro
   const TI = 52;
-  const c67 = [mira(0, 1530, 760, 1.95), mira(TI - 1, 1545, 740, 2.1)];
   if (f >= TI) return <><FarolEnManos desde={TI} aprieta={lerp(f, k67(330.7), k67(331.1), 0, 1) * (0.85 + 0.15 * Math.sin((f - TI) / 5))} /><Hud /><Pildora texto="A FIRE MADE OF PAPER" x={960} y={110} desde={k67(330.3)} color="#ffe2a6" tam={52} /></>;
+  // v3 (28-oct): ya no es Tenzo con el farol (4ª vez): CONTRAPLANO desde Leo: primer plano de Leo, la luz del farol que sube le pinta la cara y él la sigue con los ojos
+  const sube = lerp(f, 6, 40, 0, 1);
   return (
-    <Lav cl={c67} toalla={0.8} sp={{ farol: f < 22 }} leo={{ no: true }}
-      tenzo={tenzoFarol({ habla: [[k67(329.99), k67(331.87)]], caras: [{ f: 0, v: "feliz" }], poses: [{ f: 0, v: DOBLA_A }, { f: 24, v: { ...DOBLA_A, hD: 70, cD: 20, cabeza: 0 } }, { f: 50, v: { ...DOBLA_A, hD: 95, cD: 20, cabeza: -6, tronco: -4 } }], miradas: [{ f: 0, v: { x: -0.9, y: -0.1 } }, { f: 40, v: { x: -0.6, y: 0.4 } }] })}
-      hud={<><Hud /><Pildora texto="A FIRE MADE OF PAPER" x={560} y={250} desde={k67(330.6)} color="#ffe2a6" tam={46} /></>} />
+    <Lav cl={[mira(0, L.leo + 40, 625, 3.0), mira(TI - 1, L.leo + 44, 618, 3.12, { curva: "inout" })]} toalla={0.8} sp={{ farol: f < 22 }} tenzo={{ no: true }} mara={{ no: true }}
+      leo={{ enManoD: () => null, luz: { lado: 1, color: ORO, fuerza: 0.6 + 0.8 * sube }, poses: [{ f: 0, v: { ...SENTADO, tronco: 8, cabeza: 6, hD: 12, cD: 40, hI: 30, cI: 60 } }, { f: 30, v: { ...SENTADO, tronco: -4, cabeza: -10, hD: 12, cD: 40, hI: 30, cI: 60 } }],
+        miradas: [{ f: 0, v: { x: 0.9, y: 0.2 } }, { f: 14, v: { x: 0.8, y: -0.5 } }, { f: 34, v: { x: 0.6, y: -0.8 } }], caras: [{ f: 0, v: "duda" }, { f: 30, v: "sorpresa" }] }}
+      extra={<Halo x={L.leo + 330} y={700 - 140 * sube} r={260} color={ORO} fuerza={0.25 + 0.4 * sube} />}
+      hud={<Hud />} />
   );
 };
 // ---------- 68 · «feed it or it will eat you… just watch it»: la llama de papel crece, él la mira, se apaga sola ----------
@@ -725,16 +746,16 @@ export const P70Cuanto: React.FC = () => {
 const k71 = kDe(352.81);
 export const P71Menos: React.FC = () => {
   const f = useF();
-  const TI = k71(356.2), TG = TI; // v6: sin inserto de la mano (quedaba muerto); el gráfico entra en 356,2 y queda entero hasta el corte
+  const TI = k71(355.4), TG = TI; // v3 (28-oct): el gráfico entra antes (355,4), a la izquierda, con Tenzo y la llama que se achica a la derecha · v6: sin inserto de la mano (quedaba muerto); el gráfico entra en 356,2 y queda entero hasta el corte
   return (
-    <Lav cl={f < TI ? [mira(0, 1660, 690, 2.6), mira(TI - 1, 1668, 684, 2.8)] : [mira(TG, 1640, 660, 2.5), mira(208, 1645, 656, 2.6)]} toalla={0.8} sp={{ farol: false }} mara={{ no: true }}
+    <Lav cl={f < TI ? [mira(0, 1660, 690, 2.6), mira(TI - 1, 1668, 684, 2.8)] : [mira(TG, 1420, 650, 2.25), mira(208, 1428, 648, 2.35, { curva: "inout" })]} toalla={0.8} sp={{ farol: false }} mara={{ no: true }}
       leo={f < TI ? { enManoD: () => null, poses: [{ f: 0, v: { ...SENTADO, tronco: 20, cabeza: -4, hD: 12, cD: 40, hI: 30, cI: 60 } }, { f: 60, v: { ...SENTADO, tronco: 10, cabeza: 4, hD: 12, cD: 40, hI: 12, cI: 40 } }], miradas: [{ f: 0, v: MIRA_TENZO }], caras: [{ f: 0, v: "duda" }] } : { no: true }}
-      extra={<Llama x={FX + 8} y={FY + 45} t={f < TI ? 0.4 : 0.12} f={f} />}
+      extra={<Llama x={FX + 8} y={FY + 45} t={interpolate(f, [TI, TI + 70], [0.4, 0.12], cl)} f={f} />}
       tenzo={{ ...tenzoFarol(), poses: [{ f: 0, v: { ...DOBLA_A, hD: 70, cD: 20, cabeza: 0 } }, { f: 14, v: { ...DOBLA_A, hD: 70, cD: 20, cabeza: -16, hI: 50, cI: 140 } }, { f: 40, v: { ...DOBLA_A, hD: 70, cD: 20, cabeza: -18, hI: 56, cI: 132 } }, { f: 66, v: { ...DOBLA_A, hD: 70, cD: 20, cabeza: -14, hI: 50, cI: 140 } }, { f: 96, v: { ...DOBLA_A, hD: 70, cD: 20, cabeza: -6, hI: 56, cI: 132 } }, { f: TG, v: { ...DOBLA_A, hD: 70, cD: 20, cabeza: 4, hI: 80, cI: 0 } }],
-        enManoD: <FarolMano luz={f < TI ? 1.2 : 0.6} />, miradas: [{ f: 0, v: { x: -0.9, y: 0 } }, { f: 14, v: { x: -0.3, y: -0.9 } }, { f: 96, v: { x: -0.8, y: -0.2 } }, { f: TG, v: { x: -0.9, y: 0.1 } }],
+        enManoD: <FarolMano luz={interpolate(f, [TI, TI + 70], [1.2, 0.5], cl)} />, miradas: [{ f: 0, v: { x: -0.9, y: 0 } }, { f: 14, v: { x: -0.3, y: -0.9 } }, { f: 96, v: { x: -0.8, y: -0.2 } }, { f: TG, v: { x: -0.9, y: 0.1 } }],
         caras: [{ f: 0, v: "neutral" }, { f: 14, v: "duda" }, { f: k71(356.0), v: "feliz" }], habla: [[k71(357.23), k71(359.77)]] }}
       hud={<><Hud />{f < TI && <Pildora texto="NOBODY EVER ASKED HIM THAT" x={960} y={170} desde={k71(354.4)} color="#ffe2a6" tam={42} />}
-        {f >= TG && <><Velo desde={TG} o={0.7} /><Placa x={360} y={150} w={1200} h={780} desde={TG} /><Grafico x={420} y={210} w={1080} h={660} desde={TG} titulo="HOW LONG IT BURNS" unidad=" min" datos={[{ rotulo: "YOU FEAR", v: 60 }, { rotulo: "REAL", v: 2 }]} dec={0} destacar={1} acento="#ffc93c" tema="oscuro" paso={10} /></>}</>} />
+        {f >= TG && <><Placa x={40} y={180} w={880} h={760} desde={TG} /><Grafico x={80} y={235} w={800} h={650} desde={TG} titulo="HOW LONG IT BURNS" unidad=" min" datos={[{ rotulo: "YOU FEAR", v: 60 }, { rotulo: "REAL", v: 2 }]} dec={0} destacar={1} acento="#ffc93c" tema="oscuro" paso={4} /></>}</>} />
   );
 };
 // ---------- 72 · la ola sobre el lavadero: sube y baja en 90 segundos; «you only have to not jump in» ----------
@@ -771,7 +792,7 @@ const MaraMini: React.FC<{ x: number; y: number; desde: number }> = ({ x, y, des
 export const P73Pantalla: React.FC = () => {
   const f = useF();
   // v3: «looks at the phone · the screen is still on» = cenital de la mesa: el tel encendido, la mano entra y lo levanta
-  if (f < 99) return <><TelCenital levanta={lerp(f, k73(368.4), k73(369.6), 0, 1)} texto="9h 42m" /><Hud {...H83} /><Pildora texto="STILL ON" x={1500} y={880} desde={k73(368.9)} color="#ffb070" tam={44} /></>;
+  if (f < 99) return <><TelCenital levanta={lerp(f, k73(367.35), k73(369.0), 0, 1)} texto="9h 42m" /><Hud {...H83} /><Pildora texto="STILL ON" x={1500} y={880} desde={k73(368.9)} color="#ffb070" tam={44} /></>;
   const g = f - 99;
   const duda = 14 * Math.sin(g / 6) * lerp(g, 0, 20, 0, 1);
   return (
@@ -813,7 +834,7 @@ export const P75BocaAbajo: React.FC = () => {
   const g = f - T1;
   const TX = L.leo + 230, TY = LP - 168;
   return (
-    <Lav cl={[mira(0, L.leo + 110, 690, 2.3), mira(T0 - 4, L.leo + 115, 690, 2.4), ...corte(T0 - 3, TX - 20, TY + 10, 4.2), mira(T1 + 22, TX - 24, TY + 8, 4.3), ...corte(T1 + 23, L.leo + 90, 680, 2.6), mira(127, L.leo + 95, 678, 2.7)]} tenzo={{ no: true }} telMesa={f >= T1 ? { bocaAbajo: true } : undefined}
+    <Lav cl={[mira(0, L.leo + 110, 690, 2.3), mira(T0 - 4, L.leo + 115, 690, 2.4), ...corte(T0 - 3, TX + 135, TY + 10, 4.2), mira(T1 + 22, TX + 131, TY + 8, 4.3), ...corte(T1 + 23, L.leo + 90, 680, 2.6), mira(127, L.leo + 95, 678, 2.7)]} tenzo={{ no: true }} telMesa={f >= T1 ? { bocaAbajo: true } : undefined}
       extra={<>
         {f >= T0 && f < T1 && <TelVuelta x={TX - 25} y={TY - 26} giro={lerp(f, T0, T1, 0, 1)} s={0.9} />}
         {g >= 0 && g < 22 && <g opacity={1 - g / 22}>{[0, 1, 2, 3, 4, 5, 6].map((k) => { const a = -Math.PI + (k / 6) * Math.PI; return <line key={k} x1={TX + Math.cos(a) * (40 + g * 3)} y1={TY + 10 + Math.sin(a) * (20 + g * 2)} x2={TX + Math.cos(a) * (70 + g * 4)} y2={TY + 10 + Math.sin(a) * (40 + g * 3)} stroke="#fff3d6" strokeWidth={5} strokeLinecap="round" />; })}</g>}
@@ -872,6 +893,8 @@ const k78 = kDe(395.77);
 export const P78Baja: React.FC = () => {
   const f = useF();
   const TG = k78(397.55), TC = k78(402.2);
+  // v3 (28-oct): la ola a media pantalla OPACA (derecha) con Leo y la sombra a la izquierda; a mitad, corte a primer plano de Leo que respira; vuelve la ola
+  const TM1 = k78(399.6), TM2 = k78(400.95);
   // la ola: del pico (0,45) baja; «not all the way» se frena a mitad; «down» sigue
   const pOla = interpolate(f, [TG, k78(399.1), k78(399.8), k78(400.3), k78(401.6), k78(402.15)], [0.42, 0.47, 0.58, 0.6, 0.62, 0.8], cl);
   // v3: la sombra se achica DURANTE la bajada de la ola (no después), Leo exhala; la ola va en un panel arriba, la escena nunca se va
@@ -885,17 +908,16 @@ export const P78Baja: React.FC = () => {
   const leoOk = { ...leo, caras: (leo.caras ?? []).map((k) => (k.v === "alivio" ? { ...k, v: "feliz" } : k)) }; // el kit no trae la cara «alivio»
   return (
     <>
-    <Lav cl={f < TG ? [mira(0, L.leo - 120, 620, 1.8), mira(TG - 1, L.leo - 125, 615, 1.9)] : f < TC ? [...corte(TG, L.leo - 170, 610, 1.6), mira(TC - 1, L.leo - 160, 606, 1.68)] : [mira(TC, L.leo - 160, 700, 1.7), mira(301, L.leo - 150, 700, 1.8)]} tenzo={{ no: true }} telMesa={{ bocaAbajo: true }}
+    <Lav cl={f < TG ? [mira(0, L.leo - 120, 620, 1.8), mira(TG - 1, L.leo - 125, 615, 1.9)] : f < TM1 ? [...corte(TG, L.leo + 170, 640, 1.7), mira(TM1 - 1, L.leo + 166, 636, 1.76)] : f < TM2 ? [...corte(TM1, L.leo + 30, 600, 3.1), mira(TM2 - 1, L.leo + 30, 596, 3.25)] : f < TC ? [...corte(TM2, L.leo + 166, 636, 1.76), mira(TC - 1, L.leo + 162, 632, 1.8)] : [mira(TC, L.leo - 160, 700, 1.7), mira(301, L.leo - 150, 700, 1.8)]} tenzo={{ no: true }} telMesa={{ bocaAbajo: true }}
       extra={<><g transform={`rotate(${tumba} ${MX78} ${LP})`}><Escalar x={MX78} y={LP} s={s}><Actor {...mara} />{f >= TC && <CaraMara a={mara} desde={TC} enojo={0} />}</Escalar></g>
         {f >= 252 && [0, 1, 2].map((k) => <text key={k} x={MX78 - 190 + k * 28} y={LP - 110 - k * 26 - ((f / 3) % 12)} fontSize={30 + k * 8} fill="#ffb38a" fontWeight={700} fontFamily={F_HUD}>z</text>)}
         {((f >= 246 && f < 280) || (f >= k78(401.7) && f < k78(401.7) + 34)) && [0, 1, 2].map((k) => { const t = (f >= 246 ? f - 246 : f - k78(401.7)) / 34; return <path key={k} d={`M${L.leo + 50 + t * 70},${LP - 300 + k * 14 - t * 20} q20,-8 40,0`} stroke="#ffffff" strokeWidth={5} fill="none" strokeLinecap="round" opacity={0.8 * (1 - t)} />; })}</>}
       leo={leoOk}
       hud={<><Hud {...H83} /><Temporizador seg={f < TG ? 90 : 90} x={1560} y={130} desde={0} hasta={TG} tam={56} />
         {f >= TC && <Pensamiento x={1400} y={200} w={480} h={250} desde={k78(402.7)} cola={{ x: 1290, y: 420 }}><PerroDibujo w={480} h={260} /></Pensamiento>}</>} />
-    {f >= TG && f < TC && <><PanelOla p={pOla} seg={90} x={620} y={16} s={0.36} reloj={false} desde={TG} />
-      <Pildora texto="THE WAVE GOES DOWN" x={1440} y={330} desde={k78(399.1)} hasta={k78(400.25)} color="#ffe2a6" tam={42} />
-      <Pildora texto="NOT ALL THE WAY" x={1440} y={330} desde={k78(400.3)} hasta={k78(401.7)} color="#ff8a5a" tam={42} />
-      <Pildora texto="…BUT DOWN" x={1440} y={330} desde={k78(401.73)} color="#ffe2a6" tam={42} /></>}
+    {f >= TG && f < TC && (f < TM1 || f >= TM2) && <AbsoluteFill style={{ pointerEvents: "none", opacity: interpolate(f, [TG, TG + 6], [0, 1], cl) }}><svg width={1920} height={1080} style={{ position: "absolute" }}>
+      <OlaMundo x={900} y={150} w={980} h={720} p={pOla} seg={Math.round(pOla * 90)} titulo={f < k78(400.3) ? "THE WAVE GOES DOWN" : f < k78(401.7) ? "NOT ALL THE WAY" : "…BUT DOWN"} /></svg></AbsoluteFill>}
+    {f >= TM1 && f < TM2 && <Pildora texto={f < k78(400.3) ? "THE WAVE GOES DOWN" : "NOT ALL THE WAY"} x={960} y={130} desde={TM1} color={f < k78(400.3) ? "#ffe2a6" : "#ff8a5a"} tam={46} />}
     </>
   );
 };
@@ -961,14 +983,14 @@ export const P82Arroz: React.FC = () => {
   const TQ = k82(425.0); // «What does that mean?» = Leo, sobre el hombro de Tenzo
   return (
   <>
-  <Lav cl={f < TQ ? [mira(0, L.leo + 240, 660, 2.0), mira(TQ - 1, L.leo + 236, 662, 2.08)] : [mira(TQ, 4060, 700, 1.9), mira(132, 4066, 696, 2.0)]} toalla={1} sp={{ farol: false, nieve: true }} extra={<OpenDerecho />}
+  <Lav cl={f < TQ ? [mira(0, L.leo + 240, 660, 2.0), mira(TQ - 1, L.leo + 236, 662, 2.08)] : [mira(TQ, L.puerta + 170, 660, 2.45), mira(132, L.puerta + 164, 656, 2.55, { curva: "inout" })]} toalla={1} sp={{ farol: false, nieve: true }} extra={f < TQ ? <OpenDerecho /> : null}
     leo={f < TQ ? leoParado({ caras: [{ f: 0, v: "duda" }], habla: [[0, TQ - 2]], giros: [{ f: 0, v: 0.3 }], miradas: [{ f: 0, v: { x: 0.9, y: -0.1 } }], poses: [{ f: 0, v: "parado" }, { f: 4, v: { hD: 60, cD: 70, hI: 50, cI: 70, tronco: 6, cabeza: -6 } }, { f: 18, v: { hD: 70, cD: 50, hI: 60, cI: 50, tronco: 4, cabeza: 4 } }] }) : { no: true }}
     tenzo={tenzoPuerta({ enManoD: farolVaiven(1.3, 8), habla: [[k82(424.3), k82(425.4)], [k82(426.91), k82(428.21)]], caras: [{ f: 0, v: "neutral" }, { f: k82(425.5), v: "risa" }, { f: k82(426.9), v: "feliz" }],
       miradas: [{ f: 0, v: { x: -0.9, y: 0 } }, { f: k82(426.0), v: { x: -0.5, y: 0.6 } }, { f: k82(427.6), v: { x: -0.9, y: 0 } }],
       poses: [{ f: 0, v: { ...FAROL, hI: 10, cI: 10 } }, { f: k82(425.4), v: { ...FAROL, hI: 10, cI: 10, cabeza: 10, tronco: 6 } }, ...Array.from({ length: 10 }).map((_, i) => ({ f: k82(425.9) + i * 5, v: { ...FAROL, hI: 40 + (i % 2) * 70, cI: 120 - (i % 2) * 90, cabeza: 6, tronco: 4 + (i % 2) * 4 } }))] })}
-    hud={<><Hud {...H83} /><Globo texto="What does that mean?" x={720} y={220} desde={2} hasta={TQ} cola="abajo" tam={50} /><Pildora texto="THE COOK" x={1500} y={160} desde={k82(425.3)} color="#ffe2a6" tam={44} />
-      <Pensamiento x={480} y={720} w={480} h={290} desde={k82(426.6)} cola={{ x: 930, y: 450 }}><ArrozDibujo w={480} h={290} /></Pensamiento></>} />
-  {f < TQ && <HombroTenzo x={1640} y={760} r={225} lado={1} />}
+    hud={<><Hud {...H83} /><Globo texto="What does that mean?" x={720} y={220} desde={2} hasta={TQ} cola="abajo" tam={50} /><Pildora texto="TENZO = THE COOK" x={1240} y={420} desde={k82(425.3)} hasta={k82(426.6)} color="#ffe2a6" tam={66} />
+      <Pensamiento x={1200} y={540} w={720} h={430} desde={k82(426.6)} cola={{ x: 560, y: 420 }}><ArrozDibujo w={720} h={430} /></Pensamiento></>} />
+  {f < TQ && <HombroTenzo x={1630} y={720} r={205} lado={1} />}
   </>
   );
 };
@@ -979,7 +1001,7 @@ export const P83Manana: React.FC = () => {
   const T3 = k83(432.17), TF = k83(433.9), TP = k83(435.15);
   if (f >= T3 && f < TF) return <><TresDedos desde={T3} /><Hud {...H83} /></>;
   // v6: «every night» = inserto del farol hamacándose en la mano vieja, de noche (sin el cartel OPEN), y las noches que se prenden
-  if (f >= 28 && f < T3) return <><FarolNoche desde={28} /><Hud {...H83} /><Pildora texto="EVERY NIGHT" x={960} y={1000} desde={k83(429.4)} color="#ffe2a6" tam={48} /><NochesFila x={960} y={830} desde={k83(429.6)} paso={9} /></>;
+  if (f >= 28 && f < T3) return <><FarolNoche desde={28} /><Hud {...H83} /><Pildora texto="EVERY NIGHT" x={1420} y={460} desde={k83(429.4)} color="#ffe2a6" tam={48} /><NochesFila x={960} y={830} desde={k83(429.6)} paso={9} /></>;
   const cam = f < 28 ? [mira(0, L.leo + 160, 640, 2.4), mira(27, L.leo + 160, 638, 2.45)] : f < T3 ? [...corte(28, L.puerta - 120, 900, 3.2), mira(T3 - 1, L.puerta - 118, 898, 3.3)] : f < TP ? [...corte(TF, L.leo + 170, 660, 2.9), mira(TP - 1, L.leo + 172, 656, 3.0)] : [...corte(TP, L.puerta - 170, 720, 2.2), mira(299, L.puerta - 176, 716, 2.35)];
   return (
     <>

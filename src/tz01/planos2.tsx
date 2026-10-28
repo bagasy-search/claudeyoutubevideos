@@ -8,7 +8,7 @@ import { mira, useF } from "../anikit/camara";
 import { Actor, ActorProps } from "../anikit/actor";
 import { Calendario, Globo, Pildora, Temporizador } from "../anikit/pantalla";
 import { Halo } from "../anikit/luz";
-import { Multitud, ReaccionFx, conReaccion } from "../anikit/explica";
+import { ReaccionFx, conReaccion } from "../anikit/explica";
 import { ACENTO, ALDEANA, ALDEANO, AMRAPALI, BUDA, ESC, LOTO, MONJE_JOVEN, ORO, REY } from "../tenzo/elenco";
 import { Look } from "../anikit/personaje";
 import { Cuenco, Elefante } from "../tenzo/utileria";
@@ -17,6 +17,7 @@ import { CEL_SENT, kDe, Lav, LAV_PUNTOS, SENTADO, Vai } from "./base";
 import { Hud } from "./planos1";
 import { Chispa, Collar, EspadaDe, Llamada, LlamadaMundo, Mango, Pensamiento, Rio, Salpica, lerp, usePantalla } from "./extras";
 import { BudaPrimerTermino, CuatroMeses, HaloBuda, HumoCiudad, NubesLluvia, PlacaContador, Revela } from "./extras_2";
+import { HombroAmrapali, HombroMonje } from "./extras_5";
 import { AroIris, InsertoCuenco2, MONJE_ALTO, MONJE_LENTES, MONJE_NOVICIO, MONJE_VIEJO, NombreCartel, RotuloClaro } from "./extras_2b";
 
 const VP = VAI_PISO, V = VAI_PUNTOS;
@@ -226,8 +227,18 @@ const QUIERE = { hD: 92, cD: 8, hI: 86, cI: 14, tronco: 10, cabeza: 4 };
 export const P34Todos: React.FC = () => {
   const f = useF();
   return (
-    <Vai cl={[mira(0, 1350, 600, 1.15), mira(T34 - 1, 1360, 600, 1.17), mira(T34, 1480, 620, 1.3), mira(173, 1590, 625, 1.42, { curva: "inout" })]}
-      medio={f < T34 ? null : <>
+    <Vai cl={[mira(0, V.portal - 10, 640, 1.42), mira(T34 - 1, V.portal - 10, 645, 1.48, { curva: "inout" }), mira(T34, 1480, 620, 1.3), mira(173, 1590, 625, 1.42, { curva: "inout" })]}
+      medio={f < T34 ? <>
+        {/* v3 (28-oct): sin placa. La ola de su nombre EN EL MUNDO: Amrapali al centro, los hombres de la calle se dan vuelta de a uno al oírla */}
+        {[-640, -480, -330, -190, 200, 340, 490, 650].map((dx, k) => {
+          const izq = dx < 0, gira = 4 + [3, 2, 1, 0, 0, 1, 2, 3][k] * 9;
+          return <A key={k} look={HOMBRE(k)} seed={90 + k} escala={ESC * (k % 2 ? 0.86 : 1)} ruta={[{ f: 0, x: V.portal + dx, y: VP + (k % 2 ? -50 : 20) }]}
+            dir={[{ f: 0, v: izq ? -1 : 1 }, { f: gira, v: izq ? 1 : -1 }]} caras={[{ f: 0, v: "neutral" }, { f: gira, v: ["feliz", "sorpresa", "picaro", "feliz"][k % 4] }]}
+            poses={[{ f: 0, v: "parado" }, { f: gira + 2, v: k % 3 === 0 ? { hD: 150, cD: 30 } : k % 3 === 1 ? { hD: 100, cD: 120, cabeza: -6 } : { hD: 60, cD: 20, tronco: 8 } }]}
+            habla={[[gira + 2, gira + 16]]} miradas={[{ f: 0, v: { x: 0.9, y: 0 } }]} />;
+        })}
+        <A look={AMRAPALI} seed={12} escala={ESC * 1.08} ruta={[{ f: 0, x: V.portal, y: VP + 30 }]} dir={[{ f: 0, v: -1 }, { f: 26, v: 1 }]} caras={[{ f: 0, v: "feliz" }]} poses={[{ f: 0, v: "parado" }, { f: 10, v: "manosCintura" }]} />
+      </> : <>
         {[0, 1, 2, 3, 4, 5].map((k) => {
           const lejos = k % 3 === 2;
           const x0 = 700 + k * 150, x1 = 1320 + k * 70;
@@ -239,7 +250,8 @@ export const P34Todos: React.FC = () => {
           caras={[{ f: 0, v: "feliz" }, { f: T34 + 30, v: "duda" }]} ajuste={(p, fr) => (fr > T34 + 24 ? { ...p, hD: 100, cD: 35, tronco: -10, cabeza: -6 } : p)} />
       </>}
       hud={<>
-        {f < T34 && <Multitud x={960} y={500} w={1500} h={600} desde={-18} hasta={T34} n={600} modo="ola" dur={50} color="#d9c7a8" acento={ACENTO} rotulo="AMRAPALI" contador="MEN WHO KNEW HER NAME" />}
+        {f < T34 && <><Pildora texto="EVERY MAN KNEW HER NAME" x={960} y={110} desde={0} color="#ffe2a6" tam={50} />
+          <Globo texto="Amrapali!" x={360} y={300} desde={8} hasta={T34} cola="abajo" tam={50} /><Globo texto="Amrapali…" x={1560} y={330} desde={18} hasta={T34} cola="abajo" tam={50} /></>}
         {f >= T34 && <><Globo texto="Amrapali!" x={430} y={330} desde={T34 + 8} hasta={T34 + 60} cola="abajo" /><Globo texto="Amrapali…" x={820} y={260} desde={T34 + 22} hasta={T34 + 80} cola="abajo" /><Globo texto="Amrapali!!" x={1120} y={330} desde={T34 + 40} hasta={173} cola="abajo" />
           <Pildora texto="THE SAME THING" x={960} y={120} desde={k34(144.6)} color="#ffe2a6" /></>}
       </>} />
@@ -337,20 +349,31 @@ const k37 = kDe(161.4);
 const T37B = k37(163.95), T37C = k37(166.3);
 export const P37Lluvias: React.FC = () => {
   const f = useF();
-  const cl = f < T37C ? [mira(0, V.portal - 140, 500, 1.45), mira(T37B, V.portal - 140, 520, 1.6, { curva: "inout" })] : [mira(T37C, V.portal - 110, 640, 2.15), mira(213, V.portal - 105, 645, 2.3, { curva: "inout" })];
+  // v3 (28-oct): a) ELLA SOLA en contrapicado, señala el cielo y entran las nubes negras (el monje queda fuera de cuadro)
+  // c) contraplano por encima del hombro del monje (de espaldas, a la izquierda): ella lo invita de frente bajo la lluvia
+  if (f < T37C) {
+    return (
+      <>
+        <Vai cl={[mira(0, V.portal - 220, 650, 1.85), mira(T37B, V.portal - 200, 630, 1.95, { curva: "inout" })]} sp={{ lluvia: f >= T37B }}
+          medio={<>
+            <NubesLluvia desde={k37(162.0)} x0={1280} x1={2150} y0={400} llueve={44} />
+            <A look={AMRAPALI} seed={12} ruta={[{ f: 0, x: V.portal - 50, y: VP }]} dir={[{ f: 0, v: -1 }]} caras={[{ f: 0, v: "feliz" }, { f: 30, v: "duda" }]} habla={[[0, 60]]}
+              poses={[{ f: 0, v: "parado" }, { f: 10, v: { hD: 128, cD: 4, hI: 20, cI: 30, cabeza: -16 } }, { f: 40, v: { hD: 122, cD: 10, hI: 20, cI: 30, cabeza: -18 } }]} giros={[{ f: 0, v: -0.3 }, { f: 12, v: 0.2 }]}
+              miradas={[{ f: 0, v: { x: -0.9, y: 0 } }, { f: 10, v: { x: -0.3, y: -0.95 } }]} />
+          </>} />
+        <CuatroMeses desde={T37B} hasta={T37C} />
+      </>
+    );
+  }
   return (
     <>
-      <Vai cl={cl} sp={{ lluvia: f >= T37B }}
-        medio={<>
-          {f < T37C && <NubesLluvia desde={k37(162.0)} x0={1350} x1={2250} y0={170} llueve={44} />}
-          <A look={MONJE_JOVEN} seed={74} ruta={[{ f: 0, x: V.portal - 220, y: VP }]} caras={[{ f: 0, v: "neutral" }, { f: 40, v: "duda" }]} poses={[{ f: 0, v: PARADO_CUENCO }]} enManoD={<Cuenco />}
-            miradas={[{ f: 0, v: { x: 0.9, y: 0 } }, { f: 26, v: { x: 0.4, y: -0.9 } }, { f: T37C, v: { x: 0.9, y: 0 } }]} />
-          <A look={AMRAPALI} seed={12} ruta={[{ f: 0, x: V.portal - 50, y: VP }]} dir={[{ f: 0, v: -1 }, { f: k37(167.3), v: 1 }, { f: k37(168.1), v: -1 }]} caras={[{ f: 0, v: "feliz" }, { f: T37C, v: "picaro" }]} habla={[[0, 60], [T37C + 4, 213]]}
-            poses={[{ f: 0, v: "parado" }, { f: 12, v: { hD: 165, cD: 8, cabeza: -14 } }, { f: T37C, v: { hD: 70, cD: 20, hI: 60, cI: 30 } }, { f: k37(167.3), v: { hD: 110, cD: 5, tronco: -4 } }, { f: k37(168.1), v: { hD: 60, cD: 120 } }]}
-            miradas={[{ f: 0, v: { x: -0.4, y: -0.9 } }, { f: T37C, v: { x: -0.9, y: 0 } }]} />
-        </>}
-        hud={f >= T37C ? <Pildora texto="STAY HERE · IN MY HOUSE" x={960} y={120} desde={T37C + 6} color="#ffe2a6" tam={46} /> : null} />
-      <CuatroMeses desde={T37B} hasta={T37C} />
+      <Vai cl={[mira(T37C, V.portal - 250, 610, 2.3), mira(213, V.portal - 240, 615, 2.4, { curva: "inout" })]} sp={{ lluvia: true }}
+        medio={<A look={AMRAPALI} seed={12} ruta={[{ f: 0, x: V.portal - 50, y: VP }]} dir={[{ f: 0, v: -1 }, { f: k37(167.3), v: 1 }, { f: k37(168.1), v: -1 }]} giros={[{ f: 0, v: -0.45 }]}
+          caras={[{ f: 0, v: "picaro" }, { f: k37(167.0), v: "feliz" }]} habla={[[T37C + 4, 213]]}
+          poses={[{ f: 0, v: { hD: 70, cD: 20, hI: 60, cI: 30 } }, { f: k37(167.3), v: { hD: 110, cD: 5, tronco: -4 } }, { f: k37(168.1), v: { hD: 60, cD: 120 } }]}
+          miradas={[{ f: 0, v: { x: -0.9, y: 0.05 } }]} />}
+        hud={<Pildora texto="STAY HERE · IN MY HOUSE" x={1180} y={110} desde={T37C + 6} color="#ffe2a6" tam={46} />} />
+      <HombroMonje x={330} y={700} r={270} lado={1} />
     </>
   );
 };
@@ -391,12 +414,15 @@ export const P38Aliento: React.FC = () => {
 };
 // ---------- 39 · se inclina: «I will ask my teacher» (monje en el tercio izquierdo) ----------
 const k39 = kDe(171.04);
+// v3 (28-oct): contraplano por encima del hombro de Amrapali (de espaldas, a la derecha): el monje de frente se inclina con las manos juntas
 export const P39Reverencia: React.FC = () => (
-  <Vai cl={[mira(0, V.portal - 90, 640, 2.0), mira(100, V.portal - 90, 640, 2.15, { curva: "inout" })]}
-    medio={<>
-      <A look={MONJE_JOVEN} seed={74} ruta={[{ f: 0, x: V.portal - 220, y: VP }]} caras={[{ f: 0, v: "neutral" }, { f: 50, v: "feliz" }]} poses={[{ f: 0, v: PARADO_CUENCO }, { f: 20, v: { tronco: 38, cabeza: 10, hD: 60, cD: 100, hI: 60, cI: 100 } }, { f: 46, v: PARADO_CUENCO }]} habla={[[k39(172.7), k39(174.4)]]} enManoD={<Cuenco />} />
-      <A look={AMRAPALI} seed={12} ruta={[{ f: 0, x: V.portal - 50, y: VP }]} dir={[{ f: 0, v: -1 }]} caras={[{ f: 0, v: "feliz" }, { f: k39(173.2), v: "picaro" }]} poses={[{ f: 0, v: "parado" }, { f: k39(173.4), v: "manosCintura" }]} />
-    </>} />
+  <>
+    <Vai cl={[mira(0, V.portal - 30, 660, 2.35), mira(100, V.portal - 36, 662, 2.45, { curva: "inout" })]}
+      medio={<A look={MONJE_JOVEN} seed={74} ruta={[{ f: 0, x: V.portal - 220, y: VP }]} giros={[{ f: 0, v: 0.45 }]} caras={[{ f: 0, v: "neutral" }, { f: 50, v: "feliz" }]}
+        poses={[{ f: 0, v: { ...PARADO_CUENCO } }, { f: 12, v: MANOS_JUNTAS }, { f: 22, v: { ...MANOS_JUNTAS, tronco: 38, cabeza: 12 } }, { f: 48, v: MANOS_JUNTAS }, { f: k39(172.6), v: PARADO_CUENCO }]}
+        habla={[[k39(172.7), k39(174.4)]]} enManoD={(fr: number) => (fr < 12 || fr >= k39(172.6) ? <Cuenco /> : null)} miradas={[{ f: 0, v: { x: 0.9, y: 0 } }, { f: 22, v: { x: 0.4, y: 0.8 } }, { f: 48, v: { x: 0.9, y: -0.05 } }]} />} />
+    <HombroAmrapali x={1600} y={720} r={270} lado={-1} />
+  </>
 );
 // el Buda con halo (sólo en planos2; el <Buda> exportado queda igual para planos3)
 const CAB_BUDA = { x: V.buda, y: 734 };
@@ -489,10 +515,14 @@ export const P42Escandalo: React.FC = () => {
     );
   }
   return (
-    <Vai cl={[mira(T42C, V.buda - 300, 740, 3.0), mira(198, V.buda - 300, 742, 3.2, { curva: "inout" })]}
-      medio={<A look={MONJE_JOVEN} seed={74} ruta={[{ f: 0, x: V.buda - 300, y: VP }]} asiento={[{ f: 0, v: 8 }]} caras={[{ f: 0, v: "duda" }, { f: T42C + 10, v: "triste" }]}
-        poses={[{ f: 0, v: { ...LOTO, tronco: 14, ...MANOS_JUNTAS } }, { f: T42C + 8, v: { ...LOTO, tronco: 22, cabeza: 18, ...MANOS_JUNTAS } }]} miradas={[{ f: 0, v: { x: 0.4, y: 0.3 } }, { f: T42C + 8, v: { x: 0.2, y: 0.9 } }]} />}
-      hud={<Pildora texto="THE END OF HIM" x={960} y={120} desde={T42C + 4} color={ACENTO} tam={56} />} />
+    // v3 (28-oct): ya no es el primer plano del joven: perfil con la multitud: dos monjes a la izquierda lo señalan y cuchichean, él agacha la cabeza
+    <Vai cl={[mira(T42C, V.buda - 520, 760, 1.95), mira(198, V.buda - 505, 762, 2.02, { curva: "inout" })]} sp={{ murmullo: 0.8 }}
+      medio={<>
+        <MonjesCara caras={["enojo", "enojo", "asco", "neutral", "neutral"]} habla={[[], [[T42C, T42C + 30]], [[T42C + 14, 198]], [], []]} poses={[{}, { hD: 92, cD: 2, tronco: 8 }, { hD: 88, cD: 6, hI: 40, cI: 120, tronco: 10 }, {}, {}]} />
+        <A look={MONJE_JOVEN} seed={74} ruta={[{ f: 0, x: V.buda - 300, y: VP }]} asiento={[{ f: 0, v: 8 }]} dir={[{ f: 0, v: -1 }]} caras={[{ f: 0, v: "duda" }, { f: T42C + 10, v: "triste" }]}
+          poses={[{ f: 0, v: { ...LOTO, tronco: 14, ...MANOS_JUNTAS } }, { f: T42C + 8, v: { ...LOTO, tronco: 24, cabeza: 20, ...MANOS_JUNTAS } }]} miradas={[{ f: 0, v: { x: -0.6, y: 0.2 } }, { f: T42C + 8, v: { x: -0.1, y: 0.95 } }]} />
+      </>}
+      hud={<><Globo texto="shame…" x={520} y={300} desde={T42C + 2} hasta={198} tam={52} cola="abajo" /><Pildora texto="THE END OF HIM" x={1300} y={120} desde={T42C + 4} color={ACENTO} tam={56} /></>} />
   );
 };
 // ---------- 43 · «the Buddha looked at the young monk» (primer plano del Buda con halo) → «for a long time» (contraplano: el monje transpira, el silencio corre en un reloj grande) → «Do you want to go?» (general de perfil con monjes en primer término) ----------
@@ -505,11 +535,14 @@ export const P43Pregunta: React.FC = () => {
       medio={<BudaH caras={[{ f: 0, v: "neutral" }]} miradas={[{ f: 0, v: { x: -0.5, y: 0.2 } }, { f: 16, v: { x: -1, y: 0.15 } }]} giros={[{ f: 0, v: 0.1 }, { f: 16, v: -0.35 }]} />} />;
   }
   if (f < T43C) {
-    return <Vai cl={[mira(T43B, V.buda - 290, 745, 3.0), mira(T43C, V.buda - 290, 747, 3.2, { curva: "inout" })]}
-      medio={<A look={MONJE_JOVEN} seed={74} ruta={[{ f: 0, x: V.buda - 300, y: VP }]} asiento={[{ f: 0, v: 8 }]} caras={[{ f: 0, v: "duda" }, { f: T43B + 50, v: "miedo" }]}
-        poses={[{ f: 0, v: { ...LOTO, tronco: 12, ...MANOS_JUNTAS } }, { f: T43B + 30, v: { ...LOTO, tronco: 16, cabeza: 10, ...MANOS_JUNTAS } }, { f: T43B + 70, v: { ...LOTO, tronco: 10, cabeza: -2, ...MANOS_JUNTAS } }]}
-        miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: T43B + 28, v: { x: 0.3, y: 0.8 } }, { f: T43B + 70, v: { x: 1, y: -0.1 } }]} />}
-      hud={<Temporizador seg={(f - T43B) / 30 * 2.6} x={1460} y={70} tam={64} desde={T43B} />} />;
+    // v3 (28-oct): por encima del hombro del joven (de espaldas, a la izquierda, se le hunden los hombros): el Buda de frente lo mira y no dice nada; el silencio corre
+    const hunde = interpolate(f, [T43B + 20, T43B + 70], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    return <>
+      <Vai cl={[mira(T43B, V.buda - 140, 735, 2.15), mira(T43C, V.buda - 132, 738, 2.25, { curva: "inout" })]}
+        medio={<BudaH caras={[{ f: 0, v: "neutral" }]} miradas={[{ f: 0, v: { x: -0.9, y: 0.15 } }]} giros={[{ f: 0, v: -0.45 }]} />}
+        hud={<Temporizador seg={(f - T43B) / 30 * 2.6} x={1380} y={70} tam={64} desde={T43B} />} />
+      <HombroMonje x={300} y={640 + 40 * hunde} r={290} lado={1} inclina={8 * hunde} />
+    </>;
   }
   return <Vai cl={[mira(T43C, V.buda - 150, 780, 1.6), mira(200, V.buda - 150, 784, 1.72, { curva: "inout" })]}
     medio={<>

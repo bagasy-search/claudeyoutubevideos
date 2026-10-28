@@ -10,11 +10,11 @@ import * as C from "./planos3";
 const CORTES: [number, React.FC, Trans?][] = [
   [0, A.P01Mini], [2.0, A.P02Mano], [4.24, A.P03Uptown, { tipo: "fundido", d: 10 }], [8.4, A.P04Tres], [9.7, A.P05Pantalla], [13.68, A.P06Dia],
   [16.14, A.P07Vacio], [18.12, A.P08Pulgar], [19.42, A.P09Brillo], [21.0, A.P10Sombra], [24.54, A.P11UnaMas], [25.9, A.P12Catorce, { tipo: "luz", d: 12 }],
-  [29.04, A.P13NoGrita], [32.22, A.P14Merece, { tipo: "luz", d: 10 }], [35.5, A.P15Silencio], [39.6, A.P16Wilson, { tipo: "fundido", d: 12 }], [43.5, A.P17NuncaCierra],
+  [29.04, A.P13NoGrita], [32.22, A.P14Merece, { tipo: "fundido", d: 10 }], [35.5, A.P15Silencio], [39.6, A.P16Wilson, { tipo: "fundido", d: 12 }], [43.5, A.P17NuncaCierra],
   [46.74, A.P18Cartel], [47.94, A.P19Cuarenta], [56.36, A.P20NoSolo], [58.26, A.P21Rincon], [66.5, A.P22Farol], [75.12, A.P23Toalla], [83.08, A.P24Sienta],
   [91.94, A.P25Comi], [94.28, A.P26Hambre], [98.86, A.P27Deja], [102.96, A.P28Secadora],
   [112.36, B.P29Cuenta], [115.0, B.P29Calle, { tipo: "luz", d: 14 }], [121.5, B.P30Amrapali, { tipo: "fundido", d: 10 }], [125.16, B.P31Titila, { tipo: "luz", d: 8 }],
-  [127.6, B.P31Elefantes, { tipo: "luz", d: 14 }], [131.5, B.P32Mangos, { tipo: "fundido", d: 10 }], [136.84, B.P33Reyes], [141.02, B.P34Todos], [146.8, B.P35Monjes, { tipo: "fundido", d: 10 }],
+  [127.6, B.P31Elefantes, { tipo: "fundido", d: 12 }], [131.5, B.P32Mangos, { tipo: "fundido", d: 10 }], [136.84, B.P33Reyes], [141.02, B.P34Todos], [146.8, B.P35Monjes, { tipo: "fundido", d: 10 }],
   [154.0, B.P36Joven], [161.4, B.P37Lluvias], [168.5, B.P38Aliento], [171.04, B.P39Reverencia], [174.4, B.P40Arboleda, { tipo: "fundido", d: 12 }],
   [186.86, B.P41Murmullo], [191.38, B.P42Escandalo], [197.96, B.P43Pregunta], [204.62, B.P44Ve], [208.6, B.P45NoCreen],
   [210.98, C.P46Levanta, { tipo: "luz", d: 12 }], [216.98, C.P47Asiente], [219.52, C.P48Bar], [223.76, C.P49Sigue],

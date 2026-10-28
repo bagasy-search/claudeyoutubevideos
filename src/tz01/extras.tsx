@@ -76,7 +76,7 @@ export const FraseCaja: React.FC<{ texto: string; desde: number; hasta?: number;
 };
 
 // ---------- cartel de neón que se prende letra por letra (mundo) ----------
-export const CartelNeon: React.FC<{ x: number; y: number; texto: string; sub?: string; desde: number; paso?: number; tam?: number; color?: string }> = ({ x, y, texto, sub, desde, paso = 4, tam = 54, color = "#9fd0ff" }) => {
+export const CartelNeon: React.FC<{ x: number; y: number; texto: string; sub?: string; desde: number; paso?: number; tam?: number; color?: string; titileo?: boolean }> = ({ x, y, texto, sub, desde, paso = 4, tam = 54, color = "#9fd0ff", titileo = true }) => {
   const f = useF();
   const letras = texto.split("");
   const ancho = letras.length * tam * 0.72;
@@ -89,7 +89,7 @@ export const CartelNeon: React.FC<{ x: number; y: number; texto: string; sub?: s
         const t0 = desde + i * paso;
         const on = f >= t0 + 2 || (f >= t0 && (f - t0) % 2 === 0);
         // un titileo extra en la letra 3 (tubo viejo)
-        const titila = i === 2 && f > fin && (f % 37 < 3);
+        const titila = titileo && i === 2 && f > fin && (f % 37 < 3);
         const lit = on && !titila;
         return (
           <g key={i}>
