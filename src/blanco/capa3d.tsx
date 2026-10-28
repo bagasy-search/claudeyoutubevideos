@@ -13,6 +13,7 @@ import { Luces, LuzEscena } from "../stickman3d/iluminacion";
 import { Stickman, StickmanProps } from "../stickman3d/Stickman";
 import { evaluarGuion } from "../stickman3d/acciones";
 import { PISO } from "./sets/londres";
+import { Dibujo, OpcionesDibujo } from "./dibujo";
 
 export const K = 93; // Blanquito parado ≈ 3,55 u ≈ 330 px del mundo
 
@@ -48,7 +49,7 @@ const Sombra: React.FC<{ x: number; z: number; o: number; ancho: number }> = ({ 
   </mesh>
 );
 
-const Uno: React.FC<{ p: Personaje; f: number; fps: number }> = ({ p, f, fps }) => {
+const Uno: React.FC<{ p: Personaje; f: number; fps: number; dibujo: boolean }> = ({ p, f, fps, dibujo }) => {
   const cuadro = f - (p.t0 ?? 0) * fps;
   const ev = evaluarGuion({ guion: p.guion ?? [{ t: 0, accion: "idle", expr: "neutral" }], frame: cuadro, fps, semilla: p.semilla ?? 1, poseFija: p.pose, exprFija: undefined, mirada: p.mirada, boca: p.boca });
   const esc = p.escala ?? 1;
@@ -60,13 +61,14 @@ const Uno: React.FC<{ p: Personaje; f: number; fps: number }> = ({ p, f, fps }) 
     <>
       {!p.alto && !(m.dy && m.dy > 40) && <Sombra x={px + dx + ev.dx} z={z} o={(p.sombra ?? 0.32) / (1 + salto * 1.5)} ancho={(0.95 * esc + Math.abs(Math.sin(rz)) * 1.4) / (1 + salto * 0.6)} />}
       <group position={[px + dx + ev.dx, alto, z]} rotation={[0, 0, rz]}>
-        <group position={[-(px + dx + ev.dx), 0, -z]}><Stickman {...p} x={px + dx} z={z} cuadro={cuadro} sombras={false} contacto={0} /></group>
+        <group position={[-(px + dx + ev.dx), 0, -z]}><Stickman caricatura={dibujo ? {} : undefined} {...p} x={px + dx} z={z} cuadro={cuadro} sombras={false} contacto={0} /></group>
       </group>
     </>
   );
 };
 
-export const Capa3D: React.FC<{ personajes: Personaje[]; luz?: LuzEscena; piso?: number }> = ({ personajes, luz, piso = PISO }) => {
+// dibujo: personajes con sombreado cel + contorno (el estilo de los fondos pintados); sin él, el vinilo de siempre
+export const Capa3D: React.FC<{ personajes: Personaje[]; luz?: LuzEscena; piso?: number; dibujo?: OpcionesDibujo }> = ({ personajes, luz, piso = PISO, dibujo }) => {
   const f = useF();
   const { fps } = useVideoConfig();
   const cx = personajes.length ? personajes.reduce((a, p) => a + p.x, 0) / personajes.length / K : 0;
@@ -77,7 +79,8 @@ export const Capa3D: React.FC<{ personajes: Personaje[]; luz?: LuzEscena; piso?:
         camera={{ position: [0, 2, 60], near: 0.1, far: 400 }}>
         <CamOrto piso={piso} />
         <Luces dir={[-0.55, 1.2, 1]} intensidad={2.5} relleno={0.85} contraluz={1.1} entorno={0.85} tinte="#f3e2c8" piso="#6e5238" sombra={0} {...luz} centro={[cx, 1.6, 0]} />
-        {personajes.map((p, i) => <Uno key={i} p={p} f={f} fps={fps} />)}
+        {personajes.map((p, i) => <Uno key={i} p={p} f={f} fps={fps} dibujo={!!dibujo} />)}
+        {dibujo && <Dibujo {...dibujo} />}
       </ThreeCanvas>
     </div>
   );

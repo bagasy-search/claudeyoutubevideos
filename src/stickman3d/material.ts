@@ -127,6 +127,7 @@ export const crearPiel = (u: UniformsAO, o: OpcionesPiel = {}) => {
     specularIntensity: 0.6,
   });
   if (o.relieve) { m.normalMap = o.relieve; m.normalScale.set(0.03, 0.03); }
+  m.userData.contorno = true; // lo lee el modo dibujo (blanco/dibujo.tsx); en el modo vinilo no hace nada
   inyectarAO(m, u);
   return m;
 };

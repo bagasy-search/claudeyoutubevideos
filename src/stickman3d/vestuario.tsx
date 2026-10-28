@@ -29,6 +29,7 @@ const cache = new Map<string, THREE.MeshPhysicalMaterial>();
 export const tela = (color: string, rug = 0.82) => {
   const k = `${color}|${rug}`;
   if (!cache.has(k)) cache.set(k, new THREE.MeshPhysicalMaterial({ color: new THREE.Color(color), roughness: rug, metalness: 0, sheen: 0.6, sheenRoughness: 0.5, sheenColor: new THREE.Color("#ffffff").lerp(new THREE.Color(color), 0.5), clearcoat: 0.04 }));
+    cache.get(k)!.userData.contorno = true;
   return cache.get(k)!;
 };
 const arcilla = (color: string) => tela(color, 0.5);

@@ -28,6 +28,22 @@ export type StickmanProps = {
   contacto?: number; // fuerza de la sombra de contacto
   colorContacto?: string; // color de la mancha de contacto (default: azul noche del estudio; sobre una foto, el piso oscurecido)
   cuadro?: number; // forzar el cuadro (para láminas)
+  // caricatura (estilo dibujo animado): ojos más grandes, cejas siempre presentes para actuar y micro-movimientos de
+  // la pupila (sacadas cada ~1–2 s, deterministas). Sin esto, la cara de siempre.
+  caricatura?: { ojos?: number; cejas?: number; boca?: number; sacadas?: number };
+};
+
+const hashS = (n: number) => { const s = Math.sin(n * 127.1 + 311.7) * 43758.5453; return s - Math.floor(s); };
+const caricaturizar = (e: Expresion, c: NonNullable<StickmanProps["caricatura"]>, t: number, semilla: number): Expresion => {
+  const ojos = c.ojos ?? 1.3, cejas = c.cejas ?? 1, boca = c.boca ?? 1.1, sac = c.sacadas ?? 0.14;
+  const o = (p: Expresion["I"]) => ({ ...p, tam: p.tam * ojos, pupila: p.pupila * 1.08, cejaVis: Math.max(p.cejaVis, cejas), cejaAng: p.cejaAng * 1.2 });
+  // sacada: la mirada salta a un punto nuevo cada 1,1–2,2 s (llega en ~3 cuadros) y vuelve
+  let k = 0, t0 = 0;
+  while (true) { const d = 1.1 + 1.1 * hashS(k * 7 + semilla); if (t0 + d > t) break; t0 += d; k++; if (k > 4000) break; }
+  const ir = Math.min(1, (t - t0) / 0.1);
+  const p0 = [hashS(k * 3 + semilla * 5) - 0.5, hashS(k * 5 + semilla * 3) - 0.5], p1 = [hashS((k - 1) * 3 + semilla * 5) - 0.5, hashS((k - 1) * 5 + semilla * 3) - 0.5];
+  const sx = (p1[0] + (p0[0] - p1[0]) * ir) * 2 * sac, sy = (p1[1] + (p0[1] - p1[1]) * ir) * 1.4 * sac;
+  return { ...e, I: o(e.I), D: o(e.D), bocaAncho: e.bocaAncho * boca, miradaX: e.miradaX + sx, miradaY: e.miradaY + sy };
 };
 
 const N = 40;
@@ -194,8 +210,9 @@ export const Stickman: React.FC<StickmanProps> = (props) => {
     exprFija: typeof props.expr === "string" ? EXPRESIONES[props.expr] : props.expr,
     mirada: props.mirada, boca: props.boca,
   });
+  const e = props.caricatura ? caricaturizar(ev.expr, props.caricatura, frame / fps, semilla) : ev.expr;
   return (
-    <StickmanCuerpo pose={ev.pose} e={ev.expr} t={frame / fps} x={(props.x ?? 0) + ev.dx} z={(props.z ?? 0) + ev.dz}
+    <StickmanCuerpo pose={ev.pose} e={e} t={frame / fps} x={(props.x ?? 0) + ev.dx} z={(props.z ?? 0) + ev.dz}
       rotY={(props.rotY ?? 0) + ev.rotY} escala={props.escala} color={props.color} accesorios={props.accesorios} ropa={props.ropa}
       sombras={props.sombras} contacto={props.contacto} colorContacto={props.colorContacto} />
   );

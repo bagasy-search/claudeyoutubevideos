@@ -10,6 +10,7 @@ import { Personaje } from "../capa3d";
 import { ROPA } from "../elenco";
 import { Dato, EscenaB, Idioma } from "../escena";
 import { Simbolo } from "../simbolos";
+import { IconoGrande } from "../iconos";
 import { CallePintada } from "../sets/pintado";
 import { Gallina, Gato, PAL_LONDRES as PAL, PISO, Rata } from "../sets/londres";
 import { Despertar, Haz, Humo, Moscas, Niebla, Pajaros, PasaFrente, Polvo, Salpicon, transeuntes } from "../vida";
@@ -121,28 +122,28 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
     { x: X + 260, ropa: ROPA.panadero, semilla: 13, prof: -2.4, escala: 0.9, guion: [{ t: 0, accion: "tipear", rotY: 180, expr: "aburrido" }, { t: t.muy, accion: "asustarse", rotY: -20, expr: "sorprendido" }, { t: t.muy + 1, accion: "idle", rotY: -20, expr: "asqueado" }, { t: t.peste, accion: "correr", rotY: -90, expr: "espantado" }],
       mov: (s) => ({ dx: s > t.peste ? -(s - t.peste) * 440 : 0 }) },
   ];
-  const gente = transeuntes({ x0: X - 1700, x1: X + 2600, n: 14, seed: "b01", dur: 33 });
+  const gente = transeuntes({ x0: X - 1700, x1: X + 2600, n: 8, seed: "b01", dur: 33 });
   return (
     <>
-      <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2.5} seed={11}
+      <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2.5} seed={11} dibujo={{}}
         claves={[
           mira(0, CARA[0] + 10, CARA[1] - 14, 4.4),
           mira(F(t.olor), CARA[0] - 6, CARA[1] - 20, 3.9, { curva: "inout" }),
           mira(F(t.peor + 0.1), CARA[0] + 24, CARA[1] - 10, 4.2, { curva: "inout", rot: 1.5 }),
           mira(F(sube + 0.35), X - 150, PISO - 170, 3.1, { curva: "fluida", rot: 0.5 }),
-          mira(F(t.gente + 1.1), X + 40, PISO - 260, 1.45, { curva: "fluida" }),
-          mira(F(t.porque - 0.2), X + 120, PISO - 320, 0.95, { curva: "fluida", rot: -0.6 }),
+          mira(F(t.gente + 1.1), X + 260, PISO - 230, 2.1, { curva: "inout" }),
+          mira(F(t.porque - 0.1), X, PISO - 262, 3.85, { curva: "inout", rot: -0.6 }),
           mira(F(t.pies + 0.9), X + 4, PISO - 50, 2.7, { curva: "inout", rot: 0.8 }),
           mira(F(t.zapas + 0.7), X - 4, PISO - 60, 2.5, { curva: "inout" }),
           mira(F(t.anio + 0.9), X + 380, PISO - 620, 0.55, { curva: "fluida", rot: -0.8 }),
-          mira(F(t.plaga), X + 640, PISO - 560, 0.6, { curva: "fluida" }),
-          mira(F(t.peste + 0.4), X + 760, PISO - 400, 0.78, { curva: "fluida", rot: -0.6 }),
+          mira(F(t.plaga - 0.2), X, PISO - 262, 3.6, { curva: "inout" }),
+          mira(F(t.peste + 0.2), X + 760, PISO - 400, 0.78, { curva: "inout", rot: -0.6 }),
           mira(F(t.mitad + 0.2), mitadX, PISO - 380, 0.82, { curva: "fluida", rot: -1.2 }),
-          mira(F(t.casa), X + 30, PISO - 240, 1.55, { curva: "fluida" }),
-          mira(F(t.ventaja + 0.4), X, PISO - 270, 1.9, { curva: "fluida" }),
-          mira(F(t.pasar + 0.6), X - 10, PISO - 290, 2.7, { curva: "inout" }),
-          mira(F(t.cuanto + 0.3), X + 60, PISO - 260, 1.25, { curva: "inout", rot: -0.5 }),
-          mira(F(t.hora + 1.5), X + 90, PISO - 250, 1.15, { curva: "out" }),
+          mira(F(t.dinero), X, PISO - 262, 3.85, { curva: "inout" }), mira(F(t.hablas), X + 10, PISO - 262, 4.0, { curva: "inout" }),
+          mira(F(t.ventaja + 0.4), X + 10, PISO - 262, 3.6, { curva: "inout", rot: 0.6 }),
+          mira(F(t.pasar + 0.6), X - 10, PISO - 262, 4.0, { curva: "inout" }),
+          mira(F(t.cuanto + 0.2), X, PISO - 250, 3.3, { curva: "inout", rot: -0.5 }),
+          mira(F(t.hora + 1.5), X + 20, PISO - 262, 3.7, { curva: "inout" }),
         ]}
         personajes={[...gente, ...vecinos, { x: X, guion: guionTiza, semilla: 7, ropa: ROPA.tiza, mov: (s) => ({ rz: rzTiza(s), dy: s < sube ? 22 : 22 * Math.max(0, 1 - (s - sube) * 2) }) }]}
         detras={<>
@@ -153,7 +154,7 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
           <Haz x={X - 900} ancho={300} o={0.2} /><Haz x={X + 350} ancho={210} inclin={380} o={0.16} /><Haz x={X + 1700} ancho={340} o={0.18} />
           <Polvo x0={X - 900} x1={X + 900} y0={PISO - 900} n={46} o={0.75} />
           {f < F(sube + 1.5) && <Moscas x={CARA[0] + 40} y={CARA[1] - 50} n={4} r={46} />}
-          <Simbolo tipo="olor" x={CARA[0] + 8} y={CARA[1] - 70} desde={F(t.olor)} hasta={F(t.humo + 0.2)} s={0.55} />
+          
           <Humo x0={CARA[0] + 220} x1={CARA[0] - 260} y={CARA[1] - 60} desde={F(t.humo - 0.2)} dur={42} r={46} />
           <Salpicon x={CARA[0] + 70} y={PISO} desde={F(t.barro)} fuerza={0.45} seed="barro1" />
           
@@ -167,7 +168,7 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
           <Simbolo tipo="!?" x={X + 260} y={PISO - 400} desde={F(t.muy)} hasta={F(t.porque + 0.6)} s={0.7} />
           <Pajaros x0={X - 1400} x1={X + 2600} y={PISO - 1050} desde={F(t.anio - 0.8)} dur={150} n={7} s={1.3} />
           <Pajaros x0={X + 2900} x1={X - 600} y={PISO - 1250} desde={F(t.dias)} dur={130} n={5} s={1} />
-          <Simbolo tipo="estrellas" x={X} y={PISO - 30} desde={F(t.zapas - 0.1)} hasta={F(t.zapas + 1.1)} s={0.55} />
+          
           <Simbolo tipo="!" x={X} y={PISO - 420} desde={F(t.zapas + 0.15)} hasta={F(t.londres)} s={0.9} />
           {/* la peste: ratas delante de la niebla, y la niebla que se clava en la mitad */}
           {f > F(t.peste - 0.5) && Array.from({ length: 16 }).map((_, i) => {
@@ -178,9 +179,9 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
           })}
           {f > F(t.peste - 0.5) && sale < 1 && <Niebla borde={borde} />}
           {[0, 1, 2, 3].map((k) => <Simbolo key={k} tipo="calavera" x={mitadX + 260 + k * 330} y={PISO - 480 - (k % 2) * 140} desde={F(t.mitad + 0.25) + k * 4} hasta={F(t.dinero - 0.3)} s={1.2} color="#e8e0d0" />)}
-          <Simbolo tipo="moneda" x={X} y={PISO - 430} desde={F(t.dinero)} hasta={F(t.casa)} s={0.8} />
-          <Simbolo tipo="?" x={X} y={PISO - 430} desde={F(t.hablas)} hasta={F(t.ventaja - 0.2)} s={0.8} />
-          <Simbolo tipo="bombilla" x={X} y={PISO - 450} desde={F(t.sabes)} hasta={F(t.cuanto - 0.2)} s={0.9} />
+          
+          
+          
         </>}
         frente={<>
           <PasaFrente tipo="barril" x0={X + 1500} x1={X - 1500} desde={F(sube + 0.5)} dur={40} y={PISO + 330} />
@@ -188,7 +189,15 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
         hud={<>
           <Anio desde={F(t.londres)} rueda={F(t.anio - 0.15)} hasta={F(t.dias + 0.4)} titulo={tx("LONDRES", "LONDON")} />
           <Dato texto={tx("LA PESTE NEGRA", "THE BLACK DEATH")} x={960} y={250} desde={F(t.peste)} hasta={F(t.mitad - 0.2)} color="#ff5a3c" tam={120} rot={-3} />
-          <Dato texto={tx("¿CUÁNTO DURAS?", "HOW LONG DOES HE LAST?")} x={960} y={250} desde={F(t.cuanto)} hasta={F(t.hora + 1.5)} tam={124} />
+          <Dato texto={tx("¿CUÁNTO\nDURAS?", "HOW LONG\nWILL YOU LAST?")} x={1440} y={330} desde={F(t.cuanto)} hasta={F(t.hora + 1.5)} tam={120} rot={-3} />
+          <IconoGrande tipo="olor" desde={F(t.olor)} hasta={F(t.humo + 0.3)} x={1300} y={300} />
+          <IconoGrande tipo="pregunta" desde={F(t.porque)} hasta={F(t.pies + 0.5)} />
+          <IconoGrande tipo="calavera" desde={F(t.plaga)} hasta={F(t.peste + 0.1)} />
+          <IconoGrande tipo="moneda_no" desde={F(t.dinero)} hasta={F(t.casa - 0.05)} />
+          <IconoGrande tipo="casa_no" desde={F(t.casa)} hasta={F(t.hablas - 0.05)} />
+          <IconoGrande tipo="pregunta" desde={F(t.hablas)} hasta={F(t.ventaja - 0.1)} />
+          <IconoGrande tipo="bombilla" desde={F(t.ventaja)} hasta={F(t.cuanto - 0.2)} />
+          <IconoGrande tipo="reloj" desde={F(t.cuanto)} hasta={F(t.hora + 1.5)} />
           <Aclara desde={F(t.ojos + 1.0)} dur={64} />
           <Despertar f0={F(t.ojos) - 4} fin={44} cx={960} cy={540} />
         </>}
