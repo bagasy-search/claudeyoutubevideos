@@ -104,21 +104,40 @@ const LOS10 = [
   { k: "rosa", look: ROSA, x: 1200 }, { k: "dev", look: DEV, x: 1320, }, { k: "priya", look: PRIYA, x: 1440 }, { k: "nan", look: NAN, x: 1570 },
   { k: "ben", look: BEN, x: 1680, nino: true }, { k: "lily", look: LILY, x: 1775, nino: true },
 ];
-// obrero OPACO (fix5: nada de alfa = nada de doble exposición); tono según la fila (atrás más oscuro y frío)
+// obrero OPACO (fix5: nada de alfa = nada de doble exposición) · fix6: ya no es un clon: casco (amarillo/blanco/naranja/azul),
+// chaleco (naranja/lima/rojo), alto y ancho, fase del paso, algunos de PERFIL (cuerpo angosto + visera de costado), algunos con herramienta al hombro
+const CASCOS = ["#f2c230", "#f6f2e8", "#ff8a2a", "#4a8ad8", "#f2c230", "#e8e04a"];
+const CHALECOS = ["#ff8a2a", "#b6e24a", "#ff8a2a", "#e24a3a", "#ffb02a"];
+const PIEL = ["#ffcf6e", "#e0a868", "#b07a4a", "#8a5a3a", "#f2c8a0"];
 const Obrero: React.FC<{ x: number; y: number; s: number; f: number; seed: number; fila: number; pop: number }> = ({ x, y, s, f, seed, fila, pop }) => {
   if (pop <= 0.001) return null;
-  const sw = Math.sin(f / 6 + seed) * 10;
-  const T = [["#ffcf6e", "#ff8a2a", "#f2c230", "#f6ecd2"], ["#d9a85a", "#d26a24", "#c99a28", "#cfc4ae"], ["#a8844e", "#9c5426", "#9a7a2a", "#9e978a"]][fila];
+  const r = (k: number) => ((Math.sin(seed * 12.9898 + k * 78.233) * 43758.5453) % 1 + 1) % 1;
+  const sw = Math.sin(f / (5 + r(1) * 3) + seed * 2.3) * (6 + r(2) * 8);
+  const osc = 1 - fila * 0.2; // atrás más oscuro
+  const tinte = (c: string) => mezclarHex(c, "#2a2030", 1 - osc);
+  const perfil = r(3) < 0.28, herr = r(4) < 0.3 ? (r(5) < 0.5 ? "pala" : "llave") : null;
+  const alto = 0.88 + r(6) * 0.26, ancho = perfil ? 0.62 : 0.9 + r(7) * 0.25;
+  const casco = tinte(CASCOS[Math.floor(r(8) * CASCOS.length)]), chaleco = tinte(CHALECOS[Math.floor(r(9) * CHALECOS.length)]), piel = tinte(PIEL[Math.floor(r(10) * PIEL.length)]);
+  const pant = tinte(["#3a4a6a", "#4a3a2a", "#2a2a34"][Math.floor(r(11) * 3)]);
+  const bob = Math.abs(Math.sin(f / 7 + seed)) * 2.5;
+  const lado = r(12) < 0.5 ? 1 : -1;
   return (
-    <g transform={`translate(${x},${y}) scale(${s * pop},${s * (0.4 + 0.6 * pop)})`}>
-      <rect x={-7} y={-34} width={5} height={34} fill={T[0]} transform={`rotate(${sw} -4 -34)`} />
-      <rect x={2} y={-34} width={5} height={34} fill={T[0]} transform={`rotate(${-sw} 4 -34)`} />
-      <rect x={-10} y={-70} width={20} height={38} rx={5} fill={T[1]} stroke="#3a1e10" strokeWidth={1.4} />
-      <rect x={-10} y={-56} width={20} height={5} fill={T[3]} />
-      <circle cx={0} cy={-80} r={9} fill={T[0]} stroke="#3a1e10" strokeWidth={1.2} />
-      <path d="M-11,-82 Q0,-98 11,-82 Z" fill={T[2]} stroke="#3a1e10" strokeWidth={1.2} />
+    <g transform={`translate(${x},${y - bob}) scale(${s * pop * ancho * lado},${s * alto * (0.4 + 0.6 * pop)})`}>
+      <rect x={-7} y={-34} width={5} height={34} fill={pant} transform={`rotate(${sw} -4 -34)`} />
+      <rect x={2} y={-34} width={5} height={34} fill={pant} transform={`rotate(${-sw} 4 -34)`} />
+      <rect x={-10} y={-70} width={20} height={38} rx={5} fill={chaleco} stroke="#3a1e10" strokeWidth={1.4} />
+      <rect x={-10} y={-56} width={20} height={5} fill={tinte("#f6ecd2")} />
+      {herr === "pala" && <g transform={`rotate(${-28 + sw * 0.3} 6 -64)`}><rect x={5} y={-112} width={4} height={70} fill={tinte("#8a5a32")} /><path d="M1,-118 L13,-118 L11,-102 L3,-102 Z" fill={tinte("#9aa0aa")} /></g>}
+      {herr === "llave" && <g transform={`rotate(${40 + sw} 9 -60)`}><rect x={8} y={-60} width={5} height={30} fill={tinte("#9aa0aa")} /><circle cx={10.5} cy={-28} r={5} fill="none" stroke={tinte("#9aa0aa")} strokeWidth={3} /></g>}
+      <circle cx={perfil ? 2 : 0} cy={-80} r={9} fill={piel} stroke="#3a1e10" strokeWidth={1.2} />
+      <path d={perfil ? "M-9,-82 Q2,-98 13,-82 L19,-80 L13,-80 Z" : "M-11,-82 Q0,-98 11,-82 Z"} fill={casco} stroke="#3a1e10" strokeWidth={1.2} />
     </g>
   );
+};
+const mezclarHex = (a: string, b: string, t: number) => {
+  const p = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  const A = p(a), B = p(b);
+  return "#" + A.map((v, i) => Math.round(v + (B[i] - v) * t).toString(16).padStart(2, "0")).join("");
 };
 export const P02: React.FC = () => {
   const f = useF();
@@ -131,7 +150,7 @@ export const P02: React.FC = () => {
   // 3 filas escalonadas por profundidad: atrás chicos y oscuros, adelante grandes y saturados
   const FILAS = [{ y: SUB_PISO - 36, s: 2.0, n: 62, dx: 46 }, { y: SUB_PISO - 17, s: 2.4, n: 52, dx: 55 }, { y: SUB_PISO, s: 2.9, n: 44, dx: 66 }];
   return (
-    <Escena Set={Subsuelo} pal={PAL} setProps={{ hora: "invierno", luz, flujo: 1, nieve: 0.5, luces: 0 }} seed={12} mano={2}
+    <Escena Set={Subsuelo} pal={PAL} setProps={{ hora: "invierno", luz, flujo: 1, nieve: 0.5, luces: 0, pozo: false }} seed={12} mano={2}
       claves={CL}
       medio={<>
         {f > e0 - 2 && f < f1 + 14 && <g>
@@ -141,8 +160,9 @@ export const P02: React.FC = () => {
             const to = f0 + (((k * 37) % 41) / 41) * (f1 - f0);
             const pin = spring({ frame: f - ti, fps: 30, config: { damping: 11, stiffness: 170 } });
             const pout = 1 - cl(f, to, to + 6);
-            const x = -420 + i * r.dx + (fi % 2) * 22 + 8 * Math.sin(k * 1.7) + (f - ti) * 0.5;
-            return <Obrero key={k} x={x} y={r.y} s={r.s + (i % 3) * 0.06} f={f} seed={k} fila={2 - fi} pop={Math.max(0, pin) * pout} />;
+            const x = -420 + i * r.dx + (fi % 2) * 22 + 14 * Math.sin(k * 1.7) + (f - ti) * (0.3 + 0.4 * ((k * 7) % 5) / 5);
+            const yj = 6 * Math.sin(k * 2.9) + 4 * Math.cos(k * 0.7); // fix6: nada de pared rígida: cada uno un poco más adelante o atrás
+            return <Obrero key={k} x={x} y={r.y + yj} s={r.s * (0.92 + 0.16 * (((k * 13) % 7) / 7))} f={f} seed={k} fila={2 - fi} pop={Math.max(0, pin) * pout} />;
           }))}
         </g>}
         {LOS10.map((p, i) => (
@@ -182,7 +202,7 @@ export const P03: React.FC = () => {
   const rk = (k: string) => ordenX.indexOf(k);
   const tBaja = (k: string) => l(17.4) + rk(k) * 3.5;
   const tMira = (k: string) => l(20.35) + Math.abs(rk(k) - 4.5) * 2.5;
-  const tMano = (k: string) => l(21.1) + rk(k) * 4.6;
+  const tMano = (k: string) => l(21.1) + rk(k) * 3.4; // fix6: el 10 sale a 22.1 s y llega a su tamaño antes del corte
   const base = (k: string, i: number): any[] => {
     if (k === "gus") return [{ f: 0, v: {} }, { f: l(18.4), v: "brazosCruzados" }];
     if (k === "june") return [{ f: 0, v: {} }, { f: l(18.6), v: { hD: 70, cD: 95, hI: 10, cI: 40, cabeza: 6 } }, ...gestos(l(19.4), l(20.9), [{ hD: 62, cD: 105, hI: 10, cI: 40, cabeza: 8 }, { hD: 74, cD: 90, hI: 10, cI: 40, cabeza: 4 }], 20)];
@@ -219,7 +239,7 @@ export const P03: React.FC = () => {
           if (f < t) return null;
           const sp = spring({ frame: f - t, fps: 30, config: { damping: 9, stiffness: 190 } });
           const alto = (p.nino ? NINO : 1) * 1.05 * 345;
-          return <text key={p.k} x={pos[p.k] + (p.k === "june" ? -30 : 26)} y={P - alto - 14 * sp} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={700} fontSize={62 * (0.45 + 0.55 * sp)} fill="#ffcf6e" stroke="#1a1018" strokeWidth={8} paintOrder="stroke">{rk(p.k) + 1}</text>;
+          return <text key={p.k} x={pos[p.k] + (p.k === "june" ? -30 : 26)} y={P - alto - 14 * sp} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={700} fontSize={62 * Math.min(1.12, 0.7 + 0.3 * sp)} fill="#ffcf6e" stroke="#1a1018" strokeWidth={8} paintOrder="stroke">{rk(p.k) + 1}</text>;
         })}
       </>}
       hud={<Tipeo texto={Q} x={960} y={90} desde={l(17.5)} cps={0.8} tam={84} />}
@@ -599,6 +619,19 @@ export const P13: React.FC = () => {
 };
 
 // ---------- 14 · 100:8-116:3 · UMD: Dev en la caja de la pickup gira el dial del CB; el dormitorio con 1 ventana; llora (5 → 6) ----------
+// fix6: etiqueta número + rótulo SIN el palito vertical de EtiquetaFlotante (se leía como un cursor suelto bajo «DEV · AGE»)
+const EtiquetaSinPalo: React.FC<{ x: number; y: number; rotulo: string; valor: number; desde: number; hasta: number; tam: number; color?: string }> = ({ x, y, rotulo, valor, desde, hasta, tam, color = "#ffcf6e" }) => {
+  const f = useF();
+  if (f < desde - 1 || f > hasta + 1) return null;
+  const sp = spring({ frame: f - desde, fps: 30, config: { damping: 12, stiffness: 180 } });
+  const o = Math.min(ap(f, desde, 6), des(f, hasta - 8, 8));
+  return (
+    <div style={{ position: "absolute", left: x, top: y, opacity: o, transform: `translate(-50%,-100%) scale(${0.7 + 0.3 * sp})`, transformOrigin: "50% 100%", textAlign: "center", fontFamily: F_HUD, whiteSpace: "nowrap", textShadow: "0 3px 10px rgba(0,0,0,0.7)" }}>
+      <div style={{ fontWeight: 600, fontSize: tam, lineHeight: 1, color }}>{valor}</div>
+      <div style={{ fontWeight: 500, fontSize: tam * 0.36, letterSpacing: 3, color: "#f4efe4", marginTop: 2 }}>{rotulo}</div>
+    </div>
+  );
+};
 export const P14: React.FC = () => {
   const f = useF();
   const l = loc(100.8);
@@ -617,7 +650,7 @@ export const P14: React.FC = () => {
       medio={<>
         <rect x={864} y={P - 352} width={72} height={56} rx={5} fill="#2f6a8a" /><text x={900} y={P - 314} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={600} fontSize={24} fill="#ffffff">BUS</text>
         <Auto x={1450} y={P} color="#6a2f36" tipo="pickup" s={2.2} dir={-1} nieve={0.7} />
-        <A look={DEV} ruta={[{ f: 0, x: 1560, y: P - 120 }]} dir={[{ f: 0, v: -1 }]} asiento={[{ f: 0, v: 0 }]} luz={BORDE_FRIO}
+        <A look={DEV} ruta={[{ f: 0, x: 1560, y: P - 158 }]} dir={[{ f: 0, v: -1 }]} asiento={[{ f: 0, v: 0 }]} luz={BORDE_FRIO}
           poses={[{ f: 0, v: { ...{ tronco: 6, pI: 88, rI: 88, pD: 92, rD: 92 }, hD: 30, cD: 130, cabeza: 8 } }, ...gestos(l(104), l(113), [{ tronco: 6, pI: 88, rI: 88, pD: 92, rD: 92, hD: 62, cD: 70, cabeza: 8 }, { tronco: 8, pI: 88, rI: 88, pD: 92, rD: 92, hD: 78, cD: 40, cabeza: 4 }, { tronco: 6, pI: 88, rI: 88, pD: 92, rD: 92, hD: 30, cD: 130, cabeza: 8 }], 15)]}
           caras={[{ f: 0, v: "cansado" }, { f: l(106), v: "sorpresa" }, { f: l(113.3), v: "triste" }, { f: l(114.4), v: "risa" }, { f: l(115.0), v: "triste" }]} habla={[[l(106.2), l(116.3)]]}
           ajuste={(p, ff) => (llora ? { ...p, tronco: p.tronco + 2.5 * Math.sin(ff * 1.1) } : p)} />
@@ -638,10 +671,10 @@ export const P14: React.FC = () => {
           <rect x={1730} y={P - 150} width={18} height={80} rx={4} fill="#4a1e24" />
           <rect x={1520} y={P - 126} width={60} height={10} rx={4} fill="#4a1e24" />
         </g>
-        <Lagrimas x={1572} y={P - 262} ancho={12} desde={l(113.3)} s={0.9} />
+        <Lagrimas x={1572} y={P - 300} ancho={12} desde={l(113.3)} s={0.9} />
       </>}
       hud={<>
-        <EtiquetaFlotante x={1250} y={330} rotulo="DEV · AGE" claves={20} desde={l(103.5)} hasta={l(105.6)} color="#ffcf6e" tam={120} />
+        <EtiquetaSinPalo x={1250} y={330} rotulo="DEV · AGE" valor={20} desde={l(103.5)} hasta={l(105.6)} tam={120} />
         <Cuenta fondo x={1500} y={110} rotulo="POPULATION" claves={[{ f: 0, v: 5 }, { f: l(115.6), v: 6, d: 1 }]} desde={l(114.0)} hasta={l(116.25)} tam={110} />
       </>}
     />

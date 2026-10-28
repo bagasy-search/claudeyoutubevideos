@@ -59,7 +59,7 @@ export const Tipeo: React.FC<{ texto: string; x: number; y: number; desde: numbe
           return <span key={i} style={{ color, opacity: vis ? 1 : 0, WebkitTextStroke: `${Math.max(3, tam * 0.07)}px ${CONTORNO}`, paintOrder: "stroke fill", textShadow: `0 5px 0 rgba(10,8,14,0.85), 0 0 26px ${color}55` }}>{ch}</span>;
         })}</div>
       ))}
-      {n < total && Math.floor(f / 5) % 2 === 0 && <span style={{ position: "absolute", right: -tam * 0.2, bottom: 0, width: tam * 0.08, height: tam * 0.9, background: color }} />}
+      {/* fix6: sin cursor «|»: flotaba solo en el borde derecho del texto invisible antes de la 1ª letra */}
     </div>
   );
 };

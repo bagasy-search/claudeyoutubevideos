@@ -15,7 +15,7 @@ import { Hora, LUCES } from "../mundo/hora";
 export const SUB_PISO = 640;
 export const SUB_PUNTOS = { tapa: 1200, bombeo: 2700, caños: 900, poste: 600 };
 export const SUB_Y = { cable: 690, gas: 730, agua: 790, cloaca: 900 };
-type PS = SetProps & { hora?: Hora; luz?: { cable?: number; gas?: number; agua?: number; cloaca?: number }; flujo?: number; sube?: number; nieve?: number; luces?: number };
+type PS = SetProps & { hora?: Hora; luz?: { cable?: number; gas?: number; agua?: number; cloaca?: number }; flujo?: number; sube?: number; nieve?: number; luces?: number; pozo?: boolean };
 
 const Tubo: React.FC<{ y: number; g: number; color: string; on: number; f: number; flujo: number; x0?: number; x1?: number }> = ({ y, g, color, on, f, flujo, x0 = -800, x1 = 4200 }) => (
   <g>
@@ -26,7 +26,7 @@ const Tubo: React.FC<{ y: number; g: number; color: string; on: number; f: numbe
   </g>
 );
 
-export const Subsuelo: React.FC<PS> = ({ capa, f, hora = "invierno", luz = {}, flujo = 1, sube = 0, nieve = 0.5, luces = 0 }) => {
+export const Subsuelo: React.FC<PS> = ({ capa, f, hora = "invierno", luz = {}, flujo = 1, sube = 0, nieve = 0.5, luces = 0, pozo = true }) => {
   const L = LUCES[hora];
   const P = SUB_PISO;
   if (capa === "lejos") return <g><Cielo c={L.cielo} x={-2000} w={8000} /><Halo x={1400} y={L.solY} r={420} color={L.sol} fuerza={0.5} /></g>;
@@ -54,9 +54,11 @@ export const Subsuelo: React.FC<PS> = ({ capa, f, hora = "invierno", luz = {}, f
       <Tubo y={SUB_Y.agua} g={40} color="#5ab0ff" on={luz.agua ?? 0} f={f} flujo={flujo} />
       <Tubo y={SUB_Y.cloaca} g={92} color="#a0784a" on={luz.cloaca ?? 0} f={f} flujo={flujo * (1 - sube)} />
       {/* pozo de la tapa hasta la cloaca */}
-      <rect x={SUB_PUNTOS.tapa - 50} y={P - 6} width={100} height={SUB_Y.cloaca - P} fill="#1e1a1e" />
-      {Array.from({ length: 7 }).map((_, i) => <rect key={i} x={SUB_PUNTOS.tapa - 30} y={P + 20 + i * 34} width={60} height={6} fill="#5a5a60" />)}
-      <rect x={SUB_PUNTOS.tapa - 70} y={P - 36} width={140} height={10} rx={4} fill="#5a5a60" />
+      {pozo && <g>
+        <rect x={SUB_PUNTOS.tapa - 50} y={P - 6} width={100} height={SUB_Y.cloaca - P} fill="#1e1a1e" />
+        {Array.from({ length: 7 }).map((_, i) => <rect key={i} x={SUB_PUNTOS.tapa - 30} y={P + 20 + i * 34} width={60} height={6} fill="#5a5a60" />)}
+        <rect x={SUB_PUNTOS.tapa - 70} y={P - 36} width={140} height={10} rx={4} fill="#5a5a60" />
+      </g>}
       {sube > 0 && <rect x={SUB_PUNTOS.tapa - 48} y={SUB_Y.cloaca - (SUB_Y.cloaca - P + 20) * sube} width={96} height={(SUB_Y.cloaca - P + 20) * sube} fill="#7a5a32" opacity={0.95} />}
       {sube > 0 && Array.from({ length: 6 }).map((_, i) => <circle key={i} cx={SUB_PUNTOS.tapa - 30 + i * 12} cy={SUB_Y.cloaca - (SUB_Y.cloaca - P) * sube + 6 - ((f * 1.5 + i * 13) % 20)} r={4} fill="#a0784a" />)}
       {/* estación de bombeo de la cloaca */}
@@ -112,7 +114,7 @@ export const Cuesta: React.FC<PC> = ({ capa, f, hora = "dia", grieta = 0, rio = 
       <path d={`M${x0},${y(x0) - 60} L${x1},${y(x1) - 60} L${x1},${y(x1) - 20} L${x0},${y(x0) - 20} Z`} fill={mezclar("#8a8490", L.tinte, 0.2)} />
       <path d={`M${x0},${y(x0) - 20} L${x1},${y(x1) - 20} L${x1},${y(x1) + 40} L${x0},${y(x0) + 40} Z`} fill="#2a2630" />
       {Array.from({ length: 12 }).map((_, i) => { const xa = x0 + 80 + i * 400; return <path key={i} d={`M${xa},${y(xa) + 10} L${xa + 160},${y(xa + 160) + 10}`} stroke="#c9b48a" strokeWidth={6} opacity={0.6} />; })}
-      {nieve > 0 && <path d={`M${x0},${y(x0) - 60} L${x1},${y(x1) - 60} L${x1},${y(x1) - 80 * nieve} L${x0},${y(x0) - 80 * nieve} Z`} fill={L.nieve} />}
+      {nieve > 0.005 && <path d={`M${x0},${y(x0) - 58} L${x1},${y(x1) - 58} L${x1},${y(x1) - 60 - 22 * nieve} L${x0},${y(x0) - 60 - 22 * nieve} Z`} fill={L.nieve} opacity={Math.min(1, nieve * 1.6)} />}
       {/* autos estacionados en la pendiente */}
       {[[200, 1], [1100, 4], [2500, 7]].map(([x, c], i) => <g key={i} transform={`rotate(${-Math.atan(PENDIENTE) * 180 / Math.PI} ${x} ${y(x) - 20})`}><Auto x={x} y={y(x) - 20} color={COLORES_AUTO[c]} nieve={nieve} /></g>)}
       {/* grieta que crece */}
