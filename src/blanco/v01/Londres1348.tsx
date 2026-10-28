@@ -11,6 +11,7 @@ import { Personaje } from "../capa3d";
 import { Dato, EscenaB, HudSupervivencia, Idioma, MarcaHUD } from "../escena";
 import { Simbolo } from "../simbolos";
 import { Apertura } from "./Apertura";
+import { CallePintada, MurallaPintada, PuertoPintado, TabernaPintada } from "../sets/pintado";
 import { OFICIOS, ROPA } from "../elenco";
 import { CALLE_M, CalleMedieval, Carro, Cerdo, Gallina, Gato, MURALLA_M, Muralla, PAL_LONDRES as PAL, PISO, Perro, PUERTO_M, Puerto, puntoSoga, Rata, TABERNA_M, Taberna } from "../sets/londres";
 
@@ -87,7 +88,7 @@ const B01: React.FC<B> = ({ D, L }) => {
   const f = useF();
   const X = -350;
   return (
-    <EscenaB Set={CalleMedieval} pal={PAL} momento="amanecer"
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} momento="amanecer"
       claves={[mira(0, X, PISO - 90, 2.3), mira(fr(D, 0.18), X, PISO - 160, 1.9, { curva: "inout" }), mira(fr(D, 0.32), X + 60, PISO - 60, 2.6, { curva: "inout" }), mira(fr(D, 0.45), X + 150, H - 40, 1.25, { curva: "fluida" }), mira(fr(D, 0.75), X + 260, H - 120, 0.9, { curva: "fluida" }), mira(D, X + 380, H - 80, 1.1, { curva: "fluida" })]}
       personajes={[
         tiza([{ t: 0, accion: "caerse_y_levantarse", expr: "dormido" }, { t: sc(D, 0.12), accion: "caerse_y_levantarse", expr: "confundido" }, { t: sc(D, 0.24), accion: "pensar", expr: "asqueado" }, { t: sc(D, 0.33), accion: "pensar", expr: "sorprendido", mirada: [0, -0.8] }, { t: sc(D, 0.45), accion: "asustarse", expr: "espantado" }, { t: sc(D, 0.62), accion: "encogerse_de_hombros", expr: "nervioso" }, { t: sc(D, 0.8), accion: "explicar", expr: "sonrisa_picara" }], X),
@@ -115,7 +116,7 @@ const B02: React.FC<B> = ({ D, L }) => {
   const f = useF();
   const perroX = interpolate(f, [0, D], [0, 2400], cl);
   return (
-    <EscenaB Set={CalleMedieval} pal={PAL}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6}
       claves={[mira(0, 150, PISO - 380, 0.8), mira(fr(D, 0.3), 1600, PISO - 330, 0.85, { curva: "fluida" }), mira(fr(D, 0.45), 2500, PISO - 240, 1.1, { curva: "fluida" }), mira(fr(D, 0.6), 3100, H, 1.3, { curva: "fluida" }), mira(fr(D, 0.85), 4600, PISO - 300, 0.9, { curva: "fluida" }), mira(D, 5300, PISO - 240, 1.05, { curva: "fluida" })]}
       personajes={[
         tiza([{ t: 0, accion: "caminar", rotY: 90, expr: "sorprendido", mirada: [0, 0.6] }, { t: sc(D, 0.48), accion: "asustarse", rotY: 20, expr: "espantado" }, { t: sc(D, 0.56), accion: "caminar", rotY: 90, expr: "asqueado" }, { t: sc(D, 0.9), accion: "facepalm", rotY: 0, expr: "aburrido" }], 300),
@@ -151,7 +152,7 @@ const B03: React.FC<B> = ({ D, L }) => {
   const canje = fr(D, 0.42), dado = fr(D, 0.78);
   const huele = interpolate(f, [canje, canje + 20, canje + 60, canje + 80], [0, 1, 1, 0], cl);
   return (
-    <EscenaB Set={CalleMedieval} pal={PAL}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6}
       claves={[mira(0, T - 520, H, 1.2), mira(fr(D, 0.2), T - 650, H - 30, 1.5, { curva: "inout" }), mira(fr(D, 0.36), T - 200, H, 1.25, { curva: "fluida" }), mira(fr(D, 0.5), T - 60, PISO - 300, 2.0, { curva: "fluida" }), mira(fr(D, 0.75), T - 120, H, 1.4, { curva: "fluida" }), mira(D, T - 250, H - 40, 1.2, { curva: "fluida" })]}
       personajes={[
         tiza([{ t: 0, accion: "idle", rotY: 30, expr: "nervioso" }, { t: sc(D, 0.18), accion: "asustarse", rotY: -40, expr: "asustado" }, { t: sc(D, 0.26), accion: "caminar", rotY: 90, expr: "nervioso" }, { t: sc(D, 0.38), accion: "explicar", rotY: 50, expr: "sonrisa_picara" }, { t: sc(D, 0.62), accion: "encogerse_de_hombros", rotY: 40, expr: "confundido" }, { t: sc(D, 0.8), accion: "festejar", rotY: 0, expr: "feliz" }], T - 520, { accesorios: f > dado ? SOMBRERO : undefined }),
@@ -188,7 +189,7 @@ const B04: React.FC<B> = ({ D, L }) => {
   const xIni = A - 40;
   const cargando = f > fr(D, 0.18) && f < finPaseo * 30;
   return (
-    <EscenaB Set={CalleMedieval} pal={PAL}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6}
       claves={[mira(0, (A + P) / 2, H - 20, 1.0), mira(fr(D, 0.12), P + 100, PISO - 260, 1.8, { curva: "inout" }), mira(fr(D, 0.2), (A + P) / 2, H - 30, 1.0, { curva: "fluida" }), mira(fr(D, 0.62), (A + P) / 2 + 80, H, 1.2, { curva: "fluida" }), mira(fr(D, 0.72), P + 40, PISO - 280, 1.9, { curva: "fluida" }), mira(D, P + 60, H, 1.3, { curva: "fluida" })]}
       personajes={[
         tiza(g, xIni, { accesorios: SOMBRERO }),
@@ -214,7 +215,7 @@ const B04: React.FC<B> = ({ D, L }) => {
 const B05a: React.FC<B> = ({ D, L }) => {
   const R = CALLE_M.rio - 380;
   return (
-    <EscenaB Set={CalleMedieval} pal={PAL}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6}
       claves={[mira(0, R, H, 1.3), mira(D, R + 160, PISO - 180, 1.7, { curva: "inout" })]}
       personajes={[tiza([{ t: 0, accion: "caminar", rotY: 90, expr: "feliz" }, { t: sc(D, 0.35), accion: "asustarse", rotY: 60, expr: "asqueado" }, { t: sc(D, 0.6), accion: "facepalm", rotY: 20, expr: "asqueado" }], R - 150, { accesorios: SOMBRERO })]}
       sobre={<>
@@ -229,7 +230,7 @@ const B05b: React.FC<B> = ({ D, L }) => {
   const f = useF();
   const M = TABERNA_M.mesa;
   return (
-    <EscenaB Set={Taberna} pal={PAL} interior
+    <EscenaB Set={TabernaPintada} pal={PAL} interior
       claves={[mira(0, M - 300, H - 60, 0.95), mira(fr(D, 0.4), M - 100, H, 1.3, { curva: "fluida" }), mira(D, M - 40, PISO - 260, 1.8, { curva: "fluida" })]}
       personajes={[
         tiza([{ t: 0, accion: "caminar", rotY: 90, expr: "feliz" }, { t: sc(D, 0.3), accion: "explicar", rotY: 40, expr: "sonrisa_picara" }, { t: sc(D, 0.55), accion: "reir", rotY: 20, expr: "feliz" }, { t: sc(D, 0.8), accion: "festejar", rotY: 0, expr: "feliz" }], M - 700, { accesorios: SOMBRERO }),
@@ -255,7 +256,7 @@ const B06: React.FC<B> = ({ D, L }) => {
   const C = TABERNA_M.cama;
   const rata = interpolate(f, [fr(D, 0.5), fr(D, 0.7)], [-300, 2600], cl);
   return (
-    <EscenaB Set={Taberna} pal={PAL} momento="noche" interior setProps={{ variante: "posada" }}
+    <EscenaB Set={TabernaPintada} pal={PAL} momento="noche" interior setProps={{ variante: "posada" }}
       claves={[mira(0, 900, PISO - 340, 0.9), mira(fr(D, 0.3), C, PISO - 200, 1.2, { curva: "fluida" }), mira(fr(D, 0.5), C - 100, PISO - 150, 1.9, { curva: "fluida" }), mira(fr(D, 0.75), C + 700, H, 1.3, { curva: "fluida" }), mira(D, C + 760, PISO - 140, 2.0, { curva: "fluida" })]}
       personajes={[tiza([{ t: 0, accion: "caminar", rotY: 90, expr: "nervioso" }, { t: sc(D, 0.22), accion: "mirar_reloj", rotY: 30, expr: "asqueado" }, { t: sc(D, 0.42), accion: "asustarse", rotY: 0, expr: "espantado" }, { t: sc(D, 0.5), accion: "pensar", rotY: 0, expr: "nervioso" }, { t: sc(D, 0.62), accion: "explicar", rotY: 20, expr: "sonrisa_picara" }, { t: sc(D, 0.75), accion: "caminar", rotY: 90, expr: "feliz" }, { t: sc(D, 0.86), accion: "sentarse", rotY: 0, expr: "dormido" }], C - 700, { accesorios: SOMBRERO })]}
       sobre={<>
@@ -283,7 +284,7 @@ const B07: React.FC<B> = ({ D, L }) => {
     return u < 1 && u > 0 ? <Rata key={i} {...puntoSoga(u, f)} f={f} fase={i} s={0.8} /> : u <= 0 ? <Rata key={i} x={PUERTO_M.soga - 60 - (f - fr(D, 0.5) - i * 14 - 110) * 6} y={PISO} f={f} fase={i} s={0.8} /> : null;
   });
   return (
-    <EscenaB Set={Puerto} pal={PAL}
+    <EscenaB Set={PuertoPintado} pal={PAL}
       claves={[mira(0, 1400, PISO - 300, 0.85), mira(fr(D, 0.25), 2000, PISO - 220, 1.15, { curva: "fluida" }), mira(fr(D, 0.5), 2450, PISO - 200, 1.4, { curva: "fluida" }), mira(fr(D, 0.75), 2000, PISO - 170, 1.4, { curva: "fluida" }), mira(D, 1600, PISO - 170, 2.0, { curva: "fluida" })]}
       personajes={[
         tiza([{ t: 0, accion: "caminar", rotY: 90, expr: "feliz" }, { t: sc(D, 0.22), accion: "idle", rotY: 60, expr: "sorprendido" }, { t: sc(D, 0.48), accion: "asustarse", rotY: 50, expr: "espantado" }, { t: sc(D, 0.8), accion: "asustarse", rotY: 20, expr: "asustado" }], 900, { accesorios: SOMBRERO }),
@@ -313,7 +314,7 @@ const B08: React.FC<B> = ({ D, L }) => {
   const tiro = fr(D, 0.5);
   const u = interpolate(f, [tiro, tiro + 22], [0, 1], cl);
   return (
-    <EscenaB Set={CalleMedieval} pal={PAL}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6}
       claves={[mira(0, X, H, 1.2), mira(fr(D, 0.2), X + 400, H, 1.2, { curva: "fluida" }), mira(fr(D, 0.45), X + 300, H - 60, 0.95, { curva: "fluida" }), mira(fr(D, 0.7), X + 700, H, 1.35, { curva: "fluida" }), mira(D, X + 600, PISO - 280, 1.8, { curva: "fluida" })]}
       personajes={[
         tiza([{ t: 0, accion: "explicar", rotY: -50, expr: "nervioso" }, { t: sc(D, 0.12), accion: "caminar", rotY: 90, expr: "nervioso" }, { t: sc(D, 0.2), accion: "senalar", rotY: 50, expr: "asustado", objetivo: [-1, 0] }, { t: sc(D, 0.32), accion: "saludar_dos_manos", rotY: 0, expr: "furioso" }, { t: sc(D, 0.52), accion: "asustarse", rotY: -20, expr: "espantado" }, { t: sc(D, 0.7), accion: "caminar", rotY: 90, expr: "triste" }, { t: sc(D, 0.8), accion: "idle", rotY: 30, expr: "triste" }, { t: sc(D, 0.92), accion: "facepalm", rotY: 0, expr: "triste" }], X + 100, { accesorios: SOMBRERO }),
@@ -344,7 +345,7 @@ const B08: React.FC<B> = ({ D, L }) => {
 const B09: React.FC<B> = ({ D, L }) => {
   const f = useF();
   return (
-    <EscenaB Set={CalleMedieval} pal={PAL} setProps={{ variante: "peste" }}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} setProps={{ variante: "peste" }}
       claves={[mira(0, 4600, PISO - 420, 0.75), mira(fr(D, 0.22), 3700, PISO - 360, 0.85, { curva: "fluida" }), mira(fr(D, 0.4), 3100, H, 1.3, { curva: "fluida" }), mira(fr(D, 0.58), 2600, H, 1.3, { curva: "fluida" }), mira(fr(D, 0.74), 3450, PISO - 200, 1.5, { curva: "fluida" }), mira(D, 3900, PISO - 330, 0.95, { curva: "fluida" })]}
       personajes={[
         { x: 3100, ...NPC.aldeano(1), guion: [{ t: 0, accion: "caminar", rotY: -90, expr: "pensativo" }, { t: sc(D, 0.3), accion: "festejar", rotY: 0, expr: "feliz" }], semilla: 71 },
@@ -378,7 +379,7 @@ const B10: React.FC<B> = ({ D, L }) => {
   const ratX = interpolate(f, [fr(D, 0.62), fr(D, 0.8)], [C + 900, C - 600], cl);
   const gatoX = interpolate(f, [fr(D, 0.66), fr(D, 0.84)], [C + 1200, C - 300], cl);
   return (
-    <EscenaB Set={Taberna} pal={PAL} interior setProps={{ variante: "posada" }}
+    <EscenaB Set={TabernaPintada} pal={PAL} interior setProps={{ variante: "posada" }}
       claves={[mira(0, 900, H, 1.25), mira(fr(D, 0.35), 1100, PISO - 260, 1.6, { curva: "fluida" }), mira(fr(D, 0.55), 1100, H, 1.2, { curva: "fluida" }), mira(fr(D, 0.75), C + 200, PISO - 160, 1.4, { curva: "fluida" }), mira(D, 1050, PISO - 230, 1.7, { curva: "fluida" })]}
       personajes={[tiza([{ t: 0, accion: "pensar", rotY: 20, expr: "feliz" }, { t: sc(D, 0.18), accion: "explicar", rotY: 0, expr: "sonrisa_picara" }, { t: sc(D, 0.36), accion: "cruzarse_de_brazos", rotY: 0, expr: "feliz" }, { t: sc(D, 0.5), accion: "saludar", rotY: 40, expr: "feliz" }, { t: sc(D, 0.66), accion: "senalar", rotY: 50, expr: "sorprendido", objetivo: [1, -0.6] }, { t: sc(D, 0.86), accion: "festejar", rotY: 0, expr: "enamorado" }], 1000)]}
       sobre={<>
@@ -404,7 +405,7 @@ const B10: React.FC<B> = ({ D, L }) => {
 const B11a: React.FC<B> = ({ D, L }) => {
   const C = TABERNA_M.cama;
   return (
-    <EscenaB Set={Taberna} pal={PAL} interior momento="amanecer"
+    <EscenaB Set={TabernaPintada} pal={PAL} interior momento="amanecer"
       claves={[mira(0, C, PISO - 200, 1.6), mira(fr(D, 0.5), C - 300, H, 1.1, { curva: "fluida" }), mira(D, TABERNA_M.fogon, H, 1.3, { curva: "fluida" })]}
       personajes={[
         tiza([{ t: 0, accion: "caerse_y_levantarse", rotY: 0, expr: "dormido" }, { t: sc(D, 0.2), accion: "idle", rotY: -30, expr: "sorprendido" }, { t: sc(D, 0.5), accion: "caminar", rotY: 90, expr: "triste" }], C - 400),
@@ -419,7 +420,7 @@ const B11b: React.FC<B> = ({ D, L }) => {
   const f = useF();
   const cx = interpolate(f, [0, D], [1800, 5200]);
   return (
-    <EscenaB Set={CalleMedieval} pal={PAL} setProps={{ variante: "peste" }} momento="amanecer"
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} setProps={{ variante: "peste" }} momento="amanecer"
       claves={[mira(0, 2200, PISO - 330, 0.9), mira(D, 4600, PISO - 380, 0.8, { curva: "inout" })]}
       personajes={[tiza([{ t: 0, accion: "idle", rotY: 40, expr: "triste" }, { t: sc(D, 0.5), accion: "cruzarse_de_brazos", rotY: 60, expr: "triste" }], 3300, { prof: 1 })]}
       sobre={<><Carro x={cx} f={f} tapado ruedaGira={f * 3} /><Simbolo tipo="calavera" x={cx} y={PISO - 330} desde={fr(D, 0.1)} hasta={fr(D, 0.6)} /></>}
@@ -444,7 +445,7 @@ const B12: React.FC<B> = ({ D, L }) => {
   }));
   const s = f / 30;
   return (
-    <EscenaB Set={CalleMedieval} pal={PAL} setProps={{ variante: "peste" }}
+    <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} setProps={{ variante: "peste" }}
       claves={[mira(0, X - 300, H - 40, 1.0), mira(fr(D, 0.3), X - 80, PISO - 270, 1.9, { curva: "fluida" }), mira(fr(D, 0.5), X - 500, H - 60, 0.9, { curva: "fluida" }), mira(fr(D, 0.66), X, H, 1.2, { curva: "fluida" }), mira(D, tizaX(sc(D, 1)) - 200, H, 1.05, { curva: "fluida" })]}
       personajes={[tiza([{ t: 0, accion: "idle", rotY: -40, expr: "neutral" }, { t: sc(D, 0.3), accion: "asustarse", rotY: -60, expr: "asustado" }, { t: sc(D, 0.5), accion: "encogerse_de_hombros", rotY: -50, expr: "nervioso" }, { t: corre, accion: "correr", rotY: 90, expr: "espantado" }], X), ...turba]}
       sobre={<>
@@ -470,7 +471,7 @@ const B13: React.FC<B> = ({ D, L }) => {
   const cartX = (s: number) => Cx + Math.max(0, s - sc(D, 0.72)) * 140;
   const s = f / 30;
   return (
-    <EscenaB Set={Muralla} pal={PAL} setProps={{ hora: 0.35 }}
+    <EscenaB Set={MurallaPintada} pal={PAL} setProps={{ hora: 0.35 }}
       claves={[mira(0, P + 100, H - 60, 0.95), mira(fr(D, 0.22), Cx - 200, H, 1.25, { curva: "fluida" }), mira(fr(D, 0.45), Cx - 100, PISO - 220, 1.9, { curva: "fluida" }), mira(fr(D, 0.65), Cx, PISO - 200, 1.6, { curva: "fluida" }), mira(D, cartX(sc(D, 1)) + 400, PISO - 360, 0.85, { curva: "fluida" })]}
       personajes={[
         tiza([{ t: 0, accion: "correr", rotY: 90, expr: "espantado" }, { t: salto, accion: "saltar", rotY: 90, expr: "sorprendido" }, { t: salto + 0.8, accion: "sentarse", rotY: 0, expr: "asustado" }, { t: sc(D, 0.62), accion: "sentarse", rotY: 0, expr: "feliz" }], P - 600),
@@ -498,7 +499,7 @@ const B14: React.FC<B> = ({ D, L }) => {
   const Cx = MURALLA_M.carro + 1600;
   const estornudo = fr(D, 0.58);
   return (
-    <EscenaB Set={Muralla} pal={PAL} setProps={{ hora: 1 }}
+    <EscenaB Set={MurallaPintada} pal={PAL} setProps={{ hora: 1 }}
       claves={[mira(0, Cx + 200, PISO - 420, 0.8), mira(fr(D, 0.35), Cx, PISO - 260, 1.4, { curva: "fluida" }), mira(fr(D, 0.56), Cx + 250, PISO - 260, 1.6, { curva: "fluida" }), mira(fr(D, 0.7), Cx + 60, PISO - 290, 2.4, { curva: "fluida" }), mira(D, Cx + 600, PISO - 600, 0.7, { curva: "fluida" })]}
       personajes={[
         tiza([{ t: 0, accion: "sentarse", rotY: 0, expr: "feliz" }, { t: sc(D, 0.4), accion: "sentarse", rotY: 0, expr: "feliz" }, { t: sc(D, 0.6), accion: "sentarse", rotY: 40, expr: "sorprendido" }, { t: sc(D, 0.7), accion: "sentarse", rotY: 30, expr: "espantado" }], Cx - 20, { alto: 170, prof: 0.6 }),
