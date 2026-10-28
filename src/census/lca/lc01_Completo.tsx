@@ -21,7 +21,7 @@ const CORTES: [number, React.FC, Trans?][] = [
   [173.93, B.P30Lobby], [178.85, B.P31Pizarra], [183.97, B.P32Baja], [186.77, B.P33Dos], [191.73, B.P34Super, LUZ(12)], [201.37, B.P35Gondola],
   [215.13, B.P36Calorias], [221.69, B.P37Ciudad], [229.01, B.P38Fresco], [240.61, B.P39Regla1, { tipo: "cortina", color: "#1d1624" }], [246.37, B.P40Agua],
   [258.49, B.P41Lago], [265.17, B.P42Mata], [275.91, B.P43Chicas], [282.21, B.P44Dentista], [289.61, B.P45Regla2, { tipo: "cortina", color: "#1d1624" }],
-  [299.43, B.P46Casa, LUZ(14)], [310.5, B.P47Nafta], [326.52, B.P48Lista], [339.96, B.P49Nieve, FUN(16)], [347.48, B.P50Menos30], [360.54, B.P51Helada],
+  [299.43, B.P46Casa, LUZ(14)], [310.5, B.P47Nafta], [326.52, B.P48Lista], [339.96, B.P49Nieve], [347.48, B.P50Menos30], [360.54, B.P51Helada],
   [365.98, B.P52Cuentas], [383.32, B.P53Puente, FUN(16)], [392.68, B.P54Apagon], [406.26, B.P55Vela], [410.22, B.P56Linea], [421.8, B.P57Cta, FUN(16)],
 ];
 export const LC01_FRAMES = 13020;
@@ -42,7 +42,7 @@ const HudLc01: React.FC = () => (
     {/* la historia: POPULATION 1 (cuaderno) → 2 (June) */}
     <Poblacion claves={[{ f: 0, v: 1 }, { f: S(189.2), v: 2, d: 10 }]} desde={S(95.0)} />
     <Segundo claves={1} prefijo="DAY " icono="dia" desde={S(58.4)} hasta={S(95.0)} y={48} />
-    <Segundo claves={[{ f: 0, v: 1 }, { f: S(132.3), v: 3, d: 10 }, { f: S(300.5), v: 10, d: 8 }, { f: S(302), v: 30, d: 120 }, { f: S(341.2), v: 33, d: 10 }, { f: S(383.4), v: 41, d: 16 }]} prefijo="DAY " icono="dia" desde={S(95.0)} y={186} />
+    <Segundo claves={[{ f: 0, v: 1 }, { f: S(129.83), v: 3, d: 10 }, { f: S(300.5), v: 10, d: 8 }, { f: S(302), v: 30, d: 120 }, { f: S(340.5), v: 33, d: 10 }, { f: S(383.4), v: 41, d: 16 }]} prefijo="DAY " icono="dia" desde={S(95.0)} y={186} />
     <MarcaCorto />
   </>
 );
