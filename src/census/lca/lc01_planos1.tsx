@@ -24,9 +24,12 @@ import {
   RelojPared, Sabana, SemPeaton, SurtidorGrande, Tarjeta, TheoCama, Tibio, Tienda, TIENDA, tras, Volador,
 } from "./lc01_planos1_comp";
 import { VentanaSM } from "./v3b_v3";
-import { CalleAutos, Casillas, Chip, CuadernoHoyV3, InteriorAutoV3, luzEn, ManoInterruptorV3, ManoV3, MapaRioV3, Mezcla, Pilar, SemaforoFundido, Tablilla } from "./v3b_v3";
+import { CalleAutos, Casillas, Chip, InteriorAutoV3, luzEn, ManoV3, MapaRioV3, Mezcla, Pilar, SemaforoFundido, Tablilla } from "./v3b_v3";
 import { Farola } from "../mundo/comun";
-import { CascoLiniero, Costura, CuadernoAbre, Gorro, HorarioParada, Marquesina, OndasRadio, Radiador, Rafaga, RelojMesa, SemaforoSuave, VentanaEmpuje, VisorCafetera } from "./v3a_v3";
+import { AutoExtraV4, CuadernoHoyV4, Eco, ManoInterruptorV4, PilarR, PizarraTexto } from "./v4b_v4";
+import { AlientoV4, CuadernoAbreV4, GorroPerchero } from "./v4a_v4";
+import { SolDia } from "./v3a_v3";
+import { CascoLiniero, Costura, Gorro, HorarioParada, Marquesina, OndasRadio, Radiador, Rafaga, RelojMesa, SemaforoSuave, VentanaEmpuje, VisorCafetera } from "./v3a_v3";
 
 const P = PANO_PISO;
 // «vos»: persona gris genérica del gancho
@@ -77,14 +80,14 @@ export const P01Mini: React.FC = () => {
   const f = useF();
   const T = 1290, J = 1440;
   return (
-    <Escena Set={Panorama} pal={PAL} claves={[mira(0, 1640, 620, 1.2), mira(70, 1440, 655, 1.75, { curva: "out" })]} seed={1}
+    <Escena Set={Panorama} pal={PAL} claves={[mira(0, 1640, 620, 1.2), mira(32, 1380, 668, 1.95, { curva: "inout" })]} seed={1}
       setProps={{ hora: "ocaso", luces: 0, ventana: 1, nieve: 1, vapor: 0.6, puenteLuz: 0.3 }}
       medio={<>
         <Pj look={THEO_MOCHI} ruta={[{ f: 0, x: T, y: P - 6 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "determinado" }, { f: 22, v: "duda" }]} miradas={[{ f: 0, v: { x: 1, y: -0.15 } }, { f: 22, v: { x: 1, y: 0.1 } }]} luz={BORDE_CALIDO}
           ajuste={manoA({ look: THEO_MOCHI, x: T, y: P - 6, lado: "D", obj: () => ({ x: T + 70, y: P - 128 }), peso: () => 1 })} />
         <Pj look={JUNE_MOCHI} ruta={[{ f: 0, x: J, y: P - 6 }]} dir={[{ f: 0, v: 1 }, { f: 12, v: -1 }]} caras={[{ f: 0, v: "miedo" }, { f: 14, v: "triste" }]} miradas={[{ f: 0, v: { x: 1, y: -0.1 } }, { f: 10, v: { x: 1, y: 0 } }]} luz={BORDE_CALIDO} seed={2}
           poses={[{ f: 0, v: "parado" }, { f: 12, v: "brazosCruzados" }]} />
-        <Aliento f={f} x={T + 14} y={P - 250} desde={4} />
+        <AlientoV4 f={f} x={T + 30} y={P - 262} desde={4} />
       </>} />
   );
 };
@@ -96,25 +99,27 @@ export const P02Despierta: React.FC = () => {
   const f = useF();
   const X = 2300, Y = COCINA_Y, E = 1.3;
   const B = 40;
+  // v4: el sorbo cae en el cuadro del medio (f 58 → 112): la taza llega a la boca, se inclina, y la cara feliz va DESPUÉS
+  const sorbo = (g: number) => (g < B ? 0 : rampa(g, 56, 70) * (1 - rampa(g, 100, 114)));
   const mano = (g: number) => {
-    const a = { x: X + 78, y: 724 }, m = { x: X + 40, y: 632 };
-    const u = g < B ? 0 : rampa(g, 84, 100) * (1 - rampa(g, 116, 130));
+    const a = { x: X + 78, y: 724 }, m = { x: X + 22, y: 634 };
+    const u = sorbo(g);
     return { x: a.x + (m.x - a.x) * u, y: a.y + (m.y - a.y) * u };
   };
-  const taza = (g: number) => { const h = mano(g); return <g transform={`translate(${h.x + 30},${h.y + 22}) scale(${-E},${E})`}><Taza vapor={1} f={g} /></g>; };
+  const taza = (g: number) => { const h = mano(g); return <g transform={`translate(${h.x + 30},${h.y + 22}) rotate(${-34 * sorbo(g)}) scale(${-E},${E})`}><Taza vapor={1} f={g} /></g>; };
   const vos = (tomaA: boolean) => (
     <Pj look={VOS} ruta={[{ f: 0, x: X, y: Y }]} escala={E} dir={[{ f: 0, v: 1 }]} seed={4} luz={BORDE_CALIDO}
-      poses={tomaA ? [{ f: 0, v: "parado" }] : [{ f: 0, v: "parado" }, { f: 118, v: { hI: 70, cI: 10, tronco: 4 }, d: 10 }, { f: 146, v: "parado" }]}
-      caras={tomaA ? [{ f: 0, v: "cansado" }] : [{ f: 0, v: "cansado" }, { f: 56, v: "sorpresa" }, { f: 70, v: "cansado" }, { f: 102, v: "feliz" }, { f: 124, v: "picaro" }]}
+      poses={tomaA ? [{ f: 0, v: "parado" }] : [{ f: 0, v: "parado" }, { f: 46, v: { tronco: 6, cabeza: 6 }, d: 8 }, { f: 62, v: { tronco: -6, cabeza: -14 }, d: 10 }, { f: 104, v: { tronco: 0, cabeza: 0 }, d: 10 }, { f: 118, v: { hI: 70, cI: 10, tronco: 4 }, d: 10 }, { f: 146, v: "parado" }]}
+      caras={tomaA ? [{ f: 0, v: "cansado" }] : [{ f: 0, v: "cansado" }, { f: 46, v: "duda" }, { f: 64, v: "cansado" }, { f: 104, v: "feliz" }, { f: 124, v: "picaro" }]}
       habla={tomaA ? [[6, 30]] : [[132, 150]]}
-      miradas={tomaA ? [{ f: 0, v: { x: 0.6, y: 0.8 } }, { f: 16, v: { x: 0.2, y: -0.4 } }] : [{ f: 0, v: { x: 0.3, y: 0.2 } }, { f: 52, v: { x: 1, y: -0.3 } }, { f: 84, v: { x: 0.6, y: 0.3 } }, { f: 118, v: { x: 1, y: -0.1 } }, { f: 140, v: { x: 0, y: 0 } }]}
-      giros={tomaA ? [{ f: 0, v: 0.2 }] : [{ f: 0, v: 0 }, { f: 52, v: 0.7 }, { f: 84, v: 0.2 }, { f: 118, v: 0.7 }, { f: 140, v: -0.2 }]}
+      miradas={tomaA ? [{ f: 0, v: { x: 0.6, y: 0.8 } }, { f: 16, v: { x: 0.2, y: -0.4 } }] : [{ f: 0, v: { x: 0.3, y: 0.2 } }, { f: 46, v: { x: 1, y: -0.3 } }, { f: 62, v: { x: 0.6, y: 0.5 } }, { f: 104, v: { x: 0.2, y: 0 } }, { f: 118, v: { x: 1, y: -0.1 } }, { f: 140, v: { x: 0, y: 0 } }]}
+      giros={tomaA ? [{ f: 0, v: 0.2 }] : [{ f: 0, v: 0 }, { f: 46, v: 0.7 }, { f: 62, v: 0.3 }, { f: 104, v: 0 }, { f: 118, v: 0.7 }, { f: 140, v: -0.2 }]}
       ajuste={manoA({ look: VOS, x: X, y: Y, esc: E, lado: "D", obj: mano, peso: () => 1,
         otra: tomaA ? undefined : manoA({ look: VOS, x: X, y: Y, esc: E, lado: "I", obj: () => ({ x: 2440, y: 560 }), peso: pesoIK(118, 140, 8) }) })} />
   );
   const set = (tomaA: boolean) => (
     <Escena Set={Cocina} pal={PAL} seed={2}
-      claves={tomaA ? [mira(-6, X + 104, 724, 3.3), mira(34, X + 44, 640, 2.3, { curva: "inout" }), mira(60, X + 40, 632, 2.25, { curva: "inout" })]
+      claves={tomaA ? [mira(-6, X + 104, 724, 3.3), mira(34, X + 60, 562, 2.0, { curva: "inout" }), mira(60, X + 60, 558, 1.98, { curva: "inout" })]
         : [mira(B, 2430, 610, 1.42), mira(165, 2470, 590, 1.48, { curva: "inout" })]}
       medio={<>
         <g transform={`translate(2560,584) scale(1.3)`}><Cafetera f={f} /></g>
@@ -133,7 +138,7 @@ const COCINA_Y = 940;
 export const P03Radio: React.FC = () => {
   const f = useF();
   const Y = COCINA_Y, E = 1.3, RX = 2738, AX = 3030;
-  const x0 = 2640, x1 = 2880, c0 = 26, c1 = 60;
+  const x0 = 2640, x1 = 2800, c0 = 22, c1 = 56;
   const vx = (g: number) => lerp(g, c0, c1, x0, x1);
   const on = rampa(f, 14, 24);
   const calor = rampa(f, 30, 44);
@@ -173,9 +178,9 @@ export const P04Calle: React.FC = () => {
       </>} />
   );
   const sema = (
-    <Escena Set={Superior} pal={PAL} claves={[mira(C, 2230, 615, 1.25), mira(178, 2290, 605, 1.3, { curva: "inout" })]} seed={41} setProps={{ hora: "dia", luces: 0, nieve: 0 }}
+    <Escena Set={Superior} pal={PAL} claves={[mira(C, 2150, 470, 1.08), mira(178, 2175, 462, 1.11, { curva: "inout" })]} seed={41} setProps={{ hora: "dia", luces: 0, nieve: 0 }}
       medio={<Volador f={f} f0={C} f1={178} x0={1900} y0={880} x1={2700} y1={860} s={1.4} />}
-      frente={<SemaforoSuave x={2221} y={629} f={f} s={0.85} claves={[{ f: 0, luz: 2 }, { f: k(13.6), luz: 1 }, { f: k(14.2), luz: 0 }]} />} />
+      frente={<SemaforoSuave x={2320} y={629} f={f} s={0.85} claves={[{ f: 0, luz: 2 }, { f: k(13.6), luz: 1 }, { f: k(14.2), luz: 0 }]} />} />
   );
   const VX = 470, VY = 1300, VE = 2.7;
   return (
@@ -184,10 +189,10 @@ export const P04Calle: React.FC = () => {
         <Cortes en={[[-100, calle], [C, sema]]} />
         {f < C && <VentanaEmpuje e0={k(10.3)} e1={k(11.2)}>
           <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}>
-            <Pj look={VOS} ruta={[{ f: 0, x: VX, y: VY }]} escala={VE} dir={[{ f: 0, v: 1 }]} seed={4} luz={BORDE_FRIO}
+            <Pj look={VOS} ruta={[{ f: 0, x: VX, y: VY }]} escala={VE} dir={[{ f: 0, v: 1 }]} seed={4} luz={{ lado: -1, color: "#9bb7ff", fuerza: 0.22 }}
               poses={[{ f: 0, v: "brazosCruzados" }, { f: 12, v: { tronco: 8, cabeza: 4 }, d: 10 }]}
               caras={[{ f: 0, v: "cansado" }, { f: 14, v: "duda" }, { f: 30, v: "sorpresa" }]}
-              miradas={[{ f: 0, v: { x: 1, y: 0.1 } }, { f: 14, v: { x: 1, y: -0.2 } }, { f: 30, v: { x: 1, y: 0.3 } }]} giros={[{ f: 0, v: 0.5 }, { f: 14, v: 1 }]}
+              miradas={[{ f: 0, v: { x: 1, y: 0.1 } }, { f: 14, v: { x: 1, y: -0.2 } }, { f: 30, v: { x: 1, y: 0.3 } }]} giros={[{ f: 0, v: 1 }]}
               ajuste={manoA({ look: VOS, x: VX, y: VY, esc: VE, lado: "D", obj: (g) => ({ x: 660, y: 560 - 12 * rampa(g, 24, 40) }), peso: pesoIK(12, 1e9, 12) })} />
           </svg>
         </VentanaEmpuje>}
@@ -220,7 +225,7 @@ export const P06Autos: React.FC = () => {
   const f = useF();
   const gx = AUTO_GIRO.x + AUTO_GIRO.dir * -126 * 1.15, gy = SUP_PISO + 190 - 59;
   return (
-    <Escena Set={Superior} pal={PAL} claves={[mira(0, 2330, SUP_PISO - 60, 1.9), mira(35, 2380, SUP_PISO - 60, 1.92, { curva: "inout" })]} seed={6} setProps={{ hora: "dia", luces: 0, nieve: 0 }}
+    <Escena Set={Superior} pal={PAL} claves={[mira(0, 2330, SUP_PISO + 40, 1.9), mira(35, 2380, SUP_PISO + 40, 1.92, { curva: "inout" })]} seed={6} setProps={{ hora: "dia", luces: 0, nieve: 0 }}
       frente={<Giro x={gx} y={gy} f={f} />} />
   );
 };
@@ -232,6 +237,7 @@ export const P07Ciudad: React.FC = () => {
     <Empuje k={[{ f: 0, z: 1.7, x: 1180, y: 520 }, { f: 37, z: 1.06, x: 980, y: 540 }, { f: 60, z: 0.98, x: 950, y: 540 }]}>
       <Escena Set={Panorama} pal={PAL} claves={[mira(0, 2050, 560, 0.8), mira(60, 2080, 560, 0.8)]} seed={7} setProps={{ hora: "dia", luces: 0, nieve: 0, vapor: 0 }}
         medio={<Bandada f={f} x0={1500} y0={280} vx={6} n={9} s={1.2} />} />
+      <SolDia x={775} y={258} r={50} />
     </Empuje>
   );
 };
@@ -258,16 +264,16 @@ export const P09Pregunta: React.FC = () => {
         <Escena Set={Panorama} pal={PAL} claves={[mira(0, 1100, 560, 0.85), mira(188, 1110, 560, 0.85)]} seed={9} setProps={{ hora: "noche", luces: 1, nieve: 0, vapor: 0.5 }}
           medio={<>
             <Pj look={THEO_MOCHI} ruta={[{ f: 0, x: T, y: P - 6 }]} dir={[{ f: 0, v: 1 }]} luz={BORDE_FRIO}
-              poses={[{ f: 0, v: "parado" }, { f: k(24.72), v: "pensar" }, { f: k(26.0), v: "brazosCruzados" }, { f: k(27.9), v: "encogerse" }]}
-              caras={[{ f: 0, v: "determinado" }, { f: k(24.9), v: "triste" }, { f: k(27.6), v: "duda" }]}
+              poses={[{ f: 0, v: "parado" }, { f: k(23.9), v: "brazosCruzados", d: 8 }, { f: k(26.0), v: "pensar", d: 8 }, { f: k(27.9), v: "encogerse", d: 10 }]}
+              caras={[{ f: 0, v: "cansado" }, { f: k(24.9), v: "triste" }, { f: k(26.0), v: "duda" }, { f: k(27.6), v: "miedo" }]}
               miradas={[{ f: 0, v: { x: 1, y: -0.1 } }, { f: k(24.72), v: { x: 1, y: 0.4 } }, { f: k(26.0), v: { x: 1, y: 0 } }, { f: k(27.4), v: { x: 1, y: -0.5 } }]}
               giros={[{ f: 0, v: 0 }, { f: k(26.0), v: 0.5 }, { f: k(27.4), v: 0 }]} habla={[[k(24.8), k(25.6)]]} />
             <Pj look={JUNE_MOCHI} ruta={[{ f: 0, x: J, y: P - 6 }]} dir={[{ f: 0, v: 1 }]} luz={BORDE_FRIO} seed={2}
-              caras={[{ f: 0, v: "neutral" }, { f: k(23.4), v: "miedo" }, { f: k(25.8), v: "duda" }, { f: k(27.6), v: "triste" }]}
+              caras={[{ f: 0, v: "duda" }, { f: k(24.3), v: "miedo" }, { f: k(25.8), v: "duda" }, { f: k(27.6), v: "triste" }]}
               miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: k(23.4), v: { x: -1, y: 0 } }, { f: k(27.4), v: { x: 1, y: -0.4 } }]} giros={[{ f: 0, v: 0 }, { f: k(23.4), v: -0.6 }, { f: k(27.4), v: 0 }]}
               poses={[{ f: 0, v: "parado" }, { f: k(24.0), v: "manosCintura" }, { f: k(26.4), v: "brazosCruzados" }, { f: k(27.6), v: "encogerse" }]} habla={[[k(26.5), k(27.2)]]} />
-            <Aliento f={f} x={T + 14} y={P - 256} desde={k(25.0)} />
-            <Aliento f={f} x={J - 14} y={P - 256} desde={k(26.4)} dir={-1} />
+            <AlientoV4 f={f} x={T + 30} y={P - 262} desde={k(25.0)} />
+            <AlientoV4 f={f} x={J - 30} y={P - 262} desde={k(26.4)} dir={-1} />
           </>} />
       </Empuje>
       <RelojArena x={1400} y={170} desde={k(27.9)} s={0.85} />
@@ -298,55 +304,60 @@ export const P10Real: React.FC = () => {
     <Escena Set={Panorama} pal={PAL} claves={[mira(B, 1050, 600, 1.6), mira(179, 1066, 598, 1.64, { curva: "inout" })]} seed={101} setProps={{ hora: "dia", luces: 0, nieve: 0, vapor: 0 }}
       medio={<>
         <Pj look={JUNE_MOCHI} ruta={[{ f: 0, x: JX, y: P - 6 }]} dir={[{ f: 0, v: 1 }]} seed={2}
-          poses={[{ f: 0, v: "parado" }, { f: k(33.5), v: "manosCintura" }]} caras={[{ f: 0, v: "determinado" }, { f: k(31.4), v: "feliz" }, { f: k(32.2), v: "miedo" }, { f: k(33.6), v: "duda" }]}
-          miradas={[{ f: 0, v: { x: 1, y: 0.5 } }, { f: k(31.9), v: { x: 1, y: 0 } }, { f: k(33.6), v: { x: 1, y: 0 } }]} habla={[[k(33.8), k(34.8)]]}
+          poses={[{ f: 0, v: "parado" }, { f: k(33.5), v: { hD: 120, cD: 10, tronco: -3, cabeza: -8 }, d: 10 }]} caras={[{ f: 0, v: "determinado" }, { f: k(31.4), v: "feliz" }, { f: k(32.2), v: "miedo" }, { f: k(33.6), v: "determinado" }]}
+          miradas={[{ f: 0, v: { x: 1, y: 0.5 } }, { f: k(31.9), v: { x: 1, y: 0 } }, { f: k(33.6), v: { x: 1, y: -0.7 } }]} habla={[[k(33.8), k(34.8)]]}
           ajuste={manoA({ look: JUNE_MOCHI, x: JX, y: P - 6, lado: "D", obj: lata, peso: pesoIK(k(30.9), k(33.4), 8) })} />
         {f < k(33.4) && <g transform={`translate(${lata(f).x + 6},${lata(f).y + 4})`} opacity={rampa(f, k(30.95), k(31.15))}>
           <rect x={-18} y={-26} width={36} height={52} rx={5} fill="#c0352c" /><rect x={-18} y={-10} width={36} height={18} fill="#efe3c8" /><text x={0} y={4} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={11} fill="#c0352c">BEANS</text>
         </g>}
         <Pj look={THEO_MOCHI} ruta={[{ f: 0, x: TX, y: P - 6 }]} dir={[{ f: 0, v: -1 }, { f: k(32.0), v: 1 }]}
-          poses={[{ f: 0, v: "parado" }, { f: k(31.9), v: "encogerse" }, { f: k(33.5), v: "pensar" }]} caras={[{ f: 0, v: "feliz" }, { f: k(31.9), v: "cansado" }, { f: k(33.5), v: "duda" }]}
+          poses={[{ f: 0, v: "parado" }, { f: k(31.9), v: "encogerse", d: 8 }, { f: k(33.5), v: "brazosCruzados", d: 10 }]} caras={[{ f: 0, v: "feliz" }, { f: k(31.9), v: "cansado" }, { f: k(33.5), v: "duda" }]}
           miradas={[{ f: 0, v: { x: 1, y: 0.4 } }, { f: k(32.0), v: { x: 1, y: -0.2 } }, { f: k(33.5), v: { x: 1, y: -0.6 } }]} />
-        <Rafaga f={f} f0={k(31.85)} x0={500} y0={P - 540} w={1000} n={5} />
-        <Aliento f={f} x={TX + 14} y={P - 256} desde={k(32.1)} />
+        <Rafaga f={f} f0={k(31.85)} x0={380} y0={P - 400} w={640} n={4} />
+        <AlientoV4 f={f} x={TX + 30} y={P - 262} desde={k(32.1)} />
       </>} />
   );
   return (
     <AbsoluteFill>
       <Cortes en={[[-100, cine], [B, mirador]]} />
-      <Tarjeta x={1010} y={92} w={270} desde={k(31.0)} icono="lata" texto="REAL FOOD" />
-      <Tarjeta x={1310} y={92} w={270} desde={k(31.9)} icono="termo" texto="REAL WINTERS" color="#8fd3ff" />
-      <Tarjeta x={1610} y={92} w={270} desde={k(33.5)} icono="cuenta" texto="REAL MATH" />
+      <Tarjeta x={1000} y={250} w={270} desde={k(31.0)} icono="lata" texto="REAL FOOD" />
+      <Tarjeta x={1310} y={250} w={270} desde={k(31.9)} icono="termo" texto="REAL WINTERS" color="#8fd3ff" />
+      <Tarjeta x={1620} y={250} w={270} desde={k(33.5)} icono="cuenta" texto="REAL MATH" />
     </AbsoluteFill>
   );
 };
 
 // ---------- 11 · «let's count it»: una mano abre la tapa (corte limpio al 12) ----------
-export const P11Cuenta: React.FC = () => <Costura despues={{ el: <P12Hora />, d: -24, desde: 24 }}><CuadernoAbre abre={4} zoom={[0, 1.1, 1.2]} /></Costura>;
+// v4: la mano del kit (manga + dedos, 0,72) entra desde abajo a la derecha, pellizca el borde y la tapa se abre
+// entre los cuadros 5 y 23 con empuje (1,0 → 1,14): ini (tapa cerrada + mano llegando) ≠ mid (tapa de canto) ≠ fin (abierto).
+export const P11Cuenta: React.FC = () => <Costura despues={{ el: <P12Hora />, d: -24, desde: 24 }}><CuadernoAbreV4 abre={3} zoom={[0, 1.0, 2.4]} /></Costura>;
 
 // ---------- 12 · 3:12 a.m., 3 de octubre: el que paseaba al perro bosteza y desaparece sin ruido; el perro busca; Theo duerme ----------
 export const P12Hora: React.FC = () => {
   const f = useF();
   const k = kDe(36.18);
   const ya = k(39.9);
-  const vx = (g: number) => lerp(g, 0, ya, 1500, 1700);
+  const para = k(37.5);
+  const vx = (g: number) => lerp(g, 0, para, 1440, 1640);
   const ox = (g: number) => (g < ya ? vx(g) + 120 : vx(ya) + 120 + 30 * rampa(g, ya, ya + 12));
   const calle = (
-    <Escena Set={Barrio} pal={PAL} claves={[mira(0, 1600, 640, 1.6), mira(ya - 20, 1640, 640, 1.64, { curva: "inout" })]} seed={12} setProps={{ hora: "noche", luces: 0.15, nieve: 0 }}
+    <Escena Set={Barrio} pal={PAL} claves={[mira(0, 1560, 640, 1.6), mira(para + 4, 1680, 646, 1.7, { curva: "inout" })]} seed={12} setProps={{ hora: "noche", luces: 0.15, nieve: 0 }}
       medio={<>
         {f < ya ? <path d={`M${vx(f) + 22},${BARRIO_PISO - 112} Q${vx(f) + 80},${BARRIO_PISO - 60} ${ox(f) + 36},${BARRIO_PISO - 56}`} stroke="#c0352c" strokeWidth={4} fill="none" />
           : <path d={`M${vx(ya) + 10},${BARRIO_PISO - 2} Q${vx(ya) + 60},${BARRIO_PISO + 4} ${ox(f) + 36},${BARRIO_PISO - 56 + 40 * rampa(f, ya, ya + 8)}`} stroke="#c0352c" strokeWidth={4} fill="none" />}
-        <Ore x={ox(f)} y={BARRIO_PISO} dir={f < ya + 16 ? 1 : -1} f={f} cola={f < ya ? 1 : 0.2} cabeza={f > ya + 20 ? -0.4 : f > ya + 6 ? 0.3 : 0} s={0.7} />
-        <Pj look={PASEA} ruta={[{ f: 0, x: 1500, y: BARRIO_PISO }, { f: ya, x: 1700 }]} seed={7} opacidad={(g) => (g < ya ? 1 : 0)}
-          poses={[{ f: 0, v: "parado" }, { f: k(37.7), v: "manosCara" }, { f: k(38.6), v: "parado" }, { f: k(39.2), v: { tronco: 6, cabeza: 10 }, d: 10 }]}
-          caras={[{ f: 0, v: "cansado" }, { f: k(37.7), v: "sorpresa" }, { f: k(38.6), v: "cansado" }]} habla={[[k(37.7), k(38.5)]]}
-          miradas={[{ f: 0, v: { x: 1, y: 0.4 } }, { f: k(38.6), v: { x: 1, y: 0 } }, { f: k(39.2), v: { x: 1, y: 0.6 } }]}
-          ajuste={manoA({ look: PASEA, x: vx, y: BARRIO_PISO, lado: "D", obj: (g) => ({ x: vx(g) + 26, y: BARRIO_PISO - 112 }), peso: () => 1 })} />
+        <Ore x={ox(f)} y={BARRIO_PISO} dir={f < ya + 16 ? 1 : -1} f={f} cola={f < ya ? 1 : 0.2} cabeza={f > ya + 20 ? -0.4 : f > ya + 6 ? 0.3 : f > k(38.7) && f < k(39.4) ? 0.35 : 0} s={0.7} />
+        <Pj look={PASEA} ruta={[{ f: 0, x: 1440, y: BARRIO_PISO }, { f: para, x: 1640 }]} seed={7} opacidad={(g) => 1 - rampa(g, ya - 2, ya + 6)}
+          poses={[{ f: 0, v: "parado" }, { f: k(37.65), v: { hD: 62, cD: 128, tronco: -6, cabeza: -16 }, d: 8 }, { f: k(38.65), v: { hD: -28, cD: 30, cabeza: -6, tronco: -5 }, d: 10 }, { f: k(39.3), v: { tronco: 8, cabeza: 14, hD: 4, cD: 10 }, d: 10 }]}
+          caras={[{ f: 0, v: "neutral" }, { f: k(37.0), v: "cansado" }, { f: k(37.7), v: "sorpresa" }, { f: k(38.65), v: "cansado" }, { f: k(39.3), v: "feliz" }]} habla={[[k(37.7), k(38.55)]]}
+          miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: k(37.0), v: { x: 1, y: 0.4 } }, { f: k(37.7), v: { x: 0.3, y: -0.8 } }, { f: k(38.65), v: { x: 1, y: 0.2 } }, { f: k(39.3), v: { x: 1, y: 0.8 } }]}
+          ajuste={manoA({ look: PASEA, x: vx, y: BARRIO_PISO, lado: "I", obj: (g) => ({ x: vx(g) + 26, y: BARRIO_PISO - 112 }), peso: () => 1 })} />
       </>} />
   );
   const cama = (
     <Escena Set={DuplexCorte} pal={PAL} claves={[mira(k(40.6), 720, 618, 1.5), mira(183, 735, 618, 1.52, { curva: "inout" })]} seed={121} setProps={{ alba: 0, celular: 0 }}
       medio={<>
+        <CascoLiniero x={590} y={DUP.piso - 430} s={0.9} />
+        <GorroPerchero x={1044} y={DUP.piso - 382} colgado />
         <TheoCama x={DUP.cama} piso={DUP.piso} f={f} vuelta={0} />
         <RelojMesa x={965} y={DUP.piso - 179} txt="3:12" f={f} />
       </>} />
@@ -361,32 +372,56 @@ export const P12Hora: React.FC = () => {
 };
 
 // ---------- 13 · Theo Lindgren, 34, liniero (casco en la pared): se da vuelta, se sienta, gorro, oreja a la pared: la otra mitad, en silencio ----------
+// v4: 3 tomas con CORTE seco y Theo grande (≥40 % del alto): (1) cerca de la cama: el despertador pasa a 5:59, Theo se da
+// vuelta enseguida (ini ≠ mid); (2) plano medio: sentado en el borde, se frota la cara, mira el gorro colgado, se levanta,
+// lo descuelga con IK y se lo pone en cuadro, camina a la medianera y apoya palma y oreja; (3) general a 1,12 con las dos
+// mitades: él contra la pared y del otro lado la cama deshecha y el celular que suena solo. Rótulos en zonas lisas.
 export const P13Theo: React.FC = () => {
   const f = useF();
   const k = kDe(42.28);
-  const sienta = k(46.75), para = k(47.35), gorro = k(47.75), camina = k(48.0), llega = k(48.6);
-  const SX = DUP.cama - 100, WX = DUP.pared - 120;
-  const x = (g: number) => (g < camina ? SX : lerp(g, camina, llega, SX, WX));
-  const gy = (g: number) => DUP.piso - 200 - 104 * rampa(g, gorro - 10, gorro);
+  const C1 = k(44.2), C2 = k(49.0);
+  const E = 1.2, PI = DUP.piso;
+  const SX = 720, GX = 985, WX = 1088;
+  const para = k(45.3), c0 = k(45.35), c1 = k(46.5), toma = k(46.6), pone = k(47.2), w0 = k(47.5), w1 = k(48.15);
+  const x = (g: number) => (g < c0 ? SX : g < c1 ? lerp(g, c0, c1, SX, GX) : g < w0 ? GX : lerp(g, w0, w1, GX, WX));
+  const PEG = { x: 1044, y: PI - 382 };
+  const agarre = { x: PEG.x + 4, y: PEG.y + 62 };
+  const cabeza = (g: number) => ({ x: x(g) + 14 * E, y: PI - 300 * E });
+  const gorroEn = (g: number) => { const u = rampa(g, toma, pone); const c = cabeza(g); return { x: agarre.x + (c.x - agarre.x) * u, y: agarre.y + (c.y - agarre.y) * u }; };
+  const puesto = f >= pone;
+  const alba = lerp(f, 0, 250, 0.35, 0.9);
+  const reloj = <RelojMesa x={965} y={PI - 179} txt={f < k(42.9) ? "5:58" : "5:59"} f={f} tick={k(42.9)} />;
+  const casco = <CascoLiniero x={590} y={PI - 430} s={0.9} />;
+  const theo = (
+    <Pj look={puesto ? THEO : THEO_CASA} ruta={[{ f: 0, x: SX, y: PI }, { f: c0, x: SX }, { f: c1, x: GX }, { f: w0, x: GX }, { f: w1, x: WX }]} escala={E} dir={[{ f: 0, v: 1 }]} luz={BORDE_CALIDO}
+      asiento={[{ f: 0, v: 96 }, { f: para - 6, v: 96 }, { f: para + 4, v: undefined }]}
+      poses={[{ f: 0, v: "sentado" }, { f: k(44.45), v: { ...{ tronco: 6, pI: 88, rI: 88, pD: 92, rD: 92 }, hI: 40, cI: 140, hD: 45, cD: 140, cabeza: 8 }, d: 8 }, { f: k(45.0), v: "sentado", d: 8 },
+        { f: para, v: "parado", d: 10 }, { f: w1, v: { tronco: 10, cabeza: 16, hI: -10, cI: 30 }, d: 10 }, { f: k(49.9), v: { tronco: 6, cabeza: 8, hI: 35, cI: 120 }, d: 12 }]}
+      caras={[{ f: 0, v: "cansado" }, { f: k(45.0), v: "duda" }, { f: pone + 2, v: "determinado" }, { f: w1 + 4, v: "duda" }, { f: k(49.8), v: "miedo" }]}
+      miradas={[{ f: 0, v: { x: 1, y: 0.4 } }, { f: k(45.0), v: { x: 1, y: -0.7 } }, { f: para, v: { x: 1, y: -0.5 } }, { f: pone, v: { x: 1, y: 0 } }, { f: w1 + 4, v: { x: 1, y: 0.3 } }, { f: k(49.8), v: { x: -1, y: 0.2 } }]}
+      giros={[{ f: 0, v: 0.3 }, { f: k(45.0), v: 0 }, { f: pone, v: 0.4 }, { f: w1, v: 0.9 }, { f: k(49.8), v: 0.2 }]}
+      habla={[]}
+      ajuste={manoA({ look: THEO, x, y: PI, esc: E, lado: "D", peso: (g) => Math.max(pesoIK(toma - 8, pone, 8)(g), pesoIK(w1 - 4, 1e9, 8)(g)),
+        obj: (g) => (g < w0 ? gorroEn(g) : { x: DUP.pared - 20, y: PI - 262 }) })} />
+  );
+  const gorroMano = f >= toma && !puesto && <g transform={`translate(${gorroEn(f).x},${gorroEn(f).y})`}><Gorro s={1.1} /></g>;
+  const t1 = (
+    <Escena Set={DuplexCorte} pal={PAL} claves={[mira(-4, 640, 730, 1.75), mira(C1, 660, 728, 1.86, { curva: "inout" })]} seed={13} setProps={{ alba, celular: 1 }}
+      medio={<>{casco}<GorroPerchero x={PEG.x} y={PEG.y} colgado /><TheoCama x={DUP.cama} piso={PI} f={f} vuelta={rampa(f, k(42.85), k(43.4))} />{reloj}</>} />
+  );
+  const t2 = (
+    <Escena Set={DuplexCorte} pal={PAL} claves={[mira(C1, 870, 690, 1.55), mira(k(46.6), 900, 690, 1.58, { curva: "inout" }), mira(C2 - 1, 960, 690, 1.6, { curva: "inout" })]} seed={131} setProps={{ alba, celular: 1 }}
+      medio={<>{casco}<GorroPerchero x={PEG.x} y={PEG.y} colgado={f < toma} /><TheoCama x={DUP.cama} piso={PI} f={f} vuelta={1} vacia destapa={1} />{reloj}{theo}{gorroMano}</>} />
+  );
+  const t3 = (
+    <Escena Set={DuplexCorte} pal={PAL} claves={[mira(C2, 1345, 640, 1.12), mira(260, 1330, 640, 1.16, { curva: "inout" })]} seed={132} setProps={{ alba, celular: 1 }}
+      medio={<>{casco}<GorroPerchero x={PEG.x} y={PEG.y} colgado={false} /><TheoCama x={DUP.cama} piso={PI} f={f} vuelta={1} vacia destapa={1} />{reloj}{theo}</>} />
+  );
   return (
     <AbsoluteFill>
-      <Empuje k={[{ f: 0, z: 1.7, x: 520, y: 700 }, { f: k(47.9), z: 1.7, x: 600, y: 690 }, { f: k(48.9), z: 1.7, x: 640, y: 690 }, { f: k(50.1), z: 1, x: 960, y: 540 }, { f: 260, z: 1, x: 960, y: 540 }]}>
-        <Escena Set={DuplexCorte} pal={PAL} claves={[mira(0, 1220, 600, 0.85), mira(253, 1225, 600, 0.85)]} seed={13} setProps={{ alba: lerp(f, 0, 250, 0.3, 0.9), celular: 1 }}
-          medio={<>
-            <CascoLiniero x={780} y={DUP.piso - 420} s={0.9} />
-            <TheoCama x={DUP.cama} piso={DUP.piso} f={f} vuelta={rampa(f, k(45.9), k(46.6))} vacia={f >= sienta} destapa={f >= sienta ? 1 : 0} />
-            {f >= sienta && <Pj look={f < gorro + 2 ? THEO_CASA : THEO} ruta={[{ f: sienta, x: SX, y: DUP.piso }, { f: camina, x: SX }, { f: llega, x: WX }]} dir={[{ f: 0, v: 1 }]}
-              asiento={[{ f: 0, v: 104 }, { f: para, v: 104 }, { f: para + 10, v: undefined }]}
-              poses={[{ f: 0, v: "sentado" }, { f: para, v: "parado" }, { f: llega, v: { tronco: 10, cabeza: 16 }, d: 10 }]}
-              caras={[{ f: 0, v: "cansado" }, { f: gorro + 4, v: "determinado" }, { f: llega + 4, v: "duda" }, { f: k(49.8), v: "miedo" }]}
-              miradas={[{ f: 0, v: { x: 1, y: 0.3 } }, { f: para, v: { x: 1, y: 0 } }, { f: llega + 4, v: { x: 1, y: 0.4 } }]} giros={[{ f: 0, v: 0 }, { f: llega, v: 0.8 }]}
-              ajuste={manoA({ look: THEO, x, y: DUP.piso, lado: "D", obj: (g) => (g < camina ? { x: SX + 10, y: gy(g) } : { x: DUP.pared - 22, y: DUP.piso - 250 }), peso: (g) => Math.max(pesoIK(gorro - 14, gorro + 8, 6)(g), pesoIK(llega - 4, 1e9, 8)(g)),
-                otra: manoA({ look: THEO, x, y: DUP.piso, lado: "I", obj: (g) => ({ x: SX - 6, y: gy(g) }), peso: pesoIK(gorro - 14, gorro + 8, 6) }) })} />}
-            {f >= gorro - 14 && f < gorro + 2 && <g transform={`translate(${SX + 2},${gy(f) - 4})`}><Gorro s={1.1} /></g>}
-          </>} />
-      </Empuje>
-      <Rotulo nombre="THEO LINDGREN · 34" bajada="LINEMAN · MINNESOTA POWER" x={1180} y={120} desde={k(42.8)} hasta={k(47.6)} />
-      <Cartel texto="THE OTHER HALF: QUIET" x={1400} y={305} desde={k(49.9)} />
+      <Cortes en={[[-100, t1], [C1, t2], [C2, t3]]} />
+      <Rotulo nombre="THEO LINDGREN · 34" bajada="LINEMAN · MINNESOTA POWER" x={200} y={918} desde={k(42.6)} hasta={k(47.0)} />
+      <Cartel texto="THE OTHER HALF: QUIET" x={1250} y={180} tam={40} desde={k(49.3)} />
     </AbsoluteFill>
   );
 };
@@ -402,18 +437,19 @@ export const P14Bus: React.FC = () => {
   const horario = <HorarioParada x={900} y={BARRIO_PISO - 272} f={f} marca={k(56.3)} />;
   const theo = (
     <Pj look={THEO} ruta={[{ f: 0, x: X, y: BARRIO_PISO }]}
-      dir={[{ f: 0, v: 1 }, { f: k(52.0), v: -1 }, { f: k(53.4), v: 1 }, { f: k(54.6), v: -1 }, { f: k(55.4), v: 1 }]}
-      poses={[{ f: 0, v: "parado" }, { f: k(51.7), v: "brazosCruzados" }, { f: k(54.6), v: "parado" }, { f: k(57.3), v: "encogerse" }]}
-      caras={[{ f: 0, v: "neutral" }, { f: k(51.7), v: "duda" }, { f: k(54.6), v: "cansado" }, { f: k(57.3), v: "triste" }]}
-      miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: k(52.0), v: { x: 1, y: -0.1 } }, { f: k(54.6), v: { x: 1, y: -0.2 } }, { f: k(57.0), v: { x: 0, y: 0 } }]}
-      giros={[{ f: 0, v: 0 }, { f: k(53.4), v: 0.4 }, { f: k(57.3), v: 0 }]}
+      dir={[{ f: 0, v: 1 }, { f: k(52.0), v: -1 }, { f: k(53.4), v: 1 }, { f: k(54.7), v: -1 }, { f: k(55.4), v: 1 }]}
+      poses={[{ f: 0, v: "parado" }, { f: k(51.7), v: "brazosCruzados", d: 8 }, { f: k(52.0), v: { ...{ hI: 30, cI: 115, hD: 35, cD: 110 }, tronco: 9, cabeza: 6 }, d: 8 }, { f: k(53.4), v: "brazosCruzados", d: 8 },
+        { f: k(54.0), v: { hD: 78, cD: 128, hI: 22, cI: 104, cabeza: 16, tronco: 4 }, d: 8 }, { f: k(54.7), v: { tronco: 10, cabeza: 4, hD: 10, cD: 20 }, d: 8 }, { f: k(55.4), v: "brazosCruzados", d: 8 }, { f: k(57.3), v: "encogerse", d: 10 }]}
+      caras={[{ f: 0, v: "neutral" }, { f: k(51.7), v: "duda" }, { f: k(54.0), v: "cansado" }, { f: k(54.7), v: "duda" }, { f: k(57.3), v: "triste" }]}
+      miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: k(52.0), v: { x: 1, y: -0.1 } }, { f: k(54.0), v: { x: 1, y: 0.8 } }, { f: k(54.7), v: { x: 1, y: -0.2 } }, { f: k(57.0), v: { x: 0, y: 0 } }]}
+      giros={[{ f: 0, v: 0 }, { f: k(52.0), v: -0.3 }, { f: k(53.4), v: 0.4 }, { f: k(54.7), v: -0.3 }, { f: k(55.4), v: 0.3 }, { f: k(57.3), v: 0 }]}
       ajuste={(p0, g) => {
         const tap = g > k(52.8) && g < k(53.9) ? Math.max(0, Math.sin((g - k(52.8)) / 2.2)) * 18 : 0;
         return { ...p0, rD: p0.rD - tap };
       }} />
   );
   const parada = (
-    <Escena Set={Barrio} pal={PAL} claves={[mira(-6, 860, 640, 1.55), mira(I0 - 4, 850, 650, 1.62, { curva: "inout" }), mira(I1, 840, 650, 1.62), mira(229, 830, 656, 1.7, { curva: "inout" })]} seed={14} setProps={{ hora: "alba", luces: 0, nieve: 0 }}
+    <Escena Set={Barrio} pal={PAL} claves={[mira(-6, 860, 640, 1.55), mira(k(53.7), 852, 644, 1.58, { curva: "inout" }), mira(I0, 850, 600, 1.95, { curva: "inout" }), mira(I1, 840, 650, 1.62), mira(229, 830, 656, 1.7, { curva: "inout" })]} seed={14} setProps={{ hora: "alba", luces: 0, nieve: 0 }}
       medio={<>{horario}{theo}</>} />
   );
   const inserto = (
@@ -435,24 +471,31 @@ export const P14Bus: React.FC = () => {
 export const AUTOS_V3 = [550, 1150, 1750, 2350, 2950];
 const AY = SUP_PISO + 300, TY = SUP_PISO + 360;
 export const P15Superior: React.FC = () => {
+  // v4: general ≤1,7 s con Theo por la VEREDA (capa medio, detrás de los autos, lejos del semáforo y el farol) y el
+  // contador que rueda 0 → 41 en el cielo; corte seco al medio: camina entre los autos, apoya la palma en el techo,
+  // mira la fila hacia atrás (giro + miedo) y se encoge. Sin rótulos sobre la calle ni la marca.
   const k = kDe(58.36);
-  const c1 = 52, para = k(61.0);
-  const x = (g: number) => (g < c1 ? lerp(g, 0, c1, 1050, 1250) : lerp(g, c1, para, 1400, 1560));
+  const c1 = 52, para = k(60.75);
+  const xM = (g: number) => lerp(g, c1, para, 1290, 1530);
   const calle = <CalleAutos xs={AUTOS_V3} y={AY} piso={SUP_PISO} />;
-  const theo = (
-    <Pj look={THEO} ruta={[{ f: 0, x: 1050, y: TY }, { f: c1 - 1, x: 1250 }, { f: c1, x: 1400 }, { f: para, x: 1560 }]} dir={[{ f: 0, v: 1 }]}
-      poses={[{ f: 0, v: "parado" }, { f: k(62.7), v: "encogerse" }]}
-      caras={[{ f: 0, v: "duda" }, { f: k(61.3), v: "miedo" }, { f: k(62.6), v: "triste" }]}
-      miradas={[{ f: 0, v: { x: 1, y: -0.1 } }, { f: c1, v: { x: -1, y: 0 } }, { f: c1 + 14, v: { x: 1, y: 0.2 } }, { f: para, v: { x: 1, y: 0.7 } }, { f: k(62.6), v: { x: -0.3, y: -0.1 } }]}
-      giros={[{ f: 0, v: 0 }, { f: k(62.5), v: 0.7 }]}
-      ajuste={manoA({ look: THEO, x, y: TY, lado: "D", obj: (g) => ({ x: 1662 + 6 * Math.sin(g / 9), y: AY - 192 }), peso: pesoIK(k(61.1), k(62.5), 9) })} />
+  const theoV = (
+    <Pj look={THEO} ruta={[{ f: 0, x: 1320, y: SUP_PISO }, { f: c1, x: 1470 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "duda" }]}
+      miradas={[{ f: 0, v: { x: 1, y: 0.3 } }]} />
   );
-  const ancho = <Escena Set={Superior} pal={PAL} claves={[mira(0, 1350, 600, 0.75), mira(c1, 1380, 600, 0.76)]} seed={15} setProps={{ hora: "dia", luces: 0 }} frente={<>{calle}{theo}</>} />;
-  const medio = <Escena Set={Superior} pal={PAL} claves={[mira(c1, 1395, 923, 1.5), mira(155, 1420, 923, 1.53)]} seed={151} setProps={{ hora: "dia", luces: 0 }} frente={<>{calle}{theo}</>} />;
+  const theo = (
+    <Pj look={THEO} ruta={[{ f: c1, x: 1290, y: TY }, { f: para, x: 1530 }]} dir={[{ f: 0, v: 1 }]}
+      poses={[{ f: 0, v: "parado" }, { f: k(62.45), v: "encogerse" }]}
+      caras={[{ f: 0, v: "duda" }, { f: k(60.9), v: "sorpresa" }, { f: k(61.5), v: "miedo" }, { f: k(62.45), v: "triste" }]}
+      miradas={[{ f: 0, v: { x: 1, y: 0.25 } }, { f: k(60.8), v: { x: 1, y: 0.6 } }, { f: k(61.45), v: { x: -1, y: -0.05 } }, { f: k(62.45), v: { x: 0.3, y: 0.3 } }]}
+      giros={[{ f: 0, v: 0 }, { f: k(61.45), v: 0.75 }, { f: k(62.45), v: 0.2 }]}
+      ajuste={manoA({ look: THEO, x: (g) => (g < para ? xM(g) : 1530), y: TY, lado: "D", obj: (g) => ({ x: 1652, y: AY - 178 + 3 * Math.sin(g / 7) }), peso: pesoIK(k(60.6), k(62.3), 9) })} />
+  );
+  const ancho = <Escena Set={Superior} pal={PAL} claves={[mira(0, 1350, 600, 0.75), mira(c1, 1380, 600, 0.76)]} seed={15} setProps={{ hora: "dia", luces: 0 }} medio={theoV} frente={calle} />;
+  const medio = <Escena Set={Superior} pal={PAL} claves={[mira(c1, 1430, 955, 1.3), mira(155, 1450, 955, 1.32)]} seed={151} setProps={{ hora: "dia", luces: 0 }} frente={<>{calle}{theo}</>} />;
   return (
     <AbsoluteFill>
       <Cortes en={[[-100, ancho], [c1, medio]]} />
-      <Pilar lineas={[["CARS ON SUPERIOR", "41", AMBAR], ["DRIVERS", "0", "#ff6a5a"]]} x={1250} y={915} tam={40} desde={k(60.4)} />
+      <PilarR lineas={[{ e: "CARS ON SUPERIOR", v: [[0, 0], [k(61.4), 41]], c: AMBAR }, { e: "DRIVERS", v: "0", c: "#ff6a5a" }]} x={180} y={880} tam={42} desde={k(61.2)} />
     </AbsoluteFill>
   );
 };
@@ -474,7 +517,9 @@ export const P16Campera: React.FC = () => {
             otra: manoA({ look: THEO, x: X, y: TY, lado: "I", obj: () => ({ x: X + 60, y: TY - 286 }), peso: pesoIK(t2 + 2) }) })} />
       </>} />
   );
-  return <Cortes en={[[-100, asomo], [ins, <InteriorAutoV3 e0={ins} mano={k(68.9)} />]]} />;
+  // v4: el inserto lleva a Theo: su reflejo en el vidrio y su palma que se apoya (vaho), y la manga que cuelga del asiento
+  const adentro = <AbsoluteFill><InteriorAutoV3 e0={ins} /><AutoExtraV4 e0={ins} refl={k(66.9)} palma={k(67.6)} /></AbsoluteFill>;
+  return <Cortes en={[[-100, asomo], [ins, adentro]]} />;
 };
 
 // ---------- 17 · camina una hora; ahueca las manos y grita HELLO?! (eco que se aleja por el cielo) ----------
@@ -484,12 +529,15 @@ export const P17Grita: React.FC = () => {
   const { fps } = useVideoConfig();
   const k = kDe(70.22);
   const g0 = k(71.9);
-  const X0 = 2390, X1 = 2600;
-  const claves = [mira(0, 2470, 610, 1.3), mira(74, 2560, 610, 1.3)];
+  // v4: encuadre 1,55 entre el NOW SHOWING y el FIRE HALL (ningún cartel cortado por el borde), Theo lejos del farol,
+  // eco: dos «hello?» más chicos que suben y se apagan.
+  const X0 = 2390, X1 = 2540;
+  const claves = [mira(0, 2555, 610, 1.55), mira(74, 2575, 610, 1.55, { curva: "inout" })];
   const E = [{ f: 0, z: 1 }, { f: g0 - 12, z: 1 }, { f: g0 + 6, z: 1.4, x: tX(enPantalla(claves, g0, fps, X1 + 20, SUP_PISO - 250).x), y: 500 }];
   const boca = enPantalla(claves, f, fps, X1 + 24, SUP_PISO - 250);
   const b = tras(E, f, boca.x, boca.y);
-  const gx = Math.min(1380, b.x + 200);
+  const gx = Math.min(1300, b.x + 200);
+  const gy = Math.max(150, b.y - 170);
   return (
     <AbsoluteFill>
       <Empuje k={E}>
@@ -503,8 +551,8 @@ export const P17Grita: React.FC = () => {
               otra: manoA({ look: THEO, x: X1, y: SUP_PISO, lado: "I", obj: () => ({ x: X1 + 30, y: SUP_PISO - 236 }), peso: pesoIK(g0 - 8, 1e9, 7) }) })} />} />
       </Empuje>
       <RelojDia min={7 * 60 + 10 + Math.floor(lerp(f, 0, k(71.6), 0, 60))} x={1420} y={100} desde={0} tam={52} />
-      <Globo texto="HELLO?!" x={gx} y={Math.max(120, b.y - 150)} desde={g0} hasta={k(72.7) + 6} tam={78} cola="izq" />
-      <div style={{ opacity: 0.55 }}><Globo texto="hello?" x={gx + 330} y={Math.max(110, b.y - 150) + 150} desde={g0 + 10} hasta={k(72.7) + 6} tam={44} cola="izq" /></div>
+      <Globo texto="HELLO?!" x={gx} y={gy} desde={g0} hasta={k(72.7) + 6} tam={78} cola="izq" />
+      <Eco texto="hello?" x={gx + 60} y={gy} desde={g0} dx={150} dy={-62} tam={54} />
     </AbsoluteFill>
   );
 };
@@ -519,7 +567,7 @@ export const P18Lugares: React.FC = () => {
   const golpe = (g: number) => Math.max(0, Math.sin((g - 14) / 2.6)) * 22;
   const calle = <CalleAutos xs={AUTOS_V3} y={AY} piso={SUP_PISO} />;
   const pol = (
-    <Escena Set={Superior} pal={PAL} claves={[mira(0, PX + 120, 610, 1.5), mira(a, PX + 135, 610, 1.52)]} seed={18} setProps={{ hora: "dia", luces: 0 }} frente={calle}
+    <Escena Set={Superior} pal={PAL} claves={[mira(0, 2558, 600, 1.55), mira(a, 2562, 600, 1.555, { curva: "inout" })]} seed={18} setProps={{ hora: "dia", luces: 0 }} frente={calle}
       medio={<Pj look={THEO} ruta={[{ f: 0, x: PX - 70, y: SUP_PISO }, { f: 12, x: PX }]} dir={[{ f: 0, v: 1 }]}
         poses={[{ f: 0, v: "parado" }, { f: a - 10, v: "manosCintura" }]} caras={[{ f: 0, v: "determinado" }, { f: 26, v: "duda" }, { f: a - 10, v: "triste" }]}
         miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: 26, v: { x: 1, y: -0.4 } }, { f: a - 10, v: { x: -0.4, y: 0 } }]} giros={[{ f: 0, v: 0 }, { f: a - 10, v: 0.6 }]}
@@ -527,7 +575,7 @@ export const P18Lugares: React.FC = () => {
   );
   const FX = 3010;
   const fuego = (
-    <Escena Set={Superior} pal={PAL} claves={[mira(a, FX + 160, 610, 1.5), mira(b, FX + 175, 610, 1.52)]} seed={181} setProps={{ hora: "dia", luces: 0 }} frente={calle}
+    <Escena Set={Superior} pal={PAL} claves={[mira(a, 3199, 630, 1.7), mira(b, 3203, 630, 1.705, { curva: "inout" })]} seed={181} setProps={{ hora: "dia", luces: 0 }} frente={calle}
       medio={<Pj look={THEO} ruta={[{ f: a, x: FX - 60, y: SUP_PISO }, { f: a + 12, x: FX }]} dir={[{ f: 0, v: 1 }]}
         caras={[{ f: 0, v: "duda" }, { f: a + 18, v: "miedo" }, { f: b - 10, v: "triste" }]} miradas={[{ f: 0, v: { x: 1, y: -0.1 } }, { f: a + 16, v: { x: 1, y: 0.1 } }]}
         ajuste={manoA({ look: THEO, x: (g) => lerp(g, a, a + 12, FX - 60, FX), y: SUP_PISO, lado: "D", obj: () => ({ x: FX + 94, y: SUP_PISO - 262 }), peso: pesoIK(a + 12, b - 8, 6),
@@ -535,7 +583,7 @@ export const P18Lugares: React.FC = () => {
   );
   const HX = 450;
   const holi = (
-    <Escena Set={Superior} pal={PAL} claves={[mira(b, 520, 610, 1.5), mira(145, 505, 610, 1.52)]} seed={182} setProps={{ hora: "dia", luces: 0 }} frente={calle}
+    <Escena Set={Superior} pal={PAL} claves={[mira(b, 505, 600, 1.55), mira(145, 498, 600, 1.555, { curva: "inout" })]} seed={182} setProps={{ hora: "dia", luces: 0 }} frente={calle}
       medio={<Pj look={THEO} ruta={[{ f: b, x: HX + 110, y: SUP_PISO }, { f: b + 22, x: HX }]} dir={[{ f: 0, v: -1 }, { f: b + 34, v: 1 }]}
         poses={[{ f: 0, v: "parado" }, { f: b + 24, v: "encogerse" }]} caras={[{ f: 0, v: "determinado" }, { f: b + 22, v: "duda" }, { f: b + 36, v: "triste" }]}
         miradas={[{ f: 0, v: { x: -1, y: 0 } }, { f: b + 22, v: { x: -1, y: -0.2 } }, { f: b + 34, v: { x: 1, y: -0.1 } }]} />} />
@@ -543,7 +591,7 @@ export const P18Lugares: React.FC = () => {
   return (
     <AbsoluteFill>
       <Cortes en={[[-100, pol], [a, fuego], [b, holi]]} />
-      <Casillas x={400} y={96} tam={44} desde={6} items={[{ t: "POLICE", f: 0, x: a - 10 }, { t: "FIRE HALL", f: a, x: b - 10 }, { t: "HOLIDAY", f: b, x: 140 }]} />
+      <Casillas x={420} y={100} tam={50} desde={6} items={[{ t: "POLICE", f: 0, x: a - 10 }, { t: "FIRE HALL", f: a, x: b - 10 }, { t: "HOLIDAY", f: b, x: 140 }]} />
     </AbsoluteFill>
   );
 };
@@ -556,7 +604,7 @@ export const P19Holiday: React.FC = () => {
   const k = kDe(77.54);
   const c = k(79.9);
   const SX = 650, TX = 470;
-  const gal = lerp(f, 14, c - 6, 0, 2.84);
+  const gal = lerp(f, 0, c - 4, 0.12, 3.06); // v4: el display ya corre desde el cuadro 0
   const pistola = (g: number) => ({ x: TX + 96, y: SUP_PISO - 150 - 5 * Math.sin(g / 9) });
   const surt = (
     <Escena Set={Superior} pal={PAL} claves={[mira(0, 640, 640, 1.75), mira(c, 652, 640, 1.78)]} seed={19} setProps={{ hora: "dia", luces: 0 }}
@@ -568,25 +616,28 @@ export const P19Holiday: React.FC = () => {
           ajuste={manoA({ look: THEO, x: TX, y: SUP_PISO, lado: "D", obj: pistola, peso: pesoIK(2, k(79.1), 8) })} />
       </>} />
   );
-  const CX = TIENDA.cafe - 200;
+  const CX = TIENDA.cafe - 150;
   const jarra = { x: TIENDA.cafe - 30, y: TIENDA.piso - 226 - 70 };
-  const toca = (g: number) => ({ x: jarra.x - 26 * rampa(g, c + 26, c + 32), y: jarra.y + 10 });
+  // v4: toca la jarra → retira la mano (quema) → se inclina y huele el vapor → se endereza con miedo y mira la tienda vacía
+  const t2 = c + 20, h0 = c + 30, h1 = k(81.55);
+  const toca = (g: number) => ({ x: jarra.x - 30 * rampa(g, t2, t2 + 6), y: jarra.y + 12 - 30 * rampa(g, t2, t2 + 6) });
   const tienda = (
-    <Escena Set={Tienda} pal={PAL} claves={[mira(c, TIENDA.cafe - 120, 640, 1.7), mira(152, TIENDA.cafe - 105, 640, 1.73)]} seed={191}
+    <Escena Set={Tienda} pal={PAL} claves={[mira(c, TIENDA.cafe - 120, 640, 1.7), mira(152, TIENDA.cafe - 105, 640, 1.73, { curva: "inout" })]} seed={191}
       medio={<>
-        <Tibio x={jarra.x - 4} y={jarra.y - 70} w={120} f={f} o={rampa(f, c + 18, c + 30)} />
-        <Pj look={THEO} ruta={[{ f: c, x: CX - 40, y: TIENDA.piso }, { f: c + 10, x: CX }]} dir={[{ f: 0, v: 1 }, { f: k(81.3), v: -1 }, { f: k(82.1), v: 1 }]}
-          poses={[{ f: 0, v: "parado" }, { f: c + 32, v: "parado" }, { f: k(81.3), v: "manosCintura" }]}
-          caras={[{ f: 0, v: "duda" }, { f: c + 26, v: "sorpresa" }, { f: k(81.3), v: "miedo" }, { f: k(82.1), v: "triste" }]}
-          miradas={[{ f: 0, v: { x: 1, y: 0.4 } }, { f: c + 26, v: { x: 0.3, y: -0.1 } }, { f: k(81.3), v: { x: 1, y: -0.1 } }, { f: k(82.1), v: { x: 0.2, y: 0 } }]}
-          ajuste={manoA({ look: THEO, x: (g) => lerp(g, c, c + 10, CX - 40, CX), y: TIENDA.piso, lado: "D", obj: toca, peso: (g) => Math.min(rampa(g, c + 8, c + 22), 1 - rampa(g, c + 28, c + 34)) })} />
+        <Tibio x={jarra.x - 4} y={jarra.y - 70} w={120} f={f} o={rampa(f, c + 6, c + 20)} />
+        <Pj look={THEO} ruta={[{ f: c, x: CX - 40, y: TIENDA.piso }, { f: c + 10, x: CX }]} dir={[{ f: 0, v: 1 }, { f: k(81.6), v: -1 }, { f: k(82.25), v: 1 }]}
+          poses={[{ f: 0, v: "parado" }, { f: t2, v: { hI: -10, cI: 20, hD: 20, cD: 120 } }, { f: h0, v: { tronco: 20, cabeza: 16, hD: 20, cD: 40, hI: -10, cI: 20 } }, { f: h1, v: "encogerse" }, { f: k(82.0), v: "manosCintura" }]}
+          caras={[{ f: 0, v: "duda" }, { f: t2, v: "sorpresa" }, { f: h0 + 4, v: "cansado" }, { f: h1, v: "miedo" }, { f: k(82.1), v: "triste" }]}
+          miradas={[{ f: 0, v: { x: 1, y: 0.4 } }, { f: t2, v: { x: 0.2, y: 0.5 } }, { f: h0, v: { x: 1, y: 0.2 } }, { f: h1, v: { x: -0.3, y: -0.1 } }, { f: k(81.6), v: { x: 1, y: 0 } }, { f: k(82.25), v: { x: 0.3, y: 0 } }]}
+          giros={[{ f: 0, v: 0 }, { f: h1, v: 0.5 }, { f: k(82.25), v: 0.2 }]}
+          ajuste={manoA({ look: THEO, x: (g) => lerp(g, c, c + 10, CX - 40, CX), y: TIENDA.piso, lado: "D", obj: toca, peso: pesoIK(c + 6, t2 + 2, 8) })} />
       </>} />
   );
   return (
     <AbsoluteFill>
       <Cortes en={[[-100, surt], [c, tienda]]} />
       <Pilar lineas={[["PUMP", "STILL ON", "#7dff9a"], ["CASHIER", "0", "#ff6a5a"]]} x={760} y={100} tam={42} desde={k(78.6)} hasta={c} />
-      <Pilar lineas={[["COFFEE", "STILL WARM", AMBAR], ["PEOPLE", "0", "#ff6a5a"]]} x={1330} y={96} tam={42} desde={c + 30} />
+      <Pilar lineas={[["COFFEE", "STILL WARM", AMBAR], ["PEOPLE", "0", "#ff6a5a"]]} x={430} y={110} tam={42} desde={h0} />
     </AbsoluteFill>
   );
 };
@@ -629,7 +680,7 @@ export const P21Existe: React.FC = () => {
   const k = kDe(95.7);
   return (
     <AbsoluteFill>
-      <CuadernoHoyV3 pasa={k(99.0)} zoom={k(100.6)} marca={k(101.6)} />
+      <CuadernoHoyV4 pasa={k(99.0)} zoom={k(100.6)} marca={k(101.6)} />
       <Pilar lineas={[["THE NOTEBOOK", "STILL EXISTS", AMBAR]]} x={960} y={110} centro tam={46} desde={k(95.9)} hasta={k(100.5)} />
       <Pilar lineas={[["PAGE 2", "TORN OUT", "#ff8a6a"]]} x={1330} y={930} centro tam={46} desde={k(101.4)} />
     </AbsoluteFill>
@@ -644,18 +695,17 @@ export const P22Luces: React.FC = () => {
   const f = useF();
   const k = kDe(103.44);
   const l0 = k(106.2);
-  const TX = 2450;
+  const TX = 2400;
   const on = (i: number) => rampa(f, l0 + i * 9, l0 + i * 9 + 10);
   const escena = (luces: number) => (
-    <Escena Set={Superior} pal={PAL} claves={[mira(0, 2440, 640, 1.3), mira(172, 2470, 625, 1.16, { curva: "inout" })]} seed={22} setProps={{ hora: "ocaso", luces, nieve: 0 }}
-      frente={<CalleAutos xs={AUTOS_V3} y={AY} piso={SUP_PISO} />}
+    <Escena Set={Superior} pal={PAL} claves={[mira(0, 2720, 610, 1.2), mira(172, 2745, 610, 1.21, { curva: "inout" })]} seed={22} setProps={{ hora: "ocaso", luces, nieve: 0 }}
       medio={<>
         {FAROLES22.map((x, i) => <Farola key={x} x={x} piso={SUP_PISO + 30} on={on(i)} lado={i === 2 ? -1 : 1} />)}
-        <Pj look={THEO} ruta={[{ f: 0, x: TX - 150, y: SUP_PISO }, { f: k(105.4), x: TX }]} dir={[{ f: 0, v: 1 }]}
-          poses={[{ f: 0, v: "parado" }, { f: k(106.6), v: "señalar" }, { f: k(107.9), v: "brazosCruzados" }]}
-          caras={[{ f: 0, v: "cansado" }, { f: l0 + 2, v: "sorpresa" }, { f: k(107.4), v: "feliz" }, { f: k(107.9), v: "duda" }]}
-          miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: l0, v: { x: -1, y: -0.7 } }, { f: l0 + 14, v: { x: 1, y: -0.7 } }, { f: k(107.9), v: { x: 0.2, y: 0 } }]}
-          giros={[{ f: 0, v: 0 }, { f: l0, v: 0.5 }, { f: l0 + 16, v: 0 }, { f: k(107.9), v: 0.6 }]} />
+        <Pj look={THEO} ruta={[{ f: 0, x: TX - 50, y: SUP_PISO }, { f: k(104.6), x: TX }]} dir={[{ f: 0, v: 1 }]} escala={1.3}
+          poses={[{ f: 0, v: "parado" }, { f: k(104.7), v: "manosCintura" }, { f: l0 + 20, v: "señalar" }, { f: k(107.9), v: "brazosCruzados" }]}
+          caras={[{ f: 0, v: "cansado" }, { f: k(104.5), v: "duda" }, { f: l0 + 2, v: "sorpresa" }, { f: k(107.3), v: "feliz" }, { f: k(107.9), v: "duda" }]}
+          miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: k(104.7), v: { x: 0.3, y: -0.9 } }, { f: l0, v: { x: -0.9, y: -0.7 } }, { f: l0 + 9, v: { x: -0.4, y: -0.8 } }, { f: l0 + 18, v: { x: 0.4, y: -0.8 } }, { f: l0 + 27, v: { x: 1, y: -0.7 } }, { f: k(107.9), v: { x: 0.2, y: 0 } }]}
+          giros={[{ f: 0, v: 0 }, { f: l0, v: 0.6 }, { f: l0 + 14, v: 0.2 }, { f: l0 + 27, v: 0 }, { f: k(107.9), v: 0.6 }]} />
       </>} />
   );
   return (
@@ -682,30 +732,43 @@ export const P23Represa: React.FC = () => {
   );
   const a2 = k(111.4);
   const explica = (
-    <Escena Set={Esquema} pal={PAL} claves={[mira(0, 340, 560, 0.8), mira(a2, 352, 560, 0.8)]} seed={23} setProps={{ pulso: lerp(f, k(110.2), a2, 0, 0.35), ciudad: 0, marcas: 0 }} medio={theo} />
+    <Escena Set={Esquema} pal={PAL} claves={[mira(0, 170, 560, 0.8), mira(a2, 182, 560, 0.8)]} seed={23} setProps={{ pulso: lerp(f, k(110.2), a2, 0, 0.35), ciudad: 0, marcas: 0 }} medio={theo} />
   );
   const cR = [mira(a2, 1690, 700, 0.57), mira(m, 1700, 700, 0.572)];
   const red = (
     <Escena Set={Esquema} pal={PAL} claves={cR} seed={233} setProps={{ pulso: lerp(f, a2 + 4, k(113.4), 0, 1), ciudad: 0, marcas: 0 }} />
   );
-  const ciudadOn = (v: number) => <Escena Set={Esquema} pal={PAL} claves={[mira(d, ESQ.ciudad + 160, 620, 1.05), mira(419, ESQ.ciudad + 150, 615, 1.07)]} seed={232} setProps={{ pulso: 1, ciudad: v, marcas: 0 }} />;
-  const ciudad = <Mezcla a={ciudadOn(0.3)} b={ciudadOn(1)} t={rampa(f, k(121.8), k(122.5))} />;
-  const turb = (
-    <Escena Set={Esquema} pal={PAL} claves={[mira(c, 730, 640, 1.35), mira(d, 742, 640, 1.37)]} seed={231} setProps={{ pulso: 1, ciudad: 1, marcas: 0 }} />
+  // v4: turbina → ciudad en UNA toma: la cámara viaja por la línea con curva inout de 30 cuadros (antes: salto en 121,5)
+  const theoC = (
+    <Pj look={THEO} ruta={[{ f: 0, x: ESQ.ciudad + 600, y: ESQ.piso }]} escala={2.0} dir={[{ f: 0, v: -1 }]}
+      poses={[{ f: 0, v: "parado" }, { f: k(122.3), v: "señalar" }, { f: k(122.85), v: "manosCintura" }]}
+      caras={[{ f: 0, v: "sorpresa" }, { f: k(122.5), v: "feliz" }]} miradas={[{ f: 0, v: { x: -1, y: -0.3 } }, { f: k(122.85), v: { x: -0.2, y: 0 } }]} giros={[{ f: 0, v: 0 }, { f: k(122.85), v: 0.5 }]} />
+  );
+  const cT = [mira(c, 730, 640, 1.35), mira(k(121.1), 742, 640, 1.37), mira(k(122.1), 2300, 600, 0.75, { curva: "inout" }), mira(419, 2310, 600, 0.752)];
+  const turbOn = (v: number) => <Escena Set={Esquema} pal={PAL} claves={cT} seed={231} setProps={{ pulso: 1, ciudad: v, marcas: 0 }} medio={theoC} />;
+  const turb = <Mezcla a={turbOn(0.3)} b={turbOn(1)} t={rampa(f, k(122.1), k(122.7))} />;
+  const theoM = (
+    <AbsoluteFill><svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}>
+      <Pj look={THEO} ruta={[{ f: 0, x: 1650, y: 1005 }]} escala={1.7} dir={[{ f: 0, v: -1 }]}
+        poses={[{ f: 0, v: "hablar" }, { f: k(116.4), v: "señalar" }, { f: k(118.6), v: "manosCintura" }]}
+        caras={[{ f: 0, v: "determinado" }, { f: k(116.6), v: "feliz" }, { f: k(118.6), v: "duda" }]}
+        miradas={[{ f: 0, v: { x: 0.2, y: 0 } }, { f: k(116.4), v: { x: -1, y: -0.3 } }, { f: k(118.6), v: { x: -0.2, y: 0 } }]} giros={[{ f: 0, v: 0.5 }, { f: k(116.4), v: 0 }, { f: k(118.6), v: 0.5 }]}
+        habla={[[m + 2, k(116.3)], [k(118.7), k(119.3)]]} />
+    </svg></AbsoluteFill>
   );
   const dias = Math.floor(lerp(f, c + 10, d - 6, 0, 21));
   const rot = (t: string, X: number, desde: number) => <Pilar key={t} lineas={[[t, "", AMBAR]]} x={enPantalla(cR, a2, fps, X, 0).x} y={300} centro tam={34} desde={desde} hasta={m} />;
   return (
     <AbsoluteFill>
-      <Cortes en={[[-100, explica], [a2, red], [m, <MapaRioV3 desde={m} pin1={k(116.6)} pin2={k(117.8)} />], [c, turb], [d, ciudad]]} />
+      <Cortes en={[[-100, explica], [a2, red], [m, <AbsoluteFill><MapaRioV3 desde={m} pin1={k(116.6)} pin2={k(117.8)} />{theoM}</AbsoluteFill>], [c, turb]]} />
       <Pilar lineas={[["THE GRID", "RUNS ITSELF", AMBAR]]} x={1060} y={110} tam={46} desde={k(109.4)} hasta={a2} />
       {rot("HYDRO DAM", ESQ.represa + 60, a2 + 4)}
       {rot("TRANSMISSION", ESQ.torres[1], k(112.3))}
       {rot("SUBSTATION", ESQ.sub, k(112.9))}
       {rot("DULUTH", ESQ.ciudad + 120, k(113.5))}
       <Pilar lineas={[["WORKERS ON SHIFT", "0", "#ff6a5a"], ["GRID", "ONLINE ✓", "#7dff9a"]]} x={1230} y={110} tam={40} desde={a2 + 10} hasta={m} />
-      <Pilar lineas={[["UNATTENDED", `${dias} DAYS`, AMBAR]]} x={1250} y={110} tam={48} desde={c + 6} hasta={d} />
-      <Pilar lineas={[["CITY", "STILL LIT", AMBAR]]} x={1300} y={110} tam={48} desde={k(121.9)} />
+      <Pilar lineas={[["UNATTENDED", `${dias} DAYS`, AMBAR]]} x={1250} y={110} tam={48} desde={c + 6} hasta={k(121.3)} />
+      <Pilar lineas={[["CITY", "STILL LIT", AMBAR]]} x={700} y={110} tam={48} desde={k(122.2)} />
     </AbsoluteFill>
   );
 };
@@ -713,28 +776,34 @@ export const P23Represa: React.FC = () => {
 // ---------- 24 · semáforos para nadie (fundidos); al atardecer cada farol de Superior se prende en ola, a horario ----------
 // v3: semáforo con fundidos de 8 cuadros; general de la ola ≤2 s; plano medio de Theo mirando el reloj: el farol de al lado
 // se prende justo cuando el reloj pasa a 6:45. Sin ventanas que saltan (luces 0), sin parpadeos.
-const OLA24: [number, number, 1 | -1][] = [[700, 126.2, 1], [1000, 126.45, -1], [1400, 126.7, 1], [1760, 126.95, 1], [2200, 127.9, 1], [2700, 128.4, -1], [3150, 128.7, 1]];
 export const P24Semaforos: React.FC = () => {
   const f = useF();
   const k = kDe(123.17);
   const b = k(125.45), w2 = k(127.4), tic = k(128.4);
-  const faroles = OLA24.map(([x, t, l]) => <Farola key={x} x={x} piso={SUP_PISO + 30} on={rampa(f, k(t), k(t) + 10)} lado={l} />);
+  // v4: la ola llega a Theo DENTRO de la toma 2 (antes era un general vacío); el farol de al lado se prende en el tic de 6:45 (toma 3)
+  const OLA: [number, number, 1 | -1][] = [[700, 125.75, 1], [1000, 126.0, -1], [1400, 126.3, 1], [1760, 126.65, 1], [2200, 127.0, 1], [2700, 128.4, -1], [3150, 128.7, 1]];
+  const faroles = OLA.map(([x, t, l]) => <Farola key={x} x={x} piso={SUP_PISO + 30} on={rampa(f, k(t), k(t) + 10)} lado={l} />);
   const sema = (
     <AbsoluteFill>
-      <Escena Set={Superior} pal={PAL} claves={[mira(0, 3150, 650, 1.15), mira(b, 3175, 650, 1.16)]} seed={24} setProps={{ hora: "ocaso", luces: 0 }} frente={<CalleAutos xs={[]} y={AY} piso={SUP_PISO} />} />
-      <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}><SemaforoFundido x={1520} y={360} s={1.25} claves={[[-100, 0], [k(123.8), 2], [k(124.6), 1], [k(125.1), 0]]} /></svg>
+      <Escena Set={Superior} pal={PAL} claves={[mira(0, 3485, 650, 1.15), mira(b, 3505, 650, 1.16)]} seed={24} setProps={{ hora: "ocaso", luces: 0 }} frente={<CalleAutos xs={[]} y={AY} piso={SUP_PISO} />} />
+      <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}><SemaforoFundido x={1700} y={360} s={1.25} claves={[[-100, 0], [k(123.8), 2], [k(124.6), 1], [k(125.1), 0]]} /></svg>
       <Pilar lineas={[["CARS WAITING", "0", "#ff6a5a"]]} x={420} y={100} tam={48} desde={k(123.5)} />
     </AbsoluteFill>
   );
-  const ola = (
-    <Escena Set={Superior} pal={PAL} claves={[mira(b, 1880, 600, 0.78), mira(w2, 1905, 600, 0.785)]} seed={241} setProps={{ hora: "ocaso", luces: 0 }}
-      frente={<CalleAutos xs={AUTOS_V3} y={AY} piso={SUP_PISO} />} medio={<>{faroles}</>} />
-  );
   const TX = 2450;
+  const ola = (
+    <Escena Set={Superior} pal={PAL} claves={[mira(b, 1950, 590, 1.0), mira(w2, 1975, 590, 1.01)]} seed={241} setProps={{ hora: "ocaso", luces: 0 }}
+      medio={<>{faroles}
+        <Pj look={THEO} ruta={[{ f: b, x: TX, y: SUP_PISO }]} escala={1.35} dir={[{ f: 0, v: -1 }]}
+          poses={[{ f: 0, v: "manosCintura" }, { f: k(126.7), v: { tronco: -4, cabeza: -14 } }, { f: k(127.05), v: "encogerse" }]}
+          caras={[{ f: 0, v: "cansado" }, { f: k(125.85), v: "duda" }, { f: k(127.05), v: "sorpresa" }]}
+          miradas={[{ f: 0, v: { x: -1, y: -0.2 } }, { f: k(125.8), v: { x: -1, y: -0.5 } }, { f: k(126.35), v: { x: -0.6, y: -0.7 } }, { f: k(126.7), v: { x: -0.3, y: -0.9 } }, { f: k(127.05), v: { x: 0, y: -1 } }]}
+          giros={[{ f: 0, v: 0 }, { f: k(127.05), v: 0.3 }]} />
+      </>} />
+  );
   const reloj = (g: number) => ({ x: TX + 50, y: SUP_PISO - 175 });
   const medio = (
-    <Escena Set={Superior} pal={PAL} claves={[mira(w2, 2445, 640, 1.3), mira(200, 2460, 640, 1.31)]} seed={242} setProps={{ hora: "ocaso", luces: 0 }}
-      frente={<CalleAutos xs={AUTOS_V3} y={AY} piso={SUP_PISO} />}
+    <Escena Set={Superior} pal={PAL} claves={[mira(w2, 2550, 590, 1.55), mira(200, 2562, 590, 1.56)]} seed={242} setProps={{ hora: "ocaso", luces: 0 }}
       medio={<>
         {faroles}
         <Pj look={THEO} ruta={[{ f: w2, x: TX, y: SUP_PISO }]} dir={[{ f: 0, v: 1 }]}
@@ -765,7 +834,8 @@ export const P25Colina: React.FC = () => {
     f < cB ? [{ f: 0, z: 2.0, x: 600, y: 620 }, { f: cB, z: 2.0, x: 746, y: 620 }]
       : f < cC ? [{ f: 0, z: 1 }]
         : f < cD ? [{ f: 0, z: 3.0, x: 750, y: 545 }, { f: cD, z: 3.1, x: 750, y: 545 }]
-          : [{ f: 0, z: 1.3, x: 1182, y: 560 }, { f: 365, z: 1.31, x: 1182, y: 560 }];
+          : f < w0 ? [{ f: 0, z: 2.2, x: 1010, y: 560 }, { f: w0, z: 2.26, x: 1030, y: 560 }]
+            : [{ f: 0, z: 1.3, x: 1182, y: 560 }, { f: 365, z: 1.31, x: 1182, y: 560 }];
   const ventana = luzEn(f, [[-100, 1], [w0, 0.05], [w0 + 12, 1], [w0 + 24, 0.05], [w0 + 36, 1]], 8);
   const v = tras(E, f, 960 + (VENT_HOSP.x + 12 - 1618) * 0.8, 540 + (VENT_HOSP.y + 16 - 600) * 0.8);
   return (
@@ -775,7 +845,7 @@ export const P25Colina: React.FC = () => {
           medio={<>
             {[k(130.6), k(131.5), k(132.4), k(133.0), k(136.2)].map((t, i) => <Aliento key={i} f={f} x={T1 + 30} y={P - 262} desde={t} />)}
             <Pj look={THEO_MOCHI} ruta={[{ f: 0, x: 1040, y: P - 6 }, { f: k(131.9), x: T1 }]} dir={[{ f: 0, v: 1 }]} luz={BORDE_FRIO}
-              poses={[{ f: 0, v: "parado" }, { f: k(131.9), v: "agacharse" }, { f: k(133.0), v: "parado" }, { f: w0 + 2, v: "señalar" }]}
+              poses={[{ f: 0, v: "parado" }, { f: k(131.9), v: "agacharse" }, { f: k(133.0), v: "parado" }, { f: k(138.0), v: "señalar" }, { f: k(139.5), v: "manosCintura" }, { f: k(140.5), v: "parado" }, { f: w0 + 2, v: "señalar" }]}
               caras={[{ f: 0, v: "cansado" }, { f: k(133.0), v: "sorpresa" }, { f: k(136.4), v: "feliz" }, { f: w0, v: "duda" }, { f: w0 + 14, v: "determinado" }]}
               miradas={[{ f: 0, v: { x: 1, y: 0.4 } }, { f: k(133.0), v: { x: 1, y: -0.2 } }, { f: cC, v: { x: 0.6, y: -0.1 } }, { f: k(136.4), v: { x: 1, y: -0.15 } }, { f: w0, v: { x: 1, y: -0.3 } }]}
               giros={[{ f: 0, v: 0 }, { f: cC, v: 0.45 }, { f: cD, v: 0 }]} />
@@ -800,7 +870,7 @@ export const P26Ventana: React.FC = () => {
   const k = kDe(141.99);
   const sp = k(148.8);
   const toques = [k(149.0), k(149.65), k(150.3), k(150.9)];
-  const cl: [number, number][] = [[-100, 0.1], [k(142.4), 1], [k(143.2), 0.05], [k(143.8), 1], [k(144.6), 0.05], [k(145.2), 1], [k(146.6), 0.05], [k(147.2), 1], [k(147.8), 0.05], [k(148.35), 1]];
+  const cl: [number, number][] = [[-100, 0.75], [k(142.4), 1], [k(143.2), 0.05], [k(143.8), 1], [k(144.6), 0.05], [k(145.2), 1], [k(146.6), 0.05], [k(147.2), 1], [k(147.8), 0.05], [k(148.35), 1]];
   let on = 1;
   for (const t of toques) { on = 1 - on; cl.push([t + 2, on ? 1 : 0.05]); }
   const luz = luzEn(f, cl, 8);
@@ -818,11 +888,11 @@ export const P26Ventana: React.FC = () => {
       {f < sp ? fachada : (
         <AbsoluteFill style={{ background: "#0e0c14" }}>
           <AbsoluteFill style={{ clipPath: "inset(0px 966px 0px 0px)" }}><AbsoluteFill style={{ transform: "translateX(-480px)" }}>{fachada}</AbsoluteFill></AbsoluteFill>
-          <AbsoluteFill style={{ clipPath: "inset(0px 0px 0px 966px)" }}><AbsoluteFill style={{ transform: "translateX(560px) scale(0.92)", transformOrigin: "960px 540px" }}><ManoInterruptorV3 toques={toques} manga="#2f7f86" /></AbsoluteFill></AbsoluteFill>
+          <AbsoluteFill style={{ clipPath: "inset(0px 0px 0px 966px)" }}><AbsoluteFill style={{ transform: "translateX(560px) scale(0.92)", transformOrigin: "960px 540px" }}><ManoInterruptorV4 toques={toques} manga="#2f7f86" /></AbsoluteFill></AbsoluteFill>
           <div style={{ position: "absolute", left: 957, top: 0, width: 12, height: 1080, background: AMBAR, opacity: rampa(f, sp, sp + 8) }} />
         </AbsoluteFill>
       )}
-      <Pilar lineas={[["4TH FLOOR", "", AMBAR]]} x={1300} y={110} tam={44} desde={k(142.3)} hasta={k(143.7)} />
+      <Pilar lineas={[["4TH FLOOR", "", AMBAR]]} x={1300} y={110} tam={44} desde={k(142.0)} hasta={k(144.0)} />
       <Pilar lineas={[["BY", "HAND", AMBAR]]} x={1440} y={930} centro tam={46} desde={sp + 10} />
     </AbsoluteFill>
   );
@@ -861,7 +931,7 @@ export const P27June: React.FC = () => {
   const MX = CAMA + 215, MY = LOBBY_PISO - 370;
   const ult = (f - c + 300) % 30;
   const tibia = (
-    <Escena Set={Lobby} pal={PAL} claves={[mira(c, CAMA + 60, 740, 2.0), mira(337, CAMA + 70, 740, 2.02)]} seed={272} setProps={{ luces: 1, afuera: "noche" }}
+    <Escena Set={Lobby} pal={PAL} claves={[mira(c, CAMA + 20, 700, 1.85), mira(337, CAMA + 30, 700, 1.87)]} seed={272} setProps={{ luces: 1, afuera: "noche" }}
       medio={<>
         <rect x={MX - 52} y={MY - 34} width={104} height={64} rx={6} fill="#0c1a14" />
         <path d={`M${MX - 48},${MY} ${Array.from({ length: 24 }).map((_, i) => { const x = MX - 48 + i * 4; const t = (i * 4 + f * 3) % 96; return `L${x},${MY - (t > 40 && t < 48 ? 26 : t >= 48 && t < 52 ? -14 : 0)}`; }).join(" ")}`} stroke="#5aff9a" strokeWidth={3} fill="none" />
@@ -919,16 +989,18 @@ export const P28Quedo: React.FC = () => {
           poses={[{ f: 0, v: "agacharse" }, { f: 14, v: "parado" }, { f: 86, v: "agacharse" }, { f: 98, v: "parado" }]}
           caras={[{ f: 0, v: "cansado" }, { f: 60, v: "determinado" }, { f: 140, v: "cansado" }]} miradas={[{ f: 0, v: { x: 1, y: 0.4 } }, { f: 20, v: { x: 1, y: 0 } }, { f: 44, v: { x: 1, y: 0.5 } }, { f: 64, v: { x: 1, y: -0.2 } }]}
           enManoD={lleva(f) ? <Caja t="SALINE" w={92} h={70} /> : null}
-          ajuste={manoA({ look: JUNE, x: xJ, y: LOBBY_PISO, dir: dirJ, lado: "D", obj: (g) => ({ x: xJ(g) + dirJ(g) * 75, y: (g >= 44 && g < 52) || (g >= 126 && g < 134) ? LOBBY_PISO - 170 : LOBBY_PISO - 140 }), peso: (g) => (lleva(g) ? 1 : 0),
-            otra: manoA({ look: JUNE, x: xJ, y: LOBBY_PISO, dir: dirJ, lado: "I", obj: (g) => ({ x: xJ(g) + dirJ(g) * 65, y: LOBBY_PISO - 150 }), peso: (g) => (lleva(g) ? 1 : 0) }) })} />
+          ajuste={manoA({ look: JUNE, x: xJ, y: LOBBY_PISO, dir: dirJ, lado: "D", obj: (g) => ({ x: xJ(g) + dirJ(g) * 70, y: (g >= 44 && g < 52) || (g >= 126 && g < 134) ? LOBBY_PISO - 150 : LOBBY_PISO - 108 }), peso: (g) => (lleva(g) ? 1 : 0),
+            otra: manoA({ look: JUNE, x: xJ, y: LOBBY_PISO, dir: dirJ, lado: "I", obj: (g) => ({ x: xJ(g) + dirJ(g) * 62, y: LOBBY_PISO - 112 }), peso: (g) => (lleva(g) ? 1 : 0) }) })} />
       </>} />
   );
   const apila = <Mezcla a={escena("noche")} b={escena("dia")} t={dia} />;
   const pilaCerca = (
-    <Escena Set={Lobby} pal={PAL} claves={[mira(c, 700, 640, 1.7), mira(202, 712, 640, 1.72)]} seed={281} setProps={{ luces: 1, afuera: "noche", pizarra: "STAY WHERE\nTHE SUPPLIES ARE", trazo: rampa(f, c + 4, c + 50, false) }}
+    <Escena Set={Lobby} pal={PAL} claves={[mira(c, 700, 640, 1.7), mira(202, 712, 640, 1.72)]} seed={281} setProps={{ luces: 1, afuera: "noche", pizarra: "", trazo: 1 }}
       medio={<>
+        {/* v4: pizarra propia, más ancha, con el texto que siempre entra (antes «SUPPLIES ARE» se salía) */}
+        <PizarraTexto x={430} y={380} w={420} h={235} lineas={["STAY WHERE", "THE SUPPLIES ARE"]} trazo={rampa(f, c + 4, c + 50, false)} tamMax={52} />
         {pila}
-        <Pj look={JUNE} ruta={[{ f: c, x: 900, y: LOBBY_PISO }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: "parado" }, { f: c + 34, v: "brazosCruzados" }]}
+        <Pj look={JUNE} ruta={[{ f: c, x: 990, y: LOBBY_PISO }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: "parado" }, { f: c + 34, v: "brazosCruzados" }]}
           caras={[{ f: 0, v: "cansado" }, { f: c + 34, v: "determinado" }]} miradas={[{ f: 0, v: { x: 1, y: -0.6 } }, { f: c + 34, v: { x: 0.2, y: 0 } }]} giros={[{ f: 0, v: 0 }, { f: c + 34, v: 0.5 }]} />
       </>} />
   );
@@ -941,8 +1013,8 @@ export const P28Quedo: React.FC = () => {
 export const P29Interruptor: React.FC = () => {
   const f = useF();
   const a = 46, b = 92;
-  const mano = <ManoInterruptorV3 toques={[10, 26, 42]} manga="#2f7f86" />;
-  const fl = luzEn(f, [[-100, 1], [a + 8, 0.05], [a + 24, 1], [a + 40, 0.05]], 8);
+  const mano = <ManoInterruptorV4 toques={[10, 26, 42]} manga="#2f7f86" />;
+  const fl = luzEn(f, [[-100, 1], [a + 18, 0.05], [a + 32, 1]], 10);
   const fachada = (
     <Escena Set={StMarys} pal={PAL} claves={[mira(a, 1215, 330, 1.6), mira(b, 1215, 326, 1.66)]} seed={29} setProps={{ hora: "noche", luces: 0, ventana: 0, nieve: 0 }}
       medio={<VentanaSM x={1170} y={280} luz={fl} silueta={1} />} />
@@ -954,7 +1026,7 @@ export const P29Interruptor: React.FC = () => {
     <Escena Set={CuartoHosp} pal={PAL} claves={[mira(b, 1050, 640, 1.95), mira(139, 1060, 640, 1.98)]} seed={291} setProps={{ luz: l }}
       medio={<Pj look={JUNE} ruta={[{ f: b, x: JX, y: CUARTO.piso }]} dir={[{ f: 0, v: 1 }]} luz={l > 0.5 ? undefined : BORDE_FRIO}
         poses={[{ f: 0, v: "parado" }, { f: b + 36, v: "brazosCruzados" }]}
-        caras={[{ f: 0, v: "cansado" }, { f: b + 28, v: "triste" }, { f: b + 38, v: "determinado" }]} miradas={[{ f: 0, v: { x: -0.4, y: 0.1 } }, { f: b + 28, v: { x: 1, y: -0.2 } }]} giros={[{ f: 0, v: 0.3 }, { f: b + 28, v: 0 }]}
+        caras={[{ f: 0, v: "cansado" }, { f: b + 28, v: "triste" }, { f: b + 38, v: "determinado" }]} miradas={[{ f: 0, v: { x: -0.4, y: 0.1 } }, { f: b + 28, v: { x: 1, y: -0.2 } }]} giros={[{ f: 0, v: 0.3 }, { f: b + 28, v: -0.7 }]}
         ajuste={manoA({ look: JUNE, x: JX, y: CUARTO.piso, lado: "I", obj: (g) => ({ x: CUARTO.interruptor + 4, y: CUARTO.piso - 215 + (Math.abs(g - toq[0]) < 4 ? 8 : 0) - (Math.abs(g - toq[1]) < 4 ? 8 : 0) }), peso: (g) => (g < b + 32 ? 1 : 1 - rampa(g, b + 32, b + 40)) })} />} />
   );
   return <Cortes en={[[-100, mano], [a, fachada], [b, <Mezcla a={cuarto(0)} b={cuarto(1)} t={luz} />]]} />;

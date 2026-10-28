@@ -16,7 +16,7 @@ const CORTES: [number, React.FC, Trans?][] = [
   [0, A.P01Mini], [1.2, A.P02Despierta, LUZ(10, "#fff3d8")], [6.42, A.P03Radio], [9.18, A.P04Calle, FUN()], [15.06, A.P05Vereda], [16.38, A.P06Autos], [17.54, A.P07Ciudad],
   [18.76, A.P08Ocho, LUZ(12)], [23.14, A.P09Pregunta], [29.4, A.P10Real], [35.38, A.P11Cuenta, { tipo: "cortina", color: "#1d1624" }],
   [36.18, A.P12Hora, FUN(16)], [42.28, A.P13Theo], [50.7, A.P14Bus], [58.36, A.P15Superior], [63.52, A.P16Campera], [70.22, A.P17Grita],
-  [72.7, A.P18Lugares], [77.54, A.P19Holiday], [82.6, A.P20Censo, FUN(16)], [95.7, A.P21Existe, LUZ(12)], [103.44, A.P22Luces], [109.19, A.P23Represa],
+  [72.7, A.P18Lugares], [77.54, A.P19Holiday], [82.6, A.P20Censo], [95.7, A.P21Existe, LUZ(12)], [103.44, A.P22Luces], [109.19, A.P23Represa],
   [123.17, A.P24Semaforos], [129.83, A.P25Colina], [141.99, A.P26Ventana], [151.37, A.P27June, LUZ(12)], [162.59, A.P28Quedo], [169.31, A.P29Interruptor],
   [173.93, B.P30Lobby], [178.85, B.P31Pizarra], [183.97, B.P32Baja], [186.77, B.P33Dos], [191.73, B.P34Super, LUZ(12)], [201.37, B.P35Gondola],
   [215.13, B.P36Calorias], [221.69, B.P37Ciudad], [229.01, B.P38Fresco], [240.61, B.P39Regla1, { tipo: "cortina", color: "#1d1624" }], [246.37, B.P40Agua],
@@ -42,7 +42,7 @@ const HudLc01: React.FC = () => (
     {/* la historia: POPULATION 1 (cuaderno) → 2 (June) */}
     <Poblacion claves={[{ f: 0, v: 1 }, { f: S(189.2), v: 2, d: 10 }]} desde={S(95.0)} />
     <Segundo claves={1} prefijo="DAY " icono="dia" desde={S(58.4)} hasta={S(95.0)} y={48} />
-    <Segundo claves={[{ f: 0, v: 1 }, { f: S(129.83), v: 3, d: 10 }, { f: S(300.5), v: 10, d: 8 }, { f: S(302), v: 30, d: 120 }, { f: S(340.5), v: 33, d: 10 }, { f: S(383.4), v: 41, d: 16 }]} prefijo="DAY " icono="dia" desde={S(95.0)} y={186} />
+    <Segundo claves={[{ f: 0, v: 1 }, { f: S(169.31), v: 3, d: 1 }, { f: S(300.5), v: 10, d: 8 }, { f: S(302), v: 30, d: 120 }, { f: S(339.96), v: 33, d: 1 }, { f: S(383.32), v: 41, d: 1 }]} prefijo="DAY " icono="dia" desde={S(95.0)} y={186} />
     <MarcaCorto />
   </>
 );
