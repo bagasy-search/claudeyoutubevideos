@@ -15,7 +15,7 @@ import { A, Rotulo, gestos, loc } from "./comun_ep";
 import { BEN, DEV, DeEspaldas, FILA_10, LILY, MARCUS, NAN, NINO, Ore, OreEspaldas, PRIYA, ROSA } from "./elenco_lcb";
 import { GRANJA_PISO, GRANJA_PUNTOS, Granja } from "./granja";
 import { Mesa, Sotano, SOT_PISO, Techo, TECHO_PISO, CartelVerde } from "./insertos";
-import { Fantasma, MIR_PISO, Mirador } from "./mirador";
+import { MIR_PISO, Mirador } from "./mirador";
 import { SUB_PISO, Subsuelo } from "./subsuelo";
 import { VIS_PISO, VIS_PUNTOS, Visitantes } from "./visitantes";
 import { BarraRecorrido, CapaHud, CartelCanal, CasaTheo, Chispas, Contra, Cuenta, EspaldaGira, GloboEn, Huellas, Lagrimas, Llamarada, Mano, Onoma, Ondas, OreEspaldasAlza, PantallaRadio, Pastilla, PerillaMano, Pop, Sello, Senal, Silla, SillasTachadas, TapaPared, TapaVitrina, Tipeo, Vaho, palabrasHechas } from "./piezas_e3a";
@@ -24,6 +24,31 @@ import { osc } from "../../anikit/sets/comun";
 const ap = (f: number, a: number, d = 10) => interpolate(f, [a, a + d], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 const des = (f: number, a: number, d = 10) => 1 - ap(f, a, d);
 const cl = (f: number, a: number, b: number, c0 = 0, c1 = 1) => interpolate(f, [a, b], [c0, c1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+// cámara CONTINUA (fix5): puntos de paso [cuadro, X, Y, zoom] → una clave por cuadro con spline de Hermite
+// (tangentes de Catmull-Rom, zoom en escala log). Nunca llega a velocidad 0 a mitad de plano: sin lageos ni frenadas.
+type KP = [number, number, number, number];
+const camino = (kp: KP[]): Clave[] => {
+  const n = kp.length;
+  const v = (i: number) => [kp[i][1], kp[i][2], Math.log(kp[i][3])];
+  const tan = (i: number) => {
+    const a = Math.max(0, i - 1), b = Math.min(n - 1, i + 1);
+    const va = v(a), vb = v(b), dt = kp[b][0] - kp[a][0];
+    return va.map((x, j) => (vb[j] - x) / dt);
+  };
+  const out: Clave[] = [];
+  let i = 0;
+  for (let f = Math.floor(kp[0][0]); f <= Math.ceil(kp[n - 1][0]); f++) {
+    while (i < n - 2 && f > kp[i + 1][0]) i++;
+    const h = kp[i + 1][0] - kp[i][0];
+    const s = Math.min(1, Math.max(0, (f - kp[i][0]) / h));
+    const p0 = v(i), p1 = v(i + 1), m0 = tan(i), m1 = tan(i + 1);
+    const h00 = 2 * s ** 3 - 3 * s ** 2 + 1, h10 = s ** 3 - 2 * s ** 2 + s, h01 = -2 * s ** 3 + 3 * s ** 2, h11 = s ** 3 - s ** 2;
+    const q = p0.map((x, j) => h00 * x + h10 * h * m0[j] + h01 * p1[j] + h11 * h * m1[j]);
+    out.push(mira(f, q[0], q[1], Math.exp(q[2])));
+  }
+  return out;
+};
 
 // etiqueta (número + rótulo) colgada de un punto del mundo: sigue al personaje aunque la cámara se mueva
 const Sobre: React.FC<{ claves: Clave[]; pos: (f: number) => { X: number; Y: number }; rotulo: string; valor: number; desde: number; hasta: number; tam?: number }> = ({ claves, pos, rotulo, valor, desde, hasta, tam = 92 }) => {
@@ -79,23 +104,46 @@ const LOS10 = [
   { k: "rosa", look: ROSA, x: 1200 }, { k: "dev", look: DEV, x: 1320, }, { k: "priya", look: PRIYA, x: 1440 }, { k: "nan", look: NAN, x: 1570 },
   { k: "ben", look: BEN, x: 1680, nino: true }, { k: "lily", look: LILY, x: 1775, nino: true },
 ];
+// obrero OPACO (fix5: nada de alfa = nada de doble exposición); tono según la fila (atrás más oscuro y frío)
+const Obrero: React.FC<{ x: number; y: number; s: number; f: number; seed: number; fila: number; pop: number }> = ({ x, y, s, f, seed, fila, pop }) => {
+  if (pop <= 0.001) return null;
+  const sw = Math.sin(f / 6 + seed) * 10;
+  const T = [["#ffcf6e", "#ff8a2a", "#f2c230", "#f6ecd2"], ["#d9a85a", "#d26a24", "#c99a28", "#cfc4ae"], ["#a8844e", "#9c5426", "#9a7a2a", "#9e978a"]][fila];
+  return (
+    <g transform={`translate(${x},${y}) scale(${s * pop},${s * (0.4 + 0.6 * pop)})`}>
+      <rect x={-7} y={-34} width={5} height={34} fill={T[0]} transform={`rotate(${sw} -4 -34)`} />
+      <rect x={2} y={-34} width={5} height={34} fill={T[0]} transform={`rotate(${-sw} 4 -34)`} />
+      <rect x={-10} y={-70} width={20} height={38} rx={5} fill={T[1]} stroke="#3a1e10" strokeWidth={1.4} />
+      <rect x={-10} y={-56} width={20} height={5} fill={T[3]} />
+      <circle cx={0} cy={-80} r={9} fill={T[0]} stroke="#3a1e10" strokeWidth={1.2} />
+      <path d="M-11,-82 Q0,-98 11,-82 Z" fill={T[2]} stroke="#3a1e10" strokeWidth={1.2} />
+    </g>
+  );
+};
 export const P02: React.FC = () => {
   const f = useF();
   const l = loc(3.9);
-  const diez = ap(f, l(12.15), 12);
+  const diez = ap(f, l(12.1), 8);
   const luz = { cable: ap(f, l(6.4), 8), gas: ap(f, l(5.5), 8) * 0.6, agua: ap(f, l(5.5), 8), cloaca: ap(f, l(6.1), 8) };
-  const f0 = l(10.3), f1 = l(12.0);
-  const CL: Clave[] = [mira(0, 420, 520, 1.7), mira(l(8.0), 900, 520, 1.5), mira(l(12.0), 1500, 520, 1.3), mira(l(12.9), 1260, 520, 0.95), mira(l(13.7), 1260, 520, 0.9), mira(l(14.9), 1700, 480, 1.55), mira(l(15.6), 1680, 470, 1.58), mira(l(16.1), 1560, 450, 1.6), mira(l(16.9), 1230, 500, 0.92, { curva: "inout" })];
+  const e0 = l(8.3), e1 = l(9.6); // entran (pop con resorte) con «thousands of workers»
+  const f0 = l(10.9), f1 = l(12.1); // se van (se encogen de a uno) con «and now you have 10 people»
+  const CL: Clave[] = camino([[-8, 380, 560, 1.55], [l(6.4), 700, 540, 1.38], [l(8.6), 1000, 520, 1.15], [l(11.0), 1160, 515, 1.0], [l(12.7), 1240, 520, 1.08], [l(14.2), 1690, 500, 1.5], [l(15.3), 1660, 485, 1.55], [l(16.2), 1560, 470, 1.56], [l(17.1) + 10, 1260, 505, 1.3]]);
+  // 3 filas escalonadas por profundidad: atrás chicos y oscuros, adelante grandes y saturados
+  const FILAS = [{ y: SUB_PISO - 36, s: 2.0, n: 62, dx: 46 }, { y: SUB_PISO - 17, s: 2.4, n: 52, dx: 55 }, { y: SUB_PISO, s: 2.9, n: 44, dx: 66 }];
   return (
     <Escena Set={Subsuelo} pal={PAL} setProps={{ hora: "invierno", luz, flujo: 1, nieve: 0.5, luces: 0 }} seed={12} mano={2}
       claves={CL}
       medio={<>
-        {f < f1 + 10 && <g>
-          {Array.from({ length: 90 }).map((_, i) => {
-            const ti = f0 + (((i * 37) % 90) / 90) * (f1 - f0);
-            const o = 1 - ap(f, ti, 8);
-            return o > 0.01 ? <g key={i} opacity={o}><Fantasma x={-500 + i * 46 + (i % 3) * 13} y={SUB_PISO + (i % 4) * 6} s={2.2 + (i % 5) * 0.12} f={f} seed={i} /></g> : null;
-          })}
+        {f > e0 - 2 && f < f1 + 14 && <g>
+          {FILAS.map((r, fi) => Array.from({ length: r.n }).map((_, i) => {
+            const k = fi * 70 + i;
+            const ti = e0 + (((k * 23) % 37) / 37) * (e1 - e0);
+            const to = f0 + (((k * 37) % 41) / 41) * (f1 - f0);
+            const pin = spring({ frame: f - ti, fps: 30, config: { damping: 11, stiffness: 170 } });
+            const pout = 1 - cl(f, to, to + 6);
+            const x = -420 + i * r.dx + (fi % 2) * 22 + 8 * Math.sin(k * 1.7) + (f - ti) * 0.5;
+            return <Obrero key={k} x={x} y={r.y} s={r.s + (i % 3) * 0.06} f={f} seed={k} fila={2 - fi} pop={Math.max(0, pin) * pout} />;
+          }))}
         </g>}
         {LOS10.map((p, i) => (
           <A key={p.k} look={p.look} escala={(p.nino ? NINO : 1) * 1.2} seed={20 + i} ruta={[{ f: 0, x: p.x, y: SUB_PISO }]} dir={[{ f: 0, v: i < 5 ? 1 : -1 }]}
@@ -109,7 +157,7 @@ export const P02: React.FC = () => {
         ))}
       </>}
       hud={<>
-        <Pastilla texto="THOUSANDS OF WORKERS" x={1120} y={120} desde={l(4.6)} hasta={f1 + 4} color="#ffcf6e" tam={70} />
+        <Pastilla texto="THOUSANDS OF WORKERS" x={1120} y={120} desde={l(8.6)} hasta={f1 + 4} color="#ffcf6e" tam={70} />
         <Pastilla texto="10 PEOPLE" x={1240} y={130} desde={f1 + 2} hasta={l(13.6)} color="#ffffff" tam={100} />
         <Sello claves={CL} X={1800} Y={SUB_PISO - 262} numero="12" rotulo="BEN & LILY" desde={l(14.3)} hasta={l(17.1) + 2} salida={3} fondo tam={72} xMin={300} xMax={1620} />
         <Sello claves={CL} X={1570} Y={SUB_PISO - 430} numero="80" rotulo="NAN" desde={l(15.6)} hasta={l(17.1) + 2} salida={3} fondo tam={72} xMin={300} xMax={1620} />
@@ -125,32 +173,54 @@ export const P03: React.FC = () => {
   const P = 840;
   const Q = "How long can 10 people\nkeep a city running?";
   const ph = palabrasHechas(Q, f, l(17.5), 0.8);
-  const orden = [LOS10[0], LOS10[1], LOS10[2], LOS10[3], LOS10[4], LOS10[5], LOS10[6], LOS10[7], LOS10[8], LOS10[9]];
   const pos: Record<string, number> = { gus: 1040, theo: 880, june: 715, marcus: 1200, rosa: 550, dev: 1360, priya: 385, nan: 1520, ben: 1650, lily: 260 };
   const luzF = { lado: -1 as const, color: "#ff9a4a", fuerza: 0.9 };
-  const poseDe = (k: string, i: number): any[] => {
+  // fix5 · ACCIÓN por frase (nada de «respirar»):
+  // 17.4-18.6 miran hacia abajo, a la ciudad, en cascada de izquierda a derecha · las luces se apagan palabra a palabra → reaccionan
+  // 20.4-21.0 se miran entre ellos (cada uno gira hacia el del centro) · 21.1-22.6 «Let's count it»: levantan la mano DE A UNO, con su número
+  const ordenX = Object.keys(pos).sort((a, b) => pos[a] - pos[b]);
+  const rk = (k: string) => ordenX.indexOf(k);
+  const tBaja = (k: string) => l(17.4) + rk(k) * 3.5;
+  const tMira = (k: string) => l(20.35) + Math.abs(rk(k) - 4.5) * 2.5;
+  const tMano = (k: string) => l(21.1) + rk(k) * 4.6;
+  const base = (k: string, i: number): any[] => {
     if (k === "gus") return [{ f: 0, v: {} }, { f: l(18.4), v: "brazosCruzados" }];
-    if (k === "june") return [{ f: 0, v: {} }, { f: l(18.6), v: { hD: 70, cD: 95, hI: 10, cI: 40, cabeza: 6 } }, ...gestos(l(19.6), l(22.9), [{ hD: 62, cD: 105, hI: 10, cI: 40, cabeza: 8 }, { hD: 74, cD: 90, hI: 10, cI: 40, cabeza: 4 }], 26)];
-    if (k === "ben" || k === "lily") return [{ f: 0, v: {} }, ...gestos(l(18.0), l(22.9), [{ hD: 20, cD: 20 }, {}, { hI: -12, cI: 20 }, {}], 30)];
-    if (k === "theo") return [{ f: 0, v: {} }, ...gestos(l(18.0), l(22.9), ["pensar", {}, "manosCintura", {}], 36)];
-    if (k === "rosa") return [{ f: 0, v: {} }, ...gestos(l(18.2), l(22.9), ["manosCintura", {}, "pensar", {}], 34)];
-    if (k === "marcus") return [{ f: 0, v: {} }, ...gestos(l(18.0), l(22.9), ["manosCintura", { tronco: 3 }, {}], 30)];
-    if (k === "dev") return [{ f: 0, v: {} }, { f: l(18.3), v: "encogerse" }, ...gestos(l(20.0), l(22.9), ["encogerse", "manosCara"], 40)];
-    if (k === "nan") return [{ f: 0, v: {} }, ...gestos(l(18.5), l(22.9), [{ hD: 40, cD: 80, tronco: 2 }, {}, { hI: -20, cI: 30 }, {}], 32)];
-    return [{ f: 0, v: {} }, ...gestos(l(18.0 + i * 0.1), l(22.9), ["pensar", {}, "manosCintura"], 40)];
+    if (k === "june") return [{ f: 0, v: {} }, { f: l(18.6), v: { hD: 70, cD: 95, hI: 10, cI: 40, cabeza: 6 } }, ...gestos(l(19.4), l(20.9), [{ hD: 62, cD: 105, hI: 10, cI: 40, cabeza: 8 }, { hD: 74, cD: 90, hI: 10, cI: 40, cabeza: 4 }], 20)];
+    if (k === "theo") return [{ f: 0, v: {} }, { f: l(18.2), v: "pensar" }, { f: l(19.8), v: "manosCintura" }];
+    if (k === "rosa") return [{ f: 0, v: {} }, { f: l(18.3), v: "manosCintura" }, { f: l(19.9), v: "pensar" }];
+    if (k === "marcus") return [{ f: 0, v: {} }, { f: l(18.1), v: "manosCintura" }, { f: l(19.6), v: { tronco: 3, hD: 30, cD: 60 } }];
+    if (k === "dev") return [{ f: 0, v: {} }, { f: l(18.3), v: "encogerse" }, { f: l(19.7), v: "manosCara" }];
+    if (k === "nan") return [{ f: 0, v: {} }, { f: l(18.5), v: { hD: 40, cD: 80, tronco: 2 } }, { f: l(19.9), v: { hI: -20, cI: 30 } }];
+    if (k === "ben" || k === "lily") return [{ f: 0, v: {} }, { f: l(18.0), v: { hD: 20, cD: 20 } }, { f: l(19.3), v: { hI: -12, cI: 20 } }];
+    return [{ f: 0, v: {} }, { f: l(18.0 + i * 0.1), v: "pensar" }];
   };
+  const poseDe = (k: string, i: number): any[] => {
+    const tm = tMano(k);
+    const b = base(k, i).filter((c) => c.f < tm - 8);
+    const arriba = k === "june" ? { hI: 160, cI: 10, hD: 70, cD: 95, cabeza: -4 } : { hD: 162, cD: 8, hI: 10, cI: 20, cabeza: -4 };
+    return [...b, { f: tm - 6, v: k === "june" ? { hD: 70, cD: 95, hI: 40, cI: 60 } : { hD: 40, cD: 60 } }, { f: tm, v: arriba }, { f: tm + 4, v: { ...arriba, hD: (arriba as any).hD - 6 } }];
+  };
+  const CL = camino([[0, 940, 680, 1.0], [l(18.8), 900, 665, 1.05], [l(20.5), 1000, 655, 1.12], [l(22.9) + 20, 960, 640, 1.22]]);
   return (
     <Escena Set={Contra} pal={PAL} setProps={{ apagadas: ph }} seed={13} mano={2}
-      claves={[mira(0, 960, 680, 1.0), mira(l(22.9), 960, 640, 1.2, { curva: "inout" })]}
+      claves={CL}
       medio={<>
-        {orden.map((p, i) => (
-          <A key={p.k} look={p.look} escala={(p.nino ? NINO : 1) * 1.05} seed={60 + i} ruta={[{ f: 0, x: pos[p.k], y: P + (i % 2) * 6 }]} dir={[{ f: 0, v: i % 2 ? -1 : 1 }]} luz={luzF}
+        {LOS10.map((p, i) => (
+          <A key={p.k} look={p.look} escala={(p.nino ? NINO : 1) * 1.05} seed={60 + i} ruta={[{ f: 0, x: pos[p.k], y: P + (i % 2) * 6 }]} dir={[{ f: 0, v: i % 2 ? -1 : 1 }, { f: tMira(p.k), v: pos[p.k] < 960 ? 1 : -1 }]} luz={luzF}
             poses={poseDe(p.k, i)}
-            caras={p.k === "dev" ? [{ f: 0, v: "triste" }] : p.k === "gus" ? [{ f: 0, v: "determinado" }] : p.k === "june" ? [{ f: 0, v: "neutral" }, { f: l(18.6), v: "duda" }] : [{ f: 0, v: "duda" }, { f: l(20.5), v: i % 2 ? "triste" : "duda" }]}
-            giros={p.k === "ben" || p.k === "lily" ? [{ f: 0, v: 0 }, { f: l(18.4), v: -0.9 }] : p.k === "gus" || p.k === "nan" ? [{ f: 0, v: 0 }, { f: l(18.4), v: 0.5 }, { f: l(21), v: -0.3 }] : [{ f: 0, v: 0 }]}
-            miradas={p.k === "ben" || p.k === "lily" ? [{ f: 0, v: { x: -0.8, y: 0 } }] : p.k === "june" ? [{ f: 0, v: { x: 0, y: 0.6 } }] : [{ f: 0, v: { x: 0, y: -0.15 } }, { f: l(20.5), v: { x: 0.2, y: -0.3 } }]}
+            caras={p.k === "dev" ? [{ f: 0, v: "triste" }, { f: tMano(p.k), v: "determinado" }] : p.k === "gus" ? [{ f: 0, v: "determinado" }] : [{ f: 0, v: "duda" }, { f: tBaja(p.k) + 14, v: i % 2 ? "sorpresa" : "triste" }, { f: tMira(p.k), v: "duda" }, { f: tMano(p.k), v: i % 3 ? "feliz" : "determinado" }]}
+            giros={[{ f: 0, v: 0 }, { f: tBaja(p.k), v: 0 }, { f: tMira(p.k), v: 0.7 }, { f: tMano(p.k), v: 0.15 }]}
+            miradas={[{ f: 0, v: { x: 0, y: -0.15 } }, { f: tBaja(p.k), v: { x: 0, y: 0.75 } }, { f: tMira(p.k), v: { x: pos[p.k] < 960 ? 0.9 : -0.9, y: 0 } }, { f: tMano(p.k), v: { x: 0, y: -0.2 } }]}
             enManoD={p.k === "june" ? (ff: number) => (ff > l(18.6) ? <g transform="translate(14,-8) rotate(-14)"><Libro color="#c0352c" abierto /></g> : null) : undefined} />
         ))}
+        {/* el número de cada uno salta sobre la mano levantada */}
+        {LOS10.map((p) => {
+          const t = tMano(p.k);
+          if (f < t) return null;
+          const sp = spring({ frame: f - t, fps: 30, config: { damping: 9, stiffness: 190 } });
+          const alto = (p.nino ? NINO : 1) * 1.05 * 345;
+          return <text key={p.k} x={pos[p.k] + (p.k === "june" ? -30 : 26)} y={P - alto - 14 * sp} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={700} fontSize={62 * (0.45 + 0.55 * sp)} fill="#ffcf6e" stroke="#1a1018" strokeWidth={8} paintOrder="stroke">{rk(p.k) + 1}</text>;
+        })}
       </>}
       hud={<Tipeo texto={Q} x={960} y={90} desde={l(17.5)} cps={0.8} tam={84} />}
     />
@@ -388,16 +458,16 @@ export const P10: React.FC = () => {
   const P = CANAL_PISO;
   return (
     <Escena Set={CanalPark} pal={PAL} setProps={{ hora: "invierno", luces: 0, nieve: 1, ventanaGus: 0.2, hielo: 0.6, cae: true }} seed={20}
-      claves={[mira(0, 490, 700, 1.3), mira(l(64.5), 470, 690, 1.35), mira(l(66.4), 490, 680, 1.5, { curva: "out" })]}
+      claves={camino([[0, 500, 700, 1.3], [l(62.0), 485, 695, 1.33], [l(64.4), 440, 690, 1.36], [l(66.2), 420, 680, 1.5], [l(67.7) + 14, 410, 672, 1.58]])}
       detras={<CartelCanal />}
       medio={<>
         <Ore x={CANAL_PUNTOS.gus + 135} y={P} s={1.55} dir={1} f={f} sentado={1} cola={f > l(64.8) ? 1.8 : 0.15} cabeza={f < l(64) ? Math.sin(f / 50) * 8 : -10} />
-        <A look={GUS} ruta={[{ f: 0, x: 90, y: P }, { f: l(64.6), x: 90, y: P }, { f: l(65.8), x: CANAL_PUNTOS.gus - 25, y: P }]} dir={[{ f: 0, v: 1 }]} opacidad={(ff) => ap(ff, l(64.6), 8)}
-          poses={[{ f: 0, v: {} }, { f: l(65.9), v: { hD: 70, cD: 30, tronco: 18, cabeza: 12 } }]}
+        <A look={GUS} ruta={[{ f: 0, x: -420, y: P }, { f: l(64.2), x: -420, y: P }, { f: l(65.8), x: CANAL_PUNTOS.gus - 105, y: P, curva: "out" }]} dir={[{ f: 0, v: 1 }]}
+          poses={[{ f: 0, v: {} }, { f: l(65.8), v: {} }, { f: l(66.1), v: { hD: 82, cD: 12, tronco: 22, cabeza: 12 } }]}
           ajuste={(p, ff) => (ff > l(65.9) ? { ...p, hD: p.hD + 14 * Math.sin(ff / 2.5), cD: p.cD + 12 * Math.sin(ff / 2.5) } : p)} caras={[{ f: 0, v: "feliz" }]} />
       </>}
       hud={<>
-        <Cuenta x={1250} y={170} rotulo="DAY" claves={[{ f: 0, v: 1 }, { f: l(61.5), v: 2, d: 5 }, { f: l(62.5), v: 3, d: 5 }, { f: l(63.5), v: 4, d: 5 }]} desde={l(60.6)} hasta={l(64.7)} tam={150} color="#f6ecd2" />
+        <Cuenta x={1250} y={170} rotulo="DAY" claves={[{ f: 0, v: 1 }, { f: l(61.2), v: 2, d: 5 }, { f: l(61.95), v: 3, d: 5 }, { f: l(62.7), v: 4, d: 5 }]} desde={l(60.5)} hasta={l(65.2)} tam={150} color="#f6ecd2" />
         <Rotulo texto="ORE" x={1250} y={330} desde={l(66.6)} color="#ffcf6e" tam={120} rot={-4} />
       </>}
     />
@@ -409,24 +479,56 @@ export const P11: React.FC = () => {
   const f = useF();
   const l = loc(67.7);
   const P = TECHO_PISO;
-  const noches = [l(75.6), l(77.9), l(80.2)];
+  // fix5 · el general de 17 s se parte con la cámara, frase por frase (Gus ≥30 % del alto casi todo el plano):
+  // 67.7 sale por la puerta del techo y camina a la radio · 70.0 «ham radio operator, licensed, call sign, fifty years»: plano medio con el
+  // micrófono y la LICENCIA en la mano · 75.0 «built a real antenna on the roof»: abre, Gus sube los tramos del mástil (tose: estaba enfermo)
+  // 78.4 «ran his radio off car batteries»: inserto de las baterías, conecta las pinzas → chispa y el LED prende · 80.3 «called out every
+  // single night»: noches que pasan (luna), CQ CQ y ondas · 82.3 «that's how the number starts to move»: empuje lento sobre Gus.
+  const noches = [l(80.5), l(81.7), l(82.9)];
   const mic = <rect x={-8} y={-18} width={16} height={34} rx={6} fill="#1d1d22" />;
-  const CL: Clave[] = [mira(0, 720, 560, 1.4), mira(l(70.0), 1150, 580, 1.1, { curva: "inout" }), mira(l(74.8), 1100, 640, 1.5), mira(l(76.2), 1000, 470, 0.95, { curva: "inout" }), mira(l(77.6), 1000, 470, 0.97), mira(l(78.6), 1040, 700, 1.7, { curva: "inout" }), mira(l(82.2), 1040, 690, 2.05, { curva: "inout" }), mira(l(84.4), 1040, 690, 2.1)];
-  const tr = [l(71.4), l(72.8), l(74.2)];
+  const lic = (u: number) => (
+    <g transform={`translate(-6,-34) rotate(-8) scale(${0.3 + 0.7 * u})`}>
+      <rect x={-46} y={-30} width={92} height={60} rx={6} fill="#f6ecd2" stroke="#3a2e22" strokeWidth={3} />
+      <rect x={-38} y={-22} width={22} height={28} rx={3} fill="#8a6b3e" />
+      <rect x={-10} y={-20} width={46} height={6} rx={3} fill="#3a2e22" /><rect x={-10} y={-8} width={40} height={5} rx={2} fill="#7a6a58" /><rect x={-10} y={2} width={34} height={5} rx={2} fill="#7a6a58" />
+      <text x={0} y={22} textAnchor="middle" fontFamily="JetBrains Mono, monospace" fontWeight={800} fontSize={12} fill="#c0352c">FCC · AMATEUR</text>
+    </g>
+  );
+  const CL = camino([[-10, 380, 700, 1.7], [l(69.5), 860, 690, 1.72], [l(71.2), 1060, 690, 2.0], [l(74.4), 1100, 680, 2.08], [l(75.9), 1230, 560, 1.35], [l(77.8), 1270, 520, 1.3], [l(78.7), 1370, 745, 2.3], [l(80.1), 1350, 755, 2.4], [l(81.0), 1060, 610, 1.35], [l(82.5), 1040, 650, 1.62], [l(84.4) + 10, 1040, 690, 2.05]]);
+  const tr = [l(75.8), l(76.6), l(77.4)];
+  const toses = [l(76.2), l(77.0)];
+  const conecta = [l(79.05), l(79.55)];
+  const cable = cl(f, l(78.6), l(79.5));
+  const ledOn = f > conecta[1] + 3;
   return (
-    <Escena Set={Techo} pal={PAL} setProps={{ onda: noches, luna: interpolate(f, [l(75), l(82.3)], [0, 3], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) % 1 }} seed={21}
+    <Escena Set={Techo} pal={PAL} setProps={{ onda: noches, luna: interpolate(f, [l(80.3), l(84.0)], [0, 3], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) % 1 }} seed={21}
       claves={CL}
       medio={<>
-        <A look={GUS} ruta={[{ f: 0, x: 225, y: P }, { f: l(70.0), x: 1330, y: P }, { f: l(74.8), x: 1330, y: P }, { f: l(75.5), x: 1000, y: P }]} dir={[{ f: 0, v: 1 }]}
-        poses={[{ f: 0, v: {} }, { f: l(70.3), v: { hD: 60, cD: 80, tronco: 10 } }, ...gestos(l(70.6), l(75.4), ["agarrarAlto", { hD: 150, cD: 10, cabeza: -12 }, { hD: 120, cD: 40, tronco: 4 }], 14), ...gestos(l(75.4), l(84.4), [{ hD: 105, cD: 122, cabeza: -3 }, { hD: 55, cD: 75 }], 40)]}
-        enManoD={(ff) => (ff > l(75.3) ? <g transform="translate(6,-4)">{mic}</g> : null)}
-        caras={[{ f: 0, v: "determinado" }, { f: l(71), v: "feliz" }]} habla={[[l(75.6), l(76.6)], [l(77.9), l(78.9)], [l(80.2), l(81.2)]]} />
+        {/* el cable de las baterías a la radio: crece cuando Gus lo conecta; LED verde fuerte al cerrar el circuito */}
+        <path d={`M1330,${P - 160} Q1420,${P - 140} 1386,${P - 98}`} stroke="#1d1a20" strokeWidth={5} fill="none" strokeDasharray="200" strokeDashoffset={200 * (1 - cable)} />
+        <path d={`M1300,${P - 160} Q1260,${P - 130} 1290,${P - 98}`} stroke="#c0352c" strokeWidth={5} fill="none" strokeDasharray="200" strokeDashoffset={200 * (1 - cable)} />
+        {ledOn && <><circle cx={1310} cy={P - 230} r={10} fill="#7cff9a" /><Halo x={1310} y={P - 230} r={90} color="#7cff9a" fuerza={0.7} /></>}
+        {conecta.map((t, k) => <Chispas key={k} x={k ? 1386 : 1290} y={P - 100} t0={t} n={14} dur={16} />)}
+        <A look={GUS} ruta={[{ f: 0, x: 260, y: P }, { f: l(69.6), x: 990, y: P, curva: "lineal" }, { f: l(74.9), x: 990, y: P }, { f: l(75.6), x: 1330, y: P }, { f: l(78.0), x: 1330, y: P }, { f: l(78.6), x: 1500, y: P }, { f: l(80.1), x: 1500, y: P }, { f: l(80.8), x: 990, y: P }]}
+          dir={[{ f: 0, v: 1 }, { f: l(78.5), v: -1 }, { f: l(80.2), v: -1 }, { f: l(80.8), v: 1 }]}
+          poses={[{ f: 0, v: {} }, { f: l(69.7), v: { hD: 60, cD: 80, tronco: 4 } }, { f: l(70.3), v: { hD: 100, cD: 110, cabeza: -2 } }, { f: l(71.8), v: { hD: 100, cD: 110, hI: 70, cI: 30, cabeza: -2 } }, { f: l(73.0), v: { hD: 96, cD: 116, hI: 92, cI: 14, cabeza: 4 } }, { f: l(74.6), v: { hD: 60, cD: 80, hI: 10, cI: 20 } },
+            ...gestos(l(75.6), l(77.9), ["agarrarAlto", { hD: 150, cD: 10, cabeza: -12 }, { hD: 120, cD: 40, tronco: 4 }], 12),
+            { f: l(78.6), v: "agacharse" }, { f: l(79.0), v: { ...{ tronco: 30, hD: 70, cD: 10, hI: 60, cI: 20 } } }, { f: l(79.5), v: { tronco: 32, hD: 64, cD: 16, hI: 74, cI: 8 } }, { f: l(80.1), v: {} },
+            { f: l(80.9), v: { hD: 105, cD: 122, cabeza: -3 } }, ...gestos(l(81.2), l(84.4), [{ hD: 105, cD: 122, cabeza: -3 }, { hD: 98, cD: 128, cabeza: 2, tronco: 3 }], 18)]}
+          ajuste={(p, ff) => { const t = toses.find((x) => ff > x && ff < x + 14); return t ? { ...p, tronco: p.tronco + Math.sin((ff - t) * 1.4) * 6, cabeza: p.cabeza + Math.sin((ff - t) * 1.4) * 8 } : p; }}
+          enManoD={(ff) => ((ff > l(70.2) && ff < l(74.8)) || ff > l(80.8) ? <g transform="translate(6,-4)">{mic}</g> : null)}
+          enManoI={(ff) => (ff > l(71.8) && ff < l(74.7) ? lic(cl(ff, l(71.8), l(72.2))) : null)}
+          caras={[{ f: 0, v: "determinado" }, { f: l(71.8), v: "feliz" }, { f: l(75.6), v: "cansado" }, { f: l(77.6), v: "determinado" }, { f: l(79.6), v: "feliz" }, { f: l(80.8), v: "determinado" }]}
+          habla={[[l(70.4), l(71.4)], [l(80.9), l(81.4)], [l(82.1), l(82.6)], [l(83.3), l(83.8)]]} />
         {tr.map((t, k) => { const u = Math.min(1, Math.max(0, (f - t) / 8)); return u > 0 ? <g key={k} transform={`translate(1400,${300 - 60 * k}) scale(1,${u})`}><rect x={-(10 - 2 * k)} y={-60} width={2 * (10 - 2 * k)} height={62} fill="#e8e2d2" stroke="#55525e" strokeWidth={2} /><rect x={-(13 - 2 * k)} y={-6} width={2 * (13 - 2 * k)} height={10} fill="#55525e" />{k === 2 && <circle cx={0} cy={-62} r={8} fill="#ff3a2e" />}</g> : null; })}
+        <Onoma texto="COF!" x={1180} y={P - 330} tiempos={toses} tam={58} color="#f6ecd2" />
       </>}
       hud={<>
-        {[l(75.6), l(77.9), l(80.2)].map((t, k) => <GloboEn key={k} claves={CL} X={1000} Y={P - 345} texto="CQ CQ" desde={t} hasta={t + 34} cola="abajo" tam={60} />)}
-        <Pastilla texto="50 YEARS ON THE AIR" x={1240} y={130} desde={l(72.0)} hasta={l(75.4)} tam={64} color="#ffcf6e" />
-        <Pastilla texto="NIGHT AFTER NIGHT" x={1240} y={130} desde={l(75.8)} hasta={l(84.3)} tam={64} />
+        {noches.map((t, k) => <GloboEn key={k} claves={CL} X={1010} Y={P - 345} texto="CQ CQ" desde={t + 4} hasta={t + 32} cola="abajo" tam={60} />)}
+        <Pastilla texto="HAM RADIO · LICENSED" x={1240} y={130} desde={l(70.3)} hasta={l(73.5)} tam={64} color="#ffcf6e" />
+        <Pastilla texto="50 YEARS ON THE AIR" x={1240} y={130} desde={l(73.6)} hasta={l(75.0)} tam={64} color="#ffcf6e" />
+        <Pastilla texto="CAR BATTERIES" x={1240} y={130} desde={l(78.7)} hasta={l(80.3)} tam={64} />
+        <Pastilla texto="NIGHT AFTER NIGHT" x={1240} y={130} desde={l(80.6)} hasta={l(84.3)} tam={64} />
       </>}
     />
   );
@@ -506,13 +608,14 @@ export const P14: React.FC = () => {
   const dialAng = f > l(104) ? -30 * Math.cos((Math.PI * (f - l(104))) / 15) : 0;
   return (
     <Escena Set={Barrio} pal={PAL} setProps={{ hora: "invierno", luces: 0, nieve: 0.8, ventanaCasa: 0 }} seed={24}
-      claves={[mira(0, 1480, 610, 1.1), mira(l(103.5), 1460, 640, 1.3, { curva: "inout" }), mira(l(108.0), 1460, 640, 1.35), mira(l(108.5), 1900, 570, 1.3, { curva: "inout" }), mira(l(109.7), 1910, 570, 1.32), mira(l(110.3), 1490, 600, 1.9, { curva: "inout" }), mira(l(113.0), 1490, 600, 1.95), mira(l(113.4), 1500, 600, 2.1, { curva: "out" }), mira(l(116.3), 1500, 600, 2.2)]}
+      claves={camino([[-8, 1570, 680, 2.2], [l(102.3), 1580, 675, 2.45], [l(104.4), 1590, 670, 2.6], [l(105.9), 2150, 480, 1.08], [l(107.6), 1560, 680, 2.4], [l(109.8), 1550, 685, 2.55], [l(111.3), 1980, 520, 1.3], [l(112.7), 1950, 530, 1.32], [l(113.6), 1560, 670, 2.7], [l(116.3) + 10, 1555, 665, 2.9]])}
       detras={<g>
         <Edificio x={2150} y={P} w={900} h={760} color="#4a3a48" luces={0} seed="umd" techoNieve={1} />
-        <rect x={2150 + 12 + 46 * 6} y={P - 760 + 30 + 62 * 4} width={24} height={32} fill="#ffcf6e" opacity={ap(f, l(108.5), 8)} />
+        <rect x={2150 + 12 + 46 * 6} y={P - 760 + 30 + 62 * 4} width={24} height={32} fill="#ffcf6e" opacity={ap(f, l(110.9), 8)} />
         <rect x={2350} y={P - 820} width={500} height={70} fill="#2a2430" /><text x={2600} y={P - 770} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={600} fontSize={44} fill="#f6ecd2" letterSpacing={4}>UMD · RESIDENCE HALL</text>
       </g>}
       medio={<>
+        <rect x={864} y={P - 352} width={72} height={56} rx={5} fill="#2f6a8a" /><text x={900} y={P - 314} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={600} fontSize={24} fill="#ffffff">BUS</text>
         <Auto x={1450} y={P} color="#6a2f36" tipo="pickup" s={2.2} dir={-1} nieve={0.7} />
         <A look={DEV} ruta={[{ f: 0, x: 1560, y: P - 120 }]} dir={[{ f: 0, v: -1 }]} asiento={[{ f: 0, v: 0 }]} luz={BORDE_FRIO}
           poses={[{ f: 0, v: { ...{ tronco: 6, pI: 88, rI: 88, pD: 92, rD: 92 }, hD: 30, cD: 130, cabeza: 8 } }, ...gestos(l(104), l(113), [{ tronco: 6, pI: 88, rI: 88, pD: 92, rD: 92, hD: 62, cD: 70, cabeza: 8 }, { tronco: 8, pI: 88, rI: 88, pD: 92, rD: 92, hD: 78, cD: 40, cabeza: 4 }, { tronco: 6, pI: 88, rI: 88, pD: 92, rD: 92, hD: 30, cD: 130, cabeza: 8 }], 15)]}
@@ -521,13 +624,13 @@ export const P14: React.FC = () => {
         {/* el CB: caja con dial y luz, antena que vibra */}
         <g transform="translate(1465,60)">
           <rect x={-50} y={P - 330} width={100} height={60} rx={8} fill="#1d1d22" stroke="#3a3a42" strokeWidth={3} />
-          <rect x={-40} y={P - 322} width={42} height={20} rx={3} fill={f > l(106) ? "#7cff9a" : "#2a4a30"} opacity={0.8} />
+          <rect x={-40} y={P - 322} width={42} height={20} rx={3} fill={f > l(108.6) ? "#7cff9a" : "#2a4a30"} opacity={0.8} />
           <g transform={`translate(26,${P - 300}) rotate(${dialAng})`}><circle r={16} fill="#55555e" /><rect x={-2} y={-14} width={4} height={12} fill="#f6ecd2" /></g>
         </g>
         <path d={`M1592,${P - 300} Q${1592 + vib * 0.6},${P - 520} ${1592 + vib},${P - 740}`} stroke="#c9c4b8" strokeWidth={5} fill="none" strokeLinecap="round" />
         <circle cx={1592 + vib} cy={P - 740} r={8} fill="#ff3a2e" />
-        {f > l(106.2) && <g><circle cx={1330} cy={P - 330} r={10} fill="#ff3a2e" opacity={Math.floor(f / 5) % 2 ? 1 : 0.4} /><Halo x={1330} y={P - 330} r={60} color="#ff3a2e" fuerza={0.6} /></g>}
-        {f > l(106.2) && <Ondas x={1592 + vib} y={P - 740} desde={l(106.2)} rmax={170} n={3} color="#ff9a6a" periodo={42} fuerza={0.6} />}
+        {f > l(108.6) && <g><circle cx={1330} cy={P - 330} r={10} fill="#ff3a2e" opacity={Math.floor(f / 5) % 2 ? 1 : 0.4} /><Halo x={1330} y={P - 330} r={60} color="#ff3a2e" fuerza={0.6} /></g>}
+        {f > l(108.6) && <Ondas x={1592 + vib} y={P - 740} desde={l(108.6)} rmax={170} n={3} color="#ff9a6a" periodo={42} fuerza={0.6} />}
         {/* caja de la PICKUP: barandas de la caja delante de las piernas de Dev */}
         <g>
           <rect x={1494} y={P - 152} width={250} height={86} rx={6} fill="#6a2f36" stroke="#3a161c" strokeWidth={5} />
@@ -535,10 +638,10 @@ export const P14: React.FC = () => {
           <rect x={1730} y={P - 150} width={18} height={80} rx={4} fill="#4a1e24" />
           <rect x={1520} y={P - 126} width={60} height={10} rx={4} fill="#4a1e24" />
         </g>
-        <Lagrimas x={1522} y={P - 392} ancho={20} desde={l(113.3)} s={1.3} />
+        <Lagrimas x={1572} y={P - 262} ancho={12} desde={l(113.3)} s={0.9} />
       </>}
       hud={<>
-        <EtiquetaFlotante x={1000} y={230} rotulo="DEV · AGE" claves={20} desde={l(103.4)} hasta={l(107)} color="#ffcf6e" tam={78} />
+        <EtiquetaFlotante x={1250} y={330} rotulo="DEV · AGE" claves={20} desde={l(103.5)} hasta={l(105.6)} color="#ffcf6e" tam={120} />
         <Cuenta fondo x={1500} y={110} rotulo="POPULATION" claves={[{ f: 0, v: 5 }, { f: l(115.6), v: 6, d: 1 }]} desde={l(114.0)} hasta={l(116.25)} tam={110} />
       </>}
     />
@@ -626,7 +729,7 @@ export const P18: React.FC = () => {
   const sh = golpes.reduce((a, t) => a + (f >= t && f < t + 10 ? Math.sin((f - t) * 2.6) * 3 * (1 - (f - t) / 10) : 0), 0);
   return (
     <Escena Set={Barrio} pal={PAL} setProps={{ hora: "alba", luces: 0, nieve: 0, humo: 0 }} seed={28}
-      claves={[mira(0, X - 110, P - 190, 1.7), mira(l(141.4), X - 90, P - 190, 1.95)]}
+      claves={camino([[-10, X - 125, P - 118, 2.55], [l(138.4), X - 108, P - 114, 2.75], [l(140.2), X - 92, P - 110, 2.9], [l(141.4) + 8, X - 80, P - 108, 3.0]])}
       medio={<>
         <g>
           <rect x={X - 30} y={P - 130} width={60} height={130} fill="#120a0c" />
@@ -697,7 +800,7 @@ export const P21: React.FC = () => {
   const P = VIS_PISO;
   return (
     <Escena Set={Visitantes} pal={PAL} setProps={{ hora: "dia" }} seed={31}
-      claves={[mira(0, 1700, 640, 1.7), mira(l(152.2), 1690, 580, 0.82, { curva: "inout" })]}
+      claves={camino([[-6, 1700, 640, 1.75], [l(149.6), 1715, 620, 1.48], [l(152.2) + 6, 1700, 600, 1.22]])}
       detras={<TapaVitrina />}
       medio={<>
         {ENFILA(1180, 115).map((p, i) => {
