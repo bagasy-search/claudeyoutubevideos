@@ -25,7 +25,7 @@ export const EscenaB: React.FC<{
   const noche = momento === "noche";
   return (
     <AbsoluteFill>
-      <Plano claves={claves} mano={mano} seed={seed} fondo={P.cielo[0]}>
+      <Plano claves={claves} mano={mano} seed={seed} fondo={P.cielo[0]} mbMax={2.5}>
         <CapaSVG z={zLejos} desenfoqueMax={3}><S capa="lejos" {...sp} /></CapaSVG>
         <CapaSVG z={1}><S capa="medio" {...sp} />{detras}</CapaSVG>
         <Capa3D personajes={personajes} luz={{ ...(noche ? { intensidad: 1.5, color: "#ffd9a8", relleno: 0.55, tinte: "#8a90b8", entorno: 0.55 } : {}), ...luz }} />

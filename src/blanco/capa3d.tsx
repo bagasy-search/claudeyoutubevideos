@@ -35,7 +35,11 @@ const CamOrto: React.FC<{ piso: number }> = ({ piso }) => {
 };
 
 // un personaje en el mundo del set: x en px del mundo; el resto como <Stickman> (guion con t en segundos del PLANO)
-export type Personaje = Omit<StickmanProps, "x" | "cuadro"> & { x: number; prof?: number; sombra?: number; t0?: number; alto?: number }; // alto: px sobre el piso (arriba del heno, de una mesa)
+export type Personaje = Omit<StickmanProps, "x" | "cuadro"> & { x: number; prof?: number; sombra?: number; t0?: number; alto?: number;
+  // mov(s): movimiento libre en px/grados según el segundo del plano: dx/dy (dy hacia ARRIBA), rz = acostado (90 = tirado
+  // de espaldas, pivote en los pies). Para despertar en el barro, ser levantado, volar por un empujón…
+  mov?: (s: number) => { dx?: number; dy?: number; rz?: number };
+}; // alto: px sobre el piso (arriba del heno, de una mesa)
 
 const Sombra: React.FC<{ x: number; z: number; o: number; ancho: number }> = ({ x, z, o, ancho }) => (
   <mesh position={[x, -0.02, z - 0.6]} scale={[ancho, 0.22, 1]} renderOrder={-2}>
@@ -50,10 +54,14 @@ const Uno: React.FC<{ p: Personaje; f: number; fps: number }> = ({ p, f, fps }) 
   const esc = p.escala ?? 1;
   const z = p.prof ?? 0;
   const salto = Math.max(0, ev.pose.raiz?.[1] ?? 0);
+  const m = p.mov ? p.mov(cuadro / fps) : {};
+  const px = p.x / K, dx = (m.dx ?? 0) / K, alto = ((p.alto ?? 0) + (m.dy ?? 0)) / K, rz = ((m.rz ?? 0) * Math.PI) / 180;
   return (
     <>
-      {!p.alto && <Sombra x={p.x / K + ev.dx} z={z} o={(p.sombra ?? 0.32) / (1 + salto * 1.5)} ancho={0.95 * esc / (1 + salto * 0.6)} />}
-      <group position={[0, (p.alto ?? 0) / K, 0]}><Stickman {...p} x={p.x / K} z={z} cuadro={cuadro} sombras={false} contacto={0} /></group>
+      {!p.alto && !(m.dy && m.dy > 40) && <Sombra x={px + dx + ev.dx} z={z} o={(p.sombra ?? 0.32) / (1 + salto * 1.5)} ancho={(0.95 * esc + Math.abs(Math.sin(rz)) * 1.4) / (1 + salto * 0.6)} />}
+      <group position={[px + dx + ev.dx, alto, z]} rotation={[0, 0, rz]}>
+        <group position={[-(px + dx + ev.dx), 0, -z]}><Stickman {...p} x={px + dx} z={z} cuadro={cuadro} sombras={false} contacto={0} /></group>
+      </group>
     </>
   );
 };

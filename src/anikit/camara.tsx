@@ -92,7 +92,7 @@ export const golpe = (f: number, f0: number, amp = 3) => (f < f0 ? 0 : amp * Mat
 export const respira = (f: number, fps: number) => 1 + 0.003 * Math.sin((f / fps) * 0.25 * 2 * Math.PI);
 
 // Plano: aplica la cámara a sus capas. claves en coordenadas del mundo (px de 1920x1080 alrededor del centro)
-export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; children: React.ReactNode; fondo?: string; extra?: { x?: number; y?: number; zoom?: number } }> = ({ claves, mano = 4, seed = 0, children, fondo = "#000", extra = {} }) => {
+export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; children: React.ReactNode; fondo?: string; extra?: { x?: number; y?: number; zoom?: number }; mbMax?: number }> = ({ claves, mano = 4, seed = 0, children, fondo = "#000", extra = {}, mbMax = 10 }) => {
   const f = useF();
   const { fps } = useVideoConfig();
   const p = poseEn(claves, f, fps);
@@ -103,7 +103,7 @@ export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; ch
   const q = f - 1 < claves[0].f ? poseEn(claves, f + 1, fps) : poseEn(claves, f - 1, fps);
   const vx = Math.abs(p.x - q.x), vy = Math.abs(p.y - q.y);
   // rampa continua desde 0 (sin salto de nitidez al activarse) y tope bajo: más que 10 px se lee como tirón
-  const sx = Math.min(10, Math.max(0, vx * 0.5 - 2)), sy = Math.min(10, Math.max(0, vy * 0.5 - 2));
+  const sx = Math.min(mbMax, Math.max(0, vx * 0.5 - 2)), sy = Math.min(mbMax, Math.max(0, vy * 0.5 - 2));
   const mb = sx > 0.3 || sy > 0.3;
   const id = "mb" + useId().replace(/[^a-zA-Z0-9]/g, "");
   return (

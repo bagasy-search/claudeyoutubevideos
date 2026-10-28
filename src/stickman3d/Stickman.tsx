@@ -11,6 +11,7 @@ import { PROPORCIONES as P } from "./proporciones";
 import { EXPRESIONES, Expresion, NombreExpresion } from "./expresiones";
 import { evaluarGuion, PasoGuion } from "./acciones";
 import { Accesorios, NombreAccesorio } from "./accesorios";
+import { CabezaRopa, CuerpoRopa, Ropa } from "./vestuario";
 
 export type StickmanProps = {
   x?: number; z?: number; rotY?: number; escala?: number;
@@ -21,6 +22,7 @@ export type StickmanProps = {
   boca?: number[]; // amplitudes de la voz por cuadro (0–1) para lip-sync
   color?: string;
   accesorios?: NombreAccesorio[];
+  ropa?: Ropa; // vestuario (ropa, pelo, sombrero, calzado, objeto en la mano): ver vestuario.tsx
   semilla?: number;
   sombras?: boolean;
   contacto?: number; // fuerza de la sombra de contacto
@@ -53,8 +55,8 @@ type PiezasCuerpo = {
 
 export const StickmanCuerpo: React.FC<{
   pose: Pose; e: Expresion; t: number; x?: number; z?: number; rotY?: number; escala?: number; color?: string;
-  accesorios?: NombreAccesorio[]; sombras?: boolean; contacto?: number; colorContacto?: string;
-}> = ({ pose, e, t, x = 0, z = 0, rotY = 0, escala = 1, color = "#EEEEEC", accesorios = [], sombras = true, contacto = 0.85, colorContacto = "#06142a" }) => {
+  accesorios?: NombreAccesorio[]; ropa?: Ropa; sombras?: boolean; contacto?: number; colorContacto?: string;
+}> = ({ pose, e, t, x = 0, z = 0, rotY = 0, escala = 1, color = "#EEEEEC", accesorios = [], ropa, sombras = true, contacto = 0.85, colorContacto = "#06142a" }) => {
   const u = useMemo(() => crearUniformsAO(), []);
   const piel = useMemo(() => crearPiel(u, { color }), [u, color]);
   const mats = useMemo<MatsCara>(() => ({
@@ -167,7 +169,9 @@ export const StickmanCuerpo: React.FC<{
             <Rostro e={e} t={t} mats={mats} sombras={cs} />
           </group>
           <Accesorios lista={accesorios} piel={piel} />
+          {ropa && <CabezaRopa ropa={ropa} t={t} />}
         </group>
+        {ropa && <CuerpoRopa ropa={ropa} esq={esq} manos={manos} pies={pies} t={t} piel={piel} />}
         {pz.temblor.map((tb, k) => <mesh key={`t${k}`} geometry={tb.geo} material={mats.pintura} visible={temb > 0.05} />)}
       </group>
       {/* sombra de contacto (AO de las cápsulas sobre el piso) */}
@@ -192,7 +196,7 @@ export const Stickman: React.FC<StickmanProps> = (props) => {
   });
   return (
     <StickmanCuerpo pose={ev.pose} e={ev.expr} t={frame / fps} x={(props.x ?? 0) + ev.dx} z={(props.z ?? 0) + ev.dz}
-      rotY={(props.rotY ?? 0) + ev.rotY} escala={props.escala} color={props.color} accesorios={props.accesorios}
+      rotY={(props.rotY ?? 0) + ev.rotY} escala={props.escala} color={props.color} accesorios={props.accesorios} ropa={props.ropa}
       sombras={props.sombras} contacto={props.contacto} colorContacto={props.colorContacto} />
   );
 };

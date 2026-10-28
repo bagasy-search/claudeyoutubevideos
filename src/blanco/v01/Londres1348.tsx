@@ -10,6 +10,8 @@ import { PasoGuion } from "../../stickman3d/acciones";
 import { Personaje } from "../capa3d";
 import { Dato, EscenaB, HudSupervivencia, Idioma, MarcaHUD } from "../escena";
 import { Simbolo } from "../simbolos";
+import { Apertura } from "./Apertura";
+import { OFICIOS, ROPA } from "../elenco";
 import { CALLE_M, CalleMedieval, Carro, Cerdo, Gallina, Gato, MURALLA_M, Muralla, PAL_LONDRES as PAL, PISO, Perro, PUERTO_M, Puerto, puntoSoga, Rata, TABERNA_M, Taberna } from "../sets/londres";
 
 export type LondresProps = { idioma: Idioma; durs: number[]; voz?: string; musica?: string };
@@ -21,16 +23,16 @@ const tx = (L: Idioma, es: string, en: string) => (L === "es" ? es : en);
 // elenco (vinilo de color = NPC; Tiza/Chalk es el único blanco)
 const SOMBRERO: Personaje["accesorios"] = ["gorra"];
 const NPC = {
-  guardia: { color: "#b8443a", accesorios: ["casco"] as Personaje["accesorios"] },
-  trapero: { color: "#8a6a9a", accesorios: ["anteojos"] as Personaje["accesorios"] },
-  panadero: { color: "#e2c08a", accesorios: ["gorra"] as Personaje["accesorios"] },
-  tabernera: { color: "#c46a7a", accesorios: ["monio"] as Personaje["accesorios"] },
-  cura: { color: "#33323a" },
-  marinero: { color: "#9ab59a", accesorios: ["gorra"] as Personaje["accesorios"] },
-  aldeano: (i: number) => ({ color: ["#b07a4a", "#7a8a5a", "#9a6a5a", "#6a7a9a", "#a88a5a", "#8a5a4a"][i % 6] }),
-  granjero: { color: "#a8803a", accesorios: ["gorra"] as Personaje["accesorios"] },
+  guardia: { ropa: ROPA.guardia },
+  trapero: { ropa: ROPA.sereno },
+  panadero: { ropa: ROPA.panadero },
+  tabernera: { ropa: ROPA.tabernera },
+  cura: { ropa: ROPA.monje },
+  marinero: { ropa: ROPA.pescadero },
+  aldeano: (i: number) => ({ ropa: ROPA[OFICIOS[(i * 5 + 2) % OFICIOS.length]] }),
+  granjero: { ropa: ROPA.granjero },
 };
-const tiza = (guion: PasoGuion[], x: number, extra: Partial<Personaje> = {}): Personaje => ({ x, guion, semilla: 7, ...extra });
+const tiza = (guion: PasoGuion[], x: number, extra: Partial<Personaje> = {}): Personaje => ({ x, guion, semilla: 7, ropa: ROPA.tiza, ...extra });
 
 // ── objetos 2D sueltos (capa `sobre`) ────────────────────────────────────────────────────────────────────────────
 const Zapatilla: React.FC<{ x: number; y: number; r?: number; s?: number }> = ({ x, y, r = 0, s = 1 }) => (
@@ -526,7 +528,7 @@ const B14: React.FC<B> = ({ D, L }) => {
 // bloque → [componentes, fracción donde se parte (si son 2 planos), transición de entrada]
 type Def = { el: React.FC<B>[]; corte?: number; trans?: PlanoM["trans"] };
 const DEFS: Def[] = [
-  { el: [B01] },
+  { el: [Apertura] },
   { el: [B02], trans: { tipo: "fundido", d: 16 } },
   { el: [B03], trans: { tipo: "cortina", d: 16 } },
   { el: [B04], trans: { tipo: "barrido", d: 14 } },
