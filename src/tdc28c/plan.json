@@ -1,0 +1,2252 @@
+{
+"segs": [
+[
+3.5,
+8.18,
+"shot",
+"v01_bolsa_polvo"
+],
+[
+8.18,
+15.32,
+"shot",
+"n_polvo_fondo_bolsa"
+],
+[
+15.32,
+18.2,
+"shot",
+"f_patio_frio"
+],
+[
+22.1,
+26.56,
+"shot",
+"v02_mezcla_balde"
+],
+[
+26.56,
+30.24,
+"shot",
+"v03_briqueta_camara"
+],
+[
+30.24,
+34.9,
+"shot",
+"n_brasero_brasa"
+],
+[
+39.4,
+42.06,
+"shot",
+"n_basura_polvo"
+],
+[
+42.06,
+46.52,
+"shot",
+"f_serio_dedo"
+],
+[
+46.52,
+49.6,
+"shot",
+"n_brasero_pieza_humo"
+],
+[
+59.74,
+63.96,
+"shot",
+"n_balde_carbonilla"
+],
+[
+63.96,
+65.8,
+"shot",
+"n_pozo_tierra_colorada"
+],
+[
+71.0,
+74.74,
+"shot",
+"n_manos_mezcla"
+],
+[
+74.74,
+79.2,
+"shot",
+"n_briquetas_malla"
+],
+[
+79.2,
+82.7,
+"shot",
+"n_brasero_afuera_noche"
+],
+[
+87.8,
+91.62,
+"shot",
+"f_cuaderno_tandas"
+],
+[
+91.62,
+96.1,
+"shot",
+"n_briqueta_desarmada"
+],
+[
+96.1,
+101.2,
+"shot",
+"n_lata_humo_negro"
+],
+[
+105.6,
+109.36,
+"shot",
+"n_cuaderno_taller"
+],
+[
+135.5,
+143.74,
+"shot",
+"f_bolsas_carbon"
+],
+[
+153.4,
+155.72,
+"shot",
+"n_fondo_bolsa_mano"
+],
+[
+155.72,
+159.7,
+"shot",
+"n_carboneria_piso"
+],
+[
+159.7,
+165.2,
+"shot",
+"n_bracero_frio"
+],
+[
+169.3,
+177.66,
+"shot",
+"n_carbon_trozo_polvo"
+],
+[
+177.66,
+180.1,
+"shot",
+"n_polvo_ahogado_humo"
+],
+[
+186.0,
+187.82,
+"shot",
+"n_balde_tapa_puerta"
+],
+[
+187.82,
+191.46,
+"shot",
+"f_sacude_bolsa"
+],
+[
+191.46,
+197.1,
+"shot",
+"n_pala_bracero"
+],
+[
+202.4,
+209.84,
+"shot",
+"f_carbonero"
+],
+[
+209.84,
+212.9,
+"shot",
+"n_bolsa_polvo_regalo"
+],
+[
+218.5,
+223.38,
+"shot",
+"f_tapabocas"
+],
+[
+223.38,
+230.5,
+"shot",
+"n_polvo_aire_luz"
+],
+[
+235.6,
+240.12,
+"shot",
+"n_tapabocas_guantes"
+],
+[
+243.7,
+247.3,
+"shot",
+"n_ceniza_gris_negro"
+],
+[
+251.4,
+260.22,
+"shot",
+"n_zaranda_alambre"
+],
+[
+260.22,
+262.1,
+"shot",
+"n_balde_agua_ceniza"
+],
+[
+267.6,
+271.46,
+"shot",
+"f_separa_ojo"
+],
+[
+271.46,
+276.92,
+"shot",
+"n_pedacitos_nuez"
+],
+[
+276.92,
+280.8,
+"shot",
+"f_martillo_arpillera"
+],
+[
+285.7,
+287.96,
+"shot",
+"n_polvo_grano_arroz"
+],
+[
+287.96,
+297.14,
+"shot",
+"n_mosquitero_polvo"
+],
+[
+297.14,
+298.1,
+"shot",
+"n_briqueta_rota_trozo"
+],
+[
+302.2,
+308.44,
+"shot",
+"n_polvo_fino_parejo"
+],
+[
+318.5,
+329.42,
+"shot",
+"n_tierra_negra_raices"
+],
+[
+329.42,
+331.6,
+"shot",
+"n_briqueta_tierra_negra"
+],
+[
+336.7,
+344.46,
+"shot",
+"n_arcilla_colorada_pala"
+],
+[
+344.46,
+347.92,
+"shot",
+"n_botas_barro"
+],
+[
+347.92,
+349.1,
+"shot",
+"n_tierra_rajada"
+],
+[
+353.7,
+364.56,
+"shot",
+"n_orilla_arroyo"
+],
+[
+364.56,
+366.5,
+"shot",
+"n_pozo_poste"
+],
+[
+370.9,
+376.12,
+"shot",
+"f_pozo_patio"
+],
+[
+376.12,
+381.1,
+"shot",
+"n_capas_pozo"
+],
+[
+387.2,
+392.24,
+"shot",
+"n_amasa_arcilla"
+],
+[
+392.24,
+398.2,
+"shot",
+"v04_chorizo"
+],
+[
+403.0,
+413.1,
+"shot",
+"n_chorizo_quebrado"
+],
+[
+413.1,
+416.2,
+"shot",
+"n_chorizo_anillo"
+],
+[
+420.9,
+424.88,
+"shot",
+"f_chorizo_sonrisa"
+],
+[
+424.88,
+432.1,
+"shot",
+"n_frasco_tierra_agua"
+],
+[
+436.1,
+441.48,
+"shot",
+"n_frasco_capas"
+],
+[
+441.48,
+445.8,
+"shot",
+"n_frasco_turbio"
+],
+[
+451.5,
+458.53,
+"shot",
+"n_frasco_regla"
+],
+[
+458.53,
+465.5,
+"shot",
+"n_horno_barro_campo"
+],
+[
+470.2,
+477.31,
+"shot",
+"n_manos_viejas_barro"
+],
+[
+477.31,
+481.4,
+"shot",
+"n_rancho_adobe"
+],
+[
+488.91,
+499.3,
+"shot",
+"n_arcilla_piedras"
+],
+[
+503.4,
+507.77,
+"shot",
+"n_dos_baldes"
+],
+[
+507.77,
+515.2,
+"shot",
+"n_tierra_lona_sol"
+],
+[
+519.1,
+526.37,
+"shot",
+"f_martillo_arcilla"
+],
+[
+526.37,
+529.9,
+"shot",
+"n_arcilla_polvo_harina"
+],
+[
+534.9,
+537.71,
+"shot",
+"n_bolsas_arcilla"
+],
+[
+537.71,
+545.23,
+"shot",
+"n_balde_tierra_agua"
+],
+[
+545.23,
+548.2,
+"shot",
+"f_revuelve_palo"
+],
+[
+553.0,
+558.43,
+"shot",
+"v13_colar"
+],
+[
+558.43,
+565.0,
+"shot",
+"n_colador_piedras"
+],
+[
+569.1,
+574.71,
+"shot",
+"n_balde_inclinado"
+],
+[
+574.71,
+580.2,
+"shot",
+"n_crema_arcilla_mano"
+],
+[
+586.3,
+596.07,
+"shot",
+"n_gallinero_agujero"
+],
+[
+602.4,
+612.63,
+"shot",
+"n_carbon_arcilla_lado"
+],
+[
+612.63,
+614.4,
+"shot",
+"n_seco_con_seco"
+],
+[
+619.5,
+632.0,
+"shot",
+"n_gris_parejo"
+],
+[
+636.5,
+647.21,
+"shot",
+"n_bolitas_arcilla"
+],
+[
+652.0,
+660.33,
+"shot",
+"n_sopa_negra"
+],
+[
+660.33,
+663.0,
+"shot",
+"f_vaso_agua"
+],
+[
+667.9,
+675.43,
+"shot",
+"n_maceta_regada"
+],
+[
+675.43,
+681.1,
+"shot",
+"f_prueba_puno"
+],
+[
+686.0,
+687.65,
+"shot",
+"n_puno_migas"
+],
+[
+687.65,
+692.23,
+"shot",
+"n_puno_chorrea"
+],
+[
+692.23,
+697.7,
+"shot",
+"n_bola_firme"
+],
+[
+701.6,
+708.41,
+"shot",
+"n_puñado_polvo"
+],
+[
+708.41,
+711.4,
+"shot",
+"n_pava_mate"
+],
+[
+717.2,
+718.87,
+"shot",
+"f_pava_balde"
+],
+[
+718.87,
+730.0,
+"shot",
+"n_crema_polvo"
+],
+[
+739.97,
+745.7,
+"shot",
+"f_cuaderno_muestra"
+],
+[
+750.0,
+758.93,
+"shot",
+"n_mitad_mitad"
+],
+[
+758.93,
+762.3,
+"shot",
+"n_briqueta_no_prende"
+],
+[
+772.57,
+778.57,
+"shot",
+"n_cucharada_balde"
+],
+[
+778.57,
+780.3,
+"shot",
+"n_briqueta_desarma_mano"
+],
+[
+783.8,
+788.11,
+"shot",
+"n_fila_pruebas"
+],
+[
+788.11,
+795.0,
+"shot",
+"n_cuaderno_tabla"
+],
+[
+801.4,
+805.09,
+"shot",
+"n_diez_vasos"
+],
+[
+805.09,
+812.43,
+"shot",
+"n_balde_tarro"
+],
+[
+818.5,
+821.15,
+"shot",
+"n_briqueta_cae"
+],
+[
+821.15,
+830.4,
+"shot",
+"n_briqueta_roja"
+],
+[
+833.7,
+839.01,
+"shot",
+"n_chorizo_grietas"
+],
+[
+839.01,
+843.9,
+"shot",
+"n_chorizo_fideo"
+],
+[
+850.0,
+858.17,
+"shot",
+"f_tres_prueba"
+],
+[
+858.17,
+864.1,
+"shot",
+"n_almidon_bolsa"
+],
+[
+869.2,
+874.15,
+"shot",
+"n_engrudo_gel"
+],
+[
+874.15,
+881.1,
+"shot",
+"n_engrudo_mezcla"
+],
+[
+886.3,
+891.15,
+"shot",
+"n_siglos_briquetas"
+],
+[
+903.2,
+911.2,
+"shot",
+"v14_cta"
+],
+[
+923.26,
+928.6,
+"shot",
+"n_dos_briquetas_corte"
+],
+[
+933.8,
+937.34,
+"shot",
+"f_mira_cano"
+],
+[
+937.34,
+946.6,
+"shot",
+"n_canos_cortados"
+],
+[
+950.0,
+956.84,
+"shot",
+"n_cano_aceite_trapo"
+],
+[
+956.84,
+961.7,
+"shot",
+"f_llena_cano"
+],
+[
+966.1,
+973.68,
+"shot",
+"n_tarugo_cano"
+],
+[
+978.7,
+985.84,
+"shot",
+"n_pale_tabla"
+],
+[
+985.84,
+990.9,
+"shot",
+"f_parado_tabla"
+],
+[
+996.4,
+1001.36,
+"shot",
+"n_mano_pared"
+],
+[
+1001.36,
+1006.94,
+"shot",
+"n_agua_abajo_cano"
+],
+[
+1006.94,
+1008.7,
+"shot",
+"n_gato_botella"
+],
+[
+1013.8,
+1018.5,
+"shot",
+"n_marco_prensa"
+],
+[
+1018.5,
+1026.5,
+"shot",
+"v05_prensa_gato"
+],
+[
+1031.3,
+1036.88,
+"shot",
+"f_gato_prensa"
+],
+[
+1036.88,
+1043.6,
+"shot",
+"v06_saca_briqueta"
+],
+[
+1047.5,
+1050.48,
+"shot",
+"n_briqueta_agujero"
+],
+[
+1050.48,
+1058.4,
+"shot",
+"n_palito_centro"
+],
+[
+1064.3,
+1074.84,
+"shot",
+"n_briqueta_rajada"
+],
+[
+1082.8,
+1090.4,
+"shot",
+"n_pila_briquetas"
+],
+[
+1090.4,
+1094.9,
+"shot",
+"f_tarde_prensa"
+],
+[
+1098.4,
+1101.6,
+"shot",
+"n_mate_briquetas"
+],
+[
+1101.6,
+1108.1,
+"shot",
+"n_dos_manos_cano"
+],
+[
+1112.9,
+1120.9,
+"shot",
+"v07_secado_sol"
+],
+[
+1121.52,
+1126.9,
+"shot",
+"n_briquetas_humedas"
+],
+[
+1139.04,
+1144.1,
+"shot",
+"n_briquetas_tierra_humeda"
+],
+[
+1150.4,
+1155.86,
+"shot",
+"n_briquetas_sol_fuerte"
+],
+[
+1155.86,
+1159.82,
+"shot",
+"f_da_vuelta"
+],
+[
+1159.82,
+1164.1,
+"shot",
+"n_lona_piedras"
+],
+[
+1168.2,
+1176.2,
+"shot",
+"v08_suenan"
+],
+[
+1182.7,
+1190.62,
+"shot",
+"f_error_estufa"
+],
+[
+1190.62,
+1193.4,
+"shot",
+"n_briquetas_sobre_estufa"
+],
+[
+1202.16,
+1204.3,
+"shot",
+"n_patio_sol_malla"
+],
+[
+1204.3,
+1211.6,
+"shot",
+"n_arpillera_briquetas"
+],
+[
+1226.68,
+1229.8,
+"shot",
+"v09_brasero"
+],
+[
+1233.8,
+1238.6,
+"shot",
+"n_balanza_carbon"
+],
+[
+1238.6,
+1242.8,
+"shot",
+"n_dos_latas_ramas"
+],
+[
+1248.2,
+1253.08,
+"shot",
+"n_lata_llamas"
+],
+[
+1256.24,
+1260.5,
+"shot",
+"n_lata_ceniza"
+],
+[
+1266.2,
+1273.14,
+"shot",
+"n_briquetas_rojas_lata"
+],
+[
+1273.14,
+1277.4,
+"shot",
+"v10_reloj"
+],
+[
+1282.2,
+1289.02,
+"shot",
+"n_brasa_baja"
+],
+[
+1299.8,
+1308.24,
+"shot",
+"n_briqueta_corte_brasa"
+],
+[
+1317.1,
+1327.28,
+"shot",
+"n_ceniza_rojiza"
+],
+[
+1327.28,
+1328.3,
+"shot",
+"n_ceniza_dedo"
+],
+[
+1339.48,
+1346.3,
+"shot",
+"f_serio_monoxido"
+],
+[
+1351.9,
+1357.88,
+"shot",
+"n_brasero_cuarto_cerrado"
+],
+[
+1357.88,
+1363.7,
+"shot",
+"n_sillon_dormido"
+],
+[
+1367.9,
+1375.08,
+"shot",
+"n_pieza_cerrada_noche"
+],
+[
+1382.7,
+1388.73,
+"shot",
+"v11_noche"
+],
+[
+1388.73,
+1392.65,
+"shot",
+"n_parrilla_briquetas"
+],
+[
+1392.65,
+1395.5,
+"shot",
+"n_puerta_cerrada"
+],
+[
+1401.5,
+1402.58,
+"shot",
+"n_ventana_entreabierta"
+],
+[
+1402.58,
+1410.7,
+"shot",
+"n_estufa_tambor_brique"
+],
+[
+1423.08,
+1427.6,
+"shot",
+"v12_cartel"
+],
+[
+1431.9,
+1436.73,
+"shot",
+"n_detector_pieza"
+],
+[
+1436.73,
+1439.58,
+"shot",
+"n_puerta_abierta_aire"
+],
+[
+1439.58,
+1444.5,
+"shot",
+"f_brasero_ladrillos"
+],
+[
+1449.5,
+1456.17,
+"shot",
+"n_balde_arena"
+],
+[
+1456.17,
+1458.5,
+"shot",
+"n_chapa_tapa"
+],
+[
+1464.0,
+1469.84,
+"shot",
+"n_briquetas_dia_despues"
+],
+[
+1481.9,
+1485.91,
+"shot",
+"n_aserrin_carpinteria"
+],
+[
+1485.91,
+1489.17,
+"shot",
+"n_aserrin_carbon"
+],
+[
+1489.17,
+1493.6,
+"shot",
+"n_briqueta_aserrin_fuego"
+],
+[
+1498.2,
+1503.45,
+"shot",
+"n_cascaras_marlos"
+],
+[
+1503.45,
+1508.7,
+"shot",
+"n_diario_carton"
+],
+[
+1514.8,
+1521.28,
+"shot",
+"n_revistas_folletos"
+],
+[
+1521.28,
+1527.8,
+"shot",
+"n_humo_toxico_papel"
+],
+[
+1532.9,
+1539.41,
+"shot",
+"f_cuenta_bolsas"
+],
+[
+1539.41,
+1544.2,
+"shot",
+"n_kilo_briquetas"
+],
+[
+1549.7,
+1556.49,
+"shot",
+"n_asado_invierno"
+],
+[
+1571.63,
+1579.0,
+"shot",
+"n_tierra_jardin_maceta"
+],
+[
+1583.1,
+1593.2,
+"shot",
+"n_briqueta_piedra"
+],
+[
+1599.1,
+1605.12,
+"shot",
+"n_sopa_balde_error"
+],
+[
+1605.12,
+1611.3,
+"shot",
+"n_briqueta_explotada"
+],
+[
+1615.5,
+1622.12,
+"shot",
+"n_brasero_adentro_error"
+],
+[
+1630.4,
+1636.02,
+"shot",
+"n_comentario_celular"
+],
+[
+1636.02,
+1640.5,
+"shot",
+"n_bloques_rotos"
+],
+[
+1646.9,
+1654.19,
+"shot",
+"f_tres_cosas"
+],
+[
+1654.19,
+1659.4,
+"shot",
+"n_briqueta_humeda_corte"
+],
+[
+1664.0,
+1673.43,
+"shot",
+"n_hojas_molidas"
+],
+[
+1673.43,
+1676.0,
+"shot",
+"n_briqueta_hojas_arde"
+],
+[
+1681.3,
+1684.19,
+"shot",
+"n_ramitas_fuego"
+],
+[
+1684.19,
+1693.6,
+"shot",
+"n_buenos_aires_barrio"
+],
+[
+1697.8,
+1700.17,
+"shot",
+"f_pregunta_patio"
+],
+[
+1700.17,
+1710.5,
+"shot",
+"n_parrilla_costado"
+],
+[
+1713.9,
+1719.08,
+"shot",
+"n_brasa_bajo_carne"
+],
+[
+1719.08,
+1724.7,
+"shot",
+"n_ceniza_balde"
+],
+[
+1730.7,
+1739.06,
+"shot",
+"n_compost_ceniza"
+],
+[
+1749.6,
+1751.99,
+"shot",
+"n_repaso_polvo"
+],
+[
+1751.99,
+1761.2,
+"shot",
+"n_repaso_chorizo"
+],
+[
+1767.1,
+1772.73,
+"shot",
+"n_repaso_proporcion"
+],
+[
+1772.73,
+1775.6,
+"shot",
+"n_repaso_prensa"
+],
+[
+1779.2,
+1784.28,
+"shot",
+"n_repaso_secado"
+],
+[
+1784.28,
+1790.8,
+"shot",
+"n_repaso_detector"
+],
+[
+1802.13,
+1808.1,
+"shot",
+"f_cuentame"
+],
+[
+1813.5,
+1818.5,
+"shot",
+"v15_cierre"
+]
+],
+"cam": [
+[
+54.1,
+59.74,
+"bqBench"
+],
+[
+109.36,
+116.8,
+"bookRow"
+],
+[
+120.4,
+130.8,
+"book"
+],
+[
+143.74,
+148.0,
+"bqDust"
+],
+[
+240.12,
+243.7,
+"bqDust"
+],
+[
+308.44,
+313.9,
+"bqClay"
+],
+[
+381.1,
+383.2,
+"bqClay"
+],
+[
+486.8,
+488.91,
+"bqClay"
+],
+[
+596.07,
+597.9,
+"bqMix"
+],
+[
+647.21,
+648.5,
+"bqMix"
+],
+[
+734.4,
+739.97,
+"bqBench"
+],
+[
+766.9,
+772.57,
+"bqMix"
+],
+[
+812.43,
+813.7,
+"bqBench"
+],
+[
+891.15,
+898.7,
+"bookRow"
+],
+[
+911.2,
+911.86,
+"book"
+],
+[
+911.86,
+914.6,
+"book"
+],
+[
+918.6,
+923.26,
+"bqPress"
+],
+[
+973.68,
+974.6,
+"bqPress"
+],
+[
+1074.84,
+1078.0,
+"bqPress"
+],
+[
+1120.9,
+1121.52,
+"bqDry"
+],
+[
+1132.2,
+1139.04,
+"bqDry"
+],
+[
+1176.2,
+1178.5,
+"bqDry"
+],
+[
+1198.3,
+1202.16,
+"bqDry"
+],
+[
+1216.7,
+1226.68,
+"bqBurn"
+],
+[
+1253.08,
+1256.24,
+"bqBurn"
+],
+[
+1289.02,
+1294.5,
+"bqBurn"
+],
+[
+1308.24,
+1313.5,
+"bqBurn"
+],
+[
+1333.1,
+1339.48,
+"bqSign"
+],
+[
+1375.08,
+1377.9,
+"bqSign"
+],
+[
+1416.3,
+1423.08,
+"drumFront"
+],
+[
+1469.84,
+1477.9,
+"bqMix"
+],
+[
+1556.49,
+1562.2,
+"bqDry"
+],
+[
+1567.3,
+1571.63,
+"bqBench"
+],
+[
+1622.12,
+1626.5,
+"bqSign"
+],
+[
+1739.06,
+1745.3,
+"bqBench"
+],
+[
+1796.4,
+1802.13,
+"bookRow"
+]
+],
+"ov": [
+{
+"k": "stamp",
+"txt": "¡TODOS LO TIRAN!",
+"at": 0.0,
+"out": 2.8
+},
+{
+"k": "chip",
+"txt": "CARBONILLA + BARRO DEL PATIO",
+"col": "amber",
+"at": 22.1,
+"out": 25.6
+},
+{
+"k": "big",
+"txt": "3 H",
+"sub": "DE BRASA PAREJA · UN PUÑADO",
+"col": "amber",
+"at": 32.44,
+"out": 35.64
+},
+{
+"k": "stamp",
+"txt": "TE PUEDE SALVAR LA VIDA",
+"at": 43.34,
+"out": 46.54
+},
+{
+"k": "big",
+"txt": "20",
+"sub": "INTENTOS HASTA LA PROPORCIÓN",
+"col": "amber",
+"at": 88.8,
+"out": 92.0
+},
+{
+"k": "step",
+"n": 1,
+"name": "JUNTAR LA CARBONILLA",
+"col": "amber",
+"at": 145.7,
+"out": 149.7
+},
+{
+"k": "chip",
+"txt": "LA CARBONERÍA TE LA REGALA",
+"col": "ice",
+"at": 210.88,
+"out": 214.38
+},
+{
+"k": "stamp",
+"txt": "TAPABOCAS · SIEMPRE AFUERA",
+"at": 230.74,
+"out": 233.94
+},
+{
+"k": "versus",
+"title": "¿QUÉ VA AL BALDE?",
+"L": {
+"label": "CARBONILLA NEGRA",
+"val": "SÍ",
+"h": 0.9,
+"col": "#7dd87d",
+"mark": "ok"
+},
+"R": {
+"label": "CENIZA GRIS",
+"val": "NO",
+"h": 0.9,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"at": 241.12,
+"out": 247.62
+},
+{
+"k": "chip",
+"txt": "NADA MÁS GRANDE QUE UN GRANO DE ARROZ",
+"col": "ice",
+"at": 285.68,
+"out": 290.18
+},
+{
+"k": "chip",
+"txt": "POLVO PAREJO = BRIQUETA PAREJA",
+"col": "amber",
+"at": 305.46,
+"out": 308.96
+},
+{
+"k": "step",
+"n": 2,
+"name": "EL BARRO: CUÁL SIRVE",
+"at": 308.44,
+"out": 312.44
+},
+{
+"k": "stamp",
+"txt": "TIERRA DEL JARDÍN: NO",
+"at": 318.58,
+"out": 321.38
+},
+{
+"k": "big",
+"txt": "60 CM",
+"sub": "ABAJO APARECE LA COLORADA",
+"col": "amber",
+"at": 376.12,
+"out": 379.32
+},
+{
+"k": "chip",
+"txt": "LA PRUEBA DEL CHORIZO",
+"col": "amber",
+"at": 383.44,
+"out": 387.44
+},
+{
+"k": "versus",
+"title": "LA PRUEBA DEL CHORIZO",
+"L": {
+"label": "CUELGA · ANILLO",
+"val": "SIRVE",
+"h": 0.9,
+"col": "#7dd87d",
+"mark": "ok"
+},
+"R": {
+"label": "SE QUIEBRA",
+"val": "ARENA",
+"h": 0.4,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"at": 403.0,
+"out": 410.0
+},
+{
+"k": "chip",
+"txt": "2ª PRUEBA: EL FRASCO",
+"col": "ice",
+"at": 424.88,
+"out": 428.38
+},
+{
+"k": "big",
+"txt": "¼",
+"sub": "DE ARCILLA ARRIBA = SIRVE",
+"col": "amber",
+"at": 452.28,
+"out": 455.48
+},
+{
+"k": "step",
+"n": 3,
+"name": "COLAR EL BARRO",
+"at": 486.97,
+"out": 490.97
+},
+{
+"k": "chip",
+"txt": "EN SECO: POLVO COMO HARINA",
+"col": "ice",
+"at": 528.59,
+"out": 532.09
+},
+{
+"k": "stamp",
+"txt": "LA CREMA = EL PEGAMENTO",
+"at": 574.71,
+"out": 577.71
+},
+{
+"k": "chip",
+"txt": "ACÁ NO SE TIRA NADA",
+"col": "amber",
+"at": 594.11,
+"out": 597.61
+},
+{
+"k": "step",
+"n": 4,
+"name": "LA MEZCLA",
+"at": 596.07,
+"out": 600.07
+},
+{
+"k": "stamp",
+"txt": "1º SECO CON SECO",
+"at": 612.63,
+"out": 615.63
+},
+{
+"k": "chip",
+"txt": "EL AGUA: DE A UN VASO",
+"col": "ice",
+"at": 660.33,
+"out": 663.83
+},
+{
+"k": "check",
+"title": "LA PRUEBA DEL PUÑO",
+"rows": [
+{
+"txt": "Se desarma → falta agua",
+"at": 686.59
+},
+{
+"txt": "Chorrea → te pasaste",
+"at": 688.41
+},
+{
+"txt": "Bola firme → ¡esa es!",
+"at": 692.37
+}
+],
+"at": 675.87,
+"out": 695.37
+},
+{
+"k": "chip",
+"txt": "¿MUY MOJADA? MÁS CARBÓN, NO MÁS BARRO",
+"col": "ice",
+"at": 704.97,
+"out": 709.47
+},
+{
+"k": "step",
+"n": 5,
+"name": "LA PROPORCIÓN · EL PREMIO",
+"col": "amber",
+"at": 736.03,
+"out": 740.03
+},
+{
+"k": "chip",
+"txt": "1er INTENTO: MITAD Y MITAD",
+"col": "red",
+"at": 748.95,
+"out": 752.45
+},
+{
+"k": "stamp",
+"txt": "NO PRENDÍAN",
+"at": 758.93,
+"out": 761.73
+},
+{
+"k": "chip",
+"txt": "2º: UNA CUCHARADA → SE DESARMAN",
+"col": "red",
+"at": 772.57,
+"out": 776.57
+},
+{
+"k": "big",
+"txt": "20",
+"sub": "TANDAS ANOTADAS EN EL CUADERNO",
+"col": "amber",
+"at": 794.17,
+"out": 797.37
+},
+{
+"k": "big",
+"txt": "10 : 1",
+"sub": "CARBÓN : ARCILLA · EN VOLUMEN",
+"col": "amber",
+"at": 801.49,
+"out": 806.49
+},
+{
+"k": "chip",
+"txt": "20 L DE CARBÓN + 2 L DE ARCILLA",
+"col": "ice",
+"at": 805.49,
+"out": 809.49
+},
+{
+"k": "chip",
+"txt": "BARRO FLACO → 1 : 8",
+"col": "ice",
+"at": 835.75,
+"out": 839.25
+},
+{
+"k": "chip",
+"txt": "BARRO MUY PLÁSTICO → 1 : 12",
+"col": "ice",
+"at": 841.19,
+"out": 844.69
+},
+{
+"k": "stamp",
+"txt": "3 DE PRUEBA ANTES DE 100",
+"at": 852.01,
+"out": 855.01
+},
+{
+"k": "big",
+"txt": "500 G",
+"sub": "DE ALMIDÓN POR 5 KG DE POLVO",
+"col": "amber",
+"at": 864.61,
+"out": 867.81
+},
+{
+"k": "step",
+"n": 6,
+"name": "LA PRENSA CASERA",
+"at": 917.72,
+"out": 921.72
+},
+{
+"k": "big",
+"txt": "Ø 5 × 8 CM",
+"sub": "CAÑO DE AGUA QUE SOBRA",
+"col": "amber",
+"at": 941.8,
+"out": 945.0
+},
+{
+"k": "stamp",
+"txt": "NUNCA LAS MANOS DEBAJO",
+"at": 998.72,
+"out": 1001.72
+},
+{
+"k": "chip",
+"txt": "LA PRENSA DE GATO",
+"col": "ice",
+"at": 1006.94,
+"out": 1010.44
+},
+{
+"k": "big",
+"txt": "1 / 30 S",
+"sub": "CON EL GATO DE LA CAMIONETA",
+"col": "amber",
+"at": 1035.32,
+"out": 1038.52
+},
+{
+"k": "chip",
+"txt": "DESPACIO · PAREJO · UNOS SEGUNDOS",
+"col": "amber",
+"at": 1074.84,
+"out": 1078.84
+},
+{
+"k": "big",
+"txt": "150-180",
+"sub": "BRIQUETAS POR BALDE",
+"col": "green",
+"at": 1086.28,
+"out": 1089.48
+},
+{
+"k": "step",
+"n": 7,
+"name": "EL SECADO",
+"at": 1110.86,
+"out": 1114.86
+},
+{
+"k": "chip",
+"txt": "EN MALLA · A UN PALMO DEL PISO",
+"col": "ice",
+"at": 1135.3,
+"out": 1138.8
+},
+{
+"k": "big",
+"txt": "3-7 DÍAS",
+"sub": "AL SOL · DARLES VUELTA",
+"col": "amber",
+"at": 1151.82,
+"out": 1155.02
+},
+{
+"k": "versus",
+"title": "LA PRUEBA DEL SONIDO",
+"L": {
+"label": "SUENAN CLARAS",
+"val": "SECAS",
+"h": 0.9,
+"col": "#7dd87d",
+"mark": "ok"
+},
+"R": {
+"label": "SUENAN SORDAS",
+"val": "AGUA",
+"h": 0.5,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"at": 1173.06,
+"out": 1179.56
+},
+{
+"k": "stamp",
+"txt": "NUNCA AL LADO DEL FUEGO",
+"at": 1186.28,
+"out": 1189.48
+},
+{
+"k": "step",
+"n": 8,
+"name": "CUÁNTO DURAN · CON RELOJ",
+"col": "amber",
+"at": 1216.86,
+"out": 1220.86
+},
+{
+"k": "chip",
+"txt": "CARBÓN DE BOLSA: 10 MIN A PLENO",
+"col": "ice",
+"at": 1249.62,
+"out": 1252.78
+},
+{
+"k": "chip",
+"txt": "45 MIN: YA BAJANDO",
+"col": "red",
+"at": 1253.08,
+"out": 1256.58
+},
+{
+"k": "versus",
+"title": "EL MISMO PESO · CON RELOJ",
+"L": {
+"label": "BRIQUETAS",
+"val": "~2×",
+"h": 0.95,
+"col": "#ffb257",
+"mark": "ok"
+},
+"R": {
+"label": "CARBÓN DE BOLSA",
+"val": "1×",
+"h": 0.48,
+"col": "#8fd6ff",
+"mark": "x"
+},
+"at": 1275.68,
+"out": 1282.68
+},
+{
+"k": "stamp",
+"txt": "LA ARCILLA = EL FRENO",
+"at": 1318.32,
+"out": 1321.32
+},
+{
+"k": "step",
+"n": 9,
+"name": "DÓNDE SÍ Y DÓNDE NUNCA",
+"col": "red",
+"at": 1335.1,
+"out": 1339.1
+},
+{
+"k": "stamp",
+"txt": "MONÓXIDO: NO SE VE NI SE HUELE",
+"at": 1348.3,
+"out": 1351.8
+},
+{
+"k": "check",
+"title": "LAS REGLAS DEL BRASERO",
+"rows": [
+{
+"txt": "1 · Siempre afuera",
+"at": 1378.3
+},
+{
+"txt": "2 · Adentro: sólo estufa con chimenea",
+"at": 1402.58
+},
+{
+"txt": "3 · Detector de monóxido",
+"at": 1423.08
+},
+{
+"txt": "4 · Lejos de chicos · arena cerca",
+"at": 1439.58
+}
+],
+"at": 1378.3,
+"out": 1442.58
+},
+{
+"k": "stamp",
+"txt": "NUNCA EN LA PIEZA",
+"at": 1392.65,
+"out": 1395.65
+},
+{
+"k": "chip",
+"txt": "SI CHILLA: ABRÍ TODO Y SALÍ",
+"col": "red",
+"at": 1434.6,
+"out": 1438.1
+},
+{
+"k": "chip",
+"txt": "SE APAGA TAPADA, NO CON AGUA",
+"col": "ice",
+"at": 1457.3,
+"out": 1460.8
+},
+{
+"k": "step",
+"n": 10,
+"name": "OTRAS MEZCLAS",
+"at": 1469.84,
+"out": 1473.84
+},
+{
+"k": "chip",
+"txt": "1 ASERRÍN : 3 CARBÓN + ARCILLA",
+"col": "ice",
+"at": 1485.91,
+"out": 1489.41
+},
+{
+"k": "versus",
+"title": "¿QUÉ PAPEL SIRVE?",
+"L": {
+"label": "DIARIO · CARTÓN MARRÓN",
+"val": "SÍ",
+"h": 0.9,
+"col": "#7dd87d",
+"mark": "ok"
+},
+"R": {
+"label": "BRILLANTE · DE COLORES",
+"val": "NO",
+"h": 0.9,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"at": 1514.93,
+"out": 1521.43
+},
+{
+"k": "big",
+"txt": "400-500",
+"sub": "BRIQUETAS POR TEMPORADA",
+"col": "green",
+"at": 1539.41,
+"out": 1542.61
+},
+{
+"k": "big",
+"txt": "10-12",
+"sub": "BOLSAS DE CARBÓN QUE NO COMPRO",
+"col": "green",
+"at": 1560.32,
+"out": 1563.52
+},
+{
+"k": "deal",
+"at": 1569.39,
+"out": 1573.89
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "TIERRA DEL JARDÍN EN VEZ DE ARCILLA",
+"at": 1571.63,
+"out": 1579.63
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "MUCHO BARRO: SALE UNA PIEDRA",
+"at": 1583.23,
+"out": 1591.23
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "EL AGUA DE GOLPE",
+"at": 1593.63,
+"out": 1601.63
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "SECARLAS AL LADO DEL FUEGO",
+"at": 1605.12,
+"out": 1613.12
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "EL BRASERO ADENTRO DE LA CASA",
+"at": 1614.08,
+"out": 1622.08
+},
+{
+"k": "chip",
+"txt": "💬 «SE ME DESPEDAZABAN»",
+"col": "ice",
+"at": 1630.38,
+"out": 1635.38
+},
+{
+"k": "chip",
+"txt": "💬 IRMA",
+"col": "ice",
+"at": 1661.41,
+"out": 1665.41
+},
+{
+"k": "chip",
+"txt": "💬 FERNANDO · BUENOS AIRES",
+"col": "ice",
+"at": 1684.19,
+"out": 1688.19
+},
+{
+"k": "chip",
+"txt": "💬 ¿SIRVEN PARA EL ASADO?",
+"col": "ice",
+"at": 1700.45,
+"out": 1704.45
+},
+{
+"k": "recap",
+"rows": [
+1741.99,
+1751.99,
+1761.47,
+1767.26,
+1772.73,
+1779.28,
+1784.28
+],
+"at": 1739.06,
+"out": 1790.28
+},
+{
+"k": "ask",
+"at": 1810.28,
+"out": 1820.28
+}
+],
+"cta1": {
+"guide": 109.46,
+"book": 120.5,
+"page": 123.08,
+"desc": 140.48,
+"manual": "MANUAL 3 · CARBÓN CASERO",
+"img": "m3_p029",
+"pageTxt": "PÁG. 29 · LA ARCILLA QUE ALARGA LA BRASA",
+"end": 146.48
+},
+"cta2": {
+"guide": 893.71,
+"book": 895.25,
+"page": 903.27,
+"desc": 914.74,
+"manual": "MANUAL 3 · CARBÓN CASERO",
+"img": "m3_p029",
+"pageTxt": "PÁG. 29 · LA ARCILLA QUE ALARGA LA BRASA",
+"end": 920.74
+},
+"cta3": {
+"desc": 1796.62,
+"end": 1801.62
+},
+"end": 1818.45,
+"st": {
+"fire": [
+[
+0,
+1818.45
+]
+],
+"pour": [
+[
+3.56,
+15.32
+],
+[
+187.82,
+191.46
+]
+],
+"chorizo": [
+[
+392.24,
+421.0
+],
+[
+833.672,
+843.012
+]
+],
+"mix": [
+[
+612.632,
+1818.45
+]
+],
+"press": [
+[
+973.684,
+1074.844
+]
+],
+"dry": [
+[
+22.1,
+30.24
+],
+[
+1110.864,
+1818.45
+]
+],
+"dried": [
+[
+1173.064,
+1818.45
+]
+],
+"turn": [
+[
+1155.864,
+1159.824
+]
+],
+"damp": [
+[
+1183.023,
+1202.164
+]
+],
+"boom": [
+[
+1198.344,
+1202.164
+]
+],
+"burn": [
+[
+30.24,
+39.4
+],
+[
+1226.684,
+1339.483
+],
+[
+1439.575,
+1469.835
+]
+],
+"burnLow": [
+[
+1253.084,
+1339.483
+]
+],
+"co": [
+[
+1339.483,
+1818.45
+]
+],
+"books": [
+[
+108.96,
+146.48
+],
+[
+893.21,
+920.74
+],
+[
+1796.12,
+1801.62
+]
+],
+"hero": [
+[
+120.5,
+146.48
+],
+[
+895.25,
+920.74
+]
+]
+},
+"hb": [
+[
+0,
+2
+]
+],
+"txt": {
+"recapTitle": "BRIQUETAS DE CARBÓN Y BARRO",
+"recap": [
+"Carbonilla negra · sin ceniza",
+"Barro con arcilla (chorizo)",
+"Seco con seco · agua de a vaso",
+"10 : 1 (+ engrudo si es flaco)",
+"Caño Ø5 · tarugo · despacio",
+"Al sol en malla · suenan claras",
+"Afuera · chimenea · detector"
+],
+"ask": [
+"CUÉNTAME EN LOS COMENTARIOS",
+"¿Alguna vez hiciste briquetas?",
+"…¿y cómo les dicen donde vives?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+53.1,
+61.1
+]
+}
+}
