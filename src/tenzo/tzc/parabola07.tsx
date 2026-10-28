@@ -409,29 +409,31 @@ const Deseo: React.FC = () => (
 );
 
 export const PARABOLA07: TramoS[] = [
-  ...partir(133.2, 142.0, (cam) => <Corinto cam={cam} />, [[133.2, [mira(0, 600, 520, 0.8), mira(120, 950, 530, 0.86, { curva: "inout" })]], [137.2, [mira(0, 1250, P - 250, 1.55), mira(144, 1500, P - 255, 1.65, { curva: "inout" })]]], { tipo: "luz", d: 20, color: "#ffd890" }),
+  ...partir(133.2, 142.0, (cam) => <Corinto cam={cam} />, [[133.2, [mira(0, 1200, 520, 0.9), mira(44, 1250, 525, 0.95, { curva: "inout" })]], [134.7, [mira(0, 1050, P - 250, 2.1), mira(75, 1090, P - 252, 2.2, { curva: "inout" })]],
+    [137.2, [mira(0, 1500, P - 260, 1.9), mira(72, 1640, P - 262, 2.0, { curva: "inout" })]], [139.6, [mira(0, 1820, P - 255, 2.05), mira(72, 1880, P - 258, 2.15, { curva: "inout" })]]], { tipo: "luz", d: 20, color: "#ffd890" }),
   ...partir(142.0, 156.2, (cam) => <Escena Set={Agora} pal={pal} seed={102} mano={2} claves={cam} medio={<><Gente x0={1100} /><BarrilCon dio={{ caras: [{ f: 0, v: "feliz" }] }} /></>} />, [
-    [142.0, [mira(0, 1900, 540, 0.85), mira(120, BX + 100, P - 220, 1.15, { curva: "inout" })]],
+    [142.0, [mira(0, BX + 300, P - 260, 1.8), mira(198, BX + 180, P - 240, 1.95, { curva: "inout" })]],
     [148.6, [mira(0, DIO.x + 20, P - 250, 2.3), mira(110, DIO.x + 20, P - 250, 2.45)]],
     [152.4, [mira(0, DIO.x + 140, P - 60, 2.6), mira(114, DIO.x + 100, P - 70, 2.75)]],
   ]),
   { t0: 156.2, t1: 157.7, el: <Nombre cam={[mira(0, DIO.x + 80, P - 200, 2.8), mira(45, DIO.x + 80, P - 200, 2.95)]} /> },
   { t0: 157.7, t1: 162.3, el: <Aceitunas /> },
-  { t0: 162.3, t1: 167.0, el: <ConFarol cam={[mira(0, 2250, P - 270, 1.45), mira(140, 1990, P - 280, 1.6, { curva: "inout" })]} /> },
+  { t0: 162.3, t1: 167.0, el: <ConFarol cam={[mira(0, 2420, P - 260, 2.1), mira(120, 2010, P - 262, 2.2, { curva: "fluida" }), mira(141, 2000, P - 262, 2.25, { curva: "inout" })]} /> },
   { t0: 167.0, t1: 173.5, el: <ConFarolPP /> },
   { t0: 173.5, t1: 178.1, el: <ElVaso /> },
   ...partir(178.1, 184.3, (cam) => <LaFuente cam={cam} />, [[178.1, [mira(0, A.fuente + 20, P - 200, 2.2), mira(75, A.fuente + 20, P - 205, 2.3)]], [180.6, [mira(0, A.fuente - 150, P - 230, 1.6), mira(111, A.fuente - 160, P - 230, 1.7)]]]),
   { t0: 184.3, t1: 189.4, el: <MeGano /> },
   { t0: 189.4, t1: 199.2, el: <LaPuerta />, trans: { tipo: "fundido", d: 12 } },
   { t0: 199.2, t1: 204.5, el: <Mapa /> },
-  ...partir(204.5, 213.4, (cam) => <Reverencia cam={cam} />, [[204.5, [mira(0, A.stoa - 100, P - 260, 1.25), mira(123, A.stoa + 300, P - 260, 1.3, { curva: "inout" })]], [208.6, [mira(0, A.stoa + 1100, P - 280, 1.6), mira(144, A.stoa + 1250, P - 280, 1.7, { curva: "inout" })]]]),
+  ...partir(204.5, 213.4, (cam) => <Reverencia cam={cam} />, [[204.5, [mira(0, A.stoa - 200, P - 250, 1.9), mira(123, A.stoa + 380, P - 250, 2.0, { curva: "fluida" })]], [208.6, [mira(0, A.stoa + 1080, P - 260, 1.85), mira(144, A.stoa + 1120, P - 262, 1.95, { curva: "inout" })]]]),
   ...partir(213.4, 226.5, (cam) => <Marcha cam={cam} />, [[213.4, [mira(0, 1000, P - 320, 1.65), mira(120, 1650, P - 320, 1.7)]], [217.4, [mira(0, 1990, P - 320, 1.6), mira(120, 1990, P - 320, 1.7)]], [221.4, [mira(0, REY - 220, P - 300, 1.5), mira(153, REY - 180, P - 310, 1.65, { curva: "inout" })]]]),
   { t0: 226.5, t1: 233.7, el: <Picado /> },
   { t0: 233.7, t1: 241.0, el: <Presentan /> },
   ...partir(241.0, 251.9, (cam) => <Ofrece cam={cam} />, [[241.0, [mira(0, REY + 40, P - 340, 2.0), mira(100, REY + 40, P - 345, 2.1)]], [244.4, [mira(0, BX, P - 400, 1.3), mira(225, BX, P - 410, 1.36)]]]),
   ...partir(251.9, 259.3, (cam) => <MiSol cam={cam} />, [[251.9, [mira(0, BX + 140, P - 300, 1.6), mira(93, BX + 120, P - 300, 1.7)]], [255.0, [mira(0, DIO.x + 80, P - 200, 2.6), mira(129, DIO.x + 80, P - 205, 2.8)]]]),
   ...partir(259.3, 269.0, (cam) => <Espadas cam={cam} />, [[259.3, [mira(0, REY + 420, P - 300, 1.05), mira(126, REY + 460, P - 300, 1.12)]], [263.5, [mira(0, REY + 40, P - 340, 2.2), mira(165, REY + 40, P - 345, 2.35)]]]),
-  ...partir(269.0, 276.9, (cam) => <SeCorre cam={cam} />, [[269.0, [mira(0, DIO.x + 170, P - 270, 1.85), mira(110, DIO.x + 170, P - 275, 1.95)]], [272.7, [mira(0, BX + 160, P - 250, 1.3), mira(126, BX + 120, P - 240, 1.45, { curva: "inout" })]]]),
+  ...partir(269.0, 276.9, (cam) => <SeCorre cam={cam} />, [[269.0, [mira(0, REY + 40, P - 390, 2.5), mira(57, REY + 40, P - 395, 2.6, { curva: "inout" })]], [270.9, [mira(0, DIO.x + 120, P - 210, 2.3, { rot: -3 }), mira(60, DIO.x + 110, P - 212, 2.4, { rot: -3, curva: "inout" })]],
+    [272.9, [mira(0, BX + 200, P - 270, 1.7), mira(72, BX + 240, P - 270, 1.8, { curva: "inout" })]], [275.3, [mira(0, DIO.x + 40, P - 170, 2.7), mira(48, DIO.x + 40, P - 172, 2.8, { curva: "inout" })]]]),
   { t0: 276.9, t1: 284.1, el: <Deseo /> },
 ];
 // insertos que vuelven en el acto 4 (Alejandro marchando: el mapa que se llena; Diógenes viejo al sol)

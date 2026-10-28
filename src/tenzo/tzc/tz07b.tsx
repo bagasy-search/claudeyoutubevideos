@@ -436,7 +436,7 @@ export const ALaVentana: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => 
   <Cortes planos={[[0, <ALaVentanaA pared={pared} />], [loc(461.6, 465.3), <Inserto objeto={<VidrioLluvia />} objetoAlto={280} objetoAncho={280} look={LEO} pal={PAL} acento={ACENTO} accion="tocar" toques={[8]} esquina="der"
     caras={[{ f: 0, v: "cansado" }, { f: 30, v: "triste" }]} />]]} />
 );
-const ALaVentanaA: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
+export const ALaVentanaA: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
   const t0 = 461.6;
   const VX = CTO.colchon - 400 + 125; // centro de la ventana
   const llega = 50, apoya = 70;
@@ -531,7 +531,7 @@ const TelDorso: React.FC = () => (
   <g><rect x={-62} y={-250} width={124} height={250} rx={16} fill="#1a1a20" stroke="#34343e" strokeWidth={5} />
     <rect x={-44} y={-232} width={36} height={52} rx={10} fill="#2a2a32" /><circle cx={-26} cy={-216} r={9} fill="#0c0c10" /><circle cx={-26} cy={-194} r={7} fill="#0c0c10" /></g>
 );
-const ABURRIDO = { estilo: "frijol" as const, piel: "#b9b6b0", camisa: "#8f8c87", miembro: "#b9b6b0", pantalon: "#7f7c77", zapatos: "#6f6c67", ceja: "#6f6c67", accesorios: [{ t: "pelo" as const, forma: "calvo" as const, color: "#b9b6b0" }] };
+export const ABURRIDO = { estilo: "frijol" as const, piel: "#b9b6b0", camisa: "#8f8c87", miembro: "#b9b6b0", pantalon: "#7f7c77", zapatos: "#6f6c67", ceja: "#6f6c67", accesorios: [{ t: "pelo" as const, forma: "calvo" as const, color: "#b9b6b0" }] };
 export const Picazon2: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
   const t0 = 479.0;
   const B = loc(t0, 482.2);
@@ -543,12 +543,12 @@ export const Picazon2: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
     ]} />
   );
 };
-const LaVozLejos: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
+export const LaVozLejos: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
   const t0 = 482.2;
   return <Cortes planos={[[0, <VozB1 pared={pared} />], [loc(t0, 484.2), <VozB2 pared={pared} />], [loc(t0, 486.9), <VozB3 pared={pared} />]]} />;
 };
-const ABX = CTO.colchon - 620;
-const VozB1: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => (
+export const ABX = CTO.colchon - 620;
+export const VozB1: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => (
   <EnCuarto dia momento="lluvia" leo={null}
     cam={[mira(0, CTO.colchon + 40, PC - 260, 2.4), mira(60, CTO.colchon + 40, PC - 262, 2.5, { curva: "inout" })]}
     medio={<>{pared}<Actor {...leoCto({ poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }, { f: 14, v: { ...SENTADO, hD: 50, cD: 40, hI: 30, cI: 70, tronco: 10 } }, { f: 34, v: { ...SENTADO, hD: 30, cD: 90, hI: 70, cI: 80, tronco: 2 } }],
@@ -571,7 +571,7 @@ const VozB2: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
       hud={<TextoMano texto="bored?" x={960} y={300} desde={12} color="#c9c6c0" />} />
   );
 };
-const VozB3: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => (
+export const VozB3: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => (
   <EnCuarto dia momento="lluvia" leo={null}
     cam={[mira(0, CTO.colchon + 10, PC - 270, 2.5), mira(39, CTO.colchon + 10, PC - 272, 2.6, { curva: "inout" })]}
     medio={<>{pared}<Actor {...conReaccion(leoCto({ dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }, { f: 8, v: { ...SENTADO, hD: 110, cD: 120, hI: 105, cI: 125, tronco: -8, cabeza: -8 } }],
@@ -708,15 +708,20 @@ export const NoventaAlSol: React.FC = () => {
 
 // E3 · 8,3-11,6 «Day 14. 11 at night.»: perfil a la altura del colchón; Leo pasa con el pulgar, bosteza y se refriega los ojos, vuelve al teléfono
 export const DiaCatorce: React.FC = () => {
+  // vuelta 3: ACOSTADO boca arriba en el colchón (cabeza a la izquierda), el teléfono en alto sobre la cara; el pulgar pasa, se refriega los ojos
   const t0 = 8.3, ojos = loc(t0, 10.1);
-  const scroll = [6, 18, 30, 42].flatMap((a) => [{ f: a, v: { ...SENTADO_TEL, hD: 30, cD: 132 } }, { f: a + 5, v: { ...SENTADO_TEL, hD: 34, cD: 118 } }]);
+  const PIES = CTO.colchon + 250;
+  const ARR = { hD: 92, cD: 44, hI: 10, cI: 20, pI: 4, pD: -4, cabeza: -6 };
+  const scroll = [4, 16, 28, 40].flatMap((a) => [{ f: a, v: { ...ARR, cD: 56 } }, { f: a + 5, v: ARR }]);
   return (
     <EnCuarto leo={null}
-      cam={[mira(0, CTO.colchon + 90, PC - 230, 2.3, { rot: -2 }), mira(99, CTO.colchon + 80, PC - 240, 2.5, { rot: -1, curva: "inout" })]}
-      medio={<Actor {...leoCto({ enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 0.7 },
-        poses: [...scroll, { f: ojos - 4, v: { ...SENTADO_TEL, hI: 60, cI: 140, cabeza: 6, tronco: 2 } }, { f: ojos + 8, v: { ...SENTADO_TEL, hI: 70, cI: 150, cabeza: -6, tronco: -2 } }, { f: ojos + 26, v: { ...SENTADO_TEL, cabeza: 26, tronco: 10 } }, { f: 92, v: { ...SENTADO_TEL, cabeza: 30, tronco: 12, hD: 30, cD: 134 } }],
-        caras: [{ f: 0, v: "triste" }, { f: ojos - 2, v: "cansado" }, { f: ojos + 26, v: "triste" }], habla: [[ojos, ojos + 10]],
-        miradas: [{ f: 0, v: { x: 0.3, y: 0.7 } }, { f: ojos, v: { x: 0, y: 0 } }, { f: ojos + 26, v: { x: 0.3, y: 0.8 } }] })} />}
+      cam={[mira(0, CTO.colchon + 30, PC - 150, 2.4, { rot: 2 }), mira(99, CTO.colchon + 20, PC - 155, 2.6, { rot: 1, curva: "inout" })]}
+      medio={<g transform={`translate(0,${-CTO.COLCHON_ALTO - 52}) rotate(-90 ${PIES} ${PC})`}>
+        <Actor {...leoCto({ ruta: [{ f: 0, x: PIES, y: PC }], asiento: [{ f: 0, v: undefined }], dir: [{ f: 0, v: 1 }], enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 0.9 },
+          poses: [...scroll, { f: ojos - 4, v: { ...ARR, hI: 150, cI: 150 } }, { f: ojos + 4, v: { ...ARR, hI: 160, cI: 140, cabeza: -10 } }, { f: ojos + 12, v: { ...ARR, hI: 150, cI: 150 } }, { f: ojos + 26, v: ARR }, { f: 90, v: { ...ARR, cD: 56 } }],
+          caras: [{ f: 0, v: "triste" }, { f: ojos - 2, v: "cansado" }, { f: ojos + 26, v: "triste" }], habla: [[ojos, ojos + 10]],
+          miradas: [{ f: 0, v: { x: 0.9, y: 0 } }, { f: ojos, v: { x: 0.2, y: -0.4 } }, { f: ojos + 26, v: { x: 0.9, y: 0 } }] })} />
+      </g>}
       hud={<RelojDia min={23 * 60} x={1640} y={150} desde={ojos} />} />
   );
 };
@@ -764,17 +769,18 @@ export const YaLoLogro: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
   const t0 = 21.5;
   const sube = loc(t0, 22.9), baja = loc(t0, 24.6), mira2 = loc(t0, 25.3);
   const u = interpolate(f, [sube, sube + 16], [0, 1], { ...cl, easing: (t) => 1 - (1 - t) * (1 - t) });
-  const X = CTO.colchon;
+  const X = CTO.silla - 60; // vuelta 3: en la silla del escritorio, no en el colchón (E3 y E12 ya son colchón)
   return (
-    <EnCuarto leo={null}
-      cam={[mira(0, X + 170, PC - 300, 2.05), mira(135, X + 190, PC - 310, 2.2, { curva: "inout" })]}
+    <EnCuarto leo={null} lampara
+      cam={[mira(0, X + 60, PC - 290, 2.2), mira(135, X + 40, PC - 285, 2.4, { curva: "inout" })]}
       medio={<>
         {pared}
         <Actor {...leoCto({ enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 0.9 },
-          poses: [{ f: 0, v: { ...SENTADO_TEL, hD: 70, cD: 80, cabeza: 6 } }, { f: baja, v: { ...SENTADO_TEL, hD: 20, cD: 60, cabeza: 18, tronco: 10 } }, { f: mira2, v: { ...SENTADO_TEL, hD: 20, cD: 60, cabeza: -10, tronco: 2 } }],
-          caras: [{ f: 0, v: "duda" }, { f: sube + 10, v: "sorpresa" }, { f: baja, v: "triste" }], miradas: [{ f: 0, v: { x: 0.8, y: 0 } }, { f: sube, v: { x: 0.8, y: -0.5 } }, { f: mira2, v: { x: 0.7, y: -0.9 } }] })} />
+          ruta: [{ f: 0, x: X, y: PC }], asiento: [{ f: 0, v: 58 }],
+          poses: [{ f: 0, v: { ...SENTADO, hD: 70, cD: 80, cabeza: 8 } }, { f: baja, v: { ...SENTADO, hD: 8, cD: 10, cabeza: 22, tronco: 12 } }, { f: mira2, v: { ...SENTADO, hD: 4, cD: 6, hI: 4, cI: 6, cabeza: 28, tronco: 16 } }],
+          caras: [{ f: 0, v: "duda" }, { f: sube + 10, v: "sorpresa" }, { f: baja, v: "triste" }], miradas: [{ f: 0, v: { x: 0.8, y: 0 } }, { f: sube, v: { x: 0.8, y: -0.5 } }, { f: mira2, v: { x: 0.3, y: 1 } }] })} />
         {u > 0 && f < baja + 10 && (
-          <g transform={`translate(${X + 330},${PC - 300 - 70 * u}) scale(${0.4 + 0.6 * u})`} opacity={interpolate(f, [baja, baja + 10], [1, 0], cl)}>
+          <g transform={`translate(${X + 260},${PC - 250 - 60 * u}) scale(${0.4 + 0.75 * u})`} opacity={interpolate(f, [baja, baja + 10], [1, 0], cl)}>
             <Halo x={0} y={0} r={240} color={ACENTO} fuerza={0.25} />
             <rect x={-150} y={-120} width={300} height={200} rx={18} fill="#f4f4f6" stroke={ACENTO} strokeWidth={5} />
             <rect x={-136} y={-106} width={272} height={110} rx={10} fill="#a9c4e0" />
@@ -849,26 +855,23 @@ export const GolpeMesa: React.FC<{ caja?: React.ReactNode }> = ({ caja }) => {
   const arriba = { ...TENZO_MESA, hD: 110, cD: 20, tronco: 8, cabeza: 10 }, golpe = { ...TENZO_MESA, hD: 80, cD: 30, tronco: 12, cabeza: 14 };
   const poses = [{ f: 0, v: TENZO_MESA }, ...toques.flatMap((t) => [{ f: t - 5, v: arriba }, { f: t, v: golpe }])];
   return (
-    <EnLavadero medio={<>{caja}{toques.map((t) => { const u = (f - t) / 12; return u >= 0 && u < 1 ? <ellipse key={t} cx={LAV.tenzo - 170} cy={P - 152} rx={30 + 110 * u} ry={10 + 30 * u} fill="none" stroke={ORO} strokeWidth={5} opacity={1 - u} /> : null; })}</>}
+    <EnLavadero medio={<><g transform={`translate(0,${-Math.max(0, ...toques.map((t) => (f >= t && f < t + 8 ? 22 * Math.sin(Math.PI * (f - t) / 8) : 0)))})`}>{caja}</g>{toques.map((t) => (f >= t && f < t + 6 ? [-1, 0, 1].map((k) => <path key={`${t}${k}`} d={`M${LAV.tenzo - 170 + k * 40},${P - 175} l${k * 14},-26`} stroke={ORO} strokeWidth={6} strokeLinecap="round" />) : null))}{toques.map((t) => { const u = (f - t) / 12; return u >= 0 && u < 1 ? <ellipse key={t} cx={LAV.tenzo - 170} cy={P - 152} rx={30 + 110 * u} ry={10 + 30 * u} fill="none" stroke={ORO} strokeWidth={5} opacity={1 - u} /> : null; })}</>}
       tenzo={{ caras: [{ f: 0, v: "feliz" }, { f: toques[1], v: "determinado" }], poses, miradas: [{ f: 0, v: { x: -0.9, y: 0.5 } }], habla: [[toques[2] + 4, 66]] }}
       leo={{ caras: [{ f: 0, v: "duda" }] }}
-      cam={[mira(0, LAV.tenzo - 110, P - 210, 2.5), mira(69, LAV.tenzo - 110, P - 212, 2.6, { curva: "inout" })]} />
+      cam={[mira(0, LAV.tenzo - 150, P - 185, 2.8, { rot: -2 }), mira(69, LAV.tenzo - 150, P - 188, 2.95, { rot: -2, curva: "inout" })]} />
   );
 };
 
 // E56 · 369,1-373,6 «the boy who was on the mattress fourteen days ago»: el recuerdo — un cuadro con el Leo del día 1, hecho un bollo a la noche
 export const DiaUno: React.FC = () => (
-  <ConCara esquina="der" caras={[{ f: 0, v: "duda" }, { f: 70, v: "triste" }, { f: 110, v: "neutral" }]}>
-    <AbsoluteFill style={{ background: "#14161b" }}>
-      <Recuerdo desde={0}>
-        <EnCuarto leo={null} cam={[mira(0, CTO.colchon + 40, PC - 230, 2.2), mira(135, CTO.colchon + 40, PC - 235, 2.35)]}
-          medio={<Actor {...leoCto({ enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 1 },
-            poses: [{ f: 0, v: { ...SENTADO_TEL, cabeza: 34, tronco: 22 } }, { f: 30, v: { ...SENTADO_TEL, cabeza: 36, tronco: 24, hD: 34, cD: 118 } }, { f: 60, v: { ...SENTADO_TEL, hI: 60, cI: 150, cabeza: 30, tronco: 20 } }, { f: 84, v: { ...SENTADO_TEL, cabeza: 38, tronco: 26 } }],
-            caras: [{ f: 0, v: "triste" }, { f: 60, v: "cansado" }], miradas: [{ f: 0, v: { x: 0.2, y: 0.9 } }] })} />} />
-      </Recuerdo>
-      <div style={{ position: "absolute", left: "50%", transform: "translateX(-50%)", top: 100, fontFamily: F_HUD, fontWeight: 600, fontSize: 64, color: "#f4efe4", background: "rgba(12,10,10,0.78)", padding: "8px 28px 12px", borderRadius: 16 }}>DAY 1 · <span style={{ color: ACENTO }}>9h 42m</span></div>
-    </AbsoluteFill>
-  </ConCara>
+  // vuelta 3: el recuerdo a PANTALLA COMPLETA (sin marco ni círculo de cara): Leo del día 1, grande, encorvado sobre el teléfono
+  <AbsoluteFill>
+    <EnCuarto leo={null} cam={[mira(0, CTO.colchon - 20, PC - 190, 2.35, { rot: 3 }), mira(135, CTO.colchon - 30, PC - 195, 2.5, { rot: 2, curva: "inout" })]}
+      medio={<Actor {...leoCto({ enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 1 }, dir: [{ f: 0, v: -1 }],
+        poses: [{ f: 0, v: { ...SENTADO_TEL, cabeza: 34, tronco: 22 } }, { f: 30, v: { ...SENTADO_TEL, cabeza: 36, tronco: 24, hD: 34, cD: 118 } }, { f: 60, v: { ...SENTADO_TEL, hI: 60, cI: 150, cabeza: 30, tronco: 20 } }, { f: 84, v: { ...SENTADO_TEL, cabeza: 38, tronco: 26 } }],
+        caras: [{ f: 0, v: "triste" }, { f: 60, v: "cansado" }], miradas: [{ f: 0, v: { x: 0.2, y: 0.9 } }] })} />} />
+    <div style={{ position: "absolute", left: "50%", transform: "translateX(-50%)", top: 112, fontFamily: F_HUD, fontWeight: 600, fontSize: 60, color: "#f4efe4", background: "rgba(12,10,10,0.78)", padding: "8px 28px 12px", borderRadius: 16 }}>DAY 1 · <span style={{ color: ACENTO }}>9h 42m</span></div>
+  </AbsoluteFill>
 );
 
 // E58 · 377,0-378,3 «is he winning?»: Tenzo se inclina sobre la mesa, ceja arriba, cabeza ladeada
