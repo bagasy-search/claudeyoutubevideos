@@ -92,3 +92,64 @@ export const ChapaDatos: React.FC<{ x: number; y: number; w?: number; lineas: Li
     </AbsoluteFill>
   );
 };
+
+// ---------- vuelta 4: el bolso de ropa con color (azul saturado, cordón blanco, una manga roja asomando) para que se lea sobre el cuarto gris ----------
+export const BolsoColor: React.FC<{ s?: number }> = ({ s = 1 }) => (
+  <g transform={`scale(${s})`}>
+    <path d="M-6,0 L6,0 L4,18 L-4,18 Z" fill="#f2efe8" />
+    <path d="M-12,22 Q-30,8 -22,-6" stroke="#f2efe8" strokeWidth={4} fill="none" strokeLinecap="round" />
+    <path d="M10,20 Q34,10 40,30 Q44,46 30,44 Q24,30 10,30 Z" fill="#d8402e" stroke={TINTA} strokeWidth={3} />
+    {/* bolsa de tela fruncida: cuello angosto atado, panza redonda que se apoya */}
+    <path d="M-9,18 Q-52,34 -46,74 Q-42,104 0,106 Q42,104 46,74 Q52,34 9,18 Z" fill="#2f6fd6" stroke={TINTA} strokeWidth={3.5} />
+    <path d="M-9,18 L-16,10 M-3,18 L-4,8 M3,18 L4,8 M9,18 L16,10" stroke="#2f6fd6" strokeWidth={6} strokeLinecap="round" />
+    <path d="M-12,22 L12,22" stroke="#f2efe8" strokeWidth={5} strokeLinecap="round" />
+    <path d="M-36,46 Q-40,74 -26,94" stroke="#6aa0ff" strokeWidth={6} fill="none" strokeLinecap="round" opacity={0.7} />
+    <path d="M-6,30 Q-14,60 -8,96 M10,32 Q18,62 12,96" stroke="#1f4c99" strokeWidth={3} fill="none" />
+  </g>
+);
+
+// ---------- vuelta 4: INSERTO «I made the rice»: el cuenco humeante en las manos viejas, sobre fondo cálido oscuro ----------
+export const InsertoArroz: React.FC<{ desde: number }> = ({ desde }) => {
+  const f = useF();
+  const t = f - desde;
+  const sube = interpolate(t, [0, 14], [60, 0], { ...cl, easing: (x: number) => 1 - Math.pow(1 - x, 3) });
+  const z = 1 + 0.0016 * t;
+  const piel = "#d9a273";
+  const granos = Array.from({ length: 70 }).map((_, i) => {
+    const a = (i * 137.5 * Math.PI) / 180, r = 150 * Math.sqrt((i + 0.5) / 70);
+    return { x: r * Math.cos(a) * 1.25, y: -r * Math.abs(Math.sin(a)) * 0.55 - (150 - r) * 0.42, rot: (i * 47) % 180 };
+  });
+  return (
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, #5a3a1e 0%, #2a1a10 55%, #120b07 100%)" }}>
+      <svg width={1920} height={1080} style={{ position: "absolute" }}>
+        <g transform={`translate(960,${640 + sube}) scale(${z})`}>
+          {/* vapor: tres hilos que suben ondulando, opacidad continua */}
+          {[-70, 0, 70].map((dx, k) => {
+            const ph = t / 9 + k * 2.1;
+            const o = interpolate(t, [4, 16], [0, 0.55], cl) * (0.75 + 0.25 * Math.sin(ph));
+            return <path key={k} d={`M${dx},-120 C${dx + 40 * Math.sin(ph)},-200 ${dx - 40 * Math.sin(ph + 1)},-290 ${dx + 30 * Math.sin(ph + 2)},-400`} stroke="#fff4e0" strokeWidth={14} strokeLinecap="round" fill="none" opacity={o} />;
+          })}
+          {/* arroz */}
+          <ellipse cx={0} cy={-40} rx={210} ry={52} fill="#f4efe4" />
+          <path d="M-205,-40 Q-150,-170 0,-175 Q150,-170 205,-40 Z" fill="#fbf8f1" stroke={TINTA} strokeWidth={4} />
+          {granos.map((g, i) => <ellipse key={i} cx={g.x} cy={g.y - 48} rx={9} ry={4.5} fill="#e9e1cf" transform={`rotate(${g.rot} ${g.x} ${g.y - 48})`} />)}
+          {/* cuenco */}
+          <path d="M-250,-40 Q-240,160 0,175 Q240,160 250,-40 Z" fill="#f2efe8" stroke={TINTA} strokeWidth={5} />
+          <path d="M-246,-12 Q0,8 246,-12" stroke="#2f5fae" strokeWidth={14} fill="none" />
+          <path d="M-200,40 Q-150,130 -40,150" stroke="#ffffff" strokeWidth={10} fill="none" opacity={0.6} strokeLinecap="round" />
+          <ellipse cx={0} cy={-40} rx={250} ry={40} fill="none" stroke={TINTA} strokeWidth={5} />
+          <rect x={-80} y={165} width={160} height={26} rx={8} fill="#d8d2c4" stroke={TINTA} strokeWidth={4} />
+          {/* manos viejas a los lados, mangas grises desde abajo */}
+          {[-1, 1].map((l) => (
+            <g key={l} transform={`scale(${l},1)`}>
+              <path d="M300,420 Q300,200 250,110" stroke="#7d8189" strokeWidth={120} fill="none" strokeLinecap="round" />
+              <path d="M215,40 Q300,40 300,140 Q296,190 240,186 Q200,150 215,40 Z" fill={piel} stroke={TINTA} strokeWidth={4} />
+              {[0, 1, 2, 3].map((d) => <path key={d} d={`M${222 - d * 4},${56 + d * 28} q-34,4 -44,18`} stroke={TINTA} strokeWidth={4} fill="none" strokeLinecap="round" />)}
+              <path d="M226,30 q-30,-20 -60,-6" stroke={piel} strokeWidth={26} strokeLinecap="round" fill="none" />
+            </g>
+          ))}
+        </g>
+      </svg>
+    </AbsoluteFill>
+  );
+};

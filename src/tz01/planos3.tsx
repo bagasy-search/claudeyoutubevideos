@@ -20,6 +20,7 @@ import { FarolNoche, OlaMundo, PapelVersos, PrincipeFull } from "./extras_4";
 import { BrazoLeoOTS, FarolEnManos, NochesFila } from "./extras_3b";
 import { PulgarTiembla, FarolCerca, HombroLeo, HombroTenzo, ManoTelTibio, MaraCaja, MaraPrimer, NieveCerca, NubesAbren, OjosTenzo, OpenDerecho, Pajaro, PalmaEspera, PanelOla, Placa, TelCenital, TresDedos, FarolApaga } from "./extras_3";
 import { CajaComentario, CaraMara, Collar, Mango, DedosTel, FraseCaja, Hoja, Latido, LlamadaMundo, manoMundo, Pensamiento, TelVuelta, Tira30, lerp } from "./extras";
+import { InsertoArroz } from "./extras_5";
 
 const VP = VAI_PISO, V = VAI_PUNTOS, L = LAV_PUNTOS;
 const cl = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const };
@@ -94,19 +95,6 @@ const NoMonje: React.FC<{ tacha: number }> = ({ tacha }) => (
     <path d="M60,90 L170,200 M170,90 L60,200" stroke={ACENTO} strokeWidth={10} strokeLinecap="round" opacity={tacha} />
   </g>
 );
-const ArrozDibujo: React.FC<{ w: number; h: number }> = ({ w, h }) => {
-  const f = useF();
-  return (
-    <g>
-      <rect width={w} height={h} fill="#fbf2df" />
-      {[0, 1, 2].map((k) => <path key={k} d={`M${w / 2 - 50 + k * 50},${h * 0.42} q${14 * Math.sin(f / 9 + k)},-30 0,-60 q${-14 * Math.sin(f / 9 + k)},-30 0,-60`} stroke="#c9b8a0" strokeWidth={6} fill="none" strokeLinecap="round" opacity={0.8} />)}
-      <ellipse cx={w / 2} cy={h * 0.5} rx={120} ry={34} fill="#fffaf0" stroke={TINTA} strokeWidth={5} />
-      {Array.from({ length: 14 }).map((_, k) => <ellipse key={k} cx={w / 2 - 90 + (k % 7) * 30} cy={h * 0.47 + Math.floor(k / 7) * 12} rx={7} ry={4} fill="#f4ede0" stroke="#b8ab95" strokeWidth={1.5} />)}
-      <path d={`M${w / 2 - 120},${h * 0.5} Q${w / 2},${h * 0.95} ${w / 2 + 120},${h * 0.5}`} fill="#8a4a2a" stroke={TINTA} strokeWidth={5} />
-      <path d={`M${w / 2 + 60},${h * 0.18} L${w / 2 + 150},${h * 0.62}`} stroke="#b8803a" strokeWidth={7} strokeLinecap="round" transform={`rotate(${10 * Math.sin(f / 6)} ${w / 2 + 100} ${h * 0.4})`} />
-    </g>
-  );
-};
 const PerroDibujo: React.FC<{ w: number; h: number }> = ({ w, h }) => {
   const f = useF();
   return (
@@ -660,7 +648,13 @@ export const P67Papel: React.FC = () => {
     <Lav cl={[mira(0, L.leo + 40, 625, 3.0), mira(TI - 1, L.leo + 44, 618, 3.12, { curva: "inout" })]} toalla={0.8} sp={{ farol: f < 22 }} tenzo={{ no: true }} mara={{ no: true }}
       leo={{ enManoD: () => null, luz: { lado: 1, color: ORO, fuerza: 0.6 + 0.8 * sube }, poses: [{ f: 0, v: { ...SENTADO, tronco: 8, cabeza: 6, hD: 12, cD: 40, hI: 30, cI: 60 } }, { f: 30, v: { ...SENTADO, tronco: -4, cabeza: -10, hD: 12, cD: 40, hI: 30, cI: 60 } }],
         miradas: [{ f: 0, v: { x: 0.9, y: 0.2 } }, { f: 14, v: { x: 0.8, y: -0.5 } }, { f: 34, v: { x: 0.6, y: -0.8 } }], caras: [{ f: 0, v: "duda" }, { f: 30, v: "sorpresa" }] }}
-      extra={<Halo x={L.leo + 330} y={700 - 140 * sube} r={260} color={ORO} fuerza={0.25 + 0.4 * sube} />}
+      extra={<>
+        <Halo x={L.leo + 250} y={830 - 230 * sube} r={300} color={ORO} fuerza={0.35 + 0.45 * sube} />
+        {/* v4: el FAROL entra en cuadro: sube desde abajo en la mano de Tenzo (manga gris desde el borde) hasta quedar al lado de la cara de Leo */}
+        <path d={`M${L.leo + 460},${640 - 150 * sube} Q${L.leo + 340},${700 - 210 * sube} ${L.leo + 262},${770 - 250 * sube}`} stroke="#8d9097" strokeWidth={34} fill="none" strokeLinecap="round" />
+        <circle cx={L.leo + 256} cy={766 - 250 * sube} r={17} fill="#d9a273" stroke="#221c18" strokeWidth={3} />
+        <g transform={`translate(${L.leo + 250},${760 - 250 * sube}) scale(1.6)`}><FarolMano luz={1.2 + 0.4 * sube} /></g>
+      </>}
       hud={<Hud />} />
   );
 };
@@ -981,15 +975,16 @@ const k82 = kDe(423.91);
 export const P82Arroz: React.FC = () => {
   const f = useF();
   const TQ = k82(425.0); // «What does that mean?» = Leo, sobre el hombro de Tenzo
+  const TR = k82(426.75); // v4: «I made the rice» = INSERTO del cuenco humeante en sus manos (sin pared vacía ni ventanal)
+  if (f >= TR) return <><InsertoArroz desde={TR} /><Hud {...H83} /></>;
   return (
   <>
-  <Lav cl={f < TQ ? [mira(0, L.leo + 240, 660, 2.0), mira(TQ - 1, L.leo + 236, 662, 2.08)] : [mira(TQ, L.puerta + 170, 660, 2.45), mira(132, L.puerta + 164, 656, 2.55, { curva: "inout" })]} toalla={1} sp={{ farol: false, nieve: true }} extra={f < TQ ? <OpenDerecho /> : null}
+  <Lav cl={f < TQ ? [mira(0, L.leo + 240, 660, 2.0), mira(TQ - 1, L.leo + 236, 662, 2.08)] : [mira(TQ, L.puerta + 88, 715, 3.3), mira(132, L.puerta + 84, 708, 3.42, { curva: "inout" })]} toalla={1} sp={{ farol: false, nieve: true }} extra={<OpenDerecho />}
     leo={f < TQ ? leoParado({ caras: [{ f: 0, v: "duda" }], habla: [[0, TQ - 2]], giros: [{ f: 0, v: 0.3 }], miradas: [{ f: 0, v: { x: 0.9, y: -0.1 } }], poses: [{ f: 0, v: "parado" }, { f: 4, v: { hD: 60, cD: 70, hI: 50, cI: 70, tronco: 6, cabeza: -6 } }, { f: 18, v: { hD: 70, cD: 50, hI: 60, cI: 50, tronco: 4, cabeza: 4 } }] }) : { no: true }}
     tenzo={tenzoPuerta({ enManoD: farolVaiven(1.3, 8), habla: [[k82(424.3), k82(425.4)], [k82(426.91), k82(428.21)]], caras: [{ f: 0, v: "neutral" }, { f: k82(425.5), v: "risa" }, { f: k82(426.9), v: "feliz" }],
       miradas: [{ f: 0, v: { x: -0.9, y: 0 } }, { f: k82(426.0), v: { x: -0.5, y: 0.6 } }, { f: k82(427.6), v: { x: -0.9, y: 0 } }],
       poses: [{ f: 0, v: { ...FAROL, hI: 10, cI: 10 } }, { f: k82(425.4), v: { ...FAROL, hI: 10, cI: 10, cabeza: 10, tronco: 6 } }, ...Array.from({ length: 10 }).map((_, i) => ({ f: k82(425.9) + i * 5, v: { ...FAROL, hI: 40 + (i % 2) * 70, cI: 120 - (i % 2) * 90, cabeza: 6, tronco: 4 + (i % 2) * 4 } }))] })}
-    hud={<><Hud {...H83} /><Globo texto="What does that mean?" x={720} y={220} desde={2} hasta={TQ} cola="abajo" tam={50} /><Pildora texto="TENZO = THE COOK" x={1240} y={420} desde={k82(425.3)} hasta={k82(426.6)} color="#ffe2a6" tam={66} />
-      <Pensamiento x={1200} y={540} w={720} h={430} desde={k82(426.6)} cola={{ x: 560, y: 420 }}><ArrozDibujo w={720} h={430} /></Pensamiento></>} />
+    hud={<><Hud {...H83} /><Globo texto="What does that mean?" x={720} y={220} desde={2} hasta={TQ} cola="abajo" tam={50} /><Pildora texto="TENZO = THE COOK" x={1420} y={560} desde={k82(425.3)} color="#ffe2a6" tam={74} /></>} />
   {f < TQ && <HombroTenzo x={1630} y={720} r={205} lado={1} />}
   </>
   );
