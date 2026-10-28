@@ -1,1 +1,1 @@
-{"err": ["n_e1_media", "n_e2_w", "n_e3_w", "n_e4_w", "n_e5_w"], "rec": ["f_cierra_va", "n_telgopor_caja", "n_olla_llena", "n_hierve_centro", "n_reloj_pared", "n_4h_w", "n_hervor_estufa", "n_e3_w"]}
+{"err": ["n_e1_media", "n_e2_w", "n_e3_w", "n_e4_w", "n_e5_w"], "rec": ["f_cierra_va", "n_telgopor_caja", "n_olla_llena", "n_hierve_centro", "n_reloj_pared", "n_4h_w", "n_hervor_estufa", "n_e3_w"], "vs": ["n_almohadon_olla", "n_olla_mesa_fria"]}
