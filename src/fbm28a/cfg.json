@@ -1,0 +1,588 @@
+{
+ "desc": "🪨 La receta de la losa que parece cuarzo + La Colección del Constructor Libre",
+ "replies": [],
+ "pages": {
+  "cl 99": {
+   "hl": "LOS POCOS NÚMEROS: LIJAS Y SELLADORES",
+   "bar": [
+    0.08575944744180855,
+    0.11494903247124692,
+    0.5258193520933492,
+    0.025672381063992056
+   ]
+  }
+ },
+ "heroes": [
+  {
+   "k": "gauge",
+   "at": 4.12,
+   "out": 10.12,
+   "v": 0.92,
+   "lab": "CUARZO INSTALADO · $800",
+   "kick": "EL PRESUPUESTO",
+   "title": "LO QUE TE COBRAN",
+   "bg": "a_cuarzo_presu",
+   "mode": "iris"
+  },
+  {
+   "k": "knock",
+   "at": 24.86,
+   "out": 29.36,
+   "a": "CUARZO · $800",
+   "b": "CEMENTO CASERO",
+   "lab": "SUENAN IGUAL",
+   "bg": "a_cuarzo_presu",
+   "mode": "wipe"
+  },
+  {
+   "k": "redact",
+   "at": 69.24,
+   "out": 76.74,
+   "title": "LOS 10 PASOS DE HOY",
+   "items": [
+    {
+     "t": "EL CEMENTO BLANCO",
+     "at": 0.5
+    },
+    {
+     "t": "LA MARMOLINA",
+     "at": 0.9
+    },
+    {
+     "t": "UNA DE UNA",
+     "at": 1.3
+    },
+    {
+     "t": "EL MOLDE",
+     "at": 1.7
+    },
+    {
+     "t": "EL VIBRADO",
+     "at": 2.1
+    },
+    {
+     "t": "EL CURADO",
+     "at": 2.5
+    }
+   ],
+   "stamp": "Nº 9 · EL PREMIO",
+   "stampAt": 4.2,
+   "bg": "a_garaje",
+   "mode": "drop"
+  },
+  {
+   "k": "odometer",
+   "at": 164.86,
+   "out": 171.36,
+   "z": 1.5,
+   "v": 30,
+   "u": "AÑOS EN EL TALLER",
+   "sub": "ARREGLO, CONSTRUYO Y PRUEBO",
+   "bg": "a_taller_presenta",
+   "mode": "shutter"
+  },
+  {
+   "k": "exploded",
+   "at": 213.22,
+   "out": 220.22,
+   "items": [
+    {
+     "t": "CUARZO MOLIDO",
+     "img": "a_cuarzo_fabrica",
+     "at": 0.6
+    },
+    {
+     "t": "RESINA",
+     "img": "a_mesa_luz",
+     "at": 1.2
+    },
+    {
+     "t": "PRENSA DE FÁBRICA",
+     "img": "a_bolsa_blanca",
+     "at": 1.8
+    }
+   ],
+   "hi": 0,
+   "bg": "a_cuarzo_fabrica",
+   "mode": "diag"
+  },
+  {
+   "k": "versus",
+   "at": 241.22,
+   "out": 248.22,
+   "items": [
+    {
+     "t": "PORTLAND BLANCO",
+     "img": "a_bolsa_blanca",
+     "at": 0.5
+    },
+    {
+     "t": "GRIS COMÚN",
+     "img": "a_bolsa_gris",
+     "at": 1.3
+    }
+   ],
+   "win": 3.4,
+   "best": 0,
+   "bg": "a_bolsa_blanca",
+   "mode": "split"
+  },
+  {
+   "k": "scale",
+   "at": 291.46,
+   "out": 297.96,
+   "v": 8,
+   "u": "KG",
+   "dec": 1,
+   "bag": "CEMENTO BLANCO",
+   "lab": "PARA UNA MESADA CHICA",
+   "bg": "a_ocho_kilos",
+   "mode": "wipe"
+  },
+  {
+   "k": "jartest",
+   "at": 376.1,
+   "out": 383.6,
+   "bg": "tarro_prueba",
+   "mode": "iris"
+  },
+  {
+   "k": "ratio",
+   "at": 446.42,
+   "out": 451.92,
+   "a": "CEMENTO",
+   "b": "MARMOLINA",
+   "bg": "a_una_de_una",
+   "mode": "split"
+  },
+  {
+   "k": "hourglass",
+   "at": 492.52,
+   "out": 498.52,
+   "lab": "EL AGUA, DE A POCO",
+   "bg": "a_mezcla_seco",
+   "mode": "iris"
+  },
+  {
+   "k": "fist",
+   "at": 514.1,
+   "out": 520.1,
+   "a": "FALTA AGUA",
+   "b": "PERFECTA",
+   "c": "TE PASASTE",
+   "bg": "a_chorrito",
+   "mode": "drop"
+  },
+  {
+   "k": "checklist",
+   "at": 579.26,
+   "out": 584.76,
+   "tick": 1,
+   "title": "EL MOLDE",
+   "items": [
+    {
+     "t": "Melamina atornillada de afuera",
+     "at": 0.6
+    },
+    {
+     "t": "Silicona en las esquinas",
+     "at": 1.4
+    },
+    {
+     "t": "Aceite finito, sin gotas",
+     "at": 2.2
+    }
+   ],
+   "bg": "a_fluidificante",
+   "mode": "shutter"
+  },
+  {
+   "k": "stopwatch",
+   "at": 696.14,
+   "out": 700.64,
+   "v": 3,
+   "u": "min",
+   "dec": 0,
+   "labAt": 1.0,
+   "lab": "VIBRAR 2 A 3 MINUTOS",
+   "bg": "vuelca_molde",
+   "mode": "iris"
+  },
+  {
+   "k": "meshslab",
+   "at": 761.04,
+   "out": 767.54,
+   "a": "MALLA DE FIBRA DE VIDRIO",
+   "lab": "SI SE RAJA, NO SE PARTE",
+   "bg": "malla",
+   "mode": "wipe"
+  },
+  {
+   "k": "cure",
+   "at": 824.84,
+   "out": 832.34,
+   "v": 7,
+   "bg": "a_lijas",
+   "mode": "shutter"
+  },
+  {
+   "k": "suncrack",
+   "at": 854.2,
+   "out": 861.2,
+   "bg": "a_tela_arana",
+   "mode": "drop"
+  },
+  {
+   "k": "calendar",
+   "at": 893.58,
+   "out": 898.58,
+   "v": 48,
+   "top": "HORAS",
+   "lab": "RECIÉN AHÍ, EL DESMOLDE",
+   "sub": "DURA, PERO JOVEN",
+   "bg": "nylon_curado",
+   "mode": "shutter"
+  },
+  {
+   "k": "demold",
+   "at": 957.7,
+   "out": 964.2,
+   "popAt": 1.4,
+   "txt": "¡TUC!",
+   "lab": "LA MELAMINA SE DESPEGA SOLA",
+   "bg": "desmolde",
+   "mode": "iris"
+  },
+  {
+   "k": "twohands",
+   "at": 989.4,
+   "out": 995.9,
+   "lab": "NUNCA DE UNA PUNTA SOLA",
+   "bg": "a_alfileres",
+   "mode": "split"
+  },
+  {
+   "k": "grit",
+   "at": 1025.0,
+   "out": 1032.0,
+   "bg": "lija_agua",
+   "mode": "blinds"
+  },
+  {
+   "k": "raking",
+   "at": 1046.58,
+   "out": 1051.58,
+   "a": "LA LINTERNA, ACOSTADA",
+   "lab": "LUZ RASANTE: APARECE CADA PORO",
+   "bg": "a_linterna",
+   "mode": "iris"
+  },
+  {
+   "k": "strip",
+   "at": 1125.08,
+   "out": 1133.08,
+   "items": [
+    {
+     "t": "LA MESITA DE LUZ",
+     "img": "a_marta_mesita",
+     "at": 0.5
+    },
+    {
+     "t": "UNA COPA DE VINO",
+     "img": "a_anillo_vino",
+     "at": 1.7
+    },
+    {
+     "t": "EL ANILLO VIOLETA",
+     "img": "a_sellador",
+     "at": 2.9
+    }
+   ],
+   "stamp": "SIN SELLADOR",
+   "stampAt": 4.6,
+   "bad": 1,
+   "bg": "a_marta_mesita",
+   "mode": "shutter"
+  },
+  {
+   "k": "coats",
+   "at": 1181.5,
+   "out": 1186.5,
+   "a": "1ª MANO DE SELLADOR",
+   "b": "2ª MANO",
+   "lab": "24 H ENTRE MANOS",
+   "bg": "a_pasa_sellador",
+   "mode": "wipe"
+  },
+  {
+   "k": "balance",
+   "at": 1228.9,
+   "out": 1233.9,
+   "items": [
+    {
+     "t": "CERA GRUESA: PEGAJOSA",
+     "img": "cera_trapo",
+     "at": 0.6
+    },
+    {
+     "t": "CAPA FINITA: BRILLO",
+     "img": "a_cera_gruesa",
+     "at": 1.4
+    }
+   ],
+   "win": 3.2,
+   "best": 1,
+   "bg": "cera_trapo",
+   "mode": "drop"
+  },
+  {
+   "k": "cork",
+   "at": 1263.6,
+   "out": 1269.1,
+   "title": "QUÉ PODÉS HACER",
+   "items": [
+    {
+     "t": "UNA MESADA CHICA",
+     "at": 0.6
+    },
+    {
+     "t": "LA MESA DE LUZ",
+     "at": 1.2
+    },
+    {
+     "t": "POSAVASOS",
+     "at": 1.8
+    },
+    {
+     "t": "UNA MACETA",
+     "at": 2.4
+    }
+   ],
+   "bg": "posavasos_vino",
+   "mode": "blinds"
+  },
+  {
+   "k": "receipt",
+   "at": 1331.72,
+   "out": 1337.72,
+   "bg": "a_olla",
+   "mode": "wipe"
+  },
+  {
+   "k": "deck",
+   "at": 1395.46,
+   "out": 1401.96,
+   "title": "5 ERRORES",
+   "items": [
+    {
+     "t": "EL CEMENTO GRIS",
+     "img": "a_raya_lija",
+     "at": 0.5
+    },
+    {
+     "t": "LA ARENA DEL CORRALÓN",
+     "img": "a_rayas",
+     "at": 1.4
+    },
+    {
+     "t": "AGUA DE MÁS",
+     "img": "a_mezcla_gris",
+     "at": 2.3
+    },
+    {
+     "t": "AL SOL Y SIN CURAR",
+     "img": "a_hilos",
+     "at": 3.2
+    },
+    {
+     "t": "CERA SIN SELLADOR",
+     "img": "a_veta_cara",
+     "at": 4.1
+    }
+   ],
+   "bg": "a_raya_lija",
+   "mode": "blinds"
+  },
+  {
+   "k": "veins",
+   "at": 1492.68,
+   "out": 1500.18,
+   "bg": "a_hilos",
+   "mode": "diag"
+  },
+  {
+   "k": "routine",
+   "at": 1547.84,
+   "out": 1554.34,
+   "title": "LAS DOS SEMANAS",
+   "items": [
+    {
+     "n": "DÍA 0",
+     "t": "COLAR Y VIBRAR",
+     "img": "a_pizarron",
+     "at": 0.6
+    },
+    {
+     "n": "DÍA 7",
+     "t": "LIJA 120 Y PASTA",
+     "img": "a_mate_lija",
+     "at": 1.6
+    },
+    {
+     "n": "DÍA 14",
+     "t": "SELLADOR Y CERA",
+     "img": "a_aniba_agua",
+     "at": 2.6
+    }
+   ],
+   "bg": "a_pizarron",
+   "mode": "wipe"
+  },
+  {
+   "k": "polaroid",
+   "at": 1614.46,
+   "out": 1619.96,
+   "img": "a_mate_lija",
+   "n": "DON ANÍBAL",
+   "sub": "EL MARMOLERO",
+   "stamp": "NUNCA APURABA",
+   "stampAt": 3.6,
+   "bg": "a_mate_lija",
+   "mode": "blinds"
+  },
+  {
+   "k": "wetsand",
+   "at": 1630.64,
+   "out": 1635.64,
+   "a": "UN HILO DE AGUA, SIEMPRE",
+   "stamp": "NUNCA EN SECO",
+   "stampAt": 2.8,
+   "bg": "a_aniba_agua",
+   "mode": "iris"
+  },
+  {
+   "k": "tally",
+   "at": 1659.08,
+   "out": 1666.08,
+   "title": "¿ESTÁ SECA?",
+   "rows": [
+    {
+     "t": "FRÍA",
+     "img": "a_dorso",
+     "r": [
+      false,
+      false,
+      false,
+      false
+     ],
+     "at": 0.6
+    },
+    {
+     "t": "COMO LA MESA",
+     "img": "a_lino",
+     "r": [
+      false,
+      true,
+      true,
+      true
+     ],
+     "at": 1.8
+    }
+   ],
+   "bg": "a_dorso",
+   "mode": "blinds"
+  },
+  {
+   "k": "tiles",
+   "at": 1726.8,
+   "out": 1733.8,
+   "y0": "HACE 100 AÑOS",
+   "y1": "HOY",
+   "a": "LA BALDOSA CALCÁREA",
+   "b": "TU MESA",
+   "lab": "EL MISMO CEMENTO",
+   "bg": "a_calcareas",
+   "mode": "wipe"
+  },
+  {
+   "k": "phone",
+   "at": 1777.08,
+   "out": 1783.58,
+   "items": [
+    {
+     "n": "PREGUNTA",
+     "t": "¿No es mejor la resina?",
+     "at": 0.6
+    },
+    {
+     "n": "CLAUDIO",
+     "t": "Es plástico: se raya y amarillea.",
+     "at": 2.0
+    }
+   ],
+   "bg": "a_suelo_resbala",
+   "mode": "drop"
+  },
+  {
+   "k": "envelope",
+   "at": 1850.88,
+   "out": 1855.88,
+   "n": "Para: tu cocina",
+   "paper": "la losa del taller",
+   "paperV": "11 dólares",
+   "lab": "Y LA HICISTE VOS",
+   "bg": "a_llave_marca",
+   "mode": "shutter"
+  },
+  {
+   "k": "chalk",
+   "at": 1865.84,
+   "out": 1871.84,
+   "title": "LOS 10 DE HOY",
+   "items": [
+    {
+     "t": "cemento blanco",
+     "at": 0.3
+    },
+    {
+     "t": "marmolina + frasco",
+     "at": 0.5
+    },
+    {
+     "t": "una de una + puño",
+     "at": 0.7
+    },
+    {
+     "t": "melamina + silicona",
+     "at": 0.9
+    },
+    {
+     "t": "vibrar 2-3 min",
+     "at": 1.1
+    },
+    {
+     "t": "7 días húmeda",
+     "at": 1.3
+    },
+    {
+     "t": "desmolde a las 48 h",
+     "at": 1.5
+    },
+    {
+     "t": "120 · pasta · 1500",
+     "at": 1.7
+    },
+    {
+     "t": "sellador + cera",
+     "at": 1.9
+    },
+    {
+     "t": "un posavasos",
+     "at": 2.1
+    }
+   ],
+   "bg": "a_mesa_luz_propia",
+   "mode": "split"
+  }
+ ]
+}
