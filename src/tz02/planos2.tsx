@@ -16,7 +16,7 @@ import {
   Anillos, Auto, BiciDib, ManoGrande, suave, TelSvg, Burbuja, Calor, cl, Escoba, Etiqueta, FlorVentana, HojaCal, LagoDib, lerp, Lienzo, MamaDib, PortonDib, Recto, Retrato, TelMarco, Trazo, Vaho, ViejoDib, usePop, Lagrimas,
 } from "./extras";
 import { ciclo, rimOro, Silueta, TENZO } from "./planos1";
-import { Amanecer, AmanecerCalle, CicloPorton, Desde, DoblaToalla, Envejece, Memorial, Placa, SombraGira, Tramos } from "./extras_b";
+import { Amanecer, AmanecerCalle, CicloPorton, Desde, Envejece, Memorial, Placa, SombraGira, Tramos } from "./extras_b";
 
 const MIRA_T = { x: 0.9, y: 0 }, MIRA_L = { x: -0.9, y: 0 };
 const H3 = <Hud2 m={0} dia={3} est="congelado" />;
@@ -722,28 +722,15 @@ export const Q69Toalla: React.FC = () => {
       [0, <Lav cl={[mira(0, 2050, 610, 1.6), mira(b, 1880, 620, 1.75, { curva: "inout" })]} toalla={0}
         tenzo={{ poses: doblando(0, b, 40), miradas: [{ f: 0, v: { x: -0.3, y: 0.7 } }] }} leo={{ ruta: [{ f: 0, x: 2400, y: LP }, { f: b, x: 2020, y: LP }], dir: [{ f: 0, v: -1 }], asiento: [{ f: 0, v: undefined }], poses: [{ f: 0, v: CAMINA }], ajuste: BOLSILLOS, enManoD: null, caras: [{ f: 0, v: "cansado" }], miradas: [{ f: 0, v: { x: -0.9, y: 0 } }] }}
         hud={<>{H3}<Placa texto="INTO THE LAUNDROMAT" x={960} y={980} desde={6} tam={42} /></>} />],
-      // v3ra: la toalla con rizo y rayas + la CARA de Leo (círculo arriba a la derecha) que la mira: duda → se ablanda
-      [b, <><DoblaToalla p1={[4, kb(350.6)]} p2={[kb(350.9), kb(352.0)]} /><CaraLeo69 />{H3}
+      // v3ra (final): PLANO MEDIO del rincón: Tenzo sentado dobla la toalla punta con punta (la toalla de la mesa se pliega) y Leo, parado de costado, lo mira
+      [b, <Lav cl={[mira(0, 1770, 680, 2.0), mira(173 - b, 1760, 690, 2.2, { curva: "inout" })]} toalla={(fr: number) => suave(lerp(fr, 6, 160 - b, 0, 1))}
+        tenzo={{ poses: doblando(4, 168 - b, 34), caras: [{ f: 0, v: "neutral" }, { f: kb(350.9), v: "feliz" }], miradas: [{ f: 0, v: { x: -0.4, y: 0.8 } }] }}
+        leo={{ ruta: [{ f: 0, x: 2010, y: LP }], dir: [{ f: 0, v: -1 }], asiento: [{ f: 0, v: undefined }], giros: [{ f: 0, v: -0.55 }], poses: [{ f: 0, v: { hD: 10, cD: 20, hI: 10, cI: 20 } }], ajuste: BOLSILLOS, enManoD: null,
+          caras: [{ f: 0, v: "cansado" }, { f: kb(349.6), v: "duda" }, { f: kb(351.2), v: "neutral" }], miradas: [{ f: 0, v: { x: -0.8, y: 0.5 } }, { f: kb(350.9), v: { x: -0.6, y: 0.2 } }] }}
+        hud={<>{H3}
         <Placa texto="SLOWLY" x={960} y={140} desde={kb(350.14)} hasta={kb(350.85)} tam={56} color="#ffd38a" />
-        <Placa texto="CORNER TO CORNER" x={960} y={140} desde={kb(350.9)} tam={56} color="#ffd38a" /></>],
+        <Placa texto="CORNER TO CORNER" x={960} y={140} desde={kb(350.9)} tam={56} color="#ffd38a" /></>} />],
     ]} />
-  );
-};
-const CaraLeo69: React.FC = () => {
-  const f = useF();
-  const s = suave(lerp(f, 2, 14, 0, 1));
-  return (
-    <Lienzo>
-      <defs><clipPath id="caraLeo69"><circle cx={1590} cy={330} r={190} /></clipPath></defs>
-      <g opacity={s}>
-        <circle cx={1590} cy={330} r={198} fill="#f4efe6" />
-        <circle cx={1590} cy={330} r={190} fill="#3a3f4a" />
-        <g clipPath="url(#caraLeo69)"><g transform={`translate(1590,330) scale(1.55)`}>
-          <A look={LEO_CAPUCHA} seed={1} ruta={[{ f: 0, x: 0, y: 235 }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { hD: -12, cD: 34, hI: -12, cI: 34, cabeza: 10 } }, { f: 60, v: { hD: -12, cD: 34, hI: -12, cI: 34, cabeza: 4, tronco: -4 } }]}
-            caras={[{ f: 0, v: "cansado" }, { f: 34, v: "duda" }, { f: 80, v: "feliz" }]} miradas={[{ f: 0, v: { x: -0.6, y: 0.7 } }, { f: 50, v: { x: -0.8, y: 0.5 } }]} giros={[{ f: 0, v: -0.2 }]} />
-        </g></g>
-      </g>
-    </Lienzo>
   );
 };
 // ---------- 70 · plano medio: Tenzo le tiende el tel «here, like I promised» → primer plano: la mano de Leo sube, duda… y baja ----------
@@ -772,21 +759,29 @@ export const Q70Tiende: React.FC = () => {
 export const Q71Ochenta: React.FC = () => {
   const f = useF();
   const n = Math.round(interpolate(f, [4, 46], [0, 87], { ...cl, easing: (t) => 1 - (1 - t) * (1 - t) }));
+  // v3ra (final): CENITAL de la mesa plegable: el tel boca arriba vibra y la mano de Leo, que lo tenía tocando, se retira despacio hacia abajo
+  const sale = suave(lerp(f, 8, 44, 0, 1));
+  const gira = lerp(f, 0, 55, -2, 2);
   return (
     <Fondo>
-      <TelMarco x={1220} y={560} s={0.82} vib={f < 50 ? 6 : 0}>
+      <Lienzo>
+        <rect width={1920} height={1080} fill="#2b2f36" />
+        <g transform={`rotate(${gira} 960 540)`}>
+          <rect x={180} y={-40} width={1560} height={1160} rx={30} fill="#9aa0a8" />
+          {Array.from({ length: 9 }).map((_, k) => <rect key={k} x={180} y={60 + k * 120} width={1560} height={3} fill="#878d96" />)}
+          <rect x={180} y={-40} width={1560} height={1160} rx={30} fill="none" stroke="#6f757e" strokeWidth={10} />
+        </g>
+        <ellipse cx={985} cy={600} rx={250} ry={430} fill="#000" opacity={0.25} />
+      </Lienzo>
+      <TelMarco x={960} y={560} s={0.82} vib={f < 50 ? 6 : 0}>
         <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily: F_HUD }}>
           <div style={{ fontSize: 230, fontWeight: 700, color: "#ff6a2b", lineHeight: 1 }}>{n}</div>
           <div style={{ fontSize: 40, letterSpacing: 4, color: "#c9ccd2", fontWeight: 600 }}>NOTIFICATIONS</div>
         </div>
       </TelMarco>
-      <Lienzo><Anillos x={1220} y={560} f={f} r0={300} />
-        {/* v3ra: Leo frente al tel: se echa atrás a medida que sube el número */}
-        <g transform={`translate(${lerp(f, 0, 55, 470, 420)},1480) scale(3.2)`}>
-          <A look={LEO_CAPUCHA} seed={1} ruta={[{ f: 0, x: 0, y: 0 }]} dir={[{ f: 0, v: 1 }]}
-            poses={[{ f: 0, v: { hD: -12, cD: 34, hI: -12, cI: 34, cabeza: 4, tronco: 4 } }, { f: 40, v: { hD: -12, cD: 34, hI: -12, cI: 34, cabeza: -10, tronco: -8 } }]}
-            caras={[{ f: 0, v: "neutral" }, { f: 14, v: "sorpresa" }, { f: 40, v: "miedo" }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }]} giros={[{ f: 0, v: 0.35 }]} />
-        </g></Lienzo>
+      <Lienzo><Anillos x={960} y={560} f={f} r0={300} />
+        <ManoGrande x={1240 + sale * 180} y={760 + sale * 520} ang={-18 + sale * 8} piel="#ecc9a3" manga="#24242a" s={1.15} largo={900} />
+      </Lienzo>
       {H3}
     </Fondo>
   );
