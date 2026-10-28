@@ -554,7 +554,7 @@ const R20: React.FC = () => {
   const f = useF();
   // cada uno MUESTRA su papa a la altura del hombro, hacia adelante (nunca delante de la cara): sube de la cadera al pecho
   // con resorte y la sacude un poco; la fila a 158 px deja la papa lejos de la cabeza del de adelante
-  const cam65 = camino([[0, 3880, 566, 1.16], [l(299.8), 3925, 568, 1.19], [L + 10, 3975, 572, 1.23]]);
+  const cam65 = camino([[0, 3880, 566, 1.16], [l(299.8), 3925, 568, 1.19], [L + 10, 3945, 572, 1.2]]);
   const e65: ItemCh[] = LOS10.map((look, i) => {
     const t0 = l(298.2) + i * 5;
     const alza = { hD: 52, cD: 60, cabeza: -4 }, alza2 = { hD: 60, cD: 50, cabeza: 0, tronco: -2 };
@@ -733,12 +733,12 @@ const R26: React.FC = () => {
   const TX = 2850;
   // Marcus (x 2750) a la izquierda de Theo, DENTRO del cuadro: apoya la mano en el HOMBRO de Theo (IK, desde atrás), nunca en
   // la cabeza; el resto en fila a 140 (de 3040 a 4020). Nadie se tapa la cara: pena = hombros caídos, cabeza gacha.
-  const cam73 = camino([[0, 3350, 640, 1.18], [l(323.2), 3360, 645, 1.21], [L + 10, 3370, 650, 1.24]]);
-  const MX = 2750;
+  const cam73 = camino([[0, 3316, 640, 1.13], [l(323.2), 3320, 645, 1.155], [L + 10, 3324, 650, 1.18]]);
+  const MX = 2665;
   const mano = (p: Pose, fr: number): Pose => {
     const w = ap(fr, l(322.6), 14);
     if (w <= 0) return p;
-    const q = { ...p, ...alcanzar(p, "D", { x: TX - 4 - MX, y: -150 }) } as Pose;
+    const q = { ...p, ...alcanzar(p, "D", { x: TX - 40 - MX, y: -140 }) } as Pose;
     return { ...p, hD: p.hD + (q.hD - p.hD) * w, cD: p.cD + (q.cD - p.cD) * w };
   };
   const pena = { tronco: 12, cabeza: 18, hI: 6, cI: 12, hD: 10, cD: 14 };
@@ -747,7 +747,7 @@ const R26: React.FC = () => {
     if (i === 1) return { nombre: "Theo", a: { look, seed: i * 3, ruta: [{ f: 0, x: TX, y: Y }], dir: [{ f: 0, v: 1 as const }], asiento: [{ f: 0, v: 64 }], caras: [{ f: 0, v: "triste" }, { f: l(323.4), v: "cansado" }], miradas: [{ f: 0, v: { x: 0.6, y: 0.7 } }],
       poses: [{ f: 0, v: sent }, { f: t0, v: { ...sent, tronco: 12, cabeza: 14 } }, { f: l(323.0), v: sentCae }, ...gestos(l(323.5), L + 14, [sentCae2, sentCae], 18)] } as ActorProps };
     if (i === 0) return { nombre: "Marcus", a: { look, seed: 0, ruta: [{ f: 0, x: MX - 30, y: Y }, { f: l(322.6), x: MX, y: Y }], dir: [{ f: 0, v: 1 as const }], caras: [{ f: 0, v: "neutral" }, { f: t0, v: "triste" }], miradas: [{ f: 0, v: { x: 0.7, y: 0.5 } }],
-      poses: [{ f: 0, v: "parado" }, { f: l(322.6), v: { tronco: 12, cabeza: 14, hI: 6, cI: 12 } }, ...gestos(l(323.2), L + 14, [{ tronco: 12, cabeza: 16, hI: 6, cI: 12 }, { tronco: 9, cabeza: 10, hI: 10, cI: 16 }], 22)], ajuste: mano } as ActorProps };
+      poses: [{ f: 0, v: "parado" }, { f: l(322.6), v: { tronco: 26, cabeza: 8, hI: 6, cI: 12 } }, ...gestos(l(323.2), L + 14, [{ tronco: 26, cabeza: 10, hI: 6, cI: 12 }, { tronco: 22, cabeza: 4, hI: 10, cI: 16 }], 22)], ajuste: mano } as ActorProps };
     const x = 3040 + (i - 2) * 140;
     return { nombre: `p${i}`, a: { look, escala: i >= 8 ? NINO : 1, seed: i * 3, ruta: [{ f: 0, x, y: Y }], dir: [{ f: 0, v: 1 as const }], caras: [{ f: 0, v: "neutral" }, { f: t0, v: "triste" }, { f: t0 + 40, v: i % 2 ? "cansado" : "miedo" }],
       poses: [{ f: 0, v: "parado" }, { f: t0, v: i % 3 === 0 ? "encogerse" : i % 3 === 1 ? pena : triste }, ...gestos(t0 + 20, L + 14, i % 3 === 0 ? ["encogerse", { hI: 46, cI: 112, hD: 50, cD: 110, cabeza: 16, tronco: 12, rI: 10, rD: 10, bajar: 8 }] : i % 3 === 1 ? [pena, triste2] : [triste2, triste], 20)] } as ActorProps };
@@ -777,7 +777,7 @@ const R27: React.FC = () => {
   const mano = ap(f, l(331.0), 50);
   return (
     <Escena Set={Granja} pal={PAL} seed={115} setProps={{ hora: "dia", estacion: "verano", crec: 1, helada: 1, corte: ap(f, l(325.3), 24), papas: 1 }}
-      claves={camino([[0, 3870, 650, 1.55], [l(326.6), 3830, 760, 1.32], [l(330.0), 3810, 770, 1.26], [l(334.8) + 10, 3840, 690, 1.36]])}
+      claves={camino([[0, 3870, 650, 1.55], [l(326.6), 3830, 760, 1.32], [l(330.0), 3810, 770, 1.26], [l(334.8) + 10, 3840, 664, 1.36]])}
       medio={<>
         {f > l(329.5) && [0, 1, 2, 3, 4, 5].map((i) => <Destello key={i} x={3560 + i * 120} y={P + 70} k={brilla(i)} r={52} />)}
         {f > l(331.0) && f < l(332.6) && <Papa x={3990} y={P + 70 - 60 * ap(f, l(331.4), 30)} s={1.1} rot={f * 3} />}
@@ -807,7 +807,7 @@ const R28: React.FC = () => {
   // v5: la pala va en la mano de ATRÁS (detrás de la cabeza y del torso), agarrada del mango y con la hoja hacia adelante y
   // abajo (PALA_TR): nada sube por la cara. Ciclo propio por persona (nunca se congela). Plano de la fila entera, con margen
   // a los dos lados (nadie cortado): empuje lento 1.08 → 1.15.
-  const cam75 = camino([[0, 3690, 690, 1.08], [l(337.4), 3700, 694, 1.12], [L + 10, 3705, 696, 1.15]]);
+  const cam75 = camino([[0, 3675, 690, 1.06], [l(337.4), 3680, 694, 1.09], [L + 10, 3685, 696, 1.12]]);
   const PER = 28;
   const e75: ItemCh[] = LOS10.map((look, i) => i < 8
     ? { nombre: `p${i}`, herrI: () => H_PALA_I, a: { look, seed: i * 3, ruta: [{ f: 0, x: X0 + i * D, y: Y }], dir: [{ f: 0, v: 1 as const }], caras: [{ f: 0, v: "cansado" }, { f: l(337.6) + i * 3, v: i % 2 ? "determinado" : "cansado" }],
@@ -1046,6 +1046,8 @@ const R34: React.FC = () => {
   const BX = X0 + 8 * D - 15;
   const cam82 = camino([[0, 3560, 712, 1.1], [l(374.4), 3575, 720, 1.13], [l(376.2), 3595, 728, 1.16], [L + 10, 3605, 730, 1.18]]);
   const V1 = { hD: 104, cD: 56, hI: 256, cI: -56, tronco: -3, cabeza: -10 }, V2 = { hD: 98, cD: 68, hI: 262, cI: -66, tronco: 0, cabeza: -5 };
+  // festejo de la fila: puños que golpean el aire a la altura del pecho (a 140 px la «U» alcanzaba la cabeza del vecino)
+  const PU1 = { hD: 40, cD: 100, hI: 40, cI: 100, tronco: -2, cabeza: -8 }, PU2 = { hD: 28, cD: 122, hI: 30, cI: 118, tronco: 4, cabeza: 2 };
   const e82: ItemCh[] = LOS10.slice(0, 9).map((look, i) => {
     const t0 = l(372.5) + i * 7;
     const alza = { hD: 52, cD: 60, cabeza: -4 }, alza2 = { hD: 60, cD: 50, cabeza: 0, tronco: -2 };
@@ -1058,7 +1060,7 @@ const R34: React.FC = () => {
       caras: [{ f: 0, v: "neutral" }, { f: t0, v: "feliz" }, { f: t0 + 12, v: "risa" }],
       poses: esBen
         ? [{ f: 0, v: "parado" }, { f: t0, v: alza }, ...gestos(t0 + 14, l(375.8), [alza2, alza], 14), { f: l(376.1), v: { hD: 70, cD: 10, tronco: 4 } }, { f: T - 3, v: { hD: 92, cD: 0, tronco: 8 } }, { f: T + 3, v: { hD: 80, cD: 12, tronco: 2 } }, { f: T + 9, v: V1 }, ...gestos(T + 16, L + 14, [V2, V1], 12)]
-        : [{ f: 0, v: "parado" }, { f: t0, v: alza }, ...gestos(t0 + 14, fin, [alza2, alza], 16), ...gestos(fin, L + 14, i % 2 ? [V1, V2] : [V2, V1], 12)],
+        : [{ f: 0, v: "parado" }, { f: t0, v: alza }, ...gestos(t0 + 14, fin, [alza2, alza], 16), ...gestos(fin, L + 14, i % 2 ? [PU1, PU2] : [PU2, PU1], 10)],
       enManoD: (fr: number) => (tiene(fr) ? cosecha(i, Math.min(1, (fr - t0 - 2) / 6)) : null) } as ActorProps };
   });
   const cosecha = (i: number, k: number) => {
