@@ -302,7 +302,7 @@ export const P54Achica: React.FC = () => {
 const k55 = kDe(253.15);
 const CORRE = [{ hD: 70, cD: 80, hI: -50, cI: 30, tronco: 14 }, { hD: -50, cD: 30, hI: 70, cI: 80, tronco: 14 }];
 export const P55Corren: React.FC = () => { const f = useF(); return (
-  <Vai cl={[mira(0, 4640, 700, 1.45), mira(63, 4650, 700, 1.5), ...corte(64, 4680, 700, 1.22), mira(149, 4700, 700, 1.25), ...corte(150, 5230, 700, 1.6), mira(284, 5250, 705, 1.75)]} sp={{ murmullo: 0.6 }}
+  <Vai cl={[mira(0, 4640, 700, 1.45), mira(63, 4650, 700, 1.5), ...corte(64, 4900, 700, 1.2), mira(149, 4920, 700, 1.24), ...corte(150, 5230, 700, 1.6), mira(284, 5250, 705, 1.75)]} sp={{ murmullo: 0.6 }}
     medio={<>
       <MonjesCara caras={["duda", "neutral", "duda", "neutral", "duda"]} poses={[{ hD: 80, cD: 60 }, {}, { hI: 80, cI: 60 }, {}, { hD: 80, cD: 60 }]} />
       <Buda miradas={[{ f: 0, v: { x: -0.8, y: 0.1 } }]} />
@@ -554,12 +554,12 @@ export const P65Sabia: React.FC = () => {
   const f = useF();
   const TB = k65(321.35);
   return (
-    <Lav cl={[mira(0, 1680, 700, 2.15), mira(TB - 1, 1690, 696, 2.25), mira(TB, 1450, 800, 1.72), mira(161, 1455, 796, 1.8)]} toalla={0.8} sp={{ luzFarol: 1.3 }}
+    <Lav cl={[mira(0, 1440, 810, 1.6), mira(TB, 1450, 800, 1.72, { curva: "inout" }), mira(161, 1455, 796, 1.8)]} toalla={0.8} sp={{ luzFarol: 1.3 }}
       leo={{ enManoD: () => null, poses: [{ f: 0, v: { ...SENTADO, cabeza: 0, hD: 12, cD: 40 } }, { f: k65(322.6), v: { ...SENTADO, tronco: 18, cabeza: -4, hD: 30, cD: 60, hI: 20, cI: 50 } }], miradas: [{ f: 0, v: MIRA_TENZO }], caras: [{ f: 0, v: "duda" }, { f: k65(322.8), v: "sorpresa" }, { f: k65(323.7), v: "neutral" }] }}
       tenzo={{ poses: [{ f: 0, v: { ...DOBLA_A, cabeza: 0 } }, { f: 12, v: { ...DOBLA_A, cabeza: -6, hD: 40, cD: 70 } }, { f: TB + 4, v: { ...SENTADO, tronco: 24, cabeza: -4, hD: 150, cD: -10, hI: 30, cI: 60 } }, { f: TB + 50, v: { ...SENTADO, tronco: 26, cabeza: -6, hD: 140, cD: -6, hI: 30, cI: 60 } }],
         miradas: [{ f: 0, v: { x: -0.4, y: -0.6 } }, { f: TB, v: { x: -0.9, y: 0 } }], habla: [[0, k65(320.6)], [k65(321.41), k65(323.63)]], caras: [{ f: 0, v: "feliz" }, { f: TB, v: "picaro" }] }}
       hud={<><Hud />
-        {f < TB && <Pensamiento x={560} y={290} w={600} h={300} desde={6} cola={{ x: 1110, y: 400 }}><Inquieto f={f} /></Pensamiento>}
+        {f < TB && <Pensamiento x={940} y={180} w={540} h={260} desde={6} cola={{ x: 1330, y: 270 }}><Inquieto f={f} /></Pensamiento>}
         <Globo texto="?" x={500} y={250} desde={k65(323.7)} hasta={161} tam={64} />
       </>} />
   );
@@ -714,7 +714,7 @@ export const P70Cuanto: React.FC = () => {
 const k71 = kDe(352.81);
 export const P71Menos: React.FC = () => {
   const f = useF();
-  const TI = k71(356.6), TG = k71(357.5); // v4: el gráfico dura ≥2,2 s
+  const TI = k71(356.6), TG = k71(356.6); // v4: el gráfico dura ≥2,2 s
   if (f >= TI && f < TG) {
     const u = lerp(f, TI, TG, 0, 1); // v4: la mano y la llama siguen hasta el corte (antes frenaban 2-4 cuadros antes: lageo de 357 s)
     return (
@@ -755,7 +755,7 @@ export const P72Ola: React.FC = () => {
           miradas: [{ f: 0, v: MIRA_TENZO }, { f: k72(361.9), v: { x: 0.4, y: -0.9 } }, { f: TD, v: { x: 0.5, y: 0.5 } }, { f: k72(364.6), v: MIRA_TENZO }], caras: [{ f: 0, v: "duda" }, { f: k72(362.1), v: "miedo" }, { f: TD, v: "sorpresa" }, { f: k72(364.6), v: "determinado" }] }}
         tenzo={{ ...tenzoFarol(), poses: [{ f: 0, v: { ...DOBLA_A, hD: 70, cD: 20, hI: 40, cI: 40, cabeza: 0 } }, { f: k72(362.1), v: { ...DOBLA_A, hD: 70, cD: 20, hI: 150, cI: 20, cabeza: -10 } }, { f: TD, v: { ...DOBLA_A, hD: 70, cD: 20, hI: 50, cI: 30, cabeza: 4 } }, { f: k72(364.5), v: { ...DOBLA_A, hD: 70, cD: 20, hI: 95, cI: 0, cabeza: 6 } }],
           enManoD: <FarolMano luz={1.2} />, miradas: [{ f: 0, v: { x: -0.9, y: 0 } }], habla: [[0, 200]], caras: [{ f: 0, v: "feliz" }] }} hud={<Hud />} />
-      <PanelOla p={p} seg={Math.round(interpolate(f, [0, k72(363.8)], [0, 90], cl))} x={480} y={24} s={0.5} reloj={false} desde={0} />
+      <PanelOla p={p} seg={Math.round(interpolate(f, [0, k72(363.8)], [0, 90], cl))} x={560} y={110} s={0.5} reloj={false} desde={0} />
       <Pildora texto={f < k72(361.0) ? "90 SECONDS" : f < k72(361.9) ? "MAYBE 2 MINUTES" : f < TD ? "THE WAVE GOES UP…" : "…AND DOWN"} x={960} y={500} desde={4} color="#ffe2a6" tam={40} />
       <FraseCaja texto="you only have to not jump in" desde={k72(364.4)} y={900} />
     </>
@@ -781,7 +781,7 @@ export const P73Pantalla: React.FC = () => {
   const duda = 14 * Math.sin(g / 6) * lerp(g, 0, 20, 0, 1);
   return (
     <Fondo>
-      <TelGrande modo="screentime" min={582} minHasta={583} x={960} y={560} s={0.86} desde={99} />
+      <TelGrande modo="screentime" min={582} minHasta={583} x={960} y={560} s={0.86} desde={90} />
       <div style={{ position: "absolute", inset: 0, transform: `translate(${duda}px, ${-Math.abs(duda) * 0.6}px)` }}><DedosTel x={960} y={560} s={0.86} /></div>
       <MaraMini x={1010} y={940} desde={k73(372.6)} />
       <Hud {...H83} /><MaraCaja texto="just one more" x={1300} y={260} desde={k73(372.79)} tam={74} />
@@ -805,7 +805,7 @@ export const P74NoResponde: React.FC = () => {
       <MaraPrimer x={190 + 30 * Math.sin(f / 14)} y={660 - 20 * lerp(f, T, T + 20, 0, 1)} r={360} enojo={ene} blur={10} />
       <MaraCaja texto="hey… Leo" x={620} y={120} desde={2} hasta={k74(375.4)} tam={70} />
       <MaraCaja texto="just one more" x={620} y={120} desde={k74(375.45)} hasta={T + 20} tam={70} />
-      <Calendario texto="FIRST TIME IN 10 YEARS" x={1560} y={150} desde={k74(374.7)} acento={ACENTO} />
+      <Calendario texto="FIRST TIME IN 10 YEARS" x={1120} y={150} desde={k74(374.7)} acento={ACENTO} />
       <Globo texto="…" x={1450} y={420} desde={T + 6} hasta={116} tam={70} />
     </>
   );
