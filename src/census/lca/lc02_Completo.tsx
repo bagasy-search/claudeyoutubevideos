@@ -1,5 +1,5 @@
 // lc02 completo: «Can TWO people survive the first winter alone?» — 80 planos sobre la voz (D:/rtmp/lc02_PLAN_MxM.md).
-// HUD fuera del montaje con cuadros globales: °F, DAY y POPULATION cambian justo en la palabra.
+// HUD fuera del montaje con cuadros globales: °F y DAY cambian en el CORTE de plano (ojo v2: nunca a mitad de plano); POPULATION en la palabra.
 import React from "react";
 import { AbsoluteFill, Audio, staticFile } from "remotion";
 import { Montaje, PlanoM, Trans } from "../../anikit/montaje";
@@ -28,7 +28,7 @@ const CORTES: [number, React.FC, Trans?][] = [
   [300.87, B.P62Regla3, CORT], [305.89, B.P63Lee], [308.35, B.P64Pulso], [310.41, B.P65Cartas], [311.67, B.P66Caminan, LUZ(12)], [316.23, B.P67Hielo],
   [322.53, B.P68Lago], [328.39, B.P69Sol, LUZ(16, "#fff3d8")], [335.45, B.P70Ultima], [339.97, B.P71Abrazo], [343.93, B.P72Escaner, FUN(14)],
   [352.63, B.P73Estatica], [357.97, B.P74Voz], [362.09, B.P75Gus], [368.57, B.P76Ventana], [375.19, B.P77Agarra],
-  [378.75, B.P78Tres], [382.59, B.P79Cta, CORT], [391.05, B.P80Next, FUN(12)],
+  [378.75, B.P78Tres], [382.59, B.P79Cta, CORT], [391.05, B.P80Next, CORT],
 ];
 export const LC02_FRAMES = 11830;
 
@@ -41,9 +41,9 @@ const planos: PlanoM[] = CORTES.map(([t, El, trans], i) => {
 const HudLc02: React.FC = () => (
   <>
     {/* cuadro 0 = la miniatura: −30°F arriba a la izquierda + POPULATION: 2 */}
-    <Segundo claves={[{ f: 0, v: -30 }, { f: S(3.2), v: -28, d: 10 }, { f: S(115), v: -4, d: 20 }, { f: S(118.1), v: -31, d: 16 }, { f: S(173.5), v: -20, d: 12 }, { f: S(183), v: -12, d: 12 }, { f: S(209), v: -15, d: 10 }, { f: S(271), v: -8, d: 12 }, { f: S(328.6), v: 18, d: 30 }]}
+    <Segundo claves={[{ f: 0, v: -30 }, { f: S(2.98), v: -28, d: 10 }, { f: S(112.69), v: -4, d: 20 }, { f: S(119.15), v: -31, d: 16 }, { f: S(172.69), v: -20, d: 12 }, { f: S(182.89), v: -12, d: 12 }, { f: S(208.1), v: -15, d: 10 }, { f: S(271.3), v: -8, d: 12 }, { f: S(328.39), v: 18, d: 30 }]}
       sufijo="°F" icono="temp" color={FRIO} y={122} desde={-60} signo />
-    <Segundo claves={[{ f: 0, v: 41 }, { f: S(29.7), v: 42, d: 6 }, { f: S(104.0), v: 60, d: 20 }, { f: S(183.1), v: 83, d: 20 }, { f: S(209.2), v: 90, d: 10 }, { f: S(274.2), v: 100, d: 12 }, { f: S(328.6), v: 130, d: 30 }]}
+    <Segundo claves={[{ f: 0, v: 41 }, { f: S(29.58), v: 42, d: 6 }, { f: S(103.65), v: 60, d: 20 }, { f: S(182.89), v: 83, d: 20 }, { f: S(208.1), v: 90, d: 10 }, { f: S(276.84), v: 100, d: 12 }, { f: S(328.39), v: 130, d: 30 }]}
       prefijo="DAY " icono="dia" y={196} desde={S(15.5)} />
     <Poblacion claves={[{ f: 0, v: 2 }, { f: S(381.45), v: 3, d: 8 }]} desde={-60} />
     <MarcaCorto />
