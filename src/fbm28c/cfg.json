@@ -1,0 +1,572 @@
+{
+ "desc": "🧱 El estuco que parece mármol + La Colección del Constructor Libre",
+ "replies": [],
+ "pages": {
+  "cl 72": {
+   "hl": "EMPAREJAR UNA PARED SIN REVOCAR",
+   "n": 55,
+   "bar": [
+    0.08575944744180855,
+    0.11325489563339748,
+    0.5267307862759935,
+    0.05493407892413173
+   ]
+  },
+  "cl 99": {
+   "hl": "LOS POCOS NÚMEROS: LIJAS Y SELLADORES",
+   "bar": [
+    0.08575944744180855,
+    0.11494903247124692,
+    0.5258193520933492,
+    0.025672381063992056
+   ]
+  }
+ },
+ "heroes": [
+  {
+   "k": "versus",
+   "at": 4.88,
+   "out": 11.38,
+   "items": [
+    {
+     "t": "ANTES · GRIETA",
+     "img": "antes_revoque",
+     "at": 0.5
+    },
+    {
+     "t": "HOY · VETAS",
+     "img": "mano_pared",
+     "at": 1.3
+    }
+   ],
+   "win": 3.4,
+   "best": 1,
+   "bg": "antes_revoque",
+   "mode": "split"
+  },
+  {
+   "k": "gauge",
+   "at": 29.08,
+   "out": 33.58,
+   "v": 0.08,
+   "lab": "3 DÓLARES EL METRO",
+   "kick": "LO QUE CUESTA",
+   "title": "CASI NADA",
+   "bg": "c_materiales",
+   "mode": "iris"
+  },
+  {
+   "k": "suncrack",
+   "at": 64.36,
+   "out": 69.36,
+   "a": "SIN PREPARAR, SE CAE EN DOS",
+   "lab": "LA PARED DEFINE TODO",
+   "bg": "llana_veta",
+   "mode": "drop"
+  },
+  {
+   "k": "odometer",
+   "at": 154.18,
+   "out": 160.68,
+   "z": 1.5,
+   "v": 30,
+   "u": "AÑOS EN OBRA",
+   "sub": "CONSTRUYO Y ARREGLO CASAS",
+   "bg": "c_presenta",
+   "mode": "shutter"
+  },
+  {
+   "k": "checklist",
+   "at": 235.9,
+   "out": 242.9,
+   "tick": 1,
+   "title": "EN LA MESA",
+   "items": [
+    {
+     "t": "Cemento blanco + marmolina",
+     "at": 0.6
+    },
+    {
+     "t": "Cola vinílica",
+     "at": 1.3
+    },
+    {
+     "t": "Llana de acero inoxidable",
+     "at": 2.0
+    }
+   ],
+   "bg": "c_mesa_todo",
+   "mode": "drop"
+  },
+  {
+   "k": "raking",
+   "at": 268.0,
+   "out": 274.5,
+   "a": "LA LINTERNA, ACOSTADA",
+   "lab": "LUZ RASANTE: APARECE TODO",
+   "bg": "c_luz_rasante",
+   "mode": "iris"
+  },
+  {
+   "k": "knock",
+   "at": 324.18,
+   "out": 329.18,
+   "a": "SUENA HUECO: SE RASPA",
+   "b": "SUENA FIRME: VA",
+   "lab": "LOS NUDILLOS, CADA 30 CM",
+   "bg": "raspado",
+   "mode": "wipe"
+  },
+  {
+   "k": "ratio",
+   "at": 415.78,
+   "out": 422.78,
+   "a": "3 CEMENTO",
+   "b": "1 MARMOLINA",
+   "r": "3 : 1",
+   "lab": "EN VOLUMEN · EN SECO",
+   "bg": "c_tres_uno",
+   "mode": "split"
+  },
+  {
+   "k": "exploded",
+   "at": 434.48,
+   "out": 441.48,
+   "items": [
+    {
+     "t": "AGARRE",
+     "img": "balde_cola",
+     "at": 0.6
+    },
+    {
+     "t": "FLEXIBILIDAD",
+     "img": "c_raja_sin_cola",
+     "at": 1.2
+    },
+    {
+     "t": "DESLIZA",
+     "img": "c_dulce_leche",
+     "at": 1.8
+    }
+   ],
+   "hi": 2,
+   "bg": "balde_cola",
+   "mode": "diag"
+  },
+  {
+   "k": "hourglass",
+   "at": 469.36,
+   "out": 475.36,
+   "lab": "UNA HORA DE TRABAJO",
+   "bg": "c_dulce_leche",
+   "mode": "iris"
+  },
+  {
+   "k": "angle",
+   "at": 534.24,
+   "out": 540.74,
+   "a1": 18,
+   "a2": 45,
+   "bg": "c_oxido",
+   "mode": "wipe"
+  },
+  {
+   "k": "coats",
+   "at": 618.14,
+   "out": 624.64,
+   "a": "1ª MANO, LISA",
+   "b": "2ª MANO, EL TONO",
+   "lab": "4 A 6 H DE SECADO",
+   "hrs": 6,
+   "bg": "c_rebarbas",
+   "mode": "blinds"
+  },
+  {
+   "k": "strip",
+   "at": 651.28,
+   "out": 658.78,
+   "items": [
+    {
+     "t": "UNA PIZCA",
+     "img": "c_pizca",
+     "at": 0.5
+    },
+    {
+     "t": "ESCAMAS",
+     "img": "c_escamas",
+     "at": 1.7
+    },
+    {
+     "t": "NUBES",
+     "img": "c_nubes",
+     "at": 2.9
+    }
+   ],
+   "stamp": "PROFUNDIDAD",
+   "stampAt": 4.6,
+   "bg": "c_pizca",
+   "mode": "shutter"
+  },
+  {
+   "k": "veins",
+   "at": 769.12,
+   "out": 775.12,
+   "kick": "LA PASADA 3",
+   "title": "LA LLANA SUCIA",
+   "lab": "UN ARCO LARGO, MUÑECA SUELTA",
+   "bg": "c_carga_sucia",
+   "mode": "diag"
+  },
+  {
+   "k": "tally",
+   "at": 852.42,
+   "out": 859.42,
+   "title": "¿YA TIRA?",
+   "rows": [
+    {
+     "t": "EL DEDO",
+     "img": "c_dorso_dedos",
+     "r": [
+      false,
+      false,
+      true,
+      true
+     ],
+     "at": 0.6
+    },
+    {
+     "t": "EL DORSO",
+     "img": "planchado",
+     "r": [
+      false,
+      false,
+      false,
+      true
+     ],
+     "at": 1.8
+    }
+   ],
+   "bg": "c_dorso_dedos",
+   "mode": "blinds"
+  },
+  {
+   "k": "polish",
+   "at": 887.24,
+   "out": 893.74,
+   "txt": "¡BRILLA!",
+   "lab": "LA LLANA LIMPIA, PARADA A 45°",
+   "bg": "planchado",
+   "mode": "iris"
+  },
+  {
+   "k": "calendar",
+   "at": 933.64,
+   "out": 940.14,
+   "v": 4,
+   "top": "DÍAS",
+   "lab": "A CURAR",
+   "sub": "SIN TOCARLA",
+   "bg": "c_panos",
+   "mode": "drop"
+  },
+  {
+   "k": "stopwatch",
+   "at": 1055.64,
+   "out": 1060.14,
+   "v": 15,
+   "u": "min",
+   "dec": 0,
+   "labAt": 1.0,
+   "lab": "15 MIN Y SE LUSTRA",
+   "bg": "cera_pared",
+   "mode": "iris"
+  },
+  {
+   "k": "year",
+   "at": 1102.54,
+   "out": 1108.54,
+   "every": 12,
+   "v": "UNA VEZ AL AÑO",
+   "lab": "UNA MANO DE CERA",
+   "bg": "c_cera_gruesa",
+   "mode": "drop"
+  },
+  {
+   "k": "balance",
+   "at": 1181.52,
+   "out": 1188.02,
+   "items": [
+    {
+     "t": "NEGRO + BLANCO",
+     "img": "c_negro_blanco",
+     "at": 0.6
+    },
+    {
+     "t": "BLANCO + GRIS",
+     "img": "c_travertino",
+     "at": 1.4
+    }
+   ],
+   "win": 3.2,
+   "best": 0,
+   "bg": "c_negro_blanco",
+   "mode": "shutter"
+  },
+  {
+   "k": "cork",
+   "at": 1219.7,
+   "out": 1225.2,
+   "title": "ANTES DE LA PARED",
+   "items": [
+    {
+     "t": "MUESTRA EN CARTÓN",
+     "at": 0.6
+    },
+    {
+     "t": "CUCHARADAS ANOTADAS",
+     "at": 1.2
+    },
+    {
+     "t": "EL NÚMERO EN EL BALDE",
+     "at": 1.8
+    }
+   ],
+   "bg": "c_travertino",
+   "mode": "blinds"
+  },
+  {
+   "k": "polaroid",
+   "at": 1297.2,
+   "out": 1304.2,
+   "img": "c_pasillo_viejo",
+   "n": "MI VIEJO",
+   "sub": "EL PASILLO DE CASA",
+   "stamp": "TENÍA RAZÓN",
+   "stampAt": 3.6,
+   "bg": "c_pasillo_viejo",
+   "mode": "wipe"
+  },
+  {
+   "k": "receipt",
+   "at": 1316.48,
+   "out": 1323.98,
+   "qa": "MICROCEMENTO COLOCADO",
+   "qb": "7,5 M²",
+   "q": "700",
+   "ta": "la pared del living",
+   "rows": [
+    {
+     "t": "CEMENTO BLANCO",
+     "v": "11"
+    },
+    {
+     "t": "COLA VINÍLICA",
+     "v": "4"
+    },
+    {
+     "t": "SELLADOR Y CERA",
+     "v": "5"
+    }
+   ],
+   "lab": "Y LAS VETAS LAS HICISTE VOS",
+   "bg": "c_mano_recuerdo",
+   "mode": "blinds"
+  },
+  {
+   "k": "deck",
+   "at": 1371.94,
+   "out": 1378.44,
+   "title": "5 ERRORES",
+   "items": [
+    {
+     "t": "CAPAS GRUESAS",
+     "img": "c_marmol_placa",
+     "at": 0.5
+    },
+    {
+     "t": "LLANA MOJADA",
+     "img": "c_tela_arana",
+     "at": 1.4
+    },
+    {
+     "t": "PLANCHAR APURADO",
+     "img": "c_manchas_oscuras",
+     "at": 2.3
+    },
+    {
+     "t": "NO PREPARAR",
+     "img": "c_detergente",
+     "at": 3.2
+    },
+    {
+     "t": "EMPAREJAR VETAS",
+     "img": "c_lija_mancha",
+     "at": 4.1
+    }
+   ],
+   "bg": "c_marmol_placa",
+   "mode": "split"
+  },
+  {
+   "k": "grit",
+   "at": 1443.78,
+   "out": 1449.28,
+   "g": [
+    "MANCHA",
+    "TRAPO",
+    "LIJA 400",
+    "CERA"
+   ],
+   "kick": "EL ARREGLO",
+   "title": "SE ARREGLA POR PARTES",
+   "lab": "SIN QUE SE NOTE",
+   "bg": "c_manchas_oscuras",
+   "mode": "blinds"
+  },
+  {
+   "k": "redact",
+   "at": 1476.92,
+   "out": 1482.42,
+   "title": "LA RAJADURA",
+   "items": [
+    {
+     "t": "ABRIRLA CON EL CÚTER",
+     "at": 0.5
+    },
+    {
+     "t": "PASTA DE LA MISMA",
+     "at": 1.0
+    },
+    {
+     "t": "PLANCHAR",
+     "at": 1.5
+    },
+    {
+     "t": "CERA",
+     "at": 2.0
+    }
+   ],
+   "stamp": "NO SE VE",
+   "stampAt": 3.6,
+   "bg": "c_pelo",
+   "mode": "drop"
+  },
+  {
+   "k": "routine",
+   "at": 1503.68,
+   "out": 1511.18,
+   "title": "EL FIN DE SEMANA LARGO",
+   "items": [
+    {
+     "n": "SÁB",
+     "t": "RASPAR + FIJADOR",
+     "img": "c_lapiz_pared",
+     "at": 0.6
+    },
+    {
+     "n": "DOM",
+     "t": "1ª Y 2ª MANO",
+     "img": "c_ensayo",
+     "at": 1.6
+    },
+    {
+     "n": "MAR",
+     "t": "VETAS + PLANCHADO",
+     "img": "c_orden",
+     "at": 2.6
+    }
+   ],
+   "bg": "c_lapiz_pared",
+   "mode": "wipe"
+  },
+  {
+   "k": "demold",
+   "at": 1557.92,
+   "out": 1563.42,
+   "txt": "¡ENSAYO!",
+   "lab": "50 × 50 · LO MIRÁS CON LA LUZ",
+   "bg": "c_ensayo",
+   "mode": "iris"
+  },
+  {
+   "k": "phone",
+   "at": 1626.4,
+   "out": 1631.4,
+   "items": [
+    {
+     "n": "PREGUNTA",
+     "t": "El cemento no se pega sobre pintura.",
+     "at": 0.6
+    },
+    {
+     "n": "CLAUDIO",
+     "t": "Tiene razón: fijador primero.",
+     "at": 2.0
+    }
+   ],
+   "bg": "c_enduido",
+   "mode": "drop"
+  },
+  {
+   "k": "envelope",
+   "at": 1704.04,
+   "out": 1710.54,
+   "n": "Para: el respaldo de mi cama",
+   "paper": "la pared del living",
+   "paperV": "20 dólares",
+   "lab": "5 AÑOS Y SIGUE IGUAL",
+   "bg": "c_respaldo_propio",
+   "mode": "shutter"
+  },
+  {
+   "k": "chalk",
+   "at": 1726.18,
+   "out": 1732.68,
+   "title": "LOS 10 DE HOY",
+   "items": [
+    {
+     "t": "raspar + fijador",
+     "at": 0.3
+    },
+    {
+     "t": "3:1 + cola 1:4",
+     "at": 0.5
+    },
+    {
+     "t": "llana inox redonda",
+     "at": 0.7
+    },
+    {
+     "t": "1ª mano lisa",
+     "at": 0.9
+    },
+    {
+     "t": "2ª en escamas",
+     "at": 1.1
+    },
+    {
+     "t": "llana sucia",
+     "at": 1.3
+    },
+    {
+     "t": "planchar cuando tira",
+     "at": 1.5
+    },
+    {
+     "t": "2 manos sellador",
+     "at": 1.7
+    },
+    {
+     "t": "cera lustrada",
+     "at": 1.9
+    },
+    {
+     "t": "respaldo o tele",
+     "at": 2.1
+    }
+   ],
+   "bg": "c_respaldo_propio",
+   "mode": "split"
+  }
+ ]
+}
