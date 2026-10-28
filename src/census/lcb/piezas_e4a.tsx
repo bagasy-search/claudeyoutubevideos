@@ -11,7 +11,7 @@ export const ap = (f: number, a: number, d = 10) => interpolate(f, [a, a + d], [
 const CONTORNO = (tam: number) => ({ WebkitTextStroke: `${Math.max(3, tam * 0.07)}px rgba(14,10,18,0.92)`, paintOrder: "stroke fill" as const });
 
 // ---------- número grande que rueda (HUD, coordenadas de pantalla) ----------
-export const Num: React.FC<{ x: number; y: number; desde: number; hasta?: number; f0: number; f1: number; v0: number; v1: number; pre?: string; suf?: string; color?: string; tam?: number; rotulo?: string; dec?: number; centro?: boolean; coma?: boolean; cubica?: boolean }> = ({ x, y, desde, hasta, f0, f1, v0, v1, pre = "", suf = "", color = "#ffcf6e", tam = 84, rotulo, dec = 0, centro = true, coma = true, cubica }) => {
+export const Num: React.FC<{ x: number; y: number; desde: number; hasta?: number; f0: number; f1: number; v0: number; v1: number; pre?: string; suf?: string; sing?: string; color?: string; tam?: number; rotulo?: string; dec?: number; centro?: boolean; coma?: boolean; cubica?: boolean }> = ({ x, y, desde, hasta, f0, f1, v0, v1, pre = "", suf = "", sing, color = "#ffcf6e", tam = 84, rotulo, dec = 0, centro = true, coma = true, cubica }) => {
   const f = useF();
   if (f < desde || (hasta !== undefined && f > hasta)) return null;
   const k = interpolate(f, [f0, f1], [0, 1], cl);
@@ -20,7 +20,7 @@ export const Num: React.FC<{ x: number; y: number; desde: number; hasta?: number
   const o = (hasta !== undefined ? interpolate(f, [hasta - 8, hasta], [1, 0], cl) : 1) * ap(f, desde, 4);
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `${centro ? "translateX(-50%) " : ""}scale(${s})`, transformOrigin: "50% 100%", opacity: o, textAlign: centro ? "center" : "left", fontFamily: F_HUD, fontWeight: 600, whiteSpace: "pre", color, lineHeight: 1.05, ...CONTORNO(tam), textShadow: "0 5px 0 rgba(10,8,14,0.85), 0 0 22px rgba(0,0,0,0.55)" }}>
-      <div style={{ fontSize: tam, fontVariantNumeric: "tabular-nums" }}>{pre}{coma ? v.toLocaleString("en-US", { minimumFractionDigits: dec, maximumFractionDigits: dec }) : String(Math.round(v))}{suf}</div>
+      <div style={{ fontSize: tam, fontVariantNumeric: "tabular-nums" }}>{pre}{coma ? v.toLocaleString("en-US", { minimumFractionDigits: dec, maximumFractionDigits: dec }) : String(Math.round(v))}{sing !== undefined && Math.round(v) === 1 ? sing : suf}</div>
       {rotulo && <div style={{ fontSize: tam * 0.4, color: "#f6ecd2", letterSpacing: 3, ...CONTORNO(tam * 0.4) }}>{rotulo}</div>}
     </div>
   );
