@@ -121,11 +121,13 @@ export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; ch
 };
 
 // Capa: z = profundidad (0 lejos … 1 foco … 1,6 primer término). desenfoqueMax en px a distancia 1 del foco.
-export const Capa: React.FC<{ z: number; children: React.ReactNode; desenfoqueMax?: number; style?: React.CSSProperties }> = ({ z, children, desenfoqueMax = 18, style }) => {
+// desenfoqueZoom: profundidad de campo de plano cerrado (px de desenfoque por cada punto de zoom arriba de 2): el fondo
+// se va de foco en los primeros planos y el personaje se despega (como una lente larga), sin tocar los planos generales.
+export const Capa: React.FC<{ z: number; children: React.ReactNode; desenfoqueMax?: number; desenfoqueZoom?: number; sat?: number; style?: React.CSSProperties }> = ({ z, children, desenfoqueMax = 18, desenfoqueZoom = 0, sat, style }) => {
   const c = useContext(Ctx);
   const par = Math.max(0.05, z); // cuánto le afecta el movimiento de cámara (cielo ~5 %, primer término >100 %)
   const zoom = 1 + (c.zoom - 1) * par;
-  const blur = Math.min(40, Math.abs(z - c.foco) * desenfoqueMax);
+  const blur = Math.min(40, Math.abs(z - c.foco) * desenfoqueMax + Math.max(0, c.zoom - 2) * desenfoqueZoom);
   // la transform del style se COMPONE con la de cámara (antes la pisaba: la capa perdía el paralaje).
   // el desenfoque va en un hijo SIN transform: en el farm (swangle) filter+transform grande en el mismo nodo
   // corrompía las teselas del compositor (franjas con pedazos de otra parte del cuadro).
@@ -138,15 +140,15 @@ export const Capa: React.FC<{ z: number; children: React.ReactNode; desenfoqueMa
         ...resto,
       }}
     >
-      <AbsoluteFill style={{ filter: blur > 0.6 ? `blur(${blur.toFixed(1)}px)` : undefined }}>{children}</AbsoluteFill>
+      <AbsoluteFill style={{ filter: [sat && sat !== 1 ? `saturate(${sat})` : "", blur > 0.6 ? `blur(${blur.toFixed(1)}px)` : ""].join(" ").trim() || undefined }}>{children}</AbsoluteFill>
     </AbsoluteFill>
   );
 };
 
 // CapaSVG: una Capa con un <svg> del tamaño del cuadro y overflow visible: se dibuja en coordenadas del MUNDO
 // (el set mide miles de px; la cámara decide qué se ve)
-export const CapaSVG: React.FC<{ z: number; children: React.ReactNode; desenfoqueMax?: number; style?: React.CSSProperties }> = ({ z, children, desenfoqueMax, style }) => (
-  <Capa z={z} desenfoqueMax={desenfoqueMax} style={style}>
+export const CapaSVG: React.FC<{ z: number; children: React.ReactNode; desenfoqueMax?: number; desenfoqueZoom?: number; sat?: number; style?: React.CSSProperties }> = ({ z, children, desenfoqueMax, desenfoqueZoom, sat, style }) => (
+  <Capa z={z} desenfoqueMax={desenfoqueMax} desenfoqueZoom={desenfoqueZoom} sat={sat} style={style}>
     <svg width={1920} height={1080} viewBox="0 0 1920 1080" style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }}>{children}</svg>
   </Capa>
 );

@@ -107,34 +107,35 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
   ];
   // la niebla de la peste: llega en «peste» y se clava en la MITAD del cuadro en «mitad» (resorte que se pasa y vuelve)
   const mitadX = X + 700; // centro de cámara en ese momento
-  const nb = spring({ frame: f - F(t.peste - 0.4), fps: 30, config: { damping: 30, stiffness: 18, mass: 1.4 } });
+  const nb = spring({ frame: f - F(t.peste - 0.4), fps: 30, config: { damping: 26, stiffness: 30, mass: 1.4 } });
   const nb2 = spring({ frame: f - F(t.mitad - 0.3), fps: 30, config: { damping: 9, stiffness: 90, mass: 0.9 } });
   const sale = interpolate(f, [F(t.dinero - 0.3), F(t.dinero + 0.9)], [0, 1], { ...cl, easing: (u) => u * u });
-  const borde = interpolate(nb, [0, 1], [X + 3600, X + 1900]) + interpolate(nb2, [0, 1], [0, mitadX - (X + 1900)]) + sale * 3000;
+  const borde = interpolate(nb, [0, 1], [X + 3600, X + 1450]) + interpolate(nb2, [0, 1], [0, mitadX - (X + 1450)]) + sale * 3000;
   const vecinos: Personaje[] = [
     // el que viene caminando, se frena al verlo y lo señala
-    { x: X + 520, ropa: ROPA.granjero, semilla: 3, prof: -0.6, guion: [{ t: 0, accion: "caminar", rotY: -90 }, { t: t.gente + 0.2, accion: "cruzarse_de_brazos", rotY: -50, expr: "confundido" }, { t: t.raro, accion: "senalar", rotY: -50, expr: "asqueado", objetivo: [-1, -0.3] }, { t: t.zapas, accion: "senalar", rotY: -50, expr: "sorprendido", objetivo: [-1, -1] }, { t: t.peste - 0.2, accion: "correr", rotY: -90, expr: "espantado" }],
-      mov: (s) => ({ dx: s < t.gente + 0.2 ? -(t.gente + 0.2 - s) * 120 : s > t.peste - 0.2 ? -(s - t.peste + 0.2) * 520 : 0 }) },
+    { x: X + 1340, ropa: ROPA.granjero, semilla: 3, prof: -0.6, guion: [{ t: 0, accion: "caminar", rotY: -90 }, { t: t.gente + 0.2, accion: "cruzarse_de_brazos", rotY: -50, expr: "confundido" }, { t: t.raro, accion: "senalar", rotY: -50, expr: "asqueado", objetivo: [-1, -0.3] }, { t: t.zapas, accion: "senalar", rotY: -50, expr: "sorprendido", objetivo: [-1, -1] }, { t: t.peste - 0.2, accion: "correr", rotY: -90, expr: "espantado" }],
+      mov: (s) => ({ dx: s < t.gente + 0.2 ? 0 : s > t.peste - 0.2 ? -(s - t.peste + 0.2) * 520 : 0 }) },
     // la señora del moño: se ríe de él
     { x: X - 800, ropa: ROPA.tabernera, semilla: 41, prof: -0.9, guion: [{ t: 0, accion: "idle", rotY: 40, expr: "neutral" }, { t: t.raro - 0.1, accion: "reir", rotY: 45, expr: "carcajada" }, { t: t.porque + 0.5, accion: "cruzarse_de_brazos", rotY: 40, expr: "sonrisa_picara" }, { t: t.peste - 0.1, accion: "correr", rotY: -90, expr: "espantado" }],
       mov: (s) => ({ dx: s > t.peste - 0.1 ? -(s - t.peste + 0.1) * 480 : 0 }) },
     // el trapero de anteojos, atrás, se da vuelta en «muy raro»
-    { x: X + 260, ropa: ROPA.panadero, semilla: 13, prof: -2.4, escala: 0.9, guion: [{ t: 0, accion: "tipear", rotY: 180, expr: "aburrido" }, { t: t.muy, accion: "asustarse", rotY: -20, expr: "sorprendido" }, { t: t.muy + 1, accion: "idle", rotY: -20, expr: "asqueado" }, { t: t.peste, accion: "correr", rotY: -90, expr: "espantado" }],
+    { x: X + 430, ropa: ROPA.panadero, semilla: 13, prof: -2.4, escala: 0.9, guion: [{ t: 0, accion: "tipear", rotY: 180, expr: "aburrido" }, { t: t.muy, accion: "asustarse", rotY: -20, expr: "sorprendido" }, { t: t.muy + 1, accion: "idle", rotY: -20, expr: "asqueado" }, { t: t.peste, accion: "correr", rotY: -90, expr: "espantado" }],
       mov: (s) => ({ dx: s > t.peste ? -(s - t.peste) * 440 : 0 }) },
   ];
-  const gente = transeuntes({ x0: X - 1700, x1: X + 2600, n: 8, seed: "b01", dur: 33 });
+  // de a dos tandas: la franja de ±600 alrededor de Tiza queda libre (en los planos medios cortos nadie se le funde)
+  const gente = [...transeuntes({ x0: X - 2400, x1: X - 900, n: 4, seed: "b01a", dur: 33, quietos: 4 }), ...transeuntes({ x0: X + 1000, x1: X + 3000, n: 4, seed: "b01b", dur: 33, quietos: 4 })];
   return (
     <>
       <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2.5} seed={11} dibujo={{}}
         claves={[
-          mira(0, CARA[0] + 10, CARA[1] - 14, 4.4),
-          mira(F(t.olor), CARA[0] - 6, CARA[1] - 20, 3.9, { curva: "inout" }),
-          mira(F(t.peor + 0.1), CARA[0] + 24, CARA[1] - 10, 4.2, { curva: "inout", rot: 1.5 }),
+          mira(0, CARA[0] + 46, CARA[1] - 14, 4.4),
+          mira(F(t.olor), CARA[0] + 34, CARA[1] - 20, 3.9, { curva: "inout" }),
+          mira(F(t.peor + 0.1), CARA[0] + 60, CARA[1] - 10, 4.2, { curva: "inout", rot: 1.5 }),
           mira(F(sube + 0.35), X - 150, PISO - 170, 3.1, { curva: "fluida", rot: 0.5 }),
-          mira(F(t.gente + 1.1), X + 260, PISO - 230, 2.1, { curva: "inout" }),
+          mira(F(t.gente + 1.1), X + 150, PISO - 272, 2.7, { curva: "inout" }),
           mira(F(t.porque - 0.1), X, PISO - 262, 3.85, { curva: "inout", rot: -0.6 }),
-          mira(F(t.pies + 0.9), X + 4, PISO - 50, 2.7, { curva: "inout", rot: 0.8 }),
-          mira(F(t.zapas + 0.7), X - 4, PISO - 60, 2.5, { curva: "inout" }),
+          mira(F(t.pies + 0.9), X + 4, PISO - 70, 3.6, { curva: "inout", rot: 0.8 }),
+          mira(F(t.zapas + 0.7), X - 4, PISO - 80, 3.9, { curva: "inout" }),
           mira(F(t.anio + 0.9), X + 380, PISO - 620, 0.55, { curva: "fluida", rot: -0.8 }),
           mira(F(t.plaga - 0.2), X, PISO - 262, 3.6, { curva: "inout" }),
           mira(F(t.peste + 0.2), X + 760, PISO - 400, 0.78, { curva: "inout", rot: -0.6 }),
@@ -153,7 +154,7 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
         sobre={<>
           <Haz x={X - 900} ancho={300} o={0.2} /><Haz x={X + 350} ancho={210} inclin={380} o={0.16} /><Haz x={X + 1700} ancho={340} o={0.18} />
           <Polvo x0={X - 900} x1={X + 900} y0={PISO - 900} n={46} o={0.75} />
-          {f < F(sube + 1.5) && <Moscas x={CARA[0] + 40} y={CARA[1] - 50} n={4} r={46} />}
+          {f < F(t.olor) && <Moscas x={CARA[0] + 40} y={CARA[1] - 50} n={4} r={46} />}
           
           <Humo x0={CARA[0] + 220} x1={CARA[0] - 260} y={CARA[1] - 60} desde={F(t.humo - 0.2)} dur={42} r={46} />
           <Salpicon x={CARA[0] + 70} y={PISO} desde={F(t.barro)} fuerza={0.45} seed="barro1" />
@@ -161,15 +162,9 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
           {/* lo que cae de la ventana en «algo mucho peor» */}
           {/* «algo mucho peor»: una rata le pasa por encima de la cara */}
           {f >= F(t.peor - 0.35) && f < F(t.peor + 1.2) && <Rata x={CARA[0] + 260 - (f - F(t.peor - 0.35)) * 17} y={CARA[1] + 30 - Math.max(0, 1 - Math.abs((f - F(t.peor + 0.15)) / 9)) * 40} ang={180} f={f * 2} s={1.15} />}
-          <Simbolo tipo="!" x={CARA[0] + 10} y={CARA[1] - 64} desde={F(t.peor + 0.1)} hasta={F(sube)} s={0.5} />
           {/* las miradas: un «?» por vecino, uno detrás de otro */}
-          <Simbolo tipo="?" x={X + 520} y={PISO - 420} desde={F(t.raro - 0.2)} hasta={F(t.porque + 0.4)} s={0.9} />
-          <Simbolo tipo="?" x={X - 800} y={PISO - 420} desde={F(t.raro + 0.2)} hasta={F(t.porque + 0.4)} s={0.75} />
-          <Simbolo tipo="!?" x={X + 260} y={PISO - 400} desde={F(t.muy)} hasta={F(t.porque + 0.6)} s={0.7} />
           <Pajaros x0={X - 1400} x1={X + 2600} y={PISO - 1050} desde={F(t.anio - 0.8)} dur={150} n={7} s={1.3} />
           <Pajaros x0={X + 2900} x1={X - 600} y={PISO - 1250} desde={F(t.dias)} dur={130} n={5} s={1} />
-          
-          <Simbolo tipo="!" x={X} y={PISO - 420} desde={F(t.zapas + 0.15)} hasta={F(t.londres)} s={0.9} />
           {/* la peste: ratas delante de la niebla, y la niebla que se clava en la mitad */}
           {f > F(t.peste - 0.5) && Array.from({ length: 16 }).map((_, i) => {
             const s0 = F(t.peste - 0.5) + i * 3;
@@ -177,7 +172,7 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
             const huye = f > F(t.mitad) ? (f - F(t.mitad)) * (14 + (i % 4) * 3) : 0;
             return f > s0 ? <Rata key={i} x={xr - huye - Math.sin(f * 0.3 + i) * 12} y={PISO + 10 + (i % 3) * 26} ang={180} f={f} fase={i} s={1.9} /> : null;
           })}
-          {f > F(t.peste - 0.5) && sale < 1 && <Niebla borde={borde} />}
+          {f > F(t.peste - 0.5) && sale < 1 && <g style={{ filter: "blur(36px)" }}><Niebla borde={borde} o={0.74} color="#1e1618" /></g>}
           {[0, 1, 2, 3].map((k) => <Simbolo key={k} tipo="calavera" x={mitadX + 260 + k * 330} y={PISO - 480 - (k % 2) * 140} desde={F(t.mitad + 0.25) + k * 4} hasta={F(t.dinero - 0.3)} s={1.2} color="#e8e0d0" />)}
           
           
@@ -187,16 +182,16 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
           <PasaFrente tipo="barril" x0={X + 1500} x1={X - 1500} desde={F(sube + 0.5)} dur={40} y={PISO + 330} />
         </>}
         hud={<>
-          <Anio desde={F(t.londres)} rueda={F(t.anio - 0.15)} hasta={F(t.dias + 0.4)} titulo={tx("LONDRES", "LONDON")} />
+          <Anio desde={F(t.londres)} rueda={F(t.anio - 0.15)} hasta={F(t.dias + 1.3)} titulo={tx("LONDRES", "LONDON")} />
           <Dato texto={tx("LA PESTE NEGRA", "THE BLACK DEATH")} x={960} y={250} desde={F(t.peste)} hasta={F(t.mitad - 0.2)} color="#ff5a3c" tam={120} rot={-3} />
-          <Dato texto={tx("¿CUÁNTO\nDURAS?", "HOW LONG\nWILL YOU LAST?")} x={1440} y={330} desde={F(t.cuanto)} hasta={F(t.hora + 1.5)} tam={120} rot={-3} />
+          <Dato texto={tx("¿CUÁNTO\nDURAS?", "HOW LONG\nWILL YOU LAST?")} x={1440} y={330} desde={F(t.cuanto)} hasta={F(t.hora + 1.5)} tam={120} rot={0} />
           <IconoGrande tipo="olor" desde={F(t.olor)} hasta={F(t.humo + 0.3)} x={1300} y={300} />
           <IconoGrande tipo="pregunta" desde={F(t.porque)} hasta={F(t.pies + 0.5)} />
           <IconoGrande tipo="calavera" desde={F(t.plaga)} hasta={F(t.peste + 0.1)} />
-          <IconoGrande tipo="moneda_no" desde={F(t.dinero)} hasta={F(t.casa - 0.05)} />
-          <IconoGrande tipo="casa_no" desde={F(t.casa)} hasta={F(t.hablas - 0.05)} />
-          <IconoGrande tipo="pregunta" desde={F(t.hablas)} hasta={F(t.ventaja - 0.1)} />
-          <IconoGrande tipo="bombilla" desde={F(t.ventaja)} hasta={F(t.cuanto - 0.2)} />
+          <IconoGrande tipo="moneda_no" desde={F(t.dinero)} hasta={F(t.casa + 0.2)} />
+          <IconoGrande tipo="casa_no" desde={F(t.casa + 0.25)} hasta={F(t.hablas + 0.55)} />
+          <IconoGrande tipo="pregunta" desde={F(t.hablas + 0.6)} hasta={F(t.ventaja - 0.1)} />
+          <IconoGrande tipo="bombilla" desde={F(t.ventaja)} hasta={F(t.cuanto - 0.2)} tam={1.9} y={360} />
           <IconoGrande tipo="reloj" desde={F(t.cuanto)} hasta={F(t.hora + 1.5)} />
           <Aclara desde={F(t.ojos + 1.0)} dur={64} />
           <Despertar f0={F(t.ojos) - 4} fin={44} cx={960} cy={540} />

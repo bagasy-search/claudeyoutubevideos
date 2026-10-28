@@ -18,11 +18,13 @@ const CEL = /* glsl */ `
   vec3 sombra = base * vec3(0.50, 0.40, 0.37);
   vec3 c = mix(sombra, medio, smoothstep(uCelA - 0.03, uCelA + 0.03, s));
   c = mix(c, base, smoothstep(uCelB - 0.03, uCelB + 0.03, s));
+  float lc = dot(c, vec3(0.2126, 0.7152, 0.0722));
+  c = max(vec3(0.0), mix(vec3(lc), c, uSat)); // los de adelante más saturados que el fondo pintado (énfasis sin hacer nada)
   outgoingLight = c;
 }
 `;
 
-const toonificar = (m: THREE.MeshPhysicalMaterial, u: { uCelA: { value: number }; uCelB: { value: number } }) => {
+const toonificar = (m: THREE.MeshPhysicalMaterial, u: { uCelA: { value: number }; uCelB: { value: number }; uSat: { value: number } }) => {
   if (m.userData.cel) return;
   m.userData.cel = true;
   const prev = m.onBeforeCompile;
@@ -31,7 +33,7 @@ const toonificar = (m: THREE.MeshPhysicalMaterial, u: { uCelA: { value: number }
     prev.call(m, sh, r);
     Object.assign(sh.uniforms, u);
     sh.fragmentShader = sh.fragmentShader
-      .replace("#include <common>", "#include <common>\nuniform float uCelA;\nuniform float uCelB;")
+      .replace("#include <common>", "#include <common>\nuniform float uCelA;\nuniform float uCelB;\nuniform float uSat;")
       .replace("#include <opaque_fragment>", CEL + "#include <opaque_fragment>");
   };
   m.customProgramCacheKey = () => clave + "|cel";
@@ -58,11 +60,11 @@ const crearMatContorno = (u: { uAncho: { value: number } }, color: string) => ne
   toneMapped: false,
 });
 
-export type OpcionesDibujo = { px?: number; color?: string; celA?: number; celB?: number };
+export type OpcionesDibujo = { px?: number; color?: string; celA?: number; celB?: number; sat?: number };
 
-export const Dibujo: React.FC<OpcionesDibujo> = ({ px = 3, color = "#3a2414", celA = 0.9, celB = 1.6 }) => {
+export const Dibujo: React.FC<OpcionesDibujo> = ({ px = 3, color = "#3a2414", celA = 0.9, celB = 1.6, sat = 1.4 }) => {
   const { scene } = useThree();
-  const u = useMemo(() => ({ uAncho: { value: 0.03 }, uCelA: { value: celA }, uCelB: { value: celB } }), [celA, celB]);
+  const u = useMemo(() => ({ uAncho: { value: 0.03 }, uCelA: { value: celA }, uCelB: { value: celB }, uSat: { value: sat } }), [celA, celB, sat]);
   const mat = useMemo(() => crearMatContorno(u, color), [u, color]);
   useFrame(({ camera }) => {
     const cam = camera as THREE.OrthographicCamera;

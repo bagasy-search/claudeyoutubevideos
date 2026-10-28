@@ -17,8 +17,8 @@ export type Idioma = "es" | "en";
 export const EscenaB: React.FC<{
   Set: React.FC<any>; pal: Paleta; claves: Clave[]; setProps?: Record<string, unknown>; momento?: Momento;
   personajes?: Personaje[]; luz?: LuzEscena; detras?: React.ReactNode; sobre?: React.ReactNode; frente?: React.ReactNode; hud?: React.ReactNode;
-  mano?: number; seed?: number; zLejos?: number; interior?: boolean; zTras?: number; dibujo?: OpcionesDibujo;
-}> = ({ Set, pal, claves, setProps = {}, momento, personajes = [], luz, detras, sobre, frente, hud, mano = 3, seed = 0, zLejos = 0.25, interior, zTras, dibujo }) => {
+  mano?: number; seed?: number; zLejos?: number; interior?: boolean; zTras?: number; dibujo?: OpcionesDibujo; profundidad?: number;
+}> = ({ Set, pal, claves, setProps = {}, momento, personajes = [], luz, detras, sobre, frente, hud, mano = 3, seed = 0, zLejos = 0.25, interior, zTras, dibujo, profundidad = 0 }) => {
   const f = useF();
   const S = momento ? conMomento(Set, momento, { interior }) : Set;
   const P = momento ? palMomento(pal, momento) : pal;
@@ -27,11 +27,11 @@ export const EscenaB: React.FC<{
   return (
     <AbsoluteFill>
       <Plano claves={claves} mano={mano} seed={seed} fondo={P.cielo[0]} mbMax={2.5}>
-        <CapaSVG z={zLejos} desenfoqueMax={3}><S capa="lejos" {...sp} /></CapaSVG>
-        {zTras !== undefined && <CapaSVG z={zTras} desenfoqueMax={2}><S capa="tras" {...sp} /></CapaSVG>}
-        <CapaSVG z={1}><S capa="medio" {...sp} />{detras}</CapaSVG>
+        <CapaSVG z={zLejos} desenfoqueMax={3} desenfoqueZoom={profundidad * 1.3}><S capa="lejos" {...sp} /></CapaSVG>
+        {zTras !== undefined && <CapaSVG z={zTras} desenfoqueMax={2} desenfoqueZoom={profundidad * 1.15}><S capa="tras" {...sp} /></CapaSVG>}
+        <CapaSVG z={1} desenfoqueZoom={profundidad}><S capa="medio" {...sp} />{detras}</CapaSVG>
         <Capa3D personajes={personajes} luz={{ ...(noche ? { intensidad: 1.5, color: "#ffd9a8", relleno: 0.55, tinte: "#8a90b8", entorno: 0.55 } : {}), ...luz }} dibujo={dibujo} />
-        <CapaSVG z={1}>{sobre}</CapaSVG>
+        <CapaSVG z={1} sat={dibujo ? dibujo.sat ?? 1.4 : undefined}>{sobre}</CapaSVG>
         <CapaSVG z={1.4} desenfoqueMax={5}><S capa="frente" {...sp} />{frente}</CapaSVG>
       </Plano>
       {hud}
