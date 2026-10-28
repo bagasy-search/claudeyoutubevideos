@@ -403,8 +403,8 @@ const R16: React.FC = () => {
       medio={<A look={THEO} ruta={[{ f: 0, x: 4540, y: Y }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: "manosCintura" }, ...gestos(l(279.6), l(280.7), [{ hD: 85, cD: 6 }, { hD: 110, cD: 6 }], 14), { f: l(280.8), v: { hD: 145, cD: 0, hI: 60, cI: 20, cabeza: -14 } }, ...gestos(l(281.1), L, [{ hD: 150, cD: 0, hI: 55, cI: 15, cabeza: -18 }, { hD: 140, cD: 6, hI: 65, cI: 25, cabeza: -12 }], 8)]} caras={[{ f: 0, v: "neutral" }, { f: l(280.2), v: "sorpresa" }, { f: l(281.0), v: "feliz" }]} miradas={[{ f: 0, v: { x: 0.7, y: -0.5 } }, { f: l(280.8), v: { x: 0.4, y: -0.9 } }]} ajuste={(p, g) => ({ ...p, bajar: p.bajar - 26 * ap(g, l(280.8), 8) })} />}
       hud={<>
         <Rotulo texto="MID-AUGUST" x={1240} y={130} centro desde={l(279.8)} color="#f6ecd2" tam={72} />
-        {/* misma curva que el HUD (Lc04 DIA: 296 → 320 out-cubic de T(279.5) a T(281.2)) → mismo número en el mismo cuadro */}
-        <Dato x={1240} y={270} rotulo="DAY" de={296} a={320} v={296 + 24 * ease(f, l(279.5), l(281.2))} desde={l(279.4)} color="#7cd36a" tam={100} vivo={false} />
+        {/* misma curva que el HUD (Lc04 DIA: 312 → 320 out-cubic de T(279.5) a T(281.2)) → mismo número en el mismo cuadro */}
+        <Dato x={1240} y={270} rotulo="DAY" de={312} a={320} v={312 + 8 * ease(f, l(279.5), l(281.2))} desde={l(279.4)} color="#7cd36a" tam={100} vivo={false} />
       </>} />
   );
 };
@@ -460,8 +460,8 @@ const R18: React.FC = () => {
           const gx = 3150 + (i % 4) * 44 - 40, gy = Y - 40 - Math.floor(i / 4) * 24;
           return <Papa key={i} x={3080 + (gx - 3080) * u} y={Y - 330 + (gy - (Y - 330)) * u * u + (u >= 1 ? -Math.abs(Math.sin((f - f0 - 12) / 3)) * 14 * Math.exp(-(f - f0 - 12) / 5) : 0)} s={0.8} rot={u * 300 + i * 40} />;
         })}
-        <A look={MARCUS} escala={1.35} ruta={[{ f: 0, x: 2800, y: Y }, { f: l(287.8), x: 2960, y: Y }]} dir={[{ f: 0, v: 1 }]}
-          poses={[{ f: 0, v: "parado" }, { f: l(287.8), v: "agacharse" }, ...gestos(l(287.9), l(289.0), [{ tronco: 8, hD: 120, cD: 10, hI: 100, cI: 10 }, "agacharse"], 9), { f: l(289.0), v: { hD: 112, cD: 0, hI: 104, cI: 10, cabeza: -6 } }, ...gestos(l(289.4), l(292.9), [{ hD: 116, cD: 0, hI: 106, cI: 8, cabeza: -8 }, { hD: 108, cD: 4, hI: 100, cI: 14, cabeza: 2 }], 14)]}
+        <A look={MARCUS} escala={1.35} ruta={[{ f: 0, x: 2830, y: Y }, { f: l(287.8), x: 2990, y: Y }]} dir={[{ f: 0, v: 1 }]}
+          poses={[{ f: 0, v: "parado" }, { f: l(287.8), v: "agacharse" }, ...gestos(l(287.9), l(289.0), [{ tronco: 8, hD: 120, cD: 10, hI: 100, cI: 10 }, "agacharse"], 9), { f: l(289.0), v: { hD: 40, cD: 18, hI: 104, cI: 10, cabeza: -6 } }, ...gestos(l(289.4), l(292.9), [{ hD: 44, cD: 16, hI: 106, cI: 8, cabeza: -8 }, { hD: 38, cD: 22, hI: 100, cI: 14, cabeza: 2 }], 14)]}
           caras={[{ f: 0, v: "determinado" }, { f: l(289.4), v: "sorpresa" }, { f: l(291.5), v: "risa" }]} miradas={[{ f: 0, v: { x: 0.6, y: 0.4 } }, { f: l(289.0), v: { x: 0.3, y: -0.8 } }]}
           enManoD={<HorquillaPapas papas={arriba ? Math.max(0, 8 - n) : 0} />} />
       </>}
@@ -598,7 +598,7 @@ const R24: React.FC = () => {
       hud={<>
         <div style={{ position: "absolute", inset: 0, background: "#fff", opacity: Math.max(0, 0.85 - f / 8) }} />
         {/* la ventana de la casa: la silueta de Marcus ve la helada y RETROCEDE un paso */}
-        <Pip>{(() => { const k = ap(f, 4, 22); const sx = 1650 + 26 * k, sy = 470 + 8 * k, sc = 1 - 0.12 * k; return <g>
+        <Pip>{(() => { const k = ap(f, 3, 22); const sx = 1640 + 50 * k, sy = 450 + 40 * k, sc = 1.05 - 0.33 * k; return <g>
           <rect x={1470} y={320} width={360} height={450} rx={12} fill="#2a1c14" stroke="#efe6d2" strokeWidth={14} />
           <rect x={1484} y={334} width={332} height={422} fill="#ffcf6e" opacity={0.85} />
           <Halo x={1650} y={540} r={240} color="#ffcf6e" fuerza={0.5} />

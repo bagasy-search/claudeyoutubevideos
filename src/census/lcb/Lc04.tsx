@@ -23,12 +23,13 @@ const todos = (): PlanoM[] => {
 // HUD fijo (cuadros globales)
 // HUD coherente con la NARRACIÓN de punta a punta (cuadros GLOBALES; misma curva out-cubic que los contadores de escena):
 // DAY: 201 llegada · 240 fines de mayo (E17, sincronizado con su contador 69.5-71.5) · 250 plantar (E37 170.0-171.8) ·
-// 256 tras 6 días de pala (E44 197.3-200.4) · avanza parejo el verano · 320 mediados de agosto (E61, 279.5-281.2) ·
+// 256 tras 6 días de pala (E44 197.3-200.4) · julio de la sequía: 282→288 (E51) · 289→295 (E52) · →305 (E53-E54) ·
+// 308 · 312 (E60) · 320 mediados de agosto (E61: arranca en 312 en T 279.5 y llega a 320 en T 281.2, out-cubic) ·
 // 333 = 29 de agosto (E66 «AUGUST 29», 13 días después) · 334→343 los 9 días de cavar (E75).
 // DAYS LEFT IN SUMMER = 355 − DAY en todo momento (día 240 ↔ 115 pintado en la puerta) y cae a 0 con la helada (E69 «Frost.»).
 // KCAL IN THE GROUND: 0 hasta que crece lo plantado (nada de 632,439 / 875,000 / 7M falsos), sube monótono hasta 6,895,000
 // junto con la barra de E65 (298.2-300.8) y baja SÓLO con la helada a 6.1M (E73, junto con GARDEN ALIVE 1→0.5); nunca 4.3M.
-const DIA = [{ f: 0, v: 201 }, { f: T(69.5), v: 240, d: T(71.5) - T(69.5) }, { f: T(170.0), v: 250, d: T(171.8) - T(170.0) }, { f: T(197.3), v: 256, d: T(200.4) - T(197.3) }, { f: T(214.0), v: 264, d: T(2.5) }, { f: T(231.0), v: 278, d: T(2.5) }, { f: T(241.0), v: 288, d: T(2.5) }, { f: T(262.0), v: 293, d: T(2.5) }, { f: T(275.0), v: 296, d: T(2.0) }, { f: T(279.5), v: 320, d: T(281.2) - T(279.5) }, { f: T(301.9), v: 333, d: T(1.2) }, { f: T(335.0), v: 343, d: T(4.8) }];
+const DIA = [{ f: 0, v: 201 }, { f: T(69.5), v: 240, d: T(71.5) - T(69.5) }, { f: T(170.0), v: 250, d: T(171.8) - T(170.0) }, { f: T(197.3), v: 256, d: T(200.4) - T(197.3) }, { f: T(214.0), v: 264, d: T(2.5) }, { f: T(228.5), v: 282, d: T(2.0) }, { f: T(231.0), v: 288, d: T(236.5) - T(231.0) }, { f: T(236.9), v: 295, d: T(239.9) - T(236.9) }, { f: T(240.1), v: 305, d: T(248.1) - T(240.1) }, { f: T(262.0), v: 308, d: T(2.5) }, { f: T(275.0), v: 312, d: T(2.0) }, { f: T(279.5), v: 320, d: T(281.2) - T(279.5) }, { f: T(301.9), v: 333, d: T(1.2) }, { f: T(335.0), v: 343, d: T(4.8) }];
 const KCAL = [{ f: 0, v: 0 }, { f: T(214.0), v: 150000, d: T(4) }, { f: T(236.9), v: 900000, d: T(5) }, { f: T(262.0), v: 2400000, d: T(5) }, { f: T(279.5), v: 3600000, d: T(5) }, { f: T(290.0), v: 5040000, d: T(6) }, { f: T(298.2), v: 6895000, d: T(300.8) - T(298.2) }, { f: T(321.8), v: 6100000, d: T(2.2) }];
 const VERANO = [...DIA.filter((c) => c.f <= T(301.9)).map((c) => ({ ...c, v: 355 - c.v })), { f: T(313.8), v: 0, d: 14 }];
 const HudLc04: React.FC = () => (
@@ -38,7 +39,7 @@ const HudLc04: React.FC = () => (
     <BarraKcal claves={KCAL} meta={7000000} rotulo="KCAL IN THE GROUND" desde={-30} hasta={T(352.4)} />
     <Segundo claves={VERANO} prefijo="DAYS LEFT IN SUMMER " icono="temp" y={296} desde={T(84.4)} hasta={T(352.4)} color="#ffb04a" />
     <Segundo claves={102} prefijo="LILY " sufijo=" °F" icono="temp" y={196} desde={T(360.8)} hasta={T(372.1)} color="#e23a2e" />
-    <Pildora texto="Subscribe · the census continues" x={960} y={990} desde={T(376.6)} hasta={T(380.4)} color="#ffcf6e" tam={34} />
+    <Pildora texto="Subscribe · the census continues" x={960} y={990} desde={T(376.6)} hasta={T(379.6)} color="#ffcf6e" tam={34} />
     <MarcaCorto />
   </>
 );

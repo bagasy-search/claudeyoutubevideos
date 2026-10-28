@@ -274,7 +274,7 @@ export const LupaGrande: React.FC<{ x: number; y: number; r?: number; desde: num
     <svg width={r * 2 + 120} height={r * 2 + 240} style={{ position: "absolute", left: x - r - 60, top: y - r - 60, transform: `scale(${k})`, overflow: "visible" }}>
       <line x1={r + 60 + r * 0.7} y1={r + 60 + r * 0.7} x2={r + 60 + r * 1.55} y2={r + 60 + r * 1.55} stroke="#5a4a3a" strokeWidth={34} strokeLinecap="round" />
       <circle cx={r + 60} cy={r + 60} r={r} fill="#e8d4b0" stroke="#5a4a3a" strokeWidth={22} />
-      <g transform={`translate(${r + 60},${r + 70})`}><Papa x={0} y={0} s={10} rot={-8} brotes={brotes} /></g>
+      <g transform={`translate(${r + 60},${r + 66})`}><Papa x={0} y={0} s={r / 40} rot={-8} brotes={brotes} /></g>
     </svg>
   );
 };
@@ -303,5 +303,20 @@ export const MapaPin: React.FC<{ x: number; y: number; desde: number; rotulo: st
       </svg>
       <div style={{ marginTop: 10, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: w * 0.085, color: "#ffcf6e", letterSpacing: 2, ...CONTORNO(w * 0.085) }}>{rotulo}</div>
     </div>
+  );
+};
+
+// ---------- sello de fecha que ENTRA dentro del sobre (Sobre de piezas4 corta «PACKED FOR 2025» a tam 20) ----------
+// mismas x, y, s, rot que el <Sobre>: se dibuja encima, en la franja blanca de abajo, con golpe de entrada (k 0→1)
+export const SelloSobre: React.FC<{ x: number; y: number; s?: number; rot?: number; t: string; k?: number; gris?: number }> = ({ x, y, s = 1, rot = 0, t, k = 1, gris = 0 }) => {
+  if (k <= 0) return null;
+  const e = 1 + 0.35 * (1 - k);
+  return (
+    <g transform={`translate(${x},${y}) rotate(${rot}) scale(${s})`}>
+      <g transform={`translate(0,103) rotate(-5) scale(${e})`} opacity={Math.min(1, k * 1.6)}>
+        <rect x={-80} y={-15} width={160} height={30} rx={5} fill="none" stroke={gris > 0.5 ? "#7a7a80" : "#c0352c"} strokeWidth={3.5} />
+        <text y={6} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={15} letterSpacing={0.5} fill={gris > 0.5 ? "#7a7a80" : "#c0352c"}>{t}</text>
+      </g>
+    </g>
   );
 };
