@@ -2,6 +2,7 @@
 // Vuelta 2 (director): multitudes con función (pose/escala/profundidad/gesto distintos), componente por frase, cortes limpios.
 // Vuelta 3 (director independiente): contraplanos / insertos / gráficos a pantalla completa en vez del mismo encuadre; el cuerpo hace lo que dice la voz; textos con placa.
 import React from "react";
+import { ManosBoca } from "./extras_4";
 import { Easing, interpolate } from "remotion";
 import { mira, useF } from "../anikit/camara";
 import { Actor, ActorProps } from "../anikit/actor";
@@ -160,7 +161,7 @@ export const P32Mangos: React.FC = () => {
   const f = useF();
   const cl = f < T32B ? [mira(0, 2440, 560, 1.15), mira(T32B, 2650, 620, 1.75, { curva: "inout" })]
     : f < T32C ? [mira(T32B, MANGO32.x + 10, 690, 2.5), mira(T32C, MANGO32.x + 10, 688, 2.65, { curva: "inout" })]
-    : [mira(T32C, 2300, 700, 2.35), mira(160, 2310, 698, 2.5, { curva: "inout" })];
+    : [mira(T32C, 2470, 720, 1.75), mira(160, 2480, 718, 1.85, { curva: "inout" })];
   const hombres = [0, 1].map((k) => {
     const fr = T32C + 4 + k * 6;
     return <A key={k} {...conReaccion({ look: HOMBRE(k + 1), seed: 45 + k, escala: ESC * 0.95, ruta: [{ f: 0, x: 2240 + k * 130, y: VP - 30 }], dir: [{ f: 0, v: -1 }, { f: fr, v: 1 }],
@@ -356,16 +357,17 @@ export const P37Lluvias: React.FC = () => {
 // ---------- 38 · «every man on that street» (paneo por las caras en primer término) → «held his breath» (todos toman aire a la vez y se tapan la boca con las dos manos; el cronómetro del aliento corre) ----------
 const k38 = kDe(168.5);
 const R38 = k38(169.8); // «held»
-const TAPA = { hD: 34, cD: 150, hI: 30, cI: 152, cabeza: 4, tronco: 2 }; // las dos manos sobre la boca
+const TAPA = { hD: 112, cD: 124, hI: 100, cI: 128, cabeza: 4, tronco: 4 }; // manos sobre la boca: el brazo de adelante pasa POR DELANTE de la cara
+const PECHO = { hD: -8, cD: 118, hI: 10, cI: 40, cabeza: -4, tronco: -4 }; // fila de atrás: la mano al pecho
 const AIRE = { hD: 20, cD: 30, hI: 20, cI: 30, tronco: -8, cabeza: -10 }; // toma aire: pecho arriba
 export const P38Aliento: React.FC = () => {
   const f = useF();
-  const fila = (k: number) => R38 - 6 + k * 3; // cada uno toma aire con un desfase mínimo
+  const fila = (k: number) => R38 - 13 + k * 2; // cada uno toma aire con un desfase mínimo; la mano llega a la boca en R38-6
   return (
     <Vai cl={[mira(0, 1180, 700, 2.0), mira(R38 - 4, 1300, 690, 1.85, { curva: "inout" }), mira(76, 1480, 672, 1.62, { curva: "inout" })]}
       medio={<>
         {[0, 1, 2, 3].map((k) => <A key={"a" + k} look={HOMBRE(k + 5)} seed={80 + k} escala={ESC * 0.72} ruta={[{ f: 0, x: 1180 + k * 120, y: VP - 80 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "sorpresa" }, { f: fila(k) + 6, v: "aguanta" }]}
-          poses={[{ f: 0, v: "parado" }, { f: fila(k), v: AIRE }, { f: fila(k) + 7, v: TAPA }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }]} />)}
+          poses={[{ f: 0, v: "parado" }, { f: fila(k), v: AIRE }, { f: fila(k) + 7, v: PECHO }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }]} />)}
         <A look={MONJE_JOVEN} seed={74} ruta={[{ f: 0, x: V.portal - 220, y: VP }]} caras={[{ f: 0, v: "neutral" }]} enManoD={<Cuenco />} poses={[{ f: 0, v: PARADO_CUENCO }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: 50, v: { x: 0.4, y: 0.7 } }]} />
         <A look={AMRAPALI} seed={12} ruta={[{ f: 0, x: V.portal - 50, y: VP }]} dir={[{ f: 0, v: -1 }]} caras={[{ f: 0, v: "picaro" }]} poses={[{ f: 0, v: "parado" }, { f: 40, v: "manosCintura" }]} />
         {/* primer término: tres de costado, cada uno con su gesto antes de contener el aire */}
@@ -376,6 +378,10 @@ export const P38Aliento: React.FC = () => {
         <A look={HOMBRE(1)} seed={87} escala={ESC * 1.35} ruta={[{ f: 0, x: 1340, y: VP + 160 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "sorpresa" }, { f: 14, v: "duda" }, { f: fila(2) + 6, v: "aguanta" }]}
           giros={[{ f: 0, v: 0 }, { f: 12, v: -0.8 }, { f: fila(2), v: 0.3 }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: 12, v: { x: -1, y: 0.2 } }, { f: fila(2), v: { x: 1, y: 0 } }]}
           poses={[{ f: 0, v: "parado" }, { f: 12, v: { hD: 30, cD: 140, hI: 20, cI: 30 } }, { f: fila(2), v: AIRE }, { f: fila(2) + 7, v: TAPA }]} />
+        {/* las manos sobre la boca, visibles (el brazo queda tapado por la cabeza del de al lado) */}
+        <ManosBoca x={934} y={792} s={0.85} desde={fila(0) + 7} piel="#b47c52" />
+        <ManosBoca x={1128} y={798} s={0.85} desde={fila(1) + 7} piel="#a8714a" />
+        <ManosBoca x={1284} y={806} s={0.85} desde={fila(2) + 7} piel="#9a6a44" />
       </>}
       hud={<>
         <Pildora texto="EVERY MAN · HELD HIS BREATH" x={960} y={90} desde={k38(169.2)} color="#ffe2a6" tam={50} />

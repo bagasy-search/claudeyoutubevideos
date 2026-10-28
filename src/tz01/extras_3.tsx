@@ -364,6 +364,7 @@ export const Placa: React.FC<{ x: number; y: number; w: number; h: number; o?: n
   return <div style={{ position: "absolute", left: x, top: y, width: w, height: h, borderRadius: 28, background: "rgba(14,15,19,0.78)", border: "2px solid #4a4f58", opacity: o * e * s, transform: `scale(${0.94 + 0.06 * e})`, transformOrigin: "50% 50%" }} />;
 };
 
+const TINTA_HT = "#221c18";
 // ---------- hombro de Tenzo de espaldas en primer término: cabeza pelada, oreja, borde de barba blanca, túnica gris y rosario ----------
 export const HombroTenzo: React.FC<{ x: number; y: number; r?: number; lado?: 1 | -1 }> = ({ x, y, r = 240, lado = -1 }) => {
   const f = useF();
@@ -376,9 +377,14 @@ export const HombroTenzo: React.FC<{ x: number; y: number; r?: number; lado?: 1 
           <path d={`M${-r * 1.6},${r * 2.8} Q${-r * 1.5},${r * 0.95} ${-r * 0.45},${r * 0.78} L${r * 0.5},${r * 0.78} Q${r * 1.5},${r * 0.95} ${r * 1.6},${r * 2.8} Z`} fill="#6e6a63" />
           <path d={`M${-r * 0.2},${r * 0.8} L${r * 0.9},${r * 2.8}`} stroke="#5a5650" strokeWidth={r * 0.1} />
           {Array.from({ length: 7 }).map((_, k) => <circle key={k} cx={-r * 0.55 + k * r * 0.19} cy={r * 0.92 + Math.sin((k / 6) * Math.PI) * r * 0.22} r={r * 0.07} fill="#7a4a2a" />)}
-          <circle cx={0} cy={0} r={r * 0.82} fill="url(#htCab)" />
-          <ellipse cx={-r * 0.78} cy={r * 0.1} rx={r * 0.13} ry={r * 0.2} fill="#d99e6c" />
-          <path d={`M${-r * 0.75},${r * 0.45} Q${-r * 0.5},${r * 0.95} ${0},${r * 0.9}`} stroke="#f4efe4" strokeWidth={r * 0.16} fill="none" strokeLinecap="round" />
+          <circle cx={0} cy={0} r={r * 0.82} fill="url(#htCab)" stroke={TINTA_HT} strokeWidth={5} />
+          {/* v6: 3/4 de espaldas con rasgos del lado de Leo: mejilla, oreja grande, ceja blanca que asoma, barba */}
+          <path d={`M${-r * 0.8},${-r * 0.1} Q${-r * 0.92},${r * 0.35} ${-r * 0.62},${r * 0.62}`} fill="none" stroke="#c98e5e" strokeWidth={r * 0.06} strokeLinecap="round" />
+          <ellipse cx={-r * 0.74} cy={r * 0.06} rx={r * 0.16} ry={r * 0.24} fill="#e0a674" stroke={TINTA_HT} strokeWidth={4} />
+          <path d={`M${-r * 0.74},${-r * 0.08} Q${-r * 0.66},${r * 0.06} ${-r * 0.74},${r * 0.2}`} fill="none" stroke="#a86e44" strokeWidth={4} strokeLinecap="round" />
+          <path d={`M${-r * 0.62},${-r * 0.36} Q${-r * 0.92},${-r * 0.5} ${-r * 1.04},${-r * 0.32} Q${-r * 0.9},${-r * 0.38} ${-r * 0.7},${-r * 0.26} Z`} fill="#f7f3ea" stroke={TINTA_HT} strokeWidth={3} />
+          <path d={`M${-r * 0.82},${r * 0.36} Q${-r * 0.78},${r * 0.98} ${-r * 0.05},${r * 0.95} Q${-r * 0.5},${r * 0.78} ${-r * 0.62},${r * 0.36} Z`} fill="#f4efe4" stroke={TINTA_HT} strokeWidth={4} />
+          {Array.from({ length: 9 }).map((_, k) => <circle key={k} cx={-r * 0.7 + k * r * 0.17} cy={r * 1.0 + Math.sin((k / 8) * Math.PI) * r * 0.2} r={r * 0.075} fill="#8a5432" stroke={TINTA_HT} strokeWidth={2.5} />)}
           <path d={`M${-r * 0.4},${-r * 0.72} A${r * 0.82},${r * 0.82} 0 0 0 ${-r * 0.82},${r * 0.05}`} fill="none" stroke={ORO} strokeWidth={9} opacity={0.6} strokeLinecap="round" />
         </g>
       </svg>

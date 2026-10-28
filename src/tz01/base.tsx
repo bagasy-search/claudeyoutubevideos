@@ -79,8 +79,8 @@ export const LeoCama: React.FC<{ x?: number; o?: Act }> = ({ x = CTO_PUNTOS.colc
   <Actor look={LEO} escala={ESC} seed={1} luz={rimTel} sombra={0} ruta={[{ f: 0, x, y: CP }]} dir={[{ f: 0, v: 1 }]} asiento={[{ f: 0, v: COLCHON_ALTO }]}
     poses={[{ f: 0, v: CAMA }]} caras={[{ f: 0, v: "cansado" }]} miradas={[{ f: 0, v: { x: 0.4, y: 0.8 } }]} enManoD={<Tel s={1.3} />} {...o} />
 );
-export const Cto: React.FC<{ cl: Clave[]; pal?: typeof PAL; sp?: Record<string, unknown>; medio?: React.ReactNode; detras?: React.ReactNode; hud?: React.ReactNode; frente?: React.ReactNode; leo?: Act | false }> = ({ cl, pal = PAL, sp = {}, medio, detras, hud, frente, leo = {} }) => (
-  <Escena Set={Cuarto} pal={pal} claves={cl} seed={2} setProps={{ nieve: true, ...sp }} hud={hud} frente={frente}
+export const Cto: React.FC<{ cl: Clave[]; pal?: typeof PAL; sp?: Record<string, unknown>; medio?: React.ReactNode; detras?: React.ReactNode; hud?: React.ReactNode; frente?: React.ReactNode; leo?: Act | false; mano?: number }> = ({ cl, pal = PAL, sp = {}, medio, detras, hud, frente, leo = {}, mano }) => (
+  <Escena Set={Cuarto} pal={pal} claves={cl} seed={2} mano={mano} setProps={{ nieve: true, ...sp }} hud={hud} frente={frente}
     medio={<>{detras}{leo && <LeoCama o={leo} />}{medio}</>} />
 );
 
