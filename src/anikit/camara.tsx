@@ -38,6 +38,7 @@ const hermite = (cl: Clave[], i: number, f: number): Estado => {
   return { x: sp("x"), y: sp("y"), zoom: Math.exp(sp("z")), rot: sp("rot"), foco: sp("foco") };
 };
 const Ctx = createContext<Estado>({ x: 0, y: 0, zoom: 1, rot: 0, foco: 1 });
+export const useCamara = () => useContext(Ctx);
 
 // posición de cámara en el cuadro f: cada tramo entre claves avanza con un resorte (llega con inercia, rebota apenas)
 export const poseEn = (claves: Clave[], f: number, fps: number): Estado => {
