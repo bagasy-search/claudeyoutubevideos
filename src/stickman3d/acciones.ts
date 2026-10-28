@@ -88,8 +88,9 @@ export const POSES = {
   }),
   pensar: pose({
     cabeza: { z: -8, x: -4, y: 6 },
-    manoD: MD([0.0, 0.1, 0.46], [-0.6, -1, 0.3], { puno: 1 }, 140, { goma: 0.3 }),
-    manoI: MD([-0.26, -0.6, 0.3], [0.6, -1, 0.4], { miton: 1 }, 80, { goma: 0.3 }),
+    manoD: MD([0.02, 0.2, 0.4], [-0.3, -1, 0.5], { puno: 1 }, 150, { goma: 0.3 }),
+    // el otro brazo cruzado bajo el codo, sosteniéndolo
+    manoI: MD([-0.22, -0.48, 0.38], [0.5, -1, 0.6], { puno: 1 }, 80, { goma: 0.3 }),
   }),
   bostezar: pose({
     cabeza: { z: 8, x: -6 }, torso: { z: 3 },
@@ -111,8 +112,9 @@ export const POSES = {
   }),
   panza_risa: pose({
     torso: { x: 4, curva: 0.04, z: -4 }, cabeza: { x: -22, z: -18 },
-    manoI: MD([0.04, -0.52, 0.46], [1, -0.5, 0.1], { miton: 1 }, 90, { goma: 0.3 }),
-    manoD: MD([-0.4, -0.45, 0.22], [-1, -0.6, -0.2], { miton: 1 }, 90, { goma: 0.3 }),
+    // una mano agarra la panza de frente y el otro brazo la cruza agarrándose el costado
+    manoD: MD([0.04, -0.34, 0.48], [-1, -0.4, 0.3], { abierta: 1 }, 90, { goma: 0.3 }),
+    manoI: MD([-0.26, -0.14, 0.44], [1, -0.3, 0.4], { puno: 1 }, 90, { goma: 0.3 }),
   }),
 } satisfies Record<string, Pose>;
 export type NombrePose = keyof typeof POSES;
