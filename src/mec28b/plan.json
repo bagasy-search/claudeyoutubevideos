@@ -1,0 +1,3074 @@
+{
+"segs": [
+[
+3.5,
+9.0,
+"shot",
+"n_tablero_manana_aguja_velocidad"
+],
+[
+9.0,
+15.3,
+"shot",
+"v01_flechita"
+],
+[
+23.22,
+28.06,
+"shot",
+"n_estacion_servicio_auto_prestado_llega"
+],
+[
+28.06,
+29.571,
+"shot",
+"n_llave_auto_alquiler_etiqueta"
+],
+[
+34.0,
+37.9,
+"shot",
+"n_concesionario_entrega_llaves_mostrador"
+],
+[
+44.08,
+47.4,
+"shot",
+"v02_volante"
+],
+[
+56.58,
+60.7,
+"shot",
+"n_fila_autos_distintas_marcas_taller"
+],
+[
+60.7,
+63.479,
+"shot",
+"n_tres_tableros_distintos_pared"
+],
+[
+68.0,
+75.6,
+"shot",
+"n_botones_tablero_distintos_detalle"
+],
+[
+75.6,
+81.067,
+"shot",
+"f_claudio_senala_tablero_auto"
+],
+[
+84.82,
+90.58,
+"shot",
+"n_manual_auto_guantera_abierta"
+],
+[
+90.58,
+94.28,
+"shot",
+"n_manual_pagina_dibujo_tablero"
+],
+[
+139.2,
+147.46,
+"shot",
+"n_motor_fundido_banco_taller"
+],
+[
+147.46,
+151.473,
+"shot",
+"f_claudio_garaje_brazos_cruzados"
+],
+[
+155.728,
+165.28,
+"shot",
+"n_cliente_asustado_tablero_luz"
+],
+[
+165.28,
+166.5,
+"shot",
+"f_claudio_explica_cliente_auto"
+],
+[
+193.56,
+201.0,
+"shot",
+"n_medidor_combustible_barritas_digital"
+],
+[
+205.404,
+209.22,
+"shot",
+"n_dibujo_surtidor_medidor_detalle"
+],
+[
+223.909,
+230.12,
+"shot",
+"n_tapa_tanque_lado_conductor"
+],
+[
+230.12,
+235.62,
+"shot",
+"n_tapa_tanque_lado_acompanante"
+],
+[
+235.62,
+237.0,
+"shot",
+"f_claudio_recuerda_mesa_taller"
+],
+[
+241.211,
+247.24,
+"shot",
+"n_auto_elevador_taller"
+],
+[
+247.24,
+249.68,
+"shot",
+"n_ruta_auto_reserva_atardecer"
+],
+[
+249.68,
+251.9,
+"shot",
+"n_estacion_ruta_auto_lado_equivocado"
+],
+[
+257.6,
+262.36,
+"shot",
+"n_estacion_ruta_fila_camiones"
+],
+[
+262.36,
+265.28,
+"shot",
+"n_reloj_tablero_auto_espera"
+],
+[
+265.28,
+270.9,
+"shot",
+"f_claudio_muestra_flechita_hombre_mayor"
+],
+[
+275.0,
+280.14,
+"shot",
+"f_claudio_sonrie_taller_puerta"
+],
+[
+280.14,
+287.9,
+"shot",
+"n_icono_surtidor_manguera_derecha"
+],
+[
+296.12,
+301.8,
+"shot",
+"n_tablero_auto_viejo_sin_flecha"
+],
+[
+307.2,
+312.3,
+"shot",
+"n_cinta_papel_flecha_tablero"
+],
+[
+316.64,
+320.0,
+"shot",
+"n_luz_reserva_amarilla_tablero"
+],
+[
+325.7,
+333.2,
+"shot",
+"n_tanque_combustible_corte_reserva"
+],
+[
+333.2,
+335.3,
+"shot",
+"n_cartel_ruta_kilometros"
+],
+[
+339.7,
+341.6,
+"shot",
+"f_claudio_dedo_advierte"
+],
+[
+341.6,
+351.12,
+"shot",
+"n_bomba_combustible_mano"
+],
+[
+351.12,
+353.28,
+"shot",
+"n_bomba_combustible_quemada_banco"
+],
+[
+358.028,
+362.24,
+"shot",
+"n_factura_bomba_combustible"
+],
+[
+362.24,
+369.0,
+"shot",
+"n_aguja_combustible_un_cuarto"
+],
+[
+373.946,
+381.44,
+"shot",
+"v10_computadora"
+],
+[
+391.66,
+397.66,
+"shot",
+"n_palito_boton_tablero_relojes"
+],
+[
+397.66,
+401.6,
+"shot",
+"n_boton_punta_palanca_limpia"
+],
+[
+412.92,
+416.92,
+"shot",
+"n_odometro_total_kilometros"
+],
+[
+416.92,
+420.056,
+"shot",
+"n_pantalla_trip_a_b"
+],
+[
+424.919,
+431.68,
+"shot",
+"n_pantalla_consumo_litros_100"
+],
+[
+431.68,
+433.4,
+"shot",
+"n_pantalla_consumo_instantaneo_barra"
+],
+[
+438.227,
+441.26,
+"shot",
+"n_pantalla_velocidad_promedio_tiempo"
+],
+[
+441.26,
+448.14,
+"shot",
+"n_pantalla_autonomia_km"
+],
+[
+455.938,
+464.0,
+"shot",
+"v04_parcial"
+],
+[
+473.0,
+481.12,
+"shot",
+"n_surtidor_litros_cargados"
+],
+[
+481.12,
+484.2,
+"shot",
+"n_cuadernito_cuentas_consumo"
+],
+[
+495.0,
+498.98,
+"shot",
+"f_claudio_mira_pantalla_auto"
+],
+[
+498.98,
+500.777,
+"shot",
+"f_claudio_cuenta_caso_banco"
+],
+[
+505.3,
+506.72,
+"shot",
+"n_enfermera_auto_estacionamiento_hospital"
+],
+[
+506.72,
+514.62,
+"shot",
+"n_cuadernito_viejo_guantera_consumo"
+],
+[
+514.62,
+516.66,
+"shot",
+"n_cuaderno_numeros_subrayados"
+],
+[
+520.347,
+524.94,
+"shot",
+"n_neumatico_trasero_poco_aire"
+],
+[
+524.94,
+530.26,
+"shot",
+"n_filtro_aire_tapado_tierra"
+],
+[
+530.26,
+533.192,
+"shot",
+"n_inflador_taller_valvula"
+],
+[
+543.36,
+549.0,
+"shot",
+"n_pantalla_autonomia_ruta_alta"
+],
+[
+553.931,
+559.64,
+"shot",
+"n_trafico_ciudad_autos_parados"
+],
+[
+559.64,
+562.496,
+"shot",
+"f_claudio_gesto_mano_calma"
+],
+[
+568.4,
+575.52,
+"shot",
+"n_mano_tapa_tanque_abre"
+],
+[
+577.48,
+579.378,
+"shot",
+"n_icono_llave_inglesa_pantalla"
+],
+[
+583.2,
+585.88,
+"shot",
+"n_pantalla_servicio_en_km"
+],
+[
+585.88,
+594.877,
+"shot",
+"n_aceite_nuevo_filtro_banco"
+],
+[
+599.241,
+604.44,
+"shot",
+"n_taller_chico_cambio_aceite"
+],
+[
+604.44,
+609.42,
+"shot",
+"n_llavecita_prendida_tablero_noche"
+],
+[
+609.42,
+612.184,
+"shot",
+"f_claudio_niega_cabeza_sonrie"
+],
+[
+616.5,
+624.14,
+"shot",
+"n_manual_pagina_reset_servicio"
+],
+[
+624.14,
+627.182,
+"shot",
+"n_aceite_viejo_negro_varilla"
+],
+[
+632.2,
+639.78,
+"shot",
+"f_claudio_pega_etiqueta_parabrisas"
+],
+[
+639.78,
+643.197,
+"shot",
+"n_etiqueta_parabrisas_fecha_km"
+],
+[
+648.3,
+649.9,
+"shot",
+"f_claudio_responde_pregunta_garaje"
+],
+[
+649.9,
+657.58,
+"shot",
+"n_aguja_combustible_lenta_carga"
+],
+[
+667.1,
+678.8,
+"shot",
+"n_ticket_estacion_servicio_mano"
+],
+[
+678.8,
+680.3,
+"shot",
+"n_flotante_tanque_combustible"
+],
+[
+691.5,
+694.5,
+"shot",
+"n_celular_llamada_noche_taller"
+],
+[
+699.215,
+708.34,
+"shot",
+"n_tablero_oscuro_noche_luces_calle"
+],
+[
+708.34,
+712.6,
+"shot",
+"n_ruedita_brillo_dedo_baja"
+],
+[
+720.74,
+728.74,
+"shot",
+"v05_ruedita"
+],
+[
+734.9,
+742.3,
+"shot",
+"n_ruedita_icono_sol_detalle"
+],
+[
+742.3,
+746.354,
+"shot",
+"n_botones_mas_menos_brillo"
+],
+[
+751.6,
+762.34,
+"shot",
+"n_rodilla_toca_ruedita_puerta"
+],
+[
+762.34,
+764.0,
+"shot",
+"f_claudio_rie_cliente_noche"
+],
+[
+776.0,
+778.177,
+"shot",
+"n_auto_noche_sin_luces_ciudad"
+],
+[
+783.8,
+792.72,
+"shot",
+"n_avenida_noche_mucha_luz"
+],
+[
+792.72,
+797.1,
+"shot",
+"n_testigo_verde_luces_tablero"
+],
+[
+801.9,
+806.96,
+"shot",
+"n_perilla_luces_gira"
+],
+[
+806.96,
+812.76,
+"shot",
+"n_perilla_luces_posicion_auto"
+],
+[
+825.56,
+827.682,
+"shot",
+"n_testigo_neumatico_herradura_amarillo"
+],
+[
+833.345,
+841.4,
+"shot",
+"v06_testigo_neum"
+],
+[
+844.56,
+845.573,
+"shot",
+"n_auto_estacionado_neumatico_bajo"
+],
+[
+851.42,
+854.96,
+"shot",
+"n_testigo_neumatico_manana_otra_vez"
+],
+[
+854.96,
+860.6,
+"shot",
+"f_claudio_dos_dedos_explica"
+],
+[
+860.6,
+863.583,
+"shot",
+"n_sensor_presion_valvula_rueda"
+],
+[
+869.0,
+875.92,
+"shot",
+"n_pantalla_presion_cuatro_ruedas"
+],
+[
+875.92,
+881.688,
+"shot",
+"n_sensor_abs_rueda_freno"
+],
+[
+886.606,
+894.44,
+"shot",
+"n_rueda_baja_vs_inflada"
+],
+[
+897.52,
+899.5,
+"shot",
+"f_claudio_inclina_secreto"
+],
+[
+903.3,
+905.96,
+"shot",
+"n_inflando_neumatico_estacion"
+],
+[
+905.96,
+911.96,
+"shot",
+"n_ruedas_rotacion_taller_piso"
+],
+[
+918.0,
+923.72,
+"shot",
+"n_testigo_neumatico_prendido_ruedas_bien"
+],
+[
+923.72,
+930.9,
+"shot",
+"n_boton_reset_neumatico_bajo_volante"
+],
+[
+936.8,
+942.02,
+"shot",
+"n_llave_contacto_puesta"
+],
+[
+942.02,
+948.6,
+"shot",
+"n_menu_pantalla_presion_calibrar"
+],
+[
+960.0,
+963.99,
+"shot",
+"n_cuatro_ruedas_tiza_ok"
+],
+[
+970.021,
+976.5,
+"shot",
+"f_claudio_serio_rueda"
+],
+[
+976.5,
+982.4,
+"shot",
+"n_costado_neumatico_max_press"
+],
+[
+986.722,
+994.34,
+"shot",
+"n_calcomania_presion_marco_puerta"
+],
+[
+994.34,
+998.082,
+"shot",
+"n_calcomania_presion_tapa_tanque"
+],
+[
+1001.4,
+1006.8,
+"shot",
+"n_calcomania_presion_detalle_cargado"
+],
+[
+1006.8,
+1015.0,
+"shot",
+"n_auto_estacionado_frio_manana"
+],
+[
+1018.429,
+1028.5,
+"shot",
+"n_vulcanizadora_barrio_frente"
+],
+[
+1036.3,
+1043.32,
+"shot",
+"n_clavo_neumatico_dibujo"
+],
+[
+1043.32,
+1046.6,
+"shot",
+"n_agua_jabon_burbujas_clavo"
+],
+[
+1058.96,
+1063.77,
+"shot",
+"v07_calibrador"
+],
+[
+1067.845,
+1070.2,
+"shot",
+"n_calibrador_lapiz_valvula"
+],
+[
+1070.2,
+1078.9,
+"shot",
+"n_rueda_auxilio_baul_desinflada"
+],
+[
+1084.725,
+1087.64,
+"shot",
+"n_botones_volante_crucero_limitador"
+],
+[
+1087.64,
+1095.085,
+"shot",
+"n_crucero_ruta_recta"
+],
+[
+1099.306,
+1106.9,
+"shot",
+"n_pie_lejos_acelerador"
+],
+[
+1106.9,
+1112.166,
+"shot",
+"v11_limitador"
+],
+[
+1118.319,
+1123.1,
+"shot",
+"n_pantalla_limitador_40"
+],
+[
+1123.1,
+1124.66,
+"shot",
+"n_zona_escuela_cartel_velocidad"
+],
+[
+1124.66,
+1129.679,
+"shot",
+"n_radar_velocidad_avenida"
+],
+[
+1135.024,
+1138.74,
+"shot",
+"n_velocimetro_pasando_limite"
+],
+[
+1138.74,
+1144.98,
+"shot",
+"v13_emergencia"
+],
+[
+1144.98,
+1147.755,
+"shot",
+"n_pedal_acelerador_fondo_escalon"
+],
+[
+1150.942,
+1160.82,
+"shot",
+"n_palanquita_crucero_detras_volante"
+],
+[
+1169.1,
+1175.38,
+"shot",
+"n_boton_lim_volante"
+],
+[
+1183.4,
+1189.82,
+"shot",
+"n_botones_mas_menos_volante_velocidad"
+],
+[
+1189.82,
+1194.22,
+"shot",
+"f_claudio_taxista_charla"
+],
+[
+1194.22,
+1197.889,
+"shot",
+"n_multas_velocidad_tres_papeles"
+],
+[
+1203.341,
+1213.64,
+"shot",
+"f_claudio_muestra_volante_taxista"
+],
+[
+1213.64,
+1214.478,
+"shot",
+"n_taxi_avenida_tranquilo"
+],
+[
+1223.7,
+1230.776,
+"shot",
+"n_pantalla_temperatura_exterior"
+],
+[
+1234.7,
+1241.98,
+"shot",
+"v08_hielo"
+],
+[
+1252.613,
+1258.38,
+"shot",
+"n_sensor_temperatura_paragolpes"
+],
+[
+1258.38,
+1263.9,
+"shot",
+"n_puente_ruta_escarcha_madrugada"
+],
+[
+1267.901,
+1276.16,
+"shot",
+"n_ruta_madrugada_frio_auto"
+],
+[
+1276.16,
+1279.996,
+"shot",
+"n_hielo_negro_asfalto_brillo"
+],
+[
+1283.533,
+1294.32,
+"shot",
+"n_distancia_auto_adelante_ruta_fria"
+],
+[
+1294.32,
+1296.994,
+"shot",
+"n_vaso_agua_techo_auto"
+],
+[
+1301.3,
+1307.24,
+"shot",
+"f_claudio_camioneta_cliente"
+],
+[
+1307.24,
+1311.79,
+"shot",
+"n_camioneta_bajada_sierra_madrugada"
+],
+[
+1316.415,
+1321.32,
+"shot",
+"n_cuneta_ruta_sierra"
+],
+[
+1324.08,
+1329.98,
+"shot",
+"n_auto_sol_trafico_calor"
+],
+[
+1333.531,
+1339.22,
+"shot",
+"n_pantalla_temperatura_alta_verano"
+],
+[
+1343.88,
+1345.356,
+"shot",
+"v12_eco"
+],
+[
+1351.1,
+1357.66,
+"shot",
+"n_selector_modos_normal_eco_sport"
+],
+[
+1357.66,
+1362.2,
+"shot",
+"f_claudio_explica_consola"
+],
+[
+1365.433,
+1372.3,
+"shot",
+"n_pie_acelerador_suave"
+],
+[
+1372.3,
+1378.9,
+"shot",
+"n_palanca_automatica_d"
+],
+[
+1384.244,
+1390.1,
+"shot",
+"n_ciudad_trafico_suave_eco"
+],
+[
+1390.1,
+1395.0,
+"shot",
+"n_pie_freno_suave_mirando_lejos"
+],
+[
+1400.9,
+1402.36,
+"shot",
+"n_filtro_aire_nuevo_caja"
+],
+[
+1402.36,
+1410.9,
+"shot",
+"n_baul_lleno_cosas_pesadas"
+],
+[
+1418.3,
+1422.98,
+"shot",
+"n_auto_cargado_subida_ruta"
+],
+[
+1422.98,
+1430.6,
+"shot",
+"n_dedo_apaga_boton_eco"
+],
+[
+1433.841,
+1443.258,
+"shot",
+"n_semaforo_rojo_auto_detenido"
+],
+[
+1446.9,
+1451.74,
+"shot",
+"n_boton_start_stop_a_flecha"
+],
+[
+1451.74,
+1455.76,
+"shot",
+"f_claudio_senora_auto_garaje"
+],
+[
+1455.76,
+1460.5,
+"shot",
+"n_rampa_garaje_empinada_casa"
+],
+[
+1465.0,
+1472.22,
+"shot",
+"n_hojita_verde_prendida_tablero"
+],
+[
+1475.34,
+1478.194,
+"shot",
+"f_claudio_sonrie_senora_rampa"
+],
+[
+1490.5,
+1492.2,
+"shot",
+"n_tablero_varias_luces_colores"
+],
+[
+1496.5,
+1498.32,
+"shot",
+"n_libro_norma_simbolos_colores"
+],
+[
+1508.66,
+1510.0,
+"shot",
+"n_testigos_verde_azul"
+],
+[
+1515.0,
+1518.36,
+"shot",
+"n_guino_verde_parpadea"
+],
+[
+1518.36,
+1523.26,
+"shot",
+"n_luz_alta_azul_ruta_noche"
+],
+[
+1536.9,
+1542.969,
+"shot",
+"n_check_engine_amarillo"
+],
+[
+1548.047,
+1556.44,
+"shot",
+"n_pastillas_freno_gastadas_nuevas"
+],
+[
+1556.44,
+1558.5,
+"shot",
+"f_claudio_dedo_atencion"
+],
+[
+1571.54,
+1575.0,
+"shot",
+"n_catalizador_corte_rojo"
+],
+[
+1578.621,
+1584.1,
+"shot",
+"n_auto_ruta_despacio_derecha"
+],
+[
+1597.0,
+1604.02,
+"shot",
+"n_auto_banquina_capo_abierto"
+],
+[
+1604.02,
+1608.993,
+"shot",
+"v09_aceite"
+],
+[
+1613.7,
+1619.5,
+"shot",
+"n_carter_aceite_goteo"
+],
+[
+1627.842,
+1633.96,
+"shot",
+"n_radiador_vapor_capo"
+],
+[
+1644.3,
+1646.72,
+"shot",
+"n_liquido_frenos_deposito_bajo"
+],
+[
+1651.22,
+1655.6,
+"shot",
+"n_alternador_correa_motor"
+],
+[
+1660.901,
+1669.28,
+"shot",
+"n_grua_auto_llega_taller"
+],
+[
+1669.28,
+1672.363,
+"shot",
+"n_testigo_aceite_rojo_prendido"
+],
+[
+1676.5,
+1680.98,
+"shot",
+"n_ruta_auto_humo_capo"
+],
+[
+1680.98,
+1685.76,
+"shot",
+"n_filtro_aceite_perdida_motor"
+],
+[
+1685.76,
+1688.855,
+"shot",
+"n_motor_desarmado_biela_rota"
+],
+[
+1693.027,
+1697.04,
+"shot",
+"n_junta_y_litro_aceite"
+],
+[
+1697.04,
+1702.857,
+"shot",
+"f_claudio_firme_mirada"
+],
+[
+1706.5,
+1713.04,
+"shot",
+"v03_contacto"
+],
+[
+1734.12,
+1736.8,
+"shot",
+"n_tablero_prueba_falta_una_luz"
+],
+[
+1742.138,
+1749.72,
+"shot",
+"n_auto_usado_venta_cartel"
+],
+[
+1749.72,
+1752.388,
+"shot",
+"n_lamparita_tablero_sacada"
+],
+[
+1763.92,
+1770.3,
+"shot",
+"n_escaner_obd_conector"
+],
+[
+1778.1,
+1785.64,
+"shot",
+"n_deposito_refrigerante_nivel"
+],
+[
+1793.145,
+1797.34,
+"shot",
+"n_mano_apaga_radio_aire"
+],
+[
+1799.32,
+1806.859,
+"shot",
+"n_freno_mano_bajado"
+],
+[
+1812.1,
+1816.18,
+"shot",
+"n_estacion_aire_mide_cuatro"
+],
+[
+1816.18,
+1824.8,
+"shot",
+"n_testigo_abs_amarillo"
+],
+[
+1829.411,
+1835.16,
+"shot",
+"n_testigo_airbag_rojo"
+],
+[
+1835.16,
+1841.459,
+"shot",
+"n_testigo_cinturon_bolso_asiento"
+],
+[
+1846.2,
+1856.28,
+"shot",
+"n_testigo_precalentamiento_espiral"
+],
+[
+1870.04,
+1875.551,
+"shot",
+"n_cinta_negra_tapa_testigo"
+],
+[
+1894.0,
+1899.42,
+"shot",
+"n_aguja_vacio_reserva_siempre"
+],
+[
+1987.88,
+1993.3,
+"shot",
+"v14_cta"
+],
+[
+1996.6,
+2004.6,
+"shot",
+"v15_cierre"
+]
+],
+"cam": [
+[
+18.8,
+23.22,
+"propC"
+],
+[
+37.9,
+44.08,
+"prop"
+],
+[
+52.2,
+56.58,
+"wide"
+],
+[
+94.28,
+97.3,
+"prop"
+],
+[
+103.4,
+109.58,
+"propL"
+],
+[
+109.58,
+114.0,
+"propC"
+],
+[
+119.5,
+123.42,
+"propC"
+],
+[
+123.42,
+128.74,
+"propR"
+],
+[
+128.74,
+134.1,
+"prop"
+],
+[
+171.4,
+182.18,
+"bench"
+],
+[
+182.18,
+184.2,
+"book"
+],
+[
+189.7,
+193.56,
+"propC"
+],
+[
+209.22,
+217.7,
+"propC"
+],
+[
+292.0,
+296.12,
+"propC"
+],
+[
+312.3,
+316.64,
+"propC"
+],
+[
+369.0,
+369.7,
+"propC"
+],
+[
+381.44,
+383.9,
+"propC"
+],
+[
+387.9,
+391.66,
+"propC"
+],
+[
+407.3,
+412.92,
+"propC"
+],
+[
+448.14,
+451.6,
+"propC"
+],
+[
+464.0,
+465.42,
+"propC"
+],
+[
+465.42,
+467.0,
+"propC"
+],
+[
+489.4,
+495.0,
+"propC"
+],
+[
+537.7,
+543.36,
+"propC"
+],
+[
+575.52,
+577.48,
+"propC"
+],
+[
+657.58,
+661.6,
+"propC"
+],
+[
+685.0,
+691.5,
+"propL"
+],
+[
+718.6,
+720.74,
+"propL"
+],
+[
+728.74,
+729.9,
+"propL"
+],
+[
+768.3,
+776.0,
+"propL"
+],
+[
+812.76,
+813.7,
+"propC"
+],
+[
+818.3,
+825.56,
+"propC"
+],
+[
+841.4,
+844.56,
+"propC"
+],
+[
+894.44,
+897.52,
+"propC"
+],
+[
+911.96,
+914.3,
+"propC"
+],
+[
+954.1,
+960.0,
+"propC"
+],
+[
+1028.5,
+1032.1,
+"propC"
+],
+[
+1050.1,
+1058.96,
+"propC"
+],
+[
+1078.9,
+1079.8,
+"wide"
+],
+[
+1160.82,
+1164.0,
+"prop"
+],
+[
+1175.38,
+1179.9,
+"prop"
+],
+[
+1219.9,
+1223.7,
+"propC"
+],
+[
+1241.98,
+1247.0,
+"propC"
+],
+[
+1321.32,
+1324.08,
+"propC"
+],
+[
+1339.22,
+1343.88,
+"propR"
+],
+[
+1410.9,
+1413.2,
+"propR"
+],
+[
+1472.22,
+1475.34,
+"propR"
+],
+[
+1482.3,
+1490.5,
+"prop"
+],
+[
+1498.32,
+1508.66,
+"prop"
+],
+[
+1523.26,
+1526.7,
+"prop"
+],
+[
+1531.8,
+1536.9,
+"propC"
+],
+[
+1564.5,
+1571.54,
+"propC"
+],
+[
+1584.1,
+1591.9,
+"propC"
+],
+[
+1619.5,
+1624.0,
+"propC"
+],
+[
+1633.96,
+1639.2,
+"propC"
+],
+[
+1646.72,
+1651.22,
+"propC"
+],
+[
+1713.04,
+1720.6,
+"prop"
+],
+[
+1725.8,
+1734.12,
+"prop"
+],
+[
+1758.5,
+1763.92,
+"propC"
+],
+[
+1770.3,
+1772.2,
+"propC"
+],
+[
+1785.64,
+1789.4,
+"propC"
+],
+[
+1797.34,
+1799.32,
+"propC"
+],
+[
+1856.28,
+1858.9,
+"wide"
+],
+[
+1864.2,
+1870.04,
+"propC"
+],
+[
+1880.7,
+1889.4,
+"propC"
+],
+[
+1889.4,
+1890.6,
+"propC"
+],
+[
+1899.42,
+1908.1,
+"book"
+],
+[
+1913.2,
+1917.7,
+"wide"
+],
+[
+1917.7,
+1923.9,
+"propC"
+],
+[
+1928.8,
+1931.8,
+"propC"
+],
+[
+1931.8,
+1941.8,
+"propL"
+],
+[
+1946.7,
+1951.64,
+"propC"
+],
+[
+1951.64,
+1957.7,
+"prop"
+],
+[
+1957.7,
+1960.3,
+"propC"
+],
+[
+1964.1,
+1969.06,
+"propR"
+],
+[
+1969.06,
+1976.2,
+"prop"
+],
+[
+1980.2,
+1987.88,
+"book"
+],
+[
+2004.6,
+2006.1,
+"wide"
+],
+[
+2006.1,
+2008.4,
+"wide"
+]
+],
+"ov": [
+{
+"k": "chip",
+"txt": "AL LADO DEL SURTIDOR · UN TRIANGULITO",
+"col": "amber",
+"at": 13.7,
+"out": 17.7
+},
+{
+"k": "big",
+"txt": "8",
+"sub": "COSAS QUE TU TABLERO TE DICE TODOS LOS DÍAS",
+"col": "amber",
+"at": 29.98,
+"out": 33.18
+},
+{
+"k": "stamp",
+"txt": "CADA AUTO ES UN MUNDO",
+"at": 56.58,
+"out": 59.58
+},
+{
+"k": "chip",
+"txt": "LA GRAN MAYORÍA DE LOS AUTOS DE LOS ÚLTIMOS 15 AÑOS",
+"col": "ice",
+"at": 63.44,
+"out": 67.94
+},
+{
+"k": "check",
+"title": "LAS 8 FUNCIONES",
+"rows": [
+{
+"txt": "La flechita del tanque",
+"at": 96.0
+},
+{
+"txt": "La computadora de a bordo",
+"at": 97.9
+},
+{
+"txt": "La luz del tablero",
+"at": 103.74
+},
+{
+"txt": "El testigo de los neumáticos",
+"at": 109.58
+},
+{
+"txt": "El limitador de velocidad",
+"at": 115.08
+},
+{
+"txt": "El aviso de hielo",
+"at": 120.02
+},
+{
+"txt": "El modo eco",
+"at": 123.42
+},
+{
+"txt": "El color del testigo",
+"at": 128.74
+}
+],
+"at": 94.28,
+"out": 130.74
+},
+{
+"k": "stamp",
+"txt": "A VECES ES UN MOTOR ENTERO",
+"at": 142.56,
+"out": 145.76
+},
+{
+"k": "chip",
+"txt": "30 AÑOS EN EL TALLER",
+"col": "amber",
+"at": 149.78,
+"out": 153.78
+},
+{
+"k": "chip",
+"txt": "HOY APRENDES A LEERLAS SOLO",
+"col": "green",
+"at": 168.72,
+"out": 172.72
+},
+{
+"k": "step",
+"n": 1,
+"of": 8,
+"name": "LA FLECHITA DEL TANQUE",
+"kick": "FUNCIÓN",
+"col": "amber",
+"at": 188.66,
+"out": 192.66
+},
+{
+"k": "versus",
+"title": "LA FLECHITA APUNTA",
+"L": {
+"label": "A LA IZQUIERDA",
+"val": "TAPA A LA IZQUIERDA",
+"h": 0.8,
+"col": "#f2c84a",
+"mark": "ok"
+},
+"R": {
+"label": "A LA DERECHA",
+"val": "TAPA A LA DERECHA",
+"h": 0.8,
+"col": "#f2c84a",
+"mark": "ok"
+},
+"at": 223.8,
+"out": 230.3
+},
+{
+"k": "stamp",
+"txt": "PARECE UNA PAVADA · NO LO ES",
+"at": 233.32,
+"out": 236.52
+},
+{
+"k": "big",
+"txt": "20 MIN",
+"sub": "EN LA FILA DE CAMIONES · POR NO MIRAR LA FLECHITA",
+"col": "red",
+"at": 262.36,
+"out": 265.56
+},
+{
+"k": "chip",
+"txt": "«72 AÑOS Y NUNCA NADIE ME DIJO ESTO»",
+"col": "amber",
+"at": 268.8,
+"out": 273.3
+},
+{
+"k": "stamp",
+"txt": "LA QUE MANDA ES LA FLECHITA",
+"at": 292.1,
+"out": 295.1
+},
+{
+"k": "chip",
+"txt": "SIN FLECHITA: CINTA DE PAPEL CON UNA FLECHA",
+"col": "green",
+"at": 307.34,
+"out": 311.34
+},
+{
+"k": "stamp",
+"txt": "RESERVA ≠ CERO",
+"at": 320.56,
+"out": 323.56
+},
+{
+"k": "big",
+"txt": "50-100 KM",
+"sub": "LA RESERVA · SEGÚN EL AUTO",
+"col": "amber",
+"at": 335.26,
+"out": 338.46
+},
+{
+"k": "chip",
+"txt": "TANQUE VACÍO: LA BOMBA CALIENTE Y CHUPA MUGRE",
+"col": "red",
+"at": 353.94,
+"out": 358.44
+},
+{
+"k": "step",
+"n": 2,
+"of": 8,
+"name": "LA COMPUTADORA DE A BORDO",
+"kick": "FUNCIÓN",
+"col": "amber",
+"at": 369.0,
+"out": 373.0
+},
+{
+"k": "check",
+"title": "LO QUE HAY ADENTRO",
+"rows": [
+{
+"txt": "El parcial (trip A y B)",
+"at": 416.92
+},
+{
+"txt": "El consumo promedio",
+"at": 423.48
+},
+{
+"txt": "El consumo instantáneo",
+"at": 431.68
+},
+{
+"txt": "La velocidad promedio",
+"at": 438.36
+},
+{
+"txt": "La autonomía",
+"at": 441.26
+}
+],
+"at": 412.92,
+"out": 443.26
+},
+{
+"k": "chip",
+"txt": "LO QUE CLAUDIO MÁS USA: EL PARCIAL",
+"col": "green",
+"at": 449.92,
+"out": 453.92
+},
+{
+"k": "stamp",
+"txt": "NO ES LO DEL FOLLETO",
+"at": 486.42,
+"out": 489.42
+},
+{
+"k": "chip",
+"txt": "EL CONSUMO = LA ALARMA MÁS TEMPRANA",
+"col": "amber",
+"at": 495.0,
+"out": 499.5
+},
+{
+"k": "big",
+"txt": "+15 %",
+"sub": "3 TANQUES SEGUIDOS · SIN CAMBIAR NADA",
+"col": "red",
+"at": 515.38,
+"out": 518.58
+},
+{
+"k": "stamp",
+"txt": "UNA IDEA · NO UNA PROMESA",
+"at": 559.64,
+"out": 562.84
+},
+{
+"k": "chip",
+"txt": "AUTONOMÍA 50 KM = CARGAR YA",
+"col": "red",
+"at": 568.42,
+"out": 572.42
+},
+{
+"k": "chip",
+"txt": "LA LLAVECITA RECIÉN CAMBIADO: NADIE LA RESETEÓ",
+"col": "ice",
+"at": 609.42,
+"out": 613.92
+},
+{
+"k": "stamp",
+"txt": "EL PAPELITO NO SE RESETEA",
+"at": 643.08,
+"out": 646.08
+},
+{
+"k": "chip",
+"txt": "LA AGUJA SUBE LENTO A PROPÓSITO",
+"col": "green",
+"at": 672.22,
+"out": 676.22
+},
+{
+"k": "step",
+"n": 3,
+"of": 8,
+"name": "LA LUZ DEL TABLERO",
+"kick": "FUNCIÓN",
+"col": "amber",
+"at": 683.86,
+"out": 687.86
+},
+{
+"k": "stamp",
+"txt": "NO SE QUEMÓ NADA",
+"at": 699.62,
+"out": 702.62
+},
+{
+"k": "chip",
+"txt": "LA TOCAS CON LA RODILLA AL SUBIR",
+"col": "amber",
+"at": 760.76,
+"out": 764.76
+},
+{
+"k": "versus",
+"title": "DE NOCHE, ¿TENGO LAS LUCES?",
+"L": {
+"label": "EL TABLERO ILUMINADO",
+"val": "NO TE DICE NADA",
+"h": 0.85,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"R": {
+"label": "EL TESTIGO VERDE",
+"val": "ESE SÍ",
+"h": 0.85,
+"col": "#7dd87d",
+"mark": "ok"
+},
+"at": 791.24,
+"out": 797.74
+},
+{
+"k": "chip",
+"txt": "LA «A» EN LA PERILLA · PRENDE SOLA",
+"col": "green",
+"at": 806.96,
+"out": 810.96
+},
+{
+"k": "step",
+"n": 4,
+"of": 8,
+"name": "EL TESTIGO DE LOS NEUMÁTICOS",
+"kick": "FUNCIÓN",
+"col": "amber",
+"at": 812.76,
+"out": 816.76
+},
+{
+"k": "stamp",
+"txt": "«ESTÁ TODO BIEN» · Y SE VUELVE A PRENDER",
+"at": 851.52,
+"out": 854.92
+},
+{
+"k": "chip",
+"txt": "RESETEAR O CALIBRAR EL SISTEMA",
+"col": "ice",
+"at": 910.96,
+"out": 914.96
+},
+{
+"k": "stamp",
+"txt": "EL PEOR ERROR: RESETEAR CON UNA BAJA",
+"at": 971.5,
+"out": 974.9
+},
+{
+"k": "chip",
+"txt": "SE MIDE EN FRÍO · NO DESPUÉS DE MANEJAR",
+"col": "ice",
+"at": 1006.8,
+"out": 1010.8
+},
+{
+"k": "stamp",
+"txt": "ESTABA AVISANDO BIEN",
+"at": 1050.18,
+"out": 1053.18
+},
+{
+"k": "check",
+"title": "UNA VEZ POR MES, EN FRÍO",
+"rows": [
+{
+"txt": "Un calibrador en la guantera",
+"at": 1058.96
+},
+{
+"txt": "Las 4 ruedas",
+"at": 1068.9
+},
+{
+"txt": "Y la de auxilio",
+"at": 1070.2
+},
+{
+"txt": "5 minutos",
+"at": 1077.0
+}
+],
+"at": 1058.96,
+"out": 1079.0
+},
+{
+"k": "step",
+"n": 5,
+"of": 8,
+"name": "EL LIMITADOR DE VELOCIDAD",
+"kick": "FUNCIÓN",
+"col": "amber",
+"at": 1078.9,
+"out": 1082.9
+},
+{
+"k": "chip",
+"txt": "ESCUELAS · RADARES · LÍMITES BAJOS",
+"col": "green",
+"at": 1121.22,
+"out": 1125.22
+},
+{
+"k": "chip",
+"txt": "A FONDO, PASANDO EL ESCALONCITO, SE DESCONECTA",
+"col": "ice",
+"at": 1144.06,
+"out": 1148.56
+},
+{
+"k": "chip",
+"txt": "EL DIBUJITO: VELOCÍMETRO CON FLECHA O «LIM»",
+"col": "amber",
+"at": 1169.14,
+"out": 1173.64
+},
+{
+"k": "chip",
+"txt": "Y MANEJABA MÁS TRANQUILO",
+"col": "green",
+"at": 1215.52,
+"out": 1219.32
+},
+{
+"k": "step",
+"n": 6,
+"of": 8,
+"name": "EL AVISO DE HIELO",
+"kick": "FUNCIÓN",
+"col": "ice",
+"at": 1219.92,
+"out": 1223.92
+},
+{
+"k": "stamp",
+"txt": "PUEDE HABER HIELO",
+"at": 1247.28,
+"out": 1250.28
+},
+{
+"k": "big",
+"txt": "HIELO NEGRO",
+"sub": "TRANSPARENTE · NO SE VE",
+"col": "ice",
+"at": 1276.16,
+"out": 1279.36
+},
+{
+"k": "chip",
+"txt": "EL DOBLE O EL TRIPLE DE DISTANCIA",
+"col": "ice",
+"at": 1286.14,
+"out": 1290.14
+},
+{
+"k": "stamp",
+"txt": "SE IBA A LA CUNETA",
+"at": 1314.62,
+"out": 1317.62
+},
+{
+"k": "chip",
+"txt": "AUTO AL SOL: NO LE CREAS EL PRIMER NÚMERO",
+"col": "amber",
+"at": 1337.16,
+"out": 1341.66
+},
+{
+"k": "step",
+"n": 7,
+"of": 8,
+"name": "EL MODO ECO",
+"kick": "FUNCIÓN",
+"col": "green",
+"at": 1339.22,
+"out": 1343.22
+},
+{
+"k": "stamp",
+"txt": "NO HACE MILAGROS",
+"at": 1388.66,
+"out": 1391.66
+},
+{
+"k": "check",
+"title": "LO QUE AHORRA DE VERDAD",
+"rows": [
+{
+"txt": "La presión bien puesta",
+"at": 1398.14
+},
+{
+"txt": "El filtro de aire limpio",
+"at": 1400.74
+},
+{
+"txt": "Nada pesado de más",
+"at": 1402.36
+},
+{
+"txt": "Acelerar y frenar suave",
+"at": 1405.7
+}
+],
+"at": 1398.14,
+"out": 1407.7
+},
+{
+"k": "chip",
+"txt": "ENTRAR A LA RUTA · PASAR · CUESTA: SACARLO",
+"col": "amber",
+"at": 1412.2,
+"out": 1416.7
+},
+{
+"k": "chip",
+"txt": "ARRANQUE Y PARADA: BOTÓN «A» CON FLECHA EN CÍRCULO",
+"col": "ice",
+"at": 1438.8,
+"out": 1443.3
+},
+{
+"k": "step",
+"n": 8,
+"of": 8,
+"name": "EL COLOR DEL TESTIGO",
+"kick": "FUNCIÓN",
+"col": "red",
+"at": 1481.0,
+"out": 1485.0
+},
+{
+"k": "stamp",
+"txt": "EL COLOR ES UN IDIOMA",
+"at": 1492.08,
+"out": 1495.08
+},
+{
+"k": "big",
+"txt": "3 + 1",
+"sub": "COLORES · CASI IGUAL EN TODOS LOS AUTOS",
+"col": "amber",
+"at": 1498.32,
+"out": 1501.52
+},
+{
+"k": "chip",
+"txt": "VERDE / AZUL: LO QUE PEDISTE ESTÁ PRENDIDO",
+"col": "green",
+"at": 1524.9,
+"out": 1529.4
+},
+{
+"k": "chip",
+"txt": "AMARILLO: NO ES URGENTE · NO LO DEJES UN MES",
+"col": "amber",
+"at": 1554.74,
+"out": 1559.24
+},
+{
+"k": "stamp",
+"txt": "NO SIGUES HASTA TU CASA",
+"at": 1598.22,
+"out": 1601.42
+},
+{
+"k": "stamp",
+"txt": "NUNCA LA TAPA DEL RADIADOR EN CALIENTE",
+"at": 1630.96,
+"out": 1634.56
+},
+{
+"k": "big",
+"txt": "40 KM",
+"sub": "CON LA LUZ ROJA DEL ACEITE PRENDIDA",
+"col": "red",
+"at": 1676.66,
+"out": 1679.86
+},
+{
+"k": "stamp",
+"txt": "ROJO = PARAS · SIEMPRE",
+"at": 1697.04,
+"out": 1700.24
+},
+{
+"k": "chip",
+"txt": "EL AUTO PROBANDO LAS LAMPARITAS",
+"col": "ice",
+"at": 1718.34,
+"out": 1722.34
+},
+{
+"k": "check",
+"title": "LOS 10 TESTIGOS · 1 A 5",
+"rows": [
+{
+"txt": "Motor amarillo: taller pronto",
+"at": 1759.16
+},
+{
+"txt": "Aceite rojo: paras y apagas",
+"at": 1770.9
+},
+{
+"txt": "Temperatura: paras, esperas",
+"at": 1776.3
+},
+{
+"txt": "Batería: directo al taller",
+"at": 1786.3
+},
+{
+"txt": "Freno: mira el freno de mano",
+"at": 1797.84
+}
+],
+"at": 1752.78,
+"out": 1798.84
+},
+{
+"k": "check",
+"title": "LOS 10 TESTIGOS · 6 A 10",
+"rows": [
+{
+"txt": "Neumáticos: medir las 4",
+"at": 1810.58
+},
+{
+"txt": "ABS: más distancia",
+"at": 1816.78
+},
+{
+"txt": "Bolsa de aire: al taller",
+"at": 1825.04
+},
+{
+"txt": "Cinturón: alguien sin ponérselo",
+"at": 1835.64
+},
+{
+"txt": "Diésel: esperar el resorte",
+"at": 1843.12
+}
+],
+"at": 1810.58,
+"out": 1845.12
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "SEGUIR CON UNA LUZ ROJA",
+"at": 1859.34,
+"out": 1867.34
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "TAPARLO CON CINTA O BORRARLO",
+"at": 1869.06,
+"out": 1877.06
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "RESETEAR CON UNA RUEDA BAJA",
+"at": 1880.9,
+"out": 1888.9
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "LA AUTONOMÍA HASTA EL FINAL",
+"at": 1889.4,
+"out": 1897.4
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "NO LEER NUNCA EL MANUAL",
+"at": 1899.42,
+"out": 1907.42
+}
+],
+"cta1": {
+"guide": 179.88,
+"book": 182.1,
+"page": 183.9,
+"desc": 184.94,
+"manual": "EL MANUAL DEL MECÁNICO",
+"img": "m1_p035",
+"pageTxt": "EL TABLERO · LOS TESTIGOS",
+"end": 190.94
+},
+"cta2": {
+"guide": 1978.86,
+"book": 1982.58,
+"page": 1986.22,
+"desc": 1987.88,
+"manual": "EL MANUAL DEL MECÁNICO",
+"img": "m1_p035",
+"pageTxt": "EL TABLERO · LOS TESTIGOS",
+"end": 1993.88
+},
+"cta3": {
+"desc": 2013.32,
+"end": 2018.32
+},
+"end": 2016.4,
+"st": {
+"ign": [
+[
+18.8,
+23.22
+],
+[
+37.9,
+44.08
+],
+[
+94.28,
+97.3
+],
+[
+103.4,
+109.58
+],
+[
+109.58,
+114.0
+],
+[
+119.5,
+123.42
+],
+[
+123.42,
+128.74
+],
+[
+128.74,
+134.1
+],
+[
+171.4,
+182.18
+],
+[
+189.7,
+193.56
+],
+[
+209.22,
+217.7
+],
+[
+292.0,
+296.12
+],
+[
+312.3,
+316.64
+],
+[
+369.0,
+369.7
+],
+[
+381.44,
+383.9
+],
+[
+387.9,
+391.66
+],
+[
+407.3,
+412.92
+],
+[
+448.14,
+451.6
+],
+[
+465.42,
+467.0
+],
+[
+489.4,
+495.0
+],
+[
+537.7,
+543.36
+],
+[
+575.52,
+577.48
+],
+[
+657.58,
+661.6
+],
+[
+685.0,
+691.5
+],
+[
+718.6,
+720.74
+],
+[
+768.3,
+776.0
+],
+[
+812.76,
+813.7
+],
+[
+818.3,
+825.56
+],
+[
+894.44,
+897.52
+],
+[
+911.96,
+914.3
+],
+[
+954.1,
+960.0
+],
+[
+1028.5,
+1032.1
+],
+[
+1050.1,
+1058.96
+],
+[
+1160.82,
+1164.0
+],
+[
+1175.38,
+1179.9
+],
+[
+1219.9,
+1223.7
+],
+[
+1241.98,
+1247.0
+],
+[
+1321.32,
+1324.08
+],
+[
+1339.22,
+1343.88
+],
+[
+1410.9,
+1413.2
+],
+[
+1472.22,
+1475.34
+],
+[
+1482.3,
+1490.5
+],
+[
+1498.32,
+1508.66
+],
+[
+1523.26,
+1526.7
+],
+[
+1531.8,
+1536.9
+],
+[
+1564.5,
+1571.54
+],
+[
+1584.1,
+1591.9
+],
+[
+1619.5,
+1624.0
+],
+[
+1633.96,
+1639.2
+],
+[
+1646.72,
+1651.22
+],
+[
+1713.04,
+1720.6
+],
+[
+1725.8,
+1734.12
+],
+[
+1758.5,
+1763.92
+],
+[
+1770.3,
+1772.2
+],
+[
+1785.64,
+1789.4
+],
+[
+1797.34,
+1799.32
+],
+[
+1864.2,
+1870.04
+],
+[
+1880.7,
+1889.4
+],
+[
+1889.4,
+1890.6
+],
+[
+1917.7,
+1923.9
+],
+[
+1928.8,
+1931.8
+],
+[
+1931.8,
+1941.8
+],
+[
+1946.7,
+1951.64
+],
+[
+1951.64,
+1957.7
+],
+[
+1957.7,
+1960.3
+],
+[
+1964.1,
+1969.06
+],
+[
+1969.06,
+1976.2
+]
+],
+"arrow": [
+[
+18.8,
+23.22
+],
+[
+189.7,
+193.56
+],
+[
+209.22,
+217.7
+],
+[
+292.0,
+296.12
+],
+[
+657.58,
+661.6
+],
+[
+1889.4,
+1890.6
+],
+[
+1917.7,
+1923.9
+]
+],
+"sweep": [
+[
+37.9,
+44.08
+]
+],
+"allOn": [
+[
+94.28,
+97.3
+],
+[
+128.74,
+134.1
+],
+[
+1482.3,
+1490.5
+],
+[
+1498.32,
+1508.66
+],
+[
+1523.26,
+1526.7
+],
+[
+1713.04,
+1720.6
+],
+[
+1725.8,
+1734.12
+],
+[
+1969.06,
+1976.2
+]
+],
+"dim": [
+[
+103.4,
+109.58
+],
+[
+685.0,
+691.5
+],
+[
+718.6,
+720.74
+],
+[
+768.3,
+776.0
+],
+[
+1931.8,
+1941.8
+]
+],
+"tpms": [
+[
+109.58,
+114.0
+],
+[
+812.76,
+813.7
+],
+[
+818.3,
+825.56
+],
+[
+894.44,
+897.52
+],
+[
+911.96,
+914.3
+],
+[
+954.1,
+960.0
+],
+[
+1028.5,
+1032.1
+],
+[
+1050.1,
+1058.96
+],
+[
+1880.7,
+1889.4
+],
+[
+1946.7,
+1951.64
+]
+],
+"gauge": [
+[
+109.58,
+114.0
+],
+[
+812.76,
+813.7
+],
+[
+818.3,
+825.56
+],
+[
+894.44,
+897.52
+],
+[
+911.96,
+914.3
+],
+[
+954.1,
+960.0
+],
+[
+1028.5,
+1032.1
+],
+[
+1050.1,
+1058.96
+],
+[
+1880.7,
+1889.4
+],
+[
+1946.7,
+1951.64
+]
+],
+"cold": [
+[
+119.5,
+123.42
+],
+[
+1219.9,
+1223.7
+],
+[
+1241.98,
+1247.0
+],
+[
+1321.32,
+1324.08
+],
+[
+1957.7,
+1960.3
+]
+],
+"ice": [
+[
+119.5,
+123.42
+],
+[
+1219.9,
+1223.7
+],
+[
+1241.98,
+1247.0
+],
+[
+1321.32,
+1324.08
+],
+[
+1957.7,
+1960.3
+]
+],
+"eco": [
+[
+123.42,
+128.74
+],
+[
+1339.22,
+1343.88
+],
+[
+1410.9,
+1413.2
+],
+[
+1472.22,
+1475.34
+],
+[
+1964.1,
+1969.06
+]
+],
+"book": [
+[
+182.18,
+184.2
+],
+[
+1899.42,
+1908.1
+],
+[
+1980.2,
+1987.88
+],
+[
+179.38,
+190.94
+],
+[
+1978.36,
+1993.88
+]
+],
+"comp": [
+[
+312.3,
+316.64
+],
+[
+369.0,
+369.7
+],
+[
+381.44,
+383.9
+],
+[
+489.4,
+495.0
+],
+[
+537.7,
+543.36
+],
+[
+575.52,
+577.48
+],
+[
+1928.8,
+1931.8
+]
+],
+"trip": [
+[
+387.9,
+391.66
+],
+[
+407.3,
+412.92
+],
+[
+448.14,
+451.6
+],
+[
+465.42,
+467.0
+]
+],
+"tripPush": [
+[
+387.9,
+391.66
+],
+[
+407.3,
+412.92
+],
+[
+448.14,
+451.6
+],
+[
+465.42,
+467.0
+]
+],
+"cruise": [
+[
+1160.82,
+1164.0
+],
+[
+1175.38,
+1179.9
+],
+[
+1951.64,
+1957.7
+]
+],
+"check": [
+[
+1531.8,
+1536.9
+],
+[
+1564.5,
+1571.54
+],
+[
+1758.5,
+1763.92
+]
+],
+"oil": [
+[
+1584.1,
+1591.9
+],
+[
+1770.3,
+1772.2
+],
+[
+1864.2,
+1870.04
+]
+],
+"tempL": [
+[
+1619.5,
+1624.0
+]
+],
+"brakeL": [
+[
+1633.96,
+1639.2
+],
+[
+1797.34,
+1799.32
+]
+],
+"batt": [
+[
+1646.72,
+1651.22
+],
+[
+1785.64,
+1789.4
+]
+],
+"open": [
+[
+182.1,
+190.94
+],
+[
+1982.58,
+1993.88
+]
+],
+"hi0": [
+[
+183.9,
+188.4
+]
+],
+"hi1": [
+[
+1986.22,
+1990.72
+]
+]
+},
+"hb": [
+[
+0,
+2
+]
+],
+"txt": {
+"recapTitle": "LO QUE TU TABLERO TE DICE",
+"recap": [
+"La flechita: de qué lado está la tapa",
+"El parcial en cero en cada tanque lleno",
+"Tablero oscuro: la ruedita del sol",
+"Neumáticos: la calcomanía, en frío, y reset después",
+"Limitador: aceleras y no pasa",
+"El copito a 3 °C: cuidado en los puentes",
+"Eco suaviza: el ahorro está en tu pie",
+"Verde/azul informa · amarillo pronto · rojo paras"
+],
+"ask": [
+"CUÉNTAME EN LOS COMENTARIOS",
+"¿Cuál de las 8 no conocías?",
+"…¿la flechita?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+44.08,
+52.08
+]
+}
+}
