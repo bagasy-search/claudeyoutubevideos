@@ -1,6 +1,6 @@
 // EscenaB: la Escena de anikit + una capa 3D (personajes Blanquito) entre el medio y el frente, y una capa `sobre`
 // (SVG en coordenadas del mundo, por ENCIMA de los personajes: símbolos, objetos en mano, carro que los tapa).
-//   lejos (z .25) → medio (set + detras) → 3D (personajes) → sobre (z 1) → frente (z 1.4) → hud (pantalla)
+//   lejos (z .25) → [tras (zTras), sólo sets pintados] → medio (set + detras) → 3D (personajes) → sobre (z 1) → frente (z 1.4) → hud (pantalla)
 // + HUD de supervivencia bilingüe del canal: día y hora que ruedan, y la barra «probabilidad de sobrevivir».
 import React from "react";
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
@@ -16,8 +16,8 @@ export type Idioma = "es" | "en";
 export const EscenaB: React.FC<{
   Set: React.FC<any>; pal: Paleta; claves: Clave[]; setProps?: Record<string, unknown>; momento?: Momento;
   personajes?: Personaje[]; luz?: LuzEscena; detras?: React.ReactNode; sobre?: React.ReactNode; frente?: React.ReactNode; hud?: React.ReactNode;
-  mano?: number; seed?: number; zLejos?: number; interior?: boolean;
-}> = ({ Set, pal, claves, setProps = {}, momento, personajes = [], luz, detras, sobre, frente, hud, mano = 3, seed = 0, zLejos = 0.25, interior }) => {
+  mano?: number; seed?: number; zLejos?: number; interior?: boolean; zTras?: number;
+}> = ({ Set, pal, claves, setProps = {}, momento, personajes = [], luz, detras, sobre, frente, hud, mano = 3, seed = 0, zLejos = 0.25, interior, zTras }) => {
   const f = useF();
   const S = momento ? conMomento(Set, momento, { interior }) : Set;
   const P = momento ? palMomento(pal, momento) : pal;
@@ -27,6 +27,7 @@ export const EscenaB: React.FC<{
     <AbsoluteFill>
       <Plano claves={claves} mano={mano} seed={seed} fondo={P.cielo[0]} mbMax={2.5}>
         <CapaSVG z={zLejos} desenfoqueMax={3}><S capa="lejos" {...sp} /></CapaSVG>
+        {zTras !== undefined && <CapaSVG z={zTras} desenfoqueMax={2}><S capa="tras" {...sp} /></CapaSVG>}
         <CapaSVG z={1}><S capa="medio" {...sp} />{detras}</CapaSVG>
         <Capa3D personajes={personajes} luz={{ ...(noche ? { intensidad: 1.5, color: "#ffd9a8", relleno: 0.55, tinte: "#8a90b8", entorno: 0.55 } : {}), ...luz }} />
         <CapaSVG z={1}>{sobre}</CapaSVG>

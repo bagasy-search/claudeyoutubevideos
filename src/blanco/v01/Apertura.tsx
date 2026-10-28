@@ -10,7 +10,8 @@ import { Personaje } from "../capa3d";
 import { ROPA } from "../elenco";
 import { Dato, EscenaB, Idioma } from "../escena";
 import { Simbolo } from "../simbolos";
-import { CalleMedieval, Gallina, Gato, PAL_LONDRES as PAL, PISO, Rata } from "../sets/londres";
+import { CallePintada } from "../sets/pintado";
+import { Gallina, Gato, PAL_LONDRES as PAL, PISO, Rata } from "../sets/londres";
 import { Despertar, Haz, Humo, Moscas, Niebla, Pajaros, PasaFrente, Polvo, Salpicon, transeuntes } from "../vida";
 
 const cl = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -114,7 +115,7 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
     { x: X + 520, ropa: ROPA.granjero, semilla: 3, prof: -0.6, guion: [{ t: 0, accion: "caminar", rotY: -90 }, { t: t.gente + 0.2, accion: "cruzarse_de_brazos", rotY: -50, expr: "confundido" }, { t: t.raro, accion: "senalar", rotY: -50, expr: "asqueado", objetivo: [-1, -0.3] }, { t: t.zapas, accion: "senalar", rotY: -50, expr: "sorprendido", objetivo: [-1, -1] }, { t: t.peste - 0.2, accion: "correr", rotY: -90, expr: "espantado" }],
       mov: (s) => ({ dx: s < t.gente + 0.2 ? -(t.gente + 0.2 - s) * 120 : s > t.peste - 0.2 ? -(s - t.peste + 0.2) * 520 : 0 }) },
     // la señora del moño: se ríe de él
-    { x: X - 430, ropa: ROPA.tabernera, semilla: 41, prof: -0.9, guion: [{ t: 0, accion: "idle", rotY: 40, expr: "neutral" }, { t: t.raro - 0.1, accion: "reir", rotY: 45, expr: "carcajada" }, { t: t.porque + 0.5, accion: "cruzarse_de_brazos", rotY: 40, expr: "sonrisa_picara" }, { t: t.peste - 0.1, accion: "correr", rotY: -90, expr: "espantado" }],
+    { x: X - 800, ropa: ROPA.tabernera, semilla: 41, prof: -0.9, guion: [{ t: 0, accion: "idle", rotY: 40, expr: "neutral" }, { t: t.raro - 0.1, accion: "reir", rotY: 45, expr: "carcajada" }, { t: t.porque + 0.5, accion: "cruzarse_de_brazos", rotY: 40, expr: "sonrisa_picara" }, { t: t.peste - 0.1, accion: "correr", rotY: -90, expr: "espantado" }],
       mov: (s) => ({ dx: s > t.peste - 0.1 ? -(s - t.peste + 0.1) * 480 : 0 }) },
     // el trapero de anteojos, atrás, se da vuelta en «muy raro»
     { x: X + 260, ropa: ROPA.panadero, semilla: 13, prof: -2.4, escala: 0.9, guion: [{ t: 0, accion: "tipear", rotY: 180, expr: "aburrido" }, { t: t.muy, accion: "asustarse", rotY: -20, expr: "sorprendido" }, { t: t.muy + 1, accion: "idle", rotY: -20, expr: "asqueado" }, { t: t.peste, accion: "correr", rotY: -90, expr: "espantado" }],
@@ -123,11 +124,11 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
   const gente = transeuntes({ x0: X - 1700, x1: X + 2600, n: 14, seed: "b01", dur: 33 });
   return (
     <>
-      <EscenaB Set={CalleMedieval} pal={PAL} momento="amanecer" mano={2.5} seed={11}
+      <EscenaB Set={CallePintada} pal={PAL} zTras={0.6} mano={2.5} seed={11}
         claves={[
-          mira(0, CARA[0] + 10, CARA[1] - 8, 5.6),
-          mira(F(t.olor), CARA[0] - 6, CARA[1] - 14, 5.0, { curva: "inout" }),
-          mira(F(t.peor + 0.1), CARA[0] + 24, CARA[1] - 4, 5.3, { curva: "inout", rot: 1.5 }),
+          mira(0, CARA[0] + 10, CARA[1] - 14, 4.4),
+          mira(F(t.olor), CARA[0] - 6, CARA[1] - 20, 3.9, { curva: "inout" }),
+          mira(F(t.peor + 0.1), CARA[0] + 24, CARA[1] - 10, 4.2, { curva: "inout", rot: 1.5 }),
           mira(F(sube + 0.35), X - 150, PISO - 170, 3.1, { curva: "fluida", rot: 0.5 }),
           mira(F(t.gente + 1.1), X + 40, PISO - 260, 1.45, { curva: "fluida" }),
           mira(F(t.porque - 0.2), X + 120, PISO - 320, 0.95, { curva: "fluida", rot: -0.6 }),
@@ -162,7 +163,7 @@ export const Apertura: React.FC<{ D: number; L: Idioma }> = ({ L }) => {
           <Simbolo tipo="!" x={CARA[0] + 10} y={CARA[1] - 64} desde={F(t.peor + 0.1)} hasta={F(sube)} s={0.5} />
           {/* las miradas: un «?» por vecino, uno detrás de otro */}
           <Simbolo tipo="?" x={X + 520} y={PISO - 420} desde={F(t.raro - 0.2)} hasta={F(t.porque + 0.4)} s={0.9} />
-          <Simbolo tipo="?" x={X - 430} y={PISO - 420} desde={F(t.raro + 0.2)} hasta={F(t.porque + 0.4)} s={0.75} />
+          <Simbolo tipo="?" x={X - 800} y={PISO - 420} desde={F(t.raro + 0.2)} hasta={F(t.porque + 0.4)} s={0.75} />
           <Simbolo tipo="!?" x={X + 260} y={PISO - 400} desde={F(t.muy)} hasta={F(t.porque + 0.6)} s={0.7} />
           <Pajaros x0={X - 1400} x1={X + 2600} y={PISO - 1050} desde={F(t.anio - 0.8)} dur={150} n={7} s={1.3} />
           <Pajaros x0={X + 2900} x1={X - 600} y={PISO - 1250} desde={F(t.dias)} dur={130} n={5} s={1} />
