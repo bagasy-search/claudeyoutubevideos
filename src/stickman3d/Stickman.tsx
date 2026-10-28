@@ -60,7 +60,7 @@ export const StickmanCuerpo: React.FC<{
   const mats = useMemo<MatsCara>(() => ({
     pintura: crearPintura(u),
     bocaInt: crearRellenoMat(u, "#2e2a2b", { rugosidad: 0.6 }),
-    lengua: crearRellenoMat(u, "#d77a83", { rugosidad: 0.55, capa: 1 }),
+    lengua: crearRellenoMat(u, "#8f5a5e", { rugosidad: 0.55, capa: 1 }),
     dientes: crearRellenoMat(u, "#f2f2ef", { rugosidad: 0.4, capa: 1 }),
     corazon: crearRellenoMat(u, "#e2475c", { rugosidad: 0.35, capa: 1 }),
     rubor: crearRellenoMat(u, "#ff8f9e", { transparente: true, opacidad: 0.55, rugosidad: 0.7, capa: 1 }),

@@ -56,8 +56,8 @@ export const StickmanCaras: React.FC = () => {
 // Fase C bis: la hoja de la referencia (4×3) con las mismas poses y caras (cuadro i = celda i)
 export const HOJA_REF: { pose: NombrePose; expr: NombreExpresion; cam?: number }[] = [
   { pose: "saludo_carcajada", expr: "carcajada" }, { pose: "cabizbajo", expr: "triste" }, { pose: "brazos_cruzados", expr: "enojado" }, { pose: "temblando", expr: "asustado" },
-  { pose: "manos_cabeza", expr: "sorprendido" }, { pose: "rascarse", expr: "confundido" }, { pose: "pensar", expr: "pensativo" }, { pose: "bostezar", expr: "bostezo" },
-  { pose: "pulgar_arriba", expr: "guino" }, { pose: "manos_cadera", expr: "sonrisa_picara" }, { pose: "salto_alegria", expr: "carcajada", cam: 1 }, { pose: "panza_risa", expr: "carcajada" },
+  { pose: "manos_cabeza", expr: "espantado" }, { pose: "rascarse", expr: "confundido" }, { pose: "pensar", expr: "pensativo" }, { pose: "bostezar", expr: "bostezo" },
+  { pose: "pulgar_arriba", expr: "guino" }, { pose: "manos_cadera", expr: "sonrisa_picara" }, { pose: "salto_alegria", expr: "carcajada", cam: 1 }, { pose: "panza_risa", expr: "risa_apretada" },
 ];
 export const StickmanHoja: React.FC = () => {
   const { width, height } = useVideoConfig();
@@ -106,7 +106,7 @@ export const StickmanPoses: React.FC = () => {
   const a = ACCIONES_QA[Math.min(f, ACCIONES_QA.length - 1)];
   return (
     <AbsoluteFill>
-      <Estudio w={width} h={height} camara={{ pos: [0, 1.85, 10.5], mira: [0, 1.7, 0], fov: 25 }}>
+      <Estudio w={width} h={height} camara={{ pos: [0, 2.2, 11.5], mira: [0, 2.1, 0], fov: 27 }}>
         <Stickman guion={[{ t: 0, accion: a.accion, expr: a.expr, objetivo: a.objetivo, rotY: a.rotY }]} cuadro={Math.round(a.t * fps)} semilla={f + 2} />
       </Estudio>
     </AbsoluteFill>
@@ -130,11 +130,11 @@ export const _usar = { EXPRESIONES };
 // Fase F: Blanquito sobre 3 fotos reales (un cuadro por foto). Las fotos van en public/ del bundle de stills, nunca al repo.
 export const FONDOS_QA: (StickmanEnFondoProps & { t: number })[] = [
   { fondo: "fondos/interior.jpg", horizonte: 0.4, fov: 50, dirLuz: "izq", t: 40,
-    personajes: [{ piso: [0.8, 0.9], alto: 0.42, rotY: -20, guion: [{ t: 0, accion: "saludar", expr: "feliz" }] }] },
+    personajes: [{ piso: [0.74, 0.9], alto: 0.42, rotY: -20, guion: [{ t: 0, accion: "saludar", expr: "feliz" }] }] },
   { fondo: "fondos/exterior.jpg", horizonte: 0.52, fov: 50, dirLuz: "izq", t: 50,
     personajes: [{ piso: [0.28, 0.9], alto: 0.39, rotY: 15, guion: [{ t: 0, accion: "senalar", expr: "sorprendido", objetivo: [1, 0.3] }] }] },
   { fondo: "fondos/oficina.jpg", horizonte: 0.45, fov: 55, dirLuz: "izq", t: 40,
-    personajes: [{ piso: [0.62, 0.8], alto: 0.43, rotY: -10, guion: [{ t: 0, accion: "cruzarse_de_brazos", expr: "enojado" }] }] },
+    personajes: [{ piso: [0.855, 0.975], alto: 0.5, rotY: -35, guion: [{ t: 0, accion: "cruzarse_de_brazos", expr: "enojado" }] }] },
 ];
 export const StickmanEnFondoQA: React.FC = () => {
   const f = useCurrentFrame();
@@ -149,7 +149,7 @@ export const GUION_DEMO: PasoGuion[] = [
   { t: 5.1, accion: "saludar", expr: "feliz" },
   { t: 8.4, accion: "asustarse", expr: "sorprendido", mezcla: 4 },
   { t: 10.8, accion: "enojado_pisoton", expr: "enojado", mezcla: 8 },
-  { t: 13.6, accion: "reir", expr: "carcajada", mezcla: 10 },
+  { t: 13.6, accion: "reir", expr: "risa_apretada", mezcla: 10 },
   { t: 16.6, accion: "caminar", expr: "feliz", rotY: 90, mezcla: 12 },
   { t: 17.3, accion: "correr", expr: "feliz", rotY: 90, mezcla: 8 },
 ];

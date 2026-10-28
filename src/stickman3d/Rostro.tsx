@@ -36,8 +36,15 @@ const geomOjo = (lado: number, o: ParamOjo, mx: number, my: number) => {
     arriba.push([x, o.parpado > 0 ? Math.min(top, Math.max(yLid(x), bot)) : top]);
     abajo.push([x, bot]);
   }
-  const cerrado = ab < 0.035;
-  const lazo: Pt[] = cerrado ? arriba : [...arriba, ...abajo.slice(0, -1).reverse()];
+  // ojo apretado «> <»: chevrón con la punta hacia la nariz y la esquina redondeada
+  const chevron: Pt[] = [];
+  if (o.apretado > 0.5) for (let k = 0; k <= M; k++) {
+    const q = (k / M) * 2 - 1, aq = Math.abs(q), r = 0.18;
+    const u = aq < r ? r / 2 + (aq * aq) / (2 * r) : aq; // |q| suavizado en la punta
+    chevron.push([cx - lado * hw * 0.85 + lado * u * hw * 1.7, cy + 0.01 + q * 0.062]);
+  }
+  const cerrado = ab < 0.035 || chevron.length > 0;
+  const lazo: Pt[] = chevron.length ? chevron : cerrado ? arriba : [...arriba, ...abajo.slice(0, -1).reverse()];
   // pupila: círculo recortado por el párpado
   const pr = 0.036 * o.pupila * o.tam * cl01(ab * 2.2);
   let px = cx + mx * 0.032 * o.tam, py = cy + my * 0.03 * o.tam - 0.004;
@@ -53,7 +60,7 @@ const geomOjo = (lado: number, o: ParamOjo, mx: number, my: number) => {
   }
   // anillo interior (ojos de círculos)
   const anillo: Pt[] = [];
-  for (let k = 0; k <= 64; k++) { const a = (k / 64) * Math.PI * 2; anillo.push([cx + Math.cos(a) * hw * 0.58, cy + Math.sin(a) * ry * 0.58]); }
+  for (let k = 0; k <= 64; k++) { const a = (k / 64) * Math.PI * 2; anillo.push([cx + Math.cos(a) * hw * 0.4, cy + Math.sin(a) * ry * 0.4]); }
   // corazón
   const cor: Pt[] = [];
   const hs = 0.0068 * o.corazon * o.tam;
@@ -70,7 +77,7 @@ const geomOjo = (lado: number, o: ParamOjo, mx: number, my: number) => {
     const q = k / 16 * 2 - 1, x = cx + lado * 0.004 + q * 0.062;
     ceja.push([x, by - ta * ((cx - x) * lado) + o.cejaCurva * 0.018 * (1 - q * q)]);
   }
-  return { lazo, cerrado, pupila, pc: [px, py] as Pt, verPupila: pr > 0.004 && o.corazon < 0.5, anillo, cor, ceja, cx, cy, ry };
+  return { lazo, cerrado, pupila, pc: [px, py] as Pt, verPupila: pr > 0.004 && o.corazon < 0.5 && o.anillos < 0.5, anillo, cor, ceja, cx, cy, ry };
 };
 
 const geomBoca = (e: Expresion) => {
@@ -145,11 +152,11 @@ export const Rostro: React.FC<{ e: Expresion; t: number; mats: MatsCara; sombras
     vis[`pup${i}`] = g.verPupila && !g.cerrado;
     if (vis[`pup${i}`]) actualizarRelleno(pz.pupila[i], g.pupila, g.pc, R, 0.004);
     vis[`ani${i}`] = o.anillos > 0.5 && !g.cerrado;
-    if (vis[`ani${i}`]) actualizarTubo(pz.anillo[i], trazoEnEsfera(g.anillo, NT, R, hundido - R), rTrazo * 0.85);
+    if (vis[`ani${i}`]) actualizarTubo(pz.anillo[i], trazoEnEsfera(g.anillo, NT, R, hundido - R), rTrazo * 0.7);
     vis[`cor${i}`] = o.corazon > 0.02;
     if (vis[`cor${i}`]) actualizarRelleno(pz.cor[i], g.cor, [g.cx, g.cy + 0.005], R, 0.006);
     vis[`ceja${i}`] = o.cejaVis > 0.05;
-    if (vis[`ceja${i}`]) actualizarTubo(pz.ceja[i], trazoEnEsfera(g.ceja, 24, R, hundido - R), rTrazo * Math.min(1.35, 0.6 + 0.45 * o.cejaVis));
+    if (vis[`ceja${i}`]) actualizarTubo(pz.ceja[i], trazoEnEsfera(g.ceja, 24, R, hundido - R), rTrazo * Math.min(1.6, 0.6 + 0.45 * o.cejaVis));
     // lágrimas que caen
     vis[`lag${i}`] = e.lagrimas > 0.02;
     if (vis[`lag${i}`]) {

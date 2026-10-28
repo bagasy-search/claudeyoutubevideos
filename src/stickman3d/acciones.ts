@@ -61,7 +61,7 @@ export const POSES = {
     manoD: MD([-0.45, -1.1, 0.05], [-0.6, 0, -1]),
   }),
   cabizbajo: pose({
-    torso: { x: 10, curva: 0.06 }, cabeza: { x: 24, z: 14, y: -10 }, raiz: [0, -0.03, 0],
+    torso: { x: 10, curva: 0.06 }, cabeza: { x: 17, z: 16, y: -6 }, raiz: [0, -0.03, 0],
     manoI: MD([0.2, -1.2, 0.18], [0.5, 0, -1], { miton: 1 }, 0, { goma: 0.2 }), manoD: MD([-0.2, -1.2, 0.18], [-0.5, 0, -1], { miton: 1 }, 0, { goma: 0.2 }),
   }),
   brazos_cruzados: pose({
@@ -71,8 +71,8 @@ export const POSES = {
   }),
   temblando: pose({
     raiz: [0, -0.06, 0], torso: { x: 6, curva: 0.03 }, cabeza: { x: 6 },
-    manoI: MD([0.2, 0.08, 0.36], [0.5, -1, 0.1], { puno: 1 }, 40, { goma: 0.35 }),
-    manoD: MD([-0.2, 0.05, 0.36], [-0.5, -1, 0.1], { puno: 1 }, 40, { goma: 0.35 }),
+    manoI: MD([0.3, -0.04, 0.42], [0.7, -1, 0.1], { puno: 1 }, 40, { goma: 0.35 }),
+    manoD: MD([-0.3, -0.22, 0.42], [-0.8, -1, 0.1], { puno: 1 }, 40, { goma: 0.35 }),
     pieI: pie([0.16, AT, 0.0], -5, { polo: [-0.4, 0, 1] }), pieD: pie([-0.16, AT, 0.0], 5, { polo: [0.4, 0, 1] }),
     temblor: 1,
   }),
@@ -83,35 +83,36 @@ export const POSES = {
   }),
   rascarse: pose({
     cabeza: { z: -16, x: -2, y: 12 }, torso: { z: -2 },
-    manoI: MD([0.22, 0.86, 0.0], [1, 0.1, -0.2], { miton: 1 }, 140, { goma: 0.35, dobla: 30 }),
+    manoI: MD([0.22, 0.95, 0.15], [1, 1, 0], { abierta: 1 }, 90, { goma: 0.35, dobla: 40 }),
     manoD: MD([-0.38, -1.24, 0.05], [-0.6, 0, -1]),
   }),
   pensar: pose({
     cabeza: { z: -8, x: -4, y: 6 },
-    manoD: MD([-0.02, -0.1, 0.42], [-0.6, -1, 0.3], { puno: 1 }, 140, { goma: 0.3 }),
-    manoI: MD([-0.22, -0.66, 0.28], [0.6, -1, 0.4], { miton: 1 }, 80, { goma: 0.3 }),
+    manoD: MD([0.0, 0.1, 0.46], [-0.6, -1, 0.3], { puno: 1 }, 140, { goma: 0.3 }),
+    manoI: MD([-0.26, -0.6, 0.3], [0.6, -1, 0.4], { miton: 1 }, 80, { goma: 0.3 }),
   }),
   bostezar: pose({
     cabeza: { z: 8, x: -6 }, torso: { z: 3 },
-    manoI: MD([0.12, 0.0, 0.46], [1, -0.7, 0.2], { puno: 1 }, 160, { goma: 0.3 }),
+    manoI: MD([0.26, 0.28, 0.42], [1, -0.7, 0.2], { puno: 1 }, 160, { goma: 0.3 }),
     manoD: enCadera.D,
   }),
   pulgar_arriba: pose({
     torso: { z: 2 }, cabeza: { z: -5 },
-    manoI: MD([0.8, -0.42, 0.3], [0.2, -1, -0.4], { pulgar: 1 }, -90, { goma: 0.3 }),
+    manoI: MD([0.85, -0.05, 0.32], [0.3, -1, -0.4], { pulgar: 1 }, -90, { goma: 0.3 }),
     manoD: MD([-0.4, -1.24, 0.06], [-0.6, 0, -1]),
   }),
   manos_cadera: pose({ torso: { z: 1 }, cabeza: { z: 4 }, manoI: enCadera.I, manoD: enCadera.D }),
   salto_alegria: pose({
     raiz: [0, 0.55, 0], aplaste: 1.03, torso: { x: -4 }, cabeza: { x: -8 },
-    manoI: MD([1.12, 0.42, 0.05], [0.3, -1, 0], { abierta: 1 }, -90, { goma: 0.35 }),
-    manoD: MD([-1.1, 0.3, 0.05], [-0.3, -1, 0], { abierta: 1 }, -90, { goma: 0.35 }),
-    pieI: pie([0.5, 1.15, -0.3], 30, { polo: [1, 0.2, 0.3], pitch: -45 }), pieD: pie([-0.12, 1.05, -0.1], -40, { polo: [-1, 0.1, 0.4], pitch: -20 }),
+    manoI: MD([1.3, 0.75, 0.05], [0.3, -1, 0], { abierta: 1 }, -90, { goma: 0.35 }),
+    manoD: MD([-1.25, 0.9, 0.05], [-0.3, -1, 0], { abierta: 1 }, -90, { goma: 0.35 }),
+    // asimétrico como la ref: una rodilla al frente con el pie abajo, la otra pierna pateada hacia atrás y afuera
+    pieI: pie([0.3, 1.35, 0.2], 70, { polo: [1, 0.3, 0.6], pitch: -10 }), pieD: pie([-0.95, 1.45, -0.1], -80, { polo: [-0.5, -1, 0.2], pitch: 15 }),
   }),
   panza_risa: pose({
-    torso: { x: 8, curva: 0.04, z: -2 }, cabeza: { x: -10, z: -6 },
-    manoI: MD([0.08, -0.82, 0.32], [1, -0.4, 0.2], { miton: 1 }, 90, { goma: 0.3 }),
-    manoD: MD([-0.05, -0.55, 0.36], [-1, -0.4, 0.2], { miton: 1 }, 90, { goma: 0.3 }),
+    torso: { x: 4, curva: 0.04, z: -4 }, cabeza: { x: -22, z: -18 },
+    manoI: MD([0.04, -0.52, 0.46], [1, -0.5, 0.1], { miton: 1 }, 90, { goma: 0.3 }),
+    manoD: MD([-0.4, -0.45, 0.22], [-1, -0.6, -0.2], { miton: 1 }, 90, { goma: 0.3 }),
   }),
 } satisfies Record<string, Pose>;
 export type NombrePose = keyof typeof POSES;
