@@ -440,7 +440,7 @@ const Deseo: React.FC = () => (
 export const PARABOLA07: TramoS[] = [
   ...partir(133.2, 142.0, (cam) => <Corinto cam={cam} />, [[133.2, [mira(0, 1200, 520, 0.9), mira(44, 1250, 525, 0.95, { curva: "inout" })]], [134.7, [mira(0, 1050, P - 250, 2.1), mira(75, 1090, P - 252, 2.2, { curva: "inout" })]],
     [137.2, [mira(0, 1500, P - 260, 1.9), mira(72, 1640, P - 262, 2.0, { curva: "inout" })]], [139.6, [mira(0, 1820, P - 280, 2.05), mira(72, 1880, P - 290, 2.15, { curva: "inout" })]]], { tipo: "luz", d: 20, color: "#ffd890" }),
-  ...partir(142.0, 156.2, (cam) => <Escena Set={Agora} pal={pal} seed={102} mano={2} claves={cam} medio={<><Gente x0={1100} /><BarrilCon dio={{ caras: [{ f: 0, v: "feliz" }] }} /><Pregones t0={142.0} /></>} />, [
+  ...partir(142.0, 156.2, (cam) => <Escena Set={Agora} pal={pal} seed={102} mano={2} claves={cam} medio={<>{cam[0].f < 198 && <Gente x0={1100} />}<BarrilCon dio={{ caras: [{ f: 0, v: "feliz" }] }} /><Pregones t0={142.0} /></>} />, [
     [142.0, [mira(0, 1990, P - 290, 2.05), mira(44, 2040, P - 292, 2.1, { curva: "inout" }), mira(45, BX + 300, P - 260, 1.8), mira(198, BX + 180, P - 240, 1.95, { curva: "inout" })]],
     [148.6, [mira(0, DIO.x + 20, P - 300, 2.1), mira(110, DIO.x + 20, P - 300, 2.2)]],
     [152.4, [mira(0, DIO.x + 140, P - 60, 2.6), mira(114, DIO.x + 100, P - 70, 2.75)]],

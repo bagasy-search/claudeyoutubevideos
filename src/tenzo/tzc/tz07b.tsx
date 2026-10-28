@@ -691,9 +691,11 @@ export const NoventaAlSol: React.FC = () => {
   const baston = <g><line x1={0} y1={-6} x2={0} y2={150} stroke="#7a5a3a" strokeWidth={9} strokeLinecap="round" /></g>;
   return (
     <Escena Set={Agora} pal={PAL_ANT} seed={160} mano={1.4}
-      claves={[mira(0, X - 140, PA2 - 250, 2.1), mira(sienta, X - 20, PA2 - 230, 2.25, { curva: "fluida" }), mira(111, X - 10, PA2 - 220, 2.45, { curva: "inout" })]}
+      claves={[mira(0, X - 240, PA2 - 40, 3.3), mira(40, X - 110, PA2 - 42, 3.35), mira(41, X + 10, PA2 - 220, 2.2, { rot: -2 }), mira(78, X + 10, PA2 - 224, 2.3, { rot: -2 }), mira(79, X + 20, PA2 - 165, 3.0, { rot: 3 }), mira(111, X + 20, PA2 - 168, 3.15, { rot: 3 })]}
       medio={<>
         <Halo x={X + 40} y={PA2 - 300} r={420} color="#fff0b0" fuerza={0.2 + 0.3 * interpolate(f, [sienta, 100], [0, 1], cl)} />
+        {f >= 79 && [0, 1, 2, 3, 4].map((k) => <line key={k} x1={X + 260} y1={PA2 - 560} x2={X + 60 + k * 18} y2={PA2 - 330 + k * 6} stroke="#fff0b0" strokeWidth={10} strokeLinecap="round" opacity={0.25 + 0.12 * Math.sin(f / 9 + k)} />)}
+        {f < 41 && [12, 26, 40].map((t) => { const u = (f - t) / 10; return u >= 0 && u < 1 ? <ellipse key={t} cx={X - 260 + (t / 56) * 260 + 40} cy={PA2 + 12} rx={14 + 30 * u} ry={4 + 6 * u} fill="none" stroke="#c9b48c" strokeWidth={4} opacity={1 - u} /> : null; })}
         <rect x={X - 120} y={PA2 - 60} width={260} height={60} rx={8} fill="#d8cdb6" stroke="#b5a88c" strokeWidth={4} />
         <ActorVivo look={DIO_VIEJO} escala={ESC} seed={71} luz={{ lado: 1, color: "#ffd890", fuerza: 1 }} ruta={[{ f: 0, x: X - 260, y: PA2 + 10 }, { f: sienta - 10, x: X, y: PA2 + 10 }]} correr={0} dir={[{ f: 0, v: 1 }]}
           asiento={[{ f: 0, v: undefined }, { f: sienta, v: 60 }]}
@@ -772,15 +774,15 @@ export const YaLoLogro: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
   const X = CTO.silla - 60; // vuelta 3: en la silla del escritorio, no en el colchón (E3 y E12 ya son colchón)
   return (
     <EnCuarto leo={null} lampara
-      cam={[mira(0, X + 60, PC - 290, 2.2), mira(135, X + 40, PC - 285, 2.4, { curva: "inout" })]}
+      cam={[mira(0, X + 80, PC - 235, 2.25), mira(135, X + 70, PC - 232, 2.4, { curva: "inout" })]}
       medio={<>
         {pared}
         <Actor {...leoCto({ enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 0.9 },
           ruta: [{ f: 0, x: X, y: PC }], asiento: [{ f: 0, v: 58 }],
-          poses: [{ f: 0, v: { ...SENTADO, hD: 70, cD: 80, cabeza: 8 } }, { f: baja, v: { ...SENTADO, hD: 8, cD: 10, cabeza: 22, tronco: 12 } }, { f: mira2, v: { ...SENTADO, hD: 4, cD: 6, hI: 4, cI: 6, cabeza: 28, tronco: 16 } }],
+          poses: [{ f: 0, v: { ...SENTADO, hD: 70, cD: 80, cabeza: 0, tronco: 0 } }, { f: baja, v: { ...SENTADO, hD: 8, cD: 10, cabeza: 12, tronco: 4 } }, { f: mira2, v: { ...SENTADO, hD: 4, cD: 6, hI: 4, cI: 6, cabeza: 16, tronco: 6 } }],
           caras: [{ f: 0, v: "duda" }, { f: sube + 10, v: "sorpresa" }, { f: baja, v: "triste" }], miradas: [{ f: 0, v: { x: 0.8, y: 0 } }, { f: sube, v: { x: 0.8, y: -0.5 } }, { f: mira2, v: { x: 0.3, y: 1 } }] })} />
         {u > 0 && f < baja + 10 && (
-          <g transform={`translate(${X + 260},${PC - 250 - 60 * u}) scale(${0.4 + 0.75 * u})`} opacity={interpolate(f, [baja, baja + 10], [1, 0], cl)}>
+          <g transform={`translate(${X + 290},${PC - 215 - 50 * u}) scale(${0.4 + 0.75 * u})`} opacity={interpolate(f, [baja, baja + 10], [1, 0], cl)}>
             <Halo x={0} y={0} r={240} color={ACENTO} fuerza={0.25} />
             <rect x={-150} y={-120} width={300} height={200} rx={18} fill="#f4f4f6" stroke={ACENTO} strokeWidth={5} />
             <rect x={-136} y={-106} width={272} height={110} rx={10} fill="#a9c4e0" />

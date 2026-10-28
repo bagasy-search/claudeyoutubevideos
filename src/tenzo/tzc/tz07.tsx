@@ -22,7 +22,7 @@ import {
 import { ALEJANDRO, REY_ESC, BarrilCon, BX, MarchaSinFin, NeneFuente, PARABOLA07 } from "./parabola07";
 import { DibujoPegado, LlamaCrece, PIN, TYLER } from "./tz05";
 import { partir, planosDe, TramoS } from "./tramos";
-import { Nuca, Devuelve, TelDaVuelta, ALaVentana3, Fantasmas3, LoDibuja3, NadaPasa3, Picazon3, SeSienta3, TuTyler3 } from "./tz07c";
+import { ToqueMesa, Nuca, Devuelve, TelDaVuelta, ALaVentana3, Fantasmas3, LoDibuja3, NadaPasa3, Picazon3, SeSienta3, TuTyler3 } from "./tz07c";
 import { ALaVentana, Amanece, ApuntaTel, BocaAbajoA, BocaAbajoB, ChatTyler, Cortes, DeptoVidrio, DiaCatorce, DiaUno, Dibujando, Dioses, GanaEl, GolpeMesa, LaRespuesta, LoDibuja, ManosAbiertas, MasRaro, Mute, NoventaAlSol, Posts, YaLoLogro, Escalera, EsteLugar, Fantasmas, LeeCaptions, Manana, NadaPasa, NoEsLuz, Picazon2, SeSienta, SinIdea, SombraChica, SombraFeliz, TuTyler } from "./tz07b";
 
 const FPS = 30;
@@ -113,13 +113,14 @@ const CierraCaja: React.FC = () => {
 };
 
 // el reel de Tyler (auto negro, llaves, departamento de vidrio) con el contador de veces vistas
-const ReelTyler: React.FC<{ dur: number; vistas?: [number, number]; caption?: number; z?: [number, number]; toca?: number }> = ({ dur, vistas, caption = 0, z = [0.98, 1.12], toca }) => {
+const ReelTyler: React.FC<{ dur: number; vistas?: [number, number]; caption?: number; z?: [number, number]; toca?: number; cerca?: number }> = ({ dur, vistas, caption = 0, z = [0.98, 1.12], toca, cerca = 1 }) => {
   const f = useF();
   const n = vistas ? Math.round(interpolate(f, [0, dur - 20], vistas, cl)) : 0;
   return (
     <PantallaTel zoom0={z[0]} zoom1={z[1]} dur={dur} luz={0.8} mano={toca !== undefined ? <Pulgar toca={toca} x={220} y={470} piel="#e6c49a" /> : undefined}>
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(#a9c4e0, #e9eef2 60%, #9aa0a8)" }} />
       <svg width={440} height={900} style={{ position: "absolute", inset: 0 }}>
+        <g transform={`translate(190,680) scale(${cerca}) translate(-190,-680)`}>
         <EdificioVidrio />
         <g transform="translate(220,640)">
           <path d="M-200,40 Q-196,-20 -140,-30 L-80,-80 Q0,-100 80,-80 L150,-30 Q200,-20 204,40 Z" fill="#0f1014" />
@@ -130,12 +131,64 @@ const ReelTyler: React.FC<{ dur: number; vistas?: [number, number]; caption?: nu
         <Actor look={TYLER} escala={1.15} seed={31} ruta={[{ f: 0, x: 150, y: 780 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "risa" }]}
           poses={[{ f: 0, v: { hD: 120, cD: 30 } }, { f: 30, v: { hD: 130, cD: 20 } }, { f: 60, v: { hD: 120, cD: 30 } }, { f: 90, v: { hD: 130, cD: 20 } }]} habla={[[10, 200]]}
           enManoD={<g><circle cx={0} cy={0} r={8} fill="#c9ccd2" /><rect x={6} y={-3} width={22} height={6} rx={3} fill="#c9ccd2" /></g>} />
+        </g>
       </svg>
       <div style={{ position: "absolute", left: 22, right: 22, bottom: 40, fontFamily: F_HUD, fontSize: 28, color: "#fff", textShadow: "0 2px 8px rgba(0,0,0,0.7)", opacity: interpolate(f, [caption, caption + 10], [0, 1], cl) }}>
         @tyler · Twenty-five and already made it. Grateful.
       </div>
       <div style={{ position: "absolute", left: 22, top: 22, fontFamily: F_HUD, fontSize: 24, color: "#fff", opacity: 0.9 }}>▶ Reels</div>
       {vistas && <div style={{ position: "absolute", right: 22, top: 18, fontFamily: F_HUD, fontWeight: 600, fontSize: 40, color: ACENTO, textShadow: "0 2px 8px rgba(0,0,0,0.6)" }}>▶ {n}</div>}
+    </PantallaTel>
+  );
+};
+
+// E12 · las dos manos en la frente: el rig dibuja los brazos detrás de la cabeza, así que las manos y las mangas van encima, en el mundo
+const E12A = { ...SENTADO, tronco: 30, cabeza: 22, hD: 155, cD: 150, hI: 150, cI: 150 };
+const E12B = { ...SENTADO, tronco: 34, cabeza: 26, hD: 95, cD: 145, hI: 88, cI: 150 };
+const PC_E12 = CTO.P;
+const ManosFrente: React.FC<{ espia: number }> = ({ espia }) => {
+  // sólo las manos (los antebrazos del rig quedan detrás de la cabeza): palmas sobre la frente, dedos hacia el pelo
+  const f = useF();
+  const X = CTO.colchon, Y = PC_E12;
+  const ab = interpolate(f, [espia, espia + 6], [0, 1], cl);
+  const tr = 1.2 * Math.sin(f / 5);
+  const mano = (x: number, y: number, r: number) => (
+    <g transform={`translate(${x},${y + tr}) rotate(${r})`}>
+      {[-16, -5, 6, 17].map((d, i) => <rect key={i} x={d - 6} y={-50 + Math.abs(d - 1) * 0.5} width={12} height={36} rx={6} fill="#ecc9a3" stroke="#b88e68" strokeWidth={3} />)}
+      <ellipse cx={0} cy={0} rx={27} ry={25} fill="#ecc9a3" stroke="#b88e68" strokeWidth={3} />
+      <path d="M-24,8 q-14,-8 -16,-26" stroke="#b88e68" strokeWidth={3} fill="none" />
+      <rect x={-17} y={18} width={34} height={22} rx={8} fill="#ecc9a3" stroke="#b88e68" strokeWidth={3} />
+    </g>
+  );
+  return <g>{mano(X - 140 - 10 * ab, Y - 196 + 24 * ab, 40 + 10 * ab)}{mano(X - 92, Y - 226, 58)}</g>;
+};
+
+// E4 · 11,6-14,9 «has watched Tyler's video 41 times»: el reel termina y vuelve a empezar; la barra se llena, el contador salta 39 → 40 → 41
+const ReplayLoop: React.FC = () => {
+  const f = useF();
+  const vueltas = [18, 36, 54];
+  const n = 38 + vueltas.filter((v) => f >= v).length;
+  const ult = Math.max(0, ...vueltas.filter((v) => f >= v));
+  const pop = f >= 18 ? 1 + 0.35 * Math.max(0, 1 - (f - ult) / 8) : 1;
+  const barra = f >= 54 ? interpolate(f, [54, 99], [0, 0.5], cl) : ((f % 18) / 18);
+  const gira = -360 * (f >= 54 ? 3 : Math.floor(f / 18)) - 360 * Math.min(1, (f - ult) / 10) * (f >= 18 ? 1 : 0);
+  return (
+    <PantallaTel zoom0={1.02} zoom1={1.12} dur={99} luz={0.8} mano={<Pulgar toca={52} x={220} y={600} piel="#e6c49a" />}>
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(#5d7690, #3a4452 60%, #2a2e36)" }} />
+      <svg width={440} height={900} style={{ position: "absolute", inset: 0 }}>
+        <g opacity={0.35}><EdificioVidrio /></g>
+        <g transform="translate(220,640)" opacity={0.45}><path d="M-200,40 Q-196,-20 -140,-30 L-80,-80 Q0,-100 80,-80 L150,-30 Q200,-20 204,40 Z" fill="#0f1014" /></g>
+        <rect width={440} height={900} fill="#0b0c10" opacity={0.45} />
+        <g transform={`translate(220,600) rotate(${gira})`}>
+          <path d="M0,-70 A70,70 0 1 1 -66,-24" fill="none" stroke="#fff" strokeWidth={14} strokeLinecap="round" />
+          <path d="M-92,-40 L-60,-2 L-40,-50 Z" fill="#fff" />
+        </g>
+        <text x={220} y={380} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={120 * pop} fill={ACENTO}>{n}×</text>
+        <text x={220} y={430} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={28} fill="#fff" opacity={0.85}>watched</text>
+        <rect x={30} y={850} width={380} height={8} rx={4} fill="#ffffff" opacity={0.3} />
+        <rect x={30} y={850} width={380 * barra} height={8} rx={4} fill={ACENTO} />
+      </svg>
+      <div style={{ position: "absolute", left: 22, top: 22, fontFamily: F_HUD, fontSize: 24, color: "#fff", opacity: 0.9 }}>▶ Reels · @tyler</div>
     </PantallaTel>
   );
 };
@@ -332,7 +385,7 @@ const T = (): TramoS[] => [
   { t0: 6.5, t1: 8.3, el: <LaRespuesta /> },
   // «Day 14. 11 at night.»: Leo pasa con el pulgar, se refriega los ojos
   { t0: 8.3, t1: 11.6, trans: { tipo: "fundido", d: 10 }, el: <DiaCatorce /> },
-  { t0: 11.6, t1: 17.5, el: <AbsoluteFill><ReelTyler dur={177} vistas={[38, 40]} caption={9999} toca={100} /><Nuca /></AbsoluteFill> },
+  { t0: 11.6, t1: 17.5, el: <AbsoluteFill><Cortes planos={[[0, <ReplayLoop />], [loc(11.6, 14.9), <ReelTyler dur={78} vistas={[41, 41]} caption={9999} z={[1.0, 1.1]} cerca={1.75} />]]} /><Nuca /></AbsoluteFill> },
   // «a glass apartment behind him, with the whole city shining»: la ciudad de vidrio que Leo mira, con su cara en la esquina
   { t0: 17.5, t1: 21.5, el: <DeptoVidrio /> },
   // «25, and already made it. Grateful.»: el post sale del teléfono; Leo lo baja y mira su dibujo
@@ -352,9 +405,9 @@ const T = (): TramoS[] => [
   // entre las manos mientras el contador sube; en 77,2 espía entre los dedos
   ...partir(72.2, 79.1, (cam) => (
     <EnCuarto cam={cam}
-      leo={{ poses: [{ f: 0, v: "manosCara" }, { f: loc(72.2, 77.0), v: "manosCara" }, { f: loc(72.2, 77.3), v: { ...SENTADO, tronco: 8, cabeza: 10, hD: 120, cD: 150, hI: 110, cI: 150 } }],
-        miradas: [{ f: 0, v: { x: 0, y: 1 } }, { f: loc(72.2, 77.3), v: { x: 0.8, y: 0.8 } }], caras: [{ f: 0, v: "cansado" }, { f: loc(72.2, 77.3), v: "miedo" }], luz: { lado: 1, color: ACENTO, fuerza: 0.8 } }}
-      medio={<g transform={`translate(${CTO.colchon + 170},${PC - CTO.COLCHON_ALTO}) scale(2) translate(${-CTO.colchon - 170},${-PC + CTO.COLCHON_ALTO})`}><TelMesa x={CTO.colchon + 170} y={PC - CTO.COLCHON_ALTO} /></g>}
+      leo={{ poses: [{ f: 0, v: E12A }, { f: 100, v: E12A }, { f: 200, v: E12A }],
+        miradas: [{ f: 0, v: { x: 0, y: 1 } }], caras: [{ f: 0, v: "cansado" }], luz: { lado: 1, color: ACENTO, fuerza: 0.8 } }}
+      medio={<><g transform={`translate(${CTO.colchon + 170},${PC - CTO.COLCHON_ALTO}) scale(2) translate(${-CTO.colchon - 170},${-PC + CTO.COLCHON_ALTO})`}><TelMesa x={CTO.colchon + 170} y={PC - CTO.COLCHON_ALTO} /></g><ManosFrente espia={loc(72.2, 77.2)} /></>}
       hud={<Contador />} />
   ), [[72.2, [mira(0, CTO.colchon + 60, PC - 250, 2.3), mira(102, CTO.colchon + 60, PC - 255, 2.45, { curva: "inout" })]], [75.6, [mira(0, CTO.colchon + 120, PC - 200, 2.7, { rot: -2 }), mira(105, CTO.colchon + 110, PC - 205, 2.85, { rot: -2, curva: "inout" })]]]),
   { t0: 79.1, t1: 84.6, el: <NoEsLuz /> },
@@ -457,7 +510,7 @@ const T = (): TramoS[] => [
   { t0: 348.2, t1: 355.0, el: <NeneFuente /> },
   { t0: 355.0, t1: 364.6, el: <SombraChica /> },
   // «then what do I compare myself to?» Leo con las manos abiertas → Tenzo golpea la mesa
-  { t0: 364.6, t1: 369.1, el: <Cortes planos={[[0, <ManosAbiertas caja={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />} />], [loc(364.6, 366.8), <GolpeMesa caja={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />} />]]} /> },
+  { t0: 364.6, t1: 369.1, el: <Cortes planos={[[0, <ManosAbiertas caja={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />} />], [loc(364.6, 366.8), <GolpeMesa caja={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />} />], [loc(364.6, 367.25), <ToqueMesa />], [loc(364.6, 368.6), <GolpeMesa caja={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />} />, loc(364.6, 366.8)]]} /> },
   // «the boy on the mattress fourteen days ago»: el recuerdo del día 1
   { t0: 369.1, t1: 373.6, trans: { tipo: "fundido", d: 12 }, el: <DiaUno /> },
   // «compare yourself to him, only to him»: Tenzo señala y levanta un dedo

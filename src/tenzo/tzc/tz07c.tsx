@@ -217,6 +217,28 @@ export const VentanaAfuera: React.FC<{ pared?: React.ReactNode }> = ({ pared }) 
 // desde el primer cuadro, plano frontal amplio con los dibujos arriba; respira, se mira las manos y las junta en el regazo
 export const SeSienta3: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
   const t0 = 467.0;
+  const corte = loc(t0, 469.4), cae = loc(t0, 468.2), manos = loc(t0, 470.6);
+  const X = CTO.colchon + 160;
+  const SIN = { ...SENTADO, hD: 30, cD: 72, hI: 32, cI: 70, tronco: 12, cabeza: 18 };
+  return (
+    <EnCuarto dia momento="lluvia" leo={null}
+      cam={[mira(0, X + 200, PC - 300, 2.3), mira(cae, X + 40, PC - 250, 2.45, { curva: "inout" }), mira(corte - 1, X + 30, PC - 245, 2.5),
+        mira(corte, X + 60, PC - 85, 3.4, { rot: 3 }), mira(120, X + 60, PC - 88, 3.55, { rot: 3, curva: "inout" })]}
+      medio={<>
+        {pared}
+        <Actor {...leoCto({ ruta: [{ f: 0, x: X + 300, y: PC }, { f: cae - 8, x: X, y: PC }], asiento: [{ f: 0, v: undefined }, { f: cae, v: CTO.COLCHON_ALTO }], correr: 0,
+          dir: [{ f: 0, v: -1 }, { f: cae - 8, v: 1 }],
+          poses: [{ f: 0, v: { hD: 10, cD: 20, hI: -10, cI: 20, tronco: 8, cabeza: 14 } }, { f: cae - 4, v: { hD: 30, cD: 30, hI: 30, cI: 30, tronco: 14, cabeza: 10 } }, { f: cae, v: { ...SENTADO, hD: 50, cD: 30, hI: 50, cI: 30, tronco: -10, cabeza: -10 } },
+            { f: cae + 10, v: { ...SENTADO, hD: 50, cD: 80, hI: 45, cI: 85, tronco: 6, cabeza: 10 } }, { f: corte + 6, v: { ...SENTADO, hD: 50, cD: 95, hI: 45, cI: 100, tronco: 8, cabeza: 14 } }, { f: manos, v: SIN }],
+          caras: [{ f: 0, v: "cansado" }, { f: cae, v: "neutral" }, { f: cae + 14, v: "cansado" }, { f: manos, v: "triste" }], miradas: [{ f: 0, v: { x: 0.2, y: 0.6 } }, { f: cae + 14, v: { x: 0.4, y: 0.8 } }, { f: manos, v: { x: 0.1, y: 1 } }] })} />
+        {/* el colchón se hunde cuando cae */}
+        {(() => { const f = useF(); const u = f >= cae && f < cae + 10 ? Math.sin(Math.PI * (f - cae) / 10) : 0; return u > 0 ? [-1, 1].map((k) => <path key={k} d={`M${X + k * 90},${PC - CTO.COLCHON_ALTO + 4} l${k * (20 + 30 * u)},${-6 - 8 * u}`} stroke="#f4efe4" strokeWidth={5} strokeLinecap="round" opacity={u} />) : null; })()}
+      </>}
+      hud={<TextoMano texto="leo marsh · 24" x={960} y={960} desde={loc(t0, 467.5)} hasta={corte} />} />
+  );
+};
+export const SeSienta3Viejo: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
+  const t0 = 467.0;
   const manos = loc(t0, 470.6);
   const X = CTO.colchon + 160;
   return (
@@ -244,7 +266,7 @@ export const Pica3: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
   const pica = f >= 8 && f < vaHacia;
   return (
     <EnCuarto dia momento="lluvia" leo={null}
-      cam={[mira(0, X + 90, PC - 170, 2.4, { rot: 2 }), mira(96, X + 100, PC - 175, 2.55, { rot: 1, curva: "inout" })]}
+      cam={[mira(0, X + 120, PC - 135, 3.3, { rot: 2 }), mira(frena + 2, X + 140, PC - 135, 3.4, { rot: 2, curva: "inout" }), mira(frena + 3, X + 10, PC - 255, 2.9, { rot: -3 }), mira(96, X + 10, PC - 258, 3.0, { rot: -3 })]}
       medio={<>
         {pared}
         {/* teléfono boca abajo sobre el colchón, un poco inclinado para que se lea */}
@@ -262,13 +284,22 @@ export const Pica3: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
 };
 
 // E74 · 488,2-494,3: igual que antes (Leo de pie frente a los dibujos, se da vuelta y señala) pero el texto va ABAJO, en la banda libre
-export const TuTyler3: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
+export const TuTyler3: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => (
+  <Cortes planos={[[0, <Boredom4 pared={pared} />], [loc(488.2, 488.9), <TuTyler3b pared={pared} />, loc(488.2, 488.9)]]} />
+);
+const Boredom4: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => (
+  <EnCuarto dia momento="lluvia" leo={null}
+    cam={[mira(0, ABX + 10, PC - 124, 3.9, { rot: 4 }), mira(21, ABX + 10, PC - 126, 4.0, { rot: 4 })]}
+    medio={<>{pared}<Actor look={ABURRIDO} escala={ESC * 0.62} seed={88} ruta={[{ f: 0, x: ABX, y: PC - 30 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "picaro" }]} poses={[{ f: 0, v: "manosCintura" }]} /></>}
+    hud={<TextoMano texto="boredom." x={960} y={300} desde={0} color="#c9c6c0" />} />
+);
+const TuTyler3b: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
   const t0 = 488.2;
   const quien = loc(t0, 488.9), que = loc(t0, 490.6), abajo = loc(t0, 492.6);
   const X = CTO.colchon + 230;
   return (
     <EnCuarto dia momento="lluvia" leo={null}
-      cam={[mira(0, X - 130, PC - 345, 2.25), mira(quien, X - 150, PC - 340, 2.4, { curva: "inout" }), mira(183, X - 150, PC - 335, 2.55, { curva: "inout" })]}
+      cam={[mira(0, X - 20, PC - 300, 2.6), mira(abajo - 1, X - 30, PC - 302, 2.75, { curva: "inout" }), mira(abajo, X + 30, PC - 230, 2.3, { rot: 4 }), mira(183, X + 30, PC - 228, 2.4, { rot: 4, curva: "inout" })]}
       medio={<>
         {pared}
         <Actor {...leoCto({ ruta: [{ f: 0, x: X, y: PC }], asiento: [{ f: 0, v: undefined }], dir: [{ f: 0, v: -1 }, { f: quien - 8, v: 1 }],
@@ -277,8 +308,7 @@ export const TuTyler3: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
           miradas: [{ f: 0, v: { x: 0.5, y: -0.6 } }, { f: quien, v: { x: 1, y: 0 } }, { f: abajo, v: { x: 0.8, y: 0.6 } }] })} />
       </>}
       hud={<>
-        <TextoMano texto="boredom." x={1420} y={980} desde={0} hasta={quien} color="#c9c6c0" />
-        <ManoLeo texto="who is your tyler?" x={1420} y={980} desde={quien} hasta={que} />
+                <ManoLeo texto="who is your tyler?" x={1420} y={980} desde={quien} hasta={que} />
         <ManoLeo texto="what don't they post at 3 a.m.?" x={1300} y={980} desde={que} hasta={abajo} />
         <ManoLeo texto="tell me below ↓" x={1420} y={980} desde={abajo} />
       </>} />
@@ -290,7 +320,41 @@ export const ALaVentana3: React.FC<{ pared?: React.ReactNode }> = ({ pared }) =>
   <Cortes planos={[[0, <ALaVentanaA pared={pared} />], [loc(461.6, 465.3), <VentanaAfuera pared={pared} />]]} />
 );
 export const Picazon3: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => (
-  <Cortes planos={[[0, <Pica3 pared={pared} />], [loc(479.0, 482.2), <VozB1 pared={pared} />], [loc(479.0, 484.2), <VozB2c pared={pared} />], [loc(479.0, 486.9), <VozB3 pared={pared} />]]} />
+  <Cortes planos={[[0, <Pica3 pared={pared} />], [loc(479.0, 482.2), <VozLejos4 pared={pared} />], [loc(479.0, 484.2), <VozCerca4 pared={pared} />], [loc(479.0, 486.9), <VozB3c pared={pared} />]]} />
+);
+// E73 · 482,2-484,2 «from somewhere very far away»: por encima del hombro de Leo (nuca en primer plano), lejos junto a la ventana asoma la vocecita gris
+const VozLejos4: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => {
+  const f = useF();
+  return (
+    <AbsoluteFill>
+      <EnCuarto dia momento="lluvia" leo={null}
+        cam={[mira(0, ABX + 260, PC - 200, 2.0), mira(60, ABX + 220, PC - 198, 2.1, { curva: "inout" })]}
+        medio={<>{pared}
+          <g opacity={interpolate(f, [20, 32], [0, 1], cl)}>
+            <Actor look={ABURRIDO} escala={ESC * 0.62} seed={88} ruta={[{ f: 0, x: ABX, y: PC - 30 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "cansado" }]} poses={[{ f: 0, v: "parado" }, { f: 34, v: "saludar" }, { f: 44, v: { hD: 120, cD: 40 } }, { f: 54, v: "saludar" }]} />
+          </g>
+        </>} />
+      <Nuca x={1560} luz={false} />
+    </AbsoluteFill>
+  );
+};
+// E73 · 484,2-486,9 «he hears a tiny voice»: la vocecita gris EN PRIMER PLANO, chiquita pero llenando el cuadro, habla
+const VozCerca4: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => (
+  <EnCuarto dia momento="lluvia" leo={null}
+    cam={[mira(0, ABX + 10, PC - 120, 3.6, { rot: -3 }), mira(81, ABX + 10, PC - 124, 3.8, { rot: -3, curva: "inout" })]}
+    medio={<>{pared}
+      <Actor look={ABURRIDO} escala={ESC * 0.62} seed={88} ruta={[{ f: 0, x: ABX, y: PC - 30 }]} dir={[{ f: 0, v: 1 }]}
+        caras={[{ f: 0, v: "cansado" }, { f: 46, v: "picaro" }]} habla={[[6, 40], [50, 74]]} poses={[{ f: 0, v: "saludar" }, { f: 14, v: { hD: 120, cD: 40 } }, { f: 28, v: "saludar" }, { f: 46, v: "manosCintura" }]} />
+    </>}
+    hud={<TextoMano texto="bored?" x={960} y={300} desde={8} color="#c9c6c0" />} />
+);
+// E73 · 486,9-488,2 «not the shadow. something worse.»: primer plano grande de Leo con miedo
+const VozB3c: React.FC<{ pared?: React.ReactNode }> = ({ pared }) => (
+  <EnCuarto dia momento="lluvia" leo={null}
+    cam={[mira(0, CTO.colchon + 10, PC - 240, 3.0, { rot: 3 }), mira(39, CTO.colchon + 10, PC - 243, 3.15, { rot: 3, curva: "inout" })]}
+    medio={<>{pared}<Actor {...leoCto({ dir: [{ f: 0, v: -1 }], poses: [{ f: 0, v: { ...SENTADO, hD: 30, cD: 70, hI: 30, cI: 70 } }, { f: 8, v: { ...SENTADO, hD: 110, cD: 120, hI: 105, cI: 125, tronco: -8, cabeza: -8 } }],
+      caras: [{ f: 0, v: "miedo" }], miradas: [{ f: 0, v: { x: -1, y: 0 } }] })} /></>}
+    hud={<TextoMano texto="something worse." x={960} y={300} desde={4} color="#c9c6c0" />} />
 );
 
 // E73 · 484,2-486,9 «he hears a tiny voice»: Leo en primer plano a la derecha, girado hacia la vocecita gris que asoma junto a la ventana
@@ -368,8 +432,84 @@ export const Devuelve: React.FC<{ medio?: React.ReactNode }> = ({ medio }) => {
   );
   return <Cortes planos={[
     [0, plano([mira(0, 1450, P - 225, 2.45, { rot: -4 }), mira(agarra, 1440, P - 228, 2.55, { rot: -4, curva: "inout" })]), 0],
-    [agarra, plano([mira(agarra, LAV.leo + 20, P - 260, 2.75, { rot: 3 }), mira(agarra + 30, LAV.leo + 10, P - 262, 2.85, { rot: 3, curva: "inout" })]), agarra],
+    [14, <InsertoTel />, 14],
+    [42, plano([mira(42, LAV.leo + 20, P - 260, 2.75, { rot: 3 }), mira(60, LAV.leo + 10, P - 262, 2.85, { rot: 3, curva: "inout" })]), 42],
   ]} />;
+};
+
+// E18 · inserto: el teléfono GRANDE pasa de la mano vieja de Tenzo (derecha) a la de Leo (abajo a la izquierda), clic al soltar
+const InsertoTel: React.FC = () => {
+  const f = useF();
+  const ag = 30;
+  const e = (a: number, b: number) => interpolate(f, [a, b], [0, 1], { ...cl, easing: (t) => 1 - (1 - t) * (1 - t) });
+  const px = 1180 - 300 * e(14, ag) - 80 * e(ag, 44), py = 520 + 40 * e(14, ag) + 30 * e(ag, 44), rot = -18 + 10 * e(14, ag);
+  const tz = interpolate(f, [ag, ag + 12], [0, 520], cl); // la mano de Tenzo se va
+  const lx = interpolate(f, [14, ag - 4], [-380, 0], { ...cl, easing: (t) => 1 - (1 - t) * (1 - t) }); // la de Leo llega
+  return (
+    <AbsoluteFill style={{ background: "#e8e2d6", overflow: "hidden" }}>
+      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+        {[260, 760, 1260, 1760].map((x) => <g key={x}><rect x={x - 220} y={-40} width={440} height={520} rx={18} fill="#f1eee8" stroke="#cfcac0" strokeWidth={6} /><circle cx={x} cy={250} r={150} fill="#d9d6d0" stroke="#b9b4aa" strokeWidth={14} /></g>)}
+        <rect x={0} y={640} width={1920} height={440} fill="#c9c1b2" /><rect x={0} y={632} width={1920} height={18} fill="#9a9a9f" />
+        <g transform={`translate(${px},${py}) rotate(${rot})`}>
+          <Halo x={0} y={-30} r={330} color={ACENTO} fuerza={0.22} />
+          <rect x={-130} y={-250} width={260} height={480} rx={34} fill="#15151a" stroke="#3a3a44" strokeWidth={6} />
+          <rect x={-114} y={-232} width={228} height={444} rx={20} fill="#a9c4e0" />
+          <rect x={-114} y={40} width={228} height={172} fill="#9aa0a8" />
+          <path d="M-100,60 Q-98,20 -70,14 L-40,-14 Q0,-26 40,-14 L74,14 Q100,20 102,60 Z" fill="#0f1014" />
+          <circle cx={-60} cy={62} r={16} fill="#1a1a1e" stroke="#6a6a72" strokeWidth={4} /><circle cx={64} cy={62} r={16} fill="#1a1a1e" stroke="#6a6a72" strokeWidth={4} />
+          <text x={86} y={-200} textAnchor="end" fontFamily="Inter, sans-serif" fontWeight={700} fontSize={30} fill={ACENTO}>▶ 41</text>
+          {/* dedos de Tenzo sobre el borde derecho */}
+          {tz < 500 && <g transform={`translate(${tz},${-tz * 0.2})`}>
+            <path d="M120,-120 L520,-210 L560,40 L150,90 Z" fill="#8e8a82" />
+            <ellipse cx={150} cy={-20} rx={74} ry={96} fill="#f2bf8f" stroke="#c9946a" strokeWidth={4} />
+            {[-70, -30, 10].map((y) => <rect key={y} x={86} y={y} width={78} height={34} rx={16} fill="#f2bf8f" stroke="#c9946a" strokeWidth={4} />)}
+          </g>}
+          {/* la mano de Leo desde abajo a la izquierda */}
+          <g transform={`translate(${lx},${-lx * 0.4})`}>
+            <path d="M-150,140 L-520,420 L-380,620 L-60,260 Z" fill="#24242a" />
+            <ellipse cx={-120} cy={160} rx={86} ry={70} fill="#ecc9a3" stroke="#c29c76" strokeWidth={4} />
+            {[100, 140, 180].map((x) => <rect key={x} x={x - 240} y={196} width={32} height={60} rx={15} fill="#ecc9a3" stroke="#c29c76" strokeWidth={4} transform={`rotate(-20 ${x - 224} 226)`} />)}
+            <rect x={-150} y={60} width={70} height={30} rx={15} fill="#ecc9a3" stroke="#c29c76" strokeWidth={4} transform="rotate(-30 -115 75)" />
+          </g>
+        </g>
+        {f >= ag && f < ag + 8 && [-1, 0, 1].map((k) => <path key={k} d={`M${px + 150 + k * 10},${py - 280 + k * 50} l${36 - (f - ag) * 2},${-20 + k * 20}`} stroke={ORO} strokeWidth={7} strokeLinecap="round" opacity={1 - (f - ag) / 8} />)}
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+// E55 · inserto del golpecito: la mano vieja de Tenzo golpea tres veces la mesa plegable con los nudillos; onda y la caja salta
+export const ToqueMesa: React.FC = () => {
+  const f = useF();
+  const T0 = 367.25;
+  const toques = [367.4, 367.8, 368.3].map((t) => loc(T0, t));
+  const d = Math.min(...toques.map((t) => Math.abs(f - t)));
+  const y = 560 - 260 * Math.min(1, d / 6);
+  const salto = Math.max(0, ...toques.map((t) => (f >= t && f < t + 9 ? 34 * Math.sin(Math.PI * (f - t) / 9) : 0)));
+  return (
+    <AbsoluteFill style={{ background: "#ece8e0", overflow: "hidden" }}>
+      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+        {[200, 640, 1080, 1520].map((x) => <g key={x}><rect x={x - 200} y={-60} width={400} height={500} rx={18} fill="#f4f2ee" stroke="#d2cdc4" strokeWidth={6} /><circle cx={x} cy={200} r={130} fill="#dcd9d3" stroke="#bbb6ac" strokeWidth={12} /></g>)}
+        <rect x={0} y={560} width={1920} height={520} fill="#d3cbbd" /><rect x={0} y={548} width={1920} height={22} fill="#9a9a9f" />
+        {/* la caja de metal */}
+        <g transform={`translate(640,${700 - salto}) rotate(${salto * 0.12})`}>
+          <rect x={-260} y={-150} width={520} height={190} rx={14} fill="#b9bcc2" stroke="#7d8088" strokeWidth={8} />
+          <rect x={-276} y={-176} width={552} height={40} rx={10} fill="#cfd2d8" stroke="#7d8088" strokeWidth={8} />
+          <path d="M-220,-110 L220,-110" stroke="#e8eaee" strokeWidth={8} opacity={0.6} />
+        </g>
+        <ellipse cx={640} cy={745} rx={260 - salto * 2} ry={22} fill="#000" opacity={0.12} />
+        {toques.map((t) => { const u = (f - t) / 14; return u >= 0 && u < 1 ? <ellipse key={t} cx={1300} cy={690} rx={60 + 320 * u} ry={16 + 70 * u} fill="none" stroke={ORO} strokeWidth={12} opacity={1 - u} /> : null; })}
+        {toques.map((t) => (f >= t && f < t + 6 ? [-1, 0, 1].map((k) => <path key={`${t}${k}`} d={`M${1300 + k * 70},${600} l${k * 26},-46`} stroke={ORO} strokeWidth={8} strokeLinecap="round" opacity={1 - (f - t) / 6} />) : null))}
+        {/* el puño: manga gris desde arriba a la derecha, nudillos abajo */}
+        <g transform={`translate(1300,${y}) scale(1.45)`}>
+          <path d="M60,-60 L520,-520 L760,-300 L170,40 Z" fill="#8e8a82" />
+          <path d="M60,-60 L170,40" stroke="#6f6b64" strokeWidth={10} />
+          <ellipse cx={20} cy={-10} rx={110} ry={86} fill="#f2bf8f" stroke="#c9946a" strokeWidth={5} />
+          {[-70, -25, 20, 65].map((x) => <ellipse key={x} cx={x} cy={62} rx={26} ry={20} fill="#f2bf8f" stroke="#c9946a" strokeWidth={5} />)}
+        </g>
+      </svg>
+    </AbsoluteFill>
+  );
 };
 
 // la nuca de Leo de espaldas en primer plano abajo a la izquierda (POV sobre su hombro, en vez del círculo de cara)
