@@ -1078,7 +1078,7 @@ export const P29Interruptor: React.FC = () => {
   const toq = [b + 6, b + 16]; // v7: los dos toques antes, para que el giro a la ventana entre ANTES del fin
   const luz = luzEn(f, [[-100, 1], [toq[0], 0], [toq[1], 1]], 8);
   const cuarto = (l: number) => (
-    <Escena Set={CuartoHosp} pal={PAL} claves={[mira(b, 1050, 640, 1.95), mira(139, 1060, 640, 1.98)]} seed={291} setProps={{ luz: l }}
+    <Escena Set={CuartoHosp} pal={PAL} claves={[mira(b, 1050, 640, 1.95), mira(139, 1060, 640, 1.98)]} seed={291} setProps={{ luz: l, apaga: rampa(f, b + 22, b + 40) }}
       medio={<Pj look={JUNE} ruta={[{ f: b, x: JX, y: CUARTO.piso }, { f: b + 20, x: JX }, { f: b + 34, x: JX + 70 }]} dir={[{ f: 0, v: 1 }]} luz={l > 0.5 ? undefined : BORDE_FRIO}
         poses={[{ f: 0, v: "parado" }, { f: b + 20, v: { tronco: 4, cabeza: -10 }, d: 10 }, { f: b + 30, v: { tronco: 6, cabeza: -18, hD: 20, cD: 30 }, d: 10 }]}
         caras={[{ f: 0, v: "cansado" }, { f: b + 18, v: "triste" }, { f: b + 30, v: "determinado" }]}

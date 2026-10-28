@@ -394,7 +394,7 @@ export const P37Ciudad: React.FC = () => {
     <AbsoluteFill>
       <TomasSeco cortes={[CA]} tomas={[tomaA, tomaB]} />
       {conteo}
-      <BarrasVidaV6 x={1000} y={150} w={1080} desde={k(225.7)} d2={k(227.0)} />
+      <BarrasVidaV6 x={670} y={160} w={760} desde={k(225.7)} d2={k(227.0)} />
     </AbsoluteFill>
   );
 };
@@ -1577,7 +1577,7 @@ const CaraJune56: React.FC<{ k: (t: number) => number }> = ({ k }) => {
   const f = useF();
   const JX = 1300;
   return (
-    <Escena Set={Living} pal={PAL} seed={256} setProps={{ ...LIV_INV, hora: "noche", fuego: 0.2, cae: true }} claves={[mira(k(416.9), JX + 10, 560, 3.0), mira(k(418.6), JX + 10, 556, 3.08)]}
+    <Escena Set={Living} pal={PAL} seed={256} setProps={{ ...LIV_INV, hora: "noche", fuego: 0.2, cae: true }} claves={[mira(k(416.3), JX + 10, 566, 2.94), mira(k(418.6), JX + 10, 554, 3.1)]} /* v8: la cámara ya viene andando al corte (lageo 416,93) */
       medio={<>
         <EscarchaEsquina />
         <Halo x={JX + 30} y={P - 250} r={300} color="#ffcf6e" fuerza={0.6} />

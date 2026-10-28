@@ -687,10 +687,10 @@ export const Interruptor: React.FC<{ on: boolean; s?: number }> = ({ on, s = 1 }
 );
 // cuarto de la guardia del 4º piso por dentro: ventana a la ciudad, interruptor junto a la ventana, cama vacía
 export const CUARTO = { ventana: 1200, interruptor: 860, cama: 1700, piso: 900 };
-export const CuartoHosp: React.FC<SetProps & { luz?: number }> = ({ capa, f, luz = 1 }) => {
+export const CuartoHosp: React.FC<SetProps & { luz?: number; apaga?: number }> = ({ capa, f, luz = 1, apaga = 0 }) => {
   const P = CUARTO.piso;
   if (capa === "lejos") {
-    return <g><Cielo c={LUCES.noche.cielo} />{Array.from({ length: 30 }).map((_, i) => <rect key={i} x={700 + i * 40} y={520 + ((i * 37) % 7) * 18} width={30} height={200} fill="#1d1a2e" />)}{Array.from({ length: 40 }).map((_, i) => <rect key={`l${i}`} x={710 + (i * 53) % 1180} y={540 + ((i * 29) % 9) * 16} width={8} height={8} fill={AMBAR} opacity={0.8} />)}</g>;
+    return <g><Cielo c={LUCES.noche.cielo} />{Array.from({ length: 30 }).map((_, i) => <rect key={i} x={700 + i * 40} y={520 + ((i * 37) % 7) * 18} width={30} height={200} fill="#1d1a2e" />)}{Array.from({ length: 40 }).map((_, i) => <rect key={`l${i}`} x={710 + (i * 53) % 1180} y={540 + ((i * 29) % 9) * 16} width={8} height={8} fill={AMBAR} opacity={0.8 * (((i * 7) % 40) / 40 < apaga ? 0 : 1)} />)}</g>; // v8: la ciudad del vidrio se apaga por bloques
   }
   if (capa === "frente") return null;
   const pared = luz > 0.5 ? "#c8d2d6" : "#3a4048";
