@@ -8,15 +8,15 @@ const op = (t: number, a: number, out: number, fi = 0.18, fo = 0.3) => e(t, a - 
 const k1 = (t: number, a: number, f = 1) => Math.min(1, spr(t, a, f));
 
 // ---------- PASO N: tarjeta de capítulo que cae del fondo, número gigante extruido + nombre, barrido de luz ----------
-export const StepTitle: React.FC<{ t: number; at: number; n: number; name: string; out: number; col?: string; y?: number }> = ({ t, at, n, name, out, col = COL.amber, y = 520 }) => {
+export const StepTitle: React.FC<{ t: number; at: number; n: number; name: string; out: number; col?: string; y?: number; x?: number; sc?: number }> = ({ t, at, n, name, out, col = COL.amber, y = 520, x = 960, sc = 1 }) => {
   const o = op(t, at, out); if (o <= 0.01) return null;
   const k = k1(t, at, 0.85), k2 = k1(t, at + 0.22, 1);
   const sweep = e(t, at + 0.3, at + 1.1);
   return (
     <AbsoluteFill style={{ opacity: o, perspective: 1400 }}>
-      <AbsoluteFill style={{ background: `radial-gradient(ellipse 60% 55% at 50% ${(y / 1080) * 100}%, rgba(0,0,0,.55), transparent 75%)` }} />
-      <div style={{ position: "absolute", left: 960, top: y, transform: `translate(-50%,-50%) translateZ(${(1 - k) * -1400}px) rotateX(${(1 - k) * 50 + 8}deg) rotateY(${Math.sin((t - at) * 0.8) * 5}deg)`, textAlign: "center", fontFamily: FONT, whiteSpace: "nowrap" }}>
-        <div style={{ fontWeight: 900, fontSize: 64, letterSpacing: 26, color: COL.ink, textShadow: extrude(5, "rgba(0,0,0,.7)"), marginBottom: -20 }}>FORMA</div>
+      <AbsoluteFill style={{ background: `radial-gradient(ellipse 60% 55% at ${(x / 1920) * 100}% ${(y / 1080) * 100}%, rgba(0,0,0,.55), transparent 75%)` }} />
+      <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) scale(${sc}) translateZ(${(1 - k) * -1400}px) rotateX(${(1 - k) * 50 + 8}deg) rotateY(${Math.sin((t - at) * 0.8) * 5}deg)`, textAlign: "center", fontFamily: FONT, whiteSpace: "nowrap" }}>
+        <div style={{ fontWeight: 900, fontSize: 64, letterSpacing: 26, color: COL.ink, textShadow: extrude(5, "rgba(0,0,0,.7)"), marginBottom: -20 }}>PUNTO</div>
         <div style={{ position: "relative", display: "inline-block", fontWeight: 900, fontSize: 360, lineHeight: 1, color: col, textShadow: extrude(22, "#5a3410") }}>
           {n}
           <div style={{ position: "absolute", inset: 0, background: `linear-gradient(105deg, transparent ${sweep * 140 - 40}%, rgba(255,255,255,.75) ${sweep * 140 - 25}%, transparent ${sweep * 140 - 10}%)`, WebkitBackgroundClip: "text", color: "transparent", mixBlendMode: "screen" } as React.CSSProperties}>{n}</div>

@@ -289,7 +289,7 @@ export const World: React.FC<{ t: number }> = ({ t }) => {
   const tx = useTextures(), tt = useTallerTex();
   const pg = useImgTex(["m1_p001", "m2_p001", "m3_p001", "m4_p001", "m5_p001", "m2_p055", "m4_p065"]);
   const s = ST(t);                // estado del taller en este instante (tl.ts)
-  const fireL = s.fire * (0.85 + 0.15 * Math.sin(t * 9) * Math.sin(t * 5.3));
+  const fireL = s.fire * (0.93 + 0.07 * Math.sin(t * 2.1) * Math.sin(t * 1.3 + 0.7));
   const colH = 0.78 + (2.85 - 0.78) * cl(s.temp / 25);
   const heatCol = (k: number) => new THREE.Color("#2a2420").lerp(new THREE.Color("#ff5a1a"), k).getStyle();
   // el reloj: s.clock = hora decimal (22 → 30 = 6 de la mañana)
@@ -395,7 +395,7 @@ export const World: React.FC<{ t: number }> = ({ t }) => {
           {Array.from({ length: 7 }, (_, i) => <mesh key={i} position={[-0.15 + i * 0.05, 0, (1 - ease(s.grate)) * 0.6]} rotation={[Math.PI / 2, 0, 0]}><cylinderGeometry args={[0.006, 0.006, DL - 0.08, 6]} /><meshStandardMaterial color="#3a3a3a" metalness={0.8} roughness={0.4} /></mesh>)}
         </group>}
         <group position={[DRUM[0], DRUM[1] - DR + 0.1, DRUM[2]]}><Fire t={t} on={s.fire} glow={tx.flake} /></group>
-        {s.fire > 0.02 && <pointLight position={[DRUM[0], 0.35, FRONT_Z + 0.4]} intensity={fireL * 5} distance={7} color="#ff8a3d" castShadow />}
+        <pointLight position={[DRUM[0], 0.35, FRONT_Z + 0.4]} intensity={fireL * 5} distance={7} color="#ff8a3d" castShadow />
         {/* los 6 agujeros de 3 cm de abajo (se ven encendidos desde abajo) */}
         {s.holes > 0.01 && Array.from({ length: 6 }, (_, i) => <mesh key={i} position={[DRUM[0] + (i % 2 ? 0.06 : -0.06), DRUM[1] - DR + 0.004 + 0.02, DRUM[2] - 0.2 + Math.floor(i / 2) * 0.2]} rotation={[Math.PI / 2, 0, 0]}><circleGeometry args={[0.015 * ease(s.holes), 16]} /><meshBasicMaterial color={new THREE.Color("#110402").lerp(new THREE.Color("#ff9a3a"), 0.3 + fireL * 0.7)} toneMapped={false} side={THREE.DoubleSide} /></mesh>)}
         {/* el caño de 12 cm: 4 m hacia afuera por el techo */}
@@ -455,7 +455,7 @@ export const World: React.FC<{ t: number }> = ({ t }) => {
       {s.giant > 0.01 && <group position={[GIANT[0], GIANT[1], GIANT[2]]} scale={[ease(s.giant), ease(s.giant), ease(s.giant)]}>
         <Box p={[0, GH / 2, 0]} s={[GW, GH, GD]} c="#7d3f2a" map={tt.brick} r={0.95} rad={0.02} />
         <group position={[0, GH / 2, GD / 2 + 0.002]}><LavaFace t={t} fill={s.lava} out={s.lavaOut} hollow={s.hollow} w={GW - 0.01} h={GH - 0.01} /></group>
-        {s.lava > 0.05 && <pointLight position={[0, GH / 2, GD / 2 + 0.8]} intensity={s.lava * (1 - s.lavaOut * 0.8) * 3} distance={4} color="#ff7a2a" />}
+        <pointLight position={[0, GH / 2, GD / 2 + 0.8]} intensity={s.lava * (1 - s.lavaOut * 0.8) * 3} distance={4} color="#ff7a2a" />
         {/* lo que entra por la derecha (del tambor) y lo que devuelve despacito hacia adelante */}
         <Leak t={t} from={[GW / 2 + 1.2, GH / 2, 0]} to={[GW / 2 - 0.1, GH / 2, 0.1]} amt={s.lavaIn} glow={tx.flake} n={30} spread={0.7} col="#ffb257" size={0.12} />
         <Leak t={t} from={[0, GH / 2, GD / 2]} to={[0, GH / 2 + 0.6, GD / 2 + 1.8]} amt={s.lavaOut * s.lava * (1 - s.hollow)} glow={tx.flake} n={30} spread={1.6} col="#ff9a4a" size={0.1} />
@@ -494,7 +494,7 @@ export const World: React.FC<{ t: number }> = ({ t }) => {
         <Cyl p={[0, 0.2, 0]} r={0.004} h={0.4} c="#111" />
         <mesh rotation={[Math.PI, 0, 0]}><coneGeometry args={[0.26, 0.18, 24, 1, true]} /><meshStandardMaterial color="#2c332c" side={THREE.DoubleSide} metalness={0.5} roughness={0.5} /></mesh>
         <mesh position={[0, -0.04, 0]}><sphereGeometry args={[0.05, 12, 10]} /><meshBasicMaterial color={new THREE.Color("#333").lerp(new THREE.Color("#fff1cf"), s.lamp)} toneMapped={false} /></mesh>
-        {s.lamp > 0.02 && <spotLight position={[0, -0.05, 0]} angle={1.0} penumbra={0.8} intensity={s.lamp * 22} distance={8} color="#ffd7a0" castShadow target-position={[0.6, 0, -0.4]} />}
+        <spotLight position={[0, -0.05, 0]} angle={1.0} penumbra={0.8} intensity={s.lamp * 22} distance={8} color="#ffd7a0" castShadow target-position={[0.6, 0, -0.4]} />
       </group>
       {/* banco de trabajo (izquierda, bajo la ventana) */}
       <Box p={[-3.25, 0.9, -1.9]} s={[2.4, 0.08, 0.8]} c="#7a5236" map={tx.planks} r={0.8} rad={0.01} />

@@ -1,0 +1,2512 @@
+{
+"segs": [
+[
+4.6,
+10.74,
+"shot",
+"v01_tambor_baldio"
+],
+[
+10.74,
+16.2,
+"shot",
+"v02_estufa_fuego"
+],
+[
+21.1,
+25.18,
+"shot",
+"n_chapa_tibia"
+],
+[
+25.18,
+31.12,
+"shot",
+"v03_mira_camara"
+],
+[
+31.12,
+34.9,
+"shot",
+"n_tambores_fila"
+],
+[
+38.6,
+45.1,
+"shot",
+"f_serio_dedo"
+],
+[
+57.1,
+59.06,
+"shot",
+"n_etiqueta_tambor"
+],
+[
+59.06,
+62.02,
+"shot",
+"n_manguera_tambor"
+],
+[
+62.02,
+65.78,
+"shot",
+"n_puerta_tiza"
+],
+[
+65.78,
+67.3,
+"shot",
+"n_cano_techo"
+],
+[
+72.5,
+76.48,
+"shot",
+"f_ladrillo_mano"
+],
+[
+76.48,
+81.78,
+"shot",
+"n_ladrillos_dentro"
+],
+[
+81.78,
+84.6,
+"shot",
+"n_brasas_apagadas"
+],
+[
+89.7,
+95.88,
+"shot",
+"n_taller_noche"
+],
+[
+122.1,
+132.54,
+"shot",
+"n_lena_carretilla"
+],
+[
+140.1,
+144.2,
+"shot",
+"n_tambores_gomeria"
+],
+[
+144.2,
+148.06,
+"shot",
+"n_tambor_campo"
+],
+[
+148.06,
+152.3,
+"shot",
+"f_carga_tambor"
+],
+[
+158.4,
+163.8,
+"shot",
+"n_cinta_tambor"
+],
+[
+163.8,
+169.46,
+"shot",
+"n_chapa_espesor"
+],
+[
+169.46,
+172.6,
+"shot",
+"f_mira_serio"
+],
+[
+176.3,
+183.14,
+"shot",
+"n_amoladora_quieta"
+],
+[
+183.14,
+188.0,
+"shot",
+"n_barrio_taller"
+],
+[
+193.2,
+202.62,
+"shot",
+"n_tapa_volada"
+],
+[
+202.62,
+203.5,
+"shot",
+"f_recuerda"
+],
+[
+208.7,
+216.7,
+"shot",
+"f_niega_tambor"
+],
+[
+216.7,
+219.8,
+"shot",
+"n_etiqueta_vieja"
+],
+[
+224.8,
+229.7,
+"shot",
+"n_tambores_colores"
+],
+[
+229.7,
+236.3,
+"shot",
+"n_bocas_tapa"
+],
+[
+241.0,
+244.02,
+"shot",
+"f_huele_boca"
+],
+[
+244.02,
+253.3,
+"shot",
+"n_tambor_cruz"
+],
+[
+257.1,
+260.0,
+"shot",
+"n_dos_hombres"
+],
+[
+260.0,
+268.2,
+"shot",
+"n_tambor_aceite"
+],
+[
+272.9,
+274.6,
+"shot",
+"n_detergente"
+],
+[
+274.6,
+281.6,
+"shot",
+"n_tambor_descartado"
+],
+[
+281.6,
+283.2,
+"shot",
+"n_pila_tambores"
+],
+[
+288.5,
+291.18,
+"shot",
+"n_oxido_close"
+],
+[
+291.18,
+298.46,
+"shot",
+"n_tambor_picado"
+],
+[
+298.46,
+302.4,
+"shot",
+"f_golpea_nudillos"
+],
+[
+310.5,
+314.82,
+"shot",
+"n_aceite_fondo"
+],
+[
+314.82,
+317.4,
+"shot",
+"n_tambor_volcado"
+],
+[
+323.3,
+324.72,
+"shot",
+"n_bidon_aceite_usado"
+],
+[
+324.72,
+334.2,
+"shot",
+"n_cuneta"
+],
+[
+338.2,
+347.0,
+"shot",
+"n_agua_caliente"
+],
+[
+347.0,
+349.2,
+"shot",
+"f_guantes_anteojos"
+],
+[
+349.2,
+350.1,
+"shot",
+"n_rueda_tambor"
+],
+[
+354.9,
+361.82,
+"shot",
+"n_espuma_tambor"
+],
+[
+361.82,
+363.42,
+"shot",
+"f_tres_dedos"
+],
+[
+363.42,
+366.1,
+"shot",
+"v13_lavado"
+],
+[
+372.2,
+378.84,
+"shot",
+"n_tambor_sol"
+],
+[
+378.84,
+380.62,
+"shot",
+"n_calendario_tiza"
+],
+[
+380.62,
+384.5,
+"shot",
+"n_vapor_chapa"
+],
+[
+388.4,
+391.24,
+"shot",
+"f_huele_ok"
+],
+[
+391.24,
+397.34,
+"shot",
+"n_tambor_agua"
+],
+[
+397.34,
+400.6,
+"shot",
+"n_corte_agua"
+],
+[
+405.0,
+413.68,
+"shot",
+"n_agua_corte_close"
+],
+[
+413.68,
+416.2,
+"shot",
+"f_dedo_arriba"
+],
+[
+422.2,
+425.08,
+"shot",
+"n_barniz_interior"
+],
+[
+425.08,
+432.38,
+"shot",
+"n_humo_negro"
+],
+[
+432.38,
+436.1,
+"shot",
+"f_tapa_nariz"
+],
+[
+439.7,
+446.82,
+"shot",
+"n_patio_lejos"
+],
+[
+446.82,
+451.5,
+"shot",
+"n_ladrillos_base"
+],
+[
+457.3,
+462.86,
+"shot",
+"v04_quema_pintura"
+],
+[
+462.86,
+467.6,
+"shot",
+"n_pintura_ampollada"
+],
+[
+472.1,
+476.26,
+"shot",
+"n_lejos_humo"
+],
+[
+476.26,
+479.1,
+"shot",
+"n_perro_ventana"
+],
+[
+479.1,
+484.6,
+"shot",
+"n_cepillo_alambre"
+],
+[
+489.7,
+492.51,
+"shot",
+"n_pintura_alta_temp"
+],
+[
+492.51,
+499.47,
+"shot",
+"n_tambor_marron"
+],
+[
+499.47,
+502.2,
+"shot",
+"f_adelanta"
+],
+[
+508.2,
+514.17,
+"shot",
+"n_humo_puerta"
+],
+[
+518.59,
+521.8,
+"shot",
+"n_parada_acostada"
+],
+[
+525.5,
+531.47,
+"shot",
+"n_fuego_largo"
+],
+[
+531.47,
+536.81,
+"shot",
+"n_tapa_redonda"
+],
+[
+536.81,
+537.7,
+"shot",
+"f_marca_tiza"
+],
+[
+543.1,
+550.05,
+"shot",
+"n_escuadra"
+],
+[
+550.05,
+553.5,
+"shot",
+"n_corte_esquema"
+],
+[
+558.7,
+564.59,
+"shot",
+"n_disco_fino"
+],
+[
+564.59,
+572.2,
+"shot",
+"v05_amoladora"
+],
+[
+576.0,
+579.41,
+"shot",
+"f_herrero"
+],
+[
+579.41,
+587.2,
+"shot",
+"n_tres_lados"
+],
+[
+590.6,
+598.95,
+"shot",
+"n_bisagras"
+],
+[
+598.95,
+601.5,
+"shot",
+"n_bisagra_puesta"
+],
+[
+605.1,
+611.93,
+"shot",
+"v10_puerta_pedazo"
+],
+[
+611.93,
+617.9,
+"shot",
+"n_puerta_cerrada"
+],
+[
+623.8,
+627.57,
+"shot",
+"n_pasador"
+],
+[
+627.57,
+634.33,
+"shot",
+"n_traba"
+],
+[
+634.33,
+636.0,
+"shot",
+"f_traba"
+],
+[
+640.3,
+647.09,
+"shot",
+"n_manija"
+],
+[
+647.09,
+652.5,
+"shot",
+"n_resorte_manija"
+],
+[
+657.3,
+659.59,
+"shot",
+"f_guante_manija"
+],
+[
+666.67,
+669.4,
+"shot",
+"n_hierro_angulo"
+],
+[
+673.2,
+678.11,
+"shot",
+"v11_patas"
+],
+[
+678.11,
+684.3,
+"shot",
+"n_cunas"
+],
+[
+689.2,
+694.45,
+"shot",
+"n_tuercas"
+],
+[
+694.45,
+702.7,
+"shot",
+"n_hileras"
+],
+[
+706.7,
+715.85,
+"shot",
+"n_piso_quemado"
+],
+[
+715.85,
+719.2,
+"shot",
+"f_senala_base"
+],
+[
+723.9,
+729.07,
+"shot",
+"n_contrapiso"
+],
+[
+729.07,
+734.1,
+"shot",
+"n_chapa_base"
+],
+[
+738.7,
+750.19,
+"shot",
+"n_brasa_cae"
+],
+[
+755.9,
+759.51,
+"shot",
+"f_cano_mira"
+],
+[
+759.51,
+764.79,
+"shot",
+"n_agujero_atras"
+],
+[
+764.79,
+767.2,
+"shot",
+"n_cano_4"
+],
+[
+771.2,
+779.85,
+"shot",
+"n_corte_pizza"
+],
+[
+779.85,
+783.6,
+"shot",
+"n_cano_triangulos"
+],
+[
+787.5,
+791.67,
+"shot",
+"f_error_chimenea"
+],
+[
+791.67,
+799.3,
+"shot",
+"n_cano_corto"
+],
+[
+804.7,
+810.19,
+"shot",
+"n_humo_vuelve"
+],
+[
+819.7,
+825.69,
+"shot",
+"n_cano_alto"
+],
+[
+825.69,
+833.8,
+"shot",
+"n_tramo_subida"
+],
+[
+838.9,
+847.61,
+"shot",
+"n_techo_cano"
+],
+[
+847.61,
+850.3,
+"shot",
+"n_sombrerete"
+],
+[
+853.6,
+858.97,
+"shot",
+"v07_chimenea"
+],
+[
+858.97,
+863.1,
+"shot",
+"n_pasachapa"
+],
+[
+867.7,
+877.23,
+"shot",
+"n_sellador"
+],
+[
+877.23,
+880.5,
+"shot",
+"n_viga_quemada"
+],
+[
+886.4,
+890.79,
+"shot",
+"n_mariposa"
+],
+[
+890.79,
+896.8,
+"shot",
+"n_disco_mariposa"
+],
+[
+901.4,
+903.23,
+"shot",
+"n_fuego_fuerte"
+],
+[
+903.23,
+911.15,
+"shot",
+"f_gira_mariposa"
+],
+[
+911.15,
+913.2,
+"shot",
+"n_mariposa_media"
+],
+[
+916.5,
+923.39,
+"shot",
+"n_cano_desarmado"
+],
+[
+923.39,
+925.83,
+"shot",
+"f_cepillo_cano"
+],
+[
+925.83,
+928.4,
+"shot",
+"n_hollin"
+],
+[
+933.5,
+936.83,
+"shot",
+"n_chispas_techo"
+],
+[
+936.83,
+943.2,
+"shot",
+"f_sonrie_ladrillo"
+],
+[
+955.43,
+960.1,
+"shot",
+"n_chapa_roja"
+],
+[
+964.7,
+971.19,
+"shot",
+"n_chapa_fria"
+],
+[
+971.19,
+976.7,
+"shot",
+"n_sarten"
+],
+[
+982.4,
+988.47,
+"shot",
+"n_fondo_picado"
+],
+[
+988.47,
+990.8,
+"shot",
+"f_ladrillos_carretilla"
+],
+[
+995.3,
+1000.83,
+"shot",
+"n_refractarios"
+],
+[
+1000.83,
+1005.15,
+"shot",
+"n_arena_fondo"
+],
+[
+1005.15,
+1008.6,
+"shot",
+"v06_ladrillos"
+],
+[
+1012.7,
+1020.07,
+"shot",
+"n_media_hilera"
+],
+[
+1027.0,
+1030.77,
+"shot",
+"n_tambor_viejo_ok"
+],
+[
+1030.77,
+1037.9,
+"shot",
+"f_bateria"
+],
+[
+1041.7,
+1045.93,
+"shot",
+"n_ladrillos_rojos"
+],
+[
+1045.93,
+1052.9,
+"shot",
+"v12_termometro"
+],
+[
+1058.1,
+1063.31,
+"shot",
+"n_reloj_4"
+],
+[
+1063.31,
+1069.0,
+"shot",
+"f_mano_chapa"
+],
+[
+1073.4,
+1081.01,
+"shot",
+"n_18_ladrillos"
+],
+[
+1081.01,
+1086.7,
+"shot",
+"f_levanta_pesado"
+],
+[
+1091.8,
+1097.33,
+"shot",
+"n_ladrillo_rojo"
+],
+[
+1097.33,
+1104.1,
+"shot",
+"n_ladrillos_humedos"
+],
+[
+1109.9,
+1113.97,
+"shot",
+"n_fuego_chico"
+],
+[
+1117.27,
+1119.5,
+"shot",
+"n_aire_abajo"
+],
+[
+1123.2,
+1126.31,
+"shot",
+"n_ceniza_ahoga"
+],
+[
+1126.31,
+1136.0,
+"shot",
+"n_parrilla_asado"
+],
+[
+1139.8,
+1149.25,
+"shot",
+"n_hierros_8"
+],
+[
+1149.25,
+1150.5,
+"shot",
+"f_carga_lena"
+],
+[
+1155.1,
+1166.01,
+"shot",
+"n_agujero_aire"
+],
+[
+1166.01,
+1167.4,
+"shot",
+"n_chapita"
+],
+[
+1171.6,
+1175.59,
+"shot",
+"n_chapita_abierta"
+],
+[
+1175.59,
+1180.03,
+"shot",
+"n_chapita_cerrada"
+],
+[
+1180.03,
+1184.4,
+"shot",
+"f_dos_controles"
+],
+[
+1189.9,
+1195.41,
+"shot",
+"n_brasas_calmas"
+],
+[
+1195.41,
+1200.3,
+"shot",
+"n_tronco_grueso"
+],
+[
+1210.35,
+1215.25,
+"shot",
+"f_serio_cerca"
+],
+[
+1215.25,
+1219.4,
+"shot",
+"n_cinta_pared"
+],
+[
+1224.2,
+1232.27,
+"shot",
+"n_ropa_colgada"
+],
+[
+1232.27,
+1236.8,
+"shot",
+"n_chapa_pared"
+],
+[
+1242.6,
+1248.93,
+"shot",
+"n_separadores"
+],
+[
+1248.93,
+1253.5,
+"shot",
+"n_madera_negra"
+],
+[
+1257.3,
+1263.45,
+"shot",
+"n_trapos_estufa"
+],
+[
+1263.45,
+1266.93,
+"shot",
+"f_muy_serio"
+],
+[
+1266.93,
+1269.8,
+"shot",
+"n_humo_azul"
+],
+[
+1274.0,
+1276.87,
+"shot",
+"n_cuarto_cerrado"
+],
+[
+1276.87,
+1284.5,
+"shot",
+"n_cama_vacia"
+],
+[
+1292.73,
+1297.75,
+"shot",
+"n_cano_afuera"
+],
+[
+1297.75,
+1301.8,
+"shot",
+"n_bracero_dentro"
+],
+[
+1305.3,
+1314.11,
+"shot",
+"n_ventana_abierta"
+],
+[
+1314.11,
+1318.1,
+"shot",
+"v08_detector"
+],
+[
+1323.3,
+1331.27,
+"shot",
+"n_detector_pared"
+],
+[
+1331.27,
+1333.7,
+"shot",
+"f_senala_detector"
+],
+[
+1339.0,
+1344.39,
+"shot",
+"n_puerta_abierta"
+],
+[
+1344.39,
+1351.1,
+"shot",
+"f_termometro_pared"
+],
+[
+1355.8,
+1360.79,
+"shot",
+"n_termo_4"
+],
+[
+1360.79,
+1365.49,
+"shot",
+"f_prende"
+],
+[
+1365.49,
+1368.5,
+"shot",
+"n_aire_abierto"
+],
+[
+1372.9,
+1378.01,
+"shot",
+"n_dos_troncos"
+],
+[
+1378.01,
+1380.73,
+"shot",
+"n_termo_16"
+],
+[
+1380.73,
+1383.6,
+"shot",
+"f_saca_campera"
+],
+[
+1388.2,
+1393.73,
+"shot",
+"n_termo_18"
+],
+[
+1393.73,
+1399.4,
+"shot",
+"n_ultimo_tronco"
+],
+[
+1404.7,
+1411.57,
+"shot",
+"n_termo_12"
+],
+[
+1411.57,
+1415.4,
+"shot",
+"n_manana_tibia"
+],
+[
+1419.1,
+1425.65,
+"shot",
+"n_carretilla_media"
+],
+[
+1425.65,
+1430.9,
+"shot",
+"v09_pava"
+],
+[
+1434.6,
+1436.61,
+"shot",
+"f_revés"
+],
+[
+1436.61,
+1441.97,
+"shot",
+"n_mal_armado"
+],
+[
+1441.97,
+1445.9,
+"shot",
+"n_llamarada"
+],
+[
+1452.0,
+1457.83,
+"shot",
+"n_dos_gruesos"
+],
+[
+1457.83,
+1462.2,
+"shot",
+"n_palos_cruzados"
+],
+[
+1467.5,
+1471.93,
+"shot",
+"n_bollo_arriba"
+],
+[
+1471.93,
+1477.42,
+"shot",
+"f_prende_arriba"
+],
+[
+1477.42,
+1480.8,
+"shot",
+"n_fuego_baja"
+],
+[
+1484.9,
+1492.28,
+"shot",
+"n_fuego_limpio"
+],
+[
+1492.28,
+1496.7,
+"shot",
+"n_lena_seca"
+],
+[
+1502.5,
+1507.02,
+"shot",
+"n_lena_humeda"
+],
+[
+1507.02,
+1513.6,
+"shot",
+"n_pila_techo"
+],
+[
+1518.8,
+1522.6,
+"shot",
+"f_choca_troncos"
+],
+[
+1552.1,
+1556.56,
+"shot",
+"v14_cta"
+],
+[
+1568.2,
+1573.6,
+"shot",
+"n_cano_calor"
+],
+[
+1573.6,
+1576.74,
+"shot",
+"n_cobre_rollo"
+],
+[
+1583.8,
+1587.54,
+"shot",
+"n_serpentin_cano"
+],
+[
+1598.1,
+1602.86,
+"shot",
+"n_tanque_alto"
+],
+[
+1602.86,
+1609.9,
+"shot",
+"n_esquema_tiza"
+],
+[
+1613.5,
+1618.54,
+"shot",
+"n_tanque_abierto"
+],
+[
+1618.54,
+1623.7,
+"shot",
+"n_llave_cruz"
+],
+[
+1627.8,
+1633.48,
+"shot",
+"n_cano_reventado"
+],
+[
+1633.48,
+1638.1,
+"shot",
+"f_mano_agua"
+],
+[
+1642.1,
+1646.04,
+"shot",
+"n_lavarse_grasa"
+],
+[
+1646.04,
+1652.18,
+"shot",
+"n_ducha_balde"
+],
+[
+1652.18,
+1655.2,
+"shot",
+"f_niega_plastico"
+],
+[
+1660.2,
+1668.5,
+"shot",
+"n_no_quemar"
+],
+[
+1668.5,
+1671.2,
+"shot",
+"n_puerta_abierta_sola"
+],
+[
+1676.1,
+1684.02,
+"shot",
+"n_noche_tronco"
+],
+[
+1691.3,
+1701.52,
+"shot",
+"n_tambor_explotado"
+],
+[
+1701.52,
+1704.0,
+"shot",
+"n_e2_cano"
+],
+[
+1709.2,
+1714.08,
+"shot",
+"n_cano_vertical"
+],
+[
+1714.08,
+1720.9,
+"shot",
+"n_e3_fondo"
+],
+[
+1725.3,
+1731.32,
+"shot",
+"n_e4_rojo"
+],
+[
+1731.32,
+1737.0,
+"shot",
+"n_al_rojo"
+],
+[
+1741.4,
+1745.82,
+"shot",
+"n_traba_cerrada"
+],
+[
+1745.82,
+1753.2,
+"shot",
+"n_e5_cuarto"
+],
+[
+1759.1,
+1761.52,
+"shot",
+"f_lee_celular"
+],
+[
+1761.52,
+1768.1,
+"shot",
+"n_mar_oxido"
+],
+[
+1772.0,
+1780.1,
+"shot",
+"n_pinta_alta"
+],
+[
+1780.1,
+1785.0,
+"shot",
+"n_ladrillos_protegen"
+],
+[
+1789.3,
+1792.24,
+"shot",
+"n_humo_blanco"
+],
+[
+1792.24,
+1799.8,
+"shot",
+"f_mira_humo"
+],
+[
+1804.8,
+1809.82,
+"shot",
+"n_lena_ano"
+],
+[
+1809.82,
+1817.6,
+"shot",
+"n_sal_brasas"
+],
+[
+1822.5,
+1827.12,
+"shot",
+"n_agua_no"
+],
+[
+1827.12,
+1834.8,
+"shot",
+"f_responde"
+],
+[
+1838.5,
+1847.52,
+"shot",
+"n_aire_cerrado"
+],
+[
+1847.52,
+1849.1,
+"shot",
+"n_vapor_chapa_caliente"
+],
+[
+1853.2,
+1861.3,
+"shot",
+"n_ceniza_balde"
+],
+[
+1861.3,
+1865.9,
+"shot",
+"n_ceniza_compost"
+],
+[
+1871.7,
+1873.02,
+"shot",
+"n_estufa_final"
+],
+[
+1953.7,
+1961.7,
+"shot",
+"v15_cierre"
+]
+],
+"cam": [
+[
+45.1,
+51.7,
+"drumFront"
+],
+[
+95.88,
+100.9,
+"bookRow"
+],
+[
+105.1,
+117.3,
+"book"
+],
+[
+132.54,
+134.7,
+"wide"
+],
+[
+306.9,
+310.5,
+"drumFront"
+],
+[
+514.17,
+518.59,
+"drumDoor"
+],
+[
+659.59,
+666.67,
+"drumFront"
+],
+[
+750.19,
+750.9,
+"pipeTop"
+],
+[
+810.19,
+815.2,
+"pipeTop"
+],
+[
+948.2,
+955.43,
+"drumDoor"
+],
+[
+1020.07,
+1023.4,
+"coilIn"
+],
+[
+1113.97,
+1117.27,
+"drumDoor"
+],
+[
+1206.6,
+1210.35,
+"wide"
+],
+[
+1289.8,
+1292.73,
+"wide"
+],
+[
+1522.6,
+1531.6,
+"bookRow"
+],
+[
+1536.6,
+1547.1,
+"book"
+],
+[
+1556.56,
+1564.3,
+"coil"
+],
+[
+1576.74,
+1580.4,
+"coil"
+],
+[
+1587.54,
+1593.2,
+"tank"
+],
+[
+1684.02,
+1687.3,
+"wide"
+],
+[
+1873.02,
+1883.8,
+"wide"
+],
+[
+1937.6,
+1949.2,
+"bookRow"
+],
+[
+1961.7,
+1964.9,
+"wide"
+]
+],
+"ov": [
+{
+"k": "chip",
+"txt": "«LLÉVATELO, ME ESTORBA»",
+"col": "ice",
+"at": 8.92,
+"out": 12.42
+},
+{
+"k": "chip",
+"txt": "A LA MAÑANA: LA CHAPA TIBIA",
+"col": "amber",
+"at": 23.2,
+"out": 26.7
+},
+{
+"k": "stamp",
+"txt": "ORO ESCONDIDO",
+"at": 32.58,
+"out": 35.58
+},
+{
+"k": "stamp",
+"txt": "TE PUEDE COSTAR LA VIDA",
+"at": 40.96,
+"out": 44.16
+},
+{
+"k": "big",
+"txt": "200 L",
+"sub": "EL TAMBOR DE SIEMPRE",
+"col": "amber",
+"at": 50.6,
+"out": 53.8
+},
+{
+"k": "chip",
+"txt": "PUNTO 7: LOS LADRILLOS ADENTRO",
+"col": "amber",
+"at": 76.48,
+"out": 80.48
+},
+{
+"k": "big",
+"txt": "+4 H",
+"sub": "DE CALOR CON EL FUEGO APAGADO",
+"col": "amber",
+"at": 81.78,
+"out": 84.98
+},
+{
+"k": "step",
+"n": 1,
+"name": "CONSEGUIR EL TAMBOR",
+"col": "red",
+"at": 132.54,
+"out": 136.54
+},
+{
+"k": "big",
+"txt": "Ø 57 × 88 CM",
+"sub": "CHAPA DE 1 MM",
+"col": "amber",
+"at": 158.46,
+"out": 161.66
+},
+{
+"k": "chip",
+"txt": "LO QUE LE PASÓ A UN VECINO",
+"col": "red",
+"at": 183.14,
+"out": 186.64
+},
+{
+"k": "stamp",
+"txt": "¡EXPLOTÓ!",
+"at": 199.36,
+"out": 202.16
+},
+{
+"k": "check",
+"title": "¿QUÉ TUVO ADENTRO?",
+"rows": [
+{
+"txt": "1 · La etiqueta",
+"at": 216.7
+},
+{
+"txt": "2 · El color y las tapas",
+"at": 229.7
+},
+{
+"txt": "3 · El olor (al aire libre)",
+"at": 241.68
+},
+{
+"txt": "4 · Preguntar",
+"at": 257.04
+}
+],
+"at": 216.7,
+"out": 260.04
+},
+{
+"k": "versus",
+"title": "¿SIRVE PARA ESTUFA?",
+"L": {
+"label": "ACEITE · GRASA · COMIDA",
+"val": "SÍ",
+"h": 0.9,
+"col": "#7dd87d",
+"mark": "ok"
+},
+"R": {
+"label": "NAFTA · SOLVENTE · QUÍMICO",
+"val": "NO",
+"h": 0.9,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"at": 260.0,
+"out": 267.0
+},
+{
+"k": "chip",
+"txt": "SUENA PAREJO = CHAPA SANA",
+"col": "ice",
+"at": 298.46,
+"out": 301.96
+},
+{
+"k": "step",
+"n": 2,
+"name": "LAVARLO Y VENTILARLO",
+"at": 306.08,
+"out": 310.08
+},
+{
+"k": "stamp",
+"txt": "NO ES OPCIONAL",
+"at": 308.76,
+"out": 311.56
+},
+{
+"k": "chip",
+"txt": "EL ACEITE VIEJO NO VA A LA TIERRA",
+"col": "red",
+"at": 333.0,
+"out": 336.5
+},
+{
+"k": "big",
+"txt": "×3",
+"sub": "AGUA CALIENTE + DETERGENTE",
+"col": "amber",
+"at": 361.82,
+"out": 365.02
+},
+{
+"k": "big",
+"txt": "7 DÍAS",
+"sub": "DESTAPADO AL SOL",
+"col": "amber",
+"at": 378.84,
+"out": 382.04
+},
+{
+"k": "chip",
+"txt": "EL TRUCO: CORTARLO LLENO DE AGUA",
+"col": "ice",
+"at": 393.44,
+"out": 397.94
+},
+{
+"k": "stamp",
+"txt": "SI DUDÁS, NO LO CORTES",
+"at": 412.72,
+"out": 415.92
+},
+{
+"k": "step",
+"n": 3,
+"name": "QUEMAR LA PINTURA AFUERA",
+"at": 416.52,
+"out": 420.52
+},
+{
+"k": "stamp",
+"txt": "HUMO TÓXICO: SIEMPRE AFUERA",
+"at": 431.12,
+"out": 434.32
+},
+{
+"k": "chip",
+"txt": "SOBRE TIERRA · LEJOS DE TODO",
+"col": "red",
+"at": 449.26,
+"out": 452.76
+},
+{
+"k": "stamp",
+"txt": "CHICOS Y PERROS: ADENTRO",
+"at": 476.26,
+"out": 479.26
+},
+{
+"k": "step",
+"n": 4,
+"name": "LA PUERTA DEL MISMO PEDAZO",
+"at": 514.17,
+"out": 518.17
+},
+{
+"k": "big",
+"txt": "30 × 25 CM",
+"sub": "UN POCO MÁS ARRIBA DE LA MITAD",
+"col": "amber",
+"at": 543.57,
+"out": 546.77
+},
+{
+"k": "chip",
+"txt": "ROPA DE ALGODÓN · NADA SINTÉTICO",
+"col": "red",
+"at": 567.61,
+"out": 571.11
+},
+{
+"k": "stamp",
+"txt": "CORTÁ 3 LADOS, NO 4",
+"at": 579.41,
+"out": 582.61
+},
+{
+"k": "chip",
+"txt": "LA TRABA NO SE NEGOCIA",
+"col": "red",
+"at": 634.33,
+"out": 637.83
+},
+{
+"k": "chip",
+"txt": "MANIJA CON RESORTE = NO QUEMA",
+"col": "ice",
+"at": 647.09,
+"out": 650.59
+},
+{
+"k": "step",
+"n": 5,
+"name": "LAS PATAS Y LA BASE",
+"at": 659.59,
+"out": 663.59
+},
+{
+"k": "big",
+"txt": "20 CM",
+"sub": "DEL PISO",
+"col": "amber",
+"at": 680.17,
+"out": 683.37
+},
+{
+"k": "stamp",
+"txt": "NUNCA SOBRE MADERA",
+"at": 713.85,
+"out": 716.85
+},
+{
+"k": "chip",
+"txt": "LA BASE SALE ADELANTE DE LA PUERTA",
+"col": "ice",
+"at": 732.55,
+"out": 737.05
+},
+{
+"k": "step",
+"n": 6,
+"name": "LA CHIMENEA Y SU SALIDA",
+"col": "red",
+"at": 750.19,
+"out": 754.19
+},
+{
+"k": "chip",
+"txt": "CAÑO DE 4\"",
+"col": "ice",
+"at": 766.15,
+"out": 769.65
+},
+{
+"k": "chip",
+"txt": "CORTE EN CRUZ · TRIANGULITOS AFUERA",
+"at": 776.03,
+"out": 779.53
+},
+{
+"k": "stamp",
+"txt": "EL ERROR DE LA CHIMENEA",
+"at": 787.81,
+"out": 790.81
+},
+{
+"k": "big",
+"txt": "3-4 M",
+"sub": "VERTICAL, DE LA ESTUFA A LA PUNTA",
+"col": "amber",
+"at": 820.47,
+"out": 824.97
+},
+{
+"k": "big",
+"txt": "+60 CM",
+"sub": "POR ARRIBA DEL TECHO",
+"col": "amber",
+"at": 838.91,
+"out": 842.11
+},
+{
+"k": "chip",
+"txt": "PASACHAPA: EL CAÑO NUNCA TOCA",
+"col": "red",
+"at": 858.97,
+"out": 862.47
+},
+{
+"k": "chip",
+"txt": "LA MARIPOSA (LLAVE DE TIRO)",
+"col": "ice",
+"at": 888.19,
+"out": 891.69
+},
+{
+"k": "stamp",
+"txt": "NUNCA CERRADA DEL TODO",
+"at": 911.53,
+"out": 914.53
+},
+{
+"k": "chip",
+"txt": "1 VEZ POR MES: LIMPIAR EL CAÑO",
+"col": "ice",
+"at": 917.57,
+"out": 921.07
+},
+{
+"k": "step",
+"n": 7,
+"name": "LOS LADRILLOS ADENTRO · EL PREMIO",
+"col": "amber",
+"at": 940.05,
+"out": 944.05
+},
+{
+"k": "chip",
+"txt": "CHAPA DE 1 MM = NO GUARDA CALOR",
+"col": "ice",
+"at": 971.19,
+"out": 974.69
+},
+{
+"k": "big",
+"txt": "5 CM",
+"sub": "DE ARENA SECA EN EL FONDO",
+"col": "amber",
+"at": 1002.15,
+"out": 1005.35
+},
+{
+"k": "chip",
+"txt": "1 · PROTEGEN LA CHAPA",
+"at": 1021.65,
+"out": 1025.15
+},
+{
+"k": "stamp",
+"txt": "2 · UNA BATERÍA DE CALOR",
+"at": 1034.33,
+"out": 1037.53
+},
+{
+"k": "versus",
+"title": "2 HORAS DESPUÉS DE APAGAR",
+"L": {
+"label": "CON LADRILLOS",
+"val": "CALIENTE",
+"h": 0.95,
+"col": "#ffb257",
+"mark": "ok"
+},
+"R": {
+"label": "VACÍO",
+"val": "FRÍO",
+"h": 0.3,
+"col": "#8fd6ff",
+"mark": "x"
+},
+"at": 1047.93,
+"out": 1055.43
+},
+{
+"k": "big",
+"txt": "+5-6 °C",
+"sub": "4 HORAS DESPUÉS DE LA ÚLTIMA BRASA",
+"col": "amber",
+"at": 1066.49,
+"out": 1070.49
+},
+{
+"k": "big",
+"txt": "18",
+"sub": "LADRILLOS REFRACTARIOS + ARENA",
+"col": "amber",
+"at": 1077.93,
+"out": 1081.13
+},
+{
+"k": "stamp",
+"txt": "LADRILLOS SECOS",
+"at": 1099.11,
+"out": 1101.91
+},
+{
+"k": "step",
+"n": 8,
+"name": "LA PARRILLA Y EL AIRE",
+"at": 1113.97,
+"out": 1117.97
+},
+{
+"k": "chip",
+"txt": "PARRILLA A 10 CM DEL FONDO",
+"col": "ice",
+"at": 1134.91,
+"out": 1138.41
+},
+{
+"k": "chip",
+"txt": "ENTRADA DE AIRE: Ø 5 CM",
+"col": "ice",
+"at": 1161.69,
+"out": 1165.19
+},
+{
+"k": "chip",
+"txt": "CHAPITA + MARIPOSA = LOS 2 CONTROLES",
+"at": 1182.55,
+"out": 1187.05
+},
+{
+"k": "big",
+"txt": "1 H 30",
+"sub": "UN TRONCO GRUESO",
+"col": "amber",
+"at": 1195.41,
+"out": 1198.61
+},
+{
+"k": "step",
+"n": 9,
+"name": "DISTANCIAS Y MONÓXIDO",
+"col": "red",
+"at": 1206.63,
+"out": 1210.63
+},
+{
+"k": "big",
+"txt": "90 CM",
+"sub": "DE TODO LO QUE SE PRENDA",
+"col": "red",
+"at": 1228.93,
+"out": 1232.13
+},
+{
+"k": "big",
+"txt": "45 CM",
+"sub": "CON CHAPA SEPARADA DE LA MADERA",
+"col": "amber",
+"at": 1245.11,
+"out": 1248.31
+},
+{
+"k": "stamp",
+"txt": "MONÓXIDO DE CARBONO",
+"at": 1264.67,
+"out": 1267.67
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "SIN OLOR",
+"col": "red",
+"at": 1274.03
+},
+{
+"txt": "SIN COLOR",
+"col": "red",
+"at": 1275.03
+},
+{
+"txt": "NO LO VES",
+"col": "red",
+"at": 1276.07
+}
+],
+"at": 1274.03,
+"out": 1278.57
+},
+{
+"k": "check",
+"title": "3 REGLAS QUE NO SE NEGOCIAN",
+"rows": [
+{
+"txt": "Chimenea afuera, tirando",
+"at": 1292.73
+},
+{
+"txt": "Entrada de aire siempre",
+"at": 1305.37
+},
+{
+"txt": "Detector de monóxido",
+"at": 1314.11
+}
+],
+"at": 1290.63,
+"out": 1319.11
+},
+{
+"k": "stamp",
+"txt": "SI CHILLA: ABRÍ Y SALÍ",
+"at": 1323.47,
+"out": 1326.67
+},
+{
+"k": "chip",
+"txt": "LA PRUEBA · TERMÓMETRO EN LA PARED",
+"col": "ice",
+"at": 1348.89,
+"out": 1352.39
+},
+{
+"k": "clock",
+"marks": [
+[
+1355.97,
+7.0
+],
+[
+1374.81,
+8.0
+],
+[
+1378.01,
+9.0
+],
+[
+1393.73,
+18.0
+],
+[
+1398.11,
+22.0
+],
+[
+1411.57,
+7.0
+]
+],
+"at": 1355.97,
+"out": 1415.57
+},
+{
+"k": "temp",
+"a": 4,
+"b": 4,
+"sub": "07:00 · AFUERA 2 °C",
+"col": "ice",
+"at": 1357.33,
+"out": 1361.33
+},
+{
+"k": "temp",
+"a": 4,
+"b": 16,
+"sub": "09:00",
+"col": "amber",
+"at": 1378.01,
+"out": 1382.01
+},
+{
+"k": "temp",
+"a": 16,
+"b": 18,
+"sub": "SE MANTIENE · 1 TRONCO CADA 1 H 30",
+"col": "amber",
+"at": 1388.19,
+"out": 1392.69
+},
+{
+"k": "temp",
+"a": 18,
+"b": 12,
+"sub": "22:00 · AFUERA 0 °C",
+"col": "amber",
+"at": 1405.03,
+"out": 1409.03
+},
+{
+"k": "temp",
+"a": 12,
+"b": 7,
+"sub": "07:00 · SIN FUEGO TODA LA NOCHE",
+"col": "amber",
+"at": 1413.93,
+"out": 1418.43
+},
+{
+"k": "big",
+"txt": "1½",
+"sub": "CARRETILLAS DE LEÑA EN TODO EL DÍA",
+"col": "green",
+"at": 1420.89,
+"out": 1424.09
+},
+{
+"k": "big",
+"txt": "0",
+"sub": "GOTAS DE GAS",
+"col": "green",
+"at": 1429.61,
+"out": 1432.81
+},
+{
+"k": "stamp",
+"txt": "AL REVÉS",
+"at": 1434.77,
+"out": 1437.37
+},
+{
+"k": "chip",
+"txt": "SE PRENDE DE ARRIBA PARA ABAJO",
+"col": "amber",
+"at": 1471.93,
+"out": 1476.43
+},
+{
+"k": "chip",
+"txt": "SE CORTA UN INVIERNO · SE QUEMA EL OTRO",
+"col": "ice",
+"at": 1507.02,
+"out": 1511.52
+},
+{
+"k": "step",
+"n": 10,
+"name": "LA SEGUNDA VIDA: AGUA CALIENTE",
+"at": 1556.56,
+"out": 1560.56
+},
+{
+"k": "chip",
+"txt": "CAÑO DE COBRE DE ½\" EN ESPIRAL",
+"col": "ice",
+"at": 1575.84,
+"out": 1579.34
+},
+{
+"k": "stamp",
+"txt": "TERMOSIFÓN: SIN BOMBA",
+"at": 1602.86,
+"out": 1605.86
+},
+{
+"k": "stamp",
+"txt": "TANQUE SIEMPRE ABIERTO",
+"at": 1613.54,
+"out": 1616.74
+},
+{
+"k": "big",
+"txt": "60 L",
+"sub": "DE AGUA CALIENTE GRATIS",
+"col": "green",
+"at": 1636.68,
+"out": 1639.88
+},
+{
+"k": "chip",
+"txt": "NUNCA: PLÁSTICO · GOMA · PINTADO",
+"col": "red",
+"at": 1660.32,
+"out": 1664.82
+},
+{
+"k": "deal",
+"at": 1684.02,
+"out": 1688.52
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "EL TAMBOR SIN SABER QUÉ TUVO",
+"at": 1686.3,
+"out": 1694.3
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "LA CHIMENEA CORTA O ACOSTADA",
+"at": 1701.52,
+"out": 1709.52
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "EL TAMBOR SIN LADRILLOS",
+"at": 1714.08,
+"out": 1722.08
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "AL ROJO Y SIN TRABA",
+"at": 1725.86,
+"out": 1733.86
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "CUARTO CERRADO SIN DETECTOR",
+"at": 1746.44,
+"out": 1754.44
+},
+{
+"k": "chip",
+"txt": "💬 MARÍA CRISTINA · ARGENTINA",
+"col": "ice",
+"at": 1761.52,
+"out": 1766.52
+},
+{
+"k": "chip",
+"txt": "💬 HÉCTOR",
+"col": "ice",
+"at": 1809.82,
+"out": 1813.82
+},
+{
+"k": "chip",
+"txt": "💬 DOGO · ARGENTINA",
+"col": "ice",
+"at": 1827.54,
+"out": 1831.54
+},
+{
+"k": "chip",
+"txt": "💬 PATRICIA",
+"col": "ice",
+"at": 1853.22,
+"out": 1857.22
+},
+{
+"k": "recap",
+"rows": [
+1876.22,
+1889.08,
+1897.44,
+1907.48,
+1915.62,
+1923.64,
+1929.38
+],
+"at": 1873.02,
+"out": 1935.38
+},
+{
+"k": "ask",
+"at": 1957.26,
+"out": 1967.26
+}
+],
+"cta1": {
+"guide": 98.66,
+"book": 111.5,
+"page": 112.84,
+"desc": 127.06,
+"manual": "MANUAL 2 · ESTUFAS DE CHATARRA",
+"img": "m2_p055",
+"pageTxt": "PÁG. 55 · LADRILLOS ALREDEDOR: EL CALOR QUE DURA",
+"end": 133.06
+},
+"cta2": {
+"guide": 1524.66,
+"book": 1526.14,
+"page": 1536.74,
+"desc": 1553.78,
+"manual": "MANUAL 2 · ESTUFAS DE CHATARRA",
+"img": "m2_p055",
+"pageTxt": "PÁG. 55 · EL CALOR QUE DURA",
+"end": 1559.78
+},
+"cta3": {
+"desc": 1943.4,
+"end": 1948.4
+},
+"end": 1964.92,
+"st": {
+"fire": [
+[
+0,
+1964.92
+]
+],
+"doorOpen": [
+[
+514.167,
+659.587
+],
+[
+1113.974,
+1206.634
+]
+],
+"measure": [
+[
+536.807,
+558.787
+]
+],
+"smokeBlack": [
+[
+791.667,
+810.187
+]
+],
+"leakUp": [
+[
+791.667,
+810.187
+]
+],
+"dist": [
+[
+1215.254,
+1263.454
+]
+],
+"coil": [
+[
+1556.561,
+1684.021
+]
+],
+"tank": [
+[
+1556.561,
+1684.021
+]
+],
+"flow": [
+[
+1602.861,
+1684.021
+]
+],
+"books": [
+[
+98.16,
+133.06
+],
+[
+1524.16,
+1559.78
+],
+[
+1942.9,
+1948.4
+]
+],
+"hero": [
+[
+111.5,
+133.06
+],
+[
+1526.14,
+1559.78
+]
+],
+"dawn": [
+[
+1355.974,
+1373.014
+],
+[
+1411.574,
+1419.154
+]
+]
+},
+"hb": [
+[
+0,
+1
+]
+],
+"txt": {
+"recapTitle": "LA ESTUFA DE TAMBOR",
+"recap": [
+"Saber qué tuvo · lavar ×3",
+"Puerta: el mismo pedazo",
+"Patas a 20 cm · base",
+"Chimenea vertical 3-4 m",
+"Ladrillos + arena adentro",
+"Parrilla y entrada de aire",
+"90 cm · aire · detector"
+],
+"ask": [
+"CUÉNTAME EN LOS COMENTARIOS",
+"¿Tienes un tambor viejo tirado?",
+"…¿o ya hiciste una estufa con uno?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+45.1,
+53.1
+]
+}
+}

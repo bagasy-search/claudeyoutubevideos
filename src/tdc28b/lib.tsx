@@ -6,7 +6,7 @@ import { loadFont } from "@remotion/google-fonts/Montserrat";
 export const { fontFamily: FONT } = loadFont("normal", { weights: ["600", "800", "900"], subsets: ["latin"] });
 export const FPS = 30;
 export const s = (t: number) => Math.round(t * FPS);
-export const P = "tdc28a/";
+export const P = "tdc28b/";
 const clamp = (x: number) => Math.max(0, Math.min(1, x));
 export const sm = (x: number) => { const c = clamp(x); return c * c * (3 - 2 * c); };
 export const e = (t: number, a: number, b: number) => sm((t - a) / (b - a));

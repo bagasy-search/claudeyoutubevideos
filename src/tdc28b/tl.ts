@@ -1,4 +1,4 @@
-// tdc28a (desde tdc30agua) · LÍNEA DE TIEMPO del mundo (segundos de la LOCUCIÓN, anclados a frases del ASR de Groq por plan.py).
+// tdc28b (desde tdc30agua) · LÍNEA DE TIEMPO del mundo (segundos de la LOCUCIÓN, anclados a frases del ASR de Groq por plan.py).
 // KEYS = la única cámara (sin cortes): los tramos de plan.json (cam) → un encuadre con nombre y un empuje lento.
 // ST(t) = el estado del taller: el fuego, la olla, el tanque con el serpentín, el serpentín del caño, la caja de heno, la guía.
 import PLAN from "./plan.json";
@@ -21,6 +21,9 @@ export const F: Record<string, { p: number[]; l: number[]; fov: number }> = {
   coilIn: { p: [1.45, 0.62, -0.25], l: [1.4, 0.41, -1.6], fov: 42 },
   coil: { p: [2.55, 1.55, -0.4], l: [1.4, 1.35, -1.86], fov: 44 },
   hay: { p: [-0.2, 1.05, 0.45], l: [-0.8, 0.28, -0.85], fov: 44 },
+  // planos limpios del modelo (28-oct: nada de galpón vacío)
+  duo: { p: [0.3, 1.25, 1.55], l: [0.3, 0.45, -1.2], fov: 46 },
+  drum34: { p: [2.6, 1.05, 0.2], l: [1.4, 0.45, -1.5], fov: 42 },
 };
 const k = (t: number, n: string, dz = 0, arc?: number): Key => {
   const f = F[n] ?? F.wide;
@@ -31,6 +34,10 @@ const k = (t: number, n: string, dz = 0, arc?: number): Key => {
 type Plan = { cam: [number, number, string][]; end: number };
 const CAM = (PLAN as unknown as Plan).cam;
 
+// el «wide» del plan ya no se usa: cada tramo abierto toma un plano limpio del modelo, rotando para no repetir
+const ALT = ["drum34", "duo", "drumFront"];
+let altI = 0;
+for (const c of CAM) if (c[2] === "wide") c[2] = ALT[altI++ % ALT.length];
 function buildKeys(): Key[] {
   let lastName = CAM[0]?.[2] ?? "wide";
   const out: Key[] = [k(0, lastName)];
