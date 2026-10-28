@@ -1,0 +1,515 @@
+{
+ "desc": "🪟 Las 10 ventanas de hoy + El Método del Cerrajero",
+ "replies": [],
+ "pages": {
+  "l3 12": {
+   "hl": "UN PALO EN EL RIEL: LA HOJA NO ABRE MÁS DE 7 CM",
+   "n": 1,
+   "bar": [
+    0.11722598356359146,
+    0.0838380004420425,
+    0.7462097492093355,
+    0.02605560572460444
+   ]
+  },
+  "l3 15": {
+   "hl": "VENTILAR CON LA HOJA TRABADA A 7 CM",
+   "n": 4,
+   "bar": [
+    0.12746916876898873,
+    0.08428910765985045,
+    0.5846896826052198,
+    0.02656153476599491
+   ]
+  },
+  "l3 36": {
+   "hl": "PELÍCULA DE SEGURIDAD EN LOS VIDRIOS DE LA CALLE",
+   "n": 13,
+   "bar": [
+    0.14734260708678001,
+    0.0838380004420425,
+    0.758309208489711,
+    0.02605560572460444
+   ]
+  },
+  "l3 13": {
+   "hl": "UN TORNILLO QUE IMPIDE QUE LA HOJA SE LEVANTE",
+   "n": 2,
+   "bar": [
+    0.12533202825808057,
+    0.0838380004420425,
+    0.7355684517255796,
+    0.02605560572460444
+   ]
+  }
+ },
+ "heroes": [
+  {
+   "k": "stopwatch",
+   "at": 8.86,
+   "out": 13.36,
+   "v": 4,
+   "lab": "SE ABRE EN 4 SEGUNDOS",
+   "bg": "destornillador_pestillo",
+   "mode": "iris"
+  },
+  {
+   "k": "redact",
+   "at": 86.8,
+   "out": 94.3,
+   "title": "LAS 10 VENTANAS DE HOY",
+   "items": [
+    {
+     "t": "EL PALO EN EL RIEL",
+     "at": 0.5
+    },
+    {
+     "t": "EL PESTILLO DE CHAPA",
+     "at": 0.9
+    },
+    {
+     "t": "LA TRABA SIN TALADRO",
+     "at": 1.3
+    },
+    {
+     "t": "LA VENTANA DEL BAÑO",
+     "at": 1.7
+    },
+    {
+     "t": "EL LAVADERO",
+     "at": 2.1
+    },
+    {
+     "t": "LAS REJAS",
+     "at": 2.5
+    }
+   ],
+   "stamp": "Nº 10 · AL FINAL",
+   "stampAt": 4.2,
+   "bg": "b_lavadero_prom",
+   "mode": "drop"
+  },
+  {
+   "k": "odometer",
+   "at": 140.72,
+   "out": 146.22,
+   "z": 1.5,
+   "v": 30,
+   "u": "AÑOS DE CERRAJERO",
+   "sub": "UNA CERRAJERÍA DE BARRIO",
+   "bg": "b_c_taller",
+   "mode": "shutter"
+  },
+  {
+   "k": "rail",
+   "at": 188.62,
+   "out": 196.12,
+   "stickAt": 3.0,
+   "bg": "b_tarde",
+   "mode": "wipe"
+  },
+  {
+   "k": "polaroid",
+   "at": 300.64,
+   "out": 306.14,
+   "img": "b_carmen",
+   "n": "UN MES DESPUÉS",
+   "sub": "MARCAS DE DESTORNILLADOR",
+   "stamp": "NO PUDIERON",
+   "stampAt": 3.6,
+   "bg": "b_carmen",
+   "mode": "blinds"
+  },
+  {
+   "k": "latch",
+   "at": 360.2,
+   "out": 366.7,
+   "bg": "b_tornillito",
+   "mode": "split"
+  },
+  {
+   "k": "exploded",
+   "at": 441.74,
+   "out": 447.24,
+   "items": [
+    {
+     "t": "LA TRABA",
+     "img": "traba_adhesiva",
+     "at": 0.6
+    },
+    {
+     "t": "CINTA DOBLE FAZ",
+     "img": "b_lengueta",
+     "at": 1.2
+    },
+    {
+     "t": "LA LENGÜETA",
+     "img": "b_polvo",
+     "at": 1.8
+    }
+   ],
+   "hi": 2,
+   "bg": "traba_adhesiva",
+   "mode": "diag"
+  },
+  {
+   "k": "versus",
+   "at": 489.33,
+   "out": 496.33,
+   "items": [
+    {
+     "t": "TRABA ADHESIVA",
+     "img": "b_pulgar",
+     "at": 0.5
+    },
+    {
+     "t": "PALO DE MADERA",
+     "img": "b_dos_lugares",
+     "at": 1.3
+    }
+   ],
+   "win": 3.4,
+   "best": 1,
+   "bg": "b_pulgar",
+   "mode": "split"
+  },
+  {
+   "k": "louvers",
+   "at": 558.71,
+   "out": 566.21,
+   "silAt": 3.2,
+   "bg": "b_saca_tiras",
+   "mode": "shutter"
+  },
+  {
+   "k": "gauge",
+   "at": 624.19,
+   "out": 630.69,
+   "v": 0.9,
+   "lab": "EL BAÑO Y EL LAVADERO",
+   "kick": "LA QUE TODOS OLVIDAN",
+   "title": "POR DONDE ENTRAN",
+   "bg": "b_c_donde_bano",
+   "mode": "iris"
+  },
+  {
+   "k": "mesh",
+   "at": 660.03,
+   "out": 666.53,
+   "meshAt": 2.6,
+   "bg": "b_malla",
+   "mode": "wipe"
+  },
+  {
+   "k": "strip",
+   "at": 677.43,
+   "out": 683.93,
+   "items": [
+    {
+     "t": "EL SÓTANO",
+     "img": "b_vuelta",
+     "at": 0.5
+    },
+    {
+     "t": "ABIERTA TODO EL VERANO",
+     "img": "b_raul",
+     "at": 1.7
+    },
+    {
+     "t": "SIN HERRAMIENTAS",
+     "img": "b_pegboard",
+     "at": 2.9
+    }
+   ],
+   "stamp": "ENTRARON POR AHÍ",
+   "stampAt": 4.6,
+   "bad": 1,
+   "bg": "b_vuelta",
+   "mode": "shutter"
+  },
+  {
+   "k": "bars",
+   "at": 741.47,
+   "out": 748.47,
+   "epoxyAt": 3.4,
+   "bg": "b_tornillos_fuera",
+   "mode": "blinds"
+  },
+  {
+   "k": "reach",
+   "at": 802.93,
+   "out": 809.43,
+   "moveAt": 2.2,
+   "lab": "SI HAY UN INCENDIO",
+   "lab2": "ABRE DESDE ADENTRO",
+   "bg": "b_humo",
+   "mode": "wipe"
+  },
+  {
+   "k": "gravel",
+   "at": 858.19,
+   "out": 864.19,
+   "roseAt": 2.6,
+   "bg": "b_rosal",
+   "mode": "blinds"
+  },
+  {
+   "k": "balance",
+   "at": 905.91,
+   "out": 912.91,
+   "items": [
+    {
+     "t": "ARBUSTO ALTO: ESCONDITE",
+     "img": "b_arbusto",
+     "at": 0.6
+    },
+    {
+     "t": "BAJAS Y CON ESPINAS",
+     "img": "b_c_poda",
+     "at": 1.4
+    }
+   ],
+   "win": 3.2,
+   "best": 1,
+   "bg": "b_arbusto",
+   "mode": "drop"
+  },
+  {
+   "k": "measure",
+   "at": 971.1,
+   "out": 976.1,
+   "v": 8,
+   "u": "cm",
+   "pre": "",
+   "lab": "ABIERTA, PERO CON TOPE",
+   "img": "b_mano_entra",
+   "bg": "b_mano_entra",
+   "mode": "wipe"
+  },
+  {
+   "k": "crack",
+   "at": 1097.46,
+   "out": 1104.46,
+   "bg": "b_codazo",
+   "mode": "iris"
+  },
+  {
+   "k": "hourglass",
+   "at": 1151.24,
+   "out": 1157.24,
+   "dur": 4,
+   "lab": "2 DÍAS PARA QUE SEQUE",
+   "bg": "b_cuter",
+   "mode": "wipe"
+  },
+  {
+   "k": "lift",
+   "at": 1213.5,
+   "out": 1221.0,
+   "screwAt": 3.6,
+   "bg": "b_juego",
+   "mode": "drop"
+  },
+  {
+   "k": "peephole",
+   "at": 1279.4,
+   "out": 1285.4,
+   "img": "b_apoyada",
+   "stamp": "EL PALO SEGUÍA EN EL RIEL",
+   "stampAt": 2.8,
+   "bg": "b_apoyada",
+   "mode": "iris"
+  },
+  {
+   "k": "checklist",
+   "at": 1334.4,
+   "out": 1339.9,
+   "title": "LA PUERTA DEL PATIO",
+   "items": [
+    {
+     "t": "Palo grueso o caño en el riel",
+     "at": 0.6
+    },
+    {
+     "t": "Tornillo arriba: no sube",
+     "at": 1.4
+    },
+    {
+     "t": "Película en el vidrio",
+     "at": 2.2
+    }
+   ],
+   "bg": "b_gancho",
+   "mode": "drop"
+  },
+  {
+   "k": "calendar",
+   "at": 1392.48,
+   "out": 1398.98,
+   "v": 7,
+   "top": "AÑOS",
+   "lab": "SIN QUE LE ENTREN",
+   "sub": "SE SACA CON UNA MANO",
+   "bg": "b_c_ruben",
+   "mode": "shutter"
+  },
+  {
+   "k": "cork",
+   "at": 1445.95,
+   "out": 1451.45,
+   "title": "VENTANA POR VENTANA",
+   "items": [
+    {
+     "t": "EL FRENTE",
+     "at": 0.6
+    },
+    {
+     "t": "LOS COSTADOS",
+     "at": 1.2
+    },
+    {
+     "t": "EL BAÑO",
+     "at": 1.8
+    },
+    {
+     "t": "EL SÓTANO",
+     "at": 2.4
+    }
+   ],
+   "bg": "b_costado",
+   "mode": "blinds"
+  },
+  {
+   "k": "soundwave",
+   "at": 1510.75,
+   "out": 1517.25,
+   "z": 1.15,
+   "img": "b_cuarto",
+   "txt": "¡LUZ!",
+   "lab": "QUE SEPA QUE ESTÁS DESPIERTA",
+   "bg": "b_cuarto",
+   "mode": "iris"
+  },
+  {
+   "k": "street",
+   "at": 1529.91,
+   "out": 1535.41,
+   "lit": [
+    1,
+    0,
+    1,
+    0.5,
+    0
+   ],
+   "target": 1,
+   "flipAt": 4.2,
+   "lab": "TODAS BAJAS = CASA VACÍA",
+   "bg": "b_persianas",
+   "mode": "wipe"
+  },
+  {
+   "k": "deck",
+   "at": 1575.99,
+   "out": 1583.99,
+   "title": "5 ERRORES",
+   "items": [
+    {
+     "t": "CONFIAR EN EL PESTILLO",
+     "img": "b_olga",
+     "at": 0.5
+    },
+    {
+     "t": "EL PALO CORTADO A OJO",
+     "img": "b_aurelio",
+     "at": 1.4
+    },
+    {
+     "t": "OLVIDAR EL BAÑO",
+     "img": "b_aurelio_ventanas",
+     "at": 2.3
+    },
+    {
+     "t": "ABIERTA SIN TOPE",
+     "img": "b_madera",
+     "at": 3.2
+    },
+    {
+     "t": "PALO SIN TORNILLO ARRIBA",
+     "img": "b_c_treinta",
+     "at": 4.1
+    }
+   ],
+   "bg": "b_olga",
+   "mode": "blinds"
+  },
+  {
+   "k": "phone",
+   "at": 1693.39,
+   "out": 1699.89,
+   "items": [
+    {
+     "n": "PREGUNTA",
+     "t": "¿Y si sabe cuándo no estás?",
+     "at": 0.6
+    },
+    {
+     "n": "CLAUDIO",
+     "t": "Que tu casa no se abra igual.",
+     "at": 2.0
+    }
+   ],
+   "bg": "b_calle",
+   "mode": "drop"
+  },
+  {
+   "k": "chalk",
+   "at": 1750.09,
+   "out": 1756.09,
+   "title": "LAS 10 DE HOY",
+   "items": [
+    {
+     "t": "palo en el riel",
+     "at": 0.3
+    },
+    {
+     "t": "pestillo de chapa",
+     "at": 0.5
+    },
+    {
+     "t": "traba adhesiva",
+     "at": 0.7
+    },
+    {
+     "t": "silicona en el baño",
+     "at": 0.9
+    },
+    {
+     "t": "malla en el lavadero",
+     "at": 1.1
+    },
+    {
+     "t": "rejas antirrobo",
+     "at": 1.3
+    },
+    {
+     "t": "espinas y grava",
+     "at": 1.5
+    },
+    {
+     "t": "ventana con tope",
+     "at": 1.7
+    },
+    {
+     "t": "película en el vidrio",
+     "at": 1.9
+    },
+    {
+     "t": "tornillo que no deja subir",
+     "at": 2.1
+    }
+   ],
+   "bg": "b_casa_al_lado",
+   "mode": "split"
+  }
+ ]
+}
