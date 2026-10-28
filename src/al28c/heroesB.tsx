@@ -117,8 +117,8 @@ export const HTired: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} 
   const D = ["M0 120 L80 140 L160 110 L260 170 L340 150", "M120 0 L130 80 L160 110 L150 220 L180 340", "M260 170 L280 260 L340 300", "M40 260 L150 220 L200 260"];
   return <>
     <Head tt={tt} kick="40 AÑOS DE ESMALTE" title="A VECES SE PARTE" col={RED} />
-    <div style={{ position: "absolute", left: 590, top: 300, width: 360, height: 360, transform: `translateX(${-30 * br}px) rotate(${-4 * br}deg)` }}><Tile x={180} y={180} s={360} tt={tt} /></div>
-    <div style={{ position: "absolute", left: 590, top: 300, width: 360, height: 360, transform: `translateX(${30 * br}px) rotate(${4 * br}deg)`, clipPath: br > 0 ? "polygon(55% 0, 100% 0, 100% 100%, 45% 100%, 50% 50%)" : "none", opacity: br }}><Tile x={180} y={180} s={360} tt={tt} /></div>
+    <div style={{ position: "absolute", left: 590, top: 300, width: 180, height: 360, overflow: "hidden", transform: `translateX(${-30 * br}px) rotate(${-4 * br}deg)`, transformOrigin: "100% 100%" }}><Tile x={180} y={180} s={360} tt={tt} /></div>
+    <div style={{ position: "absolute", left: 770, top: 300, width: 180, height: 360, overflow: "hidden", transform: `translateX(${30 * br}px) rotate(${4 * br}deg)`, transformOrigin: "0 100%" }}><Tile x={0} y={180} s={360} tt={tt} /></div>
     <svg width={360} height={360} style={{ position: "absolute", left: 590, top: 300 }}>{D.map((d, i) => <path key={i} d={d} fill="none" stroke="#6e5a44" strokeWidth={2.5} strokeDasharray={420} strokeDashoffset={420 * (1 - cl(p * 1.4 - i * 0.15))} />)}</svg>
     <div style={{ position: "absolute", left: 1080, top: 300, width: 460, height: 460, borderRadius: "50%", border: "14px solid #3a3a3e", overflow: "hidden", background: "#efe6cf", boxShadow: "0 30px 80px rgba(0,0,0,.6)" }}>
       <svg width={460} height={460}>{D.map((d, i) => <path key={i} d={d} transform="scale(1.3) translate(-20 -10)" fill="none" stroke="#6e5a44" strokeWidth={4} strokeDasharray={600} strokeDashoffset={600 * (1 - cl(p * 1.4 - i * 0.15))} />)}</svg>
