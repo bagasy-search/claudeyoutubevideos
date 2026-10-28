@@ -11,12 +11,16 @@ import { Personaje } from "../capa3d";
 import { Dato, EscenaB, HudSupervivencia, Idioma, MarcaHUD } from "../escena";
 import { Simbolo } from "../simbolos";
 import { Apertura } from "./Apertura";
+import { B02P } from "./Piloto";
+import { B03P, B04P, B05aP, B05bP, B06aP, B06bP } from "./Bloques1";
+import { B07P, B08P, B09P, B10P } from "./Bloques2";
+import { B11P, B12P, B13P, B14P } from "./Bloques3";
 import { CallePintada, MurallaPintada, PuertoPintado, TabernaPintada } from "../sets/pintado";
 import { OFICIOS, ROPA } from "../elenco";
 import { CALLE_M, CalleMedieval, Carro, Cerdo, Gallina, Gato, MURALLA_M, Muralla, PAL_LONDRES as PAL, PISO, Perro, PUERTO_M, Puerto, puntoSoga, Rata, TABERNA_M, Taberna } from "../sets/londres";
 
 export type LondresProps = { idioma: Idioma; durs: number[]; voz?: string; musica?: string };
-type B = { D: number; L: Idioma };
+type B = { D: number; L: Idioma; f0?: number };
 const cl = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const H = PISO - 210; // altura de mira para un plano medio de alguien parado
 const tx = (L: Idioma, es: string, en: string) => (L === "es" ? es : en);
@@ -527,22 +531,23 @@ const B14: React.FC<B> = ({ D, L }) => {
 
 // ── armado ───────────────────────────────────────────────────────────────────────────────────────────────────────
 // bloque → [componentes, fracción donde se parte (si son 2 planos), transición de entrada]
-type Def = { el: React.FC<B>[]; corte?: number; trans?: PlanoM["trans"] };
-const DEFS: Def[] = [
+// corte = [s ES, s EN] donde el bloque pasa al segundo set (en una pausa de la voz); el 2º pedazo recibe f0
+type Def = { el: React.FC<B>[]; corte?: [number, number]; trans?: PlanoM["trans"] };
+export const DEFS: Def[] = [
   { el: [Apertura] },
-  { el: [B02], trans: { tipo: "fundido", d: 16 } },
-  { el: [B03], trans: { tipo: "cortina", d: 16 } },
-  { el: [B04], trans: { tipo: "barrido", d: 14 } },
-  { el: [B05a, B05b], corte: 0.32, trans: { tipo: "barrido", d: 14 } },
-  { el: [B06], trans: { tipo: "fundido", d: 24 } },
-  { el: [B07], trans: { tipo: "luz", d: 20 } },
-  { el: [B08], trans: { tipo: "cortina", d: 16 } },
-  { el: [B09], trans: { tipo: "fundido", d: 20 } },
-  { el: [B10], trans: { tipo: "cortina", d: 16 } },
-  { el: [B11a, B11b], corte: 0.45, trans: { tipo: "fundido", d: 24 } },
-  { el: [B12], trans: { tipo: "cortina", d: 16 } },
-  { el: [B13], trans: { tipo: "barrido", d: 14 } },
-  { el: [B14], trans: { tipo: "fundido", d: 20 } },
+  { el: [B02P], trans: { tipo: "fundido", d: 16 } },
+  { el: [B03P], trans: { tipo: "cortina", d: 16 } },
+  { el: [B04P], trans: { tipo: "barrido", d: 14 } },
+  { el: [B05aP, B05bP], corte: [8.95, 13.5], trans: { tipo: "barrido", d: 14 } },
+  { el: [B06aP, B06bP], corte: [6.0, 8.3], trans: { tipo: "fundido", d: 24 } },
+  { el: [B07P], trans: { tipo: "luz", d: 20 } },
+  { el: [B08P], trans: { tipo: "cortina", d: 16 } },
+  { el: [B09P], trans: { tipo: "fundido", d: 20 } },
+  { el: [B10P], trans: { tipo: "cortina", d: 16 } },
+  { el: [B11P], trans: { tipo: "fundido", d: 24 } },
+  { el: [B12P], trans: { tipo: "cortina", d: 16 } },
+  { el: [B13P], trans: { tipo: "barrido", d: 14 } },
+  { el: [B14P], trans: { tipo: "fundido", d: 20 } },
 ];
 const HUD_M: Omit<MarcaHUD, "f">[] = [
   { dia: "1", hora: "06:00", prob: 50 }, { dia: "1", hora: "07:00", prob: 45 }, { dia: "1", hora: "08:00", prob: 55 }, { dia: "1", hora: "11:00", prob: 62 },
@@ -564,9 +569,9 @@ export const Londres1348: React.FC<LondresProps> = ({ idioma, durs, voz, musica 
     marcas.push({ f: t, ...HUD_M[i] });
     if (d.el.length === 1) planos.push({ dur: D, el: React.createElement(d.el[0], { D, L: idioma }), trans: d.trans });
     else {
-      const a = Math.round(D * (d.corte ?? 0.5));
+      const a = Math.round((d.corte ? d.corte[idioma === "es" ? 0 : 1] : D / 60) * 30);
       planos.push({ dur: a, el: React.createElement(d.el[0], { D: a, L: idioma }), trans: d.trans });
-      planos.push({ dur: D - a, el: React.createElement(d.el[1], { D: D - a, L: idioma }), trans: { tipo: "cortina", d: 16 } });
+      planos.push({ dur: D - a, el: React.createElement(d.el[1], { D: D - a, L: idioma, f0: a }), trans: { tipo: "cortina", d: 16 } });
     }
     t += D;
   });
@@ -580,4 +585,12 @@ export const Londres1348: React.FC<LondresProps> = ({ idioma, durs, voz, musica 
       {musica && <Audio src={staticFile(musica)} volume={0.09} loop />}
     </AbsoluteFill>
   );
+};
+
+// un bloque solo (para revisar stills): n = 0…13, con sus dos pedazos si está partido
+export const BloqueSolo: React.FC<{ n: number; idioma: Idioma; durs: number[] }> = ({ n, idioma, durs }) => {
+  const d = DEFS[n], D = durs[n] + PAUSA;
+  if (d.el.length === 1) return <AbsoluteFill style={{ background: "#000" }}>{React.createElement(d.el[0], { D, L: idioma })}</AbsoluteFill>;
+  const a = Math.round(d.corte![idioma === "es" ? 0 : 1] * 30);
+  return <AbsoluteFill style={{ background: "#000" }}><Montaje planos={[{ dur: a, el: React.createElement(d.el[0], { D: a, L: idioma }) }, { dur: D - a, el: React.createElement(d.el[1], { D: D - a, L: idioma, f0: a }), trans: { tipo: "cortina", d: 16 } }]} /></AbsoluteFill>;
 };

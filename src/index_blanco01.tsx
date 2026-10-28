@@ -1,7 +1,7 @@
 // Canales del stickman blanco · video 1 «Londres 1348». Una animación, dos renders (ES / EN).
 import React from "react";
 import { Composition, registerRoot } from "remotion";
-import { largoLondres, Londres1348 } from "./blanco/v01/Londres1348";
+import { BloqueSolo, largoLondres, Londres1348 } from "./blanco/v01/Londres1348";
 import { Banner, Perfil } from "./blanco/Marca";
 import { Apertura } from "./blanco/v01/Apertura";
 import { Elenco } from "./blanco/elenco";
@@ -20,6 +20,7 @@ const Root = () => (
     <Composition id="Blanco01ES" component={Londres1348 as any} durationInFrames={largoLondres(DUR_ES)} fps={30} width={1920} height={1080} defaultProps={{ idioma: "es", durs: DUR_ES }} />
     <Composition id="Blanco01EN" component={Londres1348 as any} durationInFrames={largoLondres(DUR_EN)} fps={30} width={1920} height={1080} defaultProps={{ idioma: "en", durs: DUR_EN }} />
     <Composition id="Blanco01Apertura" component={AperturaSola as any} durationInFrames={660} fps={30} width={1920} height={1080} defaultProps={{ idioma: "es" }} />
+    {Array.from({ length: 14 }).map((_, n) => ["es", "en"].map((l) => { const d = l === "es" ? DUR_ES : DUR_EN; return <Composition key={`${n}${l}`} id={`Bloque${String(n + 1).padStart(2, "0")}${l.toUpperCase()}`} component={BloqueSolo as any} durationInFrames={d[n] + 12} fps={30} width={1920} height={1080} defaultProps={{ n, idioma: l, durs: d }} />; }))}
     <Composition id="Blanco01Piloto" component={Piloto as any} durationInFrames={1962} fps={30} width={1920} height={1080} defaultProps={{ idioma: "es" }} />
     <Composition id="BlancoElenco" component={Elenco} durationInFrames={60} fps={30} width={1920} height={1080} />
     <Composition id="BlancoPerfil" component={Perfil} durationInFrames={1} fps={30} width={800} height={800} />

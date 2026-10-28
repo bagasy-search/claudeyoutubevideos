@@ -96,7 +96,7 @@ export const CallePintada: React.FC<{ capa: Capa; f: number; variante?: string; 
 
 // ── interior: taberna / posada (hitos de TABERNA_M: barra 600, mesa 1250, cama 1500, fogón 2050) ──────────────────
 export const TabernaPintada: React.FC<{ capa: Capa; f: number; variante?: string }> = ({ capa, f, variante }) => {
-  const posada = variante === "posada";
+  const posada = variante === "posada" || variante === "posada_vacia", vacia = variante === "posada_vacia";
   if (capa === "lejos") return <rect x={-3000} y={-2000} width={9000} height={5000} fill="#2a1c12" />;
   if (capa === "tras") return null;
   if (capa === "frente") return null;
@@ -116,7 +116,7 @@ export const TabernaPintada: React.FC<{ capa: Capa; f: number; variante?: string
       {posada && <>
         <Pieza n="cama" cx={TABERNA_M.cama} base={PISO + 10} alto={330} />
         {/* los cinco desconocidos: bultos bajo la manta que respiran (uno ronca más fuerte) */}
-        {[0, 1, 2, 3, 4].map((k) => {
+        {!vacia && [0, 1, 2, 3, 4].map((k) => {
           const r = 1 + 0.06 * lento(f, k === 2 ? 0.35 : 0.25, k);
           return <g key={k} transform={`translate(${TABERNA_M.cama - 330 + k * 165},${PISO - 190}) scale(1,${r})`}>
             <ellipse cx={0} cy={0} rx={78} ry={34} fill={["#8a4a3a", "#4a6a7a", "#7a7a4a", "#6a4a7a", "#4a7a5a"][k]} stroke="#3a2414" strokeWidth={4} />

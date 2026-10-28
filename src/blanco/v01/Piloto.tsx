@@ -14,10 +14,10 @@ import { Globo, IconoGrande } from "../iconos";
 import { CallePintada, Pieza } from "../sets/pintado";
 import { Cerdo, Gallina, PAL_LONDRES as PAL, PISO, Rata } from "../sets/londres";
 import { Apertura } from "./Apertura";
+import { PMC, reloj } from "./kit";
+export { PMC };
 
 const cl = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
-// plano medio corto (la ref): cintura → coronilla en el alto del cuadro
-export const PMC = { y: PISO - 274, zoom: 3.85 };
 const pmc = (f: number, x: number, extra: Parameters<typeof mira>[4] = {}, dz = 0) => mira(f, x, PMC.y, PMC.zoom + dz, { curva: "inout", ...extra });
 
 // b02 palabra → segundo (asr/b02_es.json)
@@ -35,11 +35,12 @@ export const GLOBOS: { tipo?: Parameters<typeof Globo>[0]["tipo"]; texto?: [stri
   { texto: ["¡BIENVENIDO!", "WELCOME!"], desde: 30.9, hasta: 32.6, x: 1490, y: 300, cola: [1060, 420], tam: 0.8 },
 ];
 
-const B02P: React.FC<{ D: number; L: Idioma }> = ({ D, L }) => {
+// [s ES, s EN] de las palabras que se corresponden (asr/b02_*.json)
+const PARES_B02: [number, number][] = [[0.7, 0.5], [1.9, 1.9], [4.2, 5.0], [7.0, 8.5], [11.3, 14.3], [13.3, 17.4], [14.7, 19.2], [16.9, 22.3], [18.6, 23.8], [19.3, 24.5],
+  [20.2, 25.5], [21.0, 27.2], [22.2, 29.3], [23.0, 30.0], [24.7, 32.6], [25.5, 34.1], [27.1, 35.6], [28.1, 36.8], [29.1, 38.0], [30.8, 40.6]];
+export const B02P: React.FC<{ D: number; L: Idioma }> = ({ D, L }) => {
   const f = useF();
-  const k = D / (946 + 12); // los tiempos son de la voz ES; en EN se estiran parejo (el piloto es ES)
-  const F = (s: number) => Math.round(s * 30 * k);
-  const S = (s: number) => s * k;
+  const { F, S } = reloj(L, PARES_B02);
   const X = 1300; // Tiza en el mercado
   const RIO = 5600; // en el muelle, con el agua detrás
   const tx = (es: string, en: string) => (L === "es" ? es : en);
@@ -91,8 +92,8 @@ const B02P: React.FC<{ D: number; L: Idioma }> = ({ D, L }) => {
         mira(F(4.25), X + 10, PISO - 262, 2.9, { curva: "inout" }), mira(F(6.8), X, PISO - 262, 3.2, { curva: "inout", rot: 0.8 }),
         // «las casas son de madera, torcidas…»: inserto corto por la fachada y vuelve a él mirando arriba
         mira(F(7.1), X + 130, PISO - 430, 1.55, { curva: "inout" }), mira(F(8.3), X + 160, PISO - 640, 1.4, { curva: "inout", rot: -2 }),
-        mira(F(8.32), X, CALLEJON.y - 640, 1.55, { curva: "inout", rot: 1.5 }), mira(F(9.5), X, CALLEJON.y - 680, 1.72, { curva: "inout", rot: -1 }),
-        mira(F(9.52), X, PISO - 272, 2.9, { curva: "inout" }), mira(F(10.9), X + 10, PISO - 280, 3.2, { curva: "inout", rot: 0.5 }),
+        mira(F(8.3) + 1, X, CALLEJON.y - 640, 1.55, { curva: "inout", rot: 1.5 }), mira(F(9.5), X, CALLEJON.y - 680, 1.72, { curva: "inout", rot: -1 }),
+        mira(F(9.5) + 1, X, PISO - 272, 2.9, { curva: "inout" }), mira(F(10.9), X + 10, PISO - 280, 3.2, { curva: "inout", rot: 0.5 }),
         // «la calle casi nunca ve el sol»: plano medio corto, mira arriba
         pmc(F(11.0), X, { rot: -0.8 }, -0.2), pmc(F(13.1), X + 10, {}, 0.1),
         // «No hay alcantarillas»: inserto de los pies en el barro
@@ -103,7 +104,7 @@ const B02P: React.FC<{ D: number; L: Idioma }> = ({ D, L }) => {
         pmc(F(17.0), X, { rot: -0.5 }, -0.15), pmc(F(17.85), X + 10, {}, 0),
         mira(F(17.9), X + 225, PISO - 735, 3.0, { curva: "inout" }), mira(F(19.3), X + 215, PISO - 730, 3.15, { curva: "inout", rot: 0.6 }),
         // «no preguntas. Te apartas»: plano medio de la cintura arriba, salta, ¡splash!
-        mira(F(19.32), X + 100, PISO - 262, 2.3, { curva: "inout" }), mira(F(20.8), X + 170, PISO - 262, 2.6, { curva: "inout" }),
+        mira(F(19.3) + 1, X + 100, PISO - 262, 2.3, { curva: "inout" }), mira(F(20.8), X + 170, PISO - 262, 2.6, { curva: "inout" }),
         // cerdos · gallinas · un perro que te sigue: insertos
         mira(F(21.0), X + 200, PISO - 150, 2.6, { curva: "inout" }), mira(F(22.1), X + 250, PISO - 150, 2.75, { curva: "inout" }),
         mira(F(22.25), X + 330, PISO - 170, 2.75, { curva: "inout" }), mira(F(22.9), X + 345, PISO - 170, 2.85, { curva: "inout" }),
