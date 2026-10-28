@@ -5,7 +5,7 @@ import { AbsoluteFill, interpolate, useVideoConfig } from "remotion";
 import { enPantalla, mira, useF } from "../anikit/camara";
 import { F_HUD, Pildora } from "../anikit/pantalla";
 import { ALDEANA, ALDEANO, CHANNA, ENFERMO, LEO, LEO_CAPUCHA, MONJE_JOVEN, REY, SIDDHARTHA, VIEJO, VIEJO_36 } from "../tenzo/elenco";
-import { Frase, ManoLeo, ManoMara, Rotulo } from "../tenzo/hud";
+import { Frase, HudTenzo, ManoLeo, ManoMara, Rotulo } from "../tenzo/hud";
 import { Baston, Carroza, Cuenco, Laptop, Tel, TelMesa } from "../tenzo/utileria";
 import { TelGrande } from "../tenzo/graficos";
 import { CTO_PUNTOS, Cto, CP, DOBLA_A, doblando, kDe, Lav, LP, SENTADO } from "../tz01/base";
@@ -711,7 +711,7 @@ export const Q73Vi: React.FC = () => (
       <Burbuja x={420} y={330} r={135} desde={k73(360.6)} cx={760} cy={480}><ViejoDib /></Burbuja>
       <Burbuja x={760} y={210} r={120} desde={k73(365.4)} cx={900} cy={420}><MamaDib /></Burbuja>
       <Burbuja x={1460} y={260} r={130} desde={k73(367.5)} cx={1060} cy={430}><rect x={-120} y={-120} width={240} height={240} fill="#e8eef4" /><rect x={-120} y={60} width={240} height={60} fill="#8a8f98" /><BiciDib color="#f4f4f4" /></Burbuja>
-      <ManoLeo texto="how did I not see it?" x={180} y={640} desde={k73(369.2)} tam={84} /></>} />
+      <Pildora texto="HOW DID I NOT SEE IT?" x={520} y={960} desde={k73(369.2)} color="#ffe2a6" tam={52} /></>} />
 );
 // ---------- 74 · «because the palace was very beautiful… it just never shows you the road» (contraplano; dibuja el camino) ----------
 const k74 = kDe(371.1);
@@ -841,7 +841,7 @@ export const Q78Llama: React.FC = () => {
   );
 };
 // ---------- 79 · día cuatro. Screen time: 2 h 06 m (baja desde 9 h 12 m) ----------
-export const Q79Dia4: React.FC = () => <Fondo><TelGrande modo="screentime" min={552} minHasta={126} x={1250} desde={0} /><Hud2 m={126} dia={4} /><Rotulo texto="DAY 4 · 2H 06M" desde={4} /><ManoLeo texto="from 9h 12m" x={150} y={330} desde={20} tam={96} /><ManoLeo texto="to 2h 06m" x={150} y={470} desde={70} tam={96} /></Fondo>;
+export const Q79Dia4: React.FC = () => <Fondo><TelGrande modo="screentime" min={552} minHasta={126} x={1250} y={530} desde={0} /><HudTenzo min={Array.from({ length: 21 }, (_, i) => ({ f: 10 + i * 2, v: Math.round(552 - (552 - 126) * i / 20) }))} dia={4} /><Rotulo texto="DAY 4 · 2H 06M" desde={52} /><ManoLeo texto="from 9h 12m" x={150} y={330} desde={20} tam={96} /><ManoLeo texto="to 2h 06m" x={150} y={470} desde={70} tam={96} /></Fondo>;
 /// ---------- 80 · 2 AM: Leo da vueltas en la cama → inserto: el tel se prende en la mesita → la sombra se inclina en 2 tiempos, más grande que nunca ----------
 const k80 = kDe(412.88);
 const ACOST = { tronco: -60, cabeza: -10, pI: 88, rI: 4, pD: 84, rD: 10, hD: 10, cD: 20, hI: 10, cI: 20 };

@@ -877,7 +877,7 @@ export const Q38Contador: React.FC = () => {
   return (
     <Fondo>
       {f < k(181.85) ? <TelGrande modo="screentime" min={552} sub="YESTERDAY" x={1250} desde={0} pulgar /> : <TelGrande modo="screentime" min={300} minHasta={360} x={1250} desde={k(181.85)} pulgar />}
-      <ManoLeo texto="9h 12m yesterday" x={110} y={330} desde={k(179.2)} tam={100} />
+      <Pildora texto="9h 12m YESTERDAY" x={470} y={360} desde={k(179.2)} color="#ffe2a6" tam={56} />
       <ManoLeo texto="6 hours already today" x={110} y={480} desde={k(182.0)} tam={100} />
       <Hud2 />
     </Fondo>
