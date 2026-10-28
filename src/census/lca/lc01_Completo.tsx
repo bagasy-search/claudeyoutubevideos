@@ -14,7 +14,7 @@ const LUZ = (d = 14, color?: string): Trans => ({ tipo: "luz", d, color });
 
 const CORTES: [number, React.FC, Trans?][] = [
   [0, A.P01Mini], [1.2, A.P02Despierta, LUZ(10, "#fff3d8")], [6.42, A.P03Radio], [9.18, A.P04Calle, FUN()], [15.06, A.P05Vereda], [16.38, A.P06Autos], [17.54, A.P07Ciudad],
-  [18.76, A.P08Ocho, LUZ(12)], [23.14, A.P09Pregunta], [29.4, A.P10Real], [35.38, A.P11Cuenta, { tipo: "cortina", color: "#1d1624" }],
+  [18.76, A.P08Ocho, LUZ(12)], [23.14, A.P09Pregunta], [29.4, A.P10Real],
   [36.18, A.P12Hora, FUN(16)], [42.28, A.P13Theo], [50.7, A.P14Bus], [58.36, A.P15Superior], [63.52, A.P16Campera], [70.22, A.P17Grita],
   [72.7, A.P18Lugares], [77.54, A.P19Holiday], [82.6, A.P20Censo], [95.7, A.P21Existe, LUZ(12)], [103.44, A.P22Luces], [109.19, A.P23Represa],
   [123.17, A.P24Semaforos], [129.83, A.P25Colina], [141.99, A.P26Ventana], [151.37, A.P27June, LUZ(12)], [162.59, A.P28Quedo], [169.31, A.P29Interruptor],

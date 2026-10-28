@@ -33,7 +33,6 @@ import { Contador } from "../../anikit/pantalla";
 import { SuperSinCarro } from "./v3c_v3";
 import { juntas } from "./lc02_planos2_comp";
 import { Cajon, EspaldaPj, GraficoPotenciaV5, InfeccionV5, MejillaV5, PensamientoEnredo } from "./v5b_v5";
-import { FundidoSuave as FundidoV6a } from "./v5a_v5"; // v6a (P56)
 import { GloboV6 } from "./v6a_v6"; // v6a (P79)
 
 const P = LIV_PISO;
@@ -768,7 +767,7 @@ export const P56Nieve: React.FC = () => {
   );
   return (
     <AbsoluteFill>
-      <FundidoV6a c={k(267.1)} a={tomaAB} b={tomaD} />{/* v6a: fundido seno de 8, sin inserto */}
+      {f < k(267.1) ? tomaAB : tomaD}{/* corte seco: el fundido caía en el cuadro del medio (doble exposición) */}
       <Pildora texto="THE LONGEST 4 MINUTES OF HIS LIFE" x={960} y={128} desde={k(264.1)} hasta={k(265.9)} color={AMBAR} tam={40} />
       <Pildora texto="JUNE SAYS NOTHING" x={960} y={128} desde={k(266.32)} hasta={k(267.1)} color="#cfc8e8" tam={40} />
     </AbsoluteFill>

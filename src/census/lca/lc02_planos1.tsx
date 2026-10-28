@@ -33,7 +33,6 @@ import { FilaCuerdas as FilaCuerdasE4, HumoSierra as HumoSierraE4, LenaLiv as Le
 import { Beep, Botas, CanioHollin, EscarchaCanio, Rama, SubFundido, TapaAlarma, TarjetaRopaV4, TermoPoste } from "./v4f_v4"; // v4f (P21-P40)
 import { golpe } from "../../anikit/camara"; // v4f
 import { FundidoSuave as FundidoV5, Linterna as LinternaV5, Miton as MitonV5, RotuloV5 } from "./v5a_v5"; // v5a (P03-P40)
-import { RecuerdoV6 } from "./v6a_v6"; // v6a (P19, P32)
 
 const P = LIV_PISO;
 const B = BARRIO_PISO;
@@ -707,17 +706,14 @@ export const P19Liniero: React.FC = () => {
   // transformador; corte seco al presente: tira de la cuerda de arranque, humo de escape, la sierra vibra y corta
   if (f < fb) return (
     <AbsoluteFill>
-      <RecuerdoV6>{/* v6a: sin velo crema encima (lavaba el cuadro): filtro + tinte multiply + viñeta */}
       <EscenaL Set={Barrio} pal={PAL} claves={[mira(0, 2190, B - 480, 1.3), mira(fb, 2200, B - 500, 1.38, { curva: "inout" })]} seed={19} setProps={{ hora: "dia", luces: 0, nieve: 0.4, humo: 0 }}
         medio={<>
           <Poste x={2120} piso={B} />
-          <Pj look={THEO_LINIERO_E} ruta={[{ f: 0, x: 2178, y: B - 330 }, { f: k(75.2), x: 2178, y: B - 360 }]} dir={[{ f: 0, v: -1 }]}
-            poses={[{ f: 0, v: "agarrarAlto" }, { f: k(75.36), v: "parado" }]}
-            caras={[{ f: 0, v: "determinado" }, { f: k(75.4), v: "feliz" }]} miradas={[{ f: 0, v: { x: 1, y: -0.6 } }, { f: k(75.4), v: { x: -1, y: 0.1 } }]}
-            ajuste={ik2(ik("I", () => ({ x: 52, y: -280 })), ik("D", (q) => q < k(75.36) ? { x: 60, y: -320 } : { x: 70, y: -230 }))} />
+          <Pj look={THEO_LINIERO_E} ruta={[{ f: 0, x: 2230, y: B }]} dir={[{ f: 0, v: -1 }]}
+            poses={[{ f: 0, v: "parado" }, { f: k(75.0), v: "señalar", d: 12 }, { f: k(75.7), v: "manosCintura", d: 12 }]}
+            caras={[{ f: 0, v: "determinado" }, { f: k(75.4), v: "feliz" }]} miradas={[{ f: 0, v: { x: -0.6, y: -1 } }, { f: k(75.7), v: { x: 1, y: 0 } }]} />
           <Chispas x={2120} y={B - 700} f={f} desde={k(74.9)} />
         </>} />
-      </RecuerdoV6>
       <Pildora texto="THEO WAS A LINEMAN" x={1240} y={150} desde={k(74.9)} color={AMBAR} tam={44} />
     </AbsoluteFill>
   );
