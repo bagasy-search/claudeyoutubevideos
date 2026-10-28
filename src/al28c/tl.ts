@@ -42,6 +42,13 @@ function buildKeys(): Key[] {
   for (const [a, b, n] of CAM) {
     const prev = out[out.length - 1].t;
     if (n === lastName) { out.push(k(Math.max(prev + 0.3, b), n, 0.12)); continue; }
+    // viaje largo (>2,2 m) = CORTE SECO: el viaje en línea recta atravesaba paredes (destellos de al28a 28-oct)
+    const fa = F[lastName] ?? F.wide, fb = F[n] ?? F.wide;
+    if (Math.hypot(fa.p[0] - fb.p[0], fa.p[1] - fb.p[1], fa.p[2] - fb.p[2]) > 2.2) {
+      const c = Math.max(prev + 0.05, a);
+      out.push(k(c, lastName, 0.12)); out.push(k(c + 0.001, n, 0)); out.push(k(Math.max(c + 0.3, b), n, 0.12));
+      lastName = n; continue;
+    }
     const arr = Math.max(prev + 0.35, Math.min(a + 1.1, b - 0.2));
     out.push(k(Math.max(prev + 0.05, a), lastName, 0.12));
     out.push(k(arr, n, 0, 0.04));
