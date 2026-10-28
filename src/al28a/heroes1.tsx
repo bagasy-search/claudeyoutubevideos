@@ -6,7 +6,7 @@ import { AMB, DIM, GRN, H, HAND, Head, ICE, RED, Stage, TX, Tag, cl, eio, phys }
 // paño de pared pintada (látex crema con grano de revoque), con sombra de luz rasante desde la izquierda
 export const Wall: React.FC<{ x: number; y: number; w: number; h: number; col?: string; rot?: number; children?: React.ReactNode; style?: React.CSSProperties }> = ({ x, y, w, h, col = "#e8dfcc", rot = 0, children, style }) => (
   <div style={{ position: "absolute", left: x, top: y, width: w, height: h, borderRadius: 10, overflow: "hidden", transform: `rotate(${rot}deg)`, background: `linear-gradient(100deg, rgba(0,0,0,.18), transparent 35%), ${col}`, boxShadow: "0 40px 90px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.18)", ...style }}>
-    <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(rgba(90,70,40,.16) 1.2px, transparent 1.6px), radial-gradient(rgba(255,255,255,.25) 1px, transparent 1.4px)", backgroundSize: "9px 9px, 13px 13px", backgroundPosition: "0 0, 4px 6px" }} />
+    <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 70% 60% at 35% 30%, rgba(255,255,255,.16), transparent 70%), radial-gradient(ellipse 60% 50% at 75% 80%, rgba(90,70,40,.14), transparent 70%)" }} />
     {children}
   </div>
 );
