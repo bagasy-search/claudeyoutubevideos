@@ -1,6 +1,6 @@
 import React from "react";
 import { Composition, registerRoot } from "remotion";
-import { Body, END } from "./tdc28a/Body";
+import { Body, END } from "./tdc28b/Body";
 const Root = () => (
   <>
     <Composition id="Full" component={Body} durationInFrames={Math.round(END * 30)} fps={30} width={1920} height={1080} />
