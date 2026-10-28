@@ -1015,10 +1015,10 @@ const EtiqFrasco: React.FC<{ r: string; s: number }> = ({ r, s }) => (
 );
 const Frascos47: React.FC<{ k: (t: number) => number }> = ({ k }) => {
   const f = useF();
+  const { fps } = vcV3();
   if (f >= k(NAF_B)) return <Generador47 k={k} />;
   const PS = SUP_PISO;
   const TX = 430, S = 1.15;
-  const { fps } = vcV3();
   const mano = ikClaves([{ f: k(319.85), x: TX + 60, y: PS - 170, w: 0 }, { f: k(320.15), x: 620, y: PS - 205 }, { f: k(320.6), x: TX + 92, y: PS - 330 }]);
   const alza = k(320.15);
   const jarras = [{ x: 530, u: 0, t: 318.4, r: "NOW" }, { x: 620, u: 0.5, t: 319.3, r: "3 MO" }];
