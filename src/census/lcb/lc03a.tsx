@@ -650,6 +650,9 @@ export const P14: React.FC = () => {
       medio={<>
         <rect x={864} y={P - 352} width={72} height={56} rx={5} fill="#2f6a8a" /><text x={900} y={P - 314} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={600} fontSize={24} fill="#ffffff">BUS</text>
         <Auto x={1450} y={P} color="#6a2f36" tipo="pickup" s={2.2} dir={-1} nieve={0.7} />
+        {/* fix6: la antena va DETRÁS de Dev y a su espalda (subido al borde de la caja, le cruzaba la cara) */}
+        <path d={`M1700,${P - 150} Q${1700 + vib * 0.6},${P - 450} ${1700 + vib},${P - 740}`} stroke="#c9c4b8" strokeWidth={5} fill="none" strokeLinecap="round" />
+        <circle cx={1700 + vib} cy={P - 740} r={8} fill="#ff3a2e" />
         <A look={DEV} ruta={[{ f: 0, x: 1560, y: P - 158 }]} dir={[{ f: 0, v: -1 }]} asiento={[{ f: 0, v: 0 }]} luz={BORDE_FRIO}
           poses={[{ f: 0, v: { ...{ tronco: 6, pI: 88, rI: 88, pD: 92, rD: 92 }, hD: 30, cD: 130, cabeza: 8 } }, ...gestos(l(104), l(113), [{ tronco: 6, pI: 88, rI: 88, pD: 92, rD: 92, hD: 62, cD: 70, cabeza: 8 }, { tronco: 8, pI: 88, rI: 88, pD: 92, rD: 92, hD: 78, cD: 40, cabeza: 4 }, { tronco: 6, pI: 88, rI: 88, pD: 92, rD: 92, hD: 30, cD: 130, cabeza: 8 }], 15)]}
           caras={[{ f: 0, v: "cansado" }, { f: l(106), v: "sorpresa" }, { f: l(113.3), v: "triste" }, { f: l(114.4), v: "risa" }, { f: l(115.0), v: "triste" }]} habla={[[l(106.2), l(116.3)]]}
@@ -660,10 +663,9 @@ export const P14: React.FC = () => {
           <rect x={-40} y={P - 322} width={42} height={20} rx={3} fill={f > l(108.6) ? "#7cff9a" : "#2a4a30"} opacity={0.8} />
           <g transform={`translate(26,${P - 300}) rotate(${dialAng})`}><circle r={16} fill="#55555e" /><rect x={-2} y={-14} width={4} height={12} fill="#f6ecd2" /></g>
         </g>
-        <path d={`M1592,${P - 300} Q${1592 + vib * 0.6},${P - 520} ${1592 + vib},${P - 740}`} stroke="#c9c4b8" strokeWidth={5} fill="none" strokeLinecap="round" />
-        <circle cx={1592 + vib} cy={P - 740} r={8} fill="#ff3a2e" />
+
         {f > l(108.6) && <g><circle cx={1330} cy={P - 330} r={10} fill="#ff3a2e" opacity={Math.floor(f / 5) % 2 ? 1 : 0.4} /><Halo x={1330} y={P - 330} r={60} color="#ff3a2e" fuerza={0.6} /></g>}
-        {f > l(108.6) && <Ondas x={1592 + vib} y={P - 740} desde={l(108.6)} rmax={170} n={3} color="#ff9a6a" periodo={42} fuerza={0.6} />}
+        {f > l(108.6) && <Ondas x={1700 + vib} y={P - 740} desde={l(108.6)} rmax={170} n={3} color="#ff9a6a" periodo={42} fuerza={0.6} />}
         {/* caja de la PICKUP: barandas de la caja delante de las piernas de Dev */}
         <g>
           <rect x={1494} y={P - 152} width={250} height={86} rx={6} fill="#6a2f36" stroke="#3a161c" strokeWidth={5} />
@@ -674,7 +676,7 @@ export const P14: React.FC = () => {
         <Lagrimas x={1572} y={P - 300} ancho={12} desde={l(113.3)} s={0.9} />
       </>}
       hud={<>
-        <EtiquetaSinPalo x={1250} y={330} rotulo="DEV · AGE" valor={20} desde={l(103.5)} hasta={l(105.6)} tam={120} />
+        <EtiquetaSinPalo x={1560} y={300} rotulo="DEV · AGE" valor={20} desde={l(103.5)} hasta={l(105.6)} tam={120} />
         <Cuenta fondo x={1500} y={110} rotulo="POPULATION" claves={[{ f: 0, v: 5 }, { f: l(115.6), v: 6, d: 1 }]} desde={l(114.0)} hasta={l(116.25)} tam={110} />
       </>}
     />
