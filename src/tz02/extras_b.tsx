@@ -96,6 +96,15 @@ export const DoblaToalla: React.FC<{ p1: [number, number]; p2: [number, number] 
       <circle cx={1500} cy={300} r={520} fill="#ffc46a" opacity={0.12} />
       <rect x={0} y={380} width={1920} height={700} fill="#cfc8bc" />
       <rect x={0} y={380} width={1920} height={18} fill="#a8a094" />
+      {/* v3ra: sombra blanda y grosor de tela bajo la toalla (que pese, no papel) */}
+      <g transform={`translate(14,${18 - sube * 0.15})`} opacity={0.22}>
+        {b === 0 ? <><polygon points={poly(TL, BL, BR)} fill="#000" /><polygon points={poly(TL, BR, [P[0], P[1] - sube])} fill="#000" /></>
+          : <><polygon points={poly(BL, C, BR)} fill="#000" /><polygon points={poly(BL, C, [Q[0], Q[1] - sube])} fill="#000" /></>}
+      </g>
+      <g transform={`translate(0,${6 - sube * 0.15})`}>
+        {b === 0 ? <><polygon points={poly(TL, BL, BR)} fill="#b8a888" stroke="#9a8a70" strokeWidth={5} strokeLinejoin="round" /><polygon points={poly(TL, BR, [P[0], P[1] - sube])} fill="#b8a888" stroke="#9a8a70" strokeWidth={5} strokeLinejoin="round" /></>
+          : <><polygon points={poly(BL, C, BR)} fill="#b8a888" stroke="#9a8a70" strokeWidth={5} strokeLinejoin="round" /><polygon points={poly(BL, C, [Q[0], Q[1] - sube])} fill="#b8a888" stroke="#9a8a70" strokeWidth={5} strokeLinejoin="round" /></>}
+      </g>
       <g transform={`translate(0,${-sube * 0.15})`}>
         {b === 0 ? <>
           <Tri pts={[TL, BL, BR]} fill={cara} />

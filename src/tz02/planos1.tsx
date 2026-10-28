@@ -81,7 +81,7 @@ const Musico: React.FC<{ x: number; inst: "sitar" | "tambor" | "flauta"; seed: n
   );
 };
 export const Q02Palacio: React.FC = () => (
-  <Kap cl={[mira(0, 1340, 600, 0.98), mira(153, 1300, 640, 1.12, { curva: "inout" })]} sp={{ flores: 0.6 }}
+  <Kap cl={[mira(0, 1170, 690, 2.3), mira(40, 1180, 680, 2.2), mira(153, 1330, 640, 1.3, { curva: "inout" })]} sp={{ flores: 0.6 }}
     medio={<>
       <Musico x={1600} inst="sitar" seed={41} />
       <Musico x={1760} inst="tambor" seed={42} look={ALDEANA} per={9} />
@@ -201,10 +201,10 @@ export const Q06YaEsta: React.FC = () => {
   // v3ra: sin el detalle de la túnica (era otro primer plano del monje): el farol en primerísimo arranca en «same gray robe» con la MANGA gris que entra
   return (
     // v3ra: el farol en PRIMERÍSIMO (llena el cuadro) y la mano de Tenzo entra y lo gira apenas; sin su cara (no repetir el monje con farol)
-    <Lav cl={[mira(cC, L.farol - 10, LP - 215, 4.8), mira(226, L.farol, LP - 210, 5.6, { curva: "inout" })]} toalla={-1} leo={{ no: true }} sp={{ luzFarol: 1.25 + 0.25 * osc01(f, 22) }}
-      tenzo={{ ruta: [{ f: 0, x: L.tenzo + 260, y: LP }], poses: [{ f: 0, v: DOBLA_A }] }}
-      extra={(() => { const u = suave(lerp(f, cC + 2, cC + 34, 0, 1)); return <ManoGrande x={L.farol + 70 + (1 - u) * 160} y={LP - 150 + (1 - u) * 140} ang={-38} piel="#e0b48c" manga="#8a8c90" s={0.3} palma />; })()}
-      hud={<><Hud2 /><Placa texto="SAME GRAY ROBE" x={600} y={230} desde={cC + 3} hasta={cD} tam={46} /><Placa texto="SAME LITTLE LANTERN" x={600} y={230} desde={cD + 3} tam={46} color="#ffd38a" /></>} />
+    <Lav cl={[mira(cC, L.farol + 120, LP - 120, 4.3), mira(cD + 12, L.farol + 10, LP - 205, 5.0, { curva: "inout" }), mira(226, L.farol, LP - 210, 5.6, { curva: "inout" })]} toalla={-1} leo={{ no: true }} sp={{ luzFarol: 1.25 + 0.25 * osc01(f, 22) + 0.55 * suave(lerp(f, cD, 226, 0, 1)) }}
+      tenzo={{ ruta: [{ f: 0, x: L.tenzo + 520, y: LP }], poses: [{ f: 0, v: DOBLA_A }] }}
+      extra={(() => { const u = suave(lerp(f, cC + 2, cC + 34, 0, 1)); const w = suave(lerp(f, cD, 226, 0, 1)); return <ManoGrande x={L.farol + 70 + (1 - u) * 160 - 26 * w} y={LP - 150 + (1 - u) * 140 - 8 * w} ang={-38 + 6 * w} piel="#e0b48c" manga="#8a8c90" s={0.3} palma largo={1400} />; })()}
+      hud={<><Hud2 /><Placa texto="SAME GRAY ROBE" x={560} y={880} desde={cC + 3} hasta={cD} tam={46} /><Placa texto="SAME LITTLE LANTERN" x={600} y={230} desde={cD + 3} tam={46} color="#ffd38a" /></>} />
   );
 };
 // ---------- 7 · hoy no dobla toallas: pela una mandarina, despacio, en una sola espiral ----------
@@ -480,14 +480,14 @@ export const Q17Rey: React.FC = () => {
   const f = useF();
   return (
     <>
-      <Kap cl={[mira(0, K.trono - 40, 600, 1.5), mira(93, K.trono - 60, 585, 1.62, { curva: "inout" })]}
+      <Kap cl={[mira(0, K.trono - 30, 700, 2.5), mira(40, K.trono - 50, 680, 2.3), mira(68, K.trono - 60, 590, 1.5, { curva: "inout", rot: 3 }), mira(93, K.trono - 60, 585, 1.6, { rot: 3 })]}
         medio={<>
           <A look={ALDEANA} seed={49} ruta={[{ f: 0, x: K.trono - 470, y: KP }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: { hD: 30, cD: 30, hI: 30, cI: 30 } }, ...ciclo({ hD: 70, cD: 70, hI: 60, cI: 80 }, { hD: 60, cD: 40, hI: 50, cI: 40 }, 8, 93, 50)]} caras={[{ f: 0, v: "feliz" }, { f: 50, v: "risa" }]} miradas={[{ f: 0, v: { x: 0.9, y: -0.2 } }]} />
           <A look={ALDEANO} seed={50} ruta={[{ f: 0, x: K.trono + 330, y: KP }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: { hD: 20, cD: 20 } }, { f: 64, v: { hD: 160, cD: 20, hI: 160, cI: 20 } }, { f: 76, v: { hD: 140, cD: 40, hI: 140, cI: 40 } }, { f: 88, v: { hD: 160, cD: 20, hI: 160, cI: 20 } }]} caras={[{ f: 0, v: "sorpresa" }, { f: 60, v: "risa" }]} miradas={[{ f: 0, v: { x: -0.9, y: -0.3 } }]} />
-          <A look={REY} seed={31} ruta={[{ f: 0, x: K.trono, y: KP }, { f: 20, x: K.trono, y: KP }, { f: 40, x: K.trono - 60, y: KP }]} asiento={[{ f: 0, v: 56 }, { f: 14, v: undefined }]} dir={[{ f: 0, v: -1 }]}
-            poses={[{ f: 0, v: { ...SENTADO, hD: 60, cD: 80, hI: 50, cI: 90 } }, { f: 16, v: { hD: 70, cD: 80, hI: 60, cI: 90 } }, { f: 44, v: { hD: 150, cD: 20, hI: 150, cI: 20, cabeza: -14, tronco: -8 } }, { f: 80, v: { hD: 160, cD: 10, hI: 160, cI: 10, cabeza: -16, tronco: -10 } }]}
+          <A look={REY} seed={31} ruta={[{ f: 0, x: K.trono - 30, y: KP }]} asiento={[{ f: 0, v: 56 }, { f: 14, v: undefined }]} dir={[{ f: 0, v: -1 }]}
+            poses={[{ f: 0, v: { ...SENTADO, hD: 60, cD: 80, hI: 50, cI: 90 } }, { f: 16, v: { hD: 60, cD: 80, hI: 50, cI: 90 } }, { f: 32, v: { hD: 60, cD: 80, hI: 50, cI: 90 } }, { f: 44, v: { hD: 150, cD: 20, hI: 150, cI: 20, cabeza: -14, tronco: -8 } }, { f: 80, v: { hD: 160, cD: 10, hI: 160, cI: 10, cabeza: -16, tronco: -10 } }]}
             caras={[{ f: 0, v: "feliz" }, { f: 44, v: "risa" }]} miradas={[{ f: 0, v: { x: -0.6, y: 0.5 } }, { f: 44, v: { x: -0.1, y: -0.9 } }]}
-            enManoD={(fr: number) => <Recto ang={fr < 30 ? 120 : 170} dy={-20}><BebeAlzado s={1.55} f={fr} /></Recto>} />
+            enManoD={(fr: number) => <Recto ang={interpolate(fr, [32, 44], [120, 170], cl)} dy={-20}><BebeAlzado s={1.55} f={fr} /></Recto>} />
         </>}
         hud={<><Pildora texto="KING SUDDHODANA" x={960} y={110} desde={10} color="#ffe2a6" tam={40} /><Pildora texto="A SON!" x={1500} y={330} desde={68} tam={72} color="#ffd38a" /></>} />
       <Petalos f={f} desde={66} />
@@ -589,8 +589,8 @@ export const Q22Sufrimiento: React.FC = () => {
       medio={<A look={REY} seed={31} ruta={[{ f: 0, x: K.trono - 260, y: KP }, { f: 50, x: K.trono - 70, y: KP }]} dir={[{ f: 0, v: -1 }]} caras={[{ f: 0, v: "miedo" }]} miradas={[{ f: 0, v: { x: -0.9, y: 0.1 } }]}
         poses={[{ f: 0, v: { hD: 30, cD: 60, hI: 30, cI: 60 } }, { f: 50, v: { hD: 60, cD: 20, hI: -40, cI: 10, tronco: -10, cabeza: -6 } }]} />}
       hud={<Etiqueta texto="THE SUFFERING OF THIS WORLD" x={960} y={140} desde={10} tam={46} color="#fff2c8" />} />
-    : <Kap cl={[mira(0, 2780, 600, 1.15), mira(80, 2880, 600, 1.25, { curva: "inout" })]} sp={{ noche: true, portonAbierto: 1 }}
-      medio={<A look={SIDDHARTHA} seed={30} luz={rimOro} ruta={[{ f: 0, x: 2560, y: KP }, { f: 78, x: 3020, y: KP, curva: "lineal" }]} caras={[{ f: 0, v: "neutral" }]} opacidad={(fr) => interpolate(fr, [50, 76], [1, 0], cl)} />}
+    : <Kap cl={[mira(cambio, 2470, 640, 2.0), mira(cambio + 76, 2740, 630, 2.2, { curva: "inout" })]} sp={{ noche: true, portonAbierto: 1 }}
+      medio={<A look={SIDDHARTHA} seed={30} luz={rimOro} ruta={[{ f: cambio, x: 2300, y: KP }, { f: cambio + 76, x: 2820, y: KP, curva: "lineal" }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "determinado" }, { f: cambio + 40, v: "triste" }]} miradas={[{ f: 0, v: { x: 0.9, y: 0 } }, { f: cambio + 30, v: { x: -0.6, y: -0.1 } }, { f: cambio + 48, v: { x: 0.9, y: 0 } }]} opacidad={(fr) => interpolate(fr, [cambio + 64, cambio + 76], [1, 0], cl)} />}
       hud={<Etiqueta texto="HE WILL WALK AWAY" x={960} y={140} desde={6} tam={50} color="#fff2c8" />} />;
 };
 // ---------- 23 · el rey decide: su hijo nunca verá sufrimiento ----------
@@ -605,7 +605,7 @@ export const Q23Decision: React.FC = () => {
   const flash = f >= g ? Math.exp(-(f - g) / 4) : 0;
   return (
     <Sacude f0={[g, k23(111.45), k23(111.69), k23(112.0)]} amp={8}>
-      <Kap cl={[mira(0, K.trono - 160, 700, 1.5, { rot: -6 }), mira(141, K.trono - 140, 690, 1.75, { rot: -6, curva: "inout" })]}
+      <Kap cl={[mira(0, K.trono - 160, 700, 1.5, { rot: -6 }), mira(k23(111.4) - 1, K.trono - 145, 692, 1.68, { rot: -6, curva: "inout" }), mira(k23(111.4), K.trono - 60, 760, 2.9), mira(k23(112.0) - 1, K.trono - 62, 758, 3.0), mira(k23(112.0), K.trono - 330, 640, 1.15, { rot: 3 }), mira(141, K.trono - 300, 645, 1.25, { rot: 3, curva: "inout" })]}
         medio={<A look={REY} seed={31} ruta={[{ f: 0, x: K.trono - 330, y: KP }, { f: 26, x: K.trono - 130, y: KP }]} dir={[{ f: 0, v: 1 }, { f: 30, v: -1 }]}
           caras={[{ f: 0, v: "duda" }, { f: 24, v: "determinado" }, { f: g, v: "enojo" }]} miradas={[{ f: 0, v: { x: 0.5, y: 0.4 } }, { f: 30, v: { x: -0.4, y: -0.2 } }]} habla={[[k23(110.85), k23(113.2)]]}
           poses={[{ f: 0, v: "pensar" }, { f: 28, v: PUNO_A }, { f: g - 4, v: { ...PUNO_A, hD: 110, cD: 120 } }, { f: g, v: PUNO_B }, { f: k23(111.2), v: PUNO_B },
@@ -645,7 +645,7 @@ export const Q25Musicos: React.FC = () => {
           enManoD={(fr: number) => (fr >= k25(123.6) && fr < k25(124.3) ? <FlorMuertaMano /> : null)} enManoI={(fr: number) => (fr >= k25(124.3) ? <FlorMuertaMano /> : null)}
           caras={[{ f: 0, v: "neutral" }, { f: k25(124.2), v: "duda" }]} miradas={[{ f: 0, v: { x: 0.7, y: 0.6 } }, { f: k25(124.3), v: { x: -0.8, y: 0 } }]} />
       </>}
-      hud={<><Etiqueta texto="MUSIC · DAY AND NIGHT" x={960} y={130} desde={10} hasta={k25(123)} tam={48} color="#fff2c8" /><Etiqueta texto="EVERY DEAD FLOWER · GONE BEFORE DAWN" x={960} y={130} desde={k25(124.2)} tam={44} color="#fff2c8" /></>} />
+      hud={<><Pildora texto="MUSIC · DAY AND NIGHT" x={960} y={80} desde={10} hasta={k25(123)} tam={44} color="#fff2c8" /><Pildora texto="EVERY DEAD FLOWER · GONE BEFORE DAWN" x={960} y={80} desde={k25(124.2)} tam={40} color="#fff2c8" /></>} />
   );
 };
 // ---------- 26 · ni sirvientes viejos ni enfermos ----------
@@ -783,6 +783,7 @@ export const Q32Feed: React.FC = () => {
       <div style={{ position: "absolute", inset: 0, transform: `scale(${latido})`, transformOrigin: "1260px 540px" }}>
         <TelMarco x={1260} y={540} s={0.9}>
           <div style={{ position: "absolute", inset: 0, background: "#f4efe6" }} />
+          {f < 34 && <div style={{ position: "absolute", inset: 0, opacity: 1 - lerp(f, 24, 34, 0, 1) }}>{[0, 1, 2, 3].map((i) => { const sc = f * 22, n = Math.floor(sc / 420); return <Tarj key={i + n} y={40 + i * 420 - (sc % 420)} i={i + n} />; })}</div>}{/* v3ra: el feed ya corre antes de que llegue el palacio */}
           {f >= 26 && <PalacioAFeed m={m} f={f} Tarjeta={Tarj} />}
         </TelMarco>
       </div>
@@ -930,10 +931,11 @@ export const Q38Contador: React.FC = () => {
   }
   return (
     <Fondo>
-      <TelGrande modo="screentime" min={552} sub="YESTERDAY" x={1180} y={560} s={1.06} inclina={-5} desde={0} />
+      {f < k(179.2) ? <TelGrande modo="screentime" min={552} sub="YESTERDAY" x={1180} y={560} s={1.06} inclina={-5} desde={0} />
+        : <TelGrande modo="screentime" min={552} sub="YESTERDAY" x={lerp(f, k(179.2), cB, 1060, 1000)} y={lerp(f, k(179.2), cB, 820, 860)} s={lerp(f, k(179.2), cB, 1.9, 2.05)} inclina={6} desde={-30} />}{/* v3ra: 2º cuadro = macro de la cifra, otro ángulo */}
       {/* la mano de Leo sostiene el tel por el costado (las barras quedan a la vista) */}
-      <Lienzo><ManoGrande x={lerp(f, 0, 90, 955, 965)} y={905} ang={22} piel="#ecc9a3" manga="#24242a" s={1.15} /></Lienzo>
-      <Pildora texto="9h 12m YESTERDAY" x={470} y={420} desde={k(179.2)} color="#ffe2a6" tam={60} />
+      {f < k(179.2) && <Lienzo><ManoGrande x={lerp(f, 0, 90, 955, 965)} y={905} ang={22} piel="#ecc9a3" manga="#24242a" s={1.15} /></Lienzo>}
+      <Pildora texto="9h 12m YESTERDAY" x={f < k(179.2) ? 470 : 400} y={f < k(179.2) ? 420 : 250} desde={k(179.2)} color="#ffe2a6" tam={60} />
       <Hud2 />
     </Fondo>
   );

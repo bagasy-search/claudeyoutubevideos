@@ -158,11 +158,14 @@ export const Q48Viejo: React.FC = () => {
       [b, <Kap cl={[mira(0, K.viejo + 20, 680, 2.5), mira(c - b, K.viejo, 670, 2.7)]} sp={{ portonAbierto: 1 }}
         medio={<ViejoCamino x0={K.viejo + 70} dx={-30} n={c - b} />}
         hud={<Placa texto="HE IS OLD" x={1380} y={300} desde={2} tam={56} color="#ffd38a" />} />],
-      [c, <Kap cl={[mira(0, K.viejo + 60, KP - 250, 3.0), mira(136 - c, K.viejo + 60, KP - 255, 3.2, { curva: "inout" })]} sp={{ portonAbierto: 1 }}
-        medio={<A look={VIEJO} seed={53} ruta={[{ f: 0, x: K.viejo + 60, y: KP }]} dir={[{ f: 0, v: -1 }]}
+      [c, <Kap cl={[mira(0, K.viejo - 100, KP - 250, 1.7), mira(136 - c, K.viejo - 60, KP - 255, 1.82, { curva: "inout" })]} sp={{ portonAbierto: 1 }}
+        medio={<><Carroza x={K.viejo - 330} piso={KP} paso={0} />
+          <A look={SIDDHARTHA} seed={30} ruta={[{ f: 0, x: K.viejo - 370, y: KP - 95 }]} asiento={[{ f: 0, v: 50 }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: SENTADO }, { f: 20, v: { ...SENTADO, tronco: 10, cabeza: 6 } }]}
+            caras={[{ f: 0, v: "duda" }, { f: 24, v: "miedo" }]} miradas={[{ f: 0, v: { x: 0.9, y: 0.1 } }]} />
+          <A look={VIEJO} seed={53} ruta={[{ f: 0, x: K.viejo + 190, y: KP }]} dir={[{ f: 0, v: -1 }]}
           poses={[{ f: 0, v: VIEJO_POSE }, { f: 14, v: { ...VIEJO_POSE, tronco: 6, cabeza: -6 } }, { f: 34, v: { ...VIEJO_POSE, tronco: 4, cabeza: -2, hI: 40, cI: 60 } }]}
           caras={[{ f: 0, v: "cansado" }, { f: 14, v: "neutral" }, { f: 30, v: "feliz" }]} miradas={[{ f: 0, v: { x: -0.3, y: 0.7 } }, { f: 14, v: { x: -0.9, y: -0.2 } }]}
-          ajuste={(p) => ({ ...p, hD: VIEJO_POSE.hD, cD: VIEJO_POSE.cD })} enManoD={<Recto ang={VIEJO_POSE.hD + VIEJO_POSE.tronco + VIEJO_POSE.cD}><Baston largo={150} /></Recto>} />}
+          ajuste={(p) => ({ ...p, hD: VIEJO_POSE.hD, cD: VIEJO_POSE.cD })} enManoD={<Recto ang={VIEJO_POSE.hD + VIEJO_POSE.tronco + VIEJO_POSE.cD}><Baston largo={150} /></Recto>} /></>}
         hud={<Placa texto="IT HAPPENS TO EVERYONE" x={960} y={110} desde={2} tam={46} color="#fff2c8" />} />],
     ]} />
   );
@@ -192,8 +195,8 @@ export const Q50ATi: React.FC = () => {
   const b = k50(237.28);
   return (
     <Tramos t={[
-      [0, <Kap cl={[mira(0, K.viejo + 190, KP - 220, 2.4), mira(b, K.viejo + 230, KP - 225, 2.6, { curva: "inout" })]} sp={{ portonAbierto: 1 }}
-        medio={<><Carroza x={K.viejo - 330} piso={KP} paso={0} /><ViejoCamino x0={K.viejo + 380} dx={70} n={b} /></>}
+      [0, <Kap cl={[mira(0, K.viejo + 20, KP - 230, 2.1), mira(b, K.viejo + 80, KP - 235, 2.2, { curva: "inout" })]} sp={{ portonAbierto: 1 }}
+        medio={<><Carroza x={K.viejo - 330} piso={KP} paso={0} /><ViejoCamino x0={K.viejo + 260} dx={260} n={b} /></>}
         hud={<Placa texto="TO EVERYONE, MY PRINCE" x={960} y={110} desde={4} tam={44} color="#fff2c8" />} />],
       [b, <><Envejece s1={9} s2={22} /><Placa texto="TO YOU TOO" x={960} y={110} desde={1} tam={56} color="#ffd38a" /></>],
     ]} />
@@ -336,7 +339,7 @@ const PanelVoz: React.FC = () => {
           <text x={420} y={260} fill="#9aa3ad" fontFamily={F_HUD} fontSize={40} fontWeight={700}>VOICEMAIL · 3 NEW</text>
           {[0, 1, 2].map((i) => {
             const act = i === juega;
-            const ent = interpolate(f - i * 6, [0, 10], [0, 1], { ...cl, easing: suave });
+            const ent = interpolate(f - i * 7, [-3, 6], [0, 1], { ...cl, easing: suave });
             const prog = act ? ((f - i * 26) % 26) / 26 : i < juega ? 1 : 0;
             return (
               <g key={i} transform={`translate(${420 + (1 - ent) * 400},${320 + i * 150})`} opacity={ent}>
@@ -409,7 +412,7 @@ const p58 = (f: number) => interpolate(f, [0, P58], [0, 18], { ...cl, easing: (t
 const Hoja58: React.FC<{ t: number; m: number }> = ({ t, m }) => {
   // t 0..2.6: la hoja «m» recién arrancada se despega (en t=0 todavía tapa la nueva), sale a la derecha girando y cae fuera de cuadro
   const u = Math.min(2.6, t);
-  const x = 960 + 560 * u, y = 540 - 200 * u + 820 * u * u;
+  const x = 960 + 460 * u, y = 540 - 200 * u + 820 * u * u;
   return <g transform={`rotate(${58 * u} ${x} ${y})`}><HojaCal x={x} y={y} tam={1.7} n={String(m)} sub={m === 1 ? "DAY" : "DAYS"} /></g>;
 };
 export const Q58Diecinueve: React.FC = () => {
@@ -425,13 +428,21 @@ export const Q58Diecinueve: React.FC = () => {
   return (
     <Fondo>
       <Lienzo>
-        <g transform={`translate(960,540) scale(${empuje}) translate(-960,-540)`}>
+        <g transform={`translate(1180,540) scale(${empuje}) translate(-960,-540)`}>
           <g opacity={0.5}>{[3, 2, 1].map((k) => <rect key={k} x={960 - 306 + k * 6} y={540 - 340 + k * 8} width={612} height={680} rx={40} fill="#d8d2c6" />)}</g>
           <g transform={`translate(960,540) scale(${n >= 19 ? 1 + 0.08 * pop : 1}) translate(-960,-540)`}><HojaCal x={960} y={540} tam={1.7} n={String(n)} sub={sub} /></g>
           {vuelo.map((m) => <Hoja58 key={m} m={m} t={pv - m} />)}
         </g>
+        {/* v3ra: Leo en primer plano a la izquierda arranca las hojas con la mano; en el 19 se le cae la cara */}
+        {(() => { const u = pv - Math.floor(pv); const ida = u < 0.35 ? u : 0.35 * (1 - (u - 0.35) / 0.65); const quieto = f >= P58; return <ManoGrande x={quieto ? 880 : 880 + 460 * ida} y={quieto ? 420 : 330 - 120 * ida} ang={50} piel="#ecc9a3" manga="#24242a" s={0.75} largo={900} />; })()}
+        <g transform={`translate(${lerp(f, 0, 73, 420, 445)},1480) scale(3.2)`}>
+          <A look={LEO_CAPUCHA} seed={1} ruta={[{ f: 0, x: 0, y: 0 }]} dir={[{ f: 0, v: 1 }]}
+            poses={[{ f: 0, v: { hD: -12, cD: 34, hI: -12, cI: 34, cabeza: 6 } }, { f: P58, v: { hD: -12, cD: 34, hI: -12, cI: 34, cabeza: 14, tronco: 4 } }]}
+            caras={[{ f: 0, v: "duda" }, { f: Math.round(P58 * 0.5), v: "sorpresa" }, { f: P58, v: "triste" }]}
+            miradas={[{ f: 0, v: { x: 0.9, y: -0.2 } }, { f: Math.round(P58 * 0.5), v: { x: 1, y: 0.1 } }, { f: P58 + 6, v: { x: 0.5, y: 0.8 } }]} giros={[{ f: 0, v: 0.35 }]} />
+        </g>
       </Lienzo>
-      {n >= 19 && <Placa texto="THE MESSAGE IS 19 DAYS OLD" x={960} y={1010} desde={P58} tam={42} color="#ffd38a" />}
+      {n >= 19 && <Placa texto="THE MESSAGE IS 19 DAYS OLD" x={1180} y={1010} desde={P58} tam={42} color="#ffd38a" />}
       <Hud2 m={0} est="congelado" />
     </Fondo>
   );
@@ -543,7 +554,14 @@ export const Q60Bici: React.FC = () => {
           <Placa texto="PAINTED COMPLETELY WHITE" x={600} y={200} desde={kc(298.17)} tam={46} color="#ffffff" /></>} />],
       [ch, <><CadenaMacro f={f - ch} flores={kh(301.05)} foto={kh(302.0)} /><Hud2 m={0} est="congelado" />
         <Placa texto="CHAINED TO A POLE" x={960} y={990} desde={2} hasta={kh(301.0)} tam={44} /><Placa texto="FLOWERS · A PHOTO" x={960} y={990} desde={kh(301.05)} tam={44} color="#ffd38a" /></>],
-      [d, <><Memorial edad={kd(304.19)} auto={kd(305.91)} noche={kd(307.99)} /><Hud2 m={0} est="congelado" /></>],
+      [d, <><Memorial edad={kd(304.19)} auto={kd(305.91)} noche={kd(307.99)} />
+        {/* v3ra: Leo agachado en primer plano (der., de espaldas a 3/4) mira el memorial: el auto lo hace cerrar los ojos */}
+        <Lienzo><g transform={`translate(${lerp(f - d, 0, 193, 1610, 1580)},1440) scale(3.0)`}>
+          <A look={LEO_CAPUCHA} seed={1} ruta={[{ f: 0, x: 0, y: 0 }]} dir={[{ f: 0, v: -1 }]} giros={[{ f: 0, v: -0.45 }]}
+            poses={[{ f: 0, v: { hD: -12, cD: 34, hI: -12, cI: 34, cabeza: 10, tronco: 6 } }, { f: kd(305.91), v: { hD: -12, cD: 34, hI: -12, cI: 34, cabeza: 18, tronco: 10 } }]}
+            caras={[{ f: 0, v: "triste" }, { f: kd(305.91), v: "miedo" }, { f: kd(306.6), v: "cansado" }, { f: kd(307.99), v: "triste" }]}
+            miradas={[{ f: 0, v: { x: -0.9, y: -0.3 } }, { f: kd(304.19), v: { x: -0.6, y: -0.6 } }, { f: kd(305.91), v: { x: -0.9, y: 0.2 } }, { f: kd(307.99), v: { x: -0.5, y: 0.7 } }]} />
+        </g></Lienzo><Hud2 m={0} est="congelado" /></>],
     ]} />
   );
 };
@@ -756,13 +774,19 @@ export const Q71Ochenta: React.FC = () => {
   const n = Math.round(interpolate(f, [4, 46], [0, 87], { ...cl, easing: (t) => 1 - (1 - t) * (1 - t) }));
   return (
     <Fondo>
-      <TelMarco x={960} y={560} s={0.82} vib={f < 50 ? 6 : 0}>
+      <TelMarco x={1220} y={560} s={0.82} vib={f < 50 ? 6 : 0}>
         <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily: F_HUD }}>
           <div style={{ fontSize: 230, fontWeight: 700, color: "#ff6a2b", lineHeight: 1 }}>{n}</div>
           <div style={{ fontSize: 40, letterSpacing: 4, color: "#c9ccd2", fontWeight: 600 }}>NOTIFICATIONS</div>
         </div>
       </TelMarco>
-      <Lienzo><Anillos x={960} y={560} f={f} r0={300} /></Lienzo>
+      <Lienzo><Anillos x={1220} y={560} f={f} r0={300} />
+        {/* v3ra: Leo frente al tel: se echa atrás a medida que sube el número */}
+        <g transform={`translate(${lerp(f, 0, 55, 470, 420)},1480) scale(3.2)`}>
+          <A look={LEO_CAPUCHA} seed={1} ruta={[{ f: 0, x: 0, y: 0 }]} dir={[{ f: 0, v: 1 }]}
+            poses={[{ f: 0, v: { hD: -12, cD: 34, hI: -12, cI: 34, cabeza: 4, tronco: 4 } }, { f: 40, v: { hD: -12, cD: 34, hI: -12, cI: 34, cabeza: -10, tronco: -8 } }]}
+            caras={[{ f: 0, v: "neutral" }, { f: 14, v: "sorpresa" }, { f: 40, v: "miedo" }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }]} giros={[{ f: 0, v: 0.35 }]} />
+        </g></Lienzo>
       {H3}
     </Fondo>
   );
