@@ -121,7 +121,7 @@ export const MapaMillas: React.FC<{ x: number; y: number; k: number; desde: numb
       <circle cx={470} cy={50} r={16} fill="#e23a2e" stroke="#1c1416" strokeWidth={4} />
       {puntos && [[0.34, "ORGANIC"], [0.62, "GARDEN"], [0.86, "PROCTOR"]].map(([u, t], i) => {
         const ux = 30 + 440 * (u as number), uy = 160 - Math.sin((u as number) * Math.PI * 1.5) * 80 + (u as number) * -70 + 10, kk = ap(f, puntos[i], 8);
-        return <g key={i} transform={`translate(${ux},${uy})`}><circle r={15} fill="#f6efe0" stroke="#1c1416" strokeWidth={4} />{kk > 0 && <path d="M-7,0 L-2,6 L8,-7" stroke="#2f9a3c" strokeWidth={5} fill="none" strokeLinecap="round" strokeLinejoin="round" strokeDasharray={30} strokeDashoffset={30 * (1 - kk)} />}<text y={34} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={700} fontSize={18} fill="#f6ecd2">{t}</text></g>;
+        return <g key={i} transform={`translate(${ux},${uy})`}><circle r={15} fill="#f6efe0" stroke="#1c1416" strokeWidth={4} />{kk > 0 && <path d="M-7,0 L-2,6 L8,-7" stroke="#2f9a3c" strokeWidth={5} fill="none" strokeLinecap="round" strokeLinejoin="round" strokeDasharray={30} strokeDashoffset={30 * (1 - kk)} />}<text y={40} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={700} fontSize={26} fill="#f6ecd2" stroke="#0e0a12" strokeWidth={5} paintOrder="stroke">{t}</text></g>;
       })}
       <g transform={`translate(${30 + px},${py + 10})`}><rect x={-22} y={-14} width={44} height={22} rx={6} fill="#ffcf6e" stroke="#1c1416" strokeWidth={4} /><circle cx={-12} cy={10} r={7} fill="#1c1416" /><circle cx={12} cy={10} r={7} fill="#1c1416" /></g>
     </svg>

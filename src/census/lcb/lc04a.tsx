@@ -12,7 +12,7 @@ import { Bolsa, Carrito, Lata } from "../../anikit/props";
 import { COCINA_PISO, Cocina, Silla } from "../../anikit/sets/cocina";
 import { SUPER_PISO, Supermercado } from "../../anikit/sets/super";
 import { ActorProps } from "../../anikit/actor";
-import { POSES } from "../../anikit/personaje";
+import { POSES, Pose, alcanzar } from "../../anikit/personaje";
 import { GUS, JUNE, PAL, THEO, THEO_INV } from "../elenco";
 import { Auto } from "../mundo/comun";
 import { A, Rotulo, T, gestos, loc } from "./comun_ep";
@@ -21,6 +21,7 @@ import { GRANJA_PISO, Granja, Papa, PARED, PUERTA_GRANERO, Tractor } from "./gra
 import { Balanza, Balde, Bidon, BusEscolar, Cancha, Llamita, Pala, Primer, Puesto, RelojLatas, Sobre, SolCruza, Brocha, FotoVieja, horaCiclo } from "./piezas4";
 import { Aves, BarraHud, Cartel, SelloSobre, Casillas, Cuchillo, GotasCharco, Gotero, InsertoMano, LlamaQ, LupaGrande, ManoDedos, MapaMillas, MapaPin, Marca, Mazo, Nube, Num, PilaFardos, Plantitas, Ranas, Soplo, ap, cl } from "./piezas_e4a";
 import { Helada4, Horquilla, MARCUS_VERANO } from "./tarjetas";
+import { Chequeo, ChequeoTexto, H_HORQ, H_PALA, H_PALA_I, H_PAPA, Herr, ItemCh, PALA_TR, conTierraP, palear } from "./chequeo_e4";
 
 const P = GRANJA_PISO;
 const Y = P + 60; // los pies sobre el camino de tierra
@@ -369,7 +370,9 @@ const Q08: React.FC = () => {
 const Q09: React.FC = () => {
   const f = useF();
   const l = loc(34.0);
-  const rec = ap(f, l(34.6), 14) * (1 - ap(f, l(37.0), 10));
+  // «pasan los años»: las plantas crecen con una rampa LARGA (34,3-35,6 s) sobre el MISMO set de verano desde el cuadro 0
+  // (antes la estación saltaba barro→verano en 1 cuadro a 34,87 y el cerro cambiaba de color de golpe)
+  const rec = interpolate(f, [l(34.3), l(35.6)], [0, 1], { ...cl, easing: (t: number) => t * t * (3 - 2 * t) }) * (1 - ap(f, l(37.0), 10));
   // ciclo CONTINUO de 30 cuadros (arranca a mitad de camino: Marcus YA tiene el fardo en el cuadro 0):
   // 0-9 levanta el fardo · 9-13 lo lanza · 13-25 el fardo vuela en arco a la pila y rebota · 22-30 se agacha por el siguiente
   const PER = 30, OFF = 6;
@@ -382,7 +385,7 @@ const Q09: React.FC = () => {
   const poses: { f: number; v: any }[] = [];
   for (let c = -1; c * PER - OFF < l(37.5) + 30; c++) { const b = c * PER - OFF; poses.push({ f: b, v: "agacharse" }, { f: b + 4, v: "agarrarAlto" }, { f: b + 10, v: "tirarCarga" }, { f: b + 13, v: "tirarSuelta" }, { f: b + 22, v: "agacharse" }); }
   return (
-    <Escena Set={Granja} pal={PAL} seed={48} setProps={{ hora: "dia", estacion: rec > 0.5 ? "verano" : "barro", crec: rec > 0.5 ? 1 : 0 }}
+    <Escena Set={Granja} pal={PAL} seed={48} setProps={{ hora: "dia", estacion: "verano", crec: rec }}
       claves={camino([[-10, 2290, 705, 1.38], [l(35.8), 2340, 700, 1.43], [l(37.5) + 10, 2400, 690, 1.5]])}
       medio={<>
         <PilaFardos x={PX} y={PY} n={apilados} t={ph(f) - 25 + (ph(f) < 25 ? PER : 0)} />
@@ -395,7 +398,7 @@ const Q09: React.FC = () => {
         <Nube x={2420} y={Y + 8} f={f} n={4} ancho={70} alto={40} deriva={30} r0={7} opac={0.4} />
       </>}
       hud={<><Past x={1240} y={105} w={900} h={104} desde={4} hasta={l(37.5) + 6} /><Rotulo texto="HAY & SWEET CORN" x={1240} y={118} centro desde={4} color="#ffcf6e" tam={64} />
-        <Num x={1500} y={250} desde={l(34.8)} f0={l(34.9)} f1={l(36.8)} v0={0} v1={20} suf=" YEARS" tam={90} /></>} />
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, opacity: ap(f, l(34.8), 8) }}><Num x={1500} y={250} desde={l(34.8)} f0={l(34.9)} f1={l(36.8)} v0={0} v1={20} suf=" YEARS" tam={90} /></div></>} />
   );
 };
 
@@ -455,7 +458,7 @@ const Q11: React.FC = () => {
 
 // mesa larga de la cocina con los 10 sentados (opcional: Marcus de pie en la cabecera)
 const SENT = { tronco: 6, pI: 88, rI: 88, pD: 92, rD: 92, hD: 50, cD: 70 };
-const MesaLarga: React.FC<{ f: number; marcusDePie?: number; levanta?: number; caras?: (i: number) => string; acciones?: (i: number) => { f: number; v: any }[]; piramide?: boolean; giran?: number; abrelatas?: boolean; latasN?: number; cuchara?: boolean; lug?: number[][]; ninosX?: number[]; marcusPoses?: { f: number; v: any }[]; cuencos?: boolean }> = ({ f, marcusDePie, levanta, caras, acciones, piramide, giran, abrelatas, latasN = 9, cuchara, lug, ninosX = [380, 300], marcusPoses, cuencos }) => {
+const MesaLarga: React.FC<{ f: number; marcusDePie?: number; levanta?: number; caras?: (i: number) => string; acciones?: (i: number) => { f: number; v: any }[]; piramide?: boolean; giran?: number; abrelatas?: boolean; latasN?: number; cuchara?: boolean; lug?: number[][]; ninosX?: number[]; marcusPoses?: { f: number; v: any }[]; cuencos?: boolean; sillas?: number[]; mesa?: [number, number]; marcusSilla?: number; ninosPoses?: { f: number; v: any }[][]; extra?: React.ReactNode }> = ({ f, marcusDePie, levanta, caras, acciones, piramide, giran, abrelatas, latasN = 9, cuchara, lug, ninosX = [380, 300], marcusPoses, cuencos, sillas = [560, 760, 960, 1180, 1380, 1580], mesa = [480, 1820], marcusSilla = 1860, ninosPoses, extra }) => {
   const PS = COCINA_PISO;
   const lugares = lug ?? [[1880, -1], [520, 1], [700, 1], [880, 1], [1060, 1], [1240, -1], [1420, -1], [1600, -1], [1000, 1], [1300, -1]];
   const xk = levanta !== undefined ? interpolate(f, [levanta + 4, levanta + 26], [0, 1], cl) : 1;
@@ -465,8 +468,8 @@ const MesaLarga: React.FC<{ f: number; marcusDePie?: number; levanta?: number; c
   const posesPie = marcusPoses ?? (levanta === undefined ? [{ f: 0, v: "parado" }] : [{ f: 0, v: "parado" }, { f: levanta - 24, v: { hD: 105, cD: 30 } }, { f: levanta, v: { hD: 88, cD: 62 } }]);
   return (
     <>
-      {[560, 760, 960, 1180, 1380, 1580].map((sx, i) => <Silla key={i} x={sx} piso={PS} dir={i < 3 ? 1 : -1} color="#b07a4a" />)}
-      {(marcusDePie === undefined || f < marcusDePie) && <Silla x={1860} piso={PS} dir={-1} color="#b07a4a" />}
+      {sillas.map((sx, i) => <Silla key={i} x={sx} piso={PS} dir={i < sillas.length / 2 ? 1 : -1} color="#b07a4a" />)}
+      {(marcusDePie === undefined || f < marcusDePie) && <Silla x={marcusSilla} piso={PS} dir={-1} color="#b07a4a" />}
       {LOS10.map((look, i) => {
         if (i >= 8) return null;
         const [x, d] = lugares[i];
@@ -479,10 +482,10 @@ const MesaLarga: React.FC<{ f: number; marcusDePie?: number; levanta?: number; c
             {[["M-14,-12 L14,16", pA], ["M14,-12 L-14,16", pB]].map(([d2, p], j) => (p as number) > 0 ? <g key={j}><path d={d2 as string} pathLength={1} strokeDasharray={`${p} 1`} stroke="#1c1416" strokeWidth={9} strokeLinecap="round" fill="none" /><path d={d2 as string} pathLength={1} strokeDasharray={`${p} 1`} stroke="#e23a2e" strokeWidth={5} strokeLinecap="round" fill="none" /></g> : null)}</g></g> : undefined} />;
       })}
       {/* mellizos de pie al costado, más chicos */}
-      <A look={BEN} escala={NINO} ruta={[{ f: 0, x: ninosX[0], y: PS }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "feliz" }]} enManoD={<Lata s={0.8} />} poses={acciones ? gestos(0, 1200, ["celebrar", "parado"], 26) : undefined} />
-      <A look={LILY} escala={NINO} ruta={[{ f: 0, x: ninosX[1], y: PS }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "feliz" }]} poses={acciones ? gestos(0, 1200, ["parado", "saludar"], 22) : undefined} />
-      <rect x={480} y={PS - 190} width={1340} height={22} rx={6} fill="#8a5e3c" />
-      <rect x={500} y={PS - 168} width={16} height={168} fill="#6a4a32" /><rect x={1784} y={PS - 168} width={16} height={168} fill="#6a4a32" />
+      <A look={BEN} escala={NINO} ruta={[{ f: 0, x: ninosX[0], y: PS }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "feliz" }]} enManoD={<Lata s={0.8} />} poses={ninosPoses ? ninosPoses[0] : acciones ? gestos(0, 1200, ["celebrar", "parado"], 26) : undefined} />
+      <A look={LILY} escala={NINO} ruta={[{ f: 0, x: ninosX[1], y: PS }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "feliz" }]} poses={ninosPoses ? ninosPoses[1] : acciones ? gestos(0, 1200, ["parado", "saludar"], 22) : undefined} />
+      <rect x={mesa[0]} y={PS - 190} width={mesa[1] - mesa[0]} height={22} rx={6} fill="#8a5e3c" />
+      <rect x={mesa[0] + 20} y={PS - 168} width={16} height={168} fill="#6a4a32" /><rect x={mesa[1] - 36} y={PS - 168} width={16} height={168} fill="#6a4a32" />
       {cuencos && lugares.slice(1, 8).map(([x, d], j) => <g key={`c${j}`} transform={`translate(${x + d * 62},${PS - 214})`}><path d="M-34,-4 Q-30,26 0,28 Q30,26 34,-4 Z" fill="#f2e6cf" stroke="#1c1416" strokeWidth={4} /><ellipse cx={0} cy={-4} rx={34} ry={8} fill="#c8763a" stroke="#1c1416" strokeWidth={3} />{[0, 1, 2].map((k) => <path key={k} d={`M${-12 + k * 12},${-16 - ((f + j * 9 + k * 7) % 30)} q6,-8 0,-16`} stroke="#fff" strokeWidth={3} fill="none" opacity={0.5 * (1 - ((f + j * 9 + k * 7) % 30) / 30)} />)}</g>)}
       {Array.from({ length: 9 }).map((_, i) => { if (i >= latasN) return null; const pop = latasN < 9 && i === latasN - 1 ? 1.25 : 1; return <Lata key={i} x={560 + i * 140} y={PS - 190} s={0.8 * pop} color={["#e0563a", "#f1c24a", "#5aa0d8", "#7fc46a"][i % 4]} />; })}
       {/* pirámide de latas en el hueco entre dos comensales (no tapa ninguna cara) */}
@@ -491,6 +494,7 @@ const MesaLarga: React.FC<{ f: number; marcusDePie?: number; levanta?: number; c
         <Lata x={1730} y={PS - 190} s={1.5} color="#e0563a" />
         <g transform={`translate(1730,${PS - 190 - 98})`}><circle r={15} fill="#c9cfd6" stroke="#1c1416" strokeWidth={4} /><g transform={`rotate(${f * 16})`}><rect x={-4} y={-38} width={8} height={38} fill="#6a6a72" /><circle cy={-40} r={10} fill="#d8382c" stroke="#1c1416" strokeWidth={3} /></g></g>
       </g>}
+      {extra}
       <Halo x={1150} y={PS - 520} r={700} color="#ffcf8a" fuerza={0.4} />
     </>
   );
@@ -500,16 +504,38 @@ const comer = (i: number) => {
   return gestos((i * 7) % 20, 1500, [plato, mano], 16);
 };
 
-// ---------- E12 · 43:5-47:0 · cámara 2x sobre tres comensales: la cuchara a la boca; las latas apiladas al centro con contador ----------
+// ---------- E12 · 43:5-47:0 · la cena: TODOS comen (cuchara a la boca con fase propia, cabeceo), se pasan un cuenco y la ----------
+// fuente; dos giran a hablar; la cámara empuja curva hacia el centro de la mesa. Mesa recompuesta (Marcus en la cabecera
+// a x 1720, chicos a la izquierda que también comen): nadie pegado al borde.
+const COME_P = { ...SENT, hD: 66, cD: 34, tronco: 16, cabeza: 12 }, COME_B = { ...SENT, hD: 22, cD: 158, cabeza: -6, tronco: 0 };
+const comerFuerte = (i: number) => {
+  const per = 18 + (i % 3) * 3, off = (i * 7) % per;
+  const k: { f: number; v: any }[] = [];
+  for (let t = -per + off; t < 200; t += per) k.push({ f: t, v: COME_P }, { f: t + Math.round(per * 0.55), v: COME_B });
+  return k;
+};
 const Q12: React.FC = () => {
   const f = useF();
   const l = loc(43.5);
-  const abre = (i: number) => (i === 0 ? gestos(0, 1500, [{ ...SENT, hD: 55, cD: 95, hI: 50, cI: 100, tronco: 10 }, { ...SENT, hD: 78, cD: 70, hI: 70, cI: 82, tronco: 6 }], 10) : comer(i));
-  // las latas aparecen sobre la mesa de a una (sin contador: lo cuentan las latas mismas); cada uno COME de su cuenco
+  const lug = [[1720, -1], [600, 1], [760, 1], [920, 1], [1080, 1], [1260, -1], [1420, -1], [1580, -1], [1000, 1], [1300, -1]];
+  // 3 (x 1080) le pasa el cuenco a 4 (x 1260) entre 45,0 y 45,6 s: sus brazos van hacia el centro, el cuenco cruza la mesa
+  const pasa = { ...SENT, hD: 82, cD: 8, tronco: 10 };
+  const acc = (i: number) => (i === 0 ? gestos(0, 200, [{ ...SENT, hD: 55, cD: 95, hI: 50, cI: 100, tronco: 10 }, { ...SENT, hD: 78, cD: 70, hI: 70, cI: 82, tronco: 6 }, COME_B], 12)
+    : i === 4 ? [...comerFuerte(i).filter((k) => k.f < l(44.8)), { f: l(44.8), v: pasa }, { f: l(45.7), v: COME_P }, ...comerFuerte(i).filter((k) => k.f > l(46.0))]
+    : i === 5 ? [...comerFuerte(i).filter((k) => k.f < l(45.0)), { f: l(45.0), v: pasa }, { f: l(45.8), v: COME_P }, ...comerFuerte(i).filter((k) => k.f > l(46.1))]
+    : comerFuerte(i));
+  const u = interpolate(f, [l(45.0), l(45.6)], [0, 1], { ...cl, easing: (t: number) => t * t * (3 - 2 * t) });
+  const cuencoX = 1080 + 62 + (1260 - 62 - 1080 - 62) * u, cuencoY = COCINA_PISO - 214 - 50 * Math.sin(u * Math.PI);
+  // chicos de pie: Ben come de su lata con cuchara, Lily muerde un pan (ciclos propios)
+  const nP = [gestos(0, 200, [{ hD: 40, cD: 120, cabeza: -6 }, { hD: 60, cD: 60, cabeza: 8, tronco: 6 }], 16), gestos(6, 200, [{ hD: 30, cD: 150, cabeza: -4 }, { hD: 50, cD: 70, cabeza: 6 }], 20)];
+  const cam = camino([[-10, 1110, 600, 1.06], [l(45.2), 1105, 610, 1.13], [l(47.0) + 10, 1100, 618, 1.18]]);
   const nLatas = Math.min(9, Math.max(0, Math.floor(interpolate(f, [l(44.4), l(46.2)], [0, 9.99], cl))));
   return (
-    <Escena Set={Cocina} pal={PAL} seed={51} claves={camino([[-10, 1120, 600, 1.0], [l(45.0), 1080, 620, 1.1], [l(47.0) + 10, 1140, 615, 1.18]])}
-      medio={<MesaLarga f={f} caras={(i) => (i % 2 ? "feliz" : "neutral")} acciones={abre} abrelatas latasN={nLatas} cuchara cuencos ninosX={[400, 330]} />}
+    <Escena Set={Cocina} pal={PAL} seed={51} claves={cam}
+      medio={<MesaLarga f={f} lug={lug} sillas={[640, 800, 960, 1120, 1300, 1460, 1620]} mesa={[520, 1680]} marcusSilla={1700} caras={(i) => (i % 2 ? "feliz" : "neutral")} acciones={acc} giran={l(45.9)} latasN={nLatas} cuchara cuencos ninosX={[480, 340]} ninosPoses={nP}
+        extra={<>{f >= l(45.0) && f <= l(45.6) + 2 && <g transform={`translate(${cuencoX},${cuencoY})`}><path d="M-34,-4 Q-30,26 0,28 Q30,26 34,-4 Z" fill="#f2e6cf" stroke="#1c1416" strokeWidth={4} /><ellipse cx={0} cy={-4} rx={34} ry={8} fill="#c8763a" stroke="#1c1416" strokeWidth={3} /></g>}
+          {/* fuente de papas al centro con vapor */}
+          <g transform={`translate(1170,${COCINA_PISO - 210})`}><ellipse cx={0} cy={0} rx={70} ry={16} fill="#e9dcc0" stroke="#1c1416" strokeWidth={4} />{[-30, 0, 30, -15, 15].map((x, k) => <ellipse key={k} cx={x} cy={-10 - (k > 2 ? 14 : 0)} rx={20} ry={14} fill="#c9935a" stroke="#6a4424" strokeWidth={3} />)}{[0, 1, 2].map((k) => <path key={k} d={`M${-20 + k * 20},${-30 - ((f + k * 9) % 30)} q8,-10 0,-20`} stroke="#fff" strokeWidth={4} fill="none" opacity={0.6 * (1 - ((f + k * 9) % 30) / 30)} />)}</g></>} />}
       hud={<>
         <Past x={1240} y={105} w={1060} h={96} desde={l(44.8)} /><Rotulo texto="NOT GOING TO STARVE THIS YEAR" x={1240} y={118} centro desde={l(44.8)} color="#7cd36a" tam={52} />
       </>} />
@@ -562,18 +588,40 @@ const Q15: React.FC = () => {
   const f = useF();
   const l = loc(57.5);
   const k = interpolate(f, [l(58.6), l(63.8)], [0, 0.85], cl);
-  const u = ap(f, 8, 30), e = u * u * (3 - 2 * u);
+  // Marcus AGARRA el marco por el parante (dos manos, IK) y lo levanta: el reloj gira con sus manos hasta ~110°, él suelta y
+  // la inercia lo termina de dar vuelta (frena con resorte); da un paso atrás, lo palmea y cruza los brazos.
+  const u = ap(f, 6, 40), e = u * u * (3 - 2 * u), th = 180 * (1 - e);
+  const CX = 900, CY = 640, SR = 0.7;
+  const rotP = (lx: number, ly: number) => { const r = (th * Math.PI) / 180; return { x: CX + (lx * Math.cos(r) - ly * Math.sin(r)) * SR, y: CY + (lx * Math.sin(r) + ly * Math.cos(r)) * SR }; };
+  const suelta = 26, ME = 2.0, MY = 1100;
+  const mx = (ff: number) => interpolate(ff, [0, 30, 44, l(59.9), l(64.0) + 30], [1290, 1290, 1360, 1420, 1460], cl);
+  const agarre = (ff: number) => (ff < suelta ? 1 : 1 - ap(ff, suelta, 6));
+  const ajuste = (p: Pose, ff: number): Pose => {
+    const w = agarre(ff);
+    if (w <= 0.001) return p;
+    const loc2 = (q: { x: number; y: number }) => ({ x: (mx(ff) - q.x) / ME, y: (q.y - MY) / ME });
+    const qD = { ...p, ...alcanzar(p, "D", loc2(rotP(-205, -300))) }, qI = { ...qD, ...alcanzar(qD, "I", loc2(rotP(-205, -110))) };
+    const m = (a: number, b: number) => a + (b - a) * w;
+    return { ...p, hD: m(p.hD, qI.hD), cD: m(p.cD, qI.cD), hI: m(p.hI, qI.hI), cI: m(p.cI, qI.cI) };
+  };
+  const golpe = Math.sin(ap(f, 40, 8) * Math.PI) * 4; // el marco asienta (rebote corto) al terminar de girar
   return (
     <Escena Set={Primer} pal={PAL} seed={54} setProps={{ fondo: "madera" }}
-      claves={camino([[-10, 1060, 570, 1.12], [l(59.9), 1110, 565, 1.2], [l(64.0) + 10, 1150, 560, 1.28]])}
+      claves={camino([[-10, 1080, 600, 1.12], [l(59.9), 1120, 590, 1.2], [l(64.0) + 10, 1160, 580, 1.28]])}
       medio={<>
-        <g transform={`rotate(${180 * (1 - e)} 900 540)`}><RelojLatas x={900} y={540} s={0.95} k={k} f={f} /></g>
-        {/* Marcus DA VUELTA el reloj con las dos manos (0-1 s), camina a su lado, lo señala y al final cruza los brazos */}
-        <A look={MARCUS_VERANO} escala={1.7} ruta={[{ f: 0, x: 1140, y: 1010 }, { f: 40, x: 1150, y: 1010 }, { f: l(59.9), x: 1400, y: 1010 }, { f: l(64.0) + 30, x: 1440, y: 1010 }]}
-          dir={[{ f: 0, v: -1 }, { f: 40, v: 1 }, { f: l(59.9), v: -1 }]} caras={[{ f: 0, v: "determinado" }, { f: l(61.0), v: "duda" }, { f: l(62.8), v: "determinado" }]}
-          miradas={[{ f: 0, v: { x: 0.6, y: 0.1 } }, { f: 40, v: { x: 0.8, y: 0 } }, { f: l(59.9), v: { x: 0.8, y: -0.1 } }]}
-          poses={[{ f: 0, v: { tronco: 12, hD: 100, cD: 12, hI: 96, cI: 14, cabeza: -6 } }, { f: 38, v: { tronco: 12, hD: 100, cD: 12, hI: 96, cI: 14, cabeza: -6 } }, { f: 44, v: "parado" },
-            { f: l(60.1), v: "señalar" }, { f: l(61.3), v: "pensar" }, { f: l(62.4), v: "manosCintura" }, { f: l(62.9), v: "brazosCruzados" }]} />
+        {/* pie de madera con el eje: queda quieto, el marco gira sobre él */}
+        <path d={`M${CX - 40},${CY} L${CX - 120},${CY + 400} L${CX + 120},${CY + 400} L${CX + 40},${CY} Z`} fill="#5a3c22" stroke="#2a1c12" strokeWidth={6} />
+        <g transform={`translate(0,${-golpe}) rotate(${th} ${CX} ${CY})`}>
+          <RelojLatas x={CX} y={CY} s={SR} k={k} f={f} />
+          <g transform={`translate(${CX},${CY}) scale(${SR})`}>{[-1, 1].map((sx) => <rect key={sx} x={sx * 205 - 12} y={-440} width={24} height={880} rx={8} fill="#7a5532" stroke="#2a1c12" strokeWidth={4} />)}</g>
+        </g>
+        <circle cx={CX} cy={CY} r={18} fill="#3a2a1c" stroke="#e9d3a8" strokeWidth={4} />
+        <A look={MARCUS_VERANO} escala={ME} ruta={[{ f: 0, x: 1290, y: MY }, { f: 30, x: 1290, y: MY }, { f: 44, x: 1360, y: MY }, { f: l(59.9), x: 1420, y: MY }, { f: l(64.0) + 30, x: 1460, y: MY }]}
+          dir={[{ f: 0, v: -1 }]} caras={[{ f: 0, v: "determinado" }, { f: l(61.0), v: "duda" }, { f: l(62.8), v: "determinado" }]}
+          miradas={[{ f: 0, v: { x: -0.7, y: 0.4 } }, { f: 20, v: { x: -0.8, y: -0.1 } }, { f: 44, v: { x: -0.8, y: -0.2 } }]}
+          poses={[{ f: 0, v: { tronco: 34, cabeza: -8, pD: 24, rD: 40, pI: -10, rI: 10 } }, { f: suelta, v: { tronco: 8, cabeza: -4 } }, { f: 44, v: "parado" },
+            { f: l(60.1), v: { hD: 70, cD: 40, tronco: 6 } }, { f: l(60.4), v: { hD: 62, cD: 30, tronco: 8 } }, { f: l(60.7), v: { hD: 70, cD: 40, tronco: 6 } }, { f: l(61.3), v: "pensar" }, { f: l(62.4), v: "manosCintura" }, { f: l(62.9), v: "brazosCruzados" }]}
+          ajuste={ajuste} />
       </>}
       hud={<><Past x={1440} y={100} w={760} h={240} desde={l(58.0)} />
         <Rotulo texto="CANS = TIME" x={1440} y={112} centro desde={l(58.0)} color="#ffcf6e" tam={100} />
@@ -645,7 +693,7 @@ const Q18: React.FC = () => {
   return (
     <Escena Set={Granja} pal={PAL} seed={57} mano={1.5}
       setProps={{ hora: "dia", estacion: "barro", crec: 0, pared: [{ t: "DAYS LEFT", desde: l(84.3), x: D.x + 30, y: D.y + 190, tam: 34, vel: 0.9 }, { t: "IN SUMMER", desde: l(85.0), x: D.x + 24, y: D.y + 232, tam: 34, vel: 0.9 }, { t: "115", desde: l(86.6), x: D.x + 56, y: D.y + 330, tam: 84, color: "#b8382c", vel: 1.6 }] }}
-      claves={camino([[-10, D.x + 110, 600, 2.3], [l(76.6), D.x + 190, 575, 2.5], [l(79.4), D.x + 130, 580, 2.3], [l(82.6), D.x + 200, 610, 1.95], [l(84.6), D.x + 170, 640, 1.75], [l(86.8), D.x + 200, 650, 1.7], [l(88.8) + 10, D.x + 250, 655, 1.82]])}
+      claves={camino([[-10, D.x + 110, 600, 2.3], [l(76.6), D.x + 190, 575, 2.5], [l(79.4), D.x + 130, 580, 2.3], [l(82.6), D.x + 200, 610, 1.95], [l(84.6), D.x + 170, 595, 1.75], [l(86.8), D.x + 200, 598, 1.7], [l(88.8) + 10, D.x + 240, 600, 1.78]])}
       medio={<>
         <rect x={x0} y={yb - 6} width={x1 - x0} height={12} rx={6} fill="#c9b48a" />
         <rect x={x0} y={yb - 6} width={(x1 - x0) * sol} height={12} rx={6} fill="#f2b81e" />
@@ -746,7 +794,7 @@ const Q22: React.FC = () => {
   // ruta SIN quedarse quieto: entre golpes se sigue acomodando (deriva de 10-14 px) y camina a la siguiente esquina
   const ruta: { f: number; x: number; y: number }[] = [{ f: 0, x: px[0] - 30, y: py[0] }];
   esq.forEach((_, i) => { ruta.push({ f: Math.max(1, tHit(i) - 12), x: px[i], y: py[i] }, { f: tHit(i) + 6, x: px[i] + dd[i] * 12, y: py[i] + 4 }); });
-  ruta.push({ f: l(103.2), x: px[3] - 40, y: py[3] }, { f: l(104.3), x: 260, y: py[3] });
+  ruta.push({ f: l(103.2), x: px[3] - 30, y: py[3] }, { f: l(104.5), x: px[3] - 80, y: py[3] - 10 });
   const dirs = [{ f: 0, v: 1 as const }, { f: tHit(1) - 14, v: -1 as const }, { f: tHit(3) - 14, v: 1 as const }, { f: l(103.2), v: -1 as const }];
   const arriba = { hD: 175, cD: 0, tronco: -6, cabeza: 6 }, golpe = { hD: 38, cD: 0, tronco: 26, cabeza: 14 }, medio = { hD: 90, cD: 10, tronco: 12, cabeza: 8 };
   const poses: { f: number; v: any }[] = [{ f: 0, v: medio }];
@@ -756,7 +804,7 @@ const Q22: React.FC = () => {
   const camE = esq.map((_, i) => [tHit(i), (px[i] + ex(i)) / 2, py[i] - 296, i % 2 ? 1.2 : 1.15] as KP);
   const cam = camino([[-10, (px[0] + ex(0)) / 2 - 40, py[0] - 290, 1.12], ...camE, [l(102.7), CX - 120, CY + 10, 1.2], [l(103.6), CX, CY - 20, 1.4], [l(104.4), CX, CY, 1.8], [l(105.2), CX, CY, 1.05], [l(106.0), CX, CY, 0.45], [l(106.7), CX, CY, 0.19], [l(107.3) + 10, CX, CY, 0.085]]);
   // dos papas CAEN dentro del cuadro y rebotan
-  const papa = (t0: number) => { const u = f - t0; if (u < 0) return null; const sp = spring({ frame: u, fps: 30, config: { damping: 7, stiffness: 160 } }); return { dy: (1 - sp) * -420, k: Math.min(1, u / 4) }; };
+  const papa = (t0: number) => { const u = f - t0; if (u < 0) return null; const sp = spring({ frame: u, fps: 30, config: { damping: 7, stiffness: 160 } }); return { dy: -Math.abs(1 - sp) * 420, k: Math.min(1, u / 4) }; };
   return (
     <Escena Set={Primer} pal={PAL} seed={61} setProps={{ fondo: "tierra" }} mano={1}
       claves={cam}
@@ -768,17 +816,17 @@ const Q22: React.FC = () => {
         {grilla > 0 && <g opacity={grilla}>{Array.from({ length: 121 }).map((_, i) => <g key={i}><rect x={CX - L / 2 + (i - 60) * L - 4} y={-25000} width={8 + 30 * grilla} height={50000} fill="#e9dcc0" opacity={0.55} /><rect y={CY - L / 2 + (i - 60) * L - 4} x={-25000} height={8 + 30 * grilla} width={50000} fill="#e9dcc0" opacity={0.55} /></g>)}</g>}
         {esq.map((_, i) => { const k = ap(f, tHit(i), 5), k2 = ap(f, tHit(i) + 10, 4); return <g key={i} opacity={k}><rect x={ex(i) - 9} y={ey(i) - 30 + (1 - k) * -24 + k2 * 8} width={18} height={30 + 14 * (1 - k) - k2 * 8} fill="#c9a36a" stroke="#6a4a32" strokeWidth={4} />{f >= tHit(i) && f < tHit(i) + 12 && <circle cx={ex(i)} cy={ey(i) - 30} r={10 + (f - tHit(i)) * 4} fill="none" stroke="#f6efe0" strokeWidth={4} opacity={1 - (f - tHit(i)) / 12} />}</g>; })}
         <rect x={CX - L / 2} y={CY - L / 2} width={L} height={L} fill="none" stroke="#f6efe0" strokeWidth={5} strokeDasharray={`${4 * L * ap(f, l(102.2), 30)} 9999`} />
-        {[[CX - 60, CY - 20, 0.9, l(103.0)], [CX + 60, CY + 60, 1.1, l(103.45)]].map(([x, y, s, t0], i) => { const p = papa(t0); return p ? <g key={i} opacity={p.k}><ellipse cx={x} cy={y + 26} rx={40 * s} ry={9} fill="#2a1a10" opacity={0.4 * (1 + p.dy / 420)} /><Papa x={x} y={y + p.dy} s={s * 2} rot={i * 50 + p.dy * 0.2} /></g> : null; })}
+        {[[CX - 60, CY - 20, 0.9, l(103.0)], [CX + 60, CY + 30, 1.1, l(103.45)]].map(([x, y, s, t0], i) => { const p = papa(t0); return p ? <g key={i} opacity={p.k}><ellipse cx={x} cy={y + 26} rx={40 * s} ry={9} fill="#2a1a10" opacity={0.4 * (1 + p.dy / 420)} /><Papa x={x} y={y + p.dy} s={s * 2} rot={i * 50 + p.dy * 0.2} /></g> : null; })}
         {f >= l(103.6) && <text x={CX + L / 2 + 24} y={CY + 16} fontFamily="Fredoka, sans-serif" fontWeight={700} fontSize={46} fill="#ffcf6e" stroke="#1c1416" strokeWidth={8} paintOrder="stroke" opacity={ap(f, l(103.6), 8) * (1 - grilla)}>½ – 1 LB</text>}
-        {f < l(104.4) && <A look={MARCUS_VERANO} escala={1.3} ruta={ruta} dir={dirs} caras={[{ f: 0, v: "determinado" }, { f: l(102.2), v: "feliz" }]} poses={poses} enManoD={(ff: number) => (ff < l(102.1) ? <g transform="rotate(-120)"><Mazo /></g> : null)} />}
+        {f < l(104.5) && <g opacity={1 - ap(f, l(104.2), 8)}><A look={MARCUS_VERANO} escala={1.3} ruta={ruta} dir={dirs} caras={[{ f: 0, v: "determinado" }, { f: l(102.2), v: "feliz" }]} poses={poses} enManoD={(ff: number) => (ff < l(102.1) ? <g transform="rotate(-120)"><Mazo /></g> : null)} /></g>}
       </>}
       hud={<>
         <Rotulo texto="1 SQ FT = ½ – 1 LB" x={1240} y={96} centro desde={l(100.4)} hasta={l(104.4)} color="#ffcf6e" tam={76} />
         <Num x={1180} y={330} desde={l(104.2)} f0={l(104.4)} f1={l(106.6)} v0={1} v1={43560} suf=" SQ FT" tam={120} />
         <Rotulo texto="= 1 ACRE" x={1180} y={540} centro desde={l(106.3)} color="#f6ecd2" tam={64} brillo={false} />
         {/* Marcus GRANDE en primer plano: entra a pie y mira cómo la grilla se multiplica hasta el acre; no se detiene */}
-        <svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }}>
-          <A look={MARCUS_VERANO} escala={1.35} ruta={[{ f: 0, x: -260, y: 1050 }, { f: l(104.5), x: -260, y: 1050 }, { f: l(105.6), x: 470, y: 1050 }, { f: l(107.3) + 30, x: 600, y: 1050, curva: "lineal" }]} dir={[{ f: 0, v: 1 }]}
+        <svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0, overflow: "visible", opacity: ap(f, l(104.4), 8) }}>
+          <A look={MARCUS_VERANO} escala={1.35} ruta={[{ f: 0, x: 330, y: 1050 }, { f: l(104.5), x: 330, y: 1050 }, { f: l(105.6), x: 470, y: 1050 }, { f: l(107.3) + 30, x: 600, y: 1050, curva: "lineal" }]} dir={[{ f: 0, v: 1 }]}
             caras={[{ f: 0, v: "determinado" }, { f: l(105.8), v: "sorpresa" }, { f: l(106.6), v: "feliz" }]} miradas={[{ f: 0, v: { x: 0.8, y: 0 } }, { f: l(105.6), v: { x: 0.7, y: -0.6 } }]}
             poses={[{ f: 0, v: "parado" }, { f: l(105.7), v: "manosCintura" }, { f: l(106.2), v: "señalar" }, { f: l(106.9), v: "celebrar" }]} />
         </svg>
@@ -945,12 +993,12 @@ const Q27: React.FC = () => {
       medio={<>
         <Puesto x={3500} y={Y - 10} cartel="FARM STAND" />
         <A look={ROSA} escala={1.25} ruta={[{ f: 0, x: 4150, y: Y }, { f: l(129.4), x: 3790, y: Y }]} dir={[{ f: 0, v: -1 }]}
-          poses={[{ f: 0, v: "parado" }, ...gestos(l(129.6), l(131.2), ["agacharse", "parado"], 20), { f: l(131.4), v: { hD: 82, cD: 36, hI: 72, cI: 44, tronco: 6 } }, ...gestos(l(133.0), l(135.5), [{ hD: 82, cD: 36, hI: 72, cI: 44, tronco: 6 }, { hD: 74, cD: 30, hI: 80, cI: 52, tronco: 9 }], 22)]}
+          poses={[{ f: 0, v: "parado" }, ...gestos(l(129.6), l(131.2), ["agacharse", "parado"], 20), { f: l(131.4), v: { hD: 70, cD: 16, hI: 60, cI: 30, tronco: 5 } }, ...gestos(l(133.0), l(135.5), [{ hD: 70, cD: 16, hI: 60, cI: 30, tronco: 5 }, { hD: 64, cD: 12, hI: 66, cI: 36, tronco: 8 }], 22)]}
           caras={[{ f: 0, v: "duda" }, { f: l(131.6), v: "determinado" }, { f: l(134.0), v: "feliz" }]} miradas={[{ f: 0, v: { x: 0.6, y: 0.4 } }, { f: l(131.4), v: { x: 0.5, y: -0.2 } }]}
           enManoD={(ff) => (ff > l(131.0) ? <g transform={`scale(${ap(ff, l(131.0), 10)})`}><Papa x={0} y={0} s={1.3} brotes={ap(f, l(131.8), 14)} /></g> : null)} />
       </>}
       hud={<><Past x={1500} y={40} w={420} h={96} desde={l(130.0)} /><Rotulo texto="20 MILES" x={1500} y={50} centro desde={l(130.0)} color="#ffcf6e" tam={74} /><Rotulo texto="LOOKING FOR EYES" x={1000} y={930} centro desde={l(132.0)} color="#7cd36a" tam={58} />
-        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: "scale(1.3)", transformOrigin: "1150px 170px" }}><MapaMillas x={1150} y={170} k={ap(f, l(130.2), 70)} desde={l(130.0)} puntos={[l(132.4), l(133.6), l(134.8)]} /></div>
+        <MapaMillas x={720} y={120} k={interpolate(f, [l(130.2), l(132.4), l(133.6), l(134.8), l(135.5)], [0, 0.34, 0.62, 0.86, 0.95], { ...cl, easing: (t: number) => t * t * (3 - 2 * t) })} desde={l(130.0)} puntos={[l(132.4), l(133.6), l(134.8)]} />
         <LupaGrande x={300} y={700} r={112} desde={l(131.9)} Papa={Papa} brotes={ap(f, l(132.4), 20)} /></>} />
   );
 };
@@ -1191,21 +1239,33 @@ const Q34: React.FC = () => {
 const Q35: React.FC = () => {
   const f = useF();
   const l = loc(169.8);
-  const herr = (i: number) => (i % 3 === 0 ? <Pala /> : i % 3 === 1 ? <Horquilla /> : <Balde />);
-  const x0 = (ff: number) => interpolate(ff, [0, l(172.6)], [2600, 3160]);
-  const PA = 125;
+  // DOS FILAS caminando (atrás 5 a 0,95 y 130 px más arriba, corridas medio paso; adelante 5 a 1,2), 200 px entre cabezas
+  // de la misma fila. Cada herramienta va PARADA en la mano de atrás, como un bastón, 80 px por delante del eje del cuerpo
+  // y DETRÁS de la propia cabeza (la mano de atrás se dibuja bajo la cabeza): ningún diente ni mango cruza una cara.
+  // El brazo de atrás queda fijo (ajuste) mientras las piernas caminan. Lo verifica <Chequeo/>.
+  const NOM = ["MARCUS", "THEO", "JUNE", "GUS", "ROSA", "DEV", "PRIYA", "NAN", "BEN", "LILY"];
+  const baston = <T,>(p: T): T => ({ ...p, hI: 50, cI: 40 });
+  // atrás (dibujada primero): pala / horquilla parada como bastón; adelante: baldes y bolsas a la cintura (nada alto)
+  const herr = (k: number) => (k % 2 === 0 ? <g transform="rotate(90)"><Pala /></g> : <g transform="rotate(90)"><Horquilla /></g>);
+  const hch = (k: number): Herr => (k % 2 === 0 ? { ...H_PALA, rot: 90 } : { ...H_HORQ, rot: 90 });
+  const DX = interpolate(f, [0, l(172.6)], [0, 560]);
+  const atras = [5, 7, 6, 4, 3].map((i, k) => ({ i, x: 2700 + k * 200, y: Y - 150, e: 0.9, k, tras: true }));
+  const adelante = [8, 1, 0, 2, 9].map((i, k) => ({ i, x: 2600 + k * 200, y: Y, e: 1.05, k, tras: false }));
+  const cam = camino([[-10, 3040, 640, 1.3], [l(171.2), 3320, 640, 1.32], [l(172.6) + 10, 3600, 640, 1.34]]);
+  const items: ItemCh[] = [...atras, ...adelante].map(({ i, x, y, e, k, tras }) => ({ nombre: NOM[i], herrI: tras ? () => hch(k) : undefined,
+    a: { look: LOS10[i], escala: (esNino(i) ? NINO * 1.1 : 1) * e, seed: i * 11, ruta: [{ f: 0, x, y }, { f: l(172.6), x: x + 560, y, curva: "lineal" as const }], dir: [{ f: 0, v: 1 as const }],
+      caras: [{ f: 0, v: "determinado" }], poses: [{ f: 0, v: "parado" }], ajuste: tras ? baston : undefined, enManoI: tras ? herr(k) : undefined,
+      enManoD: tras ? undefined : k === 2 ? <Bolsa color="#c9a26a" /> : <Balde /> } }));
   return (
-    <Escena Set={Granja} pal={PAL} seed={73} setProps={{ hora: "alba", estacion: "verano", crec: 0 }} claves={[mira(0, 3040, 690, 1.35), mira(l(172.6), 3600, 690, 1.35)]}
+    <Escena Set={Granja} pal={PAL} seed={73} setProps={{ hora: "alba", estacion: "verano", crec: 0 }} claves={cam}
       medio={<>
         <Aves f={f} x0={2600} x1={4800} y={230} n={6} dur={120} />
-        {LOS10.map((look, i) => <g key={i}>
-          <A look={look} escala={(esNino(i) ? NINO : 1) * 1.2} seed={i * 11} ruta={[{ f: 0, x: 2600 + i * PA, y: Y }, { f: l(172.6), x: 3160 + i * PA, y: Y, curva: "lineal" }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "determinado" }]}
-            poses={[{ f: 0, v: "parado" }]} enManoD={herr(i)} />
-          <Nube x={x0(f) + i * PA - 10} y={Y + 6} f={f + i * 4} n={4} ancho={30} alto={40} deriva={-50} r0={7} opac={0.4} seed={i} />
-        </g>)}
+        {[...atras, ...adelante].map(({ x, y }, k) => <Nube key={k} x={x + DX - 10} y={y + 6} f={f + k * 4} n={4} ancho={30} alto={40} deriva={-50} r0={7} opac={0.4} seed={k} />)}
+        {items.map((it, k) => <A key={k} {...it.a} />)}
+        <Chequeo items={items} claves={cam} />
       </>}
-      hud={<><Rotulo texto="PLANTING" x={1240} y={110} centro desde={l(170.6)} color="#ffcf6e" tam={96} />
-        <Num x={1240} y={250} desde={l(169.9)} f0={l(170.0)} f1={l(171.8)} v0={240} v1={250} pre="DAY " tam={100} color="#f6ecd2" cubica /></>} />
+      hud={<><ChequeoTexto items={items} f0={0} f1={l(172.6)} claves={cam} titulo="E37" /><Rotulo texto="PLANTING" x={1240} y={100} centro desde={l(170.6)} color="#ffcf6e" tam={88} />
+        <Num x={1240} y={206} desde={l(169.9)} f0={l(170.0)} f1={l(171.8)} v0={240} v1={250} pre="DAY " tam={84} color="#f6ecd2" cubica /></>} />
   );
 };
 
@@ -1218,12 +1278,25 @@ const Q36: React.FC = () => {
   const TS = 1.5, TX0 = 3860;
   const dx = interpolate(f, [l(174.4), l(177.9) + 20], [0, 300], cl);
   const humo = ap(f, l(173.2), 14);
-  // brazos ARRIBA y hacia atrás (más de 180°): no pasan por delante de la cara
-  const arriba = { hD: 202, cD: -14, hI: 212, cI: -10, tronco: -8, cabeza: -12 }, arriba2 = { hD: 188, cD: -4, hI: 198, cI: -20, tronco: -3, cabeza: -6 };
-  const gente = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  // festejo con brazos en V/Y hacia AFUERA (mano a ≥80 px del centro de la cara, nunca delante): dos filas reales —
+  // atrás 4 (0,95, 150 px más arriba, corridas medio paso), adelante 5 (1,15) — 190 px entre cabezas de la misma fila;
+  // se dibuja primero la fila de atrás. Margen de cuadro x 190-1700 (nadie cortado). Lo verifica <Chequeo/>.
+  // (el hombro está pegado a la cabeza: el brazo sube CASI horizontal hasta el codo y recién el antebrazo va arriba = «U» de gol)
+  const V1 = { hD: 104, cD: 56, hI: 256, cI: -56, tronco: -3, cabeza: -10 }, V2 = { hD: 98, cD: 68, hI: 262, cI: -66, tronco: 0, cabeza: -5 };
+  const atras = [5, 7, 6, 2].map((i, k) => ({ i, x: 2855 + k * 190, y: Y - 175, e: 0.95, k: 5 + k }));
+  const adelante = [8, 1, 3, 4, 9].map((i, k) => ({ i, x: 2760 + k * 190, y: Y + 40, e: 1.15, k }));
+  const cam = camino([[-10, 3290, 600, 1.18], [l(174.4), 3320, 600, 1.2], [l(177.9) + 10, 3370, 596, 1.24]]);
+  const items: ItemCh[] = [...atras, ...adelante].map(({ i, x, y, e, k }) => {
+    const t0 = l(174.4) + k * 3, amp = y < Y ? 16 : 24 + (k % 3) * 5;
+    const salto = (ff: number) => (ff > t0 ? amp * Math.abs(Math.sin((Math.PI * (ff - t0)) / 18)) : 0);
+    return { nombre: ["MARCUS", "THEO", "JUNE", "GUS", "ROSA", "DEV", "PRIYA", "NAN", "BEN", "LILY"][i], dy: salto,
+      a: { look: LOS10[i], escala: (esNino(i) ? NINO * 1.15 : 1) * e, seed: i * 7, ruta: [{ f: 0, x, y }], dir: [{ f: 0, v: 1 as const }],
+        poses: [{ f: 0, v: "parado" }, { f: l(173.4) + k, v: { hD: 88, cD: 6, tronco: 2 } }, ...gestos(t0, l(177.9) + 30, [V1, V2], 9)],
+        caras: [{ f: 0, v: "duda" }, { f: l(173.4), v: "sorpresa" }, { f: t0, v: "risa" }], miradas: [{ f: 0, v: { x: 0.8, y: 0 } }] } };
+  });
   return (
     <Escena Set={Granja} pal={PAL} seed={74} setProps={{ hora: "dia", estacion: "verano", crec: 0 }}
-      claves={camino([[-10, 3360, 600, 1.18], [l(174.4), 3420, 600, 1.22], [l(177.9) + 10, 3500, 596, 1.27]])}
+      claves={cam}
       medio={<>
         <rect x={TX0 - 200} y={Y - 14} width={dx + 200} height={26} rx={10} fill="#3a2418" />
         <Tractor x={TX0 + dx} y={Y} s={TS} humo={humo} f={f} rueda={dx * 0.8} />
@@ -1231,13 +1304,11 @@ const Q36: React.FC = () => {
         <g transform={`translate(${dx},0)`}><A look={MARCUS_VERANO} escala={TS / 1.15} ruta={[{ f: 0, x: TX0 - 80 * TS / 1.15, y: Y - 120 * TS / 1.15 }]}
           dir={[{ f: 0, v: 1 }]} asiento={[{ f: 0, v: 90 }]} poses={[{ f: 0, v: { tronco: 4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 80, cD: 40, hI: 70, cI: 40 } }, { f: l(174.6), v: { tronco: 4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 130, cD: 50, hI: 70, cI: 40 } }, ...gestos(l(175.2), l(177.9) + 30, [{ tronco: 4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 118, cD: 62, hI: 70, cI: 40 }, { tronco: 2, pI: 88, rI: 88, pD: 92, rD: 92, hD: 132, cD: 44, hI: 70, cI: 40 }], 12)]}
           caras={[{ f: 0, v: "determinado" }, { f: l(174.2), v: "feliz" }]} miradas={[{ f: 0, v: { x: -0.8, y: 0 } }, { f: l(175.0), v: { x: -0.9, y: -0.2 } }]} /></g>
-        {gente.map((i, k) => { const fila = k % 2, x = 2600 + k * 112, y = fila ? Y - 120 : Y + 40, e = (esNino(i) ? NINO * 1.15 : 1) * (fila ? 0.95 : 1.25); const t0 = l(174.4) + k * 3;
-          const salto = f > t0 ? (30 + (k % 3) * 10) * Math.abs(Math.sin((Math.PI * (f - t0)) / 18)) : 0;
-          return <g key={i} transform={`translate(0,${-salto})`}><A look={LOS10[i]} escala={e} seed={i * 7} ruta={[{ f: 0, x, y }]} dir={[{ f: 0, v: 1 }]}
-            poses={[{ f: 0, v: "parado" }, { f: l(173.4) + k, v: "señalar" }, ...gestos(t0, l(177.9) + 30, [arriba, arriba2], 9)]}
-            caras={[{ f: 0, v: "duda" }, { f: l(173.4), v: "sorpresa" }, { f: t0, v: "risa" }]} miradas={[{ f: 0, v: { x: 0.8, y: 0 } }]} /></g>; })}
+        {items.map((it, k) => <g key={k} transform={`translate(0,${-(it.dy ? it.dy(f) : 0)})`}><A {...it.a} /></g>)}
+        <Chequeo items={items} claves={cam} />
       </>}
       hud={<>
+        <ChequeoTexto items={items} f0={0} f1={l(177.9)} claves={cam} titulo="E38" />
         <Cartel texto="40 ACRES · 1 TRACTOR" x={1240} y={110} desde={l(175.0)} color="#f6ecd2" tam={72} />
         {f >= l(176.0) && <svg width={560} height={220} style={{ position: "absolute", left: 700, top: 186, overflow: "visible", opacity: ap(f, l(176.0), 8), transform: "scale(0.82)", transformOrigin: "280px 0px" }}>
           <rect x={0} y={0} width={560} height={210} rx={18} fill="rgba(14,10,18,0.72)" />
@@ -1362,8 +1433,15 @@ const Q40: React.FC = () => {
   const progP = 0.06 * k;
   const camT = camino(Array.from({ length: 9 }).map((_, q) => { const fq = -10 + q * ((F1 + 20) / 8); return [fq, 3060 + 1700 * kk(fq) - 30, 950, 1.2] as KP; }));
   const PERc = 26;
+  const camB = camino([[-10, 3660, 560, 1.28], [F1 + 10, 3690, 556, 1.3]]);
+  const theoE42: ItemCh = { nombre: "THEO", a: { look: THEO, escala: 1.0, ruta: [{ f: -10, x: 3440, y: Y }, { f: F1 + 20, x: 3470, y: Y }], dir: [{ f: 0, v: 1 }], caras: [{ f: 0, v: "cansado" }], miradas: [{ f: 0, v: { x: 0.5, y: 0.8 } }],
+    poses: cavar(0, F1, 24, 4, "arrodillado", { ...{ tronco: 30, cabeza: 18, hD: 30, cD: 20, pI: 100, rI: 120, pD: 80, rD: 120 } }), enManoD: (ff: number) => (conTierra(ff, 0, 24, 4) ? null : <Papa x={0} y={6} s={0.8} />) } };
+  const palasE42: ItemCh[] = [JUNE, GUS].map((look, i) => ({ nombre: i ? "GUS" : "JUNE", herrI: () => H_PALA_I,
+    a: { look, escala: 1.0, ruta: [{ f: -10, x: 3640 + i * 240, y: Y }, { f: F1 + 20, x: 3660 + i * 240, y: Y }], dir: [{ f: 0, v: 1 as const }], poses: palear(0, F1, PERc, i * 9), caras: [{ f: 0, v: "cansado" }],
+      enManoI: (ff: number) => <g transform={PALA_TR}><Pala tierra={conTierraP(ff, 0, PERc, i * 9)} /></g> } }));
   return (
     <>
+      <ChequeoTexto items={[theoE42, ...palasE42]} f0={0} f1={F1} claves={camB} titulo="E42" />
       <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 540, overflow: "hidden" }}>
         <Escena Set={Granja} pal={PAL} seed={78} setProps={{ hora: "dia", estacion: "verano", crec: 0.05 }} claves={camT}
           medio={<>
@@ -1377,14 +1455,14 @@ const Q40: React.FC = () => {
       </div>
       <div style={{ position: "absolute", left: 0, top: 540, width: 1920, height: 540, overflow: "hidden" }}>
         <div style={{ position: "absolute", left: 0, top: -540, width: 1920, height: 1080 }}>
-          <Escena Set={Granja} pal={PAL} seed={79} setProps={{ hora: "dia", estacion: "verano", crec: 0.05 }} claves={camino([[-10, 3640, 560, 1.3], [F1 + 10, 3670, 556, 1.32]])}
+          <Escena Set={Granja} pal={PAL} seed={79} setProps={{ hora: "dia", estacion: "verano", crec: 0.05 }} claves={camB}
             medio={<>
               <rect x={3300} y={Y + 18} width={Math.max(0, 140 + 1700 * progP * 3)} height={18} fill="#3a2418" />
               {/* Theo arrodillado deja papas semilla en el surco */}
-              <A look={THEO} escala={1.0} ruta={[{ f: -10, x: 3440, y: Y }, { f: F1 + 20, x: 3470, y: Y }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "cansado" }]} miradas={[{ f: 0, v: { x: 0.5, y: 0.8 } }]}
-                poses={cavar(0, F1, 24, 4, "arrodillado", { ...{ tronco: 30, cabeza: 18, hD: 30, cD: 20, pI: 100, rI: 120, pD: 80, rD: 120 } })} enManoD={(ff: number) => (conTierra(ff, 0, 24, 4) ? null : <Papa x={0} y={6} s={0.8} />)} />
-              {[JUNE, GUS].map((look, i) => <A key={i} look={look} escala={1.0} ruta={[{ f: -10, x: 3640 + i * 170, y: Y }, { f: F1 + 20, x: 3665 + i * 170, y: Y }]} dir={[{ f: 0, v: 1 }]}
-                poses={cavar(0, F1, PERc, i * 9)} caras={[{ f: 0, v: "cansado" }]} enManoD={(ff: number) => <Pala tierra={conTierra(ff, 0, PERc, i * 9)} />} />)}
+              <A {...theoE42.a} />
+              {/* June y Gus 240 px separados; la pala en la mano de atrás hacia adelante-abajo (nunca toca una cabeza) */}
+              {palasE42.map((it, i) => <A key={i} {...it.a} />)}
+              <Chequeo items={[theoE42, ...palasE42]} claves={camB} />
               <Nube x={3600} y={Y + 8} f={f} n={5} ancho={200} alto={50} deriva={30} r0={9} color="#cdb894" opac={0.4} />
             </>} />
         </div>
@@ -1418,22 +1496,31 @@ const Q42: React.FC = () => {
   const u = interpolate(f, [l(197.3), l(200.4)], [0, 6], cl);
   const fr = u % 1;
   const noche = u >= 6 ? 0 : 0.34 * Math.pow(Math.sin(Math.PI * Math.max(0, Math.min(1, (fr - 0.3) / 0.6))), 2);
-  // dos filas (atrás 0,85 más arriba · adelante 1,0), 170 px entre cabezas de la misma fila; Marcus adelante al centro
-  // (pantalla x≈760, cabeza bajo la franja del HUD); cada uno palea con su propio ciclo continuo
-  const atras = [6, 5, 4, 3].map((i, k) => ({ i, x: 3555 + k * 170, y: Y - 150, e: 0.85 }));
-  const adelante = [1, 0, 7, 8, 9, 2].map((i, k) => ({ i, x: 3300 + k * 170, y: Y + 14, e: 1.0 }));
-  const todos = [...atras, ...adelante];
+  // DOS FILAS REALES: atrás 5 (0,85, 150 px más arriba, corridas medio paso) y adelante 5 (1,0), 200 px entre cabezas de la
+  // misma fila; se dibuja primero la de atrás. Pala en la mano de atrás, hoja abajo adelante y mango por debajo del hombro
+  // (nunca cruza una cara). Margen de cuadro: nadie cortado. Lo verifica <Chequeo/>.
+  const NOM = ["MARCUS", "THEO", "JUNE", "GUS", "ROSA", "DEV", "PRIYA", "NAN", "BEN", "LILY"];
+  const atras = [6, 5, 4, 3, 7].map((i, k) => ({ i, x: 3160 + k * 220, y: Y - 150, e: 0.85 }));
+  const adelante = [8, 1, 0, 2, 9].map((i, k) => ({ i, x: 3250 + k * 220, y: Y + 14, e: 1.0 }));
+  const cam = camino([[-10, 3640, 690, 1.2], [l(198.4), 3660, 688, 1.26], [l(199.0), 3675, 685, 1.31], [l(201.6) + 10, 3690, 680, 1.38]]);
+  const items: ItemCh[] = [...atras, ...adelante].map(({ i, x, y, e }, k) => {
+    const per = 26 + (k % 3) * 4, off = k * 7;
+    return { nombre: NOM[i], herrI: () => H_PALA_I,
+      a: { look: LOS10[i], escala: (esNino(i) ? NINO * 1.15 : 1) * e, seed: i * 7, ruta: [{ f: -10, x, y }, { f: l(201.6) + 20, x: x + 18, y }], dir: [{ f: 0, v: 1 as const }],
+        poses: palear(0, l(201.6), per, off), caras: [{ f: 0, v: "cansado" }, { f: l(199.2) + k * 2, v: k % 3 === 0 ? "triste" : "cansado" }],
+        enManoI: (ff: number) => <g transform={PALA_TR}><Pala tierra={conTierraP(ff, 0, per, off)} /></g> } };
+  });
   return (
     <Escena Set={Granja} pal={PAL} seed={80} setProps={{ hora: "dia", estacion: "verano", crec: 0.05 + 0.1 * (u / 6) }}
-      claves={camino([[-10, 3640, 690, 1.24], [l(198.4), 3660, 695, 1.3], [l(199.0), 3680, 700, 1.4], [l(201.6) + 10, 3690, 705, 1.48]])}
+      claves={cam}
       detras={<>
         <rect x={-30000} y={-30000} width={62000} height={62000} fill="#0a1230" opacity={noche} />
         {u < 6 && fr < 0.5 && <SolCruza u={fr * 2} x0={2800} x1={4600} y={480} />}
         {u < 6 && fr >= 0.5 && <SolCruza u={(fr - 0.5) * 2} x0={2800} x1={4600} y={480} luna />}
       </>}
-      medio={<>{todos.map(({ i, x, y, e }, k) => { const per = 26 + (k % 3) * 4, off = k * 7; return <A key={i} look={LOS10[i]} escala={(esNino(i) ? NINO * 1.15 : 1) * e} seed={i * 7} ruta={[{ f: -10, x, y }, { f: l(201.6) + 20, x: x + 18, y }]} dir={[{ f: 0, v: 1 }]}
-        poses={cavar(0, l(201.6), per, off)} caras={[{ f: 0, v: "cansado" }, { f: l(199.2) + k * 2, v: k % 3 === 0 ? "triste" : "cansado" }]} enManoD={(ff: number) => <Pala tierra={conTierra(ff, 0, per, off)} />} />; })}</>}
+      medio={<>{items.map((it, k) => <A key={k} {...it.a} />)}<Chequeo items={items} claves={cam} /></>}
       hud={<>
+        <ChequeoTexto items={items} f0={0} f1={l(201.6)} claves={cam} titulo="E44" />
         <Cartel texto="10 PEOPLE · 6 DAYS · BLISTERS" x={1240} y={105} desde={l(200.4)} color="#ffcf6e" tam={60} />
         <Num x={1240} y={230} desde={l(197.3)} f0={l(197.3)} f1={l(200.4)} v0={250} v1={256} pre="DAY " tam={100} color="#f6ecd2" cubica />
         <InsertoMano x={1700} y={330} r={100} desde={l(199.3)} f={f} /><InsertoMano x={1830} y={500} r={80} desde={l(199.7)} f={f} />

@@ -4,11 +4,13 @@ import React from "react";
 import { interpolate, random } from "remotion";
 import { Clave, enPantalla, mira, useF } from "../../anikit/camara";
 import { Escena } from "../../anikit/escena";
+import type { ActorProps } from "../../anikit/actor";
 import { Halo } from "../../anikit/luz";
 import { PlanoM } from "../../anikit/montaje";
 import { F_HUD, Globo, Pildora, RelojDia } from "../../anikit/pantalla";
 import { Lata } from "../../anikit/props";
-import type { Pose } from "../../anikit/personaje";
+import { alcanzar, type Pose } from "../../anikit/personaje";
+import { Chequeo, ChequeoTexto, H_PALA_I, H_PAPA, ItemCh, PALA_TR, conTierraP, palear } from "./chequeo_e4";
 import { GUS, JUNE, JUNE_MOCHI, PAL, THEO, THEO_INV } from "../elenco";
 import { A, Rotulo, gestos, loc } from "./comun_ep";
 import { BEN, DEV, LILY, NINO, Ore, ROSA } from "./elenco_lcb";
@@ -183,7 +185,9 @@ const R05: React.FC = () => {
   const fin = f > l(229.6);
   const L5 = l(231.0);
   const hx = fin ? 960 + ap(f, l(229.8), 14) * 70 : gx, hy = fin ? PARED.y + 305 : gy;
+  const rt = ap(f, l(230.3), 10);
   const bx = 1081 + 110 * ap(f, l(229.3), 12); // Ben en el cajón (x≈1050 en pantalla); antes del «9,000» se corre a la derecha para no taparlo
+  const rx = bx + 18, ry = P - 100 - 1.15 * 206; // hombro de atrás de Ben (mira a la izquierda: atrás = +x)
   return (
     <Escena Set={Granja} pal={PAL} seed={94} mano={1.5}
       setProps={{ hora: "dia", estacion: "verano", crec: 0.8, pared: [{ t: "BEETLES", desde: -99, x: PARED.x + 20, y: PARED.y + 60, tam: 40 }, { t: "9,000", desde: l(229.8), x: PARED.x + 60, y: PARED.y + 320, tam: 70, color: "#b8382c", vel: 1.4 }] }}
@@ -191,9 +195,11 @@ const R05: React.FC = () => {
       medio={<>
         <g>{Array.from({ length: n }).map((_, i) => { const gg = Math.floor(i / 5), k = i % 5; const x = PARED.x + 22 + (gg % 8) * 34, y = PARED.y + 90 + Math.floor(gg / 8) * 48; return k < 4 ? <rect key={i} x={x + k * 6} y={y} width={3} height={36} fill="#2a1c18" /> : <line key={i} x1={x - 4} y1={y + 30} x2={x + 26} y2={y + 6} stroke="#2a1c18" strokeWidth={3} />; })}</g>
         <rect x={1011} y={P - 100} width={250} height={110} rx={6} fill="#b08a5a" stroke="#6a4a2a" strokeWidth={5} /><rect x={1011} y={P - 60} width={250} height={8} fill="#8a6a42" />
+        {/* el brazo largo de la brocha sale del hombro de ATRÁS de Ben y se dibuja ANTES que él: pasa detrás de la cabeza; al terminar
+            el «9,000» se RETRAE hasta el hombro (sin fundido translúcido sobre la cara) */}
+        {n > 0 && rt < 1 && <ManoBrocha x={hx + (rx - hx) * rt} y={hy + (ry - hy) * rt} f={f} manga="#e0b030" ox={(rx - hx) * (1 - rt)} oy={(ry - hy) * (1 - rt)} />}
         <A look={BEN} escala={1.15} ruta={[{ f: 0, x: bx, y: P - 100 }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: "manosCintura" }]} caras={[{ f: 0, v: "determinado" }, { f: l(229.8), v: "risa" }]} />
         <A look={LILY} escala={1.1} ruta={[{ f: 0, x: 1367, y: P }]} dir={[{ f: 0, v: -1 }]} poses={[{ f: 0, v: "parado" }, ...gestos(10, L5, ["hablar", { hD: 90, cD: 20 }, "manosCintura"], 22)]} caras={[{ f: 0, v: "feliz" }]} enManoD={<Lata s={1.2} color="#f2a03a" />} />
-        {n > 0 && <ManoBrocha x={hx} y={hy} f={f} manga="#e0b030" ox={bx - hx + 20} oy={P - 420 - hy} o={1 - ap(f, l(230.4), 10)} />}
       </>}
       hud={<Dato x={1590} y={90} rotulo="BEETLES KILLED" de={0} a={9000} v={fin ? 9000 : (n / 120) * 9000} desde={l(224.0)} color="#e23a2e" tam={84} vivo={false} />} />
   );
@@ -401,12 +407,14 @@ const R14: React.FC = () => {
   const L = l(273.5);
   const wall = interpolate(f, [l(267.4), l(272.8)], [0, 1], cl);
   return (
-    <Escena Set={Granja} pal={PAL} seed={103} setProps={{ hora: "ocaso", estacion: "verano", crec: 0.85, sotano: ap(f, l(266.6), 24), tSot: 39 }}
+    <Escena Set={Granja} pal={PAL} seed={103} setProps={{ hora: "ocaso", estacion: "verano", crec: 0.85, sotano: 1, tSot: 39 }}
       claves={camino([[0, 2430, 688, 1.62], [l(270.0), 2460, 690, 1.72], [L + 10, 2490, 692, 1.85]])}
       medio={<>
-        <TapaCajones o={ap(f, l(266.6), 24)} />
+        <TapaCajones />
         <Muro x={2690} y={P - 28} k={wall} w={208} filas={4} />
-        <A look={THEO} ruta={[{ f: 0, x: 2320, y: P - 30 }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: "agacharse" }, ...gestos(0, L, ["agacharse", "tirarCarga", "tirarSuelta"], 14)]} caras={[{ f: 0, v: "cansado" }]} enManoD={<Pala tierra />} escala={1.0} />
+        {/* el sótano ya está entero desde el cuadro 0 (nada translúcido sobre Theo/Gus); Theo palea con la pala en la mano de ATRÁS,
+            hoja hacia adelante y abajo: el mango nunca sube por la cara */}
+        <A look={THEO} ruta={[{ f: 0, x: 2320, y: P - 30 }]} dir={[{ f: 0, v: 1 }]} poses={palear(0, L + 30, 28, 0)} caras={[{ f: 0, v: "cansado" }]} enManoI={(fr: number) => <g transform={PALA_TR}><Pala tierra={conTierraP(fr, 0, 28, 0)} /></g>} escala={1.0} />
         {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => <Polvo key={i} x={2470} y={P - 60} f={f} f0={l(266.9) + i * 42} s={1.1} color="#6a4a32" />)}
         <A look={GUS} ruta={[{ f: 0, x: 2610, y: P - 30 }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: "agacharse" }, ...gestos(l(267.0), L, ["agacharse", { hD: 85, cD: 50, hI: 80, cI: 50, tronco: 6 }, { hD: 60, cD: 60, hI: 60, cI: 60 }], 20)]} caras={[{ f: 0, v: "determinado" }]} escala={1.1}
           enManoD={<ellipse rx={28} ry={18} fill="#8a8580" />} />
@@ -544,20 +552,26 @@ const R20: React.FC = () => {
   const l = loc(298.0);
   const L = l(301.6);
   const f = useF();
+  // cada uno MUESTRA su papa a la altura del hombro, hacia adelante (nunca delante de la cara): sube de la cadera al pecho
+  // con resorte y la sacude un poco; la fila a 158 px deja la papa lejos de la cabeza del de adelante
+  const cam65 = camino([[0, 3880, 566, 1.16], [l(299.8), 3925, 568, 1.19], [L + 10, 3975, 572, 1.23]]);
+  const e65: ItemCh[] = LOS10.map((look, i) => {
+    const t0 = l(298.2) + i * 5;
+    const alza = { hD: 52, cD: 60, cabeza: -4 }, alza2 = { hD: 60, cD: 50, cabeza: 0, tronco: -2 };
+    const s = (fr: number) => 1.1 * Math.min(1, Math.max(0, (fr - t0 - 2) / 6));
+    return { nombre: `p${i}`, herrD: (fr: number) => (fr > t0 + 2 ? H_PAPA(s(fr), -14) : null), a: { look, escala: i >= 8 ? NINO : 1, seed: i * 3, ruta: [{ f: 0, x: 3230 + i * 158, y: P - 40 }], dir: [{ f: 0, v: 1 as const }],
+      caras: [{ f: 0, v: "neutral" }, { f: t0, v: "feliz" }, { f: t0 + 12, v: "risa" }],
+      poses: [{ f: 0, v: "parado" }, { f: t0, v: alza }, ...gestos(t0 + 14, L + 14, [alza2, alza], 16)],
+      enManoD: (fr: number) => (fr > t0 + 2 ? <Papa x={0} y={-14} s={s(fr)} rot={i * 20} /> : null) } as ActorProps };
+  });
   return (
     <Escena Set={Granja} pal={PAL} seed={109} setProps={{ hora: "ocaso", estacion: "verano", crec: 1, corte: 1, papas: 1 }}
-      claves={camino([[0, 3880, 566, 1.16], [l(299.8), 3925, 568, 1.19], [L + 10, 3975, 572, 1.23]])}
-      medio={<>{LOS10.map((look, i) => {
-        const t0 = l(298.2) + i * 5;
-        const alza = { hD: 128, cD: 62, cabeza: -6 }, alza2 = { hD: 136, cD: 50, cabeza: -2, tronco: -2 };
-        return <A key={i} look={look} escala={i >= 8 ? NINO : 1} seed={i * 3} ruta={[{ f: 0, x: 3230 + i * 158, y: P - 40 }]} dir={[{ f: 0, v: 1 }]}
-          caras={[{ f: 0, v: "neutral" }, { f: t0, v: "feliz" }, { f: t0 + 12, v: "risa" }]}
-          poses={[{ f: 0, v: "parado" }, { f: t0, v: alza }, ...gestos(t0 + 14, L + 14, [alza2, alza], 16)]}
-          enManoD={f > t0 + 2 ? <Papa x={0} y={-14} s={1.1 * Math.min(1, (f - t0 - 2) / 6)} rot={i * 20} /> : undefined} />;
-      })}</>}
+      claves={cam65}
+      medio={<>{e65.map((it, i) => <A key={i} {...it.a} />)}<Chequeo items={e65} claves={cam65} /></>}
       hud={<>
         <Cartel texto="CLOSE TO 7 MILLION CALORIES" x={1280} y={60} desde={l(298.3)} color="#ffcf6e" tam={58} />
         <Rotulo texto="IN THE GROUND. READY." x={960} y={950} centro desde={l(299.8)} color="#ffcf6e" tam={76} />
+        <ChequeoTexto items={e65} f0={0} f1={L} claves={cam65} titulo="E65" />
       </>} />
   );
 };
@@ -717,23 +731,40 @@ const R26: React.FC = () => {
   const sentCae = { tronco: 22, pI: 84, rI: 92, pD: 88, rD: 96, hI: 62, cI: 118, hD: 66, cD: 122, cabeza: 26 };
   const sentCae2 = { tronco: 18, pI: 84, rI: 92, pD: 88, rD: 96, hI: 58, cI: 112, hD: 62, cD: 116, cabeza: 18 };
   const TX = 2850;
+  // Marcus (x 2750) a la izquierda de Theo, DENTRO del cuadro: apoya la mano en el HOMBRO de Theo (IK, desde atrás), nunca en
+  // la cabeza; el resto en fila a 140 (de 3040 a 4020). Nadie se tapa la cara: pena = hombros caídos, cabeza gacha.
+  const cam73 = camino([[0, 3350, 640, 1.18], [l(323.2), 3360, 645, 1.21], [L + 10, 3370, 650, 1.24]]);
+  const MX = 2750;
+  const mano = (p: Pose, fr: number): Pose => {
+    const w = ap(fr, l(322.6), 14);
+    if (w <= 0) return p;
+    const q = { ...p, ...alcanzar(p, "D", { x: TX - 4 - MX, y: -150 }) } as Pose;
+    return { ...p, hD: p.hD + (q.hD - p.hD) * w, cD: p.cD + (q.cD - p.cD) * w };
+  };
+  const pena = { tronco: 12, cabeza: 18, hI: 6, cI: 12, hD: 10, cD: 14 };
+  const e73: ItemCh[] = LOS10.map((look, i) => {
+    const t0 = l(321.8) + i * 7;
+    if (i === 1) return { nombre: "Theo", a: { look, seed: i * 3, ruta: [{ f: 0, x: TX, y: Y }], dir: [{ f: 0, v: 1 as const }], asiento: [{ f: 0, v: 64 }], caras: [{ f: 0, v: "triste" }, { f: l(323.4), v: "cansado" }], miradas: [{ f: 0, v: { x: 0.6, y: 0.7 } }],
+      poses: [{ f: 0, v: sent }, { f: t0, v: { ...sent, tronco: 12, cabeza: 14 } }, { f: l(323.0), v: sentCae }, ...gestos(l(323.5), L + 14, [sentCae2, sentCae], 18)] } as ActorProps };
+    if (i === 0) return { nombre: "Marcus", a: { look, seed: 0, ruta: [{ f: 0, x: MX - 30, y: Y }, { f: l(322.6), x: MX, y: Y }], dir: [{ f: 0, v: 1 as const }], caras: [{ f: 0, v: "neutral" }, { f: t0, v: "triste" }], miradas: [{ f: 0, v: { x: 0.7, y: 0.5 } }],
+      poses: [{ f: 0, v: "parado" }, { f: l(322.6), v: { tronco: 12, cabeza: 14, hI: 6, cI: 12 } }, ...gestos(l(323.2), L + 14, [{ tronco: 12, cabeza: 16, hI: 6, cI: 12 }, { tronco: 9, cabeza: 10, hI: 10, cI: 16 }], 22)], ajuste: mano } as ActorProps };
+    const x = 3040 + (i - 2) * 140;
+    return { nombre: `p${i}`, a: { look, escala: i >= 8 ? NINO : 1, seed: i * 3, ruta: [{ f: 0, x, y: Y }], dir: [{ f: 0, v: 1 as const }], caras: [{ f: 0, v: "neutral" }, { f: t0, v: "triste" }, { f: t0 + 40, v: i % 2 ? "cansado" : "miedo" }],
+      poses: [{ f: 0, v: "parado" }, { f: t0, v: i % 3 === 0 ? "encogerse" : i % 3 === 1 ? pena : triste }, ...gestos(t0 + 20, L + 14, i % 3 === 0 ? ["encogerse", { hI: 46, cI: 112, hD: 50, cD: 110, cabeza: 16, tronco: 12, rI: 10, rD: 10, bajar: 8 }] : i % 3 === 1 ? [pena, triste2] : [triste2, triste], 20)] } as ActorProps };
+  });
   return (
-    <Escena Set={Granja} pal={PAL} seed={114} setProps={{ hora: "alba", estacion: "verano", crec: 1, helada: 1 }} claves={camino([[0, 3350, 640, 1.26], [l(323.2), 3370, 645, 1.3], [L + 10, 3392, 652, 1.36]])}
+    <Escena Set={Granja} pal={PAL} seed={114} setProps={{ hora: "alba", estacion: "verano", crec: 1, helada: 1 }} claves={cam73}
       medio={<>
         <PlantaSeca x={TX + 105} y={Y + 8} s={0.9} k={1} f={0} />
         {/* cajón dado vuelta donde se sienta Theo */}
         <g><rect x={TX - 52} y={Y - 64} width={104} height={64} rx={4} fill="#a07a4a" stroke="#5a3e22" strokeWidth={5} /><rect x={TX - 52} y={Y - 40} width={104} height={7} fill="#7a5a36" /><rect x={TX - 52} y={Y - 18} width={104} height={7} fill="#7a5a36" /></g>
-        {LOS10.map((look, i) => {
-          const t0 = l(321.8) + i * 7;
-          if (i === 1) return <A key={i} look={look} seed={i * 3} ruta={[{ f: 0, x: TX, y: Y }]} dir={[{ f: 0, v: 1 }]} asiento={[{ f: 0, v: 64 }]} caras={[{ f: 0, v: "triste" }, { f: l(323.4), v: "cansado" }]} miradas={[{ f: 0, v: { x: 0.6, y: 0.7 } }]}
-            poses={[{ f: 0, v: sent }, { f: t0, v: { ...sent, tronco: 12, cabeza: 14 } }, { f: l(323.0), v: sentCae }, ...gestos(l(323.5), L + 14, [sentCae2, sentCae], 18)]} />;
-          return <A key={i} look={look} escala={i >= 8 ? NINO : 1} seed={i * 3} ruta={[{ f: 0, x: 2700 + i * 150, y: Y }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "neutral" }, { f: t0, v: "triste" }, { f: t0 + 40, v: i % 2 ? "cansado" : "miedo" }]}
-            poses={[{ f: 0, v: "parado" }, { f: t0, v: i % 3 === 0 ? "encogerse" : i % 3 === 1 ? "manosCara" : triste }, ...gestos(t0 + 20, L + 14, i % 3 === 2 ? [triste2, triste] : [i % 3 === 0 ? "encogerse" : "manosCara", i % 3 === 0 ? { hI: 46, cI: 112, hD: 50, cD: 110, cabeza: 16, tronco: 12, rI: 10, rD: 10, bajar: 8 } : { hI: 36, cI: 146, hD: 42, cD: 146, cabeza: 12, tronco: 10 }], 20)]} />;
-        })}
+        {e73.map((it, i) => <A key={i} {...it.a} />)}
+        <Chequeo items={e73} claves={cam73} />
       </>}
       hud={<>
         <Rotulo texto="TWO WEEKS EARLY" x={1240} y={130} centro desde={l(322.4)} color="#e23a2e" tam={80} />
         <Barra x={960} y={960} w={760} rotulo="GARDEN ALIVE" de={1} a={0.5} desde={l(321.8)} fin={l(324.0)} color="#e23a2e" />
+        <ChequeoTexto items={e73} f0={0} f1={L} claves={cam73} titulo="E73" />
       </>} />
   );
 };
@@ -746,13 +777,13 @@ const R27: React.FC = () => {
   const mano = ap(f, l(331.0), 50);
   return (
     <Escena Set={Granja} pal={PAL} seed={115} setProps={{ hora: "dia", estacion: "verano", crec: 1, helada: 1, corte: ap(f, l(325.3), 24), papas: 1 }}
-      claves={camino([[0, 3870, 650, 1.55], [l(326.6), 3830, 760, 1.32], [l(330.0), 3810, 770, 1.26], [l(334.8) + 10, 3830, 742, 1.36]])}
+      claves={camino([[0, 3870, 650, 1.55], [l(326.6), 3830, 760, 1.32], [l(330.0), 3810, 770, 1.26], [l(334.8) + 10, 3840, 690, 1.36]])}
       medio={<>
         {f > l(329.5) && [0, 1, 2, 3, 4, 5].map((i) => <Destello key={i} x={3560 + i * 120} y={P + 70} k={brilla(i)} r={52} />)}
         {f > l(331.0) && f < l(332.6) && <Papa x={3990} y={P + 70 - 60 * ap(f, l(331.4), 30)} s={1.1} rot={f * 3} />}
         {/* v4: Theo a la derecha (x 3900): la cabeza queda siempre en x>700 de pantalla, lejos del HUD */}
         <A look={THEO} escala={1.7} ruta={[{ f: 0, x: 3900, y: P + 4 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "triste" }, { f: l(329.4), v: "sorpresa" }, { f: l(332.6), v: "feliz" }]} miradas={[{ f: 0, v: { x: 0.5, y: 0.8 } }, { f: l(332.6), v: { x: 0.6, y: -0.3 } }]}
-          poses={[{ f: 0, v: { tronco: 14, pI: 0, rI: 90, pD: 90, rD: 90, hD: 30, cD: 30, cabeza: 12 } }, ...gestos(2, l(326.0), [{ tronco: 18, pI: 0, rI: 90, pD: 90, rD: 90, hD: 36, cD: 20, cabeza: 18 }, { tronco: 12, pI: 0, rI: 90, pD: 90, rD: 90, hD: 28, cD: 34, cabeza: 10 }], 12), { f: l(326.0), v: { tronco: 24, pI: 0, rI: 90, pD: 90, rD: 90, hD: 40, cD: 10, cabeza: 14 } }, ...gestos(l(327.2), l(331.2), [{ tronco: 28, pI: 0, rI: 90, pD: 90, rD: 90, hD: 30, cD: 6, cabeza: 16 }, { tronco: 24, pI: 0, rI: 90, pD: 90, rD: 90, hD: 45, cD: 14, cabeza: 10 }], 18), { f: l(331.6), v: { tronco: 20, pI: 0, rI: 90, pD: 90, rD: 90, hD: 20, cD: 4, cabeza: 18 } }, { f: l(332.6), v: { tronco: 0, pI: 0, rI: 90, pD: 90, rD: 90, hD: 150, cD: 20, cabeza: -6 } }, ...gestos(l(333.2), l(334.8) + 12, [{ tronco: 0, pI: 0, rI: 90, pD: 90, rD: 90, hD: 155, cD: 15, cabeza: -6 }, { tronco: -3, pI: 0, rI: 90, pD: 90, rD: 90, hD: 145, cD: 30, cabeza: -10 }], 14)]}
+          poses={[{ f: 0, v: { tronco: 14, pI: 0, rI: 90, pD: 90, rD: 90, hD: 30, cD: 30, cabeza: 12 } }, ...gestos(2, l(326.0), [{ tronco: 18, pI: 0, rI: 90, pD: 90, rD: 90, hD: 36, cD: 20, cabeza: 18 }, { tronco: 12, pI: 0, rI: 90, pD: 90, rD: 90, hD: 28, cD: 34, cabeza: 10 }], 12), { f: l(326.0), v: { tronco: 24, pI: 0, rI: 90, pD: 90, rD: 90, hD: 40, cD: 10, cabeza: 14 } }, ...gestos(l(327.2), l(331.2), [{ tronco: 28, pI: 0, rI: 90, pD: 90, rD: 90, hD: 30, cD: 6, cabeza: 16 }, { tronco: 24, pI: 0, rI: 90, pD: 90, rD: 90, hD: 45, cD: 14, cabeza: 10 }], 18), { f: l(331.6), v: { tronco: 20, pI: 0, rI: 90, pD: 90, rD: 90, hD: 20, cD: 4, cabeza: 18 } }, { f: l(332.6), v: { tronco: 0, pI: 0, rI: 90, pD: 90, rD: 90, hD: 100, cD: -28, cabeza: -6 } }, ...gestos(l(333.2), l(334.8) + 12, [{ tronco: 0, pI: 0, rI: 90, pD: 90, rD: 90, hD: 106, cD: -22, cabeza: -6 }, { tronco: -3, pI: 0, rI: 90, pD: 90, rD: 90, hD: 96, cD: -34, cabeza: -10 }], 14)]}
           enManoD={(fr: number) => (fr > l(332.6) ? <Papa x={0} y={-10} s={1.0} rot={20} /> : null)} />
       </>}
       hud={<>
@@ -773,19 +804,26 @@ const R28: React.FC = () => {
   const u = interpolate(f, [l(335.0), l(339.6)], [0, 9], cl);
   const cesta = (i: number) => Math.abs(Math.sin((f + i * 14) / 24));
   const X0 = 2960, D = 165;
-  const clava = { tronco: 30, pI: 66, rI: 108, pD: 78, rD: 112, hD: 44, cD: 18, hI: 36, cI: 24, cabeza: -14 };
-  const saca = { tronco: 6, pI: 10, rI: 20, pD: 16, rD: 24, hD: 62, cD: 36, hI: 50, cI: 30, cabeza: -6 };
+  // v5: la pala va en la mano de ATRÁS (detrás de la cabeza y del torso), agarrada del mango y con la hoja hacia adelante y
+  // abajo (PALA_TR): nada sube por la cara. Ciclo propio por persona (nunca se congela). Plano de la fila entera, con margen
+  // a los dos lados (nadie cortado): empuje lento 1.08 → 1.15.
+  const cam75 = camino([[0, 3690, 690, 1.08], [l(337.4), 3700, 694, 1.12], [L + 10, 3705, 696, 1.15]]);
+  const PER = 28;
+  const e75: ItemCh[] = LOS10.map((look, i) => i < 8
+    ? { nombre: `p${i}`, herrI: () => H_PALA_I, a: { look, seed: i * 3, ruta: [{ f: 0, x: X0 + i * D, y: Y }], dir: [{ f: 0, v: 1 as const }], caras: [{ f: 0, v: "cansado" }, { f: l(337.6) + i * 3, v: i % 2 ? "determinado" : "cansado" }],
+        poses: palear(0, L + 30, PER, i * 9), enManoI: (fr: number) => <g transform={PALA_TR}><Pala tierra={conTierraP(fr, 0, PER, i * 9)} /></g> } as ActorProps }
+    : { nombre: `p${i}`, a: { look, escala: NINO, seed: i * 3, ruta: [{ f: 0, x: X0 + i * D, y: Y }], dir: [{ f: 0, v: 1 as const }], caras: [{ f: 0, v: "cansado" }, { f: l(337.6) + i * 3, v: "determinado" }],
+        poses: [{ f: 0, v: "parado" }, ...gestos(2 + i * 5, L + 16, [{ hD: 40, cD: 30, tronco: 6 }, { hD: 52, cD: 24, tronco: -2 }], 16)], enManoD: <Canasta s={0.5} papas={u / 9} /> } as ActorProps });
   return (
     <Escena Set={Granja} pal={PAL} seed={116} setProps={{ hora: "dia", estacion: "verano", crec: 1, helada: 1 }}
-      claves={camino([[0, 3560, 702, 1.45], [l(336.4), 3700, 706, 1.52], [l(337.4), 3420, 714, 1.84], [L + 10, 3470, 716, 1.98]])}
+      claves={cam75}
       detras={u < 9 ? <SolCruza u={u} x0={2720} x1={4720} y={480} /> : undefined}
       medio={<>
-        {LOS10.map((look, i) => <A key={i} look={look} escala={i >= 8 ? NINO : 1} seed={i * 3} ruta={[{ f: 0, x: X0 + i * D, y: Y }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "cansado" }, { f: l(337.6) + i * 3, v: i % 2 ? "determinado" : "cansado" }]}
-          poses={i < 8 ? [{ f: 0, v: i % 2 ? saca : clava }, ...gestos(1 + (i % 4) * 4, L + 16, i % 2 ? [clava, saca] : [saca, clava], 14)] : [{ f: 0, v: "parado" }, ...gestos(2 + i * 5, L + 16, [{ hD: 70, cD: 40, tronco: 6 }, { hD: 90, cD: 30, tronco: -2 }], 16)]}
-          enManoD={i < 8 ? <g transform="rotate(32)"><Pala tierra /></g> : <Canasta s={0.5} papas={u / 9} />} />)}
+        {e75.map((it, i) => <A key={i} {...it.a} />)}
+        <Chequeo items={e75} claves={cam75} />
         {[1, 2, 3].map((i) => <Canasta key={i} x={X0 + i * D + 82} y={Y - 14 - cesta(i) * 60} s={0.5} papas={Math.min(1, u / 6)} />)}
       </>}
-      hud={<CalTachas x={1570} y={170} titulo="DAY" n={10} cols={5} k={u + 0.4} ini={334} desde={l(335.0)} tam={50} />} />
+      hud={<><CalTachas x={1570} y={170} titulo="DAY" n={10} cols={5} k={u + 0.4} ini={334} desde={l(335.0)} tam={50} /><ChequeoTexto items={e75} f0={0} f1={L} claves={cam75} titulo="E75" /></>} />
   );
 };
 
@@ -1001,8 +1039,28 @@ const R34: React.FC = () => {
   const l = loc(372.1);
   const L = l(380.0);
   const T = l(376.7); // «subscribe»: Ben aprieta
-  const X0 = 2780, D = 160;
-  const BX = X0 + 8 * D;
+  // v5: fila a 140 desde 2890 → Ben (1.3× niño) a 3995-4035 y el cartel SUBSCRIBE a 4195: TODO entra en un plano que sólo
+  // empuja apenas (1.10 → 1.18, centro ~3600) → nadie cortado y el cartel nace ya dentro del cuadro (resorte desde 373.0).
+  // La cosecha se muestra al frente a la altura del pecho (nunca delante de una cara); el festejo final = «U de gol».
+  const X0 = 2890, D = 140;
+  const BX = X0 + 8 * D - 15;
+  const cam82 = camino([[0, 3560, 712, 1.1], [l(374.4), 3575, 720, 1.13], [l(376.2), 3595, 728, 1.16], [L + 10, 3605, 730, 1.18]]);
+  const V1 = { hD: 104, cD: 56, hI: 256, cI: -56, tronco: -3, cabeza: -10 }, V2 = { hD: 98, cD: 68, hI: 262, cI: -66, tronco: 0, cabeza: -5 };
+  const e82: ItemCh[] = LOS10.slice(0, 9).map((look, i) => {
+    const t0 = l(372.5) + i * 7;
+    const alza = { hD: 52, cD: 60, cabeza: -4 }, alza2 = { hD: 60, cD: 50, cabeza: 0, tronco: -2 };
+    const esBen = i === 8;
+    const fin = l(378.1) + (i % 3) * 3;
+    const tiene = (fr: number) => fr > t0 + 2 && (!esBen || fr < l(375.9)) && fr < fin;
+    return { nombre: `p${i}`, herrD: (fr: number) => (tiene(fr) ? H_PAPA(1.25, -10) : null), a: { look, escala: esBen ? NINO * 1.3 : 1, seed: i * 3,
+      ruta: esBen ? [{ f: 0, x: BX, y: Y }, { f: l(375.9), x: BX, y: Y }, { f: T - 4, x: BX + 40, y: Y }, { f: L + 20, x: BX + 40, y: Y }] : [{ f: 0, x: X0 + i * D, y: Y }],
+      dir: [{ f: 0, v: 1 as const }],
+      caras: [{ f: 0, v: "neutral" }, { f: t0, v: "feliz" }, { f: t0 + 12, v: "risa" }],
+      poses: esBen
+        ? [{ f: 0, v: "parado" }, { f: t0, v: alza }, ...gestos(t0 + 14, l(375.8), [alza2, alza], 14), { f: l(376.1), v: { hD: 70, cD: 10, tronco: 4 } }, { f: T - 3, v: { hD: 92, cD: 0, tronco: 8 } }, { f: T + 3, v: { hD: 80, cD: 12, tronco: 2 } }, { f: T + 9, v: V1 }, ...gestos(T + 16, L + 14, [V2, V1], 12)]
+        : [{ f: 0, v: "parado" }, { f: t0, v: alza }, ...gestos(t0 + 14, fin, [alza2, alza], 16), ...gestos(fin, L + 14, i % 2 ? [V1, V2] : [V2, V1], 12)],
+      enManoD: (fr: number) => (tiene(fr) ? cosecha(i, Math.min(1, (fr - t0 - 2) / 6)) : null) } as ActorProps };
+  });
   const cosecha = (i: number, k: number) => {
     const s = Math.min(1.15, k * 1.15);
     if (i % 4 === 0) return <Papa x={0} y={-14} s={1.2 * s} rot={i * 20} />;
@@ -1012,29 +1070,17 @@ const R34: React.FC = () => {
   };
   return (
     <Escena Set={Granja} pal={PAL} seed={122} setProps={{ hora: "dia", estacion: "verano", crec: 1 }}
-      claves={camino([[0, 3330, 712, 1.22], [l(374.4), 3420, 724, 1.3], [l(376.2), 3740, 738, 1.48], [l(377.6), 3800, 742, 1.56], [L + 10, 3720, 742, 1.6]])}
+      claves={cam82}
       medio={<>
-        <BotonSub x={BX + 120} y={Y - 210} f={f} t={T} />
-        {LOS10.map((look, i) => {
-          if (i === 9) return null;
-          const t0 = l(372.5) + i * 7;
-          const alza = { hD: 104, cD: 52, cabeza: -6 }, alza2 = { hD: 112, cD: 44, cabeza: -2, tronco: -2 };
-          const esBen = i === 8;
-          const fin = l(378.1) + (i % 3) * 3;
-          return <A key={i} look={look} escala={i >= 8 ? NINO : 1} seed={i * 3}
-            ruta={esBen ? [{ f: 0, x: BX, y: Y }, { f: l(375.9), x: BX, y: Y }, { f: T - 4, x: BX + 40, y: Y }, { f: L + 20, x: BX + 40, y: Y }] : [{ f: 0, x: X0 + i * D, y: Y }]}
-            dir={[{ f: 0, v: 1 }]}
-            caras={[{ f: 0, v: "neutral" }, { f: t0, v: "feliz" }, { f: t0 + 12, v: "risa" }]}
-            poses={esBen
-              ? [{ f: 0, v: "parado" }, { f: t0, v: alza }, ...gestos(t0 + 14, l(375.8), [alza2, alza], 14), { f: l(376.1), v: { hD: 70, cD: 10, tronco: 4 } }, { f: T - 3, v: { hD: 92, cD: 0, tronco: 8 } }, { f: T + 3, v: { hD: 80, cD: 12, tronco: 2 } }, { f: T + 9, v: "celebrar" }, ...gestos(T + 16, L + 14, ["celebrar", "saludar"], 12)]
-              : [{ f: 0, v: "parado" }, { f: t0, v: alza }, ...gestos(t0 + 14, fin, [alza2, alza], 16), ...gestos(fin, L + 14, ["saludar", { hD: 120, cD: 30 }], 12)]}
-            enManoD={(fr: number) => (fr > t0 + 2 && (!esBen || fr < l(375.9)) && fr < fin ? cosecha(i, Math.min(1, (fr - t0 - 2) / 6)) : null)} />;
-        })}
+        {(() => { const k = ap(f, l(373.0), 9), sc = k < 1 ? k * (1.12 - 0.12 * k) : 1; return k > 0 ? <g transform={`translate(${BX + 200},${Y}) scale(${sc}) translate(${-(BX + 200)},${-Y})`}><BotonSub x={BX + 200} y={Y - 210} f={f} t={T} /></g> : null; })()}
+        {e82.map((it, i) => <A key={i} {...it.a} />)}
+        <Chequeo items={e82} claves={cam82} />
         <Ore x={2690 + ap(f, l(375.0), 70) * 1300} y={Y} s={1} dir={1} f={f} cola={1} cabeza={Math.max(0, Math.sin(f / 7)) * 0.6} />
       </>}
       hud={<>
         <Rotulo texto={"One acre. One summer.\nWhat would you plant?"} x={1240} y={40} centro desde={l(372.6)} color="#ffcf6e" tam={66} />
         <Dato x={1500} y={215} rotulo="KCAL IN THE CELLAR" de={5000000} a={6100000} desde={l(373.6)} fin={l(376.0)} color="#7cd36a" tam={52} />
+        <ChequeoTexto items={e82} f0={0} f1={L} claves={cam82} titulo="E82" />
       </>} />
   );
 };

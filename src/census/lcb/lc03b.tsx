@@ -1,7 +1,7 @@
 // lc03 · planos 2:46-6:25 (SEC 8-19 del plan MxM). Cuadros locales: l(segundo global).
 import React from "react";
-import { Easing, interpolate } from "remotion";
-import { Clave, enPantalla, mira, useF } from "../../anikit/camara";
+import { AbsoluteFill, Easing, interpolate } from "remotion";
+import { CapaSVG, Clave, Plano, enPantalla, mira, useF } from "../../anikit/camara";
 import { Escena } from "../../anikit/escena";
 import { Cono, Halo } from "../../anikit/luz";
 import { PlanoM } from "../../anikit/montaje";
@@ -901,21 +901,26 @@ const P52a: React.FC = () => {
   const l = loc(318.7);
   const P = CANAL_PISO;
   const X = CANAL_PUNTOS.muelle;
-  const lugar = RONDA(X);
+  // fix7: Gus pasa al lado del tambor (X-150) y Lily queda DETRÁS de él (X-262): la tabla ya no pasa por ninguna cabeza;
+  // Theo/June/Marcus se corren 50 px a la izquierda → cabezas a ≥140 px en pantalla aunque Gus se incline
+  const lugar = RONDA(X).slice();
+  lugar[0] = X - 150; lugar[9] = X - 272; lugar[1] = X - 410; lugar[2] = X - 565; lugar[3] = X - 728; lugar[7] = X + 582; lugar[8] = X + 692;
+  const TIRA_C = { hD: -18, cD: 10, tronco: -3, hI: 25, cI: 30 }; // fix7: brazo atrás y ABAJO (tiro por debajo del hombro)
+  const TIRA_S = { hD: 58, cD: 4, tronco: 7, hI: 15, cI: 25 }; // suelta con el brazo a la altura de la cadera/pecho, sin inclinarse >7°
   const VUELO = 12; // fix6: 0,4 s de arco hasta el tambor; recién ahí el fogonazo (322.53, donde ya suena en la mezcla)
   const cae = l(322.53);
   const tira = cae - VUELO; // suelta la tabla en 322.13
   const aviva = f > cae ? Math.exp(-(f - cae) / 25) : 0;
   // fix6: cuadro más abierto para que entren los 10 sin cortes (ronda X-605…X+690)
-  const claves = camSuave([[-24, X + 30, 680, 1.2], [l(320.6), X + 50, 678, 1.22], [l(322.6), X + 45, 682, 1.24], [l(324.8), X + 30, 676, 1.28]], l(324.8) + 30);
+  const claves = camSuave([[-24, X - 62, 684, 1.155], [l(320.6), X - 46, 680, 1.175], [l(322.6), X - 50, 684, 1.19], [l(324.8), X - 60, 678, 1.205]], l(324.8) + 30); // fix7: centrado en la ronda que se abrió a la izquierda (nadie cortado en el borde)
   const manos = { hD: 70, cD: 60, hI: 70, cI: 60 };
   // mano de Gus al soltar (en el mundo) → arco hasta la boca del tambor
-  const g0 = manoMundo({ ...POSES.tirarSuelta }, lugar[0], P, 1, 1);
+  const g0 = manoMundo({ ...TIRA_S }, lugar[0], P, 1, 1);
   const tabla = (() => {
     if (f < tira || f > cae + 1) return null;
     const t = Math.min(1, (f - tira) / VUELO);
-    const x = g0.x + (X - g0.x) * t, y = g0.y + (P - 150 - g0.y) * t - 90 * Math.sin(Math.PI * t);
-    return <g transform={`translate(${x},${y}) rotate(${-30 + 250 * t})`}><rect x={-10} y={-55} width={20} height={110} rx={4} fill="#8a5a32" stroke="#0e0a12" strokeWidth={3} /></g>;
+    const x = g0.x + (X - g0.x) * t, y = g0.y + (P - 150 - g0.y) * t - 45 * Math.sin(Math.PI * t);
+    return <g transform={`translate(${x},${y}) rotate(${-10 + 190 * t})`}><rect x={-10} y={-55} width={20} height={110} rx={4} fill="#8a5a32" stroke="#0e0a12" strokeWidth={3} /></g>;
   })();
   // fix6: vida en la ronda: frotarse las manos, acercarlas al fuego, mirar la tabla volar, echarse atrás con el fogonazo
   const frota = (i: number) => (p: any, ff: number) => {
@@ -932,7 +937,7 @@ const P52a: React.FC = () => {
         {aviva > 0.02 && <Halo x={X} y={P - 230} r={260} color="#ffcf6e" fuerza={0.8 * aviva} />}
         <Chispas x={X} y={P - 200} f0={cae} n={14} radio={160} />
         {LOS10.map((look, i) => { const x = lugar[i]; const izq = x < X; return <A key={i} look={look} escala={i >= 8 ? NINO : 1} seed={70 + i} luz={{ lado: izq ? 1 : -1, color: "#ff9a3a", fuerza: 0.9 }} ruta={[{ f: 0, x, y: P }]} dir={[{ f: 0, v: izq ? 1 : -1 }]}
-          poses={i === 0 ? [{ f: 0, v: { hD: 40, cD: 70, hI: 30, cI: 60 } }, { f: tira - 14, v: "tirarCarga" }, { f: tira, v: "tirarSuelta" }, ...gestos(tira + 14, l(324.8) + 30, [manos, { ...manos, hD: 80, tronco: 4 }], 30)]
+          poses={i === 0 ? [{ f: 0, v: { hD: 8, cD: 6, hI: 30, cI: 60 } }, ...gestos(10, tira - 24, [{ hD: 8, cD: 6, hI: 30, cI: 60 }, { hD: 12, cD: 10, hI: 70, cI: 70, tronco: 3 }], 26), { f: tira - 14, v: TIRA_C }, { f: tira, v: TIRA_S }, ...gestos(tira + 14, l(324.8) + 30, [manos, { ...manos, hD: 80, tronco: 4 }], 30)]
             : gestos(i * 7, l(324.8) + 30, i % 2 ? [manos, { ...manos, tronco: 8, cabeza: 6 }, "brazosCruzados", manos] : [manos, "manosCintura", { hD: 85, cD: 40, hI: 85, cI: 40, tronco: 8 }, { hD: 60, cD: 80, hI: 60, cI: 80 }], 34 + (i % 4) * 7)}
           ajuste={i === 0 ? undefined : frota(i)}
           caras={[{ f: 0, v: i % 3 === 1 ? "neutral" : "cansado" }, { f: l(320.0) + i * 5, v: i % 2 ? "neutral" : "cansado" }, { f: tira, v: "neutral" }, { f: cae, v: "sorpresa" }, { f: cae + 14, v: i % 3 ? "neutral" : "feliz" }]}
@@ -974,6 +979,8 @@ const Porton: React.FC<{ x: number; y: number; W: number; H: number; f: number }
       <rect x={x + T} y={deckY} width={W - 2 * T} height={deckH} fill="#0e0c16" stroke={borde} strokeWidth={6} />
       {Array.from({ length: 12 }).map((_, k) => <line key={k} x1={x + T + ((k + 0.5) * (W - 2 * T)) / 12} y1={deckY + 8} x2={x + T + ((k + 0.5) * (W - 2 * T)) / 12} y2={deckY + deckH - 8} stroke="#1e1a2a" strokeWidth={5} />)}
       <rect x={x + T} y={deckY + deckH - 18} width={W - 2 * T} height={10} fill="#3a3248" />
+      {/* fix7: contraluz frío que despega el tablero del cielo */}
+      <rect x={x + T + 2} y={deckY + 2} width={W - 2 * T - 4} height={deckH - 4} fill="none" stroke="#9ab8e8" strokeWidth={3} opacity={0.75} />
       {/* carámbanos que cuelgan del tablero */}
       {Array.from({ length: 16 }).map((_, k) => <path key={k} d={`M${x + T + 30 + k * ((W - 2 * T - 60) / 15) - 6},${deckY + deckH} l6,${18 + (k * 13) % 26} l6,${-(18 + (k * 13) % 26)} Z`} fill="#c9d8ec" opacity={0.7} />)}
       {/* focos de navegación */}
@@ -1006,7 +1013,7 @@ const P52b: React.FC = () => {
           poses={[{ f: 0, v: "parado" }, { f: l(326.1), v: { hD: 20, cD: 20, hI: 10, cI: 20, cabeza: -10 } }, { f: l(326.9), v: { hD: 30, cD: 110, hI: 10, cI: 20, cabeza: -18 } }, { f: l(327.7), v: { hD: 20, cD: 30, hI: 10, cI: 20, cabeza: -20 } }]}
           caras={[{ f: 0, v: "cansado" }, { f: l(326.8), v: "triste" }]} miradas={[{ f: 0, v: { x: 0.6, y: -0.3 } }, { f: l(326.2), v: { x: 0.6, y: -0.9 } }]} giros={[{ f: 0, v: 0.3 }]} />
         <A look={LILY} escala={NINO * 1.95} seed={79} luz={{ lado: -1, color: "#ff9a3a", fuerza: 0.9 }} ruta={[{ f: 0, x: X + 260, y: G + 70 }, { f: l(325.9), x: X + 450, y: G + 70 }]} dir={[{ f: 0, v: 1 }]}
-          poses={[{ f: 0, v: "parado" }, { f: l(325.9), v: { hD: 40, cD: 20 } }, { f: l(326.2), v: { hD: 128, cD: 3, cabeza: -16, tronco: -4 } }, ...gestos(l(326.6), l(328.2) + 30, [{ hD: 132, cD: 2, cabeza: -18, tronco: -5 }, { hD: 124, cD: 6, cabeza: -14, tronco: -3 }], 10)]}
+          poses={[{ f: 0, v: "parado" }, { f: l(325.9), v: { hI: 40, cI: 20 } }, { f: l(326.2), v: { hI: 74, cI: -4, cabeza: -16, tronco: -4 } }, ...gestos(l(326.6), l(328.2) + 30, [{ hI: 80, cI: -6, cabeza: -18, tronco: -5 }, { hI: 70, cI: -2, cabeza: -14, tronco: -3 }], 10)]} /* fix7: brazo IZQUIERDO (del lado del portón), estirado hacia el portón POR DEBAJO del mentón: con la cabeza grande de nena, todo brazo levantado le pasaba por la cara */
           caras={[{ f: 0, v: "duda" }, { f: l(326.2), v: "sorpresa" }]} miradas={[{ f: 0, v: { x: 0.6, y: -0.4 } }, { f: l(326.2), v: { x: 0.7, y: -0.9 } }]} giros={[{ f: 0, v: 0 }]} />
       </>}
       hud={<Rotulo texto="stuck in the UP position" x={1240} y={990} centro desde={l(325.2)} color="#f6ecd2" tam={60} rot={0} brillo={false} />}
@@ -1089,9 +1096,10 @@ const P56: React.FC = () => {
   const S = 1.9, SEP = 560; // TRES camionetas en cuadro, en fila
   // en la caja: 2 · 2 · 3 (Theo, Marcus y Dev manejan), cada uno con su lugar: las cabezas no se pisan
   const cajas: { i: number; k: number; dx: number }[] = [
-    { i: 0, k: 0, dx: -200 }, { i: 2, k: 0, dx: -105 },
-    { i: 4, k: 1, dx: -200 }, { i: 6, k: 1, dx: -105 },
-    { i: 7, k: 2, dx: -150 }, { i: 8, k: 2, dx: -240 }, { i: 9, k: 2, dx: -58 }, // fix6: Nan y los chicos separados ≥85 px
+    // fix7: cada uno en una PUNTA de la caja (antes 95 px entre cabezas de adultos = se encimaban al saludar)
+    { i: 0, k: 0, dx: -238 }, { i: 2, k: 0, dx: -52 },
+    { i: 4, k: 1, dx: -238 }, { i: 6, k: 1, dx: -52 },
+    { i: 7, k: 2, dx: -170 }, { i: 8, k: 2, dx: -268 }, { i: 9, k: 2, dx: -58 },
   ];
   const cart = ap(f, l(341.4), 18);
   const X0 = 1500;
@@ -1101,31 +1109,40 @@ const P56: React.FC = () => {
   const mezK = (ff: number) => interpolate(ff, [-24, l(339.4), l(342.0)], [0, 0, 0.5], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.sin) });
   const camXY = (ff: number) => {
     const Z = Zf(ff), zf = 1 + (Z - 1) * 1.4;
-    const tx = X0 + avance(ff) - 130 + SEP * (2 - mezK(ff)); // fix6: de la 3ª camioneta a entre la 3ª y la del medio (el cartel va a la izquierda, no tapa a Nan)
+    const tx = X0 - 130 - 200 * (1 - mezK(ff) / 0.5) + SEP * (2 - mezK(ff)); // fix7: arranca 200 más a la izquierda: Rosa y Priya enteras desde el 1er cuadro // fix7: SIN el avance: las camionetas quedan quietas en el mundo y el pueblo corre por detrás // fix6: de la 3ª camioneta a entre la 3ª y la del medio (el cartel va a la izquierda, no tapa a Nan)
     const ty = interpolate(Z, [1.27, 1.52], [790, 770]);
     return { X: 960 + ((tx - 960) * zf) / (1.4 * Z), Y: 540 + ((ty - 540) * zf - (560 - 540)) / (1.4 * Z), Z };
   };
   const claves = Array.from({ length: N + 24 }).map((_, j) => { const ff = j - 24; const c = camXY(ff); return mira(ff, c.X, c.Y, c.Z, j ? { curva: "inout" as const } : {}); });
+  // fix7: el TRAVELLING ahora lo hace el mundo (antes la cámara viajaba ~10 px/cuadro → motion blur de obturador prendido
+  // en todo el plano + capa frente desenfocada 2 px). Cada capa corre lo mismo que corría en pantalla con la cámara viajando.
+  const Zn = Zf(f), zfn = 1 + (Zn - 1) * 1.4, zl = 1 + (Zn - 1) * 0.25;
+  const dM = (avance(f) * zfn) / (1.4 * Zn), dL = (0.25 * avance(f) * zfn) / (1.4 * zl);
+  const sp = { f, pal: PAL, hora: "alba" as const, luces: 0, rotulos: false }; // fix7: sin carteles de negocios (DENTAL tapaba a Nan)
   // June sube la última caja a la 1ª camioneta («load everything they can carry», 338.8-339.7)
   const subeCaja = ap(f, l(338.6), 30);
   return (
-    <Escena Set={Superior} pal={PAL} setProps={{ hora: "alba", luces: 0, rotulos: true }} seed={51} mano={1}
-      claves={claves}
-      frente={<>
-        {[0, 1, 2].map((k) => { const x = X0 + k * SEP + avance(f); return <g key={k} transform={`translate(0,${-rebote(k)})`}>
+    <AbsoluteFill>
+      <Plano claves={claves} mano={1} seed={51} fondo={PAL.cielo[0]}>
+        <CapaSVG z={0.25} desenfoqueMax={0}><g transform={`translate(${-dL},0)`}><Superior capa="lejos" {...sp} /></g></CapaSVG>
+        <CapaSVG z={1} desenfoqueMax={0}><g transform={`translate(${-dM},0)`}><Superior capa="medio" {...sp} /></g></CapaSVG>
+        <CapaSVG z={1.4} desenfoqueMax={0}>
+        <g transform={`translate(${-avance(f)},0)`}><Superior capa="frente" {...sp} /></g>
+        {[0, 1, 2].map((k) => { const x = X0 + k * SEP; return <g key={k} transform={`translate(0,${-rebote(k)})`}>
           <Auto x={x} y={P + 150} color={colores[k]} tipo="pickup" s={S} dir={1} faros />
           <rect x={x - 250} y={P + 6} width={40} height={30} fill={["#c9a26a", "#3a5a8a", "#e8c040"][k]} stroke="#0e0a12" strokeWidth={3} />
         </g>; })}
-        {cajas.map(({ i, k, dx }) => { const look = LOS10[i]; const x = X0 + k * SEP + avance(f) + dx;
+        {cajas.map(({ i, k, dx }) => { const look = LOS10[i]; const x = X0 + k * SEP + dx;
           return <A key={i} look={look} escala={(i >= 8 ? NINO * 1.1 : 1) * 1.05} seed={100 + i} sombra={0} ruta={[{ f: 0, x, y: P + 56 - rebote(k) }]} dir={[{ f: 0, v: i === 9 ? -1 : 1 }]}
-            poses={i === 9 ? gestos(0, N, [{ hD: 150, cD: 30 }, { hD: 165, cD: 10 }], 11)
+            poses={i === 9 ? gestos(0, N, [{ hI: 26, cI: 30, hD: 18, cD: 26, cabeza: 4 }, { hI: 34, cI: 46, hD: 22, cD: 34, cabeza: -2 }], 17) /* fix7: Lily NO saluda: triste, se agarra de la caja con las manos bajas y mira el pueblo (con la cabeza grande de nena, todo brazo arriba le cruzaba la cara) */
               : [...(i === 2 ? [{ f: 0, v: { hD: 75, cD: 20, hI: 75, cI: 20, tronco: 6 } }, { f: l(339.6), v: { hD: 40, cD: 30, hI: 40, cI: 30, tronco: 22 } }, ...gestos(l(339.8), l(340.9), [{ hD: 30, cD: 50, tronco: 10 }, { hD: 50, cD: 30, tronco: 14 }], 12)]
+                : i === 7 ? gestos(0, l(340.9), [{ hD: 28, cD: 55, hI: 25, cI: 45, tronco: 10 }, { hD: 18, cD: 75, hI: 30, cI: 55, tronco: 6 }], 16) /* fix7: Nan acomoda con las manos bajas (antes la mano le llegaba a la cabeza de Lily) */
                 : gestos(i * 3, l(340.9), [{ hD: 50, cD: 40, hI: 40, cI: 40, tronco: 14 }, { hD: 30, cD: 60, hI: 30, cI: 50, tronco: 6 }, { hD: 60, cD: 20, hI: 20, cI: 30, tronco: 10 }], 13 + (i % 3) * 3)),
-                ...gestos(l(341.0) + i * 2, N, [{ hD: 132, cD: 25 }, { hD: 122, cD: 40, hI: 20, cI: 10 }, { hD: 138, cD: 15, hI: 115, cI: 20 }] /* fix6: saludo en diagonal, el brazo no cruza la cara */, 9 + (i % 3) * 2)]}
+                ...gestos(l(341.0) + i * 2, N, [{ hD: 110, cD: 20, hI: 20, cI: 10 }, { hD: 120, cD: 10, hI: 20, cI: 10 }, { hD: 100, cD: 35, hI: 15, cI: 20 }] /* fix7: saludo con la mano AFUERA de la cabeza (~75 px del hombro, a la altura de la cara, nunca encima) */, 9 + (i % 3) * 2)]}
             giros={[{ f: 0, v: i === 9 ? 0.2 : 0.8 }]} caras={[{ f: 0, v: i === 9 ? "triste" : "feliz" }]} miradas={i === 9 ? [{ f: 0, v: { x: -0.6, y: -0.2 } }] : undefined} />; })}
-        {[0, 1, 2].map((k) => { const x = X0 + k * SEP + avance(f); return <g key={k} transform={`translate(${x},${P + 150 - rebote(k)}) scale(${S})`}><path d="M-130,-30 L-130,-62 L-20,-62 L-20,-30 Z" fill={colores[k]} stroke="#0e0a12" strokeWidth={1.6} /></g>; })}
+        {[0, 1, 2].map((k) => { const x = X0 + k * SEP; return <g key={k} transform={`translate(${x},${P + 150 - rebote(k)}) scale(${S})`}><path d="M-130,-30 L-130,-62 L-20,-62 L-20,-30 Z" fill={colores[k]} stroke="#0e0a12" strokeWidth={1.6} /></g>; })}
         {/* fix6: LA CARGA, que se lea «everything they can carry»: bultos atados en el techo y cajas, bolsas, bidón y la radio de Gus en las cajas */}
-        {[0, 1, 2].map((k) => { const x = X0 + k * SEP + avance(f), y = P + 150 - rebote(k), techo = y - 100 * S, borde = y - 62 * S;
+        {[0, 1, 2].map((k) => { const x = X0 + k * SEP, y = P + 150 - rebote(k), techo = y - 100 * S, borde = y - 62 * S;
           return <g key={`c${k}`}>
             {/* techo: lona atada + soga */}
             <rect x={x - 22} y={techo - 46} width={140} height={46} rx={10} fill={["#6a7a4a", "#3a4a6a", "#7a5a3a"][k]} stroke="#0e0a12" strokeWidth={3} />
@@ -1138,16 +1155,17 @@ const P56: React.FC = () => {
             {k === 2 && <g><path d={`M${x - 205},${borde} q-4,-44 18,-52 q24,8 20,52 Z`} fill="#4a6a8a" stroke="#0e0a12" strokeWidth={3} /><rect x={x - 112} y={borde - 40} width={44} height={40} fill="#c9a26a" stroke="#0e0a12" strokeWidth={3} /><g transform={`translate(${x - 30},${borde - 30})`}><Libro color="#c0352c" /></g></g>}
           </g>; })}
         {/* June baja la caja a la caja de la camioneta */}
-        {subeCaja < 1 && (() => { const x = X0 + avance(f) - 38, y = P + 150 - rebote(0) - 62 * S; return <rect x={x - 28} y={y - 46 - 70 * (1 - subeCaja)} width={56} height={46} fill="#c9a26a" stroke="#0e0a12" strokeWidth={3} />; })()}
-      </>}
-      hud={<svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0, opacity: cart }}><g transform={`translate(${330 - (1 - cart) * 640},950)`}>
+        {subeCaja < 1 && (() => { const x = X0 - 38, y = P + 150 - rebote(0) - 62 * S; return <rect x={x - 28} y={y - 46 - 70 * (1 - subeCaja)} width={56} height={46} fill="#c9a26a" stroke="#0e0a12" strokeWidth={3} />; })()}
+        </CapaSVG>
+      </Plano>
+      {<svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0, opacity: cart }}><g transform={`translate(${330 - (1 - cart) * 640},950)`}>
         <rect x={-150} y={-10} width={14} height={260} fill="#6a6a72" /><rect x={136} y={-10} width={14} height={260} fill="#6a6a72" />
         <rect x={-260} y={-200} width={520} height={200} rx={16} fill="#1f6a3e" stroke="#f6ecd2" strokeWidth={6} />
         <text x={0} y={-112} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={600} fontSize={60} fill="#f6ecd2" letterSpacing={3}>HERMANTOWN</text>
         <text x={-10} y={-40} textAnchor="middle" fontFamily="Fredoka, sans-serif" fontWeight={500} fontSize={42} fill="#f6ecd2" letterSpacing={3}>NORTH</text>
         <path d="M70,-54 L110,-54 L110,-66 L134,-44 L110,-22 L110,-34 L70,-34 Z" fill="#f6ecd2" transform="rotate(-90 102 -44)" />
       </g></svg>}
-    />
+    </AbsoluteFill>
   );
 };
 
@@ -1256,20 +1274,46 @@ const P59b: React.FC = () => {
 const PCuaderno49: React.FC = () => {
   const f = useF();
   const l = loc(361.9);
-  const escritos = [{ t: "POPULATION: 10", g: 362.4, x: 520, y: 330, tam: 64 }, { t: "DAYS UNTIL FIRST FROST:", g: 365.8, x: 520, y: 520, tam: 58, color: "#2a4a8a" }, { t: "147", g: 370.6, x: 1000, y: 720, tam: 170, sub: [371.4], color: "#c0352c" }];
-  const ts = [l(361.9), l(362.4), l(364.4), l(365.4), l(365.8), l(368.4), l(370.2), l(370.6), l(371.3), l(371.4), l(371.9), l(372.2)];
-  const px = interpolate(f, ts, [1150, 520, 1020, 520, 520, 1260, 1000, 1000, 1330, 1000, 1330, 1250], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const py = interpolate(f, ts, [900, 380, 380, 575, 575, 575, 800, 800, 800, 940, 940, 1020], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) + (f > l(362.4) && f < l(364.4) ? Math.sin(f * 1.5) * 9 : f > l(365.8) && f < l(368.4) ? Math.sin(f * 1.5) * 9 : f > l(370.6) && f < l(371.3) ? Math.sin(f * 1.8) * 12 : 0);
-  const pop = f >= l(370.6) ? 1 + 0.5 * Math.exp(-(f - l(370.6)) / 5) * Math.cos((f - l(370.6)) * 0.6) : 1;
+  // fix7: el 147 se ESCRIBE trazo a trazo (0,6 s, 370.25-370.85) con la punta del lápiz sobre el borde del trazo; después lo subraya y la mano sale suave
+  const W147 = { t0: l(370.25), t1: l(370.85), x: 1000, y: 720, tam: 170 };
+  const vel147 = 3 / (W147.t1 - W147.t0);
+  const escritos = [{ t: "POPULATION: 10", g: 362.4, x: 520, y: 330, tam: 64 }, { t: "DAYS UNTIL FIRST FROST:", g: 365.8, x: 520, y: 520, tam: 58, color: "#2a4a8a" }, { t: "147", g: 370.25, x: W147.x, y: W147.y, tam: W147.tam, sub: [371.4], color: "#c0352c", vel: vel147 }];
+  const ts = [l(361.9), l(362.4), l(364.4), l(365.4), l(365.8), l(368.4), l(370.0)];
+  let px = interpolate(f, ts, [1150, 520, 1020, 520, 520, 1260, 995], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  let py = interpolate(f, ts, [900, 380, 380, 575, 575, 575, 680], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) + (f > l(362.4) && f < l(364.4) ? Math.sin(f * 1.5) * 9 : f > l(365.8) && f < l(368.4) ? Math.sin(f * 1.5) * 9 : 0);
+  // fix7: sin la pastilla «147» de arriba a la derecha (pisaba el borde del cuaderno y repetía el 147 escrito)
+  const SUB = { t0: l(371.4), t1: l(371.4) + 8 }; // el subrayado (EscritoMano: 8 cuadros)
+  const wSub = 3 * W147.tam * 0.5 * 1.02;
+  if (f >= l(370.0)) {
+    const k = interpolate(f, [W147.t0, W147.t1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    if (f < W147.t1) {
+      // escribe: la punta va con el frente del trazo (clip del texto = x-10 … x-10+(w+20)·k) y sube/baja por los palos de cada cifra
+      const xs = W147.x - 10 + (3 * W147.tam * 0.5 + 20) * k;
+      px = interpolate(f, [l(370.0), W147.t0], [995, xs], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+      px = f < W147.t0 ? px : xs;
+      py = 655 + (f < W147.t0 ? 25 : 55 * Math.sin((f - W147.t0) * 1.3));
+    } else if (f < SUB.t0) {
+      // levanta el lápiz y va al arranque del subrayado
+      const u = interpolate(f, [W147.t1, SUB.t0], [0, 1], { easing: Easing.inOut(Easing.cubic), extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+      px = interpolate(u, [0, 1], [W147.x + 3 * W147.tam * 0.5 + 10, W147.x - 6]);
+      py = interpolate(u, [0, 1], [655, W147.y + 14]) - 40 * Math.sin(Math.PI * u);
+    } else if (f < SUB.t1 + 3) {
+      const u = interpolate(f, [SUB.t0, SUB.t1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+      px = W147.x - 6 + wSub * u; py = W147.y + 14 - 3 * u;
+    } else {
+      // sale de cuadro SUAVE hacia abajo/izquierda (de donde viene el hombro), 0,55 s
+      const u = interpolate(f, [SUB.t1 + 3, SUB.t1 + 20], [0, 1], { easing: Easing.inOut(Easing.cubic), extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+      px = W147.x - 6 + wSub - 420 * u; py = W147.y + 11 + 720 * u;
+    }
+  }
   return (
-    <EscenaS Set={Mesa} pal={PAL} setProps={{ obj: "cuaderno", escritos: escritos.map((e) => ({ t: e.t, desde: l(e.g), x: e.x, y: e.y, tam: e.tam, color: e.color, sub: (e.sub ?? []).map(l) })) }} seed={362} mano={1.5} sacudidas={[l(370.6), l(371.4)]} amp={14}
+    <EscenaS Set={Mesa} pal={PAL} setProps={{ obj: "cuaderno", escritos: escritos.map((e) => ({ t: e.t, desde: l(e.g), x: e.x, y: e.y, tam: e.tam, color: e.color, vel: e.vel, sub: (e.sub ?? []).map(l) })) }} seed={362} mano={1.5} sacudidas={[W147.t1, l(371.4)]} amp={14}
       claves={[mira(0, 980, 540, 1.15, { rot: -1.2 }), mira(l(370.0), 1010, 530, 1.25, { rot: 0.2 }), mira(l(372.3), 1060, 520, 1.4, { rot: 1.6 })]}
       medio={<>
         {/* June escribe POPULATION y saca la mano (sale por abajo a la derecha); Marcus (manga verde) entra por la izquierda y escribe lo nuevo */}
         {f < l(365.2) && <ManoPunta x={px + 260 * ap(f, l(364.5), 18)} y={py + 520 * ap(f, l(364.5), 18)} lapiz manga="#2f9aa0" op={ap(f, l(362.0), 6)} />}
-        {f >= l(364.6) && <ManoPunta x={px - 300 * (1 - ap(f, l(364.6), 22))} y={py + 520 * (1 - ap(f, l(364.6), 22)) + 520 * ap(f, l(371.9), 14)} lapiz lado={-1} manga={MARCUS.camisa} />}
-              </>}
-      hud={<Onoma texto="147" x={1500} y={300} golpes={[l(370.7)]} dur={26} color="#ff6a4a" tam={170} rot={0} />} />
+        {f >= l(364.6) && <ManoPunta x={px - 300 * (1 - ap(f, l(364.6), 22))} y={py + 520 * (1 - ap(f, l(364.6), 22))} lapiz lado={-1} manga={MARCUS.camisa} />}
+      </>} />
   );
 };
 
