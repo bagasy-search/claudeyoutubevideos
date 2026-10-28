@@ -1,0 +1,618 @@
+{
+ "desc": "🥛 Las 11 alarmas de hoy + El Método del Cerrajero",
+ "replies": [],
+ "pages": {
+  "l1 15": {
+   "hl": "LA CUÑA DE GOMA QUE MÁS REGALÉ",
+   "n": 4,
+   "bar": [
+    0.12746916876898873,
+    0.08428910765985045,
+    0.5452286090726167,
+    0.02656153476599491
+   ]
+  },
+  "l1 14": {
+   "hl": "LA CADENA NO SIRVE PARA ABRIR: MIRA ANTES",
+   "n": 3,
+   "bar": [
+    0.12114104725956137,
+    0.08293578600642657,
+    0.6557970483318653,
+    0.025043738008749605
+   ]
+  },
+  "l5 22": {
+   "hl": "LA CASA QUE PARECE HABITADA",
+   "n": 22,
+   "bar": [
+    0.0926202512254902,
+    0.2383382392652107,
+    0.7588883942248774,
+    0.04301200250182489
+   ]
+  }
+ },
+ "heroes": [
+  {
+   "k": "clock",
+   "at": 8.1,
+   "out": 13.1,
+   "z": 1.7,
+   "v": "2:47",
+   "lab": "UN CLIC EN LA PUERTA",
+   "kick": "DE MADRUGADA",
+   "bg": "perilla_gira",
+   "mode": "iris"
+  },
+  {
+   "k": "redact",
+   "at": 89.66,
+   "out": 96.66,
+   "title": "LAS 11 ALARMAS DE HOY",
+   "items": [
+    {
+     "t": "EL VASO EN LA PERILLA",
+     "at": 0.5
+    },
+    {
+     "t": "EL VASO CON MONEDAS",
+     "at": 0.9
+    },
+    {
+     "t": "LA CUÑA DE GOMA",
+     "at": 1.3
+    },
+    {
+     "t": "LOS CASCABELES",
+     "at": 1.7
+    },
+    {
+     "t": "LA CINTA TESTIGO",
+     "at": 2.1
+    },
+    {
+     "t": "LA LLAVE DE ADENTRO",
+     "at": 2.5
+    }
+   ],
+   "stamp": "Nº 11 · AL FINAL",
+   "stampAt": 4.2,
+   "bg": "a_lista_papel",
+   "mode": "drop"
+  },
+  {
+   "k": "odometer",
+   "at": 151.68,
+   "out": 158.18,
+   "z": 1.5,
+   "v": 30,
+   "u": "AÑOS DE CERRAJERO",
+   "sub": "CIENTOS DE CERRADURAS",
+   "bg": "a_cilindros",
+   "mode": "shutter"
+  },
+  {
+   "k": "tip",
+   "at": 202.44,
+   "out": 208.94,
+   "z": 1.15,
+   "turnAt": 3.0,
+   "txt": "¡CLINC!",
+   "lab": "DE CANTO",
+   "bg": "a_vaso_comun",
+   "mode": "iris"
+  },
+  {
+   "k": "versus",
+   "at": 237.94,
+   "out": 243.44,
+   "items": [
+    {
+     "t": "SOBRE LA ALFOMBRA",
+     "img": "a_alfombra",
+     "at": 0.5
+    },
+    {
+     "t": "SOBRE UNA BANDEJA",
+     "img": "a_rueda",
+     "at": 1.3
+    }
+   ],
+   "win": 3.4,
+   "best": 1,
+   "bg": "a_alfombra",
+   "mode": "split"
+  },
+  {
+   "k": "polaroid",
+   "at": 300.24,
+   "out": 305.74,
+   "img": "a_sono",
+   "n": "ESA NOCHE SONÓ",
+   "sub": "PRENDIÓ LA LUZ Y GRITÓ",
+   "stamp": "NO LE ROBARON NADA",
+   "stampAt": 3.6,
+   "bg": "a_sono",
+   "mode": "wipe"
+  },
+  {
+   "k": "measure",
+   "at": 329.28,
+   "out": 335.78,
+   "v": 50,
+   "u": "%",
+   "pre": "",
+   "lab": "MONEDAS HASTA LA MITAD",
+   "img": "a_frasco_llena",
+   "bg": "a_frasco_llena",
+   "mode": "blinds"
+  },
+  {
+   "k": "stopwatch",
+   "at": 363.14,
+   "out": 369.14,
+   "v": 2,
+   "lab": "UN GESTO DE 2 SEGUNDOS",
+   "bg": "a_lejos",
+   "mode": "iris"
+  },
+  {
+   "k": "wedge",
+   "at": 452.34,
+   "out": 457.84,
+   "lab": "MÁS EMPUJAN, MÁS TRABA",
+   "lab2": "EMPUJAN DESDE AFUERA",
+   "bg": "cuna_goma",
+   "mode": "wipe"
+  },
+  {
+   "k": "tally",
+   "at": 495.95,
+   "out": 503.45,
+   "title": "PROBADO EN EL TALLER",
+   "rows": [
+    {
+     "t": "SILLA",
+     "img": "a_c_prueba",
+     "r": [
+      true,
+      false,
+      false,
+      false
+     ],
+     "at": 0.6
+    },
+    {
+     "t": "CUÑA DE GOMA",
+     "img": "a_cajon",
+     "r": [
+      true,
+      true,
+      true,
+      true
+     ],
+     "at": 1.8
+    }
+   ],
+   "bg": "a_c_prueba",
+   "mode": "blinds"
+  },
+  {
+   "k": "pendulum",
+   "at": 567.73,
+   "out": 573.23,
+   "kickAt": 2.6,
+   "lab": "COLGANDO LIBRE",
+   "bg": "a_tira_cascabeles",
+   "mode": "drop"
+  },
+  {
+   "k": "strip",
+   "at": 597.99,
+   "out": 604.49,
+   "items": [
+    {
+     "t": "SIN LLAVE",
+     "img": "a_huerta",
+     "at": 0.5
+    },
+    {
+     "t": "LA BILLETERA",
+     "img": "a_alberto",
+     "at": 1.7
+    },
+    {
+     "t": "SONARON LAS LLAVES",
+     "img": "a_siesta",
+     "at": 2.9
+    }
+   ],
+   "stamp": "SALIÓ CORRIENDO",
+   "stampAt": 4.6,
+   "bg": "a_huerta",
+   "mode": "shutter"
+  },
+  {
+   "k": "tape",
+   "at": 680.23,
+   "out": 687.23,
+   "z": 1.3,
+   "a": "ENTERA: NADIE TOCÓ",
+   "b": "CORTADA: PROBARON",
+   "cutAt": 3.4,
+   "bg": "a_sale_casa",
+   "mode": "drop"
+  },
+  {
+   "k": "calendar",
+   "at": 728.93,
+   "out": 735.93,
+   "v": 7,
+   "top": "DÍAS AFUERA",
+   "lab": "CINTA CORTADA",
+   "sub": "MARCAS DE GANZÚA",
+   "bg": "a_rosa",
+   "mode": "shutter"
+  },
+  {
+   "k": "gauge",
+   "at": 796.43,
+   "out": 802.93,
+   "v": 0.95,
+   "lab": "LLAVE PUESTA JUNTO AL VIDRIO",
+   "kick": "ALARMA 6",
+   "title": "LA MÁS PELIGROSA",
+   "bg": "a_c_foto_cinta",
+   "mode": "iris"
+  },
+  {
+   "k": "exploded",
+   "at": 851.01,
+   "out": 858.01,
+   "items": [
+    {
+     "t": "DOBLE PALETA",
+     "img": "a_mejor_cerradura",
+     "at": 0.6
+    },
+    {
+     "t": "CILINDRO",
+     "img": "a_vidrio_roto",
+     "at": 1.2
+    },
+    {
+     "t": "LA LLAVE PUESTA",
+     "img": "a_c_era_mejor",
+     "at": 1.8
+    }
+   ],
+   "hi": 2,
+   "bg": "a_mejor_cerradura",
+   "mode": "diag"
+  },
+  {
+   "k": "reach",
+   "at": 865.43,
+   "out": 871.93,
+   "moveAt": 2.2,
+   "lab": "ROMPEN EL VIDRIO",
+   "lab2": "Y GIRAN TU LLAVE",
+   "bg": "a_vidrio_roto",
+   "mode": "wipe"
+  },
+  {
+   "k": "steps",
+   "at": 925.23,
+   "out": 930.23,
+   "n": 2,
+   "lab": "EL GANCHO, A DOS PASOS",
+   "img": "a_c_incendio",
+   "bg": "a_c_incendio",
+   "mode": "iris"
+  },
+  {
+   "k": "screws",
+   "at": 1024.05,
+   "out": 1030.55,
+   "a": "1,5 cm",
+   "b": "6 cm",
+   "pull": 2.4,
+   "long": 3.8,
+   "bg": "cadena_tornillos",
+   "mode": "wipe"
+  },
+  {
+   "k": "peephole",
+   "at": 1084.29,
+   "out": 1090.79,
+   "img": "a_mirilla",
+   "stamp": "NI CON CADENA",
+   "stampAt": 2.8,
+   "bg": "a_mirilla",
+   "mode": "iris"
+  },
+  {
+   "k": "kelvin",
+   "at": 1169.73,
+   "out": 1176.23,
+   "warmAt": 2.0,
+   "lab": "A LA ALTURA DE LA RODILLA",
+   "bg": "a_c_dos_luces",
+   "mode": "wipe"
+  },
+  {
+   "k": "floorplan",
+   "at": 1221.39,
+   "out": 1226.89,
+   "img": "a_c_tres_luces",
+   "moveAt": 3.0,
+   "room": "COCINA",
+   "lab": "AL LADO DE LA CAMA",
+   "bg": "a_c_tres_luces",
+   "mode": "iris"
+  },
+  {
+   "k": "soundwave",
+   "at": 1285.99,
+   "out": 1290.99,
+   "z": 1.15,
+   "img": "a_c_alargue",
+   "txt": "PRRRRR",
+   "lab": "EL SILBATO EN LA LÁMPARA",
+   "bg": "a_c_alargue",
+   "mode": "wipe"
+  },
+  {
+   "k": "route",
+   "at": 1334.37,
+   "out": 1340.87,
+   "a": "TU HIJO · 40 MIN",
+   "b": "UN VECINO · 50 M",
+   "nearAt": 3.2,
+   "bg": "a_quien_llamas",
+   "mode": "blinds"
+  },
+  {
+   "k": "cork",
+   "at": 1383.69,
+   "out": 1388.69,
+   "title": "3 NÚMEROS EN PAPEL",
+   "items": [
+    {
+     "t": "LA VECINA DE AL LADO",
+     "at": 0.6
+    },
+    {
+     "t": "EL DE ENFRENTE",
+     "at": 1.3
+    },
+    {
+     "t": "LA DE LA ESQUINA",
+     "at": 2.0
+    }
+   ],
+   "bg": "a_refrigerador",
+   "mode": "split"
+  },
+  {
+   "k": "network",
+   "at": 1401.15,
+   "out": 1406.15,
+   "z": 1.6,
+   "items": [
+    {
+     "t": "TU CASA",
+     "at": 0.6
+    },
+    {
+     "t": "VECINA",
+     "at": 1.2
+    },
+    {
+     "t": "VECINO",
+     "at": 1.7
+    },
+    {
+     "t": "VECINA",
+     "at": 2.2
+    }
+   ],
+   "bg": "a_molestas",
+   "mode": "iris"
+  },
+  {
+   "k": "street",
+   "at": 1449.79,
+   "out": 1456.29,
+   "lit": [
+    1,
+    0,
+    0.5,
+    1,
+    0
+   ],
+   "target": 1,
+   "flipAt": 4.2,
+   "lab": "ELIGE LA QUE PARECE VACÍA",
+   "bg": "a_misma_luz",
+   "mode": "wipe"
+  },
+  {
+   "k": "timer",
+   "at": 1468.2,
+   "out": 1473.2,
+   "a": 20,
+   "b": 24.5,
+   "lab": "20:00 → 0:30",
+   "bg": "a_elige",
+   "mode": "iris"
+  },
+  {
+   "k": "fob",
+   "at": 1518.94,
+   "out": 1523.94,
+   "press": 3.0,
+   "lab": "EL BOTÓN DE PÁNICO",
+   "bg": "a_llaves_auto",
+   "mode": "wipe"
+  },
+  {
+   "k": "routine",
+   "at": 1588.34,
+   "out": 1594.34,
+   "title": "LA RUTINA DE CADA NOCHE",
+   "items": [
+    {
+     "n": "8:00",
+     "t": "CIERRAS Y PONES LA CUÑA",
+     "img": "a_bocina",
+     "at": 0.6
+    },
+    {
+     "n": "ANTES DE ACOSTARTE",
+     "t": "VASO Y CASCABELES",
+     "img": "a_cortinas",
+     "at": 1.6
+    },
+    {
+     "n": "DORMITORIO",
+     "t": "TELÉFONO Y SILBATO",
+     "img": "cierre_noche",
+     "at": 2.6
+    }
+   ],
+   "bg": "a_bocina",
+   "mode": "blinds"
+  },
+  {
+   "k": "deck",
+   "at": 1648.36,
+   "out": 1656.36,
+   "title": "5 ERRORES",
+   "items": [
+    {
+     "t": "TENERLAS Y NO PONERLAS",
+     "img": "cierre_noche",
+     "at": 0.5
+    },
+    {
+     "t": "LA LLAVE JUNTO AL VIDRIO",
+     "img": "a_alacena",
+     "at": 1.4
+    },
+    {
+     "t": "CONFIAR EN LA CADENA",
+     "img": "a_red",
+     "at": 2.3
+    },
+    {
+     "t": "EL TELÉFONO LEJOS",
+     "img": "a_c_comentarios",
+     "at": 3.2
+    },
+    {
+     "t": "NO CONTARLE A NADIE",
+     "img": "a_aluminio",
+     "at": 4.1
+    }
+   ],
+   "bg": "cierre_noche",
+   "mode": "split"
+  },
+  {
+   "k": "phone",
+   "at": 1699.96,
+   "out": 1706.46,
+   "items": [
+    {
+     "n": "PREGUNTA",
+     "t": "¿Y si el ladrón lo saca fácil?",
+     "at": 0.6
+    },
+    {
+     "n": "CLAUDIO",
+     "t": "No frena: avisa y te da tiempo.",
+     "at": 2.0
+    }
+   ],
+   "bg": "a_c_comentarios",
+   "mode": "drop"
+  },
+  {
+   "k": "balance",
+   "at": 1764.58,
+   "out": 1771.08,
+   "items": [
+    {
+     "t": "SIN NADA",
+     "img": "a_la_mas_facil",
+     "at": 0.6
+    },
+    {
+     "t": "CON RUIDO, LUZ Y VECINOS",
+     "img": "a_c_treinta",
+     "at": 1.4
+    }
+   ],
+   "win": 3.2,
+   "best": 1,
+   "bg": "a_la_mas_facil",
+   "mode": "shutter"
+  },
+  {
+   "k": "chalk",
+   "at": 1815.98,
+   "out": 1821.98,
+   "title": "LAS 11 DE HOY",
+   "items": [
+    {
+     "t": "vaso en la perilla",
+     "at": 0.3
+    },
+    {
+     "t": "vaso con monedas",
+     "at": 0.5
+    },
+    {
+     "t": "cuña de goma",
+     "at": 0.7
+    },
+    {
+     "t": "cascabeles",
+     "at": 0.9
+    },
+    {
+     "t": "cinta testigo",
+     "at": 1.1
+    },
+    {
+     "t": "llave lejos del vidrio",
+     "at": 1.3
+    },
+    {
+     "t": "cadena con tornillos largos",
+     "at": 1.5
+    },
+    {
+     "t": "luz con sensor",
+     "at": 1.7
+    },
+    {
+     "t": "teléfono y silbato",
+     "at": 1.9
+    },
+    {
+     "t": "tres vecinos en papel",
+     "at": 2.1
+    },
+    {
+     "t": "la casa que parece llena",
+     "at": 2.3
+    }
+   ],
+   "bg": "a_c_treinta",
+   "mode": "split"
+  }
+ ]
+}
