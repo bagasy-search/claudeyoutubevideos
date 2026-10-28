@@ -1,0 +1,706 @@
+{
+ "desc": "🤍 La receta del yeso que parece mármol + La Colección del Constructor Libre",
+ "replies": [],
+ "pages": {
+  "cl 68": {
+   "hl": "TAPAR UN AGUJERO SIN QUE SE NOTE",
+   "n": 51,
+   "bar": [
+    0.08575944744180855,
+    0.11325489563339748,
+    0.7392069245402871,
+    0.02473725161636074
+   ]
+  },
+  "cl 99": {
+   "hl": "LOS POCOS NÚMEROS: LIJAS Y SELLADORES",
+   "bar": [
+    0.08575944744180855,
+    0.11494903247124692,
+    0.5258193520933492,
+    0.025672381063992056
+   ]
+  }
+ },
+ "heroes": [
+  {
+   "k": "versus",
+   "at": 10.16,
+   "out": 16.16,
+   "items": [
+    {
+     "t": "MÁRMOL · $120",
+     "img": "b_carrara_tienda",
+     "at": 0.5
+    },
+    {
+     "t": "YESO · $2",
+     "img": "b_tres_cosas",
+     "at": 1.3
+    }
+   ],
+   "win": 3.4,
+   "best": 1,
+   "bg": "b_carrara_tienda",
+   "mode": "split"
+  },
+  {
+   "k": "veins",
+   "at": 24.96,
+   "out": 31.96,
+   "kick": "LA VES NACER",
+   "title": "LA VETA LA DIBUJÁS VOS",
+   "lab": "Y AL DARLA VUELTA, ESTÁ ADENTRO",
+   "bg": "veta_palito",
+   "mode": "diag"
+  },
+  {
+   "k": "redact",
+   "at": 57.38,
+   "out": 64.88,
+   "title": "LOS 10 PASOS DE HOY",
+   "items": [
+    {
+     "t": "QUÉ YESO COMPRAR",
+     "at": 0.5
+    },
+    {
+     "t": "YESO SOBRE AGUA",
+     "at": 0.9
+    },
+    {
+     "t": "EL RELOJ DE 6 MINUTOS",
+     "at": 1.3
+    },
+    {
+     "t": "LAS VETAS",
+     "at": 1.7
+    },
+    {
+     "t": "EL GOLPECITO",
+     "at": 2.1
+    },
+    {
+     "t": "EL SECADO",
+     "at": 2.5
+    }
+   ],
+   "stamp": "Nº 8 · EL ACEITE",
+   "stampAt": 4.2,
+   "bg": "b_yeso_roto_humedo",
+   "mode": "drop"
+  },
+  {
+   "k": "polaroid",
+   "at": 156.64,
+   "out": 163.64,
+   "img": "b_roseta",
+   "n": "EL TANO",
+   "sub": "BLANCO HASTA LOS CODOS",
+   "stamp": "NUNCA SE APURABA",
+   "stampAt": 3.6,
+   "bg": "b_roseta",
+   "mode": "wipe"
+  },
+  {
+   "k": "balance",
+   "at": 174.48,
+   "out": 180.98,
+   "items": [
+    {
+     "t": "CEMENTO: DUREZA",
+     "img": "b_yeso_vs_marmol",
+     "at": 0.6
+    },
+    {
+     "t": "YESO: BELLEZA Y POCO PESO",
+     "img": "b_cuarzo_anterior",
+     "at": 1.4
+    }
+   ],
+   "win": 3.2,
+   "best": 1,
+   "bg": "b_yeso_vs_marmol",
+   "mode": "drop"
+  },
+  {
+   "k": "exploded",
+   "at": 222.86,
+   "out": 229.86,
+   "items": [
+    {
+     "t": "MÁS FINO",
+     "img": "b_yeso_moldes",
+     "at": 0.6
+    },
+    {
+     "t": "MÁS BLANCO",
+     "img": "b_tienda_ceramica",
+     "at": 1.2
+    },
+    {
+     "t": "6 A 8 MINUTOS",
+     "img": "b_yeso_dental",
+     "at": 1.8
+    }
+   ],
+   "hi": 2,
+   "bg": "b_yeso_moldes",
+   "mode": "diag"
+  },
+  {
+   "k": "gauge",
+   "at": 244.54,
+   "out": 249.04,
+   "v": 0.9,
+   "lab": "YESO DENTAL",
+   "kick": "PARA LO QUE MÁS SE USA",
+   "title": "CASI UNA PIEDRA",
+   "bg": "b_tienda_ceramica",
+   "mode": "iris"
+  },
+  {
+   "k": "ratio",
+   "at": 304.92,
+   "out": 311.92,
+   "a": "7 AGUA",
+   "b": "10 YESO",
+   "r": "10 : 7",
+   "lab": "EN PESO · YESO SOBRE AGUA",
+   "bg": "b_tano_siembra",
+   "mode": "split"
+  },
+  {
+   "k": "hourglass",
+   "at": 337.58,
+   "out": 343.58,
+   "lab": "UN MINUTO QUIETO",
+   "bg": "b_islitas",
+   "mode": "iris"
+  },
+  {
+   "k": "routine",
+   "at": 388.18,
+   "out": 394.18,
+   "title": "EL RELOJ DEL YESO",
+   "items": [
+    {
+     "n": "MIN 0",
+     "t": "EL YESO AL AGUA",
+     "img": "b_mesa_lista",
+     "at": 0.6
+    },
+    {
+     "n": "MIN 3",
+     "t": "LAS VETAS",
+     "img": "b_mate",
+     "at": 1.6
+    },
+    {
+     "n": "MIN 6",
+     "t": "QUIETO",
+     "img": "b_cano",
+     "at": 2.6
+    }
+   ],
+   "bg": "b_mesa_lista",
+   "mode": "wipe"
+  },
+  {
+   "k": "checklist",
+   "at": 448.18,
+   "out": 455.18,
+   "tick": 1,
+   "title": "TRES CAMINOS",
+   "items": [
+    {
+     "t": "Pigmento en polvo",
+     "at": 0.6
+    },
+    {
+     "t": "Óleo con unas gotas de aceite",
+     "at": 1.4
+    },
+    {
+     "t": "Café instantáneo cargado",
+     "at": 2.2
+    }
+   ],
+   "bg": "b_dobla_balde",
+   "mode": "drop"
+  },
+  {
+   "k": "strip",
+   "at": 529.62,
+   "out": 537.12,
+   "items": [
+    {
+     "t": "FEA EN EL BALDE",
+     "img": "b_feo_balde",
+     "at": 0.5
+    },
+    {
+     "t": "UNA VETA GRUESA",
+     "img": "b_veta_real",
+     "at": 1.7
+    },
+    {
+     "t": "RAMITAS FINAS",
+     "img": "b_huella",
+     "at": 2.9
+    }
+   ],
+   "stamp": "LINDA EN LA PIEZA",
+   "stampAt": 4.6,
+   "bg": "b_feo_balde",
+   "mode": "shutter"
+  },
+  {
+   "k": "measure",
+   "at": 553.14,
+   "out": 558.14,
+   "v": 0.1,
+   "dec": 1,
+   "u": "mm",
+   "pre": "",
+   "lab": "EL YESO COPIA HASTA ESTO",
+   "img": "b_veta_real",
+   "bg": "b_veta_real",
+   "mode": "wipe"
+  },
+  {
+   "k": "bubbles",
+   "at": 633.28,
+   "out": 639.78,
+   "a": "LA PALMA CONTRA LA MESA",
+   "lab": "MEDIO MINUTO · SUBEN LAS BURBUJAS",
+   "bg": "golpecito",
+   "mode": "drop"
+  },
+  {
+   "k": "cure",
+   "at": 718.68,
+   "out": 724.18,
+   "v": 2,
+   "kick": "EL FRAGUADO",
+   "title": "SE CALIENTA Y SE ENFRÍA",
+   "a": "TIBIA · NO SE TOCA",
+   "b": "FRÍA · SE DESMOLDA",
+   "bg": "b_argolla",
+   "mode": "shutter"
+  },
+  {
+   "k": "demold",
+   "at": 733.94,
+   "out": 738.94,
+   "popAt": 1.4,
+   "txt": "¡SALE!",
+   "lab": "SE DESPEGA ENTERA",
+   "bg": "b_cristales",
+   "mode": "iris"
+  },
+  {
+   "k": "calendar",
+   "at": 777.32,
+   "out": 783.82,
+   "v": 48,
+   "top": "HORAS",
+   "lab": "A LA SOMBRA",
+   "sub": "NUNCA AL SOL",
+   "bg": "secado_listones",
+   "mode": "drop"
+  },
+  {
+   "k": "tally",
+   "at": 793.48,
+   "out": 800.48,
+   "title": "¿ESTÁ SECA?",
+   "rows": [
+    {
+     "t": "EL PESO",
+     "img": "b_dorso",
+     "r": [
+      false,
+      false,
+      true,
+      true
+     ],
+     "at": 0.6
+    },
+    {
+     "t": "EL DORSO",
+     "img": "b_vieja_bandeja",
+     "r": [
+      false,
+      false,
+      false,
+      true
+     ],
+     "at": 1.8
+    }
+   ],
+   "bg": "b_dorso",
+   "mode": "blinds"
+  },
+  {
+   "k": "grit",
+   "at": 843.08,
+   "out": 850.08,
+   "g": [
+    "SECA",
+    "1 GOTA",
+    "1ª MANO",
+    "2ª MANO"
+   ],
+   "kick": "EL PREMIO",
+   "title": "DE TIZA A PIEDRA",
+   "lab": "PROFUNDIDAD",
+   "bg": "b_gota_lino",
+   "mode": "split"
+  },
+  {
+   "k": "raking",
+   "at": 860.52,
+   "out": 867.02,
+   "a": "EL YESO SECO, DE CERCA",
+   "lab": "LLENO DE POROS: CHUPA EL ACEITE",
+   "bg": "b_gota_lino",
+   "mode": "iris"
+  },
+  {
+   "k": "stopwatch",
+   "at": 897.74,
+   "out": 902.74,
+   "v": 15,
+   "u": "min",
+   "dec": 0,
+   "labAt": 1.0,
+   "lab": "15 MIN Y SE SACA EL SOBRANTE",
+   "bg": "aceite_pincel",
+   "mode": "wipe"
+  },
+  {
+   "k": "rags",
+   "at": 946.56,
+   "out": 951.56,
+   "lab": "LOS TRAPOS CON ACEITE DE LINO",
+   "bg": "b_cera_abeja",
+   "mode": "split"
+  },
+  {
+   "k": "cork",
+   "at": 1028.74,
+   "out": 1035.74,
+   "title": "ESTE FIN DE SEMANA",
+   "items": [
+    {
+     "t": "BANDEJA DEL BAÑO",
+     "at": 0.6
+    },
+    {
+     "t": "POSAVELAS",
+     "at": 1.2
+    },
+    {
+     "t": "CUBREMACETA",
+     "at": 1.8
+    },
+    {
+     "t": "MARCO",
+     "at": 2.4
+    },
+    {
+     "t": "EL NÚMERO",
+     "at": 3.0
+    }
+   ],
+   "bg": "cinco_piezas",
+   "mode": "blinds"
+  },
+  {
+   "k": "receipt",
+   "at": 1090.54,
+   "out": 1098.04,
+   "qa": "BANDEJA DE CARRARA",
+   "qb": "EN LA TIENDA",
+   "q": "120",
+   "ta": "la bandeja del taller",
+   "rows": [
+    {
+     "t": "YESO 400 G",
+     "v": "0.5"
+    },
+    {
+     "t": "PIGMENTO",
+     "v": "0.5"
+    },
+    {
+     "t": "ACEITE DE LINO",
+     "v": "0.5"
+    },
+    {
+     "t": "VASELINA",
+     "v": "0.5"
+    }
+   ],
+   "lab": "Y LA VETA LA DIBUJASTE VOS",
+   "bg": "se_quiebra",
+   "mode": "wipe"
+  },
+  {
+   "k": "nightstand",
+   "at": 1135.78,
+   "out": 1143.78,
+   "items": [
+    {
+     "t": "YESO PARA MOLDES",
+     "img": "b_yeso_moldes",
+     "at": 0.6
+    },
+    {
+     "t": "PIGMENTO",
+     "img": "b_pigmento",
+     "at": 1.3
+    },
+    {
+     "t": "ACEITE DE LINO",
+     "img": "b_lino_cocido",
+     "at": 2.0
+    },
+    {
+     "t": "CERA",
+     "img": "b_cera_abeja",
+     "at": 2.7
+    },
+    {
+     "t": "UN TARRO DE HELADO",
+     "img": "b_helado",
+     "at": 3.4
+    }
+   ],
+   "bg": "b_lista",
+   "mode": "iris"
+  },
+  {
+   "k": "boxes",
+   "at": 1173.36,
+   "out": 1179.36,
+   "items": [
+    {
+     "t": "TAPAS DE DESODORANTE",
+     "at": 0.6
+    },
+    {
+     "t": "FRASCOS DE CREMA",
+     "at": 1.1
+    },
+    {
+     "t": "BANDEJA DE BOMBONES",
+     "at": 1.6
+    },
+    {
+     "t": "HUEVERAS",
+     "at": 2.1
+    }
+   ],
+   "goneAt": 9,
+   "molds": 1,
+   "lab": "MOLDES QUE YA TENÉS",
+   "bg": "b_lista",
+   "mode": "drop"
+  },
+  {
+   "k": "deck",
+   "at": 1203.94,
+   "out": 1210.44,
+   "title": "5 ERRORES",
+   "items": [
+    {
+     "t": "EL YESO DE OBRA",
+     "img": "b_caja_moldes",
+     "at": 0.5
+    },
+    {
+     "t": "AGUA SOBRE YESO",
+     "img": "b_lunares",
+     "at": 1.4
+    },
+    {
+     "t": "NADA PREPARADO",
+     "img": "b_raja_caliente",
+     "at": 2.3
+    },
+    {
+     "t": "REVOLVER LAS VETAS",
+     "img": "b_carrara",
+     "at": 3.2
+    },
+    {
+     "t": "ACEITE EN HÚMEDO",
+     "img": "b_ramitas",
+     "at": 4.1
+    }
+   ],
+   "bg": "b_caja_moldes",
+   "mode": "blinds"
+  },
+  {
+   "k": "twovein",
+   "at": 1277.98,
+   "out": 1285.48,
+   "bg": "b_carrara",
+   "mode": "split"
+  },
+  {
+   "k": "odometer",
+   "at": 1343.7,
+   "out": 1350.2,
+   "z": 1.5,
+   "v": 400,
+   "u": "AÑOS",
+   "sub": "ITALIA · 1600",
+   "bg": "b_marquina_hotel",
+   "mode": "drop"
+  },
+  {
+   "k": "scale",
+   "at": 1393.72,
+   "out": 1400.22,
+   "v": 0.4,
+   "u": "KG",
+   "dec": 1,
+   "bag": "YESO",
+   "lab": "UNA FRACCIÓN DEL MÁRMOL",
+   "title": "EL PESO",
+   "kick": "LA SEGUNDA RAZÓN",
+   "bg": "b_cantera",
+   "mode": "wipe"
+  },
+  {
+   "k": "wetsand",
+   "at": 1438.79,
+   "out": 1445.29,
+   "grit": "LIJA 1000",
+   "a": "RELLENÁS Y LIJÁS AL AGUA",
+   "stamp": "AL RAS",
+   "stampAt": 3.0,
+   "bg": "b_lija_mil",
+   "mode": "iris"
+  },
+  {
+   "k": "year",
+   "at": 1492.89,
+   "out": 1498.89,
+   "every": 6,
+   "v": "CADA 6 MESES",
+   "lab": "UNA MANO FINITA DE CERA",
+   "bg": "b_trapo_humedo",
+   "mode": "drop"
+  },
+  {
+   "k": "coats",
+   "at": 1556.21,
+   "out": 1562.71,
+   "a": "1ª MANO DE ACEITE",
+   "b": "2ª, AL OTRO DÍA",
+   "lab": "ENTRE MANO Y MANO",
+   "bg": "b_pizarron",
+   "mode": "wipe"
+  },
+  {
+   "k": "threebowls",
+   "at": 1589.79,
+   "out": 1596.79,
+   "lab": "LO QUE EL TANO NUNCA HACÍA",
+   "bg": "b_tres_mezclas",
+   "mode": "split"
+  },
+  {
+   "k": "steam",
+   "at": 1690.01,
+   "out": 1696.51,
+   "bg": "b_bano_vapor",
+   "mode": "drop"
+  },
+  {
+   "k": "phone",
+   "at": 1727.71,
+   "out": 1734.21,
+   "items": [
+    {
+     "n": "PREGUNTA",
+     "t": "¿No es mejor la resina?",
+     "at": 0.6
+    },
+    {
+     "n": "CLAUDIO",
+     "t": "Es plástico: se raya y amarillea.",
+     "at": 2.0
+    }
+   ],
+   "bg": "b_agua_blanca",
+   "mode": "shutter"
+  },
+  {
+   "k": "envelope",
+   "at": 1790.77,
+   "out": 1795.77,
+   "n": "Para: la entrada",
+   "paper": "la bandeja del taller",
+   "paperV": "2 dólares",
+   "lab": "3 AÑOS EN LA ENTRADA",
+   "bg": "b_una",
+   "mode": "drop"
+  },
+  {
+   "k": "chalk",
+   "at": 1803.59,
+   "out": 1811.09,
+   "title": "LOS 10 DE HOY",
+   "items": [
+    {
+     "t": "yeso para moldes",
+     "at": 0.3
+    },
+    {
+     "t": "7 de agua : 10 de yeso",
+     "at": 0.5
+    },
+    {
+     "t": "todo listo antes",
+     "at": 0.7
+    },
+    {
+     "t": "hilo + palito",
+     "at": 0.9
+    },
+    {
+     "t": "molde liso + vaselina",
+     "at": 1.1
+    },
+    {
+     "t": "golpecitos",
+     "at": 1.3
+    },
+    {
+     "t": "secar a la sombra",
+     "at": 1.5
+    },
+    {
+     "t": "aceite de lino",
+     "at": 1.7
+    },
+    {
+     "t": "sólo interior",
+     "at": 1.9
+    },
+    {
+     "t": "6 posavelas",
+     "at": 2.1
+    }
+   ],
+   "bg": "b_entrada",
+   "mode": "split"
+  }
+ ]
+}
