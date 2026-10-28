@@ -170,9 +170,9 @@ export const TempGauge: React.FC<{ t: number; at: number; out: number; a: number
 // la perdedora se apaga, se va hacia atrás y gira. Cámara en curva lenta; sale alejándose. ----------
 type Col2 = { label: string; val: string; h: number; col: string; mark?: "ok" | "x" };
 export const Versus: React.FC<{ t: number; at: number; out: number; L: Col2; R: Col2; title?: string; imgs?: (string | undefined)[] }> = ({ t, at, out, L, R, title, imgs = [] }) => {
-  if (t < at - 0.05 || t > out + 0.9) return null;
+  if (t < at || t > out + 0.9) return null;
   const inn = phys(t, at, 4, 0.7), xo = eIn(t, out - 0.1, out + 0.8), o = e(t, at, at + 0.3) * (1 - xo);
-  if (o <= 0.01) return null;
+  if (xo >= 0.99) return null;
   const verdict = phys(t, at + 1.7, 4.5, 0.45);
   const card = (cc: Col2, i: number) => {
     const s = phys(t, at + 0.2 + i * 0.35, 6, 0.4), land = 1 - s, sg = i ? 1 : -1, win = cc.mark === "ok";
@@ -194,8 +194,9 @@ export const Versus: React.FC<{ t: number; at: number; out: number; L: Col2; R: 
     </div>;
   };
   const vs = phys(t, at + 0.9, 8, 0.4) * (1 - cl(verdict));
-  return <AbsoluteFill style={{ opacity: o, fontFamily: FONT, color: G.txt }}>
-    <AbsoluteFill style={{ background: "radial-gradient(ellipse 70% 60% at 50% 48%, #1e1a16, #08080a 65%)" }} />
+  return <AbsoluteFill style={{ fontFamily: FONT, color: G.txt }}>
+    <AbsoluteFill style={{ opacity: 1 - xo, background: "radial-gradient(ellipse 70% 60% at 50% 48%, #1e1a16, #08080a 65%)" }} />
+    <AbsoluteFill style={{ opacity: o }}>
     {title && <div style={{ position: "absolute", left: 0, right: 0, top: 60, display: "flex", justifyContent: "center", opacity: cl(phys(t, at + 0.3, 6, 0.7)), transform: `translateY(${(1 - cl(phys(t, at + 0.3, 6, 0.7))) * -20}px)` }}><Kicker txt={title} /></div>}
     <div style={{ position: "absolute", left: 960, top: 560, perspective: 1900 }}>
       <div style={{ transformStyle: "preserve-3d", transform: `translateZ(${-420 * (1 - inn) - 700 * xo + 30 * Math.sin((t - at) * 0.4)}px) rotateX(${5 + 6 * xo}deg) rotateY(${3.5 * Math.sin((t - at) * 0.25 + 0.4) + 12 * (1 - inn)}deg)` }}>
@@ -204,7 +205,7 @@ export const Versus: React.FC<{ t: number; at: number; out: number; L: Col2; R: 
     </div>
     <div style={{ position: "absolute", left: 960, top: 540, width: 110, height: 110, marginLeft: -55, marginTop: -55, borderRadius: 55, background: "#0d0d10", border: `2px solid ${G.line}`,
       fontWeight: 900, fontSize: 40, lineHeight: "106px", textAlign: "center", color: G.dim, transform: `scale(${Math.max(0, vs)})` }}>VS</div>
-  </AbsoluteFill>;
+  </AbsoluteFill></AbsoluteFill>;
 };
 
 // ---------- lista que se tilda: cada renglón cae con peso en su palabra, con la FOTO de lo que se nombra; sólo lo ya dicho ----------
