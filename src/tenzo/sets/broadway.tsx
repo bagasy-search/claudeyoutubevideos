@@ -23,7 +23,7 @@ const FarolLed: React.FC<{ x: number; piso: number; dia?: boolean }> = ({ x, pis
   </g>
 );
 
-export const Broadway: React.FC<SetProps & { hora?: "noche" | "dia"; tren?: number; nieve?: boolean }> = ({ capa, f, pal, hora = "noche", tren = -1, nieve = true }) => {
+export const Broadway: React.FC<SetProps & { hora?: "noche" | "dia"; tren?: number; nieve?: boolean; cartel?: boolean }> = ({ capa, f, pal, hora = "noche", tren = -1, nieve = true, cartel = true }) => {
   const P = BWY_PISO;
   const dia = hora === "dia";
   if (capa === "lejos") {
@@ -58,8 +58,9 @@ export const Broadway: React.FC<SetProps & { hora?: "noche" | "dia"; tren?: numb
         <rect x={-300} y={P - 380} width={600} height={360} fill={dia ? "#9aa6b4" : "#cfdcf0"} opacity={dia ? 0.7 : 0.85} />
         {Array.from({ length: 5 }).map((_, k) => <g key={k}><rect x={-270 + k * 112} y={P - 250} width={96} height={230} rx={6} fill="#dfe2e6" opacity={0.8} /><circle cx={-222 + k * 112} cy={P - 150} r={30} fill="#1e2632" opacity={0.8} /></g>)}
         <rect x={-310} y={P - 390} width={620} height={16} fill="#2a2e36" />
-        <rect x={-260} y={P - 470} width={520} height={74} rx={8} fill="#1d2129" stroke={neon(FRIO)} strokeWidth={4} />
-        <text x={0} y={P - 420} fontSize={44} textAnchor="middle" fill={neon("#e8eef8")} fontFamily="sans-serif" fontWeight={800} letterSpacing={5}>SPIN CITY 24H</text>
+        {/* cartel = false (tz02 Q83): sin el letrero, para que no asome cortado detrás del título */}
+        {cartel && <><rect x={-260} y={P - 470} width={520} height={74} rx={8} fill="#1d2129" stroke={neon(FRIO)} strokeWidth={4} />
+        <text x={0} y={P - 420} fontSize={44} textAnchor="middle" fill={neon("#e8eef8")} fontFamily="sans-serif" fontWeight={800} letterSpacing={5}>SPIN CITY 24H</text></>}
         {!dia && <Halo x={0} y={P - 200} r={520} color="#dfe8ff" fuerza={0.3} />}
         {!dia && <Charco x={0} y={P + 40} rx={420} color="#dfe8ff" fuerza={0.3} />}
         <rect x={290} y={P - 400} width={150} height={400} fill="#1a2028" stroke="#4a5160" strokeWidth={8} />

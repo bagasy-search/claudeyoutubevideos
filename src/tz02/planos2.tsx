@@ -5,8 +5,9 @@ import { AbsoluteFill, interpolate, useVideoConfig } from "remotion";
 import { enPantalla, mira, useF } from "../anikit/camara";
 import { F_HUD, Pildora } from "../anikit/pantalla";
 import { ALDEANA, ALDEANO, CHANNA, ENFERMO, LEO, LEO_CAPUCHA, MONJE_JOVEN, REY, SIDDHARTHA, VIEJO, VIEJO_36 } from "../tenzo/elenco";
-import { Frase, HudTenzo, ManoLeo, ManoMara, Rotulo } from "../tenzo/hud";
-import { Baston, Carroza, Cuenco, Laptop, Tel, TelMesa } from "../tenzo/utileria";
+import { Frase, ManoLeo, ManoMara, MarcaTenzo, Rotulo } from "../tenzo/hud";
+import { PAL_DIA } from "../tenzo/elenco";
+import { Baston, Carroza, Cuenco, GhostBike, Laptop, Tel, TelMesa } from "../tenzo/utileria";
 import { TelGrande } from "../tenzo/graficos";
 import { CTO_PUNTOS, Cto, CP, DOBLA_A, doblando, kDe, Lav, LP, SENTADO } from "../tz01/base";
 import { Fondo, maraCuarto } from "../tz01/planos1";
@@ -25,14 +26,14 @@ const BOLSILLOS = <T extends object>(p: T): T => ({ ...p, hD: -12, cD: 34, hI: -
 type Pz = { f: number; v: Pose | string }[];
 type Cara = { f: number; v: string }[];
 // la carroza con Siddhartha y Channa: avanza de x0 a x1 en n cuadros (la carroza va DETRÁS de los dos)
-const CarrozaViaje: React.FC<{ x0: number; x1: number; n: number; caraS?: string | Cara; hablaS?: [number, number][]; hablaC?: [number, number][]; miraS?: { x: number; y: number }; posesS?: Pz; posesC?: Pz; caraC?: string; miraC?: { x: number; y: number } }> = ({ x0, x1, n, caraS = "feliz", hablaS = [], hablaC = [], miraS = { x: 0.9, y: 0.1 }, posesS, posesC, caraC = "neutral", miraC }) => {
+const CarrozaViaje: React.FC<{ x0: number; x1: number; n: number; caraS?: string | Cara; hablaS?: [number, number][]; hablaC?: [number, number][]; miraS?: { x: number; y: number }; posesS?: Pz; posesC?: Pz; caraC?: string | Cara; miraC?: { x: number; y: number }; solo?: "S" | "C" }> = ({ x0, x1, n, caraS = "feliz", hablaS = [], hablaC = [], miraS = { x: 0.9, y: 0.1 }, posesS, posesC, caraC = "neutral", miraC, solo }) => {
   const f = useF();
   const x = interpolate(f, [0, n], [x0, x1], cl);
   return (
     <>
       <Carroza x={x} piso={KP} rueda={f * 6} paso={f} />
-      <A look={SIDDHARTHA} seed={30} ruta={[{ f: 0, x: x - 40, y: KP - 95 }]} asiento={[{ f: 0, v: 50 }]} poses={posesS ?? [{ f: 0, v: SENTADO }]} caras={typeof caraS === "string" ? [{ f: 0, v: caraS }] : caraS} miradas={[{ f: 0, v: miraS }]} habla={hablaS} />
-      <A look={CHANNA} seed={34} ruta={[{ f: 0, x: x + 90, y: KP - 95 }]} asiento={[{ f: 0, v: 50 }]} poses={posesC ?? [{ f: 0, v: { ...SENTADO, hD: 60, cD: 30, hI: 60, cI: 30 } }]} caras={[{ f: 0, v: caraC }]} miradas={miraC ? [{ f: 0, v: miraC }] : undefined} habla={hablaC} />
+      {solo !== "C" && <A look={SIDDHARTHA} seed={30} ruta={[{ f: 0, x: x - 40, y: KP - 95 }]} asiento={[{ f: 0, v: 50 }]} poses={posesS ?? [{ f: 0, v: SENTADO }]} caras={typeof caraS === "string" ? [{ f: 0, v: caraS }] : caraS} miradas={[{ f: 0, v: miraS }]} habla={hablaS} />}
+      {solo !== "S" && <A look={CHANNA} seed={34} ruta={[{ f: 0, x: x + 90, y: KP - 95 }]} asiento={[{ f: 0, v: 50 }]} poses={posesC ?? [{ f: 0, v: { ...SENTADO, hD: 60, cD: 30, hI: 60, cI: 30 } }]} caras={typeof caraC === "string" ? [{ f: 0, v: caraC }] : caraC} miradas={miraC ? [{ f: 0, v: miraC }] : undefined} habla={hablaC} />}
     </>
   );
 };
@@ -92,36 +93,34 @@ export const Q44Ordena: React.FC = () => {
   );
 };
 // ---------- 45 · pero en el camino… cuatro cosas ----------
-export const Q45Cuatro: React.FC = () => {
+// v7 (estructural): ya no el cuadro oscuro con el carro minúsculo. Plano medio CLARO de la carroza en marcha (Siddhartha y Channa grandes,
+// el caballo trotando) y arriba cuatro medallones que salen uno por uno: el viejo, el enfermo, el funeral, el monje (sin revelar del todo).
+const Medallon: React.FC<{ x: number; desde: number; n: string; children: React.ReactNode }> = ({ x, desde, n, children }) => {
   const f = useF();
+  const s = usePop(desde, 13, 170);
+  if (f < desde) return null;
   return (
-    <Kap cl={[mira(0, 3700, 600, 1.1), mira(60, 3760, 600, 1.15)]} sp={{ flores: 0.3, portonAbierto: 1 }}
-      medio={<CarrozaViaje x0={3550} x1={3700} n={60} />}
-      hud={<Lienzo>
-        <rect width={1920} height={1080} fill="#1a1410" opacity={0.78} />
-        <text x={960} y={190} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={64} letterSpacing={6} fill="#fff2c8">FOUR THINGS</text>
-        {["I", "II", "III", "IV"].map((r, i) => {
-          // las 4 cartas caen boca abajo en fila (mismo tamaño) y se dan vuelta una por una
-          const cae = interpolate(f - 2 - i * 4, [0, 8], [0, 1], { ...cl, easing: suave });
-          const giro = interpolate(f - 18 - i * 7, [0, 8], [0, 1], cl);
-          const sx = Math.abs(Math.cos(giro * Math.PI)) || 0.02;
-          const frente = giro > 0.5;
-          return (
-            <g key={r} transform={`translate(${390 + i * 380},${560 - (1 - cae) * 700}) rotate(${(1 - cae) * (i % 2 ? 14 : -14)}) scale(${sx},1)`} opacity={cae > 0 ? 1 : 0}>
-              {frente ? <>
-                <rect x={-150} y={-200} width={300} height={400} rx={24} fill="#f4e4c0" stroke="#8a5a2a" strokeWidth={8} />
-                <path d="M0,-120 a46,46 0 1 1 -0.1,0 M-80,150 Q-80,-30 0,-40 Q80,-30 80,150 Z" fill="#3a2a22" opacity={0.85} />
-                <text x={0} y={30} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={110} fill="#ffd38a">?</text>
-                <text x={0} y={185} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={44} fill="#5a3418">{r}</text>
-              </> : <>
-                <rect x={-150} y={-200} width={300} height={400} rx={24} fill="#8a3a2a" stroke="#f2c14a" strokeWidth={8} />
-                <rect x={-120} y={-170} width={240} height={340} rx={14} fill="none" stroke="#f2c14a" strokeWidth={4} />
-                <circle r={60} fill="none" stroke="#f2c14a" strokeWidth={6} /><path d="M0,-60 L0,60 M-60,0 L60,0 M-42,-42 L42,42 M42,-42 L-42,42" stroke="#f2c14a" strokeWidth={4} />
-              </>}
-            </g>
-          );
-        })}
-      </Lienzo>} />
+    <g transform={`translate(${x},${190 - (1 - Math.min(1, s)) * 40}) scale(${0.4 + 0.6 * s})`} opacity={Math.min(1, s * 1.5)}>
+      <circle r={86} fill="#fbf6ea" stroke="#2a2420" strokeWidth={7} />
+      <g>{children}</g>
+      <rect x={-34} y={96} width={68} height={44} rx={10} fill="#2a2420" />
+      <text x={0} y={128} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={32} fill="#ffd38a">{n}</text>
+    </g>
+  );
+};
+export const Q45Cuatro: React.FC = () => {
+  const k45 = kDe(217.0);
+  return (
+    <Kap cl={[mira(0, 3550 + 40, KP - 320, 2.15), mira(60, 3700 + 50, KP - 325, 2.3)]} sp={{ flores: 0.3, portonAbierto: 1 }}
+      medio={<CarrozaViaje x0={3550} x1={3700} n={60} caraS={[{ f: 0, v: "feliz" }, { f: k45(217.9), v: "sorpresa" }]} miraS={{ x: 0.9, y: -0.1 }}
+        posesS={[{ f: 0, v: SENTADO }, { f: k45(217.9), v: { ...SENTADO, tronco: 12, cabeza: 4, hD: 70, cD: 20 } }]} caraC="neutral" miraC={{ x: 0.9, y: 0 }} />}
+      hud={<><Lienzo>
+        <Medallon x={600} desde={k45(217.05)} n="I"><Retrato x={0} y={-6} r={56} tipo="viejo36" cara="triste" /></Medallon>
+        <Medallon x={840} desde={k45(217.32)} n="II"><rect x={-12} y={-56} width={24} height={86} rx={12} fill="#f4f2ee" stroke="#2a2420" strokeWidth={5} /><rect x={-5} y={-30} width={10} height={58} fill="#d24a3a" /><circle cy={40} r={22} fill="#d24a3a" stroke="#2a2420" strokeWidth={5} /></Medallon>
+        <Medallon x={1080} desde={k45(217.68)} n="III"><rect x={-16} y={-20} width={32} height={66} rx={4} fill="#f1ead8" stroke="#2a2420" strokeWidth={5} /><path d="M0,-58 Q16,-38 0,-26 Q-16,-38 0,-58 Z" fill="#f2a03a" stroke="#2a2420" strokeWidth={4} /></Medallon>
+        <Medallon x={1320} desde={k45(218.03)} n="IV"><path d="M-50,0 Q0,62 50,0 Z" fill="#8a5a2a" stroke="#2a2420" strokeWidth={5} /><path d="M-30,-14 Q0,-50 30,-14" stroke="#e08a2a" strokeWidth={8} fill="none" strokeLinecap="round" /></Medallon>
+      </Lienzo>
+      <Placa texto="FOUR THINGS" x={1660} y={190} desde={k45(217.1)} tam={44} color="#fff2c8" /></>} />
   );
 };
 // ---------- 46 · lo primero: un viejo. Doblado. Un bastón. La piel como corteza ----------
@@ -144,45 +143,58 @@ const k48 = kDe(228.01);
 const CarrozaQuieta: React.FC<{ caraC: string; hablaC: [number, number][]; posesC: Pz; caraS?: string; miraC?: { x: number; y: number } }> = ({ caraC, hablaC, posesC, caraS = "duda", miraC = { x: -0.9, y: 0.1 } }) => (
   <CarrozaViaje x0={K.viejo - 330} x1={K.viejo - 330} n={1} caraS={caraS} caraC={caraC} miraS={{ x: 0.9, y: 0 }} miraC={miraC} hablaC={hablaC} posesC={posesC} />
 );
+// v7 (estructural): de Q47 a Q50 había CINCO tomas del mismo 2-shot en la carroza. Queda UN 2-shot (Q47); el resto:
+// Channa SOLO (contraplano) → inserto del viejo → primer plano del VIEJO que levanta la cabeza y mira al príncipe → Siddhartha SOLO que se
+// PARA en la carroza con las manos en la cabeza (burbujas del padre y la esposa) → POV desde la carroza: la cabeza del caballo y el viejo que se aleja.
 export const Q48Viejo: React.FC = () => {
   const b = k48(229.95), c = k48(230.98);
+  const XC = K.viejo - 330 + 90; // Channa
   return (
     <Tramos t={[
-      [0, <Kap cl={[mira(0, K.viejo - 190, 590, 3.2), mira(b, K.viejo - 185, 590, 3.35)]} sp={{ portonAbierto: 1 }}
-        medio={<CarrozaQuieta caraC="triste" hablaC={[[0, k48(229.8)]]} posesC={[{ f: 0, v: { ...SENTADO, hD: 60, cD: 30, hI: 60, cI: 30 } }, { f: 16, v: { ...SENTADO, hD: 45, cD: 70, hI: 60, cI: 30, cabeza: 6 } }, { f: 40, v: { ...SENTADO, hD: 50, cD: 60, hI: 60, cI: 30, cabeza: 10 } }]} />}
-        hud={<Placa texto="NOTHING IS WRONG WITH HIM" x={960} y={130} desde={6} tam={42} color="#fff2c8" />} />],
+      [0, <Kap cl={[mira(0, XC + 40, KP - 230, 3.3), mira(b, XC + 46, KP - 228, 3.45)]} sp={{ portonAbierto: 1 }}
+        medio={<CarrozaViaje x0={K.viejo - 330} x1={K.viejo - 330} n={1} solo="C" caraC={[{ f: 0, v: "neutral" }, { f: 24, v: "triste" }]} miraC={{ x: -0.9, y: 0.1 }} hablaC={[[0, k48(229.8)]]}
+          posesC={[{ f: 0, v: { ...SENTADO, hD: 60, cD: 30, hI: 60, cI: 30 } }, { f: 14, v: { ...SENTADO, hD: 95, cD: 10, hI: 60, cI: 30, cabeza: -4 } }, { f: 40, v: { ...SENTADO, hD: 50, cD: 60, hI: 60, cI: 30, cabeza: 10 } }]} />}
+        hud={<Placa texto="NOTHING IS WRONG WITH HIM" x={960} y={110} desde={6} tam={42} color="#fff2c8" />} />],
       [b, <Kap cl={[mira(0, K.viejo + 20, 680, 2.5), mira(c - b, K.viejo, 670, 2.7)]} sp={{ portonAbierto: 1 }}
         medio={<ViejoCamino x0={K.viejo + 70} dx={-30} n={c - b} />}
         hud={<Placa texto="HE IS OLD" x={1380} y={300} desde={2} tam={56} color="#ffd38a" />} />],
-      [c, <Kap cl={[mira(0, K.viejo - 230, 620, 2.25), mira(136 - c, K.viejo - 225, 615, 2.4)]} sp={{ portonAbierto: 1 }}
-        medio={<CarrozaQuieta caraC="triste" caraS="miedo" hablaC={[[0, 44]]} posesC={[{ f: 0, v: { ...SENTADO, hD: 50, cD: 60, hI: 60, cI: 30 } }, { f: 8, v: { ...SENTADO, hD: 60, cD: 20, hI: 60, cI: 30, tronco: -2 } }, { f: 30, v: { ...SENTADO, hD: 96, cD: -6, hI: 60, cI: 30, tronco: -6, cabeza: -4 } }]} />}
-        hud={<Placa texto="IT HAPPENS TO EVERYONE" x={960} y={130} desde={2} tam={46} color="#fff2c8" />} />],
+      [c, <Kap cl={[mira(0, K.viejo + 60, KP - 250, 3.0), mira(136 - c, K.viejo + 60, KP - 255, 3.2, { curva: "inout" })]} sp={{ portonAbierto: 1 }}
+        medio={<A look={VIEJO} seed={53} ruta={[{ f: 0, x: K.viejo + 60, y: KP }]} dir={[{ f: 0, v: -1 }]}
+          poses={[{ f: 0, v: VIEJO_POSE }, { f: 14, v: { ...VIEJO_POSE, tronco: 6, cabeza: -6 } }, { f: 34, v: { ...VIEJO_POSE, tronco: 4, cabeza: -2, hI: 40, cI: 60 } }]}
+          caras={[{ f: 0, v: "cansado" }, { f: 14, v: "neutral" }, { f: 30, v: "feliz" }]} miradas={[{ f: 0, v: { x: -0.3, y: 0.7 } }, { f: 14, v: { x: -0.9, y: -0.2 } }]}
+          ajuste={(p) => ({ ...p, hD: VIEJO_POSE.hD, cD: VIEJO_POSE.cD })} enManoD={<Recto ang={VIEJO_POSE.hD + VIEJO_POSE.tronco + VIEJO_POSE.cD}><Baston largo={150} /></Recto>} />}
+        hud={<Placa texto="IT HAPPENS TO EVERYONE" x={960} y={110} desde={2} tam={46} color="#fff2c8" />} />],
     ]} />
   );
 };
-// ---------- 49 · «to everyone? to my father? to my wife?» (Siddhartha con miedo + recuerdos) ----------
+// ---------- 49 · «to everyone? to my father? to my wife?» — Siddhartha SOLO se para en la carroza, manos a la cabeza ----------
 const k49 = kDe(232.55);
+const PARADO49 = { tronco: -4, cabeza: -6, hD: 40, cD: 30, hI: 40, cI: 30 };
 export const Q49ATodos: React.FC = () => {
   const f = useF();
+  const XS = K.viejo - 330 - 40;
   return (
-    <Kap cl={[mira(0, K.viejo - 420, 560, 2.2), mira(95, K.viejo - 430, 560, 2.45)]} sp={{ portonAbierto: 1 }}
-      medio={<CarrozaViaje x0={K.viejo - 330} x1={K.viejo - 330} n={1} caraS={[{ f: 0, v: "sorpresa" }, { f: 30, v: "miedo" }]} miraS={{ x: -0.3, y: -0.6 }} hablaS={[[0, k49(233.3)], [k49(233.39), k49(234.5)], [k49(234.61), k49(235.6)]]}
-        posesS={[{ f: 0, v: SENTADO }, { f: 20, v: { ...SENTADO, hD: 40, cD: 120, hI: 40, cI: 120, tronco: -6 } }]} />}
+    <Kap cl={[mira(0, XS + 20, KP - 280, 2.7), mira(95, XS + 20, KP - 285, 2.9, { curva: "inout" })]} sp={{ portonAbierto: 1 }}
+      medio={<><Carroza x={K.viejo - 330} piso={KP} />
+        <A look={SIDDHARTHA} seed={30} ruta={[{ f: 0, x: XS, y: KP - 95 }]} asiento={[{ f: 0, v: 50 }, { f: 10, v: undefined }]}
+          poses={[{ f: 0, v: SENTADO }, { f: 12, v: PARADO49 }, { f: k49(233.39), v: { ...PARADO49, hD: 150, cD: 110, hI: 150, cI: 110, tronco: 6, cabeza: 8 } }, { f: k49(234.61), v: { ...PARADO49, hD: 60, cD: 130, hI: 20, cI: 30, tronco: -2, cabeza: -10 } }]}
+          caras={[{ f: 0, v: "sorpresa" }, { f: k49(233.39), v: "miedo" }, { f: k49(234.61), v: "triste" }]} miradas={[{ f: 0, v: { x: 0.9, y: 0 } }, { f: k49(233.39), v: { x: -0.4, y: -0.6 } }, { f: k49(234.61), v: { x: 0.5, y: -0.6 } }]}
+          habla={[[0, k49(233.3)], [k49(233.39), k49(234.5)], [k49(234.61), k49(235.6)]]} /></>}
       hud={<>
-        <Burbuja x={560} y={330} r={150} desde={k49(233.4)} cx={900} cy={500}><Retrato x={0} y={0} r={80} tipo="rey" edad={lerp(f, k49(233.6), 95, 0, 1)} cara="neutral" /></Burbuja>
-        <Burbuja x={1360} y={330} r={150} desde={k49(234.6)} cx={1020} cy={500}><Retrato x={0} y={0} r={80} tipo="esposa" edad={lerp(f, k49(234.8), 95, 0, 1)} cara="neutral" /></Burbuja>
+        <Burbuja x={420} y={330} r={150} desde={k49(233.4)} cx={800} cy={420}><Retrato x={0} y={0} r={80} tipo="rey" edad={lerp(f, k49(233.6), 95, 0, 1)} cara="neutral" /></Burbuja>
+        <Burbuja x={1500} y={330} r={150} desde={k49(234.6)} cx={1120} cy={420}><Retrato x={0} y={0} r={80} tipo="esposa" edad={lerp(f, k49(234.8), 95, 0, 1)} cara="neutral" /></Burbuja>
       </>} />
   );
 };
-// ---------- 50 · «to everyone, my prince. To you too»: Channa (primer plano de los dos) → la cara de Siddhartha envejece en 3 pasos ----------
+// ---------- 50 · «to everyone, my prince» = POV desde la carroza (cabeza del caballo, el viejo se aleja) → «to you too»: la cara de Siddhartha envejece ----------
 const k50 = kDe(235.71);
 export const Q50ATi: React.FC = () => {
   const b = k50(237.28);
   return (
     <Tramos t={[
-      [0, <Kap cl={[mira(0, K.viejo - 400, 585, 3.1), mira(b, K.viejo - 395, 585, 3.3)]} sp={{ portonAbierto: 1 }}
-        medio={<CarrozaQuieta caraC="triste" caraS="miedo" miraC={{ x: -0.9, y: 0 }} hablaC={[[0, k50(237.2)]]} posesC={[{ f: 0, v: { ...SENTADO, hD: 60, cD: 30, hI: 60, cI: 30 } }, { f: 10, v: { ...SENTADO, hD: 45, cD: 70, hI: 60, cI: 30, cabeza: 8, tronco: 4 } }]} />}
-        hud={<Placa texto="TO EVERYONE, MY PRINCE" x={960} y={130} desde={4} tam={44} color="#fff2c8" />} />],
+      [0, <Kap cl={[mira(0, K.viejo + 190, KP - 220, 2.4), mira(b, K.viejo + 230, KP - 225, 2.6, { curva: "inout" })]} sp={{ portonAbierto: 1 }}
+        medio={<><Carroza x={K.viejo - 330} piso={KP} paso={0} /><ViejoCamino x0={K.viejo + 380} dx={70} n={b} /></>}
+        hud={<Placa texto="TO EVERYONE, MY PRINCE" x={960} y={110} desde={4} tam={44} color="#fff2c8" />} />],
       [b, <><Envejece s1={9} s2={22} /><Placa texto="TO YOU TOO" x={960} y={110} desde={1} tam={56} color="#ffd38a" /></>],
     ]} />
   );
@@ -464,23 +476,66 @@ const LagrimasCortejo: React.FC<{ x0: number; x1: number; dur: number }> = ({ x0
 // ---------- 60 · al mediodía, Broadway y Argyle: camina → frena en seco → la bici blanca (detalle) → la ficha del ciclista ----------
 const k60 = kDe(289.73);
 const QUIETO60 = { hD: 10, cD: 30, hI: 10, cI: 30, tronco: 6 };
+// v7 (estructural): antes ~20 s de 4 composiciones casi iguales (Leo quieto de perfil + la bici). Ahora 5 planos distintos:
+// A) general corto: camina · B) CONTRAPLANO desde la bici (la rueda blanca enorme en primer término, Leo frena de frente) ·
+// C) dos-planos: Leo se acerca y TOCA el asiento · D) primerísimo de la CADENA y el candado con su mano, caen las flores y la foto · E) la ficha.
+const CadenaMacro: React.FC<{ f: number; flores: number; foto: number }> = ({ f, flores, foto }) => {
+  const z = lerp(f, 0, 95, 1, 1.08);
+  const mano = suave(lerp(f, 4, 26, 0, 1));
+  const fl = suave(lerp(f, flores, flores + 12, 0, 1)), ft = suave(lerp(f, foto, foto + 12, 0, 1));
+  return (
+    <Lienzo>
+      <rect width={1920} height={1080} fill="#c9ced6" />
+      <rect y={760} width={1920} height={320} fill="#9ea4ad" />
+      <g transform={`translate(960 540) scale(${z}) translate(-960 -540)`}>
+        <rect x={1080} y={-40} width={130} height={1200} fill="#3a3d44" /><rect x={1100} y={-40} width={22} height={1200} fill="#5a5f68" />
+        {/* el cuadro blanco de la bici que cruza abajo */}
+        <path d="M-60,980 L760,700 L1500,860" stroke="#f4f2ee" strokeWidth={70} fill="none" strokeLinecap="round" />
+        {/* la cadena enroscada al poste */}
+        {Array.from({ length: 11 }).map((_, k) => { const t = k / 10; const x = 520 + t * 700, y = 760 - t * 210 + Math.sin(t * 9) * 16;
+          return <ellipse key={k} cx={x} cy={y} rx={44} ry={24} transform={`rotate(${-17 + (k % 2) * 70} ${x} ${y})`} fill="none" stroke={k % 2 ? "#8a9098" : "#b4bac2"} strokeWidth={14} />; })}
+        {/* candado */}
+        <g transform="translate(560,800)"><path d="M-40,-40 L-40,-90 Q0,-140 40,-90 L40,-40" stroke="#9aa0a8" strokeWidth={16} fill="none" /><rect x={-70} y={-46} width={140} height={120} rx={16} fill="#c9a640" stroke="#6a5420" strokeWidth={6} /><circle cy={10} r={12} fill="#3a2a10" /></g>
+        {/* flores atadas al poste */}
+        <g opacity={fl} transform={`translate(1150,${300 - (1 - fl) * 260})`}>
+          {[[-60, -20, "#f2efe8"], [-20, -50, "#e9e4d8"], [30, -30, "#ffffff"], [60, 10, "#dfe2e8"], [-40, 30, "#f6f1e6"]].map(([x, y, c], i) => <g key={i}><line x1={0} y1={90} x2={x as number} y2={y as number} stroke="#6a7a6a" strokeWidth={6} /><circle cx={x as number} cy={y as number} r={30} fill={c as string} stroke="#b8b2a4" strokeWidth={3} /><circle cx={x as number} cy={y as number} r={9} fill="#e8c860" /></g>)}
+        </g>
+        {/* la foto */}
+        <g opacity={ft} transform={`translate(${1500 + (1 - ft) * 500},330) rotate(${6 - ft * 2})`}>
+          <rect x={-130} y={-150} width={260} height={300} fill="#f4f2ee" stroke="#8a8f98" strokeWidth={4} /><rect x={-108} y={-128} width={216} height={200} fill="#8a9fb8" />
+          <Retrato x={0} y={-30} r={72} tipo="nino" cara="feliz" />
+        </g>
+      </g>
+      <g opacity={mano}><ManoGrande x={lerp(mano, 0, 1, 180, 620)} y={lerp(mano, 0, 1, 1180, 760)} ang={60} piel="#ecc9a3" manga="#2a2c33" s={1.25} /></g>
+    </Lienzo>
+  );
+};
 export const Q60Bici: React.FC = () => {
-  const para = k60(296), c = k60(297.1), d = k60(302.75);
+  const f = useF();
+  const para = k60(293.0), c = k60(297.1), ch = k60(299.6), d = k60(302.75);
   const XL = BW.ghostbike - 280;
-  const kc = kDe(297.1), kd = kDe(302.75);
+  const kb = kDe(293.0), kc = kDe(297.1), kh = kDe(299.6), kd = kDe(302.75);
+  const X0 = XL - 520;
   return (
     <Tramos t={[
-      [0, <Bwy dia cl={[0, 40, 80, 120, 160].map((q) => mira(q, BW.argyle - 800 + ((XL - (BW.argyle - 800)) * Math.min(q, para)) / para + 90, 790, 1.9, { curva: "inout" }))}
-        medio={<A look={LEO_CAPUCHA} seed={1} ruta={[{ f: 0, x: BW.argyle - 800, y: BP }, { f: para, x: XL, y: BP, curva: "lineal" }]} poses={[{ f: 0, v: CAMINA }]}
-          ajuste={(p) => BOLSILLOS(p)} caras={[{ f: 0, v: "neutral" }]} miradas={[{ f: 0, v: MIRA_T }, { f: k60(294.2), v: { x: 0.2, y: 0.7 } }]} />}
-        hud={<><Hud2 m={0} est="congelado" /><Rotulo texto="NOON · BROADWAY & ARGYLE" desde={6} hasta={k60(294.4)} /><Placa texto="RODE PAST IT · EVERY NIGHT · 2 YEARS" x={960} y={1000} desde={k60(294.6)} tam={40} /></>} />],
-      [para, <Bwy dia cl={[mira(0, XL + 150, 760, 2.4), mira(c - para, XL + 170, 760, 2.5)]}
-        medio={<A look={LEO_CAPUCHA} seed={1} ruta={[{ f: 0, x: XL - 30, y: BP }, { f: 6, x: XL, y: BP, curva: "out" }]} poses={[{ f: 0, v: { ...QUIETO60, tronco: -10, cabeza: -8 } }, { f: 8, v: QUIETO60 }]}
-          caras={[{ f: 0, v: "sorpresa" }]} miradas={[{ f: 0, v: { x: 0.9, y: 0.5 } }]} />}
-        hud={<Hud2 m={0} est="congelado" />} />],
-      [c, <Bwy dia cl={[mira(0, BW.ghostbike + 10, 760, 2.5), mira(d - c, BW.ghostbike + 40, 745, 2.8, { curva: "inout" })]}
-        hud={<><Hud2 m={0} est="congelado" /><Placa texto="A BICYCLE" x={480} y={200} desde={2} tam={44} /><Placa texto="PAINTED COMPLETELY WHITE" x={480} y={280} desde={kc(298.17)} tam={44} />
-          <Placa texto="CHAINED TO A POLE" x={480} y={360} desde={kc(299.69)} tam={44} /><Placa texto="FLOWERS · A PHOTO" x={480} y={440} desde={kc(301.05)} tam={44} color="#ffd38a" /></>} />],
+      [0, <Bwy dia cl={[mira(0, X0 + 90, 760, 2.1), mira(para, XL - 60, 760, 2.2, { curva: "inout" })]}
+        medio={<A look={LEO_CAPUCHA} seed={1} ruta={[{ f: 0, x: X0, y: BP }, { f: para, x: XL - 150, y: BP, curva: "lineal" }]} poses={[{ f: 0, v: CAMINA }]}
+          ajuste={(p) => BOLSILLOS(p)} caras={[{ f: 0, v: "neutral" }]} miradas={[{ f: 0, v: MIRA_T }, { f: k60(291.9), v: { x: 0.3, y: 0.4 } }]} />}
+        hud={<><Hud2 m={0} est="congelado" /><Rotulo texto="NOON · BROADWAY & ARGYLE" desde={6} hasta={para} /></>} />],
+      [para, <Bwy dia cl={[mira(0, XL - 210, 700, 2.6), mira(c - para, XL - 190, 700, 2.75, { curva: "inout" })]}
+        medio={<A look={LEO_CAPUCHA} seed={1} ruta={[{ f: 0, x: XL - 170, y: BP }, { f: 8, x: XL - 150, y: BP, curva: "out" }, { f: kb(295.4), x: XL - 150, y: BP }, { f: kb(296.9), x: XL - 120, y: BP }]}
+          poses={[{ f: 0, v: { ...QUIETO60, tronco: -12, cabeza: -10 } }, { f: 8, v: QUIETO60 }, { f: kb(294.4), v: { ...QUIETO60, hD: 40, cD: 120, cabeza: 6 } }, { f: kb(295.4), v: CAMINA }]}
+          caras={[{ f: 0, v: "sorpresa" }, { f: kb(294.4), v: "triste" }]} miradas={[{ f: 0, v: { x: 0.9, y: 0.3 } }, { f: kb(294.4), v: { x: 0.8, y: 0.6 } }]} />}
+        hud={<><Lienzo><g transform={`translate(${lerp(f - para, 0, c - para, 1560, 1500)},1290) scale(4.3)`}><GhostBike x={0} piso={0} /></g></Lienzo><Hud2 m={0} est="congelado" />
+          <Placa texto="RODE PAST IT · EVERY NIGHT · 2 YEARS" x={760} y={200} desde={kb(294.3)} tam={40} /></>} />],
+      [c, <Bwy dia cl={[mira(0, BW.ghostbike - 150, 730, 2.35), mira(ch - c, BW.ghostbike - 130, 720, 2.5, { curva: "inout" })]}
+        medio={<A look={LEO_CAPUCHA} seed={1} ruta={[{ f: 0, x: XL - 20, y: BP }, { f: 30, x: BW.ghostbike - 118, y: BP, curva: "out" }]}
+          poses={[{ f: 0, v: CAMINA }, { f: 32, v: { ...QUIETO60, hD: 42, cD: 26, tronco: 16, cabeza: 10 } }, { f: 50, v: { ...QUIETO60, hD: 44, cD: 34, tronco: 20, cabeza: 14 } }]}
+          caras={[{ f: 0, v: "triste" }, { f: 40, v: "triste" }]} miradas={[{ f: 0, v: { x: 0.9, y: 0.4 } }, { f: 30, v: { x: 0.6, y: 0.8 } }]} />}
+        hud={<><Hud2 m={0} est="congelado" /><Placa texto="A BICYCLE" x={600} y={200} desde={2} hasta={kc(298.1)} tam={46} />
+          <Placa texto="PAINTED COMPLETELY WHITE" x={600} y={200} desde={kc(298.17)} tam={46} color="#ffffff" /></>} />],
+      [ch, <><CadenaMacro f={f - ch} flores={kh(301.05)} foto={kh(302.0)} /><Hud2 m={0} est="congelado" />
+        <Placa texto="CHAINED TO A POLE" x={960} y={990} desde={2} hasta={kh(301.0)} tam={44} /><Placa texto="FLOWERS · A PHOTO" x={960} y={990} desde={kh(301.05)} tam={44} color="#ffd38a" /></>],
       [d, <><Memorial edad={kd(304.19)} auto={kd(305.91)} noche={kd(307.99)} /><Hud2 m={0} est="congelado" /></>],
     ]} />
   );
@@ -841,7 +896,17 @@ export const Q78Llama: React.FC = () => {
   );
 };
 // ---------- 79 · día cuatro. Screen time: 2 h 06 m (baja desde 9 h 12 m) ----------
-export const Q79Dia4: React.FC = () => <Fondo><TelGrande modo="screentime" min={552} minHasta={126} x={1250} y={530} desde={0} /><HudTenzo min={Array.from({ length: 21 }, (_, i) => ({ f: 10 + i * 2, v: Math.round(552 - (552 - 126) * i / 20) }))} dia={4} /><Rotulo texto="DAY 4 · 2H 06M" desde={52} /><ManoLeo texto="from 9h 12m" x={150} y={330} desde={20} tam={96} /><ManoLeo texto="to 2h 06m" x={150} y={470} desde={70} tam={96} /></Fondo>;
+// v7 (28-oct, estructural): ya no es placa sin personaje ni HUD contra tel (3h51m vs 3h10m). Leo SENTADO en la cama a la mañana mira el
+// tel (duda → sorpresa → festejo con el puño); el tel grande a la derecha baja de 9h 12m a 2h 06m y es el ÚNICO contador del plano (sin HUD).
+const k79 = kDe(408.52);
+const CAMA79 = { tronco: -18, pI: 88, rI: 4, pD: 84, rD: 10, hD: 32, cD: 128, hI: 26, cI: 118, cabeza: 18 };
+export const Q79Dia4: React.FC = () => (
+  <Cto pal={PAL_DIA} cl={[mira(0, CTO_PUNTOS.colchon + 105, 780, 2.15), mira(131, CTO_PUNTOS.colchon + 95, 775, 2.3, { curva: "inout" })]}
+    leo={{ poses: [{ f: 0, v: CAMA79 }, { f: 40, v: { ...CAMA79, tronco: -24, cabeza: 6 } }, { f: 62, v: { ...CAMA79, tronco: -8, cabeza: 22, hI: 30, cI: 120 } }, { f: 78, v: { ...CAMA79, tronco: -12, cabeza: -4, hI: 150, cI: 70 } }, { f: 90, v: { ...CAMA79, tronco: -12, cabeza: -6, hI: 165, cI: 40 } }],
+      caras: [{ f: 0, v: "duda" }, { f: 40, v: "sorpresa" }, { f: 76, v: "risa" }], miradas: [{ f: 0, v: { x: 0.4, y: 0.8 } }, { f: 40, v: { x: 0.5, y: 0.9 } }, { f: 76, v: { x: 0.9, y: -0.3 } }] }}
+    hud={<><TelGrande modo="screentime" min={552} minHasta={126} x={1450} y={540} s={0.8} desde={0} /><MarcaTenzo />
+      <ManoLeo texto="from 9h 12m" x={790} y={110} desde={k79(409.66)} tam={84} /><ManoLeo texto="to 2h 06m" x={790} y={230} desde={k79(411.2)} tam={84} /></>} />
+);
 /// ---------- 80 · 2 AM: Leo da vueltas en la cama → inserto: el tel se prende en la mesita → la sombra se inclina en 2 tiempos, más grande que nunca ----------
 const k80 = kDe(412.88);
 const ACOST = { tronco: -60, cabeza: -10, pI: 88, rI: 4, pD: 84, rD: 10, hD: 10, cD: 20, hI: 10, cI: 20 };
@@ -882,21 +947,26 @@ export const Q80Noche: React.FC = () => {
 // ---------- 81 · «you deserve a reward. Just ten minutes» (Mara le acerca el tel) ----------
 const k81 = kDe(423.72);
 export const Q81Premio: React.FC = () => (
-  <Cto cl={[mira(0, CTO_PUNTOS.colchon - 20, 450, 1.4), mira(114, CTO_PUNTOS.colchon, 460, 1.5, { curva: "inout" })]}
-    leo={{ poses: [{ f: 0, v: { ...ACOST, tronco: -40, cabeza: 10, hD: 40, cD: 30 } }, { f: 70, v: { ...ACOST, tronco: -34, cabeza: 12, hD: 70, cD: 20 } }], enManoD: null, caras: [{ f: 0, v: "duda" }], miradas: [{ f: 0, v: { x: 0.6, y: -0.3 } }] }}
-    detras={maraCuarto(2.1, CTO_PUNTOS.colchon - 120, { caras: [{ f: 0, v: "picaro" }], habla: [[0, k81(425.8)], [k81(425.88), k81(426.7)]],
-      poses: [{ f: 0, v: { tronco: 10, cabeza: 12, hD: 60, cD: 40, hI: -60, cI: -40 } }, { f: 30, v: { tronco: 12, cabeza: 12, hD: 80, cD: 8, hI: -60, cI: -40 } }], enManoD: <Tel s={1.0} /> })}
+  // v7: la cámara baja y abre: Leo ENTERO en la cama (antes sólo asomaba la cabeza cortada abajo) con la sombra encima; Leo mira el tel
+  // que le acerca, la mano se le va sola hacia él (tentación) y la vuelve a bajar en «just ten minutes».
+  <Cto cl={[mira(0, CTO_PUNTOS.colchon - 40, 610, 1.5), mira(114, CTO_PUNTOS.colchon - 20, 625, 1.6, { curva: "inout" })]}
+    leo={{ poses: [{ f: 0, v: { ...ACOST, tronco: -40, cabeza: 10, hD: 40, cD: 30 } }, { f: 26, v: { ...ACOST, tronco: -30, cabeza: 16, hD: 40, cD: 30 } }, { f: 52, v: { ...ACOST, tronco: -26, cabeza: 18, hD: 95, cD: 30 } }, { f: 70, v: { ...ACOST, tronco: -34, cabeza: 8, hD: 70, cD: 60 } }, { f: 92, v: { ...ACOST, tronco: -24, cabeza: 20, hD: 110, cD: 20 } }],
+      enManoD: null, caras: [{ f: 0, v: "duda" }, { f: 30, v: "triste" }, { f: 66, v: "duda" }], miradas: [{ f: 0, v: { x: 0.6, y: -0.3 } }, { f: 24, v: { x: -0.5, y: -0.7 } }, { f: 70, v: { x: 0.3, y: 0.6 } }, { f: 88, v: { x: -0.5, y: -0.6 } }] }}
+    detras={maraCuarto(1.7, CTO_PUNTOS.colchon - 140, { caras: [{ f: 0, v: "picaro" }, { f: 70, v: "risa" }], habla: [[0, k81(425.8)], [k81(425.88), k81(426.7)]],
+      poses: [{ f: 0, v: { tronco: 10, cabeza: 12, hD: 60, cD: 40, hI: -60, cI: -40 } }, { f: 30, v: { tronco: 16, cabeza: 14, hD: 85, cD: 6, hI: -60, cI: -40 } }, { f: 76, v: { tronco: 20, cabeza: 16, hD: 92, cD: 0, hI: -70, cI: -30 } }], enManoD: <Tel s={1.0} /> })}
     hud={<><Hud2 m={126} dia={4} /><ManoMara texto="you deserve a reward" x={1150} y={200} desde={2} hasta={k81(425.8)} tam={84} /><ManoMara texto="just ten minutes" x={1150} y={200} desde={k81(425.9)} tam={84} /></>} />
 );
 // ---------- 82 · Leo agarra el tel ----------
 // v4: las piernas van estiradas hacia atrás sobre el colchón (antes se encimaban con el torso = mancha) y la cámara abre: cuerpo entero.
 // v4b: de costado con rodillas dobladas (como Q80, se lee cadera y rodilla) y el brazo izq. detrás del torso (no asoma bajo la rodilla)
-const ACOST82 = { ...ACOST, tronco: -82, pI: -96, rI: 45, pD: -88, rD: 55, hI: 160, cI: 10 };
 export const Q82Agarra: React.FC = () => {
   const f = useF();
+  // v7: arranca en la MISMA pose en que terminó Q81 (medio incorporado, piernas de ACOST: cadera y rodilla legibles); estira el brazo a la
+  // mesita, agarra el tel y se lo lleva a la cara. Sin la pose de piernas hacia atrás (en 428,0 s quedaba dado vuelta, con la mano suelta).
+  const P0 = { ...ACOST, tronco: -26, cabeza: 18, hD: 100, cD: 24 };
   return (
     <Cto cl={[mira(0, CTO_PUNTOS.colchon - 20, 740, 2.1), mira(54, CTO_PUNTOS.colchon - 10, 720, 2.25)]}
-      leo={{ poses: [{ f: 0, v: ACOST82 }, { f: 14, v: { ...ACOST82, tronco: -40, cabeza: 6, hD: 90, cD: 20 } }, { f: 40, v: { ...ACOST82, tronco: -30, cabeza: 18, hD: 30, cD: 125 } }],
+      leo={{ poses: [{ f: 0, v: P0 }, { f: 14, v: { ...P0, tronco: -34, cabeza: 10, hD: 80, cD: 10 } }, { f: 26, v: { ...P0, tronco: -34, cabeza: 10, hD: 78, cD: 14 } }, { f: 42, v: { ...P0, tronco: -22, cabeza: 18, hD: 30, cD: 125, hI: 20, cI: 30 } }],
         enManoD: (fr: number) => (fr >= 26 ? <Tel /> : null), caras: [{ f: 0, v: "duda" }, { f: 30, v: "cansado" }], miradas: [{ f: 0, v: { x: 0.8, y: 0.3 } }, { f: 40, v: { x: 0.3, y: 0.7 } }] }}
       medio={<>{f < 26 && <TelMesa x={CTO_PUNTOS.colchon + 200} y={CP - 40} vibra={1} />}</>} hud={<Hud2 m={126} dia={4} est="sube" />} />
   );
@@ -926,7 +996,7 @@ export const Q83Cta: React.FC = () => {
   );
   return (
     <>
-      <Bwy dia cl={f < cB ? clA : clB}
+      <Bwy dia cl={f < cB ? clA : clB} sp={{ cartel: false }}
         medio={<>
           <A look={TENZO} seed={2} ruta={[{ f: 0, x: X - 260, y: BP }, { f: 100, x: X - 260, y: BP }, { f: 130, x: X + 20, y: BP, curva: "out" }]} dir={[{ f: 0, v: 1 }]} opacidad={(fr: number) => lerp(fr, 98, 108, 0, 1)}
             poses={[{ f: 0, v: CAMINA }, { f: 132, v: { hD: 40, cD: 30, hI: 10, cI: 10 } }, { f: 152, v: { hD: 35, cD: -6, hI: 10, cI: 10, tronco: 8, cabeza: 10 } }, { f: 176, v: { hD: 30, cD: -4, hI: 10, cI: 10, tronco: 8, cabeza: 12 } },

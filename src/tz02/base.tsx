@@ -14,7 +14,9 @@ export const KP = KAP_PISO, K = KAP_PUNTOS, BP = BWY_PISO, BW = BWY_PUNTOS;
 export const A: React.FC<ActorProps> = (p) => <Actor escala={ESC} {...p} />;
 export const PRINCESA: Look = { ...AMRAPALI, camisa: "#d9708a", pantalon: "#d9708a", accesorios: [{ t: "pelo", forma: "cola", color: "#1e1410" }, { t: "tunica", color: "#d9708a", largo: 1 }, { t: "bufanda", color: "#f2c14a" }] };
 // HUD de tz02: día 2 arranca con 6 h de hoy; tras entregar el tel queda en 0 congelado; día 4 = 2h 06m
-export const Hud2 = ({ m = 360, dia = 2, est = "normal", d = 0 }: { m?: number; dia?: number; est?: "sube" | "normal" | "congelado"; d?: number }) => <HudTenzo min={m} dia={dia} estado={est} desde={d} />;
+// v7 (28-oct): d = -60 → el resorte de entrada ya terminó en el cuadro 0 de cada plano. Antes cada corte REARRANCABA el resorte
+// (HUD ausente en el cuadro del corte y a media opacidad 3-4 cuadros = «HUD fantasma» de Q13 1:00 y Q75 6:20).
+export const Hud2 = ({ m = 360, dia = 2, est = "normal", d = -60 }: { m?: number; dia?: number; est?: "sube" | "normal" | "congelado"; d?: number }) => <HudTenzo min={m} dia={dia} estado={est} desde={d} />;
 
 export const Kap: React.FC<{ cl: Clave[]; sp?: Record<string, unknown>; medio?: React.ReactNode; hud?: React.ReactNode; frente?: React.ReactNode }> = ({ cl, sp = {}, medio, hud, frente }) => (
   <Escena Set={Kapilavastu} pal={PAL_ANT} claves={cl} seed={4} setProps={sp} medio={medio} hud={hud} frente={frente} />

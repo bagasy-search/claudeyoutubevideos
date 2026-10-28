@@ -819,8 +819,25 @@ export const Q35Scroll: React.FC = () => {
   const fuera = suave(lerp(f, sw, sw + 8, 0, 1)); // la tarjeta triste sale por la izquierda
   const vuela = lerp(f, sw + 8, pf, 0, 1);
   const polvo = lerp(f, pf, pf + 18, 0, 1);
+  const { fps } = useVideoConfig();
+  // v7 (estructural): en «disappears» CORTE a primerísimo de Leo con el feed REFLEJADO en la cara (luces de colores que cambian
+  // con cada tarjeta); antes el plano terminaba igual que Q34 (tel centrado, texto al costado, fondo liso).
+  if (f >= pf) {
+    const cl35 = [mira(pf, L.leo + 10, 610, 3.0), mira(140, L.leo + 14, 606, 3.15)];
+    const cab = enPantalla(cl35, f, fps, L.leo + 10, LP - 300);
+    const COL = ["#ff6a2b", "#ff4f8a", "#4fa8ff", "#ffd34a", "#7ad97a"];
+    const c0 = COL[Math.floor((f - pf) / 7) % COL.length];
+    return (
+      <Lav cl={cl35} tenzo={{ no: true }} toalla={-1}
+        leo={leoSent({ poses: [{ f: 0, v: { ...CEL_SENT, cabeza: 14 } }], caras: [{ f: 0, v: "neutral" }, { f: pf + 16, v: "cansado" }], miradas: [{ f: 0, v: { x: 0.3, y: 0.9 } }] })}
+        hud={<><Lienzo><circle cx={cab.x - 170} cy={cab.y + 230} r={230} fill={c0} opacity={0.13} /><circle cx={cab.x - 150} cy={cab.y + 250} r={130} fill={c0} opacity={0.11} /></Lienzo>
+          <Placa texto="GONE." x={1480} y={220} desde={pf} tam={64} /><Hud2 /></>} />
+    );
+  }
   return (
     <Fondo>
+      {/* v7: el tel INCLINADO y más grande (no el encuadre de Q34) */}
+      <div style={{ position: "absolute", inset: 0, transform: "rotate(-9deg) scale(1.12)", transformOrigin: "1160px 600px" }}>
       <TelMarco x={1160} y={540} s={0.92}>
         <div style={{ position: "absolute", inset: 0, background: "#1b1d22" }} />
         {Array.from({ length: 12 }).map((_, i) => {
@@ -830,6 +847,7 @@ export const Q35Scroll: React.FC = () => {
           return <TarjetaIcono key={i} y={y} t={FEED[i % FEED.length]} likes={1200 + ((i * 3797) % 9000) + f * 11} />;
         })}
       </TelMarco>
+      </div>
       <Lienzo>
         {f >= sw + 6 && polvo < 1 && <g transform={`translate(${lerp(vuela, 0, 1, 700, 420)},${540 - vuela * 60}) scale(${(1 - vuela * 0.45) * (1 - polvo)}) rotate(${-vuela * 8})`} opacity={1 - polvo}>
           <rect x={-190} y={-160} width={380} height={320} rx={22} fill="#3a3d44" stroke="#5a5d64" strokeWidth={5} />
@@ -842,7 +860,6 @@ export const Q35Scroll: React.FC = () => {
       </Lienzo>
       <Placa texto="SOMETHING SAD…" x={460} y={190} desde={k35(166.91)} hasta={sw} tam={46} color="#c9ccd2" />
       <Placa texto="SCROLL" x={460} y={190} desde={sw} hasta={pf} tam={60} color="#ff6a2b" />
-      <Placa texto="GONE." x={460} y={190} desde={pf} tam={60} />
       <Hud2 />
     </Fondo>
   );
@@ -871,14 +888,27 @@ export const Q37NoContesta: React.FC = () => (
     leo={leoSent({ poses: [{ f: 0, v: CEL_SENT }, { f: 18, v: { ...CEL_SENT, hD: 20, cD: 90, cabeza: 26 } }], miradas: [{ f: 0, v: { x: 0.9, y: 0 } }, { f: 14, v: { x: 0.2, y: 0.9 } }], caras: [{ f: 0, v: "duda" }, { f: 16, v: "triste" }] })} hud={<Hud2 />} />
 );
 // ---------- 38 · el contador sigue: 9h 12m ayer · 6 h ya hoy ----------
+// v7 (estructural): 2 planos distintos. A) el tel a PANTALLA COMPLETA, inclinado, con las barras creciendo y el pulgar (9h 12m ayer);
+// B) contraplano: primer plano de Leo mirando su historial, con la cara iluminada por el tel; «6 hours already today» a mano.
 export const Q38Contador: React.FC = () => {
   const f = useF();
   const k = kDe(176.09);
+  const cB = k(181.85);
+  if (f >= cB) {
+    const MIRA_HIST = { ...CEL_SENT, cabeza: 16 };
+    return (
+      <Lav cl={[mira(cB, L.leo - 150, 620, 2.6), mira(cB + 62, L.leo - 140, 615, 2.8, { curva: "inout" })]} tenzo={{ no: true }} toalla={-1}
+        leo={leoSent({ poses: [{ f: 0, v: MIRA_HIST }, { f: cB + 20, v: { ...MIRA_HIST, cabeza: 4, tronco: -6 } }, { f: cB + 40, v: { ...MIRA_HIST, cabeza: 22, tronco: 6 } }],
+          caras: [{ f: 0, v: "duda" }, { f: cB + 20, v: "sorpresa" }, { f: cB + 40, v: "triste" }], miradas: [{ f: 0, v: { x: 0.3, y: 0.9 } }, { f: cB + 20, v: { x: 0.9, y: -0.1 } }, { f: cB + 40, v: { x: 0.3, y: 0.9 } }] })}
+        hud={<><ManoLeo texto="6 hours already today" x={110} y={480} desde={cB + 4} tam={96} /><Hud2 /></>} />
+    );
+  }
   return (
     <Fondo>
-      {f < k(181.85) ? <TelGrande modo="screentime" min={552} sub="YESTERDAY" x={1250} desde={0} pulgar /> : <TelGrande modo="screentime" min={300} minHasta={360} x={1250} desde={k(181.85)} pulgar />}
-      <Pildora texto="9h 12m YESTERDAY" x={470} y={360} desde={k(179.2)} color="#ffe2a6" tam={56} />
-      <ManoLeo texto="6 hours already today" x={110} y={480} desde={k(182.0)} tam={100} />
+      <TelGrande modo="screentime" min={552} sub="YESTERDAY" x={1180} y={560} s={1.06} inclina={-5} desde={0} />
+      {/* la mano de Leo sostiene el tel por el costado (las barras quedan a la vista) */}
+      <Lienzo><ManoGrande x={lerp(f, 0, 90, 955, 965)} y={905} ang={22} piel="#ecc9a3" manga="#24242a" s={1.15} /></Lienzo>
+      <Pildora texto="9h 12m YESTERDAY" x={470} y={420} desde={k(179.2)} color="#ffe2a6" tam={60} />
       <Hud2 />
     </Fondo>
   );
