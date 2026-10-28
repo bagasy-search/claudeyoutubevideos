@@ -10,6 +10,11 @@ import CARDS from "./cards.json";
 import { AskCard, BigNum, CoverFlow, CheckList, Chip, DayClock, Desc, GuidePage, Headline, Mistake, StepTitle, TempGauge, TimeBars, Versus, Words, acc } from "./premium";
 import { Avatar, Clip, OK, Shot, WIN, World } from "./parts";
 import { CamaraMano } from "../kits/camara/CamaraMano";
+import HEROES from "./heroes.json";
+import { H } from "./hkit";
+import { HBlueprint, HFlap, HKnob, HLeaflet, HMelt, HParticles, HPeople, HPlateau, HPodium, HRedact, HRoute } from "./heroes1";
+import { HBattery, HBoil, HChalk, HDanger, HExploded, HFill, HLayers, HMarker, HNight, HPotRank, HSorter } from "./heroes2";
+import { HBricks, HComments, HCylinders, HFlow, HHourglass, HLoupe, HNotes, HProbe, HScale, HTimeline } from "./heroes3";
 
 type Seg = [number, number, string, string];
 type Ov = { k: string; at: number; out: number; [x: string]: any };
@@ -69,8 +74,28 @@ const Carousels: React.FC<{ t: number }> = ({ t }) => <>
     cards={[...PL.txt.recap, "Los 5 errores"].map((n, i) => ({ img: CJ.rec?.[i], at: REC.rows[i] ?? REC.out, n: i + 1, title: n })).filter((c) => c.at < REC.out)} />}
 </>;
 
+// ===== un componente ÚNICO por minuto (heroes.json): tapan todo; las piezas chicas que caen en su tramo se apagan =====
+const HC: Record<string, React.FC<{ t: number; h: H }>> = { flap: HFlap, redact: HRedact, route: HRoute, leaflet: HLeaflet, people: HPeople, knob: HKnob, plateau: HPlateau, particles: HParticles, podium: HPodium, melt: HMelt, blueprint: HBlueprint,
+  exploded: HExploded, layers: HLayers, marker: HMarker, potrank: HPotRank, fill: HFill, boil: HBoil, battery: HBattery, sorter: HSorter, chalk: HChalk, danger: HDanger, night: HNight,
+  probe: HProbe, flow: HFlow, bricks: HBricks, timeline: HTimeline, loupe: HLoupe, notes: HNotes, comments: HComments, hourglass: HHourglass, scale: HScale, cylinders: HCylinders };
+const COMMENTS = [{ n: "Elizabeth", from: "Puerto Rico", txt: "Hice una con cartón y fibra de coco encerada, la de los canastos de orquídeas. ¡Funcionó!" },
+  { n: "Norma", from: "", txt: "Ya nadie compra diarios. ¿Se podrá con hojas secas y aserrín?" },
+  { n: "Un vecino del canal", from: "", txt: "Nada es gratis: uno le dedica tiempo, horas de trabajo." },
+  { n: "Daniel", from: "", txt: "Quemar ciertas cosas suelta humo que hace mal." }];
+const HS: H[] = (HEROES as H[]).map((h) => {
+  const u = new Set<string>();
+  const out: H = { ...h, stack: COMMENTS };
+  if (h.imgAt !== undefined) out.img = imgNear(h.imgAt, u);
+  if (h.imgsAt) out.imgs = (h.imgsAt as number[]).map((x) => imgNear(x, u));
+  if (h.items) out.items = (h.items as any[]).map((it) => ({ ...it, img: it.img ?? imgNear(it.at, u) }));
+  return out;
+});
+const SHORT = new Set(["chip", "big", "stamp", "temp"]);
+const underHero = (o: Ov) => SHORT.has(o.k) && (String(o.txt ?? "").startsWith("💬") || HS.some((h) => o.at < h.out + 0.9 && o.out > h.at - 0.6));
+const Heroes: React.FC<{ t: number }> = ({ t }) => <>{HS.map((h, i) => { const C = HC[h.k] as React.FC<{ t: number; h: H }> | undefined; return C && t > h.at - 0.1 && t < h.out + 0.9 ? <C key={i} t={t} h={h} /> : null; })}</>;
+
 const Piece: React.FC<{ t: number; o: Ov }> = ({ t, o }) => {
-  if (t < o.at - 0.6 || t > o.out + 0.8) return null;
+  if (t < o.at - 0.6 || t > o.out + 0.8 || underHero(o)) return null;
   switch (o.k) {
     case "chip": return <Chip t={t} at={o.at} out={o.out} text={o.txt} col={o.col} />;
     case "big": return <BigNum t={t} at={o.at} out={o.out} text={o.txt} sub={o.sub || undefined} col={o.col} />;
@@ -104,6 +129,7 @@ export const Body: React.FC = () => {
     <CTA t={t} c={PL.cta3} manual="" img="" pageTxt="" />
     <Carousels t={t} />
     {PL.ov.map((o, i) => <Piece key={i} t={t} o={o} />)}
+    <Heroes t={t} />
     <AbsoluteFill style={{ background: "#000", opacity: fade }} />
   </AbsoluteFill>;
 };
