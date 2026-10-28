@@ -143,7 +143,9 @@ const LaEsquina: React.FC = () => (
 const Nombre: React.FC<{ cam?: Clave[] }> = ({ cam }) => (
   <Escena Set={Agora} pal={pal} seed={103} mano={1.4}
     claves={cam ?? [mira(0, DIO.x + 20, P - 230, 2.4), mira(45, DIO.x + 20, P - 230, 2.5)]}
-    medio={<BarrilCon dio={{ caras: [{ f: 0, v: "cansado" }] }} />}
+    medio={<BarrilCon dio={{ caras: [{ f: 0, v: "cansado" }, { f: 10, v: "sorpresa" }, { f: 26, v: "feliz" }], habla: [[8, 20]],
+      poses: [{ f: 0, v: ACOSTADO }, { f: 8, v: { ...ACOSTADO, tronco: -20, hD: 150, cD: 30, hI: 150, cI: 30, cabeza: -24 } }, { f: 24, v: { ...ACOSTADO, tronco: -26, hD: 110, cD: 120, cabeza: -10 } },
+        { f: 30, v: { ...ACOSTADO, tronco: -26, hD: 104, cD: 132, cabeza: -6 } }, { f: 36, v: { ...ACOSTADO, tronco: -26, hD: 110, cD: 120, cabeza: -10 } }, { f: 42, v: ACOSTADO }] }} />}
     hud={<Rotulo texto="DIOGENES" desde={2} hasta={45} />} />
 );
 // 157,7-162,3 · «People laugh at him, children throw olives at him, he does not care.»
@@ -382,7 +384,7 @@ const Espadas: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
   );
 };
 // 269,0-276,9 · «But Alexander does not laugh… looking at the man in the barrel… completely, perfectly happy in the sun.» (se corre: vuelve el sol)
-const SeCorre: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
+export const SeCorre: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
   const f = useF();
   const u = interpolate(f, [120, 190], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (

@@ -8,20 +8,20 @@ import { Actor } from "../../anikit/actor";
 import { Escena } from "../../anikit/escena";
 import { Montaje } from "../../anikit/montaje";
 import { F_HUD, RelojDia } from "../../anikit/pantalla";
-import { CAM, EdificioVidrio, ManoLeo, TextoMano, Torres } from "./chicago";
+import { CAM, EdificioVidrio, ManoLeo, TextoMano } from "./chicago";
 import { Aula, AULA_PISO } from "../../anikit/sets/aula";
 import { ACENTO, ESC, LEO, MARA, PAL, PAL_ANT } from "../elenco";
 import { HudTenzo, MarcaTenzo } from "../hud";
 import { Tel, TelMesa } from "../utileria";
 import { Agora, AGORA_PISO, SombraRey } from "../sets/agora";
 import {
-  Burbuja, ConCara, CabeceraChat, CajaEscribir, CTO, EnColectivo, EnCuarto, EnLavadero, Hora, LAV, Negro, PantallaTel, Pulgar, Recuerdo,
+  Burbuja, ConCara, CabeceraChat, CajaEscribir, CTO, EnColectivo, EnCuarto, EnLavadero, Hora, LAV, PantallaTel, Pulgar, Recuerdo,
   RIM_FRIO, RostroLuz, SENTADO, SENTADO_TEL, TarjetaFinal, TENZO_MESA,
 } from "./chicago";
-import { ALEJANDRO, REY_ESC, BarrilCon, BX, DiogenesViejo, MarchaSinFin, NeneFuente, PARABOLA07, REY } from "./parabola07";
+import { ALEJANDRO, REY_ESC, BarrilCon, BX, MarchaSinFin, NeneFuente, PARABOLA07 } from "./parabola07";
 import { DibujoPegado, LlamaCrece, PIN, TYLER } from "./tz05";
 import { partir, planosDe, TramoS } from "./tramos";
-import { ALaVentana, ChatTyler, Cortes, Dioses, Escalera, EsteLugar, Fantasmas, LeeCaptions, Manana, NadaPasa, NoEsLuz, Picazon2, SeSienta, SinIdea, SombraChica, SombraFeliz, TuTyler } from "./tz07b";
+import { ALaVentana, Amanece, ApuntaTel, BocaAbajoA, BocaAbajoB, ChatTyler, Cortes, DeptoVidrio, DiaCatorce, DiaUno, Dibujando, Dioses, GanaEl, GolpeMesa, LaRespuesta, LoDibuja, ManosAbiertas, MasRaro, Mute, NoventaAlSol, Posts, YaLoLogro, Escalera, EsteLugar, Fantasmas, LeeCaptions, Manana, NadaPasa, NoEsLuz, Picazon2, SeSienta, SinIdea, SombraChica, SombraFeliz, TuTyler } from "./tz07b";
 
 const FPS = 30;
 const fr = (t: number) => Math.round(t * FPS);
@@ -295,22 +295,15 @@ const TelZumba: React.FC<{ desde: number }> = ({ desde }) => {
 const T = (): TramoS[] => [
   // ACTO 1 · gancho
   { t0: 0, t1: 6.5, el: <Cuadro0 /> },
-  { t0: 6.5, t1: 8.3, el: (
-    <AbsoluteFill>
-      <Escena Set={Agora} pal={PAL_ANT} seed={171} mano={1.2} claves={[mira(0, BX + 80, AGORA_PISO - 240, 1.5), mira(54, BX + 80, AGORA_PISO - 240, 1.6)]}
-        medio={<><BarrilCon dio={{ caras: [{ f: 0, v: "cansado" }] }} /><SombraRey x={REY + 40} y={AGORA_PISO - 2} largo={620} fuerza={0.55} /></>} />
-      <Negro desde={46} d={6} />
-    </AbsoluteFill>
-  ) },
-  { t0: 8.3, t1: 11.6, trans: { tipo: "fundido", d: 10 }, el: (
-    <EnCuarto cam={[mira(0, CTO.colchon + 40, PC - 250, 1.7), mira(99, CTO.colchon + 30, PC - 265, 2.1, { curva: "inout" })]}
-      leo={{ poses: [{ f: 0, v: SENTADO_TEL }], caras: [{ f: 0, v: "triste" }], miradas: [{ f: 0, v: { x: 0.3, y: 0.7 } }], enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 0.6 } }}
-      hud={<RelojDia min={23 * 60} x={1640} y={150} desde={loc(8.3, 10.1)} />} />
-  ) },
+  // «The answer made history.»: Diógenes le hace seña al rey de que se corra; la sombra se va
+  { t0: 6.5, t1: 8.3, el: <LaRespuesta /> },
+  // «Day 14. 11 at night.»: Leo pasa con el pulgar, se refriega los ojos
+  { t0: 8.3, t1: 11.6, trans: { tipo: "fundido", d: 10 }, el: <DiaCatorce /> },
   { t0: 11.6, t1: 17.5, el: <ConCara caras={[{ f: 0, v: "neutral" }, { f: 60, v: "sorpresa" }, { f: 125, v: "triste" }]}><ReelTyler dur={177} vistas={[38, 40]} caption={9999} toca={100} /></ConCara> },
   // «a glass apartment behind him, with the whole city shining»: la ciudad de vidrio que Leo mira, con su cara en la esquina
-  { t0: 17.5, t1: 21.5, el: <ConCara caras={[{ f: 0, v: "duda" }, { f: 70, v: "triste" }]}><Torres /></ConCara> },
-  { t0: 21.5, t1: 26.0, el: <ConCara esquina="der" caras={[{ f: 0, v: "duda" }, { f: 80, v: "triste" }]}><ReelTyler dur={135} vistas={[40, 41]} caption={loc(21.5, 22.9)} z={[1.05, 1.15]} /></ConCara> },
+  { t0: 17.5, t1: 21.5, el: <DeptoVidrio /> },
+  // «25, and already made it. Grateful.»: el post sale del teléfono; Leo lo baja y mira su dibujo
+  { t0: 21.5, t1: 26.0, el: <YaLoLogro pared={<DibujoPegado x={PIN.x} y={PIN.y} />} /> },
   { t0: 26.0, t1: 35.3, trans: { tipo: "fundido", d: 12 }, el: <AulaArte /> },
   { t0: 35.3, t1: 43.9, trans: { tipo: "fundido", d: 12 }, el: (
     <EnCuarto cam={[mira(0, PIN.x - 120, PC - 330, 1.6), mira(loc(35.3, 39.5), PIN.x - 60, PC - 360, 1.7, { curva: "inout" }), mira(258, PIN.x + 40, PIN.y + 30, 2.7, { curva: "inout" })]}
@@ -318,7 +311,8 @@ const T = (): TramoS[] => [
         caras: [{ f: 0, v: "triste" }, { f: 120, v: "neutral" }], miradas: [{ f: 0, v: { x: 0.8, y: -0.5 } }] }}
       medio={<DibujoPegado x={PIN.x} y={PIN.y} />} />
   ) },
-  { t0: 43.9, t1: 57.0, el: <ConCara caras={[{ f: 0, v: "neutral" }, { f: 120, v: "sorpresa" }, { f: 260, v: "triste" }]}><GrillaPerfil /></ConCara> },
+  // la grilla del perfil y, desde «Tyler in Miami», los posts que saltan del teléfono de Leo
+  { t0: 43.9, t1: 57.0, el: <Cortes planos={[[0, <ConCara caras={[{ f: 0, v: "neutral" }, { f: 120, v: "sorpresa" }]}><GrillaPerfil /></ConCara>, 0], [loc(43.9, 49.6), <Posts pared={<DibujoPegado x={PIN.x} y={PIN.y} />} />]]} /> },
   { t0: 57.0, t1: 60.8, el: <SombraFeliz /> },
   { t0: 60.8, t1: 72.2, el: <LeeCaptions reel={(c) => <ReelTyler dur={171} vistas={[40, 41]} caption={c} z={[1.0, 1.08]} />} /> },
   ...partir(72.2, 79.1, (cam) => (
@@ -394,7 +388,8 @@ const T = (): TramoS[] => [
       tenzo={{ habla: hab(300.6, [[300.6, 305.0]]) }}
       medio={<CierraCaja />} />
   ), [[300.6, [mira(0, MESA_X, P - 200, 2.4), mira(162, MESA_X, P - 200, 2.6)]], [303.5, CAM.tenzo(2.5, 2.5)]]),
-  { t0: 306.0, t1: 309.7, el: <DiogenesViejo /> },
+  // «lived to almost 90 in the sun»: Diógenes viejo camina a la fuente y levanta la cara al sol
+  { t0: 306.0, t1: 309.7, el: <NoventaAlSol /> },
   ...partir(309.7, 316.8, (cam) => (
     <EnLavadero cam={cam}
       leo={{ caras: [{ f: 0, v: "duda" }], habla: hab(309.7, [[309.7, 311.7]]), poses: [{ f: 0, v: SENTADO }, { f: 10, v: { ...SENTADO, hD: 80, cD: 40 } }, { f: 60, v: SENTADO }], miradas: [{ f: 0, v: { x: 0.9, y: 0 } }] }}
@@ -402,7 +397,8 @@ const T = (): TramoS[] => [
       medio={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />}
       hud={<ManoLeo texto="so… a barrel?" x={960} y={920} centro desde={loc(309.7, 310.2)} hasta={loc(309.7, 313)} />} />
   ), [[309.7, CAM.leo(2.4, 2.6)], [312.1, CAM.tenzo(2.5, 2.5)], [314.6, CAM.hombroLeo(2.2)]]),
-  { t0: 316.8, t1: 324.8, el: <ElBarco /> },
+  // «he points at the phone»: Tenzo le apunta con los palillos; después el barco en la pantalla (reloj del tramo)
+  { t0: 316.8, t1: 324.8, el: <Cortes planos={[[0, <ApuntaTel palitos={<Palitos />} medio={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />} />], [loc(316.8, 319.2), <ConCara caras={[{ f: 0, v: "duda" }, { f: 120, v: "sorpresa" }]}><ElBarco /></ConCara>, loc(316.8, 319.2)]]} /> },
   ...partir(324.8, 330.7, (cam) => (
     <EnLavadero cam={cam}
       tenzo={{ caras: [{ f: 0, v: "feliz" }], habla: hab(324.8, [[324.8, 326.4]]), miradas: [{ f: 0, v: { x: -0.9, y: 0 } }] }}
@@ -416,30 +412,26 @@ const T = (): TramoS[] => [
   { t0: 337.4, t1: 348.2, el: <Cortes planos={[[0, <Escalera />], [loc(337.4, 345.5), <Dioses />]]} /> },
   { t0: 348.2, t1: 355.0, el: <NeneFuente /> },
   { t0: 355.0, t1: 364.6, el: <SombraChica /> },
-  ...partir(364.6, 369.1, (cam) => (
-    <EnLavadero cam={cam}
-      leo={{ caras: [{ f: 0, v: "triste" }], habla: hab(364.6, [[364.8, 366.5]]), miradas: [{ f: 0, v: { x: 0.9, y: 0 } }] }}
-      tenzo={{ caras: [{ f: 0, v: "feliz" }], poses: [{ f: 0, v: TENZO_MESA }, { f: loc(364.6, 367.0), v: { ...TENZO_MESA, hD: 60, cD: 60 } }, { f: loc(364.6, 367.3), v: TENZO_MESA }, { f: loc(364.6, 367.6), v: { ...TENZO_MESA, hD: 60, cD: 60 } }, { f: loc(364.6, 367.9), v: TENZO_MESA }], miradas: [{ f: 0, v: { x: -0.9, y: 0 } }] }}
-      medio={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />} />
-  ), [[364.6, CAM.leo(2.2, 2.5)], [366.8, CAM.mesa(2.3)]]),
-  { t0: 369.1, t1: 373.6, trans: { tipo: "luz", d: 8 }, el: (
-    <EnCuarto cam={[mira(0, CTO.colchon - 130, PC - 255, 1.9, { rot: 2 }), mira(135, CTO.colchon - 110, PC - 260, 2.1, { rot: 1, curva: "inout" })]} leo={{ poses: [{ f: 0, v: SENTADO_TEL }], caras: [{ f: 0, v: "triste" }], enManoD: <Tel />, luz: { lado: 1, color: ACENTO, fuerza: 0.8 } }}
-      hud={<div style={{ position: "absolute", left: "50%", transform: "translateX(-50%)", top: 70, fontFamily: F_HUD, fontWeight: 600, fontSize: 76, color: "#f4efe4", background: "rgba(12,10,10,0.78)", padding: "10px 30px 14px", borderRadius: 16 }}>DAY 1 · <span style={{ color: ACENTO }}>9h 42m</span></div>} />
-  ) },
+  // «then what do I compare myself to?» Leo con las manos abiertas → Tenzo golpea la mesa
+  { t0: 364.6, t1: 369.1, el: <Cortes planos={[[0, <ManosAbiertas caja={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />} />], [loc(364.6, 366.8), <GolpeMesa caja={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />} />]]} /> },
+  // «the boy on the mattress fourteen days ago»: el recuerdo del día 1
+  { t0: 369.1, t1: 373.6, trans: { tipo: "luz", d: 8 }, el: <DiaUno /> },
+  // «compare yourself to him, only to him»: Tenzo señala y levanta un dedo
   { t0: 373.6, t1: 377.0, el: (
-    <EnLavadero hud={<TextoMano texto="you  vs.  you, 14 days ago" x={960} y={930} centro desde={20} color="#f4efe4" tam={64} rot={0} brillo={false} />} cam={[mira(0, LAV.tenzo + 40, P - 210, 2.5, { rot: 2 }), mira(102, LAV.tenzo + 40, P - 215, 2.65, { rot: 1, curva: "inout" })]} tenzo={{ caras: [{ f: 0, v: "feliz" }], habla: hab(373.6, [[373.6, 377.0]]), miradas: [{ f: 0, v: { x: -0.9, y: 0 } }] }} medio={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />} />
+    <EnLavadero hud={<TextoMano texto="you  vs.  you, 14 days ago" x={960} y={930} centro desde={20} color="#f4efe4" tam={64} rot={0} brillo={false} />} cam={[mira(0, LAV.tenzo + 40, P - 210, 2.5, { rot: 2 }), mira(102, LAV.tenzo + 40, P - 215, 2.65, { rot: 1, curva: "inout" })]} tenzo={{ caras: [{ f: 0, v: "feliz" }, { f: loc(373.6, 376.1), v: "determinado" }], habla: hab(373.6, [[373.6, 377.0]]), miradas: [{ f: 0, v: { x: -0.9, y: 0 } }],
+      poses: [{ f: 0, v: TENZO_MESA }, { f: loc(373.6, 374.4), v: { hD: 95, cD: 0, tronco: 10, cabeza: 6, hI: 32, cI: 92 } }, { f: loc(373.6, 375.6), v: TENZO_MESA }, { f: loc(373.6, 376.1), v: { hD: 115, cD: 50, tronco: 4, cabeza: -4, hI: 32, cI: 92 } }] }} medio={<CajaArroz x={MESA_X} y={P - 150} arroz={0} tapa={1} />} />
   ) },
-  { t0: 377.0, t1: 378.3, el: (
-    <EnLavadero cam={CAM.hombroLeo(1.3)} leo={{ caras: [{ f: 0, v: "duda" }], miradas: [{ f: 0, v: { x: 0.9, y: 0 } }] }} tenzo={{ habla: hab(377.0, [[377.0, 378.0]]) }}
-      hud={<ManoLeo texto="is he winning?" x={960} y={920} centro desde={loc(377.0, 377.2)} />} />
-  ) },
+  // «is he winning?»: Tenzo se inclina, pícaro
+  { t0: 377.0, t1: 378.3, el: <GanaEl /> },
   ...partir(378.3, 386.0, (cam) => (
     <EnLavadero cam={cam}
       leo={{ caras: [{ f: 0, v: "duda" }, { f: loc(378.3, 381.0), v: "feliz" }], habla: hab(378.3, [[381.0, 383.4]]), poses: [{ f: 0, v: { ...SENTADO, hD: 95, cD: 135, cabeza: 10 } }, { f: loc(378.3, 381.0), v: SENTADO }], miradas: [{ f: 0, v: { x: 0.3, y: -0.5 } }, { f: loc(378.3, 381), v: { x: 0.9, y: 0 } }] }}
       hud={<ManoLeo texto="yeah. he's winning." x={960} y={920} centro desde={loc(378.3, 381.0)} />} />
   ), [[378.3, CAM.leo(2.7, 2.7)], [381.0, CAM.dos(5.0, 1.85)]]),
-  { t0: 386.0, t1: 397.9, trans: { tipo: "fundido", d: 10 }, el: <ConCara esquina="der" caras={[{ f: 0, v: "duda" }, { f: 200, v: "neutral" }, { f: 300, v: "feliz" }]}><Silenciar /></ConCara> },
-  { t0: 397.9, t1: 405.8, el: (
+  // «he opens Tyler's profile and presses mute»: Leo se decide, el menú, y Corinto: el rey se corre
+  { t0: 386.0, t1: 397.9, trans: { tipo: "fundido", d: 10 }, el: <Mute tel={<ConCara esquina="der" caras={[{ f: 0, v: "duda" }, { f: 200, v: "neutral" }, { f: 300, v: "feliz" }]}><Silenciar /></ConCara>} /> },
+  // «something even stranger»: Leo mira a Tenzo, que asiente; el chat
+  { t0: 397.9, t1: 405.8, el: <Cortes planos={[[0, <MasRaro />], [loc(397.9, 400.2), (
     <ConCara caras={[{ f: 0, v: "duda" }, { f: 120, v: "neutral" }, { f: 200, v: "feliz" }]}><PantallaTel zoom0={1} zoom1={1.08} dur={237} luz={0.8} mano={<Pulgar toca={loc(397.9, 404.4)} x={392} y={830} piel="#e6c49a" />}>
       <CabeceraChat nombre="Tyler" color="#3a5a8a" />
       <div style={{ position: "absolute", left: 0, right: 0, top: 96, textAlign: "center", fontFamily: F_HUD, fontSize: 20, color: "#8a8f98" }}>MAR 2019</div>
@@ -450,29 +442,24 @@ const T = (): TramoS[] => [
       <Burbuja texto="Congrats on the car man, hope you're good. For real." yo y={520} desde={loc(397.9, 404.6)} />
       <CajaEscribir texto="Congrats on the car man, hope you're good. For real." desde={loc(397.9, 400.3)} vel={2.2} />
     </PantallaTel></ConCara>
-  ) },
-  ...partir(405.8, 410.4, (cam) => (
-    <EnLavadero tel={null} medio={<TelZumba desde={loc(405.8, 407.4)} />} cam={cam}
-      leo={{ poses: [{ f: 0, v: SENTADO }, { f: 70, v: { ...SENTADO, hD: 60, cD: 70 } }], caras: [{ f: 0, v: "duda" }], miradas: [{ f: 0, v: { x: 0.6, y: 0.6 } }] }}
-      tenzo={{ poses: [{ f: 0, v: TENZO_MESA }], caras: [{ f: 0, v: "neutral" }], miradas: [{ f: 0, v: { x: -0.7, y: 0.3 } }] }}
-      hud={<DosHoras />} />
-  ), [[405.8, [mira(0, LAV.mesa + 260, P - 170, 2.6), mira(60, LAV.mesa + 260, P - 170, 2.75)]], [407.8, CAM.dos(2.6)]]),
+  ), loc(397.9, 400.2)]]} /> },
+  // «He puts the phone face down. 20 minutes later, it buzzes.»
+  { t0: 405.8, t1: 410.4, el: <Cortes planos={[[0, <BocaAbajoA tel={<TelZumba desde={9999} />} hora={<DosHoras />} />], [loc(405.8, 407.8), <BocaAbajoB tel={<TelZumba desde={loc(407.8, 409.1)} />} hora={<Hora texto="3:42 AM" desde={0} />} />]]} /> },
   { t0: 410.4, t1: 423.2, el: <ChatTyler /> },
   ...partir(423.2, 427.3, (cam) => (
     <EnLavadero cam={cam}
       leo={{ caras: [{ f: 0, v: "sorpresa" }, { f: 70, v: "feliz" }], poses: [{ f: 0, v: SENTADO_TEL }], enManoD: <Tel />, miradas: [{ f: 0, v: { x: 0.3, y: 0.8 } }] }}
       tenzo={{ miradas: [{ f: 0, v: { x: -0.9, y: 0 } }], caras: [{ f: 0, v: "feliz" }] }} />
   ), [[423.2, [mira(0, LAV.leo + 40, P - 280, 2.3), mira(123, LAV.leo + 40, P - 280, 2.45)]], [425.3, CAM.dos(2.0, 1.9)]]),
-  ...partir(427.3, 434.2, (cam) => (
-    <EnCuarto dia momento="amanecer" cam={cam}
-      leo={{ poses: [{ f: 0, v: SENTADO }], caras: [{ f: 0, v: "feliz" }], miradas: [{ f: 0, v: { x: -0.5, y: -0.3 } }, { f: 100, v: { x: 0.6, y: -0.4 } }] }} medio={<><TelMesa x={CTO.cajon} y={PC - 2} bocaAbajo /><DosDibujos /></>} />
-  ), [[427.3, [mira(0, CTO.colchon + 20, PC - 265, 1.9), mira(207, CTO.colchon - 40, PC - 290, 1.6, { curva: "inout" })]], [430.6, CAM.camaPP(3.6)]], { tipo: "fundido", d: 12 }),
+  // «Day 15… one hour and four minutes»: se para y se estira al amanecer → «Day 16»: dibuja en el escritorio
+  { t0: 427.3, t1: 434.2, trans: { tipo: "fundido", d: 12 }, el: <Cortes planos={[[0, <Amanece pared={<DosDibujos />} />], [loc(427.3, 430.6), <Dibujando />]]} /> },
   { t0: 434.2, t1: 442.2, trans: { tipo: "fundido", d: 12 }, el: (
     <EnColectivo cam={[mira(0, 1440, 640, 2.1), mira(240, 1440, 640, 2.3, { curva: "inout" })]}
       maya={{ habla: [[loc(434.2, 439.2), 240]], caras: [{ f: 0, v: "feliz" }, { f: loc(434.2, 439.2), v: "risa" }], poses: [{ f: 0, v: { ...SENTADO, hD: 60, cD: 100, hI: 55, cI: 105 } }, { f: loc(434.2, 439.2), v: { ...SENTADO, tronco: -10, cabeza: -14, hD: 40, cD: 130, hI: 40, cI: 130 } }] }}
       leo={{ caras: [{ f: 0, v: "feliz" }], habla: hab(434.2, [[436.7, 439.1]]), poses: [{ f: 0, v: SENTADO }, { f: 40, v: { ...SENTADO, hD: 80, cD: 60 } }, { f: 90, v: SENTADO }] }} />
   ) },
-  { t0: 442.2, t1: 453.1, el: <ConCara esquina="der" caras={[{ f: 0, v: "determinado" }, { f: 150, v: "feliz" }]}><DibujaBarril /></ConCara> },
+  // «draw it… a tiny man in a barrel… he pins it next to the elephant»
+  { t0: 442.2, t1: 453.1, el: <LoDibuja dibujo={<DibujaBarril />} pegado={<DibujoBarrilPegado />} pared={<DibujoPegado x={PIN.x} y={PIN.y} />} /> },
 
   // ACTO 5 · gancho a tz08
   { t0: 453.1, t1: 457.6, trans: { tipo: "fundido", d: 16 }, el: <NadaPasa /> },
