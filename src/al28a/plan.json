@@ -1,0 +1,2563 @@
+{
+"segs": [
+[
+3.8,
+11.8,
+"shot",
+"v03_parche_abierto"
+],
+[
+23.34,
+31.34,
+"shot",
+"v01_grieta_luz"
+],
+[
+36.0,
+42.3,
+"shot",
+"n_parche_viejo"
+],
+[
+42.3,
+46.08,
+"shot",
+"n_detector_sin_pila"
+],
+[
+55.4,
+56.62,
+"shot",
+"n_pared_afuera_grieta"
+],
+[
+56.62,
+64.76,
+"shot",
+"n_pintura_cuarteada"
+],
+[
+71.7,
+77.64,
+"shot",
+"f_senala_dormitorio"
+],
+[
+87.2,
+94.32,
+"shot",
+"n_testigo_pared"
+],
+[
+94.32,
+97.64,
+"shot",
+"n_cafe_moneda"
+],
+[
+121.4,
+127.3,
+"shot",
+"n_albanil_factura"
+],
+[
+127.3,
+132.24,
+"shot",
+"f_manual_mesa"
+],
+[
+145.28,
+148.28,
+"shot",
+"n_barro_seco_charco"
+],
+[
+148.28,
+151.9,
+"shot",
+"n_grieta_pelo_macro"
+],
+[
+156.4,
+161.06,
+"shot",
+"n_revoque_fresco_sol"
+],
+[
+161.06,
+162.96,
+"shot",
+"n_piel_seca_mano"
+],
+[
+171.5,
+177.66,
+"shot",
+"n_kit_pelo"
+],
+[
+177.66,
+178.8,
+"shot",
+"f_respira"
+],
+[
+189.2,
+193.28,
+"shot",
+"n_esquina_ventana_grieta"
+],
+[
+193.28,
+198.32,
+"shot",
+"n_casas_esquinas"
+],
+[
+206.5,
+210.16,
+"shot",
+"n_pared_sol_tarde"
+],
+[
+210.16,
+215.34,
+"shot",
+"n_esquina_puerta_grieta"
+],
+[
+215.34,
+218.8,
+"shot",
+"f_ojo_esquina"
+],
+[
+233.58,
+235.1,
+"shot",
+"n_grieta_escalera_ladrillo"
+],
+[
+244.78,
+250.6,
+"shot",
+"n_casa_asentada"
+],
+[
+256.86,
+260.16,
+"shot",
+"f_hueso"
+],
+[
+271.6,
+280.0,
+"shot",
+"n_losa_sol_techo"
+],
+[
+280.0,
+282.5,
+"shot",
+"n_sotano_muro"
+],
+[
+291.96,
+294.84,
+"shot",
+"n_salitre_zocalo"
+],
+[
+294.84,
+297.9,
+"shot",
+"n_pared_humeda_piso"
+],
+[
+310.62,
+315.8,
+"shot",
+"f_pregunta"
+],
+[
+328.9,
+331.5,
+"shot",
+"n_moneda_mesa"
+],
+[
+338.7,
+339.7,
+"shot",
+"n_monedas_palma"
+],
+[
+339.7,
+347.16,
+"shot",
+"n_canto_moneda"
+],
+[
+355.5,
+363.5,
+"shot",
+"v05_moneda"
+],
+[
+365.82,
+367.7,
+"shot",
+"n_fisura_pintura"
+],
+[
+382.2,
+384.3,
+"shot",
+"n_espatula_masilla"
+],
+[
+388.1,
+392.84,
+"shot",
+"n_grieta_tapada"
+],
+[
+399.18,
+400.6,
+"shot",
+"n_pasillo_grieta"
+],
+[
+409.36,
+414.02,
+"shot",
+"f_corazon"
+],
+[
+414.02,
+416.0,
+"shot",
+"n_lapiz_fecha"
+],
+[
+420.2,
+424.42,
+"shot",
+"n_marca_punta"
+],
+[
+424.42,
+431.5,
+"shot",
+"f_foto_celular"
+],
+[
+434.8,
+441.58,
+"shot",
+"n_fotos_fechas"
+],
+[
+441.58,
+447.6,
+"shot",
+"n_tarjeta_fisuras"
+],
+[
+469.1,
+474.26,
+"shot",
+"n_ingeniero_testigo"
+],
+[
+474.26,
+479.6,
+"shot",
+"v04_testigo"
+],
+[
+492.56,
+495.7,
+"shot",
+"n_testigo_entero"
+],
+[
+499.3,
+507.4,
+"shot",
+"n_raspa_pintura"
+],
+[
+507.4,
+510.1,
+"shot",
+"n_circulo_revoque"
+],
+[
+514.1,
+517.66,
+"shot",
+"n_trapo_humedo"
+],
+[
+517.66,
+525.22,
+"shot",
+"f_vasito_yeso"
+],
+[
+525.22,
+527.4,
+"shot",
+"n_pasta_yeso"
+],
+[
+533.2,
+539.5,
+"shot",
+"n_reloj_pared"
+],
+[
+539.5,
+545.4,
+"shot",
+"f_pega_testigo"
+],
+[
+558.5,
+560.4,
+"shot",
+"n_alisa_testigo"
+],
+[
+565.7,
+567.84,
+"shot",
+"n_fecha_testigo"
+],
+[
+567.84,
+577.9,
+"shot",
+"n_rayita_testigo"
+],
+[
+584.1,
+591.74,
+"shot",
+"n_tres_testigos"
+],
+[
+591.74,
+595.3,
+"shot",
+"f_mira_testigo"
+],
+[
+609.62,
+612.7,
+"shot",
+"n_testigo_ok_sol"
+],
+[
+616.8,
+623.42,
+"shot",
+"v12_testigo_partido"
+],
+[
+634.2,
+641.7,
+"shot",
+"n_ingeniero_casco"
+],
+[
+650.1,
+656.58,
+"shot",
+"n_calendario_nueve"
+],
+[
+662.22,
+664.4,
+"shot",
+"f_no_es_tuyo"
+],
+[
+678.62,
+680.9,
+"shot",
+"n_telefono_mesa"
+],
+[
+688.98,
+694.0,
+"shot",
+"n_regla_grieta"
+],
+[
+698.5,
+704.1,
+"shot",
+"n_dos_fotos"
+],
+[
+704.1,
+706.2,
+"shot",
+"n_testigo_roto"
+],
+[
+715.9,
+718.7,
+"shot",
+"n_puerta_desfasada"
+],
+[
+718.7,
+727.1,
+"shot",
+"n_grieta_afuera_adentro"
+],
+[
+733.1,
+738.92,
+"shot",
+"f_dos_profesionales"
+],
+[
+738.92,
+741.46,
+"shot",
+"n_pintor_rodillo"
+],
+[
+748.5,
+755.8,
+"shot",
+"n_cano_roto_tierra"
+],
+[
+765.1,
+769.74,
+"shot",
+"v13_canaleta"
+],
+[
+798.6,
+804.94,
+"shot",
+"n_testigo_dormitorio"
+],
+[
+821.44,
+825.7,
+"shot",
+"f_estas_si"
+],
+[
+835.56,
+841.6,
+"shot",
+"n_tres_productos"
+],
+[
+847.3,
+851.54,
+"shot",
+"n_masilla_dura"
+],
+[
+863.2,
+871.02,
+"shot",
+"n_casa_sol_verano"
+],
+[
+905.34,
+907.7,
+"shot",
+"n_tapa_frasco"
+],
+[
+911.8,
+922.24,
+"shot",
+"n_lijado_prolijo"
+],
+[
+938.74,
+941.0,
+"shot",
+"n_masilla_encima"
+],
+[
+945.5,
+951.1,
+"shot",
+"n_calcomania"
+],
+[
+951.1,
+955.7,
+"shot",
+"n_destornillador_viejo"
+],
+[
+959.6,
+962.16,
+"shot",
+"n_abrefisuras"
+],
+[
+962.16,
+970.16,
+"shot",
+"v06_abre_v"
+],
+[
+980.91,
+987.6,
+"shot",
+"f_raspa_suave"
+],
+[
+1002.41,
+1005.6,
+"shot",
+"n_capas_unia"
+],
+[
+1009.1,
+1016.63,
+"shot",
+"f_anteojos"
+],
+[
+1016.63,
+1020.9,
+"shot",
+"n_diario_piso"
+],
+[
+1024.4,
+1029.87,
+"shot",
+"n_revoque_hueco"
+],
+[
+1029.87,
+1034.9,
+"shot",
+"f_golpea_mango"
+],
+[
+1038.6,
+1049.25,
+"shot",
+"n_ladrillo_vista"
+],
+[
+1071.9,
+1079.69,
+"shot",
+"v07_pincel_fijador"
+],
+[
+1079.69,
+1082.2,
+"shot",
+"n_aspiradora_grieta"
+],
+[
+1087.6,
+1094.25,
+"shot",
+"n_trapo_grieta"
+],
+[
+1094.25,
+1100.9,
+"shot",
+"n_esponja_agua"
+],
+[
+1115.83,
+1116.6,
+"shot",
+"n_bidon_fijador"
+],
+[
+1122.9,
+1131.35,
+"shot",
+"n_diluir_fijador"
+],
+[
+1140.6,
+1149.33,
+"shot",
+"n_granitos_arena"
+],
+[
+1159.3,
+1168.23,
+"shot",
+"n_grieta_fantasma"
+],
+[
+1168.23,
+1169.4,
+"shot",
+"n_fijador_seco"
+],
+[
+1173.0,
+1175.27,
+"shot",
+"f_toca_fijador"
+],
+[
+1198.85,
+1204.8,
+"shot",
+"n_pote_cartucho"
+],
+[
+1210.4,
+1216.23,
+"shot",
+"f_mostrador"
+],
+[
+1216.23,
+1220.8,
+"shot",
+"n_dos_cartuchos"
+],
+[
+1225.4,
+1236.17,
+"shot",
+"n_silicona_brillo"
+],
+[
+1236.17,
+1238.8,
+"shot",
+"v08_sellador"
+],
+[
+1252.03,
+1255.5,
+"shot",
+"n_espatula_pote"
+],
+[
+1260.0,
+1270.25,
+"shot",
+"n_dedo_mojado"
+],
+[
+1277.0,
+1286.77,
+"shot",
+"n_sellador_canalito"
+],
+[
+1286.77,
+1288.2,
+"shot",
+"f_dos_capas"
+],
+[
+1309.4,
+1313.55,
+"shot",
+"n_rollo_malla"
+],
+[
+1333.83,
+1338.85,
+"shot",
+"n_brazo_yeso"
+],
+[
+1338.85,
+1340.4,
+"shot",
+"n_pared_afuera_larga"
+],
+[
+1345.0,
+1354.07,
+"shot",
+"n_esquina_puerta_afuera"
+],
+[
+1354.07,
+1355.5,
+"shot",
+"n_capa_enduido"
+],
+[
+1358.8,
+1362.29,
+"shot",
+"n_corta_malla"
+],
+[
+1362.29,
+1370.29,
+"shot",
+"v09_malla"
+],
+[
+1378.0,
+1383.95,
+"shot",
+"n_malla_metida"
+],
+[
+1393.9,
+1398.41,
+"shot",
+"f_albanil_viejo"
+],
+[
+1409.9,
+1420.61,
+"shot",
+"n_balde_enduido"
+],
+[
+1428.6,
+1436.83,
+"shot",
+"n_franja_notoria"
+],
+[
+1442.1,
+1452.19,
+"shot",
+"n_llana_ancha"
+],
+[
+1452.19,
+1455.4,
+"shot",
+"n_lija_220"
+],
+[
+1460.1,
+1468.1,
+"shot",
+"v10_lija"
+],
+[
+1483.07,
+1487.3,
+"shot",
+"n_luz_rasante"
+],
+[
+1498.33,
+1502.7,
+"shot",
+"n_enduido_absorbe"
+],
+[
+1513.05,
+1519.0,
+"shot",
+"n_balde_barato"
+],
+[
+1523.9,
+1530.47,
+"shot",
+"n_rayita_pintura"
+],
+[
+1530.47,
+1536.5,
+"shot",
+"n_tiza_pintura"
+],
+[
+1540.3,
+1547.49,
+"shot",
+"n_pintura_quebradiza"
+],
+[
+1559.0,
+1563.69,
+"shot",
+"n_lata_buena"
+],
+[
+1563.69,
+1569.7,
+"shot",
+"n_pintura_estira"
+],
+[
+1573.7,
+1579.33,
+"shot",
+"f_diluye_pintura"
+],
+[
+1590.5,
+1598.5,
+"shot",
+"v11_rodillo"
+],
+[
+1610.69,
+1615.79,
+"shot",
+"f_pared_lisa"
+],
+[
+1625.1,
+1631.21,
+"shot",
+"n_testigo_pasillo"
+],
+[
+1631.21,
+1637.8,
+"shot",
+"n_cocina_grieta_losa"
+],
+[
+1643.3,
+1652.19,
+"shot",
+"n_techo_blanco"
+],
+[
+1664.53,
+1668.99,
+"shot",
+"f_ingeniero_fotos"
+],
+[
+1680.13,
+1683.61,
+"shot",
+"n_tierra_barro"
+],
+[
+1694.1,
+1697.53,
+"shot",
+"n_testigo_nuevo_entero"
+],
+[
+1697.53,
+1704.7,
+"shot",
+"n_placar_trabado"
+],
+[
+1711.55,
+1723.8,
+"shot",
+"n_tarro_yeso"
+],
+[
+1728.8,
+1733.59,
+"shot",
+"n_masilla_superficie"
+],
+[
+1733.59,
+1740.8,
+"shot",
+"n_moneda_testigo_foto"
+],
+[
+1746.2,
+1756.4,
+"shot",
+"n_mancha_opaca"
+],
+[
+1760.8,
+1768.69,
+"shot",
+"n_desague_pared"
+],
+[
+1768.69,
+1773.6,
+"shot",
+"n_losa_gris_sol"
+],
+[
+1784.99,
+1789.1,
+"shot",
+"n_esquina_tapada_dos"
+],
+[
+1802.09,
+1804.5,
+"shot",
+"n_testigo_ventana"
+],
+[
+1809.4,
+1817.67,
+"shot",
+"n_tubo_silicona"
+],
+[
+1817.67,
+1821.7,
+"shot",
+"n_cartucho_acrilico"
+],
+[
+1827.5,
+1836.55,
+"shot",
+"n_grieta_crece_regla"
+],
+[
+1836.55,
+1838.1,
+"shot",
+"n_cano_agua_roto"
+],
+[
+1906.7,
+1914.03,
+"shot",
+"v14_cta"
+],
+[
+1921.7,
+1926.27,
+"shot",
+"n_revoque_suena"
+],
+[
+1944.61,
+1952.61,
+"shot",
+"v15_cierre"
+]
+],
+"cam": [
+[
+11.8,
+14.0,
+"living"
+],
+[
+14.0,
+15.2,
+"living"
+],
+[
+20.2,
+23.34,
+"living"
+],
+[
+31.34,
+31.8,
+"corner"
+],
+[
+46.08,
+50.0,
+"wide"
+],
+[
+64.76,
+66.7,
+"bedroom"
+],
+[
+77.64,
+83.2,
+"testigo"
+],
+[
+97.64,
+100.5,
+"window"
+],
+[
+105.2,
+107.96,
+"book"
+],
+[
+107.96,
+115.9,
+"book"
+],
+[
+132.24,
+134.9,
+"wide"
+],
+[
+140.2,
+145.28,
+"hair"
+],
+[
+162.96,
+166.2,
+"hair"
+],
+[
+178.8,
+183.7,
+"corner"
+],
+[
+198.32,
+200.4,
+"corner"
+],
+[
+222.9,
+233.58,
+"diag"
+],
+[
+241.0,
+244.78,
+"diag"
+],
+[
+254.4,
+256.86,
+"found"
+],
+[
+260.16,
+266.5,
+"horiz"
+],
+[
+287.0,
+291.96,
+"low"
+],
+[
+301.8,
+310.62,
+"wide"
+],
+[
+321.7,
+328.9,
+"corner"
+],
+[
+331.5,
+333.9,
+"coin"
+],
+[
+347.16,
+350.9,
+"coin"
+],
+[
+363.5,
+365.82,
+"coin"
+],
+[
+373.6,
+382.2,
+"coin"
+],
+[
+392.84,
+399.18,
+"living"
+],
+[
+404.9,
+409.36,
+"coin"
+],
+[
+453.0,
+456.26,
+"coin"
+],
+[
+456.26,
+463.1,
+"testigo"
+],
+[
+483.6,
+492.56,
+"testigo"
+],
+[
+549.8,
+558.5,
+"testigo"
+],
+[
+600.1,
+609.62,
+"testigo"
+],
+[
+623.42,
+629.0,
+"testigo"
+],
+[
+641.7,
+644.9,
+"wide"
+],
+[
+656.58,
+662.22,
+"bedroom"
+],
+[
+668.8,
+678.62,
+"diag"
+],
+[
+684.4,
+688.98,
+"diag"
+],
+[
+706.2,
+712.1,
+"placard"
+],
+[
+741.46,
+743.8,
+"found"
+],
+[
+755.8,
+759.1,
+"outside"
+],
+[
+769.74,
+775.3,
+"outside"
+],
+[
+780.1,
+790.58,
+"bedroom"
+],
+[
+790.58,
+794.0,
+"placard"
+],
+[
+804.94,
+810.3,
+"outside"
+],
+[
+814.1,
+821.44,
+"wide"
+],
+[
+829.7,
+835.56,
+"giant"
+],
+[
+851.54,
+858.5,
+"giant"
+],
+[
+871.02,
+875.2,
+"giantV"
+],
+[
+879.6,
+887.32,
+"giantV"
+],
+[
+887.32,
+891.5,
+"giant"
+],
+[
+896.8,
+905.34,
+"giantV"
+],
+[
+922.24,
+924.2,
+"giant"
+],
+[
+929.3,
+938.74,
+"giantV"
+],
+[
+970.16,
+970.5,
+"giantV"
+],
+[
+975.9,
+980.91,
+"giantV"
+],
+[
+993.0,
+1002.41,
+"giantV"
+],
+[
+1049.25,
+1051.0,
+"giantTop"
+],
+[
+1056.0,
+1063.61,
+"giantTop"
+],
+[
+1063.61,
+1067.5,
+"giantV"
+],
+[
+1106.8,
+1115.83,
+"giantV"
+],
+[
+1131.35,
+1136.5,
+"giantV"
+],
+[
+1149.33,
+1153.4,
+"giant"
+],
+[
+1175.27,
+1186.5,
+"giantTop"
+],
+[
+1191.6,
+1198.85,
+"giantV"
+],
+[
+1244.3,
+1252.03,
+"giantV"
+],
+[
+1270.25,
+1271.9,
+"giant"
+],
+[
+1294.4,
+1301.47,
+"corner"
+],
+[
+1301.47,
+1305.2,
+"giantTop"
+],
+[
+1313.55,
+1322.7,
+"giantV"
+],
+[
+1328.2,
+1333.83,
+"giant"
+],
+[
+1370.29,
+1372.4,
+"corner"
+],
+[
+1383.95,
+1389.6,
+"corner"
+],
+[
+1398.41,
+1406.1,
+"giantTop"
+],
+[
+1420.61,
+1422.2,
+"giant"
+],
+[
+1436.83,
+1437.5,
+"giantV"
+],
+[
+1468.1,
+1471.07,
+"giantV"
+],
+[
+1471.07,
+1472.8,
+"giantTop"
+],
+[
+1478.4,
+1483.07,
+"giantV"
+],
+[
+1491.6,
+1498.33,
+"giant"
+],
+[
+1508.4,
+1513.05,
+"giantTop"
+],
+[
+1547.49,
+1552.6,
+"giantV"
+],
+[
+1579.33,
+1586.6,
+"giant"
+],
+[
+1598.5,
+1600.93,
+"living"
+],
+[
+1600.93,
+1603.5,
+"living"
+],
+[
+1607.9,
+1610.69,
+"window"
+],
+[
+1615.79,
+1618.9,
+"wide"
+],
+[
+1652.19,
+1655.1,
+"bedroom"
+],
+[
+1660.0,
+1664.53,
+"testigo"
+],
+[
+1668.99,
+1671.5,
+"outside"
+],
+[
+1676.2,
+1680.13,
+"outside"
+],
+[
+1683.61,
+1689.2,
+"found"
+],
+[
+1710.4,
+1711.55,
+"wide"
+],
+[
+1778.4,
+1784.99,
+"living"
+],
+[
+1794.0,
+1802.09,
+"corner"
+],
+[
+1842.4,
+1855.7,
+"wide"
+],
+[
+1859.6,
+1867.59,
+"testigo"
+],
+[
+1867.59,
+1871.7,
+"giantV"
+],
+[
+1876.2,
+1880.39,
+"giant"
+],
+[
+1880.39,
+1887.0,
+"giantV"
+],
+[
+1890.5,
+1899.37,
+"book"
+],
+[
+1899.37,
+1903.2,
+"book"
+],
+[
+1914.03,
+1916.9,
+"book"
+],
+[
+1926.27,
+1933.8,
+"book"
+],
+[
+1938.4,
+1944.61,
+"living"
+],
+[
+1952.61,
+1953.4,
+"living"
+]
+],
+"ov": [
+{
+"k": "big",
+"txt": "3 VECES",
+"sub": "EN 2 AÑOS · EL MISMO LUGAR",
+"col": "red",
+"at": 0.72,
+"out": 3.92
+},
+{
+"k": "stamp",
+"txt": "TAPARLA = APAGAR LA ALARMA",
+"at": 41.22,
+"out": 44.42
+},
+{
+"k": "big",
+"txt": "7",
+"sub": "GRIETAS EN LA CASA DE DOÑA MARTA",
+"col": "amber",
+"at": 50.26,
+"out": 53.46
+},
+{
+"k": "chip",
+"txt": "CUESTA MENOS QUE UN CAFÉ",
+"col": "amber",
+"at": 94.32,
+"out": 97.82
+},
+{
+"k": "step",
+"n": 1,
+"name": "LOS 4 TIPOS DE GRIETA",
+"col": "amber",
+"at": 134.28,
+"out": 138.28
+},
+{
+"k": "chip",
+"txt": "TIPO 1 · DE PELO (RETRACCIÓN)",
+"col": "ice",
+"at": 148.28,
+"out": 151.78
+},
+{
+"k": "versus",
+"title": "¿DE QUÉ ES LA GRIETA?",
+"L": {
+"label": "PIEL · PINTURA Y REVOQUE",
+"val": "TUYA",
+"h": 0.9,
+"col": "#7dd87d",
+"mark": "ok"
+},
+"R": {
+"label": "HUESO · LA ESTRUCTURA",
+"val": "PROFESIONAL",
+"h": 0.9,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"at": 169.2,
+"out": 175.2
+},
+{
+"k": "chip",
+"txt": "TIPO 2 · ESQUINA DE VENTANA O PUERTA",
+"col": "ice",
+"at": 178.8,
+"out": 182.8
+},
+{
+"k": "big",
+"txt": "~15 CM",
+"sub": "SALE DE LA ESQUINA, INCLINADA",
+"col": "amber",
+"at": 190.6,
+"out": 193.8
+},
+{
+"k": "chip",
+"txt": "TIPO 3 · DIAGONAL",
+"col": "red",
+"at": 222.82,
+"out": 226.32
+},
+{
+"k": "big",
+"txt": "45°",
+"sub": "CRUZA LA PARED · A VECES EN ESCALERA",
+"col": "red",
+"at": 229.18,
+"out": 232.38
+},
+{
+"k": "stamp",
+"txt": "POSIBLE ASENTAMIENTO",
+"at": 244.78,
+"out": 247.78
+},
+{
+"k": "chip",
+"txt": "TIPO 4 · HORIZONTAL",
+"col": "ice",
+"at": 260.16,
+"out": 263.66
+},
+{
+"k": "chip",
+"txt": "ABAJO = HUMEDAD QUE SUBE DEL SUELO",
+"col": "ice",
+"at": 287.54,
+"out": 291.54
+},
+{
+"k": "check",
+"title": "EL MAPA DE LAS 4",
+"rows": [
+{
+"txt": "De pelo → tranquilo",
+"at": 300.02
+},
+{
+"txt": "Esquina de ventana → vigila",
+"at": 301.66
+},
+{
+"txt": "Diagonal → atención",
+"at": 306.16
+},
+{
+"txt": "Horizontal → depende de dónde",
+"at": 307.96
+}
+],
+"at": 298.24,
+"out": 310.46
+},
+{
+"k": "step",
+"n": 2,
+"name": "LA PRUEBA DE LA MONEDA",
+"col": "amber",
+"at": 334.32,
+"out": 338.32
+},
+{
+"k": "big",
+"txt": "1,5 MM",
+"sub": "EL CANTO DE UNA MONEDA",
+"col": "amber",
+"at": 342.88,
+"out": 346.08
+},
+{
+"k": "versus",
+"title": "LA PRUEBA DE LA MONEDA",
+"L": {
+"label": "NO ENTRA",
+"val": "FISURA",
+"h": 0.45,
+"col": "#7dd87d",
+"mark": "ok"
+},
+"R": {
+"label": "ENTRA",
+"val": "GRIETA",
+"h": 0.9,
+"col": "#ffb257",
+"mark": "x"
+},
+"at": 357.76,
+"out": 364.76
+},
+{
+"k": "stamp",
+"txt": "¿SE ESTÁ MOVIENDO?",
+"at": 378.84,
+"out": 381.84
+},
+{
+"k": "chip",
+"txt": "LÁPIZ: LA FECHA + FOTO CON LA MONEDA",
+"col": "ice",
+"at": 418.7,
+"out": 423.2
+},
+{
+"k": "stamp",
+"txt": "LA FOTO NO SE OLVIDA",
+"at": 434.96,
+"out": 437.96
+},
+{
+"k": "step",
+"n": 3,
+"name": "EL TESTIGO DE YESO · EL PREMIO",
+"col": "amber",
+"at": 459.02,
+"out": 463.02
+},
+{
+"k": "chip",
+"txt": "UN DETECTOR DE MOVIMIENTO DE CENTAVOS",
+"col": "amber",
+"at": 492.56,
+"out": 496.56
+},
+{
+"k": "big",
+"txt": "Ø 5 CM",
+"sub": "RASPAR HASTA EL REVOQUE",
+"col": "amber",
+"at": 503.14,
+"out": 506.34
+},
+{
+"k": "chip",
+"txt": "2 CUCHARADAS DE YESO + AGUA DE A POCO",
+"col": "ice",
+"at": 519.84,
+"out": 523.84
+},
+{
+"k": "stamp",
+"txt": "ESPESA, NO COMO SOPA",
+"at": 529.12,
+"out": 531.92
+},
+{
+"k": "big",
+"txt": "5-10 MIN",
+"sub": "Y EL YESO YA ENDURECE",
+"col": "red",
+"at": 537.04,
+"out": 540.24
+},
+{
+"k": "chip",
+"txt": "Ø 5 CM · ½ CM DE ALTO · MITAD Y MITAD",
+"col": "ice",
+"at": 551.58,
+"out": 555.58
+},
+{
+"k": "stamp",
+"txt": "LA FECHA DE HOY",
+"at": 562.78,
+"out": 565.58
+},
+{
+"k": "big",
+"txt": "4 SEMANAS",
+"sub": "1 VEZ POR SEMANA · MISMA HORA Y LUZ",
+"col": "amber",
+"at": 596.78,
+"out": 599.98
+},
+{
+"k": "versus",
+"title": "EL TESTIGO A LAS 4 SEMANAS",
+"L": {
+"label": "ENTERO",
+"val": "QUIETA",
+"h": 0.9,
+"col": "#7dd87d",
+"mark": "ok"
+},
+"R": {
+"label": "PARTIDO",
+"val": "SE MUEVE HOY",
+"h": 0.9,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"at": 598.42,
+"out": 606.42
+},
+{
+"k": "stamp",
+"txt": "NO SE TAPA · SE MUESTRA",
+"at": 623.42,
+"out": 626.62
+},
+{
+"k": "big",
+"txt": "9 DÍAS",
+"sub": "Y UN TESTIGO SE PARTIÓ",
+"col": "red",
+"at": 654.14,
+"out": 657.34
+},
+{
+"k": "step",
+"n": 4,
+"name": "CUÁNDO LLAMAR A UN PROFESIONAL",
+"col": "red",
+"at": 656.58,
+"out": 660.58
+},
+{
+"k": "check",
+"title": "LLAMA SIN ESPERAR SI…",
+"rows": [
+{
+"txt": "Diagonal y más ancha arriba",
+"at": 681.16
+},
+{
+"txt": "Más de 3-5 mm",
+"at": 688.98
+},
+{
+"txt": "Creció en 7 días",
+"at": 698.54
+},
+{
+"txt": "El testigo se partió",
+"at": 704.1
+},
+{
+"txt": "Una puerta se traba",
+"at": 706.2
+},
+{
+"txt": "Se ve de los dos lados",
+"at": 718.7
+}
+],
+"at": 678.62,
+"out": 720.7
+},
+{
+"k": "chip",
+"txt": "INGENIERO · ARQUITECTO · MAESTRO MAYOR",
+"col": "ice",
+"at": 738.92,
+"out": 743.42
+},
+{
+"k": "stamp",
+"txt": "NO SIEMPRE ES UNA OBRA CARA",
+"at": 756.72,
+"out": 759.72
+},
+{
+"k": "chip",
+"txt": "DIAGONAL + EL PLACARD NO CIERRA",
+"col": "red",
+"at": 795.16,
+"out": 799.16
+},
+{
+"k": "chip",
+"txt": "LA CAUSA: LA CANALETA ROTA",
+"col": "red",
+"at": 804.94,
+"out": 808.44
+},
+{
+"k": "stamp",
+"txt": "EL ERROR: RELLENO RÍGIDO",
+"at": 835.56,
+"out": 838.76
+},
+{
+"k": "chip",
+"txt": "DE DÍA SE ESTIRA · DE NOCHE SE ENCOGE",
+"col": "ice",
+"at": 851.54,
+"out": 856.04
+},
+{
+"k": "chip",
+"txt": "TAPÓN DE PIEDRA EN UNA JUNTA QUE RESPIRA",
+"col": "red",
+"at": 884.22,
+"out": 888.72
+},
+{
+"k": "stamp",
+"txt": "NUNCA SE FUE",
+"at": 903.84,
+"out": 906.64
+},
+{
+"k": "step",
+"n": 5,
+"name": "ABRIR EN V",
+"at": 922.24,
+"out": 926.24
+},
+{
+"k": "big",
+"txt": "½ CM",
+"sub": "ARRIBA · Y SE ANGOSTA HACIA ADENTRO",
+"col": "amber",
+"at": 968.84,
+"out": 972.04
+},
+{
+"k": "stamp",
+"txt": "RASPAR, NO PICAR",
+"at": 980.91,
+"out": 983.71
+},
+{
+"k": "chip",
+"txt": "3 CAPAS SUELTAS: YESO · ENDUIDO · MASILLA",
+"col": "red",
+"at": 994.23,
+"out": 998.73
+},
+{
+"k": "chip",
+"txt": "ANTEOJOS · MASCARILLA · DIARIO EN EL PISO",
+"col": "ice",
+"at": 1009.13,
+"out": 1013.63
+},
+{
+"k": "stamp",
+"txt": "¿SUENA HUECO? ES OTRO ARREGLO",
+"at": 1029.87,
+"out": 1033.07
+},
+{
+"k": "step",
+"n": 6,
+"name": "LIMPIAR Y EL FIJADOR",
+"at": 1056.05,
+"out": 1060.05
+},
+{
+"k": "stamp",
+"txt": "EL POLVO: ENEMIGO Nº 1",
+"at": 1064.83,
+"out": 1067.83
+},
+{
+"k": "versus",
+"title": "EL PASO QUE TODOS SE SALTEAN",
+"L": {
+"label": "CON FIJADOR",
+"val": "10 AÑOS",
+"h": 0.95,
+"col": "#7dd87d",
+"mark": "ok"
+},
+"R": {
+"label": "SIN FIJADOR",
+"val": "1 AÑO",
+"h": 0.18,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"at": 1114.57,
+"out": 1121.07
+},
+{
+"k": "big",
+"txt": "1 : 3-4",
+"sub": "FIJADOR : AGUA",
+"col": "amber",
+"at": 1127.89,
+"out": 1131.09
+},
+{
+"k": "chip",
+"txt": "SIN FIJADOR → LA GRIETA FANTASMA",
+"col": "red",
+"at": 1163.35,
+"out": 1167.35
+},
+{
+"k": "step",
+"n": 7,
+"name": "EL SELLADOR ELÁSTICO",
+"col": "amber",
+"at": 1175.27,
+"out": 1179.27
+},
+{
+"k": "chip",
+"txt": "«MASILLA ELÁSTICA ACRÍLICA PARA FISURAS»",
+"col": "amber",
+"at": 1213.51,
+"out": 1218.51
+},
+{
+"k": "versus",
+"title": "¿CUÁL VA EN LA GRIETA?",
+"L": {
+"label": "ACRÍLICO PINTABLE",
+"val": "SÍ",
+"h": 0.9,
+"col": "#7dd87d",
+"mark": "ok"
+},
+"R": {
+"label": "SILICONA",
+"val": "NO",
+"h": 0.9,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"at": 1225.57,
+"out": 1232.07
+},
+{
+"k": "chip",
+"txt": "+1 CM DE HONDA → DOS PASADAS",
+"col": "ice",
+"at": 1273.75,
+"out": 1277.75
+},
+{
+"k": "step",
+"n": 8,
+"name": "LA MALLA DE FIBRA",
+"at": 1301.47,
+"out": 1305.47
+},
+{
+"k": "big",
+"txt": "5 CM",
+"sub": "DE CADA LADO DE LA GRIETA",
+"col": "amber",
+"at": 1315.85,
+"out": 1319.05
+},
+{
+"k": "stamp",
+"txt": "EL YESO DE UN BRAZO QUEBRADO",
+"at": 1333.83,
+"out": 1337.03
+},
+{
+"k": "chip",
+"txt": "EN LA ESQUINA: MALLA EN DIAGONAL",
+"col": "amber",
+"at": 1386.03,
+"out": 1390.03
+},
+{
+"k": "step",
+"n": 9,
+"name": "EL ENDUIDO Y LA LIJA",
+"at": 1398.41,
+"out": 1402.41
+},
+{
+"k": "big",
+"txt": "20-30 CM",
+"sub": "DE ANCHO · DESVANECIDO",
+"col": "amber",
+"at": 1424.91,
+"out": 1428.11
+},
+{
+"k": "big",
+"txt": "220",
+"sub": "LIJA FINA · EN CÍRCULOS",
+"col": "amber",
+"at": 1452.87,
+"out": 1456.07
+},
+{
+"k": "chip",
+"txt": "LA PRUEBA DE LA LINTERNA",
+"col": "amber",
+"at": 1473.17,
+"out": 1477.17
+},
+{
+"k": "step",
+"n": 10,
+"name": "LA PINTURA",
+"col": "amber",
+"at": 1507.57,
+"out": 1511.57
+},
+{
+"k": "versus",
+"title": "¿QUÉ PINTURA VA ENCIMA?",
+"L": {
+"label": "ELASTOMÉRICA · BUEN LÁTEX",
+"val": "SE ESTIRA",
+"h": 0.9,
+"col": "#7dd87d",
+"mark": "ok"
+},
+"R": {
+"label": "LÁTEX BARATO",
+"val": "TIZA",
+"h": 0.35,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"at": 1534.53,
+"out": 1541.53
+},
+{
+"k": "stamp",
+"txt": "DOS MANOS, NO UNA",
+"at": 1579.33,
+"out": 1582.13
+},
+{
+"k": "chip",
+"txt": "EL PAÑO COMPLETO, DE ESQUINA A ESQUINA",
+"col": "ice",
+"at": 1590.57,
+"out": 1594.57
+},
+{
+"k": "big",
+"txt": "2 MESES",
+"sub": "Y NI UNA RAYITA",
+"col": "green",
+"at": 1612.15,
+"out": 1615.35
+},
+{
+"k": "deal",
+"at": 1710.39,
+"out": 1714.89
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "TAPARLA CON ALGO DURO",
+"at": 1711.55,
+"out": 1719.55
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "NO ABRIRLA EN V",
+"at": 1724.35,
+"out": 1732.35
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "TAPAR SIN SABER SI SE MUEVE",
+"at": 1733.59,
+"out": 1741.59
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "SIN FIJADOR Y CON LÁTEX BARATO",
+"at": 1746.21,
+"out": 1754.21
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "ARREGLAR LA GRIETA Y NO LA CAUSA",
+"at": 1759.19,
+"out": 1767.19
+},
+{
+"k": "chip",
+"txt": "«LA TAPÉ DOS VECES CON ENDUIDO»",
+"col": "ice",
+"at": 1782.45,
+"out": 1787.45
+},
+{
+"k": "chip",
+"txt": "¿Y CON SILICONA?",
+"col": "ice",
+"at": 1805.07,
+"out": 1809.07
+},
+{
+"k": "chip",
+"txt": "DIAGONAL EN EL GARAJE QUE CRECÍA",
+"col": "ice",
+"at": 1822.03,
+"out": 1826.53
+},
+{
+"k": "recap",
+"rows": [
+1844.41,
+1850.45,
+1854.41,
+1859.67,
+1867.91,
+1870.25,
+1872.47
+],
+"at": 1842.53,
+"out": 1878.47
+},
+{
+"k": "ask",
+"at": 1935.25,
+"out": 1947.25
+}
+],
+"cta1": {
+"guide": 103.66,
+"book": 106.28,
+"page": 109.14,
+"desc": 128.84,
+"manual": "MANUAL DEL ALBAÑIL",
+"img": "m1_p013",
+"pageTxt": "PÁG. 13 · GRIETAS: CUÁLES SE TAPAN Y CUÁLES NO",
+"end": 134.84
+},
+"cta2": {
+"guide": 1890.71,
+"book": 1891.57,
+"page": 1899.37,
+"desc": 1906.87,
+"manual": "MANUAL DEL ALBAÑIL",
+"img": "m1_p013",
+"pageTxt": "PÁG. 13 · LA LISTA PARA EL MOSTRADOR",
+"end": 1912.87
+},
+"cta3": {
+"desc": 1926.27,
+"end": 1931.27
+},
+"end": 1953.37,
+"st": {
+"hair": [
+[
+140.32,
+166.5
+]
+],
+"corner": [
+[
+178.8,
+206.58
+],
+[
+321.78,
+328.0
+],
+[
+1384.808,
+1393.988
+]
+],
+"diag": [
+[
+222.82,
+260.16
+],
+[
+780.164,
+798.664
+]
+],
+"horiz": [
+[
+260.16,
+285.44
+]
+],
+"low": [
+[
+285.44,
+298.24
+]
+],
+"coin": [
+[
+351.32,
+365.82
+],
+[
+373.66,
+382.2
+],
+[
+402.72,
+414.02
+]
+],
+"coinIn": [
+[
+373.66,
+382.2
+],
+[
+404.92,
+414.02
+]
+],
+"testigo": [
+[
+475.64,
+1953.37
+]
+],
+"splitShow": [
+[
+617.044,
+634.224
+],
+[
+1859.672,
+1867.592
+]
+],
+"split": [
+[
+1656.392,
+1953.37
+]
+],
+"placard": [
+[
+706.204,
+715.864
+],
+[
+790.584,
+798.664
+],
+[
+1697.532,
+1710.392
+]
+],
+"found": [
+[
+254.42,
+260.16
+],
+[
+741.464,
+759.764
+],
+[
+1668.992,
+1683.612
+]
+],
+"rain": [
+[
+804.944,
+812.284
+],
+[
+1676.252,
+1683.612
+]
+],
+"wet": [
+[
+1680.132,
+1683.612
+]
+],
+"fixed": [
+[
+1683.612,
+1953.37
+]
+],
+"giant": [
+[
+829.704,
+1615.792
+],
+[
+1866.412,
+1890.712
+]
+],
+"layers": [
+[
+1401.728,
+1409.908
+],
+[
+1866.412,
+1890.712
+]
+],
+"move": [
+[
+851.544,
+879.644
+],
+[
+887.324,
+918.984
+]
+],
+"rigid": [
+[
+879.644,
+918.984
+]
+],
+"rigidCrack": [
+[
+891.684,
+918.984
+]
+],
+"v": [
+[
+962.164,
+1953.37
+]
+],
+"old": [
+[
+993.028,
+1005.968
+]
+],
+"dust": [
+[
+1061.008,
+1087.728
+]
+],
+"brush": [
+[
+1075.968,
+1079.688
+]
+],
+"fij": [
+[
+1131.348,
+1173.048
+],
+[
+1491.692,
+1499.792
+]
+],
+"seal": [
+[
+1242.708,
+1953.37
+]
+],
+"malla": [
+[
+1362.288,
+1953.37
+]
+],
+"end": [
+[
+1355.468,
+1953.37
+]
+],
+"sand": [
+[
+1452.188,
+1471.072
+]
+],
+"dark": [
+[
+1473.172,
+1491.692
+]
+],
+"flash": [
+[
+1478.472,
+1487.632
+]
+],
+"paint": [
+[
+1579.332,
+1953.37
+]
+],
+"paint2": [
+[
+1600.932,
+1953.37
+]
+],
+"done": [
+[
+1600.932,
+1953.37
+]
+],
+"book": [
+[
+103.16,
+134.84
+],
+[
+1890.21,
+1912.87
+],
+[
+1925.77,
+1931.27
+]
+],
+"open": [
+[
+106.28,
+134.84
+],
+[
+1891.57,
+1912.87
+]
+],
+"hi0": [
+[
+109.14,
+113.14
+]
+],
+"hi1": [
+[
+1899.372,
+1906.872
+]
+],
+"hi2": [
+[
+1906.872,
+1914.032
+]
+]
+},
+"hb": [
+[
+0,
+2
+]
+],
+"txt": {
+"recapTitle": "GRIETAS QUE NO VUELVEN",
+"recap": [
+"Los 4 tipos · de pelo a diagonal",
+"La moneda: ¿entra?",
+"Testigo de yeso · 4 semanas",
+"Partido o diagonal → profesional",
+"Abrir en V · raspar",
+"Polvo afuera + fijador",
+"Sellador elástico pintable"
+],
+"ask": [
+"CUÉNTAME EN LOS COMENTARIOS",
+"¿Qué tipo de grieta tienes tú?",
+"…¿y cuántas veces la tapaste?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+0.04,
+8.04
+]
+}
+}
