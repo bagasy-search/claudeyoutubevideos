@@ -55,7 +55,7 @@ export const HKit: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h=
     <div style={{ position: "absolute", left: 180, top: 770, width: 1560, height: 34, borderRadius: 8, background: "linear-gradient(180deg,#d6c7a8,#a8946f)", boxShadow: "0 30px 50px rgba(0,0,0,.6)" }} />
     {it.map((o, i) => { const s = phys(tt, o.a, 6, 0.42), x = 440 + i * 520;
       return <React.Fragment key={i}>
-        <div style={{ position: "absolute", left: x, top: 770, transform: `translate(-50%,-100%) translateY(${(1 - cl(s)) * -700}px) rotate(${(1 - cl(s)) * (i - 1) * 25}deg)`, opacity: cl(s * 3) }}>{o.el}</div>
+        <div style={{ position: "absolute", left: x, top: 770, transform: `translate(-50%,-100%) translateY(${(1 - cl(s)) * -700}px) rotate(${(1 - cl(s)) * (i - 1) * 25}deg)`, opacity: cl((tt - o.a) / 0.6) * cl(s * 3) }}>{o.el}</div>
         <div style={{ position: "absolute", left: x - 40, top: 840 }}><div style={{ position: "relative", width: 80, height: 80, left: -0, top: 0 }}><Check x={40} y={40} s={76} p={cl((tt - o.a - 0.7) * 1.4)} /></div></div>
         <Tag tt={tt} at={o.a + 0.5} x={x} y={960} txt={o.l} col={TX} size={42} />
         <Tag tt={tt} at={o.a + 0.8} x={x} y={1015} txt={o.n} col={DIM} size={28} />
