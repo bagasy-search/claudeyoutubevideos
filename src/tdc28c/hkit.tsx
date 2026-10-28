@@ -29,7 +29,8 @@ const maskOf = (m: Mode, p: number): string => {
   if (m === "iris") return `radial-gradient(circle at 50% 52%, #000 ${p * 1500}px, transparent ${p * 1500 + 480}px)`;
   if (m === "wipe") return `linear-gradient(105deg, #000 ${p * 150 - 30}%, transparent ${p * 150}%)`;
   if (m === "split") { const a = 50 - p * 62, b = 50 + p * 62; return `linear-gradient(90deg, transparent ${a}%, #000 ${a + 10}%, #000 ${b - 10}%, transparent ${b}%)`; }
-  if (m === "blinds") { const w = Math.min(160, p * 175); return `repeating-linear-gradient(90deg, #000 0px, #000 ${w}px, transparent ${w}px, transparent 160px)`; }
+  // persianas: con la pantalla llena la máscara pasa a sólida (con rendijas de 0 px Chrome dejaba cuadros sueltos oscuros = destellos, tdc28a 25:33)
+  if (m === "blinds") { if (p > 0.9) return "linear-gradient(#000,#000)"; const w = p * 178; return `repeating-linear-gradient(90deg, #000 0px, #000 ${w}px, transparent ${w}px, transparent 160px)`; }
   return `linear-gradient(180deg, #000 ${p * 150 - 30}%, transparent ${p * 150}%)`;
 };
 
