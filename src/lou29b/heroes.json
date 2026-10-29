@@ -1,0 +1,114 @@
+[
+{
+"k": "stoolsFill",
+"mode": "iris",
+"at": 7.89,
+"out": 15.81,
+"imgAt": 8.89
+},
+{
+"k": "coldCones",
+"mode": "wipe",
+"at": 164.9,
+"out": 170.75,
+"imgAt": 165.9
+},
+{
+"k": "noSalt",
+"mode": "drop",
+"at": 259.22,
+"out": 270.72,
+"imgAt": 260.22
+},
+{
+"k": "secondSunday",
+"mode": "split",
+"at": 400.31,
+"out": 406.69,
+"imgAt": 401.31
+},
+{
+"k": "offHeat",
+"mode": "iris",
+"at": 466.25,
+"out": 476.64,
+"imgAt": 467.25
+},
+{
+"k": "boardRename",
+"mode": "wipe",
+"at": 480.27,
+"out": 491.77,
+"imgAt": 481.27
+},
+{
+"k": "threeQuarters",
+"mode": "blinds",
+"at": 655.62,
+"out": 666.63,
+"imgAt": 656.62
+},
+{
+"k": "glassBowl",
+"mode": "iris",
+"at": 762.86,
+"out": 773.22,
+"imgAt": 763.86
+},
+{
+"k": "sauceOnTop",
+"mode": "wipe",
+"at": 845.2,
+"out": 856.7,
+"imgAt": 846.2
+},
+{
+"k": "noodleChair",
+"mode": "iris",
+"at": 1236.45,
+"out": 1243.4,
+"imgAt": 1237.45
+},
+{
+"k": "dial145",
+"mode": "wipe",
+"at": 1335.11,
+"out": 1344.33,
+"imgAt": 1336.11
+},
+{
+"k": "grainCut",
+"mode": "drop",
+"at": 1451.47,
+"out": 1462.89,
+"imgAt": 1452.47
+},
+{
+"k": "diamondScore",
+"mode": "blinds",
+"at": 1483.55,
+"out": 1495.05,
+"imgAt": 1484.55
+},
+{
+"k": "gibletBag",
+"mode": "split",
+"at": 1605.77,
+"out": 1615.55,
+"imgAt": 1606.77
+},
+{
+"k": "ovenGlass",
+"mode": "wipe",
+"at": 1883.1,
+"out": 1889.84,
+"imgAt": 1884.1
+},
+{
+"k": "parsley",
+"mode": "drop",
+"at": 1898.44,
+"out": 1907.02,
+"imgAt": 1899.44
+}
+]
