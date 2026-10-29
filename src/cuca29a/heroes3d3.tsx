@@ -189,10 +189,10 @@ const H3Calendario: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false
         <mesh position={[0, 0.14, 0]}><cylinderGeometry args={[0.29, 0.22, 0.1, 24]} />{M.liquido("#5a2a1a")}</mesh>
         <mesh position={[0, 0.22, 0]}><cylinderGeometry args={[0.33, 0.33, 0.02, 28]} />{M.vidrio()}</mesh>
       </group>
-      <group position={[0.55, 1.3, -0.5]}>
+      <group position={[0.7, 1.2, -0.5]} scale={1.35}>
         <RBox p={[0, 0, -0.02]} s={[1.42, 1.06, 0.02]} r={0.01}><meshStandardMaterial color="#c9a06a" /></RBox>
         <mesh><planeGeometry args={[1.36, 1.0]} /><meshStandardMaterial map={calTex(n)} roughness={0.85} /></mesh>
-        <group position={[px + 0.16, py + 0.14 + 0.04 * Math.sin(tt * 12) * (tt > 1.8 ? 1 : 0), 0.12]} rotation={[0, 0, 0.7]} visible={tt > 1.6}>
+        <group position={[px - 0.18, py + 0.21 + 0.04 * Math.sin(tt * 12) * (tt > 1.8 ? 1 : 0), 0.12]} rotation={[0, 0, 0.7]} visible={tt > 1.6}>
           <mesh castShadow><cylinderGeometry args={[0.03, 0.03, 0.5, 12]} /><meshStandardMaterial color={n >= 4 ? "#c0392b" : "#1f5fa8"} roughness={0.4} /></mesh>
           <mesh position={[0, -0.28, 0]}><coneGeometry args={[0.03, 0.07, 12]} /><meshStandardMaterial color="#222" /></mesh></group>
       </group>
@@ -217,13 +217,13 @@ const H3Odometro: C = ({ t, h }) => <Stage t={t} h={h} mode="diag" mesa={false}>
       </group>
       {tip > 0.3 && tip < 0.99 && Array.from({ length: 12 }, (_, i) => { const k = (tt * 3 + i / 12) % 1; return <Frijol key={i} p={[-0.25 + k * 0.1, 1.05 - k * 0.6, -0.9]} s={0.05} />; })}
       {Array.from({ length: N }, (_, i) => { const a = at(i); if (tt < a) return null; const k = eio(tt, a, a + 0.45), p = pos(i);
-        const q: V3 = [lerp(0, p[0], k), lerp(0.75, 0, k) + Math.sin(k * P) * 0.5, lerp(-0.9, p[2], k)];
+        const q: V3 = [lerp(0, p[0], k), lerp(0.6, 0, k) + Math.sin(k * P) * 0.18, lerp(-0.9, p[2], k)];
         return <Plato key={i} p={q} s={0.55}><mesh position={[0, 0.06, 0]} scale={[1, 0.4, 1]} castShadow><sphereGeometry args={[0.26, 16, 10]} /><meshPhysicalMaterial color="#5a2418" roughness={0.3} clearcoat={0.6} /></mesh></Plato>; })}
       {/* marcador de tarjetas */}
       <group position={[1.75, 0.0, -0.75]}>
         <RBox p={[0, 0.45, 0]} s={[0.7, 0.9, 0.3]} r={0.04}>{M.madera("#3a2a1c")}</RBox>
-        <mesh position={[0, 0.5, 0.152]}><planeGeometry args={[0.56, 0.56]} /><meshStandardMaterial map={flipTex(Math.max(0, n - 1))} roughness={0.5} /></mesh>
-        <group position={[0, 0.5 + 0.28, 0.16]} rotation={[-(1 - fl) * P, 0, 0]}>
+        <mesh position={[0, 0.5, 0.152]}><planeGeometry args={[0.56, 0.56]} /><meshStandardMaterial map={flipTex(n)} roughness={0.5} /></mesh>
+        <group position={[0, 0.5 + 0.28, 0.16]} rotation={[-(1 - fl) * P, 0, 0]} visible={fl < 0.98 && n > 0}>
           <mesh position={[0, -0.28, 0]}><planeGeometry args={[0.56, 0.56]} /><meshStandardMaterial map={flipTex(n)} roughness={0.5} side={THREE.DoubleSide} /></mesh></group>
         <mesh position={[0, 0.5, 0.165]}><boxGeometry args={[0.58, 0.008, 0.01]} /><meshStandardMaterial color="#000" /></mesh>
       </group>
