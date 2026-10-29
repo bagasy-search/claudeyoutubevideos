@@ -466,7 +466,7 @@ const Q11: React.FC = () => {
 
 // mesa larga de la cocina con los 10 sentados (opcional: Marcus de pie en la cabecera)
 const SENT = { tronco: 6, pI: 88, rI: 88, pD: 92, rD: 92, hD: 50, cD: 70 };
-const MesaLarga: React.FC<{ f: number; marcusDePie?: number; levanta?: number; caras?: (i: number) => string; acciones?: (i: number) => { f: number; v: any }[]; piramide?: boolean; giran?: number; abrelatas?: boolean; latasN?: number; cuchara?: boolean; lug?: number[][]; ninosX?: number[]; marcusPoses?: { f: number; v: any }[]; cuencos?: boolean; sillas?: number[]; mesa?: [number, number]; marcusSilla?: number; ninosPoses?: { f: number; v: any }[][]; extra?: React.ReactNode; mesaY?: number }> = ({ f, marcusDePie, levanta, caras, acciones, piramide, giran, abrelatas, latasN = 9, cuchara, lug, ninosX = [380, 300], marcusPoses, cuencos, sillas = [560, 760, 960, 1180, 1380, 1580], mesa = [480, 1820], marcusSilla = 1860, ninosPoses, extra, mesaY = 190 }) => {
+const MesaLarga: React.FC<{ f: number; marcusDePie?: number; levanta?: number; caras?: (i: number) => string; acciones?: (i: number) => { f: number; v: any }[]; piramide?: boolean; giran?: number; abrelatas?: boolean; latasN?: number; cuchara?: boolean; lug?: number[][]; ninosX?: number[]; marcusPoses?: { f: number; v: any }[]; cuencos?: boolean; sillas?: number[]; mesa?: [number, number]; marcusSilla?: number; ninosPoses?: { f: number; v: any }[][]; extra?: React.ReactNode; mesaY?: number; cuencoDx?: number }> = ({ f, marcusDePie, levanta, caras, acciones, piramide, giran, abrelatas, latasN = 9, cuchara, lug, ninosX = [380, 300], marcusPoses, cuencos, sillas = [560, 760, 960, 1180, 1380, 1580], mesa = [480, 1820], marcusSilla = 1860, ninosPoses, extra, mesaY = 190, cuencoDx = 62 }) => {
   const PS = COCINA_PISO;
   const lugares = lug ?? [[1880, -1], [520, 1], [700, 1], [880, 1], [1060, 1], [1240, -1], [1420, -1], [1600, -1], [1000, 1], [1300, -1]];
   const xk = levanta !== undefined ? interpolate(f, [levanta + 4, levanta + 26], [0, 1], cl) : 1;
@@ -486,7 +486,7 @@ const MesaLarga: React.FC<{ f: number; marcusDePie?: number; levanta?: number; c
         return <A key={i} look={look} seed={i * 3} ruta={[{ f: 0, x, y: PS }]} dir={[{ f: 0, v: d as 1 | -1 }]} asiento={dePie ? undefined : [{ f: 0, v: 104 }]}
           poses={poses}
           caras={[{ f: 0, v: (caras ? caras(i) : "neutral") as never }]} miradas={[{ f: 0, v: { x: i === 0 ? -0.8 : d * 0.6, y: 0.2 } }, ...(giran !== undefined && i > 0 ? [{ f: giran + i * 3, v: { x: x < 1880 ? 0.95 : -0.95, y: -0.1 } }] : [])]}
-          enManoD={cuchara && i > 0 ? <g transform="rotate(-62)"><rect x={-3} y={-2} width={6} height={22} rx={3} fill="#c9cfd6" stroke="#4a4a52" strokeWidth={2} /><ellipse cx={0} cy={26} rx={7} ry={9} fill="#c9cfd6" stroke="#4a4a52" strokeWidth={2} /></g> : i === 0 && lataEnMano ? <g transform="rotate(80)"><Lata s={2.2} color="#e0563a" /><g transform="translate(0,-14) scale(1.9)">
+          enManoD={cuchara && !(i === 0 && lataEnMano) ? <g transform="rotate(-87) scale(1.3)"><rect x={-3} y={-2} width={6} height={22} rx={3} fill="#c9cfd6" stroke="#4a4a52" strokeWidth={2} /><ellipse cx={0} cy={26} rx={7} ry={9} fill="#c9cfd6" stroke="#4a4a52" strokeWidth={2} /></g> : i === 0 && lataEnMano ? <g opacity={ap(f, (levanta ?? 0) - 24, 6)} transform="rotate(80) translate(0,40)"><Lata s={2.2} color="#e0563a" /><g transform="translate(0,-44) scale(1.9)">
             {[["M-14,-12 L14,16", pA], ["M14,-12 L-14,16", pB]].map(([d2, p], j) => (p as number) > 0 ? <g key={j}><path d={d2 as string} pathLength={1} strokeDasharray={`${p} 1`} stroke="#1c1416" strokeWidth={9} strokeLinecap="round" fill="none" /><path d={d2 as string} pathLength={1} strokeDasharray={`${p} 1`} stroke="#e23a2e" strokeWidth={5} strokeLinecap="round" fill="none" /></g> : null)}</g></g> : undefined} />;
       })}
       {/* mellizos de pie al costado, más chicos */}
@@ -494,7 +494,7 @@ const MesaLarga: React.FC<{ f: number; marcusDePie?: number; levanta?: number; c
       <A look={LILY} escala={NINO} ruta={[{ f: 0, x: ninosX[1], y: PS }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "feliz" }]} poses={ninosPoses ? ninosPoses[1] : acciones ? gestos(0, 1200, ["parado", { hD: 60, cD: 40 }], 22) : undefined} />
       <rect x={mesa[0]} y={PS - mesaY} width={mesa[1] - mesa[0]} height={22} rx={6} fill="#8a5e3c" />
       <rect x={mesa[0] + 20} y={PS - mesaY + 22} width={16} height={mesaY - 22} fill="#6a4a32" /><rect x={mesa[1] - 36} y={PS - mesaY + 22} width={16} height={mesaY - 22} fill="#6a4a32" />
-      {cuencos && lugares.slice(1, 8).map(([x, d], j) => <g key={`c${j}`} transform={`translate(${x + d * 62},${PS - mesaY - 24})`}><path d="M-34,-4 Q-30,26 0,28 Q30,26 34,-4 Z" fill="#f2e6cf" stroke="#1c1416" strokeWidth={4} /><ellipse cx={0} cy={-4} rx={34} ry={8} fill="#c8763a" stroke="#1c1416" strokeWidth={3} />{[0, 1, 2].map((k) => <path key={k} d={`M${-12 + k * 12},${-16 - ((f + j * 9 + k * 7) % 30)} q6,-8 0,-16`} stroke="#fff" strokeWidth={3} fill="none" opacity={0.5 * (1 - ((f + j * 9 + k * 7) % 30) / 30)} />)}</g>)}
+      {cuencos && lugares.slice(cuchara ? 0 : 1, 8).map(([x, d], j) => <g key={`c${j}`} transform={`translate(${x + d * cuencoDx},${PS - mesaY - 24})`}><path d="M-34,-4 Q-30,26 0,28 Q30,26 34,-4 Z" fill="#f2e6cf" stroke="#1c1416" strokeWidth={4} /><ellipse cx={0} cy={-4} rx={34} ry={8} fill="#c8763a" stroke="#1c1416" strokeWidth={3} />{[0, 1, 2].map((k) => <path key={k} d={`M${-12 + k * 12},${-16 - ((f + j * 9 + k * 7) % 30)} q6,-8 0,-16`} stroke="#fff" strokeWidth={3} fill="none" opacity={0.5 * (1 - ((f + j * 9 + k * 7) % 30) / 30)} />)}</g>)}
       {Array.from({ length: 9 }).map((_, i) => { if (i >= latasN) return null; const pop = latasN < 9 && i === latasN - 1 ? 1.25 : 1; return <Lata key={i} x={560 + i * 140} y={PS - mesaY} s={0.8 * pop} color={["#e0563a", "#f1c24a", "#5aa0d8", "#7fc46a"][i % 4]} />; })}
       {/* pirámide de latas en el hueco entre dos comensales (no tapa ninguna cara) */}
       {piramide && [[0, 0], [1, 0], [2, 0], [0.5, 1], [1.5, 1], [1, 2]].map(([c, r], i) => <Lata key={i} x={1112 + c * 38} y={PS - 190 - 8 - r * 40} s={1.0} color={["#e0563a", "#f1c24a", "#5aa0d8"][i % 3]} />)}
@@ -518,12 +518,15 @@ const comer = (i: number) => {
 // (vuelta I) mesa a la altura del pecho (mesaY 150) y brazo por IK: la mano va del borde del cuenco (sobre el tablero) a
 // la boca por DELANTE de la cara, nunca por debajo del tablero ni cruzando la cara
 const COME_P0 = { ...SENT, tronco: 4, cabeza: 8 }, COME_B0 = { ...SENT, tronco: 2, cabeza: -8 };
-const COME_P = { ...COME_P0, ...alcanzar({ hI: 0, cI: 0, bajar: 0, ...COME_P0 } as Pose, "D", { x: 60, y: -176 }, 104) }, COME_B = { ...COME_B0, ...alcanzar({ hI: 0, cI: 0, bajar: 0, ...COME_B0 } as Pose, "D", { x: 70, y: -206 }, 104) };
+// (vuelta J) cuencos a 82 px (antes 62 tapaban el antebrazo); la mano llega al COSTADO DEL MENTÓN (x 50, fuera de la cabeza) con el codo
+// adelante (x 42, sobre el tablero): se ve hombro→codo→mano; la cuchara (×1,3, rotate -87 respecto del antebrazo) apunta y toca la BOCA;
+// ciclo lento (40-48 cuadros) con desfase por persona: 2-3 bocados escalonados, cada uno sube en arco con resorte
+const COME_P = { ...COME_P0, ...alcanzar({ hI: 0, cI: 0, bajar: 0, ...COME_P0 } as Pose, "D", { x: 80, y: -178 }, 104) }, COME_B = { ...COME_B0, ...alcanzar({ hI: 0, cI: 0, bajar: 0, ...COME_B0 } as Pose, "D", { x: 50, y: -204 }, 104) };
 const comerFuerte = (i: number) => {
-  const per = 18 + (i % 3) * 3, off = (i * 7) % per;
-  const k: { f: number; v: any }[] = [];
-  for (let t = -per + off; t < 200; t += per) k.push({ f: t, v: COME_P }, { f: t + Math.round(per * 0.55), v: COME_B });
-  return k;
+  const per = 40 + (i % 3) * 4, off = (i * 17) % per;
+  const k: { f: number; v: any }[] = [{ f: 0, v: COME_P }];
+  for (let t = off - per; t < 200; t += per) k.push({ f: t + 6, v: COME_B }, { f: t + 6 + Math.round(per * 0.45), v: COME_P });
+  return k.filter((q) => q.f > 0 || q === k[0]);
 };
 const Q12: React.FC = () => {
   const f = useF();
@@ -531,20 +534,19 @@ const Q12: React.FC = () => {
   const lug = [[1720, -1], [600, 1], [760, 1], [920, 1], [1080, 1], [1260, -1], [1420, -1], [1580, -1], [1000, 1], [1300, -1]];
   // 3 (x 1080) le pasa el cuenco a 4 (x 1260) entre 45,0 y 45,6 s: sus brazos van hacia el centro, el cuenco cruza la mesa
   const pasa = { ...SENT, hD: 82, cD: 8, tronco: 4 };
-  const acc = (i: number) => (i === 0 ? gestos(0, 200, [{ ...SENT, hD: 55, cD: 95, hI: 50, cI: 100, tronco: 10 }, { ...SENT, hD: 78, cD: 70, hI: 70, cI: 82, tronco: 6 }, COME_B], 12)
-    : i === 4 ? [...comerFuerte(i).filter((k) => k.f < l(44.8)), { f: l(44.8), v: pasa }, { f: l(45.7), v: COME_P }, ...comerFuerte(i).filter((k) => k.f > l(46.0))]
+  const acc = (i: number) => (i === 4 ? [...comerFuerte(i).filter((k) => k.f < l(44.8)), { f: l(44.8), v: pasa }, { f: l(45.7), v: COME_P }, ...comerFuerte(i).filter((k) => k.f > l(46.0))]
     : i === 5 ? [...comerFuerte(i).filter((k) => k.f < l(45.0)), { f: l(45.0), v: pasa }, { f: l(45.8), v: COME_P }, ...comerFuerte(i).filter((k) => k.f > l(46.1))]
     : comerFuerte(i));
   const u = interpolate(f, [l(45.0), l(45.6)], [0, 1], { ...cl, easing: (t: number) => t * t * (3 - 2 * t) });
-  const cuencoX = 1080 + 62 + (1260 - 62 - 1080 - 62) * u, cuencoY = COCINA_PISO - 174 - 50 * Math.sin(u * Math.PI);
+  const cuencoX = 1080 + 82 + (1260 - 82 - 1080 - 82) * u, cuencoY = COCINA_PISO - 174 - 50 * Math.sin(u * Math.PI);
   // chicos de pie: Ben come de su lata con cuchara, Lily muerde un pan (ciclos propios)
   const nP = [gestos(0, 200, [{ hD: 40, cD: 120, cabeza: -6 }, { hD: 60, cD: 60, cabeza: 8, tronco: 6 }], 16), gestos(6, 200, [{ hD: 30, cD: 150, cabeza: -4 }, { hD: 50, cD: 70, cabeza: 6 }], 20)];
   const cam = camino([[-10, 1110, 600, 1.06], [l(45.2), 1105, 610, 1.13], [l(47.0) + 10, 1100, 618, 1.18]]);
   const nLatas = Math.min(9, Math.max(0, Math.floor(interpolate(f, [l(44.4), l(46.2)], [0, 9.99], cl))));
   return (
     <Escena Set={Cocina} pal={PAL} seed={51} claves={cam}
-      medio={<MesaLarga f={f} lug={lug} sillas={[640, 800, 960, 1120, 1300, 1460, 1620]} mesa={[520, 1680]} marcusSilla={1700} caras={(i) => (i % 2 ? "feliz" : "neutral")} acciones={acc} giran={l(45.9)} latasN={nLatas} cuchara cuencos mesaY={150} ninosX={[480, 340]} ninosPoses={nP}
-        extra={<>{f >= l(45.0) && f <= l(45.6) + 2 && <g transform={`translate(${cuencoX},${cuencoY})`}><path d="M-34,-4 Q-30,26 0,28 Q30,26 34,-4 Z" fill="#f2e6cf" stroke="#1c1416" strokeWidth={4} /><ellipse cx={0} cy={-4} rx={34} ry={8} fill="#c8763a" stroke="#1c1416" strokeWidth={3} /></g>}
+      medio={<MesaLarga f={f} lug={lug} sillas={[640, 800, 960, 1120, 1300, 1460, 1620]} mesa={[520, 1680]} marcusSilla={1700} caras={(i) => (i % 2 ? "feliz" : "neutral")} acciones={acc} giran={l(45.9)} latasN={nLatas} cuchara cuencos cuencoDx={82} mesaY={150} ninosX={[480, 340]} ninosPoses={nP}
+        extra={<>{<g opacity={ap(f, l(45.0), 6) * (1 - ap(f, l(45.6) - 4, 6))} transform={`translate(${cuencoX},${cuencoY})`}><path d="M-34,-4 Q-30,26 0,28 Q30,26 34,-4 Z" fill="#f2e6cf" stroke="#1c1416" strokeWidth={4} /><ellipse cx={0} cy={-4} rx={34} ry={8} fill="#c8763a" stroke="#1c1416" strokeWidth={3} /></g>}
           {/* fuente de papas al centro con vapor */}
           <g transform={`translate(1170,${COCINA_PISO - 170})`}><ellipse cx={0} cy={0} rx={70} ry={16} fill="#e9dcc0" stroke="#1c1416" strokeWidth={4} />{[-30, 0, 30, -15, 15].map((x, k) => <ellipse key={k} cx={x} cy={-10 - (k > 2 ? 14 : 0)} rx={20} ry={14} fill="#c9935a" stroke="#6a4424" strokeWidth={3} />)}{[0, 1, 2].map((k) => <path key={k} d={`M${-20 + k * 20},${-30 - ((f + k * 9) % 30)} q8,-10 0,-20`} stroke="#fff" strokeWidth={4} fill="none" opacity={0.6 * (1 - ((f + k * 9) % 30) / 30)} />)}</g></>} />}
       hud={<>
@@ -585,10 +587,13 @@ const Q14: React.FC = () => {
   const lv = l(53.8), gp = l(56.55);
   // (vuelta I) la lata se muestra con el brazo estirado a la altura del hombro, lejos de la cara (antes la tapaba en la mejilla);
   // entre 54,5 y 56,5 s el gesto cambia cada 10 cuadros (la lata sube/baja ±25 px y rota ±8°) y la cabeza asiente 2 veces
-  const alto = { hD: 74, cD: 6 };
-  const varia: Record<string, number>[] = [{ hD: 79, cD: 4, cabeza: 8, tronco: 2 }, { hD: 70, cD: 12, cabeza: -6 }, { hD: 77, cD: 6, cabeza: 9, tronco: 3 }, { hD: 68, cD: 14, cabeza: -5 }, { hD: 75, cD: 8, cabeza: 2 }];
-  const mp = [{ f: 0, v: "parado" }, { f: lv - 24, v: { hD: 80, cD: 10 } }, { f: lv, v: alto }, ...gestos(lv + 12, gp - 14, varia, 10),
-    { f: gp - 8, v: { hD: 92, cD: 8, tronco: -4 } }, { f: gp, v: { hD: 40, cD: 24, tronco: 16 } }, { f: gp + 7, v: { hD: 58, cD: 30, tronco: 10 } }, { f: gp + 16, v: "manosCintura" }];
+  // (vuelta J) la lata nunca sube a la altura de la cara: brazo a ~55° (mano a la altura del pecho), la lata queda abajo y
+  // adelante del mentón con aire; el golpe baja a la mesa y después la mano se QUEDA con la lata apoyada (nada de
+  // manosCintura, que la subía al costado de la cara en 57,0-57,2)
+  const alto = { hD: 52, cD: 8 };
+  const varia: Record<string, number>[] = [{ hD: 55, cD: 6, cabeza: 8, tronco: 2 }, { hD: 49, cD: 10, cabeza: -6 }, { hD: 54, cD: 6, cabeza: 9, tronco: 3 }, { hD: 48, cD: 12, cabeza: -5 }, { hD: 52, cD: 8, cabeza: 2 }];
+  const mp = [{ f: 0, v: "parado" }, { f: lv - 24, v: { hD: 48, cD: 10 } }, { f: lv, v: alto }, ...gestos(lv + 12, gp - 14, varia, 10),
+    { f: gp - 8, v: { hD: 58, cD: 8, tronco: -4 } }, { f: gp, v: { hD: 40, cD: 24, tronco: 16 } }, { f: gp + 7, v: { hD: 42, cD: 26, tronco: 10 } }, { f: gp + 16, v: { hD: 40, cD: 22, tronco: 6 } }];
   return (
     <Escena Set={Cocina} pal={PAL} seed={53}
       claves={camino([[-10, 1330, 600, 1.05], [l(51.0), 1380, 600, 1.1], [l(53.4), 1880, 590, 1.55], [l(55.5), 1912, 582, 1.63], [l(57.5) + 10, 1932, 576, 1.72]])}
@@ -597,18 +602,18 @@ const Q14: React.FC = () => {
   );
 };
 
-// ---------- E15 · 57:5-64:0 · la pila de latas se vuelve reloj de arena; caen de a una; Marcus lo da vuelta; CANS = TIME · A FEW YEARS (sin contador) ----------
+// ---------- E15 · 57:3-64:0 (corte seco, sin destello: vuelta J) · la pila de latas se vuelve reloj de arena; caen de a una; Marcus lo da vuelta; CANS = TIME · A FEW YEARS (sin contador) ----------
 const Q15: React.FC = () => {
   const f = useF();
-  const l = loc(57.5);
+  const l = loc(57.3); // (vuelta J) el plano arranca en el corte real (57,3 = cuadro 1719), sin pre-roll de cuadros negativos
   const k = interpolate(f, [l(58.6), l(63.8)], [0, 0.85], cl);
   // Marcus AGARRA el marco por el parante (dos manos, IK) y lo levanta: el reloj gira con sus manos hasta ~110°, él suelta y
   // la inercia lo termina de dar vuelta (frena con resorte); da un paso atrás, lo palmea y cruza los brazos.
-  const u = ap(f, 6, 40), e = u * u * (3 - 2 * u), th = 180 * (1 - e);
+  const u = ap(f, 12, 40), e = u * u * (3 - 2 * u), th = 180 * (1 - e);
   const CX = 960, CY = 640, SR = 0.7; // (vuelta I) +60: el reloj ya no roza la caja KCAL del HUD
   const rotP = (lx: number, ly: number) => { const r = (th * Math.PI) / 180; return { x: CX + (lx * Math.cos(r) - ly * Math.sin(r)) * SR, y: CY + (lx * Math.sin(r) + ly * Math.cos(r)) * SR }; };
-  const suelta = 18, ME = 2.0, MY = 1100; // (vuelta I) suelta antes y salta atrás: el parante que gira ya no pasa por el ala del sombrero
-  const mx = (ff: number) => interpolate(ff, [0, 18, 35, l(59.9), l(64.0) + 30], [1350, 1350, 1525, 1540, 1565], cl);
+  const suelta = 24, ME = 2.0, MY = 1100; // (vuelta I) suelta antes y salta atrás: el parante que gira ya no pasa por el ala del sombrero
+  const mx = (ff: number) => interpolate(ff, [0, 24, 41, l(59.9), l(64.0) + 30], [1350, 1350, 1525, 1540, 1565], cl);
   const agarre = (ff: number) => (ff < suelta ? 1 : 1 - ap(ff, suelta, 6));
   const ajuste = (p: Pose, ff: number): Pose => {
     const w = agarre(ff);
@@ -618,7 +623,7 @@ const Q15: React.FC = () => {
     const m = (a: number, b: number) => a + (b - a) * w;
     return { ...p, hD: m(p.hD, qI.hD), cD: m(p.cD, qI.cD), hI: m(p.hI, qI.hI), cI: m(p.cI, qI.cI) };
   };
-  const golpe = Math.sin(ap(f, 40, 8) * Math.PI) * 4; // el marco asienta (rebote corto) al terminar de girar
+  const golpe = Math.sin(ap(f, 46, 8) * Math.PI) * 4; // el marco asienta (rebote corto) al terminar de girar
   return (
     <Escena Set={Primer} pal={PAL} seed={54} setProps={{ fondo: "madera" }}
       claves={camino([[-10, 1100, 600, 1.12], [l(59.9), 1130, 590, 1.2], [l(64.0) + 10, 1165, 580, 1.28]])}
@@ -633,10 +638,10 @@ const Q15: React.FC = () => {
           <g transform={`translate(${CX},${CY}) scale(${SR})`}>{[-1, 1].map((sx) => <rect key={sx} x={sx * 205 - 12} y={-440} width={24} height={880} rx={8} fill="#7a5532" stroke="#2a1c12" strokeWidth={4} />)}</g>
         </g>
         <circle cx={CX} cy={CY} r={18} fill="#3a2a1c" stroke="#e9d3a8" strokeWidth={4} />
-        <A look={MARCUS_VERANO} escala={ME} ruta={[{ f: 0, x: 1350, y: MY }, { f: 18, x: 1350, y: MY }, { f: 21, x: 1354, y: MY, curva: "lineal" }, { f: 24, x: 1370, y: MY, curva: "lineal" }, { f: 35, x: 1525, y: MY, curva: "lineal" }, { f: l(59.9), x: 1540, y: MY }, { f: l(64.0) + 30, x: 1565, y: MY }]}
+        <A look={MARCUS_VERANO} seed={1} escala={ME} ruta={[{ f: 0, x: 1350, y: MY }, { f: 24, x: 1350, y: MY }, { f: 27, x: 1354, y: MY, curva: "lineal" }, { f: 30, x: 1370, y: MY, curva: "lineal" }, { f: 41, x: 1525, y: MY, curva: "lineal" }, { f: l(59.9), x: 1540, y: MY }, { f: l(64.0) + 30, x: 1565, y: MY }]}
           dir={[{ f: 0, v: -1 }]} caras={[{ f: 0, v: "determinado" }, { f: l(61.0), v: "duda" }, { f: l(62.8), v: "determinado" }]}
-          miradas={[{ f: 0, v: { x: -0.7, y: 0.4 } }, { f: 20, v: { x: -0.8, y: -0.1 } }, { f: 44, v: { x: -0.8, y: -0.2 } }]}
-          poses={[{ f: 0, v: { tronco: 34, cabeza: -8, pD: 24, rD: 40, pI: -10, rI: 10 } }, { f: suelta, v: { tronco: 30, cabeza: -7, pD: 20, rD: 34, pI: -8, rI: 9 } }, { f: suelta + 5, v: { tronco: 22, cabeza: -6, pD: 12, rD: 20, pI: -4, rI: 6 } }, { f: suelta + 10, v: { tronco: 14, cabeza: -5, pD: 6, rD: 10 } }, { f: suelta + 15, v: { tronco: 8, cabeza: -4 } }, { f: 44, v: "parado" },
+          miradas={[{ f: 0, v: { x: -0.7, y: 0.4 } }, { f: 26, v: { x: -0.8, y: -0.1 } }, { f: 50, v: { x: -0.8, y: -0.2 } }]}
+          poses={[{ f: 0, v: { tronco: 34, cabeza: -8, pD: 24, rD: 40, pI: -10, rI: 10 } }, { f: suelta, v: { tronco: 30, cabeza: -7, pD: 20, rD: 34, pI: -8, rI: 9 } }, { f: suelta + 5, v: { tronco: 22, cabeza: -6, pD: 12, rD: 20, pI: -4, rI: 6 } }, { f: suelta + 10, v: { tronco: 14, cabeza: -5, pD: 6, rD: 10 } }, { f: suelta + 15, v: { tronco: 8, cabeza: -4 } }, { f: 50, v: "parado" },
             { f: l(60.1), v: { hD: 70, cD: 40, tronco: 6 } }, { f: l(60.4), v: { hD: 62, cD: 30, tronco: 8 } }, { f: l(60.7), v: { hD: 70, cD: 40, tronco: 6 } }, { f: l(61.3), v: PIENSA }, { f: l(62.4), v: "manosCintura" }, { f: l(62.9), v: "brazosCruzados" }]}
           ajuste={ajuste} />
       </>}
@@ -1600,7 +1605,7 @@ export const PLANOS_A: [number, React.ReactNode, PlanoM["trans"]?][] = conChk([
   [0, <Q01 />], [4.9, <Q02 />, { tipo: "barrido", d: 12 }], [10.2, <Q03 />, { tipo: "corte" }], [13.2, <Q04 />], [16.9, <Q05 />, { tipo: "luz", d: 14 }],
   [23.0, <Q06 />, { tipo: "fundido", d: 18 }], [28.0, <Q07 />, { tipo: "barrido", d: 10 }], [31.5, <Q08 />], [34.0, <Q09 />], [37.5, <Q10 />],
   [40.5, <Q11 />, { tipo: "fundido", d: 14 }], [43.5, <Q12 />, { tipo: "cortina", d: 14, color: "#0b0810" }], [47.0, <Q13 />, { tipo: "fundido", d: 14 }], [50.2, <Q14 />, { tipo: "fundido", d: 14 }],
-  [57.5, <Q15 />, { tipo: "luz", d: 12 }], [64.0, <Q16 />, { tipo: "fundido", d: 14 }],
+  [57.3, <Q15 />, { tipo: "corte" }], [64.0, <Q16 />, { tipo: "fundido", d: 14 }],
   [69.1, <Q17 />, { tipo: "cortina", d: 14, color: "#0b0810" }], [71.8, <Q18 />, { tipo: "barrido", d: 10 }], [88.8, <Q19 />],
   [90.4, <Q20 />, { tipo: "luz", d: 12 }], [95.0, <Q21 />, { tipo: "barrido", d: 10 }], [98.8, <Q22 />, { tipo: "barrido", d: 10 }], [107.3, <Q23 />, { tipo: "luz", d: 12 }], [116.8, <Q24 />, { tipo: "barrido", d: 10 }],
   [120.1, <Q25 />, { tipo: "cortina", d: 14, color: "#0b0810" }], [124.3, <Q26 />], [127.7, <Q27 />, { tipo: "barrido", d: 10 }],
