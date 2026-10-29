@@ -1,0 +1,128 @@
+[
+{
+"k": "napkinMap",
+"mode": "iris",
+"at": 36.99,
+"out": 48.49,
+"imgAt": 37.99
+},
+{
+"k": "pot20",
+"mode": "drop",
+"at": 106.64,
+"out": 117.1,
+"imgAt": 107.64
+},
+{
+"k": "macTimer",
+"mode": "blinds",
+"at": 160.21,
+"out": 171.65,
+"imgAt": 161.21
+},
+{
+"k": "cheddar",
+"mode": "drop",
+"at": 194.98,
+"out": 206.48,
+"imgAt": 195.98
+},
+{
+"k": "onionClock",
+"mode": "iris",
+"at": 259.04,
+"out": 270.54,
+"imgAt": 260.04
+},
+{
+"k": "thursday",
+"mode": "wipe",
+"at": 314.43,
+"out": 322.79,
+"imgAt": 315.43
+},
+{
+"k": "fryTherm",
+"mode": "blinds",
+"at": 448.53,
+"out": 460.03,
+"imgAt": 449.53
+},
+{
+"k": "fiftyCents",
+"mode": "wipe",
+"at": 615.98,
+"out": 627.48,
+"imgAt": 616.98
+},
+{
+"k": "dredge",
+"mode": "blinds",
+"at": 718.31,
+"out": 729.81,
+"imgAt": 719.31
+},
+{
+"k": "bubbles",
+"mode": "iris",
+"at": 854.11,
+"out": 865.61,
+"imgAt": 855.11
+},
+{
+"k": "beanMash",
+"mode": "wipe",
+"at": 948.03,
+"out": 953.88,
+"imgAt": 949.03
+},
+{
+"k": "postcard",
+"mode": "drop",
+"at": 975.51,
+"out": 985.58,
+"imgAt": 976.51
+},
+{
+"k": "forkRidges",
+"mode": "blinds",
+"at": 1027.6,
+"out": 1039.1,
+"imgAt": 1028.6
+},
+{
+"k": "waterDance",
+"mode": "split",
+"at": 1102.41,
+"out": 1109.34,
+"imgAt": 1103.41
+},
+{
+"k": "steamSlits",
+"mode": "wipe",
+"at": 1229.38,
+"out": 1240.88,
+"imgAt": 1230.38
+},
+{
+"k": "juiceGlass",
+"mode": "iris",
+"at": 1440.89,
+"out": 1452.39,
+"imgAt": 1441.89
+},
+{
+"k": "nightClock",
+"mode": "wipe",
+"at": 1800.88,
+"out": 1811.31,
+"imgAt": 1801.88
+},
+{
+"k": "ticketRail",
+"mode": "split",
+"at": 1922.42,
+"out": 1930.56,
+"imgAt": 1923.42
+}
+]
