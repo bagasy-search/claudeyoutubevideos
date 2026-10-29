@@ -35,6 +35,8 @@ const maskOf = (m: Mode, p: number): string => {
 };
 
 // escenario: fondo + máscara de entrada/salida + cámara curva. children recibe tt (segundos desde at).
+// empuje suave en S a lo largo de todo el plano (nunca lineal)
+const PUSHQ = (tt: number, d: number) => { const q = Math.min(1, Math.max(0, tt / Math.max(4, d))); return q * q * (3 - 2 * q); };
 export const Stage: React.FC<{ t: number; h: H; mode: Mode; bg?: string; cam?: number; children: (tt: number) => React.ReactNode }> = ({ t, h, mode, bg, cam = 1, children }) => {
   const { at, out } = h;
   if (t < at - 0.05 || t > out + 0.85) return null;
@@ -52,7 +54,7 @@ export const Stage: React.FC<{ t: number; h: H; mode: Mode; bg?: string; cam?: n
     <AbsoluteFill style={{ background: `conic-gradient(from 168deg at 50% -12%, transparent 0deg, rgba(255,226,180,${0.05 + 0.015 * Math.sin(tt * 0.5)}) 12deg, transparent 24deg)`, mixBlendMode: "screen" }} />
     <AbsoluteFill style={{ background: "radial-gradient(ellipse 120% 90% at 50% 50%, transparent 55%, rgba(0,0,0,.55))" }} />
     <AbsoluteFill style={{ perspective: 2200, opacity: cl(inn * 1.6) * (1 - xo * 0.7) }}>
-      <AbsoluteFill style={{ transformStyle: "flat", perspective: 2200, transform: `translateZ(${(-300 * (1 - inn) - 650 * xo + 18 * Math.sin(tt * 0.35)) * cam}px) rotateY(${(7 * (1 - inn) + 1.8 * Math.sin(tt * 0.22 + 0.5) - 6 * xo) * cam}deg) rotateX(${(1.2 * Math.sin(tt * 0.18) + 6 * xo) * cam}deg)` }}>
+      <AbsoluteFill style={{ transformStyle: "flat", perspective: 2200, transform: `translateX(${22 * Math.sin(tt * 0.31) * cam}px) translateY(${10 * Math.sin(tt * 0.23 + 1) * cam}px) translateZ(${(-300 * (1 - inn) - 650 * xo + 120 * PUSHQ(tt, out - at) + 30 * Math.sin(tt * 0.4)) * cam}px) rotateY(${(7 * (1 - inn) + 4.5 * Math.sin(tt * 0.27 + 0.5) - 6 * xo) * cam}deg) rotateX(${(2.2 * Math.sin(tt * 0.2) + 6 * xo) * cam}deg)` }}>
         {children(tt)}
       </AbsoluteFill>
     </AbsoluteFill>
