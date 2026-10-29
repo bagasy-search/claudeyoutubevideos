@@ -15,17 +15,17 @@ const tazonGeo = lathe([[0, 0], [0.3, 0], [0.5, 0.12], [0.6, 0.3], [0.62, 0.34]]
 const H3Costales: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>{(tt) => {
   const hv = eio(tt, 2.6, 5.0);
   return <>
-    <Estudio t={tt} cam={[0, 1.55, 3.0]} look={[0, 0.3, 0.2]} orbit={0.12}>
-      {[-1, 1].map((s, i) => <group key={s} position={[s * 1.25, fall(tt, 0.1 + i * 0.25, 1.6), -1.0]} rotation={[0, -s * 0.3, 0]}>
+    <Estudio t={tt} cam={[0, 1.7, 3.6]} look={[0, 0.45, 0]} orbit={0.12}>
+      {[-1, 1].map((s, i) => <group key={s} position={[s * 1.25, fall(tt, 0.1 + i * 0.25, 0.8), -1.1]} rotation={[0, -s * 0.3, 0]} scale={0.8}>
         <mesh geometry={costalGeo} castShadow receiveShadow scale={[1, 1, 0.82]}><Yute /></mesh>
-        <mesh position={[0, 0.62, 0.47]}><planeGeometry args={[0.62, 0.34]} /><meshStandardMaterial map={papel("cos" + i, [i ? "2026" : "2025"], { size: 150 })} roughness={0.9} /></mesh></group>)}
+        <mesh position={[0, 1.13, 0]} rotation={[P2, 0, 0]}><torusGeometry args={[0.2, 0.045, 10, 28]} /><meshStandardMaterial color={i ? "#3f9a4a" : "#b8281c"} roughness={0.7} /></mesh></group>)}
       {[-1, 1].map((s, i) => { const nuevo = i === 1; return <group key={"t" + s} position={[s * 0.68, 0, 0.45]}>
         <mesh geometry={tazonGeo} castShadow receiveShadow>{M.vidrio()}</mesh>
         {Array.from({ length: 18 }, (_, j) => { const a = rn(j + i * 50, 1) * 6.28, r = Math.sqrt(rn(j + i * 50, 2)) * 0.36, at = 0.9 + j * 0.05 + i * 0.3;
           const bump = !nuevo && hv > 0.3 ? Math.abs(Math.sin((tt - 3) * 8 + j)) * 0.04 : 0;
-          return tt < at - 0.35 ? null : <Frijol key={j} p={[Math.cos(a) * r, 0.07 + (j % 3) * 0.06 + fall(tt, at, 0.9) + bump, Math.sin(a) * r]} rot={[rn(j, 3) * 3, rn(j, 4) * 6, 0]} s={0.085}
-            hinchado={nuevo ? hv : -0.15} c={nuevo ? "#7a3322" : "#3e160f"} />; })}
-        {nuevo && <mesh position={[0, 0.05 + 0.12 * hv, 0]}><cylinderGeometry args={[0.45, 0.32, 0.12 * hv + 0.001, 32]} />{M.liquido("#7a4a34", 0.85 * hv)}</mesh>}
+          return tt < at - 0.35 ? null : <Frijol key={j} p={[Math.cos(a) * r, 0.07 + (j % 3) * 0.06 + fall(tt, at, 0.5) + bump, Math.sin(a) * r]} rot={[rn(j, 3) * 3, rn(j, 4) * 6, 0]} s={0.085}
+            hinchado={nuevo ? 0.7 * hv : -0.15} c={nuevo ? "#6a2a1c" : "#3e160f"} />; })}
+        {nuevo && <mesh position={[0, 0.05 + 0.12 * hv, 0]}><cylinderGeometry args={[0.45, 0.32, 0.12 * hv + 0.001, 32]} />{M.liquido("#4a2218", 0.85 * hv)}</mesh>}
       </group>; })}
       <Vapor t={tt} p={[0.68, 0.3, 0.45]} o={0.38 * hv} h={1.0} s={0.3} spread={0.4} />
     </Estudio>
@@ -41,37 +41,40 @@ const dialTex = () => ctex("dial3", 512, 512, (g) => {
   g.strokeStyle = "#333"; g.lineWidth = 8; for (let i = 0; i <= 10; i++) { const a = P * 0.75 + (i / 10) * P * 1.5; g.beginPath(); g.moveTo(256 + Math.cos(a) * 150, 256 + Math.sin(a) * 150); g.lineTo(256 + Math.cos(a) * 120, 256 + Math.sin(a) * 120); g.stroke(); }
   g.strokeStyle = "#8a857c"; g.lineWidth = 16; g.beginPath(); g.arc(256, 256, 244, 0, 7); g.stroke();
 });
-const corteGeo = new THREE.LatheGeometry([[0, 0], [0.66, 0], [0.7, 0.04], [0.7, 0.74], [0.73, 0.78]].map(([r, y]) => new THREE.Vector2(r, y)), 48, P2 * 0.5, P * 1.5);
-const tapaGeo = new THREE.LatheGeometry([[0.74, 0], [0.7, 0.06], [0.5, 0.14], [0.2, 0.18], [0.001, 0.18]].map(([r, y]) => new THREE.Vector2(r, y)), 48, P2 * 0.5, P * 1.5);
+const ollaGeo = lathe([[0, 0], [0.66, 0], [0.7, 0.04], [0.7, 0.74], [0.73, 0.78]], 48);
+const tapaGeo = lathe([[0.74, 0], [0.7, 0.06], [0.5, 0.14], [0.2, 0.18], [0.001, 0.18]], 48);
 const H3Manometro: C = ({ t, h }) => <Stage t={t} h={h} mode="ring" mesa={false}>{(tt) => {
-  const n = phys(tt, 1.6, 3.2, 0.32), ang = lerp(P * 0.75, P * 1.92, cl(n)) + 0.03 * Math.sin(tt * 18) * cl(tt - 3.0);
-  const silba = cl((tt - 3.0) * 2), ring = cl((tt - 1.0) * 1.8), lvl = eio(tt, 0.4, 1.4);
+  const lvl = eio(tt, 0.7, 2.2), raya = cl((tt - 1.4) * 2) * (1 - cl((tt - 3.0) * 2)) + 0.25, tapa = eio(tt, 2.4, 3.1), lock = eio(tt, 3.1, 3.4);
+  const n = phys(tt, 3.4, 3.2, 0.32), ang = lerp(P * 0.75, P * 1.92, cl(n)) + 0.03 * Math.sin(tt * 18) * cl(tt - 4.4), silba = cl((tt - 4.4) * 2);
+  const pour = cl((tt - 0.7) * 4) * (1 - cl((tt - 2.2) * 4));
   return <>
-    <Estudio t={tt} cam={[0.35, 1.7, 3.7]} look={[0.2, 0.75, 0]} orbit={0.14}>
-      <group position={[-0.35, 0, 0]} rotation={[0, -0.5, 0]}>
-        <mesh position={[0, 0.03 + 0.25 * lvl, 0]}><cylinderGeometry args={[0.69, 0.69, 0.5 * lvl + 0.001, 48, 1, false, P2 * 0.5, P * 1.5]} />{M.liquido("#b9a07a", 0.8)}</mesh>
-        {Array.from({ length: 34 }, (_, i) => { const a = P2 * 0.5 + rn(i, 1) * P * 1.5, r = Math.sqrt(rn(i, 2)) * 0.6; return <Frijol key={i} p={[Math.sin(a) * r, 0.06 + (i % 4) * 0.06, Math.cos(a) * r]} rot={[rn(i, 3), rn(i, 4) * 6, 0]} s={0.06} hinchado={0.3} />; })}
-        <mesh geometry={corteGeo} castShadow receiveShadow>{M.cromo()}</mesh>
-        <mesh geometry={tapaGeo} position={[0, 0.78, 0]} castShadow>{M.cromo("#c9ccd1")}</mesh>
-        {/* raya de los 2/3: anillo dorado por adentro que se enciende */}
-        <mesh position={[0, 0.53, 0]} rotation={[P2, 0, 0]}><torusGeometry args={[0.69, 0.016, 8, 64, P * 1.5]} /><meshStandardMaterial color="#ffc04a" emissive="#ffb030" emissiveIntensity={2 * ring} /></mesh>
-        <group position={[0.18, 0.98, 0.1]} rotation={[0.3 * silba * Math.sin(tt * 26), 0, 0.3 * silba * Math.cos(tt * 23)]}>
-          <mesh position={[0, 0.08, 0]} castShadow><cylinderGeometry args={[0.06, 0.07, 0.16, 16]} />{M.cromo("#8a8d93")}</mesh></group>
-        {/* chorro de vapor que sisea */}
-        {Array.from({ length: 22 }, (_, i) => { const per = 0.9, k = ((tt * 1.6 + i / 22) % per) / per; return <sprite key={i} position={[0.18 + k * 0.35, 1.15 + k * 1.3, 0.1 + k * 0.1]} scale={[0.08 + k * 0.6, 0.08 + k * 0.6, 1]}>
-          <spriteMaterial color="#ffffff" transparent opacity={0.55 * silba * (1 - k)} depthWrite={false} /></sprite>; })}
+    <Estudio t={tt} cam={[0.2, 2.6, 3.6]} look={[0.15, 0.55, 0]} orbit={0.12}>
+      <group position={[-0.25, 0, 0]}>
+        <mesh position={[0, 0.03 + 0.26 * lvl, 0]}><cylinderGeometry args={[0.68, 0.68, 0.52 * lvl + 0.001, 48]} />{M.liquido("#8a6a4c", 0.92)}</mesh>
+        {Array.from({ length: 30 }, (_, i) => { const a = rn(i, 1) * 6.28, r = Math.sqrt(rn(i, 2)) * 0.6; return <Frijol key={i} p={[Math.cos(a) * r, 0.05 + 0.5 * lvl + 0.02 * Math.sin(tt * 2 + i), Math.sin(a) * r]} rot={[rn(i, 3), rn(i, 4) * 6, 0]} s={0.055} hinchado={0.3} />; })}
+        <mesh geometry={ollaGeo} castShadow receiveShadow><meshStandardMaterial color="#d8dade" roughness={0.18} metalness={1} side={THREE.DoubleSide} /></mesh>
+        {/* la raya de los 2/3 grabada por dentro: brilla mientras sube el agua */}
+        <mesh position={[0, 0.53, 0]} rotation={[P2, 0, 0]}><torusGeometry args={[0.695, 0.012, 8, 64]} /><meshStandardMaterial color="#ffc04a" emissive="#ffb030" emissiveIntensity={2.2 * raya} /></mesh>
+        {[-1, 1].map((k) => <RBox key={k} p={[k * 0.95, 0.7, 0]} s={[0.5, 0.07, 0.12]} r={0.03}><meshStandardMaterial color="#141210" roughness={0.5} /></RBox>)}
+        <group position={[lerp(1.6, 0, tapa), 0.78 + lerp(0.9, 0, tapa), 0]} rotation={[0, lock * 0.5, lerp(-0.6, 0, tapa)]}>
+          <mesh geometry={tapaGeo} castShadow><meshStandardMaterial color="#c9ccd1" roughness={0.18} metalness={1} side={THREE.DoubleSide} /></mesh>
+          <group position={[0.2, 0.2, 0]} rotation={[0.3 * silba * Math.sin(tt * 26), 0, 0.3 * silba * Math.cos(tt * 23)]}>
+            <mesh position={[0, 0.06, 0]} castShadow><cylinderGeometry args={[0.06, 0.07, 0.14, 16]} />{M.cromo("#8a8d93")}</mesh></group>
+          <group position={[-0.25, 0.34, 0.12]} rotation={[-0.5, 0, 0]} scale={1.25}>
+            <mesh rotation={[P2, 0, 0]} castShadow><cylinderGeometry args={[0.3, 0.3, 0.08, 48]} />{M.cromo()}</mesh>
+            <mesh position={[0, 0, 0.041]}><circleGeometry args={[0.27, 48]} /><meshStandardMaterial map={dialTex()} roughness={0.5} /></mesh>
+            <mesh position={[0, 0, 0.06]} rotation={[0, 0, -ang + P2]}><boxGeometry args={[0.022, 0.44, 0.01]} /><meshStandardMaterial color="#c0392b" roughness={0.4} /></mesh>
+            <mesh position={[0, 0, 0.065]}><circleGeometry args={[0.03, 20]} /><meshStandardMaterial color="#222" /></mesh>
+            <mesh position={[0, -0.2, -0.18]} rotation={[0.6, 0, 0]}><cylinderGeometry args={[0.03, 0.03, 0.3, 10]} />{M.cromo()}</mesh>
+          </group>
+        </group>
+        {/* chorro de vapor hacia la derecha (lejos del título) */}
+        {Array.from({ length: 22 }, (_, i) => { const k = (tt * 1.8 + i / 22) % 1; return <sprite key={i} position={[0.2 + k * 1.3, 1.05 + k * 0.55, 0.05]} scale={[0.08 + k * 0.5, 0.08 + k * 0.5, 1]}>
+          <spriteMaterial color="#ffffff" transparent opacity={0.6 * silba * (1 - k)} depthWrite={false} /></sprite>; })}
       </group>
-      {/* manómetro grande, al frente */}
-      <group position={[0.95, 0.95, 0.55]} rotation={[-0.12, -0.25, 0]} scale={1.7}>
-        <mesh rotation={[P2, 0, 0]} castShadow><cylinderGeometry args={[0.3, 0.3, 0.08, 48]} />{M.cromo()}</mesh>
-        <mesh position={[0, 0, 0.041]}><circleGeometry args={[0.27, 48]} /><meshStandardMaterial map={dialTex()} roughness={0.5} /></mesh>
-        <mesh position={[0, 0, 0.06]} rotation={[0, 0, -ang + P2]}><boxGeometry args={[0.022, 0.44, 0.01]} /><meshStandardMaterial color="#c0392b" roughness={0.4} /></mesh>
-        <mesh position={[0, 0, 0.065]}><circleGeometry args={[0.03, 20]} /><meshStandardMaterial color="#222" /></mesh>
-        <mesh position={[0, 0.03, 0.07]}><circleGeometry args={[0.27, 48]} />{M.vidrio()}</mesh>
-      </group>
+      {pour > 0.01 && <Chorro a={[-0.25, 1.8, 0.1]} b={[-0.25, 0.05 + 0.52 * lvl, 0.1]} r={0.05 * pour} c="#b8d8e2" o={0.55} />}
     </Estudio>
     <Head tt={tt} kick="TRUCO 14" title="LA OLLA EXPRÉS, SIN MIEDO" />
-    <Tag tt={tt} at={1.6} x={560} y={560} txt="HASTA 2/3" col={MZ} size={50} />
   </>;
 }}</Stage>;
 
@@ -83,16 +86,16 @@ const H3Capas: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" mesa={false}>{(t
     <Estudio t={tt} cam={[0, 3.3, 1.5]} look={[0, 0, 0.05]} orbit={0.2}>
       <mesh geometry={sartenGeo} castShadow receiveShadow><meshStandardMaterial color="#1c1a19" roughness={0.42} metalness={0.65} side={THREE.DoubleSide} /></mesh>
       <RBox p={[1.55, 0.17, 0]} s={[1.1, 0.07, 0.16]} r={0.03}><meshStandardMaterial color="#1c1a19" roughness={0.5} metalness={0.6} /></RBox>
-      {mel < 0.98 && <RBox p={[0, lerp(0.12, 0.03, mel) + fall(tt, 0.2, 1.3), 0]} s={[0.42, lerp(0.22, 0.02, mel), 0.3]} r={0.04}><meshPhysicalMaterial color="#f4ecd2" roughness={0.35} clearcoat={0.5} /></RBox>}
+      {mel < 0.98 && <RBox p={[0, lerp(0.12, 0.03, mel) + fall(tt, 0.2, 0.5), 0]} s={[0.42, lerp(0.22, 0.02, mel), 0.3]} r={0.04}><meshPhysicalMaterial color="#f4ecd2" roughness={0.35} clearcoat={0.5} /></RBox>}
       <mesh position={[0, 0.025, 0]} scale={[lerp(0.2, 0.86, mel), 1, lerp(0.2, 0.86, mel)]}><cylinderGeometry args={[1, 1, 0.01, 48]} /><meshPhysicalMaterial color="#e8c46a" roughness={0.04} clearcoat={1} transparent opacity={0.8 * mel} /></mesh>
       {/* chisporroteo: gotitas que saltan */}
       {Array.from({ length: 14 }, (_, i) => { const k = ((tt * 1.8 + rn(i, 1)) % 1); return <mesh key={"c" + i} position={[(rn(i, 2) - 0.5) * 1.4, 0.03 + Math.sin(k * P) * 0.25 * mel, (rn(i, 3) - 0.5) * 1.4]} scale={0.001 + 0.012 * mel}><sphereGeometry args={[1, 6, 4]} /><meshBasicMaterial color="#fff0c0" toneMapped={false} /></mesh>; })}
       {/* aros de cebolla: translúcidos, se doran */}
       {Array.from({ length: 9 }, (_, i) => { const at = 2.3 + i * 0.12, gold = eio(tt, at + 0.4, at + 2.0), a = rn(i, 4) * 6.28, r = 0.15 + rn(i, 5) * 0.5;
-        return tt < at - 0.3 ? null : <mesh key={"o" + i} position={[Math.cos(a) * r, 0.05 + fall(tt, at, 1.0), Math.sin(a) * r]} rotation={[P2 + (rn(i, 6) - 0.5) * 0.3, 0, 0]} castShadow>
+        return tt < at - 0.3 ? null : <mesh key={"o" + i} position={[Math.cos(a) * r, 0.05 + fall(tt, at, 0.45), Math.sin(a) * r]} rotation={[P2 + (rn(i, 6) - 0.5) * 0.3, 0, 0]} castShadow>
           <torusGeometry args={[0.1 + rn(i, 7) * 0.06, 0.022, 10, 28]} /><meshPhysicalMaterial color={new THREE.Color("#f4f1e8").lerp(new THREE.Color("#c98a3a"), gold)} roughness={0.2} transmission={0.35 * (1 - gold)} transparent opacity={0.92} clearcoat={0.6} /></mesh>; })}
       {Array.from({ length: 34 }, (_, i) => { const at = 4.0 + i * 0.03, a = rn(i, 8) * 6.28, r = Math.sqrt(rn(i, 9)) * 0.72;
-        return tt < at - 0.3 ? null : <Frijol key={"f" + i} p={[Math.cos(a) * r, 0.08 + fall(tt, at, 1.1), Math.sin(a) * r]} rot={[rn(i, 10) * 3, rn(i, 11) * 6, 0]} s={0.07} c="#5e2216" hinchado={0.45} />; })}
+        return tt < at - 0.3 ? null : <Frijol key={"f" + i} p={[Math.cos(a) * r, 0.08 + fall(tt, at, 0.45), Math.sin(a) * r]} rot={[rn(i, 10) * 3, rn(i, 11) * 6, 0]} s={0.07} c="#5e2216" hinchado={0.45} />; })}
       <Vapor t={tt} p={[0, 0.1, 0]} o={0.2 * mel + 0.35 * cl(fr)} h={1.4} s={0.45} spread={1.0} n={14} />
     </Estudio>
     <Head tt={tt} kick="TRUCO 16" title="PRIMERO LA MANTECA, BIEN CALIENTE" />
@@ -112,14 +115,15 @@ const H3Frasco: C = ({ t, h }) => <Stage t={t} h={h} mode="wipe" mesa={false}>{(
         <mesh geometry={frascoGeo} castShadow receiveShadow>{M.vidrio()}</mesh>
         <mesh position={[0, lerp(1.9, 1.08, tapa), 0]} rotation={[0, -tapa * 7, 0]} castShadow visible={tapa > 0.01}><cylinderGeometry args={[0.39, 0.39, 0.1, 40]} />{M.cromo("#c8a84a")}</mesh>
         <mesh position={[0, 0.5, 0.455]} scale={[lerp(1.4, 1, cl(et)), lerp(1.4, 1, cl(et)), 1]} rotation={[0, 0, -0.04]} visible={et > 0.01}>
-          <planeGeometry args={[0.6, 0.3]} /><meshStandardMaterial map={papel("caldo3", ["CALDO", "lunes"], { size: 88, bg: "#efe2b4" })} roughness={0.9} /></mesh>
+          <planeGeometry args={[0.6, 0.3]} /><meshStandardMaterial map={papel("caldo4", ["CALDO"], { size: 130, bg: "#efe2b4" })} roughness={0.9} /></mesh>
         <Onda p={[0, 0.06 + 0.62 * lvl, 0]} t={tt} a={1.7} r={0.4} /><Onda p={[0, 0.06 + 0.62 * lvl, 0]} t={tt} a={2.6} r={0.4} /><Onda p={[0, 0.06 + 0.62 * lvl, 0]} t={tt} a={3.4} r={0.4} />
         {pour > 0.05 && Array.from({ length: 10 }, (_, i) => { const k = (tt * 3 + rn(i, 1)) % 1; return <mesh key={i} position={[Math.cos(i) * k * 0.25, 0.06 + 0.62 * lvl + Math.sin(k * P) * 0.18, Math.sin(i) * k * 0.25]} scale={0.02 * (1 - k)}><sphereGeometry args={[1, 8, 6]} />{M.liquido("#c98a3a")}</mesh>; })}
       </group>
-      <group position={[-0.5, 1.55, 0]} rotation={[0, 0, -tilt * 1.15]}>
+      <group position={[-0.35, 1.15, 0]} rotation={[0, 0, -tilt * 1.05]}>
         <Olla p={[-0.55, -0.62, 0]} s={0.75} nivel={0.7 * (1 - lvl * 0.7)} caldo="#9a5a24" t={tt} />
       </group>
-      {pour > 0.01 && <Chorro a={[-0.05, 1.5, 0]} b={[0.45, 0.08 + 0.62 * lvl, 0]} r={0.045 * pour} c="#c98a3a" o={0.92} />}
+      {pour > 0.01 && [0, 1, 2].map((k) => { const y0 = 1.1, y1 = 0.08 + 0.62 * lvl, u0 = k / 3, u1 = (k + 1) / 3, w = (u: number) => 0.025 * Math.sin(tt * 10 + u * 9) * u;
+        return <Chorro key={k} a={[lerp(0.1, 0.45, u0 * u0) + w(u0), lerp(y0, y1, u0), 0]} b={[lerp(0.1, 0.45, u1 * u1) + w(u1), lerp(y0, y1, u1), 0]} r={0.034 * pour} c="#d99a48" o={0.62} />; })}
       <Vapor t={tt} p={[0.45, 1.0, 0]} o={0.3 * (1 - tapa)} h={0.8} s={0.28} spread={0.25} />
     </Estudio>
     <Head tt={tt} kick="TRUCO 19" title="EL CALDO SE GUARDA APARTE" />
@@ -131,11 +135,11 @@ const baseGeo = lathe([[0, 0], [0.5, 0], [0.48, 0.1], [0.36, 0.5], [0.34, 0.56]]
 const vasoGeo = lathe([[0, 0], [0.26, 0], [0.3, 0.05], [0.4, 1.0], [0.42, 1.05]]);
 const H3Licuadora: C = ({ t, h }) => <Stage t={t} h={h} mode="split" mesa={false}>{(tt) => {
   const run = cl((tt - 1.0) * 3) * (1 - cl((tt - 3.3) * 3)), cream = eio(tt, 1.5, 3.1), tilt = eio(tt, 3.6, 4.4) * (1 - eio(tt, 6.2, 6.8));
-  const flow = cl((tt - 4.3) * 3) * (1 - cl((tt - 6.0) * 3)), bowl = eio(tt, 4.4, 6.0), drop = fall(tt, 0.1, 1.5);
+  const flow = cl((tt - 4.3) * 3) * (1 - cl((tt - 6.0) * 3)), bowl = eio(tt, 4.4, 6.0), drop = 0, slide = 1 - eio(tt, 0, 0.9);
   const col = new THREE.Color("#5a2418").lerp(new THREE.Color("#7a4028"), cream);
   return <>
     <Estudio t={tt} cam={[0.35, 1.9, 3.9]} look={[0.3, 0.85, 0]} orbit={0.13}>
-      <group position={[-0.65, drop, 0]}>
+      <group position={[-0.65 - 2.2 * slide, drop, 0]}>
         <mesh geometry={baseGeo} castShadow receiveShadow><meshPhysicalMaterial color="#d8d2c4" roughness={0.3} clearcoat={0.6} /></mesh>
         <mesh position={[0, 0.28, 0.43]} rotation={[0.35, 0, run * 1.2]}><cylinderGeometry args={[0.09, 0.09, 0.06, 20]} />{M.cromo()}</mesh>
         <group position={[0, 0.56, 0]} rotation={[0, 0, -tilt * 1.25]}>
@@ -157,7 +161,7 @@ const H3Licuadora: C = ({ t, h }) => <Stage t={t} h={h} mode="split" mesa={false
         <mesh position={[0, 0.58, 0]} rotation={[P, 0, 0]}><sphereGeometry args={[0.5, 28, 14, 0, 6.28, 0, P2]} /><meshStandardMaterial color="#c8ccd2" metalness={0.9} roughness={0.3} wireframe /></mesh>
         <mesh position={[0, 0.59, 0]} rotation={[P2, 0, 0]}><torusGeometry args={[0.5, 0.025, 8, 40]} />{M.cromo()}</mesh>
         {Array.from({ length: 26 }, (_, i) => { const k = eio(tt, 4.6 + i * 0.05, 5.9); const a = rn(i, 4) * 6.28, r = rn(i, 5) * 0.3;
-          return <mesh key={i} position={[Math.cos(a) * r, 0.18 + rn(i, 6) * 0.05, Math.sin(a) * r]} rotation={[rn(i, 7) * 3, 0, rn(i, 8)]} scale={0.001 + k}><sphereGeometry args={[0.05, 10, 6, 0, 3.6]} /><meshStandardMaterial color="#2a0e08" roughness={0.6} side={THREE.DoubleSide} /></mesh>; })}
+          return <mesh key={i} position={[Math.cos(a) * r, 0.18 + rn(i, 6) * 0.05, Math.sin(a) * r]} rotation={[rn(i, 7) * 3, 0, rn(i, 8)]} scale={0.001 + k}><sphereGeometry args={[0.085, 12, 8, 0, 3.6]} /><meshStandardMaterial color="#2a0e08" roughness={0.6} side={THREE.DoubleSide} /></mesh>; })}
       </group>
       {flow > 0.01 && <Chorro a={[0.5, 1.4, 0.2]} b={[1.05, 0.6, 0.35]} r={0.05 * flow} c="#7a4028" o={0.96} />}
     </Estudio>
@@ -238,11 +242,12 @@ const H3Cajon: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>{(t
   const op = eio(tt, 0.4, 1.4), up = eio(tt, 1.5, 2.4), cov = eio(tt, 2.5, 3.3), ul = eio(tt, 4.0, 4.9);
   const pag = ctex("libreta3", 1024, 640, (g) => {
     g.fillStyle = "#f3ead2"; g.fillRect(0, 0, 1024, 640); g.strokeStyle = "rgba(80,110,160,.25)"; g.lineWidth = 3; for (let y = 90; y < 640; y += 70) { g.beginPath(); g.moveTo(40, y); g.lineTo(984, y); g.stroke(); }
-    g.fillStyle = "#1e2a4a"; g.textAlign = "center"; g.textBaseline = "middle"; g.font = `700 64px Caveat, "Segoe Script", cursive`; g.fillText("Los frijoles…", 512, 190);
-    g.font = `700 150px Caveat, "Segoe Script", cursive`; g.fillText("un día antes", 512, 380);
+    g.fillStyle = "#1e2a4a"; g.textAlign = "center"; g.textBaseline = "middle"; g.strokeStyle = "#1e2a4a"; g.lineWidth = 7; g.beginPath(); g.ellipse(512, 200, 120, 26, 0, 0, 7); g.moveTo(392, 200); g.quadraticCurveTo(400, 300, 512, 300); g.quadraticCurveTo(624, 300, 632, 200); g.stroke();
+    g.fillStyle = "#c9a64a"; g.beginPath(); g.arc(700, 110, 48, 0, 7); g.fill(); g.fillStyle = "#f3ead2"; g.beginPath(); g.arc(722, 96, 44, 0, 7); g.fill(); g.fillStyle = "#1e2a4a";
+    g.font = `700 150px Caveat, "Segoe Script", cursive`; g.fillText("un día antes", 512, 450);
   });
   return <>
-    <Estudio t={tt} cam={[0, 2.0, 3.6]} look={[0, 0.95, 0.4]} orbit={0.1}>
+    <Estudio t={tt} cam={[0, 2.1, 4.1]} look={[0, 0.8, 0.35]} orbit={0.1}>
       <RBox p={[0, 0.6, -0.8]} s={[2.8, 1.2, 1.2]} r={0.05}><meshStandardMaterial color="#6a4428" roughness={0.75} /></RBox>
       <group position={[0, 0.82, -0.8 + op * 0.7]}>
         <RBox p={[0, 0, 0.62]} s={[1.6, 0.34, 0.06]} r={0.03}><meshStandardMaterial color="#8a5a34" roughness={0.7} /></RBox>
@@ -251,7 +256,7 @@ const H3Cajon: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>{(t
       <group position={[0, lerp(0.8, 1.12, up), lerp(-0.5, 0.55, up) + op * 0.7 * (1 - up)]} rotation={[lerp(-P2, -0.62, up), 0, 0]}>
         <mesh position={[0, 0, -0.014]} castShadow><boxGeometry args={[1.32, 0.86, 0.024]} /><meshStandardMaterial color="#2f4a5e" roughness={0.95} /></mesh>
         <mesh position={[0, 0, 0.001]}><planeGeometry args={[1.26, 0.8]} /><meshStandardMaterial map={pag} roughness={0.9} /></mesh>
-        <mesh position={[-0.49 + 0.49 * ul, -0.16, 0.004]} scale={[Math.max(0.001, ul), 1, 1]}><planeGeometry args={[0.98, 0.022]} /><meshBasicMaterial color="#b8281c" /></mesh>
+        <mesh position={[-0.49 + 0.49 * ul, -0.255, 0.004]} scale={[Math.max(0.001, ul), 1, 1]}><planeGeometry args={[0.98, 0.022]} /><meshBasicMaterial color="#b8281c" /></mesh>
         <mesh position={[0.48, -0.5, 0.004]} rotation={[0, 0, 0.12]}><planeGeometry args={[0.06, 0.3]} /><meshStandardMaterial color="#b8281c" roughness={0.8} /></mesh>
         <group position={[0, 0.43, 0.016]} rotation={[cov * 2.95, 0, 0]}>
           <mesh position={[0, -0.43, 0]} castShadow><boxGeometry args={[1.32, 0.86, 0.024]} /><meshStandardMaterial color="#2f4a5e" roughness={0.95} /></mesh>

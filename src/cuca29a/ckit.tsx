@@ -41,8 +41,8 @@ export const Stage: React.FC<{ t: number; h: H; mode: Mode; tone?: string; cam?:
   if (t < at - 0.05 || t > out + 0.85) return null;
   const inn = phys(t, at, 3.8, 0.72), xo = eIn(t, out - 0.25, out + 0.75), p = cl(inn) * (1 - xo);
   if (p <= 0.004) return null;
-  const tt = t - at, mk = maskOf(mode, p), D = Math.max(4, out - at);
-  return <AbsoluteFill style={{ WebkitMaskImage: mk, maskImage: mk, fontFamily: FONT, color: TX } as React.CSSProperties}>
+  const tt = t - at, D = Math.max(4, out - at);
+  return <AbsoluteFill style={{ opacity: cl(p * 1.25), fontFamily: FONT, color: TX } as React.CSSProperties}>{/* fundido con profundidad: las máscaras (iris/persianas) se leían como agujeros y rayas */}
     <AbsoluteFill style={{ background: `radial-gradient(ellipse 75% 65% at 50% 46%, ${tone}, #070505 74%)` }} />
     {h.bg && <AbsoluteFill style={{ opacity: 0.6 }}><Img src={img(h.bg)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(16px) saturate(.9) brightness(.7)", transform: `scale(${1.2 + 0.03 * Math.sin(tt * 0.2)}) translateX(${-16 * tt / D}px)` }} /></AbsoluteFill>}
     <AbsoluteFill style={{ background: "linear-gradient(180deg, transparent 60%, rgba(255,180,110,.06) 74%, rgba(0,0,0,.4) 100%)" }} />
