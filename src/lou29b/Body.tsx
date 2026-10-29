@@ -13,6 +13,8 @@ import { HC1 } from "./lou_h1";
 import { HC2 } from "./lou_h2";
 import { HC3 } from "./lou_h3";
 import { R3X } from "./lou_b3d";
+import nudgeList from "./nudge.json";
+const NUDGE = new Set<number>(nudgeList as number[]);
 import { preload } from "./props3d";
 
 type Seg = [number, number, string, string];
@@ -91,7 +93,8 @@ const CTA: React.FC<{ t: number }> = ({ t }) => {
 };
 
 export const Body: React.FC = () => {
-  const t = useCurrentFrame() / 30;
+  // cuadros donde el 3D salía con un cuadro roto en el farm (swangle): se dibujan medio cuadro corrido
+  const fr = useCurrentFrame(), t = (fr + (NUDGE.has(fr) ? 0.5 : 0)) / 30;
   const fade = e(t, END - 1.2, END - 0.1);
   return <AbsoluteFill style={{ background: "#000" }}>
     {/* cámara a mano virtual (balanceo lento, no temblor) sobre todo lo filmado */}
