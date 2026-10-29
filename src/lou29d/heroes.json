@@ -1,0 +1,72 @@
+[
+{
+"k": "lean85",
+"mode": "wipe",
+"at": 144.1,
+"out": 155.03,
+"imgAt": 145.1
+},
+{
+"k": "dayTwo",
+"mode": "drop",
+"at": 228.59,
+"out": 240.09,
+"imgAt": 229.59
+},
+{
+"k": "tunaChunks",
+"mode": "blinds",
+"at": 297.67,
+"out": 309.17,
+"imgAt": 298.67
+},
+{
+"k": "beanCrock",
+"mode": "split",
+"at": 366.15,
+"out": 377.65,
+"imgAt": 367.15
+},
+{
+"k": "cheeseDrape",
+"mode": "iris",
+"at": 883.33,
+"out": 893.34,
+"imgAt": 884.33
+},
+{
+"k": "twiceFried",
+"mode": "wipe",
+"at": 898.47,
+"out": 909.97,
+"imgAt": 899.47
+},
+{
+"k": "cookDown",
+"mode": "drop",
+"at": 915.59,
+"out": 927.09,
+"imgAt": 916.59
+},
+{
+"k": "cornerCut",
+"mode": "iris",
+"at": 1409.45,
+"out": 1415.3,
+"imgAt": 1410.45
+},
+{
+"k": "spiceCan",
+"mode": "wipe",
+"at": 1576.37,
+"out": 1587.87,
+"imgAt": 1577.37
+},
+{
+"k": "crackers",
+"mode": "drop",
+"at": 1596.66,
+"out": 1608.16,
+"imgAt": 1597.66
+}
+]
