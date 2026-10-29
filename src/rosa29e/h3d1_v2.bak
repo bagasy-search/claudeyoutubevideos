@@ -1,0 +1,206 @@
+// rosa29e · bloque 1 rehecho en 3D (evaluador vuelta 1: «la olla parece un ícono», «parecen monedas», «¿dónde está la carne y el paño?»).
+// Cada pieza = UN objeto real que hace la idea, en la cocina de Rosa (mesa de tablas, azulejo, luz de ventana).
+import React, { useMemo } from "react";
+import * as THREE from "three";
+import { H, cl } from "./hkit";
+import { C3, Stage3, Kitchen, Cam, orbit, Pot, Lid, Fork, Meat, Steam, Spoon, Card, Towel, M, T, V, ease, ramp, spr, rnd, lerp, rbox } from "./k3d";
+
+type P = { t: number; h: H };
+const mtex = (w: number, h: number, draw: (g: CanvasRenderingContext2D) => void) => {
+  const cv = document.createElement("canvas"); cv.width = w; cv.height = h; draw(cv.getContext("2d")!);
+  const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; return t;
+};
+
+// ───────── 1 · SUELA: se levanta la tapa, el caldo está gris; el tenedor pincha una carne con forma de suela (costura y taco) y REBOTA
+const soleGeo = () => {
+  const s = new THREE.Shape(); // contorno de suela: punta ancha, cintura, taco
+  s.moveTo(-0.34, 0); s.bezierCurveTo(-0.36, 0.13, -0.18, 0.16, -0.06, 0.1); s.bezierCurveTo(0.04, 0.07, 0.1, 0.09, 0.2, 0.1);
+  s.bezierCurveTo(0.33, 0.1, 0.34, -0.1, 0.2, -0.1); s.bezierCurveTo(0.1, -0.09, 0.04, -0.07, -0.06, -0.1); s.bezierCurveTo(-0.18, -0.16, -0.36, -0.13, -0.34, 0);
+  const g = new THREE.ExtrudeGeometry(s, { depth: 0.05, bevelEnabled: true, bevelThickness: 0.012, bevelSize: 0.012, bevelSegments: 3, curveSegments: 24 });
+  g.rotateX(-Math.PI / 2); g.center(); return g;
+};
+export const SoleFork3: React.FC<P> = ({ t, h }) => {
+  const g = useMemo(soleGeo, []);
+  const stitch = useMemo(() => Array.from({ length: 34 }, (_, i) => { const a = (i / 34) * Math.PI * 2; return [Math.cos(a) * 0.29 * (1 - 0.25 * Math.abs(Math.sin(a * 2)) * 0.4), Math.sin(a) * 0.1] as [number, number]; }), []);
+  return <Stage3 t={t} h={h}>{(tt) => {
+    const lid = ramp(tt, 0.2, 1.1), poke = spr(tt, 1.9, 14, 0.25), lift = ramp(tt, 3.4, 4.6);
+    // el tenedor baja, pega, rebota (la carne no cede) y después la levanta pinchada
+    const fy = 0.95 - 0.33 * cl(poke) + 0.12 * Math.max(0, Math.sin((tt - 2.15) * 9)) * Math.exp(-Math.max(0, tt - 2.15) * 3) * (tt > 2.15 ? 1 : 0) + lift * 0.55;
+    const sy = 0.5 + lift * 0.3, sr = lift * 0.9;
+    const c = orbit(tt, [0.12, 1.25, 1.2], [0, 0.5, 0], 0.35);
+    return <C3><Cam p={c.p} l={c.l} fov={36} /><Kitchen />
+      <Pot fill={0.86} col="#5f5a52" rough={0.12} lidOff />
+      {lid < 0.999 && <Lid p={[lid * 1.1, 0.54 + Math.sin(Math.PI * lid) * 0.45, -lid * 0.5]} r={[0, 0, -lid * 0.9]} />}
+      <Steam tt={tt} p={[0, 0.55, 0]} o={0.35 * lid} n={10} h={1.1} />
+      <group position={[0.02, sy, 0.02]} rotation={[sr, 0.3, sr * 0.4]}>
+        <mesh geometry={g} castShadow receiveShadow><meshPhysicalMaterial color="#7d736a" map={T.meat()} roughness={0.55} clearcoat={0.5} /></mesh>
+        {stitch.map(([x, z], i) => <mesh key={i} position={[x, 0.04, z]} rotation={[0, -Math.atan2(z, x), 0]}><boxGeometry args={[0.022, 0.006, 0.006]} /><meshStandardMaterial color="#d8d0c0" roughness={0.6} /></mesh>)}
+        <mesh position={[0.23, -0.02, 0]}><boxGeometry args={[0.14, 0.05, 0.17]} /><meshPhysicalMaterial color="#6d635a" map={T.meat()} roughness={0.6} /></mesh>
+      </group>
+      {tt > 1.2 && <Fork p={[0.06, fy - lift * 0.25 + 1.2 * (1 - ramp(tt, 1.2, 1.9)), 0.05]} r={[0.15, 0.3, -0.12]} s={1.35} />}
+    </C3>;
+  }}</Stage3>;
+};
+
+// ───────── 2 · ALIANZAS: dos aros de oro ruedan de canto sobre el mantel bordado, chocan y se acuestan uno sobre otro; una puntada roja escribe 1964
+export const Alliances3: React.FC<P> = ({ t, h }) => {
+  const year = useMemo(() => mtex(1024, 256, (g) => {
+    g.clearRect(0, 0, 1024, 256); g.fillStyle = "#b3241c"; g.font = "900 210px Georgia, serif"; g.fillText("1964", 230, 205); g.globalCompositeOperation = "destination-out"; for (let y = 0; y < 256; y += 16) g.fillRect(0, y, 1024, 2); for (let x = 0; x < 1024; x += 16) g.fillRect(x, 0, 2, 256);
+  }), []);
+  return <Stage3 t={t} h={h}>{(tt) => {
+    const k = ease(tt / 1.6), land = ramp(tt, 1.5, 2.1), wr = ramp(tt, 2.1, 4.2);
+    const ring = (d: number) => {
+      const x = d * lerp(1.2, 0.07, k), roll = -d * (1 - k) * 9;
+      const tip = land * (Math.PI / 2) * 0.98, y = lerp(0.115, 0.024 + (d > 0 ? 0.03 : 0), land);
+      return <group position={[x, y, d * 0.02 * land]} rotation={[tip, 0, roll * (1 - land)]}>
+        <mesh material={M.gold()} castShadow><torusGeometry args={[0.095, 0.022, 32, 96]} /></mesh>
+      </group>;
+    };
+    year.repeat.set(Math.max(0.001, wr), 1);
+    const c = orbit(tt, [0.1, 0.36, 0.5], [0, 0.03, 0.06], 0.3, 0.015);
+    return <C3 bloom={0.6}><Cam p={c.p} l={c.l} fov={34} /><Kitchen wall={false} />
+      <Towel p={[0, 0.004, 0]} w={2.4} d={1.6} wave={0.004} a="#a52a22" b="#dccbb2" />
+      {ring(1)}{ring(-1)}
+      <mesh position={[-0.17 + 0.15 * wr, 0.011, 0.16]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[0.3 * Math.max(0.001, wr), 0.075]} /><meshStandardMaterial map={year} transparent roughness={0.9} /></mesh>
+    </C3>;
+  }}</Stage3>;
+};
+
+// ───────── 3 · DELANTAL: cae desde arriba y se engancha en un clavo de la pared de azulejos; se balancea y se asienta. «Carmen» bordado.
+const apronTex = () => mtex(512, 640, (g) => {
+  g.fillStyle = "#f1e6d2"; g.fillRect(0, 0, 512, 640);
+  for (let i = 0; i < 16; i++) { g.fillStyle = "rgba(170,40,40,.42)"; g.fillRect(i * 32, 0, 15, 640); g.fillRect(0, i * 40, 512, 18); }
+  g.fillStyle = "rgba(255,255,255,.18)"; g.fillRect(150, 380, 212, 150); g.strokeStyle = "#7a1d18"; g.setLineDash([8, 6]); g.lineWidth = 4; g.strokeRect(150, 380, 212, 150);
+  g.setLineDash([]); g.fillStyle = "#8a1a14"; g.font = "italic 700 64px Georgia, serif"; g.textAlign = "center"; g.fillText("Carmen", 256, 470);
+});
+const apronShape = () => {
+  const s = new THREE.Shape(); s.moveTo(-0.17, 0); s.lineTo(0.17, 0); s.lineTo(0.2, -0.32); s.quadraticCurveTo(0.34, -0.36, 0.36, -0.42); s.lineTo(0.38, -1.1); s.quadraticCurveTo(0, -1.16, -0.38, -1.1); s.lineTo(-0.36, -0.42); s.quadraticCurveTo(-0.34, -0.36, -0.2, -0.32); s.lineTo(-0.17, 0);
+  const g = new THREE.ShapeGeometry(s, 24); const pos = g.attributes.position as THREE.BufferAttribute, uv = g.attributes.uv as THREE.BufferAttribute;
+  for (let i = 0; i < pos.count; i++) { const x = pos.getX(i), y = pos.getY(i); uv.setXY(i, (x + 0.4) / 0.8, 1 + y / 1.16); pos.setZ(i, 0.02 * Math.sin(x * 14) * (-y)); }
+  g.computeVertexNormals(); return g;
+};
+export const ApronHook3: React.FC<P> = ({ t, h }) => {
+  const g = useMemo(apronShape, []), tx = useMemo(apronTex, []);
+  return <Stage3 t={t} h={h}>{(tt) => {
+    const fall = spr(tt, 0.25, 8, 0.32), sw = Math.sin((tt - 0.8) * 4.2) * 0.3 * Math.exp(-Math.max(0, tt - 0.8) * 1.3) * (tt > 0.8 ? 1 : 0);
+    const y = lerp(3.2, 1.55, cl(fall));
+    const c = orbit(tt, [0.22, 1.12, -0.45], [0, 1.0, -1.85], 0.25, 0.02);
+    return <C3><Cam p={c.p} l={c.l} fov={38} /><Kitchen />
+      <mesh position={[0, 1.6, -1.86]} rotation={[Math.PI / 2, 0, 0]} material={M.iron()} castShadow><cylinderGeometry args={[0.012, 0.012, 0.09, 12]} /></mesh>
+      <mesh position={[0, 1.6, -1.81]} material={M.iron()}><sphereGeometry args={[0.022, 16, 12]} /></mesh>
+      <group position={[0, y, -1.84]} rotation={[0, 0, sw]}>
+        <mesh position={[0, 0.06, 0]} material={M.matte("#e8dcc4", 0.9)} castShadow><torusGeometry args={[0.07, 0.012, 10, 32]} /></mesh>
+        <mesh geometry={g} position={[0, 0, 0.01]} castShadow receiveShadow><meshStandardMaterial map={tx} roughness={0.95} side={THREE.DoubleSide} /></mesh>
+        <mesh position={[0.1, -0.7, 0.035]} scale={[1, 1.25, 0.8]} castShadow><sphereGeometry args={[0.06, 24, 16]} /><meshStandardMaterial color="#f2d13a" roughness={0.45} /></mesh>
+      </group>
+    </C3>;
+  }}</Stage3>;
+};
+
+// ───────── 4 · LLAVERO: diez llaves de bronce con su etiqueta numerada caen de a una en el aro; la 4 se adelanta y brilla
+const tagTex = (n: number) => mtex(128, 160, (g) => {
+  g.fillStyle = "#efe2c2"; g.fillRect(0, 0, 128, 160); g.fillStyle = "#3a2a1a"; g.beginPath(); g.arc(64, 22, 10, 0, 6.3); g.fill();
+  g.fillStyle = n === 4 ? "#b3241c" : "#2b2118"; g.font = "900 92px Georgia, serif"; g.textAlign = "center"; g.fillText(String(n), 64, 135);
+});
+const Key: React.FC<{ n: number }> = ({ n }) => {
+  const tx = useMemo(() => tagTex(n), [n]); const br = M.gold();
+  return <group>
+    <mesh material={br} castShadow><torusGeometry args={[0.05, 0.014, 12, 32]} /></mesh>
+    <mesh position={[0, -0.17, 0]} material={br} castShadow><boxGeometry args={[0.022, 0.24, 0.012]} /></mesh>
+    <mesh position={[0.026, -0.265, 0]} material={br} castShadow><boxGeometry args={[0.032 + rnd(n, 1) * 0.012, 0.045, 0.012]} /></mesh>
+    <mesh position={[-0.07, -0.1, 0.012]} rotation={[0, 0, 0.25]} castShadow><boxGeometry args={[0.07, 0.09, 0.002]} /><meshStandardMaterial map={tx} roughness={0.9} /></mesh>
+  </group>;
+};
+export const KeyRing3: React.FC<P> = ({ t, h }) => {
+  return <Stage3 t={t} h={h}>{(tt) => {
+    const foc = ramp(tt, 4.4, 5.6);
+    const c = orbit(tt, [lerp(0.05, -0.03, foc), lerp(1.3, 1.24, foc), lerp(-0.95, -1.25, foc)], [lerp(0, -0.05, foc), lerp(1.24, 1.18, foc), -1.85], 0.2, 0.01);
+    return <C3 bloom={0.55}><Cam p={c.p} l={c.l} fov={lerp(40, 30, foc)} /><Kitchen />
+      <mesh position={[0, 1.45, -1.86]} rotation={[Math.PI / 2, 0, 0]} material={M.iron()}><cylinderGeometry args={[0.01, 0.01, 0.08, 12]} /></mesh>
+      <mesh position={[0, 1.4, -1.83]} material={M.gold()} castShadow><torusGeometry args={[0.07, 0.008, 12, 48]} /></mesh>
+      {Array.from({ length: 10 }, (_, i) => {
+        const a0 = 0.25 + i * 0.32, s = spr(tt, a0, 9, 0.3), th = Math.PI * (1.12 + i * 0.084), lit = i === 3 ? foc : 0;
+        const sw = Math.sin((tt - a0) * 6 + i) * 0.14 * Math.exp(-Math.max(0, tt - a0 - 0.3) * 1.6);
+        if (tt < a0 - 0.05) return null;
+        // cada llave enhebrada en su punto del aro y colgando por su peso (abanico abierto, nunca amontonadas)
+        const bx = Math.cos(th) * 0.07, by = 1.4 + Math.sin(th) * 0.07 + lerp(1.0, 0, cl(s));
+        return <group key={i} position={[bx, by, -1.82 + (i % 2) * 0.012 + lit * 0.07]} rotation={[0, 0, (th - Math.PI * 1.5) * 0.55 + sw]} scale={1 + lit * 0.3}><group position={[0, -0.05, 0]}><Key n={i + 1} /></group></group>;
+      })}
+    </C3>;
+  }}</Stage3>;
+};
+
+// ───────── 5 · SOBRE CON LACRE: el sobre llega deslizando; el lacre con el 4 se quiebra en dos; la solapa se abre y sube la tarjeta: la pileta tachada
+const sealTop = () => mtex(256, 256, (g) => { g.fillStyle = "#9c1d16"; g.fillRect(0, 0, 256, 256); g.strokeStyle = "#5e0c08"; g.lineWidth = 10; g.beginPath(); g.arc(128, 128, 96, 0, 6.3); g.stroke(); g.fillStyle = "#5e0c08"; g.font = "900 150px Georgia, serif"; g.textAlign = "center"; g.fillText("4", 128, 182); });
+const sinkTex = () => mtex(768, 512, (g) => {
+  g.fillStyle = "#d9c9a3"; g.fillRect(0, 0, 768, 512);
+  g.strokeStyle = "#2b2118"; g.lineWidth = 10; g.lineCap = "round"; g.strokeRect(180, 250, 400, 170); g.beginPath(); g.moveTo(380, 250); g.lineTo(380, 150); g.quadraticCurveTo(380, 110, 440, 110); g.lineTo(470, 110); g.stroke();
+  g.beginPath(); g.ellipse(380, 340, 120, 40, 0, 0, 6.3); g.stroke(); g.fillStyle = "#2b2118"; g.beginPath(); g.arc(380, 340, 14, 0, 6.3); g.fill();
+  g.strokeStyle = "#c0281e"; g.lineWidth = 26; g.beginPath(); g.moveTo(150, 90); g.lineTo(620, 460); g.moveTo(620, 90); g.lineTo(150, 460); g.stroke();
+});
+export const WaxSeal3: React.FC<P> = ({ t, h }) => {
+  const st = useMemo(sealTop, []), sk = useMemo(sinkTex, []);
+  return <Stage3 t={t} h={h}>{(tt) => {
+    const slide = spr(tt, 0.1, 6, 0.6), br = ramp(tt, 1.7, 2.1), flap = ramp(tt, 2.3, 3.1), card = spr(tt, 3.1, 7, 0.45);
+    const ex = lerp(1.8, 0, cl(slide));
+    const c = orbit(tt, [0.35, 0.8, 1.0], [0, 0.15, 0], 0.25, 0.02);
+    const paper = M.matte("#cdb98f", 0.85);
+    return <C3><Cam p={c.p} l={c.l} fov={34} /><Kitchen wall={false} />
+      <group position={[ex, 0.012, 0]} rotation={[0, (1 - cl(slide)) * 0.4, 0]}>
+        <mesh material={paper} castShadow receiveShadow><boxGeometry args={[0.9, 0.012, 0.58]} /></mesh>
+        {/* la tarjeta sale del sobre */}
+        <mesh position={[0, 0.02 + 0.32 * cl(card), -0.05 - 0.2 * cl(card)]} rotation={[-0.9 * cl(card), 0, 0]} castShadow><boxGeometry args={[0.78, 0.5, 0.004]} /><meshStandardMaterial map={sk} roughness={0.85} /></mesh>
+        {/* la solapa (bisagra atrás) */}
+        <group position={[0, 0.014, -0.29]} rotation={[-flap * 2.6, 0, 0]}>
+          <mesh position={[0, 0, 0.2]} rotation={[-Math.PI / 2, 0, 0]} material={paper} castShadow><shapeGeometry args={[(() => { const s = new THREE.Shape(); s.moveTo(-0.45, 0); s.lineTo(0.45, 0); s.lineTo(0, -0.4); s.lineTo(-0.45, 0); return s; })()]} /></mesh>
+        </group>
+        {/* el lacre: dos mitades que se separan con migas */}
+        {[1, -1].map((d) => <group key={d} position={[d * 0.06 * br, 0.03 + br * 0.02, 0.0 + 0.04 * br]} rotation={[0, 0, d * br * 0.5]}>
+          <mesh rotation={[0, d > 0 ? 0 : Math.PI, 0]} castShadow><cylinderGeometry args={[0.07, 0.075, 0.024, 32, 1, false, -Math.PI / 2, Math.PI]} /><meshPhysicalMaterial color="#9c1d16" map={st} roughness={0.3} clearcoat={0.8} /></mesh>
+        </group>)}
+        {br > 0 && Array.from({ length: 9 }, (_, i) => { const k = cl((tt - 1.75) / 0.6); return <mesh key={i} position={[(rnd(i, 1) - 0.5) * 0.25 * k, 0.03 + Math.max(0, 0.08 * Math.sin(Math.PI * k)) * rnd(i, 2), 0.05 + rnd(i, 3) * 0.1 * k]}><boxGeometry args={[0.012, 0.008, 0.01]} /><meshStandardMaterial color="#7d1610" roughness={0.4} /></mesh>; })}
+      </group>
+    </C3>;
+  }}</Stage3>;
+};
+
+// ───────── 6 · CUCHARA GASTADA: la cuchara de madera se lija en tres saltos de años (viruta que cae); los años ruedan en un contador de bronce
+export const SpoonWear3: React.FC<P> = ({ t, h }) => {
+  const YRS = [1964, 1985, 2005, 2025];
+  return <Stage3 t={t} h={h} over={(tt) => {
+    const step = [0.6, 2.2, 3.8].reduce((a, s) => a + cl((tt - s) / 0.7), 0), i = Math.floor(step), f = step - i;
+    const y0 = YRS[Math.min(3, i)], y1 = YRS[Math.min(3, i + 1)];
+    return <div style={{ position: "absolute", left: 1460, top: 170, padding: "10px 22px", borderRadius: 14, background: "linear-gradient(180deg,#3a2a18,#1c130a)", boxShadow: "0 18px 40px rgba(0,0,0,.6), inset 0 0 0 4px #b48a3c", overflow: "hidden", height: 120, width: 300 }}>
+      <div style={{ transform: `translateY(${-ease(f) * 120}px)` }}>
+        {[y0, y1].map((y, k) => <div key={k} style={{ height: 120, lineHeight: "120px", textAlign: "center", fontFamily: "Georgia, serif", fontWeight: 900, fontSize: 96, color: "#f4d38a", letterSpacing: 6 }}>{y}</div>)}
+      </div>
+    </div>;
+  }}>{(tt) => {
+    const w = [0.6, 2.2, 3.8].reduce((a, s) => a + spr(tt, s, 10, 0.5), 0) / 3;
+    const c = orbit(tt, [0.3, 0.42, 0.12], [-0.12, 0.03, -0.32], 0.25, 0.015);
+    return <C3><Cam p={c.p} l={c.l} fov={34} /><Kitchen wall={false} />
+      <Spoon p={[0, 0.045, 0]} r={[0, 0.5, 0]} s={1.5} wear={w} c={["#d29a5c", "#bf8448", "#a86f38", "#8e5a2c"][Math.min(3, Math.round(w * 3))]} />
+      {[0.6, 2.2, 3.8].map((s0, j) => Array.from({ length: 8 }, (_, i) => {
+        const k = cl((tt - s0 - 0.05) / 0.9); if (k <= 0 || k >= 1) return null;
+        return <mesh key={j * 10 + i} position={[0.17 - 0.1 * j + (rnd(i, j) - 0.5) * 0.25, 0.4 * (1 - k * k) * rnd(i, 5) + 0.01, -0.25 + rnd(i, j + 2) * 0.2]} rotation={[k * 6 * rnd(i, 3), k * 4, 0]}><boxGeometry args={[0.03, 0.004, 0.012]} /><meshStandardMaterial color="#d9a36a" roughness={0.8} /></mesh>;
+      }))}
+    </C3>;
+  }}</Stage3>;
+};
+
+// ───────── 7 · SECAR: plano cenital; la carne brilla mojada, el paño baja y aprieta; al levantarlo queda MATE y la mancha queda en el paño. Otro pedazo.
+export const Blot3: React.FC<P> = ({ t, h }) => {
+  const SEEDS = [3, 7, 11, 5, 9];
+  return <Stage3 t={t} h={h}>{(tt) => {
+    const press = (a: number) => ramp(tt, a, a + 0.5) * (1 - ramp(tt, a + 1.2, a + 1.7));
+    const p1 = press(0.5), p2 = press(3.0), x = tt < 2.6 ? -0.18 : lerp(-0.18, 0.2, ramp(tt, 2.4, 3.0));
+    const dry = (i: number) => i === 0 ? ramp(tt, 1.2, 1.7) : i === 1 ? ramp(tt, 3.7, 4.2) : 0;
+    const c = orbit(tt, [0.02, 1.35, 0.3], [0, 0, -0.02], 0.2, 0.02);
+    return <C3><Cam p={c.p} l={c.l} fov={38} /><Kitchen wall={false} />
+      <mesh position={[0, 0.03, 0]} geometry={rbox(1.2, 0.06, 0.8, 0.03)} material={M.wood("#d2a170")} castShadow receiveShadow />
+      {[0, 1].map((i) => <mesh key={'pd' + i} position={[[-0.18, 0.2][i], 0.061, [0.02, 0.0][i]]} rotation={[-Math.PI / 2, 0, 0]}><circleGeometry args={[0.16, 40]} /><meshPhysicalMaterial color="#6a1410" transparent opacity={0.7 * (1 - dry(i))} roughness={0.05} clearcoat={1} /></mesh>)}
+      {SEEDS.map((s, i) => <Meat key={i} seed={s} p={[[-0.18, 0.2, 0.42, -0.4, 0.05][i], 0.1, [0.02, 0.0, -0.16, -0.2, 0.22][i]]} r={[0, s, 0]} s={0.75} col={i < 2 ? "#a63a2e" : "#9c3328"} shine={i < 2 ? 1 - 0.95 * dry(i) : 1} />)}
+      <Towel p={[x, 0.11 + 0.5 * (1 - Math.max(p1, p2)), 0.02]} r={[0, 0.2, 0]} w={0.42} d={0.36} wave={0.012} a="#2f5f9a" b="#d9d2c4" wet={tt > 1.5 ? 1 : 0} />
+    </C3>;
+  }}</Stage3>;
+};
