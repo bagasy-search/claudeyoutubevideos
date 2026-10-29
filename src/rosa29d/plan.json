@@ -1,0 +1,2052 @@
+{
+"segs": [
+[
+3.2,
+11.2,
+"shot",
+"v01_lonchera"
+],
+[
+11.2,
+15.27,
+"shot",
+"n_nina_rie"
+],
+[
+19.08,
+24.13,
+"shot",
+"n_sin_hambre"
+],
+[
+24.13,
+29.18,
+"shot",
+"n_achicoria_err"
+],
+[
+29.18,
+33.15,
+"shot",
+"n_lonchera"
+],
+[
+37.34,
+41.85,
+"shot",
+"n_arrozhuevo_err"
+],
+[
+41.85,
+46.37,
+"shot",
+"n_azucar_err"
+],
+[
+46.37,
+50.88,
+"shot",
+"n_callos_err"
+],
+[
+56.93,
+66.53,
+"shot",
+"n_carnelata_err"
+],
+[
+66.53,
+68.02,
+"shot",
+"n_cascaras_err"
+],
+[
+72.17,
+78.2,
+"shot",
+"n_fideos_err"
+],
+[
+78.2,
+82.4,
+"shot",
+"f_pasa"
+],
+[
+82.4,
+86.61,
+"shot",
+"n_frijoles_err"
+],
+[
+90.16,
+96.07,
+"shot",
+"n_gelatina_err"
+],
+[
+96.07,
+101.98,
+"shot",
+"n_margarina_err"
+],
+[
+101.98,
+103.39,
+"shot",
+"f_libro"
+],
+[
+107.29,
+111.18,
+"shot",
+"n_panela_err"
+],
+[
+125.06,
+126.18,
+"shot",
+"n_pangrasa_err"
+],
+[
+126.18,
+129.58,
+"shot",
+"f_azucar"
+],
+[
+129.58,
+134.3,
+"shot",
+"n_azucar_rec"
+],
+[
+134.3,
+139.02,
+"shot",
+"n_panmojado_err"
+],
+[
+142.9,
+148.62,
+"shot",
+"n_polenta_err"
+],
+[
+148.62,
+154.34,
+"shot",
+"n_polvo_err"
+],
+[
+159.28,
+164.3,
+"shot",
+"n_azucar_ing"
+],
+[
+164.3,
+169.32,
+"shot",
+"n_azucar_paso"
+],
+[
+169.32,
+174.34,
+"shot",
+"n_repollo_err"
+],
+[
+177.96,
+181.24,
+"shot",
+"f_azucar_come"
+],
+[
+181.24,
+184.6,
+"shot",
+"f_achicoria"
+],
+[
+184.6,
+188.71,
+"shot",
+"n_achicoria_rec"
+],
+[
+188.71,
+192.82,
+"shot",
+"n_sardinas_err"
+],
+[
+197.53,
+204.18,
+"shot",
+"n_sopasobre_err"
+],
+[
+204.18,
+206.1,
+"shot",
+"n_tortilla_err"
+],
+[
+206.1,
+210.45,
+"shot",
+"n_achicoria_ing"
+],
+[
+214.05,
+220.45,
+"shot",
+"n_achicoria_paso"
+],
+[
+220.45,
+226.84,
+"shot",
+"n_achicoria"
+],
+[
+226.84,
+230.1,
+"shot",
+"f_achicoria_come"
+],
+[
+234.2,
+237.46,
+"shot",
+"f_margarina"
+],
+[
+237.46,
+241.22,
+"shot",
+"n_margarina_rec"
+],
+[
+253.68,
+259.8,
+"shot",
+"n_margarina_ing"
+],
+[
+259.8,
+265.92,
+"shot",
+"n_margarina_paso"
+],
+[
+269.63,
+278.22,
+"shot",
+"n_margarina"
+],
+[
+278.22,
+284.7,
+"shot",
+"f_margarina_come"
+],
+[
+288.44,
+292.69,
+"shot",
+"x_002"
+],
+[
+292.69,
+296.93,
+"shot",
+"x_003"
+],
+[
+296.93,
+301.18,
+"shot",
+"n_polvo_rec"
+],
+[
+308.56,
+314.84,
+"shot",
+"n_polvo_ing"
+],
+[
+314.84,
+321.12,
+"shot",
+"n_polvo_paso"
+],
+[
+326.12,
+331.29,
+"shot",
+"x_004"
+],
+[
+331.29,
+336.46,
+"shot",
+"x_005"
+],
+[
+336.46,
+340.51,
+"shot",
+"f_polvo_come"
+],
+[
+345.22,
+351.2,
+"shot",
+"n_panela_rec"
+],
+[
+351.2,
+355.39,
+"shot",
+"x_006"
+],
+[
+366.28,
+370.95,
+"shot",
+"n_panela_ing"
+],
+[
+370.95,
+375.61,
+"shot",
+"n_panela_paso"
+],
+[
+379.17,
+383.81,
+"shot",
+"x_007"
+],
+[
+383.81,
+388.46,
+"shot",
+"n_panela"
+],
+[
+388.46,
+392.15,
+"shot",
+"f_panela_come"
+],
+[
+396.26,
+398.48,
+"shot",
+"f_tortilla"
+],
+[
+398.48,
+404.07,
+"shot",
+"n_tortilla_rec"
+],
+[
+416.26,
+421.4,
+"shot",
+"x_008"
+],
+[
+421.4,
+426.49,
+"shot",
+"n_tortilla_ing"
+],
+[
+426.49,
+431.57,
+"shot",
+"n_tortilla_paso"
+],
+[
+436.23,
+443.64,
+"shot",
+"n_tortilla"
+],
+[
+443.64,
+448.54,
+"shot",
+"f_tortilla_come"
+],
+[
+452.99,
+456.87,
+"shot",
+"x_009"
+],
+[
+456.87,
+466.15,
+"shot",
+"n_sopasobre_rec"
+],
+[
+466.15,
+468.39,
+"shot",
+"x_010"
+],
+[
+471.69,
+476.82,
+"shot",
+"x_011"
+],
+[
+476.82,
+480.58,
+"shot",
+"n_sopasobre_ing"
+],
+[
+480.58,
+484.33,
+"shot",
+"n_sopasobre_paso"
+],
+[
+488.51,
+497.69,
+"shot",
+"n_sopasobre"
+],
+[
+497.69,
+499.8,
+"shot",
+"f_sopasobre_come"
+],
+[
+499.8,
+500.99,
+"shot",
+"f_mortadela"
+],
+[
+505.85,
+513.99,
+"shot",
+"n_mortadela_rec"
+],
+[
+513.99,
+519.68,
+"shot",
+"x_013"
+],
+[
+523.77,
+531.77,
+"shot",
+"v06_mortadela"
+],
+[
+531.77,
+534.3,
+"shot",
+"n_mortadela_ing"
+],
+[
+534.3,
+536.83,
+"shot",
+"n_mortadela_paso"
+],
+[
+542.05,
+542.89,
+"shot",
+"n_mortadela"
+],
+[
+542.89,
+550.79,
+"shot",
+"n_mortadela_err"
+],
+[
+550.79,
+553.29,
+"shot",
+"f_mortadela_come"
+],
+[
+553.29,
+557.24,
+"shot",
+"f_salchichas"
+],
+[
+561.99,
+568.18,
+"shot",
+"x_014"
+],
+[
+568.18,
+574.36,
+"shot",
+"n_salchichas_rec"
+],
+[
+580.28,
+586.46,
+"shot",
+"n_salchichas_ing"
+],
+[
+586.46,
+592.65,
+"shot",
+"n_salchichas_paso"
+],
+[
+597.91,
+599.75,
+"shot",
+"n_salchichas"
+],
+[
+599.75,
+605.23,
+"shot",
+"n_salchichas_err"
+],
+[
+605.23,
+608.15,
+"shot",
+"f_salchichas_come"
+],
+[
+608.15,
+611.53,
+"shot",
+"f_fideos"
+],
+[
+611.53,
+612.93,
+"shot",
+"n_fideos_rec"
+],
+[
+617.1,
+623.04,
+"shot",
+"x_015"
+],
+[
+623.04,
+628.99,
+"shot",
+"x_016"
+],
+[
+628.99,
+630.13,
+"shot",
+"n_fideos_ing"
+],
+[
+634.63,
+640.55,
+"shot",
+"n_fideos_paso"
+],
+[
+640.55,
+646.47,
+"shot",
+"n_fideos"
+],
+[
+655.07,
+661.43,
+"shot",
+"f_fideos_come"
+],
+[
+661.43,
+664.89,
+"shot",
+"f_cascaras"
+],
+[
+668.64,
+673.44,
+"shot",
+"x_017"
+],
+[
+673.44,
+678.25,
+"shot",
+"x_018"
+],
+[
+678.25,
+683.05,
+"shot",
+"n_cascaras_rec"
+],
+[
+689.67,
+695.01,
+"shot",
+"n_cascaras_ing"
+],
+[
+695.01,
+700.34,
+"shot",
+"n_cascaras_paso"
+],
+[
+704.57,
+715.91,
+"shot",
+"n_cascaras"
+],
+[
+715.91,
+718.21,
+"shot",
+"f_cascaras_come"
+],
+[
+722.05,
+724.77,
+"shot",
+"f_gelatina"
+],
+[
+724.77,
+729.62,
+"shot",
+"x_019"
+],
+[
+729.62,
+734.47,
+"shot",
+"n_gelatina_rec"
+],
+[
+749.73,
+753.56,
+"shot",
+"n_gelatina_ing"
+],
+[
+757.88,
+763.97,
+"shot",
+"n_gelatina_paso"
+],
+[
+763.97,
+770.06,
+"shot",
+"n_gelatina"
+],
+[
+773.39,
+776.21,
+"shot",
+"x_021"
+],
+[
+776.21,
+780.65,
+"shot",
+"f_gelatina_come"
+],
+[
+780.65,
+785.15,
+"shot",
+"f_panmojado"
+],
+[
+790.52,
+798.15,
+"shot",
+"x_022"
+],
+[
+798.15,
+805.77,
+"shot",
+"n_panmojado_rec"
+],
+[
+810.66,
+815.17,
+"shot",
+"n_panmojado_ing"
+],
+[
+815.17,
+819.67,
+"shot",
+"n_panmojado_paso"
+],
+[
+819.67,
+824.18,
+"shot",
+"n_panmojado"
+],
+[
+829.01,
+831.71,
+"shot",
+"f_polenta"
+],
+[
+831.71,
+837.32,
+"shot",
+"x_023"
+],
+[
+837.32,
+842.92,
+"shot",
+"n_polenta_rec"
+],
+[
+854.38,
+861.85,
+"shot",
+"n_polenta_ing"
+],
+[
+866.47,
+872.34,
+"shot",
+"x_024"
+],
+[
+872.34,
+878.2,
+"shot",
+"n_polenta_paso"
+],
+[
+882.05,
+885.95,
+"shot",
+"x_025"
+],
+[
+885.95,
+888.95,
+"shot",
+"f_polenta_come"
+],
+[
+888.95,
+897.34,
+"shot",
+"n_almacen_lista"
+],
+[
+963.85,
+967.77,
+"shot",
+"f_corazon"
+],
+[
+967.77,
+972.63,
+"shot",
+"n_corazon_rec"
+],
+[
+978.1,
+990.37,
+"shot",
+"x_026"
+],
+[
+995.0,
+1002.34,
+"shot",
+"n_corazon_ing"
+],
+[
+1002.34,
+1009.68,
+"shot",
+"n_corazon_paso"
+],
+[
+1013.21,
+1019.81,
+"shot",
+"x_027"
+],
+[
+1019.81,
+1026.41,
+"shot",
+"x_029"
+],
+[
+1031.25,
+1038.28,
+"shot",
+"n_corazon_err"
+],
+[
+1038.28,
+1043.52,
+"shot",
+"f_corazon_come"
+],
+[
+1043.52,
+1046.78,
+"shot",
+"f_patitas"
+],
+[
+1052.04,
+1057.69,
+"shot",
+"x_030"
+],
+[
+1057.69,
+1063.34,
+"shot",
+"n_patitas_rec"
+],
+[
+1063.34,
+1065.65,
+"shot",
+"n_patitas_ing"
+],
+[
+1071.45,
+1077.75,
+"shot",
+"n_patitas_paso"
+],
+[
+1077.75,
+1084.05,
+"shot",
+"n_patitas"
+],
+[
+1088.68,
+1094.36,
+"shot",
+"x_031"
+],
+[
+1094.36,
+1099.84,
+"shot",
+"n_patitas_err"
+],
+[
+1099.84,
+1103.22,
+"shot",
+"f_patitas_come"
+],
+[
+1106.98,
+1113.97,
+"shot",
+"x_032"
+],
+[
+1113.97,
+1120.95,
+"shot",
+"n_callos_rec"
+],
+[
+1126.29,
+1128.26,
+"shot",
+"x_033"
+],
+[
+1128.26,
+1132.44,
+"shot",
+"n_callos_ing"
+],
+[
+1132.44,
+1136.62,
+"shot",
+"n_callos_paso"
+],
+[
+1136.62,
+1140.8,
+"shot",
+"n_callos"
+],
+[
+1144.5,
+1149.45,
+"shot",
+"x_034"
+],
+[
+1149.45,
+1154.4,
+"shot",
+"x_035"
+],
+[
+1154.4,
+1159.35,
+"shot",
+"x_036"
+],
+[
+1164.97,
+1167.06,
+"shot",
+"x_037"
+],
+[
+1167.06,
+1173.76,
+"shot",
+"f_callos_come"
+],
+[
+1173.76,
+1176.9,
+"shot",
+"f_carnelata"
+],
+[
+1181.58,
+1189.36,
+"shot",
+"x_038"
+],
+[
+1189.36,
+1197.14,
+"shot",
+"n_carnelata_rec"
+],
+[
+1201.26,
+1205.78,
+"shot",
+"n_carnelata_ing"
+],
+[
+1205.78,
+1210.3,
+"shot",
+"n_carnelata_paso"
+],
+[
+1210.3,
+1214.82,
+"shot",
+"n_carnelata"
+],
+[
+1219.48,
+1223.56,
+"shot",
+"x_040"
+],
+[
+1223.56,
+1230.8,
+"shot",
+"f_carnelata_come"
+],
+[
+1234.5,
+1243.41,
+"shot",
+"n_arrozhuevo_rec"
+],
+[
+1243.41,
+1248.63,
+"shot",
+"x_041"
+],
+[
+1252.82,
+1256.99,
+"shot",
+"n_arrozhuevo_ing"
+],
+[
+1256.99,
+1261.17,
+"shot",
+"n_arrozhuevo_paso"
+],
+[
+1261.17,
+1265.35,
+"shot",
+"n_arrozhuevo"
+],
+[
+1270.47,
+1275.7,
+"shot",
+"x_042"
+],
+[
+1275.7,
+1282.62,
+"shot",
+"f_arrozhuevo_come"
+],
+[
+1306.32,
+1311.71,
+"shot",
+"x_047"
+],
+[
+1311.71,
+1317.1,
+"shot",
+"f_cuenta"
+],
+[
+1321.75,
+1330.4,
+"shot",
+"f_mercado"
+],
+[
+1330.4,
+1337.03,
+"shot",
+"n_mercado"
+],
+[
+1342.59,
+1345.48,
+"shot",
+"x_048"
+],
+[
+1345.48,
+1350.78,
+"shot",
+"n_carniceria_huesos"
+],
+[
+1350.78,
+1356.08,
+"shot",
+"n_semana_ollas"
+],
+[
+1362.0,
+1366.53,
+"shot",
+"x_049"
+],
+[
+1366.53,
+1374.05,
+"shot",
+"x_050"
+],
+[
+1377.86,
+1381.64,
+"shot",
+"f_sardinas"
+],
+[
+1381.64,
+1387.26,
+"shot",
+"x_051"
+],
+[
+1387.26,
+1392.88,
+"shot",
+"n_sardinas_rec"
+],
+[
+1396.46,
+1402.6,
+"shot",
+"x_052"
+],
+[
+1402.6,
+1408.74,
+"shot",
+"x_053"
+],
+[
+1414.4,
+1422.4,
+"shot",
+"v05_sardinas"
+],
+[
+1422.4,
+1426.17,
+"shot",
+"n_sardinas_ing"
+],
+[
+1426.17,
+1429.94,
+"shot",
+"n_sardinas_paso"
+],
+[
+1434.18,
+1436.12,
+"shot",
+"x_054"
+],
+[
+1436.12,
+1441.26,
+"shot",
+"f_sardinas_come"
+],
+[
+1441.26,
+1444.86,
+"shot",
+"f_huesos"
+],
+[
+1444.86,
+1448.31,
+"shot",
+"n_huesos_rec"
+],
+[
+1452.83,
+1457.02,
+"shot",
+"x_055"
+],
+[
+1457.02,
+1461.22,
+"shot",
+"x_056"
+],
+[
+1461.22,
+1465.41,
+"shot",
+"x_057"
+],
+[
+1469.22,
+1474.7,
+"shot",
+"n_huesos_ing"
+],
+[
+1474.7,
+1480.18,
+"shot",
+"n_huesos_paso"
+],
+[
+1480.18,
+1485.66,
+"shot",
+"n_huesos"
+],
+[
+1490.6,
+1496.5,
+"shot",
+"x_058"
+],
+[
+1496.5,
+1502.4,
+"shot",
+"x_059"
+],
+[
+1506.0,
+1508.58,
+"shot",
+"n_huesos_err"
+],
+[
+1508.58,
+1512.0,
+"shot",
+"f_huesos_come"
+],
+[
+1512.0,
+1515.62,
+"shot",
+"f_frijoles"
+],
+[
+1515.62,
+1518.65,
+"shot",
+"n_frijoles_rec"
+],
+[
+1522.8,
+1528.95,
+"shot",
+"x_060"
+],
+[
+1528.95,
+1535.1,
+"shot",
+"x_061"
+],
+[
+1535.1,
+1537.85,
+"shot",
+"v07_frijoles"
+],
+[
+1542.07,
+1548.03,
+"shot",
+"x_062"
+],
+[
+1548.03,
+1553.98,
+"shot",
+"n_frijoles_ing"
+],
+[
+1559.9,
+1565.23,
+"shot",
+"x_063"
+],
+[
+1565.23,
+1573.91,
+"shot",
+"f_frijoles_come"
+],
+[
+1573.91,
+1574.54,
+"shot",
+"f_higado"
+],
+[
+1580.73,
+1586.88,
+"shot",
+"n_higado_rec"
+],
+[
+1586.88,
+1591.16,
+"shot",
+"x_064"
+],
+[
+1591.16,
+1595.43,
+"shot",
+"x_065"
+],
+[
+1599.76,
+1607.76,
+"shot",
+"v04_cebolla"
+],
+[
+1607.76,
+1610.28,
+"shot",
+"n_higado_ing"
+],
+[
+1610.28,
+1612.8,
+"shot",
+"n_higado_paso"
+],
+[
+1616.19,
+1621.29,
+"shot",
+"x_066"
+],
+[
+1621.29,
+1626.38,
+"shot",
+"x_067"
+],
+[
+1626.38,
+1631.48,
+"shot",
+"n_higado"
+],
+[
+1635.65,
+1644.8,
+"shot",
+"n_higado_err"
+],
+[
+1644.8,
+1647.89,
+"shot",
+"f_higado_come"
+],
+[
+1647.89,
+1648.75,
+"shot",
+"f_repollo"
+],
+[
+1654.29,
+1660.72,
+"shot",
+"x_068"
+],
+[
+1660.72,
+1667.15,
+"shot",
+"n_repollo_rec"
+],
+[
+1673.97,
+1678.59,
+"shot",
+"n_repollo_ing"
+],
+[
+1678.59,
+1683.2,
+"shot",
+"n_repollo_paso"
+],
+[
+1683.2,
+1687.82,
+"shot",
+"n_repollo"
+],
+[
+1692.7,
+1697.76,
+"shot",
+"x_069"
+],
+[
+1697.76,
+1702.81,
+"shot",
+"x_070"
+],
+[
+1702.81,
+1705.34,
+"shot",
+"f_repollo_come"
+],
+[
+1710.34,
+1713.39,
+"shot",
+"n_madre_cafe"
+],
+[
+1713.39,
+1725.39,
+"shot",
+"n_madre_ultima"
+],
+[
+1734.31,
+1743.51,
+"shot",
+"n_madre_leche"
+],
+[
+1747.83,
+1754.28,
+"shot",
+"x_072"
+],
+[
+1754.28,
+1759.65,
+"shot",
+"x_073"
+],
+[
+1773.05,
+1779.33,
+"shot",
+"x_075"
+],
+[
+1788.17,
+1798.32,
+"shot",
+"x_077"
+],
+[
+1803.35,
+1809.13,
+"shot",
+"n_pangrasa_rec"
+],
+[
+1809.13,
+1814.9,
+"shot",
+"n_madre_lonchera"
+],
+[
+1818.71,
+1823.35,
+"shot",
+"x_079"
+],
+[
+1823.35,
+1827.98,
+"shot",
+"x_080"
+],
+[
+1827.98,
+1832.62,
+"shot",
+"x_081"
+],
+[
+1837.02,
+1844.86,
+"shot",
+"x_082"
+],
+[
+1844.86,
+1850.19,
+"shot",
+"x_083"
+],
+[
+1854.7,
+1860.95,
+"shot",
+"x_084"
+],
+[
+1860.95,
+1867.21,
+"shot",
+"x_086"
+],
+[
+1867.21,
+1868.94,
+"shot",
+"v02_grasa"
+],
+[
+1872.45,
+1880.2,
+"shot",
+"n_pangrasa_ing"
+],
+[
+1880.2,
+1887.95,
+"shot",
+"n_pangrasa_paso"
+],
+[
+1892.7,
+1896.65,
+"shot",
+"x_087"
+],
+[
+1896.65,
+1900.59,
+"shot",
+"x_088"
+],
+[
+1900.59,
+1905.55,
+"shot",
+"f_pangrasa_come"
+],
+[
+1909.27,
+1915.65,
+"shot",
+"x_089"
+],
+[
+1915.65,
+1922.42,
+"shot",
+"n_tres_ahorro"
+],
+[
+1927.16,
+1940.72,
+"shot",
+"x_090"
+],
+[
+1945.64,
+1949.33,
+"shot",
+"x_091"
+],
+[
+1949.33,
+1957.75,
+"shot",
+"x_092"
+],
+[
+1961.9,
+1964.37,
+"shot",
+"x_093"
+],
+[
+1964.37,
+1975.39,
+"shot",
+"n_bolsillo"
+],
+[
+2035.55,
+2044.73,
+"shot",
+"x_095"
+],
+[
+2044.73,
+2048.58,
+"shot",
+"f_mesa_final"
+],
+[
+2056.35,
+2064.93,
+"shot",
+"f_telefono"
+],
+[
+2064.93,
+2071.17,
+"shot",
+"f_despide"
+]
+],
+"ov": [
+{
+"k": "step",
+"n": 25,
+"name": "SÁNDWICH DE AZÚCAR",
+"at": 126.18,
+"out": 130.98
+},
+{
+"k": "big",
+"txt": "10¢",
+"sub": "EL SÁNDWICH",
+"at": 176.38,
+"out": 179.98
+},
+{
+"k": "step",
+"n": 24,
+"name": "CAFÉ DE ACHICORIA",
+"at": 181.24,
+"out": 186.0
+},
+{
+"k": "step",
+"n": 23,
+"name": "MARGARINA EN EL PAN",
+"at": 234.2,
+"out": 238.86
+},
+{
+"k": "step",
+"n": 22,
+"name": "LECHE EN POLVO",
+"at": 285.22,
+"out": 289.84
+},
+{
+"k": "step",
+"n": 21,
+"name": "AGUA DE PANELA",
+"at": 340.94,
+"out": 346.62
+},
+{
+"k": "big",
+"txt": "15¢",
+"sub": "LA JARRA",
+"at": 388.46,
+"out": 392.06
+},
+{
+"k": "step",
+"n": 20,
+"name": "TORTILLA CON SAL",
+"at": 394.98,
+"out": 399.88
+},
+{
+"k": "big",
+"txt": "5¢",
+"sub": "LA TORTILLA",
+"at": 443.64,
+"out": 447.24
+},
+{
+"k": "step",
+"n": 19,
+"name": "SOPA DE SOBRE ESTIRADA",
+"at": 448.84,
+"out": 454.36
+},
+{
+"k": "big",
+"txt": "15¢",
+"sub": "EL PLATO",
+"at": 497.1,
+"out": 500.7
+},
+{
+"k": "step",
+"n": 18,
+"name": "MORTADELA FRITA",
+"at": 499.8,
+"out": 503.98
+},
+{
+"k": "big",
+"txt": "40¢",
+"sub": "EL PLATO",
+"at": 550.79,
+"out": 554.39
+},
+{
+"k": "step",
+"n": 17,
+"name": "SALCHICHAS EN SALSA",
+"at": 553.29,
+"out": 558.91
+},
+{
+"k": "big",
+"txt": "50¢",
+"sub": "DOS PLATOS",
+"at": 605.23,
+"out": 608.83
+},
+{
+"k": "step",
+"n": 16,
+"name": "FIDEOS CON MANTEQUILLA",
+"at": 608.15,
+"out": 612.93
+},
+{
+"k": "big",
+"txt": "20¢",
+"sub": "EL PLATO",
+"at": 655.07,
+"out": 658.67
+},
+{
+"k": "step",
+"n": 15,
+"name": "CÁSCARAS DE PAPA",
+"at": 661.43,
+"out": 666.71
+},
+{
+"k": "big",
+"txt": "0¢",
+"sub": "LAS CÁSCARAS",
+"at": 715.91,
+"out": 719.51
+},
+{
+"k": "step",
+"n": 14,
+"name": "GELATINA PARA LA VISITA",
+"at": 720.65,
+"out": 726.17
+},
+{
+"k": "big",
+"txt": "30¢",
+"sub": "LA GELATINA",
+"at": 776.21,
+"out": 779.81
+},
+{
+"k": "step",
+"n": 13,
+"name": "PAN EN CAFÉ CON LECHE",
+"at": 780.65,
+"out": 786.87
+},
+{
+"k": "big",
+"txt": "10¢",
+"sub": "LA TAZA",
+"at": 824.43,
+"out": 828.03
+},
+{
+"k": "step",
+"n": 12,
+"name": "POLENTA DE LA SEMANA",
+"at": 827.81,
+"out": 833.11
+},
+{
+"k": "big",
+"txt": "15¢",
+"sub": "DOS COMIDAS",
+"at": 885.95,
+"out": 889.55
+},
+{
+"k": "deal",
+"at": 898.29,
+"out": 899.29
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "No se deja nada en el plato",
+"at": 899.29,
+"out": 910.65
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Eso es para la visita",
+"at": 910.85,
+"out": 925.39
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "El pan no se tira",
+"at": 925.59,
+"out": 939.75
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "El caldo es la mitad",
+"at": 939.95,
+"out": 948.37
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Mañana comemos mejor",
+"at": 948.57,
+"out": 963.55
+},
+{
+"k": "step",
+"n": 11,
+"name": "CORAZÓN GUISADO",
+"at": 963.85,
+"out": 969.17
+},
+{
+"k": "big",
+"txt": "$1,50",
+"sub": "TRES PLATOS",
+"at": 1038.28,
+"out": 1041.88
+},
+{
+"k": "step",
+"n": 10,
+"name": "PATITAS EN CALDO",
+"at": 1043.52,
+"out": 1048.46
+},
+{
+"k": "big",
+"txt": "50¢",
+"sub": "SEIS TAZAS",
+"at": 1099.84,
+"out": 1103.44
+},
+{
+"k": "step",
+"n": 9,
+"name": "CALLOS",
+"at": 1103.62,
+"out": 1108.38
+},
+{
+"k": "big",
+"txt": "$1,50",
+"sub": "DOS PLATOS",
+"at": 1167.06,
+"out": 1170.66
+},
+{
+"k": "step",
+"n": 8,
+"name": "CARNE EN LATA CON PAPAS",
+"at": 1173.76,
+"out": 1178.6
+},
+{
+"k": "big",
+"txt": "60¢",
+"sub": "EL PLATO",
+"at": 1223.56,
+"out": 1227.16
+},
+{
+"k": "step",
+"n": 7,
+"name": "ARROZ CON HUEVO FRITO",
+"at": 1231.2,
+"out": 1235.9
+},
+{
+"k": "big",
+"txt": "40¢",
+"sub": "EL PLATO",
+"at": 1275.7,
+"out": 1279.3
+},
+{
+"k": "big",
+"txt": "$10",
+"sub": "LA SEMANA",
+"at": 1373.88,
+"out": 1377.48
+},
+{
+"k": "step",
+"n": 6,
+"name": "SARDINAS CON PAN",
+"at": 1377.48,
+"out": 1383.04
+},
+{
+"k": "big",
+"txt": "$1",
+"sub": "LA CENA",
+"at": 1436.12,
+"out": 1439.72
+},
+{
+"k": "step",
+"n": 5,
+"name": "SOPA DE HUESOS",
+"at": 1441.26,
+"out": 1446.26
+},
+{
+"k": "big",
+"txt": "$1,50",
+"sub": "OCHO TAZAS",
+"at": 1509.32,
+"out": 1512.92
+},
+{
+"k": "step",
+"n": 4,
+"name": "FRIJOLES DE TODOS LOS DÍAS",
+"at": 1512.0,
+"out": 1517.02
+},
+{
+"k": "big",
+"txt": "$1",
+"sub": "OCHO PLATOS",
+"at": 1565.23,
+"out": 1568.83
+},
+{
+"k": "step",
+"n": 3,
+"name": "HÍGADO ENCEBOLLADO",
+"at": 1573.91,
+"out": 1578.19
+},
+{
+"k": "big",
+"txt": "50¢",
+"sub": "EL PLATO",
+"at": 1642.19,
+"out": 1645.79
+},
+{
+"k": "step",
+"n": 2,
+"name": "REPOLLO CON SALCHICHA",
+"at": 1647.89,
+"out": 1652.55
+},
+{
+"k": "big",
+"txt": "40¢",
+"sub": "DOS PLATOS",
+"at": 1702.81,
+"out": 1706.41
+},
+{
+"k": "stamp",
+"txt": "NUNCA",
+"at": 1710.99,
+"out": 1713.99
+},
+{
+"k": "step",
+"n": 1,
+"name": "PAN CON GRASA Y SAL",
+"at": 1799.83,
+"out": 1804.75
+},
+{
+"k": "big",
+"txt": "$0",
+"sub": "LA GRASA YA LA TENÍAS",
+"at": 1909.27,
+"out": 1912.87
+},
+{
+"k": "recap",
+"at": 1974.79,
+"out": 2030.07,
+"rows": [
+1975.59,
+1980.55,
+1998.99,
+2001.11,
+2009.51,
+2012.07,
+2017.45
+]
+},
+{
+"k": "ask",
+"at": 2044.73,
+"out": 2056.35
+}
+],
+"cta1": {
+"guide": 101.98,
+"page": 110.18,
+"desc": 121.16,
+"end": 125.06,
+"img": "g_p019",
+"pageTxt": "PÁG. 19 · HÍGADO ENCEBOLLADO"
+},
+"cta2": {
+"guide": 1282.62,
+"page": 1286.42,
+"desc": 1302.62,
+"end": 1306.32,
+"img": "g_p071",
+"pageTxt": "PÁG. 71 · ARROZ A LA CUBANA"
+},
+"cta3": {
+"guide": 2030.07,
+"desc": 2041.31,
+"end": 2044.73
+},
+"end": 2071.17,
+"txt": {
+"recapTitle": "25 COMIDAS DE LOS 60",
+"misKicker": "LAS QUE A MÍ ME CRIARON",
+"misTitle": "LAS 5 FRASES DE MI CASA",
+"recap": [
+"Sándwich de azúcar",
+"Leche en polvo",
+"Polenta de la semana",
+"Corazón guisado",
+"Sardinas con pan",
+"Frijoles de todos los días",
+"Pan con grasa y sal"
+],
+"ask": [
+"CUÉNTAMELO EN LOS COMENTARIOS",
+"¿Cuál se comía en tu casa?",
+"¿Cuál te daba vergüenza?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+83.38,
+90.38
+]
+}
+}
