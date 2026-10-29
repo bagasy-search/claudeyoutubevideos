@@ -1,0 +1,1947 @@
+{
+"segs": [
+[
+3.95,
+8.14,
+"shot",
+"n_mozo_plato"
+],
+[
+8.14,
+15.7,
+"shot",
+"v01_corte"
+],
+[
+21.2,
+28.3,
+"shot",
+"n_chuleta_suela"
+],
+[
+28.3,
+32.5,
+"shot",
+"f_mostrador_saluda"
+],
+[
+36.2,
+40.66,
+"shot",
+"n_archer_1960"
+],
+[
+40.66,
+42.18,
+"shot",
+"n_maxwell_1972"
+],
+[
+42.18,
+46.6,
+"shot",
+"n_tienda_vidriera"
+],
+[
+50.747,
+56.22,
+"shot",
+"n_ticket_40"
+],
+[
+56.22,
+59.28,
+"shot",
+"f_cuchillos_tabla"
+],
+[
+59.28,
+64.1,
+"shot",
+"n_cocina_noche"
+],
+[
+70.432,
+77.08,
+"shot",
+"n_toalla_plato"
+],
+[
+77.08,
+82.271,
+"shot",
+"f_saluda_vidriera"
+],
+[
+85.641,
+90.4,
+"shot",
+"v02_grosor"
+],
+[
+90.4,
+95.494,
+"shot",
+"n_joven_carnicero"
+],
+[
+99.1,
+108.12,
+"shot",
+"n_bandeja_finas"
+],
+[
+108.12,
+110.44,
+"shot",
+"n_walt_chuleta"
+],
+[
+110.44,
+111.296,
+"shot",
+"n_tacho_recortes"
+],
+[
+116.5,
+120.26,
+"shot",
+"f_risa_papa"
+],
+[
+120.26,
+125.42,
+"shot",
+"n_chuleta_gruesa_cruda"
+],
+[
+125.42,
+128.8,
+"shot",
+"n_fina_sarten"
+],
+[
+132.1,
+133.58,
+"shot",
+"n_fina_cortada"
+],
+[
+133.58,
+142.54,
+"shot",
+"n_gruesa_dorada"
+],
+[
+142.54,
+144.497,
+"shot",
+"f_cliente_pide"
+],
+[
+150.6,
+157.04,
+"shot",
+"n_super_heladera"
+],
+[
+157.04,
+162.16,
+"shot",
+"f_lomo_entero"
+],
+[
+162.16,
+163.153,
+"shot",
+"f_corta_lomo"
+],
+[
+167.9,
+173.02,
+"shot",
+"n_cuatro_finas"
+],
+[
+173.02,
+177.7,
+"shot",
+"f_dos_gruesas"
+],
+[
+177.7,
+179.085,
+"shot",
+"n_mesa_rebanadas"
+],
+[
+183.7,
+186.46,
+"shot",
+"f_dedo_arriba"
+],
+[
+186.46,
+194.86,
+"shot",
+"n_super_1985"
+],
+[
+194.86,
+197.0,
+"shot",
+"n_tenderloin_bandeja"
+],
+[
+201.8,
+208.06,
+"shot",
+"f_lee_etiqueta"
+],
+[
+208.06,
+211.2,
+"shot",
+"n_jeringa_salmuera"
+],
+[
+211.2,
+213.6,
+"shot",
+"n_planta_inyeccion"
+],
+[
+218.7,
+227.66,
+"shot",
+"n_vaso_agua"
+],
+[
+227.66,
+228.393,
+"shot",
+"n_tazon_salmuera"
+],
+[
+233.4,
+244.3,
+"shot",
+"n_jamon_rosado"
+],
+[
+244.3,
+246.6,
+"shot",
+"n_etiqueta_natural"
+],
+[
+251.521,
+261.8,
+"shot",
+"f_encoge"
+],
+[
+261.8,
+262.881,
+"shot",
+"n_dos_bandejas"
+],
+[
+269.113,
+277.28,
+"shot",
+"n_balanza_precio"
+],
+[
+277.28,
+280.676,
+"shot",
+"v04_salmuera"
+],
+[
+285.213,
+288.92,
+"shot",
+"n_balde_lata"
+],
+[
+288.92,
+297.573,
+"shot",
+"n_madre_1958"
+],
+[
+303.4,
+309.3,
+"shot",
+"n_cucharas"
+],
+[
+309.3,
+313.9,
+"shot",
+"n_sal_kosher"
+],
+[
+317.549,
+330.1,
+"shot",
+"n_jarra_4tazas"
+],
+[
+330.1,
+331.779,
+"shot",
+"n_agua_clara"
+],
+[
+337.519,
+340.18,
+"shot",
+"f_reloj_cocina"
+],
+[
+340.18,
+347.6,
+"shot",
+"n_lomo_asado_crudo"
+],
+[
+351.504,
+356.74,
+"shot",
+"n_fibras_macro"
+],
+[
+356.74,
+362.7,
+"shot",
+"n_jugo_retenido"
+],
+[
+367.4,
+376.72,
+"shot",
+"n_bol_noche"
+],
+[
+376.72,
+378.8,
+"shot",
+"n_lata_carne"
+],
+[
+378.8,
+380.3,
+"shot",
+"f_timer_suena"
+],
+[
+384.6,
+391.66,
+"shot",
+"f_mira_serio"
+],
+[
+391.66,
+396.3,
+"shot",
+"v05_secar"
+],
+[
+400.9,
+409.52,
+"shot",
+"n_chuletas_goteando"
+],
+[
+409.52,
+410.96,
+"shot",
+"n_vapor_sarten"
+],
+[
+410.96,
+413.251,
+"shot",
+"n_padre_mesa_1960"
+],
+[
+418.3,
+430.645,
+"shot",
+"n_gris_hervido"
+],
+[
+434.944,
+443.24,
+"shot",
+"n_enjuague"
+],
+[
+443.24,
+444.264,
+"shot",
+"n_rollo_toallas"
+],
+[
+448.245,
+455.24,
+"shot",
+"n_toallas_mojadas"
+],
+[
+455.24,
+460.7,
+"shot",
+"n_pat_pat"
+],
+[
+466.148,
+474.2,
+"shot",
+"v03_sarten"
+],
+[
+475.08,
+478.0,
+"shot",
+"n_ferreteria_1961"
+],
+[
+482.548,
+488.46,
+"shot",
+"n_hierro_liso"
+],
+[
+488.46,
+490.0,
+"shot",
+"n_hornalla_alta"
+],
+[
+490.0,
+493.4,
+"shot",
+"n_aceite_cuchara"
+],
+[
+498.343,
+501.28,
+"shot",
+"n_aceite_oliva_humo"
+],
+[
+501.28,
+506.7,
+"shot",
+"n_aceite_brilla"
+],
+[
+506.7,
+510.479,
+"shot",
+"n_chuleta_lejos"
+],
+[
+514.8,
+521.18,
+"shot",
+"n_chuleta_quieta"
+],
+[
+521.18,
+524.06,
+"shot",
+"n_costra_rota"
+],
+[
+524.06,
+527.488,
+"shot",
+"n_vuelta_dorada"
+],
+[
+531.228,
+540.14,
+"shot",
+"n_tenedor_levanta"
+],
+[
+540.14,
+542.5,
+"shot",
+"n_cuchara_madera"
+],
+[
+542.5,
+543.4,
+"shot",
+"f_manos_bolsillo"
+],
+[
+548.018,
+556.14,
+"shot",
+"n_dos_platos"
+],
+[
+556.14,
+560.378,
+"shot",
+"n_borde_grasa"
+],
+[
+565.526,
+569.22,
+"shot",
+"n_grasa_plato"
+],
+[
+569.22,
+576.386,
+"shot",
+"v06_grasa"
+],
+[
+582.4,
+595.08,
+"shot",
+"n_grasa_derretida"
+],
+[
+595.08,
+595.7,
+"shot",
+"n_rush_1975"
+],
+[
+599.941,
+608.4,
+"shot",
+"n_borde_crocante"
+],
+[
+608.4,
+610.079,
+"shot",
+"f_pinza_borde"
+],
+[
+614.625,
+624.785,
+"shot",
+"f_termometro_muestra"
+],
+[
+629.917,
+637.08,
+"shot",
+"n_chuleta_blanca_seca"
+],
+[
+637.08,
+641.58,
+"shot",
+"n_madre_advierte"
+],
+[
+646.8,
+653.7,
+"shot",
+"n_carta_usda"
+],
+[
+653.7,
+658.0,
+"shot",
+"n_termometro_145"
+],
+[
+661.6,
+670.84,
+"shot",
+"n_cerdo_picado"
+],
+[
+670.84,
+674.7,
+"shot",
+"n_termometro_caja"
+],
+[
+679.5,
+683.24,
+"shot",
+"n_sonda_lateral"
+],
+[
+683.24,
+689.38,
+"shot",
+"n_termometro_140"
+],
+[
+689.38,
+692.7,
+"shot",
+"n_reposo_145"
+],
+[
+697.6,
+705.62,
+"shot",
+"n_jugo_charco"
+],
+[
+705.62,
+708.4,
+"shot",
+"f_termometro_bolsillo"
+],
+[
+714.35,
+721.94,
+"shot",
+"v07_manteca"
+],
+[
+721.94,
+726.7,
+"shot",
+"n_tenderloin_crudo"
+],
+[
+731.001,
+742.64,
+"shot",
+"n_silver_skin"
+],
+[
+742.64,
+744.0,
+"shot",
+"n_tenderloin_curvado"
+],
+[
+749.0,
+756.02,
+"shot",
+"f_cuchillo_debajo"
+],
+[
+756.02,
+759.9,
+"shot",
+"n_toalla_tira"
+],
+[
+764.312,
+772.16,
+"shot",
+"f_tira_plateada"
+],
+[
+772.16,
+777.8,
+"shot",
+"n_tenderloin_limpio"
+],
+[
+782.541,
+788.02,
+"shot",
+"f_rapido_cuchillo"
+],
+[
+788.02,
+791.68,
+"shot",
+"n_walt_risa_1972"
+],
+[
+791.68,
+793.3,
+"shot",
+"n_manteca_ajo_tomillo"
+],
+[
+797.52,
+805.68,
+"shot",
+"n_berghoff_1979"
+],
+[
+805.68,
+809.684,
+"shot",
+"n_gus_cocinero"
+],
+[
+815.024,
+825.94,
+"shot",
+"n_130_termometro"
+],
+[
+825.94,
+827.384,
+"shot",
+"n_manteca_cae"
+],
+[
+832.9,
+844.053,
+"shot",
+"n_espuma_manteca"
+],
+[
+848.9,
+862.04,
+"shot",
+"n_costra_brillante"
+],
+[
+862.04,
+863.751,
+"shot",
+"n_manteca_quemada"
+],
+[
+867.643,
+877.92,
+"shot",
+"n_platito_manteca"
+],
+[
+877.92,
+879.6,
+"shot",
+"n_plato_tibio"
+],
+[
+884.841,
+896.2,
+"shot",
+"n_tabla_arce"
+],
+[
+901.1,
+906.58,
+"shot",
+"n_mano_ventana"
+],
+[
+906.58,
+912.8,
+"shot",
+"n_rejilla_chuleta"
+],
+[
+912.8,
+914.9,
+"shot",
+"n_plato_agua_caliente"
+],
+[
+920.2,
+928.9,
+"shot",
+"n_papel_aluminio"
+],
+[
+928.9,
+931.254,
+"shot",
+"n_corte_jugoso"
+],
+[
+935.5,
+947.797,
+"shot",
+"n_copa_vino"
+],
+[
+953.137,
+957.02,
+"shot",
+"f_jugo_pan"
+],
+[
+957.02,
+964.04,
+"shot",
+"f_secreto"
+],
+[
+964.04,
+965.069,
+"shot",
+"n_walt_retrato"
+],
+[
+970.9,
+982.3,
+"shot",
+"n_err1_finas"
+],
+[
+987.937,
+994.72,
+"shot",
+"n_err2_etiqueta"
+],
+[
+994.72,
+1001.6,
+"shot",
+"n_err3_sarten_fria"
+],
+[
+1007.6,
+1012.64,
+"shot",
+"n_err4_rosado"
+],
+[
+1012.64,
+1018.756,
+"shot",
+"n_err5_charco"
+],
+[
+1023.3,
+1032.84,
+"shot",
+"n_cliente_traje"
+],
+[
+1032.84,
+1033.656,
+"shot",
+"v08_rejilla"
+],
+[
+1038.3,
+1046.44,
+"shot",
+"n_camara_fria"
+],
+[
+1046.44,
+1050.295,
+"shot",
+"n_reloj_pared"
+],
+[
+1054.635,
+1060.84,
+"shot",
+"n_chuleta_seca_tacto"
+],
+[
+1060.84,
+1065.454,
+"shot",
+"n_aire_heladera"
+],
+[
+1069.548,
+1080.32,
+"shot",
+"n_costra_instantanea"
+],
+[
+1080.32,
+1081.3,
+"shot",
+"n_carne_estante"
+],
+[
+1085.637,
+1095.32,
+"shot",
+"n_costra_crujiente"
+],
+[
+1095.32,
+1097.962,
+"shot",
+"n_media_cucharadita"
+],
+[
+1102.15,
+1108.02,
+"shot",
+"n_rejilla_horno"
+],
+[
+1108.02,
+1113.2,
+"shot",
+"n_estante_seguro"
+],
+[
+1116.5,
+1120.88,
+"shot",
+"n_reloj_24"
+],
+[
+1120.88,
+1130.8,
+"shot",
+"n_mesada_20min"
+],
+[
+1136.0,
+1145.3,
+"shot",
+"n_plato_final"
+],
+[
+1145.3,
+1147.163,
+"shot",
+"n_film_plastico"
+],
+[
+1152.1,
+1160.31,
+"shot",
+"n_rejilla_abajo"
+],
+[
+1160.31,
+1162.361,
+"shot",
+"n_nieto_mesa"
+],
+[
+1166.645,
+1176.27,
+"shot",
+"f_rutina_lista"
+],
+[
+1176.27,
+1179.9,
+"shot",
+"n_viernes_paquete"
+],
+[
+1183.945,
+1195.7,
+"shot",
+"n_cocina_5pm"
+],
+[
+1199.0,
+1206.61,
+"shot",
+"n_saca_salmuera"
+],
+[
+1206.61,
+1210.2,
+"shot",
+"n_heladera_noche"
+],
+[
+1214.233,
+1221.91,
+"shot",
+"f_enciende"
+],
+[
+1221.91,
+1226.7,
+"shot",
+"n_dos_de_canto"
+],
+[
+1231.5,
+1240.51,
+"shot",
+"n_rocio_cuchara"
+],
+[
+1240.51,
+1241.9,
+"shot",
+"n_mesa_domingo"
+],
+[
+1247.7,
+1256.65,
+"shot",
+"f_cuenta_dedos"
+],
+[
+1256.65,
+1261.758,
+"shot",
+"n_tenedor_pincha"
+],
+[
+1267.5,
+1272.33,
+"shot",
+"n_pinzas"
+],
+[
+1272.33,
+1279.5,
+"shot",
+"n_tapa_vapor"
+],
+[
+1283.222,
+1292.57,
+"shot",
+"n_aceite_manteca_cerdo"
+],
+[
+1292.57,
+1294.4,
+"shot",
+"n_lava_carne"
+],
+[
+1299.8,
+1310.45,
+"shot",
+"n_salpicaduras"
+],
+[
+1310.45,
+1312.0,
+"shot",
+"n_limpia_pileta"
+],
+[
+1317.549,
+1321.73,
+"shot",
+"f_lee_cartas"
+],
+[
+1321.73,
+1323.93,
+"shot",
+"n_congeladas"
+],
+[
+1323.93,
+1329.2,
+"shot",
+"n_descongela"
+],
+[
+1333.9,
+1342.21,
+"shot",
+"n_secar_extra"
+],
+[
+1342.21,
+1345.163,
+"shot",
+"n_sarten_inox"
+],
+[
+1349.8,
+1357.21,
+"shot",
+"n_dos_pulgadas"
+],
+[
+1357.21,
+1362.453,
+"shot",
+"n_horno_sarten"
+],
+[
+1367.323,
+1378.568,
+"shot",
+"n_paleta_cruda"
+],
+[
+1383.032,
+1392.65,
+"shot",
+"n_paleta_tapada"
+],
+[
+1392.65,
+1394.888,
+"shot",
+"n_paleta_tierna"
+],
+[
+1400.604,
+1412.35,
+"shot",
+"n_azucar_bol"
+],
+[
+1412.35,
+1413.7,
+"shot",
+"n_balanza_cocina"
+],
+[
+1417.7,
+1425.63,
+"shot",
+"f_brazos_cruzados"
+],
+[
+1425.63,
+1427.96,
+"shot",
+"n_chef_carnicero"
+],
+[
+1433.1,
+1441.53,
+"shot",
+"f_pizarra_tiza"
+],
+[
+1441.53,
+1446.1,
+"shot",
+"n_rec1_gruesa"
+],
+[
+1451.122,
+1459.25,
+"shot",
+"n_rec3_bol"
+],
+[
+1459.25,
+1462.778,
+"shot",
+"n_rec4_secar"
+],
+[
+1466.6,
+1475.55,
+"shot",
+"n_rec6_grasa"
+],
+[
+1475.55,
+1478.992,
+"shot",
+"n_rec8_tira"
+],
+[
+1483.4,
+1488.57,
+"shot",
+"n_rec10_reposo"
+],
+[
+1488.57,
+1495.45,
+"shot",
+"n_rec11_rejilla"
+],
+[
+1495.45,
+1497.0,
+"shot",
+"n_rec_precio"
+],
+[
+1501.129,
+1504.85,
+"shot",
+"f_mira_tienda"
+],
+[
+1504.85,
+1512.069,
+"shot",
+"v09_rosado"
+],
+[
+1516.414,
+1522.55,
+"shot",
+"f_lee_comentarios"
+],
+[
+1522.55,
+1526.99,
+"shot",
+"v10_cierre"
+],
+[
+1526.99,
+1529.6,
+"shot",
+"n_carne_picada_avance"
+],
+[
+1535.3,
+1539.7,
+"shot",
+"n_chuleta_final_mesa"
+]
+],
+"cam": [
+[
+474.2,
+475.08,
+"wide"
+]
+],
+"ov": [
+{
+"k": "big",
+"txt": "$40",
+"sub": "ONE PORK CHOP · DOWNTOWN",
+"col": "red",
+"at": 6.94,
+"out": 10.14
+},
+{
+"k": "big",
+"txt": "$6",
+"sub": "SAME CHOP · GROCERY STORE",
+"col": "green",
+"at": 19.9,
+"out": 23.1
+},
+{
+"k": "stamp",
+"txt": "LIKE THE SOLE OF A SHOE",
+"at": 24.42,
+"out": 27.42
+},
+{
+"k": "chip",
+"txt": "52 YEARS BEHIND THE COUNTER",
+"at": 28.98,
+"out": 32.48
+},
+{
+"k": "big",
+"txt": "11",
+"sub": "OLD BUTCHER TRICKS",
+"col": "amber",
+"at": 56.22,
+"out": 59.42
+},
+{
+"k": "chip",
+"txt": "TRICK 11 COSTS $0",
+"col": "green",
+"at": 70.5,
+"out": 74.0
+},
+{
+"k": "chip",
+"txt": "SUBSCRIBE · 52 YEARS OF TRICKS",
+"col": "red",
+"at": 77.08,
+"out": 81.08
+},
+{
+"k": "step",
+"n": 1,
+"name": "BUY THE THICK CHOP",
+"at": 84.82,
+"out": 88.82
+},
+{
+"k": "chip",
+"txt": "½ INCH = THE CHEAP ONES",
+"col": "red",
+"at": 102.2,
+"out": 105.7
+},
+{
+"k": "big",
+"txt": "40 SEC",
+"sub": "RAW TO DRY · THIN CHOP",
+"col": "red",
+"at": 127.58,
+"out": 130.78
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "CENTER CUT",
+"col": "amber",
+"at": 144.8
+},
+{
+"txt": "BONE IN",
+"col": "amber",
+"at": 146.5
+},
+{
+"txt": "1½ INCH",
+"col": "amber",
+"at": 147.36
+}
+],
+"at": 144.8,
+"out": 149.86
+},
+{
+"k": "stamp",
+"txt": "NOT MORE FOOD",
+"at": 171.74,
+"out": 174.74
+},
+{
+"k": "step",
+"n": 2,
+"name": "READ THE LABEL",
+"at": 181.44,
+"out": 185.44
+},
+{
+"k": "big",
+"txt": "12 %",
+"sub": "SALT WATER YOU PAY FOR",
+"col": "red",
+"at": 199.46,
+"out": 202.66
+},
+{
+"k": "stamp",
+"txt": "NEVER BRINE IT TWICE",
+"at": 235.92,
+"out": 238.92
+},
+{
+"k": "chip",
+"txt": "LOOK FOR: «NO SOLUTION ADDED»",
+"col": "green",
+"at": 245.38,
+"out": 248.88
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE ONE-HOUR BRINE",
+"at": 275.98,
+"out": 279.98
+},
+{
+"k": "stamp",
+"txt": "ONE HOUR. NOT TWO.",
+"at": 302.22,
+"out": 305.22
+},
+{
+"k": "check",
+"title": "THE BRINE · PER CUP OF COLD WATER",
+"rows": [
+{
+"txt": "1 tbsp kosher salt",
+"at": 309.3
+},
+{
+"txt": "1 tbsp sugar",
+"at": 312.32
+},
+{
+"txt": "Table salt? Use half",
+"at": 317.32
+},
+{
+"txt": "4 chops = 4 cups",
+"at": 325.34
+}
+],
+"at": 309.3,
+"out": 329.34
+},
+{
+"k": "chip",
+"txt": "LOIN ROAST 4 H · NEVER OVER 8 H",
+"col": "red",
+"at": 343.5,
+"out": 347.0
+},
+{
+"k": "big",
+"txt": "½",
+"sub": "THE JUICE A BRINED CHOP LOSES",
+"col": "green",
+"at": 361.02,
+"out": 364.22
+},
+{
+"k": "chip",
+"txt": "OVERNIGHT = CANNED HAM",
+"col": "red",
+"at": 368.8,
+"out": 372.3
+},
+{
+"k": "step",
+"n": 4,
+"name": "DRY IT BONE DRY",
+"at": 391.66,
+"out": 395.66
+},
+{
+"k": "stamp",
+"txt": "WET MEAT = GREY MEAT",
+"at": 420.82,
+"out": 423.82
+},
+{
+"k": "chip",
+"txt": "PAT-PAT IS NOT DRYING",
+"col": "red",
+"at": 459.52,
+"out": 463.02
+},
+{
+"k": "big",
+"txt": "3-4",
+"sub": "PAPER TOWELS PER CHOP",
+"col": "amber",
+"at": 461.8,
+"out": 465.0
+},
+{
+"k": "step",
+"n": 5,
+"name": "A HOT CAST IRON PAN",
+"at": 466.28,
+"out": 470.28
+},
+{
+"k": "big",
+"txt": "$1.25",
+"sub": "HALSTED STREET · 1961",
+"col": "amber",
+"at": 479.32,
+"out": 482.52
+},
+{
+"k": "chip",
+"txt": "EMPTY PAN · MEDIUM-HIGH · 5 MIN",
+"at": 488.46,
+"out": 491.96
+},
+{
+"k": "chip",
+"txt": "NO EXTRA VIRGIN OLIVE OIL",
+"col": "red",
+"at": 496.46,
+"out": 499.96
+},
+{
+"k": "stamp",
+"txt": "DON'T TOUCH IT",
+"at": 512.9,
+"out": 515.9
+},
+{
+"k": "step",
+"n": 6,
+"name": "RENDER THE FAT CAP",
+"at": 545.9,
+"out": 549.9
+},
+{
+"k": "stamp",
+"txt": "THE FAT IS THE FREE PART",
+"at": 602.06,
+"out": 605.56
+},
+{
+"k": "step",
+"n": 7,
+"name": "PULL IT AT 140 °F",
+"at": 623.7,
+"out": 627.7
+},
+{
+"k": "big",
+"txt": "2011",
+"sub": "THE RULE CHANGED",
+"col": "ice",
+"at": 645.22,
+"out": 648.42
+},
+{
+"k": "temp",
+"a": 120,
+"b": 145,
+"sub": "WHOLE CUTS ARE SAFE · 3 MIN REST",
+"col": "green",
+"at": 653.7,
+"out": 658.7
+},
+{
+"k": "chip",
+"txt": "INSTANT READ · $10-15",
+"at": 670.84,
+"out": 674.34
+},
+{
+"k": "temp",
+"a": 140,
+"b": 145,
+"sub": "OFF THE HEAT AT 140 · RESTS UP TO 145",
+"col": "amber",
+"at": 689.38,
+"out": 694.38
+},
+{
+"k": "big",
+"txt": "160-170 °F",
+"sub": "«NO PINK» = DRY",
+"col": "red",
+"at": 694.08,
+"out": 697.28
+},
+{
+"k": "step",
+"n": 8,
+"name": "PEEL THE SILVER SKIN",
+"at": 716.16,
+"out": 720.16
+},
+{
+"k": "stamp",
+"txt": "IT DOESN'T MELT. IT SHRINKS.",
+"at": 742.96,
+"out": 745.96
+},
+{
+"k": "big",
+"txt": "30°",
+"sub": "BLADE UP, TOWARD THE SKIN",
+"col": "amber",
+"at": 759.9,
+"out": 763.1
+},
+{
+"k": "step",
+"n": 9,
+"name": "BUTTER · GARLIC · THYME",
+"at": 790.44,
+"out": 794.44
+},
+{
+"k": "chip",
+"txt": "THE BERGHOFF · SINCE 1898",
+"col": "ice",
+"at": 801.4,
+"out": 804.9
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "2 TBSP BUTTER",
+"col": "amber",
+"at": 825.94
+},
+{
+"txt": "2 GARLIC CLOVES",
+"col": "amber",
+"at": 827.72
+},
+{
+"txt": "2-3 THYME SPRIGS",
+"col": "amber",
+"at": 831.38
+}
+],
+"at": 825.94,
+"out": 833.88
+},
+{
+"k": "chip",
+"txt": "BUTTER ONLY AT THE END",
+"col": "red",
+"at": 862.44,
+"out": 865.94
+},
+{
+"k": "step",
+"n": 10,
+"name": "REST ON A WARM PLATE",
+"at": 876.78,
+"out": 880.78
+},
+{
+"k": "stamp",
+"txt": "A COLD BOARD STEALS THE HEAT",
+"at": 902.44,
+"out": 905.44
+},
+{
+"k": "chip",
+"txt": "LOOSE FOIL TENT · 5 MIN",
+"at": 920.06,
+"out": 923.56
+},
+{
+"k": "big",
+"txt": "5 MIN",
+"sub": "LET THE JUICE COME BACK",
+"col": "green",
+"at": 945.28,
+"out": 948.48
+},
+{
+"k": "deal",
+"at": 966.46,
+"out": 970.96
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "BUYING THIN CHOPS",
+"at": 975.56,
+"out": 983.56
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "BRINING PORK THAT'S ALREADY ENHANCED",
+"at": 983.96,
+"out": 991.96
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "A COLD PAN",
+"at": 993.2,
+"out": 1001.2
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "COOKING UNTIL THERE'S NO PINK",
+"at": 1004.22,
+"out": 1010.94
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "CUTTING WITHOUT RESTING",
+"at": 1011.24,
+"out": 1019.24
+},
+{
+"k": "step",
+"n": 11,
+"name": "WALT'S TRICK",
+"col": "red",
+"at": 1018.66,
+"out": 1022.66
+},
+{
+"k": "chip",
+"txt": "«COME BACK TOMORROW AT FOUR»",
+"col": "ice",
+"at": 1046.44,
+"out": 1049.94
+},
+{
+"k": "stamp",
+"txt": "HALF THE TIME TO BROWN",
+"at": 1058.4,
+"out": 1061.4
+},
+{
+"k": "check",
+"title": "WALT'S TRICK",
+"rows": [
+{
+"txt": "½ tsp kosher salt per side",
+"at": 1095.32
+},
+{
+"txt": "On a wire rack",
+"at": 1099.02
+},
+{
+"txt": "Nothing covering them",
+"at": 1104.74
+},
+{
+"txt": "8 h minimum · 24 h is better",
+"at": 1115.14
+}
+],
+"at": 1095.32,
+"out": 1119.14
+},
+{
+"k": "stamp",
+"txt": "THAT'S THE $40 PORK CHOP",
+"at": 1140.02,
+"out": 1143.52
+},
+{
+"k": "chip",
+"txt": "NO PLASTIC WRAP",
+"col": "red",
+"at": 1146.14,
+"out": 1149.64
+},
+{
+"k": "clock",
+"marks": [
+[
+1176.27,
+9.0
+],
+[
+1185.27,
+17.0
+],
+[
+1198.15,
+18.0
+],
+[
+1210.55,
+17.75
+],
+[
+1218.79,
+18.0
+],
+[
+1240.51,
+18.33
+]
+],
+"at": 1167.65,
+"out": 1244.51
+},
+{
+"k": "big",
+"txt": "20 MIN",
+"sub": "OF ACTUAL COOKING",
+"col": "green",
+"at": 1242.37,
+"out": 1245.57
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "NO FORK",
+"col": "red",
+"at": 1256.65
+},
+{
+"txt": "NO LID",
+"col": "red",
+"at": 1269.57
+},
+{
+"txt": "NO FANCY OIL",
+"col": "red",
+"at": 1280.99
+},
+{
+"txt": "NO SINK",
+"col": "red",
+"at": 1292.57
+}
+],
+"at": 1249.05,
+"out": 1295.07
+},
+{
+"k": "chip",
+"txt": "«FROZEN CHOPS?»",
+"col": "ice",
+"at": 1321.73,
+"out": 1325.23
+},
+{
+"k": "big",
+"txt": "400 °F",
+"sub": "2-INCH CHOPS · FINISH IN THE OVEN",
+"col": "amber",
+"at": 1357.21,
+"out": 1360.41
+},
+{
+"k": "big",
+"txt": "175-185 °F",
+"sub": "SHOULDER STEAK · LOW AND SLOW",
+"col": "amber",
+"at": 1380.95,
+"out": 1384.15
+},
+{
+"k": "chip",
+"txt": "«DO I NEED THE SUGAR?»",
+"col": "ice",
+"at": 1403.27,
+"out": 1406.77
+},
+{
+"k": "stamp",
+"txt": "THE BUTCHER SAVES YOU THE BURNING",
+"at": 1431.37,
+"out": 1434.37
+},
+{
+"k": "recap",
+"rows": [
+1439.51,
+1445.03,
+1449.45,
+1457.13,
+1461.89,
+1466.49,
+1469.89,
+1475.55,
+1479.13,
+1481.13,
+1487.97
+],
+"at": 1435.13,
+"out": 1493.97
+},
+{
+"k": "versus",
+"title": "THE SAME CHOP",
+"L": {
+"label": "RESTAURANT",
+"val": "$40",
+"h": 0.95,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"R": {
+"label": "YOUR KITCHEN",
+"val": "$6",
+"h": 0.2,
+"col": "#5fd38a",
+"mark": "ok"
+},
+"at": 1494.97,
+"out": 1500.97
+},
+{
+"k": "ask",
+"at": 1504.85,
+"out": 1518.85
+},
+{
+"k": "next",
+"at": 1522.55,
+"out": 1527.55
+}
+],
+"cta1": {
+"desc": 77.08,
+"end": 83.08
+},
+"cta2": {
+"desc": 1514.99,
+"end": 1520.99
+},
+"cta3": {
+"desc": 1522.55,
+"end": 1527.55
+},
+"end": 1539.69,
+"st": {
+"fire": [
+[
+0,
+1539.69
+]
+],
+"hay": [
+[
+0,
+1539.69
+]
+],
+"pot": [
+[
+466.278,
+545.898
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+1176.273,
+1242.373
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "THE 11 TRICKS",
+"recap": [
+"Thick chops · 1½ inch",
+"No enhanced pork",
+"1-hour brine",
+"Bone dry",
+"Hot cast iron · hands off",
+"Fat cap first",
+"Pull at 140 °F",
+"No silver skin",
+"Butter · garlic · thyme",
+"Warm plate · 5 min",
+"Walt's trick · uncovered overnight"
+],
+"ask": [
+"What cut did your father or mother swear by?",
+"The one they always bought, no matter what.",
+"Tell me in the comments · I read every one"
+],
+"next": [
+"NEXT TIME",
+"What restaurants do with ground beef"
+],
+"lower": [
+31.28,
+37.28
+]
+}
+}
