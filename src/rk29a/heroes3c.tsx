@@ -83,7 +83,7 @@ export const H3Twist: React.FC<P> = ({ t, h }) => <Stage t={t} h={h} mode="split
 
 // 15 · la foto del número: el celular baja sobre la pila, flash, y la foto queda en la pantalla; la llave se vuelve a cerrar
 export const H3Snap: React.FC<P> = ({ t, h }) => <Stage t={t} h={h} mode="drop" three>{(tt) => {
-  const lab = useLabelTex("CR2025"), down = sm(tt, 0.4, 1.6), flash = c01(1 - Math.abs(tt - 2.0) / 0.08), shot = tt > 2.05, close = sm(tt, 5.6, 6.6), aside = sm(tt, 2.6, 3.6);
+  const lab = useLabelTex("CR2025"), down = sm(tt, 0.4, 1.6), flash = c01(1 - Math.abs(tt - 2.0) / 0.3) ** 2, shot = tt > 2.05, close = sm(tt, 5.6, 6.6), aside = sm(tt, 2.6, 3.6);
   return <>
     <Studio tt={tt} keys={[{ t: 0, p: [0.0, 1.9, 1.5], l: [0, 0.1, 0], fov: 32 }, { t: 9, p: [0.5, 1.5, 1.4], l: [0.1, 0.2, 0], arc: 0.06 }]}>
       <Fob3 p={[-0.55, 0, 0]} rot={[0, 0.2, 0]} s={1.3} open={0.8 * (1 - close)} batt={false} />
@@ -93,9 +93,9 @@ export const H3Snap: React.FC<P> = ({ t, h }) => <Stage t={t} h={h} mode="drop" 
         <RB s={[0.5, 0.04, 0.95]} rad={0.05} c="#111216" r={0.2} m={0.3} />
         <mesh position={[0, 0.021, 0]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[0.44, 0.86]} />{shot ? <meshBasicMaterial map={lab} toneMapped={false} /> : <meshBasicMaterial color="#1c2a3a" toneMapped={false} />}</mesh>
       </group>
-      <pointLight position={[0.35, 0.5, 0.1]} intensity={flash * 10} distance={2.5} color="#ffffff" />
+      <pointLight position={[0.35, 0.5, 0.1]} intensity={flash * 1.6} distance={2.5} color="#ffffff" />
     </Studio>
-    <div style={{ position: "absolute", inset: 0, background: "#fff", opacity: flash * 0.9 }} />
+    <div style={{ position: "absolute", inset: 0, background: "#fff", opacity: flash * 0.12 }} />
     <Tag tt={tt} at={3.6} x={560} y={900} txt="KNOW WHAT TO BUY" col={TX0} size={62} />
   </>;
 }}</Stage>;
