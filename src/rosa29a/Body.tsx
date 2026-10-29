@@ -24,7 +24,13 @@ export const END = PL.end;
 // ===== la BASE: Veo (8 s, entero desde su cuadro 0) o la foto con zoom lento; si falta, la cocina =====
 const base = (t: number): React.ReactNode => {
   const g = PL.segs.find(([a, b]) => t >= a && t < b);
-  if (!g) return <World t={t} />;
+  if (!g) {   // HUECO ≤0,34 s: nunca un destello de cocina vacía
+    const nx = PL.segs.find(([a]) => a > t && a - t <= 0.34);
+    if (nx) { const [na, , , nid] = nx; return nid.startsWith("v") ? (OK.has(nid) ? <AbsoluteFill style={{ transform: "scale(1.02)" }}><Vid id={"veo/" + nid} at={t} /></AbsoluteFill> : <World t={t} />) : <Shot k={nid} t={t} a={na} />; }
+    const pv = PL.segs.find(([, b]) => b <= t && t - b <= 0.34);
+    if (pv) { const [pa, , , pid] = pv; return pid.startsWith("v") ? (OK.has(pid) ? <AbsoluteFill style={{ transform: `scale(${1.02 + 0.04 * e(t, pa, pa + 8)})` }}><Vid id={"veo/" + pid} at={pa} /></AbsoluteFill> : <World t={t} />) : <Shot k={pid} t={t} a={pa} />; }
+    return <World t={t} />;
+  }
   const [a, , , id] = g;
   if (id.startsWith("v")) return OK.has(id) ? <AbsoluteFill style={{ transform: `scale(${1.02 + 0.04 * e(t, a, a + 8)})` }}><Vid id={"veo/" + id} at={a} /></AbsoluteFill> : <World t={t} />;
   return <Shot k={id} t={t} a={a} />;
