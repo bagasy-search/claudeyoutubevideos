@@ -518,9 +518,10 @@ export const S44: React.FC<P> = ({ t, h }) => <Stage t={t} h={h} mode="wipe" thr
 
 // 45 · el domingo de 10 minutos: una rueda de diez porciones; se prende una por cada minuto
 export const S45: React.FC<P> = ({ t, h }) => <Stage t={t} h={h} mode="iris" three>{(tt) => {
-  const n = Math.min(10, Math.floor(c01((tt - 0.5) / 6) * 11));
+  // QC 29-oct: la pieza dura ~48 s y antes se llenaba en 6 s → 40 s congelado. Ahora se llena a lo largo de toda la pieza y la rueda gira despacio
+  const D = Math.max(8, (h.out ?? 0) - (h.at ?? 0) - 3), n = Math.min(10, Math.floor(c01((tt - 0.5) / D) * 10.99)), spin = tt * 0.12;
   return <Room tt={tt} c={cam([0, 1.1, 2.2], [0, 1.05, 0])} wall="drywall" z={-0.7}>
-    {[...Array(10)].map((_, i) => <mesh key={i} position={[0, 1.05, -0.55 + (i < n ? 0.04 : 0)]}><circleGeometry args={[0.62, 32, Math.PI / 2 - (i + 1) * Math.PI / 5 + 0.02, Math.PI / 5 - 0.04]} /><meshStandardMaterial color={i < n ? "#ffb257" : "#d8d2c4"} roughness={0.6} /></mesh>)}
+    <group position={[0, 1.05, 0]} rotation={[0, 0, -spin]}><group position={[0, -1.05, 0]}>{[...Array(10)].map((_, i) => <mesh key={i} position={[0, 1.05, -0.55 + (i < n ? 0.04 : 0)]}><circleGeometry args={[0.62, 32, Math.PI / 2 - (i + 1) * Math.PI / 5 + 0.02, Math.PI / 5 - 0.04]} /><meshStandardMaterial color={i < n ? "#ffb257" : "#d8d2c4"} roughness={0.6} /></mesh>)}</group></group>
     <Plate p={[0, 1.05, -0.48]} w={0.38} h={0.38} txt={[`${n}`]} bg="#22252b" fg="#ffffff" size={300} />
   </Room>;
 }}</Stage>;
