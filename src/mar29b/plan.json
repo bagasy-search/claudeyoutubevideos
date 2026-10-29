@@ -1,0 +1,585 @@
+{
+"segs": [
+[
+3.45,
+9.45,
+"shot",
+"f_b_cocina_noche"
+],
+[
+19.7,
+27.7,
+"shot",
+"v01_sotano_noche"
+],
+[
+41.86,
+47.86,
+"shot",
+"f_b_mesa_clipboard"
+],
+[
+67.44,
+73.44,
+"shot",
+"f_b_patterson"
+],
+[
+82.8,
+88.8,
+"shot",
+"f_b_flyer_puerta"
+],
+[
+105.38,
+110.38,
+"shot",
+"n_b_tune_up_flyer"
+],
+[
+148.53,
+154.53,
+"shot",
+"f_b_capacitor"
+],
+[
+157.74,
+160.06,
+"shot",
+"f_b_contrato"
+],
+[
+186.26,
+189.35,
+"shot",
+"f_b_viuda_papeles"
+],
+[
+199.62,
+204.62,
+"shot",
+"n_b_tres_contratos"
+],
+[
+228.04,
+234.04,
+"shot",
+"n_b_flame_ok"
+],
+[
+247.78,
+253.78,
+"shot",
+"f_b_espejo"
+],
+[
+253.86,
+256.36,
+"shot",
+"f_b_camara_cable"
+],
+[
+278.4,
+285.4,
+"shot",
+"f_b_hendersons"
+],
+[
+301.02,
+309.02,
+"shot",
+"v02_espejo_luz"
+],
+[
+321.84,
+324.21,
+"shot",
+"f_b_tag_rojo"
+],
+[
+339.49,
+341.26,
+"shot",
+"n_b_grieta_real"
+],
+[
+345.81,
+351.81,
+"shot",
+"f_b_veterano"
+],
+[
+377.23,
+383.23,
+"shot",
+"f_b_calculadora"
+],
+[
+402.21,
+405.11,
+"shot",
+"v03_pilas_termostato"
+],
+[
+417.87,
+422.87,
+"shot",
+"n_b_termostato_apagado"
+],
+[
+430.49,
+436.49,
+"shot",
+"f_b_pilas"
+],
+[
+444.87,
+450.87,
+"shot",
+"f_b_cajon_pilas"
+],
+[
+462.09,
+467.09,
+"shot",
+"n_b_switch_rojo"
+],
+[
+473.05,
+479.05,
+"shot",
+"f_b_interruptor"
+],
+[
+493.33,
+501.33,
+"shot",
+"v04_cinta_switch"
+],
+[
+556.65,
+560.07,
+"shot",
+"f_b_conducto"
+],
+[
+560.07,
+565.07,
+"shot",
+"n_b_flue_suelto"
+],
+[
+588.69,
+594.69,
+"shot",
+"n_b_alarma_pared"
+],
+[
+616.53,
+622.53,
+"shot",
+"f_b_alarma_pasillo"
+],
+[
+654.53,
+660.53,
+"shot",
+"f_b_cajon_alarmas"
+],
+[
+677.98,
+680.06,
+"shot",
+"n_b_garage_auto"
+],
+[
+684.43,
+690.43,
+"shot",
+"f_b_garage"
+],
+[
+702.06,
+708.06,
+"shot",
+"f_b_generador"
+],
+[
+740.56,
+744.92,
+"shot",
+"n_b_regleta"
+],
+[
+753.04,
+759.04,
+"shot",
+"f_b_estufa_pared"
+],
+[
+790.84,
+796.84,
+"shot",
+"n_b_tubos_nieve"
+],
+[
+819.9,
+827.9,
+"shot",
+"v06_tubos_pared"
+],
+[
+836.96,
+842.96,
+"shot",
+"f_b_nieve_tubos"
+],
+[
+859.48,
+863.66,
+"shot",
+"n_b_manguera_moco"
+],
+[
+877.4,
+879.84,
+"shot",
+"f_b_manguera"
+],
+[
+920.36,
+926.36,
+"shot",
+"f_b_higrometro"
+],
+[
+935.8,
+940.8,
+"shot",
+"n_b_ventana_mojada"
+],
+[
+950.94,
+956.94,
+"shot",
+"n_b_rejillas"
+],
+[
+988.44,
+996.44,
+"shot",
+"v07_abre_rejilla"
+],
+[
+1027.99,
+1032.58,
+"shot",
+"f_b_earl_escalera"
+],
+[
+1109.27,
+1115.27,
+"shot",
+"f_b_telefono"
+],
+[
+1132.65,
+1135.32,
+"shot",
+"f_b_alvarez"
+],
+[
+1182.15,
+1187.43,
+"shot",
+"f_b_heladera"
+],
+[
+1199.13,
+1201.63,
+"shot",
+"v08_nombre_furnace"
+],
+[
+1201.63,
+1203.48,
+"shot",
+"f_b_rutina_nov"
+],
+[
+1294.45,
+1302.45,
+"shot",
+"v09_alarma_mano"
+],
+[
+1319.51,
+1323.91,
+"shot",
+"v10_saludo"
+]
+],
+"ov": [
+{
+"k": "big",
+"txt": "#7",
+"sub": "COULD SAVE YOUR LIFE",
+"col": "red",
+"at": 70.5,
+"out": 74.0
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE $49 TUNE-UP",
+"at": 78.56,
+"out": 81.16
+},
+{
+"k": "step",
+"n": 2,
+"name": "MAINTENANCE PLANS",
+"at": 157.74,
+"out": 160.34
+},
+{
+"k": "step",
+"n": 3,
+"name": "\"IT'S CRACKED\"",
+"at": 214.42,
+"out": 217.02
+},
+{
+"k": "big",
+"txt": "$11,000",
+"sub": "ON A FRIDAY · FEBRUARY",
+"col": "red",
+"at": 293.7,
+"out": 296.7
+},
+{
+"k": "step",
+"n": 4,
+"name": "REPAIR OR REPLACE",
+"at": 354.37,
+"out": 356.97
+},
+{
+"k": "step",
+"n": 5,
+"name": "BATTERIES",
+"at": 402.21,
+"out": 404.81
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE SWITCH",
+"at": 448.77,
+"out": 451.37
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE CO ALARM",
+"col": "red",
+"at": 508.89,
+"out": 511.89
+},
+{
+"k": "step",
+"n": 8,
+"name": "SPACE HEATERS",
+"at": 726.12,
+"out": 728.72
+},
+{
+"k": "step",
+"n": 9,
+"name": "SNOW ON THE PIPES",
+"at": 780.64,
+"out": 783.24
+},
+{
+"k": "step",
+"n": 10,
+"name": "THE LITTLE HOSE",
+"at": 842.82,
+"out": 845.42
+},
+{
+"k": "step",
+"n": 11,
+"name": "HUMIDITY",
+"at": 891.02,
+"out": 893.62
+},
+{
+"k": "step",
+"n": 12,
+"name": "DON'T CLOSE THE VENTS",
+"at": 941.08,
+"out": 943.68
+},
+{
+"k": "deal",
+"at": 993.85,
+"out": 995.85
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "No CO alarm by the beds",
+"at": 998.99,
+"out": 1002.49
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Heater on an extension cord",
+"at": 1004.95,
+"out": 1007.95
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Yes at the kitchen table",
+"at": 1008.45,
+"out": 1012.45
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Not checking first",
+"at": 1016.31,
+"out": 1019.81
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Ice and ladders, alone",
+"at": 1021.29,
+"out": 1025.29
+},
+{
+"k": "check",
+"title": "THE NOVEMBER ROUTINE",
+"rows": [
+{
+"txt": "Test CO alarms + dates",
+"at": 1206.51
+},
+{
+"txt": "Test smoke alarms",
+"at": 1211.75
+},
+{
+"txt": "Thermostat batteries",
+"at": 1215.17
+},
+{
+"txt": "Tape the switch",
+"at": 1218.41
+},
+{
+"txt": "Check the filter",
+"at": 1221.63
+},
+{
+"txt": "Look at the drain hose",
+"at": 1223.99
+},
+{
+"txt": "Find the white pipes",
+"at": 1229.45
+},
+{
+"txt": "Humidity gauge",
+"at": 1234.81
+},
+{
+"txt": "One honest company",
+"at": 1238.31
+}
+],
+"at": 1201.63,
+"out": 1240.81
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1249.07
+},
+{
+"at": 1254.21
+},
+{
+"at": 1258.19
+},
+{
+"at": 1263.01
+},
+{
+"at": 1269.35
+},
+{
+"at": 1271.81
+},
+{
+"at": 1273.89
+},
+{
+"at": 1279.97
+},
+{
+"at": 1283.25
+},
+{
+"at": 1285.31
+}
+],
+"at": 1245.95,
+"out": 1287.31
+},
+{
+"k": "ask",
+"at": 1291.73,
+"out": 1300.73
+},
+{
+"k": "next",
+"at": 1305.81,
+"out": 1315.31
+}
+],
+"end": 1323.91,
+"txt": {
+"recapTitle": "12 THINGS",
+"recap": [
+"$49 = door opener",
+"Plans: on paper",
+"\"Cracked\"? Picture",
+"Age × cost",
+"Batteries every fall",
+"Tape the switch",
+"CO alarm by the beds",
+"Heater in the wall",
+"Clear the pipes",
+"Clean the hose"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"What year is on the back?",
+"…of your CO alarm"
+],
+"next": [
+"THE THERMOSTAT",
+"the setting costing you hundreds"
+],
+"lower": [
+29.6,
+37.6
+]
+}
+}
