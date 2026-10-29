@@ -40,11 +40,13 @@ export const Stage: React.FC<{ t: number; h: H; mode: Mode; bg?: string; cam?: n
   if (t < at - 0.05 || t > out + 0.85) return null;
   const inn = phys(t, at, 3.8, 0.72), xo = eIn(t, out - 0.25, out + 0.75), p = cl(inn) * (1 - xo);
   if (p <= 0.004) return null;
-  const tt = (t - at) * (h.sp ?? 1), mk = maskOf(mode, p);
+  const tt = (t - at) * (h.sp ?? 1), mk = maskOf(h.ph ? "iris" : mode, p);
   return <AbsoluteFill style={{ WebkitMaskImage: mk, maskImage: mk, fontFamily: FONT, color: TX } as React.CSSProperties}>
     <AbsoluteFill style={{ background: bg ?? "radial-gradient(ellipse 75% 65% at 50% 46%, #1d1a16, #070708 72%)" }} />
+    {h.ph && <PhotoHero tt={tt} id={h.ph} dur={out - at} said={(h.said ?? at) - at} solo={!!h.solo} />}
+    {h.solo && h.kw && <HeroWord tt={tt} kw={h.kw} kw2={h.kw2} said={(h.said ?? at) - at} v={[...h.k].reduce((a: number, c: string) => a + c.charCodeAt(0), 0) % 3} />}
     {/* la foto del momento, desenfocada y oscura, con paralaje lento: el componente vive DENTRO de la escena, no sobre un fondo vacío */}
-    {h.bg && !bg && <AbsoluteFill style={{ opacity: 0.38 }}><Img src={img(h.bg)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(26px) saturate(.8) brightness(.55)", transform: `scale(${1.18 + 0.03 * Math.sin(tt * 0.2)}) translateX(${-14 * tt / Math.max(4, out - at)}px)` }} /></AbsoluteFill>}
+    {h.bg && !bg && !h.ph && <AbsoluteFill style={{ opacity: 0.38 }}><Img src={img(h.bg)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(26px) saturate(.8) brightness(.55)", transform: `scale(${1.18 + 0.03 * Math.sin(tt * 0.2)}) translateX(${-14 * tt / Math.max(4, out - at)}px)` }} /></AbsoluteFill>}
     {/* piso: charco de luz cálida y reflejo, para que los objetos apoyen en algo */}
     <AbsoluteFill style={{ background: "linear-gradient(180deg, transparent 62%, rgba(255,190,120,.05) 74%, rgba(0,0,0,.35) 100%)" }} />
     <AbsoluteFill style={{ background: "radial-gradient(ellipse 42% 14% at 50% 86%, rgba(255,196,130,.13), transparent 70%)" }} />
@@ -53,10 +55,7 @@ export const Stage: React.FC<{ t: number; h: H; mode: Mode; bg?: string; cam?: n
     <AbsoluteFill style={{ background: "radial-gradient(ellipse 120% 90% at 50% 50%, transparent 55%, rgba(0,0,0,.55))" }} />
     <AbsoluteFill style={{ perspective: 2200, opacity: cl(inn * 1.6) * (1 - xo * 0.7) }}>
       <AbsoluteFill style={{ transformStyle: "flat", perspective: 2200, transform: `translateZ(${(-300 * (1 - inn) - 650 * xo + 18 * Math.sin(tt * 0.35)) * cam}px) rotateY(${(7 * (1 - inn) + 1.8 * Math.sin(tt * 0.22 + 0.5) - 6 * xo) * cam}deg) rotateX(${(1.2 * Math.sin(tt * 0.18) + 6 * xo) * cam}deg)` }}>
-        {h.ph ? <>
-          <PhotoObj tt={tt} id={h.ph} x={70} y={345} w={640} h={470} at={0.05} rot={-2.5} />
-          <AbsoluteFill style={{ transformOrigin: "96% 50%", transform: "scale(.74)" }}>{children(tt)}</AbsoluteFill>
-        </> : children(tt)}
+        {h.solo ? null : h.ph ? <AbsoluteFill style={{ transformOrigin: "96% 50%", transform: "scale(.74)", filter: "drop-shadow(0 18px 30px rgba(0,0,0,.6))" }}>{children(tt)}</AbsoluteFill> : children(tt)}
       </AbsoluteFill>
     </AbsoluteFill>
     {/* polvo en primer plano, desenfocado, por delante de la cámara: da profundidad real */}
@@ -67,8 +66,46 @@ export const Stage: React.FC<{ t: number; h: H; mode: Mode; bg?: string; cam?: n
   </AbsoluteFill>;
 };
 
+
+// foto héroe (29-oct, evaluador e2: «foto chica al costado + ícono plano = plantilla»): la foto REAL del momento llena el cuadro,
+// cámara curva lenta, foco que se abre y luz que barre justo en la palabra dicha; a la derecha se oscurece para que el gráfico apoye.
+export const PhotoHero: React.FC<{ tt: number; id: string; dur: number; said: number; solo?: boolean }> = ({ tt, id, dur, said, solo }) => {
+  const k = cl(tt / Math.max(3, dur)), e = k * k * (3 - 2 * k);
+  const f = cl(phys(tt, Math.max(0.1, said - 0.1), 5, 0.8));          // foco: de 9 px a nítido en la palabra
+  const sw = cl((tt - said + 0.1) / 1.1);                              // barrido de luz en la palabra
+  return <AbsoluteFill>
+    <Img src={img(id)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: solo ? "50% 50%" : "38% 50%", filter: `blur(${9 * (1 - f)}px) brightness(${0.62 + 0.3 * f}) saturate(${0.85 + 0.2 * f})`,
+      transform: `scale(${1.05 + 0.1 * e}) translate(${-26 * e + 6 * Math.sin(tt * 0.3)}px, ${10 * Math.sin(tt * 0.22 + 0.7) - 8 * e}px) rotate(${0.6 * Math.sin(tt * 0.17)}deg)` }} />
+    {sw > 0 && sw < 1 && <AbsoluteFill style={{ background: `linear-gradient(110deg, transparent ${sw * 140 - 40}%, rgba(255,236,200,.28) ${sw * 140 - 22}%, transparent ${sw * 140 - 4}%)`, mixBlendMode: "screen" }} />}
+    {!solo && <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(5,4,3,.05) 0%, rgba(5,4,3,.12) 36%, rgba(5,4,3,.72) 62%, rgba(5,4,3,.86) 100%)" }} />}
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse 110% 90% at 40% 50%, transparent 55%, rgba(0,0,0,.5))" }} />
+  </AbsoluteFill>;
+};
+
+
+// palabra héroe (29-oct, vuelta 3 del evaluador: «simple y perfecto»): UNA palabra o cifra grande que cae letra por letra con peso
+// justo cuando se dice, apoyada en el tercio inferior de la foto, con su sombra de contacto; el renglón chico entra después.
+export const HeroWord: React.FC<{ tt: number; kw: string; kw2?: string; said: number; v?: number }> = ({ tt, kw, kw2, said, v = 0 }) => {
+  const a0 = Math.max(0.15, said - 0.05), ch = [...kw];
+  const sz = kw.length > 12 ? 118 : kw.length > 8 ? 142 : 176;
+  const s2 = phys(tt, a0 + 0.25 + ch.length * 0.035, 6, 0.6);
+  const glow = cl(phys(tt, a0, 4, 0.9));
+  return <AbsoluteFill style={{ pointerEvents: "none" }}>
+    <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(4,3,2,.78) 0%, rgba(4,3,2,.45) 26%, transparent 48%)" }} />
+    <div style={{ position: "absolute", ...(v === 1 ? { right: 120 } : v === 2 ? { left: 0, right: 0, justifyContent: "center" } : { left: 120 }), bottom: 150 + (kw2 ? 86 : 0), display: "flex", perspective: 900 }}>
+      <div style={{ position: "absolute", left: -60, right: -60, top: "20%", bottom: "-10%", background: `radial-gradient(ellipse at 30% 60%, rgba(255,200,130,${0.22 * glow}), transparent 70%)`, filter: "blur(30px)" }} />
+      {ch.map((c, i) => { const s = phys(tt, a0 + i * 0.035, 7.5, 0.5);
+        return <span key={i} style={{ display: "inline-block", whiteSpace: "pre", fontWeight: 900, fontSize: sz, lineHeight: 1, letterSpacing: -1, color: "#fff7ea",
+          opacity: cl(s * (v === 2 ? 1.6 : 3)), filter: v === 2 ? `blur(${(1 - cl(s)) * 14}px)` : undefined, transform: v === 1 ? `translateX(${(1 - s) * 140}px) rotateY(${(1 - s) * -60}deg)` : v === 2 ? `translateY(${(1 - s) * 24}px) scale(${1 + (1 - s) * 0.28})` : `translateY(${(1 - s) * -120}px) rotateX(${(1 - s) * 70}deg)`, textShadow: "0 10px 0 rgba(0,0,0,.25), 0 22px 44px rgba(0,0,0,.65)" }}>{c}</span>; })}
+    </div>
+    {kw2 ? <div style={{ position: "absolute", ...(v === 1 ? { right: 126, textAlign: "right" } : v === 2 ? { left: 0, right: 0, textAlign: "center" } : { left: 126 }), bottom: 150, fontWeight: 800, fontSize: 64, color: "#f0c27a", letterSpacing: 1,
+      opacity: cl(s2 * 2), transform: `translateX(${(1 - s2) * (v === 1 ? 50 : v === 2 ? 0 : -50)}px)`, textShadow: "0 6px 24px rgba(0,0,0,.7)" } as React.CSSProperties}>{kw2}</div> : null}
+  </AbsoluteFill>;
+};
+
 // encabezado del sistema (filete + kicker + título que se descubre); arriba a la izquierda
 export const Head: React.FC<{ tt: number; kick: string; title: string; col?: string; d?: number }> = ({ tt, kick, title, col = AMB, d = 0.3 }) => {
+  if (true) return null; // 29-oct: sin rótulos arriba a la izquierda (regla del creador)
   const s = cl(phys(tt, d, 6, 0.7));
   return <div style={{ position: "absolute", left: 110, top: 80, opacity: s, transform: `translateX(${(1 - s) * -40}px)` }}>
     <div style={{ display: "flex", alignItems: "center", gap: 14, fontWeight: 800, fontSize: 24, letterSpacing: 5, color: DIM }}><div style={{ width: 34 * s, height: 3, borderRadius: 2, background: col }} />{kick}</div>
@@ -80,7 +117,7 @@ export const Head: React.FC<{ tt: number; kick: string; title: string; col?: str
 export const Tag: React.FC<{ tt: number; at: number; x: number; y: number; txt: string; col?: string; size?: number; anchor?: "c" | "l" }> = ({ tt, at, x, y, txt, col = TX, size = 34, anchor = "c" }) => {
   const s = phys(tt, at, 7, 0.45);
   if (s <= 0.01) return null;
-  return <div style={{ position: "absolute", left: x, top: y, transform: `translate(${anchor === "c" ? "-50%" : "0"}, -50%) translateY(${(1 - s) * -40}px) scale(${0.8 + 0.2 * s})`, opacity: cl(s * 2), fontWeight: 900, fontSize: size, letterSpacing: 2, color: col, whiteSpace: "nowrap", textShadow: "0 6px 24px rgba(0,0,0,.6)" }}>{txt}</div>;
+  return <div style={{ position: "absolute", left: x, top: y, transform: `translate(${anchor === "c" ? "-50%" : "0"}, -50%) translateY(${(1 - s) * -40}px) scale(${0.8 + 0.2 * s})`, opacity: cl(s * 2), fontWeight: 900, fontSize: size * 1.35, letterSpacing: 2, color: col, whiteSpace: "nowrap", textShadow: "0 6px 24px rgba(0,0,0,.6)" }}>{txt}</div>;
 };
 
 // foto con marco (tarjeta) reutilizable

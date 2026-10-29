@@ -1,205 +1,329 @@
 [
-{
-"k": "receipt",
-"at": 50.9,
-"out": 57.4,
-"said": 50.9
-},
-{
-"k": "polaroid",
-"at": 90.4,
-"out": 95.4,
-"said": 90.4,
-"sp": 1.2,
-"imgAt": 90.9
-},
-{
-"k": "caliper",
-"at": 120.26,
-"out": 126.76,
-"said": 120.26
-},
-{
-"k": "doneness",
-"at": 133.58,
-"out": 140.08,
-"said": 133.58
-},
-{
-"k": "loupe",
-"at": 192.42,
-"out": 196.92,
-"said": 193.92,
-"sp": 1.444,
-"imgAt": 193.92
-},
-{
-"k": "drain",
-"at": 218.86,
-"out": 224.86,
-"said": 218.86
-},
-{
-"k": "dial",
-"at": 271.3,
-"out": 277.3,
-"said": 271.3
-},
-{
-"k": "bucket",
-"at": 303.82,
-"out": 311.32,
-"said": 303.82
-},
-{
-"k": "sand",
-"at": 343.0,
-"out": 347.5,
-"said": 343.5,
-"sp": 1.444
-},
-{
-"k": "timer",
-"at": 375.66,
-"out": 380.16,
-"said": 378.46,
-"sp": 1.333
-},
-{
-"k": "towel",
-"at": 449.318,
-"out": 455.82,
-"said": 449.32
-},
-{
-"k": "shimmer",
-"at": 501.278,
-"out": 507.78,
-"said": 501.28
-},
-{
-"k": "flip",
-"at": 515.538,
-"out": 522.04,
-"said": 515.54
-},
-{
-"k": "layers",
-"at": 553.598,
-"out": 559.6,
-"said": 553.6
-},
-{
-"k": "rule",
-"at": 646.878,
-"out": 652.88,
-"said": 646.88
-},
-{
-"k": "probe",
-"at": 683.238,
-"out": 689.74,
-"said": 683.24
-},
-{
-"k": "peel",
-"at": 767.578,
-"out": 773.58,
-"said": 767.58
-},
-{
-"k": "route",
-"at": 797.696,
-"out": 805.2,
-"said": 797.7,
-"imgAt": 806.7
-},
-{
-"k": "baste",
-"at": 839.416,
-"out": 843.92,
-"said": 839.42,
-"sp": 1.556
-},
-{
-"k": "puddle",
-"at": 890.636,
-"out": 896.14,
-"said": 890.64,
-"sp": 1.273
-},
-{
-"k": "relax",
-"at": 926.7,
-"out": 931.2,
-"said": 928.9,
-"sp": 1.333
-},
-{
-"k": "envelope",
-"at": 959.496,
-"out": 965.0,
-"said": 959.5,
-"sp": 1.091
-},
-{
-"k": "fridge",
-"at": 1060.836,
-"out": 1065.34,
-"said": 1060.84,
-"sp": 1.556
-},
-{
-"k": "night",
-"at": 1116.576,
-"out": 1123.08,
-"said": 1116.58
-},
-{
-"k": "weekend",
-"at": 1175.37,
-"out": 1179.87,
-"said": 1176.27,
-"sp": 2.0
-},
-{
-"k": "never",
-"at": 1255.693,
-"out": 1261.69,
-"said": 1255.69,
-"sp": 1.333
-},
-{
-"k": "cork",
-"at": 1317.733,
-"out": 1325.73,
-"said": 1317.73
-},
-{
-"k": "oven",
-"at": 1357.213,
-"out": 1362.21,
-"said": 1357.21,
-"sp": 1.2
-},
-{
-"k": "pig",
-"at": 1372.013,
-"out": 1378.51,
-"said": 1372.01
-},
-{
-"k": "balance",
-"at": 1492.49,
-"out": 1496.99,
-"said": 1493.09,
-"sp": 1.333
-},
-{
-"k": "ticket",
-"at": 1507.43,
-"out": 1511.93,
-"said": 1508.13,
-"sp": 1.556
-}
+ {
+  "k": "receipt",
+  "at": 50.9,
+  "out": 57.4,
+  "said": 50.9,
+  "ph": "ph_receipt",
+  "solo": true,
+  "kw": "$40",
+  "kw2": "not a special pig"
+ },
+ {
+  "k": "polaroid",
+  "at": 90.4,
+  "out": 95.4,
+  "said": 90.4,
+  "sp": 1.2,
+  "imgAt": 90.9,
+  "ph": "ph_polaroid",
+  "solo": true,
+  "kw": "1972",
+  "kw2": "I'm 19"
+ },
+ {
+  "k": "caliper",
+  "at": 120.26,
+  "out": 126.76,
+  "said": 120.26,
+  "ph": "ph_caliper",
+  "solo": true,
+  "kw": "1½ INCH",
+  "kw2": "center cut loin"
+ },
+ {
+  "k": "doneness",
+  "at": 133.58,
+  "out": 140.08,
+  "said": 133.58,
+  "ph": "ph_doneness",
+  "solo": true,
+  "kw": "THICK = TIME",
+  "kw2": ""
+ },
+ {
+  "k": "loupe",
+  "at": 192.42,
+  "out": 196.92,
+  "said": 193.92,
+  "sp": 1.444,
+  "imgAt": 193.92,
+  "ph": "ph_loupe",
+  "solo": true,
+  "kw": "\"ENHANCED\"",
+  "kw2": "up to 12% solution"
+ },
+ {
+  "k": "drain",
+  "at": 218.86,
+  "out": 224.86,
+  "said": 218.86,
+  "ph": "ph_drain",
+  "solo": true,
+  "kw": "12%",
+  "kw2": "is water"
+ },
+ {
+  "k": "dial",
+  "at": 271.3,
+  "out": 277.3,
+  "said": 271.3,
+  "ph": "ph_dial",
+  "solo": true,
+  "kw": "PORK PRICES",
+  "kw2": "for water"
+ },
+ {
+  "k": "bucket",
+  "at": 303.82,
+  "out": 311.32,
+  "said": 303.82,
+  "ph": "ph_bucket",
+  "solo": true,
+  "kw": "1 CUP WATER",
+  "kw2": "1 tbsp salt · 1 tbsp sugar"
+ },
+ {
+  "k": "sand",
+  "at": 343.0,
+  "out": 347.5,
+  "said": 343.5,
+  "sp": 1.444,
+  "ph": "ph_sand",
+  "solo": true,
+  "kw": "8 HOURS",
+  "kw2": "never more"
+ },
+ {
+  "k": "timer",
+  "at": 375.66,
+  "out": 380.16,
+  "said": 378.46,
+  "sp": 1.333,
+  "ph": "ph_timer",
+  "solo": true,
+  "kw": "1 HOUR",
+  "kw2": "then they come out"
+ },
+ {
+  "k": "towel",
+  "at": 449.318,
+  "out": 455.82,
+  "said": 449.32,
+  "ph": "ph_towel",
+  "solo": true,
+  "kw": "BONE DRY",
+  "kw2": "more paper towels"
+ },
+ {
+  "k": "shimmer",
+  "at": 501.278,
+  "out": 507.78,
+  "said": 501.28,
+  "ph": "ph_shimmer",
+  "solo": true,
+  "kw": "SHIMMER",
+  "kw2": "then the chop"
+ },
+ {
+  "k": "flip",
+  "at": 515.538,
+  "out": 522.04,
+  "said": 515.54,
+  "ph": "ph_flip",
+  "solo": true,
+  "kw": "DON'T PEEK",
+  "kw2": "3 minutes"
+ },
+ {
+  "k": "layers",
+  "at": 553.598,
+  "out": 559.6,
+  "said": 553.6,
+  "ph": "ph_layers",
+  "solo": true,
+  "kw": "THE FAT CAP",
+  "kw2": "render it first"
+ },
+ {
+  "k": "rule",
+  "at": 646.878,
+  "out": 652.88,
+  "said": 646.88,
+  "ph": "ph_rule",
+  "solo": true,
+  "kw": "145°F",
+  "kw2": "+ 3 minute rest"
+ },
+ {
+  "k": "probe",
+  "at": 683.238,
+  "out": 689.74,
+  "said": 683.24,
+  "ph": "ph_probe",
+  "solo": true,
+  "kw": "140°",
+  "kw2": "pull it here"
+ },
+ {
+  "k": "peel",
+  "at": 767.578,
+  "out": 773.58,
+  "said": 767.58,
+  "ph": "ph_peel",
+  "solo": true,
+  "kw": "SILVER SKIN",
+  "kw2": "one long strip"
+ },
+ {
+  "k": "route",
+  "at": 797.696,
+  "out": 805.2,
+  "said": 797.7,
+  "imgAt": 806.7,
+  "ph": "ph_route",
+  "solo": true,
+  "kw": "THE BERGHOFF",
+  "kw2": "Adams Street, Chicago"
+ },
+ {
+  "k": "baste",
+  "at": 839.416,
+  "out": 843.92,
+  "said": 839.42,
+  "sp": 1.556,
+  "ph": "ph_baste",
+  "solo": true,
+  "kw": "BUTTER",
+  "kw2": "garlic · thyme · at the end"
+ },
+ {
+  "k": "puddle",
+  "at": 890.636,
+  "out": 896.14,
+  "said": 890.64,
+  "sp": 1.273,
+  "ph": "ph_puddle",
+  "solo": true,
+  "kw": "COLD BOARD",
+  "kw2": "the juice runs out"
+ },
+ {
+  "k": "relax",
+  "at": 926.7,
+  "out": 931.2,
+  "said": 928.9,
+  "sp": 1.333,
+  "ph": "ph_relax",
+  "solo": true,
+  "kw": "LET IT REST",
+  "kw2": ""
+ },
+ {
+  "k": "envelope",
+  "at": 959.496,
+  "out": 965.0,
+  "said": 959.5,
+  "sp": 1.091,
+  "ph": "ph_envelope",
+  "solo": true,
+  "kw": "TRICK Nº 11",
+  "kw2": "paper towel + a plate"
+ },
+ {
+  "k": "fridge",
+  "at": 1060.836,
+  "out": 1065.34,
+  "said": 1060.84,
+  "sp": 1.556,
+  "ph": "ph_fridge",
+  "solo": true,
+  "kw": "COLD AIR",
+  "kw2": "dries the surface"
+ },
+ {
+  "k": "night",
+  "at": 1116.576,
+  "out": 1123.08,
+  "said": 1116.58,
+  "ph": "ph_night",
+  "solo": true,
+  "kw": "24 HOURS",
+  "kw2": "even better"
+ },
+ {
+  "k": "weekend",
+  "at": 1175.37,
+  "out": 1179.87,
+  "said": 1176.27,
+  "sp": 2.0,
+  "ph": "ph_weekend",
+  "solo": true,
+  "kw": "FRIDAY",
+  "kw2": "to the butcher"
+ },
+ {
+  "k": "never",
+  "at": 1255.693,
+  "out": 1261.69,
+  "said": 1255.69,
+  "sp": 1.333,
+  "ph": "ph_never",
+  "solo": true,
+  "kw": "NEVER STAB IT",
+  "kw2": ""
+ },
+ {
+  "k": "cork",
+  "at": 1317.733,
+  "out": 1325.73,
+  "said": 1317.73,
+  "ph": "ph_cork",
+  "solo": true,
+  "kw": "YOUR QUESTIONS",
+  "kw2": ""
+ },
+ {
+  "k": "oven",
+  "at": 1357.213,
+  "out": 1362.21,
+  "said": 1357.21,
+  "sp": 1.2,
+  "ph": "ph_oven",
+  "solo": true,
+  "kw": "400°F",
+  "kw2": ""
+ },
+ {
+  "k": "pig",
+  "at": 1372.013,
+  "out": 1378.51,
+  "said": 1372.01,
+  "ph": "ph_pig",
+  "solo": true,
+  "kw": "SHOULDER STEAK",
+  "kw2": "a different animal"
+ },
+ {
+  "k": "balance",
+  "at": 1492.49,
+  "out": 1496.99,
+  "said": 1493.09,
+  "sp": 1.333,
+  "ph": "ph_balance",
+  "solo": true,
+  "kw": "SAME CHOP",
+  "kw2": "$6 vs $40"
+ },
+ {
+  "k": "ticket",
+  "at": 1507.43,
+  "out": 1511.93,
+  "said": 1508.13,
+  "sp": 1.556,
+  "ph": "ph_ticket",
+  "solo": true,
+  "kw": "WHAT CUT?",
+  "kw2": "your family's favorite"
+ }
 ]
