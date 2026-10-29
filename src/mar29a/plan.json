@@ -1,0 +1,613 @@
+{
+"segs": [
+[
+4.66,
+11.66,
+"shot",
+"f_termostato61"
+],
+[
+21.44,
+29.44,
+"shot",
+"v01_mano_rejilla"
+],
+[
+37.37,
+43.37,
+"shot",
+"f_puerta_service"
+],
+[
+44.28,
+50.28,
+"shot",
+"n_filtro_monedas"
+],
+[
+53.9,
+58.9,
+"shot",
+"f_filtro_gris"
+],
+[
+68.77,
+74.77,
+"shot",
+"n_casa_invierno"
+],
+[
+85.95,
+90.95,
+"shot",
+"f_fila_filtros"
+],
+[
+120.42,
+127.42,
+"shot",
+"f_mascaras"
+],
+[
+135.86,
+138.62,
+"shot",
+"n_soplador_polvo"
+],
+[
+138.62,
+145.62,
+"shot",
+"f_factura"
+],
+[
+158.74,
+161.16,
+"shot",
+"n_motor_quemado"
+],
+[
+161.16,
+166.16,
+"shot",
+"n_intercambiador"
+],
+[
+182.4,
+188.4,
+"shot",
+"f_flecha"
+],
+[
+192.1,
+193.9,
+"shot",
+"f_kowalski"
+],
+[
+212.12,
+218.12,
+"shot",
+"n_pliegues"
+],
+[
+222.1,
+224.21,
+"shot",
+"v05_flecha_marcador"
+],
+[
+262.65,
+268.65,
+"shot",
+"f_furnace_escrito"
+],
+[
+279.41,
+286.41,
+"shot",
+"f_merv_tienda"
+],
+[
+314.5,
+321.5,
+"shot",
+"n_tres_filtros"
+],
+[
+356.29,
+364.29,
+"shot",
+"v06_mide_rack"
+],
+[
+388.02,
+394.02,
+"shot",
+"n_hueco_borde"
+],
+[
+404.61,
+410.61,
+"shot",
+"f_dedo_hueco"
+],
+[
+419.36,
+425.23,
+"shot",
+"n_serpentin_sucio"
+],
+[
+425.23,
+431.23,
+"shot",
+"f_cinta_medida"
+],
+[
+453.02,
+459.02,
+"shot",
+"f_calendario"
+],
+[
+474.64,
+479.25,
+"shot",
+"f_perros"
+],
+[
+488.58,
+494.58,
+"shot",
+"n_pelo_perro"
+],
+[
+505.82,
+513.82,
+"shot",
+"v02_saca_filtro"
+],
+[
+535.69,
+543.69,
+"shot",
+"v04_linterna_filtro"
+],
+[
+550.59,
+556.59,
+"shot",
+"f_linterna_oscura"
+],
+[
+569.38,
+577.38,
+"shot",
+"v03_sopla_polvo"
+],
+[
+617.07,
+623.07,
+"shot",
+"f_sin_filtro"
+],
+[
+636.97,
+642.97,
+"shot",
+"f_lavable_moho"
+],
+[
+677.14,
+678.68,
+"shot",
+"n_moho"
+],
+[
+686.0,
+692.0,
+"shot",
+"f_lavable_sol"
+],
+[
+703.85,
+709.85,
+"shot",
+"f_ranura_abierta"
+],
+[
+753.28,
+756.53,
+"shot",
+"n_aro_negro"
+],
+[
+756.53,
+764.53,
+"shot",
+"v07_cinta_tapa"
+],
+[
+773.95,
+780.95,
+"shot",
+"f_rejilla_techo"
+],
+[
+796.99,
+800.46,
+"shot",
+"n_etiqueta_vieja"
+],
+[
+862.93,
+865.19,
+"shot",
+"f_nota_alacena"
+],
+[
+871.71,
+876.71,
+"shot",
+"n_caja_filtro"
+],
+[
+887.66,
+894.66,
+"shot",
+"f_earl_1984"
+],
+[
+897.43,
+899.47,
+"shot",
+"f_apaga_termostato"
+],
+[
+936.18,
+943.18,
+"shot",
+"f_delgado"
+],
+[
+952.55,
+958.55,
+"shot",
+"f_motor_caliente"
+],
+[
+1029.31,
+1032.4,
+"shot",
+"f_hielo_coil"
+],
+[
+1045.53,
+1050.27,
+"shot",
+"n_agua_piso"
+],
+[
+1061.79,
+1067.79,
+"shot",
+"f_fan_on"
+],
+[
+1123.57,
+1130.57,
+"shot",
+"f_escaleras"
+],
+[
+1165.69,
+1169.69,
+"shot",
+"n_basura_filtro"
+],
+[
+1177.35,
+1183.21,
+"shot",
+"v08_mete_filtro"
+],
+[
+1203.39,
+1209.39,
+"shot",
+"f_gabinete"
+],
+[
+1219.22,
+1225.22,
+"shot",
+"n_media_abanico"
+],
+[
+1246.93,
+1252.93,
+"shot",
+"n_sotano_ordenado"
+],
+[
+1290.27,
+1292.17,
+"shot",
+"f_suma"
+],
+[
+1350.53,
+1358.53,
+"shot",
+"v09_fecha_camara"
+],
+[
+1378.63,
+1383.11,
+"shot",
+"v10_apaga_luz"
+]
+],
+"ov": [
+{
+"k": "chip",
+"txt": "$150 · 90 SECONDS",
+"col": "red",
+"at": 41.48,
+"out": 44.98
+},
+{
+"k": "big",
+"txt": "$400",
+"sub": "A YEAR · UP TO",
+"col": "red",
+"at": 69.02,
+"out": 72.22
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE ARROW",
+"at": 180.36,
+"out": 182.96
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE FANCY FILTER",
+"at": 271.66,
+"out": 274.26
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE SIZE LIE",
+"at": 350.25,
+"out": 352.85
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE 90-DAY MYTH",
+"at": 445.82,
+"out": 448.42
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE FLASHLIGHT TEST",
+"at": 528.76,
+"out": 531.36
+},
+{
+"k": "deal",
+"at": 585.18,
+"out": 587.18
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "In backwards",
+"at": 594.33,
+"out": 597.33
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Too tight for the slot",
+"at": 597.25,
+"out": 600.75
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Wrong size, air sneaks around",
+"at": 602.16,
+"out": 605.66
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Trusting the 90 days",
+"at": 607.64,
+"out": 611.14
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "No filter, “just for a day”",
+"at": 613.0,
+"out": 619.5
+},
+{
+"k": "step",
+"n": 6,
+"name": "WASHABLE FILTERS",
+"at": 635.97,
+"out": 638.57
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE MISSING DOOR",
+"at": 700.87,
+"out": 703.47
+},
+{
+"k": "step",
+"n": 8,
+"name": "TWO FILTERS AT ONCE",
+"at": 771.15,
+"out": 773.75
+},
+{
+"k": "step",
+"n": 9,
+"name": "WRITE THE DATE",
+"at": 831.25,
+"out": 833.85
+},
+{
+"k": "step",
+"n": 10,
+"name": "THE BLOWER MOTOR",
+"at": 928.93,
+"out": 931.53
+},
+{
+"k": "big",
+"txt": "$650",
+"sub": "BLOWER MOTOR · 2004",
+"col": "red",
+"at": 964.25,
+"out": 967.25
+},
+{
+"k": "step",
+"n": 11,
+"name": "THE SUMMER ICE",
+"at": 1006.35,
+"out": 1008.95
+},
+{
+"k": "check",
+"title": "THE 5-MINUTE ROUTINE",
+"rows": [
+{
+"txt": "System OFF, wait",
+"at": 1151.41
+},
+{
+"txt": "Old one out, dirty side up",
+"at": 1158.31
+},
+{
+"txt": "Straight into a bag",
+"at": 1167.65
+},
+{
+"txt": "Arrow toward the furnace",
+"at": 1172.17
+},
+{
+"txt": "Write today's date",
+"at": 1174.99
+},
+{
+"txt": "Slide in · no gaps",
+"at": 1182.51
+},
+{
+"txt": "Close the cover",
+"at": 1184.13
+},
+{
+"txt": "System ON · listen",
+"at": 1187.11
+}
+],
+"at": 1145.11,
+"out": 1189.61
+},
+{
+"k": "step",
+"n": 12,
+"name": "THE THICK FILTER",
+"at": 1201.11,
+"out": 1203.71
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1312.29
+},
+{
+"at": 1314.41
+},
+{
+"at": 1317.55
+},
+{
+"at": 1320.57
+},
+{
+"at": 1324.97
+},
+{
+"at": 1327.13
+},
+{
+"at": 1330.65
+},
+{
+"at": 1332.49
+},
+{
+"at": 1334.63
+}
+],
+"at": 1309.15,
+"out": 1336.63
+},
+{
+"k": "ask",
+"at": 1348.75,
+"out": 1357.75
+},
+{
+"k": "next",
+"at": 1362.81,
+"out": 1372.31
+}
+],
+"end": 1383.11,
+"txt": {
+"recapTitle": "THE $6 FILTER",
+"recap": [
+"Arrow → furnace",
+"MERV 8 in a 1\" slot",
+"Measure the real slot",
+"Check monthly",
+"Flashlight test",
+"Skip washables",
+"Close the open slot",
+"One filter, one place",
+"Write the date"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"When did you last change yours?",
+"…what month does it say?"
+],
+"next": [
+"THE THERMOSTAT",
+"the switch running up your bill"
+],
+"lower": [
+52.06,
+60.06
+]
+}
+}
