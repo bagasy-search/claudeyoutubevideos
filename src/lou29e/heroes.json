@@ -1,0 +1,100 @@
+[
+{
+"k": "crackerBoil",
+"mode": "iris",
+"at": 190.71,
+"out": 202.21,
+"imgAt": 191.71
+},
+{
+"k": "vinegarSpoon",
+"mode": "wipe",
+"at": 243.21,
+"out": 254.71,
+"imgAt": 244.21
+},
+{
+"k": "blindBeans",
+"mode": "drop",
+"at": 261.99,
+"out": 273.49,
+"imgAt": 262.99
+},
+{
+"k": "funeralCard",
+"mode": "split",
+"at": 727.3,
+"out": 734.6,
+"imgAt": 728.3
+},
+{
+"k": "rhubarbLeaf",
+"mode": "iris",
+"at": 814.73,
+"out": 820.58,
+"imgAt": 815.73
+},
+{
+"k": "meringuePeaks",
+"mode": "wipe",
+"at": 947.69,
+"out": 959.19,
+"imgAt": 948.69
+},
+{
+"k": "rainyDay",
+"mode": "drop",
+"at": 981.14,
+"out": 992.64,
+"imgAt": 982.14
+},
+{
+"k": "coolThree",
+"mode": "blinds",
+"at": 1048.74,
+"out": 1057.62,
+"imgAt": 1049.74
+},
+{
+"k": "bananaLayer",
+"mode": "split",
+"at": 1122.94,
+"out": 1128.79,
+"imgAt": 1123.94
+},
+{
+"k": "toastCoconut",
+"mode": "iris",
+"at": 1205.18,
+"out": 1216.66,
+"imgAt": 1206.18
+},
+{
+"k": "latticeWeave",
+"mode": "wipe",
+"at": 1307.22,
+"out": 1318.55,
+"imgAt": 1308.22
+},
+{
+"k": "peaPieces",
+"mode": "blinds",
+"at": 1495.13,
+"out": 1506.63,
+"imgAt": 1496.13
+},
+{
+"k": "crimpEdge",
+"mode": "split",
+"at": 1579.23,
+"out": 1590.73,
+"imgAt": 1580.23
+},
+{
+"k": "frostFat",
+"mode": "iris",
+"at": 1660.27,
+"out": 1671.77,
+"imgAt": 1661.27
+}
+]
