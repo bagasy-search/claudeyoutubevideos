@@ -511,3 +511,5 @@ export const MAP: Record<string, C> = { lupa: HLupa, charola: HCharola, tresdedo
 
 import { MAP3 } from "./heroes3d";
 Object.assign(MAP, MAP3);
+import { MAP3B } from "./heroes3d2";
+Object.assign(MAP, MAP3B);

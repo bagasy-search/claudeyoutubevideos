@@ -31,7 +31,7 @@ const maskOf = (m: Mode, p: number): string => {
   if (m === "diag") return `linear-gradient(225deg, #000 ${p * 150 - 30}%, transparent ${p * 150}%)`;
   if (m === "split") { const a = 50 - p * 62, b = 50 + p * 62; return `linear-gradient(90deg, transparent ${a}%, #000 ${a + 10}%, #000 ${b - 10}%, transparent ${b}%)`; }
   if (m === "ring") return `radial-gradient(circle at 50% 50%, transparent ${Math.max(0, 900 - p * 1100)}px, #000 ${Math.max(0, 900 - p * 1100) + 60}px)`;
-  if (m === "blinds") { if (p > 0.9) return "linear-gradient(#000,#000)"; const w = p * 178; return `repeating-linear-gradient(90deg, #000 0px, #000 ${w}px, transparent ${w}px, transparent 160px)`; }
+  if (m === "blinds") return `linear-gradient(0deg, #000 ${p * 150 - 40}%, transparent ${p * 150}%)`; // cortina suave de abajo (las persianas dejaban rayas)
   return `linear-gradient(180deg, #000 ${p * 150 - 30}%, transparent ${p * 150}%)`;
 };
 
@@ -64,11 +64,11 @@ export const Stage: React.FC<{ t: number; h: H; mode: Mode; tone?: string; cam?:
 };
 
 // encabezado chico (kicker + título) arriba a la izquierda: acompaña, nunca es el componente
-export const Head: React.FC<{ tt: number; kick: string; title: string; col?: string; d?: number }> = ({ tt, kick, title, col = MZ, d = 0.3 }) => {
+export const Head: React.FC<{ tt: number; kick: string; title: string; col?: string; d?: number }> = ({ tt, kick, title, col = MZ, d = 0.1 }) => {
   const s = cl(phys(tt, d, 6, 0.7));
   return <div style={{ position: "absolute", left: 110, top: 78, opacity: s, transform: `translateX(${(1 - s) * -40}px)` }}>
     <div style={{ display: "flex", alignItems: "center", gap: 14, fontWeight: 800, fontSize: 24, letterSpacing: 5, color: DIM }}><div style={{ width: 34 * s, height: 3, borderRadius: 2, background: col }} />{kick}</div>
-    <div style={{ fontWeight: 900, fontSize: 58, marginTop: 6, clipPath: `inset(0 ${(1 - s) * 100}% 0 0)`, whiteSpace: "nowrap", textShadow: "0 6px 26px rgba(0,0,0,.6)" }}>{title}</div>
+    <div style={{ fontWeight: 900, fontSize: 58, marginTop: 6, transform: `translateY(${(1 - s) * 18}px)`, filter: `blur(${(1 - s) * 6}px)`, whiteSpace: "nowrap", textShadow: "0 6px 26px rgba(0,0,0,.6)" }}>{title}</div>
   </div>;
 };
 // rótulo que cae con peso
