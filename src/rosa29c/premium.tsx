@@ -180,8 +180,7 @@ export const Versus: React.FC<{ t: number; at: number; out: number; L: Col2; R: 
     const num = cc.val.match(/^[-+−]?\d+/), cnt = ei(t, at + 0.5 + i * 0.35, at + 1.6 + i * 0.35);
     const shown = num ? cc.val.replace(num[0], String(Math.round(+num[0].replace("−", "-") * cnt))) : cc.val;
     return <div key={i} style={{ position: "absolute", left: -210 + sg * 270, top: -373, width: 420, height: 746, opacity: cl(s * 2),
-      transform: `translate3d(${land * sg * 300}px, ${Math.max(land, -0.04) * 700}px, ${Math.max(0, v) * 110 + Math.min(0, v) * 160}px) rotateY(${sg * -14 * (1 - Math.abs(v)) + Math.min(0, v) * sg * -22}deg) rotateZ(${land * sg * 16}deg) rotateX(${land * 30}deg)`,
-      WebkitBoxReflect: "below 14px linear-gradient(transparent 76%, rgba(255,255,255,.18))" } as React.CSSProperties}>
+      transform: `translate3d(${land * sg * 300}px, ${Math.max(land, -0.04) * 700}px, ${Math.max(0, v) * 110 + Math.min(0, v) * 160}px) rotateY(${sg * -14 * (1 - Math.abs(v)) + Math.min(0, v) * sg * -22}deg) rotateZ(${land * sg * 16}deg) rotateX(${land * 30}deg)` } as React.CSSProperties}>
       <div style={{ position: "relative", width: "100%", height: "100%", borderRadius: 26, overflow: "hidden", background: "#16171a",
         boxShadow: `0 50px 110px rgba(0,0,0,.65), 0 0 0 ${2 + 3 * Math.max(0, v)}px ${win && v > 0.3 ? cc.col : "rgba(255,255,255,.14)"}, 0 0 ${80 * Math.max(0, v)}px ${cc.col}55` }}>
         {imgs[i] && <Img src={img(imgs[i]!)} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.06 + 0.06 * e(t, at, out)})`, filter: `grayscale(${Math.max(0, -v)}) brightness(${1 - 0.45 * Math.max(0, -v)})` }} />}
@@ -327,7 +326,7 @@ export const StepTitle: React.FC<{ t: number; at: number; n: number; name: strin
     {plate && <div style={{ position: "absolute", left: 1370, top: 520, perspective: 1700 }}>
       <div style={{ position: "absolute", left: -370, top: -208, width: 740, height: 416, borderRadius: 18, overflow: "hidden",
         transform: `translateZ(${(1 - ps) * -500 - xo * 400}px) rotateY(${(1 - ps) * -75 - 14 + 4 * Math.sin((t - at) * 0.5)}deg) rotateX(${3 + xo * 8}deg)`,
-        boxShadow: `0 60px 120px rgba(0,0,0,.7), 0 0 0 2px ${c}55`, WebkitBoxReflect: "below 12px linear-gradient(transparent 80%, rgba(255,255,255,.16))" } as React.CSSProperties}>
+        boxShadow: `0 60px 120px rgba(0,0,0,.7), 0 0 0 2px ${c}55` } as React.CSSProperties}>
         <Img src={img(im!)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.15 - 0.08 * e(t, at, out)})` }} />
         <div style={{ position: "absolute", top: 0, bottom: 0, left: `${-40 + 170 * ei(t, at + 0.4, at + 1.4)}%`, width: "26%", background: "linear-gradient(100deg, transparent, rgba(255,255,255,.18), transparent)" }} />
       </div>
@@ -451,8 +450,7 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
           if (op <= 0.01) return null;
           const front = Math.max(0, 1 - ad), land = 1 - s; // lo que le falta para apoyarse (negativo = se pasó)
           return <div key={i} style={{ position: "absolute", left: -180, top: -320, width: 360, height: 640, opacity: op, zIndex: 100 - Math.round(ad * 10),
-            transform: `translate3d(${x + land * 260}px, ${Math.max(land, -0.04) * 760}px, ${z - xi * 500}px) rotateY(${ry - land * 30}deg) rotateX(${land * 40}deg) rotateZ(${land * 14}deg) scale(${0.9 + 0.2 * front})`,
-            WebkitBoxReflect: "below 14px linear-gradient(transparent 74%, rgba(255,255,255,.2))" } as React.CSSProperties}>
+            transform: `translate3d(${x + land * 260}px, ${Math.max(land, -0.04) * 760}px, ${z - xi * 500}px) rotateY(${ry - land * 30}deg) rotateX(${land * 40}deg) rotateZ(${land * 14}deg) scale(${0.9 + 0.2 * front})` } as React.CSSProperties}>
             <div style={{ position: "relative", width: "100%", height: "100%", borderRadius: 24, overflow: "hidden", background: "#16171a",
               boxShadow: `0 ${40 + Math.abs(land) * 60}px ${90 + Math.abs(land) * 80}px rgba(0,0,0,${0.6 - Math.min(0.3, Math.abs(land) * 0.3)}), 0 0 0 ${2 + 2 * front}px ${front > 0.5 ? c : "rgba(255,255,255,.12)"}` }}>
               {cd.img && <Img src={staticFile("img/" + P + cd.img + ".jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: `translate(${-14 * Math.sin((t - cd.at) * 0.45)}px, ${-10 * Math.sin((t - cd.at) * 0.31 + 0.8)}px) scale(${1.1 + 0.16 * front * ei(t, cd.at, cd.at + 9)})` }} />}
