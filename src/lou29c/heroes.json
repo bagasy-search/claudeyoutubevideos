@@ -1,0 +1,65 @@
+[
+{
+"k": "creamMoat",
+"mode": "wipe",
+"at": 147.07,
+"out": 156.55,
+"imgAt": 148.07
+},
+{
+"k": "lumps",
+"mode": "drop",
+"at": 246.51,
+"out": 256.96,
+"imgAt": 247.51
+},
+{
+"k": "towelSqueeze",
+"mode": "split",
+"at": 382.78,
+"out": 394.28,
+"imgAt": 383.78
+},
+{
+"k": "oneLayer",
+"mode": "iris",
+"at": 517.77,
+"out": 529.27,
+"imgAt": 518.77
+},
+{
+"k": "hourglass",
+"mode": "wipe",
+"at": 684.1,
+"out": 695.6,
+"imgAt": 685.1
+},
+{
+"k": "halfInch",
+"mode": "blinds",
+"at": 872.99,
+"out": 884.49,
+"imgAt": 873.99
+},
+{
+"k": "coldBacon",
+"mode": "iris",
+"at": 994.11,
+"out": 1005.61,
+"imgAt": 995.11
+},
+{
+"k": "griddleHeat",
+"mode": "wipe",
+"at": 1575.73,
+"out": 1586.79,
+"imgAt": 1576.73
+},
+{
+"k": "urnGauge",
+"mode": "drop",
+"at": 1699.89,
+"out": 1710.08,
+"imgAt": 1700.89
+}
+]
