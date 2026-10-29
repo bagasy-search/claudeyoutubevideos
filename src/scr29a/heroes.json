@@ -1,0 +1,503 @@
+[
+ {
+  "k": "manifold",
+  "at": 22.74,
+  "out": 30.24,
+  "ph": "heat this whole garage",
+  "dev": -1.4,
+  "items": [
+   {
+    "txt": "HEAT",
+    "at": 1.4
+   },
+   {
+    "txt": "COOK",
+    "at": 2.74
+   },
+   {
+    "txt": "HOT WATER",
+    "at": 4.96
+   },
+   {
+    "txt": "DRY",
+    "at": 6.52
+   }
+  ]
+ },
+ {
+  "k": "padlock",
+  "at": 34.68,
+  "out": 44.18,
+  "ph": "and function number four is the one",
+  "dev": -0.3
+ },
+ {
+  "k": "lineup",
+  "at": 52.76,
+  "out": 61.76,
+  "ph": "half a dozen different stoves",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 8.18
+   }
+  ]
+ },
+ {
+  "k": "pricetag",
+  "at": 85.36,
+  "out": 92.36,
+  "ph": "scrap yards have a pile",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 5.34
+   }
+  ]
+ },
+ {
+  "k": "xray",
+  "at": 103.94,
+  "out": 112.44,
+  "ph": "there s gas in the steel",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 6.92
+   }
+  ]
+ },
+ {
+  "k": "wrench",
+  "at": 126.4,
+  "out": 133.4,
+  "ph": "then take the pressure valve",
+  "dev": -0.6
+ },
+ {
+  "k": "subscribe",
+  "at": 139.82,
+  "out": 147.32,
+  "ph": "and if you hit subscribe",
+  "dev": -0.3
+ },
+ {
+  "k": "tape",
+  "at": 155.72,
+  "out": 165.72,
+  "ph": "take a marker and draw",
+  "dev": 0.0,
+  "img": "n_tanque_viejo",
+  "items": [
+   {
+    "at": 2.96
+   },
+   {
+    "at": 4.52
+   },
+   {
+    "at": 7.78
+   }
+  ]
+ },
+ {
+  "k": "section",
+  "at": 192.26,
+  "out": 203.76,
+  "ph": "four inches up the bowl sits",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 5.22
+   }
+  ]
+ },
+ {
+  "k": "calendar",
+  "at": 243.3,
+  "out": 254.5,
+  "ph": "a cake pan will burn through",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 10.5
+   }
+  ]
+ },
+ {
+  "k": "drill",
+  "at": 279.14,
+  "out": 286.14,
+  "ph": "take a piece of steel pipe",
+  "dev": -2.2,
+  "items": [
+   {
+    "at": 4.18
+   },
+   {
+    "at": 5.74
+   }
+  ]
+ },
+ {
+  "k": "money",
+  "at": 326.42,
+  "out": 332.92,
+  "ph": "that smoke is fuel you paid for",
+  "dev": -0.3
+ },
+ {
+  "k": "loupe",
+  "at": 376.73,
+  "out": 386.23,
+  "ph": "hanging on the wall about three feet",
+  "dev": -1.2,
+  "items": [
+   {
+    "at": 6.76
+   }
+  ]
+ },
+ {
+  "k": "metronome",
+  "at": 411.05,
+  "out": 418.55,
+  "ph": "about one drop per second",
+  "dev": -3.0,
+  "items": [
+   {
+    "at": 5.8
+   },
+   {
+    "at": 6.38
+   },
+   {
+    "at": 7.24
+   }
+  ]
+ },
+ {
+  "k": "settle",
+  "at": 438.81,
+  "out": 449.81,
+  "ph": "let it settle first",
+  "dev": -1.0,
+  "items": [
+   {
+    "at": 8.78
+   },
+   {
+    "at": 9.36
+   }
+  ]
+ },
+ {
+  "k": "match",
+  "at": 471.87,
+  "out": 480.37,
+  "ph": "so i put a crumpled sheet",
+  "dev": -1.6,
+  "items": [
+   {
+    "at": 7.94
+   }
+  ]
+ },
+ {
+  "k": "stopwatch",
+  "at": 484.03,
+  "out": 492.53,
+  "ph": "hear it start to tick",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 2.68
+   }
+  ]
+ },
+ {
+  "k": "portholes",
+  "at": 503.41,
+  "out": 512.41,
+  "ph": "and through the holes",
+  "dev": -0.8,
+  "items": [
+   {
+    "at": 3.06
+   },
+   {
+    "at": 3.98
+   },
+   {
+    "at": 4.92
+   }
+  ]
+ },
+ {
+  "k": "floorplan",
+  "at": 517.41,
+  "out": 528.41,
+  "ph": "this stove goes in a garage",
+  "dev": -1.3,
+  "items": [
+   {
+    "at": 5.36
+   },
+   {
+    "at": 9.02
+   }
+  ]
+ },
+ {
+  "k": "piperace",
+  "at": 566.35,
+  "out": 574.35,
+  "ph": "a long sideways run",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 4.92
+   }
+  ]
+ },
+ {
+  "k": "frost",
+  "at": 599.15,
+  "out": 608.65,
+  "ph": "it s about 40 degrees inside",
+  "dev": -0.0,
+  "items": [
+   {
+    "at": 3.44
+   },
+   {
+    "at": 5.26
+   }
+  ]
+ },
+ {
+  "k": "thermal",
+  "at": 651.57,
+  "out": 660.07,
+  "ph": "now that plate gets hot",
+  "dev": -1.3,
+  "img": "n_ir_termometro",
+  "items": [
+   {
+    "at": 5.38
+   }
+  ]
+ },
+ {
+  "k": "meter",
+  "at": 682.67,
+  "out": 690.67,
+  "ph": "a can of chili at lunch",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 4.06
+   }
+  ]
+ },
+ {
+  "k": "loop",
+  "at": 830.18,
+  "out": 841.18,
+  "ph": "you don t need a pump",
+  "dev": -5.4,
+  "items": [
+   {
+    "at": 7.24
+   }
+  ]
+ },
+ {
+  "k": "dial",
+  "at": 862.16,
+  "out": 870.16,
+  "ph": "a five gallon bucket of cold water",
+  "dev": -0.9,
+  "items": [
+   {
+    "at": 5.76
+   }
+  ]
+ },
+ {
+  "k": "balloon",
+  "at": 893.54,
+  "out": 902.54,
+  "ph": "steam in a closed copper coil",
+  "dev": -0.8,
+  "items": [
+   {
+    "at": 3.02
+   },
+   {
+    "at": 7.1
+   }
+  ]
+ },
+ {
+  "k": "toolbox",
+  "at": 942.88,
+  "out": 954.38,
+  "ph": "no a brass needle valve",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 1.08
+   },
+   {
+    "at": 5.82
+   },
+   {
+    "at": 9.78
+   }
+  ]
+ },
+ {
+  "k": "daycycle",
+  "at": 994.16,
+  "out": 1002.66,
+  "ph": "and tomorrow morning they re still wet",
+  "dev": -0.3
+ },
+ {
+  "k": "balance",
+  "at": 1045.9,
+  "out": 1054.9,
+  "ph": "this function pays for the whole build",
+  "dev": -2.0,
+  "items": [
+   {
+    "at": 5.64
+   },
+   {
+    "at": 6.66
+   }
+  ]
+ },
+ {
+  "k": "binder",
+  "at": 1093.68,
+  "out": 1106.68,
+  "ph": "slide it back in under",
+  "dev": -0.8,
+  "items": [
+   {
+    "at": 3.54
+   },
+   {
+    "at": 10.44
+   }
+  ]
+ },
+ {
+  "k": "hourglass",
+  "at": 1146.82,
+  "out": 1156.32,
+  "ph": "let the stove burn off",
+  "dev": -1.0,
+  "items": [
+   {
+    "at": 4.26
+   }
+  ]
+ },
+ {
+  "k": "cork",
+  "at": 1162.96,
+  "out": 1170.46,
+  "ph": "somebody asked does it smell",
+  "dev": -2.89,
+  "items": [
+   {
+    "at": 5.58
+   }
+  ]
+ },
+ {
+  "k": "register",
+  "at": 1229.91,
+  "out": 1240.41,
+  "ph": "the only thing i bought",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 2.84
+   },
+   {
+    "at": 4.16
+   },
+   {
+    "at": 5.08
+   },
+   {
+    "at": 6.08
+   }
+  ]
+ },
+ {
+  "k": "conveyor",
+  "at": 1245.76,
+  "out": 1258.26,
+  "ph": "never a propane cylinder",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 2.15
+   },
+   {
+    "at": 4.91
+   },
+   {
+    "at": 8.54
+   },
+   {
+    "at": 10.39
+   }
+  ]
+ },
+ {
+  "k": "shadow",
+  "at": 1315.67,
+  "out": 1323.67,
+  "ph": "what would you add as function number five",
+  "dev": -1.8,
+  "imgs": [
+   "f_calienta_manos",
+   "n_cafetera_plancha",
+   "n_balde_cobre",
+   "n_botas_rack"
+  ]
+ },
+ {
+  "k": "paintfan",
+  "at": 1407.89,
+  "out": 1417.89,
+  "ph": "if it s putting out gray smoke",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 1.58
+   },
+   {
+    "at": 7.06
+   }
+  ]
+ },
+ {
+  "k": "scope",
+  "at": 1440.93,
+  "out": 1452.93,
+  "ph": "a good oil stove has a low",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 5.96
+   }
+  ]
+ }
+]
