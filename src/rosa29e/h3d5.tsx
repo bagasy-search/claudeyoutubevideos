@@ -126,7 +126,7 @@ export const Shutters3: React.FC<P> = ({ t, h }) => {
     const c = orbit(tt, [0.15, 1.2, -0.5], [0, 1.2, -1.85], 0.12, 0.01);
     return <C3 bloom={0.2}><Cam p={c.p} l={c.l} fov={50} /><Kitchen />
       {/* el vano de la ventana con cielo cálido */}
-      <mesh position={[0, 1.3, -1.9]}><planeGeometry args={[0.8, 0.9]} /><meshBasicMaterial map={T.planks()} color={new THREE.Color("#9ac0d8").lerp(new THREE.Color("#ffe2a8"), beam).getStyle()} /></mesh>
+      <mesh position={[0, 1.3, -1.875]}><planeGeometry args={[0.8, 0.9]} /><meshBasicMaterial map={T.planks()} color={new THREE.Color("#9ac0d8").lerp(new THREE.Color("#ffe2a8"), beam).getStyle()} /></mesh>
       {[[-0.43, 1.3, 0.06, 0.98], [0.43, 1.3, 0.06, 0.98], [0, 1.8, 0.92, 0.06], [0, 0.82, 0.98, 0.08]].map(([x, y, w, hh], i) => <mesh key={i} position={[x, y, -1.83]} geometry={rbox(w, hh, 0.08, 0.01)} material={M.wood("#6b4426")} castShadow />)}
       {/* los dos postigos, bisagra en el marco */}
       {[-1, 1].map((d) => <group key={d} position={[d * 0.4, 1.3, -1.79]} rotation={[0, d * -1.9 * o, 0]}>
@@ -135,7 +135,7 @@ export const Shutters3: React.FC<P> = ({ t, h }) => {
       </group>)}
       {/* el haz de sol */}
       <mesh position={[0, 0.85, -0.95]} rotation={[0.62, 0, 0]}><boxGeometry args={[0.75, 0.9, 2.0]} /><meshBasicMaterial color="#ffe6a8" transparent opacity={0.16 * beam} depthWrite={false} blending={THREE.AdditiveBlending} /></mesh>
-      <spotLight position={[0, 1.4, -1.7]} target-position={[0, 0.3, 0]} angle={0.5} penumbra={0.6} intensity={6 * beam} color="#ffdca0" castShadow />
+      <spotLight position={[0, 1.4, -1.7]} target-position={[0, 0.3, 0]} angle={0.5} penumbra={0.6} intensity={6 * beam} color="#ffdca0" />
       {/* lo que flota en el haz: hojas de laurel, rodajas de limón, granos de pimienta */}
       {Array.from({ length: 14 }, (_, i) => {
         const k = ((tt - 1.0) * 0.18 + rnd(i, 1)) % 1; if (tt < 1.0) return null;
