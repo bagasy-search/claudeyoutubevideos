@@ -252,8 +252,8 @@ export const E1Musicbox: React.FC<P> = ({ t, h }) => <Stage t={t} h={h} mode="ir
       {[[-0.28, 0], [0.28, 0]].map(([x], i) => <RB key={i} p={[x, 0.09, 0]} s={[0.012, 0.19, 0.39]} rad={0.003} c="#c9a25a" m={0.9} r={0.3} />)}
       <RB p={[0, 0.17, 0]} s={[0.5, 0.02, 0.32]} rad={0.004} c="#6a1a2a" r={0.95} />
       {[[-0.15, 0.05], [0.14, 0.07], [0.05, -0.08]].map(([x, z], i) => <mesh key={i} position={[x, 0.2, z]} rotation={[Math.PI / 2 - 0.3, 0, i]}><torusGeometry args={[0.035, 0.009, 10, 28]} /><meshStandardMaterial color={i === 1 ? "#d8dde2" : "#d8b04a"} metalness={1} roughness={0.15} emissive="#ffcf70" emissiveIntensity={0.25 * op} /></mesh>)}
-      <group position={[0, 0.18, -0.19]} rotation={[-op * 1.75, 0, 0]}><RB p={[0, 0.0, 0.19]} s={[0.58, 0.05, 0.4]} rad={0.02} c="#7a2a3a" r={0.5} /><mesh position={[0, -0.028, 0.19]} rotation={[Math.PI / 2, 0, 0]}><planeGeometry args={[0.4, 0.26]} /><meshStandardMaterial color="#e8eef6" metalness={1} roughness={0.05} /></mesh></group>
-      <group position={[0, 0.18 + 0.2 * up, -0.02]} rotation={[0, spin, 0]} scale={c01(up)}>
+      <group position={[0, 0.18, -0.19]} rotation={[-op * 1.75, 0, 0]}><RB p={[0, 0.0, 0.19]} s={[0.58, 0.05, 0.4]} rad={0.02} c="#7a2a3a" r={0.5} /><mesh position={[0, -0.028, 0.19]} rotation={[Math.PI / 2, 0, 0]}><planeGeometry args={[0.4, 0.26]} /><meshStandardMaterial color="#e8eef6" metalness={0.8} roughness={0.22} /></mesh></group>
+      <group position={[0, 0.18 + 0.2 * up, -0.02]} rotation={[0, spin, 0]} scale={Math.max(0.02, c01(up))}>
         <mesh position={[0, 0.05, 0]}><coneGeometry args={[0.05, 0.08, 20]} /><meshStandardMaterial color="#f2c0c8" roughness={0.6} /></mesh>
         <mesh position={[0, 0.12, 0]}><cylinderGeometry args={[0.012, 0.016, 0.07, 12]} /><meshStandardMaterial color="#f2c0c8" roughness={0.6} /></mesh>
         <mesh position={[0, 0.17, 0]}><sphereGeometry args={[0.018, 14, 12]} /><meshStandardMaterial color="#f0d8c4" roughness={0.6} /></mesh>
