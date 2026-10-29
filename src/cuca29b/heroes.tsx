@@ -472,3 +472,6 @@ export const MAP: Record<string, C> = { mazorca: HMazorca, cubeta: HCubeta, bala
   una: HUna, relojpared: HRelojPared, ventanaluna: HVentanaLuna, tiraph: HTiraPh, capasgrano: HCapasGrano, molino: HMolino, bolita: HBolita, tibia: HTibia, infla: HInfla,
   calibre: HCalibre, chiquihuite: HChiquihuite, embudo: HEmbudo, alcancia: HAlcancia, voltea: HVoltea, pizarra: HPizarra, pinza: HPinza, mapa: HMapa, solluna: HSolLuna,
   errorestort: HErroresTort, escalera: HEscalera, alacena: HAlacena, rollo: HRollo };
+
+import { MAP3 } from "./heroes3d";
+Object.assign(MAP, MAP3);
