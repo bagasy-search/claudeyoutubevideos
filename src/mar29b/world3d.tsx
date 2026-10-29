@@ -246,8 +246,8 @@ export const HouseWorld: React.FC<{ t: number }> = ({ t }) => {
 
       {/* terreno helado + corte de tierra alrededor del sótano */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[220, 220]} /><meshStandardMaterial color="#9fa99f" roughness={1} /></mesh>
-      <Box p={[-7.6, -1.6, 0]} s={[3.2, 3.2, 5.4]} c="#3a2c22" r={1} />
-      <Box p={[4.3, -1.6, 0]} s={[4.4, 3.2, 5.4]} c="#3a2c22" r={1} />
+      <Box p={[-7.6, -1.61, 0]} s={[3.2, 3.2, 5.4]} c="#3a2c22" r={1} />
+      <Box p={[4.3, -1.61, 0]} s={[4.4, 3.2, 5.4]} c="#3a2c22" r={1} />
       <Box p={[-2, -3.2, 0]} s={[8.4, 0.3, 5.4]} c="#56585b" r={1} />
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.01, 8.8]} receiveShadow><planeGeometry args={[220, 5.4]} /><meshStandardMaterial color="#2f3236" roughness={0.95} /></mesh>
       {Array.from({ length: 30 }, (_, i) => <mesh key={i} rotation={[-Math.PI / 2, 0, 0]} position={[-60 + i * 4.2, 0.02, 8.8]}><planeGeometry args={[1.6, 0.12]} /><meshBasicMaterial color="#c9b56a" transparent opacity={0.35} /></mesh>)}

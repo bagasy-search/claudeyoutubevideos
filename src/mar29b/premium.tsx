@@ -333,7 +333,7 @@ export const StepTitle: React.FC<{ t: number; at: number; n: number; name: strin
       </div>
     </div>}
     <div style={{ position: "absolute", left: tx, top: y, transform: `translate(-50%,-50%) scale(${sc}) perspective(1400px) translateZ(${-xo * 300}px)`, textAlign: "center", fontFamily: FONT, color: G.txt, whiteSpace: "nowrap" }}>
-      <div style={{ fontWeight: 800, fontSize: 34, letterSpacing: 18 * cl(k2) + 4, color: G.dim, opacity: cl(k2), marginRight: -18 }}>PUNTO</div>
+      <div style={{ fontWeight: 800, fontSize: 34, letterSpacing: 18 * cl(k2) + 4, color: G.dim, opacity: cl(k2), marginRight: -18 }}>NUMBER</div>
       <div style={{ overflow: "hidden", paddingTop: 10 }}>
         <div style={{ transform: `translateY(${(1 - s) * 100}%) rotateX(${(1 - s) * 40}deg)`, fontWeight: 900, fontSize: 250, lineHeight: 1.05, letterSpacing: -6, color: c, textShadow: `0 0 60px ${c}44` }}>{n}</div>
       </div>
