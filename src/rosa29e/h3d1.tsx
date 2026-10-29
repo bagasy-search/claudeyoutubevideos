@@ -106,7 +106,7 @@ export const ApronHook3: React.FC<P> = ({ t, h }) => {
     const fall = spr(tt, 0.15, 7, 0.38), hk = Math.max(0, tt - 0.75), sw = tt > 0.75 ? Math.sin(hk * 2.2) * 0.5 * Math.exp(-hk * 0.45) : 0;
     const y = lerp(2.7, 1.47, cl(fall));
     const c = orbit(tt, [0.25, 1.2, -0.35], [0, 1.08, -1.8], 0.15, 0.012);
-    return <C3><Cam p={c.p} l={c.l} fov={50} /><Kitchen />
+    return <C3><Cam p={c.p} l={c.l} fov={50} /><Kitchen wall={false} />
       <mesh position={[0, 1.2, -1.875]} geometry={rbox(4, 2.6, 0.02, 0.005)} castShadow receiveShadow><meshStandardMaterial map={T.planks()} color="#b89a7a" roughness={0.85} /></mesh>
       {/* repisa de madera con el gancho grande */}
       <mesh position={[0, 1.52, -1.86]} geometry={rbox(1.6, 0.16, 0.05, 0.01)} material={M.wood("#6b4426")} castShadow receiveShadow />
