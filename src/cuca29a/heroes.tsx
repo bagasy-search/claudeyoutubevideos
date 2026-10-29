@@ -513,3 +513,5 @@ import { MAP3 } from "./heroes3d";
 Object.assign(MAP, MAP3);
 import { MAP3B } from "./heroes3d2";
 Object.assign(MAP, MAP3B);
+import { MAP3C } from "./heroes3d3";
+Object.assign(MAP, MAP3C);
