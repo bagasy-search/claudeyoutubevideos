@@ -31,7 +31,7 @@ const Cam: React.FC<{ tt: number; keys: CK[]; dur: number }> = ({ tt, keys, dur 
   p.lerp(l, 0.24 * sm(tt, dur * 0.55, dur + 0.6));
   p.x += Math.sin(tt * 0.53) * 0.01; p.y += Math.sin(tt * 0.71 + 1) * 0.007;
   const pc = camera as THREE.PerspectiveCamera;
-  pc.position.copy(p); pc.lookAt(l); pc.fov = lerp(a.fov ?? 32, b.fov ?? 32, k); pc.near = 0.05; pc.far = 120; pc.updateProjectionMatrix();
+  pc.position.copy(p); pc.lookAt(l); pc.fov = lerp(a.fov ?? 32, b.fov ?? 32, k); pc.near = 0.25; pc.far = 120; pc.updateProjectionMatrix();
   return null;
 };
 
@@ -79,7 +79,7 @@ export const Studio: React.FC<{ tt: number; keys: CK[]; floor?: "wood" | "concre
     <ambientLight intensity={0.22 - 0.1 * night} color={night > 0.5 ? "#8094c8" : "#fff2e0"} />
     <spotLight position={kp} angle={0.6} penumbra={0.8} intensity={(40 - 22 * night) * warm} distance={30} decay={1.6} color={night > 0.5 ? "#b8c6ff" : "#ffe6c4"} castShadow shadow-mapSize={[2048, 2048]} shadow-bias={-0.0004} />
     <directionalLight position={[-4, 3, -5]} intensity={0.9} color="#9fb6ff" />
-    {floor !== "none" && <mesh position={[0, -0.006, 0]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[30, 30]} /><meshStandardMaterial polygonOffset polygonOffsetFactor={2} polygonOffsetUnits={4} map={fm} color={floor === "concrete" ? "#9a9b9d" : "#ffffff"} roughness={0.75} /></mesh>}
+    {floor !== "none" && <mesh position={[0, -0.02, 0]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[30, 30]} /><meshStandardMaterial polygonOffset polygonOffsetFactor={2} polygonOffsetUnits={4} map={fm} color={floor === "concrete" ? "#9a9b9d" : "#ffffff"} roughness={0.75} /></mesh>}
     {children}
     <Post bloom={0.55} threshold={0.86} env={0.32} exposure={1.05} />
   </ThreeCanvas>;
