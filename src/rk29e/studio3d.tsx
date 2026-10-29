@@ -33,7 +33,7 @@ const Cam: React.FC<{ tt: number; keys: CK[]; dur: number }> = ({ tt, keys, dur 
   p.lerp(l, 0.04 * sm(tt, dur * 0.55, dur + 0.6)); // 0,1 recortaba objetos altos (puertas) en la salida
   p.x += Math.sin(tt * 0.53) * 0.01; p.y += Math.sin(tt * 0.71 + 1) * 0.007;
   const pc = camera as THREE.PerspectiveCamera;
-  pc.position.copy(p); pc.lookAt(l); pc.fov = lerp(fa, b.fov ?? fa, k); pc.near = 0.05; pc.far = 120; pc.updateProjectionMatrix();
+  pc.position.copy(p); pc.lookAt(l); pc.fov = lerp(fa, b.fov ?? fa, k); pc.near = 0.25; pc.far = 120; pc.updateProjectionMatrix();
   return null;
 };
 
@@ -56,12 +56,14 @@ const usePhoto = (src?: string) => {
   const [hd] = useState(() => (src ? delayRender("foto3d " + src) : null));
   useEffect(() => {
     if (!src || hd === null) return;
-    new THREE.TextureLoader().load(src, (t: THREE.Texture) => { t.colorSpace = THREE.SRGBColorSpace; setTex(t); continueRender(hd); }, undefined, () => continueRender(hd));
+    new THREE.TextureLoader().load(src, (t: THREE.Texture) => { t.colorSpace = THREE.SRGBColorSpace; setTex(t); }, undefined, () => continueRender(hd));
   }, [src, hd]);
-  return tex;
+  return [tex, hd] as const;
 };
 const Backdrop: React.FC<{ dim: number }> = ({ dim }) => {
-  const tex = usePhoto(useContext(PhotoCtx));
+  const [tex, hd] = usePhoto(useContext(PhotoCtx));
+  const { advance } = useThree();
+  useEffect(() => { if (tex && hd !== null) { advance(performance.now()); continueRender(hd); } }, [tex, hd, advance]);
   if (!tex) return null;
   return <mesh position={[0, 3.2, -9]}><planeGeometry args={[30, 16.9]} /><meshBasicMaterial map={tex} color={new THREE.Color(dim, dim, dim)} toneMapped={false} fog={false} /></mesh>;
 };
@@ -81,7 +83,7 @@ export const Studio: React.FC<{ tt: number; keys: CK[]; floor?: "wood" | "concre
     <ambientLight intensity={0.22 - 0.1 * night} color={night > 0.5 ? "#8094c8" : "#fff2e0"} />
     <spotLight position={kp} angle={0.6} penumbra={0.8} intensity={(40 - 22 * night) * warm} distance={30} decay={1.6} color={night > 0.5 ? "#b8c6ff" : "#ffe6c4"} castShadow shadow-mapSize={[2048, 2048]} shadow-bias={-0.0004} />
     <directionalLight position={[-4, 3, -5]} intensity={0.9} color="#9fb6ff" />
-    {floor !== "none" && <mesh position={[0, -0.006, 0]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[30, 30]} /><meshStandardMaterial polygonOffset polygonOffsetFactor={2} polygonOffsetUnits={4} map={fm} color={floor === "concrete" ? "#9a9b9d" : "#ffffff"} roughness={0.75} /></mesh>}
+    {floor !== "none" && <mesh position={[0, -0.02, 0]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[30, 30]} /><meshStandardMaterial polygonOffset polygonOffsetFactor={2} polygonOffsetUnits={4} map={fm} color={floor === "concrete" ? "#9a9b9d" : "#ffffff"} roughness={0.75} /></mesh>}
     {children}
     <Post bloom={0.28} threshold={0.93} env={0.32} exposure={1.05} />
   </ThreeCanvas>;
