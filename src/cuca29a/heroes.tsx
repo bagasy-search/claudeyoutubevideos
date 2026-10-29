@@ -493,7 +493,7 @@ const HNunca: C = ({ t, h }) => <Stage t={t} h={h} mode="split" tone="#24140c">{
     <Head tt={tt} kick="LO QUE MI ABUELA" title="NUNCA HACÍA" col={RED} />
     <svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0 }}><path d={`M -200 300 Q 960 ${380 + 10 * Math.sin(tt * 0.6)} 2120 300`} fill="none" stroke="#c9b48a" strokeWidth={5} /></svg>
     {S.map((s, i) => { const cur = S.reduce((c, e, j) => (t >= e.a ? j : c), 0), sh = lerp(Math.max(0, cur - 2) * 540, Math.max(0, cur - 1) * 540, cl(phys(t, S[cur].a, 5, 0.6)));
-      const k = phys(t, s.a, 5, 0.35), x = 420 + i * 540 - sh; sw = 6 * Math.exp(-(t - s.a) * 1.2) * Math.sin((t - s.a) * 6);
+      const k = phys(t, s.a, 5, 0.35), x = 420 + i * 540 - sh, sw = 6 * Math.exp(-(t - s.a) * 1.2) * Math.sin((t - s.a) * 6);
       const st = cl(phys(t, s.a + 0.8, 8, 0.45));
       return <div key={i} style={{ position: "absolute", left: x, top: 330, transformOrigin: "50% 0", transform: `translateX(-50%) rotate(${sw}deg) translateY(${(1 - cl(k)) * -500}px)`, opacity: cl(k * 2) }}>
         <div style={{ width: 30, height: 60, margin: "0 auto -20px", background: "#b38a52", borderRadius: 6 }} />
@@ -508,3 +508,6 @@ export const MAP: Record<string, C> = { lupa: HLupa, charola: HCharola, tresdedo
   estante: HEstante, salero: HSalero, hojas: HHojas, idavuelta: HIdaVuelta, costales: HCostales, manometro: HManometro, quemada: HQuemada, capas: HCapas, machaca: HMachaca,
   inclina: HInclina, frasco: HFrasco, licuadora: HLicuadora, calendario: HCalendario, congelador: HCongelador, ruleta: HRuleta, odometro: HOdometro, cajon: HCajon,
   errores: HErrores, rutina: HRutina, repaso: HRepaso, nunca: HNunca };
+
+import { MAP3 } from "./heroes3d";
+Object.assign(MAP, MAP3);

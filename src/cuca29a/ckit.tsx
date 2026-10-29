@@ -36,7 +36,7 @@ const maskOf = (m: Mode, p: number): string => {
 };
 
 // escenario: foto del momento desenfocada + piso de luz cálida + haz de arriba + polvo delante; cámara curva (nunca zoom lineal)
-export const Stage: React.FC<{ t: number; h: H; mode: Mode; tone?: string; cam?: number; children: (tt: number) => React.ReactNode }> = ({ t, h, mode, tone = "#21160f", cam = 1, children }) => {
+export const Stage: React.FC<{ t: number; h: H; mode: Mode; tone?: string; cam?: number; mesa?: boolean; children: (tt: number) => React.ReactNode }> = ({ t, h, mode, tone = "#21160f", cam = 1, mesa = true, children }) => {
   const { at, out } = h;
   if (t < at - 0.05 || t > out + 0.85) return null;
   const inn = phys(t, at, 3.8, 0.72), xo = eIn(t, out - 0.25, out + 0.75), p = cl(inn) * (1 - xo);
@@ -44,13 +44,15 @@ export const Stage: React.FC<{ t: number; h: H; mode: Mode; tone?: string; cam?:
   const tt = t - at, mk = maskOf(mode, p), D = Math.max(4, out - at);
   return <AbsoluteFill style={{ WebkitMaskImage: mk, maskImage: mk, fontFamily: FONT, color: TX } as React.CSSProperties}>
     <AbsoluteFill style={{ background: `radial-gradient(ellipse 75% 65% at 50% 46%, ${tone}, #070505 74%)` }} />
-    {h.bg && <AbsoluteFill style={{ opacity: 0.42 }}><Img src={img(h.bg)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(24px) saturate(.85) brightness(.6)", transform: `scale(${1.2 + 0.03 * Math.sin(tt * 0.2)}) translateX(${-16 * tt / D}px)` }} /></AbsoluteFill>}
+    {h.bg && <AbsoluteFill style={{ opacity: 0.6 }}><Img src={img(h.bg)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(16px) saturate(.9) brightness(.7)", transform: `scale(${1.2 + 0.03 * Math.sin(tt * 0.2)}) translateX(${-16 * tt / D}px)` }} /></AbsoluteFill>}
     <AbsoluteFill style={{ background: "linear-gradient(180deg, transparent 60%, rgba(255,180,110,.06) 74%, rgba(0,0,0,.4) 100%)" }} />
     <AbsoluteFill style={{ background: "radial-gradient(ellipse 44% 14% at 50% 85%, rgba(255,190,120,.16), transparent 70%)" }} />
     <AbsoluteFill style={{ background: `conic-gradient(from 168deg at 50% -12%, transparent 0deg, rgba(255,222,170,${0.06 + 0.02 * Math.sin(tt * 0.5)}) 12deg, transparent 24deg)`, mixBlendMode: "screen" }} />
-    <AbsoluteFill style={{ background: "radial-gradient(ellipse 120% 90% at 50% 50%, transparent 55%, rgba(0,0,0,.6))" }} />
+    {/* mesa de madera en perspectiva: los objetos se apoyan en algo (sombra de contacto con motivo) */}
+    {mesa && <div style={{ position: "absolute", left: -300, right: -300, bottom: -120, height: 520, transformOrigin: "50% 100%", transform: `perspective(1400px) rotateX(64deg) translateX(${-30 * tt / D}px)`, background: "repeating-linear-gradient(90deg, #5a3820 0 6px, #6a4428 6px 30px, #4e301a 30px 34px, #72492a 34px 90px)", WebkitMaskImage: "linear-gradient(0deg, #000 55%, transparent)", maskImage: "linear-gradient(0deg, #000 55%, transparent)", opacity: 0.75 } as React.CSSProperties} />}
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse 38% 30% at 34% 18%, rgba(255,214,160,.14), transparent 70%)", mixBlendMode: "screen" }} />
     <AbsoluteFill style={{ perspective: 2200, opacity: cl(inn * 1.6) * (1 - xo * 0.7) }}>
-      <AbsoluteFill style={{ perspective: 2200, transform: `translateZ(${(-300 * (1 - inn) - 650 * xo + 18 * Math.sin(tt * 0.35)) * cam}px) rotateY(${(7 * (1 - inn) + 1.8 * Math.sin(tt * 0.22 + 0.5) - 6 * xo) * cam}deg) rotateX(${(1.2 * Math.sin(tt * 0.18) + 6 * xo) * cam}deg)` }}>
+      <AbsoluteFill style={{ perspective: 2200, transform: `translateZ(${(-300 * (1 - inn) - 650 * xo + 18 * Math.sin(tt * 0.35)) * cam}px) rotateY(${(7 * (1 - inn) + 1.8 * Math.sin(tt * 0.22 + 0.5) - 6 * xo) * cam}deg) rotateX(${(1.2 * Math.sin(tt * 0.18) + 6 * xo) * cam}deg) translate(${(14 * Math.sin(tt * 0.5)) * cam}px, ${(8 * Math.sin(tt * 0.37 + 1)) * cam}px) scale(${1 + 0.055 * eio(tt, 0.4, D) * cam})` }}>
         {children(tt)}
       </AbsoluteFill>
     </AbsoluteFill>
@@ -73,7 +75,8 @@ export const Head: React.FC<{ tt: number; kick: string; title: string; col?: str
 export const Tag: React.FC<{ tt: number; at: number; x: number; y: number; txt: string; col?: string; size?: number; hand?: boolean }> = ({ tt, at, x, y, txt, col = TX, size = 36, hand }) => {
   const s = phys(tt, at, 7, 0.45);
   if (s <= 0.01) return null;
-  return <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) translateY(${(1 - s) * -40}px) scale(${0.8 + 0.2 * s})`, opacity: cl(s * 2), fontWeight: 900, fontFamily: hand ? HAND : FONT, fontSize: hand ? size * 1.35 : size, letterSpacing: hand ? 0 : 2, color: col, whiteSpace: "nowrap", textShadow: "0 6px 24px rgba(0,0,0,.65)" }}>{txt}</div>;
+  const w = txt.length * (hand ? size * 0.75 : size * 0.68 + 2), xc = Math.max(w / 2 + 70, Math.min(1850 - w / 2, x));
+  return <div style={{ position: "absolute", left: xc, top: y, transform: `translate(-50%,-50%) translateY(${(1 - s) * -40}px) scale(${0.8 + 0.2 * s})`, opacity: cl(s * 2), fontWeight: 900, fontFamily: hand ? HAND : FONT, fontSize: hand ? size * 1.35 : size, letterSpacing: hand ? 0 : 2, color: col, whiteSpace: "nowrap", textShadow: "0 6px 24px rgba(0,0,0,.65)" }}>{txt}</div>;
 };
 // foto con marco
 export const Photo: React.FC<{ id?: string; w: number; h: number; r?: number; z?: number; style?: React.CSSProperties; dim?: number }> = ({ id, w, h, r = 18, z = 1.08, style, dim = 0 }) => (
