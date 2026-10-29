@@ -1,0 +1,327 @@
+[
+ {
+  "k": "logstack",
+  "at": 70.92,
+  "out": 79.92,
+  "ph": "you cut it or you buy it",
+  "dev": -1.4,
+  "items": [
+   {
+    "at": 3.36
+   },
+   {
+    "at": 4.36
+   },
+   {
+    "at": 5.34
+   },
+   {
+    "at": 6.06
+   }
+  ]
+ },
+ {
+  "k": "caliper",
+  "at": 138.44,
+  "out": 146.44,
+  "ph": "they re cast iron",
+  "dev": -2.3,
+  "items": [
+   {
+    "at": 3.88
+   },
+   {
+    "at": 6.08
+   }
+  ]
+ },
+ {
+  "k": "bubble",
+  "at": 184.94,
+  "out": 193.44,
+  "ph": "put a little level across",
+  "dev": 0.1,
+  "items": [
+   {
+    "at": 2.48
+   },
+   {
+    "at": 3.78
+   }
+  ]
+ },
+ {
+  "k": "helix",
+  "at": 236.56,
+  "out": 246.56,
+  "ph": "drill holes in it",
+  "dev": -1.8,
+  "items": [
+   {
+    "at": 6.56
+   },
+   {
+    "at": 8.92
+   }
+  ]
+ },
+ {
+  "k": "gradient",
+  "at": 314.84,
+  "out": 325.84,
+  "ph": "fan blows into the box",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 4.62
+   },
+   {
+    "at": 10.08
+   }
+  ]
+ },
+ {
+  "k": "sweetspot",
+  "at": 366.68,
+  "out": 378.18,
+  "ph": "too little air",
+  "dev": -3.6,
+  "items": [
+   {
+    "at": 8.18
+   },
+   {
+    "at": 10.6
+   }
+  ]
+ },
+ {
+  "k": "battery",
+  "at": 403.3,
+  "out": 411.3,
+  "ph": "a little 7 amp hour battery",
+  "dev": -5.3
+ },
+ {
+  "k": "fuse",
+  "at": 420.0,
+  "out": 428.5,
+  "ph": "put a fuse in the positive wire",
+  "dev": -3.7,
+  "items": [
+   {
+    "at": 7.06
+   }
+  ]
+ },
+ {
+  "k": "pushbutton",
+  "at": 438.34,
+  "out": 443.84,
+  "ph": "hit subscribe right now",
+  "dev": -4.0
+ },
+ {
+  "k": "vortex",
+  "at": 516.96,
+  "out": 526.96,
+  "ph": "now slowly turn the fan knob up",
+  "dev": -1.1,
+  "items": [
+   {
+    "at": 4.76
+   },
+   {
+    "at": 7.76
+   }
+  ]
+ },
+ {
+  "k": "stack",
+  "at": 630.96,
+  "out": 640.46,
+  "ph": "the smaller drum goes upside down",
+  "dev": -4.3,
+  "items": [
+   {
+    "at": 8.12
+   }
+  ]
+ },
+ {
+  "k": "path",
+  "at": 676.58,
+  "out": 689.08,
+  "ph": "that trip across",
+  "dev": -0.0,
+  "items": [
+   {
+    "at": 3.82
+   },
+   {
+    "at": 6.24
+   }
+  ]
+ },
+ {
+  "k": "griddle",
+  "at": 694.78,
+  "out": 703.78,
+  "ph": "eggs bacon a pot of coffee",
+  "dev": -0.0,
+  "items": [
+   {
+    "at": 0.48
+   },
+   {
+    "at": 1.64
+   },
+   {
+    "at": 3.0
+   }
+  ]
+ },
+ {
+  "k": "afterglow",
+  "at": 731.82,
+  "out": 738.32,
+  "ph": "stays warm to the touch",
+  "dev": -0.3
+ },
+ {
+  "k": "stamped",
+  "at": 779.78,
+  "out": 791.28,
+  "ph": "for 30 years had a few rules",
+  "dev": -6.7,
+  "items": [
+   {
+    "at": 9.26
+   }
+  ]
+ },
+ {
+  "k": "cord",
+  "at": 861.24,
+  "out": 871.24,
+  "ph": "a cord of firewood costs real money",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 3.9
+   }
+  ]
+ },
+ {
+  "k": "multimeter",
+  "at": 896.84,
+  "out": 904.34,
+  "ph": "above 12 5 volts",
+  "dev": -0.3
+ },
+ {
+  "k": "ladder",
+  "at": 914.96,
+  "out": 925.96,
+  "ph": "lift the top drum off with gloves",
+  "dev": -1.7,
+  "items": [
+   {
+    "at": 9.6
+   }
+  ]
+ },
+ {
+  "k": "mailbox",
+  "at": 1043.92,
+  "out": 1052.92,
+  "ph": "put it in the comments",
+  "dev": 0.1,
+  "items": [
+   {
+    "at": 1.46
+   }
+  ]
+ },
+ {
+  "k": "airflow",
+  "at": 1074.56,
+  "out": 1086.06,
+  "ph": "and about the fan box",
+  "dev": -7.0,
+  "items": [
+   {
+    "at": 8.8
+   }
+  ]
+ },
+ {
+  "k": "trio",
+  "at": 1107.76,
+  "out": 1119.76,
+  "ph": "yellow or orange flame",
+  "dev": -0.0,
+  "items": [
+   {
+    "at": 4.96
+   },
+   {
+    "at": 6.6
+   }
+  ]
+ },
+ {
+  "k": "wiring",
+  "at": 1177.86,
+  "out": 1187.36,
+  "ph": "the fan has two wires",
+  "dev": -1.5,
+  "items": [
+   {
+    "at": 8.38
+   }
+  ]
+ },
+ {
+  "k": "fanblade",
+  "at": 1204.82,
+  "out": 1214.82,
+  "ph": "they build up on the blades",
+  "dev": -3.8,
+  "items": [
+   {
+    "at": 5.58
+   },
+   {
+    "at": 7.5
+   }
+  ]
+ },
+ {
+  "k": "sprint",
+  "at": 1281.36,
+  "out": 1293.86,
+  "ph": "it took about 50 minutes",
+  "dev": -2.2,
+  "items": [
+   {
+    "at": 10.38
+   }
+  ]
+ },
+ {
+  "k": "greenhouse",
+  "at": 1316.48,
+  "out": 1324.48,
+  "ph": "you ve got the same carbon monoxide alarm",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 2.98
+   },
+   {
+    "at": 4.86
+   }
+  ]
+ }
+]
