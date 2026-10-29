@@ -222,7 +222,7 @@ export const HouseWorld: React.FC<{ t: number }> = ({ t }) => {
   const show = Math.max(0.35, win(t, EV.smoke - 0.5, EV.smoke + 0.5) * (1 - win(t, EV.n1 - 1, EV.n1)), win(t, EV.stack - 1, EV.stack) * (1 - win(t, EV.n8 - 1, EV.n8)));
   const hl = win(t, EV.dirty, EV.dirty + 0.5) * (1 - win(t, EV.hatch, EV.hatch + 0.5));
   const fanAng = t * (t > EV.n8 ? 1.4 : 3.2);
-  const hpAng = t * 9;
+  const hpAng = t * 2.2; // 29-oct: a 9 rad/s las 4 aspas parpadeaban ~6 Hz
   const k = camAt(t);
   void k;
 
@@ -246,8 +246,8 @@ export const HouseWorld: React.FC<{ t: number }> = ({ t }) => {
 
       {/* terreno helado + corte de tierra alrededor del sótano */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[220, 220]} /><meshStandardMaterial color="#9fa99f" roughness={1} /></mesh>
-      <Box p={[-7.6, -1.6, 0]} s={[3.2, 3.2, 5.4]} c="#3a2c22" r={1} />
-      <Box p={[4.3, -1.6, 0]} s={[4.4, 3.2, 5.4]} c="#3a2c22" r={1} />
+      <Box p={[-7.6, -1.61, 0]} s={[3.2, 3.2, 5.4]} c="#3a2c22" r={1} />
+      <Box p={[4.3, -1.61, 0]} s={[4.4, 3.2, 5.4]} c="#3a2c22" r={1} />
       <Box p={[-2, -3.2, 0]} s={[8.4, 0.3, 5.4]} c="#56585b" r={1} />
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.01, 8.8]} receiveShadow><planeGeometry args={[220, 5.4]} /><meshStandardMaterial color="#2f3236" roughness={0.95} /></mesh>
       {Array.from({ length: 30 }, (_, i) => <mesh key={i} rotation={[-Math.PI / 2, 0, 0]} position={[-60 + i * 4.2, 0.02, 8.8]}><planeGeometry args={[1.6, 0.12]} /><meshBasicMaterial color="#c9b56a" transparent opacity={0.35} /></mesh>)}
