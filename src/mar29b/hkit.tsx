@@ -6,6 +6,7 @@ import { AbsoluteFill, Img, staticFile } from "remotion";
 import { loadFont as loadHand } from "@remotion/google-fonts/Caveat";
 import { loadFont as loadMark } from "@remotion/google-fonts/PermanentMarker";
 import { COL, FONT, P } from "./lib";
+import { R3T } from "../kits/r3k/r3k";
 
 export const { fontFamily: HAND } = loadHand("normal", { weights: ["600", "700"], subsets: ["latin"] });
 export const { fontFamily: MARK } = loadMark("normal", { weights: ["400"], subsets: ["latin"] });
@@ -23,7 +24,7 @@ export const img = (id: string) => staticFile("img/" + P + id + ".jpg");
 export const TX = "#f7f4ee", DIM = "rgba(247,244,238,.58)", AMB = COL.amber, RED = "#ff5a4a", ICE = COL.ice, GRN = "#6fe39a";
 
 export type H = { k: string; at: number; out: number; img?: string; imgs?: (string | undefined)[]; [x: string]: any };
-export type Mode = "iris" | "wipe" | "blinds" | "split" | "drop";
+export type Mode = "iris" | "wipe" | "blinds" | "split" | "drop" | "r3";
 
 const maskOf = (m: Mode, p: number): string => {
   if (m === "iris") return `radial-gradient(circle at 50% 52%, #000 ${p * 1500}px, transparent ${p * 1500 + 480}px)`;
@@ -40,11 +41,21 @@ export const Stage: React.FC<{ t: number; h: H; mode: Mode; bg?: string; cam?: n
   if (t < at - 0.05 || t > out + 0.85) return null;
   const inn = phys(t, at, 3.8, 0.72), xo = eIn(t, out - 0.25, out + 0.75), p = cl(inn) * (1 - xo);
   if (p <= 0.004) return null;
-  const tt = t - at, mk = maskOf(mode, p);
+  // r3: pieza 3D de verdad. Sin máscara ni cartón volando: fundido corto desde la foto y los objetos llegan con peso dentro de la escena (r3k/arrive)
+  if (mode === "r3") {
+    const tt = t - at, f = cl(tt / 0.16) * (1 - eIn(t, out - 0.1, out + 0.45));
+    return <AbsoluteFill style={{ opacity: f, fontFamily: FONT, color: TX }}>
+      <AbsoluteFill style={{ background: bg ?? "radial-gradient(ellipse 75% 65% at 50% 46%, #1d1a16, #070708 72%)" }} />
+      {h.bg && !bg && <AbsoluteFill><Img src={img(h.bg)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(44px) saturate(.8) brightness(.42)", transform: `scale(${1.25 + 0.02 * tt / Math.max(4, out - at)})` }} /></AbsoluteFill>}
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse 120% 90% at 50% 50%, transparent 50%, rgba(0,0,0,.6))" }} />
+      <R3T.Provider value={{ tt, d: out - at, k: h.k }}>{children(tt)}</R3T.Provider>
+    </AbsoluteFill>;
+  }
+  const tt = t - at, mk = maskOf(mode, p), dolly = eio(t, at + 0.4, out) * 150, orb = -2.5 + 5 * eio(t, at, out);
   return <AbsoluteFill style={{ WebkitMaskImage: mk, maskImage: mk, fontFamily: FONT, color: TX } as React.CSSProperties}>
     <AbsoluteFill style={{ background: bg ?? "radial-gradient(ellipse 75% 65% at 50% 46%, #1d1a16, #070708 72%)" }} />
     {/* la foto del momento, desenfocada y oscura, con paralaje lento: el componente vive DENTRO de la escena, no sobre un fondo vacío */}
-    {h.bg && !bg && <AbsoluteFill style={{ opacity: 0.38 }}><Img src={img(h.bg)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(26px) saturate(.8) brightness(.55)", transform: `scale(${1.18 + 0.03 * Math.sin(tt * 0.2)}) translateX(${-14 * tt / Math.max(4, out - at)}px)` }} /></AbsoluteFill>}
+    {h.bg && !bg && <AbsoluteFill style={{ opacity: 0.82 }}><Img src={img(h.bg)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(12px) saturate(.9) brightness(.62)", transform: `scale(${1.18 + 0.03 * Math.sin(tt * 0.2)}) translateX(${-14 * tt / Math.max(4, out - at)}px)` }} /></AbsoluteFill>}
     {/* piso: charco de luz cálida y reflejo, para que los objetos apoyen en algo */}
     <AbsoluteFill style={{ background: "linear-gradient(180deg, transparent 62%, rgba(255,190,120,.05) 74%, rgba(0,0,0,.35) 100%)" }} />
     <AbsoluteFill style={{ background: "radial-gradient(ellipse 42% 14% at 50% 86%, rgba(255,196,130,.13), transparent 70%)" }} />
@@ -52,7 +63,7 @@ export const Stage: React.FC<{ t: number; h: H; mode: Mode; bg?: string; cam?: n
     <AbsoluteFill style={{ background: `conic-gradient(from 168deg at 50% -12%, transparent 0deg, rgba(255,226,180,${0.05 + 0.015 * Math.sin(tt * 0.5)}) 12deg, transparent 24deg)`, mixBlendMode: "screen" }} />
     <AbsoluteFill style={{ background: "radial-gradient(ellipse 120% 90% at 50% 50%, transparent 55%, rgba(0,0,0,.55))" }} />
     <AbsoluteFill style={{ perspective: 2200, opacity: cl(inn * 1.6) * (1 - xo * 0.7) }}>
-      <AbsoluteFill style={{ transformStyle: "flat", perspective: 2200, transform: `translateZ(${(-300 * (1 - inn) - 650 * xo + 18 * Math.sin(tt * 0.35)) * cam}px) rotateY(${(7 * (1 - inn) + 1.8 * Math.sin(tt * 0.22 + 0.5) - 6 * xo) * cam}deg) rotateX(${(1.2 * Math.sin(tt * 0.18) + 6 * xo) * cam}deg)` }}>
+      <AbsoluteFill style={{ transformStyle: "flat", perspective: 2200, transform: `translateZ(${(-300 * (1 - inn) - 650 * xo + dolly + 18 * Math.sin(tt * 0.35)) * cam}px) rotateY(${(7 * (1 - inn) + orb + 1.8 * Math.sin(tt * 0.22 + 0.5) - 6 * xo) * cam}deg) rotateX(${(1.2 * Math.sin(tt * 0.18) + 6 * xo) * cam}deg)` }}>
         {children(tt)}
       </AbsoluteFill>
     </AbsoluteFill>
@@ -69,7 +80,7 @@ export const Head: React.FC<{ tt: number; kick: string; title: string; col?: str
   const s = cl(phys(tt, d, 6, 0.7));
   return <div style={{ position: "absolute", left: 110, top: 80, opacity: s, transform: `translateX(${(1 - s) * -40}px)` }}>
     <div style={{ display: "flex", alignItems: "center", gap: 14, fontWeight: 800, fontSize: 24, letterSpacing: 5, color: DIM }}><div style={{ width: 34 * s, height: 3, borderRadius: 2, background: col }} />{kick}</div>
-    <div style={{ fontWeight: 900, fontSize: 60, marginTop: 6, clipPath: `inset(0 ${(1 - s) * 100}% 0 0)`, whiteSpace: "nowrap" }}>{title}</div>
+    <div style={{ fontWeight: 900, fontSize: 64, marginTop: 6, transform: `translateY(${(1 - s) * 30}px)`, whiteSpace: "nowrap", textShadow: "0 8px 30px rgba(0,0,0,.7)" }}>{title}</div>
   </div>;
 };
 

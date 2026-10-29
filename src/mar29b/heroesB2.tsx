@@ -1,237 +1,294 @@
-// mar29b · componentes únicos 17-31. Mecanismos que no están en mar29a (ver D:/rtmp/mar29_COMPONENTES.md).
+// mar29b · componentes únicos 17-31, en 3D de verdad (kit r3k) sobre la foto desenfocada del momento.
+// Cada uno con su propio mecanismo (ver D:/rtmp/mar29_COMPONENTES.md); la acción ocupa todo el plano.
 import React from "react";
-import { AMB, DIM, GRN, H, HAND, Head, ICE, MARK, Photo, RED, Stage, TX, Tag, cl, eio, phys } from "./hkit";
+import { H, Stage } from "./hkit";
+import { BOLD, Bx, Cy, D2R, Dot, HANDF, MONO, PLASTER, Pl, Puff, S3, Sp, To, Tube, Txt, V3, canvasTex, cl, drop, lerp, lv, rnd, win } from "../kits/r3k/r3k";
 
-const C: React.FC<{ x?: number; y?: number; children: React.ReactNode }> = ({ x = 960, y = 560, children }) =>
-  <div style={{ position: "absolute", left: x, top: y, transform: "translate(-50%,-50%)" }}>{children}</div>;
-const lerp = (a: number, b: number, p: number) => a + (b - a) * p;
-const rnd = (i: number) => { const x = Math.sin(i * 91.7 + 17.3) * 43758.5453; return x - Math.floor(x); };
-const shadow = "0 50px 100px rgba(0,0,0,.65), 0 8px 18px rgba(0,0,0,.4)";
+const dur = (h: H) => h.out - h.at;
+const U = (tt: number, h: H) => cl(tt / dur(h));
+const lcd = (txt: string, fg = "#ff3b2f", bg = "#120606", w = 512, hh = 200, px = 150) => canvasTex(`lcd|${txt}|${fg}|${bg}|${w}`, w, hh, (g) => { g.fillStyle = bg; g.fillRect(0, 0, w, hh); g.fillStyle = fg; g.font = MONO(px); g.textAlign = "center"; g.textBaseline = "middle"; g.shadowColor = fg; g.shadowBlur = 18; g.fillText(txt, w / 2, hh / 2 + 6); });
 
-// 17 · la rueda de fecha: la alarma gira y en el dorso se lee el año; el contador de años corre hasta "10"
-export const HDatewheel: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="iris">{(tt) => {
-  const r = eio(tt, 0.5, 2.0) * 180, yrs = Math.floor(10 * eio(tt, 2.4, 4.6));
-  return <>
-    <Head tt={tt} kick="TURN IT OVER" title="THE DATE ON THE BACK" col={AMB} />
-    <C x={760} y={600}><div style={{ perspective: 1400 }}><div style={{ width: 420, height: 420, position: "relative", transformStyle: "preserve-3d", transform: `rotateY(${r}deg)` }}>
-      <div style={{ position: "absolute", inset: 0, borderRadius: "50%", backfaceVisibility: "hidden", background: "radial-gradient(circle at 40% 35%,#ffffff,#d9d9d4)", boxShadow: shadow, display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <div style={{ width: 40, height: 40, borderRadius: "50%", background: GRN, boxShadow: `0 0 30px ${GRN}` }} /></div>
-      <div style={{ position: "absolute", inset: 0, borderRadius: "50%", backfaceVisibility: "hidden", transform: "rotateY(180deg)", background: "radial-gradient(circle,#efeee8,#c9c8c1)", boxShadow: shadow, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", color: "#2a2620", fontFamily: "Courier New, monospace" }}>
-        <div style={{ fontSize: 26, fontWeight: 700 }}>MFG DATE</div><div style={{ fontSize: 72, fontWeight: 900 }}>2014</div><div style={{ fontSize: 22 }}>REPLACE BY 2021</div></div>
-    </div></div></C>
-    <div style={{ position: "absolute", left: 1180, top: 420, fontFamily: HAND, fontSize: 60, color: DIM }}>sensor life</div>
-    <div style={{ position: "absolute", left: 1180, top: 490, fontWeight: 900, fontSize: 180, color: yrs >= 7 ? RED : TX }}>{yrs}<span style={{ fontSize: 60 }}> YRS</span></div>
-    <div style={{ position: "absolute", left: 1180, top: 720, width: 520, height: 20, borderRadius: 10, background: "rgba(255,255,255,.12)" }}>
-      <div style={{ width: `${Math.min(1, yrs / 10) * 100}%`, height: "100%", borderRadius: 10, background: yrs >= 7 ? RED : GRN }} />
-      <div style={{ position: "absolute", left: "70%", top: -18, width: 4, height: 56, background: TX }} /></div>
-    <Tag tt={tt} at={4.4} x={1540} y={830} txt="7-10 YEARS, THEN NEW" col={RED} size={40} />
-  </>;
+// 17 · la fecha de vencimiento: la alarma se da vuelta en el aire, aparece la etiqueta «MFD 2014» y un contador de años corre hasta 10: vencida
+const backT = () => canvasTex("mfd17", 512, 512, (g) => { g.fillStyle = "#f1efe8"; g.fillRect(0, 0, 512, 512); g.fillStyle = "#fff"; g.fillRect(96, 150, 320, 210); g.strokeStyle = "#2a2620"; g.lineWidth = 6; g.strokeRect(96, 150, 320, 210); g.fillStyle = "#2a2620"; g.font = BOLD(54); g.textAlign = "center"; g.fillText("MFD", 256, 228); g.font = BOLD(90); g.fillText("2014", 256, 326); });
+export const HDatewheel: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), fl = win(u, 0.08, 0.3), yrs = Math.min(10, Math.floor(win(u, 0.35, 0.75) * 10.99)), old = u > 0.76;
+  return <S3 p={lv([0.3, 0.75, 1.6], [0.1, 0.65, 1.15], win(u, 0, 1))} l={[0.05, 0.55, 0]} fov={36}>
+    <group position={[-0.15, 0.55 + Math.sin(fl * Math.PI) * 0.12, 0]} rotation={[0, fl * Math.PI, Math.sin(fl * Math.PI) * 0.2]}>
+      <Cy rt={0.24} h={0.06} r={[Math.PI / 2, 0, 0]} c="#f4f3ee" ro={0.4} seg={48} />
+      {Array.from({ length: 12 }, (_, i) => <Bx key={i} s={[0.012, 0.09, 0.01]} p={[Math.cos(i * 0.52) * 0.15, Math.sin(i * 0.52) * 0.15, 0.032]} r={[0, 0, i * 0.52 + Math.PI / 2]} c="#c9c6bc" />)}
+      <Sp rad={0.015} p={[0.12, -0.12, 0.033]} c="#ff3b2f" e="#ff3b2f" ei={1.5} ns />
+      <mesh position={[0, 0, -0.032]} rotation={[0, Math.PI, 0]}><circleGeometry args={[0.235, 48]} /><meshStandardMaterial map={backT()} roughness={0.7} /></mesh>
+    </group>
+    <group position={[0.42, 0.62, 0.05]} rotation={[0, -0.25, 0]}>
+      <Bx s={[0.34, 0.2, 0.06]} c="#1b1d20" ro={0.4} rad={0.02} />
+      <Pl w={0.3} h={0.16} p={[0, 0, 0.031]} map={lcd(`${yrs} YRS`, old ? "#ff3b2f" : "#ffd24a", "#120a06", 512, 240, 130)} c="#ffffff" e={old ? "#ff3b2f" : "#ffc04a"} ei={0.5} ns />
+    </group>
+    {old && <group position={[0.42, 0.88, 0.05]}><Txt t="EXPIRED" w={0.36} c="#ff6a5a" e={0.5} /></group>}
+  </S3>;
 }}</Stage>;
 
-// 18 · el cajón de la cocina: se abre de frente y adentro hay alarmas desenchufadas entre menús y gomitas
-export const HDrawer: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="blinds">{(tt) => {
-  const o = eio(tt, 0.5, 1.6);
-  return <>
-    <Head tt={tt} kick="WHERE THEY END UP" title="THE KITCHEN DRAWER" col={RED} />
-    <div style={{ position: "absolute", left: 460, top: 300, width: 1000, height: 560, perspective: 1200 }}>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 120, bottom: 0, background: "linear-gradient(180deg,#3a2a1c,#22180f)", borderRadius: 12, transform: "rotateX(48deg)", transformOrigin: "bottom", overflow: "hidden", opacity: o }}>
-        {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", left: 120 + i * 280, top: 140 + (i % 2) * 70, width: 190, height: 190, borderRadius: "50%", background: "radial-gradient(circle at 40% 35%,#fff,#cfcfc8)", transform: `rotate(${i * 40 - 30}deg) translateY(${(1 - phys(tt, 1.2 + i * 0.4, 6, 0.5)) * -200}px)` }}>
-          <div style={{ position: "absolute", left: 80, top: 80, width: 30, height: 30, borderRadius: "50%", background: "#555" }} /></div>)}
-        <div style={{ position: "absolute", left: 40, top: 40, width: 260, height: 70, background: "#f1e3b8", transform: "rotate(-8deg)" }} />
-        <div style={{ position: "absolute", left: 700, top: 360, width: 120, height: 120, border: "8px solid #c8a35a", borderRadius: "50%" }} />
-      </div>
-      <div style={{ position: "absolute", left: -40, right: -40, bottom: -120 * o, height: 130, background: "linear-gradient(180deg,#8a6a48,#5e4630)", borderRadius: 10, boxShadow: shadow }}>
-        <div style={{ position: "absolute", left: "45%", top: 50, width: 140, height: 24, borderRadius: 12, background: "#c9c2b5" }} /></div>
-    </div>
-    <Tag tt={tt} at={2.8} x={1580} y={360} txt="UNPLUGGED = USELESS" col={RED} size={42} />
-  </>;
+// 18 · el cajón de los trastos: se abre y adentro, entre menús de delivery y gomitas, está la alarma desenchufada con la pila afuera
+export const HDrawer: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), op = drop(u, 0.08, 0.32), pick = win(u, 0.55, 0.8), D = op * 0.42;
+  return <S3 p={lv([0.15, 1.35, 1.6], [0.05, 1.2, 1.0], win(u, 0, 1))} l={[0, 0.65, 0.2]} fov={38} floor={null}>
+    <Bx s={[1.2, 0.7, 0.6]} p={[0, 0.35, -0.3]} c="#a87a50" ro={0.55} />
+    <Bx s={[1.24, 0.04, 0.64]} p={[0, 0.72, -0.3]} c="#e8e2d4" ro={0.3} />
+    <group position={[0, 0.5, D]}>
+      <Bx s={[0.9, 0.025, 0.5]} p={[0, -0.09, -0.25]} c="#8a5e3a" ro={0.6} />
+      <Bx s={[0.9, 0.18, 0.02]} p={[0, 0, -0.5]} c="#8a5e3a" ro={0.6} /><Bx s={[0.02, 0.18, 0.5]} p={[-0.44, 0, -0.25]} c="#8a5e3a" ro={0.6} /><Bx s={[0.02, 0.18, 0.5]} p={[0.44, 0, -0.25]} c="#8a5e3a" ro={0.6} />
+      <Bx s={[0.96, 0.2, 0.03]} p={[0, 0, 0.0]} c="#b5875c" ro={0.5} />
+      <Bx s={[0.16, 0.025, 0.025]} p={[0, 0.02, 0.03]} c="#c9c6bc" m={0.9} ro={0.25} />
+      <Bx s={[0.3, 0.004, 0.4]} p={[-0.25, -0.07, -0.28]} r={[0, 0.3, 0]} c="#e86a3a" ro={0.8} />
+      <Bx s={[0.28, 0.004, 0.36]} p={[0.25, -0.068, -0.3]} r={[0, -0.5, 0]} c="#f4e7a8" ro={0.8} />
+      {Array.from({ length: 6 }, (_, i) => <To key={i} R={0.03} t={0.004} p={[-0.32 + rnd(i) * 0.6, -0.065, -0.1 - rnd(i, 2) * 0.35]} r={[Math.PI / 2, 0, 0]} c={["#e8402f", "#3a7ad8", "#e8c02f"][i % 3]} ro={0.6} />)}
+      <group position={[0.05, -0.05 + pick * 0.45, -0.22 + pick * 0.25]} rotation={[-Math.PI / 2 + pick * 1.2, 0, 0.2]}>
+        <Cy rt={0.09} h={0.035} c="#f4f3ee" ro={0.4} />
+        <Sp rad={0.008} p={[0.05, 0.02, 0.0]} c="#3a2018" ns />
+      </group>
+      <group position={[0.2, -0.06, -0.15]} rotation={[0, 0, Math.PI / 2]}><Cy rt={0.022} h={0.1} c="#1b1b1b" ro={0.4} /><Cy rt={0.023} h={0.03} p={[0, 0.04, 0]} c="#c8862e" m={0.8} ro={0.3} /></group>
+    </group>
+    {pick > 0.95 && <group position={[0.05, 1.0, 0.45]}><Txt t="UNPLUGGED" w={0.4} c="#ff6a5a" /></group>}
+  </S3>;
 }}</Stage>;
 
-// 19 · por debajo de la puerta: el humo gris del caño de escape se filtra por la rendija hacia la cocina
-export const HUnderdoor: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="wipe">{(tt) => <>
-  <Head tt={tt} kick="THE ATTACHED GARAGE" title="UNDER THE DOOR" col={RED} />
-  <div style={{ position: "absolute", left: 900, top: 220, width: 60, height: 720, background: "linear-gradient(90deg,#4a3826,#7a5e40)" }} />
-  <div style={{ position: "absolute", left: 300, top: 940, width: 600, height: 20, background: "#555" }} /><div style={{ position: "absolute", left: 960, top: 940, width: 700, height: 20, background: "#b8a98a" }} />
-  <div style={{ position: "absolute", left: 340, top: 760, width: 420, height: 160, borderRadius: "60px 80px 20px 20px", background: "linear-gradient(180deg,#5b6878,#2e3742)", boxShadow: shadow }}>
-    <div style={{ position: "absolute", right: -40, bottom: 20, width: 60, height: 22, borderRadius: 8, background: "#333" }} /></div>
-  {Array.from({ length: 70 }, (_, i) => { const ph = (tt * 0.35 + rnd(i)) % 1, x = 820 + ph * 760, under = x > 880 && x < 980, y = under ? 920 : 920 - (x > 980 ? (x - 980) * 0.5 * rnd(i + 2) : 40 * rnd(i + 5));
-    return <div key={i} style={{ position: "absolute", left: x, top: y, width: 60, height: 40, borderRadius: "50%", background: "rgba(170,170,175,.32)", filter: "blur(10px)", opacity: cl((tt - 0.8) * 1.5) }} />; })}
-  <Tag tt={tt} at={1.4} x={600} y={300} txt="GARAGE" col={DIM} size={46} />
-  <Tag tt={tt} at={2.0} x={1320} y={300} txt="YOUR KITCHEN" col={AMB} size={46} />
-</>}</Stage>;
-
-// 20 · el radio: desde el generador, anillos concéntricos hasta 20 ft; la casa queda afuera del último
-export const HRadius: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="drop">{(tt) => {
-  const r = eio(tt, 0.6, 3.2);
-  return <>
-    <Head tt={tt} kick="THE GENERATOR" title="20 FEET OUT" col={AMB} />
-    <div style={{ position: "absolute", left: 260, top: 360, width: 360, height: 420, background: "linear-gradient(180deg,#e9e3d5,#b9b1a1)", clipPath: "polygon(50% 0,100% 30%,100% 100%,0 100%,0 30%)", boxShadow: shadow }} />
-    <svg width={1920} height={1080} style={{ position: "absolute" }}>
-      {[1, 2, 3, 4].map((i) => <circle key={i} cx={1380} cy={640} r={i * 150 * r} fill="none" stroke={i === 4 ? GRN : "rgba(240,236,226,.35)"} strokeWidth={i === 4 ? 8 : 4} strokeDasharray={i === 4 ? "0" : "14 14"} />)}
-      <line x1={1380} y1={640} x2={1380 - 600 * r} y2={640} stroke={GRN} strokeWidth={6} />
-    </svg>
-    <div style={{ position: "absolute", left: 1320, top: 590, width: 120, height: 100, borderRadius: 14, background: "linear-gradient(180deg,#e2a400,#a77700)", boxShadow: shadow }} />
-    <div style={{ position: "absolute", left: 1380 - 300 * r, top: 590, transform: "translateX(-50%)", fontWeight: 900, fontSize: 64, color: GRN, opacity: cl((tt - 2.4) * 2) }}>{Math.round(20 * r)} FT</div>
-    <Tag tt={tt} at={3.4} x={440} y={860} txt="WINDOWS SHUT" col={DIM} size={40} />
-  </>;
+// 19 · por debajo de la puerta: el humo del garaje se arrastra por el piso, entra por la rendija y avanza hacia el pasillo
+export const HUnderdoor: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), go = win(u, 0.1, 0.9);
+  return <S3 p={lv([0.35, 0.3, 1.3], [0.1, 0.2, 0.85], win(u, 0, 1))} l={[0, 0.12, -0.2]} fov={44} floor="wood">
+    <Bx s={[0.9, 2.0, 0.05]} p={[0, 1.07, -0.3]} c="#efe9dc" ro={0.6} />
+    <Bx s={[3, 2.2, 0.05]} p={[-1.95, 1.1, -0.3]} c="#d8cfbd" ro={0.9} /><Bx s={[3, 2.2, 0.05]} p={[1.95, 1.1, -0.3]} c="#d8cfbd" ro={0.9} />
+    <Sp rad={0.035} p={[0.33, 1.0, -0.25]} c="#c99a46" m={0.95} ro={0.2} />
+    <pointLight position={[0, 0.03, -0.6]} intensity={4} distance={2} color="#ffb070" />
+    <Pl w={0.9} h={0.07} p={[0, 0.035, -0.32]} c="#ffb070" e="#ff9a50" ei={2.5} ns />
+    {Array.from({ length: 60 }, (_, i) => { const ph = (go * 1.2 + i / 60) % 1, k = cl(go * 1.3 - i / 60 * 0.6);
+      const p: V3 = [(rnd(i) - 0.5) * 0.8 + (rnd(i, 2) - 0.5) * ph * 0.8, 0.16 + ph * 0.1 + rnd(i, 3) * 0.06, -0.28 + ph * 1.1];
+      return <Puff key={i} p={p} s={0.3 + ph * 0.4} c="#6f7468" add={false} o={0.95 * k * Math.sin(Math.min(1, ph * 1.4) * Math.PI * 0.9 + 0.1)} />; })}
+    <group position={[0, 0.36, 0.2]}><Txt t="CO" w={0.3} c="#ff7a4a" e={0.6} o={win(u, 0.5, 0.65)} /></group>
+  </S3>;
 }}</Stage>;
 
-// 21 · el cable caliente: la regleta enchufada con la estufa; el cable pasa de gris a rojo desde el enchufe
-export const HHotcord: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="split">{(tt) => {
-  const heat = eio(tt, 0.8, 4.4);
-  const d = "M 1500 520 C 1300 520, 1300 800, 1050 800 S 700 640, 520 760";
-  return <>
-    <Head tt={tt} kick="NUMBER EIGHT" title="NEVER A POWER STRIP" col={RED} />
-    <div style={{ position: "absolute", left: 1460, top: 360, width: 260, height: 360, borderRadius: 30, background: "linear-gradient(180deg,#e9e7e0,#b9b6ad)", boxShadow: shadow }}>
-      {[0, 1, 2, 3, 4].map((i) => <div key={i} style={{ position: "absolute", left: 30, right: 30, top: 50 + i * 54, height: 26, borderRadius: 13, background: `rgba(255,${120 - 80 * heat},40,${0.4 + 0.6 * heat})` }} />)}</div>
-    <svg width={1920} height={1080} style={{ position: "absolute" }}>
-      <defs><linearGradient id="hc" x1="0" x2="1"><stop offset="0" stopColor="#3a3a3a" /><stop offset={1 - heat} stopColor="#3a3a3a" /><stop offset={Math.min(1, 1.15 - heat)} stopColor="#ff4a2a" /><stop offset="1" stopColor="#ff7a2a" /></linearGradient></defs>
-      <path d={d} stroke="url(#hc)" strokeWidth={18} fill="none" strokeLinecap="round" style={{ filter: `drop-shadow(0 0 ${20 * heat}px rgba(255,90,40,.9))` }} />
-    </svg>
-    <div style={{ position: "absolute", left: 380, top: 640, width: 220, height: 240, borderRadius: 18, background: "linear-gradient(180deg,#d9d6cd,#9e9a90)", boxShadow: shadow }} />
-    <div style={{ position: "absolute", left: 1060, top: 560, width: 180, height: 120, borderRadius: 14, background: "#f1ead6", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 44, color: RED, opacity: cl(phys(tt, 3.6, 6, 0.6)) }}>1500 W</div>
-    <Tag tt={tt} at={4.4} x={960} y={950} txt="STRAIGHT INTO THE WALL" col={GRN} size={44} />
-  </>;
+// 20 · el radio de 20 pies: el generador ronronea en el césped; los anillos se abren de a 5 pies y la casa queda afuera del último
+export const HRadius: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), vib = Math.sin(u * 160) * 0.004, n = win(u, 0.1, 0.7) * 4;
+  return <S3 p={lv([0.6, 2.1, 2.6], [0.8, 1.8, 2.2], win(u, 0, 1))} l={[0.9, 0, 0]} fov={44} floor={null}>
+    <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[30, 30]} /><meshStandardMaterial color="#4f7a3a" roughness={1} /></mesh>
+    <group position={[0, 0.24 + vib, 0]} scale={[1.8, 1.8, 1.8]}>
+      {[[-0.22, -0.15], [0.22, -0.15], [-0.22, 0.15], [0.22, 0.15]].map(([x, z], i) => <Cy key={i} rt={0.012} h={0.3} p={[x, 0, z]} c="#1b1b1b" m={0.6} ro={0.4} />)}
+      <Bx s={[0.4, 0.26, 0.28]} c="#e8b020" ro={0.45} rad={0.03} />
+      <Bx s={[0.42, 0.04, 0.3]} p={[0, 0.15, 0]} c="#1b1b1b" ro={0.5} />
+      <Cy rt={0.03} h={0.1} p={[0.18, 0.05, 0.16]} r={[Math.PI / 2, 0, 0]} c="#6a6e74" m={0.8} />
+    </group>
+    {Array.from({ length: 10 }, (_, i) => { const ph = (u * 2 + i / 10) % 1; return <Puff key={i} p={[0.18 + ph * 0.3, 0.2 + ph * 0.35, 0.25 + ph * 0.4]} s={0.12 + ph * 0.25} c="#6a6660" add={false} o={0.4 * (1 - ph)} />; })}
+    {[1, 2, 3, 4].map((k) => { const a = cl(n - (k - 1)); return a > 0 ? <group key={k}>
+      <To R={k * 0.42 * (0.7 + 0.3 * a)} t={0.012} p={[0, 0.01, 0]} r={[Math.PI / 2, 0, 0]} c={k === 4 ? "#ff5a3a" : "#f4efe6"} e={k === 4 ? "#ff3a1a" : undefined} ei={0.6} o={a} />
+      <group position={[0.1 + k * 0.08, 0.04, k * 0.42 * (0.7 + 0.3 * a) + 0.06]} rotation={[-1.1, 0, 0]}><Txt t={`${k * 5} FT`} w={0.26} c={k === 4 ? "#ffb08a" : "#ffffff"} o={win(a, 0.8, 1)} /></group>
+    </group> : null; })}
+    <group position={[2.2, 0, -0.4]}>
+      <Bx s={[0.8, 0.5, 0.7]} p={[0, 0.25, 0]} c="#e9e2d2" ro={0.6} />
+      <mesh position={[0, 0.65, 0]} rotation={[0, Math.PI / 4, 0]} castShadow><coneGeometry args={[0.62, 0.32, 4]} /><meshStandardMaterial color="#6a3a2a" roughness={0.7} /></mesh>
+      <Bx s={[0.14, 0.24, 0.01]} p={[-0.2, 0.12, 0.351]} c="#6a4a30" ro={0.6} />
+    </group>
+  </S3>;
 }}</Stage>;
 
-// 22 · el anillo libre: un círculo de 3 ft se expande desde la estufa y empuja la manta, el diario y la cortina hacia afuera
-export const HClearring: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="iris">{(tt) => {
-  const r = 120 + 230 * eio(tt, 0.8, 2.8);
-  const obj = [{ a: -0.6, w: 180, hh: 120, c: "#8f3b3b", n: "BLANKET" }, { a: 2.1, w: 150, hh: 110, c: "#e8e3d4", n: "PAPERS" }, { a: 3.6, w: 80, hh: 260, c: "#7a8fa8", n: "CURTAIN" }];
-  return <>
-    <Head tt={tt} kick="THE SPACE HEATER" title="3 FEET CLEAR" col={AMB} />
-    <svg width={1920} height={1080} style={{ position: "absolute" }}><ellipse cx={960} cy={680} rx={r * 1.3} ry={r * 0.55} fill="rgba(111,227,154,.08)" stroke={GRN} strokeWidth={6} strokeDasharray="20 14" /></svg>
-    <div style={{ position: "absolute", left: 880, top: 520, width: 160, height: 200, borderRadius: 16, background: "linear-gradient(180deg,#ece6d8,#a8a090)", boxShadow: `${shadow}, 0 0 60px rgba(255,120,40,.35)` }}>
-      {[0, 1, 2, 3].map((i) => <div key={i} style={{ position: "absolute", left: 20, right: 20, top: 30 + i * 36, height: 12, borderRadius: 6, background: "#ff7a2a", boxShadow: "0 0 14px #ff7a2a" }} />)}</div>
-    {obj.map((o, i) => { const R = Math.max(r + 70, 260); const x = 960 + Math.cos(o.a) * R * 1.3, y = 680 + Math.sin(o.a) * R * 0.55;
-      return <div key={i} style={{ position: "absolute", left: x - o.w / 2, top: y - o.hh, width: o.w, height: o.hh, borderRadius: 10, background: o.c, boxShadow: shadow, display: "flex", alignItems: "flex-end", justifyContent: "center", fontSize: 20, fontWeight: 800, color: "#1b1b1b", paddingBottom: 8, boxSizing: "border-box" }}>{o.n}</div>; })}
-    <Tag tt={tt} at={3.0} x={960} y={960} txt="NOTHING ON TOP" col={GRN} size={44} />
-  </>;
+// 21 · el alargue caliente: el calor sube por el cable desde el enchufe, tramo por tramo, del gris al rojo, y la zapatilla echa humito
+export const HHotcord: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), heat = win(u, 0.1, 0.8), N = 12;
+  const P = (i: number): V3 => [-0.75 + i * 0.12, 0.02 + Math.sin(i * 0.9) * 0.008, Math.sin(i * 0.7) * 0.15];
+  return <S3 p={lv([0.3, 0.9, 1.6], [0.1, 0.7, 1.1], win(u, 0, 1))} l={[-0.05, 0.05, 0]} fov={38} floor="wood" env={0.2} exp={0.75}>
+    <Bx s={[0.08, 0.16, 0.04]} p={[-0.85, 0.3, -0.35]} c="#f4f3ee" ro={0.4} rad={0.01} />
+    <Tube pts={[[-0.85, 0.25, -0.33], [-0.84, 0.08, -0.2], P(0)]} rad={0.012} c="#e8e4da" ro={0.5} />
+    {Array.from({ length: N - 1 }, (_, i) => { const k = cl(heat * N * 1.15 - i), c = k > 0.6 ? "#ff3a1a" : k > 0.2 ? "#e88a3a" : "#e8e4da";
+      return <Tube key={i} pts={[P(i), P(i + 0.5), P(i + 1)]} rad={0.012} c={c} e={k > 0.2 ? "#ff3a1a" : undefined} ei={k * 0.9} ro={0.5} seg={8} />; })}
+    <group position={[0.65, 0.03, 0.12]} rotation={[0, -0.3, 0]}>
+      <Bx s={[0.42, 0.05, 0.11]} c="#f4f3ee" ro={0.4} rad={0.012} />
+      {[0, 1, 2].map((k) => <Bx key={k} s={[0.05, 0.012, 0.06]} p={[-0.12 + k * 0.12, 0.03, 0]} c="#1b1b1b" />)}
+      <Sp rad={0.008} p={[-0.18, 0.03, 0.04]} c="#ff3b2f" e="#ff3b2f" ei={2} ns />
+    </group>
+    {heat > 0.85 && Array.from({ length: 8 }, (_, i) => { const ph = (u * 2 + i / 8) % 1; return <Puff key={i} p={[0.62 + rnd(i) * 0.1, 0.06 + ph * 0.4, 0.12]} s={0.08 + ph * 0.18} c="#8a8680" add={false} o={0.45 * (1 - ph)} />; })}
+    <pointLight position={[0.2, 0.15, 0.2]} intensity={1.6 * heat} distance={1.2} color="#ff5a2a" />
+  </S3>;
 }}</Stage>;
 
-// 23 · la nieve: el banco de nieve sube y tapa los dos caños blancos; una mano los despeja
-export const HSnowdrift: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="drop">{(tt) => {
-  const up = eio(tt, 0.4, 2.4), clear = eio(tt, 3.2, 4.6), lvl = 440 * up * (1 - 0.75 * clear);
-  return <>
-    <Head tt={tt} kick="NUMBER NINE" title="THE PIPES OUTSIDE" col={ICE} />
-    <div style={{ position: "absolute", left: 300, top: 220, width: 1320, height: 740, background: "repeating-linear-gradient(180deg,#9a8f80 0 58px,#86796a 58px 62px)" }} />
-    {[0, 1].map((i) => <div key={i} style={{ position: "absolute", left: 820 + i * 220, top: 620, width: 90, height: 90, borderRadius: "50%", background: "radial-gradient(circle,#1d1d1d 45%,#f4f4f2 48%)", boxShadow: shadow }} />)}
-    <svg width={1920} height={1080} style={{ position: "absolute" }}>
-      <path d={`M 300 ${960 - lvl} C 700 ${900 - lvl}, 900 ${980 - lvl}, 1200 ${930 - lvl} S 1500 ${900 - lvl}, 1620 ${950 - lvl} L 1620 960 L 300 960 Z`} fill="#f4f8fb" />
-    </svg>
-    {Array.from({ length: 80 }, (_, i) => <div key={i} style={{ position: "absolute", left: 300 + rnd(i) * 1320, top: 220 + ((tt * 120 + rnd(i + 9) * 740) % 740), width: 8, height: 8, borderRadius: "50%", background: "#fff", opacity: 0.8 }} />)}
-    <Tag tt={tt} at={2.2} x={1520} y={320} txt="BLOCKED = SHUTS OFF" col={RED} size={40} />
-    <Tag tt={tt} at={4.4} x={480} y={320} txt="CLEAR THEM" col={GRN} size={44} />
-  </>;
+// 22 · el círculo de 3 pies: el anillo se expande desde la base del calefactor y empuja la manta, el diario y la cortina hacia afuera
+export const HClearring: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), R = lerp(0.12, 0.9, win(u, 0.15, 0.6)), glow = 0.6 + 0.4 * Math.sin(u * 20);
+  const push = (r0: number) => Math.max(0, R + 0.08 - r0);
+  return <S3 p={lv([0.0, 2.3, 1.9], [0.2, 1.9, 1.5], win(u, 0, 1))} l={[0, 0, 0]} fov={42} floor="wood">
+    <group position={[0, 0, 0]}>
+      <Bx s={[0.3, 0.42, 0.16]} p={[0, 0.21, 0]} c="#2a2c30" ro={0.4} m={0.4} rad={0.02} />
+      {Array.from({ length: 5 }, (_, i) => <Bx key={i} s={[0.22, 0.012, 0.01]} p={[0, 0.12 + i * 0.05, 0.082]} c="#ff5a2a" e="#ff4a1a" ei={1.5 * glow} ns />)}
+      <pointLight position={[0, 0.3, 0.3]} intensity={2 * glow} distance={1.4} color="#ff6a2a" />
+    </group>
+    <To R={R} t={0.015} p={[0, 0.01, 0]} r={[Math.PI / 2, 0, 0]} c="#ffd24a" e="#ffc02a" ei={0.8} />
+    <group position={[0.5, 0.03, 0.68]} rotation={[-Math.PI / 2, 0, 0]}><Txt t="3 FT" w={0.26} c="#ffe08a" o={win(u, 0.55, 0.7)} /></group>
+    {(() => { const r0 = 0.45, a = -2.3, d = r0 + push(r0); return <Bx s={[0.4, 0.04, 0.3]} p={[Math.cos(a) * d, 0.02, Math.sin(a) * d]} r={[0, 0.4, 0]} c="#3a6ad8" ro={0.95} rad={0.02} />; })()}
+    {(() => { const r0 = 0.5, a = -0.6, d = r0 + push(r0); return <Bx s={[0.3, 0.012, 0.22]} p={[Math.cos(a) * d, 0.007, Math.sin(a) * d]} r={[0, -0.3, 0]} c="#e8e4da" ro={0.9} />; })()}
+    {(() => { const r0 = 0.55, a = Math.PI + 0.4, d = r0 + push(r0); return <group position={[Math.cos(a) * d, 0, Math.sin(a) * d]}>{Array.from({ length: 6 }, (_, i) => <Cy key={i} rt={0.03} h={1.2} p={[i * 0.06 - 0.15, 0.6, Math.sin(i * 1.3) * 0.02]} c="#c94a4a" ro={0.95} />)}</group>; })()}
+  </S3>;
 }}</Stage>;
 
-// 24 · el tubito de drenaje: el lodo marrón lo llena y el flotante sube hasta cortar el furnace
-export const HSlimetube: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="split">{(tt) => {
-  const fill = eio(tt, 0.6, 3.6), flo = eio(tt, 3.0, 4.0);
-  const d = "M 420 380 C 700 380, 700 700, 980 700 S 1300 520, 1480 520";
-  return <>
-    <Head tt={tt} kick="NUMBER TEN" title="THE LITTLE DRAIN TUBE" col={AMB} />
-    <svg width={1920} height={1080} style={{ position: "absolute" }}>
-      <path d={d} stroke="rgba(220,240,255,.35)" strokeWidth={70} fill="none" strokeLinecap="round" />
-      <path d={d} stroke="#7a5326" strokeWidth={50} fill="none" strokeLinecap="round" pathLength={1} strokeDasharray={`${fill} 1`} />
-      {Array.from({ length: 10 }, (_, i) => <circle key={i} cx={460 + i * 100} cy={380 + Math.sin(i) * 140 + 160} r={6} fill="#c79a5e" opacity={fill * 0.6} />)}
-    </svg>
-    <div style={{ position: "absolute", left: 1440, top: 330, width: 220, height: 380, borderRadius: 20, border: "6px solid rgba(220,240,255,.5)", background: "rgba(255,255,255,.05)", overflow: "hidden" }}>
-      <div style={{ position: "absolute", bottom: 0, width: "100%", height: `${30 + 60 * flo}%`, background: "rgba(122,83,38,.8)" }} />
-      <div style={{ position: "absolute", left: 60, bottom: `${26 + 60 * flo}%`, width: 100, height: 50, borderRadius: 25, background: "#f0f0ea" }} /></div>
-    <div style={{ position: "absolute", left: 1550, top: 270, transform: "translateX(-50%)", fontWeight: 900, fontSize: 40, color: flo > 0.9 ? RED : DIM }}>{flo > 0.9 ? "SWITCH: OFF" : "FLOAT SWITCH"}</div>
-    <Tag tt={tt} at={4.2} x={700} y={900} txt="VINEGAR · ONCE A YEAR" col={GRN} size={42} />
-  </>;
+// 23 · los caños tapados: la nieve sube y entierra los dos caños de PVC del costado de la casa; entra la pala y los destapa
+export const HSnowdrift: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), snow = win(u, 0.05, 0.4), dig = win(u, 0.5, 0.8), hY = 0.42 * snow;
+  return <S3 p={lv([0.9, 0.7, 1.9], [0.5, 0.6, 1.4], win(u, 0, 1))} l={[0, 0.3, 0]} fov={38} floor={null} warm="#a8c4ff">
+    <mesh position={[0, 1.2, -0.05]} receiveShadow><planeGeometry args={[4, 3]} /><meshStandardMaterial color="#9a8a76" roughness={0.95} /></mesh>
+    {[-0.15, 0.15].map((x, i) => <group key={i}><Cy rt={0.05} h={0.3} p={[x, 0.32, 0.12]} r={[Math.PI / 2, 0, 0]} c="#f4f3ee" ro={0.4} /><Cy rt={0.04} h={0.02} p={[x, 0.32, 0.27]} r={[Math.PI / 2, 0, 0]} c="#2a2a2a" ro={0.9} /></group>)}
+    <mesh position={[0, hY / 2, 0.3]} castShadow receiveShadow><boxGeometry args={[1.6, hY + 0.001, 0.7]} /><meshStandardMaterial color="#f4f8ff" roughness={0.9} /></mesh>
+    <mesh position={[0, hY + 0.001, 0.3]} scale={[1.6, 0.12 * snow + 0.001, 0.7]}><sphereGeometry args={[0.5, 24, 12, 0, Math.PI * 2, 0, Math.PI / 2]} /><meshStandardMaterial color="#f4f8ff" roughness={0.9} /></mesh>
+    {dig > 0 && <mesh position={[0, 0.3, 0.32]}><boxGeometry args={[0.6 * dig, 0.24, 0.72]} /><meshStandardMaterial color="#5a5048" roughness={1} /></mesh>}
+    {Array.from({ length: 30 }, (_, i) => { const ph = (u * 0.8 + rnd(i)) % 1; return <Dot key={i} p={[(rnd(i, 2) - 0.5) * 2, 1.4 - ph * 1.4, (rnd(i, 3) - 0.3) * 0.9]} r={0.01} c="#ffffff" add o={0.8 * (1 - win(u, 0.45, 0.55))} />; })}
+    {u > 0.45 && <group position={[lerp(0.9, 0.2, win(u, 0.45, 0.55)) - dig * 0.4, 0.4 + Math.sin(u * 40) * 0.04 * dig, 0.6]} rotation={[0.3, 0, -0.7]}>
+      <Bx s={[0.26, 0.02, 0.22]} p={[0, -0.02, 0]} c="#c62828" m={0.4} ro={0.4} />
+      <Cy rt={0.015} h={0.7} p={[0.02, 0.35, 0]} c="#8a5e3a" ro={0.6} />
+    </group>}
+    {Array.from({ length: 14 }, (_, i) => { const k = (dig * 4 + i / 14) % 1; return dig > 0.05 && dig < 0.98 ? <Puff key={`p${i}`} p={[0.2 - dig * 0.4 + k * 0.5, 0.35 + Math.sin(k * Math.PI) * 0.3, 0.6]} s={0.06} c="#ffffff" add={false} o={0.7 * (1 - k)} /> : null; })}
+  </S3>;
 }}</Stage>;
 
-// 25 · la niebla de humedad: el aire se llena de gotas; el número sube de 30 a 45 % y "68 feels like 70"
-export const HMist: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="blinds">{(tt) => {
-  const p = eio(tt, 0.6, 3.6), hum = Math.round(lerp(30, 45, p));
-  return <>
-    <Head tt={tt} kick="NUMBER ELEVEN" title="DRY AIR FEELS COLD" col={ICE} />
-    {Array.from({ length: Math.round(220 * p) }, (_, i) => <div key={i} style={{ position: "absolute", left: 200 + rnd(i) * 1520, top: 260 + ((rnd(i + 4) * 700 + tt * 18 * (1 + rnd(i))) % 700), width: 10 + rnd(i + 7) * 12, height: 10 + rnd(i + 7) * 12, borderRadius: "50%", background: "rgba(186,226,255,.35)", filter: "blur(2px)" }} />)}
-    <C x={760} y={600}><div style={{ width: 380, height: 380, borderRadius: "50%", background: "radial-gradient(circle at 40% 35%,#fbfaf6,#d6d3ca)", boxShadow: shadow, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", color: "#2a2620" }}>
-      <div style={{ fontSize: 26, fontWeight: 800, letterSpacing: 2 }}>HUMIDITY</div><div style={{ fontWeight: 900, fontSize: 120, color: hum >= 40 ? "#1f8a4c" : "#b3261e" }}>{hum}%</div></div></C>
-    <div style={{ position: "absolute", left: 1160, top: 470, fontWeight: 900, fontSize: 110, color: TX }}>68°</div>
-    <div style={{ position: "absolute", left: 1160, top: 610, fontFamily: HAND, fontSize: 60, color: GRN, opacity: cl((tt - 3.2) * 2) }}>feels like 70°</div>
-  </>;
+// 24 · el caño del drenaje: la baba sube por el tubo transparente, el flotante de la bomba sube con el agua y se prende la luz roja
+export const HSlimetube: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), lvl = win(u, 0.1, 0.65), red = u > 0.66, bl = red && Math.sin(u * 60) > 0;
+  return <S3 p={lv([0.6, 0.75, 1.6], [0.3, 0.6, 1.15], win(u, 0, 1))} l={[0, 0.45, 0]} fov={38} floor="conc">
+    <Cy rt={0.06} h={0.9} p={[-0.25, 0.45, 0]} c="#e9f3f6" ro={0.03} o={0.28} open seg={32} />
+    <Cy rt={0.055} h={0.85 * lvl + 0.001} p={[-0.25, 0.02 + 0.425 * lvl, 0]} c="#6a7a3a" ro={0.4} o={0.92} />
+    {Array.from({ length: 10 }, (_, i) => <Sp key={i} rad={0.012} p={[-0.25 + (rnd(i) - 0.5) * 0.07, 0.04 + rnd(i, 2) * 0.82 * lvl, 0.04]} c="#3a4a1a" ro={0.3} />)}
+    <Bx s={[0.42, 0.42, 0.34]} p={[0.25, 0.21, 0]} c="#d6d0c1" ro={0.45} m={0.15} rad={0.03} />
+    <Bx s={[0.08, 0.5, 0.06]} p={[0.08, 0.45, 0.2]} c="#f4f3ee" ro={0.4} o={0.4} />
+    <Bx s={[0.06, 0.04, 0.04]} p={[0.08, 0.04 + 0.42 * lvl, 0.2]} c="#e8402f" ro={0.4} />
+    <Bx s={[0.14, 0.08, 0.02]} p={[0.25, 0.32, 0.18]} c="#1b1b1b" ro={0.3} />
+    <Sp rad={0.022} p={[0.25, 0.32, 0.2]} c={bl ? "#ff3b2f" : "#3a1a14"} e={bl ? "#ff2a1a" : undefined} ei={3} ns />
+    {bl && <pointLight position={[0.25, 0.35, 0.5]} intensity={2.5} distance={1.4} color="#ff3020" />}
+    <Tube pts={[[-0.25, 0.9, 0], [-0.1, 1.0, 0], [0.25, 0.95, 0], [0.25, 0.42, 0]]} rad={0.012} c="#f4f3ee" ro={0.4} />
+    {red && <group position={[0.25, 0.6, 0.25]}><Txt t="CLOGGED" w={0.36} c="#ff8a7a" /></group>}
+  </S3>;
 }}</Stage>;
 
-// 26 · el árbol de conductos: el aire corre por las ramas; dos rejillas se cierran y la presión se escapa por las uniones
-export const HDucts: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="wipe">{(tt) => {
-  const shut = eio(tt, 2.0, 3.0);
-  const br = [[960, 860, 960, 600], [960, 600, 560, 420], [960, 600, 960, 360], [960, 600, 1360, 420], [560, 420, 420, 300], [1360, 420, 1500, 300]];
-  return <>
-    <Head tt={tt} kick="NUMBER TWELVE" title="KEEP THE VENTS OPEN" col={AMB} />
-    <svg width={1920} height={1080} style={{ position: "absolute" }}>
-      {br.map(([a, b, c, d], i) => <line key={i} x1={a} y1={b} x2={c} y2={d} stroke="#9aa0a8" strokeWidth={40} strokeLinecap="round" />)}
-      {br.map(([a, b, c, d], i) => { const blocked = (i === 4 || i === 5) && shut > 0.5; return Array.from({ length: 5 }, (_, j) => { const ph = (tt * 0.8 + j / 5) % 1; return <circle key={`${i}${j}`} cx={lerp(a, c, blocked ? ph * 0.5 : ph)} cy={lerp(b, d, blocked ? ph * 0.5 : ph)} r={8} fill={ICE} />; }); })}
-      {[[560, 420], [1360, 420]].map(([x, y], i) => Array.from({ length: 8 }, (_, j) => { const ph = (tt * 1.2 + j / 8) % 1, a = j * 0.8; return <circle key={`l${i}${j}`} cx={x + Math.cos(a) * ph * 120} cy={y + Math.sin(a) * ph * 120} r={6} fill={RED} opacity={shut * (1 - ph)} />; }))}
-    </svg>
-    {[[420, 300], [1500, 300]].map(([x, y], i) => <div key={i} style={{ position: "absolute", left: x - 70, top: y - 50, width: 140, height: 70, background: "#cfd3d8", borderRadius: 6, display: "flex", flexDirection: "column", justifyContent: "space-around", padding: 6, boxSizing: "border-box" }}>
-      {[0, 1, 2].map((j) => <div key={j} style={{ height: lerp(4, 16, shut), background: "#555", borderRadius: 2 }} />)}</div>)}
-    <Tag tt={tt} at={3.2} x={960} y={960} txt="LEAKS AT THE SEAMS" col={RED} size={42} />
-  </>;
+// 25 · el humidificador: la niebla sale en espiral, la aguja del higrómetro sube de 30 a 45 % y el termostato dice 68 pero «se siente 70»
+const hygT = () => canvasTex("hyg25", 512, 512, (g) => { g.fillStyle = "#fbf8f0"; g.beginPath(); g.arc(256, 256, 250, 0, Math.PI * 2); g.fill(); g.fillStyle = "#2a2620"; g.textAlign = "center"; g.font = BOLD(44); for (let k = 0; k <= 5; k++) { const a = (-120 + k * 48) * D2R; g.fillText(`${10 + k * 10}`, 256 + 170 * Math.sin(a), 270 - 170 * Math.cos(a)); } g.font = BOLD(40); g.fillText("% RH", 256, 400); g.fillStyle = "#3a8a5a"; g.beginPath(); g.arc(256, 256, 215, (-90 - 120 + 3 * 48) * D2R, (-90 - 120 + 4 * 48) * D2R); g.arc(256, 256, 195, (-90 - 120 + 4 * 48) * D2R, (-90 - 120 + 3 * 48) * D2R, true); g.fill(); });
+export const HMist: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), m = win(u, 0.05, 0.25), rh = lerp(30, 45, win(u, 0.2, 0.7)), ang = (-120 + (rh - 10) * 4.8) * D2R, feel = u > 0.72;
+  return <S3 p={lv([0.3, 0.85, 1.9], [0.1, 0.75, 1.4], win(u, 0, 1))} l={[0.05, 0.5, 0]} fov={36}>
+    <Cy rt={0.13} rb={0.16} h={0.36} p={[-0.4, 0.18, 0]} c="#f4f3ee" ro={0.3} seg={40} />
+    <Cy rt={0.04} h={0.04} p={[-0.4, 0.38, 0]} c="#cfd8de" ro={0.3} />
+    {Array.from({ length: 22 }, (_, i) => { const ph = (u * 1.3 + i / 22) % 1, a = ph * 6 + i; return <Puff key={i} p={[-0.4 + Math.cos(a) * ph * 0.2, 0.42 + ph * 0.8, Math.sin(a) * ph * 0.2]} s={0.1 + ph * 0.3} c="#eef6ff" add={false} o={0.5 * m * (1 - ph)} />; })}
+    <group position={[0.15, 0.55, -0.1]}>
+      <Cy rt={0.17} h={0.05} r={[Math.PI / 2, 0, 0]} c="#b8893a" m={0.9} ro={0.25} seg={48} />
+      <mesh position={[0, 0, 0.026]}><circleGeometry args={[0.155, 48]} /><meshStandardMaterial map={hygT()} roughness={0.5} /></mesh>
+      <group position={[0, 0, 0.032]} rotation={[0, 0, -ang]}><Bx s={[0.008, 0.13, 0.004]} p={[0, 0.05, 0]} c="#d8352a" ns /></group>
+      <Sp rad={0.012} p={[0, 0, 0.035]} c="#2a2520" m={0.6} />
+    </group>
+    <group position={[0.58, 0.55, 0.0]} rotation={[0, -0.3, 0]}>
+      <Bx s={[0.3, 0.22, 0.04]} c="#ecebe6" ro={0.4} rad={0.02} />
+      <Pl w={0.24} h={0.1} p={[0, 0.02, 0.021]} map={lcd("68°", "#cfe8d0", "#1b2620", 512, 200, 160)} c="#ffffff" e="#9fd0a0" ei={0.6} ns />
+    </group>
+    {feel && <group position={[0.58, 0.82, 0.05]}><Txt t="FEELS LIKE 70" w={0.5} c="#ffd58a" o={win(u, 0.72, 0.8)} /></group>}
+  </S3>;
 }}</Stage>;
 
-// 27 · la escalera de Earl (1984): foto vieja que se tiñe sepia y la cita escrita a mano debajo
-export const HLadder: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="drop">{(tt) => {
-  const q = "You don't fix furnaces. You keep families warm.", n = Math.floor(q.length * eio(tt, 1.6, 4.6));
-  return <>
-    <C x={700} y={540}><div style={{ background: "#efe6cf", padding: "22px 22px 70px", boxShadow: shadow, transform: `rotate(${-4 + 2 * phys(tt, 0.2, 5, 0.5)}deg)` }}>
-      <Photo id="f_b_earl_escalera" w={560} h={640} r={2} z={1.04} style={{ filter: `sepia(${0.2 + 0.5 * eio(tt, 0.4, 1.6)}) contrast(.95)` }} />
-      <div style={{ fontFamily: HAND, fontSize: 40, color: "#5a4a32", marginTop: 14, textAlign: "center" }}>Earl · 1984</div></div></C>
-    <div style={{ position: "absolute", left: 1120, top: 380, width: 640, fontFamily: HAND, fontSize: 64, lineHeight: 1.25, color: TX }}>"{q.slice(0, n)}{n < q.length ? "▍" : "\""}</div>
-  </>;
+// 26 · el árbol de ductos: el aire sale del furnace por las ramas; las rejillas se cierran una por una y el aire se escapa silbando por las uniones
+export const HDucts: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), shut = (k: number) => win(u, 0.2 + k * 0.1, 0.28 + k * 0.1), closed = [0, 1, 2].reduce((a, k) => a + shut(k), 0);
+  const BR = [-0.6, 0, 0.6], DM = { c: "#c9cfd5", m: 0.85, ro: 0.3 };
+  return <S3 p={lv([0.3, 1.35, 2.1], [0.1, 1.2, 1.7], win(u, 0, 1))} l={[0, 0.9, 0]} fov={40} floor="conc">
+    <Bx s={[0.5, 0.6, 0.45]} p={[0, 0.3, 0]} c="#d6d0c1" ro={0.45} m={0.15} rad={0.03} />
+    <Bx s={[1.5, 0.18, 0.22]} p={[0, 0.95, 0]} {...DM} /><Bx s={[0.22, 0.3, 0.22]} p={[0, 0.72, 0]} {...DM} />
+    {BR.map((x, k) => <group key={k}>
+      <Bx s={[0.14, 0.4, 0.14]} p={[x, 1.24, 0]} {...DM} />
+      <group position={[x, 1.45, 0]} rotation={[0, 0, 0]}>{Array.from({ length: 4 }, (_, j) => <Bx key={j} s={[0.18, 0.006, 0.03]} p={[0, 0, -0.06 + j * 0.04]} r={[lerp(0.1, 1.45, 1 - shut(k)) , 0, 0]} c="#efe9dc" ro={0.5} />)}</group>
+      {Array.from({ length: 6 }, (_, i) => { const ph = (u * 2 + i / 6) % 1; return <Dot key={i} p={[x + (rnd(i + k) - 0.5) * 0.05, 1.45 + ph * 0.4, (rnd(i, k) - 0.5) * 0.05]} r={0.014} st={[1, 2.5, 1]} c="#9fd2ff" add o={0.8 * (1 - shut(k)) * (1 - ph)} />; })}
+    </group>)}
+    {[-0.3, 0.3].map((x, k) => Array.from({ length: 8 }, (_, i) => { const ph = (u * 2.4 + i / 8) % 1, dir = k ? 1 : -1; return <Dot key={`l${k}${i}`} p={[x + dir * ph * 0.1, 0.95 + (rnd(i, k) - 0.5) * 0.1, 0.12 + ph * 0.45]} r={0.032} st={[1, 1, 2.5]} c="#ff9a6a" add o={cl((closed - 0.5) / 1.5) * (1 - ph)} />; }))}
+    {[-0.3, 0.3].map((x, k) => Array.from({ length: 5 }, (_, i) => { const ph = (u * 1.6 + i / 5) % 1; return <Puff key={`p${k}${i}`} p={[x + (k ? 1 : -1) * ph * 0.15, 0.95, 0.12 + ph * 0.5]} s={0.08 + ph * 0.2} c="#e8e4dc" add={false} o={0.5 * cl((closed - 0.5) / 1.5) * Math.sin(ph * Math.PI)} />; }))}
+    {closed > 2 && <group position={[0, 0.55, 0.45]}><Txt t="LEAKS" w={0.3} c="#ffb08a" /></group>}
+  </S3>;
 }}</Stage>;
 
-// 28 · el teléfono: suena, vibra, y el tubo se cuelga solo sobre la palabra URGENT
-export const HPhone: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="iris">{(tt) => {
-  const ring = tt < 2.6, hang = eio(tt, 2.6, 3.2);
-  return <>
-    <Head tt={tt} kick="THE PHONE SCAM" title="HANG UP" col={RED} />
-    <C x={960} y={620}><div style={{ position: "relative", width: 520, height: 420, transform: ring ? `rotate(${Math.sin(tt * 40) * 3}deg)` : "none" }}>
-      <div style={{ position: "absolute", left: 40, top: 140, width: 440, height: 260, borderRadius: "40px 40px 30px 30px", background: "linear-gradient(180deg,#d8cdb6,#a49778)", boxShadow: shadow }}>
-        <div style={{ position: "absolute", left: 120, top: 60, width: 200, height: 70, borderRadius: 10, background: "#21291c", color: "#9fe08a", fontFamily: "Courier New, monospace", fontSize: 30, display: "flex", alignItems: "center", justifyContent: "center" }}>UNKNOWN</div></div>
-      <div style={{ position: "absolute", left: 20, top: lerp(-120, 100, hang), width: 480, height: 90, borderRadius: 45, background: "linear-gradient(180deg,#e6dcc5,#b3a687)", boxShadow: shadow, transform: `rotate(${lerp(-14, 0, hang)}deg)` }} />
-    </div></C>
-    {ring && [0, 1, 2].map((i) => { const ph = (tt * 1.6 + i / 3) % 1; return <div key={i} style={{ position: "absolute", left: 960 - 300 - ph * 120, top: 300, fontSize: 60, color: AMB, opacity: 1 - ph }}>(</div>; })}
-    <div style={{ position: "absolute", left: 1360, top: 380, fontWeight: 900, fontSize: 64, color: RED, textDecoration: hang > 0.5 ? "line-through" : "none", opacity: 0.9 }}>"URGENT"</div>
-    <Tag tt={tt} at={3.4} x={1460} y={500} txt="CALL YOUR OWN TECH" col={GRN} size={40} />
-  </>;
+// 27 · la escalera y la nota de Earl: la escalera de madera apoyada; una tarjeta escrita a mano cae girando y queda pegada al peldaño
+const earlT = () => canvasTex("earl27", 600, 400, (g) => { g.fillStyle = "#fbf6e6"; g.fillRect(0, 0, 600, 400); g.strokeStyle = "#9ab8d8"; g.lineWidth = 3; for (let y = 90; y < 400; y += 60) { g.beginPath(); g.moveTo(20, y); g.lineTo(580, y); g.stroke(); }
+  g.fillStyle = "#1f2a6a"; g.font = HANDF(76); g.fillText("Never climb", 40, 140); g.fillText("alone.", 40, 220); g.font = HANDF(64); g.fillText("— Earl", 300, 340); });
+export const HLadder: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), fall = drop(u, 0.25, 0.55), spin = (1 - fall) * 6, wob = Math.sin(u * 10) * 0.01 * win(u, 0.0, 0.2);
+  return <S3 p={lv([0.9, 1.0, 2.4], [0.5, 1.0, 1.8], win(u, 0, 1))} l={[0, 0.95, 0]} fov={38} floor="conc">
+    <mesh position={[0, 1.4, -0.42]} receiveShadow><planeGeometry args={[4, 3]} /><meshStandardMaterial map={PLASTER()} color="#d8cfbd" roughness={0.95} /></mesh>
+    <group position={[0, 0, 0]} rotation={[-0.22 + wob, 0, 0]}>
+      {[-0.22, 0.22].map((x, i) => <Bx key={i} s={[0.05, 2.0, 0.08]} p={[x, 1.0, 0]} c="#b5875c" ro={0.6} />)}
+      {Array.from({ length: 7 }, (_, i) => <Bx key={i} s={[0.44, 0.04, 0.07]} p={[0, 0.25 + i * 0.27, 0]} c="#a87a50" ro={0.6} />)}
+    </group>
+    <group position={[0, lerp(2.3, 0.92, fall), lerp(0.4, 0.22, fall)]} rotation={[-0.22 + Math.sin(spin) * 0.4, spin, Math.cos(spin) * 0.2 * (1 - fall)]}>
+      <Pl w={0.36} h={0.24} map={earlT()} c="#ffffff" ro={0.85} />
+    </group>
+    <spotLight position={[0.8, 2.2, 1.5]} angle={0.5} penumbra={0.6} intensity={12} distance={5} color="#fff0d8" />
+  </S3>;
 }}</Stage>;
 
-// 29 · el certificado falso: se rompe en dos mitades que caen con peso
-export const HCertificate: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="split">{(tt) => {
-  const tr = phys(tt, 2.2, 3, 0.2), fall = Math.max(0, tt - 2.2) ** 2 * 120;
-  const half = (side: number) => <div style={{ position: "absolute", left: 560, top: 300, width: 800, height: 520, clipPath: side < 0 ? "polygon(0 0,52% 0,47% 30%,53% 55%,46% 80%,50% 100%,0 100%)" : "polygon(52% 0,100% 0,100% 100%,50% 100%,46% 80%,53% 55%,47% 30%)", transform: `translate(${side * 60 * tr}px, ${fall}px) rotate(${side * 8 * tr}deg)`, background: "#f6efd9", border: "14px double #b08a3a", boxSizing: "border-box", boxShadow: shadow, textAlign: "center", color: "#3a2f1c", paddingTop: 70 }}>
-    <div style={{ fontFamily: MARK, fontSize: 64 }}>Certified</div><div style={{ fontWeight: 900, fontSize: 40, letterSpacing: 4, marginTop: 16 }}>"MASTER TECHNICIAN"</div>
-    <div style={{ marginTop: 70, fontSize: 26 }}>Printed at home · no license no.</div></div>;
-  return <>
-    <Head tt={tt} kick="ASK FOR THE LICENSE" title="NOT A PRINTOUT" col={RED} />
-    {half(-1)}{half(1)}
-    <Tag tt={tt} at={3.2} x={960} y={960} txt="CHECK THE STATE NUMBER" col={GRN} size={42} />
-  </>;
+// 28 · el teléfono de pared: suena y tiembla; en la pantallita «URGENT»; la mano lo levanta y lo cuelga de un golpe
+export const HPhone: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), ring = u > 0.05 && u < 0.5 ? Math.sin(u * 220) * 0.02 : 0, lift = win(u, 0.5, 0.62) * (1 - drop(u, 0.68, 0.78)), slam = u > 0.78 && u < 0.82;
+  return <S3 p={lv([0.5, 1.3, 1.5], [0.15, 1.2, 1.0], win(u, 0, 1))} l={[0, 1.15, 0]} fov={36} floor={null}>
+    <mesh position={[0, 1.2, -0.02]} receiveShadow><planeGeometry args={[3, 2]} /><meshStandardMaterial map={PLASTER()} color="#d6c8a8" roughness={0.95} /></mesh>
+    <group position={[ring, 1.15, 0.02]} rotation={[0, 0, ring * 3]}>
+      <Bx s={[0.3, 0.46, 0.08]} c="#e8e2d0" ro={0.35} rad={0.03} />
+      <Bx s={[0.18, 0.06, 0.01]} p={[0, 0.08, 0.042]} c="#101410" ro={0.3} />
+      <Pl w={0.17} h={0.05} p={[0, 0.08, 0.048]} map={lcd(u > 0.05 && u < 0.5 ? "URGENT" : "", "#ff5a3a", "#100806", 512, 160, 110)} c="#ffffff" e="#ff4a2a" ei={0.6} ns />
+      {Array.from({ length: 12 }, (_, i) => <Cy key={i} rt={0.014} h={0.01} p={[-0.06 + (i % 3) * 0.06, -0.02 - Math.floor(i / 3) * 0.045, 0.045]} r={[Math.PI / 2, 0, 0]} c="#f4f3ee" ro={0.4} />)}
+    </group>
+    <group position={[0.26 + lift * 0.25, 1.15 + lift * 0.15 + ring, 0.08 + lift * 0.3]} rotation={[0, 0, lift * 0.6 + ring * 4]}>
+      <Bx s={[0.08, 0.4, 0.07]} c="#e8e2d0" ro={0.35} rad={0.03} />
+      <Bx s={[0.12, 0.08, 0.09]} p={[0, 0.18, 0.02]} c="#e8e2d0" ro={0.35} rad={0.03} /><Bx s={[0.12, 0.08, 0.09]} p={[0, -0.18, 0.02]} c="#e8e2d0" ro={0.35} rad={0.03} />
+    </group>
+    <Tube pts={[[0.26, 0.95, 0.05], [0.3, 0.7, 0.12], [0.18, 0.65, 0.1], [0.24, 0.9, 0.06]]} rad={0.006} c="#d8d2c0" />
+    {u > 0.05 && u < 0.5 && [0, 1, 2].map((k) => { const ph = (u * 6 + k / 3) % 1; return <To key={k} R={0.25 + ph * 0.25} t={0.006} p={[0, 1.15, 0.03]} c="#ffcf6a" e="#ffb84a" ei={1} o={0.6 * (1 - ph)} />; })}
+    {slam && Array.from({ length: 10 }, (_, i) => <Dot key={i} p={[0.26 + (rnd(i) - 0.5) * 0.3, 1.15 + (rnd(i, 2) - 0.5) * 0.4, 0.15]} r={0.01} c="#fff2c8" add o={0.9} />)}
+  </S3>;
 }}</Stage>;
 
-// 30 · los quemadores: se encienden en fila uno por uno, llamas azules parejas
-export const HBurners: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="blinds">{(tt) => <>
-  <Head tt={tt} kick="WHAT HEALTHY LOOKS LIKE" title="EVEN BLUE FLAMES" col={ICE} />
-  <div style={{ position: "absolute", left: 420, top: 700, width: 1080, height: 70, borderRadius: 14, background: "linear-gradient(180deg,#7d8188,#3e4147)", boxShadow: shadow }} />
-  {Array.from({ length: 6 }, (_, i) => { const on = cl((tt - 0.8 - i * 0.45) * 3); return <div key={i} style={{ position: "absolute", left: 480 + i * 175, top: 700 - 220 * on, width: 90, height: 220 * on, borderRadius: "50% 50% 40% 40% / 70% 70% 30% 30%", background: "radial-gradient(ellipse at 50% 80%, #e8f6ff 0%, #5fb8ff 35%, rgba(40,90,255,.4) 70%, transparent 80%)", transform: `scaleX(${1 + 0.05 * Math.sin(tt * 12 + i)})`, filter: "blur(1px)" }} />; })}
-  <Tag tt={tt} at={3.8} x={1500} y={420} txt="YELLOW = CALL" col={AMB} size={42} />
-</>}</Stage>;
+// 29 · el certificado: enmarcado en la pared; se raja por la mitad y las dos partes caen con el vidrio
+const certT = () => canvasTex("cert29", 800, 600, (g) => { g.fillStyle = "#fbf6e6"; g.fillRect(0, 0, 800, 600); g.strokeStyle = "#b08a3e"; g.lineWidth = 14; g.strokeRect(30, 30, 740, 540); g.fillStyle = "#2a2620"; g.textAlign = "center"; g.font = BOLD(64); g.fillText("CERTIFIED", 400, 170); g.font = BOLD(46); g.fillText("COMFORT EXPERT", 400, 250); g.font = HANDF(54); g.fillText("Gold Star Club", 400, 360); g.fillStyle = "#c9a23a"; g.beginPath(); g.arc(400, 470, 50, 0, Math.PI * 2); g.fill(); });
+export const HCertificate: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), crk = win(u, 0.3, 0.45), f = drop(u, 0.48, 0.75), sep = crk * 0.02 + f * 0.15;
+  const half = (s: number) => { const tx = certT(), m = canvasTex(`cert29${s}`, 4, 4, () => {}); m.image = tx.image; m.repeat.set(0.5, 1); m.offset.set(s > 0 ? 0.5 : 0, 0); m.needsUpdate = true; return m; };
+  return <S3 p={lv([0.4, 1.25, 1.6], [0.15, 1.1, 1.15], win(u, 0, 1))} l={[0, 1.0, 0]} fov={38} floor="wood">
+    <mesh position={[0, 1.3, -0.03]} receiveShadow><planeGeometry args={[3, 2.4]} /><meshStandardMaterial map={PLASTER()} color="#cfc4ae" roughness={0.95} /></mesh>
+    {[-1, 1].map((s) => <group key={s} position={[s * (0.2 + sep), lerp(1.2, 0.2, f), 0.02 + f * 0.15]} rotation={[f * 0.3 * s, 0, s * -(crk * 0.04 + f * 0.6)]}>
+      <Bx s={[0.4, 0.6, 0.03]} p={[s * 0.0, 0, -0.01]} c="#3a2618" ro={0.4} />
+      <Pl w={0.36} h={0.54} p={[0, 0, 0.007]} map={half(s)} c="#ffffff" ro={0.8} />
+    </group>)}
+    {crk > 0 && f < 0.5 && <Bx s={[0.006, 0.6 * crk, 0.01]} p={[0, 1.2 + 0.3 * (1 - crk), 0.03]} c="#1b1b1b" ns />}
+    {f > 0.95 && Array.from({ length: 12 }, (_, i) => <Bx key={i} s={[0.03, 0.002, 0.02]} p={[(rnd(i) - 0.5) * 0.7, 0.003, 0.15 + rnd(i, 2) * 0.3]} r={[0, rnd(i, 3) * 3, 0]} c="#e9f3f6" m={0.3} ro={0.05} o={0.6} />)}
+  </S3>;
+}}</Stage>;
 
-// 31 · el imán de la heladera: cae y deja pegada la tarjeta del técnico entre los dibujos
-export const HMagnet: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="drop">{(tt) => {
-  const d = phys(tt, 0.6, 7, 0.45);
-  return <>
-    <Head tt={tt} kick="ONE NUMBER" title="ON THE FRIDGE" col={GRN} />
-    <div style={{ position: "absolute", left: 560, top: 180, width: 800, height: 860, borderRadius: 30, background: "linear-gradient(90deg,#d9dcdf,#f3f5f6 50%,#c9ccd0)", boxShadow: shadow }}>
-      {[[60, 80, -8, "#ffd23a"], [480, 120, 6, "#8fd3ff"], [90, 520, 4, "#ff9fb2"], [520, 560, -5, "#b8f0a0"]].map(([x, y, r, c], i) => <div key={i} style={{ position: "absolute", left: x as number, top: y as number, width: 220, height: 180, background: c as string, transform: `rotate(${r}deg)`, borderRadius: 6, opacity: 0.85 }} />)}
-      <div style={{ position: "absolute", left: 250, top: 300 - (1 - d) * 500, width: 320, height: 190, background: "#fbfaf6", boxShadow: "0 12px 26px rgba(0,0,0,.35)", transform: `rotate(${(1 - d) * 20 - 2}deg)`, padding: 22, boxSizing: "border-box", color: "#2a2620" }}>
-        <div style={{ fontWeight: 900, fontSize: 30 }}>YOUR HVAC TECH</div><div style={{ fontFamily: "Courier New, monospace", fontSize: 30, marginTop: 20 }}>(937) ···-····</div>
-        <div style={{ position: "absolute", left: 130, top: -30, width: 60, height: 60, borderRadius: "50%", background: "radial-gradient(circle at 35% 35%,#ff6a5a,#b3261e)", boxShadow: "0 8px 14px rgba(0,0,0,.4)" }} /></div>
-    </div>
-  </>;
+// 30 · los quemadores: el piloto del encendedor se pone al rojo y los cinco quemadores se prenden en cadena, de izquierda a derecha, en azul
+export const HBurners: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), ig = win(u, 0.05, 0.2), on = (i: number) => win(u, 0.25 + i * 0.08, 0.3 + i * 0.08);
+  return <S3 p={lv([0.6, 0.55, 1.4], [0.2, 0.45, 0.95], win(u, 0, 1))} l={[0, 0.2, 0]} fov={38} floor="conc" env={0.15} exp={0.75}>
+    <Bx s={[1.3, 0.04, 0.4]} p={[0, 0.06, 0]} c="#6a6e74" m={0.6} ro={0.4} />
+    {Array.from({ length: 5 }, (_, i) => { const x = -0.48 + i * 0.24, k = on(i); return <group key={i}>
+      <Cy rt={0.035} h={0.36} p={[x, 0.12, 0]} r={[Math.PI / 2, 0, 0]} c="#9aa0a7" m={0.85} ro={0.3} />
+      {Array.from({ length: 6 }, (_, j) => <mesh key={j} position={[x, 0.16, -0.14 + j * 0.056]} scale={[1, k, 1]}><coneGeometry args={[0.018, 0.12, 12]} /><meshBasicMaterial color="#4a8aff" transparent opacity={0.8 * k} blending={2} depthWrite={false} /></mesh>)}
+      {k > 0 && <pointLight position={[x, 0.25, 0.1]} intensity={0.9 * k} distance={0.6} color="#5a9aff" />}
+    </group>; })}
+    <Bx s={[0.02, 0.06, 0.02]} p={[-0.62, 0.14, 0]} c={ig > 0.5 ? "#ff6a2a" : "#4a4e54"} e={ig > 0.5 ? "#ff4a1a" : undefined} ei={2 * ig} />
+    {ig > 0.5 && <pointLight position={[-0.62, 0.18, 0.1]} intensity={1.2} distance={0.5} color="#ff6a2a" />}
+  </S3>;
+}}</Stage>;
+
+// 31 · la tarjeta en la heladera: entre dibujos de chicos, la tarjeta de «MARCUS HVAC» llega volando y un imán la clava de un golpe
+const kid = (k: number) => canvasTex(`kid31${k}`, 300, 360, (g) => { g.fillStyle = "#ffffff"; g.fillRect(0, 0, 300, 360); g.lineWidth = 10; g.strokeStyle = ["#e8402f", "#3a7ad8", "#3a9a5a"][k]; g.beginPath(); if (k === 0) { g.arc(150, 120, 60, 0, Math.PI * 2); g.moveTo(150, 180); g.lineTo(150, 300); } else if (k === 1) { g.moveTo(40, 300); g.lineTo(150, 80); g.lineTo(260, 300); g.closePath(); } else { g.rect(60, 120, 180, 160); g.moveTo(40, 130); g.lineTo(150, 40); g.lineTo(260, 130); } g.stroke(); });
+const cardT = () => canvasTex("card31", 600, 340, (g) => { g.fillStyle = "#fbfaf4"; g.fillRect(0, 0, 600, 340); g.fillStyle = "#1b3a6a"; g.fillRect(0, 0, 600, 90); g.fillStyle = "#fff"; g.font = BOLD(60); g.fillText("MARCUS HVAC", 30, 66); g.fillStyle = "#2a2620"; g.font = BOLD(40); g.fillText("Honest tune-ups", 30, 170); g.font = MONO(40); g.fillText("Dayton, OH", 30, 260); });
+export const HMagnet: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
+  const u = U(tt, h), fly = win(u, 0.12, 0.38), mg = drop(u, 0.4, 0.5), hit = u > 0.48 && u < 0.56;
+  return <S3 p={lv([0.35, 1.25, 1.4], [0.1, 1.15, 0.85], win(u, 0, 1))} l={[0.05, 1.15, 0]} fov={38} floor={null}>
+    <Bx s={[1.1, 2.2, 0.6]} p={[0, 1.1, -0.32]} c="#e9ecef" m={0.35} ro={0.25} rad={0.03} />
+    <Bx s={[0.04, 0.5, 0.05]} p={[0.48, 1.25, 0.0]} c="#c9cfd5" m={0.85} ro={0.25} />
+    {[[-0.32, 1.45, 0.1], [0.22, 1.5, -0.08], [-0.28, 0.95, 0.06]].map(([x, y, r], k) => <group key={k} position={[x, y, -0.012]} rotation={[0, 0, r]}>
+      <Pl w={0.24} h={0.29} map={kid(k)} c="#ffffff" ro={0.85} /><Sp rad={0.022} p={[0, 0.13, 0.01]} sc={[1, 1, 0.5]} c={["#3a9a5a", "#e8c02f", "#e8402f"][k]} ro={0.3} />
+    </group>)}
+    <group position={[lerp(1.2, 0.12, fly), lerp(1.6, 1.08, fly), lerp(0.8, -0.008, fly)]} rotation={[0, (1 - fly) * 1.5, (1 - fly) * 2 - 0.05]}>
+      <Pl w={0.5} h={0.28} map={cardT()} c="#ffffff" ro={0.8} />
+    </group>
+    {u > 0.38 && <group position={[0.34, 1.2, lerp(0.5, 0.012, mg)]}><Cy rt={0.035} h={0.025} r={[Math.PI / 2, 0, 0]} c="#c62828" ro={0.35} m={0.2} /></group>}
+    {hit && Array.from({ length: 8 }, (_, i) => { const a = i / 8 * Math.PI * 2; return <Dot key={i} p={[0.34 + Math.cos(a) * 0.08, 1.2 + Math.sin(a) * 0.08, 0.02]} r={0.008} c="#fff2c8" add o={0.9} />; })}
+  </S3>;
 }}</Stage>;

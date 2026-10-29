@@ -418,14 +418,10 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
   const camY = 10 * Math.sin((t - at) * 0.11 + 1.2);
   const R = iris * 1500;
   const mask = `radial-gradient(circle at 50% 52%, #000 ${R}px, transparent ${R + 520}px)`;
-  const hdr = cl(phys(t, at + 0.35, 6, 0.7)) * (1 - eIn(t, out - 0.4, out + 0.4));
   return <AbsoluteFill style={{ opacity: cl(iris * 2.2), fontFamily: FONT, color: G.txt, WebkitMaskImage: mask, maskImage: mask } as React.CSSProperties}>
     <AbsoluteFill style={{ background: `radial-gradient(ellipse 70% 60% at 50% 46%, ${c}22, #0b0b0d 62%), #0b0b0d` }} />
     <div style={{ position: "absolute", left: 0, right: 0, top: 860, height: 220, background: "linear-gradient(180deg, rgba(255,255,255,.04), transparent)" }} />
-    <div style={{ position: "absolute", left: 110, top: 86, opacity: hdr, transform: `translateX(${(1 - hdr) * -40}px)` }}>
-      <Kicker txt={kicker} col={c} w={hdr} />
-      <div style={{ fontWeight: 800, fontSize: 58, marginTop: 6, opacity: cl(hdr * 1.5), clipPath: `inset(0 ${(1 - cl(hdr)) * 100}% 0 0)` }}>{title}</div>
-    </div>
+    {/* 29-oct: sin kicker/título arriba a la izquierda (regla del creador) */}
     {/* contador: el número nuevo cae desde arriba con resorte y empuja al anterior hacia abajo */}
     <div style={{ position: "absolute", right: 110, top: 96, fontWeight: 800, fontSize: 64, letterSpacing: -1, opacity: cl(phys(t, cards[0].at - 0.3, 6, 0.7)) * (1 - xo), display: "flex", alignItems: "baseline" }}>
       <div style={{ height: 78, overflow: "hidden", position: "relative", width: 52 }}>
