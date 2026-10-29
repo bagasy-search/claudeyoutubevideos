@@ -222,7 +222,7 @@ export const HouseWorld: React.FC<{ t: number }> = ({ t }) => {
   const show = Math.max(0.35, win(t, EV.smoke - 0.5, EV.smoke + 0.5) * (1 - win(t, EV.n1 - 1, EV.n1)), win(t, EV.stack - 1, EV.stack) * (1 - win(t, EV.n8 - 1, EV.n8)));
   const hl = win(t, EV.dirty, EV.dirty + 0.5) * (1 - win(t, EV.hatch, EV.hatch + 0.5));
   const fanAng = t * (t > EV.n8 ? 1.4 : 3.2);
-  const hpAng = t * 9;
+  const hpAng = t * 2.2; // 29-oct: a 9 rad/s las 4 aspas parpadeaban ~6 Hz (ojopush: 85 destellos)
   const k = camAt(t);
   void k;
 

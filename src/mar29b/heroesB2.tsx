@@ -148,7 +148,7 @@ export const HSnowdrift: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t=
 
 // 24 · el caño del drenaje: la baba sube por el tubo transparente, el flotante de la bomba sube con el agua y se prende la luz roja
 export const HSlimetube: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="r3">{(tt) => {
-  const u = U(tt, h), lvl = win(u, 0.1, 0.65), red = u > 0.66, bl = red && Math.sin(u * 60) > 0;
+  const u = U(tt, h), lvl = win(u, 0.1, 0.65), red = u > 0.66, bl = red && Math.sin(u * 22) > -0.3;
   return <S3 p={lv([0.6, 0.75, 1.6], [0.3, 0.6, 1.15], win(u, 0, 1))} l={[0, 0.45, 0]} fov={38} floor="conc">
     <Cy rt={0.06} h={0.9} p={[-0.25, 0.45, 0]} c="#e9f3f6" ro={0.03} o={0.28} open seg={32} />
     <Cy rt={0.055} h={0.85 * lvl + 0.001} p={[-0.25, 0.02 + 0.425 * lvl, 0]} c="#6a7a3a" ro={0.4} o={0.92} />
@@ -158,7 +158,7 @@ export const HSlimetube: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t=
     <Bx s={[0.06, 0.04, 0.04]} p={[0.08, 0.04 + 0.42 * lvl, 0.2]} c="#e8402f" ro={0.4} />
     <Bx s={[0.14, 0.08, 0.02]} p={[0.25, 0.32, 0.18]} c="#1b1b1b" ro={0.3} />
     <Sp rad={0.022} p={[0.25, 0.32, 0.2]} c={bl ? "#ff3b2f" : "#3a1a14"} e={bl ? "#ff2a1a" : undefined} ei={3} ns />
-    {bl && <pointLight position={[0.25, 0.35, 0.5]} intensity={2.5} distance={1.4} color="#ff3020" />}
+    <pointLight position={[0.25, 0.35, 0.5]} intensity={red ? 1.2 + 1.3 * (0.5 + 0.5 * Math.sin(u * 22)) : 0} distance={1.4} color="#ff3020" />
     <Tube pts={[[-0.25, 0.9, 0], [-0.1, 1.0, 0], [0.25, 0.95, 0], [0.25, 0.42, 0]]} rad={0.012} c="#f4f3ee" ro={0.4} />
     {red && <group position={[0.25, 0.6, 0.25]}><Txt t="CLOGGED" w={0.36} c="#ff8a7a" /></group>}
   </S3>;
