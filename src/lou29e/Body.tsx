@@ -21,6 +21,14 @@ type Ov = { k: string; at: number; out: number; [x: string]: any };
 type Item = { n: number; name: string; price: string; at: number; end: number };
 const PL = PLAN as unknown as { segs: Seg[]; ov: Ov[]; items: Item[]; end: number; lower: [number, number]; cta: { sub: number; ask: number; end: number; coffee: number } };
 export const END = PL.end;
+// cortes sin hueco: un hueco < 0,2 s entre el avatar y la toma vecina dejaba ver 1-2 cuadros del diner 3D (29-oct)
+for (const g of PL.segs) {
+  if (g[2] !== "veo" && g[2] !== "shot") continue;
+  const prevEnd = Math.max(-1, ...WIN.map((w) => w.me).filter((x) => x <= g[0] + 1e-6), ...PL.segs.filter((h) => h !== g && h[2] !== "world" && h[1] <= g[0] + 1e-6).map((h) => h[1]));
+  if (g[0] - prevEnd > 0 && g[0] - prevEnd < 0.2) g[0] = prevEnd;
+  const nextAv = Math.min(1e9, ...WIN.map((w) => w.ms).filter((x) => x >= g[1] - 1e-6));
+  if (nextAv - g[1] > 0 && nextAv - g[1] < 0.2) g[1] = nextAv;
+}
 
 // ===== la BASE: Veo (8 s con su movimiento), foto con zoom lento, o el diner 3D =====
 const base = (t: number): React.ReactNode => {
