@@ -412,8 +412,8 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
   let act = 0; for (let i = 1; i < N; i++) act += phys(t, cards[i].at - 0.25, 6.2, 0.5);
   // empujón de cámara en cada llegada: sube y baja en curva (seno amortiguado), nunca lineal
   let push = 0; for (let i = 0; i < N; i++) { const x = t - (cards[i].at - 0.25); if (x > 0) push += Math.sin(Math.min(x, 1.6) / 1.6 * Math.PI) * Math.exp(-x * 0.6); }
-  const camZ = -520 * (1 - inn) + 40 * push + 26 * Math.sin((t - at) * 0.21) - 900 * xo;
-  const camRY = 16 * (1 - inn) + 4.2 * Math.sin((t - at) * 0.17 + 0.6) - 10 * xo;
+  const camZ = -520 * (1 - inn) + 40 * push + 60 * Math.sin((t - at) * 0.34) - 900 * xo;
+  const camRY = 16 * (1 - inn) + 7.5 * Math.sin((t - at) * 0.27 + 0.6) - 10 * xo;
   const camRX = 6 + 1.6 * Math.sin((t - at) * 0.13) + 8 * xo;
   const camY = 10 * Math.sin((t - at) * 0.11 + 1.2);
   const R = iris * 1500;
@@ -455,7 +455,7 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
             WebkitBoxReflect: "below 14px linear-gradient(transparent 74%, rgba(255,255,255,.2))" } as React.CSSProperties}>
             <div style={{ position: "relative", width: "100%", height: "100%", borderRadius: 24, overflow: "hidden", background: "#16171a",
               boxShadow: `0 ${40 + Math.abs(land) * 60}px ${90 + Math.abs(land) * 80}px rgba(0,0,0,${0.6 - Math.min(0.3, Math.abs(land) * 0.3)}), 0 0 0 ${2 + 2 * front}px ${front > 0.5 ? c : "rgba(255,255,255,.12)"}` }}>
-              {cd.img && <Img src={staticFile("img/" + P + cd.img + ".jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.08 + 0.06 * front * ei(t, cd.at, cd.at + 6)})` }} />}
+              {cd.img && <Img src={staticFile("img/" + P + cd.img + ".jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: `translate(${-14 * Math.sin((t - cd.at) * 0.45)}px, ${-10 * Math.sin((t - cd.at) * 0.31 + 0.8)}px) scale(${1.1 + 0.16 * front * ei(t, cd.at, cd.at + 9)})` }} />}
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(0,0,0,.35) 0%, transparent 28%, transparent 46%, rgba(0,0,0,.92) 100%)" }} />
               <div style={{ position: "absolute", inset: 0, background: "#000", opacity: Math.min(1, ad) * 0.5 }} />
               <div style={{ position: "absolute", left: 26, top: 22, fontWeight: 800, fontSize: 104, lineHeight: 1, color: c, textShadow: "0 6px 24px rgba(0,0,0,.6)" }}>{cd.n}</div>

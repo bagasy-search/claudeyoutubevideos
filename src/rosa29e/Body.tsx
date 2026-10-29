@@ -2,9 +2,9 @@
 // (plan.json, cada uno anclado a su frase por plan_rosa.py), un componente único por minuto (heroes.json) y la guía en 3D.
 // Audio fuera de Remotion (encfin).
 import React from "react";
-import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Img, staticFile, useCurrentFrame } from "remotion";
 import PLAN from "./plan.json";
-import { LowerThird, Vid, e } from "./lib";
+import { LowerThird, P, Vid, e } from "./lib";
 import CARDS from "./cards.json";
 import { AskCard, BigNum, CoverFlow, Headline, StepTitle } from "./premium";
 import { Avatar, OK, Shot, WIN, World } from "./parts";
@@ -79,6 +79,15 @@ const Piece: React.FC<{ t: number; o: Ov }> = ({ t, o }) => {
   return null;
 };
 
+// cuadro 0 = la miniatura elegida SIN texto (rehecha en ChatGPT), idéntica en el cuadro 0; empuja apenas y se funde al primer plano de Rosa
+const Cuadro0: React.FC<{ t: number }> = ({ t }) => {
+  if (t > 1.9) return null;
+  const k = e(t, 1.0, 1.8);
+  return <AbsoluteFill style={{ opacity: 1 - k, transform: `scale(${1 + 0.03 * e(t, 0, 1.8) + 0.06 * k})` }}>
+    <Img src={staticFile(P + "cuadro0.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+  </AbsoluteFill>;
+};
+
 export const Body: React.FC = () => {
   const t = useCurrentFrame() / 30;
   const fade = e(t, END - 1.4, END - 0.1);
@@ -90,6 +99,7 @@ export const Body: React.FC = () => {
     {PL.ov.map((o, i) => <Piece key={i} t={t} o={o} />)}
     <Heroes t={t} />
     {[PL.cta1, PL.cta2, PL.cta3].map((c, i) => <GuideCTA key={i} t={t} c={c} side={avOn(c.desc, c.end)} bg={imgAt((c.guide ?? c.desc) - 0.5)} />)}
+    <Cuadro0 t={t} />
     <AbsoluteFill style={{ background: "#000", opacity: fade }} />
   </AbsoluteFill>;
 };
