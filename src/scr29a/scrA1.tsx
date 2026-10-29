@@ -56,12 +56,12 @@ export const HPadlock: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t
         </div>
       </div>
     </div>
-    <Tag tt={tt} at={0.8} x={300} y={300} txt="FUNCTION 4" col={AMB} size={54} />
     <Tag tt={tt} at={5.5} x={1620} y={780} txt="LATER…" col={DIM} size={44} />
   </>;
 }}</Stage>;
 
 // ---- 0:53 · LA FILA DE ESTUFAS: seis siluetas distintas en fila, un reflector las barre y todas se apagan menos una, que da un paso adelante ----
+const SILN = ["DRUM", "ROCKET", "BOX", "TANK", "CAN", "BARREL"];
 const SIL: string[] = [
   "M -60 120 L -60 -70 Q 0 -110 60 -70 L 60 120 Z",                 // tambor
   "M -40 120 L -40 -20 L 40 -20 L 40 120 Z M -15 -20 L -15 -120 L 15 -120 L 15 -20 Z",   // cohete
@@ -81,6 +81,7 @@ export const HLineup: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t}
       return <div key={i} style={{ position: "absolute", left: X(i), top: 640, transform: `translate(-50%,-50%) translateY(${(1 - ent) * 300 + (chosen ? -30 * cl(pick) : 0)}px) scale(${chosen ? 1 + 0.45 * cl(pick) : 1})`, opacity: cl(ent * 2) * (1 - dim) }}>
         {chosen && pick > 0.05 ? <div style={{ opacity: cl(pick * 2) }}><Photo id={h.img} w={250} h={330} r={14} /></div> :
           <svg width={200} height={300} viewBox="-100 -150 200 300"><path d={d} fill={`rgb(${108 + 70 * near},${104 + 60 * near},${100 + 45 * near})`} stroke="rgba(255,235,200,.45)" strokeWidth={4} /></svg>}
+        {!(chosen && pick > 0.05) && <div style={{ position: "absolute", left: "50%", top: 330, transform: "translateX(-50%)", fontWeight: 900, fontSize: 40, letterSpacing: 3, color: `rgba(243,233,214,${0.45 + 0.55 * near})` }}>{SILN[i]}</div>}
       </div>; })}
     <Tag tt={tt} at={0.3} x={960} y={170} txt="“WHICH ONE?”" col={DIM} size={56} />
     <Tag tt={tt} at={it(h, 0) + 0.1} x={X(3)} y={900} txt="THIS ONE" col={AMB} size={50} />
@@ -155,7 +156,7 @@ export const HWrench: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t}
     </div>
     {/* chasquido de cada golpe */}
     {steps > 0 && steps < 5 && fr < 0.6 && <div style={{ position: "absolute", left: 1180, top: 560, width: 80, height: 80, borderRadius: "50%", border: `5px solid ${AMB}`, opacity: 0.6 * (1 - fr), transform: `scale(${1 + fr})` }} />}
-    <Tag tt={tt} at={0.4} x={480} y={250} txt="VALVE OFF" col={AMB} size={56} />
+    <Tag tt={tt} at={0.4} x={960} y={1010} txt="VALVE OFF" col={AMB} size={56} />
     {/* el agujero que queda abierto donde estaba la válvula */}
     <div style={{ position: "absolute", left: 960 - 70, top: 795 - 26, width: 140, height: 52, borderRadius: "50%", background: "radial-gradient(ellipse,#050505 55%,#3a3d41 75%)", opacity: cl((tt - 4.5) * 3), transform: `scale(${0.3 + 0.7 * cl(phys(tt, 4.5, 5, 0.4))})` }} />
     <Tag tt={tt} at={4.9} x={960} y={930} txt="OPEN BOTH ENDS" col={AMB} size={52} />
@@ -288,14 +289,14 @@ export const HMoney: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} 
   const pipe = eio(tt, 0.1, 0.9);
   return <>
     <div style={{ position: "absolute", left: 960 - 75, top: 300 + (1 - pipe) * 780, width: 150, height: 780, background: "linear-gradient(90deg,#1a1a1b,#4a4b4f 35%,#222 70%,#111)", boxShadow: "0 0 60px rgba(0,0,0,.6)" }} />
-    {Array.from({ length: 14 }, (_, i) => { const ph = ((tt - 0.8) * 0.42 + i / 14) % 1; if (tt < 0.8 + 0) return null;
+    {Array.from({ length: 14 }, (_, i) => { const ph = ((tt - 0.2) * 0.42 + i / 14) % 1; if (tt < 0.2) return null;
       const y = 1080 - ph * 900, inPipe = y > 300, smoke = cl((300 - y) / 160);
       return <div key={i} style={{ position: "absolute", left: 960 + Math.sin(i * 2.1 + tt * 1.5) * (inPipe ? 25 : 60 + 200 * smoke), top: y, transform: `translate(-50%,-50%) rotate(${Math.sin(tt * 2 + i) * 25}deg) scale(${1 + smoke * 1.6})`, opacity: inPipe ? 0.85 : 1 - smoke * 0.5 }}>
         {smoke < 0.5 ? <div style={{ width: 120, height: 56, borderRadius: 6, background: "linear-gradient(135deg,#9fc48a,#5d8a4a)", border: "3px solid #3c5a30", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 34, color: "#24391b" }}>$</div>
           : <div style={{ width: 130, height: 130, borderRadius: "50%", background: "radial-gradient(circle, rgba(20,20,20,.9), rgba(20,20,20,0) 70%)" }} />}
       </div>; })}
-    <Tag tt={tt} at={0.8} x={480} y={540} txt="FUEL YOU PAID FOR" col={AMB} size={52} />
-    <Tag tt={tt} at={3.0} x={1460} y={260} txt="BLACK SMOKE" col={DIM} size={44} />
+    <Tag tt={tt} at={0.8} x={420} y={640} txt="FUEL YOU PAID FOR" col={AMB} size={52} />
+    <Tag tt={tt} at={3.0} x={1560} y={200} txt="BLACK SMOKE" col={DIM} size={44} />
   </>;
 }}</Stage>;
 

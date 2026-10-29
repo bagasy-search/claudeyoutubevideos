@@ -77,7 +77,7 @@ export const Head: React.FC<{ tt: number; kick: string; title: string; col?: str
 export const Tag: React.FC<{ tt: number; at: number; x: number; y: number; txt: string; col?: string; size?: number; anchor?: "c" | "l" }> = ({ tt, at, x, y, txt, col = TX, size = 34, anchor = "c" }) => {
   const s = phys(tt, at, 7, 0.45);
   if (s <= 0.01) return null;
-  size = Math.max(54, Math.round(size * 1.18)); // rótulos legibles en el celular (evaluador 29-oct: «microscópicos»)
+  size = Math.max(64, Math.round(size * 1.25)); // rótulos legibles en el celular (evaluador 29-oct: «microscópicos»)
   return <div style={{ position: "absolute", left: x, top: y, transform: `translate(${anchor === "c" ? "-50%" : "0"}, -50%) translateY(${(1 - s) * -40}px) scale(${0.8 + 0.2 * s})`, opacity: cl(s * 2), fontWeight: 900, fontSize: size, letterSpacing: 2, color: col, whiteSpace: "nowrap", textShadow: "0 6px 24px rgba(0,0,0,.6)" }}>{txt}</div>;
 };
 
