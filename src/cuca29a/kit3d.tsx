@@ -29,16 +29,27 @@ export const Foto3D: React.FC<{ src: string; p?: V3; rot?: V3; w?: number; h?: n
     {children}
   </group>;
 };
-// mano estilizada (arcilla tono piel), dedos hacia -z; pinza 0 = abierta, 1 = cerrada
-const piel = "#c98e6a";
+// mano (r5): palma con nudillos, dedos de dos falanges con uña, pulgar opuesto y manga bordada; dedos hacia -z; pinza 0 abierta → 1 cerrada
+const piel = "#b8785a";
+const Piel = () => <meshPhysicalMaterial color={piel} roughness={0.55} sheen={0.6} sheenColor="#ffcfb0" clearcoat={0.15} />;
+const Dedo: React.FC<{ L: number; r: number; k: number }> = ({ L, r, k }) => (
+  <group rotation={[-k * 0.9, 0, 0]}>
+    <mesh position={[0, 0, -L * 0.5]} rotation={[P2, 0, 0]} castShadow><capsuleGeometry args={[r, L, 6, 12]} /><Piel /></mesh>
+    <group position={[0, 0, -L]} rotation={[-k * 1.0, 0, 0]}>
+      <mesh position={[0, 0, -L * 0.4]} rotation={[P2, 0, 0]} castShadow><capsuleGeometry args={[r * 0.9, L * 0.75, 6, 12]} /><Piel /></mesh>
+      <mesh position={[0, r * 0.75, -L * 0.62]} rotation={[-P2 + 0.25, 0, 0]} scale={[1, 1.3, 1]}><circleGeometry args={[r * 0.72, 16]} /><meshPhysicalMaterial color="#e6b7a2" roughness={0.25} clearcoat={1} /></mesh>
+    </group>
+  </group>);
 export const Mano: React.FC<{ p: V3; rot?: V3; pinza?: number; dedos?: number; s?: number }> = ({ p, rot, pinza = 0, dedos = 4, s = 1 }) => (
   <group position={p} rotation={rot} scale={s}>
-    <mesh geometry={rbox(0.36, 0.1, 0.4, 0.05)} castShadow><meshStandardMaterial color={piel} roughness={0.6} /></mesh>
-    <mesh position={[0, 0, 0.42]} rotation={[P2, 0, 0]} castShadow><capsuleGeometry args={[0.1, 0.4, 6, 12]} /><meshStandardMaterial color="#e9e2d6" roughness={0.8} /></mesh>
-    {Array.from({ length: dedos }, (_, i) => <group key={i} position={[-0.135 + i * (0.27 / Math.max(1, dedos - 1)), 0, -0.2]} rotation={[-pinza * 1.1, 0, 0]}>
-      <mesh position={[0, 0, -0.12]} rotation={[P2, 0, 0]} castShadow><capsuleGeometry args={[0.038, 0.18 - Math.abs(i - 1.5) * 0.02, 6, 10]} /><meshStandardMaterial color={piel} roughness={0.6} /></mesh></group>)}
-    <group position={[0.2, 0, 0.02]} rotation={[0, -0.6 + pinza * 0.9, -pinza * 0.5]}>
-      <mesh position={[0.1, 0, -0.08]} rotation={[P2, 0.5, 0]} castShadow><capsuleGeometry args={[0.042, 0.16, 6, 10]} /><meshStandardMaterial color={piel} roughness={0.6} /></mesh></group>
+    <mesh geometry={rbox(0.34, 0.1, 0.36, 0.05)} castShadow><Piel /></mesh>
+    {Array.from({ length: dedos }, (_, i) => { const x = -0.12 + i * (0.24 / Math.max(1, dedos - 1)), L = 0.1 - Math.abs(i - (dedos - 1) / 2) * 0.012;
+      return <group key={i} position={[x, 0.005, -0.18]}>
+        <mesh position={[0, 0.03, 0]} castShadow><sphereGeometry args={[0.04, 12, 10]} /><Piel /></mesh>
+        <Dedo L={L} r={0.034} k={pinza} /></group>; })}
+    <group position={[0.17, -0.01, -0.02]} rotation={[0, -0.7 + pinza * 0.8, -0.4 - pinza * 0.4]}><Dedo L={0.08} r={0.038} k={pinza * 0.4} /></group>
+    <mesh position={[0, 0, 0.36]} rotation={[P2, 0, 0]} castShadow><cylinderGeometry args={[0.15, 0.17, 0.4, 20]} /><meshStandardMaterial color="#f1ead8" roughness={0.85} /></mesh>
+    <mesh position={[0, 0, 0.17]} rotation={[P2, 0, 0]}><torusGeometry args={[0.152, 0.018, 8, 24]} /><meshStandardMaterial color="#b8281c" roughness={0.7} /></mesh>
   </group>
 );
 // olla (barro / peltre / vidrio) con caldo, frijoles y hervor
@@ -84,9 +95,17 @@ export const Cuchara: React.FC<{ p: V3; rot?: V3; s?: number; mat?: "madera" | "
 // onda en un líquido (anillo que se abre)
 export const Onda: React.FC<{ p: V3; t: number; a: number; r?: number }> = ({ p, t, a, r = 0.6 }) => { const k = cl((t - a) / 1.2);
   return <mesh position={p} rotation={[-P2, 0, 0]} scale={0.05 + k * r} visible={k > 0 && k < 1}><ringGeometry args={[0.9, 1, 40]} /><meshBasicMaterial color="#fff4e0" transparent opacity={0.5 * (1 - k)} depthWrite={false} /></mesh>; };
-// chorro de líquido entre dos puntos (cilindro orientado)
-export const Chorro: React.FC<{ a: V3; b: V3; r?: number; c?: string; o?: number }> = ({ a, b, r = 0.035, c = "#c98a3a", o = 0.9 }) => {
-  const A = new THREE.Vector3(...a), B = new THREE.Vector3(...b), L = A.distanceTo(B), mid = A.clone().add(B).multiplyScalar(0.5);
-  const q = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), B.clone().sub(A).normalize());
-  return <mesh position={mid} quaternion={q}><cylinderGeometry args={[r, r * 0.8, Math.max(0.001, L), 12]} />{M.liquido(c, o)}</mesh>;
+// chorro (r5): cinta de líquido que ondula, se ensancha al pegar y abre una corona de gotas; t anima la ondulación
+export const Chorro: React.FC<{ a: V3; b: V3; r?: number; c?: string; o?: number; t?: number; splash?: boolean }> = ({ a, b, r = 0.035, c = "#c98a3a", o = 0.9, t = 0, splash = true }) => {
+  const N = 7, A = new THREE.Vector3(...a), B = new THREE.Vector3(...b), up = new THREE.Vector3(0, 1, 0);
+  const pt = (u: number) => { const q = A.clone().lerp(B, u); q.y -= 0.12 * Math.sin(u * Math.PI) * (A.distanceTo(B) > 0.8 ? 1 : 0.3); q.x += 0.02 * Math.sin(t * 13 + u * 11) * u; q.z += 0.015 * Math.cos(t * 11 + u * 9) * u; return q; };
+  const segs = Array.from({ length: N }, (_, i) => { const P0 = pt(i / N), P1 = pt((i + 1) / N), L = P0.distanceTo(P1), mid = P0.clone().add(P1).multiplyScalar(0.5);
+    const q = new THREE.Quaternion().setFromUnitVectors(up, P1.clone().sub(P0).normalize()); const u = (i + 0.5) / N, rr = r * (1.15 - 0.4 * u + 0.08 * Math.sin(t * 17 + i));
+    return <mesh key={i} position={mid} quaternion={q}><cylinderGeometry args={[rr, rr * 0.92, L * 1.08, 14]} /><meshPhysicalMaterial color={c} roughness={0.05} transparent opacity={o} clearcoat={1} envMapIntensity={1.5} depthWrite={false} /></mesh>; });
+  return <>{segs}
+    {splash && <group position={[b[0], b[1] + 0.01, b[2]]}>
+      <mesh rotation={[-P2, 0, 0]}><circleGeometry args={[r * 2.6, 24]} /><meshStandardMaterial color="#ffffff" transparent opacity={0.35 * o} depthWrite={false} /></mesh>
+      {Array.from({ length: 9 }, (_, i) => { const k = (t * 2.4 + rn(i, 3)) % 1, an = (i / 9) * 6.28; return <mesh key={i} position={[Math.cos(an) * r * (1.5 + 3 * k), 0.12 * Math.sin(k * Math.PI), Math.sin(an) * r * (1.5 + 3 * k)]} scale={r * 0.45 * (1 - k)}><sphereGeometry args={[1, 8, 6]} /><meshPhysicalMaterial color={c} roughness={0.05} transparent opacity={o} clearcoat={1} /></mesh>; })}
+    </group>}
+  </>;
 };

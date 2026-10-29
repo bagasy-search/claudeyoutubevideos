@@ -51,10 +51,9 @@ export const Stage: React.FC<{ t: number; h: H; mode: Mode; tone?: string; cam?:
     {/* mesa de madera en perspectiva: los objetos se apoyan en algo (sombra de contacto con motivo) */}
     {mesa && <div style={{ position: "absolute", left: -300, right: -300, bottom: -120, height: 520, transformOrigin: "50% 100%", transform: `perspective(1400px) rotateX(64deg) translateX(${-30 * tt / D}px)`, background: "repeating-linear-gradient(90deg, #5a3820 0 6px, #6a4428 6px 30px, #4e301a 30px 34px, #72492a 34px 90px)", WebkitMaskImage: "linear-gradient(0deg, #000 55%, transparent)", maskImage: "linear-gradient(0deg, #000 55%, transparent)", opacity: 0.75 } as React.CSSProperties} />}
     <AbsoluteFill style={{ background: "radial-gradient(ellipse 38% 30% at 34% 18%, rgba(255,214,160,.14), transparent 70%)", mixBlendMode: "screen" }} />
-    <AbsoluteFill style={{ perspective: 2200, opacity: cl(inn * 1.6) * (1 - xo * 0.7) }}>
-      <AbsoluteFill style={{ perspective: 2200, transform: `translateZ(${(-300 * (1 - inn) - 650 * xo + 18 * Math.sin(tt * 0.35)) * cam}px) rotateY(${(7 * (1 - inn) + 1.8 * Math.sin(tt * 0.22 + 0.5) - 6 * xo) * cam}deg) rotateX(${(1.2 * Math.sin(tt * 0.18) + 6 * xo) * cam}deg) translate(${(14 * Math.sin(tt * 0.5)) * cam}px, ${(8 * Math.sin(tt * 0.37 + 1)) * cam}px) scale(${1 + 0.055 * eio(tt, 0.4, D) * cam})` }}>
-        {children(tt)}
-      </AbsoluteFill>
+    {/* 29-oct r5: sin giro/traslación CSS (dejaba ver el borde del lienzo 3D con franja negra): sólo fundido y un respiro de escala */}
+    <AbsoluteFill style={{ opacity: cl(inn * 1.6) * (1 - xo * 0.7), transform: `scale(${(1.03 - 0.03 * cl(inn)) * (1 + 0.04 * xo)})` }}>
+      {children(tt)}
     </AbsoluteFill>
     <AbsoluteFill style={{ pointerEvents: "none" }}>{Array.from({ length: 14 }, (_, i) => {
       const s = 6 + (i * 37) % 22, x = ((i * 271 + tt * (8 + i % 5) * 4) % 2100) - 90, y = 80 + (i * 163) % 920 + 30 * Math.sin(tt * 0.4 + i);
@@ -68,12 +67,7 @@ export const Stage: React.FC<{ t: number; h: H; mode: Mode; tone?: string; cam?:
 // cada componente; si hace falta una palabra, va DENTRO de la escena (etiqueta, papel, pared) y entra en su palabra.
 export const Head: React.FC<{ tt: number; kick: string; title: string; col?: string; d?: number }> = () => null;
 // rótulo que cae con peso
-export const Tag: React.FC<{ tt: number; at: number; x: number; y: number; txt: string; col?: string; size?: number; hand?: boolean }> = ({ tt, at, x, y, txt, col = TX, size = 36, hand }) => {
-  const s = phys(tt, at, 7, 0.45);
-  if (s <= 0.01) return null;
-  const w = txt.length * (hand ? size * 0.75 : size * 0.68 + 2), xc = Math.max(w / 2 + 70, Math.min(1850 - w / 2, x));
-  return <div style={{ position: "absolute", left: xc, top: y, transform: `translate(-50%,-50%) translateY(${(1 - s) * -40}px) scale(${0.8 + 0.2 * s})`, opacity: cl(s * 2), fontWeight: 900, fontFamily: hand ? HAND : FONT, fontSize: hand ? size * 1.35 : size, letterSpacing: hand ? 0 : 2, color: col, whiteSpace: "nowrap", textShadow: "0 6px 24px rgba(0,0,0,.65)" }}>{txt}</div>;
-};
+export const Tag: React.FC<{ tt: number; at: number; x: number; y: number; txt: string; col?: string; size?: number; hand?: boolean }> = () => null; // r5: nada de rótulos flotando
 // foto con marco
 export const Photo: React.FC<{ id?: string; w: number; h: number; r?: number; z?: number; style?: React.CSSProperties; dim?: number }> = ({ id, w, h, r = 18, z = 1.08, style, dim = 0 }) => (
   <div style={{ width: w, height: h, borderRadius: r, overflow: "hidden", background: "#1a120d", boxShadow: "0 40px 90px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.1)", position: "relative", ...style }}>

@@ -28,11 +28,17 @@ export const papel = (key: string, lines: string[], o: { w?: number; h?: number;
     if (o.rule) { g.strokeStyle = "rgba(80,110,160,.25)"; g.lineWidth = 2; for (let y = 60; y < H; y += 48) { g.beginPath(); g.moveTo(0, y); g.lineTo(W, y); g.stroke(); } }
     const sz = o.size ?? 96; g.fillStyle = o.ink ?? "#2a1c12"; g.textAlign = "center"; g.textBaseline = "middle";
     g.font = o.font ?? `700 ${sz}px Caveat, "Segoe Script", cursive`;
-    lines.forEach((l, i) => g.fillText(l, W / 2, H / 2 + (i - (lines.length - 1) / 2) * sz * 1.05));
+    let fs = sz; const fnt = (n: number) => (o.font ?? `700 ${sz}px Caveat, "Segoe Script", cursive`).replace(String(sz) + "px", n + "px");
+    g.font = fnt(fs); while (fs > 20 && Math.max(...lines.map((l) => g.measureText(l).width)) > W * 0.9) { fs -= 4; g.font = fnt(fs); }
+    lines.forEach((l, i) => g.fillText(l, W / 2, H / 2 + (i - (lines.length - 1) / 2) * fs * 1.05));
   });
 const yuteTex = () => ctex("yute", 256, 256, (g) => {
   g.fillStyle = "#a88a58"; g.fillRect(0, 0, 256, 256);
   for (let y = 0; y < 256; y += 6) for (let x = 0; x < 256; x += 6) { const v = rn(x * 7 + y, 1); g.fillStyle = `rgba(${90 + v * 60},${66 + v * 40},${30 + v * 20},.55)`; g.fillRect(x + ((y / 6) % 2) * 3, y, 4, 3); }
+});
+const adobeTex = () => ctex("adobe", 512, 512, (g) => {
+  const gr = g.createRadialGradient(256, 200, 40, 256, 256, 420); gr.addColorStop(0, "#e8c79e"); gr.addColorStop(1, "#a9825c"); g.fillStyle = gr; g.fillRect(0, 0, 512, 512);
+  for (let i = 0; i < 1800; i++) { const v = rn(i, 9); g.fillStyle = `rgba(${110 + v * 70},${80 + v * 50},${50 + v * 30},${0.06 + 0.06 * rn(i, 4)})`; g.fillRect(rn(i, 2) * 512, rn(i, 3) * 512, 2 + 5 * rn(i, 5), 2 + 4 * rn(i, 6)); }
 });
 const humoTex = () => ctex("humo", 64, 64, (g) => {
   const gr = g.createRadialGradient(32, 32, 0, 32, 32, 30); gr.addColorStop(0, "rgba(255,255,255,1)"); gr.addColorStop(0.5, "rgba(255,255,255,.45)"); gr.addColorStop(1, "rgba(255,255,255,0)");
@@ -64,6 +70,7 @@ const Env: React.FC = () => {
 // ---------- el estudio ----------
 export const Estudio: React.FC<{ t: number; cam?: V3; look?: V3; orbit?: number; fov?: number; mesa?: boolean; children: React.ReactNode }> = ({ t, cam = [0, 2.1, 4.6], look = [0, 0.7, 0], orbit = 0.22, fov = 34, mesa = true, children }) => {
   const tx = useTextures();
+  const tabla = useMemo(() => { const c = tx.planks.clone(); c.wrapS = c.wrapT = THREE.RepeatWrapping; c.repeat.set(4.4, 5.8); c.needsUpdate = true; return c; }, [tx.planks]);
   return <ThreeCanvas width={1920} height={1080} shadows gl={{ antialias: true, alpha: true, preserveDrawingBuffer: true }} style={{ position: "absolute", inset: 0 }}>
     <Env />
     <Cam t={t} p={cam} l={look} orbit={orbit} fov={fov} />
@@ -74,10 +81,12 @@ export const Estudio: React.FC<{ t: number; cam?: V3; look?: V3; orbit?: number;
     {/* recorte: separa los objetos del fondo */}
     <pointLight position={[2.6, 2.4, -2.4]} intensity={9} distance={9} color="#ffb070" />
     <pointLight position={[0.5, 1.2, 3.5]} intensity={1.6} distance={8} color="#fff1dc" />
-    {mesa && <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, -0.6]} receiveShadow>
-      <planeGeometry args={[9, 5.2]} /><meshStandardMaterial map={tx.planks} color="#a07a56" roughness={0.78} metalness={0} />
+    {/* r5: mesa enorme + pared de adobe detrás = rincón de cocina cerrado (nunca se ve el borde ni lo de atrás) */}
+    {mesa && <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.006, 0]} receiveShadow>
+      <planeGeometry args={[40, 30]} /><meshStandardMaterial map={tabla} color="#a07a56" roughness={0.78} metalness={0} />
     </mesh>}
-    {mesa && <mesh position={[0, -0.06, 1.99]} receiveShadow><boxGeometry args={[9, 0.12, 0.02]} /><meshStandardMaterial color="#4a2e1a" roughness={0.9} /></mesh>}
+    {mesa && <mesh position={[0, 6, -4.2]} receiveShadow><planeGeometry args={[60, 14]} /><meshStandardMaterial map={adobeTex()} color="#d9b48a" roughness={0.95} /></mesh>}
+    {mesa && <pointLight position={[0, 3.2, -2.2]} intensity={6} distance={7} color="#ffc890" />}
     {children}
   </ThreeCanvas>;
 };
