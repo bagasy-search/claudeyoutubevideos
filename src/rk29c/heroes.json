@@ -1,0 +1,227 @@
+[
+{
+"k": "slabcore",
+"at": 102.7,
+"out": 112.7
+},
+{
+"k": "doordown",
+"at": 138.82,
+"out": 145.02
+},
+{
+"k": "eyescan",
+"at": 146.08,
+"out": 156.08
+},
+{
+"k": "dozencycles",
+"at": 171.3,
+"out": 181.3
+},
+{
+"k": "picframe",
+"at": 252.52,
+"out": 262.52
+},
+{
+"k": "sightcone",
+"at": 290.48,
+"out": 299.88
+},
+{
+"k": "frostfilm",
+"at": 300.94,
+"out": 309.94
+},
+{
+"k": "twomen",
+"at": 318.72,
+"out": 328.72
+},
+{
+"k": "tipslide",
+"at": 354.06,
+"out": 365.06
+},
+{
+"k": "handles",
+"at": 371.72,
+"out": 379.72
+},
+{
+"k": "policycap",
+"at": 406.46,
+"out": 417.46
+},
+{
+"k": "tablephoto",
+"at": 446.5,
+"out": 456.5
+},
+{
+"k": "lowcorner",
+"at": 496.76,
+"out": 506.76
+},
+{
+"k": "sponge",
+"at": 515.46,
+"out": 525.46
+},
+{
+"k": "wetrings",
+"at": 531.9,
+"out": 541.9
+},
+{
+"k": "workshop",
+"at": 630.64,
+"out": 641.64
+},
+{
+"k": "toolkeys",
+"at": 693.94,
+"out": 702.94
+},
+{
+"k": "chainloop",
+"at": 717.46,
+"out": 728.46
+},
+{
+"k": "fourhouses",
+"at": 743.98,
+"out": 754.98
+},
+{
+"k": "truckwalk",
+"at": 762.76,
+"out": 772.76
+},
+{
+"k": "cornertop",
+"at": 781.92,
+"out": 790.92
+},
+{
+"k": "attackroom",
+"at": 792.9,
+"out": 803.9
+},
+{
+"k": "gouges",
+"at": 849.14,
+"out": 859.14
+},
+{
+"k": "cabwrap",
+"at": 871.24,
+"out": 881.24
+},
+{
+"k": "xraybolts",
+"at": 902.22,
+"out": 911.22
+},
+{
+"k": "straighthole",
+"at": 962.56,
+"out": 971.56
+},
+{
+"k": "dustgrip",
+"at": 973.2,
+"out": 983.2
+},
+{
+"k": "pulltest",
+"at": 991.36,
+"out": 1000.36
+},
+{
+"k": "sleeves",
+"at": 1020.7,
+"out": 1030.7
+},
+{
+"k": "edgespall",
+"at": 1039.22,
+"out": 1048.22
+},
+{
+"k": "tendons",
+"at": 1056.2,
+"out": 1067.2
+},
+{
+"k": "carlstack",
+"at": 1152.66,
+"out": 1163.66
+},
+{
+"k": "rollaside",
+"at": 1176.58,
+"out": 1186.58
+},
+{
+"k": "pathpast",
+"at": 1187.62,
+"out": 1198.62
+},
+{
+"k": "valuescan",
+"at": 1277.84,
+"out": 1287.84
+},
+{
+"k": "spotskip",
+"at": 1297.76,
+"out": 1306.76
+},
+{
+"k": "heatswing",
+"at": 1310.46,
+"out": 1320.46
+},
+{
+"k": "firetime",
+"at": 1357.3,
+"out": 1368.3
+},
+{
+"k": "raisedpad",
+"at": 1417.16,
+"out": 1428.16
+},
+{
+"k": "billboard",
+"at": 1465.44,
+"out": 1475.44
+},
+{
+"k": "cuttiles",
+"at": 1494.04,
+"out": 1504.04
+},
+{
+"k": "visorchain",
+"at": 1587.8,
+"out": 1598.8
+},
+{
+"k": "vacationbtn",
+"at": 1614.18,
+"out": 1624.18
+},
+{
+"k": "keyhook",
+"at": 1683.5,
+"out": 1693.5
+},
+{
+"k": "bankhome",
+"at": 1790.36,
+"out": 1800.36
+}
+]
