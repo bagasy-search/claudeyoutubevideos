@@ -64,13 +64,9 @@ export const Stage: React.FC<{ t: number; h: H; mode: Mode; tone?: string; cam?:
 };
 
 // encabezado chico (kicker + título) arriba a la izquierda: acompaña, nunca es el componente
-export const Head: React.FC<{ tt: number; kick: string; title: string; col?: string; d?: number }> = ({ tt, kick, title, col = MZ, d = 0.1 }) => {
-  const s = cl(phys(tt, d, 6, 0.7));
-  return <div style={{ position: "absolute", left: 110, top: 78, opacity: s, transform: `translateX(${(1 - s) * -40}px)` }}>
-    <div style={{ display: "flex", alignItems: "center", gap: 14, fontWeight: 800, fontSize: 24, letterSpacing: 5, color: DIM }}><div style={{ width: 34 * s, height: 3, borderRadius: 2, background: col }} />{kick}</div>
-    <div style={{ fontWeight: 900, fontSize: 58, marginTop: 6, transform: `translateY(${(1 - s) * 18}px)`, filter: `blur(${(1 - s) * 6}px)`, whiteSpace: "nowrap", textShadow: "0 6px 26px rgba(0,0,0,.6)" }}>{title}</div>
-  </div>;
-};
+// 29-oct, regla del creador: NADA de kicker/título en la esquina («sólo molestan»). Head queda como no-op para no tocar
+// cada componente; si hace falta una palabra, va DENTRO de la escena (etiqueta, papel, pared) y entra en su palabra.
+export const Head: React.FC<{ tt: number; kick: string; title: string; col?: string; d?: number }> = () => null;
 // rótulo que cae con peso
 export const Tag: React.FC<{ tt: number; at: number; x: number; y: number; txt: string; col?: string; size?: number; hand?: boolean }> = ({ tt, at, x, y, txt, col = TX, size = 36, hand }) => {
   const s = phys(tt, at, 7, 0.45);

@@ -48,7 +48,6 @@ const Cam: React.FC<{ t: number; p: V3; l: V3; orbit: number; fov: number }> = (
   (camera as THREE.PerspectiveCamera).fov = fov; (camera as THREE.PerspectiveCamera).updateProjectionMatrix();
   camera.lookAt(l[0], l[1], l[2]);
   // la escena baja 90 px: arriba queda aire para el título (nada lo pisa ni se corta contra el borde)
-  (camera as THREE.PerspectiveCamera).setViewOffset(1920, 1080, 0, -90, 1920, 1080);
   return null;
 };
 const Env: React.FC = () => {
