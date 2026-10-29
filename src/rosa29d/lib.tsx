@@ -79,8 +79,7 @@ export const Card3D: React.FC<C3> = ({ id, from, at, x, y, w, h, ry = 0, rx = 0,
         <div style={{ position: "absolute", right: -T / 2, top: 16, width: T, height: h - 32, background: "linear-gradient(90deg,#d8d4cc,#8c877e)", transform: "rotateY(90deg)" }} />
         <div style={{ position: "absolute", left: -T / 2, top: 16, width: T, height: h - 32, background: "linear-gradient(90deg,#8c877e,#d8d4cc)", transform: "rotateY(-90deg)" }} />
         <div style={{ position: "absolute", left: 0, top: 0, width: w, height: h, borderRadius: 16, overflow: "hidden", transform: `translateZ(${T / 2}px)`,
-          border: "6px solid rgba(255,255,255,.94)", boxShadow: "0 40px 90px rgba(0,0,0,.7)", background: "#111",
-          WebkitBoxReflect: "below 26px linear-gradient(transparent 62%, rgba(255,255,255,.2))" } as React.CSSProperties}>
+          border: "6px solid rgba(255,255,255,.94)", boxShadow: "0 40px 90px rgba(0,0,0,.7)", background: "#111" } as React.CSSProperties}>
           <Vid id={id} from={from} at={at} />
           <div style={{ position: "absolute", inset: 0, background: `linear-gradient(${105 + ry * 2}deg, transparent 35%, rgba(255,255,255,.12) 50%, transparent 65%)` }} />
           {label && <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, padding: "14px 20px", background: "linear-gradient(0deg, rgba(0,0,0,.85), transparent)", fontFamily: FONT, fontWeight: 900, fontSize: 40, letterSpacing: 4, color: labelCol }}>{label}</div>}
