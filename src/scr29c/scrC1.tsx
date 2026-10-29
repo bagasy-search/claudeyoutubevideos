@@ -9,14 +9,14 @@ const rnd = (i: number) => { const x = Math.sin(i * 127.1 + 31.7) * 43758.5453; 
 
 // ---- 0:05 · LA PARED QUE SE ENNEGRECE: una pared blanca de taller; el hollín sube en manchas desde abajo, después el techo, y una nariz de trapo que queda negra ----
 export const HSootwall: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="wipe">{(tt) => {
-  const s1 = 0.25 + 0.75 * eio(tt, 0.0, 3.2), s2 = eio(tt, it(h, 0) - 0.2, it(h, 0) + 1.2), rag = phys(tt, it(h, 1), 6, 0.45);
+  const s1 = 0.6 + 0.4 * eio(tt, 0.0, 3.2), s2 = eio(tt, it(h, 0) - 0.2, it(h, 0) + 1.2), rag = phys(tt, it(h, 1), 6, 0.45);
   return <>
     <div style={{ position: "absolute", left: 360, top: 120, width: 1200, height: 820, borderRadius: 12, background: "linear-gradient(180deg,#efece4,#d9d4c8)", boxShadow: "0 50px 100px rgba(0,0,0,.6)", overflow: "hidden" }}>
       {Array.from({ length: 22 }, (_, i) => { const x = rnd(i) * 1200, w = 120 + rnd(i + 9) * 220, top = i < 14 ? 820 - 820 * s1 * (0.5 + rnd(i + 3) * 0.6) : 0;
         return <div key={i} style={{ position: "absolute", left: x - w / 2, top: i < 14 ? top : -60, width: w, height: i < 14 ? 900 : 220 * s2, borderRadius: "50%", background: "radial-gradient(ellipse, rgba(20,18,16,.75), rgba(20,18,16,0) 70%)", filter: "blur(10px)", opacity: i < 14 ? s1 : s2 }} />; })}
     </div>
     <div style={{ position: "absolute", left: 1500, top: 760 - (1 - rag) * 300, transform: `translate(-50%,-50%) rotate(${-10 + 6 * rag}deg)`, opacity: cl(rag * 3), width: 280, height: 200, borderRadius: "40% 40% 50% 50%", background: "radial-gradient(ellipse at 50% 55%, #151311 0 60px, #3a3632 80px, #e9e4d8 96px)", boxShadow: "0 30px 50px rgba(0,0,0,.5)" }}>{[40, 150].map((y) => <div key={y} style={{ position: "absolute", left: -90, right: -90, top: y, height: 8, borderRadius: 4, background: "#d9d4c8", zIndex: -1 }} />)}</div>
-    <Tag tt={tt} at={it(h, 1) + 0.4} x={1500} y={930} txt="YOUR LUNGS" col={RED} size={50} />
+    <Tag tt={tt} at={it(h, 1) + 0.4} x={1500} y={1010} txt="YOUR LUNGS" col={RED} size={56} />
     <Tag tt={tt} at={0.8} x={960} y={1000} txt="THE WALLS" col={TX} size={46} />
     <Tag tt={tt} at={it(h, 0)} x={960} y={70} txt="THE CEILING" col={TX} size={46} />
   </>;
@@ -126,7 +126,7 @@ export const HStreams: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t
     {[0, 1, 2].map((i) => <Arrow key={i} x={540 - (i * 60) % 120} y={830 + i * 18} len={200 + 140 * much} ang={-6} col={AMB} w={10 + 14 * much} o={p} />)}
     {[0, 1, 2, 3].map((i) => <Arrow key={i} x={1000} y={120 + i * 40} len={260} ang={180 - i * 6} col={BLU} w={16} o={s} />)}
     <Tag tt={tt} at={0.8} x={420} y={760} txt="PRIMARY" col={AMB} size={48} />
-    <Tag tt={tt} at={it(h, 0)} x={420} y={940} txt="TOO MUCH = COLD" col={RED} size={40} />
+    <Tag tt={tt} at={it(h, 0)} x={420} y={1010} txt="TOO MUCH = COLD" col={RED} size={52} />
     <Tag tt={tt} at={it(h, 1)} x={1480} y={160} txt="SECONDARY" col={BLU} size={56} />
   </>;
 }}</Stage>;
@@ -140,7 +140,7 @@ export const HCoins: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} 
     </div>
     {rows.map(([a, d, lab, n], r) => { const s = phys(tt, a, 7, 0.4); return <div key={r} style={{ position: "absolute", left: 1240, top: 820 - r * 300 - (1 - s) * 300, opacity: cl(s * 3), display: "flex", alignItems: "center", gap: 30 }}>
       <div style={{ width: d * 2, height: d * 2, borderRadius: "50%", background: "radial-gradient(circle at 40% 35%, #f2e6c8, #b9a06a 60%, #6a5a34)", boxShadow: "0 20px 30px rgba(0,0,0,.5)" }} />
-      <div><div style={{ fontWeight: 900, fontSize: 72, color: TX }}>{lab}"</div><div style={{ fontWeight: 800, fontSize: 34, color: DIM, letterSpacing: 4 }}>× {n}</div></div>
+      <div><div style={{ fontWeight: 900, fontSize: 72, color: TX }}>{lab}"</div><div style={{ fontWeight: 900, fontSize: 64, color: AMB, letterSpacing: 2 }}>× {n}</div></div>
     </div>; })}
   </>;
 }}</Stage>;

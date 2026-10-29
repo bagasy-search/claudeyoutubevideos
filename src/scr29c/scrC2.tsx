@@ -20,7 +20,7 @@ export const HCapoff: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t}
     {[0, 1, 2, 3].map((i) => <div key={i} style={{ position: "absolute", left: 1080, top: 300 + i * 110, width: 260, height: 14, borderRadius: 7, background: `linear-gradient(90deg, ${BLU}, rgba(90,168,255,0))`, opacity: 1 - none }} />)}
     <Flame x={1500} y={880} w={260} hgt={420} b={0.8 * (1 - none)} tt={tt} />
     {none > 0.1 && Array.from({ length: 5 }, (_, i) => { const ph = (tt * 0.5 + i / 5) % 1; return <div key={i} style={{ position: "absolute", left: 1440 + Math.sin(i * 2 + ph * 5) * 30, top: 460 - ph * 380, width: 120, height: 120, borderRadius: "50%", background: "radial-gradient(circle, rgba(25,22,20,.8), rgba(25,22,20,0) 70%)", opacity: none * (1 - ph) }} />; })}
-    <Tag tt={tt} at={it(h, 0)} x={600} y={160} txt="A CAP" col={TX} size={50} />
+    <Tag tt={tt} at={it(h, 0)} x={1250} y={190} txt="A CAP" col={TX} size={50} />
     <Tag tt={tt} at={it(h, 1)} x={1500} y={980} txt="NO SECONDARY AIR" col={RED} size={44} />
   </>;
 }}</Stage>;
@@ -73,11 +73,9 @@ export const HPoll: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h
   return <>
     {C.map(([c, n], i) => { const s = phys(tt, Math.min(it(h, 0) - 0.6, 0.15) + i * 0.45, 5, 0.5), spin = Math.max(0, 1 - cl(s)) * 6;
       return <div key={i} style={{ position: "absolute", left: 540 + i * 420, top: 520, transform: `translate(-50%,-50%) translateY(${(1 - cl(s)) * -260}px) rotateY(${spin * 180}deg)`, opacity: cl(s * 3) }}>
-        <div style={{ width: 300, height: 300, borderRadius: "50%", background: `radial-gradient(circle at 40% 35%, #fff 0%, ${c} 40%, #1a1a1a 110%)`, boxShadow: `0 0 70px ${c}, 0 40px 60px rgba(0,0,0,.6)` }} />
+        <div style={{ width: 300, height: 300, borderRadius: "50%", background: `radial-gradient(circle at 34% 28%, #fff 0 6%, ${c} 38%, #1a1a1a 105%)`, boxShadow: `0 0 70px ${c}, 0 60px 50px -20px rgba(0,0,0,.8), inset -30px -40px 60px rgba(0,0,0,.45)` }} />
         <div style={{ textAlign: "center", marginTop: 30, fontWeight: 900, fontSize: 52, color: c, letterSpacing: 4 }}>{n}</div>
       </div>; })}
-    {Array.from({ length: 6 }, (_, i) => { const ph = cl(cm * 1.6 - i * 0.12); return <div key={i} style={{ position: "absolute", left: 300 + i * 250, top: 1000 - ph * 160, width: 120, height: 80, borderRadius: "40px 40px 40px 8px", background: "rgba(255,255,255,.9)", opacity: ph * (1 - ph * 0.3), boxShadow: "0 16px 30px rgba(0,0,0,.5)" }}>
-      <div style={{ margin: "30px auto 0", width: 60, height: 14, borderRadius: 7, background: ["#ff7a1a", "#ffd24a", BLU][i % 3] }} /></div>; })}
     <Tag tt={tt} at={0.6} x={960} y={160} txt="YOUR FLAME?" col={TX} size={66} />
   </>;
 }}</Stage>;
@@ -178,7 +176,7 @@ export const HCandle: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t}
     </div>
     {Array.from({ length: 6 }, (_, i) => { const ph = (tt * 0.9 + i / 6) % 1; return <div key={i} style={{ position: "absolute", left: 720 + ph * 200, top: 600 + Math.sin(i * 2) * 6, width: 40, height: 6, borderRadius: 3, background: BLU, opacity: blow * (1 - ph) }} />; })}
     <Tag tt={tt} at={it(h, 0)} x={1400} y={360} txt="SECONDARY AIR" col={BLU} size={50} />
-    <Tag tt={tt} at={it(h, 1) + 0.4} x={560} y={800} txt="HOLES, NOT A STRAW" col={TX} size={40} />
+    <Tag tt={tt} at={it(h, 1) + 0.4} x={960} y={1010} txt="HOLES, NOT A STRAW" col={TX} size={56} />
   </>;
 }}</Stage>;
 
@@ -209,7 +207,7 @@ export const HRetrofit: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={
       {[0, 1, 2, 3].map((r) => <div key={r} style={{ position: "absolute", left: 34, top: 60 + r * 110, width: 42, height: 42, borderRadius: "50%", background: "#0b0b0c" }} />)}
     </div>
     <Flame x={960} y={760} w={300} hgt={420 * fix} b={0.9} tt={tt} o={fix} />
-    <Tag tt={tt} at={0.8} x={420} y={240} txt="ANY OLD STOVE" col={TX} size={48} />
+    <Tag tt={tt} at={0.8} x={420} y={1000} txt="ANY OLD STOVE" col={TX} size={48} />
     <Tag tt={tt} at={it(h, 0) + 1.6} x={1500} y={240} txt="NOW IT'S BLUE" col={BLU} size={56} />
   </>;
 }}</Stage>;
