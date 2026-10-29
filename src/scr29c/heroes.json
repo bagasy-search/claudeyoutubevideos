@@ -1,0 +1,340 @@
+[
+ {
+  "k": "sootwall",
+  "at": 5.26,
+  "out": 14.26,
+  "ph": "and soot on everything in the shop",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 3.86
+   },
+   {
+    "at": 4.82
+   }
+  ]
+ },
+ {
+  "k": "pairs",
+  "at": 85.44,
+  "out": 96.44,
+  "ph": "every bit of that vapor needs oxygen",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 7.88
+   },
+   {
+    "at": 10.84
+   }
+  ]
+ },
+ {
+  "k": "triangle",
+  "at": 123.28,
+  "out": 132.28,
+  "ph": "the air is the only one of the three",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 2.44
+   }
+  ]
+ },
+ {
+  "k": "tagexpire",
+  "at": 140.42,
+  "out": 149.92,
+  "ph": "they get replaced all the time",
+  "dev": -3.0,
+  "items": [
+   {
+    "at": 6.74
+   }
+  ]
+ },
+ {
+  "k": "clearwater",
+  "at": 192.6,
+  "out": 200.1,
+  "ph": "hose it out until the water runs clear",
+  "dev": -0.7
+ },
+ {
+  "k": "neon",
+  "at": 238.56,
+  "out": 244.56,
+  "ph": "hit subscribe",
+  "dev": -5.0
+ },
+ {
+  "k": "streams",
+  "at": 266.02,
+  "out": 279.52,
+  "ph": "what keeps the oil hot and boiling",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 5.32
+   },
+   {
+    "at": 10.22
+   }
+  ]
+ },
+ {
+  "k": "coins",
+  "at": 336.14,
+  "out": 346.14,
+  "ph": "small holes 3 16ths of an inch",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 8.78
+   }
+  ]
+ },
+ {
+  "k": "climb",
+  "at": 366.64,
+  "out": 379.14,
+  "ph": "if you blast it with air down there",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 7.14
+   },
+   {
+    "at": 11.6
+   }
+  ]
+ },
+ {
+  "k": "draft",
+  "at": 430.8,
+  "out": 440.8,
+  "ph": "hot gases rush up the chimney",
+  "dev": -1.8,
+  "items": [
+   {
+    "at": 4.3
+   }
+  ]
+ },
+ {
+  "k": "aperture",
+  "at": 464.9,
+  "out": 475.4,
+  "ph": "so you can swing it open or closed",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 2.02
+   },
+   {
+    "at": 6.12
+   }
+  ]
+ },
+ {
+  "k": "irgun",
+  "at": 563.02,
+  "out": 573.02,
+  "ph": "now i take my infrared thermometer",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 8.88
+   }
+  ]
+ },
+ {
+  "k": "twice",
+  "at": 595.72,
+  "out": 607.22,
+  "ph": "now i wait three minutes",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 3.44
+   },
+   {
+    "at": 8.32
+   }
+  ]
+ },
+ {
+  "k": "spectrum",
+  "at": 646.74,
+  "out": 655.74,
+  "ph": "still not enough air",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 3.28
+   },
+   {
+    "at": 7.66
+   }
+  ]
+ },
+ {
+  "k": "capoff",
+  "at": 761.82,
+  "out": 773.32,
+  "ph": "they never sealed the top of the air tube",
+  "dev": -3.1,
+  "items": [
+   {
+    "at": 6.32
+   },
+   {
+    "at": 9.84
+   }
+  ]
+ },
+ {
+  "k": "twins",
+  "at": 808.62,
+  "out": 820.12,
+  "ph": "rocket stove burns wood",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 5.7
+   },
+   {
+    "at": 10.98
+   }
+  ]
+ },
+ {
+  "k": "dominoes",
+  "at": 874.8,
+  "out": 886.3,
+  "ph": "check the air tube is standing straight",
+  "dev": -0.7,
+  "items": [
+   {
+    "at": 5.2
+   },
+   {
+    "at": 7.2
+   }
+  ]
+ },
+ {
+  "k": "poll",
+  "at": 973.94,
+  "out": 986.44,
+  "ph": "what color is the flame in your stove",
+  "dev": -4.1,
+  "items": [
+   {
+    "at": 7.02
+   },
+   {
+    "at": 9.24
+   }
+  ]
+ },
+ {
+  "k": "burr",
+  "at": 1007.34,
+  "out": 1019.34,
+  "ph": "drill them all pointing toward the center",
+  "dev": -2.8,
+  "items": [
+   {
+    "at": 9.18
+   }
+  ]
+ },
+ {
+  "k": "gears",
+  "at": 1094.4,
+  "out": 1103.9,
+  "ph": "more oil always needs more air",
+  "dev": -3.9,
+  "items": [
+   {
+    "at": 7.12
+   }
+  ]
+ },
+ {
+  "k": "windsock",
+  "at": 1123.64,
+  "out": 1134.64,
+  "ph": "on a windy day",
+  "dev": 0.1,
+  "items": [
+   {
+    "at": 9.26
+   }
+  ]
+ },
+ {
+  "k": "floorheat",
+  "at": 1141.74,
+  "out": 1154.24,
+  "ph": "insulate the bottom of the stove from the floor",
+  "dev": -5.6,
+  "items": [
+   {
+    "at": 9.62
+   }
+  ]
+ },
+ {
+  "k": "nesting",
+  "at": 1175.84,
+  "out": 1186.34,
+  "ph": "go up to a 2 inch tube",
+  "dev": -0.6,
+  "items": [
+   {
+    "at": 6.1
+   }
+  ]
+ },
+ {
+  "k": "candle",
+  "at": 1258.24,
+  "out": 1269.24,
+  "ph": "the bottom of the flame turn blue",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 2.14
+   },
+   {
+    "at": 6.88
+   }
+  ]
+ },
+ {
+  "k": "gasring",
+  "at": 1274.0,
+  "out": 1286.0,
+  "ph": "underneath every burner",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 8.52
+   }
+  ]
+ },
+ {
+  "k": "retrofit",
+  "at": 1372.14,
+  "out": 1384.14,
+  "ph": "get a piece of pipe",
+  "dev": -0.9,
+  "items": [
+   {
+    "at": 4.22
+   }
+  ]
+ }
+]
