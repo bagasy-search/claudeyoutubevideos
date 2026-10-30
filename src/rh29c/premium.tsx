@@ -134,7 +134,7 @@ export const BigNum: React.FC<{ t: number; at: number; out: number; text: string
       WebkitMaskImage: "linear-gradient(180deg, transparent 0%, #000 7%, #000 93%, transparent 100%)" } as React.CSSProperties}>
       {ch.map((g, i) => {
         const dl = at + 0.05 + (N - 1 - i) * 0.06;
-        if (!/\d/.test(g)) { const p = phys(t, dl + 0.2, 7, 0.5); return <div key={i} style={{ opacity: cl(p * 1.5), transform: `translateY(${(1 - p) * H * 0.6}px)`, fontSize: /[°%gkmh/]/.test(g) ? size * 0.55 : size, color: /[°%]/.test(g) ? G.dim : G.txt, whiteSpace: "pre" }}>{g}</div>; }
+        if (true) { /* 30-oct r3: sin tambor (a medio giro el cuadro quieto mostraba glifos rotos); cada cifra cae con resorte */ const p = phys(t, dl + 0.2, 7, 0.5); return <div key={i} style={{ opacity: cl(p * 1.5), transform: `translateY(${(1 - p) * H * 0.6}px)`, fontSize: /[°%gkmh/]/.test(g) ? size * 0.55 : size, color: /[°%]/.test(g) ? G.dim : G.txt, whiteSpace: "pre" }}>{g}</div>; }
         const dgt = +g, pos = phys(t, dl, 6.2 + 0.3 * i, 0.66) * (dgt + 10);
         return <div key={i} style={{ height: H, overflow: "hidden" }}>
           <div style={{ transform: `translateY(${-pos * H}px)` }}>{Array.from({ length: 21 }, (_, j) => <div key={j} style={{ height: H }}>{j % 10}</div>)}</div>
@@ -182,12 +182,12 @@ export const Versus: React.FC<{ t: number; at: number; out: number; L: Col2; R: 
     const shown = num ? cc.val.replace(num[0], String(Math.round(+num[0].replace("−", "-") * cnt))) : cc.val;
     return <div key={i} style={{ position: "absolute", left: -210 + sg * 270, top: -373, width: 420, height: 746, opacity: cl(s * 2),
       transform: `translate3d(${land * sg * 300}px, ${Math.max(land, -0.04) * 700}px, ${Math.max(0, v) * 110 + Math.min(0, v) * 160}px) rotateY(${sg * -14 * (1 - Math.abs(v)) + Math.min(0, v) * sg * -22}deg) rotateZ(${land * sg * 16}deg) rotateX(${land * 30}deg)`,
-      WebkitBoxReflect: "below 14px linear-gradient(transparent 76%, rgba(255,255,255,.18))" } as React.CSSProperties}>
+      } as React.CSSProperties}>
       <div style={{ position: "relative", width: "100%", height: "100%", borderRadius: 26, overflow: "hidden", background: "#16171a",
         boxShadow: `0 50px 110px rgba(0,0,0,.65), 0 0 0 ${2 + 3 * Math.max(0, v)}px ${win && v > 0.3 ? cc.col : "rgba(255,255,255,.14)"}, 0 0 ${80 * Math.max(0, v)}px ${cc.col}55` }}>
         {imgs[i] && <Img src={img(imgs[i]!)} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.06 + 0.06 * e(t, at, out)})`, filter: `grayscale(${Math.max(0, -v)}) brightness(${1 - 0.45 * Math.max(0, -v)})` }} />}
         <div style={{ position: "absolute", inset: 0, background: `linear-gradient(180deg, rgba(0,0,0,.5) 0%, transparent 26%, transparent 48%, rgba(0,0,0,.92) 100%)` }} />
-        <div style={{ position: "absolute", left: 30, top: 28, fontWeight: 800, fontSize: 26, letterSpacing: 5, color: G.txt }}>{cc.label}</div>
+        <div style={{ position: "absolute", left: 30, right: 84, top: 28, fontWeight: 800, fontSize: 23, lineHeight: 1.25, letterSpacing: 2, color: G.txt }}>{cc.label}</div>
         <div style={{ position: "absolute", left: 28, bottom: 30, fontWeight: 900, fontSize: 104, lineHeight: 1, letterSpacing: -3, color: cc.col, textShadow: "0 8px 30px rgba(0,0,0,.6)" }}>{shown}</div>
         {cc.mark && <div style={{ position: "absolute", right: 26, top: 22, width: 64, height: 64, borderRadius: 32, background: win ? "#2fbf71" : ACC.red, color: "#fff", fontWeight: 900, fontSize: 38, lineHeight: "64px", textAlign: "center",
           transform: `scale(${Math.max(0, phys(t, at + 1.75 + (win ? 0 : 0.15), 8, 0.4))})`, boxShadow: "0 10px 30px rgba(0,0,0,.5)" }}>{win ? "✓" : "✕"}</div>}
@@ -353,7 +353,7 @@ export const Words: React.FC<{ t: number; items: { at: number; txt: string; col?
   return <div style={{ position: "absolute", left: 80, right: 80, top: y, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 56, opacity: 1 - xo, fontFamily: FONT, perspective: 1200 }}>
     {items.map((w, i) => {
       const s = phys(t, w.at, 6.5, 0.4);
-      return <div key={i} style={{ fontWeight: 900, fontSize: fs, letterSpacing: 1, color: w.col ?? G.txt, textShadow: "0 2px 3px rgba(0,0,0,.95), 0 6px 26px rgba(0,0,0,.85)", opacity: cl(s * 1.8),
+      return <div key={i} style={{ fontWeight: 900, fontSize: fs, letterSpacing: 1, color: w.col ?? G.txt, background: "rgba(8,8,10,.66)", padding: "4px 28px 10px", borderRadius: 20, boxShadow: "0 10px 30px rgba(0,0,0,.35)", textShadow: "0 2px 3px rgba(0,0,0,.95), 0 6px 26px rgba(0,0,0,.85)", opacity: cl(s * 1.8),
         transform: `translateY(${(1 - s) * -90 - xo * 20}px) rotateX(${(1 - s) * 60}deg) scale(${1 - xo * 0.06})`, whiteSpace: "nowrap" }}>{w.txt}</div>;
     })}
   </div>;
@@ -388,7 +388,7 @@ export const Desc: React.FC<{ t: number; at: number; out: number; x?: number; y?
   const L = (w: number) => <div style={{ height: 14, width: w, borderRadius: 7, background: "rgba(255,255,255,.12)", marginTop: 18 }} />;
   return <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) scale(${scale})` }}>
     <div style={rise(t, at, out)}>
-      <div style={{ marginBottom: 16, fontFamily: FONT, fontWeight: 800, fontSize: 30, letterSpacing: 5, color: COL.amber, opacity: hl }}>LINK IN THE FIRST LINE OF THE DESCRIPTION ↓</div>
+      <div style={{ marginBottom: 16, fontFamily: FONT, fontWeight: 900, fontSize: 44, letterSpacing: 3, color: COL.amber, opacity: 0.55 + 0.45 * hl, textShadow: "0 3px 12px rgba(0,0,0,.9)" }}>LINK IN THE FIRST LINE OF THE DESCRIPTION ↓</div>
       <Panel style={{ width: 1180, padding: "30px 40px 36px" }}>
         <div style={{ position: "relative", padding: "16px 22px", borderRadius: 14, background: `rgba(255,200,60,${0.14 * hl})`, boxShadow: `0 0 0 2px rgba(255,200,60,${0.85 * hl})`, overflow: "hidden" }}>
           <div style={{ fontWeight: 800, fontSize: 40 }}>📕 Rhonda's Brown Bottle Book · 92 fixes for $1-2</div>
@@ -415,10 +415,10 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
   let act = 0; for (let i = 1; i < N; i++) act += phys(t, cards[i].at - 0.25, 6.2, 0.5);
   // empujón de cámara en cada llegada: sube y baja en curva (seno amortiguado), nunca lineal
   let push = 0; for (let i = 0; i < N; i++) { const x = t - (cards[i].at - 0.25); if (x > 0) push += Math.sin(Math.min(x, 1.6) / 1.6 * Math.PI) * Math.exp(-x * 0.6); }
-  const camZ = -520 * (1 - inn) + 40 * push + 26 * Math.sin((t - at) * 0.21) - 900 * xo;
-  const camRY = 16 * (1 - inn) + 4.2 * Math.sin((t - at) * 0.17 + 0.6) - 10 * xo;
+  const camZ = -520 * (1 - inn) + 40 * push + 46 * Math.sin((t - at) * 0.36) - 900 * xo; // 30-oct: órbita más viva (el carrusel asentado daba congelado 4,6 s en c)
+  const camRY = 16 * (1 - inn) + 7.5 * Math.sin((t - at) * 0.31 + 0.6) - 10 * xo;
   const camRX = 6 + 1.6 * Math.sin((t - at) * 0.13) + 8 * xo;
-  const camY = 10 * Math.sin((t - at) * 0.11 + 1.2);
+  const camY = 18 * Math.sin((t - at) * 0.27 + 1.2);
   const R = iris * 1500;
   const mask = `radial-gradient(circle at 50% 52%, #000 ${R}px, transparent ${R + 520}px)`;
   const hdr = cl(phys(t, at + 0.35, 6, 0.7)) * (1 - eIn(t, out - 0.4, out + 0.4));
@@ -455,7 +455,7 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
           const front = Math.max(0, 1 - ad), land = 1 - s; // lo que le falta para apoyarse (negativo = se pasó)
           return <div key={i} style={{ position: "absolute", left: -180, top: -320, width: 360, height: 640, opacity: op, zIndex: 100 - Math.round(ad * 10),
             transform: `translate3d(${x + land * 260}px, ${Math.max(land, -0.04) * 760}px, ${z - xi * 500}px) rotateY(${ry - land * 30}deg) rotateX(${land * 40}deg) rotateZ(${land * 14}deg) scale(${0.9 + 0.2 * front})`,
-            WebkitBoxReflect: "below 14px linear-gradient(transparent 74%, rgba(255,255,255,.2))" } as React.CSSProperties}>
+            } as React.CSSProperties}>
             <div style={{ position: "relative", width: "100%", height: "100%", borderRadius: 24, overflow: "hidden", background: "#16171a",
               boxShadow: `0 ${40 + Math.abs(land) * 60}px ${90 + Math.abs(land) * 80}px rgba(0,0,0,${0.6 - Math.min(0.3, Math.abs(land) * 0.3)}), 0 0 0 ${2 + 2 * front}px ${front > 0.5 ? c : "rgba(255,255,255,.12)"}` }}>
               {cd.img && <Img src={staticFile("img/" + P + cd.img + ".jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.08 + 0.06 * front * ei(t, cd.at, cd.at + 6)})` }} />}
