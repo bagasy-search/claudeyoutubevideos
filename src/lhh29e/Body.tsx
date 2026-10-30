@@ -42,8 +42,11 @@ const CJ = CARDS as unknown as { err?: string[]; rec?: string[] };
 const MIS = PL.ov.filter((o) => o.k === "mistake").sort((a, b) => a.n - b.n);
 const DEAL = PL.ov.find((o) => o.k === "deal");
 const REC = PL.ov.find((o) => o.k === "recap");
+// entre error y error, si hay foto, el carrusel se va (corte seco) y la foto se ve; sin foto queda el carrusel (la cocina vacía es peor)
+const misOn = (t: number) => MIS.some((m, i) => t >= (i === 0 ? DEAL?.at ?? m.at - 1 : m.at - 0.6) && t < m.out + 0.6);
+const shotOn = (t: number) => (PL.segs as unknown as [number, number, string][]).some((g) => g[2] === "shot" && t >= g[0] && t < g[1]);
 const Carousels: React.FC<{ t: number }> = ({ t }) => <>
-  {MIS.length > 0 && <CoverFlow t={t} at={DEAL?.at ?? MIS[0].at - 1} out={MIS[MIS.length - 1].out} hide={nowAv(t)} kicker="DON'T DO THESE" title={`THE ${MIS.length} MISTAKES`} col="red"
+  {MIS.length > 0 && <CoverFlow t={t} at={DEAL?.at ?? MIS[0].at - 1} out={MIS[MIS.length - 1].out} hide={nowAv(t) || (shotOn(t) && !misOn(t))} kicker="DON'T DO THESE" title={`THE ${MIS.length} MISTAKES`} col="red"
     cards={MIS.map((m, i) => ({ img: CJ.err?.[i], at: m.at, n: m.n, title: m.txt }))} />}
   {REC && <CoverFlow t={t} at={REC.at} out={REC.out} hide={nowAv(t)} kicker="START TO FINISH" title={PL.txt.recapTitle}
     cards={PL.txt.recap.map((n, i) => ({ img: CJ.rec?.[i], at: REC.rows[i] ?? REC.out, n: i + 1, title: n })).filter((c) => c.at < REC.out)} />}
