@@ -354,7 +354,7 @@ const HGavelSold: C = ({ t, h }) => <S t={t} h={h} f={(tt) => {
 
 // cablear el galpón: la lamparita parpadea, prende, y el aserrín del aire queda iluminado en un cono; a la mitad se balancea
 const HBulbSawdust: C = ({ t, h }) => <S t={t} h={h} f={(tt) => {
-  const d = D(h), on = tt < 0.8 ? 0 : tt < 1.3 ? (Math.sin(tt * 60) > 0 ? 1 : 0.2) : 1, sw = swing(tt, d / 2, 10, 2.6, 0.5);
+  const d = D(h), on = eio(tt, 0.8, 1.3), sw = swing(tt, d / 2, 10, 2.6, 0.5);
   return <Cam tt={tt} d={d} z={0.06} fy={400}>
     <Fondo id="ld_e17" tt={tt} b={10} br={0.2 + 0.3 * on} />
     <div style={{ position: "absolute", left: 958, top: 0, width: 4, height: 330, background: "#222", transform: `rotate(${sw}deg)`, transformOrigin: "50% 0" }} />
