@@ -1,0 +1,302 @@
+[
+{
+"k": "d_ring",
+"at": 3.8,
+"out": 9.8,
+"said": 0.0,
+"solo": true,
+"kw": "THE PINK RING",
+"kw2": "right at the waterline",
+"ph": "ph_d_ring"
+},
+{
+"k": "d_mansions",
+"at": 22.14,
+"out": 28.14,
+"said": 22.14,
+"solo": true,
+"kw": "MANSIONS",
+"kw2": "and trailers / same ring",
+"ph": "ph_d_mansions"
+},
+{
+"k": "d_apartment",
+"at": 41.44,
+"out": 47.94,
+"said": 41.44,
+"solo": true,
+"kw": "AN APARTMENT",
+"kw2": "free food, free water",
+"ph": "ph_d_apartment"
+},
+{
+"k": "d_nurse",
+"at": 101.38,
+"out": 107.88,
+"said": 99.08,
+"solo": true,
+"kw": "MRS. DELGADO",
+"kw2": "retired nurse / Akron",
+"ph": "ph_d_nurse"
+},
+{
+"k": "d_shoes",
+"at": 123.44,
+"out": 129.44,
+"said": 123.44,
+"solo": true,
+"kw": "ON YOUR SHOES",
+"kw2": "the dog, the breeze",
+"ph": "ph_d_shoes"
+},
+{
+"k": "d_guest",
+"at": 151.68,
+"out": 157.68,
+"said": 151.68,
+"solo": true,
+"kw": "A GUEST",
+"kw2": "liked the place, moved in",
+"ph": "ph_d_guest"
+},
+{
+"k": "d_beet",
+"at": 170.38,
+"out": 176.38,
+"said": 167.58,
+"solo": true,
+"kw": "LIKE A BEET",
+"kw2": "it makes its own color",
+"ph": "ph_d_beet"
+},
+{
+"k": "d_millions",
+"at": 177.26,
+"out": 181.76,
+"said": 177.86,
+"sp": 1.333,
+"solo": true,
+"kw": "MILLIONS",
+"kw2": "then the color shows",
+"ph": "ph_d_millions"
+},
+{
+"k": "d_petbowl",
+"at": 238.16,
+"out": 244.66,
+"said": 238.16,
+"solo": true,
+"kw": "THE PET BOWL",
+"kw2": "slick, with a pink tint",
+"ph": "ph_d_petbowl"
+},
+{
+"k": "d_caddy",
+"at": 259.8,
+"out": 265.3,
+"said": 259.8,
+"sp": 1.182,
+"solo": true,
+"kw": "SOLID PINK",
+"kw2": "under the shower caddy",
+"ph": "ph_d_caddy"
+},
+{
+"k": "d_underrim",
+"at": 319.54,
+"out": 325.54,
+"said": 321.14,
+"solo": true,
+"kw": "UNDER THE RIM",
+"kw2": "dark, damp, never seen",
+"ph": "ph_d_underrim"
+},
+{
+"k": "d_tilt",
+"at": 383.79,
+"out": 390.29,
+"said": 380.39,
+"solo": true,
+"kw": "TILT IT",
+"kw2": "the whole underside",
+"ph": "ph_d_tilt"
+},
+{
+"k": "d_level",
+"at": 424.49,
+"out": 428.99,
+"said": 427.39,
+"sp": 1.333,
+"solo": true,
+"kw": "AN INCH OR TWO",
+"kw2": "lower the water first",
+"ph": "ph_d_level"
+},
+{
+"k": "d_paste",
+"at": 451.967,
+"out": 457.97,
+"said": 451.97,
+"solo": true,
+"kw": "TOOTHPASTE",
+"kw2": "thick enough to stick",
+"ph": "ph_d_paste"
+},
+{
+"k": "d_rosy",
+"at": 496.93,
+"out": 502.93,
+"said": 490.93,
+"solo": true,
+"kw": "ROSY",
+"kw2": "the pink coming off",
+"ph": "ph_d_rosy"
+},
+{
+"k": "d_crusted",
+"at": 514.947,
+"out": 521.45,
+"said": 514.95,
+"solo": true,
+"kw": "CRUSTED",
+"kw2": "hard water in the jets",
+"ph": "ph_d_crusted"
+},
+{
+"k": "d_stronger",
+"at": 555.447,
+"out": 560.45,
+"said": 555.45,
+"sp": 1.2,
+"solo": true,
+"kw": "STRONGER",
+"kw2": "an even flush, a slower ring",
+"ph": "ph_d_stronger"
+},
+{
+"k": "d_neighbor",
+"at": 581.93,
+"out": 588.43,
+"said": 576.83,
+"solo": true,
+"kw": "SAME HOUSE",
+"kw2": "no ring next door",
+"ph": "ph_d_neighbor"
+},
+{
+"k": "d_putty",
+"at": 688.727,
+"out": 693.73,
+"said": 688.73,
+"sp": 1.2,
+"solo": true,
+"kw": "A PUTTY KNIFE",
+"kw2": "the window opened at last",
+"ph": "ph_d_putty"
+},
+{
+"k": "d_lottery",
+"at": 700.13,
+"out": 706.13,
+"said": 695.43,
+"solo": true,
+"kw": "2 WEEKS",
+"kw2": "and no ring",
+"ph": "ph_d_lottery"
+},
+{
+"k": "d_coffee",
+"at": 757.207,
+"out": 761.71,
+"said": 757.21,
+"sp": 1.333,
+"solo": true,
+"kw": "COFFEE",
+"kw2": "then a quick swish",
+"ph": "ph_d_coffee"
+},
+{
+"k": "d_spraytop",
+"at": 791.67,
+"out": 796.17,
+"said": 794.57,
+"sp": 1.333,
+"solo": true,
+"kw": "SPRAY TOP",
+"kw2": "right on the brown bottle",
+"ph": "ph_d_spraytop"
+},
+{
+"k": "d_tablets",
+"at": 807.33,
+"out": 811.83,
+"said": 807.63,
+"sp": 1.333,
+"solo": true,
+"kw": "BLUE TABLETS",
+"kw2": "chlorine in the tank all day",
+"ph": "ph_d_tablets"
+},
+{
+"k": "d_brushcup",
+"at": 964.194,
+"out": 970.69,
+"said": 964.19,
+"solo": true,
+"kw": "THE BRUSH CUP",
+"kw2": "a pink bacteria farm",
+"ph": "ph_d_brushcup"
+},
+{
+"k": "d_lid",
+"at": 1013.79,
+"out": 1019.79,
+"said": 1012.19,
+"solo": true,
+"kw": "LID UP",
+"kw2": "let the bowl breathe",
+"ph": "ph_d_lid"
+},
+{
+"k": "d_iron",
+"at": 1177.581,
+"out": 1184.08,
+"said": 1177.58,
+"solo": true,
+"kw": "IRON",
+"kw2": "flat, hard, won't smear",
+"ph": "ph_d_iron"
+},
+{
+"k": "d_squeegee",
+"at": 1246.92,
+"out": 1251.42,
+"said": 1248.42,
+"sp": 1.333,
+"solo": true,
+"kw": "SQUEEGEE",
+"kw2": "ten seconds on the walls",
+"ph": "ph_d_squeegee"
+},
+{
+"k": "d_marble",
+"at": 1337.881,
+"out": 1344.38,
+"said": 1337.88,
+"solo": true,
+"kw": "MARBLE",
+"kw2": "gold faucets, pink ring",
+"ph": "ph_d_marble"
+},
+{
+"k": "d_sticky",
+"at": 1439.161,
+"out": 1444.16,
+"said": 1439.16,
+"sp": 1.3,
+"solo": true,
+"kw": "A STICKY NOTE",
+"kw2": "counting the days",
+"ph": "ph_d_sticky"
+}
+]
