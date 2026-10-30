@@ -1,0 +1,1230 @@
+{
+"segs": [
+[
+3.5,
+8.6,
+"shot",
+"n_rodillas_cama"
+],
+[
+8.6,
+11.16,
+"shot",
+"n_taza_cafe_manos"
+],
+[
+11.16,
+15.196,
+"shot",
+"n_reloj_cocina_temprano"
+],
+[
+22.34,
+32.0,
+"shot",
+"n_barco_puerto_1970"
+],
+[
+38.12,
+43.24,
+"shot",
+"n_osaka_casa_madre"
+],
+[
+43.24,
+47.3,
+"shot",
+"n_mercado_osaka"
+],
+[
+58.2,
+62.8,
+"shot",
+"n_radio_antigua_estante"
+],
+[
+68.803,
+73.58,
+"shot",
+"n_parque_ejercicio_1960"
+],
+[
+79.34,
+81.5,
+"shot",
+"n_banco_parque_osaka"
+],
+[
+91.38,
+92.8,
+"shot",
+"n_gimnasio_vacio"
+],
+[
+92.8,
+97.081,
+"shot",
+"n_cardigan_silla"
+],
+[
+102.021,
+110.38,
+"shot",
+"n_calendario_viejo"
+],
+[
+121.64,
+128.12,
+"shot",
+"n_mano_rodilla_almohadon"
+],
+[
+128.12,
+130.4,
+"shot",
+"n_consultorio_medico"
+],
+[
+169.4,
+179.28,
+"shot",
+"n_cama_amanecer"
+],
+[
+179.28,
+182.165,
+"shot",
+"v02"
+],
+[
+192.84,
+196.6,
+"shot",
+"n_almohada_luz"
+],
+[
+201.241,
+207.36,
+"shot",
+"n_pies_sabana"
+],
+[
+213.78,
+215.182,
+"shot",
+"n_mesita_luz_agua"
+],
+[
+221.302,
+227.06,
+"shot",
+"n_futon_osaka"
+],
+[
+227.06,
+231.82,
+"shot",
+"n_pantuflas_alfombra"
+],
+[
+241.24,
+248.772,
+"shot",
+"n_zapatos_viejos"
+],
+[
+254.1,
+259.88,
+"shot",
+"v01"
+],
+[
+259.88,
+267.5,
+"shot",
+"n_silla_respaldo_ventana"
+],
+[
+286.5,
+294.52,
+"shot",
+"n_ventana_abierta_cortina"
+],
+[
+294.52,
+296.74,
+"shot",
+"n_callejon_osaka_manana"
+],
+[
+296.74,
+298.983,
+"shot",
+"n_vecina_ventana_osaka"
+],
+[
+306.8,
+314.8,
+"shot",
+"n_silla_madera_sola"
+],
+[
+324.0,
+330.0,
+"shot",
+"n_escolares_osaka_1950"
+],
+[
+333.7,
+341.7,
+"shot",
+"v04"
+],
+[
+342.5,
+345.759,
+"shot",
+"n_te_humeante"
+],
+[
+368.6,
+376.05,
+"shot",
+"n_iglesia_salon"
+],
+[
+394.17,
+398.16,
+"shot",
+"n_patio_escuela_1950"
+],
+[
+411.53,
+413.556,
+"shot",
+"n_frasco_tapa"
+],
+[
+427.37,
+431.2,
+"shot",
+"n_radio_parque_altavoz"
+],
+[
+435.5,
+443.71,
+"shot",
+"n_tortuga_jardin"
+],
+[
+443.71,
+447.68,
+"shot",
+"n_tele_salon"
+],
+[
+486.144,
+490.29,
+"shot",
+"v05"
+],
+[
+490.29,
+497.774,
+"shot",
+"n_sauces_rio_osaka"
+],
+[
+502.6,
+511.43,
+"shot",
+"n_silla_ventana_sol"
+],
+[
+517.227,
+526.25,
+"shot",
+"n_banco_parada_colectivo"
+],
+[
+526.25,
+528.177,
+"shot",
+"n_vereda_hojas"
+],
+[
+533.527,
+539.17,
+"shot",
+"n_ventana_tatami_sol"
+],
+[
+551.9,
+558.91,
+"shot",
+"v06"
+],
+[
+569.5,
+572.91,
+"shot",
+"n_manta_sofa"
+],
+[
+572.91,
+577.77,
+"shot",
+"n_sopa_telefono"
+],
+[
+592.31,
+595.1,
+"shot",
+"n_pantalon_rodilla"
+],
+[
+610.17,
+612.659,
+"shot",
+"n_flor_maceta_ventana"
+],
+[
+617.15,
+625.83,
+"shot",
+"n_piso_madera_sol"
+],
+[
+625.83,
+629.4,
+"shot",
+"n_madre_fotos_marco"
+],
+[
+642.13,
+645.653,
+"shot",
+"n_almohadon_lumbar"
+],
+[
+655.81,
+663.1,
+"shot",
+"n_silla_cocina_firme"
+],
+[
+668.8,
+676.8,
+"shot",
+"v07"
+],
+[
+694.1,
+698.155,
+"shot",
+"n_mesa_baja_desayuno"
+],
+[
+702.3,
+710.18,
+"shot",
+"n_ciruelo_flor_ventana"
+],
+[
+717.6,
+724.08,
+"shot",
+"n_diario_doblado"
+],
+[
+732.542,
+736.5,
+"shot",
+"n_te_jengibre"
+],
+[
+751.404,
+758.54,
+"shot",
+"n_despertador_viejo"
+],
+[
+758.54,
+762.9,
+"shot",
+"n_desayuno_japones"
+],
+[
+767.9,
+773.22,
+"shot",
+"n_estacion_osaka_verano"
+],
+[
+773.22,
+777.876,
+"shot",
+"n_ancianos_parque_filas"
+],
+[
+781.9,
+791.06,
+"shot",
+"n_amanecer_tejados"
+],
+[
+798.238,
+804.46,
+"shot",
+"n_tarjeta_sellos"
+],
+[
+804.46,
+809.3,
+"shot",
+"n_sandalias_camino"
+],
+[
+814.4,
+823.46,
+"shot",
+"n_parque_ninos_madres"
+],
+[
+823.46,
+826.1,
+"shot",
+"n_sello_tinta_mesa"
+],
+[
+830.6,
+837.08,
+"shot",
+"n_cuaderno_caramelos"
+],
+[
+837.08,
+840.42,
+"shot",
+"n_pasto_rocio"
+],
+[
+840.42,
+842.951,
+"shot",
+"n_panaderia_osaka"
+],
+[
+853.22,
+858.6,
+"shot",
+"n_departamento_america_1970"
+],
+[
+864.7,
+873.38,
+"shot",
+"n_aeropuerto_llegada"
+],
+[
+888.62,
+892.789,
+"shot",
+"n_radio_estante_ventana"
+],
+[
+902.88,
+906.7,
+"shot",
+"n_silla_living_sol"
+],
+[
+920.08,
+923.654,
+"shot",
+"n_cama_hospital_ventana"
+],
+[
+929.629,
+933.34,
+"shot",
+"n_vela_torta_101"
+],
+[
+933.34,
+940.8,
+"shot",
+"n_escarcha_ventana"
+],
+[
+945.4,
+953.48,
+"shot",
+"n_vaso_agua_tibia"
+],
+[
+953.48,
+958.189,
+"shot",
+"n_medias_lana"
+],
+[
+970.68,
+976.08,
+"shot",
+"n_piano_vertical"
+],
+[
+982.28,
+989.12,
+"shot",
+"v03"
+],
+[
+989.12,
+991.0,
+"shot",
+"n_disco_vinilo"
+],
+[
+1010.36,
+1011.7,
+"shot",
+"n_bisagra_aceite"
+],
+[
+1017.1,
+1025.16,
+"shot",
+"n_canasta_mercado"
+],
+[
+1025.16,
+1028.3,
+"shot",
+"n_calle_mercado_osaka"
+],
+[
+1034.549,
+1040.7,
+"shot",
+"n_cortina_abierta"
+],
+[
+1040.7,
+1043.8,
+"shot",
+"n_pava_hornalla"
+],
+[
+1048.8,
+1052.88,
+"shot",
+"n_nota_espejo"
+],
+[
+1097.542,
+1104.86,
+"shot",
+"v08"
+],
+[
+1104.86,
+1109.9,
+"shot",
+"n_platos_escurridor"
+],
+[
+1138.54,
+1144.974,
+"shot",
+"n_cama_hospital_flores"
+],
+[
+1167.026,
+1175.1,
+"shot",
+"v09"
+],
+[
+1186.9,
+1194.9,
+"shot",
+"n_sol_entra_ventana"
+],
+[
+1199.1,
+1205.28,
+"shot",
+"n_lago_calmo_amanecer"
+],
+[
+1205.28,
+1208.4,
+"shot",
+"v10"
+],
+[
+1337.82,
+1341.086,
+"shot",
+"n_jardin_flores_manana"
+]
+],
+"cam": [
+[
+20.2,
+22.34,
+"wide"
+],
+[
+35.7,
+38.12,
+"tatami"
+],
+[
+51.5,
+58.2,
+"radio"
+],
+[
+73.58,
+79.34,
+"clock"
+],
+[
+85.8,
+91.38,
+"window"
+],
+[
+110.38,
+113.2,
+"wide"
+],
+[
+117.6,
+121.64,
+"tatami"
+],
+[
+135.8,
+143.94,
+"living"
+],
+[
+143.94,
+147.0,
+"book"
+],
+[
+153.1,
+155.8,
+"bookOpen"
+],
+[
+155.8,
+158.78,
+"book2"
+],
+[
+158.78,
+165.2,
+"window"
+],
+[
+185.6,
+192.84,
+"bed"
+],
+[
+207.36,
+213.78,
+"bed"
+],
+[
+231.82,
+233.3,
+"bed"
+],
+[
+239.3,
+241.24,
+"clock"
+],
+[
+271.2,
+280.4,
+"window"
+],
+[
+302.7,
+306.8,
+"window"
+],
+[
+318.4,
+324.0,
+"window"
+],
+[
+341.7,
+342.5,
+"wide"
+],
+[
+351.3,
+360.59,
+"tatami"
+],
+[
+360.59,
+362.4,
+"wide"
+],
+[
+376.05,
+379.5,
+"tatami"
+],
+[
+385.2,
+394.17,
+"window"
+],
+[
+403.0,
+411.53,
+"window"
+],
+[
+419.5,
+427.37,
+"window"
+],
+[
+453.4,
+462.03,
+"window"
+],
+[
+462.03,
+465.3,
+"tatami"
+],
+[
+469.6,
+481.31,
+"window"
+],
+[
+481.31,
+482.2,
+"tatami"
+],
+[
+511.43,
+513.4,
+"living"
+],
+[
+539.17,
+545.9,
+"window"
+],
+[
+558.91,
+564.2,
+"window"
+],
+[
+577.77,
+580.7,
+"tatami"
+],
+[
+584.0,
+592.31,
+"window"
+],
+[
+600.5,
+610.17,
+"tatami"
+],
+[
+634.5,
+642.13,
+"window"
+],
+[
+649.9,
+655.81,
+"living"
+],
+[
+676.8,
+680.9,
+"wide"
+],
+[
+685.9,
+694.1,
+"living"
+],
+[
+710.18,
+713.2,
+"wide"
+],
+[
+724.08,
+727.7,
+"clock"
+],
+[
+736.5,
+746.5,
+"bed"
+],
+[
+791.06,
+794.5,
+"wide"
+],
+[
+847.9,
+853.22,
+"tatami"
+],
+[
+873.38,
+876.3,
+"clock"
+],
+[
+881.1,
+888.62,
+"window"
+],
+[
+898.0,
+902.88,
+"living"
+],
+[
+911.5,
+920.08,
+"window"
+],
+[
+963.0,
+970.68,
+"clock"
+],
+[
+979.8,
+982.28,
+"radio"
+],
+[
+997.4,
+1010.36,
+"clock"
+],
+[
+1052.88,
+1062.4,
+"window"
+],
+[
+1066.8,
+1077.7,
+"tatami"
+],
+[
+1083.0,
+1093.6,
+"window"
+],
+[
+1115.5,
+1122.64,
+"window"
+],
+[
+1122.64,
+1125.2,
+"tatami"
+],
+[
+1131.1,
+1138.54,
+"radio"
+],
+[
+1151.1,
+1162.7,
+"window"
+],
+[
+1175.1,
+1176.0,
+"wide"
+],
+[
+1181.3,
+1186.9,
+"window"
+],
+[
+1214.7,
+1221.28,
+"recap"
+],
+[
+1221.28,
+1227.1,
+"bed"
+],
+[
+1231.7,
+1235.32,
+"window"
+],
+[
+1235.32,
+1244.0,
+"radio"
+],
+[
+1249.1,
+1254.12,
+"window"
+],
+[
+1254.12,
+1259.5,
+"tatami"
+],
+[
+1265.2,
+1277.12,
+"window"
+],
+[
+1277.12,
+1278.6,
+"window"
+],
+[
+1283.0,
+1288.7,
+"book"
+],
+[
+1288.7,
+1293.5,
+"bookOpen"
+],
+[
+1299.9,
+1308.54,
+"recap"
+],
+[
+1308.54,
+1310.6,
+"window"
+],
+[
+1314.7,
+1323.08,
+"living"
+],
+[
+1323.08,
+1326.9,
+"window"
+],
+[
+1330.2,
+1337.82,
+"recap"
+],
+[
+1346.8,
+1355.72,
+"clock"
+],
+[
+1355.72,
+1359.1,
+"subscribe"
+]
+],
+"ov": [
+{
+"k": "chip",
+"txt": "79 · NEVER A CANE",
+"at": 26.8,
+"out": 30.2
+},
+{
+"k": "chip",
+"txt": "SHE LIVED TO 101",
+"at": 40.96,
+"out": 44.16
+},
+{
+"k": "chip",
+"txt": "9 MOVES · 10 MINUTES",
+"at": 85.38,
+"out": 88.78
+},
+{
+"k": "step",
+"n": 1,
+"name": "STRETCH IN BED",
+"at": 160.64,
+"out": 164.64
+},
+{
+"k": "step",
+"n": 2,
+"name": "REACH UP ON YOUR TOES",
+"at": 246.52,
+"out": 250.52
+},
+{
+"k": "step",
+"n": 3,
+"name": "SWING AND BEND",
+"at": 311.54,
+"out": 315.54
+},
+{
+"k": "deal",
+"at": 363.39,
+"out": 367.89
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "STRETCHING COLD",
+"at": 373.37,
+"out": 381.37
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "BOUNCING",
+"at": 390.23,
+"out": 398.23
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "HOLDING YOUR BREATH",
+"at": 408.99,
+"out": 416.99
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "GOING TOO FAST",
+"at": 424.85,
+"out": 432.85
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "COMPARING",
+"at": 439.13,
+"out": 447.13
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE WILLOW SIDE BEND",
+"at": 459.53,
+"out": 463.53
+},
+{
+"k": "step",
+"n": 5,
+"name": "OPEN YOUR CHEST",
+"at": 517.43,
+"out": 521.43
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE SLOW FORWARD BEND",
+"at": 577.97,
+"out": 581.97
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE CHAIR TWIST",
+"at": 650.29,
+"out": 654.29
+},
+{
+"k": "step",
+"n": 8,
+"name": "SHOULDERS · YES AND NO",
+"at": 1058.56,
+"out": 1062.56
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE DEEP BREATH REACH",
+"at": 1122.84,
+"out": 1126.84
+},
+{
+"k": "recap",
+"rows": [
+1301.06,
+1306.14,
+1308.54,
+1311.54,
+1314.6,
+1316.64,
+1318.64,
+1320.64,
+1327.0
+],
+"at": 1296.86,
+"out": 1333.0
+},
+{
+"k": "ask",
+"at": 1345.08,
+"out": 1356.08
+}
+],
+"cta1": {
+"guide": 143.94,
+"book": 149.14,
+"desc": 155.8,
+"manual": "THE 101 DAY · OSAKA WAY SET",
+"img": "km_p001",
+"pageTxt": "",
+"end": 161.8
+},
+"cta2": {
+"guide": 1279.96,
+"book": 1288.7,
+"page": 1291.36,
+"desc": 1293.82,
+"manual": "THE 101 DAY · OSAKA WAY SET",
+"img": "km_p012",
+"pageTxt": "",
+"end": 1299.82
+},
+"cta3": {
+"desc": 1355.72,
+"end": 1360.72
+},
+"end": 1380.18,
+"st": {
+"bed": [
+[
+2.18,
+18.48
+],
+[
+901.396,
+1237.283
+]
+],
+"laundry": [],
+"socks": [],
+"meal": [],
+"radio": [
+[
+51.56,
+83.66
+],
+[
+901.396,
+1058.363
+]
+],
+"book": [
+[
+143.94,
+901.396
+],
+[
+1279.964,
+1296.864
+]
+],
+"open": [
+[
+155.8,
+901.396
+],
+[
+155.8,
+1296.864
+]
+],
+"hi0": [
+[
+1288.704,
+1291.364
+]
+],
+"hi1": [
+[
+1291.364,
+1296.864
+]
+],
+"eve": [
+[
+1274.344,
+1380.18
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "THE 9 MORNING MOVES",
+"recap": [
+"Stretch in bed",
+"Reach up on your toes",
+"Swing and bend",
+"The willow",
+"Open your chest",
+"Slow forward bend",
+"The chair twist",
+"Shoulders · yes and no",
+"Deep breath reach"
+],
+"ask": [
+"IN THE COMMENTS",
+"What time do you wake up in the morning?",
+"I read every comment."
+],
+"next": [
+"",
+""
+],
+"lower": [
+11.16,
+17.16
+]
+}
+}
