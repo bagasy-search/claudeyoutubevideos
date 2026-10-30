@@ -45,7 +45,10 @@ const imgNear = (t: number, used: Set<string>, max = 40): string | undefined => 
 };
 const HS: H[] = (HEROES as H[]).map((h) => {
   const u = new Set<string>();
-  const out: H = { ...h, bg: imgNear(h.at + 1, u) };
+  // 30-oct (ojopush: 2 destellos en ruth29d): 2-3 cuadros del mundo entre el corte del avatar y la entrada del héroe = destello → el héroe arranca pegado al corte
+  const pe = Math.max(-9, ...WIN.map((w) => w.me).filter((x) => x <= h.at + 1e-6));
+  const at = h.at - pe > 0 && h.at - pe < 0.35 ? pe + 0.1 : h.at;
+  const out: H = { ...h, at, bg: imgNear(h.at + 1, u) };
   if (h.imgsAt) out.imgs = (h.imgsAt as number[]).map((x) => imgNear(x, u, 400));
   return out;
 });
