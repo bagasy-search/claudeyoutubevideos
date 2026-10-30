@@ -1,0 +1,294 @@
+[
+{
+"k": "calendar",
+"at": 10.16,
+"out": 14.66,
+"said": 12.06,
+"sp": 1.333,
+"solo": true,
+"kw": "THURSDAY",
+"kw2": "scrubbed on Sunday",
+"ph": "ph_calendar"
+},
+{
+"k": "ridge",
+"at": 123.62,
+"out": 128.62,
+"said": 123.62,
+"sp": 1.3,
+"solo": true,
+"kw": "THE RIDGE",
+"kw2": "calcium + magnesium",
+"ph": "ph_ridge"
+},
+{
+"k": "trellis",
+"at": 140.64,
+"out": 145.64,
+"said": 140.64,
+"sp": 1.2,
+"solo": true,
+"kw": "A TRELLIS",
+"kw2": "rough crust to climb on",
+"ph": "ph_trellis"
+},
+{
+"k": "buffet",
+"at": 158.6,
+"out": 163.1,
+"said": 159.9,
+"sp": 1.333,
+"solo": true,
+"kw": "A BUFFET",
+"kw2": "soap + skin oil, every morning",
+"ph": "ph_buffet"
+},
+{
+"k": "roots",
+"at": 188.28,
+"out": 192.78,
+"said": 191.18,
+"sp": 1.444,
+"solo": true,
+"kw": "THE ROOTS",
+"kw2": "the sponge rides over them",
+"ph": "ph_roots"
+},
+{
+"k": "westlake",
+"at": 219.02,
+"out": 225.52,
+"said": 219.02,
+"solo": true,
+"kw": "EVERY DAY",
+"kw2": "and still the worst one",
+"ph": "ph_westlake"
+},
+{
+"k": "napkin",
+"at": 265.46,
+"out": 271.96,
+"said": 265.46,
+"solo": true,
+"kw": "THE NAPKIN",
+"kw2": "folded to a point",
+"ph": "ph_napkin"
+},
+{
+"k": "wiggle",
+"at": 299.62,
+"out": 305.62,
+"said": 299.62,
+"solo": true,
+"kw": "WIGGLE IT",
+"kw2": "if it moves: plumber",
+"ph": "ph_wiggle"
+},
+{
+"k": "skewers",
+"at": 345.12,
+"out": 351.12,
+"said": 340.72,
+"solo": true,
+"kw": "$1",
+"kw2": "100 wooden skewers",
+"ph": "ph_skewers"
+},
+{
+"k": "scarf",
+"at": 404.431,
+"out": 408.93,
+"said": 404.43,
+"sp": 1.444,
+"solo": true,
+"kw": "A SCARF",
+"kw2": "vinegar strip + rubber band",
+"ph": "ph_scarf"
+},
+{
+"k": "wetsand",
+"at": 438.65,
+"out": 443.15,
+"said": 441.55,
+"sp": 1.333,
+"solo": true,
+"kw": "WET SAND",
+"kw2": "a farmhouse in Medina / 2 hours",
+"ph": "ph_wetsand"
+},
+{
+"k": "circles",
+"at": 452.791,
+"out": 458.29,
+"said": 452.79,
+"sp": 1.091,
+"solo": true,
+"kw": "CIRCLES",
+"kw2": "you'll feel the crust break",
+"ph": "ph_circles"
+},
+{
+"k": "steps",
+"at": 498.011,
+"out": 504.51,
+"said": 498.01,
+"solo": true,
+"kw": "ONE HOUR",
+"kw2": "on her front steps",
+"ph": "ph_steps"
+},
+{
+"k": "fizz",
+"at": 523.95,
+"out": 528.45,
+"said": 524.95,
+"sp": 1.333,
+"solo": true,
+"kw": "FIZZ",
+"kw2": "the peroxide at work",
+"ph": "ph_fizz"
+},
+{
+"k": "pitted",
+"at": 565.43,
+"out": 571.93,
+"said": 562.83,
+"solo": true,
+"kw": "PITTED",
+"kw2": "years of bleach on chrome",
+"ph": "ph_pitted"
+},
+{
+"k": "thread",
+"at": 599.39,
+"out": 605.89,
+"said": 594.29,
+"solo": true,
+"kw": "THE THREAD",
+"kw2": "one long black piece",
+"ph": "ph_thread"
+},
+{
+"k": "wagon",
+"at": 637.791,
+"out": 644.79,
+"said": 637.79,
+"solo": true,
+"kw": "PARMA, 1991",
+"kw2": "Dot's crew in a station wagon",
+"ph": "ph_wagon"
+},
+{
+"k": "pinch",
+"at": 668.89,
+"out": 674.89,
+"said": 665.19,
+"solo": true,
+"kw": "2 SECONDS",
+"kw2": "once around the base",
+"ph": "ph_pinch"
+},
+{
+"k": "soapdish",
+"at": 708.68,
+"out": 713.18,
+"said": 710.08,
+"sp": 1.333,
+"solo": true,
+"kw": "A DISH",
+"kw2": "never on the wet counter",
+"ph": "ph_soapdish"
+},
+{
+"k": "gasket",
+"at": 767.102,
+"out": 773.6,
+"said": 767.1,
+"solo": true,
+"kw": "THE GASKET",
+"kw2": "shrinks and leaves a gap",
+"ph": "ph_gasket"
+},
+{
+"k": "flakes",
+"at": 812.822,
+"out": 819.32,
+"said": 812.82,
+"solo": true,
+"kw": "THE AERATOR",
+"kw2": "grit, white flakes, black film",
+"ph": "ph_flakes"
+},
+{
+"k": "tent",
+"at": 893.06,
+"out": 899.06,
+"said": 890.56,
+"solo": true,
+"kw": "A WET TENT",
+"kw2": "right over the seam",
+"ph": "ph_tent"
+},
+{
+"k": "sprayer",
+"at": 959.92,
+"out": 965.92,
+"said": 954.62,
+"solo": true,
+"kw": "2ND SEAM",
+"kw2": "the sprayer hose base",
+"ph": "ph_sprayer"
+},
+{
+"k": "rags",
+"at": 1064.413,
+"out": 1068.91,
+"said": 1064.41,
+"sp": 1.444,
+"solo": true,
+"kw": "BLUE / PINK",
+"kw2": "sink rag / toilet rag",
+"ph": "ph_rags"
+},
+{
+"k": "overflow",
+"at": 1094.053,
+"out": 1100.55,
+"said": 1094.05,
+"solo": true,
+"kw": "THE OVERFLOW",
+"kw2": "peroxide + a pipe cleaner",
+"ph": "ph_overflow"
+},
+{
+"k": "finger",
+"at": 1206.612,
+"out": 1213.11,
+"said": 1206.61,
+"solo": true,
+"kw": "$200 BACK",
+"kw2": "a thread as long as a finger",
+"ph": "ph_finger"
+},
+{
+"k": "pump",
+"at": 1238.25,
+"out": 1244.75,
+"said": 1233.05,
+"solo": true,
+"kw": "THE DRIP",
+"kw2": "a $2 pump head fixed it",
+"ph": "ph_pump"
+},
+{
+"k": "yellow",
+"at": 1295.273,
+"out": 1300.77,
+"said": 1295.27,
+"sp": 1.273,
+"solo": true,
+"kw": "STILL THERE",
+"kw2": "folded in thirds",
+"ph": "ph_yellow"
+}
+]

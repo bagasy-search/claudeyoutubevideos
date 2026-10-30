@@ -1,0 +1,1838 @@
+{
+"segs": [
+[
+3.5,
+6.6,
+"shot",
+"n_cepillo_dientes_pileta"
+],
+[
+6.6,
+12.06,
+"shot",
+"v01_guante"
+],
+[
+12.06,
+14.7,
+"shot",
+"n_calendario_domingo"
+],
+[
+18.5,
+25.46,
+"shot",
+"n_balde_limpieza_porche"
+],
+[
+25.46,
+28.22,
+"shot",
+"n_canilla_linea_negra"
+],
+[
+28.22,
+31.8,
+"shot",
+"n_bano_ordenado"
+],
+[
+37.928,
+44.34,
+"shot",
+"n_lupa_costura"
+],
+[
+44.34,
+48.68,
+"shot",
+"n_tres_cosas_bowl"
+],
+[
+48.68,
+49.788,
+"shot",
+"n_toalla_doblada_canilla"
+],
+[
+53.417,
+60.28,
+"shot",
+"n_foto_1993_bano"
+],
+[
+60.28,
+62.5,
+"shot",
+"n_libro_marron_mesa"
+],
+[
+65.9,
+69.84,
+"shot",
+"n_cuaderno_recetas"
+],
+[
+69.84,
+73.02,
+"shot",
+"n_factura_plomero"
+],
+[
+73.02,
+77.9,
+"shot",
+"n_libro_estante_bano"
+],
+[
+83.1,
+89.44,
+"shot",
+"v02_lupa"
+],
+[
+89.44,
+93.58,
+"shot",
+"n_mugre_jabon"
+],
+[
+93.58,
+95.1,
+"shot",
+"n_bajo_mesada_productos"
+],
+[
+100.1,
+104.46,
+"shot",
+"n_rhonda_joven_1990"
+],
+[
+104.46,
+106.62,
+"shot",
+"n_capas_costura_macro"
+],
+[
+106.62,
+112.4,
+"shot",
+"n_gotas_secas_cal"
+],
+[
+117.0,
+123.62,
+"shot",
+"n_base_canilla_lateral"
+],
+[
+123.62,
+128.08,
+"shot",
+"n_cresta_cal"
+],
+[
+128.08,
+128.98,
+"shot",
+"n_biofilm_macro"
+],
+[
+133.92,
+141.3,
+"shot",
+"n_biofilm_hilos"
+],
+[
+141.3,
+144.02,
+"shot",
+"n_enrejado_jardin"
+],
+[
+144.02,
+145.9,
+"shot",
+"n_canilla_gotea"
+],
+[
+150.6,
+157.18,
+"shot",
+"n_manos_jabon_canilla"
+],
+[
+157.18,
+161.94,
+"shot",
+"n_espuma_costura"
+],
+[
+161.94,
+163.178,
+"shot",
+"n_jabon_liquido_dispenser"
+],
+[
+167.2,
+175.46,
+"shot",
+"n_cal_textura"
+],
+[
+175.46,
+178.476,
+"shot",
+"n_pileta_mojada_noche"
+],
+[
+182.5,
+185.62,
+"shot",
+"n_esponja_canilla"
+],
+[
+185.62,
+191.18,
+"shot",
+"n_esponja_sucia_macro"
+],
+[
+191.18,
+192.857,
+"shot",
+"n_raices_bajo_borde"
+],
+[
+197.6,
+205.6,
+"shot",
+"n_esponja_pasa"
+],
+[
+205.6,
+208.42,
+"shot",
+"n_costura_gota"
+],
+[
+208.42,
+209.5,
+"shot",
+"n_sombra_gris_dia3"
+],
+[
+214.612,
+219.96,
+"shot",
+"n_casa_westlake"
+],
+[
+219.96,
+226.3,
+"shot",
+"n_cepillo_desgastado"
+],
+[
+232.049,
+234.96,
+"shot",
+"n_esponja_mojada_canilla"
+],
+[
+234.96,
+240.06,
+"shot",
+"n_regadera_jardin"
+],
+[
+240.06,
+243.8,
+"shot",
+"n_tres_objetos_mesada"
+],
+[
+247.221,
+254.12,
+"shot",
+"n_canilla_brillante"
+],
+[
+254.12,
+259.2,
+"shot",
+"n_papel_higienico_punta"
+],
+[
+263.732,
+269.4,
+"shot",
+"n_papel_costura"
+],
+[
+269.4,
+274.592,
+"shot",
+"n_papel_negro"
+],
+[
+278.932,
+286.08,
+"shot",
+"n_papel_gris_limpio"
+],
+[
+286.08,
+292.27,
+"shot",
+"n_dos_papeles"
+],
+[
+295.924,
+303.42,
+"shot",
+"n_mano_mueve_canilla"
+],
+[
+303.42,
+308.2,
+"shot",
+"n_agua_filtra_base"
+],
+[
+313.0,
+322.18,
+"shot",
+"n_llave_inglesa_caja"
+],
+[
+322.18,
+323.4,
+"shot",
+"n_kit_dolar_bowl"
+],
+[
+327.5,
+337.82,
+"shot",
+"n_cepillo_viejo"
+],
+[
+337.82,
+340.984,
+"shot",
+"n_brochetas_paquete"
+],
+[
+345.024,
+350.45,
+"shot",
+"n_vinagre_blanco"
+],
+[
+350.45,
+356.363,
+"shot",
+"n_botella_marron"
+],
+[
+362.131,
+367.21,
+"shot",
+"n_banda_elastica"
+],
+[
+367.21,
+372.31,
+"shot",
+"n_toalla_mano_seca"
+],
+[
+372.31,
+375.0,
+"shot",
+"n_monedas_billetes"
+],
+[
+379.83,
+387.45,
+"shot",
+"n_cal_primer_plano"
+],
+[
+387.45,
+390.25,
+"shot",
+"n_seca_papel"
+],
+[
+390.25,
+391.7,
+"shot",
+"n_tira_papel"
+],
+[
+397.127,
+399.99,
+"shot",
+"n_tira_vinagre"
+],
+[
+399.99,
+407.99,
+"shot",
+"v04_vinagre"
+],
+[
+414.5,
+417.77,
+"shot",
+"n_taza_cafe_reloj"
+],
+[
+417.77,
+424.79,
+"shot",
+"n_burbujas_cal"
+],
+[
+424.79,
+427.8,
+"shot",
+"n_vinagre_escurre"
+],
+[
+431.2,
+439.25,
+"shot",
+"n_pozo_granja"
+],
+[
+439.25,
+441.55,
+"shot",
+"n_granja_medina"
+],
+[
+441.55,
+443.296,
+"shot",
+"n_cal_arena_mojada"
+],
+[
+448.3,
+452.79,
+"shot",
+"n_quita_tira"
+],
+[
+452.79,
+458.6,
+"shot",
+"v03_cepillo"
+],
+[
+462.219,
+468.09,
+"shot",
+"n_ventana_abierta_bano"
+],
+[
+468.09,
+475.981,
+"shot",
+"n_dos_botellas_separadas"
+],
+[
+479.301,
+488.71,
+"shot",
+"n_guantes_anteojos"
+],
+[
+488.71,
+490.3,
+"shot",
+"n_lavandina_estante"
+],
+[
+495.9,
+503.85,
+"shot",
+"n_escalones_porche"
+],
+[
+503.85,
+508.4,
+"shot",
+"n_un_producto"
+],
+[
+514.8,
+522.8,
+"shot",
+"v05_rociador"
+],
+[
+525.57,
+528.5,
+"shot",
+"n_efervescencia"
+],
+[
+532.642,
+537.59,
+"shot",
+"n_timer_10"
+],
+[
+537.59,
+543.784,
+"shot",
+"n_burbujas_macro_negro"
+],
+[
+548.3,
+555.05,
+"shot",
+"n_lavandina_charco"
+],
+[
+555.05,
+561.6,
+"shot",
+"n_gota_raiz"
+],
+[
+565.4,
+567.63,
+"shot",
+"n_canilla_opaca"
+],
+[
+567.63,
+577.57,
+"shot",
+"n_burbujas_agua"
+],
+[
+583.513,
+590.29,
+"shot",
+"n_brocheta_mano"
+],
+[
+590.29,
+593.479,
+"shot",
+"v06_palillo"
+],
+[
+599.3,
+603.27,
+"shot",
+"n_hilo_negro_brocheta"
+],
+[
+603.27,
+610.37,
+"shot",
+"n_papel_rayas_negras"
+],
+[
+610.37,
+612.755,
+"shot",
+"n_varilla_tapon"
+],
+[
+616.637,
+620.77,
+"shot",
+"n_spray_rapido"
+],
+[
+620.77,
+625.63,
+"shot",
+"n_enjuague_canilla"
+],
+[
+625.63,
+628.2,
+"shot",
+"n_toalla_amarilla_estante"
+],
+[
+634.3,
+638.25,
+"shot",
+"n_dot_1991"
+],
+[
+638.25,
+642.67,
+"shot",
+"n_rural_parma"
+],
+[
+642.67,
+646.6,
+"shot",
+"n_manos_dot_mopa"
+],
+[
+651.612,
+658.81,
+"shot",
+"n_toalla_doblando"
+],
+[
+658.81,
+663.972,
+"shot",
+"v09_toalla"
+],
+[
+668.841,
+673.57,
+"shot",
+"n_pellizco_toalla"
+],
+[
+673.57,
+679.8,
+"shot",
+"n_tres_cosas_tachadas"
+],
+[
+683.6,
+693.36,
+"shot",
+"n_base_seca"
+],
+[
+693.36,
+694.88,
+"shot",
+"n_casa_familia_1990"
+],
+[
+694.88,
+696.2,
+"shot",
+"n_planta_ford"
+],
+[
+700.4,
+710.14,
+"shot",
+"n_dos_toallas"
+],
+[
+710.14,
+713.2,
+"shot",
+"n_jabonera_bajo_botella"
+],
+[
+718.8,
+722.4,
+"shot",
+"n_botella_charco"
+],
+[
+722.4,
+727.88,
+"shot",
+"n_libro_cocina_luz"
+],
+[
+727.88,
+729.953,
+"shot",
+"n_libro_paginas"
+],
+[
+734.7,
+742.8,
+"shot",
+"n_junta_ducha"
+],
+[
+742.8,
+745.7,
+"shot",
+"n_tecnico_puerta"
+],
+[
+745.7,
+747.5,
+"shot",
+"n_alcancia_monedas"
+],
+[
+751.3,
+757.74,
+"shot",
+"n_tubo_silicona"
+],
+[
+757.74,
+761.275,
+"shot",
+"n_sombra_vuelve"
+],
+[
+765.5,
+776.86,
+"shot",
+"n_junta_goma"
+],
+[
+776.86,
+779.1,
+"shot",
+"n_hueco_agua"
+],
+[
+782.404,
+789.56,
+"shot",
+"n_silicona_ferreteria"
+],
+[
+789.56,
+793.9,
+"shot",
+"n_cordon_silicona"
+],
+[
+799.417,
+803.26,
+"shot",
+"n_silicona_seca"
+],
+[
+803.26,
+808.353,
+"shot",
+"v07_aireador"
+],
+[
+812.7,
+817.96,
+"shot",
+"n_aireador_sucio"
+],
+[
+817.96,
+824.179,
+"shot",
+"n_aireador_taza"
+],
+[
+829.6,
+837.04,
+"shot",
+"n_cinco_errores_mesada"
+],
+[
+837.04,
+842.5,
+"shot",
+"n_esponja_gris"
+],
+[
+847.9,
+851.58,
+"shot",
+"n_papel_tacho"
+],
+[
+851.58,
+856.9,
+"shot",
+"n_lavandina_canilla"
+],
+[
+860.8,
+870.92,
+"shot",
+"n_cromo_picado"
+],
+[
+870.92,
+873.154,
+"shot",
+"n_botella_mezcla"
+],
+[
+876.825,
+881.98,
+"shot",
+"n_ventana_cocina_abierta"
+],
+[
+881.98,
+887.5,
+"shot",
+"n_trapo_colgado_canilla"
+],
+[
+893.0,
+900.78,
+"shot",
+"n_esponja_verde_polvo"
+],
+[
+900.78,
+905.3,
+"shot",
+"n_rayones_cromo"
+],
+[
+909.9,
+917.64,
+"shot",
+"n_cepillo_suave_papel"
+],
+[
+917.64,
+922.6,
+"shot",
+"n_canilla_negra_mate"
+],
+[
+928.404,
+933.9,
+"shot",
+"n_bicarbonato_caja"
+],
+[
+933.9,
+937.8,
+"shot",
+"n_canilla_bronce"
+],
+[
+943.7,
+949.82,
+"shot",
+"n_canilla_cocina_alta"
+],
+[
+949.82,
+954.44,
+"shot",
+"n_jabon_platos_pileta"
+],
+[
+954.44,
+956.1,
+"shot",
+"n_base_rociador"
+],
+[
+959.9,
+968.12,
+"shot",
+"n_toalla_cocina_borde"
+],
+[
+968.12,
+971.1,
+"shot",
+"n_cocina_noche_luz"
+],
+[
+976.0,
+980.56,
+"shot",
+"n_paso1_papel"
+],
+[
+980.56,
+985.055,
+"shot",
+"n_paso1_mano"
+],
+[
+989.7,
+993.46,
+"shot",
+"n_paso2_cafe"
+],
+[
+993.46,
+1000.14,
+"shot",
+"n_paso3_cepillo"
+],
+[
+1000.14,
+1003.266,
+"shot",
+"n_paso4_spray"
+],
+[
+1007.5,
+1014.58,
+"shot",
+"n_paso5_brocheta"
+],
+[
+1014.58,
+1019.198,
+"shot",
+"n_paso6_enjuague"
+],
+[
+1023.602,
+1035.6,
+"shot",
+"n_paso7_pellizco"
+],
+[
+1035.6,
+1037.3,
+"shot",
+"n_calendario_dos_meses"
+],
+[
+1042.725,
+1051.13,
+"shot",
+"n_dot_jabonera"
+],
+[
+1051.13,
+1054.186,
+"shot",
+"n_esponja_secando"
+],
+[
+1058.9,
+1068.37,
+"shot",
+"n_trapos_colores"
+],
+[
+1068.37,
+1069.4,
+"shot",
+"n_auto_ruta_ohio"
+],
+[
+1073.3,
+1080.75,
+"shot",
+"n_canilla_seca_trapo"
+],
+[
+1080.75,
+1084.8,
+"shot",
+"n_cartas_comentarios"
+],
+[
+1088.836,
+1096.51,
+"shot",
+"n_rebalse_pileta"
+],
+[
+1096.51,
+1099.09,
+"shot",
+"n_botella_apretable"
+],
+[
+1099.09,
+1101.38,
+"shot",
+"n_limpiapipas"
+],
+[
+1106.731,
+1114.55,
+"shot",
+"n_ablandador_agua"
+],
+[
+1114.55,
+1116.381,
+"shot",
+"n_toalla_amarilla_2"
+],
+[
+1121.0,
+1131.73,
+"shot",
+"n_limpiador_inodoro"
+],
+[
+1131.73,
+1133.8,
+"shot",
+"n_canasto_inodoro"
+],
+[
+1137.2,
+1146.41,
+"shot",
+"n_vaso_cepillos"
+],
+[
+1146.41,
+1148.552,
+"shot",
+"n_inhalador_mesa"
+],
+[
+1154.3,
+1164.43,
+"shot",
+"n_moho_pared"
+],
+[
+1164.43,
+1166.368,
+"shot",
+"n_tres_canillas"
+],
+[
+1170.908,
+1179.33,
+"shot",
+"n_cajas_mudanza"
+],
+[
+1179.33,
+1181.869,
+"shot",
+"n_contrato_alquiler"
+],
+[
+1187.918,
+1195.75,
+"shot",
+"n_borrador_magico"
+],
+[
+1195.75,
+1198.5,
+"shot",
+"n_canilla_envuelta"
+],
+[
+1203.143,
+1212.45,
+"shot",
+"n_hilo_largo"
+],
+[
+1212.45,
+1214.09,
+"shot",
+"n_pareja_sonrie"
+],
+[
+1214.09,
+1216.0,
+"shot",
+"n_cheque_deposito"
+],
+[
+1220.4,
+1226.47,
+"shot",
+"n_cocina_avon"
+],
+[
+1226.47,
+1232.697,
+"shot",
+"n_anillo_granito"
+],
+[
+1238.2,
+1245.73,
+"shot",
+"n_charco_granito"
+],
+[
+1245.73,
+1249.6,
+"shot",
+"n_cabezal_bomba"
+],
+[
+1253.519,
+1265.61,
+"shot",
+"n_gota_bomba"
+],
+[
+1265.61,
+1267.2,
+"shot",
+"n_casa_elyria"
+],
+[
+1271.605,
+1280.73,
+"shot",
+"n_manos_mayores"
+],
+[
+1280.73,
+1282.5,
+"shot",
+"n_pileta_vieja_mama"
+],
+[
+1288.5,
+1299.73,
+"shot",
+"n_toalla_amarilla_vieja"
+],
+[
+1299.73,
+1301.298,
+"shot",
+"n_canilla_impecable"
+],
+[
+1305.5,
+1315.67,
+"shot",
+"n_recap_kit"
+],
+[
+1315.67,
+1319.1,
+"shot",
+"n_recap_biofilm"
+],
+[
+1324.537,
+1334.35,
+"shot",
+"n_recap_vinagre"
+],
+[
+1334.35,
+1336.575,
+"shot",
+"n_recap_brocheta"
+],
+[
+1340.617,
+1351.67,
+"shot",
+"n_recap_silicona"
+],
+[
+1351.67,
+1355.3,
+"shot",
+"n_recap_dolares"
+],
+[
+1358.921,
+1367.0,
+"shot",
+"v10_botiquin"
+],
+[
+1368.83,
+1371.17,
+"shot",
+"n_lugares_casa"
+],
+[
+1375.5,
+1383.5,
+"shot",
+"v08_seca"
+]
+],
+"cam": [
+[
+407.99,
+409.0,
+"wide"
+],
+[
+522.8,
+525.57,
+"wide"
+],
+[
+1367.0,
+1368.83,
+"wide"
+],
+[
+1383.5,
+1384.5,
+"wide"
+]
+],
+"ov": [
+{
+"k": "stamp",
+"txt": "SCRUBBED SUNDAY · BACK BY THURSDAY",
+"at": 14.94,
+"out": 17.94
+},
+{
+"k": "chip",
+"txt": "34 YEARS CLEANING HOUSES · OHIO",
+"at": 19.92,
+"out": 23.42
+},
+{
+"k": "stamp",
+"txt": "IT'S NOT DIRT",
+"at": 25.46,
+"out": 28.46
+},
+{
+"k": "chip",
+"txt": "HARDER SCRUB = FASTER COMEBACK",
+"col": "red",
+"at": 36.2,
+"out": 39.7
+},
+{
+"k": "big",
+"txt": "1991",
+"sub": "DOT'S 2-SECOND HABIT · STEP 9",
+"col": "amber",
+"at": 51.76,
+"out": 54.96
+},
+{
+"k": "step",
+"n": 1,
+"name": "WHAT THAT BLACK LINE REALLY IS",
+"at": 82.92,
+"out": 86.92
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "CALCIUM",
+"col": "ice",
+"at": 113.3
+},
+{
+"txt": "MAGNESIUM",
+"col": "ice",
+"at": 113.94
+}
+],
+"at": 113.3,
+"out": 116.44
+},
+{
+"k": "stamp",
+"txt": "BIOFILM · IT'S ALIVE",
+"at": 130.04,
+"out": 133.04
+},
+{
+"k": "chip",
+"txt": "YOUR SOAP = ITS FOOD",
+"col": "red",
+"at": 162.7,
+"out": 166.2
+},
+{
+"k": "step",
+"n": 2,
+"name": "WHY IT KEEPS COMING BACK",
+"at": 177.42,
+"out": 181.42
+},
+{
+"k": "big",
+"txt": "DAY 5",
+"sub": "BLACK AGAIN",
+"col": "red",
+"at": 209.8,
+"out": 213.0
+},
+{
+"k": "stamp",
+"txt": "SHE WAS WATERING IT",
+"at": 234.46,
+"out": 237.46
+},
+{
+"k": "check",
+"title": "WHY IT COMES BACK",
+"rows": [
+{
+"txt": "Crust to hold on to",
+"at": 240.92
+},
+{
+"txt": "A seam that never dries",
+"at": 243.94
+},
+{
+"txt": "Soap to eat",
+"at": 245.82
+}
+],
+"at": 240.92,
+"out": 249.82
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE NAPKIN TEST",
+"at": 253.34,
+"out": 257.34
+},
+{
+"k": "chip",
+"txt": "BLACK + SLIMY = BIOFILM",
+"col": "red",
+"at": 269.4,
+"out": 272.9
+},
+{
+"k": "chip",
+"txt": "GRAY + GRITTY = MINERAL",
+"col": "ice",
+"at": 277.38,
+"out": 280.88
+},
+{
+"k": "stamp",
+"txt": "A LEAK IS A PLUMBER JOB",
+"at": 314.78,
+"out": 317.78
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE DOLLAR TOOLS",
+"at": 321.18,
+"out": 325.18
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "OLD TOOTHBRUSH",
+"col": "amber",
+"at": 329.46
+},
+{
+"txt": "WOODEN SKEWER",
+"col": "amber",
+"at": 337.82
+},
+{
+"txt": "WHITE VINEGAR",
+"col": "amber",
+"at": 347.79
+},
+{
+"txt": "3% PEROXIDE",
+"col": "amber",
+"at": 350.45
+}
+],
+"at": 329.46,
+"out": 352.95
+},
+{
+"k": "big",
+"txt": "$4",
+"sub": "30 CLEANINGS",
+"col": "green",
+"at": 372.31,
+"out": 375.51
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE VINEGAR WRAP",
+"at": 377.47,
+"out": 381.47
+},
+{
+"k": "chip",
+"txt": "PAPER TOWEL STRIP · 2 INCHES WIDE",
+"at": 393.49,
+"out": 396.99
+},
+{
+"k": "big",
+"txt": "30 MIN",
+"sub": "THE WRAP DOES THE WORK",
+"col": "amber",
+"at": 414.51,
+"out": 417.71
+},
+{
+"k": "chip",
+"txt": "SPRAY + WIPE = 10 SECONDS OF NOTHING",
+"col": "red",
+"at": 424.79,
+"out": 428.29
+},
+{
+"k": "step",
+"n": 6,
+"name": "RINSE AND DRY",
+"at": 443.11,
+"out": 447.11
+},
+{
+"k": "stamp",
+"txt": "NEVER MIX VINEGAR + PEROXIDE",
+"at": 468.09,
+"out": 471.09
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "BLEACH + VINEGAR = GAS",
+"col": "red",
+"at": 490.63
+},
+{
+"txt": "BLEACH + AMMONIA = GAS",
+"col": "red",
+"at": 493.17
+}
+],
+"at": 490.63,
+"out": 495.67
+},
+{
+"k": "chip",
+"txt": "ONE PRODUCT · RINSE · WINDOW OPEN",
+"col": "green",
+"at": 503.85,
+"out": 507.35
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE BROWN BOTTLE",
+"at": 514.87,
+"out": 518.87
+},
+{
+"k": "big",
+"txt": "10 MIN",
+"sub": "DON'T WIPE IT YET",
+"col": "amber",
+"at": 535.59,
+"out": 538.79
+},
+{
+"k": "chip",
+"txt": "PEROXIDE → WATER + OXYGEN",
+"col": "green",
+"at": 568.83,
+"out": 572.33
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE SKEWER IN THE SEAM",
+"at": 580.71,
+"out": 584.71
+},
+{
+"k": "chip",
+"txt": "AROUND TWICE · WIPE AS YOU GO",
+"at": 606.39,
+"out": 609.89
+},
+{
+"k": "step",
+"n": 9,
+"name": "DOT'S 2-SECOND HABIT",
+"col": "red",
+"at": 628.55,
+"out": 632.55
+},
+{
+"k": "stamp",
+"txt": "NOW KEEP IT CLEAN",
+"at": 650.33,
+"out": 653.33
+},
+{
+"k": "chip",
+"txt": "HAND TOWEL · FOLDED IN THIRDS",
+"col": "ice",
+"at": 654.91,
+"out": 658.41
+},
+{
+"k": "stamp",
+"txt": "NO WATER · NO FOOD · NO LINE",
+"at": 688.25,
+"out": 691.25
+},
+{
+"k": "chip",
+"txt": "FRESH TOWEL EVERY 2 DAYS",
+"at": 704.24,
+"out": 707.74
+},
+{
+"k": "step",
+"n": 10,
+"name": "SILICONE + THE AERATOR",
+"at": 749.94,
+"out": 753.94
+},
+{
+"k": "big",
+"txt": "$4",
+"sub": "CLEAR SILICONE · CLOSES THE GAP",
+"col": "amber",
+"at": 783.28,
+"out": 786.48
+},
+{
+"k": "chip",
+"txt": "CURE 24 H BEFORE IT GETS WET",
+"col": "red",
+"at": 796.74,
+"out": 800.24
+},
+{
+"k": "chip",
+"txt": "AERATOR · RAG ON IT · TURN LEFT",
+"at": 811.2,
+"out": 814.7
+},
+{
+"k": "deal",
+"at": 830.76,
+"out": 835.26
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "THE SPONGE YOU USE FOR EVERYTHING",
+"at": 835.66,
+"out": 843.66
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "BLEACH, WEEK AFTER WEEK",
+"at": 849.94,
+"out": 857.94
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "MIXING PRODUCTS",
+"at": 868.52,
+"out": 876.52
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "A WET SPONGE ON THE FAUCET",
+"at": 879.74,
+"out": 887.74
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "GREEN SCRUBBY PADS ON CHROME",
+"at": 896.44,
+"out": 904.44
+},
+{
+"k": "chip",
+"txt": "MATTE BLACK · 30 MIN MAX · DRY RIGHT AWAY",
+"col": "ice",
+"at": 917.64,
+"out": 921.14
+},
+{
+"k": "chip",
+"txt": "BRASS · NO VINEGAR WRAP",
+"col": "red",
+"at": 938.22,
+"out": 941.72
+},
+{
+"k": "clock",
+"marks": [
+[
+976.56,
+8.0
+],
+[
+984.98,
+8.08
+],
+[
+992.28,
+8.58
+],
+[
+999.28,
+8.67
+],
+[
+1005.94,
+8.83
+],
+[
+1014.58,
+8.9
+],
+[
+1019.46,
+9.0
+]
+],
+"at": 971.56,
+"out": 1023.46
+},
+{
+"k": "big",
+"txt": "6 MIN",
+"sub": "OF ACTUAL WORK",
+"col": "green",
+"at": 1029.0,
+"out": 1032.2
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "NO WET SOAP BOTTLE",
+"col": "red",
+"at": 1046.99
+},
+{
+"txt": "NO SPONGE IN THE SINK",
+"col": "red",
+"at": 1051.53
+},
+{
+"txt": "NO SHARED RAG",
+"col": "red",
+"at": 1060.11
+},
+{
+"txt": "NEVER A WET CLEAN",
+"col": "red",
+"at": 1071.69
+}
+],
+"at": 1041.35,
+"out": 1074.19
+},
+{
+"k": "stamp",
+"txt": "A WET CLEAN IS HALF A CLEAN",
+"at": 1074.83,
+"out": 1077.83
+},
+{
+"k": "chip",
+"txt": "«WATER SOFTENER?»",
+"col": "ice",
+"at": 1105.51,
+"out": 1109.01
+},
+{
+"k": "chip",
+"txt": "«TOILET BOWL CLEANER?» · NO",
+"col": "red",
+"at": 1118.33,
+"out": 1121.83
+},
+{
+"k": "chip",
+"txt": "BIGGER THAN A BATH TOWEL = CALL SOMEONE",
+"col": "red",
+"at": 1157.49,
+"out": 1160.99
+},
+{
+"k": "big",
+"txt": "$200",
+"sub": "THE DEPOSIT THEY GOT BACK",
+"col": "green",
+"at": 1179.51,
+"out": 1182.71
+},
+{
+"k": "stamp",
+"txt": "LOOK FOR THE DRIP",
+"at": 1259.99,
+"out": 1262.99
+},
+{
+"k": "chip",
+"txt": "THE LITTLE YELLOW TOWEL",
+"col": "amber",
+"at": 1296.97,
+"out": 1300.47
+},
+{
+"k": "recap",
+"rows": [
+1329.27,
+1331.35,
+1334.35,
+1337.03,
+1339.03,
+1349.79
+],
+"at": 1307.03,
+"out": 1355.79
+},
+{
+"k": "versus",
+"title": "THE BLACK LINE",
+"L": {
+"label": "SERVICE CALL",
+"val": "$100",
+"h": 0.95,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"R": {
+"label": "YOUR BATHROOM",
+"val": "$4",
+"h": 0.18,
+"col": "#5fd38a",
+"mark": "ok"
+},
+"at": 1351.67,
+"out": 1357.67
+},
+{
+"k": "ask",
+"at": 1363.93,
+"out": 1375.93
+},
+{
+"k": "next",
+"at": 1380.29,
+"out": 1385.29
+}
+],
+"cta1": {
+"guide": 72.02,
+"page": 74.66,
+"desc": 77.8,
+"manual": "92 FIXES · $1-2 EACH",
+"img": "page",
+"end": 83.8
+},
+"cta2": {
+"guide": 722.4,
+"page": 737.26,
+"desc": 747.5,
+"manual": "92 FIXES · $1-2 EACH",
+"img": "page",
+"end": 753.5
+},
+"cta3": {
+"desc": 1375.81,
+"end": 1380.81
+},
+"end": 1384.47,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+971.562,
+1029.002
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "THE ROUTINE",
+"recap": [
+"Napkin test · check for a leak",
+"Vinegar wrap · 30 min",
+"Toothbrush · rinse · dry",
+"3% peroxide · 10 min",
+"Skewer around twice",
+"Spray · scrub · rinse · dry",
+"Dot's towel · 2 seconds"
+],
+"ask": [
+"What's the one spot in your house",
+"that keeps coming back no matter what?",
+"Tell me in the comments · I read every one"
+],
+"next": [
+"NEXT TIME",
+"Another spot that keeps coming back"
+],
+"lower": [
+17.48,
+23.48
+]
+}
+}
