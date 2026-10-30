@@ -1,0 +1,3516 @@
+{
+"end": 1403.61,
+"shots": [
+{
+"a": 0.0,
+"b": 2.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/dur29b/v01.mp4"
+}
+},
+{
+"a": 2.98,
+"b": 6.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_g05_depth.png",
+"o": {
+"big": {
+"w": "30 M",
+"size": 200,
+"y": 140,
+"a": 45
+}
+}
+}
+},
+{
+"a": 6.56,
+"b": 9.2,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "1917",
+"side": "c",
+"v": "img/dur29b/cand/tunnelers_01.jpg",
+"ar": 0.8112,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 9.2,
+"b": 10.48,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/messines_03.jpg",
+"ar": 1.3327,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 10.48,
+"b": 11.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_g01_tunnel.png"
+}
+},
+{
+"a": 11.64,
+"b": 13.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_g07_low_ceiling.png"
+}
+},
+{
+"a": 13.62,
+"b": 15.96,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_g03_sandbags.png"
+}
+},
+{
+"a": 15.96,
+"b": 17.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_g06_lamp.jpg"
+}
+},
+{
+"a": 17.06,
+"b": 20.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_g08_hand_wall.png"
+}
+},
+{
+"a": 20.08,
+"b": 21.5,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29b/ag/dur29b_g04_wall_clay.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"no hagas *RUIDO.*"
+],
+"a": 6,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 21.5,
+"b": 29.58,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ArcillaEscucha",
+"bg": "img/dur29b/ag/dur29b_g04_wall_clay_2.png",
+"at": {
+"otro": 126,
+"escuchando": 193
+}
+},
+"big": true
+},
+{
+"a": 29.58,
+"b": 31.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_t02_map_table.png"
+}
+},
+{
+"a": 31.06,
+"b": 36.6,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "OchoCascos",
+"bg": "img/dur29b/ag/dur29b_t01_helmets.png",
+"at": {
+"ocho": 0
+}
+},
+"big": true
+},
+{
+"a": 36.6,
+"b": 39.0,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/napoleon_02.jpg",
+"ar": 0.837,
+"o": {
+"build": {
+"lines": [
+"ni *general.*"
+],
+"a": 34
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 39.0,
+"b": 40.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_t05_film_reel.png"
+}
+},
+{
+"a": 40.64,
+"b": 43.7,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "el puesto que *nadie* quería."
+},
+"big": true
+},
+{
+"a": 43.7,
+"b": 45.8,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_m02_trench.png"
+}
+},
+{
+"a": 45.8,
+"b": 48.9,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29b/ag/dur29b_d02_drum_snow.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"sobrevivir",
+"*UN TURNO.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 48.9,
+"b": 53.14,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 3600,
+"tag": "RENUNCIAS.",
+"sub": "el momento exacto.",
+"fz": 85
+},
+"big": true
+},
+{
+"a": 53.14,
+"b": 55.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_k01_backpack.png"
+}
+},
+{
+"a": 55.62,
+"b": 57.28,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/thermo_01.jpg",
+"ar": 1.5084,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 57.28,
+"b": 66.62,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "AsientoApodo",
+"bg": "img/dur29b/ag/dur29b_b02_turret.png",
+"at": {
+"apodo": 214
+}
+},
+"big": true
+},
+{
+"a": 66.62,
+"b": 68.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b03_frost.png"
+}
+},
+{
+"a": 68.26,
+"b": 74.04,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "*8* guerras. *1* turno."
+},
+"big": true
+},
+{
+"a": 74.04,
+"b": 75.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_f02_objects.png"
+}
+},
+{
+"a": 75.98,
+"b": 79.66,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/retreat_02.jpg",
+"ar": 1.5059,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 79.66,
+"b": 85.04,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Un lugar nuevo cada semana. Suscríbete + campanita.",
+"bg": "img/dur29b/ag/dur29b_t02_map_table_2.png"
+}
+},
+{
+"a": 85.04,
+"b": 87.04,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d05_horse_snow.png"
+}
+},
+{
+"a": 87.04,
+"b": 93.62,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿En qué guerra durarías más?",
+"bell": false,
+"bg": "img/dur29b/cand/corinth_01.jpg"
+}
+},
+{
+"a": 93.62,
+"b": 95.02,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 0
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 95.02,
+"b": 99.36,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+22.6,
+38.2
+],
+"lines": [
+"GRECIA",
+"480 a.C.",
+"HOPLITA"
+],
+"name": "Grecia"
+},
+"big": true
+},
+{
+"a": 99.36,
+"b": 102.66,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_h03_greaves.png"
+}
+},
+{
+"a": 102.66,
+"b": 106.64,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/corinth_02.jpg",
+"ar": 0.7911,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 106.64,
+"b": 109.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_h03_greaves_s1.png"
+}
+},
+{
+"a": 109.52,
+"b": 113.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_h02_shield.png"
+}
+},
+{
+"a": 113.3,
+"b": 117.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_h02_shield_s2.png"
+}
+},
+{
+"a": 117.1,
+"b": 126.54,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PesoHoplita",
+"bg": "img/dur29b/ag/dur29b_h02_shield_2.png",
+"at": {
+"kilos": 79
+}
+},
+"big": true
+},
+{
+"a": 126.54,
+"b": 129.64,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29b/cand/hoplite_01.jpg",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"un *HOPLITA.*",
+"primera fila."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 129.64,
+"b": 133.46,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/chigi_01.jpg",
+"ar": 1.6382,
+"o": {
+"build": {
+"lines": [
+"la *falange.*"
+],
+"size": 90,
+"a": 82
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 133.46,
+"b": 139.78,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_h05_shields_wall.png"
+}
+},
+{
+"a": 139.78,
+"b": 149.82,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "FalangeEscudos",
+"bg": "img/dur29b/ag/dur29b_h05_shields_wall_2.png",
+"at": {
+"agujero": 242
+}
+},
+"big": true
+},
+{
+"a": 149.82,
+"b": 155.56,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/hoplite_02.jpg",
+"ar": 1.5274,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 155.56,
+"b": 157.9,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29b/ag/dur29b_h06_sandals.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*OTHISMOS.*",
+"el empujón."
+],
+"a": 4,
+"y": 360,
+"size": 100
+}
+}
+}
+},
+{
+"a": 157.9,
+"b": 169.88,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "Othismos",
+"bg": "img/dur29b/ag/dur29b_h06_sandals_2.png",
+"at": {
+"medio": 297
+}
+},
+"big": true
+},
+{
+"a": 169.88,
+"b": 174.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_h05_shields_wall_3.png"
+}
+},
+{
+"a": 174.3,
+"b": 178.9,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_h05_shields_wall_s3.png"
+}
+},
+{
+"a": 178.9,
+"b": 191.58,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CascoVision",
+"bg": "img/dur29b/ag/dur29b_h01_bronze_helmet.png",
+"at": {
+"olla": 335
+}
+},
+"big": true
+},
+{
+"a": 191.58,
+"b": 194.4,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/corinth_03.jpg",
+"ar": 0.7901,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 194.4,
+"b": 199.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_h02_shield_3.png"
+}
+},
+{
+"a": 199.64,
+"b": 204.5,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/thermo_02.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 204.5,
+"b": 212.12,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ConElSobreEl",
+"bg": "img/dur29b/ag/dur29b_h04_plain_2.png",
+"at": {
+"con": 0,
+"sobre": 22
+}
+},
+"big": true
+},
+{
+"a": 212.12,
+"b": 214.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_h07_sea.png"
+}
+},
+{
+"a": 214.2,
+"b": 218.02,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_h06_sandals_3.png"
+}
+},
+{
+"a": 218.02,
+"b": 221.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_h06_sandals_s4.png"
+}
+},
+{
+"a": 221.6,
+"b": 224.46,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/hoplite_03.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 224.46,
+"b": 236.72,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 180,
+"tag": "3 MIN",
+"sub": "y tienes doce filas atrás.",
+"fz": 220,
+"s0": 164
+},
+"big": true
+},
+{
+"a": 236.72,
+"b": 238.24,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 1
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 238.24,
+"b": 242.06,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+2.13,
+50.46
+],
+"prev": [
+22.6,
+38.2
+],
+"lines": [
+"FRANCIA",
+"1415",
+"ARQUERO"
+],
+"name": "Azincourt"
+},
+"big": true
+},
+{
+"a": 242.06,
+"b": 245.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a01_mud_field.png",
+"o": {
+"label": "Azincourt, Francia"
+}
+}
+},
+{
+"a": 245.82,
+"b": 249.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a01_mud_field_s5.png"
+}
+},
+{
+"a": 249.58,
+"b": 253.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a07_feet_mud.png"
+}
+},
+{
+"a": 253.56,
+"b": 256.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a02_longbow.png"
+}
+},
+{
+"a": 256.54,
+"b": 258.62,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29b/cand/agincourt_03.jpg",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*ARQUERO*",
+"largo."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 258.62,
+"b": 264.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a03_arrows.png"
+}
+},
+{
+"a": 264.2,
+"b": 268.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/dur29b/v02.mp4"
+}
+},
+{
+"a": 268.48,
+"b": 274.94,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "1545",
+"side": "c",
+"v": "img/dur29b/cand/maryship_01.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 274.94,
+"b": 277.54,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/maryrose_01.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 277.54,
+"b": 284.82,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TensionArco",
+"bg": "img/dur29b/ag/dur29b_a02_longbow_3.png",
+"at": {
+"kilos": 130
+}
+},
+"big": true
+},
+{
+"a": 284.82,
+"b": 289.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a03_arrows_2.png",
+"o": {
+"build": {
+"lines": [
+"*10* veces por minuto."
+],
+"a": 114
+}
+}
+}
+},
+{
+"a": 289.58,
+"b": 295.8,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/maryship_02.jpg",
+"ar": 0.7529,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 295.8,
+"b": 302.52,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "HuesosAsimetricos",
+"bg": "img/dur29b/ag/dur29b_a06_bones.png",
+"at": {
+"grueso": 80
+}
+},
+"big": true
+},
+{
+"a": 302.52,
+"b": 308.02,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a06_bones_2.png"
+}
+},
+{
+"a": 308.02,
+"b": 310.8,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a08_sunday_butts.png"
+}
+},
+{
+"a": 310.8,
+"b": 316.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a08_sunday_butts_2.png",
+"o": {
+"build": {
+"lines": [
+"los *domingos.*"
+],
+"a": 119
+}
+}
+}
+},
+{
+"a": 316.3,
+"b": 321.26,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/agincourt_02.jpg",
+"ar": 1.2681,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 321.26,
+"b": 324.62,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/agincourt_01.jpg",
+"ar": 1.201,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 324.62,
+"b": 327.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a08_sunday_butts_s6.png"
+}
+},
+{
+"a": 327.84,
+"b": 329.02,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29b/ag/dur29b_a07_feet_mud_2.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*DISENTERÍA.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 329.02,
+"b": 334.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a01_mud_field_2.png"
+}
+},
+{
+"a": 334.86,
+"b": 340.04,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a07_feet_mud_3.png"
+}
+},
+{
+"a": 340.04,
+"b": 343.42,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/agincourt_04.jpg",
+"ar": 1.5012,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 343.42,
+"b": 347.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a04_stakes.png"
+}
+},
+{
+"a": 347.22,
+"b": 359.232,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CercaEstacas",
+"bg": "img/dur29b/ag/dur29b_a04_stakes_2.png",
+"at": {
+"estaca": 0,
+"caballos": 288
+}
+},
+"big": true
+},
+{
+"a": 359.232,
+"b": 361.632,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a04_stakes_3.png"
+}
+},
+{
+"a": 361.632,
+"b": 372.792,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 600,
+"tag": "10 MIN",
+"sub": "y eso si te dejan los intestinos.",
+"fz": 233,
+"s0": 543
+},
+"big": true
+},
+{
+"a": 372.792,
+"b": 374.172,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 2
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 374.172,
+"b": 378.072,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+11.6,
+52.1
+],
+"prev": [
+2.13,
+50.46
+],
+"lines": [
+"ALEMANIA",
+"1630",
+"ZAPADOR"
+],
+"name": "Alemania"
+},
+"big": true
+},
+{
+"a": 378.072,
+"b": 381.112,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z01_gallery.png"
+}
+},
+{
+"a": 381.112,
+"b": 384.672,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z05_rope.png"
+}
+},
+{
+"a": 384.672,
+"b": 389.372,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z05_rope_s7.png"
+}
+},
+{
+"a": 389.372,
+"b": 392.272,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z05_rope_2.png"
+}
+},
+{
+"a": 392.272,
+"b": 396.492,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z05_rope_s8.png"
+}
+},
+{
+"a": 396.492,
+"b": 398.472,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29b/ag/dur29b_z06_gunpowder.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*ZAPADOR*",
+"de asedio."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 398.472,
+"b": 401.912,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/callot_01.jpg",
+"ar": 2.2884,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 401.912,
+"b": 405.892,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z06_gunpowder_s9.png"
+}
+},
+{
+"a": 405.892,
+"b": 407.212,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/siege30_02.jpg",
+"ar": 1.791,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 407.212,
+"b": 412.232,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z02_walled_city.png"
+}
+},
+{
+"a": 412.232,
+"b": 415.932,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z02_walled_city_s10.png"
+}
+},
+{
+"a": 415.932,
+"b": 424.292,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "AsedioCorte",
+"bg": "img/dur29b/ag/dur29b_z02_walled_city_2.png",
+"at": {
+"polvora": 81,
+"volarla": 114
+}
+},
+"big": true
+},
+{
+"a": 424.292,
+"b": 428.692,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z01_gallery_s11.png"
+}
+},
+{
+"a": 428.692,
+"b": 430.332,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29b/ag/dur29b_z05_rope_3.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*CONTRAMINAS.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 430.332,
+"b": 433.712,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z01_gallery_3.png"
+}
+},
+{
+"a": 433.712,
+"b": 437.692,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/siege30_01.jpg",
+"ar": 1.7344,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 437.692,
+"b": 442.152,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z01_gallery_s12.png"
+}
+},
+{
+"a": 442.152,
+"b": 446.852,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z04_water_bowl.png"
+}
+},
+{
+"a": 446.852,
+"b": 459.792,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TamborArvejas",
+"bg": "img/dur29b/ag/dur29b_z03_drum_peas.png",
+"at": {
+"saltaban": 259
+}
+},
+"big": true
+},
+{
+"a": 459.792,
+"b": 463.312,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z03_drum_peas_2.png"
+}
+},
+{
+"a": 463.312,
+"b": 467.012,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/callot_03.jpg",
+"ar": 2.2588,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 467.012,
+"b": 470.732,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z03_drum_peas_s13.png"
+}
+},
+{
+"a": 470.732,
+"b": 475.612,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z07_village_ruin.png"
+}
+},
+{
+"a": 475.612,
+"b": 481.212,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z07_village_ruin_2.png",
+"o": {
+"big": {
+"w": "1/3",
+"size": 220,
+"y": 140,
+"a": 83
+}
+}
+}
+},
+{
+"a": 481.212,
+"b": 485.692,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z05_rope_4.png"
+}
+},
+{
+"a": 485.692,
+"b": 493.252,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CuerdaTirones",
+"bg": "img/dur29b/ag/dur29b_z05_rope_5.png",
+"at": {
+"uno": 79,
+"dos": 125,
+"tres": 178
+}
+},
+"big": true
+},
+{
+"a": 493.252,
+"b": 498.052,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z01_gallery_4.png"
+}
+},
+{
+"a": 498.052,
+"b": 502.572,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_z01_gallery_s14.png"
+}
+},
+{
+"a": 502.572,
+"b": 510.892,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 30,
+"tag": "30 SEG",
+"sub": "y no es el tuyo.",
+"fz": 206,
+"s0": 28
+},
+"big": true
+},
+{
+"a": 510.892,
+"b": 512.572,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 3
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 512.572,
+"b": 516.272,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+32.0,
+54.8
+],
+"prev": [
+11.6,
+52.1
+],
+"lines": [
+"RUSIA",
+"1812",
+"TAMBORILERO"
+],
+"name": "Rusia"
+},
+"big": true
+},
+{
+"a": 516.272,
+"b": 518.972,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d04_boots.png"
+}
+},
+{
+"a": 518.972,
+"b": 523.952,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d01_snow_road.png",
+"o": {
+"label": "Rusia, invierno"
+}
+}
+},
+{
+"a": 523.952,
+"b": 528.572,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/retreat_01.jpg",
+"ar": 1.3123,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 528.572,
+"b": 531.532,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d01_snow_road_s15.png"
+}
+},
+{
+"a": 531.532,
+"b": 533.912,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/dur29b/v03.mp4"
+}
+},
+{
+"a": 533.912,
+"b": 537.972,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29b/ag/dur29b_d02_drum_snow_3.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*TAMBORILERO.*",
+"catorce años."
+],
+"a": 4,
+"y": 360,
+"size": 100
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 537.972,
+"b": 558.572,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ColumnaRusia",
+"bg": "img/dur29b/ag/dur29b_d01_snow_road_2.png",
+"at": {
+"moscu": 329,
+"volver": 580
+}
+},
+"big": true
+},
+{
+"a": 558.572,
+"b": 562.692,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/retreat_03.jpg",
+"ar": 1.4478,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 562.692,
+"b": 576.552,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TamborOrdenes",
+"bg": "img/dur29b/ag/dur29b_d02_drum_snow_4.png",
+"at": {
+"radio": 108
+}
+},
+"big": true
+},
+{
+"a": 576.552,
+"b": 582.092,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d06_campfire_snow.png"
+}
+},
+{
+"a": 582.092,
+"b": 587.672,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d02_drum_snow_5.png",
+"o": {
+"build": {
+"lines": [
+"*12, 13, 14* años."
+],
+"a": 86
+}
+}
+}
+},
+{
+"a": 587.672,
+"b": 594.092,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d01_snow_road_3.png",
+"o": {
+"big": {
+"w": "−30°",
+"size": 220,
+"y": 140,
+"a": 133
+}
+}
+}
+},
+{
+"a": 594.092,
+"b": 597.632,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d06_campfire_snow_2.png"
+}
+},
+{
+"a": 597.632,
+"b": 600.632,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d05_horse_snow_2.png"
+}
+},
+{
+"a": 600.632,
+"b": 603.532,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/retreat_04.png",
+"ar": 1.525,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 603.532,
+"b": 607.052,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d04_boots_2.png"
+}
+},
+{
+"a": 607.052,
+"b": 611.472,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/berezina_01.jpg",
+"ar": 1.5106,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 611.472,
+"b": 614.832,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d04_boots_s16.png"
+}
+},
+{
+"a": 614.832,
+"b": 619.052,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/berezina_02.jpg",
+"ar": 1.4222,
+"o": {
+"build": {
+"lines": [
+"menos de *100.000.*"
+],
+"size": 90,
+"a": 83
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 619.052,
+"b": 623.232,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d01_snow_road_4.png"
+}
+},
+{
+"a": 623.232,
+"b": 628.332,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d06_campfire_snow_3.png"
+}
+},
+{
+"a": 628.332,
+"b": 638.672,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NoTeSientes",
+"bg": "img/dur29b/ag/dur29b_d01_snow_road_5.png",
+"at": {
+"sentaba": 0,
+"levantaba": 121
+}
+},
+"big": true
+},
+{
+"a": 638.672,
+"b": 643.432,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d02_drum_snow_6.png"
+}
+},
+{
+"a": 643.432,
+"b": 652.052,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 3600,
+"tag": "1 HORA",
+"sub": "pero no hay a dónde. Caminas.",
+"fz": 164,
+"s0": 3366
+},
+"big": true
+},
+{
+"a": 652.052,
+"b": 658.512,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_t02_map_table_3.png"
+}
+},
+{
+"a": 658.512,
+"b": 663.332,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_k01_backpack_2.png",
+"o": {
+"build": {
+"lines": [
+"*5* cosas."
+],
+"a": 20
+}
+}
+}
+},
+{
+"a": 663.332,
+"b": 672.692,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TopCinco",
+"bg": "img/dur29b/ag/dur29b_k01_backpack_2.png",
+"at": {
+"cinco": 6,
+"cuatro": 197,
+"tres": 9000,
+"dos": 9000,
+"uno": 9000
+}
+},
+"big": true
+},
+{
+"a": 672.692,
+"b": 674.052,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_h04_plain_t5.png"
+}
+},
+{
+"a": 674.052,
+"b": 675.512,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_a01_mud_field_t5.png"
+}
+},
+{
+"a": 675.512,
+"b": 676.772,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_d01_snow_road_t5.png"
+}
+},
+{
+"a": 676.772,
+"b": 698.352,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TopCinco",
+"bg": "img/dur29b/ag/dur29b_k01_backpack_t5.jpg",
+"at": {
+"cinco": -400,
+"cuatro": -200,
+"tres": 101,
+"dos": 279,
+"uno": 545
+}
+},
+"big": true
+},
+{
+"a": 698.352,
+"b": 702.023,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/scutari_02.jpg",
+"ar": 1.561,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 702.023,
+"b": 705.103,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_k01_backpack_s17.png"
+}
+},
+{
+"a": 705.103,
+"b": 709.603,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s04_lamp.png"
+}
+},
+{
+"a": 709.603,
+"b": 711.103,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 4
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 711.103,
+"b": 714.863,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+29.02,
+41.0
+],
+"prev": [
+32.0,
+54.8
+],
+"lines": [
+"CRIMEA",
+"1854",
+"ORDENANZA"
+],
+"name": "Scutari"
+},
+"big": true
+},
+{
+"a": 714.863,
+"b": 726.083,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PasilloInfinito",
+"bg": "img/dur29b/ag/dur29b_s01_corridor.png",
+"at": {}
+},
+"big": true
+},
+{
+"a": 726.083,
+"b": 728.983,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s01_corridor_2.png"
+}
+},
+{
+"a": 728.983,
+"b": 731.943,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/selimiye_01.jpg",
+"ar": 2.1429,
+"o": {
+"label": "Scutari, Estambul",
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 731.943,
+"b": 736.443,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s01_corridor_s18.png"
+}
+},
+{
+"a": 736.443,
+"b": 738.483,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29b/cand/scutari_03.jpg",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*ORDENANZA*",
+"del hospital."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 738.483,
+"b": 742.783,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/selimiye_03.jpg",
+"ar": 1.8338,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 742.783,
+"b": 746.843,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s05_ship.png"
+}
+},
+{
+"a": 746.843,
+"b": 751.423,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s05_ship_s19.png"
+}
+},
+{
+"a": 751.423,
+"b": 753.563,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s05_ship_2.png"
+}
+},
+{
+"a": 753.563,
+"b": 762.423,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TodoLoDemas",
+"bg": "img/dur29b/ag/dur29b_s03_bucket.png",
+"at": {
+"cargar": 64,
+"comida": 115,
+"baldes": 161,
+"limpiar": 204
+}
+},
+"big": true
+},
+{
+"a": 762.423,
+"b": 765.383,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/scutari_04.jpg",
+"ar": 1.3734,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 765.383,
+"b": 770.043,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s03_bucket_s20.png"
+}
+},
+{
+"a": 770.043,
+"b": 775.483,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s01_corridor_3.png"
+}
+},
+{
+"a": 775.483,
+"b": 781.563,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s08_sewer.png"
+}
+},
+{
+"a": 781.563,
+"b": 786.823,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s06_rats.png"
+}
+},
+{
+"a": 786.823,
+"b": 792.343,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/scutari_01.jpg",
+"ar": 1.5572,
+"o": {
+"build": {
+"lines": [
+"*4* de cada *10.*"
+],
+"size": 110,
+"a": 181
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 792.343,
+"b": 795.823,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s06_rats_s21.png"
+}
+},
+{
+"a": 795.823,
+"b": 799.803,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s01_corridor_4.png"
+}
+},
+{
+"a": 799.803,
+"b": 803.703,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "1854",
+"side": "c",
+"v": "img/dur29b/cand/nightingale_01.jpg",
+"ar": 0.7853,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 803.703,
+"b": 807.303,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s01_corridor_s22.png"
+}
+},
+{
+"a": 807.303,
+"b": 809.543,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/nightingale_02.jpg",
+"ar": 0.7853,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 809.543,
+"b": 825.183,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CloacaLimpia",
+"bg": "img/dur29b/ag/dur29b_s08_sewer_2.png",
+"at": {
+"limpiar": 432
+}
+},
+"big": true
+},
+{
+"a": 825.183,
+"b": 828.983,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_k02_bread_crust.png"
+}
+},
+{
+"a": 828.983,
+"b": 835.083,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s07_window_open.png"
+}
+},
+{
+"a": 835.083,
+"b": 838.863,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s07_window_open_s23.png"
+}
+},
+{
+"a": 838.863,
+"b": 841.563,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s02_barracks.png"
+}
+},
+{
+"a": 841.563,
+"b": 853.883,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 1200,
+"tag": "20 MIN",
+"sub": "y nunca más vas a oler algo igual.",
+"fz": 262,
+"s0": 1079
+},
+"big": true
+},
+{
+"a": 853.883,
+"b": 870.823,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CuerdasTiempo",
+"bg": "img/dur29b/ag/dur29b_f02_objects_2.png",
+"at": {
+"ranking": 0
+}
+},
+"big": true
+},
+{
+"a": 870.823,
+"b": 877.223,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b04_parachute.png"
+}
+},
+{
+"a": 877.223,
+"b": 878.723,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 5
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 878.723,
+"b": 882.283,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-77.23,
+39.83
+],
+"prev": [
+29.02,
+41.0
+],
+"lines": [
+"EE. UU.",
+"1863",
+"AYUDANTE"
+],
+"name": "Gettysburg"
+},
+"big": true
+},
+{
+"a": 882.283,
+"b": 885.583,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c01_tent.png"
+}
+},
+{
+"a": 885.583,
+"b": 889.483,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c01_tent_s24.png"
+}
+},
+{
+"a": 889.483,
+"b": 892.063,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c07_fields.png"
+}
+},
+{
+"a": 892.063,
+"b": 896.963,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c02_table.png"
+}
+},
+{
+"a": 896.963,
+"b": 900.023,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c02_table_s25.png"
+}
+},
+{
+"a": 900.023,
+"b": 903.303,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/gettysburg_01.jpg",
+"ar": 1.2565,
+"o": {
+"label": "Gettysburg, Pensilvania",
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 903.303,
+"b": 905.943,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29b/cand/gettysburg_02.jpg",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*AYUDANTE*",
+"de cirujano."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 905.943,
+"b": 910.183,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/lincoln_02.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 910.183,
+"b": 913.083,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c02_table_s26.png"
+}
+},
+{
+"a": 913.083,
+"b": 921.643,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BalaPlomo",
+"bg": "img/dur29b/ag/dur29b_c05_bullet.png",
+"at": {
+"pegar": 134
+}
+},
+"big": true
+},
+{
+"a": 921.643,
+"b": 924.963,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/surgkit_02.jpg",
+"ar": 1.3994,
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 924.963,
+"b": 928.163,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c05_bullet_s27.png"
+}
+},
+{
+"a": 928.163,
+"b": 932.563,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/amput_01.jpg",
+"ar": 1.3333,
+"o": {
+"build": {
+"lines": [
+"*decenas de miles.*"
+],
+"size": 90,
+"a": 38
+},
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 932.563,
+"b": 946.063,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "MitoVuelta",
+"bg": "img/dur29b/ag/dur29b_c04_chloroform.png",
+"at": {
+"realidad": 221
+}
+},
+"big": true
+},
+{
+"a": 946.063,
+"b": 951.723,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c04_chloroform_2.png"
+}
+},
+{
+"a": 951.723,
+"b": 956.523,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c04_chloroform_s28.png"
+}
+},
+{
+"a": 956.523,
+"b": 961.043,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c03_instruments.png",
+"o": {
+"big": {
+"w": "10 MIN",
+"size": 200,
+"y": 140,
+"a": 100
+}
+}
+}
+},
+{
+"a": 961.043,
+"b": 963.443,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c06_stretchers.png"
+}
+},
+{
+"a": 963.443,
+"b": 966.723,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c02_table_2.png"
+}
+},
+{
+"a": 966.723,
+"b": 973.163,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/surgkit_01.jpg",
+"ar": 0.9786,
+"o": {
+"credit": "Wikimedia Commons · No restrictions"
+}
+}
+},
+{
+"a": 973.163,
+"b": 982.263,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ManosGermenes",
+"bg": "img/dur29b/ag/dur29b_c08_bucket_water.png",
+"at": {}
+},
+"big": true
+},
+{
+"a": 982.263,
+"b": 988.283,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c08_bucket_water_2.png"
+}
+},
+{
+"a": 988.283,
+"b": 991.403,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c06_stretchers_2.png"
+}
+},
+{
+"a": 991.403,
+"b": 995.483,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c06_stretchers_s29.png"
+}
+},
+{
+"a": 995.483,
+"b": 1000.103,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_c01_tent_2.png"
+}
+},
+{
+"a": 1000.103,
+"b": 1011.623,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 60,
+"tag": "1 MIN",
+"sub": "y sales a respirar. Y no vuelves.",
+"fz": 220,
+"s0": 54
+},
+"big": true
+},
+{
+"a": 1011.623,
+"b": 1013.283,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 6
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 1013.283,
+"b": 1017.583,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+10.0,
+51.3
+],
+"prev": [
+-77.23,
+39.83
+],
+"lines": [
+"ALEMANIA",
+"1943",
+"ARTILLERO"
+],
+"name": "sobre Alemania"
+},
+"big": true
+},
+{
+"a": 1017.583,
+"b": 1022.183,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b03_frost_2.png"
+}
+},
+{
+"a": 1022.183,
+"b": 1031.383,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TorretaCola",
+"bg": "img/dur29b/ag/dur29b_b01_bomber.png",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1031.383,
+"b": 1035.163,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b06_city_fire.png"
+}
+},
+{
+"a": 1035.163,
+"b": 1037.923,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b06_city_fire_s30.png"
+}
+},
+{
+"a": 1037.923,
+"b": 1040.203,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/lancaster_02.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1040.203,
+"b": 1041.843,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29b/cand/lancaster_01.jpg",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*ARTILLERO*",
+"de cola."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 1041.843,
+"b": 1045.943,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b02_turret_2.png"
+}
+},
+{
+"a": 1045.943,
+"b": 1049.363,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b02_turret_s31.png"
+}
+},
+{
+"a": 1049.363,
+"b": 1054.955,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29b/cand/lancaster_03.jpg",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*TAIL-END CHARLIE.*",
+"el último de la fila."
+],
+"a": 4,
+"y": 360,
+"size": 96
+}
+}
+}
+},
+{
+"a": 1054.955,
+"b": 1058.695,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/lancfly_01.jpg",
+"ar": 1.2783,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1058.695,
+"b": 1064.275,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b06_city_fire_2.png"
+}
+},
+{
+"a": 1064.275,
+"b": 1067.975,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b02_turret_3.png"
+}
+},
+{
+"a": 1067.975,
+"b": 1073.735,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b02_turret_s32.png"
+}
+},
+{
+"a": 1073.735,
+"b": 1079.455,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b03_frost_3.png",
+"o": {
+"big": {
+"w": "−40°",
+"size": 220,
+"y": 140,
+"a": 112
+}
+}
+}
+},
+{
+"a": 1079.455,
+"b": 1083.655,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b02_turret_4.png"
+}
+},
+{
+"a": 1083.655,
+"b": 1088.135,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b02_turret_s33.png"
+}
+},
+{
+"a": 1088.135,
+"b": 1097.355,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TrajeCalefaccion",
+"bg": "img/dur29b/ag/dur29b_b05_heated_suit.png",
+"at": {
+"funcionaba": 112
+}
+},
+"big": true
+},
+{
+"a": 1097.355,
+"b": 1104.675,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ParacaidasPuerta",
+"bg": "img/dur29b/ag/dur29b_b04_parachute_2.png",
+"at": {
+"puerta": 149
+}
+},
+"big": true
+},
+{
+"a": 1104.675,
+"b": 1109.875,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/bomber_02.jpg",
+"ar": 1.6,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1109.875,
+"b": 1115.695,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/lancfly_02.jpg",
+"ar": 1.3813,
+"o": {
+"build": {
+"lines": [
+"*55.000.*"
+],
+"size": 120,
+"a": 38
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1115.695,
+"b": 1121.595,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b07_mission_board.png",
+"o": {
+"build": {
+"lines": [
+"*30* vuelos."
+],
+"a": 66
+}
+}
+}
+},
+{
+"a": 1121.595,
+"b": 1128.055,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b06_city_fire_3.png"
+}
+},
+{
+"a": 1128.055,
+"b": 1131.915,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b02_turret_5.png"
+}
+},
+{
+"a": 1131.915,
+"b": 1137.255,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_b02_turret_s34.png"
+}
+},
+{
+"a": 1137.255,
+"b": 1148.735,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 300,
+"tag": "5 MIN",
+"sub": "pero estás a seis mil metros.",
+"fz": 215,
+"s0": 273
+},
+"big": true
+},
+{
+"a": 1148.735,
+"b": 1150.135,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 7
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 1150.135,
+"b": 1153.735,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+2.9,
+50.76
+],
+"prev": [
+10.0,
+51.3
+],
+"lines": [
+"BÉLGICA",
+"1917",
+"TÚNELES"
+],
+"name": "Messines"
+},
+"big": true
+},
+{
+"a": 1153.735,
+"b": 1157.375,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_g01_tunnel_2.png"
+}
+},
+{
+"a": 1157.375,
+"b": 1161.695,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_m01_ridge.png",
+"o": {
+"label": "Messines, Bélgica"
+}
+}
+},
+{
+"a": 1161.695,
+"b": 1164.835,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_m02_trench_2.png"
+}
+},
+{
+"a": 1164.835,
+"b": 1169.415,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_m02_trench_s35.png"
+}
+},
+{
+"a": 1169.415,
+"b": 1175.515,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_m02_trench_3.png"
+}
+},
+{
+"a": 1175.515,
+"b": 1178.735,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29b/ag/dur29b_m08_spade.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*CLAY KICKER.*",
+"pateador de arcilla."
+],
+"a": 4,
+"y": 360,
+"size": 100
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 1178.735,
+"b": 1183.635,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/messines_04.jpg",
+"ar": 1.6134,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1183.635,
+"b": 1190.015,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_m08_spade_s36.png"
+}
+},
+{
+"a": 1190.015,
+"b": 1195.935,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_g03_sandbags_2.png"
+}
+},
+{
+"a": 1195.935,
+"b": 1215.235,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ClayKicker",
+"bg": "img/dur29b/ag/dur29b_g02_cross_2.png",
+"at": {
+"pateas": 281
+}
+},
+"big": true
+},
+{
+"a": 1215.235,
+"b": 1218.975,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_g04_wall_clay_3.png"
+}
+},
+{
+"a": 1218.975,
+"b": 1225.015,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_g01_tunnel_3.png"
+}
+},
+{
+"a": 1225.015,
+"b": 1228.675,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/geophone_01.jpg",
+"ar": 1.2648,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1228.675,
+"b": 1232.535,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_g01_tunnel_s37.png"
+}
+},
+{
+"a": 1232.535,
+"b": 1237.795,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_m03_geophone.png"
+}
+},
+{
+"a": 1237.795,
+"b": 1259.475,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "Messines19",
+"bg": "img/dur29b/ag/dur29b_m04_charges.png",
+"at": {
+"toneladas": 307,
+"diecinueve": 548
+}
+},
+"big": true
+},
+{
+"a": 1259.475,
+"b": 1264.375,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_m06_explosion.png"
+}
+},
+{
+"a": 1264.375,
+"b": 1266.395,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_m06_explosion_2.png"
+}
+},
+{
+"a": 1266.395,
+"b": 1270.175,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29b/cand/messines_02.jpg",
+"ar": 1.3327,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1270.175,
+"b": 1288.035,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LagunaPaz",
+"bg": "img/dur29b/cand/spanbroek_01.jpg",
+"at": {
+"patos": 148,
+"mina": 311
+}
+},
+"big": true
+},
+{
+"a": 1288.035,
+"b": 1292.095,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_m03_geophone_2.png"
+}
+},
+{
+"a": 1292.095,
+"b": 1294.735,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_m03_geophone_s38.png"
+}
+},
+{
+"a": 1294.735,
+"b": 1298.055,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_g01_tunnel_4.png"
+}
+},
+{
+"a": 1298.055,
+"b": 1301.795,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_g01_tunnel_s39.png"
+}
+},
+{
+"a": 1301.795,
+"b": 1315.335,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 8,
+"tag": "8 SEG",
+"sub": "y sin hacer ruido.",
+"fz": 317,
+"s0": 7
+},
+"big": true
+},
+{
+"a": 1315.335,
+"b": 1318.095,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_f02_objects_3.png"
+}
+},
+{
+"a": 1318.095,
+"b": 1342.835,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "el tablero *final.*",
+"final": [
+91,
+191,
+278,
+381,
+461,
+563,
+640
+]
+},
+"big": true
+},
+{
+"a": 1342.835,
+"b": 1351.535,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TiraTiempo",
+"bg": "img/dur29b/ag/dur29b_f02_objects_4.png",
+"at": {
+"años": 228
+}
+},
+"big": true
+},
+{
+"a": 1351.535,
+"b": 1353.195,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_m05_crater_lake.png"
+}
+},
+{
+"a": 1353.195,
+"b": 1356.395,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_f01_statues.png"
+}
+},
+{
+"a": 1356.395,
+"b": 1361.235,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_f01_statues_s40.png"
+}
+},
+{
+"a": 1361.235,
+"b": 1365.175,
+"k": "real",
+"t": "cards",
+"p": {
+"bg": "img/dur29b/ag/dur29b_f01_statues_2.png",
+"cards": [
+"img/dur29b/cand/kings_01.jpg",
+"img/dur29b/cand/henryv_01.jpg",
+"img/dur29b/cand/napoleon_01.jpg",
+"img/dur29b/cand/lincoln_01.jpg"
+],
+"o": {
+"credit": "Wikimedia Commons · public domain / CC"
+}
+}
+},
+{
+"a": 1365.175,
+"b": 1368.195,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_h05_shields_wall_4.png"
+}
+},
+{
+"a": 1368.195,
+"b": 1372.215,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_h05_shields_wall_s41.png"
+}
+},
+{
+"a": 1372.215,
+"b": 1374.815,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_t01_helmets_2.png"
+}
+},
+{
+"a": 1374.815,
+"b": 1378.575,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s01_corridor_5.png"
+}
+},
+{
+"a": 1378.575,
+"b": 1382.895,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_s01_corridor_s42.png"
+}
+},
+{
+"a": 1382.895,
+"b": 1393.495,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "OchoPuertas",
+"bg": "img/dur29b/ag/dur29b_f02_objects_5.png",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1393.495,
+"b": 1400.195,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Suscríbete + campanita. La próxima semana, otro lugar.",
+"bg": "img/dur29b/cand/lancfly_03.jpg"
+}
+},
+{
+"a": 1400.195,
+"b": 1403.61,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29b/ag/dur29b_m05_crater_lake_2.png"
+}
+}
+],
+"stops": [
+{
+"n": 1,
+"a": 99.36,
+"q": 231.793,
+"w0": 224.46,
+"w1": 236.72,
+"fin": 180,
+"tag": "3 MIN",
+"b": 236.72
+},
+{
+"n": 2,
+"a": 242.06,
+"q": 369.399,
+"w0": 361.632,
+"w1": 372.792,
+"fin": 600,
+"tag": "10 MIN",
+"b": 372.792
+},
+{
+"n": 3,
+"a": 378.072,
+"q": 509.439,
+"w0": 502.572,
+"w1": 510.892,
+"fin": 30,
+"tag": "30 SEG",
+"b": 510.892
+},
+{
+"n": 4,
+"a": 516.272,
+"q": 648.899,
+"w0": 643.432,
+"w1": 652.052,
+"fin": 3600,
+"tag": "1 HORA",
+"b": 709.603
+},
+{
+"n": 5,
+"a": 714.863,
+"q": 850.296,
+"w0": 841.563,
+"w1": 853.883,
+"fin": 1200,
+"tag": "20 MIN",
+"b": 877.223
+},
+{
+"n": 6,
+"a": 882.283,
+"q": 1007.436,
+"w0": 1000.103,
+"w1": 1011.623,
+"fin": 60,
+"tag": "1 MIN",
+"b": 1011.623
+},
+{
+"n": 7,
+"a": 1017.583,
+"q": 1144.422,
+"w0": 1137.255,
+"w1": 1148.735,
+"fin": 300,
+"tag": "5 MIN",
+"b": 1148.735
+},
+{
+"n": 8,
+"a": 1153.735,
+"q": 1312.362,
+"w0": 1301.795,
+"w1": 1315.335,
+"fin": 8,
+"tag": "8 SEG",
+"b": 1318.095
+}
+]
+}
