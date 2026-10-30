@@ -1,0 +1,129 @@
+{
+"cams": [
+[
+0,
+"wide"
+],
+[
+96.76,
+"model"
+],
+[
+107.86,
+"table"
+],
+[
+157.76,
+"props"
+],
+[
+195.14,
+"window"
+],
+[
+243.2,
+"propsL"
+],
+[
+394.29,
+"table"
+],
+[
+478.32,
+"wall"
+],
+[
+547.76,
+"window"
+],
+[
+704.23,
+"propsR"
+],
+[
+858.97,
+"low"
+],
+[
+947.09,
+"table"
+],
+[
+1017.03,
+"wide2"
+],
+[
+1146.19,
+"wide"
+],
+[
+1228.36,
+"window"
+]
+],
+"fx": [
+[
+0,
+{
+"eve": 0,
+"tray": 0
+}
+],
+[
+243.2,
+{
+"coins": 1
+}
+],
+[
+308.52,
+{
+"coins": 0,
+"eve": 1
+}
+],
+[
+478.32,
+{
+"tray": 1,
+"eve": 0
+}
+],
+[
+704.23,
+{
+"tray": 0,
+"letter": 1
+}
+],
+[
+1146.19,
+{
+"letter": 0,
+"eve": 0.4
+}
+],
+[
+1276.12,
+{
+"eve": 0.8
+}
+]
+],
+"price": "",
+"nb": [
+"Tochigi — 10 a.m.",
+"¥130 rice ball",
+"1 in 5 over 65",
+"¥68,000 a month",
+"meiwaku",
+"half price, 7:30 p.m.",
+"84 — birthday cake",
+"6:45 wake-up",
+"release day, 9 a.m.",
+"a kettle",
+"three generations",
+"Wednesday, noon",
+"Thursday — a call"
+]
+}
