@@ -181,7 +181,7 @@ const HMeatloafPan: C = ({ t, h }) => <S t={t} h={h} f={(tt) => {
 const HLovesList: C = ({ t, h }) => <S t={t} h={h} f={(tt) => {
   const d = D(h), N = 5, step = (d - 1.5) / N, k = Math.min(N - 1, Math.max(0, Math.floor((tt - 0.6) / step))), q = cl((tt - 0.6 - k * step) / step);
   const hx = 820 + 340 * q, hy = 330 + k * 110;
-  return <Cam tt={tt} d={d} z={0.08} fx={hx} fy={hy}>
+  return <Cam tt={tt} d={d} z={0.08} fx={990} fy={330 + 110 * Math.min(N - 1, Math.max(0, (tt - 0.6) / step - 0.5))}>
     <div style={{ position: "absolute", inset: 0, background: WOODTOP }} />
     <Prop id="notebook_open" x={960} y={1060} w={1300} />
     <svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0 }}>
@@ -261,7 +261,7 @@ const HLaddersUp: C = ({ t, h }) => <S t={t} h={h} f={(tt) => {
 
 // «changes my light bulbs, and I pay him in cookies»: la bombilla colgante parpadea y se enciende; abajo, unas manos viejas ofrecen la galleta
 const HCookieBulb: C = ({ t, h }) => <S t={t} h={h} f={(tt) => {
-  const d = D(h), on = bt(h, 0, 0.9), fl = tt < on ? 0.08 : tt < on + 0.35 ? (Math.sin(tt * 70) > 0 ? 1 : 0.2) : 1, a = swing(tt, 0.2, 5, 2.4, 0.6), hu = eio(tt, on + 0.5, on + 1.1);
+  const d = D(h), on = bt(h, 0, 0.9), fl = 0.08 + 0.92 * eio(tt, on, on + 0.5), a = swing(tt, 0.2, 5, 2.4, 0.6), hu = eio(tt, on + 0.5, on + 1.1);
   return <Cam tt={tt} d={d} z={0.07}>
     <Fondo id="le_e18" tt={tt} b={12} br={0.25 + 0.3 * fl} />
     <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "640px 0px", transform: `rotate(${a}deg)` }}>
