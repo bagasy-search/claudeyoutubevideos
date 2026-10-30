@@ -31,14 +31,22 @@ const cl = (x: number) => Math.max(0, Math.min(1, x));
 const sm = (x: number) => { const k = cl(x); return k * k * (3 - 2 * k); };
 const ease = (x: number) => { const c = cl(x); return c < 0.5 ? 4 * c * c * c : 1 - Math.pow(-2 * c + 2, 3) / 2; };
 const v3 = (a: number[]) => new THREE.Vector3(a[0], a[1], a[2]);
-const at = (c: C, u: number, dur: number) => { const k = sm(u / dur); return { p: v3(c.p0).lerp(v3(c.p1), k), l: v3(c.l0).lerp(v3(c.l1), k), fov: c.f0 + (c.f1 - c.f0) * k }; };
+// deriva viva dentro de la parada: paneo lateral lento + acercamiento suave, así una parada larga nunca queda quieta
+const UP = new THREE.Vector3(0, 1, 0);
+const at = (c: C, u: number, dur: number, i = 0) => {
+  const k = sm(u / dur), p = v3(c.p0).lerp(v3(c.p1), k), l = v3(c.l0).lerp(v3(c.l1), k);
+  const d = l.clone().sub(p).normalize(), r = d.clone().cross(UP).normalize(), w = sm(u / 1.5) * Math.min(1, p.distanceTo(l) / 1.5);
+  p.addScaledVector(r, 0.09 * Math.sin(u * 0.45 + i) * w).addScaledVector(d, Math.min(0.2, 0.013 * u));
+  l.addScaledVector(r, 0.16 * Math.sin(u * 0.45 + i + 0.7) * w).addScaledVector(UP, 0.04 * Math.sin(u * 0.3 + i) * w);
+  return { p, l, fov: c.f0 + (c.f1 - c.f0) * k };
+};
 
 const idx = (t: number) => { let i = 0; while (i < ST.length - 1 && ST[i + 1][0] <= t) i++; return i; };
 export const camAt = (t: number) => {
   const i = idx(t), s = ST[i] ?? [0, "wide"], nx = ST[i + 1]?.[0] ?? s[0] + 30;
-  const dur = Math.max(6, nx - s[0]), cur = at(CAMS[s[1]], t - s[0], dur);
+  const dur = Math.max(6, nx - s[0]), cur = at(CAMS[s[1]], t - s[0], dur, i);
   if (i === 0) return cur;
-  const ps = ST[i - 1], prev = at(CAMS[ps[1]], s[0] - ps[0], Math.max(6, s[0] - ps[0]));
+  const ps = ST[i - 1], prev = at(CAMS[ps[1]], s[0] - ps[0], Math.max(6, s[0] - ps[0]), i - 1);
   const D = Math.min(2.2, Math.max(1.1, (nx - s[0]) * 0.4)), k = ease((t - s[0]) / D);
   const p = prev.p.clone().lerp(cur.p, k), l = prev.l.clone().lerp(cur.l, k);
   const arc = Math.sin(Math.PI * k) * Math.min(0.35, prev.p.distanceTo(cur.p) * 0.18);
