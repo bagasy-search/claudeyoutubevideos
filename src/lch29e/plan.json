@@ -1,0 +1,760 @@
+{
+"segs": [
+[
+6.12,
+7.78,
+"shot",
+"f01_ventana_tarde"
+],
+[
+7.78,
+14.36,
+"shot",
+"v01"
+],
+[
+19.21,
+21.4,
+"shot",
+"f02_polvo_sol"
+],
+[
+21.4,
+26.4,
+"shot",
+"f03_cena_domingo"
+],
+[
+28.1,
+31.61,
+"shot",
+"f04_iglesia_ventanas"
+],
+[
+40.4,
+42.82,
+"shot",
+"f05_santuario_terciopelo"
+],
+[
+42.82,
+46.29,
+"shot",
+"f06_encaje_novia"
+],
+[
+51.04,
+57.04,
+"shot",
+"f08_loretta_ventana"
+],
+[
+110.96,
+114.07,
+"shot",
+"v02"
+],
+[
+120.27,
+125.27,
+"shot",
+"f09_sacudir_afuera"
+],
+[
+139.18,
+145.42,
+"shot",
+"v03"
+],
+[
+145.42,
+147.76,
+"shot",
+"f10_aspiradora_barra"
+],
+[
+147.76,
+152.76,
+"shot",
+"f11_perilla_succion"
+],
+[
+157.36,
+162.36,
+"shot",
+"f12_agua_gris"
+],
+[
+173.92,
+178.92,
+"shot",
+"f13_etiqueta_cortina"
+],
+[
+194.06,
+198.68,
+"shot",
+"f14_forro"
+],
+[
+198.68,
+203.68,
+"shot",
+"f15_cortina_fruncida"
+],
+[
+214.1,
+215.65,
+"shot",
+"f16_esquina_prueba"
+],
+[
+219.79,
+224.79,
+"shot",
+"f17_arlene"
+],
+[
+227.14,
+230.05,
+"shot",
+"f18_cortinas_cortas"
+],
+[
+235.4,
+240.4,
+"shot",
+"f19_sotano_cortinas"
+],
+[
+241.92,
+246.92,
+"shot",
+"f20_ganchos_metal"
+],
+[
+254.4,
+258.3,
+"shot",
+"f24_mancha_oxido"
+],
+[
+258.3,
+263.3,
+"shot",
+"f21_anillos_clip"
+],
+[
+263.86,
+268.86,
+"shot",
+"f23_frasco_ganchos"
+],
+[
+273.64,
+278.64,
+"shot",
+"f22_bolsa_ganchos"
+],
+[
+287.24,
+290.52,
+"shot",
+"f25_dial_frio"
+],
+[
+290.52,
+295.52,
+"shot",
+"f26_cortina_corta"
+],
+[
+304.53,
+309.53,
+"shot",
+"f27_color_cansado"
+],
+[
+310.28,
+314.56,
+"shot",
+"f28_lavarropas_dos"
+],
+[
+319.99,
+322.66,
+"shot",
+"f29_lavarropas_lleno"
+],
+[
+322.66,
+327.66,
+"shot",
+"f30_detergente_suave"
+],
+[
+343.41,
+348.41,
+"shot",
+"f31_mantel_viejo"
+],
+[
+350.63,
+355.63,
+"shot",
+"f32_cortina_nino"
+],
+[
+370.63,
+374.63,
+"shot",
+"f34_chimenea"
+],
+[
+381.53,
+383.39,
+"shot",
+"v05"
+],
+[
+388.03,
+389.91,
+"shot",
+"f36_cajon_suavizante"
+],
+[
+389.91,
+394.91,
+"shot",
+"f35_vinagre_lavarropas"
+],
+[
+403.12,
+408.12,
+"shot",
+"f37_pipa"
+],
+[
+415.21,
+421.21,
+"shot",
+"f38_madre_puerta"
+],
+[
+430.07,
+433.32,
+"shot",
+"f39_cortina_amarilla"
+],
+[
+444.25,
+448.03,
+"shot",
+"f40_bicarbonato_tina"
+],
+[
+453.37,
+458.37,
+"shot",
+"f41_oxigeno_polvo"
+],
+[
+459.21,
+465.63,
+"shot",
+"v06"
+],
+[
+470.61,
+475.61,
+"shot",
+"f42_agua_amarilla"
+],
+[
+485.64,
+490.64,
+"shot",
+"f43_lavandina_no"
+],
+[
+535.93,
+540.93,
+"shot",
+"f44_encaje_plancha"
+],
+[
+552.95,
+557.95,
+"shot",
+"f45_nubes_oeste"
+],
+[
+569.29,
+574.29,
+"shot",
+"f46_dia_brisa"
+],
+[
+578.75,
+581.29,
+"shot",
+"f47_secarropas"
+],
+[
+588.57,
+593.57,
+"shot",
+"f48_dorso_termico"
+],
+[
+596.23,
+600.13,
+"shot",
+"f49_sin_calor"
+],
+[
+605.36,
+610.36,
+"shot",
+"f50_humeda_mano"
+],
+[
+621.21,
+629.21,
+"shot",
+"v07"
+],
+[
+637.75,
+642.75,
+"shot",
+"f51_colgar_humeda"
+],
+[
+646.77,
+651.3,
+"shot",
+"f53_lavarropas_sotano"
+],
+[
+658.47,
+663.47,
+"shot",
+"f52_salon_ventanas"
+],
+[
+667.14,
+668.46,
+"shot",
+"f54_cortina_silla"
+],
+[
+678.72,
+683.72,
+"shot",
+"f55_cortina_ducha"
+],
+[
+688.96,
+692.96,
+"shot",
+"f56_toallas_viejas"
+],
+[
+718.64,
+723.64,
+"shot",
+"f57_ducha_pastor"
+],
+[
+741.74,
+746.74,
+"shot",
+"f58_cortinas_pesadas"
+],
+[
+758.78,
+763.76,
+"shot",
+"f59_vaporizador"
+],
+[
+775.36,
+780.36,
+"shot",
+"f60_tintoreria"
+],
+[
+801.54,
+805.44,
+"shot",
+"f61_pronostico"
+],
+[
+805.44,
+810.44,
+"shot",
+"f62_cuarto_por_cuarto"
+],
+[
+819.11,
+824.11,
+"shot",
+"f63_bolsa_cinta_barra"
+],
+[
+843.36,
+845.38,
+"shot",
+"f64_ventana_entreabierta"
+],
+[
+870.92,
+875.0,
+"shot",
+"f65_cortina_cocina"
+],
+[
+875.0,
+880.0,
+"shot",
+"f66_dobladillo_grasa"
+],
+[
+888.14,
+893.14,
+"shot",
+"f67_jabon_platos"
+],
+[
+916.77,
+921.77,
+"shot",
+"f68_calendario"
+],
+[
+933.86,
+939.86,
+"shot",
+"f69_altar_guild"
+],
+[
+948.65,
+953.65,
+"shot",
+"f70_tendedero"
+],
+[
+954.96,
+959.96,
+"shot",
+"f71_cortinas_cuarto_nino"
+],
+[
+974.04,
+976.57,
+"shot",
+"f73_cinta_lapiz"
+],
+[
+986.18,
+990.32,
+"shot",
+"f74_lata_cafe"
+],
+[
+990.32,
+994.71,
+"shot",
+"f75_lavarropas_iglesia"
+],
+[
+1003.51,
+1009.51,
+"shot",
+"f76_ocho_cortinas"
+],
+[
+1032.39,
+1036.91,
+"shot",
+"f77_visillos_bolsa"
+],
+[
+1036.91,
+1040.91,
+"shot",
+"f78_persianas"
+],
+[
+1049.61,
+1054.61,
+"shot",
+"f79_cambiar_lados"
+],
+[
+1067.53,
+1075.53,
+"shot",
+"v09"
+],
+[
+1106.09,
+1109.0,
+"shot",
+"f81_casa_campo_1952"
+],
+[
+1114.77,
+1120.77,
+"shot",
+"f80_clara_croche"
+],
+[
+1143.23,
+1144.99,
+"shot",
+"v04"
+],
+[
+1164.94,
+1169.94,
+"shot",
+"f83_lavatorio_frio"
+],
+[
+1205.13,
+1209.38,
+"shot",
+"f84_sabana_cama"
+],
+[
+1234.81,
+1237.57,
+"shot",
+"v10"
+],
+[
+1237.57,
+1242.21,
+"shot",
+"f85_ventana_ruta"
+],
+[
+1313.11,
+1318.11,
+"shot",
+"f86_zocalos_media"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 11.36,
+"out": 13.86
+},
+{
+"k": "step",
+"n": 1,
+"name": "SHAKE AND VACUUM FIRST",
+"at": 114.42,
+"out": 117.62
+},
+{
+"k": "step",
+"n": 2,
+"name": "READ THE TAG",
+"at": 172.4,
+"out": 175.6
+},
+{
+"k": "step",
+"n": 3,
+"name": "HOOKS AND RINGS OFF",
+"at": 239.42,
+"out": 242.62
+},
+{
+"k": "step",
+"n": 4,
+"name": "COLD WATER. ALWAYS",
+"at": 281.96,
+"out": 285.16
+},
+{
+"k": "step",
+"n": 5,
+"name": "MILD SOAP, HALF AS MUCH",
+"at": 320.0,
+"out": 323.2
+},
+{
+"k": "step",
+"n": 6,
+"name": "VINEGAR FOR THE SMOKE",
+"at": 363.27,
+"out": 366.47
+},
+{
+"k": "step",
+"n": 7,
+"name": "BAKING SODA FOR THE YELLOW",
+"at": 427.07,
+"out": 430.27
+},
+{
+"k": "deal",
+"at": 495.63,
+"out": 496.63
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Hot water",
+"at": 499.25,
+"out": 501.45
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "The dryer",
+"at": 504.57,
+"out": 506.77
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Softener on flame resistant",
+"at": 511.09,
+"out": 513.29
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Hooks still on",
+"at": 517.13,
+"out": 519.33
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Hot iron on wet lace",
+"at": 522.55,
+"out": 526.05
+},
+{
+"k": "step",
+"n": 8,
+"name": "NEVER THE HOT DRYER",
+"at": 573.23,
+"out": 576.43
+},
+{
+"k": "step",
+"n": 9,
+"name": "HANG THEM DAMP",
+"at": 611.93,
+"out": 615.13
+},
+{
+"k": "step",
+"n": 10,
+"name": "SHOWER CURTAIN + 2 TOWELS",
+"at": 676.2,
+"out": 679.4
+},
+{
+"k": "step",
+"n": 11,
+"name": "STEAM THE HEAVY ONES",
+"at": 732.8,
+"out": 736.0
+},
+{
+"k": "step",
+"n": 12,
+"name": "CLARA'S LACE",
+"at": 72.32,
+"out": 75.52
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1249.43
+},
+{
+"at": 1251.69
+},
+{
+"at": 1256.49
+},
+{
+"at": 1259.39
+},
+{
+"at": 1261.45
+},
+{
+"at": 1264.25
+},
+{
+"at": 1267.05
+},
+{
+"at": 1271.55
+},
+{
+"at": 1273.17
+},
+{
+"at": 1277.61
+},
+{
+"at": 1280.85
+},
+{
+"at": 1285.71
+}
+],
+"at": 1246.73,
+"out": 1287.71
+},
+{
+"k": "ask",
+"at": 1294.87,
+"out": 1302.87
+}
+],
+"end": 1326.17,
+"txt": {
+"recapTitle": "12 STEPS · ONE DRY DAY",
+"recap": [
+"Shake, then vacuum",
+"Read the tag",
+"Hooks off, bag on the rod",
+"Cold water, always",
+"Gentle soap, half",
+"½ cup vinegar in the rinse",
+"Baking soda soak (sturdy whites)",
+"Never the hot dryer",
+"Hang them damp",
+"Shower curtain + 2 towels",
+"Heavy drapes: vacuum + steam",
+"Fragile lace: pillowcase + string"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"When did you last",
+"wash your curtains?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+23.98,
+31.98
+]
+}
+}

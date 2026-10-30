@@ -1,0 +1,132 @@
+[
+{
+"k": "dustcloud",
+"at": 19.58,
+"out": 26.58
+},
+{
+"k": "fortytwo",
+"at": 36.44,
+"out": 43.44
+},
+{
+"k": "cta1",
+"at": 102.18,
+"out": 110.68
+},
+{
+"k": "rodvacuum",
+"at": 140.7,
+"out": 147.7
+},
+{
+"k": "linedshrink",
+"at": 204.06,
+"out": 211.06
+},
+{
+"k": "climbwall",
+"at": 235.68,
+"out": 242.18
+},
+{
+"k": "hookbag",
+"at": 270.56,
+"out": 278.06
+},
+{
+"k": "coldshrink",
+"at": 290.84,
+"out": 297.84
+},
+{
+"k": "packedwasher",
+"at": 320.34,
+"out": 325.84
+},
+{
+"k": "halfsoap",
+"at": 327.24,
+"out": 333.74
+},
+{
+"k": "vinegarcup",
+"at": 391.65,
+"out": 398.65
+},
+{
+"k": "pipesmoke",
+"at": 421.09,
+"out": 428.09
+},
+{
+"k": "yellowsoak",
+"at": 472.75,
+"out": 479.75
+},
+{
+"k": "chlorinehole",
+"at": 487.91,
+"out": 494.91
+},
+{
+"k": "rainyday",
+"at": 553.29,
+"out": 559.79
+},
+{
+"k": "gravityiron",
+"at": 623.17,
+"out": 631.17
+},
+{
+"k": "foldline",
+"at": 673.5,
+"out": 680.0
+},
+{
+"k": "showertowels",
+"at": 691.54,
+"out": 699.04
+},
+{
+"k": "steamhang",
+"at": 755.88,
+"out": 763.38
+},
+{
+"k": "freshshake",
+"at": 857.86,
+"out": 864.86
+},
+{
+"k": "tackyhem",
+"at": 875.48,
+"out": 881.98
+},
+{
+"k": "tapelabels",
+"at": 982.36,
+"out": 989.86
+},
+{
+"k": "fadeswap",
+"at": 1052.01,
+"out": 1058.51
+},
+{
+"k": "cta2",
+"at": 1067.81,
+"out": 1076.81
+},
+{
+"k": "jellyroll",
+"at": 1197.37,
+"out": 1204.37
+},
+{
+"k": "laceshape",
+"at": 1213.59,
+"out": 1221.59
+}
+]
