@@ -1,0 +1,570 @@
+{
+"segs": [
+[
+3.52,
+6.46,
+"shot",
+"f_c_pasillo_noche"
+],
+[
+6.46,
+14.46,
+"shot",
+"v01_mira_termostato"
+],
+[
+21.37,
+27.37,
+"shot",
+"f_c_factura"
+],
+[
+40.94,
+45.94,
+"shot",
+"n_c_termostato_72"
+],
+[
+50.64,
+56.64,
+"shot",
+"f_c_termostatos"
+],
+[
+69.18,
+75.18,
+"shot",
+"n_c_fan_auto"
+],
+[
+92.04,
+97.04,
+"shot",
+"n_c_facturas"
+],
+[
+141.26,
+146.81,
+"shot",
+"f_c_gira_80"
+],
+[
+185.22,
+193.22,
+"shot",
+"v02_gira_dial"
+],
+[
+200.33,
+205.33,
+"shot",
+"n_c_lampara_termostato"
+],
+[
+208.78,
+211.09,
+"shot",
+"f_c_lampara"
+],
+[
+238.26,
+243.26,
+"shot",
+"n_c_ventana_sol"
+],
+[
+252.77,
+257.77,
+"shot",
+"n_c_registro_bajo"
+],
+[
+262.44,
+263.88,
+"shot",
+"v03_mano_termostato"
+],
+[
+278.06,
+281.4,
+"shot",
+"f_c_mueve_termostato"
+],
+[
+300.89,
+306.89,
+"shot",
+"f_c_noche_manta"
+],
+[
+369.73,
+374.73,
+"shot",
+"n_c_heat_pump_nieve"
+],
+[
+400.09,
+405.09,
+"shot",
+"f_c_aux_heat"
+],
+[
+440.63,
+442.18,
+"shot",
+"f_c_reloj_pilas"
+],
+[
+464.6,
+470.6,
+"shot",
+"f_c_termostato_redondo"
+],
+[
+471.03,
+474.07,
+"shot",
+"n_c_mercurio"
+],
+[
+479.09,
+487.09,
+"shot",
+"v04_nivel_dial"
+],
+[
+527.83,
+533.83,
+"shot",
+"f_c_reciclaje"
+],
+[
+547.07,
+555.07,
+"shot",
+"v05_pega_termometro"
+],
+[
+562.77,
+567.77,
+"shot",
+"n_c_termometro_pared"
+],
+[
+578.85,
+585.85,
+"shot",
+"f_c_hermana"
+],
+[
+593.57,
+599.57,
+"shot",
+"f_c_compara"
+],
+[
+625.37,
+631.37,
+"shot",
+"f_c_menu_offset"
+],
+[
+633.91,
+635.98,
+"shot",
+"v06_saca_tapa"
+],
+[
+642.81,
+648.81,
+"shot",
+"f_c_tapa_polvo"
+],
+[
+659.28,
+665.28,
+"shot",
+"f_c_pincel"
+],
+[
+678.24,
+683.38,
+"shot",
+"f_c_fan_switch"
+],
+[
+713.84,
+718.63,
+"shot",
+"n_c_soplador"
+],
+[
+722.77,
+728.77,
+"shot",
+"f_c_microondas"
+],
+[
+770.48,
+777.48,
+"shot",
+"f_c_okafor"
+],
+[
+815.27,
+819.54,
+"shot",
+"f_c_tarjeta_okafor"
+],
+[
+819.54,
+823.88,
+"shot",
+"f_c_escucha"
+],
+[
+823.88,
+826.75,
+"shot",
+"v08_escucha_rejilla"
+],
+[
+853.1,
+858.71,
+"shot",
+"v07_switch_auto"
+],
+[
+887.34,
+892.29,
+"shot",
+"f_c_earl_ensena"
+],
+[
+950.1,
+956.1,
+"shot",
+"f_c_horario"
+],
+[
+972.32,
+976.4,
+"shot",
+"v09_anota_horario"
+],
+[
+983.13,
+989.13,
+"shot",
+"f_c_smart_hold"
+],
+[
+1019.31,
+1025.31,
+"shot",
+"f_c_nieto_app"
+],
+[
+1038.57,
+1041.09,
+"shot",
+"n_c_cables_c"
+],
+[
+1065.39,
+1071.39,
+"shot",
+"f_c_cables"
+],
+[
+1096.37,
+1102.37,
+"shot",
+"f_c_ventilador_techo"
+],
+[
+1111.05,
+1116.05,
+"shot",
+"n_c_ventilador"
+],
+[
+1149.43,
+1155.43,
+"shot",
+"f_c_valija"
+],
+[
+1200.41,
+1205.41,
+"shot",
+"f_c_rutina"
+],
+[
+1302.21,
+1306.11,
+"shot",
+"v10_despedida"
+]
+],
+"ov": [
+{
+"k": "big",
+"txt": "$400",
+"sub": "A YEAR · QUIETLY",
+"col": "red",
+"at": 57.68,
+"out": 60.68
+},
+{
+"k": "big",
+"txt": "#9",
+"sub": "THE SWITCH NOBODY KNOWS",
+"col": "red",
+"at": 62.6,
+"out": 65.6
+},
+{
+"k": "step",
+"n": 1,
+"name": "CRANKING IT UP",
+"at": 138.4,
+"out": 141.0
+},
+{
+"k": "step",
+"n": 2,
+"name": "WHERE IT'S HANGING",
+"at": 194.62,
+"out": 197.22
+},
+{
+"k": "step",
+"n": 3,
+"name": "TURN IT BACK AT NIGHT",
+"at": 291.82,
+"out": 294.42
+},
+{
+"k": "step",
+"n": 4,
+"name": "HEAT PUMPS",
+"col": "red",
+"at": 361.69,
+"out": 364.49
+},
+{
+"k": "step",
+"n": 5,
+"name": "BATTERIES",
+"at": 418.25,
+"out": 420.85
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE OLD ROUND ONE",
+"at": 457.13,
+"out": 459.73
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE THERMOMETER TEST",
+"at": 536.51,
+"out": 539.11
+},
+{
+"k": "step",
+"n": 8,
+"name": "DUST",
+"at": 632.01,
+"out": 634.41
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE FAN SWITCH",
+"col": "red",
+"at": 670.8,
+"out": 673.8
+},
+{
+"k": "deal",
+"at": 856.6,
+"out": 858.6
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Cranking it up",
+"at": 859.98,
+"out": 862.98
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "A lamp under it",
+"at": 862.86,
+"out": 866.36
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "No setback at night",
+"at": 867.82,
+"out": 870.82
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Big setbacks, heat pump",
+"at": 872.12,
+"out": 876.12
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Fan on ON for years",
+"at": 877.52,
+"out": 881.02
+},
+{
+"k": "step",
+"n": 10,
+"name": "YOUR SCHEDULE",
+"at": 922.78,
+"out": 925.38
+},
+{
+"k": "step",
+"n": 11,
+"name": "THE SMART ONE",
+"at": 981.25,
+"out": 983.85
+},
+{
+"k": "step",
+"n": 12,
+"name": "IT KEEPS RESTARTING",
+"at": 1029.33,
+"out": 1031.93
+},
+{
+"k": "check",
+"title": "THE THERMOSTAT ROUTINE",
+"rows": [
+{
+"txt": "Thermometer, 1 hour",
+"at": 1206.05
+},
+{
+"txt": "Lamps, TV, sun",
+"at": 1210.23
+},
+{
+"txt": "Brush the dust",
+"at": 1215.09
+},
+{
+"txt": "Batteries + date",
+"at": 1218.17
+},
+{
+"txt": "Fan on AUTO",
+"at": 1220.29
+},
+{
+"txt": "4 times, 4 temps",
+"at": 1223.27
+},
+{
+"txt": "Heat pump: small",
+"at": 1230.39
+},
+{
+"txt": "Recycle the old one",
+"at": 1234.67
+}
+],
+"at": 1200.41,
+"out": 1237.17
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1240.25
+},
+{
+"at": 1243.21
+},
+{
+"at": 1246.87
+},
+{
+"at": 1251.59
+},
+{
+"at": 1253.65
+},
+{
+"at": 1255.75
+},
+{
+"at": 1259.65
+},
+{
+"at": 1261.95
+},
+{
+"at": 1263.33
+},
+{
+"at": 1264.61
+}
+],
+"at": 1236.33,
+"out": 1266.61
+},
+{
+"k": "ask",
+"at": 1278.45,
+"out": 1287.45
+},
+{
+"k": "next",
+"at": 1290.05,
+"out": 1299.55
+}
+],
+"end": 1306.11,
+"txt": {
+"recapTitle": "12 THINGS",
+"recap": [
+"Up ≠ faster",
+"No lamp, no sun",
+"Back at night",
+"Heat pump: small",
+"Batteries every fall",
+"Level, or recycle",
+"Thermometer test",
+"Brush the dust",
+"Fan on AUTO",
+"Your own schedule"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"What number is it on?",
+"…and is the fan ON or AUTO?"
+],
+"next": [
+"THE DUCTS",
+"where your heat gets lost"
+],
+"lower": [
+45.52,
+53.52
+]
+}
+}
