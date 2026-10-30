@@ -112,7 +112,7 @@ export const Desc: React.FC<{ t: number; at: number; out: number; x?: number; sc
         background: "linear-gradient(180deg, rgba(28,30,34,.96), rgba(16,17,20,.96))", boxShadow: "0 70px 120px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.12)", fontFamily: FONT }}>
         <div style={{ color: "rgba(255,255,255,.55)", fontWeight: 800, fontSize: 24, letterSpacing: 4 }}>DESCRIPTION</div>
         <div style={{ position: "relative", marginTop: 16, padding: "16px 20px", borderRadius: 14, background: `rgba(255,214,10,${0.18 * hl})`, boxShadow: hl > 0.05 ? `0 0 0 3px rgba(255,214,10,${0.9 * hl}), 0 0 40px rgba(255,214,10,${0.35 * hl})` : undefined, overflow: "hidden" }}>
-          <div style={{ color: "#fff", fontWeight: 800, fontSize: 40, lineHeight: 1.25 }}>🔥 El Invierno Sin Gas · mis 5 manuales, paso a paso</div>
+          <div style={{ color: "#fff", fontWeight: 800, fontSize: 40, lineHeight: 1.25 }}>📖 Ole's Logging Camp Cookbook · 73 recipes from the cook shack</div>
           <div style={{ position: "absolute", top: 0, bottom: 0, left: `${-30 + 130 * sweep}%`, width: "25%", background: "linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent)", opacity: sweep < 1 ? 1 : 0 }} />
         </div>
         {L(980)}{L(1040)}{L(760)}{L(900, 0.15)}

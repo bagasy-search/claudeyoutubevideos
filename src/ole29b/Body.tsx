@@ -49,7 +49,7 @@ const imgNear = (t: number, used: Set<string>): string | undefined => {
 const HS: H[] = (HEROES as H[]).map((h) => {
   const u = new Set<string>(); const out: H = { ...h };
   out.bg = imgNear(h.at + 1, u);
-  if (h.cards) out.imgs = (h.cards as [number, string][]).map(([x]) => imgNear(x + 1, u));
+  if (h.cards) out.imgs = h.imgs && (h.imgs as string[]).length >= (h.cards as unknown[]).length ? h.imgs : (h.cards as [number, string][]).map(([x]) => imgNear(x + 1, u));
   else out.imgs = [h.at + 1.5, h.at + 4, (h.at + h.out) / 2, h.out - 1].map((x) => imgNear(x, u));
   return out;
 });

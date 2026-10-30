@@ -77,7 +77,7 @@ const Ico: React.FC<{ k: IcoK; c: string; p: number; t: number; n?: string }> = 
 };
 
 // ---------- chip: el ícono salta (resorte) y de él se desenrolla la pastilla con la frase; al irse se enrolla de vuelta ----------
-export const Chip: React.FC<{ t: number; at: number; out: number; text: string; col?: string; x?: number; y?: number }> = ({ t, at, out, text, col, x = 96, y = 92 }) => {
+export const Chip: React.FC<{ t: number; at: number; out: number; text: string; col?: string; x?: number; y?: number }> = ({ t, at, out, text, col, x = 96, y = 900 }) => {
   if (t < at - 0.05 || t > out + 0.6) return null;
   const [k, n, txt] = icoOf(text);
   const c = k === "no" ? ACC.red : acc(col);
@@ -388,7 +388,7 @@ export const Desc: React.FC<{ t: number; at: number; out: number; x?: number; y?
       <div style={{ marginBottom: 16, fontFamily: FONT, fontWeight: 800, fontSize: 30, letterSpacing: 5, color: COL.amber, opacity: hl }}>FIRST LINE OF THE DESCRIPTION ↓</div>
       <Panel style={{ width: 1180, padding: "30px 40px 36px" }}>
         <div style={{ position: "relative", padding: "16px 22px", borderRadius: 14, background: `rgba(255,200,60,${0.14 * hl})`, boxShadow: `0 0 0 2px rgba(255,200,60,${0.85 * hl})`, overflow: "hidden" }}>
-          <div style={{ fontWeight: 800, fontSize: 40 }}>🔥 El Invierno Sin Gas · mis 5 manuales, paso a paso</div>
+          <div style={{ fontWeight: 800, fontSize: 40 }}>📖 Ole's Logging Camp Cookbook · 73 recipes from the cook shack</div>
           <div style={{ position: "absolute", top: 0, bottom: 0, left: `${-30 + 130 * sweep}%`, width: "22%", background: "linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent)", opacity: sweep < 1 ? 1 : 0 }} />
         </div>
         {L(940)}{L(1010)}{L(720)}
@@ -418,14 +418,9 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
   const camY = 10 * Math.sin((t - at) * 0.11 + 1.2);
   const R = iris * 1500;
   const mask = `radial-gradient(circle at 50% 52%, #000 ${R}px, transparent ${R + 520}px)`;
-  const hdr = cl(phys(t, at + 0.35, 6, 0.7)) * (1 - eIn(t, out - 0.4, out + 0.4));
   return <AbsoluteFill style={{ opacity: cl(iris * 2.2), fontFamily: FONT, color: G.txt, WebkitMaskImage: mask, maskImage: mask } as React.CSSProperties}>
     <AbsoluteFill style={{ background: `radial-gradient(ellipse 70% 60% at 50% 46%, ${c}22, #0b0b0d 62%), #0b0b0d` }} />
     <div style={{ position: "absolute", left: 0, right: 0, top: 860, height: 220, background: "linear-gradient(180deg, rgba(255,255,255,.04), transparent)" }} />
-    <div style={{ position: "absolute", left: 110, top: 86, opacity: hdr, transform: `translateX(${(1 - hdr) * -40}px)` }}>
-      <Kicker txt={kicker} col={c} w={hdr} />
-      <div style={{ fontWeight: 800, fontSize: 58, marginTop: 6, opacity: cl(hdr * 1.5), clipPath: `inset(0 ${(1 - cl(hdr)) * 100}% 0 0)` }}>{title}</div>
-    </div>
     {/* contador: el número nuevo cae desde arriba con resorte y empuja al anterior hacia abajo */}
     <div style={{ position: "absolute", right: 110, top: 96, fontWeight: 800, fontSize: 64, letterSpacing: -1, opacity: cl(phys(t, cards[0].at - 0.3, 6, 0.7)) * (1 - xo), display: "flex", alignItems: "baseline" }}>
       <div style={{ height: 78, overflow: "hidden", position: "relative", width: 52 }}>
