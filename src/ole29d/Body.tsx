@@ -10,7 +10,7 @@ import { AskCard, Chip, CoverFlow, Desc, GuidePage } from "./premium";
 import { Avatar, OK, Shot, WIN, World } from "./parts";
 import { CamaraMano } from "../kits/camara/CamaraMano";
 import HEROES from "./heroes.json";
-import { H } from "./hkit";
+import { H, HAND } from "./hkit";
 import { HA } from "./heroes_d";
 
 type Seg = [number, number, string, string];
@@ -25,7 +25,21 @@ const base = (t: number): React.ReactNode => {
   const [a, , k, id] = g;
   // clip de Veo (8 s, con movimiento propio) desde su cuadro 0; si no llegó o no pasó el control, el mundo
   if (k === "V") return OK.has(id) ? <AbsoluteFill style={{ transform: `scale(${1.02 + 0.04 * e(t, a, a + 8)})` }}><Vid id={"veo/" + id} at={a} /></AbsoluteFill> : <World t={t} />;
+  if (id === "n_lista_compras") return <Lista t={t} a={a} />;
   return <Shot k={id} t={t} a={a} />;
+};
+// LA LISTA (29-oct): la foto traía letras inventadas → la lista se escribe a lápiz por código, renglón por renglón, con palabras de verdad
+const LISTA = ["pinto beans", "oatmeal", "cornmeal", "1 doz. eggs", "5 lb potatoes", "3 lb onions", "1 cabbage"];
+const Lista: React.FC<{ t: number; a: number }> = ({ t, a }) => {
+  const k = e(t, a, a + 0.9);
+  return <AbsoluteFill>
+    <Img src={staticFile("img/ole29d/n_lista_compras.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(22px) brightness(.45)", transform: "scale(1.15)" }} />
+    <div style={{ position: "absolute", left: 960, top: 560, width: 760, height: 900, transform: `translate(-50%,-50%) translateY(${(1 - k) * 80}px) rotate(${-3 + 1.2 * k}deg) scale(${0.96 + 0.04 * e(t, a, a + 6)})`, opacity: k,
+      background: "linear-gradient(180deg,#efe2c4,#e4d3ae)", borderRadius: 8, boxShadow: "0 50px 90px rgba(0,0,0,.6), inset 0 0 60px rgba(150,110,60,.25)", padding: "60px 70px", boxSizing: "border-box" }}>
+      <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 84, color: "#2b2a33", clipPath: `inset(0 ${100 - 100 * e(t, a + 0.5, a + 1.3)}% 0 0)` }}>Week list</div>
+      {LISTA.map((x, i) => { const s = a + 1.4 + i * 0.62; return <div key={i} style={{ fontFamily: HAND, fontWeight: 600, fontSize: 62, color: "#33323c", marginTop: 6, borderBottom: "2px solid rgba(90,110,150,.35)", clipPath: `inset(0 ${100 - 100 * e(t, s, s + 0.5)}% 0 0)` }}>– {x}</div>; })}
+    </div>
+  </AbsoluteFill>;
 };
 const nowAv = (t: number) => WIN.some((x) => t >= x.ms && t < x.me);
 const avOn = (a: number, b: number) => WIN.some((w) => a < w.me && b > w.ms);
@@ -49,7 +63,7 @@ const imgNear = (t: number, used: Set<string>): string | undefined => {
 const HS: H[] = (HEROES as H[]).map((h) => {
   const u = new Set<string>(); const out: H = { ...h };
   out.bg = imgNear(h.at + 1, u);
-  if (h.cards) out.imgs = (h.cards as [number, string][]).map(([x]) => imgNear(x + 1, u));
+  if (h.cards) out.imgs = h.imgs && (h.imgs as string[]).length >= (h.cards as unknown[]).length ? h.imgs : (h.cards as [number, string][]).map(([x]) => imgNear(x + 1, u));
   else out.imgs = [h.at + 1.5, h.at + 4, (h.at + h.out) / 2, h.out - 1].map((x) => imgNear(x, u));
   return out;
 });

@@ -12,9 +12,9 @@ export const F: Record<string, { p: number[]; l: number[]; fov: number }> = {
   firebox: { p: [1.7, 0.6, -0.55], l: [1.5, 0.42, -1.85], fov: 38 },
   table: { p: [-1.3, 1.7, 2.4], l: [-1.2, 0.8, 0.1], fov: 44 },
   plates: { p: [-0.3, 1.2, 1.2], l: [-1.5, 0.82, 0.2], fov: 40 },
-  window: { p: [-1.1, 1.5, -0.7], l: [-1.8, 1.6, -3], fov: 44 },
-  shelf: { p: [-3.5, 1.55, 0.3], l: [-4.9, 1.45, -1.0], fov: 42 },
-  lantern: { p: [-0.3, 1.85, 1.7], l: [-1.2, 2.05, 0.2], fov: 42 },
+  window: { p: [-0.2, 1.6, 1.5], l: [-1.6, 1.0, -1.6], fov: 46 },   // 29-oct: la mesa con la ventana nevada atrás (antes: pared sola)
+  shelf: { p: [-0.6, 1.5, 0.6], l: [1.4, 0.9, -2.1], fov: 44 },      // 29-oct: la cocina a leña vista desde la mesa (antes: estante vacío)
+  lantern: { p: [-1.0, 2.6, 2.2], l: [-1.2, 0.8, 0.0], fov: 46 },    // 29-oct: la mesa desde arriba, bajo el farol (antes: techo)
   duo: { p: [0.4, 1.45, 2.7], l: [0.5, 0.8, -1.6], fov: 46 },
   sack: { p: [3.5, 1.05, 0.3], l: [2.9, 0.5, -1.7], fov: 42 },
 };
