@@ -25,7 +25,7 @@ export const HManifold: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={
     {X.map((x, i) => { const s = phys(tt, it(h, i) - 0.15, 6, 0.45), on = fill(i);
       return <div key={i} style={{ position: "absolute", left: x, top: 760, transform: `translate(-50%,-50%) translateY(${(1 - s) * 80}px) scale(${0.85 + 0.15 * cl(s)})`, opacity: cl(0.25 + s), filter: `brightness(${0.35 + 0.65 * on}) saturate(${0.3 + 0.7 * on})` }}>
         <Photo id={h.imgs?.[i] ?? h.img} w={340} h={240} />
-        <div style={{ textAlign: "center", marginTop: 18, fontWeight: 900, fontSize: 46, letterSpacing: 3, color: on > 0.5 ? AMB : DIM }}>{h.items![i].txt}</div>
+        <div style={{ textAlign: "center", marginTop: 18, fontWeight: 900, fontSize: 66, letterSpacing: 3, color: on > 0.5 ? AMB : DIM }}>{h.items![i].txt}</div>
       </div>; })}
     <Tag tt={tt} at={0.4} x={960} y={110} txt="ONE QUART OF OIL" size={44} />
   </>;
@@ -81,7 +81,7 @@ export const HLineup: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t}
       return <div key={i} style={{ position: "absolute", left: X(i), top: 640, transform: `translate(-50%,-50%) translateY(${(1 - ent) * 300 + (chosen ? -30 * cl(pick) : 0)}px) scale(${chosen ? 1 + 0.45 * cl(pick) : 1})`, opacity: cl(ent * 2) * (1 - dim) }}>
         {chosen && pick > 0.05 ? <div style={{ opacity: cl(pick * 2) }}><Photo id={h.img} w={250} h={330} r={14} /></div> :
           <svg width={200} height={300} viewBox="-100 -150 200 300"><path d={d} fill={`rgb(${108 + 70 * near},${104 + 60 * near},${100 + 45 * near})`} stroke="rgba(255,235,200,.45)" strokeWidth={4} /></svg>}
-        {!(chosen && pick > 0.05) && <div style={{ position: "absolute", left: "50%", top: 330, transform: "translateX(-50%)", fontWeight: 900, fontSize: 40, letterSpacing: 3, color: `rgba(243,233,214,${0.45 + 0.55 * near})` }}>{SILN[i]}</div>}
+        {!(chosen && pick > 0.05) && <div style={{ position: "absolute", left: "50%", top: 330, transform: "translateX(-50%)", fontWeight: 900, fontSize: 46, letterSpacing: 1, color: `rgba(243,233,214,${0.45 + 0.55 * near})` }}>{SILN[i]}</div>}
       </div>; })}
     <Tag tt={tt} at={0.3} x={960} y={170} txt="“WHICH ONE?”" col={DIM} size={56} />
     <Tag tt={tt} at={it(h, 0) + 0.1} x={X(3)} y={900} txt="THIS ONE" col={AMB} size={50} />
@@ -127,8 +127,8 @@ export const HXray: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h
     </div>)}
     {/* la barra del escáner */}
     <div style={{ position: "absolute", left: bar - 6, top: 200, width: 12, height: 720, background: ICE, boxShadow: `0 0 40px 12px ${ICE}`, opacity: bar < 1750 ? 0.9 : 0 }} />
-    <Tag tt={tt} at={2.4} x={560} y={880} txt="PROPANE · GAS INSIDE" col={RED} size={40} />
-    <Tag tt={tt} at={it(h, 0)} x={1360} y={880} txt="AIR TANK · ONLY AIR" col={ICE} size={40} />
+    <Tag tt={tt} at={2.4} x={560} y={880} txt="PROPANE: GAS" col={RED} size={52} />
+    <Tag tt={tt} at={it(h, 0)} x={1360} y={880} txt="AIR ONLY" col={ICE} size={52} />
     <div style={{ position: "absolute", left: 560, top: 560, transform: `translate(-50%,-50%) scale(${cl(ok) * 1.1})`, opacity: cl(ok), fontFamily: MARK, fontSize: 120, color: RED, textShadow: "0 10px 30px rgba(0,0,0,.6)" }}>NEVER</div>
   </>;
 }}</Stage>;
@@ -156,10 +156,10 @@ export const HWrench: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t}
     </div>
     {/* chasquido de cada golpe */}
     {steps > 0 && steps < 5 && fr < 0.6 && <div style={{ position: "absolute", left: 1180, top: 560, width: 80, height: 80, borderRadius: "50%", border: `5px solid ${AMB}`, opacity: 0.6 * (1 - fr), transform: `scale(${1 + fr})` }} />}
-    <Tag tt={tt} at={0.4} x={960} y={1010} txt="VALVE OFF" col={AMB} size={56} />
+    <div style={{ opacity: 1 - eio(tt, 4.6, 4.9) }}><Tag tt={tt} at={0.4} x={960} y={1010} txt="VALVE OFF" col={AMB} size={56} /></div>
     {/* el agujero que queda abierto donde estaba la válvula */}
     <div style={{ position: "absolute", left: 960 - 70, top: 795 - 26, width: 140, height: 52, borderRadius: "50%", background: "radial-gradient(ellipse,#050505 55%,#3a3d41 75%)", opacity: cl((tt - 4.5) * 3), transform: `scale(${0.3 + 0.7 * cl(phys(tt, 4.5, 5, 0.4))})` }} />
-    <Tag tt={tt} at={4.9} x={960} y={930} txt="OPEN BOTH ENDS" col={AMB} size={52} />
+    <Tag tt={tt} at={4.9} x={960} y={1010} txt="OPEN BOTH ENDS" col={AMB} size={56} />
   </>;
 }}</Stage>;
 
@@ -232,7 +232,7 @@ export const HSection: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t
     {/* la marca de altura de la puerta */}
     <div style={{ position: "absolute", left: 1350, top: doorBot - 4, width: 120, height: 8, background: AMB }} />
     <div style={{ position: "absolute", left: 1490, top: doorBot - 34, fontWeight: 900, fontSize: 60, color: AMB }}>{lift > 0.5 ? '4"' : '1"'}</div>
-    <Tag tt={tt} at={1.4} x={1560} y={880} txt="BURNING OIL OUT" col={RED} size={38} />
+    <Tag tt={tt} at={1.4} x={1400} y={1000} txt="BURNING OIL OUT" col={RED} size={50} />
     <Tag tt={tt} at={it(h, 0)} x={960} y={190} txt="STAYS INSIDE THE STEEL" col={AMB} size={50} />
   </>;
 }}</Stage>;
@@ -245,12 +245,12 @@ export const HCalendar: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={
     <div style={{ width: 380, height: 380, borderRadius: "50%", background: `radial-gradient(circle, rgb(${90 + 165 * b},${80 + 40 * b},${70}) 0%, #3a3a3d 70%)`, boxShadow: `0 0 ${80 * b}px rgba(255,90,30,${0.6 * b}), inset 0 0 0 ${thickRim}px #2a2a2c, 0 40px 70px rgba(0,0,0,.6)`, position: "relative" }}>
       {ho > 0 && <div style={{ position: "absolute", left: 190 - 70 * ho, top: 200 - 60 * ho, width: 140 * ho, height: 120 * ho, borderRadius: "46% 54% 40% 60%", background: "radial-gradient(#000 40%, #ff5a1a 75%, transparent 80%)" }} />}
     </div>
-    <div style={{ textAlign: "center", marginTop: 26, fontWeight: 900, fontSize: 42, color: x < 1000 ? RED : AMB }}>{label}</div>
+    <div style={{ textAlign: "center", marginTop: 26, fontWeight: 900, fontSize: 66, color: x < 1000 ? RED : AMB }}>{label}</div>
   </div>;
   return <>
     {/* calendario de pared con hojas que vuelan */}
     <div style={{ position: "absolute", left: 210, top: 160, width: 300, height: 340, borderRadius: 12, background: "#f4efe6", boxShadow: "0 40px 70px rgba(0,0,0,.6)", overflow: "hidden" }}>
-      <div style={{ height: 80, background: RED, color: "#fff", fontWeight: 900, fontSize: 42, textAlign: "center", lineHeight: "80px" }}>DAY</div>
+      <div style={{ height: 80, background: RED, color: "#fff", fontWeight: 900, fontSize: 66, textAlign: "center", lineHeight: "80px" }}>DAY</div>
       <div style={{ textAlign: "center", fontWeight: 900, fontSize: 190, color: "#1b1b1b", lineHeight: "250px" }}>{d}</div>
     </div>
     {Array.from({ length: 3 }, (_, k) => { const f = ((eio(tt, 0.8, 5.5) * 13.99) % 1 + k / 3) % 1; return d < 14 ? <div key={k} style={{ position: "absolute", left: 210 + f * 260, top: 240 - f * 120 + f * f * 400, width: 300, height: 250, background: "#ede6d6", opacity: 0.9 * (1 - f), transform: `rotate(${f * 70}deg)`, transformOrigin: "0 0" }} /> : null; })}
@@ -355,7 +355,7 @@ export const HMetronome: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t=
     <div style={{ position: "absolute", left: 1300 - 220, top: 770, width: 440, height: 110, borderRadius: "0 0 220px 220px", background: "radial-gradient(ellipse at 50% 0%, #ff7a2a 0%, #3a2a20 55%)", boxShadow: `0 0 ${60 + 120 * flash}px rgba(255,140,50,${0.4 + 0.5 * flash})` }} />
     <div style={{ position: "absolute", left: 1300, top: 740, width: 200 * flash + 10, height: 200 * flash + 10, transform: "translate(-50%,-50%)", borderRadius: "50%", background: "radial-gradient(circle, rgba(255,230,160,.9), rgba(255,120,40,0) 70%)", opacity: flash }} />
     <div style={{ position: "absolute", left: 960, top: 210, transform: "translateX(-50%)", fontWeight: 900, fontSize: 150, color: AMB, letterSpacing: 30, textShadow: "0 10px 40px rgba(0,0,0,.6)" }}>{["", "1", "1 · 2", "1 · 2 · 3"][n]}</div>
-    <Tag tt={tt} at={0.4} x={1300} y={960} txt="ONE DROP A SECOND" col={TX} size={42} />
+    <Tag tt={tt} at={0.4} x={1460} y={1000} txt="ONE DROP A SECOND" col={TX} size={50} />
   </>;
 }}</Stage>;
 
@@ -375,7 +375,7 @@ export const HSettle: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t}
       {days.map((d, i) => { const on = wk * 7 > i + 0.3; return <div key={i} style={{ width: 82, height: 82, borderRadius: "50%", border: `5px solid ${on ? AMB : "rgba(255,255,255,.25)"}`, background: on ? "rgba(255,178,87,.25)" : "transparent", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 40, color: on ? AMB : DIM, transform: `scale(${on ? 1.06 : 1})` }}>{d}</div>; })}
     </div>
     <Tag tt={tt} at={2.6} x={1420} y={520} txt="CLEAN OIL" col={AMB} size={44} />
-    <Tag tt={tt} at={it(h, 1)} x={1440} y={760} txt="WATER SINKS" col={ICE} size={40} />
+    <Tag tt={tt} at={it(h, 1)} x={1440} y={1000} txt="WATER SINKS" col={ICE} size={40} />
     <Tag tt={tt} at={it(h, 1) + 0.4} x={480} y={830} txt="SLUDGE" col={DIM} size={40} />
   </>;
 }}</Stage>;

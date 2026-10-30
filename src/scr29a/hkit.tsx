@@ -78,6 +78,10 @@ export const Tag: React.FC<{ tt: number; at: number; x: number; y: number; txt: 
   const s = phys(tt, at, 7, 0.45);
   if (s <= 0.01) return null;
   size = Math.max(64, Math.round(size * 1.25)); // rótulos legibles en el celular (evaluador 29-oct: «microscópicos»)
+  // nunca se sale del cuadro: ancho estimado del texto y margen de 50 px (evaluador r3: rótulos cortados en el borde)
+  const w = txt.length * size * 0.76 + 4;
+  if (anchor === "c") x = Math.min(Math.max(x, w / 2 + 50), 1870 - w / 2); else x = Math.min(Math.max(x, 50), 1870 - w);
+  y = Math.min(Math.max(y, size * 0.6 + 40), 1040 - size * 0.6);
   return <div style={{ position: "absolute", left: x, top: y, transform: `translate(${anchor === "c" ? "-50%" : "0"}, -50%) translateY(${(1 - s) * -40}px) scale(${0.8 + 0.2 * s})`, opacity: cl(s * 2), fontWeight: 900, fontSize: size, letterSpacing: 2, color: col, whiteSpace: "nowrap", textShadow: "0 6px 24px rgba(0,0,0,.6)" }}>{txt}</div>;
 };
 
