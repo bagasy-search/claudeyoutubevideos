@@ -1,0 +1,157 @@
+[
+{
+"k": "dawnclock",
+"at": 8.5,
+"out": 15.0
+},
+{
+"k": "quietpath",
+"at": 24.46,
+"out": 30.96
+},
+{
+"k": "onecup",
+"at": 55.3,
+"out": 62.3
+},
+{
+"k": "handoff",
+"at": 105.48,
+"out": 111.98
+},
+{
+"k": "valvehunt",
+"at": 122.32,
+"out": 129.32
+},
+{
+"k": "floatlift",
+"at": 151.82,
+"out": 158.82
+},
+{
+"k": "liquidonly",
+"at": 171.42,
+"out": 177.92
+},
+{
+"k": "densejar",
+"at": 197.14,
+"out": 204.64
+},
+{
+"k": "porcelainpath",
+"at": 215.78,
+"out": 223.28
+},
+{
+"k": "slipwall",
+"at": 232.4,
+"out": 239.9
+},
+{
+"k": "hotel12",
+"at": 264.64,
+"out": 271.14
+},
+{
+"k": "tipsplit",
+"at": 298.58,
+"out": 305.08
+},
+{
+"k": "frostcrack",
+"at": 349.46,
+"out": 356.46
+},
+{
+"k": "waxmelt",
+"at": 366.7,
+"out": 373.2
+},
+{
+"k": "waistdrop",
+"at": 388.9,
+"out": 395.9
+},
+{
+"k": "timeline15",
+"at": 436.88,
+"out": 444.88
+},
+{
+"k": "testexit",
+"at": 505.78,
+"out": 512.78
+},
+{
+"k": "suddenslow",
+"at": 542.06,
+"out": 549.56
+},
+{
+"k": "toyparade",
+"at": 573.76,
+"out": 580.76
+},
+{
+"k": "sealfit",
+"at": 607.26,
+"out": 614.76
+},
+{
+"k": "chemsplash",
+"at": 677.94,
+"out": 684.44
+},
+{
+"k": "jartest",
+"at": 778.38,
+"out": 785.38
+},
+{
+"k": "fortyhouses",
+"at": 790.32,
+"out": 797.32
+},
+{
+"k": "lowflow",
+"at": 873.9,
+"out": 881.4
+},
+{
+"k": "tankline",
+"at": 926.92,
+"out": 933.92
+},
+{
+"k": "rimholes",
+"at": 1004.0,
+"out": 1011.5
+},
+{
+"k": "fruitcake11",
+"at": 1071.38,
+"out": 1077.88
+},
+{
+"k": "ovalknob",
+"at": 1134.76,
+"out": 1141.76
+},
+{
+"k": "stuckvalve",
+"at": 1166.46,
+"out": 1173.96
+},
+{
+"k": "tuesday",
+"at": 1218.64,
+"out": 1225.14
+},
+{
+"k": "onlytwo",
+"at": 1270.66,
+"out": 1277.66
+}
+]

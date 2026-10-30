@@ -1,0 +1,494 @@
+{
+"segs": [
+[
+3.52,
+6.54,
+"shot",
+"f01_sixam"
+],
+[
+6.54,
+10.22,
+"shot",
+"f04_couch_kids"
+],
+[
+10.22,
+12.9,
+"shot",
+"v01"
+],
+[
+12.9,
+15.35,
+"shot",
+"f02_rising"
+],
+[
+20.72,
+22.18,
+"shot",
+"f03_garage_plunger"
+],
+[
+22.18,
+28.18,
+"shot",
+"f05_bathrobe"
+],
+[
+36.2,
+41.34,
+"shot",
+"f06_soap_counter"
+],
+[
+41.34,
+46.34,
+"shot",
+"f07_lenny_intro"
+],
+[
+116.35,
+122.35,
+"shot",
+"f08_hand_handle"
+],
+[
+123.08,
+129.08,
+"shot",
+"f09_valve_reach"
+],
+[
+144.62,
+146.02,
+"shot",
+"f10_tank_lid"
+],
+[
+153.88,
+159.88,
+"shot",
+"f11_float_lift"
+],
+[
+167.05,
+171.2,
+"shot",
+"v02"
+],
+[
+171.2,
+177.2,
+"shot",
+"f12_soap_types"
+],
+[
+178.16,
+182.81,
+"shot",
+"v03"
+],
+[
+182.81,
+188.81,
+"shot",
+"f13_long_squeeze"
+],
+[
+200.78,
+206.78,
+"shot",
+"f14_soap_sinking"
+],
+[
+212.43,
+218.43,
+"shot",
+"f15_cutaway"
+],
+[
+222.32,
+225.4,
+"shot",
+"f16_clog_bend"
+],
+[
+257.04,
+259.66,
+"shot",
+"f17_hotel"
+],
+[
+264.3,
+267.24,
+"shot",
+"f18_suite"
+],
+[
+267.24,
+272.24,
+"shot",
+"f19_businessman"
+],
+[
+273.72,
+275.61,
+"shot",
+"f20_cab"
+],
+[
+281.81,
+287.81,
+"shot",
+"f21_housekeeping"
+],
+[
+289.28,
+293.33,
+"shot",
+"f22_stan_pours"
+],
+[
+302.78,
+308.78,
+"shot",
+"f24_elevator"
+],
+[
+315.0,
+320.56,
+"shot",
+"f25_bucket_tub"
+],
+[
+320.56,
+326.97,
+"shot",
+"v04"
+],
+[
+336.24,
+342.24,
+"shot",
+"f26_boiling_pot"
+],
+[
+353.2,
+359.2,
+"shot",
+"f27_cracked_bowl"
+],
+[
+366.4,
+372.4,
+"shot",
+"f28_wax_ring"
+],
+[
+383.68,
+391.68,
+"shot",
+"v05"
+],
+[
+402.57,
+408.57,
+"shot",
+"f29_pour_waist"
+],
+[
+421.36,
+427.36,
+"shot",
+"f30_cup_scoop"
+],
+[
+436.53,
+444.53,
+"shot",
+"v06"
+],
+[
+456.0,
+459.2,
+"shot",
+"f32_draining"
+],
+[
+459.2,
+465.12,
+"shot",
+"v07"
+],
+[
+489.98,
+495.98,
+"shot",
+"f33_hand_valve_flush"
+],
+[
+555.84,
+561.84,
+"shot",
+"f34_slow_weeks"
+],
+[
+568.45,
+573.16,
+"shot",
+"f35_toddler"
+],
+[
+573.16,
+579.16,
+"shot",
+"f36_toys_pile"
+],
+[
+602.79,
+608.79,
+"shot",
+"f37_flat_plunger"
+],
+[
+613.0,
+615.74,
+"shot",
+"f38_flange_plunger"
+],
+[
+639.69,
+645.69,
+"shot",
+"f39_closet_auger"
+],
+[
+661.8,
+667.8,
+"shot",
+"f40_chemical_bottle"
+],
+[
+714.28,
+719.04,
+"shot",
+"f41_hairbrush_flush"
+],
+[
+774.94,
+780.94,
+"shot",
+"f42_wipes_jar"
+],
+[
+795.9,
+801.9,
+"shot",
+"f43_wipes_rope"
+],
+[
+813.78,
+817.33,
+"shot",
+"f44_dont_list"
+],
+[
+840.54,
+845.56,
+"shot",
+"v09"
+],
+[
+845.56,
+850.56,
+"shot",
+"f45_trash_lid"
+],
+[
+909.8,
+913.22,
+"shot",
+"f46_date_stamp"
+],
+[
+913.22,
+916.66,
+"shot",
+"f47_water_line"
+],
+[
+938.8,
+944.8,
+"shot",
+"f48_fill_screw"
+],
+[
+970.37,
+976.37,
+"shot",
+"f49_thick_paper"
+],
+[
+1020.96,
+1026.96,
+"shot",
+"f50_mirror_rim"
+],
+[
+1064.14,
+1067.46,
+"shot",
+"f51_fruitcake"
+],
+[
+1141.68,
+1145.22,
+"shot",
+"v08"
+],
+[
+1154.6,
+1160.6,
+"shot",
+"f52_ceiling"
+],
+[
+1200.74,
+1206.74,
+"shot",
+"f53_calendar_jan"
+],
+[
+1287.0,
+1290.14,
+"shot",
+"v10"
+],
+[
+1290.14,
+1293.48,
+"shot",
+"f54_lenny_end"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 93.7,
+"out": 98.7
+},
+{
+"k": "step",
+"n": 1,
+"name": "ONE CUP OF SOAP",
+"at": 162.28,
+"out": 165.28
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE HOT WATER",
+"at": 307.8,
+"out": 310.8
+},
+{
+"k": "step",
+"n": 3,
+"name": "FROM THE WAIST",
+"at": 377.08,
+"out": 380.08
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE 15 MINUTES",
+"at": 426.28,
+"out": 429.28
+},
+{
+"k": "step",
+"n": 5,
+"name": "WHEN IT WON'T WORK",
+"at": 521.02,
+"out": 524.02
+},
+{
+"k": "step",
+"n": 6,
+"name": "PLAN B",
+"at": 587.76,
+"out": 590.76
+},
+{
+"k": "step",
+"n": 7,
+"name": "NEVER IN A TOILET",
+"at": 733.26,
+"out": 736.26
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE VALVE",
+"at": 1118.12,
+"out": 1121.12
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1074.7
+},
+{
+"at": 1086.38
+},
+{
+"at": 1089.06
+},
+{
+"at": 1094.58
+},
+{
+"at": 1096.48
+},
+{
+"at": 1106.14
+}
+],
+"at": 1071.8,
+"out": 1108.14
+},
+{
+"k": "ask",
+"at": 1226.06,
+"out": 1234.06
+}
+],
+"end": 1293.48,
+"txt": {
+"recapTitle": "ONE CUP · 15 MINUTES",
+"recap": [
+"Don't flush again",
+"1 cup dish soap",
+"Hot, not boiling",
+"Wait 15 minutes",
+"Hand on the valve",
+"Then plunger or auger"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"Does your valve turn?",
+"Or is it stuck?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+41.34,
+49.34
+]
+}
+}
