@@ -1,0 +1,500 @@
+{
+"segs": [
+[
+4.64,
+7.96,
+"shot",
+"f01_hum_switch"
+],
+[
+7.96,
+15.5,
+"shot",
+"v01"
+],
+[
+25.1,
+26.48,
+"shot",
+"f03_reaching"
+],
+[
+26.48,
+31.48,
+"shot",
+"f04_lenny_intro"
+],
+[
+50.6,
+53.29,
+"shot",
+"f05_junk_drawer"
+],
+[
+106.15,
+111.44,
+"shot",
+"f06_blender_fear"
+],
+[
+111.44,
+116.37,
+"shot",
+"f07_cutaway"
+],
+[
+128.26,
+133.6,
+"shot",
+"f08_impellers"
+],
+[
+137.16,
+143.16,
+"shot",
+"f09_grind_ring"
+],
+[
+157.26,
+163.26,
+"shot",
+"f10_jefferson"
+],
+[
+172.48,
+178.02,
+"shot",
+"f11_dishes_tub"
+],
+[
+178.02,
+184.02,
+"shot",
+"f12_ring_plate"
+],
+[
+224.3,
+230.3,
+"shot",
+"f13_bottle_cap"
+],
+[
+243.22,
+249.01,
+"shot",
+"f14_breaker"
+],
+[
+262.92,
+264.72,
+"shot",
+"v02"
+],
+[
+273.96,
+278.96,
+"shot",
+"f15_unplug"
+],
+[
+286.47,
+292.47,
+"shot",
+"f16_tongs"
+],
+[
+302.35,
+308.35,
+"shot",
+"f17_stan_listen"
+],
+[
+320.85,
+326.85,
+"shot",
+"f18_spoon_neighbor"
+],
+[
+340.96,
+346.96,
+"shot",
+"f19_hex_hole"
+],
+[
+371.26,
+376.56,
+"shot",
+"f20_allen_store"
+],
+[
+376.56,
+380.75,
+"shot",
+"v04"
+],
+[
+404.63,
+410.63,
+"shot",
+"f21_hex_turn"
+],
+[
+426.78,
+432.78,
+"shot",
+"f22_wooden_spoon"
+],
+[
+439.53,
+440.76,
+"shot",
+"v05"
+],
+[
+440.76,
+445.76,
+"shot",
+"f23_pliers_pit"
+],
+[
+457.94,
+459.28,
+"shot",
+"f25_dentures"
+],
+[
+459.28,
+464.28,
+"shot",
+"f24_found_things"
+],
+[
+472.72,
+478.72,
+"shot",
+"f26_spoon_slide"
+],
+[
+500.58,
+502.82,
+"shot",
+"f27_ice_salt"
+],
+[
+507.43,
+513.43,
+"shot",
+"f28_table_vs_rock"
+],
+[
+521.12,
+523.48,
+"shot",
+"v07"
+],
+[
+523.48,
+529.48,
+"shot",
+"f29_ice_pour"
+],
+[
+556.19,
+562.19,
+"shot",
+"f30_clean_ring"
+],
+[
+562.2,
+568.2,
+"shot",
+"f31_hot_grease"
+],
+[
+577.42,
+583.42,
+"shot",
+"f32_wall_candle"
+],
+[
+604.91,
+610.91,
+"shot",
+"f33_splash_under"
+],
+[
+622.26,
+628.7,
+"shot",
+"v08"
+],
+[
+628.7,
+633.19,
+"shot",
+"f34_toothbrush"
+],
+[
+639.14,
+644.68,
+"shot",
+"f35_guard_out"
+],
+[
+644.68,
+649.4,
+"shot",
+"v09"
+],
+[
+655.96,
+660.96,
+"shot",
+"f36_lemon_peels"
+],
+[
+666.06,
+668.31,
+"shot",
+"f37_hairbrush"
+],
+[
+691.05,
+697.05,
+"shot",
+"f38_hair_shaft"
+],
+[
+724.87,
+730.87,
+"shot",
+"f39_rice_swell"
+],
+[
+743.41,
+749.41,
+"shot",
+"f40_coffee_grounds"
+],
+[
+761.61,
+767.61,
+"shot",
+"f41_stringy"
+],
+[
+774.88,
+780.88,
+"shot",
+"f42_bones_eggs"
+],
+[
+796.71,
+802.71,
+"shot",
+"f43_timer_cold"
+],
+[
+817.73,
+819.21,
+"shot",
+"f44_chemical_no"
+],
+[
+844.33,
+850.33,
+"shot",
+"f45_potato_bags"
+],
+[
+867.01,
+868.27,
+"shot",
+"f46_brick_paste"
+],
+[
+873.73,
+879.73,
+"shot",
+"f47_son_in_law"
+],
+[
+910.17,
+916.17,
+"shot",
+"f48_dw_hose"
+],
+[
+930.27,
+936.27,
+"shot",
+"f49_dw_water"
+],
+[
+993.73,
+999.73,
+"shot",
+"f50_knockout"
+],
+[
+1028.49,
+1034.49,
+"shot",
+"f51_septic"
+],
+[
+1128.02,
+1134.02,
+"shot",
+"f52_red_button"
+],
+[
+1169.33,
+1173.16,
+"shot",
+"v06"
+],
+[
+1209.64,
+1215.64,
+"shot",
+"f53_magician"
+],
+[
+1219.77,
+1221.18,
+"shot",
+"f54_taped_wrench"
+],
+[
+1243.84,
+1249.84,
+"shot",
+"f55_leak_bottom"
+],
+[
+1341.57,
+1344.63,
+"shot",
+"f56_lenny_end"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 91.84,
+"out": 96.84
+},
+{
+"k": "step",
+"n": 1,
+"name": "WHAT'S INSIDE",
+"at": 94.9,
+"out": 97.9
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE HUM · THE ONE RULE",
+"at": 203.98,
+"out": 206.98
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE HEX KEY",
+"at": 336.98,
+"out": 339.98
+},
+{
+"k": "step",
+"n": 4,
+"name": "GET THE THING OUT",
+"at": 409.68,
+"out": 412.68
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE ONE CUP",
+"at": 484.54,
+"out": 487.54
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE SMELL",
+"at": 594.04,
+"out": 597.04
+},
+{
+"k": "step",
+"n": 7,
+"name": "WHAT KILLS A DISPOSAL",
+"at": 708.45,
+"out": 711.45
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE RED BUTTON",
+"at": 1122.87,
+"out": 1125.87
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1072.99
+},
+{
+"at": 1079.39
+},
+{
+"at": 1081.87
+},
+{
+"at": 1087.27
+},
+{
+"at": 1099.07
+},
+{
+"at": 1108.35
+}
+],
+"at": 1067.93,
+"out": 1110.35
+},
+{
+"k": "ask",
+"at": 1271.19,
+"out": 1279.19
+}
+],
+"end": 1344.63,
+"txt": {
+"recapTitle": "15 MINUTES · LIKE NEW",
+"recap": [
+"Hum = jam · silent = power",
+"Switch off, unplug, check",
+"¼\" hex key, bottom",
+"Tongs, never your hand",
+"1 cup ice + ½ cup salt",
+"Toothbrush + lemon peel"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"Strangest thing your",
+"disposal ever choked on?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+26.48,
+34.48
+]
+}
+}
