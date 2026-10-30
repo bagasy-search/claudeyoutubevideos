@@ -87,7 +87,7 @@ const Piece: React.FC<{ t: number; o: Ov }> = ({ t, o }) => {
     case "mistake": return nowAv(t) ? <Mistake t={t} at={o.at} out={o.out} n={o.n} txt={o.txt} /> : null;
     case "check": return <CheckList t={t} title={o.title} rows={o.rows} out={o.out} imgs={imgsFor(o.rows.map((r: any) => r.at + 0.4))} />;
     case "deal": return null;
-    case "recap": return nowAv(t) ? <Chip t={t} at={o.at} out={o.out} text={"THE WHOLE THING · " + PL.txt.recapTitle} /> : null;
+    case "recap": return null; // 30-oct: sin chip arriba a la izquierda en el recap (regla del creador)
     case "ask": return <AskCard t={t} at={o.at} out={o.out} q={PL.txt.ask} side={avOn(o.at, o.out)} />;
     case "next": return <NextCard t={t} at={o.at} subAt={o.at + 1.6} out={o.out}><div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 60, color: COL.amber }}>{PL.txt.next[0]}</div><div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 32, color: COL.ink }}>{PL.txt.next[1]}</div></NextCard>;
   }
