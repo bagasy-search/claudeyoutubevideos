@@ -364,8 +364,8 @@ export const GuidePage: React.FC<{ t: number; at: number; out: number; img: stri
     <AbsoluteFill style={{ background: "rgba(5,5,6,.82)" }} />
     <div style={{ position: "absolute", left: 1180, top: 545, perspective: 1800 }}>
       <div style={{ transform: `translate(-50%,-50%) translateZ(${(1 - k) * -400}px) translateY(${(1 - k) * 80}px) rotateY(${-10 - 40 * (1 - k) + 4 * cl(k)}deg) rotateX(3deg) scale(${z})`, width: 660, borderRadius: 10, overflow: "hidden", boxShadow: "0 60px 120px rgba(0,0,0,.75)" }}>
-        <Img src={staticFile(P + img + ".jpg")} style={{ width: "100%", display: "block" }} />
-        <div style={{ position: "absolute", left: "7%", right: "6%", top: "7.6%", height: "4.8%", background: "rgba(255,200,60,.35)", borderRadius: 6, transformOrigin: "0 50%", transform: `scaleX(${e(t, at + 0.8, at + 1.4)})` }} />
+        <Img src={staticFile(P + img + ".jpg")} style={{ width: "100%", display: "block", marginTop: img === "wl_p01" ? -34 : 0 }} />{/* 30-oct: la tapa wl_p01 viene con «THE WINTER» cortado arriba: se recorta esa franja */}
+        {img !== "wl_p01" && <div style={{ position: "absolute", left: "7%", right: "6%", top: "7.6%", height: "4.8%", background: "rgba(255,200,60,.35)", borderRadius: 6, transformOrigin: "0 50%", transform: `scaleX(${e(t, at + 0.8, at + 1.4)})` }} />}
       </div>
     </div>
     <div style={{ position: "absolute", left: 470, top: 545, transform: `translate(-50%,-50%) translateY(${(1 - q) * 30}px)`, opacity: q, textAlign: "center", fontFamily: FONT, color: G.txt }}>
