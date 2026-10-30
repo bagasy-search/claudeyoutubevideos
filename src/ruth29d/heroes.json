@@ -205,7 +205,8 @@
   "k": "leveeChute",
   "mode": "iris",
   "at": 756.38,
-  "out": 763.26
+  "out": 763.26,
+  "veo": "r_leveeChute"
  },
  {
   "k": "rigCanal",

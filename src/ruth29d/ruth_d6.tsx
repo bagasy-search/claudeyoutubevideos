@@ -210,6 +210,8 @@ const HStretchBoards: C = ({ t, h }) => <S t={t} h={h} bg={WALL} f={(tt) => {
 }} />;
 
 export const HCD6: Record<string, C> = {
-  trapCount: HTrapCount, harvestBars: HHarvestBars, delawareOverlay: HDelawareOverlay, floodRoof: HFloodRoof, leveeChute: HLeveeChute,
-  pipeRebuild: HPipeRebuild, penMap: HPenMap, tailBounty: HTailBounty, stretchBoards: HStretchBoards,
+  // 29-oct: sólo quedan las que no bajaron frente a d5 (el resto vuelve a la versión de d5, que puntuó más)
+  trapCount: HTrapCount, floodRoof: HFloodRoof,
 };
+// en reserva (puntuaron menos que d5 en la ronda 6): harvestBars, delawareOverlay, leveeChute, pipeRebuild, penMap, tailBounty, stretchBoards
+export const HCD6_RESERVA: Record<string, C> = { harvestBars: HHarvestBars, delawareOverlay: HDelawareOverlay, leveeChute: HLeveeChute, pipeRebuild: HPipeRebuild, penMap: HPenMap, tailBounty: HTailBounty, stretchBoards: HStretchBoards };
