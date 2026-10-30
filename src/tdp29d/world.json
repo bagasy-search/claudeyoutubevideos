@@ -1,0 +1,120 @@
+{
+"cams": [
+[
+0,
+"wide"
+],
+[
+92.12,
+"model"
+],
+[
+105.48,
+"table"
+],
+[
+187.78,
+"props"
+],
+[
+265.08,
+"window"
+],
+[
+337.87,
+"propsL"
+],
+[
+406.91,
+"table"
+],
+[
+526.25,
+"wall"
+],
+[
+606.77,
+"window"
+],
+[
+665.98,
+"propsR"
+],
+[
+819.22,
+"low"
+],
+[
+900.9,
+"table"
+],
+[
+1024.84,
+"wide2"
+],
+[
+1108.34,
+"wide"
+],
+[
+1217.62,
+"window"
+]
+],
+"fx": [
+[
+0,
+{
+"eve": 1,
+"tray": 0
+}
+],
+[
+187.78,
+{
+"coins": 1
+}
+],
+[
+265.08,
+{
+"coins": 0
+}
+],
+[
+900.9,
+{
+"eve": 1
+}
+],
+[
+1108.34,
+{
+"letter": 1,
+"eve": 0.6
+}
+],
+[
+1263.22,
+{
+"eve": 0.8
+}
+]
+],
+"price": "",
+"nb": [
+"Nagoya — 3 a.m.",
+"johatsu",
+"90,144 reports",
+"yonige-ya",
+"meiwaku",
+"7:15 — the suit",
+"San'ya · Kamagasaki",
+"doya ¥2,000",
+"juminhyo",
+"11 years — porch light",
+"soup on Saturdays",
+"9 years, 11 buttons",
+"the white headband"
+]
+}
