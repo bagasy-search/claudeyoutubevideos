@@ -1,0 +1,118 @@
+{
+"cams": [
+[
+0,
+"wide"
+],
+[
+67.58,
+"model"
+],
+[
+90.46,
+"table"
+],
+[
+188.76,
+"props"
+],
+[
+241.86,
+"window"
+],
+[
+360.63,
+"propsL"
+],
+[
+432.65,
+"table"
+],
+[
+564.13,
+"wall"
+],
+[
+688.04,
+"window"
+],
+[
+791.99,
+"propsR"
+],
+[
+876.07,
+"low"
+],
+[
+981.75,
+"table"
+],
+[
+1024.26,
+"wide2"
+],
+[
+1257.02,
+"wide"
+],
+[
+1296.34,
+"window"
+]
+],
+"fx": [
+[
+0,
+{
+"eve": 0,
+"tray": 0
+}
+],
+[
+188.76,
+{
+"coins": 1
+}
+],
+[
+432.65,
+{
+"coins": 0
+}
+],
+[
+688.04,
+{
+"eve": 1
+}
+],
+[
+1024.26,
+{
+"letter": 1
+}
+],
+[
+1296.34,
+{
+"eve": 0.6
+}
+]
+],
+"price": "",
+"nb": [
+"Nagoro — Iya valley",
+"dolls > people",
+"~450 schools / yr",
+"2,000,000 → 686,000",
+"Kyu-Shirataki: 1 girl",
+"akiya · genkai shuraku",
+"hakajimai",
+"mikoshi: 20 people",
+"30 m², 12th floor",
+"Aya — the fish town",
+"11 kids",
+"grandparents"
+]
+}
