@@ -41,12 +41,12 @@ const avOn = (a: number, b: number) => WIN.some((w) => a < w.me && b > w.ms);
 // ===== CTA: chip de la guía → chip del manual (con la página) → la página real + QR chico → la descripción sola =====
 const CTA: React.FC<{ t: number; c: Cta; manual: string; img: string; pageTxt: string }> = ({ t, c, manual, img, pageTxt }) => {
   const pag = (pageTxt.match(/PAGE\s*\d+/) ?? [""])[0];
-  const side = avOn(c.desc, c.end) && c.page === undefined;
+  const side = avOn(c.desc, c.end); // 30-oct: sobre el avatar la descripción va abajo a la izquierda SIEMPRE (tapaba la boca en 8:40)
   return <>
     {c.guide !== undefined && <Chip t={t} at={c.guide} out={(c.book ?? c.page ?? c.desc) - 0.15} text="📕 RHONDA'S BROWN BOTTLE BOOK" />}
     {c.book !== undefined && <Chip t={t} at={c.book} out={(c.page ?? c.desc) - 0.15} text={manual} col="ice" />}
     {c.page !== undefined && <GuidePage t={t} at={c.page} out={c.desc - 0.2} img={img} tag={[manual.split("·")[0].trim(), pag].filter(Boolean).join(" · ")} />}
-    <Desc t={t} at={c.desc} out={c.end - 0.3} x={side ? 440 : 960} y={side ? 880 : 640} scale={side ? 0.56 : 0.8} />
+    <Desc t={t} at={c.desc} out={c.end - 0.3} x={side ? 470 : 960} y={side ? 900 : 640} scale={side ? 0.7 : 0.8} />
   </>;
 };
 
@@ -66,11 +66,35 @@ const imgNear = (t: number, used: Set<string>): string | undefined => {
 };
 const imgsFor = (ts: number[]) => { const u = new Set<string>(); return ts.map((x) => imgNear(x, u)); };
 const Carousels: React.FC<{ t: number }> = ({ t }) => <>
-  {MIS.length > 0 && <CoverFlow t={t} at={DEAL?.at ?? MIS[0].at - 1} out={MIS[MIS.length - 1].out} hide={nowAv(t)} kicker="BEFORE YOU SCRUB" title={`THE ${MIS.length} MISTAKES`} col="red"
+  {MIS.length > 0 && <CoverFlow t={t} at={DEAL?.at ?? MIS[0].at - 1} out={MIS[MIS.length - 1].out} hide={nowAv(t) || heroCover(t) > 0} kicker="BEFORE YOU SCRUB" title={`THE ${MIS.length} MISTAKES`} col="red"
     cards={MIS.map((m, i) => ({ img: CJ.err?.[i], at: m.at, n: m.n, title: m.txt }))} />}
-  {REC && <CoverFlow t={t} at={REC.at} out={REC.out} hide={nowAv(t)} kicker="ONE MORE TIME" title={PL.txt.recapTitle}
+  {REC && <CoverFlow t={t} at={REC.at} out={REC.out} hide={nowAv(t) || heroCover(t) > 0} kicker="ONE MORE TIME" title={PL.txt.recapTitle}
     cards={[...PL.txt.recap, "The 5 mistakes"].map((n, i) => ({ img: CJ.rec?.[i], at: REC.rows[i] ?? REC.out, n: i + 1, title: n })).filter((c) => c.at < REC.out)} />}
 </>;
+
+// 30-oct (ojo del MP4 a/b): el CTA es dueño de la pantalla (nada encima: «NUMBER 10» bajo la guía); UNA pieza simple por vez
+// (la que entra despide a la anterior: carteles apilados/pegados 40 s); frases largas en tandas de ≤6 s
+const SIMPLE = new Set(["chip", "big", "words", "stamp", "step", "temp"]), WIDE = new Set(["check", "clock", "bars", "chart", "versus", "ask"]);
+// el título «NUMBER n» manda: si cae en la cola del CTA, la descripción se va antes (en b se perdía el NUMBER 8)
+const STEPS = PL.ov.filter((o) => o.k === "step");
+const CTAS: Cta[] = [PL.cta1, PL.cta2].filter((c) => c && c.desc !== undefined).map((c) => { const st = STEPS.find((o) => o.at > c.desc && o.at < c.end + 0.3); return st ? { ...c, end: Math.max(c.desc + 1.0, st.at - 0.35) } : c; });
+const CTAW = CTAS.map((c) => [(c.guide ?? c.page ?? c.desc) - 0.4, c.end + 0.3]);
+const splitW = (o: Ov): Ov[] => {
+  if (o.k !== "words") return [{ ...o }];
+  const g: any[][] = []; for (const it of o.items) { const cur = g[g.length - 1]; if (cur && it.at - cur[0].at < 6) cur.push(it); else g.push([it]); }
+  return g.map((items, i) => ({ ...o, at: items[0].at, items, out: i < g.length - 1 ? g[i + 1][0].at - 0.35 : o.out }));
+};
+const OV: Ov[] = PL.ov.flatMap(splitW).map((o) => {
+  if (!SIMPLE.has(o.k) || o.k === "step") return o;
+  for (const [x, y] of CTAW) { if (o.at < y && o.out > x) { if (o.at >= x) { if (o.out < y + 1.6) return null; o.at = y; } else o.out = Math.min(o.out, x); } }
+  if (o.k === "words") { o.items = o.items.filter((w: any) => w.at >= o.at - 0.01 && w.at < o.out - 0.4); if (!o.items.length) return null; o.at = o.items[0].at; }
+  return o.out - o.at < 0.9 ? null : o;
+}).filter(Boolean).sort((a: any, b: any) => a.at - b.at) as Ov[];
+for (let i = 0; i < OV.length; i++) {
+  const o = OV[i]; if (!SIMPLE.has(o.k) && !WIDE.has(o.k)) continue;
+  const nx = OV.slice(i + 1).find((p) => SIMPLE.has(p.k) || WIDE.has(p.k)); if (!nx || nx.at >= o.out + 0.6) continue;
+  if (SIMPLE.has(o.k)) o.out = Math.max(o.at + 1.2, nx.at - 0.6); else if (SIMPLE.has(nx.k)) (nx as any).drop = true;
+}
 
 // ===== un componente ÚNICO por minuto (heroes.json): tapan todo; las piezas chicas que caen en su tramo se apagan =====
 const HS: H[] = (HEROES as H[]).map((h) => {
@@ -86,8 +110,11 @@ const SHORT = new Set(["chip", "big", "stamp", "temp"]);
 const underHero = (o: Ov) => SHORT.has(o.k) && (String(o.txt ?? "").startsWith("💬") || HS.some((h) => o.at < h.out + 0.9 && o.out > h.at - 0.6));
 const Heroes: React.FC<{ t: number }> = ({ t }) => <>{HS.map((h, i) => { const C = HC[h.k] as React.FC<{ t: number; h: H }> | undefined; return C && t > h.at - 0.1 && t < h.out + 0.9 ? <C key={i} t={t} h={h} /> : null; })}</>;
 
-const Piece: React.FC<{ t: number; o: Ov }> = ({ t, o }) => {
-  if (t < o.at - 0.6 || t > o.out + 0.8 || underHero(o)) return null;
+// 30-oct: la foto héroe es dueña de la pantalla: cualquier tarjeta que siga viva se apaga en 0,12 s al entrar el héroe (fantasmas del evaluador)
+const heroCover = (t: number) => HS.reduce((m, h) => (t >= h.at && t <= h.out ? Math.max(m, Math.min(1, (t - h.at) / 0.12)) : m), 0);
+const Piece: React.FC<{ t: number; o: Ov }> = ({ t, o }) => { const c = heroCover(t); if (c >= 1) return null; const el = <Piece0 t={t} o={o} />; return c > 0 ? <AbsoluteFill style={{ opacity: 1 - c }}>{el}</AbsoluteFill> : el; };
+const Piece0: React.FC<{ t: number; o: Ov }> = ({ t, o }) => {
+  if ((o as any).drop || t < o.at - 0.6 || t > o.out + 0.8 || underHero(o)) return null;
   switch (o.k) {
     case "chip": return <Chip t={t} at={o.at} out={o.out} text={o.txt} col={o.col} />;
     case "big": return <BigNum t={t} at={o.at} out={o.out} text={o.txt} sub={o.sub || undefined} col={o.col} />;
@@ -117,8 +144,8 @@ export const Body: React.FC = () => {
     <CamaraMano intensidad={0.8}><Stage t={t} /></CamaraMano>
     <LowerThird t={t} at={PL.txt.lower[0]} out={PL.txt.lower[1]} name="RHONDA" l2="34 YEARS CLEANING HOUSES · OHIO" l2at={PL.txt.lower[0] + 1} />
     <Carousels t={t} />
-    {[PL.cta1, PL.cta2].map((c, i) => c && c.desc !== undefined ? <CTA key={i} t={t} c={c} manual={c.manual ?? "92 FIXES · $1-2 EACH"} img={c.img ?? "page"} pageTxt={c.pageTxt ?? ""} /> : null)}
-    {PL.ov.map((o, i) => <Piece key={i} t={t} o={o} />)}
+    {CTAS.map((c, i) => c ? <CTA key={i} t={t} c={c} manual={c.manual ?? "92 FIXES · $1-2 EACH"} img={c.img ?? "page"} pageTxt={c.pageTxt ?? ""} /> : null)}
+    {OV.map((o, i) => <Piece key={i} t={t} o={o} />)}
     <Heroes t={t} />
     {/* CUADRO 0 = la miniatura elegida sin texto ni flecha: el que hizo clic ve «la miniatura que se mueve»; corte seco al avatar */}
     {t < 0.8 && <AbsoluteFill><Img src={staticFile(P + "c0.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1 + 0.05 * t})` }} /></AbsoluteFill>}
