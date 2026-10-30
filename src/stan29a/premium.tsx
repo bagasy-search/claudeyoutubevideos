@@ -78,6 +78,7 @@ const Ico: React.FC<{ k: IcoK; c: string; p: number; t: number; n?: string }> = 
 
 // ---------- chip: el ícono salta (resorte) y de él se desenrolla la pastilla con la frase; al irse se enrolla de vuelta ----------
 export const Chip: React.FC<{ t: number; at: number; out: number; text: string; col?: string; x?: number; y?: number }> = ({ t, at, out, text, col, x = 96, y = 92 }) => {
+  if (true) return null; // 29-oct: sin píldoras arriba a la izquierda (regla del creador)
   if (t < at - 0.05 || t > out + 0.6) return null;
   const [k, n, txt] = icoOf(text);
   const c = k === "no" ? ACC.red : acc(col);
@@ -266,7 +267,7 @@ export const DayClock: React.FC<{ t: number; at: number; out: number; marks: [nu
   if (vis(t, at, out) <= 0.01) return null;
   let h = marks[0][1];
   for (let i = 1; i < marks.length; i++) h += (marks[i][1] - marks[i - 1][1]) * cl(phys(t, marks[i][0], 3.5, 0.75));
-  const hh = Math.floor(h), mm = Math.round((h - hh) * 60), day = h >= 8 && h < 18.5;
+  const tm = Math.round(h * 60), hh = Math.floor(tm / 60), mm = tm % 60, day = h >= 8 && h < 18.5;
   return <div style={{ position: "absolute", right: 96, top: 92, ...rise(t, at, out, 16) }}>
     <Panel style={{ display: "flex", alignItems: "center", gap: 22, padding: "16px 30px 16px 18px", borderRadius: 60 }}>
       <svg width={92} height={92} viewBox="-50 -50 100 100">
