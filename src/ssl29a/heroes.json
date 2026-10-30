@@ -1,0 +1,439 @@
+[
+ {
+  "k": "glasses",
+  "at": 3.8,
+  "out": 12.8,
+  "ph": "They slide under the couch",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 7.48
+   },
+   {
+    "at": 11.36
+   }
+  ]
+ },
+ {
+  "k": "floorday",
+  "at": 41.24,
+  "out": 50.24,
+  "ph": "She ate on the floor",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 1.7
+   },
+   {
+    "at": 3.72
+   },
+   {
+    "at": 5.76
+   }
+  ]
+ },
+ {
+  "k": "tenmin",
+  "at": 60.92,
+  "out": 68.42,
+  "ph": "a little habit I took from my mother",
+  "dev": -0.5,
+  "items": [
+   {
+    "at": 2.84
+   },
+   {
+    "at": 4.18
+   }
+  ]
+ },
+ {
+  "k": "ninesteps",
+  "at": 73.16,
+  "out": 81.66,
+  "ph": "nine small things",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 3.72
+   }
+  ]
+ },
+ {
+  "k": "apron",
+  "at": 92.1,
+  "out": 99.1,
+  "ph": "I am NOT a doctor",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 1.46
+   }
+  ]
+ },
+ {
+  "k": "cornerchair",
+  "at": 144.2,
+  "out": 152.2,
+  "ph": "she could not sit on the floor anymore",
+  "dev": -1.4,
+  "items": [
+   {
+    "at": 4.02
+   },
+   {
+    "at": 5.76
+   }
+  ]
+ },
+ {
+  "k": "cushheight",
+  "at": 173.14,
+  "out": 182.14,
+  "ph": "15 centimeters",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 2.94
+   },
+   {
+    "at": 8.12
+   }
+  ]
+ },
+ {
+  "k": "springcal",
+  "at": 209.56,
+  "out": 218.56,
+  "ph": "My Aunt Fumi used a double cushion",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 3.74
+   },
+   {
+    "at": 5.6
+   }
+  ]
+ },
+ {
+  "k": "seizaleg",
+  "at": 240.12,
+  "out": 249.12,
+  "ph": "you sit back on your heels",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 6.5
+   }
+  ]
+ },
+ {
+  "k": "sushiroll",
+  "at": 258.36,
+  "out": 267.86,
+  "ph": "Take a small towel",
+  "dev": -1.8,
+  "items": [
+   {
+    "at": 5.72
+   }
+  ]
+ },
+ {
+  "k": "timer60",
+  "at": 289.14,
+  "out": 297.14,
+  "ph": "60 not 5 minutes",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 2.36
+   },
+   {
+    "at": 7.3
+   }
+  ]
+ },
+ {
+  "k": "pendulum",
+  "at": 351.02,
+  "out": 360.52,
+  "ph": "she slid them to the right",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 2.76
+   },
+   {
+    "at": 7.54
+   }
+  ]
+ },
+ {
+  "k": "stiffside",
+  "at": 384.36,
+  "out": 393.36,
+  "ph": "So guess which side I do longer",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 2.3
+   },
+   {
+    "at": 3.64
+   }
+  ]
+ },
+ {
+  "k": "spine",
+  "at": 433.88,
+  "out": 442.88,
+  "ph": "Your back is straight",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 1.5
+   },
+   {
+    "at": 3.3
+   }
+  ]
+ },
+ {
+  "k": "mushroom",
+  "at": 467.76,
+  "out": 476.76,
+  "ph": "You slump like a sad old mushroom",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 8.98
+   }
+  ]
+ },
+ {
+  "k": "pushpull",
+  "at": 501.66,
+  "out": 510.66,
+  "ph": "When she got up she put one hand",
+  "dev": -1.1,
+  "items": [
+   {
+    "at": 4.5
+   },
+   {
+    "at": 6.62
+   }
+  ]
+ },
+ {
+  "k": "lamp",
+  "at": 549.2,
+  "out": 557.7,
+  "ph": "a folding table or a lamp",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 2.6
+   }
+  ]
+ },
+ {
+  "k": "timber",
+  "at": 666.5,
+  "out": 675.5,
+  "ph": "and she stopped me and said",
+  "dev": -1.4,
+  "items": [
+   {
+    "at": 4.82
+   },
+   {
+    "at": 7.04
+   }
+  ]
+ },
+ {
+  "k": "softland",
+  "at": 728.84,
+  "out": 738.34,
+  "ph": "try to go from standing straight",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 6.18
+   }
+  ]
+ },
+ {
+  "k": "plumb",
+  "at": 778.54,
+  "out": 788.54,
+  "ph": "that your nose comes over your toes",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 8.86
+   }
+  ]
+ },
+ {
+  "k": "soldier",
+  "at": 798.46,
+  "out": 807.46,
+  "ph": "The mistake here is leaning back",
+  "dev": -1.0,
+  "items": [
+   {
+    "at": 6.66
+   }
+  ]
+ },
+ {
+  "k": "tentimes",
+  "at": 847.48,
+  "out": 855.98,
+  "ph": "That is maybe ten times a day",
+  "dev": -0.3
+ },
+ {
+  "k": "commercial",
+  "at": 941.94,
+  "out": 951.44,
+  "ph": "She never sat for more than 30 minutes",
+  "dev": -1.1,
+  "items": [
+   {
+    "at": 5.8
+   },
+   {
+    "at": 8.14
+   }
+  ]
+ },
+ {
+  "k": "stool",
+  "at": 959.0,
+  "out": 968.0,
+  "ph": "She never used a little step stool",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 5.12
+   },
+   {
+    "at": 9.18
+   }
+  ]
+ },
+ {
+  "k": "hanko",
+  "at": 975.9,
+  "out": 983.9,
+  "ph": "When people said Okada san",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 5.8
+   },
+   {
+    "at": 7.64
+   }
+  ]
+ },
+ {
+  "k": "floors",
+  "at": 1070.6,
+  "out": 1079.6,
+  "ph": "Carpet is fine",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 1.44
+   },
+   {
+    "at": 2.78
+   },
+   {
+    "at": 4.06
+   }
+  ]
+ },
+ {
+  "k": "stuck",
+  "at": 1101.13,
+  "out": 1110.63,
+  "ph": "Bring one foot forward the gentleman",
+  "dev": 0.1,
+  "items": [
+   {
+    "at": 3.18
+   },
+   {
+    "at": 4.52
+   }
+  ]
+ },
+ {
+  "k": "stopwatch",
+  "at": 1136.39,
+  "out": 1144.39,
+  "ph": "and she stood up straight with no hands",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 3.26
+   }
+  ]
+ },
+ {
+  "k": "fingerprint",
+  "at": 1185.57,
+  "out": 1195.57,
+  "ph": "You use one hand on the table",
+  "dev": -1.4,
+  "items": [
+   {
+    "at": 7.08
+   },
+   {
+    "at": 8.5
+   }
+  ]
+ },
+ {
+  "k": "tenplan",
+  "at": 1220.35,
+  "out": 1227.35,
+  "ph": "So now let me put it all together",
+  "dev": -1.2
+ },
+ {
+  "k": "gooddays",
+  "at": 1302.37,
+  "out": 1309.87,
+  "ph": "Some days I do it with no hands",
+  "dev": -1.2,
+  "items": [
+   {
+    "at": 3.5
+   },
+   {
+    "at": 5.76
+   }
+  ]
+ },
+ {
+  "k": "firstfriend",
+  "at": 1386.39,
+  "out": 1394.89,
+  "ph": "the floor is the first friend",
+  "dev": -1.3,
+  "items": [
+   {
+    "at": 5.52
+   }
+  ]
+ }
+]
