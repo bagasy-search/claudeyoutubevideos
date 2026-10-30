@@ -1,0 +1,635 @@
+{
+"segs": [
+[
+8.1,
+11.08,
+"shot",
+"v01"
+],
+[
+11.08,
+16.21,
+"shot",
+"f02_cabinnight"
+],
+[
+26.2,
+28.86,
+"shot",
+"v02"
+],
+[
+28.86,
+31.02,
+"shot",
+"f04_sisters"
+],
+[
+39.92,
+46.42,
+"shot",
+"f05_aisle"
+],
+[
+46.76,
+50.25,
+"shot",
+"f03_shipport"
+],
+[
+88.14,
+91.7,
+"shot",
+"f06_shipcard"
+],
+[
+91.7,
+98.2,
+"shot",
+"f07_tapcard"
+],
+[
+106.6,
+109.24,
+"shot",
+"f09_drinksdesk"
+],
+[
+109.24,
+114.54,
+"shot",
+"f08_poolbar"
+],
+[
+154.9,
+161.4,
+"shot",
+"f11_wineglasses"
+],
+[
+173.96,
+180.46,
+"shot",
+"f12_menuprices"
+],
+[
+202.12,
+206.26,
+"shot",
+"v04"
+],
+[
+206.26,
+211.48,
+"shot",
+"f14_balconysunset"
+],
+[
+211.48,
+213.28,
+"shot",
+"f13_winebottle"
+],
+[
+235.46,
+241.96,
+"shot",
+"f15_crewsteward"
+],
+[
+257.62,
+264.12,
+"shot",
+"f16_barreceipt"
+],
+[
+277.76,
+281.62,
+"shot",
+"f17_fishhat"
+],
+[
+300.92,
+303.86,
+"shot",
+"v05"
+],
+[
+303.86,
+310.36,
+"shot",
+"f19_cashtip"
+],
+[
+317.86,
+324.36,
+"shot",
+"f18_beadedchain"
+],
+[
+326.92,
+328.39,
+"shot",
+"f20_portday"
+],
+[
+337.58,
+344.08,
+"shot",
+"f21_dockstalls"
+],
+[
+352.28,
+358.78,
+"shot",
+"f22_tourbus"
+],
+[
+362.08,
+363.64,
+"shot",
+"f23_gangwayup"
+],
+[
+375.6,
+377.08,
+"shot",
+"f25_taxi"
+],
+[
+377.08,
+379.33,
+"shot",
+"f24_cozumelbeach"
+],
+[
+402.56,
+409.06,
+"shot",
+"f27_cane"
+],
+[
+416.33,
+422.83,
+"shot",
+"f26_stairschurch"
+],
+[
+437.02,
+443.52,
+"shot",
+"f28_satellite"
+],
+[
+450.68,
+454.26,
+"shot",
+"f29_videocall"
+],
+[
+454.26,
+460.76,
+"shot",
+"f30_portcafe"
+],
+[
+468.52,
+475.02,
+"shot",
+"f32_seaday"
+],
+[
+488.96,
+495.46,
+"shot",
+"f31_airplanemode"
+],
+[
+516.72,
+520.58,
+"shot",
+"f33_diningroom"
+],
+[
+520.58,
+527.08,
+"shot",
+"f34_steakhouse"
+],
+[
+543.84,
+546.76,
+"shot",
+"f35_birthdaycake"
+],
+[
+561.0,
+567.5,
+"shot",
+"f36_emptytables"
+],
+[
+600.18,
+604.06,
+"shot",
+"f39_pirate"
+],
+[
+604.06,
+610.56,
+"shot",
+"f38_photowall"
+],
+[
+661.78,
+663.26,
+"shot",
+"f40_medcenter"
+],
+[
+700.48,
+706.98,
+"shot",
+"f41_wetdeck"
+],
+[
+708.63,
+711.03,
+"shot",
+"f42_crutches"
+],
+[
+719.41,
+725.91,
+"shot",
+"f43_helicopter"
+],
+[
+769.85,
+776.35,
+"shot",
+"f46_suitcases"
+],
+[
+793.19,
+796.66,
+"shot",
+"f47_airportbus"
+],
+[
+825.65,
+826.87,
+"shot",
+"f49_delaygate"
+],
+[
+832.79,
+839.29,
+"shot",
+"f48_porthotel"
+],
+[
+857.57,
+862.16,
+"shot",
+"f50_laundrybag"
+],
+[
+882.85,
+890.07,
+"shot",
+"v07"
+],
+[
+890.07,
+894.62,
+"shot",
+"f51_sinkwash"
+],
+[
+900.02,
+906.52,
+"shot",
+"f52_showerdry"
+],
+[
+922.75,
+925.51,
+"shot",
+"f53_jewelryshop"
+],
+[
+925.51,
+928.76,
+"shot",
+"f54_portmap"
+],
+[
+947.29,
+953.79,
+"shot",
+"f55_bracelet"
+],
+[
+964.79,
+971.29,
+"shot",
+"f56_market"
+],
+[
+979.51,
+986.01,
+"shot",
+"f57_calendar"
+],
+[
+1019.61,
+1021.32,
+"shot",
+"f58_laptopsearch"
+],
+[
+1041.22,
+1047.72,
+"shot",
+"f61_alaskaship"
+],
+[
+1053.47,
+1055.2,
+"shot",
+"f59_onhold"
+],
+[
+1062.47,
+1068.97,
+"shot",
+"f60_whales"
+],
+[
+1110.01,
+1116.51,
+"shot",
+"f62_guestdesk"
+],
+[
+1156.01,
+1162.51,
+"shot",
+"f64_midship"
+],
+[
+1212.44,
+1220.44,
+"shot",
+"v08"
+],
+[
+1235.83,
+1240.89,
+"shot",
+"f65_refillbottle"
+],
+[
+1240.89,
+1242.82,
+"shot",
+"f66_artauction"
+],
+[
+1253.05,
+1258.28,
+"shot",
+"f67_spa"
+],
+[
+1264.09,
+1270.59,
+"shot",
+"f68_paperpocket"
+],
+[
+1283.31,
+1291.31,
+"shot",
+"v09"
+],
+[
+1317.07,
+1323.57,
+"shot",
+"f70_horizon"
+],
+[
+1380.37,
+1386.87,
+"shot",
+"f01_envelope"
+],
+[
+1403.65,
+1406.69,
+"shot",
+"v10"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 1384.81,
+"out": 1389.81
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE DRINKS PACKAGE",
+"at": 100.98,
+"out": 103.98
+},
+{
+"k": "step",
+"n": 2,
+"name": "TIPPING TWICE",
+"at": 223.92,
+"out": 226.92
+},
+{
+"k": "step",
+"n": 3,
+"name": "SHORE EXCURSIONS",
+"at": 323.82,
+"out": 326.82
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE WI-FI",
+"at": 434.76,
+"out": 437.76
+},
+{
+"k": "step",
+"n": 5,
+"name": "SPECIALTY RESTAURANTS",
+"at": 508.84,
+"out": 511.84
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE PHOTOS",
+"at": 593.54,
+"out": 596.54
+},
+{
+"k": "step",
+"n": 7,
+"name": "MEDICAL CENTER & MEDICARE",
+"at": 651.8,
+"out": 654.8
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE PORT TRANSFER",
+"at": 787.33,
+"out": 790.33
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE LAUNDRY",
+"at": 853.55,
+"out": 856.55
+},
+{
+"k": "step",
+"n": 10,
+"name": "THE SHOPPING TALK",
+"at": 914.49,
+"out": 917.49
+},
+{
+"k": "step",
+"n": 11,
+"name": "THE PHONE CALL",
+"at": 969.03,
+"out": 972.03
+},
+{
+"k": "deal",
+"at": 1073.39,
+"out": 1074.39
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Flying in the same day",
+"at": 1077.87,
+"out": 1080.07
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Medicine in the suitcase",
+"at": 1083.21,
+"out": 1085.41
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Never checking the account",
+"at": 1098.99,
+"out": 1101.19
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "No limit on the card",
+"at": 1119.45,
+"out": 1121.65
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Packages on day one",
+"at": 1133.51,
+"out": 1138.01
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1326.43
+},
+{
+"at": 1331.21
+},
+{
+"at": 1334.87
+},
+{
+"at": 1339.33
+},
+{
+"at": 1343.41
+},
+{
+"at": 1347.27
+},
+{
+"at": 1350.53
+},
+{
+"at": 1357.53
+},
+{
+"at": 1361.35
+},
+{
+"at": 1365.91
+},
+{
+"at": 1368.97
+}
+],
+"at": 1323.73,
+"out": 1370.97
+},
+{
+"k": "ask",
+"at": 1396.03,
+"out": 1404.03
+}
+],
+"end": 1406.69,
+"txt": {
+"recapTitle": "LINDA'S CRUISE RULES",
+"recap": [
+"Skip the drinks package",
+"Don't tip twice",
+"Easy ports on your own",
+"Airplane mode",
+"Main dining room",
+"One photo, last night",
+"Insurance w/ evacuation",
+"Fly in the day before",
+"Travel soap",
+"Ads aren't advice",
+"Make the call"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"What do you always",
+"bring on a cruise?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+19.24,
+27.24
+]
+}
+}
