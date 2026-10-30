@@ -1,0 +1,597 @@
+{
+"segs": [
+[
+3.86,
+7.72,
+"shot",
+"f01_pavo_repasador"
+],
+[
+7.72,
+10.88,
+"shot",
+"f02_olla_papas_vapor"
+],
+[
+10.88,
+14.16,
+"shot",
+"f03_bollos_leudando"
+],
+[
+23.26,
+26.08,
+"shot",
+"f04_tenedor_servilleta"
+],
+[
+26.08,
+31.19,
+"shot",
+"f05_auto_entrada_noviembre"
+],
+[
+43.38,
+47.08,
+"shot",
+"v01"
+],
+[
+51.6,
+60.6,
+"shot",
+"f06_salon_mesas_largas"
+],
+[
+67.5,
+75.5,
+"shot",
+"f08_mesa_servida_arriba"
+],
+[
+122.12,
+126.04,
+"shot",
+"v03"
+],
+[
+126.04,
+129.65,
+"shot",
+"f09_pastor_joven_manos"
+],
+[
+150.83,
+159.83,
+"shot",
+"f10_manos_cruzadas_regazo"
+],
+[
+167.31,
+175.31,
+"shot",
+"f11_biblia_tesalonicenses"
+],
+[
+185.34,
+193.34,
+"shot",
+"v09"
+],
+[
+203.92,
+210.5,
+"shot",
+"f12_manito_nene_mesa"
+],
+[
+210.5,
+214.48,
+"shot",
+"f13_pavo_papel_aluminio"
+],
+[
+220.22,
+228.22,
+"shot",
+"f14_fuentes_tapadas_mesada"
+],
+[
+237.49,
+246.49,
+"shot",
+"f15_silla_roble_brazos"
+],
+[
+252.27,
+261.27,
+"shot",
+"f16_silla_contra_pared"
+],
+[
+268.82,
+276.82,
+"shot",
+"f17_salmo_34"
+],
+[
+283.0,
+291.0,
+"shot",
+"v02"
+],
+[
+293.44,
+295.68,
+"shot",
+"v04"
+],
+[
+308.36,
+314.32,
+"shot",
+"f18_piso_cocina_linoleo"
+],
+[
+326.14,
+329.76,
+"shot",
+"f19_manos_nieto_fosforo"
+],
+[
+341.28,
+347.34,
+"shot",
+"f20_mesa_sillas_separadas"
+],
+[
+352.09,
+356.16,
+"shot",
+"f21_vajilla_porcelana_rosas"
+],
+[
+356.16,
+363.83,
+"shot",
+"f22_batatas_horno"
+],
+[
+372.46,
+379.47,
+"shot",
+"f23_proverbios_15"
+],
+[
+401.36,
+409.36,
+"shot",
+"f24_huerta_otono"
+],
+[
+421.9,
+426.28,
+"shot",
+"f25_hospital_ventana_invierno"
+],
+[
+426.28,
+429.69,
+"shot",
+"f26_ruta_nevada_iowa"
+],
+[
+434.36,
+443.36,
+"shot",
+"f27_taza_platito_repasador"
+],
+[
+469.37,
+477.37,
+"shot",
+"f28_dos_tazas_mesa"
+],
+[
+477.64,
+482.51,
+"shot",
+"f29_camino_dos_pares_zapatos"
+],
+[
+486.69,
+492.76,
+"shot",
+"f30_cocina_iglesia_mostrador"
+],
+[
+492.76,
+497.72,
+"shot",
+"f31_delantal_colgado_gancho"
+],
+[
+538.29,
+546.29,
+"shot",
+"f32_manos_amasando"
+],
+[
+554.3,
+562.3,
+"shot",
+"v05"
+],
+[
+575.54,
+580.09,
+"shot",
+"f33_reloj_cocina_seis"
+],
+[
+592.16,
+595.68,
+"shot",
+"f34_pelando_papas_balde"
+],
+[
+604.9,
+612.61,
+"shot",
+"f35_rollo_papel_blanco_mesa"
+],
+[
+621.42,
+627.4,
+"shot",
+"f36_tarjeta_indice_lapiz"
+],
+[
+627.4,
+635.4,
+"shot",
+"f37_puerta_salon_abierta"
+],
+[
+642.68,
+644.48,
+"shot",
+"f38_fuentes_humeantes"
+],
+[
+668.87,
+676.87,
+"shot",
+"f39_mesa_chicos_cerca"
+],
+[
+688.36,
+696.47,
+"shot",
+"f40_escalera_sotano"
+],
+[
+707.51,
+713.51,
+"shot",
+"f41_perchero_silla_punta"
+],
+[
+732.41,
+740.41,
+"shot",
+"f42_hebreos_13"
+],
+[
+749.16,
+757.16,
+"shot",
+"v08"
+],
+[
+800.09,
+808.09,
+"shot",
+"f43_relleno_ostras"
+],
+[
+817.81,
+826.81,
+"shot",
+"f44_motel_ruta"
+],
+[
+841.93,
+844.6,
+"shot",
+"f45_mesa_platos_caras"
+],
+[
+849.17,
+857.17,
+"shot",
+"f46_marco_fotos_bebes"
+],
+[
+887.05,
+889.5,
+"shot",
+"f47_salmo_46"
+],
+[
+895.92,
+903.92,
+"shot",
+"v07"
+],
+[
+920.95,
+924.18,
+"shot",
+"f48_foto_mesa_familia"
+],
+[
+946.11,
+954.77,
+"shot",
+"f49_granja_story_county"
+],
+[
+954.77,
+956.77,
+"shot",
+"f50_tarta_borde_oscuro"
+],
+[
+971.07,
+972.89,
+"shot",
+"f51_canasta_buena_bollos"
+],
+[
+994.34,
+1002.34,
+"shot",
+"f52_silla_sola_salon"
+],
+[
+1017.45,
+1021.18,
+"shot",
+"f53_libro_taza_cafe"
+],
+[
+1047.03,
+1052.31,
+"shot",
+"f54_despensa_platos"
+],
+[
+1064.59,
+1067.91,
+"shot",
+"v06"
+],
+[
+1072.35,
+1080.35,
+"shot",
+"f55_puerta_granja_vieja"
+],
+[
+1090.07,
+1098.07,
+"shot",
+"f56_proverbios_11"
+],
+[
+1106.87,
+1115.87,
+"shot",
+"f57_platos_fila_mesada"
+],
+[
+1135.61,
+1137.46,
+"shot",
+"f58_cocina_vacia_mediodia"
+],
+[
+1177.77,
+1182.62,
+"shot",
+"f59_centro_jubilados"
+],
+[
+1207.57,
+1215.57,
+"shot",
+"f60_puerta_entreabierta_luz"
+],
+[
+1241.59,
+1248.49,
+"shot",
+"f61_restaurante_mesa_manos"
+],
+[
+1270.35,
+1278.35,
+"shot",
+"f62_canasta_servilleta_puerta"
+],
+[
+1303.05,
+1309.11,
+"shot",
+"f63_vela_blanca_ventana"
+],
+[
+1309.11,
+1316.03,
+"shot",
+"f64_salon_listo_vacio"
+],
+[
+1388.79,
+1396.79,
+"shot",
+"v10"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 120.1,
+"out": 124.1
+},
+{
+"k": "step",
+"n": 1,
+"name": "RUSH THE GRACE",
+"at": 122.12,
+"out": 125.52
+},
+{
+"k": "step",
+"n": 2,
+"name": "LEAVE THE EMPTY CHAIR EMPTY",
+"at": 225.12,
+"out": 228.52
+},
+{
+"k": "step",
+"n": 3,
+"name": "BRING OLD FIGHTS",
+"at": 340.04,
+"out": 343.44
+},
+{
+"k": "step",
+"n": 4,
+"name": "LET THE COOK EAT ALONE",
+"at": 482.86,
+"out": 486.26
+},
+{
+"k": "deal",
+"at": 629.7,
+"out": 630.7
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "All the food at once",
+"at": 636.58,
+"out": 638.78
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "No extra chair",
+"at": 645.48,
+"out": 647.68
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Cooking it all yourself",
+"at": 651.74,
+"out": 653.94
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Kids in another room",
+"at": 659.82,
+"out": 662.02
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Forgetting to sit down",
+"at": 672.58,
+"out": 676.08
+},
+{
+"k": "step",
+"n": 5,
+"name": "SEAT THE NEWCOMER AT THE END",
+"at": 682.04,
+"out": 685.44
+},
+{
+"k": "step",
+"n": 6,
+"name": "PHONE ON THE TABLE",
+"at": 840.69,
+"out": 844.09
+},
+{
+"k": "step",
+"n": 7,
+"name": "LET ANYONE LEAVE EMPTY-HANDED",
+"at": 1035.25,
+"out": 1038.65
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1315.47
+},
+{
+"at": 1321.63
+},
+{
+"at": 1327.53
+},
+{
+"at": 1333.01
+},
+{
+"at": 1340.27
+},
+{
+"at": 1345.69
+},
+{
+"at": 1352.61
+}
+],
+"at": 1309.11,
+"out": 1354.61
+},
+{
+"k": "ask",
+"at": 1388.79,
+"out": 1396.79
+}
+],
+"end": 1401.71,
+"txt": {
+"recapTitle": "7 NEVERS · ONE TABLE",
+"recap": [
+"Slow, 3-line grace",
+"A candle, say the name",
+"Your soft answer ready",
+"The cook sits first",
+"The chair next to you",
+"Phones in the basket",
+"A plate for Friday"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"Who's in the chair",
+"next to you?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+37.44,
+45.44
+]
+}
+}

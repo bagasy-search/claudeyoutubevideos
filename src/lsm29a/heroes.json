@@ -1,0 +1,147 @@
+[
+{
+"k": "napkinfold",
+"at": 23.06,
+"out": 29.56
+},
+{
+"k": "cta1",
+"at": 102.76,
+"out": 110.96
+},
+{
+"k": "sevenwords",
+"at": 139.56,
+"out": 146.06
+},
+{
+"k": "threelines",
+"at": 186.9,
+"out": 195.9
+},
+{
+"k": "foiltowel",
+"at": 207.18,
+"out": 214.18
+},
+{
+"k": "emptychair",
+"at": 283.3,
+"out": 291.3
+},
+{
+"k": "turkeyfloor",
+"at": 307.46,
+"out": 313.96
+},
+{
+"k": "tablecloth",
+"at": 370.44,
+"out": 376.44
+},
+{
+"k": "softstone",
+"at": 384.04,
+"out": 392.04
+},
+{
+"k": "teacup",
+"at": 440.26,
+"out": 447.76
+},
+{
+"k": "stepstool",
+"at": 507.18,
+"out": 514.68
+},
+{
+"k": "cookseat",
+"at": 539.86,
+"out": 547.36
+},
+{
+"k": "morningclock",
+"at": 586.82,
+"out": 594.82
+},
+{
+"k": "placecard",
+"at": 616.74,
+"out": 623.74
+},
+{
+"k": "extraplace",
+"at": 651.22,
+"out": 657.72
+},
+{
+"k": "longtable",
+"at": 704.01,
+"out": 711.51
+},
+{
+"k": "commonthread",
+"at": 768.27,
+"out": 774.77
+},
+{
+"k": "lazysusan",
+"at": 787.89,
+"out": 796.39
+},
+{
+"k": "fourteen",
+"at": 821.21,
+"out": 828.21
+},
+{
+"k": "fencewire",
+"at": 866.39,
+"out": 874.39
+},
+{
+"k": "phonebasket",
+"at": 898.53,
+"out": 905.53
+},
+{
+"k": "polaroid",
+"at": 917.35,
+"out": 923.85
+},
+{
+"k": "darkcrust",
+"at": 960.95,
+"out": 967.45
+},
+{
+"k": "cta2",
+"at": 1011.69,
+"out": 1020.69
+},
+{
+"k": "waxedplate",
+"at": 1059.61,
+"out": 1067.61
+},
+{
+"k": "thirtyfour",
+"at": 1124.71,
+"out": 1131.71
+},
+{
+"k": "fridgeplate",
+"at": 1141.99,
+"out": 1149.99
+},
+{
+"k": "doorajar",
+"at": 1205.53,
+"out": 1212.03
+},
+{
+"k": "balance",
+"at": 1305.09,
+"out": 1312.09
+}
+]
