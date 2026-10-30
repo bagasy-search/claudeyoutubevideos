@@ -1,0 +1,352 @@
+[
+{
+"k": "engineOff",
+"mode": "iris",
+"at": 4.19,
+"out": 15.69
+},
+{
+"k": "ticketStub",
+"mode": "drop",
+"at": 73.57,
+"out": 84.08
+},
+{
+"k": "recordSpin",
+"mode": "split",
+"at": 106.21,
+"out": 114.86
+},
+{
+"k": "streamersHall",
+"mode": "wipe",
+"at": 156.81,
+"out": 165.07
+},
+{
+"k": "punchLadle",
+"mode": "iris",
+"at": 171.54,
+"out": 182.92
+},
+{
+"k": "blueShoe",
+"mode": "drop",
+"at": 186.69,
+"out": 198.19
+},
+{
+"k": "waltzSleeve",
+"mode": "split",
+"at": 204.97,
+"out": 215.48
+},
+{
+"k": "bigBoots",
+"mode": "drop",
+"at": 219.92,
+"out": 231.42
+},
+{
+"k": "hourglassSlow",
+"mode": "iris",
+"at": 237.41,
+"out": 248.91
+},
+{
+"k": "wallChairs",
+"mode": "wipe",
+"at": 271.27,
+"out": 282.34
+},
+{
+"k": "apronHook",
+"mode": "split",
+"at": 301.97,
+"out": 313.47
+},
+{
+"k": "canStack",
+"mode": "drop",
+"at": 319.85,
+"out": 331.35
+},
+{
+"k": "meatloafPan",
+"mode": "iris",
+"at": 352.64,
+"out": 364.14
+},
+{
+"k": "lovesList",
+"mode": "wipe",
+"at": 368.29,
+"out": 379.79
+},
+{
+"k": "emptyTheater",
+"mode": "split",
+"at": 389.06,
+"out": 396.44
+},
+{
+"k": "chiliSteam",
+"mode": "drop",
+"at": 400.94,
+"out": 412.44
+},
+{
+"k": "shingleRoof",
+"mode": "iris",
+"at": 419.96,
+"out": 428.33
+},
+{
+"k": "gutterHang",
+"mode": "drop",
+"at": 451.19,
+"out": 462.69
+},
+{
+"k": "lilacDrop",
+"mode": "split",
+"at": 467.59,
+"out": 478.53
+},
+{
+"k": "laddersUp",
+"mode": "wipe",
+"at": 482.22,
+"out": 493.72
+},
+{
+"k": "cookieBulb",
+"mode": "iris",
+"at": 538.84,
+"out": 546.12
+},
+{
+"k": "fiveClock",
+"mode": "drop",
+"at": 565.92,
+"out": 577.42
+},
+{
+"k": "fridgeHum",
+"mode": "split",
+"at": 583.49,
+"out": 594.99
+},
+{
+"k": "tableForOne",
+"mode": "iris",
+"bt": [
+0.3,
+0.3,
+0.3,
+0.3
+],
+"at": 601.38,
+"out": 611.18
+},
+{
+"k": "feederBird",
+"mode": "wipe",
+"at": 616.22,
+"out": 627.72
+},
+{
+"k": "jelloWobble",
+"mode": "drop",
+"at": 637.76,
+"out": 647.67
+},
+{
+"k": "parkLot",
+"mode": "split",
+"at": 653.82,
+"out": 663.74
+},
+{
+"k": "furnaceTable",
+"mode": "iris",
+"at": 669.66,
+"out": 681.16
+},
+{
+"k": "savedChair",
+"mode": "drop",
+"at": 685.68,
+"out": 697.18
+},
+{
+"k": "slowCup",
+"mode": "wipe",
+"at": 722.46,
+"out": 730.76
+},
+{
+"k": "napkinFold",
+"mode": "split",
+"at": 756.48,
+"out": 765.59
+},
+{
+"k": "barnGlow",
+"mode": "iris",
+"at": 786.89,
+"out": 797.23
+},
+{
+"k": "shopDoor",
+"mode": "drop",
+"at": 801.47,
+"out": 812.97
+},
+{
+"k": "tissuePull",
+"mode": "wipe",
+"at": 883.29,
+"out": 894.79
+},
+{
+"k": "phoneBox",
+"mode": "split",
+"at": 902.92,
+"out": 914.42
+},
+{
+"k": "greenButton",
+"mode": "iris",
+"at": 933.38,
+"out": 944.88
+},
+{
+"k": "milesRoad",
+"mode": "drop",
+"at": 951.72,
+"out": 962.96
+},
+{
+"k": "steamerSea",
+"mode": "split",
+"at": 969.51,
+"out": 981.01
+},
+{
+"k": "photoSend",
+"mode": "wipe",
+"at": 1005.8,
+"out": 1012.91
+},
+{
+"k": "gloveCatch",
+"mode": "iris",
+"at": 1035.07,
+"out": 1046.57
+},
+{
+"k": "roofEdge",
+"mode": "drop",
+"at": 1053.56,
+"out": 1063.13
+},
+{
+"k": "wallPhone",
+"mode": "split",
+"at": 1116.31,
+"out": 1127.2
+},
+{
+"k": "nameIt",
+"mode": "iris",
+"at": 1183.08,
+"out": 1192.88
+},
+{
+"k": "shrinkIt",
+"mode": "drop",
+"at": 1198.0,
+"out": 1209.5
+},
+{
+"k": "setTime",
+"mode": "split",
+"at": 1215.04,
+"out": 1226.2
+},
+{
+"k": "countOpen",
+"mode": "wipe",
+"at": 1230.94,
+"out": 1242.44
+},
+{
+"k": "writeLine",
+"mode": "drop",
+"at": 1246.47,
+"out": 1256.78
+},
+{
+"k": "calfLantern",
+"mode": "iris",
+"at": 1262.38,
+"out": 1272.72
+},
+{
+"k": "secondDance",
+"mode": "split",
+"at": 1294.09,
+"out": 1305.59
+},
+{
+"k": "waltzSteps",
+"mode": "drop",
+"at": 1324.4,
+"out": 1335.9
+},
+{
+"k": "needleDrop",
+"mode": "iris",
+"at": 1342.24,
+"out": 1353.74
+},
+{
+"k": "sleeveCabinet",
+"mode": "wipe",
+"at": 1360.61,
+"out": 1372.11
+},
+{
+"k": "ticketTear",
+"mode": "split",
+"at": 1415.89,
+"out": 1422.65
+},
+{
+"k": "doorLight",
+"mode": "iris",
+"at": 1432.25,
+"out": 1438.56
+},
+{
+"k": "recapRow",
+"mode": "drop",
+"bt": [
+1.51,
+3.63,
+6.15,
+7.32,
+9.15,
+10.31
+],
+"at": 1459.11,
+"out": 1471.02
+},
+{
+"k": "lettersBundle",
+"mode": "split",
+"at": 1491.77,
+"out": 1500.46
+}
+]
