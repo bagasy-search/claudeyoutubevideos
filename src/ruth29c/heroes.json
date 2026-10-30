@@ -1,0 +1,302 @@
+[
+ {
+  "k": "bollSplit",
+  "mode": "iris",
+  "at": 20.56,
+  "out": 32.2
+ },
+ {
+  "k": "beltSweep",
+  "mode": "wipe",
+  "at": 37.55,
+  "out": 49.05
+ },
+ {
+  "k": "statueTease",
+  "mode": "drop",
+  "at": 86.68,
+  "out": 97.3
+ },
+ {
+  "k": "coffeeRings",
+  "mode": "drop",
+  "at": 105.39,
+  "out": 114.38
+ },
+ {
+  "k": "cottonWeb",
+  "mode": "split",
+  "bt": [
+   2.42,
+   4.25
+  ],
+  "at": 139.36,
+  "out": 145.21
+ },
+ {
+  "k": "storeLedger",
+  "mode": "drop",
+  "bt": [
+   4.82,
+   9.9
+  ],
+  "at": 164.92,
+  "out": 176.42
+ },
+ {
+  "k": "noFloor",
+  "mode": "iris",
+  "at": 198.81,
+  "out": 210.31
+ },
+ {
+  "k": "lifeCycle",
+  "mode": "wipe",
+  "bt": [
+   0.3,
+   7.02
+  ],
+  "at": 216.04,
+  "out": 225.88
+ },
+ {
+  "k": "weevilMultiply",
+  "mode": "iris",
+  "at": 230.11,
+  "out": 241.61
+ },
+ {
+  "k": "riverCross",
+  "mode": "split",
+  "at": 248.56,
+  "out": 260.06
+ },
+ {
+  "k": "stateDominoes",
+  "mode": "drop",
+  "bt": [
+   0.3,
+   0.3,
+   0.3,
+   0.3
+  ],
+  "at": 267.35,
+  "out": 278.85
+ },
+ {
+  "k": "baleShrink",
+  "mode": "iris",
+  "bt": [
+   0.3,
+   5.39
+  ],
+  "at": 283.43,
+  "out": 294.93
+ },
+ {
+  "k": "fenceWatch",
+  "mode": "wipe",
+  "at": 320.93,
+  "out": 327.86
+ },
+ {
+  "k": "raceClock",
+  "mode": "wipe",
+  "bt": [
+   5.43,
+   9.13
+  ],
+  "at": 335.05,
+  "out": 345.78
+ },
+ {
+  "k": "agentBadge",
+  "mode": "split",
+  "at": 373.97,
+  "out": 380.64
+ },
+ {
+  "k": "handsPoint",
+  "mode": "drop",
+  "bt": [
+   4.98,
+   6.78,
+   8.9
+  ],
+  "at": 400.5,
+  "out": 411.01
+ },
+ {
+  "k": "labFlask",
+  "mode": "iris",
+  "at": 432.9,
+  "out": 443.88
+ },
+ {
+  "k": "handDuster",
+  "mode": "wipe",
+  "at": 463.93,
+  "out": 475.43
+ },
+ {
+  "k": "daysMinutes",
+  "mode": "drop",
+  "at": 487.69,
+  "out": 494.21
+ },
+ {
+  "k": "boardingPass",
+  "mode": "split",
+  "at": 517.49,
+  "out": 527.09
+ },
+ {
+  "k": "gapWiden",
+  "mode": "drop",
+  "at": 583.59,
+  "out": 590.61
+ },
+ {
+  "k": "elementTile",
+  "mode": "iris",
+  "at": 594.97,
+  "out": 606.47
+ },
+ {
+  "k": "soilTest",
+  "mode": "wipe",
+  "at": 616.67,
+  "out": 622.57
+ },
+ {
+  "k": "ledgerDebt",
+  "mode": "iris",
+  "at": 644.44,
+  "out": 655.46
+ },
+ {
+  "k": "migrationArrows",
+  "mode": "split",
+  "at": 675.07,
+  "out": 686.57
+ },
+ {
+  "k": "reasonBar",
+  "mode": "drop",
+  "at": 693.29,
+  "out": 704.63,
+  "veo": "r_reasonBar"
+ },
+ {
+  "k": "record78",
+  "mode": "iris",
+  "at": 711.25,
+  "out": 719.47
+ },
+ {
+  "k": "sprayCount",
+  "mode": "wipe",
+  "at": 728.88,
+  "out": 737.54
+ },
+ {
+  "k": "resistSieve",
+  "mode": "wipe",
+  "at": 755.81,
+  "out": 767.31
+ },
+ {
+  "k": "treadmill",
+  "mode": "split",
+  "at": 795.36,
+  "out": 801.21
+ },
+ {
+  "k": "trapGrid",
+  "mode": "drop",
+  "at": 829.25,
+  "out": 835.95
+ },
+ {
+  "k": "regionClear",
+  "mode": "iris",
+  "at": 854.45,
+  "out": 865.95
+ },
+ {
+  "k": "selfTax",
+  "mode": "wipe",
+  "at": 889.53,
+  "out": 900.78
+ },
+ {
+  "k": "centuryBar",
+  "mode": "drop",
+  "at": 905.67,
+  "out": 917.17
+ },
+ {
+  "k": "statueReveal",
+  "mode": "split",
+  "at": 924.67,
+  "out": 933.1
+ },
+ {
+  "k": "peanutSwap",
+  "mode": "drop",
+  "at": 946.23,
+  "out": 952.08
+ },
+ {
+  "k": "schoolWagon",
+  "mode": "iris",
+  "at": 1009.67,
+  "out": 1015.86
+ },
+ {
+  "k": "hearSeeDo",
+  "mode": "wipe",
+  "bt": [
+   0.3,
+   0.3
+  ],
+  "at": 1056.13,
+  "out": 1067.01
+ },
+ {
+  "k": "cottonRow",
+  "mode": "split",
+  "bt": [
+   1.5,
+   1.93,
+   2.56,
+   2.9,
+   3.28,
+   3.69,
+   4.18,
+   4.68,
+   5.58,
+   6.1
+  ],
+  "at": 1164.2,
+  "out": 1171.9
+ },
+ {
+  "k": "radioCall",
+  "mode": "drop",
+  "at": 1228.15,
+  "out": 1239.66
+ },
+ {
+  "k": "quiltRecap",
+  "mode": "iris",
+  "at": 1309.86,
+  "out": 1320.17
+ },
+ {
+  "k": "eggBasket",
+  "mode": "iris",
+  "at": 1363.9,
+  "out": 1371.55
+ }
+]
