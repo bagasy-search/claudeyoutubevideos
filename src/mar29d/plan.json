@@ -1,0 +1,541 @@
+{
+"segs": [
+[
+3.62,
+9.62,
+"shot",
+"f_d_mano_rejilla"
+],
+[
+20.18,
+23.64,
+"shot",
+"v01_mano_vent"
+],
+[
+23.64,
+28.64,
+"shot",
+"n_d_rejilla_debil"
+],
+[
+51.49,
+57.49,
+"shot",
+"f_d_atico_linterna"
+],
+[
+63.48,
+69.48,
+"shot",
+"n_d_atico_fuga"
+],
+[
+119.54,
+125.54,
+"shot",
+"f_d_ducto_sotano"
+],
+[
+223.18,
+225.78,
+"shot",
+"f_d_cinta_vieja"
+],
+[
+236.74,
+242.96,
+"shot",
+"v02_cinta_polvo"
+],
+[
+242.96,
+247.96,
+"shot",
+"n_d_cinta_polvo"
+],
+[
+267.68,
+272.68,
+"shot",
+"n_d_mastic_tarro"
+],
+[
+274.6,
+277.24,
+"shot",
+"v03_mastic"
+],
+[
+281.27,
+286.27,
+"shot",
+"n_d_foil_ul181"
+],
+[
+305.3,
+307.38,
+"shot",
+"f_d_delaney"
+],
+[
+323.66,
+326.17,
+"shot",
+"f_d_flex_suelto"
+],
+[
+333.9,
+338.9,
+"shot",
+"n_d_flex_caido"
+],
+[
+348.0,
+354.0,
+"shot",
+"f_d_abrazadera"
+],
+[
+385.36,
+391.36,
+"shot",
+"f_d_vigas"
+],
+[
+400.8,
+406.8,
+"shot",
+"f_d_retorno_pasillo"
+],
+[
+447.34,
+454.34,
+"shot",
+"f_d_garage_pared"
+],
+[
+481.38,
+487.38,
+"shot",
+"f_d_alarma_co"
+],
+[
+495.8,
+501.8,
+"shot",
+"f_d_cuarto_vacio"
+],
+[
+578.6,
+581.58,
+"shot",
+"n_d_sofa_vent"
+],
+[
+581.58,
+587.58,
+"shot",
+"f_d_alfombra"
+],
+[
+611.96,
+617.56,
+"shot",
+"v05_mueve_alfombra"
+],
+[
+617.56,
+619.96,
+"shot",
+"f_d_sofa_rejilla"
+],
+[
+619.96,
+623.48,
+"shot",
+"f_d_deflector"
+],
+[
+646.04,
+652.04,
+"shot",
+"n_d_ducto_desnudo"
+],
+[
+679.05,
+685.05,
+"shot",
+"f_d_ducto_desnudo"
+],
+[
+688.08,
+691.8,
+"shot",
+"f_d_aislar"
+],
+[
+732.2,
+738.2,
+"shot",
+"f_d_flex_aplastado"
+],
+[
+740.78,
+742.86,
+"shot",
+"f_d_flex_curva"
+],
+[
+784.2,
+791.2,
+"shot",
+"f_d_earl"
+],
+[
+877.12,
+883.12,
+"shot",
+"n_d_panned"
+],
+[
+909.09,
+915.09,
+"shot",
+"f_d_panning"
+],
+[
+942.85,
+947.06,
+"shot",
+"f_d_incienso"
+],
+[
+947.06,
+954.39,
+"shot",
+"v06_incienso"
+],
+[
+958.44,
+963.44,
+"shot",
+"n_d_humo_incienso"
+],
+[
+982.34,
+986.01,
+"shot",
+"v07_marca_cinta"
+],
+[
+1024.68,
+1032.68,
+"shot",
+"v08_saca_rejilla"
+],
+[
+1046.54,
+1051.77,
+"shot",
+"n_d_bota_hueco"
+],
+[
+1066.82,
+1070.62,
+"shot",
+"f_d_bota_techo"
+],
+[
+1093.12,
+1099.12,
+"shot",
+"f_d_mancha_techo"
+],
+[
+1114.8,
+1117.32,
+"shot",
+"v09_sella_bota"
+],
+[
+1124.48,
+1129.48,
+"shot",
+"f_d_sella_bota"
+],
+[
+1158.21,
+1163.21,
+"shot",
+"n_d_ranura"
+],
+[
+1181.46,
+1186.71,
+"shot",
+"f_d_ranura_filtro"
+],
+[
+1223.61,
+1227.56,
+"shot",
+"f_d_volante_99"
+],
+[
+1227.56,
+1232.27,
+"shot",
+"f_d_vendedor"
+],
+[
+1317.3,
+1319.53,
+"shot",
+"f_d_ayuda"
+],
+[
+1444.62,
+1450.62,
+"shot",
+"f_d_crawlspace"
+],
+[
+1459.46,
+1464.46,
+"shot",
+"n_d_crawl_agua"
+],
+[
+1481.3,
+1483.58,
+"shot",
+"f_d_russo"
+],
+[
+1522.84,
+1528.84,
+"shot",
+"f_d_russo_caja"
+],
+[
+1676.12,
+1680.56,
+"shot",
+"v10_despedida"
+]
+],
+"ov": [
+{
+"k": "big",
+"txt": "$400",
+"sub": "A YEAR · INTO THE ATTIC",
+"col": "red",
+"at": 70.86,
+"out": 73.86
+},
+{
+"k": "big",
+"txt": "$4",
+"sub": "NUMBER 10 · THE BOOT",
+"col": "green",
+"at": 88.26,
+"out": 91.26
+},
+{
+"k": "step",
+"n": 1,
+"name": "NOT DUCT TAPE",
+"at": 210.94,
+"out": 213.54
+},
+{
+"k": "step",
+"n": 2,
+"name": "CAME APART UP THERE",
+"at": 302.36,
+"out": 304.96
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE GARAGE RETURN",
+"col": "red",
+"at": 398.08,
+"out": 400.88
+},
+{
+"k": "step",
+"n": 4,
+"name": "CLOSED VENTS",
+"at": 489.34,
+"out": 491.94
+},
+{
+"k": "step",
+"n": 5,
+"name": "FURNITURE ON VENTS",
+"at": 566.44,
+"out": 569.04
+},
+{
+"k": "step",
+"n": 6,
+"name": "NO INSULATION",
+"at": 631.24,
+"out": 633.84
+},
+{
+"k": "step",
+"n": 7,
+"name": "CRUSHED FLEX",
+"at": 704.9,
+"out": 707.5
+},
+{
+"k": "step",
+"n": 8,
+"name": "WALL-CAVITY RETURNS",
+"at": 856.2,
+"out": 858.8
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE INCENSE TEST",
+"at": 931.12,
+"out": 933.72
+},
+{
+"k": "step",
+"n": 10,
+"name": "THE BOOT",
+"col": "green",
+"at": 1017.48,
+"out": 1020.48
+},
+{
+"k": "step",
+"n": 11,
+"name": "THE FILTER SLOT",
+"at": 1149.66,
+"out": 1152.26
+},
+{
+"k": "step",
+"n": 12,
+"name": "$99 DUCT CLEANING",
+"col": "red",
+"at": 1210.78,
+"out": 1213.58
+},
+{
+"k": "check",
+"title": "SIGNS YOUR DUCTS LEAK",
+"rows": [
+{
+"txt": "One cold room",
+"at": 1337.24
+},
+{
+"txt": "Bills > neighbors",
+"at": 1342.36
+},
+{
+"txt": "Dust, always",
+"at": 1346.5
+},
+{
+"txt": "Dirty ceiling marks",
+"at": 1350.06
+},
+{
+"txt": "Musty smell",
+"at": 1352.84
+},
+{
+"txt": "Warm attic in winter",
+"at": 1357.96
+}
+],
+"at": 1334.8,
+"out": 1360.46
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1570.28
+},
+{
+"at": 1575.4
+},
+{
+"at": 1579.22
+},
+{
+"at": 1587.34
+},
+{
+"at": 1592.56
+},
+{
+"at": 1596.14
+},
+{
+"at": 1602.2
+},
+{
+"at": 1605.86
+},
+{
+"at": 1610.54
+},
+{
+"at": 1613.54
+}
+],
+"at": 1562.68,
+"out": 1615.54
+},
+{
+"k": "ask",
+"at": 1637.7,
+"out": 1646.7
+},
+{
+"k": "next",
+"at": 1653.82,
+"out": 1663.32
+}
+],
+"end": 1680.56,
+"txt": {
+"recapTitle": "12 DUCT FIXES",
+"recap": [
+"Mastic / UL 181 foil",
+"Check the attic",
+"No garage return",
+"Vents open",
+"Nothing on vents",
+"Seal, then wrap",
+"Straighten the flex",
+"Seal panned returns",
+"Incense test",
+"Tape the boots"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"Attic, basement or crawlspace?",
+"…and how big was the gap?"
+],
+"next": [
+"HEAT PUMPS",
+"the setting that doubles the bill"
+],
+"lower": [
+44.72,
+52.72
+]
+}
+}
