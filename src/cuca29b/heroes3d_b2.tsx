@@ -74,23 +74,30 @@ const H3Infla: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" mesa={false}>{(t
 
 // ── 17 · LA PRENSA Y LA MONEDA: la prensa de madera se cierra sobre la bolita; la tortilla sale y queda parada junto a una moneda: mismo grueso
 const H3Calibre: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>{(tt) => {
-  const cierra = eio(tt, 5.8, 6.4) * (1 - eio(tt, 6.6, 7.0)), aplast = eio(tt, 5.9, 6.4), moneda = ent(tt, 1.0);
+  const baja = eio(tt, 1.6, 2.6), palanca = eio(tt, 2.7, 3.6), abre = eio(tt, 4.2, 5.0), aplast = eio(tt, 2.9, 3.6), lado = ent(tt, 5.3), moneda = ent(tt, 5.9);
+  const tapa = -1.25 * (1 - baja) - 1.25 * abre;
   return <>
-    <Estudio t={tt} cam={[0, 1.6, 3.4]} look={[0, 0.4, 0]} orbit={0.12}>
-      <group position={[-0.5, 0, 0]}>
-        <RBox p={[0, 0.05, 0]} s={[1.3, 0.1, 1.3]} r={0.03}>{M.madera("#9a6a3c")}</RBox>
-        <group position={[0, 0.1, -0.65]} rotation={[-(1 - cierra) * 1.7, 0, 0]}><RBox p={[0, 0.03, 0.65]} s={[1.3, 0.08, 1.3]} r={0.03}>{M.madera("#a87644")}</RBox></group>
-        <mesh position={[0, 0.12 + 0.1 * (1 - aplast), 0]} scale={[0.22 + 0.33 * aplast, 0.18 * (1 - aplast) + 0.012, 0.22 + 0.33 * aplast]}><sphereGeometry args={[1, 32, 16]} /><meshStandardMaterial color="#ecdcac" roughness={0.95} /></mesh>
+    <Estudio t={tt} cam={[0.25, 1.45, 3.2 - 0.05 * tt]} look={[0.3, 0.35, 0]} orbit={0.05}>
+      <group position={[-0.45, 0, 0]} rotation={[0, 0.35, 0]}>
+        <mesh position={[0, 0.1, 0]} castShadow receiveShadow><cylinderGeometry args={[0.6, 0.6, 0.1, 48]} />{M.madera("#9a6a3c")}</mesh>
+        <RBox p={[0, 0.1, 0.72]} s={[0.22, 0.1, 0.3]} r={0.03}>{M.madera("#9a6a3c")}</RBox>
+        <RBox p={[0, 0.2, -0.66]} s={[0.4, 0.1, 0.12]} r={0.03}>{M.madera("#7a4e28")}</RBox>
+        <group position={[0, 0.22, -0.62]} rotation={[tapa, 0, 0]}>
+          <mesh position={[0, 0.02, 0.62]} castShadow><cylinderGeometry args={[0.58, 0.58, 0.08, 48]} />{M.madera("#a87644")}</mesh>
+        </group>
+        <group position={[0, 0.2, 0.78]} rotation={[1.3 * (1 - palanca) + 1.3 * abre, 0, 0]}>
+          <RBox p={[0, 0.08, -0.55]} s={[0.1, 0.07, 1.1]} r={0.03}>{M.madera("#6a4024")}</RBox>
+          <mesh position={[0, 0.08, 0.05]} rotation={[0, 0, P2]}><cylinderGeometry args={[0.05, 0.05, 0.2, 12]} />{M.cromo()}</mesh>
+        </group>
+        <mesh position={[0, 0.17 + 0.13 * (1 - aplast), 0]} scale={[0.2 + 0.3 * aplast, 0.15 * (1 - aplast) + 0.012, 0.2 + 0.3 * aplast]} castShadow><sphereGeometry args={[1, 32, 16]} /><meshStandardMaterial color="#ecdcac" roughness={0.95} /></mesh>
       </group>
-      <group position={[0.95, 0, 0.4]}>
-        <mesh position={[0, 0.5 + (1 - moneda) * 1.5, 0]} rotation={[P2, 0, 0.25]} castShadow><cylinderGeometry args={[0.22, 0.22, 0.02, 40]} />{M.cromo("#c9a64a")}</mesh>
-        <group position={[0.35, 0.5, 0]} rotation={[P2, 0, 0.25]} scale={0.9}><Tortilla p={[0, 0, 0]} s={0.9} /></group>
-        <RBox p={[0.2, 0.2, 0]} s={[0.9, 0.04, 0.3]} r={0.01}>{M.madera("#6a4024")}</RBox>
+      <group position={[0.85, 0, 0.35]} rotation={[0, -0.5, 0]}>
+        <group position={[0, 0.5 + 1.4 * (1 - lado), 0]} rotation={[P2, 0, 0]}><Tortilla p={[0, 0, 0]} s={0.75} /></group>
+        <mesh position={[-0.45, 0.22 + 1.4 * (1 - moneda), 0]} rotation={[P2, 0, 0]} castShadow><cylinderGeometry args={[0.2, 0.2, 0.02, 48]} />{M.cromo("#d4af4a")}</mesh>
+        <RBox p={[0.2, 0.012, 0]} s={[1.4, 0.02, 0.2]} r={0.006}>{M.madera("#5a3820")}</RBox>
       </group>
-      <mesh position={[1.12, 0.52, 0.42]} rotation={[0, 0, 0]}><boxGeometry args={[0.5, 0.006, 0.006]} /><meshBasicMaterial color="#ffcf70" transparent opacity={cl((tt - 2.4) * 2)} /></mesh>
     </Estudio>
     <Head tt={tt} kick="TRUCO 17" title="EL GROSOR DE UNA MONEDA" />
-    <Tag tt={tt} at={3.0} x={1380} y={310} txt="2 MILÍMETROS" col={MZ} size={46} />
   </>;
 }}</Stage>;
 
@@ -150,10 +157,12 @@ const H3Embudo: C = ({ t, h }) => <Stage t={t} h={h} mode="ring" mesa={false}>{(
 
 // ── 20 · ALCANCÍA: cochinito de barro; caen monedas con física: lo que se ahorra por cada kilo hecho en casa
 const H3Alcancia: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>{(tt) => {
-  const cochi = ent(tt, 0.2), brillo = cl((tt - 5.6) * 2);
+  const cochi = ent(tt, 0.2), N = 16, brillo = cl((tt - 6.2) * 2);
+  let sq = 0; for (let i = 0; i < N; i++) { const hit = 1.3 + i * 0.3 + 0.36, d = tt - hit; if (d > 0 && d < 0.3) sq = Math.max(sq, Math.sin((d / 0.3) * P) * 0.12); }
+  const enJarra = (i: number) => i % 2 === 1;
   return <>
-    <Estudio t={tt} cam={[0, 1.4, 3.4]} look={[0, 0.55, 0]} orbit={0.14}>
-      <group position={[0, lerp(1.4, 0, cochi), 0]} rotation={[0, -0.5 + 0.1 * Math.sin(tt * 0.5), 0]}>
+    <Estudio t={tt} cam={[0.15, 1.35, 3.6 - 0.06 * tt]} look={[0.3, 0.55, 0]} orbit={0.05}>
+      <group position={[-0.3, lerp(1.4, 0, cochi), 0]} rotation={[0, -0.5 + 0.1 * Math.sin(tt * 0.5), 0]} scale={[1 + sq * 0.6, 1 - sq, 1 + sq * 0.6]}>
         <mesh position={[0, 0.55, 0]} scale={[0.75, 0.55, 0.55]} castShadow><sphereGeometry args={[1, 32, 20]} /><meshPhysicalMaterial color="#c0643a" roughness={0.35} clearcoat={0.6} /></mesh>
         <mesh position={[0.75, 0.6, 0]} rotation={[0, 0, P2]} castShadow><cylinderGeometry args={[0.16, 0.2, 0.14, 24]} /><meshPhysicalMaterial color="#c0643a" roughness={0.35} clearcoat={0.6} /></mesh>
         {[[-0.4, -0.25], [-0.4, 0.25], [0.4, -0.25], [0.4, 0.25]].map(([x, z], i) => <mesh key={i} position={[x, 0.1, z]}><cylinderGeometry args={[0.08, 0.07, 0.2, 12]} /><meshStandardMaterial color="#a8532e" roughness={0.5} /></mesh>)}
@@ -161,12 +170,20 @@ const H3Alcancia: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>
         {[0.08, -0.08].map((z) => <mesh key={z} position={[0.88, 0.6, z]}><sphereGeometry args={[0.025, 8, 8]} /><meshStandardMaterial color="#5a2a18" /></mesh>)}
         <mesh position={[0, 1.08, 0]}><boxGeometry args={[0.3, 0.02, 0.05]} /><meshStandardMaterial color="#2a120a" /></mesh>
       </group>
-      {Array.from({ length: 10 }, (_, i) => { const at = 1.6 + i * 0.38, k = tt - at; if (k < 0) return null; const y = Math.max(1.1, 2.6 - 4.9 * k * k);
-        return k < 0.75 ? <mesh key={i} position={[0.02 * Math.sin(i), y, 0]} rotation={[P2 + k * 3, 0, k * 2]} castShadow><cylinderGeometry args={[0.12, 0.12, 0.02, 32]} />{M.cromo("#d9b44a")}</mesh> : null; })}
-      <pointLight position={[0, 1.6, 0.8]} intensity={0.01 + 3 * brillo} distance={2.2} color="#ffd98a" />
+      <group position={[1.05, 0, 0.1]}>
+        <mesh geometry={lathe([[0, 0], [0.32, 0], [0.34, 0.7], [0.3, 0.78], [0.31, 0.82]])} castShadow>{M.vidrio()}</mesh>
+      </group>
+      {Array.from({ length: N }, (_, i) => { const at = 1.3 + i * 0.3, k = tt - at; if (k < 0) return null;
+        const j = enJarra(i), slot = Math.floor(i / 2);
+        const tx = j ? 1.05 + (rn(i, 1) - 0.5) * 0.25 : -0.3 + 0.55 + (rn(i, 2) - 0.5) * 0.15, ty = j ? 0.05 + slot * 0.04 : 0.016 + slot * 0.034, tz = j ? 0.1 + (rn(i, 3) - 0.5) * 0.25 : 0.55;
+        const sx = j ? 1.05 : -0.3, top = j ? 2.4 : 2.6, hitY = j ? 0.9 : 1.12, fallT = Math.sqrt((top - hitY) / 4.9);
+        const u = k < fallT ? 0 : cl((k - fallT) / 0.45);
+        const x = lerp(sx, tx, u), y = k < fallT ? top - 4.9 * k * k : lerp(hitY, ty, u) + 0.35 * Math.sin(u * P) * (j ? 0.2 : 1), z = lerp(0, tz, u);
+        const rx = (k < fallT ? 6 * k : 6 * fallT) * (1 - u);
+        return <mesh key={i} position={[x, y, z]} rotation={[rx, 0, rn(i, 4) * (1 - u)]} castShadow><cylinderGeometry args={[0.15, 0.15, 0.03, 32]} />{M.cromo("#d9b44a")}</mesh>; })}
+      <pointLight position={[0.4, 1.6, 0.8]} intensity={0.01 + 3 * brillo} distance={2.4} color="#ffd98a" />
     </Estudio>
     <Head tt={tt} kick="TRUCO 20" title="LA CUENTA CONTRA LA TORTILLERÍA" />
-    <Tag tt={tt} at={5.9} x={1380} y={380} txt="$12 EL KILO" col={MZ} size={52} />
   </>;
 }}</Stage>;
 

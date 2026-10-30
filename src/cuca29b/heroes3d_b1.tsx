@@ -55,69 +55,97 @@ const H3Mazorca: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" mesa={false}>{
 }}</Stage>;
 
 // ── 2 · CUBETA EN CORTE: el maíz baja al fondo; los granos vanos (grises, picados) suben y se van por el borde con la basurita
+const vanoGeo = (() => { const g = new THREE.IcosahedronGeometry(1, 1); const p = g.attributes.position as THREE.BufferAttribute;
+  for (let i = 0; i < p.count; i++) { const k = 0.8 + 0.3 * rn(i, 9); p.setXYZ(i, p.getX(i) * k, p.getY(i) * k * 1.1, p.getZ(i) * k * 0.6); } g.computeVertexNormals(); return g; })();
+const Colador: React.FC<{ p: V3 }> = ({ p }) => <group position={p}>
+  <mesh geometry={lathe([[0, 0], [0.3, 0.02], [0.46, 0.2], [0.5, 0.24]], 32)} castShadow><meshStandardMaterial color="#3a3a3c" metalness={0.8} roughness={0.35} wireframe /></mesh>
+  <mesh geometry={lathe([[0, 0], [0.3, 0.02], [0.46, 0.2], [0.5, 0.24]], 32)}><meshStandardMaterial color="#6a6a6e" metalness={0.6} roughness={0.5} transparent opacity={0.35} side={THREE.DoubleSide} /></mesh>
+  <mesh position={[0.5, 0.24, 0]}><torusGeometry args={[0.04, 0.012, 6, 12]} />{M.cromo()}</mesh></group>;
 const H3Cubeta: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>{(tt) => {
-  const sube = eio(tt, 0.6, 3.4), sale = eio(tt, 4.4, 6.4), tilt = 0.32 * eio(tt, 4.2, 4.9) * (1 - eio(tt, 6.6, 7.3));
+  const sube = eio(tt, 0.8, 3.2), tilt = 0.14 * eio(tt, 3.8, 4.4) * (1 - eio(tt, 6.6, 7.3));
   return <>
-    <Estudio t={tt} cam={[0, 1.6, 3.9]} look={[0, 0.7, 0]} orbit={0.12}>
-      <group rotation={[0, 0, -tilt]} position={[0, 0, 0]}>
+    <Estudio t={tt} cam={[0.2, 1.5, 3.9 - 0.06 * tt]} look={[0.45, 0.65, 0]} orbit={0.05}>
+      <group rotation={[0, 0, -tilt]}>
         <mesh geometry={lathe([[0, 0], [0.62, 0], [0.8, 1.3], [0.82, 1.32]], 48)} castShadow receiveShadow>{M.vidrio()}</mesh>
-        <mesh position={[0, 0.58, 0]}><cylinderGeometry args={[0.76, 0.62, 1.12, 48]} />{M.liquido("#9cc4cf", 0.42)}</mesh>
-        {Array.from({ length: 70 }, (_, i) => { const a = rn(i, 1) * 6.28, r = Math.sqrt(rn(i, 2)) * 0.55;
-          return <Grano key={i} p={[Math.cos(a) * r, 0.06 + (i % 5) * 0.06 + fall(tt, 0.1 + i * 0.008, 1.4), Math.sin(a) * r]} rot={[rn(i, 3) * 3, rn(i, 4) * 6, 0]} s={0.07} c={COL.blanco} />; })}
-        {Array.from({ length: 9 }, (_, i) => { const a = rn(i, 7) * 6.28, r = 0.15 + rn(i, 8) * 0.35, x = Math.cos(a) * r + sale * (1.2 + rn(i, 9) * 0.6), y = lerp(0.2, 1.12 + 0.02 * Math.sin(tt * 3 + i), sube) - sale * sale * 1.8;
-          return <Grano key={"v" + i} p={[x, y, Math.sin(a) * r * 0.6]} rot={[tt * 0.4 + i, i, 0.5]} s={0.075} c={COL.gris} brillo={0} />; })}
-        {Array.from({ length: 5 }, (_, i) => <mesh key={"h" + i} position={[-0.3 + i * 0.15 + sale * 1.4, lerp(0.3, 1.13, sube) - sale * sale * 1.8, 0.1 * i - 0.2]} rotation={[-P2, 0, i]} scale={[0.09, 0.04, 1]}><circleGeometry args={[1, 6]} /><meshStandardMaterial color="#9a8a5a" side={THREE.DoubleSide} roughness={0.9} /></mesh>)}
+        <mesh position={[0, 0.58, 0]}><cylinderGeometry args={[0.76, 0.62, 1.12, 48]} />{M.liquido("#5f8fa6", 0.38)}</mesh>
+        {Array.from({ length: 80 }, (_, i) => { const a = rn(i, 1) * 6.28, r = Math.sqrt(rn(i, 2)) * 0.55;
+          return <Grano key={i} p={[Math.cos(a) * r, 0.06 + (i % 5) * 0.06 + fall(tt, 0.1 + i * 0.008, 1.4), Math.sin(a) * r]} rot={[rn(i, 3) * 3, rn(i, 4) * 6, 0]} s={0.075} c="#f6ecc8" brillo={0.9} />; })}
       </group>
+      {Array.from({ length: 22 }, (_, i) => { const a = rn(i, 7) * 6.28, r = 0.12 + rn(i, 8) * 0.45, at = 3.9 + i * 0.09, k = eio(tt, at, at + 1.1);
+        const x0 = Math.cos(a) * r, y0 = lerp(0.25, 1.1 + 0.02 * Math.sin(tt * 3 + i), sube), z0 = Math.sin(a) * r * 0.6;
+        const x = lerp(x0, 1.55 + (rn(i, 2) - 0.5) * 0.4, k), y = lerp(y0, 0.12 + (i % 3) * 0.05, k) + 0.6 * Math.sin(k * P), z = lerp(z0, (rn(i, 3) - 0.5) * 0.3, k);
+        return i % 3 === 2
+          ? <mesh key={"p" + i} position={[x, y, z]} rotation={[rn(i, 4) * 3, tt * 0.3 + i, P2 * 0.8]}><cylinderGeometry args={[0.012, 0.012, 0.42, 6]} /><meshStandardMaterial color="#c9a24a" roughness={0.8} /></mesh>
+          : <mesh key={"v" + i} position={[x, y, z]} rotation={[tt * 0.4 + i, i, 0.5]} scale={0.085} geometry={vanoGeo} castShadow><meshStandardMaterial color="#4b4740" roughness={1} flatShading /></mesh>; })}
+      <Colador p={[1.55, 0.02, 0]} />
     </Estudio>
     <Head tt={tt} kick="TRUCO 2" title="LO QUE FLOTA SE TIRA" />
-    <Tag tt={tt} at={3.2} x={1450} y={330} txt="VANO = HUECO" col={RED} size={46} />
   </>;
 }}</Stage>;
 
 // ── 3 · LA RECETA EN LA MESA: llega el kilo de maíz, la jarra de 3 litros y la cuchara; un cuchillo RASA la cal y el sobrante cae
+const jarra3Tex = () => ctex("jarra3l", 256, 512, (g) => { g.clearRect(0, 0, 256, 512); g.strokeStyle = "#c0392b"; g.lineWidth = 8;
+  [120, 250, 380].forEach((y, i) => { g.beginPath(); g.moveTo(20, y); g.lineTo(i === 0 ? 150 : 100, y); g.stroke(); });
+  g.fillStyle = "#c0392b"; g.font = "900 72px Montserrat, Arial"; g.fillText("3 L", 160, 140); });
 const H3Balanza: C = ({ t, h }) => <Stage t={t} h={h} mode="wipe" mesa={false}>{(tt) => {
-  const kilo = ent(tt, 0.5), jar = ent(tt, 1.7), cuch = ent(tt, 3.2), rasa = eio(tt, 4.8, 5.6);
+  const kilo = ent(tt, 0.4), jar = ent(tt, 1.4), cuch = ent(tt, 2.6), rasa = eio(tt, 4.4, 5.6);
   return <>
-    <Estudio t={tt} cam={[0, 1.9, 3.7]} look={[0, 0.35, 0]} orbit={0.14}>
-      <group position={[-1.3, lerp(1.5, 0, kilo), 0]}>
-        {Array.from({ length: 70 }, (_, i) => { const a = rn(i, 1) * 6.28, r = Math.sqrt(rn(i, 2)) * 0.48 * (1 - (i % 7) / 9);
-          return <Grano key={i} p={[Math.cos(a) * r, 0.04 + (i % 7) * 0.05, Math.sin(a) * r]} rot={[rn(i, 3) * 3, rn(i, 4) * 6, 0]} s={0.07} />; })}
+    <Estudio t={tt} cam={[0.1, 1.15, 3.1 - 0.05 * tt]} look={[0.1, 0.42, 0]} orbit={0.05}>
+      <group position={[-1.25, lerp(1.2, 0, kilo), -0.1]}>
+        <mesh geometry={lathe([[0, 0], [0.5, 0], [0.62, 0.1], [0.65, 0.13]])} castShadow receiveShadow>{M.barro("#8f4a28")}</mesh>
+        {Array.from({ length: 90 }, (_, i) => { const a = rn(i, 1) * 6.28, lev = i % 8, r = Math.sqrt(rn(i, 2)) * 0.5 * (1 - lev / 9);
+          return <Grano key={i} p={[Math.cos(a) * r, 0.1 + lev * 0.05, Math.sin(a) * r]} rot={[rn(i, 3) * 3, rn(i, 4) * 6, 0]} s={0.075} />; })}
       </group>
-      <group position={[0, lerp(1.6, 0, jar), -0.1]}>
-        <mesh geometry={lathe([[0, 0], [0.35, 0], [0.4, 0.5], [0.34, 0.9], [0.38, 1.0]])} castShadow>{M.vidrio()}</mesh>
-        <mesh position={[0, 0.42, 0]}><cylinderGeometry args={[0.37, 0.33, 0.8, 32]} />{M.liquido("#bfe0ea", 0.5)}</mesh>
+      <group position={[-0.05, lerp(1.4, 0, jar), -0.35]}>
+        <mesh geometry={lathe([[0, 0], [0.36, 0], [0.4, 0.5], [0.36, 1.0], [0.4, 1.06]])} castShadow>{M.vidrio()}</mesh>
+        <mesh position={[0, 0.45, 0]}><cylinderGeometry args={[0.37, 0.35, 0.86, 32]} />{M.liquido("#9fd0e0", 0.5)}</mesh>
+        <mesh position={[0, 0.5, 0.405]}><planeGeometry args={[0.4, 0.8]} /><meshBasicMaterial map={jarra3Tex()} transparent /></mesh>
       </group>
-      <group position={[1.3, 0.12 + lerp(1.4, 0, cuch), 0.2]} rotation={[0, -0.5, 0]}>
-        <Cuchara p={[0, 0, 0]} s={1.5} mat="cromo" />
-        <mesh position={[0, 0.06 + 0.05 * (1 - rasa), 0]} scale={[0.3, 0.05 + 0.07 * (1 - rasa), 0.42]}><sphereGeometry args={[1, 20, 10]} /><meshStandardMaterial color="#f7f6f2" roughness={0.95} /></mesh>
-        <RBox p={[lerp(-0.5, 0.55, rasa), 0.13, 0]} s={[0.04, 0.03, 0.8]} r={0.01}>{M.cromo()}</RBox>
-        {Array.from({ length: 10 }, (_, i) => { const k = cl((tt - 5.0 - i * 0.05) * 1.6); return k > 0 ? <mesh key={i} position={[0.45 + i * 0.01, 0.1 - k * k * 0.5, (rn(i, 2) - 0.5) * 0.3]} scale={0.02}><sphereGeometry args={[1, 6, 6]} /><meshStandardMaterial color="#f7f6f2" /></mesh> : null; })}
+      <group position={[0.95, 0.02 + lerp(1.0, 0, cuch), 0.35]} rotation={[0, -0.35, 0]}>
+        <mesh position={[0, 0.15, 0]} scale={[0.34, 0.19, 0.24]}><sphereGeometry args={[1, 32, 16, 0, 2 * P, P2, P2]} /><meshStandardMaterial color="#d8dadc" metalness={0.85} roughness={0.22} side={THREE.DoubleSide} /></mesh>
+        <RBox p={[-0.75, 0.2, 0]} rot={[0, 0, 0.12]} s={[0.95, 0.03, 0.08]} r={0.012}><meshStandardMaterial color="#d8dadc" metalness={0.85} roughness={0.22} /></RBox>
+        <mesh position={[0, 0.15, 0]} scale={[0.33, 0.012 + 0.16 * (1 - rasa), 0.23]}><sphereGeometry args={[1, 28, 12, 0, 2 * P, 0, P2]} /><meshStandardMaterial color="#fbfaf6" roughness={1} /></mesh>
+        <group position={[lerp(0.75, -0.55, rasa), 0.17, 0]} visible={tt > 3.6}>
+          <RBox p={[0, 0, 0]} s={[0.07, 0.012, 0.75]} r={0.004}>{M.cromo()}</RBox>
+          <RBox p={[0, 0, 0.55]} s={[0.07, 0.05, 0.36]} r={0.02}>{M.madera("#6a4024")}</RBox>
+        </group>
+        {Array.from({ length: 16 }, (_, i) => { const at = 4.6 + i * 0.06, k = cl((tt - at) * 1.6); return k > 0 ? <mesh key={i} position={[lerp(0.3, -0.35, i / 15), 0.24 - k * k * 0.22, (rn(i, 2) - 0.5) * 0.4 + (i % 2 ? 0.26 : -0.26)]} scale={0.025}><sphereGeometry args={[1, 6, 6]} /><meshStandardMaterial color="#fbfaf6" /></mesh> : null; })}
       </group>
     </Estudio>
     <Head tt={tt} kick="TRUCO 3" title="LA CAL SE MIDE" />
-    <Tag tt={tt} at={1.0} x={560} y={830} txt="1 KILO" col={TX} size={44} />
-    <Tag tt={tt} at={2.2} x={960} y={830} txt="3 LITROS" col={TX} size={44} />
-    <Tag tt={tt} at={5.4} x={1380} y={830} txt="RASA" col={MZ} size={56} />
   </>;
 }}</Stage>;
 
 // ── 4 · BOLSA DE CAL: la bolsa de cal apagada gira al frente y su etiqueta se enciende; la de construcción se hunde con sello rojo
 const bolsaTex = (k: string, l: string[], bg: string, ink: string) => papel("bolsa" + k, l, { w: 512, h: 640, bg, ink, size: 92, font: `900 92px Montserrat, Arial, sans-serif` });
+const sacoGeo = (() => { const g = new THREE.BoxGeometry(0.9, 1.35, 0.42, 14, 20, 6); const p = g.attributes.position as THREE.BufferAttribute;
+  for (let i = 0; i < p.count; i++) { const x = p.getX(i), y = p.getY(i), z = p.getZ(i), u = (y + 0.675) / 1.35;
+    const bul = 1 + 0.14 * Math.sin(Math.min(1, u * 1.15) * P), top = u > 0.86 ? 1 - ((u - 0.86) / 0.14) * 0.92 : 1;
+    const n = 0.016 * Math.sin(x * 23 + y * 17) * Math.cos(y * 29 - z * 11) + 0.009 * Math.sin(y * 61 + x * 9) + 0.006 * Math.cos(x * 71 - y * 37);
+    p.setXYZ(i, x * bul + n * 0.6, y + n * 0.4, (z * bul + n) * top); }
+  g.computeVertexNormals(); return g; })();
+const sacoTex = (k: string, l: string[], ink: string) => ctex("saco" + k, 512, 512, (g) => { g.clearRect(0, 0, 512, 512); g.fillStyle = ink; g.textAlign = "center";
+  g.font = "900 120px Montserrat, Arial"; g.fillText(l[0], 256, 230); g.font = "800 64px Montserrat, Arial"; g.fillText(l[1], 256, 320);
+  g.strokeStyle = ink; g.lineWidth = 6; g.strokeRect(70, 110, 372, 250); });
+const Saco: React.FC<{ c: string; k: string; l: string[]; ink: string }> = ({ c, k, l, ink }) => <group>
+  <mesh position={[0, 0.675, 0]} geometry={sacoGeo} castShadow receiveShadow><meshStandardMaterial color={c} roughness={0.95} /></mesh>
+  <RBox p={[0, 1.36, 0]} s={[0.96, 0.08, 0.06]} r={0.02}><meshStandardMaterial color={c} roughness={0.95} /></RBox>
+  {Array.from({ length: 12 }, (_, i) => <mesh key={i} position={[-0.42 + i * 0.077, 1.36, 0.035]}><boxGeometry args={[0.03, 0.012, 0.005]} /><meshStandardMaterial color="#5a4630" /></mesh>)}
+  <mesh position={[0, 0.72, 0.26]}><planeGeometry args={[0.72, 0.72]} /><meshStandardMaterial map={sacoTex(k, l, ink)} transparent roughness={0.95} /></mesh></group>;
 const H3BolsaCal: C = ({ t, h }) => <Stage t={t} h={h} mode="diag" mesa={false}>{(tt) => {
-  const b1 = ent(tt, 0.3), gira = eio(tt, 2.6, 4.2), luz = cl((tt - 5.5) * 2), hunde = eio(tt, 5.8, 7.2), sello = cl(phys(tt, 6.0, 7, 0.4));
+  const b1 = ent(tt, 0.3), b2 = ent(tt, 1.0), gira = eio(tt, 2.0, 3.4), luz = cl((tt - 3.2) * 2), cae = eio(tt, 4.6, 5.4), polvo = cl((tt - 5.3) * 1.2);
+  const rebote = cae >= 1 ? 0.06 * Math.exp(-(tt - 5.4) * 6) * Math.sin((tt - 5.4) * 30) : 0;
   return <>
-    <Estudio t={tt} cam={[0, 1.4, 4.0]} look={[0, 0.75, 0]} orbit={0.12}>
-      <group position={[-0.75, lerp(2, 0, b1), 0.1]} rotation={[0, lerp(P, 0, gira) + 0.15 * Math.sin(tt * 0.6), 0]}>
-        <RBox p={[0, 0.75, 0]} s={[0.95, 1.5, 0.45]} r={0.08}><meshStandardMaterial color="#e8dcc0" roughness={0.9} /></RBox>
-        <mesh position={[0, 0.8, 0.231]}><planeGeometry args={[0.8, 1.0]} /><meshStandardMaterial map={bolsaTex("a", ["CAL", "APAGADA"], "#f4ecd8", "#2a5a2e")} emissive="#ffe2a0" emissiveIntensity={0.35 * luz} emissiveMap={bolsaTex("a", ["CAL", "APAGADA"], "#f4ecd8", "#2a5a2e")} /></mesh>
+    <Estudio t={tt} cam={[0.1, 1.25, 3.9 - 0.06 * tt]} look={[0.1, 0.7, 0]} orbit={0.05}>
+      <group position={[-0.7, lerp(2, 0, b1), 0.15]} rotation={[0, lerp(P, -0.12, gira) + 0.06 * Math.sin(tt * 0.6), 0]}>
+        <Saco c="#c9a878" k="a" l={["CAL", "APAGADA"]} ink="#2a5a2e" />
       </group>
-      <group position={[0.85, -hunde * 1.6, -0.3]} rotation={[0, -0.25, hunde * 0.4]}>
-        <RBox p={[0, 0.7, 0]} s={[0.9, 1.4, 0.45]} r={0.05}><meshStandardMaterial color="#7d7f80" roughness={0.95} /></RBox>
-        <mesh position={[0, 0.75, 0.231]}><planeGeometry args={[0.78, 0.95]} /><meshStandardMaterial map={bolsaTex("b", ["CAL", "VIVA"], "#bdbdb8", "#3a3a3a")} /></mesh>
-        <mesh position={[0, 0.75, 0.25]} rotation={[0, 0, -0.35]} scale={0.2 + 0.8 * sello}><ringGeometry args={[0.36, 0.44, 40]} /><meshBasicMaterial color="#d23a2a" transparent opacity={sello} /></mesh>
-        <mesh position={[0, 0.75, 0.251]} rotation={[0, 0, -0.75]} scale={[0.2 + 0.8 * sello, 1, 1]}><planeGeometry args={[0.82, 0.07]} /><meshBasicMaterial color="#d23a2a" transparent opacity={sello} /></mesh>
+      <sprite position={[-0.7, 0.8, -0.2]} scale={[2.0 * luz + 0.01, 2.2 * luz + 0.01, 1]}><spriteMaterial map={humoTex()} color="#ffe2a0" transparent opacity={0.5 * luz} depthWrite={false} /></sprite>
+      <group position={[0.85, 0, -0.35]} rotation={[-(P2 - 0.08) * cae + rebote, -0.2, 0]}>
+        <group position={[0, lerp(2, 0, b2), 0]}><Saco c="#8f8d86" k="b" l={["CAL", "VIVA"]} ink="#2a2a2a" /></group>
       </group>
-      <pointLight position={[-0.75, 1.0, 1.0]} intensity={0.01 + 3 * luz} distance={2.5} color="#ffe2a0" />
+      {polvo > 0 && <Vapor t={tt - 5.3} p={[0.85, 0.1, -1.0]} o={0.5 * (1 - 0.6 * polvo)} h={0.7} s={0.45} spread={0.6} n={14} />}
+      <pointLight position={[-0.7, 1.0, 1.0]} intensity={0.01 + 3 * luz} distance={2.5} color="#ffe2a0" />
     </Estudio>
     <Head tt={tt} kick="TRUCO 4" title="CUÁL CAL, Y CUÁL JAMÁS" />
   </>;
@@ -191,23 +219,29 @@ const H3Muestrario: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" mesa={false
 }}</Stage>;
 
 // ── 8 · LA UÑA: macro de un grano tibio; el pulgar lo aprieta y la piel transparente se desprende sola y se levanta
+const pielGeo = new THREE.SphereGeometry(1, 28, 16, 0, P, 0, P * 0.55);
 const H3Una: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>{(tt) => {
-  const llega = ent(tt, 3.3), aprieta = eio(tt, 5.4, 6.0), piel = eio(tt, 6.1, 7.3);
+  const llega = ent(tt, 1.2), aprieta = eio(tt, 3.2, 3.9) * (1 - eio(tt, 6.2, 6.9)), piel = eio(tt, 4.0, 5.8), sale = eio(tt, 6.3, 7.3);
+  const tip: V3 = [lerp(1.5, 0.31, llega) + 0.9 * sale, lerp(0.95, 0.4, llega) - 0.03 * aprieta + 0.5 * sale, 0.04];
   return <>
-    <Estudio t={tt} cam={[0, 1.0, 2.2]} look={[0, 0.35, 0]} orbit={0.1} fov={30}>
-      <mesh position={[0, 0.02, 0]} rotation={[-P2, 0, 0]} receiveShadow><circleGeometry args={[1.2, 48]} /><meshPhysicalMaterial color="#2c4a6e" roughness={0.25} clearcoat={1} /></mesh>
-      <group position={[0, 0.34 - 0.03 * aprieta, 0]} rotation={[0, tt * 0.15, 0.2]}>
-        <Grano p={[0, 0, 0]} s={0.28} c={COL.nixta} brillo={0.2} />
-        <mesh position={[piel * 0.35, 0.05 + piel * 0.35, piel * 0.1]} rotation={[0, 0, -piel * 0.9]} scale={[0.3, 0.33, 0.2]} geometry={granoGeo}><meshPhysicalMaterial color="#fff4d0" transparent opacity={0.45 - 0.1 * piel} roughness={0.2} side={THREE.DoubleSide} depthWrite={false} /></mesh>
+    <Estudio t={tt} cam={[0.25, 0.95, 1.9 - 0.04 * tt]} look={[0.12, 0.36, 0]} orbit={0.06} fov={30}>
+      <mesh position={[0, 0.02, 0]} rotation={[-P2, 0, 0]} receiveShadow><circleGeometry args={[1.4, 48]} /><meshPhysicalMaterial color="#2c4a6e" roughness={0.3} clearcoat={1} /></mesh>
+      <group position={[0, 0.34, 0]} rotation={[0, -0.25, 0.12]} scale={[1, 1 - 0.07 * aprieta, 1]}>
+        <Grano p={[0, 0, 0]} s={0.29} c={COL.nixta} brillo={0.15} />
+        <group position={[-0.06, 0.28, 0]} rotation={[0, 0, 0.8 * piel]}>
+          <mesh position={[0.06, -0.28, 0]} scale={[0.305, 0.345, 0.19]} geometry={pielGeo}><meshPhysicalMaterial color="#fff2c8" transparent opacity={0.6} roughness={0.15} clearcoat={1} side={THREE.DoubleSide} depthWrite={false} /></mesh>
+        </group>
+        <mesh position={[0.29, 0.05, 0.02]} rotation={[0, 0, 0.3]} visible={aprieta > 0.3 || piel > 0}><boxGeometry args={[0.012, 0.16, 0.012]} /><meshStandardMaterial color="#8a5a1a" /></mesh>
       </group>
-      <group position={[lerp(1.4, 0.18, llega), lerp(1.2, 0.68, llega) - 0.08 * aprieta, 0.15]} rotation={[0, 0.3, -0.9]}>
-        <mesh castShadow><capsuleGeometry args={[0.12, 0.5, 8, 16]} /><meshStandardMaterial color="#c98e6a" roughness={0.6} /></mesh>
-        <mesh position={[0, -0.3, 0.07]} rotation={[0.2, 0, 0]}><boxGeometry args={[0.15, 0.12, 0.02]} /><meshPhysicalMaterial color="#f0d2c0" roughness={0.3} clearcoat={0.6} /></mesh>
+      <group position={[tip[0] + 0.36, tip[1], tip[2]]} rotation={[0, 0.2, -P2 + 0.25]}>
+        <mesh castShadow><capsuleGeometry args={[0.125, 0.45, 10, 20]} /><meshPhysicalMaterial color="#d49a74" roughness={0.55} sheen={1} sheenColor="#ffd0b0" /></mesh>
+        <mesh position={[-0.1, -0.27, 0]} scale={[0.035, 0.12, 0.1]}><sphereGeometry args={[1, 20, 12]} /><meshPhysicalMaterial color="#f6dccc" roughness={0.18} clearcoat={1} /></mesh>
+        <mesh position={[0, 0.04, 0]} rotation={[P2, 0, 0]}><torusGeometry args={[0.127, 0.006, 6, 24]} /><meshStandardMaterial color="#a86a4c" /></mesh>
+        <RBox p={[0.06, 0.52, 0]} s={[0.46, 0.4, 0.4]} r={0.15}><meshPhysicalMaterial color="#cf946e" roughness={0.6} sheen={1} sheenColor="#ffd0b0" /></RBox>
       </group>
-      <Vapor t={tt} p={[0, 0.5, 0]} o={0.2} h={0.6} s={0.2} />
+      <Vapor t={tt} p={[0, 0.5, 0]} o={0.22} h={0.7} s={0.18} n={6} />
     </Estudio>
     <Head tt={tt} kick="TRUCO 8" title="LA PRUEBA DE LA UÑA" />
-    <Tag tt={tt} at={6.4} x={1380} y={420} txt="LA PIEL SE VA SOLA" col={MZ} size={44} />
   </>;
 }}</Stage>;
 
