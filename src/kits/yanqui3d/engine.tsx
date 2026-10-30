@@ -55,6 +55,7 @@ export const DUR: Record<Tr, number> = { whip: 0.5, whipL: 0.5, portal: 0.6, zoo
 const HB: React.FC<{ id: string; x: number; y: number }> = ({ id, x, y }) => <svg width={0} height={0} style={{ position: "absolute" }}><filter id={id} x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation={`${x} ${y}`} /></filter></svg>;
 export const transition = (tr: Tr, k: number, prev: React.ReactNode, cur: React.ReactNode, p: [number, number]) => {
   const L: React.ReactNode[] = [];
+  if (tr === "zoom") tr = "light"; // zoom (dos mundos 3D escalados) colgaba cuadros en el farm con swangle (>180 s)
   if (tr === "whip" || tr === "whipL") {
     const out = k < 0.5, k2 = out ? k * 2 : (1 - k) * 2, b = Math.round(90 * k2), d = tr === "whip" ? -1 : 1, id = `wb${b}`;
     L.push(<AbsoluteFill key="w" style={{ transform: `translateX(${(out ? d : -d) * k2 * 300}px) scale(${1 + k2 * 0.32})`, filter: b ? `url(#${id})` : undefined }}>{b ? <HB id={id} x={b} y={0} /> : null}{out ? prev : cur}</AbsoluteFill>);
