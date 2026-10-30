@@ -1,0 +1,333 @@
+[
+{
+"k": "drawerShut",
+"mode": "iris",
+"at": 21.53,
+"out": 31.28
+},
+{
+"k": "sheetLump",
+"mode": "drop",
+"at": 57.15,
+"out": 65.74
+},
+{
+"k": "gearsMesh",
+"mode": "split",
+"at": 71.77,
+"out": 77.79
+},
+{
+"k": "wordsDrawer",
+"mode": "wipe",
+"at": 117.18,
+"out": 126.4
+},
+{
+"k": "cookieTin",
+"mode": "iris",
+"at": 130.07,
+"out": 141.57
+},
+{
+"k": "haystackWaves",
+"mode": "drop",
+"at": 148.11,
+"out": 158.14
+},
+{
+"k": "stampPost",
+"mode": "split",
+"at": 163.84,
+"out": 175.23
+},
+{
+"k": "calendarSearch",
+"mode": "wipe",
+"at": 210.12,
+"out": 221.62
+},
+{
+"k": "horizonRoad",
+"mode": "iris",
+"at": 241.76,
+"out": 251.59
+},
+{
+"k": "inkDate",
+"mode": "drop",
+"at": 271.88,
+"out": 282.61
+},
+{
+"k": "fiddleRise",
+"mode": "split",
+"at": 303.8,
+"out": 315.3
+},
+{
+"k": "cobwebCase",
+"mode": "wipe",
+"at": 320.55,
+"out": 331.49
+},
+{
+"k": "eggTimer",
+"mode": "iris",
+"at": 355.03,
+"out": 365.35
+},
+{
+"k": "seedRow",
+"mode": "drop",
+"at": 370.75,
+"out": 382.12
+},
+{
+"k": "bowStrings",
+"mode": "split",
+"at": 403.58,
+"out": 414.64
+},
+{
+"k": "napkinMath",
+"mode": "wipe",
+"at": 441.43,
+"out": 448.75
+},
+{
+"k": "coinStack",
+"mode": "iris",
+"at": 470.3,
+"out": 481.8
+},
+{
+"k": "jarFill",
+"mode": "drop",
+"at": 486.34,
+"out": 497.61
+},
+{
+"k": "tapeRoute",
+"mode": "split",
+"at": 517.47,
+"out": 528.97
+},
+{
+"k": "sheetPeek",
+"mode": "wipe",
+"at": 533.98,
+"out": 545.04
+},
+{
+"k": "frameChair",
+"mode": "iris",
+"at": 555.11,
+"out": 563.24
+},
+{
+"k": "chiselStone",
+"mode": "drop",
+"at": 585.56,
+"out": 596.07
+},
+{
+"k": "eggCheck",
+"mode": "split",
+"at": 601.4,
+"out": 612.9
+},
+{
+"k": "marchPages",
+"mode": "wipe",
+"at": 621.89,
+"out": 632.13
+},
+{
+"k": "gavelSold",
+"mode": "iris",
+"at": 636.45,
+"out": 646.41
+},
+{
+"k": "bulbSawdust",
+"mode": "drop",
+"at": 650.22,
+"out": 661.72
+},
+{
+"k": "crookedRock",
+"mode": "split",
+"at": 665.78,
+"out": 675.91
+},
+{
+"k": "tenChairs",
+"mode": "wipe",
+"at": 680.3,
+"out": 691.8
+},
+{
+"k": "caneSteps",
+"mode": "iris",
+"at": 764.5,
+"out": 775.06
+},
+{
+"k": "starfishBrochure",
+"mode": "drop",
+"at": 801.3,
+"out": 811.65
+},
+{
+"k": "saltBowl",
+"mode": "split",
+"at": 817.34,
+"out": 828.84
+},
+{
+"k": "reasonNotes",
+"mode": "wipe",
+"at": 854.2,
+"out": 860.92
+},
+{
+"k": "umbrellaRain",
+"mode": "iris",
+"at": 900.28,
+"out": 911.17
+},
+{
+"k": "barberPole",
+"mode": "drop",
+"at": 917.84,
+"out": 929.34
+},
+{
+"k": "routeLine",
+"mode": "split",
+"at": 952.51,
+"out": 963.84
+},
+{
+"k": "tellOne",
+"mode": "iris",
+"at": 986.96,
+"out": 998.46
+},
+{
+"k": "twoSuitcases",
+"mode": "wipe",
+"at": 1023.64,
+"out": 1033.29
+},
+{
+"k": "walnutStack",
+"mode": "iris",
+"at": 1060.36,
+"out": 1067.19
+},
+{
+"k": "shinyNew",
+"mode": "wipe",
+"at": 1108.98,
+"out": 1116.7
+},
+{
+"k": "halfThings",
+"mode": "drop",
+"at": 1152.43,
+"out": 1163.93
+},
+{
+"k": "sheetPull",
+"mode": "drop",
+"at": 1189.19,
+"out": 1197.89
+},
+{
+"k": "clampSqueeze",
+"mode": "split",
+"at": 1220.62,
+"out": 1232.12
+},
+{
+"k": "milkSpill",
+"mode": "wipe",
+"at": 1237.95,
+"out": 1248.41
+},
+{
+"k": "brochureDrawer",
+"mode": "iris",
+"at": 1252.33,
+"out": 1263.83
+},
+{
+"k": "mondayStairs",
+"mode": "drop",
+"bt": [
+2.09,
+2.88,
+3.95,
+5.52,
+6.7
+],
+"at": 1324.37,
+"out": 1332.67
+},
+{
+"k": "grandmaMoses",
+"mode": "split",
+"at": 1272.29,
+"out": 1282.88
+},
+{
+"k": "lampReading",
+"mode": "split",
+"at": 1400.9,
+"out": 1412.4
+},
+{
+"k": "leakyBoat",
+"mode": "wipe",
+"at": 1417.9,
+"out": 1429.22
+},
+{
+"k": "threeSmall",
+"mode": "iris",
+"bt": [
+2.67,
+4.39
+],
+"at": 1438.39,
+"out": 1444.81
+},
+{
+"k": "buickSteam",
+"mode": "drop",
+"at": 1465.83,
+"out": 1476.18
+},
+{
+"k": "shoesWave",
+"mode": "split",
+"at": 1482.01,
+"out": 1493.51
+},
+{
+"k": "corkPins",
+"mode": "wipe",
+"bt": [
+3.33,
+4.69,
+5.58,
+6.83,
+7.72,
+9.49
+],
+"at": 1516.37,
+"out": 1527.46
+}
+]
