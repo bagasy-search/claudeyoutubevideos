@@ -293,7 +293,6 @@ export const NextCard: React.FC<{ t: number; at: number; subAt: number; out: num
         <div style={{ width: "100%", height: "100%", borderRadius: 22, overflow: "hidden", border: "6px solid rgba(255,255,255,.94)", boxShadow: "0 50px 100px rgba(0,0,0,.7)", transform: `rotateY(${(1 - k) * -60 - 12}deg) translateZ(${(1 - k) * -600}px)`, position: "relative" }}>
           <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 80% 70% at 50% 45%, #5a2a10, #140a05)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 14, textAlign: "center", paddingTop: 30 }}>{children}</div>
           <div style={{ position: "absolute", left: 0, top: 0, padding: "12px 22px", background: COL.amber, fontFamily: FONT, fontWeight: 900, fontSize: 30, letterSpacing: 5, color: "#2a1806" }}>NEXT VIDEO</div>
-          <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, padding: "18px 24px", background: "linear-gradient(0deg, rgba(0,0,0,.9), transparent)", fontFamily: FONT, fontWeight: 900, fontSize: 46, color: COL.ink }}>SOON FROM THE COOK SHACK</div>
         </div>
       </div>
       {s1 > 0.01 && <div style={{ position: "absolute", left: 1400, top: 760, transform: `translate(-50%,-50%) scale(${s1 * press})`, whiteSpace: "nowrap", padding: "26px 60px", borderRadius: 60, background: done ? "#2b2b2b" : "#e62117", fontFamily: FONT, fontWeight: 900, fontSize: 56, letterSpacing: 4, color: "#fff", boxShadow: "0 24px 50px rgba(0,0,0,.6)" }}>{done ? "SUBSCRIBED ✓" : "SUBSCRIBE"}</div>}
