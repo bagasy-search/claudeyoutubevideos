@@ -14,25 +14,25 @@ const arco = (a: V3, b: V3, k: number, hh = 0.8): V3 => [lerp(a[0], b[0], k), le
 
 // ---------- utilería del tamal ----------
 // hoja de maíz: plano curvado (canoa) con vetas; lado liso (claro y brillante) arriba, lado rugoso (opaco, con vetas) abajo
-const hojaTex = (rug: boolean) => ctex("hoja" + rug, 256, 512, (g) => { g.fillStyle = rug ? "#c8b07a" : "#e8d6a4"; g.fillRect(0, 0, 256, 512);
+export const hojaTex = (rug: boolean) => ctex("hoja" + rug, 256, 512, (g) => { g.fillStyle = rug ? "#c8b07a" : "#e8d6a4"; g.fillRect(0, 0, 256, 512);
   for (let i = 0; i < (rug ? 40 : 18); i++) { g.strokeStyle = `rgba(${rug ? "120,90,40" : "170,140,80"},${rug ? 0.55 : 0.25})`; g.lineWidth = rug ? 2 + rn(i, 2) * 2 : 1; const x = 10 + i * (rug ? 6 : 13); g.beginPath(); g.moveTo(x, 0); g.quadraticCurveTo(x + 8 * Math.sin(i), 256, 128 + (x - 128) * 0.25, 512); g.stroke(); } });
-const hojaGeo = (() => { const g = new THREE.PlaneGeometry(0.9, 1.5, 12, 16), p = g.attributes.position; for (let i = 0; i < p.count; i++) { const x = p.getX(i), y = p.getY(i), w = 1 - Math.pow((y + 0.75) / 1.5, 2) * 0.55; p.setX(i, x * w); p.setZ(i, 0.18 * Math.pow(x / 0.45, 2)); } g.computeVertexNormals(); return g; })();
-const Hoja: React.FC<{ p?: V3; rot?: V3; s?: number; liso?: boolean; c?: string; children?: React.ReactNode }> = ({ p, rot, s = 1, liso = true, c, children }) => (
+export const hojaGeo = (() => { const g = new THREE.PlaneGeometry(0.9, 1.5, 12, 16), p = g.attributes.position; for (let i = 0; i < p.count; i++) { const x = p.getX(i), y = p.getY(i), w = 1 - Math.pow((y + 0.75) / 1.5, 2) * 0.55; p.setX(i, x * w); p.setZ(i, 0.18 * Math.pow(x / 0.45, 2)); } g.computeVertexNormals(); return g; })();
+export const Hoja: React.FC<{ p?: V3; rot?: V3; s?: number; liso?: boolean; c?: string; children?: React.ReactNode }> = ({ p, rot, s = 1, liso = true, c, children }) => (
   <group position={p} rotation={rot} scale={s}>
     <mesh geometry={hojaGeo} rotation={[-P2, 0, 0]} castShadow receiveShadow><meshPhysicalMaterial map={hojaTex(!liso)} color={c ?? "#ffffff"} roughness={liso ? 0.35 : 0.85} clearcoat={liso ? 0.5 : 0} side={THREE.DoubleSide} /></mesh>
     {children}
   </group>);
-const Masa: React.FC<{ p?: V3; s?: V3; c?: string }> = ({ p, s = [0.3, 0.02, 0.45], c = "#efe0b0" }) => <mesh position={p} scale={s} castShadow><sphereGeometry args={[1, 28, 14]} /><meshStandardMaterial color={c} roughness={0.75} /></mesh>;
+export const Masa: React.FC<{ p?: V3; s?: V3; c?: string }> = ({ p, s = [0.3, 0.02, 0.45], c = "#efe0b0" }) => <mesh position={p} scale={s} castShadow><sphereGeometry args={[1, 28, 14]} /><meshStandardMaterial color={c} roughness={0.75} /></mesh>;
 // tamal envuelto: cápsula de masa dentro de la hoja doblada, con su colita
-const Tamal: React.FC<{ p?: V3; rot?: V3; s?: number; dorado?: number; abierto?: number }> = ({ p, rot, s = 1, dorado = 0, abierto = 0 }) => {
-  const hc = new THREE.Color("#d8c08a").lerp(new THREE.Color("#7a4a1c"), dorado);
+export const Tamal: React.FC<{ p?: V3; rot?: V3; s?: number; dorado?: number; abierto?: number }> = ({ p, rot, s = 1, dorado = 0, abierto = 0 }) => {
+  const hc = new THREE.Color("#d8c08a").lerp(new THREE.Color("#b07a34"), dorado);
   return <group position={p} rotation={rot} scale={s}>
     <mesh rotation={[0, 0, P2]} scale={[1, 1, 0.75]} castShadow><capsuleGeometry args={[0.16, 0.5, 8, 18]} /><meshPhysicalMaterial map={hojaTex(true)} color={hc} roughness={0.7} clearcoat={0.2 + 0.4 * dorado} /></mesh>
     <mesh position={[-0.5, 0.0, 0]} rotation={[0, 0, P2 + 0.2]} scale={[1, 1, 0.3]} castShadow><coneGeometry args={[0.12, 0.3, 12]} /><meshStandardMaterial map={hojaTex(true)} color={hc} roughness={0.8} /></mesh>
     {abierto > 0 && <mesh position={[0.05, 0.12 * abierto, 0.02]} rotation={[0, 0, P2]} scale={[1, 1, 0.75]}><capsuleGeometry args={[0.13, 0.42, 8, 16]} /><meshStandardMaterial color="#f2e2b0" roughness={0.7} /></mesh>}
   </group>; };
 const vapGeo = lathe([[0, 0], [0.8, 0], [0.84, 0.05], [0.86, 1.4], [0.9, 1.44]], 56);
-const Vaporera: React.FC<{ p?: V3; s?: number; corte?: number; agua?: number; t?: number; children?: React.ReactNode }> = ({ p, s = 1, corte = 0, agua = 0.25, t = 0, children }) => (
+export const Vaporera: React.FC<{ p?: V3; s?: number; corte?: number; agua?: number; t?: number; children?: React.ReactNode }> = ({ p, s = 1, corte = 0, agua = 0.25, t = 0, children }) => (
   <group position={p} scale={s}>
     <mesh geometry={vapGeo} castShadow receiveShadow><meshStandardMaterial color="#b8bcc4" metalness={0.85} roughness={0.32} side={THREE.DoubleSide} transparent={corte > 0} opacity={1 - 0.75 * corte} /></mesh>
     {[-1, 1].map((k) => <mesh key={k} position={[k * 0.9, 1.25, 0]} rotation={[0, k > 0 ? 0 : P, P2]} castShadow><torusGeometry args={[0.1, 0.025, 8, 16, P]} />{M.cromo()}</mesh>)}
@@ -43,12 +43,12 @@ const Vaporera: React.FC<{ p?: V3; s?: number; corte?: number; agua?: number; t?
     {agua > 0.01 && Array.from({ length: 12 }, (_, i) => { const k = (t * 1.4 + rn(i, 1)) % 1, a = rn(i, 2) * 6.28, r = rn(i, 3) * 0.7; return <mesh key={i} position={[Math.cos(a) * r, 0.03 + agua, Math.sin(a) * r]} scale={0.001 + 0.025 * Math.sin(k * P)}><sphereGeometry args={[1, 8, 6]} /><meshPhysicalMaterial color="#eef8fc" roughness={0} transparent opacity={0.6} /></mesh>; })}
     {children}
   </group>);
-const Batidor: React.FC<{ p: V3; rot?: V3; s?: number }> = ({ p, rot, s = 1 }) => <group position={p} rotation={rot} scale={s}>
+export const Batidor: React.FC<{ p: V3; rot?: V3; s?: number }> = ({ p, rot, s = 1 }) => <group position={p} rotation={rot} scale={s}>
   {[0, 1, 2, 3].map((i) => <mesh key={i} rotation={[0, (i * P) / 4, 0]} position={[0, -0.18, 0]} scale={[1, 1.6, 1]}><torusGeometry args={[0.1, 0.006, 6, 24]} />{M.cromo()}</mesh>)}
   <mesh position={[0, 0.2, 0]}><cylinderGeometry args={[0.025, 0.03, 0.4, 12]} />{M.madera("#a8784a")}</mesh></group>;
-const Tazon: React.FC<{ p?: V3; s?: number; c?: string; children?: React.ReactNode }> = ({ p, s = 1, c = "#e8dcc4", children }) => (
+export const Tazon: React.FC<{ p?: V3; s?: number; c?: string; children?: React.ReactNode }> = ({ p, s = 1, c = "#e8dcc4", children }) => (
   <group position={p} scale={s}><mesh geometry={lathe([[0, 0], [0.3, 0], [0.5, 0.2], [0.58, 0.4]], 44)} castShadow receiveShadow><meshPhysicalMaterial color={c} roughness={0.3} clearcoat={0.6} side={THREE.DoubleSide} /></mesh>{children}</group>);
-const Vaso: React.FC<{ p?: V3; s?: number; agua?: number; children?: React.ReactNode }> = ({ p, s = 1, agua = 0.7, children }) => (
+export const Vaso: React.FC<{ p?: V3; s?: number; agua?: number; children?: React.ReactNode }> = ({ p, s = 1, agua = 0.7, children }) => (
   <group position={p} scale={s}><mesh geometry={lathe([[0, 0], [0.22, 0], [0.26, 0.7]], 32)} castShadow>{M.vidrio()}</mesh>
     <mesh position={[0, agua * 0.35, 0]}><cylinderGeometry args={[0.215 + 0.04 * agua, 0.21, agua * 0.7, 32]} />{M.liquido("#cfe6ee", 0.35)}</mesh>{children}</group>);
 const Etiqueta: React.FC<{ id: string; tx: string[]; p: V3; rot?: V3; w?: number; hh?: number; size?: number; bg?: string; ink?: string }> = ({ id, tx, p, rot = [-P2 + 0.35, 0, 0], w = 1.2, hh = 0.32, size = 110, bg, ink }) =>
@@ -63,11 +63,9 @@ const HSacos: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" mesa={false}>{(tt
     <mesh position={[0, 0.96, 0]}><cylinderGeometry args={[0.5, 0.5, 0.04, 32]} /><meshStandardMaterial color={fino ? "#f4ecd8" : "#e6d4a0"} roughness={1} /></mesh>
     {!fino && Array.from({ length: 40 }, (_, i) => { const a = rn(i, 1) * 6.28, r = Math.sqrt(rn(i, 2)) * 0.45; return <mesh key={i} position={[Math.cos(a) * r, 0.99, Math.sin(a) * r]} scale={0.018 + 0.012 * rn(i, 3)}><dodecahedronGeometry args={[1, 0]} /><meshStandardMaterial color="#e0c888" roughness={1} flatShading /></mesh>; })}
   </group>;
-  return <Estudio t={tt} cam={[0, 1.7, 4.0]} look={[0, 0.6, 0]} orbit={0.14}>
+  return <Estudio t={tt} cam={[0.1 * Math.sin(tt * 0.4), 1.5, 3.4 - 0.06 * tt]} look={[0, 0.55, 0]} orbit={0.05}>
     {saco(-0.75, s1, false)}{saco(0.75, s2, true)}
     {Array.from({ length: 30 }, (_, i) => { const k = cl(puff * 1.2 - rn(i, 4) * 0.2); return <mesh key={i} position={[0.75 + (rn(i, 5) - 0.5) * 0.8 * (1 + k), 1.0 + k * 0.6 * rn(i, 6), (rn(i, 7) - 0.5) * 0.7]} scale={0.04 + 0.08 * k}><sphereGeometry args={[1, 8, 6]} /><meshBasicMaterial color="#fbf6ea" transparent opacity={0.35 * (1 - k) * puff} depthWrite={false} /></mesh>; })}
-    <Etiqueta id="sk1" tx={["martajada"]} p={[-0.75, 0.42, 0.66]} rot={[0, 0, 0]} w={0.8} hh={0.22} size={120} />
-    <Etiqueta id="sk2" tx={["harina"]} p={[0.75, 0.42, 0.66]} rot={[0, 0, 0]} w={0.8} hh={0.22} size={120} />
   </Estudio>;
 }}</Stage>;
 
@@ -85,8 +83,8 @@ const HBatido: C = ({ t, h }) => <Stage t={t} h={h} mode="split" mesa={false}>{(
 
 // ── 3 · FLOTA: la bolita de masa cae al vaso de agua: se hunde, duda… y sube a flotar (ya está)
 const HFlota: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>{(tt) => {
-  const drop = tt < 1.2 ? 1.8 - 1.8 * Math.pow(cl(tt / 1.2), 2) : 0, sink = eio(tt, 1.2, 2.0) * (1 - eio(tt, 2.6, 4.2)), y = tt < 1.2 ? 0.5 + drop : 0.5 - 0.38 * sink + 0.012 * Math.sin(tt * 3) * cl(tt - 4.2);
-  return <Estudio t={tt} cam={[0, 0.75, 2.1]} look={[0, 0.45, 0]} orbit={0.08} fov={30}>
+  const drop = tt < 1.2 ? 1.8 - 1.8 * Math.pow(cl(tt / 1.2), 2) : 0, sink = eio(tt, 1.2, 2.0) * (1 - eio(tt, 2.6, 4.2)), y = tt < 1.2 ? 0.5 + drop : 0.5 - 0.38 * sink + 0.025 * Math.sin(tt * 3) * cl(tt - 4.2);
+  return <Estudio t={tt} cam={[0.1 * Math.sin(tt * 0.5), 0.8, 2.0 - 0.04 * tt]} look={[0, 0.5, 0]} orbit={0.05} fov={30}>
     <Vaso s={1.3} agua={0.78}>
       <mesh position={[0, y, 0]} castShadow scale={[1, 0.92, 1]}><sphereGeometry args={[0.07, 24, 16]} /><meshStandardMaterial color="#f2e4b8" roughness={0.75} /></mesh>
       {Array.from({ length: 8 }, (_, i) => { const k = cl((tt - 1.2 - i * 0.08) * 1.5); return <mesh key={i} position={[(rn(i, 1) - 0.5) * 0.1, y + k * (0.5 - y + 0.05), (rn(i, 2) - 0.5) * 0.1]} scale={0.008 * (k > 0 && k < 1 ? 1 : 0)}><sphereGeometry args={[1, 8, 6]} /><meshPhysicalMaterial color="#ffffff" transparent opacity={0.7} roughness={0} /></mesh>; })}
@@ -98,7 +96,7 @@ const HFlota: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>{(tt
 // ── 4 · JARRAS: la balanza de dos platos: un kilo de masa de un lado, la manteca crece del otro hasta su cuarto (la aguja se asienta)
 const HJarras: C = ({ t, h }) => <Stage t={t} h={h} mode="wipe" mesa={false}>{(tt) => {
   const m = ent(tt, 0.6), g = eio(tt, 1.8, 4.0), tilt = lerp(-0.32, -0.32 + 0.24 * g, m) + 0.02 * Math.sin(tt * 4) * (1 - cl(tt - 4.2));
-  return <Estudio t={tt} cam={[0, 1.5, 3.7]} look={[0, 0.8, 0]} orbit={0.12}>
+  return <Estudio t={tt} cam={[0.1 * Math.sin(tt * 0.4), 1.4, 3.4 - 0.05 * tt]} look={[0, 0.65, 0]} orbit={0.06}>
     <mesh position={[0, 0.5, 0]} castShadow><cylinderGeometry args={[0.05, 0.12, 1.0, 16]} />{M.cromo("#b8962e")}</mesh>
     <mesh position={[0, 0.03, 0]} castShadow><cylinderGeometry args={[0.4, 0.45, 0.06, 32]} />{M.cromo("#b8962e")}</mesh>
     <group position={[0, 1.02, 0]} rotation={[0, 0, tilt]}>
@@ -106,19 +104,17 @@ const HJarras: C = ({ t, h }) => <Stage t={t} h={h} mode="wipe" mesa={false}>{(t
       {[-1, 1].map((sg) => <group key={sg} position={[sg * 1.05, 0, 0]} rotation={[0, 0, -tilt]}>
         <mesh position={[0, -0.25, 0]}><cylinderGeometry args={[0.006, 0.006, 0.5, 4]} /><meshStandardMaterial color="#888" /></mesh>
         <mesh position={[0, -0.5, 0]} castShadow><cylinderGeometry args={[0.42, 0.36, 0.05, 32]} />{M.cromo("#b8962e")}</mesh>
-        {sg < 0 ? <mesh position={[0, -0.37 + 0.13 * (1 - m) * 6, 0]} scale={[0.34, 0.2, 0.3]} castShadow><sphereGeometry args={[1, 28, 14]} /><meshStandardMaterial color="#efe0b0" roughness={0.75} /></mesh>
-          : <mesh position={[0, -0.47 + 0.07 * g, 0]} scale={[0.24 * g + 0.001, 0.12 * g + 0.001, 0.22 * g + 0.001]} castShadow><sphereGeometry args={[1, 28, 14, 0, 2 * P, 0, P2]} /><meshStandardMaterial color="#fbf8f0" roughness={0.85} /></mesh>}
+        {sg < 0 ? <mesh position={[0, -0.37, 0]} scale={[0.34 * (0.6 + 0.4 * m), 0.2 * (0.6 + 0.4 * m), 0.3 * (0.6 + 0.4 * m)]} castShadow><sphereGeometry args={[1, 28, 14]} /><meshStandardMaterial color="#efe0b0" roughness={0.75} /></mesh>
+          : <group>{[0, 1, 2, 3].map((j) => <RBox key={j} p={[(j % 2 - 0.5) * 0.3, -0.42 + 0.11 * Math.floor(j / 2) + fall(tt, 1.8 + j * 0.55, 1.0), 0]} s={[0.26, 0.1, 0.2]} r={0.02}><meshStandardMaterial color="#fbf6e6" roughness={0.6} /></RBox>)}</group>}
       </group>)}
     </group>
-    <Etiqueta id="j1" tx={["1 kilo"]} p={[-1.05, 0.15, 0.5]} rot={[-0.4, 0, 0]} w={0.7} hh={0.2} size={120} />
-    <Etiqueta id="j2" tx={["¼ manteca"]} p={[1.05, 0.15, 0.5]} rot={[-0.4, 0, 0]} w={0.9} hh={0.2} size={110} />
   </Estudio>;
 }}</Stage>;
 
 // ── 5 · TERMÓMETRO: el caldo de la olla cae a la masa: tibio (vapor apenas). La mano no se quema: el caldo hirviendo se queda en su olla
 const HTermometro: C = ({ t, h }) => <Stage t={t} h={h} mode="blinds" mesa={false}>{(tt) => {
   const pour = cl((tt - 1.4) * 3) * (1 - cl((tt - 4.4) * 3)), mix = eio(tt, 1.6, 5.0), tilt = cl((tt - 1.0) * 2) * (1 - cl((tt - 4.6) * 2));
-  return <Estudio t={tt} cam={[0.3, 1.7, 3.4]} look={[0, 0.55, 0]} orbit={0.12}>
+  return <Estudio t={tt} cam={[0.3, 1.9, 4.2 - 0.06 * tt]} look={[0, 0.75, 0]} orbit={0.06}>
     <Tazon p={[0.5, 0, 0]} s={1.3} c="#9a4f2c">
       <mesh position={[0, 0.2, 0]} scale={[0.55, 0.12 + 0.04 * mix, 0.55]}><sphereGeometry args={[1, 36, 16, 0, 2 * P, 0, P2]} /><meshStandardMaterial color={"#" + new THREE.Color("#e8d6a0").lerp(new THREE.Color("#d8b878"), mix * 0.6).getHexString()} roughness={0.75 - 0.3 * mix} /></mesh>
     </Tazon>
@@ -127,12 +123,12 @@ const HTermometro: C = ({ t, h }) => <Stage t={t} h={h} mode="blinds" mesa={fals
       <mesh position={[0.3, 0.3, 0]} rotation={[0, 0, P2]}><torusGeometry args={[0.1, 0.03, 8, 16, P]} /><meshStandardMaterial color="#8a4526" /></mesh>
     </group>
     {pour > 0.01 && <Chorro t={tt} a={[-0.62, 1.55, 0]} b={[0.4, 0.4, 0]} r={0.05 * pour} c="#d8a850" o={0.8} />}
-    <Vapor t={tt} p={[-0.9, 1.6, 0]} o={0.12} h={0.4} s={0.15} spread={0.2} n={5} />
+    <Vapor t={tt} p={[-0.9, 1.6, 0]} o={0.4} h={1.0} s={0.25} spread={0.3} n={12} /><Vapor t={tt} p={[0.5, 0.4, 0]} o={0.12 * mix} h={0.4} s={0.12} spread={0.3} n={4} />
     {/* termómetro de vidrio clavado en la masa: la columna se queda en lo tibio */}
     <group position={[0.85, 0.4, 0.1]} rotation={[0, 0, -0.3]}>
-      <mesh position={[0, 0.5, 0]}><cylinderGeometry args={[0.035, 0.035, 1.0, 16]} />{M.vidrio()}</mesh>
+      <mesh position={[0, 0.5, 0]}><cylinderGeometry args={[0.06, 0.06, 1.0, 16]} /><meshPhysicalMaterial color="#f4f8fa" roughness={0.05} transparent opacity={0.55} clearcoat={1} /></mesh>
       <mesh position={[0, 0.0, 0]}><sphereGeometry args={[0.05, 16, 12]} /><meshStandardMaterial color="#d84a2a" emissive="#d84a2a" emissiveIntensity={0.3} /></mesh>
-      <mesh position={[0, 0.02 + 0.22 * mix, 0]}><cylinderGeometry args={[0.014, 0.014, 0.04 + 0.44 * mix, 8]} /><meshStandardMaterial color="#d84a2a" emissive="#d84a2a" emissiveIntensity={0.3} /></mesh>
+      <mesh position={[0, 0.02 + 0.22 * mix, 0]}><cylinderGeometry args={[0.028, 0.028, 0.04 + 0.44 * mix, 8]} /><meshStandardMaterial color="#d84a2a" emissive="#d84a2a" emissiveIntensity={0.3} /></mesh>
     </group>
   </Estudio>;
 }}</Stage>;
@@ -171,7 +167,7 @@ const HSalada: C = ({ t, h }) => <Stage t={t} h={h} mode="ring" mesa={false}>{(t
 // ── 8 · REMOJO: las hojas secas y tiesas entran a la tina de agua caliente: se hunden, se suavizan y se abren
 const HRemojo: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>{(tt) => {
   const soft = eio(tt, 2.0, 5.5);
-  return <Estudio t={tt} cam={[0.2, 2.2, 2.8]} look={[0, 0.25, 0]} orbit={0.12}>
+  return <Estudio t={tt} cam={[0.2, 2.1, 2.9 - 0.06 * tt]} look={[0, 0.25, 0]} orbit={0.05}>
     <mesh geometry={lathe([[0, 0], [1.0, 0], [1.15, 0.45], [1.2, 0.5]], 56)} castShadow receiveShadow><meshStandardMaterial color="#9aa6b0" metalness={0.7} roughness={0.35} side={THREE.DoubleSide} /></mesh>
     <mesh position={[0, 0.2, 0]}><cylinderGeometry args={[1.1, 1.0, 0.38, 48]} />{M.liquido("#c8dce4", 0.55)}</mesh>
     {Array.from({ length: 6 }, (_, i) => { const a = 0.5 + i * 0.3, y = Math.max(0.18 + 0.02 * i, 0.4 + fall(tt, a, 1.6) - 0.22 * cl((tt - a - 0.6) * 2));
@@ -184,9 +180,9 @@ const HRemojo: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>{(t
 // ── 9 · LADOS: la hoja da la vuelta en el aire: el lado rugoso con vetas no; cae del lado liso y brillante, que es donde va la masa
 const HLados: C = ({ t, h }) => <Stage t={t} h={h} mode="split" mesa={false}>{(tt) => {
   const fl = eio(tt, 1.6, 2.8), up = Math.sin(fl * P) * 0.6;
-  return <Estudio t={tt} cam={[0, 1.8, 2.4]} look={[0, 0.2, 0]} orbit={0.1} fov={32}>
+  return <Estudio t={tt} cam={[0.2 * Math.sin(tt * 0.5), 1.7 - 0.04 * tt, 2.3 - 0.05 * tt]} look={[0, 0.2, 0]} orbit={0.05} fov={32}>
     <RBox p={[0, 0.04, 0]} s={[2.2, 0.08, 1.5]} r={0.04}>{M.madera("#a8784a")}</RBox>
-    <group position={[0, 0.12 + up + fall(tt, 0.2, 1.0) * (tt < 1.4 ? 1 : 0), 0]} rotation={[0, 0.25, P * (1 - fl)]}>
+    <group position={[0, 0.12 + up + fall(tt, 0.2, 1.0) * (tt < 1.4 ? 1 : 0), 0]} rotation={[0, 0.25 + 0.35 * cl(tt - 3.2) * Math.sin((tt - 3.2) * 0.8), P * (1 - fl)]}>
       <Hoja liso s={1.15} />
       <mesh geometry={hojaGeo} rotation={[-P2, 0, 0]} position={[0, -0.004, 0]} scale={1.0}><meshStandardMaterial map={hojaTex(true)} roughness={0.95} side={THREE.BackSide} /></mesh>
     </group>
@@ -225,7 +221,7 @@ const HDiana: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" mesa={false}>{(tt
 }}</Stage>;
 
 // ── 12 · RULETA (bloque de 5 errores): la vaporera abierta; con cada error sale UN tamal y se abre mostrando su falla (crudo, pesado, aguado…), y va al plato
-const ErrTamal: React.FC<{ i: number; k: number }> = ({ i, k }) => {
+export const ErrTamal: React.FC<{ i: number; k: number }> = ({ i, k }) => {
   const c = ["#e8d8a8", "#d8c890", "#efe0b0", "#efe0b0", "#e0cc98"][i];
   return <group>
     <Hoja p={[0, 0, 0]} rot={[0, P2, 0]} s={0.9} liso />
@@ -285,7 +281,7 @@ const HAmarre: C = ({ t, h }) => <Stage t={t} h={h} mode="blinds" mesa={false}>{
 // ── 15 · CORTE: la vaporera en corte: el agua abajo hierve y el nivel NUNCA llega a la rejilla; arriba los tamales parados en seco
 const HCorte: C = ({ t, h }) => <Stage t={t} h={h} mode="split" mesa={false}>{(tt) => {
   const cut = eio(tt, 0.6, 1.6), gap = cl((tt - 2.4) * 2) * (1 - cl((tt - 5.5) * 2));
-  return <Estudio t={tt} cam={[0, 1.4, 3.6]} look={[0, 0.8, 0]} orbit={0.1}>
+  return <Estudio t={tt} cam={[0.15 * Math.sin(tt * 0.4), 1.3, 3.3 - 0.05 * tt]} look={[0, 0.7, 0]} orbit={0.05}>
     <Llama p={[0, 0.0, 0]} f={0.6} t={tt} r={0.5} />
     <Vaporera p={[0, 0.05, 0]} s={1.05} corte={cut} agua={0.28} t={tt}>
       {Array.from({ length: 7 }, (_, i) => <Tamal key={i} p={[(i - 3) * 0.2, 0.88, 0]} rot={[0, 0, P2 + (rn(i, 1) - 0.5) * 0.15]} s={0.8} />)}
@@ -298,25 +294,26 @@ const HCorte: C = ({ t, h }) => <Stage t={t} h={h} mode="split" mesa={false}>{(t
 
 // ── 16 · FLOR: vista de arriba de la vaporera: los tamales se paran de a uno en espiral, como pétalos, dejando aire entre ellos
 const HFlor: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" mesa={false}>{(tt) => {
-  const N = 14;
-  return <Estudio t={tt} cam={[0, 3.4, 1.2]} look={[0, 0.6, 0]} orbit={0.12} fov={32}>
+  const N = 8;
+  return <Estudio t={tt} cam={[0.3 * Math.sin(tt * 0.3), 4.0 - 0.06 * tt, 1.6]} look={[0, 0.7, 0]} orbit={0.04} fov={34}>
     <Vaporera s={1.15} agua={0.2} t={tt}>
-      {Array.from({ length: N }, (_, i) => { const a = 0.5 + i * 0.32, k = ent(tt, a), r = i < 4 ? 0.18 : i < 9 ? 0.42 : 0.64, ang = (i < 4 ? i / 4 : i < 9 ? (i - 4) / 5 : (i - 9) / 5) * 2 * P + (i < 4 ? 0 : 0.4);
+      {Array.from({ length: N }, (_, i) => { const a = 0.5 + i * 0.45, k = ent(tt, a), r = 0.48, ang = (i / 8) * 2 * P;
         if (tt < a - 0.1) return null;
-        return <group key={i} position={[Math.cos(ang) * r, 0.75 + (1 - k) * 0.8, Math.sin(ang) * r]} rotation={[0, -ang, 0]}><Tamal rot={[0, 0, P2 - 0.25 * (r > 0.3 ? 1 : 0)]} s={0.75} /></group>; })}
+        return <group key={i} position={[Math.cos(ang) * r, 0.75 + (1 - k) * 0.8, Math.sin(ang) * r]} rotation={[0, -ang, 0]}><Tamal rot={[0, 0, P2 - 0.35]} s={0.62} /><Vapor t={tt + i} p={[0.25, 0.1, 0.22]} o={0.25 * k} h={0.8} s={0.12} spread={0.05} n={4} /></group>; })}
+      <pointLight position={[0, 1.0, 0]} intensity={1.5 * cl((tt - 4) * 0.5)} distance={1.5} color="#ffe0a0" />
     </Vaporera>
   </Estudio>;
 }}</Stage>;
 
 // ── 17 · CAPAS (tapado): sobre los tamales caen hojas, luego el trapo de cocina que se asienta como cobija, y al final la tapa
-const trapoTex = () => ctex("trapo", 256, 256, (g) => { g.fillStyle = "#f2ece0"; g.fillRect(0, 0, 256, 256); g.fillStyle = "rgba(192,57,43,.75)"; for (let i = 0; i < 256; i += 64) { g.fillRect(i, 0, 18, 256); g.fillRect(0, i, 256, 18); } });
+export const trapoTex = () => ctex("trapo", 256, 256, (g) => { g.fillStyle = "#f2ece0"; g.fillRect(0, 0, 256, 256); g.fillStyle = "rgba(192,57,43,.75)"; for (let i = 0; i < 256; i += 64) { g.fillRect(i, 0, 18, 256); g.fillRect(0, i, 256, 18); } });
 const trapoGeo = (() => { const g = new THREE.PlaneGeometry(2.0, 2.0, 24, 24); g.rotateX(-P2); return g; })();
 const trapoG = trapoGeo.clone();
 const HCapasD: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>{(tt) => {
   const tr = eio(tt, 2.4, 3.6), tapa = eio(tt, 4.2, 5.0);
   const g = trapoG;
   { const p = g.attributes.position, b = trapoGeo.attributes.position; for (let i = 0; i < p.count; i++) { const x = b.getX(i), z = b.getZ(i), r = Math.hypot(x, z), dome = Math.max(0, 0.95 - r) * 0.25; p.setY(i, lerp(0.9, dome - Math.max(0, r - 0.92) * 0.9, tr) + 0.02 * Math.sin(x * 9 + tt * 2) * (1 - tr)); } p.needsUpdate = true; g.computeVertexNormals(); }
-  return <Estudio t={tt} cam={[0.3, 2.4, 3.2]} look={[0, 0.9, 0]} orbit={0.12}>
+  return <Estudio t={tt} cam={[0.3, 2.6, 3.8 - 0.06 * tt]} look={[0, 0.9, 0]} orbit={0.05}>
     <Vaporera s={1.0} agua={0.2} t={tt}>
       {Array.from({ length: 9 }, (_, i) => <Tamal key={i} p={[(i % 3 - 1) * 0.42, 0.8, (Math.floor(i / 3) - 1) * 0.42]} rot={[0, 0, P2 - 0.15]} s={0.7} />)}
       {Array.from({ length: 5 }, (_, i) => <Hoja key={"h" + i} p={[(rn(i, 1) - 0.5) * 0.4, 1.12 + 0.02 * i + fall(tt, 0.5 + i * 0.3, 1.5), (rn(i, 2) - 0.5) * 0.4]} rot={[0, rn(i, 3) * 6, 0]} s={1.0} liso={false} />)}
@@ -331,7 +328,7 @@ const HCapasD: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>{(t
 // ── 18 · TIMER: el reloj de cocina de cuerda junto a la vaporera tapada: la perilla da hora y media y nadie toca la tapa
 const HTimer: C = ({ t, h }) => <Stage t={t} h={h} mode="wipe" mesa={false}>{(tt) => {
   const wind = eio(tt, 0.6, 1.6), run = cl((tt - 1.8) / 4.5), ang = -wind * 1.5 * P + run * 1.5 * P, sh = Math.sin(tt * 30) * 0.008 * cl((tt - 1.8) * 4);
-  return <Estudio t={tt} cam={[0.5, 1.4, 3.2]} look={[0, 0.7, 0]} orbit={0.12}>
+  return <Estudio t={tt} cam={[0.45, 1.6, 3.9 - 0.05 * tt]} look={[0.15, 0.6, 0]} orbit={0.05}>
     <Vaporera p={[-0.5, 0, -0.4]} s={0.85} agua={0.2} t={tt}>
       <mesh position={[0, 1.46, 0]} castShadow><cylinderGeometry args={[0.88, 0.9, 0.05, 48]} /><meshStandardMaterial color="#b8bcc4" metalness={0.85} roughness={0.3} /></mesh>
     </Vaporera>
@@ -350,7 +347,7 @@ const HTimer: C = ({ t, h }) => <Stage t={t} h={h} mode="wipe" mesa={false}>{(tt
 // ── 19 · DESPEGA: la prueba: se abre un tamal y la hoja se desprende sola de la masa, limpia, sin que se pegue nada
 const HDespega: C = ({ t, h }) => <Stage t={t} h={h} mode="diag" mesa={false}>{(tt) => {
   const op = eio(tt, 1.2, 3.0);
-  return <Estudio t={tt} cam={[0.3, 1.7, 2.0]} look={[0, 0.2, 0]} orbit={0.1} fov={32}>
+  return <Estudio t={tt} cam={[0.3 + 0.15 * Math.sin(tt * 0.5), 1.6 - 0.04 * tt, 2.0 - 0.04 * tt]} look={[0, 0.2, 0]} orbit={0.05} fov={32}>
     <Plato p={[0, 0.02, 0]} s={1.6} c="#efe6d2" />
     <mesh position={[0, 0.18, 0]} rotation={[0, 0.3, P2]} scale={[1, 1, 0.78]} castShadow><capsuleGeometry args={[0.14, 0.5, 8, 18]} /><meshStandardMaterial color="#f4e6b8" roughness={0.65} /></mesh>
     {[-1, 1].map((sg) => <group key={sg} position={[0, 0.16, 0]} rotation={[0, 0.3, 0]}>
@@ -363,7 +360,7 @@ const HDespega: C = ({ t, h }) => <Stage t={t} h={h} mode="diag" mesa={false}>{(
 // ── 20 · REPOSO: los tamales en la canasta bajo el trapo; el vapor se calma y la masa se asienta (el reloj de arena corre)
 const HReposo: C = ({ t, h }) => <Stage t={t} h={h} mode="ring" mesa={false}>{(tt) => {
   const s = cl((tt - 0.8) / 5.0);
-  return <Estudio t={tt} cam={[0.3, 1.6, 3.2]} look={[0, 0.4, 0]} orbit={0.12}>
+  return <Estudio t={tt} cam={[0.3, 1.7, 3.6 - 0.05 * tt]} look={[0.3, 0.4, 0]} orbit={0.05}>
     <mesh geometry={lathe([[0, 0], [0.7, 0], [0.9, 0.35], [0.95, 0.4]], 40)} castShadow receiveShadow><meshStandardMaterial map={ctex("cesta", 256, 256, (g) => { g.fillStyle = "#b8864a"; g.fillRect(0, 0, 256, 256); for (let i = 0; i < 256; i += 16) { g.fillStyle = "rgba(90,50,20,.45)"; g.fillRect(0, i, 256, 6); g.fillRect(i, 0, 4, 256); } })} roughness={0.9} side={THREE.DoubleSide} /></mesh>
     {Array.from({ length: 6 }, (_, i) => <Tamal key={i} p={[(i % 3 - 1) * 0.36, 0.28 + Math.floor(i / 3) * 0.12, (Math.floor(i / 3) - 0.5) * 0.3]} rot={[0, 0.2, 0]} s={0.75} />)}
     <mesh position={[0, 0.5, 0]} rotation={[-P2, 0, 0.3]} scale={[1, 1, 1]}><planeGeometry args={[1.5, 1.2, 8, 8]} /><meshStandardMaterial map={trapoTex()} roughness={0.95} side={THREE.DoubleSide} transparent opacity={0.0001 + 0.999 * cl((tt - 0.3) * 3)} /></mesh>
@@ -425,7 +422,7 @@ const HCongela: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" mesa={false}>{(
 // ── 24 · COMAL: el tamal congelado se recalienta en el comal, con su hoja: se voltea y la hoja queda dorada y tostadita
 const HComalD: C = ({ t, h }) => <Stage t={t} h={h} mode="wipe" mesa={false}>{(tt) => {
   const fl = eio(tt, 2.8, 3.5), d = eio(tt, 0.8, 5.0);
-  return <Estudio t={tt} cam={[0.3, 1.4, 2.6]} look={[0, 0.2, 0]} orbit={0.12}>
+  return <Estudio t={tt} cam={[0.3, 1.2, 2.3 - 0.04 * tt]} look={[0, 0.2, 0]} orbit={0.05}>
     <mesh geometry={lathe([[0, 0], [1.0, 0.0], [1.08, 0.04], [1.1, 0.06]], 64)} position={[0, 0.02, 0]} castShadow receiveShadow><meshStandardMaterial color="#1a1816" roughness={0.55} metalness={0.5} side={THREE.DoubleSide} /></mesh>
     <Llama p={[0, -0.2, 0]} f={0.35} t={tt} r={0.55} />
     {[-1, 1].map((sg, i) => <Tamal key={i} p={[sg * 0.3, 0.2 + 0.35 * Math.sin(fl * P), sg * 0.1]} rot={[fl * P, 0.3 * sg, 0]} s={1.0} dorado={d * (0.75 + 0.25 * i)} />)}
@@ -477,11 +474,11 @@ const wrap = (s: string, n = 22) => { const out: string[] = []; let cur = ""; fo
 // ── 27 · FRIJOLES (cuántos salen): de la bola de un kilo de masa van saliendo bolitas que caen en fila sobre hojas: se cuentan con los tamales que se forman
 const HFrijolesD: C = ({ t, h }) => <Stage t={t} h={h} mode="split" mesa={false}>{(tt) => {
   const N = 20, sh = 1 - 0.85 * cl((tt - 0.6) / 4.8);
-  return <Estudio t={tt} cam={[0, 2.4, 3.2]} look={[0, 0.2, 0.2]} orbit={0.1}>
+  return <Estudio t={tt} cam={[0, 2.9, 3.9 - 0.05 * tt]} look={[0.2, 0.1, 0.1]} orbit={0.05}>
     <RBox p={[0, 0.04, 0]} s={[4.0, 0.08, 2.2]} r={0.04}>{M.madera("#a8784a")}</RBox>
     <mesh position={[-1.4, 0.1 + 0.3 * sh, -0.6]} scale={[0.5 * Math.cbrt(sh), 0.36 * Math.cbrt(sh), 0.5 * Math.cbrt(sh)]} castShadow><sphereGeometry args={[1, 32, 18]} /><meshStandardMaterial color="#efe0b0" roughness={0.75} /></mesh>
     {Array.from({ length: N }, (_, i) => { const a = 0.6 + i * 0.24; if (tt < a) return null; const k = eio(tt, a, a + 0.5), x = -0.6 + (i % 5) * 0.55, z = -0.6 + Math.floor(i / 5) * 0.45;
-      return <group key={i} position={arco([-1.4, 0.4, -0.6], [x, 0.12, z], k, 0.5)}>{k < 1 ? <mesh scale={0.09}><sphereGeometry args={[1, 16, 12]} /><meshStandardMaterial color="#efe0b0" roughness={0.75} /></mesh> : <Tamal rot={[0, 0.2, 0]} s={0.5} />}</group>; })}
+      return <group key={i} position={arco([-1.4, 0.4, -0.6], [x, 0.12, z], k, 0.5)}>{k >= 1 && <Hoja p={[0, -0.03, 0]} rot={[0, P2, 0]} s={0.42} liso />}{k < 1 ? <mesh scale={0.09}><sphereGeometry args={[1, 16, 12]} /><meshStandardMaterial color="#efe0b0" roughness={0.75} /></mesh> : <Tamal rot={[0, 0.2, 0]} s={0.5} />}</group>; })}
   </Estudio>;
 }}</Stage>;
 
@@ -489,14 +486,13 @@ const HFrijolesD: C = ({ t, h }) => <Stage t={t} h={h} mode="split" mesa={false}
 const HMonedas: C = ({ t, h }) => <Stage t={t} h={h} mode="diag" mesa={false}>{(tt) => {
   const A = 20, B = 6, rc = fall(tt, 4.6, 1.2);
   const pila = (x: number, n: number, a0: number) => Array.from({ length: n }, (_, i) => { const a = a0 + i * 0.13; if (tt < a - 0.2) return null;
-    return <mesh key={i} position={[x + (rn(i, 1) - 0.5) * 0.02, 0.1 + i * 0.045 + fall(tt, a, 0.9), 0.3]} rotation={[0, rn(i, 2) * 6, (rn(i, 3) - 0.5) * 0.04]} castShadow><cylinderGeometry args={[0.16, 0.16, 0.04, 28]} />{M.cromo(i % 3 ? "#c8a040" : "#b8b8c0")}</mesh>; });
-  return <Estudio t={tt} cam={[0, 1.4, 3.6]} look={[0, 0.6, 0]} orbit={0.12}>
+    return <mesh key={i} position={[x + (rn(i, 1) - 0.5) * 0.02, 0.1 + i * 0.045 + fall(tt, a, 0.9), 0.3]} rotation={[0, rn(i, 2) * 6, (rn(i, 3) - 0.5) * 0.04 + (n > 10 ? 0.004 * i * Math.sin(tt * 5) * cl((tt - 3.4) * 2) : 0)]} castShadow><cylinderGeometry args={[0.16, 0.16, 0.04, 28]} />{M.cromo(i % 3 ? "#c8a040" : "#b8b8c0")}</mesh>; });
+  return <Estudio t={tt} cam={[0.1 * Math.sin(tt * 0.4), 1.5, 3.3 - 0.06 * tt]} look={[0, 0.55, 0.2]} orbit={0.06}>
     <Tamal p={[-0.75, 0.15, -0.4]} rot={[0, 0.3, 0]} s={1.0} /><Tamal p={[0.75, 0.15, -0.4]} rot={[0, -0.3, 0]} s={1.0} />
     <RBox p={[-0.75, 0.08, 0.3]} s={[0.5, 0.02, 0.5]} r={0.01}>{M.madera("#8a5a34")}</RBox><RBox p={[0.75, 0.08, 0.3]} s={[0.5, 0.02, 0.5]} r={0.01}>{M.madera("#8a5a34")}</RBox>
     {pila(-0.75, A, 0.6)}{pila(0.75, B, 0.6)}
-    <Etiqueta id="mn1" tx={["puesto"]} p={[-0.75, 0.1, 0.72]} w={0.7} hh={0.18} size={110} />
-    <Etiqueta id="mn2" tx={["en casa"]} p={[0.75, 0.1, 0.72]} w={0.7} hh={0.18} size={110} />
-    <mesh position={[1.6, 0.1 + rc, 0.1]} rotation={[-P2 + 0.2, 0, 0.25]} visible={tt > 4.4}><planeGeometry args={[0.6, 0.9]} /><meshStandardMaterial map={papel("mrc", ["$20 → $6", "por tamal"], { w: 512, h: 768, size: 96, bg: "#fbf8ef" })} roughness={0.9} side={THREE.DoubleSide} /></mesh>
+    {[[-0.75, 1.4], [0.75, 0.35]].map(([x, L], j) => { const u = eio(tt, 4.4, 5.6); return <mesh key={j} position={[x, 0.025, 0.55 + L * 0.5 * u / 2]} rotation={[-P2, 0, 0]} visible={u > 0.01}><planeGeometry args={[0.36, Math.max(0.01, L * 0.5 * u)]} /><meshStandardMaterial color="#fbf8ef" roughness={0.9} side={THREE.DoubleSide} /></mesh>; })}
+    {void rc}
   </Estudio>;
 }}</Stage>;
 
@@ -510,7 +506,6 @@ const HVuelo: C = ({ t, h }) => <Stage t={t} h={h} mode="wipe" mesa={false}>{(tt
       return <group key={i} position={[px(i), 0.14 + 0.12 * k, 0]}>
         <Tamal rot={[0, 0.3, 0]} s={0.7} dorado={i < cur ? 0.25 : 0} />
         {on && <pointLight position={[0, 0.8, 0.5]} intensity={2.5 * k} distance={1.8} color="#ffd9a8" />}
-        {i <= cur && <Etiqueta id={"vu" + i} tx={[s.tx]} p={[0, -0.1, 0.36]} w={0.66} hh={0.16} size={86} bg="#f7f0de" />}
       </group>; })}
   </Estudio>;
 }}</Stage>;

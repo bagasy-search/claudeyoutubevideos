@@ -40,7 +40,7 @@ const adobeTex = () => ctex("adobe", 512, 512, (g) => {
   const gr = g.createRadialGradient(256, 200, 40, 256, 256, 420); gr.addColorStop(0, "#e8c79e"); gr.addColorStop(1, "#a9825c"); g.fillStyle = gr; g.fillRect(0, 0, 512, 512);
   for (let i = 0; i < 1800; i++) { const v = rn(i, 9); g.fillStyle = `rgba(${110 + v * 70},${80 + v * 50},${50 + v * 30},${0.06 + 0.06 * rn(i, 4)})`; g.fillRect(rn(i, 2) * 512, rn(i, 3) * 512, 2 + 5 * rn(i, 5), 2 + 4 * rn(i, 6)); }
 });
-const humoTex = () => ctex("humo", 64, 64, (g) => {
+export const humoTex = () => ctex("humo", 64, 64, (g) => {
   const gr = g.createRadialGradient(32, 32, 0, 32, 32, 30); gr.addColorStop(0, "rgba(255,255,255,1)"); gr.addColorStop(0.5, "rgba(255,255,255,.45)"); gr.addColorStop(1, "rgba(255,255,255,0)");
   g.fillStyle = gr; g.fillRect(0, 0, 64, 64);
 });

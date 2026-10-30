@@ -538,3 +538,6 @@ export const MAP: Record<string, C> = { sacos: HSacos, batido: HBatido, flota: H
 
 import { MAP3 } from "./heroes3d";
 Object.assign(MAP, MAP3);
+
+import { MAPD2 } from "./heroes3d_d2";
+Object.assign(MAP, MAPD2);
