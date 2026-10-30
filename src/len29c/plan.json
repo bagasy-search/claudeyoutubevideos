@@ -1,0 +1,497 @@
+{
+"segs": [
+[
+3.79,
+8.02,
+"shot",
+"f01_ankles"
+],
+[
+8.02,
+16.02,
+"shot",
+"v01"
+],
+[
+22.02,
+27.02,
+"shot",
+"f03_plunger_shower"
+],
+[
+46.96,
+51.73,
+"shot",
+"f05_bottles"
+],
+[
+58.02,
+66.02,
+"shot",
+"v02"
+],
+[
+109.4,
+115.4,
+"shot",
+"f06_grate"
+],
+[
+120.81,
+126.81,
+"shot",
+"f07_cross"
+],
+[
+153.46,
+159.46,
+"shot",
+"f09_soap_shelf"
+],
+[
+174.08,
+180.08,
+"shot",
+"f08_hair_rope"
+],
+[
+186.64,
+192.64,
+"shot",
+"f10_apartment"
+],
+[
+207.64,
+210.36,
+"shot",
+"f12_cat_size"
+],
+[
+210.36,
+215.61,
+"shot",
+"f11_sisters"
+],
+[
+238.03,
+244.03,
+"shot",
+"f13_slug_down"
+],
+[
+255.35,
+261.35,
+"shot",
+"f14_trap_packed"
+],
+[
+295.3,
+298.92,
+"shot",
+"f15_two_weeks"
+],
+[
+323.17,
+329.17,
+"shot",
+"f16_screw_cup"
+],
+[
+339.51,
+345.51,
+"shot",
+"f17_butter_knife"
+],
+[
+362.25,
+365.12,
+"shot",
+"f18_two_pliers"
+],
+[
+386.87,
+392.87,
+"shot",
+"f19_chipped"
+],
+[
+393.21,
+397.13,
+"shot",
+"f20_tape_tip"
+],
+[
+400.57,
+406.57,
+"shot",
+"f21_gloves"
+],
+[
+418.52,
+424.52,
+"shot",
+"f22_drain_strip"
+],
+[
+435.35,
+438.51,
+"shot",
+"f23_strip_down"
+],
+[
+438.51,
+446.51,
+"shot",
+"v04"
+],
+[
+454.87,
+460.79,
+"shot",
+"v05"
+],
+[
+460.79,
+465.35,
+"shot",
+"f25_bag_ready"
+],
+[
+494.77,
+500.69,
+"shot",
+"f26_supply_house"
+],
+[
+514.83,
+517.2,
+"shot",
+"f27_box_of_twenty"
+],
+[
+528.75,
+533.32,
+"shot",
+"v06"
+],
+[
+538.09,
+544.09,
+"shot",
+"f29_tiny_hook"
+],
+[
+548.29,
+552.07,
+"shot",
+"f30_hook_fishing"
+],
+[
+599.93,
+604.85,
+"shot",
+"f31_lift_turn"
+],
+[
+615.29,
+621.15,
+"shot",
+"f32_toe_touch"
+],
+[
+646.47,
+652.47,
+"shot",
+"f33_trip_lever"
+],
+[
+659.64,
+667.64,
+"shot",
+"v07"
+],
+[
+676.31,
+682.31,
+"shot",
+"f34_plate_out"
+],
+[
+692.47,
+698.47,
+"shot",
+"f35_toothbrush_rod"
+],
+[
+712.49,
+718.49,
+"shot",
+"f36_closet_panel"
+],
+[
+740.08,
+746.08,
+"shot",
+"f37_panel_open"
+],
+[
+760.35,
+766.35,
+"shot",
+"f39_drum_trap"
+],
+[
+790.97,
+796.97,
+"shot",
+"f38_drum_lid"
+],
+[
+810.71,
+812.4,
+"shot",
+"f40_avondale_lady"
+],
+[
+835.69,
+841.69,
+"shot",
+"f41_soldier"
+],
+[
+852.89,
+858.89,
+"shot",
+"f42_bar_soap"
+],
+[
+931.19,
+937.19,
+"shot",
+"f43_hairbrush"
+],
+[
+962.11,
+968.11,
+"shot",
+"f44_acrylic"
+],
+[
+1020.34,
+1022.92,
+"shot",
+"f45_stan_gloves"
+],
+[
+1045.77,
+1051.77,
+"shot",
+"f46_stan_bag"
+],
+[
+1098.1,
+1106.1,
+"shot",
+"v08"
+],
+[
+1113.56,
+1119.56,
+"shot",
+"f51_toilet_gurgle"
+],
+[
+1122.7,
+1125.82,
+"shot",
+"f48_catcher_silicone"
+],
+[
+1130.52,
+1136.52,
+"shot",
+"f49_catcher_steel"
+],
+[
+1155.08,
+1158.14,
+"shot",
+"f50_tissue_pick"
+],
+[
+1178.72,
+1184.48,
+"shot",
+"v09"
+],
+[
+1184.48,
+1189.88,
+"shot",
+"f04_lenny_bath"
+],
+[
+1245.71,
+1249.54,
+"shot",
+"v10"
+],
+[
+1249.54,
+1253.32,
+"shot",
+"f52_lenny_end"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 99.68,
+"out": 104.68
+},
+{
+"k": "step",
+"n": 1,
+"name": "WHAT'S DOWN THERE",
+"at": 102.72,
+"out": 105.72
+},
+{
+"k": "step",
+"n": 2,
+"name": "WHY NOT A PLUNGER",
+"at": 234.34,
+"out": 237.34
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE COVER OFF",
+"at": 306.32,
+"out": 309.32
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE DRAIN STRIP",
+"at": 407.03,
+"out": 410.03
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE WIRE HOOK",
+"at": 517.57,
+"out": 520.57
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE BATHTUB",
+"at": 585.33,
+"out": 588.33
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE $2 CATCHER",
+"at": 1118.98,
+"out": 1121.98
+},
+{
+"k": "deal",
+"at": 991.06,
+"out": 992.06
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Plunging a shower",
+"at": 994.5,
+"out": 996.7
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Boiling water, acrylic",
+"at": 997.92,
+"out": 1000.12
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Chemicals in enamel",
+"at": 1002.02,
+"out": 1004.22
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Prying with a big screwdriver",
+"at": 1004.74,
+"out": 1006.94
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Pouring instead of pulling",
+"at": 1008.88,
+"out": 1013.38
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1070.08
+},
+{
+"at": 1076.42
+},
+{
+"at": 1079.86
+},
+{
+"at": 1087.96
+},
+{
+"at": 1093.06
+},
+{
+"at": 1098.1
+}
+],
+"at": 1066.86,
+"out": 1100.1
+},
+{
+"k": "ask",
+"at": 1184.48,
+"out": 1192.48
+}
+],
+"end": 1253.32,
+"txt": {
+"recapTitle": "OUT, NOT DOWN",
+"recap": [
+"Gloves and a bag",
+"Cover off, gently",
+"Strip: 4 pulls",
+"Tiny wire hook",
+"Behind the plate",
+"Hot tap 3 min"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"Bathtub or walk-in?",
+"When did you last look?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+30.0,
+38.0
+]
+}
+}

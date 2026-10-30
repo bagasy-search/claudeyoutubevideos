@@ -1,0 +1,152 @@
+[
+{
+"k": "sixinch",
+"at": 39.62,
+"out": 46.12
+},
+{
+"k": "coffeecup",
+"at": 71.04,
+"out": 78.04
+},
+{
+"k": "layers",
+"at": 105.38,
+"out": 113.38
+},
+{
+"k": "weave",
+"at": 140.24,
+"out": 147.74
+},
+{
+"k": "ropegrow",
+"at": 171.56,
+"out": 178.56
+},
+{
+"k": "catsize",
+"at": 205.74,
+"out": 212.24
+},
+{
+"k": "piston",
+"at": 242.54,
+"out": 249.54
+},
+{
+"k": "handreach",
+"at": 270.7,
+"out": 277.7
+},
+{
+"k": "covers3",
+"at": 308.74,
+"out": 316.74
+},
+{
+"k": "xpliers",
+"at": 370.51,
+"out": 377.01
+},
+{
+"k": "fishbone",
+"at": 422.63,
+"out": 429.63
+},
+{
+"k": "twistpull",
+"at": 439.83,
+"out": 446.83
+},
+{
+"k": "fourpulls",
+"at": 474.05,
+"out": 481.05
+},
+{
+"k": "twentystrips",
+"at": 510.33,
+"out": 516.83
+},
+{
+"k": "hookgauge",
+"at": 561.07,
+"out": 567.57
+},
+{
+"k": "nodissolve",
+"at": 574.45,
+"out": 581.45
+},
+{
+"k": "stoppers3",
+"at": 594.89,
+"out": 602.89
+},
+{
+"k": "behindplate",
+"at": 647.05,
+"out": 655.05
+},
+{
+"k": "overflowroute",
+"at": 696.99,
+"out": 703.49
+},
+{
+"k": "secretdoor",
+"at": 726.13,
+"out": 733.13
+},
+{
+"k": "drumcan",
+"at": 775.99,
+"out": 783.49
+},
+{
+"k": "underthemat",
+"at": 821.83,
+"out": 828.33
+},
+{
+"k": "hardwater",
+"at": 853.01,
+"out": 860.51
+},
+{
+"k": "hairyear",
+"at": 915.19,
+"out": 923.19
+},
+{
+"k": "acrylicheat",
+"at": 962.46,
+"out": 968.96
+},
+{
+"k": "showbag",
+"at": 1060.26,
+"out": 1067.26
+},
+{
+"k": "routine",
+"at": 1079.66,
+"out": 1087.66
+},
+{
+"k": "catchersieve",
+"at": 1130.84,
+"out": 1137.84
+},
+{
+"k": "fivesec",
+"at": 1162.88,
+"out": 1169.88
+},
+{
+"k": "outnotdown",
+"at": 1200.1,
+"out": 1207.1
+}
+]
