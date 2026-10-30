@@ -24,7 +24,7 @@ export const F: Record<string, { p: number[]; l: number[]; fov: number }> = {
   thermo: { p: [2.2, 1.6, -1.2], l: [2.4, 1.6, -3], fov: 44 },
   clock: { p: [-0.5, 2.2, -1.4], l: [-0.6, 2.4, -3], fov: 40 },
   floor: { p: [1.2, 0.5, -0.2], l: [0.6, 0.05, -1.3], fov: 44 },
-  jug: { p: [0.4, 1.3, -1.6], l: [-0.15, 1.2, -2.9], fov: 42 },
+  jug: { p: [-0.6, 1.4, -1.0], l: [-0.15, 1.2, -2.9], fov: 42 }, // de costado: el vuelo desde la estufa ya no atraviesa el serpentín
   sidedoor: { p: [2.6, 1.5, 1.6], l: [5.0, 1.0, 0.9], fov: 50 },
   panel: { p: [1.8, 2.6, 0.6], l: [3.1, 3.3, -2.1], fov: 48 },
   ctrl: { p: [3.9, 1.2, -0.6], l: [4.88, 1.0, -1.2], fov: 40 },
