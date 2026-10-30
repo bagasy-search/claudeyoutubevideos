@@ -71,7 +71,7 @@ const Piece: React.FC<{ t: number; o: Ov }> = ({ t, o }) => {
 };
 
 export const Body: React.FC = () => {
-  const t = useCurrentFrame() / 30;
+  const f0 = useCurrentFrame(); const t = (f0 === 1646 ? 1645.5 : f0) / 30;  // 30-oct: el farm dibuja una franja en el cuadro 1646 (en local no)
   const fade = e(t, END - 1.4, END - 0.1);
   return <AbsoluteFill style={{ background: "#000" }}>
     {/* cámara a mano virtual (balanceo lento, no temblor) sobre todo lo que se filma */}
