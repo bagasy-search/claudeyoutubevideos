@@ -1,0 +1,653 @@
+{
+"segs": [
+[
+3.72,
+10.2,
+"shot",
+"v01"
+],
+[
+10.2,
+14.16,
+"shot",
+"f02_gateshop"
+],
+[
+14.16,
+16.21,
+"shot",
+"f03_shopcounter"
+],
+[
+26.12,
+32.62,
+"shot",
+"f04_terminalwalk"
+],
+[
+54.94,
+60.32,
+"shot",
+"f05_churchhall"
+],
+[
+60.32,
+66.82,
+"shot",
+"f06_curb"
+],
+[
+104.5,
+108.74,
+"shot",
+"f07_garagesign"
+],
+[
+108.74,
+115.24,
+"shot",
+"f08_paymachine"
+],
+[
+119.7,
+122.22,
+"shot",
+"f09_economylot"
+],
+[
+122.22,
+127.5,
+"shot",
+"f10_shuttlestop"
+],
+[
+127.5,
+130.74,
+"shot",
+"f11_privatelot"
+],
+[
+142.3,
+148.8,
+"shot",
+"f12_laptopparking"
+],
+[
+160.32,
+166.09,
+"shot",
+"f13_cellphonelot"
+],
+[
+171.4,
+177.9,
+"shot",
+"f14_carpickup"
+],
+[
+182.4,
+188.9,
+"shot",
+"f15_nephewcar"
+],
+[
+193.56,
+200.06,
+"shot",
+"f16_exchangebooth"
+],
+[
+210.06,
+216.56,
+"shot",
+"f17_lisbonairport"
+],
+[
+223.74,
+230.24,
+"shot",
+"f18_eurosfanned"
+],
+[
+241.25,
+247.75,
+"shot",
+"f19_bankphone"
+],
+[
+252.98,
+255.13,
+"shot",
+"f20_atm"
+],
+[
+269.06,
+272.23,
+"shot",
+"v06"
+],
+[
+284.98,
+288.8,
+"shot",
+"f21_carts"
+],
+[
+300.72,
+304.73,
+"shot",
+"f23_heavybags"
+],
+[
+310.04,
+313.76,
+"shot",
+"f24_spinnercase"
+],
+[
+313.76,
+321.12,
+"shot",
+"v02"
+],
+[
+330.06,
+336.56,
+"shot",
+"f25_helpbag"
+],
+[
+345.18,
+351.68,
+"shot",
+"f22_carousel"
+],
+[
+352.51,
+355.67,
+"shot",
+"f26_loungedoor"
+],
+[
+355.67,
+357.73,
+"shot",
+"f27_loungeinside"
+],
+[
+378.63,
+385.13,
+"shot",
+"f28_cookie"
+],
+[
+416.65,
+420.95,
+"shot",
+"f30_frankfurt"
+],
+[
+426.87,
+433.37,
+"shot",
+"f31_quietgate"
+],
+[
+438.41,
+440.01,
+"shot",
+"f32_securityline"
+],
+[
+460.38,
+466.88,
+"shot",
+"f33_shoeson"
+],
+[
+478.55,
+485.05,
+"shot",
+"f34_fakesite"
+],
+[
+494.48,
+500.98,
+"shot",
+"f35_govsite"
+],
+[
+517.25,
+522.24,
+"shot",
+"f36_appointment"
+],
+[
+526.68,
+532.91,
+"shot",
+"f37_chargerprice"
+],
+[
+532.91,
+536.61,
+"shot",
+"f38_electronicshop"
+],
+[
+547.39,
+553.89,
+"shot",
+"f39_packcharger"
+],
+[
+557.79,
+565.21,
+"shot",
+"v05"
+],
+[
+565.21,
+569.26,
+"shot",
+"f41_underseat"
+],
+[
+574.86,
+581.36,
+"shot",
+"f42_wallplug"
+],
+[
+590.27,
+596.77,
+"shot",
+"f40_chargepost"
+],
+[
+612.85,
+619.35,
+"shot",
+"f44_pillshelf"
+],
+[
+639.64,
+647.64,
+"shot",
+"v04"
+],
+[
+651.73,
+653.58,
+"shot",
+"f46_rxbottles"
+],
+[
+676.1,
+681.45,
+"shot",
+"f45_medpouch"
+],
+[
+681.45,
+684.24,
+"shot",
+"f47_rainlanding"
+],
+[
+684.24,
+689.01,
+"shot",
+"f48_rideapp"
+],
+[
+698.94,
+705.2,
+"shot",
+"f49_taxiline"
+],
+[
+705.2,
+711.7,
+"shot",
+"f50_miami"
+],
+[
+728.5,
+732.94,
+"shot",
+"f51_hotelshuttle"
+],
+[
+732.94,
+738.19,
+"shot",
+"f52_airporttrain"
+],
+[
+782.2,
+788.19,
+"shot",
+"f56_laptopgate"
+],
+[
+813.26,
+819.76,
+"shot",
+"f54_wifisign"
+],
+[
+832.66,
+835.32,
+"shot",
+"f55_wifilist"
+],
+[
+844.7,
+848.58,
+"shot",
+"f57_checkin"
+],
+[
+865.46,
+871.96,
+"shot",
+"f58_bookstore"
+],
+[
+879.44,
+884.25,
+"shot",
+"f59_openbag"
+],
+[
+895.68,
+898.4,
+"shot",
+"v03"
+],
+[
+902.92,
+905.5,
+"shot",
+"f61_teacup"
+],
+[
+905.5,
+912.0,
+"shot",
+"f62_heavyshoes"
+],
+[
+920.68,
+927.18,
+"shot",
+"f60_luggagescale"
+],
+[
+935.79,
+942.29,
+"shot",
+"f64_tsacheckpoint"
+],
+[
+972.25,
+974.18,
+"shot",
+"f65_cane"
+],
+[
+974.18,
+980.68,
+"shot",
+"f66_thanksgiving"
+],
+[
+1008.22,
+1014.72,
+"shot",
+"f67_notebook"
+],
+[
+1066.12,
+1074.12,
+"shot",
+"v08"
+],
+[
+1115.96,
+1121.18,
+"shot",
+"v07"
+],
+[
+1121.18,
+1127.68,
+"shot",
+"f69_parkingrow"
+],
+[
+1153.24,
+1159.74,
+"shot",
+"f68_airportmap"
+],
+[
+1278.24,
+1283.73,
+"shot",
+"f70_volunteer"
+],
+[
+1343.76,
+1345.6,
+"shot",
+"v09"
+],
+[
+1364.86,
+1367.86,
+"shot",
+"v10"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 1346.26,
+"out": 1351.26
+},
+{
+"k": "step",
+"n": 1,
+"name": "PARKING",
+"at": 89.66,
+"out": 92.66
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE EXCHANGE BOOTH",
+"at": 189.42,
+"out": 192.42
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE LUGGAGE CART",
+"at": 280.92,
+"out": 283.92
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE LOUNGE DAY PASS",
+"at": 347.13,
+"out": 350.13
+},
+{
+"k": "step",
+"n": 5,
+"name": "SECURITY & FAKE SITES",
+"at": 426.97,
+"out": 429.97
+},
+{
+"k": "step",
+"n": 6,
+"name": "CHARGERS",
+"at": 519.37,
+"out": 522.37
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE AIRPORT PHARMACY",
+"at": 605.41,
+"out": 608.41
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE RIDE OUT",
+"at": 678.25,
+"out": 681.25
+},
+{
+"k": "step",
+"n": 9,
+"name": "WI-FI & FAKE NETWORKS",
+"at": 777.66,
+"out": 780.66
+},
+{
+"k": "step",
+"n": 10,
+"name": "OVERWEIGHT BAGS",
+"at": 842.4,
+"out": 845.4
+},
+{
+"k": "step",
+"n": 11,
+"name": "THE FREE PHONE NUMBER",
+"at": 925.18,
+"out": 928.18
+},
+{
+"k": "deal",
+"at": 1034.74,
+"out": 1035.74
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Arriving late",
+"at": 1039.24,
+"out": 1041.44
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Not looking at the map",
+"at": 1058.68,
+"out": 1060.88
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "First shop after security",
+"at": 1075.96,
+"out": 1078.16
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Letting your phone die",
+"at": 1089.42,
+"out": 1091.62
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Losing your parking spot",
+"at": 1105.74,
+"out": 1110.24
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1287.82
+},
+{
+"at": 1295.02
+},
+{
+"at": 1298.36
+},
+{
+"at": 1302.32
+},
+{
+"at": 1308.38
+},
+{
+"at": 1314.48
+},
+{
+"at": 1318.3
+},
+{
+"at": 1320.9
+},
+{
+"at": 1324.92
+},
+{
+"at": 1329.08
+},
+{
+"at": 1332.46
+}
+],
+"at": 1284.26,
+"out": 1334.46
+},
+{
+"k": "ask",
+"at": 1356.9,
+"out": 1364.9
+}
+],
+"end": 1367.86,
+"txt": {
+"recapTitle": "LINDA'S AIRPORT RULES",
+"recap": [
+"Economy lot, reserved",
+"No exchange booth",
+"Four wheels, no cart",
+"Lounge: long delays only",
+"PreCheck: official site",
+"Bring your charger",
+"Your own little pharmacy",
+"Ask for the free shuttle",
+"Official Wi-Fi, no banking",
+"Weigh it at home",
+"Call TSA Cares"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"Most you ever paid",
+"at an airport?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+23.86,
+31.86
+]
+}
+}

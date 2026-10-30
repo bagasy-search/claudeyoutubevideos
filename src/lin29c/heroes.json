@@ -1,0 +1,162 @@
+[
+{
+"k": "receipt71",
+"at": 21.46,
+"out": 28.46
+},
+{
+"k": "garagemeter",
+"at": 105.64,
+"out": 112.64
+},
+{
+"k": "parkingrings",
+"at": 119.72,
+"out": 127.22
+},
+{
+"k": "cellphonelot",
+"at": 171.62,
+"out": 179.12
+},
+{
+"k": "exchangeboard",
+"at": 193.04,
+"out": 200.04
+},
+{
+"k": "atmcard",
+"at": 261.54,
+"out": 268.54
+},
+{
+"k": "cartcoin",
+"at": 292.88,
+"out": 299.88
+},
+{
+"k": "spinnerleash",
+"at": 313.74,
+"out": 320.74
+},
+{
+"k": "loungedoor",
+"at": 365.07,
+"out": 372.07
+},
+{
+"k": "walletcards",
+"at": 397.79,
+"out": 404.79
+},
+{
+"k": "shoeson",
+"at": 465.69,
+"out": 472.69
+},
+{
+"k": "fakesite",
+"at": 481.97,
+"out": 489.47
+},
+{
+"k": "chargerprice",
+"at": 528.55,
+"out": 535.55
+},
+{
+"k": "chargepost",
+"at": 562.45,
+"out": 568.95
+},
+{
+"k": "pursecharger",
+"at": 596.03,
+"out": 602.53
+},
+{
+"k": "pharmapouch",
+"at": 626.33,
+"out": 633.83
+},
+{
+"k": "pricetowers",
+"at": 664.05,
+"out": 671.05
+},
+{
+"k": "surge",
+"at": 694.84,
+"out": 702.34
+},
+{
+"k": "shuttlevan",
+"at": 713.36,
+"out": 720.36
+},
+{
+"k": "pricemelt",
+"at": 748.12,
+"out": 755.12
+},
+{
+"k": "wifihook",
+"at": 807.9,
+"out": 815.4
+},
+{
+"k": "bankpadlock",
+"at": 824.08,
+"out": 830.58
+},
+{
+"k": "luggagescale",
+"at": 890.5,
+"out": 898.0
+},
+{
+"k": "catscale",
+"at": 923.4,
+"out": 929.4
+},
+{
+"k": "tsatray",
+"at": 958.8,
+"out": 966.3
+},
+{
+"k": "madefriend",
+"at": 1005.82,
+"out": 1012.32
+},
+{
+"k": "twoclocks",
+"at": 1054.18,
+"out": 1061.18
+},
+{
+"k": "parkingpillar",
+"at": 1116.16,
+"out": 1122.66
+},
+{
+"k": "routinepath",
+"at": 1152.2,
+"out": 1159.7
+},
+{
+"k": "thermos",
+"at": 1200.18,
+"out": 1207.18
+},
+{
+"k": "quietgate",
+"at": 1216.98,
+"out": 1223.98
+},
+{
+"k": "sandwich",
+"at": 1271.36,
+"out": 1277.86
+}
+]
