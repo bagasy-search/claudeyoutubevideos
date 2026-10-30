@@ -166,7 +166,7 @@ const PageHi: React.FC<{ k: number; u0: number; u1: number; v: number; h: number
 // ===================================================================================================
 export const World: React.FC<{ t: number }> = ({ t }) => {
   const tx = useTextures(), tt = useCasaTex();
-  const pg = useImgTex(["ow_p001", "ow_p005"]);
+  const pg = useImgTex(["ws_p001", "ws_p012"]);
   const nums = useMemo(() => [1, 2, 3, 4].map(numTex), []);
   const s = ST(t);
   const sun = s.eve;                                   // 0 = mañana · 1 = tarde (la luz se entibia)
@@ -351,7 +351,7 @@ export const World: React.FC<{ t: number }> = ({ t }) => {
       <Halo p={[3.0, 0.08, -0.3]} r={0.75} k={s.laundry} />
 
       {/* ===== LA GUÍA (The Osaka Walk) sobre el chabudai: se abre en la página real ===== */}
-      {s.book > 0.01 && pg.ow_p001 && <Book p={[BOOK[0], BOOK[1] + (1 - ease(s.book)) * 0.5, BOOK[2]]} rotY={0.25} open={s.open} cover={pg.ow_p001} inside={pg.ow_p005_r} right={pg.ow_p005} spine="#5fc9a8">
+      {s.book > 0.01 && pg.ws_p001 && <Book p={[BOOK[0], BOOK[1] + (1 - ease(s.book)) * 0.5, BOOK[2]]} rotY={0.25} open={s.open} cover={pg.ws_p001} inside={pg.ws_p012_r} right={pg.ws_p012} spine="#5fc9a8">
         {s.open > 0.9 && <>
           <PageHi k={s.hi[0]} u0={0.52} u1={0.95} v={0.3} h={0.05} />
           <PageHi k={s.hi[1]} u0={0.06} u1={0.48} v={0.58} h={0.05} col="#ff9a4a" />

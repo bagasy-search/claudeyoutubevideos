@@ -371,7 +371,7 @@ export const GuidePage: React.FC<{ t: number; at: number; out: number; img: stri
     <div style={{ position: "absolute", left: 470, top: 545, transform: `translate(-50%,-50%) translateY(${(1 - q) * 30}px)`, opacity: q, textAlign: "center", fontFamily: FONT, color: G.txt }}>
       <Kicker txt={tag} />
       <div style={{ margin: "22px auto 0", width: 300, padding: 18, borderRadius: 22, background: "#fff", boxShadow: "0 40px 90px rgba(0,0,0,.6)" }}>
-        <Img src={staticFile(P + "ow_p001.jpg")} style={{ width: 264, display: "block", borderRadius: 8 }} />
+        <Img src={staticFile(P + "ws_p001.jpg")} style={{ width: 264, display: "block", borderRadius: 8 }} />
       </div>
       <div style={{ marginTop: 18, fontWeight: 800, fontSize: 26, letterSpacing: 4, color: G.dim }}>THE LINK IS IN THE DESCRIPTION</div>
     </div>
