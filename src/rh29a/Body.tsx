@@ -36,7 +36,7 @@ const base = (t: number): React.ReactNode => {
 const Stage: React.FC<{ t: number }> = ({ t }) => (WIN.some((x) => t >= x.ms && t < x.me) ? <Avatar t={t} /> : <>{base(t)}</>);
 
 // sobre el avatar, el rótulo de paso y la descripción van a la izquierda y más chicos: nunca tapan la cara
-const avOn = (a: number, b: number) => WIN.some((w) => a < w.me && b > w.ms);
+const avOn = (a: number, b: number) => WIN.some((w) => a - 0.6 < w.me && b + 0.9 > w.ms); // 30-oct: cuenta la entrada/salida de la pieza («NEVER MIX» salía sobre los ojos)
 
 // ===== CTA: chip de la guía → chip del manual (con la página) → la página real + QR chico → la descripción sola =====
 const CTA: React.FC<{ t: number; c: Cta; manual: string; img: string; pageTxt: string }> = ({ t, c, manual, img, pageTxt }) => {
