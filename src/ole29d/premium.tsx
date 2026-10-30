@@ -388,7 +388,7 @@ export const Desc: React.FC<{ t: number; at: number; out: number; x?: number; y?
       <div style={{ marginBottom: 16, fontFamily: FONT, fontWeight: 800, fontSize: 30, letterSpacing: 5, color: COL.amber, opacity: hl }}>FIRST LINE OF THE DESCRIPTION ↓</div>
       <Panel style={{ width: 1180, padding: "30px 40px 36px" }}>
         <div style={{ position: "relative", padding: "16px 22px", borderRadius: 14, background: `rgba(255,200,60,${0.14 * hl})`, boxShadow: `0 0 0 2px rgba(255,200,60,${0.85 * hl})`, overflow: "hidden" }}>
-          <div style={{ fontWeight: 800, fontSize: 40 }}>🔥 El Invierno Sin Gas · mis 5 manuales, paso a paso</div>
+          <div style={{ fontWeight: 800, fontSize: 40 }}>📖 Ole's Logging Camp Cookbook · 73 recipes from the cook shack</div>
           <div style={{ position: "absolute", top: 0, bottom: 0, left: `${-30 + 130 * sweep}%`, width: "22%", background: "linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent)", opacity: sweep < 1 ? 1 : 0 }} />
         </div>
         {L(940)}{L(1010)}{L(720)}
