@@ -1,0 +1,611 @@
+{
+"segs": [
+[
+3.52,
+6.76,
+"shot",
+"f01_seasidehotel"
+],
+[
+6.76,
+8.24,
+"shot",
+"v01"
+],
+[
+8.24,
+11.36,
+"shot",
+"f02_coldcoffee"
+],
+[
+11.36,
+13.78,
+"shot",
+"f03_typingname"
+],
+[
+19.22,
+26.72,
+"shot",
+"f04_nextbutton"
+],
+[
+36.4,
+39.46,
+"shot",
+"f35_cruiseship"
+],
+[
+39.46,
+46.96,
+"shot",
+"f13_laptoptoggle"
+],
+[
+69.2,
+76.7,
+"shot",
+"f63_charleston"
+],
+[
+89.52,
+96.12,
+"shot",
+"f07_bigbutton"
+],
+[
+120.36,
+124.36,
+"shot",
+"f08_resortpool"
+],
+[
+124.36,
+130.37,
+"shot",
+"f10_newspaper"
+],
+[
+135.76,
+143.26,
+"shot",
+"f11_grandbay"
+],
+[
+149.04,
+156.54,
+"shot",
+"f20_hotelsite"
+],
+[
+182.82,
+190.32,
+"shot",
+"f14_comparetwo"
+],
+[
+195.56,
+203.06,
+"shot",
+"f12_notepadtotals"
+],
+[
+219.73,
+221.58,
+"shot",
+"f16_auntbea"
+],
+[
+221.58,
+229.08,
+"shot",
+"f17_weddinghall"
+],
+[
+229.84,
+231.91,
+"shot",
+"f18_hotelhall"
+],
+[
+273.16,
+280.66,
+"shot",
+"f19_breath"
+],
+[
+304.64,
+308.04,
+"shot",
+"f23_suite"
+],
+[
+308.04,
+315.54,
+"shot",
+"f21_pricetag"
+],
+[
+319.75,
+327.25,
+"shot",
+"f25_twoprices"
+],
+[
+337.25,
+344.75,
+"shot",
+"f24_fingerscreen"
+],
+[
+362.43,
+364.28,
+"shot",
+"f26_doctor"
+],
+[
+367.64,
+373.97,
+"shot",
+"f29_doreen"
+],
+[
+373.97,
+380.4,
+"shot",
+"f30_hospital"
+],
+[
+403.51,
+406.31,
+"shot",
+"f31_redpencal"
+],
+[
+406.31,
+412.12,
+"shot",
+"f34_insurancefolder"
+],
+[
+425.19,
+431.24,
+"shot",
+"f32_checkbox"
+],
+[
+439.63,
+447.13,
+"shot",
+"f33_cartlaptop"
+],
+[
+500.62,
+508.12,
+"shot",
+"f36_readslow"
+],
+[
+510.41,
+513.88,
+"shot",
+"f37_airplanewing"
+],
+[
+538.61,
+545.43,
+"shot",
+"f40_boardingline"
+],
+[
+550.74,
+552.51,
+"shot",
+"f41_airlinesite"
+],
+[
+552.51,
+560.01,
+"shot",
+"f38_seatmap"
+],
+[
+595.01,
+597.95,
+"shot",
+"f44_cardterminal"
+],
+[
+618.93,
+623.45,
+"shot",
+"f42_rome"
+],
+[
+623.45,
+630.71,
+"shot",
+"f45_receiptcompare"
+],
+[
+636.47,
+643.97,
+"shot",
+"f43_euros"
+],
+[
+644.17,
+646.55,
+"shot",
+"f46_cardback"
+],
+[
+683.15,
+688.61,
+"shot",
+"f47_savannah"
+],
+[
+688.61,
+694.29,
+"shot",
+"f48_stairs"
+],
+[
+701.69,
+706.19,
+"shot",
+"v03"
+],
+[
+706.19,
+707.95,
+"shot",
+"f49_lobbysuitcase"
+],
+[
+724.22,
+727.54,
+"shot",
+"f50_frontdeskphone"
+],
+[
+733.16,
+737.8,
+"shot",
+"f51_walkinshower"
+],
+[
+737.8,
+745.3,
+"shot",
+"f52_notepadname"
+],
+[
+785.95,
+793.45,
+"shot",
+"f54_harold"
+],
+[
+802.52,
+810.02,
+"shot",
+"f56_daughter"
+],
+[
+833.82,
+841.32,
+"shot",
+"f55_phonecode"
+],
+[
+847.34,
+852.1,
+"shot",
+"f57_hangup"
+],
+[
+852.1,
+854.26,
+"shot",
+"v04"
+],
+[
+854.26,
+858.66,
+"shot",
+"f58_envelope"
+],
+[
+864.1,
+866.28,
+"shot",
+"v06"
+],
+[
+866.28,
+873.78,
+"shot",
+"f60_package"
+],
+[
+896.14,
+903.64,
+"shot",
+"f61_calculator"
+],
+[
+924.66,
+926.41,
+"shot",
+"v05"
+],
+[
+954.34,
+958.04,
+"shot",
+"v02"
+],
+[
+958.04,
+961.67,
+"shot",
+"f62_hotelfront"
+],
+[
+998.43,
+1002.18,
+"shot",
+"f65_parking"
+],
+[
+1002.18,
+1010.18,
+"shot",
+"v07"
+],
+[
+1052.32,
+1059.82,
+"shot",
+"f66_morninglight"
+],
+[
+1061.8,
+1069.3,
+"shot",
+"f67_printscreen"
+],
+[
+1087.11,
+1093.08,
+"shot",
+"f68_creditcards"
+],
+[
+1104.89,
+1108.05,
+"shot",
+"v08"
+],
+[
+1320.11,
+1324.19,
+"shot",
+"v09"
+],
+[
+1330.29,
+1337.79,
+"shot",
+"f70_oceanwindow"
+],
+[
+1386.39,
+1388.97,
+"shot",
+"v10"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 1399.17,
+"out": 1404.17
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE PRICE THAT ISN'T THE PRICE",
+"at": 106.04,
+"out": 109.04
+},
+{
+"k": "step",
+"n": 2,
+"name": "ONLY ONE ROOM LEFT",
+"at": 199.9,
+"out": 202.9
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE CROSSED-OUT PRICE",
+"at": 279.96,
+"out": 282.96
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE NON-REFUNDABLE RATE",
+"at": 340.96,
+"out": 343.96
+},
+{
+"k": "step",
+"n": 5,
+"name": "BOXES ALREADY CHECKED",
+"at": 424.13,
+"out": 427.13
+},
+{
+"k": "step",
+"n": 6,
+"name": "FLIGHT WEBSITE EXTRAS",
+"at": 507.91,
+"out": 510.91
+},
+{
+"k": "step",
+"n": 7,
+"name": "PAYING IN YOUR OWN CURRENCY",
+"at": 588.53,
+"out": 591.53
+},
+{
+"k": "step",
+"n": 8,
+"name": "BOOKING THROUGH A THIRD PARTY",
+"at": 664.79,
+"out": 667.79
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE FAKE SERVICE NUMBER",
+"at": 753.58,
+"out": 756.58
+},
+{
+"k": "step",
+"n": 10,
+"name": "THE PACKAGE THAT ISN'T A DEAL",
+"at": 863.0,
+"out": 866.0
+},
+{
+"k": "step",
+"n": 11,
+"name": "THE TWO-MINUTE PHONE CALL",
+"at": 926.5,
+"out": 929.5
+},
+{
+"k": "deal",
+"at": 1042.12,
+"out": 1043.12
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Booking late at night",
+"at": 1046.12,
+"out": 1048.32
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "No picture of the last screen",
+"at": 1055.38,
+"out": 1057.58
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Skipping the confirmation email",
+"at": 1069.69,
+"out": 1071.89
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Card saved everywhere",
+"at": 1083.13,
+"out": 1085.33
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Forgetting the cancel date",
+"at": 1093.51,
+"out": 1098.01
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1345.95
+},
+{
+"at": 1350.01
+},
+{
+"at": 1353.27
+},
+{
+"at": 1355.83
+},
+{
+"at": 1359.45
+},
+{
+"at": 1361.79
+},
+{
+"at": 1365.35
+},
+{
+"at": 1369.61
+},
+{
+"at": 1372.41
+},
+{
+"at": 1378.91
+},
+{
+"at": 1381.51
+}
+],
+"at": 1342.97,
+"out": 1383.51
+},
+{
+"k": "ask",
+"at": 1408.47,
+"out": 1416.47
+}
+],
+"end": 1417.71,
+"txt": {
+"recapTitle": "LINDA'S BOOKING RULES",
+"recap": [
+"Compare the last-screen total",
+"Only one left? Breathe",
+"Ignore the crossed-out price",
+"Free cancellation, date in red",
+"Uncheck what you didn't pick",
+"Check the airline's own site",
+"Pay in the local currency",
+"Call the hotel to confirm",
+"Only the number you printed",
+"Do the package math",
+"Call: match it or add something"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"Which booking trick",
+"has caught you?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+24.94,
+32.94
+]
+}
+}
