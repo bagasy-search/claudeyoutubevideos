@@ -545,3 +545,13 @@ export const MAP: Record<string, C> = { regla: HRegla, lavado: HLavado, seco: HS
 
 import { MAP3 } from "./heroes3d";
 Object.assign(MAP, MAP3);
+
+// ── reemplazos por TOPE DEL EVALUADOR (30-oct): los componentes que no pasaron de 6 van como clip(s) Veo de 8 s (manos de Cuca);
+//    los largos (ollaserror, tren) reparten su tramo entre h_<k>_1..n
+import { OffthreadVideo, Sequence, staticFile } from "remotion";
+const CLIP_H: Record<string, number> = {};   // k → nº de clips; se llena a medida que llegan los h_<k>*.mp4 a public
+const HClip: C = ({ t, h }) => {
+  const n = CLIP_H[h.k] ?? 1, seg = (h.out - h.at) / n, i = Math.min(n - 1, Math.max(0, Math.floor((t - h.at) / seg)));
+  const o = Math.min(1, (t - h.at + 0.05) / 0.3, (h.out + 0.85 - t) / 0.3);
+  return <div style={{ position: "absolute", inset: 0, opacity: Math.max(0, o) }}><Sequence key={i} from={Math.round((h.at - 0.05 + i * seg) * 30)} layout="none"><OffthreadVideo src={staticFile(`cuca29e/${n > 1 ? `h_${h.k}_${i + 1}` : "h_" + h.k}.mp4`)} muted playbackRate={Math.min(1, 7.9 / (seg + 0.9))} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></Sequence></div>; };
+for (const k of Object.keys(CLIP_H)) MAP[k] = HClip;
