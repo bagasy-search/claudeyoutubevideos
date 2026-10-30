@@ -70,7 +70,7 @@ export const HFenceBoard: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D
 }}</Scene3D>;
 
 // ---- 11:30 · NIEVE HASTA LA BARANDA: vista de arriba del porche; la nieve sube en capas hasta rozar la baranda mientras dos tambores cuentan 14 días; la pala abre un surco ----
-export const HSnowRail: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="wipe" floor="wood" wall="wood"
+const HSnowRail0: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="wipe" floor="wood" wall="wood"
   cam={{ at: [-0.02, 0.13, 0.12], az: [0.5, -0.12], el: [0.5, 0.36], r: [1.25, 1.0], fov: 32 }}
   over={(tt) => <Head tt={tt} kick="" title="SNOW TO THE PORCH RAIL" col={ICE} />}>{(tt, u) => {
   const snow = eio(u, 0.05, 0.5), day = lerp(1, 14, snow), path = eio(u, 0.5, 0.62), melt = eio(u, 0.8, 0.96), crack = eio(u, 0.72, 0.8);
@@ -246,3 +246,5 @@ export const HSkillet: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t=
     {oil > 0 && <mesh position={[0, 0.0096, 0]} rotation={[-PI / 2, 0, 0]}><circleGeometry args={[0.15, 48]} /><meshPhysicalMaterial color="#2a2a2c" roughness={0.05} clearcoat={1} transparent opacity={0.6 * oil} /></mesh>}
   </>;
 }}</Scene3D>;
+// el cuadro 20897 sale negro sólo en el farm (NaN del bloom, determinista): esos 3 cuadros se muestrean medio cuadro corridos
+export const HSnowRail: React.FC<{ t: number; h: H }> = ({ t, h }) => <HSnowRail0 t={Math.abs(t * 30 - 20897) < 1.5 ? t + 0.5 / 30 : t} h={h} />;
