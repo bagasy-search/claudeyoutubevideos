@@ -65,7 +65,7 @@ const Whip: React.FC<{ t: number; a: number; b: number; from: React.ReactNode; t
 const ZoomThru: React.FC<{ t: number; a: number; b: number; x: number; y: number; top: React.ReactNode; under: React.ReactNode; k?: number }> = ({ t, a, b, x, y, top, under, k: mag = 7 }) => {
   const z = ei(t, a, b);
   return <>
-    {z > 0.35 && <AbsoluteFill style={{ opacity: (z - 0.35) / 0.65, transform: `scale(${1.25 - 0.25 * z})`, transformOrigin: `${x}px ${y}px` }}>{under}</AbsoluteFill>}
+    {/* 30-oct: siempre montado (montar el OffthreadVideo del avatar a mitad de la transición colgaba tramos del farm) */}<AbsoluteFill style={{ opacity: Math.max(0, (z - 0.35) / 0.65), transform: `scale(${1.25 - 0.25 * z})`, transformOrigin: `${x}px ${y}px` }}>{under}</AbsoluteFill>
     <AbsoluteFill style={{ transformOrigin: `${x}px ${y}px`, transform: `scale(${1 + z * z * mag})`, opacity: z > 0.35 ? 1 - (z - 0.35) / 0.65 : 1, filter: z > 0.05 ? `blur(${z * 16}px)` : undefined }}>{top}</AbsoluteFill>
   </>;
 };
@@ -98,7 +98,8 @@ const Capa: React.FC<{ t: number }> = ({ t }) => {
     const c = screenOf(t, foco(t));
     if (st === 0) return <>{under}<Portal x={c.x} y={c.y} r={ei(t, w.ms - 0.3, w.ms + 0.3)}>{av}</Portal></>;
     if (st === 1) return <Whip t={t} a={w.ms - 0.25} b={w.ms + 0.2} from={under} to={av} dir={-1} />;
-    return <ZoomThru t={t} a={w.ms - 0.35} b={w.ms + 0.3} x={960} y={540} k={5} top={under} under={av} />;
+    // 30-oct: la ENTRADA con ZoomThru cuelga el farm (a 183, d 166 aun montado); la entrada va con Whip (la salida ZoomThru anda)
+    return <Whip t={t} a={w.ms - 0.25} b={w.ms + 0.2} from={under} to={av} dir={1} />;
   }
   if (t > w.me - 0.4) {
     if (st === 0) return <ZoomThru t={t} a={w.me - 0.4} b={w.me + 0.4} x={AVP.a.x} y={AVP.a.y} k={6} top={av} under={under} />;
