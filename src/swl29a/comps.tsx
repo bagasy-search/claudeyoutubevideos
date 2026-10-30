@@ -703,7 +703,7 @@ export const K04: React.FC<CP> = (p) => <Foto {...p} id="k04" fx={0.5} fy={0.42}
 export const K05: React.FC<CP> = (p) => <Foto {...p} id="k05" fx={0.55} fy={0.5} word="DON'T TOUCH IT" wy={950} fx2={(tt, d) => <>{Vapor(tt, 920, 400, 260)}{Aro(tt, 0.6, d - 0.4, 1775, 285, 90)}</>} />;
 export const K06: React.FC<CP> = (p) => <Foto {...p} id="k06" fx={0.6} fy={0.45} z={1.6} word="THAT'S SUPPER" wx={960} wy={950} mode="iris" fx2={(tt) => Pulso(tt, 1.4, 1150, 470)} />;
 export const K07: React.FC<CP> = (p) => <><Foto {...p} id="k07" fx={0.42} fy={0.55} z={1.25} word="$1.10 A PLATE" wx={960} wy={950} /><Rodillo tt={p.t - p.h.at} d={p.h.out - p.h.at} a={1.0} b={3.4} v={1.1} pre="$" dec={2} x={1420} y={520} size={130} /></>;
-export const K08: React.FC<CP> = (p) => <Foto {...p} id="k08" fx={0.6} fy={0.55} z={1.55} word="HAROLD · 1954" wx={960} wy={950} mode="split" />;
+export const K08: React.FC<CP> = (p) => <Foto {...p} id="k08" fx={0.6} fy={0.55} z={1.55} word="USS BREMERTON · 1954" wx={960} wy={950} mode="split" />;
 export const K09: React.FC<CP> = (p) => <Foto {...p} id="k09" fx={0.48} fy={0.6} word="MORE PEPPER" wx={960} wy={950} mode="drop" fx2={(tt) => Lluvia(tt, 0.5, 790, 300, 380, "#1a1410", 60, 8)} />;
 export const K10: React.FC<CP> = (p) => <><Foto {...p} id="k10" fx={0.47} fy={0.35} z={1.5} word="SHE WAS 60 IN 1974" wx={960} wy={950} mode="rise" fx2={(tt) => Pulso(tt, 1.0, 900, 330, "rgba(120,170,255,.9)")} /><Rodillo tt={p.t - p.h.at} d={p.h.out - p.h.at} a={0.8} b={3.0} v={1974} x={460} y={900} size={110} /></>;
 export const K11: React.FC<CP> = (p) => <Foto {...p} id="k11" fx={0.5} fy={0.5} word="TWO MINUTES" wy={950} mode="wipe" fx2={(tt, d) => <>{Vapor(tt, 960, 520, 300, 0.8)}{Aro(tt, 0.5, d - 0.4, 1385, 395, 70, "#7af0a0")}</>} />;
