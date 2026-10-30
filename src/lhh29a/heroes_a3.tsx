@@ -89,7 +89,7 @@ export const HSnowRail: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t
     {Array.from({ length: 18 }, (_, i) => { const k = Math.max(0.001, cl(crack * 18 - i)); const x0 = -0.44 + i * 0.049, a = (rn(i, 51) - 0.5) * 1.2; return <group key={"gr" + i} visible={crack * 18 - i > 0}>
       <mesh position={[x0 + 0.0245 * Math.cos(a), top * (1 - 0.6 * melt) + 0.017, -0.03 + 0.03 * Math.sin(i * 1.7)]} rotation={[0, a, 0]}><boxGeometry args={[0.052 * k, 0.006, 0.006]} /><meshBasicMaterial color="#1c3550" /></mesh>
       <mesh position={[x0 + 0.0245 * Math.cos(a), top * (1 - 0.6 * melt) + 0.02, -0.03 + 0.03 * Math.sin(i * 1.7)]} rotation={[0, a, 0]}><boxGeometry args={[0.052 * k, 0.003, 0.016]} />{M.glow({ col: "#bfe4ff", op: 0.75 * (1 - melt) })}</mesh></group>; })}
-    <pointLight position={[0, 0.2, 0.15]} intensity={1.1 * crack * (1 - melt)} distance={0.8} color="#9fd2ff" />
+    <pointLight position={[0, 0.45, -0.3]} intensity={1.1 * crack * (1 - melt)} distance={0.8} color="#9fd2ff" />
     {/* la pala: entra por el surco y empuja la nieve */}
     <group position={[0, 0.06 + top * (1 - path), 0.3 - 0.5 * path]} rotation={[-0.3, 0, 0]}>
       <mesh position={[0, 0.2, 0.08]} rotation={[0.6, 0, 0]}><cylinderGeometry args={[0.008, 0.008, 0.36, 10]} />{M.wood({ base: [170, 120, 70] })}</mesh>
