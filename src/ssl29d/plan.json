@@ -1,0 +1,1348 @@
+{
+"segs": [
+[
+3.5,
+6.48,
+"shot",
+"n_secadora_girando"
+],
+[
+6.48,
+12.68,
+"shot",
+"n_pelusa_filtro"
+],
+[
+12.68,
+14.2,
+"shot",
+"n_toallas_cama"
+],
+[
+17.938,
+22.5,
+"shot",
+"n_medidor_luz"
+],
+[
+22.5,
+26.38,
+"shot",
+"n_factura_luz"
+],
+[
+37.5,
+44.64,
+"shot",
+"n_porche_invierno"
+],
+[
+55.4,
+60.34,
+"shot",
+"n_tendedero_patio"
+],
+[
+64.1,
+67.686,
+"shot",
+"n_toallas_dobladas"
+],
+[
+73.009,
+76.34,
+"shot",
+"n_dos_casas_calle"
+],
+[
+81.0,
+85.285,
+"shot",
+"n_broches_madera"
+],
+[
+90.214,
+95.12,
+"shot",
+"n_enchufe_secadora"
+],
+[
+95.12,
+101.074,
+"shot",
+"n_jean_mojado"
+],
+[
+113.18,
+116.36,
+"shot",
+"n_ventana_vaho"
+],
+[
+116.36,
+120.978,
+"shot",
+"n_moho_esquina"
+],
+[
+126.2,
+132.2,
+"shot",
+"n_estufa_ropa"
+],
+[
+157.0,
+163.56,
+"shot",
+"n_lavarropas_frente"
+],
+[
+163.56,
+168.6,
+"shot",
+"n_tambor_agua"
+],
+[
+174.8,
+177.62,
+"shot",
+"n_lavarropas_1960"
+],
+[
+177.62,
+186.792,
+"shot",
+"n_perilla_centrifugado"
+],
+[
+190.9,
+195.88,
+"shot",
+"n_ropa_centrifugada"
+],
+[
+200.4,
+204.5,
+"shot",
+"n_jeans_toallas_canasto"
+],
+[
+210.5,
+219.3,
+"shot",
+"n_programa_delicado"
+],
+[
+219.3,
+222.6,
+"shot",
+"n_sabanas_algodon"
+],
+[
+228.72,
+236.293,
+"shot",
+"n_canasto_bambu"
+],
+[
+240.713,
+248.8,
+"shot",
+"v01"
+],
+[
+250.26,
+254.394,
+"shot",
+"n_ropa_retorcida"
+],
+[
+259.734,
+261.1,
+"shot",
+"n_camisa_arrugada"
+],
+[
+261.1,
+267.92,
+"shot",
+"n_camisa_lisa"
+],
+[
+267.92,
+271.594,
+"shot",
+"n_cuello_camisa"
+],
+[
+276.606,
+280.76,
+"shot",
+"n_toalla_tiesa"
+],
+[
+283.2,
+286.3,
+"shot",
+"n_cansada_canasto"
+],
+[
+303.6,
+305.967,
+"shot",
+"n_percha_pulpo"
+],
+[
+310.7,
+319.94,
+"shot",
+"n_broches_pulpo"
+],
+[
+319.94,
+322.0,
+"shot",
+"n_gancho_ventana"
+],
+[
+325.507,
+328.4,
+"shot",
+"n_pulpo_lleno"
+],
+[
+328.4,
+338.163,
+"shot",
+"n_casa_osaka_ventana"
+],
+[
+343.637,
+350.18,
+"shot",
+"v02"
+],
+[
+350.18,
+357.0,
+"shot",
+"n_medias_ventana_sur"
+],
+[
+362.028,
+368.12,
+"shot",
+"n_medias_espacio"
+],
+[
+376.709,
+388.02,
+"shot",
+"n_toallas_largas"
+],
+[
+388.02,
+390.968,
+"shot",
+"v06"
+],
+[
+394.5,
+403.6,
+"shot",
+"n_aire_ropa"
+],
+[
+403.6,
+405.266,
+"shot",
+"n_ropa_mezclada"
+],
+[
+416.74,
+420.9,
+"shot",
+"n_reloj_pared"
+],
+[
+424.6,
+427.86,
+"shot",
+"n_departamento_chico"
+],
+[
+427.86,
+435.62,
+"shot",
+"n_bano_japones"
+],
+[
+435.62,
+436.798,
+"shot",
+"n_extractor_bano"
+],
+[
+442.538,
+450.3,
+"shot",
+"v05"
+],
+[
+450.3,
+453.862,
+"shot",
+"n_barral_ducha"
+],
+[
+458.927,
+461.62,
+"shot",
+"n_ventana_bano"
+],
+[
+461.62,
+469.58,
+"shot",
+"n_casa_madera_dos_pisos"
+],
+[
+469.58,
+471.99,
+"shot",
+"n_lluvia_osaka"
+],
+[
+475.4,
+482.5,
+"shot",
+"n_cana_bambu"
+],
+[
+482.5,
+486.858,
+"shot",
+"n_camisa_trabajo_padre"
+],
+[
+490.05,
+497.62,
+"shot",
+"n_ropa_doblada_tatami"
+],
+[
+497.62,
+500.3,
+"shot",
+"n_extractor_girando"
+],
+[
+503.8,
+510.18,
+"shot",
+"n_camisas_secas_bano"
+],
+[
+510.18,
+514.96,
+"shot",
+"n_espejo_empanado"
+],
+[
+514.96,
+517.1,
+"shot",
+"n_manchas_rincon"
+],
+[
+530.88,
+534.7,
+"shot",
+"n_amigas_cocina"
+],
+[
+539.7,
+545.94,
+"shot",
+"n_tendedero_apretado"
+],
+[
+545.94,
+548.26,
+"shot",
+"n_tendedero_espacio"
+],
+[
+548.26,
+551.394,
+"shot",
+"n_dos_canastos"
+],
+[
+556.4,
+561.14,
+"shot",
+"n_radiador_ropa"
+],
+[
+561.14,
+568.36,
+"shot",
+"n_pared_humeda"
+],
+[
+574.4,
+581.24,
+"shot",
+"n_vidrio_gotas"
+],
+[
+581.24,
+584.4,
+"shot",
+"n_ventana_abierta_nieve"
+],
+[
+590.84,
+593.38,
+"shot",
+"n_lavarropas_noche"
+],
+[
+593.38,
+599.27,
+"shot",
+"n_ropa_noche_fria"
+],
+[
+602.8,
+606.08,
+"shot",
+"n_ropa_sol_manana"
+],
+[
+606.08,
+613.6,
+"shot",
+"n_lavarropas_lleno"
+],
+[
+617.6,
+620.3,
+"shot",
+"n_tambor_tres_cuartos"
+],
+[
+627.04,
+629.663,
+"shot",
+"n_camisas_perchas_madre"
+],
+[
+634.4,
+645.22,
+"shot",
+"n_mangas_tirar"
+],
+[
+645.22,
+647.593,
+"shot",
+"n_ropero_camisas"
+],
+[
+652.5,
+659.08,
+"shot",
+"n_plancha_guardada"
+],
+[
+659.08,
+662.5,
+"shot",
+"n_perchas_plastico"
+],
+[
+667.3,
+671.22,
+"shot",
+"n_barral_lavadero"
+],
+[
+673.82,
+676.471,
+"shot",
+"n_camisa_broches_mal"
+],
+[
+689.6,
+693.9,
+"shot",
+"n_amanecer_invierno"
+],
+[
+699.7,
+701.34,
+"shot",
+"n_balcon_osaka"
+],
+[
+701.34,
+711.6,
+"shot",
+"n_reloj_siete"
+],
+[
+717.212,
+727.44,
+"shot",
+"n_sol_invierno_ropa"
+],
+[
+733.7,
+740.52,
+"shot",
+"n_tendedero_acordeon"
+],
+[
+740.52,
+745.889,
+"shot",
+"v03"
+],
+[
+749.51,
+755.8,
+"shot",
+"n_porche_trasero"
+],
+[
+755.8,
+760.865,
+"shot",
+"n_dia_gris"
+],
+[
+768.44,
+777.084,
+"shot",
+"n_toalla_soga"
+],
+[
+782.84,
+791.08,
+"shot",
+"n_jean_reves"
+],
+[
+791.08,
+794.6,
+"shot",
+"n_pared_sombra"
+],
+[
+799.0,
+805.98,
+"shot",
+"n_mediodia_sol"
+],
+[
+805.98,
+809.369,
+"shot",
+"n_zapatos_caminata"
+],
+[
+815.1,
+818.38,
+"shot",
+"n_puerta_abierta_lavarropas"
+],
+[
+818.38,
+827.573,
+"shot",
+"n_ropa_olvidada"
+],
+[
+831.604,
+841.28,
+"shot",
+"n_sotano_lavadero"
+],
+[
+841.28,
+844.0,
+"shot",
+"n_cuarto_luminoso"
+],
+[
+851.98,
+859.48,
+"shot",
+"n_jabon_medida"
+],
+[
+867.2,
+875.2,
+"shot",
+"v07"
+],
+[
+877.0,
+879.9,
+"shot",
+"n_nieve_ventana"
+],
+[
+884.243,
+887.9,
+"shot",
+"n_sala_tibia"
+],
+[
+899.647,
+910.02,
+"shot",
+"n_gotas_marco"
+],
+[
+910.02,
+912.4,
+"shot",
+"n_deshumidificador"
+],
+[
+917.419,
+926.0,
+"shot",
+"n_deshumidificador_tanque"
+],
+[
+926.0,
+928.5,
+"shot",
+"n_toalla_carton"
+],
+[
+933.518,
+941.6,
+"shot",
+"v09"
+],
+[
+941.62,
+943.672,
+"shot",
+"n_toalla_frotar"
+],
+[
+947.0,
+957.04,
+"shot",
+"n_toallas_viento"
+],
+[
+958.42,
+960.498,
+"shot",
+"n_bano_secado"
+],
+[
+971.6,
+977.795,
+"shot",
+"n_facturas_mesa"
+],
+[
+992.74,
+994.695,
+"shot",
+"n_casa_vecina"
+],
+[
+998.92,
+1006.14,
+"shot",
+"n_abrigo_vidriera"
+],
+[
+1016.502,
+1018.01,
+"shot",
+"n_toalla_olor"
+],
+[
+1031.101,
+1041.75,
+"shot",
+"n_ropa_limpia_sol"
+],
+[
+1041.75,
+1044.898,
+"shot",
+"n_sol_ropa_osaka"
+],
+[
+1049.908,
+1057.29,
+"shot",
+"n_sabana_doblada"
+],
+[
+1057.29,
+1062.2,
+"shot",
+"n_dos_sillas_sabana"
+],
+[
+1067.543,
+1076.09,
+"shot",
+"n_sabana_puerta"
+],
+[
+1076.09,
+1078.983,
+"shot",
+"n_cama_hecha"
+],
+[
+1091.65,
+1095.3,
+"shot",
+"n_ropa_pesada"
+],
+[
+1099.1,
+1109.8,
+"shot",
+"n_toalla_grande_piso"
+],
+[
+1113.9,
+1121.9,
+"shot",
+"v04"
+],
+[
+1124.57,
+1126.875,
+"shot",
+"n_mesada_mano"
+],
+[
+1131.509,
+1140.25,
+"shot",
+"n_toalla_mojada_jean"
+],
+[
+1140.25,
+1143.869,
+"shot",
+"n_jean_cintura"
+],
+[
+1147.6,
+1154.31,
+"shot",
+"n_bolsillos_afuera"
+],
+[
+1154.31,
+1158.267,
+"shot",
+"n_sueter_rejilla"
+],
+[
+1161.806,
+1168.59,
+"shot",
+"v08"
+],
+[
+1168.59,
+1176.093,
+"shot",
+"n_rejilla_ventilador"
+],
+[
+1180.4,
+1187.07,
+"shot",
+"n_sueter_seco_doblado"
+],
+[
+1198.4,
+1202.67,
+"shot",
+"n_taza_jabon"
+],
+[
+1202.67,
+1207.7,
+"shot",
+"n_reloj_ocho"
+],
+[
+1220.65,
+1226.0,
+"shot",
+"n_pulpo_y_perchas"
+],
+[
+1232.117,
+1241.09,
+"shot",
+"n_rejilla_sueter_sol"
+],
+[
+1247.815,
+1253.65,
+"shot",
+"n_ventana_tarde"
+],
+[
+1253.65,
+1258.9,
+"shot",
+"n_ropero_ordenado"
+],
+[
+1318.75,
+1324.2,
+"shot",
+"n_sol_viento_ropa"
+],
+[
+1351.69,
+1357.1,
+"shot",
+"v10"
+]
+],
+"cam": [
+[
+26.38,
+31.3,
+"living"
+],
+[
+44.64,
+49.8,
+"shelf"
+],
+[
+60.34,
+64.1,
+"window"
+],
+[
+76.34,
+81.0,
+"laundry"
+],
+[
+106.8,
+113.18,
+"laundry"
+],
+[
+132.2,
+134.32,
+"wide"
+],
+[
+134.32,
+139.1,
+"book"
+],
+[
+143.2,
+149.52,
+"bookOpen"
+],
+[
+149.52,
+151.94,
+"book2"
+],
+[
+151.94,
+153.7,
+"laundry"
+],
+[
+195.88,
+200.4,
+"laundry"
+],
+[
+226.6,
+228.72,
+"laundry"
+],
+[
+248.8,
+250.26,
+"wide"
+],
+[
+280.76,
+283.2,
+"living"
+],
+[
+292.3,
+303.6,
+"wide"
+],
+[
+368.12,
+372.9,
+"window"
+],
+[
+410.4,
+416.74,
+"laundry"
+],
+[
+522.5,
+524.8,
+"window"
+],
+[
+524.8,
+530.88,
+"wide"
+],
+[
+568.36,
+568.8,
+"living"
+],
+[
+588.2,
+590.84,
+"clock"
+],
+[
+620.3,
+627.04,
+"laundry"
+],
+[
+671.22,
+673.82,
+"shelf"
+],
+[
+681.3,
+689.6,
+"wide"
+],
+[
+727.44,
+728.5,
+"window"
+],
+[
+764.8,
+768.44,
+"clock"
+],
+[
+848.6,
+851.98,
+"living"
+],
+[
+859.48,
+861.6,
+"shelf"
+],
+[
+875.2,
+877.0,
+"wide"
+],
+[
+887.9,
+895.1,
+"radio"
+],
+[
+941.6,
+941.62,
+"wide"
+],
+[
+957.04,
+958.42,
+"radio"
+],
+[
+966.3,
+971.6,
+"table"
+],
+[
+982.4,
+992.74,
+"table"
+],
+[
+1006.14,
+1010.9,
+"radio"
+],
+[
+1018.01,
+1027.6,
+"laundry"
+],
+[
+1083.7,
+1091.65,
+"laundry"
+],
+[
+1121.9,
+1124.57,
+"wide"
+],
+[
+1187.07,
+1193.4,
+"wide"
+],
+[
+1212.6,
+1220.65,
+"laundry"
+],
+[
+1241.09,
+1243.8,
+"clock"
+],
+[
+1263.0,
+1269.55,
+"book"
+],
+[
+1269.55,
+1274.1,
+"bookOpen"
+],
+[
+1279.1,
+1289.8,
+"recap"
+],
+[
+1293.7,
+1307.2,
+"recap"
+],
+[
+1312.8,
+1318.75,
+"recap"
+],
+[
+1329.1,
+1338.43,
+"living"
+],
+[
+1338.43,
+1339.5,
+"subscribe"
+],
+[
+1345.5,
+1351.69,
+"wide"
+]
+],
+"ov": [
+{
+"k": "chip",
+"txt": "56 WINTERS · ZERO DRYER",
+"at": 40.56,
+"out": 43.96
+},
+{
+"k": "chip",
+"txt": "LESS THAN HALF THE BILL",
+"at": 68.2,
+"out": 71.4
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE EXTRA SPIN",
+"at": 154.12,
+"out": 158.12
+},
+{
+"k": "step",
+"n": 2,
+"name": "SHAKE IT 3 TIMES",
+"at": 225.52,
+"out": 229.52
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE OCTOPUS HANGER",
+"at": 302.84,
+"out": 306.84
+},
+{
+"k": "big",
+"txt": "$12",
+"sub": "ONE HANGER · EVERY LOAD",
+"at": 342.24,
+"out": 345.44
+},
+{
+"k": "step",
+"n": 4,
+"name": "HANG IN AN ARCH",
+"at": 368.12,
+"out": 372.12
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE BATHROOM DRYING ROOM",
+"at": 421.58,
+"out": 425.58
+},
+{
+"k": "deal",
+"at": 524.8,
+"out": 529.3
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "ONE SMALL RACK, PILED",
+"at": 535.26,
+"out": 543.26
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "ON THE RADIATOR",
+"at": 551.9,
+"out": 559.9
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "WINDOW NEVER OPEN",
+"at": 571.42,
+"out": 579.42
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "WASHING AT NIGHT",
+"at": 590.84,
+"out": 598.84
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "A STUFFED MACHINE",
+"at": 606.08,
+"out": 614.08
+},
+{
+"k": "step",
+"n": 6,
+"name": "SHIRTS ON HANGERS",
+"at": 620.3,
+"out": 624.3
+},
+{
+"k": "step",
+"n": 7,
+"name": "WASH IN THE MORNING",
+"at": 688.42,
+"out": 692.42
+},
+{
+"k": "step",
+"n": 8,
+"name": "TURN IT OVER AT NOON",
+"at": 765.28,
+"out": 769.28
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE TOWEL ROLL",
+"at": 1083.97,
+"out": 1087.97
+},
+{
+"k": "recap",
+"rows": [
+1280.63,
+1286.57,
+1289.83,
+1293.61,
+1298.35,
+1303.37,
+1307.37,
+1310.71,
+1313.87
+],
+"at": 1277.27,
+"out": 1319.87
+},
+{
+"k": "ask",
+"at": 1327.47,
+"out": 1338.47
+}
+],
+"cta1": {
+"guide": 134.32,
+"book": 142.7,
+"desc": 149.52,
+"manual": "MY MOTHER'S KAKEBO · OSAKA WAY SET",
+"img": "km_p001",
+"pageTxt": "",
+"end": 155.52
+},
+"cta2": {
+"guide": 1262.63,
+"book": 1269.55,
+"page": 1272.27,
+"desc": 1274.39,
+"manual": "MY MOTHER'S KAKEBO · OSAKA WAY SET",
+"img": "km_p012",
+"pageTxt": "",
+"end": 1280.39
+},
+"cta3": {
+"desc": 1339.71,
+"end": 1344.71
+},
+"end": 1357.07,
+"st": {
+"bed": [
+[
+12.68,
+14.0
+],
+[
+1050.133,
+1083.773
+]
+],
+"laundry": [
+[
+303.6,
+368.118
+],
+[
+599.658,
+765.076
+]
+],
+"socks": [
+[
+342.238,
+1357.07
+]
+],
+"meal": [],
+"radio": [
+[
+887.896,
+1050.133
+]
+],
+"book": [
+[
+134.32,
+151.94
+],
+[
+1262.633,
+1277.273
+]
+],
+"open": [
+[
+149.52,
+151.94
+],
+[
+1274.393,
+1277.273
+]
+],
+"hi0": [
+[
+1269.554,
+1272.273
+]
+],
+"hi1": [
+[
+1272.273,
+1277.273
+]
+],
+"eve": [
+[
+1253.653,
+1357.07
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "THE 9 NO-DRYER TRICKS",
+"recap": [
+"The extra spin",
+"Shake it 3 times",
+"The octopus hanger",
+"Hang in an arch",
+"The bathroom drying room",
+"Shirts on hangers",
+"Wash in the morning",
+"Turn it over at noon",
+"The towel roll"
+],
+"ask": [
+"IN THE COMMENTS",
+"How many times a week does your dryer run?",
+"Be honest."
+],
+"next": [
+"",
+""
+],
+"lower": [
+24.8,
+30.8
+]
+}
+}
