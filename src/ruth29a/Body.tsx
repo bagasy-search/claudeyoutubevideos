@@ -2,10 +2,10 @@
 // el avatar entra y sale con CORTE SECO en sus ventanas pagadas; Veo / fotos por tramos anclados a su frase (plan_ruth.py);
 // un componente único por minuto (heroes.json → comps.tsx). Audio fuera de Remotion (encfin).
 import React from "react";
-import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { AbsoluteFill, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 import PLAN from "./plan.json";
 import HEROES from "./heroes.json";
-import { COL, FONT, LowerThird, Vid, e } from "./lib";
+import { COL, FONT, LowerThird, P, Vid, e, s as fr } from "./lib";
 import { Avatar, OK, Shot, WIN, World } from "./parts";
 import { CamaraMano } from "../kits/camara/CamaraMano";
 import { H, phys, cl, eIn, HAND, MARK } from "./hkit";
@@ -45,11 +45,17 @@ const imgNear = (t: number, used: Set<string>, max = 40): string | undefined => 
 };
 const HS: H[] = (HEROES as H[]).map((h) => {
   const u = new Set<string>();
-  const out: H = { ...h, bg: imgNear(h.at + 1, u) };
+  // 30-oct (ojopush: 2 destellos en ruth29d): 2-3 cuadros del mundo entre el corte del avatar y la entrada del héroe = destello → el héroe arranca pegado al corte
+  const pe = Math.max(-9, ...WIN.map((w) => w.me).filter((x) => x <= h.at + 1e-6));
+  const at = h.at - pe > 0 && h.at - pe < 0.35 ? pe + 0.1 : h.at;
+  const out: H = { ...h, at, bg: imgNear(h.at + 1, u) };
   if (h.imgsAt) out.imgs = (h.imgsAt as number[]).map((x) => imgNear(x, u, 400));
   return out;
 });
-const Heroes: React.FC<{ t: number }> = ({ t }) => <>{HS.map((h, i) => { const C = HC[h.k]; return C && t > h.at - 0.1 && t < h.out + 0.9 ? <C key={i} t={t} h={h} /> : null; })}</>;
+// TOPE DEL EVALUADOR (30-oct): héroe con `veo` = la pieza quedó <6 → su clip Veo de 8 s (estirado al hueco, sin congelar); si no llegó, el mundo
+const HVeo: React.FC<{ t: number; h: any }> = ({ t, h }) => { const d = h.out - h.at, r = Math.min(1, Math.max(0.6, 7.8 / d)); return OK.has(h.veo) ? <AbsoluteFill style={{ transform: `scale(${1.02 + 0.03 * e(t, h.at, h.out)})` }}><Sequence from={fr(h.at)} layout="none"><OffthreadVideo src={staticFile(P + "veo/" + h.veo + ".mp4")} playbackRate={r} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></Sequence></AbsoluteFill> : <World t={t} />; };
+// 30-oct (qcpush ruth29e: 3 congelados en piezas con tramos quietos) → toda pieza respira con una deriva suave de cámara
+const Heroes: React.FC<{ t: number }> = ({ t }) => <>{HS.map((h: any, i) => { const C = HC[h.k]; if (!(t > h.at - 0.1 && t < h.out + 0.9)) return null; return h.veo ? (t < h.out ? <HVeo key={i} t={t} h={h} /> : null) : C ? <AbsoluteFill key={i} style={{ transform: `scale(${1.015 + 0.025 * Math.sin((t - h.at) * 0.7)}) translate(${7 * Math.sin((t - h.at) * 0.45)}px,${5 * Math.sin((t - h.at) * 0.6)}px)` }}><C t={t} h={h} /></AbsoluteFill> : null; })}</>;
 
 // ===== los 5 errores: carrusel 3D de tarjetas 9:16 con foto (sobre el avatar se esconde) =====
 const MIS = PL.ov.filter((o) => o.k === "mistake").sort((a, b) => a.n - b.n);
@@ -93,7 +99,7 @@ export const Body: React.FC = () => {
     {/* cámara a mano virtual (balanceo lento, no temblor) sobre todo lo filmado */}
     <CamaraMano intensidad={0.8}><Stage t={t} /></CamaraMano>
     <LowerThird t={t} at={PL.lower[0]} out={PL.lower[1]} name="RUTH DALBY" l2={PL.txt.lower2} l2at={PL.lower[0] + 1} />
-    <Mistakes t={t} />
+    {/* 30-oct: la tarjeta del carrusel quedaba quieta ~3 s (congelado en el farm) → respiración lenta */}<AbsoluteFill style={{ transform: `scale(${1 + 0.03 * Math.sin(t * 0.8)}) translateY(${6 * Math.sin(t * 0.6)}px)` }}><Mistakes t={t} /></AbsoluteFill>
     <Heroes t={t} />
     <CTA t={t} />
     <AbsoluteFill style={{ background: "#000", opacity: fade }} />

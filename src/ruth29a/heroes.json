@@ -25,7 +25,8 @@
   "k": "portRoute",
   "mode": "wipe",
   "at": 153.83,
-  "out": 163.25
+  "out": 163.25,
+  "veo": "r_portRoute"
  },
  {
   "k": "notebook",
@@ -40,7 +41,8 @@
    9.9
   ],
   "at": 216.79,
-  "out": 228.29
+  "out": 228.29,
+  "veo": "r_moundMower"
  },
  {
   "k": "newsMenace",
@@ -64,7 +66,8 @@
   "k": "acreSquare",
   "mode": "wipe",
   "at": 336.93,
-  "out": 347.46
+  "out": 347.46,
+  "veo": "r_acreSquare"
  },
  {
   "k": "warnLetters",
@@ -132,7 +135,8 @@
   "k": "lakeMap",
   "mode": "wipe",
   "at": 784.39,
-  "out": 795.89
+  "out": 795.89,
+  "veo": "r_lakeMap"
  },
  {
   "k": "cancelStamp",
@@ -170,7 +174,8 @@
    10.19
   ],
   "at": 1049.58,
-  "out": 1061.37
+  "out": 1061.37,
+  "veo": "r_timelineRail"
  },
  {
   "k": "twoStep",
@@ -216,7 +221,8 @@
   "k": "underneath",
   "mode": "iris",
   "at": 1480.59,
-  "out": 1485.49
+  "out": 1485.49,
+  "veo": "r_underneath"
  },
  {
   "k": "recapReel",
