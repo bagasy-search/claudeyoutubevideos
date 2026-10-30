@@ -1,0 +1,288 @@
+[
+{
+"k": "c_milk",
+"at": 3.6,
+"out": 9.6,
+"said": 0.0,
+"solo": true,
+"kw": "THE BLACK LINE",
+"kw2": "deep in the fold, eye level",
+"ph": "ph_c_milk"
+},
+{
+"k": "c_fridges",
+"at": 23.74,
+"out": 29.74,
+"said": 23.74,
+"solo": true,
+"kw": "HALF OF THEM",
+"kw2": "have that black line",
+"ph": "ph_c_fridges"
+},
+{
+"k": "c_magnet",
+"at": 104.34,
+"out": 110.84,
+"said": 102.94,
+"solo": true,
+"kw": "THE MAGNET",
+"kw2": "hidden inside a pleat",
+"ph": "ph_c_magnet"
+},
+{
+"k": "c_pickle",
+"at": 127.54,
+"out": 132.04,
+"said": 128.54,
+"sp": 1.333,
+"solo": true,
+"kw": "PICKLE JUICE",
+"kw2": "dripping into the fold",
+"ph": "ph_c_pickle"
+},
+{
+"k": "c_vinyl",
+"at": 169.28,
+"out": 175.78,
+"said": 169.28,
+"solo": true,
+"kw": "SOFT VINYL",
+"kw2": "bleach dries it out",
+"ph": "ph_c_vinyl"
+},
+{
+"k": "c_stiffer",
+"at": 196.94,
+"out": 202.94,
+"said": 194.74,
+"solo": true,
+"kw": "STIFFER",
+"kw2": "every round of bleach",
+"ph": "ph_c_stiffer"
+},
+{
+"k": "c_shelves",
+"at": 231.78,
+"out": 237.78,
+"said": 229.88,
+"solo": true,
+"kw": "LIFT THEM OUT",
+"kw2": "shelves into the sink",
+"ph": "ph_c_shelves"
+},
+{
+"k": "c_finger",
+"at": 250.74,
+"out": 256.74,
+"said": 250.74,
+"solo": true,
+"kw": "PULL BACK",
+"kw2": "each fold, top to bottom",
+"ph": "ph_c_finger"
+},
+{
+"k": "c_baby",
+"at": 264.4,
+"out": 270.4,
+"said": 264.4,
+"solo": true,
+"kw": "WARM, NOT HOT",
+"kw2": "like you'd wash a baby",
+"ph": "ph_c_baby"
+},
+{
+"k": "c_dull",
+"at": 295.96,
+"out": 301.96,
+"said": 293.26,
+"solo": true,
+"kw": "ROUND + DULL",
+"kw2": "never a sharp knife",
+"ph": "ph_c_dull"
+},
+{
+"k": "c_twoweeks",
+"at": 334.64,
+"out": 340.64,
+"said": 334.64,
+"solo": true,
+"kw": "INSIDE THE FOLD",
+"kw2": "not on the outside",
+"ph": "ph_c_twoweeks"
+},
+{
+"k": "c_crack",
+"at": 369.005,
+"out": 374.5,
+"said": 369.0,
+"sp": 1.091,
+"solo": true,
+"kw": "LEAVE IT ALONE",
+"kw2": "let the peroxide work",
+"ph": "ph_c_crack"
+},
+{
+"k": "c_swabs",
+"at": 414.245,
+"out": 420.25,
+"said": 414.25,
+"solo": true,
+"kw": "COTTON SWABS",
+"kw2": "the water you didn't see",
+"ph": "ph_c_swabs"
+},
+{
+"k": "c_stain",
+"at": 448.045,
+"out": 452.55,
+"said": 448.05,
+"sp": 1.444,
+"solo": true,
+"kw": "JUST A STAIN",
+"kw2": "not living mold",
+"ph": "ph_c_stain"
+},
+{
+"k": "c_raw",
+"at": 466.93,
+"out": 471.43,
+"said": 468.43,
+"sp": 1.333,
+"solo": true,
+"kw": "NOT RAW",
+"kw2": "stop when the swab is clean",
+"ph": "ph_c_raw"
+},
+{
+"k": "c_bill",
+"at": 512.545,
+"out": 518.54,
+"said": 512.54,
+"solo": true,
+"kw": "CLOSE IT ON THE BILL",
+"kw2": "then pull gently",
+"ph": "ph_c_bill"
+},
+{
+"k": "c_freezer",
+"at": 538.605,
+"out": 544.61,
+"said": 538.61,
+"solo": true,
+"kw": "THE FREEZER TOO",
+"kw2": "four spots each",
+"ph": "ph_c_freezer"
+},
+{
+"k": "c_frigidaire",
+"at": 597.88,
+"out": 602.38,
+"said": 600.18,
+"sp": 1.444,
+"solo": true,
+"kw": "AVOCADO GREEN",
+"kw2": "Aunt June's Frigidaire",
+"ph": "ph_c_frigidaire"
+},
+{
+"k": "c_hinge",
+"at": 625.8,
+"out": 632.3,
+"said": 625.3,
+"solo": true,
+"kw": "THE HINGE SIDE",
+"kw2": "it dries out first",
+"ph": "ph_c_hinge"
+},
+{
+"k": "c_baster",
+"at": 690.47,
+"out": 696.47,
+"said": 688.87,
+"solo": true,
+"kw": "A TURKEY BASTER",
+"kw2": "warm water down the hole",
+"ph": "ph_c_baster"
+},
+{
+"k": "c_season",
+"at": 811.21,
+"out": 817.71,
+"said": 806.41,
+"solo": true,
+"kw": "EVERY SEASON",
+"kw2": "the first Saturday",
+"ph": "ph_c_season"
+},
+{
+"k": "c_weep",
+"at": 828.11,
+"out": 834.11,
+"said": 822.71,
+"solo": true,
+"kw": "THEY WEEP",
+"kw2": "soft fruit in the crisper",
+"ph": "ph_c_weep"
+},
+{
+"k": "c_lean",
+"at": 860.63,
+"out": 866.63,
+"said": 854.73,
+"solo": true,
+"kw": "DON'T LEAN ON IT",
+"kw2": "a crushed seal",
+"ph": "ph_c_lean"
+},
+{
+"k": "c_crisper",
+"at": 977.51,
+"out": 984.01,
+"said": 973.31,
+"solo": true,
+"kw": "THE CRISPERS",
+"kw2": "look underneath them",
+"ph": "ph_c_crisper"
+},
+{
+"k": "c_coils",
+"at": 1057.57,
+"out": 1064.07,
+"said": 1054.17,
+"solo": true,
+"kw": "THE COILS",
+"kw2": "under the front grill",
+"ph": "ph_c_coils"
+},
+{
+"k": "c_dispenser",
+"at": 1193.214,
+"out": 1197.71,
+"said": 1193.21,
+"sp": 1.444,
+"solo": true,
+"kw": "THE DISPENSER",
+"kw2": "same black, same fix",
+"ph": "ph_c_dispenser"
+},
+{
+"k": "c_bottles",
+"at": 1254.01,
+"out": 1260.51,
+"said": 1252.11,
+"solo": true,
+"kw": "BABY BOTTLES",
+"kw2": "dripping at three in the morning",
+"ph": "ph_c_bottles"
+},
+{
+"k": "c_stroller",
+"at": 1303.83,
+"out": 1310.33,
+"said": 1301.83,
+"solo": true,
+"kw": "A DOUBLE STROLLER",
+"kw2": "instead of a new seal",
+"ph": "ph_c_stroller"
+}
+]
