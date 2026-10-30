@@ -54,12 +54,12 @@ export const Mano: React.FC<{ p: V3; rot?: V3; pinza?: number; dedos?: number; s
 );
 // olla (barro / peltre / vidrio) con caldo, frijoles y hervor
 const ollaGeo = lathe([[0, 0], [0.5, 0], [0.62, 0.12], [0.68, 0.42], [0.64, 0.7], [0.6, 0.76], [0.66, 0.8]]);
-export const Olla: React.FC<{ p?: V3; rot?: V3; mat?: "barro" | "peltre" | "vidrio"; nivel?: number; caldo?: string; frijol?: number; hinchado?: number; fc?: string; hervor?: number; t?: number; s?: number; children?: React.ReactNode }> =
-  ({ p, rot, mat = "barro", nivel = 0, caldo = "#5a2a1a", frijol = 0, hinchado = 0, fc = "#5a2418", hervor = 0, t = 0, s = 1, children }) => (
+export const Olla: React.FC<{ p?: V3; rot?: V3; mat?: "barro" | "peltre" | "vidrio"; nivel?: number; caldo?: string; frijol?: number; hinchado?: number; fc?: string; hervor?: number; t?: number; s?: number; fs?: number; children?: React.ReactNode }> =
+  ({ p, rot, mat = "barro", nivel = 0, caldo = "#5a2a1a", frijol = 0, hinchado = 0, fc = "#5a2418", hervor = 0, t = 0, s = 1, fs = 0.05, children }) => (
   <group position={p} rotation={rot} scale={s}>
     {nivel > 0.01 && <mesh position={[0, 0.02 + 0.37 * nivel, 0]}><cylinderGeometry args={[0.6 + 0.06 * Math.min(1, nivel * 1.4), 0.52, 0.74 * nivel, 40]} />{M.liquido(caldo, mat === "vidrio" ? 0.75 : 0.96)}</mesh>}
     {Array.from({ length: frijol }, (_, i) => { const a = rn(i, 11) * 6.28, r = Math.sqrt(rn(i, 12)) * 0.48, y = 0.06 + (i % 5) * 0.05 + 0.03 * Math.sin(t * 7 + i) * hervor;
-      return <Frijol key={i} p={[Math.cos(a) * r, y, Math.sin(a) * r]} rot={[rn(i, 13) * 3, rn(i, 14) * 6, 0]} s={0.05} c={fc} hinchado={hinchado} />; })}
+      return <Frijol key={i} p={[Math.cos(a) * r, y, Math.sin(a) * r]} rot={[rn(i, 13) * 3, rn(i, 14) * 6, 0]} s={fs} c={fc} hinchado={hinchado} />; })}
     {hervor > 0 && nivel > 0 && Array.from({ length: 10 }, (_, i) => { const k = (t * 1.6 + rn(i, 15)) % 1;
       return <mesh key={"b" + i} position={[(rn(i, 16) - 0.5) * 0.8, 0.04 + 0.74 * nivel, (rn(i, 17) - 0.5) * 0.8]} scale={0.001 + 0.045 * hervor * Math.sin(k * Math.PI)}><sphereGeometry args={[1, 10, 8]} />{M.liquido("#8a5a40", 0.7)}</mesh>; })}
     <mesh geometry={ollaGeo} castShadow receiveShadow>{mat === "vidrio" ? M.vidrio() : mat === "peltre" ? <meshPhysicalMaterial color="#2c4a6e" roughness={0.25} clearcoat={1} side={THREE.DoubleSide} /> : <meshStandardMaterial color="#9a4f2c" roughness={0.62} side={THREE.DoubleSide} />}</mesh>
