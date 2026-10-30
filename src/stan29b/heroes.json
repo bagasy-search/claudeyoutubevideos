@@ -1,0 +1,301 @@
+[
+ {
+  "k": "lace",
+  "at": 8.92,
+  "out": 14.92,
+  "said": 8.92,
+  "ph": "ph_lace",
+  "solo": true,
+  "kw": "CRISPY LACE",
+  "kw2": "the edges"
+ },
+ {
+  "k": "shelf",
+  "at": 60.9,
+  "out": 65.9,
+  "said": 60.9,
+  "sp": 1.2,
+  "ph": "ph_shelf",
+  "solo": true,
+  "kw": "NO SECRET SAUCE",
+  "kw2": ""
+ },
+ {
+  "k": "melt",
+  "at": 121.44,
+  "out": 127.44,
+  "said": 121.44,
+  "ph": "ph_melt",
+  "solo": true,
+  "kw": "FAT = JUICE",
+  "kw2": ""
+ },
+ {
+  "k": "pie",
+  "at": 140.88,
+  "out": 146.88,
+  "said": 140.88,
+  "ph": "ph_pie",
+  "solo": true,
+  "kw": "80-20",
+  "kw2": ""
+ },
+ {
+  "k": "hopper",
+  "at": 175.76,
+  "out": 181.26,
+  "said": 175.76,
+  "ph": "ph_hopper",
+  "solo": true,
+  "kw": "TRIMMINGS",
+  "kw2": "whatever they had that day"
+ },
+ {
+  "k": "chalk",
+  "at": 187.98,
+  "out": 194.48,
+  "said": 187.98,
+  "ph": "ph_chalk",
+  "solo": true,
+  "kw": "30 YEARS",
+  "kw2": "it stayed up there"
+ },
+ {
+  "k": "wilt",
+  "at": 236.1,
+  "out": 242.1,
+  "said": 236.1,
+  "ph": "ph_wilt",
+  "solo": true,
+  "kw": "\"SIRLOIN\"",
+  "kw2": "because it sounds fancy"
+ },
+ {
+  "k": "mercury",
+  "at": 257.54,
+  "out": 262.04,
+  "said": 257.54,
+  "sp": 1.222,
+  "ph": "ph_mercury",
+  "solo": true,
+  "kw": "98°",
+  "kw2": "Chicago"
+ },
+ {
+  "k": "butter",
+  "at": 290.82,
+  "out": 295.32,
+  "said": 292.62,
+  "sp": 1.333,
+  "ph": "ph_butter",
+  "solo": true,
+  "kw": "IT COATS",
+  "kw2": "the lean meat"
+ },
+ {
+  "k": "frost",
+  "at": 309.48,
+  "out": 315.48,
+  "said": 309.48,
+  "ph": "ph_frost",
+  "solo": true,
+  "kw": "20 MINUTES",
+  "kw2": "in the freezer"
+ },
+ {
+  "k": "holes",
+  "at": 352.237,
+  "out": 358.74,
+  "said": 352.24,
+  "ph": "ph_holes",
+  "solo": true,
+  "kw": "⅛ INCH",
+  "kw2": "small holes"
+ },
+ {
+  "k": "pulse",
+  "at": 389.58,
+  "out": 394.08,
+  "said": 391.78,
+  "sp": 1.333,
+  "ph": "ph_pulse",
+  "solo": true,
+  "kw": "SHORT PULSES",
+  "kw2": ""
+ },
+ {
+  "k": "timecard",
+  "at": 434.257,
+  "out": 440.26,
+  "said": 434.26,
+  "ph": "ph_timecard",
+  "solo": true,
+  "kw": "EDDIE, 16",
+  "kw2": ""
+ },
+ {
+  "k": "dimple",
+  "at": 498.997,
+  "out": 505.0,
+  "said": 499.0,
+  "ph": "ph_dimple",
+  "solo": true,
+  "kw": "THE DIMPLE",
+  "kw2": "use your thumb"
+ },
+ {
+  "k": "morph",
+  "at": 554.2,
+  "out": 558.7,
+  "said": 556.5,
+  "sp": 1.333,
+  "ph": "ph_morph",
+  "solo": true,
+  "kw": "HALFWAY",
+  "kw2": "to a hot dog"
+ },
+ {
+  "k": "pinch",
+  "at": 589.62,
+  "out": 594.12,
+  "said": 591.22,
+  "sp": 1.222,
+  "ph": "ph_pinch",
+  "solo": true,
+  "kw": "FROM HIGH UP",
+  "kw2": "pinch the salt"
+ },
+ {
+  "k": "smash",
+  "at": 620.017,
+  "out": 625.52,
+  "said": 620.02,
+  "sp": 1.091,
+  "ph": "ph_smash",
+  "solo": true,
+  "kw": "PARCHMENT",
+  "kw2": "then you smash"
+ },
+ {
+  "k": "sizzle",
+  "at": 665.014,
+  "out": 671.01,
+  "said": 665.01,
+  "ph": "ph_sizzle",
+  "solo": true,
+  "kw": "SIZZLE",
+  "kw2": ""
+ },
+ {
+  "k": "dome",
+  "at": 725.354,
+  "out": 731.85,
+  "said": 725.35,
+  "ph": "ph_dome",
+  "solo": true,
+  "kw": "LID ON",
+  "kw2": "or a metal bowl"
+ },
+ {
+  "k": "mix",
+  "at": 773.854,
+  "out": 779.85,
+  "said": 773.85,
+  "ph": "ph_mix",
+  "solo": true,
+  "kw": "MIXED IN",
+  "kw2": "outside into inside"
+ },
+ {
+  "k": "swatch",
+  "at": 823.694,
+  "out": 829.19,
+  "said": 823.69,
+  "ph": "ph_swatch",
+  "solo": true,
+  "kw": "COLOR ≠ TEMP",
+  "kw2": ""
+ },
+ {
+  "k": "spike",
+  "at": 893.254,
+  "out": 899.25,
+  "said": 893.25,
+  "ph": "ph_spike",
+  "solo": true,
+  "kw": "MONDAY",
+  "kw2": "every morning"
+ },
+ {
+  "k": "fade",
+  "at": 941.454,
+  "out": 947.45,
+  "said": 941.45,
+  "ph": "ph_fade",
+  "solo": true,
+  "kw": "IT FADES",
+  "kw2": "the longer it sits"
+ },
+ {
+  "k": "cubes",
+  "at": 980.57,
+  "out": 985.07,
+  "said": 981.67,
+  "sp": 1.222,
+  "ph": "ph_cubes",
+  "solo": true,
+  "kw": "CHUCK ROAST",
+  "kw2": "buy it whole"
+ },
+ {
+  "k": "bun",
+  "at": 1051.09,
+  "out": 1057.09,
+  "said": 1051.09,
+  "ph": "ph_bun",
+  "solo": true,
+  "kw": "DRY PAN",
+  "kw2": "toast the buns"
+ },
+ {
+  "k": "flatbag",
+  "at": 1103.81,
+  "out": 1109.81,
+  "said": 1103.81,
+  "ph": "ph_flatbag",
+  "solo": true,
+  "kw": "FREEZE IT FLAT",
+  "kw2": ""
+ },
+ {
+  "k": "onion",
+  "at": 1153.11,
+  "out": 1158.61,
+  "said": 1153.11,
+  "ph": "ph_onion",
+  "solo": true,
+  "kw": "ONIONS = WATER",
+  "kw2": ""
+ },
+ {
+  "k": "grates",
+  "at": 1189.45,
+  "out": 1193.95,
+  "said": 1189.45,
+  "sp": 1.333,
+  "ph": "ph_grates",
+  "solo": true,
+  "kw": "NO GRATES",
+  "kw2": "the meat falls through"
+ },
+ {
+  "k": "paperbag",
+  "at": 1218.37,
+  "out": 1224.37,
+  "said": 1218.37,
+  "ph": "ph_paperbag",
+  "solo": true,
+  "kw": "NEXT WEEK",
+  "kw2": "she came back"
+ }
+]

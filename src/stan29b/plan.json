@@ -1,0 +1,2084 @@
+{
+"segs": [
+[
+3.6,
+7.76,
+"shot",
+"n_barra_burger"
+],
+[
+7.76,
+13.46,
+"shot",
+"v01_lace"
+],
+[
+13.46,
+17.272,
+"shot",
+"n_jugo_muneca"
+],
+[
+22.613,
+26.96,
+"shot",
+"n_hockey_puck"
+],
+[
+26.96,
+30.94,
+"shot",
+"f_mostrador_brazos"
+],
+[
+30.94,
+32.1,
+"shot",
+"f_saluda_delantal"
+],
+[
+35.824,
+39.86,
+"shot",
+"n_hobart_viejo"
+],
+[
+39.86,
+46.42,
+"shot",
+"n_maxwell_puesto"
+],
+[
+46.42,
+49.0,
+"shot",
+"n_vidriera_salchichas"
+],
+[
+54.321,
+60.9,
+"shot",
+"n_cuenta_20"
+],
+[
+60.9,
+63.76,
+"shot",
+"n_salsas_tachadas"
+],
+[
+63.76,
+66.181,
+"shot",
+"f_cuchillos_moledora"
+],
+[
+70.108,
+76.02,
+"shot",
+"n_milwaukee_bar"
+],
+[
+76.02,
+80.571,
+"shot",
+"n_burger_casera_mala"
+],
+[
+84.911,
+91.66,
+"shot",
+"f_senala_canal"
+],
+[
+91.66,
+93.72,
+"shot",
+"f_arremanga"
+],
+[
+93.72,
+97.455,
+"shot",
+"n_paquetes_8020"
+],
+[
+101.008,
+105.08,
+"shot",
+"n_cracovia_aldea"
+],
+[
+105.08,
+106.34,
+"shot",
+"n_padre_moledora"
+],
+[
+106.34,
+112.4,
+"shot",
+"n_clienta_1960"
+],
+[
+116.8,
+121.44,
+"shot",
+"v02_grasa"
+],
+[
+121.44,
+123.82,
+"shot",
+"n_grasa_blanca"
+],
+[
+123.82,
+129.552,
+"shot",
+"n_grasa_derrite"
+],
+[
+134.3,
+140.88,
+"shot",
+"n_tacos_chili"
+],
+[
+140.88,
+145.16,
+"shot",
+"n_bandeja_8020"
+],
+[
+145.16,
+146.9,
+"shot",
+"n_etiqueta_8020"
+],
+[
+151.5,
+155.6,
+"shot",
+"n_grasa_sarten"
+],
+[
+155.6,
+160.78,
+"shot",
+"n_paquete_magro"
+],
+[
+160.78,
+163.5,
+"shot",
+"n_burger_carton"
+],
+[
+169.433,
+172.06,
+"shot",
+"n_recortes_vitrina"
+],
+[
+172.06,
+179.5,
+"shot",
+"n_paquete_generico"
+],
+[
+179.5,
+181.8,
+"shot",
+"n_dos_paquetes"
+],
+[
+187.7,
+194.78,
+"shot",
+"n_pizarra_mezcla"
+],
+[
+194.78,
+196.1,
+"shot",
+"n_pieza_chuck"
+],
+[
+196.1,
+199.3,
+"shot",
+"f_toca_chuck"
+],
+[
+203.4,
+211.56,
+"shot",
+"n_short_rib"
+],
+[
+211.56,
+214.376,
+"shot",
+"f_explica_dedo"
+],
+[
+218.3,
+222.54,
+"shot",
+"n_brisket_crudo"
+],
+[
+222.54,
+228.78,
+"shot",
+"n_paquete_chuck"
+],
+[
+228.78,
+231.7,
+"shot",
+"n_chuck_molido"
+],
+[
+235.904,
+242.6,
+"shot",
+"n_paquete_sirloin"
+],
+[
+242.6,
+245.02,
+"shot",
+"n_burger_triste"
+],
+[
+245.02,
+247.264,
+"shot",
+"f_pizarra_tiza"
+],
+[
+251.9,
+255.02,
+"shot",
+"v03_frio"
+],
+[
+255.02,
+259.88,
+"shot",
+"n_chicago_1977"
+],
+[
+259.88,
+262.352,
+"shot",
+"n_trastienda_calor"
+],
+[
+267.3,
+274.86,
+"shot",
+"n_pasta_rosa"
+],
+[
+274.86,
+278.72,
+"shot",
+"n_apaga_maquina"
+],
+[
+278.72,
+280.582,
+"shot",
+"n_freezer_bandejas"
+],
+[
+284.622,
+291.04,
+"shot",
+"n_grasa_blanda"
+],
+[
+291.04,
+295.451,
+"shot",
+"n_manteca_pan"
+],
+[
+301.404,
+303.82,
+"shot",
+"n_cubos_frios"
+],
+[
+303.82,
+312.38,
+"shot",
+"n_cuchilla_freezer"
+],
+[
+312.38,
+315.7,
+"shot",
+"n_bordes_duros"
+],
+[
+320.9,
+324.32,
+"shot",
+"n_heladera_fondo"
+],
+[
+324.32,
+330.22,
+"shot",
+"n_mesada_tibia"
+],
+[
+330.22,
+332.7,
+"shot",
+"n_reloj_cocina"
+],
+[
+336.6,
+342.86,
+"shot",
+"f_heladera_guarda"
+],
+[
+342.86,
+346.473,
+"shot",
+"n_placas_moledora"
+],
+[
+349.7,
+352.24,
+"shot",
+"n_moledora_hilos"
+],
+[
+352.24,
+356.54,
+"shot",
+"n_placa_fina"
+],
+[
+356.54,
+362.998,
+"shot",
+"n_paquete_liso"
+],
+[
+366.23,
+369.9,
+"shot",
+"n_bar_cocina_70"
+],
+[
+369.9,
+374.6,
+"shot",
+"v04_grueso"
+],
+[
+374.6,
+376.659,
+"shot",
+"n_textura_grava"
+],
+[
+382.0,
+385.4,
+"shot",
+"n_pan_carne"
+],
+[
+385.4,
+388.44,
+"shot",
+"n_placa_grande"
+],
+[
+388.44,
+394.1,
+"shot",
+"n_procesadora"
+],
+[
+398.9,
+402.52,
+"shot",
+"n_pulsos_grava"
+],
+[
+402.52,
+408.1,
+"shot",
+"f_pide_grueso"
+],
+[
+408.1,
+412.678,
+"shot",
+"n_pasta_procesadora"
+],
+[
+416.718,
+421.56,
+"shot",
+"f_moledora_manual"
+],
+[
+421.56,
+423.48,
+"shot",
+"n_reloj_mano"
+],
+[
+423.48,
+427.578,
+"shot",
+"f_ceja_alzada"
+],
+[
+432.949,
+434.26,
+"shot",
+"n_bola_suelta"
+],
+[
+434.26,
+441.06,
+"shot",
+"n_eddie_1975"
+],
+[
+441.06,
+444.4,
+"shot",
+"n_amasa_pan"
+],
+[
+448.132,
+452.68,
+"shot",
+"n_bar_quejas"
+],
+[
+452.68,
+458.04,
+"shot",
+"f_mira_desconfiado"
+],
+[
+458.04,
+460.1,
+"shot",
+"n_aprieta_carne"
+],
+[
+465.205,
+468.74,
+"shot",
+"n_salchicha_cruda"
+],
+[
+468.74,
+473.9,
+"shot",
+"n_burger_suelta"
+],
+[
+473.9,
+475.38,
+"shot",
+"f_manos_listas"
+],
+[
+479.4,
+483.64,
+"shot",
+"v05_bola"
+],
+[
+483.64,
+489.94,
+"shot",
+"n_bola_floja"
+],
+[
+489.94,
+491.467,
+"shot",
+"n_bolas_plato"
+],
+[
+497.403,
+502.2,
+"shot",
+"n_hoyuelo"
+],
+[
+502.2,
+506.26,
+"shot",
+"n_burger_pelota"
+],
+[
+506.26,
+508.763,
+"shot",
+"n_patys_heladera"
+],
+[
+514.734,
+519.06,
+"shot",
+"n_burger_rebota"
+],
+[
+519.06,
+523.88,
+"shot",
+"f_nieto_risa"
+],
+[
+523.88,
+526.555,
+"shot",
+"n_burger_nietos"
+],
+[
+531.731,
+536.12,
+"shot",
+"n_sal_mezclada"
+],
+[
+536.12,
+541.76,
+"shot",
+"n_condimentos"
+],
+[
+541.76,
+544.355,
+"shot",
+"f_dedo_no"
+],
+[
+548.002,
+554.36,
+"shot",
+"n_relleno_salchicha"
+],
+[
+554.36,
+558.776,
+"shot",
+"n_hot_dog"
+],
+[
+563.6,
+565.58,
+"shot",
+"n_bola_sarten"
+],
+[
+565.58,
+573.64,
+"shot",
+"n_sal_arriba"
+],
+[
+573.64,
+576.9,
+"shot",
+"n_costra_sal"
+],
+[
+581.5,
+587.12,
+"shot",
+"n_bowl_reposa"
+],
+[
+587.12,
+592.48,
+"shot",
+"f_sal_altura"
+],
+[
+592.48,
+594.191,
+"shot",
+"n_sal_cae"
+],
+[
+600.03,
+607.44,
+"shot",
+"n_borde_encaje"
+],
+[
+607.44,
+609.156,
+"shot",
+"n_sarten_humo"
+],
+[
+612.8,
+617.02,
+"shot",
+"n_gotas_aceite"
+],
+[
+617.02,
+620.02,
+"shot",
+"n_bola_centro"
+],
+[
+620.02,
+625.6,
+"shot",
+"v06_smash"
+],
+[
+629.4,
+632.04,
+"shot",
+"n_dos_manos"
+],
+[
+632.04,
+636.84,
+"shot",
+"n_disco_fino"
+],
+[
+636.84,
+639.8,
+"shot",
+"n_papel_sale"
+],
+[
+645.927,
+652.53,
+"shot",
+"n_contacto_hierro"
+],
+[
+652.53,
+656.569,
+"shot",
+"n_costra_profunda"
+],
+[
+660.849,
+665.01,
+"shot",
+"n_espatula_aprieta"
+],
+[
+665.01,
+671.41,
+"shot",
+"n_jugo_chisporrotea"
+],
+[
+671.41,
+673.253,
+"shot",
+"n_humo_sarten"
+],
+[
+677.221,
+679.85,
+"shot",
+"n_espatula_ansiosa"
+],
+[
+679.85,
+684.67,
+"shot",
+"f_lava_manos"
+],
+[
+684.67,
+687.7,
+"shot",
+"n_borde_oscuro"
+],
+[
+691.12,
+697.41,
+"shot",
+"n_gotas_arriba"
+],
+[
+697.41,
+699.21,
+"shot",
+"n_listo_vuelta"
+],
+[
+699.21,
+703.163,
+"shot",
+"f_espatula_mano"
+],
+[
+708.7,
+714.99,
+"shot",
+"v07_raspa"
+],
+[
+714.99,
+717.69,
+"shot",
+"n_costra_entera"
+],
+[
+717.69,
+718.7,
+"shot",
+"n_vuelta_unica"
+],
+[
+723.7,
+729.09,
+"shot",
+"n_tapa_metal"
+],
+[
+729.09,
+732.5,
+"shot",
+"n_queso_derrite"
+],
+[
+737.423,
+744.39,
+"shot",
+"n_vueltas_muchas"
+],
+[
+744.39,
+748.09,
+"shot",
+"f_tres_dedos"
+],
+[
+748.09,
+750.17,
+"shot",
+"n_termometro_burger"
+],
+[
+754.308,
+756.01,
+"shot",
+"f_serio_franco"
+],
+[
+756.01,
+759.71,
+"shot",
+"n_burger_rosa"
+],
+[
+759.71,
+764.857,
+"shot",
+"n_cocina_resto"
+],
+[
+770.2,
+772.93,
+"shot",
+"n_bife_entero"
+],
+[
+772.93,
+776.61,
+"shot",
+"n_mezcla_adentro"
+],
+[
+776.61,
+781.488,
+"shot",
+"n_termometro_160"
+],
+[
+786.723,
+795.91,
+"shot",
+"n_lista_trucos"
+],
+[
+795.91,
+798.69,
+"shot",
+"n_burger_jugosa_160"
+],
+[
+803.328,
+805.57,
+"shot",
+"n_burger_seca_gruesa"
+],
+[
+805.57,
+811.87,
+"shot",
+"n_termo_lateral"
+],
+[
+811.87,
+814.462,
+"shot",
+"n_display_160"
+],
+[
+819.334,
+826.81,
+"shot",
+"n_corta_mirar"
+],
+[
+826.81,
+829.85,
+"shot",
+"f_termo_bolsillo"
+],
+[
+829.85,
+832.462,
+"shot",
+"f_sonrie_termo"
+],
+[
+836.119,
+841.09,
+"shot",
+"n_bar_lunes"
+],
+[
+841.09,
+844.83,
+"shot",
+"n_cinco_platos"
+],
+[
+844.83,
+849.4,
+"shot",
+"f_advierte"
+],
+[
+855.3,
+861.49,
+"shot",
+"n_amasa_carne"
+],
+[
+861.49,
+866.466,
+"shot",
+"n_sal_bowl"
+],
+[
+871.834,
+876.19,
+"shot",
+"n_espatula_tarde"
+],
+[
+876.19,
+881.89,
+"shot",
+"n_flip_muchas"
+],
+[
+881.89,
+884.955,
+"shot",
+"n_chicago_1982"
+],
+[
+889.2,
+893.25,
+"shot",
+"n_iglesia_polaca"
+],
+[
+893.25,
+898.05,
+"shot",
+"n_pedidos_lunes"
+],
+[
+898.05,
+900.367,
+"shot",
+"n_cocineros_fila"
+],
+[
+904.0,
+908.97,
+"shot",
+"v08_frase"
+],
+[
+908.97,
+916.0,
+"shot",
+"n_chuck_brisket"
+],
+[
+922.3,
+928.43,
+"shot",
+"n_molido_doble"
+],
+[
+928.43,
+933.8,
+"shot",
+"n_una_pasada"
+],
+[
+938.334,
+946.23,
+"shot",
+"n_aire_carne"
+],
+[
+946.23,
+949.653,
+"shot",
+"n_parrilla_bar"
+],
+[
+955.0,
+962.23,
+"shot",
+"f_mostrador_pedido"
+],
+[
+962.23,
+966.65,
+"shot",
+"n_chuck_2libras"
+],
+[
+966.65,
+968.1,
+"shot",
+"n_carnicero_moledora"
+],
+[
+972.73,
+979.91,
+"shot",
+"n_paquete_fresco"
+],
+[
+979.91,
+983.43,
+"shot",
+"n_chuck_roast"
+],
+[
+983.43,
+985.2,
+"shot",
+"n_cubos_cuchillo"
+],
+[
+990.2,
+994.09,
+"shot",
+"n_pulsos_proc"
+],
+[
+994.09,
+996.91,
+"shot",
+"n_bowl_heladera"
+],
+[
+996.91,
+1000.569,
+"shot",
+"n_burger_bar_casa"
+],
+[
+1003.9,
+1008.23,
+"shot",
+"n_paquete_viejo"
+],
+[
+1008.23,
+1012.39,
+"shot",
+"f_nieto_mesa"
+],
+[
+1012.39,
+1015.991,
+"shot",
+"f_guiño"
+],
+[
+1019.731,
+1022.67,
+"shot",
+"n_sabado_mañana"
+],
+[
+1022.67,
+1027.11,
+"shot",
+"n_reloj_10"
+],
+[
+1027.11,
+1030.0,
+"shot",
+"f_pide_carnicero"
+],
+[
+1033.906,
+1039.15,
+"shot",
+"n_heladera_carne"
+],
+[
+1039.15,
+1044.87,
+"shot",
+"n_balanza_cocina"
+],
+[
+1044.87,
+1045.973,
+"shot",
+"n_bolas_papel"
+],
+[
+1050.9,
+1056.81,
+"shot",
+"n_pan_tostado"
+],
+[
+1056.81,
+1063.253,
+"shot",
+"n_reloj_6"
+],
+[
+1067.2,
+1074.15,
+"shot",
+"n_pimienta_alto"
+],
+[
+1074.15,
+1077.13,
+"shot",
+"n_tapa_queso"
+],
+[
+1077.13,
+1078.295,
+"shot",
+"n_burger_final"
+],
+[
+1082.619,
+1083.83,
+"shot",
+"f_mira_foto_padre"
+],
+[
+1083.83,
+1092.57,
+"shot",
+"n_padre_frio"
+],
+[
+1092.57,
+1096.659,
+"shot",
+"n_camara_fria"
+],
+[
+1101.3,
+1110.31,
+"shot",
+"n_bolsa_plana"
+],
+[
+1110.31,
+1113.3,
+"shot",
+"n_pan_rallado_no"
+],
+[
+1118.5,
+1125.19,
+"shot",
+"n_tenedor_burger"
+],
+[
+1125.19,
+1127.176,
+"shot",
+"n_termo_mesa"
+],
+[
+1131.546,
+1135.05,
+"shot",
+"f_escucha_cliente"
+],
+[
+1135.05,
+1141.87,
+"shot",
+"n_pan_grasa"
+],
+[
+1141.87,
+1145.163,
+"shot",
+"n_pan_firme"
+],
+[
+1149.4,
+1154.61,
+"shot",
+"n_cebolla_picada"
+],
+[
+1154.61,
+1159.989,
+"shot",
+"n_burger_rota"
+],
+[
+1165.329,
+1168.55,
+"shot",
+"n_cebollas_grasa"
+],
+[
+1168.55,
+1176.99,
+"shot",
+"n_bolas_bandeja"
+],
+[
+1176.99,
+1177.689,
+"shot",
+"n_freezer_bolas"
+],
+[
+1181.4,
+1185.79,
+"shot",
+"n_descongela"
+],
+[
+1185.79,
+1192.55,
+"shot",
+"n_parrilla_rejilla"
+],
+[
+1192.55,
+1194.158,
+"shot",
+"n_paty_grueso"
+],
+[
+1200.2,
+1204.63,
+"shot",
+"v09_parrilla"
+],
+[
+1204.63,
+1206.45,
+"shot",
+"f_parrilla_patio"
+],
+[
+1206.45,
+1210.7,
+"shot",
+"n_clienta_sabado"
+],
+[
+1215.501,
+1218.37,
+"shot",
+"f_risa_mostrador"
+],
+[
+1218.37,
+1221.59,
+"shot",
+"n_dos_libras_chuck"
+],
+[
+1221.59,
+1229.184,
+"shot",
+"f_cuenta_dedos"
+],
+[
+1233.3,
+1237.53,
+"shot",
+"n_hielo_moledora"
+],
+[
+1237.53,
+1241.79,
+"shot",
+"n_grava_final"
+],
+[
+1241.79,
+1245.356,
+"shot",
+"n_pluma_bola"
+],
+[
+1250.016,
+1254.47,
+"shot",
+"n_smash_final"
+],
+[
+1254.47,
+1258.49,
+"shot",
+"n_flip_costra"
+],
+[
+1258.49,
+1260.8,
+"shot",
+"n_display_160b"
+],
+[
+1265.9,
+1271.25,
+"shot",
+"v10_cierre"
+],
+[
+1271.25,
+1277.75,
+"shot",
+"n_burger_vs_cuenta"
+],
+[
+1277.75,
+1279.2,
+"shot",
+"f_pregunta"
+],
+[
+1283.0,
+1287.77,
+"shot",
+"n_comentarios_mesa"
+],
+[
+1287.77,
+1291.09,
+"shot",
+"f_despide"
+],
+[
+1291.09,
+1295.369,
+"shot",
+"n_pollo_entero"
+]
+],
+"cam": [],
+"ov": [
+{
+"k": "big",
+"txt": "$20",
+"sub": "ONE BAR BURGER",
+"col": "red",
+"at": 7.76,
+"out": 10.96
+},
+{
+"k": "stamp",
+"txt": "A GRAY HOCKEY PUCK",
+"at": 23.24,
+"out": 26.24
+},
+{
+"k": "chip",
+"txt": "52 YEARS GRINDING BEEF",
+"at": 34.06,
+"out": 37.56
+},
+{
+"k": "chip",
+"txt": "HALF THE BARS ON MILWAUKEE AVE",
+"col": "ice",
+"at": 53.0,
+"out": 56.5
+},
+{
+"k": "big",
+"txt": "10",
+"sub": "OLD BUTCHER TRICKS",
+"col": "amber",
+"at": 64.52,
+"out": 67.72
+},
+{
+"k": "stamp",
+"txt": "ONE SENTENCE TO YOUR BUTCHER",
+"at": 81.12,
+"out": 84.62
+},
+{
+"k": "chip",
+"txt": "SUBSCRIBE · 52 YEARS OF TRICKS",
+"col": "red",
+"at": 85.8,
+"out": 89.8
+},
+{
+"k": "step",
+"n": 1,
+"name": "80/20 · NEVER 90/10",
+"at": 93.72,
+"out": 97.72
+},
+{
+"k": "stamp",
+"txt": "«LADY, YOU WANT LEAN, BUY FISH»",
+"at": 117.96,
+"out": 121.46
+},
+{
+"k": "chip",
+"txt": "THE FAT IS THE JUICE",
+"col": "amber",
+"at": 121.44,
+"out": 124.94
+},
+{
+"k": "versus",
+"title": "FOR A BURGER",
+"L": {
+"label": "90/10",
+"val": "DRY",
+"h": 0.35,
+"col": "#8fd6ff",
+"mark": "x"
+},
+"R": {
+"label": "80/20",
+"val": "JUICY",
+"h": 0.95,
+"col": "#ffb257",
+"mark": "ok"
+},
+"at": 140.88,
+"out": 146.88
+},
+{
+"k": "chip",
+"txt": "LEANEST = CARDBOARD",
+"col": "red",
+"at": 162.1,
+"out": 165.6
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE CUTS IN THE GRIND",
+"at": 168.36,
+"out": 172.36
+},
+{
+"k": "chip",
+"txt": "«GROUND BEEF» = WHATEVER WAS LEFT",
+"col": "red",
+"at": 175.76,
+"out": 179.26
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "CHUCK 80 %",
+"col": "amber",
+"at": 190.08
+},
+{
+"txt": "BRISKET 20 %",
+"col": "amber",
+"at": 191.88
+}
+],
+"at": 190.08,
+"out": 194.38
+},
+{
+"k": "chip",
+"txt": "OR SHORT RIB · EVEN RICHER",
+"col": "ice",
+"at": 204.38,
+"out": 207.88
+},
+{
+"k": "stamp",
+"txt": "LOOK FOR «GROUND CHUCK»",
+"at": 225.34,
+"out": 228.34
+},
+{
+"k": "stamp",
+"txt": "FANCY NAME, SAD BURGER",
+"at": 242.6,
+"out": 245.6
+},
+{
+"k": "step",
+"n": 3,
+"name": "EVERYTHING ICE COLD",
+"at": 250.9,
+"out": 254.9
+},
+{
+"k": "big",
+"txt": "98 °F",
+"sub": "CHICAGO · SUMMER 1977",
+"col": "red",
+"at": 258.3,
+"out": 261.5
+},
+{
+"k": "stamp",
+"txt": "SMEARED · GREASY · PINK PASTE",
+"at": 271.58,
+"out": 274.58
+},
+{
+"k": "chip",
+"txt": "WARM FAT SMEARS · COLD FAT CUTS",
+"col": "ice",
+"at": 294.26,
+"out": 297.76
+},
+{
+"k": "big",
+"txt": "20 MIN",
+"sub": "MEAT · BLADE · PLATE IN THE FREEZER",
+"col": "ice",
+"at": 309.48,
+"out": 312.68
+},
+{
+"k": "chip",
+"txt": "20 MIN ON THE COUNTER = SOFT FAT",
+"col": "red",
+"at": 330.22,
+"out": 333.72
+},
+{
+"k": "step",
+"n": 4,
+"name": "A COARSE GRIND",
+"at": 342.86,
+"out": 346.86
+},
+{
+"k": "versus",
+"title": "THE GRINDER PLATE",
+"L": {
+"label": "FINE",
+"val": "⅛ IN",
+"h": 0.4,
+"col": "#8fd6ff",
+"mark": "x"
+},
+"R": {
+"label": "COARSE",
+"val": "⅜ IN",
+"h": 0.95,
+"col": "#ffb257",
+"mark": "ok"
+},
+"at": 353.36,
+"out": 360.36
+},
+{
+"k": "chip",
+"txt": "LITTLE POCKETS HOLD THE JUICE",
+"col": "amber",
+"at": 375.04,
+"out": 378.54
+},
+{
+"k": "big",
+"txt": "10-12",
+"sub": "ONE-SECOND PULSES",
+"col": "amber",
+"at": 392.02,
+"out": 395.22
+},
+{
+"k": "stamp",
+"txt": "30 SECONDS = PINK FROSTING",
+"at": 413.4,
+"out": 416.4
+},
+{
+"k": "step",
+"n": 5,
+"name": "DON'T KNEAD IT",
+"at": 424.98,
+"out": 428.98
+},
+{
+"k": "chip",
+"txt": "«STAN, YOUR BURGERS ARE TOUGH»",
+"col": "ice",
+"at": 450.96,
+"out": 454.46
+},
+{
+"k": "stamp",
+"txt": "SQUEEZED MEAT BINDS LIKE SAUSAGE",
+"at": 463.82,
+"out": 466.82
+},
+{
+"k": "big",
+"txt": "4 OZ",
+"sub": "A LOOSE BALL · DON'T PACK IT",
+"col": "amber",
+"at": 476.42,
+"out": 479.62
+},
+{
+"k": "chip",
+"txt": "THUMB DIMPLE = NO MEATBALL",
+"at": 500.2,
+"out": 503.7
+},
+{
+"k": "stamp",
+"txt": "HANDS LIKE A FEATHER",
+"at": 521.04,
+"out": 524.04
+},
+{
+"k": "step",
+"n": 6,
+"name": "SALT ON THE OUTSIDE",
+"at": 525.7,
+"out": 529.7
+},
+{
+"k": "chip",
+"txt": "SALT INSIDE = SPRINGY SAUSAGE",
+"col": "red",
+"at": 544.72,
+"out": 548.22
+},
+{
+"k": "stamp",
+"txt": "HALFWAY TO A HOT DOG",
+"at": 557.62,
+"out": 560.62
+},
+{
+"k": "chip",
+"txt": "KOSHER SALT + PEPPER · ON TOP · RIGHT BEFORE",
+"at": 565.58,
+"out": 569.08
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE SMASH",
+"at": 595.52,
+"out": 599.52
+},
+{
+"k": "big",
+"txt": "5 MIN",
+"sub": "CAST IRON ON HIGH",
+"col": "red",
+"at": 611.22,
+"out": 614.42
+},
+{
+"k": "chip",
+"txt": "PARCHMENT ON TOP · PRESS HARD",
+"at": 621.06,
+"out": 624.56
+},
+{
+"k": "big",
+"txt": "¼ IN",
+"sub": "THIN · WIDER THAN THE BUN",
+"col": "amber",
+"at": 633.78,
+"out": 636.98
+},
+{
+"k": "big",
+"txt": "30 SEC",
+"sub": "THEN NEVER AGAIN",
+"col": "red",
+"at": 639.58,
+"out": 642.78
+},
+{
+"k": "stamp",
+"txt": "THAT SIZZLE IS YOUR JUICE",
+"at": 671.67,
+"out": 674.67
+},
+{
+"k": "step",
+"n": 8,
+"name": "FLIP ONCE · SCRAPE",
+"at": 684.67,
+"out": 688.67
+},
+{
+"k": "big",
+"txt": "2 MIN",
+"sub": "HANDS OFF",
+"col": "amber",
+"at": 689.71,
+"out": 692.91
+},
+{
+"k": "chip",
+"txt": "SCRAPE · BRING THE CRUST WITH YOU",
+"at": 712.33,
+"out": 715.83
+},
+{
+"k": "chip",
+"txt": "AMERICAN CHEESE · LID 30 SEC",
+"col": "amber",
+"at": 721.11,
+"out": 724.61
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "1 FLIP",
+"col": "amber",
+"at": 745.57
+},
+{
+"txt": "1 LID",
+"col": "amber",
+"at": 746.63
+},
+{
+"txt": "1 MINUTE",
+"col": "amber",
+"at": 747.31
+}
+],
+"at": 745.57,
+"out": 749.81
+},
+{
+"k": "step",
+"n": 9,
+"name": "160 °F AT HOME",
+"at": 748.09,
+"out": 752.09
+},
+{
+"k": "temp",
+"a": 110,
+"b": 160,
+"sub": "GROUND BEEF · IN THE CENTER",
+"col": "green",
+"at": 778.99,
+"out": 783.99
+},
+{
+"k": "chip",
+"txt": "JUICY EVEN AT 160",
+"col": "green",
+"at": 796.39,
+"out": 799.89
+},
+{
+"k": "stamp",
+"txt": "COLOR IS NOT A THERMOMETER",
+"at": 823.69,
+"out": 826.69
+},
+{
+"k": "deal",
+"at": 841.97,
+"out": 846.47
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "USING LEAN BEEF",
+"at": 850.15,
+"out": 856.01
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "WORKING IT LIKE BREAD DOUGH",
+"at": 856.31,
+"out": 861.19
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "SALT MIXED INSIDE",
+"at": 861.49,
+"out": 868.21
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "PRESSING IT WHILE IT COOKS",
+"at": 868.51,
+"out": 875.89
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "FLIPPING IT OVER AND OVER",
+"at": 876.19,
+"out": 884.19
+},
+{
+"k": "step",
+"n": 10,
+"name": "THE MILWAUKEE AVE SENTENCE",
+"col": "red",
+"at": 881.89,
+"out": 885.89
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "CHUCK + A LITTLE BRISKET",
+"col": "amber",
+"at": 900.85
+},
+{
+"txt": "COARSE",
+"col": "amber",
+"at": 902.57
+},
+{
+"txt": "ONCE THROUGH",
+"col": "amber",
+"at": 903.79
+},
+{
+"txt": "COLD",
+"col": "ice",
+"at": 904.59
+},
+{
+"txt": "PICK UP AT 10",
+"col": "amber",
+"at": 905.79
+}
+],
+"at": 900.85,
+"out": 908.29
+},
+{
+"k": "stamp",
+"txt": "«COARSE, ONCE THROUGH»",
+"at": 916.33,
+"out": 919.83
+},
+{
+"k": "chip",
+"txt": "STORE BEEF: GROUND TWICE",
+"col": "red",
+"at": 920.47,
+"out": 923.97
+},
+{
+"k": "chip",
+"txt": "3 DAYS IN A CASE = NO TASTE",
+"col": "red",
+"at": 952.73,
+"out": 956.23
+},
+{
+"k": "chip",
+"txt": "NO BUTCHER? CHUCK ROAST + PROCESSOR",
+"col": "ice",
+"at": 982.39,
+"out": 985.89
+},
+{
+"k": "stamp",
+"txt": "THAT'S THE $20 BURGER",
+"at": 996.91,
+"out": 1000.41
+},
+{
+"k": "clock",
+"marks": [
+[
+1022.67,
+10.0
+],
+[
+1039.15,
+17.5
+],
+[
+1056.81,
+18.0
+],
+[
+1070.11,
+18.05
+],
+[
+1080.43,
+18.25
+]
+],
+"at": 1017.39,
+"out": 1084.43
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "NO WARM MEAT",
+"col": "red",
+"at": 1090.29
+},
+{
+"txt": "NO 3RD DAY",
+"col": "red",
+"at": 1098.81
+},
+{
+"txt": "NO BREADCRUMBS",
+"col": "red",
+"at": 1100.31
+},
+{
+"txt": "NO FORK",
+"col": "red",
+"at": 1119.71
+}
+],
+"at": 1083.83,
+"out": 1122.21
+},
+{
+"k": "chip",
+"txt": "«WHAT ABOUT THE BUN?»",
+"col": "ice",
+"at": 1133.41,
+"out": 1136.91
+},
+{
+"k": "chip",
+"txt": "«ONIONS INSIDE?» NO",
+"col": "ice",
+"at": 1150.47,
+"out": 1153.97
+},
+{
+"k": "chip",
+"txt": "«CAN I FREEZE THEM?» YES",
+"col": "ice",
+"at": 1169.39,
+"out": 1172.89
+},
+{
+"k": "chip",
+"txt": "«ON THE GRILL?»",
+"col": "ice",
+"at": 1186.93,
+"out": 1190.43
+},
+{
+"k": "recap",
+"rows": [
+1226.99,
+1229.27,
+1233.31,
+1237.53,
+1241.79,
+1246.13,
+1250.11,
+1254.47,
+1256.47,
+1263.89
+],
+"at": 1222.69,
+"out": 1269.89
+},
+{
+"k": "versus",
+"title": "THE SAME BURGER",
+"L": {
+"label": "THE BAR",
+"val": "$20",
+"h": 0.95,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"R": {
+"label": "YOUR KITCHEN",
+"val": "$3",
+"h": 0.15,
+"col": "#5fd38a",
+"mark": "ok"
+},
+"at": 1272.07,
+"out": 1278.07
+},
+{
+"k": "ask",
+"at": 1277.75,
+"out": 1291.75
+},
+{
+"k": "next",
+"at": 1291.09,
+"out": 1296.09
+}
+],
+"cta1": {
+"desc": 85.8,
+"end": 91.8
+},
+"cta2": {
+"desc": 1284.63,
+"end": 1290.63
+},
+"cta3": {
+"desc": 1291.09,
+"end": 1296.09
+},
+"end": 1304.59,
+"st": {
+"fire": [
+[
+0,
+1304.59
+]
+],
+"hay": [
+[
+0,
+1304.59
+]
+],
+"pot": [
+[
+595.517,
+748.094
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+1022.67,
+1080.43
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "THE 10 TRICKS",
+"recap": [
+"80/20 · never 90/10",
+"Chuck + a little brisket",
+"Everything ice cold",
+"Coarse grind",
+"Hands like a feather",
+"Salt on the outside",
+"Smash once · 30 sec",
+"Flip once · scrape",
+"160 °F at home",
+"«Coarse, once through, fresh today»"
+],
+"ask": [
+"What's the best burger you ever ate?",
+"Where was it, and what made it so good?",
+"Tell me in the comments · I read every one"
+],
+"next": [
+"NEXT TIME",
+"Why restaurant chicken skin crackles"
+],
+"lower": [
+30.94,
+36.94
+]
+}
+}

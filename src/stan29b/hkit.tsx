@@ -1,0 +1,149 @@
+// KIT de los componentes únicos (1 por minuto, pedido del creador 28-oct: «que se sienta adictivo, que no se repitan»).
+// Escenario común: entra con una transición distinta por pieza (iris, barrido, persianas, partido, caída) con resorte,
+// cámara viva en curvas y salida hacia atrás fundida. Cada componente sólo dibuja su objeto adentro.
+import React from "react";
+import { AbsoluteFill, Img, staticFile } from "remotion";
+import { loadFont as loadHand } from "@remotion/google-fonts/Caveat";
+import { loadFont as loadMark } from "@remotion/google-fonts/PermanentMarker";
+import { COL, FONT, P } from "./lib";
+
+export const { fontFamily: HAND } = loadHand("normal", { weights: ["600", "700"], subsets: ["latin"] });
+export const { fontFamily: MARK } = loadMark("normal", { weights: ["400"], subsets: ["latin"] });
+export { FONT, COL };
+
+export const phys = (t: number, a: number, w = 7, z = 0.42) => {
+  const x = t - a; if (x <= 0) return 0;
+  const wd = w * Math.sqrt(1 - z * z);
+  return 1 - Math.exp(-z * w * x) * (Math.cos(wd * x) + (z * w / wd) * Math.sin(wd * x));
+};
+export const cl = (x: number) => Math.max(0, Math.min(1, x));
+export const eIn = (t: number, a: number, b: number) => { const c = cl((t - a) / (b - a)); return c * c * c; };
+export const eio = (t: number, a: number, b: number) => { const c = cl((t - a) / (b - a)); return c < 0.5 ? 4 * c * c * c : 1 - Math.pow(-2 * c + 2, 3) / 2; };
+export const img = (id: string) => staticFile("img/" + P + id + ".jpg");
+export const TX = "#f7f4ee", DIM = "rgba(247,244,238,.58)", AMB = COL.amber, RED = "#ff5a4a", ICE = COL.ice, GRN = "#6fe39a";
+
+export type H = { k: string; at: number; out: number; img?: string; imgs?: (string | undefined)[]; [x: string]: any };
+export type Mode = "iris" | "wipe" | "blinds" | "split" | "drop";
+
+const maskOf = (m: Mode, p: number): string => {
+  if (m === "iris") return `radial-gradient(circle at 50% 52%, #000 ${p * 1500}px, transparent ${p * 1500 + 480}px)`;
+  if (m === "wipe") return `linear-gradient(105deg, #000 ${p * 150 - 30}%, transparent ${p * 150}%)`;
+  if (m === "split") { const a = 50 - p * 62, b = 50 + p * 62; return `linear-gradient(90deg, transparent ${a}%, #000 ${a + 10}%, #000 ${b - 10}%, transparent ${b}%)`; }
+  // persianas → ELEVACIÓN (29-oct, evaluador: las rendijas negras parecían un glitch y cortaban el título): la pieza sube desde abajo con un borde suave
+  if (m === "blinds") return `linear-gradient(0deg, #000 ${p * 160 - 40}%, transparent ${p * 160}%)`;
+  return `linear-gradient(180deg, #000 ${p * 150 - 30}%, transparent ${p * 150}%)`;
+};
+
+// escenario: fondo + máscara de entrada/salida + cámara curva. children recibe tt (segundos desde at).
+export const Stage: React.FC<{ t: number; h: H; mode: Mode; bg?: string; cam?: number; children: (tt: number) => React.ReactNode }> = ({ t, h, mode, bg, cam = 1, children }) => {
+  const { at, out } = h;
+  if (t < at - 0.05 || t > out + 0.85) return null;
+  const inn = phys(t, at, 3.8, 0.72), xo = eIn(t, out - 0.25, out + 0.75), p = cl(inn) * (1 - xo);
+  if (p <= 0.004) return null;
+  const tt = (t - at) * (h.sp ?? 1), mk = maskOf(h.ph ? "iris" : mode, p);
+  return <AbsoluteFill style={{ WebkitMaskImage: mk, maskImage: mk, fontFamily: FONT, color: TX } as React.CSSProperties}>
+    <AbsoluteFill style={{ background: bg ?? "radial-gradient(ellipse 75% 65% at 50% 46%, #1d1a16, #070708 72%)" }} />
+    {h.ph && <PhotoHero tt={tt} id={h.ph} dur={out - at} said={(h.said ?? at) - at} solo={!!h.solo} />}
+    {h.solo && h.kw && <HeroWord tt={tt} kw={h.kw} kw2={h.kw2} said={(h.said ?? at) - at} v={[...h.k].reduce((a: number, c: string) => a + c.charCodeAt(0), 0) % 3} />}
+    {/* la foto del momento, desenfocada y oscura, con paralaje lento: el componente vive DENTRO de la escena, no sobre un fondo vacío */}
+    {h.bg && !bg && !h.ph && <AbsoluteFill style={{ opacity: 0.38 }}><Img src={img(h.bg)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(26px) saturate(.8) brightness(.55)", transform: `scale(${1.18 + 0.03 * Math.sin(tt * 0.2)}) translateX(${-14 * tt / Math.max(4, out - at)}px)` }} /></AbsoluteFill>}
+    {/* piso: charco de luz cálida y reflejo, para que los objetos apoyen en algo */}
+    <AbsoluteFill style={{ background: "linear-gradient(180deg, transparent 62%, rgba(255,190,120,.05) 74%, rgba(0,0,0,.35) 100%)" }} />
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse 42% 14% at 50% 86%, rgba(255,196,130,.13), transparent 70%)" }} />
+    {/* haz de luz de arriba que respira muy lento */}
+    <AbsoluteFill style={{ background: `conic-gradient(from 168deg at 50% -12%, transparent 0deg, rgba(255,226,180,${0.05 + 0.015 * Math.sin(tt * 0.5)}) 12deg, transparent 24deg)`, mixBlendMode: "screen" }} />
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse 120% 90% at 50% 50%, transparent 55%, rgba(0,0,0,.55))" }} />
+    <AbsoluteFill style={{ perspective: 2200, opacity: cl(inn * 1.6) * (1 - xo * 0.7) }}>
+      <AbsoluteFill style={{ transformStyle: "flat", perspective: 2200, transform: `translateZ(${(-300 * (1 - inn) - 650 * xo + 18 * Math.sin(tt * 0.35)) * cam}px) rotateY(${(7 * (1 - inn) + 1.8 * Math.sin(tt * 0.22 + 0.5) - 6 * xo) * cam}deg) rotateX(${(1.2 * Math.sin(tt * 0.18) + 6 * xo) * cam}deg)` }}>
+        {h.solo ? null : h.ph ? <AbsoluteFill style={{ transformOrigin: "96% 50%", transform: "scale(.74)", filter: "drop-shadow(0 18px 30px rgba(0,0,0,.6))" }}>{children(tt)}</AbsoluteFill> : children(tt)}
+      </AbsoluteFill>
+    </AbsoluteFill>
+    {/* polvo en primer plano, desenfocado, por delante de la cámara: da profundidad real */}
+    <AbsoluteFill style={{ pointerEvents: "none" }}>{Array.from({ length: 14 }, (_, i) => {
+      const s = 6 + (i * 37) % 22, x = ((i * 271 + tt * (8 + i % 5) * 4) % 2100) - 90, y = 80 + (i * 163) % 920 + 30 * Math.sin(tt * 0.4 + i);
+      return <div key={i} style={{ position: "absolute", left: x, top: y, width: s, height: s, borderRadius: "50%", background: "rgba(255,230,190,.5)", filter: `blur(${s / 3}px)`, opacity: 0.25 + 0.2 * Math.sin(tt * 0.7 + i * 1.3) }} />;
+    })}</AbsoluteFill>
+  </AbsoluteFill>;
+};
+
+
+// foto héroe (29-oct, evaluador e2: «foto chica al costado + ícono plano = plantilla»): la foto REAL del momento llena el cuadro,
+// cámara curva lenta, foco que se abre y luz que barre justo en la palabra dicha; a la derecha se oscurece para que el gráfico apoye.
+export const PhotoHero: React.FC<{ tt: number; id: string; dur: number; said: number; solo?: boolean }> = ({ tt, id, dur, said, solo }) => {
+  const k = cl(tt / Math.max(3, dur)), e = k * k * (3 - 2 * k);
+  const f = cl(phys(tt, Math.max(0.1, said - 0.1), 5, 0.8));          // foco: de 9 px a nítido en la palabra
+  const sw = cl((tt - said + 0.1) / 1.1);                              // barrido de luz en la palabra
+  return <AbsoluteFill>
+    <Img src={img(id)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: solo ? "50% 50%" : "38% 50%", filter: `blur(${9 * (1 - f)}px) brightness(${0.62 + 0.3 * f}) saturate(${0.85 + 0.2 * f})`,
+      transform: `scale(${1.05 + 0.1 * e}) translate(${-26 * e + 6 * Math.sin(tt * 0.3)}px, ${10 * Math.sin(tt * 0.22 + 0.7) - 8 * e}px) rotate(${0.6 * Math.sin(tt * 0.17)}deg)` }} />
+    {sw > 0 && sw < 1 && <AbsoluteFill style={{ background: `linear-gradient(110deg, transparent ${sw * 140 - 40}%, rgba(255,236,200,.28) ${sw * 140 - 22}%, transparent ${sw * 140 - 4}%)`, mixBlendMode: "screen" }} />}
+    {!solo && <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(5,4,3,.05) 0%, rgba(5,4,3,.12) 36%, rgba(5,4,3,.72) 62%, rgba(5,4,3,.86) 100%)" }} />}
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse 110% 90% at 40% 50%, transparent 55%, rgba(0,0,0,.5))" }} />
+  </AbsoluteFill>;
+};
+
+
+// palabra héroe (29-oct, vuelta 3 del evaluador: «simple y perfecto»): UNA palabra o cifra grande que cae letra por letra con peso
+// justo cuando se dice, apoyada en el tercio inferior de la foto, con su sombra de contacto; el renglón chico entra después.
+export const HeroWord: React.FC<{ tt: number; kw: string; kw2?: string; said: number; v?: number }> = ({ tt, kw, kw2, said, v = 0 }) => {
+  const a0 = Math.max(0.15, said - 0.05), ch = [...kw];
+  const sz = kw.length > 12 ? 118 : kw.length > 8 ? 142 : 176;
+  const s2 = phys(tt, a0 + 0.25 + ch.length * 0.035, 6, 0.6);
+  const glow = cl(phys(tt, a0, 4, 0.9));
+  return <AbsoluteFill style={{ pointerEvents: "none" }}>
+    <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(4,3,2,.78) 0%, rgba(4,3,2,.45) 26%, transparent 48%)" }} />
+    <div style={{ position: "absolute", ...(v === 1 ? { right: 120 } : v === 2 ? { left: 0, right: 0, justifyContent: "center" } : { left: 120 }), bottom: 150 + (kw2 ? 86 : 0), display: "flex", perspective: 900 }}>
+      <div style={{ position: "absolute", left: -60, right: -60, top: "20%", bottom: "-10%", background: `radial-gradient(ellipse at 30% 60%, rgba(255,200,130,${0.22 * glow}), transparent 70%)`, filter: "blur(30px)" }} />
+      {ch.map((c, i) => { const s = phys(tt, a0 + i * 0.035, 7.5, 0.5);
+        return <span key={i} style={{ display: "inline-block", whiteSpace: "pre", fontWeight: 900, fontSize: sz, lineHeight: 1, letterSpacing: -1, color: "#fff7ea",
+          opacity: cl(s * (v === 2 ? 1.6 : 3)), filter: v === 2 ? `blur(${(1 - cl(s)) * 14}px)` : undefined, transform: v === 1 ? `translateX(${(1 - s) * 140}px) rotateY(${(1 - s) * -60}deg)` : v === 2 ? `translateY(${(1 - s) * 24}px) scale(${1 + (1 - s) * 0.28})` : `translateY(${(1 - s) * -120}px) rotateX(${(1 - s) * 70}deg)`, textShadow: "0 10px 0 rgba(0,0,0,.25), 0 22px 44px rgba(0,0,0,.65)" }}>{c}</span>; })}
+    </div>
+    {kw2 ? <div style={{ position: "absolute", ...(v === 1 ? { right: 126, textAlign: "right" } : v === 2 ? { left: 0, right: 0, textAlign: "center" } : { left: 126 }), bottom: 150, fontWeight: 800, fontSize: 64, color: "#fff4e2", letterSpacing: 1,
+      opacity: cl(s2 * 2), transform: `translateX(${(1 - s2) * (v === 1 ? 50 : v === 2 ? 0 : -50)}px)`, textShadow: "0 2px 3px rgba(0,0,0,.95), 0 6px 26px rgba(0,0,0,.85)" } as React.CSSProperties}>{kw2}</div> : null}
+  </AbsoluteFill>;
+};
+
+// encabezado del sistema (filete + kicker + título que se descubre); arriba a la izquierda
+export const Head: React.FC<{ tt: number; kick: string; title: string; col?: string; d?: number }> = ({ tt, kick, title, col = AMB, d = 0.3 }) => {
+  if (true) return null; // 29-oct: sin rótulos arriba a la izquierda (regla del creador)
+  const s = cl(phys(tt, d, 6, 0.7));
+  return <div style={{ position: "absolute", left: 110, top: 80, opacity: s, transform: `translateX(${(1 - s) * -40}px)` }}>
+    <div style={{ display: "flex", alignItems: "center", gap: 14, fontWeight: 800, fontSize: 24, letterSpacing: 5, color: DIM }}><div style={{ width: 34 * s, height: 3, borderRadius: 2, background: col }} />{kick}</div>
+    <div style={{ fontWeight: 900, fontSize: 60, marginTop: 6, whiteSpace: "nowrap", opacity: cl(s * 1.4), transform: `translateY(${(1 - s) * 26}px)`, filter: `blur(${(1 - cl(s * 1.3)) * 8}px)` }}>{title}</div>
+  </div>;
+};
+
+// rótulo que cae con peso
+export const Tag: React.FC<{ tt: number; at: number; x: number; y: number; txt: string; col?: string; size?: number; anchor?: "c" | "l" }> = ({ tt, at, x, y, txt, col = TX, size = 34, anchor = "c" }) => {
+  const s = phys(tt, at, 7, 0.45);
+  if (s <= 0.01) return null;
+  return <div style={{ position: "absolute", left: x, top: y, transform: `translate(${anchor === "c" ? "-50%" : "0"}, -50%) translateY(${(1 - s) * -40}px) scale(${0.8 + 0.2 * s})`, opacity: cl(s * 2), fontWeight: 900, fontSize: size * 1.35, letterSpacing: 2, color: col, whiteSpace: "nowrap", textShadow: "0 6px 24px rgba(0,0,0,.6)" }}>{txt}</div>;
+};
+
+// foto con marco (tarjeta) reutilizable
+export const Photo: React.FC<{ id?: string; w: number; h: number; r?: number; z?: number; style?: React.CSSProperties; dim?: number }> = ({ id, w, h, r = 18, z = 1.08, style, dim = 0 }) => (
+  <div style={{ width: w, height: h, borderRadius: r, overflow: "hidden", background: "#1a1a1d", boxShadow: "0 40px 90px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.1)", position: "relative", ...style }}>
+    {id && <Img src={img(id)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z})` }} />}
+    {dim > 0 && <div style={{ position: "absolute", inset: 0, background: "#000", opacity: dim }} />}
+  </div>
+);
+
+// FOTO-OBJETO (29-oct, evaluador: «falta foto real adentro»): la foto del momento como copia física en 3D (canto, brillo que barre,
+// sombra de contacto que se aprieta al apoyarse). Llega volando desde la profundidad con resorte y se endereza.
+export const PhotoObj: React.FC<{ tt: number; id?: string; x: number; y: number; w: number; h: number; at?: number; rot?: number; tilt?: number; children?: React.ReactNode }> = ({ tt, id, x, y, w, h, at = 0.15, rot = -3, tilt = 10, children }) => {
+  const s = phys(tt, at, 5.2, 0.5);
+  if (!id || s <= 0.002) return null;
+  const gl = ((tt - at) * 0.35) % 2.4;
+  return <div style={{ position: "absolute", left: x, top: y, width: w, height: h, perspective: 1600 }}>
+    <div style={{ position: "absolute", left: "6%", right: "6%", bottom: -34, height: 40, borderRadius: "50%", background: "rgba(0,0,0,.55)", filter: `blur(${22 - 10 * cl(s)}px)`, opacity: cl(s) }} />
+    <div style={{ position: "absolute", inset: 0, transformStyle: "preserve-3d", transform: `translateY(${(1 - s) * 140}px) translateZ(${(1 - s) * -500}px) rotateX(${(1 - s) * 24 + 2 * Math.sin(tt * 0.4)}deg) rotateY(${tilt * (1 - s) + 2.5 * Math.sin(tt * 0.3 + 1)}deg) rotate(${rot * (2 - s)}deg)`, opacity: cl(s * 2) }}>
+      <div style={{ position: "absolute", inset: 0, borderRadius: 10, overflow: "hidden", background: "#f3eee4", padding: 12, boxShadow: "0 30px 70px rgba(0,0,0,.55), 0 6px 0 #cfc6b4" }}>
+        <div style={{ position: "relative", width: "100%", height: "100%", borderRadius: 4, overflow: "hidden" }}>
+          <Img src={img(id)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.06 + 0.03 * Math.sin(tt * 0.25)})` }} />
+          <div style={{ position: "absolute", inset: 0, background: `linear-gradient(115deg, transparent ${gl * 50 - 20}%, rgba(255,255,255,.22) ${gl * 50 - 8}%, transparent ${gl * 50}%)` }} />
+          {children}
+        </div>
+      </div>
+    </div>
+  </div>;
+};
