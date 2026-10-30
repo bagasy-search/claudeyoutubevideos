@@ -8,20 +8,20 @@ import { useThree } from "@react-three/fiber";
 import { mulberry32, ruido1 } from "../stickman3d/prng";
 
 // ───────────────────────── forma de la balsa ─────────────────────────
-const RA = 2.55, RB = 1.12, RTUBO = 0.25, NSE = 3.6; // semiejes, radio del tubo, exponente superelipse
-const PISO = 0.1; // altura del piso interior
-const sgnPow = (v: number, e: number) => Math.sign(v) * Math.pow(Math.abs(v), e);
-const borde = (u: number, ka = RA, kb = RB): [number, number] => {
+export const RA = 2.55, RB = 1.12, RTUBO = 0.25, NSE = 3.6; // semiejes, radio del tubo, exponente superelipse
+export const PISO = 0.1; // altura del piso interior
+export const sgnPow = (v: number, e: number) => Math.sign(v) * Math.pow(Math.abs(v), e);
+export const borde = (u: number, ka = RA, kb = RB): [number, number] => {
   const c = Math.cos(u), s = Math.sin(u);
   return [ka * sgnPow(c, 2 / NSE), kb * sgnPow(s, 2 / NSE)];
 };
-const curvaBorde = (ka: number, kb: number, y: number, n = 160) => {
+export const curvaBorde = (ka: number, kb: number, y: number, n = 160) => {
   const pts: THREE.Vector3[] = [];
   for (let i = 0; i < n; i++) { const [x, z] = borde((i / n) * Math.PI * 2, ka, kb); pts.push(new THREE.Vector3(x, y, z)); }
   return new THREE.CatmullRomCurve3(pts, true, "centripetal");
 };
 
-const usarGeosBalsa = () => useMemo(() => {
+export const usarGeosBalsa = () => useMemo(() => {
   const tubo = new THREE.TubeGeometry(curvaBorde(RA, RB, RTUBO + 0.02), 520, RTUBO, 56, true);
   // casco inferior gris: forma apenas más grande, achatada, debajo del tubo
   const casco = new THREE.TubeGeometry(curvaBorde(RA + 0.04, RB + 0.04, 0.06), 400, 0.13, 24, true);
@@ -67,7 +67,7 @@ const usarGeosBalsa = () => useMemo(() => {
 
 // ───────────────────────── figurita ─────────────────────────
 // alto parado = 1. Jerarquía FK: raíz(cadera) → torso → cabeza / hombros → brazos ; cadera → piernas
-type Pose = {
+export type Pose = {
   tronco: number; // inclinación del torso hacia adelante (rad)
   cabeza: number; // cabeceo
   cabezaY: number;
@@ -80,22 +80,22 @@ type Pose = {
   altura: number; // altura de la cadera sobre el apoyo
 };
 
-const P_PARADO: Pose = { tronco: 0, cabeza: 0, cabezaY: 0, muslo: [0, 0], rodilla: [0.04, 0.04], abre: [0.06, 0.06], hombro: [0.05, 0.05], hombroL: [0.12, 0.12], codo: [-0.15, -0.15], altura: 0.49 };
-const P_AIRE: Pose = { tronco: -0.1, cabeza: -0.15, cabezaY: 0, muslo: [-0.35, 0.2], rodilla: [0.7, 0.3], abre: [0.25, 0.25], hombro: [-2.5, -2.4], hombroL: [0.5, 0.5], codo: [-0.2, -0.2], altura: 0.49 };
-const P_PISO: Pose = { tronco: 0.12, cabeza: 0.15, cabezaY: 0, muslo: [-1.15, -1.1], rodilla: [2.1, 2.05], abre: [0.18, 0.2], hombro: [-0.42, -0.38], hombroL: [0.2, 0.2], codo: [-0.95, -1.05], altura: 0.06 };
-const P_PISO_ABRAZA: Pose = { tronco: 0.3, cabeza: 0.3, cabezaY: 0, muslo: [-1.3, -1.25], rodilla: [2.35, 2.3], abre: [0.08, 0.08], hombro: [-0.62, -0.62], hombroL: [0.16, 0.16], codo: [-1.05, -1.05], altura: 0.06 };
-const P_BORDE: Pose = { tronco: 0.02, cabeza: 0.08, cabezaY: 0, muslo: [-1.45, -1.5], rodilla: [1.45, 1.5], abre: [0.12, 0.14], hombro: [-0.3, -0.35], hombroL: [0.18, 0.18], codo: [-0.9, -0.85], altura: 0.04 };
-const P_BORDE_MANO: Pose = { tronco: 0.18, cabeza: 0.1, cabezaY: 0, muslo: [-1.5, -1.4], rodilla: [1.5, 1.4], abre: [0.12, 0.14], hombro: [-0.9, -0.2], hombroL: [0.15, 0.25], codo: [-2.1, -0.4], altura: 0.04 };
-const P_PARADO_MENTON: Pose = { ...P_PARADO, hombro: [-0.6, 0.05], codo: [-2.2, -0.15], cabeza: 0.12 };
+export const P_PARADO: Pose = { tronco: 0, cabeza: 0, cabezaY: 0, muslo: [0, 0], rodilla: [0.04, 0.04], abre: [0.06, 0.06], hombro: [0.05, 0.05], hombroL: [0.12, 0.12], codo: [-0.15, -0.15], altura: 0.49 };
+export const P_AIRE: Pose = { tronco: -0.1, cabeza: -0.15, cabezaY: 0, muslo: [-0.35, 0.2], rodilla: [0.7, 0.3], abre: [0.25, 0.25], hombro: [-2.5, -2.4], hombroL: [0.5, 0.5], codo: [-0.2, -0.2], altura: 0.49 };
+export const P_PISO: Pose = { tronco: 0.12, cabeza: 0.15, cabezaY: 0, muslo: [-1.15, -1.1], rodilla: [2.1, 2.05], abre: [0.18, 0.2], hombro: [-0.42, -0.38], hombroL: [0.2, 0.2], codo: [-0.95, -1.05], altura: 0.06 };
+export const P_PISO_ABRAZA: Pose = { tronco: 0.3, cabeza: 0.3, cabezaY: 0, muslo: [-1.3, -1.25], rodilla: [2.35, 2.3], abre: [0.08, 0.08], hombro: [-0.62, -0.62], hombroL: [0.16, 0.16], codo: [-1.05, -1.05], altura: 0.06 };
+export const P_BORDE: Pose = { tronco: 0.02, cabeza: 0.08, cabezaY: 0, muslo: [-1.45, -1.5], rodilla: [1.45, 1.5], abre: [0.12, 0.14], hombro: [-0.3, -0.35], hombroL: [0.18, 0.18], codo: [-0.9, -0.85], altura: 0.04 };
+export const P_BORDE_MANO: Pose = { tronco: 0.18, cabeza: 0.1, cabezaY: 0, muslo: [-1.5, -1.4], rodilla: [1.5, 1.4], abre: [0.12, 0.14], hombro: [-0.9, -0.2], hombroL: [0.15, 0.25], codo: [-2.1, -0.4], altura: 0.04 };
+export const P_PARADO_MENTON: Pose = { ...P_PARADO, hombro: [-0.6, 0.05], codo: [-2.2, -0.15], cabeza: 0.12 };
 
-const mezclaP = (a: Pose, b: Pose, k: number): Pose => {
+export const mezclaP = (a: Pose, b: Pose, k: number): Pose => {
   const m = (x: number, y: number) => x + (y - x) * k;
   const m2 = (x: [number, number], y: [number, number]): [number, number] => [m(x[0], y[0]), m(x[1], y[1])];
   return { tronco: m(a.tronco, b.tronco), cabeza: m(a.cabeza, b.cabeza), cabezaY: m(a.cabezaY, b.cabezaY), muslo: m2(a.muslo, b.muslo), rodilla: m2(a.rodilla, b.rodilla), abre: m2(a.abre, b.abre), hombro: m2(a.hombro, b.hombro), hombroL: m2(a.hombroL, b.hombroL), codo: m2(a.codo, b.codo), altura: m(a.altura, b.altura) };
 };
 
 // medidas (alto 1)
-const M = {
+export const M = {
   cabezaR: 0.098, cuello: 0.035,
   torsoLargo: 0.25, torsoR: 0.092, torsoAncho: 1.12, torsoProf: 0.84,
   hombroX: 0.095, hombroY: 0.235,
@@ -103,10 +103,10 @@ const M = {
   caderaX: 0.05, musloR: 0.052, muslo: 0.235, canillaR: 0.044, canilla: 0.215, pieR: 0.034, pie: 0.07,
 };
 
-type GeosFig = Record<"torso" | "cabeza" | "brazo" | "ante" | "mano" | "muslo" | "canilla" | "pie" | "nalga", THREE.BufferGeometry>;
-const capsula = (r: number, largo: number) => { const g = new THREE.CapsuleGeometry(r, Math.max(0.001, largo - 2 * r), 10, 24); g.translate(0, -largo / 2 + r, 0); return g; }; // cuelga de su origen hacia -y
+export type GeosFig = Record<"torso" | "cabeza" | "brazo" | "ante" | "mano" | "muslo" | "canilla" | "pie" | "nalga", THREE.BufferGeometry>;
+export const capsula = (r: number, largo: number) => { const g = new THREE.CapsuleGeometry(r, Math.max(0.001, largo - 2 * r), 10, 24); g.translate(0, -largo / 2 + r, 0); return g; }; // cuelga de su origen hacia -y
 
-const usarGeosFig = (): GeosFig => useMemo(() => {
+export const usarGeosFig = (): GeosFig => useMemo(() => {
   const torso = new THREE.CapsuleGeometry(M.torsoR, M.torsoLargo - 2 * M.torsoR, 12, 32);
   torso.scale(M.torsoAncho, 1, M.torsoProf); torso.translate(0, M.torsoLargo / 2, 0);
   // afinar la cintura y ensanchar el pecho
@@ -127,7 +127,7 @@ const usarGeosFig = (): GeosFig => useMemo(() => {
   };
 }, []);
 
-const Figura: React.FC<{ g: GeosFig; mat: THREE.Material; pose: Pose; sq: number }> = ({ g, mat, pose, sq }) => {
+export const Figura: React.FC<{ g: GeosFig; mat: THREE.Material; pose: Pose; sq: number }> = ({ g, mat, pose, sq }) => {
   // sq = squash (+) / stretch (−) conservando volumen
   const sy = 1 - sq, sxz = 1 / Math.sqrt(Math.max(0.3, sy));
   const lado = (s: number, i: 0 | 1) => (
@@ -171,8 +171,8 @@ const Figura: React.FC<{ g: GeosFig; mat: THREE.Material; pose: Pose; sq: number
 };
 
 // ───────────────────────── reparto de figuras ─────────────────────────
-type Plaza = { x: number; z: number; y: number; rot: number; pose: Pose; tCae: number; desde: [number, number]; alto: number };
-const NFIG = 40;
+export type Plaza = { x: number; z: number; y: number; rot: number; pose: Pose; tCae: number; desde: [number, number]; alto: number };
+export const NFIG = 40;
 
 export const repartir = (): Plaza[] => {
   const r = mulberry32(2026);
@@ -266,7 +266,7 @@ const Camara: React.FC<{ t: number }> = ({ t }) => {
 };
 
 // ───────────────────────── escena ─────────────────────────
-const resorte = (t: number, w = 14, z = 0.32) => (t <= 0 ? 0 : 1 - Math.exp(-z * w * t) * Math.cos(w * Math.sqrt(1 - z * z) * t));
+export const resorte = (t: number, w = 14, z = 0.32) => (t <= 0 ? 0 : 1 - Math.exp(-z * w * t) * Math.cos(w * Math.sqrt(1 - z * z) * t));
 
 const Escena: React.FC<{ t: number }> = ({ t }) => {
   const gb = usarGeosBalsa();
