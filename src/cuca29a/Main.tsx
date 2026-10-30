@@ -65,7 +65,7 @@ const Whip: React.FC<{ t: number; a: number; b: number; from: React.ReactNode; t
 const ZoomThru: React.FC<{ t: number; a: number; b: number; x: number; y: number; top: React.ReactNode; under: React.ReactNode; k?: number }> = ({ t, a, b, x, y, top, under, k: mag = 7 }) => {
   const z = ei(t, a, b);
   return <>
-    {z > 0.35 && <AbsoluteFill style={{ opacity: (z - 0.35) / 0.65, transform: `scale(${1.25 - 0.25 * z})`, transformOrigin: `${x}px ${y}px` }}>{under}</AbsoluteFill>}
+    {/* 30-oct: siempre montado (montar el OffthreadVideo del avatar a mitad de la transición colgaba tramos del farm) */}<AbsoluteFill style={{ opacity: Math.max(0, (z - 0.35) / 0.65), transform: `scale(${1.25 - 0.25 * z})`, transformOrigin: `${x}px ${y}px` }}>{under}</AbsoluteFill>
     <AbsoluteFill style={{ transformOrigin: `${x}px ${y}px`, transform: `scale(${1 + z * z * mag})`, opacity: z > 0.35 ? 1 - (z - 0.35) / 0.65 : 1, filter: z > 0.05 ? `blur(${z * 16}px)` : undefined }}>{top}</AbsoluteFill>
   </>;
 };
