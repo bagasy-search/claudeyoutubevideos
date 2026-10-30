@@ -11,24 +11,27 @@ const P = Math.PI, P2 = P / 2;
 const ent = (tt: number, a: number) => cl(phys(tt, a, 6, 0.5)); // llegada con resorte
 
 // ── 1 · LUPA: dos montoncitos frente a frente; la lupa viaja y agranda lo que mira: uno brilla, el otro es mate y arrugado
+const arrugaGeo = (() => { const g = new THREE.SphereGeometry(1, 24, 16); const q = g.attributes.position as THREE.BufferAttribute;
+  for (let i = 0; i < q.count; i++) { const x = q.getX(i), y = q.getY(i), z = q.getZ(i), n = 1 + 0.09 * Math.sin(x * 13 + z * 7) * Math.cos(y * 11) + 0.05 * Math.sin(z * 23 - x * 5); q.setXYZ(i, x * n, y * n, z * n); }
+  g.computeVertexNormals(); return g; })();
 const Mate: React.FC<{ p: V3; rot: V3; s: number }> = ({ p, rot, s }) => (
-  <mesh position={p} rotation={rot} scale={[s * 1.35, s * 0.62, s * 0.85]} castShadow><dodecahedronGeometry args={[1, 1]} /><meshStandardMaterial color="#6d6258" roughness={1} flatShading /></mesh>);
+  <mesh position={p} rotation={rot} scale={[s * 1.35, s * 0.7, s * 0.85]} geometry={arrugaGeo} castShadow><meshStandardMaterial color="#8a6a5c" roughness={1} /></mesh>);
 const H3Lupa: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" mesa={false}>{(tt) => {
   const lx = tt < 4.2 ? lerp(-2.2, -0.85, eio(tt, 1.4, 2.6)) : lerp(-0.85, 0.85, eio(tt, 4.2, 5.4));
   const zoom = (x: number) => 1 + 1.9 * cl(1 - Math.abs(x - lx) / 0.42) ** 1.2 * cl(tt - 1.6);
   return <>
-    <Estudio t={tt} cam={[0, 1.45, 2.55]} look={[0, 0.12, 0.3]} orbit={0.1} fov={32}>
-      {Array.from({ length: 28 }, (_, i) => { const a = rn(i, 1) * 6.28, r = Math.sqrt(rn(i, 2)) * 0.36, x = -0.85 + Math.cos(a) * r, at = 0.2 + i * 0.025;
+    <Estudio t={tt} cam={[0.1 * Math.sin(tt * 0.4), 1.55, 2.75 - 0.05 * tt]} look={[0, 0.15, 0.3]} orbit={0.05} fov={32}>
+      {Array.from({ length: 28 }, (_, i) => { const a = rn(i, 1) * 6.28, r = Math.sqrt(rn(i, 2)) * 0.36, x = -0.85 + Math.cos(a) * r, at = 0.02 + i * 0.012;
         return <Frijol key={"b" + i} p={[x, 0.04 + (i % 3) * 0.04 + fall(tt, at, 1.2), 0.3 + Math.sin(a) * r]} rot={[rn(i, 3), rn(i, 4) * 6, 0]} s={0.072 * zoom(x)} c="#a3301c" />; })}
-      {Array.from({ length: 28 }, (_, i) => { const a = rn(i, 5) * 6.28, r = Math.sqrt(rn(i, 6)) * 0.36, x = 0.85 + Math.cos(a) * r, at = 0.45 + i * 0.025;
+      {Array.from({ length: 28 }, (_, i) => { const a = rn(i, 5) * 6.28, r = Math.sqrt(rn(i, 6)) * 0.36, x = 0.85 + Math.cos(a) * r, at = 0.1 + i * 0.012;
         return <Mate key={"m" + i} p={[x, 0.035 + (i % 3) * 0.035 + fall(tt, at, 1.2), 0.3 + Math.sin(a) * r]} rot={[rn(i, 7), rn(i, 8) * 6, rn(i, 9)]} s={0.066 * zoom(x)} />; })}
       {/* destello que recorre el montón bueno: luz siempre montada */}
       <pointLight position={[-0.85 + 0.4 * Math.sin(tt * 1.3), 0.7, 0.8]} intensity={6 * cl(tt - 2.2) * (1 - cl(tt - 4.4))} distance={2.4} color="#fff2d8" />
-      <group position={[lx, 0.62, 0.55]} rotation={[-0.55, 0, 0.12 * Math.sin(tt * 0.9)]}>
+      <group position={[lx, 0.5, 0.55]} rotation={[-0.55, 0, 0.12 * Math.sin(tt * 0.9)]}>
         <mesh rotation={[P2, 0, 0]} castShadow><torusGeometry args={[0.42, 0.035, 12, 48]} />{M.cromo("#c9a64a")}</mesh>
         <mesh rotation={[P2, 0, 0]} scale={[1, 0.12, 1]}><sphereGeometry args={[0.41, 48, 24]} /><meshPhysicalMaterial color="#ffffff" roughness={0} transmission={1} thickness={0.35} ior={1.45} transparent opacity={0.35} clearcoat={1} envMapIntensity={2} depthWrite={false} /></mesh>
         <pointLight position={[0, -0.25, 0.2]} intensity={1.2 * cl(tt - 1.6)} distance={1.2} color="#fff6e6" />
-        <mesh position={[0.52, 0, 0.36]} rotation={[P2, 0, -0.95]} castShadow><cylinderGeometry args={[0.045, 0.055, 0.6, 14]} />{M.madera("#5a3218")}</mesh>
+        <mesh position={[0.4, 0, 0.62]} rotation={[P2 - 0.2, 0, -0.55]} castShadow><cylinderGeometry args={[0.06, 0.075, 0.7, 16]} />{M.madera("#5a3218")}</mesh>
       </group>
     </Estudio>
     <Head tt={tt} kick="TRUCO 1" title="EL FRIJOL SE ESCOGE BRILLANTE" />
@@ -124,15 +127,17 @@ const H3Chorro: C = ({ t, h }) => <Stage t={t} h={h} mode="split" mesa={false}>{
 const H3Perilla: C = ({ t, h }) => <Stage t={t} h={h} mode="ring" mesa={false}>{(tt) => {
   const up = phys(tt, 0.8, 4, 0.45), dn = eio(tt, 4.0, 5.0), ang = lerp(0, 2.4, cl(up)) * (1 - dn * 0.72), f = ang / 2.4;
   return <>
-    <Estudio t={tt} cam={[0.75, 1.25, 2.9]} look={[0.25, 0.45, 0.3]} orbit={0.08} mesa={false}>
+    <Estudio t={tt} cam={[0.4 + 0.15 * Math.sin(tt * 0.4), 1.35, 2.7 - 0.05 * tt]} look={[0.05, 0.35, 0.1]} orbit={0.05} mesa={false}>
       <RBox p={[0, -0.06, 0]} s={[4.2, 0.12, 2.4]} r={0.04}><meshPhysicalMaterial color="#141414" roughness={0.35} clearcoat={0.8} /></RBox>
-      <Llama p={[-0.3, 0.02, -0.1]} f={f} t={tt} r={0.36} />
-      <group position={[-0.3, 0.12, -0.1]}><Olla mat="vidrio" nivel={0.7} caldo="#b07a50" frijol={30} hervor={0.6 + 2.4 * f} t={tt} s={0.95} /></group>
-      <Vapor t={tt} p={[-0.3, 0.9, -0.1]} o={0.15 + 0.35 * f} h={1.2 + f} s={0.35} spread={0.5} n={14} />
-      <group position={[0.95, 0.25, 1.15]} rotation={[-P2 + 0.55, 0, 0]} scale={2.4}>
+      <Llama p={[-0.55, 0.02, -0.55]} f={0.35 + 0.65 * f} t={tt} r={0.42} />
+      <group position={[-0.55, 0.3, -0.55]}><Olla mat="vidrio" nivel={0.7} caldo="#b07a50" frijol={30} hervor={0.6 + 2.4 * f} t={tt} s={0.6} /></group>
+      <pointLight position={[-0.55, 0.15, -0.2]} intensity={0.3 + 3 * f} distance={1.6} color="#6aa0ff" />
+      <Vapor t={tt} p={[-0.55, 0.75, -0.55]} o={0.15 + 0.35 * f} h={1.2 + f} s={0.35} spread={0.5} n={14} />
+      <group position={[0.4, 0.4, 0.75]} rotation={[P2 - 0.45, 0, 0]} scale={1.3}>
         <mesh castShadow><cylinderGeometry args={[0.26, 0.28, 0.16, 40]} />{M.cromo("#e8e8ea")}</mesh>
         <group rotation={[0, -ang, 0]}><RBox p={[0, 0.11, 0]} s={[0.08, 0.08, 0.46]} r={0.03}><meshStandardMaterial color="#1a1a1a" roughness={0.4} /></RBox>
           <mesh position={[0, 0.16, -0.18]}><sphereGeometry args={[0.05, 12, 8]} /><meshBasicMaterial color="#ff5a3a" toneMapped={false} /></mesh></group>
+        {Array.from({ length: 9 }, (_, i) => { const a = (i / 8) * 2.4; return <mesh key={i} position={[Math.sin(-a) * 0.33, 0.081, -Math.cos(-a) * 0.33]} rotation={[-P2, 0, 0]}><circleGeometry args={[0.012 + 0.012 * (i / 8), 10]} /><meshBasicMaterial color={i / 8 <= f + 0.01 ? "#4a8cff" : "#666"} toneMapped={false} /></mesh>; })}
       </group>
     </Estudio>
     <Head tt={tt} kick="TRUCO 5" title="LUMBRE FUERTE AL PRINCIPIO" />
@@ -147,12 +152,12 @@ const H3Duelo: C = ({ t, h }) => <Stage t={t} h={h} mode="split" mesa={false}>{(
       <Llama p={[-0.95, -0.02, 0]} f={1} t={tt} r={0.42} />
       <pointLight position={[-1.6, 1.2, 1.2]} intensity={5} distance={4} color="#ff9a50" />
       <pointLight position={[1.6, 1.2, 1.2]} intensity={5} distance={4} color="#6aaaff" />
-      <Olla mat="vidrio" p={[-0.95, 0, 0]} s={0.95} nivel={0.6} caldo="#d9963f" frijol={26} fs={0.08} hinchado={1.6 * eff} fc="#9a4028" t={tt} hervor={0.6 + eff} />
-      <Olla mat="vidrio" p={[0.95, 0, 0]} s={0.95} nivel={0.6} caldo="#8cc8f0" frijol={26} fs={0.08} hinchado={-0.7 * eff} fc={eff > 0.5 ? "#2a1418" : "#4d3a40"} t={tt} />
+      <Olla mat="vidrio" p={[-0.95, 0, 0]} s={0.95} nivel={0.6} caldo="#d9963f" frijol={18} fs={0.12} hinchado={1.6 * eff} fc="#9a4028" t={tt} hervor={0.6 + eff} />
+      <Olla mat="vidrio" p={[0.95, 0, 0]} s={0.95} nivel={0.6} caldo="#8cc8f0" frijol={18} fs={0.12} hinchado={-0.7 * eff} fc={eff > 0.5 ? "#2a1418" : "#4d3a40"} t={tt} />
       {pour > 0.01 && <Chorro t={tt} a={[-0.95, 2.1, 0]} b={[-0.95, 0.62, 0]} r={0.05 * pour} c="#e8b07a" o={0.6} />}
       {pour > 0.01 && <Chorro t={tt} a={[0.95, 2.1, 0]} b={[0.95, 0.62, 0]} r={0.05 * pour} c="#d8f0f8" o={0.6} />}
-      {Array.from({ length: 6 }, (_, i) => { const y = 0.6 + fall(tt, 1.2 + i * 0.15, 1.4) + 0.02 * Math.sin(tt * 2 + i);
-        return <RBox key={i} p={[0.95 + (rn(i, 1) - 0.5) * 0.6, y, (rn(i, 2) - 0.5) * 0.5]} s={[0.34, 0.34, 0.34]} r={0.05} rot={[rn(i, 3), rn(i, 4), 0]}><meshPhysicalMaterial color="#e4f6ff" roughness={0.12} transmission={0.5} thickness={0.2} transparent opacity={0.85} clearcoat={1} /></RBox>; })}
+      {Array.from({ length: 6 }, (_, i) => { const y = 0.6 + fall(tt, 1.2 + i * 0.15, 1.4) + 0.02 * Math.sin(tt * 2 + i), _x = 0;
+        return <RBox key={i} p={[0.95 + (rn(i, 1) - 0.5) * 0.6, y, (rn(i, 2) - 0.5) * 0.5]} s={[0.14 * (1 - 0.5 * eff), 0.14 * (1 - 0.5 * eff), 0.14 * (1 - 0.5 * eff)]} r={0.03} rot={[rn(i, 3), rn(i, 4), 0]}><meshPhysicalMaterial color="#eaf8ff" roughness={0.05} transmission={0.9} thickness={0.3} ior={1.31} transparent opacity={0.45} clearcoat={1} /></RBox>; })}
       <Vapor t={tt} p={[-0.95, 0.65, 0]} o={0.45 + 0.4 * eff} h={1.6} s={0.45} spread={0.5} n={20} />
       <Vapor t={tt * 0.5} p={[0.95, 0.4, 0.2]} o={0.12 * eff} h={0.3} s={0.5} spread={0.9} />
     </Estudio>
@@ -165,16 +170,16 @@ const H3Duelo: C = ({ t, h }) => <Stage t={t} h={h} mode="split" mesa={false}>{(
 // ── 7 · CUCHARA: una pizca entre dos dedos sobre la olla: los granitos blancos caen en cámara lenta y el caldo burbujea fino; la cucharita queda vacía al lado
 const H3Cuchara: C = ({ t, h }) => <Stage t={t} h={h} mode="diag" mesa={false}>{(tt) => {
   const hand = eio(tt, 0.9, 2.0), drop = cl((tt - 2.4) / 2.6), fizz = cl((tt - 3.4) * 1.5);
-  const hp: V3 = [lerp(1.8, 0.18, hand), lerp(2.2, 1.55, hand), lerp(-0.3, 0.1, hand)];
+  const hp: V3 = [lerp(1.6, 0.22, hand), lerp(1.8, 1.25, hand), lerp(-0.3, 0.1, hand)];
   return <>
-    <Estudio t={tt} cam={[0.5, 1.75, 2.75]} look={[0.2, 1.0, 0]} orbit={0.08}>
-      <Olla p={[0, 0, 0]} nivel={0.75} caldo="#4a2218" frijol={30} t={tt} hervor={0.2} />
+    <Estudio t={tt} cam={[0.45, 1.55, 2.6 - 0.04 * tt]} look={[0.15, 0.85, 0]} orbit={0.05}>
+      <Olla p={[0, 0, 0]} nivel={0.75} caldo="#7a3a22" frijol={30} t={tt} hervor={0.2} />
       {Array.from({ length: 40 }, (_, i) => { const k = drop * 1.8 - i * 0.022; if (k <= 0 || k > 1) return null;
-        return <mesh key={i} position={[hp[0] + (rn(i, 1) - 0.5) * 0.14 * k, hp[1] - 0.15 - k * 0.82, hp[2] - 0.38 + (rn(i, 2) - 0.5) * 0.14 * k]} rotation={[rn(i, 3) * 3, rn(i, 4) * 3, 0]} scale={0.036} castShadow><boxGeometry /><meshPhysicalMaterial color="#ffffff" roughness={0.1} clearcoat={1} emissive="#ffffff" emissiveIntensity={0.6} /></mesh>; })}
+        return <mesh key={i} position={[hp[0] + (rn(i, 1) - 0.5) * 0.14 * k, hp[1] - 0.12 - k * 0.55, hp[2] + 0.22 + (rn(i, 2) - 0.5) * 0.14 * k]} rotation={[rn(i, 3) * 3, rn(i, 4) * 3, 0]} scale={0.06} castShadow><dodecahedronGeometry args={[1, 0]} /><meshPhysicalMaterial color="#ffffff" roughness={0.1} clearcoat={1} emissive="#ffffff" emissiveIntensity={0.5} /></mesh>; })}
       {[3.0, 3.4, 3.8, 4.2].map((a, i) => <Onda key={"o" + i} p={[0.18 + (rn(i, 5) - 0.5) * 0.2, 0.58, -0.28 + (rn(i, 6) - 0.5) * 0.2]} t={tt} a={a} r={0.3} />)}
       {Array.from({ length: 16 }, (_, i) => { const k = (tt * 2.2 + rn(i, 3)) % 1; return <mesh key={"f" + i} position={[(rn(i, 4) - 0.5) * 0.5, 0.58, (rn(i, 5) - 0.5) * 0.5]} scale={0.001 + 0.022 * fizz * Math.sin(k * P)}><sphereGeometry args={[1, 8, 6]} /><meshStandardMaterial color="#f4e8d8" transparent opacity={0.8} /></mesh>; })}
       <Onda p={[0.18, 0.58, -0.28]} t={tt} a={3.0} r={0.35} />
-      <Mano p={hp} rot={[0.5, -0.4, 0]} pinza={0.85} dedos={2} s={1.1} />
+      <Mano p={hp} rot={[-0.45, P - 0.35, 0]} pinza={0.85} dedos={2} s={1.1} />
       <Cuchara p={[0.9, 0.05, 0.55]} rot={[0, 0.9, 0]} s={0.9} mat="cromo" />
     </Estudio>
     <Head tt={tt} kick="TRUCO 7" title="BICARBONATO: SÓLO UNA PIZCA" />
@@ -247,11 +252,11 @@ const Sal: React.FC<{ x: number; t: number; a: number }> = ({ x, t, a }) => <>{A
 const H3Salero: C = ({ t, h }) => <Stage t={t} h={h} mode="wipe" mesa={false}>{(tt) => {
     const soft = eio(tt, 2.0, 4.6);
   return <>
-    <Estudio t={tt} cam={[0, 1.75, 3.5]} look={[0, 0.65, 0]} orbit={0.08}>
-      <Olla mat="vidrio" p={[-0.95, 0, 0]} s={0.9} nivel={0.6} caldo="#b08a66" frijol={24} fs={0.085} hinchado={-0.35 * soft} fc="#3a1410" t={tt} hervor={0.9} />
-      <Olla mat="vidrio" p={[0.95, 0, 0]} s={0.9} nivel={0.6} caldo="#b08a66" frijol={24} fs={0.085} hinchado={1.3 * soft} fc="#9a4028" t={tt} hervor={0.3} />
-      <Salero p={[-0.95, 1.35 + 1.5 * (1 - eio(tt, 0.6, 1.3)) + 1.5 * eio(tt, 2.8, 3.4), 0]} sh={tt > 1.4 && tt < 2.6 ? 1 : 0} t={tt} />
-      <Salero p={[0.95, 1.35 + 1.5 * (1 - eio(tt, 4.2, 4.9)), 0]} sh={tt > 5.0 && tt < 6.2 ? 1 : 0} t={tt} />
+    <Estudio t={tt} cam={[0.1 * Math.sin(tt * 0.4), 1.6, 3.9 - 0.06 * tt]} look={[0, 0.75, 0]} orbit={0.05}>
+      <Olla mat="vidrio" p={[-0.95, 0, 0]} s={0.9} nivel={0.6} caldo="#c9b48e" frijol={16} fs={0.11} hinchado={-0.45 * soft} fc="#3a1410" t={tt} hervor={0.9} />
+      <Olla mat="vidrio" p={[0.95, 0, 0]} s={0.9} nivel={0.6} caldo="#5a2a1a" frijol={16} fs={0.11} hinchado={1.5 * soft} fc="#9a4028" t={tt} hervor={0.3} />
+      <Salero p={[-0.95, 1.25 + 1.5 * (1 - eio(tt, 0.6, 1.3)) + 1.5 * eio(tt, 2.8, 3.4), 0]} sh={tt > 1.4 && tt < 2.6 ? 1 : 0} t={tt} />
+      <Salero p={[0.95, 1.25 + 1.5 * (1 - eio(tt, 4.2, 4.9)) + 1.5 * eio(tt, 6.3, 6.9), 0]} sh={tt > 5.0 && tt < 6.2 ? 1 : 0} t={tt} />
       <Sal x={-0.95} t={tt} a={1.4} /><Sal x={0.95} t={tt} a={5.0} />
       <Vapor t={tt} p={[0.95, 0.6, 0]} o={0.3} h={1.0} s={0.3} spread={0.4} />
       <Vapor t={tt} p={[-0.95, 0.6, 0]} o={0.3} h={1.0} s={0.3} spread={0.4} />
@@ -441,7 +446,7 @@ const escarchaTex = () => ctex("escarcha", 512, 512, (g) => { g.fillStyle = "#e9
 const H3Congelador: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" mesa={false}>{(tt) => {
   const door = eio(tt, 0.2, 1.1);
   return <>
-    <Estudio t={tt} cam={[0.2, 1.25, 3.55]} look={[0, 0.95, 0]} orbit={0.06} mesa={false}>
+    <Estudio t={tt} cam={[0.15 * Math.sin(tt * 0.4), 1.15, 2.9 - 0.05 * tt]} look={[0, 0.85, 0]} orbit={0.04} mesa={false}>
       <RBox p={[0, 1.0, -0.6]} s={[2.6, 2.3, 0.08]} r={0.03}><meshStandardMaterial color="#f2f6f8" roughness={0.4} /></RBox>
       {[-1.28, 1.28].map((x) => <RBox key={x} p={[x, 1.0, -0.1]} s={[0.08, 2.3, 1.0]} r={0.03}><meshStandardMaterial color="#dfe9f0" roughness={0.4} /></RBox>)}
       {[-0.1, 2.12].map((y) => <RBox key={y} p={[0, y, -0.1]} s={[2.64, 0.1, 1.0]} r={0.03}><meshStandardMaterial color="#f2f6f8" roughness={0.4} /></RBox>)}
@@ -449,16 +454,18 @@ const H3Congelador: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" mesa={false
       <pointLight position={[0, 1.9, 0.2]} intensity={9} distance={4} color="#8fc8ff" />
       <mesh position={[0, 1.0, -0.55]}><planeGeometry args={[2.5, 2.2]} /><meshStandardMaterial map={escarchaTex()} color="#cfe6f6" roughness={0.6} transparent opacity={0.9} /></mesh>
       <group position={[-1.3, 1.0, 0.42]} rotation={[0, -door * 1.35, 0]}><RBox p={[1.3, 0, 0]} s={[2.62, 2.32, 0.1]} r={0.04}><meshStandardMaterial color="#e8eef2" roughness={0.35} /></RBox></group>
-      {Array.from({ length: 7 }, (_, i) => { const a = 1.4 + i * 0.6, sh = [0.02, 0.69, 1.39][Math.floor(i / 3) % 3] ?? 1.39, x = -0.8 + (i % 3) * 0.8, y = sh + 0.06 + (i === 6 ? 0.1 : 0) + fall(tt, a, 1.0);
+      {Array.from({ length: 7 }, (_, i) => { const a = 1.4 + i * 0.6, sh = [0.02, 0.69, 1.39][Math.floor(i / 3) % 3] ?? 1.39, x = -0.8 + (i % 3) * 0.8, y = sh + 0.075 + (i === 6 ? 0.1 : 0) + fall(tt, a, 0.35);
         if (tt < a - 0.4) return null;
         return <group key={i} position={[i === 6 ? 0 : x, y, 0.0]} rotation={[0, (rn(i, 1) - 0.5) * 0.3, 0]} scale={1.15}>
-          <RBox p={[0, 0, 0]} s={[0.62, 0.07, 0.5]} r={0.03}>{M.liquido("#4a2218", 0.95)}</RBox>
+          <RBox p={[0, 0.01, 0]} s={[0.6, 0.06, 0.46]} r={0.03}>{M.liquido("#6a3020", 0.9)}</RBox>
+          <RBox p={[0, 0.02, 0]} s={[0.66, 0.1, 0.52]} r={0.05}><meshPhysicalMaterial color="#f4fbff" roughness={0.08} transmission={0.85} thickness={0.05} transparent opacity={0.35} clearcoat={1} /></RBox>
+          <mesh position={[0, -0.03, 0]} rotation={[-P2, 0, 0]}><planeGeometry args={[0.7, 0.55]} /><meshBasicMaterial color="#000" transparent opacity={0.25} depthWrite={false} /></mesh>
           {Array.from({ length: 12 }, (_, j) => <Frijol key={j} p={[(rn(j + i * 20, 1) - 0.5) * 0.5, 0.03, (rn(j + i * 20, 2) - 0.5) * 0.38]} rot={[0, rn(j, 3) * 6, 0]} s={0.04} c="#3a1610" />)}
           <mesh position={[0, 0.05, -0.2]}><boxGeometry args={[0.66, 0.012, 0.03]} /><meshStandardMaterial color="#3a7bd5" roughness={0.4} /></mesh>
           
-          <mesh position={[0, 0.051, 0.1]} rotation={[-P2, 0, 0]}><planeGeometry args={[0.36, 0.12]} /><meshStandardMaterial map={papel("bol" + i, ["frijol · " + (i + 1)], { size: 70 })} roughness={0.9} /></mesh>
+          {Array.from({ length: 10 }, (_, j) => <mesh key={"e" + j} position={[(rn(j + i * 9, 5) - 0.5) * 0.6, 0.075, (rn(j + i * 9, 6) - 0.5) * 0.45]} rotation={[-P2, 0, rn(j, 7) * 3]}><circleGeometry args={[0.02 + 0.02 * rn(j, 8), 6]} /><meshBasicMaterial color="#ffffff" transparent opacity={0.8} /></mesh>)}
         </group>; })}
-      {Array.from({ length: 26 }, (_, i) => { const per = 3.2, k = ((tt + rn(i, 2) * per) % per) / per; return <sprite key={"n" + i} position={[(rn(i, 4) - 0.5) * 2.2, 2.0 - k * 1.9, 0.5 + k * 0.9]} scale={[0.6 + k * 0.9, 0.35 + k * 0.5, 1]}><spriteMaterial map={humoTex()} color="#e6f4ff" transparent opacity={0.38 * door * Math.sin(k * P)} depthWrite={false} /></sprite>; })}
+      {Array.from({ length: 26 }, (_, i) => { const per = 3.2, k = ((tt + rn(i, 2) * per) % per) / per; return <sprite key={"n" + i} position={[(rn(i, 4) - 0.5) * 2.2, 2.0 - k * 1.9, 0.5 + k * 0.9]} scale={[0.6 + k * 0.9, 0.35 + k * 0.5, 1]}><spriteMaterial map={humoTex()} color="#e6f4ff" transparent opacity={0.38 * (0.5 + 0.5 * door) * Math.sin(k * P)} depthWrite={false} /></sprite>; })}
     </Estudio>
     <Head tt={tt} kick="TRUCO 22" title="CONGELADOS, EN PORCIONES CON CALDO" />
   </>;
@@ -466,18 +473,18 @@ const H3Congelador: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" mesa={false
 
 // ── 20 · NUNCA (bloque): un tendedero; cada «nunca» es una foto colgada con pinzas, y un sello rojo le cae encima con un golpe
 const selloTex = () => ctex("sello", 256, 256, (g) => { g.strokeStyle = "#c0392b"; g.fillStyle = "#c0392b"; g.lineWidth = 14; g.beginPath(); g.arc(128, 128, 110, 0, 7); g.stroke(); g.lineWidth = 5; g.beginPath(); g.arc(128, 128, 88, 0, 7); g.stroke();
-  g.font = "900 62px Georgia, serif"; g.textAlign = "center"; g.textBaseline = "middle"; g.fillText("NUNCA", 128, 132); for (let i = 0; i < 160; i++) { g.clearRect(rn(i, 3) * 256, rn(i, 4) * 256, 3 + 4 * rn(i, 5), 2 + 3 * rn(i, 6)); } });
+  g.lineWidth = 22; g.lineCap = "round"; g.beginPath(); g.moveTo(70, 70); g.lineTo(186, 186); g.moveTo(186, 70); g.lineTo(70, 186); g.stroke(); for (let i = 0; i < 160; i++) { g.clearRect(rn(i, 3) * 256, rn(i, 4) * 256, 3 + 4 * rn(i, 5), 2 + 3 * rn(i, 6)); } });
 const H3Nunca: C = ({ t, h }) => <Stage t={t} h={h} mode="split" tone="#24140c" mesa={false}>{(tt) => {
   const E = (h.items ?? []) as { a: number; tx: string }[], cur = E.reduce((c, e, i) => (t >= e.a ? i : c), 0), N = E.length;
   const ca = E[cur].a - h.at, curF = lerp(Math.max(0, cur - 1), cur, eio(tt, ca, ca + 0.8)), camX = 0;
   return <>
-    <Estudio t={tt} cam={[camX, 1.4, 3.9]} look={[0, 1.05, 0]} orbit={0.08} mesa={false}>
-      <mesh position={[0, 1.78, 0]} rotation={[0, 0, P2]}><cylinderGeometry args={[0.008, 0.008, 12, 6]} /><meshStandardMaterial color="#d8c8a8" /></mesh>
-      {E.map((e, i) => { const a = e.a - h.at; if (tt < a - 0.3) return null; const k = ent(tt, a), st = cl((tt - a - 0.7) * 6), px = (i - curF) * 2.7;
+    <Estudio t={tt} cam={[camX + 0.1 * Math.sin(tt * 0.4), 1.3, 3.6 - 0.04 * tt]} look={[0, 1.15, 0]} orbit={0.04} mesa={false}>
+      <mesh position={[0, 1.78, 0]} rotation={[0, 0, P2]}><cylinderGeometry args={[0.012, 0.012, 14, 6]} /><meshStandardMaterial color="#d8c8a8" /></mesh>
+      {E.map((e, i) => { const a = e.a - h.at; if (tt < a - 0.3) return null; const k = ent(tt, a), st = cl((tt - a - 0.7) * 6), px = (i - curF) * 3.6;
         return <group key={i} position={[px, 1.78 + (1 - k) * 1.2, 0]} rotation={[0, 0, 0.05 * Math.sin(tt * 1.4 + i)]}>
-          <Foto3D src={img(h.imgs?.[i] ?? h.bg ?? "")} p={[0, -0.5, 0]} w={1.2} h={0.8} dim={i === cur ? 0 : 0.35}>
-            {st > 0.01 && <mesh position={[0.36, -0.2, 0.03]} rotation={[0, 0, -0.25]}><planeGeometry args={[0.6, 0.6]} /><meshBasicMaterial map={selloTex()} transparent opacity={0.92 * cl(st * 3)} /></mesh>}
-            {tt > a + 0.1 && tt < a + 1.4 && <group position={[0.36, -0.2, 0.05 + 0.9 * (1 - cl(eio(tt, a + 0.2, a + 0.7))) + 0.9 * eio(tt, a + 0.85, a + 1.35)]} rotation={[P2, 0, 0]}>
+          <Foto3D src={img(h.imgs?.[i] ?? h.bg ?? "")} p={[0, -0.62, 0]} w={1.6} h={1.07} dim={i === cur ? 0 : 0.35}>
+            {st > 0.01 && <mesh position={[0.62, -0.45, 0.03]} rotation={[0, 0, -0.25]}><planeGeometry args={[0.45, 0.45]} /><meshBasicMaterial map={selloTex()} transparent opacity={0.92 * cl(st * 3)} /></mesh>}
+            {tt > a + 0.1 && tt < a + 1.4 && <group position={[0.62, -0.45, 0.05 + 0.9 * (1 - cl(eio(tt, a + 0.2, a + 0.7))) + 0.9 * eio(tt, a + 0.85, a + 1.35)]} rotation={[P2, 0, 0]}>
               <mesh castShadow><cylinderGeometry args={[0.24, 0.24, 0.08, 32]} /><meshStandardMaterial color="#8a1f14" roughness={0.7} /></mesh>
               <mesh position={[0, -0.12, 0]} castShadow><cylinderGeometry args={[0.22, 0.22, 0.16, 32]} />{M.madera("#7a5232")}</mesh>
               <mesh position={[0, -0.3, 0]} castShadow><sphereGeometry args={[0.12, 20, 14]} />{M.madera("#5a3218")}</mesh></group>}
@@ -501,14 +508,13 @@ const Comida: React.FC<{ i: number }> = ({ i }) => {
   return <><mesh position={[0, 0.1, 0]} castShadow><cylinderGeometry args={[0.26, 0.16, 0.16, 24, 1, true]} /><meshStandardMaterial color="#f2efe4" side={THREE.DoubleSide} /></mesh><mesh position={[0, 0.16, 0]}><cylinderGeometry args={[0.25, 0.25, 0.01, 24]} />{M.liquido("#7a3a22")}</mesh><mesh position={[0, 0.17, 0]} rotation={[-P2, 0, 0]}><ringGeometry args={[0.04, 0.1, 20]} /><meshBasicMaterial color="#f8f2e6" /></mesh></>;
 };
 const H3Ruleta: C = ({ t, h }) => <Stage t={t} h={h} mode="ring" mesa={false}>{(tt) => <>
-  <Estudio t={tt} cam={[0, 2.7, 3.9]} look={[0, 0.25, 0.2]} orbit={0.18}>
+  <Estudio t={tt} cam={[0.4 * Math.sin(tt * 0.25), 2.9 - 0.08 * tt, 4.0 - 0.06 * tt]} look={[0, 0.2, 0.1]} orbit={0.06}>
     <Olla nivel={0.72} frijol={20} t={tt} hervor={0.4} s={0.85} />
     <Vapor t={tt} p={[0, 0.7, 0]} o={0.3} h={1.2} s={0.3} spread={0.4} />
     {Array.from({ length: 7 }, (_, i) => { const a0 = 0.7 + i * 0.5, k = eio(tt, a0, a0 + 0.9), ang = (i / 7) * 2 * P - P2 + 0.2 * tt * 0.1, R = 1.6;
       if (tt < a0) return null;
       const p = arco([0, 0.7, 0], [Math.cos(ang) * R, 0.02, Math.sin(ang) * R * 0.78], k, 0.9);
-      return <Plato key={i} p={p} rot={[(1 - k) * 2, ang, 0]} s={1.4}><Comida i={i} />
-        <mesh position={[0, 0.06, 0.4]} rotation={[-P2 + 0.5, 0, 0]}><planeGeometry args={[0.4, 0.25]} /><meshStandardMaterial map={papel("dia" + i, [["LUN", "MAR", "MIÉ", "JUE", "VIE", "SÁB", "DOM"][i]], { w: 256, h: 160, size: 96 })} roughness={0.9} /></mesh></Plato>; })}
+      return <Plato key={i} p={p} rot={[(1 - k) * 2, ang, 0]} s={1.75}><Comida i={i} /></Plato>; })}
   </Estudio>
   <Head tt={tt} kick="TRUCO 23" title="UNA OLLA, SIETE COMIDAS" />
 </>}</Stage>;
@@ -518,11 +524,11 @@ const REP = ["fa06", "fa02", "fa03", "fa04", "fao03", "fa05", "fao10", "fa01", "
 const H3Repaso: C = ({ t, h }) => <Stage t={t} h={h} mode="ring" mesa={false}>{(tt) => {
   const S = (h.items ?? []) as { a: number; tx: string }[], cur = S.reduce((c, e, i) => (t >= e.a ? i : c), 0), from = Math.max(0, cur - 2);
   return <>
-    <Estudio t={tt} cam={[0.3, 3.5 - 0.01 * cur, 3.3]} look={[0, 0.1 + cur * 0.012, 0]} orbit={0.1}>
+    <Estudio t={tt} cam={[0.3 + 0.1 * Math.sin(tt * 0.5), 2.5, 2.2]} look={[0, 0.1 + cur * 0.012, 0]} orbit={0.04}>
       <RBox p={[0, 0.01 + 0.006 * from, 0]} s={[1.72, 0.012 * from + 0.02, 1.12]} r={0.01}><meshStandardMaterial color="#efe6d4" roughness={0.9} /></RBox>
       {S.slice(from, cur + 1).map((s, j) => { const i = from + j, a = s.a - h.at, k = ent(tt, a);
         return <Foto3D key={i} src={img(REP[i % REP.length])} p={[(rn(i, 1) - 0.5) * 0.25 + (1 - k) * 1.6, 0.02 + i * 0.012 + (1 - k) * 1.0, (rn(i, 2) - 0.5) * 0.2]} rot={[-P2, 0, (rn(i, 3) - 0.5) * 0.5 + (1 - k) * 1.2]} w={1.7} h={1.1} dim={i === cur ? 0 : 0.4}>
-          {i === cur && <mesh position={[-0.62, 0.36, 0.03]} rotation={[0, 0, 0.1]}><planeGeometry args={[0.52, 0.52]} /><meshStandardMaterial map={numTex(String(i + 1), "#b8281c")} roughness={0.9} /></mesh>}
+          {i === cur && <mesh position={[-0.55, 0.3, 0.03]} rotation={[0, 0, 0.1]}><planeGeometry args={[0.7, 0.7]} /><meshStandardMaterial map={numTex(String(i + 1), "#b8281c")} roughness={0.9} /></mesh>}
         </Foto3D>; })}
     </Estudio>
     <Head tt={tt} kick="REPASO RÁPIDO" title={`LOS 24, EN UN ABRIR Y CERRAR`} />
