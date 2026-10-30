@@ -16,7 +16,7 @@ export const StepTitle: React.FC<{ t: number; at: number; n: number; name: strin
     <AbsoluteFill style={{ opacity: o, perspective: 1400 }}>
       <AbsoluteFill style={{ background: `radial-gradient(ellipse 60% 55% at ${(x / 1920) * 100}% ${(y / 1080) * 100}%, rgba(0,0,0,.55), transparent 75%)` }} />
       <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) scale(${sc}) translateZ(${(1 - k) * -1400}px) rotateX(${(1 - k) * 50 + 8}deg) rotateY(${Math.sin((t - at) * 0.8) * 5}deg)`, textAlign: "center", fontFamily: FONT, whiteSpace: "nowrap" }}>
-        <div style={{ fontWeight: 900, fontSize: 64, letterSpacing: 26, color: COL.ink, textShadow: extrude(5, "rgba(0,0,0,.7)"), marginBottom: -20 }}>PUNTO</div>
+        <div style={{ fontWeight: 900, fontSize: 64, letterSpacing: 26, color: COL.ink, textShadow: extrude(5, "rgba(0,0,0,.7)"), marginBottom: -20 }}>NUMBER</div>
         <div style={{ position: "relative", display: "inline-block", fontWeight: 900, fontSize: 360, lineHeight: 1, color: col, textShadow: extrude(22, "#5a3410") }}>
           {n}
           <div style={{ position: "absolute", inset: 0, background: `linear-gradient(105deg, transparent ${sweep * 140 - 40}%, rgba(255,255,255,.75) ${sweep * 140 - 25}%, transparent ${sweep * 140 - 10}%)`, WebkitBackgroundClip: "text", color: "transparent", mixBlendMode: "screen" } as React.CSSProperties}>{n}</div>
