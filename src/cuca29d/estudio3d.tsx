@@ -49,9 +49,10 @@ export const humoTex = () => ctex("humo", 64, 64, (g) => {
 const Cam: React.FC<{ t: number; p: V3; l: V3; orbit: number; fov: number }> = ({ t, p, l, orbit, fov }) => {
   const { camera } = useThree();
   const k = 1 - Math.exp(-t * 0.45), a = orbit * (Math.sin(t * 0.32) * 0.6 + (k - 0.5) * 0.8);
-  const dx = p[0] - l[0], dz = p[2] - l[2], r = Math.hypot(dx, dz) * (1.06 - 0.08 * k), base = Math.atan2(dx, dz) + a;
-  camera.position.set(l[0] + Math.sin(base) * r, p[1] + 0.08 * Math.sin(t * 0.27) - 0.12 * k, l[2] + Math.cos(base) * r);
-  (camera as THREE.PerspectiveCamera).fov = fov; (camera as THREE.PerspectiveCamera).updateProjectionMatrix();
+  // v7: la cámara nunca se queda quieta (avance lento y deriva hasta el último cuadro) y abre 3° de aire arriba
+  const lin = Math.min(t, 12) / 12, dx = p[0] - l[0], dz = p[2] - l[2], r = Math.hypot(dx, dz) * (1.14 - 0.06 * k - 0.06 * lin), base = Math.atan2(dx, dz) + a + 0.06 * lin;
+  camera.position.set(l[0] + Math.sin(base) * r, p[1] + 0.08 * Math.sin(t * 0.27) - 0.12 * k - 0.05 * lin, l[2] + Math.cos(base) * r);
+  (camera as THREE.PerspectiveCamera).fov = fov + 3; (camera as THREE.PerspectiveCamera).updateProjectionMatrix();
   camera.lookAt(l[0], l[1], l[2]);
   // la escena baja 90 px: arriba queda aire para el título (nada lo pisa ni se corta contra el borde)
   return null;
