@@ -17,7 +17,7 @@ const HClock2am: C = ({ t, h }) => <S t={t} h={h} f={(tt) => {
     {L.on && <Prop id="alarm_clock" x={960 + ring} y={950 + L.dy} w={520} r={ring * 0.8} sq={L.sq} />}
     {L.on && <Dust tt={tt} at={0.75} x={960} y={950} w={420} />}
     {tl > 0 && Array.from({ length: 6 }, (_, i) => <Rings key={i} tt={tt} at={d / 2 + i * 0.7} x={960} y={620} s={1.1} />)}
-    <Glow x={960} y={650} r={300} o={tl * (0.6 + 0.4 * Math.sin(tt * 30))} col="200,220,255" />
+    <Glow x={960} y={650} r={300} o={tl * (0.8 + 0.2 * Math.sin(tt * 6))} col="200,220,255" />
   </Cam>;
 }} />;
 
