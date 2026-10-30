@@ -79,7 +79,8 @@ export const Guia: React.FC<{ t: number; at: number; out: number; libro: number;
   const zoom = ei(t, zoomAt, zoomAt + 1.0);              // la página crece y el libro se va a la izquierda
   const qr = Math.min(1, pop(t, zoomAt + 0.6, 0.8));
   const BW = 330, BH = 495;
-  return <div style={{ position: "absolute", inset: 0, opacity: o }}>
+  const dr = Math.min(1, Math.max(0, (t - at) / Math.max(1, out - at)));   // deriva lenta de cámara: la pieza nunca queda congelada (QC freezedetect)
+  return <div style={{ position: "absolute", inset: 0, opacity: o, transform: `scale(${1 + 0.07 * dr}) translate(${-14 * dr + 4 * Math.sin(t * 0.6)}px, ${8 * dr + 3 * Math.sin(t * 0.45 + 1)}px)` }}>
     <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 45% 50%, rgba(30,18,10,.55), rgba(12,7,4,.9) 75%)" }} />
     {/* abanico de los otros 4 */}
     {[1, 2, 3, 4, 5].filter((n) => n !== libro).map((n, i) => {
