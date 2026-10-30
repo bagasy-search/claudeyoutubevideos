@@ -1,0 +1,637 @@
+{
+"segs": [
+[
+4.67,
+8.74,
+"shot",
+"v01"
+],
+[
+8.74,
+14.74,
+"shot",
+"f01_microondas_salsa"
+],
+[
+19.82,
+25.82,
+"shot",
+"f03_frutero_limon"
+],
+[
+37.44,
+43.44,
+"shot",
+"f05_iglesia_cocina"
+],
+[
+53.82,
+59.82,
+"shot",
+"f06_heladera_limon"
+],
+[
+71.16,
+76.16,
+"shot",
+"f07_spray_bajo_pileta"
+],
+[
+104.77,
+110.6,
+"shot",
+"f10_boda_1956"
+],
+[
+110.6,
+114.38,
+"shot",
+"f11_galpon_padre"
+],
+[
+114.38,
+118.03,
+"shot",
+"f09_tabla_arce"
+],
+[
+129.24,
+134.61,
+"shot",
+"v04"
+],
+[
+154.83,
+160.83,
+"shot",
+"f12_tabla_escurre"
+],
+[
+171.47,
+177.47,
+"shot",
+"f13_jabon_carne"
+],
+[
+191.0,
+197.0,
+"shot",
+"f14_canilla_sarro"
+],
+[
+205.55,
+210.55,
+"shot",
+"f16_madre_rie"
+],
+[
+221.85,
+227.85,
+"shot",
+"f18_canilla_brilla"
+],
+[
+240.06,
+246.06,
+"shot",
+"f17_granito_mancha"
+],
+[
+272.08,
+278.08,
+"shot",
+"f19_cebollas_40lb"
+],
+[
+284.6,
+286.24,
+"shot",
+"f20_chili_feria"
+],
+[
+286.24,
+292.24,
+"shot",
+"f21_bernice"
+],
+[
+292.26,
+297.36,
+"shot",
+"f22_manos_limon"
+],
+[
+308.48,
+312.76,
+"shot",
+"f23_cuchara_acero"
+],
+[
+340.16,
+344.89,
+"shot",
+"f24_becky_regalo"
+],
+[
+357.94,
+361.45,
+"shot",
+"f25_bol_limon_agua"
+],
+[
+383.29,
+385.81,
+"shot",
+"f26_vidrio_empanado"
+],
+[
+385.81,
+389.82,
+"shot",
+"v03"
+],
+[
+389.82,
+394.24,
+"shot",
+"f27_agarradera"
+],
+[
+400.47,
+406.47,
+"shot",
+"f28_pared_limpia"
+],
+[
+433.0,
+439.0,
+"shot",
+"f29_ollas_cobre"
+],
+[
+442.82,
+444.78,
+"shot",
+"f30_lindquist"
+],
+[
+452.88,
+458.88,
+"shot",
+"f31_lana_acero"
+],
+[
+466.32,
+470.58,
+"shot",
+"v05"
+],
+[
+470.58,
+476.58,
+"shot",
+"f32_cobre_rosa"
+],
+[
+481.74,
+488.74,
+"shot",
+"f33_reunion_1979"
+],
+[
+515.17,
+521.17,
+"shot",
+"f34_pava_sarro"
+],
+[
+535.26,
+540.02,
+"shot",
+"v02"
+],
+[
+540.02,
+542.08,
+"shot",
+"f35_pava_hierve"
+],
+[
+565.37,
+571.37,
+"shot",
+"f36_cafetera"
+],
+[
+651.97,
+657.97,
+"shot",
+"f37_bandeja_fruta"
+],
+[
+666.25,
+672.25,
+"shot",
+"f39_irene"
+],
+[
+678.86,
+684.86,
+"shot",
+"f38_manzanas_agua"
+],
+[
+719.73,
+724.95,
+"shot",
+"f41_harold_coro"
+],
+[
+733.55,
+739.55,
+"shot",
+"f42_taza_miel"
+],
+[
+783.53,
+789.53,
+"shot",
+"f43_servilletas_amarillas"
+],
+[
+795.81,
+801.81,
+"shot",
+"f44_olla_conserva"
+],
+[
+814.55,
+820.55,
+"shot",
+"f45_servilletas_pasto"
+],
+[
+865.43,
+871.43,
+"shot",
+"f46_camisa_clavo"
+],
+[
+879.97,
+885.97,
+"shot",
+"f47_mancha_oxido"
+],
+[
+889.55,
+894.55,
+"shot",
+"f48_camisa_baranda"
+],
+[
+894.86,
+902.86,
+"shot",
+"v06"
+],
+[
+922.05,
+925.81,
+"shot",
+"f49_rallador"
+],
+[
+970.79,
+973.79,
+"shot",
+"f51_botas_perro"
+],
+[
+977.45,
+985.45,
+"shot",
+"v07"
+],
+[
+995.59,
+1001.59,
+"shot",
+"f50_olla_canela"
+],
+[
+1016.95,
+1022.95,
+"shot",
+"f52_candelabros"
+],
+[
+1040.4,
+1042.84,
+"shot",
+"v08"
+],
+[
+1069.48,
+1072.97,
+"shot",
+"f53_pastora"
+],
+[
+1147.5,
+1153.5,
+"shot",
+"f54_cubeteras"
+],
+[
+1162.82,
+1168.82,
+"shot",
+"f55_june"
+],
+[
+1181.1,
+1187.1,
+"shot",
+"f56_gondola_spray"
+],
+[
+1196.54,
+1204.54,
+"shot",
+"v10"
+],
+[
+1213.18,
+1218.18,
+"shot",
+"f59_compost"
+],
+[
+1226.57,
+1232.57,
+"shot",
+"f58_spray_casero"
+],
+[
+1270.28,
+1271.61,
+"shot",
+"f57_frasco_ventana"
+],
+[
+1276.69,
+1284.69,
+"shot",
+"v09"
+],
+[
+1358.92,
+1364.92,
+"shot",
+"f60_aluminio"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 100.6,
+"out": 105.6
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE CUTTING BOARD",
+"at": 101.98,
+"out": 105.18
+},
+{
+"k": "step",
+"n": 2,
+"name": "WATER SPOTS ON THE FAUCET",
+"at": 183.6,
+"out": 186.8
+},
+{
+"k": "step",
+"n": 3,
+"name": "ONION HANDS",
+"at": 265.12,
+"out": 268.32
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE MICROWAVE",
+"at": 327.1,
+"out": 330.3
+},
+{
+"k": "step",
+"n": 5,
+"name": "COPPER BOTTOMS",
+"at": 428.52,
+"out": 431.72
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE TEA KETTLE",
+"at": 511.29,
+"out": 514.49
+},
+{
+"k": "step",
+"n": 7,
+"name": "APPLES THAT STAY WHITE",
+"at": 646.78,
+"out": 649.98
+},
+{
+"k": "step",
+"n": 8,
+"name": "A SORE THROAT AT NIGHT",
+"at": 711.27,
+"out": 714.47
+},
+{
+"k": "step",
+"n": 9,
+"name": "WHITENING LINENS",
+"at": 779.93,
+"out": 783.13
+},
+{
+"k": "step",
+"n": 10,
+"name": "RUST ON A WHITE SHIRT",
+"at": 859.91,
+"out": 863.11
+},
+{
+"k": "step",
+"n": 11,
+"name": "THE CHEESE GRATER",
+"at": 918.93,
+"out": 922.13
+},
+{
+"k": "step",
+"n": 12,
+"name": "THE SIMMER POT",
+"at": 955.77,
+"out": 958.97
+},
+{
+"k": "step",
+"n": 13,
+"name": "THE BRASS CANDLESTICKS",
+"at": 1012.95,
+"out": 1016.15
+},
+{
+"k": "step",
+"n": 14,
+"name": "FREEZE THE ZEST & JUICE",
+"at": 1123.06,
+"out": 1126.26
+},
+{
+"k": "step",
+"n": 15,
+"name": "THE WINDOWSILL JAR",
+"at": 1171.42,
+"out": 1174.62
+},
+{
+"k": "deal",
+"at": 574.52,
+"out": 575.52
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Lemon on stone",
+"at": 581.87,
+"out": 584.07
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Juice left on metal",
+"at": 594.76,
+"out": 596.96
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Lemon on skin in the sun",
+"at": 605.21,
+"out": 607.41
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Mixing it with bleach",
+"at": 621.11,
+"out": 623.31
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Throwing the peel away",
+"at": 632.66,
+"out": 634.06
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1277.34
+},
+{
+"at": 1282.18
+},
+{
+"at": 1286.5
+},
+{
+"at": 1290.24
+},
+{
+"at": 1295.44
+},
+{
+"at": 1299.06
+},
+{
+"at": 1303.18
+},
+{
+"at": 1305.76
+},
+{
+"at": 1310.36
+},
+{
+"at": 1313.08
+},
+{
+"at": 1315.98
+},
+{
+"at": 1318.18
+},
+{
+"at": 1321.32
+},
+{
+"at": 1324.0
+},
+{
+"at": 1327.82
+}
+],
+"at": 1274.06,
+"out": 1329.82
+},
+{
+"k": "ask",
+"at": 1336.5,
+"out": 1344.5
+}
+],
+"end": 1377.22,
+"txt": {
+"recapTitle": "THREE LEMONS · 15 JOBS",
+"recap": [
+"Cutting board",
+"Faucet spots",
+"Onion hands",
+"Microwave",
+"Copper bottoms",
+"Tea kettle",
+"Apples stay white",
+"Sore throat mug",
+"Linens in the sun",
+"Rust on a shirt",
+"Cheese grater",
+"Simmer pot",
+"Brass candlesticks",
+"Frozen zest & juice",
+"Windowsill jar"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"What did YOUR mother",
+"do with a lemon?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+35.08,
+43.08
+]
+}
+}
