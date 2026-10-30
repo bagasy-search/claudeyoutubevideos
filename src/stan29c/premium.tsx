@@ -149,9 +149,9 @@ export const BigNum: React.FC<{ t: number; at: number; out: number; text: string
 // ---------- medidor de temperatura: arco que baja de a → b, lectura grande al centro ----------
 export const TempGauge: React.FC<{ t: number; at: number; out: number; a: number; b: number; sub: string; col?: string; x?: number; y?: number }> = ({ t, at, out, a, b, sub, col, x = 1440, y = 520 }) => {
   if (vis(t, at, out) <= 0.01) return null;
-  const v = a + (b - a) * phys(t, at + 0.3, 3.2, 0.62), R = 190, SW = 22, SPAN = 270;
-  const C = 2 * Math.PI * R, arc = (C * SPAN) / 360, f = Math.max(0, Math.min(1, v / 100));
-  const hot = v > 60 ? "#ff6a3d" : v > 35 ? COL.amber : COL.ice, c = col === "red" && v < 60 ? COL.ice : hot;
+  const v = Math.min(b, a + (b - a) * phys(t, at + 0.3, 3.2, 0.62)), R = 190, SW = 22, SPAN = 270; // 30-oct: sin pasarse del valor (el resorte mostraba 148 con el termómetro en 145)
+  const C = 2 * Math.PI * R, arc = (C * SPAN) / 360, f = Math.max(0, Math.min(1, v / Math.max(100, b * 1.15)));
+  const hot = v > Math.max(60, b * 0.6) ? "#ff6a3d" : v > 35 ? COL.amber : COL.ice, c = col === "red" && v < 60 ? COL.ice : hot;
   return <div style={{ position: "absolute", left: x, top: y, transform: "translate(-50%,-50%)" }}><div style={rise(t, at, out)}>
     <Panel style={{ width: 520, padding: "34px 30px 30px", textAlign: "center" }}>
       <div style={{ position: "relative", width: 460, height: 400, margin: "0 auto" }}>
@@ -159,8 +159,8 @@ export const TempGauge: React.FC<{ t: number; at: number; out: number; a: number
           <circle r={R} fill="none" stroke="rgba(255,255,255,.08)" strokeWidth={SW} strokeLinecap="round" strokeDasharray={`${arc} ${C}`} />
           <circle r={R} fill="none" stroke={c} strokeWidth={SW} strokeLinecap="round" strokeDasharray={`${arc * f * cl(phys(t, at, 4, 0.7))} ${C}`} style={{ filter: `drop-shadow(0 0 12px ${c})` }} />
         </svg>
-        <div style={{ position: "absolute", left: 0, right: 0, top: 120, fontWeight: 800, fontSize: 150, lineHeight: 1, letterSpacing: -4 }}>{Math.round(v)}<span style={{ fontSize: 56, color: G.dim, letterSpacing: 0 }}>°C</span></div>
-        <div style={{ position: "absolute", left: 0, right: 0, top: 290, fontWeight: 800, fontSize: 24, letterSpacing: 4, color: G.dim }}>DESDE {a} °C</div>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 120, fontWeight: 800, fontSize: 150, lineHeight: 1, letterSpacing: -4 }}>{Math.round(v)}<span style={{ fontSize: 56, color: G.dim, letterSpacing: 0 }}>°F</span></div>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 290, fontWeight: 800, fontSize: 24, letterSpacing: 4, color: G.dim }}>FROM {a} °F</div>
       </div>
       <div style={{ marginTop: -6, fontWeight: 800, fontSize: 26, lineHeight: 1.3, letterSpacing: 2, color: G.txt }}>{sub}</div>
     </Panel>
@@ -197,7 +197,7 @@ export const Versus: React.FC<{ t: number; at: number; out: number; L: Col2; R: 
   const vs = phys(t, at + 0.9, 8, 0.4) * (1 - cl(verdict));
   return <AbsoluteFill style={{ opacity: o, fontFamily: FONT, color: G.txt }}>
     <AbsoluteFill style={{ background: "radial-gradient(ellipse 70% 60% at 50% 48%, #1e1a16, #08080a 65%)" }} />
-    {title && <div style={{ position: "absolute", left: 0, right: 0, top: 60, display: "flex", justifyContent: "center", opacity: cl(phys(t, at + 0.3, 6, 0.7)), transform: `translateY(${(1 - cl(phys(t, at + 0.3, 6, 0.7))) * -20}px)` }}><Kicker txt={title} /></div>}
+    {false && title && <div style={{ position: "absolute", left: 0, right: 0, top: 60, display: "flex", justifyContent: "center", opacity: cl(phys(t, at + 0.3, 6, 0.7)), transform: `translateY(${(1 - cl(phys(t, at + 0.3, 6, 0.7))) * -20}px)` }}><Kicker txt={title} /></div>}
     <div style={{ position: "absolute", left: 960, top: 560, perspective: 1900 }}>
       <div style={{ transformStyle: "preserve-3d", transform: `translateZ(${-420 * (1 - inn) - 700 * xo + 30 * Math.sin((t - at) * 0.4)}px) rotateX(${5 + 6 * xo}deg) rotateY(${3.5 * Math.sin((t - at) * 0.25 + 0.4) + 12 * (1 - inn)}deg)` }}>
         {card(L, 0)}{card(R, 1)}
