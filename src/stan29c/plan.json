@@ -1,0 +1,1952 @@
+{
+"segs": [
+[
+3.5,
+6.84,
+"shot",
+"n_bistro_velas"
+],
+[
+6.84,
+10.5,
+"shot",
+"n_medio_pollo"
+],
+[
+10.5,
+15.2,
+"shot",
+"v01_glass"
+],
+[
+19.5,
+22.74,
+"shot",
+"n_pollo_jugoso"
+],
+[
+22.74,
+26.92,
+"shot",
+"n_pollo_super"
+],
+[
+26.92,
+31.9,
+"shot",
+"n_piel_flotador"
+],
+[
+37.208,
+42.44,
+"shot",
+"f_mostrador_pollos"
+],
+[
+42.44,
+49.42,
+"shot",
+"n_vitrina_mixta"
+],
+[
+49.42,
+50.7,
+"shot",
+"n_mitades_cuartos"
+],
+[
+54.147,
+58.08,
+"shot",
+"f_cuchilla_pollo"
+],
+[
+58.08,
+63.3,
+"shot",
+"n_cuenta_30"
+],
+[
+63.3,
+66.4,
+"shot",
+"f_dedo_espera"
+],
+[
+71.0,
+74.02,
+"shot",
+"n_alacena"
+],
+[
+74.02,
+79.7,
+"shot",
+"n_piel_burbujas"
+],
+[
+79.7,
+83.6,
+"shot",
+"f_senala_suscribe"
+],
+[
+88.514,
+93.18,
+"shot",
+"n_etiqueta_air"
+],
+[
+93.18,
+96.54,
+"shot",
+"n_camion_1968"
+],
+[
+96.54,
+100.374,
+"shot",
+"n_granjero_arne"
+],
+[
+104.714,
+106.22,
+"shot",
+"n_planta_pollos"
+],
+[
+106.22,
+110.9,
+"shot",
+"n_pollo_dorado_viejo"
+],
+[
+110.9,
+115.453,
+"shot",
+"n_padre_granjero"
+],
+[
+118.9,
+126.38,
+"shot",
+"n_tanque_hielo"
+],
+[
+126.38,
+129.26,
+"shot",
+"n_pollo_mojado"
+],
+[
+129.26,
+130.577,
+"shot",
+"n_bandeja_agua"
+],
+[
+136.031,
+140.8,
+"shot",
+"n_aire_frio"
+],
+[
+140.8,
+146.02,
+"shot",
+"n_piel_seca_cruda"
+],
+[
+146.02,
+147.8,
+"shot",
+"n_precios_dos"
+],
+[
+152.9,
+158.76,
+"shot",
+"n_pollo_barato"
+],
+[
+158.76,
+162.12,
+"shot",
+"f_lee_etiqueta_pollo"
+],
+[
+162.12,
+165.796,
+"shot",
+"n_toallas_pollo"
+],
+[
+170.2,
+176.38,
+"shot",
+"n_pollo_abierto"
+],
+[
+176.38,
+181.3,
+"shot",
+"n_tijeras_aves"
+],
+[
+181.3,
+183.9,
+"shot",
+"n_padre_tijeras"
+],
+[
+189.214,
+197.3,
+"shot",
+"v02_tijera"
+],
+[
+198.14,
+199.291,
+"shot",
+"f_pollo_tabla"
+],
+[
+204.55,
+207.5,
+"shot",
+"n_tijeras_cocina"
+],
+[
+207.5,
+216.74,
+"shot",
+"n_corte_espina"
+],
+[
+216.74,
+219.176,
+"shot",
+"n_espina_mano"
+],
+[
+224.009,
+225.88,
+"shot",
+"n_espina_bolsa"
+],
+[
+225.88,
+230.22,
+"shot",
+"n_pechuga_arriba"
+],
+[
+230.22,
+235.972,
+"shot",
+"v03_aplasta"
+],
+[
+239.3,
+241.7,
+"shot",
+"f_pregunta_porque"
+],
+[
+241.7,
+243.76,
+"shot",
+"n_pollo_redondo"
+],
+[
+243.76,
+249.266,
+"shot",
+"n_muslos_abajo"
+],
+[
+255.519,
+261.5,
+"shot",
+"n_pollo_plano"
+],
+[
+261.5,
+264.8,
+"shot",
+"n_piel_arriba"
+],
+[
+264.8,
+268.379,
+"shot",
+"n_pechuga_seca"
+],
+[
+271.949,
+278.32,
+"shot",
+"f_tijeras_casa"
+],
+[
+278.32,
+281.64,
+"shot",
+"n_espinas_freezer"
+],
+[
+281.64,
+283.086,
+"shot",
+"n_monedas_mostrador"
+],
+[
+287.6,
+292.42,
+"shot",
+"n_alitas_puntas"
+],
+[
+292.42,
+298.52,
+"shot",
+"n_senoras_sopa"
+],
+[
+298.52,
+300.7,
+"shot",
+"n_espinas_papel"
+],
+[
+305.5,
+314.1,
+"shot",
+"n_olla_caldo"
+],
+[
+314.1,
+316.66,
+"shot",
+"n_caldo_hierve"
+],
+[
+316.66,
+318.2,
+"shot",
+"n_hervor_fuerte"
+],
+[
+322.8,
+327.13,
+"shot",
+"n_caja_caldo"
+],
+[
+327.13,
+330.01,
+"shot",
+"n_espina_basura"
+],
+[
+330.01,
+333.6,
+"shot",
+"n_dolar_basura"
+],
+[
+338.4,
+343.51,
+"shot",
+"n_canilla_pollo"
+],
+[
+343.51,
+348.63,
+"shot",
+"n_abuela_foto"
+],
+[
+348.63,
+351.8,
+"shot",
+"n_abuela_lava"
+],
+[
+357.325,
+360.41,
+"shot",
+"n_salpica"
+],
+[
+360.41,
+367.99,
+"shot",
+"n_gotas_mesada"
+],
+[
+367.99,
+369.665,
+"shot",
+"n_ensalada_gotas"
+],
+[
+374.749,
+380.37,
+"shot",
+"f_no_lavar"
+],
+[
+380.37,
+383.25,
+"shot",
+"n_piel_mojada"
+],
+[
+383.25,
+386.355,
+"shot",
+"n_vapor_horno"
+],
+[
+390.1,
+397.77,
+"shot",
+"v04_secar"
+],
+[
+397.77,
+400.73,
+"shot",
+"n_limpia_mesada"
+],
+[
+400.73,
+404.0,
+"shot",
+"n_pollo_mojado_horno"
+],
+[
+408.802,
+411.01,
+"shot",
+"f_lava_manos_pollo"
+],
+[
+411.01,
+418.69,
+"shot",
+"f_ceja_misterio"
+],
+[
+418.69,
+420.065,
+"shot",
+"n_navidad_tienda"
+],
+[
+424.117,
+427.77,
+"shot",
+"n_sal_cuchara"
+],
+[
+427.77,
+433.15,
+"shot",
+"n_sal_encima"
+],
+[
+433.15,
+436.7,
+"shot",
+"n_sal_piel_quieta"
+],
+[
+441.9,
+445.21,
+"shot",
+"n_frasco_sal"
+],
+[
+445.21,
+450.93,
+"shot",
+"n_balanza_pollo"
+],
+[
+450.93,
+454.0,
+"shot",
+"n_sal_fina_gruesa"
+],
+[
+459.105,
+461.41,
+"shot",
+"f_dedos_piel"
+],
+[
+461.41,
+465.43,
+"shot",
+"n_piel_suelta"
+],
+[
+465.43,
+470.9,
+"shot",
+"n_membranas"
+],
+[
+475.604,
+479.11,
+"shot",
+"v05_sal_piel"
+],
+[
+479.11,
+485.33,
+"shot",
+"n_carne_salada"
+],
+[
+485.33,
+487.1,
+"shot",
+"n_corte_jugoso"
+],
+[
+493.1,
+500.69,
+"shot",
+"n_sal_ultimo"
+],
+[
+500.69,
+504.89,
+"shot",
+"f_frasco_tabla"
+],
+[
+509.1,
+513.77,
+"shot",
+"n_heladera_rejilla"
+],
+[
+513.77,
+518.086,
+"shot",
+"n_tienda_1974"
+],
+[
+522.4,
+529.93,
+"shot",
+"n_walt_rejillas"
+],
+[
+529.93,
+533.69,
+"shot",
+"n_camara_pollos"
+],
+[
+533.69,
+535.5,
+"shot",
+"n_walt_dedo"
+],
+[
+538.809,
+547.87,
+"shot",
+"n_piel_pergamino"
+],
+[
+547.87,
+549.9,
+"shot",
+"f_sonrie_walt"
+],
+[
+554.4,
+557.15,
+"shot",
+"n_aire_heladera"
+],
+[
+557.15,
+564.77,
+"shot",
+"n_horno_dorando"
+],
+[
+564.77,
+567.6,
+"shot",
+"n_grasa_frie"
+],
+[
+571.237,
+577.27,
+"shot",
+"n_rejilla_horneado"
+],
+[
+577.27,
+579.75,
+"shot",
+"n_pollo_rejilla"
+],
+[
+579.75,
+582.1,
+"shot",
+"f_heladera_pollo"
+],
+[
+587.843,
+592.79,
+"shot",
+"n_estante_abajo"
+],
+[
+592.79,
+595.17,
+"shot",
+"n_reloj_24"
+],
+[
+595.17,
+597.688,
+"shot",
+"n_film_pollo"
+],
+[
+603.042,
+609.09,
+"shot",
+"v06_rejilla"
+],
+[
+609.09,
+613.07,
+"shot",
+"f_esposa_risa"
+],
+[
+613.07,
+615.1,
+"shot",
+"n_horno_450"
+],
+[
+620.047,
+626.79,
+"shot",
+"n_libro_cocina"
+],
+[
+626.79,
+631.181,
+"shot",
+"n_pollo_350"
+],
+[
+635.41,
+639.31,
+"shot",
+"f_papas_tabla"
+],
+[
+639.31,
+643.87,
+"shot",
+"n_papas_rodajas"
+],
+[
+643.87,
+645.377,
+"shot",
+"n_cebolla_gajos"
+],
+[
+650.222,
+652.75,
+"shot",
+"n_papas_aceite"
+],
+[
+652.75,
+659.27,
+"shot",
+"v07_papas"
+],
+[
+659.27,
+664.0,
+"shot",
+"n_jugo_papas"
+],
+[
+669.4,
+674.51,
+"shot",
+"n_papas_guarnicion"
+],
+[
+674.51,
+680.4,
+"shot",
+"n_horno_ventana"
+],
+[
+685.9,
+688.79,
+"shot",
+"n_luz_horno"
+],
+[
+688.79,
+695.17,
+"shot",
+"n_reloj_2h"
+],
+[
+695.17,
+698.5,
+"shot",
+"n_papas_vacias"
+],
+[
+702.035,
+706.35,
+"shot",
+"n_termo_muslo"
+],
+[
+706.35,
+711.81,
+"shot",
+"n_mueve_pata"
+],
+[
+711.81,
+714.2,
+"shot",
+"n_jugo_claro"
+],
+[
+717.7,
+722.75,
+"shot",
+"n_jugo_tabla"
+],
+[
+722.75,
+727.2,
+"shot",
+"n_display_165"
+],
+[
+731.9,
+741.07,
+"shot",
+"f_termo_pollo"
+],
+[
+741.07,
+745.973,
+"shot",
+"n_termo_pechuga"
+],
+[
+750.913,
+753.03,
+"shot",
+"n_reposa_papas"
+],
+[
+753.03,
+760.29,
+"shot",
+"n_papel_aluminio"
+],
+[
+760.29,
+763.4,
+"shot",
+"n_jugo_quieto"
+],
+[
+769.4,
+776.75,
+"shot",
+"f_termo_camisa"
+],
+[
+776.75,
+779.959,
+"shot",
+"f_lata_secreto"
+],
+[
+783.7,
+792.37,
+"shot",
+"n_cinco_pollos"
+],
+[
+792.37,
+795.989,
+"shot",
+"n_redondo_seco"
+],
+[
+801.7,
+809.79,
+"shot",
+"n_canilla_error"
+],
+[
+809.79,
+813.1,
+"shot",
+"n_horno_bajo"
+],
+[
+818.643,
+821.63,
+"shot",
+"n_foil_vapor"
+],
+[
+821.63,
+825.31,
+"shot",
+"n_wentworth_1991"
+],
+[
+825.31,
+830.286,
+"shot",
+"n_danny_cocinero"
+],
+[
+834.3,
+840.05,
+"shot",
+"n_alitas_crujientes"
+],
+[
+840.05,
+842.03,
+"shot",
+"f_pregunta_danny"
+],
+[
+842.03,
+846.9,
+"shot",
+"n_lata_polvo"
+],
+[
+852.7,
+857.57,
+"shot",
+"n_polvo_cuchara"
+],
+[
+857.57,
+863.5,
+"shot",
+"n_piel_cruda_cerca"
+],
+[
+868.1,
+876.89,
+"shot",
+"n_piel_vidrio"
+],
+[
+876.89,
+880.0,
+"shot",
+"f_cuchara_media"
+],
+[
+885.7,
+894.51,
+"shot",
+"n_lata_sin_aluminio"
+],
+[
+894.51,
+896.3,
+"shot",
+"v08_polvo"
+],
+[
+900.7,
+905.23,
+"shot",
+"n_frota_mezcla"
+],
+[
+905.23,
+910.5,
+"shot",
+"n_rejilla_noche"
+],
+[
+914.31,
+921.59,
+"shot",
+"n_bicarbonato"
+],
+[
+917.27,
+927.3,
+"shot",
+"n_moneditas"
+],
+[
+932.0,
+935.91,
+"shot",
+"n_cucharada_llena"
+],
+[
+935.91,
+942.45,
+"shot",
+"f_lata_frasco"
+],
+[
+942.45,
+943.8,
+"shot",
+"n_cuchillo_afilado"
+],
+[
+947.915,
+952.25,
+"shot",
+"n_medio_cortado"
+],
+[
+952.25,
+960.3,
+"shot",
+"n_pollo_destrozado"
+],
+[
+963.523,
+971.6,
+"shot",
+"v09_trincha"
+],
+[
+974.02,
+976.451,
+"shot",
+"n_muslo_pata"
+],
+[
+982.429,
+989.24,
+"shot",
+"n_corta_pechuga"
+],
+[
+989.24,
+993.188,
+"shot",
+"n_pechuga_entera"
+],
+[
+998.204,
+1003.54,
+"shot",
+"n_rodajas_piel"
+],
+[
+1003.54,
+1009.78,
+"shot",
+"n_tenedor_pollo"
+],
+[
+1009.78,
+1012.988,
+"shot",
+"f_trincha_mesa"
+],
+[
+1017.4,
+1024.6,
+"shot",
+"n_jueves_tarde"
+],
+[
+1024.6,
+1029.6,
+"shot",
+"n_espina_freezer2"
+],
+[
+1034.0,
+1040.3,
+"shot",
+"n_bowl_mezcla"
+],
+[
+1040.3,
+1043.776,
+"shot",
+"n_rejilla_jueves"
+],
+[
+1048.721,
+1052.62,
+"shot",
+"n_reloj_5"
+],
+[
+1052.62,
+1059.46,
+"shot",
+"n_papas_bandeja"
+],
+[
+1059.46,
+1062.9,
+"shot",
+"n_pollo_sobre_papas"
+],
+[
+1068.3,
+1076.66,
+"shot",
+"n_termo_165b"
+],
+[
+1076.66,
+1078.577,
+"shot",
+"n_mesa_cena"
+],
+[
+1083.317,
+1085.14,
+"shot",
+"f_foto_abuela"
+],
+[
+1085.14,
+1092.12,
+"shot",
+"n_tapa_pollo"
+],
+[
+1092.12,
+1094.861,
+"shot",
+"n_silla_horno"
+],
+[
+1099.03,
+1107.7,
+"shot",
+"n_toalla_bebe"
+],
+[
+1107.7,
+1111.697,
+"shot",
+"n_frasco_grasa"
+],
+[
+1116.111,
+1122.1,
+"shot",
+"n_huevos_grasa"
+],
+[
+1122.1,
+1127.775,
+"shot",
+"n_pollo_congelado"
+],
+[
+1131.627,
+1138.2,
+"shot",
+"n_seca_extra"
+],
+[
+1138.2,
+1144.4,
+"shot",
+"n_muslos_crudos"
+],
+[
+1149.3,
+1154.26,
+"shot",
+"n_muslos_papas"
+],
+[
+1154.26,
+1159.966,
+"shot",
+"n_display_175"
+],
+[
+1163.7,
+1169.06,
+"shot",
+"n_freidora_aire"
+],
+[
+1169.06,
+1174.3,
+"shot",
+"n_freidora_dial"
+],
+[
+1178.327,
+1188.06,
+"shot",
+"n_reloj_2horas"
+],
+[
+1188.06,
+1191.187,
+"shot",
+"n_cliente_viernes"
+],
+[
+1194.745,
+1202.5,
+"shot",
+"f_risa_bano"
+],
+[
+1202.5,
+1206.054,
+"shot",
+"f_cuenta_diez"
+],
+[
+1210.9,
+1216.3,
+"shot",
+"n_espinas_bolsa_fin"
+],
+[
+1216.3,
+1223.1,
+"shot",
+"n_sal_bajo_piel"
+],
+[
+1227.308,
+1236.88,
+"shot",
+"n_pollo_papas_fin"
+],
+[
+1236.88,
+1240.4,
+"shot",
+"n_lata_fin"
+],
+[
+1246.15,
+1254.2,
+"shot",
+"v10_cierre"
+],
+[
+1260.246,
+1267.7,
+"shot",
+"f_pregunta_mesa"
+],
+[
+1267.7,
+1271.04,
+"shot",
+"f_despide_pollo"
+],
+[
+1271.04,
+1273.6,
+"shot",
+"n_salchichas_caseras"
+],
+[
+1278.546,
+1284.1,
+"shot",
+"n_dos_salchichas"
+],
+[
+1284.1,
+1288.6,
+"shot",
+"n_pollo_mesa_final"
+]
+],
+"cam": [
+[
+197.3,
+198.14,
+"wide"
+],
+[
+971.6,
+974.02,
+"wide"
+],
+[
+1254.2,
+1255.7,
+"wide"
+]
+],
+"ov": [
+{
+"k": "big",
+"txt": "$30",
+"sub": "HALF A ROAST CHICKEN",
+"col": "red",
+"at": 7.96,
+"out": 11.16
+},
+{
+"k": "big",
+"txt": "$8",
+"sub": "A WHOLE CHICKEN · HOME",
+"col": "green",
+"at": 23.54,
+"out": 26.74
+},
+{
+"k": "stamp",
+"txt": "LIKE AN OLD POOL FLOAT",
+"at": 30.76,
+"out": 33.76
+},
+{
+"k": "chip",
+"txt": "EVERY THURSDAY FOR 50 YEARS",
+"col": "ice",
+"at": 44.72,
+"out": 48.22
+},
+{
+"k": "big",
+"txt": "10",
+"sub": "OLD BUTCHER TRICKS",
+"col": "amber",
+"at": 62.0,
+"out": 65.2
+},
+{
+"k": "chip",
+"txt": "TRICK 9 IS IN YOUR PANTRY",
+"col": "amber",
+"at": 66.74,
+"out": 70.24
+},
+{
+"k": "chip",
+"txt": "SUBSCRIBE · 52 YEARS OF TRICKS",
+"col": "red",
+"at": 79.7,
+"out": 83.7
+},
+{
+"k": "step",
+"n": 1,
+"name": "BUY AIR CHILLED",
+"at": 88.66,
+"out": 92.66
+},
+{
+"k": "stamp",
+"txt": "«I DON'T GIVE THEM A BATH»",
+"at": 114.06,
+"out": 117.56
+},
+{
+"k": "chip",
+"txt": "ICE WATER TANKS = YOU PAY FOR WATER",
+"col": "red",
+"at": 124.34,
+"out": 127.84
+},
+{
+"k": "versus",
+"title": "HOW IT WAS COOLED",
+"L": {
+"label": "WATER CHILLED",
+"val": "WET SKIN",
+"h": 0.4,
+"col": "#8fd6ff",
+"mark": "x"
+},
+"R": {
+"label": "AIR CHILLED",
+"val": "DRY SKIN",
+"h": 0.95,
+"col": "#ffb257",
+"mark": "ok"
+},
+"at": 136.16,
+"out": 142.66
+},
+{
+"k": "step",
+"n": 2,
+"name": "CUT OUT THE BACKBONE",
+"at": 167.58,
+"out": 171.58
+},
+{
+"k": "big",
+"txt": "10 SEC",
+"sub": "SNIP, SNIP",
+"col": "amber",
+"at": 191.18,
+"out": 194.38
+},
+{
+"k": "chip",
+"txt": "TAIL TO NECK · BOTH SIDES",
+"at": 207.5,
+"out": 211.0
+},
+{
+"k": "stamp",
+"txt": "PRESS UNTIL IT CRACKS",
+"at": 234.48,
+"out": 237.48
+},
+{
+"k": "chip",
+"txt": "ROUND BIRD = DRY BREAST",
+"col": "red",
+"at": 247.78,
+"out": 251.28
+},
+{
+"k": "big",
+"txt": "½",
+"sub": "THE ROASTING TIME",
+"col": "green",
+"at": 260.24,
+"out": 263.44
+},
+{
+"k": "step",
+"n": 3,
+"name": "SAVE THE BACKBONE",
+"at": 278.32,
+"out": 282.32
+},
+{
+"k": "chip",
+"txt": "THE SOUP LADIES · EVERY FRIDAY",
+"col": "ice",
+"at": 293.46,
+"out": 296.96
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "ONION",
+"col": "amber",
+"at": 306.66
+},
+{
+"txt": "CARROT",
+"col": "amber",
+"at": 308.46
+},
+{
+"txt": "CELERY",
+"col": "amber",
+"at": 309.34
+},
+{
+"txt": "BAY LEAF",
+"col": "amber",
+"at": 310.78
+}
+],
+"at": 306.66,
+"out": 313.28
+},
+{
+"k": "stamp",
+"txt": "SIMMER · NEVER A ROLLING BOIL",
+"at": 316.66,
+"out": 319.66
+},
+{
+"k": "big",
+"txt": "$3-4",
+"sub": "A BOX OF BROTH · FREE AT HOME",
+"col": "green",
+"at": 323.05,
+"out": 326.25
+},
+{
+"k": "step",
+"n": 4,
+"name": "NEVER WASH IT · DRY IT",
+"at": 338.49,
+"out": 342.49
+},
+{
+"k": "big",
+"txt": "2-3 FT",
+"sub": "HOW FAR THE SPLASH GOES",
+"col": "red",
+"at": 359.83,
+"out": 363.03
+},
+{
+"k": "stamp",
+"txt": "WATER IS THE ENEMY",
+"at": 381.65,
+"out": 384.65
+},
+{
+"k": "chip",
+"txt": "PRESS · USE A LOT OF TOWELS",
+"at": 396.17,
+"out": 399.67
+},
+{
+"k": "step",
+"n": 5,
+"name": "DRY BRINE · UNDER THE SKIN",
+"at": 420.29,
+"out": 424.29
+},
+{
+"k": "big",
+"txt": "1 TSP",
+"sub": "KOSHER SALT PER POUND",
+"col": "amber",
+"at": 445.21,
+"out": 448.41
+},
+{
+"k": "chip",
+"txt": "4 LB CHICKEN = 4 TSP · TABLE SALT: HALF",
+"at": 448.81,
+"out": 452.31
+},
+{
+"k": "chip",
+"txt": "SALT UNDER THE SKIN TOO",
+"col": "amber",
+"at": 461.41,
+"out": 464.91
+},
+{
+"k": "chip",
+"txt": "ONLY ON TOP = NEVER GETS INSIDE",
+"col": "red",
+"at": 494.25,
+"out": 497.75
+},
+{
+"k": "step",
+"n": 6,
+"name": "UNCOVERED ON A RACK · OVERNIGHT",
+"col": "red",
+"at": 507.83,
+"out": 511.83
+},
+{
+"k": "stamp",
+"txt": "«NOBODY TOUCHES THOSE BIRDS»",
+"at": 534.85,
+"out": 538.35
+},
+{
+"k": "chip",
+"txt": "SKIN LIKE PARCHMENT",
+"col": "amber",
+"at": 544.75,
+"out": 548.25
+},
+{
+"k": "stamp",
+"txt": "«NOW THEY'LL CRACKLE»",
+"at": 548.79,
+"out": 551.79
+},
+{
+"k": "big",
+"txt": "8-24 H",
+"sub": "UNCOVERED · BOTTOM SHELF",
+"col": "ice",
+"at": 591.17,
+"out": 594.37
+},
+{
+"k": "chip",
+"txt": "NO PLASTIC WRAP",
+"col": "red",
+"at": 596.47,
+"out": 599.97
+},
+{
+"k": "step",
+"n": 7,
+"name": "450 °F · ON THE POTATOES",
+"at": 613.07,
+"out": 617.07
+},
+{
+"k": "versus",
+"title": "OVEN TEMPERATURE",
+"L": {
+"label": "350 °F",
+"val": "PALE",
+"h": 0.45,
+"col": "#8fd6ff",
+"mark": "x"
+},
+"R": {
+"label": "450 °F",
+"val": "GLASS",
+"h": 0.95,
+"col": "#ff4a3d",
+"mark": "ok"
+},
+"at": 626.79,
+"out": 632.79
+},
+{
+"k": "chip",
+"txt": "POTATOES ½ INCH · ONION WEDGES",
+"at": 642.27,
+"out": 645.77
+},
+{
+"k": "stamp",
+"txt": "THE CHICKEN IS THE BLANKET",
+"at": 657.83,
+"out": 660.83
+},
+{
+"k": "big",
+"txt": "+$8",
+"sub": "THE POTATOES ON THE SIDE",
+"col": "red",
+"at": 671.25,
+"out": 674.45
+},
+{
+"k": "big",
+"txt": "45-60 MIN",
+"sub": "4 LB · FLAT · 450 °F",
+"col": "amber",
+"at": 677.59,
+"out": 680.79
+},
+{
+"k": "step",
+"n": 8,
+"name": "165 °F · THIGH AND BREAST",
+"at": 700.03,
+"out": 704.03
+},
+{
+"k": "chip",
+"txt": "«JUICE RUNS CLEAR» IS A GUESS",
+"col": "red",
+"at": 711.81,
+"out": 715.31
+},
+{
+"k": "temp",
+"a": 120,
+"b": 165,
+"sub": "THIGH AND BREAST",
+"col": "green",
+"at": 724.21,
+"out": 729.21
+},
+{
+"k": "stamp",
+"txt": "REST 10 MIN · NO FOIL",
+"at": 753.03,
+"out": 756.53
+},
+{
+"k": "deal",
+"at": 783.85,
+"out": 788.35
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "ROASTING A ROUND CHICKEN",
+"at": 792.37,
+"out": 798.47
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "WASHING IT",
+"at": 798.77,
+"out": 802.89
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "PLASTIC WRAP IN THE FRIDGE",
+"at": 803.19,
+"out": 809.49
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "A LOW OVEN",
+"at": 809.79,
+"out": 814.47
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "FOIL WHILE IT RESTS",
+"at": 814.77,
+"out": 822.77
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE LITTLE CAN",
+"col": "red",
+"at": 822.11,
+"out": 826.11
+},
+{
+"k": "stamp",
+"txt": "BAKING POWDER",
+"at": 845.93,
+"out": 849.43
+},
+{
+"k": "chip",
+"txt": "ALKALINE → BROWNS FASTER · DRIES THE SKIN",
+"col": "amber",
+"at": 858.39,
+"out": 861.89
+},
+{
+"k": "chip",
+"txt": "TINY BUBBLES · LIKE FRIED CHICKEN",
+"at": 870.47,
+"out": 873.97
+},
+{
+"k": "big",
+"txt": "½ TSP",
+"sub": "PER CHICKEN · INTO THE SALT",
+"col": "amber",
+"at": 880.65,
+"out": 883.85
+},
+{
+"k": "chip",
+"txt": "ALUMINUM-FREE ONLY",
+"col": "red",
+"at": 888.17,
+"out": 891.67
+},
+{
+"k": "versus",
+"title": "NOT THE SAME CAN",
+"L": {
+"label": "BAKING SODA",
+"val": "SOAP",
+"h": 0.35,
+"col": "#8fd6ff",
+"mark": "x"
+},
+"R": {
+"label": "BAKING POWDER",
+"val": "GLASS",
+"h": 0.95,
+"col": "#ffb257",
+"mark": "ok"
+},
+"at": 914.71,
+"out": 920.71
+},
+{
+"k": "stamp",
+"txt": "THE $30 SKIN · A FEW CENTS",
+"at": 922.75,
+"out": 926.25
+},
+{
+"k": "step",
+"n": 10,
+"name": "CARVE IT LIKE THE BISTRO",
+"at": 942.45,
+"out": 946.45
+},
+{
+"k": "chip",
+"txt": "PULL THE LEG · THE JOINT POPS",
+"at": 968.38,
+"out": 971.88
+},
+{
+"k": "chip",
+"txt": "THE WHOLE BREAST IN ONE PIECE",
+"at": 990.36,
+"out": 993.86
+},
+{
+"k": "stamp",
+"txt": "EVERY SLICE GETS SKIN",
+"at": 1000.22,
+"out": 1003.22
+},
+{
+"k": "clock",
+"marks": [
+[
+1021.06,
+15.0
+],
+[
+1024.6,
+21.0
+],
+[
+1049.44,
+17.0
+],
+[
+1058.36,
+17.25
+],
+[
+1075.44,
+18.25
+]
+],
+"at": 1018.34,
+"out": 1079.44
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "NO LID",
+"col": "red",
+"at": 1085.24
+},
+{
+"txt": "NO PEEKING",
+"col": "red",
+"at": 1092.24
+},
+{
+"txt": "NO WET BIRD",
+"col": "red",
+"at": 1099.26
+},
+{
+"txt": "KEEP THE FAT",
+"col": "green",
+"at": 1107.98
+}
+],
+"at": 1079.8,
+"out": 1110.48
+},
+{
+"k": "chip",
+"txt": "«A FROZEN CHICKEN?»",
+"col": "ice",
+"at": 1123.36,
+"out": 1126.86
+},
+{
+"k": "chip",
+"txt": "«ONLY THIGHS?» → 175 °F",
+"col": "ice",
+"at": 1139.3,
+"out": 1142.8
+},
+{
+"k": "chip",
+"txt": "«AIR FRYER?» 400 °F",
+"col": "ice",
+"at": 1161.8,
+"out": 1165.3
+},
+{
+"k": "chip",
+"txt": "«NO ROOM?» EVEN 2 H HELPS",
+"col": "ice",
+"at": 1179.78,
+"out": 1183.28
+},
+{
+"k": "recap",
+"rows": [
+1206.18,
+1208.36,
+1211.72,
+1214.46,
+1217.0,
+1223.02,
+1228.04,
+1230.42,
+1236.9,
+1243.26
+],
+"at": 1203.46,
+"out": 1249.26
+},
+{
+"k": "versus",
+"title": "THE SAME BIRD",
+"L": {
+"label": "THE BISTRO",
+"val": "$30",
+"h": 0.95,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"R": {
+"label": "YOUR OVEN",
+"val": "$8",
+"h": 0.3,
+"col": "#5fd38a",
+"mark": "ok"
+},
+"at": 1249.92,
+"out": 1255.92
+},
+{
+"k": "ask",
+"at": 1256.12,
+"out": 1270.12
+},
+{
+"k": "next",
+"at": 1271.04,
+"out": 1276.04
+}
+],
+"cta1": {
+"desc": 79.7,
+"end": 85.7
+},
+"cta2": {
+"desc": 1262.68,
+"end": 1268.68
+},
+"cta3": {
+"desc": 1271.04,
+"end": 1276.04
+},
+"end": 1288.6,
+"st": {
+"fire": [
+[
+0,
+1288.6
+]
+],
+"hay": [
+[
+0,
+1288.6
+]
+],
+"pot": [
+[
+613.073,
+700.026
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+1021.059,
+1076.659
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "THE 10 TRICKS",
+"recap": [
+"Buy air chilled",
+"Cut out the backbone",
+"Save it for soup",
+"Don't wash it · dry it",
+"Dry brine · under the skin",
+"Uncovered on a rack overnight",
+"450 °F on the potatoes",
+"165 °F · rest, no foil",
+"½ tsp baking powder",
+"Carve like the bistro"
+],
+"ask": [
+"Who made the best roast chicken in your family?",
+"What did they do that nobody else did?",
+"Tell me in the comments · I read every one"
+],
+"next": [
+"NEXT TIME",
+"My father's sausage · no machine, no casing"
+],
+"lower": [
+37.36,
+43.36
+]
+}
+}

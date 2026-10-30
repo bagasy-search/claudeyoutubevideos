@@ -1,0 +1,290 @@
+[
+ {
+  "k": "crackle",
+  "at": 10.62,
+  "out": 15.12,
+  "said": 13.02,
+  "sp": 1.333,
+  "ph": "ph_crackle",
+  "solo": true,
+  "kw": "IT CRACKS",
+  "kw2": "under the knife"
+ },
+ {
+  "k": "float",
+  "at": 27.28,
+  "out": 31.78,
+  "said": 30.18,
+  "sp": 1.222,
+  "ph": "ph_float",
+  "solo": true,
+  "kw": "A POOL FLOAT",
+  "kw2": "pale and rubbery"
+ },
+ {
+  "k": "truck",
+  "at": 95.74,
+  "out": 100.24,
+  "said": 98.14,
+  "sp": 1.333,
+  "ph": "ph_truck",
+  "solo": true,
+  "kw": "HIS TRUCK",
+  "kw2": "pulled up behind"
+ },
+ {
+  "k": "dunk",
+  "at": 124.34,
+  "out": 130.34,
+  "said": 124.34,
+  "ph": "ph_dunk",
+  "solo": true,
+  "kw": "ICE WATER TANKS",
+  "kw2": ""
+ },
+ {
+  "k": "book",
+  "at": 170.4,
+  "out": 175.9,
+  "said": 170.4,
+  "ph": "ph_book",
+  "solo": true,
+  "kw": "LIKE A BOOK",
+  "kw2": "open it"
+ },
+ {
+  "k": "shears",
+  "at": 192.28,
+  "out": 198.28,
+  "said": 192.28,
+  "ph": "ph_shears",
+  "solo": true,
+  "kw": "SNIP SNIP",
+  "kw2": "the backbone is out"
+ },
+ {
+  "k": "spirit",
+  "at": 241.7,
+  "out": 247.7,
+  "said": 241.7,
+  "ph": "ph_spirit",
+  "solo": true,
+  "kw": "IT'S ROUND",
+  "kw2": ""
+ },
+ {
+  "k": "pot",
+  "at": 293.26,
+  "out": 299.26,
+  "said": 293.26,
+  "ph": "ph_pot",
+  "solo": true,
+  "kw": "THE SOUP LADIES",
+  "kw2": ""
+ },
+ {
+  "k": "trash",
+  "at": 329.09,
+  "out": 333.59,
+  "said": 330.49,
+  "sp": 1.333,
+  "ph": "ph_trash",
+  "solo": true,
+  "kw": "A DOLLAR BILL",
+  "kw2": "in the trash"
+ },
+ {
+  "k": "splash",
+  "at": 360.413,
+  "out": 366.41,
+  "said": 360.41,
+  "ph": "ph_splash",
+  "solo": true,
+  "kw": "TINY DROPS",
+  "kw2": "it sprays"
+ },
+ {
+  "k": "spoons",
+  "at": 444.033,
+  "out": 450.03,
+  "said": 444.03,
+  "ph": "ph_spoons",
+  "solo": true,
+  "kw": "THE MEASURE",
+  "kw2": ""
+ },
+ {
+  "k": "pocket",
+  "at": 461.413,
+  "out": 467.41,
+  "said": 461.41,
+  "ph": "ph_pocket",
+  "solo": true,
+  "kw": "UNDER THE SKIN",
+  "kw2": "gently"
+ },
+ {
+  "k": "snow",
+  "at": 512.47,
+  "out": 517.97,
+  "said": 513.77,
+  "ph": "ph_snow",
+  "solo": true,
+  "kw": "1974",
+  "kw2": "Christmas week"
+ },
+ {
+  "k": "backlit",
+  "at": 544.413,
+  "out": 549.41,
+  "said": 544.41,
+  "sp": 1.1,
+  "ph": "ph_backlit",
+  "solo": true,
+  "kw": "LIKE PARCHMENT",
+  "kw2": ""
+ },
+ {
+  "k": "wife",
+  "at": 609.093,
+  "out": 614.59,
+  "said": 609.09,
+  "ph": "ph_wife",
+  "solo": true,
+  "kw": "MY WIFE",
+  "kw2": "used to complain"
+ },
+ {
+  "k": "drip",
+  "at": 656.866,
+  "out": 662.87,
+  "said": 656.87,
+  "ph": "ph_drip",
+  "solo": true,
+  "kw": "LIKE A BLANKET",
+  "kw2": "over the potatoes"
+ },
+ {
+  "k": "ovenlight",
+  "at": 686.126,
+  "out": 691.63,
+  "said": 686.13,
+  "ph": "ph_ovenlight",
+  "solo": true,
+  "kw": "OVEN LIGHT ON",
+  "kw2": ""
+ },
+ {
+  "k": "wiggle",
+  "at": 708.146,
+  "out": 713.65,
+  "said": 708.15,
+  "ph": "ph_wiggle",
+  "solo": true,
+  "kw": "WIGGLE THE LEG",
+  "kw2": ""
+ },
+ {
+  "k": "foil",
+  "at": 754.666,
+  "out": 760.67,
+  "said": 754.67,
+  "ph": "ph_foil",
+  "solo": true,
+  "kw": "STEAM UNDER FOIL",
+  "kw2": ""
+ },
+ {
+  "k": "neon",
+  "at": 824.71,
+  "out": 830.21,
+  "said": 826.31,
+  "ph": "ph_neon",
+  "solo": true,
+  "kw": "WENTWORTH AVE",
+  "kw2": ""
+ },
+ {
+  "k": "can",
+  "at": 842.346,
+  "out": 846.85,
+  "said": 842.35,
+  "sp": 1.222,
+  "ph": "ph_can",
+  "solo": true,
+  "kw": "THE LITTLE CAN",
+  "kw2": ""
+ },
+ {
+  "k": "ph",
+  "at": 857.566,
+  "out": 863.07,
+  "said": 857.57,
+  "ph": "ph_ph",
+  "solo": true,
+  "kw": "ALKALINE",
+  "kw2": "baking powder"
+ },
+ {
+  "k": "joint",
+  "at": 968.379,
+  "out": 973.88,
+  "said": 968.38,
+  "ph": "ph_joint",
+  "solo": true,
+  "kw": "POP",
+  "kw2": "the joint comes right out"
+ },
+ {
+  "k": "fan",
+  "at": 998.659,
+  "out": 1004.16,
+  "said": 998.66,
+  "ph": "ph_fan",
+  "solo": true,
+  "kw": "SKIN ON EVERY SLICE",
+  "kw2": ""
+ },
+ {
+  "k": "swirl",
+  "at": 1037.019,
+  "out": 1042.52,
+  "said": 1037.02,
+  "ph": "ph_swirl",
+  "solo": true,
+  "kw": "1/2 TEASPOON",
+  "kw2": "baking powder"
+ },
+ {
+  "k": "jar",
+  "at": 1107.12,
+  "out": 1111.62,
+  "said": 1107.82,
+  "sp": 1.333,
+  "ph": "ph_jar",
+  "solo": true,
+  "kw": "NEVER THROW IT AWAY",
+  "kw2": "the fat"
+ },
+ {
+  "k": "vortex",
+  "at": 1165.039,
+  "out": 1170.54,
+  "said": 1165.04,
+  "ph": "ph_vortex",
+  "solo": true,
+  "kw": "AIR FRYER",
+  "kw2": "works beautifully"
+ },
+ {
+  "k": "tub",
+  "at": 1200.419,
+  "out": 1205.92,
+  "said": 1200.42,
+  "sp": 1.091,
+  "ph": "ph_tub",
+  "solo": true,
+  "kw": "NO BATH",
+  "kw2": ""
+ }
+]
