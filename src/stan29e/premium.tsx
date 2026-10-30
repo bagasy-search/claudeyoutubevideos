@@ -349,11 +349,11 @@ export const Words: React.FC<{ t: number; items: { at: number; txt: string; col?
   if (t < items[0].at - 0.05 || t > out + 0.6) return null;
   const xo = eIn(t, out - 0.05, out + 0.5);
   // 29-oct: entra siempre en pantalla (3-4 frases a 96 px se salían por los bordes)
-  const chars = items.reduce((n, w) => n + w.txt.length, 0), fs = Math.min(size, Math.floor(1700 / (chars * 0.66 + (items.length - 1) * 0.6)));
+  const chars = items.reduce((n, w) => n + w.txt.length, 0), fs = Math.max(64, Math.min(size, Math.floor(1700 / (chars * 0.66 + (items.length - 1) * 0.6)))); // 30-oct: piso 64 px (con 4+ frases quedaba un rótulo chiquito arriba a la izquierda); si no entra, baja de renglón centrado
   return <div style={{ position: "absolute", left: 80, right: 80, top: y, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 56, opacity: 1 - xo, fontFamily: FONT, perspective: 1200 }}>
     {items.map((w, i) => {
       const s = phys(t, w.at, 6.5, 0.4);
-      return <div key={i} style={{ fontWeight: 900, fontSize: fs, letterSpacing: 1, color: w.col ?? G.txt, textShadow: G.soft, opacity: cl(s * 1.8),
+      return <div key={i} style={{ fontWeight: 900, fontSize: fs, letterSpacing: 1, color: w.col ?? G.txt, textShadow: "0 2px 3px rgba(0,0,0,.95), 0 6px 26px rgba(0,0,0,.85)", opacity: cl(s * 1.8),
         transform: `translateY(${(1 - s) * -90 - xo * 20}px) rotateX(${(1 - s) * 60}deg) scale(${1 - xo * 0.06})`, whiteSpace: "nowrap" }}>{w.txt}</div>;
     })}
   </div>;
