@@ -67,11 +67,15 @@ const imgNear = (t: number, used: Set<string>): string | undefined => {
   if (best) used.add(best); return best;
 };
 const imgsFor = (ts: number[]) => { const u = new Set<string>(); return ts.map((x) => imgNear(x, u)); };
+// fotos fijas de las tarjetas (cards.json viene en null): la foto del momento, calculada UNA vez (determinista entre chunks)
+const ERR_IMG = (() => { const u = new Set<string>(); return MIS.map((m, i) => CJ.err?.[i] ?? imgNear(m.at + 0.5, u)); })();
+const STEPS = PL.ov.filter((o) => o.k === "step").sort((a, b) => a.n - b.n);
+const REC_IMG = (() => { const u = new Set<string>(ERR_IMG.filter(Boolean) as string[]); return Array.from({ length: 12 }, (_, i) => CJ.rec?.[i] ?? imgNear((STEPS[i]?.at ?? DEAL?.at ?? 0) + 3, u)); })();
 const Carousels: React.FC<{ t: number }> = ({ t }) => <>
   {MIS.length > 0 && <CoverFlow t={t} at={DEAL?.at ?? MIS[0].at - 1} out={MIS[MIS.length - 1].out} hide={nowAv(t)} kicker="BEFORE YOU GET DOWN" title={`THE ${MIS.length} MISTAKES`} col="red"
-    cards={MIS.map((m, i) => ({ img: CJ.err?.[i], at: m.at, n: m.n, title: m.txt }))} />}
+    cards={MIS.map((m, i) => ({ img: ERR_IMG[i], at: m.at, n: m.n, title: m.txt }))} />}
   {REC && <CoverFlow t={t} at={REC.at} out={REC.out} hide={nowAv(t)} kicker="THE SHORT VERSION" title={PL.txt.recapTitle}
-    cards={[...PL.txt.recap, "The 5 mistakes"].map((n, i) => ({ img: CJ.rec?.[i], at: REC.rows[i] ?? REC.out, n: i + 1, title: n })).filter((c) => c.at < REC.out)} />}
+    cards={[...PL.txt.recap, "The 5 mistakes"].map((n, i) => ({ img: REC_IMG[i], at: REC.rows[i] ?? REC.out, n: i + 1, title: n })).filter((c) => c.at < REC.out)} />}
 </>;
 
 // ===== un componente ÚNICO por minuto (heroes.json): tapan todo; las piezas chicas que caen en su tramo se apagan =====
