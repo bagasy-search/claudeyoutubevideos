@@ -42,6 +42,8 @@ const CAM = (PLAN as unknown as Plan).cam;
 const ALT = ["duo", "stoveL", "stoveLow"];
 let altI = 0;
 for (const c of CAM) if (c[2] === "wide") c[2] = ALT[altI++ % ALT.length];
+// el stoveL de 1014,4 daba 1 cuadro quemado por el bloom sólo en el farm (1017,67) → otra vista
+for (const c of CAM) if (Math.abs(c[0] - 1014.4) < 0.01) c[2] = "stove";
 function buildKeys(): Key[] {
   let lastName = CAM[0]?.[2] ?? "duo";
   const out: Key[] = [k(0, lastName)];
