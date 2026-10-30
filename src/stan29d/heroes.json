@@ -1,0 +1,370 @@
+[
+ {
+  "k": "brick",
+  "at": 4.32,
+  "out": 10.32,
+  "said": 4.32,
+  "ph": "ph_brick",
+  "solo": true,
+  "kw": "EXPOSED BRICK",
+  "kw2": ""
+ },
+ {
+  "k": "bounce",
+  "at": 34.52,
+  "out": 40.02,
+  "said": 29.32,
+  "ph": "ph_bounce",
+  "solo": true,
+  "kw": "LIKE RUBBER",
+  "kw2": ""
+ },
+ {
+  "k": "window",
+  "at": 55.4,
+  "out": 61.4,
+  "said": 55.4,
+  "ph": "ph_window",
+  "solo": true,
+  "kw": "IN THE WINDOW",
+  "kw2": "kielbasa"
+ },
+ {
+  "k": "padlock",
+  "at": 66.52,
+  "out": 72.02,
+  "said": 65.02,
+  "ph": "ph_padlock",
+  "solo": true,
+  "kw": "A SECRET",
+  "kw2": ""
+ },
+ {
+  "k": "signpost",
+  "at": 117.84,
+  "out": 123.84,
+  "said": 117.44,
+  "ph": "ph_signpost",
+  "solo": true,
+  "kw": "A DIFFERENT TRADE",
+  "kw2": ""
+ },
+ {
+  "k": "aka",
+  "at": 152.0,
+  "out": 158.0,
+  "said": 152.0,
+  "ph": "ph_aka",
+  "solo": true,
+  "kw": "PORK BUTT",
+  "kw2": "= the shoulder"
+ },
+ {
+  "k": "flex",
+  "at": 166.7,
+  "out": 172.2,
+  "said": 163.0,
+  "ph": "ph_flex",
+  "solo": true,
+  "kw": "A HARD WORKER",
+  "kw2": ""
+ },
+ {
+  "k": "sawdust",
+  "at": 201.34,
+  "out": 206.84,
+  "said": 201.34,
+  "ph": "ph_sawdust",
+  "solo": true,
+  "kw": "LIKE SAWDUST",
+  "kw2": ""
+ },
+ {
+  "k": "gem",
+  "at": 222.26,
+  "out": 227.76,
+  "said": 222.26,
+  "ph": "ph_gem",
+  "solo": true,
+  "kw": "LIKE A JEWELER",
+  "kw2": ""
+ },
+ {
+  "k": "freebie",
+  "at": 247.94,
+  "out": 253.94,
+  "said": 244.54,
+  "ph": "ph_freebie",
+  "solo": true,
+  "kw": "ALMOST FREE",
+  "kw2": ""
+ },
+ {
+  "k": "domino",
+  "at": 289.94,
+  "out": 294.44,
+  "said": 292.44,
+  "sp": 1.222,
+  "ph": "ph_domino",
+  "solo": true,
+  "kw": "1 WHITE : 3 PINK",
+  "kw2": ""
+ },
+ {
+  "k": "petri",
+  "at": 351.993,
+  "out": 357.99,
+  "said": 351.99,
+  "ph": "ph_petri",
+  "solo": true,
+  "kw": "COLD FAT",
+  "kw2": "stays in pieces"
+ },
+ {
+  "k": "cooler",
+  "at": 370.573,
+  "out": 376.07,
+  "said": 370.57,
+  "ph": "ph_cooler",
+  "solo": true,
+  "kw": "BACK IN THE COOLER",
+  "kw2": ""
+ },
+ {
+  "k": "pea",
+  "at": 420.89,
+  "out": 426.89,
+  "said": 418.99,
+  "ph": "ph_pea",
+  "solo": true,
+  "kw": "SIZE OF A PEA",
+  "kw2": ""
+ },
+ {
+  "k": "drummer",
+  "at": 458.673,
+  "out": 463.17,
+  "said": 458.67,
+  "sp": 1.333,
+  "ph": "ph_drummer",
+  "solo": true,
+  "kw": "LIKE A DRUMMER",
+  "kw2": ""
+ },
+ {
+  "k": "button",
+  "at": 466.913,
+  "out": 472.41,
+  "said": 466.91,
+  "ph": "ph_button",
+  "solo": true,
+  "kw": "DON'T HOLD IT",
+  "kw2": ""
+ },
+ {
+  "k": "notebook",
+  "at": 489.59,
+  "out": 494.09,
+  "said": 492.19,
+  "sp": 1.333,
+  "ph": "ph_notebook",
+  "solo": true,
+  "kw": "THE NOTEBOOK",
+  "kw2": ""
+ },
+ {
+  "k": "goldilocks",
+  "at": 504.19,
+  "out": 508.69,
+  "said": 506.49,
+  "sp": 1.333,
+  "ph": "ph_goldilocks",
+  "solo": true,
+  "kw": "THE RIGHT SALT",
+  "kw2": "people come back"
+ },
+ {
+  "k": "magnet",
+  "at": 536.493,
+  "out": 540.99,
+  "said": 536.49,
+  "sp": 1.222,
+  "ph": "ph_magnet",
+  "solo": true,
+  "kw": "WRITE IT DOWN",
+  "kw2": ""
+ },
+ {
+  "k": "glue",
+  "at": 547.733,
+  "out": 553.23,
+  "said": 547.73,
+  "ph": "ph_glue",
+  "solo": true,
+  "kw": "LIKE GLUE",
+  "kw2": ""
+ },
+ {
+  "k": "stained",
+  "at": 615.87,
+  "out": 621.87,
+  "said": 612.77,
+  "ph": "ph_stained",
+  "solo": true,
+  "kw": "SUMMER + CHURCH",
+  "kw2": ""
+ },
+ {
+  "k": "carousel",
+  "at": 634.35,
+  "out": 640.35,
+  "said": 631.05,
+  "ph": "ph_carousel",
+  "solo": true,
+  "kw": "ITALIAN SAUSAGE",
+  "kw2": ""
+ },
+ {
+  "k": "cobweb",
+  "at": 649.31,
+  "out": 654.81,
+  "said": 646.01,
+  "ph": "ph_cobweb",
+  "solo": true,
+  "kw": "SINCE CARTER",
+  "kw2": "in your cupboard"
+ },
+ {
+  "k": "palm",
+  "at": 703.687,
+  "out": 709.19,
+  "said": 703.69,
+  "sp": 1.091,
+  "ph": "ph_palm",
+  "solo": true,
+  "kw": "UPSIDE DOWN",
+  "kw2": "it doesn't fall"
+ },
+ {
+  "k": "taffy",
+  "at": 715.11,
+  "out": 720.61,
+  "said": 714.21,
+  "ph": "ph_taffy",
+  "solo": true,
+  "kw": "LIKE TAFFY",
+  "kw2": ""
+ },
+ {
+  "k": "versus",
+  "at": 748.69,
+  "out": 754.69,
+  "said": 746.99,
+  "ph": "ph_versus",
+  "solo": true,
+  "kw": "DON'T TOUCH IT",
+  "kw2": ""
+ },
+ {
+  "k": "walnut",
+  "at": 820.707,
+  "out": 826.21,
+  "said": 820.71,
+  "ph": "ph_walnut",
+  "solo": true,
+  "kw": "A WALNUT",
+  "kw2": "the size"
+ },
+ {
+  "k": "eyebrow",
+  "at": 887.247,
+  "out": 893.25,
+  "said": 887.25,
+  "ph": "ph_eyebrow",
+  "solo": true,
+  "kw": "ONE EYEBROW",
+  "kw2": ""
+ },
+ {
+  "k": "candy",
+  "at": 962.81,
+  "out": 968.81,
+  "said": 959.41,
+  "ph": "ph_candy",
+  "solo": true,
+  "kw": "LIKE A CANDY WRAPPER",
+  "kw2": ""
+ },
+ {
+  "k": "evap",
+  "at": 1051.76,
+  "out": 1056.26,
+  "said": 1053.56,
+  "sp": 1.222,
+  "ph": "ph_evap",
+  "solo": true,
+  "kw": "BOIL IT AWAY",
+  "kw2": ""
+ },
+ {
+  "k": "fountain",
+  "at": 1084.12,
+  "out": 1090.12,
+  "said": 1084.12,
+  "ph": "ph_fountain",
+  "solo": true,
+  "kw": "A FOUNTAIN",
+  "kw2": "every hole"
+ },
+ {
+  "k": "moon",
+  "at": 1177.56,
+  "out": 1183.06,
+  "said": 1173.06,
+  "ph": "ph_moon",
+  "solo": true,
+  "kw": "HE WAITED FOR NIGHT",
+  "kw2": ""
+ },
+ {
+  "k": "feather",
+  "at": 1209.86,
+  "out": 1215.36,
+  "said": 1209.86,
+  "ph": "ph_feather",
+  "solo": true,
+  "kw": "THIGHS",
+  "kw2": "not breast"
+ },
+ {
+  "k": "neighbors",
+  "at": 1259.04,
+  "out": 1264.54,
+  "said": 1256.34,
+  "ph": "ph_neighbors",
+  "solo": true,
+  "kw": "NEXT TO THE OREGANO",
+  "kw2": ""
+ },
+ {
+  "k": "rapid",
+  "at": 1281.44,
+  "out": 1286.44,
+  "said": 1281.44,
+  "ph": "ph_rapid",
+  "solo": true,
+  "kw": "ALL TEN",
+  "kw2": ""
+ },
+ {
+  "k": "coins",
+  "at": 1333.02,
+  "out": 1337.52,
+  "said": 1335.42,
+  "sp": 1.333,
+  "ph": "ph_coins",
+  "solo": true,
+  "kw": "PATIENCE",
+  "kw2": ""
+ }
+]
