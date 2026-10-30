@@ -313,7 +313,7 @@ const Escena: React.FC<{ T: number }> = ({ T }) => {
   const gf = usarGeosFig();
   const { pl, vol } = usarVoladores();
   const ev = usarEventos(vol);
-  const agua = usarAgua();
+  const agua = usarAgua(140, 640);
   const mats = useMemo(() => ({
     pvc: new THREE.MeshPhysicalMaterial({ color: "#e9e9e7", roughness: 0.38, clearcoat: 0.35, clearcoatRoughness: 0.35, sheen: 0.2, sheenColor: new THREE.Color("#ffffff") }),
     pisoB: new THREE.MeshPhysicalMaterial({ color: "#d9d9d6", roughness: 0.55, clearcoat: 0.1 }),
@@ -394,12 +394,12 @@ const Escena: React.FC<{ T: number }> = ({ T }) => {
 
   // luces: luna (con sombra que sigue al plano), contraluz frío relativo a la cámara
   const foco = toma.mira.clone().setY(0);
-  const luna = useMemo(() => { const l = new THREE.DirectionalLight("#fff4ea", 1); l.castShadow = true; l.shadow.mapSize.set(4096, 4096); l.shadow.bias = -0.0002; l.shadow.normalBias = 0.012; const cs = l.shadow.camera as THREE.OrthographicCamera; cs.left = -5.5; cs.right = 5.5; cs.top = 5.5; cs.bottom = -5.5; cs.near = 1; cs.far = 40; return l; }, []);
+  const luna = useMemo(() => { const l = new THREE.DirectionalLight("#fff4ea", 1); l.castShadow = true; l.shadow.mapSize.set(2048, 2048); l.shadow.bias = -0.0002; l.shadow.normalBias = 0.012; const cs = l.shadow.camera as THREE.OrthographicCamera; cs.left = -5.5; cs.right = 5.5; cs.top = 5.5; cs.bottom = -5.5; cs.near = 1; cs.far = 40; return l; }, []);
   luna.position.copy(foco).add(V(-5.5, 13, 5)); luna.target.position.copy(foco); luna.target.updateMatrixWorld();
   luna.intensity = toma.plano === 1 ? 2.7 : toma.plano === 2 ? 2.2 : 0.55;
   const fw = toma.mira.clone().sub(toma.pos).setY(0).normalize();
   const rim = foco.clone().addScaledVector(fw, 9).add(V(0, 4.5, 0));
-  const spot = useMemo(() => { const s = new THREE.SpotLight("#fff6ec", 0, 0, ANG, 0.55, 0); s.castShadow = true; s.shadow.mapSize.set(2048, 2048); s.shadow.bias = -0.0003; s.shadow.camera.near = 0.5; s.shadow.camera.far = 30; return s; }, []);
+  const spot = useMemo(() => { const s = new THREE.SpotLight("#fff6ec", 0, 0, ANG, 0.55, 0); s.castShadow = true; s.shadow.mapSize.set(1024, 1024); s.shadow.bias = -0.0003; s.shadow.camera.near = 0.5; s.shadow.camera.far = 30; return s; }, []);
   if (ref) { spot.position.copy(ref.lente); spot.target.position.copy(he.mira); spot.target.updateMatrixWorld(); }
   spot.intensity = ref ? 8 * he.haz : 0;
 
@@ -576,7 +576,7 @@ export const RescateEscena: React.FC = () => {
   const T = frame / fps;
   return (
     <AbsoluteFill style={{ backgroundColor: "#040506" }}>
-      <ThreeCanvas width={width} height={height} dpr={1.5} shadows="soft"
+      <ThreeCanvas width={width} height={height} dpr={1} shadows="soft"
         gl={{ antialias: false, preserveDrawingBuffer: true, toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.08, outputColorSpace: THREE.SRGBColorSpace }}
         camera={{ fov: 30, position: [0, 9, 9], near: 0.3, far: 90 }}>
         <Fondo />

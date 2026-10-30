@@ -41,8 +41,8 @@ export const Post: React.FC<OpcionesPost> = ({ foco, apertura = 0.00025, maxDese
     const rp = new RenderPass(scene, camera);
     const gtao = new GTAOPass(scene, camera, W, H);
     gtao.output = GTAOPass.OUTPUT.Default;
-    gtao.updateGtaoMaterial({ radius: radioAO, distanceExponent: 1.6, thickness: 1.2, scale: 1.15, samples: 16, distanceFallOff: 1, screenSpaceRadius: false });
-    gtao.updatePdMaterial({ lumaPhi: 10, depthPhi: 2, normalPhi: 3, radius: 6, rings: 2, samples: 16 });
+    gtao.updateGtaoMaterial({ radius: radioAO, distanceExponent: 1.6, thickness: 1.2, scale: 1.15, samples: 8, distanceFallOff: 1, screenSpaceRadius: false });
+    gtao.updatePdMaterial({ lumaPhi: 10, depthPhi: 2, normalPhi: 3, radius: 6, rings: 2, samples: 8 });
     const bokeh = new BokehPass(scene, camera, { focus: foco, aperture: apertura, maxblur: maxDesenfoque });
     const bl = new UnrealBloomPass(new THREE.Vector2(W, H), bloom, 0.55, umbral);
     c.addPass(rp);
