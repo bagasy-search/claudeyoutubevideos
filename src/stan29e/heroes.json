@@ -1,0 +1,338 @@
+[
+ {
+  "k": "overhang",
+  "at": 18.22,
+  "out": 24.22,
+  "said": 14.72,
+  "ph": "ph_overhang",
+  "solo": true,
+  "kw": "BIGGER THAN THE PLATE",
+  "kw2": ""
+ },
+ {
+  "k": "belt",
+  "at": 38.92,
+  "out": 44.42,
+  "said": 38.92,
+  "ph": "ph_belt",
+  "solo": true,
+  "kw": "TOUGH AS A BELT",
+  "kw2": ""
+ },
+ {
+  "k": "pins",
+  "at": 65.16,
+  "out": 71.16,
+  "said": 59.56,
+  "ph": "ph_pins",
+  "solo": true,
+  "kw": "TAYLOR STREET",
+  "kw2": "the Italians"
+ },
+ {
+  "k": "blindfold",
+  "at": 133.66,
+  "out": 139.16,
+  "said": 133.66,
+  "ph": "ph_blindfold",
+  "solo": true,
+  "kw": "EYES CLOSED",
+  "kw2": ""
+ },
+ {
+  "k": "handspan",
+  "at": 163.44,
+  "out": 168.94,
+  "said": 159.64,
+  "ph": "ph_handspan",
+  "solo": true,
+  "kw": "AS WIDE AS YOUR HAND",
+  "kw2": ""
+ },
+ {
+  "k": "syringe",
+  "at": 185.1,
+  "out": 190.6,
+  "said": 185.1,
+  "ph": "ph_syringe",
+  "solo": true,
+  "kw": "SALT WATER",
+  "kw2": "pumped full of it"
+ },
+ {
+  "k": "building",
+  "at": 232.4,
+  "out": 237.9,
+  "said": 232.4,
+  "ph": "ph_building",
+  "solo": true,
+  "kw": "BANG BANG BANG",
+  "kw2": "the whole building knew"
+ },
+ {
+  "k": "volume",
+  "at": 262.24,
+  "out": 268.24,
+  "said": 259.74,
+  "ph": "ph_volume",
+  "solo": true,
+  "kw": "FLATTER",
+  "kw2": "not smaller"
+ },
+ {
+  "k": "mallet",
+  "at": 279.38,
+  "out": 284.88,
+  "said": 275.68,
+  "ph": "ph_mallet",
+  "solo": true,
+  "kw": "THE FLAT SIDE",
+  "kw2": "not the spikes"
+ },
+ {
+  "k": "curl",
+  "at": 329.46,
+  "out": 335.46,
+  "said": 329.46,
+  "ph": "ph_curl",
+  "solo": true,
+  "kw": "POTATO CHIP",
+  "kw2": "it curls up"
+ },
+ {
+  "k": "shoelace",
+  "at": 377.259,
+  "out": 382.76,
+  "said": 377.26,
+  "ph": "ph_shoelace",
+  "solo": true,
+  "kw": "LIKE MY SHOES",
+  "kw2": ""
+ },
+ {
+  "k": "beads",
+  "at": 396.2,
+  "out": 402.2,
+  "said": 391.6,
+  "ph": "ph_beads",
+  "solo": true,
+  "kw": "SALT",
+  "kw2": "pulls the moisture out"
+ },
+ {
+  "k": "lineup",
+  "at": 435.079,
+  "out": 440.08,
+  "said": 435.08,
+  "sp": 1.2,
+  "ph": "ph_lineup",
+  "solo": true,
+  "kw": "THREE PLATES",
+  "kw2": "in a row"
+ },
+ {
+  "k": "sieve",
+  "at": 464.139,
+  "out": 470.14,
+  "said": 464.14,
+  "ph": "ph_sieve",
+  "solo": true,
+  "kw": "FINE CRUMBS",
+  "kw2": "not the big flakes"
+ },
+ {
+  "k": "clubs",
+  "at": 478.9,
+  "out": 484.4,
+  "said": 473.5,
+  "ph": "ph_clubs",
+  "solo": true,
+  "kw": "BREADED CLUBS",
+  "kw2": ""
+ },
+ {
+  "k": "mirror",
+  "at": 517.08,
+  "out": 522.58,
+  "said": 518.38,
+  "ph": "ph_mirror",
+  "solo": true,
+  "kw": "LEFT-HANDED",
+  "kw2": ""
+ },
+ {
+  "k": "cracker",
+  "at": 567.88,
+  "out": 572.38,
+  "said": 569.38,
+  "sp": 1.222,
+  "ph": "ph_cracker",
+  "solo": true,
+  "kw": "LIKE A PLATE",
+  "kw2": "too hard"
+ },
+ {
+  "k": "airgap",
+  "at": 596.379,
+  "out": 602.38,
+  "said": 596.38,
+  "ph": "ph_airgap",
+  "solo": true,
+  "kw": "AIR IN BETWEEN",
+  "kw2": ""
+ },
+ {
+  "k": "sign",
+  "at": 627.94,
+  "out": 633.44,
+  "said": 627.64,
+  "ph": "ph_sign",
+  "solo": true,
+  "kw": "HIS OWN SHOP",
+  "kw2": ""
+ },
+ {
+  "k": "depth",
+  "at": 649.58,
+  "out": 654.08,
+  "said": 651.68,
+  "sp": 1.333,
+  "ph": "ph_depth",
+  "solo": true,
+  "kw": "IT FLOATS",
+  "kw2": "a little"
+ },
+ {
+  "k": "snuff",
+  "at": 713.678,
+  "out": 718.68,
+  "said": 713.68,
+  "sp": 1.2,
+  "ph": "ph_snuff",
+  "solo": true,
+  "kw": "LID ON",
+  "kw2": "heat off"
+ },
+ {
+  "k": "sponge",
+  "at": 724.078,
+  "out": 729.58,
+  "said": 724.08,
+  "ph": "ph_sponge",
+  "solo": true,
+  "kw": "A SPONGE",
+  "kw2": "it soaks up the oil"
+ },
+ {
+  "k": "dance",
+  "at": 782.62,
+  "out": 787.12,
+  "said": 786.72,
+  "sp": 1.222,
+  "ph": "ph_dance",
+  "solo": true,
+  "kw": "IT DANCES",
+  "kw2": ""
+ },
+ {
+  "k": "cradle",
+  "at": 873.64,
+  "out": 879.64,
+  "said": 869.74,
+  "ph": "ph_cradle",
+  "solo": true,
+  "kw": "ROCK THE PAN",
+  "kw2": "like a baby"
+ },
+ {
+  "k": "clothesline",
+  "at": 880.84,
+  "out": 885.34,
+  "said": 881.74,
+  "sp": 1.333,
+  "ph": "ph_clothesline",
+  "solo": true,
+  "kw": "A GOLDEN SHEET",
+  "kw2": ""
+ },
+ {
+  "k": "souffle",
+  "at": 908.458,
+  "out": 913.96,
+  "said": 908.46,
+  "ph": "ph_souffle",
+  "solo": true,
+  "kw": "LIKE A SOUFFLÉ",
+  "kw2": ""
+ },
+ {
+  "k": "footprints",
+  "at": 989.398,
+  "out": 994.9,
+  "said": 989.4,
+  "ph": "ph_footprints",
+  "solo": true,
+  "kw": "THE DANCE",
+  "kw2": ""
+ },
+ {
+  "k": "trap",
+  "at": 1007.678,
+  "out": 1013.68,
+  "said": 1007.68,
+  "ph": "ph_trap",
+  "solo": true,
+  "kw": "TRAPPED STEAM",
+  "kw2": ""
+ },
+ {
+  "k": "lemon",
+  "at": 1039.737,
+  "out": 1045.74,
+  "said": 1039.74,
+  "ph": "ph_lemon",
+  "solo": true,
+  "kw": "LEMON",
+  "kw2": "cuts the richness"
+ },
+ {
+  "k": "bus",
+  "at": 1145.658,
+  "out": 1151.16,
+  "said": 1145.66,
+  "ph": "ph_bus",
+  "solo": true,
+  "kw": "NOT A BUS",
+  "kw2": "not everybody gets on"
+ },
+ {
+  "k": "blender",
+  "at": 1207.578,
+  "out": 1213.08,
+  "said": 1207.58,
+  "ph": "ph_blender",
+  "solo": true,
+  "kw": "PANKO + BLENDER",
+  "kw2": ""
+ },
+ {
+  "k": "photo",
+  "at": 1261.158,
+  "out": 1267.16,
+  "said": 1261.16,
+  "ph": "ph_photo",
+  "solo": true,
+  "kw": "NEXT WEEK",
+  "kw2": "he came back"
+ },
+ {
+  "k": "basket",
+  "at": 1322.938,
+  "out": 1328.44,
+  "said": 1322.94,
+  "ph": "ph_basket",
+  "solo": true,
+  "kw": "CRUMBS + EGG",
+  "kw2": ""
+ }
+]

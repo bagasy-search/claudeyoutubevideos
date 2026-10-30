@@ -1,0 +1,2411 @@
+{
+"segs": [
+[
+3.5,
+10.3,
+"shot",
+"n_resto_polaco"
+],
+[
+10.3,
+12.7,
+"shot",
+"n_milanesa_plato"
+],
+[
+12.7,
+13.684,
+"shot",
+"n_cuenta_30"
+],
+[
+18.2,
+24.0,
+"shot",
+"v01_corte"
+],
+[
+24.0,
+27.6,
+"shot",
+"n_corte_crujiente"
+],
+[
+27.6,
+29.483,
+"shot",
+"n_carne_jugosa"
+],
+[
+32.731,
+35.48,
+"shot",
+"n_casa_freir"
+],
+[
+35.48,
+42.76,
+"shot",
+"n_empanado_caido"
+],
+[
+42.76,
+45.17,
+"shot",
+"f_mostrador_e"
+],
+[
+50.121,
+56.72,
+"shot",
+"n_madre_domingo"
+],
+[
+56.72,
+59.56,
+"shot",
+"n_schnitzel_aleman"
+],
+[
+59.56,
+60.981,
+"shot",
+"n_milanese_italiana"
+],
+[
+65.1,
+72.64,
+"shot",
+"f_corta_lomo_tienda"
+],
+[
+72.64,
+77.44,
+"shot",
+"n_lomo_4"
+],
+[
+77.44,
+78.9,
+"shot",
+"f_cuenta_diez"
+],
+[
+83.9,
+87.56,
+"shot",
+"n_sarten_ola"
+],
+[
+87.56,
+92.82,
+"shot",
+"n_costra_olas"
+],
+[
+92.82,
+94.383,
+"shot",
+"f_guino_e"
+],
+[
+98.54,
+103.04,
+"shot",
+"f_senala_sub_e"
+],
+[
+103.04,
+105.44,
+"shot",
+"f_arremanga_e"
+],
+[
+105.44,
+109.0,
+"shot",
+"n_lomo_entero"
+],
+[
+112.25,
+114.92,
+"shot",
+"n_tienda_sabado"
+],
+[
+114.92,
+122.6,
+"shot",
+"n_senora_abrigo"
+],
+[
+122.6,
+125.1,
+"shot",
+"n_paquete_papel"
+],
+[
+130.2,
+135.26,
+"shot",
+"n_calendario_sabados"
+],
+[
+135.26,
+136.76,
+"shot",
+"f_explica_lomo"
+],
+[
+136.76,
+141.5,
+"shot",
+"n_cerdo_lomo_chart"
+],
+[
+147.5,
+154.48,
+"shot",
+"n_chuleta_vs_lomo"
+],
+[
+154.48,
+158.12,
+"shot",
+"n_solomillo_flaco"
+],
+[
+158.12,
+159.3,
+"shot",
+"n_lomo_mano"
+],
+[
+163.4,
+167.9,
+"shot",
+"v02_lomo"
+],
+[
+167.9,
+174.0,
+"shot",
+"n_cuatro_rodajas"
+],
+[
+174.0,
+175.674,
+"shot",
+"n_rodajas_precio"
+],
+[
+181.337,
+185.1,
+"shot",
+"n_etiqueta_solucion"
+],
+[
+185.1,
+190.44,
+"shot",
+"n_bandeja_agua"
+],
+[
+190.44,
+191.196,
+"shot",
+"n_chuletas_desayuno"
+],
+[
+195.2,
+201.0,
+"shot",
+"n_solomillo_roto"
+],
+[
+201.0,
+206.18,
+"shot",
+"f_mide_regla"
+],
+[
+206.18,
+208.782,
+"shot",
+"n_mazo_plano"
+],
+[
+213.839,
+219.46,
+"shot",
+"n_cocina_1955"
+],
+[
+219.46,
+224.24,
+"shot",
+"n_botella_leche"
+],
+[
+224.24,
+225.3,
+"shot",
+"n_papel_cera"
+],
+[
+230.804,
+236.06,
+"shot",
+"n_edificio_domingo"
+],
+[
+236.06,
+238.54,
+"shot",
+"n_milanesa_fina"
+],
+[
+238.54,
+241.164,
+"shot",
+"n_reloj_cocina"
+],
+[
+244.904,
+249.06,
+"shot",
+"n_gruesa_quemada"
+],
+[
+249.06,
+256.5,
+"shot",
+"n_fibras_carne"
+],
+[
+256.5,
+257.7,
+"shot",
+"n_cuelga_plato"
+],
+[
+262.1,
+265.96,
+"shot",
+"v03_botella"
+],
+[
+265.96,
+271.6,
+"shot",
+"n_film_rodaja"
+],
+[
+271.6,
+273.378,
+"shot",
+"n_salpicaduras"
+],
+[
+279.233,
+282.84,
+"shot",
+"n_sarten_pesada"
+],
+[
+282.84,
+287.28,
+"shot",
+"n_palo_amasar"
+],
+[
+287.28,
+290.1,
+"shot",
+"f_golpea_centro"
+],
+[
+293.649,
+297.72,
+"shot",
+"n_milanesa_pareja"
+],
+[
+297.72,
+303.7,
+"shot",
+"n_regla_cuarto"
+],
+[
+303.7,
+306.0,
+"shot",
+"n_agujero"
+],
+[
+311.2,
+317.08,
+"shot",
+"n_sarten_madre"
+],
+[
+317.08,
+318.46,
+"shot",
+"f_sarten_suerte"
+],
+[
+318.46,
+322.182,
+"shot",
+"n_borde_grasa"
+],
+[
+327.5,
+331.56,
+"shot",
+"n_curvada"
+],
+[
+331.56,
+336.68,
+"shot",
+"n_borde_levantado"
+],
+[
+336.68,
+341.478,
+"shot",
+"n_tira_grasa"
+],
+[
+346.416,
+353.46,
+"shot",
+"v04_muescas"
+],
+[
+353.46,
+357.38,
+"shot",
+"n_cortes_borde"
+],
+[
+357.38,
+358.276,
+"shot",
+"n_punta_cuchillo"
+],
+[
+361.6,
+366.64,
+"shot",
+"n_queda_plana"
+],
+[
+366.64,
+368.92,
+"shot",
+"n_espatula_aplasta"
+],
+[
+368.92,
+371.9,
+"shot",
+"n_jugo_sarten"
+],
+[
+377.2,
+379.08,
+"shot",
+"f_ata_cordones"
+],
+[
+379.08,
+383.96,
+"shot",
+"n_sal_pimienta"
+],
+[
+383.96,
+391.2,
+"shot",
+"n_sal_hora_antes"
+],
+[
+396.124,
+398.24,
+"shot",
+"n_milanesa_mojada"
+],
+[
+398.24,
+403.92,
+"shot",
+"n_engrudo"
+],
+[
+403.92,
+407.484,
+"shot",
+"n_pizca_sal"
+],
+[
+412.3,
+418.98,
+"shot",
+"n_empanado_suelto"
+],
+[
+418.98,
+423.06,
+"shot",
+"f_sala_justo"
+],
+[
+423.06,
+424.0,
+"shot",
+"n_tres_platos"
+],
+[
+427.9,
+432.84,
+"shot",
+"n_manos_dos"
+],
+[
+432.84,
+437.78,
+"shot",
+"n_mesa_madre"
+],
+[
+437.78,
+440.2,
+"shot",
+"n_plato_harina"
+],
+[
+446.0,
+451.8,
+"shot",
+"n_huevos_batidos"
+],
+[
+451.8,
+455.18,
+"shot",
+"n_huevo_liso"
+],
+[
+455.18,
+456.269,
+"shot",
+"n_pan_rallado"
+],
+[
+459.821,
+464.4,
+"shot",
+"n_pan_seco"
+],
+[
+464.4,
+472.32,
+"shot",
+"n_panko_vs"
+],
+[
+472.32,
+473.181,
+"shot",
+"n_dedos_empanados"
+],
+[
+478.847,
+483.86,
+"shot",
+"v05_platos"
+],
+[
+483.86,
+488.72,
+"shot",
+"n_cae_huevo"
+],
+[
+488.72,
+490.256,
+"shot",
+"n_gotea_huevo"
+],
+[
+496.419,
+500.26,
+"shot",
+"f_manos_limpias"
+],
+[
+500.26,
+502.22,
+"shot",
+"n_empanado_parejo"
+],
+[
+502.22,
+505.475,
+"shot",
+"n_mano_pegote"
+],
+[
+509.215,
+514.1,
+"shot",
+"n_mesa_desastre"
+],
+[
+514.1,
+521.52,
+"shot",
+"n_nieta_manos"
+],
+[
+521.52,
+522.68,
+"shot",
+"f_rie_nieta"
+],
+[
+528.02,
+530.76,
+"shot",
+"n_mapa_usa"
+],
+[
+530.76,
+534.62,
+"shot",
+"n_migas_sueltas"
+],
+[
+534.62,
+539.2,
+"shot",
+"n_aprendiz_1986"
+],
+[
+544.0,
+550.24,
+"shot",
+"n_palmas_presionan"
+],
+[
+550.24,
+554.18,
+"shot",
+"n_bola_nieve"
+],
+[
+554.18,
+556.0,
+"shot",
+"f_explica_presion"
+],
+[
+560.1,
+565.0,
+"shot",
+"n_costra_dura"
+],
+[
+565.0,
+570.9,
+"shot",
+"n_galleta"
+],
+[
+570.9,
+572.4,
+"shot",
+"n_ondas_resto"
+],
+[
+575.7,
+577.84,
+"shot",
+"v06_sacude"
+],
+[
+577.84,
+585.82,
+"shot",
+"n_cuchara_migas"
+],
+[
+585.82,
+586.5,
+"shot",
+"n_plato_inclinado"
+],
+[
+591.1,
+596.38,
+"shot",
+"n_rejilla_cruda"
+],
+[
+596.38,
+601.14,
+"shot",
+"n_aire_migas"
+],
+[
+601.14,
+604.4,
+"shot",
+"n_burbuja_aceite"
+],
+[
+610.013,
+620.66,
+"shot",
+"n_pasta_migas"
+],
+[
+620.66,
+621.3,
+"shot",
+"n_heladera_milanesas"
+],
+[
+621.3,
+622.351,
+"shot",
+"n_milanesa_humeda"
+],
+[
+627.837,
+630.86,
+"shot",
+"n_tienda_tommy"
+],
+[
+630.86,
+636.38,
+"shot",
+"n_sarten_aceite"
+],
+[
+636.38,
+638.197,
+"shot",
+"n_termo_335"
+],
+[
+642.0,
+649.24,
+"shot",
+"n_cocina_resto"
+],
+[
+649.24,
+652.48,
+"shot",
+"n_hierro_fundido"
+],
+[
+652.48,
+654.194,
+"shot",
+"n_flota"
+],
+[
+658.1,
+662.7,
+"shot",
+"n_manteca"
+],
+[
+662.7,
+665.36,
+"shot",
+"n_manteca_clarificada"
+],
+[
+665.36,
+668.471,
+"shot",
+"n_espuma_manteca"
+],
+[
+673.1,
+676.68,
+"shot",
+"n_aceite_botella"
+],
+[
+676.68,
+681.78,
+"shot",
+"n_cucharadas_lard"
+],
+[
+681.78,
+685.7,
+"shot",
+"f_mira_termo"
+],
+[
+691.73,
+697.84,
+"shot",
+"n_grasienta"
+],
+[
+697.84,
+699.2,
+"shot",
+"n_mango_adentro"
+],
+[
+699.2,
+704.09,
+"shot",
+"f_vigila_sarten"
+],
+[
+708.8,
+713.68,
+"shot",
+"n_tercio_lleno"
+],
+[
+713.68,
+716.1,
+"shot",
+"n_tapa_sarten"
+],
+[
+716.1,
+718.961,
+"shot",
+"n_vaso_agua_lejos"
+],
+[
+722.441,
+727.78,
+"shot",
+"n_esponja_aceite"
+],
+[
+727.78,
+735.3,
+"shot",
+"f_lard_sarten"
+],
+[
+735.3,
+736.061,
+"shot",
+"n_termometro_clip"
+],
+[
+740.121,
+744.38,
+"shot",
+"n_termo_10"
+],
+[
+744.38,
+751.86,
+"shot",
+"n_termo_pinza"
+],
+[
+751.86,
+753.3,
+"shot",
+"n_miga_sola"
+],
+[
+757.7,
+759.7,
+"shot",
+"v07_aceite"
+],
+[
+759.7,
+766.76,
+"shot",
+"n_miga_negra"
+],
+[
+766.76,
+768.0,
+"shot",
+"n_miga_dorada"
+],
+[
+773.4,
+778.32,
+"shot",
+"n_gota_huevo"
+],
+[
+778.32,
+785.36,
+"shot",
+"n_aceite_frio"
+],
+[
+785.36,
+787.192,
+"shot",
+"f_tira_miga"
+],
+[
+793.1,
+795.98,
+"shot",
+"n_mango_sarten"
+],
+[
+795.98,
+803.28,
+"shot",
+"f_cinco_dedos"
+],
+[
+803.28,
+804.3,
+"shot",
+"n_gruesa"
+],
+[
+808.926,
+812.08,
+"shot",
+"n_sal_tarde"
+],
+[
+812.08,
+819.46,
+"shot",
+"n_palma_x"
+],
+[
+819.46,
+820.5,
+"shot",
+"n_poco_aceite"
+],
+[
+824.1,
+829.08,
+"shot",
+"n_sarten_llena"
+],
+[
+829.08,
+833.44,
+"shot",
+"n_dos_milanesas"
+],
+[
+833.44,
+835.877,
+"shot",
+"n_aceite_baja"
+],
+[
+839.1,
+842.12,
+"shot",
+"n_resto_1979"
+],
+[
+842.12,
+846.52,
+"shot",
+"n_seis_esquinas"
+],
+[
+846.52,
+850.562,
+"shot",
+"n_cocinera_1979"
+],
+[
+855.102,
+859.98,
+"shot",
+"n_cocina_vieja_resto"
+],
+[
+859.98,
+862.98,
+"shot",
+"n_coloca_fuego"
+],
+[
+862.98,
+868.264,
+"shot",
+"v08_mece"
+],
+[
+873.6,
+879.0,
+"shot",
+"n_ola_aceite"
+],
+[
+879.0,
+881.74,
+"shot",
+"n_costra_levanta"
+],
+[
+881.74,
+885.394,
+"shot",
+"n_sabana_viento"
+],
+[
+888.55,
+895.0,
+"shot",
+"n_arriba_abajo"
+],
+[
+895.0,
+896.56,
+"shot",
+"n_vapor_huevo"
+],
+[
+896.56,
+898.551,
+"shot",
+"n_soufle_corte"
+],
+[
+904.148,
+906.24,
+"shot",
+"n_ondas_fijas"
+],
+[
+906.24,
+915.0,
+"shot",
+"n_soufle"
+],
+[
+915.0,
+916.79,
+"shot",
+"n_lejos_cuerpo"
+],
+[
+920.832,
+924.72,
+"shot",
+"f_agarradera"
+],
+[
+924.72,
+927.98,
+"shot",
+"n_circulos"
+],
+[
+927.98,
+931.659,
+"shot",
+"n_fat_top"
+],
+[
+937.8,
+940.48,
+"shot",
+"n_burbujas_arriba"
+],
+[
+940.48,
+946.98,
+"shot",
+"n_pinzas_vuelta"
+],
+[
+946.98,
+948.5,
+"shot",
+"n_segundo_lado"
+],
+[
+951.8,
+957.46,
+"shot",
+"n_dorada_ambos"
+],
+[
+957.46,
+962.16,
+"shot",
+"n_termo_145"
+],
+[
+962.16,
+964.1,
+"shot",
+"n_termo_lado"
+],
+[
+970.408,
+976.76,
+"shot",
+"f_orgullo_milanesa"
+],
+[
+976.76,
+979.64,
+"shot",
+"n_sarten_quieta"
+],
+[
+979.64,
+981.376,
+"shot",
+"n_costra_plana"
+],
+[
+985.3,
+990.94,
+"shot",
+"f_baila_sarten"
+],
+[
+990.94,
+996.12,
+"shot",
+"n_rejilla_bandeja"
+],
+[
+996.12,
+998.6,
+"shot",
+"n_sale_sarten"
+],
+[
+1003.6,
+1007.68,
+"shot",
+"n_papel_toalla"
+],
+[
+1007.68,
+1012.92,
+"shot",
+"n_vapor_atrapado"
+],
+[
+1012.92,
+1015.2,
+"shot",
+"n_rejilla_milanesa"
+],
+[
+1019.541,
+1023.26,
+"shot",
+"v09_rejilla"
+],
+[
+1023.26,
+1028.42,
+"shot",
+"n_crujiente_abajo"
+],
+[
+1028.42,
+1029.9,
+"shot",
+"n_horno_200"
+],
+[
+1035.0,
+1039.74,
+"shot",
+"n_limon_cuna"
+],
+[
+1039.74,
+1045.7,
+"shot",
+"n_limon_exprime"
+],
+[
+1045.7,
+1047.8,
+"shot",
+"n_papas_eneldo"
+],
+[
+1053.4,
+1059.42,
+"shot",
+"n_apiladas"
+],
+[
+1059.42,
+1062.04,
+"shot",
+"n_blandas"
+],
+[
+1062.04,
+1065.1,
+"shot",
+"n_rejilla_estufa"
+],
+[
+1069.3,
+1075.84,
+"shot",
+"n_lomo_sabado"
+],
+[
+1075.84,
+1080.5,
+"shot",
+"f_golpea_domingo"
+],
+[
+1080.5,
+1083.0,
+"shot",
+"n_muescas_domingo"
+],
+[
+1086.525,
+1089.14,
+"shot",
+"n_mesa_preparada"
+],
+[
+1089.14,
+1092.38,
+"shot",
+"n_papas_hervir"
+],
+[
+1092.38,
+1098.362,
+"shot",
+"n_hierro_mediano"
+],
+[
+1104.4,
+1111.32,
+"shot",
+"f_empana_domingo"
+],
+[
+1111.32,
+1113.76,
+"shot",
+"n_entra_aceite"
+],
+[
+1113.76,
+1116.5,
+"shot",
+"n_mece_domingo"
+],
+[
+1121.3,
+1123.84,
+"shot",
+"n_rejilla_domingo"
+],
+[
+1123.84,
+1129.48,
+"shot",
+"n_mesa_domingo"
+],
+[
+1129.48,
+1135.352,
+"shot",
+"f_recuerda_madre"
+],
+[
+1141.4,
+1145.66,
+"shot",
+"n_dos_por_vez"
+],
+[
+1145.66,
+1149.98,
+"shot",
+"n_colectivo"
+],
+[
+1149.98,
+1152.864,
+"shot",
+"n_vuelta_unica"
+],
+[
+1156.641,
+1160.52,
+"shot",
+"n_sin_tapa"
+],
+[
+1160.52,
+1164.42,
+"shot",
+"n_tapa_vapor"
+],
+[
+1164.42,
+1167.1,
+"shot",
+"n_fria_crocante"
+],
+[
+1170.9,
+1172.3,
+"shot",
+"f_preguntas_mostrador"
+],
+[
+1172.3,
+1176.88,
+"shot",
+"n_pollo_ternera"
+],
+[
+1176.88,
+1181.871,
+"shot",
+"n_wiener"
+],
+[
+1187.733,
+1193.04,
+"shot",
+"n_termo_165"
+],
+[
+1193.04,
+1196.08,
+"shot",
+"n_panko"
+],
+[
+1196.08,
+1198.8,
+"shot",
+"n_panko_frito"
+],
+[
+1204.915,
+1210.26,
+"shot",
+"n_licuadora_panko"
+],
+[
+1210.26,
+1215.46,
+"shot",
+"n_horno_milanesas"
+],
+[
+1215.46,
+1216.772,
+"shot",
+"n_spray_aceite"
+],
+[
+1222.4,
+1228.12,
+"shot",
+"n_horneada"
+],
+[
+1228.12,
+1233.96,
+"shot",
+"n_freezer_milanesas"
+],
+[
+1233.96,
+1235.2,
+"shot",
+"n_papel_entre"
+],
+[
+1241.0,
+1243.66,
+"shot",
+"n_congelada_empanada"
+],
+[
+1243.66,
+1249.8,
+"shot",
+"n_joven_mostrador"
+],
+[
+1249.8,
+1251.761,
+"shot",
+"n_milanesa_plana"
+],
+[
+1257.1,
+1262.52,
+"shot",
+"f_dos_preguntas"
+],
+[
+1262.52,
+1266.74,
+"shot",
+"n_foto_olas"
+],
+[
+1266.74,
+1269.8,
+"shot",
+"f_repaso_e"
+],
+[
+1273.9,
+1278.32,
+"shot",
+"n_rep_mazo"
+],
+[
+1278.32,
+1282.48,
+"shot",
+"n_rep_muescas"
+],
+[
+1282.48,
+1285.4,
+"shot",
+"n_rep_sal"
+],
+[
+1289.8,
+1292.04,
+"shot",
+"n_rep_platos"
+],
+[
+1292.04,
+1297.2,
+"shot",
+"n_rep_sacude"
+],
+[
+1297.2,
+1300.687,
+"shot",
+"n_rep_aceite"
+],
+[
+1306.524,
+1314.3,
+"shot",
+"n_rep_mece"
+],
+[
+1314.3,
+1316.32,
+"shot",
+"n_rep_rejilla"
+],
+[
+1316.32,
+1317.895,
+"shot",
+"n_rep_limon"
+],
+[
+1322.9,
+1328.94,
+"shot",
+"n_rep_total"
+],
+[
+1328.94,
+1330.64,
+"shot",
+"f_pregunta_e"
+],
+[
+1330.64,
+1333.485,
+"shot",
+"n_domingo_abuela"
+],
+[
+1337.9,
+1342.46,
+"shot",
+"f_lee_comentarios"
+],
+[
+1342.46,
+1348.54,
+"shot",
+"f_senala_sub_e2"
+],
+[
+1348.54,
+1351.376,
+"shot",
+"v10_cierre"
+]
+],
+"cam": [],
+"ov": [
+{
+"k": "big",
+"txt": "$30",
+"sub": "ONE PORK CUTLET",
+"col": "red",
+"at": 11.36,
+"out": 14.56
+},
+{
+"k": "stamp",
+"txt": "PUFFED UP IN WAVES",
+"at": 19.0,
+"out": 22.0
+},
+{
+"k": "chip",
+"txt": "AT HOME: ONE SAD SOGGY SHEET",
+"col": "red",
+"at": 36.26,
+"out": 39.76
+},
+{
+"k": "chip",
+"txt": "52 YEARS BEHIND THE COUNTER",
+"at": 42.76,
+"out": 46.26
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "KOTLET SCHABOWY",
+"col": "amber",
+"at": 55.08
+},
+{
+"txt": "SCHNITZEL",
+"col": "amber",
+"at": 58.02
+},
+{
+"txt": "MILANESE",
+"col": "amber",
+"at": 61.14
+}
+],
+"at": 54.98,
+"out": 63.64
+},
+{
+"k": "big",
+"txt": "$4",
+"sub": "OF PORK · AT HOME",
+"col": "green",
+"at": 75.96,
+"out": 77.14
+},
+{
+"k": "big",
+"txt": "10",
+"sub": "OLD BUTCHER TRICKS",
+"col": "amber",
+"at": 77.44,
+"out": 80.64
+},
+{
+"k": "chip",
+"txt": "TRICK 9 · THE SHAKE OF THE PAN",
+"col": "amber",
+"at": 82.46,
+"out": 85.96
+},
+{
+"k": "chip",
+"txt": "SUBSCRIBE · 52 YEARS OF TRICKS",
+"col": "red",
+"at": 96.34,
+"out": 100.34
+},
+{
+"k": "step",
+"n": 1,
+"name": "BONELESS LOIN · ½ INCH",
+"at": 105.44,
+"out": 109.44
+},
+{
+"k": "chip",
+"txt": "MRS. NOVAK · EVERY SATURDAY, 9 AM",
+"col": "ice",
+"at": 112.32,
+"out": 115.82
+},
+{
+"k": "stamp",
+"txt": "«1½ LB OF SCHAB · NO BONE»",
+"at": 121.68,
+"out": 125.18
+},
+{
+"k": "chip",
+"txt": "THE LONG LEAN MUSCLE ALONG THE BACK",
+"col": "amber",
+"at": 136.76,
+"out": 140.26
+},
+{
+"k": "versus",
+"title": "WHICH PIECE",
+"L": {
+"label": "TENDERLOIN",
+"val": "TOO SMALL",
+"h": 0.35,
+"col": "#8fd6ff",
+"mark": "x"
+},
+"R": {
+"label": "LOIN",
+"val": "HAND-WIDE",
+"h": 0.95,
+"col": "#ffb257",
+"mark": "ok"
+},
+"at": 154.48,
+"out": 160.48
+},
+{
+"k": "big",
+"txt": "1½ LB",
+"sub": "4 SLICES · 4 PEOPLE",
+"col": "amber",
+"at": 167.9,
+"out": 171.1
+},
+{
+"k": "chip",
+"txt": "«ENHANCED» = SALT WATER · CRUST SLIDES OFF",
+"col": "red",
+"at": 185.1,
+"out": 188.6
+},
+{
+"k": "stamp",
+"txt": "½ INCH · NO BONE · EVERY TIME",
+"at": 196.84,
+"out": 200.34
+},
+{
+"k": "step",
+"n": 2,
+"name": "POUND TO ¼ INCH IN A BAG",
+"at": 206.18,
+"out": 210.18
+},
+{
+"k": "chip",
+"txt": "1955 · A MILK BOTTLE, NO MALLET",
+"col": "ice",
+"at": 219.46,
+"out": 222.96
+},
+{
+"k": "stamp",
+"txt": "BANG · BANG · BANG",
+"at": 231.0,
+"out": 234.0
+},
+{
+"k": "big",
+"txt": "2-3 MIN",
+"sub": "THIN = CRUST AND CENTER AT ONCE",
+"col": "amber",
+"at": 238.54,
+"out": 241.74
+},
+{
+"k": "chip",
+"txt": "NOT BIGGER · FLATTER",
+"col": "green",
+"at": 257.98,
+"out": 261.48
+},
+{
+"k": "versus",
+"title": "THE MALLET",
+"L": {
+"label": "SPIKY SIDE",
+"val": "SHREDS",
+"h": 0.35,
+"col": "#8fd6ff",
+"mark": "x"
+},
+"R": {
+"label": "FLAT SIDE",
+"val": "EVEN",
+"h": 0.95,
+"col": "#ffb257",
+"mark": "ok"
+},
+"at": 273.72,
+"out": 279.72
+},
+{
+"k": "chip",
+"txt": "CENTER → EDGES · PUSH OUTWARD",
+"at": 287.28,
+"out": 290.78
+},
+{
+"k": "big",
+"txt": "¼ IN",
+"sub": "EVERYWHERE · NOT THINNER",
+"col": "amber",
+"at": 297.72,
+"out": 300.92
+},
+{
+"k": "stamp",
+"txt": "«JUST FOR LUCK»",
+"at": 317.08,
+"out": 320.08
+},
+{
+"k": "step",
+"n": 3,
+"name": "NOTCH THE FAT",
+"at": 318.46,
+"out": 322.46
+},
+{
+"k": "stamp",
+"txt": "CURLS UP LIKE A POTATO CHIP",
+"at": 330.14,
+"out": 333.14
+},
+{
+"k": "chip",
+"txt": "A LITTLE CUT EVERY INCH · ONLY THE FAT",
+"col": "amber",
+"at": 353.46,
+"out": 356.96
+},
+{
+"k": "stamp",
+"txt": "IT STAYS FLAT",
+"at": 365.52,
+"out": 368.52
+},
+{
+"k": "step",
+"n": 4,
+"name": "SALT RIGHT BEFORE BREADING",
+"at": 379.08,
+"out": 383.08
+},
+{
+"k": "chip",
+"txt": "SALT PULLS WATER TO THE SURFACE",
+"col": "red",
+"at": 391.6,
+"out": 395.1
+},
+{
+"k": "stamp",
+"txt": "BREADING TURNS INTO GLUE",
+"at": 398.24,
+"out": 401.24
+},
+{
+"k": "versus",
+"title": "WHEN TO SALT",
+"L": {
+"label": "1 HOUR BEFORE",
+"val": "WET",
+"h": 0.4,
+"col": "#8fd6ff",
+"mark": "x"
+},
+"R": {
+"label": "1 MINUTE BEFORE",
+"val": "DRY",
+"h": 0.95,
+"col": "#ffb257",
+"mark": "ok"
+},
+"at": 410.22,
+"out": 416.22
+},
+{
+"k": "step",
+"n": 5,
+"name": "3 PLATES · DRY HAND, WET HAND",
+"at": 423.06,
+"out": 427.06
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "FLOUR",
+"col": "amber",
+"at": 437.78
+},
+{
+"txt": "2 EGGS + MILK",
+"col": "amber",
+"at": 444.68
+},
+{
+"txt": "FINE CRUMBS",
+"col": "amber",
+"at": 455.18
+}
+],
+"at": 436.6,
+"out": 457.68
+},
+{
+"k": "chip",
+"txt": "FINE CRUMBS · NOT PANKO",
+"col": "ice",
+"at": 464.14,
+"out": 467.64
+},
+{
+"k": "chip",
+"txt": "LEFT = DRY · RIGHT = WET",
+"col": "amber",
+"at": 476.04,
+"out": 479.54
+},
+{
+"k": "stamp",
+"txt": "DRY HAND · WET HAND",
+"at": 496.42,
+"out": 499.42
+},
+{
+"k": "chip",
+"txt": "LEFT-HANDED? DO IT BACKWARDS",
+"col": "ice",
+"at": 518.38,
+"out": 521.88
+},
+{
+"k": "chip",
+"txt": "TRICK 6 · TOMMY'S MISTAKE",
+"col": "red",
+"at": 525.92,
+"out": 529.42
+},
+{
+"k": "step",
+"n": 6,
+"name": "DON'T PRESS · SHAKE",
+"col": "red",
+"at": 530.76,
+"out": 534.76
+},
+{
+"k": "stamp",
+"txt": "«LIKE PACKING SNOW»",
+"at": 550.24,
+"out": 553.74
+},
+{
+"k": "chip",
+"txt": "PRESSED = FLAT AS A CRACKER",
+"col": "red",
+"at": 565.0,
+"out": 568.5
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "SCOOP",
+"col": "amber",
+"at": 577.84
+},
+{
+"txt": "SHAKE",
+"col": "amber",
+"at": 582.54
+},
+{
+"txt": "LIFT",
+"col": "amber",
+"at": 589.24
+}
+],
+"at": 577.84,
+"out": 591.74
+},
+{
+"k": "chip",
+"txt": "A LITTLE AIR = THE WAVES",
+"col": "green",
+"at": 596.38,
+"out": 599.88
+},
+{
+"k": "chip",
+"txt": "BREAD RIGHT BEFORE THE PAN",
+"col": "amber",
+"at": 605.32,
+"out": 608.82
+},
+{
+"k": "stamp",
+"txt": "«HE STILL SHAKES TOO»",
+"at": 629.88,
+"out": 632.88
+},
+{
+"k": "step",
+"n": 7,
+"name": "½ INCH OF FAT",
+"at": 630.86,
+"out": 634.86
+},
+{
+"k": "chip",
+"txt": "WIDE HEAVY PAN · CAST IRON",
+"at": 649.24,
+"out": 652.74
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "LARD",
+"col": "amber",
+"at": 658.88
+},
+{
+"txt": "CLARIFIED BUTTER",
+"col": "amber",
+"at": 662.7
+},
+{
+"txt": "OIL + 2 TBSP LARD",
+"col": "amber",
+"at": 673.74
+}
+],
+"at": 658.2,
+"out": 676.24
+},
+{
+"k": "temp",
+"a": 250,
+"b": 340,
+"sub": "330-340 °F · MEDIUM",
+"col": "amber",
+"at": 681.78,
+"out": 686.78
+},
+{
+"k": "chip",
+"txt": "SAFETY · HANDLE IN · NEVER ALONE",
+"col": "red",
+"at": 697.84,
+"out": 701.34
+},
+{
+"k": "stamp",
+"txt": "FIRE? LID ON · HEAT OFF · NEVER WATER",
+"at": 716.1,
+"out": 719.6
+},
+{
+"k": "chip",
+"txt": "COLD OIL = A SPONGE",
+"col": "red",
+"at": 725.08,
+"out": 728.58
+},
+{
+"k": "step",
+"n": 8,
+"name": "THERMOMETER OR CRUMB TEST",
+"at": 735.3,
+"out": 739.3
+},
+{
+"k": "big",
+"txt": "$10",
+"sub": "A CLIP-ON THERMOMETER",
+"col": "green",
+"at": 743.26,
+"out": 746.46
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "SINKS = COLD",
+"col": "ice",
+"at": 756.78
+},
+{
+"txt": "BURNS = TOO HOT",
+"col": "red",
+"at": 760.24
+},
+{
+"txt": "10 SEC GOLDEN = RIGHT",
+"col": "green",
+"at": 767.88
+}
+],
+"at": 752.94,
+"out": 770.38
+},
+{
+"k": "chip",
+"txt": "MOM: A DROP OF EGG",
+"col": "ice",
+"at": 771.58,
+"out": 775.08
+},
+{
+"k": "stamp",
+"txt": "«JUST TO WATCH IT DANCE»",
+"at": 787.84,
+"out": 790.84
+},
+{
+"k": "deal",
+"at": 795.98,
+"out": 800.48
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "A THICK CUTLET",
+"at": 802.36,
+"out": 806.38
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "SALTING IT EARLY",
+"at": 806.68,
+"out": 810.8
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "PRESSING THE CRUMBS",
+"at": 811.1,
+"out": 817.84
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "TOO LITTLE OR COLD OIL",
+"at": 818.14,
+"out": 826.06
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "CROWDING THE PAN",
+"at": 826.36,
+"out": 834.36
+},
+{
+"k": "step",
+"n": 9,
+"name": "ROCK THE PAN",
+"col": "red",
+"at": 836.18,
+"out": 840.18
+},
+{
+"k": "chip",
+"txt": "SIX CORNERS · 1979",
+"col": "ice",
+"at": 842.12,
+"out": 845.62
+},
+{
+"k": "stamp",
+"txt": "LIKE ROCKING A BABY",
+"at": 867.36,
+"out": 870.86
+},
+{
+"k": "chip",
+"txt": "A GOLDEN SHEET IN THE WIND",
+"col": "amber",
+"at": 881.74,
+"out": 885.24
+},
+{
+"k": "chip",
+"txt": "EGG → STEAM → THE CRUST LIFTS",
+"col": "amber",
+"at": 896.56,
+"out": 900.06
+},
+{
+"k": "stamp",
+"txt": "«SOUFFLIERT» · LIKE A SOUFFLÉ",
+"at": 906.8,
+"out": 910.3
+},
+{
+"k": "chip",
+"txt": "LAY IT IN AWAY FROM YOU",
+"col": "red",
+"at": 916.92,
+"out": 920.42
+},
+{
+"k": "big",
+"txt": "2 + 2 MIN",
+"sub": "ROCK · TURN ONCE · ROCK",
+"col": "amber",
+"at": 936.16,
+"out": 939.36
+},
+{
+"k": "temp",
+"a": 100,
+"b": 145,
+"sub": "PORK · THIN = FAST",
+"col": "green",
+"at": 958.14,
+"out": 963.14
+},
+{
+"k": "stamp",
+"txt": "THE $30 CRUST",
+"at": 968.36,
+"out": 971.86
+},
+{
+"k": "stamp",
+"txt": "«DANCING WITH IT»",
+"at": 989.56,
+"out": 992.56
+},
+{
+"k": "step",
+"n": 10,
+"name": "RACK · NOT PAPER · LEMON",
+"at": 990.94,
+"out": 994.94
+},
+{
+"k": "versus",
+"title": "WHERE IT RESTS",
+"L": {
+"label": "PAPER TOWEL",
+"val": "SOGGY",
+"h": 0.35,
+"col": "#8fd6ff",
+"mark": "x"
+},
+"R": {
+"label": "WIRE RACK",
+"val": "CRISP",
+"h": 0.95,
+"col": "#ffb257",
+"mark": "ok"
+},
+"at": 1007.68,
+"out": 1014.18
+},
+{
+"k": "chip",
+"txt": "MORE? RACK IN THE OVEN · 200 °F",
+"col": "ice",
+"at": 1029.26,
+"out": 1032.76
+},
+{
+"k": "stamp",
+"txt": "A POLISH SUNDAY",
+"at": 1051.82,
+"out": 1054.82
+},
+{
+"k": "clock",
+"marks": [
+[
+1069.48,
+10.0
+],
+[
+1075.84,
+13.0
+],
+[
+1084.06,
+13.25
+],
+[
+1092.38,
+13.5
+],
+[
+1123.84,
+14.0
+]
+],
+"at": 1066.28,
+"out": 1127.84
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "NO BREADING AHEAD",
+"col": "red",
+"at": 1136.2
+},
+{
+"txt": "2 AT A TIME",
+"col": "red",
+"at": 1142.04
+},
+{
+"txt": "TURN ONCE",
+"col": "red",
+"at": 1149.64
+},
+{
+"txt": "NO LID",
+"col": "red",
+"at": 1157.38
+}
+],
+"at": 1129.64,
+"out": 1159.88
+},
+{
+"k": "chip",
+"txt": "«CHICKEN OR VEAL?» YES · CHICKEN 165 °F",
+"col": "ice",
+"at": 1173.56,
+"out": 1177.06
+},
+{
+"k": "chip",
+"txt": "«PANKO?» CRUNCHY, NO WAVES",
+"col": "ice",
+"at": 1193.32,
+"out": 1196.82
+},
+{
+"k": "chip",
+"txt": "«BAKE?» 425 °F · 15 MIN · NO PUFF",
+"col": "ice",
+"at": 1210.84,
+"out": 1214.34
+},
+{
+"k": "chip",
+"txt": "«FREEZE?» BEFORE BREADING",
+"col": "ice",
+"at": 1228.54,
+"out": 1232.04
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "PRESS? YES",
+"col": "red",
+"at": 1253.94
+},
+{
+"txt": "ROCK? NO",
+"col": "red",
+"at": 1255.88
+}
+],
+"at": 1253.74,
+"out": 1258.38
+},
+{
+"k": "stamp",
+"txt": "WAVES.",
+"at": 1264.34,
+"out": 1267.34
+},
+{
+"k": "recap",
+"rows": [
+1270.02,
+1273.92,
+1278.32,
+1282.48,
+1285.92,
+1292.04,
+1297.2,
+1301.6,
+1307.44,
+1314.3
+],
+"at": 1267.82,
+"out": 1320.3
+},
+{
+"k": "versus",
+"title": "THE SAME CUTLET",
+"L": {
+"label": "THE RESTAURANT",
+"val": "$30",
+"h": 0.95,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"R": {
+"label": "YOUR KITCHEN",
+"val": "$4",
+"h": 0.18,
+"col": "#5fd38a",
+"mark": "ok"
+},
+"at": 1320.58,
+"out": 1326.58
+},
+{
+"k": "ask",
+"at": 1328.94,
+"out": 1342.94
+},
+{
+"k": "next",
+"at": 1343.82,
+"out": 1348.82
+}
+],
+"cta1": {
+"desc": 96.34,
+"end": 102.34
+},
+"cta2": {
+"desc": 1336.58,
+"end": 1342.58
+},
+"cta3": {
+"desc": 1343.82,
+"end": 1348.82
+},
+"end": 1356.36,
+"st": {
+"fire": [
+[
+0,
+1356.36
+]
+],
+"hay": [
+[
+0,
+1356.36
+]
+],
+"pot": [
+[
+630.859,
+990.938
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+1069.477,
+1123.837
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "THE 10 TRICKS",
+"recap": [
+"Boneless loin · ½ inch · natural",
+"Pound to ¼ inch in a bag",
+"Notch the fat",
+"Salt right before breading",
+"3 plates · dry hand, wet hand",
+"Don't press · scoop, shake, lift",
+"½ inch of fat + lard",
+"330-340 °F · crumb test",
+"Rock the pan",
+"Rack, not paper · lemon"
+],
+"ask": [
+"What did your mother or grandmother make on Sundays?",
+"The one dish that meant it was Sunday",
+"Tell me in the comments · I read every one"
+],
+"next": [
+"NEXT TIME",
+"More old butcher tricks · some I never told anybody"
+],
+"lower": [
+45.42,
+51.42
+]
+}
+}
