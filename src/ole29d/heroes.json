@@ -1,0 +1,255 @@
+[
+{
+"k": "d_mud",
+"at": 4.7,
+"out": 14.0
+},
+{
+"k": "d_jobs",
+"at": 22.5,
+"out": 31.4
+},
+{
+"k": "d_grid",
+"at": 38.6,
+"out": 50.6
+},
+{
+"k": "d_seal",
+"at": 56.6,
+"out": 66.6
+},
+{
+"k": "d_receipt",
+"at": 88.6,
+"out": 98.8
+},
+{
+"k": "d_flap",
+"at": 105.6,
+"out": 116.8
+},
+{
+"k": "d_micro",
+"at": 140.6,
+"out": 150.4
+},
+{
+"k": "d_chain",
+"at": 156.6,
+"out": 168.6
+},
+{
+"k": "d_cubes",
+"at": 205.6,
+"out": 218.6
+},
+{
+"k": "d_swell",
+"at": 240.6,
+"out": 252.6
+},
+{
+"k": "d_palm",
+"at": 274.6,
+"out": 284.6
+},
+{
+"k": "d_slide",
+"at": 290.6,
+"out": 303.6
+},
+{
+"k": "d_flip",
+"at": 308.6,
+"out": 319.6
+},
+{
+"k": "d_rail",
+"at": 356.6,
+"out": 366.6
+},
+{
+"k": "d_toss",
+"at": 372.6,
+"out": 384.48
+},
+{
+"k": "d_spoon",
+"at": 390.6,
+"out": 402.6
+},
+{
+"k": "d_italy",
+"at": 456.6,
+"out": 466.52
+},
+{
+"k": "d_crowd",
+"at": 504.6,
+"out": 516.6
+},
+{
+"k": "d_wrap",
+"at": 539.6,
+"out": 550.6
+},
+{
+"k": "d_greasecan",
+"at": 604.6,
+"out": 615.6
+},
+{
+"k": "d_smash",
+"at": 636.6,
+"out": 647.6
+},
+{
+"k": "d_pierogi",
+"at": 685.6,
+"out": 698.6
+},
+{
+"k": "d_burn",
+"at": 703.6,
+"out": 714.6
+},
+{
+"k": "d_postcard",
+"at": 751.6,
+"out": 761.6
+},
+{
+"k": "d_shrink",
+"at": 782.6,
+"out": 793.6
+},
+{
+"k": "d_tally",
+"at": 830.6,
+"out": 841.6
+},
+{
+"k": "d_bread",
+"at": 876.6,
+"out": 887.46
+},
+{
+"k": "d_cleanout",
+"at": 943.6,
+"out": 955.6
+},
+{
+"k": "d_chalk",
+"at": 994.6,
+"out": 1005.6
+},
+{
+"k": "d_bagbox",
+"at": 1047.6,
+"out": 1058.6
+},
+{
+"k": "d_three",
+"at": 1080.6,
+"out": 1093.6
+},
+{
+"k": "d_five",
+"at": 1110.5,
+"out": 1152.9,
+"imgs": [
+"n_cinco_error1",
+"n_cinco_error2",
+"n_cinco_error3",
+"n_cinco_error4",
+"n_cinco_error5"
+],
+"cards": [
+[
+1117.6,
+"A cold pan"
+],
+[
+1128.4,
+"Too much grease"
+],
+[
+1134.4,
+"A crowded pan"
+],
+[
+1139.6,
+"Throwing out leftovers"
+],
+[
+1147.7,
+"No plan for tomorrow"
+]
+]
+},
+{
+"k": "d_onefire",
+"at": 1158.6,
+"out": 1169.6
+},
+{
+"k": "d_family",
+"at": 1208.6,
+"out": 1220.6
+},
+{
+"k": "d_size",
+"at": 1231.6,
+"out": 1236.6
+},
+{
+"k": "d_count",
+"at": 1293.6,
+"out": 1303.6
+},
+{
+"k": "d_recap",
+"at": 1316.4,
+"out": 1364.0,
+"imgs": [
+"r1_avena",
+"r2_panqueques",
+"r3_hash",
+"r4_mush",
+"r5_pierogi",
+"r6_haluski",
+"r7_limpieza"
+],
+"cards": [
+[
+1319.5,
+"Day 1 · Fried oatmeal"
+],
+[
+1325.5,
+"Day 2 · Pancakes"
+],
+[
+1329.8,
+"Day 3 · Potato hash"
+],
+[
+1334.8,
+"Day 4 · Fried mush"
+],
+[
+1339.9,
+"Day 5 · Lazy pierogi"
+],
+[
+1344.9,
+"Day 6 · Haluski"
+],
+[
+1352.7,
+"Day 7 · Clean-out supper"
+]
+]
+}
+]
