@@ -3,20 +3,31 @@
 import React, { useMemo } from "react";
 import { continueRender, delayRender } from "remotion";
 import * as THREE from "three";
+import { useThree } from "@react-three/fiber";
 import { rbox } from "./fx3d";
 import { cl, Frijol, lathe, M, rn, V3 } from "./estudio3d";
 
 const P2 = Math.PI / 2;
 // foto real como textura (bloquea el cuadro hasta que carga: nunca sale una textura vacía)
 const fotoCache = new Map<string, THREE.Texture>();
+const fotoOk = new Set<string>(), fotoEspera = new Map<string, (() => void)[]>();
+const fotoListo = (src: string) => { fotoOk.add(src); for (const f of fotoEspera.get(src) ?? []) f(); fotoEspera.delete(src); };
+// 30-oct: el cuadro 3D se dibujaba ANTES de que cargara la textura y nadie lo redibujaba → foto negra (destello en «mesa» de d).
+// Ahora: si la textura no está lista, se frena el cuadro, y al cargar se sube a la GPU y se REDIBUJA antes de soltarlo.
 export const useFoto = (src: string) => {
-  const [hd] = React.useState(() => (fotoCache.has(src) ? null : delayRender("foto " + src)));
+  const { gl, advance } = useThree((s) => ({ gl: s.gl, advance: s.advance }));
+  const [hd] = React.useState(() => (fotoOk.has(src) ? null : delayRender("foto " + src)));
   return useMemo(() => {
     let t = fotoCache.get(src);
     if (!t) {
-      t = new THREE.TextureLoader().load(src, () => { if (hd !== null) continueRender(hd); }, undefined, () => { if (hd !== null) continueRender(hd); });
+      t = new THREE.TextureLoader().load(src, () => fotoListo(src), undefined, () => fotoListo(src));
       t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; fotoCache.set(src, t);
-    } else if (hd !== null) continueRender(hd);
+    }
+    const tt = t;
+    if (hd !== null) {
+      const soltar = () => { try { gl.initTexture(tt); } catch { /* */ } requestAnimationFrame(() => { advance(performance.now()); requestAnimationFrame(() => continueRender(hd)); }); };
+      if (fotoOk.has(src)) soltar(); else fotoEspera.set(src, [...(fotoEspera.get(src) ?? []), soltar]);
+    }
     return t;
   }, [src, hd]);
 };
