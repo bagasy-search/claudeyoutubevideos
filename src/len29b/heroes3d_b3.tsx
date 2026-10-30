@@ -128,7 +128,7 @@ const swirlTexB = () => tex.text("swirlb", 512, 512, (g) => {
   for (let k = 0; k < 5; k++) { g.strokeStyle = `rgba(235,250,255,${0.3 + 0.1 * k})`; g.lineWidth = 9 - k; g.beginPath(); for (let a = 0; a < 13; a += 0.05) { const r = 250 - a * 18; const aa = a + k * 2 * PI / 5; g.lineTo(Math.cos(aa) * r, Math.sin(aa) * r); } g.stroke(); }
 });
 export const HTwinVortex: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="iris" floor="dark" wall="tile"
-  cam={{ at: [0, -0.02, 0], az: [-0.1, 0.12], el: [0.78, 0.64], r: [1.2, 1.0], fov: 30 }}
+  cam={{ at: [0, 0.07, 0], az: [-0.1, 0.12], el: [0.24, 0.18], r: [1.3, 1.12], fov: 30 }}
   over={(tt) => <Head tt={tt} kick="" title="BOTH SIDES AT ONCE" col={ICE} />}>{(tt) => {
   const go = eio(tt, 0.8, 5.6), lvl = lerp(-0.02, -0.112, go), fun = cl((tt - 0.9) / 0.8) * (1 - cl((tt - 5.4) / 0.4)), W = 0.42, D = 0.36, FL = -0.12;
   return <group position={[0, 0.125, 0]}>
@@ -141,7 +141,7 @@ export const HTwinVortex: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D
         {/* la bacha: piso y paredes de acero cepillado */}
         <mesh position={[0, FL, 0]} rotation={[-PI / 2, 0, 0]} receiveShadow><planeGeometry args={[W, D]} />{M.steel({ col: "#a9aeb3" })}</mesh>
         {[-1, 1].map((s) => <mesh key={"x" + s} position={[s * W / 2, FL / 2, 0]} rotation={[0, s * PI / 2, 0]}><planeGeometry args={[D, -FL]} />{M.steel({ col: "#9da2a7", side: THREE.DoubleSide })}</mesh>)}
-        {[-1, 1].map((s) => <mesh key={"z" + s} position={[0, FL / 2, s * D / 2]}><planeGeometry args={[W, -FL]} />{M.steel({ col: "#9da2a7", side: THREE.DoubleSide })}</mesh>)}
+        {[-1].map((s) => <mesh key={"z" + s} position={[0, FL / 2, s * D / 2]}><planeGeometry args={[W, -FL]} />{M.steel({ col: "#9da2a7", side: THREE.DoubleSide })}</mesh>)}
         {/* el desagüe: aro cromado y boca oscura */}
         <mesh position={[0, FL + 0.003, 0]} rotation={[PI / 2, 0, 0]}><torusGeometry args={[0.032, 0.005, 10, 36]} />{M.chrome()}</mesh>
         <mesh position={[0, FL + 0.002, 0]} rotation={[-PI / 2, 0, 0]}><circleGeometry args={[0.03, 32]} />{M.matte({ col: "#050607" })}</mesh>
