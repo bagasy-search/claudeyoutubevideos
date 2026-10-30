@@ -303,7 +303,7 @@ export const Mistake: React.FC<{ t: number; at: number; n: number; txt: string; 
 export const AskCard: React.FC<{ t: number; at: number; out: number; q: [string, string, string]; side?: boolean }> = ({ t, at, out, q, side }) => {
   if (vis(t, at, out) <= 0.01) return null;
   const r = phys(t, at + 0.5, 6, 0.6);
-  return <div style={{ position: "absolute", left: side ? 70 : 960, top: side ? 820 : 300, transform: side ? "translateY(-50%) scale(.66)" : "translate(-50%,-50%)", transformOrigin: "0 50%" }}>
+  return <div style={{ position: "absolute", left: side ? 70 : 960, top: side ? 820 : 850, transform: side ? "translateY(-50%) scale(.66)" : "translate(-50%,-50%)", transformOrigin: "0 50%" }}>
     <div style={rise(t, at, out)}>
       <Panel style={{ width: 1060, padding: "30px 44px 34px" }}>
         <Kicker txt={q[0]} w={ei(t, at, at + 0.6)} />

@@ -145,7 +145,10 @@ const Pine: React.FC<{ p: V; s: number }> = ({ p, s }) => <group position={p} sc
 </group>;
 
 // ===================================================================================================
-export const World: React.FC<{ t: number }> = ({ t }) => {
+// 30-oct: en el farm el cuadro 2197 (73,23 s) sale con la cámara atravesando la pared (en local no): ese cuadro usa el anterior
+const MALOS = new Set([2197]);
+export const World: React.FC<{ t: number }> = ({ t: t0 }) => {
+  const t = MALOS.has(Math.round(t0 * 30)) ? t0 - 1 / 30 : t0;
   const tx = useTextures(), ct = useCookTex();
   const s = ST(t);
   // parpadeo del fuego lento (0,2-0,35 Hz combinados): nada de destellos
