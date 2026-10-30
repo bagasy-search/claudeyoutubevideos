@@ -1,0 +1,601 @@
+{
+"segs": [
+[
+3.52,
+7.94,
+"shot",
+"f01_iglesia_platos"
+],
+[
+7.94,
+12.94,
+"shot",
+"f02_pies_cama"
+],
+[
+20.14,
+28.14,
+"shot",
+"v02"
+],
+[
+37.15,
+42.15,
+"shot",
+"f03_loretta_silla"
+],
+[
+45.1,
+49.5,
+"shot",
+"f04_mujeres_cocina"
+],
+[
+55.68,
+61.68,
+"shot",
+"f05_bolsa_simple"
+],
+[
+106.98,
+111.2,
+"shot",
+"f07_loretta_delantal"
+],
+[
+111.2,
+116.97,
+"shot",
+"f08_palangana"
+],
+[
+129.2,
+133.81,
+"shot",
+"f09_mano_revuelve"
+],
+[
+138.25,
+146.25,
+"shot",
+"v01"
+],
+[
+156.38,
+162.38,
+"shot",
+"f10_codo_agua"
+],
+[
+172.14,
+178.14,
+"shot",
+"f11_agua_sedosa"
+],
+[
+199.76,
+202.57,
+"shot",
+"f12_coro"
+],
+[
+214.3,
+216.58,
+"shot",
+"f13_nene_escalera"
+],
+[
+221.72,
+227.72,
+"shot",
+"f14_nene_mano"
+],
+[
+239.42,
+246.42,
+"shot",
+"f15_nene_taza_libro"
+],
+[
+257.38,
+263.38,
+"shot",
+"f16_aguja_astilla"
+],
+[
+294.3,
+296.98,
+"shot",
+"f17_cena_funeral"
+],
+[
+303.5,
+309.5,
+"shot",
+"f18_horno_quemado"
+],
+[
+319.76,
+327.76,
+"shot",
+"v04"
+],
+[
+352.75,
+358.75,
+"shot",
+"f19_frasco_pileta"
+],
+[
+375.96,
+381.96,
+"shot",
+"f20_azulejo_1956"
+],
+[
+389.16,
+395.16,
+"shot",
+"f21_edna_puerta"
+],
+[
+404.72,
+412.72,
+"shot",
+"v05"
+],
+[
+424.33,
+430.33,
+"shot",
+"f22_anillo_banera"
+],
+[
+441.89,
+447.56,
+"shot",
+"f23_edna_mira"
+],
+[
+460.95,
+464.1,
+"shot",
+"f24_manos_tierra"
+],
+[
+474.13,
+479.6,
+"shot",
+"f25_june_manos"
+],
+[
+519.16,
+525.16,
+"shot",
+"f26_frasco_puerta"
+],
+[
+537.09,
+542.09,
+"shot",
+"f27_agua_humea"
+],
+[
+612.85,
+618.85,
+"shot",
+"f28_zapato_domingo"
+],
+[
+630.47,
+636.47,
+"shot",
+"f29_enfermera"
+],
+[
+690.41,
+696.41,
+"shot",
+"f30_nieve_porche"
+],
+[
+708.82,
+714.82,
+"shot",
+"f31_banera_vapor"
+],
+[
+749.81,
+755.14,
+"shot",
+"f32_barra_agarre"
+],
+[
+767.55,
+769.84,
+"shot",
+"f33_manos_rigidas"
+],
+[
+778.49,
+784.49,
+"shot",
+"f34_palangana_manos"
+],
+[
+840.63,
+846.63,
+"shot",
+"f35_rosas_porche"
+],
+[
+849.03,
+852.05,
+"shot",
+"f36_helecho_sala"
+],
+[
+864.87,
+867.79,
+"shot",
+"f37_vainilla"
+],
+[
+892.79,
+898.79,
+"shot",
+"f38_nietos_arroyo"
+],
+[
+903.17,
+905.68,
+"shot",
+"f39_tobillos"
+],
+[
+966.87,
+973.07,
+"shot",
+"v06"
+],
+[
+994.66,
+1000.66,
+"shot",
+"f40_tyler_vidrio"
+],
+[
+1039.09,
+1042.84,
+"shot",
+"f41_bazar"
+],
+[
+1056.19,
+1059.12,
+"shot",
+"v07"
+],
+[
+1086.93,
+1091.96,
+"shot",
+"f42_mesa_frascos"
+],
+[
+1138.75,
+1144.16,
+"shot",
+"f43_helecho_ventana"
+],
+[
+1218.05,
+1224.05,
+"shot",
+"f44_rosas_rosa"
+],
+[
+1225.95,
+1230.04,
+"shot",
+"f45_poda_rosas"
+],
+[
+1285.58,
+1291.58,
+"shot",
+"f46_morrones_galpon"
+],
+[
+1336.7,
+1342.7,
+"shot",
+"f47_bolsas_freezer"
+],
+[
+1360.7,
+1364.67,
+"shot",
+"f48_pava_domingo"
+],
+[
+1415.05,
+1421.05,
+"shot",
+"f49_harold_tomates"
+],
+[
+1437.84,
+1443.84,
+"shot",
+"f50_forrajeria"
+],
+[
+1476.04,
+1477.74,
+"shot",
+"v08"
+],
+[
+1500.02,
+1506.02,
+"shot",
+"f51_frascos_tomate"
+],
+[
+1550.23,
+1558.23,
+"shot",
+"v09"
+],
+[
+1614.66,
+1622.66,
+"shot",
+"v10"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 106.98,
+"out": 111.98
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE SUNDAY BASIN",
+"at": 108.44,
+"out": 111.64
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE SPLINTER CUP",
+"at": 210.94,
+"out": 214.14
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE SCORCHED POT",
+"at": 290.44,
+"out": 293.64
+},
+{
+"k": "step",
+"n": 4,
+"name": "GROUT & TUB RING",
+"at": 372.38,
+"out": 375.58
+},
+{
+"k": "step",
+"n": 5,
+"name": "GARDENER'S HAND SCRUB",
+"at": 457.73,
+"out": 460.93
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE STUBBORN TOENAIL",
+"at": 604.99,
+"out": 608.19
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE SNOW SHOVEL BATH",
+"at": 681.79,
+"out": 684.99
+},
+{
+"k": "step",
+"n": 8,
+"name": "STIFF MORNING HANDS",
+"at": 764.57,
+"out": 767.77
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE ITCH COMPRESS",
+"at": 886.21,
+"out": 889.41
+},
+{
+"k": "step",
+"n": 10,
+"name": "FROST ON THE WINDOW",
+"at": 949.29,
+"out": 952.49
+},
+{
+"k": "step",
+"n": 11,
+"name": "BAZAAR BATH JARS",
+"at": 1035.49,
+"out": 1038.69
+},
+{
+"k": "step",
+"n": 12,
+"name": "THE YELLOW HOUSEPLANT",
+"at": 1136.35,
+"out": 1139.55
+},
+{
+"k": "step",
+"n": 13,
+"name": "ROSES AT PRUNING",
+"at": 1209.53,
+"out": 1212.73
+},
+{
+"k": "step",
+"n": 14,
+"name": "PEPPERS DROPPING FLOWERS",
+"at": 1281.74,
+"out": 1284.94
+},
+{
+"k": "step",
+"n": 15,
+"name": "HAROLD'S TOMATOES",
+"at": 1406.78,
+"out": 1409.98
+},
+{
+"k": "deal",
+"at": 529.79,
+"out": 530.79
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Water too hot",
+"at": 537.09,
+"out": 539.29
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "On every plant, just in case",
+"at": 546.73,
+"out": 548.93
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Believing it pulls toxins",
+"at": 565.61,
+"out": 567.81
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Diabetic feet, no doctor",
+"at": 576.55,
+"out": 578.75
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Bag open in a steamy bathroom",
+"at": 584.87,
+"out": 589.37
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1554.9
+},
+{
+"at": 1559.24
+},
+{
+"at": 1562.32
+},
+{
+"at": 1566.2
+},
+{
+"at": 1570.16
+},
+{
+"at": 1573.64
+},
+{
+"at": 1578.16
+},
+{
+"at": 1582.64
+},
+{
+"at": 1586.26
+},
+{
+"at": 1588.52
+},
+{
+"at": 1591.92
+},
+{
+"at": 1595.72
+},
+{
+"at": 1597.9
+},
+{
+"at": 1601.24
+},
+{
+"at": 1604.3
+}
+],
+"at": 1550.08,
+"out": 1606.3
+},
+{
+"k": "ask",
+"at": 1616.6,
+"out": 1624.6
+}
+],
+"end": 1660.18,
+"txt": {
+"recapTitle": "ONE $4 BAG · 15 JOBS",
+"recap": [
+"Sunday foot basin",
+"Splinter cup",
+"Scorched pot",
+"Grout & tub paste",
+"Hand scrub",
+"Toenail soak",
+"Snow shovel bath",
+"Morning dishpan",
+"Cold itch rag",
+"Window frost",
+"Bazaar bath jars",
+"Yellow houseplant",
+"Roses in spring",
+"Pepper flowers",
+"Harold's tomatoes"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"What did YOUR mother",
+"use Epsom salt for?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+36.0,
+44.0
+]
+}
+}

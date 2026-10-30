@@ -1,0 +1,5 @@
+import React from "react";
+import { Composition, registerRoot } from "remotion";
+import { HeroesOnly, END } from "./lhh29a/Body";
+const Root = () => <Composition id="Heroes" component={HeroesOnly} durationInFrames={Math.round(END * 30)} fps={30} width={1920} height={1080} />;
+registerRoot(Root);
