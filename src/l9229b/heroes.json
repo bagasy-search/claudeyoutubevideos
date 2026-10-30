@@ -1,0 +1,220 @@
+[
+{
+"k": "dollyBeep",
+"mode": "iris",
+"at": 4.15,
+"out": 14.15
+},
+{
+"k": "tapeSteps",
+"mode": "wipe",
+"at": 20.66,
+"out": 32.16
+},
+{
+"k": "pianoRamp",
+"mode": "drop",
+"at": 53.01,
+"out": 64.51
+},
+{
+"k": "pineappleNote",
+"mode": "split",
+"at": 87.26,
+"out": 97.27
+},
+{
+"k": "houseRows",
+"mode": "iris",
+"at": 170.69,
+"out": 182.07
+},
+{
+"k": "kringleIce",
+"mode": "drop",
+"at": 189.07,
+"out": 199.58
+},
+{
+"k": "ballCrack",
+"mode": "split",
+"at": 206.22,
+"out": 217.72
+},
+{
+"k": "mailFan",
+"mode": "wipe",
+"at": 223.33,
+"out": 233.23
+},
+{
+"k": "wheelName",
+"mode": "iris",
+"at": 254.01,
+"out": 265.2
+},
+{
+"k": "streetCard",
+"mode": "drop",
+"at": 285.49,
+"out": 297.76
+},
+{
+"k": "paperStack",
+"mode": "split",
+"at": 355.47,
+"out": 361.38
+},
+{
+"k": "curtainSun",
+"mode": "wipe",
+"at": 402.71,
+"out": 413.17
+},
+{
+"k": "keySwap",
+"mode": "iris",
+"at": 417.74,
+"out": 429.24
+},
+{
+"k": "floodJars",
+"mode": "drop",
+"at": 530.22,
+"out": 541.72
+},
+{
+"k": "ladderUp",
+"mode": "split",
+"at": 628.79,
+"out": 640.29
+},
+{
+"k": "sugarBack",
+"mode": "wipe",
+"at": 696.34,
+"out": 707.02
+},
+{
+"k": "blowerArc",
+"mode": "iris",
+"at": 728.56,
+"out": 740.06
+},
+{
+"k": "fenceRise",
+"mode": "drop",
+"at": 765.63,
+"out": 772.57
+},
+{
+"k": "chairUnfold",
+"mode": "split",
+"at": 811.15,
+"out": 818.84
+},
+{
+"k": "twoCups",
+"mode": "wipe",
+"at": 857.91,
+"out": 869.41
+},
+{
+"k": "mercuryDrop",
+"mode": "iris",
+"at": 909.93,
+"out": 917.64
+},
+{
+"k": "pilotRelight",
+"mode": "drop",
+"at": 938.37,
+"out": 948.86
+},
+{
+"k": "garbageTuesday",
+"mode": "split",
+"at": 987.35,
+"out": 997.88
+},
+{
+"k": "guestBook",
+"mode": "wipe",
+"at": 1053.39,
+"out": 1064.89
+},
+{
+"k": "signNails",
+"mode": "iris",
+"bt": [
+4.54,
+7.13,
+10.62
+],
+"at": 1186.81,
+"out": 1199.03
+},
+{
+"k": "sixMiles",
+"mode": "drop",
+"at": 1259.61,
+"out": 1265.46
+},
+{
+"k": "hourglassFlip",
+"mode": "split",
+"at": 1305.88,
+"out": 1311.73
+},
+{
+"k": "shovelPath",
+"mode": "wipe",
+"at": 1351.17,
+"out": 1362.45
+},
+{
+"k": "noteBag",
+"mode": "iris",
+"at": 1367.81,
+"out": 1380.31
+},
+{
+"k": "stopwatch40",
+"mode": "drop",
+"at": 1401.39,
+"out": 1411.23
+},
+{
+"k": "chiliTower",
+"mode": "split",
+"at": 1461.89,
+"out": 1473.39
+},
+{
+"k": "bowlsTaken",
+"mode": "wipe",
+"at": 1496.47,
+"out": 1505.94
+},
+{
+"k": "signSwing",
+"mode": "iris",
+"at": 1529.31,
+"out": 1539.51
+},
+{
+"k": "porchLights",
+"mode": "drop",
+"bt": [
+2.64,
+4.08,
+5.39,
+7.33,
+8.25,
+9.78,
+10.9
+],
+"at": 1582.13,
+"out": 1594.63
+}
+]
