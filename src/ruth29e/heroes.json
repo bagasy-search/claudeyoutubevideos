@@ -1,0 +1,294 @@
+[
+ {
+  "k": "rootedRows",
+  "mode": "iris",
+  "at": 20.59,
+  "out": 32.56
+ },
+ {
+  "k": "hoofTrail",
+  "mode": "wipe",
+  "at": 38.65,
+  "out": 47.94
+ },
+ {
+  "k": "trailerNight",
+  "mode": "drop",
+  "at": 69.19,
+  "out": 78.77
+ },
+ {
+  "k": "shipLanding",
+  "mode": "drop",
+  "at": 117.57,
+  "out": 128.49
+ },
+ {
+  "k": "marchTrail",
+  "mode": "split",
+  "at": 134.61,
+  "out": 146.11
+ },
+ {
+  "k": "earNotch",
+  "mode": "iris",
+  "at": 169.93,
+  "out": 179.84
+ },
+ {
+  "k": "acornForest",
+  "mode": "wipe",
+  "at": 185.6,
+  "out": 197.1
+ },
+ {
+  "k": "boarCompare",
+  "mode": "iris",
+  "at": 216.65,
+  "out": 227.66
+ },
+ {
+  "k": "brokenFence",
+  "mode": "drop",
+  "at": 232.41,
+  "out": 243.91
+ },
+ {
+  "k": "hybridMix",
+  "mode": "split",
+  "at": 249.85,
+  "out": 260.5
+ },
+ {
+  "k": "huntPoster",
+  "mode": "iris",
+  "at": 283.21,
+  "out": 294.71
+ },
+ {
+  "k": "stateJump",
+  "mode": "wipe",
+  "at": 317.96,
+  "out": 329.46
+ },
+ {
+  "k": "interstate",
+  "mode": "wipe",
+  "at": 335.15,
+  "out": 345.98
+ },
+ {
+  "k": "sowCalendar",
+  "mode": "split",
+  "bt": [
+   2.62,
+   8.12,
+   9.84
+  ],
+  "at": 367.24,
+  "out": 378.74
+ },
+ {
+  "k": "twoThirdsGauge",
+  "mode": "drop",
+  "at": 386.27,
+  "out": 397.67
+ },
+ {
+  "k": "emptyThrone",
+  "mode": "iris",
+  "at": 401.74,
+  "out": 413.24
+ },
+ {
+  "k": "snoutDig",
+  "mode": "wipe",
+  "at": 418.79,
+  "out": 429.68
+ },
+ {
+  "k": "cropPlate",
+  "mode": "drop",
+  "at": 434.68,
+  "out": 445.96
+ },
+ {
+  "k": "billionMeter",
+  "mode": "split",
+  "at": 450.85,
+  "out": 462.35
+ },
+ {
+  "k": "germTag",
+  "mode": "drop",
+  "at": 469.33,
+  "out": 480.18
+ },
+ {
+  "k": "spinachBag",
+  "mode": "iris",
+  "at": 501.98,
+  "out": 513.48
+ },
+ {
+  "k": "fenceGap",
+  "mode": "wipe",
+  "at": 519.68,
+  "out": 530.21
+ },
+ {
+  "k": "nestRaid",
+  "mode": "iris",
+  "at": 537.65,
+  "out": 547.93
+ },
+ {
+  "k": "oakStop",
+  "mode": "split",
+  "at": 552.87,
+  "out": 563.49
+ },
+ {
+  "k": "bountyBoard",
+  "mode": "drop",
+  "bt": [
+   5.57,
+   9.9
+  ],
+  "at": 582.85,
+  "out": 594.35
+ },
+ {
+  "k": "heliView",
+  "mode": "iris",
+  "at": 635.81,
+  "out": 647.31
+ },
+ {
+  "k": "scatterBurst",
+  "mode": "wipe",
+  "at": 653.32,
+  "out": 663.11
+ },
+ {
+  "k": "baitFeeder",
+  "mode": "wipe",
+  "bt": [
+   5.51,
+   9.9
+  ],
+  "at": 669.33,
+  "out": 680.83
+ },
+ {
+  "k": "threeStrikes",
+  "mode": "split",
+  "at": 704.8,
+  "out": 714.4
+ },
+ {
+  "k": "sounderFamily",
+  "mode": "drop",
+  "at": 720.32,
+  "out": 731.82
+ },
+ {
+  "k": "trapShy",
+  "mode": "iris",
+  "at": 737.86,
+  "out": 748.75
+ },
+ {
+  "k": "corralGate",
+  "mode": "wipe",
+  "bt": [
+   1.86,
+   4.71,
+   9.9
+  ],
+  "at": 752.97,
+  "out": 764.47
+ },
+ {
+  "k": "trailCam",
+  "mode": "drop",
+  "at": 771.51,
+  "out": 783.01
+ },
+ {
+  "k": "programMap",
+  "mode": "split",
+  "at": 803.14,
+  "out": 814.64
+ },
+ {
+  "k": "propertyLines",
+  "mode": "drop",
+  "at": 853.75,
+  "out": 863.01
+ },
+ {
+  "k": "creekNeighbors",
+  "mode": "iris",
+  "at": 887.57,
+  "out": 895.34
+ },
+ {
+  "k": "hotWire",
+  "mode": "wipe",
+  "at": 917.2,
+  "out": 927.61
+ },
+ {
+  "k": "heroSwap",
+  "mode": "iris",
+  "at": 938.63,
+  "out": 946.77
+ },
+ {
+  "k": "noTransport",
+  "mode": "split",
+  "at": 973.57,
+  "out": 979.42
+ },
+ {
+  "k": "hogTrack",
+  "mode": "drop",
+  "bt": [
+   2.2,
+   3.35,
+   4.99,
+   6.5,
+   7.28,
+   8.3,
+   9.4,
+   10.23
+  ],
+  "at": 1061.74,
+  "out": 1073.57
+ },
+ {
+  "k": "tuskCards",
+  "mode": "iris",
+  "bt": [
+   10.1
+  ],
+  "at": 1109.84,
+  "out": 1121.54
+ },
+ {
+  "k": "trailerRecap",
+  "mode": "wipe",
+  "at": 1167.19,
+  "out": 1173.22
+ },
+ {
+  "k": "steeringWheel",
+  "mode": "wipe",
+  "bt": [
+   7.2
+  ],
+  "at": 1216.15,
+  "out": 1224.95
+ }
+]
