@@ -71,11 +71,17 @@ export const Stage: React.FC<{ t: number; h: H; mode: Mode; tone?: "warm" | "col
     <AbsoluteFill style={{ background: `conic-gradient(from 168deg at 50% -12%, transparent 0deg, rgba(255,226,180,${0.05 + 0.015 * Math.sin(tt * 0.5)}) 12deg, transparent 24deg)`, mixBlendMode: "screen" }} />
     <AbsoluteFill style={{ background: "radial-gradient(ellipse 120% 90% at 50% 50%, transparent 55%, rgba(0,0,0,.55))" }} />
     {table && <Table tt={tt} tone={tone} />}
+    {!table ? (() => {
+      // (30-oct) sin mesa (Foto): cámara 2D equivalente. Con perspective/preserve-3d la tarjeta era una capa aparte y con swangle
+      // a veces la captura salía ANTES de dibujarla (la tarjeta desaparecía 1 cuadro: ~100 destellos por video)
+      const Z = (-300 * (1 - inn) - 650 * xo + 18 * Math.sin(tt * 0.35) + 110 * cl(tt / Math.max(4, out - at))) * cam, sc = 2200 / (2200 - Z);
+      return <AbsoluteFill style={{ opacity: cl(inn * 1.6) * (1 - xo * 0.7), transform: `translateX(${-26 * Math.sin(tt * 0.3) * cam}px) scale(${sc}) rotate(${(0.25 * Math.sin(tt * 0.22 + 0.5) - 1.2 * xo) * cam}deg)` }}>{children(tt)}</AbsoluteFill>;
+    })() :
     <AbsoluteFill style={{ perspective: 2200, opacity: cl(inn * 1.6) * (1 - xo * 0.7) }}>
       <AbsoluteFill style={{ transformStyle: "preserve-3d", transform: `translateZ(${(-300 * (1 - inn) - 650 * xo + 18 * Math.sin(tt * 0.35) + 110 * cl(tt / Math.max(4, out - at))) * cam}px) translateX(${-26 * Math.sin(tt * 0.3) * cam}px) rotateY(${(7 * (1 - inn) + 1.8 * Math.sin(tt * 0.22 + 0.5) - 6 * xo - 2.4 * cl(tt / Math.max(4, out - at))) * cam}deg) rotateX(${(1.2 * Math.sin(tt * 0.18) + 6 * xo) * cam}deg)` }}>
         {children(tt)}
       </AbsoluteFill>
-    </AbsoluteFill>
+    </AbsoluteFill>}
     <AbsoluteFill style={{ pointerEvents: "none" }}>{Array.from({ length: 14 }, (_, i) => {
       const s = 6 + (i * 37) % 22, x = ((i * 271 + tt * (8 + i % 5) * 4) % 2100) - 90, y = 80 + (i * 163) % 920 + 30 * Math.sin(tt * 0.4 + i);
       return <div key={i} style={{ position: "absolute", left: x, top: y, width: s, height: s, borderRadius: "50%", background: "rgba(255,230,190,.5)", filter: `blur(${s / 3}px)`, opacity: 0.25 + 0.2 * Math.sin(tt * 0.7 + i * 1.3) }} />;
