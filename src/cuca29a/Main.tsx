@@ -91,7 +91,8 @@ const Planos: React.FC<{ t: number }> = ({ t }) => {
 const Capa: React.FC<{ t: number }> = ({ t }) => {
   const k = AW.findIndex((w) => t >= w.ms - 0.35 && t < w.me + 0.45);
   if (k < 0) return <Planos t={t} />;
-  const w = AW[k], st = k % 3;
+  // 30-oct: la ventana 80 (1348 s) con ZoomThru cuelga el tramo 183 del farm 7 veces seguidas → esa entrada va con Whip
+  const w = AW[k], st = k === 80 ? 1 : k % 3;
   if (w.ms < 0.3 && t < w.me - 0.4) return <AvatarR t={t} />; // el video arranca en la cara
   const under = <Planos t={t} />, av = <AvatarR t={t} />;
   if (t < w.ms + 0.3) {
