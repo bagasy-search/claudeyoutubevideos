@@ -1,0 +1,647 @@
+{
+"segs": [
+[
+3.52,
+10.78,
+"shot",
+"v01"
+],
+[
+10.78,
+14.01,
+"shot",
+"v02"
+],
+[
+32.77,
+35.14,
+"shot",
+"f01_crewhotels"
+],
+[
+35.14,
+40.14,
+"shot",
+"f02_icemachine"
+],
+[
+47.52,
+53.52,
+"shot",
+"f03_rollerbag"
+],
+[
+55.88,
+60.48,
+"shot",
+"f04_oldcouple"
+],
+[
+83.82,
+89.82,
+"shot",
+"f05_coupons"
+],
+[
+113.1,
+119.1,
+"shot",
+"f07_nightmanager"
+],
+[
+131.41,
+137.41,
+"shot",
+"f08_idcard"
+],
+[
+147.0,
+153.0,
+"shot",
+"f09_desert"
+],
+[
+161.24,
+167.24,
+"shot",
+"f10_lobbypc"
+],
+[
+175.39,
+180.52,
+"shot",
+"f11_signup"
+],
+[
+180.52,
+186.52,
+"shot",
+"f12_rates"
+],
+[
+192.9,
+198.9,
+"shot",
+"f13_clubcards"
+],
+[
+242.49,
+248.49,
+"shot",
+"f14_regcard"
+],
+[
+260.76,
+266.76,
+"shot",
+"f15_strip"
+],
+[
+274.79,
+276.18,
+"shot",
+"f17_poolclosed"
+],
+[
+276.18,
+282.18,
+"shot",
+"f16_flipflops"
+],
+[
+311.32,
+319.32,
+"shot",
+"v03"
+],
+[
+328.85,
+334.85,
+"shot",
+"f18_ask"
+],
+[
+350.32,
+356.32,
+"shot",
+"f19_lastscreen"
+],
+[
+368.6,
+374.6,
+"shot",
+"f20_insulin"
+],
+[
+380.76,
+388.76,
+"shot",
+"v07"
+],
+[
+395.68,
+401.68,
+"shot",
+"f21_minibar"
+],
+[
+410.75,
+415.75,
+"shot",
+"f27_fridge_food"
+],
+[
+427.81,
+435.81,
+"shot",
+"v04"
+],
+[
+443.79,
+446.89,
+"shot",
+"f22_glasses_candy"
+],
+[
+446.89,
+454.89,
+"shot",
+"v05"
+],
+[
+468.95,
+474.95,
+"shot",
+"f23_buffet"
+],
+[
+486.27,
+491.06,
+"shot",
+"f24_elevator"
+],
+[
+515.99,
+521.99,
+"shot",
+"f25_grocery"
+],
+[
+522.53,
+525.27,
+"shot",
+"f26_breakfast_room"
+],
+[
+551.63,
+556.57,
+"shot",
+"f27_fridge_food"
+],
+[
+578.21,
+584.21,
+"shot",
+"f28_valet"
+],
+[
+599.23,
+605.23,
+"shot",
+"f29_garage"
+],
+[
+613.52,
+619.52,
+"shot",
+"f30_parkfly"
+],
+[
+628.93,
+634.93,
+"shot",
+"f31_valetkeys"
+],
+[
+663.77,
+669.77,
+"shot",
+"f32_lobbywait"
+],
+[
+692.3,
+698.3,
+"shot",
+"f33_housekeeping"
+],
+[
+725.74,
+733.74,
+"shot",
+"v08"
+],
+[
+735.05,
+737.97,
+"shot",
+"f34_crossword"
+],
+[
+744.65,
+750.65,
+"shot",
+"f35_tablet"
+],
+[
+778.09,
+784.09,
+"shot",
+"f36_nightstand"
+],
+[
+799.69,
+803.58,
+"shot",
+"f37_notebook"
+],
+[
+810.01,
+816.01,
+"shot",
+"f38_dallas"
+],
+[
+834.73,
+839.59,
+"shot",
+"f39_dialing"
+],
+[
+861.73,
+867.73,
+"shot",
+"f40_charger"
+],
+[
+868.59,
+872.58,
+"shot",
+"f41_tapephone"
+],
+[
+892.11,
+897.69,
+"shot",
+"f42_walker"
+],
+[
+897.69,
+903.69,
+"shot",
+"f43_rollin"
+],
+[
+950.09,
+953.47,
+"shot",
+"f44_writing"
+],
+[
+973.93,
+979.93,
+"shot",
+"f45_tub"
+],
+[
+982.43,
+985.9,
+"shot",
+"f46_elevatorhall"
+],
+[
+1011.63,
+1017.63,
+"shot",
+"f47_bassinet"
+],
+[
+1065.39,
+1071.39,
+"shot",
+"f48_cancelnum"
+],
+[
+1108.73,
+1114.73,
+"shot",
+"f50_clerk"
+],
+[
+1183.17,
+1190.59,
+"shot",
+"v06"
+],
+[
+1214.3,
+1220.3,
+"shot",
+"f51_regcard2"
+],
+[
+1231.79,
+1236.79,
+"shot",
+"f52_debit"
+],
+[
+1266.0,
+1272.0,
+"shot",
+"f53_burn"
+],
+[
+1325.18,
+1329.23,
+"shot",
+"f55_map"
+],
+[
+1333.95,
+1339.95,
+"shot",
+"f56_packing"
+],
+[
+1390.66,
+1392.0,
+"shot",
+"f57_crew80s"
+],
+[
+1408.94,
+1410.81,
+"shot",
+"f58_diner"
+],
+[
+1435.3,
+1441.3,
+"shot",
+"f60_bellman"
+],
+[
+1455.62,
+1460.98,
+"shot",
+"f61_galley"
+],
+[
+1465.48,
+1471.48,
+"shot",
+"f62_website"
+],
+[
+1479.74,
+1484.74,
+"shot",
+"f63_tip"
+],
+[
+1497.67,
+1503.67,
+"shot",
+"f64_shuttle"
+],
+[
+1565.72,
+1573.34,
+"shot",
+"v09"
+],
+[
+1573.34,
+1575.1,
+"shot",
+"f66_grandkids"
+],
+[
+1575.1,
+1579.01,
+"shot",
+"f67_dinner"
+],
+[
+1583.99,
+1588.99,
+"shot",
+"f68_cruise"
+],
+[
+1594.52,
+1599.86,
+"shot",
+"v10"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 1579.4,
+"out": 1584.4
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE SENIOR RATE",
+"at": 121.46,
+"out": 124.46
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE RESORT FEE",
+"at": 230.1,
+"out": 233.1
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE MINIBAR",
+"at": 361.0,
+"out": 364.0
+},
+{
+"k": "step",
+"n": 4,
+"name": "BREAKFAST",
+"at": 465.69,
+"out": 468.69
+},
+{
+"k": "step",
+"n": 5,
+"name": "PARKING",
+"at": 568.41,
+"out": 571.41
+},
+{
+"k": "step",
+"n": 6,
+"name": "EARLY & LATE CHECK-IN",
+"at": 648.39,
+"out": 651.39
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE WI-FI",
+"at": 742.53,
+"out": 745.53
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE ROOM PHONE",
+"at": 802.87,
+"out": 805.87
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE ACCESSIBLE ROOM",
+"at": 888.47,
+"out": 891.47
+},
+{
+"k": "step",
+"n": 10,
+"name": "NON-REFUNDABLE",
+"at": 991.97,
+"out": 994.97
+},
+{
+"k": "step",
+"n": 11,
+"name": "THE SENTENCE",
+"at": 1083.47,
+"out": 1086.47
+},
+{
+"k": "deal",
+"at": 1209.66,
+"out": 1210.66
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Signing without reading",
+"at": 1213.34,
+"out": 1215.54
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Checking in with debit",
+"at": 1225.12,
+"out": 1227.32
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Not checking the room",
+"at": 1249.36,
+"out": 1251.56
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Leaving without the bill",
+"at": 1270.66,
+"out": 1272.86
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Too polite to ask",
+"at": 1277.0,
+"out": 1281.5
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1521.7
+},
+{
+"at": 1525.06
+},
+{
+"at": 1529.9
+},
+{
+"at": 1534.42
+},
+{
+"at": 1537.02
+},
+{
+"at": 1540.58
+},
+{
+"at": 1544.5
+},
+{
+"at": 1546.88
+},
+{
+"at": 1549.42
+},
+{
+"at": 1553.02
+},
+{
+"at": 1555.98
+}
+],
+"at": 1518.32,
+"out": 1557.98
+},
+{
+"k": "ask",
+"at": 1589.1,
+"out": 1597.1
+}
+],
+"end": 1599.86,
+"txt": {
+"recapTitle": "LINDA'S HOTEL RULES",
+"recap": [
+"Member rate > senior",
+"Compare the total",
+"Don't touch the minibar",
+"Plan breakfast",
+"Park a block over",
+"Call early, don't pay",
+"Member Wi-Fi",
+"No room-phone calls",
+"Accessible = no extra",
+"Flexible rate",
+"Say the sentence"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"Most ridiculous charge",
+"on a hotel bill?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+22.02,
+30.02
+]
+}
+}
