@@ -1,0 +1,121 @@
+{
+"cams": [
+[
+0,
+"wide"
+],
+[
+65.44,
+"model"
+],
+[
+88.3,
+"table"
+],
+[
+151.96,
+"props"
+],
+[
+190.6,
+"window"
+],
+[
+338.56,
+"propsL"
+],
+[
+410.02,
+"table"
+],
+[
+500.6,
+"wall"
+],
+[
+616.66,
+"window"
+],
+[
+712.3,
+"propsR"
+],
+[
+793.44,
+"low"
+],
+[
+871.4,
+"table"
+],
+[
+1037.66,
+"wide2"
+],
+[
+1083.4,
+"wide"
+],
+[
+1291.12,
+"window"
+]
+],
+"fx": [
+[
+0,
+{
+"eve": 1,
+"tray": 0
+}
+],
+[
+151.96,
+{
+"coins": 1
+}
+],
+[
+190.6,
+{
+"coins": 0
+}
+],
+[
+793.44,
+{
+"eve": 1
+}
+],
+[
+1083.4,
+{
+"letter": 1,
+"eve": 0.6
+}
+],
+[
+1333.08,
+{
+"eve": 0.8
+}
+]
+],
+"price": "",
+"nb": [
+"Seoul — 2 a.m.",
+"godoksa",
+"3,378 → 3,661",
+"goshiwon: 6 m²",
+"banjiha",
+"men 50-60",
+"trauma cleaner",
+"2021 law",
+"smart plug",
+"400 dots, 1 worker",
+"1 in 3 homes alone",
+"jeong",
+"the yogurt lady",
+"a knock"
+]
+}
