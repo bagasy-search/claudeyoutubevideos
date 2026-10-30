@@ -10,6 +10,8 @@ import { AskCard, CoverFlow } from "./premium";
 import { Avatar, Clip, OK, Shot, WIN, World } from "./parts";
 import { CamaraMano } from "../kits/camara/CamaraMano";
 import HEROES from "./heroes.json";
+import REPL from "./repl.json";
+import REPLF from "./repl_foto.json";
 import { H } from "./hkit";
 import { StepTag, SubTag } from "./lpieces";
 import { HGlug, HJarLid, HJugs, HPegboard, HRelay, HSnakeOut, HTree, HTreeRings, HXray } from "./heroes3d_b2";
@@ -59,7 +61,12 @@ const imgNear = (t: number): string | undefined => {
   return best;
 };
 const HS: H[] = (HEROES as H[]).map((h) => ({ ...h, bg: imgNear(h.at + 1) }));
-const Heroes: React.FC<{ t: number }> = ({ t }) => <>{HS.map((h, i) => { const C = HC[h.k] as React.FC<{ t: number; h: H }> | undefined; return C && t > h.at - 0.1 && t < h.out + 0.9 ? <C key={i} t={t} h={h} /> : null; })}</>;
+// componentes que el evaluador dejó <6: los reemplaza su clip Veo (repl.json); si el clip no llegó, queda el componente
+const RP = REPL as Record<string, string>;
+const RF = new Set(REPLF as string[]);  // plan B: foto agnes de Lenny haciendo la acción, con zoom lento
+const FotoHero: React.FC<{ t: number; h: H; id: string }> = ({ t, h, id }) => <AbsoluteFill style={{ opacity: e(t, h.at - 0.1, h.at + 0.4) * (1 - e(t, h.out - 0.4, h.out + 0.2)), transform: `scale(${1.03 + 0.06 * e(t, h.at, h.out + 0.2)})` }}><Vid id={"img_r" + id} /></AbsoluteFill>;
+const VeoHero: React.FC<{ t: number; h: H; id: string }> = ({ t, h, id }) => <AbsoluteFill style={{ opacity: e(t, h.at - 0.1, h.at + 0.4) * (1 - e(t, h.out - 0.4, h.out + 0.2)) }}><Vid id={"veo/" + id} at={h.at - 0.1} /></AbsoluteFill>;
+const Heroes: React.FC<{ t: number }> = ({ t }) => <>{HS.map((h, i) => { const v = RP[h.k]; if (v && OK.has(v)) return t > h.at - 0.1 && t < h.out + 0.2 ? <VeoHero key={i} t={t} h={h} id={v} /> : null; if (v && RF.has(v)) return t > h.at - 0.1 && t < h.out + 0.2 ? <FotoHero key={i} t={t} h={h} id={v} /> : null; const C = HC[h.k] as React.FC<{ t: number; h: H }> | undefined; return C && t > h.at - 0.1 && t < h.out + 0.9 ? <C key={i} t={t} h={h} /> : null; })}</>;
 const underHero = (o: Ov) => HS.some((h) => o.at < h.out + 0.9 && o.out > h.at - 0.6);
 
 const Piece: React.FC<{ t: number; o: Ov }> = ({ t, o }) => {
