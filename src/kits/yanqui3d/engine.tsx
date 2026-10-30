@@ -63,7 +63,7 @@ export const transition = (tr: Tr, k: number, prev: React.ReactNode, cur: React.
     L.push(<AbsoluteFill key="pp">{prev}</AbsoluteFill>);
     L.push(<Portal key="pc" x={p[0]} y={p[1]} r={ei(k, 0, 1) * 0.999 + 0.001}>{cur}</Portal>);
   } else if (tr === "zoom") {
-    const z = ei(k, 0, 1), b = Math.round(22 * Math.sin(Math.PI * k)), id = `zb${b}`;
+    const z = ei(k, 0, 1), b = 0, id = `zb${b}`; // sin blur SVG: con swangle colgaba el cuadro (>180 s)
     L.push(<AbsoluteFill key="zc" style={{ transform: `scale(${1.35 - 0.35 * z})` }}>{cur}</AbsoluteFill>);
     L.push(<AbsoluteFill key="zp" style={{ transformOrigin: `${p[0]}px ${p[1]}px`, transform: `scale(${1 + 3.2 * z})`, opacity: 1 - e(k, 0.35, 0.9), filter: b ? `url(#${id})` : undefined }}>{b ? <HB id={id} x={b} y={b} /> : null}{prev}</AbsoluteFill>);
   } else if (tr === "flip") {
