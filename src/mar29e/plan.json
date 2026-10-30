@@ -1,0 +1,540 @@
+{
+"segs": [
+[
+4.22,
+10.22,
+"shot",
+"f_e_ventana_vapor"
+],
+[
+10.54,
+16.54,
+"shot",
+"n_e_vapor"
+],
+[
+56.5,
+62.5,
+"shot",
+"f_e_patio_unidad"
+],
+[
+93.76,
+98.76,
+"shot",
+"n_e_resistencias"
+],
+[
+173.34,
+178.28,
+"shot",
+"v03_mano_rejilla"
+],
+[
+216.96,
+222.96,
+"shot",
+"n_e_escarcha"
+],
+[
+266.6,
+272.6,
+"shot",
+"n_e_bloque_hielo"
+],
+[
+289.8,
+294.3,
+"shot",
+"f_e_termometro_rejilla"
+],
+[
+316.68,
+322.68,
+"shot",
+"f_e_mano_rejilla"
+],
+[
+351.15,
+359.15,
+"shot",
+"v01_mira_aux"
+],
+[
+369.1,
+374.1,
+"shot",
+"n_e_termo_aux"
+],
+[
+388.68,
+393.34,
+"shot",
+"f_e_termostato_em"
+],
+[
+407.34,
+410.49,
+"shot",
+"f_e_senora_em"
+],
+[
+422.32,
+428.75,
+"shot",
+"v02_em_heat"
+],
+[
+441.82,
+444.19,
+"shot",
+"f_e_noche_termostato"
+],
+[
+524.34,
+527.09,
+"shot",
+"n_e_arbustos"
+],
+[
+537.48,
+543.48,
+"shot",
+"f_e_arbustos"
+],
+[
+560.5,
+563.0,
+"shot",
+"f_e_poda"
+],
+[
+571.06,
+577.06,
+"shot",
+"f_e_manguera"
+],
+[
+583.06,
+587.06,
+"shot",
+"n_e_aletas"
+],
+[
+588.46,
+593.0,
+"shot",
+"n_e_nieve"
+],
+[
+593.0,
+595.34,
+"shot",
+"n_e_goteo_techo"
+],
+[
+605.14,
+610.14,
+"shot",
+"n_e_hielo_base"
+],
+[
+614.25,
+620.25,
+"shot",
+"f_e_nieve_escoba"
+],
+[
+632.06,
+638.06,
+"shot",
+"f_e_soporte"
+],
+[
+695.88,
+700.88,
+"shot",
+"n_e_medidor"
+],
+[
+708.73,
+715.73,
+"shot",
+"f_e_frank_dolores"
+],
+[
+725.59,
+731.59,
+"shot",
+"f_e_menu_instalador"
+],
+[
+785.1,
+787.76,
+"shot",
+"f_e_frank_contentos"
+],
+[
+813.03,
+817.17,
+"shot",
+"f_e_telefono_tecnico"
+],
+[
+817.17,
+823.15,
+"shot",
+"v08_libreta"
+],
+[
+854.05,
+856.28,
+"shot",
+"v04_filtro_luz"
+],
+[
+870.85,
+872.81,
+"shot",
+"f_e_filtro_luz"
+],
+[
+892.81,
+895.29,
+"shot",
+"v05_filtro_nuevo"
+],
+[
+895.29,
+901.29,
+"shot",
+"f_e_ventilador_switch"
+],
+[
+960.17,
+967.17,
+"shot",
+"f_e_earl"
+],
+[
+990.8,
+996.8,
+"shot",
+"f_e_earl_toothpick"
+],
+[
+1097.89,
+1100.79,
+"shot",
+"f_e_burlete"
+],
+[
+1100.79,
+1102.5,
+"shot",
+"f_e_aislacion_atico"
+],
+[
+1131.23,
+1135.77,
+"shot",
+"n_e_valvula"
+],
+[
+1142.93,
+1148.93,
+"shot",
+"f_e_cama_noche"
+],
+[
+1168.55,
+1172.26,
+"shot",
+"v09_escucha"
+],
+[
+1193.46,
+1200.46,
+"shot",
+"f_e_revision"
+],
+[
+1242.64,
+1248.64,
+"shot",
+"f_e_cliente_pregunta"
+],
+[
+1268.03,
+1270.72,
+"shot",
+"f_e_dual_fuel"
+],
+[
+1348.45,
+1350.7,
+"shot",
+"v06_sueter"
+],
+[
+1356.01,
+1361.01,
+"shot",
+"f_e_manta"
+],
+[
+1388.76,
+1395.76,
+"shot",
+"f_e_harmon_puerta"
+],
+[
+1422.59,
+1427.59,
+"shot",
+"n_e_ranch"
+],
+[
+1440.18,
+1445.18,
+"shot",
+"f_e_harmon_arbusto"
+],
+[
+1456.34,
+1463.34,
+"shot",
+"f_e_harmon_ventana"
+],
+[
+1468.67,
+1470.72,
+"shot",
+"f_e_space_heater"
+],
+[
+1562.21,
+1564.96,
+"shot",
+"f_e_comentarios"
+],
+[
+1576.59,
+1581.29,
+"shot",
+"v10_despedida"
+]
+],
+"ov": [
+{
+"k": "big",
+"txt": "HALF",
+"sub": "ONE SETTING · THE WINTER BILL",
+"col": "green",
+"at": 48.92,
+"out": 51.92
+},
+{
+"k": "big",
+"txt": "#7",
+"sub": "STAY FOR THIS ONE",
+"col": "amber",
+"at": 72.82,
+"out": 75.62
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE STEAM CLOUD",
+"at": 207.18,
+"out": 209.78
+},
+{
+"k": "step",
+"n": 2,
+"name": "COOL-FEELING AIR",
+"at": 282.08,
+"out": 284.68
+},
+{
+"k": "step",
+"n": 3,
+"name": "AUX VS EM HEAT",
+"col": "red",
+"at": 346.22,
+"out": 349.02
+},
+{
+"k": "step",
+"n": 4,
+"name": "NO BIG NIGHT DROPS",
+"at": 437.16,
+"out": 439.76
+},
+{
+"k": "step",
+"n": 5,
+"name": "ROOM TO BREATHE",
+"at": 511.34,
+"out": 513.94
+},
+{
+"k": "step",
+"n": 6,
+"name": "SNOW + THE PAD",
+"at": 583.4,
+"out": 586.0
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE AUX SETTING",
+"col": "green",
+"at": 653.5,
+"out": 656.5
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE FILTER",
+"at": 840.19,
+"out": 842.79
+},
+{
+"k": "step",
+"n": 9,
+"name": "FAN ON AUTO",
+"at": 893.05,
+"out": 895.65
+},
+{
+"k": "step",
+"n": 10,
+"name": "BALANCE POINT",
+"at": 1050.37,
+"out": 1052.97
+},
+{
+"k": "step",
+"n": 11,
+"name": "WHOOSH + CLUNK",
+"at": 1121.47,
+"out": 1124.07
+},
+{
+"k": "step",
+"n": 12,
+"name": "THE FALL CHECKUP",
+"at": 1172.85,
+"out": 1175.45
+},
+{
+"k": "check",
+"title": "THE FALL CHECKUP",
+"rows": [
+{
+"txt": "Refrigerant charge",
+"at": 1195.21
+},
+{
+"txt": "Clean outdoor coil",
+"at": 1203.91
+},
+{
+"txt": "Defrost controls",
+"at": 1206.17
+},
+{
+"txt": "Measure airflow",
+"at": 1208.35
+},
+{
+"txt": "Backup settings",
+"at": 1209.71
+},
+{
+"txt": "Test the strips",
+"at": 1214.67
+}
+],
+"at": 1193.37,
+"out": 1217.17
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1482.43
+},
+{
+"at": 1487.91
+},
+{
+"at": 1494.21
+},
+{
+"at": 1500.61
+},
+{
+"at": 1505.75
+},
+{
+"at": 1511.03
+},
+{
+"at": 1515.29
+},
+{
+"at": 1523.49
+},
+{
+"at": 1526.73
+},
+{
+"at": 1529.63
+}
+],
+"at": 1478.39,
+"out": 1531.63
+},
+{
+"k": "ask",
+"at": 1550.67,
+"out": 1559.67
+},
+{
+"k": "next",
+"at": 1565.31,
+"out": 1572.31
+}
+],
+"end": 1581.29,
+"txt": {
+"recapTitle": "12 HEAT PUMP RULES",
+"recap": [
+"Steam = defrost",
+"92° heats fine",
+"AUX ok · EM no",
+"Small night drops",
+"2 ft clear",
+"Snow off · up high",
+"AUX lockout set",
+"Filter monthly",
+"Fan on AUTO",
+"Lower balance point"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"Heat pump, furnace or both?",
+"…ever seen it say AUX?"
+],
+"next": [
+"MORE FROM 40 YEARS",
+"subscribe so you don't miss it"
+],
+"lower": [
+54.98,
+62.98
+]
+}
+}
