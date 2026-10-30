@@ -1,0 +1,147 @@
+[
+{
+"k": "counterstack",
+"at": 8.56,
+"out": 16.06
+},
+{
+"k": "halfprice",
+"at": 71.34,
+"out": 78.34
+},
+{
+"k": "dailymeter",
+"at": 117.42,
+"out": 124.92
+},
+{
+"k": "twicecover",
+"at": 168.4,
+"out": 175.9
+},
+{
+"k": "twocalls",
+"at": 188.24,
+"out": 195.24
+},
+{
+"k": "fueltank",
+"at": 250.28,
+"out": 257.78
+},
+{
+"k": "pumpmiles",
+"at": 302.5,
+"out": 310.0
+},
+{
+"k": "tollfee",
+"at": 352.23,
+"out": 359.73
+},
+{
+"k": "avoidtolls",
+"at": 370.08,
+"out": 377.08
+},
+{
+"k": "gpsvsphone",
+"at": 416.09,
+"out": 423.09
+},
+{
+"k": "ventholder",
+"at": 432.12,
+"out": 439.12
+},
+{
+"k": "spousefree",
+"at": 484.85,
+"out": 492.35
+},
+{
+"k": "kneecar",
+"at": 553.02,
+"out": 560.02
+},
+{
+"k": "upgrade84",
+"at": 564.67,
+"out": 571.67
+},
+{
+"k": "feetrain",
+"at": 637.32,
+"out": 644.82
+},
+{
+"k": "searchtwice",
+"at": 679.85,
+"out": 687.35
+},
+{
+"k": "scratchbill",
+"at": 711.27,
+"out": 718.77
+},
+{
+"k": "photoproof",
+"at": 732.51,
+"out": 739.51
+},
+{
+"k": "walkaround",
+"at": 780.39,
+"out": 787.89
+},
+{
+"k": "sandmat",
+"at": 796.99,
+"out": 804.49
+},
+{
+"k": "debithold",
+"at": 863.59,
+"out": 871.09
+},
+{
+"k": "carlift",
+"at": 913.23,
+"out": 920.73
+},
+{
+"k": "pricedrop",
+"at": 960.63,
+"out": 968.63
+},
+{
+"k": "glasses",
+"at": 1031.36,
+"out": 1038.36
+},
+{
+"k": "nothanks",
+"at": 1095.92,
+"out": 1102.92
+},
+{
+"k": "mirrors",
+"at": 1155.9,
+"out": 1162.9
+},
+{
+"k": "touristsign",
+"at": 1187.58,
+"out": 1194.08
+},
+{
+"k": "swapcar",
+"at": 1241.72,
+"out": 1247.72
+},
+{
+"k": "allset",
+"at": 1291.48,
+"out": 1297.98
+}
+]
