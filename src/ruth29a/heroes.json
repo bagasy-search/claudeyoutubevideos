@@ -1,0 +1,238 @@
+[
+ {
+  "k": "planeDust",
+  "mode": "iris",
+  "at": 21.43,
+  "out": 31.38
+ },
+ {
+  "k": "caseFile",
+  "mode": "drop",
+  "bt": [
+   3.54,
+   6.02
+  ],
+  "at": 72.26,
+  "out": 81.47
+ },
+ {
+  "k": "riceScale",
+  "mode": "iris",
+  "at": 135.82,
+  "out": 147.32
+ },
+ {
+  "k": "portRoute",
+  "mode": "wipe",
+  "at": 153.83,
+  "out": 163.25
+ },
+ {
+  "k": "notebook",
+  "mode": "drop",
+  "at": 174.95,
+  "out": 182.03
+ },
+ {
+  "k": "moundMower",
+  "mode": "split",
+  "bt": [
+   9.9
+  ],
+  "at": 216.79,
+  "out": 228.29
+ },
+ {
+  "k": "newsMenace",
+  "mode": "wipe",
+  "at": 268.2,
+  "out": 279.7
+ },
+ {
+  "k": "moneyStack",
+  "mode": "drop",
+  "at": 305.21,
+  "out": 313.38
+ },
+ {
+  "k": "lastAnt",
+  "mode": "iris",
+  "at": 319.68,
+  "out": 331.18
+ },
+ {
+  "k": "acreSquare",
+  "mode": "wipe",
+  "at": 336.93,
+  "out": 347.46
+ },
+ {
+  "k": "warnLetters",
+  "mode": "iris",
+  "bt": [
+   0.3,
+   3.35,
+   6.17
+  ],
+  "at": 370.99,
+  "out": 382.49
+ },
+ {
+  "k": "quailTally",
+  "mode": "split",
+  "at": 439.87,
+  "out": 450.96
+ },
+ {
+  "k": "milkBottle",
+  "mode": "drop",
+  "at": 460.64,
+  "out": 467.0
+ },
+ {
+  "k": "tugOfWar",
+  "mode": "wipe",
+  "at": 486.66,
+  "out": 498.16
+ },
+ {
+  "k": "antArena",
+  "mode": "iris",
+  "bt": [
+   6.57
+  ],
+  "at": 520.06,
+  "out": 531.56
+ },
+ {
+  "k": "bookChapter",
+  "mode": "wipe",
+  "at": 598.76,
+  "out": 608.53
+ },
+ {
+  "k": "valveShut",
+  "mode": "iris",
+  "at": 632.47,
+  "out": 643.9
+ },
+ {
+  "k": "purse",
+  "mode": "drop",
+  "at": 667.25,
+  "out": 678.39
+ },
+ {
+  "k": "baitGrain",
+  "mode": "split",
+  "at": 735.27,
+  "out": 743.86
+ },
+ {
+  "k": "lakeMap",
+  "mode": "wipe",
+  "at": 784.39,
+  "out": 795.89
+ },
+ {
+  "k": "cancelStamp",
+  "mode": "drop",
+  "at": 853.18,
+  "out": 864.68
+ },
+ {
+  "k": "odometer",
+  "mode": "iris",
+  "at": 870.82,
+  "out": 878.87
+ },
+ {
+  "k": "payScale",
+  "mode": "drop",
+  "bt": [
+   2.23,
+   5.23,
+   9.79
+  ],
+  "at": 901.01,
+  "out": 912.4
+ },
+ {
+  "k": "timelineRail",
+  "mode": "wipe",
+  "bt": [
+   2.73,
+   3.75,
+   4.59,
+   5.79,
+   7.05,
+   7.74,
+   10.19
+  ],
+  "at": 1049.58,
+  "out": 1061.37
+ },
+ {
+  "k": "twoStep",
+  "mode": "split",
+  "bt": [
+   2.79,
+   9.31
+  ],
+  "at": 1133.38,
+  "out": 1144.29
+ },
+ {
+  "k": "kickedMound",
+  "mode": "drop",
+  "at": 1182.03,
+  "out": 1193.53
+ },
+ {
+  "k": "queenNet",
+  "mode": "iris",
+  "at": 1246.43,
+  "out": 1257.93
+ },
+ {
+  "k": "phoridFly",
+  "mode": "iris",
+  "at": 1276.18,
+  "out": 1287.68
+ },
+ {
+  "k": "hourglass",
+  "mode": "drop",
+  "at": 1329.6,
+  "out": 1340.31
+ },
+ {
+  "k": "qCards",
+  "mode": "wipe",
+  "at": 1347.48,
+  "out": 1356.8
+ },
+ {
+  "k": "underneath",
+  "mode": "iris",
+  "at": 1480.59,
+  "out": 1485.49
+ },
+ {
+  "k": "recapReel",
+  "mode": "split",
+  "imgsAt": [
+   150,
+   230,
+   330,
+   420,
+   500,
+   560,
+   700,
+   860,
+   1150
+  ],
+  "at": 1417.44,
+  "out": 1425.56
+ }
+]
