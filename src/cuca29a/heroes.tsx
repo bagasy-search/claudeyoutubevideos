@@ -518,7 +518,7 @@ Object.assign(MAP, MAP3C);
 
 // ── reemplazos por TOPE DEL EVALUADOR (30-oct): los componentes que no pasaron de 6 van como clip Veo de 8 s (manos de Cuca)
 import { Vid } from "./lib";
-const CLIP_H: string[] = [];   // se llenan a medida que llegan los h_<k>.mp4 a public
+const CLIP_H: string[] = ["charola"];   // se llenan a medida que llegan los h_<k>.mp4 a public
 const HClip: C = ({ t, h }) => { const o = Math.min(1, (t - h.at + 0.05) / 0.3, (h.out + 0.85 - t) / 0.3); return <div style={{ position: "absolute", inset: 0, opacity: Math.max(0, o) }}><Vid id={"h_" + h.k} at={h.at - 0.05} /></div>; };
 for (const k of CLIP_H) MAP[k] = HClip;
 // final 30-oct: el repaso 3D cuelga el render del farm (chunk 183, ni el 1er cuadro en 183 s con swangle) → vuelve el repaso 2D de la vuelta anterior
