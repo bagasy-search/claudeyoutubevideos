@@ -1,0 +1,272 @@
+[
+{
+"k": "phoneScroll",
+"mode": "iris",
+"at": 5.33,
+"out": 15.33
+},
+{
+"k": "emptyChairs",
+"mode": "drop",
+"at": 37.87,
+"out": 46.19
+},
+{
+"k": "boxTease",
+"mode": "split",
+"at": 69.45,
+"out": 80.46
+},
+{
+"k": "iowaPin",
+"mode": "wipe",
+"at": 86.52,
+"out": 97.4
+},
+{
+"k": "kettleCorner",
+"mode": "drop",
+"at": 103.57,
+"out": 115.07
+},
+{
+"k": "brotherDeal",
+"mode": "iris",
+"bt": [
+3.23,
+6.47,
+10.34
+],
+"at": 154.52,
+"out": 166.46
+},
+{
+"k": "leanSilo",
+"mode": "wipe",
+"at": 188.34,
+"out": 199.84
+},
+{
+"k": "corncobArc",
+"mode": "split",
+"at": 206.15,
+"out": 217.04
+},
+{
+"k": "mugSlam",
+"mode": "drop",
+"at": 272.93,
+"out": 284.43
+},
+{
+"k": "capDoor",
+"mode": "iris",
+"at": 288.77,
+"out": 300.27
+},
+{
+"k": "yearsTear",
+"mode": "wipe",
+"at": 306.17,
+"out": 314.79
+},
+{
+"k": "scaleTip",
+"mode": "split",
+"at": 336.27,
+"out": 347.26
+},
+{
+"k": "stoneEtch",
+"mode": "drop",
+"at": 371.2,
+"out": 382.7
+},
+{
+"k": "willType",
+"mode": "iris",
+"bt": [
+4.51
+],
+"at": 405.01,
+"out": 416.51
+},
+{
+"k": "bootsStrip",
+"mode": "wipe",
+"at": 427.75,
+"out": 434.57
+},
+{
+"k": "potRoast",
+"mode": "drop",
+"at": 503.59,
+"out": 515.09
+},
+{
+"k": "latheSpin",
+"mode": "split",
+"at": 537.8,
+"out": 549.3
+},
+{
+"k": "fortyWords",
+"mode": "iris",
+"at": 592.8,
+"out": 601.03
+},
+{
+"k": "chairGrow",
+"mode": "wipe",
+"at": 639.02,
+"out": 649.66
+},
+{
+"k": "phoneRing",
+"mode": "drop",
+"at": 678.5,
+"out": 684.35
+},
+{
+"k": "calCircle",
+"mode": "split",
+"at": 722.56,
+"out": 734.06
+},
+{
+"k": "pieRoad",
+"mode": "wipe",
+"at": 811.68,
+"out": 818.39
+},
+{
+"k": "shoesTurn",
+"mode": "iris",
+"at": 838.62,
+"out": 846.34
+},
+{
+"k": "pawnLines",
+"mode": "split",
+"at": 888.81,
+"out": 900.15
+},
+{
+"k": "monitorTomorrow",
+"mode": "drop",
+"at": 1053.13,
+"out": 1063.28
+},
+{
+"k": "chairInRoom",
+"mode": "split",
+"at": 1067.98,
+"out": 1079.48
+},
+{
+"k": "knifeHands",
+"mode": "iris",
+"bt": [
+5.99,
+8.09,
+9.1
+],
+"at": 1120.25,
+"out": 1130.95
+},
+{
+"k": "recipeBox",
+"mode": "drop",
+"at": 1177.31,
+"out": 1183.16
+},
+{
+"k": "snowPrints",
+"mode": "wipe",
+"at": 1239.46,
+"out": 1249.93
+},
+{
+"k": "muleStamp",
+"mode": "drop",
+"at": 1276.21,
+"out": 1282.7
+},
+{
+"k": "philcoStorm",
+"mode": "split",
+"at": 1344.71,
+"out": 1350.56
+},
+{
+"k": "toolboxSnow",
+"mode": "iris",
+"at": 1418.52,
+"out": 1430.02
+},
+{
+"k": "stepsPad",
+"mode": "wipe",
+"bt": [
+1.62,
+5.11,
+11.56
+],
+"at": 1465.98,
+"out": 1479.14
+},
+{
+"k": "sorryScrap",
+"mode": "iris",
+"at": 1547.34,
+"out": 1558.23
+},
+{
+"k": "coatPocket",
+"mode": "drop",
+"bt": [
+4.39
+],
+"at": 1602.14,
+"out": 1608.13
+},
+{
+"k": "letterInk",
+"mode": "iris",
+"at": 1644.01,
+"out": 1655.94
+},
+{
+"k": "mailboxFlag",
+"mode": "split",
+"at": 1711.19,
+"out": 1721.89
+},
+{
+"k": "truckMiles",
+"mode": "wipe",
+"at": 1727.31,
+"out": 1738.81
+},
+{
+"k": "tuesdayTimer",
+"mode": "drop",
+"at": 1761.95,
+"out": 1771.97
+},
+{
+"k": "recapCards",
+"mode": "iris",
+"bt": [
+1.2,
+1.88,
+2.3,
+3.03,
+3.45,
+3.96,
+4.25
+],
+"at": 1814.79,
+"out": 1820.64
+}
+]
