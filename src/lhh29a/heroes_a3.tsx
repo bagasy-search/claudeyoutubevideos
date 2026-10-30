@@ -82,11 +82,11 @@ export const HSnowRail: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t
     {Array.from({ length: 16 }, (_, i) => <RBox key={i} s={[0.014, 0.25, 0.014]} p={[-0.4 + i * 0.053, 0.15, 0.2]} r={0.002}>{M.wood({ base: [140, 100, 70] })}</RBox>)}
     {/* la nieve en capas (cada día una), con borde blando; el surco de la pala queda abierto */}
     {Array.from({ length: layers }, (_, j) => { const lk = cl(snow * layers - j); const y = 0.015 + (j + 0.5) * (0.265 / layers);
-      return lk > 0 && <group key={j}>
+      return <group key={j} visible={lk > 0}>
         {[-1, 1].map((sd) => <mesh key={sd} position={[sd * (0.25 + 0.03 * crack), y, -0.03]} rotation={[0, 0, -sd * 0.06 * crack * (j / layers)]} scale={[1 - 0.12 * melt, Math.max(0.02, lk * (1 - (j >= 2 ? 0.7 * melt : 0))), 1 - 0.1 * melt]}><boxGeometry args={[0.42, 0.265 / layers * 0.92, 0.38]} /><meshPhysicalMaterial color={j % 2 ? "#cfe4f7" : "#b9d6f0"} roughness={0.12} transmission={0.55} thickness={0.25} ior={1.31} clearcoat={1} clearcoatRoughness={0.05} emissive="#4a86c0" emissiveIntensity={0.12 + 0.25 * crack * (1 - melt)} bumpMap={tex.paper(3, 3)} bumpScale={4} /></mesh>)}
       </group>; })}
     {/* la grieta: una línea quebrada que corre a lo largo de la baranda cuando cae la sal, con brillo frío */}
-    {crack > 0 && Array.from({ length: 18 }, (_, i) => { const k = cl(crack * 18 - i); const x0 = -0.44 + i * 0.049, a = (rn(i, 51) - 0.5) * 1.2; return k > 0 && <group key={"gr" + i}>
+    {Array.from({ length: 18 }, (_, i) => { const k = Math.max(0.001, cl(crack * 18 - i)); const x0 = -0.44 + i * 0.049, a = (rn(i, 51) - 0.5) * 1.2; return <group key={"gr" + i} visible={crack * 18 - i > 0}>
       <mesh position={[x0 + 0.0245 * Math.cos(a), top * (1 - 0.6 * melt) + 0.017, -0.03 + 0.03 * Math.sin(i * 1.7)]} rotation={[0, a, 0]}><boxGeometry args={[0.052 * k, 0.006, 0.006]} /><meshBasicMaterial color="#1c3550" /></mesh>
       <mesh position={[x0 + 0.0245 * Math.cos(a), top * (1 - 0.6 * melt) + 0.02, -0.03 + 0.03 * Math.sin(i * 1.7)]} rotation={[0, a, 0]}><boxGeometry args={[0.052 * k, 0.003, 0.016]} />{M.glow({ col: "#bfe4ff", op: 0.75 * (1 - melt) })}</mesh></group>; })}
     <pointLight position={[0, 0.2, 0.15]} intensity={1.1 * crack * (1 - melt)} distance={0.8} color="#9fd2ff" />
@@ -96,8 +96,8 @@ export const HSnowRail: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t
       <RBox s={[0.12, 0.1, 0.008]} r={0.004}>{M.steel({ col: "#9aa2a8" })}</RBox>
     </group>
     {/* un puñado de sal cae sobre el hielo del escalón y abre charcos oscuros que crecen */}
-    {Array.from({ length: 50 }, (_, i) => { const f = cl((u - 0.68 - rn(i, 31) * 0.06) / 0.06); return f > 0 && <mesh key={"sl" + i} position={[-0.12 + rn(i, 32) * 0.24 + 0.1 * Math.sin(i), lerp(0.6, 0.27 * (1 - 0.6 * melt), f * f), -0.08 + rn(i, 33) * 0.16]} rotation={[i, i * 2, 0]}><boxGeometry args={[0.024, 0.02, 0.022]} /><meshPhysicalMaterial color={rn(i, 34) > 0.5 ? "#c9b89a" : "#b8a88c"} roughness={0.25} clearcoat={1} /></mesh>; })}
-    {[0, 1, 2, 3].map((j) => { const g = melt; return g > 0 && <mesh key={"pd" + j} position={[-0.33 + j * 0.22, 0.0162, 0.228]} rotation={[-PI / 2, 0, 0]} scale={[1.5, 0.3, 1]}><circleGeometry args={[0.08 * g + 0.001, 32]} /><meshPhysicalMaterial color="#3b4a58" roughness={0.05} clearcoat={1} transparent opacity={0.85} /></mesh>; })}
+    {Array.from({ length: 50 }, (_, i) => { const f = cl((u - 0.68 - rn(i, 31) * 0.06) / 0.06); return <mesh key={"sl" + i} visible={f > 0} position={[-0.12 + rn(i, 32) * 0.24 + 0.1 * Math.sin(i), lerp(0.6, 0.27 * (1 - 0.6 * melt), f * f), -0.08 + rn(i, 33) * 0.16]} rotation={[i, i * 2, 0]}><boxGeometry args={[0.024, 0.02, 0.022]} /><meshPhysicalMaterial color={rn(i, 34) > 0.5 ? "#c9b89a" : "#b8a88c"} roughness={0.25} clearcoat={1} /></mesh>; })}
+    {[0, 1, 2, 3].map((j) => { const g = melt; return <mesh key={"pd" + j} visible={g > 0} position={[-0.33 + j * 0.22, 0.0162, 0.228]} rotation={[-PI / 2, 0, 0]} scale={[1.5, 0.3, 1]}><circleGeometry args={[0.08 * g + 0.001, 32]} /><meshPhysicalMaterial color="#3b4a58" roughness={0.05} clearcoat={1} transparent opacity={0.85} /></mesh>; })}
     {/* los dos tambores del contador de días, en el poste izquierdo */}
     <RBox s={[0.2, 0.13, 0.06]} p={[-0.3, 0.1, 0.34]} r={0.012}>{M.wood({ base: [110, 74, 44] })}</RBox>
     <DigitDrum v={Math.floor(day / 10) + (Math.floor(day) % 10 === 9 ? day % 1 : 0)} p={[-0.342, 0.1, 0.375]} r={0.05} w={0.07} />
@@ -105,9 +105,9 @@ export const HSnowRail: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t
     {/* trozos de nieve helada que se desprenden y caen al piso cuando la sal la come */}
     {Array.from({ length: 9 }, (_, i) => { const f = cl((u - 0.78 - rn(i, 41) * 0.1) / 0.08), x = -0.36 + i * 0.09 + (rn(i, 42) - 0.5) * 0.04, zf = 0.36 + rn(i, 43) * 0.12;
       const y = f < 0.6 ? lerp(0.24, 0.035, (f / 0.6) * (f / 0.6)) : 0.035 + 0.025 * Math.sin(PI * (f - 0.6) / 0.4) * 0.5, z = lerp(0.12, zf, f), pd = cl((u - 0.8 - rn(i, 41) * 0.1) / 0.12);
-      return f > 0 && <group key={"tz" + i}>
+      return <group key={"tz" + i} visible={f > 0}>
         <mesh position={[x, y, z]} rotation={[i * 0.7, i, f * 2.5]}><boxGeometry args={[0.07 + 0.03 * rn(i, 44), 0.05, 0.06]} /><meshPhysicalMaterial color="#cfe4f7" roughness={0.1} transmission={0.6} thickness={0.2} ior={1.31} clearcoat={1} emissive="#4a86c0" emissiveIntensity={0.15} /></mesh>
-        {pd > 0 && <mesh position={[x, 0.0015, zf]} rotation={[-PI / 2, 0, i]} scale={[1.3, 1, 1]}><circleGeometry args={[0.06 * pd + 0.001, 28]} /><meshPhysicalMaterial color="#2c3a46" roughness={0.03} clearcoat={1} transparent opacity={0.8} /></mesh>}</group>; })}
+        {<mesh visible={pd > 0} position={[x, 0.0015, zf]} rotation={[-PI / 2, 0, i]} scale={[1.3, 1, 1]}><circleGeometry args={[0.06 * pd + 0.001, 28]} /><meshPhysicalMaterial color="#2c3a46" roughness={0.03} clearcoat={1} transparent opacity={0.8} /></mesh>}</group>; })}
     {/* copos */}
     {Array.from({ length: 60 }, (_, i) => <mesh key={i} position={[-0.6 + rn(i, 2) * 1.2, 0.7 - ((tt * (0.08 + 0.05 * rn(i, 3)) + rn(i, 4)) % 1) * 0.75, -0.2 + rn(i, 5) * 0.7]}><sphereGeometry args={[0.006 + 0.005 * rn(i, 6), 6, 4]} /><meshBasicMaterial color="#ffffff" transparent opacity={0.9 * (1 - path * 0.7)} /></mesh>)}
   </>;
