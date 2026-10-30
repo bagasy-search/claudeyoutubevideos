@@ -142,7 +142,7 @@ export const BigNum: React.FC<{ t: number; at: number; out: number; text: string
       })}
     </div>
     <div style={{ position: "relative", margin: "10px auto 14px", height: 5, width: 140 * k2, borderRadius: 3, background: c, boxShadow: `0 0 16px ${c}` }} />
-    {sub && <div style={{ position: "relative", opacity: k2, transform: `translateY(${(1 - k2) * 12}px)`, fontWeight: 800, fontSize: 28, letterSpacing: 5, color: G.dim }}>{sub}</div>}
+    {sub && <div style={{ position: "relative", opacity: k2, transform: `translateY(${(1 - k2) * 12}px)`, fontWeight: 800, fontSize: 36, letterSpacing: 4, color: G.dim }}>{sub}</div>}
   </div></div>;
 };
 
