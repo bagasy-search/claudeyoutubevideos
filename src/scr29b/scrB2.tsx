@@ -36,7 +36,7 @@ export const HPath: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h
   return <>
     <Disc x={560} mid={false} k={good * 0.6 + 0.4} />
     <Disc x={1360} mid k={bad} />
-    <Tag tt={tt} at={0.8} x={560} y={110} txt="EDGE" col={GRN} size={70} />
+    <div style={{ opacity: 1 - eio(tt, 1.7, 2.0) }}><Tag tt={tt} at={0.8} x={560} y={980} txt="EDGE" col={GRN} size={70} /></div>
     <Tag tt={tt} at={it(h, 0)} x={1360} y={110} txt="MIDDLE" col={RED} size={70} />
     <Tag tt={tt} at={it(h, 1)} x={1360} y={960} txt="STRAIGHT OUT" col={DIM} size={48} />
     <Tag tt={tt} at={2.0} x={560} y={960} txt="HEATS THE IRON" col={AMB} size={48} />
@@ -150,7 +150,7 @@ export const HLadder: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t}
     </div>
     {/* un solo rótulo: el peldaño en el que está ahora (sale el anterior, entra el nuevo) */}
     {steps.map(([a, txt, col], i) => { const nx = steps[i + 1]?.[0] ?? 1e9, gone = eio(tt, nx - 0.3, nx); return tt > a && gone < 1 ? <div key={txt} style={{ opacity: 1 - gone, transform: `translateY(${-60 * gone}px)` }}>
-      <Tag tt={tt} at={a} x={1000} y={760 - i * 220} txt={txt} col={col} size={64} anchor="l" />
+      <Tag tt={tt} at={a} x={1000} y={760 - i * 220} txt={txt} col={col} size={52} anchor="l" />
       <div style={{ position: "absolute", left: 870, top: 760 - i * 220, transform: "translate(-50%,-50%)", width: 96, height: 96, borderRadius: "50%", background: col, color: "#1b1b1b", fontWeight: 900, fontSize: 60, textAlign: "center", lineHeight: "96px", opacity: cl((tt - a) * 4), boxShadow: "0 12px 30px rgba(0,0,0,.5)" }}>{i + 1}</div>
     </div> : null; })}
   </>;
@@ -184,7 +184,7 @@ export const HAirflow: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t
       <div style={{ position: "absolute", right: -18, top: 180, width: 18, height: 110, background: "#0b0b0c" }} />
       <div style={{ position: "absolute", left: 330, top: -70, width: 200, height: 50, borderRadius: "26px 26px 0 0", border: "14px solid #6b7077", borderBottom: "none" }} />
       {Array.from({ length: 10 }, (_, k) => <div key={k} style={{ position: "absolute", left: 20 + k * 90, top: -10, width: 14, height: 14, borderRadius: "50%", background: "#9aa0a6" }} />)}
-      <div style={{ position: "absolute", left: 600, top: 300, fontWeight: 900, fontSize: 40, letterSpacing: 4, color: "rgba(214,220,226,.5)" }}>AMMO CAN</div>
+      <div style={{ position: "absolute", left: 600, top: 300, fontWeight: 900, fontSize: 64, letterSpacing: 4, color: "rgba(214,220,226,.7)" }}>AMMO CAN</div>
     </div>
     {Array.from({ length: 12 }, (_, i) => { const u = (tt * 0.5 * flow + i / 12) % 1, x = 300 + u * 1360, y = 560 + Math.sin(u * 6 + i) * 30 * (1 - holes) + (i % 3 - 1) * 60;
       return <div key={i} style={{ position: "absolute", left: x, top: y, width: 70, height: 6, borderRadius: 3, background: ICE, opacity: (holes > 0.5 || u < 0.3 ? 0.8 : 0.15) * Math.sin(u * Math.PI) }} />; })}
@@ -202,8 +202,8 @@ export const HTrio: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h
       <div style={{ width: 300, height: 440, borderRadius: "140px 140px 40px 40px", background: "linear-gradient(90deg, rgba(255,255,255,.06), rgba(255,255,255,.2) 30%, rgba(255,255,255,.04))", border: "4px solid rgba(255,255,255,.25)", position: "relative", boxShadow: `0 0 ${120 * on}px ${col}` }}>
         <div style={{ position: "absolute", left: 70, top: 100 + (i === 2 ? 120 * (0.6 + 0.4 * Math.sin(tt * 3)) : 0), width: 160, height: i === 2 ? 140 : 260, borderRadius: "50% 50% 42% 42%", background: `radial-gradient(ellipse at 50% 85%, #fff, ${col} 45%, rgba(0,0,0,0) 74%)`, opacity: on, transform: `scaleY(${0.95 + 0.05 * Math.sin(tt * 2 * Math.PI * (1.3 + b * 0.5))})`, transformOrigin: "50% 100%" }} />
       </div>
-      <div style={{ textAlign: "center", marginTop: 26, fontWeight: 900, fontSize: 44, color: col, opacity: cl(s) }}>{name}</div>
-      <div style={{ textAlign: "center", marginTop: 6, fontWeight: 800, fontSize: 32, color: DIM, opacity: cl(s) * on }}>{fix}</div>
+      <div style={{ textAlign: "center", marginTop: 22, fontWeight: 900, fontSize: 76, color: col, opacity: cl(s) }}>{name}</div>
+      <div style={{ textAlign: "center", marginTop: 4, fontWeight: 800, fontSize: 54, color: TX, opacity: cl(s) * on }}>{fix}</div>
     </div>; })}</>;
 }}</Stage>;
 
@@ -216,13 +216,13 @@ export const HWiring: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t}
       <path d="M 360 560 C 560 660, 640 660, 800 560 S 1100 700, 1240 600 S 1480 700, 1600 590" stroke="#1a1a1a" strokeWidth={14} fill="none" pathLength={1} strokeDasharray={`${d} 1`} strokeLinecap="round" />
     </svg>
     {/* cada pieza aparece cuando el cable llega a ella */}
-    {[{ x: 300, f: 0.0, lab: "FAN" }, { x: 800, f: 0.33, lab: "KNOB" }, { x: 1240, f: 0.66, lab: "FUSE" }, { x: 1680, f: 0.98, lab: "12 V" }].map((p, i) => { const s = cl(phys(tt, 0.4 + p.f * (it(h, 0) + 0.8), 6, 0.45)); return <div key={i} style={{ position: "absolute", left: p.x, top: 520, transform: `translate(-50%,-50%) scale(${0.6 + 0.4 * s})`, opacity: cl(s * 2) }}>
+    {[{ x: 300, f: 0.0, lab: "FAN" }, { x: 800, f: 0.33, lab: "KNOB" }, { x: 1240, f: 0.66, lab: "FUSE" }, { x: 1680, f: 0.98, lab: "12 V" }].map((p, i) => { const s = cl(phys(tt, 0.4 + p.f * (it(h, 0) + 0.8), 6, 0.45)); return <div key={i} style={{ position: "absolute", left: p.x, top: 520, transform: `translate(-50%,-50%) scale(${0.75 + 0.5 * s})`, opacity: cl(s * 2) }}>
       {i === 0 && <div style={{ width: 260, height: 260, borderRadius: 26, background: "linear-gradient(160deg,#3a3d42,#151517)", boxShadow: "0 30px 60px rgba(0,0,0,.6)", display: "flex", alignItems: "center", justifyContent: "center" }}>
         <svg width={200} height={200} viewBox="-100 -100 200 200" style={{ transform: `rotate(${tt * 400 * cl(d * 3)}deg)` }}>{[0, 1, 2, 3, 4].map((b) => <path key={b} d="M 0 -12 C 30 -40, 70 -60, 86 -20 C 60 -16, 30 -6, 0 12 Z" fill="#9aa0a6" transform={`rotate(${b * 72})`} />)}<circle r={20} fill="#2b2d31" stroke="#9aa0a6" strokeWidth={4} /></svg></div>}
       {i === 1 && <div style={{ width: 200, height: 200, borderRadius: "50%", background: "radial-gradient(circle at 40% 35%,#4a4d52,#16171a)", boxShadow: "0 0 0 14px #2b2d31, 0 30px 60px rgba(0,0,0,.6)", position: "relative" }}><div style={{ position: "absolute", left: 92, top: 18, width: 16, height: 70, borderRadius: 8, background: AMB, transformOrigin: "50% 82px", transform: `rotate(${-60 + 120 * cl(d * 1.4)}deg)` }} /></div>}
       {i === 2 && <div style={{ width: 220, height: 90, borderRadius: 45, background: "linear-gradient(180deg,rgba(230,240,255,.55),rgba(160,180,210,.25))", boxShadow: "inset 0 0 0 4px rgba(255,255,255,.4), 0 20px 40px rgba(0,0,0,.5)", position: "relative" }}>{[0, 1].map((e) => <div key={e} style={{ position: "absolute", top: 0, [e ? "right" : "left"]: 0, width: 40, height: 90, borderRadius: 12, background: "linear-gradient(90deg,#8d9399,#e4e8ec,#6d7379)" }} />)}<div style={{ position: "absolute", left: 40, right: 40, top: 43, height: 4, background: "#ffb347", boxShadow: "0 0 10px #ffb347" }} /></div>}
       {i === 3 && <div style={{ width: 280, height: 230, borderRadius: 20, background: "linear-gradient(180deg,#2b2d31,#141518)", boxShadow: "0 30px 60px rgba(0,0,0,.6)", position: "relative" }}>{[50, 190].map((x, e) => <div key={x} style={{ position: "absolute", left: x, top: -26, width: 44, height: 30, borderRadius: 6, background: e ? "#c9ced4" : RED }} />)}<div style={{ position: "absolute", left: 0, right: 0, top: 70, textAlign: "center", fontWeight: 900, fontSize: 80, color: AMB }}>12V</div></div>}
-      {i < 3 && <div style={{ position: "absolute", left: "50%", top: i === 2 ? 130 : 290, transform: "translateX(-50%)", fontWeight: 900, fontSize: 58, color: i === 2 ? AMB : TX, whiteSpace: "nowrap", textShadow: "0 6px 24px rgba(0,0,0,.6)" }}>{p.lab}</div>}
+      {i < 3 && <div style={{ position: "absolute", left: "50%", top: i === 2 ? 130 : 290, transform: "translateX(-50%)", fontWeight: 900, fontSize: 76, color: i === 2 ? AMB : TX, whiteSpace: "nowrap", textShadow: "0 6px 24px rgba(0,0,0,.6)" }}>{p.lab}</div>}
     </div>; })}
   </>;
 }}</Stage>;
@@ -240,7 +240,7 @@ export const HFanblade: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={
     <div style={{ position: "absolute", left: 1400, top: 760, width: 0, height: 0 }}>
       <div style={{ position: "absolute", left: -150, top: -360, width: 300, height: 360, borderRadius: "50% 50% 42% 42%", background: `radial-gradient(ellipse at 50% 88%, #fff, rgb(${90 + 165 * orange},${168 - 30 * orange},${255 - 215 * orange}) 45%, rgba(0,0,0,0) 74%)`, transform: `scaleY(${0.95 + 0.05 * Math.sin(tt * 2 * Math.PI * 1.4)})`, transformOrigin: "50% 100%" }} />
     </div>
-    <Tag tt={tt} at={1.2} x={720} y={120} txt="DUST" col="#c9b8a0" size={64} />
+    <Tag tt={tt} at={1.2} x={720} y={1000} txt="DUST" col="#c9b8a0" size={64} />
     <Tag tt={tt} at={it(h, 1)} x={1400} y={900} txt="ORANGE" col="#ffaa33" size={60} />
   </>;
 }}</Stage>;
@@ -251,7 +251,7 @@ export const HSprint: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t}
   const Lane = ({ y, f, col, lab, min, kid }: { y: number; f: number; col: string; lab: string; min: string; kid: React.ReactNode }) => <>
     <div style={{ position: "absolute", left: X0 - 60, top: y + 70, width: X1 - X0 + 200, height: 40, borderRadius: 4, background: "linear-gradient(180deg,#3a3532,#1c1917)" }} />
     <div style={{ position: "absolute", left: X0 + (X1 - X0) * f, top: y, transform: "translate(-50%,0)" }}>{kid}</div>
-    <div style={{ position: "absolute", left: 120, top: y - 70, fontWeight: 800, fontSize: 40, letterSpacing: 6, color: DIM }}>{lab}</div>
+    <div style={{ position: "absolute", left: 120, top: y - 90, fontWeight: 900, fontSize: 64, letterSpacing: 4, color: TX }}>{lab}</div>
     <div style={{ position: "absolute", left: X0 + (X1 - X0) * f, top: y + 110, transform: "translate(-50%,0)", fontWeight: 900, fontSize: 64, color: col }}>{min}</div>
   </>;
   return <>
@@ -274,7 +274,7 @@ export const HGreenhouse: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t
       <div style={{ position: "absolute", left: 540, top: 470, width: 120, height: 170, borderRadius: 16, background: "linear-gradient(160deg,#5b5652,#1f1c1a)", boxShadow: "0 0 80px rgba(90,168,255,.5)" }} />
       {Array.from({ length: 4 }, (_, i) => { const ph = (tt * 0.4 + i / 4) % 1; return <div key={i} style={{ position: "absolute", left: 560 + Math.sin(ph * 5) * 30, top: 400 - ph * 260, width: 100, height: 100, borderRadius: "50%", background: "radial-gradient(circle, rgba(30,30,30,.8), rgba(30,30,30,0) 70%)", opacity: smoke * (1 - ph) }} />; })}
     </div>
-    <Tag tt={tt} at={it(h, 0)} x={1640} y={300} txt="NO SMOKE" col={RED} size={52} />
-    <Tag tt={tt} at={it(h, 1)} x={1640} y={380} txt="RUN IT BLUE" col={BLU} size={52} />
+    <div style={{ opacity: 1 - eio(tt, it(h, 1) - 0.3, it(h, 1)) }}><Tag tt={tt} at={it(h, 0)} x={960} y={1000} txt="NO SMOKE" col={RED} size={60} /></div>
+    <Tag tt={tt} at={it(h, 1)} x={960} y={1000} txt="RUN IT BLUE" col={BLU} size={60} />
   </>;
 }}</Stage>;

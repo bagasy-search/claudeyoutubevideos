@@ -21,7 +21,7 @@ export const HLogstack: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={
       return <div key={j} style={{ position: "absolute", left: 300 + (i % 2) * 26, top: y - (1 - s) * 700, opacity: cl(s * 3), transform: `rotate(${(i % 2 ? -2 : 2) * (1 - s * 0.6)}deg)` }}>
         <div style={{ width: 560, height: 100, borderRadius: 50, background: "linear-gradient(180deg,#9a6a3e,#6b4526 60%,#4a2f1a)", boxShadow: "0 18px 30px rgba(0,0,0,.55), inset 0 6px 0 rgba(255,220,170,.18)", position: "relative" }}>
           <div style={{ position: "absolute", right: -4, top: 0, width: 100, height: 100, borderRadius: "50%", background: "repeating-radial-gradient(circle, #d8a86c 0 6px, #b98450 6px 11px)", boxShadow: "inset 0 0 0 6px #5a3a1f" }} />
-          <div style={{ position: "absolute", left: 40, top: 8, fontWeight: 900, fontSize: 70, letterSpacing: 6, color: i === 4 ? "#ffcf8a" : "#f3e2c8", textShadow: "0 3px 0 rgba(0,0,0,.5)", opacity: cl((tt - ats[i]) * 3) }}>{j}</div>
+          <div style={{ position: "absolute", left: 40, top: 8, fontWeight: 900, fontSize: 70, letterSpacing: 6, color: i === 4 ? "#ffcf8a" : "#f3e2c8", textShadow: "0 3px 0 rgba(0,0,0,.5)", opacity: cl((tt - ats[i]) * 3) * (1 - eio(tt, (ats[i + 1] ?? 1e9) - 0.3, ats[i + 1] ?? 1e9)) }}>{j}</div>
         </div></div>; })}
   </>;
 }}</Stage>;
@@ -58,7 +58,7 @@ export const HBubble: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t}
         {[0, 1, 2].map((i) => <div key={i} style={{ width: 220, height: 100 + (i === 2 ? 40 * cl(fix) : 0), background: "linear-gradient(180deg,#b5523a,#7a3424)", borderRadius: 6, boxShadow: "0 20px 30px rgba(0,0,0,.5)" }} />)}
       </div>
     </div>
-    <Tag tt={tt} at={it(h, 0)} x={1460} y={880} txt="SHIM" col={AMB} size={60} />
+    <Tag tt={tt} at={it(h, 0)} x={1350} y={850} txt="SHIM" col={AMB} size={60} />
     <Tag tt={tt} at={it(h, 1)} x={960} y={300} txt="LEVEL" col={GRN} size={90} />
   </>;
 }}</Stage>;
