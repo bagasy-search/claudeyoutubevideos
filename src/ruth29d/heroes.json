@@ -1,0 +1,285 @@
+[
+ {
+  "k": "trapLine",
+  "mode": "iris",
+  "at": 7.05,
+  "out": 13.29
+ },
+ {
+  "k": "peltBoard",
+  "mode": "drop",
+  "at": 36.69,
+  "out": 46.84
+ },
+ {
+  "k": "marshHoles",
+  "mode": "wipe",
+  "at": 52.89,
+  "out": 62.56
+ },
+ {
+  "k": "tailTag",
+  "mode": "drop",
+  "at": 66.36,
+  "out": 77.86
+ },
+ {
+  "k": "pieSlice",
+  "mode": "split",
+  "at": 82.61,
+  "out": 94.0
+ },
+ {
+  "k": "incisors",
+  "mode": "iris",
+  "at": 115.59,
+  "out": 127.09
+ },
+ {
+  "k": "litterTree",
+  "mode": "drop",
+  "at": 136.86,
+  "out": 142.71
+ },
+ {
+  "k": "coatRack",
+  "mode": "wipe",
+  "at": 165.34,
+  "out": 176.62
+ },
+ {
+  "k": "penMap",
+  "mode": "iris",
+  "bt": [
+   0.3
+  ],
+  "at": 181.95,
+  "out": 190.91
+ },
+ {
+  "k": "hurricanePen",
+  "mode": "split",
+  "at": 201.19,
+  "out": 209.68
+ },
+ {
+  "k": "mythCheck",
+  "mode": "drop",
+  "bt": [
+   2.87,
+   4.67,
+   7.9
+  ],
+  "at": 217.01,
+  "out": 226.51
+ },
+ {
+  "k": "manyHands",
+  "mode": "iris",
+  "at": 261.06,
+  "out": 271.6
+ },
+ {
+  "k": "hyacinthDitch",
+  "mode": "wipe",
+  "at": 294.83,
+  "out": 306.33
+ },
+ {
+  "k": "crateShip",
+  "mode": "wipe",
+  "at": 310.84,
+  "out": 320.85
+ },
+ {
+  "k": "harvestBars",
+  "mode": "split",
+  "at": 342.78,
+  "out": 353.79
+ },
+ {
+  "k": "stiltCamp",
+  "mode": "drop",
+  "at": 377.87,
+  "out": 389.37
+ },
+ {
+  "k": "trapCount",
+  "mode": "iris",
+  "at": 393.99,
+  "out": 405.34
+ },
+ {
+  "k": "stretchBoards",
+  "mode": "wipe",
+  "at": 410.31,
+  "out": 421.81
+ },
+ {
+  "k": "seesawMusk",
+  "mode": "drop",
+  "at": 428.7,
+  "out": 440.2
+ },
+ {
+  "k": "adaptSign",
+  "mode": "split",
+  "at": 448.87,
+  "out": 455.05
+ },
+ {
+  "k": "checkValve",
+  "mode": "drop",
+  "at": 478.81,
+  "out": 490.31
+ },
+ {
+  "k": "priceTag",
+  "mode": "iris",
+  "bt": [
+   1.33,
+   9.9
+  ],
+  "at": 494.52,
+  "out": 506.02
+ },
+ {
+  "k": "gasCan",
+  "mode": "wipe",
+  "at": 513.67,
+  "out": 523.32
+ },
+ {
+  "k": "eatOut",
+  "mode": "iris",
+  "bt": [
+   5.43,
+   9.9
+  ],
+  "at": 541.3,
+  "out": 552.8
+ },
+ {
+  "k": "aerialGrid",
+  "mode": "split",
+  "at": 574.05,
+  "out": 585.46
+ },
+ {
+  "k": "tailBounty",
+  "mode": "drop",
+  "at": 590.69,
+  "out": 602.19
+ },
+ {
+  "k": "acresFall",
+  "mode": "iris",
+  "at": 611.95,
+  "out": 617.8
+ },
+ {
+  "k": "recipeCard",
+  "mode": "wipe",
+  "at": 624.83,
+  "out": 632.72
+ },
+ {
+  "k": "delawareOverlay",
+  "mode": "wipe",
+  "at": 673.0,
+  "out": 684.5
+ },
+ {
+  "k": "riverFan",
+  "mode": "split",
+  "at": 707.75,
+  "out": 717.76
+ },
+ {
+  "k": "floodRoof",
+  "mode": "drop",
+  "at": 737.5,
+  "out": 747.81
+ },
+ {
+  "k": "leveeChute",
+  "mode": "iris",
+  "at": 756.38,
+  "out": 763.26
+ },
+ {
+  "k": "rigCanal",
+  "mode": "wipe",
+  "at": 789.73,
+  "out": 795.58
+ },
+ {
+  "k": "saltWedge",
+  "mode": "drop",
+  "at": 820.22,
+  "out": 827.75
+ },
+ {
+  "k": "studyRank",
+  "mode": "split",
+  "at": 846.95,
+  "out": 858.45
+ },
+ {
+  "k": "villainSpot",
+  "mode": "drop",
+  "at": 885.52,
+  "out": 892.05
+ },
+ {
+  "k": "pipeRebuild",
+  "mode": "iris",
+  "bt": [
+   5.13,
+   9.47
+  ],
+  "at": 931.86,
+  "out": 942.98
+ },
+ {
+  "k": "dogSearch",
+  "mode": "wipe",
+  "at": 977.34,
+  "out": 988.84
+ },
+ {
+  "k": "tideMarks",
+  "mode": "split",
+  "bt": [
+   1.74,
+   3.53,
+   5.47,
+   7.32,
+   8.9,
+   9.67,
+   11.11,
+   12.11,
+   12.83
+  ],
+  "at": 1063.85,
+  "out": 1078.28
+ },
+ {
+  "k": "familyTree",
+  "mode": "drop",
+  "at": 1118.04,
+  "out": 1126.79
+ },
+ {
+  "k": "bottleMessage",
+  "mode": "iris",
+  "at": 1171.41,
+  "out": 1177.26
+ },
+ {
+  "k": "bountyDecision",
+  "mode": "iris",
+  "at": 1220.56,
+  "out": 1228.93
+ }
+]
