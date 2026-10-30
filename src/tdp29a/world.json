@@ -1,0 +1,122 @@
+{
+"cams": [
+[
+0,
+"wide"
+],
+[
+68.4,
+"model"
+],
+[
+79.52,
+"table"
+],
+[
+95.56,
+"props"
+],
+[
+253.62,
+"propsL"
+],
+[
+339.06,
+"window"
+],
+[
+439.8,
+"table"
+],
+[
+581.36,
+"wide2"
+],
+[
+637.32,
+"propsR"
+],
+[
+831.76,
+"window"
+],
+[
+866.48,
+"wall"
+],
+[
+963.2,
+"low"
+],
+[
+1126.24,
+"table"
+],
+[
+1273.94,
+"wide"
+],
+[
+1347.72,
+"window"
+]
+],
+"fx": [
+[
+0,
+{
+"eve": 1,
+"tray": 1
+}
+],
+[
+82.04,
+{
+"clip": 0
+}
+],
+[
+95.56,
+{
+"tray": 1
+}
+],
+[
+470.14,
+{
+"coins": 1
+}
+],
+[
+637.32,
+{
+"tray": 0
+}
+],
+[
+1126.24,
+{
+"letter": 1
+}
+],
+[
+1347.72,
+{
+"eve": 0.6
+}
+]
+],
+"price": "",
+"nb": [
+"Saitama — Mrs. Mori",
+"tray, 7 pm, 11 yrs",
+"1.46 million",
+"meiwaku / haji / sekentei",
+"8:12 train",
+"80-50",
+"Edogawa: ~8,000",
+"Kenta — 1 can",
+"notebook: what he DID",
+"Yuki — the letter"
+]
+}
