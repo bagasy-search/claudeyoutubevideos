@@ -40,14 +40,14 @@ const maskOf = (m: Mode, p: number): string => {
 // escenario: fondo + máscara de entrada/salida + cámara curva. children recibe tt (segundos desde at).
 export const Stage: React.FC<{ t: number; h: H; mode: Mode; bg?: string; cam?: number; children: (tt: number) => React.ReactNode }> = ({ t, h, mode, bg, cam = 1, children }) => {
   const { at, out } = h;
-  if (t < at - 0.05 || t > out + 0.85) return null;
-  const inn = phys(t, at, 3.8, 0.72), xo = eIn(t, out - 0.25, out + 0.75), p = cl(inn) * (1 - xo);
+  if (t < at - 0.05 || t > out + 0.4) return null;
+  const inn = h.ph ? phys(t, at, 7, 0.85) : phys(t, at, 3.8, 0.72), xo = eIn(t, out - 0.12, out + 0.32), p = cl(inn) * (1 - xo);
   if (p <= 0.004) return null;
-  const tt = (t - at) * (h.sp ?? 1), mk = maskOf(h.ph ? "iris" : mode, p);
+  const tt = (t - at) * (h.sp ?? 1), mk = h.ph ? maskOf("iris", Math.min(1, p * 1.8)) : maskOf(mode, p);
   return <AbsoluteFill style={{ WebkitMaskImage: mk, maskImage: mk, fontFamily: FONT, color: TX } as React.CSSProperties}>
     <AbsoluteFill style={{ background: bg ?? "radial-gradient(ellipse 75% 65% at 50% 46%, #1d1a16, #070708 72%)" }} />
     {h.ph && <PhotoHero tt={tt} id={h.ph} dur={(out - at) * (h.sp ?? 1)} said={((h.said ?? at) - at) * (h.sp ?? 1)} solo={!!h.solo} ac={h.solo ? AC[h.k] : undefined} />}
-    {h.solo && h.kw && !(AC[h.k] as any)?.noword && <HeroWord tt={tt} kw={h.kw} kw2={h.kw2} said={((h.said ?? at) - at) * (h.sp ?? 1)} v={AC[h.k] ? (AC[h.k].side ?? (AC[h.k].x < 50 ? 1 : 0)) : [...h.k].reduce((a: number, c: string) => a + c.charCodeAt(0), 0) % 3} />}
+    {h.solo && h.kw && !(AC[h.k] as any)?.noword && xo < 0.4 && <AbsoluteFill style={{ opacity: 1 - cl(xo * 2.5) }}><HeroWord tt={tt} kw={h.kw} kw2={h.kw2} said={((h.said ?? at) - at) * (h.sp ?? 1)} v={AC[h.k] ? (AC[h.k].side ?? (AC[h.k].x < 50 ? 1 : 0)) : [...h.k].reduce((a: number, c: string) => a + c.charCodeAt(0), 0) % 3} /></AbsoluteFill>}
     {/* la foto del momento, desenfocada y oscura, con paralaje lento: el componente vive DENTRO de la escena, no sobre un fondo vacío */}
     {h.bg && !bg && !h.ph && <AbsoluteFill style={{ opacity: 0.38 }}><Img src={img(h.bg)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(26px) saturate(.8) brightness(.55)", transform: `scale(${1.18 + 0.03 * Math.sin(tt * 0.2)}) translateX(${-14 * tt / Math.max(4, out - at)}px)` }} /></AbsoluteFill>}
     {/* piso: charco de luz cálida y reflejo, para que los objetos apoyen en algo */}
@@ -56,7 +56,7 @@ export const Stage: React.FC<{ t: number; h: H; mode: Mode; bg?: string; cam?: n
     {/* haz de luz de arriba que respira muy lento */}
     <AbsoluteFill style={{ background: `conic-gradient(from 168deg at 50% -12%, transparent 0deg, rgba(255,226,180,${0.05 + 0.015 * Math.sin(tt * 0.5)}) 12deg, transparent 24deg)`, mixBlendMode: "screen" }} />
     <AbsoluteFill style={{ background: "radial-gradient(ellipse 120% 90% at 50% 50%, transparent 55%, rgba(0,0,0,.55))" }} />
-    <AbsoluteFill style={{ perspective: 2200, opacity: cl(inn * 1.6) * (1 - xo * 0.7) }}>
+    <AbsoluteFill style={{ perspective: 2200, opacity: cl(inn * 2.4) * (1 - xo * 0.7) }}>
       <AbsoluteFill style={{ transformStyle: "flat", perspective: 2200, transform: `translateZ(${(-300 * (1 - inn) - 650 * xo + 18 * Math.sin(tt * 0.35)) * cam}px) rotateY(${(7 * (1 - inn) + 1.8 * Math.sin(tt * 0.22 + 0.5) - 6 * xo) * cam}deg) rotateX(${(1.2 * Math.sin(tt * 0.18) + 6 * xo) * cam}deg)` }}>
         {h.solo ? null : h.ph ? <AbsoluteFill style={{ transformOrigin: "96% 50%", transform: "scale(.74)", filter: "drop-shadow(0 18px 30px rgba(0,0,0,.6))" }}>{children(tt)}</AbsoluteFill> : children(tt)}
       </AbsoluteFill>
@@ -103,7 +103,7 @@ export const PhotoHero: React.FC<{ tt: number; id: string; dur: number; said: nu
 // palabra héroe (29-oct, vuelta 3 del evaluador: «simple y perfecto»): UNA palabra o cifra grande que cae letra por letra con peso
 // justo cuando se dice, apoyada en el tercio inferior de la foto, con su sombra de contacto; el renglón chico entra después.
 export const HeroWord: React.FC<{ tt: number; kw: string; kw2?: string; said: number; v?: number }> = ({ tt, kw, kw2, said, v = 0 }) => {
-  const a0 = Math.max(0.15, said - 0.05);
+  const a0 = Math.max(0.5, said - 0.05);
   const sz = kw.length > 12 ? 100 : kw.length > 8 ? 118 : 140;
   const s2 = phys(tt, a0 + 0.3, 6, 0.6);
   const glow = cl(phys(tt, a0, 4, 0.9));
