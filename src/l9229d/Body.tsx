@@ -58,9 +58,11 @@ const HVeo: React.FC<{ t: number; h: any }> = ({ t, h }) => { const d = h.out - 
 const Heroes: React.FC<{ t: number }> = ({ t }) => <>{HS.map((h: any, i) => { const C = HC[h.k]; if (!(t > h.at - 0.1 && t < h.out + 0.9)) return null; return h.veo ? (t < h.out ? <HVeo key={i} t={t} h={h} /> : null) : C ? <AbsoluteFill key={i} style={{ transform: `scale(${1.015 + 0.025 * Math.sin((t - h.at) * 0.7)}) translate(${7 * Math.sin((t - h.at) * 0.45)}px,${5 * Math.sin((t - h.at) * 0.6)}px)` }}><C t={t} h={h} /></AbsoluteFill> : null; })}</>;
 
 // ===== los 5 errores: carrusel 3D de tarjetas 9:16 con foto (sobre el avatar se esconde) =====
+// sin planos «shot»: sin esto las 5 tarjetas del carrusel salen vacías (negro en el QC)
+const MIS_IMG = ["ld_e09", "ld_e07", "ld_e02", "ld_e27", "ld_e08"];
 const MIS = PL.ov.filter((o) => o.k === "mistake").sort((a, b) => a.n - b.n);
 const Mistakes: React.FC<{ t: number }> = ({ t }) => MIS.length ? <CoverFlow t={t} at={MIS[0].at - 0.6} out={MIS[MIS.length - 1].out} hide={nowAv(t)} kicker="" title="" col="red"
-  cards={MIS.map((m, i) => ({ img: imgNear(m.at + 2, new Set(MIS.slice(0, i).map((x) => String(x.img ?? ""))), 400) ?? undefined, at: m.at, n: m.n, title: m.txt }))} /> : null;
+  cards={MIS.map((m, i) => ({ img: imgNear(m.at + 2, new Set(MIS.slice(0, i).map((x) => String(x.img ?? ""))), 400) ?? MIS_IMG[i], at: m.at, n: m.n, title: m.txt }))} /> : null;
 
 // ===== CTA (sin guía): campana + SUSCRIBIRSE, la pregunta escrita a mano en una tarjeta rayada, y el próximo video en una ficha de receta clavada con chinche =====
 const CTA: React.FC<{ t: number }> = ({ t }) => {
