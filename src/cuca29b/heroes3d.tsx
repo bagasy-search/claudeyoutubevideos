@@ -3,7 +3,7 @@
 import React from "react";
 import * as THREE from "three";
 import { cl, eio, H, Head, img, lerp, MZ, phys, RED, Stage, Tag } from "./ckit";
-import { ctex, Estudio, fall, lathe, M, papel, RBox, rn, V3, Vapor } from "./estudio3d";
+import { ctex, Estudio, fall, lathe, M, papel, RBox, rn, V3, Vapor, humoTex } from "./estudio3d";
 import { Chorro, Foto3D, Llama, Mano, Olla, Plato } from "./kit3d";
 
 type C = React.FC<{ t: number; h: H }>;
@@ -25,7 +25,7 @@ const Tortilla: React.FC<{ p: V3; rot?: V3; r?: number; infla?: number }> = ({ p
 </group>;
 const Polvo: React.FC<{ t: number; p: V3; n?: number; o?: number; r?: number; h?: number }> = ({ t, p, n = 18, o = 0.5, r = 0.3, h = 0.6 }) => <>
   {Array.from({ length: n }, (_, i) => { const k = (t * 0.35 + i / n) % 1, a = i * 2.4 + t * 0.8; return <sprite key={i} position={[p[0] + Math.cos(a) * r * k, p[1] + k * h, p[2] + Math.sin(a) * r * k]} scale={[0.1 + k * 0.3, 0.1 + k * 0.3, 1]}>
-    <spriteMaterial color="#ffffff" transparent opacity={o * (1 - k)} depthWrite={false} /></sprite>; })}</>;
+    <spriteMaterial map={humoTex()} color="#ffffff" transparent opacity={o * (1 - k)} depthWrite={false} /></sprite>; })}</>;
 
 // ── 1 · MAZORCA: la mazorca gira de pie y se desgrana de abajo arriba; cada grano cae con peso a la mesa
 const H3Mazorca: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" mesa={false}>{(tt) => {

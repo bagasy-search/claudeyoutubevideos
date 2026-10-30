@@ -475,3 +475,6 @@ export const MAP: Record<string, C> = { mazorca: HMazorca, cubeta: HCubeta, bala
 
 import { MAP3 } from "./heroes3d";
 Object.assign(MAP, MAP3);
+import { MAPB1 } from "./heroes3d_b1";
+import { MAPB2 } from "./heroes3d_b2";
+Object.assign(MAP, MAPB1, MAPB2);

@@ -3,7 +3,7 @@
 import React from "react";
 import * as THREE from "three";
 import { cl, eio, H, Head, img, lerp, MZ, phys, RED, Stage, Tag, TX } from "./ckit";
-import { ctex, Estudio, fall, lathe, M, papel, RBox, rn, V3, Vapor, Yute } from "./estudio3d";
+import { ctex, Estudio, fall, lathe, M, papel, RBox, rn, V3, Vapor, Yute, humoTex } from "./estudio3d";
 import { Chorro, Cuchara, Foto3D, Llama, Mano, Olla, Onda } from "./kit3d";
 
 export type C = React.FC<{ t: number; h: H }>;
@@ -132,7 +132,7 @@ const H3VasoCal: C = ({ t, h }) => <Stage t={t} h={h} mode="ring" mesa={false}>{
         <mesh geometry={vasoGeo} scale={[1.6, 1.3, 1.6]} castShadow>{M.vidrio()}</mesh>
         <mesh position={[0, 0.5, 0]} scale={[1.6, 1, 1.6]}><cylinderGeometry args={[0.31, 0.3, 0.95, 40]} /><meshPhysicalMaterial color={new THREE.Color("#cfe6ee").lerp(new THREE.Color("#f6f4ee"), turbio)} transparent opacity={0.35 + 0.35 * turbio} roughness={0.2} /></mesh>
         {Array.from({ length: 26 }, (_, i) => { const a = rn(i, 1) * 6.28 + tt * (0.6 + gira * 1.4), r = 0.06 + rn(i, 2) * 0.36 * nube, y = 0.95 - nube * (0.2 + rn(i, 3) * 0.55);
-          return <sprite key={i} position={[Math.cos(a) * r, y, Math.sin(a) * r]} scale={[0.25 + 0.2 * nube, 0.25 + 0.2 * nube, 1]}><spriteMaterial color="#ffffff" transparent opacity={0.35 * nube} depthWrite={false} /></sprite>; })}
+          return <sprite key={i} position={[Math.cos(a) * r, y, Math.sin(a) * r]} scale={[0.25 + 0.2 * nube, 0.25 + 0.2 * nube, 1]}><spriteMaterial map={humoTex()} color="#ffffff" transparent opacity={0.35 * nube} depthWrite={false} /></sprite>; })}
         <group position={[0.15 + 0.12 * Math.cos(gira * 5), lerp(1.9, 1.15, cl(tt - 6.6)), 0.12 * Math.sin(gira * 5)]} rotation={[0.3, 0, 0.2]}><mesh><cylinderGeometry args={[0.035, 0.04, 1.4, 10]} />{M.madera("#a06a3c")}</mesh></group>
       </group>
       <group position={[0.9, 1.7 - 0.3 * vierte, 0.2]} rotation={[0, 0, 0.3 + 1.3 * vierte]}><Cuchara p={[0, 0, 0]} rot={[0, P2, 0]} s={1.2} mat="cromo" /></group>

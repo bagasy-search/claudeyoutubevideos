@@ -3,7 +3,7 @@ import React from "react";
 import * as THREE from "three";
 import { cl, eio, H, Head, img, lerp, MZ, phys, RED, Stage, Tag, TX } from "./ckit";
 import { ctex, Estudio, fall, lathe, M, papel, RBox, rn, V3, Vapor } from "./estudio3d";
-import { Chorro, Foto3D, Llama, Mano, Olla } from "./kit3d";
+import { Chorro, Cuchara, Foto3D, Llama, Mano, Olla } from "./kit3d";
 import { C, COL, Comal, ent, Grano, granoGeo, jarroGeo, Masa, Tortilla, tortTex } from "./heroes3d_b1";
 
 const P = Math.PI, P2 = P / 2;
@@ -273,23 +273,37 @@ const H3Mapa: C = ({ t, h }) => <Stage t={t} h={h} mode="ring" mesa={false} tone
   </>;
 }}</Stage>;
 
-// ── D · REPASO: un rollo de papel de estraza se desenrolla sobre la mesa y cada truco aparece escrito a mano en su palabra
-const REP: [number, string][] = [[0.7, "maíz criollo que suene"], [2.5, "lo que flota se tira"], [4.4, "1 kg · 3 litros · 1 cda rasa"], [8.2, "cal apagada, nunca viva"], [10.4, "la cal, aparte"],
-  [12.4, "nada de aluminio"], [13.8, "amarillo = empieza a contar"], [16.4, "la prueba de la uña"], [17.8, "cada maíz su tiempo"], [19.7, "toda la noche tapado"], [21.3, "nejayote al drenaje"],
-  [23.2, "se lava sin pelar"], [24.8, "molino: dos pasadas"], [26.7, "bolita sin grietas"], [28.5, "agua tibia"], [29.5, "comal caliente"], [31.5, "grosor de moneda"], [33.5, "chiquihuite y servilleta"],
-  [35.5, "1 kilo = 1,8 de masa"], [37.0, "$12 contra $25"], [38.5, "el azul pide menos"], [40.0, "no lo pase"], [41.5, "pozole: se descabeza"], [43.0, "la noche entera"]];
+// ── D · REPASO: el papel de estraza se desenrolla por la mesa y cada truco cae ENCIMA hecho objeto en miniatura, de a uno y con peso; la cámara lo sigue
+const REPT = [0.7, 2.5, 4.4, 8.2, 10.4, 12.4, 13.8, 16.4, 17.8, 19.7, 21.3, 23.2, 24.8, 26.7, 28.5, 29.5, 31.5, 33.5, 35.5, 37.0, 38.5, 40.0, 41.5, 43.0];
+const Mini: React.FC<{ i: number; t: number }> = ({ i, t }) => {
+  const g = (c: string, n = 5) => <>{Array.from({ length: n }, (_, j) => <Grano key={j} p={[(rn(i * 9 + j, 1) - 0.5) * 0.2, 0.03, (rn(i * 9 + j, 2) - 0.5) * 0.16]} rot={[rn(j, 3) * 3, rn(j, 4) * 3, 0]} s={0.045} c={c} />)}</>;
+  const coin = (x: number, z: number, n = 3) => <>{Array.from({ length: n }, (_, j) => <mesh key={j} position={[x, 0.012 + j * 0.022, z]} castShadow><cylinderGeometry args={[0.07, 0.07, 0.018, 28]} /><meshStandardMaterial color="#d4a63a" metalness={0.8} roughness={0.3} /></mesh>)}</>;
+  switch (i % 12) {
+    case 0: return g(COL.blanco, 7);
+    case 1: return <Olla mat="vidrio" s={0.28} nivel={0.6} caldo="#cfe4f2" t={t} />;
+    case 2: return <Cuchara p={[0, 0.02, 0]} rot={[0, 0.6, 0]} s={0.55} mat="cromo" />;
+    case 3: return <RBox p={[0, 0.14, 0]} s={[0.2, 0.28, 0.12]} r={0.02}><meshStandardMaterial color="#e9e1cf" roughness={0.95} /></RBox>;
+    case 4: return <mesh geometry={jarroGeo} scale={0.42} castShadow>{M.barro("#a65a35")}</mesh>;
+    case 5: return <Olla mat="peltre" s={0.28} nivel={0.6} caldo="#e9d9a0" t={t} />;
+    case 6: return g(COL.amarillo, 6);
+    case 7: return <><Masa p={[0, 0.07, 0]} s={0.09} />{g(COL.nixta, 3)}</>;
+    case 8: return <Comal s={0.22} />;
+    case 9: return <Tortilla p={[0, 0.02, 0]} s={0.42} infla={i === 21 ? 0.04 : 0} />;
+    case 10: return coin(0, 0, 3 + (i > 12 ? 2 : 0));
+    default: return <><Tortilla p={[0, 0.02, 0]} s={0.36} /><Tortilla p={[0.02, 0.04, 0.01]} s={0.36} /><Tortilla p={[-0.01, 0.06, 0]} s={0.36} /></>;
+  }
+};
 const H3Rollo: C = ({ t, h }) => <Stage t={t} h={h} mode="wipe" mesa={false} cam={0.5}>{(tt) => {
-  const ROW = 0.22, last = REP.filter(([a]) => tt >= a).length, scroll = Math.max(0, (last - 7) * ROW);
+  const col = (i: number) => (i % 3) - 1, row = (i: number) => Math.floor(i / 3), ROW = 0.62;
+  const last = REPT.filter((a) => tt >= a - 0.4).length, foco = Math.max(0, row(Math.max(0, last - 1)) - 0.6);
+  const camZ = 2.2 - foco * ROW, len = (row(23) + 1.6) * ROW, un = Math.min(len, 1.2 + (foco + 1.4) * ROW);
   return <>
-    <Estudio t={tt} cam={[0, 2.3, 2.6]} look={[0, 0, -0.1]} orbit={0.05}>
-      <group position={[0, 0, scroll * 0.6]}>
-        <mesh rotation={[-P2, 0, 0]} position={[0, 0.01, -REP.length * ROW / 2 + 1.0]} receiveShadow><planeGeometry args={[2.4, REP.length * ROW + 0.6]} /><meshStandardMaterial color="#c9a774" roughness={0.95} /></mesh>
-        {REP.map(([a, s], i) => { const k = cl((tt - a) * 2.2); return k > 0.01 ? <mesh key={i} rotation={[-P2, 0, 0]} position={[0, 0.012, 1.0 - 0.1 - i * ROW]} scale={[k, 1, 1]}>
-          <planeGeometry args={[2.1, 0.2]} /><meshBasicMaterial map={papel("rep" + i, [`${i + 1}. ${s}`], { w: 1024, h: 98, bg: "#c9a774", ink: "#2a1c12", size: 70 })} transparent toneMapped={false} /></mesh> : null; })}
-      </group>
-      <mesh position={[0, 0.09, -0.75 + scroll * 0.0]} rotation={[0, 0, P2]} castShadow><cylinderGeometry args={[0.09, 0.09, 2.45, 24]} /><meshStandardMaterial color="#b9965f" roughness={0.9} /></mesh>
+    <Estudio t={tt} cam={[0.15 * Math.sin(tt * 0.3), 1.9, camZ]} look={[0, 0, camZ - 1.75]} orbit={0}>
+      <mesh rotation={[-P2, 0, 0]} position={[0, 0.006, 0.9 - un / 2]} receiveShadow><planeGeometry args={[2.3, un]} /><meshStandardMaterial map={papel("estraza_liso", [""], { w: 512, h: 512, bg: "#c9a774" })} color="#d6b582" roughness={0.95} /></mesh>
+      <mesh position={[0, 0.09, 0.9 - un]} rotation={[un * 3, 0, P2]} castShadow><cylinderGeometry args={[0.09, 0.09, 2.35, 24]} /><meshStandardMaterial color="#b9965f" roughness={0.9} /></mesh>
+      {REPT.map((a, i) => { if (tt < a - 0.4) return null; const y = fall(tt, a - 0.4, 0.9), sq = 1 - 0.12 * cl(1 - y * 6) * cl((tt - a) * 3) * (1 - cl((tt - a - 0.3) * 4));
+        return <group key={i} position={[col(i) * 0.68, y, 0.55 - row(i) * ROW]} scale={[1, sq, 1]}><Mini i={i} t={tt} /></group>; })}
     </Estudio>
-    <Head tt={tt} kick="REPASO RÁPIDO" title="LOS 24, EN EL ROLLO" />
   </>;
 }}</Stage>;
 

@@ -40,7 +40,7 @@ const adobeTex = () => ctex("adobe", 512, 512, (g) => {
   const gr = g.createRadialGradient(256, 200, 40, 256, 256, 420); gr.addColorStop(0, "#e8c79e"); gr.addColorStop(1, "#a9825c"); g.fillStyle = gr; g.fillRect(0, 0, 512, 512);
   for (let i = 0; i < 1800; i++) { const v = rn(i, 9); g.fillStyle = `rgba(${110 + v * 70},${80 + v * 50},${50 + v * 30},${0.06 + 0.06 * rn(i, 4)})`; g.fillRect(rn(i, 2) * 512, rn(i, 3) * 512, 2 + 5 * rn(i, 5), 2 + 4 * rn(i, 6)); }
 });
-const humoTex = () => ctex("humo", 64, 64, (g) => {
+export const humoTex = () => ctex("humo", 64, 64, (g) => {
   const gr = g.createRadialGradient(32, 32, 0, 32, 32, 30); gr.addColorStop(0, "rgba(255,255,255,1)"); gr.addColorStop(0.5, "rgba(255,255,255,.45)"); gr.addColorStop(1, "rgba(255,255,255,0)");
   g.fillStyle = gr; g.fillRect(0, 0, 64, 64);
 });
@@ -67,6 +67,14 @@ const Env: React.FC = () => {
   return null;
 };
 
+// escala 0 = matriz singular = NaN en sombras (rectángulo negro): toda escala ≥0,001 y lo aplastado se oculta (y vuelve cuando crece)
+const ClampScales: React.FC = () => { const { scene } = useThree();
+  React.useLayoutEffect(() => { scene.traverse((o) => { const s = o.scale, u = o.userData as { _ch?: boolean };
+    const bad = !(Math.abs(s.x) >= 1e-3 && Math.abs(s.y) >= 1e-3 && Math.abs(s.z) >= 1e-3);
+    if (bad) { s.set(Math.max(1e-3, Math.abs(s.x) || 1e-3), Math.max(1e-3, Math.abs(s.y) || 1e-3), Math.max(1e-3, Math.abs(s.z) || 1e-3)); if (o.visible) { o.visible = false; u._ch = true; } }
+    else if (u._ch) { o.visible = true; u._ch = false; } }); });
+  return null; };
+
 // ---------- el estudio ----------
 export const Estudio: React.FC<{ t: number; cam?: V3; look?: V3; orbit?: number; fov?: number; mesa?: boolean; children: React.ReactNode }> = ({ t, cam = [0, 2.1, 4.6], look = [0, 0.7, 0], orbit = 0.22, fov = 34, mesa = true, children }) => {
   const tx = useTextures();
@@ -88,6 +96,7 @@ export const Estudio: React.FC<{ t: number; cam?: V3; look?: V3; orbit?: number;
     {mesa && <mesh position={[0, 6, -4.2]} receiveShadow><planeGeometry args={[60, 14]} /><meshStandardMaterial map={adobeTex()} color="#d9b48a" roughness={0.95} /></mesh>}
     {mesa && <pointLight position={[0, 3.2, -2.2]} intensity={6} distance={7} color="#ffc890" />}
     {children}
+    <ClampScales />
   </ThreeCanvas>;
 };
 
