@@ -1,0 +1,513 @@
+{
+"segs": [
+[
+3.52,
+8.42,
+"shot",
+"f01_grisagua"
+],
+[
+8.42,
+15.78,
+"shot",
+"v01"
+],
+[
+20.48,
+28.48,
+"shot",
+"v02"
+],
+[
+38.3,
+44.3,
+"shot",
+"f04_cajasvacias"
+],
+[
+52.65,
+57.62,
+"shot",
+"f05_lenny_puerta"
+],
+[
+57.62,
+63.62,
+"shot",
+"f07_espuma"
+],
+[
+70.52,
+78.52,
+"shot",
+"v03"
+],
+[
+107.16,
+111.5,
+"shot",
+"f09_quimica"
+],
+[
+124.04,
+126.99,
+"shot",
+"f10_aguasalada"
+],
+[
+147.14,
+154.14,
+"shot",
+"f12_duda_cocina"
+],
+[
+163.48,
+170.48,
+"shot",
+"f13_tapon_trampa"
+],
+[
+181.29,
+187.29,
+"shot",
+"f14_stan"
+],
+[
+207.38,
+208.69,
+"shot",
+"f16_bajomesada"
+],
+[
+255.36,
+261.09,
+"shot",
+"f18_mira_desague"
+],
+[
+271.6,
+278.6,
+"shot",
+"f19_medir"
+],
+[
+316.63,
+322.63,
+"shot",
+"f21_grasa_sarten"
+],
+[
+333.99,
+339.99,
+"shot",
+"f22_invierno"
+],
+[
+351.82,
+357.82,
+"shot",
+"f23_vela"
+],
+[
+366.17,
+373.17,
+"shot",
+"f24_pilsen"
+],
+[
+399.3,
+405.3,
+"shot",
+"f25_pelo_bano"
+],
+[
+434.23,
+441.23,
+"shot",
+"f27_herramientas"
+],
+[
+448.37,
+454.37,
+"shot",
+"f28_tazita"
+],
+[
+456.61,
+460.19,
+"shot",
+"f29_vaciar"
+],
+[
+472.99,
+475.7,
+"shot",
+"v04"
+],
+[
+498.81,
+506.81,
+"shot",
+"v05"
+],
+[
+515.33,
+523.33,
+"shot",
+"v06"
+],
+[
+531.09,
+537.09,
+"shot",
+"f33_arandela"
+],
+[
+541.59,
+542.95,
+"shot",
+"f34_cuarto_vuelta"
+],
+[
+564.26,
+570.26,
+"shot",
+"f35_pinza_rota"
+],
+[
+580.68,
+586.68,
+"shot",
+"f36_papel"
+],
+[
+613.18,
+619.18,
+"shot",
+"f37_brazo_pared"
+],
+[
+631.62,
+637.62,
+"shot",
+"f38_espiral"
+],
+[
+656.9,
+658.78,
+"shot",
+"v07"
+],
+[
+719.62,
+725.62,
+"shot",
+"f40_cable_grasa"
+],
+[
+739.57,
+742.44,
+"shot",
+"f41_cable_doblado"
+],
+[
+795.39,
+801.39,
+"shot",
+"f43_lavatorio_pop"
+],
+[
+814.77,
+822.77,
+"shot",
+"v08"
+],
+[
+847.69,
+853.69,
+"shot",
+"f46_tapon_popup"
+],
+[
+894.95,
+900.95,
+"shot",
+"f47_cepillo_pelo"
+],
+[
+947.99,
+953.99,
+"shot",
+"f49_canilla_caliente"
+],
+[
+967.73,
+971.21,
+"shot",
+"f50_olla_hirviendo"
+],
+[
+971.21,
+975.47,
+"shot",
+"f51_pvc_combado"
+],
+[
+1017.13,
+1023.13,
+"shot",
+"f52_quimicos"
+],
+[
+1049.15,
+1055.15,
+"shot",
+"f53_galvanizado"
+],
+[
+1095.35,
+1101.35,
+"shot",
+"f54_brazo_marca"
+],
+[
+1182.56,
+1188.56,
+"shot",
+"f58_balde_mostrar"
+],
+[
+1188.78,
+1192.37,
+"shot",
+"f57_libreta"
+],
+[
+1285.06,
+1291.06,
+"shot",
+"f60_colador"
+],
+[
+1312.73,
+1318.08,
+"shot",
+"f61_tirar_colador"
+],
+[
+1318.08,
+1324.08,
+"shot",
+"f62_esposa"
+],
+[
+1334.84,
+1340.66,
+"shot",
+"v09"
+],
+[
+1355.8,
+1357.07,
+"shot",
+"f63_enzima"
+],
+[
+1390.28,
+1391.93,
+"shot",
+"f56_lata_grasa"
+],
+[
+1413.32,
+1419.32,
+"shot",
+"f64_dentadura"
+],
+[
+1480.16,
+1486.08,
+"shot",
+"v10"
+],
+[
+1486.08,
+1491.66,
+"shot",
+"f65_cierre"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 96.8,
+"out": 101.8
+},
+{
+"k": "step",
+"n": 1,
+"name": "WHAT THE FIZZ DOES",
+"at": 99.78,
+"out": 102.78
+},
+{
+"k": "step",
+"n": 2,
+"name": "WHY FOAM GOES UP",
+"at": 200.06,
+"out": 203.06
+},
+{
+"k": "step",
+"n": 3,
+"name": "WHAT A CLOG IS",
+"at": 309.08,
+"out": 312.08
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE TRAP",
+"at": 418.29,
+"out": 421.29
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE PIPE IN THE WALL",
+"at": 607.18,
+"out": 610.18
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE BATHROOM SINK",
+"at": 773.55,
+"out": 776.55
+},
+{
+"k": "step",
+"n": 7,
+"name": "HOT WATER",
+"at": 928.61,
+"out": 931.61
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE CHEMICALS",
+"at": 1011.25,
+"out": 1014.25
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE $2 STRAINER",
+"at": 1279.12,
+"out": 1282.12
+},
+{
+"k": "deal",
+"at": 1127.1,
+"out": 1128.1
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Soda and vinegar",
+"at": 1128.64,
+"out": 1130.84
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Chemicals, then a plunger",
+"at": 1102.21,
+"out": 1104.41
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Pliers on plastic nuts",
+"at": 1134.1,
+"out": 1136.3
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Boiling water in PVC",
+"at": 1136.76,
+"out": 1138.96
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Grease with hot water",
+"at": 1138.78,
+"out": 1143.28
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1205.9
+},
+{
+"at": 1212.74
+},
+{
+"at": 1216.56
+},
+{
+"at": 1223.34
+},
+{
+"at": 1230.15
+},
+{
+"at": 1239.17
+},
+{
+"at": 1250.12
+},
+{
+"at": 1257.5
+}
+],
+"at": 1199.98,
+"out": 1259.5
+},
+{
+"k": "ask",
+"at": 1404.54,
+"out": 1412.54
+}
+],
+"end": 1491.66,
+"txt": {
+"recapTitle": "THE PLUMBER'S WAY",
+"recap": [
+"Pour nothing",
+"Cup out the water",
+"Towel, bucket, gloves",
+"Trap off, clean it",
+"Hand tight + ¼",
+"Auger the wall pipe",
+"Hot tap 2 min",
+"25 ft? Call a pro"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"Worst thing you pulled",
+"out of a drain?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+29.04,
+37.04
+]
+}
+}
