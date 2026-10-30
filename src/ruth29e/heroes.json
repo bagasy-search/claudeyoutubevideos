@@ -9,7 +9,8 @@
   "k": "hoofTrail",
   "mode": "wipe",
   "at": 38.65,
-  "out": 47.94
+  "out": 47.94,
+  "veo": "r_hoofTrail"
  },
  {
   "k": "trailerNight",
@@ -33,7 +34,8 @@
   "k": "earNotch",
   "mode": "iris",
   "at": 169.93,
-  "out": 179.84
+  "out": 179.84,
+  "veo": "r_earNotch"
  },
  {
   "k": "acornForest",
@@ -63,7 +65,8 @@
   "k": "huntPoster",
   "mode": "iris",
   "at": 283.21,
-  "out": 294.71
+  "out": 294.71,
+  "veo": "r_huntPoster"
  },
  {
   "k": "stateJump",
@@ -104,7 +107,8 @@
   "k": "snoutDig",
   "mode": "wipe",
   "at": 418.79,
-  "out": 429.68
+  "out": 429.68,
+  "veo": "r_snoutDig"
  },
  {
   "k": "cropPlate",
@@ -265,7 +269,8 @@
    10.23
   ],
   "at": 1061.74,
-  "out": 1073.57
+  "out": 1073.57,
+  "veo": "r_hogTrack"
  },
  {
   "k": "tuskCards",
@@ -289,6 +294,7 @@
    7.2
   ],
   "at": 1216.15,
-  "out": 1224.95
+  "out": 1224.95,
+  "veo": "r_steeringWheel"
  }
 ]

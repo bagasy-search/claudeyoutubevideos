@@ -39,15 +39,17 @@ export const FR: Record<string, Fr> = {
 const CAM = ((PLAN as unknown as { cam?: [number, number, string][] }).cam ?? []);
 const bz = (x: number) => { const c = Math.max(0, Math.min(1, x)); return c * c * (3 - 2 * c); };
 const View: React.FC<{ f: Fr; t: number; k: number; dx: number; dy: number }> = ({ f, t, k, dx, dy }) => {
-  const z = f.z * (1 + 0.035 * k), W = 1920 * z, H = 1080 * z;
+  // 30-oct: el farm marcó congelados (zoom de 3,5 % y deriva recortada en el borde): margen mínimo 6 % + zoom 7 % + respiración lenta, nunca quieto
+  const z = Math.max(1.06, f.z) * (1 + 0.07 * k + 0.018 * Math.sin(t * 0.55)), W = 1920 * z, H = 1080 * z;
   const left = Math.min(0, Math.max(1920 - W, 960 - f.x * W + dx)), top = Math.min(0, Math.max(1080 - H, 540 - f.y * H + dy));
   return <Img src={staticFile("img/" + P + f.im + ".jpg")} style={{ position: "absolute", left, top, width: W, height: H, objectFit: "cover" }} />;
 };
 export const World: React.FC<{ t: number }> = ({ t }) => {
   const i = CAM.findIndex(([a, b]) => t >= a && t < b);
-  const cur = i >= 0 ? CAM[i] : CAM.find(([a]) => a > t) ?? [0, 1e9, "kitchen"];
+  // 30-oct: fuera de un tramo de cámara (respaldo de un Veo que no llegó) se queda en el último encuadre; antes tomaba el siguiente con k<0 y el mundo salía chiquito en la esquina
+  const cur = i >= 0 ? CAM[i] : [...CAM].reverse().find(([a]) => a <= t) ?? CAM.find(([a]) => a > t) ?? [0, 1e9, "kitchen"];
   const prev = i > 0 ? CAM[i - 1] : undefined;
-  const f1 = FR[cur[2]] ?? FR.kitchen, a = cur[0], k = (t - a) / Math.max(4, cur[1] - a);
+  const f1 = FR[cur[2]] ?? FR.kitchen, a = cur[0], k = Math.min(1, Math.max(0, (t - a) / Math.max(4, cur[1] - a)));
   const dx = 16 * Math.sin(t * 0.21), dy = 9 * Math.sin(t * 0.17 + 1);
   // viaje en curva desde el encuadre anterior (si es la misma foto); si cambia de lugar, fundido corto
   if (prev && prev[1] > a - 0.05) {
