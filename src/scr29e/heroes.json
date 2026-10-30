@@ -1,0 +1,492 @@
+[
+ {
+  "k": "jerrycan",
+  "at": 6.02,
+  "out": 15.02,
+  "ph": "bucks to fill it",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 3.17
+   },
+   {
+    "at": 5.53
+   }
+  ]
+ },
+ {
+  "k": "partsbin",
+  "at": 22.94,
+  "out": 33.94,
+  "ph": "An old steel ammo can",
+  "dev": -3.4,
+  "items": [
+   {
+    "at": 3.08
+   },
+   {
+    "at": 5.35
+   },
+   {
+    "at": 7.62
+   }
+  ]
+ },
+ {
+  "k": "nightlight",
+  "at": 122.58,
+  "out": 131.58,
+  "ph": "less than a nightlight",
+  "dev": 3.06,
+  "items": [
+   {
+    "at": 3.17
+   },
+   {
+    "at": 5.53
+   }
+  ]
+ },
+ {
+  "k": "bellows",
+  "at": 152.83,
+  "out": 160.83,
+  "ph": "the fan is the bellows",
+  "dev": 1.73,
+  "items": [
+   {
+    "at": 2.67
+   }
+  ]
+ },
+ {
+  "k": "magnet",
+  "at": 187.25,
+  "out": 195.25,
+  "ph": "Stick a magnet on it",
+  "dev": 8.95,
+  "items": [
+   {
+    "at": 2.83
+   },
+   {
+    "at": 4.87
+   }
+  ]
+ },
+ {
+  "k": "peel",
+  "at": 203.65,
+  "out": 215.07,
+  "ph": "rubber gasket",
+  "dev": -4.03,
+  "items": [
+   {
+    "at": 3.97
+   },
+   {
+    "at": 7.14
+   }
+  ]
+ },
+ {
+  "k": "burnout",
+  "at": 256.95,
+  "out": 266.01,
+  "ph": "I like to do a burnout",
+  "dev": 11.19,
+  "items": [
+   {
+    "at": 4.38
+   }
+  ]
+ },
+ {
+  "k": "hatch",
+  "at": 273.44,
+  "out": 284.44,
+  "ph": "you cut a little door",
+  "dev": -0.64,
+  "items": [
+   {
+    "at": 3.83
+   },
+   {
+    "at": 6.87
+   }
+  ]
+ },
+ {
+  "k": "piepan",
+  "at": 305.68,
+  "out": 316.68,
+  "ph": "goes the burn bowl",
+  "dev": 8.94,
+  "items": [
+   {
+    "at": 3.83
+   },
+   {
+    "at": 6.87
+   }
+  ]
+ },
+ {
+  "k": "perforate",
+  "at": 323.78,
+  "out": 333.78,
+  "ph": "Drill holes all",
+  "dev": 0.84,
+  "items": [
+   {
+    "at": 1.62
+   },
+   {
+    "at": 6.06
+   }
+  ]
+ },
+ {
+  "k": "jet",
+  "at": 339.53,
+  "out": 348.62,
+  "ph": "The fan blows air into the tube",
+  "dev": 0.19,
+  "items": [
+   {
+    "at": 3.07
+   },
+   {
+    "at": 5.59
+   }
+  ]
+ },
+ {
+  "k": "meltdown",
+  "at": 389.94,
+  "out": 400.56,
+  "ph": "Two hours later the plastic",
+  "dev": 4.86,
+  "items": [
+   {
+    "at": 2.98
+   },
+   {
+    "at": 5.16
+   },
+   {
+    "at": 7.34
+   }
+  ]
+ },
+ {
+  "k": "clipboard",
+  "at": 458.19,
+  "out": 469.96,
+  "ph": "all together",
+  "dev": -6.6,
+  "items": [
+   {
+    "at": 3.27
+   },
+   {
+    "at": 5.74
+   },
+   {
+    "at": 8.2
+   }
+  ]
+ },
+ {
+  "k": "compass",
+  "at": 511.47,
+  "out": 520.47,
+  "ph": "face it south",
+  "dev": -0.58,
+  "items": [
+   {
+    "at": 3.16
+   }
+  ]
+ },
+ {
+  "k": "protractor",
+  "at": 524.19,
+  "out": 534.05,
+  "ph": "add 15 degrees",
+  "dev": 1.97,
+  "items": [
+   {
+    "at": 2.89
+   },
+   {
+    "at": 4.78
+   },
+   {
+    "at": 6.77
+   }
+  ]
+ },
+ {
+  "k": "cells",
+  "at": 586.9,
+  "out": 598.24,
+  "ph": "times 12 volts",
+  "dev": -0.99,
+  "items": [
+   {
+    "at": 3.95
+   },
+   {
+    "at": 7.09
+   }
+  ]
+ },
+ {
+  "k": "blowout",
+  "at": 619.66,
+  "out": 630.66,
+  "ph": "inline fuse",
+  "dev": -3.27,
+  "items": [
+   {
+    "at": 3.83
+   },
+   {
+    "at": 6.87
+   }
+  ]
+ },
+ {
+  "k": "terminals",
+  "at": 671.33,
+  "out": 680.33,
+  "ph": "three pairs of terminals",
+  "dev": -4.44,
+  "items": [
+   {
+    "at": 2.58
+   },
+   {
+    "at": 4.35
+   },
+   {
+    "at": 6.12
+   }
+  ]
+ },
+ {
+  "k": "guard",
+  "at": 686.97,
+  "out": 697.63,
+  "ph": "the battery overcharges",
+  "dev": -5.48,
+  "items": [
+   {
+    "at": 2.99
+   },
+   {
+    "at": 5.18
+   },
+   {
+    "at": 7.37
+   }
+  ]
+ },
+ {
+  "k": "tapelabel",
+  "at": 738.69,
+  "out": 748.54,
+  "ph": "Battery first",
+  "dev": -3.62,
+  "items": [
+   {
+    "at": 2.79
+   },
+   {
+    "at": 4.77
+   },
+   {
+    "at": 6.76
+   }
+  ]
+ },
+ {
+  "k": "shutter",
+  "at": 775.68,
+  "out": 783.68,
+  "ph": "Cover the panel with a piece of cardboard",
+  "dev": -0.59,
+  "items": [
+   {
+    "at": 2.83
+   },
+   {
+    "at": 4.87
+   }
+  ]
+ },
+ {
+  "k": "sediment",
+  "at": 787.52,
+  "out": 797.1,
+  "ph": "Let it settle first",
+  "dev": -1.9,
+  "items": [
+   {
+    "at": 3.36
+   },
+   {
+    "at": 5.92
+   }
+  ]
+ },
+ {
+  "k": "needle",
+  "at": 819.81,
+  "out": 828.81,
+  "ph": "needle valve is better",
+  "dev": 4.98,
+  "items": [
+   {
+    "at": 1.06
+   }
+  ]
+ },
+ {
+  "k": "flamecheck",
+  "at": 856.48,
+  "out": 864.48,
+  "ph": "yellow and lazy",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 1.9
+   }
+  ]
+ },
+ {
+  "k": "zones",
+  "at": 901.39,
+  "out": 913.12,
+  "ph": "a pot of water boils",
+  "dev": 9.71,
+  "items": [
+   {
+    "at": 3.26
+   },
+   {
+    "at": 5.72
+   },
+   {
+    "at": 8.18
+   }
+  ]
+ },
+ {
+  "k": "weather",
+  "at": 932.51,
+  "out": 945.38,
+  "ph": "Most of us aren t in the garage",
+  "dev": -6.18,
+  "items": [
+   {
+    "at": 4.46
+   },
+   {
+    "at": 8.11
+   }
+  ]
+ },
+ {
+  "k": "sundial",
+  "at": 1047.41,
+  "out": 1057.27,
+  "ph": "what a normal day looks like",
+  "dev": -3.57,
+  "items": [
+   {
+    "at": 3.45
+   },
+   {
+    "at": 6.11
+   }
+  ]
+ },
+ {
+  "k": "barn",
+  "at": 1131.74,
+  "out": 1141.74,
+  "ph": "crack a window",
+  "dev": -4.61,
+  "items": [
+   {
+    "at": 4.85
+   }
+  ]
+ },
+ {
+  "k": "inbox",
+  "at": 1164.42,
+  "out": 1174.92,
+  "ph": "can I use a car battery",
+  "dev": -4.87,
+  "items": [
+   {
+    "at": 2.95
+   },
+   {
+    "at": 5.1
+   },
+   {
+    "at": 7.26
+   }
+  ]
+ },
+ {
+  "k": "receipt",
+  "at": 1248.41,
+  "out": 1261.03,
+  "ph": "add up what this costs",
+  "dev": 1.84,
+  "items": [
+   {
+    "at": 4.38
+   },
+   {
+    "at": 7.95
+   }
+  ]
+ },
+ {
+  "k": "seesaw",
+  "at": 1280.76,
+  "out": 1289.76,
+  "ph": "Compare that to",
+  "dev": 0.09,
+  "items": [
+   {
+    "at": 4.77
+   }
+  ]
+ },
+ {
+  "k": "lever",
+  "at": 1402.54,
+  "out": 1408.54,
+  "ph": "subscribe to the Scrap Workshop",
+  "dev": -0.64
+ },
+ {
+  "k": "cabinmap",
+  "at": 1413.98,
+  "out": 1423.98,
+  "ph": "would you run this",
+  "dev": 0.18,
+  "items": [
+   {
+    "at": 3.54
+   }
+  ]
+ }
+]
