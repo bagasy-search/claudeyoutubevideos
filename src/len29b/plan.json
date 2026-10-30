@@ -1,0 +1,524 @@
+{
+"segs": [
+[
+4.48,
+6.46,
+"shot",
+"f01_thanksgiving_sink"
+],
+[
+6.46,
+14.46,
+"shot",
+"v01"
+],
+[
+19.49,
+27.49,
+"shot",
+"v02"
+],
+[
+29.18,
+31.42,
+"shot",
+"f03_fountain"
+],
+[
+31.42,
+33.26,
+"shot",
+"f04_both_full"
+],
+[
+39.7,
+45.7,
+"shot",
+"f06_truck_night"
+],
+[
+49.3,
+55.3,
+"shot",
+"f08_plunger_closeup"
+],
+[
+76.62,
+80.31,
+"shot",
+"f07_bucket_auger"
+],
+[
+106.46,
+109.16,
+"shot",
+"f02_plunger_left"
+],
+[
+135.16,
+142.16,
+"shot",
+"f09_pipes_under"
+],
+[
+158.52,
+161.17,
+"shot",
+"f10_novak"
+],
+[
+184.55,
+192.55,
+"shot",
+"v03"
+],
+[
+193.94,
+195.79,
+"shot",
+"f11_rag_plate"
+],
+[
+214.04,
+220.04,
+"shot",
+"f12_dishwasher_open"
+],
+[
+237.19,
+243.19,
+"shot",
+"f13_airgap"
+],
+[
+256.72,
+259.7,
+"shot",
+"v04"
+],
+[
+259.7,
+265.7,
+"shot",
+"f15_spring_clamp"
+],
+[
+277.56,
+280.75,
+"shot",
+"f16_lenny_dishwasher"
+],
+[
+308.3,
+312.8,
+"shot",
+"f17_listening"
+],
+[
+318.6,
+324.6,
+"shot",
+"f18_slow_one_side"
+],
+[
+353.65,
+359.65,
+"shot",
+"f19_laundry_tub"
+],
+[
+400.68,
+406.17,
+"shot",
+"f20_measuring_cup"
+],
+[
+406.17,
+411.56,
+"shot",
+"f21_cabinet_empty"
+],
+[
+435.4,
+441.4,
+"shot",
+"f22_slipnut_hand"
+],
+[
+452.52,
+460.52,
+"shot",
+"v05"
+],
+[
+467.63,
+473.63,
+"shot",
+"f23_trap_inside"
+],
+[
+486.26,
+492.26,
+"shot",
+"f24_trap_clean"
+],
+[
+503.39,
+509.39,
+"shot",
+"f25_roasting_pan"
+],
+[
+509.69,
+514.69,
+"shot",
+"f26_pasta_water"
+],
+[
+545.33,
+548.28,
+"shot",
+"f27_grease_cutpipe"
+],
+[
+571.71,
+577.71,
+"shot",
+"f28_restaurant"
+],
+[
+589.7,
+591.81,
+"shot",
+"f29_basement_grease"
+],
+[
+591.81,
+597.81,
+"shot",
+"f30_owner"
+],
+[
+628.01,
+632.63,
+"shot",
+"f31_hardware_aisle"
+],
+[
+636.79,
+641.33,
+"shot",
+"f32_two_tools"
+],
+[
+641.33,
+647.33,
+"shot",
+"f33_lenny_auger"
+],
+[
+656.03,
+664.03,
+"shot",
+"v06"
+],
+[
+712.03,
+717.52,
+"shot",
+"v07"
+],
+[
+723.5,
+729.5,
+"shot",
+"f37_gray_lump"
+],
+[
+739.39,
+745.39,
+"shot",
+"f35_kinked"
+],
+[
+748.32,
+750.64,
+"shot",
+"f36_drill_auger"
+],
+[
+791.41,
+793.88,
+"shot",
+"f38_washer"
+],
+[
+793.88,
+797.13,
+"shot",
+"f51_full_sinks"
+],
+[
+797.13,
+802.86,
+"shot",
+"v08"
+],
+[
+816.05,
+819.42,
+"shot",
+"f39_paper_towel"
+],
+[
+827.32,
+833.32,
+"shot",
+"f40_hot_tap"
+],
+[
+857.24,
+863.24,
+"shot",
+"f41_disposal_side"
+],
+[
+904.53,
+910.53,
+"shot",
+"f43_coffee_can"
+],
+[
+914.39,
+917.28,
+"shot",
+"f44_peels_pile"
+],
+[
+954.88,
+961.88,
+"shot",
+"f45_cold_plate"
+],
+[
+974.86,
+980.86,
+"shot",
+"f46_hairbrush"
+],
+[
+1037.26,
+1043.26,
+"shot",
+"f47_stan"
+],
+[
+1054.52,
+1062.52,
+"shot",
+"v09"
+],
+[
+1078.8,
+1081.45,
+"shot",
+"f48_trap_arm"
+],
+[
+1138.76,
+1144.76,
+"shot",
+"f49_main_cleanout"
+],
+[
+1167.1,
+1173.1,
+"shot",
+"f50_roof_vent"
+],
+[
+1188.56,
+1194.56,
+"shot",
+"f05_lenny_kitchen"
+],
+[
+1307.18,
+1311.1,
+"shot",
+"v10"
+],
+[
+1311.1,
+1314.64,
+"shot",
+"f52_lenny_end"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 99.26,
+"out": 104.26
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE OTHER SIDE",
+"at": 102.32,
+"out": 105.32
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE DISHWASHER",
+"at": 209.84,
+"out": 212.84
+},
+{
+"k": "step",
+"n": 3,
+"name": "READ YOUR SINK",
+"at": 304.6,
+"out": 307.6
+},
+{
+"k": "step",
+"n": 4,
+"name": "TRAP OFF",
+"at": 380.69,
+"out": 383.69
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE GREASE CANDLE",
+"at": 497.45,
+"out": 500.45
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE HAND AUGER",
+"at": 610.65,
+"out": 613.65
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE PLUMBER'S TEST",
+"at": 766.39,
+"out": 769.39
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE TRAP ARM",
+"at": 1073.18,
+"out": 1076.18
+},
+{
+"k": "deal",
+"at": 1004.28,
+"out": 1005.28
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "One side, no block",
+"at": 1007.42,
+"out": 1009.62
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Plunging after chemicals",
+"at": 1012.52,
+"out": 1014.72
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Pliers on plastic nuts",
+"at": 1020.92,
+"out": 1023.12
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Drill at full speed",
+"at": 1024.74,
+"out": 1026.94
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Grease down the sink",
+"at": 1030.66,
+"out": 1035.16
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1183.66
+},
+{
+"at": 1190.44
+},
+{
+"at": 1200.06
+},
+{
+"at": 1207.24
+},
+{
+"at": 1216.36
+},
+{
+"at": 1219.6
+},
+{
+"at": 1224.16
+},
+{
+"at": 1225.46
+}
+],
+"at": 1176.52,
+"out": 1227.46
+},
+{
+"k": "ask",
+"at": 1239.2,
+"out": 1247.2
+}
+],
+"end": 1314.64,
+"txt": {
+"recapTitle": "THANKSGIVING EVE",
+"recap": [
+"No dishwasher",
+"Block, clamp, plunge",
+"Trap off, look",
+"Auger the wall",
+"Hand tight + ¼",
+"Drain both at once",
+"Hot tap 2 min",
+"Grease in the can"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"Double or single sink?",
+"Last time you looked?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+33.16,
+41.16
+]
+}
+}
