@@ -1,0 +1,264 @@
+[
+ {
+  "k": "tractorLine",
+  "mode": "iris",
+  "at": 23.57,
+  "out": 31.5
+ },
+ {
+  "k": "blackSky",
+  "mode": "wipe",
+  "at": 38.97,
+  "out": 49.36
+ },
+ {
+  "k": "dustEcho",
+  "mode": "split",
+  "at": 118.23,
+  "out": 129.73
+ },
+ {
+  "k": "breadLine",
+  "mode": "drop",
+  "at": 151.71,
+  "out": 161.17
+ },
+ {
+  "k": "soilCore",
+  "mode": "drop",
+  "at": 183.81,
+  "out": 193.64
+ },
+ {
+  "k": "herdLoop",
+  "mode": "iris",
+  "at": 204.37,
+  "out": 210.87
+ },
+ {
+  "k": "candles",
+  "mode": "drop",
+  "at": 235.27,
+  "out": 242.55
+ },
+ {
+  "k": "hectareGrow",
+  "mode": "wipe",
+  "at": 281.19,
+  "out": 292.22
+ },
+ {
+  "k": "whisper",
+  "mode": "iris",
+  "at": 315.1,
+  "out": 326.6
+ },
+ {
+  "k": "trainCars",
+  "mode": "iris",
+  "at": 348.62,
+  "out": 360.12
+ },
+ {
+  "k": "tentCold",
+  "mode": "drop",
+  "at": 364.57,
+  "out": 375.19
+ },
+ {
+  "k": "farmPins",
+  "mode": "split",
+  "at": 380.84,
+  "out": 392.34
+ },
+ {
+  "k": "tearCalendar",
+  "mode": "wipe",
+  "bt": [
+   0.3,
+   0.3,
+   1.76
+  ],
+  "at": 398.62,
+  "out": 409.07
+ },
+ {
+  "k": "grainRot",
+  "mode": "iris",
+  "bt": [
+   8.11
+  ],
+  "at": 445.65,
+  "out": 455.36
+ },
+ {
+  "k": "poodWeight",
+  "mode": "drop",
+  "at": 426.41,
+  "out": 437.91
+ },
+ {
+  "k": "coinRain",
+  "mode": "wipe",
+  "at": 478.39,
+  "out": 489.17
+ },
+ {
+  "k": "moldboard",
+  "mode": "split",
+  "at": 493.75,
+  "out": 503.13,
+  "veo": "r_moldboard"
+ },
+ {
+  "k": "wheatRepeat",
+  "mode": "wipe",
+  "at": 524.23,
+  "out": 535.73
+ },
+ {
+  "k": "bareFallow",
+  "mode": "iris",
+  "at": 540.43,
+  "out": 550.42
+ },
+ {
+  "k": "capitolDust",
+  "mode": "drop",
+  "at": 589.71,
+  "out": 601.21
+ },
+ {
+  "k": "lessonShelf",
+  "mode": "drop",
+  "bt": [
+   4.19,
+   6.75,
+   8.05
+  ],
+  "at": 606.81,
+  "out": 617.58
+ },
+ {
+  "k": "caliOverlay",
+  "mode": "split",
+  "at": 655.49,
+  "out": 665.53
+ },
+ {
+  "k": "windComb",
+  "mode": "wipe",
+  "at": 701.93,
+  "out": 713.32
+ },
+ {
+  "k": "noonDark",
+  "mode": "iris",
+  "at": 736.67,
+  "out": 748.17
+ },
+ {
+  "k": "grainShips",
+  "mode": "drop",
+  "bt": [
+   0.3,
+   0.3
+  ],
+  "at": 771.9,
+  "out": 783.4
+ },
+ {
+  "k": "stripPlots",
+  "mode": "iris",
+  "bt": [
+   0.3,
+   3.11,
+   6.97
+  ],
+  "at": 821.49,
+  "out": 832.6
+ },
+ {
+  "k": "flatCutter",
+  "mode": "split",
+  "at": 872.75,
+  "out": 884.25
+ },
+ {
+  "k": "nobleBlade",
+  "mode": "wipe",
+  "at": 908.81,
+  "out": 920.07
+ },
+ {
+  "k": "emptyStand",
+  "mode": "iris",
+  "at": 953.99,
+  "out": 965.49
+ },
+ {
+  "k": "deskPlate",
+  "mode": "drop",
+  "at": 970.86,
+  "out": 981.25,
+  "veo": "r_deskPlate"
+ },
+ {
+  "k": "erosionNeedle",
+  "mode": "wipe",
+  "at": 988.31,
+  "out": 997.82
+ },
+ {
+  "k": "billEnvelopes",
+  "mode": "wipe",
+  "bt": [
+   3.23,
+   5.57,
+   9.9
+  ],
+  "at": 1020.32,
+  "out": 1031.82
+ },
+ {
+  "k": "furrowYears",
+  "mode": "split",
+  "bt": [
+   3.34,
+   4.45,
+   5.5,
+   6.67,
+   8.6,
+   10.12,
+   10.97,
+   11.97
+  ],
+  "at": 1168.39,
+  "out": 1181.96,
+  "veo": "r_furrowYears"
+ },
+ {
+  "k": "mailbag",
+  "mode": "drop",
+  "at": 1231.92,
+  "out": 1242.72
+ },
+ {
+  "k": "quotaBoard",
+  "mode": "iris",
+  "at": 1282.35,
+  "out": 1293.22
+ },
+ {
+  "k": "soilJar",
+  "mode": "drop",
+  "at": 1317.8,
+  "out": 1327.88
+ },
+ {
+  "k": "coverSoil",
+  "mode": "wipe",
+  "at": 1370.69,
+  "out": 1377.49
+ }
+]
