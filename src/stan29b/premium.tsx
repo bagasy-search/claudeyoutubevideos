@@ -78,6 +78,7 @@ const Ico: React.FC<{ k: IcoK; c: string; p: number; t: number; n?: string }> = 
 
 // ---------- chip: el ícono salta (resorte) y de él se desenrolla la pastilla con la frase; al irse se enrolla de vuelta ----------
 export const Chip: React.FC<{ t: number; at: number; out: number; text: string; col?: string; x?: number; y?: number }> = ({ t, at, out, text, col, x = 96, y = 92 }) => {
+  if (true) return null; // 29-oct: sin píldoras arriba a la izquierda (regla del creador)
   if (t < at - 0.05 || t > out + 0.6) return null;
   const [k, n, txt] = icoOf(text);
   const c = k === "no" ? ACC.red : acc(col);
@@ -266,7 +267,7 @@ export const DayClock: React.FC<{ t: number; at: number; out: number; marks: [nu
   if (vis(t, at, out) <= 0.01) return null;
   let h = marks[0][1];
   for (let i = 1; i < marks.length; i++) h += (marks[i][1] - marks[i - 1][1]) * cl(phys(t, marks[i][0], 3.5, 0.75));
-  const hh = Math.floor(h), mm = Math.round((h - hh) * 60), day = h >= 8 && h < 18.5;
+  const tm = Math.round(h * 60), hh = Math.floor(tm / 60), mm = tm % 60, day = h >= 8 && h < 18.5;
   return <div style={{ position: "absolute", right: 96, top: 92, ...rise(t, at, out, 16) }}>
     <Panel style={{ display: "flex", alignItems: "center", gap: 22, padding: "16px 30px 16px 18px", borderRadius: 60 }}>
       <svg width={92} height={92} viewBox="-50 -50 100 100">
@@ -347,10 +348,12 @@ export const StepTitle: React.FC<{ t: number; at: number; n: number; name: strin
 export const Words: React.FC<{ t: number; items: { at: number; txt: string; col?: string }[]; out: number; y?: number; size?: number }> = ({ t, items, out, y = 200, size = 96 }) => {
   if (t < items[0].at - 0.05 || t > out + 0.6) return null;
   const xo = eIn(t, out - 0.05, out + 0.5);
-  return <div style={{ position: "absolute", left: 0, right: 0, top: y, display: "flex", justifyContent: "center", gap: 56, opacity: 1 - xo, fontFamily: FONT, perspective: 1200 }}>
+  // 29-oct: entra siempre en pantalla (3-4 frases a 96 px se salían por los bordes)
+  const chars = items.reduce((n, w) => n + w.txt.length, 0), fs = Math.min(size, Math.floor(1700 / (chars * 0.66 + (items.length - 1) * 0.6)));
+  return <div style={{ position: "absolute", left: 80, right: 80, top: y, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 56, opacity: 1 - xo, fontFamily: FONT, perspective: 1200 }}>
     {items.map((w, i) => {
       const s = phys(t, w.at, 6.5, 0.4);
-      return <div key={i} style={{ fontWeight: 900, fontSize: size, letterSpacing: 1, color: w.col ?? G.txt, textShadow: G.soft, opacity: cl(s * 1.8),
+      return <div key={i} style={{ fontWeight: 900, fontSize: fs, letterSpacing: 1, color: w.col ?? G.txt, textShadow: G.soft, opacity: cl(s * 1.8),
         transform: `translateY(${(1 - s) * -90 - xo * 20}px) rotateX(${(1 - s) * 60}deg) scale(${1 - xo * 0.06})`, whiteSpace: "nowrap" }}>{w.txt}</div>;
     })}
   </div>;
