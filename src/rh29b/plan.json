@@ -1,0 +1,1810 @@
+{
+"segs": [
+[
+4.5,
+8.24,
+"shot",
+"n_vidrio_gotas"
+],
+[
+8.24,
+12.36,
+"shot",
+"n_cortina_mojada"
+],
+[
+12.36,
+16.162,
+"shot",
+"v01_goma"
+],
+[
+21.2,
+25.74,
+"shot",
+"n_auto_invierno_ohio"
+],
+[
+25.74,
+30.08,
+"shot",
+"n_telefono_pared_cocina"
+],
+[
+30.08,
+31.452,
+"shot",
+"n_lavandina_alfeizar"
+],
+[
+37.1,
+44.02,
+"shot",
+"n_goma_blanqueada"
+],
+[
+44.02,
+46.96,
+"shot",
+"n_ventana_llorando"
+],
+[
+46.96,
+50.082,
+"shot",
+"n_charco_alfeizar"
+],
+[
+54.122,
+57.24,
+"shot",
+"n_casa_parma_1998"
+],
+[
+57.24,
+62.9,
+"shot",
+"n_higrometro_caja"
+],
+[
+62.9,
+65.4,
+"shot",
+"n_alfeizar_roble"
+],
+[
+70.228,
+72.98,
+"shot",
+"n_libro_marron_ventana"
+],
+[
+72.98,
+78.94,
+"shot",
+"n_factura_ventana"
+],
+[
+78.94,
+83.4,
+"shot",
+"n_alcancia_vidrio"
+],
+[
+87.1,
+93.64,
+"shot",
+"n_lavandina_bajo_pileta"
+],
+[
+93.64,
+100.256,
+"shot",
+"n_vaso_agua_jarra"
+],
+[
+106.416,
+111.5,
+"shot",
+"n_azulejo_blanco"
+],
+[
+111.5,
+115.84,
+"shot",
+"n_goma_macro"
+],
+[
+115.84,
+117.5,
+"shot",
+"n_madera_porosa"
+],
+[
+123.2,
+129.92,
+"shot",
+"n_raices_moho"
+],
+[
+129.92,
+132.4,
+"shot",
+"n_maleza_raices"
+],
+[
+132.4,
+135.766,
+"shot",
+"n_spray_lavandina"
+],
+[
+140.115,
+145.22,
+"shot",
+"n_goma_parece_limpia"
+],
+[
+145.22,
+151.07,
+"shot",
+"n_gotas_lavandina"
+],
+[
+157.0,
+162.74,
+"shot",
+"n_moho_vuelve"
+],
+[
+162.74,
+167.865,
+"shot",
+"n_folleto_moho"
+],
+[
+172.331,
+184.0,
+"shot",
+"n_hisopo_vaso"
+],
+[
+184.0,
+185.463,
+"shot",
+"n_hisopo_mojar"
+],
+[
+189.505,
+197.16,
+"shot",
+"n_hisopo_goma"
+],
+[
+197.16,
+200.4,
+"shot",
+"n_hisopo_gris"
+],
+[
+206.2,
+215.44,
+"shot",
+"n_esquina_inferior"
+],
+[
+215.44,
+218.172,
+"shot",
+"n_aspiradora_pared"
+],
+[
+222.938,
+228.84,
+"shot",
+"n_ventana_seca_antes"
+],
+[
+228.84,
+232.54,
+"shot",
+"n_esporas_luz"
+],
+[
+232.54,
+234.5,
+"shot",
+"n_trapo_seco_ventana"
+],
+[
+240.5,
+246.78,
+"shot",
+"n_cortina_manchas"
+],
+[
+246.78,
+251.5,
+"shot",
+"v04_aspira"
+],
+[
+255.821,
+262.86,
+"shot",
+"n_riel_corredizo"
+],
+[
+262.86,
+266.58,
+"shot",
+"n_boquilla_riel"
+],
+[
+266.58,
+269.6,
+"shot",
+"n_guantes_barbijo"
+],
+[
+273.3,
+275.94,
+"shot",
+"n_ventana_abierta_frio"
+],
+[
+275.94,
+283.22,
+"shot",
+"n_botella_marron_alfeizar"
+],
+[
+283.22,
+285.2,
+"shot",
+"n_farmacia_estante"
+],
+[
+291.1,
+295.0,
+"shot",
+"v05_rocia"
+],
+[
+295.0,
+298.94,
+"shot",
+"n_burbujas_goma"
+],
+[
+298.94,
+301.4,
+"shot",
+"n_peroxido_madera"
+],
+[
+307.1,
+312.96,
+"shot",
+"n_gotas_limpias_vidrio"
+],
+[
+312.96,
+318.84,
+"shot",
+"n_marco_vinilo"
+],
+[
+318.84,
+319.6,
+"shot",
+"n_timer_cocina_ventana"
+],
+[
+324.508,
+327.54,
+"shot",
+"n_trapo_rapido"
+],
+[
+327.54,
+332.18,
+"shot",
+"n_cafe_taza_cocina"
+],
+[
+332.18,
+335.358,
+"shot",
+"n_dos_botellas_separadas"
+],
+[
+341.5,
+345.64,
+"shot",
+"n_ventana_abierta_bano_frio"
+],
+[
+345.64,
+349.3,
+"shot",
+"n_balde_enjuague"
+],
+[
+349.3,
+353.8,
+"shot",
+"n_cepillo_viejo_ventana"
+],
+[
+358.4,
+362.28,
+"shot",
+"v06_cepillo"
+],
+[
+362.28,
+368.4,
+"shot",
+"n_cepillo_alambre"
+],
+[
+368.4,
+370.994,
+"shot",
+"n_cepillo_veta"
+],
+[
+376.1,
+383.84,
+"shot",
+"n_trapo_doblado"
+],
+[
+383.84,
+386.4,
+"shot",
+"n_trapo_cuatro"
+],
+[
+389.8,
+393.66,
+"shot",
+"n_reloj_pared"
+],
+[
+393.66,
+397.46,
+"shot",
+"n_dos_rondas"
+],
+[
+397.46,
+404.1,
+"shot",
+"n_marco_exterior"
+],
+[
+408.8,
+414.88,
+"shot",
+"n_agujero_drenaje"
+],
+[
+414.88,
+418.759,
+"shot",
+"n_lapiz_agujero"
+],
+[
+423.646,
+429.44,
+"shot",
+"n_agujero_tapado"
+],
+[
+429.44,
+433.7,
+"shot",
+"n_riel_agua_quieta"
+],
+[
+438.002,
+441.16,
+"shot",
+"n_ranura_interior"
+],
+[
+441.16,
+445.9,
+"shot",
+"v07_drenaje"
+],
+[
+445.9,
+451.564,
+"shot",
+"n_vaso_agua_riel"
+],
+[
+455.604,
+461.98,
+"shot",
+"n_seis_ventanas"
+],
+[
+461.98,
+464.62,
+"shot",
+"n_tierra_brocheta"
+],
+[
+464.62,
+466.964,
+"shot",
+"n_brocheta_vaso"
+],
+[
+473.0,
+479.12,
+"shot",
+"n_papel_secando"
+],
+[
+479.12,
+481.64,
+"shot",
+"n_secador_ventana"
+],
+[
+481.64,
+485.4,
+"shot",
+"n_ventilador_ventana"
+],
+[
+490.6,
+494.96,
+"shot",
+"n_ventana_limpia_sol"
+],
+[
+494.96,
+500.12,
+"shot",
+"n_libro_marron_abierto"
+],
+[
+500.12,
+502.958,
+"shot",
+"n_calafateo_ducha"
+],
+[
+507.735,
+511.72,
+"shot",
+"n_alacena_botellas"
+],
+[
+511.72,
+517.44,
+"shot",
+"n_billete_100"
+],
+[
+517.44,
+519.888,
+"shot",
+"n_taza_libro"
+],
+[
+524.804,
+535.64,
+"shot",
+"n_toalla_enrollada_alfeizar"
+],
+[
+535.64,
+538.169,
+"shot",
+"n_casa_ladrillo_parma"
+],
+[
+542.845,
+547.94,
+"shot",
+"n_alfeizar_empapado"
+],
+[
+547.94,
+553.26,
+"shot",
+"n_madera_gris"
+],
+[
+553.26,
+556.069,
+"shot",
+"n_toallas_viejas_enrolladas"
+],
+[
+562.405,
+566.84,
+"shot",
+"n_gotas_noche"
+],
+[
+566.84,
+570.56,
+"shot",
+"v08_toalla"
+],
+[
+570.56,
+572.3,
+"shot",
+"n_toalla_mojada_mano"
+],
+[
+576.4,
+583.36,
+"shot",
+"n_secador_goma"
+],
+[
+583.36,
+587.32,
+"shot",
+"n_vidrio_limpio_seco"
+],
+[
+587.32,
+588.4,
+"shot",
+"n_alfeizar_limpio"
+],
+[
+592.6,
+599.36,
+"shot",
+"n_toalla_y_secador"
+],
+[
+599.36,
+604.0,
+"shot",
+"n_higrometro_mesa"
+],
+[
+609.132,
+613.16,
+"shot",
+"n_ferreteria_estante"
+],
+[
+613.16,
+616.46,
+"shot",
+"v09_higrometro"
+],
+[
+616.46,
+620.391,
+"shot",
+"n_higrometro_45"
+],
+[
+624.018,
+626.12,
+"shot",
+"n_vidrio_empanado"
+],
+[
+626.12,
+633.02,
+"shot",
+"n_moho_esquina_marco"
+],
+[
+633.02,
+635.8,
+"shot",
+"n_casa_enero"
+],
+[
+641.3,
+646.64,
+"shot",
+"n_humidificador_vapor"
+],
+[
+646.64,
+650.44,
+"shot",
+"n_regadera_ventana"
+],
+[
+650.44,
+652.1,
+"shot",
+"n_extractor_bano"
+],
+[
+656.4,
+659.08,
+"shot",
+"n_olla_vapor_tapa"
+],
+[
+659.08,
+665.0,
+"shot",
+"n_tendedero_cuarto"
+],
+[
+665.0,
+670.3,
+"shot",
+"v10_abre"
+],
+[
+674.421,
+680.46,
+"shot",
+"n_ventana_entreabierta"
+],
+[
+680.46,
+685.776,
+"shot",
+"n_higrometro_44"
+],
+[
+691.116,
+696.2,
+"shot",
+"n_mancha_madera"
+],
+[
+696.2,
+701.0,
+"shot",
+"n_madera_seca_mancha"
+],
+[
+706.0,
+709.22,
+"shot",
+"n_lijando_alfeizar"
+],
+[
+709.22,
+711.96,
+"shot",
+"n_trapo_humedo_polvo"
+],
+[
+711.96,
+718.4,
+"shot",
+"n_sellador_pincel"
+],
+[
+723.3,
+731.62,
+"shot",
+"n_goma_rota"
+],
+[
+731.62,
+732.992,
+"shot",
+"n_goma_quebradiza"
+],
+[
+737.314,
+743.52,
+"shot",
+"n_rollo_goma"
+],
+[
+743.52,
+748.88,
+"shot",
+"n_goma_vieja_mano"
+],
+[
+748.88,
+750.9,
+"shot",
+"n_ventana_nueva_precio"
+],
+[
+755.117,
+762.7,
+"shot",
+"n_doble_vidrio_niebla"
+],
+[
+762.7,
+768.5,
+"shot",
+"n_vidrio_unidad"
+],
+[
+773.846,
+779.7,
+"shot",
+"n_moho_pared_grande"
+],
+[
+779.7,
+784.062,
+"shot",
+"n_drywall_blando"
+],
+[
+789.6,
+798.18,
+"shot",
+"n_cano_gotea"
+],
+[
+798.18,
+803.079,
+"shot",
+"n_lavandina_madera"
+],
+[
+809.1,
+817.16,
+"shot",
+"n_papel_esparce"
+],
+[
+817.16,
+820.6,
+"shot",
+"n_aspira_y_balde"
+],
+[
+825.524,
+832.72,
+"shot",
+"v02_cortina"
+],
+[
+832.72,
+836.653,
+"shot",
+"n_plantas_alfeizar"
+],
+[
+842.919,
+848.3,
+"shot",
+"n_plantas_mesa"
+],
+[
+848.3,
+851.54,
+"shot",
+"n_humidificador_alto"
+],
+[
+851.54,
+854.6,
+"shot",
+"n_higrometro_42"
+],
+[
+858.914,
+867.86,
+"shot",
+"n_kit_guantes"
+],
+[
+867.86,
+869.687,
+"shot",
+"n_tubo_aspiradora"
+],
+[
+875.218,
+882.04,
+"shot",
+"n_timer_10_ventana"
+],
+[
+882.04,
+883.66,
+"shot",
+"n_trapo_plegado"
+],
+[
+883.66,
+887.6,
+"shot",
+"n_brocheta_agujero"
+],
+[
+892.737,
+901.88,
+"shot",
+"n_toalla_noche"
+],
+[
+901.88,
+905.3,
+"shot",
+"n_reloj_20"
+],
+[
+910.033,
+913.4,
+"shot",
+"n_ventana_primavera"
+],
+[
+913.4,
+919.48,
+"shot",
+"n_reglas_cuaderno"
+],
+[
+919.48,
+921.483,
+"shot",
+"n_ropa_tendida_bano"
+],
+[
+925.106,
+931.72,
+"shot",
+"n_botas_bandeja"
+],
+[
+931.72,
+936.74,
+"shot",
+"n_sopa_tapa"
+],
+[
+936.74,
+939.0,
+"shot",
+"n_galon_agua"
+],
+[
+943.211,
+949.74,
+"shot",
+"n_toallas_frescas"
+],
+[
+949.74,
+954.5,
+"shot",
+"n_ventana_guillotina"
+],
+[
+958.126,
+963.88,
+"shot",
+"n_madera_pintura_gastada"
+],
+[
+963.88,
+968.156,
+"shot",
+"n_sellador_madera"
+],
+[
+973.649,
+978.48,
+"shot",
+"n_cortina_lavarropas"
+],
+[
+978.48,
+984.46,
+"shot",
+"n_taza_peroxido_lavado"
+],
+[
+984.46,
+986.6,
+"shot",
+"n_cortina_manchada_doblada"
+],
+[
+990.4,
+1001.32,
+"shot",
+"n_vinagre_y_marron"
+],
+[
+1001.32,
+1002.7,
+"shot",
+"n_alfeizar_marmol"
+],
+[
+1008.239,
+1019.251,
+"shot",
+"n_botella_marron_luz"
+],
+[
+1023.847,
+1027.62,
+"shot",
+"n_cama_noche"
+],
+[
+1027.62,
+1035.652,
+"shot",
+"n_vidrio_vaho_manana"
+],
+[
+1041.733,
+1046.78,
+"shot",
+"n_puerta_entreabierta"
+],
+[
+1046.78,
+1052.552,
+"shot",
+"v03_gota"
+],
+[
+1055.8,
+1066.28,
+"shot",
+"n_vidrio_frio_hielo"
+],
+[
+1066.28,
+1068.198,
+"shot",
+"n_gotas_macro"
+],
+[
+1072.6,
+1081.88,
+"shot",
+"n_te_helado"
+],
+[
+1081.88,
+1084.5,
+"shot",
+"n_esquina_vidrio_agua"
+],
+[
+1089.229,
+1092.28,
+"shot",
+"n_pecas_negras"
+],
+[
+1092.28,
+1099.589,
+"shot",
+"n_ventana_lavadero"
+],
+[
+1104.329,
+1114.66,
+"shot",
+"n_secador_ducha"
+],
+[
+1114.66,
+1117.189,
+"shot",
+"n_secarropas_tubo"
+],
+[
+1122.043,
+1125.9,
+"shot",
+"n_ventana_lavadero_negra"
+],
+[
+1125.9,
+1131.62,
+"shot",
+"n_cuarto_nino"
+],
+[
+1131.62,
+1133.5,
+"shot",
+"n_pecera"
+],
+[
+1138.906,
+1147.26,
+"shot",
+"n_cortina_corrida_mano"
+],
+[
+1147.26,
+1151.266,
+"shot",
+"n_comoda_pared"
+],
+[
+1156.4,
+1165.56,
+"shot",
+"n_moho_tras_comoda"
+],
+[
+1165.56,
+1169.2,
+"shot",
+"n_hueco_mueble"
+],
+[
+1174.2,
+1176.34,
+"shot",
+"n_calendario_cocina"
+],
+[
+1176.34,
+1184.5,
+"shot",
+"n_hojas_otono_ventana"
+],
+[
+1188.518,
+1193.06,
+"shot",
+"n_ventana_nieve"
+],
+[
+1193.06,
+1196.54,
+"shot",
+"n_cortina_febrero"
+],
+[
+1196.54,
+1202.0,
+"shot",
+"n_ventana_abril"
+],
+[
+1206.5,
+1212.84,
+"shot",
+"n_secador_manana"
+],
+[
+1212.84,
+1215.68,
+"shot",
+"n_sabado_cubo"
+],
+[
+1215.68,
+1217.5,
+"shot",
+"n_ventana_embalada"
+],
+[
+1222.841,
+1232.981,
+"shot",
+"n_rancho_ladrillo"
+],
+[
+1238.2,
+1248.64,
+"shot",
+"n_barba_negra"
+],
+[
+1248.64,
+1252.0,
+"shot",
+"n_lavandina_gastada"
+],
+[
+1257.2,
+1261.92,
+"shot",
+"n_cuarto_cerrado"
+],
+[
+1261.92,
+1267.3,
+"shot",
+"n_humidificador_cama"
+],
+[
+1273.1,
+1280.68,
+"shot",
+"n_ventana_mojada_dia"
+],
+[
+1280.68,
+1285.5,
+"shot",
+"n_dos_botellas_marron"
+],
+[
+1291.1,
+1299.16,
+"shot",
+"n_higrometro_pared"
+],
+[
+1299.16,
+1303.86,
+"shot",
+"n_ventana_limpia_cuarto"
+],
+[
+1308.4,
+1314.16,
+"shot",
+"n_ventana_amanecer"
+],
+[
+1314.16,
+1319.688,
+"shot",
+"n_goma_superficie"
+],
+[
+1324.217,
+1329.94,
+"shot",
+"n_timer_final"
+],
+[
+1329.94,
+1335.62,
+"shot",
+"n_agujero_limpio"
+],
+[
+1335.62,
+1337.4,
+"shot",
+"n_toalla_sol"
+],
+[
+1341.141,
+1345.22,
+"shot",
+"n_higrometro_40"
+],
+[
+1345.22,
+1351.78,
+"shot",
+"n_libro_y_botella"
+],
+[
+1351.78,
+1353.0,
+"shot",
+"n_cartas_mesa"
+],
+[
+1358.209,
+1363.82,
+"shot",
+"n_puerta_salida"
+],
+[
+1363.82,
+1365.7,
+"shot",
+"n_cortinas_abiertas"
+]
+],
+"cam": [],
+"ov": [
+{
+"k": "stamp",
+"txt": "BLEACHED 2 WEEKS AGO · BACK AGAIN",
+"at": 12.36,
+"out": 15.36
+},
+{
+"k": "chip",
+"txt": "34 YEARS CLEANING HOUSES · OHIO",
+"at": 22.54,
+"out": 26.04
+},
+{
+"k": "chip",
+"txt": "«THE BLEACH ISN'T WORKING»",
+"col": "ice",
+"at": 30.08,
+"out": 33.58
+},
+{
+"k": "stamp",
+"txt": "FIX THE CRYING FIRST",
+"at": 44.02,
+"out": 47.02
+},
+{
+"k": "big",
+"txt": "$8",
+"sub": "THE GADGET THAT WARNS YOU",
+"col": "amber",
+"at": 57.24,
+"out": 60.44
+},
+{
+"k": "step",
+"n": 1,
+"name": "WHY BLEACH ONLY HIDES IT",
+"at": 85.38,
+"out": 89.38
+},
+{
+"k": "big",
+"txt": "90 %",
+"sub": "OF BLEACH IS WATER",
+"col": "red",
+"at": 95.32,
+"out": 98.52
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "RUBBER = PORES",
+"col": "ice",
+"at": 252.78
+},
+{
+"txt": "WOOD = SPONGE",
+"col": "ice",
+"at": 291.94
+}
+],
+"at": 115.84,
+"out": 294.44
+},
+{
+"k": "chip",
+"txt": "HYPHAE · ROOTS IN THE RUBBER",
+"col": "red",
+"at": 128.62,
+"out": 132.12
+},
+{
+"k": "stamp",
+"txt": "IT WATERS THE ROOTS",
+"at": 148.42,
+"out": 151.42
+},
+{
+"k": "big",
+"txt": "2 WEEKS",
+"sub": "AND IT'S BACK · WITH A HEAD START",
+"col": "red",
+"at": 157.1,
+"out": 160.3
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE SWAB TEST",
+"at": 176.52,
+"out": 180.52
+},
+{
+"k": "chip",
+"txt": "GRAY SWAB = STILL ALIVE",
+"col": "red",
+"at": 197.16,
+"out": 200.66
+},
+{
+"k": "step",
+"n": 3,
+"name": "VACUUM FIRST",
+"at": 215.44,
+"out": 219.44
+},
+{
+"k": "stamp",
+"txt": "NEVER WIPE IT DRY",
+"at": 228.84,
+"out": 231.84
+},
+{
+"k": "chip",
+"txt": "CREVICE TOOL · HEPA IF YOU HAVE IT",
+"at": 249.84,
+"out": 253.34
+},
+{
+"k": "chip",
+"txt": "GLOVES · MASK · OPEN A WINDOW",
+"col": "green",
+"at": 267.08,
+"out": 270.58
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE BROWN BOTTLE",
+"at": 275.94,
+"out": 279.94
+},
+{
+"k": "big",
+"txt": "10 MIN",
+"sub": "DON'T WIPE IT YET",
+"col": "amber",
+"at": 317.32,
+"out": 320.52
+},
+{
+"k": "stamp",
+"txt": "NEVER MIX PEROXIDE + BLEACH",
+"at": 332.18,
+"out": 335.18
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE TOOTHBRUSH IN THE CORNERS",
+"at": 349.3,
+"out": 353.3
+},
+{
+"k": "chip",
+"txt": "NO WIRE BRUSH · NO GREEN PAD",
+"col": "red",
+"at": 362.28,
+"out": 365.78
+},
+{
+"k": "chip",
+"txt": "FOLD · WIPE · FOLD · WIPE",
+"at": 383.84,
+"out": 387.34
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE WEEP HOLES",
+"at": 397.46,
+"out": 401.46
+},
+{
+"k": "chip",
+"txt": "AS WIDE AS A PENCIL",
+"col": "ice",
+"at": 414.88,
+"out": 418.38
+},
+{
+"k": "chip",
+"txt": "DRAINS IN SECONDS = GOOD",
+"col": "green",
+"at": 449.42,
+"out": 452.92
+},
+{
+"k": "big",
+"txt": "6",
+"sub": "WINDOWS · WEEP HOLES PACKED SOLID",
+"col": "red",
+"at": 459.06,
+"out": 462.26
+},
+{
+"k": "step",
+"n": 7,
+"name": "DRY IT. REALLY DRY IT.",
+"at": 469.62,
+"out": 473.62
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE TOWEL AND THE $8 GADGET",
+"col": "red",
+"at": 520.24,
+"out": 524.24
+},
+{
+"k": "big",
+"txt": "1998",
+"sub": "MRS. KOWALSKI · PARMA",
+"col": "amber",
+"at": 534.02,
+"out": 537.22
+},
+{
+"k": "stamp",
+"txt": "CATCH THE TEARS",
+"at": 563.78,
+"out": 566.78
+},
+{
+"k": "big",
+"txt": "5 MIN",
+"sub": "EVERY WINTER MORNING",
+"col": "green",
+"at": 581.84,
+"out": 585.04
+},
+{
+"k": "big",
+"txt": "45 %",
+"sub": "KEEP IT UNDER THIS IN WINTER",
+"col": "amber",
+"at": 614.78,
+"out": 617.98
+},
+{
+"k": "stamp",
+"txt": "THEY WERE WATERING THEIR MOLD",
+"at": 646.64,
+"out": 649.64
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "BATHROOM FAN ON",
+"col": "green",
+"at": 650.44
+},
+{
+"txt": "LID ON THE PASTA",
+"col": "green",
+"at": 657.02
+},
+{
+"txt": "NO LAUNDRY IN THE BEDROOM",
+"col": "red",
+"at": 659.08
+}
+],
+"at": 650.44,
+"out": 661.58
+},
+{
+"k": "temp",
+"a": 62,
+"b": 44,
+"sub": "HUMIDITY · AN EASIER WINTER",
+"col": "green",
+"at": 680.46,
+"out": 685.46
+},
+{
+"k": "step",
+"n": 9,
+"name": "WHEN THE WOOD IS STAINED",
+"at": 686.18,
+"out": 690.18
+},
+{
+"k": "chip",
+"txt": "SAND · DUST · ONE COAT OF SEALER",
+"at": 711.06,
+"out": 714.56
+},
+{
+"k": "step",
+"n": 10,
+"name": "WHEN TO CALL SOMEBODY",
+"at": 723.42,
+"out": 727.42
+},
+{
+"k": "versus",
+"title": "A CRACKED SEAL",
+"L": {
+"label": "NEW WINDOW",
+"val": "$450+",
+"h": 0.95,
+"col": "#ff4a3d",
+"mark": "x"
+},
+"R": {
+"label": "NEW RUBBER",
+"val": "$6/FT",
+"h": 0.15,
+"col": "#5fd38a",
+"mark": "ok"
+},
+"at": 741.12,
+"out": 747.12
+},
+{
+"k": "chip",
+"txt": "BIGGER THAN 3 × 3 FT = CALL A PRO",
+"col": "red",
+"at": 774.18,
+"out": 777.68
+},
+{
+"k": "deal",
+"at": 795.18,
+"out": 799.68
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "STRAIGHT BLEACH ON RUBBER AND WOOD",
+"at": 798.18,
+"out": 806.18
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "WIPING IT WITH A DRY RAG",
+"at": 809.36,
+"out": 817.36
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "CURTAINS SHUT ALL DAY",
+"at": 819.4,
+"out": 827.4
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "HOUSEPLANTS ON THE SILL",
+"at": 831.2,
+"out": 839.2
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "THE HUMIDIFIER ON HIGH",
+"at": 846.86,
+"out": 854.86
+},
+{
+"k": "big",
+"txt": "20 MIN",
+"sub": "PER WINDOW · MOSTLY WAITING",
+"col": "green",
+"at": 901.88,
+"out": 905.08
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "NO CLOTHES DRYING INSIDE",
+"col": "red",
+"at": 917.14
+},
+{
+"txt": "NO WET BOOTS BY THE WINDOW",
+"col": "red",
+"at": 925.2
+},
+{
+"txt": "NO SOUP WITHOUT A LID",
+"col": "red",
+"at": 930.98
+}
+],
+"at": 917.14,
+"out": 933.48
+},
+{
+"k": "stamp",
+"txt": "EVERY POT OF SOUP = A GALLON IN YOUR WALLS",
+"at": 936.74,
+"out": 939.74
+},
+{
+"k": "chip",
+"txt": "«OLD WOODEN WINDOWS?»",
+"col": "ice",
+"at": 951.52,
+"out": 955.02
+},
+{
+"k": "chip",
+"txt": "«VINEGAR INSTEAD?»",
+"col": "ice",
+"at": 992.14,
+"out": 995.64
+},
+{
+"k": "chip",
+"txt": "BEDROOM DOOR OPEN A FEW INCHES",
+"col": "green",
+"at": 1042.56,
+"out": 1046.06
+},
+{
+"k": "stamp",
+"txt": "YOUR WINDOW IS AN ICED TEA GLASS",
+"at": 1074.68,
+"out": 1077.68
+},
+{
+"k": "chip",
+"txt": "A FEW INCHES OFF OUTSIDE WALLS",
+"col": "ice",
+"at": 1147.26,
+"out": 1150.76
+},
+{
+"k": "clock",
+"marks": [
+[
+1175.6,
+10.0
+],
+[
+1188.58,
+12.5
+],
+[
+1193.06,
+14.0
+],
+[
+1196.54,
+16.0
+]
+],
+"at": 1174.28,
+"out": 1200.54
+},
+{
+"k": "stamp",
+"txt": "«A BLACK BEARD»",
+"at": 1241.12,
+"out": 1244.12
+},
+{
+"k": "big",
+"txt": "43 %",
+"sub": "AND THE BEARD WAS GONE",
+"col": "green",
+"at": 1297.18,
+"out": 1300.38
+},
+{
+"k": "recap",
+"rows": [
+1322.9,
+1324.66,
+1328.46,
+1330.04,
+1331.78,
+1335.62
+],
+"at": 1308.44,
+"out": 1341.62
+},
+{
+"k": "ask",
+"at": 1351.58,
+"out": 1361.58
+},
+{
+"k": "next",
+"at": 1362.46,
+"out": 1367.46
+}
+],
+"cta1": {
+"guide": 75.04,
+"page": 77.96,
+"desc": 81.02,
+"manual": "92 FIXES · $1-2 EACH",
+"img": "page",
+"end": 87.02
+},
+"cta2": {
+"guide": 494.96,
+"page": 514.28,
+"desc": 517.44,
+"manual": "92 FIXES · $1-2 EACH",
+"img": "page",
+"end": 523.44
+},
+"cta3": {
+"desc": 1360.44,
+"end": 1365.44
+},
+"end": 1365.66,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+1174.28,
+1210.28
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "THE ROUTINE",
+"recap": [
+"Gloves · mask · a window open",
+"Vacuum with the crevice tool",
+"3% peroxide · 10 min",
+"Toothbrush in the corners",
+"Clear the weep holes",
+"Dry it completely",
+"Towel at night · squeegee · under 45 %"
+],
+"ask": [
+"Which window in your house",
+"cries the most in the winter?",
+"Tell me in the comments · I read every one"
+],
+"next": [
+"NEXT TIME",
+"Another spot that keeps coming back"
+],
+"lower": [
+20.22,
+26.22
+]
+}
+}

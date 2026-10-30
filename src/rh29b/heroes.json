@@ -1,0 +1,299 @@
+[
+{
+"k": "b_crying",
+"at": 4.54,
+"out": 10.54,
+"said": 2.94,
+"solo": true,
+"kw": "CRYING",
+"kw2": "water down the inside of the glass",
+"ph": "ph_b_crying"
+},
+{
+"k": "b_jug",
+"at": 90.08,
+"out": 96.08,
+"said": 90.08,
+"solo": true,
+"kw": "THE JUG",
+"kw2": "mostly water",
+"ph": "ph_b_jug"
+},
+{
+"k": "b_pores",
+"at": 112.96,
+"out": 117.46,
+"said": 113.96,
+"sp": 1.333,
+"solo": true,
+"kw": "TINY PORES",
+"kw2": "rubber, caulk, wood",
+"ph": "ph_b_pores"
+},
+{
+"k": "b_drink",
+"at": 157.06,
+"out": 163.06,
+"said": 155.06,
+"solo": true,
+"kw": "A DRINK",
+"kw2": "that's what bleach left",
+"ph": "ph_b_drink"
+},
+{
+"k": "b_swab",
+"at": 189.68,
+"out": 195.68,
+"said": 189.68,
+"solo": true,
+"kw": "PRESS + TWIST",
+"kw2": "a damp cotton swab",
+"ph": "ph_b_swab"
+},
+{
+"k": "b_corners",
+"at": 207.86,
+"out": 214.36,
+"said": 207.86,
+"solo": true,
+"kw": "BOTTOM CORNERS",
+"kw2": "where the water sits longest",
+"ph": "ph_b_corners"
+},
+{
+"k": "b_crevice",
+"at": 246.78,
+"out": 251.28,
+"said": 246.78,
+"sp": 1.333,
+"solo": true,
+"kw": "CREVICE TOOL",
+"kw2": "slow along the seal",
+"ph": "ph_b_crevice"
+},
+{
+"k": "b_spraytop",
+"at": 291.22,
+"out": 297.22,
+"said": 286.32,
+"solo": true,
+"kw": "SPRAY TOP",
+"kw2": "right on the brown bottle",
+"ph": "ph_b_spraytop"
+},
+{
+"k": "b_timer",
+"at": 324.64,
+"out": 330.64,
+"said": 319.74,
+"solo": true,
+"kw": "KITCHEN TIMER",
+"kw2": "ten minutes, not one",
+"ph": "ph_b_timer"
+},
+{
+"k": "b_grain",
+"at": 366.44,
+"out": 370.94,
+"said": 366.74,
+"sp": 1.333,
+"solo": true,
+"kw": "WITH THE GRAIN",
+"kw2": "on a wood sill",
+"ph": "ph_b_grain"
+},
+{
+"k": "b_rounds",
+"at": 393.66,
+"out": 399.66,
+"said": 393.66,
+"solo": true,
+"kw": "2 ROUNDS",
+"kw2": "that's normal",
+"ph": "ph_b_rounds"
+},
+{
+"k": "b_track",
+"at": 423.7,
+"out": 430.2,
+"said": 420.8,
+"solo": true,
+"kw": "THE TRACK",
+"kw2": "a mold factory all winter",
+"ph": "ph_b_track"
+},
+{
+"k": "b_cup",
+"at": 445.9,
+"out": 451.4,
+"said": 445.9,
+"sp": 1.091,
+"solo": true,
+"kw": "A CUP OF WATER",
+"kw2": "watch it drain",
+"ph": "ph_b_cup"
+},
+{
+"k": "b_fan",
+"at": 479.12,
+"out": 485.12,
+"said": 479.12,
+"solo": true,
+"kw": "COOL SETTING",
+"kw2": "or a small fan for an hour",
+"ph": "ph_b_fan"
+},
+{
+"k": "b_face",
+"at": 491.08,
+"out": 497.08,
+"said": 491.08,
+"solo": true,
+"kw": "ITS FACE",
+"kw2": "clean and wet = not done",
+"ph": "ph_b_face"
+},
+{
+"k": "b_oak",
+"at": 542.96,
+"out": 549.46,
+"said": 539.66,
+"solo": true,
+"kw": "OAK SILLS",
+"kw2": "her husband put them in",
+"ph": "ph_b_oak"
+},
+{
+"k": "b_snakes",
+"at": 551.44,
+"out": 555.94,
+"said": 551.74,
+"sp": 1.444,
+"solo": true,
+"kw": "LITTLE SNAKES",
+"kw2": "rolled towels on the sill",
+"ph": "ph_b_snakes"
+},
+{
+"k": "b_squeegee",
+"at": 578.48,
+"out": 584.48,
+"said": 578.48,
+"solo": true,
+"kw": "SQUEEGEE",
+"kw2": "every winter morning",
+"ph": "ph_b_squeegee"
+},
+{
+"k": "b_hygrometer",
+"at": 609.22,
+"out": 615.72,
+"said": 604.82,
+"solo": true,
+"kw": "HYGROMETER",
+"kw2": "the humidity in your house",
+"ph": "ph_b_hygrometer"
+},
+{
+"k": "b_rainstorm",
+"at": 641.36,
+"out": 647.36,
+"said": 639.66,
+"solo": true,
+"kw": "A RAINSTORM",
+"kw2": "on the inside of the glass",
+"ph": "ph_b_rainstorm"
+},
+{
+"k": "b_sandpaper",
+"at": 706.1,
+"out": 712.1,
+"said": 701.3,
+"solo": true,
+"kw": "220 GRIT",
+"kw2": "lightly, with the grain",
+"ph": "ph_b_sandpaper"
+},
+{
+"k": "b_fog",
+"at": 755.26,
+"out": 761.76,
+"said": 753.26,
+"solo": true,
+"kw": "FOG INSIDE",
+"kw2": "the glass seal failed",
+"ph": "ph_b_fog"
+},
+{
+"k": "b_plants",
+"at": 843.06,
+"out": 849.06,
+"said": 837.06,
+"solo": true,
+"kw": "PLANTS BREATHE",
+"kw2": "move them back a foot",
+"ph": "ph_b_plants"
+},
+{
+"k": "b_boots",
+"at": 928.92,
+"out": 934.92,
+"said": 928.92,
+"solo": true,
+"kw": "A TRAY",
+"kw2": "boots by the furnace",
+"ph": "ph_b_boots"
+},
+{
+"k": "b_curtain",
+"at": 973.78,
+"out": 980.28,
+"said": 968.48,
+"solo": true,
+"kw": "THE CURTAIN",
+"kw2": "hot wash + a cup of peroxide",
+"ph": "ph_b_curtain"
+},
+{
+"k": "b_bedroom",
+"at": 1023.96,
+"out": 1030.46,
+"said": 1019.36,
+"solo": true,
+"kw": "THE BEDROOM",
+"kw2": "eight hours, door closed",
+"ph": "ph_b_bedroom"
+},
+{
+"k": "b_hamster",
+"at": 1128.92,
+"out": 1133.42,
+"said": 1131.62,
+"sp": 1.333,
+"solo": true,
+"kw": "KIDS' ROOMS",
+"kw2": "check behind the curtain",
+"ph": "ph_b_hamster"
+},
+{
+"k": "b_ranch",
+"at": 1228.36,
+"out": 1232.86,
+"said": 1231.06,
+"sp": 1.444,
+"solo": true,
+"kw": "MR. HADDAD",
+"kw2": "a brick ranch in Berea",
+"ph": "ph_b_ranch"
+},
+{
+"k": "b_tank",
+"at": 1273.16,
+"out": 1279.16,
+"said": 1267.76,
+"solo": true,
+"kw": "NO LID",
+"kw2": "a fish tank on the dresser",
+"ph": "ph_b_tank"
+}
+]
