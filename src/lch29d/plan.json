@@ -1,0 +1,774 @@
+{
+"segs": [
+[
+4.32,
+9.32,
+"shot",
+"f01_manta_sofa"
+],
+[
+9.82,
+13.8,
+"shot",
+"f02_brazo_gastado"
+],
+[
+13.8,
+15.22,
+"shot",
+"f03_tele_noticias"
+],
+[
+19.36,
+23.1,
+"shot",
+"f04_alisar_manta"
+],
+[
+23.1,
+31.02,
+"shot",
+"v01"
+],
+[
+31.02,
+33.06,
+"shot",
+"f05_iglesia_ames"
+],
+[
+37.02,
+39.44,
+"shot",
+"f06_sala_novia"
+],
+[
+39.44,
+44.44,
+"shot",
+"f07_salon_sillas"
+],
+[
+45.26,
+49.15,
+"shot",
+"f08_sofa_1974"
+],
+[
+55.52,
+58.66,
+"shot",
+"f09_toalla_plancha"
+],
+[
+58.66,
+63.66,
+"shot",
+"f10_maquina_alquiler"
+],
+[
+78.46,
+81.14,
+"shot",
+"f11_aro_cafe"
+],
+[
+124.14,
+129.14,
+"shot",
+"f12_etiqueta_cojin"
+],
+[
+137.92,
+145.92,
+"shot",
+"v02"
+],
+[
+147.7,
+149.17,
+"shot",
+"f13_etiqueta_w"
+],
+[
+154.7,
+158.7,
+"shot",
+"f14_etiqueta_s"
+],
+[
+175.94,
+180.94,
+"shot",
+"f15_aspiradora_cepillo"
+],
+[
+193.62,
+199.62,
+"shot",
+"f16_sillon_terciopelo"
+],
+[
+208.12,
+214.12,
+"shot",
+"f17_sillon_pared"
+],
+[
+214.2,
+217.07,
+"shot",
+"f18_aspirar_sofa"
+],
+[
+229.08,
+233.61,
+"shot",
+"f19_boquilla_rendija"
+],
+[
+254.96,
+258.96,
+"shot",
+"f20_zocalos"
+],
+[
+261.32,
+266.96,
+"shot",
+"v03"
+],
+[
+271.06,
+273.82,
+"shot",
+"f21_detergente_claro"
+],
+[
+273.82,
+278.82,
+"shot",
+"f22_revolver_tazon"
+],
+[
+303.84,
+308.84,
+"shot",
+"f23_detergente_ropa"
+],
+[
+318.89,
+323.89,
+"shot",
+"f24_toalla_blanca"
+],
+[
+343.1,
+347.56,
+"shot",
+"f25_toalla_marron"
+],
+[
+352.0,
+357.0,
+"shot",
+"f26_pano_mezcla"
+],
+[
+370.96,
+375.96,
+"shot",
+"f27_dial_plancha"
+],
+[
+384.1,
+392.1,
+"shot",
+"v05"
+],
+[
+415.65,
+419.65,
+"shot",
+"f28_vapor_toalla"
+],
+[
+433.53,
+438.53,
+"shot",
+"f29_plancha_quemadura"
+],
+[
+439.92,
+445.29,
+"shot",
+"v06"
+],
+[
+449.61,
+454.61,
+"shot",
+"f30_mancha_toalla"
+],
+[
+480.36,
+483.9,
+"shot",
+"f31_tres_rondas"
+],
+[
+483.9,
+488.66,
+"shot",
+"f32_madre_cocina"
+],
+[
+488.66,
+491.62,
+"shot",
+"f33_plato_mesa"
+],
+[
+502.12,
+508.12,
+"shot",
+"f34_pelo_mojado"
+],
+[
+521.92,
+525.96,
+"shot",
+"f35_sombra_respaldo"
+],
+[
+530.28,
+536.28,
+"shot",
+"f36_carpetita"
+],
+[
+549.88,
+553.0,
+"shot",
+"f37_brazo_brillante"
+],
+[
+553.0,
+555.74,
+"shot",
+"f38_pochoclo_diario"
+],
+[
+564.9,
+569.9,
+"shot",
+"f39_dos_cucharaditas"
+],
+[
+577.08,
+582.08,
+"shot",
+"f40_reloj_cocina"
+],
+[
+593.56,
+598.26,
+"shot",
+"f41_color_real"
+],
+[
+598.26,
+603.26,
+"shot",
+"f42_enjuague_toalla"
+],
+[
+617.08,
+619.34,
+"shot",
+"f43_jugo_uva"
+],
+[
+619.34,
+623.34,
+"shot",
+"f44_leche_chocolate"
+],
+[
+624.62,
+629.62,
+"shot",
+"f45_secar_presionar"
+],
+[
+652.54,
+654.08,
+"shot",
+"f46_agua_fria"
+],
+[
+715.35,
+719.9,
+"shot",
+"f47_alcohol"
+],
+[
+724.38,
+732.38,
+"shot",
+"v07"
+],
+[
+741.19,
+746.19,
+"shot",
+"f48_cepillo_suave"
+],
+[
+759.37,
+764.37,
+"shot",
+"f49_cojin_afuera"
+],
+[
+774.55,
+777.99,
+"shot",
+"f50_prueba_seca"
+],
+[
+777.99,
+782.99,
+"shot",
+"f51_luz_ventana"
+],
+[
+794.61,
+798.6,
+"shot",
+"f52_toalla_color"
+],
+[
+812.71,
+815.57,
+"shot",
+"v08"
+],
+[
+815.57,
+820.57,
+"shot",
+"f53_ventana_abierta"
+],
+[
+827.57,
+832.57,
+"shot",
+"f54_cepillo_ropa"
+],
+[
+840.15,
+845.15,
+"shot",
+"f55_terciopelo"
+],
+[
+855.73,
+857.81,
+"shot",
+"f56_cojines_piso"
+],
+[
+857.81,
+862.81,
+"shot",
+"f57_cosas_perdidas"
+],
+[
+866.93,
+871.93,
+"shot",
+"f58_cinta_papel"
+],
+[
+908.69,
+913.69,
+"shot",
+"f59_cojines_vuelta"
+],
+[
+915.85,
+920.85,
+"shot",
+"f60_microfibra"
+],
+[
+933.37,
+936.71,
+"shot",
+"f61_cuero"
+],
+[
+945.59,
+950.59,
+"shot",
+"f62_cierre_funda"
+],
+[
+962.89,
+966.89,
+"shot",
+"f63_colchon"
+],
+[
+972.77,
+975.02,
+"shot",
+"f64_bicarbonato_sofa"
+],
+[
+986.07,
+991.07,
+"shot",
+"f65_perro_sofa"
+],
+[
+996.67,
+1001.67,
+"shot",
+"f66_guante_pelo"
+],
+[
+1019.67,
+1024.67,
+"shot",
+"f67_sillas_comedor"
+],
+[
+1034.85,
+1039.85,
+"shot",
+"f68_seis_asientos"
+],
+[
+1046.63,
+1052.63,
+"shot",
+"f69_sillas_apiladas"
+],
+[
+1061.72,
+1066.72,
+"shot",
+"f70_espagueti"
+],
+[
+1070.27,
+1072.48,
+"shot",
+"f71_hombre_maquina"
+],
+[
+1094.37,
+1100.37,
+"shot",
+"f72_diez_sillas"
+],
+[
+1106.11,
+1107.38,
+"shot",
+"f73_himnarios"
+],
+[
+1117.59,
+1121.47,
+"shot",
+"f74_cena_dos"
+],
+[
+1129.01,
+1137.01,
+"shot",
+"v09"
+],
+[
+1165.61,
+1170.4,
+"shot",
+"f75_taza_marron"
+],
+[
+1176.03,
+1181.03,
+"shot",
+"f76_harold_tele"
+],
+[
+1181.07,
+1186.07,
+"shot",
+"f77_taza_cojin"
+],
+[
+1195.43,
+1200.43,
+"shot",
+"f78_diario_mancha"
+],
+[
+1216.01,
+1219.74,
+"shot",
+"f79_cojin_volteado"
+],
+[
+1225.58,
+1231.58,
+"shot",
+"f80_bautismo"
+],
+[
+1241.45,
+1246.45,
+"shot",
+"f81_primer_circulo"
+],
+[
+1256.83,
+1261.83,
+"shot",
+"f82_ventilador_noche"
+],
+[
+1276.61,
+1281.41,
+"shot",
+"v10"
+],
+[
+1281.41,
+1285.69,
+"shot",
+"f83_doris"
+],
+[
+1338.7,
+1343.7,
+"shot",
+"f84_carpetita_brazo"
+],
+[
+1357.22,
+1362.22,
+"shot",
+"f85_cortinas_encaje"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 118.28,
+"out": 121.28
+},
+{
+"k": "step",
+"n": 1,
+"name": "READ THE TAG",
+"at": 120.06,
+"out": 123.26
+},
+{
+"k": "step",
+"n": 2,
+"name": "VACUUM FIRST",
+"at": 211.96,
+"out": 215.16
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE MIXTURE",
+"at": 259.08,
+"out": 262.28
+},
+{
+"k": "step",
+"n": 4,
+"name": "A WHITE TOWEL, NEVER COLORED",
+"at": 313.1,
+"out": 316.3
+},
+{
+"k": "step",
+"n": 5,
+"name": "STEAM IRON, 10 SECONDS",
+"at": 367.32,
+"out": 370.52
+},
+{
+"k": "step",
+"n": 6,
+"name": "MOVE TO A CLEAN SPOT",
+"at": 436.06,
+"out": 439.26
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE GREASY ARM",
+"at": 541.74,
+"out": 544.94
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE GRANDCHILDREN'S JUICE",
+"at": 609.26,
+"out": 612.46
+},
+{
+"k": "deal",
+"at": 655.8,
+"out": 656.8
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Rubbing",
+"at": 661.6,
+"out": 663.8
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Soaking it",
+"at": 670.5,
+"out": 672.7
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Water on an S fabric",
+"at": 689.85,
+"out": 692.05
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "A colored towel",
+"at": 694.45,
+"out": 696.65
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Not testing first",
+"at": 698.75,
+"out": 702.25
+},
+{
+"k": "step",
+"n": 9,
+"name": "ALCOHOL FOR S FABRICS",
+"at": 703.75,
+"out": 706.95
+},
+{
+"k": "step",
+"n": 10,
+"name": "TEST UNDER THE CUSHION",
+"at": 751.17,
+"out": 754.37
+},
+{
+"k": "step",
+"n": 11,
+"name": "DRY IT FAST, BRUSH IT",
+"at": 802.47,
+"out": 805.67
+},
+{
+"k": "step",
+"n": 12,
+"name": "HAROLD'S COFFEE RING",
+"at": 1160.07,
+"out": 1163.27
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1288.35
+},
+{
+"at": 1294.61
+},
+{
+"at": 1296.59
+},
+{
+"at": 1302.27
+},
+{
+"at": 1303.97
+},
+{
+"at": 1307.99
+},
+{
+"at": 1314.51
+},
+{
+"at": 1317.65
+},
+{
+"at": 1322.63
+},
+{
+"at": 1326.29
+},
+{
+"at": 1330.19
+}
+],
+"at": 1285.33,
+"out": 1332.19
+},
+{
+"k": "ask",
+"at": 1340.17,
+"out": 1348.17
+}
+],
+"end": 1372.43,
+"txt": {
+"recapTitle": "11 STEPS · ONE SATURDAY",
+"recap": [
+"Read the tag: W S X",
+"Vacuum first",
+"Cup + tsp soap + tbsp vinegar",
+"Blot, never rub",
+"White towel, damp",
+"Steam iron, 10 seconds",
+"Lift, look, move",
+"Greasy arm: stronger mix",
+"S fabric: alcohol",
+"Test under the cushion",
+"Fan, then brush"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"What stain are you hiding",
+"under a blanket?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+26.22,
+34.22
+]
+}
+}
