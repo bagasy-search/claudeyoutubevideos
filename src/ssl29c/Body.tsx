@@ -7,6 +7,8 @@ import PLAN from "./plan.json";
 import { COL, FONT, LowerThird, Vid, e } from "./lib";
 import { NextCard, TempChart } from "./comps2";
 import CARDS from "./cards.json";
+import VFOK from "./vf_ok.json";
+const VF = new Set(VFOK as string[]);
 import { AskCard, BigNum, CoverFlow, CheckList, Chip, DayClock, Desc, GuidePage, Headline, Mistake, StepTitle, TempGauge, TimeBars, Versus, Words, acc } from "./premium";
 import { Avatar, Clip, OK, Shot, WIN, World } from "./parts";
 import { CamaraMano } from "../kits/camara/CamaraMano";
@@ -27,7 +29,7 @@ const base = (t: number): React.ReactNode => {
   if (!g) return <World t={t} />;
   const [a, , , id] = g;
   // clip de Veo (8 s, ya con movimiento): va entero desde su cuadro 0; si todavía no llegó, el mundo
-  if (id.startsWith("v")) return OK.has(id) ? <AbsoluteFill style={{ transform: `scale(${1.02 + 0.04 * e(t, a, a + 8)})` }}><Vid id={"veo/" + id} at={a} /></AbsoluteFill> : <World t={t} />;
+  if (id.startsWith("v")) return OK.has(id) ? <AbsoluteFill style={{ transform: `scale(${1.02 + 0.04 * e(t, a, a + 8)})` }}><Vid id={"veo/" + id} at={a} /></AbsoluteFill> : VF.has(id) ? <Shot k={"vf_" + id} t={t} a={a} /> : <World t={t} />;
   // si llegó el clip LTX de esa foto va el clip; si no, la foto
   return <Clip k={"c_" + id} t={t} a={a}><Shot k={id} t={t} a={a} /></Clip>;
 };
