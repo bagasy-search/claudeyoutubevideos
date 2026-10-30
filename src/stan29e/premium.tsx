@@ -197,7 +197,7 @@ export const Versus: React.FC<{ t: number; at: number; out: number; L: Col2; R: 
   const vs = phys(t, at + 0.9, 8, 0.4) * (1 - cl(verdict));
   return <AbsoluteFill style={{ opacity: o, fontFamily: FONT, color: G.txt }}>
     <AbsoluteFill style={{ background: "radial-gradient(ellipse 70% 60% at 50% 48%, #1e1a16, #08080a 65%)" }} />
-    {title && <div style={{ position: "absolute", left: 0, right: 0, top: 60, display: "flex", justifyContent: "center", opacity: cl(phys(t, at + 0.3, 6, 0.7)), transform: `translateY(${(1 - cl(phys(t, at + 0.3, 6, 0.7))) * -20}px)` }}><Kicker txt={title} /></div>}
+    {false && title && <div style={{ position: "absolute", left: 0, right: 0, top: 60, display: "flex", justifyContent: "center", opacity: cl(phys(t, at + 0.3, 6, 0.7)), transform: `translateY(${(1 - cl(phys(t, at + 0.3, 6, 0.7))) * -20}px)` }}><Kicker txt={title} /></div>}
     <div style={{ position: "absolute", left: 960, top: 560, perspective: 1900 }}>
       <div style={{ transformStyle: "preserve-3d", transform: `translateZ(${-420 * (1 - inn) - 700 * xo + 30 * Math.sin((t - at) * 0.4)}px) rotateX(${5 + 6 * xo}deg) rotateY(${3.5 * Math.sin((t - at) * 0.25 + 0.4) + 12 * (1 - inn)}deg)` }}>
         {card(L, 0)}{card(R, 1)}
