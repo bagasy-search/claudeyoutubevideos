@@ -35,7 +35,7 @@ const Rata: React.FC<{ p: number[]; s?: number; ry?: number }> = ({ p, s = 1, ry
 const CloacaCorte: React.FC<UP> = ({ d, p }) => {
   const aM = sec(p, "monedas", 3.0);
   return <U3 d={d} bg={p.bg} ground={null} mode="wipe" sky="#0d0b0a" key1={[-1.2, 2.4, 2]}
-    cam={{ at: [0, 0.5, 0], at1: [0.08, -0.02, 0.12], az: [-0.3, -0.1], el: [0.24, 0.06], r: [2.1, 1.3], fov: 34 }}>{(tt) => {
+    cam={{ at: [0, 0.5, 0], at1: [0.06, 0.04, 0.12], az: [-0.3, -0.12], el: [0.24, 0.24], r: [2.1, 1.5], fov: 34 }}>{(tt) => {
     const wheel = lerp(-1.4, 1.6, cl(tt / 2.2)), glint = eio(tt, aM, aM + 0.6);
     return <>
       <mesh position={[0, 0.62, -0.05]}><boxGeometry args={[3, 0.1, 0.8]} /><meshStandardMaterial map={cobbleT()} roughness={0.9} /></mesh>
@@ -50,7 +50,7 @@ const CloacaCorte: React.FC<UP> = ({ d, p }) => {
       <mesh position={[0.05, 0.12, 0.1]}><cylinderGeometry args={[0.1, 0.24, 1.1, 20, 1, true]} /><meshBasicMaterial color="#ffe2b0" transparent opacity={0.08} depthWrite={false} side={THREE.DoubleSide} /></mesh>
       <spotLight position={[0.05, 0.6, 0.1]} angle={0.45} penumbra={0.8} intensity={5} distance={1.6} color="#ffe6c0" />
       <Tunnel L={3} R={0.42} p={[0, -0.02, -0.05]} />
-      <Water w={3} dpt={0.7} y={-0.2} col="#5a4a2e" />
+      <Water w={3} dpt={0.7} y={-0.2} col="#6a5634" op={0.9} />
       {[0, 1, 2].map((j) => { const u = (tt * 0.6 + j / 3) % 1; return <mesh key={j} position={[0.05, -0.197, 0.12]} rotation={[-PI / 2, 0, 0]} scale={sm(0.4 + 2.2 * u)}><ringGeometry args={[0.05, 0.058, 32]} /><meshBasicMaterial color="#d8c090" transparent opacity={0.45 * (1 - u)} depthWrite={false} /></mesh>; })}
       <mesh position={[0.19, -0.198, 0.3]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[0.06, 0.4]} /><meshBasicMaterial color="#ffc070" transparent opacity={0.22 + 0.08 * Math.sin(tt * 2 * PI * 0.7)} depthWrite={false} /></mesh>
       <group position={[0.05, -0.29, 0.12]}><Stickman enSitio escala={0.21} rotY={25} guion={[{ t: 0, accion: "caminar", expr: "decidido" }, { t: aM, accion: "senalar", expr: "sorprendido" }]} semilla={3} contacto={0} color="#5a4c3c" /></group>

@@ -46,8 +46,8 @@ const BurbujaVidrio: React.FC<UP> = ({ d, p }) => {
       <mesh position={[-0.82, 0.4, 0]} rotation={[0, 0, PI / 2]}><cylinderGeometry args={[0.024, 0.024, 0.16, 12]} />{M.wood({ base: [90, 60, 36] })}</mesh>
       <mesh position={[lerp(-0.85, 0.15, puff), 0.4, 0]} rotation={[0, PI / 2, 0]} visible={tt > aB}><torusGeometry args={[0.02, 0.004, 6, 16]} /><meshBasicMaterial color="#ffd8a0" transparent opacity={0.6 * (1 - puff)} /></mesh>
       <group position={[0.2 + R * 0.8, 0.4, 0]} rotation={[rot, 0, 0]}>
-        <mesh scale={[1.15, 1, 1]}><sphereGeometry args={[R, 32, 24]} /><meshPhysicalMaterial color="#d0782c" emissive="#c84a10" emissiveIntensity={lerp(0.35, 0.1, inf)} roughness={0.1} transparent opacity={lerp(0.95, 0.6, inf)} clearcoat={1} depthWrite={false} /></mesh>
-        <mesh scale={[1.15 * (0.25 + 0.65 * inf), 0.25 + 0.65 * inf, 0.25 + 0.65 * inf]}><sphereGeometry args={[R, 24, 18]} /><meshPhysicalMaterial color="#fff2dc" transparent opacity={0.28} roughness={0.02} clearcoat={1} depthWrite={false} /></mesh>
+        <mesh scale={[1.15, 1, 1]}><sphereGeometry args={[R, 32, 24]} /><meshPhysicalMaterial color="#d0782c" emissive="#c84a10" emissiveIntensity={lerp(0.3, 0.06, inf)} roughness={0.1} transparent opacity={lerp(0.95, 0.6, inf)} clearcoat={1} depthWrite={false} /></mesh>
+        <mesh scale={[1.15 * (0.25 + 0.65 * inf), 0.25 + 0.65 * inf, 0.25 + 0.65 * inf]}><sphereGeometry args={[R, 24, 18]} /><meshPhysicalMaterial color="#e8d8c0" transparent opacity={0.2 + 0.15 * inf} roughness={0.02} clearcoat={1} depthWrite={false} /></mesh>
         <mesh position={[-R * 0.3, R * 0.45, R * 0.6]} scale={sm(0.5 + 0.5 * inf)}><sphereGeometry args={[R * 0.12, 12, 8]} /><meshBasicMaterial color="#fff6e8" transparent opacity={0.7} /></mesh>
       </group>
       <pointLight position={[0.35, 0.42, -0.7]} intensity={0.9} distance={1.5} color="#ff8a30" />
@@ -86,7 +86,7 @@ const BarroPalas: React.FC<UP> = ({ d, p }) => {
 const CuchilloFilo: React.FC<UP> = ({ d, p }) => {
   const aT = sec(p, "ti", 2.2);
   return <U3 d={d} bg={p.bg} ground={null} floor="wood" mode="wipe" sky="#14181c" key1={[-0.8, 2.2, 1.4]}
-    cam={{ at: [0.1, 0.07, -0.04], az: [-0.66, 0.04], el: [0.46, 0.34], r: [0.78, 0.68], fov: 34 }}>{(tt) => {
+    cam={{ at: [0.1, 0.07, -0.04], at1: [0.2, 0.06, 0.04], az: [-0.66, -0.1], el: [0.46, 0.4], r: [0.8, 0.9], fov: 34 }}>{(tt) => {
     const on = tt < aT - 0.1 ? 1 : 0, st = (tt * 0.93) % 1, tri = 1 - Math.abs(2 * st - 1), sx = on * (0.2 * tri - 0.1), push = on * (st < 0.5 ? 1 : 0.35),
       slip = eio(tt, aT, aT + 0.3), back = eio(tt, aT + 0.25, aT + 0.6), cut = eio(tt, aT + 0.2, aT + 0.45);
     return <>
