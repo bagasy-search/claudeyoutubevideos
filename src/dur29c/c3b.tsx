@@ -61,9 +61,11 @@ const CiudadMadera: React.FC<UP> = ({ d, p }) => {
 const CortaFuego: React.FC<UP> = ({ d, p }) => {
   const aD = sec(p, "destruian", 1.5), aH = sec(p, "hueco", 3.0);
   return <U3 d={d} bg={p.bg} ground={[96, 80, 60]} mode="wipe" sky="#1a1410" key1={[-1, 2.4, 1.8]}
-    cam={{ at: [0.0, 0.34, 0], az: [-0.26, -0.14], el: [0.2, 0.18], r: [1.95, 1.85], fov: 34 }}>{(tt) => {
-    const fire = lerp(-1.4, -0.12, cl(tt / (aH + 1.5)));
+    cam={{ at: [-0.2, 0.3, 0], az: [-0.12, 0.0], el: [0.24, 0.2], r: [2.35, 2.15], fov: 36 }}>{(tt) => {
+    const fire = lerp(-1.4, -0.12, cl(tt / (aH + 1.5))), gapK = eio(tt, aD, aD + 1.4);
     return <>
+      <mesh position={[0.22, 0.004, 0]} rotation={[-PI / 2, 0, 0]} scale={[sm(gapK), 1, 1]}><planeGeometry args={[0.72, 0.5]} /><meshStandardMaterial map={dirtT([92, 62, 36])} roughness={1} /></mesh>
+      <mesh position={[-0.08, 0.005, 0]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[0.14, 0.5]} /><meshStandardMaterial color="#1a1410" roughness={1} transparent opacity={0.7 * cl((fire + 0.4) / 0.3)} /></mesh>
       {Array.from({ length: 11 }, (_, i) => { const x = -1.1 + i * 0.22, gap = i >= 5 && i <= 7, dn = gap ? eio(tt, aD + (i - 5) * 0.3, aD + (i - 5) * 0.3 + 0.7) : 0, b = cl((fire - x + 0.1) / 0.3);
         return gap && dn >= 1 ? <group key={i}>{Array.from({ length: 5 }, (_, j) => <mesh key={j} position={[x + (rn(i * 5 + j, 1) - 0.5) * 0.18, 0.012, (rn(i * 5 + j, 2) - 0.5) * 0.14]} rotation={[0, rn(i * 5 + j, 3) * 3, 0]}><boxGeometry args={[0.16, 0.012, 0.02]} />{M.wood({ base: [90, 62, 36] })}</mesh>)}</group>
           : <Casa key={i} p={[x, 0, 0]} s={1.3} burn={x < 0 ? b : 0} fire={x < 0 ? cl(b * 2) * (1 - 0.5 * cl((fire - x - 0.4) / 0.3)) : 0} down={dn} tt={tt} i={i} />; })}
@@ -376,15 +378,18 @@ const RankingCiudades: React.FC<UP> = ({ d, p }) => {
     : i === 3 ? <Goblet s={0.9} col="#cfe8ff" op={0.5} />
     : <group>{[-0.05, 0.05].map((x) => <mesh key={x} position={[x, 0.09, 0]}><boxGeometry args={[0.035, 0.18, 0.04]} /><meshStandardMaterial map={dirtT([170, 156, 132])} /></mesh>)}<mesh position={[0, 0.15, 0]}><boxGeometry args={[0.14, 0.02, 0.04]} /><meshStandardMaterial color="#8a7a62" /></mesh></group>;
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="drop" sky="#0d0b0a" key1={[-1, 2.6, 1.8]}
-    cam={{ at: [0, 0.5, 0], az: [-0.08, 0.06], el: [0.14, 0.12], r: [2.3, 2.2], fov: 36 }}>{(tt) => <>
-      {keys.map((_, i) => { const x = (i - 2) * 0.44, k = pop(tt, A[i]), on = eio(tt, A[i], A[i] + 0.9), h = 0.12 + (H[i] - 0.12) * on;
+    cam={{ at: [0, 0.4, 0], az: [-0.1, 0.08], el: [0.14, 0.1], r: [2.2, 2.0], fov: 36 }}>{(tt) => <>
+      {keys.map((_, i) => { const x = (i - 2) * 0.5, k = pop(tt, A[i]), on = eio(tt, A[i], A[i] + 0.9), h = 0.12 + (H[i] - 0.12) * on;
         return <group key={i} position={[x, 0, -Math.abs(i - 2) * 0.08]}>
-          <group scale={sm(2.2 * k)}>{city(i)}</group>
+          <group scale={sm(3.0 * k)}>{city(i)}</group>
+          <group position={[0.06, 0, -0.16]}>
           <mesh position={[0.11, (h + 0.12) / 2, 0]} scale={[1, sm(h + 0.12), 1]}><cylinderGeometry args={[0.012, 0.015, 1, 8]} />{M.steel({ col: "#2a2826" })}</mesh>
           <mesh position={[0.11 - 0.025, h + 0.12, 0]}><boxGeometry args={[0.05, 0.006, 0.006]} />{M.steel({ col: "#2a2826" })}</mesh>
           <Lantern p={[0.06, h + 0.05, 0]} s={1.4} on={on} />
-          <pointLight position={[0.06, h + 0.05, 0.1]} intensity={1.2 * on} distance={0.8} color="#ffb860" />
+          <mesh position={[0.06, h + 0.105, 0]}><cylinderGeometry args={[0.002, 0.002, 0.03, 4]} />{M.steel({ col: "#2a2826" })}</mesh>
+          <pointLight position={[0.06, h + 0.05, 0.1]} intensity={0.0001 + 1.2 * on} distance={0.8} color="#ffb860" />
           {i === 3 && Array.from({ length: 8 }, (_, j) => <mesh key={j} position={[0.11, h + 0.02 - j * 0.04, 0.012]} rotation={[0, j % 2 ? PI / 2 : 0, 0]} scale={sm(eio(tt, A[3] + 0.9, A[3] + 1.4))}><torusGeometry args={[0.012, 0.004, 6, 12]} />{M.steel({ col: "#7a7e82" })}</mesh>)}
+          </group>
         </group>; })}
     </>}</U3>;
 };
