@@ -275,13 +275,13 @@ const Coop: React.FC<{ t: number; tx: ReturnType<typeof useFarmTex>; ft: ReturnT
     {/* CORTE de tierra al frente: la malla de 1/2" en L enterrada y la cueva de la rata que choca contra ella */}
     <group position={[CX - 0.2, 0, 1.9]}>
       <mesh position={[0, -0.45, 0.45]}><planeGeometry args={[3.6, 0.9]} /><meshStandardMaterial map={tx.strata} roughness={1} /></mesh>
-      <Box p={[0, -0.46, 0]} s={[3.6, 0.9, 0.9]} cs={false} c="#3a2a1c" map={tx.soil} r={1} rad={0.01} />
+      <Box p={[0, -0.46, -0.02]} s={[3.6, 0.9, 0.86]} cs={false} c="#3a2a1c" map={tx.soil} r={1} rad={0.01} />
       {/* malla: baja por la pared y sale en L hacia afuera */}
-      <mesh position={[0.6, -0.15, 0.455]}><planeGeometry args={[0.02, 0.3]} /><meshStandardMaterial color="#cfd3d6" metalness={0.8} roughness={0.3} /></mesh>
-      <mesh position={[0.6, -0.15, 0.456]}><planeGeometry args={[0.18, 0.3]} /><meshStandardMaterial map={tx.mesh} transparent alphaTest={0.3} metalness={0.8} roughness={0.3} /></mesh>
-      <mesh position={[0.25, -0.3, 0.456]}><planeGeometry args={[0.72, 0.02]} /><meshStandardMaterial color="#cfd3d6" metalness={0.8} roughness={0.3} /></mesh>
+      <mesh position={[0.6, -0.15, 0.462]}><planeGeometry args={[0.02, 0.3]} /><meshStandardMaterial color="#cfd3d6" metalness={0.8} roughness={0.3} /></mesh>
+      <mesh position={[0.6, -0.15, 0.464]}><planeGeometry args={[0.18, 0.3]} /><meshStandardMaterial map={tx.mesh} transparent alphaTest={0.3} metalness={0.8} roughness={0.3} /></mesh>
+      <mesh position={[0.25, -0.3, 0.464]}><planeGeometry args={[0.72, 0.02]} /><meshStandardMaterial color="#cfd3d6" metalness={0.8} roughness={0.3} /></mesh>
       {/* cueva: de la izquierda baja hasta tocar la malla */}
-      {Array.from({ length: 14 }, (_, k) => { const x = -1.4 + k * 0.12, y = -0.05 - Math.sin(k / 13 * Math.PI * 0.55) * 0.3; return <mesh key={k} position={[x, y, 0.452]}><circleGeometry args={[0.055, 14]} /><meshStandardMaterial color="#140d08" roughness={1} /></mesh>; })}
+      {Array.from({ length: 14 }, (_, k) => { const x = -1.4 + k * 0.12, y = -0.05 - Math.sin(k / 13 * Math.PI * 0.55) * 0.3; return <mesh key={k} position={[x, y, 0.457]}><circleGeometry args={[0.055, 14]} /><meshStandardMaterial color="#140d08" roughness={1} /></mesh>; })}
     </group>
   </group>
 );
