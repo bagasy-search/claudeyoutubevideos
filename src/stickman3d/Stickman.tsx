@@ -13,6 +13,8 @@ import { evaluarGuion, PasoGuion } from "./acciones";
 import { Accesorios, NombreAccesorio } from "./accesorios";
 
 export type StickmanProps = {
+  /** caminar/correr sin desplazarse (la posición la maneja quien lo usa) */
+  enSitio?: boolean;
   x?: number; z?: number; rotY?: number; escala?: number;
   guion?: PasoGuion[];
   pose?: Pose; // pose fija (ignora el guion)
@@ -191,7 +193,7 @@ export const Stickman: React.FC<StickmanProps> = (props) => {
     mirada: props.mirada, boca: props.boca,
   });
   return (
-    <StickmanCuerpo pose={ev.pose} e={ev.expr} t={frame / fps} x={(props.x ?? 0) + ev.dx} z={(props.z ?? 0) + ev.dz}
+    <StickmanCuerpo pose={ev.pose} e={ev.expr} t={frame / fps} x={(props.x ?? 0) + (props.enSitio ? 0 : ev.dx)} z={(props.z ?? 0) + (props.enSitio ? 0 : ev.dz)}
       rotY={(props.rotY ?? 0) + ev.rotY} escala={props.escala} color={props.color} accesorios={props.accesorios}
       sombras={props.sombras} contacto={props.contacto} colorContacto={props.colorContacto} />
   );
