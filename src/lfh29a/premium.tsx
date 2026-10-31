@@ -412,8 +412,8 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
   let act = 0; for (let i = 1; i < N; i++) act += phys(t, cards[i].at - 0.25, 6.2, 0.5);
   // empujón de cámara en cada llegada: sube y baja en curva (seno amortiguado), nunca lineal
   let push = 0; for (let i = 0; i < N; i++) { const x = t - (cards[i].at - 0.25); if (x > 0) push += Math.sin(Math.min(x, 1.6) / 1.6 * Math.PI) * Math.exp(-x * 0.6); }
-  const camZ = -520 * (1 - inn) + 40 * push + 26 * Math.sin((t - at) * 0.21) - 900 * xo;
-  const camRY = 16 * (1 - inn) + 4.2 * Math.sin((t - at) * 0.17 + 0.6) - 10 * xo;
+  const camZ = -520 * (1 - inn) + 40 * push + 52 * Math.sin((t - at) * 0.29) - 900 * xo;
+  const camRY = 16 * (1 - inn) + 7 * Math.sin((t - at) * 0.23 + 0.6) - 10 * xo;
   const camRX = 6 + 1.6 * Math.sin((t - at) * 0.13) + 8 * xo;
   const camY = 10 * Math.sin((t - at) * 0.11 + 1.2);
   const R = iris * 1500;
@@ -422,10 +422,7 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
   return <AbsoluteFill style={{ opacity: cl(iris * 2.2), fontFamily: FONT, color: G.txt, WebkitMaskImage: mask, maskImage: mask } as React.CSSProperties}>
     <AbsoluteFill style={{ background: `radial-gradient(ellipse 70% 60% at 50% 46%, ${c}22, #0b0b0d 62%), #0b0b0d` }} />
     <div style={{ position: "absolute", left: 0, right: 0, top: 860, height: 220, background: "linear-gradient(180deg, rgba(255,255,255,.04), transparent)" }} />
-    <div style={{ position: "absolute", left: 110, top: 86, opacity: hdr, transform: `translateX(${(1 - hdr) * -40}px)` }}>
-      <Kicker txt={kicker} col={c} w={hdr} />
-      <div style={{ fontWeight: 800, fontSize: 58, marginTop: 6, opacity: cl(hdr * 1.5), clipPath: `inset(0 ${(1 - cl(hdr)) * 100}% 0 0)` }}>{title}</div>
-    </div>
+    {/* sin rótulo arriba a la izquierda (regla 29-oct): el título ya lo dice la voz */}
     {/* contador: el número nuevo cae desde arriba con resorte y empuja al anterior hacia abajo */}
     <div style={{ position: "absolute", right: 110, top: 96, fontWeight: 800, fontSize: 64, letterSpacing: -1, opacity: cl(phys(t, cards[0].at - 0.3, 6, 0.7)) * (1 - xo), display: "flex", alignItems: "baseline" }}>
       <div style={{ height: 78, overflow: "hidden", position: "relative", width: 52 }}>
@@ -440,7 +437,7 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
       <div style={{ transformStyle: "preserve-3d", transform: `translateZ(${camZ}px) rotateX(${camRX}deg) rotateY(${camRY}deg)` }}>
         {cards.map((cd, i) => {
           // cada tarjeta entra en SU palabra (la 1ª con el carrusel): cae con masa desde abajo-derecha, girada, y asienta
-          const s = phys(t, i === 0 ? Math.min(at + 0.45, cd.at - 0.6) : cd.at - 0.6, 6.4, 0.38);
+          const ent = i === 0 ? Math.min(at + 0.45, cd.at - 0.6) : cd.at - 0.6, s = phys(t, ent, 6.4, 0.38);
           if (s <= 0.002) return null;
           const d = i - act, ad = Math.abs(d), sg = Math.sign(d);
           const x = sg * (Math.min(ad, 1) * 360 + Math.max(ad - 1, 0) * 210);
@@ -455,7 +452,7 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
             WebkitBoxReflect: "below 14px linear-gradient(transparent 74%, rgba(255,255,255,.2))" } as React.CSSProperties}>
             <div style={{ position: "relative", width: "100%", height: "100%", borderRadius: 24, overflow: "hidden", background: "#16171a",
               boxShadow: `0 ${40 + Math.abs(land) * 60}px ${90 + Math.abs(land) * 80}px rgba(0,0,0,${0.6 - Math.min(0.3, Math.abs(land) * 0.3)}), 0 0 0 ${2 + 2 * front}px ${front > 0.5 ? c : "rgba(255,255,255,.12)"}` }}>
-              {cd.img && <Img src={staticFile("img/" + P + cd.img + ".jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.08 + 0.06 * front * ei(t, cd.at, cd.at + 6)})` }} />}
+              {cd.img && <Img src={staticFile("img/" + P + cd.img + ".jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.06 + 0.13 * ei(t, ent, ent + 11)}) translateX(${-14 * ei(t, ent, ent + 11)}px)` }} />}
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(0,0,0,.35) 0%, transparent 28%, transparent 46%, rgba(0,0,0,.92) 100%)" }} />
               <div style={{ position: "absolute", inset: 0, background: "#000", opacity: Math.min(1, ad) * 0.5 }} />
               <div style={{ position: "absolute", left: 26, top: 22, fontWeight: 800, fontSize: 104, lineHeight: 1, color: c, textShadow: "0 6px 24px rgba(0,0,0,.6)" }}>{cd.n}</div>
