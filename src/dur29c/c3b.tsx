@@ -61,7 +61,7 @@ const CiudadMadera: React.FC<UP> = ({ d, p }) => {
 const CortaFuego: React.FC<UP> = ({ d, p }) => {
   const aD = sec(p, "destruian", 1.5), aH = sec(p, "hueco", 3.0);
   return <U3 d={d} bg={p.bg} ground={[96, 80, 60]} mode="wipe" sky="#1a1410" key1={[-1, 2.4, 1.8]}
-    cam={{ at: [0.0, 0.24, 0], az: [-0.26, -0.14], el: [0.22, 0.2], r: [1.6, 1.5], fov: 34 }}>{(tt) => {
+    cam={{ at: [0.0, 0.34, 0], az: [-0.26, -0.14], el: [0.2, 0.18], r: [1.95, 1.85], fov: 34 }}>{(tt) => {
     const fire = lerp(-1.4, -0.12, cl(tt / (aH + 1.5)));
     return <>
       {Array.from({ length: 11 }, (_, i) => { const x = -1.1 + i * 0.22, gap = i >= 5 && i <= 7, dn = gap ? eio(tt, aD + (i - 5) * 0.3, aD + (i - 5) * 0.3 + 0.7) : 0, b = cl((fire - x + 0.1) / 0.3);
@@ -160,7 +160,7 @@ const IslaJaula: React.FC<UP> = ({ d, p }) => {
 const CopaCadena: React.FC<UP> = ({ d, p }) => {
   const aN = sec(p, "nunca", 1.5), aT = sec(p, "traidor", 3.0);
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="wipe" sky="#0d0b0a" key1={[-0.8, 2.2, 1.4]}
-    cam={{ at: [0.32, 0.26, 0], az: [-0.2, 0.06], el: [0.16, 0.12], r: [1.3, 1.2], fov: 32 }}>{(tt) => {
+    cam={{ at: [0.33, 0.24, 0], az: [-0.08, 0.04], el: [0.16, 0.12], r: [1.6, 1.5], fov: 32 }}>{(tt) => {
     const ch = eio(tt, aN, aN + 1.2), ten = eio(tt, aN + 1.3, aN + 1.6), red = eio(tt, aT, aT + 0.6), A = [0.06, 0.16], B = [0.62, 0.18], NL = 16;
     return <>
       <mesh position={[0, 0.06, 0]}><cylinderGeometry args={[0.14, 0.16, 0.12, 32]} /><meshStandardMaterial color="#2a2420" roughness={0.5} /></mesh>
@@ -178,6 +178,7 @@ const CopaCadena: React.FC<UP> = ({ d, p }) => {
       {Array.from({ length: NL }, (_, i) => { const u = (i + 0.5) / NL, on = cl(ch * NL * 1.2 - i), sag = 0.09 * Math.sin(PI * u) * (1 - ten);
         return <mesh key={i} position={[lerp(A[0], B[0] + 0.04, u), lerp(A[1], B[1] + 0.13, u) - sag, 0]} rotation={[i % 2 ? PI / 2 : 0, 0, Math.atan2(0.01, 0.56)]} scale={sm(on)}><torusGeometry args={[0.018, 0.006, 8, 14]} />{M.steel({ col: "#6a6e72" })}</mesh>; })}
       <mesh position={[0, 0.17, 0]} rotation={[PI / 2, 0, 0]} scale={sm(ch)}><torusGeometry args={[0.045, 0.008, 8, 20]} />{M.steel({ col: "#6a6e72" })}</mesh>
+      <pointLight position={[0.66, 0.4, 0.3]} intensity={1.4} distance={1} color="#e8eef4" />
       <spotLight position={[0, 1.5, 0.6]} angle={0.45} penumbra={0.6} intensity={8} distance={3} color={new THREE.Color().lerpColors(new THREE.Color("#fff4e0"), new THREE.Color("#ff3a2a"), red)} />
     </>;
   }}</U3>;
@@ -249,11 +250,11 @@ const TopCincoCiudad: React.FC<UP> = ({ d, p }) => {
         <mesh position={[-0.03, 0.23, 0]} rotation={[0, 0, 0.9 * on]} scale={[1, sm(on), 1]}><cylinderGeometry args={[0.018, 0.03, 0.3, 10]} />{M.water({ op: 0.75 })}</mesh></group>
     : <group position={[0, 0.1, 0]}>{[0, 1].map((j) => <mesh key={j} position={[j * 0.1 - 0.05, j * 0.04, 0]} rotation={[PI / 2, (j ? -1 : 1) * tt * 2, 0]}><cylinderGeometry args={[0.07 - j * 0.02, 0.07 - j * 0.02, 0.02, 14]} />{M.brass()}</mesh>)}</group>;
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="drop" sky="#0d0b0a" key1={[-1, 2.6, 1.8]}
-    cam={{ at: [0, 0.48, 0], az: [-0.08, 0.06], el: [0.16, 0.14], r: [2.0, 1.85], fov: 36 }}>{(tt) => { const c = cur(tt); return <>
+    cam={{ at: [0, 0.5, 0], az: [-0.08, 0.06], el: [0.16, 0.14], r: [2.35, 2.2], fov: 36 }}>{(tt) => { const c = cur(tt); return <>
       {keys.map((_, i) => { const x = (2 - i) * 0.42, z = -Math.abs(i - 2) * 0.1, h = 0.12 + i * 0.09, k = pop(tt, A[i]), on = eio(tt, A[i], A[i] + 0.4), isC = c === i ? 1 : 0, past = c > i ? 1 : 0;
         return <group key={i} position={[x, 0, z + 0.18 * isC * on]}>
           <mesh position={[0, h / 2, 0]}><cylinderGeometry args={[0.15, 0.17, h, 32]} /><meshStandardMaterial map={dirtT([96, 88, 78])} roughness={0.7} /></mesh>
-          <group position={[0, h, 0]} scale={sm(2.4 * k * (1 + 0.7 * isC * on) * (1 - 0.15 * past))}>{obj(i, tt, isC ? on : past)}</group>
+          <group position={[0, h, 0]} scale={sm(1.9 * k * (1 + 0.35 * isC * on) * (1 - 0.15 * past))}>{obj(i, tt, isC ? on : past)}</group>
           <spotLight position={[x * 0.2, 1.6, 0.6]} angle={0.22} penumbra={0.6} intensity={1 + 9 * isC * on + 2 * past} distance={3} color="#fff0d8" />
         </group>; })}
     </>; }}</U3>;
@@ -375,10 +376,10 @@ const RankingCiudades: React.FC<UP> = ({ d, p }) => {
     : i === 3 ? <Goblet s={0.9} col="#cfe8ff" op={0.5} />
     : <group>{[-0.05, 0.05].map((x) => <mesh key={x} position={[x, 0.09, 0]}><boxGeometry args={[0.035, 0.18, 0.04]} /><meshStandardMaterial map={dirtT([170, 156, 132])} /></mesh>)}<mesh position={[0, 0.15, 0]}><boxGeometry args={[0.14, 0.02, 0.04]} /><meshStandardMaterial color="#8a7a62" /></mesh></group>;
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="drop" sky="#0d0b0a" key1={[-1, 2.6, 1.8]}
-    cam={{ at: [0, 0.4, 0], az: [-0.08, 0.06], el: [0.14, 0.12], r: [1.95, 1.85], fov: 36 }}>{(tt) => <>
+    cam={{ at: [0, 0.5, 0], az: [-0.08, 0.06], el: [0.14, 0.12], r: [2.3, 2.2], fov: 36 }}>{(tt) => <>
       {keys.map((_, i) => { const x = (i - 2) * 0.44, k = pop(tt, A[i]), on = eio(tt, A[i], A[i] + 0.9), h = 0.12 + (H[i] - 0.12) * on;
         return <group key={i} position={[x, 0, -Math.abs(i - 2) * 0.08]}>
-          <group scale={sm(2.7 * k)}>{city(i)}</group>
+          <group scale={sm(2.2 * k)}>{city(i)}</group>
           <mesh position={[0.11, (h + 0.12) / 2, 0]} scale={[1, sm(h + 0.12), 1]}><cylinderGeometry args={[0.012, 0.015, 1, 8]} />{M.steel({ col: "#2a2826" })}</mesh>
           <mesh position={[0.11 - 0.025, h + 0.12, 0]}><boxGeometry args={[0.05, 0.006, 0.006]} />{M.steel({ col: "#2a2826" })}</mesh>
           <Lantern p={[0.06, h + 0.05, 0]} s={1.4} on={on} />

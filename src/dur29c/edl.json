@@ -1631,7 +1631,8 @@
 "k": "real",
 "t": "real",
 "p": {
-"v": "img/dur29c/ag/dur29c_i01_furnace_door.png"
+"v": "broll/dur29c/v06.mp4",
+"rate": 0.787
 }
 },
 {

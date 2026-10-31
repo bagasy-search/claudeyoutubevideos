@@ -35,7 +35,7 @@ const Rata: React.FC<{ p: number[]; s?: number; ry?: number }> = ({ p, s = 1, ry
 const CloacaCorte: React.FC<UP> = ({ d, p }) => {
   const aM = sec(p, "monedas", 3.0);
   return <U3 d={d} bg={p.bg} ground={null} mode="wipe" sky="#0d0b0a" key1={[-1.2, 2.4, 2]}
-    cam={{ at: [0, 0.55, 0], at1: [0.05, -0.12, 0], az: [-0.3, -0.12], el: [0.28, 0.04], r: [1.9, 1.05], fov: 34 }}>{(tt) => {
+    cam={{ at: [0, 0.55, 0], at1: [0.05, -0.12, 0], az: [-0.3, -0.12], el: [0.28, 0.06], r: [1.9, 1.32], fov: 34 }}>{(tt) => {
     const wheel = lerp(-1.4, 1.4, cl(tt / 4)), glint = eio(tt, aM, aM + 0.6);
     return <>
       <mesh position={[0, 0.62, -0.05]}><boxGeometry args={[3, 0.1, 0.8]} /><meshStandardMaterial map={cobbleT()} roughness={0.9} /></mesh>
@@ -50,7 +50,7 @@ const CloacaCorte: React.FC<UP> = ({ d, p }) => {
       <mesh position={[0.05, 0.12, 0.1]}><cylinderGeometry args={[0.1, 0.24, 1.1, 20, 1, true]} /><meshBasicMaterial color="#ffe2b0" transparent opacity={0.08} depthWrite={false} side={THREE.DoubleSide} /></mesh>
       <spotLight position={[0.05, 0.6, 0.1]} angle={0.45} penumbra={0.8} intensity={5} distance={1.6} color="#ffe6c0" />
       <Tunnel L={3} R={0.42} p={[0, -0.02, -0.05]} />
-      <Water w={3} dpt={0.7} y={-0.24} col="#2e2618" />
+      <Water w={3} dpt={0.7} y={-0.2} col="#2e2618" />
       <group position={[0.05, -0.29, 0.12]}><Stickman enSitio escala={0.17} rotY={25} guion={[{ t: 0, accion: "caminar", expr: "decidido" }, { t: aM, accion: "senalar", expr: "sorprendido" }]} semilla={3} contacto={0} color="#5a4c3c" /></group>
       <Lantern p={[0.19, -0.1, 0.22]} s={1.15} on={0.35 + 0.25 * cl(tt / 0.8)} />
       {Array.from({ length: 9 }, (_, i) => <Coin key={i} p={[-0.45 + i * 0.11 + rn(i, 2) * 0.04, -0.235, 0.18 + rn(i, 3) * 0.12]} r={0.02} silver={i === 4} />)}
@@ -77,27 +77,24 @@ const OchoPostales: React.FC<UP> = ({ d, p }) => {
 // ---- LondresRejillas · la calle de Londres de costado, llena de gente que camina; en «rejilla» las cuatro rejillas vierten chorros
 // al túnel y con ellos caen monedas, cucharas y clavos; en «abajo» todo se junta en el barro bajo el farol; el tambor cuenta 2 millones ----
 const LondresRejillas: React.FC<UP> = ({ d, p }) => {
-  const aR = sec(p, "rejilla", 1.5), aA = sec(p, "abajo", 3.0), GX = [-0.28, 0.32];
+  const aR = sec(p, "rejilla", 1.5), aA = sec(p, "abajo", 3.0), GX = [-0.3, 0.3];
   return <U3 d={d} bg={p.bg} ground={null} mode="wipe" sky="#14110e" key1={[-1, 2.5, 2]}
-    cam={{ at: [0, 0.46, 0], az: [-0.14, -0.02], el: [0.12, 0.1], r: [2.05, 1.95], fov: 34 }}>{(tt) => <>
-      {Array.from({ length: 7 }, (_, i) => { const h = 0.4 + rn(i, 1) * 0.3, x = -1.05 + i * 0.35; return <group key={i}>
-        <RBox s={[0.33, h, 0.3]} r={0.01} p={[x, 0.67 + h / 2, -0.32]}><meshStandardMaterial map={brickT([96 + rn(i, 2) * 40, 60 + rn(i, 4) * 20, 44], 1, 1)} roughness={0.9} /></RBox>
-        <mesh position={[x, 0.67 + h + 0.07, -0.32]} rotation={[0, PI / 4, 0]}><coneGeometry args={[0.25, 0.14, 4]} /><meshStandardMaterial color="#3a3430" roughness={0.9} /></mesh>
-        {[-0.07, 0.07].map((wx, j) => <mesh key={j} position={[x + wx, 0.67 + h * 0.62, -0.165]}><planeGeometry args={[0.06, 0.08]} /><meshStandardMaterial color="#ffd58a" emissive="#ffb050" emissiveIntensity={0.9 * (rn(i * 2 + j, 6) > 0.35 ? 1 : 0.1)} /></mesh>)}
-      </group>; })}
+    cam={{ at: [0, 0.26, 0], az: [-0.24, 0.04], el: [0.1, 0.08], r: [1.7, 1.5], fov: 34 }}>{(tt) => <>
       <mesh position={[0, 0.62, 0]}><boxGeometry args={[2.6, 0.08, 0.6]} /><meshStandardMaterial map={cobbleT()} roughness={0.9} /></mesh>
-      {Array.from({ length: 5 }, (_, i) => { const dir = i % 2 ? 1 : -1, x = ((i * 0.5 + dir * tt * 0.1 + 1.25) % 2.5) - 1.25;
-        return <group key={i} position={[x, 0.66, -0.16 + (i % 2) * 0.08]}><Stickman enSitio escala={0.15} rotY={dir * 90} guion={[{ t: 0, accion: "caminar", expr: "neutral" }]} semilla={30 + i} contacto={0} color={["#3a3430", "#4a3c30", "#2e2a28"][i % 3]} /></group>; })}
-      {GX.map((x, j) => <group key={j} position={[x, 0.665, 0.18]} scale={1.5}>{Array.from({ length: 6 }, (_, i) => <mesh key={i} position={[i * 0.026 - 0.065, 0, 0]}><boxGeometry args={[0.012, 0.014, 0.14]} />{M.steel({ col: "#1a1816" })}</mesh>)}</group>)}
+      <RBox s={[2.6, 0.12, 0.1]} r={0.01} p={[0, 0.72, -0.28]}><meshStandardMaterial map={brickT([110, 70, 50], 4, 1)} roughness={0.9} /></RBox>
+      {GX.map((x, j) => <group key={j} position={[x, 0.665, 0.18]} scale={1.6}>{Array.from({ length: 6 }, (_, i) => <mesh key={i} position={[i * 0.026 - 0.065, 0, 0]}><boxGeometry args={[0.012, 0.014, 0.14]} />{M.steel({ col: "#2a2826" })}</mesh>)}</group>)}
+      {GX.map((x, j) => <mesh key={j} position={[x, 0.3, 0.18]}><cylinderGeometry args={[0.07, 0.16, 0.6, 16, 1, true]} /><meshBasicMaterial color="#ffe2b0" transparent opacity={0.07} depthWrite={false} side={THREE.DoubleSide} /></mesh>)}
       {GX.map((x, j) => Array.from({ length: 16 }, (_, i) => { const u = (tt * 1.1 + i / 16 + j * 0.3) % 1, on = tt > aR + j * 0.2 + u * 0.55 ? 1 : 0; return <mesh key={j * 16 + i} position={[x + (rn(i + j * 16, 1) - 0.5) * 0.1, 0.6 - u * 0.64, 0.18 + (rn(i + j * 16, 2) - 0.5) * 0.08]} scale={[sm(on), sm(on * 2.2), sm(on)]}><sphereGeometry args={[0.012, 8, 6]} /><meshStandardMaterial color="#8a7a58" transparent opacity={0.75} roughness={0.2} /></mesh>; }))}
       <Tunnel L={2.6} R={0.34} p={[0, 0.12, -0.05]} />
       <Water w={2.6} dpt={0.6} y={-0.06} col="#2a2216" />
-      {Array.from({ length: 24 }, (_, i) => { const j = i % 2, x = GX[j] + (rn(i, 2) - 0.5) * 0.12, a = aR + (i / 24) * Math.max(1, aA - aR + 1.5), y = lerp(0.68, -0.05 + rn(i, 4) * 0.02, cl((tt - a) / 0.55));
-        const kind = i % 3; return <group key={i} position={[x, y, 0.18 + (rn(i, 5) - 0.5) * 0.1]} rotation={[rn(i, 6) * 6 * cl(tt - a), 0, rn(i, 7) * 4]} visible={tt > a} scale={1.6}>
+      {Array.from({ length: 30 }, (_, i) => { const j = i % 2, x = GX[j] + (rn(i, 2) - 0.5) * 0.14, a = aR + (i / 30) * Math.max(1.2, d / 30 - aR - 0.8), y = lerp(0.68, -0.05 + rn(i, 4) * 0.02, cl((tt - a) / 0.55));
+        const kind = i % 3; return <group key={i} position={[x, y, 0.18 + (rn(i, 5) - 0.5) * 0.12]} rotation={[rn(i, 6) * 6 * cl(tt - a), 0, rn(i, 7) * 4]} visible={tt > a} scale={2}>
           {kind === 0 ? <Coin p={[0, 0, 0]} r={0.022} silver={i % 7 === 0} /> : kind === 1 ? <group><mesh><boxGeometry args={[0.08, 0.008, 0.016]} />{M.steel({ col: "#a8aeb2" })}</mesh><mesh position={[0.05, 0, 0]} scale={[1.4, 0.4, 1]}><sphereGeometry args={[0.016, 10, 6]} />{M.steel({ col: "#a8aeb2" })}</mesh></group> : <mesh><cylinderGeometry args={[0.005, 0.005, 0.07, 6]} />{M.steel({ col: "#6a5a48" })}</mesh>}
         </group>; })}
-      <Lantern p={[0.1, 0.0, 0.3]} s={1.2} on={eio(tt, aA - 0.3, aA + 0.3)} />
-      <pointLight position={[0, 0.1, 0.45]} intensity={1.2 + 1.8 * eio(tt, aA, aA + 0.6)} distance={1.6} color="#ffb860" />
+      <group position={[0.02, -0.08, 0.22]}><Stickman enSitio escala={0.15} rotY={20} guion={[{ t: 0, accion: "caminar", expr: "decidido" }, { t: aA, accion: "senalar", expr: "sorprendido" }]} semilla={9} contacto={0} color="#c8a878" /></group>
+      <Lantern p={[0.14, 0.0, 0.3]} s={1.1} on={0.4 + 0.5 * eio(tt, aA - 0.3, aA + 0.3)} />
+      <pointLight position={[0, 0.1, 0.45]} intensity={1.2 + 1.4 * eio(tt, aA, aA + 0.6)} distance={1.6} color="#ffb860" />
+      <spotLight position={[0, 1.4, 0.4]} angle={0.6} penumbra={0.7} intensity={2.5} distance={2.4} color="#e8e0d0" />
     </>}</U3>;
 };
 
