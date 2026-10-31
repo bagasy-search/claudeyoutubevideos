@@ -1,0 +1,603 @@
+{
+"segs": [
+[
+3.89,
+8.28,
+"shot",
+"v01"
+],
+[
+8.28,
+12.16,
+"shot",
+"f01_llaves_mano_viento"
+],
+[
+12.16,
+15.97,
+"shot",
+"f02_estacionamiento_iglesia_noviembre"
+],
+[
+31.62,
+34.74,
+"shot",
+"f03_granja_story_county"
+],
+[
+45.12,
+50.6,
+"shot",
+"f04_mesa_peones_granja"
+],
+[
+53.98,
+60.94,
+"shot",
+"f05_puerta_granja_abierta"
+],
+[
+60.94,
+67.15,
+"shot",
+"v02"
+],
+[
+72.99,
+80.99,
+"shot",
+"f06_biblia_vieja_mesa"
+],
+[
+91.09,
+99.09,
+"shot",
+"f07_porton_tranquera"
+],
+[
+105.04,
+113.04,
+"shot",
+"f08_ventana_cocina_noche"
+],
+[
+138.08,
+147.08,
+"shot",
+"f09_telefono_pared_manivela"
+],
+[
+155.06,
+158.78,
+"shot",
+"f10_granja_vecina_lejos"
+],
+[
+158.78,
+166.68,
+"shot",
+"f11_coffee_cake_bandeja"
+],
+[
+170.99,
+176.24,
+"shot",
+"f12_sobre_banco_mesa"
+],
+[
+176.24,
+182.46,
+"shot",
+"f13_taberna_pueblo_noche"
+],
+[
+187.66,
+195.66,
+"shot",
+"f15_tomates_canasta"
+],
+[
+209.98,
+217.16,
+"shot",
+"f16_proverbios_20"
+],
+[
+221.79,
+229.79,
+"shot",
+"f17_dos_tazas_mesa_porche"
+],
+[
+243.54,
+249.58,
+"shot",
+"f18_camioneta_vieja_tierra"
+],
+[
+254.71,
+259.28,
+"shot",
+"f19_bolsas_semilla_galpon"
+],
+[
+259.28,
+264.79,
+"shot",
+"f20_hospital_cama_1956"
+],
+[
+270.7,
+278.7,
+"shot",
+"f22_proverbios_25"
+],
+[
+297.3,
+299.94,
+"shot",
+"f23_carro_madera_viejo"
+],
+[
+320.36,
+329.36,
+"shot",
+"f24_maizal_otono_cosecha"
+],
+[
+337.73,
+345.73,
+"shot",
+"f25_maiz_cosechado_carro"
+],
+[
+353.62,
+361.62,
+"shot",
+"v05"
+],
+[
+369.58,
+378.58,
+"shot",
+"f26_trilla_agosto_peones"
+],
+[
+379.38,
+382.31,
+"shot",
+"f27_atadora_vieja_campo"
+],
+[
+391.8,
+396.46,
+"shot",
+"f28_vaso_agua_mano"
+],
+[
+405.02,
+413.02,
+"shot",
+"f29_proverbios_22"
+],
+[
+425.74,
+431.52,
+"shot",
+"f30_chicos_granero_mirando"
+],
+[
+442.64,
+447.93,
+"shot",
+"v03"
+],
+[
+472.48,
+480.48,
+"shot",
+"f31_camino_granja_verano"
+],
+[
+487.46,
+495.46,
+"shot",
+"f32_maizal_verano_alto"
+],
+[
+500.51,
+508.51,
+"shot",
+"f33_porche_taza_platito"
+],
+[
+512.58,
+514.34,
+"shot",
+"f34_banco_pueblo_1961"
+],
+[
+535.44,
+537.18,
+"shot",
+"f35_campos_hamilton_county"
+],
+[
+537.18,
+545.18,
+"shot",
+"f36_proverbios_29"
+],
+[
+551.55,
+559.55,
+"shot",
+"f37_vestido_azul_percha"
+],
+[
+576.66,
+580.34,
+"shot",
+"f38_mesa_cocina_alacenas"
+],
+[
+586.32,
+595.32,
+"shot",
+"f39_mecedoras_porche"
+],
+[
+604.72,
+612.72,
+"shot",
+"f40_platito_rodilla"
+],
+[
+627.72,
+629.15,
+"shot",
+"f41_cama_colcha_lampara"
+],
+[
+641.48,
+646.41,
+"shot",
+"f42_college_cedar_falls_1962"
+],
+[
+660.78,
+662.91,
+"shot",
+"f43_dormitorio_dos_camas"
+],
+[
+671.14,
+680.14,
+"shot",
+"f44_valija_biblia"
+],
+[
+686.46,
+694.46,
+"shot",
+"f45_salmo_1"
+],
+[
+706.03,
+712.97,
+"shot",
+"f46_dos_chicas_camino_iglesia"
+],
+[
+712.97,
+714.94,
+"shot",
+"f47_tarjeta_navidad_sobre"
+],
+[
+737.9,
+745.9,
+"shot",
+"f48_cartera_biblia_escondida"
+],
+[
+776.05,
+782.2,
+"shot",
+"f49_dos_pares_huellas_nieve"
+],
+[
+801.01,
+809.01,
+"shot",
+"v09"
+],
+[
+819.87,
+828.67,
+"shot",
+"f50_bazar_iglesia_mesas"
+],
+[
+837.51,
+844.27,
+"shot",
+"f51_auto_viejo_ruta_ames"
+],
+[
+867.43,
+875.43,
+"shot",
+"f52_proverbios_17"
+],
+[
+883.24,
+891.24,
+"shot",
+"f53_segunda_taza_cafe"
+],
+[
+910.37,
+911.89,
+"shot",
+"f54_tienda_dime_store"
+],
+[
+916.33,
+925.33,
+"shot",
+"f55_cafe_pueblo_mostrador"
+],
+[
+926.61,
+928.35,
+"shot",
+"f56_taza_enjuagada_pileta"
+],
+[
+954.33,
+962.15,
+"shot",
+"v06"
+],
+[
+982.74,
+990.74,
+"shot",
+"f57_pure_papas_fuente"
+],
+[
+1002.47,
+1010.47,
+"shot",
+"f58_chicos_porche_mirando"
+],
+[
+1020.95,
+1028.95,
+"shot",
+"v08"
+],
+[
+1034.22,
+1042.49,
+"shot",
+"f59_foto_boda_1966"
+],
+[
+1042.49,
+1048.41,
+"shot",
+"f60_puerta_pueblo_mañana"
+],
+[
+1103.08,
+1108.25,
+"shot",
+"f61_corintios_15"
+],
+[
+1108.25,
+1113.69,
+"shot",
+"f62_porche_pueblo_noche"
+],
+[
+1128.57,
+1131.06,
+"shot",
+"f63_coro_iglesia_bancos"
+],
+[
+1136.99,
+1144.99,
+"shot",
+"f64_dos_tazas_viejas"
+],
+[
+1169.89,
+1177.89,
+"shot",
+"f65_porche_cocina_puerta"
+],
+[
+1212.25,
+1216.29,
+"shot",
+"v07"
+],
+[
+1238.32,
+1246.32,
+"shot",
+"f66_tarta_seca_porcion"
+],
+[
+1263.05,
+1266.31,
+"shot",
+"f67_porche_vacio_tarde"
+],
+[
+1355.13,
+1359.87,
+"shot",
+"v10"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 133.12,
+"out": 137.12
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE ONE WHO CARRIES STORIES",
+"at": 134.82,
+"out": 138.22
+},
+{
+"k": "step",
+"n": 2,
+"name": "ONLY CALLS WHEN THEY NEED SOMETHING",
+"at": 239.54,
+"out": 242.94
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE SHORT TEMPER",
+"at": 366.36,
+"out": 369.76
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE FLATTERER",
+"at": 467.68,
+"out": 471.08
+},
+{
+"k": "step",
+"n": 5,
+"name": "LAUGHS AT YOUR FAITH",
+"at": 636.42,
+"out": 639.82
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE ONE WHO KEEPS SCORE",
+"at": 816.79,
+"out": 820.19
+},
+{
+"k": "deal",
+"at": 876.63,
+"out": 877.63
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Who do they talk about?",
+"at": 885.51,
+"out": 887.71
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Do they ask you anything?",
+"at": 894.21,
+"out": 896.41
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "How they treat the help",
+"at": 905.15,
+"out": 907.35
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "How do they leave?",
+"at": 922.01,
+"out": 924.21
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Lighter or heavier?",
+"at": 935.79,
+"out": 938.79
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE FRIEND WHO MAKES YOU SMALLER",
+"at": 1028.19,
+"out": 1031.59
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1265.87
+},
+{
+"at": 1270.19
+},
+{
+"at": 1276.95
+},
+{
+"at": 1281.13
+},
+{
+"at": 1286.43
+},
+{
+"at": 1292.79
+},
+{
+"at": 1298.93
+}
+],
+"at": 1263.05,
+"out": 1300.93
+},
+{
+"k": "ask",
+"at": 1345.37,
+"out": 1353.37
+}
+],
+"end": 1359.87,
+"txt": {
+"recapTitle": "7 FRIENDS · ONE PORCH",
+"recap": [
+"\"I'd rather not know\"",
+"Decide the amount first",
+"Never let them drive",
+"Praises all? Ask why",
+"Love far, pray close",
+"Return the dish, washed",
+"Count what you put down"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"Which number",
+"did you recognize?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+28.8,
+36.8
+]
+}
+}

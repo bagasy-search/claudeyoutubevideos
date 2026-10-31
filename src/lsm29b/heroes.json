@@ -1,0 +1,157 @@
+[
+{
+"k": "porchweight",
+"at": 26.08,
+"out": 33.08
+},
+{
+"k": "armslength",
+"at": 58.18,
+"out": 65.18
+},
+{
+"k": "cta1",
+"at": 108.78,
+"out": 117.28
+},
+{
+"k": "partyline",
+"at": 141.6,
+"out": 149.6
+},
+{
+"k": "coffeecake",
+"at": 237.28,
+"out": 244.28
+},
+{
+"k": "lyletruck",
+"at": 270.94,
+"out": 277.94
+},
+{
+"k": "twentybill",
+"at": 292.58,
+"out": 299.58
+},
+{
+"k": "combine",
+"at": 324.18,
+"out": 331.68
+},
+{
+"k": "drymatch",
+"at": 375.34,
+"out": 381.84
+},
+{
+"k": "milkhouse",
+"at": 385.92,
+"out": 392.92
+},
+{
+"k": "carkeys",
+"at": 437.18,
+"out": 444.68
+},
+{
+"k": "goldbible",
+"at": 473.22,
+"out": 480.72
+},
+{
+"k": "cosign",
+"at": 520.86,
+"out": 528.36
+},
+{
+"k": "ribbons",
+"at": 551.9,
+"out": 559.4
+},
+{
+"k": "kitchenporch",
+"at": 589.6,
+"out": 597.1
+},
+{
+"k": "breadfour",
+"at": 618.92,
+"out": 625.92
+},
+{
+"k": "prayerlist",
+"at": 633.62,
+"out": 641.12
+},
+{
+"k": "sundays",
+"at": 667.74,
+"out": 674.74
+},
+{
+"k": "twobytwo",
+"at": 769.69,
+"out": 777.19
+},
+{
+"k": "nursebadges",
+"at": 787.69,
+"out": 794.69
+},
+{
+"k": "cta2",
+"at": 801.49,
+"out": 810.49
+},
+{
+"k": "ledger",
+"at": 836.47,
+"out": 843.97
+},
+{
+"k": "returndish",
+"at": 850.07,
+"out": 857.57
+},
+{
+"k": "clothesline",
+"at": 883.55,
+"out": 892.55
+},
+{
+"k": "lane",
+"at": 933.03,
+"out": 940.03
+},
+{
+"k": "passpotatoes",
+"at": 983.11,
+"out": 989.61
+},
+{
+"k": "poemnotebook",
+"at": 1056.27,
+"out": 1063.27
+},
+{
+"k": "putdown",
+"at": 1118.13,
+"out": 1126.63
+},
+{
+"k": "circles70",
+"at": 1170.19,
+"out": 1178.19
+},
+{
+"k": "snowdrive",
+"at": 1242.57,
+"out": 1249.57
+},
+{
+"k": "sevencups",
+"at": 1304.49,
+"out": 1312.49
+}
+]
