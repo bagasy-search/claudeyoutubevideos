@@ -242,7 +242,7 @@ const LatheDyn: React.FC<{ P: number[][]; children: React.ReactNode }> = ({ P, c
 // ---- ColinaAgujero · la colina con diamantes se va comiendo: colina → pozo → agujero gigante, con los diggers como hormigas ----
 const ColinaAgujero: React.FC<UP> = ({ d, p }) => {
   const aC = sec(p, "colina", 0.6), aP = sec(p, "pozo", 2.0), aA = sec(p, "agujero", 3.2);
-  return <U3 d={d} bg={p.bg} ground={null} floor="dark" sky="#c8b89a" mode="iris" key1={[-1.2, 3, 1.4]} backDim={0.35}
+  return <U3 d={d} bg={p.bg} ground={null} floor="dark" sky="#2a2219" mode="iris" key1={[-1.2, 3, 1.4]} backDim={0.35}
     cam={{ at: [0, 0.32, 0], az: [-0.3, -0.12], el: [0.2, 0.15], r: [2.2, 1.95], fov: 34 }}>{(tt) => {
     const k1 = eio(tt, aC + 0.4, aP + 0.4), k2 = eio(tt, aP + 0.2, aA + 1.4);
     return <>
