@@ -22,7 +22,7 @@ const TY = 0.33; // tapa de la mesa baja
 type C = { p: number[]; l: number[]; fov: number };
 export const CAMS: Record<string, C> = {
   wide: { p: [0.1, 0.95, 1.6], l: [0, 0.4, -0.35], fov: 42 },
-  wide2: { p: [-0.8, 1.05, 1.3], l: [0.1, 0.42, -0.4], fov: 40 },
+  wide2: { p: [-0.6, 1.0, 1.2], l: [-0.28, 0.42, -0.4], fov: 40 }, // más adentro: la de antes veía el vacío detrás de la pared derecha
   table: { p: [0.22, 0.8, 0.75], l: [0.0, 0.34, -0.02], fov: 38 },
   props: { p: [0.08, 0.56, 0.48], l: [0.06, 0.35, 0.0], fov: 36 },
   propsL: { p: [-0.32, 0.55, 0.42], l: [-0.12, 0.35, 0.0], fov: 36 },
