@@ -437,7 +437,7 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
       <div style={{ transformStyle: "preserve-3d", transform: `translateZ(${camZ}px) rotateX(${camRX}deg) rotateY(${camRY}deg)` }}>
         {cards.map((cd, i) => {
           // cada tarjeta entra en SU palabra (la 1ª con el carrusel): cae con masa desde abajo-derecha, girada, y asienta
-          const ent = i === 0 ? Math.min(at + 0.45, cd.at - 0.6) : cd.at - 0.6, s = phys(t, ent, 6.4, 0.38);
+          const ent = i === 0 ? Math.min(at + 0.45, cd.at - 0.6) : cd.at - 0.6, s = phys(t, ent, 6.4, 0.38), zd = Math.max(11, (cards[i + 1]?.at ?? out) + 1 - ent);
           if (s <= 0.002) return null;
           const d = i - act, ad = Math.abs(d), sg = Math.sign(d);
           const x = sg * (Math.min(ad, 1) * 360 + Math.max(ad - 1, 0) * 210);
@@ -452,7 +452,7 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
             WebkitBoxReflect: "below 14px linear-gradient(transparent 74%, rgba(255,255,255,.2))" } as React.CSSProperties}>
             <div style={{ position: "relative", width: "100%", height: "100%", borderRadius: 24, overflow: "hidden", background: "#16171a",
               boxShadow: `0 ${40 + Math.abs(land) * 60}px ${90 + Math.abs(land) * 80}px rgba(0,0,0,${0.6 - Math.min(0.3, Math.abs(land) * 0.3)}), 0 0 0 ${2 + 2 * front}px ${front > 0.5 ? c : "rgba(255,255,255,.12)"}` }}>
-              {cd.img && <Img src={staticFile("img/" + P + cd.img + ".jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.06 + 0.13 * ei(t, ent, ent + 11)}) translateX(${-14 * ei(t, ent, ent + 11)}px)` }} />}
+              {cd.img && <Img src={staticFile("img/" + P + cd.img + ".jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.06 + 0.13 * ei(t, ent, ent + zd)}) translateX(${-14 * ei(t, ent, ent + zd)}px)` }} />}
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(0,0,0,.35) 0%, transparent 28%, transparent 46%, rgba(0,0,0,.92) 100%)" }} />
               <div style={{ position: "absolute", inset: 0, background: "#000", opacity: Math.min(1, ad) * 0.5 }} />
               <div style={{ position: "absolute", left: 26, top: 22, fontWeight: 800, fontSize: 104, lineHeight: 1, color: c, textShadow: "0 6px 24px rgba(0,0,0,.6)" }}>{cd.n}</div>
