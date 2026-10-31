@@ -42,8 +42,8 @@ export const Postal: React.FC<{ src: string; back?: string; p?: number[]; rot?: 
   const a = useImg(src, 0), b = useImg(back ?? src, 0), h = w * 0.66;
   return <group position={p as any} rotation={rot as any} scale={sm(s)}><group rotation={[0, PI * flip, 0]}>
     <mesh position={[0, 0, -0.002]}><boxGeometry args={[w + 0.02, h + 0.02, 0.003]} /><meshStandardMaterial map={tex.paper()} roughness={0.9} /></mesh>
-    <mesh position={[0, 0, 0.0005]}><planeGeometry args={[w, h]} /><meshStandardMaterial map={a ?? undefined} color={a ? "#fff" : "#8a7a60"} roughness={0.6} /></mesh>
-    <mesh position={[0, 0, -0.0045]} rotation={[0, PI, 0]}><planeGeometry args={[w, h]} /><meshStandardMaterial map={back ? b ?? undefined : tex.paper()} color={back ? "#fff" : "#efe6d2"} roughness={0.8} /></mesh>
+    <mesh position={[0, 0, 0.0005]}><planeGeometry args={[w, h]} /><meshStandardMaterial key={a ? "a1" : "a0"} map={a ?? undefined} color={a ? "#fff" : "#8a7a60"} roughness={0.6} /></mesh>
+    <mesh position={[0, 0, -0.0045]} rotation={[0, PI, 0]}><planeGeometry args={[w, h]} /><meshStandardMaterial key={b ? "b1" : "b0"} map={back ? b ?? undefined : tex.paper()} color={back ? "#fff" : "#efe6d2"} roughness={0.8} /></mesh>
   </group></group>;
 };
 
