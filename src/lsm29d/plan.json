@@ -1,0 +1,591 @@
+{
+"segs": [
+[
+3.34,
+6.48,
+"shot",
+"f01_fila_recepcion_alfombra"
+],
+[
+6.48,
+13.48,
+"shot",
+"f02_lirios_blancos"
+],
+[
+20.52,
+28.52,
+"shot",
+"v01"
+],
+[
+37.6,
+41.0,
+"shot",
+"f03_salon_iglesia_funeral"
+],
+[
+41.0,
+45.88,
+"shot",
+"f04_menu_jamon_papas"
+],
+[
+51.7,
+59.44,
+"shot",
+"f33_fila_servir"
+],
+[
+59.44,
+63.96,
+"shot",
+"f54_cafe_vertiendo"
+],
+[
+73.62,
+80.03,
+"shot",
+"f51_capilla_funeraria_exterior"
+],
+[
+98.76,
+105.76,
+"shot",
+"f13_libro_visitas_firmas"
+],
+[
+136.26,
+141.64,
+"shot",
+"f09_ruta_30_invierno"
+],
+[
+141.64,
+144.75,
+"shot",
+"f12_mano_sobre_mano"
+],
+[
+155.26,
+162.18,
+"shot",
+"f10_guardarrail_doblado"
+],
+[
+183.72,
+191.72,
+"shot",
+"f11_romanos_12"
+],
+[
+204.94,
+210.38,
+"shot",
+"v02"
+],
+[
+215.36,
+222.36,
+"shot",
+"f58_programa_funeral"
+],
+[
+230.02,
+237.02,
+"shot",
+"f62_ataud_flores_iglesia"
+],
+[
+248.96,
+256.96,
+"shot",
+"f14_traje_marron_ataud"
+],
+[
+266.0,
+274.0,
+"shot",
+"f15_tesalonicenses_4"
+],
+[
+299.43,
+306.43,
+"shot",
+"f61_himnario_abierto"
+],
+[
+325.16,
+327.29,
+"shot",
+"f16_cuna_vacia_cuarto"
+],
+[
+333.7,
+340.7,
+"shot",
+"f59_sillas_vacias_salon"
+],
+[
+357.05,
+360.92,
+"shot",
+"f69_estacionamiento_iglesia"
+],
+[
+384.74,
+392.74,
+"shot",
+"f52_cementerio_campo"
+],
+[
+406.95,
+409.39,
+"shot",
+"f70_vela_ventana_noche"
+],
+[
+418.21,
+425.21,
+"shot",
+"f53_flores_tumba"
+],
+[
+443.25,
+444.8,
+"shot",
+"f19_galpon_maquinas"
+],
+[
+468.1,
+476.1,
+"shot",
+"f20_proverbios_25"
+],
+[
+492.63,
+495.3,
+"shot",
+"f18_puerta_cerrada_casa"
+],
+[
+526.89,
+530.64,
+"shot",
+"f60_mano_abrazo_pregunta"
+],
+[
+551.51,
+559.51,
+"shot",
+"v08"
+],
+[
+567.49,
+575.49,
+"shot",
+"f24_job_2"
+],
+[
+586.25,
+593.97,
+"shot",
+"v04"
+],
+[
+593.97,
+598.78,
+"shot",
+"f39_madre_ruth_foto"
+],
+[
+613.81,
+615.2,
+"shot",
+"f08_tazas_cafe_iglesia"
+],
+[
+619.35,
+626.35,
+"shot",
+"f25_ruibarbo_supermercado"
+],
+[
+628.11,
+630.34,
+"shot",
+"f26_eclesiastes_3"
+],
+[
+669.08,
+677.08,
+"shot",
+"f27_hombro_abrigo_lagrimas"
+],
+[
+718.23,
+725.23,
+"shot",
+"f22_silla_plegable_sola"
+],
+[
+727.01,
+731.7,
+"shot",
+"f28_canaleta_hojas"
+],
+[
+738.65,
+746.65,
+"shot",
+"f29_galatas_6"
+],
+[
+755.75,
+762.75,
+"shot",
+"f30_nota_martes_5"
+],
+[
+777.25,
+783.52,
+"shot",
+"f31_surtidor_nafta"
+],
+[
+793.95,
+798.63,
+"shot",
+"f56_cocina_iglesia_mujeres_delantal"
+],
+[
+804.93,
+810.83,
+"shot",
+"f32_mesa_familia_mantel"
+],
+[
+810.83,
+815.61,
+"shot",
+"v03"
+],
+[
+823.01,
+827.01,
+"shot",
+"f06_ensalada_gelatina"
+],
+[
+828.83,
+833.05,
+"shot",
+"f05_papas_funeral_cazuela"
+],
+[
+874.19,
+881.44,
+"shot",
+"f34_risas_mesa_historias"
+],
+[
+889.33,
+895.95,
+"shot",
+"f67_puerta_cocina_iglesia"
+],
+[
+900.87,
+907.65,
+"shot",
+"f07_torta_plancha"
+],
+[
+907.65,
+914.45,
+"shot",
+"f36_fuente_descartable_cinta"
+],
+[
+918.24,
+925.24,
+"shot",
+"f37_desayuno_pan_banana"
+],
+[
+926.61,
+930.98,
+"shot",
+"f63_lata_galletas_caseras"
+],
+[
+936.01,
+944.01,
+"shot",
+"v06"
+],
+[
+969.12,
+976.12,
+"shot",
+"f68_galletas_fuente_porche"
+],
+[
+977.39,
+979.45,
+"shot",
+"f57_ventana_nieve_cocina"
+],
+[
+1003.75,
+1009.75,
+"shot",
+"f64_banco_calle_pueblo"
+],
+[
+1020.25,
+1023.5,
+"shot",
+"v07"
+],
+[
+1023.5,
+1031.2,
+"shot",
+"f40_salmos_56"
+],
+[
+1055.85,
+1063.85,
+"shot",
+"f42_auto_zanja_nochebuena"
+],
+[
+1085.76,
+1088.96,
+"shot",
+"f43_gorra_naranja_choclo"
+],
+[
+1088.96,
+1094.96,
+"shot",
+"f44_choclo_campo"
+],
+[
+1113.04,
+1116.01,
+"shot",
+"f65_reloj_cocina"
+],
+[
+1122.1,
+1129.1,
+"shot",
+"f66_libreta_recetas"
+],
+[
+1139.7,
+1147.7,
+"shot",
+"v05"
+],
+[
+1148.6,
+1152.46,
+"shot",
+"f45_tarjeta_tres_renglones"
+],
+[
+1181.84,
+1187.53,
+"shot",
+"f47_carta_arizona"
+],
+[
+1211.8,
+1218.8,
+"shot",
+"f49_telefono_988"
+],
+[
+1230.6,
+1237.6,
+"shot",
+"f55_platos_papel_pila"
+],
+[
+1241.95,
+1249.95,
+"shot",
+"v09"
+],
+[
+1255.66,
+1262.66,
+"shot",
+"f48_calendario_dia_30"
+],
+[
+1315.2,
+1317.97,
+"shot",
+"v10"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 126.78,
+"out": 130.28
+},
+{
+"k": "step",
+"n": 1,
+"name": "I KNOW HOW YOU FEEL",
+"at": 128.78,
+"out": 132.18
+},
+{
+"k": "step",
+"n": 2,
+"name": "HE'S IN A BETTER PLACE",
+"at": 222.04,
+"out": 225.44
+},
+{
+"k": "step",
+"n": 3,
+"name": "GOD NEEDED ANOTHER ANGEL",
+"at": 307.02,
+"out": 310.42
+},
+{
+"k": "step",
+"n": 4,
+"name": "ANYTHING WITH «AT LEAST»",
+"at": 413.39,
+"out": 416.79
+},
+{
+"k": "deal",
+"at": 495.57,
+"out": 496.57
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Hold one hand",
+"at": 505.85,
+"out": 508.05
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Ask before you hug",
+"at": 519.63,
+"out": 521.83
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Bring a chair",
+"at": 531.03,
+"out": 533.23
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Look at the pictures",
+"at": 545.05,
+"out": 547.25
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Sit",
+"at": 557.49,
+"out": 560.99
+},
+{
+"k": "step",
+"n": 5,
+"name": "BE STRONG",
+"at": 590.19,
+"out": 593.59
+},
+{
+"k": "step",
+"n": 6,
+"name": "LET ME KNOW IF YOU NEED ANYTHING",
+"at": 707.93,
+"out": 711.33
+},
+{
+"k": "step",
+"n": 7,
+"name": "NOTHING AT ALL",
+"at": 985.65,
+"out": 989.05
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1258.96
+},
+{
+"at": 1265.24
+},
+{
+"at": 1271.52
+},
+{
+"at": 1280.02
+},
+{
+"at": 1286.72
+},
+{
+"at": 1292.7
+},
+{
+"at": 1299.68
+}
+],
+"at": 1255.6,
+"out": 1301.68
+},
+{
+"k": "ask",
+"at": 1336.8,
+"out": 1344.8
+}
+],
+"end": 1351.88,
+"txt": {
+"recapTitle": "7 NEVERS · ONE FUNERAL",
+"recap": [
+"I'm so sorry. I'm here.",
+"I'm going to miss him too",
+"It's all right to be angry with God",
+"Just stop. Let it be hard",
+"You don't have to be strong today",
+"One thing, a day and a time",
+"His name and one memory"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"Who do you miss?",
+"Their name and one memory"
+],
+"next": [
+"",
+""
+],
+"lower": [
+31.48,
+39.48
+]
+}
+}
