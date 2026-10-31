@@ -76,8 +76,8 @@ const useFarmTex = () => React.useMemo(() => ({
 
 // ---------- piezas básicas ----------
 type Tx = THREE.Texture | undefined;
-const Box: React.FC<{ p: V3; s: V3; c?: string; r?: number; m?: number; map?: Tx; rad?: number; rot?: V3; e?: string; ei?: number }> = ({ p, s, c = "#ffffff", r = 0.75, m = 0, map, rad = 0.012, rot, e, ei = 0 }) => (
-  <mesh position={p} rotation={rot} castShadow receiveShadow geometry={rbox(s[0], s[1], s[2], rad)}>
+const Box: React.FC<{ p: V3; s: V3; c?: string; r?: number; m?: number; map?: Tx; rad?: number; rot?: V3; e?: string; ei?: number; cs?: boolean }> = ({ p, s, c = "#ffffff", r = 0.75, m = 0, map, rad = 0.012, rot, e, ei = 0, cs = true }) => (
+  <mesh position={p} rotation={rot} castShadow={cs} receiveShadow geometry={rbox(s[0], s[1], s[2], rad)}>
     <meshStandardMaterial color={c} roughness={r} metalness={m} map={map} emissive={e} emissiveIntensity={ei} />
   </mesh>
 );
@@ -190,7 +190,7 @@ const Garden: React.FC<{ t: number; tx: ReturnType<typeof useFarmTex>; ft: Retur
     {/* CORTE de suelo al frente: estratos, el túnel redondo y la lata enterrada a ras del piso del túnel */}
     <group position={[GX - 1.1, 0, 2.05]}>
       <mesh position={[0, -0.45, 0.45]}><planeGeometry args={[3.2, 0.9]} /><meshStandardMaterial map={tx.strata} roughness={1} /></mesh>
-      <Box p={[0, -0.45, 0]} s={[3.2, 0.9, 0.9]} c="#3a2a1c" map={tx.soil} r={1} rad={0.01} />
+      <Box p={[0, -0.46, 0]} s={[3.2, 0.9, 0.9]} cs={false} c="#3a2a1c" map={tx.soil} r={1} rad={0.01} />
       {/* túnel: cilindro horizontal oscuro asomado en la cara del corte */}
       <mesh position={[0, -0.18, 0.452]}><circleGeometry args={[0.05, 20]} /><meshStandardMaterial color="#120c07" roughness={1} /></mesh>
       <mesh position={[-0.55, -0.18, 0.452]}><planeGeometry args={[1.0, 0.1]} /><meshStandardMaterial color="#1b120b" roughness={1} /></mesh>
@@ -275,7 +275,7 @@ const Coop: React.FC<{ t: number; tx: ReturnType<typeof useFarmTex>; ft: ReturnT
     {/* CORTE de tierra al frente: la malla de 1/2" en L enterrada y la cueva de la rata que choca contra ella */}
     <group position={[CX - 0.2, 0, 1.9]}>
       <mesh position={[0, -0.45, 0.45]}><planeGeometry args={[3.6, 0.9]} /><meshStandardMaterial map={tx.strata} roughness={1} /></mesh>
-      <Box p={[0, -0.45, 0]} s={[3.6, 0.9, 0.9]} c="#3a2a1c" map={tx.soil} r={1} rad={0.01} />
+      <Box p={[0, -0.46, 0]} s={[3.6, 0.9, 0.9]} cs={false} c="#3a2a1c" map={tx.soil} r={1} rad={0.01} />
       {/* malla: baja por la pared y sale en L hacia afuera */}
       <mesh position={[0.6, -0.15, 0.455]}><planeGeometry args={[0.02, 0.3]} /><meshStandardMaterial color="#cfd3d6" metalness={0.8} roughness={0.3} /></mesh>
       <mesh position={[0.6, -0.15, 0.456]}><planeGeometry args={[0.18, 0.3]} /><meshStandardMaterial map={tx.mesh} transparent alphaTest={0.3} metalness={0.8} roughness={0.3} /></mesh>
