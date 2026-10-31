@@ -1,0 +1,420 @@
+{
+"blackbottom": {
+"m": "none",
+"x": 50,
+"y": 62,
+"r": 180,
+"z": 2.2,
+"side": 1,
+"t2": "melt",
+"m0": "lens",
+"noword": true,
+"ph2_off": "ph2_blackbottom"
+},
+"sidepanel": {
+"m": "none",
+"x": 50,
+"y": 50,
+"pts": [
+[
+44,
+22
+],
+[
+56,
+22
+],
+[
+56,
+78
+],
+[
+44,
+78
+],
+[
+44,
+22
+]
+],
+"side": 1,
+"t2": "melt",
+"m0": "trace",
+"noword": true,
+"ph2_off": "ph2_sidepanel"
+},
+"chloro": {
+"m": "none",
+"x": 50,
+"y": 48,
+"r": 150,
+"t2": "melt",
+"m0": "orbit",
+"noword": true,
+"ph2_off": "ph2_chloro"
+},
+"competes": {
+"m": "none",
+"x": 15,
+"y": 55,
+"x2": 50,
+"y2": 55,
+"t2": "melt",
+"m0": "flow",
+"noword": true,
+"ph2_off": "ph2_competes"
+},
+"stack": {
+"m": "none",
+"x": 50,
+"y": 70,
+"x2": 72,
+"y2": 30,
+"to": 50,
+"side": 0,
+"ph2": "ph2_stack",
+"t2": "melt",
+"m0": "count",
+"noword": true
+},
+"calciumflow": {
+"m": "none",
+"x": 50,
+"y": 50,
+"pts": [
+[
+50,
+92
+],
+[
+50,
+60
+],
+[
+52,
+32
+],
+[
+55,
+20
+]
+],
+"side": 1,
+"ph2": "ph2_calciumflow",
+"t2": "melt",
+"m0": "trace",
+"noword": true
+},
+"gary": {
+"m": "none",
+"x": 74,
+"y": 34,
+"n": 19,
+"lab": "PLANTS",
+"t2": "melt",
+"m0": "tally",
+"noword": true,
+"ph2_off": "ph2_gary"
+},
+"mower": {
+"m": "none",
+"x": 50,
+"y": 50,
+"r": 230,
+"ph2": "ph2_mower",
+"t2": "melt",
+"m0": "spin",
+"noword": true
+},
+"drain": {
+"m": "none",
+"x": 50,
+"y": 58,
+"r": 200,
+"side": 3,
+"ph2": "ph2_drain",
+"t2": "melt",
+"m0": "ripple",
+"noword": true
+},
+"sidebyside": {
+"m": "none",
+"x": 50,
+"y": 45,
+"r": 300,
+"t2": "melt",
+"m0": "caliper",
+"noword": true,
+"ph2_off": "ph2_sidebyside"
+},
+"taproot": {
+"m": "none",
+"x": 22,
+"y": 55,
+"x2": 80,
+"y2": 55,
+"lab": "AS LONG AS YOUR HAND",
+"side": 3,
+"ph2": "ph2_taproot",
+"t2": "melt",
+"m0": "ruler",
+"noword": true
+},
+"deadstrip": {
+"m": "none",
+"x": 30,
+"y": 70,
+"x2": 30,
+"y2": 40,
+"lab": "1 FOOT",
+"side": 1,
+"t2": "melt",
+"m0": "ruler",
+"noword": true,
+"ph2_off": "ph2_deadstrip"
+},
+"dew": {
+"m": "none",
+"x": 40,
+"y": 20,
+"y2": 58,
+"r": 200,
+"ph2": "ph2_dew",
+"t2": "melt",
+"m0": "drops",
+"noword": true
+},
+"board": {
+"m": "none",
+"x": 50,
+"y": 52,
+"r": 180,
+"z": 2.0,
+"side": 1,
+"t2": "melt",
+"m0": "lens",
+"noword": true,
+"ph2_off": "ph2_board"
+},
+"seedbox": {
+"m": "none",
+"x": 50,
+"y": 50,
+"r": 140,
+"ph2": "ph2_seedbox",
+"t2": "melt",
+"m0": "ring",
+"noword": true
+},
+"crust": {
+"m": "none",
+"x": 50,
+"y": 50,
+"r": 190,
+"z": 2.2,
+"side": 1,
+"ph2": "ph2_crust",
+"t2": "melt",
+"m0": "lens",
+"noword": true
+},
+"stumpholes": {
+"m": "none",
+"x": 50,
+"y": 50,
+"pts": [
+[
+34,
+40,
+"FILL",
+"#c8892f"
+],
+[
+62,
+36,
+"WET",
+"#3d7fc4"
+],
+[
+50,
+70,
+"COVER",
+"#4a4a4a"
+]
+],
+"ph2": "ph2_stumpholes",
+"t2": "melt",
+"m0": "pins",
+"noword": true
+},
+"dolomite": {
+"m": "none",
+"x": 50,
+"y": 60,
+"r": 200,
+"t2": "melt",
+"m0": "grains",
+"noword": true,
+"ph2_off": "ph2_dolomite"
+},
+"knuckles": {
+"m": "none",
+"x": 50,
+"y": 45,
+"r": 220,
+"ph2": "ph2_knuckles",
+"t2": "melt",
+"m0": "rise",
+"noword": true
+},
+"oldleaf": {
+"m": "none",
+"x": 70,
+"y": 30,
+"x2": 48,
+"y2": 76,
+"lab": "OLDEST FIRST",
+"side": 3,
+"t2": "melt",
+"m0": "arrowto",
+"noword": true,
+"ph2_off": "ph2_oldleaf"
+},
+"xmastree": {
+"m": "none",
+"x": 50,
+"y": 50,
+"pts": [
+[
+50,
+18
+],
+[
+38,
+45
+],
+[
+46,
+45
+],
+[
+34,
+72
+],
+[
+66,
+72
+],
+[
+54,
+45
+],
+[
+62,
+45
+],
+[
+50,
+18
+]
+],
+"side": 1,
+"ph2": "ph2_xmastree",
+"t2": "melt",
+"m0": "trace",
+"noword": true
+},
+"mist": {
+"m": "none",
+"x": 55,
+"y": 15,
+"y2": 48,
+"r": 200,
+"t2": "melt",
+"m0": "drops",
+"noword": true,
+"ph2_off": "ph2_mist"
+},
+"sixinch": {
+"m": "none",
+"x": 50,
+"y": 80,
+"x2": 50,
+"y2": 45,
+"lab": "6 INCHES",
+"side": 1,
+"t2": "melt",
+"m0": "ruler",
+"noword": true,
+"ph2_off": "ph2_sixinch"
+},
+"grandma": {
+"m": "none",
+"x": 30,
+"y": 40,
+"x2": 66,
+"y2": 55,
+"r": 150,
+"ph2": "ph2_grandma",
+"t2": "melt",
+"m0": "xcheck",
+"noword": true
+},
+"deer": {
+"m": "none",
+"x": 50,
+"y": 45,
+"r": 160,
+"t2": "melt",
+"m0": "ring",
+"noword": true,
+"ph2_off": "ph2_deer"
+},
+"bench": {
+"m": "none",
+"x": 74,
+"y": 30,
+"n": 11,
+"lab": "TRICKS",
+"ph2": "ph2_bench",
+"t2": "melt",
+"m0": "tally",
+"noword": true
+},
+"blackspot": {
+"m": "none",
+"x": 50,
+"y": 50,
+"r": 180,
+"z": 2.2,
+"side": 0,
+"t2": "melt",
+"m0": "lens",
+"noword": true,
+"ph2_off": "ph2_blackspot"
+},
+"poundper": {
+"m": "none",
+"x": 20,
+"y": 80,
+"x2": 80,
+"y2": 80,
+"lab": "100 SQ FT",
+"side": 3,
+"t2": "melt",
+"m0": "ruler",
+"noword": true,
+"ph2_off": "ph2_poundper"
+},
+"threeyears": {
+"m": "none",
+"x": 76,
+"y": 36,
+"r": 170,
+"side": 0,
+"t2": "melt",
+"m0": "clock",
+"noword": true,
+"ph2_off": "ph2_threeyears"
+}
+}

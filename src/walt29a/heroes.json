@@ -1,0 +1,299 @@
+[
+{
+"k": "blackbottom",
+"at": 22.46,
+"out": 28.46,
+"said": 22.46,
+"solo": true,
+"kw": "3 WEEKS LATER",
+"kw2": "black bottoms anyway",
+"ph": "ph_blackbottom"
+},
+{
+"k": "bench",
+"at": 90.06,
+"out": 96.56,
+"said": 90.06,
+"solo": true,
+"kw": "ONE BENCH",
+"kw2": "every trick, tested on it",
+"ph": "ph_bench"
+},
+{
+"k": "sidepanel",
+"at": 120.4,
+"out": 126.9,
+"said": 120.4,
+"solo": true,
+"kw": "READ THE SIDE",
+"kw2": "magnesium sulfate",
+"ph": "ph_sidepanel"
+},
+{
+"k": "competes",
+"at": 166.3,
+"out": 172.8,
+"said": 166.3,
+"solo": true,
+"kw": "SAME DOORS",
+"kw2": "Ca \u00b7 K \u00b7 Mg compete",
+"ph": "ph_competes"
+},
+{
+"k": "stack",
+"at": 196.66,
+"out": 203.16,
+"said": 192.46,
+"solo": true,
+"kw": "HALF OF THEM",
+"kw2": "too much of something",
+"ph": "ph_stack"
+},
+{
+"k": "calciumflow",
+"at": 263.94,
+"out": 270.44,
+"said": 261.34,
+"solo": true,
+"kw": "LAST STOP",
+"kw2": "the bottom of the fruit",
+"ph": "ph_calciumflow"
+},
+{
+"k": "gary",
+"at": 300.14,
+"out": 306.64,
+"said": 300.14,
+"solo": true,
+"kw": "19 PLANTS",
+"kw2": "Epsom in every hole",
+"ph": "ph_gary"
+},
+{
+"k": "chloro",
+"at": 354.717,
+"out": 361.22,
+"said": 354.72,
+"solo": true,
+"kw": "ONE ATOM",
+"kw2": "in every chlorophyll molecule",
+"ph": "ph_chloro"
+},
+{
+"k": "mower",
+"at": 369.757,
+"out": 375.76,
+"said": 369.76,
+"solo": true,
+"kw": "TORN TIPS",
+"kw2": "a dull blade browns a lawn",
+"ph": "ph_mower"
+},
+{
+"k": "drain",
+"at": 384.097,
+"out": 390.1,
+"said": 384.1,
+"solo": true,
+"kw": "RUNOFF",
+"kw2": "you paid for it",
+"ph": "ph_drain"
+},
+{
+"k": "sidebyside",
+"at": 432.1,
+"out": 438.6,
+"said": 426.4,
+"solo": true,
+"kw": "NO DIFFERENCE",
+"kw2": "with and without, same roses",
+"ph": "ph_sidebyside"
+},
+{
+"k": "blackspot",
+"at": 472.92,
+"out": 478.92,
+"said": 474.62,
+"solo": true,
+"kw": "BLACK SPOT",
+"kw2": "wet leaves at night",
+"ph": "ph_blackspot"
+},
+{
+"k": "taproot",
+"at": 516.44,
+"out": 522.94,
+"said": 512.44,
+"solo": true,
+"kw": "THE ROOT",
+"kw2": "vinegar never gets there",
+"ph": "ph_taproot"
+},
+{
+"k": "deadstrip",
+"at": 539.977,
+"out": 544.48,
+"said": 539.98,
+"sp": 1.444,
+"solo": true,
+"kw": "1 FOOT",
+"kw2": "where nothing grows anymore",
+"ph": "ph_deadstrip"
+},
+{
+"k": "dew",
+"at": 605.337,
+"out": 609.84,
+"said": 605.34,
+"sp": 1.333,
+"solo": true,
+"kw": "GONE BY MORNING",
+"kw2": "salt melts in the dew",
+"ph": "ph_dew"
+},
+{
+"k": "board",
+"at": 633.977,
+"out": 639.98,
+"said": 633.98,
+"solo": true,
+"kw": "THE BOARD",
+"kw2": "slugs hide under it",
+"ph": "ph_board"
+},
+{
+"k": "seedbox",
+"at": 671.257,
+"out": 677.26,
+"said": 671.26,
+"sp": 1.083,
+"solo": true,
+"kw": "A LUNCHBOX",
+"kw2": "a seed brings its own food",
+"ph": "ph_seedbox"
+},
+{
+"k": "crust",
+"at": 741.51,
+"out": 746.01,
+"said": 742.11,
+"sp": 1.444,
+"solo": true,
+"kw": "WHITE CRUST",
+"kw2": "salt coming through the clay",
+"ph": "ph_crust"
+},
+{
+"k": "stumpholes",
+"at": 832.01,
+"out": 838.51,
+"said": 826.01,
+"solo": true,
+"kw": "FILL \u00b7 WET \u00b7 COVER",
+"kw2": "top up every few weeks",
+"ph": "ph_stumpholes"
+},
+{
+"k": "dolomite",
+"at": 889.234,
+"out": 895.23,
+"said": 889.23,
+"solo": true,
+"kw": "DOLOMITE",
+"kw2": "calcium + magnesium, built in",
+"ph": "ph_dolomite"
+},
+{
+"k": "knuckles",
+"at": 950.274,
+"out": 956.27,
+"said": 950.27,
+"solo": true,
+"kw": "IT'S THE WATER",
+"kw2": "warm water does the work",
+"ph": "ph_knuckles"
+},
+{
+"k": "oldleaf",
+"at": 1000.994,
+"out": 1007.49,
+"said": 1000.99,
+"solo": true,
+"kw": "BOTTOM FIRST",
+"kw2": "it robs its oldest leaves",
+"ph": "ph_oldleaf"
+},
+{
+"k": "xmastree",
+"at": 1033.31,
+"out": 1039.81,
+"said": 1030.41,
+"solo": true,
+"kw": "THE TREE",
+"kw2": "green veins on a yellow leaf",
+"ph": "ph_xmastree"
+},
+{
+"k": "mist",
+"at": 1077.97,
+"out": 1082.97,
+"said": 1077.97,
+"sp": 1.2,
+"solo": true,
+"kw": "WET, NOT DRIPPING",
+"kw2": "early morning \u00b7 top and bottom",
+"ph": "ph_mist"
+},
+{
+"k": "sixinch",
+"at": 1119.19,
+"out": 1125.69,
+"said": 1119.19,
+"solo": true,
+"kw": "6 INCHES",
+"kw2": "8 to 10 spots \u00b7 one bucket",
+"ph": "ph_sixinch"
+},
+{
+"k": "poundper",
+"at": 1186.51,
+"out": 1193.01,
+"said": 1180.51,
+"solo": true,
+"kw": "1 LB / 100 SQ FT",
+"kw2": "once, worked in",
+"ph": "ph_poundper"
+},
+{
+"k": "threeyears",
+"at": 1195.73,
+"out": 1200.23,
+"said": 1196.33,
+"sp": 1.333,
+"solo": true,
+"kw": "EVERY 3 YEARS",
+"kw2": "not every spring",
+"ph": "ph_threeyears"
+},
+{
+"k": "grandma",
+"at": 1244.67,
+"out": 1249.17,
+"said": 1244.67,
+"sp": 1.333,
+"solo": true,
+"kw": "HOW WERE THEY?",
+"kw2": "nobody remembers the bad years",
+"ph": "ph_grandma"
+},
+{
+"k": "deer",
+"at": 1313.57,
+"out": 1319.57,
+"said": 1315.37,
+"solo": true,
+"kw": "NOPE",
+"kw2": "deer eat it anyway",
+"ph": "ph_deer"
+}
+]
