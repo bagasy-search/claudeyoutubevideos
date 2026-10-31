@@ -279,7 +279,7 @@ export const DayClock: React.FC<{ t: number; at: number; out: number; marks: [nu
       </svg>
       <div>
         <div style={{ fontWeight: 800, fontSize: 52, lineHeight: 1, letterSpacing: -1 }}>{String(hh).padStart(2, "0")}:{String(mm).padStart(2, "0")}</div>
-        <div style={{ fontWeight: 800, fontSize: 20, letterSpacing: 4, color: day ? COL.amber : COL.ice, marginTop: 6 }}>{day ? "DAY" : "NIGHT"}</div>
+        <div style={{ fontWeight: 800, fontSize: 20, letterSpacing: 4, color: day ? COL.amber : COL.ice, marginTop: 6 }}>{day ? "DÍA" : "NOCHE"}</div>
       </div>
     </Panel>
   </div>;
@@ -293,7 +293,7 @@ export const Mistake: React.FC<{ t: number; at: number; n: number; txt: string; 
     <Panel style={{ display: "flex", alignItems: "center", gap: 26, padding: "20px 38px 20px 20px", maxWidth: 980 }}>
       <div style={{ flex: "none", width: 96, height: 96, borderRadius: 18, background: "linear-gradient(180deg,#ff5a4a,#c62a1e)", fontWeight: 900, fontSize: 60, lineHeight: "96px", textAlign: "center", boxShadow: "0 0 30px rgba(255,90,74,.35)", transform: `scale(${Math.max(0, p)}) rotate(${(1 - p) * -20}deg)` }}>{n}</div>
       <div style={{ opacity: cl(r * 1.4), transform: `translateX(${(1 - r) * -24}px)` }}>
-        <div style={{ fontWeight: 800, fontSize: 22, letterSpacing: 6, color: ACC.red }}>MISTAKE</div>
+        <div style={{ fontWeight: 800, fontSize: 22, letterSpacing: 6, color: ACC.red }}>ERROR</div>
         <div style={{ fontWeight: 800, fontSize: 42, lineHeight: 1.12, marginTop: 4 }}>{txt}</div>
       </div>
     </Panel>
@@ -334,7 +334,7 @@ export const StepTitle: React.FC<{ t: number; at: number; n: number; name: strin
       </div>
     </div>}
     <div style={{ position: "absolute", left: tx, top: y, transform: `translate(-50%,-50%) scale(${sc}) perspective(1400px) translateZ(${-xo * 300}px)`, textAlign: "center", fontFamily: FONT, color: G.txt, whiteSpace: "nowrap" }}>
-      <div style={{ fontWeight: 800, fontSize: 34, letterSpacing: 18 * cl(k2) + 4, color: G.dim, opacity: cl(k2), marginRight: -18 }}>NUMBER</div>
+      <div style={{ fontWeight: 800, fontSize: 34, letterSpacing: 18 * cl(k2) + 4, color: G.dim, opacity: cl(k2), marginRight: -18 }}>NÚMERO</div>
       <div style={{ overflow: "hidden", paddingTop: 10 }}>
         <div style={{ transform: `translateY(${(1 - s) * 100}%) rotateX(${(1 - s) * 40}deg)`, fontWeight: 900, fontSize: 250, lineHeight: 1.05, letterSpacing: -6, color: c, textShadow: `0 0 60px ${c}44` }}>{n}</div>
       </div>
