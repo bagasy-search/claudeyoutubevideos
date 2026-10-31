@@ -126,7 +126,7 @@ export const Headline: React.FC<{ t: number; at: number; out: number; text: stri
 export const BigNum: React.FC<{ t: number; at: number; out: number; text: string; sub?: string; col?: string; x?: number; y?: number }> = ({ t, at, out, text, sub, col, x = 1480, y = 500 }) => {
   if (vis(t, at, out) <= 0.01) return null;
   const c = acc(col), k2 = ei(t, at + 0.6, at + 1.2);
-  const size = text.length > 7 ? 140 : 190, H = Math.round(size * 1.08);
+  const size = text.length > 7 ? Math.min(140, Math.round(760 / (text.length * 0.74))) : 190, H = Math.round(size * 1.08);
   const ch = [...text], N = ch.length;
   return <div style={{ position: "absolute", left: x, top: y, transform: "translate(-50%,-50%)", fontFamily: FONT, textAlign: "center", whiteSpace: "nowrap" }}><div style={rise(t, at, out)}>
     <div style={{ position: "absolute", inset: "-80px -140px", background: "radial-gradient(ellipse 50% 50% at 50% 50%, rgba(0,0,0,.6), transparent 72%)" }} />
