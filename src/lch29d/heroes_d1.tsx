@@ -12,8 +12,9 @@ const PI = Math.PI;
 const Drape: React.FC<{ slide: number; tt: number }> = ({ slide, tt }) => {
   const geo = React.useMemo(() => new THREE.PlaneGeometry(1, 1, 48, 12), []);
   const p = geo.attributes.position as THREE.BufferAttribute, R = 0.104, L = 0.62, D = 0.56, s0 = -slide * 0.55;
+  const uv = geo.attributes.uv as THREE.BufferAttribute; // desde la UV original (la posición ya está deformada del cuadro anterior)
   for (let i = 0; i < p.count; i++) {
-    const u = p.getX(i) + 0.5, v = p.getY(i); let s = (u - 0.5) * L + s0, x = 0, y = 0;
+    const u = uv.getX(i), v = uv.getY(i) - 0.5; let s = (u - 0.5) * L + s0, x = 0, y = 0;
     const lim = R * PI / 2;
     if (Math.abs(s) <= lim) { const a = s / R; x = R * Math.sin(a); y = R * Math.cos(a); }
     else { const sg = Math.sign(s), rest = Math.abs(s) - lim; x = sg * (R + 0.004 * Math.sin(rest * 30)); y = -rest; }
