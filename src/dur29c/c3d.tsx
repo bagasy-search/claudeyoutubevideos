@@ -122,7 +122,7 @@ const LluviaVaras: React.FC<UP> = ({ d, p }) => {
       <group position={[-0.42, 0, 0]}>
         <RBox s={[0.26, 0.05, 0.3]} r={0.01} p={[0, 0.33 + bob, 0]}>{M.wood({ base: [110, 40, 30] })}</RBox>
         <RBox s={[0.04, 0.2, 0.3]} r={0.01} p={[-0.12, 0.44 + bob, 0]}>{M.wood({ base: [110, 40, 30] })}</RBox>
-        <mesh position={[-0.1, 0.58 + bob, 0]} rotation={[PI / 2, 0, 0]}><cylinderGeometry args={[0.16, 0.16, 0.32, 20, 1, true, 0, PI]} /><meshStandardMaterial color="#1e1e22" roughness={0.7} side={THREE.DoubleSide} /></mesh>
+        <mesh position={[-0.12, 0.5 + bob, 0]} rotation={[PI / 2, 0, 0]}><cylinderGeometry args={[0.1, 0.1, 0.3, 20, 1, true, 0, PI]} /><meshStandardMaterial color="#1e1e22" roughness={0.7} side={THREE.DoubleSide} /></mesh>
         {[-1, 1].map((sd) => <group key={sd} position={[0, 0.2, sd * 0.17]} rotation={[0, 0, -run * 5]}>
           <mesh><torusGeometry args={[0.19, 0.012, 8, 32]} /><meshStandardMaterial color="#1a1a1a" roughness={0.6} /></mesh>
           {Array.from({ length: 8 }, (_, k) => <mesh key={k} rotation={[0, 0, (k * PI) / 8]}><boxGeometry args={[0.37, 0.006, 0.006]} />{M.wood({ base: [120, 86, 50] })}</mesh>)}</group>)}
@@ -131,7 +131,7 @@ const LluviaVaras: React.FC<UP> = ({ d, p }) => {
       {Array.from({ length: 8 }, (_, i) => <RBox key={"c" + i} s={[0.28, 0.4 + rn(i, 1) * 0.35, 0.2]} r={0.01} p={[sc(i * 0.3), 0.3, -0.55]}><meshStandardMaterial map={dirtT([150 - i * 6, 120, 96])} roughness={0.9} /></RBox>)}
       {Array.from({ length: 10 }, (_, i) => { const u = (tt * 0.9 + rn(i, 4)) % 1; return <mesh key={"r" + i} position={[sc(rn(i, 5) * 2.4), 0.004, (rn(i, 6) - 0.5) * 0.7]} rotation={[-PI / 2, 0, 0]} scale={sm(0.5 + 1.2 * u)}><ringGeometry args={[0.03, 0.036, 20]} /><meshBasicMaterial color="#e8f0f4" transparent opacity={0.5 * (1 - u)} depthWrite={false} /></mesh>; })}
       {Array.from({ length: 70 }, (_, i) => { const u = (tt * 1.4 + rn(i, 1)) % 1; return <mesh key={i} position={[(rn(i, 2) - 0.5) * 1.8, 1.0 - 1.0 * u, (rn(i, 3) - 0.5) * 1.2]}><boxGeometry args={[0.003, 0.06, 0.003]} /><meshBasicMaterial color="#d8e4ec" transparent opacity={0.55} /></mesh>; })}
-      {Array.from({ length: 8 }, (_, i) => { const u = (tt * 0.25 + i / 8) % 1; return <mesh key={"v" + i} position={[sc(rn(i, 7) * 2.4), 0.03 + 0.25 * u, (rn(i, 8) - 0.5) * 0.6]} scale={sm(0.05 + 0.08 * u)}><sphereGeometry args={[1, 10, 8]} /><meshBasicMaterial color="#e8e8e4" transparent opacity={0.22 * (1 - u)} depthWrite={false} /></mesh>; })}
+      {Array.from({ length: 8 }, (_, i) => { const u = (tt * 0.25 + i / 8) % 1; return <mesh key={"v" + i} position={[sc(rn(i, 7) * 2.4), 0.03 + 0.25 * u, (rn(i, 8) - 0.5) * 0.6]} scale={sm(0.04 + 0.06 * u)}><sphereGeometry args={[1, 10, 8]} /><meshBasicMaterial color="#e8e8e4" transparent opacity={0.1 * (1 - u)} depthWrite={false} /></mesh>; })}
       <directionalLight position={[0.5, 2, 1]} intensity={1.2} color="#e0e4e8" />
       <hemisphereLight args={["#c8ccd0", "#3a3430", 0.6]} />
     </>;

@@ -79,7 +79,7 @@ const OchoPostales: React.FC<UP> = ({ d, p }) => {
 const LondresRejillas: React.FC<UP> = ({ d, p }) => {
   const aR = sec(p, "rejilla", 1.5), aA = sec(p, "abajo", 3.0), GX = [-0.28, 0.32];
   return <U3 d={d} bg={p.bg} ground={null} mode="wipe" sky="#14110e" key1={[-1, 2.5, 2]}
-    cam={{ at: [0, 0.5, 0], at1: [0.02, 0.3, 0], az: [-0.16, 0.0], el: [0.16, 0.12], r: [1.45, 1.3], fov: 34 }}>{(tt) => <>
+    cam={{ at: [0, 0.46, 0], az: [-0.14, -0.02], el: [0.12, 0.1], r: [2.05, 1.95], fov: 34 }}>{(tt) => <>
       {Array.from({ length: 7 }, (_, i) => { const h = 0.4 + rn(i, 1) * 0.3, x = -1.05 + i * 0.35; return <group key={i}>
         <RBox s={[0.33, h, 0.3]} r={0.01} p={[x, 0.67 + h / 2, -0.32]}><meshStandardMaterial map={brickT([96 + rn(i, 2) * 40, 60 + rn(i, 4) * 20, 44], 1, 1)} roughness={0.9} /></RBox>
         <mesh position={[x, 0.67 + h + 0.07, -0.32]} rotation={[0, PI / 4, 0]}><coneGeometry args={[0.25, 0.14, 4]} /><meshStandardMaterial color="#3a3430" roughness={0.9} /></mesh>
@@ -89,7 +89,7 @@ const LondresRejillas: React.FC<UP> = ({ d, p }) => {
       {Array.from({ length: 5 }, (_, i) => { const dir = i % 2 ? 1 : -1, x = ((i * 0.5 + dir * tt * 0.1 + 1.25) % 2.5) - 1.25;
         return <group key={i} position={[x, 0.66, -0.16 + (i % 2) * 0.08]}><Stickman enSitio escala={0.15} rotY={dir * 90} guion={[{ t: 0, accion: "caminar", expr: "neutral" }]} semilla={30 + i} contacto={0} color={["#3a3430", "#4a3c30", "#2e2a28"][i % 3]} /></group>; })}
       {GX.map((x, j) => <group key={j} position={[x, 0.665, 0.18]} scale={1.5}>{Array.from({ length: 6 }, (_, i) => <mesh key={i} position={[i * 0.026 - 0.065, 0, 0]}><boxGeometry args={[0.012, 0.014, 0.14]} />{M.steel({ col: "#1a1816" })}</mesh>)}</group>)}
-      {GX.map((x, j) => <Chorro key={j} p={[x, 0.6, 0.18]} L={0.62} k={eio(tt, aR + j * 0.2, aR + j * 0.2 + 0.5)} col="#9a8a68" />)}
+      {GX.map((x, j) => Array.from({ length: 16 }, (_, i) => { const u = (tt * 1.1 + i / 16 + j * 0.3) % 1, on = tt > aR + j * 0.2 + u * 0.55 ? 1 : 0; return <mesh key={j * 16 + i} position={[x + (rn(i + j * 16, 1) - 0.5) * 0.1, 0.6 - u * 0.64, 0.18 + (rn(i + j * 16, 2) - 0.5) * 0.08]} scale={[sm(on), sm(on * 2.2), sm(on)]}><sphereGeometry args={[0.012, 8, 6]} /><meshStandardMaterial color="#8a7a58" transparent opacity={0.75} roughness={0.2} /></mesh>; }))}
       <Tunnel L={2.6} R={0.34} p={[0, 0.12, -0.05]} />
       <Water w={2.6} dpt={0.6} y={-0.06} col="#2a2216" />
       {Array.from({ length: 24 }, (_, i) => { const j = i % 2, x = GX[j] + (rn(i, 2) - 0.5) * 0.12, a = aR + (i / 24) * Math.max(1, aA - aR + 1.5), y = lerp(0.68, -0.05 + rn(i, 4) * 0.02, cl((tt - a) / 0.55));
