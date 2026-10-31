@@ -121,7 +121,7 @@ const SigloDebajo: React.FC<UP> = ({ d, p }) => {
 const CanaletaCarbon: React.FC<UP> = ({ d, p }) => {
   const aP = sec(p, "pizarra", 2.0), SL = -0.32;
   return <U3 d={d} bg={p.bg} ground={null} mode="wipe" sky="#3a3026" key1={[-1.2, 2.4, 1.6]}
-    cam={{ at: [0, 0.62, 0], az: [-0.5, -0.32], el: [0.34, 0.28], r: [1.7, 1.5], fov: 36 }}>{(tt) => {
+    cam={{ at: [0.1, 0.62, 0], az: [-0.5, -0.32], el: [0.3, 0.26], r: [1.85, 1.7], fov: 36 }}>{(tt) => {
     const pick = (tt - aP) * 0.9;
     return <>
       <mesh position={[0, -0.01, 0]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[4, 3]} /><meshStandardMaterial map={dirtT([34, 30, 28])} roughness={0.8} metalness={0.2} /></mesh>
@@ -132,7 +132,7 @@ const CanaletaCarbon: React.FC<UP> = ({ d, p }) => {
         {Array.from({ length: 240 }, (_, i) => { const u = ((tt * 0.22 + rn(i, 1)) % 1); const slate = i % 9 === 0;
           return <Lump key={i} i={i} p={[1.45 - u * 2.9, 0.01 + rn(i, 4) * 0.05, (rn(i, 2) - 0.5) * 0.36]} s={1.2 + rn(i, 5) * 1.0} col={slate ? "#7a7c80" : "#121214"} shine={!slate} />; })}
         {/* las tablas cruzadas y los chicos */}
-        {[-0.9, -0.3, 0.3, 0.9].map((x, i) => <group key={i} position={[x, 0.16, 0]}>
+        {[-0.5, 0.0, 0.5, 1.0].map((x, i) => <group key={i} position={[x, 0.16, 0]}>
           <RBox s={[0.08, 0.02, 0.6]} r={0.004}>{M.wood({ base: [120, 90, 60] })}</RBox>
           <group rotation={[0, 0, -SL]} position={[0, 0.01, 0]}>
             <Stickman escala={0.15} rotY={90} guion={[{ t: 0, accion: "sentarse", expr: "triste" }]} semilla={10 + i} contacto={0} color="#8a7a6a" />

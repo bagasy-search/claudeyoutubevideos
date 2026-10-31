@@ -178,9 +178,9 @@ const NoventaSegundos: React.FC<UP> = ({ d, p }) => {
       <mesh position={[-0.74, 0.2, -0.05]}><planeGeometry args={[0.12, 0.34]} /><meshStandardMaterial color="#c8b080" emissive="#806040" emissiveIntensity={0.6} /></mesh>
       {[[-0.74, 0.38, 0.16, 0.03], [-0.8, 0.2, 0.02, 0.36], [-0.68, 0.2, 0.02, 0.36]].map(([x, y, w, h], i) => <RBox key={i} s={[w, h, 0.03]} r={0.004} p={[x, y, -0.03]}>{M.steel({ col: "#4a4e52" })}</RBox>)}
       <group position={[-0.74, 0, -0.08]}><Stickman escala={0.12} rotY={60} guion={[{ t: 0, accion: "mirar_reloj", expr: "nervioso" }, { t: aN + (D - aN) * 0.7, accion: "senalar", expr: "furioso" }]} semilla={95} contacto={0} color="#5a6a4a" /></group>
-      <Crono k={u} r={0.13} p={[0.05, 0.78, -0.3]} />
-      <mesh position={[0.05, 1.3, -0.3]}><cylinderGeometry args={[0.005, 0.005, 0.8, 6]} />{M.steel({ col: "#2a2826" })}</mesh>
-      <RBox s={[0.12, 0.03, 0.05]} r={0.006} p={[0.05, 0.925, -0.3]}>{M.steel({ col: "#3a3a3a" })}</RBox>
+      <Crono k={u} r={0.13} p={[0.05, 0.66, -0.3]} />
+      <mesh position={[0.05, 0.27, -0.33]}><cylinderGeometry args={[0.018, 0.024, 0.54, 10]} />{M.steel({ col: "#3a3836" })}</mesh>
+      <mesh position={[0.05, 0.01, -0.33]}><cylinderGeometry args={[0.1, 0.12, 0.02, 20]} />{M.steel({ col: "#2a2826" })}</mesh>
       <mesh position={[0.75, 0.0, -0.05]}><boxGeometry args={[0.04, 0.1, 0.9]} /><meshStandardMaterial color="#3a3a38" /></mesh>
       <group position={[1.15, -0.2, -0.2]}>{Array.from({ length: 6 }, (_, i) => <RBox key={i} s={[0.12, 0.3 + rn(i, 1) * 0.3, 0.12]} r={0.01} p={[(rn(i, 2) - 0.5) * 0.4, 0, (rn(i, 3) - 0.5) * 0.4]} rot={[rn(i, 4) * 0.4, 0, rn(i, 5) * 0.4]}><meshStandardMaterial color="#2a2624" /></RBox>)}
         {Array.from({ length: 5 }, (_, j) => { const ph = (tt * 0.2 + j / 5) % 1; return <mesh key={j} position={[ph * 0.15, 0.3 + ph * 0.7, 0]}><sphereGeometry args={[0.1 + ph * 0.18, 10, 8]} /><meshStandardMaterial color="#3a3836" transparent opacity={0.5 * (1 - ph)} depthWrite={false} /></mesh>; })}
