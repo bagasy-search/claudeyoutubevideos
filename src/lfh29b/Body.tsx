@@ -46,7 +46,7 @@ const Carousels: React.FC<{ t: number }> = ({ t }) => <>
   {MIS.length > 0 && <CoverFlow t={t} at={DEAL?.at ?? MIS[0].at - 1} out={MIS[MIS.length - 1].out} hide={nowAv(t)} kicker="DON'T DO THESE" title={`THE ${MIS.length} MISTAKES`} col="red"
     cards={MIS.map((m, i) => ({ img: CJ.err?.[i], at: m.at, n: m.n, title: m.txt }))} />}
   {REC && <CoverFlow t={t} at={REC.at} out={REC.out} hide={nowAv(t)} kicker="START TO FINISH" title={PL.txt.recapTitle}
-    cards={PL.txt.recap.map((n, i) => ({ img: CJ.rec?.[i], at: REC.rows[i] ?? REC.out, n: i + 1, title: n })).filter((c) => c.at < REC.out)} />}
+    cards={PL.txt.recap.map((n, i) => ({ img: CJ.rec?.[i], at: REC.rows[i]?.at ?? REC.rows[i] ?? REC.out, n: i + 1, title: n })).filter((c) => c.at < REC.out)} />}
 </>;
 
 // ===== un componente ÚNICO por minuto (heroes.json) =====
