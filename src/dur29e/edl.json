@@ -66,15 +66,21 @@
 },
 {
 "a": 34.38,
-"b": 50.34,
-"k": "ilus",
-"t": "u",
+"b": 42.84,
+"k": "real",
+"t": "real",
 "p": {
-"n": "SieteGlobo",
-"bg": "img/dur29e/ag/dur29e_t03_map_table.png",
-"at": {}
+"v": "img/dur29e/ag/dur29e_t03_map_table.png"
+}
 },
-"big": true
+{
+"a": 42.84,
+"b": 50.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_t03_map_table_2.png"
+}
 },
 {
 "a": 50.34,
@@ -351,18 +357,21 @@
 },
 {
 "a": 159.48,
-"b": 173.54,
-"k": "ilus",
-"t": "u",
+"b": 166.6,
+"k": "real",
+"t": "real",
 "p": {
-"n": "GasTecho",
-"bg": "img/dur29e/ag/dur29e_w07_flame_ceiling.png",
-"at": {
-"metano": 185,
-"explota": 393
+"v": "img/dur29e/ag/dur29e_w07_flame_ceiling.png"
 }
 },
-"big": true
+{
+"a": 166.6,
+"b": 173.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_w02_salt_wall_2.png"
+}
 },
 {
 "a": 173.54,
@@ -376,17 +385,11 @@
 {
 "a": 182.62,
 "b": 190.7,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "LlamaTecho",
-"bg": "img/dur29e/ag/dur29e_w06_torch_pole_2.png",
-"at": {
-"vara": 38,
-"quemar": 97
+"v": "img/dur29e/ag/dur29e_w06_torch_pole_2.png"
 }
-},
-"big": true
 },
 {
 "a": 190.7,
@@ -549,18 +552,21 @@
 },
 {
 "a": 278.54,
-"b": 296.26,
-"k": "ilus",
-"t": "u",
+"b": 287.52,
+"k": "real",
+"t": "real",
 "p": {
-"n": "ParcelasColumnas",
-"bg": "img/dur29e/ag/dur29e_k02_claims_columns.png",
-"at": {
-"parcelas": 41,
-"caminos": 463
+"v": "img/dur29e/ag/dur29e_k02_claims_columns.png"
 }
 },
-"big": true
+{
+"a": 287.52,
+"b": 296.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_k02_claims_columns_2.png"
+}
 },
 {
 "a": 296.26,
@@ -620,19 +626,21 @@
 },
 {
 "a": 337.12,
-"b": 351.346,
-"k": "ilus",
-"t": "u",
+"b": 344.246,
+"k": "real",
+"t": "real",
 "p": {
-"n": "PeligrosTres",
-"bg": "img/dur29e/ag/dur29e_k06_broken_cable.png",
-"at": {
-"cortaban": 95,
-"derrumbaban": 214,
-"llovia": 314
+"v": "img/dur29e/ag/dur29e_k06_broken_cable.png"
 }
 },
-"big": true
+{
+"a": 344.246,
+"b": 351.346,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_k06_broken_cable_2.png"
+}
 },
 {
 "a": 351.346,
@@ -682,18 +690,21 @@
 },
 {
 "a": 376.166,
-"b": 388.986,
-"k": "ilus",
-"t": "u",
+"b": 382.866,
+"k": "real",
+"t": "real",
 "p": {
-"n": "CableZumbido",
-"bg": "img/dur29e/ag/dur29e_k12_vibrating_rope.png",
-"at": {
-"zumbaba": 88,
-"agudo": 286
+"v": "img/dur29e/ag/dur29e_k12_vibrating_rope.png"
 }
 },
-"big": true
+{
+"a": 382.866,
+"b": 388.986,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_k04_cables_web_2.png"
+}
 },
 {
 "a": 388.986,
@@ -789,18 +800,21 @@
 },
 {
 "a": 415.766,
-"b": 424.506,
-"k": "ilus",
-"t": "u",
+"b": 420.366,
+"k": "real",
+"t": "real",
 "p": {
-"n": "PiedraPie",
-"bg": "img/dur29e/ag/dur29e_p02_nose_clip.png",
-"at": {
-"pinza": 56,
-"piedra": 243
+"v": "img/dur29e/ag/dur29e_p02_nose_clip.png"
 }
 },
-"big": true
+{
+"a": 420.366,
+"b": 424.506,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p02_nose_clip_2.png"
+}
 },
 {
 "a": 424.506,
@@ -863,18 +877,21 @@
 },
 {
 "a": 453.386,
-"b": 468.726,
-"k": "ilus",
-"t": "u",
+"b": 461.406,
+"k": "real",
+"t": "real",
 "p": {
-"n": "CanastaCuerda",
-"bg": "img/dur29e/ag/dur29e_p06_basket_neck.png",
-"at": {
-"canasta": 193,
-"cuerda": 323
+"v": "img/dur29e/ag/dur29e_p06_basket_neck.png"
 }
 },
-"big": true
+{
+"a": 461.406,
+"b": 468.726,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p06_basket_neck_2.png"
+}
 },
 {
 "a": 468.726,
@@ -946,18 +963,21 @@
 },
 {
 "a": 512.106,
-"b": 525.286,
-"k": "ilus",
-"t": "u",
+"b": 518.926,
+"k": "real",
+"t": "real",
 "p": {
-"n": "PerlaCultivada",
-"bg": "img/dur29e/ag/dur29e_p12_cultured_box.png",
-"at": {
-"japon": 96,
-"derrumbo": 348
+"v": "img/dur29e/ag/dur29e_p12_cultured_box.png"
 }
 },
-"big": true
+{
+"a": 518.926,
+"b": 525.286,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p12_cultured_box_2.png"
+}
 },
 {
 "a": 525.286,
@@ -1169,18 +1189,21 @@
 },
 {
 "a": 637.786,
-"b": 652.706,
-"k": "ilus",
-"t": "u",
+"b": 645.286,
+"k": "real",
+"t": "real",
 "p": {
-"n": "DosVias",
-"bg": "img/dur29e/ag/dur29e_n03_rail_line.png",
-"at": {
-"este": 188,
-"california": 289
+"v": "img/dur29e/ag/dur29e_n03_rail_line.png"
 }
 },
-"big": true
+{
+"a": 645.286,
+"b": 652.706,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_n03_rail_line_2.png"
+}
 },
 {
 "a": 652.706,
@@ -1207,32 +1230,39 @@
 },
 {
 "a": 673.306,
-"b": 690.052,
-"k": "ilus",
-"t": "u",
+"b": 681.866,
+"k": "real",
+"t": "real",
 "p": {
-"n": "TunelNieve",
-"bg": "img/dur29e/ag/dur29e_n05_snow_tunnel.png",
-"at": {
-"tormentas": 200,
-"tuneles": 287
+"v": "img/dur29e/ag/dur29e_n05_snow_tunnel.png"
 }
 },
-"big": true
+{
+"a": 681.866,
+"b": 690.052,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_n05_snow_tunnel_2.png"
+}
 },
 {
 "a": 690.052,
-"b": 699.012,
-"k": "ilus",
-"t": "u",
+"b": 694.792,
+"k": "real",
+"t": "real",
 "p": {
-"n": "Avalancha",
-"bg": "img/dur29e/ag/dur29e_n06_avalanche.png",
-"at": {
-"avalanchas": 13
+"v": "img/dur29e/ag/dur29e_n06_avalanche.png"
 }
 },
-"big": true
+{
+"a": 694.792,
+"b": 699.012,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_n06_avalanche_2.png"
+}
 },
 {
 "a": 699.012,
@@ -1394,18 +1424,21 @@
 },
 {
 "a": 782.992,
-"b": 797.132,
-"k": "ilus",
-"t": "u",
+"b": 790.472,
+"k": "real",
+"t": "real",
 "p": {
-"n": "SelvaLampara",
-"bg": "img/dur29e/ag/dur29e_r13_mosquitoes.png",
-"at": {
-"mosquitos": 53,
-"lamparita": 388
+"v": "img/dur29e/ag/dur29e_r13_mosquitoes.png"
 }
 },
-"big": true
+{
+"a": 790.472,
+"b": 797.132,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_r13_mosquitoes_2.png"
+}
 },
 {
 "a": 797.132,
@@ -1490,18 +1523,21 @@
 },
 {
 "a": 834.812,
-"b": 855.092,
-"k": "ilus",
-"t": "u",
+"b": 845.572,
+"k": "real",
+"t": "real",
 "p": {
-"n": "CorteLatex",
-"bg": "img/dur29e/ag/dur29e_r05_latex_cup.png",
-"at": {
-"cortes": 353,
-"leche": 540
+"v": "img/dur29e/ag/dur29e_r05_latex_cup.png"
 }
 },
-"big": true
+{
+"a": 845.572,
+"b": 855.092,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_r02_curved_knife_2.png"
+}
 },
 {
 "a": 855.092,
@@ -1722,18 +1758,21 @@
 },
 {
 "a": 993.112,
-"b": 1014.452,
-"k": "ilus",
-"t": "u",
+"b": 1004.312,
+"k": "real",
+"t": "real",
 "p": {
-"n": "ResinaSiglos",
-"bg": "img/dur29e/ag/dur29e_o10_kauri_trees.png",
-"at": {
-"resina": 230,
-"enterrada": 336
+"v": "img/dur29e/ag/dur29e_o10_kauri_trees.png"
 }
 },
-"big": true
+{
+"a": 1004.312,
+"b": 1014.452,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_o10_kauri_trees_2.png"
+}
 },
 {
 "a": 1014.452,
@@ -1774,19 +1813,21 @@
 },
 {
 "a": 1037.158,
-"b": 1051.658,
-"k": "ilus",
-"t": "u",
+"b": 1044.478,
+"k": "real",
+"t": "real",
 "p": {
-"n": "VaraToca",
-"bg": "img/dur29e/ag/dur29e_o02_iron_probe.png",
-"at": {
-"raiz": 332,
-"piedra": 363,
-"goma": 391
+"v": "img/dur29e/ag/dur29e_o02_iron_probe.png"
 }
 },
-"big": true
+{
+"a": 1044.478,
+"b": 1051.658,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_o04_dug_hole_2.png"
+}
 },
 {
 "a": 1051.658,
@@ -2031,17 +2072,11 @@
 {
 "a": 1184.178,
 "b": 1192.158,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "BotasClavos",
-"bg": "img/dur29e/ag/dur29e_a05_spiked_boots.png",
-"at": {
-"botas": 171,
-"clavos": 189
+"v": "img/dur29e/ag/dur29e_a05_spiked_boots.png"
 }
-},
-"big": true
 },
 {
 "a": 1192.158,

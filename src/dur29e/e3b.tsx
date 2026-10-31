@@ -45,14 +45,17 @@ const Obj5: React.FC<{ i: number; tt: number; on: number }> = ({ i, tt, on }) =>
 const CincoPeligros: React.FC<UP> = ({ d, p }) => {
   const at = T5.map((k, i) => sec(p, k, 0.4 + i * 3));
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="wipe" key1={[-0.8, 2.6, 2.0]}
-    cam={{ at: [0, 0.32, 0], az: [-0.18, 0.1], el: [0.14, 0.12], r: [1.1, 1.0], fov: 34 }}>{(tt) => <>
-    <mesh position={[0, 0.1, 0]}><cylinderGeometry args={[0.2, 0.23, 0.2, 40]} /><meshStandardMaterial map={dirtT([150, 142, 128])} roughness={0.95} /></mesh>
-    <Sh p={[0, 0, 0]} r={0.26} />
-    {at.map((a, i) => { const nx = i < 4 ? at[i + 1] : 1e9, out = eio(tt, nx - 0.1, nx + 0.5);
-      return <group key={i} position={[-1.2 * out, 0.2 + fallY(tt, a, 0.7), 0]} visible={tt > a - 0.3 && out < 0.99}>
-        <Sh p={[0, 0, 0]} r={0.13} op={0.5} /><group scale={1.6}><Obj5 i={i} tt={tt} on={eio(tt, a + 0.5, a + 2.0)} /></group></group>; })}
-    <spotLight position={[0, 2.2, 0.8]} angle={0.3} penumbra={0.6} intensity={16} distance={3.5} color="#ffe8c0" />
-  </>}</U3>;
+    cam={{ at: [0, 0.3, 0], az: [-0.12, 0.06], el: [0.16, 0.14], r: [1.75, 1.6], fov: 34 }}>{(tt) => {
+    const c = at.reduce((k, a, i) => (tt >= a ? i : k), -1), lx = (Math.max(0, c) - 2) * 0.32;
+    return <>
+      <RBox s={[1.7, 0.18, 0.36]} r={0.02} p={[0, 0.09, 0]}><meshStandardMaterial map={dirtT([150, 142, 128])} roughness={0.95} /></RBox>
+      {at.map((a, i) => { const x = (i - 2) * 0.32, on = i === c ? eio(tt, a + 0.3, a + 0.8) : (i < c ? 0.25 : 0);
+        return <group key={i} position={[x, 0.18 + fallY(tt, a, 0.7), 0]} visible={tt > a - 0.3}>
+          <Sh p={[0, 0, 0]} r={0.12} op={0.5} /><group scale={1.25 + 0.15 * (i === c ? eio(tt, a + 0.3, a + 0.8) : 0)}><Obj5 i={i} tt={tt} on={on} /></group></group>; })}
+      <pointLight position={[lx, 0.75, 0.35]} intensity={0.0001 + 2.2 * (c >= 0 ? 1 : 0)} distance={1.2} color="#ffe8c0" />
+      <spotLight position={[0, 2.2, 0.8]} angle={0.5} penumbra={0.7} intensity={7} distance={3.5} color="#ffe8c0" />
+    </>;
+  }}</U3>;
 };
 
 // ======================= AMÉRICA DEL NORTE · CENTRAL PACIFIC =======================
@@ -70,6 +73,10 @@ const GranitoBarra: React.FC<UP> = ({ d, p }) => {
         <mesh position={[-0.16, 0, 0]} rotation={[0, 0, PI / 2]}><cylinderGeometry args={[0.008, 0.008, 0.3, 8]} />{M.wood()}</mesh>
         <RBox s={[0.04, 0.08, 0.04]} r={0.006} p={[-0.02, 0, 0]}>{M.steel({ col: "#4a4e52" })}</RBox></group></group>
       {Array.from({ length: 6 }, (_, i) => { const k = cl((tt - aM - (n) * B - 0.67 * B) / 0.4); return tt > aM ? <mesh key={i} position={[0.1 - 0.15 * k, 0.3 + 0.1 * Math.sin(i * 1.1) * k - 0.1 * k * k, 0.05 + 0.1 * Math.cos(i * 1.7) * k]} visible={k > 0 && k < 1}><tetrahedronGeometry args={[0.008, 0]} /><meshStandardMaterial color="#8a8886" /></mesh> : null; })}
+      {(() => { const kk = tt > aM + B * 0.95 ? cl(((ph + 0.05) % 1) / 0.35) : 1; return <group position={[-0.03, 0.3, 0.05]}>
+        {Array.from({ length: 10 }, (_, i) => { const a = i * 0.63, v = 0.12 + 0.06 * rn(i, 5); return <mesh key={i} position={[-v * kk * Math.abs(Math.cos(a)), v * kk * Math.sin(a) * 0.8 - 0.2 * kk * kk, v * kk * Math.sin(a * 1.7) * 0.5]} visible={kk > 0 && kk < 0.7}><sphereGeometry args={[0.004, 6, 4]} /><meshBasicMaterial color="#ffd27a" /></mesh>; })}
+        <pointLight position={[-0.02, 0, 0.05]} intensity={0.0001 + 0.7 * (1 - cl(kk * 3))} distance={0.5} color="#ffc060" /></group>; })()}
+      {Array.from({ length: 5 }, (_, i) => { const u = ((Math.max(0, tt - aM) * 0.8 + i / 5) % 1); return <mesh key={"pv" + i} position={[0.09, 0.3 + 0.06 * u, 0.06 + 0.04 * u * (i % 2 ? 1 : -1)]} scale={sm(tt > aM ? 0.015 + 0.04 * u : 0)}><sphereGeometry args={[1, 10, 8]} /><meshStandardMaterial color="#b8b6b2" transparent opacity={0.4 * (1 - u)} depthWrite={false} /></mesh>; })}
       <group position={[-0.32, 0, 0.05]}><Stickman escala={0.14} rotY={90} guion={[{ t: 0, accion: "empujar", expr: "decidido" }] as any} semilla={140} contacto={0} color="#3a4a5a" /></group>
       <Sh p={[-0.32, 0, 0.05]} r={0.08} />
       {Array.from({ length: 40 }, (_, i) => { const y = 1.0 - ((tt * (0.15 + 0.05 * rn(i, 2)) + rn(i, 1)) % 1) * 1.05; return <mesh key={i} position={[(rn(i, 3) - 0.5) * 1.4, y, (rn(i, 4) - 0.3) * 0.9]}><sphereGeometry args={[0.005, 6, 4]} /><meshBasicMaterial color="#ffffff" /></mesh>; })}
@@ -164,7 +171,8 @@ const TeHervido: React.FC<UP> = ({ d, p }) => {
         <mesh position={[0, 0.002, 0]} rotation={[-PI / 2, 0, 0]}><circleGeometry args={[0.1, 32]} />{M.steel({ col: "#5a5e62" })}</mesh>
         <mesh position={[0, 0.1, 0]} rotation={[-PI / 2, 0, 0]}><circleGeometry args={[0.105, 32]} /><meshStandardMaterial color="#6a5a3a" roughness={0.2} /></mesh>
         {Array.from({ length: 10 }, (_, i) => <mesh key={i} position={[(rn(i, 1) - 0.5) * 0.15, 0.104, (rn(i, 2) - 0.5) * 0.15]} scale={sm(0.012 * (1 - boil))}><icosahedronGeometry args={[1, 0]} /><meshStandardMaterial color="#5ac83a" emissive="#3a9a2a" emissiveIntensity={0.6} /></mesh>)}
-        {Array.from({ length: 12 }, (_, i) => { const k = ((tt * 0.5 + i / 12) % 1); return <mesh key={"b" + i} position={[(rn(i, 3) - 0.5) * 0.12 + 0.04 * Math.sin(k * 6), 0.12 + k * 0.4, (rn(i, 4) - 0.5) * 0.1]} scale={sm(boil * (0.03 + 0.05 * k))}><sphereGeometry args={[1, 10, 8]} /><meshStandardMaterial color="#ffffff" transparent opacity={0.4 * (1 - k)} depthWrite={false} /></mesh>; })}
+        {Array.from({ length: 30 }, (_, i) => { const k = ((tt * 0.35 + i / 30) % 1); return <mesh key={"b" + i} position={[(rn(i, 3) - 0.5) * 0.1 + 0.06 * k * Math.sin(k * 5 + i), 0.12 + k * 0.5, (rn(i, 4) - 0.5) * 0.08]} scale={sm(boil * (0.025 + 0.09 * k))}><sphereGeometry args={[1, 12, 10]} /><meshStandardMaterial color="#f4f6f8" roughness={1} transparent opacity={0.16 * Math.sin(PI * k)} depthWrite={false} /></mesh>; })}
+        {Array.from({ length: 8 }, (_, i) => { const k = ((tt * 1.3 + i / 8) % 1); return <mesh key={"bb" + i} position={[(rn(i, 6) - 0.5) * 0.15, 0.103, (rn(i, 7) - 0.5) * 0.15]} scale={sm(boil * (k < 0.8 ? 0.004 + 0.01 * k : 0))}><sphereGeometry args={[1, 10, 8, 0, 2 * PI, 0, PI / 2]} /><meshPhysicalMaterial color="#8a7a4a" roughness={0.1} clearcoat={1} /></mesh>; })}
       </group>
       {[[-0.22, 0.1], [0.22, 0.08]].map(([x, z], i) => <group key={i} position={[x, 0, z]}><mesh position={[0, 0.03, 0]}><cylinderGeometry args={[0.025, 0.02, 0.06, 16]} />{M.porcelain({ col: "#e8e0d0" })}</mesh><Sh p={[0, 0, 0]} r={0.03} /></group>)}
       <Sh p={[0, 0, 0]} r={0.15} />
@@ -176,21 +184,23 @@ const TeHervido: React.FC<UP> = ({ d, p }) => {
 const CargaDormida: React.FC<UP> = ({ d, p }) => {
   const aE = sec(p, "esperando", 2.0);
   return <U3 d={d} bg={p.bg} ground={null} sky="#0a0806" mode="iris" key1={[-0.4, 2.0, 1.4]}
-    cam={{ at: [-0.08, 0.3, 0], az: [-0.34, -0.2], el: [0.12, 0.08], r: [1.25, 1.05], fov: 34 }}>{(tt) => {
-    const beat = 0.5 + 0.5 * Math.sin(tt * 2 * PI * 0.5), wake = eio(tt, aE, aE + 1.0);
+    cam={{ at: [-0.06, 0.3, 0], at1: [0.0, 0.3, 0.02], az: [-0.42, -0.3], el: [0.1, 0.08], r: [1.05, 0.8], fov: 34 }}>{(tt) => {
+    const beat = 0.5 + 0.5 * Math.sin(tt * 2 * PI * 0.5), wake = eio(tt, aE, aE + 1.0), glow = (0.3 + 0.7 * beat) * (0.3 + 0.7 * wake);
     return <>
-      <mesh position={[0, 0.3, -0.05]}><boxGeometry args={[1.4, 0.8, 0.1]} /><meshStandardMaterial map={dirtT([132, 110, 88])} roughness={0.8} /></mesh>
-      {[[-0.25, 0.42], [0, 0.3], [0.25, 0.4]].map(([x, y], i) => <group key={i} position={[x, y, 0.0]}>
-        <mesh position={[0, 0, 0.001]} rotation={[PI / 2, 0, 0]}><cylinderGeometry args={[0.02, 0.02, 0.01, 16]} /><meshBasicMaterial color="#0a0806" /></mesh>
-        {i === 1 ? <>
-          <mesh position={[0, 0, 0.035]} rotation={[PI / 2, 0, 0]}><cylinderGeometry args={[0.016, 0.016, 0.07, 14]} /><meshStandardMaterial color="#b02a1a" roughness={0.6} /></mesh>
-          <mesh position={[0.04, -0.1, 0.06]}><sphereGeometry args={[0.01, 10, 8]} /><meshStandardMaterial color="#ff6a2a" emissive="#ff4a1a" emissiveIntensity={(0.3 + 1.6 * beat) * (0.3 + 0.7 * wake)} /></mesh>
-          <Seg a={[0, 0, 0.07]} b={[0.04, -0.1, 0.06]} r={0.002}><meshStandardMaterial color="#2a2018" /></Seg>
-          <pointLight position={[0.04, -0.1, 0.15]} intensity={0.0001 + 0.6 * beat * (0.3 + 0.7 * wake)} distance={0.6} color="#ff6a2a" /></> : null}
-      </group>)}
-      {Array.from({ length: 20 }, (_, i) => { const y = 0.6 - ((tt * 0.05 + rn(i, 1)) % 1) * 0.6; return <mesh key={i} position={[(rn(i, 2) - 0.5) * 1.0, y, 0.05 + rn(i, 3) * 0.3]}><sphereGeometry args={[0.003, 6, 4]} /><meshBasicMaterial color="#c8b8a0" transparent opacity={0.5} /></mesh>; })}
-      <group position={[-0.36, 0, 0.3]}><Stickman escala={0.16} rotY={60} guion={[{ t: 0, accion: "quieto", expr: "nervioso" }, { t: aE, accion: "asustarse", expr: "asustado" }] as any} semilla={143} contacto={0} color="#3a4a5a" /></group>
-      <mesh position={[0, -0.0, 0.3]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[1.4, 0.6]} /><meshStandardMaterial map={dirtT([100, 96, 90])} roughness={1} /></mesh>
+      <mesh position={[0, 0.3, -0.05]}><boxGeometry args={[1.6, 0.9, 0.1]} /><meshStandardMaterial map={dirtT([112, 100, 88])} roughness={0.9} /></mesh>
+      {Array.from({ length: 16 }, (_, i) => <mesh key={"r" + i} position={[(rn(i, 1) - 0.5) * 1.5, 0.05 + rn(i, 2) * 0.75, 0.0]} rotation={[rn(i, 3) * 3, rn(i, 4) * 3, 0]} scale={[1, 0.7, 0.5]}><dodecahedronGeometry args={[0.04 + 0.05 * rn(i, 5), 0]} /><meshStandardMaterial color="#6a6058" roughness={1} flatShading /></mesh>)}
+      {[[-0.3, 0.45], [-0.12, 0.52], [0.16, 0.48], [0.32, 0.38]].map(([x, y], i) => <mesh key={"h" + i} position={[x, y, 0.002]} rotation={[PI / 2, 0, 0]}><cylinderGeometry args={[0.018, 0.018, 0.01, 16]} /><meshBasicMaterial color="#0a0806" /></mesh>)}
+      <group position={[0.02, 0.3, 0.0]}>
+        <mesh position={[0, 0, 0.001]} rotation={[PI / 2, 0, 0]}><cylinderGeometry args={[0.03, 0.03, 0.01, 16]} /><meshBasicMaterial color="#0a0806" /></mesh>
+        {[[-0.012, 0], [0.012, 0], [0, 0.016]].map(([x, y], i) => <mesh key={i} position={[x, y, 0.05]} rotation={[PI / 2, 0, 0]}><cylinderGeometry args={[0.012, 0.012, 0.1, 14]} /><meshStandardMaterial color="#b02a1a" roughness={0.6} /></mesh>)}
+        <Seg a={[0, 0.005, 0.1]} b={[0.06, -0.08, 0.12]} r={0.0025}><meshStandardMaterial color="#2a2018" /></Seg>
+        <Seg a={[0.06, -0.08, 0.12]} b={[0.09, -0.16, 0.1]} r={0.0025}><meshStandardMaterial color="#2a2018" /></Seg>
+        <mesh position={[0.09, -0.16, 0.1]}><sphereGeometry args={[0.009, 10, 8]} /><meshStandardMaterial color="#ff6a2a" emissive="#ff4a1a" emissiveIntensity={0.2 + 1.8 * glow} /></mesh>
+        {Array.from({ length: 6 }, (_, i) => { const u = (tt * 0.5 + i / 6) % 1; return <mesh key={"s" + i} position={[0.09 + 0.03 * u * Math.sin(i * 2.1), -0.16 + 0.22 * u, 0.1]} scale={sm(wake * (0.012 + 0.03 * u))}><sphereGeometry args={[1, 10, 8]} /><meshStandardMaterial color="#8a827a" transparent opacity={0.35 * (1 - u)} depthWrite={false} /></mesh>; })}
+        <pointLight position={[0.09, -0.16, 0.2]} intensity={0.0001 + 0.8 * glow} distance={0.8} color="#ff6a2a" /></group>
+      <group position={[-0.34, 0, 0.22]}><Stickman escala={0.13} rotY={40} guion={[{ t: 0, accion: "quieto", expr: "nervioso" }, { t: aE, accion: "asustarse", expr: "asustado" }] as any} semilla={143} contacto={0} color="#3a4a5a" /></group>
+      <mesh position={[0, -0.0, 0.35]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[1.6, 0.8]} /><meshStandardMaterial map={dirtT([90, 84, 78])} roughness={1} /></mesh>
+      {Array.from({ length: 10 }, (_, i) => <mesh key={"g" + i} position={[(rn(i, 7) - 0.5) * 1.2, 0.01, 0.1 + rn(i, 8) * 0.5]} rotation={[rn(i, 9), rn(i, 10), 0]}><dodecahedronGeometry args={[0.015 + 0.02 * rn(i, 11), 0]} /><meshStandardMaterial color="#5a5048" roughness={1} flatShading /></mesh>)}
       <spotLight position={[-0.6, 1.2, 1.0]} angle={0.4} penumbra={0.7} intensity={4} distance={3} color="#ffc078" />
       <hemisphereLight args={["#d8c8b0", "#1a1410", 0.35]} />
     </>;
@@ -220,11 +230,11 @@ const SelvaLampara: React.FC<UP> = ({ d, p }) => {
 const RuedaCaucho: React.FC<UP> = ({ d, p }) => {
   const aB = sec(p, "bicicletas", 0.8), aA = sec(p, "autos", 2.0);
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="iris" key1={[-0.8, 2.4, 1.6]}
-    cam={{ at: [0, 0.22, 0], az: [-0.3, -0.12], el: [0.12, 0.1], r: [0.95, 0.85], fov: 34 }}>{(tt) => {
+    cam={{ at: [-0.1, 0.22, 0], at1: [0, 0.22, 0], az: [-0.3, -0.12], el: [0.12, 0.1], r: [1.15, 0.9], fov: 34 }}>{(tt) => {
     const b = eio(tt, aB, aB + 0.6), a = eio(tt, aA, aA + 0.6), spin = tt * 1.5;
     return <>
-      <group position={[0, 0.22, 0]}>
-        <mesh scale={sm(1 - b)}><sphereGeometry args={[0.13, 24, 16]} /><meshStandardMaterial color="#2a2018" roughness={0.6} /></mesh>
+      <group position={[lerp(-0.7, 0, eio(tt, 0, Math.max(0.6, aB))), 0.22, 0]}>
+        <mesh scale={sm(1 - b)} rotation={[0, 0, -lerp(-0.7, 0, eio(tt, 0, Math.max(0.6, aB))) / 0.13]}><sphereGeometry args={[0.13, 24, 16]} /><meshStandardMaterial map={dirtT([58, 44, 30])} roughness={0.6} /></mesh>
         <group rotation={[0, 0, -spin]} scale={sm(b * (1 - a))}><mesh><torusGeometry args={[0.18, 0.014, 12, 48]} /><meshStandardMaterial color="#1a1612" roughness={0.6} /></mesh>
           {Array.from({ length: 16 }, (_, i) => <mesh key={i} rotation={[0, 0, i * PI / 8]}><boxGeometry args={[0.002, 0.34, 0.002]} />{M.chrome()}</mesh>)}
           <mesh rotation={[PI / 2, 0, 0]}><cylinderGeometry args={[0.02, 0.02, 0.03, 16]} />{M.chrome()}</mesh></group>
@@ -263,16 +273,18 @@ const CorteLatex: React.FC<UP> = ({ d, p }) => {
 const BolaHumo: React.FC<UP> = ({ d, p }) => {
   const aH = sec(p, "humo", 0.5), aB = sec(p, "bola", 2.5), D = d / 30;
   return <U3 d={d} bg={p.bg} ground={[80, 66, 50]} sky="#1a1410" mode="iris" key1={[-0.6, 2.2, 1.4]}
-    cam={{ at: [0, 0.24, 0], az: [-0.3, -0.15], el: [0.14, 0.1], r: [0.95, 0.85], fov: 34 }}>{(tt) => {
+    cam={{ at: [-0.08, 0.26, 0], az: [-0.3, -0.15], el: [0.14, 0.1], r: [1.15, 1.0], fov: 34 }}>{(tt) => {
     const g = eio(tt, aH, D - 0.2), fl = 0.85 + 0.15 * Math.sin(tt * 2 * PI * 1.4);
     return <>
       {[0, 1, 2].map((i) => <mesh key={i} position={[0, 0.02, 0]} rotation={[0, i * PI / 3, PI / 2]}><cylinderGeometry args={[0.015, 0.015, 0.24, 8]} />{M.wood({ base: [70, 46, 30] })}</mesh>)}
       <mesh position={[0, 0.06, 0]} scale={[1, fl, 1]}><coneGeometry args={[0.05, 0.08, 12]} />{M.glow({ col: "#ff8a2a", op: 0.8 })}</mesh>
       <pointLight position={[0, 0.1, 0.1]} intensity={1.6 * fl} distance={1.2} color="#ff9a4a" />
-      {Array.from({ length: 16 }, (_, i) => { const k = ((tt * 0.25 + i / 16) % 1); return <mesh key={i} position={[0.05 * Math.sin(k * 7 + i), 0.1 + k * 0.6, 0.03 * Math.cos(k * 5 + i)]} scale={sm(0.03 + 0.08 * k)}><sphereGeometry args={[1, 10, 8]} /><meshStandardMaterial color="#8a8680" transparent opacity={0.35 * (1 - k) * cl((tt - aH + 0.5) * 2)} depthWrite={false} /></mesh>; })}
+      {Array.from({ length: 60 }, (_, i) => { const k = ((tt * 0.22 + i / 60) % 1), r = 0.03 + 0.14 * Math.sin(PI * Math.min(1, k * 1.6)), an = k * 9 + i * 0.7; return <mesh key={i} position={[r * Math.cos(an), 0.08 + k * 0.62, r * Math.sin(an)]} scale={sm(0.025 + 0.05 * k)}><sphereGeometry args={[1, 12, 10]} /><meshStandardMaterial color={k < 0.4 ? "#9a948c" : "#c8c2b8"} roughness={1} transparent opacity={0.13 * (1 - k) * cl((tt - aH + 0.5) * 2)} depthWrite={false} /></mesh>; })}
+      <group position={[-0.44, 0, 0.02]}><Stickman escala={0.14} rotY={90} guion={[{ t: 0, accion: "empujar", expr: "decidido" }] as any} semilla={161} contacto={0} color="#5a4a38" /></group>
       <group position={[0, 0.26, 0]} rotation={[tt * 1.2, 0, 0]}>
         <mesh rotation={[0, 0, PI / 2]}><cylinderGeometry args={[0.008, 0.008, 0.7, 8]} />{M.wood()}</mesh>
-        <mesh scale={[1.3, 1, 1]}><sphereGeometry args={[0.02 + 0.09 * g, 24, 16]} /><meshStandardMaterial color="#2a2018" roughness={0.5} /></mesh>
+        <mesh scale={[1.3, 1, 1]}><sphereGeometry args={[0.02 + 0.09 * g, 24, 16]} /><meshPhysicalMaterial color="#3a2a1a" roughness={0.35} clearcoat={0.6} /></mesh>
+        {[0.3, 0.6, 0.9].map((q, j) => <mesh key={j} rotation={[0, 0, PI / 2]} scale={sm(eio(g, q - 0.3, q))}><torusGeometry args={[(0.02 + 0.09 * g) * 1.0, 0.004, 6, 28]} /><meshStandardMaterial color="#5a4028" roughness={0.6} /></mesh>)}
         <mesh scale={[1.31, 1.01, 1.01]}><sphereGeometry args={[0.02 + 0.09 * g, 24, 16]} /><meshStandardMaterial color="#f4f2ee" transparent opacity={0.4 * (Math.sin(tt * 2 * PI * 0.5) * 0.5 + 0.5)} roughness={0.3} /></mesh>
       </group>
       {[-0.35, 0.35].map((x, i) => <RBox key={i} s={[0.03, 0.3, 0.03]} r={0.004} p={[x, 0.15, 0]}>{M.wood({ base: [110, 76, 44] })}</RBox>)}
@@ -284,14 +296,23 @@ const BolaHumo: React.FC<UP> = ({ d, p }) => {
 // ---- SemillasFilas · un saquito de semillas viaja en un arco; donde cae, brotan árboles en filas perfectas, una tras otra ----
 const SemillasFilas: React.FC<UP> = ({ d, p }) => {
   const aS = sec(p, "semillas", 0.6), aF = sec(p, "filas", 2.2);
-  return <U3 d={d} bg={p.bg} ground={[120, 110, 70]} sky="#c8d8e0" mode="iris" key1={[-1, 3, 1.4]}
-    cam={{ at: [0.1, 0.12, 0], az: [-0.35, -0.2], el: [0.42, 0.36], r: [1.7, 1.55], fov: 34 }}>{(tt) => {
-    const fly = eio(tt, aS, aS + 1.2);
+  const rows = [-0.24, 0.0, 0.24];
+  return <U3 d={d} bg={p.bg} ground={[120, 96, 64]} sky="#c8d8e0" mode="iris" key1={[-1, 3, 1.4]}
+    cam={{ at: [0.0, 0.14, 0], az: [-0.42, -0.26], el: [0.36, 0.3], r: [1.6, 1.45], fov: 34 }}>{(tt) => {
+    const wk = cl((tt - aS) / Math.max(1, d / 30 - aS - 0.6)), xm = lerp(-0.7, 0.5, wk);
     return <>
-      <group position={[lerp(-0.85, 0.2, fly), 0.05 + 0.5 * Math.sin(PI * fly), 0]} visible={fly < 0.99}><mesh><sphereGeometry args={[0.04, 14, 10]} /><meshStandardMaterial color="#b89a68" roughness={1} /></mesh></group>
-      {Array.from({ length: 5 }, (_, i) => <group key={"j" + i} position={[-0.85 + 0.1 * (i % 3), 0, -0.3 + i * 0.15]}><Arbol h={0.3 + 0.1 * rn(i, 1)} col="#2a5a2a" /></group>)}
-      {Array.from({ length: 30 }, (_, i) => { const x = 0.0 + (i % 6) * 0.12, z = -0.3 + Math.floor(i / 6) * 0.15, a = aF + i * 0.06; return <group key={i} position={[x, 0, z]} scale={sm(eio(tt, a, a + 0.5))}><Arbol h={0.22} col="#3a7a2a" /></group>; })}
+      {rows.map((z, r) => <group key={"f" + r}>
+        <mesh position={[0, 0.012, z]}><boxGeometry args={[1.8, 0.024, 0.07]} /><meshStandardMaterial map={dirtT([84, 58, 36])} roughness={1} /></mesh>
+        <mesh position={[0, 0.003, z + 0.06]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[1.8, 0.04]} /><meshStandardMaterial color="#3a2618" roughness={1} /></mesh></group>)}
+      {Array.from({ length: 21 }, (_, i) => { const r = i % 3, c = Math.floor(i / 3), x = -0.6 + c * 0.2, z = rows[r] + 0.06;
+        const tp = aS + (x + 0.7) / 1.45 * Math.max(1, d / 30 - aS - 0.6), drop = cl((tt - tp) / 0.35), grow = Math.max(eio(tt, tp + 0.4, tp + 1.2), eio(tt, aF + c * 0.08, aF + c * 0.08 + 0.6) * (tt > tp ? 1 : 0));
+        return <group key={i} position={[x, 0, z]}>
+          <mesh position={[0, 0.2 * (1 - drop * drop) + 0.012, 0]} visible={tt > tp - 0.05}><sphereGeometry args={[0.012, 10, 8]} /><meshStandardMaterial color="#b89a68" roughness={1} /></mesh>
+          <group scale={sm(pop(tt, tp + 0.4) * (0.4 + 0.6 * grow))}><Arbol h={0.16} col="#3a7a2a" leaf={0.6} /></group></group>; })}
+      {Array.from({ length: 4 }, (_, i) => <group key={"j" + i} position={[-0.95 + 0.12 * (i % 2), 0, -0.55 + i * 0.12]}><Arbol h={0.5 + 0.1 * rn(i, 1)} col="#2a5a2a" /></group>)}
+      <group position={[xm, 0, 0.36]}><EnSitio tt={tt} accion="caminar" escala={0.16} rotY={90} semilla={177} contacto={0} /></group>
       <directionalLight position={[1.5, 3, 1]} intensity={1.6} color="#ffe8c8" />
+      <hemisphereLight args={["#d8e4f0", "#3a2a1a", 0.4]} />
     </>;
   }}</U3>;
 };
@@ -306,7 +327,9 @@ const PantanoVara: React.FC<UP> = ({ d, p }) => {
     const ph = Math.max(0, tt - aV) / B, cyc = ph % 1, stab = tt > aV ? (cyc < 0.35 ? eio(cyc, 0, 0.35) : 1 - eio(cyc, 0.5, 1)) : 0, n = Math.floor(ph);
     return <>
       <mesh position={[0, 0.06, 0]} rotation={[-PI / 2, 0, 0]}><circleGeometry args={[1.6, 40]} />{M.water({ op: 0.75, col: "#5a5a3a" })}</mesh>
-      {Array.from({ length: 12 }, (_, i) => <mesh key={i} position={[(rn(i, 1) - 0.5) * 1.6, 0.06, -0.3 - rn(i, 2) * 0.6]} scale={[1, 0.6 + rn(i, 3), 1]}><coneGeometry args={[0.05, 0.16, 6]} /><meshStandardMaterial color="#6a7a4a" roughness={1} /></mesh>)}
+      {Array.from({ length: 40 }, (_, i) => { const h = 0.2 + 0.25 * rn(i, 3); return <mesh key={i} position={[(rn(i, 1) - 0.5) * 1.8, 0.06 + h / 2, -0.25 - rn(i, 2) * 0.6]} rotation={[0, 0, (rn(i, 4) - 0.5) * 0.3 + 0.03 * Math.sin(tt * 1.5 + i)]}><cylinderGeometry args={[0.003, 0.005, h, 5]} /><meshStandardMaterial color={i % 3 ? "#6a7a3a" : "#8a8a4a"} roughness={1} /></mesh>; })}
+      {(() => { const g = n >= 2 ? cl((ph - 2.35) / 0.8) : 0; return <group position={[0.13, 0.04 + 0.12 * eio(g, 0, 1), 0.06]} scale={sm(g > 0 ? 1 : 0)}><mesh scale={[1.2, 0.9, 1]}><sphereGeometry args={[0.03, 20, 14]} /><meshPhysicalMaterial color="#d89a30" emissive="#a05a10" emissiveIntensity={0.3 + 0.9 * g} roughness={0.15} clearcoat={1} /></mesh></group>; })()}
+      <pointLight position={[0.13, 0.25, 0.2]} intensity={0.0001 + 0.9 * (n >= 2 ? cl((ph - 2.35) / 0.8) : 0)} distance={0.7} color="#ffb040" />
       <group position={[-0.1, 0, 0]}><Stickman escala={0.15} rotY={20} guion={[{ t: 0, accion: "empujar", expr: "decidido" }] as any} semilla={160} contacto={0} color="#5a4a38" /></group>
       <group position={[0.1 + 0.02 * (n % 3 - 1), 0.5 - 0.3 * stab, 0.06]} rotation={[0, 0, 0.12]}><mesh><cylinderGeometry args={[0.004, 0.004, 0.75, 8]} />{M.steel({ col: "#5a5e62" })}</mesh></group>
       {[0, 1].map((k) => { const c = cl((cyc - 0.35 - k * 0.2) / 0.5); return <mesh key={k} position={[0.12 + 0.02 * (n % 3 - 1), 0.062, 0.06]} rotation={[-PI / 2, 0, 0]} scale={sm(0.2 + c)} visible={tt > aV}><ringGeometry args={[0.05, 0.056, 32]} /><meshBasicMaterial color="#e8eadc" transparent opacity={0.5 * (1 - c)} depthWrite={false} /></mesh>; })}
@@ -336,13 +359,13 @@ const VaraToca: React.FC<UP> = ({ d, p }) => {
   const aR = sec(p, "raiz", 0.8), aP = sec(p, "piedra", 1.5), aG = sec(p, "goma", 2.2);
   const T = [aR, aP, aG], X = [-0.45, 0.0, 0.45];
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" sky="#2a3028" mode="iris" key1={[-1, 2.4, 1.6]} backDim={0.4}
-    cam={{ at: [0, 0.1, 0], az: [-0.22, -0.08], el: [0.14, 0.1], r: [1.75, 1.6], fov: 34 }}>{(tt) => {
+    cam={{ at: [0, 0.5, 0], az: [-0.18, -0.06], el: [0.08, 0.06], r: [2.0, 1.85], fov: 34 }}>{(tt) => {
     const sg = tt < T[0] ? 0 : tt < T[1] ? 1 : 2;
     const xm = sg === 0 ? lerp(-0.8, X[0], eio(tt, 0, T[0] - 0.3)) : lerp(X[sg - 1], X[sg], eio(tt, T[sg - 1] + 0.4, T[sg] - 0.3));
     const pr = Math.max(...T.map((t) => Math.sin(PI * cl((tt - t + 0.3) / 0.9)))), yb = 0.05 - 0.27 * pr;
     const hit = T.map((t) => eio(tt, t, t + 0.4));
-    return <>
-      <mesh position={[0, -0.18, -0.25]}><boxGeometry args={[2.2, 0.36, 0.5]} /><meshStandardMaterial map={dirtT([72, 56, 38])} roughness={1} /></mesh>
+    return <group position={[0, 0.4, 0]}>
+      <mesh position={[0, -0.2, -0.24]}><boxGeometry args={[2.2, 0.4, 0.5]} /><meshStandardMaterial map={dirtT([72, 56, 38])} roughness={1} /></mesh>
       <mesh position={[0, 0.004, -0.25]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[2.2, 0.5]} /><meshPhysicalMaterial color="#2a3424" roughness={0.15} clearcoat={1} transparent opacity={0.85} /></mesh>
       <group position={[X[0], -0.15, 0.02]}>{[[0, 0, 0.5], [0.05, -0.03, -0.6], [-0.05, 0.02, 1.4]].map(([x, y, r], i) => <mesh key={i} position={[x, y, 0]} rotation={[0, 0, r]}><cylinderGeometry args={[0.014, 0.02, 0.2, 8]} /><meshStandardMaterial color="#5a3a20" emissive="#ffb060" emissiveIntensity={0.0001 + 0.4 * hit[0]} roughness={0.9} /></mesh>)}</group>
       <mesh position={[X[1], -0.2, 0.02]}><dodecahedronGeometry args={[0.07, 0]} /><meshStandardMaterial color="#7a7a76" emissive="#ffffff" emissiveIntensity={0.0001 + 0.2 * hit[1]} roughness={0.8} flatShading /></mesh>
@@ -353,7 +376,7 @@ const VaraToca: React.FC<UP> = ({ d, p }) => {
       <mesh position={[xm + 0.07, yb + 0.225, 0.03]} rotation={[0, 0, -0.08]}><cylinderGeometry args={[0.005, 0.005, 0.45, 8]} />{M.steel({ col: "#4a4846" })}</mesh>
       <directionalLight position={[-1, 2.4, 1.6]} intensity={1.2} color="#e8e0c8" />
       <hemisphereLight args={["#c8d0c0", "#2a2018", 0.5]} />
-    </>;
+    </group>;
   }}</U3>;
 };
 
@@ -381,16 +404,16 @@ const VelaRaspado: React.FC<UP> = ({ d, p }) => {
 const BahiaEstacion: React.FC<UP> = ({ d, p }) => {
   const aG = sec(p, "galpones", 0.5), aC = sec(p, "chimeneas", 1.6);
   return <U3 d={d} bg={p.bg} ground={SNOW} sky="#a8b4c4" mode="iris" key1={[-1, 3, 1.4]}
-    cam={{ at: [0, 0.15, 0], az: [-0.25, -0.12], el: [0.28, 0.22], r: [1.9, 1.7], fov: 34 }}>{(tt) => {
-    const smoke = eio(tt, aC, aC + 1.0);
+    cam={{ at: [0, 0.2, 0], az: [-0.25, -0.1], el: [0.2, 0.16], r: [1.45, 1.3], fov: 34 }}>{(tt) => {
+    const smoke = (i: number) => eio(tt, aC + i * 0.5, aC + i * 0.5 + 0.8);
     return <>
       <mesh position={[0, 0.003, 0.65]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[3, 0.8]} />{M.water({ op: 0.9, col: "#3a5a6a" })}</mesh>
-      {Array.from({ length: 5 }, (_, i) => <mesh key={i} position={[-1.0 + i * 0.5, 0.3, -0.9]}><coneGeometry args={[0.45, 0.8 + 0.3 * rn(i, 1), 5]} /><meshStandardMaterial map={dirtT([200, 204, 210])} roughness={0.8} /></mesh>)}
-      {Array.from({ length: 4 }, (_, i) => <group key={i} position={[-0.45 + i * 0.3, 0, 0.0]} scale={sm(pop(tt, aG + i * 0.2))}>
+      {Array.from({ length: 6 }, (_, i) => <mesh key={i} position={[-1.25 + i * 0.5, 0.2, -1.6]}><coneGeometry args={[0.32, 0.45 + 0.2 * rn(i, 1), 5]} /><meshStandardMaterial map={dirtT([200, 204, 210])} roughness={0.8} /></mesh>)}
+      {Array.from({ length: 4 }, (_, i) => <group key={i} position={[-0.45 + i * 0.3, 0, 0.0]} scale={0.0001 + 0.6 + 0.4 * sm(pop(tt, Math.max(0, aG - 0.4) + i * 0.1))}>
         <RBox s={[0.24, 0.14, 0.18]} r={0.006} p={[0, 0.07, 0]}><meshStandardMaterial color={i % 2 ? "#8a3a2a" : "#6a6a62"} roughness={0.8} /></RBox>
         <mesh position={[0, 0.17, 0]} rotation={[0, 0, PI / 4]}><boxGeometry args={[0.13, 0.13, 0.18]} /><meshStandardMaterial color="#4a4a44" roughness={0.8} /></mesh>
         <mesh position={[0.07, 0.26, 0]}><cylinderGeometry args={[0.015, 0.018, 0.18, 10]} />{M.steel({ col: "#4a4a4a" })}</mesh>
-        {Array.from({ length: 6 }, (_, k) => { const q = ((tt * 0.3 + k / 6 + i * 0.1) % 1); return <mesh key={k} position={[0.07 + 0.1 * q, 0.36 + q * 0.4, 0]} scale={sm(smoke * (0.03 + 0.06 * q))}><sphereGeometry args={[1, 10, 8]} /><meshStandardMaterial color="#5a5a58" transparent opacity={0.5 * (1 - q)} depthWrite={false} /></mesh>; })}
+        {Array.from({ length: 6 }, (_, k) => { const q = ((tt * 0.3 + k / 6 + i * 0.1) % 1); return <mesh key={k} position={[0.07 + 0.1 * q, 0.36 + q * 0.4, 0]} scale={sm(smoke(i) * (0.03 + 0.06 * q))}><sphereGeometry args={[1, 10, 8]} /><meshStandardMaterial color="#5a5a58" transparent opacity={0.5 * (1 - q)} depthWrite={false} /></mesh>; })}
         <Sh p={[0, 0, 0]} r={0.15} sx={1.3} op={0.3} /></group>)}
       <directionalLight position={[1, 3, 1.4]} intensity={1.4} color="#e8eef8" />
     </>;
@@ -401,19 +424,23 @@ const BahiaEstacion: React.FC<UP> = ({ d, p }) => {
 const AceiteUsos: React.FC<UP> = ({ d, p }) => {
   const aJ = sec(p, "jabon", 0.8), aM = sec(p, "margarina", 1.5), aQ = sec(p, "maquinas", 2.2);
   return <U3 d={d} bg={p.bg} ground={null} floor="wood" mode="iris" key1={[-0.8, 2.4, 1.6]}
-    cam={{ at: [0.05, 0.15, 0], az: [-0.25, -0.12], el: [0.2, 0.16], r: [1.05, 0.95], fov: 34 }}>{(tt) => {
-    const out = (a: number, x: number) => ({ x: lerp(-0.25, x, eio(tt, a, a + 0.6)), y: 0.14 + 0.18 * Math.sin(PI * eio(tt, a, a + 0.6)) });
-    const J = out(aJ, 0.0), Mg = out(aM, 0.2), Q = out(aQ, 0.4);
+    cam={{ at: [0.0, 0.12, 0.02], az: [-0.2, -0.1], el: [0.2, 0.16], r: [0.95, 0.85], fov: 34 }}>{(tt) => {
+    const land = (a: number, x: number) => { const u = eio(tt, a + 0.35, a + 0.95); return { x: lerp(-0.22, x, u), y: Math.max(0, 0.22 * Math.sin(PI * u)) + Math.abs(Math.sin(PI * 3 * cl((tt - a - 0.95) / 0.5))) * 0.03 * (1 - cl((tt - a - 0.95) / 0.5)) }; };
+    const drip = (a: number) => { const u = cl((tt - a) / 0.35); return <mesh position={[-0.17, 0.16 - 0.15 * u * u, 0.07]} scale={[1, 1.5, 1]} visible={tt > a && u < 1}><sphereGeometry args={[0.012, 12, 10]} /><meshPhysicalMaterial color="#c89a30" roughness={0.1} clearcoat={1} /></mesh>; };
+    const J = land(aJ, -0.02), Mg = land(aM, 0.14), Q = land(aQ, 0.3);
     return <>
-      <group position={[-0.25, 0, 0]}><mesh position={[0, 0.12, 0]} geometry={latheG("barril_e", [[0.07, 0], [0.09, 0.06], [0.095, 0.12], [0.09, 0.18], [0.07, 0.24]], 28)}>{M.wood({ base: [110, 70, 38] })}</mesh>
+      <group position={[-0.3, 0, -0.02]}><mesh position={[0, 0.12, 0]} geometry={latheG("barril_e", [[0.07, 0], [0.09, 0.06], [0.095, 0.12], [0.09, 0.18], [0.07, 0.24]], 28)}>{M.wood({ base: [110, 70, 38] })}</mesh>
         {[0.04, 0.2].map((y, i) => <mesh key={i} position={[0, y + 0.0, 0]}><torusGeometry args={[0.088, 0.004, 6, 28]} />{M.steel({ col: "#4a4a4a" })}</mesh>)}
         <mesh position={[0, 0.239, 0]} rotation={[-PI / 2, 0, 0]}><circleGeometry args={[0.07, 24]} /><meshStandardMaterial color="#c8a050" roughness={0.15} metalness={0.2} /></mesh>
+        <mesh position={[0.11, 0.17, 0.09]} rotation={[0, 0, -PI / 2]}><cylinderGeometry args={[0.008, 0.01, 0.06, 10]} />{M.steel({ col: "#7a6a4a" })}</mesh>
         <Sh p={[0, 0, 0]} r={0.1} /></group>
-      <group position={[J.x, J.y - 0.12, 0.02]} visible={tt > aJ}><RBox s={[0.1, 0.04, 0.06]} r={0.012} p={[0, 0.02, 0]}><meshStandardMaterial color="#f0e8d0" roughness={0.5} /></RBox></group>
-      <group position={[Mg.x, Mg.y - 0.12, 0.02]} visible={tt > aM}><RBox s={[0.1, 0.05, 0.07]} r={0.006} p={[0, 0.025, 0]}><meshStandardMaterial color="#f2d870" roughness={0.6} /></RBox></group>
-      <group position={[Q.x, Q.y - 0.08, 0.02]} rotation={[0, 0, tt * (tt > aQ + 0.6 ? 1.5 : 0)]} visible={tt > aQ}><mesh><cylinderGeometry args={[0.06, 0.06, 0.02, 12]} />{M.steel({ col: "#8a8e92" })}</mesh>
-        {Array.from({ length: 12 }, (_, i) => <mesh key={i} position={[Math.cos(i * PI / 6) * 0.066, 0, Math.sin(i * PI / 6) * 0.066]}><boxGeometry args={[0.014, 0.02, 0.014]} />{M.steel({ col: "#8a8e92" })}</mesh>)}</group>
-      <spotLight position={[0.2, 1.8, 0.9]} angle={0.45} penumbra={0.7} intensity={9} distance={3.5} color="#ffe8c8" />
+      <mesh position={[-0.17, 0.002, 0.07]} rotation={[-PI / 2, 0, 0]} scale={sm(0.3 + 0.7 * eio(tt, aJ + 0.3, aQ + 0.6))}><circleGeometry args={[0.035, 20]} /><meshPhysicalMaterial color="#b8862a" roughness={0.05} clearcoat={1} /></mesh>
+      {drip(aJ)}{drip(aM)}{drip(aQ)}
+      <group position={[J.x, J.y, 0.06]} scale={1.5 * sm(eio(tt, aJ + 0.3, aJ + 0.5))}><RBox s={[0.1, 0.04, 0.06]} r={0.012} p={[0, 0.02, 0]}><meshStandardMaterial color="#f0e8d0" roughness={0.5} /></RBox><Sh p={[0, -J.y, 0]} r={0.06} op={0.3} /></group>
+      <group position={[Mg.x, Mg.y, 0.06]} scale={1.5 * sm(eio(tt, aM + 0.3, aM + 0.5))}><RBox s={[0.1, 0.05, 0.07]} r={0.006} p={[0, 0.025, 0]}><meshStandardMaterial color="#f2d870" roughness={0.6} /></RBox><Sh p={[0, -Mg.y, 0]} r={0.06} op={0.3} /></group>
+      <group position={[Q.x, Q.y + 0.1, 0.06]} scale={1.5 * sm(eio(tt, aQ + 0.3, aQ + 0.5))}><group rotation={[PI / 2, 0, tt * (tt > aQ + 1.0 ? 1.5 : 0)]}><mesh><cylinderGeometry args={[0.055, 0.055, 0.02, 14]} />{M.steel({ col: "#c8ccd0" })}</mesh>
+        {Array.from({ length: 12 }, (_, i) => <mesh key={i} position={[Math.cos(i * PI / 6) * 0.06, 0, Math.sin(i * PI / 6) * 0.06]}><boxGeometry args={[0.014, 0.02, 0.014]} />{M.steel({ col: "#c8ccd0" })}</mesh>)}</group></group>
+      <spotLight position={[0.1, 1.8, 0.9]} angle={0.45} penumbra={0.7} intensity={9} distance={3.5} color="#ffe8c8" />
     </>;
   }}</U3>;
 };
@@ -445,18 +472,19 @@ const BotasClavos: React.FC<UP> = ({ d, p }) => {
 const ShackletonBote: React.FC<UP> = ({ d, p }) => {
   const aB = sec(p, "bote", 0.6), aM = sec(p, "montanas", 2.6);
   return <U3 d={d} bg={p.bg} ground={null} sky="#4a5664" mode="iris" key1={[-1, 2.4, 1.4]} backDim={0.4}
-    cam={{ at: [0, 0.14, -0.2], az: [-0.42, -0.22], el: [0.14, 0.1], r: [1.5, 1.32], fov: 34 }}>{(tt) => {
+    cam={{ at: [0, 0.16, -0.1], az: [-0.5, -0.3], el: [0.12, 0.1], r: [1.1, 0.95], fov: 34 }}>{(tt) => {
     const pitch = 0.22 * Math.sin(tt * 2 * PI * 0.31), roll = 0.12 * Math.sin(tt * 2 * PI * 0.23 + 1), heave = 0.04 * Math.sin(tt * 2 * PI * 0.31 + 0.6), mt = eio(tt, aM, aM + 1.6), bt = pop(tt, aB);
     return <>
       <mesh position={[0, -0.02, 0]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[7, 7]} /><meshPhysicalMaterial color="#2e3e4c" roughness={0.25} clearcoat={0.6} /></mesh>
-      {Array.from({ length: 16 }, (_, i) => { const z = 1.2 - ((tt * 0.12 + i / 16) % 1) * 2.8, x = (rn(i, 1) - 0.5) * 1.8; return <group key={i} position={[x, -0.02, z]}>
+      {Array.from({ length: 16 }, (_, i) => { const z = 0.4 - ((tt * 0.12 + i / 16) % 1) * 2.2, x = (rn(i, 1) - 0.5) * 1.8; return <group key={i} position={[x, -0.02, z]}>
         <mesh scale={[0.5 + rn(i, 2) * 0.6, 0.06 + 0.04 * rn(i, 3), 0.12]}><sphereGeometry args={[1, 20, 10]} /><meshStandardMaterial color="#3a4e5e" roughness={0.4} /></mesh>
         <mesh position={[0, 0.06 + 0.04 * rn(i, 3), 0]} scale={[0.25 + rn(i, 2) * 0.3, 0.012, 0.05]}><sphereGeometry args={[1, 12, 6]} /><meshStandardMaterial color="#d8e0e8" roughness={0.6} /></mesh></group>; })}
-      <group position={[0, heave, 0]} rotation={[pitch, 0.4, roll]} scale={sm(bt)}>
+      <group position={[0, 0.06 + heave, 0]} rotation={[pitch, 0.4, roll]} scale={0.6 + 0.4 * sm(bt)}>
         <mesh position={[0, 0.05, 0]} scale={[1.6, 0.5, 0.6]}><sphereGeometry args={[0.2, 24, 12, 0, 2 * PI, PI / 2, PI / 2]} />{M.wood({ base: [120, 84, 50] })}</mesh>
         <mesh position={[0, 0.05, 0]} rotation={[-PI / 2, 0, 0]} scale={[1.6, 0.6, 1]}><ringGeometry args={[0.17, 0.2, 32]} />{M.wood({ base: [90, 60, 36] })}</mesh>
         <mesh position={[0.04, 0.22, 0]}><cylinderGeometry args={[0.006, 0.006, 0.36, 8]} />{M.wood({ base: [80, 56, 32] })}</mesh>
         <mesh position={[0.1, 0.24, 0]}><planeGeometry args={[0.12, 0.22]} /><meshStandardMaterial color="#d8ccb0" side={THREE.DoubleSide} roughness={0.9} /></mesh>
+        {[-1, 1].map((s) => [-0.08, 0.1].map((x, j) => { const r = Math.sin(tt * 2 * PI * 0.6 + j); return <group key={s + "o" + j} position={[x, 0.08, s * 0.1]} rotation={[s * (0.5 + 0.15 * r), 0.5 * r, 0]}><mesh position={[0, 0, s * 0.14]} rotation={[PI / 2, 0, 0]}><cylinderGeometry args={[0.004, 0.004, 0.28, 6]} />{M.wood({ base: [90, 64, 40] })}</mesh><mesh position={[0, 0, s * 0.27]} rotation={[PI / 2, 0, 0]} scale={[1, 1, 0.25]}><boxGeometry args={[0.035, 0.07, 0.035]} />{M.wood({ base: [90, 64, 40] })}</mesh></group>; }))}
         {[-0.16, -0.03, 0.14].map((x, i) => <group key={i} position={[x, 0.0, 0]}><Stickman escala={0.06} rotY={90} guion={[{ t: 0, accion: "sentarse", expr: "decidido" }] as any} semilla={190 + i} contacto={0} color="#4a3e30" /></group>)}
       </group>
       {[[-0.9, 0.55], [-0.4, 0.75], [0.15, 0.6], [0.6, 0.8], [1.1, 0.5]].map(([x, h], i) => <group key={i} position={[x, lerp(-0.85, -0.02, mt), -1.8]}>
@@ -483,7 +511,7 @@ const SieteObjetos: React.FC<UP> = ({ d, p }) => {
     : i === 5 ? <mesh position={[0, 0.035, 0]} scale={[1.2, 0.9, 1]}><dodecahedronGeometry args={[0.035, 1]} /><meshPhysicalMaterial color="#d8902a" roughness={0.25} clearcoat={1} /></mesh>
     : <group><mesh position={[0, 0.05, 0]} geometry={latheG("botella_e", [[0, 0], [0.03, 0], [0.032, 0.06], [0.012, 0.085], [0.01, 0.1], [0, 0.1]], 20)}>{M.glass({ op: 0.5, col: "#c8a050" })}</mesh></group>;
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="wipe" key1={[-0.8, 2.6, 2.0]}
-    cam={{ at: [0, 0.3, 0], az: [-0.12, 0.08], el: [0.1, 0.08], r: [1.45, 1.3], fov: 34 }}>{(tt) => <>
+    cam={{ at: [0, 0.3, 0], az: [-0.12, 0.08], el: [0.1, 0.08], r: [1.75, 1.6], fov: 34 }}>{(tt) => <>
     <RBox s={[1.6, 0.03, 0.22]} r={0.006} p={[0, 0.24, 0]}>{M.wood({ base: [110, 72, 40], rx: 4 })}</RBox>
     <RBox s={[1.6, 0.5, 0.03]} r={0.006} p={[0, 0.45, -0.12]}>{M.wood({ base: [80, 52, 30], rx: 4 })}</RBox>
     {at.map((a, i) => { const x = -0.66 + i * 0.22; return <group key={i} position={[x, 0.255 + fallY(tt, a, 0.5), 0]} visible={tt > a - 0.3}><group scale={1.4}><Ob i={i} /></group><Sh p={[0, 0, 0]} r={0.05} />
@@ -496,12 +524,12 @@ const SieteObjetos: React.FC<UP> = ({ d, p }) => {
 const AntesAhora: React.FC<UP> = ({ d, p }) => {
   const at = ["cultivan", "planta", "protegidas", "reemplazo"].map((k, i) => sec(p, k, 0.5 + i * 0.9));
   return <U3 d={d} bg={p.bg} ground={null} floor="wood" mode="iris" key1={[-0.8, 2.4, 1.6]}
-    cam={{ at: [0, 0.15, 0], az: [-0.12, 0.06], el: [0.2, 0.16], r: [1.35, 1.2], fov: 34 }}>{(tt) => {
+    cam={{ at: [0, 0.2, 0], az: [-0.12, 0.06], el: [0.18, 0.14], r: [1.55, 1.4], fov: 34 }}>{(tt) => {
     const k = at.map((a) => eio(tt, a, a + 0.6));
     return <>
-      {[0, 1, 2, 3].map((i) => <group key={i} position={[-0.54 + i * 0.36, 0, 0]}>
+      {[0, 1, 2, 3].map((i) => <group key={i} position={[-0.6 + i * 0.4, 0, 0]} scale={1.15}>
         <mesh position={[0, 0.03, 0]}><cylinderGeometry args={[0.13, 0.14, 0.06, 32]} /><meshStandardMaterial map={dirtT([150, 142, 128])} roughness={0.95} /></mesh><Sh p={[0, 0, 0]} r={0.16} />
-        <group position={[0, 0.06, 0]}>
+        <group position={[0, 0.06, 0]} scale={1.5}>
           <group scale={sm(1 - k[i])}>{i === 0 ? <mesh scale={[1, 0.4, 0.9]}><sphereGeometry args={[0.07, 18, 10]} /><meshStandardMaterial color="#8a8478" roughness={0.9} /></mesh>
             : i === 1 ? <Arbol h={0.2} col="#2a5a2a" /> : i === 2 ? <group rotation={[0, 0, 0.5]}><mesh position={[0, 0.1, 0]}><cylinderGeometry args={[0.006, 0.006, 0.2, 8]} />{M.steel()}</mesh><mesh position={[0, 0.21, 0]}><coneGeometry args={[0.015, 0.04, 8]} />{M.steel()}</mesh></group>
             : <mesh position={[0, 0.03, 0]} scale={[1.2, 0.9, 1]}><dodecahedronGeometry args={[0.04, 1]} /><meshPhysicalMaterial color="#d8902a" roughness={0.25} clearcoat={1} /></mesh>}</group>
