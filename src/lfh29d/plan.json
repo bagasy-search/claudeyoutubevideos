@@ -1,0 +1,759 @@
+{
+"segs": [
+[
+4.32,
+7.96,
+"shot",
+"f02_lata_pan_rallado"
+],
+[
+7.96,
+11.96,
+"shot",
+"f03_carton_buttermilk"
+],
+[
+15.48,
+16.85,
+"shot",
+"f04_gondola_azucar"
+],
+[
+21.3,
+25.3,
+"shot",
+"f06_caja_registradora"
+],
+[
+30.74,
+33.06,
+"shot",
+"f07_alacena_frascos"
+],
+[
+39.54,
+45.54,
+"shot",
+"f09_estante_harina"
+],
+[
+54.91,
+58.86,
+"shot",
+"f10_pan_casero_mesa"
+],
+[
+58.86,
+64.86,
+"shot",
+"f11_bolsa_harina_tela"
+],
+[
+90.58,
+94.9,
+"shot",
+"v01"
+],
+[
+94.9,
+98.16,
+"shot",
+"f12_talones_pan"
+],
+[
+111.18,
+114.78,
+"shot",
+"v02"
+],
+[
+120.23,
+122.46,
+"shot",
+"f13_horno_enfriando"
+],
+[
+122.46,
+127.46,
+"shot",
+"f14_pan_seco_bandeja"
+],
+[
+136.08,
+137.98,
+"shot",
+"f15_frasco_pan_rallado"
+],
+[
+137.98,
+142.42,
+"shot",
+"f16_chuletas_empanadas"
+],
+[
+142.42,
+147.42,
+"shot",
+"f17_pastel_carne"
+],
+[
+152.34,
+156.78,
+"shot",
+"f18_miga_seca"
+],
+[
+156.78,
+162.78,
+"shot",
+"f19_mantequera"
+],
+[
+163.56,
+165.25,
+"shot",
+"f20_casa_pueblo"
+],
+[
+174.0,
+180.22,
+"shot",
+"v03"
+],
+[
+188.86,
+193.86,
+"shot",
+"f21_buttermilk_cuajado"
+],
+[
+194.24,
+198.0,
+"shot",
+"f22_panqueques_pila"
+],
+[
+210.22,
+214.14,
+"shot",
+"f23_pollo_domingo"
+],
+[
+214.14,
+216.09,
+"shot",
+"f24_olla_huesos"
+],
+[
+234.04,
+240.04,
+"shot",
+"f25_laurel_pimienta"
+],
+[
+257.08,
+263.08,
+"shot",
+"v04"
+],
+[
+268.73,
+272.2,
+"shot",
+"f26_caldo_molde_muffin"
+],
+[
+272.2,
+277.2,
+"shot",
+"f27_caldo_caja"
+],
+[
+284.9,
+288.9,
+"shot",
+"f28_azucar_morena"
+],
+[
+290.22,
+295.71,
+"shot",
+"v05"
+],
+[
+321.56,
+327.56,
+"shot",
+"f29_azucar_pan_bolsa"
+],
+[
+334.41,
+339.41,
+"shot",
+"f30_torta_cumple"
+],
+[
+339.44,
+344.44,
+"shot",
+"f31_mortero"
+],
+[
+356.82,
+361.98,
+"shot",
+"f32_licuadora_polvo"
+],
+[
+366.26,
+372.26,
+"shot",
+"f33_frascos_mesa"
+],
+[
+409.7,
+412.51,
+"shot",
+"f34_galletas_planas"
+],
+[
+434.04,
+440.04,
+"shot",
+"f36_bolsa_harina_leudante"
+],
+[
+455.48,
+461.48,
+"shot",
+"f37_tazon_harina"
+],
+[
+467.58,
+473.08,
+"shot",
+"v06"
+],
+[
+473.08,
+479.08,
+"shot",
+"f39_ingredientes_mezcla"
+],
+[
+491.46,
+494.35,
+"shot",
+"f40_vasija_mezcla"
+],
+[
+502.3,
+508.3,
+"shot",
+"f41_masa_bizcochos"
+],
+[
+519.16,
+524.16,
+"shot",
+"f43_panqueques_sarten"
+],
+[
+531.97,
+535.78,
+"shot",
+"f44_padre_panqueques"
+],
+[
+535.78,
+541.78,
+"shot",
+"f45_lata_arce"
+],
+[
+568.16,
+574.16,
+"shot",
+"f46_vainilla_olla"
+],
+[
+585.32,
+588.52,
+"shot",
+"f47_jarabe_panqueques"
+],
+[
+588.52,
+594.52,
+"shot",
+"f48_cazuela_iglesia"
+],
+[
+596.2,
+599.08,
+"shot",
+"f49_latas_sopa"
+],
+[
+622.58,
+630.1,
+"shot",
+"v07"
+],
+[
+630.1,
+632.57,
+"shot",
+"f50_hongos_manteca"
+],
+[
+658.2,
+659.5,
+"shot",
+"f51_frascos_condimento"
+],
+[
+659.5,
+665.5,
+"shot",
+"f52_hierbas_puerta"
+],
+[
+674.3,
+679.3,
+"shot",
+"f53_hojas_salvia_bol"
+],
+[
+683.3,
+687.31,
+"shot",
+"f54_relleno_pavo"
+],
+[
+699.09,
+703.4,
+"shot",
+"f55_sal_condimentada"
+],
+[
+709.55,
+715.55,
+"shot",
+"f56_frasco_aderezo"
+],
+[
+747.8,
+755.8,
+"shot",
+"v08"
+],
+[
+760.42,
+762.87,
+"shot",
+"f57_fudge_pie"
+],
+[
+762.87,
+768.87,
+"shot",
+"f58_olla_leche"
+],
+[
+778.97,
+784.97,
+"shot",
+"f59_leche_condensada"
+],
+[
+794.09,
+799.09,
+"shot",
+"f60_cuchara_olla"
+],
+[
+801.54,
+804.14,
+"shot",
+"f61_libreta_1957"
+],
+[
+859.0,
+864.0,
+"shot",
+"f62_ingredientes_baratos"
+],
+[
+877.11,
+881.45,
+"shot",
+"f63_manos_harina"
+],
+[
+881.45,
+886.45,
+"shot",
+"f64_madre_anciana"
+],
+[
+891.83,
+897.09,
+"shot",
+"f65_cocina_invierno"
+],
+[
+897.09,
+902.09,
+"shot",
+"f66_alacena_cajas"
+],
+[
+910.0,
+916.0,
+"shot",
+"f67_bizcochos_bandeja"
+],
+[
+926.89,
+932.89,
+"shot",
+"f68_lista_compras"
+],
+[
+964.62,
+969.62,
+"shot",
+"f70_vasija_harina"
+],
+[
+994.88,
+999.88,
+"shot",
+"f71_etiquetas_frascos"
+],
+[
+1012.97,
+1017.97,
+"shot",
+"f72_pozo_granja"
+],
+[
+1032.71,
+1037.71,
+"shot",
+"f73_conservas_estante"
+],
+[
+1075.3,
+1081.3,
+"shot",
+"f74_granja_louisiana"
+],
+[
+1096.97,
+1101.97,
+"shot",
+"f75_hogazas_mesa"
+],
+[
+1110.04,
+1114.23,
+"shot",
+"f77_ordene_granero"
+],
+[
+1114.23,
+1120.23,
+"shot",
+"f78_receta_tarjeta"
+],
+[
+1134.75,
+1138.67,
+"shot",
+"f79_bol_ceramica"
+],
+[
+1143.11,
+1148.11,
+"shot",
+"f80_papas_hervidas"
+],
+[
+1158.75,
+1163.75,
+"shot",
+"f81_cuchara_masa"
+],
+[
+1174.37,
+1180.37,
+"shot",
+"f82_masa_suave"
+],
+[
+1190.68,
+1196.68,
+"shot",
+"f83_cuatro_bollos"
+],
+[
+1206.78,
+1208.87,
+"shot",
+"v09"
+],
+[
+1208.87,
+1213.87,
+"shot",
+"f84_cuatro_hogazas"
+],
+[
+1215.77,
+1219.99,
+"shot",
+"f85_pan_super"
+],
+[
+1240.51,
+1246.51,
+"shot",
+"f86_familia_cocina"
+],
+[
+1309.17,
+1314.17,
+"shot",
+"f87_alacena_llena"
+],
+[
+1334.37,
+1342.37,
+"shot",
+"v10"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 75.48,
+"out": 79.48
+},
+{
+"k": "step",
+"n": 1,
+"name": "BREADCRUMBS",
+"at": 92.6,
+"out": 95.8
+},
+{
+"k": "step",
+"n": 2,
+"name": "BUTTERMILK",
+"at": 154.94,
+"out": 158.14
+},
+{
+"k": "step",
+"n": 3,
+"name": "CHICKEN BROTH",
+"at": 207.84,
+"out": 211.04
+},
+{
+"k": "step",
+"n": 4,
+"name": "BROWN SUGAR",
+"at": 279.52,
+"out": 282.72
+},
+{
+"k": "step",
+"n": 5,
+"name": "POWDERED SUGAR",
+"at": 328.34,
+"out": 331.54
+},
+{
+"k": "deal",
+"at": 366.26,
+"out": 367.26
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Rushing the buttermilk",
+"at": 375.16,
+"out": 377.36
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Dead baking powder",
+"at": 380.38,
+"out": 382.58
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "A hard boil",
+"at": 398.46,
+"out": 400.66
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Too much molasses",
+"at": 402.26,
+"out": 404.46
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Unlabeled jars",
+"at": 411.6,
+"out": 413.8
+},
+{
+"k": "step",
+"n": 6,
+"name": "SELF-RISING FLOUR",
+"at": 420.78,
+"out": 423.98
+},
+{
+"k": "step",
+"n": 7,
+"name": "BISCUIT MIX",
+"at": 460.28,
+"out": 463.48
+},
+{
+"k": "step",
+"n": 8,
+"name": "PANCAKE SYRUP",
+"at": 526.9,
+"out": 530.1
+},
+{
+"k": "step",
+"n": 9,
+"name": "CREAM SOUP",
+"at": 585.6,
+"out": 588.8
+},
+{
+"k": "step",
+"n": 10,
+"name": "SEASONINGS",
+"at": 648.9,
+"out": 652.1
+},
+{
+"k": "step",
+"n": 11,
+"name": "SALAD DRESSING",
+"at": 702.47,
+"out": 705.67
+},
+{
+"k": "step",
+"n": 12,
+"name": "CONDENSED MILK",
+"at": 753.3,
+"out": 756.5
+},
+{
+"k": "step",
+"n": 13,
+"name": "THE SATURDAY BREAD",
+"at": 1093.47,
+"out": 1096.67
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1246.97
+},
+{
+"at": 1251.79
+},
+{
+"at": 1257.59
+},
+{
+"at": 1262.81
+},
+{
+"at": 1267.19
+},
+{
+"at": 1272.61
+},
+{
+"at": 1280.69
+},
+{
+"at": 1284.87
+},
+{
+"at": 1290.53
+},
+{
+"at": 1294.65
+},
+{
+"at": 1297.19
+},
+{
+"at": 1302.87
+},
+{
+"at": 1307.51
+}
+],
+"at": 1244.23,
+"out": 1309.51
+},
+{
+"k": "ask",
+"at": 1330.59,
+"out": 1338.59
+}
+],
+"end": 1344.09,
+"txt": {
+"recapTitle": "THE FARM PANTRY · 13 THINGS",
+"recap": [
+"Breadcrumbs: dried heels",
+"Buttermilk: 1 tbsp vinegar, 10 min",
+"Broth: bones + peels, gentle",
+"Brown sugar: 1 tbsp molasses",
+"Powdered: sugar + cornstarch",
+"Self-rising: 1½ tsp powder",
+"Biscuit mix: in a crock",
+"Syrup: 1 + 1 + 1",
+"Cream soup: butter, flour, milk",
+"Seasonings: from the garden",
+"Dressing: 3 oil, 1 vinegar",
+"Condensed: cook it down",
+"The Saturday bread"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"What did your mother",
+"make at home?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+62.98,
+70.98
+]
+}
+}
