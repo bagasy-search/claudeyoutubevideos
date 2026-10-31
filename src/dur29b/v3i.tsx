@@ -119,7 +119,7 @@ const ConElSobreEl: React.FC<UP> = ({ d, p }) => {
 const CercaEstacas: React.FC<UP> = ({ d, p }) => {
   const aE = sec(p, "estaca", 0.5), aC = sec(p, "caballos", 2.6), D = d / 30, sp = Math.max(0.08, (D - aE - 0.9) / 15);
   return <U3 d={d} bg={p.bg} ground={[132, 104, 72]} mode="iris" key1={[-1.2, 2.4, 1.6]} backDim={0.35}
-    cam={{ at: [0.0, 0.16, -0.1], az: [-0.7, -0.45], el: [0.24, 0.2], r: [1.55, 1.35], fov: 34 }}>{(tt) => {
+    cam={{ at: [0.05, 0.22, -0.1], az: [-0.7, -0.45], el: [0.22, 0.18], r: [1.7, 1.6], fov: 34 }}>{(tt) => {
     const run = eio(tt, aC, Math.min(D - 0.4, aC + 1.6)), rear = Math.sin(PI * eio(tt, aC + 1.3, aC + 2.2));
     return <>
       {Array.from({ length: 15 }, (_, i) => { const row = Math.floor(i / 5), x = -0.1 + row * 0.12, z = -0.4 + (i % 5) * 0.2 + row * 0.07, a = aE + i * sp;
