@@ -1,0 +1,278 @@
+[
+{
+"k": "cell4",
+"at": 27.74,
+"out": 33.74,
+"said": 27.74,
+"sp": 1.333,
+"ph": "n_cuatro_catres",
+"solo": true,
+"kw": "4 PRESIDENTES",
+"kw2": "en la misma cárcel"
+},
+{
+"k": "firewater",
+"at": 63.04,
+"out": 67.54,
+"said": 63.04,
+"sp": 1.556,
+"ph": "n_neumaticos_humo",
+"solo": true,
+"kw": "EN LLAMAS",
+"kw2": "la política"
+},
+{
+"k": "odometer",
+"at": 166.9,
+"out": 171.4,
+"said": 167.4,
+"sp": 1.778
+},
+{
+"k": "padlock",
+"at": 219.2,
+"out": 223.7,
+"said": 221.8,
+"sp": 1.556,
+"ph": "n_tanque_plaza",
+"solo": true,
+"kw": "AUTOGOLPE",
+"kw2": "tanques en el Congreso"
+},
+{
+"k": "vhs",
+"at": 245.78,
+"out": 253.78,
+"said": 245.78,
+"ph": "n_fajo_mano",
+"solo": true,
+"kw": "EN CÁMARA",
+"kw2": "un fajo para cambiar de bando"
+},
+{
+"k": "chain",
+"at": 299.82,
+"out": 304.32,
+"said": 300.82,
+"sp": 1.556,
+"ph": "n_martillo_juez_peru",
+"solo": true,
+"kw": "25 AÑOS",
+"kw2": "Barrios Altos y La Cantuta"
+},
+{
+"k": "secretroom",
+"at": 378.147,
+"out": 386.15,
+"said": 378.15,
+"ph": "n_oficina_cubiculos",
+"solo": true,
+"kw": "SOBORNOS",
+"kw2": "un área entera para pagarlos"
+},
+{
+"k": "highlighter",
+"at": 427.167,
+"out": 435.17,
+"said": 427.17,
+"ph": "n_hoja_excel_impresa",
+"solo": true,
+"kw": "LA PLANILLA"
+},
+{
+"k": "plaza",
+"at": 497.347,
+"out": 504.35,
+"said": 497.35,
+"ph": "n_plaza_llena",
+"solo": true,
+"kw": "LLENABA PLAZAS"
+},
+{
+"k": "crackchair",
+"at": 541.847,
+"out": 550.85,
+"said": 541.85,
+"ph": "n_cinco_bandas",
+"solo": true,
+"kw": "5 ERRORES"
+},
+{
+"k": "votetrade",
+"at": 647.947,
+"out": 653.95,
+"said": 647.95,
+"sp": 1.167,
+"ph": "n_carta_renuncia",
+"solo": true,
+"kw": "OBRAS POR VOTOS"
+},
+{
+"k": "crowdwave",
+"at": 697.97,
+"out": 702.47,
+"said": 698.47,
+"sp": 1.556,
+"ph": "n_marcha_noche",
+"solo": true,
+"kw": "PROTESTAS",
+"kw2": "dos jóvenes muertos"
+},
+{
+"k": "rolodex",
+"at": 765.21,
+"out": 769.71,
+"said": 767.51,
+"sp": 1.556,
+"ph": "n_sillas_rotan",
+"solo": true,
+"kw": "MINISTROS",
+"kw2": "cada pocas semanas"
+},
+{
+"k": "nameplates",
+"at": 803.434,
+"out": 810.43,
+"said": 803.43,
+"ph": "n_celulares_mesa",
+"solo": true,
+"kw": "RENUNCIAN",
+"kw2": "en vivo"
+},
+{
+"k": "balloon",
+"at": 875.854,
+"out": 881.35,
+"said": 875.85,
+"sp": 1.455,
+"ph": "n_grafico_sube",
+"solo": true,
+"kw": "+5 %",
+"kw2": "por año"
+},
+{
+"k": "spincoin",
+"at": 894.074,
+"out": 901.07,
+"said": 894.07,
+"ph": "n_sol_moneda",
+"solo": true,
+"kw": "EL SOL",
+"kw2": "estable"
+},
+{
+"k": "copperspool",
+"at": 937.754,
+"out": 945.75,
+"said": 937.75,
+"ph": "n_mina_cobre_andes",
+"solo": true,
+"kw": "COBRE",
+"kw2": "oro, plata, zinc"
+},
+{
+"k": "revolvingdoor",
+"at": 971.774,
+"out": 979.77,
+"said": 971.77,
+"ph": "n_cinco_decretos",
+"solo": true,
+"kw": "LO VOLVIÓ A NOMBRAR",
+"kw2": "cinco presidentes"
+},
+{
+"k": "cistern",
+"at": 1006.214,
+"out": 1013.21,
+"said": 1006.21,
+"ph": "n_frasco_monedas",
+"solo": true,
+"kw": "GUARDÓ",
+"kw2": "en los años buenos"
+},
+{
+"k": "zeros",
+"at": 1058.314,
+"out": 1065.31,
+"said": 1058.31,
+"ph": "n_inti_millones",
+"solo": true,
+"kw": "MILLONES DE INTIS",
+"kw2": "y no alcanzaba"
+},
+{
+"k": "timecards",
+"at": 1109.301,
+"out": 1116.8,
+"said": 1109.3,
+"sp": 1.067,
+"ph": "n_vendedor_ambulante",
+"solo": true,
+"kw": "7 DE CADA 10",
+"kw2": "trabajan en negro"
+},
+{
+"k": "dossier",
+"at": 1162.56,
+"out": 1167.06,
+"said": 1166.36,
+"sp": 1.333,
+"ph": "n_carpeta_investigacion",
+"solo": true,
+"kw": "COLABORADOR EFICAZ",
+"kw2": "lo contó todo a la fiscalía"
+},
+{
+"k": "sandwich",
+"at": 1239.321,
+"out": 1244.82,
+"said": 1239.32,
+"sp": 1.273,
+"ph": "n_pan_chicharron",
+"solo": true,
+"kw": "PAN CON CHICHARRÓN",
+"kw2": "el domingo"
+},
+{
+"k": "signswap",
+"at": 1320.441,
+"out": 1325.94,
+"said": 1320.44,
+"sp": 1.273,
+"ph": "n_grua_trabajando",
+"solo": true,
+"kw": "NOVONOR",
+"kw2": "nombre nuevo"
+},
+{
+"k": "lineup",
+"at": 1370.221,
+"out": 1377.22,
+"said": 1370.22,
+"ph": "n_puerta_celda",
+"solo": true,
+"kw": "14 · 15 AÑOS",
+"kw2": "Vizcarra · Humala"
+},
+{
+"k": "sash",
+"at": 1384.181,
+"out": 1391.18,
+"said": 1384.18,
+"ph": "n_siete_sillas",
+"solo": true,
+"kw": "7 PRESIDENTES",
+"kw2": "en 9 años"
+},
+{
+"k": "glassdome",
+"at": 1408.32,
+"out": 1412.82,
+"said": 1410.52,
+"sp": 1.556,
+"ph": "n_vitrina_cerrada",
+"solo": true,
+"kw": "LA MONEDA",
+"kw2": "nadie le metió la mano"
+}
+]
