@@ -413,9 +413,9 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
   // empujón de cámara en cada llegada: sube y baja en curva (seno amortiguado), nunca lineal
   let push = 0; for (let i = 0; i < N; i++) { const x = t - (cards[i].at - 0.25); if (x > 0) push += Math.sin(Math.min(x, 1.6) / 1.6 * Math.PI) * Math.exp(-x * 0.6); }
   const camZ = -520 * (1 - inn) + 40 * push + 52 * Math.sin((t - at) * 0.29) - 900 * xo;
-  const camRY = 16 * (1 - inn) + 7 * Math.sin((t - at) * 0.23 + 0.6) - 10 * xo;
+  const camRY = 16 * (1 - inn) + 11 * Math.sin((t - at) * 0.37 + 0.6) - 10 * xo;
   const camRX = 6 + 1.6 * Math.sin((t - at) * 0.13) + 8 * xo;
-  const camY = 10 * Math.sin((t - at) * 0.11 + 1.2);
+  const camY = 22 * Math.sin((t - at) * 0.31 + 1.2);
   const R = iris * 1500;
   const mask = `radial-gradient(circle at 50% 52%, #000 ${R}px, transparent ${R + 520}px)`;
   const hdr = cl(phys(t, at + 0.35, 6, 0.7)) * (1 - eIn(t, out - 0.4, out + 0.4));
@@ -452,7 +452,7 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
             WebkitBoxReflect: "below 14px linear-gradient(transparent 74%, rgba(255,255,255,.2))" } as React.CSSProperties}>
             <div style={{ position: "relative", width: "100%", height: "100%", borderRadius: 24, overflow: "hidden", background: "#16171a",
               boxShadow: `0 ${40 + Math.abs(land) * 60}px ${90 + Math.abs(land) * 80}px rgba(0,0,0,${0.6 - Math.min(0.3, Math.abs(land) * 0.3)}), 0 0 0 ${2 + 2 * front}px ${front > 0.5 ? c : "rgba(255,255,255,.12)"}` }}>
-              {cd.img && <Img src={staticFile("img/" + P + cd.img + ".jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.06 + 0.13 * ei(t, ent, ent + zd)}) translateX(${-14 * ei(t, ent, ent + zd)}px)` }} />}
+              {cd.img && <Img src={staticFile("img/" + P + cd.img + ".jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.06 + 0.22 * ei(t, ent, ent + zd)}) translateX(${-46 * ei(t, ent, ent + zd)}px) translateY(${-18 * ei(t, ent, ent + zd)}px)` }} />}
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(0,0,0,.35) 0%, transparent 28%, transparent 46%, rgba(0,0,0,.92) 100%)" }} />
               <div style={{ position: "absolute", inset: 0, background: "#000", opacity: Math.min(1, ad) * 0.5 }} />
               <div style={{ position: "absolute", left: 26, top: 22, fontWeight: 800, fontSize: 104, lineHeight: 1, color: c, textShadow: "0 6px 24px rgba(0,0,0,.6)" }}>{cd.n}</div>
