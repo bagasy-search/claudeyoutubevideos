@@ -72,7 +72,7 @@ const Board: React.FC<{ p?: V; w?: number; d?: number; c?: string }> = ({ p = [0
 
 // 0:05 · LA BOLSA DEL SÁBADO: las fetas salen de la bolsa en abanico, una por una; en la tercera crece un círculo gris verdoso
 export const D_bag: F = ({ t, h }) => {
-  return <Hero t={t} h={h} mode="drop" cam={(tt) => orbita(tt, C([0.2, 0.42, 0.9], [0.18, 0.16, 0.05]), C([0.34, 0.4, 0.84], [0.18, 0.16, 0.05]), 10)}
+  return <Hero t={t} h={h} mode="drop" cam={(tt) => orbita(tt, C([0.2, 0.42, 0.9], [0.18, 0.16, 0.05]), C([0.33, 0.405, 0.845], [0.18, 0.165, 0.05]), 10)}
     set={{ spot: [0.1, 0.2, 0] as V, spotK: 0.35, warm: 0.5 }}
     scene={(tt) => { const o = eio(tt, 0.3, 1.0);
       return <>
