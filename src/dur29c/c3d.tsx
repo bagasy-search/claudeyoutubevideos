@@ -99,7 +99,7 @@ const CuchilloFilo: React.FC<UP> = ({ d, p }) => {
       </group>
       <group position={[0.05, 0.05, -0.16]} visible={tt < aT}><RBox s={[0.32, 0.05, 0.09]} r={0.01} p={[0, 0, 0]}><meshStandardMaterial color="#2e3036" roughness={0.95} /></RBox>
         {Array.from({ length: 22 }, (_, i) => { const u = (tt * 2.1 + i / 22) % 1; return <mesh key={i} position={[sx * 1.2 + 0.05 + (rn(i, 1) - 0.5) * 0.05 + 0.16 * u * (rn(i, 3) - 0.2), 0.04 + 0.14 * u - 0.13 * u * u, 0.05 + 0.12 * u]} scale={sm((1 - u) * push)}><sphereGeometry args={[0.01, 6, 6]} />{M.glow({ col: "#ffd070" })}</mesh>; })}</group>
-      <group position={[lerp(0.32, 0.42, back), 0.06, 0.1]} rotation={[0, -0.4, 0]}>
+      <group position={[lerp(0.3, 0.35, back), 0.06, 0.06]} rotation={[0, -0.4, 0]}>
         <RBox s={[0.13, 0.05, 0.1]} r={0.025} p={[0, 0, 0]}><meshStandardMaterial color="#c8906a" roughness={0.7} /></RBox>
         {[0, 1, 2, 3].map((i) => <RBox key={i} s={[0.07, 0.03, 0.022]} r={0.01} p={[-0.09, 0.0, -0.036 + i * 0.024]}><meshStandardMaterial color="#c8906a" roughness={0.7} /></RBox>)}
         <mesh position={[-0.02, 0.0262, 0]} rotation={[-PI / 2, 0, 0.6]} scale={[sm(cut), 1, 1]}><planeGeometry args={[0.09, 0.008]} /><meshBasicMaterial color="#b81a1a" /></mesh>
