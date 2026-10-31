@@ -1,0 +1,1619 @@
+{
+"segs": [
+[
+3.5,
+7.78,
+"shot",
+"n_sol_bajo_casa"
+],
+[
+7.78,
+13.18,
+"shot",
+"n_manguera_enrollada"
+],
+[
+13.18,
+15.2,
+"shot",
+"n_chinches_revestimiento"
+],
+[
+21.0,
+26.56,
+"shot",
+"n_chinches_esquina_marco"
+],
+[
+26.56,
+29.06,
+"shot",
+"n_chinche_pantalla"
+],
+[
+29.06,
+30.8,
+"shot",
+"n_chinche_azulejo"
+],
+[
+37.025,
+45.82,
+"shot",
+"n_living_walt_limpio"
+],
+[
+45.82,
+48.5,
+"shot",
+"n_calendario_octubre"
+],
+[
+48.5,
+50.385,
+"shot",
+"n_bolsa_ferreteria"
+],
+[
+54.5,
+65.06,
+"shot",
+"n_pared_oeste"
+],
+[
+65.06,
+67.0,
+"shot",
+"n_mano_aplasta_chinche"
+],
+[
+73.3,
+81.32,
+"shot",
+"n_hueco_alero"
+],
+[
+81.32,
+82.8,
+"shot",
+"n_mira_arriba_alero"
+],
+[
+88.9,
+95.94,
+"shot",
+"n_banco_garaje_c"
+],
+[
+95.94,
+99.8,
+"shot",
+"n_cartas_preguntas"
+],
+[
+105.932,
+112.48,
+"shot",
+"n_cajon_madera_puerto"
+],
+[
+112.48,
+116.6,
+"shot",
+"n_mapa_costa_este"
+],
+[
+121.719,
+130.2,
+"shot",
+"n_racimo_chinches"
+],
+[
+130.2,
+133.28,
+"shot",
+"n_chinche_macro"
+],
+[
+133.28,
+135.2,
+"shot",
+"n_marmol_piedra"
+],
+[
+138.9,
+146.26,
+"shot",
+"n_pueblo_pensilvania"
+],
+[
+146.26,
+150.18,
+"shot",
+"n_material_embalaje"
+],
+[
+150.18,
+152.191,
+"shot",
+"n_campo_maizal"
+],
+[
+157.3,
+160.96,
+"shot",
+"n_arce_otono"
+],
+[
+160.96,
+164.64,
+"shot",
+"n_atardecer_temprano"
+],
+[
+164.64,
+167.4,
+"shot",
+"n_chinche_corteza"
+],
+[
+172.2,
+174.9,
+"shot",
+"n_arbol_muerto"
+],
+[
+174.9,
+180.86,
+"shot",
+"n_grieta_roca"
+],
+[
+180.86,
+184.795,
+"shot",
+"n_casa_desde_jardin"
+],
+[
+190.3,
+195.14,
+"shot",
+"n_chinche_sola_marco"
+],
+[
+195.14,
+198.14,
+"shot",
+"n_chinches_llegan"
+],
+[
+198.14,
+202.1,
+"shot",
+"n_esquina_ventana_cocina"
+],
+[
+208.0,
+214.36,
+"shot",
+"n_cincuenta_chinches"
+],
+[
+214.36,
+217.5,
+"shot",
+"n_marco_vacio_mancha"
+],
+[
+221.007,
+227.2,
+"shot",
+"n_ventana_misma"
+],
+[
+227.2,
+232.08,
+"shot",
+"n_huerto_manzanas"
+],
+[
+232.08,
+234.052,
+"shot",
+"n_foto_colegas"
+],
+[
+239.5,
+245.36,
+"shot",
+"n_telefono_pared"
+],
+[
+245.36,
+247.94,
+"shot",
+"n_granero_lado_oeste"
+],
+[
+247.94,
+251.1,
+"shot",
+"n_tablas_granero_chinches"
+],
+[
+255.4,
+260.82,
+"shot",
+"n_recogedor_lleno"
+],
+[
+260.82,
+265.44,
+"shot",
+"n_granero_sombra"
+],
+[
+265.44,
+267.1,
+"shot",
+"n_cuaderno_granero"
+],
+[
+270.703,
+278.84,
+"shot",
+"n_casa_cuatro_lados"
+],
+[
+278.84,
+283.254,
+"shot",
+"n_cuaderno_no"
+],
+[
+286.907,
+294.06,
+"shot",
+"n_chinche_patas_arriba"
+],
+[
+294.06,
+297.767,
+"shot",
+"n_cilantro_tabla"
+],
+[
+302.507,
+308.44,
+"shot",
+"n_varias_ventana"
+],
+[
+308.44,
+310.6,
+"shot",
+"n_campana_cena"
+],
+[
+310.6,
+315.867,
+"shot",
+"n_aspiradora_casa"
+],
+[
+320.61,
+326.78,
+"shot",
+"n_aspiradora_rejilla"
+],
+[
+326.78,
+330.02,
+"shot",
+"n_rociador_pared"
+],
+[
+330.02,
+332.47,
+"shot",
+"n_chinches_muertas_suelo"
+],
+[
+338.21,
+345.67,
+"shot",
+"n_vista_barrio_arboles"
+],
+[
+345.67,
+347.69,
+"shot",
+"n_bicicleta_pared"
+],
+[
+347.69,
+349.7,
+"shot",
+"n_herramientas_banco"
+],
+[
+355.1,
+361.39,
+"shot",
+"n_sabado_manana"
+],
+[
+361.39,
+365.79,
+"shot",
+"n_reloj_cuatro"
+],
+[
+365.79,
+368.9,
+"shot",
+"v01_chinches_ventana"
+],
+[
+373.146,
+375.79,
+"shot",
+"n_mano_pared_tibia"
+],
+[
+375.79,
+380.13,
+"shot",
+"n_termometro_pared"
+],
+[
+380.13,
+383.9,
+"shot",
+"n_pared_soleada_chinches"
+],
+[
+387.6,
+389.51,
+"shot",
+"n_chinche_entra_rendija"
+],
+[
+389.51,
+394.33,
+"shot",
+"n_libreta_lista_casa"
+],
+[
+394.33,
+400.1,
+"shot",
+"n_tubo_pared"
+],
+[
+404.516,
+409.29,
+"shot",
+"v08_silicona_ventana"
+],
+[
+409.29,
+415.45,
+"shot",
+"n_puerta_trasera_c"
+],
+[
+415.45,
+417.085,
+"shot",
+"n_billete_puerta"
+],
+[
+422.2,
+425.73,
+"shot",
+"n_luz_bajo_puerta"
+],
+[
+425.73,
+429.89,
+"shot",
+"n_billetes_apilados"
+],
+[
+429.89,
+432.7,
+"shot",
+"n_chinche_bajo_puerta"
+],
+[
+436.837,
+440.61,
+"shot",
+"n_burlete_nuevo"
+],
+[
+440.61,
+445.37,
+"shot",
+"v05_burlete_puerta"
+],
+[
+445.37,
+448.597,
+"shot",
+"n_burlete_lateral"
+],
+[
+453.2,
+461.19,
+"shot",
+"n_puerta_garaje_casa"
+],
+[
+461.19,
+463.51,
+"shot",
+"n_porton_abierto"
+],
+[
+463.51,
+465.664,
+"shot",
+"n_chinche_umbral_garaje"
+],
+[
+471.309,
+477.97,
+"shot",
+"n_mosquitero_roto"
+],
+[
+477.97,
+481.3,
+"shot",
+"n_agujero_mosquitero"
+],
+[
+485.106,
+488.43,
+"shot",
+"n_parche_mosquitero"
+],
+[
+488.43,
+492.75,
+"shot",
+"n_parche_puesto"
+],
+[
+492.75,
+498.0,
+"shot",
+"n_cinta_espuma"
+],
+[
+501.7,
+505.51,
+"shot",
+"n_aire_ventana"
+],
+[
+505.51,
+510.69,
+"shot",
+"n_paneles_acordeon"
+],
+[
+510.69,
+513.3,
+"shot",
+"n_chinches_acordeon"
+],
+[
+518.5,
+525.47,
+"shot",
+"n_espuma_alrededor"
+],
+[
+525.47,
+529.5,
+"shot",
+"n_funda_aire"
+],
+[
+532.713,
+538.91,
+"shot",
+"n_cuaderno_revisa"
+],
+[
+538.91,
+543.99,
+"shot",
+"n_canilla_exterior"
+],
+[
+543.99,
+545.2,
+"shot",
+"n_medidor_luz"
+],
+[
+549.8,
+554.87,
+"shot",
+"n_agujero_grande_cable"
+],
+[
+554.87,
+558.37,
+"shot",
+"n_tubo_silicona"
+],
+[
+558.37,
+559.578,
+"shot",
+"n_lata_espuma"
+],
+[
+564.4,
+571.85,
+"shot",
+"n_salida_secarropa"
+],
+[
+571.85,
+575.71,
+"shot",
+"n_chinches_salida"
+],
+[
+575.71,
+577.585,
+"shot",
+"n_tapa_nueva"
+],
+[
+580.8,
+587.23,
+"shot",
+"n_ladrillo_base"
+],
+[
+587.23,
+591.21,
+"shot",
+"n_agujero_ladrillo"
+],
+[
+591.21,
+593.1,
+"shot",
+"n_fila_agujeros"
+],
+[
+598.9,
+603.67,
+"shot",
+"n_chinche_agujero"
+],
+[
+603.67,
+606.93,
+"shot",
+"n_agujero_tapado"
+],
+[
+606.93,
+609.152,
+"shot",
+"n_moho_pared"
+],
+[
+613.4,
+620.73,
+"shot",
+"n_rejilla_ladrillo"
+],
+[
+620.73,
+624.99,
+"shot",
+"n_gota_rejilla"
+],
+[
+624.99,
+626.2,
+"shot",
+"n_virulana_rollo"
+],
+[
+632.1,
+641.33,
+"shot",
+"n_escalera_casa"
+],
+[
+641.33,
+642.069,
+"shot",
+"n_alero_desde_abajo"
+],
+[
+645.824,
+652.75,
+"shot",
+"n_rejilla_alero"
+],
+[
+652.75,
+656.47,
+"shot",
+"n_rejilla_triangular"
+],
+[
+656.47,
+658.084,
+"shot",
+"n_atico_madera"
+],
+[
+663.9,
+668.57,
+"shot",
+"n_rejilla_sin_malla"
+],
+[
+668.57,
+672.97,
+"shot",
+"n_hueco_sofito"
+],
+[
+672.97,
+677.266,
+"shot",
+"n_moldura_suelta"
+],
+[
+682.606,
+687.33,
+"shot",
+"n_aislante_atico"
+],
+[
+687.33,
+693.64,
+"shot",
+"n_chinches_suben"
+],
+[
+693.64,
+694.793,
+"shot",
+"n_chinches_aislante"
+],
+[
+699.533,
+702.8,
+"shot",
+"n_lampara_techo"
+],
+[
+702.8,
+708.71,
+"shot",
+"n_extractor_bano"
+],
+[
+708.71,
+712.893,
+"shot",
+"n_dormitorio_invierno"
+],
+[
+719.2,
+726.02,
+"shot",
+"n_mira_rejilla_escalera"
+],
+[
+726.02,
+731.0,
+"shot",
+"v04_rejilla_mosquitero"
+],
+[
+736.8,
+744.33,
+"shot",
+"n_rejilla_con_malla"
+],
+[
+744.33,
+746.289,
+"shot",
+"n_escalera_sola"
+],
+[
+750.618,
+756.95,
+"shot",
+"n_furgoneta_trabajo"
+],
+[
+756.95,
+758.76,
+"shot",
+"n_chimenea_techo"
+],
+[
+758.76,
+764.199,
+"shot",
+"n_sombrero_chimenea"
+],
+[
+769.8,
+778.52,
+"shot",
+"n_kit_veinte"
+],
+[
+778.52,
+781.4,
+"shot",
+"n_chinche_cortina"
+],
+[
+785.313,
+796.54,
+"shot",
+"n_jabon_frasco"
+],
+[
+796.54,
+797.673,
+"shot",
+"v03_balde_jabon"
+],
+[
+801.4,
+807.73,
+"shot",
+"n_chinche_hunde"
+],
+[
+807.73,
+810.8,
+"shot",
+"n_frasco_alfeizar"
+],
+[
+810.8,
+814.095,
+"shot",
+"n_chinche_techo_alto"
+],
+[
+818.933,
+824.25,
+"shot",
+"n_medias_nylon"
+],
+[
+824.25,
+827.9,
+"shot",
+"n_media_manguera"
+],
+[
+831.93,
+835.04,
+"shot",
+"v02_aspira_chinche"
+],
+[
+835.04,
+843.99,
+"shot",
+"n_media_nudo"
+],
+[
+843.99,
+845.29,
+"shot",
+"n_bandeja_aluminio"
+],
+[
+848.733,
+854.33,
+"shot",
+"n_bandeja_agua"
+],
+[
+854.33,
+857.9,
+"shot",
+"v06_trampa_luz"
+],
+[
+857.9,
+859.6,
+"shot",
+"n_garaje_oscuro"
+],
+[
+862.825,
+867.4,
+"shot",
+"n_chinche_vuela_lampara"
+],
+[
+867.4,
+870.62,
+"shot",
+"n_bandeja_llena"
+],
+[
+870.62,
+874.1,
+"shot",
+"n_comparar_bandejas"
+],
+[
+878.7,
+885.49,
+"shot",
+"n_casa_vecina"
+],
+[
+885.49,
+889.16,
+"shot",
+"n_chinches_cocina_vecina"
+],
+[
+889.16,
+891.5,
+"shot",
+"n_aerosoles_estante"
+],
+[
+896.5,
+901.35,
+"shot",
+"n_pared_vecina"
+],
+[
+901.35,
+906.67,
+"shot",
+"n_rejilla_listones"
+],
+[
+911.01,
+913.64,
+"shot",
+"n_puerta_vecina"
+],
+[
+913.64,
+920.37,
+"shot",
+"n_cable_sellado"
+],
+[
+920.37,
+923.1,
+"shot",
+"v09_frasco_chinches"
+],
+[
+926.947,
+932.61,
+"shot",
+"n_frasco_cinta_spa"
+],
+[
+932.61,
+938.084,
+"shot",
+"n_avispa_samurai"
+],
+[
+942.3,
+949.52,
+"shot",
+"n_huevos_chinche"
+],
+[
+949.52,
+953.8,
+"shot",
+"n_huevos_oscuros"
+],
+[
+959.2,
+967.07,
+"shot",
+"n_lupa_hoja_huevos"
+],
+[
+967.07,
+973.8,
+"shot",
+"n_huerto_sano"
+],
+[
+979.4,
+989.95,
+"shot",
+"n_calendario_sept_oct"
+],
+[
+989.95,
+991.553,
+"shot",
+"n_pared_primeras"
+],
+[
+995.001,
+1000.25,
+"shot",
+"n_pared_ola"
+],
+[
+1000.25,
+1003.49,
+"shot",
+"n_termometro_70"
+],
+[
+1003.49,
+1005.751,
+"shot",
+"n_escarcha_cesped"
+],
+[
+1010.3,
+1017.28,
+"shot",
+"n_sellando_septiembre"
+],
+[
+1017.28,
+1021.5,
+"shot",
+"n_chinche_adentro_ventana"
+],
+[
+1025.537,
+1032.8,
+"shot",
+"n_frasco_noche"
+],
+[
+1032.8,
+1036.897,
+"shot",
+"n_tres_bichos_tarjeta"
+],
+[
+1042.9,
+1048.08,
+"shot",
+"n_chinche_arce"
+],
+[
+1048.08,
+1055.292,
+"shot",
+"n_arce_negundo"
+],
+[
+1058.647,
+1063.5,
+"shot",
+"n_chinche_pino"
+],
+[
+1063.5,
+1071.491,
+"shot",
+"n_pinos"
+],
+[
+1076.831,
+1079.58,
+"shot",
+"n_chinche_kudzu"
+],
+[
+1079.58,
+1088.4,
+"shot",
+"n_soja_campo"
+],
+[
+1093.2,
+1098.84,
+"shot",
+"n_antenas_bandas"
+],
+[
+1098.84,
+1102.68,
+"shot",
+"n_borde_triangulos"
+],
+[
+1102.68,
+1106.757,
+"shot",
+"v07_lupa_chinche"
+],
+[
+1111.202,
+1120.88,
+"shot",
+"n_pared_alero_hueco"
+],
+[
+1120.88,
+1123.7,
+"shot",
+"n_frasco_solo_agua"
+],
+[
+1129.7,
+1134.22,
+"shot",
+"n_chinche_flota"
+],
+[
+1134.22,
+1140.0,
+"shot",
+"n_gota_jabon"
+],
+[
+1144.534,
+1150.46,
+"shot",
+"n_frasco_luz"
+],
+[
+1150.46,
+1157.488,
+"shot",
+"n_chinche_mano"
+],
+[
+1162.45,
+1165.94,
+"shot",
+"n_alacena_ropa"
+],
+[
+1165.94,
+1173.8,
+"shot",
+"n_chinche_quieta_marco"
+],
+[
+1178.911,
+1188.46,
+"shot",
+"n_aceite_menta"
+],
+[
+1188.46,
+1190.678,
+"shot",
+"n_ventana_nieve"
+],
+[
+1194.8,
+1203.04,
+"shot",
+"n_chinche_lampara_mesa"
+],
+[
+1203.04,
+1207.6,
+"shot",
+"n_trampa_luz_tienda"
+],
+[
+1212.848,
+1222.16,
+"shot",
+"n_trampa_exterior"
+],
+[
+1222.16,
+1224.594,
+"shot",
+"n_trampa_adentro"
+],
+[
+1230.308,
+1239.36,
+"shot",
+"n_gato_chinche"
+],
+[
+1239.36,
+1244.1,
+"shot",
+"n_perro_mira_suelo"
+],
+[
+1247.7,
+1257.22,
+"shot",
+"n_espuma_curada"
+],
+[
+1257.22,
+1260.988,
+"shot",
+"n_silicona_seca"
+],
+[
+1267.0,
+1275.66,
+"shot",
+"n_tomate_picado"
+],
+[
+1275.66,
+1277.3,
+"shot",
+"n_tela_cubre"
+],
+[
+1281.3,
+1290.9,
+"shot",
+"n_racimo_final"
+],
+[
+1290.9,
+1293.2,
+"shot",
+"n_misma_esquina"
+],
+[
+1298.7,
+1303.78,
+"shot",
+"n_sombra_larga_patio"
+],
+[
+1303.78,
+1310.871,
+"shot",
+"n_billete_burlete"
+],
+[
+1314.349,
+1321.58,
+"shot",
+"n_fila_rejillas"
+],
+[
+1321.58,
+1326.7,
+"shot",
+"n_malla_rollo"
+],
+[
+1330.449,
+1335.62,
+"shot",
+"n_avispa_hoja"
+],
+[
+1335.62,
+1342.99,
+"shot",
+"v10_porche_cafe"
+],
+[
+1348.33,
+1355.76,
+"shot",
+"n_cajon_viejo"
+],
+[
+1355.76,
+1359.7,
+"shot",
+"n_mapa_eeuu_viejo"
+]
+],
+"cam": [],
+"ov": [
+{
+"k": "chip",
+"txt": "WALT · TESTED AGAINST THE BIOLOGY",
+"col": "ice",
+"at": 89.28,
+"out": 92.78
+},
+{
+"k": "chip",
+"txt": "▶ MY OTHER CHANNEL · LINK IN THE DESCRIPTION",
+"col": "amber",
+"at": 114.96,
+"out": 116.78
+},
+{
+"k": "chip",
+"txt": "SUBSCRIBE · A NEW TEST EVERY WEEK",
+"col": "green",
+"at": 117.08,
+"out": 120.58
+},
+{
+"k": "big",
+"txt": "AGGREGATION",
+"sub": "THE ONE WORD THAT EXPLAINS YOUR WALL",
+"col": "amber",
+"at": 124.08,
+"out": 127.28
+},
+{
+"k": "big",
+"txt": "LATE 1990s",
+"sub": "FIRST FOUND · ALLENTOWN, PENNSYLVANIA",
+"col": "amber",
+"at": 142.96,
+"out": 146.16
+},
+{
+"k": "chip",
+"txt": "AGGREGATION PHEROMONE · «OVER HERE»",
+"col": "amber",
+"at": 195.14,
+"out": 198.64
+},
+{
+"k": "big",
+"txt": "2010",
+"sub": "THE YEAR THEY EXPLODED",
+"col": "amber",
+"at": 224.46,
+"out": 227.66
+},
+{
+"k": "chip",
+"txt": "WHAT NOT TO DO",
+"col": "red",
+"at": 278.84,
+"out": 282.34
+},
+{
+"k": "stamp",
+"txt": "CRUSHED = DINNER BELL",
+"at": 308.44,
+"out": 311.44
+},
+{
+"k": "chip",
+"txt": "NOT THE HOUSE VACUUM",
+"col": "red",
+"at": 310.6,
+"out": 314.1
+},
+{
+"k": "chip",
+"txt": "NO SPRAY ON THE SIDING",
+"col": "red",
+"at": 326.78,
+"out": 330.28
+},
+{
+"k": "step",
+"n": 1,
+"name": "FIND THE SUNNY WALL",
+"col": "green",
+"at": 360.43,
+"out": 364.43
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE DOORS",
+"col": "green",
+"at": 409.29,
+"out": 413.29
+},
+{
+"k": "chip",
+"txt": "THE DOLLAR BILL TEST",
+"col": "amber",
+"at": 411.79,
+"out": 415.29
+},
+{
+"k": "chip",
+"txt": "DOOR SWEEP · ~$10 · 2 SCREWS · 10 MIN",
+"col": "green",
+"at": 440.61,
+"out": 444.11
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE WINDOW SCREENS",
+"col": "green",
+"at": 465.65,
+"out": 469.65
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE WINDOW AC",
+"col": "green",
+"at": 498.67,
+"out": 502.67
+},
+{
+"k": "step",
+"n": 5,
+"name": "EVERY PIPE AND WIRE",
+"col": "green",
+"at": 528.63,
+"out": 532.63
+},
+{
+"k": "chip",
+"txt": "SMALL GAP = CAULK ~$5 · BIG GAP = FOAM",
+"col": "green",
+"at": 554.87,
+"out": 558.37
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE WEEP HOLES",
+"col": "green",
+"at": 577.91,
+"out": 581.91
+},
+{
+"k": "stamp",
+"txt": "NEVER CAULK A WEEP HOLE",
+"at": 605.01,
+"out": 608.01
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE ATTIC VENTS",
+"col": "amber",
+"at": 636.61,
+"out": 640.61
+},
+{
+"k": "chip",
+"txt": "CHIMNEY CAP WITH MESH",
+"col": "green",
+"at": 758.76,
+"out": 762.26
+},
+{
+"k": "check",
+"title": "THE $20 SATURDAY",
+"rows": [
+{
+"txt": "Door sweep · screen patch",
+"at": 770.04
+},
+{
+"txt": "Caulk · foam",
+"at": 772.62
+},
+{
+"txt": "Weep hole covers · mesh",
+"at": 775.26
+}
+],
+"at": 770.04,
+"out": 778.26
+},
+{
+"k": "chip",
+"txt": "THE SOAP JAR · ⅓ WATER + DISH SOAP",
+"col": "green",
+"at": 790.47,
+"out": 793.97
+},
+{
+"k": "chip",
+"txt": "THE LAMP TRAP",
+"col": "green",
+"at": 843.99,
+"out": 847.49
+},
+{
+"k": "big",
+"txt": "$18",
+"sub": "ONE SATURDAY MORNING",
+"col": "green",
+"at": 918.07,
+"out": 921.27
+},
+{
+"k": "chip",
+"txt": "TIMING · SEAL BEFORE OCTOBER",
+"col": "amber",
+"at": 982.35,
+"out": 985.85
+},
+{
+"k": "chip",
+"txt": "IS IT A STINK BUG?",
+"col": "ice",
+"at": 1029.32,
+"out": 1032.82
+},
+{
+"k": "stamp",
+"txt": "WHITE BANDS = STINK BUG",
+"at": 1104.98,
+"out": 1107.98
+},
+{
+"k": "deal",
+"at": 1147.58,
+"out": 1152.08
+},
+{
+"k": "chip",
+"txt": "«DO THEY BITE?» · NO",
+"col": "ice",
+"at": 1150.46,
+"out": 1153.96
+},
+{
+"k": "chip",
+"txt": "«ONE IN JANUARY?» · SOAP JAR",
+"col": "ice",
+"at": 1188.46,
+"out": 1191.96
+},
+{
+"k": "chip",
+"txt": "«STORE TRAPS?» · INSIDE ONLY",
+"col": "ice",
+"at": 1202.2,
+"out": 1205.7
+},
+{
+"k": "chip",
+"txt": "«MY GARDEN?» · ROW COVERS",
+"col": "ice",
+"at": 1267.3,
+"out": 1270.8
+},
+{
+"k": "recap",
+"rows": [
+1285.26,
+1299.08,
+1303.78,
+1306.92,
+1314.76,
+1318.96,
+1325.0
+],
+"at": 1281.64,
+"out": 1331.0
+},
+{
+"k": "ask",
+"at": 1332.88,
+"out": 1344.88
+},
+{
+"k": "next",
+"at": 1361.94,
+"out": 1366.94
+}
+],
+"cta1": {
+"desc": 117.08,
+"end": 123.08
+},
+"cta2": {
+"desc": 1348.36,
+"end": 1354.36
+},
+"cta3": {
+"desc": 1355.76,
+"end": 1360.76
+},
+"end": 1364.08,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+360.432,
+778.085
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "WHAT TO KEEP",
+"recap": [
+"Aggregation: the scent brings them back",
+"4 PM: find the sunny wall",
+"Dollar bill test · door sweep",
+"Patch screens · seal the window AC",
+"Mesh, not caulk, in weep holes",
+"Fine mesh behind every attic vent",
+"Inside: the soap jar"
+],
+"ask": [
+"What's the bug that shows up",
+"at your house every fall?",
+"Tell me · I'll find where it gets in"
+],
+"next": [
+"NEXT TIME",
+"Another trick, tested"
+],
+"lower": [
+84.14,
+90.14
+]
+}
+}

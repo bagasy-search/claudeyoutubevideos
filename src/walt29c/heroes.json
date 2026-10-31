@@ -1,0 +1,346 @@
+[
+{
+"k": "wallmoving",
+"at": 9.76,
+"out": 14.76,
+"said": 9.76,
+"sp": 1.2,
+"solo": true,
+"kw": "THE WALL MOVES",
+"kw2": "dozens of flat brown bugs",
+"ph": "ph_wallmoving"
+},
+{
+"k": "lampshade",
+"at": 24.76,
+"out": 30.76,
+"said": 26.56,
+"solo": true,
+"kw": "THAT NIGHT",
+"kw2": "one on the lampshade",
+"ph": "ph_lampshade"
+},
+{
+"k": "saturday20",
+"at": 45.8,
+"out": 50.3,
+"said": 48.5,
+"sp": 1.333,
+"solo": true,
+"kw": "$20",
+"kw2": "one Saturday in October",
+"ph": "ph_saturday20"
+},
+{
+"k": "onegap",
+"at": 74.12,
+"out": 80.62,
+"said": 74.12,
+"solo": true,
+"kw": "ONE GAP",
+"kw2": "more than every window combined",
+"ph": "ph_onegap"
+},
+{
+"k": "crate",
+"at": 108.54,
+"out": 115.04,
+"said": 108.54,
+"solo": true,
+"kw": "IN A CRATE",
+"kw2": "all the way from Asia",
+"ph": "ph_crate"
+},
+{
+"k": "deadtree",
+"at": 180.16,
+"out": 184.66,
+"said": 180.86,
+"sp": 1.444,
+"solo": true,
+"kw": "A BIG DEAD TREE",
+"kw2": "to a stink bug, your house",
+"ph": "ph_deadtree"
+},
+{
+"k": "scent",
+"at": 212.86,
+"out": 217.36,
+"said": 214.36,
+"sp": 1.333,
+"solo": true,
+"kw": "THE SCENT STAYS",
+"kw2": "same window, next October",
+"ph": "ph_scent"
+},
+{
+"k": "barnwest",
+"at": 245.36,
+"out": 250.86,
+"said": 245.36,
+"sp": 1.182,
+"solo": true,
+"kw": "ONE SIDE ONLY",
+"kw2": "the sunny west side",
+"ph": "ph_barnwest"
+},
+{
+"k": "cilantro",
+"at": 293.16,
+"out": 297.66,
+"said": 294.06,
+"sp": 1.333,
+"solo": true,
+"kw": "BURNT CILANTRO",
+"kw2": "it sticks to your fingers",
+"ph": "ph_cilantro"
+},
+{
+"k": "vacuumblow",
+"at": 322.44,
+"out": 328.44,
+"said": 322.44,
+"solo": true,
+"kw": "BLOWS IT BACK",
+"kw2": "every time you turn it on",
+"ph": "ph_vacuumblow"
+},
+{
+"k": "mile",
+"at": 338.52,
+"out": 344.52,
+"said": 338.52,
+"solo": true,
+"kw": "A MILE AROUND",
+"kw2": "the whole neighborhood comes",
+"ph": "ph_mile"
+},
+{
+"k": "fourpm",
+"at": 375.792,
+"out": 382.29,
+"said": 375.79,
+"solo": true,
+"kw": "4 PM",
+"kw2": "put your hand on each wall",
+"ph": "ph_fourpm"
+},
+{
+"k": "write",
+"at": 389.512,
+"out": 395.51,
+"said": 389.51,
+"solo": true,
+"kw": "WRITE IT DOWN",
+"kw2": "where they disappear",
+"ph": "ph_write"
+},
+{
+"k": "dollar",
+"at": 425.732,
+"out": 432.23,
+"said": 425.73,
+"solo": true,
+"kw": "6 BILLS THICK",
+"kw2": "flat enough to slip under",
+"ph": "ph_dollar"
+},
+{
+"k": "garagedoor",
+"at": 455.972,
+"out": 462.47,
+"said": 455.97,
+"solo": true,
+"kw": "THE GARAGE DOOR",
+"kw2": "they walk right under it",
+"ph": "ph_garagedoor"
+},
+{
+"k": "tear",
+"at": 476.77,
+"out": 481.27,
+"said": 477.97,
+"sp": 1.333,
+"solo": true,
+"kw": "ONE TINY TEAR",
+"kw2": "is all they need",
+"ph": "ph_tear"
+},
+{
+"k": "accordion",
+"at": 508.69,
+"out": 513.19,
+"said": 510.69,
+"sp": 1.333,
+"solo": true,
+"kw": "BEHIND THE PANEL",
+"kw2": "a warm, loose gap",
+"ph": "ph_accordion"
+},
+{
+"k": "biggerhole",
+"at": 551.492,
+"out": 557.99,
+"said": 551.49,
+"solo": true,
+"kw": "BIGGER THAN THE PIPE",
+"kw2": "every line on the sunny wall",
+"ph": "ph_biggerhole"
+},
+{
+"k": "weep",
+"at": 588.51,
+"out": 593.01,
+"said": 591.21,
+"sp": 1.444,
+"solo": true,
+"kw": "WEEP HOLES",
+"kw2": "the wall has to breathe",
+"ph": "ph_weep"
+},
+{
+"k": "meshplug",
+"at": 620.732,
+"out": 625.73,
+"said": 620.73,
+"sp": 1.3,
+"solo": true,
+"kw": "MESH, NOT CAULK",
+"kw2": "water out, bugs out",
+"ph": "ph_meshplug"
+},
+{
+"k": "soffit",
+"at": 668.572,
+"out": 675.07,
+"said": 668.57,
+"solo": true,
+"kw": "THE SOFFIT GAP",
+"kw2": "the biggest door of all",
+"ph": "ph_soffit"
+},
+{
+"k": "hundreds",
+"at": 699.64,
+"out": 705.64,
+"said": 693.64,
+"solo": true,
+"kw": "BY THE HUNDREDS",
+"kw2": "into the attic insulation",
+"ph": "ph_hundreds"
+},
+{
+"k": "breathes",
+"at": 740.145,
+"out": 746.14,
+"said": 740.14,
+"sp": 1.083,
+"solo": true,
+"kw": "IT STILL BREATHES",
+"kw2": "it just takes no visitors",
+"ph": "ph_breathes"
+},
+{
+"k": "sinks",
+"at": 803.865,
+"out": 809.87,
+"said": 803.87,
+"solo": true,
+"kw": "IT SINKS",
+"kw2": "no smell at all",
+"ph": "ph_sinks"
+},
+{
+"k": "stocking",
+"at": 823.35,
+"out": 827.85,
+"said": 824.25,
+"sp": 1.333,
+"solo": true,
+"kw": "A STOCKING",
+"kw2": "inside the hose, rubber band out",
+"ph": "ph_stocking"
+},
+{
+"k": "lamptrap",
+"at": 863.065,
+"out": 869.07,
+"said": 863.07,
+"solo": true,
+"kw": "THEY FLY TO IT",
+"kw2": "and drop into the pan",
+"ph": "ph_lamptrap"
+},
+{
+"k": "slats",
+"at": 901.345,
+"out": 906.35,
+"said": 901.35,
+"sp": 1.3,
+"solo": true,
+"kw": "NO SCREEN",
+"kw2": "just wooden slats",
+"ph": "ph_slats"
+},
+{
+"k": "wasp",
+"at": 932.605,
+"out": 937.61,
+"said": 932.61,
+"sp": 1.3,
+"solo": true,
+"kw": "SAMURAI WASP",
+"kw2": "smaller than a grain of rice",
+"ph": "ph_wasp"
+},
+{
+"k": "wave",
+"at": 995.165,
+"out": 1001.66,
+"said": 995.16,
+"solo": true,
+"kw": "THE BIG PUSH",
+"kw2": "the first 3 weeks of October",
+"ph": "ph_wave"
+},
+{
+"k": "boxelder",
+"at": 1043.137,
+"out": 1049.14,
+"said": 1043.14,
+"solo": true,
+"kw": "RED LINES",
+"kw2": "a box elder bug, not a stink bug",
+"ph": "ph_boxelder"
+},
+{
+"k": "bands",
+"at": 1096.357,
+"out": 1101.86,
+"said": 1096.36,
+"solo": true,
+"kw": "WHITE BANDS",
+"kw2": "on the antennae",
+"ph": "ph_bands"
+},
+{
+"k": "float",
+"at": 1130.957,
+"out": 1136.96,
+"said": 1130.96,
+"solo": true,
+"kw": "IT FLOATS",
+"kw2": "water has a skin",
+"ph": "ph_float"
+},
+{
+"k": "pets",
+"at": 1234.277,
+"out": 1240.28,
+"said": 1234.28,
+"solo": true,
+"kw": "AWFUL TASTE",
+"kw2": "a little drool, nothing more",
+"ph": "ph_pets"
+}
+]
