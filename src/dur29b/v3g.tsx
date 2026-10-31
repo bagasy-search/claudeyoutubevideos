@@ -42,7 +42,7 @@ const BalaPlomo: React.FC<UP> = ({ d, p }) => {
 const MitoVuelta: React.FC<UP> = ({ d, p }) => {
   const aR = sec(p, "realidad", 2.0);
   return <U3 d={d} bg={p.bg} ground={null} floor="wood" mode="iris" key1={[-1.0, 2.4, 1.8]}
-    cam={{ at: [0, 0.62, 0], az: [-0.22, 0.14], el: [0.08, 0.05], r: [2.15, 1.95], fov: 34 }}>{(tt) => {
+    cam={{ at: [0, 0.62, 0], az: [-0.22, 0.14], el: [0.08, 0.05], r: [1.6, 1.4], fov: 34 }}>{(tt) => {
     const k = cl((tt - aR + 0.3) / 0.9), rot = PI * (k <= 0 ? 0 : k >= 1 ? 1 : 1 + Math.exp(-k * 6) * Math.sin(k * 9) * -0.35 - (1 - k) * (1 - k) * 0.65 * 0 - (k < 0.4 ? (1 - eio(k, 0, 0.4)) : 0));
     return <>
       <mesh position={[0, 0.05, 0]}><cylinderGeometry args={[0.06, 0.14, 0.1, 20]} />{M.brass({ col: "#8a6a30" })}</mesh>
@@ -144,7 +144,7 @@ const Bomber: React.FC<{ tt: number }> = ({ tt }) => {
 // solo, con las dos ametralladoras y un reflector barriendo el cielo ----
 const TorretaCola: React.FC<UP> = ({ d, p }) => {
   return <U3 d={d} bg={p.bg} ground={null} sky="#0a0e18" mode="iris" key1={[0.8, 2.0, 1.2]}
-    cam={{ at: [-0.2, 0.62, 0], at1: [-0.92, 0.6, 0], az: [0.55, -0.7], el: [0.22, 0.1], r: [1.9, 0.75], fov: 38 }}>{(tt) => <>
+    cam={{ at: [-0.2, 0.62, 0], at1: [-0.92, 0.6, 0], az: [0.55, -0.7], el: [0.22, 0.1], r: [1.5, 0.7], fov: 38 }}>{(tt) => <>
     <group position={[0, 0.6, 0]} rotation={[0, 0, 0.02 * Math.sin(tt * 0.8)]}>
       <Bomber tt={tt} />
       <group position={[-0.95, -0.08, 0]}><Stickman escala={0.075} rotY={-90} guion={[{ t: 0, accion: "quieto", expr: "nervioso" }]} semilla={44} contacto={0} /></group>
@@ -173,11 +173,11 @@ const TrajeCalefaccion: React.FC<UP> = ({ d, p }) => {
     const heat = (j: number) => 1 - eio(tt, aF + j * sp, aF + j * sp + 0.25), frost = eio(tt, aF + 0.2, D - 0.2), cold = eio(tt, aF, D - 0.3);
     return <>
       <RBox s={[0.26, 0.03, 0.24]} r={0.01} p={[0, 0.2, 0]}><meshStandardMaterial color="#3a3e40" metalness={0.6} roughness={0.5} /></RBox>
-      <group position={[0, 0.215, 0]}><Stickman escala={0.12} rotY={0} guion={[{ t: 0, accion: "sentarse", expr: "decidido" }, { t: aF + 0.6, accion: "sentarse", expr: "asustado" }] as any} semilla={45} contacto={0} color={"#" + new THREE.Color("#d8602a").lerp(new THREE.Color("#5a8ac8"), cold).getHexString()} /></group>
+      <group position={[0, 0.215, 0]}><Stickman escala={0.15} rotY={0} guion={[{ t: 0, accion: "sentarse", expr: "decidido" }, { t: aF + 0.6, accion: "sentarse", expr: "asustado" }] as any} semilla={45} contacto={0} color={"#" + new THREE.Color("#d8602a").lerp(new THREE.Color("#5a8ac8"), cold).getHexString()} /></group>
       {WIRES.filter((_, j) => j !== 4 && j !== 5).map((pts, j) => <mesh key={j} geometry={tubeG("traje" + j, pts, 0.005, 30, 6)}><meshStandardMaterial color="#3a1a10" emissive="#ff7a2a" emissiveIntensity={1.6 * heat(j)} roughness={0.5} /></mesh>)}
       <pointLight position={[0, 0.4, 0.2]} intensity={0.9 * (1 - cold)} distance={0.8} color="#ff9a5a" />
-      <mesh position={[0, 0.32, 0.05]}><sphereGeometry args={[0.4, 40, 24, 0, 2 * PI, 0, PI * 0.7]} />{M.glass({ op: 0.06 + 0.12 * frost, col: "#dfeaf2" })}</mesh>
-      {Array.from({ length: 70 }, (_, i) => { const a = rn(i, 1) * 2 * PI, b = PI * 0.7 - rn(i, 2) * PI * 0.25, s = cl((frost * 1.3 - (1 - b / (PI * 0.7)) * 0.9 - rn(i, 3) * 0.3) * 3);
+      <mesh position={[0, 0.32, 0.05]}><sphereGeometry args={[0.4, 40, 24, 0, 2 * PI, 0, PI * 0.7]} />{M.glass({ op: 0.05 + 0.05 * frost, col: "#dfeaf2" })}</mesh>
+      {Array.from({ length: 70 }, (_, i) => { const a = rn(i, 1) * 2 * PI, b = PI * 0.7 - rn(i, 2) * PI * 0.12, s = cl((frost * 1.3 - (1 - b / (PI * 0.7)) * 0.9 - rn(i, 3) * 0.3) * 3);
         return <mesh key={i} position={[Math.sin(b) * Math.cos(a) * 0.395, 0.32 + Math.cos(b) * 0.395, 0.05 + Math.sin(b) * Math.sin(a) * 0.395]} scale={Math.max(0.001, s)}><octahedronGeometry args={[0.013, 0]} /><meshStandardMaterial color="#f4fbff" roughness={0.3} /></mesh>; })}
       {/* el termómetro de mercurio */}
       <group position={[0.24, 0.22, 0.12]}>
@@ -190,33 +190,41 @@ const TrajeCalefaccion: React.FC<UP> = ({ d, p }) => {
   }}</U3>;
 };
 
-// ---- ParacaidasPuerta · la cámara del lado del fuselaje: el paracaídas colgado del gancho en primer plano, la puertita abierta y,
-// al fondo, el artillero encogido en la burbuja que estira la mano y no llega ----
+// ---- ParacaidasPuerta · bien cerca, dentro del fuselaje: en el piso la escotilla redonda de la torreta; el artillero asoma medio
+// cuerpo por el agujero y estira el brazo; el paracaídas cuelga del gancho, grande, en primer plano, a un brazo y medio de distancia ----
 const ParacaidasPuerta: React.FC<UP> = ({ d, p }) => {
   const aP = sec(p, "puerta", 1.2);
-  return <U3 d={d} bg={p.bg} ground={null} floor="dark" sky="#0a0e18" mode="iris" key1={[0.4, 2.2, 1.8]}
-    cam={{ at: [-0.12, 0.4, 0], az: [0.62, 0.42], el: [0.1, 0.06], r: [1.35, 1.1], fov: 36 }}>{(tt) => {
-    const open = 1.3 * eio(tt, 0.2, 0.9), reach = eio(tt, aP, aP + 0.8);
+  return <U3 d={d} bg={p.bg} ground={null} sky="#0a0e18" mode="iris" key1={[0.4, 2.2, 1.8]} backDim={0.2}
+    cam={{ at: [0.05, 0.3, 0], az: [0.7, 0.5], el: [0.22, 0.16], r: [1.1, 0.9], fov: 36 }}>{(tt) => {
+    const open = eio(tt, 0.2, 0.9), up = eio(tt, 0.4, aP), reach = eio(tt, aP, aP + 0.8), sway = 0.06 * Math.sin(tt * 2 * PI * 0.4);
     return <>
-      <mesh position={[0.35, 0.4, 0]} rotation={[0, 0, PI / 2]}><cylinderGeometry args={[0.34, 0.34, 1.1, 32, 1, true]} /><meshStandardMaterial color="#4a4e4a" metalness={0.5} roughness={0.6} side={THREE.BackSide} /></mesh>
-      {/* el mamparo con la puertita */}
-      {[-1, 1].map((s) => <RBox key={s} s={[0.02, 0.62, 0.2]} r={0.005} p={[-0.17, 0.4, s * 0.22]}><meshStandardMaterial color="#5a5e5a" metalness={0.6} roughness={0.5} /></RBox>)}
-      <group position={[-0.17, 0.2, 0.12]} rotation={[0, open, 0]}><RBox s={[0.02, 0.42, 0.24]} r={0.005} p={[0, 0.21, -0.12]}><meshStandardMaterial color="#6a6e6a" metalness={0.6} roughness={0.5} /></RBox></group>
-      <mesh position={[-0.47, 0.4, 0]}><sphereGeometry args={[0.3, 32, 20]} />{M.glass({ op: 0.1, col: "#b8d0e0" })}</mesh>
-      <group position={[-0.42, 0.2, 0]}><Stickman escala={0.12} rotY={90} guion={[{ t: 0, accion: "sentarse", expr: "nervioso" }, { t: aP, accion: "senalar", expr: "asustado" }] as any} semilla={46} contacto={0} /></group>
-      {/* el paracaídas en primer plano, del lado de acá */}
-      <group position={[0.12, 0.42, -0.12]}>
-        <mesh position={[0, 0.18, 0]} rotation={[PI / 2, 0, 0]}><torusGeometry args={[0.025, 0.006, 8, 16, PI * 1.5]} />{M.steel()}</mesh>
-        <RBox s={[0.26, 0.32, 0.12]} r={0.035} p={[0, 0.0, 0]}><meshStandardMaterial color="#6a6a44" roughness={0.9} /></RBox>
-        {[-1, 1].map((s) => <mesh key={s} position={[s * 0.07, 0.0, 0.065]}><boxGeometry args={[0.025, 0.34, 0.004]} /><meshStandardMaterial color="#e8dcc0" /></mesh>)}
-        <mesh position={[0, -0.04, 0.056]} rotation={[PI / 2, 0, 0]}><torusGeometry args={[0.025, 0.005, 8, 16]} />{M.steel()}</mesh>
+      {/* el piso del fuselaje con el agujero */}
+      {[[-0.55, 0.7], [0.55, 0.7]].map(([x, w], k) => <RBox key={k} s={[w, 0.03, 0.9]} r={0.004} p={[x, 0.0, 0]}><meshStandardMaterial color="#4a4e4a" metalness={0.5} roughness={0.6} /></RBox>)}
+      {[-1, 1].map((s) => <RBox key={"z" + s} s={[0.4, 0.03, 0.25]} r={0.004} p={[0, 0.0, s * 0.33]}><meshStandardMaterial color="#4a4e4a" metalness={0.5} roughness={0.6} /></RBox>)}
+      <mesh position={[0, 0.016, 0]} rotation={[-PI / 2, 0, 0]}><ringGeometry args={[0.17, 0.2, 40]} />{M.steel({ col: "#8a8e8a" })}</mesh>
+      <mesh position={[0, -0.4, 0]}><cylinderGeometry args={[0.17, 0.17, 0.8, 32, 1, true]} /><meshStandardMaterial color="#1a1c1e" side={THREE.BackSide} /></mesh>
+      <group position={[-0.2, 0.016, 0]} rotation={[0, 0, open * 1.9]}><mesh position={[0.2, 0, 0]} rotation={[-PI / 2, 0, 0]}><circleGeometry args={[0.18, 32]} /><meshStandardMaterial color="#6a6e6a" metalness={0.6} roughness={0.5} side={THREE.DoubleSide} /></mesh></group>
+      {/* el artillero sube por la escotilla */}
+      <group position={[0, lerp(-0.35, -0.12, up), 0]}><Stickman escala={0.13} rotY={60} guion={[{ t: 0, accion: "idle", expr: "nervioso" }, { t: aP, accion: "senalar", expr: "asustado" }] as any} semilla={46} contacto={0} color="#5a5a3e" /></group>
+      {/* el fuselaje curvo detrás */}
+      <mesh position={[0, 0.3, -0.45]}><cylinderGeometry args={[0.6, 0.6, 1.8, 32, 1, true, PI * 0.75, PI * 0.5]} /><meshStandardMaterial color="#5a5e5a" metalness={0.5} roughness={0.6} side={THREE.DoubleSide} /></mesh>
+      {/* el paracaídas grande en el gancho */}
+      <group position={[0.42, 0.62, 0.05]} rotation={[0, -0.5, sway]}>
+        <mesh position={[0, 0.03, 0]}><cylinderGeometry args={[0.004, 0.004, 0.06, 6]} />{M.steel()}</mesh>
+        <group position={[0, -0.18, 0]}>
+          <RBox s={[0.26, 0.32, 0.12]} r={0.035}><meshStandardMaterial color="#6a6a44" roughness={0.9} /></RBox>
+          {[-1, 1].map((s) => <mesh key={s} position={[s * 0.07, 0.0, 0.062]}><boxGeometry args={[0.025, 0.34, 0.004]} /><meshStandardMaterial color="#e8dcc0" /></mesh>)}
+          <mesh position={[0, -0.04, 0.066]} rotation={[PI / 2, 0, 0]}><torusGeometry args={[0.025, 0.006, 8, 16]} />{M.chrome()}</mesh>
+        </group>
       </group>
-      {/* la distancia que no se cierra */}
-      <pointLight position={[0.15, 0.7, 0.2]} intensity={1.0} distance={1.4} color="#c8d0e0" />
-      <pointLight position={[-0.45, 0.5, 0.2]} intensity={0.5} distance={0.8} color="#7aa0ff" />
+      {/* la distancia entre la mano y la mochila: un hilo de luz que se acorta pero no se cierra */}
+      <mesh position={[lerp(0.15, 0.25, reach), 0.42, 0.04]} rotation={[0, 0, 0.4]} scale={[sm2(1 - reach * 0.6), 1, 1]}><boxGeometry args={[0.18, 0.004, 0.004]} />{M.glow({ col: "#ffd890", op: 0.6 * reach })}</mesh>
+      <spotLight position={[0.4, 1.4, 0.6]} angle={0.35} penumbra={0.6} intensity={7} distance={2.5} color="#e8e0d0" />
+      <pointLight position={[0, -0.1, 0.1]} intensity={0.6} distance={0.6} color="#7aa0ff" />
     </>;
   }}</U3>;
 };
+const sm2 = (v: number) => Math.max(0.001, v);
 
 // ---- ClayKicker · cámara en los pies: el pateador acostado empuja la pala contra la arcilla; con cada patada saltan los terrones al
 // costado, la vela tiembla y el montón de atrás crece ----
@@ -341,7 +349,7 @@ const LagunaPaz: React.FC<UP> = ({ d, p }) => {
 const TiraTiempo: React.FC<UP> = ({ d, p }) => {
   const D = d / 30, aA = Math.min(sec(p, "años", 2.6), D - 1.6);
   return <U3 d={d} bg={p.bg} ground={null} floor="wood" mode="wipe" key1={[-1.2, 2.6, 2.0]}
-    cam={{ at: [0, 0.34, 0], at1: [0.05, 0.5, 0], az: [-0.16, 0.08], el: [0.12, 0.1], r: [1.75, 2.1], fov: 36 }}>{(tt) => {
+    cam={{ at: [0, 0.34, 0], at1: [0.05, 0.5, 0], az: [-0.16, 0.08], el: [0.12, 0.1], r: [1.95, 2.35], fov: 36 }}>{(tt) => {
     const sand = eio(tt, 0.3, aA), grow = eio(tt, aA, D - 0.2);
     return <>
       {/* el reloj de arena: ocho granos grandes, uno por parada */}
@@ -394,7 +402,7 @@ const ST = [-0.9, -0.3, 0.3, 0.9];
 const TodoLoDemas: React.FC<UP> = ({ d, p }) => {
   const D = d / 30, A = [sec(p, "cargar", 0.4), sec(p, "comida", 2.0), sec(p, "baldes", 3.4), sec(p, "limpiar", 4.8)].map((a) => Math.min(a, D - 1));
   return <U3 d={d} bg={p.bg} ground={null} floor="none" mode="wipe" key1={[-1.2, 2.6, 2.0]} backZ={-1.6} backDim={0.35}
-    cam={{ at: [-0.5, 0.48, 0], at1: [0.5, 0.48, 0], az: [-0.22, 0.16], el: [0.2, 0.16], r: [1.3, 1.2], fov: 38 }}>{(tt) => {
+    cam={{ at: [-0.5, 0.48, 0], at1: [0.5, 0.48, 0], az: [-0.22, 0.16], el: [0.12, 0.1], r: [1.5, 1.4], fov: 38 }}>{(tt) => {
     let k = 0; for (let i = 0; i < 4; i++) if (tt >= A[i] - 0.55) k = i;
     const mv = k > 0 ? eio(tt, A[k] - 0.55, A[k] - 0.05) : 1, x = k > 0 ? lerp(ST[k - 1], ST[k], mv) : ST[0] - 0.3 * (1 - eio(tt, 0, A[0]));
     const walking = (k > 0 && mv > 0.02 && mv < 0.98) || tt < A[0] - 0.05;

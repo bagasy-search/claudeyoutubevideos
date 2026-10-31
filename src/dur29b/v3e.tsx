@@ -224,7 +224,7 @@ const ArcillaEscucha: React.FC<UP> = ({ d, p }) => {
 const ConElSobreEl: React.FC<UP> = ({ d, p }) => {
   const aS = sec(p, "sobre", 1.8);
   return <U3 d={d} bg={p.bg} ground={[176, 150, 110]} mode="iris" key1={[-1.2, 2.6, 1.8]}
-    cam={{ at: [0.05, 0.24, 0], az: [-0.5, -0.2], el: [0.26, 0.4], r: [1.45, 1.6], fov: 34 }}>{(tt) => {
+    cam={{ at: [0.05, 0.24, 0], az: [-0.5, -0.2], el: [0.14, 0.2], r: [1.35, 1.45], fov: 34 }}>{(tt) => {
     const r = eio(tt, aS - 0.1, aS + 0.7), lie = eio(tt, aS - 0.2, aS + 0.5);
     return <>
       {/* el soldado: de pie, se va inclinando hasta quedar acostado sobre el escudo */}
