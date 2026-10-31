@@ -1,3 +1,4 @@
 31-oct: calendarios con letras IA → escenas sin texto
 31-oct r2: ph_cycle
 31-oct 09:00 tarjeta amarilla sin fecha (eval)
+31-oct 09:50 Veo faltantes -> fotos fv (no mas World repetido)
