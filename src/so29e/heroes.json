@@ -1,0 +1,250 @@
+[
+ {
+  "k": "pile",
+  "at": 6.56,
+  "out": 15.56,
+  "ph": "thick pieces yellow on the inside",
+  "dev": -6.4,
+  "items": []
+ },
+ {
+  "k": "dirtfloor",
+  "at": 107.56,
+  "out": 116.56,
+  "ph": "floor of hard packed earth",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "scrape",
+  "at": 140.5,
+  "out": 149.5,
+  "ph": "scraping the butter off a piece of toast",
+  "dev": -5.2,
+  "items": []
+ },
+ {
+  "k": "tenseconds",
+  "at": 170.58,
+  "out": 179.58,
+  "ph": "finger of ginger in about 10 seconds",
+  "dev": 1.5,
+  "items": []
+ },
+ {
+  "k": "twopieces",
+  "at": 189.2,
+  "out": 198.2,
+  "ph": "Here are two pieces of ginger",
+  "dev": -7.4,
+  "items": []
+ },
+ {
+  "k": "paper",
+  "at": 239.96,
+  "out": 247.96,
+  "ph": "Thinner than a sheet of paper",
+  "dev": 5.4,
+  "items": []
+ },
+ {
+  "k": "roundedge",
+  "at": 257.36,
+  "out": 266.36,
+  "ph": "The edge is round and not sharp",
+  "dev": -5.2,
+  "items": []
+ },
+ {
+  "k": "hand",
+  "at": 301.28,
+  "out": 309.28,
+  "ph": "It's like a hand",
+  "dev": 0.4,
+  "items": []
+ },
+ {
+  "k": "snap",
+  "at": 319.64,
+  "out": 327.64,
+  "ph": "snap off each",
+  "dev": -6.2,
+  "items": []
+ },
+ {
+  "k": "yellow",
+  "at": 369.56,
+  "out": 377.56,
+  "ph": "if the inside is bright yellow",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "shinshoga",
+  "at": 398.46,
+  "out": 406.46,
+  "ph": "Shin shoga",
+  "dev": 3.6,
+  "items": []
+ },
+ {
+  "k": "tight",
+  "at": 465.84,
+  "out": 473.84,
+  "ph": "It should be tight and smooth",
+  "dev": 2.1,
+  "items": []
+ },
+ {
+  "k": "heavy",
+  "at": 482.6,
+  "out": 490.6,
+  "ph": "feels heavy for its size",
+  "dev": 2.1,
+  "items": []
+ },
+ {
+  "k": "oroshigane",
+  "at": 533.28,
+  "out": 541.28,
+  "ph": "An oroshigane",
+  "dev": 6.0,
+  "items": []
+ },
+ {
+  "k": "circles",
+  "at": 552.96,
+  "out": 561.96,
+  "ph": "Why circles",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "nest",
+  "at": 572.72,
+  "out": 580.72,
+  "ph": "a little nest of fibers",
+  "dev": -5.3,
+  "items": []
+ },
+ {
+  "k": "drawer",
+  "at": 603.38,
+  "out": 612.38,
+  "ph": "in the vegetable drawer",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "jar",
+  "at": 618.02,
+  "out": 627.02,
+  "ph": "A jar of water",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "towel",
+  "at": 651.06,
+  "out": 659.06,
+  "ph": "Wrap the unpeeled ginger in a dry paper towel",
+  "dev": 3.2,
+  "items": []
+ },
+ {
+  "k": "tea",
+  "at": 686.28,
+  "out": 695.28,
+  "ph": "Put a small handful of ginger peels in a cup",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "beni",
+  "at": 770.64,
+  "out": 778.64,
+  "ph": "Red ginger is made",
+  "dev": -0.1,
+  "items": []
+ },
+ {
+  "k": "gari",
+  "at": 786.98,
+  "out": 794.98,
+  "ph": "To clean the mouth",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "rocks",
+  "at": 841.66,
+  "out": 849.66,
+  "ph": "chopped ginger is like little hard rocks",
+  "dev": -2.6,
+  "items": []
+ },
+ {
+  "k": "powder",
+  "at": 857.76,
+  "out": 865.76,
+  "ph": "ginger powder",
+  "dev": -6.2,
+  "items": []
+ },
+ {
+  "k": "thumb",
+  "at": 953.4,
+  "out": 961.4,
+  "ph": "the top of your thumb",
+  "dev": 4.4,
+  "items": []
+ },
+ {
+  "k": "sprout",
+  "at": 968.36,
+  "out": 976.36,
+  "ph": "sprouting little green shoots",
+  "dev": 3.4,
+  "items": []
+ },
+ {
+  "k": "tube",
+  "at": 1004.56,
+  "out": 1012.56,
+  "ph": "the ginger in a tube",
+  "dev": 4.7,
+  "items": []
+ },
+ {
+  "k": "pink",
+  "at": 1103.07,
+  "out": 1111.07,
+  "ph": "With young ginger it turns pink",
+  "dev": 3.0,
+  "items": []
+ },
+ {
+  "k": "kyoto",
+  "at": 1138.21,
+  "out": 1147.21,
+  "ph": "my friend from Kyoto",
+  "dev": 2.6,
+  "items": []
+ },
+ {
+  "k": "fuji",
+  "at": 1187.75,
+  "out": 1196.75,
+  "ph": "grates like snow",
+  "dev": 1.7,
+  "items": []
+ },
+ {
+  "k": "math",
+  "at": 1268.95,
+  "out": 1278.95,
+  "ph": "Let me do the math",
+  "dev": -2.0,
+  "items": []
+ }
+]
