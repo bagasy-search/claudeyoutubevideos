@@ -1,0 +1,1007 @@
+[
+{
+"id": "v001_hook",
+"t": 1.94,
+"sec": "HOOK"
+},
+{
+"id": "v002_hook",
+"t": 5.92,
+"sec": "HOOK"
+},
+{
+"id": "v003_hook",
+"t": 7.98,
+"sec": "HOOK"
+},
+{
+"id": "v004_hook",
+"t": 16.02,
+"sec": "HOOK"
+},
+{
+"id": "v005_hook",
+"t": 22.6,
+"sec": "HOOK"
+},
+{
+"id": "v006_hook",
+"t": 31.44,
+"sec": "HOOK"
+},
+{
+"id": "v007_hook",
+"t": 44.28,
+"sec": "HOOK"
+},
+{
+"id": "v008_promise",
+"t": 54.58,
+"sec": "PROMISE"
+},
+{
+"id": "v009_promise",
+"t": 68.88,
+"sec": "PROMISE"
+},
+{
+"id": "v010_promise",
+"t": 77.04,
+"sec": "PROMISE"
+},
+{
+"id": "v011_intro",
+"t": 85.66,
+"sec": "INTRO"
+},
+{
+"id": "v012_intro",
+"t": 89.4,
+"sec": "INTRO"
+},
+{
+"id": "v013_intro",
+"t": 103.14,
+"sec": "INTRO"
+},
+{
+"id": "v014_intro",
+"t": 120.92,
+"sec": "INTRO"
+},
+{
+"id": "v015_one",
+"t": 138.32,
+"sec": "ONE"
+},
+{
+"id": "v016_one",
+"t": 149.64,
+"sec": "ONE"
+},
+{
+"id": "v017_one_b",
+"t": 159.18,
+"sec": "ONE_B"
+},
+{
+"id": "v018_one_b",
+"t": 169.04,
+"sec": "ONE_B"
+},
+{
+"id": "v019_one_b",
+"t": 180.58,
+"sec": "ONE_B"
+},
+{
+"id": "v020_one_b",
+"t": 200.88,
+"sec": "ONE_B"
+},
+{
+"id": "v021_one_b",
+"t": 204.32,
+"sec": "ONE_B"
+},
+{
+"id": "v022_one_b",
+"t": 218.3,
+"sec": "ONE_B"
+},
+{
+"id": "v023_cta1",
+"t": 239.36,
+"sec": "CTA1"
+},
+{
+"id": "v024_diag",
+"t": 256.6,
+"sec": "DIAG"
+},
+{
+"id": "v025_diag",
+"t": 266.54,
+"sec": "DIAG"
+},
+{
+"id": "v026_diag",
+"t": 275.06,
+"sec": "DIAG"
+},
+{
+"id": "v027_diag",
+"t": 280.44,
+"sec": "DIAG"
+},
+{
+"id": "v028_diag",
+"t": 283.32,
+"sec": "DIAG"
+},
+{
+"id": "v029_diag",
+"t": 291.78,
+"sec": "DIAG"
+},
+{
+"id": "v030_two",
+"t": 314.42,
+"sec": "TWO"
+},
+{
+"id": "v031_two",
+"t": 328.32,
+"sec": "TWO"
+},
+{
+"id": "v032_two",
+"t": 330.02,
+"sec": "TWO"
+},
+{
+"id": "v033_two",
+"t": 338.84,
+"sec": "TWO"
+},
+{
+"id": "v034_two_b",
+"t": 346.58,
+"sec": "TWO_B"
+},
+{
+"id": "v035_two_b",
+"t": 356.3,
+"sec": "TWO_B"
+},
+{
+"id": "v036_two_b",
+"t": 368.42,
+"sec": "TWO_B"
+},
+{
+"id": "v037_two_b",
+"t": 380.36,
+"sec": "TWO_B"
+},
+{
+"id": "v038_three",
+"t": 386.72,
+"sec": "THREE"
+},
+{
+"id": "v039_three",
+"t": 403.54,
+"sec": "THREE"
+},
+{
+"id": "v040_three",
+"t": 408.42,
+"sec": "THREE"
+},
+{
+"id": "v041_three_b",
+"t": 422.1,
+"sec": "THREE_B"
+},
+{
+"id": "v042_three_b",
+"t": 430.62,
+"sec": "THREE_B"
+},
+{
+"id": "v043_three_b",
+"t": 435.2,
+"sec": "THREE_B"
+},
+{
+"id": "v044_three_b",
+"t": 438.5,
+"sec": "THREE_B"
+},
+{
+"id": "v045_three_b",
+"t": 455.72,
+"sec": "THREE_B"
+},
+{
+"id": "v046_rehook1",
+"t": 464.46,
+"sec": "REHOOK1"
+},
+{
+"id": "v047_four",
+"t": 470.68,
+"sec": "FOUR"
+},
+{
+"id": "v048_four",
+"t": 489.34,
+"sec": "FOUR"
+},
+{
+"id": "v049_four",
+"t": 495.34,
+"sec": "FOUR"
+},
+{
+"id": "v050_four_b",
+"t": 506.24,
+"sec": "FOUR_B"
+},
+{
+"id": "v051_four_b",
+"t": 517.86,
+"sec": "FOUR_B"
+},
+{
+"id": "v052_four_b",
+"t": 531.4,
+"sec": "FOUR_B"
+},
+{
+"id": "v053_four_b",
+"t": 540.56,
+"sec": "FOUR_B"
+},
+{
+"id": "v054_five",
+"t": 552.436,
+"sec": "FIVE"
+},
+{
+"id": "v055_five",
+"t": 558.916,
+"sec": "FIVE"
+},
+{
+"id": "v056_five",
+"t": 574.176,
+"sec": "FIVE"
+},
+{
+"id": "v057_five_b",
+"t": 581.456,
+"sec": "FIVE_B"
+},
+{
+"id": "v058_five_b",
+"t": 585.616,
+"sec": "FIVE_B"
+},
+{
+"id": "v059_five_b",
+"t": 594.316,
+"sec": "FIVE_B"
+},
+{
+"id": "v060_six",
+"t": 609.236,
+"sec": "SIX"
+},
+{
+"id": "v061_six",
+"t": 614.616,
+"sec": "SIX"
+},
+{
+"id": "v062_six",
+"t": 623.616,
+"sec": "SIX"
+},
+{
+"id": "v063_six_b",
+"t": 638.336,
+"sec": "SIX_B"
+},
+{
+"id": "v064_six_b",
+"t": 643.216,
+"sec": "SIX_B"
+},
+{
+"id": "v065_six_b",
+"t": 651.716,
+"sec": "SIX_B"
+},
+{
+"id": "v066_six_b",
+"t": 662.236,
+"sec": "SIX_B"
+},
+{
+"id": "v067_anec1",
+"t": 672.156,
+"sec": "ANEC1"
+},
+{
+"id": "v068_anec1",
+"t": 676.756,
+"sec": "ANEC1"
+},
+{
+"id": "v069_anec1",
+"t": 683.216,
+"sec": "ANEC1"
+},
+{
+"id": "v070_anec1",
+"t": 685.436,
+"sec": "ANEC1"
+},
+{
+"id": "v071_anec1",
+"t": 699.256,
+"sec": "ANEC1"
+},
+{
+"id": "v072_rehook2",
+"t": 701.556,
+"sec": "REHOOK2"
+},
+{
+"id": "v073_rehook2",
+"t": 710.136,
+"sec": "REHOOK2"
+},
+{
+"id": "v074_seven",
+"t": 715.296,
+"sec": "SEVEN"
+},
+{
+"id": "v075_seven",
+"t": 735.356,
+"sec": "SEVEN"
+},
+{
+"id": "v076_seven",
+"t": 741.236,
+"sec": "SEVEN"
+},
+{
+"id": "v077_seven_b",
+"t": 752.896,
+"sec": "SEVEN_B"
+},
+{
+"id": "v078_seven_b",
+"t": 758.656,
+"sec": "SEVEN_B"
+},
+{
+"id": "v079_seven_b",
+"t": 767.996,
+"sec": "SEVEN_B"
+},
+{
+"id": "v080_seven_b",
+"t": 774.856,
+"sec": "SEVEN_B"
+},
+{
+"id": "v081_seven_b",
+"t": 787.416,
+"sec": "SEVEN_B"
+},
+{
+"id": "v082_seven_b",
+"t": 795.216,
+"sec": "SEVEN_B"
+},
+{
+"id": "v083_eight",
+"t": 798.016,
+"sec": "EIGHT"
+},
+{
+"id": "v084_eight",
+"t": 813.156,
+"sec": "EIGHT"
+},
+{
+"id": "v085_eight_b",
+"t": 825.516,
+"sec": "EIGHT_B"
+},
+{
+"id": "v086_eight_b",
+"t": 830.056,
+"sec": "EIGHT_B"
+},
+{
+"id": "v087_eight_b",
+"t": 841.176,
+"sec": "EIGHT_B"
+},
+{
+"id": "v088_notebook",
+"t": 855.916,
+"sec": "NOTEBOOK"
+},
+{
+"id": "v089_notebook",
+"t": 862.856,
+"sec": "NOTEBOOK"
+},
+{
+"id": "v090_errors",
+"t": 886.456,
+"sec": "ERRORS"
+},
+{
+"id": "v091_errors",
+"t": 896.396,
+"sec": "ERRORS"
+},
+{
+"id": "v092_errors",
+"t": 899.516,
+"sec": "ERRORS"
+},
+{
+"id": "v093_errors",
+"t": 908.976,
+"sec": "ERRORS"
+},
+{
+"id": "v094_nine",
+"t": 928.296,
+"sec": "NINE"
+},
+{
+"id": "v095_nine",
+"t": 946.616,
+"sec": "NINE"
+},
+{
+"id": "v096_nine_b",
+"t": 953.196,
+"sec": "NINE_B"
+},
+{
+"id": "v097_nine_b",
+"t": 966.936,
+"sec": "NINE_B"
+},
+{
+"id": "v098_nine_b",
+"t": 976.236,
+"sec": "NINE_B"
+},
+{
+"id": "v099_nine_b",
+"t": 991.796,
+"sec": "NINE_B"
+},
+{
+"id": "v100_nine_b",
+"t": 1002.736,
+"sec": "NINE_B"
+},
+{
+"id": "v101_ten",
+"t": 1012.436,
+"sec": "TEN"
+},
+{
+"id": "v102_ten",
+"t": 1026.916,
+"sec": "TEN"
+},
+{
+"id": "v103_ten_b",
+"t": 1040.736,
+"sec": "TEN_B"
+},
+{
+"id": "v104_ten_b",
+"t": 1044.096,
+"sec": "TEN_B"
+},
+{
+"id": "v105_ten_b",
+"t": 1059.116,
+"sec": "TEN_B"
+},
+{
+"id": "v106_ten_b",
+"t": 1066.436,
+"sec": "TEN_B"
+},
+{
+"id": "v107_eleven",
+"t": 1078.536,
+"sec": "ELEVEN"
+},
+{
+"id": "v108_eleven",
+"t": 1101.772,
+"sec": "ELEVEN"
+},
+{
+"id": "v109_eleven_b",
+"t": 1109.192,
+"sec": "ELEVEN_B"
+},
+{
+"id": "v110_eleven_b",
+"t": 1127.772,
+"sec": "ELEVEN_B"
+},
+{
+"id": "v111_eleven_b",
+"t": 1135.672,
+"sec": "ELEVEN_B"
+},
+{
+"id": "v112_rehook3",
+"t": 1149.492,
+"sec": "REHOOK3"
+},
+{
+"id": "v113_twelve",
+"t": 1164.652,
+"sec": "TWELVE"
+},
+{
+"id": "v114_twelve",
+"t": 1182.352,
+"sec": "TWELVE"
+},
+{
+"id": "v115_twelve_b",
+"t": 1189.872,
+"sec": "TWELVE_B"
+},
+{
+"id": "v116_twelve_b",
+"t": 1196.172,
+"sec": "TWELVE_B"
+},
+{
+"id": "v117_twelve_b",
+"t": 1199.232,
+"sec": "TWELVE_B"
+},
+{
+"id": "v118_twelve_b",
+"t": 1205.972,
+"sec": "TWELVE_B"
+},
+{
+"id": "v119_twelve_b",
+"t": 1210.472,
+"sec": "TWELVE_B"
+},
+{
+"id": "v120_twelve_b",
+"t": 1222.212,
+"sec": "TWELVE_B"
+},
+{
+"id": "v121_twelve_b",
+"t": 1227.032,
+"sec": "TWELVE_B"
+},
+{
+"id": "v122_twelve_b",
+"t": 1246.092,
+"sec": "TWELVE_B"
+},
+{
+"id": "v123_money",
+"t": 1256.812,
+"sec": "MONEY"
+},
+{
+"id": "v124_money",
+"t": 1266.132,
+"sec": "MONEY"
+},
+{
+"id": "v125_money",
+"t": 1270.952,
+"sec": "MONEY"
+},
+{
+"id": "v126_thirteen",
+"t": 1289.712,
+"sec": "THIRTEEN"
+},
+{
+"id": "v127_thirteen",
+"t": 1299.752,
+"sec": "THIRTEEN"
+},
+{
+"id": "v128_thirteen_b",
+"t": 1316.292,
+"sec": "THIRTEEN_B"
+},
+{
+"id": "v129_thirteen_b",
+"t": 1321.132,
+"sec": "THIRTEEN_B"
+},
+{
+"id": "v130_thirteen_b",
+"t": 1329.752,
+"sec": "THIRTEEN_B"
+},
+{
+"id": "v131_thirteen_b",
+"t": 1341.652,
+"sec": "THIRTEEN_B"
+},
+{
+"id": "v132_fourteen",
+"t": 1368.872,
+"sec": "FOURTEEN"
+},
+{
+"id": "v133_fourteen",
+"t": 1373.272,
+"sec": "FOURTEEN"
+},
+{
+"id": "v134_fourteen_b",
+"t": 1381.352,
+"sec": "FOURTEEN_B"
+},
+{
+"id": "v135_fourteen_b",
+"t": 1385.212,
+"sec": "FOURTEEN_B"
+},
+{
+"id": "v136_fourteen_b",
+"t": 1400.312,
+"sec": "FOURTEEN_B"
+},
+{
+"id": "v137_fourteen_b",
+"t": 1410.632,
+"sec": "FOURTEEN_B"
+},
+{
+"id": "v138_fourteen_b",
+"t": 1415.772,
+"sec": "FOURTEEN_B"
+},
+{
+"id": "v139_oldman",
+"t": 1441.452,
+"sec": "OLDMAN"
+},
+{
+"id": "v140_oldman",
+"t": 1449.632,
+"sec": "OLDMAN"
+},
+{
+"id": "v141_oldman",
+"t": 1455.312,
+"sec": "OLDMAN"
+},
+{
+"id": "v142_oldman",
+"t": 1467.712,
+"sec": "OLDMAN"
+},
+{
+"id": "v143_fifteen",
+"t": 1483.372,
+"sec": "FIFTEEN"
+},
+{
+"id": "v144_fifteen",
+"t": 1493.792,
+"sec": "FIFTEEN"
+},
+{
+"id": "v145_fifteen_b",
+"t": 1517.072,
+"sec": "FIFTEEN_B"
+},
+{
+"id": "v146_fifteen_b",
+"t": 1533.652,
+"sec": "FIFTEEN_B"
+},
+{
+"id": "v147_fifteen_b",
+"t": 1535.952,
+"sec": "FIFTEEN_B"
+},
+{
+"id": "v148_fifteen_b",
+"t": 1544.132,
+"sec": "FIFTEEN_B"
+},
+{
+"id": "v149_fifteen_b",
+"t": 1558.712,
+"sec": "FIFTEEN_B"
+},
+{
+"id": "v150_sixteen",
+"t": 1571.832,
+"sec": "SIXTEEN"
+},
+{
+"id": "v151_sixteen_b",
+"t": 1591.312,
+"sec": "SIXTEEN_B"
+},
+{
+"id": "v152_sixteen_b",
+"t": 1600.992,
+"sec": "SIXTEEN_B"
+},
+{
+"id": "v153_sixteen_b",
+"t": 1610.812,
+"sec": "SIXTEEN_B"
+},
+{
+"id": "v154_sixteen_b",
+"t": 1617.332,
+"sec": "SIXTEEN_B"
+},
+{
+"id": "v155_seventeen",
+"t": 1635.572,
+"sec": "SEVENTEEN"
+},
+{
+"id": "v156_seventeen",
+"t": 1653.148,
+"sec": "SEVENTEEN"
+},
+{
+"id": "v157_seventeen_b",
+"t": 1660.568,
+"sec": "SEVENTEEN_B"
+},
+{
+"id": "v158_seventeen_b",
+"t": 1682.808,
+"sec": "SEVENTEEN_B"
+},
+{
+"id": "v159_seventeen_b",
+"t": 1690.728,
+"sec": "SEVENTEEN_B"
+},
+{
+"id": "v160_seventeen_b",
+"t": 1699.928,
+"sec": "SEVENTEEN_B"
+},
+{
+"id": "v161_eighteen",
+"t": 1720.148,
+"sec": "EIGHTEEN"
+},
+{
+"id": "v162_eighteen",
+"t": 1732.588,
+"sec": "EIGHTEEN"
+},
+{
+"id": "v163_eighteen_b",
+"t": 1738.608,
+"sec": "EIGHTEEN_B"
+},
+{
+"id": "v164_eighteen_b",
+"t": 1763.748,
+"sec": "EIGHTEEN_B"
+},
+{
+"id": "v165_eighteen_b",
+"t": 1773.428,
+"sec": "EIGHTEEN_B"
+},
+{
+"id": "v166_cta2",
+"t": 1790.248,
+"sec": "CTA2"
+},
+{
+"id": "v167_nineteen",
+"t": 1804.768,
+"sec": "NINETEEN"
+},
+{
+"id": "v168_nineteen",
+"t": 1810.028,
+"sec": "NINETEEN"
+},
+{
+"id": "v169_nineteen_b",
+"t": 1822.028,
+"sec": "NINETEEN_B"
+},
+{
+"id": "v170_nineteen_b",
+"t": 1826.908,
+"sec": "NINETEEN_B"
+},
+{
+"id": "v171_nineteen_b",
+"t": 1840.028,
+"sec": "NINETEEN_B"
+},
+{
+"id": "v172_nineteen_b",
+"t": 1858.228,
+"sec": "NINETEEN_B"
+},
+{
+"id": "v173_nineteen_b",
+"t": 1866.148,
+"sec": "NINETEEN_B"
+},
+{
+"id": "v174_comments",
+"t": 1888.728,
+"sec": "COMMENTS"
+},
+{
+"id": "v175_comments",
+"t": 1906.808,
+"sec": "COMMENTS"
+},
+{
+"id": "v176_comments",
+"t": 1913.508,
+"sec": "COMMENTS"
+},
+{
+"id": "v177_comments",
+"t": 1934.168,
+"sec": "COMMENTS"
+},
+{
+"id": "v178_twenty",
+"t": 1944.408,
+"sec": "TWENTY"
+},
+{
+"id": "v179_twenty",
+"t": 1952.228,
+"sec": "TWENTY"
+},
+{
+"id": "v180_twenty",
+"t": 1958.128,
+"sec": "TWENTY"
+},
+{
+"id": "v181_twenty",
+"t": 1962.908,
+"sec": "TWENTY"
+},
+{
+"id": "v182_twenty_b",
+"t": 1972.508,
+"sec": "TWENTY_B"
+},
+{
+"id": "v183_twenty_b",
+"t": 1987.828,
+"sec": "TWENTY_B"
+},
+{
+"id": "v184_twenty_b",
+"t": 2000.648,
+"sec": "TWENTY_B"
+},
+{
+"id": "v185_twenty_c",
+"t": 2009.908,
+"sec": "TWENTY_C"
+},
+{
+"id": "v186_twenty_c",
+"t": 2018.448,
+"sec": "TWENTY_C"
+},
+{
+"id": "v187_twenty_c",
+"t": 2026.888,
+"sec": "TWENTY_C"
+},
+{
+"id": "v188_twenty_c",
+"t": 2033.708,
+"sec": "TWENTY_C"
+},
+{
+"id": "v189_routine",
+"t": 2046.908,
+"sec": "ROUTINE"
+},
+{
+"id": "v190_routine",
+"t": 2052.928,
+"sec": "ROUTINE"
+},
+{
+"id": "v191_routine",
+"t": 2059.408,
+"sec": "ROUTINE"
+},
+{
+"id": "v192_routine",
+"t": 2073.048,
+"sec": "ROUTINE"
+},
+{
+"id": "v193_routine",
+"t": 2084.328,
+"sec": "ROUTINE"
+},
+{
+"id": "v194_recap",
+"t": 2091.508,
+"sec": "RECAP"
+},
+{
+"id": "v195_recap",
+"t": 2112.248,
+"sec": "RECAP"
+},
+{
+"id": "v196_recap",
+"t": 2121.688,
+"sec": "RECAP"
+},
+{
+"id": "v197_recap",
+"t": 2128.108,
+"sec": "RECAP"
+},
+{
+"id": "v198_recap",
+"t": 2141.648,
+"sec": "RECAP"
+},
+{
+"id": "v199_recap",
+"t": 2148.428,
+"sec": "RECAP"
+},
+{
+"id": "v200_next",
+"t": 2178.728,
+"sec": "NEXT"
+},
+{
+"id": "v201_close",
+"t": 2190.388,
+"sec": "CLOSE"
+}
+]
