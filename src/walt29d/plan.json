@@ -1,0 +1,1541 @@
+{
+"segs": [
+[
+3.5,
+9.26,
+"shot",
+"v02_cafetera_cocina"
+],
+[
+9.26,
+14.86,
+"shot",
+"n_rosal_borra"
+],
+[
+14.86,
+17.0,
+"shot",
+"n_hortensia_rosa"
+],
+[
+20.405,
+26.62,
+"shot",
+"v01_borra_rosal"
+],
+[
+26.62,
+31.02,
+"shot",
+"n_lata_cafe_mesada"
+],
+[
+31.02,
+32.765,
+"shot",
+"n_once_frascos"
+],
+[
+38.7,
+42.1,
+"shot",
+"n_compost_oscuro_mano"
+],
+[
+42.1,
+48.284,
+"shot",
+"n_costra_gris"
+],
+[
+54.5,
+63.6,
+"shot",
+"n_herramientas_jardin"
+],
+[
+63.6,
+66.1,
+"shot",
+"n_balde_y_cuatro"
+],
+[
+66.1,
+68.1,
+"shot",
+"n_bolsas_borra"
+],
+[
+72.7,
+80.66,
+"shot",
+"n_carretilla_hojas"
+],
+[
+80.66,
+82.96,
+"shot",
+"n_botas_chaleco"
+],
+[
+82.96,
+84.155,
+"shot",
+"n_huerta_canteros"
+],
+[
+88.3,
+92.66,
+"shot",
+"n_banco_garaje_d"
+],
+[
+92.66,
+98.6,
+"shot",
+"n_frascos_etiquetas"
+],
+[
+102.9,
+107.14,
+"shot",
+"n_hoja_cafe_roya"
+],
+[
+107.14,
+111.64,
+"shot",
+"n_isla_plantacion_vieja"
+],
+[
+111.64,
+115.7,
+"shot",
+"n_plantacion_te"
+],
+[
+120.521,
+125.38,
+"shot",
+"n_hojas_descomponiendo"
+],
+[
+125.38,
+130.2,
+"shot",
+"n_borra_sobre_tierra"
+],
+[
+130.2,
+132.6,
+"shot",
+"n_lombriz_tierra"
+],
+[
+135.8,
+139.28,
+"shot",
+"n_hongos_borra"
+],
+[
+139.28,
+143.78,
+"shot",
+"n_compost_capas"
+],
+[
+143.78,
+147.153,
+"shot",
+"n_compost_terminado"
+],
+[
+151.7,
+156.34,
+"shot",
+"n_borra_tallo_tomate"
+],
+[
+156.34,
+160.88,
+"shot",
+"n_suelo_microscopio"
+],
+[
+160.88,
+164.5,
+"shot",
+"n_raices_finas"
+],
+[
+169.0,
+175.32,
+"shot",
+"n_raiz_tomate_corte"
+],
+[
+175.32,
+178.68,
+"shot",
+"n_capa_gruesa"
+],
+[
+178.68,
+179.851,
+"shot",
+"n_hojas_palidas"
+],
+[
+184.436,
+192.1,
+"shot",
+"n_tomate_lento"
+],
+[
+192.1,
+196.154,
+"shot",
+"n_campus_universidad"
+],
+[
+202.05,
+208.54,
+"shot",
+"n_cafeteria_campus"
+],
+[
+208.54,
+213.02,
+"shot",
+"n_baldes_borra"
+],
+[
+213.02,
+214.7,
+"shot",
+"n_balanza_balde"
+],
+[
+220.007,
+223.9,
+"shot",
+"n_cantero_costra"
+],
+[
+223.9,
+229.879,
+"shot",
+"n_agua_escurre"
+],
+[
+233.3,
+238.0,
+"shot",
+"n_pala_costra"
+],
+[
+238.0,
+242.24,
+"shot",
+"n_corte_costra"
+],
+[
+242.24,
+244.396,
+"shot",
+"n_bolsa_muestra"
+],
+[
+249.0,
+258.96,
+"shot",
+"n_lombrices_borra"
+],
+[
+258.96,
+260.681,
+"shot",
+"n_cuaderno_siete"
+],
+[
+265.42,
+271.98,
+"shot",
+"n_hortensias_rosa_azul"
+],
+[
+271.98,
+276.1,
+"shot",
+"n_taza_cafe_negra"
+],
+[
+280.816,
+287.72,
+"shot",
+"n_suelo_arcilla"
+],
+[
+287.72,
+291.82,
+"shot",
+"n_tiras_ph_tubo"
+],
+[
+291.82,
+294.092,
+"shot",
+"n_punado_tierra"
+],
+[
+298.409,
+302.54,
+"shot",
+"n_borra_usada_frasco"
+],
+[
+302.54,
+308.29,
+"shot",
+"n_cafe_vertiendo"
+],
+[
+312.613,
+320.7,
+"shot",
+"v03_tira_ph"
+],
+[
+321.98,
+324.287,
+"shot",
+"n_lluvia_balde"
+],
+[
+328.6,
+338.22,
+"shot",
+"n_bolsa_sulfato"
+],
+[
+338.22,
+339.891,
+"shot",
+"n_raices_quemadas"
+],
+[
+345.135,
+351.62,
+"shot",
+"n_hortensia_maceta"
+],
+[
+351.62,
+354.2,
+"shot",
+"n_maceta_azul_porche"
+],
+[
+358.9,
+368.86,
+"shot",
+"n_arandanos_mata"
+],
+[
+368.86,
+372.7,
+"shot",
+"n_arandano_borra"
+],
+[
+376.8,
+384.84,
+"shot",
+"n_monton_borra"
+],
+[
+384.84,
+386.6,
+"shot",
+"n_kit_suelo"
+],
+[
+390.1,
+393.54,
+"shot",
+"n_azufre_granulos"
+],
+[
+393.54,
+396.62,
+"shot",
+"n_agujas_pino"
+],
+[
+396.62,
+402.978,
+"shot",
+"n_arandanos_silvestres"
+],
+[
+406.528,
+413.54,
+"shot",
+"n_cantero_arruinado"
+],
+[
+413.54,
+417.12,
+"shot",
+"n_borra_macro"
+],
+[
+417.12,
+418.888,
+"shot",
+"n_costra_seca"
+],
+[
+422.306,
+430.2,
+"shot",
+"n_gotas_costra"
+],
+[
+430.2,
+431.859,
+"shot",
+"n_moho_borra"
+],
+[
+437.411,
+443.82,
+"shot",
+"v08_costra_moho"
+],
+[
+443.82,
+445.26,
+"shot",
+"n_regla_media_pulgada"
+],
+[
+445.26,
+451.3,
+"shot",
+"n_rastrillo_mano"
+],
+[
+456.138,
+463.12,
+"shot",
+"n_lombriz_bajo_mantillo"
+],
+[
+463.12,
+466.04,
+"shot",
+"n_bandeja_semillero"
+],
+[
+466.04,
+468.7,
+"shot",
+"n_plantines_muertos"
+],
+[
+474.3,
+481.46,
+"shot",
+"n_granos_cafe"
+],
+[
+481.46,
+484.563,
+"shot",
+"n_cereza_cafe"
+],
+[
+490.734,
+498.52,
+"shot",
+"n_dos_bandejas"
+],
+[
+498.52,
+501.82,
+"shot",
+"n_plantines_chicos"
+],
+[
+501.82,
+503.594,
+"shot",
+"n_semillas_sobres"
+],
+[
+507.902,
+516.76,
+"shot",
+"n_mezcla_semillero"
+],
+[
+516.76,
+518.7,
+"shot",
+"n_semillero_sano"
+],
+[
+524.4,
+529.88,
+"shot",
+"n_compost_cernido"
+],
+[
+529.88,
+533.98,
+"shot",
+"n_anillo_hosta"
+],
+[
+533.98,
+537.293,
+"shot",
+"n_babosa_hoja"
+],
+[
+542.033,
+550.68,
+"shot",
+"n_frascos_cafeina"
+],
+[
+550.68,
+554.393,
+"shot",
+"n_hosta_mordida"
+],
+[
+560.2,
+564.82,
+"shot",
+"n_jardin_noche_mojado"
+],
+[
+564.82,
+569.9,
+"shot",
+"n_babosa_cruza"
+],
+[
+575.6,
+582.7,
+"shot",
+"n_cebo_babosas"
+],
+[
+582.7,
+586.78,
+"shot",
+"n_hoyo_borra"
+],
+[
+586.78,
+589.6,
+"shot",
+"n_tomate_trasplante"
+],
+[
+593.543,
+602.32,
+"shot",
+"n_raices_jovenes"
+],
+[
+602.32,
+606.298,
+"shot",
+"n_tomate_recien"
+],
+[
+610.842,
+615.78,
+"shot",
+"n_tomate_palido"
+],
+[
+615.78,
+619.42,
+"shot",
+"n_tomates_vecino"
+],
+[
+619.42,
+622.174,
+"shot",
+"n_pala_compost_hoyo"
+],
+[
+628.1,
+632.74,
+"shot",
+"n_tomate_fuerte"
+],
+[
+632.74,
+636.4,
+"shot",
+"n_te_cafe_maceta"
+],
+[
+636.4,
+641.5,
+"shot",
+"n_balde_te_cafe"
+],
+[
+645.3,
+649.1,
+"shot",
+"n_moho_maceta"
+],
+[
+649.1,
+656.78,
+"shot",
+"n_maceta_ventana"
+],
+[
+661.8,
+669.54,
+"shot",
+"n_mosquitas_maceta"
+],
+[
+669.54,
+674.159,
+"shot",
+"n_regadera_agua"
+],
+[
+678.9,
+688.38,
+"shot",
+"n_tierra_seca"
+],
+[
+688.38,
+692.0,
+"shot",
+"n_cuaderno_palabra"
+],
+[
+696.7,
+699.71,
+"shot",
+"n_canteros_sanos"
+],
+[
+699.71,
+704.77,
+"shot",
+"n_cantero_florido"
+],
+[
+704.77,
+707.0,
+"shot",
+"v05_lombrices"
+],
+[
+711.4,
+720.75,
+"shot",
+"n_lombrices_monton"
+],
+[
+720.75,
+724.7,
+"shot",
+"n_lombriz_macro"
+],
+[
+728.3,
+735.57,
+"shot",
+"n_humus_lombriz"
+],
+[
+735.57,
+740.0,
+"shot",
+"n_caja_lombrices"
+],
+[
+746.204,
+751.53,
+"shot",
+"n_punado_borra"
+],
+[
+751.53,
+756.766,
+"shot",
+"n_papel_triturado"
+],
+[
+761.0,
+769.19,
+"shot",
+"n_compostera_madera"
+],
+[
+769.19,
+773.8,
+"shot",
+"n_restos_cocina"
+],
+[
+778.118,
+783.71,
+"shot",
+"n_hojas_paja"
+],
+[
+783.71,
+788.8,
+"shot",
+"n_borra_verde"
+],
+[
+794.2,
+798.65,
+"shot",
+"v04_compost_mezcla"
+],
+[
+798.65,
+804.51,
+"shot",
+"n_termometro_compost"
+],
+[
+804.51,
+807.1,
+"shot",
+"n_compost_vapor"
+],
+[
+811.21,
+816.73,
+"shot",
+"n_filtros_papel"
+],
+[
+816.73,
+823.8,
+"shot",
+"n_sarten_hierro"
+],
+[
+827.4,
+831.77,
+"shot",
+"n_frota_sarten"
+],
+[
+831.77,
+835.99,
+"shot",
+"n_manos_borra"
+],
+[
+835.99,
+838.7,
+"shot",
+"n_cuchara_borra_jabon"
+],
+[
+844.1,
+854.79,
+"shot",
+"n_ajo_cebolla"
+],
+[
+854.79,
+857.4,
+"shot",
+"n_uno_cuatro_baldes"
+],
+[
+862.0,
+867.53,
+"shot",
+"v09_frasco_balde"
+],
+[
+867.53,
+873.2,
+"shot",
+"n_aro_alambre_hojas"
+],
+[
+877.642,
+885.61,
+"shot",
+"n_cuatro_baldes"
+],
+[
+885.61,
+889.38,
+"shot",
+"n_carretilla_mezcla"
+],
+[
+894.0,
+901.03,
+"shot",
+"n_horquilla_compost"
+],
+[
+901.03,
+907.882,
+"shot",
+"n_balanza_plato"
+],
+[
+911.622,
+914.85,
+"shot",
+"n_costra_vs_mezcla"
+],
+[
+914.85,
+922.4,
+"shot",
+"n_hojas_borra_mezcla"
+],
+[
+926.6,
+938.47,
+"shot",
+"n_compost_bosque"
+],
+[
+938.47,
+939.4,
+"shot",
+"n_huerta_primavera"
+],
+[
+943.5,
+947.55,
+"shot",
+"n_pala_hoyo"
+],
+[
+947.55,
+951.11,
+"shot",
+"n_anillo_compost_rosa"
+],
+[
+951.11,
+954.698,
+"shot",
+"n_lata_y_compost"
+],
+[
+959.0,
+966.57,
+"shot",
+"v06_capa_fina"
+],
+[
+966.57,
+969.6,
+"shot",
+"n_cantero_hojas"
+],
+[
+974.536,
+984.07,
+"shot",
+"n_dos_frascos_vacios"
+],
+[
+984.07,
+986.0,
+"shot",
+"n_frascos_borra_hojas"
+],
+[
+990.6,
+999.61,
+"shot",
+"n_frasco_mezcla"
+],
+[
+999.61,
+1003.5,
+"shot",
+"n_frascos_tela"
+],
+[
+1009.023,
+1016.71,
+"shot",
+"n_agua_sobre_borra"
+],
+[
+1016.71,
+1019.7,
+"shot",
+"n_ladrillo_moho"
+],
+[
+1024.9,
+1030.05,
+"shot",
+"n_frasco_oscuro"
+],
+[
+1030.05,
+1036.53,
+"shot",
+"n_lombrices_frasco"
+],
+[
+1036.53,
+1037.672,
+"shot",
+"n_frascos_lado_a_lado"
+],
+[
+1041.729,
+1049.03,
+"shot",
+"n_borra_cuchara_macro"
+],
+[
+1049.03,
+1051.4,
+"shot",
+"n_libreta_numeros"
+],
+[
+1055.226,
+1063.31,
+"shot",
+"n_ceniza_huesos"
+],
+[
+1063.31,
+1065.875,
+"shot",
+"n_grano_partido"
+],
+[
+1069.7,
+1081.05,
+"shot",
+"n_compost_textura"
+],
+[
+1081.05,
+1082.7,
+"shot",
+"n_te_oscuro_vaso"
+],
+[
+1088.046,
+1093.73,
+"shot",
+"n_raiz_marron"
+],
+[
+1093.73,
+1098.393,
+"shot",
+"n_hongo_blanco_hojas"
+],
+[
+1103.3,
+1113.57,
+"shot",
+"n_plantines_compost"
+],
+[
+1113.57,
+1116.0,
+"shot",
+"n_cafetera_jarra"
+],
+[
+1121.405,
+1128.49,
+"shot",
+"n_cantero_monton"
+],
+[
+1128.49,
+1132.9,
+"shot",
+"n_pila_grande_compost"
+],
+[
+1137.032,
+1145.87,
+"shot",
+"n_huerta_grande"
+],
+[
+1145.87,
+1148.3,
+"shot",
+"n_cafeteria_pueblo"
+],
+[
+1153.421,
+1158.53,
+"shot",
+"n_bolsas_hojas"
+],
+[
+1158.53,
+1166.6,
+"shot",
+"n_balde_cafe_hojas"
+],
+[
+1171.025,
+1176.81,
+"shot",
+"n_hojas_cayendo"
+],
+[
+1176.81,
+1178.23,
+"shot",
+"n_rastrillo_hojas"
+],
+[
+1178.23,
+1183.6,
+"shot",
+"n_compostera_nieve"
+],
+[
+1189.631,
+1194.89,
+"shot",
+"n_primera_tanda"
+],
+[
+1194.89,
+1200.7,
+"shot",
+"n_once_bolsas"
+],
+[
+1206.4,
+1214.61,
+"shot",
+"n_bolsa_descafeinado"
+],
+[
+1214.61,
+1219.3,
+"shot",
+"n_semillas_mano"
+],
+[
+1224.7,
+1233.41,
+"shot",
+"n_bolsitas_te"
+],
+[
+1233.41,
+1235.3,
+"shot",
+"n_bolsita_te_corte"
+],
+[
+1239.7,
+1249.75,
+"shot",
+"n_perro_jardin"
+],
+[
+1249.75,
+1252.3,
+"shot",
+"n_perro_balde"
+],
+[
+1257.75,
+1263.17,
+"shot",
+"n_balde_tapa"
+],
+[
+1263.17,
+1269.185,
+"shot",
+"n_compostera_tapa"
+],
+[
+1274.827,
+1277.63,
+"shot",
+"n_palitos_cantero"
+],
+[
+1277.63,
+1284.8,
+"shot",
+"n_alambre_gallinero"
+],
+[
+1290.0,
+1299.33,
+"shot",
+"n_cesped_recortes"
+],
+[
+1299.33,
+1303.6,
+"shot",
+"n_suelo_vivo"
+],
+[
+1308.313,
+1317.57,
+"shot",
+"n_hortensia_rosa_sola"
+],
+[
+1317.57,
+1319.669,
+"shot",
+"n_costra_final"
+],
+[
+1324.6,
+1333.89,
+"shot",
+"n_babosa_noche"
+],
+[
+1333.89,
+1336.0,
+"shot",
+"n_lombrices_punado"
+],
+[
+1341.6,
+1349.71,
+"shot",
+"n_mezcla_carretilla_final"
+],
+[
+1349.71,
+1354.1,
+"shot",
+"n_esponja_mezcla"
+],
+[
+1358.339,
+1366.35,
+"shot",
+"v10_jardin_atardecer"
+],
+[
+1366.35,
+1368.6,
+"shot",
+"n_plantines_ventana"
+],
+[
+1374.4,
+1382.05,
+"shot",
+"n_hojas_te_fresco"
+],
+[
+1382.05,
+1387.3,
+"shot",
+"v07_bandeja_secar"
+]
+],
+"cam": [
+[
+320.7,
+321.98,
+"wide"
+]
+],
+"ov": [
+{
+"k": "words",
+"items": [
+{
+"txt": "4 WORK",
+"col": "green",
+"at": 38.86
+},
+{
+"txt": "7 HURT",
+"col": "red",
+"at": 42.1
+}
+],
+"at": 38.86,
+"out": 44.6
+},
+{
+"k": "chip",
+"txt": "RETIRED FIELD BIOLOGIST · 68",
+"col": "ice",
+"at": 80.66,
+"out": 84.16
+},
+{
+"k": "chip",
+"txt": "▶ MY OTHER CHANNEL · LINK IN THE DESCRIPTION",
+"col": "amber",
+"at": 113.86,
+"out": 115.94
+},
+{
+"k": "chip",
+"txt": "SUBSCRIBE · A NEW TEST EVERY WEEK",
+"col": "green",
+"at": 116.24,
+"out": 119.74
+},
+{
+"k": "big",
+"txt": "DECOMPOSITION",
+"sub": "SOIL LIFE FIRST · PLANTS LATER",
+"col": "amber",
+"at": 122.18,
+"out": 125.38
+},
+{
+"k": "big",
+"txt": "40 LB",
+"sub": "OF GROUNDS A WEEK · ONE FLOWER BED",
+"col": "amber",
+"at": 213.02,
+"out": 216.22
+},
+{
+"k": "step",
+"n": 1,
+"name": "TURN HYDRANGEAS BLUE",
+"col": "red",
+"at": 261.16,
+"out": 265.16
+},
+{
+"k": "big",
+"txt": "pH 6.5",
+"sub": "USED GROUNDS · ALMOST RAINWATER",
+"col": "ice",
+"at": 321.98,
+"out": 325.18
+},
+{
+"k": "chip",
+"txt": "ALUMINUM SULFATE · GO SLOW",
+"col": "green",
+"at": 330.94,
+"out": 334.44
+},
+{
+"k": "step",
+"n": 2,
+"name": "ACIDIFY FOR BLUEBERRIES",
+"col": "red",
+"at": 353.16,
+"out": 357.16
+},
+{
+"k": "chip",
+"txt": "SULFUR A SEASON BEFORE · PINE NEEDLES",
+"col": "green",
+"at": 390.5,
+"out": 394.0
+},
+{
+"k": "step",
+"n": 3,
+"name": "A THICK MULCH",
+"col": "red",
+"at": 401.84,
+"out": 405.84
+},
+{
+"k": "stamp",
+"txt": "MAX ½ INCH",
+"at": 443.82,
+"out": 446.82
+},
+{
+"k": "step",
+"n": 4,
+"name": "IN THE SEED TRAY",
+"col": "red",
+"at": 461.1,
+"out": 465.1
+},
+{
+"k": "stamp",
+"txt": "CAFFEINE = A WEAPON",
+"at": 479.28,
+"out": 482.28
+},
+{
+"k": "step",
+"n": 5,
+"name": "A RING FOR SLUGS",
+"col": "red",
+"at": 528.1,
+"out": 532.1
+},
+{
+"k": "chip",
+"txt": "IRON PHOSPHATE BAIT · PET SAFE",
+"col": "green",
+"at": 575.88,
+"out": 579.38
+},
+{
+"k": "step",
+"n": 6,
+"name": "IN THE PLANTING HOLE",
+"col": "red",
+"at": 581.5,
+"out": 585.5
+},
+{
+"k": "chip",
+"txt": "FINISHED COMPOST IN THE HOLE",
+"col": "green",
+"at": 619.42,
+"out": 622.92
+},
+{
+"k": "step",
+"n": 7,
+"name": "COFFEE TEA ON HOUSEPLANTS",
+"col": "red",
+"at": 631.48,
+"out": 635.48
+},
+{
+"k": "chip",
+"txt": "PLAIN WATER · LET THE TOP DRY",
+"col": "green",
+"at": 669.54,
+"out": 673.04
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE WORM BIN",
+"col": "green",
+"at": 703.17,
+"out": 707.17
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE COMPOST PILE",
+"col": "green",
+"at": 757.13,
+"out": 761.13
+},
+{
+"k": "step",
+"n": 10,
+"name": "THE SCRUB",
+"col": "green",
+"at": 815.69,
+"out": 819.69
+},
+{
+"k": "step",
+"n": 11,
+"name": "THE 1-TO-4 MIX",
+"col": "green",
+"at": 852.89,
+"out": 856.89
+},
+{
+"k": "big",
+"txt": "1 : 4",
+"sub": "1 BUCKET GROUNDS · 4 BUCKETS DRY LEAVES",
+"col": "green",
+"at": 881.51,
+"out": 884.71
+},
+{
+"k": "big",
+"txt": "2%",
+"sub": "NITROGEN IN USED GROUNDS",
+"col": "ice",
+"at": 1049.03,
+"out": 1052.23
+},
+{
+"k": "deal",
+"at": 1206.73,
+"out": 1211.23
+},
+{
+"k": "chip",
+"txt": "«DECAF?» · SAME PROBLEMS",
+"col": "ice",
+"at": 1209.47,
+"out": 1212.97
+},
+{
+"k": "chip",
+"txt": "«TEA LEAVES?» · GREAT GREEN",
+"col": "ice",
+"at": 1225.71,
+"out": 1229.21
+},
+{
+"k": "chip",
+"txt": "«CATS?» · STICKS OR CHICKEN WIRE",
+"col": "ice",
+"at": 1264.89,
+"out": 1268.39
+},
+{
+"k": "chip",
+"txt": "«ON THE LAWN?» · LEAVE THE CLIPPINGS",
+"col": "ice",
+"at": 1282.55,
+"out": 1286.05
+},
+{
+"k": "recap",
+"rows": [
+1297.55,
+1308.49,
+1315.33,
+1324.71,
+1327.55,
+1333.89,
+1343.07
+],
+"at": 1293.79,
+"out": 1349.07
+},
+{
+"k": "ask",
+"at": 1358.51,
+"out": 1370.51
+},
+{
+"k": "next",
+"at": 1385.13,
+"out": 1390.13
+}
+],
+"cta1": {
+"desc": 116.24,
+"end": 122.24
+},
+"cta2": {
+"desc": 1367.83,
+"end": 1373.83
+},
+"cta3": {
+"desc": 1377.67,
+"end": 1382.67
+},
+"end": 1387.31,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+852.886,
+984.066
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "WHAT TO KEEP",
+"recap": [
+"Decomposition: soil life first",
+"Blue hydrangeas = aluminum",
+"Used grounds ≈ neutral pH",
+"Never more than ½ inch",
+"Nothing fresh near seeds or roots",
+"Worm bin + compost pile",
+"1 bucket grounds : 4 buckets leaves"
+],
+"ask": [
+"What do you do",
+"with your coffee grounds?",
+"Tell me · I'll test it"
+],
+"next": [
+"NEXT TIME",
+"Another trick, tested"
+],
+"lower": [
+76.2,
+82.2
+]
+}
+}

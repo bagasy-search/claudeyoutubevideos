@@ -1,0 +1,358 @@
+[
+{
+"k": "hydrangea",
+"at": 20.46,
+"out": 25.96,
+"said": 14.86,
+"solo": true,
+"kw": "BLUE?",
+"kw2": "that is the promise",
+"ph": "ph_hydrangea"
+},
+{
+"k": "eleven",
+"at": 28.12,
+"out": 32.62,
+"said": 31.02,
+"sp": 1.333,
+"solo": true,
+"kw": "11 COFFEE TRICKS",
+"kw2": "each one tested",
+"ph": "ph_eleven"
+},
+{
+"k": "year",
+"at": 63.5,
+"out": 68.0,
+"said": 66.1,
+"sp": 1.333,
+"solo": true,
+"kw": "A YEAR OF GROUNDS",
+"kw2": "into one simple mix",
+"ph": "ph_year"
+},
+{
+"k": "rust",
+"at": 104.0,
+"out": 110.5,
+"said": 104.0,
+"solo": true,
+"kw": "1870s",
+"kw2": "a fungus took the coffee",
+"ph": "ph_rust"
+},
+{
+"k": "soilfood",
+"at": 135.9,
+"out": 142.4,
+"said": 130.2,
+"solo": true,
+"kw": "SOIL FOOD",
+"kw2": "not plant food",
+"ph": "ph_soilfood"
+},
+{
+"k": "tieup",
+"at": 159.88,
+"out": 164.38,
+"said": 160.88,
+"sp": 1.444,
+"solo": true,
+"kw": "NITROGEN TIE-UP",
+"kw2": "the microbes eat first",
+"ph": "ph_tieup"
+},
+{
+"k": "starved",
+"at": 186.7,
+"out": 192.7,
+"said": 186.7,
+"solo": true,
+"kw": "ONE MONTH",
+"kw2": "the tomato goes hungry",
+"ph": "ph_starved"
+},
+{
+"k": "graycrust",
+"at": 220.1,
+"out": 226.1,
+"said": 220.1,
+"solo": true,
+"kw": "A GRAY CRUST",
+"kw2": "and the rain ran off",
+"ph": "ph_graycrust"
+},
+{
+"k": "threeinch",
+"at": 238.0,
+"out": 244.0,
+"said": 238.0,
+"solo": true,
+"kw": "3 INCHES",
+"kw2": "packed like clay, dry below",
+"ph": "ph_threeinch"
+},
+{
+"k": "aluminum",
+"at": 283.9,
+"out": 290.4,
+"said": 283.9,
+"solo": true,
+"kw": "IT'S ALUMINUM",
+"kw2": "not the coffee",
+"ph": "ph_aluminum"
+},
+{
+"k": "cup",
+"at": 302.54,
+"out": 308.04,
+"said": 302.54,
+"sp": 1.091,
+"solo": true,
+"kw": "IN YOUR CUP",
+"kw2": "the acid left with the coffee",
+"ph": "ph_cup"
+},
+{
+"k": "pot",
+"at": 348.263,
+"out": 353.76,
+"said": 348.26,
+"sp": 1.091,
+"solo": true,
+"kw": "A BIG POT",
+"kw2": "acid mix, blue every year",
+"ph": "ph_pot"
+},
+{
+"k": "pine",
+"at": 396.623,
+"out": 402.62,
+"said": 396.62,
+"solo": true,
+"kw": "PINE FLOOR",
+"kw2": "how blueberries grow wild",
+"ph": "ph_pine"
+},
+{
+"k": "beads",
+"at": 422.443,
+"out": 428.44,
+"said": 422.44,
+"solo": true,
+"kw": "IT RUNS OFF",
+"kw2": "the soil stays dry",
+"ph": "ph_beads"
+},
+{
+"k": "seedtray",
+"at": 498.523,
+"out": 503.52,
+"said": 498.52,
+"sp": 1.3,
+"solo": true,
+"kw": "SLOWER \u00c2\u00b7 SMALLER",
+"kw2": "caffeine in the mix",
+"ph": "ph_seedtray"
+},
+{
+"k": "slugcross",
+"at": 564.823,
+"out": 569.82,
+"said": 564.82,
+"sp": 1.2,
+"solo": true,
+"kw": "THEY CROSS IT",
+"kw2": "on a wet night",
+"ph": "ph_slugcross"
+},
+{
+"k": "hole",
+"at": 593.763,
+"out": 600.26,
+"said": 593.76,
+"solo": true,
+"kw": "IN THE HOLE",
+"kw2": "right where the roots go",
+"ph": "ph_hole"
+},
+{
+"k": "pale",
+"at": 612.883,
+"out": 618.88,
+"said": 612.88,
+"solo": true,
+"kw": "PALE AND SLOW",
+"kw2": "not dead, just stuck",
+"ph": "ph_pale"
+},
+{
+"k": "gnats",
+"at": 663.003,
+"out": 669.0,
+"said": 663.0,
+"solo": true,
+"kw": "A GNAT FEAST",
+"kw2": "damp, rich and warm",
+"ph": "ph_gnats"
+},
+{
+"k": "buffet",
+"at": 714.626,
+"out": 720.63,
+"said": 714.63,
+"solo": true,
+"kw": "A BUFFET",
+"kw2": "for red wigglers",
+"ph": "ph_buffet"
+},
+{
+"k": "quarter",
+"at": 752.15,
+"out": 756.65,
+"said": 753.95,
+"sp": 1.333,
+"solo": true,
+"kw": "\u00c2\u00bc AT MOST",
+"kw2": "of what the bin eats",
+"ph": "ph_quarter"
+},
+{
+"k": "green",
+"at": 783.706,
+"out": 788.71,
+"said": 783.71,
+"sp": 1.2,
+"solo": true,
+"kw": "BROWN, BUT GREEN",
+"kw2": "a nitrogen ingredient",
+"ph": "ph_green"
+},
+{
+"k": "heat",
+"at": 798.646,
+"out": 805.15,
+"said": 798.65,
+"solo": true,
+"kw": "130\u00c2\u00b0F",
+"kw2": "one week after one bucket",
+"ph": "ph_heat"
+},
+{
+"k": "skillet",
+"at": 828.206,
+"out": 834.21,
+"said": 828.21,
+"solo": true,
+"kw": "CAST IRON",
+"kw2": "scrubbed, not stripped",
+"ph": "ph_skillet"
+},
+{
+"k": "wirering",
+"at": 867.526,
+"out": 873.03,
+"said": 867.53,
+"sp": 1.182,
+"solo": true,
+"kw": "THE LEAF RING",
+"kw2": "right beside the bin",
+"ph": "ph_wirering"
+},
+{
+"k": "balance",
+"at": 901.026,
+"out": 907.53,
+"said": 901.03,
+"solo": true,
+"kw": "THE BALANCE",
+"kw2": "nitrogen and air",
+"ph": "ph_balance"
+},
+{
+"k": "forest",
+"at": 926.986,
+"out": 933.49,
+"said": 926.99,
+"solo": true,
+"kw": "FOREST FLOOR",
+"kw2": "no coffee smell left",
+"ph": "ph_forest"
+},
+{
+"k": "jars",
+"at": 981.47,
+"out": 985.97,
+"said": 984.07,
+"sp": 1.333,
+"solo": true,
+"kw": "THE JAR TEST",
+"kw2": "same grounds, two jars",
+"ph": "ph_jars"
+},
+{
+"k": "worms2",
+"at": 1030.046,
+"out": 1036.05,
+"said": 1030.05,
+"solo": true,
+"kw": "TWO WORMS",
+"kw2": "moved in on their own",
+"ph": "ph_worms2"
+},
+{
+"k": "bean",
+"at": 1061.31,
+"out": 1065.81,
+"said": 1063.31,
+"sp": 1.333,
+"solo": true,
+"kw": "WOODY WALLS",
+"kw2": "that is the crumble",
+"ph": "ph_bean"
+},
+{
+"k": "tannins",
+"at": 1078.15,
+"out": 1082.65,
+"said": 1081.05,
+"sp": 1.333,
+"solo": true,
+"kw": "TANNINS",
+"kw2": "they slow a young root",
+"ph": "ph_tannins"
+},
+{
+"k": "onepot",
+"at": 1111.47,
+"out": 1115.97,
+"said": 1113.57,
+"sp": 1.444,
+"solo": true,
+"kw": "1 POT A DAY",
+"kw2": "about 50 lb a year",
+"ph": "ph_onepot"
+},
+{
+"k": "elevenbags",
+"at": 1194.888,
+"out": 1200.39,
+"said": 1194.89,
+"sp": 1.182,
+"solo": true,
+"kw": "11 BAGS",
+"kw2": "all winter by the wall",
+"ph": "ph_elevenbags"
+},
+{
+"k": "dogs",
+"at": 1247.75,
+"out": 1252.25,
+"said": 1249.75,
+"sp": 1.333,
+"solo": true,
+"kw": "TOXIC TO DOGS",
+"kw2": "keep a lid on the bucket",
+"ph": "ph_dogs"
+}
+]
