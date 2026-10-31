@@ -1,0 +1,1 @@
+31-oct 03:25 re-render: n_lista_once_banco era una lista de auto → sobres de sal (ojo del director)
