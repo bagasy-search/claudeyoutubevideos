@@ -360,8 +360,8 @@ const Oven: React.FC<{ t: number; tex: ReturnType<typeof useBakeryTex>; flake: T
   const flames: React.ReactNode[] = [];
   if (S.fire > 0.02) for (let i = 0; i < 9; i++) {
     const fl = 0.75 + 0.35 * Math.sin(t * (3.5 + 0.4 * i) + i * 2.1) + 0.15 * Math.sin(t * 8 + i);
-    const x = (rnd(i, 41) - 0.5) * 0.55, z = -0.35 + (rnd(i, 42) - 0.5) * 0.35, h = (0.28 + 0.3 * rnd(i, 43)) * fl * S.fire;
-    flames.push(<mesh key={i} position={[c[0] + x, c[1] + 0.08 + h / 2, c[2] + z]} rotation={[0, t * 0.5 + i, Math.sin(t * 2.2 + i) * 0.12]} scale={[0.07 + 0.04 * rnd(i, 44), h / 2 + 0.001, 0.07 + 0.04 * rnd(i, 44)]}><sphereGeometry args={[1, 14, 10]} /><meshBasicMaterial color={i % 3 === 0 ? "#ffc070" : "#ff6a1a"} transparent opacity={0.3 * S.fire} toneMapped={false} depthWrite={false} blending={THREE.AdditiveBlending} /></mesh>);
+    const x = (rnd(i, 41) - 0.5) * 0.55, z = -0.35 + (rnd(i, 42) - 0.5) * 0.35, h = (0.13 + 0.12 * rnd(i, 43)) * fl * S.fire;
+    flames.push(<mesh key={i} position={[c[0] + x, c[1] + 0.08 + h / 2, c[2] + z]} rotation={[0, t * 0.5 + i, Math.sin(t * 2.2 + i) * 0.12]} scale={[0.04 + 0.025 * rnd(i, 44), h / 2 + 0.001, 0.04 + 0.025 * rnd(i, 44)]}><sphereGeometry args={[1, 14, 10]} /><meshBasicMaterial color={i % 3 === 0 ? "#ffc070" : "#ff6a1a"} transparent opacity={0.22 * S.fire} toneMapped={false} depthWrite={false} blending={THREE.AdditiveBlending} /></mesh>);
   }
   // brasas que suben
   const emb: number[] = [];
@@ -400,7 +400,7 @@ const Oven: React.FC<{ t: number; tex: ReturnType<typeof useBakeryTex>; flake: T
       {/* chimenea */}
       <Cyl p={[c[0] + 0.5, c[1] + DOME_R + 0.9, c[2] - 0.7]} r={0.16} h={1.6} c="#7b766d" ro={0.95} />
       {/* fuego */}
-      {branches}{flames}<pointLight position={[c[0], c[1] + 0.4, c[2] - 0.3]} intensity={13 * S.fire * (0.88 + 0.12 * Math.sin(t * 9))} distance={6} color="#ff8a3a" castShadow />
+      {branches}{flames}<pointLight position={[c[0], c[1] + 0.4, c[2] - 0.3]} intensity={9 * S.fire * (0.88 + 0.12 * Math.sin(t * 9))} distance={6} color="#ff8a3a" castShadow />
       <pointLight position={[c[0], c[1] + 0.6, c[2] - 0.2]} intensity={7 * glow * (1 - S.fire)} distance={4} color="#ff7a3a" />
       <Pts pos={emb} size={0.025} col="#ffb35a" o={0.9 * S.fire} map={flake} addB />
       <Pts pos={heat} size={0.05} col="#ff8a3a" o={0.75 * S.heatIn} map={flake} addB />

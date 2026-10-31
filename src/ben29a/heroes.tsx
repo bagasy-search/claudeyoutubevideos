@@ -458,25 +458,25 @@ const grietaTex = (k: number) => ctex("grieta" + Math.round(k * 30), 512, 512, (
 });
 const H22Pulgar: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" mesa={false}>{(tt) => {
   const press = Math.sin(cl((tt - 1.0) / 2.4) * P), cr = cl((tt - 1.4) / 1.6);
-  return <Estudio t={tt} cam={[0.3, 1.0, 1.6]} look={[0, 0.4, 0]} orbit={0.06} fov={32}>
+  return <Estudio t={tt} cam={[0.3, 1.35, 2.35]} look={[0, 0.32, 0]} orbit={0.06} fov={32}>
     <Hogaza p={[0, 0.0, 0]} s={1.4} bake={0.92} open={0.8} flour={0.2} />
     <mesh position={[0, 0.505 - 0.015 * press, 0.0]} rotation={[-P2, 0, 0]}><planeGeometry args={[0.6, 0.6]} /><meshBasicMaterial map={grietaTex(cr)} transparent depthWrite={false} /></mesh>
-    <group position={[0.04, 0.6 - 0.08 * press + 0.35 * (1 - ent(tt, 0.4)), 0.08]} rotation={[-0.35, 0, 0.2]}><mesh position={[0, 0.1, 0]}><capsuleGeometry args={[0.05, 0.2, 8, 16]} /><meshPhysicalMaterial color="#e0a888" roughness={0.55} sheen={0.5} sheenColor="#ffd0c0" /></mesh><mesh position={[0, 0.02, 0.035]} rotation={[-0.3, 0, 0]} scale={[0.034, 0.012, 0.04]}><sphereGeometry args={[1, 12, 8]} /><meshStandardMaterial color="#f0c8b8" roughness={0.3} /></mesh></group>
+    <group position={[0.04, 0.565 - 0.03 * press + 0.35 * (1 - ent(tt, 0.4)), 0.04]} rotation={[-0.15, 0, 0.15]}><mesh position={[0, 0.1, 0]}><capsuleGeometry args={[0.05, 0.2, 8, 16]} /><meshPhysicalMaterial color="#e0a888" roughness={0.55} sheen={0.5} sheenColor="#ffd0c0" /></mesh><mesh position={[0, 0.02, 0.035]} rotation={[-0.3, 0, 0]} scale={[0.034, 0.012, 0.04]}><sphereGeometry args={[1, 12, 8]} /><meshStandardMaterial color="#f0c8b8" roughness={0.3} /></mesh></group>
     {Array.from({ length: 14 }, (_, i) => { const x = tt - 1.5 - (i % 4) * 0.1, y = Math.max(0, 1.2 * x - 4.9 * x * x); return <mesh key={i} position={[(rn(i, 1) - 0.5) * 0.4, 0.5 + y, (rn(i, 2) - 0.5) * 0.3]} scale={0.007 + 0.006 * rn(i, 3)} visible={x > 0 && x < 0.3}><dodecahedronGeometry args={[1, 0]} /><meshStandardMaterial color={corteza(0.9)} /></mesh>; })}
   </Estudio>;
 }}</Stage>;
 
 // ── 23 · CUBO DE LEVADURA: a la izquierda la cucharita con 2 g de levadura seca; a la derecha caen tres cubitos de levadura fresca, uno sobre otro
 const H23Cubo: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>{(tt) => (
-  <Estudio t={tt} cam={[0, 0.8, 1.7]} look={[0, 0.22, 0]} orbit={0.1}>
+  <Estudio t={tt} cam={[0, 0.7, 1.35]} look={[0, 0.18, 0]} orbit={0.08}>
     <group position={[-0.55, 0.05, 0]} scale={0.001 + ent(tt, 0.3)}>
-      <mesh position={[0, 0, 0.3]} rotation={[P2, 0, 0]}><cylinderGeometry args={[0.025, 0.03, 0.6, 10]} />{M.cromo()}</mesh>
+      <mesh position={[-0.32, 0.02, -0.05]} rotation={[0, 0, P2]}><cylinderGeometry args={[0.022, 0.026, 0.45, 10]} />{M.cromo()}</mesh>
       <mesh scale={[0.12, 0.04, 0.16]}><sphereGeometry args={[1, 20, 10, 0, 2 * P, P2, P2]} />{M.cromo()}</mesh>
       {Array.from({ length: 24 }, (_, i) => <mesh key={i} position={[(rn(i, 1) - 0.5) * 0.12, 0.01 + rn(i, 3) * 0.03, (rn(i, 2) - 0.5) * 0.15]} scale={[0.01, 0.006, 0.01]}><sphereGeometry args={[1, 6, 4]} /><meshStandardMaterial color="#c9a46a" /></mesh>)}
     </group>
     {[0, 1, 2].map((i) => <RBox key={i} p={[0.45 + (i - 1) * 0.0, 0.07 + i * 0.14 + fall(tt, 1.6 + i * 0.6, 1.2), 0]} rot={[0, (rn(i, 1) - 0.5) * 0.4, 0]} s={[0.22, 0.13, 0.22]} r={0.02}><meshStandardMaterial color="#d9c49a" roughness={0.75} /></RBox>)}
-    <Placa p={[-0.55, 0.05, 0.45]} rot={[-0.7, 0, 0]} w={0.4} h={0.12} tex={cartel("y2", "2 g", { size: 110 })} k={ent(tt, 0.8)} />
-    <Placa p={[0.45, 0.05, 0.45]} rot={[-0.7, 0, 0]} w={0.4} h={0.12} tex={cartel("y6", "6 g", { size: 110 })} k={ent(tt, 3.2)} />
+    <Placa p={[-0.5, 0.05, 0.32]} rot={[-0.7, 0, 0]} w={0.4} h={0.12} tex={cartel("y2", "2 g", { size: 110 })} k={ent(tt, 0.8)} />
+    <Placa p={[0.45, 0.05, 0.32]} rot={[-0.7, 0, 0]} w={0.4} h={0.12} tex={cartel("y6", "6 g", { size: 110 })} k={ent(tt, 3.2)} />
   </Estudio>)}</Stage>;
 
 // ── 24 · FRASCO DE AHORRO: cada semana caen dos monedas (dos hogazas) al frasco y el nivel sube; la etiqueta de papel del frasco dice el año
@@ -527,7 +527,7 @@ const H26Carrera: C = ({ t, h }) => <Stage t={t} h={h} mode="split" mesa={false}
 const sacoGeo = lathe([[0.001, 0], [0.3, 0], [0.36, 0.06], [0.38, 0.3], [0.35, 0.5], [0.22, 0.63], [0.08, 0.69], [0.11, 0.78], [0.001, 0.8]], 40);
 const H27Molino: C = ({ t, h }) => <Stage t={t} h={h} mode="ring" mesa={false}>{(tt) => {
   const fill = eio(tt, 1.0, 5.4);
-  return <Estudio t={tt} cam={[0.3, 1.15, 2.4]} look={[-0.1, 0.6, 0]} orbit={0.1}>
+  return <Estudio t={tt} cam={[0.05, 1.0, 1.95]} look={[0.05, 0.45, 0]} orbit={0.08}>
     <group position={[-0.6, 0.12, 0]}>
       <mesh rotation={[0, tt * 0.8, 0]} castShadow><cylinderGeometry args={[0.6, 0.6, 0.22, 48]} /><meshStandardMaterial color="#9a948a" roughness={0.95} /></mesh>
       <mesh position={[0, 0.22, 0]} rotation={[0, -tt * 1.2, 0]} castShadow><cylinderGeometry args={[0.6, 0.6, 0.2, 48]} /><meshStandardMaterial color="#8a847a" roughness={0.95} /></mesh>
@@ -540,7 +540,7 @@ const H27Molino: C = ({ t, h }) => <Stage t={t} h={h} mode="ring" mesa={false}>{
         <mesh geometry={sacoGeo} castShadow receiveShadow><Yute /></mesh>
         <mesh position={[0, 0.7, 0]} rotation={[P2, 0, 0]}><torusGeometry args={[0.085, 0.012, 6, 24]} /><meshStandardMaterial color="#6a4a2a" roughness={1} /></mesh>
       </group>
-      <mesh position={[0, 0.2 + 0.18 * fill, 0.375]}><planeGeometry args={[0.36, 0.16]} /><meshStandardMaterial map={cartel("50kg", "50 KG", { size: 120, ink: "#8a2f24" })} roughness={0.95} transparent opacity={cl(fill * 2)} /></mesh>
+      <mesh visible={false} position={[0, 0.2 + 0.18 * fill, 0.375]}><planeGeometry args={[0.36, 0.16]} /><meshStandardMaterial map={cartel("50kg", "50 KG", { size: 120, ink: "#8a2f24" })} roughness={0.95} transparent opacity={cl(fill * 2)} /></mesh>
     </group>
   </Estudio>;
 }}</Stage>;
@@ -597,7 +597,7 @@ const H31Tostada: C = ({ t, h }) => <Stage t={t} h={h} mode="drop" mesa={false}>
     <mesh position={[-0.6, 0.505, 0]}><boxGeometry args={[0.4, 0.01, 0.06]} /><meshBasicMaterial color="#ff7a30" toneMapped={false} /></mesh>
     <group position={[sx, sy, 0]} rotation={[-P2 * land, 0, 0]}><Rebanada s={0.45} kind="pueblo" dry={0.6} /></group>
     <mesh position={[0.35, 0.115, 0.0]} rotation={[-P2, 0, 0]} visible={land > 0.9}><planeGeometry args={[0.38 * rub + 0.001, 0.4]} /><meshStandardMaterial color="#c8301c" transparent opacity={0.55} roughness={0.2} /></mesh>
-    <group position={[0.35 + 0.15 * Math.sin(rub * P * 4), 0.17 + 0.3 * (1 - ent(tt, 2.8)), 0]}><mesh scale={[0.13, 0.08, 0.13]}><sphereGeometry args={[1, 24, 12, 0, 2 * P, 0, P2]} /><meshPhysicalMaterial color="#d8301c" roughness={0.2} clearcoat={1} /></mesh></group>
+    <group position={[0.35 + 0.15 * Math.sin(rub * P * 4), 0.17 + 0.3 * (1 - ent(tt, 2.8)), 0]}><mesh scale={[0.13, 0.08, 0.13]}><sphereGeometry args={[1, 24, 12, 0, 2 * P, 0, P2]} /><meshPhysicalMaterial color="#b8442c" roughness={0.45} clearcoat={0.25} /></mesh></group>
     {oil > 0.02 && <Chorro a={[0.6, 1.0, 0]} b={[0.35, 0.14, 0]} r={0.008} c="#c8a020" o={0.9 * oil} t={tt} />}
   </Estudio>;
 }}</Stage>;
@@ -615,11 +615,11 @@ const H32Receta: C = ({ t, h }) => <Stage t={t} h={h} mode="wipe" mesa={false}>{
     <><mesh position={[0, 0.1, 0]} castShadow><cylinderGeometry args={[0.17, 0.15, 0.2, 32]} />{M.hierro()}</mesh><pointLight position={[0, 0.3, 0.2]} intensity={0.8} distance={0.8} color="#ff8a40" /></>,
     <Hogaza p={[0, 0, 0]} s={0.42} bake={1} />,
   ][i];
-  return <Estudio t={tt} cam={[cx + 0.1, lerp(0.95, 1.35, end), lerp(1.8, 2.6, end)]} look={[cx, 0.1, 0]} orbit={0.04} fov={34}>
+  return <Estudio t={tt} cam={[cx + 0.1, lerp(0.85, 1.35, end), lerp(1.55, 2.6, end)]} look={[cx, 0.1, 0]} orbit={0.04} fov={34}>
     <RBox p={[0, 0.02, 0]} s={[N * 0.55 + 0.3, 0.04, 0.6]} r={0.02}>{M.madera("#9a6a3a")}</RBox>
     {E.map((e, i) => <group key={i} position={[X(i), 0.04 + 0.4 * (1 - k[i]), 0]} scale={0.001 + k[i]}>
       {obj(Math.min(i, 5))}
-      <Placa p={[0, 0.005, 0.24]} rot={[-1.0, 0, 0]} w={0.46} h={0.09} tex={cartel("rc" + i, e.tx.toUpperCase(), { size: 70, w: 720 })} />
+      <Placa p={[0, 0.005, 0.24]} rot={[-1.0, 0, 0]} w={0.5} h={0.12} tex={cartel("rc" + i, e.tx.toUpperCase(), { size: 92, w: 720 })} />
     </group>)}
   </Estudio>;
 }}</Stage>;
