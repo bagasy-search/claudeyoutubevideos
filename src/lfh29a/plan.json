@@ -1,0 +1,559 @@
+{
+"segs": [
+[
+4.7,
+9.54,
+"shot",
+"v01"
+],
+[
+9.54,
+15.46,
+"shot",
+"f02_camion_fumigador"
+],
+[
+25.76,
+29.46,
+"shot",
+"f03_granja_iowa"
+],
+[
+29.46,
+34.24,
+"shot",
+"v02"
+],
+[
+38.88,
+43.48,
+"shot",
+"f04_ferreteria_estante"
+],
+[
+43.48,
+50.65,
+"shot",
+"f05_casa_granja_1950"
+],
+[
+114.34,
+117.96,
+"shot",
+"f06_caja_verde_antigua"
+],
+[
+136.61,
+144.61,
+"shot",
+"f07_lago_seco"
+],
+[
+151.01,
+159.01,
+"shot",
+"f08_frasco_aplicador"
+],
+[
+172.22,
+179.22,
+"shot",
+"f09_hormiga_macro"
+],
+[
+204.56,
+211.56,
+"shot",
+"f10_guantes_goma"
+],
+[
+235.15,
+243.15,
+"shot",
+"f11_fila_hormigas_mesa"
+],
+[
+245.84,
+247.41,
+"shot",
+"f12_matamoscas"
+],
+[
+259.62,
+264.67,
+"shot",
+"f13_mesa_cocina_1961"
+],
+[
+287.42,
+295.42,
+"shot",
+"v03"
+],
+[
+321.14,
+328.14,
+"shot",
+"f14_hormigas_muertas_mesada"
+],
+[
+339.9,
+347.9,
+"shot",
+"v04"
+],
+[
+355.04,
+363.04,
+"shot",
+"f15_perro_amarillo"
+],
+[
+387.24,
+395.24,
+"shot",
+"f16_hormigas_algodon"
+],
+[
+405.1,
+412.1,
+"shot",
+"f17_mesada_limpia_manana"
+],
+[
+422.82,
+428.82,
+"shot",
+"f18_monticulo_polvo"
+],
+[
+497.22,
+500.62,
+"shot",
+"f19_pension_des_moines"
+],
+[
+500.62,
+507.62,
+"shot",
+"f20_cocina_pension"
+],
+[
+519.78,
+524.17,
+"shot",
+"f21_despensa_tia"
+],
+[
+546.48,
+550.26,
+"shot",
+"v05"
+],
+[
+550.26,
+557.26,
+"shot",
+"f22_detras_heladera"
+],
+[
+567.1,
+573.1,
+"shot",
+"f23_rendija_oscura"
+],
+[
+593.88,
+601.88,
+"shot",
+"f24_bajo_pileta_canos"
+],
+[
+622.52,
+628.52,
+"shot",
+"f25_zocalo_lavavajillas"
+],
+[
+633.9,
+640.41,
+"shot",
+"v06"
+],
+[
+651.08,
+656.96,
+"shot",
+"f26_pomo_ketchup"
+],
+[
+678.64,
+686.64,
+"shot",
+"f27_heladera_corrida"
+],
+[
+696.58,
+701.76,
+"shot",
+"f28_pasto_alto_granero"
+],
+[
+701.76,
+708.53,
+"shot",
+"f29_alfombra_trenzada"
+],
+[
+721.64,
+725.19,
+"shot",
+"f30_alfombra_macro"
+],
+[
+739.5,
+741.88,
+"shot",
+"v07"
+],
+[
+764.81,
+772.68,
+"shot",
+"v08"
+],
+[
+801.93,
+804.16,
+"shot",
+"f31_sabana_vieja"
+],
+[
+834.05,
+837.72,
+"shot",
+"f32_tina_perro"
+],
+[
+843.93,
+849.59,
+"shot",
+"f33_peine_pulgas"
+],
+[
+849.59,
+854.12,
+"shot",
+"f34_manta_lavarropas"
+],
+[
+859.76,
+866.76,
+"shot",
+"f35_veterinario_mostrador"
+],
+[
+891.47,
+900.47,
+"shot",
+"f36_mesa_herramientas"
+],
+[
+913.07,
+919.8,
+"shot",
+"f37_frasco_etiqueta"
+],
+[
+933.83,
+935.88,
+"shot",
+"f38_bolitas_papel_manteca"
+],
+[
+940.91,
+948.91,
+"shot",
+"f39_linterna_bajo_mueble"
+],
+[
+994.91,
+1000.15,
+"shot",
+"f40_almanaque_pared"
+],
+[
+1000.15,
+1002.24,
+"shot",
+"v09"
+],
+[
+1022.82,
+1029.82,
+"shot",
+"f41_panera"
+],
+[
+1039.29,
+1046.29,
+"shot",
+"f42_trapo_mesada"
+],
+[
+1054.53,
+1062.31,
+"shot",
+"f43_balde_trapeador"
+],
+[
+1077.85,
+1081.92,
+"shot",
+"f44_rendija_puerta"
+],
+[
+1119.19,
+1126.19,
+"shot",
+"f45_alacena_harina"
+],
+[
+1152.87,
+1159.87,
+"shot",
+"f46_comentarios_mesa"
+],
+[
+1183.31,
+1191.31,
+"shot",
+"f47_tarjeta_receta"
+],
+[
+1233.58,
+1241.58,
+"shot",
+"f48_gato_granero"
+],
+[
+1251.49,
+1259.49,
+"shot",
+"f49_huerta_harold"
+],
+[
+1265.24,
+1272.24,
+"shot",
+"f50_hormiguero_tomates"
+],
+[
+1299.46,
+1307.46,
+"shot",
+"f51_tomates_muertos"
+],
+[
+1353.99,
+1361.99,
+"shot",
+"f52_pava_hormiguero"
+],
+[
+1369.13,
+1377.13,
+"shot",
+"f53_choclos_bolsa"
+],
+[
+1471.55,
+1475.3,
+"shot",
+"f54_porche_atardecer"
+],
+[
+1495.77,
+1503.77,
+"shot",
+"v10"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 87.6,
+"out": 91.6
+},
+{
+"k": "step",
+"n": 1,
+"name": "KNOW THE BOX",
+"at": 110.48,
+"out": 113.68
+},
+{
+"k": "step",
+"n": 2,
+"name": "ANTS: SLOW BEATS FAST",
+"at": 223.36,
+"out": 226.56
+},
+{
+"k": "step",
+"n": 3,
+"name": "WHERE THE BAIT GOES",
+"at": 331.04,
+"out": 334.24
+},
+{
+"k": "deal",
+"at": 411.9,
+"out": 412.9
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Big piles",
+"at": 422.82,
+"out": 425.02
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Killing the trail",
+"at": 440.68,
+"out": 442.88
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Making it too strong",
+"at": 452.86,
+"out": 455.06
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "On the counter where you cook",
+"at": 463.42,
+"out": 465.62
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "In the dirt outside",
+"at": 478.64,
+"out": 483.14
+},
+{
+"k": "step",
+"n": 4,
+"name": "ROACHES: A LITTLE DOUGH",
+"at": 489.28,
+"out": 492.48
+},
+{
+"k": "step",
+"n": 5,
+"name": "DUST IT THIN",
+"at": 588.3,
+"out": 591.5
+},
+{
+"k": "step",
+"n": 6,
+"name": "FLEAS: THE CARPET",
+"at": 688.88,
+"out": 692.08
+},
+{
+"k": "step",
+"n": 7,
+"name": "FLOOR, NOT THE DOG",
+"at": 812.65,
+"out": 815.85
+},
+{
+"k": "step",
+"n": 8,
+"name": "KEEP THEM OUT",
+"at": 1006.73,
+"out": 1009.93
+},
+{
+"k": "step",
+"n": 9,
+"name": "NEVER IN THE GARDEN",
+"at": 1243.51,
+"out": 1246.71
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1388.17
+},
+{
+"at": 1396.37
+},
+{
+"at": 1405.43
+},
+{
+"at": 1416.83
+},
+{
+"at": 1423.53
+},
+{
+"at": 1434.09
+},
+{
+"at": 1442.09
+},
+{
+"at": 1450.27
+},
+{
+"at": 1457.05
+}
+],
+"at": 1383.69,
+"out": 1459.05
+},
+{
+"k": "ask",
+"at": 1495.77,
+"out": 1503.77
+}
+],
+"end": 1509.83,
+"txt": {
+"recapTitle": "ONE GREEN BOX · 9 RULES",
+"recap": [
+"Weak sweet ant bait",
+"Jar with holes in the lid",
+"Pea-sized roach balls",
+"A dust you can barely see",
+"Brush it into the carpet",
+"Floor, never the pet",
+"No food out, fix the holes",
+"Gloves & the top shelf",
+"Never in the garden"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"What did your mother keep",
+"under her kitchen sink?"
+],
+"next": [
+"",
+""
+],
+"lower": [
+74.68,
+82.68
+]
+}
+}
