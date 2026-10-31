@@ -86,7 +86,7 @@ const BarroPalas: React.FC<UP> = ({ d, p }) => {
 const CuchilloFilo: React.FC<UP> = ({ d, p }) => {
   const aT = sec(p, "ti", 2.2);
   return <U3 d={d} bg={p.bg} ground={null} floor="wood" mode="wipe" sky="#14181c" key1={[-0.8, 2.2, 1.4]}
-    cam={{ at: [0.1, 0.07, -0.04], at1: [0.2, 0.06, 0.04], az: [-0.66, -0.1], el: [0.46, 0.4], r: [0.8, 0.9], fov: 34 }}>{(tt) => {
+    cam={{ at: [0.1, 0.07, -0.04], at1: [0.24, 0.06, 0.08], az: [-0.66, -0.1], el: [0.46, 0.44], r: [0.8, 1.05], fov: 34 }}>{(tt) => {
     const on = tt < aT - 0.1 ? 1 : 0, st = (tt * 0.93) % 1, tri = 1 - Math.abs(2 * st - 1), sx = on * (0.2 * tri - 0.1), push = on * (st < 0.5 ? 1 : 0.35),
       slip = eio(tt, aT, aT + 0.3), back = eio(tt, aT + 0.25, aT + 0.6), cut = eio(tt, aT + 0.2, aT + 0.45);
     return <>
