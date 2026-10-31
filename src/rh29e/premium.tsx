@@ -333,8 +333,8 @@ export const StepTitle: React.FC<{ t: number; at: number; n: number; name: strin
         <div style={{ position: "absolute", top: 0, bottom: 0, left: `${-40 + 170 * ei(t, at + 0.4, at + 1.4)}%`, width: "26%", background: "linear-gradient(100deg, transparent, rgba(255,255,255,.18), transparent)" }} />
       </div>
     </div>}
-    <div style={{ position: "absolute", left: tx, top: y, transform: `translate(-50%,-50%) scale(${sc}) perspective(1400px) translateZ(${-xo * 300}px)`, textAlign: "center", fontFamily: FONT, color: G.txt, whiteSpace: "nowrap" }}>
-      <div style={{ fontWeight: 800, fontSize: 34, letterSpacing: 18 * cl(k2) + 4, color: G.dim, opacity: cl(k2), marginRight: -18 }}>NUMBER</div>
+    <div style={{ position: "absolute", left: tx, top: y, transform: `translate(-50%,-50%) scale(${sc}) perspective(1400px) translateZ(${-xo * 300}px)`, textAlign: "center", fontFamily: FONT, color: G.txt, whiteSpace: "nowrap", ...(plate ? {} : { background: `rgba(6,6,8,${0.84 * cl(s)})`, padding: "20px 60px 30px", borderRadius: 28, boxShadow: `0 30px 80px rgba(0,0,0,${0.45 * cl(s)})` }) }}>
+      <div style={{ fontWeight: 800, fontSize: 38, letterSpacing: 18 * cl(k2) + 4, color: "rgba(255,255,255,.85)", opacity: cl(k2), marginRight: -18 }}>NUMBER</div>
       <div style={{ overflow: "hidden", paddingTop: 10 }}>
         <div style={{ transform: `translateY(${(1 - s) * 100}%) rotateX(${(1 - s) * 40}deg)`, fontWeight: 900, fontSize: 250, lineHeight: 1.05, letterSpacing: -6, color: c, textShadow: `0 0 60px ${c}44` }}>{n}</div>
       </div>
@@ -389,7 +389,7 @@ export const Desc: React.FC<{ t: number; at: number; out: number; x?: number; y?
   const L = (w: number) => <div style={{ height: 14, width: w, borderRadius: 7, background: "rgba(255,255,255,.12)", marginTop: 18 }} />;
   return <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) scale(${scale})` }}>
     <div style={rise(t, at, out)}>
-      <div style={{ marginBottom: 16, fontFamily: FONT, fontWeight: 900, fontSize: 44, letterSpacing: 3, color: COL.amber, opacity: 0.55 + 0.45 * hl, textShadow: "0 3px 12px rgba(0,0,0,.9)" }}>LINK IN THE FIRST LINE OF THE DESCRIPTION ↓</div>
+      <div style={{ display: "inline-block", marginBottom: 18, padding: "12px 28px", borderRadius: 16, background: "rgba(6,6,8,.9)", boxShadow: `inset 0 0 0 3px ${COL.amber}, 0 10px 30px rgba(0,0,0,.5)`, fontFamily: FONT, fontWeight: 900, fontSize: 40, letterSpacing: 1, color: "#fff", whiteSpace: "nowrap" }}>LINK IN THE FIRST LINE OF THE DESCRIPTION <span style={{ color: COL.amber }}>↓</span></div>
       <Panel style={{ width: 1180, padding: "30px 40px 36px" }}>
         <div style={{ position: "relative", padding: "16px 22px", borderRadius: 14, background: `rgba(255,200,60,${0.14 * hl})`, boxShadow: `0 0 0 2px rgba(255,200,60,${0.85 * hl})`, overflow: "hidden" }}>
           <div style={{ fontWeight: 800, fontSize: 40 }}>📕 Rhonda's Brown Bottle Book · 92 fixes for $1-2</div>
