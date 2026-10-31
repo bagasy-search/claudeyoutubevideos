@@ -69,16 +69,11 @@
 {
 "a": 36.9,
 "b": 49.22,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "SigloDebajo",
-"bg": "img/dur29d/ag/dur29d_t03_progress_under.png",
-"at": {
-"debajo": 320
+"v": "img/dur29d/ag/dur29d_t03_progress_under.png"
 }
-},
-"big": true
 },
 {
 "a": 49.22,
@@ -457,16 +452,11 @@
 {
 "a": 217.02,
 "b": 234.4,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "PiesCanaleta",
-"bg": "img/dur29d/ag/dur29d_a10_machine_rollers.png",
-"at": {
-"maquina": 457
+"v": "img/dur29d/ag/dur29d_a10_machine_rollers.png"
 }
-},
-"big": true
 },
 {
 "a": 234.4,
@@ -659,17 +649,11 @@
 {
 "a": 334.52,
 "b": 347.02,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "OroPlata",
-"bg": "img/dur29d/ag/dur29d_b09_gold_silver.png",
-"at": {
-"oro": 316,
-"plata": 330
+"v": "img/dur29d/ag/dur29d_b09_gold_silver.png"
 }
-},
-"big": true
 },
 {
 "a": 347.02,
@@ -749,7 +733,7 @@
 "k": "real",
 "t": "real",
 "p": {
-"v": "img/dur29d/ag/dur29d_c01_pit_dark.png"
+"v": "broll/dur29d/v05.mp4"
 }
 },
 {
@@ -901,16 +885,11 @@
 {
 "a": 455.666,
 "b": 468.146,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "RepisaPies",
-"bg": "img/dur29d/ag/dur29d_c07_ledge_feet.png",
-"at": {
-"impacto": 350
+"v": "img/dur29d/ag/dur29d_c07_ledge_feet.png"
 }
-},
-"big": true
 },
 {
 "a": 468.146,
@@ -1038,16 +1017,11 @@
 {
 "a": 512.746,
 "b": 521.086,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "CuatroPisos",
-"bg": "img/dur29d/ag/dur29d_d06_steel_frame.png",
-"at": {
-"semana": 216
+"v": "img/dur29d/ag/dur29d_d06_steel_frame.png"
 }
-},
-"big": true
 },
 {
 "a": 521.086,
@@ -1134,16 +1108,11 @@
 {
 "a": 579.626,
 "b": 588.886,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "NoEstirarse",
-"bg": "img/dur29d/ag/dur29d_d09_dropped_rivet.png",
-"at": {
-"escapa": 77
+"v": "img/dur29d/ag/dur29d_d09_dropped_rivet.png"
 }
-},
-"big": true
 },
 {
 "a": 588.886,
@@ -1298,16 +1267,11 @@
 {
 "a": 660.526,
 "b": 670.666,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "CuatroDias",
-"bg": "img/dur29d/ag/dur29d_e05_liberty_launch.png",
-"at": {
-"botan": 264
+"v": "img/dur29d/ag/dur29d_e05_liberty_launch.png"
 }
-},
-"big": true
 },
 {
 "a": 670.666,
@@ -1399,16 +1363,11 @@
 {
 "a": 718.252,
 "b": 725.652,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "FondoCasco",
-"bg": "img/dur29d/ag/dur29d_e01_hull_sparks_2.png",
-"at": {
-"media": 222
+"v": "img/dur29d/ag/dur29d_e01_hull_sparks_2.png"
 }
-},
-"big": true
 },
 {
 "a": 725.652,
@@ -1537,14 +1496,11 @@
 {
 "a": 792.332,
 "b": 801.672,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "MinaAmarilla",
-"bg": "img/dur29d/ag/dur29d_u03_drill.png",
-"at": {}
-},
-"big": true
+"v": "img/dur29d/ag/dur29d_u03_drill.png"
+}
 },
 {
 "a": 801.672,
@@ -1607,16 +1563,11 @@
 {
 "a": 826.512,
 "b": 834.332,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "FiebreGeiger",
-"bg": "img/dur29d/ag/dur29d_u04_geiger.png",
-"at": {
-"miles": 178
+"v": "img/dur29d/ag/dur29d_u04_geiger.png"
 }
-},
-"big": true
 },
 {
 "a": 834.332,
@@ -1676,16 +1627,11 @@
 {
 "a": 882.632,
 "b": 893.392,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "ComerAfuera",
-"bg": "img/dur29d/ag/dur29d_u07_lunch_outside.png",
-"at": {
-"afuera": 117
+"v": "img/dur29d/ag/dur29d_u07_lunch_outside.png"
 }
-},
-"big": true
 },
 {
 "a": 893.392,
@@ -1713,21 +1659,11 @@
 {
 "a": 908.192,
 "b": 927.392,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "RankingSiglo",
-"bg": "img/dur29d/ag/dur29d_u05_mesa_2.png",
-"at": {
-"breaker": 86,
-"culebra": 150,
-"pinboy": 221,
-"remachador": 281,
-"soldadora": 373,
-"uranio": 439
+"v": "img/dur29d/ag/dur29d_u05_mesa_2.png"
 }
-},
-"big": true
 },
 {
 "a": 927.392,
@@ -1852,16 +1788,11 @@
 {
 "a": 981.832,
 "b": 996.752,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "X15Bombardero",
-"bg": "img/dur29d/ag/dur29d_x03_rocket_plane.png",
-"at": {
-"suelta": 107
+"v": "img/dur29d/ag/dur29d_x03_rocket_plane.png"
 }
-},
-"big": true
 },
 {
 "a": 996.752,
@@ -2013,16 +1944,11 @@
 {
 "a": 1071.799,
 "b": 1084.199,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "CamaraLiteras",
-"bg": "img/dur29d/ag/dur29d_s07_porthole.png",
-"at": {
-"helio": 165
+"v": "img/dur29d/ag/dur29d_s07_porthole.png"
 }
-},
-"big": true
 },
 {
 "a": 1084.199,
@@ -2183,16 +2109,11 @@
 {
 "a": 1177.779,
 "b": 1184.579,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "EscotillaDias",
-"bg": "img/dur29d/ag/dur29d_s09_calendar.png",
-"at": {
-"dias": 142
+"v": "img/dur29d/ag/dur29d_s09_calendar.png"
 }
-},
-"big": true
 },
 {
 "a": 1184.579,
@@ -2298,17 +2219,11 @@
 {
 "a": 1215.479,
 "b": 1225.479,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "RobotsQuietos",
-"bg": "img/dur29d/ag/dur29d_n02_robot_stuck.png",
-"at": {
-"circuitos": 219,
-"quietos": 254
+"v": "img/dur29d/ag/dur29d_n02_robot_stuck.png"
 }
-},
-"big": true
 },
 {
 "a": 1225.479,
@@ -2374,17 +2289,11 @@
 {
 "a": 1261.219,
 "b": 1274.499,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "TresMilSeiscientos",
-"bg": "img/dur29d/ag/dur29d_n07_city_empty.png",
-"at": {
-"tres mil": 28,
-"medio": 221
+"v": "img/dur29d/ag/dur29d_n07_city_empty.png"
 }
-},
-"big": true
 },
 {
 "a": 1274.499,
@@ -2492,16 +2401,11 @@
 {
 "a": 1345.859,
 "b": 1370.719,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "SombraDebajo",
-"bg": "img/dur29d/ag/dur29d_f03_city_today_2.png",
-"at": {
-"debajo": 608
+"v": "img/dur29d/ag/dur29d_f03_city_today_2.png"
 }
-},
-"big": true
 },
 {
 "a": 1370.719,
