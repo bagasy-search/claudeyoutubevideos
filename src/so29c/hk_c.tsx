@@ -263,10 +263,10 @@ export const C_coin: F = ({ t, h }) => {
     set={{ spot: [0, 0, 0] as V, spotK: 0.3 }}
     scene={(tt) => { const k = pop(tt, a), sl = eio(tt, a + 0.8, a + 1.8), r = eio(tt, a + 2.0, a + 2.8);
       return <>
-        <Box p={[0, 0.01, 0]} s={[0.9, 0.02, 0.5]} c="#c9a477" r={0.7} rad={0.005} />
-        <Pop k={k} p={[-0.12, 0.02, 0]}><Coin p={[0, 0.07, 0]} s={1.6} rot={[0, 0.3, Math.PI / 2]} /></Pop>
-        {sl > 0.02 && <group position={[lerp(0.6, 0.12, sl), 0.02, 0]}><JSlice p={[0, 0, 0]} rot={[0, 0, Math.PI / 2]} s={0.55} /></group>}
-        {r > 0.02 && <mesh position={[0, 0.02 + 0.07 * r, 0.09]} rotation={[0, 0, Math.PI / 2]}><planeGeometry args={[0.16, 0.02]} /><meshStandardMaterial map={mmT} /></mesh>}
+        <Box p={[0, 0.035, 0]} s={[0.9, 0.03, 0.5]} c="#c9a477" r={0.7} rad={0.005} />
+        <Pop k={k} p={[-0.12, 0.05, 0]}><Coin p={[0, 0.07, 0]} s={1.6} rot={[0, 0.3, Math.PI / 2]} /></Pop>
+        {sl > 0.02 && <group position={[lerp(0.6, 0.12, sl), 0.05, 0]}><JSlice p={[0, 0, 0]} rot={[0, 0, Math.PI / 2]} s={0.55} /></group>}
+        {r > 0.02 && <mesh position={[0, 0.05 + 0.07 * r, 0.09]} rotation={[0, 0, Math.PI / 2]}><planeGeometry args={[0.16, 0.02]} /><meshStandardMaterial map={mmT} /></mesh>}
       </>; }}
     over={(tt) => <Ink tt={tt} at={a + 2.4} txt="1/4 INCH · 6 MM" col={AMB} />} />;
 };
