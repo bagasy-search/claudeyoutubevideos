@@ -1,4 +1,4 @@
-// dur29b — "Durarías 3 Segundos": el peor puesto de cada GUERRA (motor clonado de t30duraes). Estilo doc-ilustrado-btg (D:/claude-brain/estilos/doc-ilustrado-btg).
+// dur29c — "Durarías 3 Segundos": el peor trabajo de cada CIUDAD (motor clonado de t30duraes). Estilo doc-ilustrado-btg (D:/claude-brain/estilos/doc-ilustrado-btg).
 // Usa el kit btg SÓLO lectura (src/kits/btg/kit.tsx). Build/BigWord/Label/Aside/Scribble/DiagSplit siguen el patrón de src/btgm1/M1.tsx
 // (allá no se exportan: acá van copiados, sin tocar btgm1). Todo lo ilustrado es SVG/CSS; lo real = archivo PD/CC + fotos/clips agnes sin cara.
 // Pieza ancla: el CRONÓMETRO DE SUPERVIVENCIA (Hud que corre en cada parada + Watch grande que se congela al "renunciar") y el JobRoster.
@@ -205,21 +205,21 @@ export const Watch: React.FC<{ d: number; fz: number; fin: number | null; tag: s
 
 // ───────────────────────── ROSTER de oficios (abre cada parada; al final = tablero con la suma) ─────────────────────────
 export const JOBS = [
-  { y: "Grecia", job: "HOPLITA DE PRIMERA FILA", res: "3 MIN" }, { y: "Azincourt", job: "ARQUERO LARGO", res: "10 MIN" }, { y: "Alemania", job: "ZAPADOR DE ASEDIO", res: "30 SEG" },
-  { y: "Rusia", job: "TAMBORILERO", res: "1 HORA" }, { y: "Scutari", job: "ORDENANZA DEL HOSPITAL", res: "20 MIN" }, { y: "Gettysburg", job: "AYUDANTE DE CIRUJANO", res: "1 MIN" },
-  { y: "Alemania", job: "ARTILLERO DE COLA", res: "5 MIN" }, { y: "Messines", job: "PATEADOR DE ARCILLA", res: "8 SEG" },
+  { y: "Londres", job: "CAZADOR DE CLOACAS", res: "2 MIN" }, { y: "París", job: "TRASLADO DE HUESOS", res: "30 SEG" }, { y: "Edo", job: "BOMBERO DEL MATOI", res: "45 SEG" },
+  { y: "Murano", job: "SOPLADOR DE VIDRIO", res: "1 HORA" }, { y: "Brooklyn", job: "SANDHOG DEL CAJÓN", res: "1 HORA" }, { y: "Pittsburgh", job: "PUDELADOR", res: "15 MIN" },
+  { y: "Chicago", job: "LÍNEA DE CARNE", res: "20 MIN" }, { y: "Calcuta", job: "TIRADOR DE RICKSHAW", res: "5 MIN" },
 ];
 export const Icon: React.FC<{ i: number; c: string }> = ({ i, c }) => {
   const st = { fill: "none", stroke: c, strokeWidth: 6, strokeLinecap: "round", strokeLinejoin: "round" } as const;
   const g = [
-    <g key={0}><circle cx={50} cy={52} r={36} {...st} /><circle cx={50} cy={52} r={22} {...st} /><path d="M50,4 L50,30" {...st} /></g>,
-    <g key={1}><path d="M30,8 Q70,50 30,92" {...st} /><path d="M30,8 L30,92" {...st} /><path d="M30,50 L92,50 M82,42 L92,50 L82,58" {...st} /></g>,
-    <g key={2}><path d="M10,88 L10,40 L90,40 L90,88" {...st} /><path d="M24,88 Q50,58 76,88" {...st} /><path d="M30,40 L30,26 L42,26 L42,40 M58,40 L58,26 L70,26 L70,40" {...st} /></g>,
-    <g key={3}><ellipse cx={50} cy={36} rx={34} ry={10} {...st} /><path d="M16,36 L16,76 Q50,92 84,76 L84,36" {...st} /><path d="M16,40 L50,72 L84,40" {...st} /><path d="M30,8 L46,30 M74,8 L56,30" {...st} /></g>,
-    <g key={4}><path d="M26,30 L74,30 L68,88 L32,88 Z" {...st} /><path d="M26,30 Q50,6 74,30" {...st} /><path d="M38,56 L62,56" {...st} /></g>,
-    <g key={5}><path d="M14,70 L72,70 L72,34 L14,34 Z" {...st} /><path d="M72,40 L92,40 L92,64 L72,64" {...st} /><path d="M24,46 L62,46 M24,58 L62,58" {...st} /></g>,
-    <g key={6}><circle cx={50} cy={46} r={30} {...st} /><path d="M50,76 L50,92 M30,92 L70,92" {...st} /><path d="M36,40 L64,40 M36,52 L64,52" {...st} /></g>,
-    <g key={7}><path d="M14,82 L86,40" {...st} /><path d="M76,30 L96,42 L86,58 L66,46 Z" {...st} /><path d="M10,92 L90,92" {...st} /></g>,
+    <g key={0}><path d="M20,92 L76,12" {...st} /><path d="M66,8 L90,20 L82,30" {...st} /><path d="M10,72 Q30,62 50,72 T90,72" {...st} /></g>,
+    <g key={1}><path d="M50,6 L50,62" {...st} /><path d="M38,6 L62,6" {...st} /><path d="M32,62 L68,62 L62,92 Q50,98 38,92 Z" {...st} /></g>,
+    <g key={2}><path d="M50,96 L50,30" {...st} /><circle cx={50} cy={20} r={14} {...st} /><path d="M30,36 L70,36 M34,36 L30,70 M44,36 L42,74 M56,36 L58,74 M66,36 L70,70" {...st} /></g>,
+    <g key={3}><path d="M8,30 L62,62" {...st} /><circle cx={74} cy={70} r={16} {...st} /><path d="M18,18 Q24,10 30,18 M30,10 Q36,2 42,10" {...st} /></g>,
+    <g key={4}><path d="M14,90 L64,40" {...st} /><path d="M40,22 Q66,24 82,48 Q70,34 54,30 Z" {...st} /><path d="M10,10 L90,10 L90,30 L10,30 Z" {...st} /></g>,
+    <g key={5}><path d="M8,86 L74,20" {...st} /><circle cx={80} cy={14} r={9} {...st} /><path d="M18,92 L92,92 L92,60" {...st} /></g>,
+    <g key={6}><path d="M14,76 L70,20 L86,26 L32,82 Z" {...st} /><path d="M32,82 L20,94 M14,76 L6,84" {...st} /></g>,
+    <g key={7}><circle cx={64} cy={68} r={22} {...st} /><path d="M64,68 L64,46 M42,40 L86,40 L86,58" {...st} /><path d="M6,90 L46,46" {...st} /></g>,
     <g key={8}><circle cx={50} cy={50} r={34} {...st} /></g>,
   ];
   return <svg width={100} height={100} viewBox="0 0 100 100" style={{ overflow: "visible" }}>{g[i]}</svg>;
@@ -265,7 +265,7 @@ export const PinMap: React.FC<{ d: number; at: [number, number]; prev?: [number,
   return (
     <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, #13304a 0%, #06111c 78%)", overflow: "hidden" }}>
       <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: `${px}px ${py}px` }}>
-        <Img src={sf("img/dur29b/map_mundo.png")} style={{ position: "absolute", left: 0, top: (1080 - MAP.H) / 2, width: MAP.W, height: MAP.H, opacity: 0.92 }} />
+        <Img src={sf("img/dur29c/map_mundo.png")} style={{ position: "absolute", left: 0, top: (1080 - MAP.H) / 2, width: MAP.W, height: MAP.H, opacity: 0.92 }} />
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, overflow: "visible" }}>
           {pp && <path d={`M${pp[0]},${pp[1]} Q${mx},${my} ${px},${py}`} fill="none" stroke={INK} strokeWidth={4 / z} strokeDasharray={`${10 / z} ${10 / z}`} pathLength={1} style={{ strokeDasharray: 1, strokeDashoffset: 1 - route } as any} opacity={0.85} />}
           {[0, 1].map((k) => { const ph = ((f + k * 22) % 44) / 44; return <circle key={k} cx={px} cy={py} r={(8 + ph * 46) / z} fill="none" stroke={RED} strokeWidth={4 / z} opacity={1 - ph} />; })}

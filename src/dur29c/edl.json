@@ -1,0 +1,2559 @@
+{
+"end": 1398.95,
+"shots": [
+{
+"a": 0.0,
+"b": 3.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/dur29c/v01.mp4"
+}
+},
+{
+"a": 3.98,
+"b": 9.48,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "1850",
+"side": "c",
+"v": "img/dur29c/cand/thames1850_03.jpg",
+"ar": 1.5738,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 9.48,
+"b": 16.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_g01_sewer_water_2.png"
+}
+},
+{
+"a": 16.3,
+"b": 19.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_g02_lantern_coat.png"
+}
+},
+{
+"a": 19.38,
+"b": 24.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_g03_pole_hoe.png"
+}
+},
+{
+"a": 24.74,
+"b": 32.78,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CloacaCorte",
+"bg": "img/dur29c/ag/dur29c_g04_street_above.png",
+"at": {
+"monedas": 173
+}
+},
+"big": true
+},
+{
+"a": 32.78,
+"b": 34.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_t02_city_map.png"
+}
+},
+{
+"a": 34.26,
+"b": 49.36,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "OchoPostales",
+"bg": "img/dur29c/ag/dur29c_t01_postcards.png",
+"at": {
+"postal": 328,
+"debajo": 390
+}
+},
+"big": true
+},
+{
+"a": 49.36,
+"b": 54.98,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "el trabajo que *nadie* quería."
+},
+"big": true
+},
+{
+"a": 54.98,
+"b": 57.08,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29c/ag/dur29c_f02_city_layers.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"sobrevivir",
+"*UN TURNO.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 57.08,
+"b": 61.3,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 3600,
+"tag": "RENUNCIAS.",
+"sub": "el momento exacto.",
+"fz": 82
+},
+"big": true
+},
+{
+"a": 61.3,
+"b": 67.9,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k03_rickshaw.png"
+}
+},
+{
+"a": 67.9,
+"b": 70.18,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k04_bare_feet.png"
+}
+},
+{
+"a": 70.18,
+"b": 76.62,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29c/ag/dur29c_k14_today.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"todavía *EXISTE.*",
+"hoy."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 76.62,
+"b": 81.94,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "*8* ciudades. *1* turno."
+},
+"big": true
+},
+{
+"a": 81.94,
+"b": 83.9,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_f03_thames.png"
+}
+},
+{
+"a": 83.9,
+"b": 88.16,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/hiroshige_02.png",
+"ar": 2.0361,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 88.16,
+"b": 93.38,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Un lugar nuevo cada semana. Suscríbete + campanita.",
+"bg": "img/dur29c/ag/dur29c_t02_city_map_2.png"
+}
+},
+{
+"a": 93.38,
+"b": 95.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_l07_collapse.png"
+}
+},
+{
+"a": 95.08,
+"b": 101.38,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿En qué ciudad durarías más?",
+"bell": false,
+"bg": "img/dur29c/ag/dur29c_t01_postcards_2.png"
+}
+},
+{
+"a": 101.38,
+"b": 102.9,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 0
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 102.9,
+"b": 105.68,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-0.12,
+51.5
+],
+"lines": [
+"LONDRES",
+"1850",
+"CLOACAS"
+],
+"name": "Londres"
+},
+"big": true
+},
+{
+"a": 105.68,
+"b": 108.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_g01_sewer_water_s1.png"
+}
+},
+{
+"a": 108.6,
+"b": 111.7,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29c/ag/dur29c_g05_coins_mud.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"un *TOSHER.*",
+"cazador de cloacas."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 111.7,
+"b": 115.36,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_l01_thames_low.png",
+"o": {
+"label": "Londres, 1850"
+}
+}
+},
+{
+"a": 115.36,
+"b": 124.36,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LondresRejillas",
+"bg": "img/dur29c/ag/dur29c_l02_grate.png",
+"at": {
+"rejilla": 170,
+"abajo": 216
+}
+},
+"big": true
+},
+{
+"a": 124.36,
+"b": 134.3,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TesoroBarro",
+"bg": "img/dur29c/ag/dur29c_l03_objects.png",
+"at": {
+"plata": 212,
+"anillo": 244
+}
+},
+"big": true
+},
+{
+"a": 134.3,
+"b": 145.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_l04_hand_mud.png"
+}
+},
+{
+"a": 145.88,
+"b": 150.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_l05_group_poles.png"
+}
+},
+{
+"a": 150.62,
+"b": 160.6,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "MareaReloj",
+"bg": "img/dur29c/ag/dur29c_l06_tide.png",
+"at": {
+"baja": 112,
+"sube": 185
+}
+},
+"big": true
+},
+{
+"a": 160.6,
+"b": 164.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_l14_eyes_wall.png"
+}
+},
+{
+"a": 164.52,
+"b": 167.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_l08_gas.png"
+}
+},
+{
+"a": 167.7,
+"b": 176.48,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "OjosPared",
+"bg": "img/dur29c/ag/dur29c_l09_rats.png",
+"at": {
+"atacado": 224
+}
+},
+"big": true
+},
+{
+"a": 176.48,
+"b": 182.4,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/thames1850_01.jpg",
+"ar": 1.3512,
+"o": {
+"build": {
+"lines": [
+"Henry *Mayhew.*"
+],
+"size": 90,
+"a": 57
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 182.4,
+"b": 184.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_l10_notebook.png"
+}
+},
+{
+"a": 184.84,
+"b": 191.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_l11_wages.png"
+}
+},
+{
+"a": 191.58,
+"b": 196.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_l01_thames_low_2.png"
+}
+},
+{
+"a": 196.1,
+"b": 202.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_g01_sewer_water_s2.png"
+}
+},
+{
+"a": 202.98,
+"b": 210.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_l12_lantern_covered.png",
+"o": {
+"big": {
+"w": "1840",
+"size": 200,
+"y": 140,
+"a": 75
+}
+}
+}
+},
+{
+"a": 210.58,
+"b": 216.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_l12_lantern_covered_2.png"
+}
+},
+{
+"a": 216.48,
+"b": 221.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_l05_group_poles_2.png"
+}
+},
+{
+"a": 221.58,
+"b": 232.88,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TunelesForma",
+"bg": "img/dur29c/ag/dur29c_l13_tunnels_fork.png",
+"at": {
+"sube": 154,
+"baja": 196,
+"sale": 240
+}
+},
+"big": true
+},
+{
+"a": 232.88,
+"b": 242.74,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 120,
+"tag": "2 MIN",
+"sub": "y no son monedas.",
+"fz": 254,
+"s0": 108
+},
+"big": true
+},
+{
+"a": 242.74,
+"b": 244.22,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 1
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 244.22,
+"b": 247.3,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+2.35,
+48.86
+],
+"prev": [
+-0.12,
+51.5
+],
+"lines": [
+"PARÍS",
+"1786",
+"HUESOS"
+],
+"name": "París"
+},
+"big": true
+},
+{
+"a": 247.3,
+"b": 252.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_p01_night_street.png",
+"o": {
+"label": "París, 1786"
+}
+}
+},
+{
+"a": 252.74,
+"b": 258.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_p02_carts_black.png"
+}
+},
+{
+"a": 258.86,
+"b": 264.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_p03_shovel_wall.png"
+}
+},
+{
+"a": 264.72,
+"b": 267.82,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29c/ag/dur29c_p09_bones_cart.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*TRASLADO*",
+"de huesos."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 267.82,
+"b": 271.26,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/innocents_01.jpg",
+"ar": 1.4339,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 271.26,
+"b": 275.02,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_p04_cemetery_crowded.png"
+}
+},
+{
+"a": 275.02,
+"b": 285.02,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CementerioCapas",
+"bg": "img/dur29c/ag/dur29c_p04_cemetery_crowded_2.png",
+"at": {
+"dos": 139
+}
+},
+"big": true
+},
+{
+"a": 285.02,
+"b": 291.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_p05_milk_wine.png"
+}
+},
+{
+"a": 291.08,
+"b": 298.8,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SotanoCede",
+"bg": "img/dur29c/ag/dur29c_p06_cellar_wall.png",
+"at": {
+"cede": 110
+}
+},
+"big": true
+},
+{
+"a": 298.8,
+"b": 301.22,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/innocents_03.jpg",
+"ar": 1.9355,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 301.22,
+"b": 308.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_p07_quarry_tunnel.png"
+}
+},
+{
+"a": 308.88,
+"b": 313.44,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_p08_dig_night.png"
+}
+},
+{
+"a": 313.44,
+"b": 330.12,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CarretasNoche",
+"bg": "img/dur29c/ag/dur29c_p02_carts_black_2.png",
+"at": {
+"curas": 422
+}
+},
+"big": true
+},
+{
+"a": 330.12,
+"b": 333.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_p10_cross_procession.png"
+}
+},
+{
+"a": 333.6,
+"b": 341.3,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SeisMillones",
+"bg": "img/dur29c/ag/dur29c_p11_catacomb_wall.png",
+"at": {
+"seis": 169
+}
+},
+"big": true
+},
+{
+"a": 341.3,
+"b": 347.46,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/catacombs_01.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 347.46,
+"b": 350.589,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/catacombs_03.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 350.589,
+"b": 353.669,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_p12_queue.png"
+}
+},
+{
+"a": 353.669,
+"b": 358.969,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_p13_vinegar_rag.png"
+}
+},
+{
+"a": 358.969,
+"b": 364.709,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_p15_maze.png"
+}
+},
+{
+"a": 364.709,
+"b": 376.329,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CuerdaSalida",
+"bg": "img/dur29c/ag/dur29c_p14_rope_exit.png",
+"at": {
+"doscientos": 211,
+"queda": 313
+}
+},
+"big": true
+},
+{
+"a": 376.329,
+"b": 382.529,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 30,
+"tag": "30 SEG",
+"sub": "y el olor no se va.",
+"fz": 83,
+"s0": 29
+},
+"big": true
+},
+{
+"a": 382.529,
+"b": 383.969,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 2
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 383.969,
+"b": 388.289,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+139.77,
+35.68
+],
+"prev": [
+2.35,
+48.86
+],
+"lines": [
+"EDO",
+"1720",
+"BOMBERO"
+],
+"name": "Edo"
+},
+"big": true
+},
+{
+"a": 388.289,
+"b": 391.069,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/dur29c/v03.mp4"
+}
+},
+{
+"a": 391.069,
+"b": 396.549,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_e13_warm_tiles.png",
+"o": {
+"label": "Edo, 1720"
+}
+}
+},
+{
+"a": 396.549,
+"b": 401.049,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_e02_roof_fire.png"
+}
+},
+{
+"a": 401.049,
+"b": 408.369,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_e03_matoi.png"
+}
+},
+{
+"a": 408.369,
+"b": 412.989,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29c/ag/dur29c_e07_brigade_banner.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*HIKESHI.*",
+"el del matoi."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 412.989,
+"b": 418.089,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_e04_tiles_feet.png"
+}
+},
+{
+"a": 418.089,
+"b": 436.329,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CiudadMadera",
+"bg": "img/dur29c/ag/dur29c_e05_wood_paper.png",
+"at": {
+"flores": 235,
+"mil": 282
+}
+},
+"big": true
+},
+{
+"a": 436.329,
+"b": 441.309,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/hiroshige_01.jpg",
+"ar": 0.6782,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 441.309,
+"b": 446.549,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_e07_brigade_banner_2.png"
+}
+},
+{
+"a": 446.549,
+"b": 454.489,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_e06_old_fire_ruins.png"
+}
+},
+{
+"a": 454.489,
+"b": 469.109,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CortaFuego",
+"bg": "img/dur29c/ag/dur29c_e08_hooks_pull.png",
+"at": {
+"destruian": 146,
+"hueco": 359
+}
+},
+"big": true
+},
+{
+"a": 469.109,
+"b": 490.269,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "MatoiTecho",
+"bg": "img/dur29c/ag/dur29c_e03_matoi_2.png",
+"at": {
+"techo": 143,
+"honor": 479
+}
+},
+"big": true
+},
+{
+"a": 490.269,
+"b": 497.709,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_e10_scaffold.png"
+}
+},
+{
+"a": 497.709,
+"b": 499.829,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_e11_tattoo_back.png"
+}
+},
+{
+"a": 499.829,
+"b": 501.549,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/edofire_01.jpg",
+"ar": 1.3243,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 501.549,
+"b": 507.709,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_e09_gap_cut.png"
+}
+},
+{
+"a": 507.709,
+"b": 523.689,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "VientoNoFuego",
+"bg": "img/dur29c/ag/dur29c_e12_wind_strips.png",
+"at": {
+"viento": 105,
+"cambia": 279
+}
+},
+"big": true
+},
+{
+"a": 523.689,
+"b": 532.149,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 45,
+"tag": "45 SEG",
+"sub": "y las tejas están tibias.",
+"fz": 197,
+"s0": 42
+},
+"big": true
+},
+{
+"a": 532.149,
+"b": 533.009,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 3
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 533.009,
+"b": 535.489,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+12.35,
+45.46
+],
+"prev": [
+139.77,
+35.68
+],
+"lines": [
+"VENECIA",
+"1500",
+"VIDRIERO"
+],
+"name": "Murano"
+},
+"big": true
+},
+{
+"a": 535.489,
+"b": 547.269,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_v01_furnace.png"
+}
+},
+{
+"a": 547.269,
+"b": 553.249,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_v02_pipe_glass.png",
+"o": {
+"label": "Murano, 1500"
+}
+}
+},
+{
+"a": 553.249,
+"b": 558.789,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_v03_island.png"
+}
+},
+{
+"a": 558.789,
+"b": 560.829,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29c/ag/dur29c_v11_turning.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*SOPLADOR*",
+"de vidrio."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 560.829,
+"b": 570.129,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/venglass_01.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0 uk"
+}
+}
+},
+{
+"a": 570.129,
+"b": 572.629,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_v05_kings_gold.png"
+}
+},
+{
+"a": 572.629,
+"b": 575.729,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/venglass_02.jpg",
+"ar": 0.6253,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 575.729,
+"b": 594.609,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "IslaJaula",
+"bg": "img/dur29c/ag/dur29c_v06_lagoon_boats.png",
+"at": {
+"isla": 484,
+"vigilados": 538
+}
+},
+"big": true
+},
+{
+"a": 594.609,
+"b": 599.489,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_v07_workshop_row.png"
+}
+},
+{
+"a": 599.489,
+"b": 604.589,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_v04_goblets.png"
+}
+},
+{
+"a": 604.589,
+"b": 615.509,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CopaCadena",
+"bg": "img/dur29c/ag/dur29c_v04_goblets_2.png",
+"at": {
+"nunca": 116,
+"traidor": 298
+}
+},
+"big": true
+},
+{
+"a": 615.509,
+"b": 621.489,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_v08_guards.png"
+}
+},
+{
+"a": 621.489,
+"b": 626.709,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/barbari_01.jpg",
+"ar": 2.0147,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 626.709,
+"b": 637.949,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "HornoMil",
+"bg": "img/dur29c/ag/dur29c_v01_furnace_2.png",
+"at": {
+"mil": 119,
+"ojos": 184
+}
+},
+"big": true
+},
+{
+"a": 637.949,
+"b": 640.829,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_v09_heat_eyes.png"
+}
+},
+{
+"a": 640.829,
+"b": 644.489,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_v10_lungs_smoke.png"
+}
+},
+{
+"a": 644.489,
+"b": 663.149,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CanaGira",
+"bg": "img/dur29c/ag/dur29c_v12_drop.png",
+"at": {
+"quieto": 173,
+"girando": 517
+}
+},
+"big": true
+},
+{
+"a": 663.149,
+"b": 673.829,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 3600,
+"tag": "1 HORA",
+"sub": "y no te puedes ir.",
+"fz": 245,
+"s0": 3260
+},
+"big": true
+},
+{
+"a": 673.829,
+"b": 679.649,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_f02_city_layers_2.png"
+}
+},
+{
+"a": 679.649,
+"b": 684.249,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/barbari_02.jpg",
+"ar": 2.0757,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 684.249,
+"b": 708.738,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TopCincoCiudad",
+"bg": "img/dur29c/ag/dur29c_k01_five.png",
+"at": {
+"cinco": 6,
+"cuatro": 235,
+"tres": 476,
+"dos": 9000,
+"uno": 9000
+}
+},
+"big": true
+},
+{
+"a": 708.738,
+"b": 729.158,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TopCincoCiudad",
+"bg": "img/dur29c/ag/dur29c_f03_thames_2.png",
+"at": {
+"cinco": -400,
+"cuatro": -300,
+"tres": -200,
+"dos": 6,
+"uno": 206
+}
+},
+"big": true
+},
+{
+"a": 729.158,
+"b": 730.717,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 4
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 730.717,
+"b": 734.017,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-74.0,
+40.7
+],
+"prev": [
+12.35,
+45.46
+],
+"lines": [
+"NUEVA YORK",
+"1871",
+"SANDHOG"
+],
+"name": "Brooklyn"
+},
+"big": true
+},
+{
+"a": 734.017,
+"b": 736.678,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/dur29c/v02.mp4"
+}
+},
+{
+"a": 736.678,
+"b": 749.978,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_n02_lamps_air.png",
+"o": {
+"label": "Brooklyn, 1871"
+}
+}
+},
+{
+"a": 749.978,
+"b": 753.998,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_n06_dig_floor.png"
+}
+},
+{
+"a": 753.998,
+"b": 756.698,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29c/ag/dur29c_n05_air_pipes.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*SANDHOG.*",
+"cerdo de la arena."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 756.698,
+"b": 762.038,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/brooklyn_01.jpg",
+"ar": 1.9958,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 762.038,
+"b": 767.418,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_n03_bridge_towers.png"
+}
+},
+{
+"a": 767.418,
+"b": 779.397,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/caisson_01.jpg",
+"ar": 0.8027,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 779.397,
+"b": 798.938,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CajonCorte",
+"bg": "img/dur29c/ag/dur29c_n04_caisson_sink.png",
+"at": {
+"empuja": 153,
+"veinticuatro": 513
+}
+},
+"big": true
+},
+{
+"a": 798.938,
+"b": 809.957,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_n11_stairs_exit.png"
+}
+},
+{
+"a": 809.957,
+"b": 818.217,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BotellaBurbujas",
+"bg": "img/dur29c/ag/dur29c_n07_bottle.png",
+"at": {
+"burbujas": 0
+}
+},
+"big": true
+},
+{
+"a": 818.217,
+"b": 824.158,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_n08_joints.png"
+}
+},
+{
+"a": 824.158,
+"b": 827.738,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/caisson_02.jpg",
+"ar": 0.8027,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 827.738,
+"b": 844.257,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CatalejoVentana",
+"bg": "img/dur29c/ag/dur29c_n09_window_telescope.png",
+"at": {
+"ventana": 341,
+"emily": 470
+}
+},
+"big": true
+},
+{
+"a": 844.257,
+"b": 847.478,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/emily_01.jpg",
+"ar": 0.528,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 847.478,
+"b": 865.298,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SubidaLenta",
+"bg": "img/dur29c/ag/dur29c_n11_stairs_exit_2.png",
+"at": {
+"corrian": 176,
+"viejos": 228
+}
+},
+"big": true
+},
+{
+"a": 865.298,
+"b": 872.877,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 3600,
+"tag": "1 HORA",
+"sub": "y subes despacio.",
+"fz": 159,
+"s0": 3379
+},
+"big": true
+},
+{
+"a": 872.877,
+"b": 889.198,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "RankingCiudades",
+"bg": "img/dur29c/ag/dur29c_t02_city_map_3.png",
+"at": {
+"londres": 64,
+"paris": 138,
+"edo": 214,
+"murano": 317,
+"brooklyn": 436
+}
+},
+"big": true
+},
+{
+"a": 889.198,
+"b": 895.858,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k14_today_2.png"
+}
+},
+{
+"a": 895.858,
+"b": 897.377,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 5
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 897.377,
+"b": 899.318,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-80.0,
+40.44
+],
+"prev": [
+-74.0,
+40.7
+],
+"lines": [
+"PITTSBURGH",
+"1890",
+"PUDELADOR"
+],
+"name": "Pittsburgh"
+},
+"big": true
+},
+{
+"a": 899.318,
+"b": 909.198,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_i01_furnace_door.png"
+}
+},
+{
+"a": 909.198,
+"b": 912.017,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_i04_street_lamps.png",
+"o": {
+"label": "Pittsburgh, 1890"
+}
+}
+},
+{
+"a": 912.017,
+"b": 918.658,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_i02_bar.png"
+}
+},
+{
+"a": 918.658,
+"b": 920.217,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29c/ag/dur29c_i05_stirring.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*PUDELADOR.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 920.217,
+"b": 926.717,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/brooklyn_04.jpg",
+"ar": 1.2789,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 926.717,
+"b": 932.438,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "HumoMediodia",
+"bg": "img/dur29c/ag/dur29c_i03_black_sky_s1.png",
+"at": {
+"mediodia": 78
+}
+},
+"big": true
+},
+{
+"a": 932.438,
+"b": 936.418,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_i03_black_sky.png"
+}
+},
+{
+"a": 936.418,
+"b": 950.238,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_i05_stirring_2.png"
+}
+},
+{
+"a": 950.238,
+"b": 959.637,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BolaHierro",
+"bg": "img/dur29c/ag/dur29c_i06_ball.png",
+"at": {
+"cincuenta": 168
+}
+},
+"big": true
+},
+{
+"a": 959.637,
+"b": 963.578,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_i07_smoking_clothes.png"
+}
+},
+{
+"a": 963.578,
+"b": 971.637,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_i08_water_buckets.png"
+}
+},
+{
+"a": 971.637,
+"b": 977.918,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_i11_clock_12.png",
+"o": {
+"big": {
+"w": "40",
+"size": 220,
+"y": 140,
+"a": 158
+}
+}
+}
+},
+{
+"a": 977.918,
+"b": 990.738,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_i09_union_hall.png"
+}
+},
+{
+"a": 990.738,
+"b": 1007.238,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "AguaTibia",
+"bg": "img/dur29c/ag/dur29c_i10_oatmeal_water.png",
+"at": {
+"helada": 174,
+"tibia": 313
+}
+},
+"big": true
+},
+{
+"a": 1007.238,
+"b": 1016.497,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 900,
+"tag": "15 MIN",
+"sub": "y el turno es de doce horas.",
+"fz": 235,
+"s0": 805
+},
+"big": true
+},
+{
+"a": 1016.497,
+"b": 1018.118,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 6
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 1018.118,
+"b": 1020.958,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-87.63,
+41.88
+],
+"prev": [
+-80.0,
+40.44
+],
+"lines": [
+"CHICAGO",
+"1905",
+"MATADEROS"
+],
+"name": "Chicago"
+},
+"big": true
+},
+{
+"a": 1020.958,
+"b": 1028.277,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_c01_hall_cold.png"
+}
+},
+{
+"a": 1028.277,
+"b": 1033.738,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_c02_hooks_rail.png",
+"o": {
+"label": "Chicago, 1905"
+}
+}
+},
+{
+"a": 1033.738,
+"b": 1039.238,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_c03_knife.png"
+}
+},
+{
+"a": 1039.238,
+"b": 1041.578,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29c/ag/dur29c_c07_line.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*LA LÍNEA.*",
+"de carne."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 1041.578,
+"b": 1048.218,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/stockyards_02.jpg",
+"ar": 1.7534,
+"o": {
+"credit": "Wikimedia Commons · No restrictions"
+}
+}
+},
+{
+"a": 1048.218,
+"b": 1056.866,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_c05_train_cattle.png"
+}
+},
+{
+"a": 1056.866,
+"b": 1060.546,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_c06_cans.png"
+}
+},
+{
+"a": 1060.546,
+"b": 1070.666,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LineaGanchos",
+"bg": "img/dur29c/ag/dur29c_r01_hooks_board.png",
+"at": {
+"corte": 169,
+"cientos": 253
+}
+},
+"big": true
+},
+{
+"a": 1070.666,
+"b": 1080.306,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LineaReves",
+"bg": "img/dur29c/cand/fordline_01.jpg",
+"at": {
+"reves": 182,
+"desarmaba": 257
+}
+},
+"big": true
+},
+{
+"a": 1080.306,
+"b": 1091.926,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_c09_wet_floor.png"
+}
+},
+{
+"a": 1091.926,
+"b": 1097.886,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_c10_immigrants.png"
+}
+},
+{
+"a": 1097.886,
+"b": 1105.566,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/sinclair_01.jpg",
+"ar": 0.7162,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1105.566,
+"b": 1109.746,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_c11_book.png"
+}
+},
+{
+"a": 1109.746,
+"b": 1127.546,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CorazonEstomago",
+"bg": "img/dur29c/ag/dur29c_c12_inspector.png",
+"at": {
+"corazon": 400,
+"estomago": 485
+}
+},
+"big": true
+},
+{
+"a": 1127.546,
+"b": 1131.326,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_c13_whetstone.png"
+}
+},
+{
+"a": 1131.326,
+"b": 1141.606,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_c03_knife_2.png"
+}
+},
+{
+"a": 1141.606,
+"b": 1149.086,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 1200,
+"tag": "20 MIN",
+"sub": "la línea no se detiene.",
+"fz": 180,
+"s0": 1110
+},
+"big": true
+},
+{
+"a": 1149.086,
+"b": 1150.506,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 7
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 1150.506,
+"b": 1152.986,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+88.36,
+22.57
+],
+"prev": [
+-87.63,
+41.88
+],
+"lines": [
+"CALCUTA",
+"1900",
+"RICKSHAW"
+],
+"name": "Calcuta"
+},
+"big": true
+},
+{
+"a": 1152.986,
+"b": 1155.686,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k02_monsoon_street.png"
+}
+},
+{
+"a": 1155.686,
+"b": 1163.746,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k02_monsoon_street_2.png",
+"o": {
+"label": "Calcuta, 1900"
+}
+}
+},
+{
+"a": 1163.746,
+"b": 1173.806,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k10_shafts_lean.png"
+}
+},
+{
+"a": 1173.806,
+"b": 1177.826,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k02_smoke_city.png"
+}
+},
+{
+"a": 1177.826,
+"b": 1179.786,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29c/ag/dur29c_k04_bare_feet_2.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*RICKSHAW.*",
+"a pie."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 1179.786,
+"b": 1188.666,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/rickshawjp_01.jpg",
+"ar": 1.3296,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1188.666,
+"b": 1200.066,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "HombreMasRapido",
+"bg": "img/dur29c/ag/dur29c_k06_capital.png",
+"at": {
+"corriendo": 295
+}
+},
+"big": true
+},
+{
+"a": 1200.066,
+"b": 1206.846,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k07_village_bihar.png"
+}
+},
+{
+"a": 1206.846,
+"b": 1215.066,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k08_rent_coins.png"
+}
+},
+{
+"a": 1215.066,
+"b": 1218.826,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k09_sleep_street.png"
+}
+},
+{
+"a": 1218.826,
+"b": 1229.766,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k05_japan_origin.png"
+}
+},
+{
+"a": 1229.766,
+"b": 1239.006,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k11_sun_heat.png",
+"o": {
+"big": {
+"w": "40°",
+"size": 220,
+"y": 140,
+"a": 70
+}
+}
+}
+},
+{
+"a": 1239.006,
+"b": 1245.366,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k12_flood_only.png"
+}
+},
+{
+"a": 1245.366,
+"b": 1259.466,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k13_hospital.png"
+}
+},
+{
+"a": 1259.466,
+"b": 1277.966,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "UltimaCiudad",
+"bg": "img/dur29c/ag/dur29c_k14_today_3.png",
+"at": {
+"ultima": 101,
+"hoy": 467
+}
+},
+"big": true
+},
+{
+"a": 1277.966,
+"b": 1301.306,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "RickshawPalanca",
+"bg": "img/dur29c/ag/dur29c_k16_balance.png",
+"at": {
+"equilibrio": 344,
+"campana": 557
+}
+},
+"big": true
+},
+{
+"a": 1301.306,
+"b": 1302.946,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_k15_bell.png"
+}
+},
+{
+"a": 1302.946,
+"b": 1311.906,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 300,
+"tag": "5 MIN",
+"sub": "y empieza a llover.",
+"fz": 226,
+"s0": 277
+},
+"big": true
+},
+{
+"a": 1311.906,
+"b": 1314.326,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_f05_eight_tools.png"
+}
+},
+{
+"a": 1314.326,
+"b": 1339.466,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "el tablero *final.*",
+"final": [
+109,
+188,
+277,
+385,
+487,
+581,
+671
+]
+},
+"big": true
+},
+{
+"a": 1339.466,
+"b": 1343.526,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_f05_eight_tools_2.png"
+}
+},
+{
+"a": 1343.526,
+"b": 1349.226,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_l04_hand_mud_2.png"
+}
+},
+{
+"a": 1349.226,
+"b": 1374.026,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PostalSostenida",
+"bg": "img/dur29c/ag/dur29c_f01_postcard_under.png",
+"at": {
+"debajo": 511
+}
+},
+"big": true
+},
+{
+"a": 1374.026,
+"b": 1378.006,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29c/ag/dur29c_f04_brooklyn.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"se construyen de *ARRIBA.*",
+"se sostienen de *ABAJO.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 1378.006,
+"b": 1389.106,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "OchoHerramientas",
+"bg": "img/dur29c/ag/dur29c_f02_city_layers_3.png",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1389.106,
+"b": 1395.726,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Suscríbete + campanita. La próxima semana, otro lugar.",
+"bg": "img/dur29c/cand/brooklyn_02.png"
+}
+},
+{
+"a": 1395.726,
+"b": 1398.95,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29c/ag/dur29c_f03_thames_3.png"
+}
+}
+],
+"stops": [
+{
+"n": 1,
+"a": 105.68,
+"q": 241.347,
+"w0": 232.88,
+"w1": 242.74,
+"fin": 120,
+"tag": "2 MIN",
+"b": 242.74
+},
+{
+"n": 2,
+"a": 247.3,
+"q": 379.096,
+"w0": 376.329,
+"w1": 382.529,
+"fin": 30,
+"tag": "30 SEG",
+"b": 382.529
+},
+{
+"n": 3,
+"a": 388.289,
+"q": 530.256,
+"w0": 523.689,
+"w1": 532.149,
+"fin": 45,
+"tag": "45 SEG",
+"b": 532.149
+},
+{
+"n": 4,
+"a": 535.489,
+"q": 671.316,
+"w0": 663.149,
+"w1": 673.829,
+"fin": 3600,
+"tag": "1 HORA",
+"b": 729.158
+},
+{
+"n": 5,
+"a": 734.017,
+"q": 870.598,
+"w0": 865.298,
+"w1": 872.877,
+"fin": 3600,
+"tag": "1 HORA",
+"b": 895.858
+},
+{
+"n": 6,
+"a": 899.318,
+"q": 1015.071,
+"w0": 1007.238,
+"w1": 1016.497,
+"fin": 900,
+"tag": "15 MIN",
+"b": 1016.497
+},
+{
+"n": 7,
+"a": 1020.958,
+"q": 1147.606,
+"w0": 1141.606,
+"w1": 1149.086,
+"fin": 1200,
+"tag": "20 MIN",
+"b": 1149.086
+},
+{
+"n": 8,
+"a": 1152.986,
+"q": 1310.479,
+"w0": 1302.946,
+"w1": 1311.906,
+"fin": 300,
+"tag": "5 MIN",
+"b": 1314.326
+}
+]
+}
