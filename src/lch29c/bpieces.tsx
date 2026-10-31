@@ -16,10 +16,10 @@ const SERIF = "Georgia, 'Times New Roman', serif";
 export const HymnTag: React.FC<{ t: number; at: number; out: number; n: number; name: string; side?: boolean }> = ({ t, at, out, n, name, side }) => {
   if (t < at - 0.05 || t > out + 0.9) return null;
   const inn = phys(t, at, 5.2, 0.55), up = cl((t - out) / 0.7), slot = phys(t, at + 0.35, 7, 0.38), w = cl(phys(t, at + 0.7, 6, 0.7)) * (1 - up);
-  const sc = side ? 0.72 : 1, x = side ? 60 : 90, y = 70 - (1 - inn) * 420 - up * up * 520;
+  const sc = side ? 0.72 : 1, y = 1080 - 70 - 250 * sc + (1 - inn) * 420 + up * up * 520;
   const digits = String(n).split("");
   return <AbsoluteFill style={{ pointerEvents: "none" }}>
-    <div style={{ position: "absolute", left: x, top: y, transform: `scale(${sc}) rotate(${swing(t, at + 0.2) * 0.25}deg)`, transformOrigin: "0 0", display: "flex", alignItems: "center", gap: 34 }}>
+    <div style={{ position: "absolute", right: side ? 60 : 90, top: y, transform: `scale(${sc}) rotate(${swing(t, at + 0.2) * 0.25}deg)`, transformOrigin: "100% 0", display: "flex", flexDirection: "row-reverse", alignItems: "center", gap: 34 }}>
       <div style={{ position: "relative", width: 250, height: 250, borderRadius: "120px 120px 14px 14px", background: "linear-gradient(160deg,#8a5a32,#5e3a1e 60%,#43280f)", boxShadow: "0 30px 60px rgba(0,0,0,.65), inset 0 2px 0 rgba(255,220,170,.35), inset 0 0 0 8px rgba(40,22,8,.55)" }}>
         {/* veta del roble */}
         <div style={{ position: "absolute", inset: 0, borderRadius: "inherit", background: "repeating-linear-gradient(95deg, rgba(255,210,150,.06) 0 3px, transparent 3px 11px)", mixBlendMode: "screen" }} />
@@ -33,7 +33,7 @@ export const HymnTag: React.FC<{ t: number; at: number; out: number; n: number; 
         </div>
         <div style={{ position: "absolute", left: 22, right: 22, top: 96, height: 12, background: "linear-gradient(180deg,rgba(0,0,0,.55),transparent)", opacity: slot }} />
       </div>
-      <div style={{ whiteSpace: "nowrap", fontFamily: FONT, fontWeight: 900, fontSize: 54, letterSpacing: 2, color: "#f7f4ee", textShadow: "0 6px 24px rgba(0,0,0,.85)", clipPath: `inset(-20px ${(1 - w) * 100}% -20px 0)` }}>{name}</div>
+      <div style={{ whiteSpace: "nowrap", fontFamily: FONT, fontWeight: 900, fontSize: 54, letterSpacing: 2, color: "#f7f4ee", textShadow: "0 6px 24px rgba(0,0,0,.85)", clipPath: `inset(-20px 0 -20px ${(1 - w) * 100}%)` }}>{name}</div>
     </div>
   </AbsoluteFill>;
 };
