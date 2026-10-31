@@ -66,7 +66,7 @@ const BarroPalas: React.FC<UP> = ({ d, p }) => {
   const aP = Math.min(sec(p, "palas", 1.2), 0.8);
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="iris" sky="#14100c" key1={[-0.8, 2.2, 1.4]}
     cam={{ at: [0.05, 0.24, 0], az: [-0.28, -0.14], el: [0.22, 0.2], r: [1.2, 1.1], fov: 34 }}>{(tt) => <>
-      <mesh position={[0, 0.0, 0]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[2.4, 1.6, 24, 16]} /><meshStandardMaterial map={dirtT([86, 70, 50])} roughness={0.7} metalness={0} /></mesh>
+      <mesh position={[0, 0.005, 0]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[2.4, 1.6, 24, 16]} /><meshStandardMaterial map={dirtT([86, 70, 50])} roughness={0.7} metalness={0} polygonOffset polygonOffsetFactor={-2} polygonOffsetUnits={-2} /></mesh>
       {Array.from({ length: 14 }, (_, i) => <mesh key={i} position={[(rn(i, 1) - 0.5) * 1.6, 0.015, (rn(i, 2) - 0.5) * 0.9]} rotation={[rn(i, 3), rn(i, 4), 0]}><icosahedronGeometry args={[0.025 + rn(i, 5) * 0.03, 0]} /><meshStandardMaterial color="#6a6258" roughness={0.9} flatShading /></mesh>)}
       <mesh position={[0.62, 0.05, -0.25]} scale={[1.6, 0.6, 1.2]}><sphereGeometry args={[0.12, 14, 10]} /><meshStandardMaterial map={dirtT([80, 64, 46])} roughness={0.9} /></mesh>
       {Array.from({ length: 5 }, (_, i) => <mesh key={"v" + i} position={[-1.0 + i * 0.5, 0.95, -0.2]}><boxGeometry args={[0.08, 0.08, 1.6]} />{M.wood({ base: [110, 78, 46] })}</mesh>)}

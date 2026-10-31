@@ -72,7 +72,7 @@
 "k": "real",
 "t": "real",
 "p": {
-"v": "img/dur29c/ag/dur29c_t02_city_map.png"
+"v": "broll/dur29c/v10.mp4"
 }
 },
 {
@@ -958,11 +958,25 @@
 },
 {
 "a": 469.109,
-"b": 490.269,
+"b": 481.249,
 "k": "real",
 "t": "real",
 "p": {
 "v": "img/dur29c/ag/dur29c_e03_matoi_2.png"
+}
+},
+{
+"a": 481.249,
+"b": 490.269,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/edofire_02.jpg",
+"ar": 0.8968,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
 }
 },
 {
@@ -1071,12 +1085,20 @@
 },
 {
 "a": 535.489,
+"b": 543.209,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/dur29c/v05.mp4"
+}
+},
+{
+"a": 543.209,
 "b": 547.269,
 "k": "real",
 "t": "real",
 "p": {
-"v": "broll/dur29c/v05.mp4",
-"rate": 0.66
+"v": "img/dur29c/ag/dur29c_v01_furnace.png"
 }
 },
 {
@@ -1255,11 +1277,25 @@
 },
 {
 "a": 644.489,
-"b": 663.149,
+"b": 656.169,
 "k": "real",
 "t": "real",
 "p": {
 "v": "img/dur29c/ag/dur29c_v12_drop.png"
+}
+},
+{
+"a": 656.169,
+"b": 663.149,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29c/cand/venglass_03.jpg",
+"ar": 0.6255,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
 }
 },
 {
@@ -1627,12 +1663,20 @@
 },
 {
 "a": 899.318,
+"b": 903.637,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/dur29c/v06.mp4"
+}
+},
+{
+"a": 903.637,
 "b": 909.198,
 "k": "real",
 "t": "real",
 "p": {
-"v": "broll/dur29c/v06.mp4",
-"rate": 0.787
+"v": "img/dur29c/ag/dur29c_i01_furnace_door.png"
 }
 },
 {
@@ -1711,7 +1755,7 @@
 "k": "real",
 "t": "real",
 "p": {
-"v": "img/dur29c/ag/dur29c_i03_black_sky.png"
+"v": "broll/dur29c/v09.mp4"
 }
 },
 {
@@ -2077,7 +2121,7 @@
 "k": "real",
 "t": "real",
 "p": {
-"v": "img/dur29c/ag/dur29c_k02_monsoon_street.png"
+"v": "broll/dur29c/v08.mp4"
 }
 },
 {
