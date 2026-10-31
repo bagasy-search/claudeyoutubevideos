@@ -190,11 +190,11 @@ const Garden: React.FC<{ t: number; tx: ReturnType<typeof useFarmTex>; ft: Retur
     {/* CORTE de suelo al frente: estratos, el túnel redondo y la lata enterrada a ras del piso del túnel */}
     <group position={[GX - 1.1, 0, 2.05]}>
       <mesh position={[0, -0.45, 0.45]}><planeGeometry args={[3.2, 0.9]} /><meshStandardMaterial map={tx.strata} roughness={1} /></mesh>
-      <Box p={[0, -0.46, 0]} s={[3.2, 0.9, 0.9]} cs={false} c="#3a2a1c" map={tx.soil} r={1} rad={0.01} />
+      <Box p={[0, -0.46, -0.02]} s={[3.2, 0.9, 0.86]} cs={false} c="#3a2a1c" map={tx.soil} r={1} rad={0.01} />
       {/* túnel: cilindro horizontal oscuro asomado en la cara del corte */}
-      <mesh position={[0, -0.18, 0.452]}><circleGeometry args={[0.05, 20]} /><meshStandardMaterial color="#120c07" roughness={1} /></mesh>
-      <mesh position={[-0.55, -0.18, 0.452]}><planeGeometry args={[1.0, 0.1]} /><meshStandardMaterial color="#1b120b" roughness={1} /></mesh>
-      <mesh position={[0.55, -0.18, 0.452]}><planeGeometry args={[1.0, 0.1]} /><meshStandardMaterial color="#1b120b" roughness={1} /></mesh>
+      <mesh position={[0, -0.18, 0.457]}><circleGeometry args={[0.05, 20]} /><meshStandardMaterial color="#120c07" roughness={1} /></mesh>
+      <mesh position={[-0.55, -0.18, 0.457]}><planeGeometry args={[1.0, 0.1]} /><meshStandardMaterial color="#1b120b" roughness={1} /></mesh>
+      <mesh position={[0.55, -0.18, 0.457]}><planeGeometry args={[1.0, 0.1]} /><meshStandardMaterial color="#1b120b" roughness={1} /></mesh>
       {/* la lata: el borde al ras del piso del túnel */}
       <group position={[0, -0.23, 0.36]}>
         <Cyl p={[0, -0.13, 0]} r1={0.085} h={0.26} c="#b5b9bc" m={0.85} rough={0.35} open side={THREE.DoubleSide} />
