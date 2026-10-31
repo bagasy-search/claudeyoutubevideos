@@ -1,0 +1,1476 @@
+{
+"segs": [
+[
+4.5,
+10.14,
+"shot",
+"n_ladera_cerro_frio"
+],
+[
+10.14,
+14.2,
+"shot",
+"n_casco_botas_banco"
+],
+[
+14.2,
+16.758,
+"shot",
+"v03_bolsa_coca"
+],
+[
+22.0,
+23.84,
+"shot",
+"n_tunel_bajo"
+],
+[
+23.84,
+30.34,
+"shot",
+"n_techo_tunel"
+],
+[
+30.34,
+34.877,
+"shot",
+"n_tio_sombra"
+],
+[
+38.548,
+43.3,
+"shot",
+"n_tio_cigarrillos"
+],
+[
+43.3,
+48.42,
+"shot",
+"n_botellas_ofrenda"
+],
+[
+48.42,
+50.379,
+"shot",
+"n_mano_alcohol"
+],
+[
+56.119,
+61.56,
+"shot",
+"n_v06_cerro"
+],
+[
+61.56,
+63.98,
+"shot",
+"n_globo_antiguo"
+],
+[
+63.98,
+65.8,
+"shot",
+"n_casco_conquistador"
+],
+[
+65.8,
+66.7,
+"shot",
+"n_porcelana_china"
+],
+[
+71.6,
+76.16,
+"shot",
+"n_potosi_vista"
+],
+[
+76.16,
+79.16,
+"shot",
+"n_casas_adobe_potosi"
+],
+[
+79.16,
+85.785,
+"shot",
+"n_velas_tio"
+],
+[
+89.631,
+95.1,
+"shot",
+"n_ruta_mapa_plata"
+],
+[
+95.1,
+98.22,
+"shot",
+"n_fogata_noche"
+],
+[
+98.22,
+100.7,
+"shot",
+"n_calles_coloniales"
+],
+[
+105.041,
+109.6,
+"shot",
+"n_mercurio_gotas"
+],
+[
+109.6,
+112.76,
+"shot",
+"n_cumbre_hundida"
+],
+[
+112.76,
+115.378,
+"shot",
+"n_carretilla_rieles"
+],
+[
+118.708,
+130.28,
+"shot",
+"n_salar_espejo"
+],
+[
+130.28,
+131.87,
+"shot",
+"n_salar_hexagonos"
+],
+[
+137.9,
+144.52,
+"shot",
+"n_libros_potosi"
+],
+[
+144.52,
+149.559,
+"shot",
+"n_cuaderno_leyenda"
+],
+[
+154.929,
+157.46,
+"shot",
+"n_mapa_bolivia"
+],
+[
+157.46,
+165.26,
+"shot",
+"n_cerro_cono"
+],
+[
+165.26,
+167.6,
+"shot",
+"n_cerro_atardecer"
+],
+[
+170.9,
+177.82,
+"shot",
+"n_llamas_ladera"
+],
+[
+177.82,
+180.24,
+"shot",
+"n_fogata_piedras"
+],
+[
+180.24,
+183.2,
+"shot",
+"n_ceniza_plata"
+],
+[
+188.421,
+193.06,
+"shot",
+"n_libro_cronica"
+],
+[
+193.06,
+197.8,
+"shot",
+"n_piedra_inscripcion"
+],
+[
+201.217,
+210.4,
+"shot",
+"n_veta_plata"
+],
+[
+210.4,
+215.0,
+"shot",
+"n_ciudad_1600"
+],
+[
+219.6,
+230.08,
+"shot",
+"n_tejados_potosi"
+],
+[
+230.08,
+232.1,
+"shot",
+"n_sevilla_rio"
+],
+[
+236.7,
+245.06,
+"shot",
+"n_altiplano_seco"
+],
+[
+245.06,
+246.8,
+"shot",
+"n_ruta_altiplano"
+],
+[
+250.5,
+254.44,
+"shot",
+"n_iglesia_barroca"
+],
+[
+254.44,
+257.2,
+"shot",
+"n_telas_seda"
+],
+[
+257.2,
+263.6,
+"shot",
+"n_mulas_caravana"
+],
+[
+268.532,
+272.4,
+"shot",
+"n_quijote_libro"
+],
+[
+272.4,
+277.54,
+"shot",
+"n_monedas_cofre"
+],
+[
+277.54,
+280.456,
+"shot",
+"n_herradura_plata"
+],
+[
+286.2,
+296.28,
+"shot",
+"n_tapiz_viejo"
+],
+[
+296.28,
+297.967,
+"shot",
+"n_pico_roca"
+],
+[
+301.5,
+306.7,
+"shot",
+"n_sello_virrey"
+],
+[
+306.7,
+311.06,
+"shot",
+"n_lista_turnos"
+],
+[
+311.06,
+312.497,
+"shot",
+"n_reloj_sol"
+],
+[
+316.924,
+323.82,
+"shot",
+"n_cadenas_pared"
+],
+[
+323.82,
+326.9,
+"shot",
+"n_mapa_virreinato"
+],
+[
+331.719,
+337.41,
+"shot",
+"n_sandalias_camino"
+],
+[
+337.41,
+339.27,
+"shot",
+"n_titicaca"
+],
+[
+339.27,
+343.3,
+"shot",
+"n_camino_inca"
+],
+[
+347.545,
+351.73,
+"shot",
+"n_boca_mina_vieja"
+],
+[
+351.73,
+353.63,
+"shot",
+"n_escalera_cuero"
+],
+[
+353.63,
+359.4,
+"shot",
+"n_polvo_luz"
+],
+[
+363.4,
+369.83,
+"shot",
+"n_signo_polvo"
+],
+[
+369.83,
+373.475,
+"shot",
+"n_numero_tachado_e"
+],
+[
+379.4,
+388.89,
+"shot",
+"n_cruces_cerro"
+],
+[
+388.89,
+391.0,
+"shot",
+"n_cerro_nubes_oscuras"
+],
+[
+396.8,
+402.67,
+"shot",
+"n_ingenio_piedras"
+],
+[
+402.67,
+407.39,
+"shot",
+"n_mineral_molido"
+],
+[
+407.39,
+409.4,
+"shot",
+"n_amalgama"
+],
+[
+413.509,
+422.03,
+"shot",
+"n_huancavelica"
+],
+[
+422.03,
+424.3,
+"shot",
+"n_vapor_horno"
+],
+[
+428.21,
+436.95,
+"shot",
+"n_engranajes_madera"
+],
+[
+436.95,
+440.57,
+"shot",
+"n_caravana_llamas"
+],
+[
+446.744,
+453.35,
+"shot",
+"n_huevos_canasta"
+],
+[
+453.35,
+458.1,
+"shot",
+"n_tierra_helada"
+],
+[
+461.909,
+467.83,
+"shot",
+"n_altar_oro"
+],
+[
+467.83,
+476.088,
+"shot",
+"n_dados_mesa"
+],
+[
+481.5,
+485.45,
+"shot",
+"n_quinto_real"
+],
+[
+485.45,
+490.75,
+"shot",
+"n_mano_polvo_vacia"
+],
+[
+490.75,
+492.891,
+"shot",
+"n_tuneles_queso"
+],
+[
+498.6,
+508.9,
+"shot",
+"n_vela_consumida"
+],
+[
+512.931,
+521.59,
+"shot",
+"n_calle_vacia_potosi"
+],
+[
+521.59,
+525.698,
+"shot",
+"n_acta_bolivia"
+],
+[
+531.038,
+536.25,
+"shot",
+"n_bandera_bolivia"
+],
+[
+536.25,
+541.298,
+"shot",
+"n_cerro_maquinas"
+],
+[
+546.4,
+554.33,
+"shot",
+"n_estano_lingotes"
+],
+[
+554.33,
+558.6,
+"shot",
+"n_mansion_minero"
+],
+[
+564.8,
+571.65,
+"shot",
+"n_entradas_mina_hoy"
+],
+[
+571.65,
+577.1,
+"shot",
+"n_cooperativa_cartel"
+],
+[
+582.641,
+591.05,
+"shot",
+"n_dinamita_mesa"
+],
+[
+591.05,
+594.696,
+"shot",
+"n_carretilla_tunel"
+],
+[
+600.2,
+609.99,
+"shot",
+"n_mano_roca_veta"
+],
+[
+609.99,
+612.587,
+"shot",
+"n_barreno"
+],
+[
+617.3,
+624.83,
+"shot",
+"n_mecha_roca"
+],
+[
+624.83,
+627.7,
+"shot",
+"n_tunel_vacio_polvo"
+],
+[
+632.3,
+636.05,
+"shot",
+"n_carretilla_salida"
+],
+[
+636.05,
+642.551,
+"shot",
+"n_ingenio_moderno"
+],
+[
+646.343,
+652.03,
+"shot",
+"n_balanza_mineral"
+],
+[
+652.03,
+659.0,
+"shot",
+"n_plato_sopa_mani"
+],
+[
+662.2,
+665.87,
+"shot",
+"v01_casco_socavon"
+],
+[
+665.87,
+671.37,
+"shot",
+"n_casco_colgado_casa"
+],
+[
+671.37,
+673.1,
+"shot",
+"n_amanecer_cerro"
+],
+[
+678.319,
+682.95,
+"shot",
+"n_v07_mercado_minero"
+],
+[
+682.95,
+687.59,
+"shot",
+"n_puesto_dinamita"
+],
+[
+687.59,
+689.163,
+"shot",
+"n_espalda_tunel"
+],
+[
+692.607,
+697.29,
+"shot",
+"n_v08_coca_manos"
+],
+[
+697.29,
+700.63,
+"shot",
+"n_carretilla_empujar"
+],
+[
+700.63,
+703.4,
+"shot",
+"n_reloj_tunel"
+],
+[
+708.834,
+716.09,
+"shot",
+"n_polvo_mano"
+],
+[
+716.09,
+719.79,
+"shot",
+"n_radiografia"
+],
+[
+719.79,
+720.86,
+"shot",
+"n_mascara_polvo"
+],
+[
+725.148,
+731.09,
+"shot",
+"n_pollera_ropa"
+],
+[
+731.09,
+736.57,
+"shot",
+"n_tio_ofrenda"
+],
+[
+736.57,
+738.376,
+"shot",
+"n_nicho_tunel"
+],
+[
+743.7,
+752.95,
+"shot",
+"n_tio_cara"
+],
+[
+752.95,
+756.172,
+"shot",
+"n_pachamama_tierra"
+],
+[
+760.64,
+766.73,
+"shot",
+"n_tunel_luz_roja"
+],
+[
+766.73,
+770.087,
+"shot",
+"n_calendario_mina"
+],
+[
+776.328,
+783.93,
+"shot",
+"n_botellitas_96"
+],
+[
+783.93,
+788.8,
+"shot",
+"n_alcohol_tierra"
+],
+[
+794.138,
+803.35,
+"shot",
+"n_libros_antropologia"
+],
+[
+803.35,
+805.498,
+"shot",
+"n_mascara_diablada"
+],
+[
+810.4,
+819.67,
+"shot",
+"n_serpentinas_mina"
+],
+[
+819.67,
+822.279,
+"shot",
+"n_llama_adornada"
+],
+[
+826.004,
+834.73,
+"shot",
+"n_rieles_serpentinas"
+],
+[
+834.73,
+839.067,
+"shot",
+"n_banda_bronces"
+],
+[
+842.438,
+846.19,
+"shot",
+"n_lampara_carburo"
+],
+[
+846.19,
+854.0,
+"shot",
+"n_tunel_silencio"
+],
+[
+858.8,
+866.17,
+"shot",
+"n_mano_hombro"
+],
+[
+866.17,
+868.81,
+"shot",
+"n_hojas_coca_mano"
+],
+[
+868.81,
+871.875,
+"shot",
+"n_casco_coca"
+],
+[
+876.301,
+883.05,
+"shot",
+"n_tio_vela"
+],
+[
+883.05,
+887.6,
+"shot",
+"n_palliris"
+],
+[
+892.0,
+898.73,
+"shot",
+"n_montones_rocas"
+],
+[
+898.73,
+902.5,
+"shot",
+"n_potosi_alto"
+],
+[
+906.3,
+909.83,
+"shot",
+"n_frazadas_llama"
+],
+[
+909.83,
+917.2,
+"shot",
+"n_mate_coca"
+],
+[
+923.249,
+932.69,
+"shot",
+"n_botella_agua"
+],
+[
+932.69,
+934.4,
+"shot",
+"n_oxigeno_tubo"
+],
+[
+939.2,
+946.21,
+"shot",
+"n_hospital_potosi"
+],
+[
+946.21,
+951.293,
+"shot",
+"n_cerro_desde_pension"
+],
+[
+957.1,
+965.65,
+"shot",
+"n_tuneles_mapa"
+],
+[
+965.65,
+968.089,
+"shot",
+"n_v10_atardecer"
+],
+[
+971.6,
+981.03,
+"shot",
+"n_relleno_cemento"
+],
+[
+981.03,
+982.994,
+"shot",
+"n_casa_moneda_patio"
+],
+[
+987.518,
+996.28,
+"shot",
+"n_escudo_bolivia"
+],
+[
+996.28,
+1000.5,
+"shot",
+"n_cuaderno_preguntas_e"
+],
+[
+1003.8,
+1012.4,
+"shot",
+"n_grupo_cascos"
+],
+[
+1012.4,
+1014.79,
+"shot",
+"n_regalos_bolsa"
+],
+[
+1019.829,
+1029.66,
+"shot",
+"n_tunel_angosto"
+],
+[
+1029.66,
+1030.952,
+"shot",
+"n_entrada_mina_sol"
+],
+[
+1034.2,
+1036.22,
+"shot",
+"n_v05_calle_colonial"
+],
+[
+1036.22,
+1043.78,
+"shot",
+"n_casa_moneda_fachada"
+],
+[
+1043.78,
+1047.7,
+"shot",
+"n_laminadora_madera"
+],
+[
+1051.4,
+1059.38,
+"shot",
+"n_torre_iglesia"
+],
+[
+1059.38,
+1062.484,
+"shot",
+"n_mineral_pobre_e"
+],
+[
+1068.306,
+1073.94,
+"shot",
+"n_grietas_cerro"
+],
+[
+1073.94,
+1080.591,
+"shot",
+"n_v04_moneda_plata"
+],
+[
+1085.94,
+1094.8,
+"shot",
+"n_monedas_mundo"
+],
+[
+1094.8,
+1098.08,
+"shot",
+"n_real_a8"
+],
+[
+1103.14,
+1111.62,
+"shot",
+"n_martillo_cuño"
+],
+[
+1111.62,
+1114.854,
+"shot",
+"n_monograma_potosi"
+],
+[
+1119.5,
+1123.6,
+"shot",
+"n_llamas_carga"
+],
+[
+1123.6,
+1128.4,
+"shot",
+"n_arica_puerto"
+],
+[
+1128.4,
+1131.0,
+"shot",
+"n_selva_panama"
+],
+[
+1134.9,
+1143.8,
+"shot",
+"n_casa_contratacion"
+],
+[
+1143.8,
+1145.34,
+"shot",
+"n_genova_puerto"
+],
+[
+1145.34,
+1146.7,
+"shot",
+"n_amberes_plaza"
+],
+[
+1150.529,
+1154.7,
+"shot",
+"n_brujula_mapa"
+],
+[
+1154.7,
+1160.986,
+"shot",
+"n_galeon_acapulco"
+],
+[
+1166.101,
+1172.46,
+"shot",
+"n_seda_china_rollos"
+],
+[
+1172.46,
+1178.48,
+"shot",
+"n_lingotes_china"
+],
+[
+1183.82,
+1192.62,
+"shot",
+"n_bolsa_cuero_monedas"
+],
+[
+1192.62,
+1195.189,
+"shot",
+"n_monedas_resello"
+],
+[
+1199.33,
+1206.98,
+"shot",
+"n_columnas_cinta"
+],
+[
+1206.98,
+1211.4,
+"shot",
+"n_dolar_moneda"
+],
+[
+1215.5,
+1219.5,
+"shot",
+"n_globo_hilo"
+],
+[
+1219.5,
+1221.5,
+"shot",
+"v02_mapa"
+],
+[
+1221.5,
+1227.2,
+"shot",
+"n_cerro_niebla"
+],
+[
+1233.6,
+1242.06,
+"shot",
+"n_grabado_potosi"
+],
+[
+1242.06,
+1243.965,
+"shot",
+"n_camino_piedras"
+],
+[
+1248.5,
+1260.52,
+"shot",
+"n_boca_negra"
+],
+[
+1260.52,
+1261.9,
+"shot",
+"n_manila_galeones"
+],
+[
+1268.0,
+1278.02,
+"shot",
+"n_fila_cascos"
+],
+[
+1278.02,
+1280.5,
+"shot",
+"n_cementerio_mineros"
+],
+[
+1286.408,
+1289.18,
+"shot",
+"n_ofrendas_suelo"
+],
+[
+1289.18,
+1297.9,
+"shot",
+"n_ninos_calle_espalda"
+],
+[
+1302.1,
+1308.64,
+"shot",
+"n_v09_cierra"
+],
+[
+1308.64,
+1314.2,
+"shot",
+"n_cuaderno_casco"
+]
+],
+"cam": [],
+"ov": [
+{
+"k": "chip",
+"txt": "4.000 METROS · BOCA DE UN SOCAVÓN",
+"col": "ice",
+"at": 0.0,
+"out": 3.5
+},
+{
+"k": "chip",
+"txt": "«ES PARA EL TÍO»",
+"col": "amber",
+"at": 16.92,
+"out": 20.42
+},
+{
+"k": "big",
+"txt": "EL LUGAR MÁS RICO",
+"sub": "DEL PLANETA",
+"col": "amber",
+"at": 56.68,
+"out": 59.88
+},
+{
+"k": "stamp",
+"txt": "HOY: DE LAS MÁS POBRES",
+"at": 76.16,
+"out": 79.16
+},
+{
+"k": "chip",
+"txt": "MICROS BARATOS · PENSIONES DE MALA MUERTE",
+"col": "ice",
+"at": 119.96,
+"out": 123.46
+},
+{
+"k": "chip",
+"txt": "FUENTES EN LA DESCRIPCIÓN",
+"col": "green",
+"at": 140.2,
+"out": 143.7
+},
+{
+"k": "big",
+"txt": "1545",
+"sub": "LA FOGATA",
+"col": "amber",
+"at": 149.7,
+"out": 152.9
+},
+{
+"k": "chip",
+"txt": "SUMAJ ORCKO · EL CERRO HERMOSO",
+"col": "ice",
+"at": 160.36,
+"out": 163.86
+},
+{
+"k": "stamp",
+"txt": "DIEGO HUALPA",
+"at": 169.74,
+"out": 172.74
+},
+{
+"k": "big",
+"txt": "120.000 – 160.000",
+"sub": "HABITANTES · 1610",
+"col": "amber",
+"at": 222.0,
+"out": 225.2
+},
+{
+"k": "stamp",
+"txt": "«VALE UN POTOSÍ»",
+"at": 266.68,
+"out": 269.68
+},
+{
+"k": "chip",
+"txt": "1573 · VIRREY FRANCISCO DE TOLEDO",
+"col": "red",
+"at": 304.86,
+"out": 308.36
+},
+{
+"k": "stamp",
+"txt": "NADIE LO SABE",
+"at": 365.97,
+"out": 368.97
+},
+{
+"k": "big",
+"txt": "EL CERRO",
+"sub": "QUE COME HOMBRES",
+"col": "red",
+"at": 391.87,
+"out": 395.07
+},
+{
+"k": "chip",
+"txt": "EL MERCURIO VENÍA DE HUANCAVELICA",
+"col": "ice",
+"at": 417.89,
+"out": 421.39
+},
+{
+"k": "deal",
+"at": 439.55,
+"out": 444.05
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "VIVIR DE UNA SOLA COSA",
+"at": 445.25,
+"out": 453.25
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "GASTAR COMO SI NUNCA SE TERMINARA",
+"at": 462.29,
+"out": 470.29
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "QUE LA RIQUEZA FUERA DE OTROS",
+"at": 474.75,
+"out": 482.75
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "SACAR SIN PENSAR EN EL MAÑANA",
+"at": 489.93,
+"out": 497.93
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "CREER QUE ES PARA SIEMPRE",
+"at": 501.95,
+"out": 509.95
+},
+{
+"k": "chip",
+"txt": "1825 · SIMÓN BOLÍVAR SUBE AL CERRO",
+"col": "green",
+"at": 529.51,
+"out": 533.01
+},
+{
+"k": "chip",
+"txt": "HOY: MILES DE MINEROS · COOPERATIVAS",
+"col": "amber",
+"at": 567.93,
+"out": 571.43
+},
+{
+"k": "stamp",
+"txt": "FREDDY · 16 AÑOS",
+"at": 659.51,
+"out": 662.51
+},
+{
+"k": "chip",
+"txt": "DINAMITA EN LA CALLE",
+"col": "red",
+"at": 684.63,
+"out": 688.13
+},
+{
+"k": "big",
+"txt": "NO LLEGAN",
+"sub": "A LOS 50 AÑOS",
+"col": "red",
+"at": 723.13,
+"out": 726.33
+},
+{
+"k": "chip",
+"txt": "ALCOHOL DE 96°",
+"col": "amber",
+"at": 777.95,
+"out": 781.45
+},
+{
+"k": "stamp",
+"txt": "LA CH'ALLA",
+"at": 814.65,
+"out": 817.65
+},
+{
+"k": "chip",
+"txt": "2011 · SE HUNDE LA CIMA",
+"col": "red",
+"at": 968.53,
+"out": 972.03
+},
+{
+"k": "big",
+"txt": "EN PELIGRO",
+"sub": "UNESCO · 2014",
+"col": "red",
+"at": 981.03,
+"out": 984.23
+},
+{
+"k": "chip",
+"txt": "LAS PREGUNTAS DE SIEMPRE",
+"col": "amber",
+"at": 996.28,
+"out": 999.78
+},
+{
+"k": "big",
+"txt": "DECENAS DE MILES",
+"sub": "DE TONELADAS DE PLATA",
+"col": "amber",
+"at": 1083.46,
+"out": 1086.66
+},
+{
+"k": "chip",
+"txt": "EL GALEÓN DE MANILA",
+"col": "ice",
+"at": 1164.44,
+"out": 1167.94
+},
+{
+"k": "recap",
+"rows": [
+1223.64,
+1233.9,
+1242.06,
+1248.88,
+1255.76,
+1265.06,
+1270.28,
+1280.88,
+1284.88
+],
+"at": 1221.5,
+"out": 1290.88
+},
+{
+"k": "ask",
+"at": 1300.24,
+"out": 1312.24
+},
+{
+"k": "chip",
+"txt": "SUSCRIBITE · CADA SEMANA, UN PAÍS QUE NO SALE EN LA POSTAL",
+"col": "green",
+"at": 1313.66,
+"out": 1317.16
+},
+{
+"k": "next",
+"at": 1318.44,
+"out": 1323.44
+}
+],
+"cta1": {
+"desc": 140.2,
+"end": 146.2
+},
+"cta2": {
+"desc": 1303.98,
+"end": 1309.98
+},
+"cta3": {
+"desc": 1313.66,
+"end": 1318.66
+},
+"end": 1321.84,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+0,
+0.1
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "POTOSÍ EN UN MINUTO",
+"recap": [
+"1545: la fogata y la plata",
+"1610: tan grande como Sevilla",
+"La mita: turnos obligados",
+"Nadie sabe cuántos murieron",
+"El real de a 8 dio la vuelta al mundo",
+"Gastó como si no terminara",
+"Hoy: chicos de 14 en la mina",
+"El cerro se hunde",
+"Martes y viernes, para el tío"
+],
+"ask": [
+"¿Vos entrarías",
+"a la mina?",
+"Decime sí o no abajo"
+],
+"next": [
+"HASTA LA PRÓXIMA",
+"Otro país que no sale en la postal"
+],
+"lower": [
+116.74,
+122.74
+]
+}
+}

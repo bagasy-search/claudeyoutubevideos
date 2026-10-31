@@ -1,0 +1,224 @@
+[
+{
+"k": "tio",
+"at": 30.26,
+"out": 34.76,
+"said": 31.96,
+"sp": 1.556,
+"ph": "n_tio_cigarrillos",
+"solo": true,
+"kw": "EL TÍO",
+"kw2": "el diablo de barro de la mina"
+},
+{
+"k": "worldspan",
+"at": 62.18,
+"out": 66.68,
+"said": 63.98,
+"sp": 1.556,
+"ph": "n_globo_hilo",
+"solo": true,
+"kw": "DE POTOSÍ AL MUNDO",
+"kw2": "de Europa hasta China"
+},
+{
+"k": "postal",
+"at": 127.3,
+"out": 131.8,
+"said": 127.9,
+"sp": 1.556,
+"ph": "n_salar_espejo",
+"solo": true,
+"kw": "LA POSTAL",
+"kw2": "el salar de Uyuni"
+},
+{
+"k": "fogata",
+"at": 177.82,
+"out": 182.82,
+"said": 177.82,
+"sp": 1.6,
+"ph": "n_ceniza_plata",
+"solo": true,
+"kw": "PLATA",
+"kw2": "bajo las cenizas de la fogata"
+},
+{
+"k": "twincities",
+"at": 227.48,
+"out": 231.98,
+"said": 230.08,
+"sp": 1.556
+},
+{
+"k": "mule",
+"at": 257.44,
+"out": 263.44,
+"said": 257.44,
+"ph": "n_mulas_caravana",
+"solo": true,
+"kw": "A LOMO DE MULA",
+"kw2": "semanas desde la costa"
+},
+{
+"k": "horseshoe",
+"at": 275.84,
+"out": 280.34,
+"said": 277.54,
+"sp": 1.333
+},
+{
+"k": "mita",
+"at": 307.44,
+"out": 312.44,
+"said": 307.44,
+"sp": 1.6
+},
+{
+"k": "longwalk",
+"at": 338.634,
+"out": 343.13,
+"said": 338.63,
+"sp": 1.556,
+"ph": "n_sandalias_camino",
+"solo": true,
+"kw": "SEMANAS A PIE",
+"kw2": "desde el lago Titicaca"
+},
+{
+"k": "eightmillion",
+"at": 368.774,
+"out": 373.27,
+"said": 368.77,
+"sp": 1.556,
+"ph": "n_numero_tachado_e",
+"solo": true,
+"kw": "¿8 MILLONES?",
+"kw2": "nadie lo sabe"
+},
+{
+"k": "mercury",
+"at": 404.454,
+"out": 408.95,
+"said": 404.45,
+"sp": 1.778,
+"ph": "n_mercurio_gotas",
+"solo": true,
+"kw": "MERCURIO",
+"kw2": "un veneno"
+},
+{
+"k": "emptying",
+"at": 513.194,
+"out": 520.19,
+"said": 513.19
+},
+{
+"k": "tin",
+"at": 548.554,
+"out": 555.55,
+"said": 548.55,
+"ph": "n_estano_lingotes",
+"solo": true,
+"kw": "ESTAÑO",
+"kw2": "la riqueza se fue lejos otra vez"
+},
+{
+"k": "blastseq",
+"at": 600.414,
+"out": 608.41,
+"said": 600.41,
+"ph": "n_mecha_roca",
+"solo": true,
+"kw": "PASO A PASO",
+"kw2": "así se saca el mineral"
+},
+{
+"k": "freddy",
+"at": 668.47,
+"out": 672.97,
+"said": 671.37,
+"sp": 2.0
+},
+{
+"k": "cart",
+"at": 697.288,
+"out": 703.29,
+"said": 697.29
+},
+{
+"k": "lungs",
+"at": 713.248,
+"out": 720.75,
+"said": 713.25,
+"sp": 1.067
+},
+{
+"k": "tuesday",
+"at": 765.53,
+"out": 770.03,
+"said": 766.73,
+"sp": 1.556
+},
+{
+"k": "whistle",
+"at": 846.188,
+"out": 853.19,
+"said": 846.19,
+"ph": "n_tunel_silencio",
+"solo": true,
+"kw": "NUNCA SE SILBA",
+"kw2": "despierta al tío"
+},
+{
+"k": "altitude",
+"at": 909.828,
+"out": 916.83,
+"said": 909.83
+},
+{
+"k": "gruyere",
+"at": 963.47,
+"out": 967.97,
+"said": 963.77,
+"sp": 2.0,
+"ph": "n_grietas_cerro",
+"solo": true,
+"kw": "COMO UN QUESO",
+"kw2": "500 años de túneles"
+},
+{
+"k": "casamoneda",
+"at": 1034.322,
+"out": 1041.32,
+"said": 1034.32,
+"ph": "n_laminadora_madera",
+"solo": true,
+"kw": "LA CASA DE LA MONEDA",
+"kw2": "máquinas de madera movidas por mulas"
+},
+{
+"k": "realocho",
+"at": 1093.5,
+"out": 1098.0,
+"said": 1094.8,
+"sp": 1.556
+},
+{
+"k": "route",
+"at": 1119.56,
+"out": 1124.06,
+"said": 1117.86,
+"sp": 3.556
+},
+{
+"k": "dollar",
+"at": 1201.922,
+"out": 1208.92,
+"said": 1201.92,
+"ph": "n_columnas_cinta",
+"solo": true,
+"kw": "¿EL ORIGEN DEL $?",
+"kw2": "dos columnas y una cinta"
+}
+]
