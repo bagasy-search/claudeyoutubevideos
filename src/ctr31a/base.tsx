@@ -25,9 +25,11 @@ export const at = (frase: string, desde = 0, fin = false): number => {
 // ---------- clips Veo que llegaron (clips.json = ids; archivo public/ctr31a/v/<id>.mp4) ----------
 export const HAS: Record<string, boolean> = Object.fromEntries((CLIPS as string[]).map((k) => [k, true]));
 export const REEL = true;  // true cuando llega el reel del avatar (public/ctr31a/reel0.mp4)
+// clips cuyo cuadro se cambia sin tocar la línea de tiempo (v008: frasco con etiqueta parecida a una marca real)
+const ALIAS: Record<string, string> = { v008_promise: "v006_hook" };
 export const Clip: React.FC<{ id: string; at: number; from?: number; style?: React.CSSProperties }> = ({ id, at: a, from = 0, style }) => (
   <Sequence from={s(a)} layout="none">
-    <OffthreadVideo src={staticFile(P + "v/" + id + ".mp4")} startFrom={s(from)} muted style={{ width: "100%", height: "100%", objectFit: "cover", ...style }} />
+    <OffthreadVideo src={staticFile(P + "v/" + (ALIAS[id] ?? id) + ".mp4")} startFrom={s(from)} muted style={{ width: "100%", height: "100%", objectFit: "cover", ...style }} />
   </Sequence>
 );
 // toma a cuadro completo con empuje lento 1 → 1,045 y deriva (nunca quieta)
