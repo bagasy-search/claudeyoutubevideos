@@ -61,7 +61,7 @@ const CiudadMadera: React.FC<UP> = ({ d, p }) => {
 const CortaFuego: React.FC<UP> = ({ d, p }) => {
   const aD = sec(p, "destruian", 1.5), aH = sec(p, "hueco", 3.0);
   return <U3 d={d} bg={p.bg} ground={[96, 80, 60]} mode="wipe" sky="#1a1410" key1={[-1, 2.4, 1.8]}
-    cam={{ at: [0.0, 0.3, 0], az: [-0.1, 0.0], el: [0.26, 0.22], r: [2.8, 2.65], fov: 36 }}>{(tt) => {
+    cam={{ at: [0.05, 0.3, 0], az: [-0.08, 0.0], el: [0.26, 0.22], r: [3.0, 2.95], fov: 36 }}>{(tt) => {
     const fire = lerp(-1.4, -0.12, cl(tt / (aH + 1.5))), gapK = eio(tt, aD, aD + 1.4);
     return <>
       <mesh position={[0.22, 0.004, 0]} rotation={[-PI / 2, 0, 0]} scale={[sm(gapK), 1, 1]}><planeGeometry args={[0.72, 0.5]} /><meshStandardMaterial map={dirtT([92, 62, 36])} roughness={1} /></mesh>

@@ -36,8 +36,8 @@ const OlorEscudo: React.FC<UP> = ({ d, p }) => {
 const BurbujaVidrio: React.FC<UP> = ({ d, p }) => {
   const aB = sec(p, "bola", 1.2), D = d / 30;
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="wipe" sky="#0d0806" key1={[-0.6, 2, 1.4]}
-    cam={{ at: [0.08, 0.4, 0], az: [-0.45, -0.08], el: [0.14, 0.08], r: [1.05, 0.95], fov: 32 }}>{(tt) => {
-    const inf = eio(tt, aB, D - 0.3), rot = tt * 2 * PI * 0.43, R = 0.08 + 0.055 * inf, puff = (tt * 0.8) % 1;
+    cam={{ at: [0.18, 0.4, 0], az: [-0.45, -0.08], el: [0.14, 0.08], r: [1.1, 1.0], fov: 32 }}>{(tt) => {
+    const inf = Math.sqrt(cl((tt - aB) / Math.max(0.5, D - 0.3 - aB))), rot = tt * 2 * PI * 0.43, R = 0.08 + 0.04 * inf, puff = (tt * 0.8) % 1;
     return <>
       <group position={[-0.35, 0.4, 0]} rotation={[rot, 0, 0]}>
         <mesh rotation={[0, 0, PI / 2]}><cylinderGeometry args={[0.016, 0.016, 1.1, 12]} />{M.steel({ col: "#8a8680" })}</mesh>
@@ -46,7 +46,7 @@ const BurbujaVidrio: React.FC<UP> = ({ d, p }) => {
       <mesh position={[-0.82, 0.4, 0]} rotation={[0, 0, PI / 2]}><cylinderGeometry args={[0.024, 0.024, 0.16, 12]} />{M.wood({ base: [90, 60, 36] })}</mesh>
       <mesh position={[lerp(-0.85, 0.15, puff), 0.4, 0]} rotation={[0, PI / 2, 0]} visible={tt > aB}><torusGeometry args={[0.02, 0.004, 6, 16]} /><meshBasicMaterial color="#ffd8a0" transparent opacity={0.6 * (1 - puff)} /></mesh>
       <group position={[0.2 + R * 0.8, 0.4, 0]} rotation={[rot, 0, 0]}>
-        <mesh scale={[1.15, 1, 1]}><sphereGeometry args={[R, 32, 24]} /><meshPhysicalMaterial color="#d0782c" emissive="#c84a10" emissiveIntensity={lerp(0.3, 0.06, inf)} roughness={0.1} transparent opacity={lerp(0.95, 0.6, inf)} clearcoat={1} depthWrite={false} /></mesh>
+        <mesh scale={[1.15, 1, 1]}><sphereGeometry args={[R, 32, 24]} /><meshPhysicalMaterial color="#d0782c" emissive="#c84a10" emissiveIntensity={lerp(0.3, 0.06, inf)} roughness={0.1} transparent opacity={lerp(0.97, 0.82, inf)} clearcoat={1} /></mesh>
         <mesh scale={[1.15 * (0.25 + 0.65 * inf), 0.25 + 0.65 * inf, 0.25 + 0.65 * inf]}><sphereGeometry args={[R, 24, 18]} /><meshPhysicalMaterial color="#e8d8c0" transparent opacity={0.2 + 0.15 * inf} roughness={0.02} clearcoat={1} depthWrite={false} /></mesh>
         <mesh position={[-R * 0.3, R * 0.45, R * 0.6]} scale={sm(0.5 + 0.5 * inf)}><sphereGeometry args={[R * 0.12, 12, 8]} /><meshBasicMaterial color="#fff6e8" transparent opacity={0.7} /></mesh>
       </group>
@@ -86,7 +86,7 @@ const BarroPalas: React.FC<UP> = ({ d, p }) => {
 const CuchilloFilo: React.FC<UP> = ({ d, p }) => {
   const aT = sec(p, "ti", 2.2);
   return <U3 d={d} bg={p.bg} ground={null} floor="wood" mode="wipe" sky="#14181c" key1={[-0.8, 2.2, 1.4]}
-    cam={{ at: [0.1, 0.07, -0.04], at1: [0.24, 0.06, 0.08], az: [-0.66, -0.1], el: [0.46, 0.44], r: [0.8, 1.05], fov: 34 }}>{(tt) => {
+    cam={{ at: [0.1, 0.07, -0.04], at1: [0.26, 0.06, 0.1], az: [-0.66, 0.05], el: [0.46, 0.44], r: [0.8, 1.05], fov: 34 }}>{(tt) => {
     const on = tt < aT - 0.1 ? 1 : 0, st = (tt * 0.93) % 1, tri = 1 - Math.abs(2 * st - 1), sx = on * (0.2 * tri - 0.1), push = on * (st < 0.5 ? 1 : 0.35),
       slip = eio(tt, aT, aT + 0.3), back = eio(tt, aT + 0.25, aT + 0.6), cut = eio(tt, aT + 0.2, aT + 0.45);
     return <>
