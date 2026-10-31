@@ -197,7 +197,7 @@ const XCantilever: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h=
       <svg width={1360} height={300}><path d="M0 120 L1360 120 L1260 280 L90 280 Z" fill="#2f343b" /><path d="M0 120 L1360 120" stroke="#c9a35a" strokeWidth={8} /><rect x={0} y={230 - sink * 0.9} width={1360} height={12} fill="#c2261e" /><rect x={1110} y={10} width={150} height={110} fill="#e8e4da" /><rect x={1160} y={-50} width={44} height={70} fill="#8a2a1e" /></svg>
     </div>
     <Sea tt={tt + 2} y={860} front />
-    <Num tt={tt} d={0.2} x={400} y={130} txt="A LOS BARCOS" size={96} col={AMB} />
+    <Num tt={tt} d={0.2} x={960} y={900} txt="A LOS BARCOS" size={84} col={AMB} />
   </>;
 }}</Stage>;
 
@@ -331,7 +331,7 @@ const XGauge: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} m
       <div style={{ ...at(380 - 10, 520 - 300), width: 20, height: 300, background: "linear-gradient(90deg,#8a1a12,#ff5a4a)", borderRadius: 10, transformOrigin: "50% 100%", transform: `rotate(${-ang}deg)` }} />
       <div style={{ ...at(380 - 40, 520 - 40), width: 80, height: 80, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%,#eee,#555)" }} />
     </div>
-    <Num tt={tt} d={0.2} x={600} y={160} txt="SIN COMBUSTIBLE, SIN LUZ" size={80} col={RED} />
+    <Num tt={tt} d={0.2} x={960} y={130} txt="SIN COMBUSTIBLE, SIN LUZ" size={72} col={RED} />
   </>;
 }}</Stage>;
 
