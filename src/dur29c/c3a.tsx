@@ -161,7 +161,7 @@ const TunelesForma: React.FC<UP> = ({ d, p }) => {
 // la vara de dos metros al costado se llena ----
 const CementerioCapas: React.FC<UP> = ({ d, p }) => {
   const aD = sec(p, "dos", 3.0);
-  return <U3 d={d} bg={p.bg} ground={null} mode="wipe" sky="#120f0c" key1={[-1, 2.4, 2]}
+  return <U3 over={(tt) => <Drums v={2 * eio(tt, aD, aD + 1.0)} n={1} x={1500} y={120} s={1.1} unit="m" op={eio(tt, aD, aD + 0.3)} />} d={d} bg={p.bg} ground={null} mode="wipe" sky="#120f0c" key1={[-1, 2.4, 2]}
     cam={{ at: [0, 0.45, 0], az: [-0.2, -0.05], el: [0.12, 0.1], r: [1.9, 1.7], fov: 34 }}>{(tt) => {
     const layers = 7, grow = cl(tt / Math.max(1, aD));
     return <>
@@ -174,7 +174,6 @@ const CementerioCapas: React.FC<UP> = ({ d, p }) => {
       </group>; })}
       <group position={[0.92, 0, 0.1]}><mesh position={[0, 0.5, 0]}><boxGeometry args={[0.04, 1.0, 0.04]} />{M.wood({ base: [150, 110, 60] })}</mesh>
         <mesh position={[0, 0.5 * eio(tt, aD, aD + 1.0), 0.025]} scale={[1, sm(eio(tt, aD, aD + 1.0)), 1]}><boxGeometry args={[0.03, 1.0, 0.01]} /><meshStandardMaterial color="#d8402a" emissive="#d8402a" emissiveIntensity={0.6} /></mesh></group>
-      <Drums v={2 * eio(tt, aD, aD + 1.0)} n={1} x={1500} y={120} s={1.1} unit="m" op={eio(tt, aD, aD + 0.3)} />
     </>;
   }}</U3>;
 };
@@ -230,14 +229,13 @@ const CarretasNoche: React.FC<UP> = ({ d, p }) => {
 // 6.000.000 y la cámara se aleja: la pared sigue y sigue ----
 const SeisMillones: React.FC<UP> = ({ d, p }) => {
   const aS = sec(p, "seis", 2.5);
-  return <U3 d={d} bg={p.bg} ground={[150, 140, 120]} mode="wipe" sky="#0d0b09" key1={[-0.6, 2, 1.4]}
+  return <U3 over={(tt) => <Drums v={6 * eio(tt, 0.3, aS)} n={1} x={1380} y={110} s={1.1} unit="MILLONES" op={1} />} d={d} bg={p.bg} ground={[150, 140, 120]} mode="wipe" sky="#0d0b09" key1={[-0.6, 2, 1.4]}
     cam={{ at: [0, 0.3, 0], az: [-0.5, -0.75], el: [0.1, 0.08], r: [0.9, 1.9], fov: 34 }}>{(tt) => {
     const rows = 6, cols = 22, k = cl(tt / Math.max(1, aS));
     return <>
       {Array.from({ length: rows * cols }, (_, i) => { const r = Math.floor(i / cols), c = i % cols, on = cl(k * rows * cols - i * 0.9) ; const x = -0.2 + c * 0.1, y = 0.06 + r * 0.1;
         return r % 2 === 0 ? <Skull key={i} p={[x, y + (1 - on) * 0.4, -0.3 - c * 0.02]} rot={[0, -0.6, 0]} s={on * 0.85} />
           : <Bone key={i} p={[x, y + (1 - on) * 0.4, -0.28 - c * 0.02]} rot={[0, PI / 2 - 0.6, 0]} s={on} />; })}
-      <Drums v={6 * eio(tt, 0.3, aS)} n={1} x={1380} y={110} s={1.1} unit="MILLONES" op={1} />
       <pointLight position={[0.2, 0.5, 0.4]} intensity={2.2} distance={2} color="#ffd090" />
     </>;
   }}</U3>;

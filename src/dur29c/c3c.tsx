@@ -56,7 +56,7 @@ const HumoMediodia: React.FC<UP> = ({ d, p }) => {
 // barra; en «cincuenta» sale por la puerta colgando y la balanza de abajo marca 50 kg ----
 const BolaHierro: React.FC<UP> = ({ d, p }) => {
   const aC = sec(p, "cincuenta", 2.5);
-  return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="wipe" sky="#120a06" key1={[-0.6, 2, 1.4]}
+  return <U3 over={(tt) => <Drums v={50 * eio(tt, aC + 0.6, aC + 1.4)} n={2} x={1450} y={120} s={1.1} unit="kg" op={eio(tt, aC, aC + 0.3)} />} d={d} bg={p.bg} ground={null} floor="dark" mode="wipe" sky="#120a06" key1={[-0.6, 2, 1.4]}
     cam={{ at: [0.1, 0.35, 0], az: [-0.45, -0.25], el: [0.12, 0.1], r: [1.5, 1.3], fov: 34 }}>{(tt) => {
     const grow = eio(tt, 0, aC), out = eio(tt, aC, aC + 0.9), stir = Math.sin(tt * 2.4) * 0.08 * (1 - out);
     return <>
@@ -70,7 +70,6 @@ const BolaHierro: React.FC<UP> = ({ d, p }) => {
       <group position={[0.25, 0, 0.25]}>
         <RBox s={[0.3, 0.05, 0.3]} r={0.01} p={[0, 0.025, 0]}>{M.steel({ col: "#5a5e62" })}</RBox>
       </group>
-      <Drums v={50 * eio(tt, aC + 0.6, aC + 1.4)} n={2} x={1450} y={120} s={1.1} unit="kg" op={eio(tt, aC, aC + 0.3)} />
     </>;
   }}</U3>;
 };
@@ -100,7 +99,7 @@ const AguaTibia: React.FC<UP> = ({ d, p }) => {
 // hace un solo movimiento; en «cientos» el contador de ganchos por hora gira rápido ----
 const LineaGanchos: React.FC<UP> = ({ d, p }) => {
   const aC = sec(p, "corte", 1.5), aX = sec(p, "cientos", 3.0);
-  return <U3 d={d} bg={p.bg} ground={null} floor="tile" mode="wipe" sky="#1a1c1e" key1={[-1, 2.6, 1.8]}
+  return <U3 over={(tt) => <Drums v={Math.floor(lerp(40, 400, eio(tt, aX, aX + 1.5)))} n={3} x={1350} y={110} s={1.0} unit="/h" op={eio(tt, aX - 0.2, aX + 0.2)} />} d={d} bg={p.bg} ground={null} floor="tile" mode="wipe" sky="#1a1c1e" key1={[-1, 2.6, 1.8]}
     cam={{ at: [0, 0.5, 0], az: [-0.55, -0.35], el: [0.12, 0.1], r: [1.9, 1.7], fov: 34 }}>{(tt) => {
     const mv = tt * 0.22 * (1 + eio(tt, aX, aX + 1));
     return <>
@@ -111,7 +110,6 @@ const LineaGanchos: React.FC<UP> = ({ d, p }) => {
         <mesh position={[0, -0.32, 0]} scale={[0.8, 1.3, 0.6]}><sphereGeometry args={[0.08, 12, 10]} /><meshStandardMaterial color="#b85a4a" roughness={0.6} /></mesh></group>; })}
       {[-0.75, -0.25, 0.25, 0.75].map((x, i) => <group key={i} position={[x, 0, 0.32]}><Stickman escala={0.1} rotY={180} guion={[{ t: 0, accion: "idle", expr: "cansado" as any }, { t: aC + i * 0.15, accion: "senalar", expr: "decidido" }]} semilla={60 + i} contacto={0} color="#e8e4dc" />
         <mesh position={[0.05, 0.42, -0.1]} rotation={[0.4 * Math.sin(tt * 4 + i) * cl(tt - aC), 0, 0]}><boxGeometry args={[0.012, 0.012, 0.12]} />{M.chrome()}</mesh></group>)}
-      <Drums v={Math.floor(lerp(40, 400, eio(tt, aX, aX + 1.5)))} n={3} x={1350} y={110} s={1.0} unit="/h" op={eio(tt, aX - 0.2, aX + 0.2)} />
     </>;
   }}</U3>;
 };

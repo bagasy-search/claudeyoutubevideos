@@ -28,14 +28,13 @@ const Casa: React.FC<{ p: number[]; s?: number; burn?: number; fire?: number; do
 const CiudadMadera: React.FC<UP> = ({ d, p }) => {
   const aF = sec(p, "flores", 1.5), aM = sec(p, "mil", 3.5);
   const N = 120, pos = Array.from({ length: N }, (_, i) => [((i % 12) - 5.5) * 0.24 + rn(i, 1) * 0.05, ((Math.floor(i / 12)) - 4.5) * 0.24 + rn(i, 2) * 0.05]);
-  return <U3 d={d} bg={p.bg} ground={[96, 80, 60]} mode="drop" sky="#1a1410" key1={[-1, 2.6, 1.6]}
+  return <U3 over={(tt) => <Drums v={1657 * eio(tt, aM, aM + 1.0)} n={4} x={1300} y={110} s={1.0} op={eio(tt, aM, aM + 0.3)} />} d={d} bg={p.bg} ground={[96, 80, 60]} mode="drop" sky="#1a1410" key1={[-1, 2.6, 1.6]}
     cam={{ at: [0, 0, 0], az: [-0.4, -0.2], el: [0.62, 0.72], r: [2.4, 3.0], fov: 34 }}>{(tt) => {
     const front = Math.max(0, (tt - aF) * 0.55);
     return <>
       {pos.map(([x, z], i) => { const dist = Math.hypot(x - 0.9, z - 0.6), b = cl((front - dist) / 0.4), f = cl((front - dist) / 0.15) * (1 - cl((front - dist - 0.5) / 0.4));
         return <Casa key={i} p={[x, 0, z]} s={0.9} burn={b} fire={f} />; })}
       <pointLight position={[0.9 - 0.3 * front, 0.5, 0.6 - 0.3 * front]} intensity={4 * cl(tt - aF)} distance={2.5} color="#ff8a30" />
-      <Drums v={1657 * eio(tt, aM, aM + 1.0)} n={4} x={1300} y={110} s={1.0} op={eio(tt, aM, aM + 0.3)} />
     </>;
   }}</U3>;
 };
@@ -149,7 +148,7 @@ const CopaCadena: React.FC<UP> = ({ d, p }) => {
 // gotas de sudor caen ----
 const HornoMil: React.FC<UP> = ({ d, p }) => {
   const aM = sec(p, "mil", 1.5), aO = sec(p, "ojos", 3.0);
-  return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="wipe" sky="#120a06" key1={[-0.6, 2, 1.4]}
+  return <U3 over={(tt) => <Drums v={1000 * eio(tt, 0.3, aM + 0.8)} n={4} x={1320} y={120} s={1.0} unit="°C" />} d={d} bg={p.bg} ground={null} floor="dark" mode="wipe" sky="#120a06" key1={[-0.6, 2, 1.4]}
     cam={{ at: [0, 0.4, 0], az: [-0.2, -0.05], el: [0.08, 0.06], r: [1.4, 1.2], fov: 34 }}>{(tt) => {
     const lv = eio(tt, 0.3, aM + 0.8);
     return <>
@@ -162,7 +161,6 @@ const HornoMil: React.FC<UP> = ({ d, p }) => {
         <mesh position={[0, 0.07 + 0.37 * lv, 0]} scale={[1, sm(lv), 1]}><cylinderGeometry args={[0.014, 0.014, 0.74, 10]} /><meshStandardMaterial color="#d8282a" emissive="#a01010" emissiveIntensity={0.6} /></mesh>
         {Array.from({ length: 6 }, (_, i) => <mesh key={i} position={[-0.04, 0.12 + i * 0.13, 0]}><boxGeometry args={[0.03, 0.004, 0.004]} /><meshBasicMaterial color="#e8e0d0" /></mesh>)}
       </group>
-      <Drums v={1000 * lv} n={4} x={1320} y={120} s={1.0} unit="°C" />
       {Array.from({ length: 8 }, (_, i) => <mesh key={i} position={[-0.35 + i * 0.1, 0.55 - ((tt - aO - i * 0.2) * 0.5 % 0.6), 0.25]} visible={tt > aO + i * 0.2} scale={[1, 1.4, 1]}><sphereGeometry args={[0.012, 8, 6]} />{M.water({ op: 0.6 })}</mesh>)}
       {Array.from({ length: 4 }, (_, i) => <mesh key={"h" + i} position={[0, 0.4 + Math.sin(tt * 3 + i) * 0.02, -0.15 + i * 0.08]}><planeGeometry args={[0.9, 0.5]} /><meshBasicMaterial color="#ffb070" transparent opacity={0.04 * eio(tt, aO, aO + 0.6)} depthWrite={false} /></mesh>)}
     </>;
@@ -198,7 +196,7 @@ const TopCincoCiudad: React.FC<UP> = ({ d, p }) => {
     : i === 2 ? <Lantern p={[0, 0.08, 0]} s={1.4} on={0.05} />
     : i === 3 ? <mesh position={[0, 0.07, 0]} rotation={[0, 0, Math.sin(tt * 2) * 0.2]} scale={[1, 0.6, 1]}><torusGeometry args={[0.07, 0.03, 10, 24, PI]} />{M.water({ op: 0.8 })}</mesh>
     : <group position={[0, 0.1, 0]}>{[0, 1].map((j) => <mesh key={j} position={[j * 0.07 - 0.035, 0, 0]} rotation={[PI / 2, (j ? -1 : 1) * tt * 4, 0]}><cylinderGeometry args={[0.045, 0.045, 0.015, 12]} />{M.brass()}</mesh>)}</group>;
-  return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="drop" sky="#0d0b0a" key1={[-1, 2.6, 1.8]}
+  return <U3 over={(tt) => <Drums v={5 - Math.max(0, A.filter((a) => tt >= a).length - 1)} n={1} x={1600} y={110} s={1.0} op={1} />} d={d} bg={p.bg} ground={null} floor="dark" mode="drop" sky="#0d0b0a" key1={[-1, 2.6, 1.8]}
     cam={{ at: [0, 0.38, 0], az: [-0.08, 0.06], el: [0.2, 0.17], r: [2.2, 2.05], fov: 36 }}>{(tt) => <>
       {keys.map((_, i) => { const x = (i - 2) * 0.42, z = -Math.abs(i - 2) * 0.12, k = pop(tt, A[i]), on = eio(tt, A[i], A[i] + 0.4);
         return <group key={i} position={[x, 0, z]}>
@@ -206,7 +204,6 @@ const TopCincoCiudad: React.FC<UP> = ({ d, p }) => {
           <group position={[0, 0.3, 0]} scale={k}>{obj(i, tt)}</group>
           <spotLight position={[x * 0.2, 1.5, 0.6]} angle={0.2} penumbra={0.6} intensity={7 * on} distance={3} color="#fff0d8" />
         </group>; })}
-      <Drums v={5 - Math.max(0, A.filter((a) => tt >= a).length - 1)} n={1} x={1600} y={110} s={1.0} op={1} />
     </>}</U3>;
 };
 
@@ -215,7 +212,7 @@ const TopCincoCiudad: React.FC<UP> = ({ d, p }) => {
 // marca de 24 m ----
 const CajonCorte: React.FC<UP> = ({ d, p }) => {
   const aE = sec(p, "empuja", 1.5), aV = sec(p, "veinticuatro", 3.0);
-  return <U3 d={d} bg={p.bg} ground={null} mode="wipe" sky="#14202a" key1={[-1, 2.4, 1.8]}
+  return <U3 over={(tt) => <Drums v={24 * eio(tt, aV, aV + 1.0)} n={2} x={1450} y={110} s={1.0} unit="m" op={eio(tt, aV, aV + 0.3)} />} d={d} bg={p.bg} ground={null} mode="wipe" sky="#14202a" key1={[-1, 2.4, 1.8]}
     cam={{ at: [0, 0.35, 0], az: [-0.05, 0.05], el: [0.06, 0.05], r: [2.0, 1.85], fov: 36 }}>{(tt) => {
     const sink = 0.3 * eio(tt, 0.3, aV + 1.0), push = eio(tt, aE, aE + 0.8);
     return <>
@@ -230,7 +227,6 @@ const CajonCorte: React.FC<UP> = ({ d, p }) => {
         {[-1, 1].map((s) => Array.from({ length: 4 }, (_, j) => <mesh key={s + "a" + j} position={[s * (0.45 + 0.12 * push + j * 0.04), -0.12, 0.2]} rotation={[0, 0, -s * PI / 2]} scale={sm(push)}><coneGeometry args={[0.02, 0.06, 8]} /><meshStandardMaterial color="#e8f4ff" emissive="#80c0ff" emissiveIntensity={1} /></mesh>))}
       </group>
       {[0, 6, 12, 18, 24].map((m, i) => <group key={m} position={[1.25, 0.6 - i * 0.075, 0.25]}><mesh><boxGeometry args={[0.08, 0.006, 0.006]} /><meshBasicMaterial color={m === 24 ? "#ff5a3a" : "#e8e0d0"} /></mesh></group>)}
-      <Drums v={24 * eio(tt, aV, aV + 1.0)} n={2} x={1450} y={110} s={1.0} unit="m" op={eio(tt, aV, aV + 0.3)} />
     </>;
   }}</U3>;
 };
