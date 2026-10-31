@@ -35,7 +35,7 @@ const Rata: React.FC<{ p: number[]; s?: number; ry?: number }> = ({ p, s = 1, ry
 const CloacaCorte: React.FC<UP> = ({ d, p }) => {
   const aM = sec(p, "monedas", 3.0);
   return <U3 d={d} bg={p.bg} ground={null} mode="wipe" sky="#0d0b0a" key1={[-1.2, 2.4, 2]}
-    cam={{ at: [0, 0.4, 0], at1: [0.04, 0.3, 0.05], az: [-0.26, -0.14], el: [0.2, 0.16], r: [2.15, 2.0], fov: 34 }}>{(tt) => {
+    cam={{ at: [0, 0.32, 0], at1: [0.04, 0.12, 0.05], az: [-0.26, -0.14], el: [0.12, 0.04], r: [2.15, 2.0], fov: 34 }}>{(tt) => {
     const wheel = lerp(-1.4, 1.6, cl(tt / 2.2)), glint = eio(tt, aM, aM + 0.6);
     return <>
       <mesh position={[0, 0.62, -0.05]}><boxGeometry args={[3, 0.1, 0.8]} /><meshStandardMaterial map={cobbleT()} roughness={0.9} /></mesh>
@@ -53,7 +53,7 @@ const CloacaCorte: React.FC<UP> = ({ d, p }) => {
       <mesh position={[0, -0.25, 0]}><boxGeometry args={[3, 0.1, 0.7]} /><meshPhysicalMaterial color="#5a4a2c" roughness={0.1} clearcoat={1} transparent opacity={0.85} depthWrite={false} /></mesh>
       {[0, 1, 2].map((j) => { const u = (tt * 0.6 + j / 3) % 1; return <mesh key={j} position={[0.05, -0.197, 0.12]} rotation={[-PI / 2, 0, 0]} scale={sm(0.4 + 2.2 * u)}><ringGeometry args={[0.05, 0.058, 32]} /><meshBasicMaterial color="#d8c090" transparent opacity={0.45 * (1 - u)} depthWrite={false} /></mesh>; })}
       <mesh position={[0.19, -0.198, 0.3]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[0.06, 0.4]} /><meshBasicMaterial color="#ffc070" transparent opacity={0.22 + 0.08 * Math.sin(tt * 2 * PI * 0.7)} depthWrite={false} /></mesh>
-      <group position={[0.05, -0.29, 0.12]}><Stickman enSitio escala={0.26} rotY={25} guion={[{ t: 0, accion: "caminar", expr: "decidido" }, { t: aM, accion: "senalar", expr: "sorprendido" }]} semilla={3} contacto={0} color="#5a4c3c" /></group>
+      <group position={[0.05, -0.29, 0.12]}><Stickman enSitio escala={0.22} rotY={25} guion={[{ t: 0, accion: "caminar", expr: "decidido" }, { t: aM, accion: "senalar", expr: "sorprendido" }]} semilla={3} contacto={0} color="#5a4c3c" /></group>
       <Lantern p={[0.19, -0.1, 0.22]} s={1.15} on={0.35 + 0.25 * cl(tt / 0.8)} />
       {Array.from({ length: 9 }, (_, i) => <Coin key={i} p={[-0.45 + i * 0.11 + rn(i, 2) * 0.04, -0.235, 0.18 + rn(i, 3) * 0.12]} r={0.02} silver={i === 4} />)}
       <pointLight position={[0.1, -0.1, 0.35]} intensity={3 * glint} distance={1} color="#ffe6a8" />
