@@ -140,12 +140,16 @@ export const HSocks: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t
 
 // ---- 10:54 · LAS NARANJAS: un sobrecito se desliza bajo la puerta de la vecina; del otro lado, en el piso del pasillo, dos naranjas que ella le dejaba; la tarjeta dice «thank you» ----
 export const HOranges: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="split" floor="none" wall="none" bg="#16181e" lamp={[0, 0.6, 0.6]}
-  cam={{ at: [0.04, 0.09, 0.02], az: [-0.35, -0.15], el: [0.3, 0.25], r: [0.78, 0.62], fov: 32 }}>{(tt) => {
-  const slide = eio(tt, 1.2, 3.0);
+  cam={{ at: [0.04, 0.09, 0.02], az: [-0.4, -0.02], el: [0.3, 0.22], r: [0.8, 0.6], fov: 32 }}>{(tt) => {
+  const slide = eio(tt, 1.2, 3.0), open = eio(tt, 3.4, 7.0); // la puerta se entreabre despacio y sale la luz de adentro: el final nunca queda quieto
   return <>
     <mesh rotation={[-PI / 2, 0, 0]}><planeGeometry args={[2, 2]} /><meshStandardMaterial color="#5a5a5c" roughness={0.7} /></mesh>
-    <RBox s={[0.26, 0.42, 0.02]} r={0.004} p={[0, 0.215, -0.01]}>{M.steel({ col: "#7a8a96" })}</RBox>
-    <mesh position={[0.1, 0.2, 0.001]}><sphereGeometry args={[0.008, 12, 8]} />{M.chrome()}</mesh>
+    <mesh position={[0, 0.215, -0.022]}><planeGeometry args={[0.26, 0.42]} /><meshBasicMaterial color="#ffd9a0" /></mesh>
+    <mesh rotation={[-PI / 2, 0, 0.35 * open]} position={[0.14, 0.0015, 0.07]}><planeGeometry args={[0.07 * open + 0.001, 0.16]} /><meshBasicMaterial color="#ffcf8a" transparent opacity={0.35 * open} /></mesh>
+    <group position={[-0.13, 0, -0.01]} rotation={[0, -0.55 * open, 0]}>
+      <RBox s={[0.26, 0.42, 0.02]} r={0.004} p={[0.13, 0.215, 0]}>{M.steel({ col: "#7a8a96" })}</RBox>
+      <mesh position={[0.23, 0.2, 0.011]}><sphereGeometry args={[0.008, 12, 8]} />{M.chrome()}</mesh>
+    </group>
     <group position={[-0.02, 0.002, lerp(0.14, -0.02, slide)]} rotation={[0, 0.05, 0]}>
       <RBox s={[0.08, 0.002, 0.055]} r={0.001}>{M.matte({ col: "#f6f3ea" })}</RBox>
       <mesh position={[0, 0.0012, 0]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[0.07, 0.045]} /><meshStandardMaterial map={txt("ty", ["thank you"], { w: 300, h: 190, bg: "#f6f3ea", fg: "#2a2420", size: 60, font: HANDF })} /></mesh>
