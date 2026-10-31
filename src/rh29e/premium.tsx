@@ -142,7 +142,7 @@ export const BigNum: React.FC<{ t: number; at: number; out: number; text: string
       })}
     </div>
     <div style={{ position: "relative", margin: "10px auto 14px", height: 5, width: 140 * k2, borderRadius: 3, background: c, boxShadow: `0 0 16px ${c}` }} />
-    {sub && <div style={{ position: "relative", opacity: k2, transform: `translateY(${(1 - k2) * 12}px)`, fontWeight: 800, fontSize: 36, letterSpacing: 4, color: G.dim }}>{sub}</div>}
+    {sub && <div style={{ position: "relative", display: "inline-block", opacity: k2, transform: `translateY(${(1 - k2) * 12}px)`, fontWeight: 800, fontSize: 36, letterSpacing: 4, color: G.txt, background: "rgba(6,6,8,.8)", padding: "8px 22px", borderRadius: 14, whiteSpace: "normal", maxWidth: 620, lineHeight: 1.2 }}>{sub}</div>}
   </div></div>;
 };
 
@@ -353,7 +353,8 @@ export const Words: React.FC<{ t: number; items: { at: number; txt: string; col?
   return <div style={{ position: "absolute", left: 80, right: 80, top: y, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 56, opacity: 1 - xo, fontFamily: FONT, perspective: 1200 }}>
     {items.map((w, i) => {
       const s = phys(t, w.at, 6.5, 0.4);
-      return <div key={i} style={{ fontWeight: 900, fontSize: fs, letterSpacing: 1, color: w.col ?? G.txt, background: "rgba(8,8,10,.66)", padding: "4px 28px 10px", borderRadius: 20, boxShadow: "0 10px 30px rgba(0,0,0,.35)", textShadow: "0 2px 3px rgba(0,0,0,.95), 0 6px 26px rgba(0,0,0,.85)", opacity: cl(s * 1.8),
+      return <div key={i} style={{ fontWeight: 900, fontSize: fs, letterSpacing: 1, color: G.txt, background: "rgba(6,6,8,.86)", padding: "4px 28px 10px", borderRadius: 20, boxShadow: `0 10px 30px rgba(0,0,0,.35), inset 0 0 0 3px ${w.col ?? "rgba(255,255,255,.18)"}`, // 30-oct: texto blanco + filo de color (el rojo sobre oscuro se leía flojo)
+         textShadow: "0 2px 3px rgba(0,0,0,.95), 0 6px 26px rgba(0,0,0,.85)", opacity: cl(s * 1.8),
         transform: `translateY(${(1 - s) * -90 - xo * 20}px) rotateX(${(1 - s) * 60}deg) scale(${1 - xo * 0.06})`, whiteSpace: "nowrap" }}>{w.txt}</div>;
     })}
   </div>;
@@ -439,7 +440,7 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
       <span style={{ color: G.dim, fontSize: 40 }}>&nbsp;/ {N}</span>
     </div>
     <div style={{ position: "absolute", left: 960 - 330, top: 170, width: 660, height: 780, opacity: 0.6 + 0.4 * cl(push), background: `radial-gradient(ellipse 50% 50% at 50% 50%, ${c}33, transparent 70%)` }} />
-    <div style={{ position: "absolute", left: 960, top: 560 + camY, perspective: 1900 }}>
+    <div style={{ position: "absolute", left: 960, top: 560 + camY, perspective: 1900, transform: "scale(1.28)" }}> {/* 30-oct: más grande (en celular no se leía) */}
       <div style={{ transformStyle: "preserve-3d", transform: `translateZ(${camZ}px) rotateX(${camRX}deg) rotateY(${camRY}deg)` }}>
         {cards.map((cd, i) => {
           // cada tarjeta entra en SU palabra (la 1ª con el carrusel): cae con masa desde abajo-derecha, girada, y asienta
@@ -458,11 +459,11 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
             } as React.CSSProperties}>
             <div style={{ position: "relative", width: "100%", height: "100%", borderRadius: 24, overflow: "hidden", background: "#16171a",
               boxShadow: `0 ${40 + Math.abs(land) * 60}px ${90 + Math.abs(land) * 80}px rgba(0,0,0,${0.6 - Math.min(0.3, Math.abs(land) * 0.3)}), 0 0 0 ${2 + 2 * front}px ${front > 0.5 ? c : "rgba(255,255,255,.12)"}` }}>
-              {cd.img && <Img src={staticFile("img/" + P + cd.img + ".jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.08 + 0.06 * front * ei(t, cd.at, cd.at + 6)})` }} />}
+              {cd.img && <Img src={staticFile("img/" + P + cd.img + ".jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.08 + 0.16 * front * ei(t, cd.at, cd.at + 12)}) translateY(${-3 * front * ei(t, cd.at, cd.at + 12)}%)` }} />}
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(0,0,0,.35) 0%, transparent 28%, transparent 46%, rgba(0,0,0,.92) 100%)" }} />
               <div style={{ position: "absolute", inset: 0, background: "#000", opacity: Math.min(1, ad) * 0.5 }} />
               <div style={{ position: "absolute", left: 26, top: 22, fontWeight: 800, fontSize: 104, lineHeight: 1, color: c, textShadow: "0 6px 24px rgba(0,0,0,.6)" }}>{cd.n}</div>
-              <div style={{ position: "absolute", left: 26, right: 24, bottom: 30, fontWeight: 800, fontSize: 31, lineHeight: 1.18, opacity: front * front * cl((s - 0.6) * 2.5), transform: `translateY(${(1 - front) * 16}px)` }}>{cd.title}</div>
+              <div style={{ position: "absolute", left: 26, right: 24, bottom: 30, fontWeight: 800, fontSize: 38, lineHeight: 1.15, opacity: front * front * cl((s - 0.6) * 2.5), transform: `translateY(${(1 - front) * 16}px)` }}>{cd.title}</div>
               {/* barrido de luz al apoyarse */}
               {s > 0.5 && t < cd.at + 1.4 && <div style={{ position: "absolute", top: 0, bottom: 0, left: `${-40 + 160 * ei(t, cd.at - 0.1, cd.at + 1.2)}%`, width: "30%", background: "linear-gradient(100deg, transparent, rgba(255,255,255,.2), transparent)" }} />}
             </div>
