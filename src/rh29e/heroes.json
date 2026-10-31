@@ -1,0 +1,286 @@
+[
+{
+"k": "e_lookup",
+"at": 4.14,
+"out": 10.14,
+"said": 1.24,
+"solo": true,
+"kw": "LOOK UP",
+"kw2": "little black dots",
+"ph": "ph_e_lookup"
+},
+{
+"k": "e_sheet",
+"at": 20.02,
+"out": 26.02,
+"said": 14.42,
+"solo": true,
+"kw": "WHITE AS A SHEET",
+"kw2": "and back in the same spot",
+"ph": "ph_e_sheet"
+},
+{
+"k": "e_drinking",
+"at": 38.92,
+"out": 44.92,
+"said": 38.92,
+"solo": true,
+"kw": "DRINKING",
+"kw2": "the roots never left",
+"ph": "ph_e_drinking"
+},
+{
+"k": "e_threads",
+"at": 124.74,
+"out": 130.74,
+"said": 124.74,
+"solo": true,
+"kw": "THREADS",
+"kw2": "down into the paint",
+"ph": "ph_e_threads"
+},
+{
+"k": "e_shirt",
+"at": 143.76,
+"out": 148.26,
+"said": 146.66,
+"sp": 1.333,
+"solo": true,
+"kw": "A WHITE SHIRT",
+"kw2": "the color goes, the mold stays",
+"ph": "ph_e_shirt"
+},
+{
+"k": "e_corner",
+"at": 192.64,
+"out": 198.14,
+"said": 192.64,
+"sp": 1.182,
+"solo": true,
+"kw": "THE CORNER",
+"kw2": "ceiling meets outside wall",
+"ph": "ph_e_corner"
+},
+{
+"k": "e_rises",
+"at": 204.8,
+"out": 210.8,
+"said": 204.8,
+"solo": true,
+"kw": "IT RISES",
+"kw2": "steam goes straight up",
+"ph": "ph_e_rises"
+},
+{
+"k": "e_attic",
+"at": 219.14,
+"out": 225.64,
+"said": 219.14,
+"solo": true,
+"kw": "THIN INSULATION",
+"kw2": "the cold spot above",
+"ph": "ph_e_attic"
+},
+{
+"k": "e_beads",
+"at": 254.06,
+"out": 260.56,
+"said": 250.56,
+"solo": true,
+"kw": "STILL BEADED",
+"kw2": "that's your corner",
+"ph": "ph_e_beads"
+},
+{
+"k": "e_urgent",
+"at": 287.9,
+"out": 293.9,
+"said": 285.8,
+"solo": true,
+"kw": "URGENT CARE",
+"kw2": "an afternoon rinsing my eye",
+"ph": "ph_e_urgent"
+},
+{
+"k": "e_mat",
+"at": 304.84,
+"out": 310.84,
+"said": 301.04,
+"solo": true,
+"kw": "A RUBBER MAT",
+"kw2": "and somebody in the room",
+"ph": "ph_e_mat"
+},
+{
+"k": "e_afternoon",
+"at": 343.56,
+"out": 349.56,
+"said": 343.56,
+"solo": true,
+"kw": "AFTERNOON",
+"kw2": "nobody showered since morning",
+"ph": "ph_e_afternoon"
+},
+{
+"k": "e_arm",
+"at": 356.979,
+"out": 362.98,
+"said": 356.98,
+"solo": true,
+"kw": "DOWN YOUR ARM",
+"kw2": "a wet ceiling won't drink",
+"ph": "ph_e_arm"
+},
+{
+"k": "e_scrapes",
+"at": 376.999,
+"out": 383.0,
+"said": 377.0,
+"solo": true,
+"kw": "$1",
+"kw2": "the brown bottle in the cabinet",
+"ph": "ph_e_scrapes"
+},
+{
+"k": "e_squeeze",
+"at": 424.6,
+"out": 431.1,
+"said": 424.3,
+"solo": true,
+"kw": "WET, NOT DRIPPING",
+"kw2": "squeeze the sponge",
+"ph": "ph_e_squeeze"
+},
+{
+"k": "e_mist",
+"at": 457.42,
+"out": 463.42,
+"said": 452.02,
+"solo": true,
+"kw": "MIST",
+"kw2": "stand off to the side",
+"ph": "ph_e_mist"
+},
+{
+"k": "e_wait",
+"at": 473.24,
+"out": 479.24,
+"said": 468.64,
+"solo": true,
+"kw": "DON'T TOUCH IT",
+"kw2": "have a cup of coffee",
+"ph": "ph_e_wait"
+},
+{
+"k": "e_bucket",
+"at": 489.659,
+"out": 495.66,
+"said": 489.66,
+"solo": true,
+"kw": "RINSE OFTEN",
+"kw2": "a bucket of clean water",
+"ph": "ph_e_bucket"
+},
+{
+"k": "e_square",
+"at": 552.78,
+"out": 559.28,
+"said": 548.88,
+"solo": true,
+"kw": "ONE SQUARE",
+"kw2": "flat against the grate",
+"ph": "ph_e_square"
+},
+{
+"k": "e_humming",
+"at": 569.22,
+"out": 575.22,
+"said": 566.12,
+"solo": true,
+"kw": "HUMMING",
+"kw2": "and not pulling anything",
+"ph": "ph_e_humming"
+},
+{
+"k": "e_fuzz",
+"at": 640.939,
+"out": 646.94,
+"said": 640.94,
+"solo": true,
+"kw": "GRAY FUZZ",
+"kw2": "on the grate and the blades",
+"ph": "ph_e_fuzz"
+},
+{
+"k": "e_glued",
+"at": 687.339,
+"out": 693.34,
+"said": 687.34,
+"solo": true,
+"kw": "IT STICKS",
+"kw2": "like it was glued",
+"ph": "ph_e_glued"
+},
+{
+"k": "e_dial",
+"at": 766.9,
+"out": 772.9,
+"said": 766.6,
+"solo": true,
+"kw": "THE DIAL",
+"kw2": "turn to 20, walk away",
+"ph": "ph_e_dial"
+},
+{
+"k": "e_bleed",
+"at": 837.058,
+"out": 843.06,
+"said": 837.06,
+"solo": true,
+"kw": "BLEEDS THROUGH",
+"kw2": "plain paint won't hold it",
+"ph": "ph_e_bleed"
+},
+{
+"k": "e_soft",
+"at": 883.738,
+"out": 890.24,
+"said": 883.74,
+"solo": true,
+"kw": "SOFT / SAGGY",
+"kw2": "that's a leak, not steam",
+"ph": "ph_e_soft"
+},
+{
+"k": "e_humidifier",
+"at": 974.02,
+"out": 978.52,
+"said": 975.52,
+"sp": 1.333,
+"solo": true,
+"kw": "A HUMIDIFIER",
+"kw2": "aimed at your ceiling",
+"ph": "ph_e_humidifier"
+},
+{
+"k": "e_wedge",
+"at": 1121.076,
+"out": 1127.08,
+"said": 1121.08,
+"solo": true,
+"kw": "A WOODEN WEDGE",
+"kw2": "door open after every shower",
+"ph": "ph_e_wedge"
+},
+{
+"k": "e_plate",
+"at": 1283.98,
+"out": 1288.48,
+"said": 1284.58,
+"sp": 1.333,
+"solo": true,
+"kw": "A DINNER PLATE",
+"kw2": "one small spot",
+"ph": "ph_e_plate"
+}
+]
