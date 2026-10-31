@@ -1,0 +1,273 @@
+[
+ {
+  "k": "hidden",
+  "at": 18.9,
+  "out": 27.9,
+  "ph": "almost hidden",
+  "dev": 5.2,
+  "items": []
+ },
+ {
+  "k": "line",
+  "at": 34.44,
+  "out": 43.44,
+  "ph": "people stand in line for it",
+  "dev": 5.4,
+  "items": []
+ },
+ {
+  "k": "nine",
+  "at": 67.76,
+  "out": 77.76,
+  "ph": "What it s called why it s so good",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "tracks",
+  "at": 131.52,
+  "out": 141.52,
+  "ph": "under the train tracks in Tsuruhashi",
+  "dev": 0.6,
+  "items": [
+   {
+    "at": 10.2
+   }
+  ]
+ },
+ {
+  "k": "toro",
+  "at": 169.88,
+  "out": 179.88,
+  "ph": "Tan means pork",
+  "dev": -6.1,
+  "items": []
+ },
+ {
+  "k": "chew",
+  "at": 201.86,
+  "out": 211.86,
+  "ph": "Think about what a pig does all day",
+  "dev": -1.7,
+  "items": []
+ },
+ {
+  "k": "marble",
+  "at": 219.28,
+  "out": 228.28,
+  "ph": "The jowl also has fat",
+  "dev": -3.1,
+  "items": [
+   {
+    "at": 14.48
+   }
+  ]
+ },
+ {
+  "k": "onlytwo",
+  "at": 253.6,
+  "out": 262.6,
+  "ph": "Each pig has only one jowl",
+  "dev": -2.1,
+  "items": [
+   {
+    "at": 5.44
+   }
+  ]
+ },
+ {
+  "k": "where",
+  "at": 301.96,
+  "out": 311.96,
+  "ph": "Many butchers have them in the back",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 5.86
+   },
+   {
+    "at": 16.24
+   }
+  ]
+ },
+ {
+  "k": "danny",
+  "at": 351.82,
+  "out": 361.82,
+  "ph": "came out with four pieces",
+  "dev": -4.0,
+  "items": [
+   {
+    "at": 14.18
+   }
+  ]
+ },
+ {
+  "k": "grain",
+  "at": 416.86,
+  "out": 426.86,
+  "ph": "like the grain in a piece of wood",
+  "dev": 7.1,
+  "items": [
+   {
+    "at": 3.5
+   }
+  ]
+ },
+ {
+  "k": "coin",
+  "at": 435.22,
+  "out": 443.22,
+  "ph": "like a thick coin",
+  "dev": 4.5,
+  "items": []
+ },
+ {
+  "k": "rubber",
+  "at": 498.76,
+  "out": 507.76,
+  "ph": "it becomes rubbery",
+  "dev": 5.2,
+  "items": []
+ },
+ {
+  "k": "breathe",
+  "at": 565.78,
+  "out": 575.78,
+  "ph": "the muscle that helps the cow breathe",
+  "dev": -0.9,
+  "items": [
+   {
+    "at": 13.5
+   }
+  ]
+ },
+ {
+  "k": "sendai",
+  "at": 645.06,
+  "out": 655.06,
+  "ph": "gyutan is the famous food of Sendai",
+  "dev": 6.0,
+  "items": [
+   {
+    "at": 2.74
+   }
+  ]
+ },
+ {
+  "k": "skewers",
+  "at": 709.58,
+  "out": 718.58,
+  "ph": "my mother made six skewers",
+  "dev": -2.7,
+  "items": []
+ },
+ {
+  "k": "sauce",
+  "at": 726.36,
+  "out": 736.36,
+  "ph": "one tablespoon of mirin",
+  "dev": -5.0,
+  "items": [
+   {
+    "at": 22.64
+   }
+  ]
+ },
+ {
+  "k": "five",
+  "at": 773.74,
+  "out": 783.74,
+  "ph": "how one piece of jowl feeds a family",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "kuidore",
+  "at": 859.84,
+  "out": 868.84,
+  "ph": "It means to ruin yourself by eating",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "ownoil",
+  "at": 909.48,
+  "out": 917.48,
+  "ph": "Fatty cuts like jowl make their own oil",
+  "dev": 3.1,
+  "items": []
+ },
+ {
+  "k": "rest",
+  "at": 928.32,
+  "out": 936.32,
+  "ph": "needs to rest a few minutes",
+  "dev": -3.7,
+  "items": []
+ },
+ {
+  "k": "thermo",
+  "at": 1011.28,
+  "out": 1020.28,
+  "ph": "Thin slices get there in one or two minutes",
+  "dev": -0.1,
+  "items": []
+ },
+ {
+  "k": "shichirin",
+  "at": 1080.54,
+  "out": 1090.54,
+  "ph": "it s called a shichirin",
+  "dev": -2.9,
+  "items": [
+   {
+    "at": 10.5
+   }
+  ]
+ },
+ {
+  "k": "pepper",
+  "at": 1144.04,
+  "out": 1153.04,
+  "ph": "White pepper is softer",
+  "dev": 4.8,
+  "items": []
+ },
+ {
+  "k": "rain",
+  "at": 1162.84,
+  "out": 1170.84,
+  "ph": "like rain on a tin roof",
+  "dev": -5.9,
+  "items": []
+ },
+ {
+  "k": "flip",
+  "at": 1179.52,
+  "out": 1187.52,
+  "ph": "then turn each slice over",
+  "dev": -4.1,
+  "items": []
+ },
+ {
+  "k": "nine9",
+  "at": 1256.06,
+  "out": 1266.06,
+  "ph": "So let me give you a whole dinner for four people",
+  "dev": 0.2,
+  "items": []
+ },
+ {
+  "k": "corner",
+  "at": 1369.34,
+  "out": 1379.34,
+  "ph": "That pale square piece with the small price",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 4.0
+   }
+  ]
+ }
+]
