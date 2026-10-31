@@ -243,7 +243,7 @@ export const Mistake: React.FC<{ t: number; at: number; n: number; txt: string; 
     <div style={{ position: "absolute", left: x, top: y, opacity: o, transform: `translate(-50%,-50%) perspective(1300px) rotateX(${(1 - k) * -80 + 6}deg) scale(${0.8 + 0.2 * k})`, transformOrigin: "50% 0", display: "flex", alignItems: "center", fontFamily: FONT, whiteSpace: "nowrap" }}>
       <div style={{ width: 170, height: 170, borderRadius: 26, background: `linear-gradient(180deg, ${COL.red}, #8f1a12)`, color: "#fff", fontWeight: 900, fontSize: 110, lineHeight: "170px", textAlign: "center", boxShadow: "0 30px 60px rgba(0,0,0,.6), inset 0 3px 0 rgba(255,255,255,.35)", textShadow: extrude(6, "#5a0d08") }}>{n}</div>
       <div style={{ marginLeft: -14, padding: "26px 44px 26px 50px", borderRadius: "0 22px 22px 0", background: "rgba(12,8,8,.88)", boxShadow: "0 30px 60px rgba(0,0,0,.6), inset 0 0 0 2px rgba(255,74,61,.5)" }}>
-        <div style={{ fontWeight: 800, fontSize: 26, letterSpacing: 8, color: COL.red }}>MISTAKE</div>
+        <div style={{ fontWeight: 800, fontSize: 26, letterSpacing: 8, color: COL.red }}>ERROR</div>
         <div style={{ fontWeight: 900, fontSize: 66, color: COL.ink, textShadow: extrude(5, "rgba(0,0,0,.8)") }}>{txt}</div>
       </div>
     </div>
@@ -292,11 +292,11 @@ export const NextCard: React.FC<{ t: number; at: number; subAt: number; out: num
       <div style={{ position: "absolute", left: 1010, top: 170, width: 780, height: 440, perspective: 1600 }}>
         <div style={{ width: "100%", height: "100%", borderRadius: 22, overflow: "hidden", border: "6px solid rgba(255,255,255,.94)", boxShadow: "0 50px 100px rgba(0,0,0,.7)", transform: `rotateY(${(1 - k) * -60 - 12}deg) translateZ(${(1 - k) * -600}px)`, position: "relative" }}>
           <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 80% 70% at 50% 45%, #5a2a10, #140a05)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 14, textAlign: "center", paddingTop: 30 }}>{children}</div>
-          <div style={{ position: "absolute", left: 0, top: 0, padding: "12px 22px", background: COL.amber, fontFamily: FONT, fontWeight: 900, fontSize: 30, letterSpacing: 5, color: "#2a1806" }}>NEXT VIDEO</div>
-          <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, padding: "18px 24px", background: "linear-gradient(0deg, rgba(0,0,0,.9), transparent)", fontFamily: FONT, fontWeight: 900, fontSize: 46, color: COL.ink }}>COMING SOON</div>
+          <div style={{ position: "absolute", left: 0, top: 0, padding: "12px 22px", background: COL.amber, fontFamily: FONT, fontWeight: 900, fontSize: 30, letterSpacing: 5, color: "#2a1806" }}>PRÓXIMO VIDEO</div>
+          <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, padding: "18px 24px", background: "linear-gradient(0deg, rgba(0,0,0,.9), transparent)", fontFamily: FONT, fontWeight: 900, fontSize: 46, color: COL.ink }}>MUY PRONTO</div>
         </div>
       </div>
-      {s1 > 0.01 && <div style={{ position: "absolute", left: 1400, top: 760, transform: `translate(-50%,-50%) scale(${s1 * press})`, whiteSpace: "nowrap", padding: "26px 60px", borderRadius: 60, background: done ? "#2b2b2b" : "#e62117", fontFamily: FONT, fontWeight: 900, fontSize: 56, letterSpacing: 4, color: "#fff", boxShadow: "0 24px 50px rgba(0,0,0,.6)" }}>{done ? "SUBSCRIBED ✓" : "SUBSCRIBE"}</div>}
+      {s1 > 0.01 && <div style={{ position: "absolute", left: 1400, top: 760, transform: `translate(-50%,-50%) scale(${s1 * press})`, whiteSpace: "nowrap", padding: "26px 60px", borderRadius: 60, background: done ? "#2b2b2b" : "#e62117", fontFamily: FONT, fontWeight: 900, fontSize: 56, letterSpacing: 4, color: "#fff", boxShadow: "0 24px 50px rgba(0,0,0,.6)" }}>{done ? "SUBSCRIBED ✓" : "SUSCRIBITE"}</div>}
     </AbsoluteFill>
   );
 };

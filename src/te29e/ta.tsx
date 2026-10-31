@@ -75,7 +75,7 @@ const XTwinCities: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h=
     </div>
     <Num tt={tt} d={0.4} x={560} y={180} txt="POTOSÍ 1610" size={70} col={AMB} />
     <Num tt={tt} d={0.8} x={1360} y={180} txt="SEVILLA" size={70} col={TX} />
-    <Num tt={tt} d={W(h) * 0.5} x={960} y={1000} txt="160.000 HABITANTES" size={78} col={GRN} />
+    <Num tt={tt} d={W(h) * 0.5} x={960} y={930} txt="160.000 HABITANTES" size={72} col={GRN} />
   </>;
 }}</Stage>;
 
@@ -173,7 +173,7 @@ const XEmptying: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h
     <div style={{ ...at(272, 142), width: 1376, height: 736, background: `rgba(8,10,20,${0.25 + 0.45 * k})` }} />
     {Array.from({ length: 48 }, (_, i) => { const off = ((i * 97) % 48) / 48 < k * 0.92; const x = 340 + (i % 12) * 105, y = 420 + Math.floor(i / 12) * 105;
       return <div key={i} style={{ ...at(x, y), width: 40, height: 52, borderRadius: 4, background: off ? "#1a1c24" : "radial-gradient(circle,#fff2b0,#e9a33a)", boxShadow: off ? "none" : "0 0 24px rgba(255,190,90,.8)" }} />; })}
-    <Num tt={tt} d={0.4} x={960} y={985} txt="SE VACÍA" size={100} col={AMB} />
+    <Num tt={tt} d={0.4} x={960} y={935} txt="SE VACÍA" size={90} col={AMB} />
   </>;
 }}</Stage>;
 
@@ -303,11 +303,11 @@ const XGruyere: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h}
 
 // 17:36 · EL REAL DE A OCHO: una moneda de plata enorme gira de canto y, al detenerse de frente, aparecen grabadas de a una las letras P, T, S, I
 const XRealOcho: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h} mode="iris">{(tt) => {
-  const sp = 1 - eio(tt, 0.3, 2.4), rot = sp * 1080;
+  const sp = 1 - eio(tt, 0.3, 2.4), rot = sp * 360, sx = Math.max(0.18, Math.abs(Math.cos(rot * Math.PI / 180)));
   return <>
     <PhotoObj tt={tt} id="n_real_a8" x={150} y={170} w={460} h={340} rot={-3} />
     <Floor x={1100} y={950} w={700} />
-    <div style={{ ...at(800, 260), width: 600, height: 600, borderRadius: "50%", transform: `perspective(1600px) rotateY(${rot}deg)`, background: "radial-gradient(circle at 38% 30%,#ffffff,#c9d1d8 45%,#6d7680)", boxShadow: "inset 0 0 0 22px #9aa2aa, inset 0 0 0 30px #e8edf0, 0 30px 60px rgba(0,0,0,.6)" }}>
+    <div style={{ ...at(800, 260), width: 600, height: 600, borderRadius: "50%", transform: `scaleX(${sx})`, background: "radial-gradient(circle at 38% 30%,#f2f4f6,#c9d1d8 45%,#6d7680)", boxShadow: "inset 0 0 0 22px #9aa2aa, inset 0 0 0 30px #e8edf0, 0 30px 60px rgba(0,0,0,.6)" }}>
       {["P", "T", "S", "I"].map((c, i) => { const s = phys(tt, 2.6 + i * 0.45, 7, 0.5); return s > 0.02 ? <div key={i} style={{ ...at(140 + i * 85, 220), opacity: cl(s * 2), transform: `scale(${0.5 + 0.5 * Math.min(1.1, s)})`, fontWeight: 900, fontSize: 150, color: "#5a636c", textShadow: "0 2px 0 #fff, 0 -2px 0 #3a4048" }}>{c}</div> : null; })}
     </div>
     <Num tt={tt} d={0.5} x={1100} y={150} txt="REAL DE A 8" size={96} col={TX} />
