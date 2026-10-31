@@ -42,7 +42,7 @@ const ConElSobreEl: React.FC<UP> = ({ d, p }) => {
 const TamborArvejas: React.FC<UP> = ({ d, p }) => {
   const aS = Math.min(sec(p, "saltaban", 2.4), 0.3), B = 0.53;
   return <U3 d={d} bg={p.bg} ground={[136, 100, 66]} mode="iris" key1={[-0.6, 2.2, 1.4]}
-    cam={{ at: [0.1, 0.24, 0], az: [-0.55, -0.12], el: [0.34, 0.26], r: [1.2, 0.95], fov: 34 }}>{(tt) => {
+    cam={{ at: [0.06, 0.22, 0], az: [-0.55, -0.12], el: [0.34, 0.26], r: [0.95, 0.72], fov: 34 }}>{(tt) => {
     const ph = Math.max(0, tt - aS) / B, cyc = ph % 1, on = tt > aS ? 1 : 0, hit = on * Math.max(0, 1 - cyc * 2.5), sw = on * Math.cos(cyc * 2 * PI);
     return <>
       <mesh position={[0, 0.07, 0]}><cylinderGeometry args={[0.16, 0.16, 0.14, 40]} /><meshStandardMaterial color="#8a3a22" roughness={0.6} /></mesh>
@@ -72,7 +72,7 @@ const TamborArvejas: React.FC<UP> = ({ d, p }) => {
 // con cada golpe, de izquierda a derecha, sin salir del cuadro ----
 const TamborOrdenes: React.FC<UP> = ({ d, p }) => {
   const aR = Math.min(sec(p, "radio", 0.4), 0.6), B = 0.73, D = d / 30;
-  return <U3 d={d} bg={p.bg} ground={[150, 132, 100]} mode="iris" key1={[-1.0, 2.4, 1.6]}
+  return <U3 d={d} bg={p.bg} ground={[150, 132, 100]} mode="iris" key1={[-1.0, 2.4, 1.6]} backDim={0.3}
     cam={{ at: [0.05, 0.2, 0.05], az: [-0.28, 0.0], el: [0.16, 0.12], r: [1.5, 1.3], fov: 34 }}>{(tt) => {
     const ph = Math.max(0, tt - aR) / B, cyc = ph % 1, n = Math.floor(ph), stick = Math.abs(Math.sin(cyc * PI)), beats = Math.max(1, (D - aR) / B);
     const adv = 0.36 * cl((n + eio(cyc, 0, 0.35)) / beats), bob = 0.012 * Math.abs(Math.sin(cyc * PI));
@@ -80,13 +80,13 @@ const TamborOrdenes: React.FC<UP> = ({ d, p }) => {
       <group position={[-0.4, 0, 0.12]}>
         <mesh position={[0, 0.16, 0]}><cylinderGeometry args={[0.13, 0.13, 0.2, 36]} /><meshStandardMaterial color="#2a4a7a" roughness={0.6} /></mesh>
         <mesh position={[0, 0.261, 0]} rotation={[-PI / 2, 0, 0]}><circleGeometry args={[0.128, 36]} /><meshStandardMaterial color="#efe6d0" /></mesh>
-        <mesh position={[0, 0.263, 0]} rotation={[-PI / 2, 0, 0]} scale={sm(0.15 + 0.85 * cyc)}><ringGeometry args={[0.1, 0.112, 32]} /><meshBasicMaterial color="#5a4a3a" transparent opacity={0.6 * (1 - cyc) * (tt > aR ? 1 : 0)} depthWrite={false} /></mesh>
+        <mesh position={[0, 0.263, 0]} rotation={[-PI / 2, 0, 0]} scale={sm(0.3 + 3.2 * cyc)}><ringGeometry args={[0.1, 0.118, 40]} /><meshBasicMaterial color="#fff0d0" transparent opacity={0.75 * (1 - cyc) * (tt > aR ? 1 : 0)} depthWrite={false} /></mesh>
         {[0.07, 0.25].map((y, i) => <mesh key={i} position={[0, y, 0]}><torusGeometry args={[0.132, 0.007, 8, 36]} />{M.brass()}</mesh>)}
         {[-1, 1].map((s, i) => <group key={i} position={[s * 0.05, 0.27, 0.06]} rotation={[0.2 + 0.9 * (i ? 1 - stick : stick), 0, s * 0.2]}><mesh position={[0, 0.08, 0]}><cylinderGeometry args={[0.006, 0.008, 0.17, 8]} />{M.wood({ base: [180, 140, 90] })}</mesh></group>)}
         <Sh p={[0, 0, 0]} r={0.16} />
       </group>
-      {Array.from({ length: 5 }, (_, i) => { const x = -0.02 + i * 0.13, go = eio(tt, aR + i * 0.45, aR + i * 0.45 + Math.max(1, D * 0.5)); return <group key={i} position={[x, 0, -0.34 + 0.42 * go]}>
-        <Stickman enSitio escala={0.12} rotY={0} guion={[{ t: 0, accion: "parado", expr: "decidido" }, { t: aR + i * 0.45, accion: "caminar", expr: "decidido" }] as any} semilla={80 + i} contacto={0} color="#c83a2a" />
+      {Array.from({ length: 5 }, (_, i) => { const x = -0.02 + i * 0.13, st = tt > aR ? Math.max(0, Math.floor((n - i) / 5) + 1) : 0, part = tt > aR && n % 5 === i ? eio(cyc, 0, 0.4) : 0, go = Math.min(0.45, 0.075 * (Math.max(0, st - (n % 5 === i ? 1 : 0)) + part)); return <group key={i} position={[x, 0, -0.34 + go]}>
+        <Stickman enSitio escala={i === 2 ? 0.135 : 0.12} rotY={0} guion={[{ t: 0, accion: "parado", expr: "decidido" }] as any} semilla={80 + i} contacto={0} color={i === 2 ? "#e8b830" : "#c83a2a"} />
         <Sh p={[0, -bob, 0]} r={0.06} /></group>; })}
       <spotLight position={[0, 2.4, 1.2]} angle={0.5} penumbra={0.7} intensity={9} distance={4} color="#ffe6c0" />
       <hemisphereLight args={["#e8dcc8", "#3a2a1a", 0.5]} />
@@ -132,18 +132,18 @@ const CuerdasTiempo: React.FC<UP> = ({ d, p }) => {
     : i === 2 ? <group position={[0, 0.11, 0]}><mesh><torusGeometry args={[0.1, 0.008, 8, 32, PI]} />{M.wood({ base: [150, 100, 50] })}</mesh><mesh><boxGeometry args={[0.2, 0.003, 0.003]} /><meshStandardMaterial color="#efe6d0" /></mesh></group>
     : i === 3 ? <mesh geometry={latheG("cuenco_rj", [[0, 0], [0.06, 0], [0.09, 0.04], [0.092, 0.06], [0.08, 0.06], [0.07, 0.04], [0.05, 0.008], [0, 0.008]], 32)}>{M.wood({ base: [150, 100, 60] })}</mesh>
     : <group rotation={[-1.42, 0, 0.35]} position={[0, 0.012, 0.08]}><mesh position={[0, 0.1, 0]}><cylinderGeometry args={[0.008, 0.008, 0.2, 8]} />{M.wood()}</mesh><mesh position={[0, 0.2, 0]} rotation={[0, 0, PI / 2]}><coneGeometry args={[0.012, 0.18, 8]} />{M.steel({ col: "#7a7e82" })}</mesh></group>;
-  return <U3 d={d} bg={p.bg} ground={null} floor="wood" mode="wipe" key1={[-1.0, 2.6, 2.0]}
-    cam={{ at: [0, 0.32, 0], az: [-0.1, -0.02], el: [0.16, 0.14], r: [1.5, 1.45], fov: 34 }}>{(tt) => <>
-    <RBox s={[1.25, 0.05, 0.4]} r={0.01} p={[0, 0.16, 0]}>{M.wood({ base: [150, 106, 62] })}</RBox>
-    {[-0.56, 0.56].map((x) => <RBox key={x} s={[0.06, 0.14, 0.3]} r={0.01} p={[x, 0.07, 0]}>{M.wood({ base: [120, 84, 48] })}</RBox>)}
-    <Sh p={[0, 0, 0]} r={0.5} sx={1.9} op={0.3} />
-    {Array.from({ length: 5 }, (_, i) => { const x = -0.46 + i * 0.23, a = i === 0 ? -1 : 0.2 + i * sp;
+  return <U3 d={d} bg={p.bg} ground={null} floor="wood" mode="wipe" key1={[-1.0, 2.6, 2.0]} backDim={0.3}
+    cam={{ at: [0, 0.34, 0], az: [-0.42, 0.12], el: [0.16, 0.12], r: [1.6, 1.4], fov: 34 }}>{(tt) => <>
+    {Array.from({ length: 5 }, (_, i) => { const x = -0.52 + i * 0.26, h = 0.08 + i * 0.07, a = 0.2 + i * sp;
       return <group key={i}>
-        <group position={[x, 0.185 + drop(tt, a, 0.16), 0.04]} visible={tt > a - 0.05}><group scale={2.0}><Obj i={i} /></group></group>
-        <Polvo tt={tt} a={a + 0.32} p={[x, 0.19, 0]} s={0.9} />
-        <pointLight position={[x, 0.8, 0.4]} intensity={0.0001 + 1.1 * eio(tt, a, a + 0.4)} distance={1.0} color="#ffd8a0" />
+        <RBox s={[0.24, h, 0.26]} r={0.012} p={[x, h / 2, 0]}>{M.wood({ base: [150 - i * 8, 106 - i * 6, 62] })}</RBox>
+        <mesh position={[x, h + 0.002, 0]} rotation={[-PI / 2, 0, 0]}><ringGeometry args={[0.07, 0.085, 32]} /><meshStandardMaterial color="#c8a050" emissive="#ffb040" emissiveIntensity={0.05 + 0.8 * eio(tt, a, a + 0.4)} /></mesh>
+        <group position={[x, h + 0.005 + drop(tt, a, 0.3), 0.02]} visible={tt > a - 0.05}><group scale={1.7}><Obj i={i} /></group></group>
+        <Polvo tt={tt} a={a + 0.32} p={[x, h + 0.01, 0]} s={0.9} />
+        <Sh p={[x, 0, 0]} r={0.16} op={0.3} />
+        <spotLight position={[x, 1.6, 0.6]} angle={0.2} penumbra={0.6} intensity={0.0001 + 6 * eio(tt, a, a + 0.4)} distance={2.4} color="#ffe0b0" />
       </group>; })}
-    <hemisphereLight args={["#e8dcc8", "#3a2a1a", 0.65]} />
+    <hemisphereLight args={["#e8dcc8", "#3a2a1a", 0.6]} />
   </>}</U3>;
 };
 

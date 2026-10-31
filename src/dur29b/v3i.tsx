@@ -117,20 +117,20 @@ const ConElSobreEl: React.FC<UP> = ({ d, p }) => {
 
 // ---- CercaEstacas · tres hileras de estacas inclinadas hacia el enemigo; se clavan una a una con polvo; al «caballos» uno llega y frena ----
 const CercaEstacas: React.FC<UP> = ({ d, p }) => {
-  const aE = sec(p, "estaca", 0.5), aC = sec(p, "caballos", 2.6), D = d / 30, sp = Math.max(0.08, (aC - aE - 0.2) / 15);
-  return <U3 d={d} bg={p.bg} ground={[120, 112, 70]} mode="iris" key1={[-1.2, 2.4, 1.6]}
-    cam={{ at: [0.0, 0.16, -0.1], az: [-0.62, -0.52], el: [0.24, 0.2], r: [1.45, 1.38], fov: 34 }}>{(tt) => {
+  const aE = sec(p, "estaca", 0.5), aC = sec(p, "caballos", 2.6), D = d / 30, sp = Math.max(0.08, (D - aE - 0.9) / 15);
+  return <U3 d={d} bg={p.bg} ground={[132, 104, 72]} mode="iris" key1={[-1.2, 2.4, 1.6]} backDim={0.35}
+    cam={{ at: [0.0, 0.16, -0.1], az: [-0.7, -0.45], el: [0.24, 0.2], r: [1.55, 1.35], fov: 34 }}>{(tt) => {
     const run = eio(tt, aC, Math.min(D - 0.4, aC + 1.6)), rear = Math.sin(PI * eio(tt, aC + 1.3, aC + 2.2));
     return <>
       {Array.from({ length: 15 }, (_, i) => { const row = Math.floor(i / 5), x = -0.1 + row * 0.12, z = -0.4 + (i % 5) * 0.2 + row * 0.07, a = aE + i * sp;
-        return <group key={i} position={[x, -0.45 * (1 - eio(tt, a, a + 0.18)), z]} visible={tt > a - 0.05}>
+        return <group key={i} position={[x, 0.4 * (1 - eio(tt, a, a + 0.14)) - 0.03 * Math.sin(PI * eio(tt, a + 0.14, a + 0.32)), z]} visible={tt > a - 0.05}>
           <group rotation={[0, 0, -0.55]}><mesh position={[0, 0.15, 0]}><cylinderGeometry args={[0.016, 0.045, 0.44, 10]} />{M.wood({ base: [140, 100, 60] })}</mesh></group>
           <mesh position={[0, 0, 0]} scale={[1, 0.35, 1]}><sphereGeometry args={[0.05, 14, 8]} /><meshStandardMaterial color="#6a5232" roughness={1} /></mesh>
           <Polvo tt={tt} a={a + 0.12} p={[0, 0.02, 0]} s={2.6} />
         </group>; })}
       {(() => { const j = Math.max(0, Math.min(14, Math.floor((tt - aE) / sp))), row = Math.floor(j / 5); return <group position={[-0.1 + row * 0.12 - 0.12, 0, -0.4 + (j % 5) * 0.2 + row * 0.07 + 0.02]}><Stickman escala={0.12} rotY={90} guion={[{ t: 0, accion: "aplaste", expr: "decidido" }] as any} semilla={70} contacto={0} color="#6a5a3a" /></group>; })()}
-      <group position={[lerp(1.6, 0.6, run), 0, 0]} rotation={[0, PI, rear * 0.4]}><Horse tt={tt} col="#6a4a32" gallop={1 - run * 0.9} s={1.1} /></group>
-      <Sh p={[lerp(1.6, 0.6, run), 0, 0]} r={0.16} sx={1.6} />
+      <group position={[lerp(1.3, 0.42, run), 0, 0]} rotation={[0, PI, rear * 0.4]}><Horse tt={tt} col="#6a4a32" gallop={1 - run * 0.9} s={1.1} /></group>
+      <Sh p={[lerp(1.3, 0.42, run), 0, 0]} r={0.16} sx={1.6} />
       <spotLight position={[0.2, 2.4, 1.2]} angle={0.45} penumbra={0.7} intensity={8} distance={4} color="#ffe6c0" />
     </>;
   }}</U3>;
