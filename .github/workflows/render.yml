@@ -169,18 +169,31 @@ jobs:
       # así que el re-render parcial rehacía los 20 desde cero, siempre. Se veía en los números:
       # cero releases chunks-* en el repo. Guardar es barato y es lo único que sobrevive a un
       # concat fallido, así que va primero.
+      # ⛔ 30-oct (ruth29d, run 41020853036): con 8 montajes a la vez el token del repo pega 403 «API rate
+      # limit exceeded»; el delete fallaba callado, el create/upload también, el paso seguía verde por
+      # continue-on-error y encfin armaba el MP4 con los chunks del render ANTERIOR (check_entrega 7/7 igual).
+      # Ahora: reintenta con espera y verifica que el release tenga TODOS los chunks; si no, el último paso
+      # del job («fallar si los chunks no se persistieron») pone el run en rojo.
       - name: persistir chunks (para re-render parcial)
+        id: persist
         if: ${{ !cancelled() }}
         continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           cd chunks
           ls chunk_*.mp4 >/dev/null 2>&1 || { echo "(no hay chunks para persistir)"; exit 0; }
-          echo "persistiendo $(ls chunk_*.mp4 | wc -l) chunks"
+          N=$(ls chunk_*.mp4 | wc -l); echo "persistiendo $N chunks"
           R="${{ github.repository }}"   # sin -R falla: el job stitch no hace checkout
-          gh release delete "chunks-${{ github.event.inputs.slug }}" -R "$R" --yes --cleanup-tag 2>/dev/null || true
-          gh release create "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --title "chunks-${{ github.event.inputs.slug }}" --notes "chunks para re-render parcial" \
-            || gh release upload "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --clobber
+          T="chunks-${{ github.event.inputs.slug }}"
+          for i in 1 2 3 4 5; do
+            gh release delete "$T" -R "$R" --yes --cleanup-tag 2>/dev/null || true
+            gh release create "$T" chunk_*.mp4 -R "$R" --title "$T" --notes "chunks para re-render parcial" \
+              || gh release upload "$T" chunk_*.mp4 -R "$R" --clobber || true
+            n=$(gh release view "$T" -R "$R" --json assets --jq '[.assets[]|select(.name|test("^chunk_.*mp4$"))]|length' 2>/dev/null || echo 0)
+            [ "$n" -ge "$N" ] && { echo "OK: $n/$N chunks en $T"; exit 0; }
+            echo "intento $i: $n/$N chunks en $T → espero $((i*60)) s"; sleep $((i*60))
+          done
+          echo "::error::no se pudieron persistir los chunks en $T: encfin usaría los VIEJOS"; exit 1
       # ⛔⛔ EL WAV MÁSTER TIENE QUE ESTAR ACÁ O EL AUDIO SALE DE LOS CHUNKS (medido 29-ago-2026).
       # Este job NO hace checkout ni baja el tar de assets, así que el `if [ -s "public/$SLUG.wav" ]`
       # de más abajo daba SIEMPRE falso y el audio final se tomaba de los 60 pedazos concatenados.
@@ -360,4 +373,10 @@ jobs:
           echo "::error::el MP4 de ${{ github.event.inputs.slug }} quedó CRUDO (el remux a CFR falló)."
           echo "Está en el artefacto final-${{ github.event.inputs.slug }}-RAW y NO se publicó como release."
           echo "Para rescatarlo: bash scripts/entrega_mp4.sh <mp4> ${{ github.event.inputs.slug }} <salida.mp4>"
+          exit 1
+      - name: fallar si los chunks no se persistieron
+        if: steps.persist.outcome == 'failure'
+        run: |
+          echo "::error::el release chunks-${{ github.event.inputs.slug }} quedó con los chunks del render ANTERIOR (403 / rate limit)."
+          echo "NO lanzar encfin: volver a correr este job (gh run rerun <run> --job <id stitch>) y recién ahí encfin."
           exit 1
