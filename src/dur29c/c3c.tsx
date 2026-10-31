@@ -108,7 +108,7 @@ const LineaGanchos: React.FC<UP> = ({ d, p }) => {
         <mesh position={[0, -0.08, 0]}><cylinderGeometry args={[0.004, 0.004, 0.16, 6]} />{M.steel({ col: "#8a8e92" })}</mesh>
         <mesh position={[0, -0.18, 0]} rotation={[0, 0, PI]}><torusGeometry args={[0.025, 0.004, 6, 16, PI * 1.4]} />{M.steel({ col: "#8a8e92" })}</mesh>
         <mesh position={[0, -0.32, 0]} scale={[0.8, 1.3, 0.6]}><sphereGeometry args={[0.08, 12, 10]} /><meshStandardMaterial color="#b85a4a" roughness={0.6} /></mesh></group>; })}
-      {[-0.75, -0.25, 0.25, 0.75].map((x, i) => <group key={i} position={[x, 0, 0.32]}><Stickman escala={0.1} rotY={180} guion={[{ t: 0, accion: "idle", expr: "cansado" as any }, { t: aC + i * 0.15, accion: "senalar", expr: "decidido" }]} semilla={60 + i} contacto={0} color="#e8e4dc" />
+      {[-0.75, -0.25, 0.25, 0.75].map((x, i) => <group key={i} position={[x, 0, 0.32]}><Stickman escala={0.1} rotY={180} guion={[{ t: 0, accion: "idle", expr: "aburrido" }, { t: aC + i * 0.15, accion: "senalar", expr: "decidido" }]} semilla={60 + i} contacto={0} color="#e8e4dc" />
         <mesh position={[0.05, 0.42, -0.1]} rotation={[0.4 * Math.sin(tt * 4 + i) * cl(tt - aC), 0, 0]}><boxGeometry args={[0.012, 0.012, 0.12]} />{M.chrome()}</mesh></group>)}
     </>;
   }}</U3>;
