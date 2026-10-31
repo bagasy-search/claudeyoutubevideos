@@ -1,0 +1,1523 @@
+{
+"segs": [
+[
+4.534,
+9.64,
+"shot",
+"n_ladrillo_cae"
+],
+[
+9.64,
+14.7,
+"shot",
+"n_ladrillo_mano"
+],
+[
+14.7,
+17.259,
+"shot",
+"n_freezer_caos"
+],
+[
+21.0,
+23.56,
+"shot",
+"n_pan_hielo"
+],
+[
+23.56,
+30.16,
+"shot",
+"n_arroz_bulto"
+],
+[
+30.16,
+32.3,
+"shot",
+"n_pizza_caja"
+],
+[
+40.82,
+47.92,
+"shot",
+"n_osaka_calle"
+],
+[
+63.98,
+68.8,
+"shot",
+"n_freezer_olvido"
+],
+[
+73.4,
+76.98,
+"shot",
+"n_arroz_humea"
+],
+[
+76.98,
+80.12,
+"shot",
+"n_tostada_dorada"
+],
+[
+80.12,
+85.283,
+"shot",
+"v09"
+],
+[
+95.28,
+101.177,
+"shot",
+"n_bolsa_marinada"
+],
+[
+109.38,
+116.78,
+"shot",
+"n_cuaderno_semana"
+],
+[
+130.24,
+133.466,
+"shot",
+"v01"
+],
+[
+138.012,
+146.82,
+"shot",
+"n_sanyo_viejo"
+],
+[
+146.82,
+150.662,
+"shot",
+"n_mantel_encaje"
+],
+[
+154.1,
+163.84,
+"shot",
+"n_olla_arroz"
+],
+[
+163.84,
+166.896,
+"shot",
+"v02"
+],
+[
+172.1,
+179.82,
+"shot",
+"n_vapor_film"
+],
+[
+188.0,
+198.34,
+"shot",
+"n_arroz_seco"
+],
+[
+198.34,
+201.5,
+"shot",
+"n_balanza_arroz"
+],
+[
+205.648,
+211.04,
+"shot",
+"n_cuadrado_arroz"
+],
+[
+211.04,
+216.58,
+"shot",
+"n_dobla_film"
+],
+[
+223.535,
+229.32,
+"shot",
+"n_cuadrado_congelado"
+],
+[
+229.32,
+232.5,
+"shot",
+"n_microondas_arroz"
+],
+[
+232.5,
+234.951,
+"shot",
+"n_arroz_soplo"
+],
+[
+245.58,
+249.68,
+"shot",
+"n_olla_grande"
+],
+[
+256.815,
+262.92,
+"shot",
+"n_tupper_hondo"
+],
+[
+273.535,
+281.3,
+"shot",
+"n_arroz_medio"
+],
+[
+281.3,
+283.6,
+"shot",
+"n_arroz_galleta"
+],
+[
+289.832,
+299.64,
+"shot",
+"n_regla_arroz"
+],
+[
+299.64,
+301.2,
+"shot",
+"n_tuppers_planos"
+],
+[
+305.733,
+312.46,
+"shot",
+"v04"
+],
+[
+321.222,
+331.75,
+"shot",
+"n_bandeja_aluminio"
+],
+[
+331.75,
+334.1,
+"shot",
+"n_bandeja_escarcha"
+],
+[
+339.3,
+345.87,
+"shot",
+"n_cristales_hielo"
+],
+[
+345.87,
+348.83,
+"shot",
+"n_carne_aguada"
+],
+[
+355.0,
+360.59,
+"shot",
+"n_bandejas_tienda"
+],
+[
+367.904,
+374.57,
+"shot",
+"n_bandeja_vieja"
+],
+[
+374.57,
+378.9,
+"shot",
+"n_libros_freezer"
+],
+[
+384.8,
+389.63,
+"shot",
+"n_paquetes_juntos"
+],
+[
+399.943,
+408.49,
+"shot",
+"n_pan_americano"
+],
+[
+408.49,
+411.8,
+"shot",
+"n_shokupan"
+],
+[
+416.0,
+420.43,
+"shot",
+"n_pan_moho"
+],
+[
+420.43,
+424.53,
+"shot",
+"n_tokyo_panaderia"
+],
+[
+424.53,
+428.352,
+"shot",
+"v05"
+],
+[
+433.4,
+439.09,
+"shot",
+"n_rebanadas_film"
+],
+[
+449.035,
+454.21,
+"shot",
+"n_rebanada_congelada"
+],
+[
+454.21,
+459.73,
+"shot",
+"n_tostadora"
+],
+[
+465.405,
+470.77,
+"shot",
+"n_gotas_pan"
+],
+[
+470.77,
+475.45,
+"shot",
+"n_tostada_corte"
+],
+[
+482.749,
+488.87,
+"shot",
+"n_heladera_pan"
+],
+[
+496.727,
+502.25,
+"shot",
+"n_pan_duro"
+],
+[
+502.25,
+507.29,
+"shot",
+"n_tres_panes"
+],
+[
+514.432,
+522.31,
+"shot",
+"n_pan_blando"
+],
+[
+522.31,
+525.659,
+"shot",
+"n_panera"
+],
+[
+529.544,
+535.77,
+"shot",
+"n_cocina_80s"
+],
+[
+535.77,
+540.47,
+"shot",
+"n_tostada_quemada"
+],
+[
+549.212,
+556.11,
+"shot",
+"n_tofu_esponja"
+],
+[
+556.11,
+558.49,
+"shot",
+"n_carne_molida"
+],
+[
+565.904,
+576.09,
+"shot",
+"n_bandeja_redonda"
+],
+[
+576.09,
+577.9,
+"shot",
+"n_descongela_todo"
+],
+[
+582.107,
+590.21,
+"shot",
+"n_bolsa_plana"
+],
+[
+590.21,
+595.4,
+"shot",
+"v03"
+],
+[
+598.723,
+600.01,
+"shot",
+"n_chocolate_carne"
+],
+[
+600.01,
+606.53,
+"shot",
+"v06"
+],
+[
+614.8,
+623.11,
+"shot",
+"n_carne_sarten"
+],
+[
+623.11,
+625.7,
+"shot",
+"n_bandeja_espuma"
+],
+[
+630.6,
+637.93,
+"shot",
+"n_bolsas_super"
+],
+[
+648.526,
+655.32,
+"shot",
+"n_lonchas_cerdo"
+],
+[
+655.32,
+659.099,
+"shot",
+"n_bloque_lonchas"
+],
+[
+663.1,
+665.82,
+"shot",
+"n_lonchas_papel"
+],
+[
+665.82,
+674.14,
+"shot",
+"n_sandwich_papel"
+],
+[
+679.424,
+684.1,
+"shot",
+"n_lonchas_separa"
+],
+[
+684.1,
+689.36,
+"shot",
+"n_lonchas_wok"
+],
+[
+698.1,
+703.6,
+"shot",
+"n_hongos_varios"
+],
+[
+703.6,
+706.16,
+"shot",
+"n_hongo_papel"
+],
+[
+712.8,
+713.98,
+"shot",
+"v07"
+],
+[
+713.98,
+718.56,
+"shot",
+"n_hongos_congelados"
+],
+[
+718.56,
+725.5,
+"shot",
+"n_hongo_corte"
+],
+[
+736.62,
+740.684,
+"shot",
+"n_miso_hongos"
+],
+[
+749.5,
+754.18,
+"shot",
+"n_tofu_caja"
+],
+[
+759.9,
+768.38,
+"shot",
+"n_tofu_congelado"
+],
+[
+768.38,
+771.02,
+"shot",
+"n_tofu_bol"
+],
+[
+776.232,
+782.84,
+"shot",
+"n_tofu_escurre"
+],
+[
+782.84,
+786.7,
+"shot",
+"n_tofu_agujeros"
+],
+[
+792.8,
+795.44,
+"shot",
+"n_tofu_salsa"
+],
+[
+795.44,
+801.28,
+"shot",
+"n_tofu_jugoso"
+],
+[
+801.28,
+804.2,
+"shot",
+"n_koya_dofu"
+],
+[
+809.3,
+815.22,
+"shot",
+"n_mama_cocina70"
+],
+[
+815.22,
+820.66,
+"shot",
+"n_tofu_bowl"
+],
+[
+827.4,
+832.2,
+"shot",
+"n_sanyo_puerta"
+],
+[
+832.2,
+837.24,
+"shot",
+"n_etiqueta_mes"
+],
+[
+843.6,
+848.86,
+"shot",
+"n_viejo_adelante"
+],
+[
+848.86,
+855.2,
+"shot",
+"n_ladrillos_misterio"
+],
+[
+867.22,
+871.24,
+"shot",
+"n_termometro_cero"
+],
+[
+871.24,
+873.687,
+"shot",
+"n_quemadura_frio"
+],
+[
+879.2,
+888.6,
+"shot",
+"n_calendario_cocina"
+],
+[
+893.1,
+901.98,
+"shot",
+"n_paquete_antiguo"
+],
+[
+912.243,
+919.18,
+"shot",
+"n_sopa_honda"
+],
+[
+919.18,
+923.4,
+"shot",
+"n_sopa_plana"
+],
+[
+927.7,
+934.18,
+"shot",
+"n_bolsa_aire"
+],
+[
+934.18,
+939.672,
+"shot",
+"n_bolsa_agua"
+],
+[
+944.337,
+952.38,
+"shot",
+"n_descongela_mesada"
+],
+[
+952.38,
+956.383,
+"shot",
+"n_heladera_noche"
+],
+[
+962.008,
+968.18,
+"shot",
+"v09"
+],
+[
+968.18,
+973.0,
+"shot",
+"n_freezer_lleno"
+],
+[
+981.62,
+984.66,
+"shot",
+"n_tres_cuartos"
+],
+[
+984.66,
+989.283,
+"shot",
+"n_botellas_agua"
+],
+[
+994.6,
+998.28,
+"shot",
+"n_papas_raras"
+],
+[
+998.28,
+1001.24,
+"shot",
+"n_lechuga_agua"
+],
+[
+1001.24,
+1005.152,
+"shot",
+"n_huevo_roto"
+],
+[
+1015.04,
+1021.2,
+"shot",
+"n_pila_arroz"
+],
+[
+1025.3,
+1032.12,
+"shot",
+"n_sushi_arroz"
+],
+[
+1032.12,
+1037.395,
+"shot",
+"n_freezer_chico"
+],
+[
+1051.0,
+1053.6,
+"shot",
+"n_ingredientes_marinada"
+],
+[
+1058.735,
+1063.98,
+"shot",
+"n_domingo_tarde"
+],
+[
+1063.98,
+1068.84,
+"shot",
+"n_muslos_pollo"
+],
+[
+1074.831,
+1080.32,
+"shot",
+"n_cuchara_soja"
+],
+[
+1080.32,
+1086.3,
+"shot",
+"n_mirin_botella"
+],
+[
+1090.9,
+1095.36,
+"shot",
+"n_jengibre_rallado"
+],
+[
+1095.36,
+1101.02,
+"shot",
+"v08"
+],
+[
+1107.532,
+1114.96,
+"shot",
+"n_pollo_bolsa"
+],
+[
+1114.96,
+1119.0,
+"shot",
+"n_pollo_corte"
+],
+[
+1131.98,
+1133.72,
+"shot",
+"n_bloque_sarten"
+],
+[
+1140.702,
+1146.62,
+"shot",
+"n_sarten_vapor"
+],
+[
+1146.62,
+1150.366,
+"shot",
+"n_pollo_glaseado"
+],
+[
+1154.4,
+1156.98,
+"shot",
+"n_cena_lista"
+],
+[
+1166.0,
+1167.76,
+"shot",
+"n_dos_bolsas"
+],
+[
+1171.3,
+1181.2,
+"shot",
+"n_tres_bolsas"
+],
+[
+1187.019,
+1189.1,
+"shot",
+"n_arroz_crudo"
+],
+[
+1190.94,
+1197.999,
+"shot",
+"v02"
+],
+[
+1202.6,
+1207.8,
+"shot",
+"n_hongos_bolsa"
+],
+[
+1207.8,
+1212.88,
+"shot",
+"n_bandeja_llena"
+],
+[
+1236.7,
+1251.2,
+"shot",
+"n_tostadas_fila"
+],
+[
+1273.9,
+1279.12,
+"shot",
+"n_umeboshi"
+],
+[
+1279.12,
+1283.2,
+"shot",
+"n_osaka_estacion"
+],
+[
+1287.719,
+1292.16,
+"shot",
+"v10"
+]
+],
+"cam": [
+[
+38.5,
+40.82,
+"wide"
+],
+[
+47.92,
+50.6,
+"freezer"
+],
+[
+57.1,
+63.98,
+"freezerIn"
+],
+[
+91.6,
+95.28,
+"kitchen"
+],
+[
+106.9,
+109.38,
+"pan"
+],
+[
+116.78,
+117.9,
+"wide"
+],
+[
+122.2,
+130.24,
+"subscribe"
+],
+[
+179.82,
+183.7,
+"rice"
+],
+[
+216.58,
+218.3,
+"clock"
+],
+[
+239.9,
+245.58,
+"fridge"
+],
+[
+249.68,
+252.0,
+"freezerIn"
+],
+[
+262.92,
+268.7,
+"boardC"
+],
+[
+283.6,
+285.4,
+"rice"
+],
+[
+312.46,
+316.4,
+"freezer"
+],
+[
+348.83,
+350.3,
+"freezerIn"
+],
+[
+360.59,
+363.5,
+"counter"
+],
+[
+389.63,
+394.17,
+"freezer"
+],
+[
+394.17,
+396.6,
+"bread"
+],
+[
+439.09,
+444.2,
+"breadOpen"
+],
+[
+459.73,
+460.8,
+"board"
+],
+[
+475.45,
+476.6,
+"fridge"
+],
+[
+488.87,
+492.5,
+"kitchen"
+],
+[
+507.29,
+509.2,
+"freezerIn"
+],
+[
+540.47,
+543.1,
+"tableC"
+],
+[
+558.49,
+561.1,
+"board"
+],
+[
+606.53,
+609.6,
+"freezer"
+],
+[
+637.93,
+640.97,
+"clock"
+],
+[
+640.97,
+643.5,
+"boardC"
+],
+[
+674.14,
+675.4,
+"freezerIn"
+],
+[
+689.36,
+692.3,
+"counter"
+],
+[
+706.16,
+708.0,
+"sink"
+],
+[
+729.3,
+736.62,
+"noren"
+],
+[
+745.7,
+749.5,
+"calendar"
+],
+[
+754.18,
+755.9,
+"board"
+],
+[
+771.02,
+771.8,
+"counter"
+],
+[
+786.7,
+787.7,
+"tableC"
+],
+[
+820.66,
+822.0,
+"boardHand"
+],
+[
+837.24,
+838.6,
+"freezer"
+],
+[
+855.2,
+856.9,
+"freezerIn"
+],
+[
+861.6,
+867.22,
+"calendar"
+],
+[
+888.6,
+889.5,
+"subscribe"
+],
+[
+901.98,
+907.0,
+"wide"
+],
+[
+976.2,
+981.62,
+"freezerIn"
+],
+[
+1010.6,
+1015.04,
+"kitchen"
+],
+[
+1042.6,
+1051.0,
+"counter"
+],
+[
+1068.84,
+1071.5,
+"boardC"
+],
+[
+1101.02,
+1102.3,
+"board"
+],
+[
+1124.2,
+1131.98,
+"freezerIn"
+],
+[
+1133.72,
+1135.7,
+"panC"
+],
+[
+1156.98,
+1166.0,
+"rice"
+],
+[
+1181.2,
+1182.7,
+"kitchen"
+],
+[
+1189.1,
+1190.94,
+"boardC"
+],
+[
+1212.88,
+1215.4,
+"freezer"
+],
+[
+1221.5,
+1232.6,
+"recap"
+],
+[
+1255.5,
+1267.6,
+"recap"
+],
+[
+1292.16,
+1297.74,
+"subscribe"
+],
+[
+1297.74,
+1301.8,
+"wide"
+]
+],
+"ov": [
+{
+"k": "chip",
+"txt": "AGE 79 · BORN IN OSAKA",
+"at": 38.6,
+"out": 42.2
+},
+{
+"k": "big",
+"txt": "11",
+"sub": "FREEZER TRICKS",
+"at": 88.34,
+"out": 91.54
+},
+{
+"k": "step",
+"n": 1,
+"name": "FREEZE RICE WHILE IT'S HOT",
+"at": 132.86,
+"out": 136.86
+},
+{
+"k": "chip",
+"txt": "150 G · 1 INCH THICK",
+"at": 198.34,
+"out": 201.94
+},
+{
+"k": "chip",
+"txt": "2-3 MIN · LOOSE LID",
+"at": 229.32,
+"out": 232.52
+},
+{
+"k": "step",
+"n": 2,
+"name": "NEVER IN A DEEP CONTAINER",
+"at": 255.88,
+"out": 259.88
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE METAL TRAY",
+"at": 312.66,
+"out": 316.66
+},
+{
+"k": "step",
+"n": 4,
+"name": "BREAD, SLICE BY SLICE",
+"at": 393.17,
+"out": 397.17
+},
+{
+"k": "step",
+"n": 5,
+"name": "NEVER BREAD IN THE FRIDGE",
+"at": 475.65,
+"out": 479.65
+},
+{
+"k": "big",
+"txt": "3X",
+"sub": "FASTER STALE IN THE FRIDGE",
+"at": 502.25,
+"out": 505.65
+},
+{
+"k": "step",
+"n": 6,
+"name": "GROUND MEAT, FLAT, WITH LINES",
+"at": 557.33,
+"out": 561.33
+},
+{
+"k": "chip",
+"txt": "1/2 INCH · NO AIR",
+"at": 585.11,
+"out": 588.31
+},
+{
+"k": "step",
+"n": 7,
+"name": "ONE LAYER, WITH PAPER",
+"at": 639.51,
+"out": 643.51
+},
+{
+"k": "step",
+"n": 8,
+"name": "MUSHROOMS, RAW, FROZEN",
+"at": 687.96,
+"out": 691.96
+},
+{
+"k": "step",
+"n": 9,
+"name": "TOFU IN ITS BOX",
+"at": 748.74,
+"out": 752.74
+},
+{
+"k": "step",
+"n": 10,
+"name": "TAPE, PENCIL, THE MONTH",
+"at": 819.52,
+"out": 823.52
+},
+{
+"k": "chip",
+"txt": "RAW MEAT 3-4 MO · COOKED 1-2 MO",
+"at": 879.24,
+"out": 883.04
+},
+{
+"k": "deal",
+"at": 901.98,
+"out": 906.48
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "HOT FOOD, DEEP CONTAINER",
+"at": 911.26,
+"out": 919.26
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "AIR IN THE BAG",
+"at": 923.82,
+"out": 931.82
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "THAWING ON THE COUNTER",
+"at": 941.36,
+"out": 949.36
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "TOO FULL OR TOO EMPTY",
+"at": 966.74,
+"out": 974.74
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "NO LABELS",
+"at": 986.58,
+"out": 994.58
+},
+{
+"k": "step",
+"n": 11,
+"name": "THE MARINADE FREEZE",
+"at": 1043.06,
+"out": 1047.06
+},
+{
+"k": "chip",
+"txt": "2 TBSP SOY · 2 TBSP MIRIN · GINGER",
+"at": 1076.5,
+"out": 1080.5
+},
+{
+"k": "big",
+"txt": "10 MIN",
+"sub": "A REAL DINNER",
+"at": 1154.52,
+"out": 1157.92
+},
+{
+"k": "recap",
+"rows": [
+1221.86,
+1226.1,
+1228.82,
+1233.74,
+1239.98,
+1242.96,
+1248.1,
+1252.32,
+1256.46,
+1261.1,
+1266.28
+],
+"at": 1218.26,
+"out": 1272.28
+},
+{
+"k": "ask",
+"at": 1295.5,
+"out": 1303.5
+}
+],
+"cta1": {
+"desc": 124.1,
+"end": 130.1
+},
+"cta2": {
+"desc": 888.6,
+"end": 894.6
+},
+"cta3": {
+"desc": 1295.5,
+"end": 1300.5
+},
+"end": 1301.82,
+"st": {
+"freezer": [
+[
+4.72,
+28.44
+],
+[
+130.24,
+138.14
+],
+[
+308.6,
+312.46
+],
+[
+374.572,
+385.092
+],
+[
+760.084,
+762.964
+],
+[
+855.204,
+861.724
+],
+[
+1127.276,
+1133.716
+],
+[
+1212.876,
+1221.856
+]
+],
+"frost": [
+[
+331.752,
+339.572
+],
+[
+928.024,
+934.184
+]
+],
+"steam": [
+[
+163.84,
+172.26
+],
+[
+173.06,
+188.18
+],
+[
+232.5,
+240.12
+]
+],
+"clock": [
+[
+216.58,
+223.62
+],
+[
+637.932,
+640.972
+],
+[
+1135.056,
+1140.936
+]
+],
+"breadBox": [
+[
+522.312,
+529.592
+]
+],
+"sizzle": [
+[
+615.672,
+619.392
+],
+[
+684.104,
+689.364
+],
+[
+1131.976,
+1154.516
+]
+],
+"panFood": [
+[
+736.624,
+745.744
+],
+[
+1140.936,
+1154.516
+]
+],
+"calendar": [
+[
+745.744,
+749.504
+],
+[
+861.724,
+888.604
+],
+[
+1181.196,
+1187.136
+]
+],
+"noren": [
+[
+138.14,
+154.18
+],
+[
+729.424,
+735.004
+]
+],
+"kettle": [
+[
+1058.876,
+1061.156
+]
+],
+"table": [
+[
+815.224,
+820.664
+],
+[
+1154.516,
+1171.416
+]
+],
+"plates": [
+[
+1274.076,
+1301.82
+]
+],
+"eve": [
+[
+1218.256,
+1301.82
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "11 FREEZER TRICKS",
+"recap": [
+"Rice: freeze it hot, flat",
+"Never a deep container",
+"The metal tray",
+"Bread slice by slice",
+"Never bread in the fridge",
+"Ground meat flat, with lines",
+"Sliced meat, one layer, paper",
+"Mushrooms raw",
+"Tofu in its box",
+"Tape, pencil, the month",
+"The marinade freeze"
+],
+"ask": [
+"IN THE COMMENTS",
+"What is the oldest thing in your freezer?",
+"Be honest. I won't judge."
+],
+"next": [
+"",
+""
+],
+"lower": [
+38.6,
+44.6
+]
+},
+"tema": "rice"
+}

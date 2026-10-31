@@ -1,0 +1,373 @@
+[
+ {
+  "k": "brick",
+  "at": 4.62,
+  "out": 14.62,
+  "ph": "and a frosted brick",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 5.02
+   }
+  ]
+ },
+ {
+  "k": "lump",
+  "at": 23.26,
+  "out": 32.26,
+  "ph": "a bag of rice from three weeks ago",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 6.9
+   }
+  ]
+ },
+ {
+  "k": "promises",
+  "at": 73.52,
+  "out": 83.52,
+  "ph": "Rice that tastes freshly cooked",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 3.46
+   },
+   {
+    "at": 6.6
+   }
+  ]
+ },
+ {
+  "k": "sanyo",
+  "at": 138.14,
+  "out": 149.14,
+  "ph": "my mother bought her first freezer",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 8.68
+   }
+  ]
+ },
+ {
+  "k": "steamtrap",
+  "at": 172.76,
+  "out": 182.76,
+  "ph": "Because the steam is water",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 7.06
+   }
+  ]
+ },
+ {
+  "k": "scale150",
+  "at": 205.7,
+  "out": 216.7,
+  "ph": "Put it on plastic wrap",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 5.34
+   }
+  ]
+ },
+ {
+  "k": "deepflat",
+  "at": 273.64,
+  "out": 284.64,
+  "ph": "almost crispy and the middle",
+  "dev": 0.1,
+  "items": [
+   {
+    "at": 9.96
+   }
+  ]
+ },
+ {
+  "k": "shelf",
+  "at": 305.84,
+  "out": 314.84,
+  "ph": "Buy the flat shallow ones",
+  "dev": 6.2,
+  "items": []
+ },
+ {
+  "k": "crystals",
+  "at": 339.37,
+  "out": 349.37,
+  "ph": "sharp little knives",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 9.46
+   }
+  ]
+ },
+ {
+  "k": "loaf",
+  "at": 400.07,
+  "out": 410.07,
+  "ph": "could not believe how big the bread was",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 8.42
+   }
+  ]
+ },
+ {
+  "k": "toaster",
+  "at": 450.81,
+  "out": 460.81,
+  "ph": "straight into the toaster",
+  "dev": -3.4,
+  "items": [
+   {
+    "at": 6.78
+   }
+  ]
+ },
+ {
+  "k": "stale",
+  "at": 496.87,
+  "out": 507.87,
+  "ph": "squeezes the water out and gets hard",
+  "dev": -0.0,
+  "items": [
+   {
+    "at": 5.38
+   }
+  ]
+ },
+ {
+  "k": "toasttower",
+  "at": 529.69,
+  "out": 538.69,
+  "ph": "I told Linda this in 1985",
+  "dev": 0.1,
+  "items": [
+   {
+    "at": 6.08
+   }
+  ]
+ },
+ {
+  "k": "chocolate",
+  "at": 582.17,
+  "out": 594.17,
+  "ph": "pressed it flat all the way to the corners",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 8.04
+   },
+   {
+    "at": 11.96
+   }
+  ]
+ },
+ {
+  "k": "paper",
+  "at": 663.2,
+  "out": 675.2,
+  "ph": "layer a little apart from each other",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 10.94
+   }
+  ]
+ },
+ {
+  "k": "mushroom",
+  "at": 712.86,
+  "out": 723.86,
+  "ph": "here is the secret They taste better",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 5.7
+   }
+  ]
+ },
+ {
+  "k": "squeeze",
+  "at": 776.3,
+  "out": 786.3,
+  "ph": "water will pour out",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 6.54
+   }
+  ]
+ },
+ {
+  "k": "soak",
+  "at": 792.84,
+  "out": 801.84,
+  "ph": "soy sauce and sugar and ginger",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 3.82
+   }
+  ]
+ },
+ {
+  "k": "tape",
+  "at": 827.5,
+  "out": 837.5,
+  "ph": "of her Sanyo freezer",
+  "dev": 0.1,
+  "items": [
+   {
+    "at": 9.74
+   }
+  ]
+ },
+ {
+  "k": "fifo",
+  "at": 843.7,
+  "out": 855.7,
+  "ph": "old things come to the front",
+  "dev": -0.0,
+  "items": [
+   {
+    "at": 11.5
+   }
+  ]
+ },
+ {
+  "k": "hourglass",
+  "at": 861.62,
+  "out": 872.62,
+  "ph": "How long do things keep",
+  "dev": -0.1,
+  "items": []
+ },
+ {
+  "k": "airbowl",
+  "at": 927.72,
+  "out": 938.72,
+  "ph": "makes freezer burn",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 6.46
+   }
+  ]
+ },
+ {
+  "k": "counter",
+  "at": 945.18,
+  "out": 956.18,
+  "ph": "The outside gets warm",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 7.2
+   }
+  ]
+ },
+ {
+  "k": "airflow",
+  "at": 976.26,
+  "out": 988.26,
+  "ph": "it works harder and gets warm",
+  "dev": -0.0,
+  "items": [
+   {
+    "at": 5.36
+   },
+   {
+    "at": 8.4
+   }
+  ]
+ },
+ {
+  "k": "never",
+  "at": 994.64,
+  "out": 1004.64,
+  "ph": "Raw potatoes",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 3.64
+   },
+   {
+    "at": 6.6
+   },
+   {
+    "at": 8.94
+   }
+  ]
+ },
+ {
+  "k": "marinade",
+  "at": 1076.2,
+  "out": 1086.2,
+  "ph": "Two tablespoons of soy sauce",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 4.12
+   }
+  ]
+ },
+ {
+  "k": "inside",
+  "at": 1107.64,
+  "out": 1118.64,
+  "ph": "And here is the magic",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 7.32
+   }
+  ]
+ },
+ {
+  "k": "lid",
+  "at": 1124.68,
+  "out": 1135.68,
+  "ph": "into a frying pan",
+  "dev": -7.3,
+  "items": [
+   {
+    "at": 9.04
+   }
+  ]
+ },
+ {
+  "k": "three",
+  "at": 1171.42,
+  "out": 1181.42,
+  "ph": "Some weeks I make one bag",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "sunday",
+  "at": 1202.72,
+  "out": 1214.72,
+  "ph": "put the mushrooms in a bag",
+  "dev": -0.1,
+  "items": []
+ },
+ {
+  "k": "umeboshi",
+  "at": 1273.98,
+  "out": 1282.98,
+  "ph": "A small bag of my mother",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 5.14
+   }
+  ]
+ }
+]
