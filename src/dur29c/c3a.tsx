@@ -79,7 +79,7 @@ const OchoPostales: React.FC<UP> = ({ d, p }) => {
 const LondresRejillas: React.FC<UP> = ({ d, p }) => {
   const aR = sec(p, "rejilla", 1.5), aA = sec(p, "abajo", 3.0), GX = [-0.3, 0.3];
   return <U3 d={d} bg={p.bg} ground={null} mode="wipe" sky="#14110e" key1={[-1, 2.5, 2]}
-    cam={{ at: [0, 0.26, 0], az: [-0.24, 0.04], el: [0.1, 0.08], r: [1.7, 1.5], fov: 34 }}>{(tt) => <>
+    cam={{ at: [0, 0.32, 0], az: [-0.24, 0.04], el: [0.16, 0.12], r: [1.9, 1.7], fov: 34 }}>{(tt) => <>
       <mesh position={[0, 0.62, 0]}><boxGeometry args={[2.6, 0.08, 0.6]} /><meshStandardMaterial map={cobbleT()} roughness={0.9} /></mesh>
       <RBox s={[2.6, 0.12, 0.1]} r={0.01} p={[0, 0.72, -0.28]}><meshStandardMaterial map={brickT([110, 70, 50], 4, 1)} roughness={0.9} /></RBox>
       {GX.map((x, j) => <group key={j} position={[x, 0.665, 0.18]} scale={1.6}>{Array.from({ length: 6 }, (_, i) => <mesh key={i} position={[i * 0.026 - 0.065, 0, 0]}><boxGeometry args={[0.012, 0.014, 0.14]} />{M.steel({ col: "#2a2826" })}</mesh>)}</group>)}
@@ -91,10 +91,10 @@ const LondresRejillas: React.FC<UP> = ({ d, p }) => {
         const kind = i % 3; return <group key={i} position={[x, y, 0.18 + (rn(i, 5) - 0.5) * 0.12]} rotation={[rn(i, 6) * 6 * cl(tt - a), 0, rn(i, 7) * 4]} visible={tt > a} scale={2}>
           {kind === 0 ? <Coin p={[0, 0, 0]} r={0.022} silver={i % 7 === 0} /> : kind === 1 ? <group><mesh><boxGeometry args={[0.08, 0.008, 0.016]} />{M.steel({ col: "#a8aeb2" })}</mesh><mesh position={[0.05, 0, 0]} scale={[1.4, 0.4, 1]}><sphereGeometry args={[0.016, 10, 6]} />{M.steel({ col: "#a8aeb2" })}</mesh></group> : <mesh><cylinderGeometry args={[0.005, 0.005, 0.07, 6]} />{M.steel({ col: "#6a5a48" })}</mesh>}
         </group>; })}
-      <group position={[0.02, -0.08, 0.22]}><Stickman enSitio escala={0.15} rotY={20} guion={[{ t: 0, accion: "caminar", expr: "decidido" }, { t: aA, accion: "senalar", expr: "sorprendido" }]} semilla={9} contacto={0} color="#c8a878" /></group>
-      <Lantern p={[0.14, 0.0, 0.3]} s={1.1} on={0.4 + 0.5 * eio(tt, aA - 0.3, aA + 0.3)} />
+      <group position={[0.02, -0.08, 0.22]}><Stickman enSitio escala={0.15} rotY={20} guion={[{ t: 0, accion: "caminar", expr: "decidido" }, { t: aA, accion: "senalar", expr: "sorprendido" }]} semilla={9} contacto={0} color="#6a4e38" /></group>
+      <Lantern p={[0.14, 0.0, 0.3]} s={1.0} on={0.25 + 0.3 * eio(tt, aA - 0.3, aA + 0.3)} />
       <pointLight position={[0, 0.1, 0.45]} intensity={1.2 + 1.4 * eio(tt, aA, aA + 0.6)} distance={1.6} color="#ffb860" />
-      <spotLight position={[0, 1.4, 0.4]} angle={0.6} penumbra={0.7} intensity={2.5} distance={2.4} color="#e8e0d0" />
+      <spotLight position={[0, 1.4, 0.4]} angle={0.6} penumbra={0.7} intensity={1.4} distance={2.4} color="#e8e0d0" />
     </>}</U3>;
 };
 

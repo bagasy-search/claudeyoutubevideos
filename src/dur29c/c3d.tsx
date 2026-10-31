@@ -37,7 +37,7 @@ const BurbujaVidrio: React.FC<UP> = ({ d, p }) => {
   const aB = sec(p, "bola", 1.2), D = d / 30;
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="wipe" sky="#0d0806" key1={[-0.6, 2, 1.4]}
     cam={{ at: [0.08, 0.4, 0], az: [-0.32, -0.2], el: [0.1, 0.12], r: [0.95, 0.85], fov: 32 }}>{(tt) => {
-    const inf = eio(tt, aB, D - 0.3), rot = tt * 1.8, R = 0.08 + 0.1 * inf, puff = (tt * 0.8) % 1;
+    const inf = eio(tt, aB, D - 0.3), rot = tt * 1.8, R = 0.08 + 0.055 * inf, puff = (tt * 0.8) % 1;
     return <>
       <mesh position={[-0.35, 0.4, 0]} rotation={[rot, 0, PI / 2]}><cylinderGeometry args={[0.016, 0.016, 1.1, 12]} />{M.steel({ col: "#b8b4ae" })}</mesh>
       <mesh position={[-0.82, 0.4, 0]} rotation={[0, 0, PI / 2]}><cylinderGeometry args={[0.024, 0.024, 0.16, 12]} />{M.wood({ base: [90, 60, 36] })}</mesh>
