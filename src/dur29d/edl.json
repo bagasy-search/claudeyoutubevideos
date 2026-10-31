@@ -1714,7 +1714,7 @@
 "k": "real",
 "t": "real",
 "p": {
-"v": "img/dur29d/ag/dur29d_x01_cockpit_2.png"
+"v": "broll/dur29d/v09.mp4"
 }
 },
 {
@@ -1787,11 +1787,29 @@
 },
 {
 "a": 981.832,
-"b": 996.752,
+"b": 988.112,
 "k": "real",
 "t": "real",
 "p": {
 "v": "img/dur29d/ag/dur29d_x03_rocket_plane.png"
+}
+},
+{
+"a": 988.112,
+"b": 992.432,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29d/ag/dur29d_x05_black_sky_2.png"
+}
+},
+{
+"a": 992.432,
+"b": 996.752,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29d/ag/dur29d_x07_manual_2.png"
 }
 },
 {
@@ -2060,7 +2078,8 @@
 "k": "real",
 "t": "real",
 "p": {
-"v": "img/dur29d/ag/dur29d_s02_diving_bell_2.png"
+"v": "broll/dur29d/v08.mp4",
+"rate": 0.97
 }
 },
 {
@@ -2400,11 +2419,101 @@
 },
 {
 "a": 1345.859,
-"b": 1370.719,
+"b": 1350.339,
 "k": "real",
 "t": "real",
 "p": {
 "v": "img/dur29d/ag/dur29d_f03_city_today_2.png"
+}
+},
+{
+"a": 1350.339,
+"b": 1352.799,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29d/ag/dur29d_a11_coal_town_2.png"
+}
+},
+{
+"a": 1352.799,
+"b": 1354.919,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29d/ag/dur29d_b11_canal_today_2.png"
+}
+},
+{
+"a": 1354.919,
+"b": 1356.479,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29d/ag/dur29d_c10_machine_1950_2.png"
+}
+},
+{
+"a": 1356.479,
+"b": 1357.679,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29d/ag/dur29d_d10_empire_done_2.png"
+}
+},
+{
+"a": 1357.679,
+"b": 1359.919,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29d/ag/dur29d_e05_liberty_launch_2.png"
+}
+},
+{
+"a": 1359.919,
+"b": 1361.199,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29d/ag/dur29d_g02_lead_apron_2.png"
+}
+},
+{
+"a": 1361.199,
+"b": 1362.239,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29d/ag/dur29d_x08_chase_plane_2.png"
+}
+},
+{
+"a": 1362.239,
+"b": 1363.119,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29d/ag/dur29d_s04_platform_2.png"
+}
+},
+{
+"a": 1363.119,
+"b": 1364.819,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29d/ag/dur29d_n07_city_empty_2.png"
+}
+},
+{
+"a": 1364.819,
+"b": 1370.719,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29d/ag/dur29d_e04_shipyard_2.png"
 }
 },
 {

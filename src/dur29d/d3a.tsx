@@ -318,14 +318,14 @@ const FosoBolos: React.FC<UP> = ({ d, p }) => {
     cam={{ at: [-0.12, 0.12, -0.45], az: [0.22, 0.4], el: [0.2, 0.16], r: [1.05, 0.9], fov: 36 }}>{(tt) => {
     const ball = eio(tt, aC - 1.0, aC);
     return <>
-      <mesh position={[0, -0.01, 0.9]}><boxGeometry args={[0.5, 0.02, 3.0]} /><meshPhysicalMaterial map={tex.wood(1, 8, [200, 150, 96])} roughness={0.45} clearcoat={0.3} clearcoatRoughness={0.4} /></mesh>
+      <mesh position={[0, -0.004, 0.9]}><boxGeometry args={[0.5, 0.02, 3.0]} /><meshPhysicalMaterial map={tex.wood(1, 8, [200, 150, 96])} polygonOffset polygonOffsetFactor={-2} polygonOffsetUnits={-2} roughness={0.45} clearcoat={0.3} clearcoatRoughness={0.4} /></mesh>
       <RBox s={[1.8, 0.7, 0.06]} r={0.01} p={[0, 0.25, -1.0]}>{M.wood({ base: [60, 40, 26] })}</RBox>
       {[-1, 1].map((s) => <mesh key={s} position={[s * 0.315, -0.055, 0.9]} rotation={[0, 0, 0]}><boxGeometry args={[0.11, 0.03, 3.0]} /><meshStandardMaterial color="#1a1614" /></mesh>)}
       <mesh position={[0, -0.12, -0.7]}><boxGeometry args={[1.0, 0.2, 0.5]} /><meshStandardMaterial color="#0e0c0a" /></mesh>
       {SPOT10.map(([c, r], i) => { const x = c * 0.06, z = -0.35 - r * 0.06; const k = cl((tt - aC - 0.02 * r) / 0.9), hit = tt > aC + 0.02 * r;
         const vx = (rn(i, 1) - 0.5) * 1.4 + c * 0.3, vz = -0.4 - rn(i, 2) * 0.6, vy = 0.6 + rn(i, 3) * 0.6, t = hit ? k * 0.9 : 0;
         return <Pin key={i} p={[x + vx * t, Math.max(0, vy * t - 1.2 * t * t), z + vz * t]} rot={[hit ? -k * (3 + rn(i, 4) * 4) : 0, 0, hit ? k * (rn(i, 5) - 0.5) * 6 : 0]} />; })}
-      <mesh position={[0, 0.06, lerp(0.9, -0.36, ball) - (tt > aC ? (tt - aC) * 0.5 : 0)]} rotation={[-ball * 30, 0, 0]}><sphereGeometry args={[0.06, 32, 24]} /><meshPhysicalMaterial color="#121214" roughness={0.12} clearcoat={1} /></mesh>
+      <mesh position={[0, 0.066, lerp(0.9, -0.36, ball) - (tt > aC ? (tt - aC) * 0.5 : 0)]} rotation={[-ball * 30, 0, 0]}><sphereGeometry args={[0.06, 32, 24]} /><meshPhysicalMaterial color="#121214" roughness={0.12} clearcoat={1} /></mesh>
       {/* el chico en el hueco del costado */}
       <group position={[-0.45, -0.02, -0.55]}><Stickman escala={0.16} rotY={60} guion={[{ t: 0, accion: "idle", expr: "nervioso" }, { t: aC - 0.1, accion: "asustarse", expr: "asustado" }] as any} semilla={81} contacto={0.3} colorContacto="#0a0806" color="#e8e4dc" /></group>
       <spotLight position={[0, 1.6, 0.2]} angle={0.75} penumbra={0.8} intensity={10} distance={4} color="#ffe0b0" />
