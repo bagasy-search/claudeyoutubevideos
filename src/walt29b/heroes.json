@@ -1,0 +1,280 @@
+[
+{
+"k": "antline",
+"at": 6.18,
+"out": 12.68,
+"said": 6.18,
+"solo": true,
+"kw": "ONE THIN LINE",
+"kw2": "window crack \u2192 sugar bowl",
+"ph": "ph_antline"
+},
+{
+"k": "aisle",
+"at": 45.86,
+"out": 50.36,
+"said": 48.56,
+"sp": 1.333,
+"solo": true,
+"kw": "ABOUT $1",
+"kw2": "the laundry aisle",
+"ph": "ph_aisle"
+},
+{
+"k": "insects",
+"at": 96.18,
+"out": 100.68,
+"said": 99.18,
+"sp": 1.333,
+"solo": true,
+"kw": "40 YEARS",
+"kw2": "counting insects",
+"ph": "ph_insects"
+},
+{
+"k": "ninety",
+"at": 154.22,
+"out": 160.72,
+"said": 154.22,
+"solo": true,
+"kw": "90% HIDDEN",
+"kw2": "you only see the 10%",
+"ph": "ph_ninety"
+},
+{
+"k": "newmound",
+"at": 218.12,
+"out": 224.62,
+"said": 218.12,
+"solo": true,
+"kw": "A FEW FEET AWAY",
+"kw2": "a new mound every week",
+"ph": "ph_newmound"
+},
+{
+"k": "road",
+"at": 267.64,
+"out": 274.14,
+"said": 267.64,
+"solo": true,
+"kw": "A SCENT ROAD",
+"kw2": "repainted by every ant",
+"ph": "ph_road"
+},
+{
+"k": "nestcrack",
+"at": 301.88,
+"out": 307.88,
+"said": 301.88,
+"solo": true,
+"kw": "SAME CRACK",
+"kw2": "the nest never moved",
+"ph": "ph_nestcrack"
+},
+{
+"k": "cinnamon",
+"at": 331.88,
+"out": 337.88,
+"said": 331.88,
+"solo": true,
+"kw": "BLOWS AWAY",
+"kw2": "it kills nothing",
+"ph": "ph_cinnamon"
+},
+{
+"k": "sixtop",
+"at": 370.257,
+"out": 376.76,
+"said": 370.26,
+"solo": true,
+"kw": "TOP 6 INCHES",
+"kw2": "the queen is deeper",
+"ph": "ph_sixtop"
+},
+{
+"k": "budding",
+"at": 428.86,
+"out": 435.36,
+"said": 422.96,
+"solo": true,
+"kw": "IT SPLITS",
+"kw2": "one nest becomes two",
+"ph": "ph_budding"
+},
+{
+"k": "borate",
+"at": 468.24,
+"out": 472.74,
+"said": 470.04,
+"sp": 1.444,
+"solo": true,
+"kw": "SODIUM BORATE",
+"kw2": "a natural mineral",
+"ph": "ph_borate"
+},
+{
+"k": "share",
+"at": 499.757,
+"out": 506.26,
+"said": 499.76,
+"solo": true,
+"kw": "MOUTH TO MOUTH",
+"kw2": "one forager feeds dozens",
+"ph": "ph_share"
+},
+{
+"k": "warning",
+"at": 553.26,
+"out": 557.76,
+"said": 555.46,
+"sp": 1.333,
+"solo": true,
+"kw": "TOO STRONG",
+"kw2": "dead ants warn the rest",
+"ph": "ph_warning"
+},
+{
+"k": "onepct",
+"at": 588.58,
+"out": 593.08,
+"said": 589.58,
+"sp": 1.333,
+"solo": true,
+"kw": "1%",
+"kw2": "weak on purpose",
+"ph": "ph_onepct"
+},
+{
+"k": "lid",
+"at": 633.657,
+"out": 640.16,
+"said": 633.66,
+"solo": true,
+"kw": "5 OR 6 HOLES",
+"kw2": "nail-wide, near the edge",
+"ph": "ph_lid"
+},
+{
+"k": "tuck",
+"at": 662.137,
+"out": 668.64,
+"said": 662.14,
+"solo": true,
+"kw": "BEHIND THE TOASTER",
+"kw2": "on the road, out of reach",
+"ph": "ph_tuck"
+},
+{
+"k": "season",
+"at": 711.713,
+"out": 718.21,
+"said": 711.71,
+"solo": true,
+"kw": "SPRING \u00b7 SUMMER \u00b7 FALL",
+"kw2": "what they want changes",
+"ph": "ph_season"
+},
+{
+"k": "winner",
+"at": 743.434,
+"out": 749.43,
+"said": 743.43,
+"solo": true,
+"kw": "THE WINNER",
+"kw2": "give them more of it",
+"ph": "ph_winner"
+},
+{
+"k": "route",
+"at": 813.33,
+"out": 817.83,
+"said": 815.73,
+"sp": 1.444,
+"solo": true,
+"kw": "INTO THE NEST",
+"kw2": "leave the line alone",
+"ph": "ph_route"
+},
+{
+"k": "gone",
+"at": 855.454,
+"out": 861.45,
+"said": 855.45,
+"solo": true,
+"kw": "DAY 7",
+"kw2": "the colony is gone",
+"ph": "ph_gone"
+},
+{
+"k": "caulk5",
+"at": 910.454,
+"out": 916.95,
+"said": 910.45,
+"solo": true,
+"kw": "$5 \u00b7 SEALED",
+"kw2": "one bead lasts for years",
+"ph": "ph_caulk5"
+},
+{
+"k": "carpenter",
+"at": 973.714,
+"out": 980.21,
+"said": 973.71,
+"solo": true,
+"kw": "THEY DON'T EAT IT",
+"kw2": "they carve damp wood",
+"ph": "ph_carpenter"
+},
+{
+"k": "tape",
+"at": 1023.15,
+"out": 1029.65,
+"said": 1023.15,
+"solo": true,
+"kw": "2 MINUTES",
+"kw2": "tape + a magnifying glass",
+"ph": "ph_tape"
+},
+{
+"k": "walls",
+"at": 1044.57,
+"out": 1050.57,
+"said": 1046.17,
+"solo": true,
+"kw": "INSIDE THE WALLS",
+"kw2": "pharaoh ants hide warm",
+"ph": "ph_walls"
+},
+{
+"k": "thousand",
+"at": 1128.33,
+"out": 1132.83,
+"said": 1130.33,
+"sp": 1.333,
+"solo": true,
+"kw": "A THOUSAND",
+"kw2": "day one = it is working",
+"ph": "ph_thousand"
+},
+{
+"k": "patience",
+"at": 1164.13,
+"out": 1168.63,
+"said": 1164.13,
+"sp": 1.333,
+"solo": true,
+"kw": "PATIENCE",
+"kw2": "the hardest ingredient",
+"ph": "ph_patience"
+},
+{
+"k": "yardbait",
+"at": 1226.39,
+"out": 1232.89,
+"said": 1226.39,
+"solo": true,
+"kw": "ON THE TRAIL",
+"kw2": "not the whole yard",
+"ph": "ph_yardbait"
+}
+]

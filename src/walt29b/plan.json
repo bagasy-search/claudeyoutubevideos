@@ -1,0 +1,1644 @@
+{
+"segs": [
+[
+3.5,
+6.18,
+"shot",
+"n_cafetera_manana"
+],
+[
+6.18,
+14.74,
+"shot",
+"n_linea_hormigas_mesada"
+],
+[
+14.74,
+16.5,
+"shot",
+"n_hormigas_azucarera"
+],
+[
+20.429,
+27.74,
+"shot",
+"v01_vinagre_hormigas"
+],
+[
+27.74,
+33.1,
+"shot",
+"n_hormigas_vuelven"
+],
+[
+38.143,
+42.36,
+"shot",
+"n_botella_vinagre"
+],
+[
+42.36,
+48.56,
+"shot",
+"n_hormigas_detras_zocalo"
+],
+[
+48.56,
+50.5,
+"shot",
+"n_gondola_lavanderia"
+],
+[
+55.243,
+58.48,
+"shot",
+"n_reina_hormiga"
+],
+[
+58.48,
+62.48,
+"shot",
+"n_hormiga_gota"
+],
+[
+62.48,
+67.1,
+"shot",
+"n_cuaderno_campo_abierto"
+],
+[
+73.021,
+78.14,
+"shot",
+"n_perro_cocina"
+],
+[
+78.14,
+80.6,
+"shot",
+"n_calendario_cocina"
+],
+[
+80.6,
+83.28,
+"shot",
+"n_trapo_rojo_mano"
+],
+[
+87.529,
+94.82,
+"shot",
+"n_botas_campo"
+],
+[
+94.82,
+99.18,
+"shot",
+"n_conteo_campo"
+],
+[
+99.18,
+100.758,
+"shot",
+"n_frascos_insectos"
+],
+[
+105.3,
+109.38,
+"shot",
+"n_garaje_banco"
+],
+[
+109.38,
+113.78,
+"shot",
+"n_tapitas_fila"
+],
+[
+113.78,
+117.158,
+"shot",
+"n_mapa_viejo_hormigas"
+],
+[
+122.1,
+129.72,
+"shot",
+"n_costa_california"
+],
+[
+129.72,
+131.152,
+"shot",
+"n_banco_frascos_sol"
+],
+[
+135.4,
+143.26,
+"shot",
+"n_hormiguero_tierra"
+],
+[
+143.26,
+147.084,
+"shot",
+"n_hormigas_migas"
+],
+[
+150.8,
+154.22,
+"shot",
+"n_hormigas_entrada_nido"
+],
+[
+154.22,
+158.44,
+"shot",
+"n_nido_corte"
+],
+[
+158.44,
+162.795,
+"shot",
+"n_huevos_larvas"
+],
+[
+168.135,
+178.04,
+"shot",
+"n_tipos_hormigas_tarjeta"
+],
+[
+178.04,
+179.682,
+"shot",
+"n_hormigas_muertas_trapo"
+],
+[
+185.1,
+192.6,
+"shot",
+"n_mano_aplasta"
+],
+[
+192.6,
+195.7,
+"shot",
+"n_foto_1979_campo"
+],
+[
+200.817,
+205.62,
+"shot",
+"n_laboratorio_viejo"
+],
+[
+205.62,
+207.04,
+"shot",
+"n_montones_hormigas_fuego"
+],
+[
+207.04,
+210.498,
+"shot",
+"n_estacas_campo"
+],
+[
+214.119,
+218.12,
+"shot",
+"n_monte_quemado"
+],
+[
+218.12,
+226.26,
+"shot",
+"n_monte_nuevo"
+],
+[
+226.26,
+228.0,
+"shot",
+"n_lata_gasolina"
+],
+[
+233.8,
+236.94,
+"shot",
+"n_nota_colonia"
+],
+[
+236.94,
+241.5,
+"shot",
+"n_trucos_mesada"
+],
+[
+241.5,
+244.9,
+"shot",
+"n_vinagre_galon"
+],
+[
+248.6,
+255.6,
+"shot",
+"n_exploradora_miga"
+],
+[
+255.6,
+258.7,
+"shot",
+"n_rastro_hormiga"
+],
+[
+263.045,
+267.64,
+"shot",
+"n_linea_larga"
+],
+[
+267.64,
+274.1,
+"shot",
+"n_autopista_hormigas"
+],
+[
+274.1,
+276.165,
+"shot",
+"n_vinagre_mancha"
+],
+[
+280.745,
+286.52,
+"shot",
+"n_hormigas_mojadas"
+],
+[
+286.52,
+290.98,
+"shot",
+"n_hormigas_dispersas"
+],
+[
+290.98,
+292.7,
+"shot",
+"n_grieta_ventana"
+],
+[
+298.1,
+301.88,
+"shot",
+"n_frasco_miel_aro"
+],
+[
+301.88,
+308.24,
+"shot",
+"n_exploradora_sale"
+],
+[
+308.24,
+310.2,
+"shot",
+"n_linea_otra_vez"
+],
+[
+314.842,
+320.84,
+"shot",
+"n_cuaderno_tachado"
+],
+[
+320.84,
+325.8,
+"shot",
+"n_canela_puerta"
+],
+[
+325.8,
+327.2,
+"shot",
+"n_hormigas_rodean_canela"
+],
+[
+331.242,
+333.72,
+"shot",
+"n_canela_soplada"
+],
+[
+333.72,
+338.04,
+"shot",
+"n_hormiga_sobre_canela"
+],
+[
+338.04,
+342.564,
+"shot",
+"n_borra_cafe_umbral"
+],
+[
+347.8,
+356.38,
+"shot",
+"n_tiza_linea"
+],
+[
+356.38,
+361.583,
+"shot",
+"n_pava_hormiguero"
+],
+[
+366.0,
+370.26,
+"shot",
+"n_hormiguero_mojado"
+],
+[
+370.26,
+373.32,
+"shot",
+"n_corte_suelo"
+],
+[
+373.32,
+378.3,
+"shot",
+"n_camara_profunda"
+],
+[
+383.3,
+388.8,
+"shot",
+"n_tres_hormigueros"
+],
+[
+388.8,
+393.9,
+"shot",
+"n_campo_granjero"
+],
+[
+397.844,
+401.96,
+"shot",
+"n_spray_ferreteria"
+],
+[
+401.96,
+407.26,
+"shot",
+"n_spray_rocio"
+],
+[
+407.26,
+409.883,
+"shot",
+"n_hormigas_huyen"
+],
+[
+413.623,
+420.08,
+"shot",
+"n_hormiga_faraon"
+],
+[
+420.08,
+422.96,
+"shot",
+"n_hormigas_amarillas_grupo"
+],
+[
+422.96,
+424.263,
+"shot",
+"n_dos_grupos"
+],
+[
+428.8,
+437.62,
+"shot",
+"n_pared_enchufe"
+],
+[
+437.62,
+439.48,
+"shot",
+"n_hormigas_bano"
+],
+[
+439.48,
+440.8,
+"shot",
+"n_mano_lapiz_regla"
+],
+[
+444.7,
+451.66,
+"shot",
+"n_caja_borax_estante"
+],
+[
+451.66,
+455.42,
+"shot",
+"n_hormigas_comen_tranquilas"
+],
+[
+455.42,
+457.1,
+"shot",
+"n_hormigas_entran_grieta"
+],
+[
+461.2,
+467.16,
+"shot",
+"v02_caja_borax"
+],
+[
+467.16,
+470.04,
+"shot",
+"n_lavarropa_viejo"
+],
+[
+470.04,
+472.798,
+"shot",
+"n_cristales_borax"
+],
+[
+477.8,
+484.28,
+"shot",
+"n_cuchara_polvo"
+],
+[
+484.28,
+491.36,
+"shot",
+"n_hormiga_bebe"
+],
+[
+496.2,
+499.76,
+"shot",
+"n_hormigas_fila_casa"
+],
+[
+499.76,
+506.76,
+"shot",
+"n_trofalaxia"
+],
+[
+506.76,
+508.8,
+"shot",
+"n_obreras_reina"
+],
+[
+513.8,
+519.24,
+"shot",
+"n_muchas_hormigas_camara"
+],
+[
+519.24,
+524.6,
+"shot",
+"n_camino_completo"
+],
+[
+530.2,
+538.62,
+"shot",
+"n_hormiga_gota_brillante"
+],
+[
+538.62,
+542.092,
+"shot",
+"n_comentario_pantalla"
+],
+[
+545.832,
+555.46,
+"shot",
+"n_hormiga_muerta_tapita"
+],
+[
+555.46,
+557.8,
+"shot",
+"n_hormigas_esquivan"
+],
+[
+563.2,
+569.88,
+"shot",
+"n_mesada_vacia"
+],
+[
+569.88,
+574.42,
+"shot",
+"n_cebo_seco"
+],
+[
+574.42,
+576.1,
+"shot",
+"n_ingredientes_receta"
+],
+[
+581.213,
+584.02,
+"shot",
+"n_taza_agua_tibia"
+],
+[
+584.02,
+589.58,
+"shot",
+"v03_mezcla_frasco"
+],
+[
+589.58,
+593.2,
+"shot",
+"n_frasco_claro_luz"
+],
+[
+598.1,
+603.14,
+"shot",
+"n_frasco_etiqueta"
+],
+[
+603.14,
+608.24,
+"shot",
+"n_tres_medidas"
+],
+[
+608.24,
+609.953,
+"shot",
+"n_candado_alacena"
+],
+[
+614.108,
+619.06,
+"shot",
+"n_perro_olfatea"
+],
+[
+619.06,
+622.48,
+"shot",
+"n_nene_cocina"
+],
+[
+622.48,
+626.763,
+"shot",
+"n_platito_piso"
+],
+[
+631.303,
+639.4,
+"shot",
+"v05_clavo_tapa"
+],
+[
+641.38,
+643.163,
+"shot",
+"n_algodon_frasco"
+],
+[
+647.137,
+649.48,
+"shot",
+"n_hormigas_entran_tapa"
+],
+[
+649.48,
+655.12,
+"shot",
+"n_frasco_cerrado"
+],
+[
+655.12,
+657.183,
+"shot",
+"n_frasco_volcado"
+],
+[
+661.911,
+666.52,
+"shot",
+"n_tapita_tostadora"
+],
+[
+666.52,
+669.51,
+"shot",
+"n_tapita_cocina"
+],
+[
+669.51,
+675.3,
+"shot",
+"n_tapita_bajo_pileta"
+],
+[
+678.6,
+685.83,
+"shot",
+"v04_algodon_tapita"
+],
+[
+685.83,
+688.8,
+"shot",
+"n_hormigas_hacia_tapa"
+],
+[
+694.5,
+698.43,
+"shot",
+"n_tapita_ignorada"
+],
+[
+698.43,
+701.91,
+"shot",
+"n_estaciones_jardin"
+],
+[
+701.91,
+705.361,
+"shot",
+"n_reina_huevos"
+],
+[
+711.3,
+715.47,
+"shot",
+"n_hormigas_fruta"
+],
+[
+715.47,
+720.89,
+"shot",
+"n_hormigas_grasa"
+],
+[
+720.89,
+722.392,
+"shot",
+"n_dos_tapitas"
+],
+[
+726.1,
+731.29,
+"shot",
+"n_algodon_mojado"
+],
+[
+731.29,
+734.9,
+"shot",
+"v08_mani_tapita"
+],
+[
+740.82,
+743.43,
+"shot",
+"n_reloj_cocina"
+],
+[
+743.43,
+751.77,
+"shot",
+"n_hormigas_mani"
+],
+[
+751.77,
+755.1,
+"shot",
+"n_calendario_dias"
+],
+[
+759.102,
+768.57,
+"shot",
+"n_mas_hormigas"
+],
+[
+768.57,
+770.371,
+"shot",
+"v09_mira_cola_cebo"
+],
+[
+775.022,
+782.39,
+"shot",
+"n_hormigas_llenas"
+],
+[
+782.39,
+785.4,
+"shot",
+"n_calendario_dia2"
+],
+[
+790.0,
+800.17,
+"shot",
+"n_mano_trapo_quieta"
+],
+[
+800.17,
+803.5,
+"shot",
+"n_spray_guardado"
+],
+[
+807.3,
+815.73,
+"shot",
+"n_autopista_frasco"
+],
+[
+815.73,
+817.981,
+"shot",
+"n_ruta_entrega"
+],
+[
+821.742,
+830.81,
+"shot",
+"n_rastro_cortado"
+],
+[
+830.81,
+833.0,
+"shot",
+"n_hormigas_rodean"
+],
+[
+838.048,
+845.55,
+"shot",
+"n_porche_silla"
+],
+[
+845.55,
+850.6,
+"shot",
+"n_linea_fina"
+],
+[
+855.319,
+864.49,
+"shot",
+"n_mesada_limpia"
+],
+[
+864.49,
+866.4,
+"shot",
+"n_rellenar_algodon"
+],
+[
+871.602,
+878.91,
+"shot",
+"n_algodon_seco"
+],
+[
+878.91,
+883.41,
+"shot",
+"n_plato_comida_perro"
+],
+[
+883.41,
+885.8,
+"shot",
+"n_bolsa_abierta_alacena"
+],
+[
+890.7,
+896.99,
+"shot",
+"n_puerta_trasera"
+],
+[
+896.99,
+899.29,
+"shot",
+"v06_lupa_zocalo"
+],
+[
+899.29,
+901.588,
+"shot",
+"n_grieta_ventana_cerca"
+],
+[
+907.1,
+915.07,
+"shot",
+"v07_silicona_ventana"
+],
+[
+915.07,
+918.5,
+"shot",
+"n_frascos_tapa_rosca"
+],
+[
+922.9,
+927.05,
+"shot",
+"n_frasco_jarabe_pegajoso"
+],
+[
+927.05,
+935.05,
+"shot",
+"v10_trapo_mesada"
+],
+[
+941.0,
+945.23,
+"shot",
+"n_rama_pared"
+],
+[
+945.23,
+949.09,
+"shot",
+"n_tijera_poda"
+],
+[
+949.09,
+951.3,
+"shot",
+"n_cuaderno_advertencia"
+],
+[
+956.1,
+961.75,
+"shot",
+"n_hormiga_azucar"
+],
+[
+961.75,
+966.23,
+"shot",
+"n_hormiga_carpintera"
+],
+[
+966.23,
+968.4,
+"shot",
+"n_aserrin_piso"
+],
+[
+973.605,
+981.29,
+"shot",
+"n_madera_galerias"
+],
+[
+981.29,
+984.79,
+"shot",
+"n_marco_podrido"
+],
+[
+984.79,
+986.6,
+"shot",
+"n_gotera_techo"
+],
+[
+990.0,
+995.57,
+"shot",
+"n_destornillador_madera"
+],
+[
+995.57,
+999.7,
+"shot",
+"n_hormiga_fuego_macro"
+],
+[
+1005.6,
+1008.01,
+"shot",
+"n_bolsa_cebo_jardin"
+],
+[
+1008.01,
+1017.557,
+"shot",
+"n_lee_etiqueta"
+],
+[
+1023.003,
+1029.31,
+"shot",
+"n_lupa_banco"
+],
+[
+1029.31,
+1034.852,
+"shot",
+"n_cinta_tarjeta"
+],
+[
+1040.2,
+1046.17,
+"shot",
+"n_tarjeta_faraon"
+],
+[
+1046.17,
+1050.655,
+"shot",
+"n_pared_hueca"
+],
+[
+1054.8,
+1062.85,
+"shot",
+"n_varias_reinas"
+],
+[
+1062.85,
+1065.97,
+"shot",
+"n_coco_partido"
+],
+[
+1065.97,
+1067.5,
+"shot",
+"n_tarjeta_hormiga_oscura"
+],
+[
+1072.535,
+1078.43,
+"shot",
+"n_frasco_cebo_listo"
+],
+[
+1078.43,
+1082.69,
+"shot",
+"n_cabeza_hormiga_macro"
+],
+[
+1082.69,
+1083.895,
+"shot",
+"n_grieta_losa"
+],
+[
+1089.235,
+1095.55,
+"shot",
+"n_regla_hormiga"
+],
+[
+1095.55,
+1098.63,
+"shot",
+"n_aserrin_y_agua"
+],
+[
+1098.63,
+1100.6,
+"shot",
+"n_cocina_walt"
+],
+[
+1105.4,
+1112.63,
+"shot",
+"n_ventana_pileta"
+],
+[
+1112.63,
+1115.19,
+"shot",
+"n_alacena_cereal"
+],
+[
+1115.19,
+1118.551,
+"shot",
+"n_mano_mujer_vinagre"
+],
+[
+1121.711,
+1130.33,
+"shot",
+"n_dos_frascos_cocina"
+],
+[
+1130.33,
+1132.9,
+"shot",
+"n_mil_hormigas"
+],
+[
+1138.5,
+1141.39,
+"shot",
+"n_veinte_hormigas"
+],
+[
+1141.39,
+1147.03,
+"shot",
+"n_dos_hormigas"
+],
+[
+1147.03,
+1151.8,
+"shot",
+"n_alfeizar_vacio"
+],
+[
+1156.4,
+1161.43,
+"shot",
+"n_fecha_lapiz"
+],
+[
+1161.43,
+1165.29,
+"shot",
+"n_mecedora_porche"
+],
+[
+1165.29,
+1168.8,
+"shot",
+"n_sobres_preguntas"
+],
+[
+1172.9,
+1177.33,
+"shot",
+"n_polvo_blanco_dos"
+],
+[
+1177.33,
+1183.563,
+"shot",
+"n_estacion_cebo"
+],
+[
+1188.3,
+1196.71,
+"shot",
+"n_perro_mira"
+],
+[
+1196.71,
+1201.096,
+"shot",
+"n_perro_lame"
+],
+[
+1205.8,
+1213.43,
+"shot",
+"n_polvo_grieta_garaje"
+],
+[
+1213.43,
+1217.6,
+"shot",
+"n_hormiga_limpia_antena"
+],
+[
+1223.247,
+1226.39,
+"shot",
+"n_patio_trasero"
+],
+[
+1226.39,
+1235.296,
+"shot",
+"n_estacion_patio"
+],
+[
+1240.1,
+1244.29,
+"shot",
+"n_hormiga_caza"
+],
+[
+1244.29,
+1251.469,
+"shot",
+"n_cuaderno_resumen"
+],
+[
+1255.0,
+1261.51,
+"shot",
+"n_vinagre_tachado"
+],
+[
+1261.51,
+1265.0,
+"shot",
+"n_tres_polvos"
+],
+[
+1270.744,
+1280.73,
+"shot",
+"n_caja_borax_dolar"
+],
+[
+1280.73,
+1283.385,
+"shot",
+"n_hormigas_vuelven_nido"
+],
+[
+1287.925,
+1297.53,
+"shot",
+"n_frasco_mani"
+],
+[
+1297.53,
+1299.785,
+"shot",
+"n_calendario_dia14"
+],
+[
+1303.6,
+1312.09,
+"shot",
+"n_garaje_puerta_abierta"
+],
+[
+1312.09,
+1313.969,
+"shot",
+"n_banco_herramientas"
+],
+[
+1318.309,
+1326.29,
+"shot",
+"n_lista_pruebas"
+],
+[
+1326.29,
+1331.4,
+"shot",
+"n_hormiga_argentina"
+]
+],
+"cam": [
+[
+639.4,
+641.38,
+"wide"
+],
+[
+935.05,
+936.8,
+"wide"
+]
+],
+"ov": [
+{
+"k": "stamp",
+"txt": "VINEGAR = A MYTH",
+"at": 38.2,
+"out": 41.2
+},
+{
+"k": "chip",
+"txt": "40 YEARS COUNTING INSECTS",
+"col": "ice",
+"at": 90.54,
+"out": 94.04
+},
+{
+"k": "chip",
+"txt": "▶ MY OTHER CHANNEL · LINK IN THE DESCRIPTION",
+"col": "amber",
+"at": 127.4,
+"out": 129.42
+},
+{
+"k": "chip",
+"txt": "SUBSCRIBE · A NEW TEST EVERY WEEK",
+"col": "green",
+"at": 129.72,
+"out": 133.22
+},
+{
+"k": "big",
+"txt": "COLONY",
+"sub": "THE ONE WORD THAT EXPLAINS EVERY FAILED TRICK",
+"col": "amber",
+"at": 137.08,
+"out": 140.28
+},
+{
+"k": "big",
+"txt": "1979",
+"sub": "FIRE ANT MOUNDS · ONE ACRE · EVERY WEEK",
+"col": "amber",
+"at": 192.6,
+"out": 195.8
+},
+{
+"k": "stamp",
+"txt": "ONLY THE ONES ON TOP",
+"at": 226.26,
+"out": 229.26
+},
+{
+"k": "step",
+"n": 1,
+"name": "VINEGAR ON THE LINE",
+"col": "red",
+"at": 241.5,
+"out": 245.5
+},
+{
+"k": "chip",
+"txt": "WIPES THE SCENT ROAD · NEST UNTOUCHED",
+"col": "red",
+"at": 290.98,
+"out": 294.48
+},
+{
+"k": "step",
+"n": 2,
+"name": "CINNAMON, COFFEE, CHALK",
+"col": "red",
+"at": 320.84,
+"out": 324.84
+},
+{
+"k": "step",
+"n": 3,
+"name": "BOILING WATER ON THE MOUND",
+"col": "red",
+"at": 356.38,
+"out": 360.38
+},
+{
+"k": "stamp",
+"txt": "1 MOUND → 3 MOUNDS",
+"at": 385.26,
+"out": 388.26
+},
+{
+"k": "step",
+"n": 4,
+"name": "CONTACT SPRAY",
+"col": "red",
+"at": 397.86,
+"out": 401.86
+},
+{
+"k": "chip",
+"txt": "BUDDING · THE COLONY SPLITS",
+"col": "red",
+"at": 432.7,
+"out": 436.2
+},
+{
+"k": "stamp",
+"txt": "LET THEM GO HOME",
+"at": 455.42,
+"out": 458.42
+},
+{
+"k": "chip",
+"txt": "BORAX · SODIUM BORATE · LAUNDRY AISLE",
+"col": "green",
+"at": 470.04,
+"out": 473.54
+},
+{
+"k": "chip",
+"txt": "THEY SHARE IT · MOUTH TO MOUTH",
+"col": "green",
+"at": 499.76,
+"out": 503.26
+},
+{
+"k": "check",
+"title": "THE 1% BAIT",
+"rows": [
+{
+"txt": "1 tsp borax",
+"at": 574.42
+},
+{
+"txt": "½ cup sugar · 1½ cups warm water",
+"at": 581.24
+},
+{
+"txt": "Stir until clear",
+"at": 584.02
+}
+],
+"at": 574.42,
+"out": 588.02
+},
+{
+"k": "big",
+"txt": "1%",
+"sub": "WEAK ON PURPOSE",
+"col": "green",
+"at": 589.58,
+"out": 592.78
+},
+{
+"k": "chip",
+"txt": "SAFETY · KIDS · DOGS",
+"col": "amber",
+"at": 606.64,
+"out": 610.14
+},
+{
+"k": "chip",
+"txt": "JAR + NAIL HOLES + COTTON BALL",
+"col": "green",
+"at": 641.38,
+"out": 644.88
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "SUGAR",
+"col": "ice",
+"at": 727.23
+},
+{
+"txt": "PEANUT BUTTER",
+"col": "amber",
+"at": 731.29
+}
+],
+"at": 720.89,
+"out": 733.79
+},
+{
+"k": "chip",
+"txt": "DAY BY DAY",
+"col": "amber",
+"at": 751.77,
+"out": 755.27
+},
+{
+"k": "step",
+"n": 2,
+"name": "DAY TWO",
+"col": "amber",
+"at": 782.39,
+"out": 786.39
+},
+{
+"k": "stamp",
+"txt": "DON'T WIPE THE LINE",
+"at": 796.57,
+"out": 799.57
+},
+{
+"k": "chip",
+"txt": "DAY 3-5 · THINNER · SLOWER",
+"col": "green",
+"at": 843.79,
+"out": 847.29
+},
+{
+"k": "chip",
+"txt": "CLEAR SILICONE · ABOUT $5 · LASTS YEARS",
+"col": "green",
+"at": 907.77,
+"out": 911.27
+},
+{
+"k": "chip",
+"txt": "WHEN BORAX IS NOT THE ANSWER",
+"col": "red",
+"at": 949.09,
+"out": 952.59
+},
+{
+"k": "chip",
+"txt": "CARPENTER ANTS · FIX THE WET WOOD",
+"col": "red",
+"at": 961.75,
+"out": 965.25
+},
+{
+"k": "chip",
+"txt": "FIRE ANTS · USE THE LABELED PRODUCT",
+"col": "red",
+"at": 995.57,
+"out": 999.07
+},
+{
+"k": "chip",
+"txt": "THE TAPE TEST · 2 MINUTES",
+"col": "ice",
+"at": 1029.31,
+"out": 1032.81
+},
+{
+"k": "stamp",
+"txt": "ROTTEN COCONUT = ODOROUS HOUSE ANT",
+"at": 1062.85,
+"out": 1065.85
+},
+{
+"k": "big",
+"txt": "DAY 12",
+"sub": "NOTHING · NOT ONE ANT",
+"col": "green",
+"at": 1147.03,
+"out": 1150.23
+},
+{
+"k": "deal",
+"at": 1165.29,
+"out": 1169.79
+},
+{
+"k": "chip",
+"txt": "«BORIC ACID?» · SAME MINERAL",
+"col": "ice",
+"at": 1172.93,
+"out": 1176.43
+},
+{
+"k": "chip",
+"txt": "«SAFE FOR MY DOG?» · NOT TO EAT",
+"col": "ice",
+"at": 1188.39,
+"out": 1191.89
+},
+{
+"k": "chip",
+"txt": "«DRY POWDER?» · SWEET BAIT WINS",
+"col": "ice",
+"at": 1205.97,
+"out": 1209.47
+},
+{
+"k": "chip",
+"txt": "«THE YARD?» · BAIT THE TRAIL",
+"col": "ice",
+"at": 1223.45,
+"out": 1226.95
+},
+{
+"k": "recap",
+"rows": [
+1247.97,
+1255.37,
+1261.51,
+1272.29,
+1289.45,
+1295.25,
+1297.53
+],
+"at": 1244.29,
+"out": 1303.53
+},
+{
+"k": "ask",
+"at": 1303.79,
+"out": 1315.79
+},
+{
+"k": "next",
+"at": 1333.65,
+"out": 1338.65
+}
+],
+"cta1": {
+"desc": 129.72,
+"end": 135.72
+},
+"cta2": {
+"desc": 1318.83,
+"end": 1324.83
+},
+"cta3": {
+"desc": 1326.29,
+"end": 1331.29
+},
+"end": 1335.77,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+574.417,
+606.637
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "WHAT TO KEEP",
+"recap": [
+"It's the colony, not the line",
+"Vinegar only hides the road",
+"1 tsp borax · ½ cup sugar · 1½ cups water",
+"Jar with nail holes · on the road",
+"Skip sugar? Try peanut butter",
+"Day 2: don't wipe, don't spray",
+"Gone in 10-14 days"
+],
+"ask": [
+"What's the one pest",
+"that keeps winning at your house?",
+"Tell me · I'll test it"
+],
+"next": [
+"NEXT TIME",
+"Another trick, tested"
+],
+"lower": [
+89.02,
+95.02
+]
+}
+}
