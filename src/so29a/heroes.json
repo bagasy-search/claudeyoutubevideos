@@ -1,0 +1,325 @@
+[
+ {
+  "k": "trays",
+  "at": 6.68,
+  "out": 16.68,
+  "ph": "the very same orange fish",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 0.3
+   },
+   {
+    "at": 7.1
+   }
+  ]
+ },
+ {
+  "k": "secrets",
+  "at": 56.74,
+  "out": 67.74,
+  "ph": "and nobody tells you because",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 3.68
+   }
+  ]
+ },
+ {
+  "k": "marker",
+  "at": 145.34,
+  "out": 154.34,
+  "ph": "smiled took a card",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 1.82
+   }
+  ]
+ },
+ {
+  "k": "nolaw",
+  "at": 162.84,
+  "out": 172.84,
+  "ph": "He was joking a little",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 5.1
+   }
+  ]
+ },
+ {
+  "k": "cold",
+  "at": 240.34,
+  "out": 252.34,
+  "ph": "the only thing that kills them",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 9.88
+   }
+  ]
+ },
+ {
+  "k": "twofreezers",
+  "at": 293.98,
+  "out": 304.98,
+  "ph": "they put it in their kitchen freezer",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 8.12
+   }
+  ]
+ },
+ {
+  "k": "norway",
+  "at": 345.38,
+  "out": 356.38,
+  "ph": "No sushi chef would serve it raw",
+  "dev": 0.1,
+  "items": [
+   {
+    "at": 6.66
+   },
+   {
+    "at": 10.3
+   }
+  ]
+ },
+ {
+  "k": "farm",
+  "at": 361.1,
+  "out": 370.6,
+  "ph": "Farmed salmon raised on pellet food",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 2.42
+   }
+  ]
+ },
+ {
+  "k": "needsalt",
+  "at": 395.16,
+  "out": 406.16,
+  "ph": "looked at it for a long time",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 8.4
+   }
+  ]
+ },
+ {
+  "k": "double",
+  "at": 427.36,
+  "out": 437.86,
+  "ph": "is paying double for wild salmon",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 6.26
+   }
+  ]
+ },
+ {
+  "k": "krill",
+  "at": 444.4,
+  "out": 455.4,
+  "ph": "the store is the same beautiful orange",
+  "dev": 0.1,
+  "items": [
+   {
+    "at": 7.02
+   }
+  ]
+ },
+ {
+  "k": "senses",
+  "at": 540.56,
+  "out": 548.56,
+  "ph": "look at the shine I press",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 0.1
+   },
+   {
+    "at": 1.2
+   },
+   {
+    "at": 3.9
+   }
+  ]
+ },
+ {
+  "k": "coldchain",
+  "at": 593.46,
+  "out": 604.46,
+  "ph": "on ice and then it sat in the case",
+  "dev": -0.0,
+  "items": [
+   {
+    "at": 2.84
+   }
+  ]
+ },
+ {
+  "k": "laundro",
+  "at": 609.8,
+  "out": 620.8,
+  "ph": "In my first apartment in America",
+  "dev": -0.1
+ },
+ {
+  "k": "thaw",
+  "at": 627.08,
+  "out": 637.08,
+  "ph": "I buy a good frozen fillet",
+  "dev": -2.8
+ },
+ {
+  "k": "kama",
+  "at": 675.0,
+  "out": 686.0,
+  "ph": "Kama is the collar",
+  "dev": -1.6,
+  "items": [
+   {
+    "at": 3.6
+   }
+  ]
+ },
+ {
+  "k": "broiler",
+  "at": 722.42,
+  "out": 734.42,
+  "ph": "put it under the broiler",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 5.26
+   }
+  ]
+ },
+ {
+  "k": "belly",
+  "at": 790.96,
+  "out": 800.96,
+  "ph": "little plate of grilled salmon belly",
+  "dev": -0.0,
+  "items": [
+   {
+    "at": 4.56
+   }
+  ]
+ },
+ {
+  "k": "gold",
+  "at": 808.3,
+  "out": 820.3,
+  "ph": "until the skin is crisp",
+  "dev": -0.0,
+  "items": [
+   {
+    "at": 7.74
+   }
+  ]
+ },
+ {
+  "k": "foam",
+  "at": 860.64,
+  "out": 871.64,
+  "ph": "is a sign that the fire was too strong",
+  "dev": -0.2,
+  "items": [
+   {
+    "at": 8.2
+   }
+  ]
+ },
+ {
+  "k": "phone",
+  "at": 909.1,
+  "out": 917.1,
+  "ph": "called me the next week",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 0.1
+   }
+  ]
+ },
+ {
+  "k": "patdry",
+  "at": 943.88,
+  "out": 952.88,
+  "ph": "and water on the outside",
+  "dev": -0.0,
+  "items": [
+   {
+    "at": 6.0
+   }
+  ]
+ },
+ {
+  "k": "snow",
+  "at": 1148.43,
+  "out": 1159.43,
+  "ph": "so the salt falls like snow",
+  "dev": -0.3,
+  "items": [
+   {
+    "at": 6.34
+   }
+  ]
+ },
+ {
+  "k": "overnight",
+  "at": 1164.65,
+  "out": 1174.15,
+  "ph": "and you put them in the refrigerator",
+  "dev": 0.0,
+  "items": [
+   {
+    "at": 6.8
+   }
+  ]
+ },
+ {
+  "k": "week",
+  "at": 1263.51,
+  "out": 1276.51,
+  "ph": "So let me give you my week",
+  "dev": -1.3,
+  "items": [
+   {
+    "at": 3.22
+   },
+   {
+    "at": 7.92
+   },
+   {
+    "at": 8.76
+   },
+   {
+    "at": 12.18
+   }
+  ]
+ },
+ {
+  "k": "haggle",
+  "at": 1345.79,
+  "out": 1355.79,
+  "ph": "this is the best she would say",
+  "dev": -0.1,
+  "items": [
+   {
+    "at": 7.14
+   }
+  ]
+ }
+]
