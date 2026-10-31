@@ -420,6 +420,7 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
   const camRY = 16 * (1 - inn) + 7.5 * Math.sin((t - at) * 0.31 + 0.6) - 10 * xo;
   const camRX = 6 + 1.6 * Math.sin((t - at) * 0.13) + 8 * xo;
   const camY = 18 * Math.sin((t - at) * 0.27 + 1.2);
+  const cam = `perspective(1900px) translateZ(${camZ}px) rotateX(${camRX}deg) rotateY(${camRY}deg)`;
   const R = iris * 1500;
   const mask = `radial-gradient(circle at 50% 52%, #000 ${R}px, transparent ${R + 520}px)`;
   const hdr = cl(phys(t, at + 0.35, 6, 0.7)) * (1 - eIn(t, out - 0.4, out + 0.4));
@@ -440,8 +441,8 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
       <span style={{ color: G.dim, fontSize: 40 }}>&nbsp;/ {N}</span>
     </div>
     <div style={{ position: "absolute", left: 960 - 330, top: 170, width: 660, height: 780, opacity: 0.6 + 0.4 * cl(push), background: `radial-gradient(ellipse 50% 50% at 50% 50%, ${c}33, transparent 70%)` }} />
-    <div style={{ position: "absolute", left: 960, top: 560 + camY, perspective: 1900, transform: "scale(1.28)" }}> {/* 30-oct: más grande (en celular no se leía) */}
-      <div style={{ transformStyle: "preserve-3d", transform: `translateZ(${camZ}px) rotateX(${camRX}deg) rotateY(${camRY}deg)` }}>
+    <div style={{ position: "absolute", left: 960, top: 560 + camY, transform: "scale(1.28)" }}> {/* 30-oct: más grande (en celular no se leía) */}
+      <div> {/* 31-oct: sin preserve-3d (el Chrome del farm borraba tarjetas 1 cuadro); cada tarjeta lleva la cámara en su transform */}
         {cards.map((cd, i) => {
           // cada tarjeta entra en SU palabra (la 1ª con el carrusel): cae con masa desde abajo-derecha, girada, y asienta
           const s = phys(t, i === 0 ? Math.min(at + 0.45, cd.at - 0.6) : cd.at - 0.6, 6.4, 0.38);
@@ -455,7 +456,7 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
           if (op <= 0.01) return null;
           const front = Math.max(0, 1 - ad), land = 1 - s; // lo que le falta para apoyarse (negativo = se pasó)
           return <div key={i} style={{ position: "absolute", left: -180, top: -320, width: 360, height: 640, opacity: op, zIndex: 100 - Math.round(ad * 10),
-            transform: `translate3d(${x + land * 260}px, ${Math.max(land, -0.04) * 760}px, ${z - xi * 500}px) rotateY(${ry - land * 30}deg) rotateX(${land * 40}deg) rotateZ(${land * 14}deg) scale(${0.9 + 0.2 * front})`,
+            transform: `${cam} translate3d(${x + land * 260}px, ${Math.max(land, -0.04) * 760}px, ${z - xi * 500}px) rotateY(${ry - land * 30}deg) rotateX(${land * 40}deg) rotateZ(${land * 14}deg) scale(${0.9 + 0.2 * front})`,
             } as React.CSSProperties}>
             <div style={{ position: "relative", width: "100%", height: "100%", borderRadius: 24, overflow: "hidden", background: "#16171a",
               boxShadow: `0 ${40 + Math.abs(land) * 60}px ${90 + Math.abs(land) * 80}px rgba(0,0,0,${0.6 - Math.min(0.3, Math.abs(land) * 0.3)}), 0 0 0 ${2 + 2 * front}px ${front > 0.5 ? c : "rgba(255,255,255,.12)"}` }}>
