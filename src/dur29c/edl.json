@@ -78,17 +78,11 @@
 {
 "a": 34.26,
 "b": 49.36,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "OchoPostales",
-"bg": "img/dur29c/ag/dur29c_t01_postcards.png",
-"at": {
-"postal": 328,
-"debajo": 390
+"v": "img/dur29c/ag/dur29c_t01_postcards.png"
 }
-},
-"big": true
 },
 {
 "a": 49.36,
@@ -360,17 +354,11 @@
 {
 "a": 150.62,
 "b": 160.6,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "MareaReloj",
-"bg": "img/dur29c/ag/dur29c_l06_tide.png",
-"at": {
-"baja": 112,
-"sube": 185
+"v": "img/dur29c/ag/dur29c_l06_tide.png"
 }
-},
-"big": true
 },
 {
 "a": 160.6,
@@ -393,16 +381,11 @@
 {
 "a": 167.7,
 "b": 176.48,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "OjosPared",
-"bg": "img/dur29c/ag/dur29c_l09_rats.png",
-"at": {
-"atacado": 224
+"v": "img/dur29c/ag/dur29c_l09_rats.png"
 }
-},
-"big": true
 },
 {
 "a": 176.48,
@@ -636,16 +619,11 @@
 {
 "a": 275.02,
 "b": 285.02,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "CementerioCapas",
-"bg": "img/dur29c/ag/dur29c_p04_cemetery_crowded_2.png",
-"at": {
-"dos": 139
+"v": "img/dur29c/ag/dur29c_p04_cemetery_crowded_2.png"
 }
-},
-"big": true
 },
 {
 "a": 285.02,
@@ -705,16 +683,11 @@
 {
 "a": 313.44,
 "b": 330.12,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "CarretasNoche",
-"bg": "img/dur29c/ag/dur29c_p02_carts_black_2.png",
-"at": {
-"curas": 422
+"v": "img/dur29c/ag/dur29c_p02_carts_black_2.png"
 }
-},
-"big": true
 },
 {
 "a": 330.12,
@@ -930,17 +903,11 @@
 {
 "a": 418.089,
 "b": 436.329,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "CiudadMadera",
-"bg": "img/dur29c/ag/dur29c_e05_wood_paper.png",
-"at": {
-"flores": 235,
-"mil": 282
+"v": "img/dur29c/ag/dur29c_e05_wood_paper.png"
 }
-},
-"big": true
 },
 {
 "a": 436.329,
@@ -1262,17 +1229,11 @@
 {
 "a": 626.709,
 "b": 637.949,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "HornoMil",
-"bg": "img/dur29c/ag/dur29c_v01_furnace_2.png",
-"at": {
-"mil": 119,
-"ojos": 184
+"v": "img/dur29c/ag/dur29c_v01_furnace_2.png"
 }
-},
-"big": true
 },
 {
 "a": 637.949,
@@ -1560,17 +1521,11 @@
 {
 "a": 827.738,
 "b": 844.257,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "CatalejoVentana",
-"bg": "img/dur29c/ag/dur29c_n09_window_telescope.png",
-"at": {
-"ventana": 341,
-"emily": 470
+"v": "img/dur29c/ag/dur29c_n09_window_telescope.png"
 }
-},
-"big": true
 },
 {
 "a": 844.257,
@@ -1770,16 +1725,11 @@
 {
 "a": 950.238,
 "b": 959.637,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "BolaHierro",
-"bg": "img/dur29c/ag/dur29c_i06_ball.png",
-"at": {
-"cincuenta": 168
+"v": "img/dur29c/ag/dur29c_i06_ball.png"
 }
-},
-"big": true
 },
 {
 "a": 959.637,
@@ -1990,17 +1940,14 @@
 {
 "a": 1070.666,
 "b": 1080.306,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "LineaReves",
-"bg": "img/dur29c/cand/fordline_01.jpg",
-"at": {
-"reves": 182,
-"desarmaba": 257
+"v": "img/dur29c/cand/fordline_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
 }
-},
-"big": true
+}
 },
 {
 "a": 1080.306,
@@ -2420,14 +2367,11 @@
 {
 "a": 1378.006,
 "b": 1389.106,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "OchoHerramientas",
-"bg": "img/dur29c/ag/dur29c_f02_city_layers_3.png",
-"at": {}
-},
-"big": true
+"v": "img/dur29c/ag/dur29c_f02_city_layers_3.png"
+}
 },
 {
 "a": 1389.106,
