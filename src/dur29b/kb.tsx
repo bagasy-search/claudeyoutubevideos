@@ -17,7 +17,7 @@ const rockT = (key: string, base: number[], rx: number, ry: number) => { const t
 
 // ---------- contador mecánico de rodillos (HTML sobre la escena, latón): el número rueda, nunca salta ----------
 export const Drums: React.FC<{ v: number; n?: number; x: number; y: number; s?: number; unit?: string; op?: number }> = ({ v, n = 3, x, y, s = 1, unit, op = 1 }) => {
-  const digs = Array.from({ length: n }, (_, i) => { const p = Math.pow(10, n - 1 - i), raw = v / p; const d = Math.floor(raw) % 10, fr = raw - Math.floor(raw); const roll = i === n - 1 ? raw % 10 : d + (fr > 0.9 && (v % p) > p - p / 10 - 1e-6 ? (fr - 0.9) * 10 : 0); return roll; });
+  const digs = Array.from({ length: n }, (_, i) => { const p = Math.pow(10, n - 1 - i), raw = v / p; const d = Math.floor(raw) % 10, fr = raw - Math.floor(raw); const roll = i === n - 1 ? raw % 10 : d + Math.max(0, (v % p) - (p - 1)); return roll; });
   return <div style={{ position: "absolute", left: x, top: y, transform: `scale(${s})`, transformOrigin: "left top", opacity: op, display: "flex", alignItems: "center", gap: 10, padding: "14px 18px", borderRadius: 18,
     background: "linear-gradient(180deg,#d9b260,#8a6424 55%,#c99a46)", boxShadow: "0 18px 40px rgba(0,0,0,.6), inset 0 2px 0 rgba(255,240,200,.6), inset 0 -3px 0 rgba(60,35,10,.6)" }}>
     {digs.map((r, i) => <div key={i} style={{ width: 70, height: 96, overflow: "hidden", borderRadius: 8, background: "#141210", boxShadow: "inset 0 10px 14px rgba(0,0,0,.9), inset 0 -10px 14px rgba(0,0,0,.9)", position: "relative" }}>

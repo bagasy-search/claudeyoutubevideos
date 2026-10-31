@@ -319,11 +319,11 @@ const MitoVuelta: React.FC<UP> = ({ d, p }) => {
 // ---- TorretaCola · cámara pegada a la burbuja de cristal: adentro el artillero entre sus dos ametralladoras, afuera pasan nubes ----
 const TorretaCola: React.FC<UP> = ({ d, p }) => {
   return <U3 d={d} bg={p.bg} ground={null} sky="#2a3a52" mode="iris" key1={[0.6, 2.0, 1.4]}
-    cam={{ at: [0, 0.0, 0], az: [-0.2, 0.1], el: [0.1, 0.06], r: [0.78, 0.72], fov: 36 }}>{(tt) => <>
+    cam={{ at: [0, 0.0, 0.05], az: [0.8, 0.55], el: [0.16, 0.1], r: [0.95, 0.82], fov: 36 }}>{(tt) => <>
     <mesh><sphereGeometry args={[0.26, 40, 28]} />{M.glass({ op: 0.12, col: "#dfeaf2" })}</mesh>
     {[0, 1, 2].map((i) => <mesh key={i} rotation={[0, i * PI / 3, 0]}><torusGeometry args={[0.262, 0.006, 8, 48]} />{M.steel({ col: "#5a5e62" })}</mesh>)}
     <mesh position={[0, 0, -0.42]} rotation={[PI / 2, 0, 0]}><cylinderGeometry args={[0.2, 0.26, 0.4, 32]} /><meshStandardMaterial color="#5a6a4a" metalness={0.4} roughness={0.6} /></mesh>
-    <group position={[0, -0.16, -0.02]}><Stickman escala={0.14} rotY={0} guion={[{ t: 0, accion: "sentarse", expr: "nervioso" }] as any} semilla={44} contacto={0} color="#a8906a" /></group>
+    <group position={[0, -0.16, -0.02]}><Stickman escala={0.14} rotY={0} guion={[{ t: 0, accion: "sentarse", expr: "nervioso" }] as any} semilla={44} contacto={0} color="#4a5a32" /></group>
     {Array.from({ length: 10 }, (_, i) => { const ph = ((tt * 2 + i * 0.1) % 1); return <mesh key={"c" + i} position={[(i % 2 ? 0.08 : -0.08) + (i % 2 ? 1 : -1) * 0.05 * ph, -0.02 - 0.25 * ph * ph, 0.12]} rotation={[ph * 6, 0, ph * 4]}><cylinderGeometry args={[0.008, 0.008, 0.03, 8]} />{M.brass({ col: "#e8b850" })}</mesh>; })}
     {[-0.08, 0.08].map((x, i) => <group key={i} position={[x, 0.0, 0.1]}><mesh rotation={[PI / 2, 0, 0]}><cylinderGeometry args={[0.016, 0.016, 0.34, 12]} /><meshStandardMaterial color="#3a3e42" metalness={0.7} roughness={0.35} /></mesh>
       <mesh position={[0, 0, 0.2]} rotation={[PI / 2, 0, 0]} scale={sm(0.65 + 0.35 * Math.abs(Math.sin(tt * PI * 1.8 + i)))}><coneGeometry args={[0.06, 0.16, 10]} />{M.glow({ col: "#ffd070" })}</mesh></group>)}
@@ -341,16 +341,14 @@ const TrajeCalefaccion: React.FC<UP> = ({ d, p }) => {
   const D = d / 30, aF = Math.min(sec(p, "funcionaba", 1.6), D - 2.2);
   const parts = [[0, 0.42, 0.11, 0.2], [-0.15, 0.42, 0.04, 0.2], [0.15, 0.42, 0.04, 0.2], [-0.05, 0.16, 0.05, 0.22], [0.05, 0.16, 0.05, 0.22]];
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" sky="#0a0e18" mode="iris" key1={[0.6, 2.0, 1.6]}
-    cam={{ at: [0, 0.45, 0], az: [-0.2, -0.08], el: [0.08, 0.06], r: [1.35, 1.28], fov: 34 }}>{(tt) => {
+    cam={{ at: [0, 0.45, 0], az: [-0.3, 0.05], el: [0.08, 0.1], r: [1.4, 1.2], fov: 34 }}>{(tt) => {
     const frost = eio(tt, aF + 0.3, D - 0.2);
     return <>
-      <mesh position={[0, 0.86, 0]} rotation={[0, 0, PI / 2]}><cylinderGeometry args={[0.008, 0.008, 0.34, 8]} />{M.wood({ base: [90, 60, 36] })}</mesh>
-      <mesh position={[0, 0.81, 0]}><cylinderGeometry args={[0.004, 0.004, 0.1, 6]} />{M.steel({ col: "#4a4e52" })}</mesh>
-      {parts.map(([x, y, r, h], j) => { const off = eio(tt, aF + (4 - Math.min(4, j + (j > 2 ? -1 : 2))) * 0.35, aF + 0.4 + (4 - Math.min(4, j + (j > 2 ? -1 : 2))) * 0.35);
+            {parts.map(([x, y, r, h], j) => { const off = eio(tt, aF + (4 - Math.min(4, j + (j > 2 ? -1 : 2))) * 0.35, aF + 0.4 + (4 - Math.min(4, j + (j > 2 ? -1 : 2))) * 0.35);
         return <group key={j} position={[x, y, 0]} rotation={[0, 0, j === 1 ? -0.25 : j === 2 ? 0.25 : 0]}>
           <mesh><capsuleGeometry args={[r, h, 8, 20]} /><meshStandardMaterial color="#6a5a3a" roughness={0.95} /></mesh>
           {[-0.3, 0, 0.3].map((k, q) => <mesh key={q} position={[0, k * h, 0]} rotation={[PI / 2, 0, 0]}><torusGeometry args={[r * 1.02, 0.009, 8, 28]} /><meshStandardMaterial color="#4a2418" emissive="#ff3a1a" emissiveIntensity={2.4 * (1 - off)} toneMapped={false} /></mesh>)}
-          {Array.from({ length: 10 }, (_, i) => { const an = rn(i + j * 10, 1) * 2 * PI; return <mesh key={i} position={[Math.cos(an) * r, (rn(i + j * 10, 2) - 0.5) * h, Math.sin(an) * r]} scale={sm(frost * (0.6 + rn(i, 3)))}><octahedronGeometry args={[0.02, 0]} /><meshStandardMaterial color="#bfe0ff" emissive="#4a7aa8" emissiveIntensity={0.4} roughness={0.25} /></mesh>; })}
+          {Array.from({ length: 10 }, (_, i) => { const an = rn(i + j * 10, 1) * 2 * PI; return <mesh key={i} position={[Math.cos(an) * r, (rn(i + j * 10, 2) - 0.5) * h, Math.sin(an) * r]} scale={sm(cl(frost * 1.6 - (y - 0.1) * 1.4) * (0.6 + rn(i, 3)))}><octahedronGeometry args={[0.02, 0]} /><meshStandardMaterial color="#bfe0ff" emissive="#4a7aa8" emissiveIntensity={0.4} roughness={0.25} /></mesh>; })}
         </group>; })}
       <mesh position={[0, 0.73, 0]}><sphereGeometry args={[0.125, 24, 16]} /><meshStandardMaterial color="#6a5a3a" roughness={0.9} /></mesh>
       {[-1, 1].map((sd) => <group key={sd} position={[sd * 0.05, 0.74, 0.11]} rotation={[PI / 2, 0, 0]}><mesh><cylinderGeometry args={[0.034, 0.034, 0.02, 20]} />{M.steel({ col: "#3a3a3e" })}</mesh><mesh position={[0, 0.011, 0]}><circleGeometry args={[0.027, 20]} /><meshStandardMaterial color="#cfe6ff" emissive="#8ac0ff" emissiveIntensity={0.9} roughness={0.1} /></mesh></group>)}
