@@ -1,12 +1,11 @@
-// dur29d — componentes ÚNICOS (uno por minuto, ninguno repetido en la tanda): cada uno es el OBJETO que la frase es.
+// dur29e — componentes ÚNICOS (uno por minuto, ninguno repetido en la tanda): cada uno es el OBJETO que la frase es.
 // p.at = cuadros (desde el arranque del plano) de las palabras clave, los arma tools/mkplan_core.py desde words.json.
 import React from "react";
 import { AbsoluteFill, Img, interpolate } from "remotion";
 import { useCurrentFrame } from "remotion";
 import * as K from "./comp";
-import * as CA from "./d3a";
-import * as CB from "./d3b";
-import * as CC from "./d3c";
+import * as CA from "./e3a";
+import * as CB from "./e3b";
 import { F, INK, RED, ORA, GOLD, SAND, Scene, Tag, Shadow, Motes, Fig, ez, lin, sp, rnd, sf, at, cl } from "./ukit";
 
 type UP = { d: number; p: any };
@@ -739,7 +738,7 @@ const EligeOficio: React.FC<UP> = ({ d, p }) => {
 };
 
 const MAP: Record<string, React.FC<UP>> = { PozoCorte, CuadroVelado, RacionPan, TrineoFriccion, MarcaCuadrilla, MontanaQueso, HiloTierra, MuroCapas, RitmoPisones, RutaPostas, Odometro400, Fajado, CincoSacos, SinRueda, MecapalVector, CadenaRelevos, Altimetro, SemanaMina, MercurioGotas, RelojesArena, FrascoMillones, PiernaCebo, ContraCorriente, RepinRevelado, RelojDoce, PiramideOficios, TironUna, EligeOficio };
-const MAP3: Record<string, React.FC<UP>> = { ...CA.OVR, ...CB.OVR, ...CC.OVR };
+const MAP3: Record<string, React.FC<UP>> = { ...CA.OVR, ...CB.OVR };
 export const Uniq: React.FC<{ n: string; d: number; p: any; o?: any }> = ({ n, d, p }) => {
   const C = MAP3[n] ?? MAP[n];
   if (!C) return <AbsoluteFill style={{ background: "#300" }} />;
