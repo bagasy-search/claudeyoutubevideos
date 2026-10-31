@@ -38,6 +38,8 @@ export const dirtT = (b: number[]) => { const t = tex.text("dirt" + b.join(","),
 }); t.repeat.set(8, 8); return t; };
 export const sec = (p: any, k: string, def: number) => (p && p.at && typeof p.at[k] === "number" ? p.at[k] / 30 : def);
 
+// cámara 15 % más lejos: el EVALUADOR marcaba objetos cortados por el borde en casi todos los planos
+const ZOOMR = 1.15;
 export const U3: React.FC<{ d: number; bg?: string; cam: Cam; mode?: "iris" | "wipe" | "split" | "drop"; floor?: Floor; wall?: "tile" | "dark" | "wood" | "none";
   sky?: string; ground?: number[] | null; key1?: number[]; warm?: number; lamp?: number[]; backZ?: number; backW?: number; backDim?: number; children: (tt: number) => React.ReactNode; over?: (tt: number) => React.ReactNode }> =
   ({ d, bg, cam, mode = "iris", floor = "none", wall = "none", sky = "#15110e", ground = [128, 92, 62], key1, warm, lamp, backZ, backW = 9, backDim = 0.55, children, over }) => {
@@ -50,6 +52,6 @@ export const U3: React.FC<{ d: number; bg?: string; cam: Cam; mode?: "iris" | "w
     : tx ? <mesh position={[0, backW * 0.28 - 0.2, backZ]}><planeGeometry args={[backW, backW * 9 / 16]} /><meshBasicMaterial map={tx} color={new THREE.Color(backDim, backDim * 0.97, backDim * 0.94)} toneMapped={false} fog={false} /></mesh> : null;
   return <AbsoluteFill style={{ background: "#0c0a09" }}>
     {bg && <AbsoluteFill style={{ filter: "blur(10px) brightness(.6)", transform: "scale(1.08)" }}><Img src={staticFile(bg)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>}
-    <Scene3D t={t} h={{ k: "", at: 0, out }} cam={cam} mode={mode} floor={floor} wall={wall} bg={sky} back={<>{back}{gr}</>} key1={key1} warm={warm} lamp={lamp} over={over}>{children}</Scene3D>
+    <Scene3D t={t} h={{ k: "", at: 0, out }} cam={{ ...cam, r: [cam.r[0] * ZOOMR, cam.r[1] * ZOOMR] as any }} mode={mode} floor={floor} wall={wall} bg={sky} back={<>{back}{gr}</>} key1={key1} warm={warm} lamp={lamp} over={over}>{children}</Scene3D>
   </AbsoluteFill>;
 };
