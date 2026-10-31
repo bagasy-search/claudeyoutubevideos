@@ -121,7 +121,7 @@ const SigloDebajo: React.FC<UP> = ({ d, p }) => {
 const CanaletaCarbon: React.FC<UP> = ({ d, p }) => {
   const aP = sec(p, "pizarra", 2.0), SL = -0.32;
   return <U3 d={d} bg={p.bg} ground={null} mode="wipe" sky="#3a3026" key1={[-1.2, 2.4, 1.6]}
-    cam={{ at: [0.1, 0.62, 0], az: [-0.5, -0.32], el: [0.3, 0.26], r: [1.85, 1.7], fov: 36 }}>{(tt) => {
+    cam={{ at: [0.1, 0.74, 0], az: [-0.5, -0.36], el: [0.28, 0.26], r: [2.0, 1.95], fov: 36 }}>{(tt) => {
     const pick = (tt - aP) * 0.9;
     return <>
       <mesh position={[0, -0.01, 0]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[4, 3]} /><meshStandardMaterial map={dirtT([34, 30, 28])} roughness={0.8} metalness={0.2} /></mesh>
