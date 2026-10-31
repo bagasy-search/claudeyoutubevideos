@@ -544,9 +544,11 @@ export const KitchenWorld: React.FC<{ t: number; sc?: Scene }> = ({ t, sc }) => 
         ))}
       </group>
       {/* lámpara colgante */}
+      <group visible={!sc || Math.hypot(sc.cam.p[0] - 0.35, sc.cam.p[1] - 1.95, sc.cam.p[2] + 0.45) > 0.42}>
       <mesh position={[0.35, 2.3, -0.45]}><cylinderGeometry args={[0.004, 0.004, 0.6, 6]} /><meshStandardMaterial color="#333" /></mesh>
       <mesh position={[0.35, 1.95, -0.45]}><coneGeometry args={[0.2, 0.16, 32, 1, true]} /><meshStandardMaterial color="#e9dfc6" roughness={0.6} side={THREE.DoubleSide} emissive="#ffcf8f" emissiveIntensity={0.25 * warm} /></mesh>
       <mesh position={[0.35, 1.9, -0.45]}><sphereGeometry args={[0.04, 16, 12]} /><meshBasicMaterial color={warm > 0.1 ? "#fff1cf" : "#8a8478"} toneMapped={false} /></mesh>
+      </group>
 
       {/* mesada larga contra la pared izquierda: las 10 fuentecitas (la 9 con el aro rojo) */}
       <Box p={[-2.72, 0.45, -0.1]} s={[0.6, 0.9, 3.4]} c="#f2eee6" r={0.5} />
