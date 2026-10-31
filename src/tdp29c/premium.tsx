@@ -412,10 +412,10 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
   let act = 0; for (let i = 1; i < N; i++) act += phys(t, cards[i].at - 0.25, 6.2, 0.5);
   // empujón de cámara en cada llegada: sube y baja en curva (seno amortiguado), nunca lineal
   let push = 0; for (let i = 0; i < N; i++) { const x = t - (cards[i].at - 0.25); if (x > 0) push += Math.sin(Math.min(x, 1.6) / 1.6 * Math.PI) * Math.exp(-x * 0.6); }
-  const camZ = -520 * (1 - inn) + 40 * push + 26 * Math.sin((t - at) * 0.21) - 900 * xo;
-  const camRY = 16 * (1 - inn) + 4.2 * Math.sin((t - at) * 0.17 + 0.6) - 10 * xo;
-  const camRX = 6 + 1.6 * Math.sin((t - at) * 0.13) + 8 * xo;
-  const camY = 10 * Math.sin((t - at) * 0.11 + 1.2);
+  const camZ = -520 * (1 - inn) + 40 * push + 70 * Math.sin((t - at) * 0.47) - 900 * xo;
+  const camRY = 16 * (1 - inn) + 7.5 * Math.sin((t - at) * 0.36 + 0.6) - 10 * xo;
+  const camRX = 6 + 2.6 * Math.sin((t - at) * 0.29) + 8 * xo;
+  const camY = 24 * Math.sin((t - at) * 0.31 + 1.2);
   const R = iris * 1500;
   const mask = `radial-gradient(circle at 50% 52%, #000 ${R}px, transparent ${R + 520}px)`;
   const hdr = cl(phys(t, at + 0.35, 6, 0.7)) * (1 - eIn(t, out - 0.4, out + 0.4));
