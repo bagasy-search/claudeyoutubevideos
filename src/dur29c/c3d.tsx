@@ -36,7 +36,7 @@ const OlorEscudo: React.FC<UP> = ({ d, p }) => {
 const BurbujaVidrio: React.FC<UP> = ({ d, p }) => {
   const aB = sec(p, "bola", 1.2), D = d / 30;
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="wipe" sky="#0d0806" key1={[-0.6, 2, 1.4]}
-    cam={{ at: [0.08, 0.4, 0], az: [-0.45, -0.08], el: [0.14, 0.08], r: [1.0, 0.78], fov: 32 }}>{(tt) => {
+    cam={{ at: [0.08, 0.4, 0], az: [-0.45, -0.08], el: [0.14, 0.08], r: [1.05, 0.95], fov: 32 }}>{(tt) => {
     const inf = eio(tt, aB, D - 0.3), rot = tt * 2 * PI * 0.43, R = 0.08 + 0.055 * inf, puff = (tt * 0.8) % 1;
     return <>
       <group position={[-0.35, 0.4, 0]} rotation={[rot, 0, 0]}>
@@ -86,7 +86,7 @@ const BarroPalas: React.FC<UP> = ({ d, p }) => {
 const CuchilloFilo: React.FC<UP> = ({ d, p }) => {
   const aT = sec(p, "ti", 2.2);
   return <U3 d={d} bg={p.bg} ground={null} floor="wood" mode="wipe" sky="#14181c" key1={[-0.8, 2.2, 1.4]}
-    cam={{ at: [0.1, 0.07, -0.04], az: [-0.66, 0.04], el: [0.46, 0.32], r: [0.74, 0.56], fov: 34 }}>{(tt) => {
+    cam={{ at: [0.1, 0.07, -0.04], az: [-0.66, 0.04], el: [0.46, 0.34], r: [0.78, 0.68], fov: 34 }}>{(tt) => {
     const on = tt < aT - 0.1 ? 1 : 0, st = (tt * 0.93) % 1, tri = 1 - Math.abs(2 * st - 1), sx = on * (0.2 * tri - 0.1), push = on * (st < 0.5 ? 1 : 0.35),
       slip = eio(tt, aT, aT + 0.3), back = eio(tt, aT + 0.25, aT + 0.6), cut = eio(tt, aT + 0.2, aT + 0.45);
     return <>
@@ -105,7 +105,7 @@ const CuchilloFilo: React.FC<UP> = ({ d, p }) => {
         <mesh position={[-0.02, 0.0262, 0]} rotation={[-PI / 2, 0, 0.6]} scale={[sm(cut), 1, 1]}><planeGeometry args={[0.09, 0.008]} /><meshBasicMaterial color="#b81a1a" /></mesh>
       </group>
       <pointLight position={[0.2, 0.5, 0.4]} intensity={1.4} distance={1.5} color="#e8f0ff" />
-      <pointLight position={[0.12 + sx, 0.22, 0.08]} intensity={0.6 + 0.6 * tri} distance={0.6} color="#ffffff" />
+      <pointLight position={[0.12 + sx, 0.22, 0.08]} intensity={0.3 + 0.4 * tri * on} distance={0.6} color="#ffffff" />
       <pointLight position={[0.1, 0.15, -0.05]} intensity={0.0001 + 1.1 * push} distance={0.5} color="#ffb050" />
       <hemisphereLight args={["#c8d0e0", "#2a2420", 0.55]} />
     </>;

@@ -35,7 +35,7 @@ const Rata: React.FC<{ p: number[]; s?: number; ry?: number }> = ({ p, s = 1, ry
 const CloacaCorte: React.FC<UP> = ({ d, p }) => {
   const aM = sec(p, "monedas", 3.0);
   return <U3 d={d} bg={p.bg} ground={null} mode="wipe" sky="#0d0b0a" key1={[-1.2, 2.4, 2]}
-    cam={{ at: [0, 0.5, 0], at1: [0.08, -0.12, 0.12], az: [-0.3, -0.1], el: [0.24, 0.08], r: [2.1, 1.08], fov: 34 }}>{(tt) => {
+    cam={{ at: [0, 0.5, 0], at1: [0.08, -0.02, 0.12], az: [-0.3, -0.1], el: [0.24, 0.06], r: [2.1, 1.3], fov: 34 }}>{(tt) => {
     const wheel = lerp(-1.4, 1.6, cl(tt / 2.2)), glint = eio(tt, aM, aM + 0.6);
     return <>
       <mesh position={[0, 0.62, -0.05]}><boxGeometry args={[3, 0.1, 0.8]} /><meshStandardMaterial map={cobbleT()} roughness={0.9} /></mesh>
