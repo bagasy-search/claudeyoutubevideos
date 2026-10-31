@@ -148,16 +148,11 @@
 {
 "a": 31.06,
 "b": 36.6,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "OchoCascos",
-"bg": "img/dur29b/ag/dur29b_t01_helmets.png",
-"at": {
-"ocho": 0
+"v": "img/dur29b/ag/dur29b_t01_helmets.png"
 }
-},
-"big": true
 },
 {
 "a": 36.6,
@@ -493,7 +488,7 @@
 "k": "real",
 "t": "real",
 "p": {
-"v": "img/dur29b/ag/dur29b_h05_shields_wall.png"
+"v": "broll/dur29b/v04.mp4"
 }
 },
 {
@@ -1119,7 +1114,7 @@
 "k": "real",
 "t": "real",
 "p": {
-"v": "img/dur29b/ag/dur29b_z05_rope.png"
+"v": "broll/dur29b/v05.mp4"
 }
 },
 {
@@ -1805,20 +1800,20 @@
 {
 "a": 663.332,
 "b": 672.692,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "TopCinco",
-"bg": "img/dur29b/ag/dur29b_h04_plain.png",
-"at": {
-"cinco": 6,
-"cuatro": 197,
-"tres": 9000,
-"dos": 9000,
-"uno": 9000
+"v": "img/dur29b/ag/dur29b_h04_plain.png",
+"o": {
+"build": {
+"lines": [
+"*5.* el peso.",
+"*4.* el clima."
+],
+"a": 13
 }
-},
-"big": true
+}
+}
 },
 {
 "a": 672.692,
@@ -1850,20 +1845,21 @@
 {
 "a": 676.772,
 "b": 698.352,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "TopCinco",
-"bg": "img/dur29b/ag/dur29b_k01_backpack_t5.png",
-"at": {
-"cinco": -400,
-"cuatro": -200,
-"tres": 101,
-"dos": 279,
-"uno": 545
+"v": "img/dur29b/ag/dur29b_k01_backpack_t5.png",
+"o": {
+"build": {
+"lines": [
+"*3.* el silencio.",
+"*2.* el hambre.",
+"*1.* la enfermedad."
+],
+"a": 101
 }
-},
-"big": true
+}
+}
 },
 {
 "a": 698.352,
@@ -2470,16 +2466,11 @@
 {
 "a": 932.563,
 "b": 946.063,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "MitoVuelta",
-"bg": "img/dur29b/ag/dur29b_c04_chloroform.png",
-"at": {
-"realidad": 221
+"v": "img/dur29b/ag/dur29b_c04_chloroform.png"
 }
-},
-"big": true
 },
 {
 "a": 946.063,
@@ -2851,16 +2842,11 @@
 {
 "a": 1097.355,
 "b": 1104.675,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "ParacaidasPuerta",
-"bg": "img/dur29b/ag/dur29b_b04_parachute_2.png",
-"at": {
-"puerta": 149
+"v": "img/dur29b/ag/dur29b_b04_parachute_2.png"
 }
-},
-"big": true
 },
 {
 "a": 1104.675,
