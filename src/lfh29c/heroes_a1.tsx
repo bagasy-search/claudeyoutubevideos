@@ -121,28 +121,28 @@ export const HMarble: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={
 export const HSinkscrub: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="split" floor="counter" wall="none" bg="#1c1e22" key1={[-0.5, 1.6, 1.2]}
   cam={{ at: [0, -0.02, 0], az: [0.15, -0.1], el: [0.95, 0.85], r: [0.78, 0.66], fov: 30 }}>{(tt) => {
   const shake = eio(tt, 0.3, 1.8), scrub = eio(tt, 2.0, 5.0), ang = scrub * PI * 6, bx = Math.cos(ang) * 0.07 * (1 - scrub * 0.3), bz = Math.sin(ang) * 0.05;
-  return <>
+  return <group position={[0, 0.03, 0]}>{/* +3 cm: la tapa de la pileta coincidía con la mesada (z-fighting, 60 destellos en el farm) */}
     {/* la pileta enlozada blanca: borde y bacha */}
     <RBox s={[0.8, 0.04, 0.56]} p={[0, -0.02, 0]} r={0.02}>{M.porcelain({ col: "#3f6684" })}</RBox>
-    <mesh position={[0, -0.0005, 0]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[0.6, 0.4]} /><meshPhysicalMaterial color="#4d7898" roughness={0.15} clearcoat={0.8} /></mesh>
-    <mesh position={[0.2, 0.0006, 0.1]} rotation={[-PI / 2, 0, 0]}><ringGeometry args={[0.015, 0.024, 24]} />{M.chrome()}</mesh>
+    <mesh position={[0, 0.004, 0]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[0.6, 0.4]} /><meshPhysicalMaterial color="#4d7898" roughness={0.15} clearcoat={0.8} /></mesh>
+    <mesh position={[0.2, 0.008, 0.1]} rotation={[-PI / 2, 0, 0]}><ringGeometry args={[0.015, 0.024, 24]} />{M.chrome()}</mesh>
     {/* la mancha gris-óxido: se borra donde pasó el cepillo */}
     {Array.from({ length: 70 }, (_, i) => { const x = (rn(i, 2) - 0.5) * 0.24, z = (rn(i, 3) - 0.5) * 0.16, a2 = Math.atan2(z / 0.05, x / 0.07), clean = scrub * PI * 6 > ((a2 + PI * 2) % (PI * 2)) + PI * 2 * Math.floor(rn(i, 4) * 2.4);
-      return <mesh key={i} visible={!clean} position={[x, 0.001, z]} rotation={[-PI / 2, 0, rn(i, 5) * 3]}><circleGeometry args={[0.014 + 0.012 * rn(i, 6), 10]} /><meshStandardMaterial color={rn(i, 7) > 0.5 ? "#9a6a3e" : "#7a7266"} roughness={1} transparent opacity={0.75} /></mesh>; })}
+      return <mesh key={i} visible={!clean} position={[x, 0.008 + i * 0.00005, z]} rotation={[-PI / 2, 0, rn(i, 5) * 3]}><circleGeometry args={[0.014 + 0.012 * rn(i, 6), 10]} /><meshStandardMaterial color={rn(i, 7) > 0.5 ? "#9a6a3e" : "#7a7266"} roughness={1} transparent opacity={0.75} /></mesh>; })}
     {/* granos de sal que caen y quedan */}
     {Array.from({ length: 120 }, (_, i) => { const a = 0.3 + (i / 120) * 1.5, k = cl((tt - a) / 0.3), x = (rn(i, 8) - 0.5) * 0.24, z = (rn(i, 9) - 0.5) * 0.16;
-      return <mesh key={"s" + i} visible={k > 0 && !(scrub > 0.3 && rn(i, 10) < scrub)} position={[x, lerp(0.25, 0.003, k), z]} rotation={[i, i, 0]}><boxGeometry args={[0.005, 0.004, 0.005]} /><meshStandardMaterial color="#ffffff" roughness={0.3} /></mesh>; })}
+      return <mesh key={"s" + i} visible={k > 0 && !(scrub > 0.3 && rn(i, 10) < scrub)} position={[x, lerp(0.25, 0.013, k), z]} rotation={[i, i, 0]}><boxGeometry args={[0.005, 0.004, 0.005]} /><meshStandardMaterial color="#ffffff" roughness={0.3} /></mesh>; })}
     {/* salero de vidrio con tapa de lata, sacudiéndose */}
     <group visible={tt < 2.0} position={[0.02 * Math.sin(tt * 30) * (shake < 1 ? 1 : 0), 0.3, 0]} rotation={[PI, 0, 0.2]}>
       <mesh position={[0, 0.04, 0]}><cylinderGeometry args={[0.025, 0.028, 0.08, 24]} />{M.glass({ op: 0.4 })}</mesh>
       <mesh position={[0, -0.005, 0]}><cylinderGeometry args={[0.027, 0.027, 0.014, 24]} />{M.steel()}</mesh>
     </group>
     {/* cepillo de raíz con cerdas */}
-    <group visible={tt > 1.9} position={[bx, 0.03, bz]} rotation={[0, ang * 0.2, 0]}>
+    <group visible={tt > 1.9} position={[bx, 0.04, bz]} rotation={[0, ang * 0.2, 0]}>
       <RBox s={[0.12, 0.03, 0.05]} p={[0, 0.02, 0]} r={0.012}>{M.wood({ base: [176, 128, 74] })}</RBox>
       {Array.from({ length: 24 }, (_, i) => <mesh key={i} position={[-0.05 + (i % 8) * 0.0145, -0.002, -0.016 + Math.floor(i / 8) * 0.016]}><cylinderGeometry args={[0.004, 0.004, 0.022, 6]} /><meshStandardMaterial color="#d8c08a" roughness={0.9} /></mesh>)}
     </group>
-  </>;
+  </group>;
 }}</Scene3D>;
 
 // ---- 5:01 · COMO GLASEADO ESPESO: el agua cae sobre el bicarbonato y la cuchara lo bate hasta que hace picos ----
