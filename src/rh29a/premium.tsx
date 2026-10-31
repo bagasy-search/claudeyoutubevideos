@@ -142,7 +142,7 @@ export const BigNum: React.FC<{ t: number; at: number; out: number; text: string
       })}
     </div>
     <div style={{ position: "relative", margin: "10px auto 14px", height: 5, width: 140 * k2, borderRadius: 3, background: c, boxShadow: `0 0 16px ${c}` }} />
-    {sub && <div style={{ position: "relative", opacity: k2, transform: `translateY(${(1 - k2) * 12}px)`, fontWeight: 800, fontSize: 36, letterSpacing: 4, color: G.dim }}>{sub}</div>}
+    {sub && <div style={{ position: "relative", display: "inline-block", opacity: k2, transform: `translateY(${(1 - k2) * 12}px)`, fontWeight: 800, fontSize: 36, letterSpacing: 4, color: G.txt, background: "rgba(6,6,8,.8)", padding: "8px 22px", borderRadius: 14 }}>{sub}</div>}
   </div></div>;
 };
 
@@ -353,7 +353,8 @@ export const Words: React.FC<{ t: number; items: { at: number; txt: string; col?
   return <div style={{ position: "absolute", left: 80, right: 80, top: y, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 56, opacity: 1 - xo, fontFamily: FONT, perspective: 1200 }}>
     {items.map((w, i) => {
       const s = phys(t, w.at, 6.5, 0.4);
-      return <div key={i} style={{ fontWeight: 900, fontSize: fs, letterSpacing: 1, color: w.col ?? G.txt, background: "rgba(8,8,10,.66)", padding: "4px 28px 10px", borderRadius: 20, boxShadow: "0 10px 30px rgba(0,0,0,.35)", textShadow: "0 2px 3px rgba(0,0,0,.95), 0 6px 26px rgba(0,0,0,.85)", opacity: cl(s * 1.8),
+      return <div key={i} style={{ fontWeight: 900, fontSize: fs, letterSpacing: 1, color: G.txt, background: "rgba(6,6,8,.86)", padding: "4px 28px 10px", borderRadius: 20, boxShadow: `0 10px 30px rgba(0,0,0,.35), inset 0 0 0 3px ${w.col ?? "rgba(255,255,255,.18)"}`, // 30-oct: texto blanco + filo de color (el rojo sobre oscuro se leía flojo)
+         textShadow: "0 2px 3px rgba(0,0,0,.95), 0 6px 26px rgba(0,0,0,.85)", opacity: cl(s * 1.8),
         transform: `translateY(${(1 - s) * -90 - xo * 20}px) rotateX(${(1 - s) * 60}deg) scale(${1 - xo * 0.06})`, whiteSpace: "nowrap" }}>{w.txt}</div>;
     })}
   </div>;
