@@ -66,9 +66,9 @@ const imgNear = (t: number, used: Set<string>): string | undefined => {
 };
 const imgsFor = (ts: number[]) => { const u = new Set<string>(); return ts.map((x) => imgNear(x, u)); };
 const Carousels: React.FC<{ t: number }> = ({ t }) => <>
-  {MIS.length > 0 && <CoverFlow t={t} at={DEAL?.at ?? MIS[0].at - 1} out={MIS[MIS.length - 1].out} hide={nowAv(t) || heroCover(t) > 0} kicker="BEFORE YOU SCRUB" title={`THE ${MIS.length} MISTAKES`} col="red"
+  {MIS.length > 0 && <CoverFlow t={t} at={DEAL?.at ?? MIS[0].at - 1} out={MIS[MIS.length - 1].out} hide={nowAv(t) || heroCover(t) > 0 || puente(t)} kicker="BEFORE YOU SCRUB" title={`THE ${MIS.length} MISTAKES`} col="red"
     cards={MIS.map((m, i) => ({ img: CJ.err?.[i], at: m.at, n: m.n, title: m.txt }))} />}
-  {REC && <CoverFlow t={t} at={REC.at} out={REC.out} hide={nowAv(t) || heroCover(t) > 0} kicker="ONE MORE TIME" title={PL.txt.recapTitle}
+  {REC && <CoverFlow t={t} at={REC.at} out={REC.out} hide={nowAv(t) || heroCover(t) > 0 || puente(t)} kicker="ONE MORE TIME" title={PL.txt.recapTitle}
     cards={[...PL.txt.recap, "The 5 mistakes"].map((n, i) => ({ img: CJ.rec?.[i], at: REC.rows[i] ?? REC.out, n: i + 1, title: n })).filter((c) => c.at < REC.out)} />}
 </>;
 
@@ -112,6 +112,8 @@ const Heroes: React.FC<{ t: number }> = ({ t }) => <>{HS.map((h, i) => { const C
 
 // 30-oct: la foto héroe es dueña de la pantalla: cualquier tarjeta que siga viva se apaga en 0,25 s al entrar el héroe (fantasmas del evaluador)
 const heroCover = (t: number) => HS.reduce((m, h) => (t >= h.at && t <= h.out ? Math.max(m, Math.min(1, (t - h.at) / 0.12)) : m), 0);
+// 31-oct: hueco corto entre el fin del avatar y la entrada de un héroe (d 1013,73): el carrusel no asoma en el medio
+const puente = (t: number) => HS.some((h) => t < h.at && t >= h.at - 0.25 && nowAv(t - 0.25));
 const Piece: React.FC<{ t: number; o: Ov }> = ({ t, o }) => { const c = heroCover(t); if (c >= 1) return null; const el = <Piece0 t={t} o={o} />; return c > 0 ? <AbsoluteFill style={{ opacity: 1 - c }}>{el}</AbsoluteFill> : el; };
 const Piece0: React.FC<{ t: number; o: Ov }> = ({ t, o }) => {
   if ((o as any).drop || t < o.at - 0.6 || t > o.out + 0.8 || underHero(o)) return null;
