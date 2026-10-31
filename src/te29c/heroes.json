@@ -1,0 +1,259 @@
+[
+{
+"k": "battery",
+"at": 6.28,
+"out": 10.58,
+"said": 6.28,
+"ph": "n_notebook_bateria",
+"solo": true,
+"kw": "COBALTO",
+"kw2": "en la batería de tu teléfono"
+},
+{
+"k": "tenkilos",
+"at": 18.04,
+"out": 25.04,
+"said": 14.54,
+"ph": "n_cobalto_roca",
+"solo": true,
+"kw": "7 DE CADA 10",
+"kw2": "kilos de cobalto salen del Congo"
+},
+{
+"k": "vault24",
+"at": 37.9,
+"out": 44.9,
+"said": 37.9,
+"ph": "n_minerales_mesa",
+"solo": true,
+"kw": "24 BILLONES",
+"kw2": "de dólares bajo tierra"
+},
+{
+"k": "periodic",
+"at": 157.08,
+"out": 162.08,
+"said": 157.08,
+"sp": 1.6
+},
+{
+"k": "mesaberlin",
+"at": 204.04,
+"out": 210.04,
+"said": 204.04,
+"sp": 1.167
+},
+{
+"k": "deed",
+"at": 219.28,
+"out": 225.78,
+"said": 219.28,
+"sp": 1.077,
+"ph": "n_escritura_sello",
+"solo": true,
+"kw": "PROPIEDAD PERSONAL",
+"kw2": "de un solo hombre"
+},
+{
+"k": "rubber",
+"at": 244.94,
+"out": 251.94,
+"said": 240.74,
+"ph": "n_canastas_caucho",
+"solo": true,
+"kw": "CAUCHO",
+"kw2": "para las ruedas del mundo"
+},
+{
+"k": "archivesfire",
+"at": 311.7,
+"out": 317.7,
+"said": 306.3
+},
+{
+"k": "uranium",
+"at": 344.84,
+"out": 351.84,
+"said": 341.24,
+"ph": "n_shinkolobwe",
+"solo": true,
+"kw": "URANIO",
+"kw2": "la mina de Shinkolobwe"
+},
+{
+"k": "speech",
+"at": 378.435,
+"out": 384.44,
+"said": 378.44,
+"ph": "n_microfonos_1960",
+"solo": true,
+"kw": "EL DISCURSO",
+"kw2": "frente al rey de Bélgica"
+},
+{
+"k": "splitmap",
+"at": 408.91,
+"out": 415.91,
+"said": 403.51,
+"ph": "n_bandera_katanga",
+"solo": true,
+"kw": "KATANGA",
+"kw2": "se declara independiente"
+},
+{
+"k": "tooth",
+"at": 429.035,
+"out": 435.04,
+"said": 429.04
+},
+{
+"k": "leopardhat",
+"at": 460.875,
+"out": 467.38,
+"said": 460.88,
+"ph": "n_gorro_leopardo",
+"solo": true,
+"kw": "MOBUTU",
+"kw2": "aliado en la Guerra Fría"
+},
+{
+"k": "concorde",
+"at": 494.255,
+"out": 500.75,
+"said": 494.25,
+"ph": "n_maquinas_oxidadas",
+"solo": true,
+"kw": "SE CAEN A PEDAZOS",
+"kw2": "las minas sin mantenimiento"
+},
+{
+"k": "ninearmies",
+"at": 539.77,
+"out": 547.77,
+"said": 537.98,
+"ph": "n_mapa_flechas",
+"solo": true,
+"kw": "9 PAÍSES",
+"kw2": "la Gran Guerra de África"
+},
+{
+"k": "candles",
+"at": 563.115,
+"out": 568.12,
+"said": 563.12,
+"sp": 1.4,
+"ph": "n_cruces_campo",
+"solo": true,
+"kw": "+5 MILLONES",
+"kw2": "de muertes entre 1998 y 2007"
+},
+{
+"k": "swisscheese",
+"at": 614.44,
+"out": 618.94,
+"said": 614.74,
+"sp": 1.556,
+"ph": "n_barrio_agujeros",
+"solo": true,
+"kw": "COMO UN QUESO",
+"kw2": "Kolwezi agujereada"
+},
+{
+"k": "shaft",
+"at": 636.855,
+"out": 644.86,
+"said": 636.86,
+"ph": "n_boca_pozo",
+"solo": true,
+"kw": "CAVADOS A MANO",
+"kw2": "sin estructura, sin oxígeno"
+},
+{
+"k": "stone",
+"at": 716.07,
+"out": 723.07,
+"said": 712.97,
+"ph": "n_piedra_heladera",
+"solo": true,
+"kw": "COBRE Y COBALTO",
+"kw2": "arriba de la heladera"
+},
+{
+"k": "meter",
+"at": 757.17,
+"out": 761.67,
+"said": 760.57,
+"sp": 1.556,
+"ph": "n_cinco_piedras_fila",
+"solo": true,
+"kw": "5 ERRORES"
+},
+{
+"k": "cobaltpath",
+"at": 856.35,
+"out": 864.35,
+"said": 856.35,
+"ph": "n_excavadora_mina",
+"solo": true,
+"kw": "EL CAMINO DEL COBALTO",
+"kw2": "de la roca a tu batería"
+},
+{
+"k": "roadsdeal",
+"at": 938.93,
+"out": 946.93,
+"said": 936.23
+},
+{
+"k": "bribe",
+"at": 972.29,
+"out": 979.29,
+"said": 968.09,
+"ph": "n_billetes_sobre",
+"solo": true,
+"kw": "SOBORNOS",
+"kw2": "multas de más de US$ 1.000 millones"
+},
+{
+"k": "rubaya",
+"at": 1005.85,
+"out": 1012.85,
+"said": 1004.15,
+"ph": "n_frontera_lago",
+"solo": true,
+"kw": "RUBAYA",
+"kw2": "los minerales cruzan a Ruanda"
+},
+{
+"k": "rumba",
+"at": 1028.78,
+"out": 1033.28,
+"said": 1032.18,
+"sp": 1.556,
+"ph": "n_guitarra_electrica",
+"solo": true,
+"kw": "RUMBA CONGOLEÑA",
+"kw2": "nació en Kinshasa"
+},
+{
+"k": "barge",
+"at": 1089.09,
+"out": 1096.09,
+"said": 1084.09,
+"ph": "n_zapatos_lustrados",
+"solo": true,
+"kw": "LA SAPE",
+"kw2": "vestirse bien en un país pobre"
+},
+{
+"k": "ladder",
+"at": 1176.285,
+"out": 1183.79,
+"said": 1176.29,
+"sp": 1.067,
+"ph": "n_escalera_mina",
+"solo": true,
+"kw": "LA ESCALERA",
+"kw2": "el de abajo arriesga la vida"
+}
+]
