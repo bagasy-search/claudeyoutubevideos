@@ -168,7 +168,7 @@ const NoTeSientes: React.FC<UP> = ({ d, p }) => {
 // ---- TopCinco · cinco pedestales distintos; en cada número cae su objeto con rebote: la balanza con la mochila, la nube que nieva,
 // la campana callada, el plato vacío y el termómetro que se pone rojo ----
 const T5 = ["cinco", "cuatro", "tres", "dos", "uno"];
-const Obj5: React.FC<{ i: number; tt: number; on: number }> = ({ i, tt, on }) => {
+export const Obj5: React.FC<{ i: number; tt: number; on: number }> = ({ i, tt, on }) => {
   if (i === 0) { const tl = -0.35 * on; return <group>
     <mesh position={[0, 0.16, 0]}><cylinderGeometry args={[0.01, 0.014, 0.32, 10]} />{M.brass()}</mesh>
     <group position={[0, 0.32, 0]} rotation={[0, 0, tl]}><RBox s={[0.4, 0.016, 0.02]} r={0.004}>{M.brass()}</RBox>
