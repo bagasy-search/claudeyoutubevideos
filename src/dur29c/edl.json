@@ -455,11 +455,16 @@
 {
 "a": 196.1,
 "b": 202.98,
-"k": "real",
-"t": "real",
+"k": "ilus",
+"t": "u",
 "p": {
-"v": "img/dur29c/ag/dur29c_g01_sewer_water_s2.png"
+"n": "OlorEscudo",
+"bg": "img/dur29c/ag/dur29c_g01_sewer_water_s2.png",
+"at": {
+"protegia": 40
 }
+},
+"big": true
 },
 {
 "a": 202.98,
@@ -499,18 +504,11 @@
 {
 "a": 221.58,
 "b": 232.88,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "TunelesForma",
-"bg": "img/dur29c/ag/dur29c_l13_tunnels_fork.png",
-"at": {
-"sube": 154,
-"baja": 196,
-"sale": 240
+"v": "img/dur29c/ag/dur29c_l13_tunnels_fork.png"
 }
-},
-"big": true
 },
 {
 "a": 232.88,
@@ -578,7 +576,7 @@
 "k": "real",
 "t": "real",
 "p": {
-"v": "img/dur29c/ag/dur29c_p02_carts_black.png"
+"v": "broll/dur29c/v04.mp4"
 }
 },
 {
@@ -994,17 +992,11 @@
 {
 "a": 469.109,
 "b": 490.269,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "MatoiTecho",
-"bg": "img/dur29c/ag/dur29c_e03_matoi_2.png",
-"at": {
-"techo": 143,
-"honor": 479
+"v": "img/dur29c/ag/dur29c_e03_matoi_2.png"
 }
-},
-"big": true
 },
 {
 "a": 490.269,
@@ -1116,20 +1108,23 @@
 "k": "real",
 "t": "real",
 "p": {
-"v": "img/dur29c/ag/dur29c_v01_furnace.png"
+"v": "broll/dur29c/v05.mp4",
+"rate": 0.66
 }
 },
 {
 "a": 547.269,
 "b": 553.249,
-"k": "real",
-"t": "real",
+"k": "ilus",
+"t": "u",
 "p": {
-"v": "img/dur29c/ag/dur29c_v02_pipe_glass.png",
-"o": {
-"label": "Murano, 1500"
+"n": "BurbujaVidrio",
+"bg": "img/dur29c/ag/dur29c_v02_pipe_glass.png",
+"at": {
+"bola": 125
 }
-}
+},
+"big": true
 },
 {
 "a": 553.249,
@@ -1202,17 +1197,11 @@
 {
 "a": 575.729,
 "b": 594.609,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "IslaJaula",
-"bg": "img/dur29c/ag/dur29c_v06_lagoon_boats.png",
-"at": {
-"isla": 484,
-"vigilados": 538
+"v": "img/dur29c/ag/dur29c_v06_lagoon_boats.png"
 }
-},
-"big": true
 },
 {
 "a": 594.609,
@@ -1306,17 +1295,11 @@
 {
 "a": 644.489,
 "b": 663.149,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "CanaGira",
-"bg": "img/dur29c/ag/dur29c_v12_drop.png",
-"at": {
-"quieto": 173,
-"girando": 517
+"v": "img/dur29c/ag/dur29c_v12_drop.png"
 }
-},
-"big": true
 },
 {
 "a": 663.149,
@@ -1376,20 +1359,20 @@
 {
 "a": 708.738,
 "b": 729.158,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "TopCincoCiudad",
-"bg": "img/dur29c/ag/dur29c_f03_thames_2.png",
-"at": {
-"cinco": -400,
-"cuatro": -300,
-"tres": -200,
-"dos": 6,
-"uno": 206
+"v": "img/dur29c/ag/dur29c_f03_thames_2.png",
+"o": {
+"build": {
+"lines": [
+"*2.* el agua.",
+"*1.* la velocidad."
+],
+"a": 30
 }
-},
-"big": true
+}
+}
 },
 {
 "a": 729.158,
@@ -1449,11 +1432,16 @@
 {
 "a": 749.978,
 "b": 753.998,
-"k": "real",
-"t": "real",
+"k": "ilus",
+"t": "u",
 "p": {
-"v": "img/dur29c/ag/dur29c_n06_dig_floor.png"
+"n": "BarroPalas",
+"bg": "img/dur29c/ag/dur29c_n06_dig_floor.png",
+"at": {
+"palas": 72
 }
+},
+"big": true
 },
 {
 "a": 753.998,
@@ -1517,17 +1505,11 @@
 {
 "a": 779.397,
 "b": 798.938,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "CajonCorte",
-"bg": "img/dur29c/ag/dur29c_n04_caisson_sink.png",
-"at": {
-"empuja": 153,
-"veinticuatro": 513
+"v": "img/dur29c/ag/dur29c_n04_caisson_sink.png"
 }
-},
-"big": true
 },
 {
 "a": 798.938,
@@ -1607,17 +1589,11 @@
 {
 "a": 847.478,
 "b": 865.298,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "SubidaLenta",
-"bg": "img/dur29c/ag/dur29c_n11_stairs_exit_2.png",
-"at": {
-"corrian": 176,
-"viejos": 228
+"v": "img/dur29c/ag/dur29c_n11_stairs_exit_2.png"
 }
-},
-"big": true
 },
 {
 "a": 865.298,
@@ -2070,17 +2046,11 @@
 {
 "a": 1109.746,
 "b": 1127.546,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "CorazonEstomago",
-"bg": "img/dur29c/ag/dur29c_c12_inspector.png",
-"at": {
-"corazon": 400,
-"estomago": 485
+"v": "img/dur29c/ag/dur29c_c12_inspector.png"
 }
-},
-"big": true
 },
 {
 "a": 1127.546,
@@ -2094,11 +2064,16 @@
 {
 "a": 1131.326,
 "b": 1141.606,
-"k": "real",
-"t": "real",
+"k": "ilus",
+"t": "u",
 "p": {
-"v": "img/dur29c/ag/dur29c_c03_knife_2.png"
+"n": "CuchilloFilo",
+"bg": "img/dur29c/ag/dur29c_c03_knife_2.png",
+"at": {
+"ti": 166
 }
+},
+"big": true
 },
 {
 "a": 1141.606,
@@ -2172,11 +2147,16 @@
 {
 "a": 1163.746,
 "b": 1173.806,
-"k": "real",
-"t": "real",
+"k": "ilus",
+"t": "u",
 "p": {
-"v": "img/dur29c/ag/dur29c_k10_shafts_lean.png"
+"n": "LluviaVaras",
+"bg": "img/dur29c/ag/dur29c_k10_shafts_lean.png",
+"at": {
+"varas": 31
 }
+},
+"big": true
 },
 {
 "a": 1173.806,
@@ -2226,16 +2206,11 @@
 {
 "a": 1188.666,
 "b": 1200.066,
-"k": "ilus",
-"t": "u",
+"k": "real",
+"t": "real",
 "p": {
-"n": "HombreMasRapido",
-"bg": "img/dur29c/ag/dur29c_k06_capital.png",
-"at": {
-"corriendo": 295
+"v": "img/dur29c/ag/dur29c_k06_capital.png"
 }
-},
-"big": true
 },
 {
 "a": 1200.066,

@@ -7,6 +7,7 @@ import * as K from "./comp";
 import * as CA from "./c3a";
 import * as CB from "./c3b";
 import * as CC from "./c3c";
+import * as CD from "./c3d";
 import { F, INK, RED, ORA, GOLD, SAND, Scene, Tag, Shadow, Motes, Fig, ez, lin, sp, rnd, sf, at, cl } from "./ukit";
 
 type UP = { d: number; p: any };
@@ -739,7 +740,7 @@ const EligeOficio: React.FC<UP> = ({ d, p }) => {
 };
 
 const MAP: Record<string, React.FC<UP>> = { PozoCorte, CuadroVelado, RacionPan, TrineoFriccion, MarcaCuadrilla, MontanaQueso, HiloTierra, MuroCapas, RitmoPisones, RutaPostas, Odometro400, Fajado, CincoSacos, SinRueda, MecapalVector, CadenaRelevos, Altimetro, SemanaMina, MercurioGotas, RelojesArena, FrascoMillones, PiernaCebo, ContraCorriente, RepinRevelado, RelojDoce, PiramideOficios, TironUna, EligeOficio };
-const MAP3: Record<string, React.FC<UP>> = { ...CA.OVR, ...CB.OVR, ...CC.OVR };
+const MAP3: Record<string, React.FC<UP>> = { ...CA.OVR, ...CB.OVR, ...CC.OVR, ...CD.OVR };
 export const Uniq: React.FC<{ n: string; d: number; p: any; o?: any }> = ({ n, d, p }) => {
   const C = MAP3[n] ?? MAP[n];
   if (!C) return <AbsoluteFill style={{ background: "#300" }} />;
