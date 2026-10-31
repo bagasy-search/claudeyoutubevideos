@@ -121,9 +121,11 @@ const SigloDebajo: React.FC<UP> = ({ d, p }) => {
 const CanaletaCarbon: React.FC<UP> = ({ d, p }) => {
   const aP = sec(p, "pizarra", 2.0), SL = -0.32;
   return <U3 d={d} bg={p.bg} ground={null} mode="wipe" sky="#3a3026" key1={[-1.2, 2.4, 1.6]}
-    cam={{ at: [0, 0.5, 0], az: [-0.5, -0.34], el: [0.46, 0.4], r: [1.25, 1.1], fov: 36 }}>{(tt) => {
+    cam={{ at: [0, 0.62, 0], az: [-0.5, -0.32], el: [0.34, 0.28], r: [1.7, 1.5], fov: 36 }}>{(tt) => {
     const pick = (tt - aP) * 0.9;
     return <>
+      <mesh position={[0, -0.01, 0]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[4, 3]} /><meshStandardMaterial map={dirtT([34, 30, 28])} roughness={0.8} metalness={0.2} /></mesh>
+      {Array.from({ length: 70 }, (_, i) => <Lump key={"b" + i} i={i + 400} p={[(rn(i, 6) - 0.5) * 2.6, 0.01, 0.3 + rn(i, 7) * 0.7]} s={1.4 + rn(i, 8) * 1.4} col="#141416" shine />)}
       <group rotation={[0, 0, SL]} position={[0, 0.45, 0]}>
         <RBox s={[3.0, 0.03, 0.42]} r={0.005} p={[0, -0.02, 0]}>{M.wood({ base: [90, 66, 44], rx: 6 })}</RBox>
         {[-1, 1].map((s) => <RBox key={s} s={[3.0, 0.12, 0.025]} r={0.004} p={[0, 0.04, s * 0.21]}>{M.wood({ base: [80, 58, 38], rx: 6 })}</RBox>)}
@@ -313,19 +315,19 @@ const SPOT10 = [[0, 0], [-0.5, 1], [0.5, 1], [-1, 2], [0, 2], [1, 2], [-1.5, 3],
 const FosoBolos: React.FC<UP> = ({ d, p }) => {
   const D = d / 30, aC = Math.min(sec(p, "crash", 2.0), D - 1.6);
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="wipe" key1={[-0.8, 2.4, 1.6]} backDim={0.6}
-    cam={{ at: [0, 0.12, -0.45], az: [0.2, 0.42], el: [0.16, 0.12], r: [1.3, 1.1], fov: 36 }}>{(tt) => {
+    cam={{ at: [-0.12, 0.12, -0.45], az: [0.22, 0.4], el: [0.2, 0.16], r: [1.05, 0.9], fov: 36 }}>{(tt) => {
     const ball = eio(tt, aC - 1.0, aC);
     return <>
-      <RBox s={[0.5, 0.02, 3.0]} r={0.004} p={[0, -0.01, 0.9]}><meshPhysicalMaterial map={tex.wood(1, 8, [200, 150, 96])} roughness={0.35} clearcoat={0.4} clearcoatRoughness={0.3} /></RBox>
+      <mesh position={[0, -0.01, 0.9]}><boxGeometry args={[0.5, 0.02, 3.0]} /><meshPhysicalMaterial map={tex.wood(1, 8, [200, 150, 96])} roughness={0.45} clearcoat={0.3} clearcoatRoughness={0.4} /></mesh>
       <RBox s={[1.8, 0.7, 0.06]} r={0.01} p={[0, 0.25, -1.0]}>{M.wood({ base: [60, 40, 26] })}</RBox>
-      {[-1, 1].map((s) => <mesh key={s} position={[s * 0.31, -0.035, 0.9]} rotation={[0, 0, 0]}><boxGeometry args={[0.1, 0.03, 3.0]} /><meshStandardMaterial color="#1a1614" /></mesh>)}
+      {[-1, 1].map((s) => <mesh key={s} position={[s * 0.315, -0.055, 0.9]} rotation={[0, 0, 0]}><boxGeometry args={[0.11, 0.03, 3.0]} /><meshStandardMaterial color="#1a1614" /></mesh>)}
       <mesh position={[0, -0.12, -0.7]}><boxGeometry args={[1.0, 0.2, 0.5]} /><meshStandardMaterial color="#0e0c0a" /></mesh>
       {SPOT10.map(([c, r], i) => { const x = c * 0.06, z = -0.35 - r * 0.06; const k = cl((tt - aC - 0.02 * r) / 0.9), hit = tt > aC + 0.02 * r;
         const vx = (rn(i, 1) - 0.5) * 1.4 + c * 0.3, vz = -0.4 - rn(i, 2) * 0.6, vy = 0.6 + rn(i, 3) * 0.6, t = hit ? k * 0.9 : 0;
         return <Pin key={i} p={[x + vx * t, Math.max(0, vy * t - 1.2 * t * t), z + vz * t]} rot={[hit ? -k * (3 + rn(i, 4) * 4) : 0, 0, hit ? k * (rn(i, 5) - 0.5) * 6 : 0]} />; })}
       <mesh position={[0, 0.06, lerp(0.9, -0.36, ball) - (tt > aC ? (tt - aC) * 0.5 : 0)]} rotation={[-ball * 30, 0, 0]}><sphereGeometry args={[0.06, 32, 24]} /><meshPhysicalMaterial color="#121214" roughness={0.12} clearcoat={1} /></mesh>
       {/* el chico en el hueco del costado */}
-      <group position={[-0.45, -0.02, -0.55]}><Stickman escala={0.1} rotY={60} guion={[{ t: 0, accion: "idle", expr: "nervioso" }, { t: aC - 0.1, accion: "asustarse", expr: "asustado" }] as any} semilla={81} contacto={0.3} colorContacto="#0a0806" color="#e8e4dc" /></group>
+      <group position={[-0.45, -0.02, -0.55]}><Stickman escala={0.16} rotY={60} guion={[{ t: 0, accion: "idle", expr: "nervioso" }, { t: aC - 0.1, accion: "asustarse", expr: "asustado" }] as any} semilla={81} contacto={0.3} colorContacto="#0a0806" color="#e8e4dc" /></group>
       <spotLight position={[0, 1.6, 0.2]} angle={0.75} penumbra={0.8} intensity={10} distance={4} color="#ffe0b0" />
       <hemisphereLight args={["#ffe8c8", "#2a2018", 0.4]} />
       <pointLight position={[0, 0.2, -0.3]} intensity={1.5 * Math.exp(-Math.max(0, tt - aC) * 4) * (tt > aC ? 1 : 0)} distance={1.0} color="#fff0d0" />

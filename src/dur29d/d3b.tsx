@@ -316,22 +316,22 @@ const TreintaAnios: React.FC<UP> = ({ d, p }) => {
   const D = d / 30, aL = Math.min(sec(p, "ley", D - 1.6), D - 1.0), R = Math.max(1, aL - 0.3);
   const yr = (tt: number) => Math.round(lerp(1952, 1990, eio(tt, 0.3, R)));
   return <U3 d={d} bg={p.bg} ground={null} floor="wood" mode="wipe" key1={[-1.0, 2.4, 1.6]} backDim={0.3}
-    cam={{ at: [0, 0.35, 0], az: [-0.3, -0.1], el: [0.1, 0.1], r: [1.5, 1.35], fov: 36 }}
+    cam={{ at: [0.08, 0.36, 0], az: [-0.26, -0.1], el: [0.1, 0.1], r: [1.6, 1.48], fov: 36 }}
     over={(tt) => <Drums v={yr(tt)} n={4} x={1330} y={120} s={1.0} />}>{(tt) => {
-    const k = eio(tt, 0.3, R), col = new THREE.Color("#d8a870").lerp(new THREE.Color("#7a6e64"), k);
+    const k = eio(tt, 0.3, R), col = new THREE.Color("#c8804a").lerp(new THREE.Color("#86684e"), k);
     return <>
       <RBox s={[2.2, 1.2, 0.04]} r={0.01} p={[0, 0.6, -0.4]}><meshStandardMaterial map={dirtT([200, 180, 150])} roughness={0.95} /></RBox>
       {/* el taco del calendario y las hojas que vuelan */}
       <RBox s={[0.3, 0.38, 0.03]} r={0.006} p={[-0.45, 0.78, -0.36]}><meshStandardMaterial color="#f4eee0" /></RBox>
-      {Array.from({ length: 16 }, (_, i) => { const a = 0.3 + i * (R - 0.3) / 16, ph = cl((tt - a) / 0.9); return <mesh key={i} position={[-0.45 + ph * (0.3 + rn(i, 1) * 0.6), 0.78 + ph * (0.2 - rn(i, 2) * 0.5), -0.33 + ph * 0.5]} rotation={[ph * 2, ph * 3 * (rn(i, 3) - 0.5), ph * 2]} visible={ph > 0 && ph < 1}>
-        <planeGeometry args={[0.28, 0.36]} /><meshStandardMaterial color="#f8f2e4" side={THREE.DoubleSide} /></mesh>; })}
+      {Array.from({ length: 16 }, (_, i) => { const a = 0.3 + i * (R - 0.3) / 16, ph = cl((tt - a) / 0.9); return <mesh key={i} position={[-0.45 + ph * (0.3 + rn(i, 1) * 0.6), 0.78 + ph * (0.2 - rn(i, 2) * 0.5), -0.33 + ph * 0.5]} rotation={[0, 0, ph * 2.4 * (rn(i, 3) - 0.5)]} visible={ph > 0 && ph < 1}>
+        <planeGeometry args={[0.28, 0.36]} /><meshStandardMaterial color="#f8f2e4" side={THREE.DoubleSide} transparent opacity={1 - ph * ph} /></mesh>; })}
       <group position={[0.2, 0, 0]}>
         <RBox s={[0.2, 0.02, 0.2]} r={0.004} p={[0, 0.22, 0]}>{M.wood({ base: [120, 84, 50] })}</RBox>
         <RBox s={[0.2, 0.25, 0.02]} r={0.004} p={[0, 0.34, -0.1]}>{M.wood({ base: [120, 84, 50] })}</RBox>
         <group position={[0, 0.0, 0.0]}><Stickman escala={0.14} rotY={-20} guion={[{ t: 0, accion: "sentarse", expr: "neutral" }, { t: R * 0.6, accion: "sentarse", expr: "triste" }] as any} semilla={30} contacto={0} color={`#${col.getHexString()}`} /></group>
       </group>
-      <RBox s={[0.4, 0.02, 0.3]} r={0.006} p={[0.65, 0.3, 0.05]}>{M.wood({ base: [140, 100, 60] })}</RBox>
-      <group position={[0.65, 0.315 + fallY(tt, aL, 0.5), 0.05]} scale={tt > aL - 0.5 ? 1 : 0.001} rotation={[0, 0.3, 0]}>
+      <RBox s={[0.4, 0.02, 0.3]} r={0.006} p={[0.52, 0.3, 0.05]}>{M.wood({ base: [140, 100, 60] })}</RBox>
+      <group position={[0.52, 0.315 + fallY(tt, aL, 0.5), 0.05]} scale={tt > aL - 0.5 ? 1 : 0.001} rotation={[0, 0.3, 0]}>
         <RBox s={[0.2, 0.008, 0.12]} r={0.002}><meshStandardMaterial color="#e8dcc0" /></RBox></group>
       <pointLight position={[0.4, 0.9, 0.5]} intensity={1.4} distance={2.4} color="#ffe0b0" />
     </>;
@@ -453,7 +453,7 @@ const CallesPilotos: React.FC<UP> = ({ d, p }) => {
 const PanelMemoria: React.FC<UP> = ({ d, p }) => {
   const D = d / 30, aM = sec(p, "memoria", 1.0), n = 24, step = Math.max(0.08, (D - aM - 1.0) / n);
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="wipe" key1={[-1.0, 2.4, 1.6]} backDim={0.35}
-    cam={{ at: [0.12, 0.42, 0], az: [-0.22, -0.06], el: [0.16, 0.12], r: [1.35, 1.15], fov: 36 }}>{(tt) => {
+    cam={{ at: [0.12, 0.4, 0], az: [-0.2, -0.1], el: [0.16, 0.12], r: [1.5, 1.38], fov: 36 }}>{(tt) => {
     const cur = Math.min(n - 1, Math.max(0, Math.floor((tt - aM) / step)));
     return <>
       <RBox s={[1.2, 0.5, 0.06]} r={0.02} p={[0, 0.45, -0.3]} rot={[-0.25, 0, 0]}><meshStandardMaterial color="#4a5058" metalness={0.3} roughness={0.6} /></RBox>
@@ -463,7 +463,7 @@ const PanelMemoria: React.FC<UP> = ({ d, p }) => {
           <mesh position={[0, 0.02 * (1 - 2 * on), 0.03]} rotation={[0.5 - 1.0 * on, 0, 0]}><cylinderGeometry args={[0.005, 0.005, 0.05, 8]} />{M.chrome()}</mesh>
           <mesh position={[0.035, 0.03, 0.012]}><sphereGeometry args={[0.014, 12, 10]} /><meshStandardMaterial color={on > 0.5 ? "#50ff80" : "#4a1a1a"} emissive={on > 0.5 ? "#40ff70" : "#000"} emissiveIntensity={2.6 * on} toneMapped={false} /></mesh>
         </group>; })}
-      <group position={[0.62, 0, 0.1]}><Stickman escala={0.15} rotY={-120} guion={[{ t: 0, accion: "sentarse", expr: "decidido" }]} semilla={44} contacto={0} color="#c8ccd0" /></group>
+      <group position={[0.48, 0, 0.12]}><Stickman escala={0.15} rotY={-130} guion={[{ t: 0, accion: "sentarse", expr: "decidido" }]} semilla={44} contacto={0} color="#c8ccd0" /></group>
       {/* la mano que toca */}
       {tt > aM && <mesh position={[((cur % 8) - 3.5) * 0.12 + 0.02, 0.6 - Math.floor(cur / 8) * 0.13 - 0.03, -0.18 + (Math.floor(cur / 8) * 0.13) * 0.25]}><sphereGeometry args={[0.03, 14, 10]} /><meshStandardMaterial color="#c8ccd0" roughness={0.6} /></mesh>}
       <pointLight position={[0, 0.5, 0.3]} intensity={0.3 + 1.2 * cl((tt - aM) / (n * step))} distance={1.4} color="#60f090" />
