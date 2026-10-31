@@ -423,7 +423,7 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
   const R = iris * 1500;
   const mask = `radial-gradient(circle at 50% 52%, #000 ${R}px, transparent ${R + 520}px)`;
   const hdr = cl(phys(t, at + 0.35, 6, 0.7)) * (1 - eIn(t, out - 0.4, out + 0.4));
-  return <AbsoluteFill style={{ opacity: cl(iris * 2.2), fontFamily: FONT, color: G.txt, WebkitMaskImage: mask, maskImage: mask } as React.CSSProperties}>
+  return <AbsoluteFill style={{ opacity: cl(iris * 2.2), fontFamily: FONT, color: G.txt, ...(iris < 0.995 ? { WebkitMaskImage: mask, maskImage: mask } : {}) } as React.CSSProperties}> {/* 31-oct: la máscara sólo en el iris; con preserve-3d el Chrome del farm borraba el carrusel 1 cuadro */}
     <AbsoluteFill style={{ background: `radial-gradient(ellipse 70% 60% at 50% 46%, ${c}22, #0b0b0d 62%), #0b0b0d` }} />
     <div style={{ position: "absolute", left: 0, right: 0, top: 860, height: 220, background: "linear-gradient(180deg, rgba(255,255,255,.04), transparent)" }} />
     <div style={{ display: "none", position: "absolute", left: 110, top: 86, opacity: hdr, transform: `translateX(${(1 - hdr) * -40}px)` }}>
