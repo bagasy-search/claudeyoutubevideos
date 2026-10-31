@@ -64,13 +64,15 @@ export const Casco: React.FC<{ i: number }> = ({ i }) => {
 export const OchoCascos3D: React.FC<UP> = ({ d, p }) => {
   const aO = sec(p, "ocho", 0.3);
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="wipe" key1={[-1.0, 2.4, 2.0]}
-    cam={{ at: [-0.6, 0.42, 0], at1: [0.6, 0.42, 0], az: [-0.12, 0.12], el: [0.3, 0.22], r: [1.55, 1.45], fov: 36 }}>{(tt) => <>
+    cam={{ at: [0, 0.46, 0], az: [-0.08, 0.06], el: [0.2, 0.15], r: [2.8, 2.55], fov: 36 }}>{(tt) => <>
     <RBox s={[3.0, 0.05, 0.42]} r={0.01} p={[0, 0.24, 0]}><meshStandardMaterial map={tex.wood(4, 1, [96, 60, 32])} roughness={0.7} /></RBox>
     <RBox s={[3.0, 0.7, 0.04]} r={0.01} p={[0, 0.55, -0.21]}><meshStandardMaterial map={tex.wood(4, 1, [70, 44, 24])} roughness={0.8} /></RBox>
     {CASCOS.map((y, i) => { const x = -1.26 + i * 0.36, a = aO + 0.1 + i * 0.28;
-      return <group key={i} position={[x, 0.265 + fallY(tt, a, 1.0), 0]} visible={tt > a - 0.25}>
-        <group scale={1.35}><Casco i={i} /></group>
-        <Plate k={"casco" + i} txt={y} w={0.26} h={0.07} p={[0, -0.005, 0.215]} rot={[-0.2, 0, 0]} />
+      return <group key={i}>
+        <mesh position={[x, 0.3, 0]}><cylinderGeometry args={[0.1, 0.12, 0.07, 28]} /><meshStandardMaterial map={dirtT([150, 140, 126])} roughness={0.9} /></mesh>
+        <group position={[x, 0.335 + fallY(tt, a, 1.0), 0]} visible={tt > a - 0.25}><group scale={1.35}><Casco i={i} /></group></group>
+        <group position={[x, 0.265, 0]}>
+        <Plate k={"casco" + i} txt={y} w={0.3} h={0.085} p={[0, -0.005, 0.215]} rot={[-0.2, 0, 0]} /></group>
       </group>; })}
   </>}</U3>;
 };
@@ -80,7 +82,7 @@ export const OchoCascos3D: React.FC<UP> = ({ d, p }) => {
 export const AsientoApodo3D: React.FC<UP> = ({ d, p }) => {
   const aA = sec(p, "apodo", 1.6);
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="iris" key1={[0.4, 3.0, 0.6]}
-    cam={{ at: [0, 0.62, 0], az: [-0.5, -0.2], el: [0.22, 0.14], r: [2.1, 1.8], fov: 34 }}>{(tt) => {
+    cam={{ at: [0, 0.66, 0], az: [-0.5, -0.2], el: [0.18, 0.1], r: [1.5, 1.28], fov: 34 }}>{(tt) => {
     const sw = 0.25 * Math.sin(tt * 2 * PI * 0.45) * Math.exp(-0.15 * Math.max(0, tt - aA));
     return <>
       {/* el asiento: chapa con agujeros, caño, burbuja de plexiglás alrededor */}
@@ -93,7 +95,7 @@ export const AsientoApodo3D: React.FC<UP> = ({ d, p }) => {
       {/* la etiqueta colgando de un hilo */}
       <group position={[0.15, 0.82, 0.02]} rotation={[0, 0, sw]}>
         <mesh position={[0, -0.08, 0]}><cylinderGeometry args={[0.002, 0.002, 0.16, 6]} /><meshStandardMaterial color="#d8d0c0" /></mesh>
-        <group position={[0, -0.2, 0]} scale={pop(tt, aA)}><Plate k="apodo" txt="¿APODO?" w={0.22} h={0.1} p={[0, 0, 0]} /></group>
+        <group position={[0, -0.2, 0]} scale={pop(tt, aA)}><Plate k="apodo" txt="¿APODO?" w={0.3} h={0.13} p={[0, 0, 0]} /></group>
       </group>
       <spotLight position={[0, 2.4, 0.6]} angle={0.32} penumbra={0.7} intensity={18} distance={4} color="#dfe6f0" />
       {Array.from({ length: 30 }, (_, i) => <mesh key={i} position={[(rn(i, 1) - 0.5) * 1.0, ((rn(i, 2) + tt * 0.03 * (0.5 + rn(i, 3))) % 1) * 1.4, (rn(i, 4) - 0.5) * 0.8]}><sphereGeometry args={[0.004, 6, 6]} />{M.glow({ col: "#e8e4dc", op: 0.5 })}</mesh>)}
@@ -107,7 +109,7 @@ export const PesoHoplita3D: React.FC<UP> = ({ d, p }) => {
   const aK = sec(p, "kilos", 2.6), ts = [0.3, 0.75, 1.2, 1.6, 2.0].map((x) => Math.min(x * aK / 2.6, aK));
   const kg = (tt: number) => [3, 8, 2, 3, 9].reduce((s, w, i) => s + w * cl((tt - ts[i]) / 0.3), 0) + 5 * eio(tt, aK, aK + 0.8);
   return <U3 d={d} bg={p.bg} ground={null} floor="wood" mode="drop" key1={[-1.2, 2.4, 1.6]}
-    cam={{ at: [0, 0.5, 0], az: [-0.3, 0.1], el: [0.16, 0.1], r: [2.0, 1.75], fov: 34 }}
+    cam={{ at: [-0.1, 0.62, 0], az: [-0.3, 0.1], el: [0.16, 0.1], r: [2.4, 2.1], fov: 34 }}
     over={(tt) => <Drums v={Math.round(kg(tt))} n={2} x={1330} y={140} s={1.3} unit="kg" />}>{(tt) => {
     const tilt = -0.32 * cl(kg(tt) / 30);
     const pan = (x: number) => [x * Math.cos(tilt), 0.86 + x * Math.sin(tilt)];
@@ -124,11 +126,11 @@ export const PesoHoplita3D: React.FC<UP> = ({ d, p }) => {
       <mesh position={[rx, ry - 0.24, 0]} scale={[1, 0.8, 1]}><sphereGeometry args={[0.12, 20, 14]} /><meshStandardMaterial color="#8a7a5a" roughness={1} /></mesh>
       {/* el equipo cae al platillo izquierdo */}
       <group position={[lx, ly - 0.285, 0]}>
-        <group position={[0.02, 0.05 + fallY(tt, ts[4], 1.2), 0]} visible={tt > ts[4] - 0.3}><mesh rotation={[PI / 2 - 0.1, 0, 0]}><cylinderGeometry args={[0.2, 0.2, 0.03, 40]} />{M.brass({ col: "#a07a30" })}</mesh></group>
+        <group position={[0.02, 0.05 + fallY(tt, ts[4], 1.2), 0]} visible={tt > ts[4] - 0.3}><group rotation={[PI / 2 - 0.1, 0, 0]}><mesh><cylinderGeometry args={[0.2, 0.2, 0.03, 40]} />{M.brass({ col: "#c89848" })}</mesh><mesh position={[0, 0.017, 0]} rotation={[-PI / 2, 0, 0]}><ringGeometry args={[0.12, 0.15, 40]} /><meshStandardMaterial color="#8a2a1c" roughness={0.8} side={THREE.DoubleSide} /></mesh><mesh position={[0, 0.02, 0]} scale={[1, 0.5, 1]}><sphereGeometry args={[0.045, 18, 10]} />{M.brass({ col: "#e0b060" })}</mesh></group></group>
         <group position={[-0.04, 0.09 + fallY(tt, ts[1], 1.2), 0]} visible={tt > ts[1] - 0.3}><mesh geometry={latheG("coraza", [[0.0, 0], [0.09, 0.0], [0.1, 0.08], [0.085, 0.16], [0.05, 0.18]], 32)} scale={[1, 1, 0.7]} rotation={[0, 0, PI / 2]}>{M.brass({ col: "#b89040" })}</mesh></group>
-        <group position={[0.08, 0.12 + fallY(tt, ts[0], 1.2), 0.04]} visible={tt > ts[0] - 0.3}><mesh scale={[1, 1.2, 1.1]}><sphereGeometry args={[0.07, 24, 14, 0, 2 * PI, 0, PI * 0.6]} />{M.brass({ col: "#a8823a" })}</mesh></group>
+        <group position={[0.08, 0.12 + fallY(tt, ts[0], 1.2), 0.04]} visible={tt > ts[0] - 0.3}><group scale={1.0}><Casco i={0} /></group></group>
         {[-1, 1].map((s) => <group key={s} position={[-0.1, 0.04 + fallY(tt, ts[2], 1.2), s * 0.07]} rotation={[0, 0, PI / 2]} visible={tt > ts[2] - 0.3}><mesh><cylinderGeometry args={[0.025, 0.03, 0.14, 16, 1, true]} />{M.brass({ col: "#b08a3a" })}</mesh></group>)}
-        <group position={[0, 0.06 + fallY(tt, ts[3], 1.2), -0.12]} rotation={[0, 0.3, PI / 2]} visible={tt > ts[3] - 0.3}><mesh><cylinderGeometry args={[0.008, 0.008, 1.1, 8]} /><meshStandardMaterial map={tex.wood(1, 4, [120, 84, 50])} /></mesh></group>
+        <group position={[0, 0.06 + fallY(tt, ts[3], 1.2), -0.12]} rotation={[0, 0.3, PI / 2]} visible={tt > ts[3] - 0.3}><mesh><cylinderGeometry args={[0.012, 0.012, 1.1, 8]} /><meshStandardMaterial map={tex.wood(1, 4, [120, 84, 50])} /></mesh><mesh position={[0, 0.6, 0]}><coneGeometry args={[0.03, 0.12, 10]} />{M.steel()}</mesh></group>
       </group>
     </>;
   }}</U3>;
@@ -137,10 +139,10 @@ export const PesoHoplita3D: React.FC<UP> = ({ d, p }) => {
 // ---- FalangeEscudos · «Cada escudo protegía tu lado izquierdo y la mitad del compañero… si uno se iba, se abría un agujero»: la fila
 // de escudos superpuestos; el del medio se va y queda el hueco rojo en la pared ----
 export const FalangeEscudos3D: React.FC<UP> = ({ d, p }) => {
-  const D = d / 30, aH = Math.min(sec(p, "agujero", 2.4), D - 1.2);
+  const D = d / 30, aH = Math.min(sec(p, "agujero", 2.4), D - 1.8);
   return <U3 d={d} bg={p.bg} ground={[176, 150, 110]} mode="drop" key1={[-1.6, 2.6, 2.0]}
-    cam={{ at: [0, 0.3, 0], az: [-0.45, -0.25], el: [0.16, 0.12], r: [2.4, 2.1], fov: 34 }}>{(tt) => {
-    const go = eio(tt, aH - 0.6, aH + 0.4), gap = eio(tt, aH, aH + 0.5);
+    cam={{ at: [0, 0.28, 0], az: [-0.32, -0.22], el: [0.14, 0.1], r: [1.9, 1.6], fov: 34 }}>{(tt) => {
+    const sp = eio(tt, aH + 0.3, aH + 1.0), go = eio(tt, aH - 0.6, aH + 0.4), gap = eio(tt, aH, aH + 0.5);
     return <>
       {Array.from({ length: 7 }, (_, i) => { const x = -0.9 + i * 0.3, mid = i === 3, z = mid ? -0.9 * go : 0;
         return <group key={i} position={[x, 0, z]}>
@@ -156,6 +158,11 @@ export const FalangeEscudos3D: React.FC<UP> = ({ d, p }) => {
       {/* el hueco: luz roja donde estaba el escudo */}
       <mesh position={[0.0, 0.22, 0.12]}><planeGeometry args={[0.2, 0.36]} /><meshBasicMaterial color="#e0442a" transparent opacity={0.35 * gap * (0.75 + 0.25 * Math.sin(tt * 2 * PI * 0.8))} depthWrite={false} toneMapped={false} /></mesh>
       <pointLight position={[0, 0.3, 0.4]} intensity={1.6 * gap} distance={1.2} color="#ff5a3a" />
+      {/* la lanza enemiga que entra por el hueco */}
+      <group position={[0.0, 0.28, 1.4 - 1.3 * sp]} rotation={[PI / 2, 0, 0]} visible={sp > 0.01}>
+        <mesh><cylinderGeometry args={[0.008, 0.008, 1.2, 8]} /><meshStandardMaterial map={tex.wood(1, 4, [100, 70, 40])} /></mesh>
+        <mesh position={[0, -0.64, 0]} rotation={[PI, 0, 0]}><coneGeometry args={[0.02, 0.09, 10]} />{M.steel()}</mesh>
+      </group>
     </>;
   }}</U3>;
 };
@@ -165,14 +172,14 @@ export const FalangeEscudos3D: React.FC<UP> = ({ d, p }) => {
 export const Othismos3D: React.FC<UP> = ({ d, p }) => {
   const aS = sec(p, "medio", 2.0);
   return <U3 d={d} bg={p.bg} ground={[170, 146, 108]} mode="split" key1={[-1.2, 2.8, 1.8]}
-    cam={{ at: [0, 0.25, 0], az: [-0.15, 0.12], el: [0.3, 0.22], r: [2.6, 2.2], fov: 34 }}>{(tt) => {
+    cam={{ at: [-0.1, 0.2, 0], az: [-0.2, 0.1], el: [0.2, 0.14], r: [1.9, 1.6], fov: 34 }}>{(tt) => {
     const sq = eio(tt, aS, aS + 0.6), push = 0.02 * Math.sin(tt * 2 * PI * 0.9);
     return <>
       {[-1, 1].map((side) => Array.from({ length: 12 }, (_, i) => { const row = Math.floor(i / 3), col = i % 3, x = side * (0.12 + row * 0.2) + side * push, z = -0.3 + col * 0.3;
         const you = side === -1 && row === 0 && col === 1;
         return <group key={side + "_" + i} position={[x, 0, z]} scale={you ? [1 - 0.18 * sq, 1, 1] : 1}>
           <Stickman escala={0.11} rotY={side === -1 ? 90 : -90} guion={[{ t: 0, accion: "empujar", expr: you ? "asustado" : "enojado" }]} semilla={50 + i + (side > 0 ? 20 : 0)} contacto={you ? 0.9 : 0.3}
-            colorContacto={you ? "#d8a03a" : "#2a1a10"} color={side > 0 ? "#6a625a" : undefined} />
+            colorContacto={you ? "#d8a03a" : "#2a1a10"} color={you ? "#c8442a" : side > 0 ? "#6a625a" : undefined} />
         </group>; }))}
       {/* el dorado debajo de ti */}
       <mesh position={[-0.12, 0.004, 0]} rotation={[-PI / 2, 0, 0]}><ringGeometry args={[0.08, 0.1, 40]} />{M.glow({ col: "#f0b84a", op: 0.4 + 0.5 * sq })}</mesh>
@@ -186,8 +193,7 @@ export const CascoVision3D: React.FC<UP> = ({ d, p }) => {
   const aO = sec(p, "olla", 2.0);
   const temp = (tt: number) => 28 + 30 * eio(tt, 0.3, aO + 1.4);
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="iris" key1={[0.6, 3.0, 1.2]}
-    cam={{ at: [0, 0.5, 0], az: [-0.55, -0.2], el: [0.12, 0.06], r: [1.6, 1.35], fov: 34 }}
-    over={(tt) => <Drums v={Math.round(temp(tt))} n={2} x={1330} y={140} s={1.3} unit="°C" />}>{(tt) => {
+    cam={{ at: [0.1, 0.3, 0], az: [-0.55, -0.2], el: [0.12, 0.06], r: [1.45, 1.2], fov: 34 }}>{(tt) => {
     const h = eio(tt, 0.3, aO + 1.4);
     return <>
       <mesh position={[0, 0.03, 0]}><cylinderGeometry args={[0.2, 0.24, 0.06, 32]} /><meshStandardMaterial map={dirtT([170, 160, 146])} roughness={0.95} /></mesh>
@@ -205,6 +211,10 @@ export const CascoVision3D: React.FC<UP> = ({ d, p }) => {
         <mesh position={[0, 0.02, 0]}><sphereGeometry args={[0.045, 20, 16]} /><meshStandardMaterial color="#c0281e" roughness={0.3} /></mesh>
         <mesh position={[0, 0.04 + 0.27 * (0.2 + 0.8 * h), 0]}><cylinderGeometry args={[0.012, 0.012, Math.max(0.01, 0.54 * (0.2 + 0.8 * h)), 12]} /><meshStandardMaterial color="#c0281e" roughness={0.3} emissive="#801010" emissiveIntensity={0.3} /></mesh>
       </group>
+      {/* el vapor que sale por las ranuras cuando se calienta */}
+      {Array.from({ length: 18 }, (_, i) => { const ph = (tt * 0.45 + rn(i, 1)) % 1; return <mesh key={"v" + i} position={[(rn(i, 2) - 0.5) * 0.16, 0.28 + ph * 0.5, 0.22 + ph * 0.05]} scale={0.5 + ph * 1.4}><sphereGeometry args={[0.03, 10, 8]} /><meshBasicMaterial color="#f0ece4" transparent opacity={0.3 * (1 - ph) * cl((h - 0.35) * 2)} depthWrite={false} /></mesh>; })}
+      {/* las voces de afuera: ondas que llegan y se apagan contra el bronce */}
+      {[0, 1, 2].map((i) => { const ph = (tt * 0.5 + i / 3) % 1; return <mesh key={"o" + i} position={[-0.95 + ph * 0.7, 0.26, 0.05]} rotation={[0, PI / 2, 0]}><ringGeometry args={[0.18 * (1 - ph * 0.6), 0.19 * (1 - ph * 0.6) + 0.006, 40]} /><meshBasicMaterial color="#e8e0d0" transparent opacity={0.55 * (1 - ph)} depthWrite={false} side={THREE.DoubleSide} /></mesh>; })}
       {/* el sol de verano */}
       <mesh position={[-1.2, 2.2, -2.0]}><sphereGeometry args={[0.25, 24, 16]} />{M.glow({ col: "#fff0c0" })}</mesh>
       <directionalLight position={[-1.2, 2.2, -0.5]} intensity={1.2 + 0.8 * h} color="#ffe2a8" />

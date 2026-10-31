@@ -8,6 +8,10 @@ import * as VA from "./v3a";
 import * as VB from "./v3b";
 import * as VC from "./v3c";
 import * as VD from "./v3d";
+import * as VE from "./v3e";
+import * as VF from "./v3f";
+import * as VG from "./v3g";
+import * as VH from "./v3h";
 import { F, INK, RED, ORA, GOLD, SAND, Scene, Tag, Shadow, Motes, Fig, ez, lin, sp, rnd, sf, at, cl } from "./ukit";
 
 type UP = { d: number; p: any };
@@ -740,7 +744,7 @@ const EligeOficio: React.FC<UP> = ({ d, p }) => {
 };
 
 const MAP: Record<string, React.FC<UP>> = { PozoCorte, CuadroVelado, RacionPan, TrineoFriccion, MarcaCuadrilla, MontanaQueso, HiloTierra, MuroCapas, RitmoPisones, RutaPostas, Odometro400, Fajado, CincoSacos, SinRueda, MecapalVector, CadenaRelevos, Altimetro, SemanaMina, MercurioGotas, RelojesArena, FrascoMillones, PiernaCebo, ContraCorriente, RepinRevelado, RelojDoce, PiramideOficios, TironUna, EligeOficio };
-const MAP3: Record<string, React.FC<UP>> = { ArcillaEscucha: VA.ArcillaEscucha3D, OchoCascos: VA.OchoCascos3D, AsientoApodo: VA.AsientoApodo3D, PesoHoplita: VA.PesoHoplita3D, FalangeEscudos: VA.FalangeEscudos3D, Othismos: VA.Othismos3D, CascoVision: VA.CascoVision3D, ConElSobreEl: VA.ConElSobreEl3D, TensionArco: VA.TensionArco3D, HuesosAsimetricos: VA.HuesosAsimetricos3D, CercaEstacas: VA.CercaEstacas3D, AsedioCorte: VB.AsedioCorte3D, TamborArvejas: VB.TamborArvejas3D, CuerdaTirones: VB.CuerdaTirones3D, ColumnaRusia: VB.ColumnaRusia3D, TamborOrdenes: VB.TamborOrdenes3D, NoTeSientes: VB.NoTeSientes3D, TopCinco: VB.TopCinco3D, PasilloInfinito: VB.PasilloInfinito3D, CloacaLimpia: VB.CloacaLimpia3D, CuerdasTiempo: VB.CuerdasTiempo3D, BalaPlomo: VC.BalaPlomo3D, MitoVuelta: VC.MitoVuelta3D, ManosGermenes: VC.ManosGermenes3D, TorretaCola: VC.TorretaCola3D, TrajeCalefaccion: VC.TrajeCalefaccion3D, ParacaidasPuerta: VC.ParacaidasPuerta3D, ClayKicker: VC.ClayKicker3D, Messines19: VC.Messines193D, TiraTiempo: VC.TiraTiempo3D, OchoPuertas: VC.OchoPuertas3D, TodoLoDemas: VD.TodoLoDemas3D, LagunaPaz: VD.LagunaPaz3D };
+const MAP3: Record<string, React.FC<UP>> = { ArcillaEscucha: VA.ArcillaEscucha3D, OchoCascos: VA.OchoCascos3D, AsientoApodo: VA.AsientoApodo3D, PesoHoplita: VA.PesoHoplita3D, FalangeEscudos: VA.FalangeEscudos3D, Othismos: VA.Othismos3D, CascoVision: VA.CascoVision3D, ConElSobreEl: VA.ConElSobreEl3D, TensionArco: VA.TensionArco3D, HuesosAsimetricos: VA.HuesosAsimetricos3D, CercaEstacas: VA.CercaEstacas3D, AsedioCorte: VB.AsedioCorte3D, TamborArvejas: VB.TamborArvejas3D, CuerdaTirones: VB.CuerdaTirones3D, ColumnaRusia: VB.ColumnaRusia3D, TamborOrdenes: VB.TamborOrdenes3D, NoTeSientes: VB.NoTeSientes3D, TopCinco: VB.TopCinco3D, PasilloInfinito: VB.PasilloInfinito3D, CloacaLimpia: VB.CloacaLimpia3D, CuerdasTiempo: VB.CuerdasTiempo3D, BalaPlomo: VC.BalaPlomo3D, MitoVuelta: VC.MitoVuelta3D, ManosGermenes: VC.ManosGermenes3D, TorretaCola: VC.TorretaCola3D, TrajeCalefaccion: VC.TrajeCalefaccion3D, ParacaidasPuerta: VC.ParacaidasPuerta3D, ClayKicker: VC.ClayKicker3D, Messines19: VC.Messines193D, TiraTiempo: VC.TiraTiempo3D, OchoPuertas: VC.OchoPuertas3D, TodoLoDemas: VD.TodoLoDemas3D, LagunaPaz: VD.LagunaPaz3D, ...VE.OVR, ...VF.OVR, ...VG.OVR, ...VH.OVR };
 export const Uniq: React.FC<{ n: string; d: number; p: any; o?: any }> = ({ n, d, p }) => {
   const C = MAP3[n] ?? MAP[n];
   if (!C) return <AbsoluteFill style={{ background: "#300" }} />;

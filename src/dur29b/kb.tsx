@@ -62,7 +62,7 @@ export const Plate: React.FC<{ k: string; txt: string; w?: number; h?: number; p
     <mesh position={[0, 0, 0.0135]}><planeGeometry args={[w * 0.94, h * 0.9]} /><meshStandardMaterial map={label(k, txt, Math.min(2048, Math.max(256, Math.round(128 * w / h))), 128, mat === "brass" ? "#3a2008" : "#2e1a0c", `800 ${font}px Georgia`)} transparent roughness={0.6} /></mesh>
   </group>;
 // stickman que camina/corre EN EL LUGAR: el motor lo traslada v·t sobre z (rotY del guion = 0), acá se descuenta
-export const EnSitio: React.FC<{ tt: number; accion: "caminar" | "correr"; escala: number; rotY?: number; expr?: string; semilla?: number; contacto?: number }> = ({ tt, accion, escala, rotY = 0, expr = "decidido", semilla = 1, contacto = 0.4 }) => {
+export const EnSitio: React.FC<{ tt: number; accion: "caminar" | "correr"; escala: number; rotY?: number; expr?: string; semilla?: number; contacto?: number; color?: string }> = ({ tt, accion, escala, rotY = 0, expr = "decidido", semilla = 1, contacto = 0.4, color }) => {
   const v = accion === "correr" ? 2.5 : 0.95, r = rotY * PI / 180;
-  return <group rotation={[0, r, 0]}><Stickman escala={escala} z={-v * tt} guion={[{ t: 0, accion, expr: expr as any }]} semilla={semilla} contacto={contacto} colorContacto="#1a120c" /></group>;
+  return <group rotation={[0, r, 0]}><Stickman escala={escala} z={-v * tt} guion={[{ t: 0, accion, expr: expr as any }]} semilla={semilla} contacto={contacto} colorContacto="#1a120c" color={color} /></group>;
 };

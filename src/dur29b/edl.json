@@ -89,7 +89,7 @@
 "k": "real",
 "t": "real",
 "p": {
-"v": "img/dur29b/ag/dur29b_g06_lamp.jpg"
+"v": "img/dur29b/ag/dur29b_g06_lamp.png"
 }
 },
 {
@@ -552,7 +552,7 @@
 "t": "u",
 "p": {
 "n": "Othismos",
-"bg": "img/dur29b/ag/dur29b_h06_sandals_2.png",
+"bg": "img/dur29b/cand/hoplite_04.jpg",
 "at": {
 "medio": 297
 }
@@ -1809,7 +1809,7 @@
 "t": "u",
 "p": {
 "n": "TopCinco",
-"bg": "img/dur29b/ag/dur29b_k01_backpack_2.png",
+"bg": "img/dur29b/ag/dur29b_h04_plain.png",
 "at": {
 "cinco": 6,
 "cuatro": 197,
@@ -1854,7 +1854,7 @@
 "t": "u",
 "p": {
 "n": "TopCinco",
-"bg": "img/dur29b/ag/dur29b_k01_backpack_t5.jpg",
+"bg": "img/dur29b/ag/dur29b_k01_backpack_t5.png",
 "at": {
 "cinco": -400,
 "cuatro": -200,
