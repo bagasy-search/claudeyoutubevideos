@@ -107,11 +107,11 @@ export const Headline: React.FC<{ t: number; at: number; out: number; text: stri
   const warn = /(\bNO\b|NUNCA|SIN|NADA|NEVER|DON'T|STOP)|¡/.test(text), c = warn ? ACC.red : COL.amber;
   const ch = [...text], N = ch.length, st = Math.min(0.035, 0.5 / N);
   const band = cl(phys(t, at, 5, 0.8)) * (1 - eIn(t, out, out + 0.6)), w = phys(t, at + 0.3 + N * st, 5, 0.6);
-  const fs = side ? 64 : text.length > 18 ? 100 : 124;
+  const fs = side ? Math.min(64, Math.floor(1500 / (N * 0.7))) : Math.min(124, Math.floor(1720 / (N * 0.7))); // 30-oct: «THE WHOLE BATHROOM · SAME DAY» se salía por los bordes
   return <AbsoluteFill>
     {!side && <AbsoluteFill style={{ background: `linear-gradient(180deg, rgba(4,4,6,${0.8 * band}) 0%, rgba(4,4,6,${0.5 * band}) 40%, transparent 68%)` }} />}
     <div style={{ position: "absolute", left: side ? 60 : 0, right: side ? undefined : 0, top: side ? 830 : y, textAlign: side ? "left" : "center", fontFamily: FONT, perspective: 1200 }}>
-      <div style={{ display: "inline-block", fontWeight: 900, fontSize: fs, lineHeight: 1, whiteSpace: "pre", color: G.txt, textShadow: "0 10px 34px rgba(0,0,0,.65)" }}>
+      <div style={{ display: "inline-block", fontWeight: 900, fontSize: fs, lineHeight: 1, whiteSpace: "pre", color: G.txt, textShadow: "0 2px 4px rgba(0,0,0,.9), 0 10px 34px rgba(0,0,0,.75)", ...(side ? { background: `rgba(8,8,10,${0.66 * band})`, padding: "10px 26px 14px", borderRadius: 18 } : {}) }}>
         {ch.map((g, i) => {
           const s1 = phys(t, at + i * st, 7, 0.42), x = eIn(t, out - 0.1 + i * st * 0.6, out + 0.45 + i * st * 0.6);
           return <span key={i} style={{ display: "inline-block", opacity: cl(s1 * 2) * (1 - x), transform: `translateY(${(1 - s1) * -0.7 * fs}px) rotateX(${(1 - s1) * 70}deg) translateZ(${-x * 300}px)`, filter: x > 0.05 ? `blur(${x * 8}px)` : undefined }}>{g}</span>;

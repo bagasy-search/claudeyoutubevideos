@@ -82,7 +82,7 @@ const CTAW = CTAS.map((c) => [(c.guide ?? c.page ?? c.desc) - 0.4, c.end + 0.3])
 const splitW = (o: Ov): Ov[] => {
   if (o.k !== "words") return [{ ...o }];
   const g: any[][] = []; for (const it of o.items) { const cur = g[g.length - 1]; if (cur && it.at - cur[0].at < 6) cur.push(it); else g.push([it]); }
-  return g.map((items, i) => ({ ...o, at: items[0].at, items, out: i < g.length - 1 ? g[i + 1][0].at - 0.35 : o.out }));
+  return g.map((items, i) => ({ ...o, at: items[0].at, items, out: Math.min(items[items.length - 1].at + 4.5, i < g.length - 1 ? g[i + 1][0].at - 0.35 : o.out) })); // cada tanda vive ≤4,5 s tras su última palabra («NO PUMICE STONE» 19 s en d)
 };
 const OV: Ov[] = PL.ov.flatMap(splitW).map((o) => {
   if (!SIMPLE.has(o.k) || o.k === "step") return o;
@@ -136,13 +136,15 @@ const Piece0: React.FC<{ t: number; o: Ov }> = ({ t, o }) => {
   return null;
 };
 
+// 30-oct: el rótulo con su nombre va SOBRE ella (salía sobre un baúl / una casa): primera ventana de avatar de ≥5 s desde el momento planeado
+const LT: [number, number] = (() => { const a0 = PL.txt.lower[0]; const w = WIN.find((x) => x.me - Math.max(x.ms, a0) >= 5); if (!w) return [a0, PL.txt.lower[1]]; const a = Math.max(w.ms + 0.5, a0); return [a, Math.min(a + 6, w.me - 0.3)]; })();
 export const Body: React.FC = () => {
   const t = useCurrentFrame() / 30;
   const fade = e(t, END - 1.4, END - 0.1);
   return <AbsoluteFill style={{ background: "#000" }}>
     {/* cámara a mano virtual (balanceo lento, no temblor) sobre todo lo que se filma: mundo, fotos, clips y avatar */}
     <CamaraMano intensidad={0.8}><Stage t={t} /></CamaraMano>
-    <LowerThird t={t} at={PL.txt.lower[0]} out={PL.txt.lower[1]} name="RHONDA" l2="34 YEARS CLEANING HOUSES · OHIO" l2at={PL.txt.lower[0] + 1} />
+    <LowerThird t={t} at={LT[0]} out={LT[1]} name="RHONDA" l2="34 YEARS CLEANING HOUSES · OHIO" l2at={LT[0] + 1} />
     <Carousels t={t} />
     {CTAS.map((c, i) => c ? <CTA key={i} t={t} c={c} manual={c.manual ?? "92 FIXES · $1-2 EACH"} img={c.img ?? "page"} pageTxt={c.pageTxt ?? ""} /> : null)}
     {OV.map((o, i) => <Piece key={i} t={t} o={o} />)}
