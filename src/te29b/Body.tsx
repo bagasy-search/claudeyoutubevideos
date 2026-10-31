@@ -64,7 +64,7 @@ const imgNear = (t: number, used: Set<string>): string | undefined => {
 };
 const imgsFor = (ts: number[]) => { const u = new Set<string>(); return ts.map((x) => imgNear(x, u)); };
 const Carousels: React.FC<{ t: number }> = ({ t }) => <>
-  {MIS.length > 0 && <CoverFlow t={t} at={DEAL?.at ?? MIS[0].at - 1} out={MIS[MIS.length - 1].out} hide={nowAv(t)} kicker="LO QUE NADIE TE CUENTA" title={`LOS ${MIS.length} ERRORES`} col="red"
+  {MIS.length > 0 && <CoverFlow t={t} at={MIS[0].at - 0.8} out={MIS[MIS.length - 1].out} hide={nowAv(t)} kicker="LO QUE NADIE TE CUENTA" title={`LOS ${MIS.length} ERRORES`} col="red"
     cards={MIS.map((m, i) => ({ img: CJ.err?.[i], at: m.at, n: m.n, title: m.txt }))} />}
   {REC && <CoverFlow t={t} at={REC.at} out={REC.out} hide={nowAv(t)} kicker="REPASEMOS" title={PL.txt.recapTitle}
     cards={[...PL.txt.recap, "Los 5 errores"].map((n, i) => ({ img: CJ.rec?.[i], at: REC.rows[i] ?? REC.out, n: i + 1, title: n })).filter((c) => c.at < REC.out)} />}
