@@ -1,0 +1,1475 @@
+{
+"segs": [
+[
+3.3,
+10.96,
+"shot",
+"v01_espanta_mosquitas"
+],
+[
+10.96,
+14.2,
+"shot",
+"n_potus_estante"
+],
+[
+17.823,
+21.58,
+"shot",
+"n_mosquita_taza"
+],
+[
+21.58,
+25.34,
+"shot",
+"n_laptop_canela"
+],
+[
+25.34,
+30.6,
+"shot",
+"v02_canela_maceta"
+],
+[
+34.1,
+41.18,
+"shot",
+"n_canela_tierra_macro"
+],
+[
+41.18,
+43.88,
+"shot",
+"n_larvas_tierra"
+],
+[
+43.88,
+45.3,
+"shot",
+"n_donut_bti_mano"
+],
+[
+50.1,
+55.28,
+"shot",
+"n_bebedero_pajaros"
+],
+[
+55.28,
+61.553,
+"shot",
+"n_gato_perro_plantas"
+],
+[
+66.221,
+73.72,
+"shot",
+"n_donut_moneda"
+],
+[
+73.72,
+76.06,
+"shot",
+"n_papa_rodaja_tabla"
+],
+[
+76.06,
+78.581,
+"shot",
+"n_macetas_fila"
+],
+[
+84.321,
+88.98,
+"shot",
+"n_maceta_nido"
+],
+[
+88.98,
+92.02,
+"shot",
+"n_lupa_libreta_e"
+],
+[
+92.02,
+96.6,
+"shot",
+"n_banco_garaje_e"
+],
+[
+101.148,
+109.26,
+"shot",
+"n_plantas_entrando"
+],
+[
+109.26,
+113.18,
+"shot",
+"n_mapa_viejo_pared"
+],
+[
+113.18,
+114.5,
+"shot",
+"n_mosquito_tigre"
+],
+[
+118.2,
+123.08,
+"shot",
+"n_neumaticos_viejos"
+],
+[
+123.08,
+129.3,
+"shot",
+"n_ventana_plantas_sol"
+],
+[
+135.048,
+141.78,
+"shot",
+"n_mosquita_macro"
+],
+[
+141.78,
+145.7,
+"shot",
+"n_mosquita_saltito"
+],
+[
+149.4,
+156.64,
+"shot",
+"n_frutero_moscas"
+],
+[
+156.64,
+160.28,
+"shot",
+"n_mosquitas_hojas"
+],
+[
+160.28,
+162.0,
+"shot",
+"n_mosquita_sola"
+],
+[
+166.829,
+171.86,
+"shot",
+"n_huevos_tierra"
+],
+[
+171.86,
+177.16,
+"shot",
+"n_tierra_humeda"
+],
+[
+177.16,
+179.4,
+"shot",
+"n_larva_eclosion"
+],
+[
+183.3,
+190.76,
+"shot",
+"n_larva_regla"
+],
+[
+190.76,
+194.68,
+"shot",
+"n_moho_maceta_e"
+],
+[
+194.68,
+196.392,
+"shot",
+"n_raices_finas_maceta"
+],
+[
+200.432,
+206.7,
+"shot",
+"n_plantin_caido"
+],
+[
+206.7,
+212.16,
+"shot",
+"n_raices_mordidas"
+],
+[
+212.16,
+213.762,
+"shot",
+"n_iceberg_mar"
+],
+[
+218.6,
+224.2,
+"shot",
+"n_spray_aire"
+],
+[
+224.2,
+227.693,
+"shot",
+"n_invernadero_viejo"
+],
+[
+232.0,
+237.02,
+"shot",
+"n_delantal_gancho"
+],
+[
+237.02,
+245.451,
+"shot",
+"n_bancos_invernadero"
+],
+[
+250.4,
+258.28,
+"shot",
+"n_pulverizador_invernadero"
+],
+[
+258.28,
+260.28,
+"shot",
+"n_mosquitas_aire_invernadero"
+],
+[
+260.28,
+262.3,
+"shot",
+"n_tierra_bandeja_macro"
+],
+[
+266.55,
+274.64,
+"shot",
+"n_nota_larva"
+],
+[
+274.64,
+275.954,
+"shot",
+"n_frasco_canela"
+],
+[
+281.0,
+290.88,
+"shot",
+"n_canela_moho"
+],
+[
+290.88,
+293.2,
+"shot",
+"n_corte_maceta"
+],
+[
+297.7,
+306.72,
+"shot",
+"n_canela_agua"
+],
+[
+306.72,
+307.896,
+"shot",
+"n_macetas_etiquetadas"
+],
+[
+312.636,
+320.28,
+"shot",
+"n_tarjetas_iguales"
+],
+[
+320.28,
+324.996,
+"shot",
+"n_fosforos_maceta"
+],
+[
+330.0,
+333.97,
+"shot",
+"n_fosforos_macro"
+],
+[
+333.97,
+338.53,
+"shot",
+"n_ajo_maceta"
+],
+[
+338.53,
+343.1,
+"shot",
+"n_ajo_tabla"
+],
+[
+346.318,
+351.43,
+"shot",
+"n_aceite_neem"
+],
+[
+351.43,
+357.178,
+"shot",
+"n_planta_porche"
+],
+[
+361.446,
+365.79,
+"shot",
+"n_mosquitas_nuevas"
+],
+[
+365.79,
+370.39,
+"shot",
+"v07_tarjeta_amarilla"
+],
+[
+370.39,
+374.3,
+"shot",
+"n_vaso_vinagre"
+],
+[
+378.3,
+384.89,
+"shot",
+"n_tarjeta_llena"
+],
+[
+384.89,
+388.73,
+"shot",
+"n_tarjeta_contar"
+],
+[
+388.73,
+391.478,
+"shot",
+"n_tarjetas_semana"
+],
+[
+396.611,
+406.61,
+"shot",
+"n_mosquita_poniendo"
+],
+[
+406.61,
+407.6,
+"shot",
+"n_regadera_rebalsa"
+],
+[
+411.414,
+419.09,
+"shot",
+"n_tierra_brillante"
+],
+[
+419.09,
+423.33,
+"shot",
+"n_ventana_invierno"
+],
+[
+423.33,
+425.357,
+"shot",
+"n_calendario_riego"
+],
+[
+430.2,
+437.95,
+"shot",
+"n_maceta_mojada"
+],
+[
+437.95,
+440.7,
+"shot",
+"n_papa_entera"
+],
+[
+445.5,
+447.77,
+"shot",
+"n_rodaja_regla"
+],
+[
+447.77,
+453.75,
+"shot",
+"v04_rodaja_papa"
+],
+[
+453.75,
+457.267,
+"shot",
+"n_rodaja_presionada"
+],
+[
+460.424,
+465.11,
+"shot",
+"n_rodajas_macetas"
+],
+[
+465.11,
+471.93,
+"shot",
+"n_larvas_papa"
+],
+[
+471.93,
+473.4,
+"shot",
+"n_calendario_dia4"
+],
+[
+477.733,
+483.65,
+"shot",
+"v05_levanta_papa"
+],
+[
+483.65,
+488.868,
+"shot",
+"n_larvas_cabeza_negra"
+],
+[
+492.336,
+500.83,
+"shot",
+"n_ficus_living"
+],
+[
+500.83,
+503.37,
+"shot",
+"n_ficus_papa_limpia"
+],
+[
+503.37,
+505.696,
+"shot",
+"n_albahaca_ventana"
+],
+[
+511.025,
+514.53,
+"shot",
+"n_papa_albahaca"
+],
+[
+514.53,
+523.596,
+"shot",
+"n_papa_lupa"
+],
+[
+527.1,
+533.89,
+"shot",
+"n_frasco_estante_invernadero"
+],
+[
+533.89,
+537.4,
+"shot",
+"n_bacterias_microscopio"
+],
+[
+542.416,
+549.79,
+"shot",
+"n_donut_mesa"
+],
+[
+549.79,
+555.0,
+"shot",
+"n_donut_barril"
+],
+[
+559.136,
+567.83,
+"shot",
+"n_pack_seis"
+],
+[
+567.83,
+570.599,
+"shot",
+"n_bacilos_macro"
+],
+[
+575.339,
+583.83,
+"shot",
+"n_estanque"
+],
+[
+583.83,
+586.453,
+"shot",
+"n_cristales_proteina"
+],
+[
+592.4,
+597.03,
+"shot",
+"n_larvas_mosquito_agua"
+],
+[
+597.03,
+605.2,
+"shot",
+"n_larva_transparente"
+],
+[
+609.738,
+617.61,
+"shot",
+"n_vaso_leche"
+],
+[
+617.61,
+621.3,
+"shot",
+"n_pajaro_bebedero"
+],
+[
+625.5,
+635.35,
+"shot",
+"n_reservorio"
+],
+[
+635.35,
+638.575,
+"shot",
+"n_carpetas_estudios"
+],
+[
+644.7,
+652.61,
+"shot",
+"n_tierra_limpia"
+],
+[
+652.61,
+656.0,
+"shot",
+"n_donut_cuartos"
+],
+[
+660.442,
+666.04,
+"shot",
+"n_cuchara_migas"
+],
+[
+666.04,
+671.1,
+"shot",
+"n_bidon_leche"
+],
+[
+676.7,
+682.4,
+"shot",
+"v03_desmenuza_donut"
+],
+[
+682.4,
+688.5,
+"shot",
+"n_migas_agua"
+],
+[
+688.5,
+690.9,
+"shot",
+"n_agua_drenaje"
+],
+[
+696.605,
+705.12,
+"shot",
+"n_migas_tierra"
+],
+[
+705.12,
+708.1,
+"shot",
+"n_bidon_fecha"
+],
+[
+712.9,
+722.8,
+"shot",
+"n_bolsa_cierre"
+],
+[
+722.8,
+724.955,
+"shot",
+"n_regadera_una"
+],
+[
+729.016,
+733.22,
+"shot",
+"n_calendario_cuatro_semanas"
+],
+[
+733.22,
+742.0,
+"shot",
+"n_ciclo_frasco"
+],
+[
+747.707,
+754.6,
+"shot",
+"n_larvas_nuevas"
+],
+[
+754.6,
+758.2,
+"shot",
+"n_tres_riegos"
+],
+[
+762.1,
+773.3,
+"shot",
+"n_calendario_tres"
+],
+[
+773.3,
+775.2,
+"shot",
+"n_tarjeta_limpia"
+],
+[
+779.6,
+788.82,
+"shot",
+"n_dia21"
+],
+[
+788.82,
+791.4,
+"shot",
+"n_tierra_seca_arriba"
+],
+[
+795.2,
+802.08,
+"shot",
+"n_dedo_tierra"
+],
+[
+802.08,
+805.5,
+"shot",
+"n_mosquita_seco"
+],
+[
+809.3,
+816.6,
+"shot",
+"n_regadera_guardada"
+],
+[
+816.6,
+822.1,
+"shot",
+"v06_riego_abajo"
+],
+[
+826.349,
+831.58,
+"shot",
+"n_maceta_problema"
+],
+[
+831.58,
+837.7,
+"shot",
+"v08_capa_arena"
+],
+[
+842.5,
+847.68,
+"shot",
+"n_arena_seca"
+],
+[
+847.68,
+852.8,
+"shot",
+"n_grava_acuario"
+],
+[
+856.9,
+861.0,
+"shot",
+"n_bolsa_tierra_garaje"
+],
+[
+861.0,
+869.2,
+"shot",
+"n_mosquitas_bolsa"
+],
+[
+874.928,
+877.5,
+"shot",
+"n_planta_nueva"
+],
+[
+877.5,
+885.581,
+"shot",
+"n_trasplante"
+],
+[
+889.526,
+897.6,
+"shot",
+"v09_bolsa_tierra"
+],
+[
+900.96,
+904.074,
+"shot",
+"n_bolsa_regada"
+],
+[
+907.329,
+916.34,
+"shot",
+"n_cuaderno_cuidado"
+],
+[
+916.34,
+918.9,
+"shot",
+"n_mosca_fruta"
+],
+[
+923.205,
+928.26,
+"shot",
+"n_bananas_maduras"
+],
+[
+928.26,
+932.3,
+"shot",
+"n_trampa_vinagre_cocina"
+],
+[
+936.0,
+940.64,
+"shot",
+"n_mosca_drenaje"
+],
+[
+940.64,
+943.8,
+"shot",
+"n_desagüe"
+],
+[
+943.8,
+948.4,
+"shot",
+"n_cepillo_desague"
+],
+[
+952.95,
+962.36,
+"shot",
+"n_tallo_podrido"
+],
+[
+962.36,
+964.799,
+"shot",
+"n_raices_podridas"
+],
+[
+969.539,
+975.12,
+"shot",
+"n_invernadero_otono"
+],
+[
+975.12,
+982.972,
+"shot",
+"n_frasco_mano_mujer"
+],
+[
+987.403,
+994.76,
+"shot",
+"n_tanque_riego"
+],
+[
+994.76,
+1000.092,
+"shot",
+"n_manguera_banco"
+],
+[
+1004.3,
+1009.21,
+"shot",
+"n_moscas_invernadero_aire"
+],
+[
+1009.21,
+1015.6,
+"shot",
+"n_pocas_moscas"
+],
+[
+1020.2,
+1030.81,
+"shot",
+"n_tablero_tarjetas"
+],
+[
+1030.81,
+1032.9,
+"shot",
+"n_taza_invernadero"
+],
+[
+1037.9,
+1044.07,
+"shot",
+"n_libreta_conteos"
+],
+[
+1044.07,
+1049.0,
+"shot",
+"n_libreta_flechas"
+],
+[
+1053.15,
+1062.16,
+"shot",
+"n_calendario_diez"
+],
+[
+1062.16,
+1064.5,
+"shot",
+"n_mosquita_vuela_ventana"
+],
+[
+1068.216,
+1078.14,
+"shot",
+"n_tarjeta_semana1"
+],
+[
+1078.14,
+1080.998,
+"shot",
+"n_tres_tarjetas_menos"
+],
+[
+1085.543,
+1092.33,
+"shot",
+"n_semillero_caido"
+],
+[
+1092.33,
+1096.1,
+"shot",
+"n_raiz_plantin"
+],
+[
+1099.9,
+1107.51,
+"shot",
+"n_bandeja_agua_abajo"
+],
+[
+1107.51,
+1111.7,
+"shot",
+"n_cuarto_bandeja"
+],
+[
+1115.7,
+1124.12,
+"shot",
+"n_plantines_sanos"
+],
+[
+1124.12,
+1128.7,
+"shot",
+"n_vivero"
+],
+[
+1133.2,
+1140.83,
+"shot",
+"n_corte_dos_pulgadas"
+],
+[
+1140.83,
+1143.3,
+"shot",
+"n_cuchara_tierra"
+],
+[
+1147.534,
+1155.12,
+"shot",
+"n_porche_plantas"
+],
+[
+1155.12,
+1160.894,
+"shot",
+"n_papas_porche"
+],
+[
+1164.402,
+1176.262,
+"shot",
+"n_granulos"
+],
+[
+1181.604,
+1190.03,
+"shot",
+"n_agua_oxigenada"
+],
+[
+1190.03,
+1191.964,
+"shot",
+"n_burbujas_tierra"
+],
+[
+1197.343,
+1205.38,
+"shot",
+"n_raices_blancas_sanas"
+],
+[
+1205.38,
+1209.668,
+"shot",
+"n_lombriz_mano"
+],
+[
+1216.0,
+1226.12,
+"shot",
+"n_perro_regadera"
+],
+[
+1226.12,
+1227.7,
+"shot",
+"n_regadera_tapada"
+],
+[
+1233.023,
+1242.05,
+"shot",
+"n_mosquita_hoja_final"
+],
+[
+1242.05,
+1244.1,
+"shot",
+"n_corte_final"
+],
+[
+1248.7,
+1257.46,
+"shot",
+"n_tarjeta_y_vaso"
+],
+[
+1257.46,
+1261.66,
+"shot",
+"n_papa_final"
+],
+[
+1266.8,
+1275.94,
+"shot",
+"n_migas_bidon"
+],
+[
+1275.94,
+1277.761,
+"shot",
+"n_riego_maceta"
+],
+[
+1281.1,
+1287.88,
+"shot",
+"n_maceta_arena_final"
+],
+[
+1287.88,
+1294.464,
+"shot",
+"n_bolsa_cerrada"
+],
+[
+1299.144,
+1307.2,
+"shot",
+"v10_cafe_plantas"
+],
+[
+1315.643,
+1321.42,
+"shot",
+"n_neumaticos_lluvia"
+],
+[
+1321.42,
+1325.5,
+"shot",
+"n_tierra_final"
+]
+],
+"cam": [
+[
+897.6,
+900.96,
+"wide"
+],
+[
+1307.2,
+1309.9,
+"wide"
+]
+],
+"ov": [
+{
+"k": "words",
+"items": [
+{
+"txt": "1 WORD",
+"col": "ice",
+"at": 61.94
+},
+{
+"txt": "$1 DONUT",
+"col": "amber",
+"at": 66.5
+},
+{
+"txt": "POTATO TEST",
+"col": "green",
+"at": 71.12
+}
+],
+"at": 61.94,
+"out": 73.62
+},
+{
+"k": "chip",
+"txt": "RETIRED FIELD BIOLOGIST · 68",
+"col": "ice",
+"at": 88.98,
+"out": 92.48
+},
+{
+"k": "chip",
+"txt": "▶ MY OTHER CHANNEL · LINK IN THE DESCRIPTION",
+"col": "amber",
+"at": 121.06,
+"out": 122.9
+},
+{
+"k": "chip",
+"txt": "SUBSCRIBE · A NEW TEST EVERY WEEK",
+"col": "green",
+"at": 123.2,
+"out": 126.7
+},
+{
+"k": "big",
+"txt": "LARVAE",
+"sub": "THE ONE WORD",
+"col": "amber",
+"at": 129.54,
+"out": 132.74
+},
+{
+"k": "chip",
+"txt": "1984 · THE UNIVERSITY GREENHOUSE",
+"col": "ice",
+"at": 224.2,
+"out": 227.7
+},
+{
+"k": "step",
+"n": 1,
+"name": "CINNAMON",
+"col": "red",
+"at": 274.64,
+"out": 278.64
+},
+{
+"k": "step",
+"n": 2,
+"name": "MATCHES",
+"col": "red",
+"at": 318.5,
+"out": 322.5
+},
+{
+"k": "step",
+"n": 3,
+"name": "GARLIC",
+"col": "red",
+"at": 333.97,
+"out": 337.97
+},
+{
+"k": "step",
+"n": 4,
+"name": "NEEM ON THE LEAVES",
+"col": "red",
+"at": 343.81,
+"out": 347.81
+},
+{
+"k": "step",
+"n": 5,
+"name": "A DAY OUTSIDE",
+"col": "red",
+"at": 350.91,
+"out": 354.91
+},
+{
+"k": "step",
+"n": 6,
+"name": "TRAPS",
+"col": "red",
+"at": 364.19,
+"out": 368.19
+},
+{
+"k": "stamp",
+"txt": "NOT A CURE",
+"at": 391.85,
+"out": 394.85
+},
+{
+"k": "step",
+"n": 7,
+"name": "OVERWATERING",
+"col": "red",
+"at": 402.29,
+"out": 406.29
+},
+{
+"k": "big",
+"txt": "THE POTATO TEST",
+"sub": "4 DAYS · EVERY POT",
+"col": "green",
+"at": 437.95,
+"out": 441.15
+},
+{
+"k": "chip",
+"txt": "LABEL EACH POT",
+"col": "ice",
+"at": 457.41,
+"out": 460.91
+},
+{
+"k": "big",
+"txt": "$6–10",
+"sub": "A PACK OF 6 · GARDEN AISLE",
+"col": "amber",
+"at": 559.35,
+"out": 562.55
+},
+{
+"k": "chip",
+"txt": "ALLOWED IN ORGANIC GROWING",
+"col": "green",
+"at": 639.19,
+"out": 642.69
+},
+{
+"k": "step",
+"n": 1,
+"name": "BREAK IT IN 4",
+"col": "green",
+"at": 652.61,
+"out": 656.61
+},
+{
+"k": "step",
+"n": 2,
+"name": "CRUSH ONE QUARTER",
+"col": "green",
+"at": 658.41,
+"out": 662.41
+},
+{
+"k": "step",
+"n": 3,
+"name": "1 GALLON · LET IT SOAK",
+"col": "green",
+"at": 666.04,
+"out": 670.04
+},
+{
+"k": "step",
+"n": 4,
+"name": "WATER AS USUAL",
+"col": "green",
+"at": 684.58,
+"out": 688.58
+},
+{
+"k": "chip",
+"txt": "A FRESH BATCH EACH TIME",
+"col": "ice",
+"at": 705.12,
+"out": 708.62
+},
+{
+"k": "chip",
+"txt": "+ 2 HABITS · FASTER",
+"col": "green",
+"at": 785.6,
+"out": 789.1
+},
+{
+"k": "chip",
+"txt": "SMALLER BAGS · CLOSE THEM TIGHT",
+"col": "green",
+"at": 885.9,
+"out": 889.4
+},
+{
+"k": "chip",
+"txt": "FRUIT FLIES · A VINEGAR CUP",
+"col": "ice",
+"at": 920.28,
+"out": 923.78
+},
+{
+"k": "chip",
+"txt": "ROOT ROT? · REPOT IN DRY MIX",
+"col": "red",
+"at": 956.68,
+"out": 960.18
+},
+{
+"k": "chip",
+"txt": "PATIENCE · THE FIRST 10 DAYS",
+"col": "amber",
+"at": 1055.61,
+"out": 1059.11
+},
+{
+"k": "chip",
+"txt": "¼ DUNK IN THE TRAY WATER",
+"col": "green",
+"at": 1107.51,
+"out": 1111.01
+},
+{
+"k": "chip",
+"txt": "KEEP THE PLANT · FIX THE TOP 2 INCHES",
+"col": "green",
+"at": 1127.94,
+"out": 1131.44
+},
+{
+"k": "deal",
+"at": 1164.01,
+"out": 1168.51
+},
+{
+"k": "chip",
+"txt": "«GRANULES?» · SAME BACTERIA",
+"col": "ice",
+"at": 1167.18,
+"out": 1170.68
+},
+{
+"k": "chip",
+"txt": "«PEROXIDE?» · HURTS FINE ROOTS",
+"col": "ice",
+"at": 1185.87,
+"out": 1189.37
+},
+{
+"k": "chip",
+"txt": "«MY WORMS?» · SAFE",
+"col": "ice",
+"at": 1205.38,
+"out": 1208.88
+},
+{
+"k": "chip",
+"txt": "«MY DOG?» · NOT TOXIC",
+"col": "ice",
+"at": 1216.37,
+"out": 1219.87
+},
+{
+"k": "recap",
+"rows": [
+1233.14,
+1247.44,
+1251.09,
+1258.46,
+1268.46,
+1277.96,
+1287.88
+],
+"at": 1230.59,
+"out": 1293.88
+},
+{
+"k": "ask",
+"at": 1299.33,
+"out": 1311.33
+},
+{
+"k": "next",
+"at": 1323.35,
+"out": 1328.35
+}
+],
+"cta1": {
+"desc": 123.2,
+"end": 129.2
+},
+"cta2": {
+"desc": 1309.07,
+"end": 1315.07
+},
+"cta3": {
+"desc": 1317.9,
+"end": 1322.9
+},
+"end": 1325.48,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+651.388,
+722.337
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "WHAT TO KEEP",
+"recap": [
+"One word: larvae",
+"Cinnamon & co. don't reach them",
+"Cards & vinegar = counters",
+"Potato slice finds the nest",
+"¼ dunk in 1 gallon of water",
+"Once a week, 3 weeks",
+"Dry top · sand · close the bag"
+],
+"ask": [
+"What houseplant pest",
+"drives you crazy?",
+"Tell me · I'll test it"
+],
+"next": [
+"NEXT TIME",
+"Another trick, tested"
+],
+"lower": [
+87.96,
+93.96
+]
+}
+}

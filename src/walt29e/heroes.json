@@ -1,0 +1,340 @@
+[
+{
+"k": "cinnamyth",
+"at": 37.0,
+"out": 43.0,
+"said": 37.0,
+"solo": true,
+"kw": "A MYTH",
+"kw2": "cinnamon kills nothing",
+"ph": "ph_cinnamyth"
+},
+{
+"k": "donutdisc",
+"at": 50.14,
+"out": 56.14,
+"said": 45.64,
+"solo": true,
+"kw": "THE $1 DONUT",
+"kw2": "sold for ponds",
+"ph": "ph_donutdisc"
+},
+{
+"k": "nestpot",
+"at": 73.94,
+"out": 78.44,
+"said": 77.04,
+"sp": 1.333,
+"solo": true,
+"kw": "ONE POT IS THE NEST",
+"kw2": "and a potato finds it",
+"ph": "ph_nestpot"
+},
+{
+"k": "eighth",
+"at": 136.64,
+"out": 142.64,
+"said": 136.64,
+"solo": true,
+"kw": "\u00e2\u2026\u203a INCH",
+"kw2": "a terrible flier",
+"ph": "ph_eighth"
+},
+{
+"k": "fruitbowl",
+"at": 153.42,
+"out": 159.92,
+"said": 153.42,
+"solo": true,
+"kw": "NOT A FRUIT FLY",
+"kw2": "gnats stay by the plants",
+"ph": "ph_fruitbowl"
+},
+{
+"k": "twohundred",
+"at": 171.86,
+"out": 177.86,
+"said": 171.86,
+"solo": true,
+"kw": "200 EGGS",
+"kw2": "from one tiny fly",
+"ph": "ph_twohundred"
+},
+{
+"k": "blackhead",
+"at": 183.4,
+"out": 189.4,
+"said": 179.9,
+"solo": true,
+"kw": "A SHINY BLACK HEAD",
+"kw2": "clear body, \u00c2\u00bc inch",
+"ph": "ph_blackhead"
+},
+{
+"k": "roothairs",
+"at": 200.54,
+"out": 206.54,
+"said": 196.64,
+"solo": true,
+"kw": "ROOT HAIRS",
+"kw2": "when the fungus runs out",
+"ph": "ph_roothairs"
+},
+{
+"k": "iceberg",
+"at": 209.16,
+"out": 213.66,
+"said": 212.16,
+"sp": 1.333,
+"solo": true,
+"kw": "THE TIP",
+"kw2": "dozens below every fly",
+"ph": "ph_iceberg"
+},
+{
+"k": "okafor",
+"at": 233.62,
+"out": 239.62,
+"said": 233.62,
+"solo": true,
+"kw": "GRACE OKAFOR",
+"kw2": "she ran the greenhouse",
+"ph": "ph_okafor"
+},
+{
+"k": "swatting",
+"at": 257.68,
+"out": 262.18,
+"said": 258.28,
+"sp": 1.333,
+"solo": true,
+"kw": "SWATTING PARENTS",
+"kw2": "the children are in the dirt",
+"ph": "ph_swatting"
+},
+{
+"k": "toptwo",
+"at": 297.8,
+"out": 303.8,
+"said": 293.4,
+"solo": true,
+"kw": "THE TOP 2 INCHES",
+"kw2": "where the larvae eat",
+"ph": "ph_toptwo"
+},
+{
+"k": "matchhead",
+"at": 330.08,
+"out": 336.08,
+"said": 327.18,
+"solo": true,
+"kw": "A MATCH HEAD",
+"kw2": "too little sulfur",
+"ph": "ph_matchhead"
+},
+{
+"k": "dotcard",
+"at": 379.868,
+"out": 385.87,
+"said": 379.87,
+"solo": true,
+"kw": "A COUNTER",
+"kw2": "not a cure",
+"ph": "ph_dotcard"
+},
+{
+"k": "soggy",
+"at": 411.53,
+"out": 418.03,
+"said": 407.73,
+"solo": true,
+"kw": "WET ON TOP",
+"kw2": "a nursery on your sill",
+"ph": "ph_soggy"
+},
+{
+"k": "slice",
+"at": 445.53,
+"out": 451.53,
+"said": 444.43,
+"solo": true,
+"kw": "A \u00c2\u00bc-INCH SLICE",
+"kw2": "one on every pot",
+"ph": "ph_slice"
+},
+{
+"k": "flipit",
+"at": 477.83,
+"out": 483.83,
+"said": 473.43,
+"solo": true,
+"kw": "DAY 4 \u00c2\u00b7 FLIP IT",
+"kw2": "look underneath",
+"ph": "ph_flipit"
+},
+{
+"k": "fourteen",
+"at": 501.07,
+"out": 505.57,
+"said": 502.67,
+"sp": 1.444,
+"solo": true,
+"kw": "1 OF 14",
+"kw2": "it was the basil",
+"ph": "ph_fourteen"
+},
+{
+"k": "dunkname",
+"at": 542.47,
+"out": 548.47,
+"said": 539.97,
+"solo": true,
+"kw": "MOSQUITO DUNK",
+"kw2": "the hardware store donut",
+"ph": "ph_dunkname"
+},
+{
+"k": "bti",
+"at": 566.03,
+"out": 570.53,
+"said": 567.83,
+"sp": 1.444,
+"solo": true,
+"kw": "Bti",
+"kw2": "a soil bacteria",
+"ph": "ph_bti"
+},
+{
+"k": "crystal",
+"at": 581.83,
+"out": 586.33,
+"said": 583.83,
+"sp": 1.333,
+"solo": true,
+"kw": "A PROTEIN CRYSTAL",
+"kw2": "harmless until eaten",
+"ph": "ph_crystal"
+},
+{
+"k": "stomach",
+"at": 613.948,
+"out": 619.95,
+"said": 613.95,
+"solo": true,
+"kw": "SAFE FOR US",
+"kw2": "dogs, cats and bees too",
+"ph": "ph_stomach"
+},
+{
+"k": "reservoir",
+"at": 630.288,
+"out": 636.29,
+"said": 630.29,
+"solo": true,
+"kw": "IN DRINKING WATER",
+"kw2": "tested around the world",
+"ph": "ph_reservoir"
+},
+{
+"k": "cycle",
+"at": 729.1,
+"out": 735.6,
+"said": 727.3,
+"solo": true,
+"kw": "3\u00e2\u20ac\u201c4 WEEKS",
+"kw2": "egg to adult",
+"ph": "ph_cycle"
+},
+{
+"k": "threex",
+"at": 753.64,
+"out": 758.14,
+"said": 754.44,
+"sp": 1.333,
+"solo": true,
+"kw": "3 WATERINGS",
+"kw2": "once a week",
+"ph": "ph_threex"
+},
+{
+"k": "knuckle",
+"at": 795.3,
+"out": 801.3,
+"said": 793.4,
+"solo": true,
+"kw": "FIRST KNUCKLE",
+"kw2": "damp? wait",
+"ph": "ph_knuckle"
+},
+{
+"k": "frombelow",
+"at": 826.46,
+"out": 832.46,
+"said": 822.66,
+"solo": true,
+"kw": "FROM BELOW",
+"kw2": "the top stays dry",
+"ph": "ph_frombelow"
+},
+{
+"k": "sandcap",
+"at": 833.08,
+"out": 837.58,
+"said": 834.28,
+"sp": 1.333,
+"solo": true,
+"kw": "A SAND CAP",
+"kw2": "gritty and dry",
+"ph": "ph_sandcap"
+},
+{
+"k": "openbag",
+"at": 860.917,
+"out": 867.42,
+"said": 860.92,
+"solo": true,
+"kw": "THE OPEN BAG",
+"kw2": "a nursery in the garage",
+"ph": "ph_openbag"
+},
+{
+"k": "drainfly",
+"at": 938.857,
+"out": 944.86,
+"said": 938.86,
+"solo": true,
+"kw": "DRAIN FLIES",
+"kw2": "a brush, not a dunk",
+"ph": "ph_drainfly"
+},
+{
+"k": "thanks",
+"at": 1020.26,
+"out": 1026.26,
+"said": 1016.16,
+"solo": true,
+"kw": "BY THANKSGIVING",
+"kw2": "the cards were clean",
+"ph": "ph_thanks"
+},
+{
+"k": "counted",
+"at": 1037.95,
+"out": 1043.95,
+"said": 1034.55,
+"solo": true,
+"kw": "SHE COUNTED",
+"kw2": "a notebook of larvae",
+"ph": "ph_counted"
+},
+{
+"k": "topple",
+"at": 1099.99,
+"out": 1105.99,
+"said": 1098.79,
+"solo": true,
+"kw": "SEEDLINGS TOPPLE",
+"kw2": "in a few days",
+"ph": "ph_topple"
+}
+]
