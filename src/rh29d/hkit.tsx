@@ -41,9 +41,10 @@ const maskOf = (m: Mode, p: number): string => {
 export const Stage: React.FC<{ t: number; h: H; mode: Mode; bg?: string; cam?: number; children: (tt: number) => React.ReactNode }> = ({ t, h, mode, bg, cam = 1, children }) => {
   const { at, out } = h;
   if (t < at - 0.05 || t > out + 0.4) return null;
-  const inn = h.ph ? phys(t, at, 7, 0.85) : phys(t, at, 3.8, 0.72), xo = eIn(t, out - 0.12, out + 0.32), p = cl(inn) * (1 - xo);
+  // 30-oct r5: sobre el avatar, CORTE SECO (el iris/fundido dejaba lupas y aros a medio fundir sobre la cara de Rhonda)
+  const inn = (h as any).cutIn ? (t >= at ? 1 : 0) : h.ph ? phys(t, at, 7, 0.85) : phys(t, at, 3.8, 0.72), xo = (h as any).cutOut ? (t >= out ? 1 : 0) : eIn(t, out - 0.12, out + 0.32), p = cl(inn) * (1 - xo);
   if (p <= 0.004) return null;
-  const tt = (t - at) * (h.sp ?? 1), mk = h.ph ? maskOf("iris", Math.min(1, p * 1.8)) : maskOf(mode, p);
+  const tt = (t - at) * (h.sp ?? 1), mk = (h as any).cutIn && p >= 1 ? undefined : h.ph ? maskOf("iris", Math.min(1, p * 1.8)) : maskOf(mode, p);
   return <AbsoluteFill style={{ WebkitMaskImage: mk, maskImage: mk, fontFamily: FONT, color: TX } as React.CSSProperties}>
     <AbsoluteFill style={{ background: bg ?? "radial-gradient(ellipse 75% 65% at 50% 46%, #1d1a16, #070708 72%)" }} />
     {h.ph && <PhotoHero tt={tt} id={h.ph} dur={(out - at) * (h.sp ?? 1)} said={((h.said ?? at) - at) * (h.sp ?? 1)} solo={!!h.solo} ac={h.solo ? AC[h.k] : undefined} />}

@@ -36,7 +36,7 @@ const base = (t: number): React.ReactNode => {
 const Stage: React.FC<{ t: number }> = ({ t }) => (WIN.some((x) => t >= x.ms && t < x.me) ? <Avatar t={t} /> : <>{base(t)}</>);
 
 // sobre el avatar, el rótulo de paso y la descripción van a la izquierda y más chicos: nunca tapan la cara
-const avOn = (a: number, b: number) => WIN.some((w) => a < w.me && b > w.ms);
+const avOn = (a: number, b: number) => WIN.some((w) => a - 0.6 < w.me && b + 0.9 > w.ms); // 30-oct: cuenta la entrada/salida de la pieza («NEVER MIX» salía sobre los ojos)
 
 // ===== CTA: chip de la guía → chip del manual (con la página) → la página real + QR chico → la descripción sola =====
 const CTA: React.FC<{ t: number; c: Cta; manual: string; img: string; pageTxt: string }> = ({ t, c, manual, img, pageTxt }) => {
@@ -46,7 +46,7 @@ const CTA: React.FC<{ t: number; c: Cta; manual: string; img: string; pageTxt: s
     {c.guide !== undefined && <Chip t={t} at={c.guide} out={(c.book ?? c.page ?? c.desc) - 0.15} text="📕 RHONDA'S BROWN BOTTLE BOOK" />}
     {c.book !== undefined && <Chip t={t} at={c.book} out={(c.page ?? c.desc) - 0.15} text={manual} col="ice" />}
     {c.page !== undefined && <GuidePage t={t} at={c.page} out={c.desc - 0.2} img={img} tag={[manual.split("·")[0].trim(), pag].filter(Boolean).join(" · ")} />}
-    <Desc t={t} at={c.desc} out={c.end - 0.3} x={side ? 470 : 960} y={side ? 900 : 640} scale={side ? 0.7 : 0.8} />
+    <Desc t={t} at={c.desc} out={c.end - 0.3} x={side ? 600 : 960} y={side ? 880 : 640} scale={side ? 0.8 : 0.8} />
   </>;
 };
 
@@ -81,8 +81,8 @@ const CTAS: Cta[] = [PL.cta1, PL.cta2].filter((c) => c && c.desc !== undefined).
 const CTAW = CTAS.map((c) => [(c.guide ?? c.page ?? c.desc) - 0.4, c.end + 0.3]);
 const splitW = (o: Ov): Ov[] => {
   if (o.k !== "words") return [{ ...o }];
-  const g: any[][] = []; for (const it of o.items) { const cur = g[g.length - 1]; if (cur && it.at - cur[0].at < 6) cur.push(it); else g.push([it]); }
-  return g.map((items, i) => ({ ...o, at: items[0].at, items, out: i < g.length - 1 ? g[i + 1][0].at - 0.35 : o.out }));
+  const g: any[][] = []; for (const it of o.items) { const cur = g[g.length - 1]; if (cur && it.at - cur[cur.length - 1].at < 3.5) cur.push(it); else g.push([it]); /* 30-oct: sólo se apilan frases dichas casi juntas */ }
+  return g.map((items, i) => ({ ...o, at: items[0].at, items, out: Math.min(items[items.length - 1].at + 4.5, i < g.length - 1 ? g[i + 1][0].at - 0.35 : o.out) })); // cada tanda vive ≤4,5 s tras su última palabra («NO PUMICE STONE» 19 s en d)
 };
 const OV: Ov[] = PL.ov.flatMap(splitW).map((o) => {
   if (!SIMPLE.has(o.k) || o.k === "step") return o;
@@ -99,7 +99,7 @@ for (let i = 0; i < OV.length; i++) {
 // ===== un componente ÚNICO por minuto (heroes.json): tapan todo; las piezas chicas que caen en su tramo se apagan =====
 const HS: H[] = (HEROES as H[]).map((h) => {
   const u = new Set<string>();
-  const out: H = { ...h, stack: COMMENTS };
+  const out: H = { ...h, stack: COMMENTS, cutIn: nowAv(h.at - 0.05), cutOut: nowAv(h.out + 0.05) } as H;
   if (h.imgAt !== undefined) out.img = imgNear(h.imgAt, u);
   out.bg = imgNear(h.at + 1, u);
   if (h.imgsAt) out.imgs = (h.imgsAt as number[]).map((x) => imgNear(x, u));
@@ -136,13 +136,15 @@ const Piece0: React.FC<{ t: number; o: Ov }> = ({ t, o }) => {
   return null;
 };
 
+// 30-oct: el rótulo con su nombre va SOBRE ella (salía sobre un baúl / una casa): primera ventana de avatar de ≥5 s desde el momento planeado
+const LT: [number, number] = (() => { const a0 = PL.txt.lower[0]; const w = WIN.find((x) => x.me - Math.max(x.ms, a0) >= 5); if (!w) return [a0, PL.txt.lower[1]]; const a = Math.max(w.ms + 0.5, a0); return [a, Math.min(a + 6, w.me - 0.3)]; })();
 export const Body: React.FC = () => {
   const t = useCurrentFrame() / 30;
   const fade = e(t, END - 1.4, END - 0.1);
   return <AbsoluteFill style={{ background: "#000" }}>
     {/* cámara a mano virtual (balanceo lento, no temblor) sobre todo lo que se filma: mundo, fotos, clips y avatar */}
     <CamaraMano intensidad={0.8}><Stage t={t} /></CamaraMano>
-    <LowerThird t={t} at={PL.txt.lower[0]} out={PL.txt.lower[1]} name="RHONDA" l2="34 YEARS CLEANING HOUSES · OHIO" l2at={PL.txt.lower[0] + 1} />
+    <LowerThird t={t} at={LT[0]} out={LT[1]} name="RHONDA" l2="34 YEARS CLEANING HOUSES · OHIO" l2at={LT[0] + 1} />
     <Carousels t={t} />
     {CTAS.map((c, i) => c ? <CTA key={i} t={t} c={c} manual={c.manual ?? "92 FIXES · $1-2 EACH"} img={c.img ?? "page"} pageTxt={c.pageTxt ?? ""} /> : null)}
     {OV.map((o, i) => <Piece key={i} t={t} o={o} />)}
