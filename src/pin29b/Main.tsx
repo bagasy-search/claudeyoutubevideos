@@ -25,6 +25,13 @@ const REEL = (AVAIL as { reel: boolean }).reel;
 const CLIPS = new Set((AVAIL as { clips: string[] }).clips);
 const CDUR = ((AVAIL as { dur?: Record<string, number> }).dur ?? {}) as Record<string, number>;
 const AW = (AVW as { win: { ms: number; me: number; off: number }[] }).win;
+const C0 = (AVAIL as { c0?: boolean }).c0;
+// cuadro 0 = la miniatura elegida SIN texto/flecha, idéntica; se sostiene y se funde (empuje curvo, nunca lineal) al avatar
+const Cuadro0: React.FC<{ t: number }> = ({ t }) => {
+  const k = Math.min(1, t / 1.4), q = 1 - Math.pow(1 - k, 3);
+  return <AbsoluteFill style={{ opacity: 1 - e(t, 0.85, 1.4), transform: `scale(${1 + 0.035 * q}) translate(${-6 * q}px,${-3 * Math.sin(q * Math.PI)}px)` }}>
+    <Img src={staticFile(P + "cuadro0.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>;
+};
 const inCta = (t: number) => PL.cta.find((c) => t >= c.a - 0.4 && t < c.b + 0.4);
 
 // ---------- avatar: nítido, sin halo ni borde borroso; preroll por ventana ----------
@@ -297,5 +304,6 @@ export const Main: React.FC = () => {
   const hh = !cta && !enAv ? HS.find((x) => t >= x.at - 0.05 && t <= x.out + 0.85) : undefined;
   if (hh) { const Co = TEC[hh.ty ?? ""] ?? (hh.foto ? FotoReal : MAP[hh.k]); if (Co) { L.splice(1); L.push(<Co key={"h" + hh.k} t={t} h={hh} />); } }
   if (cta) { L.push(<Guia key="guia" t={t} c={cta} />); L.push(<AvatarPiP key="pip" t={t} />); }
+  if (C0 && t < 1.45) L.push(<Cuadro0 key="c0" t={t} />);
   return <AbsoluteFill style={{ background: "#000" }}>{L}</AbsoluteFill>;
 };

@@ -132,10 +132,11 @@ const Plano: React.FC<{ id: string; tt: number; D: number; fx?: string; fxAt?: n
 
 // marcador: la palabra se escribe a mano sobre la foto (revelado de izquierda a derecha) con un subrayado que se dibuja
 const Marca: React.FC<{ tt: number; at: number; x: number; y: number; txt: string; size?: number; col?: string; rot?: number; centro?: boolean }> = ({ tt, at, x, y, txt, size = 92, col = "#fff3d6", rot = -2.5, centro = true }) => {
-  const k = eio(tt, at, at + Math.min(0.42, 0.16 + txt.length * 0.012)), u = eio(tt, at + 0.35, at + 0.8);
+  // 30-oct: entra ENTERA (resorte con peso), nunca a medio escribir; sans gruesa sobre panel oscuro (se lee en el celular)
+  const k = eio(tt, at, at + 0.32), u = eio(tt, at + 0.3, at + 0.75), sp = 0.82 + 0.18 * k + 0.05 * Math.sin(Math.min(1, k) * Math.PI);
   if (k <= 0) return null;
   return <div style={{ position: "absolute", left: x, top: y, transform: `translate(${centro ? "-50%" : "0"}, -50%) rotate(${rot}deg)`, whiteSpace: "nowrap", width: "max-content" }}>
-    <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: size, color: col, padding: "0 0.28em 0 0.12em", clipPath: `inset(-20% ${k >= 1 ? -12 : 100 - 100 * k}% -30% -5%)`, textShadow: "0 3px 0 rgba(0,0,0,.6), 0 0 22px rgba(0,0,0,.8), 0 0 3px rgba(0,0,0,.95)", WebkitTextStroke: "1.5px rgba(0,0,0,.55)", lineHeight: 1.1 }}>{txt}</div>
+    <div style={{ fontFamily: "Arial Black, Arial, sans-serif", fontWeight: 900, fontSize: size * 0.82, color: col, padding: "0.08em 0.4em 0.12em", opacity: k, transform: `scale(${sp})`, transformOrigin: "50% 60%", background: "rgba(12,16,20,.72)", borderRadius: 14, boxShadow: "0 10px 26px rgba(0,0,0,.55)", textShadow: "0 3px 0 rgba(0,0,0,.7)", lineHeight: 1.1 }}>{txt}</div>
     <div style={{ position: "absolute", left: "2%", bottom: -10, height: 9, width: "96%", borderRadius: 6, background: col === "#fff3d6" ? MZ : col, transformOrigin: "0 50%", transform: `scaleX(${u}) rotate(-0.6deg)`, boxShadow: "0 3px 6px rgba(0,0,0,.5)" }} />
   </div>;
 };
@@ -180,7 +181,7 @@ const Versus: React.FC<{ t: number; h: H }> = ({ t, h }) => {
       const gana = (win === "l") === izq, ww = (izq ? W / 2 + (W / 2) * (1 - kr) : W / 2) + (gana ? 140 : -140) * q;
       return <div style={{ position: "absolute", top: 0, left: izq ? 0 : undefined, right: izq ? undefined : 0, width: ww, height: HH, overflow: "hidden", transform: izq ? undefined : `translateX(${(1 - kr) * W / 2}px)` }}>
         <div style={{ position: "absolute", left: Math.min(0, (ww - Math.max(W / 2, ww)) / 2), top: 0 }}><Plano id={izq ? lf : rf} tt={tt} D={D} w={Math.max(W / 2, ww)} h={HH} fx={gana ? h.fx : undefined} fxAt={va + 0.4} push={gana ? 0.35 : 0} dim={gana ? 0 : 0.9 * q} v={izq ? 0 : 1} /></div>
-        <Marca tt={tt} at={izq ? 0.5 : 1.2} x={ww / 2} y={930} txt={izq ? lt : rt} size={tam(izq ? lt : rt, 100, 76)} col={gana && q > 0.5 ? "#ffd75e" : "#fff3d6"} rot={izq ? -2 : 2} />
+        <Marca tt={tt} at={izq ? 0.5 : 1.2} x={ww / 2} y={880} txt={izq ? lt : rt} size={tam(izq ? lt : rt, 118, 92)} col={gana && q > 0.5 ? "#ffd75e" : "#fff3d6"} rot={izq ? -2 : 2} />
       </div>;
     };
     return <AbsoluteFill>{lado(true)}{lado(false)}
