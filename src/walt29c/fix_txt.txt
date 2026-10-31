@@ -1,3 +1,4 @@
 31-oct: textos que no entraban (BigNum/Headline) + fotos sin letras IA
 31-oct r3: héroes ph con calendario
 31-oct 09:00 ph_crate sin letras + pared alero clara (eval)
+31-oct 09:50 Veo faltantes -> fotos fv (no mas World repetido)
