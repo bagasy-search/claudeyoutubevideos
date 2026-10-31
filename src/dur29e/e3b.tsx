@@ -298,7 +298,7 @@ const SemillasFilas: React.FC<UP> = ({ d, p }) => {
   const aS = sec(p, "semillas", 0.6), aF = sec(p, "filas", 2.2);
   const rows = [-0.24, 0.0, 0.24];
   return <U3 d={d} bg={p.bg} ground={[120, 96, 64]} sky="#c8d8e0" mode="iris" key1={[-1, 3, 1.4]}
-    cam={{ at: [0.0, 0.14, 0], az: [-0.42, -0.26], el: [0.36, 0.3], r: [1.6, 1.45], fov: 34 }}>{(tt) => {
+    cam={{ at: [0.0, 0.3, 0], az: [-0.42, -0.26], el: [0.3, 0.26], r: [1.8, 1.65], fov: 34 }}>{(tt) => {
     const wk = cl((tt - aS) / Math.max(1, d / 30 - aS - 0.6)), xm = lerp(-0.7, 0.5, wk);
     return <>
       {rows.map((z, r) => <group key={"f" + r}>
@@ -424,7 +424,7 @@ const BahiaEstacion: React.FC<UP> = ({ d, p }) => {
 const AceiteUsos: React.FC<UP> = ({ d, p }) => {
   const aJ = sec(p, "jabon", 0.8), aM = sec(p, "margarina", 1.5), aQ = sec(p, "maquinas", 2.2);
   return <U3 d={d} bg={p.bg} ground={null} floor="wood" mode="iris" key1={[-0.8, 2.4, 1.6]}
-    cam={{ at: [0.0, 0.12, 0.02], az: [-0.2, -0.1], el: [0.2, 0.16], r: [0.95, 0.85], fov: 34 }}>{(tt) => {
+    cam={{ at: [0.02, 0.14, 0.02], az: [-0.18, -0.08], el: [0.22, 0.18], r: [1.2, 1.1], fov: 34 }}>{(tt) => {
     const land = (a: number, x: number) => { const u = eio(tt, a + 0.35, a + 0.95); return { x: lerp(-0.22, x, u), y: Math.max(0, 0.22 * Math.sin(PI * u)) + Math.abs(Math.sin(PI * 3 * cl((tt - a - 0.95) / 0.5))) * 0.03 * (1 - cl((tt - a - 0.95) / 0.5)) }; };
     const drip = (a: number) => { const u = cl((tt - a) / 0.35); return <mesh position={[-0.17, 0.16 - 0.15 * u * u, 0.07]} scale={[1, 1.5, 1]} visible={tt > a && u < 1}><sphereGeometry args={[0.012, 12, 10]} /><meshPhysicalMaterial color="#c89a30" roughness={0.1} clearcoat={1} /></mesh>; };
     const J = land(aJ, -0.02), Mg = land(aM, 0.14), Q = land(aQ, 0.3);
@@ -511,10 +511,10 @@ const SieteObjetos: React.FC<UP> = ({ d, p }) => {
     : i === 5 ? <mesh position={[0, 0.035, 0]} scale={[1.2, 0.9, 1]}><dodecahedronGeometry args={[0.035, 1]} /><meshPhysicalMaterial color="#d8902a" roughness={0.25} clearcoat={1} /></mesh>
     : <group><mesh position={[0, 0.05, 0]} geometry={latheG("botella_e", [[0, 0], [0.03, 0], [0.032, 0.06], [0.012, 0.085], [0.01, 0.1], [0, 0.1]], 20)}>{M.glass({ op: 0.5, col: "#c8a050" })}</mesh></group>;
   return <U3 d={d} bg={p.bg} ground={null} floor="dark" mode="wipe" key1={[-0.8, 2.6, 2.0]}
-    cam={{ at: [0, 0.3, 0], az: [-0.12, 0.08], el: [0.1, 0.08], r: [1.75, 1.6], fov: 34 }}>{(tt) => <>
+    cam={{ at: [0, 0.32, 0], az: [-0.1, 0.06], el: [0.12, 0.1], r: [1.4, 1.28], fov: 34 }}>{(tt) => <>
     <RBox s={[1.6, 0.03, 0.22]} r={0.006} p={[0, 0.24, 0]}>{M.wood({ base: [110, 72, 40], rx: 4 })}</RBox>
     <RBox s={[1.6, 0.5, 0.03]} r={0.006} p={[0, 0.45, -0.12]}>{M.wood({ base: [80, 52, 30], rx: 4 })}</RBox>
-    {at.map((a, i) => { const x = -0.66 + i * 0.22; return <group key={i} position={[x, 0.255 + fallY(tt, a, 0.5), 0]} visible={tt > a - 0.3}><group scale={1.4}><Ob i={i} /></group><Sh p={[0, 0, 0]} r={0.05} />
+    {at.map((a, i) => { const x = -0.66 + i * 0.22; return <group key={i} position={[x, 0.255 + fallY(tt, a, 0.5), 0]} visible={tt > a - 0.3}><group scale={1.9}><Ob i={i} /></group><Sh p={[0, 0, 0]} r={0.05} />
       <pointLight position={[0, 0.4, 0.3]} intensity={0.8 * eio(tt, a, a + 0.5)} distance={0.7} color="#ffd8a0" /></group>; })}
   </>}</U3>;
 };

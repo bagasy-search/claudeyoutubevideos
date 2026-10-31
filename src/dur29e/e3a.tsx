@@ -46,9 +46,9 @@ const Pozo: React.FC<{ r: number; h: number; col?: number[]; k?: string }> = ({ 
 const GranAgujeroSogas: React.FC<UP> = ({ d, p }) => {
   const aC = sec(p, "cables", 1.4), aB = sec(p, "baldes", 3.0), N = 22;
   return <U3 d={d} bg={p.bg} ground={null} sky="#c8b89a" mode="iris" key1={[-1.2, 3, 1.4]}
-    cam={{ at: [0, -0.2, 0.1], az: [-0.3, 0.05], el: [0.62, 0.5], r: [2.0, 1.65], fov: 36 }}>{(tt) => <>
+    cam={{ at: [0, -0.02, -0.05], az: [-0.3, 0.05], el: [0.58, 0.48], r: [2.1, 1.8], fov: 36 }}>{(tt) => <>
     <Pozo r={0.9} h={0.7} k="ag" />
-    {[[0.28, 0.98], [0.52, 0.86], [0.02, 1.02]].map(([x, z], i) => <group key={"m" + i} position={[x, 0.06, z]} scale={sm(pop(tt, 0.3 + i * 0.25))}><Stickman escala={0.11} rotY={180 + 20 * i} guion={[{ t: 0, accion: "empujar", expr: "decidido" }] as any} semilla={150 + i} contacto={0} color="#5a4a3a" /></group>)}
+    {[[0.3, -0.96], [-0.3, -0.96], [0.0, -1.02]].map(([x, z], i) => <group key={"m" + i} position={[x, 0.06, z]} scale={sm(pop(tt, 0.3 + i * 0.25))}><Stickman escala={0.11} rotY={20 * i - 10} guion={[{ t: 0, accion: "empujar", expr: "decidido" }] as any} semilla={150 + i} contacto={0} color="#5a4a3a" /></group>)}
     {Array.from({ length: N }, (_, i) => { const an = i / N * 2 * PI, a = aC + i * 0.06, k = eio(tt, a, a + 0.4), top = [Math.cos(an) * 0.92, 0.12, Math.sin(an) * 0.92], bot = [Math.cos(an + 0.4) * 0.2, -0.68, Math.sin(an + 0.4) * 0.2];
       const end = [lerp(top[0], bot[0], k), lerp(top[1], bot[1], k), lerp(top[2], bot[2], k)], u = tt > aB ? ((tt - aB) * 0.18 + rn(i, 3)) % 1 : 0.5, bu = [lerp(bot[0], top[0], u), lerp(bot[1], top[1], u) - 0.06, lerp(bot[2], top[2], u)];
       return <group key={i}>
