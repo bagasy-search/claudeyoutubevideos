@@ -14,13 +14,13 @@ export const Drift: React.FC<{ t: number; a: number; children: React.ReactNode; 
 );
 
 // ---------- 0:00 cuadro 0 = la miniatura sin texto; la cámara entra en ella ----------
-export const THUMB = true;  // true cuando está public/ctr31a/miniatura_base.jpg (la variante elegida sin texto)
+export const THUMB = true;  // cuadro 0 = la miniatura de ChatGPT sin texto (en el bucket: el tar del farm no se re-sube en un parcial)
 export const Thumb0: React.FC<{ t: number; b: number }> = ({ t, b }) => {
   const k = ei(t, 0.15, b);
   return (
     <AbsoluteFill style={{ background: "#0a0c10" }}>
       {THUMB
-        ? <Img src={staticFile(P + "miniatura_base.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", transformOrigin: "52% 62%", transform: `scale(${1 + 0.5 * k})`, filter: k > 0.4 ? `blur(${(k - 0.4) * 20}px)` : undefined }} />
+        ? <Img src="https://whibcuyeufzlvcvbivny.supabase.co/storage/v1/object/public/thumbnails/36cb8b82-9850-4e26-8ac6-de41ea2e6020/base-ctr2026103101-1793489609040.jpg" style={{ width: "100%", height: "100%", objectFit: "cover", transformOrigin: "50% 58%", transform: `scale(${1 + 0.5 * k})`, filter: k > 0.4 ? `blur(${(k - 0.4) * 20}px)` : undefined }} />
         : <Casa t={t} cam={{ p: [0.4 - k * 0.6, 3.4 - k * 0.8, 9.6 - k * 4], l: [-0.6, FLOOR_L, -0.6], fov: 38 }} ev={{ plugs: [1, 1, 1, 1, 1] }} />}
     </AbsoluteFill>
   );
