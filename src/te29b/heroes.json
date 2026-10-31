@@ -1,0 +1,271 @@
+[
+{
+"k": "fleet",
+"at": 20.36,
+"out": 26.86,
+"said": 14.46,
+"ph": "n_bahia_1825",
+"solo": true,
+"kw": "14 BARCOS",
+"kw2": "de guerra franceses"
+},
+{
+"k": "decree",
+"at": 38.2,
+"out": 44.7,
+"said": 38.2,
+"ph": "n_francos_oro",
+"solo": true,
+"kw": "150 MILLONES",
+"kw2": "de francos"
+},
+{
+"k": "tape",
+"at": 54.58,
+"out": 61.58,
+"said": 54.58,
+"ph": "n_calendario_viejo",
+"solo": true,
+"kw": "122 AÑOS"
+},
+{
+"k": "cuphalf",
+"at": 156.16,
+"out": 162.66,
+"said": 150.16,
+"ph": "n_sacos_cafe_puerto",
+"solo": true,
+"kw": "LA MITAD",
+"kw2": "del café del mundo"
+},
+{
+"k": "dotsratio",
+"at": 178.2,
+"out": 182.7,
+"said": 180.8,
+"sp": 1.333
+},
+{
+"k": "spread",
+"at": 207.2,
+"out": 214.2,
+"said": 207.2,
+"ph": "n_antorchas_noche",
+"solo": true,
+"kw": "LEVANTAMIENTO"
+},
+{
+"k": "dominoes",
+"at": 229.92,
+"out": 234.42,
+"said": 229.92,
+"sp": 1.778,
+"ph": "n_casco_espanol",
+"solo": true,
+"kw": "A TODOS",
+"kw2": "España, Inglaterra, Francia"
+},
+{
+"k": "splitflap",
+"at": 262.86,
+"out": 268.86,
+"said": 264.66,
+"ph": "n_acta_independencia",
+"solo": true,
+"kw": "HAITÍ",
+"kw2": "el nombre de la isla"
+},
+{
+"k": "cordon",
+"at": 310.58,
+"out": 315.08,
+"said": 310.88,
+"sp": 1.444,
+"ph": "n_barco_alejandose",
+"solo": true,
+"kw": "AISLADOS"
+},
+{
+"k": "chests10",
+"at": 384.983,
+"out": 391.98,
+"said": 384.98,
+"ph": "n_diez_sacos",
+"solo": true,
+"kw": "10 AÑOS",
+"kw2": "de presupuesto entero"
+},
+{
+"k": "loop",
+"at": 424.5,
+"out": 429.0,
+"said": 426.3,
+"sp": 1.778,
+"ph": "n_flecha_circulo",
+"solo": true,
+"kw": "PARÍS",
+"kw2": "prestado para pagarle a París"
+},
+{
+"k": "chisel",
+"at": 590.22,
+"out": 594.72,
+"said": 591.42,
+"sp": 1.556,
+"ph": "n_nota_tachada",
+"solo": true,
+"kw": "150 → 90",
+"kw2": "millones de francos"
+},
+{
+"k": "ledgerflip",
+"at": 622.803,
+"out": 628.8,
+"said": 622.8,
+"sp": 1.167,
+"ph": "n_fajos_francos",
+"solo": true,
+"kw": "64 AÑOS",
+"kw2": "pagando"
+},
+{
+"k": "slices",
+"at": 672.103,
+"out": 678.6,
+"said": 672.1,
+"ph": "n_mano_quita_monedas",
+"solo": true,
+"kw": "UNA FRACCIÓN"
+},
+{
+"k": "safekey",
+"at": 709.21,
+"out": 713.71,
+"said": 711.51,
+"sp": 1.333,
+"ph": "n_llave_mano",
+"solo": true,
+"kw": "LA LLAVE",
+"kw2": "de la caja"
+},
+{
+"k": "goldbars",
+"at": 742.71,
+"out": 747.21,
+"said": 744.01,
+"sp": 1.778,
+"ph": "n_boveda_puerta",
+"solo": true,
+"kw": "ORO",
+"kw2": "se lo llevan"
+},
+{
+"k": "tallymarks",
+"at": 774.39,
+"out": 778.89,
+"said": 774.79,
+"sp": 1.444
+},
+{
+"k": "generations",
+"at": 807.106,
+"out": 814.11,
+"said": 807.11,
+"ph": "n_fotos_familia_mesa",
+"solo": true,
+"kw": "6 GENERACIONES"
+},
+{
+"k": "rangebar",
+"at": 838.79,
+"out": 843.29,
+"said": 840.69,
+"sp": 1.778
+},
+{
+"k": "backpack",
+"at": 880.17,
+"out": 886.17,
+"said": 877.07,
+"ph": "n_barco_cargado_sale",
+"solo": true,
+"kw": "PIEDRAS",
+"kw2": "en la mochila"
+},
+{
+"k": "beanpath",
+"at": 886.73,
+"out": 891.23,
+"said": 890.53,
+"sp": 5.333,
+"ph": "n_recolector_cesta",
+"solo": true,
+"kw": "LA COSECHA",
+"kw2": "a mano"
+},
+{
+"k": "ocean2x",
+"at": 986.166,
+"out": 991.67,
+"said": 986.17,
+"sp": 1.273,
+"ph": "n_tres_sombreros",
+"solo": true,
+"kw": "2 VECES",
+"kw2": "cruzó el mar"
+},
+{
+"k": "payslip",
+"at": 1004.11,
+"out": 1008.61,
+"said": 1005.11,
+"sp": 1.556,
+"ph": "n_sobre_sueldo",
+"solo": true,
+"kw": "MÁS DE LA MITAD"
+},
+{
+"k": "soup",
+"at": 1069.889,
+"out": 1075.39,
+"said": 1069.89,
+"sp": 1.273
+},
+{
+"k": "fortress",
+"at": 1113.65,
+"out": 1120.65,
+"said": 1109.45,
+"ph": "n_ciudadela_muros",
+"solo": true,
+"kw": "LA CIUDADELA"
+},
+{
+"k": "typewriter",
+"at": 1153.45,
+"out": 1157.95,
+"said": 1154.45,
+"sp": 1.778
+},
+{
+"k": "drawers",
+"at": 1212.789,
+"out": 1219.79,
+"said": 1212.79,
+"ph": "n_archivos_tres",
+"solo": true,
+"kw": "DISPERSOS",
+"kw2": "los papeles"
+},
+{
+"k": "mergetree",
+"at": 1267.01,
+"out": 1271.51,
+"said": 1269.01,
+"sp": 1.778,
+"ph": "n_boveda_oro",
+"solo": true,
+"kw": "1914",
+"kw2": "el oro"
+}
+]
