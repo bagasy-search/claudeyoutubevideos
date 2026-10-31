@@ -190,10 +190,18 @@ export const Scene3D: React.FC<{
         {/* la acción se estira a todo el componente: nada queda quieto antes de la salida */}
         {children(tt)}
         <ClampScales />
+        <Redibuja />
       </ThreeCanvas>
     </AbsoluteFill>
     {/* viñeta suave y luz cálida de arriba (no es filtro: es la luz del cuarto) */}
     <AbsoluteFill style={{ background: "radial-gradient(ellipse 120% 90% at 50% 50%, transparent 58%, rgba(0,0,0,.5))", pointerEvents: "none" }} />
     {over && over(tt)}
   </AbsoluteFill>;
+};
+
+// una textura que terminó de cargar pide un cuadro nuevo (el canvas de Remotion no tiene bucle propio)
+const Redibuja: React.FC = () => {
+  const advance = useThree((s) => s.advance);
+  React.useEffect(() => { const f = () => advance(performance.now()); window.addEventListener("img3d", f); return () => window.removeEventListener("img3d", f); }, [advance]);
+  return null;
 };
