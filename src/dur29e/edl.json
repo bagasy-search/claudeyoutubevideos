@@ -1,0 +1,2338 @@
+{
+"end": 1368.46,
+"shots": [
+{
+"a": 0.0,
+"b": 2.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/dur29e/v01.mp4"
+}
+},
+{
+"a": 2.82,
+"b": 9.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_g02_bucket_rope.png",
+"o": {
+"label": "Kimberley, 1875"
+}
+}
+},
+{
+"a": 9.7,
+"b": 17.66,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_g03_rim_pulleys.png"
+}
+},
+{
+"a": 17.66,
+"b": 27.46,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "GranAgujeroSogas",
+"bg": "img/dur29e/ag/dur29e_g01_pit_ropes_2.png",
+"at": {
+"cables": 36,
+"baldes": 179
+}
+},
+"big": true
+},
+{
+"a": 27.46,
+"b": 32.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_g04_picks_bottom.png"
+}
+},
+{
+"a": 32.94,
+"b": 34.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_t01_globe.png"
+}
+},
+{
+"a": 34.38,
+"b": 50.34,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SieteGlobo",
+"bg": "img/dur29e/ag/dur29e_t03_map_table.png",
+"at": {}
+},
+"big": true
+},
+{
+"a": 50.34,
+"b": 53.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_t02_seven_tools.png"
+}
+},
+{
+"a": 53.86,
+"b": 56.12,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29e/ag/dur29e_f04_old_hands.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"sobrevivir",
+"*UN TURNO.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 56.12,
+"b": 60.56,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 3600,
+"tag": "RENUNCIAS.",
+"sub": "el momento exacto.",
+"fz": 94
+},
+"big": true
+},
+{
+"a": 60.56,
+"b": 66.68,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_t01_globe_2.png"
+}
+},
+{
+"a": 66.68,
+"b": 73.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_a13_whale_tail_2.png"
+}
+},
+{
+"a": 73.1,
+"b": 80.28,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "*7* continentes. *1* turno."
+},
+"big": true
+},
+{
+"a": 80.28,
+"b": 83.76,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_t02_seven_tools_2.png"
+}
+},
+{
+"a": 83.76,
+"b": 88.88,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Un lugar nuevo cada semana. Suscríbete + campanita.",
+"bg": "img/dur29e/ag/dur29e_f03_kitchen_today_2.png"
+}
+},
+{
+"a": 88.88,
+"b": 90.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_f04_old_hands_2.png"
+}
+},
+{
+"a": 90.7,
+"b": 97.02,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿En qué continente durarías más?",
+"bell": false,
+"bg": "img/dur29e/ag/dur29e_f01_five_2.png"
+}
+},
+{
+"a": 97.02,
+"b": 98.48,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 0
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 98.48,
+"b": 101.2,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+20.05,
+49.98
+],
+"lines": [
+"POLONIA",
+"1700",
+"SAL"
+],
+"name": "Wieliczka"
+},
+"big": true
+},
+{
+"a": 101.2,
+"b": 103.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/dur29e/v04.mp4"
+}
+},
+{
+"a": 103.64,
+"b": 107.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_w01_salt_tunnel_2.png",
+"o": {
+"label": "Wieliczka, 1700"
+}
+}
+},
+{
+"a": 107.26,
+"b": 114.34,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ParedSal",
+"bg": "img/dur29e/ag/dur29e_w02_salt_wall.png",
+"at": {
+"piso": 113,
+"techo": 142,
+"paredes": 171
+}
+},
+"big": true
+},
+{
+"a": 114.34,
+"b": 120.34,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "1700",
+"side": "c",
+"v": "img/dur29e/cand/wielhist_01.jpg",
+"ar": 1.5154,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 120.34,
+"b": 128.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_w12_meat_salt.png"
+}
+},
+{
+"a": 128.48,
+"b": 134.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_w11_kings_coins.png"
+}
+},
+{
+"a": 134.1,
+"b": 141.32,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_w03_salt_blocks.png"
+}
+},
+{
+"a": 141.32,
+"b": 145.98,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CaballoRueda",
+"bg": "img/dur29e/ag/dur29e_w04_horse_mine.png",
+"at": {
+"luz": 97
+}
+},
+"big": true
+},
+{
+"a": 145.98,
+"b": 153.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_w05_wet_hood.png"
+}
+},
+{
+"a": 153.22,
+"b": 158.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_w06_torch_pole.png"
+}
+},
+{
+"a": 158.56,
+"b": 159.48,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29e/ag/dur29e_w05_wet_hood_2.png",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*EL PENITENTE.*",
+"el que quema el techo."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 159.48,
+"b": 173.54,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "GasTecho",
+"bg": "img/dur29e/ag/dur29e_w07_flame_ceiling.png",
+"at": {
+"metano": 185,
+"explota": 393
+}
+},
+"big": true
+},
+{
+"a": 173.54,
+"b": 182.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_w08_crawl_floor.png"
+}
+},
+{
+"a": 182.62,
+"b": 190.7,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LlamaTecho",
+"bg": "img/dur29e/ag/dur29e_w06_torch_pole_2.png",
+"at": {
+"vara": 38,
+"quemar": 97
+}
+},
+"big": true
+},
+{
+"a": 190.7,
+"b": 197.12,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_w07_flame_ceiling_2.png"
+}
+},
+{
+"a": 197.12,
+"b": 203.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_w08_crawl_floor_2.png"
+}
+},
+{
+"a": 203.72,
+"b": 216.24,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CapillaSal",
+"bg": "img/dur29e/ag/dur29e_w09_salt_chapel.png",
+"at": {
+"altares": 268,
+"lamparas": 299,
+"estatuas": 315
+}
+},
+"big": true
+},
+{
+"a": 216.24,
+"b": 222.62,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/wieliczka_01.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 222.62,
+"b": 230.68,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_w10_salt_statue.png"
+}
+},
+{
+"a": 230.68,
+"b": 236.4,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/wieliczka_02.jpg",
+"ar": 1.3278,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 236.4,
+"b": 246.32,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 20,
+"tag": "20 SEG",
+"sub": "el techo arde encima tuyo.",
+"fz": 254,
+"s0": 18
+},
+"big": true
+},
+{
+"a": 246.32,
+"b": 247.78,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 1
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 247.78,
+"b": 250.86,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+24.77,
+-28.74
+],
+"prev": [
+20.05,
+49.98
+],
+"lines": [
+"SUDÁFRICA",
+"1875",
+"DIAMANTES"
+],
+"name": "Kimberley"
+},
+"big": true
+},
+{
+"a": 250.86,
+"b": 253.68,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_g03_rim_pulleys_2.png"
+}
+},
+{
+"a": 253.68,
+"b": 274.28,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ColinaAgujero",
+"bg": "img/dur29e/ag/dur29e_k01_hill_diggers.png",
+"at": {
+"colina": 376,
+"pozo": 456,
+"agujero": 500
+}
+},
+"big": true
+},
+{
+"a": 274.28,
+"b": 278.54,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "1872",
+"side": "c",
+"v": "img/dur29e/cand/kimberley_01.jpg",
+"ar": 1.2,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 278.54,
+"b": 296.26,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ParcelasColumnas",
+"bg": "img/dur29e/ag/dur29e_k02_claims_columns.png",
+"at": {
+"parcelas": 41,
+"caminos": 463
+}
+},
+"big": true
+},
+{
+"a": 296.26,
+"b": 300.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_k04_cables_web.png"
+}
+},
+{
+"a": 300.28,
+"b": 305.4,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/kimberley_02.jpg",
+"ar": 1.3382,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 305.4,
+"b": 320.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_k05_walk_road.png"
+}
+},
+{
+"a": 320.48,
+"b": 324.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_k05_walk_road_2.png"
+}
+},
+{
+"a": 324.84,
+"b": 337.12,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TierraAzulBalde",
+"bg": "img/dur29e/ag/dur29e_k03_blue_ground.png",
+"at": {
+"azul": 109,
+"suben": 280
+}
+},
+"big": true
+},
+{
+"a": 337.12,
+"b": 351.346,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PeligrosTres",
+"bg": "img/dur29e/ag/dur29e_k06_broken_cable.png",
+"at": {
+"cortaban": 95,
+"derrumbaban": 214,
+"llovia": 314
+}
+},
+"big": true
+},
+{
+"a": 351.346,
+"b": 355.666,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_k10_rough_diamonds.png"
+}
+},
+{
+"a": 355.666,
+"b": 364.286,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_k09_compound.png"
+}
+},
+{
+"a": 364.286,
+"b": 371.346,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/kimberley_03.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 371.346,
+"b": 376.166,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/bighole_01.jpg",
+"ar": 1.3306,
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 376.166,
+"b": 388.986,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CableZumbido",
+"bg": "img/dur29e/ag/dur29e_k12_vibrating_rope.png",
+"at": {
+"zumbaba": 88,
+"agudo": 286
+}
+},
+"big": true
+},
+{
+"a": 388.986,
+"b": 392.566,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_k12_vibrating_rope_2.png"
+}
+},
+{
+"a": 392.566,
+"b": 400.866,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BaldesArriba",
+"bg": "img/dur29e/ag/dur29e_g04_picks_bottom_2.png",
+"at": {
+"miras": 98
+}
+},
+"big": true
+},
+{
+"a": 400.866,
+"b": 403.546,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 180,
+"tag": "3 MIN",
+"sub": "cien baldes sobre tu cabeza.",
+"fz": 43,
+"s0": 177
+},
+"big": true
+},
+{
+"a": 403.546,
+"b": 405.026,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 2
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 405.026,
+"b": 407.386,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+50.55,
+26.07
+],
+"prev": [
+24.77,
+-28.74
+],
+"lines": [
+"BARÉIN",
+"1900",
+"PERLAS"
+],
+"name": "Baréin"
+},
+"big": true
+},
+{
+"a": 407.386,
+"b": 410.666,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/dur29e/v02.mp4"
+}
+},
+{
+"a": 410.666,
+"b": 415.766,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p01_dhow_deck_2.png",
+"o": {
+"label": "Golfo Pérsico, 1900"
+}
+}
+},
+{
+"a": 415.766,
+"b": 424.506,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PiedraPie",
+"bg": "img/dur29e/ag/dur29e_p02_nose_clip.png",
+"at": {
+"pinza": 56,
+"piedra": 243
+}
+},
+"big": true
+},
+{
+"a": 424.506,
+"b": 427.546,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29e/cand/pearl_01.jpg",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*BUZO DE PERLAS.*",
+"en Baréin."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 427.546,
+"b": 435.426,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/dhow_01.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 435.426,
+"b": 442.746,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p10_pearls_cloth.png"
+}
+},
+{
+"a": 442.746,
+"b": 453.386,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BajadaFondo",
+"bg": "img/dur29e/ag/dur29e_p03_stone_rope.png",
+"at": {
+"fondo": 168
+}
+},
+"big": true
+},
+{
+"a": 453.386,
+"b": 468.726,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CanastaCuerda",
+"bg": "img/dur29e/ag/dur29e_p06_basket_neck.png",
+"at": {
+"canasta": 193,
+"cuerda": 323
+}
+},
+"big": true
+},
+{
+"a": 468.726,
+"b": 472.146,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p07_pull_rope.png"
+}
+},
+{
+"a": 472.146,
+"b": 479.026,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p04_dive_down.png"
+}
+},
+{
+"a": 479.026,
+"b": 488.386,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p08_dates_coffee.png"
+}
+},
+{
+"a": 488.386,
+"b": 495.426,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p05_oyster_bed.png"
+}
+},
+{
+"a": 495.426,
+"b": 498.946,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p14_jellyfish.png"
+}
+},
+{
+"a": 498.946,
+"b": 509.146,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p11_debt_ledger.png"
+}
+},
+{
+"a": 509.146,
+"b": 512.106,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/pearl_02.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 512.106,
+"b": 525.286,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PerlaCultivada",
+"bg": "img/dur29e/ag/dur29e_p12_cultured_box.png",
+"at": {
+"japon": 96,
+"derrumbo": 348
+}
+},
+"big": true
+},
+{
+"a": 525.286,
+"b": 532.326,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PetroleoTorre",
+"bg": "img/dur29e/ag/dur29e_p13_oil_derrick.png",
+"at": {
+"petroleo": 133
+}
+},
+"big": true
+},
+{
+"a": 532.326,
+"b": 542.686,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p07_pull_rope_2.png"
+}
+},
+{
+"a": 542.686,
+"b": 548.786,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/dhow_02.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 548.786,
+"b": 559.206,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 45,
+"tag": "45 SEG",
+"sub": "y una ostra.",
+"fz": 244,
+"s0": 41
+},
+"big": true
+},
+{
+"a": 559.206,
+"b": 571.266,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CincoPeligros",
+"bg": "img/dur29e/ag/dur29e_f01_five.png",
+"at": {}
+},
+"big": true
+},
+{
+"a": 571.266,
+"b": 576.806,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p04_dive_down_2.png"
+}
+},
+{
+"a": 576.806,
+"b": 584.906,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_g02_bucket_rope_2.png"
+}
+},
+{
+"a": 584.906,
+"b": 590.386,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_k07_wall_collapse.png"
+}
+},
+{
+"a": 590.386,
+"b": 600.526,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_k08_flooded_pit.png"
+}
+},
+{
+"a": 600.526,
+"b": 608.926,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p11_debt_ledger_2.png"
+}
+},
+{
+"a": 608.926,
+"b": 613.386,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_r09_store_credit_2.png"
+}
+},
+{
+"a": 613.386,
+"b": 615.066,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 3
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 615.066,
+"b": 618.666,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-120.32,
+39.32
+],
+"prev": [
+50.55,
+26.07
+],
+"lines": [
+"SIERRA NEVADA",
+"1866",
+"EL TREN"
+],
+"name": "California"
+},
+"big": true
+},
+{
+"a": 618.666,
+"b": 621.946,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/dur29e/v05.mp4"
+}
+},
+{
+"a": 621.946,
+"b": 627.086,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_n01_snow_granite_2.png",
+"o": {
+"label": "Sierra Nevada, 1866"
+}
+}
+},
+{
+"a": 627.086,
+"b": 634.526,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "GranitoBarra",
+"bg": "img/dur29e/ag/dur29e_n02_hand_drill.png",
+"at": {
+"martillo": 119
+}
+},
+"big": true
+},
+{
+"a": 634.526,
+"b": 637.786,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29e/cand/cprr_01.jpg",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*OBRERO CHINO.*",
+"del Central Pacific."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 637.786,
+"b": 652.706,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "DosVias",
+"bg": "img/dur29e/ag/dur29e_n03_rail_line.png",
+"at": {
+"este": 188,
+"california": 289
+}
+},
+"big": true
+},
+{
+"a": 652.706,
+"b": 667.686,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/cprr_02.jpg",
+"ar": 1.1496,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 667.686,
+"b": 673.306,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_n10_rice_bowls.png"
+}
+},
+{
+"a": 673.306,
+"b": 690.052,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TunelNieve",
+"bg": "img/dur29e/ag/dur29e_n05_snow_tunnel.png",
+"at": {
+"tormentas": 200,
+"tuneles": 287
+}
+},
+"big": true
+},
+{
+"a": 690.052,
+"b": 699.012,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "Avalancha",
+"bg": "img/dur29e/ag/dur29e_n06_avalanche.png",
+"at": {
+"avalanchas": 13
+}
+},
+"big": true
+},
+{
+"a": 699.012,
+"b": 704.172,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/sierra_01.jpg",
+"ar": 1.8935,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 704.172,
+"b": 706.852,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_n09_blast_holes.png"
+}
+},
+{
+"a": 706.852,
+"b": 711.292,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_n08_nitro_bottle.png"
+}
+},
+{
+"a": 711.292,
+"b": 715.992,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_n07_summit_tunnel.png"
+}
+},
+{
+"a": 715.992,
+"b": 731.092,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TeHervido",
+"bg": "img/dur29e/ag/dur29e_n04_tea_kettle.png",
+"at": {
+"hervir": 312
+}
+},
+"big": true
+},
+{
+"a": 731.092,
+"b": 743.412,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_n10_rice_bowls_2.png"
+}
+},
+{
+"a": 743.412,
+"b": 744.432,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/cprr_03.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 744.432,
+"b": 749.672,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_n11_golden_spike.png"
+}
+},
+{
+"a": 749.672,
+"b": 766.692,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CargaDormida",
+"bg": "img/dur29e/ag/dur29e_n12_dud_fuse.png",
+"at": {
+"esperando": 469
+}
+},
+"big": true
+},
+{
+"a": 766.692,
+"b": 776.472,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 600,
+"tag": "10 MIN",
+"sub": "la nieve decide bajar.",
+"fz": 255,
+"s0": 549
+},
+"big": true
+},
+{
+"a": 776.472,
+"b": 777.952,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 4
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 777.952,
+"b": 779.852,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-60.02,
+-3.12
+],
+"prev": [
+-120.32,
+39.32
+],
+"lines": [
+"AMAZONAS",
+"1900",
+"CAUCHO"
+],
+"name": "Amazonas"
+},
+"big": true
+},
+{
+"a": 779.852,
+"b": 782.992,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/dur29e/v06.mp4"
+}
+},
+{
+"a": 782.992,
+"b": 797.132,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SelvaLampara",
+"bg": "img/dur29e/ag/dur29e_r13_mosquitoes.png",
+"at": {
+"mosquitos": 53,
+"lamparita": 388
+}
+},
+"big": true
+},
+{
+"a": 797.132,
+"b": 801.992,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_r01_jungle_dawn_2.png",
+"o": {
+"label": "Amazonas, 1900"
+}
+}
+},
+{
+"a": 801.992,
+"b": 804.592,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29e/cand/rubber_01.jpg",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*SIRINGUERO.*",
+"recolector de caucho."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 804.592,
+"b": 815.332,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "RuedaCaucho",
+"bg": "img/dur29e/ag/dur29e_r07_rubber_ball.png",
+"at": {
+"bicicletas": 183,
+"autos": 235
+}
+},
+"big": true
+},
+{
+"a": 815.332,
+"b": 823.032,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_r04_tree_cuts.png"
+}
+},
+{
+"a": 823.032,
+"b": 831.212,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/manaus_01.jpg",
+"ar": 1.0579,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 831.212,
+"b": 834.812,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_r10_river_boat.png"
+}
+},
+{
+"a": 834.812,
+"b": 855.092,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CorteLatex",
+"bg": "img/dur29e/ag/dur29e_r05_latex_cup.png",
+"at": {
+"cortes": 353,
+"leche": 540
+}
+},
+"big": true
+},
+{
+"a": 855.092,
+"b": 859.512,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_r02_curved_knife.png"
+}
+},
+{
+"a": 859.512,
+"b": 875.132,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BolaHumo",
+"bg": "img/dur29e/ag/dur29e_r06_smoke_fire.png",
+"at": {
+"humo": 86,
+"bola": 317
+}
+},
+"big": true
+},
+{
+"a": 875.132,
+"b": 880.532,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_r03_head_lamp.png"
+}
+},
+{
+"a": 880.532,
+"b": 895.732,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_r09_store_credit.png"
+}
+},
+{
+"a": 895.732,
+"b": 905.092,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/rubber_02.jpg",
+"ar": 1.4803,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 905.092,
+"b": 919.252,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SemillasFilas",
+"bg": "img/dur29e/ag/dur29e_r11_plantation_rows.png",
+"at": {
+"semillas": 89,
+"filas": 219
+}
+},
+"big": true
+},
+{
+"a": 919.252,
+"b": 921.552,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_r12_empty_city.png"
+}
+},
+{
+"a": 921.552,
+"b": 931.612,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_r04_tree_cuts_2.png"
+}
+},
+{
+"a": 931.612,
+"b": 935.092,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_r05_latex_cup_2.png"
+}
+},
+{
+"a": 935.092,
+"b": 947.732,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 3600,
+"tag": "1 MES",
+"sub": "y no te puedes ir.",
+"fz": 311,
+"s0": 3246
+},
+"big": true
+},
+{
+"a": 947.732,
+"b": 964.212,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "el ranking *hasta ahora.*",
+"final": [
+58,
+152,
+223,
+320,
+408
+]
+},
+"big": true
+},
+{
+"a": 964.212,
+"b": 969.932,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_a07_storm_sea.png"
+}
+},
+{
+"a": 969.932,
+"b": 971.772,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 5
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 971.772,
+"b": 974.432,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+173.9,
+-35.5
+],
+"prev": [
+-60.02,
+-3.12
+],
+"lines": [
+"NUEVA ZELANDA",
+"1890",
+"GOMA KAURI"
+],
+"name": "Nueva Zelanda"
+},
+"big": true
+},
+{
+"a": 974.432,
+"b": 976.492,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_o01_swamp.png"
+}
+},
+{
+"a": 976.492,
+"b": 991.052,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PantanoVara",
+"bg": "img/dur29e/ag/dur29e_o01_swamp_2.png",
+"at": {
+"vara": 314
+}
+},
+"big": true
+},
+{
+"a": 991.052,
+"b": 993.112,
+"k": "g",
+"t": "word",
+"p": {
+"bg": "img/dur29e/cand/kauri_01.jpg",
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*GOMA KAURI.*",
+"buscador."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 993.112,
+"b": 1014.452,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ResinaSiglos",
+"bg": "img/dur29e/ag/dur29e_o10_kauri_trees.png",
+"at": {
+"resina": 230,
+"enterrada": 336
+}
+},
+"big": true
+},
+{
+"a": 1014.452,
+"b": 1021.132,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_o09_varnish_tins.png"
+}
+},
+{
+"a": 1021.132,
+"b": 1028.518,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/kauri_02.jpg",
+"ar": 1.9181,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1028.518,
+"b": 1037.158,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/kauri_03.jpg",
+"ar": 1.5038,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1037.158,
+"b": 1051.658,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "VaraToca",
+"bg": "img/dur29e/ag/dur29e_o02_iron_probe.png",
+"at": {
+"raiz": 332,
+"piedra": 363,
+"goma": 391
+}
+},
+"big": true
+},
+{
+"a": 1051.658,
+"b": 1058.438,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_o04_dug_hole.png"
+}
+},
+{
+"a": 1058.438,
+"b": 1062.458,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_o05_root.png"
+}
+},
+{
+"a": 1062.458,
+"b": 1070.118,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "VelaRaspado",
+"bg": "img/dur29e/ag/dur29e_o06_hut_candle.png",
+"at": {
+"vela": 50,
+"raspas": 146
+}
+},
+"big": true
+},
+{
+"a": 1070.118,
+"b": 1075.578,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_o08_gum_store.png"
+}
+},
+{
+"a": 1075.578,
+"b": 1084.198,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_o02_iron_probe_2.png"
+}
+},
+{
+"a": 1084.198,
+"b": 1091.218,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/kauri_04.jpg",
+"ar": 1.3685,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1091.218,
+"b": 1102.198,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 1800,
+"tag": "30 MIN",
+"sub": "y era una raíz.",
+"fz": 299,
+"s0": 1579
+},
+"big": true
+},
+{
+"a": 1102.198,
+"b": 1103.758,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 6
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 1103.758,
+"b": 1107.078,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-36.5,
+-54.28
+],
+"prev": [
+173.9,
+-35.5
+],
+"lines": [
+"GEORGIA DEL SUR",
+"1912",
+"BALLENAS"
+],
+"name": "Grytviken"
+},
+"big": true
+},
+{
+"a": 1107.078,
+"b": 1113.418,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_a07_storm_sea_2.png"
+}
+},
+{
+"a": 1113.418,
+"b": 1116.558,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/dur29e/v03.mp4"
+}
+},
+{
+"a": 1116.558,
+"b": 1132.938,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BahiaEstacion",
+"bg": "img/dur29e/ag/dur29e_a01_bay_station_2.png",
+"at": {
+"galpones": 270,
+"chimeneas": 385
+}
+},
+"big": true
+},
+{
+"a": 1132.938,
+"b": 1136.058,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/grytviken_01.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1136.058,
+"b": 1146.858,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/grytviken_02.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1146.858,
+"b": 1160.518,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "AceiteUsos",
+"bg": "img/dur29e/ag/dur29e_a08_oil_barrels.png",
+"at": {
+"jabon": 139,
+"margarina": 170,
+"maquinas": 222
+}
+},
+"big": true
+},
+{
+"a": 1160.518,
+"b": 1165.478,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_a06_catcher_boat.png"
+}
+},
+{
+"a": 1165.478,
+"b": 1172.718,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_a03_flensing_deck.png"
+}
+},
+{
+"a": 1172.718,
+"b": 1177.338,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/grytviken_03.jpg",
+"ar": 1.5169,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1177.338,
+"b": 1181.818,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_a04_long_knives.png"
+}
+},
+{
+"a": 1181.818,
+"b": 1184.178,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_a02_boilers.png"
+}
+},
+{
+"a": 1184.178,
+"b": 1192.158,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BotasClavos",
+"bg": "img/dur29e/ag/dur29e_a05_spiked_boots.png",
+"at": {
+"botas": 171,
+"clavos": 189
+}
+},
+"big": true
+},
+{
+"a": 1192.158,
+"b": 1203.958,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_a06_catcher_boat_2.png"
+}
+},
+{
+"a": 1203.958,
+"b": 1208.698,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_a09_church.png"
+}
+},
+{
+"a": 1208.698,
+"b": 1214.958,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/grytviken_04.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1214.958,
+"b": 1231.638,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ShackletonBote",
+"bg": "img/dur29e/ag/dur29e_a10_small_boat.png",
+"at": {
+"bote": 340,
+"montanas": 394
+}
+},
+"big": true
+},
+{
+"a": 1231.638,
+"b": 1236.078,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur29e/cand/shackleton_01.jpg",
+"ar": 1.397,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1236.078,
+"b": 1239.618,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_a11_grave.png"
+}
+},
+{
+"a": 1239.618,
+"b": 1243.838,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_a12_rusted_today.png"
+}
+},
+{
+"a": 1243.838,
+"b": 1248.278,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_a13_whale_tail.png"
+}
+},
+{
+"a": 1248.278,
+"b": 1258.158,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_a05_spiked_boots_2.png"
+}
+},
+{
+"a": 1258.158,
+"b": 1263.538,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_a03_flensing_deck_2.png"
+}
+},
+{
+"a": 1263.538,
+"b": 1276.618,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 60,
+"tag": "1 MIN",
+"sub": "y el barco vuelve en 5 meses.",
+"fz": 257,
+"s0": 55
+},
+"big": true
+},
+{
+"a": 1276.618,
+"b": 1279.298,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_f02_seven_objects.png"
+}
+},
+{
+"a": 1279.298,
+"b": 1311.858,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "el tablero *final.*",
+"final": [
+0,
+142,
+264,
+386,
+544,
+679,
+784
+]
+},
+"big": true
+},
+{
+"a": 1311.858,
+"b": 1325.238,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SieteObjetos",
+"bg": "img/dur29e/ag/dur29e_f02_seven_objects_2.png",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1325.238,
+"b": 1329.698,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_o03_gum_lump.png"
+}
+},
+{
+"a": 1329.698,
+"b": 1340.998,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "AntesAhora",
+"bg": "img/dur29e/ag/dur29e_f03_kitchen_today.png",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1340.998,
+"b": 1346.758,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_k11_big_hole_today.png"
+}
+},
+{
+"a": 1346.758,
+"b": 1356.398,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_p09_opening_oysters.png"
+}
+},
+{
+"a": 1356.398,
+"b": 1362.578,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿Cuál de los siete elegirías?",
+"bell": false,
+"bg": "img/dur29e/ag/dur29e_o07_scraping.png"
+}
+},
+{
+"a": 1362.578,
+"b": 1368.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur29e/ag/dur29e_k11_big_hole_today_2.png"
+}
+}
+],
+"stops": [
+{
+"n": 1,
+"a": 101.2,
+"q": 244.867,
+"w0": 236.4,
+"w1": 246.32,
+"fin": 20,
+"tag": "20 SEG",
+"b": 246.32
+},
+{
+"n": 2,
+"a": 250.86,
+"q": 402.299,
+"w0": 400.866,
+"w1": 403.546,
+"fin": 180,
+"tag": "3 MIN",
+"b": 403.546
+},
+{
+"n": 3,
+"a": 407.386,
+"q": 556.919,
+"w0": 548.786,
+"w1": 559.206,
+"fin": 45,
+"tag": "45 SEG",
+"b": 613.386
+},
+{
+"n": 4,
+"a": 618.666,
+"q": 775.192,
+"w0": 766.692,
+"w1": 776.472,
+"fin": 600,
+"tag": "10 MIN",
+"b": 776.472
+},
+{
+"n": 5,
+"a": 779.852,
+"q": 945.459,
+"w0": 935.092,
+"w1": 947.732,
+"fin": 3600,
+"tag": "1 MES",
+"b": 947.732
+},
+{
+"n": 6,
+"a": 974.432,
+"q": 1101.185,
+"w0": 1091.218,
+"w1": 1102.198,
+"fin": 1800,
+"tag": "30 MIN",
+"b": 1102.198
+},
+{
+"n": 7,
+"a": 1107.078,
+"q": 1272.105,
+"w0": 1263.538,
+"w1": 1276.618,
+"fin": 60,
+"tag": "1 MIN",
+"b": 1279.298
+}
+]
+}

@@ -205,22 +205,20 @@ export const Watch: React.FC<{ d: number; fz: number; fin: number | null; tag: s
 
 // ───────────────────────── ROSTER de oficios (abre cada parada; al final = tablero con la suma) ─────────────────────────
 export const JOBS = [
-  { y: "1900", job: "BREAKER BOY", res: "10 MIN" }, { y: "1910", job: "CORTE CULEBRA", res: "5 MIN" }, { y: "1920", job: "PINBOY", res: "1 MIN" },
-  { y: "1930", job: "REMACHADOR", res: "8 SEG" }, { y: "1940", job: "SOLDADORA", res: "30 MIN" }, { y: "1950", job: "MINERO DE URANIO", res: "NUNCA" },
-  { y: "1960", job: "PILOTO DE PRUEBAS", res: "3 MIN" }, { y: "1970", job: "BUZO DE SATURACIÓN", res: "2 MIN" }, { y: "1980", job: "LIQUIDADOR", res: "90 SEG" },
+  { y: "Europa", job: "EL PENITENTE", res: "20 SEG" }, { y: "África", job: "MINERO DE KIMBERLEY", res: "3 MIN" }, { y: "Asia", job: "BUZO DE PERLAS", res: "45 SEG" },
+  { y: "América del Norte", job: "OBRERO DEL TREN", res: "10 MIN" }, { y: "América del Sur", job: "SIRINGUERO", res: "1 MES" }, { y: "Oceanía", job: "GOMA KAURI", res: "30 MIN" },
+  { y: "Antártida", job: "BALLENERO", res: "1 MIN" },
 ];
 export const Icon: React.FC<{ i: number; c: string }> = ({ i, c }) => {
   const st = { fill: "none", stroke: c, strokeWidth: 6, strokeLinecap: "round", strokeLinejoin: "round" } as const;
   const g = [
-    <g key={0}><path d="M8,30 L92,70" {...st} /><path d="M30,48 L38,38 L48,44 L44,54 Z M58,58 L66,50 L74,58 L68,66 Z" {...st} /><path d="M20,90 L20,70 M80,92 L80,80" {...st} /></g>,
-    <g key={1}><path d="M30,8 L58,62" {...st} /><path d="M22,10 L38,4" {...st} /><path d="M50,58 L74,48 L86,82 Q70,96 58,88 Z" {...st} /></g>,
-    <g key={2}><path d="M50,6 Q38,6 40,26 Q42,34 36,46 Q26,70 36,90 L64,90 Q74,70 64,46 Q58,34 60,26 Q62,6 50,6 Z" {...st} /><path d="M40,30 L60,30" {...st} /></g>,
-    <g key={3}><path d="M30,20 Q50,0 70,20 L70,26 L30,26 Z" {...st} /><path d="M42,26 L42,86 L58,86 L58,26" {...st} /><path d="M14,52 L30,52 M70,52 L86,52" {...st} /></g>,
-    <g key={4}><path d="M20,20 L80,20 L84,70 Q50,96 16,70 Z" {...st} /><path d="M30,42 L70,42 L70,54 L30,54 Z" {...st} /></g>,
-    <g key={5}><circle cx={50} cy={52} r={8} {...st} /><path d="M50,40 L36,14 Q50,6 64,14 Z M60,58 L88,62 Q86,78 74,86 Z M40,58 L26,86 Q14,78 12,62 Z" {...st} /></g>,
-    <g key={6}><path d="M10,52 L90,46" {...st} /><path d="M46,48 L30,20 L40,20 L62,48 M46,50 L32,80 L42,80 L62,50" {...st} /><path d="M82,40 L92,46 L82,52" {...st} /></g>,
-    <g key={7}><circle cx={50} cy={50} r={36} {...st} /><circle cx={50} cy={50} r={16} {...st} /><path d="M50,14 L50,4 M86,50 L96,50 M14,50 L4,50" {...st} /></g>,
-    <g key={8}><circle cx={50} cy={56} r={34} {...st} /><path d="M50,56 L50,32 M44,12 L56,12 M50,12 L50,22 M76,26 L82,20" {...st} /></g>,
+    <g key={0}><path d="M12,92 L74,22" {...st} /><path d="M74,22 Q66,8 78,2 Q90,12 80,24 Z" {...st} /><path d="M8,70 Q30,64 52,74" {...st} /></g>,
+    <g key={1}><path d="M4,8 L96,40" {...st} /><path d="M50,24 L50,46" {...st} /><path d="M34,46 L66,46 L60,80 L40,80 Z" {...st} /></g>,
+    <g key={2}><path d="M14,58 Q50,20 86,58 Q50,90 14,58 Z" {...st} /><circle cx={50} cy={56} r={10} {...st} /></g>,
+    <g key={3}><path d="M6,80 L94,80 M6,92 L94,92" {...st} /><path d="M20,80 L20,92 M42,80 L42,92 M64,80 L64,92 M86,80 L86,92" {...st} /><path d="M30,60 L70,20 M60,12 L78,30" {...st} /></g>,
+    <g key={4}><path d="M40,96 L40,8 M60,96 L60,8" {...st} /><path d="M40,40 L60,52 M40,52 L60,64" {...st} /><path d="M66,70 L82,70 L80,90 L68,90 Z" {...st} /></g>,
+    <g key={5}><path d="M30,6 L58,86" {...st} /><path d="M6,70 Q50,60 94,72" {...st} /><path d="M58,86 Q70,84 74,94 Q60,100 52,94 Z" {...st} /></g>,
+    <g key={6}><path d="M8,60 Q30,30 70,44 Q86,40 94,28 Q92,48 80,54 Q60,76 20,70 Z" {...st} /><path d="M30,94 L70,74" {...st} /></g>,
   ];
   return <svg width={100} height={100} viewBox="0 0 100 100" style={{ overflow: "visible" }}>{g[i]}</svg>;
 };
@@ -265,7 +263,7 @@ export const PinMap: React.FC<{ d: number; at: [number, number]; prev?: [number,
   return (
     <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, #13304a 0%, #06111c 78%)", overflow: "hidden" }}>
       <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: `${px}px ${py}px` }}>
-        <Img src={sf("img/dur29d/map_mundo.png")} style={{ position: "absolute", left: 0, top: (1080 - MAP.H) / 2, width: MAP.W, height: MAP.H, opacity: 0.92 }} />
+        <Img src={sf("img/dur29e/map_mundo.png")} style={{ position: "absolute", left: 0, top: (1080 - MAP.H) / 2, width: MAP.W, height: MAP.H, opacity: 0.92 }} />
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, overflow: "visible" }}>
           {pp && <path d={`M${pp[0]},${pp[1]} Q${mx},${my} ${px},${py}`} fill="none" stroke={INK} strokeWidth={4 / z} strokeDasharray={`${10 / z} ${10 / z}`} pathLength={1} style={{ strokeDasharray: 1, strokeDashoffset: 1 - route } as any} opacity={0.85} />}
           {[0, 1].map((k) => { const ph = ((f + k * 22) % 44) / 44; return <circle key={k} cx={px} cy={py} r={(8 + ph * 46) / z} fill="none" stroke={RED} strokeWidth={4 / z} opacity={1 - ph} />; })}
