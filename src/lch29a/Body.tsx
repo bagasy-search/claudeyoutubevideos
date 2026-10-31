@@ -28,9 +28,9 @@ export const END = PL.end;
 const base = (t: number): React.ReactNode => {
   const g = PL.segs.find(([a, b]) => t >= a && t < b);
   if (!g) return <World t={t} />;
-  const [a, , , id] = g;
+  const [a, b, , id] = g;
   // clip de Veo (8 s, ya con movimiento): va entero desde su cuadro 0; si todavía no llegó, el mundo
-  if (id.startsWith("v")) return OK.has(id) ? <AbsoluteFill style={{ transform: `scale(${1.02 + 0.04 * e(t, a, a + 8)})` }}><Vid id={"veo/" + id} at={a} /></AbsoluteFill> : <World t={t} />;
+  if (id.startsWith("v")) return OK.has(id) ? <AbsoluteFill style={{ transform: `scale(${1.02 + 0.04 * e(t, a, a + 8)})` }}><Vid id={"veo/" + id} at={a} rate={Math.min(1, 7.85 / (b - a))} /></AbsoluteFill> : <World t={t} />;
   return <Clip k={"c_" + id} t={t} a={a}><Shot k={id} t={t} a={a} /></Clip>;
 };
 const nowAv = (t: number) => WIN.some((w) => t >= w.ms && t < w.me);

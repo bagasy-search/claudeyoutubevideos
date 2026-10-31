@@ -412,19 +412,24 @@ export const CoverFlow: React.FC<{ t: number; at: number; out: number; cards: Ca
   let act = 0; for (let i = 1; i < N; i++) act += phys(t, cards[i].at - 0.25, 6.2, 0.5);
   // empujón de cámara en cada llegada: sube y baja en curva (seno amortiguado), nunca lineal
   let push = 0; for (let i = 0; i < N; i++) { const x = t - (cards[i].at - 0.25); if (x > 0) push += Math.sin(Math.min(x, 1.6) / 1.6 * Math.PI) * Math.exp(-x * 0.6); }
-  const camZ = -520 * (1 - inn) + 40 * push + 26 * Math.sin((t - at) * 0.21) - 900 * xo;
-  const camRY = 16 * (1 - inn) + 4.2 * Math.sin((t - at) * 0.17 + 0.6) - 10 * xo;
-  const camRX = 6 + 1.6 * Math.sin((t - at) * 0.13) + 8 * xo;
-  const camY = 10 * Math.sin((t - at) * 0.11 + 1.2);
+  // cámara viva: órbita lenta pero amplia + acercamiento continuo dentro de cada tarjeta (nunca quieto >2 s)
+  let ins = 0; for (let i = 0; i < N; i++) { const a0 = cards[i].at, a1 = i + 1 < N ? cards[i + 1].at : out; if (t >= a0) ins = cl((t - a0) / Math.max(1, a1 - a0)); }
+  const camZ = -520 * (1 - inn) + 40 * push + 70 * Math.sin((t - at) * 0.33) + 110 * ei(ins, 0, 1) - 900 * xo;
+  const camRY = 16 * (1 - inn) + 11 * Math.sin((t - at) * 0.27 + 0.6) - 10 * xo;
+  const camRX = 6 + 3.5 * Math.sin((t - at) * 0.23) + 8 * xo;
+  const camY = 22 * Math.sin((t - at) * 0.19 + 1.2);
   const R = iris * 1500;
   const mask = `radial-gradient(circle at 50% 52%, #000 ${R}px, transparent ${R + 520}px)`;
   const hdr = cl(phys(t, at + 0.35, 6, 0.7)) * (1 - eIn(t, out - 0.4, out + 0.4));
   return <AbsoluteFill style={{ opacity: cl(iris * 2.2), fontFamily: FONT, color: G.txt, WebkitMaskImage: mask, maskImage: mask } as React.CSSProperties}>
     <AbsoluteFill style={{ background: `radial-gradient(ellipse 70% 60% at 50% 46%, ${c}22, #0b0b0d 62%), #0b0b0d` }} />
     <div style={{ position: "absolute", left: 0, right: 0, top: 860, height: 220, background: "linear-gradient(180deg, rgba(255,255,255,.04), transparent)" }} />
-    <div style={{ position: "absolute", left: 110, top: 86, opacity: hdr, transform: `translateX(${(1 - hdr) * -40}px)` }}>
-      <Kicker txt={kicker} col={c} w={hdr} />
-      <div style={{ fontWeight: 800, fontSize: 58, marginTop: 6, opacity: cl(hdr * 1.5), clipPath: `inset(0 ${(1 - cl(hdr)) * 100}% 0 0)` }}>{title}</div>
+    {/* la palabra va EN la escena: grabada en el piso, bajo las tarjetas, con perspectiva; entra de a letras con resorte */}
+    <div style={{ position: "absolute", left: 0, right: 0, top: 985, perspective: 900, display: "flex", justifyContent: "center", opacity: hdr * 0.85 }}>
+      <div style={{ transform: `rotateX(58deg) translateZ(${(1 - hdr) * -120}px)`, fontWeight: 900, fontSize: 104, letterSpacing: 6, whiteSpace: "nowrap",
+        color: "transparent", WebkitTextStroke: `2px ${c}`, textShadow: `0 0 40px ${c}55` } as React.CSSProperties}>
+        {title.split("").map((ch, i) => { const k = phys(t, at + 0.5 + i * 0.035, 7, 0.55); return <span key={i} style={{ display: "inline-block", opacity: cl(k * 1.5), transform: `translateY(${(1 - k) * 60}px)` }}>{ch === " " ? "\u00a0" : ch}</span>; })}
+      </div>
     </div>
     {/* contador: el número nuevo cae desde arriba con resorte y empuja al anterior hacia abajo */}
     <div style={{ position: "absolute", right: 110, top: 96, fontWeight: 800, fontSize: 64, letterSpacing: -1, opacity: cl(phys(t, cards[0].at - 0.3, 6, 0.7)) * (1 - xo), display: "flex", alignItems: "baseline" }}>
