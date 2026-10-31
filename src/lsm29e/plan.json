@@ -1,0 +1,627 @@
+{
+"segs": [
+[
+4.36,
+10.36,
+"shot",
+"f02_velas_altar"
+],
+[
+10.84,
+15.4,
+"shot",
+"f03_puertas_traseras"
+],
+[
+19.31,
+22.88,
+"shot",
+"f04_vestido_blanco_pasillo"
+],
+[
+22.88,
+29.88,
+"shot",
+"f09_album_boda_mesa"
+],
+[
+37.32,
+41.84,
+"shot",
+"f05_salon_mesas_redondas"
+],
+[
+41.84,
+47.81,
+"shot",
+"f08_jamon_pollo_buffet"
+],
+[
+54.52,
+58.38,
+"shot",
+"f22_servilleta_sobre_plato"
+],
+[
+58.38,
+63.46,
+"shot",
+"v01"
+],
+[
+71.48,
+78.48,
+"shot",
+"f71_pista_luces"
+],
+[
+95.76,
+98.57,
+"shot",
+"f68_biblia_cartera_panuelo"
+],
+[
+112.1,
+114.41,
+"shot",
+"f11_vestido_marfil_percha"
+],
+[
+124.34,
+130.34,
+"shot",
+"f17_lentejuelas_flash"
+],
+[
+136.35,
+143.35,
+"shot",
+"f12_escalones_iglesia"
+],
+[
+149.53,
+156.36,
+"shot",
+"f10_dedo_foto_album"
+],
+[
+156.36,
+162.79,
+"shot",
+"f13_filipenses_2"
+],
+[
+173.72,
+179.48,
+"shot",
+"f14_vestido_champan_cola"
+],
+[
+183.3,
+189.0,
+"shot",
+"f15_vestido_prestado_1948"
+],
+[
+189.0,
+193.34,
+"shot",
+"f16_banco_fondo_salon"
+],
+[
+215.79,
+222.79,
+"shot",
+"f18_sombrero_grande"
+],
+[
+231.71,
+237.94,
+"shot",
+"f20_microfono_ponche"
+],
+[
+237.94,
+243.52,
+"shot",
+"v02"
+],
+[
+266.58,
+272.58,
+"shot",
+"f21_reloj_cocina"
+],
+[
+279.59,
+287.59,
+"shot",
+"f23_proverbios_25"
+],
+[
+320.86,
+322.5,
+"shot",
+"f24_ficha_brindis"
+],
+[
+328.71,
+334.71,
+"shot",
+"f25_espejo_bano"
+],
+[
+352.01,
+359.01,
+"shot",
+"f27_te_helado_vaso"
+],
+[
+371.51,
+374.84,
+"shot",
+"f28_gorra_semillas"
+],
+[
+397.23,
+401.83,
+"shot",
+"f29_cocina_iglesia"
+],
+[
+401.83,
+405.45,
+"shot",
+"f30_lista_regalos"
+],
+[
+417.41,
+423.37,
+"shot",
+"f31_ponchera_cristal"
+],
+[
+445.69,
+449.91,
+"shot",
+"f33_proverbios_27"
+],
+[
+449.91,
+454.77,
+"shot",
+"f34_toallas_lista"
+],
+[
+465.43,
+470.67,
+"shot",
+"f35_ficha_receta_mano"
+],
+[
+475.71,
+483.71,
+"shot",
+"v05"
+],
+[
+490.64,
+497.64,
+"shot",
+"f38_mesa_servir_fila"
+],
+[
+498.97,
+502.87,
+"shot",
+"f39_puerta_cocina_mesa"
+],
+[
+506.51,
+512.51,
+"shot",
+"f40_ponchera_rellenar"
+],
+[
+530.31,
+535.25,
+"shot",
+"f41_repasador_lagrimas"
+],
+[
+539.44,
+547.44,
+"shot",
+"f42_proverbios_16"
+],
+[
+556.02,
+561.91,
+"shot",
+"f43_panecillos_canasta"
+],
+[
+561.91,
+563.79,
+"shot",
+"f44_cafe_primero"
+],
+[
+563.79,
+566.86,
+"shot",
+"f45_delantal_silla"
+],
+[
+627.63,
+632.48,
+"shot",
+"f46_tarjeta_rsvp_sobre"
+],
+[
+640.81,
+648.81,
+"shot",
+"v06"
+],
+[
+654.37,
+660.37,
+"shot",
+"f47_plato_jamon_basura"
+],
+[
+668.76,
+676.76,
+"shot",
+"f49_mateo_5"
+],
+[
+687.36,
+690.48,
+"shot",
+"f50_buzon_campo"
+],
+[
+690.48,
+697.48,
+"shot",
+"f51_sobre_nombre"
+],
+[
+704.01,
+711.01,
+"shot",
+"f52_mesas_dia_antes"
+],
+[
+723.58,
+731.11,
+"shot",
+"v04"
+],
+[
+736.79,
+739.46,
+"shot",
+"f54_frascos_flores"
+],
+[
+739.46,
+745.46,
+"shot",
+"f55_mesa_principal"
+],
+[
+752.25,
+755.04,
+"shot",
+"f56_mesa_abuelos_frente"
+],
+[
+755.04,
+762.04,
+"shot",
+"f57_torta_tres_pisos_ventana"
+],
+[
+767.06,
+773.06,
+"shot",
+"f59_platos_cocineras"
+],
+[
+782.72,
+786.48,
+"shot",
+"f60_foto_boda_1966"
+],
+[
+786.48,
+792.48,
+"shot",
+"f61_papas_gratinadas"
+],
+[
+801.76,
+807.76,
+"shot",
+"f63_ponche_sorbete_lima"
+],
+[
+817.02,
+825.02,
+"shot",
+"v09"
+],
+[
+841.16,
+842.49,
+"shot",
+"f65_anillo_caja"
+],
+[
+855.0,
+859.22,
+"shot",
+"f66_ramo_novia"
+],
+[
+887.22,
+894.05,
+"shot",
+"f67_corintios_13"
+],
+[
+904.04,
+910.4,
+"shot",
+"v03"
+],
+[
+916.51,
+922.51,
+"shot",
+"f69_tarjeta_regalo_nota"
+],
+[
+954.36,
+958.85,
+"shot",
+"f19_vestido_azul_cuello"
+],
+[
+977.6,
+984.6,
+"shot",
+"f37_repasadores_tarjeta"
+],
+[
+995.45,
+1002.45,
+"shot",
+"f70_tocadiscos_salon"
+],
+[
+1031.01,
+1033.17,
+"shot",
+"f72_estacionamiento_noche"
+],
+[
+1033.17,
+1038.34,
+"shot",
+"f73_centros_empacando"
+],
+[
+1081.57,
+1087.68,
+"shot",
+"v07"
+],
+[
+1094.65,
+1102.65,
+"shot",
+"f74_eclesiastes_3"
+],
+[
+1116.81,
+1120.77,
+"shot",
+"v08"
+],
+[
+1157.73,
+1163.73,
+"shot",
+"f07_servilletas_cisne"
+],
+[
+1186.91,
+1192.91,
+"shot",
+"f76_panuelo_viejo"
+],
+[
+1204.62,
+1210.62,
+"shot",
+"f06_mentas_vasitos"
+],
+[
+1221.49,
+1227.69,
+"shot",
+"f75_granero_boda"
+],
+[
+1282.78,
+1288.78,
+"shot",
+"f58_caja_freezer_torta"
+],
+[
+1318.49,
+1326.49,
+"shot",
+"v10"
+]
+],
+"ov": [
+{
+"k": "sub",
+"at": 109.38,
+"out": 112.88
+},
+{
+"k": "step",
+"n": 1,
+"name": "WEAR WHITE",
+"at": 112.1,
+"out": 115.5
+},
+{
+"k": "step",
+"n": 2,
+"name": "TELL THE OLD STORIES IN THE TOAST",
+"at": 230.68,
+"out": 234.08
+},
+{
+"k": "step",
+"n": 3,
+"name": "GO OFF THE REGISTRY TO SHOW OFF",
+"at": 401.83,
+"out": 405.23
+},
+{
+"k": "step",
+"n": 4,
+"name": "COMPLAIN ABOUT THE FOOD",
+"at": 489.61,
+"out": 493.01
+},
+{
+"k": "deal",
+"at": 569.87,
+"out": 570.87
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Let the church ladies help",
+"at": 577.01,
+"out": 579.21
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Keep your list short",
+"at": 586.69,
+"out": 588.89
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "No old fights that week",
+"at": 595.95,
+"out": 598.15
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Keep the speech about her",
+"at": 603.47,
+"out": 605.67
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Sit with the grandparents",
+"at": 614.99,
+"out": 618.49
+},
+{
+"k": "step",
+"n": 5,
+"name": "SKIP THE RSVP",
+"at": 627.63,
+"out": 631.03
+},
+{
+"k": "step",
+"n": 6,
+"name": "STEAL THE MOMENT",
+"at": 841.16,
+"out": 844.56
+},
+{
+"k": "step",
+"n": 7,
+"name": "LEAVE BEFORE THE GRANDPARENTS DANCE",
+"at": 994.35,
+"out": 997.75
+},
+{
+"k": "recap",
+"rows": [
+{
+"at": 1238.09
+},
+{
+"at": 1242.73
+},
+{
+"at": 1249.13
+},
+{
+"at": 1256.41
+},
+{
+"at": 1261.99
+},
+{
+"at": 1269.25
+},
+{
+"at": 1274.53
+}
+],
+"at": 1234.87,
+"out": 1276.53
+},
+{
+"k": "ask",
+"at": 1309.57,
+"out": 1317.57
+}
+],
+"end": 1327.59,
+"txt": {
+"recapTitle": "7 NEVERS · ONE WEDDING",
+"recap": [
+"If you have to ask, it's too white",
+"Two minutes, one story, one wish",
+"Give from the list, tuck in a note",
+"Find one thing to praise",
+"Send the card back in a week",
+"The only news that day is theirs",
+"Stay, stand up and clap"
+],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"How many years were you married?",
+"And one piece of advice"
+],
+"next": [
+"",
+""
+],
+"lower": [
+30.94,
+38.94
+]
+}
+}
