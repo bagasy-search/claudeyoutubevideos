@@ -1,1 +1,2 @@
 31-oct: calendarios con letras IA → escenas sin texto
+31-oct r2: ph_cycle
