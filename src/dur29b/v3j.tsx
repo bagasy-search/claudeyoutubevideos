@@ -127,11 +127,11 @@ const TodoLoDemas: React.FC<UP> = ({ d, p }) => {
 // los demás caen de a uno con peso y polvo, cada uno bajo su luz ----
 const CuerdasTiempo: React.FC<UP> = ({ d, p }) => {
   const D = d / 30, sp = Math.max(0.5, (D - 1.4) / 5);
-  const Obj = ({ i }: { i: number }) => i === 0 ? <group scale={1.1}><Casco i={1} /></group>
+  const Obj = ({ i }: { i: number }) => i === 0 ? <group scale={1.1} position={[0, -0.045, 0]}><Casco i={1} /></group>
     : i === 1 ? <group rotation={[0, 0, 1.0]} position={[0.06, 0.03, 0]}><mesh position={[0, 0.12, 0]}><cylinderGeometry args={[0.008, 0.008, 0.2, 8]} />{M.wood()}</mesh><RBox s={[0.08, 0.1, 0.01]} r={0.01} p={[0, 0.0, 0]}>{M.steel({ col: "#8a8e92" })}</RBox></group>
     : i === 2 ? <group position={[0, 0.11, 0]}><mesh><torusGeometry args={[0.1, 0.008, 8, 32, PI]} />{M.wood({ base: [150, 100, 50] })}</mesh><mesh><boxGeometry args={[0.2, 0.003, 0.003]} /><meshStandardMaterial color="#efe6d0" /></mesh></group>
     : i === 3 ? <mesh geometry={latheG("cuenco_rj", [[0, 0], [0.06, 0], [0.09, 0.04], [0.092, 0.06], [0.08, 0.06], [0.07, 0.04], [0.05, 0.008], [0, 0.008]], 32)}>{M.wood({ base: [150, 100, 60] })}</mesh>
-    : <group rotation={[0, 0, -1.25]} position={[0.08, 0.02, 0]}><mesh position={[0, 0.1, 0]}><cylinderGeometry args={[0.008, 0.008, 0.2, 8]} />{M.wood()}</mesh><mesh position={[0, 0.2, 0]} rotation={[0, 0, PI / 2]}><coneGeometry args={[0.012, 0.18, 8]} />{M.steel({ col: "#7a7e82" })}</mesh></group>;
+    : <group rotation={[-1.42, 0, 0.35]} position={[0, 0.012, 0.08]}><mesh position={[0, 0.1, 0]}><cylinderGeometry args={[0.008, 0.008, 0.2, 8]} />{M.wood()}</mesh><mesh position={[0, 0.2, 0]} rotation={[0, 0, PI / 2]}><coneGeometry args={[0.012, 0.18, 8]} />{M.steel({ col: "#7a7e82" })}</mesh></group>;
   return <U3 d={d} bg={p.bg} ground={null} floor="wood" mode="wipe" key1={[-1.0, 2.6, 2.0]}
     cam={{ at: [0, 0.32, 0], az: [-0.1, -0.02], el: [0.16, 0.14], r: [1.5, 1.45], fov: 34 }}>{(tt) => <>
     <RBox s={[1.25, 0.05, 0.4]} r={0.01} p={[0, 0.16, 0]}>{M.wood({ base: [150, 106, 62] })}</RBox>
