@@ -1,0 +1,234 @@
+[
+ {
+  "k": "bag",
+  "at": 5.2,
+  "out": 14.2,
+  "ph": "A little green-gray circle on the third slice",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "fourdollars",
+  "at": 22.64,
+  "out": 31.64,
+  "ph": "Do you throw the whole loaf in the garbage",
+  "dev": 2.6,
+  "items": []
+ },
+ {
+  "k": "tsuyu",
+  "at": 119.6,
+  "out": 129.6,
+  "ph": "We call it tsuyu",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "triad",
+  "at": 167.64,
+  "out": 177.64,
+  "ph": "take away one and the mold",
+  "dev": 0.4,
+  "items": []
+ },
+ {
+  "k": "spores",
+  "at": 152.02,
+  "out": 161.02,
+  "ph": "Mold spores are everywhere",
+  "dev": -0.2,
+  "items": []
+ },
+ {
+  "k": "charcoal",
+  "at": 203.68,
+  "out": 211.68,
+  "ph": "little cloth bags of charcoal",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "newspaper",
+  "at": 216.44,
+  "out": 226.44,
+  "ph": "she put a folded piece of newspaper",
+  "dev": 4.1,
+  "items": []
+ },
+ {
+  "k": "greenhouse",
+  "at": 287.3,
+  "out": 296.3,
+  "ph": "You have built a little greenhouse",
+  "dev": -0.7,
+  "items": []
+ },
+ {
+  "k": "fridgetop",
+  "at": 854.4,
+  "out": 863.4,
+  "ph": "the top of the refrigerator",
+  "dev": 3.3,
+  "items": []
+ },
+ {
+  "k": "threads",
+  "at": 333.82,
+  "out": 342.82,
+  "ph": "The starch in the bread is like little soft threads",
+  "dev": 4.3,
+  "items": []
+ },
+ {
+  "k": "cardboard",
+  "at": 366.06,
+  "out": 374.06,
+  "ph": "it was hard like cardboard",
+  "dev": 2.1,
+  "items": []
+ },
+ {
+  "k": "woodbox",
+  "at": 400.92,
+  "out": 409.92,
+  "ph": "Because wood breathes",
+  "dev": -1.0,
+  "items": []
+ },
+ {
+  "k": "furoshiki",
+  "at": 429.94,
+  "out": 438.94,
+  "ph": "wrapped bread in a cotton furoshiki",
+  "dev": 5.9,
+  "items": []
+ },
+ {
+  "k": "schoolbread",
+  "at": 448.9,
+  "out": 456.9,
+  "ph": "the American government sent flour to Japan",
+  "dev": -5.3,
+  "items": []
+ },
+ {
+  "k": "handkerchief",
+  "at": 474.86,
+  "out": 484.86,
+  "ph": "brought home half of his school bread",
+  "dev": 3.7,
+  "items": []
+ },
+ {
+  "k": "wethands",
+  "at": 525.14,
+  "out": 534.14,
+  "ph": "never touch the bread with wet hands",
+  "dev": -0.1,
+  "items": []
+ },
+ {
+  "k": "jamknife",
+  "at": 543.34,
+  "out": 552.34,
+  "ph": "Never use the butter knife or the jam spoon",
+  "dev": -0.5,
+  "items": []
+ },
+ {
+  "k": "cutdown",
+  "at": 597.4,
+  "out": 605.4,
+  "ph": "with the cut side",
+  "dev": -1.6,
+  "items": []
+ },
+ {
+  "k": "vinegar",
+  "at": 645.34,
+  "out": 654.34,
+  "ph": "a cloth and white vinegar",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "twodays",
+  "at": 714.56,
+  "out": 723.56,
+  "ph": "the size of two days",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "panko",
+  "at": 740.7,
+  "out": 749.7,
+  "ph": "those became breadcrumbs",
+  "dev": 1.9,
+  "items": []
+ },
+ {
+  "k": "revive",
+  "at": 759.96,
+  "out": 768.96,
+  "ph": "sprinkled a few drops of water on the crust",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "roots",
+  "at": 820.94,
+  "out": 829.94,
+  "ph": "the mold sends tiny roots",
+  "dev": 5.9,
+  "items": []
+ },
+ {
+  "k": "warmbag",
+  "at": 868.36,
+  "out": 876.36,
+  "ph": "makes its own rain inside",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "powder",
+  "at": 1033.38,
+  "out": 1041.38,
+  "ph": "Mold is fuzzy",
+  "dev": 3.0,
+  "items": []
+ },
+ {
+  "k": "florida",
+  "at": 955.22,
+  "out": 963.22,
+  "ph": "I live in Florida",
+  "dev": -0.3,
+  "items": []
+ },
+ {
+  "k": "pairs",
+  "at": 1087.38,
+  "out": 1096.38,
+  "ph": "I wrap each pair in a small piece of plastic wrap",
+  "dev": -3.1,
+  "items": []
+ },
+ {
+  "k": "week",
+  "at": 1199.94,
+  "out": 1209.94,
+  "ph": "let me show you a whole week with one loaf",
+  "dev": -0.1,
+  "items": []
+ },
+ {
+  "k": "math",
+  "at": 1268.46,
+  "out": 1278.46,
+  "ph": "Say a family throws away a third of every loaf",
+  "dev": 3.2,
+  "items": []
+ }
+]
