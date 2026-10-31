@@ -1,0 +1,213 @@
+[
+{
+"k": "islasize",
+"at": 37.22,
+"out": 45.22,
+"said": 37.22,
+"kw": "21 km²",
+"kw2": "la vuelta entera en media hora",
+"ph": "n_mapa_pacifico_punto",
+"solo": true
+},
+{
+"k": "bite",
+"at": 60.44,
+"out": 64.94,
+"said": 60.44,
+"sp": 1.444,
+"kw": "80 %",
+"kw2": "de la isla, desaparecido",
+"ph": "n_meseta_minada",
+"solo": true
+},
+{
+"k": "door",
+"at": 157.04,
+"out": 163.04,
+"said": 157.04,
+"sp": 1.167,
+"ph": "n_escritorio_ellis",
+"solo": true,
+"kw": "TOPE DE PUERTA",
+"kw2": "la piedra que nadie miró"
+},
+{
+"k": "flask",
+"at": 179.86,
+"out": 186.36,
+"said": 174.26,
+"kw": "FOSFATO",
+"ph": "n_polvo_fosfato",
+"solo": true
+},
+{
+"k": "wheat",
+"at": 187.68,
+"out": 192.68,
+"said": 187.68,
+"sp": 1.6
+},
+{
+"k": "strata",
+"at": 214.02,
+"out": 222.02,
+"said": 214.02
+},
+{
+"k": "split3",
+"at": 262.08,
+"out": 270.08,
+"said": 262.08,
+"names": [
+"GRAN BRETAÑA",
+"AUSTRALIA",
+"NUEVA ZELANDA"
+]
+},
+{
+"k": "cents",
+"at": 315.86,
+"out": 321.86,
+"said": 315.86,
+"sp": 1.167
+},
+{
+"k": "cutaway",
+"at": 327.18,
+"out": 335.18,
+"said": 327.18,
+"ph": "n_arboles_talados",
+"solo": true,
+"kw": "SE TALA TODO"
+},
+{
+"k": "cantilever",
+"at": 357.86,
+"out": 365.86,
+"said": 357.86
+},
+{
+"k": "deport",
+"at": 433.7,
+"out": 438.2,
+"said": 434.6,
+"sp": 2.0,
+"ph": "n_barco_deportacion",
+"solo": true,
+"kw": "1.200",
+"kw2": "deportados"
+},
+{
+"k": "hourglass",
+"at": 482.74,
+"out": 487.24,
+"said": 483.54,
+"sp": 1.556,
+"kw": "30 AÑOS"
+},
+{
+"k": "movebox",
+"at": 509.44,
+"out": 518.44,
+"said": 503.44,
+"ph": "n_curtis_island",
+"solo": true,
+"kw": "CURTIS ISLAND",
+"kw2": "la isla nueva que no fue"
+},
+{
+"k": "flag68",
+"at": 559.758,
+"out": 566.76,
+"said": 559.76,
+"phid": "n_isla_aerea"
+},
+{
+"k": "cascade",
+"at": 583.7,
+"out": 588.2,
+"said": 586.8,
+"sp": 1.556
+},
+{
+"k": "laps",
+"at": 631.238,
+"out": 636.74,
+"said": 631.24,
+"sp": 1.364
+},
+{
+"k": "tower",
+"at": 724.92,
+"out": 731.92,
+"said": 719.12
+},
+{
+"k": "curtain",
+"at": 742.338,
+"out": 750.34,
+"said": 742.34
+},
+{
+"k": "envelope",
+"at": 829.056,
+"out": 833.56,
+"said": 829.06,
+"sp": 1.778,
+"ph": "n_sala_corte",
+"solo": true,
+"kw": "DEMANDA",
+"kw2": "contra Australia"
+},
+{
+"k": "installments",
+"at": 859.956,
+"out": 867.96,
+"said": 859.96
+},
+{
+"k": "gauge",
+"at": 907.556,
+"out": 915.56,
+"said": 907.56
+},
+{
+"k": "shelf",
+"at": 939.116,
+"out": 947.12,
+"said": 939.12
+},
+{
+"k": "reroute",
+"at": 1008.316,
+"out": 1012.82,
+"said": 1008.32,
+"sp": 2.0
+},
+{
+"k": "billstack",
+"at": 1170.474,
+"out": 1178.47,
+"said": 1170.47,
+"ph": "n_fajos_billetes",
+"solo": true,
+"kw": "3 MILLONES"
+},
+{
+"k": "lantern",
+"at": 1259.194,
+"out": 1266.19,
+"said": 1259.19,
+"ph": "n_peces_voladores",
+"solo": true,
+"kw": "A MANO",
+"kw2": "redes casi en el aire"
+},
+{
+"k": "sealevel",
+"at": 1381.274,
+"out": 1385.77,
+"said": 1381.27,
+"sp": 2.0
+}
+]

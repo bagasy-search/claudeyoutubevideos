@@ -1,0 +1,1728 @@
+{
+"segs": [
+[
+3.5,
+6.88,
+"shot",
+"n_isla_aerea"
+],
+[
+6.88,
+15.08,
+"shot",
+"n_mar_turquesa"
+],
+[
+15.08,
+15.8,
+"shot",
+"v01_pinaculos"
+],
+[
+20.8,
+24.52,
+"shot",
+"n_pinaculos_dientes"
+],
+[
+24.52,
+32.16,
+"shot",
+"n_selva_tropical_vieja"
+],
+[
+32.16,
+33.482,
+"shot",
+"n_pozo_vacio"
+],
+[
+37.1,
+42.42,
+"shot",
+"n_mapa_pacifico_punto"
+],
+[
+42.42,
+47.1,
+"shot",
+"n_ruta_costera"
+],
+[
+52.5,
+55.3,
+"shot",
+"n_tres_banderas"
+],
+[
+55.3,
+60.44,
+"shot",
+"n_barco_carguero_fosfato"
+],
+[
+60.44,
+65.188,
+"shot",
+"n_meseta_minada"
+],
+[
+70.247,
+76.84,
+"shot",
+"n_valla_campamento"
+],
+[
+76.84,
+82.1,
+"shot",
+"n_billetes_australianos"
+],
+[
+87.416,
+91.88,
+"shot",
+"n_cuaderno_signo"
+],
+[
+91.88,
+96.952,
+"shot",
+"v03_mapa"
+],
+[
+102.313,
+107.7,
+"shot",
+"n_monedas_arena"
+],
+[
+107.7,
+112.08,
+"shot",
+"n_mochila_mapa"
+],
+[
+112.08,
+114.68,
+"shot",
+"n_micro_viejo"
+],
+[
+117.9,
+125.38,
+"shot",
+"n_postal_palmeras"
+],
+[
+125.38,
+129.2,
+"shot",
+"n_libros_fuentes"
+],
+[
+134.6,
+139.96,
+"shot",
+"n_piedra_tope"
+],
+[
+139.96,
+145.06,
+"shot",
+"n_sydney_1899"
+],
+[
+145.06,
+146.959,
+"shot",
+"n_oficina_antigua"
+],
+[
+151.6,
+159.58,
+"shot",
+"n_piedra_mano"
+],
+[
+159.58,
+163.456,
+"shot",
+"n_escritorio_ellis"
+],
+[
+166.824,
+170.38,
+"shot",
+"n_dos_piedras"
+],
+[
+170.38,
+174.26,
+"shot",
+"n_laboratorio_1900"
+],
+[
+174.26,
+175.8,
+"shot",
+"n_polvo_fosfato"
+],
+[
+179.741,
+187.68,
+"shot",
+"n_bolsa_fertilizante"
+],
+[
+187.68,
+190.6,
+"shot",
+"n_trigo_pobre"
+],
+[
+190.6,
+192.789,
+"shot",
+"n_trigo_rico"
+],
+[
+196.4,
+200.0,
+"shot",
+"n_ovejas_australia"
+],
+[
+200.0,
+206.22,
+"shot",
+"n_campo_seco"
+],
+[
+206.22,
+209.479,
+"shot",
+"n_aves_marinas_cielo"
+],
+[
+213.519,
+220.22,
+"shot",
+"n_aves_rocas"
+],
+[
+220.22,
+222.3,
+"shot",
+"n_coral_fosil"
+],
+[
+226.535,
+230.46,
+"shot",
+"n_isla_abono"
+],
+[
+230.46,
+239.26,
+"shot",
+"n_v04_roca_fosfato"
+],
+[
+244.8,
+255.44,
+"shot",
+"n_vagones_1906"
+],
+[
+255.44,
+257.2,
+"shot",
+"n_buque_guerra"
+],
+[
+261.9,
+272.9,
+"shot",
+"n_documento_mandato"
+],
+[
+272.9,
+274.366,
+"shot",
+"n_llave_vieja"
+],
+[
+277.735,
+287.78,
+"shot",
+"n_mesa_reunion"
+],
+[
+287.78,
+290.095,
+"shot",
+"n_cinta_transportadora"
+],
+[
+294.117,
+301.24,
+"shot",
+"n_balanza_vacia"
+],
+[
+301.24,
+304.7,
+"shot",
+"v02_muelle"
+],
+[
+308.029,
+315.86,
+"shot",
+"n_granjero_tractor"
+],
+[
+315.86,
+320.32,
+"shot",
+"n_centavos_mano"
+],
+[
+320.32,
+322.1,
+"shot",
+"n_mina_vista"
+],
+[
+327.025,
+332.44,
+"shot",
+"n_arboles_talados"
+],
+[
+332.44,
+335.4,
+"shot",
+"n_capa_tierra"
+],
+[
+335.4,
+338.275,
+"shot",
+"n_fosfato_entre_rocas"
+],
+[
+341.45,
+346.92,
+"shot",
+"n_pala_fosfato"
+],
+[
+346.92,
+350.7,
+"shot",
+"n_excavadora"
+],
+[
+356.601,
+366.4,
+"shot",
+"n_brazo_cantilever"
+],
+[
+366.4,
+369.076,
+"shot",
+"n_paisaje_lunar"
+],
+[
+374.425,
+381.16,
+"shot",
+"n_pinaculos_atardecer"
+],
+[
+381.16,
+384.36,
+"shot",
+"n_botas_rocas"
+],
+[
+384.36,
+386.0,
+"shot",
+"n_meseta_borde"
+],
+[
+390.639,
+400.94,
+"shot",
+"n_mapa_isla_meseta"
+],
+[
+400.94,
+404.29,
+"shot",
+"n_trabajadores_1920"
+],
+[
+408.407,
+413.06,
+"shot",
+"n_barracas"
+],
+[
+413.06,
+416.04,
+"shot",
+"n_barcos_fila"
+],
+[
+416.04,
+421.395,
+"shot",
+"n_diario_guerra"
+],
+[
+426.2,
+434.6,
+"shot",
+"n_isla_ocupada"
+],
+[
+434.6,
+437.08,
+"shot",
+"n_barco_deportacion"
+],
+[
+437.08,
+438.263,
+"shot",
+"n_chuuk_laguna"
+],
+[
+443.41,
+444.78,
+"shot",
+"n_cruces_madera"
+],
+[
+444.78,
+455.76,
+"shot",
+"n_regreso_1946"
+],
+[
+455.76,
+457.052,
+"shot",
+"n_foto_familia_vieja"
+],
+[
+461.0,
+467.78,
+"shot",
+"n_maquinas_1950"
+],
+[
+467.78,
+472.2,
+"shot",
+"n_cinta_cargada"
+],
+[
+477.4,
+483.54,
+"shot",
+"n_informe_1960"
+],
+[
+483.54,
+487.3,
+"shot",
+"n_reloj_arena"
+],
+[
+492.641,
+503.44,
+"shot",
+"n_casas_nuevas"
+],
+[
+503.44,
+505.572,
+"shot",
+"n_curtis_island"
+],
+[
+509.325,
+521.2,
+"shot",
+"n_mano_no"
+],
+[
+526.4,
+534.2,
+"shot",
+"n_bandera_doblada"
+],
+[
+534.2,
+539.362,
+"shot",
+"n_costa_nauru"
+],
+[
+542.937,
+551.32,
+"shot",
+"n_escuela_vieja"
+],
+[
+551.32,
+554.8,
+"shot",
+"n_maquina_escribir"
+],
+[
+558.6,
+565.06,
+"shot",
+"n_bandera_mastil"
+],
+[
+565.06,
+568.4,
+"shot",
+"n_firma_contrato"
+],
+[
+574.1,
+580.02,
+"shot",
+"n_libro_cuentos"
+],
+[
+580.02,
+586.8,
+"shot",
+"n_grafico_precio"
+],
+[
+586.8,
+588.3,
+"shot",
+"n_billetes_mesa"
+],
+[
+593.7,
+596.6,
+"shot",
+"n_pozo_petroleo"
+],
+[
+596.6,
+599.92,
+"shot",
+"n_canoa_pesca"
+],
+[
+599.92,
+605.382,
+"shot",
+"n_vidriera_lujo"
+],
+[
+608.739,
+611.68,
+"shot",
+"n_hospital_isla"
+],
+[
+611.68,
+614.1,
+"shot",
+"n_poste_luz"
+],
+[
+614.1,
+618.1,
+"shot",
+"n_v05_ruta_autos"
+],
+[
+623.9,
+630.06,
+"shot",
+"n_auto_deportivo_70"
+],
+[
+630.06,
+634.46,
+"shot",
+"n_mapa_circulo"
+],
+[
+634.46,
+637.0,
+"shot",
+"n_auto_oxidado"
+],
+[
+641.744,
+648.52,
+"shot",
+"n_chapa_oxidada"
+],
+[
+648.52,
+653.1,
+"shot",
+"n_auto_hojas"
+],
+[
+657.1,
+663.9,
+"shot",
+"n_valija_vieja"
+],
+[
+663.9,
+669.263,
+"shot",
+"n_oficina_gobierno"
+],
+[
+674.3,
+684.86,
+"shot",
+"n_cinco_piedras"
+],
+[
+684.86,
+686.7,
+"shot",
+"n_cantera_vacia"
+],
+[
+690.0,
+700.08,
+"shot",
+"n_fondo_libreta"
+],
+[
+700.08,
+700.8,
+"shot",
+"n_asesor_maletin"
+],
+[
+707.146,
+719.12,
+"shot",
+"n_alcancia"
+],
+[
+719.12,
+721.051,
+"shot",
+"n_torre_melbourne"
+],
+[
+724.81,
+734.9,
+"shot",
+"n_terreno_cartel"
+],
+[
+734.9,
+736.297,
+"shot",
+"n_teatro_londres"
+],
+[
+742.213,
+747.5,
+"shot",
+"n_programa_teatro"
+],
+[
+747.5,
+752.573,
+"shot",
+"n_teatro_cerrado"
+],
+[
+758.013,
+765.44,
+"shot",
+"n_apreton_manos"
+],
+[
+765.44,
+769.886,
+"shot",
+"n_sobre_billetes"
+],
+[
+773.8,
+779.82,
+"shot",
+"n_red_pesca_colgada"
+],
+[
+779.82,
+786.0,
+"shot",
+"n_pesca_tradicional"
+],
+[
+791.9,
+795.96,
+"shot",
+"n_maceta_seca"
+],
+[
+795.96,
+801.6,
+"shot",
+"n_vaso_evapora"
+],
+[
+801.6,
+804.2,
+"shot",
+"n_mineral_pobre"
+],
+[
+808.6,
+813.34,
+"shot",
+"n_isla_desde_avion"
+],
+[
+813.34,
+820.3,
+"shot",
+"n_calendario_1968"
+],
+[
+824.1,
+831.12,
+"shot",
+"n_corte_haya"
+],
+[
+831.12,
+833.793,
+"shot",
+"n_sala_corte"
+],
+[
+839.713,
+845.18,
+"shot",
+"n_expediente"
+],
+[
+845.18,
+850.36,
+"shot",
+"n_tierra_en_mano"
+],
+[
+850.36,
+852.496,
+"shot",
+"n_mazo"
+],
+[
+857.1,
+859.96,
+"shot",
+"n_firma_acuerdo"
+],
+[
+859.96,
+868.955,
+"shot",
+"n_cheque"
+],
+[
+872.3,
+879.74,
+"shot",
+"n_bodega_barco"
+],
+[
+879.74,
+881.7,
+"shot",
+"n_meseta_vacia_2"
+],
+[
+887.8,
+897.02,
+"shot",
+"n_oficina_vacia"
+],
+[
+897.02,
+900.54,
+"shot",
+"n_cartel_venta"
+],
+[
+900.54,
+901.8,
+"shot",
+"n_avion_pista"
+],
+[
+907.13,
+910.64,
+"shot",
+"n_lampara_apagada"
+],
+[
+910.64,
+918.49,
+"shot",
+"n_planta_agua"
+],
+[
+921.8,
+932.94,
+"shot",
+"n_mercado_vacio"
+],
+[
+932.94,
+934.395,
+"shot",
+"n_contenedores_muelle"
+],
+[
+938.95,
+947.66,
+"shot",
+"n_latas_estante"
+],
+[
+947.66,
+948.92,
+"shot",
+"n_pescado_fruta"
+],
+[
+948.92,
+950.4,
+"shot",
+"n_lata_abierta"
+],
+[
+954.526,
+959.06,
+"shot",
+"n_balanza_pie"
+],
+[
+959.06,
+963.06,
+"shot",
+"n_glucometro"
+],
+[
+963.06,
+966.2,
+"shot",
+"n_cementerio_isla"
+],
+[
+970.2,
+981.16,
+"shot",
+"n_v06_almacen"
+],
+[
+981.16,
+982.96,
+"shot",
+"n_anzuelos_viejos"
+],
+[
+988.835,
+993.26,
+"shot",
+"n_mapa_indico"
+],
+[
+993.26,
+999.2,
+"shot",
+"n_carguero_rojo"
+],
+[
+1004.243,
+1008.32,
+"shot",
+"n_bote_pesca_madera"
+],
+[
+1008.32,
+1013.087,
+"shot",
+"n_puente_mando"
+],
+[
+1019.2,
+1022.16,
+"shot",
+"n_parlamento_canberra"
+],
+[
+1022.16,
+1031.6,
+"shot",
+"n_documento_politica"
+],
+[
+1034.826,
+1045.34,
+"shot",
+"n_alambre_cielo"
+],
+[
+1045.34,
+1046.2,
+"shot",
+"n_lapicera_firma"
+],
+[
+1051.139,
+1057.7,
+"shot",
+"n_carpas_blancas"
+],
+[
+1057.7,
+1064.094,
+"shot",
+"n_v07_alambrado"
+],
+[
+1067.8,
+1072.88,
+"shot",
+"n_porton_campamento"
+],
+[
+1072.88,
+1079.059,
+"shot",
+"n_campamento_vacio"
+],
+[
+1083.4,
+1087.16,
+"shot",
+"n_reja_candado"
+],
+[
+1087.16,
+1095.059,
+"shot",
+"n_bote_playa"
+],
+[
+1101.05,
+1103.52,
+"shot",
+"n_juguete_tierra"
+],
+[
+1103.52,
+1112.5,
+"shot",
+"n_informes_pila"
+],
+[
+1112.5,
+1115.864,
+"shot",
+"n_pasaporte_visa"
+],
+[
+1121.516,
+1129.96,
+"shot",
+"n_dibujo_infantil"
+],
+[
+1129.96,
+1131.7,
+"shot",
+"n_marcha_carteles"
+],
+[
+1137.125,
+1141.84,
+"shot",
+"n_silla_vacia"
+],
+[
+1141.84,
+1148.0,
+"shot",
+"n_calculadora"
+],
+[
+1152.9,
+1164.45,
+"shot",
+"n_presupuesto"
+],
+[
+1164.45,
+1165.484,
+"shot",
+"n_lapiz_cuenta"
+],
+[
+1170.024,
+1177.63,
+"shot",
+"n_fajos_billetes"
+],
+[
+1177.63,
+1181.384,
+"shot",
+"n_casa_suburbio"
+],
+[
+1185.7,
+1192.65,
+"shot",
+"n_alacena_llena"
+],
+[
+1192.65,
+1196.35,
+"shot",
+"n_cartel_no"
+],
+[
+1196.35,
+1198.0,
+"shot",
+"n_pasillo_vacio"
+],
+[
+1203.7,
+1213.61,
+"shot",
+"n_meseta_atardecer2"
+],
+[
+1213.61,
+1217.3,
+"shot",
+"n_billetes_isla"
+],
+[
+1223.3,
+1231.33,
+"shot",
+"n_llaves_alquiler"
+],
+[
+1231.33,
+1234.485,
+"shot",
+"n_trampa_raton"
+],
+[
+1239.4,
+1242.03,
+"shot",
+"n_isla_vendida"
+],
+[
+1242.03,
+1252.23,
+"shot",
+"n_atardecer_mar"
+],
+[
+1252.23,
+1253.386,
+"shot",
+"n_pesca_noche"
+],
+[
+1258.2,
+1269.41,
+"shot",
+"n_peces_voladores"
+],
+[
+1269.41,
+1270.7,
+"shot",
+"n_ave_nodi"
+],
+[
+1275.7,
+1281.71,
+"shot",
+"n_costa_atardecer"
+],
+[
+1281.71,
+1285.061,
+"shot",
+"n_lazo_cuerda"
+],
+[
+1288.702,
+1297.99,
+"shot",
+"n_laguna_buada"
+],
+[
+1297.99,
+1302.069,
+"shot",
+"n_laguna_reflejo"
+],
+[
+1306.3,
+1316.35,
+"shot",
+"n_pandano"
+],
+[
+1316.35,
+1317.6,
+"shot",
+"n_v08_diario_viejo"
+],
+[
+1322.6,
+1333.91,
+"shot",
+"n_aeropuerto_chico"
+],
+[
+1333.91,
+1335.6,
+"shot",
+"n_formulario_visa"
+],
+[
+1340.0,
+1344.47,
+"shot",
+"n_hotel_isla"
+],
+[
+1344.47,
+1351.7,
+"shot",
+"n_vivero"
+],
+[
+1357.4,
+1363.79,
+"shot",
+"n_pinaculos_nube"
+],
+[
+1363.79,
+1367.378,
+"shot",
+"n_camion_mineral"
+],
+[
+1372.7,
+1381.27,
+"shot",
+"n_olas_costa"
+],
+[
+1381.27,
+1386.1,
+"shot",
+"n_marea_alta"
+],
+[
+1389.73,
+1400.45,
+"shot",
+"n_casa_costa"
+],
+[
+1400.45,
+1401.96,
+"shot",
+"n_documento_2024"
+],
+[
+1405.233,
+1411.45,
+"shot",
+"n_patrullero"
+],
+[
+1411.45,
+1415.593,
+"shot",
+"n_balanza_dos"
+],
+[
+1421.8,
+1429.49,
+"shot",
+"n_cuaderno_resumen"
+],
+[
+1429.49,
+1435.3,
+"shot",
+"n_isla_aerea2"
+],
+[
+1440.525,
+1449.89,
+"shot",
+"n_tres_banderas2"
+],
+[
+1449.89,
+1452.852,
+"shot",
+"n_sacos_fertilizante"
+],
+[
+1458.4,
+1466.37,
+"shot",
+"n_isla_curtis2"
+],
+[
+1466.37,
+1470.9,
+"shot",
+"n_bandera_nauru"
+],
+[
+1475.2,
+1481.67,
+"shot",
+"n_billete_volando"
+],
+[
+1481.67,
+1487.3,
+"shot",
+"n_corte_haya2"
+],
+[
+1492.842,
+1502.27,
+"shot",
+"n_carpas_cerca"
+],
+[
+1502.27,
+1503.8,
+"shot",
+"n_barco_lejos"
+],
+[
+1507.726,
+1513.35,
+"shot",
+"n_v10_borde_meseta"
+],
+[
+1513.35,
+1521.7,
+"shot",
+"n_casa_nueva_isla"
+],
+[
+1525.34,
+1537.2,
+"shot",
+"n_v09_cierra"
+]
+],
+"cam": [],
+"ov": [
+{
+"k": "chip",
+"txt": "NAURU · OCÉANO PACÍFICO",
+"col": "ice",
+"at": 6.24,
+"out": 9.74
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "SE LLEVARON LA ISLA",
+"col": "red",
+"at": 57.48
+},
+{
+"txt": "Y DESPUÉS, LA CÁRCEL",
+"col": "amber",
+"at": 64.3
+}
+],
+"at": 48.86,
+"out": 66.8
+},
+{
+"k": "chip",
+"txt": "AL FINAL: EL NÚMERO",
+"col": "amber",
+"at": 81.08,
+"out": 84.58
+},
+{
+"k": "chip",
+"txt": "MICROS BARATOS · PENSIONES DE MALA MUERTE",
+"col": "ice",
+"at": 110.88,
+"out": 114.38
+},
+{
+"k": "chip",
+"txt": "FUENTES EN LA DESCRIPCIÓN",
+"col": "green",
+"at": 127.8,
+"out": 131.3
+},
+{
+"k": "stamp",
+"txt": "ALBERT ELLIS",
+"at": 161.86,
+"out": 164.86
+},
+{
+"k": "chip",
+"txt": "Y NO ES LO PEOR…",
+"col": "red",
+"at": 252.4,
+"out": 255.9
+},
+{
+"k": "stamp",
+"txt": "COMISIÓN BRITÁNICA DEL FOSFATO",
+"at": 283.54,
+"out": 286.54
+},
+{
+"k": "big",
+"txt": "A PRECIO DE COSTO",
+"sub": "SIN GANANCIA · NI PARA LA ISLA",
+"col": "red",
+"at": 292.56,
+"out": 295.76
+},
+{
+"k": "stamp",
+"txt": "TOPSIDE · LA PARTE DE ARRIBA",
+"at": 389.22,
+"out": 392.22
+},
+{
+"k": "chip",
+"txt": "LOS QUE CAVABAN: DE CHINA Y OTRAS ISLAS",
+"col": "amber",
+"at": 400.94,
+"out": 404.44
+},
+{
+"k": "chip",
+"txt": "LO QUE CASI NADIE SABE",
+"col": "red",
+"at": 419.38,
+"out": 422.88
+},
+{
+"k": "big",
+"txt": "1942",
+"sub": "JAPÓN OCUPA LA ISLA",
+"col": "red",
+"at": 426.5,
+"out": 429.7
+},
+{
+"k": "chip",
+"txt": "MÁS RÁPIDO · CON MÁS MÁQUINAS",
+"col": "red",
+"at": 467.78,
+"out": 471.28
+},
+{
+"k": "stamp",
+"txt": "DIJERON QUE NO",
+"at": 515.54,
+"out": 518.54
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "UNA ISLA",
+"col": "green",
+"at": 521.82
+},
+{
+"txt": "PERO NO UN PAÍS",
+"col": "red",
+"at": 521.62
+}
+],
+"at": 521.82,
+"out": 524.12
+},
+{
+"k": "stamp",
+"txt": "HAMMER DeROBURT",
+"at": 541.6,
+"out": 544.6
+},
+{
+"k": "chip",
+"txt": "UN CUENTO DE HADAS… QUE TERMINA MAL",
+"col": "amber",
+"at": 574.14,
+"out": 577.64
+},
+{
+"k": "check",
+"title": "LA ISLA RICA",
+"rows": [
+{
+"txt": "Sin impuestos",
+"at": 607.18
+},
+{
+"txt": "Salud gratis",
+"at": 608.76
+},
+{
+"txt": "Escuela gratis",
+"at": 610.24
+},
+{
+"txt": "Luz y agua casi regaladas",
+"at": 612.92
+}
+],
+"at": 606.66,
+"out": 615.92
+},
+{
+"k": "chip",
+"txt": "AUTOS OXIDADOS AL COSTADO DE LA RUTA",
+"col": "ice",
+"at": 640.7,
+"out": 644.2
+},
+{
+"k": "deal",
+"at": 672.56,
+"out": 677.06
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "CREER QUE NO SE IBA A TERMINAR",
+"at": 681.14,
+"out": 689.14
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "UN FONDO EN MANOS EQUIVOCADAS",
+"at": 695.32,
+"out": 695.02
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "LAS INVERSIONES DE LUJO",
+"at": 695.32,
+"out": 695.02
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "LOS ASESORES",
+"at": 695.32,
+"out": 695.02
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "DEJAR DE HACER LO QUE SABÍAN",
+"at": 695.32,
+"out": 703.32
+},
+{
+"k": "stamp",
+"txt": "CORTE INTERNACIONAL DE JUSTICIA",
+"at": 831.12,
+"out": 834.12
+},
+{
+"k": "chip",
+"txt": "«PAGUEN LA REHABILITACIÓN»",
+"col": "amber",
+"at": 845.18,
+"out": 848.68
+},
+{
+"k": "stamp",
+"txt": "QUEBRADA",
+"at": 890.0,
+"out": 893.0
+},
+{
+"k": "big",
+"txt": "SIN AGUA",
+"sub": "DE LAS MÁS RICAS DEL MUNDO… A ESTO",
+"col": "red",
+"at": 920.3,
+"out": 923.5
+},
+{
+"k": "stamp",
+"txt": "LA SOLUCIÓN DEL PACÍFICO",
+"at": 1022.28,
+"out": 1025.28
+},
+{
+"k": "chip",
+"txt": "LOS CAMPAMENTOS: EN LA MESETA MINADA",
+"col": "red",
+"at": 1055.86,
+"out": 1059.36
+},
+{
+"k": "chip",
+"txt": "CHICOS QUE NACIERON AHÍ",
+"col": "red",
+"at": 1101.44,
+"out": 1104.94
+},
+{
+"k": "chip",
+"txt": "EL NÚMERO",
+"col": "amber",
+"at": 1140.96,
+"out": 1144.46
+},
+{
+"k": "chip",
+"txt": "CONSEJO DE REFUGIADOS · CENTRO KALDOR (UNSW)",
+"col": "ice",
+"at": 1164.45,
+"out": 1167.95
+},
+{
+"k": "chip",
+"txt": "CENTRO CASI VACÍO · PAGADO IGUAL",
+"col": "red",
+"at": 1203.73,
+"out": 1207.23
+},
+{
+"k": "big",
+"txt": "¿A QUIÉN LE SIRVIÓ?",
+"sub": "",
+"col": "amber",
+"at": 1208.57,
+"out": 1211.77
+},
+{
+"k": "stamp",
+"txt": "LA MISMA TRAMPA DE SIEMPRE",
+"at": 1232.95,
+"out": 1235.95
+},
+{
+"k": "chip",
+"txt": "LA CAZA DEL NODDY",
+"col": "green",
+"at": 1269.61,
+"out": 1273.11
+},
+{
+"k": "chip",
+"txt": "LAGUNA DE BUADA",
+"col": "green",
+"at": 1290.63,
+"out": 1294.13
+},
+{
+"k": "chip",
+"txt": "«¿SE PUEDE IR DE TURISTA?»",
+"col": "ice",
+"at": 1325.95,
+"out": 1329.45
+},
+{
+"k": "chip",
+"txt": "«¿SE PUEDE REHABILITAR?»",
+"col": "ice",
+"at": 1344.47,
+"out": 1347.97
+},
+{
+"k": "chip",
+"txt": "«¿QUEDA FOSFATO?»",
+"col": "ice",
+"at": 1361.33,
+"out": 1364.83
+},
+{
+"k": "chip",
+"txt": "«¿Y EL MAR?»",
+"col": "ice",
+"at": 1373.51,
+"out": 1377.01
+},
+{
+"k": "recap",
+"rows": [
+1429.49,
+1437.09,
+1440.61,
+1454.35,
+1459.75,
+1467.49,
+1474.81,
+1481.67,
+1490.95
+],
+"at": 1424.25,
+"out": 1496.95
+},
+{
+"k": "ask",
+"at": 1507.89,
+"out": 1521.89
+},
+{
+"k": "chip",
+"txt": "SUSCRIBITE · CADA SEMANA, UN PAÍS QUE NO SALE EN LA POSTAL",
+"col": "green",
+"at": 1534.15,
+"out": 1537.65
+},
+{
+"k": "next",
+"at": 1539.63,
+"out": 1544.63
+}
+],
+"cta1": {
+"desc": 127.8,
+"end": 133.8
+},
+"cta2": {
+"desc": 1527.75,
+"end": 1533.75
+},
+"cta3": {
+"desc": 1534.15,
+"end": 1539.15
+},
+"end": 1543.33,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+0,
+0.1
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "NAURU EN UN MINUTO",
+"recap": [
+"Una isla hecha de abono",
+"La piedra del tope de puerta",
+"Tres países se llevan el suelo",
+"1942: la deportación a Chuuk",
+"1964: dijeron que no",
+"1968: independencia",
+"La plata se evapora",
+"La Haya: A$ 107 M",
+"2001: la isla-cárcel"
+],
+"ask": [
+"1964: una isla nueva, con casa y tierra…",
+"pero dejando de ser tu país.",
+"¿Aceptabas o te quedabas?"
+],
+"next": [
+"HASTA LA PRÓXIMA",
+"Otro país que no sale en la postal"
+],
+"lower": [
+107.7,
+113.7
+]
+}
+}
