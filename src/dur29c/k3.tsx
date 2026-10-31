@@ -15,8 +15,10 @@ export const useImg = (src?: string, blur = 0) => {
   const [h] = React.useState(() => (src && !(IMG.get(key) instanceof THREE.Texture) ? delayRender("img3d " + src) : null));
   React.useEffect(() => {
     const done = () => { if (h !== null) continueRender(h); };
+    // ThreeCanvas no redibuja solo: se pide un advance() (Redibuja, en h3d) y recién ahí se suelta el cuadro
+    const later = () => setTimeout(() => { window.dispatchEvent(new Event("img3d")); setTimeout(done, 80); }, 80);
     if (!src) return;
-    const v = IMG.get(key); if (v instanceof THREE.Texture) { set((x) => x + 1); done(); return; }
+    const v = IMG.get(key); if (v instanceof THREE.Texture) { set((x) => x + 1); later(); return; }
     const im = new Image(); im.crossOrigin = "anonymous";
     im.onload = () => {
       if (!(IMG.get(key) instanceof THREE.Texture)) {
@@ -24,7 +26,7 @@ export const useImg = (src?: string, blur = 0) => {
         const g = cv.getContext("2d")!; if (blur) { g.filter = `blur(${blur}px)`; g.drawImage(im, -blur * 2, -blur * 2, w + blur * 4, hh + blur * 4); } else g.drawImage(im, 0, 0, w, hh);
         const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; IMG.set(key, t);
       }
-      set((x) => x + 1); done();
+      set((x) => x + 1); later();
     };
     im.onerror = done;
     im.src = staticFile(src);
