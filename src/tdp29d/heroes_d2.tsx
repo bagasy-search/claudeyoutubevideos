@@ -150,7 +150,8 @@ export const HOranges: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t=
       <RBox s={[0.08, 0.002, 0.055]} r={0.001}>{M.matte({ col: "#f6f3ea" })}</RBox>
       <mesh position={[0, 0.0012, 0]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[0.07, 0.045]} /><meshStandardMaterial map={txt("ty", ["thank you"], { w: 300, h: 190, bg: "#f6f3ea", fg: "#2a2420", size: 60, font: HANDF })} /></mesh>
     </group>
-    {[[0.18, 0.08], [0.21, 0.05], [0.16, 0.04]].map(([x, z], i) => <mesh key={i} position={[x, 0.02, z]} scale={pop(tt, 0.3 + i * 0.25)}><sphereGeometry args={[0.02, 24, 18]} /><meshStandardMaterial color="#e8862a" roughness={0.6} /></mesh>)}
+    {[[0.18, 0.08], [0.21, 0.05], [0.16, 0.04]].map(([x, z], i) => { const roll = 0.05 * eio(tt, 1.4 + i * 0.5, 6.8); // ruedan despacio hacia la puerta: el plano nunca queda quieto
+      return <mesh key={i} position={[x - roll * 0.6, 0.02, z + roll]} rotation={[roll / 0.02, 0, -roll * 0.6 / 0.02]} scale={pop(tt, 0.3 + i * 0.25)}><sphereGeometry args={[0.02, 24, 18]} /><meshStandardMaterial color="#e8862a" roughness={0.6} /></mesh>; })}
     <Sheet map={txt("or", ["She used to leave me oranges."], { w: 640, h: 100, bg: "#f2ead8", fg: "#2a2420", size: 46, font: HANDF })} w={0.2} h={0.031} p={[-0.02, 0.32, 0.01]} s={pop(tt, 3.4)} />
   </>;
 }}</Scene3D>;
@@ -172,15 +173,18 @@ export const HDetective: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D 
 // ---- 11:44 · LA LUZ DEL PORCHE: la casa vieja de noche, el farol de la entrada prendido; el calendario pasa los años 1 a 11; las estaciones cambian alrededor (nieve, hojas) y la luz no se apaga nunca ----
 export const HPorch: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="iris" floor="none" wall="none" bg="#05060a" lamp={[0, 0.4, 0.6]}
   cam={{ at: [0, 0.12, 0], at1: [0.0, 0.14, 0.02], az: [-0.25, 0.1], el: [0.18, 0.12], r: [0.95, 0.7], fov: 32 }}>{(tt) => {
-  const yr = 1 + Math.min(10, Math.floor(eio(tt, 0.8, 6.0) * 11)), season = (eio(tt, 0.8, 6.0) * 11 * 4) % 4;
-  const ground = new THREE.Color(["#3a4a2a", "#2a3a1a", "#5a3a1a", "#d8dce4"][Math.floor(season)]);
+  // estaciones con fundido suave (1¼ vuelta lineal, ~1 s por estación; nieve apagada): antes cambiaban a golpes 4 por año = destellos de 8 Hz
+  const yr = 1 + Math.min(10, Math.floor(eio(tt, 0.8, 6.0) * 11)), season = (Math.min(1, Math.max(0, (tt - 0.8) / 5.6)) * 1.25 * 4) % 4;
+  const SC = ["#3a4a2a", "#2a3a1a", "#5a3a1a", "#8a909a"], s0 = Math.floor(season), sf = season - s0, sk = sf * sf * (3 - 2 * sf);
+  const ground = new THREE.Color(SC[s0]).lerp(new THREE.Color(SC[(s0 + 1) % 4]), sk);
+  const wSnow = s0 === 3 ? 1 - sk : s0 === 2 ? sk : 0, wLeaf = s0 === 2 ? 1 - sk : s0 === 1 ? sk : 0;
   return <>
     <mesh rotation={[-PI / 2, 0, 0]}><planeGeometry args={[3, 2]} /><meshStandardMaterial color={ground.multiplyScalar(0.5)} /></mesh>
     <House p={[0, 0, -0.1]} s={0.8} lit={[0, 0, 0, 0]} col="#8a7a68" roof="#3a3e46" />
     <mesh position={[0.06, 0.12, 0.09]}><sphereGeometry args={[0.012, 16, 12]} />{M.glow({ col: "#ffd59a" })}</mesh>
     <pointLight position={[0.06, 0.12, 0.12]} intensity={0.9} distance={0.6} color="#ffcf8a" />
-    {Math.floor(season) === 3 && Array.from({ length: 50 }, (_, i) => <mesh key={i} position={[(rn(i, 2) - 0.5) * 1.2, 0.5 - ((tt * 0.15 + rn(i, 3)) % 1) * 0.5, (rn(i, 4) - 0.5) * 0.6]} scale={0.004}><sphereGeometry args={[1, 6, 4]} />{M.glow({ col: "#f2f4f8", op: 0.8 })}</mesh>)}
-    {Math.floor(season) === 2 && Array.from({ length: 24 }, (_, i) => <mesh key={i} position={[(rn(i, 2) - 0.5) * 1.0, 0.4 - ((tt * 0.1 + rn(i, 3)) % 1) * 0.4, (rn(i, 4) - 0.3) * 0.5]} rotation={[tt + i, i, 0]} scale={0.01}><planeGeometry args={[1, 0.6]} /><meshStandardMaterial color="#c0602a" side={THREE.DoubleSide} /></mesh>)}
+    {Array.from({ length: 50 }, (_, i) => <mesh key={i} visible={wSnow > 0.01} position={[(rn(i, 2) - 0.5) * 1.2, 0.5 - ((tt * 0.15 + rn(i, 3)) % 1) * 0.5, (rn(i, 4) - 0.5) * 0.6]} scale={0.004}><sphereGeometry args={[1, 6, 4]} />{M.glow({ col: "#f2f4f8", op: 0.8 * wSnow })}</mesh>)}
+    {Array.from({ length: 24 }, (_, i) => <mesh key={"l" + i} visible={wLeaf > 0.01} position={[(rn(i, 2) - 0.5) * 1.0, 0.4 - ((tt * 0.1 + rn(i, 3)) % 1) * 0.4, (rn(i, 4) - 0.3) * 0.5]} rotation={[tt + i, i, 0]} scale={0.01}><planeGeometry args={[1, 0.6]} /><meshStandardMaterial color="#c0602a" side={THREE.DoubleSide} transparent opacity={wLeaf} /></mesh>)}
     <group position={[0.3, 0.1, 0.06]}><Sheet map={txt("yr" + yr, [yr === 1 ? "1 year" : yr + " years"], { w: 300, h: 110, bg: "#f2ead8", fg: "#2a2420", size: 64, font: HANDF })} w={0.14} h={0.05} s={pop(tt, 0.6)} em={0.1} /></group>
   </>;
 }}</Scene3D>;
