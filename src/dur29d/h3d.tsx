@@ -160,6 +160,13 @@ const ClampScales: React.FC = () => {
   return null;
 };
 
+// una textura que terminó de cargar pide un cuadro nuevo (el canvas de Remotion no tiene bucle propio)
+const Redibuja: React.FC = () => {
+  const advance = useThree((s) => s.advance);
+  React.useEffect(() => { const f = () => advance(performance.now()); window.addEventListener("img3d", f); return () => window.removeEventListener("img3d", f); }, [advance]);
+  return null;
+};
+
 export const Scene3D: React.FC<{
   t: number; h: H; cam: Cam; mode?: "iris" | "wipe" | "split" | "drop"; floor?: Floor; wall?: "tile" | "dark" | "wood" | "none";
   bg?: string; back?: React.ReactNode; key1?: number[]; warm?: number; lamp?: number[]; children: (tt: number) => React.ReactNode; over?: (tt: number) => React.ReactNode;
@@ -190,6 +197,7 @@ export const Scene3D: React.FC<{
         {/* la acción se estira a todo el componente: nada queda quieto antes de la salida */}
         {children(tt)}
         <ClampScales />
+        <Redibuja />
       </ThreeCanvas>
     </AbsoluteFill>
     {/* viñeta suave y luz cálida de arriba (no es filtro: es la luz del cuarto) */}
