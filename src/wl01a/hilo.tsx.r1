@@ -1,0 +1,57 @@
+// wl01a · EL HILO «la máquina de pedal y el maniquí». Fotos Nano Banana h00..h11 (mismo cuarto, misma cámara): al decir el número
+// el maniquí suma su prenda (fundido sobre la foto anterior) y la cámara se arrima a lo que entró; de un hilo cuelga la etiqueta
+// de la tienda, que escribe a mano el precio de 1956 y abajo, en lápiz rojo, el de hoy. vestida = la silueta entera, al cierre.
+import React from "react";
+import { AbsoluteFill, Img, staticFile } from "remotion";
+import { e, spr } from "./lib";
+import { HAND } from "./k3d";
+
+export type Fi = { id: string; a: number; b: number; va?: number; wow?: number | null; n?: number; mo?: Record<string, number>; precio?: string; hoy?: string };
+const foto = (n: number) => staticFile(`wl01a/hilo/h${String(n).padStart(2, "0")}.jpg`);
+// a dónde mira la cámara cuando entra cada prenda (fracción de la foto) y cuánto se arrima
+const FOCO: Record<number, [number, number, number]> = {
+  0: [0.55, 0.5, 1.06], 1: [0.59, 0.42, 1.2], 2: [0.33, 0.56, 1.22], 3: [0.59, 0.5, 1.16], 4: [0.59, 0.55, 1.14], 5: [0.59, 0.38, 1.18],
+  6: [0.36, 0.53, 1.3], 7: [0.38, 0.53, 1.3], 8: [0.46, 0.75, 1.2], 9: [0.86, 0.42, 1.18], 10: [0.25, 0.55, 1.28], 11: [0.59, 0.15, 1.24]};
+
+const Escritura: React.FC<{ t: number; at: number; dur?: number; children: React.ReactNode }> = ({ t, at, dur = 0.6, children }) => {
+  const k = e(t, at, at + dur);   // la pluma avanza de izquierda a derecha
+  return <div style={{ clipPath: `inset(-20% ${100 - 104 * k}% -20% -4%)` }}>{children}</div>;
+};
+const Etiqueta: React.FC<{ t: number; f: Fi; x: number }> = ({ t, f, x }) => {
+  const a = Math.max(f.a, f.va ?? f.a) + 0.3, k = spr(t, a, 0.8), sw = (1 - Math.min(1, k)) * -32 + 2.2 * Math.sin((t - a) * 2.1) * Math.exp(-(t - a) * 0.5);
+  const o = e(t, a - 0.05, a + 0.15);
+  if (o <= 0.01 || !f.mo) return null;
+  return (
+    <div style={{ position: "absolute", left: x, top: x < 960 ? 150 : -40, width: 330, height: 840, opacity: o, transformOrigin: "50% 0", transform: `rotate(${sw}deg)` }}>
+      <div style={{ position: "absolute", left: 164, top: 0, width: 2, height: 330, background: "linear-gradient(#cdbfa6,#9a8a70)" }} />
+      <div style={{ position: "absolute", left: 0, top: 320, width: 330, height: 430, background: "linear-gradient(170deg,#f7efdc,#e8dcc1)", borderRadius: 10,
+        clipPath: "polygon(18% 0,82% 0,100% 12%,100% 100%,0 100%,0 12%)", boxShadow: "0 30px 60px rgba(0,0,0,.55)", textAlign: "center", color: "#2a2116" }}>
+        <div style={{ margin: "26px auto 0", width: 30, height: 30, borderRadius: "50%", background: "#6f6250", boxShadow: "inset 0 3px 6px #000" }} />
+        <div style={{ fontFamily: "Georgia, serif", fontSize: 28, letterSpacing: 6, marginTop: 18, color: "#6d5a40" }}>1956</div>
+        <Escritura t={t} at={f.mo.p}><div style={{ fontFamily: HAND, fontSize: (f.precio ?? "").length > 6 ? 70 : 118, lineHeight: "130px", color: "#1d2a4a" }}>{f.precio}</div></Escritura>
+        <div style={{ margin: "6px 40px", height: 2, background: "rgba(80,60,40,.35)" }} />
+        <div style={{ fontFamily: "Georgia, serif", fontSize: 26, letterSpacing: 5, marginTop: 10, color: "#8a3a2e", opacity: e(t, f.mo.h - 0.2, f.mo.h) }}>TODAY</div>
+        <Escritura t={t} at={f.mo.h}><div style={{ fontFamily: HAND, fontSize: (f.hoy ?? "").length > 6 ? 56 : 92, lineHeight: "104px", color: "#b3261e" }}>{f.hoy}</div></Escritura>
+      </div>
+    </div>
+  );
+};
+export const HiloFX: React.FC<{ t: number; f: Fi }> = ({ t, f }) => {
+  const n = f.n ?? 0, cierre = f.id === "vestida";
+  const [fx, fy, z] = cierre ? [0.55, 0.45, 1.16] : FOCO[n];
+  const k = cierre ? 1 - e(t, f.a, f.b) : e(t, f.a + 0.6, f.b + 2);         // se arrima (o en el cierre se aleja hasta verla entera)
+  const A = Math.max(f.a, f.va ?? f.a), sc = 1 + (z - 1) * k, mix = n === 0 || cierre ? 1 : e(t, A + 0.15, A + 0.9), out = e(t, f.b - 0.3, f.b);
+  const glow = n > 0 && !cierre ? Math.sin(Math.PI * mix) * 0.12 : 0;
+  const tagX = n === 9 ? 130 : 1460;   // a la derecha; con el abrigo (que está a la derecha) a la izquierda pero más abajo — nunca arriba a la izquierda
+  return (
+    <AbsoluteFill style={{ background: "#0b0907", overflow: "hidden" }}>
+      <AbsoluteFill style={{ transformOrigin: `${fx * 100}% ${fy * 100}%`, transform: `scale(${sc})`, filter: `brightness(${1 + glow}) blur(${out * 6}px)`, opacity: 1 - out }}>
+        {n > 0 && !cierre && <Img src={foto(n - 1)} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover" }} />}
+        <Img src={foto(n)} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", opacity: mix }} />
+      </AbsoluteFill>
+      <AbsoluteFill style={{ background: "radial-gradient(85% 75% at 50% 50%, transparent 55%, rgba(10,7,4,.55) 100%)" }} />
+      {!cierre && <div style={{ opacity: 1 - out }}><Etiqueta t={t} f={f} x={tagX} /></div>}
+    </AbsoluteFill>
+  );
+};
+export const HILO_RE = /^(hilo\d+|vestida)$/;

@@ -1,0 +1,111 @@
+// wl01a · COMPONENTES LIVIANOS (2D, sólo números): kayla (cronómetro que no llega a 4:00) · layaway (tarjeta de apartado,
+// 30 semanas a un dólar) · halloran (3 sombreros en 15 minutos) · puerta (contraluz: el vestido sin enagua deja pasar el sol).
+import React from "react";
+import { AbsoluteFill, Img, staticFile } from "remotion";
+import { Stage } from "./base";
+import { FONT, e, spr } from "./lib";
+import { HAND } from "./k3d";
+import type { Fi } from "./hilo";
+
+// ---------- KAYLA: el cronómetro corre 4 minutos en 3 segundos y se clava en 4:00 ----------
+export const KaylaFX: React.FC<{ t: number; f: Fi }> = ({ t, f }) => {
+  const { a, b } = f, wow = f.wow!, four = f.mo?.four ?? wow + 0.6;
+  const A = Math.max(a, f.va ?? a), run = e(t, A + 0.3, wow + 0.15), seg = 240 * Math.pow(run, 1.6), stop = spr(t, wow + 0.15, 1.2);
+  const shake = t > wow + 0.15 ? 6 * Math.sin((t - wow) * 40) * Math.exp(-(t - wow) * 5) : 0;
+  const ent = Math.min(1, spr(t, A, 0.9)), pulse = 1 + 0.12 * Math.sin(Math.PI * e(t, four, four + 0.5));
+  const mm = Math.floor(seg / 60), ss = Math.floor(seg % 60);
+  return <Stage t={t} a={a} b={b} dim={0.7}>
+    <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", transform: `translateY(${(1 - ent) * 300}px) rotate(${shake}deg)` }}>
+      <svg width={760} height={860} viewBox="-380 -460 760 860">
+        <defs><radialGradient id="cr" cx="35%" cy="30%"><stop offset="0" stopColor="#fdfdfd" /><stop offset=".55" stopColor="#a9aeb4" /><stop offset="1" stopColor="#5d6268" /></radialGradient>
+          <radialGradient id="cara" cx="45%" cy="40%"><stop offset="0" stopColor="#fbf6ea" /><stop offset="1" stopColor="#e6dcc6" /></radialGradient></defs>
+        <rect x={-34} y={-440} width={68} height={70} rx={12} fill="url(#cr)" /><circle cx={0} cy={-448} r={30} fill="none" stroke="url(#cr)" strokeWidth={12} />
+        <circle r={330} fill="url(#cr)" style={{ filter: "drop-shadow(0 40px 50px rgba(0,0,0,.6))" }} /><circle r={296} fill="url(#cara)" />
+        {Array.from({ length: 60 }, (_, i) => <line key={i} x1={0} y1={-282} x2={0} y2={i % 5 ? -262 : -240} stroke="#2a2420" strokeWidth={i % 5 ? 3 : 7} transform={`rotate(${i * 6})`} />)}
+        {[0, 1, 2, 3, 4, 5].map((m) => <text key={m} x={205 * Math.sin((m * Math.PI) / 3)} y={-205 * Math.cos((m * Math.PI) / 3) + 12} textAnchor="middle" fontFamily={FONT} fontWeight={900} fontSize={34} fill="#2a2420">{m * 10}</text>)}
+        <circle cx={0} cy={110} r={74} fill="#efe6d2" stroke="#7b6f60" strokeWidth={3} />
+        {[0, 1, 2, 3, 4].map((m) => <line key={m} x1={0} y1={-58} x2={0} y2={-46} stroke="#2a2420" strokeWidth={4} transform={`translate(0,110) rotate(${m * 72})`} />)}
+        <line x1={0} y1={10} x2={0} y2={-56} stroke="#b3261e" strokeWidth={6} strokeLinecap="round" transform={`translate(0,110) rotate(${(seg / 60) * 72})`} />
+        <line x1={0} y1={40} x2={0} y2={-262} stroke="#b3261e" strokeWidth={6} strokeLinecap="round" transform={`rotate(${seg * 6})`} />
+        <circle r={14} fill="#2a2420" />
+      </svg>
+      <div style={{ position: "absolute", top: 850, fontFamily: FONT, fontWeight: 900, fontSize: 120 * pulse, color: stop > 0.1 ? "#ffcf6a" : "#f4efe6", textShadow: "0 8px 30px rgba(0,0,0,.8)", letterSpacing: 4 }}>
+        {mm}:{String(ss).padStart(2, "0")}</div>
+    </AbsoluteFill>
+  </Stage>;
+};
+
+// ---------- LAYAWAY: 30 casilleros, uno por semana; la perforadora acelera y al final cae el sello PAID ----------
+export const LayawayFX: React.FC<{ t: number; f: Fi }> = ({ t, f }) => {
+  const { a, b } = f, wow = f.wow!;
+  const A = Math.max(a, f.va ?? a), P0 = A + 0.6, P1 = Math.min(wow, A + 5.2);   // perfora en lo que se ve, aunque el avatar tape el principio
+  const p = e(t, P0, P1), n = Math.floor(30 * Math.pow(p, 1.7) + 1e-6), sello = spr(t, P1 + 0.3, 0.9);
+  const ent = Math.min(1, spr(t, A, 0.8));
+  return <Stage t={t} a={a} b={b} dim={0.7}>
+    <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", perspective: 1600 }}>
+      <div style={{ width: 1180, height: 700, transform: `rotateX(${14 * (1 - ent) + 8}deg) rotateZ(-2deg) translateY(${(1 - ent) * 500}px)`, background: "linear-gradient(170deg,#f6eedb,#e5d8bb)",
+        borderRadius: 14, boxShadow: "0 50px 90px rgba(0,0,0,.6)", padding: "34px 50px", color: "#2a2116", position: "relative" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", fontFamily: "Georgia, serif", fontSize: 40, letterSpacing: 8, borderBottom: "3px double #7d6a4e", paddingBottom: 12 }}>
+          <span>LAYAWAY</span><span style={{ fontFamily: HAND, letterSpacing: 0, fontSize: 52, color: "#1d2a4a" }}>camel coat · $30</span></div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(10, 1fr)", gap: 14, marginTop: 30 }}>
+          {Array.from({ length: 30 }, (_, i) => {
+            const on = i < n, k = on ? Math.min(1, spr(t, P0 + (P1 - P0) * Math.pow((i + 1) / 30, 1 / 1.7), 2)) : 0;
+            return <div key={i} style={{ height: 130, border: "2px solid #9c8a6c", borderRadius: 6, position: "relative", fontFamily: "Georgia, serif", fontSize: 22, color: "#7d6a4e", padding: 6 }}>
+              {i + 1}
+              {on && <div style={{ position: "absolute", left: "50%", top: "52%", width: 44, height: 44, marginLeft: -22, marginTop: -22, borderRadius: "50%", background: "#1a140e",
+                boxShadow: "inset 0 4px 8px #000, 0 0 0 3px rgba(255,255,255,.35)", transform: `scale(${0.4 + 0.6 * k})` }} />}
+              {on && <div style={{ position: "absolute", bottom: 4, width: "100%", left: 0, textAlign: "center", fontFamily: HAND, fontSize: 30, color: "#1d2a4a", opacity: k }}>$1</div>}
+            </div>;
+          })}
+        </div>
+        {sello > 0.01 && <div style={{ position: "absolute", left: "50%", top: "52%", transform: `translate(-50%,-50%) rotate(-14deg) scale(${2.4 - 1.4 * Math.min(1, sello)})`, opacity: Math.min(1, sello * 1.4),
+          border: "10px solid rgba(179,38,30,.9)", borderRadius: 16, padding: "6px 40px", fontFamily: "Georgia, serif", fontWeight: 900, fontSize: 150, letterSpacing: 14, color: "rgba(179,38,30,.9)" }}>PAID</div>}
+      </div>
+    </AbsoluteFill>
+  </Stage>;
+};
+
+// ---------- HALLORAN: tres sombrereras caen y se apilan mientras el reloj corre 15 minutos; la boleta suma $36 y abajo hoy ----------
+const Caja: React.FC<{ y: number; c: string; w: number }> = ({ y, c, w }) => <div style={{ position: "absolute", left: -w / 2, top: y, width: w, height: 170 }}>
+  <div style={{ position: "absolute", top: 34, width: w, height: 130, background: `repeating-linear-gradient(90deg, ${c} 0 38px, #f6efe2 38px 60px)`, borderRadius: `0 0 ${w / 2}px ${w / 2}px / 0 0 34px 34px`, boxShadow: "0 24px 40px rgba(0,0,0,.45)" }} />
+  <div style={{ position: "absolute", top: 0, width: w, height: 68, borderRadius: "50%", background: `radial-gradient(60% 60% at 45% 40%, #fbf5e8, ${c})`, border: "3px solid rgba(0,0,0,.15)" }} />
+</div>;
+export const HalloranFX: React.FC<{ t: number; f: Fi }> = ({ t, f }) => {
+  const { a, b } = f, wow = f.wow!, tres = f.mo?.tres ?? wow - 1.5;
+  const A = Math.max(a, f.va ?? a), caidas = [A + 0.2, A + 0.7, A + 1.2].map((x) => Math.min(1.04, spr(t, x, 1.1)));
+  const min = 15 * e(t, A + 0.1, A + 1.8), slip = e(t, tres - 0.2, tres + 0.2);
+  return <Stage t={t} a={a} b={b} dim={0.7}><AbsoluteFill style={{ transform: "scale(1.3)", transformOrigin: "50% 50%" }}>
+    <div style={{ position: "absolute", left: 640, top: 860 }}>
+      {[["#9fb7d3", 360], ["#e7b9b0", 330], ["#b9cfae", 300]].map(([c, w], i) =>
+        <Caja key={i} c={c as string} w={w as number} y={-170 * (i + 1) + 40 * i - (1 - caidas[i]) * 900} />)}
+    </div>
+    <svg style={{ position: "absolute", left: 1180, top: 150 }} width={300} height={300} viewBox="-150 -150 300 300">
+      <circle r={140} fill="#f4ecdb" stroke="#3a2e22" strokeWidth={10} />
+      {Array.from({ length: 12 }, (_, i) => <line key={i} x1={0} y1={-122} x2={0} y2={-104} stroke="#3a2e22" strokeWidth={5} transform={`rotate(${i * 30})`} />)}
+      <path d={`M0 0 L0 -110 A110 110 0 ${min > 30 ? 1 : 0} 1 ${110 * Math.sin((min / 60) * 2 * Math.PI)} ${-110 * Math.cos((min / 60) * 2 * Math.PI)} Z`} fill="rgba(179,38,30,.25)" />
+      <line x1={0} y1={0} x2={0} y2={-112} stroke="#2a2116" strokeWidth={6} strokeLinecap="round" transform={`rotate(${min * 6})`} />
+      <line x1={0} y1={0} x2={0} y2={-70} stroke="#2a2116" strokeWidth={9} strokeLinecap="round" transform="rotate(330)" />
+      <circle r={10} fill="#2a2116" />
+    </svg>
+    <div style={{ position: "absolute", left: 1120, top: 500, width: 420, opacity: slip, transform: `rotate(3deg) translateY(${(1 - slip) * 60}px)`, background: "linear-gradient(#fbf8f0,#eee6d4)", padding: "26px 34px", boxShadow: "0 30px 60px rgba(0,0,0,.55)", color: "#2a2116" }}>
+      <div style={{ fontFamily: HAND, fontSize: 62, color: "#1d2a4a" }}>3 hats · $36</div>
+      <div style={{ height: 2, background: "rgba(80,60,40,.35)", margin: "10px 0" }} />
+      <div style={{ fontFamily: "Georgia, serif", fontSize: 24, letterSpacing: 5, color: "#8a3a2e", opacity: e(t, wow - 0.2, wow) }}>TODAY</div>
+      <div style={{ clipPath: `inset(-20% ${100 - 104 * e(t, wow, wow + 0.6)}% -20% -4%)`, fontFamily: HAND, fontSize: 84, color: "#b3261e" }}>$440</div>
+    </div>
+  </AbsoluteFill></Stage>;
+};
+
+// ---------- PUERTA: el vestido al sol en la puerta deja pasar la luz; con la enagua adentro, ya no ----------
+export const PuertaFX: React.FC<{ t: number; f: Fi }> = ({ t, f }) => {
+  const { a, b } = f, wow = f.wow!;
+  const w = e(t, wow + 0.4, wow + 1.1), sc = 1.02 + 0.08 * e(t, a, b), out = e(t, b - 0.3, b);
+  const im = (k: string) => staticFile(`wl01a/hilo/${k}.jpg`);
+  return <AbsoluteFill style={{ background: "#0b0907", overflow: "hidden", opacity: 1 - out }}>
+    <AbsoluteFill style={{ transform: `scale(${sc})`, transformOrigin: "50% 45%" }}>
+      <Img src={im("puerta_a")} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover" }} />
+      <Img src={im("puerta_b")} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", clipPath: `inset(0 0 ${100 - 100 * w}% 0)` }} />
+    </AbsoluteFill>
+    {w > 0 && w < 1 && <div style={{ position: "absolute", left: 0, right: 0, top: `${100 * w}%`, height: 6, marginTop: -3, background: "rgba(255,240,210,.8)", boxShadow: "0 0 40px 12px rgba(255,230,190,.6)" }} />}
+  </AbsoluteFill>;
+};
