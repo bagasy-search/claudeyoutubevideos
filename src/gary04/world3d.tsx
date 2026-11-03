@@ -250,9 +250,9 @@ export const HouseWorld: React.FC<{ t: number }> = ({ t }) => {
     <mesh visible={false} position={[0, -0.6, 0.63]}><boxGeometry args={[14, 1.2, 0.02]} /><meshStandardMaterial color="#3a2c22" roughness={1} /></mesh>
 
     {/* ===== sótano ===== */}
-    <Wall p={[0, BS + 0.5, ZB - 0.02]} s={[3.2, 1.0, 0.04]} col="#9d978c" ns />
-    <Wall p={[XL - 0.02, BS + 0.5, 0]} s={[0.04, 1.0, 1.24]} col="#8f897e" ns />
-    <Wall p={[XR + 0.02, BS + 0.5, 0]} s={[0.04, 1.0, 1.24]} col="#8f897e" ns />
+    <Wall p={[0, BS + 0.5, ZB + 0.005]} s={[3.2, 1.0, 0.04]} col="#9d978c" ns />
+    <Wall p={[XL + 0.005, BS + 0.5, 0]} s={[0.04, 1.0, 1.24]} col="#8f897e" ns />
+    <Wall p={[XR - 0.005, BS + 0.5, 0]} s={[0.04, 1.0, 1.24]} col="#8f897e" ns />
     <mesh position={[0, BS - 0.01, 0]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[3.2, 1.24]} /><meshStandardMaterial color="#7d786f" roughness={0.95} /></mesh>
     <Panel f={f} />
     <WellTank lvl={1 - 0.85 * f("well")} />
