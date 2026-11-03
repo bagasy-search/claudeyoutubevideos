@@ -70,7 +70,7 @@ const BigClock: React.FC<{ t: number; on: number }> = ({ t, on }) => {
 
 // ===== piezas de la casa =====
 const wallM = (col: string) => <meshStandardMaterial color={col} roughness={0.92} />;
-const Wall: React.FC<{ p: V; s: V; col?: string }> = ({ p, s, col = "#e9e1d0" }) => <mesh position={p} receiveShadow castShadow><boxGeometry args={s} />{wallM(col)}</mesh>;
+const Wall: React.FC<{ p: V; s: V; col?: string; ns?: boolean }> = ({ p, s, col = "#e9e1d0", ns }) => <mesh position={p} receiveShadow={!ns} castShadow={!ns}><boxGeometry args={s} />{wallM(col)}</mesh>;
 // losa con el canto del corte a la vista (crema, como casa de muñecas)
 const Slab: React.FC<{ y: number; x0: number; x1: number }> = ({ y, x0, x1 }) => <>
   <mesh position={[(x0 + x1) / 2, y - 0.03, 0]} receiveShadow castShadow><boxGeometry args={[x1 - x0, 0.06, ZF - ZB]} /><meshStandardMaterial color="#d8cdb6" roughness={0.9} /></mesh>
@@ -232,7 +232,7 @@ export const HouseWorld: React.FC<{ t: number }> = ({ t }) => {
   return <WorldCanvas cam={cam} bg="#070b14" fog={[7, 22]}>
     <hemisphereLight args={["#8fa6c8", "#1a1e26", 0.32 + 0.25 * (1 - dark)]} />
     {/* la luna (fría, de atrás) */}
-    <directionalLight position={[6, 7, -4]} intensity={1.1} color="#b9cdf0" castShadow shadow-mapSize-width={2048} shadow-mapSize-height={2048} shadow-camera-left={-6} shadow-camera-right={8} shadow-camera-top={5} shadow-camera-bottom={-3} shadow-bias={-0.0004} />
+    <directionalLight position={[6, 7, -4]} intensity={1.1} color="#b9cdf0" castShadow shadow-mapSize-width={2048} shadow-mapSize-height={2048} shadow-camera-left={-6} shadow-camera-right={8} shadow-camera-top={5} shadow-camera-bottom={-3} shadow-bias={-0.0004} shadow-normalBias={0.03} />
     <mesh position={[9, 6.2, -12]}><sphereGeometry args={[0.7, 32, 24]} />{M.glow({ col: "#f4f7ff" })}</mesh>
     {/* luz de relleno del frente del corte (como en una vitrina) */}
     <spotLight position={[0, 2.6, 4.2]} angle={0.7} penumbra={1} intensity={10 + 6 * (1 - dark)} distance={9} color="#d9e2f2" />
@@ -250,10 +250,10 @@ export const HouseWorld: React.FC<{ t: number }> = ({ t }) => {
     <mesh visible={false} position={[0, -0.6, 0.63]}><boxGeometry args={[14, 1.2, 0.02]} /><meshStandardMaterial color="#3a2c22" roughness={1} /></mesh>
 
     {/* ===== sótano ===== */}
-    <Wall p={[0, BS + 0.5, ZB - 0.02]} s={[3.2, 1.0, 0.04]} col="#9d978c" />
-    <Wall p={[XL - 0.02, BS + 0.5, 0]} s={[0.04, 1.0, 1.24]} col="#8f897e" />
-    <Wall p={[XR + 0.02, BS + 0.5, 0]} s={[0.04, 1.0, 1.24]} col="#8f897e" />
-    <mesh position={[0, BS - 0.01, 0]} rotation={[-PI / 2, 0, 0]} receiveShadow><planeGeometry args={[3.2, 1.24]} /><meshStandardMaterial color="#7d786f" roughness={0.95} /></mesh>
+    <Wall p={[0, BS + 0.5, ZB - 0.02]} s={[3.2, 1.0, 0.04]} col="#9d978c" ns />
+    <Wall p={[XL - 0.02, BS + 0.5, 0]} s={[0.04, 1.0, 1.24]} col="#8f897e" ns />
+    <Wall p={[XR + 0.02, BS + 0.5, 0]} s={[0.04, 1.0, 1.24]} col="#8f897e" ns />
+    <mesh position={[0, BS - 0.01, 0]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[3.2, 1.24]} /><meshStandardMaterial color="#7d786f" roughness={0.95} /></mesh>
     <Panel f={f} />
     <WellTank lvl={1 - 0.85 * f("well")} />
     <Heater />

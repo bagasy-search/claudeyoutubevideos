@@ -179,7 +179,7 @@ export const useImg = (src?: string) => {
     if (IMG.get(src)) { set((x) => x + 1); later(); return; }
     const im = new Image(); im.crossOrigin = "anonymous";
     im.onload = () => { if (!IMG.get(src)) { const t = new THREE.Texture(im); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; t.needsUpdate = true; IMG.set(src, t); } set((x) => x + 1); later(); };
-    im.onerror = done; im.src = staticFile(src);
+    let n = 0; im.onerror = () => { if (++n < 12) setTimeout(() => { im.src = staticFile(src) + "?r=" + n; }, 400); else done(); }; im.src = staticFile(src);
   }, [src]);
   return src ? IMG.get(src) ?? null : null;
 };
