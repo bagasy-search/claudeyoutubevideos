@@ -1,0 +1,1575 @@
+{
+"end": 830.2667,
+"segs": [
+{
+"a": 0.0,
+"b": 0.8,
+"k": "fx",
+"id": "thumb0"
+},
+{
+"a": 0.8,
+"b": 4.5667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 4.5667,
+"b": 7.5667,
+"k": "clip",
+"id": "v002_hook",
+"pid": "v002_hook",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 7.5667,
+"b": 10.5667,
+"k": "clip",
+"id": "v003_hook",
+"pid": "v003_hook",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 10.5667,
+"b": 13.3,
+"k": "av",
+"id": "av"
+},
+{
+"a": 13.3,
+"b": 16.5,
+"k": "clip",
+"id": "v004_hook",
+"pid": "v004_hook",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 16.5,
+"b": 17.6667,
+"k": "clip",
+"id": "v005_hook_r01",
+"pid": "v005_hook_r01",
+"o": 0.8333,
+"rol": "rafaga",
+"grp": "R01"
+},
+{
+"a": 17.6667,
+"b": 18.7333,
+"k": "clip",
+"id": "v006_hook_r01",
+"pid": "v006_hook_r01",
+"o": 1.6,
+"rol": "rafaga",
+"grp": "R01"
+},
+{
+"a": 18.7333,
+"b": 19.6667,
+"k": "clip",
+"id": "v007_hook_r01",
+"pid": "v007_hook_r01",
+"o": 4.0333,
+"rol": "rafaga",
+"grp": "R01"
+},
+{
+"a": 19.6667,
+"b": 20.7333,
+"k": "clip",
+"id": "v008_hook_r01",
+"pid": "v008_hook_r01",
+"o": 0.7667,
+"rol": "rafaga",
+"grp": "R01"
+},
+{
+"a": 20.7333,
+"b": 23.5667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 23.5667,
+"b": 28.4667,
+"k": "clip",
+"id": "v009_hook",
+"pid": "v009_hook",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 28.4667,
+"b": 31.0667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 31.0667,
+"b": 34.6667,
+"k": "clip",
+"id": "v010_hook",
+"pid": "v010_hook",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 34.6667,
+"b": 37.4,
+"k": "clip",
+"id": "v011_hook",
+"pid": "v011_hook",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 37.4,
+"b": 43.4667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 43.4667,
+"b": 46.3333,
+"k": "clip",
+"id": "v013_hook",
+"pid": "v013_hook",
+"o": 0.5667,
+"rol": "pausa"
+},
+{
+"a": 46.3333,
+"b": 50.3667,
+"k": "clip",
+"id": "v014_hook",
+"pid": "v014_hook",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 50.3667,
+"b": 53.8667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 53.8667,
+"b": 57.2667,
+"k": "clip",
+"id": "v015_hook",
+"pid": "v015_hook",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 57.2667,
+"b": 60.6333,
+"k": "clip",
+"id": "v023_regla",
+"pid": "v023_regla",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 60.6333,
+"b": 66.8,
+"k": "av",
+"id": "av"
+},
+{
+"a": 66.8,
+"b": 72.3,
+"k": "clip",
+"id": "v016_hook",
+"pid": "v016_hook",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 72.3,
+"b": 77.8333,
+"k": "clip",
+"id": "v017_hook",
+"pid": "v017_hook",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 77.8333,
+"b": 83.4,
+"k": "av",
+"id": "av"
+},
+{
+"a": 83.4,
+"b": 89.2333,
+"k": "clip",
+"id": "v018_hook",
+"pid": "v018_hook",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 89.2333,
+"b": 92.8333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 92.8333,
+"b": 98.0667,
+"k": "foto",
+"id": "v019_regla",
+"pid": "v019_regla",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 98.0667,
+"b": 103.3,
+"k": "clip",
+"id": "v020_regla",
+"pid": "v020_regla",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 103.3,
+"b": 108.3,
+"k": "av",
+"id": "av"
+},
+{
+"a": 108.3,
+"b": 113.4,
+"k": "clip",
+"id": "v021_regla",
+"pid": "v021_regla",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 113.4,
+"b": 118.5333,
+"k": "clip",
+"id": "v022_regla",
+"pid": "v022_regla",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 118.5333,
+"b": 121.7333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 121.7333,
+"b": 127.7,
+"k": "clip",
+"id": "v024_regla",
+"pid": "v024_regla",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 127.7,
+"b": 133.7,
+"k": "foto",
+"id": "v025_regla",
+"pid": "v025_regla",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 133.7,
+"b": 139.8667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 139.8667,
+"b": 142.8667,
+"k": "clip",
+"id": "v026_regla",
+"pid": "v026_regla",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 142.8667,
+"b": 149.8667,
+"k": "clip",
+"id": "v027_leggings",
+"pid": "v027_leggings",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 149.8667,
+"b": 155.0667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 155.0667,
+"b": 160.0,
+"k": "clip",
+"id": "v029_leggings",
+"pid": "v029_leggings",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 160.0,
+"b": 164.9333,
+"k": "foto",
+"id": "v030_leggings",
+"pid": "v030_leggings",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 164.9333,
+"b": 169.1333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 169.1333,
+"b": 173.3333,
+"k": "clip",
+"id": "v028_leggings",
+"pid": "v028_leggings",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 173.3333,
+"b": 177.5667,
+"k": "foto",
+"id": "v031_leggings",
+"pid": "v031_leggings",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 177.5667,
+"b": 181.0667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 181.0667,
+"b": 184.9,
+"k": "foto",
+"id": "v032_leggings",
+"pid": "v032_leggings",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 184.9,
+"b": 188.7,
+"k": "clip",
+"id": "v033_leggings",
+"pid": "v033_leggings",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 188.7,
+"b": 192.5333,
+"k": "clip",
+"id": "v034_zapatillas",
+"pid": "v034_zapatillas",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 192.5333,
+"b": 197.1333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 197.1333,
+"b": 202.7667,
+"k": "clip",
+"id": "v012_hook",
+"pid": "v012_hook",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 202.7667,
+"b": 207.1667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 207.1667,
+"b": 216.4667,
+"k": "foto",
+"id": "v035_zapatillas",
+"pid": "v035_zapatillas",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 216.4667,
+"b": 219.0667,
+"k": "clip",
+"id": "v036_zapatillas",
+"pid": "v036_zapatillas",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 219.0667,
+"b": 222.0,
+"k": "av",
+"id": "av"
+},
+{
+"a": 222.0,
+"b": 226.7,
+"k": "foto",
+"id": "v037_zapatillas",
+"pid": "v037_zapatillas",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 226.7,
+"b": 231.4333,
+"k": "foto",
+"id": "v038_zapatillas",
+"pid": "v038_zapatillas",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 231.4333,
+"b": 233.8333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 233.8333,
+"b": 244.9333,
+"k": "fx",
+"id": "matita"
+},
+{
+"a": 244.9333,
+"b": 249.1333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 249.1333,
+"b": 255.0667,
+"k": "foto",
+"id": "v040_bolso",
+"pid": "v040_bolso",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 255.0667,
+"b": 257.6667,
+"k": "foto",
+"id": "v041_bolso",
+"pid": "v041_bolso",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 257.6667,
+"b": 261.6,
+"k": "av",
+"id": "av"
+},
+{
+"a": 261.6,
+"b": 264.5667,
+"k": "foto",
+"id": "v042_bolso",
+"pid": "v042_bolso",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 264.5667,
+"b": 267.5333,
+"k": "foto",
+"id": "v043_bolso",
+"pid": "v043_bolso",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 267.5333,
+"b": 272.5333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 272.5333,
+"b": 275.8333,
+"k": "foto",
+"id": "v045_bolso",
+"pid": "v045_bolso",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 275.8333,
+"b": 277.7333,
+"k": "foto",
+"id": "v044_bolso",
+"pid": "v044_bolso",
+"o": 0.4,
+"rol": "pausa"
+},
+{
+"a": 277.7333,
+"b": 282.1333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 282.1333,
+"b": 287.7667,
+"k": "foto",
+"id": "v046_bolso",
+"pid": "v046_bolso",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 287.7667,
+"b": 293.4333,
+"k": "foto",
+"id": "v047_vestido",
+"pid": "v047_vestido",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 293.4333,
+"b": 297.3333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 297.3333,
+"b": 302.0,
+"k": "foto",
+"id": "v048_vestido",
+"pid": "v048_vestido",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 302.0,
+"b": 306.7,
+"k": "clip",
+"id": "v058_suscribe",
+"pid": "v058_suscribe",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 306.7,
+"b": 310.6,
+"k": "av",
+"id": "av"
+},
+{
+"a": 310.6,
+"b": 316.1333,
+"k": "foto",
+"id": "v049_vestido",
+"pid": "v049_vestido",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 316.1333,
+"b": 321.7,
+"k": "foto",
+"id": "v050_vestido",
+"pid": "v050_vestido",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 321.7,
+"b": 325.6667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 325.6667,
+"b": 328.6667,
+"k": "foto",
+"id": "v051_vestido",
+"pid": "v051_vestido",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 328.6667,
+"b": 330.4667,
+"k": "foto",
+"id": "v052_vestido",
+"pid": "v052_vestido",
+"o": 0.4,
+"rol": "pausa"
+},
+{
+"a": 330.4667,
+"b": 334.4333,
+"k": "foto",
+"id": "v057_vestido",
+"pid": "v057_vestido",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 334.4333,
+"b": 339.2667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 339.2667,
+"b": 344.9,
+"k": "foto",
+"id": "v053_vestido",
+"pid": "v053_vestido",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 344.9,
+"b": 350.4,
+"k": "foto",
+"id": "v054_vestido",
+"pid": "v054_vestido",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 350.4,
+"b": 355.6333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 355.6333,
+"b": 360.4,
+"k": "foto",
+"id": "v055_vestido",
+"pid": "v055_vestido",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 360.4,
+"b": 365.1667,
+"k": "foto",
+"id": "v056_vestido",
+"pid": "v056_vestido",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 365.1667,
+"b": 369.5667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 369.5667,
+"b": 375.1,
+"k": "foto",
+"id": "v059_suscribe",
+"pid": "v059_suscribe",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 375.1,
+"b": 380.6333,
+"k": "foto",
+"id": "v060_collares",
+"pid": "v060_collares",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 380.6333,
+"b": 384.8333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 384.8333,
+"b": 389.2,
+"k": "foto",
+"id": "v061_collares",
+"pid": "v061_collares",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 389.2,
+"b": 393.6,
+"k": "foto",
+"id": "v062_collares",
+"pid": "v062_collares",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 393.6,
+"b": 397.4333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 397.4333,
+"b": 404.6,
+"k": "foto",
+"id": "v063_collares",
+"pid": "v063_collares",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 404.6,
+"b": 408.8,
+"k": "av",
+"id": "av"
+},
+{
+"a": 408.8,
+"b": 416.3,
+"k": "foto",
+"id": "v064_collares",
+"pid": "v064_collares",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 416.3,
+"b": 419.9,
+"k": "av",
+"id": "av"
+},
+{
+"a": 419.9,
+"b": 425.6,
+"k": "clip",
+"id": "v065_collares",
+"pid": "v065_collares",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 425.6,
+"b": 431.3,
+"k": "foto",
+"id": "v066_collares",
+"pid": "v066_collares",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 431.3,
+"b": 436.8667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 436.8667,
+"b": 441.7333,
+"k": "foto",
+"id": "v067_collares",
+"pid": "v067_collares",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 441.7333,
+"b": 446.6333,
+"k": "foto",
+"id": "v068_cinturon",
+"pid": "v068_cinturon",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 446.6333,
+"b": 449.2333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 449.2333,
+"b": 453.8667,
+"k": "clip",
+"id": "v069_cinturon",
+"pid": "v069_cinturon",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 453.8667,
+"b": 458.5,
+"k": "foto",
+"id": "v074_solange2",
+"pid": "v074_solange2",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 458.5,
+"b": 462.4,
+"k": "av",
+"id": "av"
+},
+{
+"a": 462.4,
+"b": 467.9333,
+"k": "foto",
+"id": "v070_cinturon",
+"pid": "v070_cinturon",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 467.9333,
+"b": 471.7,
+"k": "foto",
+"id": "v071_cinturon",
+"pid": "v071_cinturon",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 471.7,
+"b": 476.6,
+"k": "av",
+"id": "av"
+},
+{
+"a": 476.6,
+"b": 482.0667,
+"k": "foto",
+"id": "v072_cinturon",
+"pid": "v072_cinturon",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 482.0667,
+"b": 487.5333,
+"k": "foto",
+"id": "v073_solange2",
+"pid": "v073_solange2",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 487.5333,
+"b": 491.8,
+"k": "av",
+"id": "av"
+},
+{
+"a": 491.8,
+"b": 496.8667,
+"k": "foto",
+"id": "v075_solange2",
+"pid": "v075_solange2",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 496.8667,
+"b": 501.9333,
+"k": "foto",
+"id": "v076_solange2",
+"pid": "v076_solange2",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 501.9333,
+"b": 505.1,
+"k": "av",
+"id": "av"
+},
+{
+"a": 505.1,
+"b": 509.5,
+"k": "clip",
+"id": "v001_hook",
+"pid": "v001_hook",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 509.5,
+"b": 511.7667,
+"k": "foto",
+"id": "v077_solange2",
+"pid": "v077_solange2",
+"o": 0.4,
+"rol": "pausa"
+},
+{
+"a": 511.7667,
+"b": 517.6333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 517.6333,
+"b": 520.4,
+"k": "clip",
+"id": "v078_solange2",
+"pid": "v078_solange2",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 520.4,
+"b": 525.5333,
+"k": "foto",
+"id": "v079_solange2",
+"pid": "v079_solange2",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 525.5333,
+"b": 528.1333,
+"k": "foto",
+"id": "v080_rinonera",
+"pid": "v080_rinonera",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 528.1333,
+"b": 532.5333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 532.5333,
+"b": 537.8667,
+"k": "foto",
+"id": "v081_rinonera",
+"pid": "v081_rinonera",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 537.8667,
+"b": 543.2333,
+"k": "foto",
+"id": "v082_rinonera",
+"pid": "v082_rinonera",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 543.2333,
+"b": 547.4333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 547.4333,
+"b": 552.0667,
+"k": "foto",
+"id": "v083_rinonera",
+"pid": "v083_rinonera",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 552.0667,
+"b": 556.7,
+"k": "foto",
+"id": "v084_poliester",
+"pid": "v084_poliester",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 556.7,
+"b": 561.6,
+"k": "av",
+"id": "av"
+},
+{
+"a": 561.6,
+"b": 566.5333,
+"k": "foto",
+"id": "v085_poliester",
+"pid": "v085_poliester",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 566.5333,
+"b": 571.5,
+"k": "foto",
+"id": "v095_hoodie",
+"pid": "v095_hoodie",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 571.5,
+"b": 574.4,
+"k": "av",
+"id": "av"
+},
+{
+"a": 574.4,
+"b": 576.8333,
+"k": "foto",
+"id": "v086_poliester",
+"pid": "v086_poliester",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 576.8333,
+"b": 585.7,
+"k": "fx",
+"id": "dieci"
+},
+{
+"a": 585.7,
+"b": 591.6667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 591.6667,
+"b": 595.6,
+"k": "foto",
+"id": "v087_poliester",
+"pid": "v087_poliester",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 595.6,
+"b": 600.8667,
+"k": "foto",
+"id": "v088_gonna",
+"pid": "v088_gonna",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 600.8667,
+"b": 603.4667,
+"k": "foto",
+"id": "v089_gonna",
+"pid": "v089_gonna",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 603.4667,
+"b": 608.4667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 608.4667,
+"b": 613.4,
+"k": "foto",
+"id": "v090_gonna",
+"pid": "v090_gonna",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 613.4,
+"b": 618.3,
+"k": "foto",
+"id": "v098_hoodie",
+"pid": "v098_hoodie",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 618.3,
+"b": 622.7,
+"k": "av",
+"id": "av"
+},
+{
+"a": 622.7,
+"b": 626.7,
+"k": "foto",
+"id": "v091_gonna",
+"pid": "v091_gonna",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 626.7,
+"b": 634.7,
+"k": "foto",
+"id": "v092_gonna",
+"pid": "v092_gonna",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 634.7,
+"b": 638.1667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 638.1667,
+"b": 641.5667,
+"k": "foto",
+"id": "v094_hoodie",
+"pid": "v094_hoodie",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 641.5667,
+"b": 644.9667,
+"k": "clip",
+"id": "v101_barbara",
+"pid": "v101_barbara",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 644.9667,
+"b": 650.1667,
+"k": "av",
+"id": "av"
+},
+{
+"a": 650.1667,
+"b": 654.7333,
+"k": "clip",
+"id": "v096_hoodie",
+"pid": "v096_hoodie",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 654.7333,
+"b": 659.9333,
+"k": "foto",
+"id": "v097_hoodie",
+"pid": "v097_hoodie",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 659.9333,
+"b": 664.1333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 664.1333,
+"b": 668.4667,
+"k": "foto",
+"id": "v099_hoodie",
+"pid": "v099_hoodie",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 668.4667,
+"b": 672.8333,
+"k": "foto",
+"id": "v100_barbara",
+"pid": "v100_barbara",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 672.8333,
+"b": 676.4333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 676.4333,
+"b": 681.1333,
+"k": "foto",
+"id": "v113_solange3",
+"pid": "v113_solange3",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 681.1333,
+"b": 686.1333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 686.1333,
+"b": 691.8,
+"k": "foto",
+"id": "v102_barbara",
+"pid": "v102_barbara",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 691.8,
+"b": 697.5,
+"k": "foto",
+"id": "v104_barbara",
+"pid": "v104_barbara",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 697.5,
+"b": 700.4,
+"k": "av",
+"id": "av"
+},
+{
+"a": 700.4,
+"b": 701.5667,
+"k": "foto",
+"id": "v093_hoodie",
+"pid": "v093_hoodie",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 701.5667,
+"b": 703.6667,
+"k": "foto",
+"id": "v103_barbara",
+"pid": "v103_barbara",
+"o": 0.4,
+"rol": "pausa"
+},
+{
+"a": 703.6667,
+"b": 708.0333,
+"k": "foto",
+"id": "v105_barbara",
+"pid": "v105_barbara",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 708.0333,
+"b": 712.4,
+"k": "foto",
+"id": "v106_barbara",
+"pid": "v106_barbara",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 712.4,
+"b": 716.6,
+"k": "av",
+"id": "av"
+},
+{
+"a": 716.6,
+"b": 719.8667,
+"k": "clip",
+"id": "v107_barbara",
+"pid": "v107_barbara",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 719.8667,
+"b": 727.3333,
+"k": "clip",
+"id": "v108_preg",
+"pid": "v108_preg",
+"o": 0.2,
+"rol": "plano",
+"rate": 0.817
+},
+{
+"a": 727.3333,
+"b": 732.5333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 732.5333,
+"b": 736.3667,
+"k": "foto",
+"id": "v109_preg",
+"pid": "v109_preg",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 736.3667,
+"b": 742.0667,
+"k": "foto",
+"id": "v110_preg",
+"pid": "v110_preg",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 742.0667,
+"b": 746.6333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 746.6333,
+"b": 751.6333,
+"k": "foto",
+"id": "v111_solange3",
+"pid": "v111_solange3",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 751.6333,
+"b": 754.2333,
+"k": "foto",
+"id": "v112_solange3",
+"pid": "v112_solange3",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 754.2333,
+"b": 758.6333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 758.6333,
+"b": 763.1667,
+"k": "fx",
+"id": "solange"
+},
+{
+"a": 763.1667,
+"b": 767.2333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 767.2333,
+"b": 770.0,
+"k": "foto",
+"id": "v114_solange3",
+"pid": "v114_solange3",
+"o": 0.4,
+"rol": "pausa"
+},
+{
+"a": 770.0,
+"b": 775.2667,
+"k": "foto",
+"id": "v115_solange3",
+"pid": "v115_solange3",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 775.2667,
+"b": 779.6333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 779.6333,
+"b": 780.1333,
+"k": "foto",
+"id": "v117_recap_r02",
+"pid": "v117_recap_r02",
+"o": 0.9333,
+"rol": "rafaga",
+"grp": "R02"
+},
+{
+"a": 780.1333,
+"b": 781.1667,
+"k": "foto",
+"id": "v118_recap_r02",
+"pid": "v118_recap_r02",
+"o": 0.9333,
+"rol": "rafaga",
+"grp": "R02"
+},
+{
+"a": 781.1667,
+"b": 782.1333,
+"k": "foto",
+"id": "v119_recap_r02",
+"pid": "v119_recap_r02",
+"o": 0.9333,
+"rol": "rafaga",
+"grp": "R02"
+},
+{
+"a": 782.1333,
+"b": 783.0,
+"k": "foto",
+"id": "v120_recap_r02",
+"pid": "v120_recap_r02",
+"o": 0.9333,
+"rol": "rafaga",
+"grp": "R02"
+},
+{
+"a": 783.0,
+"b": 783.9667,
+"k": "foto",
+"id": "v121_recap_r02",
+"pid": "v121_recap_r02",
+"o": 0.9333,
+"rol": "rafaga",
+"grp": "R02"
+},
+{
+"a": 783.9667,
+"b": 789.2,
+"k": "av",
+"id": "av"
+},
+{
+"a": 789.2,
+"b": 791.5667,
+"k": "foto",
+"id": "v116_solange3",
+"pid": "v116_solange3",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 791.5667,
+"b": 792.7333,
+"k": "foto",
+"id": "v122_recap_r03",
+"pid": "v122_recap_r03",
+"o": 0.9333,
+"rol": "rafaga",
+"grp": "R03"
+},
+{
+"a": 792.7333,
+"b": 793.7667,
+"k": "foto",
+"id": "v123_recap_r03",
+"pid": "v123_recap_r03",
+"o": 0.9333,
+"rol": "rafaga",
+"grp": "R03"
+},
+{
+"a": 793.7667,
+"b": 794.7333,
+"k": "foto",
+"id": "v124_recap_r03",
+"pid": "v124_recap_r03",
+"o": 0.9333,
+"rol": "rafaga",
+"grp": "R03"
+},
+{
+"a": 794.7333,
+"b": 798.2333,
+"k": "foto",
+"id": "v125_cierre",
+"pid": "v125_cierre",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 798.2333,
+"b": 803.0333,
+"k": "av",
+"id": "av"
+},
+{
+"a": 803.0333,
+"b": 808.9,
+"k": "foto",
+"id": "v126_cierre",
+"pid": "v126_cierre",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 808.9,
+"b": 812.9333,
+"k": "clip",
+"id": "v127_cierre",
+"pid": "v127_cierre",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 812.9333,
+"b": 818.2,
+"k": "av",
+"id": "av"
+},
+{
+"a": 818.2,
+"b": 824.1,
+"k": "clip",
+"id": "v128_cierre",
+"pid": "v128_cierre",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 824.1,
+"b": 827.2667,
+"k": "clip",
+"id": "v129_cierre",
+"pid": "v129_cierre",
+"o": 0.4,
+"rol": "plano"
+},
+{
+"a": 827.2667,
+"b": 830.2667,
+"k": "foto",
+"id": "v130_cierre",
+"pid": "v130_cierre",
+"o": 0.4,
+"rol": "plano"
+}
+]
+}
