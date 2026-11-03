@@ -237,3 +237,4 @@ export const Receipt: React.FC<{ t: number; rows: { at: number; item: string; $:
     </div>
   );
 };
+// render 3-nov: tar con public/img/gary03
