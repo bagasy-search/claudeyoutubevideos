@@ -4,7 +4,7 @@
 # corta sus tomas con EL MISMO filtro y calidad que scripts/agnes_multishot.mjs, y las sube al release slowmo-<slug>.
 # Lo dispara agnes_multishot.mjs (SLOWMO_FARM, por defecto sí); si esto falla, el script corta en local como siempre.
 name: slowmo
-run-name: slowmo ${{ fromJSON(inputs.job).id }}
+run-name: slowmo ${{ fromJSON(inputs.job).id || fromJSON(inputs.job).mode }}
 
 on:
   workflow_dispatch:
@@ -17,14 +17,39 @@ permissions:
 jobs:
   slowmo:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 40
     env:
       GH_TOKEN: ${{ github.token }}
       JOB: ${{ inputs.job }}
     steps:
       - name: ffmpeg
         run: command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - name: h3up (len30a · upscale lanczos a 1920x1080 + cámara lenta horneada de los clips H3)
+        if: ${{ fromJSON(inputs.job).mode == 'h3up' }}
+        run: |
+          set -e
+          echo "$JOB" > job.json
+          SLUG=$(jq -r .slug job.json)
+          for n in 1 2 3 4; do gh release download "h3raw-$SLUG" -R "$GITHUB_REPOSITORY" --pattern "h3raw-$SLUG.tar" --clobber && break; sleep $((n*8)); done
+          mkdir raw veo; tar -xf "h3raw-$SLUG.tar" -C raw
+          jq -r '.clips[] | "\(.id) \(.rate)"' job.json > clips.txt
+          cat > up.sh <<'SH'
+          id=$1; r=$2
+          if awk -v r="$r" 'BEGIN{exit !(r<0.999)}'; then
+            F=$(awk -v r="$r" 'BEGIN{printf "%.4f", 30/r}')
+            VF="minterpolate=fps=$F:mi_mode=mci:mc_mode=aobmc:vsbmc=1,setpts=PTS/$r,fps=30,"
+          else VF="fps=30,"; fi
+          ffmpeg -v error -y -i "raw/${id#v}.mp4" -vf "${VF}scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080,unsharp=5:5:0.45:5:5:0,setsar=1" -an -c:v libx264 -crf 18 -preset medium -pix_fmt yuv420p "veo/$id.mp4"
+          echo "ok $id $r"
+          SH
+          sed -i 's/^          //' up.sh
+          xargs -P "$(nproc)" -L 1 bash up.sh < clips.txt
+          N=$(ls veo | wc -l); W=$(wc -l < clips.txt); echo "$N / $W"; [ "$N" = "$W" ]
+          mkdir -p pub/$SLUG; mv veo pub/$SLUG/veo
+          tar -cf "assets-$SLUG.tar.delta-h3" -C pub "$SLUG"
+          for n in 1 2 3 4; do gh release upload "assets-$SLUG" "assets-$SLUG.tar.delta-h3" -R "$GITHUB_REPOSITORY" --clobber && break; sleep $((n*8)); done
       - name: cortar en paralelo
+        if: ${{ fromJSON(inputs.job).mode != 'h3up' }}
         run: |
           set -e
           echo "$JOB" > job.json
