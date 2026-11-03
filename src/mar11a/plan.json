@@ -1,0 +1,586 @@
+{
+"segs": [
+[
+8.36,
+11.02,
+"shot",
+"f_cafe_puerta"
+],
+[
+11.02,
+14.17,
+"shot",
+"n_helada_pasto"
+],
+[
+18.18,
+26.12,
+"shot",
+"v02_mira_canaleta"
+],
+[
+26.12,
+30.71,
+"shot",
+"n_aletas_escarcha"
+],
+[
+34.33,
+40.33,
+"shot",
+"f_presenta_patio"
+],
+[
+51.48,
+55.48,
+"shot",
+"n_canaleta_gotea"
+],
+[
+66.63,
+72.63,
+"shot",
+"f_kit_tarde"
+],
+[
+73.56,
+79.05,
+"shot",
+"n_vapor_unidad"
+],
+[
+119.9,
+126.97,
+"shot",
+"v01_rastrilla"
+],
+[
+138.64,
+144.23,
+"shot",
+"n_ventilador_quieto"
+],
+[
+151.76,
+158.76,
+"shot",
+"f_hargrove"
+],
+[
+173.32,
+177.83,
+"shot",
+"n_bomba_hojas"
+],
+[
+198.35,
+200.04,
+"shot",
+"f_rastrillo"
+],
+[
+200.04,
+206.04,
+"shot",
+"n_hojas_rastrilladas"
+],
+[
+215.78,
+221.78,
+"shot",
+"f_tijera_arbusto"
+],
+[
+222.76,
+226.18,
+"shot",
+"n_bomba_lona"
+],
+[
+238.34,
+244.42,
+"shot",
+"v04_saca_lona"
+],
+[
+259.26,
+262.78,
+"shot",
+"f_mira_arriba"
+],
+[
+275.24,
+278.2,
+"shot",
+"n_canaleta_gotea"
+],
+[
+295.74,
+297.32,
+"shot",
+"n_bloque_hielo"
+],
+[
+318.53,
+324.53,
+"shot",
+"f_escalera_canaleta"
+],
+[
+333.26,
+339.26,
+"shot",
+"n_desviador"
+],
+[
+348.76,
+353.76,
+"shot",
+"n_aletas_escarcha"
+],
+[
+366.26,
+372.26,
+"shot",
+"n_charco_base"
+],
+[
+373.8,
+377.28,
+"shot",
+"f_dawson"
+],
+[
+387.56,
+393.56,
+"shot",
+"n_hielo_abajo"
+],
+[
+415.16,
+421.16,
+"shot",
+"n_risers_par"
+],
+[
+434.45,
+441.45,
+"shot",
+"f_risers"
+],
+[
+451.46,
+458.2,
+"shot",
+"v05_nivel"
+],
+[
+495.18,
+498.62,
+"shot",
+"n_rejilla_pasillo"
+],
+[
+498.62,
+506.62,
+"shot",
+"v06_filtro"
+],
+[
+512.96,
+519.96,
+"shot",
+"f_marcador_gabinete"
+],
+[
+533.3,
+540.3,
+"shot",
+"f_merv_tienda"
+],
+[
+555.84,
+558.14,
+"shot",
+"f_termostato_aux"
+],
+[
+567.62,
+572.62,
+"shot",
+"n_aux_pantalla"
+],
+[
+588.84,
+590.42,
+"shot",
+"n_termostato_emheat"
+],
+[
+596.26,
+603.26,
+"shot",
+"f_tolliver"
+],
+[
+612.09,
+618.09,
+"shot",
+"n_cuenta_612"
+],
+[
+627.52,
+633.52,
+"shot",
+"n_resistencias"
+],
+[
+661.69,
+669.69,
+"shot",
+"v03_termostato"
+],
+[
+676.21,
+682.21,
+"shot",
+"n_aletas_escarcha"
+],
+[
+698.33,
+701.43,
+"shot",
+"n_ventilador_quieto"
+],
+[
+701.43,
+705.67,
+"shot",
+"f_vapor_patio"
+],
+[
+710.33,
+717.33,
+"shot",
+"f_bomberos"
+],
+[
+758.89,
+762.67,
+"shot",
+"v07_reloj"
+],
+[
+762.67,
+768.67,
+"shot",
+"f_reloj_defrost"
+],
+[
+777.89,
+783.89,
+"shot",
+"f_destornillador_no"
+],
+[
+784.85,
+787.65,
+"shot",
+"n_lata_aletas"
+],
+[
+794.89,
+800.89,
+"shot",
+"n_pava"
+],
+[
+806.8,
+814.8,
+"shot",
+"v08_manguera"
+],
+[
+841.35,
+848.35,
+"shot",
+"f_escucha"
+],
+[
+876.15,
+881.15,
+"shot",
+"n_aletas_escarcha"
+],
+[
+882.25,
+886.53,
+"shot",
+"n_bloque_hielo"
+],
+[
+941.56,
+946.55,
+"shot",
+"n_capacitor"
+],
+[
+946.55,
+951.55,
+"shot",
+"f_capacitor_no"
+],
+[
+978.64,
+985.64,
+"shot",
+"f_alarma_co"
+],
+[
+991.85,
+998.85,
+"shot",
+"f_earl_1984"
+],
+[
+1034.53,
+1037.55,
+"shot",
+"v09_vuelta"
+],
+[
+1065.75,
+1071.41,
+"shot",
+"f_mano_brazo"
+],
+[
+1086.89,
+1088.97,
+"shot",
+"f_termometro_rejilla"
+],
+[
+1111.47,
+1116.47,
+"shot",
+"f_rastrillo"
+],
+[
+1173.53,
+1175.8,
+"shot",
+"f_kit_tarde"
+],
+[
+1265.49,
+1271.49,
+"shot",
+"f_lista_puerta"
+],
+[
+1279.32,
+1286.32,
+"shot",
+"f_hargrove_pago"
+],
+[
+1298.41,
+1304.41,
+"shot",
+"n_casa_noche"
+],
+[
+1329.11,
+1332.99,
+"shot",
+"v10_despide"
+]
+],
+"ov": [
+{
+"k": "big",
+"txt": "19°F",
+"sub": "TONIGHT'S LOW",
+"col": "ice",
+"at": 15.8,
+"out": 18.8
+},
+{
+"k": "step",
+"n": 1,
+"name": "TWO FEET OF ROOM",
+"at": 122.14,
+"out": 124.94
+},
+{
+"k": "chip",
+"txt": "NEVER COVER IT IN WINTER",
+"col": "red",
+"at": 242.28,
+"out": 245.48
+},
+{
+"k": "step",
+"n": 2,
+"name": "LOOK UP. FIND THE DRIP",
+"at": 250.02,
+"out": 252.82
+},
+{
+"k": "step",
+"n": 3,
+"name": "UP OFF THE GROUND",
+"at": 341.84,
+"out": 344.64
+},
+{
+"k": "step",
+"n": 4,
+"name": "A NEW FILTER",
+"at": 454.66,
+"out": 457.46
+},
+{
+"k": "chip",
+"txt": "PLAIN PLEATED · MERV 8",
+"col": "amber",
+"at": 546.22,
+"out": 549.42
+},
+{
+"k": "step",
+"n": 5,
+"name": "HEAT, NOT EM HEAT",
+"at": 550.96,
+"out": 553.76
+},
+{
+"k": "chip",
+"txt": "AUX ON A COLD MORNING = NORMAL",
+"col": "green",
+"at": 640.7,
+"out": 644.1
+},
+{
+"k": "step",
+"n": 6,
+"name": "LEARN THE DEFROST",
+"at": 661.68,
+"out": 664.48
+},
+{
+"k": "deal",
+"at": 770.29,
+"out": 772.29
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Chipping the ice",
+"at": 777.89,
+"out": 780.89
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Boiling water",
+"at": 794.89,
+"out": 797.89
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Off at night",
+"at": 812.17,
+"out": 815.17
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Covering it",
+"at": 831.43,
+"out": 834.03
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Ignoring the noise",
+"at": 836.99,
+"out": 840.99
+},
+{
+"k": "step",
+"n": 7,
+"name": "WHEN TO CALL",
+"at": 856.89,
+"out": 859.69
+},
+{
+"k": "chip",
+"txt": "CO ALARM ON EVERY FLOOR",
+"col": "red",
+"at": 975.25,
+"out": 978.65
+},
+{
+"k": "check",
+"title": "THE TEN MINUTES",
+"rows": [
+{
+"txt": "Rake two feet clear",
+"at": 1182.13
+},
+{
+"txt": "Look up: the gutter",
+"at": 1193.43
+},
+{
+"txt": "Look down: water, pad",
+"at": 1204.35
+},
+{
+"txt": "New filter, size on cabinet",
+"at": 1214.71
+},
+{
+"txt": "HEAT, not EM HEAT",
+"at": 1224.19
+},
+{
+"txt": "Watch one defrost",
+"at": 1235.93
+},
+{
+"txt": "The 3 signs, on the door",
+"at": 1248.65
+}
+],
+"at": 1173.53,
+"out": 1251.15
+},
+{
+"k": "ask",
+"at": 1315.79,
+"out": 1324.79
+}
+],
+"end": 1332.99,
+"txt": {
+"recapTitle": "THE TEN MINUTES",
+"recap": [],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"Which step was it for you?",
+"…and what town are you in?"
+],
+"next": [
+"THE THERMOSTAT HABITS",
+"that freeze your heat pump"
+],
+"lower": [
+29.66,
+37.66
+]
+}
+}

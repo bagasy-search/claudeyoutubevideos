@@ -1,0 +1,114 @@
+[
+{
+"k": "nightfall",
+"at": 3.88,
+"out": 9.88,
+"bg": "f_cafe_puerta"
+},
+{
+"k": "eggtimer",
+"at": 66.94,
+"out": 73.94,
+"bg": "f_kit_tarde"
+},
+{
+"k": "cta1",
+"at": 100.62,
+"out": 110.12,
+"page": "p27.png",
+"under": "p26.png",
+"bg": "n_vapor_unidad"
+},
+{
+"k": "leafstorm",
+"at": 167.56,
+"out": 175.56,
+"bg": "f_hargrove"
+},
+{
+"k": "stakeline",
+"at": 201.38,
+"out": 208.88,
+"bg": "n_hojas_rastrilladas"
+},
+{
+"k": "icecore",
+"at": 289.42,
+"out": 296.92,
+"bg": "n_canaleta_gotea"
+},
+{
+"k": "diverter",
+"at": 336.14,
+"out": 342.64,
+"bg": "n_desviador"
+},
+{
+"k": "spiritlevel",
+"at": 448.68,
+"out": 455.18,
+"bg": "f_risers"
+},
+{
+"k": "trackswitch",
+"at": 614.56,
+"out": 622.56,
+"bg": "n_cuenta_612"
+},
+{
+"k": "filmstrip",
+"at": 693.89,
+"out": 702.89,
+"bg": "n_aletas_escarcha"
+},
+{
+"k": "hourglass",
+"at": 741.65,
+"out": 748.15,
+"bg": "f_bomberos"
+},
+{
+"k": "hotair",
+"at": 825.41,
+"out": 832.91,
+"bg": "n_pava"
+},
+{
+"k": "callbell",
+"at": 861.93,
+"out": 869.93,
+"bg": "f_escucha"
+},
+{
+"k": "spike",
+"at": 1024.93,
+"out": 1031.93,
+"bg": "f_earl_1984"
+},
+{
+"k": "crates",
+"at": 1128.43,
+"out": 1136.43,
+"bg": "f_rastrillo"
+},
+{
+"k": "cta2",
+"at": 1148.77,
+"out": 1158.27,
+"page": "p33.png",
+"under": "p36.png",
+"bg": "f_rastrillo"
+},
+{
+"k": "flipclock",
+"at": 1231.55,
+"out": 1238.05,
+"bg": "f_kit_tarde"
+},
+{
+"k": "rakegust",
+"at": 1279.67,
+"out": 1286.67,
+"bg": "f_hargrove_pago"
+}
+]
