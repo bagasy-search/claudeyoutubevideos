@@ -1,0 +1,108 @@
+[
+{
+"k": "cta1",
+"at": 110.96,
+"out": 120.46,
+"page": "p40.png",
+"under": "p39.png",
+"bg": "n_serpentina_hielo"
+},
+{
+"k": "wellbucket",
+"at": 161.62,
+"out": 169.12,
+"bg": "f_mano_termostato"
+},
+{
+"k": "floordial",
+"at": 177.86,
+"out": 184.86,
+"bg": "n_vapor_bomba"
+},
+{
+"k": "pillbox",
+"at": 229.98,
+"out": 237.48,
+"bg": "n_historial"
+},
+{
+"k": "stairstep",
+"at": 360.56,
+"out": 367.56,
+"bg": "f_un_grado"
+},
+{
+"k": "chalktally",
+"at": 481.48,
+"out": 488.48,
+"bg": "n_em_heat"
+},
+{
+"k": "donut",
+"at": 560.18,
+"out": 567.18,
+"bg": "n_rueda_auxilio"
+},
+{
+"k": "linkedgears",
+"at": 676.54,
+"out": 683.54,
+"bg": "f_ellington_sonrie"
+},
+{
+"k": "emptychair",
+"at": 741.81,
+"out": 748.81,
+"bg": "f_nivel_redondo"
+},
+{
+"k": "cta2",
+"at": 809.91,
+"out": 819.41,
+"page": "p47.png",
+"under": "p46.png",
+"bg": "f_estante_tapa"
+},
+{
+"k": "revolvingdoor",
+"at": 928.09,
+"out": 935.59,
+"bg": "n_cables"
+},
+{
+"k": "dayblocks",
+"at": 1070.46,
+"out": 1077.96,
+"bg": "f_casa_propia"
+},
+{
+"k": "marionette",
+"at": 1106.7,
+"out": 1113.7,
+"bg": "f_earl_1984"
+},
+{
+"k": "suitcase",
+"at": 1138.04,
+"out": 1144.54,
+"bg": "f_earl_1984"
+},
+{
+"k": "fourkeys",
+"at": 1173.72,
+"out": 1180.72,
+"bg": "f_earl_1984"
+},
+{
+"k": "samechip",
+"at": 1235.18,
+"out": 1242.18,
+"bg": "f_medidor"
+},
+{
+"k": "ballot",
+"at": 1337.6,
+"out": 1344.1,
+"bg": "n_tarjeta"
+}
+]

@@ -62,17 +62,38 @@ export const R3T = createContext<{ tt: number; d: number; k: string }>({ tt: 99,
 const hashK = (k: string) => { let x = 0; for (let i = 0; i < k.length; i++) x = (x * 31 + k.charCodeAt(i)) % 9973; return x; };
 // llegada con peso (4 maneras, según la pieza) y salida que se aleja: los objetos NACEN en la escena, nunca aparecen de golpe
 const arrive = (tt: number, d: number, k: string) => {
-  const a = sm(tt / 0.85), b = drop(tt, 0, 0.9), x = sm((tt - (d - 0.75)) / 0.75), kind = hashK(k) % 4;
+  const a = 1, b = 1, x = sm((tt - (d - 0.75)) / 0.75), kind = hashK(k) % 4;
   const pos: V3 = [0, 0, 0], rot: V3 = [0, 0, 0]; let s = 1;
   if (kind === 0) pos[1] = (1 - b) * 0.9;
   else if (kind === 1) { pos[0] = (1 - a) * 1.4; rot[1] = (1 - a) * -0.5; }
   else if (kind === 2) { pos[2] = (1 - a) * -1.6; s = 0.8 + 0.2 * a; }
   else { rot[1] = (1 - a) * 0.6; pos[0] = (1 - a) * -0.9; }
-  pos[2] -= x * 0.9; pos[1] -= x * 0.12; rot[1] += x * 0.18; s *= 1 - x * 0.06;
+  pos[2] -= x * 0.25; rot[1] += x * 0.06; s *= 1 - x * 0.015;
   return { pos, rot, s };
 };
-export const S3: React.FC<{ p: V3; l: V3; fov?: number; floor?: Floor; fs?: number; env?: number; exp?: number; key2?: V3; warm?: string; children: React.ReactNode }> = ({ p, l, fov = 34, floor = "wood", fs = 9, env = 0.55, exp = 1.05, key2 = [-3, 6, 4], warm = "#ffe2c0", children }) => {
-  const { tt, d, k } = useContext(R3T), ar = arrive(tt, d, k);
+// vuelta 3 del EVALUADOR («en +0,2 s ya está todo entero», «+0,2 y +0,6 casi iguales»): el decorado (componentes marcados env)
+// queda quieto desde el corte y cada objeto de primer nivel cae con rebote, de a uno (0,16 s entre cada uno)
+export const env = <T,>(C: T): T => { (C as any).env = true; return C; };
+const LIGHTS = new Set(["pointLight", "spotLight", "ambientLight", "hemisphereLight", "directionalLight", "color", "fog"]);
+// decorado suelto (cielo, fondo) que no tiene que caer: <Env>…</Env>
+export const Env = env(({ children }: { children?: React.ReactNode }) => <>{children}</>);
+const stagger = (children: React.ReactNode, tt: number) => {
+  // un hijo de primer nivel = un turno; un array (.map de hojas, estacas, botones) es UN solo turno y cae junto
+  let j = 0;
+  const top = Array.isArray(children) ? children : [children];
+  return top.map((el, i) => {
+    if (el == null || typeof el === "boolean") return null;
+    if (!Array.isArray(el)) {
+      if (!React.isValidElement(el)) return el;
+      const ty = el.type as any;
+      if ((typeof ty === "string" && LIGHTS.has(ty)) || ty?.env) return <React.Fragment key={i}>{el}</React.Fragment>;
+    }
+    const a = Math.min(j++, 6) * 0.13, b = drop(tt, a, a + 0.42);
+    return <group key={i} position={[0, (1 - b) * 2.6, 0]}>{el}</group>;
+  });
+};
+export const S3: React.FC<{ p: V3; l: V3; fov?: number; floor?: Floor; fs?: number; env?: number; exp?: number; key2?: V3; warm?: string; zk?: number; children: React.ReactNode }> = ({ p: p0, l, zk = 1, fov = 34, floor = "wood", fs = 9, env = 0.55, exp = 1.05, key2 = [-3, 6, 4], warm = "#ffe2c0", children }) => {
+  const { tt, d, k } = useContext(R3T), ar = arrive(tt, d, k), p: V3 = [l[0] + (p0[0] - l[0]) * zk, l[1] + (p0[1] - l[1]) * zk, l[2] + (p0[2] - l[2]) * zk];
   return <ThreeCanvas width={1920} height={1080} shadows gl={{ antialias: true, alpha: true, preserveDrawingBuffer: true }} style={{ position: "absolute", inset: 0 }}>
     <Rig p={p} l={l} fov={fov} env={env} exp={exp} />
     <hemisphereLight args={["#c9d6ee", "#3a2f26", 0.55]} />
@@ -83,7 +104,7 @@ export const S3: React.FC<{ p: V3; l: V3; fov?: number; floor?: Floor; fs?: numb
       <planeGeometry args={[fs, fs]} />
       <meshStandardMaterial map={floor === "wood" ? PLANKS() : floor === "conc" ? CONC() : undefined} color={floor === "dark" ? "#24221f" : "#ffffff"} roughness={floor === "wood" ? 0.55 : 0.9} alphaMap={fade()} transparent />
     </mesh>}
-    <group position={ar.pos} rotation={ar.rot} scale={ar.s}>{children}</group>
+    <group position={ar.pos} rotation={ar.rot} scale={ar.s}>{stagger(children, tt)}</group>
   </ThreeCanvas>;
 };
 
