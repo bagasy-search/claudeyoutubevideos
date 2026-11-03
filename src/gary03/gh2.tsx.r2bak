@@ -1,0 +1,267 @@
+// gary03 · componentes únicos 2/4 (min 7-13).
+import React from "react";
+import * as THREE from "three";
+import { H } from "./hkit";
+import { M, RBox, Scene3D, tex, tubeG } from "./h3d";
+import { Spark } from "./gh1";
+import { Bulb, Fridge, Mark, PBox, PI, Plug, Thermo, Txt3, cl, eio, lerp, phys, pop, roll } from "./gk";
+
+// 7:27 · EL TIRÓN DEL ARRANQUE: la heladera arranca con una sacudida y de su cable sale una torre roja 6 veces más alta que las barras de andar
+export const HSpike: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="wipe" floor="tile" wall="tile" bg="#0b0c10"
+  cam={{ at: [-0.1, 0.3, 0], az: [-0.3, -0.1], el: [0.18, 0.12], r: [1.85, 1.62], fov: 30 }}>{(tt) => {
+  const N = 10, grow = (i: number) => cl((tt - 0.7 - i * 0.38) / 0.3), kick = tt > 0.6 && tt < 1.2 ? Math.sin(tt * 70) * 0.008 : 0, flash = cl(1 - Math.abs(tt - 0.9) / 0.25);
+  return <>
+    <group position={[kick, 0, 0]}><Fridge p={[-0.52, 0, -0.12]} r={[0, 0.5, 0]} s={1.05} lit={tt > 0.6 ? 1 : 0} /></group>
+    <Plug p={[-0.36, 0.05, 0.1]} to={[-0.55, 0.05, -0.05]} r={[0, PI / 2, 0]} k="spk" />
+    {/* las barras de vatios en el tiempo: cajitas apiladas; la primera es la torre del arranque */}
+    {Array.from({ length: N }, (_, i) => { const v = i === 0 ? 0.6 : 0.1, g = Math.max(0.001, grow(i) * (i === 0 ? phys(tt, 0.7, 8, 0.4) : 1));
+      return <group key={i} position={[-0.26 + i * 0.075, 0, 0.05]}>
+        <mesh position={[0, v * g / 2, 0]} scale={[1, g, 1]} castShadow><boxGeometry args={[0.055, v, 0.06]} />
+          <meshStandardMaterial color={i === 0 ? "#ff4a3a" : "#4dbb7a"} emissive={i === 0 ? "#ff3a2a" : "#2a8a52"} emissiveIntensity={0.45} /></mesh>
+        {i === 0 && <pointLight position={[0, 0.65, 0.08]} intensity={3 * flash} distance={0.8} color="#ff6a4a" />}
+      </group>; })}
+    <Txt3 txt="STARTING" w={0.34} h={0.09} bg="#b8241a" col="#ffffff" p={[0.02, 0.55, 0.05]} s={pop(tt, 1.1)} />
+    <Txt3 txt="RUNNING" w={0.3} h={0.085} bg="#1f6a42" col="#ffffff" p={[0.22, 0.22, 0.05]} s={pop(tt, 2.8)} />
+  </>;
+}}</Scene3D>;
+
+// bidón rojo transparente (lvl 0..1) con su pico
+const Can: React.FC<{ lvl: number; p: [number, number, number]; s?: number; lab?: string }> = ({ lvl, p, s = 1, lab }) =>
+  <group position={p} scale={s}>
+    <RBox s={[0.26, 0.34, 0.14]} p={[0, 0.17, 0]} r={0.025}>{M.glass({ op: 0.28, col: "#ff6a5a" })}</RBox>
+    <mesh position={[0, 0.006 + 0.164 * Math.max(0.001, lvl), 0]} scale={[1, Math.max(0.001, lvl), 1]}><boxGeometry args={[0.24, 0.328, 0.12]} />{M.water({ col: "#f2b53a", em: "#7a4a08", emI: 0.3 })}</mesh>
+    <RBox s={[0.26, 0.03, 0.14]} p={[0, 0.355, 0]} r={0.012}>{M.plastic({ col: "#c62a22" })}</RBox>
+    <mesh position={[0.1, 0.4, 0]} rotation={[0, 0, -0.5]}><cylinderGeometry args={[0.018, 0.022, 0.09, 16]} />{M.plastic({ col: "#c62a22" })}</mesh>
+    <mesh position={[0.135, 0.31, 0.072]}><boxGeometry args={[0.03, 0.004, 0.002]} />{M.glow({ col: "#ffffff" })}</mesh>
+    {lab && <Txt3 txt={lab} w={0.24} h={0.08} bg="#141516" col="#ffd98a" p={[0, 0.2, 0.073]} />}
+  </group>;
+// 8:06 · EL TANQUE: el surtidor llena el bidón hasta la raya de 1000 Wh; después lo que sale para la casa son ~850 y el resto es calor
+export const HTank: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="iris" floor="wood" wall="dark" bg="#0f0c09"
+  cam={{ at: [-0.04, 0.25, 0], az: [0.28, 0.05], el: [0.2, 0.15], r: [1.42, 1.22], fov: 30 }} lamp={[0.1, 0.7, 0.3]}>{(tt) => {
+  const fill = eio(tt, 0.3, 2.2), pour = eio(tt, 2.6, 4.8), lvl = fill * (1 - 0.95 * pour), jug = 0.85 * pour;
+  return <>
+    {/* surtidor con manguera y pico sobre el bidón */}
+    <group position={[-0.52, 0, -0.16]}>
+      <RBox s={[0.16, 0.6, 0.14]} p={[0, 0.3, 0]} r={0.02}>{M.plastic({ col: "#d8361f" })}</RBox>
+      <mesh position={[0, 0.45, 0.071]}><planeGeometry args={[0.11, 0.08]} /><meshStandardMaterial color="#071209" emissive="#f2c21b" emissiveIntensity={0.3} /></mesh>
+      <Txt3 txt={`${roll(tt, 0.3, 2.2, 0, 1000)}`} w={0.1} h={0.05} col="#f2c21b" glow font="Courier New" p={[0, 0.45, 0.073]} />
+    </group>
+    <mesh geometry={tubeG("hose2", [[-0.46, 0.4, -0.1], [-0.42, 0.2, 0.05], [-0.3, 0.55, 0.0], [-0.24, 0.5, 0.0]], 0.012, 60, 8)}>{M.rubber({ col: "#151515" })}</mesh>
+    <mesh position={[-0.22, 0.47, 0]} rotation={[0, 0, -2.2]} scale={[1, Math.max(0.001, 1 - cl((tt - 2.3) / 0.3)), 1]}><cylinderGeometry args={[0.012, 0.016, 0.08, 12]} />{M.steel()}</mesh>
+    <Can lvl={lvl} p={[-0.18, 0, 0]} s={1.2} lab="1000 Wh" />
+    {/* chorro a la jarra de la casa */}
+    <mesh position={[0.07, 0.3, 0]} scale={[1, tt > 2.6 && tt < 4.9 ? 1 : 0.001, 1]}><cylinderGeometry args={[0.008, 0.008, 0.22, 10]} />{M.water({ col: "#f2b53a" })}</mesh>
+    <group position={[0.22, 0, 0.02]}>
+      <mesh position={[0, 0.1, 0]}><cylinderGeometry args={[0.09, 0.085, 0.2, 32, 1, true]} />{M.glass({ op: 0.25 })}</mesh>
+      <mesh position={[0, 0.1 * Math.max(0.001, jug), 0]} scale={[1, Math.max(0.001, jug), 1]}><cylinderGeometry args={[0.086, 0.083, 0.2, 32]} />{M.water({ col: "#f2b53a", em: "#7a4a08", emI: 0.25 })}</mesh>
+      <Txt3 txt={`${roll(tt, 2.6, 4.8, 0, 850)} Wh`} w={0.3} h={0.09} bg="#141516" col="#ffd98a" p={[0, 0.3, 0]} s={pop(tt, 2.6)} />
+    </group>
+    {/* lo que se pierde en el inversor: calor que sube del bidón */}
+    {Array.from({ length: 12 }, (_, i) => { const ph = (tt * 0.5 + i / 12) % 1; return <mesh key={i} position={[-0.12 + Math.sin(i * 3) * 0.04, 0.5 + ph * 0.3, 0.03]}><sphereGeometry args={[0.015 + ph * 0.03, 10, 8]} /><meshBasicMaterial color="#ffffff" transparent opacity={0.16 * pour * (1 - ph)} depthWrite={false} /></mesh>; })}
+  </>;
+}}</Scene3D>;
+
+// 9:52 · CORTA Y VUELVE: el living de noche; afuera cae aguanieve sobre los carámbanos; la lámpara grande se prende, se apaga, se prende
+export const HFlicker: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="drop" floor="wood" wall="dark" bg="#090b10"
+  cam={{ at: [0, 0.36, 0], az: [-0.3, 0.12], el: [0.16, 0.1], r: [1.72, 1.52], fov: 30 }} warm={0.35}>{(tt) => {
+  // prendida · apagada (silueta) · golpe de vuelta · apagada · titila a media luz (corte seco, sin rampa)
+  const on = tt < 1.2 ? 1 : tt < 2.5 ? 0 : tt < 3.5 ? 1.25 : tt < 4.4 ? 0 : (Math.floor(tt * 9) % 3 ? 0.45 : 0.1);
+  return <>
+    {/* ventana con la tormenta de hielo */}
+    <group position={[-0.1, 0.55, -1.55]}>
+      <mesh><planeGeometry args={[0.9, 0.6]} /><meshBasicMaterial color="#1a2a40" /></mesh>
+      {[-0.45, 0.45].map((x) => <mesh key={x} position={[x, 0, 0.01]}><boxGeometry args={[0.04, 0.64, 0.04]} />{M.wood({ base: [70, 48, 30] })}</mesh>)}
+      {[-0.3, 0.3].map((y) => <mesh key={y} position={[0, y, 0.01]}><boxGeometry args={[0.94, 0.04, 0.04]} />{M.wood({ base: [70, 48, 30] })}</mesh>)}
+      {Array.from({ length: 9 }, (_, i) => <mesh key={i} position={[-0.4 + i * 0.1, 0.25 - 0.03 * (i % 3), 0.03]} rotation={[PI, 0, 0]}><coneGeometry args={[0.012, 0.08 + 0.03 * (i % 3), 8]} /><meshPhysicalMaterial color="#e8f6ff" transparent opacity={0.8} roughness={0.05} /></mesh>)}
+      {Array.from({ length: 40 }, (_, i) => { const ph = (tt * 0.9 + i / 40) % 1; return <mesh key={"s" + i} position={[-0.42 + (i * 0.37) % 0.84, 0.28 - ph * 0.56, 0.005]} rotation={[0, 0, 0.3]}><boxGeometry args={[0.002, 0.03, 0.002]} /><meshBasicMaterial color="#cfe4ff" /></mesh>; })}
+    </group>
+    {/* mesita y lámpara de mesa grande con pantalla */}
+    <RBox s={[0.36, 0.3, 0.3]} p={[0, 0.15, 0]} r={0.015}>{M.wood({ base: [96, 60, 34] })}</RBox>
+    <mesh position={[0, 0.34, 0]}><cylinderGeometry args={[0.05, 0.07, 0.08, 24]} />{M.porcelain({ col: "#d9cfbf" })}</mesh>
+    <mesh position={[0, 0.45, 0]}><cylinderGeometry args={[0.008, 0.008, 0.16, 8]} />{M.brass()}</mesh>
+    <mesh position={[0, 0.58, 0]}><cylinderGeometry args={[0.09, 0.15, 0.17, 32, 1, true]} /><meshStandardMaterial color="#f3e7cc" side={THREE.DoubleSide} emissive="#ffcf7a" emissiveIntensity={0.9 * on} /></mesh>
+    <pointLight position={[0, 0.55, 0.05]} intensity={3.2 * on} distance={2.6} color="#ffcf8a" castShadow={false} />
+    <mesh position={[0.1, 0.31, 0.06]}><boxGeometry args={[0.12, 0.02, 0.09]} />{M.matte({ col: "#7a2a22" })}</mesh>
+  </>;
+}}</Scene3D>;
+
+// 10:15 · EL CAMBIO DE VÍA: la energía corre por la vía de la pared; se corta, la aguja cambia a la vía de la batería y la lámpara ni parpadea
+export const HRailSwitch: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="split" floor="wood" wall="dark" bg="#0e0c0a"
+  cam={{ at: [0.02, 0.1, 0], az: [0.05, 0.3], el: [0.6, 0.46], r: [1.3, 1.12], fov: 30 }}>{(tt) => {
+  const sw = eio(tt, 2.2, 2.45), wallOn = tt < 2.2, run = (tt * 0.6) % 1;
+  const railA = [[-0.5, 0, -0.18], [-0.1, 0, -0.18], [0.2, 0, 0]], railB = [[-0.5, 0, 0.18], [-0.1, 0, 0.18], [0.2, 0, 0]];
+  const along = (pts: number[][], u: number) => { const a = u < 0.5 ? pts[0] : pts[1], b = u < 0.5 ? pts[1] : pts[2], k = (u % 0.5) * 2; return [lerp(a[0], b[0], k), 0.02, lerp(a[2], b[2], k)] as [number, number, number]; };
+  const cut = cl((tt - 2.0) / 0.2);
+  return <>
+    {[railA, railB].map((r, i) => <mesh key={i} geometry={tubeG("rail2" + i, r.map((p) => [p[0], 0.018, p[2]]), 0.018, 40, 8)}>{M.steel({ col: i === 0 ? (wallOn ? "#d9dde2" : "#5a5d61") : (wallOn ? "#5a5d61" : "#d9dde2") })}</mesh>)}
+    <mesh geometry={tubeG("railC2", [[0.2, 0.018, 0], [0.45, 0.018, 0]], 0.018, 10, 8)}>{M.steel()}</mesh>
+    <Spark p={[-0.35, 0.04, -0.18]} k={(tt - 2.0) / 0.45} s={1.6} />
+    {/* corte en la vía de la pared: un hueco que se abre */}
+    <mesh position={[-0.35, 0.012, -0.18]} scale={[Math.max(0.001, cut), 1, 1]}><boxGeometry args={[0.07, 0.03, 0.04]} /><meshBasicMaterial color="#0e0c0a" /></mesh>
+    <group position={[0.2, 0.03, 0]} rotation={[0, lerp(0.55, -0.55, sw), 0]}><mesh position={[-0.09, 0, 0]}><boxGeometry args={[0.18, 0.03, 0.04]} />{M.plastic({ col: "#f2c21b" })}</mesh>
+      <mesh><cylinderGeometry args={[0.03, 0.03, 0.05, 20]} />{M.steel()}</mesh></group>
+    <group position={[-0.6, 0, -0.18]} rotation={[0, PI / 2, 0]} scale={1.6}><RBox s={[0.1, 0.13, 0.025]} p={[0, 0.065, 0]} r={0.008}>{M.porcelain({ col: wallOn ? "#f1eee6" : "#6a6c70" })}</RBox>
+      {[-0.012, 0.012].map((x) => <mesh key={x} position={[x, 0.08, 0.014]}><planeGeometry args={[0.006, 0.02]} /><meshBasicMaterial color="#222" /></mesh>)}</group>
+    <PBox p={[-0.62, 0, 0.18]} r={[0, PI / 2, 0]} w={0.26} h={0.18} d={0.16} scr="UPS" />
+    <mesh position={along(wallOn ? railA : railB, run)} scale={1.9}><sphereGeometry args={[0.024, 16, 12]} />{M.glow({ col: wallOn ? "#ffd98a" : "#6fe39a" })}</mesh>
+    <pointLight position={along(wallOn ? railA : railB, run)} intensity={0.9} distance={0.5} color={wallOn ? "#ffd98a" : "#6fe39a"} />
+    {/* la lámpara grande del final no se apaga nunca */}
+    <group position={[0.58, 0, 0]}>
+      <mesh position={[0, 0.02, 0]}><cylinderGeometry args={[0.07, 0.08, 0.04, 24]} />{M.brass()}</mesh>
+      <mesh position={[0, 0.16, 0]}><cylinderGeometry args={[0.008, 0.008, 0.26, 8]} />{M.brass()}</mesh>
+      <mesh position={[0, 0.32, 0]}><cylinderGeometry args={[0.08, 0.13, 0.15, 32, 1, true]} /><meshStandardMaterial color="#f3e7cc" side={THREE.DoubleSide} emissive="#ffcf7a" emissiveIntensity={0.9} /></mesh>
+      <pointLight position={[0, 0.28, 0.05]} intensity={2.4} distance={1.6} color="#ffcf8a" />
+    </group>
+  </>;
+}}</Scene3D>;
+
+// 11:04 · EL CAMBIO NO ESPECIFICADO: el despertador marca 3:00; la palanca pasa de la pared a la batería, un parpadeo y el reloj titila 12:00
+export const HMs30: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="iris" floor="wood" wall="dark" bg="#07080c"
+  cam={{ at: [0.0, 0.13, 0], at1: [0.0, 0.12, 0.05], az: [-0.25, 0.05], el: [0.24, 0.16], r: [1.05, 0.86], fov: 30 }} warm={0.55} lamp={[0.2, 0.45, 0.3]}>{(tt) => {
+  const flip = eio(tt, 1.6, 1.85), black = tt > 1.75 && tt < 2.05, reset = tt > 2.05, blink = Math.floor(tt * 3) % 2;
+  return <>
+    {/* despertador digital grande */}
+    <group position={[-0.12, 0, 0.05]} rotation={[0, 0.2, 0]} scale={1.35}>
+      <RBox s={[0.34, 0.16, 0.12]} p={[0, 0.08, 0]} r={0.025}>{M.matte({ col: "#151618" })}</RBox>
+      <mesh position={[0, 0.085, 0.061]}><planeGeometry args={[0.28, 0.1]} /><meshStandardMaterial color="#0a0505" /></mesh>
+      <Txt3 txt={reset ? "12:00" : "3:00"} w={0.26} h={0.09} col="#ff3a2a" glow op={black ? 0 : reset ? (blink ? 1 : 0.08) : 1} font="Courier New" p={[0, 0.085, 0.063]} />
+      <pointLight position={[0, 0.09, 0.15]} intensity={black ? 0 : 0.5} distance={0.6} color="#ff3a2a" />
+    </group>
+    {/* la palanca del cambio: WALL ↔ BATTERY */}
+    <group position={[0.24, 0, 0.0]} rotation={[0, -0.3, 0]}>
+      <RBox s={[0.16, 0.2, 0.06]} p={[0, 0.1, 0]} r={0.015}>{M.steel({ col: "#7a7f86" })}</RBox>
+      <Spark p={[0, 0.17, 0.05]} k={(tt - 1.7) / 0.4} s={1.3} />
+      <group position={[0, 0.11, 0.032]} rotation={[0, 0, lerp(0.6, -0.6, flip)]}><mesh position={[0, 0.06, 0]}><boxGeometry args={[0.018, 0.12, 0.018]} />{M.plastic({ col: "#d8361f" })}</mesh></group>
+      <Txt3 txt="WALL" w={0.075} h={0.032} bg="#141516" col="#f7f4ee" p={[-0.045, 0.23, 0.032]} />
+      <Txt3 txt="BATT" w={0.075} h={0.032} bg="#141516" col="#f7f4ee" p={[0.045, 0.23, 0.032]} />
+    </group>
+  </>;
+}}</Scene3D>;
+
+// 11:39 · EL ENCHUFE DEL AUTO: la ficha de la heladera grande va hacia el agujerito redondo de 12 V y no entra: la heladera ni se mueve
+export const HCarSocket: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="wipe" floor="wood" wall="wood" bg="#120d09"
+  cam={{ at: [0.0, 0.3, 0], az: [0.5, 0.25], el: [0.18, 0.12], r: [1.8, 1.55], fov: 30 }} warm={1.15} lamp={[0.2, 0.7, 0.4]}>{(tt) => {
+  const go = eio(tt, 0.8, 2.0), bounce = tt > 2.0 ? -0.05 * Math.sin(PI * cl((tt - 2.0) / 0.5)) : 0;
+  return <>
+    <Fridge p={[-0.5, 0, -0.2]} r={[0, 0.55, 0]} s={1.45} />
+    <PBox p={[0.3, 0, 0]} r={[0, -0.5, 0]} w={0.26} h={0.18} d={0.16} col="#5d6166" />
+    {/* la toma redonda de 12 V del costado, con su rótulo pegado */}
+    <group position={[0.22, 0.07, 0.1]} rotation={[0, -0.5, 0]}>
+      <mesh rotation={[PI / 2, 0, 0]}><cylinderGeometry args={[0.022, 0.022, 0.01, 24]} />{M.matte({ col: "#0d0d0d" })}</mesh>
+      <Txt3 txt="12 V" w={0.16} h={0.075} bg="#b8241a" col="#ffffff" p={[0, 0.12, 0.01]} s={pop(tt, 0.4)} />
+    </group>
+    <Plug p={[lerp(-0.12, 0.13, go) + bounce, 0.07, lerp(0.05, 0.13, go)]} to={[-0.4, 0.04, -0.05]} r={[0, PI / 2 - 0.5, 0]} />
+    {/* humito del contacto que no entra */}
+    {Array.from({ length: 6 }, (_, i) => { const ph = (tt * 0.6 + i / 6) % 1; return <mesh key={i} position={[0.17 + ph * 0.03, 0.1 + ph * 0.2, 0.12]}><sphereGeometry args={[0.01 + ph * 0.02, 8, 6]} /><meshBasicMaterial color="#c9ccd0" transparent opacity={tt > 2.1 ? 0.3 * (1 - ph) : 0} depthWrite={false} /></mesh>; })}
+  </>;
+}}</Scene3D>;
+
+// 12:12 · EL ASADO EN LA CONSERVADORA: el patio nevado de enero; se abre la conservadora y adentro la olla con el asado; termómetro de la tapa a 20°F
+export const HCooler: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="drop" floor="none" wall="none" bg="#3a4a60"
+  cam={{ at: [0, 0.16, 0], az: [-0.35, 0.15], el: [0.4, 0.5], r: [1.2, 1.0], fov: 30 }} warm={0.7}>{(tt) => {
+  const lid = 1.75 * phys(tt, 0.8, 6, 0.55), cal = cl((tt - 3.0) / 1.2);
+  return <>
+    <mesh rotation={[-PI / 2, 0, 0]} receiveShadow><planeGeometry args={[6, 6]} /><meshStandardMaterial color="#eef3f8" roughness={0.9} /></mesh>
+    {/* la pared de atrás de la casa con una ventana encendida y la puerta */}
+    <mesh position={[0, 0.6, -0.6]}><planeGeometry args={[3, 1.2]} />{M.wood({ base: [120, 92, 70], rx: 1, ry: 6 })}</mesh>
+    <mesh position={[0.45, 0.55, -0.59]}><planeGeometry args={[0.36, 0.28]} />{M.glow({ col: "#ffcf7a" })}</mesh>
+    <mesh position={[-0.45, 0.4, -0.59]}><planeGeometry args={[0.3, 0.8]} />{M.matte({ col: "#5a3a2a" })}</mesh>
+    <pointLight position={[0.45, 0.55, -0.4]} intensity={1.6} distance={1.6} color="#ffcf8a" />
+    {/* huellas en la nieve */}
+    {Array.from({ length: 6 }, (_, i) => <mesh key={"hu" + i} rotation={[-PI / 2, 0, 0]} position={[-0.42 + i * 0.07 + (i % 2) * 0.02, 0.002, -0.3 + i * 0.08]}><circleGeometry args={[0.02, 12]} /><meshStandardMaterial color="#c7d2de" /></mesh>)}
+    <RBox s={[0.42, 0.22, 0.26]} p={[0, 0.11, 0]} r={0.03}>{M.plastic({ col: "#c62a22" })}</RBox>
+    <mesh position={[0, 0.215, 0]}><boxGeometry args={[0.38, 0.01, 0.22]} /><meshStandardMaterial color="#f3f1ea" /></mesh>
+    {/* la olla con el asado */}
+    <group position={[0, 0.215, 0]}>
+      <mesh position={[0, 0.0, 0]}><cylinderGeometry args={[0.13, 0.12, 0.08, 32, 1, true]} /><meshStandardMaterial color="#1a1a1c" side={THREE.DoubleSide} roughness={0.5} /></mesh>
+      <mesh position={[0, 0.05, 0]} scale={[1.45, 0.8, 1.1]} castShadow><sphereGeometry args={[0.085, 24, 16]} /><meshStandardMaterial color="#6b3418" roughness={0.55} /></mesh>
+      {/* el hueso que asoma y el vapor del asado caliente */}
+      <mesh position={[0.11, 0.07, 0.0]} rotation={[0, 0, 1.2]}><cylinderGeometry args={[0.014, 0.014, 0.09, 12]} /><meshStandardMaterial color="#efe6d2" roughness={0.6} /></mesh>
+      <mesh position={[0.155, 0.09, 0.0]}><sphereGeometry args={[0.02, 12, 10]} /><meshStandardMaterial color="#efe6d2" roughness={0.6} /></mesh>
+      {Array.from({ length: 10 }, (_, i) => { const ph = (tt * 0.45 + i / 10) % 1; return <mesh key={"v" + i} position={[Math.sin(i * 2.3) * 0.05, 0.1 + ph * 0.3, Math.cos(i * 1.7) * 0.04]}><sphereGeometry args={[0.012 + ph * 0.03, 10, 8]} /><meshBasicMaterial color="#ffffff" transparent opacity={0.3 * cl((lid - 0.6) / 0.6) * (1 - ph)} depthWrite={false} /></mesh>; })}
+      {[-0.07, 0.07, 0.0].map((x, i) => <mesh key={x} position={[x, 0.035, i === 2 ? 0.07 : 0.04]}><sphereGeometry args={[0.024, 12, 10]} /><meshStandardMaterial color={i === 2 ? "#f0d9a8" : "#e48a2a"} /></mesh>)}
+    </group>
+    <group position={[0, 0.22, -0.13]} rotation={[-lid, 0, 0]}>
+      <RBox s={[0.44, 0.05, 0.27]} p={[0, 0.025, 0.135]} r={0.02}>{M.plastic({ col: "#f3f1ea" })}</RBox>
+      <mesh position={[0, 0.052, 0.135]}><boxGeometry args={[0.42, 0.012, 0.25]} /><meshStandardMaterial color="#ffffff" roughness={0.9} /></mesh>
+      <group position={[0.0, 0.06, 0.2]} rotation={[-PI / 2, 0, 0]}><Txt3 txt="20°F" w={0.2} h={0.08} bg="#f2f2ee" col="#2b6fd6" p={[0, 0, 0.001]} /></group>
+    </group>
+    {Array.from({ length: 40 }, (_, i) => { const ph = (tt * 0.2 + i / 40) % 1; return <mesh key={i} position={[-0.6 + (i * 0.31) % 1.2, 0.9 - ph * 0.9, -0.5 + (i * 0.17) % 0.8]}><sphereGeometry args={[0.006, 6, 4]} /><meshBasicMaterial color="#ffffff" /></mesh>; })}
+  </>;
+}}</Scene3D>;
+
+// 13:17 · EL PANEL DE REGALO: salen y se ponen soles de diciembre, caen hojas del almanaque y la barra de la caja sube de a un tramo
+export const HSolarWeek: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="iris" floor="wood" wall="none" bg="#3c4a60"
+  cam={{ at: [0.05, 0.2, 0], az: [0.28, -0.1], el: [0.24, 0.17], r: [1.18, 1.0], fov: 32 }} warm={0.7}>{(tt) => {
+  const days = 5, d = cl((tt - 0.3) / 4.6) * days, day = Math.min(days - 1, Math.floor(d)), ph = d - Math.floor(d), seg = Math.min(10, Math.round(eio(tt, 0.3, 4.9) * 10));
+  const sunA = PI * ph;
+  return <>
+    {/* sol bajo que sale y se pone una vez por día */}
+    <mesh position={[lerp(-0.8, 0.8, ph), 0.3 + 0.35 * Math.sin(sunA), -1.2]}><sphereGeometry args={[0.13, 24, 18]} />{M.glow({ col: "#ffd9a0" })}</mesh>
+    <pointLight position={[lerp(-1.0, 1.0, ph), 0.9, -0.6]} intensity={1.5 * Math.sin(sunA)} distance={3} color="#ffd9a0" />
+    {/* panel plegable con nieve en una esquina */}
+    <group position={[-0.3, 0.03, 0.08]} rotation={[-PI / 2 + 0.55, 0, 0.2]} scale={1.3}>
+      {[0, 1].map((k) => <mesh key={k} position={[k * 0.21 - 0.105, 0, 0]}><planeGeometry args={[0.2, 0.3]} /><meshStandardMaterial map={tex.tile(3, 5, "#1b2a4a", "#9aa7b8")} metalness={0.4} roughness={0.25} /></mesh>)}
+      <mesh position={[-0.12, 0.08, 0.004]}><planeGeometry args={[0.16, 0.14]} /><meshStandardMaterial color="#f4f8fc" roughness={0.9} /></mesh>
+    </group>
+    {/* almanaque grande: las hojas caen */}
+    <group position={[0.02, 0, -0.18]}>
+      <RBox s={[0.22, 0.26, 0.03]} p={[0, 0.13, 0]} r={0.008}>{M.matte({ col: "#f3efe5" })}</RBox>
+      <mesh position={[0, 0.235, 0.016]}><planeGeometry args={[0.22, 0.05]} /><meshBasicMaterial color="#c62a22" /></mesh>
+      <Txt3 txt={`DAY ${day + 1}`} w={0.2} h={0.1} col="#1b1b1b" p={[0, 0.12, 0.017]} />
+      {/* la hoja de ayer se arranca y vuela con su número */}
+      <group position={[0, 0.12 + ph * 0.1, 0.03 + ph * 0.16]} rotation={[-ph * 1.4, ph * 0.8, ph * 0.5]} scale={day > 0 && ph < 0.85 ? 1 : 0.001}>
+        <mesh><planeGeometry args={[0.2, 0.2]} /><meshStandardMaterial color="#f3efe5" side={THREE.DoubleSide} /></mesh>
+        <Txt3 txt={`DAY ${day}`} w={0.18} h={0.09} col="#1b1b1b" p={[0, 0, 0.002]} /></group>
+    </group>
+    {/* la caja con una barra de 10 tramos que sube de a uno */}
+    <group position={[0.36, 0, 0.05]} rotation={[0, -0.4, 0]} scale={1.2}>
+      <PBox w={0.24} h={0.3} d={0.16} />
+      {Array.from({ length: 10 }, (_, i) => <mesh key={i} position={[-0.075, 0.035 + i * 0.022, 0.0815]}><planeGeometry args={[0.05, 0.016]} />{M.glow({ col: i < seg ? "#6fe39a" : "#22302a" })}</mesh>)}
+      <Txt3 txt={`${seg * 10}%`} w={0.12} h={0.06} col="#f2c21b" glow p={[0.045, 0.16, 0.082]} />
+    </group>
+  </>;
+}}</Scene3D>;
+
+// 13:37 · AFUERA, NUNCA EN EL GARAJE: el auto andando en la entrada carga la caja y el humo se va al cielo; la puerta del garaje baja con peso y se tacha
+export const HDriveway: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="split" floor="none" wall="none" bg="#5d708a"
+  cam={{ at: [0.15, 0.12, 0.3], az: [0.7, 0.45], el: [0.26, 0.2], r: [1.3, 1.1], fov: 30 }} warm={0.85}>{(tt) => {
+  const door = cl(phys(tt, 0.5, 6, 0.5)), cross = cl((tt - 2.2) / 0.5), glow = 0.6 + 0.4 * Math.sin(tt * 3);
+  return <>
+    <mesh rotation={[-PI / 2, 0, 0]} receiveShadow><planeGeometry args={[6, 6]} /><meshStandardMaterial color="#8e9a86" roughness={0.95} /></mesh>
+    {/* árboles pelados y cerco atrás: hay horizonte, no vacío */}
+    {[-1.1, -0.7, 0.75, 1.2].map((x, i) => <group key={"ar" + i} position={[x, 0, -0.9 - (i % 2) * 0.3]}>
+      <mesh position={[0, 0.3, 0]}><cylinderGeometry args={[0.02, 0.03, 0.6, 8]} />{M.wood({ base: [70, 50, 36] })}</mesh>
+      <mesh position={[0, 0.62, 0]}><coneGeometry args={[0.16, 0.42, 10]} /><meshStandardMaterial color="#3c5240" roughness={0.9} /></mesh></group>)}
+    {Array.from({ length: 16 }, (_, i) => <mesh key={"ce" + i} position={[-1.4 + i * 0.18, 0.09, -0.65]}><boxGeometry args={[0.03, 0.18, 0.02]} />{M.wood({ base: [120, 96, 70] })}</mesh>)}
+    <mesh position={[0, 0.14, -0.65]}><boxGeometry args={[2.9, 0.025, 0.02]} />{M.wood({ base: [120, 96, 70] })}</mesh>
+    <mesh rotation={[-PI / 2, 0, 0]} position={[0.1, 0.003, 0.35]} receiveShadow><planeGeometry args={[0.46, 0.9]} /><meshStandardMaterial color="#3a3d42" roughness={0.85} /></mesh>
+    {/* casa + garaje */}
+    <RBox s={[0.5, 0.32, 0.4]} p={[-0.38, 0.16, -0.2]} r={0.01}>{M.wood({ base: [150, 120, 92], rx: 1, ry: 4 })}</RBox>
+    <mesh position={[-0.38, 0.41, -0.2]} rotation={[0, PI / 4, 0]}><coneGeometry args={[0.38, 0.18, 4]} />{M.matte({ col: "#4a3226" })}</mesh>
+    <mesh position={[-0.3, 0.2, 0.001]}><planeGeometry args={[0.12, 0.1]} />{M.glow({ col: "#ffcf7a" })}</mesh>
+    <RBox s={[0.4, 0.28, 0.4]} p={[0.1, 0.14, -0.2]} r={0.01}>{M.wood({ base: [160, 130, 100], rx: 1, ry: 4 })}</RBox>
+    {/* la puerta del garaje baja con peso (paneles) */}
+    <group position={[0.1, 0.25 - 0.115 * door, 0.002]} scale={[1, Math.max(0.001, door), 1]}>
+      {[0, 1, 2, 3].map((i) => <mesh key={i} position={[0, 0.0865 - i * 0.0577, 0]}><boxGeometry args={[0.32, 0.054, 0.008]} />{M.matte({ col: "#eae6dc" })}</mesh>)}
+    </group>
+    {/* adentro del garaje cerrado: el gas encerrado, rojo, que no tiene por dónde salir */}
+    {Array.from({ length: 10 }, (_, i) => { const ph = (tt * 0.3 + i / 10) % 1; return <mesh key={"gz" + i} position={[0.0 + (i % 5) * 0.05, 0.08 + ph * 0.14, 0.03 + (i % 2) * 0.02]}><sphereGeometry args={[0.03 + 0.02 * Math.sin(ph * PI), 10, 8]} /><meshBasicMaterial color="#c8463a" transparent opacity={0.22 * door * Math.sin(ph * PI)} depthWrite={false} /></mesh>; })}
+    <Txt3 txt="NEVER IN HERE" w={0.3} h={0.07} bg="#b8241a" col="#ffffff" p={[0.1, 0.33, 0.01]} s={phys(tt, 2.0, 8, 0.45)} />
+    {/* auto en la entrada: carrocería, cabina, ruedas, faros */}
+    <group position={[0.1, 0, 0.48]}>
+      <RBox s={[0.22, 0.08, 0.4]} p={[0, 0.07, 0]} r={0.03}>{M.plastic({ col: "#2b5a8a" })}</RBox>
+      <RBox s={[0.19, 0.07, 0.2]} p={[0, 0.14, -0.03]} r={0.03}>{M.glass({ op: 0.6, col: "#9fc0e0" })}</RBox>
+      {[[-0.11, 0.13], [0.11, 0.13], [-0.11, -0.13], [0.11, -0.13]].map(([x, z], i) => <group key={i} position={[x, 0.035, z]} rotation={[0, 0, PI / 2]}>
+        <mesh><cylinderGeometry args={[0.035, 0.035, 0.03, 20]} />{M.rubber({ col: "#111" })}</mesh>
+        <mesh position={[0, x > 0 ? 0.016 : -0.016, 0]}><cylinderGeometry args={[0.018, 0.018, 0.002, 16]} />{M.steel()}</mesh></group>)}
+      {[-0.07, 0.07].map((x) => <mesh key={x} position={[x, 0.08, -0.201]}><circleGeometry args={[0.018, 16]} />{M.glow({ col: "#fff6dc" })}</mesh>)}
+      {[-0.07, 0.07].map((x) => <mesh key={"r" + x} position={[x, 0.08, 0.201]} rotation={[0, PI, 0]}><circleGeometry args={[0.014, 16]} />{M.glow({ col: "#ff3a2a", op: glow })}</mesh>)}
+    </group>
+    {/* el humo del caño se va lejos, hacia la calle */}
+    {Array.from({ length: 14 }, (_, i) => { const ph = (tt * 0.4 + i / 14) % 1; return <mesh key={i} position={[0.14 + ph * 0.3, 0.04 + ph * 0.3, 0.7 + ph * 0.3]}><sphereGeometry args={[0.012 + ph * 0.04, 10, 8]} /><meshBasicMaterial color="#9aa0a8" transparent opacity={0.35 * (1 - ph)} depthWrite={false} /></mesh>; })}
+    {/* la caja al lado del auto con el cable */}
+    <PBox p={[0.42, 0, 0.42]} r={[0, -0.8, 0]} w={0.22} h={0.16} d={0.14} scr="+ 180 W" />
+    <mesh geometry={tubeG("cc", [[0.21, 0.1, 0.42], [0.3, 0.01, 0.42], [0.37, 0.05, 0.42]], 0.005, 30, 6)}>{M.rubber({ col: "#f2c21b" })}</mesh>
+  </>;
+}}</Scene3D>;

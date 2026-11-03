@@ -1,0 +1,236 @@
+// gary03 · componentes únicos 1/4 (min 0-7). Cada uno es UN objeto que hace la idea sin leer; el texto va sobre la pieza.
+import React from "react";
+import * as THREE from "three";
+import { H } from "./hkit";
+import { M, RBox, Scene3D, tubeG } from "./h3d";
+import { Fridge, PBox, PI, Plug, Thermo, Txt3, WattMeter, cl, eio, lerp, phys, pop, roll } from "./gk";
+
+// chispa corta: rayitos amarillos que salen de un punto y se apagan (k 0..1); la luz queda montada siempre
+export const Spark: React.FC<{ p: [number, number, number]; k: number; s?: number }> = ({ p, k, s = 1 }) => {
+  const on = k > 0 && k < 1 ? 1 : 0;
+  return <group position={p} scale={s}>
+    {on ? Array.from({ length: 9 }, (_, i) => { const a = i * 2.4, l = 0.03 + 0.05 * Math.sin(k * PI) * (0.6 + 0.4 * ((i * 7) % 3) / 2);
+      return <mesh key={i} position={[Math.cos(a) * l / 2, Math.sin(a) * l / 2 + 0.01, Math.sin(a * 1.7) * 0.01]} rotation={[0, 0, a]}><boxGeometry args={[l, 0.004, 0.004]} />{M.glow({ col: i % 2 ? "#fff3a0" : "#ffb02a", op: 1 - k })}</mesh>; }) : null}
+    <pointLight intensity={2.5 * (1 - cl(k)) * on} distance={0.6} color="#ffcf6a" />
+  </group>;
+};
+
+// 0:19 · OVERLOAD: el compresor de atrás arranca con una sacudida, el cable se pone rojo, el aro de vatios cruza la raya y la caja se apaga
+export const HOverload: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="iris" floor="dark" wall="tile" bg="#0d1014" warm={1.1}
+  cam={{ at: [0.04, 0.33, 0], at1: [0.1, 0.36, 0], az: [-0.5, -0.2], el: [0.26, 0.18], r: [1.38, 1.18], fov: 32 }}>{(tt) => {
+  const w = roll(tt, 1.0, 3.0, 0, 1850), over = tt > 3.05, dead = cl((tt - 3.6) / 0.25);
+  const kick = tt > 0.9 && tt < 3.6 ? Math.sin(tt * 80) * 0.004 * (1 - cl((tt - 1.3) / 2)) + (tt < 1.15 ? 0.012 * Math.sin((tt - 0.9) * 25) : 0) : 0;
+  const ring = cl(w / 1850) * 1.62 * PI, hot = cl((w - 600) / 1200);
+  return <>
+    <group position={[kick, 0, 0]}>
+      <Fridge p={[-0.3, 0, -0.1]} r={[0, 0.4, 0]} lit={tt > 0.6 ? 1 - dead : 0} door={0.45 * eio(tt, 0.2, 0.9)} />
+      {/* compresor negro abajo atrás de la heladera: se ve vibrar */}
+      <mesh position={[-0.47, 0.06, -0.2]} castShadow><capsuleGeometry args={[0.05, 0.03, 10, 24]} /><meshStandardMaterial color="#1c1d1f" metalness={0.4} roughness={0.45} emissive="#ff4a10" emissiveIntensity={0.25 * hot * (1 - dead)} /></mesh>
+    </group>
+    <group position={[0.24, 0, 0.05]} rotation={[0, -0.35, 0]}>
+      <PBox w={0.44} h={0.3} d={0.28} scr={over ? (dead > 0.5 ? "" : "OVERLOAD") : `${w} W`} scrCol={over ? "#ff3b2a" : "#4dff9a"} on={over ? (Math.floor(tt * 8) % 2 ? 1 : 0.2) * (1 - dead) : 1} />
+      {/* aro grande de vatios arriba: verde → rojo al pasar la raya blanca de 1000 W; al apagarse queda gris */}
+      <group position={[0, 0.56, 0]} scale={1.25}>
+        <mesh rotation={[0, 0, PI * 1.31]}><torusGeometry args={[0.17, 0.012, 12, 90, 1.62 * PI]} /><meshStandardMaterial color="#3a3d42" /></mesh>
+        <mesh rotation={[0, 0, PI * 1.31 + 1.62 * PI - Math.max(0.001, ring)]}><torusGeometry args={[0.17, 0.02, 12, 90, Math.max(0.001, ring)]} />{M.glow({ col: dead > 0.5 ? "#3a3d42" : w > 1000 ? "#ff4a3a" : "#6fe39a" })}</mesh>
+        <mesh position={[Math.cos(PI * 1.31 + 1.62 * PI * (1 - 1000 / 1850)) * 0.17, Math.sin(PI * 1.31 + 1.62 * PI * (1 - 1000 / 1850)) * 0.17, 0.01]} rotation={[0, 0, PI * 1.31 + 1.62 * PI * (1 - 1000 / 1850)]}><boxGeometry args={[0.07, 0.008, 0.01]} />{M.glow({ col: "#ffffff" })}</mesh>
+        <Txt3 txt={over ? "OVERLOAD" : `${w} W`} w={0.3} h={0.09} col={over ? "#ff5a4a" : "#f7f4ee"} glow op={1 - 0.25 * dead} p={[0, 0, 0.01]} />
+      </group>
+    </group>
+    {/* el cable se pone al rojo a medida que tira; chispa en la caja cuando corta */}
+    <Plug p={[0.13, 0.09, 0.18]} to={[-0.22, 0.05, -0.12]} r={[0, -0.35, 0]} col={hot > 0.6 && dead < 0.5 ? "#7a1c10" : "#1c1d20"} />
+    <Spark p={[0.12, 0.12, 0.2]} k={(tt - 3.55) / 0.5} s={1.4} />
+  </>;
+}}</Scene3D>;
+
+// 1:50 · EL TEST DE DIEZ MINUTOS: caja → medidor de US$20 → secador; el medidor sube a 1500 W y el reloj de cocina corre a 10
+export const HTestKit: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="wipe" floor="wood" wall="dark"
+  cam={{ at: [0.0, 0.15, 0], at1: [0.02, 0.16, 0], az: [0.3, 0.1], el: [0.3, 0.24], r: [1.22, 1.06], fov: 30 }} lamp={[0, 0.6, 0.3]}>{(tt) => {
+  const a = pop(tt, 0.2), b = pop(tt, 0.9), c = pop(tt, 1.6), on = tt > 2.0, wv = on ? roll(tt, 2.0, 2.6, 0, 1500) + (tt > 2.6 ? Math.round(Math.sin(tt * 7) * 4) : 0) : 0;
+  const dial = -2 * PI * (10 / 60) * eio(tt, 2.2, 4.6);
+  return <>
+    <PBox p={[-0.42, 0, -0.18]} r={[0, 0.35, 0]} w={0.26} h={0.19} d={0.18} scr={on ? "ON" : ""} />
+    <WattMeter val={on ? `${wv} W` : "$20"} p={[-0.1, 0, 0.14]} r={[0, 0.18, 0]} s={a * 2.7} />
+    <Plug p={[-0.12, 0.08, 0.13]} to={[-0.3, 0.05, 0.02]} r={[0, 0.2, 0]} k="tk1" />
+    {/* secador de pelo: cuerpo, boca, mango; con aire tibio que sale cuando anda */}
+    <group position={[0.2, 0.06 * b, -0.1]} rotation={[0, -0.5, 0.1]} scale={b * 0.95}>
+      <mesh rotation={[0, 0, PI / 2]} position={[0, 0.14, 0]} castShadow><cylinderGeometry args={[0.055, 0.06, 0.2, 32]} />{M.plastic({ col: "#3a4a5c" })}</mesh>
+      <mesh rotation={[0, 0, PI / 2]} position={[0.13, 0.14, 0]}><cylinderGeometry args={[0.035, 0.045, 0.07, 32]} />{M.matte({ col: "#2a2a2c" })}</mesh>
+      <mesh rotation={[0, 0, -0.25]} position={[-0.03, 0.04, 0]} castShadow><boxGeometry args={[0.04, 0.17, 0.05]} />{M.plastic({ col: "#3a4a5c" })}</mesh>
+      <mesh rotation={[0, 0, PI / 2]} position={[-0.1, 0.14, 0]}><cylinderGeometry args={[0.05, 0.05, 0.004, 32]} />{M.matte({ col: "#151515" })}</mesh>
+      {Array.from({ length: 8 }, (_, i) => { const ph = (tt * 1.6 + i / 8) % 1; return <mesh key={i} position={[0.18 + ph * 0.3, 0.14 + Math.sin(i * 3 + tt * 4) * 0.02 * ph, Math.cos(i * 2) * 0.02 * ph]}><sphereGeometry args={[0.008 + ph * 0.02, 8, 6]} /><meshBasicMaterial color="#ffb878" transparent opacity={on ? 0.28 * (1 - ph) : 0} depthWrite={false} /></mesh>; })}
+    </group>
+    <Plug p={[0.03, 0.03, 0.12]} to={[-0.1, 0.05, 0.1]} r={[0, -0.3, 0]} k="tk2" />
+    {/* reloj de cocina grande: la aguja roja corre hasta 10 minutos */}
+    <group position={[0.3, 0, 0.06]} rotation={[0, -0.45, 0]} scale={c * 1.6}>
+      <mesh position={[0, 0.06, 0]} castShadow><cylinderGeometry args={[0.07, 0.075, 0.12, 40]} />{M.porcelain({ col: "#c8321f" })}</mesh>
+      <mesh position={[0, 0.135, 0]}><cylinderGeometry args={[0.018, 0.022, 0.03, 20]} />{M.matte({ col: "#1c1c1c" })}</mesh>
+      <mesh position={[0, 0.06, 0.071]}><circleGeometry args={[0.062, 40]} /><meshStandardMaterial color="#fbf8f0" /></mesh>
+      {Array.from({ length: 12 }, (_, i) => <mesh key={i} position={[Math.sin(i / 12 * 2 * PI) * 0.052, 0.06 + Math.cos(i / 12 * 2 * PI) * 0.052, 0.072]}><boxGeometry args={[0.003, 0.01, 0.001]} /><meshBasicMaterial color={i === 2 ? "#d8361f" : "#333"} /></mesh>)}
+      <group position={[0, 0.06, 0.074]} rotation={[0, 0, dial]}><mesh position={[0, 0.022, 0]}><boxGeometry args={[0.005, 0.045, 0.002]} /><meshBasicMaterial color="#d8361f" /></mesh></group>
+      <Txt3 txt="10 MIN" w={0.2} h={0.065} col="#f2c21b" p={[0, 0.2, 0]} glow s={cl((tt - 4.4) / 0.4)} />
+    </group>
+  </>;
+}}</Scene3D>;
+
+// 2:56 · PURE SINE vs BLOCKY: de la toma de la pared sale una onda lisa; de la caja barata, una escalera que tiembla
+const sineG = (key: string, k: number, step: boolean, o = 0) => {
+  const pts: number[][] = [], N = 90, L = 0.7;
+  for (let i = 0; i <= N; i++) { const u = i / N, x = -L / 2 + L * u * Math.max(0.02, k), ph = u * Math.max(0.02, k) * 4 * PI - o; let y = Math.sin(ph) * 0.09; if (step) y = Math.abs(Math.sin(ph)) < 0.38 ? 0 : Math.sign(Math.sin(ph)) * 0.09; pts.push([x, y, 0]); }
+  return tubeG(key + k.toFixed(2) + o.toFixed(2), pts, 0.012, 260, 8);
+};
+export const HWaves: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="split" floor="wood" wall="tile" bg="#0d0e10"
+  cam={{ at: [0.0, 0.31, 0], az: [-0.18, 0.14], el: [0.14, 0.08], r: [1.55, 1.38], fov: 32 }}>{(tt) => {
+  const k1 = cl(Math.round(eio(tt, 0.05, 2.0) * 60) / 60), k2 = cl(Math.round(eio(tt, 0.9, 3.0) * 60) / 60), jit = tt > 3.6 ? Math.sin(tt * 40) * 0.006 : 0;
+  const o = Math.round(Math.max(0, tt - 3.0) * 2.4 * 20) / 20;   // ya dibujadas, las dos ondas corren: la lisa fluye, la escalera salta
+  return <>
+    {/* arriba: la toma de la pared → onda lisa verde */}
+    <group position={[0.06, 0.5, 0]}><mesh geometry={sineG("sa", k1, false, o)}>{M.glow({ col: "#6fe39a" })}</mesh>
+      <Txt3 txt="WALL: PURE SINE" w={0.5} h={0.09} col="#6fe39a" glow p={[0.0, 0.17, 0]} s={pop(tt, 1.2)} /></group>
+    <group position={[-0.43, 0.5, 0.0]}><RBox s={[0.12, 0.17, 0.03]} r={0.012}>{M.porcelain({ col: "#f1eee6" })}</RBox>
+      {[-0.035, 0.035].map((y) => <group key={y} position={[0, y, 0.016]}>{[-0.016, 0.016].map((x) => <mesh key={x} position={[x, 0.004, 0]}><planeGeometry args={[0.007, 0.022]} /><meshBasicMaterial color="#222" /></mesh>)}</group>)}</group>
+    {/* abajo: la caja barata → escalera roja que tiembla */}
+    <group position={[0.06 + jit, 0.17, 0]}><mesh geometry={sineG("sb", k2, true, o)}>{M.glow({ col: "#ff5a4a" })}</mesh>
+      <Txt3 txt="CHEAP BOX: BLOCKY" w={0.5} h={0.09} col="#ff6a5a" glow p={[0.0, 0.16, 0.02]} s={pop(tt, 2.4)} /></group>
+    <PBox p={[-0.43, 0.0, 0.02]} w={0.22} h={0.16} d={0.15} col="#5d6166" sticker="$129" />
+  </>;
+}}</Scene3D>;
+
+// la onda escalonada que viaja por el cable hacia el motor (k = avance)
+const stepWave = (key: string, x0: number, x1: number, k: number) => {
+  const pts: number[][] = [], N = 70;
+  for (let i = 0; i <= N; i++) { const u = i / N, x = lerp(x0, x1, u * Math.max(0.02, k)), ph = u * Math.max(0.02, k) * 6 * PI; const sv = Math.sin(ph); pts.push([x, Math.abs(sv) < 0.38 ? 0 : Math.sign(sv) * 0.035, 0]); }
+  return tubeG(key + k.toFixed(2), pts, 0.006, 200, 6);
+};
+// 3:27 · EL MOTOR SE CALIENTA: la onda escalonada entra por el cable y el compresor pasa de gris a rojo; el termómetro grande trepa
+export const HHotMotor: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="drop" floor="dark" wall="dark" bg="#0c0b0a"
+  cam={{ at: [0.0, 0.24, 0], az: [0.42, 0.1], el: [0.26, 0.18], r: [1.35, 1.18], fov: 30 }}>{(tt) => {
+  const wk = eio(tt, 0.3, 1.6), heat = eio(tt, 1.2, 4.6), bz = Math.sin(tt * 70) * 0.003 * (0.3 + heat);
+  const mcol = new THREE.Color("#55585c").lerp(new THREE.Color("#c2401a"), heat);
+  return <>
+    <group position={[0.34, 0.12, 0.02]}><mesh geometry={stepWave("hw", 0.0, -0.26, wk)}>{M.glow({ col: "#ff8a3a" })}</mesh></group>
+    <mesh geometry={tubeG("hcab", [[0.62, 0.05, 0.02], [0.45, 0.1, 0.02], [0.1, 0.1, 0.02]], 0.007, 40, 8)}>{M.rubber({ col: "#1c1d20" })}</mesh>
+    <group position={[bz, 0, 0]} scale={1.25}>
+      <mesh position={[0, 0.11, 0]} castShadow><capsuleGeometry args={[0.1, 0.07, 12, 32]} /><meshStandardMaterial color={mcol} roughness={0.45} metalness={0.4} emissive="#ff4a10" emissiveIntensity={0.9 * heat} /></mesh>
+      <mesh position={[0, 0.005, 0]}><cylinderGeometry args={[0.13, 0.13, 0.01, 32]} />{M.steel({ col: "#55585c" })}</mesh>
+      {[0, 1].map((i) => <mesh key={i} geometry={tubeG("cu" + i, [[0.05 + i * 0.03, 0.2, 0], [0.12 + i * 0.03, 0.27, 0.02], [0.2, 0.22 - i * 0.05, 0.05], [0.26, 0.14 - i * 0.05, 0.02]], 0.008, 60, 10)} castShadow>
+        <meshStandardMaterial color="#b8733a" metalness={0.9} roughness={0.3} emissive="#ff5a1a" emissiveIntensity={0.8 * heat} /></mesh>)}
+    </group>
+    {/* vapor blanco que sube del motor caliente */}
+    {Array.from({ length: 12 }, (_, i) => { const ph = (tt * 0.5 + i / 12) % 1; return <mesh key={i} position={[Math.sin(i * 2.1) * 0.05 + ph * 0.03, 0.26 + ph * 0.32, Math.cos(i * 1.3) * 0.04]}><sphereGeometry args={[0.015 + ph * 0.035, 10, 8]} /><meshBasicMaterial color="#f2f0ec" transparent opacity={0.22 * heat * (1 - ph)} depthWrite={false} /></mesh>; })}
+    {/* termómetro grande con zona roja arriba */}
+    <group position={[-0.3, 0, 0.04]}>
+      <Thermo k={0.2 + 0.78 * heat} s={pop(tt, 0.3) * 1.3} />
+      <mesh position={[0.035, 0.33, 0]}><boxGeometry args={[0.012, 0.08, 0.004]} />{M.glow({ col: "#ff4a3a" })}</mesh>
+      <Txt3 txt={`${roll(tt, 1.2, 4.6, 110, 190)}°F`} w={0.2} h={0.07} col={heat > 0.7 ? "#ff6a4a" : "#f7f4ee"} glow p={[0.12, 0.4, 0.04]} s={pop(tt, 0.8) * 1.2} />
+    </group>
+  </>;
+}}</Scene3D>;
+
+// 4:06 · LA HOJA DE DATOS: la lupa salta renglón por renglón y bajo el vidrio el renglón del inversor crece: PURE SINE WAVE
+const SHEET = ["CAPACITY ........ 1024 Wh", "AC OUTPUT ....... 1200 W", "SURGE ........... 2400 W", "WAVEFORM ........ PURE SINE WAVE", "CELLS ........... LiFePO4", "CYCLES .......... 3000+"];
+export const HSpecSheet: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="iris" floor="wood" wall="none" bg="#110d0a" warm={0.7}
+  cam={{ at: [0, 0.0, 0.02], az: [0.0, 0.12], el: [1.05, 0.95], r: [0.9, 0.76], fov: 30 }} lamp={[0.1, 0.5, 0.2]}>{(tt) => {
+  // la lupa para en CAPACITY, después SURGE y por último WAVEFORM
+  const row = tt < 1.2 ? 0 : tt < 2.2 ? lerp(0, 2, eio(tt, 1.2, 1.6)) : lerp(2, 3, eio(tt, 2.2, 2.6));
+  const ly = 0.13 - row * 0.05, hit = cl((tt - 2.7) / 0.4), mag = phys(tt, 2.7, 7, 0.5), ri = Math.round(row);
+  return <group rotation={[-PI / 2, 0, 0.04]} position={[0, 0.002, 0]}>
+    <mesh receiveShadow><planeGeometry args={[0.44, 0.56]} /><meshStandardMaterial color="#ece6d6" roughness={0.95} /></mesh>
+    <Txt3 txt="SPEC SHEET" w={0.3} h={0.05} col="#1b1b1b" p={[0, 0.22, 0.001]} />
+    {SHEET.map((s, i) => <Txt3 key={i} txt={s} w={0.38} h={0.032} col={i === 3 ? (hit > 0.5 ? "#0f7a3a" : "#111") : "#111"} font="Courier New" weight={900} p={[0, 0.13 - i * 0.05, 0.001]} />)}
+    <mesh position={[0, 0.13 - 3 * 0.05, 0.0008]} scale={[Math.max(0.001, hit), 1, 1]}><planeGeometry args={[0.4, 0.038]} /><meshBasicMaterial color="#9af0b4" transparent opacity={0.55} /></mesh>
+    {/* la lupa; bajo el vidrio, el renglón agrandado */}
+    <group position={[0.06, ly, 0.06]}>
+      <mesh><torusGeometry args={[0.1, 0.01, 12, 56]} />{M.brass()}</mesh>
+      <mesh position={[0.14, -0.1, 0]} rotation={[0, 0, PI / 4]}><cylinderGeometry args={[0.016, 0.018, 0.14, 16]} />{M.wood({ base: [80, 40, 20] })}</mesh>
+      <mesh position={[0, 0, 0.001]}><circleGeometry args={[0.095, 56]} /><meshStandardMaterial color={hit > 0.5 ? "#e6f6e8" : "#f6f1e4"} /></mesh>
+      <Txt3 txt={ri === 3 ? "PURE SINE" : SHEET[ri].split(" ")[0]} w={0.17} h={0.05} col={ri === 3 ? "#0f7a3a" : "#222"} p={[0, 0.014, 0.002]} s={ri === 3 ? 0.7 + 0.3 * mag : 0.85} />
+      <Txt3 txt={ri === 3 ? "WAVE" : SHEET[ri].split(" ").slice(-2).join(" ")} w={0.13} h={0.04} col={ri === 3 ? "#0f7a3a" : "#555"} p={[0, -0.032, 0.002]} s={ri === 3 ? 0.7 + 0.3 * mag : 0.85} />
+    </group>
+    {/* el renglón encontrado se despega de la hoja y queda flotando como sello */}
+    <group position={[0, -0.03, 0.01 + 0.09 * cl(mag)]} rotation={[0.2 * (1 - cl(mag)), 0, -0.04]} scale={Math.max(0.001, cl(mag))}>
+      <Txt3 txt="PURE SINE WAVE" w={0.4} h={0.075} bg="#0f7a3a" col="#ffffff" weight={900} />
+    </group>
+    <pointLight position={[0, -0.03, 0.2]} intensity={0.8 * cl(hit)} distance={0.6} color="#9af0b4" />
+  </group>;
+}}</Scene3D>;
+
+// 5:16 · LOS CICLOS: dos celdas con su cuentavueltas; la barata se cansa en 800 (se apaga y se raja), la LFP sigue hasta 3000
+export const HCycles: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="wipe" floor="wood" wall="dark" bg="#0e0c0a" lamp={[0, 0.7, 0.3]}
+  cam={{ at: [0, 0.27, 0], az: [-0.2, 0.18], el: [0.2, 0.13], r: [1.36, 1.22], fov: 30 }}>{(tt) => {
+  const n1 = roll(tt, 0.5, 2.0, 0, 800), n2 = roll(tt, 0.5, 4.4, 0, 3000), tired = cl((tt - 2.0) / 0.8);
+  const cell = (x: number, col: string, wid: number, n: number, dim: number, lab: string, s: number) => <group position={[x, 0, 0]} scale={s}>
+    <mesh position={[0, 0.16, 0]} castShadow><cylinderGeometry args={[wid, wid, 0.32, 40]} /><meshPhysicalMaterial color={new THREE.Color(col).lerp(new THREE.Color("#3a3c40"), dim)} roughness={0.35} clearcoat={0.6} /></mesh>
+    <mesh position={[0, 0.325, 0]}><cylinderGeometry args={[wid * 0.4, wid * 0.4, 0.014, 24]} />{M.steel()}</mesh>
+    <mesh position={[0, 0.16, wid + 0.001]}><planeGeometry args={[wid * 0.8, 0.24]} />{M.glow({ col: "#6fe39a", op: 0.85 * (1 - dim) })}</mesh>
+    <mesh position={[0.01, 0.2, wid + 0.003]} rotation={[0, 0, 0.9]} scale={[Math.max(0.001, dim), 1, 1]}><planeGeometry args={[0.16, 0.006]} /><meshBasicMaterial color="#111" /></mesh>
+    <Txt3 txt={lab} w={0.2} h={0.07} col="#ffffff" bg="#151515" weight={900} p={[0, 0.06, wid + 0.006]} />
+    {/* cuentavueltas negro arriba con el número grande */}
+    <RBox s={[0.28, 0.09, 0.05]} p={[0, 0.42, 0]} r={0.012}>{M.matte({ col: "#141516" })}</RBox>
+    <Txt3 txt={`${n}`} w={0.25} h={0.075} col={dim > 0.5 ? "#ff6a4a" : "#f2c21b"} glow font="Courier New" p={[0, 0.42, 0.026]} />
+  </group>;
+  return <>
+    <group rotation={[0, 0, 0.22 * eio(tt, 3.2, 4.0)]} position={[-0.04 * eio(tt, 3.2, 4.0), 0, 0]}>{cell(-0.27, "#2a5aa8", 0.075, n1, tired, "CHEAP", pop(tt, 0.2) * 1.3)}</group>
+    {cell(0.27, "#2e7d4f", 0.095, n2, 0, "LFP", pop(tt, 0.4) * 1.3)}
+  </>;
+}}</Scene3D>;
+
+// 5:51 · CONGELADA NO CARGA: la escarcha tapa la caja, el termómetro baja a 32°F, el enchufe avanza y un candado grande cae y lo frena
+export const HFrostLock: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="iris" floor="wood" wall="dark" bg="#0a0f15"
+  cam={{ at: [0.0, 0.18, 0], az: [0.22, -0.05], el: [0.24, 0.16], r: [1.25, 1.08], fov: 30 }} warm={0.75}>{(tt) => {
+  const frost = eio(tt, 0.2, 1.6), plugX = lerp(0.52, 0.36, eio(tt, 1.4, 2.4)), drop = phys(tt, 2.5, 9, 0.38), y = lerp(0.6, 0.12, cl(drop));
+  return <>
+    <PBox p={[-0.12, 0, 0]} w={0.3} h={0.22} d={0.2} col="#8d969e" scr={tt > 2.6 ? "NO CHARGE" : "32°F"} scrCol="#8fd0ff" />
+    <mesh position={[-0.12, 0.226, 0]} scale={[1, Math.max(0.001, frost), 1]}><boxGeometry args={[0.31, 0.014, 0.21]} /><meshStandardMaterial color="#eaf6ff" roughness={0.3} emissive="#9fd4ff" emissiveIntensity={0.15} /></mesh>
+    {Array.from({ length: 14 }, (_, i) => <mesh key={i} position={[-0.26 + (i % 7) * 0.045, 0.236 + (i % 3) * 0.004, -0.07 + Math.floor(i / 7) * 0.12]} rotation={[i, i * 0.7, 0]} scale={Math.max(0.001, cl(frost * 1.4 - i / 20))}><octahedronGeometry args={[0.012 + (i % 3) * 0.004]} /><meshPhysicalMaterial color="#ffffff" transparent opacity={0.85} roughness={0.05} /></mesh>)}
+    <Thermo k={lerp(0.6, 0.15, frost)} col={frost > 0.6 ? "#58a8ff" : "#e2352a"} p={[-0.38, 0, 0.06]} s={pop(tt, 0.2) * 1.2} />
+    <Txt3 txt="32°F" w={0.17} h={0.07} col="#8fd0ff" glow weight={900} p={[-0.36, 0.36, 0.06]} s={cl(frost * 1.5)} />
+    <Txt3 txt="NO CHARGE" w={0.36} h={0.08} bg="#b8241a" col="#ffffff" weight={900} p={[-0.1, 0.38, 0.05]} s={phys(tt, 2.8, 8, 0.45)} />
+    <Plug p={[plugX, 0.1, 0.13]} to={[0.8, 0.04, 0.1]} r={[0, -PI / 2, 0]} />
+    {/* candado grande que cae entre el enchufe y la toma */}
+    <group position={[0.17, y, 0.13]} scale={Math.max(0.001, cl(drop * 3)) * 2.8}>
+      <RBox s={[0.07, 0.06, 0.025]} r={0.008}>{M.brass()}</RBox>
+      <mesh position={[0, 0.04, 0]}><torusGeometry args={[0.022, 0.006, 10, 24, PI]} />{M.steel()}</mesh>
+      <mesh position={[0, -0.005, 0.0135]}><circleGeometry args={[0.008, 16]} /><meshBasicMaterial color="#2a1a08" /></mesh>
+    </group>
+  </>;
+}}</Scene3D>;
+
+// 6:10 · LA CAJA DEL GARAJE FRÍO: la etiqueta dice 1000 Wh; las celdas se apagan con un parpadeo y se hunden: quedan menos de la mitad
+export const HHalfBox: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="drop" floor="dark" wall="dark" bg="#0c0e12"
+  cam={{ at: [0, 0.25, 0], az: [-0.3, -0.08], el: [0.22, 0.16], r: [1.18, 1.02], fov: 30 }}>{(tt) => {
+  const strike = cl((tt - 3.5) / 0.4), swap = cl((tt - 4.0) / 0.3);
+  return <>
+    <mesh position={[0, 0.14, 0]}><boxGeometry args={[0.56, 0.28, 0.22]} />{M.glass({ op: 0.2 })}</mesh>
+    <mesh position={[0, 0.001, 0]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[0.58, 0.24]} />{M.matte({ col: "#202226" })}</mesh>
+    {Array.from({ length: 10 }, (_, i) => { const at = 0.8 + (9 - i) * 0.4, off = i >= 4 && tt > at, fl = i >= 4 && tt > at - 0.2 && tt < at ? (Math.floor(tt * 30) % 2) : 1, sink = off ? 0.02 * eio(tt, at, at + 0.3) : 0;
+      return <mesh key={i} position={[-0.22 + (i % 5) * 0.11, 0.075 + Math.floor(i / 5) * 0.13 - sink, 0]} castShadow>
+      <cylinderGeometry args={[0.038, 0.038, 0.11, 24]} /><meshStandardMaterial color={off ? "#2a2c30" : "#3a8a5a"} emissive={off ? "#000" : "#6fe39a"} emissiveIntensity={off ? 0 : 0.5 * fl} /></mesh>; })}
+    {/* etiqueta de la tapa: 1000 Wh, que se tacha; arriba aparece lo que queda */}
+    <group position={[0, 0.38, 0.06]} rotation={[-0.15, 0, 0]} scale={Math.max(0.001, 1 - swap)}>
+      <Txt3 txt="1000 Wh" w={0.34} h={0.09} bg="#d8361f" col="#fff6e6" weight={900} />
+      <mesh position={[0, 0, 0.003]} scale={[Math.max(0.001, strike), 1, 1]}><planeGeometry args={[0.32, 0.012]} /><meshBasicMaterial color="#111" /></mesh>
+    </group>
+    <Txt3 txt="UNDER 500 Wh" w={0.44} h={0.1} bg="#141516" col="#ff6a5a" weight={900} p={[0, 0.38, 0.07]} s={phys(tt, 4.1, 8, 0.45)} />
+    {Array.from({ length: 30 }, (_, i) => { const ph = (tt * 0.18 + i / 30) % 1; return <mesh key={i} position={[-0.5 + (i * 0.37) % 1, 0.7 - ph * 0.7, -0.4 - (i % 4) * 0.1]}><sphereGeometry args={[0.005, 6, 4]} /><meshBasicMaterial color="#eef4ff" /></mesh>; })}
+  </>;
+}}</Scene3D>;
+
+// 7:11 · LA LETRA CHICA: la caja gira; adelante un 2000 W gigante, atrás la chapita: la cámara se acerca y se lee CONTINUOUS 1000W
+export const HFlipBox: React.FC<{ t: number; h: H }> = ({ t, h }) => <Scene3D t={t} h={h} mode="split" floor="wood" wall="dark" bg="#0e0c0a"
+  cam={{ at: [0, 0.16, 0], at1: [0, 0.14, 0], az: [-0.15, 0.12], el: [0.2, 0.12], r: [1.0, 0.72], fov: 30 }} lamp={[0, 0.5, 0.4]}>{(tt) => {
+  const rot = PI * eio(tt, 0.5, 3.4), lift = 0.06 * Math.sin(PI * eio(tt, 0.5, 3.4)), peak = cl((tt - 4.0) / 0.25) * (1 - cl((tt - 4.6) / 0.3));
+  return <group position={[0, lift, 0]} rotation={[0, rot, 0]}>
+    <PBox w={0.4} h={0.26} d={0.24} col="#3b3e42" />
+    <Txt3 txt="2000W" w={0.36} h={0.12} bg="#d8361f" col="#fff6e6" p={[0, 0.2, 0.1215]} />
+    {/* atrás: la chapita de datos, con letra que la cámara alcanza a leer */}
+    <group position={[0, 0.14, -0.1215]} rotation={[0, PI, 0]}>
+      <mesh><planeGeometry args={[0.36, 0.17]} /><meshStandardMaterial color="#eceae4" roughness={0.7} /></mesh>
+      <Txt3 txt="CONTINUOUS 1000W" w={0.34} h={0.065} col="#111" weight={900} p={[0, 0.035, 0.001]} />
+      <mesh position={[0, 0.003, 0.0015]} scale={[Math.max(0.001, cl((tt - 3.5) / 0.4)), 1, 1]}><planeGeometry args={[0.32, 0.008]} /><meshBasicMaterial color="#1f8a4a" /></mesh>
+      <Txt3 txt="PEAK 2000W" w={0.2} h={0.045} col="#a8231a" weight={900} p={[0, -0.04, 0.001]} />
+      {/* el pico: una barra roja salta y cae en un instante */}
+      <mesh position={[0.15, -0.04 + 0.05 * peak, 0.004]} scale={[1, Math.max(0.001, peak), 1]}><boxGeometry args={[0.016, 0.1, 0.004]} />{M.glow({ col: "#ff4a3a" })}</mesh>
+    </group>
+  </group>;
+}}</Scene3D>;
