@@ -8,6 +8,17 @@ import { V3, env } from "../kits/r3k/r3k";
 import { P } from "./lib";
 
 const TX = new Map<string, THREE.Texture>();
+// 03-nov: una sola carga por textura y UN solo advance por tanda (antes cada hoja hacía su advance → 240 renders
+// completos en el GL por software del farm = timeout de 183 s en leafstorm/rakegust)
+const LOADING = new Map<string, Promise<THREE.Texture | null>>();
+const PEND = new Map<(t: number) => void, number[]>();
+const loadTex = (name: string, key: string, rep: [number, number]) => {
+  if (!LOADING.has(key)) LOADING.set(key, new Promise((res) => new THREE.TextureLoader().load(staticFile(P + "tex/" + name), (tx: THREE.Texture) => {
+    tx.colorSpace = THREE.SRGBColorSpace; tx.anisotropy = 8; tx.wrapS = tx.wrapT = THREE.RepeatWrapping; tx.repeat.set(rep[0], rep[1]);
+    TX.set(key, tx); res(tx);
+  }, undefined, () => res(null))));
+  return LOADING.get(key)!;
+};
 export const useTex = (name: string, rep: [number, number] = [1, 1]) => {
   const key = `${name}|${rep[0]}|${rep[1]}`;
   const [t, setT] = useState<THREE.Texture | null>(TX.get(key) ?? null);
@@ -15,12 +26,15 @@ export const useTex = (name: string, rep: [number, number] = [1, 1]) => {
   const { advance } = useThree();
   useEffect(() => {
     if (TX.has(key)) { setT(TX.get(key)!); return; }
-    new THREE.TextureLoader().load(staticFile(P + "tex/" + name), (tx: THREE.Texture) => {
-      tx.colorSpace = THREE.SRGBColorSpace; tx.anisotropy = 8; tx.wrapS = tx.wrapT = THREE.RepeatWrapping; tx.repeat.set(rep[0], rep[1]);
-      TX.set(key, tx); setT(tx);
-    }, undefined, () => { if (hd !== null) continueRender(hd); });
+    loadTex(name, key, rep).then((tx) => { if (tx) setT(tx); else if (hd !== null) continueRender(hd); });
   }, [key]);
-  useEffect(() => { if (t && hd !== null) requestAnimationFrame(() => { advance(performance.now()); requestAnimationFrame(() => continueRender(hd)); }); }, [t]);
+  useEffect(() => {
+    if (!t || hd === null) return;
+    const q = PEND.get(advance);
+    if (q) { q.push(hd); return; }
+    PEND.set(advance, [hd]);
+    requestAnimationFrame(() => { advance(performance.now()); requestAnimationFrame(() => { const hs = PEND.get(advance) ?? []; PEND.delete(advance); hs.forEach((h) => continueRender(h)); }); });
+  }, [t]);
   return t;
 };
 
