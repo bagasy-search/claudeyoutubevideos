@@ -1,0 +1,383 @@
+[
+{
+"k": "twopipes",
+"at": 102.1,
+"out": 116.05,
+"inAt": 114.22,
+"outAt": 117.02
+},
+{
+"k": "chapter",
+"at": 141.6,
+"out": 147.85,
+"n": 1,
+"name": "THE BUCKET FLUSH",
+"sub": "if your drain still works"
+},
+{
+"k": "siphon",
+"at": 174.0,
+"out": 184.35,
+"fastAt": 178.06,
+"pullAt": 191.28
+},
+{
+"k": "swallow",
+"at": 223.1,
+"out": 231.85,
+"gAt": 223.06,
+"sAt": 224.26
+},
+{
+"k": "onepour",
+"at": 240.7,
+"out": 245.85,
+"badAt": 241.66
+},
+{
+"k": "mellow",
+"at": 306.9,
+"out": 319.35,
+"ruleAt": 309.54,
+"countAt": 313.64,
+"bucketAt": 315.22,
+"lidAt": 316.3
+},
+{
+"k": "chapter",
+"at": 323.8,
+"out": 329.05,
+"n": 2,
+"name": "THE BAG",
+"sub": "if your drain is blocked or frozen"
+},
+{
+"k": "doublebag",
+"at": 484.1,
+"out": 488.95,
+"innerAt": 487.57
+},
+{
+"k": "bagsteps",
+"at": 509.0,
+"out": 519.95
+},
+{
+"k": "neverflush",
+"at": 592.4,
+"out": 606.85,
+"rows": [
+{
+"at": 585.71,
+"txt": "Wipes — even “flushable”"
+},
+{
+"at": 588.73,
+"txt": "Paper towels"
+},
+{
+"at": 589.83,
+"txt": "Grease from the pan"
+},
+{
+"at": 591.61,
+"txt": "Kitty litter"
+},
+{
+"at": 596.11,
+"txt": "Cotton balls · floss"
+}
+],
+"canAt": 607.23
+},
+{
+"k": "days",
+"at": 677.3,
+"out": 689.55,
+"part": 1,
+"rows": [
+{
+"at": 681.91,
+"d": "TUE",
+"txt": "The main splits"
+},
+{
+"at": 683.67,
+"d": "WED",
+"txt": "Faucet quits"
+}
+]
+},
+{
+"k": "days",
+"at": 692.5,
+"out": 703.15,
+"part": 2,
+"rows": [
+{
+"at": 700.59,
+"d": "WED",
+"txt": "Buckets"
+},
+{
+"at": 707.52,
+"d": "THU",
+"txt": "Sewer backs up → the bag"
+}
+]
+},
+{
+"k": "neighbor",
+"at": 757.2,
+"out": 767.15,
+"theirsAt": 760.12
+},
+{
+"k": "freezemap",
+"at": 772.3,
+"out": 779.05,
+"pins": [
+{
+"at": 774.32,
+"txt": "Outside wall"
+},
+{
+"at": 775.96,
+"txt": "Crawl space"
+},
+{
+"at": 777.1,
+"txt": "Under the kitchen sink"
+}
+]
+},
+{
+"k": "renter",
+"at": 824.5,
+"out": 838.45,
+"textAt": 819.28,
+"noDmgAt": 824.58
+},
+{
+"k": "bill",
+"at": 842.4,
+"out": 853.751,
+"rows": [
+{
+"at": 842.58,
+"item": "Tuesday visit",
+"v": "$150–200"
+},
+{
+"at": 847.16,
+"item": "Sunday, in a storm",
+"v": "× 2"
+},
+{
+"at": 854.92,
+"item": "Holiday · after hours",
+"v": "$300–600"
+}
+]
+},
+{
+"k": "notpipes",
+"at": 857.6,
+"out": 872.65,
+"atTxt": 864.12,
+"fixAt": 870.18
+},
+{
+"k": "comeback",
+"at": 895.0,
+"out": 905.85,
+"hi": 1
+},
+{
+"k": "runclear",
+"at": 927.6,
+"out": 933.75,
+"clearAt": 931.58
+},
+{
+"k": "nutdial",
+"at": 1032.0,
+"out": 1042.15,
+"turnAt": 1037.74
+},
+{
+"k": "airpipe",
+"at": 1078.3,
+"out": 1090.95,
+"bangAt": 1086.07
+},
+{
+"k": "qa",
+"at": 1112.4,
+"out": 1118.95,
+"q": "Can I flush with pool water or salt water?",
+"who": "a viewer"
+},
+{
+"k": "qa",
+"at": 1127.8,
+"out": 1137.25,
+"q": "How long can I use the bag?",
+"who": "a viewer"
+},
+{
+"k": "qa",
+"at": 1146.1,
+"out": 1156.55,
+"q": "Can I pour the bucket in the tank?",
+"who": "a viewer"
+},
+{
+"k": "shelf",
+"at": 1180.4,
+"out": 1190.25,
+"rows": [
+{
+"at": 1181.13,
+"txt": "2 boxes of 3-mil contractor bags"
+},
+{
+"at": 1181.13,
+"txt": "2 rolls of painter's tape"
+},
+{
+"at": 1183.79,
+"txt": "Kitty litter, the cheap clay one"
+},
+{
+"at": 1186.91,
+"txt": "5-gallon bucket with a lid"
+},
+{
+"at": 1189.15,
+"txt": "Rubber gloves"
+}
+]
+},
+{
+"k": "comment",
+"at": 1199.1,
+"out": 1205.85,
+"q": "By the time I finish taping that bag, it's going to be too late."
+},
+{
+"k": "nightline",
+"at": 1210.4,
+"out": 1222.95,
+"coldAt": 1212.05,
+"nightAt": 1217.81,
+"baAt": 1220.91,
+"downAt": 1300
+},
+{
+"k": "books",
+"at": 1226.4,
+"out": 1239.25,
+"setAt": 1230.19
+},
+{
+"k": "pages",
+"at": 1243.4,
+"out": 1253.95,
+"imgs": [
+"g_freeze",
+"g_thaw"
+],
+"tags": [
+"Where a Chicago house freezes first",
+"Thaw it with a hair dryer, never a flame"
+],
+"tAt": [
+1244.19,
+1250.19
+]
+},
+{
+"k": "pages",
+"at": 1258.5,
+"out": 1270.55,
+"imgs": [
+"g_burst",
+"g_knob",
+"g_fill"
+],
+"tags": [
+"Burst pipe: the first 10 minutes",
+"The valve that drips at the knob",
+"Clean the fill valve, don't replace it"
+],
+"tAt": [
+1252.93,
+1264.27,
+1267.63
+]
+},
+{
+"k": "pages",
+"at": 1274.1,
+"out": 1286.15,
+"imgs": [
+"g_price",
+"g_morning"
+],
+"tags": [
+"The fair price for each job",
+"When to wait for the morning"
+],
+"tAt": [
+1274.39,
+1279.33
+]
+},
+{
+"k": "recap",
+"at": 1291.6,
+"out": 1302.95,
+"part": 1
+},
+{
+"k": "recap",
+"at": 1306.6,
+"out": 1320.35,
+"part": 2
+},
+{
+"k": "recap",
+"at": 1325.8,
+"out": 1336.95,
+"part": 3
+},
+{
+"k": "recap",
+"at": 1340.6,
+"out": 1353.95,
+"part": 4
+},
+{
+"k": "recap",
+"at": 1358.4,
+"out": 1371.05,
+"part": 5
+},
+{
+"k": "sunday",
+"at": 1375.6,
+"out": 1387.25,
+"strikeAt": 1381.27
+},
+{
+"k": "ask",
+"at": 1390.4,
+"out": 1407.35,
+"q": [
+"Has your water ever gone off",
+"in the winter —",
+"how long did it last?"
+]
+}
+]
