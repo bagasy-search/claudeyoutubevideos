@@ -97,6 +97,15 @@ export const Avatar: React.FC<{ t: number }> = ({ t }) => {
 };
 
 // ---------- ESCENARIO de cada componente: el plano del momento hundido en sombra tibia, piso de vidrio, halo de sol ----------
+// CÁMARA de cada componente: mesa vista desde arriba que gira despacio en curva (nunca lineal) y se acerca;
+// sentido y ángulos sorteados por componente. Un solo transform con perspective() (preserve-3d parpadea en el farm).
+export const camOf = (t: number, a: number, b: number): React.CSSProperties => {
+  const n = Math.round(a * 100), d = Math.max(1, b - a), u = Math.min(1, Math.max(0, (t - a) / d));
+  const k = 0.5 - 0.5 * Math.cos(Math.PI * u), dir = hash(n, 21) < 0.5 ? -1 : 1;
+  const ry = dir * (5 + 3 * hash(n, 22)) * (2 * k - 1), rx = 7 + 3 * hash(n, 23) - 4 * Math.sin(Math.PI * u);
+  const z = 1.0 + 0.06 * k + 0.05 * (1 - e(t, a, a + 0.9)) * -1;
+  return { transform: `perspective(2200px) rotateX(${rx.toFixed(3)}deg) rotateY(${ry.toFixed(3)}deg) scale(${z.toFixed(4)})`, transformOrigin: "50% 60%" };
+};
 export const BgCtx = React.createContext<string | undefined>(undefined);
 export const Stage: React.FC<{ t: number; a: number; b: number; heat?: number; children?: React.ReactNode }> = ({ t, a, b, heat = 0, children }) => {
   const bg = React.useContext(BgCtx);
@@ -110,7 +119,9 @@ export const Stage: React.FC<{ t: number; a: number; b: number; heat?: number; c
       <AbsoluteFill style={{ background: `radial-gradient(70% 60% at 50% 46%, ${halo} 0%, rgba(21,17,11,.0) 55%), linear-gradient(180deg, rgba(21,17,11,.25) 0%, rgba(21,17,11,.0) 40%, rgba(21,17,11,.78) 100%)`, opacity: sink }} />
       {/* piso de vidrio: reflejo y línea de horizonte */}
       <div style={{ position: "absolute", left: 0, right: 0, top: 820, height: 2, background: "linear-gradient(90deg, transparent, rgba(255,236,200,.35), transparent)", opacity: sink }} />
-      <AbsoluteFill style={{ opacity: 1 - out, transform: `translateY(${out * 40}px) scale(${1 - 0.04 * out})` }}>{children}</AbsoluteFill>
+      <AbsoluteFill style={{ opacity: 1 - out, transform: `translateY(${out * 40}px) scale(${1 - 0.04 * out})` }}>
+        <AbsoluteFill style={camOf(t, a, b)}>{children}</AbsoluteFill>
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
