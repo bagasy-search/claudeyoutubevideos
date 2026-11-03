@@ -10,6 +10,8 @@ import * as K1 from "./comps1";
 import * as K2 from "./comps2";
 import * as K3 from "./comps3";
 import TL from "./tl.json";
+import FOTOS from "./fotos.json";
+import { Beat, FotoEscena } from "./foto";
 import FXJ from "./fx.json";
 
 type Seg = { a: number; b: number; k: "av" | "fx" | "hilo" | "clip" | "img"; id: string };
@@ -22,6 +24,7 @@ const CTA = (FXJ as unknown as { cta: Fx[] }).cta;
 const COMP = { ...K1, ...K2, ...K3 } as unknown as Record<string, React.FC<{ t: number; a: number; b: number; m: Record<string, number> }>>;
 const CALIDO = new Set(["volcan", "jarro", "interfaz", "rocio", "vaso", "litro"]);
 const TR = 0.28;
+const BEATS = FOTOS as unknown as Record<string, Beat[]>;
 
 const node = (s: Seg, t: number): React.ReactNode => {
   if (s.k === "av") return <Avatar t={Math.min(Math.max(t, s.a), s.b - 0.04)} />;
@@ -31,8 +34,8 @@ const node = (s: Seg, t: number): React.ReactNode => {
   const f = FX[s.id], Comp = COMP[f.c];
   // si la pieza vuelve después de una ventana del avatar, sigue donde iba (es f(t)); la escena se arma en su primer tramo
   return (
-    <BgCtx.Provider value={T.bg[s.id]}>
-      <Stage t={t} a={s.a} b={s.b} heat={CALIDO.has(s.id) ? 1 : 0}>{Comp ? <Comp t={t} a={f.a} b={f.b} m={f.m} /> : null}</Stage>
+    <BgCtx.Provider value={BEATS[s.id] ? BEATS[s.id][0].id : T.bg[s.id]}>
+      <Stage t={t} a={s.a} b={s.b} heat={CALIDO.has(s.id) ? 1 : 0}>{BEATS[s.id] ? <FotoEscena t={t} a={f.a} b={f.b} m={f.m} beats={BEATS[s.id]} Comp={Comp} /> : Comp ? <Comp t={t} a={f.a} b={f.b} m={f.m} /> : null}</Stage>
     </BgCtx.Provider>
   );
 };

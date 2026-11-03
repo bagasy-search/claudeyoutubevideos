@@ -67,7 +67,7 @@ export const Hilo: React.FC<{ t: number; a: number; b: number; m: Record<string,
   const lado = mode === "gemelos" ? null : mode === "recap" ? "rc" : "der";
   return (
     <AbsoluteFill style={{ background: `radial-gradient(85% 70% at 50% 40%, #33302b 0%, ${C.night} 72%)` }}>
-      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, overflow: "visible" }}>
+      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, overflow: "visible", transformOrigin: "50% 55%", transform: `translate(${24 * Math.sin(u * 0.41) + 14 * Math.sin(u * 0.23 + 2)}px,${14 * Math.sin(u * 0.33 + 1)}px) scale(${1.035 + 0.035 * Math.sin(u * 0.27 + 0.5)})` }}>
         <Bloque t={t} cam={c} st={st} id={1} />
         {extra}
       </svg>

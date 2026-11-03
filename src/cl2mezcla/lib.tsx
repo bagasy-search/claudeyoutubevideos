@@ -29,5 +29,5 @@ export const hash = (n: number, salt = 0) => {
 export const idn = (id: string) => { let h = 7; for (let i = 0; i < id.length; i++) h = Math.imul(h ^ id.charCodeAt(i), 16777619); return h >>> 0; };
 // paleta del video: el patio de obra. Gris del cemento (fresco más oscuro, fraguado más claro), arena, ladrillo, agua; el
 // error es rojo, lo que está bien es verde
-export const C = { ink: "#fbf6ec", dim: "rgba(251,246,236,.74)", cem: "#bdb8ae", cem2: "#86817a", cemf: "#6f6b65", sand: "#d9b97a", sand2: "#a8854a", brick: "#c4683f", brick2: "#8e4426", water: "#7cc8ff", iron: "#7a7d82", rust: "#b5532a", wood: "#9a6233", cream: "#f2e3bf", ok: "#a9e66c", sun: "#ffd27a", red: "#ff5546", honey: "#f0a93a", night: "#0f0e0c", glue: "#f4f1e6", edge: "rgba(230,240,255,.55)" };
+export const C = { ink: "#fbf6ec", dim: "rgba(251,246,236,.74)", cem: "#bdb8ae", cem2: "#86817a", cemf: "#6f6b65", sand: "#d9b97a", sand2: "#a8854a", brick: "#c4683f", brick2: "#8e4426", water: "#7cc8ff", iron: "#7a7d82", rust: "#b5532a", wood: "#9a6233", cream: "#f2e3bf", ok: "#a9e66c", sun: "#ffd27a", red: "#ff5546", honey: "#f0a93a", night: "#0f0e0c", glue: "#f4f1e6", edge: "rgba(230,240,255,.55)", solv: "#8fd3ff" };
 export const shadowTxt = "0 3px 0 rgba(0,0,0,.35), 0 10px 28px rgba(0,0,0,.55)";
