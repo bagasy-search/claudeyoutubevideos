@@ -213,7 +213,7 @@ const Days: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h}>{(t
         <div style={{ fontWeight: 900, fontSize: 64, marginTop: 40, color: hl ? C.tur2 : C.dim }}>{d}</div>
         {r && <div style={{ fontWeight: 800, fontSize: 36, padding: "40px 22px", opacity: hl, transform: `translateY(${(1 - hl) * 20}px)` }}>{r.txt}</div>}
       </div>; })}
-    {h.part === 2 && <div style={{ position: "absolute", left: 210 + 4 * 310, top: 760, width: 270, textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 48, color: C.tape, opacity: cl((tt - 6) * 1.5) }}>water back</div>}
+    {h.part === 2 && h.wb && <div style={{ position: "absolute", left: 210 + 4 * 310, top: 760, width: 270, textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 48, color: C.tape, opacity: cl((tt - 6) * 1.5) }}>water back</div>}
   </>; }}</Stage>;
 
 // 10 · ¿el vecino también? → la calle, esperá
