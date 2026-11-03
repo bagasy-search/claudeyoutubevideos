@@ -68,7 +68,7 @@ export const Hilo: React.FC<{ t: number; a: number; b: number; m: Record<string,
     lbl = [["telgopor: lechosa", a + 0.5, C.milk], ["cubiertos: cristal", a + 1.6, C.ok]];
   } else if (mode === "recap") {
     c = cam(-30 + u * 4, 14, 320, 760, 820);
-    st = { nivel: 0.7, visc: 0.66, milk: 0, tapa: 1, reflejo: 0.6 };
+    st = { nivel: 0.7, visc: 0.66, milk: 0, tapa: 1, reflejo: 0.6, burb: 0.5 };
   } else { // relleno: el frasco gira despacio con lo que ya tiene adentro
     c = cam(-24 + 26 * Math.sin(t * 0.04), 14 + 4 * Math.sin(t * 0.07), 300 + 12 * Math.sin(t * 0.03), 960, 820);
   }
@@ -76,7 +76,7 @@ export const Hilo: React.FC<{ t: number; a: number; b: number; m: Record<string,
   return (
     <AbsoluteFill style={{ background: `radial-gradient(85% 70% at 50% 40%, #3b2a16 0%, ${C.night} 72%)` }}>
       {fondo}
-      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, overflow: "visible" }}>
+      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, overflow: "visible", transformOrigin: "50% 55%", transform: `translate(${24 * Math.sin(u * 0.41) + 14 * Math.sin(u * 0.23 + 2)}px,${14 * Math.sin(u * 0.33 + 1)}px) scale(${1.035 + 0.035 * Math.sin(u * 0.27 + 0.5)})` }}>
         <Frasco t={t} cam={c} st={st} id={1} />
         {otro}
       </svg>
