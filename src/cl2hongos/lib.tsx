@@ -28,5 +28,5 @@ export const hash = (n: number, salt = 0) => {
 };
 export const idn = (id: string) => { let h = 7; for (let i = 0; i < id.length; i++) h = Math.imul(h ^ id.charCodeAt(i), 16777619); return h >>> 0; };
 // paleta del video: el patio a la tarde. Gris cemento, rojo de sombrero, crema de tallo, verde de helecho; el error es naranja-rojo
-export const C = { ink: "#fbf6ec", dim: "rgba(251,246,236,.74)", cem: "#cfcac0", cem2: "#8d887e", cap: "#d8352a", cream: "#f2e3bf", moss: "#a9d46c", ok: "#a9e66c", sun: "#ffc35a", water: "#7cc8ff", soil: "#5b3c24", red: "#ff5546", glass: "rgba(255,240,214,.09)", edge: "rgba(255,238,205,.55)", night: "#15110b" };
+export const C = { ink: "#fbf6ec", dim: "rgba(251,246,236,.74)", cem: "#cfcac0", cem2: "#8d887e", cap: "#d8352a", cream: "#f2e3bf", moss: "#a9d46c", ok: "#a9e66c", sun: "#ffc35a", water: "#7cc8ff", soil: "#5b3c24", red: "#ff5546", glass: "rgba(255,240,214,.09)", edge: "rgba(255,238,205,.55)", night: "#15110b", solv: "#8fd3ff", honey: "#ff9a3c" };
 export const shadowTxt = "0 3px 0 rgba(0,0,0,.35), 0 10px 28px rgba(0,0,0,.55)";
