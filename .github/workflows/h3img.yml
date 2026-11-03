@@ -1,0 +1,25 @@
+# Imagen MiniMax H3 horneada (3-nov-2026) -> ghcr.io/bagasy-search/h3-comfy:<variant>. Repo publico = Actions gratis; GHCR con GITHUB_TOKEN.
+name: h3img
+permissions: { contents: read, packages: write }
+on: { push: { branches: ["h3img-*"] } }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy: { fail-fast: false, matrix: { variant: [ref, full] } }
+    steps:
+      - uses: actions/checkout@v4
+        with: { sparse-checkout: h3img }
+      - name: liberar disco
+        run: |
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/lib/android /opt/hostedtoolcache /usr/local/share/boost /usr/local/lib/node_modules /usr/share/swift || true
+          sudo docker image prune -af || true
+          df -h /
+      - uses: docker/login-action@v3
+        with: { registry: ghcr.io, username: "${{ github.actor }}", password: "${{ github.token }}" }
+      - name: build y push
+        run: |
+          docker build -f h3img/Dockerfile --build-arg VARIANT=${{ matrix.variant }} --label org.opencontainers.image.source=https://github.com/${{ github.repository }} -t ghcr.io/bagasy-search/h3-comfy:${{ matrix.variant }} .
+          df -h /
+          docker push ghcr.io/bagasy-search/h3-comfy:${{ matrix.variant }}
+          docker image inspect ghcr.io/bagasy-search/h3-comfy:${{ matrix.variant }} --format '{{.Size}}'
