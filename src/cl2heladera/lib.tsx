@@ -28,5 +28,5 @@ export const hash = (n: number, salt = 0) => {
 };
 export const idn = (id: string) => { let h = 7; for (let i = 0; i < id.length; i++) h = Math.imul(h ^ id.charCodeAt(i), 16777619); return h >>> 0; };
 // paleta del video: el frío es luz azul, el calor es luz naranja, la falla es un punto rojo
-export const C = { ink: "#f3f6f8", dim: "rgba(243,246,248,.72)", ice: "#7fd3ff", ice2: "#d6f1ff", heat: "#ff9a3c", heat2: "#ffd2a1", red: "#ff4b3e", ok: "#7dff9b", glass: "rgba(200,232,255,.10)", edge: "rgba(210,238,255,.55)", night: "#06101a" };
+export const C = { ink: "#f3f6f8", dim: "rgba(243,246,248,.72)", ice: "#7fd3ff", ice2: "#d6f1ff", heat: "#ff9a3c", heat2: "#ffd2a1", red: "#ff4b3e", ok: "#7dff9b", glass: "rgba(200,232,255,.10)", edge: "rgba(210,238,255,.55)", night: "#06101a", sun: "#ffd27a", solv: "#8fd3ff", honey: "#ff9a3c" };
 export const shadowTxt = "0 3px 0 rgba(0,0,0,.35), 0 10px 28px rgba(0,0,0,.55)";
