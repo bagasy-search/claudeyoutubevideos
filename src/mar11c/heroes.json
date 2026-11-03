@@ -1,0 +1,96 @@
+[
+{
+"k": "cta1",
+"at": 117.1,
+"out": 126.6,
+"page": "p57.png",
+"under": "p56.png",
+"bg": "n_unidad_vieja"
+},
+{
+"k": "knolling",
+"at": 136.54,
+"out": 144.04,
+"bg": "f_kit_herramientas"
+},
+{
+"k": "birthdaycake",
+"at": 201.84,
+"out": 208.84,
+"bg": "f_whitfield"
+},
+{
+"k": "finfold",
+"at": 262.52,
+"out": 269.52,
+"bg": "n_aletas_dobladas"
+},
+{
+"k": "icejack",
+"at": 316.94,
+"out": 323.94,
+"bg": "n_hielo_esquina"
+},
+{
+"k": "biscuit",
+"at": 409.16,
+"out": 416.16,
+"bg": "n_capacitor_bueno"
+},
+{
+"k": "snowball",
+"at": 457.58,
+"out": 464.58,
+"bg": "n_capacitor_hinchado"
+},
+{
+"k": "ceilingburst",
+"at": 526.9,
+"out": 533.9,
+"bg": "f_locust_grove"
+},
+{
+"k": "baitline",
+"at": 768.74,
+"out": 775.74,
+"bg": "f_pincel_hormigas"
+},
+{
+"k": "cta2",
+"at": 816.88,
+"out": 826.38,
+"page": "p58.png",
+"under": "p59.png",
+"bg": "n_unidad_vieja"
+},
+{
+"k": "rubberband",
+"at": 932.42,
+"out": 939.42,
+"bg": "f_earl_cuadernos"
+},
+{
+"k": "thirdsbar",
+"at": 963.78,
+"out": 971.28,
+"bg": "f_cuaderno_escribe"
+},
+{
+"k": "lastcan",
+"at": 986.56,
+"out": 993.56,
+"bg": "n_aletas_limpias"
+},
+{
+"k": "nobeach",
+"at": 1063.06,
+"out": 1069.56,
+"bg": "n_vapor"
+},
+{
+"k": "museum",
+"at": 1280.86,
+"out": 1287.86,
+"bg": "f_whitfield_museo"
+}
+]
