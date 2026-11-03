@@ -29,6 +29,8 @@ const C3: Record<string, C> = {
 };
 // una parada por caja (de frente, un poco arriba) y una cenital (la tapa con la tiza)
 XS.forEach((x, i) => { const s = SZ[i]; C3["b" + i] = { p: [x + 0.12, TOP + s[1] + 0.2, 0.62], l: [x, TOP + s[1] * 0.55, 0], fov: 32 }; C3["lid" + i] = { p: [x + 0.02, TOP + s[1] + 0.55, 0.32], l: [x, TOP + s[1], 0], fov: 34 }; });
+// b8: en el farm (GL por software) esa vista daba un rectángulo negro intermitente (NaN del bloom) → otra vista de la misma caja
+{ const s8 = SZ[8], x8 = XS[8]; C3.b8 = { p: [x8 - 0.18, TOP + s8[1] + 0.32, 0.78], l: [x8 + 0.02, TOP + s8[1] * 0.5, 0], fov: 30 }; }
 export const camAt = mkCamAt(C3);
 export const camSpeed = mkCamSpeed(camAt);
 

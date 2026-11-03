@@ -17,8 +17,8 @@ const Leaf: React.FC<{ ang: number; front?: THREE.Texture | null; back?: THREE.T
   const bend = Math.sin(ang) * 0.05;
   return <group rotation={[0, 0, ang]}>
     <group position={[BW / 2 - 0.004, bend * 0.4, 0]} rotation={[0, 0, -bend]}>
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.0004, 0]}><planeGeometry args={[BW - 0.01, BD - 0.008]} /><meshStandardMaterial map={front ?? null} color={PAPER} roughness={0.9} /></mesh>
-      <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, -0.0004, 0]}><planeGeometry args={[BW - 0.01, BD - 0.008]} /><meshStandardMaterial map={back ?? null} color={PAPER} roughness={0.9} /></mesh>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.0004, 0]}><planeGeometry args={[BW - 0.01, BD - 0.008]} /><meshStandardMaterial key={front ? "t" : "n"} map={front ?? null} color={PAPER} roughness={0.9} /></mesh>
+      <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, -0.0004, 0]}><planeGeometry args={[BW - 0.01, BD - 0.008]} /><meshStandardMaterial key={back ? "t" : "n"} map={back ?? null} color={PAPER} roughness={0.9} /></mesh>
     </group>
   </group>;
 };
@@ -33,14 +33,14 @@ export const Manual: React.FC<{ open: number; flip: number; cover?: THREE.Textur
     {/* espiral del lomo: anillos de alambre */}
     {Array.from({ length: 22 }, (_, i) => <mesh key={i} position={[-BW / 2 + 0.002, 0.006 + TH / 2, -BD / 2 + 0.012 + i * (BD - 0.024) / 21]} rotation={[0, 0, 0]}><torusGeometry args={[TH * 0.62, 0.0012, 6, 20]} />{M.steel()}</mesh>)}
     {/* la página derecha (la REAL) */}
-    <mesh position={[0.003, 0.0045 + TH, 0]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[BW - 0.012, BD - 0.012]} /><meshStandardMaterial map={page ?? null} color={page ? "#ffffff" : PAPER} roughness={0.88} /></mesh>
+    <mesh position={[0.003, 0.0045 + TH, 0]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[BW - 0.012, BD - 0.012]} /><meshStandardMaterial key={page ? "t" : "n"} map={page ?? null} color={page ? "#ffffff" : PAPER} roughness={0.88} /></mesh>
     {/* la hoja que pasa encima de la real */}
     {flip > 0.002 && flip < 0.998 && <group position={[-BW / 2 + 0.004, 0.0052 + TH, 0]}><Leaf ang={Math.PI * eio(flip, 0, 1)} front={under} back={null} /></group>}
     {/* tapa con bisagra en el lomo */}
     <group position={[-BW / 2 + 0.002, 0.006 + TH + 0.002, 0]} rotation={[0, 0, ang]}>
       <group position={[BW / 2 + 0.003, 0, 0]}>
         <RBox s={[BW + 0.008, 0.003, BD + 0.008]} r={0.0012}>{M.matte({ col: "#13243f" })}</RBox>
-        <mesh position={[0, 0.0017, 0]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[BW + 0.004, BD + 0.004]} /><meshPhysicalMaterial map={cover ?? null} roughness={0.32} clearcoat={0.5} clearcoatRoughness={0.25} /></mesh>
+        <mesh position={[0, 0.0017, 0]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[BW + 0.004, BD + 0.004]} /><meshPhysicalMaterial key={cover ? "t" : "n"} map={cover ?? null} roughness={0.32} clearcoat={0.5} clearcoatRoughness={0.25} /></mesh>
         <mesh position={[0, -0.0017, 0]} rotation={[Math.PI / 2, 0, 0]}><planeGeometry args={[BW - 0.004, BD - 0.004]} /><meshStandardMaterial color="#1b2a44" roughness={0.6} /></mesh>
         <group position={[0, -0.0024, 0]} rotation={[0, Math.PI, 0]}><group rotation={[Math.PI / 2, 0, 0]}>
           <Txt3 txt="THE WINTER" w={0.24} h={0.05} col="#e8c46a" weight={900} p={[0, 0.07, 0]} />
@@ -58,7 +58,7 @@ const QRCard: React.FC<{ qr?: THREE.Texture | null; k: number; sw?: number }> = 
   {/* sombra de contacto corrida, para que la tarjeta se despegue del banco */}
   <mesh position={[0.008, -0.03, -0.0005]}><planeGeometry args={[0.24, 0.36]} /><meshBasicMaterial color="#000" transparent opacity={0.4} depthWrite={false} /></mesh>
   <mesh position={[0, -0.022, 0.0015]} castShadow><boxGeometry args={[0.22, 0.35, 0.002]} /><meshStandardMaterial color="#f6efdc" roughness={0.85} /></mesh>
-  <mesh position={[0, 0.06, 0.0027]}><planeGeometry args={[0.175, 0.175]} /><meshBasicMaterial map={qr ?? null} toneMapped={false} /></mesh>
+  <mesh position={[0, 0.06, 0.0027]}><planeGeometry args={[0.175, 0.175]} /><meshBasicMaterial key={qr ? "t" : "n"} map={qr ?? null} toneMapped={false} /></mesh>
   <Txt3 txt="THE LINK IS IN THE FIRST" w={0.2} h={0.042} col="#1b2a44" weight={900} p={[-0.012, -0.066, 0.003]} />
   <Txt3 txt="LINE OF THE DESCRIPTION" w={0.2} h={0.042} col="#1b2a44" weight={900} p={[-0.012, -0.112, 0.003]} />
   {/* flecha-gancho a mano, en tinta roja, que baja hacia la descripción */}
