@@ -349,8 +349,8 @@ export const MRakegust: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={
   return <S3 zk={1.15} p={[0.9, 1.5, 2.3]} l={[0, 0.4, 0]} fov={38} floor={null}>
     <FrostGround /><BrickWall w={7} h={3} z={-1.6} />
     <HPU s={1.3} fan={10 * D * cum((x) => win(x, 0.6, 0.8), u)} />
-    <Env>{Array.from({ length: 260 }, (_, i) => { const a0 = rnd(i) * Math.PI * 2, r0 = 0.45 + rnd(i, 2) * 0.45, gi = cl((g - (a0 / (Math.PI * 2)) * 0.5) / 0.5), a = a0 + gi * 2.4, r = r0 + gi * (1.3 + rnd(i, 4)), y = 0.02 + rnd(i, 5) * 0.25 * (1 - gi) + Math.sin(gi * Math.PI) * 0.6;
-      return <Leaf key={i} p={[Math.cos(a) * r, y, Math.sin(a) * r]} r={[-Math.PI / 2 + (rnd(i, 6) - 0.5) * 0.8 + gi * 8, rnd(i, 7) * 6, gi * 6]} s={1.9} c={LEAFC[i % 5]} />; })}</Env>
+    <Env>{Array.from({ length: 130 }, (_, i) => { const a0 = rnd(i) * Math.PI * 2, r0 = 0.45 + rnd(i, 2) * 0.45, gi = cl((g - (a0 / (Math.PI * 2)) * 0.5) / 0.5), a = a0 + gi * 2.4, r = r0 + gi * (1.3 + rnd(i, 4)), y = 0.02 + rnd(i, 5) * 0.25 * (1 - gi) + Math.sin(gi * Math.PI) * 0.6;
+      return <Leaf key={i} p={[Math.cos(a) * r, y, Math.sin(a) * r]} r={[-Math.PI / 2 + (rnd(i, 6) - 0.5) * 0.8 + gi * 8, rnd(i, 7) * 6, gi * 6]} s={2.4} c={LEAFC[i % 5]} />; })}</Env>
     {rope > 0.01 && <Tube pts={rp} rad={0.045} c="#ff7a1e" ro={0.7} seg={120} />}
     {rope > 0.6 && <group position={[0.3 + 0.35 * win(rope, 0.6, 1), 0.014, 0.66]} rotation={[-Math.PI / 2, 0, -0.65]}><Bx s={[0.7 * win(rope, 0.6, 1), 0.1, 0.012]} c="#e9c56a" ro={0.6} /><Pl w={0.7 * win(rope, 0.6, 1)} h={0.095} p={[0, 0, 0.007]} map={rulerTex2()} c="#ffffff" ro={0.6} ns /></group>}
   </S3>;

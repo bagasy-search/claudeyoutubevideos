@@ -90,10 +90,10 @@ export const MLeafstorm: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t=
   return <S3 zk={1.3} p={lv([1.65, 1.66, 2.75], [1.155, 1.33, 2.145], win(u, 0, 1))} l={[0, 0.45, 0]} fov={38} floor={null}>
     <FrostGround /><BrickWall w={6} h={2.6} z={-0.75} />
     <HPU s={1.4} fan={fan} frost={pile * 0.95} />
-    {sides.map(([x, z], si) => Array.from({ length: 80 }, (_, i) => { const j = si * 80 + i, f0 = (i / 80) * 0.7, ft = win(pile, f0, f0 + 0.22), ph = (i / 80) * 0.75 * pile;
+    {sides.map(([x, z], si) => Array.from({ length: 44 }, (_, i) => { const j = si * 44 + i, f0 = (i / 44) * 0.7, ft = win(pile, f0, f0 + 0.22), ph = (i / 44) * 0.75 * pile;
       const tx = x !== 0 ? x + Math.sign(x) * (rnd(j) - 0.15) * 0.32 : (rnd(j) - 0.5) * 0.95, tz = z !== 0 ? z + (rnd(j, 2) - 0.15) * 0.32 : (rnd(j, 2) - 0.5) * 0.95;
       const sx = lerp(tx + 1.6, tx, ft), sz = lerp(tz + 1.4, tz, ft);
-      return ft > 0 ? <Leaf key={j} p={[sx, 0.03 + ph * (1 - Math.abs(rnd(j, 5) - 0.5)) + Math.sin(ft * Math.PI) * 0.25, sz]} r={[-Math.PI / 2 + (rnd(j, 3) - 0.5) * 1.6 * (1 - ft) + (rnd(j, 3) - 0.5) * 0.8, rnd(j, 4) * 6, (rnd(j, 6) - 0.5) * 1.2]} s={2.2} c={LEAFC[j % 5]} /> : null; }))}
+      return ft > 0 ? <Leaf key={j} p={[sx, 0.03 + ph * (1 - Math.abs(rnd(j, 5) - 0.5)) + Math.sin(ft * Math.PI) * 0.25, sz]} r={[-Math.PI / 2 + (rnd(j, 3) - 0.5) * 1.6 * (1 - ft) + (rnd(j, 3) - 0.5) * 0.8, rnd(j, 4) * 6, (rnd(j, 6) - 0.5) * 1.2]} s={2.7} c={LEAFC[j % 5]} /> : null; }))}
     <Rake p={[lerp(2.0, 0.95, rk), 0, lerp(1.6, 0.85, rk)]} r={[0.35 * Math.sin(tt * 3.2), 0.8, 0.55]} />
   </S3>;
 }}</Stage>;
