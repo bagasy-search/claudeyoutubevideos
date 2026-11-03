@@ -11,6 +11,9 @@ import * as K2 from "./comps2";
 import * as K3 from "./comps3";
 import TL from "./tl.json";
 import FXJ from "./fx.json";
+import FOTOS from "./fotos.json";
+import { Beat, FotoEscena } from "./foto";
+const BEATS = FOTOS as unknown as Record<string, Beat[]>;
 
 type Seg = { a: number; b: number; k: "av" | "fx" | "hilo" | "clip" | "img"; id: string };
 type Fx = { id: string; c: string; a: number; b: number; m: Record<string, number>; k: string };
@@ -31,8 +34,8 @@ const node = (s: Seg, t: number): React.ReactNode => {
   const f = FX[s.id], Comp = COMP[f.c];
   // si la pieza vuelve después de una ventana del avatar, sigue donde iba (es f(t)); la escena se arma en su primer tramo
   return (
-    <BgCtx.Provider value={T.bg[s.id]}>
-      <Stage t={t} a={s.a} b={s.b} heat={CALIDO.has(s.id) ? 1 : 0}>{Comp ? <Comp t={t} a={f.a} b={f.b} m={f.m} /> : null}</Stage>
+    <BgCtx.Provider value={BEATS[s.id] ? BEATS[s.id][0].id : T.bg[s.id]}>
+      <Stage t={t} a={s.a} b={s.b} heat={CALIDO.has(s.id) ? 1 : 0}>{BEATS[s.id] ? <FotoEscena t={t} a={f.a} b={f.b} m={f.m} beats={BEATS[s.id]} Comp={Comp} /> : Comp ? <Comp t={t} a={f.a} b={f.b} m={f.m} /> : null}</Stage>
     </BgCtx.Provider>
   );
 };
