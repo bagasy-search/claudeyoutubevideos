@@ -1,0 +1,126 @@
+[
+{
+"k": "pegboard",
+"at": 66.36,
+"out": 74.36,
+"bg": "f_billete_sensor"
+},
+{
+"k": "cta1",
+"at": 99.66,
+"out": 109.16,
+"page": "p16.png",
+"under": "p15.png",
+"bg": "f_presenta_sotano"
+},
+{
+"k": "crawlduct",
+"at": 164.86,
+"out": 172.36,
+"bg": "n_sotano_horno"
+},
+{
+"k": "poundcake",
+"at": 228.06,
+"out": 234.56,
+"bg": "f_termostato_fan"
+},
+{
+"k": "chartpen",
+"at": 296.8,
+"out": 304.3,
+"bg": "n_rejilla_piso"
+},
+{
+"k": "tornquote",
+"at": 326.72,
+"out": 334.72,
+"bg": "n_filtro_sucio"
+},
+{
+"k": "filterwall",
+"at": 380.88,
+"out": 387.88,
+"bg": "n_slot_filtro"
+},
+{
+"k": "flatline",
+"at": 425.56,
+"out": 433.56,
+"bg": "n_quemadores"
+},
+{
+"k": "crustrod",
+"at": 461.48,
+"out": 468.98,
+"bg": "n_sensor_sucio"
+},
+{
+"k": "dollarrub",
+"at": 558.68,
+"out": 566.18,
+"bg": "f_sensor_sacando"
+},
+{
+"k": "telegraph",
+"at": 695.84,
+"out": 703.34,
+"bg": "n_sticker_codigos"
+},
+{
+"k": "cookiesnap",
+"at": 791.46,
+"out": 798.46,
+"bg": "f_igniter_no"
+},
+{
+"k": "cocloud",
+"at": 823.84,
+"out": 830.84,
+"bg": "n_space_heater"
+},
+{
+"k": "cta2",
+"at": 877.9,
+"out": 887.4,
+"page": "p23.png",
+"under": "p22.png",
+"bg": "f_presenta_sotano"
+},
+{
+"k": "floorpuddle",
+"at": 992.19,
+"out": 999.19,
+"bg": "f_shopvac"
+},
+{
+"k": "partbox",
+"at": 1063.58,
+"out": 1070.58,
+"bg": "n_igniter"
+},
+{
+"k": "twoflames",
+"at": 1111.74,
+"out": 1119.24,
+"bg": "n_llama_amarilla"
+},
+{
+"k": "stethoscope",
+"at": 1148.15,
+"out": 1155.15,
+"bg": "f_mirilla_cuenta"
+},
+{
+"k": "warmup",
+"at": 1175.51,
+"out": 1183.01,
+"bg": "n_rejilla_piso"
+},
+{
+"k": "keepsake",
+"at": 1277.32,
+"out": 1284.32,
+"bg": "f_hija_reese"
+}
+]

@@ -1,0 +1,844 @@
+{
+"segs": [
+[
+11.0,
+13.95,
+"shot",
+"f_mano_rejilla"
+],
+[
+17.36,
+23.36,
+"shot",
+"n_rejilla_piso"
+],
+[
+23.88,
+29.66,
+"shot",
+"n_sotano_horno"
+],
+[
+34.37,
+40.37,
+"shot",
+"f_telefono_codigo"
+],
+[
+56.64,
+61.17,
+"shot",
+"n_sotano_horno"
+],
+[
+66.26,
+72.26,
+"shot",
+"f_billete_sensor"
+],
+[
+78.58,
+83.58,
+"shot",
+"n_billete_cuadro"
+],
+[
+90.96,
+94.98,
+"shot",
+"f_presenta_sotano"
+],
+[
+124.2,
+126.21,
+"shot",
+"n_valvula_gas"
+],
+[
+132.1,
+138.1,
+"shot",
+"f_valvula_gas"
+],
+[
+145.41,
+147.2,
+"shot",
+"n_termostato_fan"
+],
+[
+147.2,
+151.44,
+"shot",
+"f_termostato_fan"
+],
+[
+151.44,
+158.24,
+"shot",
+"v01_fan_auto"
+],
+[
+162.43,
+168.43,
+"shot",
+"n_sotano_horno"
+],
+[
+172.62,
+179.62,
+"shot",
+"n_ducto_crawl"
+],
+[
+193.34,
+197.98,
+"shot",
+"f_sutton"
+],
+[
+197.98,
+203.98,
+"shot",
+"f_termostato_fan"
+],
+[
+213.56,
+219.56,
+"shot",
+"n_termostato_fan"
+],
+[
+221.24,
+223.25,
+"shot",
+"f_pound_cake"
+],
+[
+227.68,
+233.68,
+"shot",
+"f_termostato_fan"
+],
+[
+243.56,
+248.56,
+"shot",
+"n_filtro_sucio"
+],
+[
+258.97,
+265.97,
+"shot",
+"n_intercambiador"
+],
+[
+275.7,
+281.7,
+"shot",
+"n_limit_switch"
+],
+[
+292.73,
+297.73,
+"shot",
+"n_rejilla_piso"
+],
+[
+309.31,
+316.31,
+"shot",
+"f_monroe"
+],
+[
+317.48,
+320.94,
+"shot",
+"n_filtro_sucio"
+],
+[
+330.98,
+336.98,
+"shot",
+"f_filtro_nuevo"
+],
+[
+345.6,
+349.7,
+"shot",
+"n_slot_filtro"
+],
+[
+349.7,
+357.7,
+"shot",
+"v02_filtro_luz"
+],
+[
+361.89,
+365.38,
+"shot",
+"n_filtro_limpio"
+],
+[
+365.38,
+370.95,
+"shot",
+"f_interruptor"
+],
+[
+376.15,
+382.15,
+"shot",
+"n_slot_filtro"
+],
+[
+386.74,
+388.51,
+"shot",
+"n_limit_switch"
+],
+[
+399.06,
+403.76,
+"shot",
+"n_sensor_sucio"
+],
+[
+408.86,
+414.86,
+"shot",
+"f_escucha_horno"
+],
+[
+416.48,
+419.27,
+"shot",
+"n_quemadores"
+],
+[
+442.16,
+448.16,
+"shot",
+"n_sensor_sucio"
+],
+[
+483.16,
+487.02,
+"shot",
+"f_sensor_sacando"
+],
+[
+509.8,
+517.8,
+"shot",
+"v05_valvula"
+],
+[
+518.6,
+521.25,
+"shot",
+"v06_puerta"
+],
+[
+525.86,
+531.86,
+"shot",
+"n_quemadores"
+],
+[
+544.06,
+550.06,
+"shot",
+"f_sensor_sacando"
+],
+[
+550.94,
+552.94,
+"shot",
+"v03_billete"
+],
+[
+560.72,
+566.72,
+"shot",
+"f_billete_sensor"
+],
+[
+579.1,
+584.1,
+"shot",
+"n_sensor_limpio"
+],
+[
+584.98,
+586.72,
+"shot",
+"n_sensor_limpio"
+],
+[
+599.94,
+605.94,
+"shot",
+"f_quemadores_azul"
+],
+[
+611.86,
+618.86,
+"shot",
+"f_reese"
+],
+[
+620.5,
+622.92,
+"shot",
+"f_estufa_no"
+],
+[
+627.58,
+633.58,
+"shot",
+"f_billete_sensor"
+],
+[
+643.92,
+645.76,
+"shot",
+"f_reese_cuadro"
+],
+[
+645.76,
+650.76,
+"shot",
+"n_sensor_limpio"
+],
+[
+669.18,
+671.6,
+"shot",
+"f_mirilla_cuenta"
+],
+[
+677.55,
+683.55,
+"shot",
+"n_mirilla_led"
+],
+[
+695.7,
+701.7,
+"shot",
+"n_sticker_codigos"
+],
+[
+712.88,
+720.88,
+"shot",
+"v04_cuenta"
+],
+[
+731.76,
+737.76,
+"shot",
+"f_telefono_codigo"
+],
+[
+745.84,
+750.84,
+"shot",
+"f_interruptor"
+],
+[
+763.92,
+767.1,
+"shot",
+"n_breaker"
+],
+[
+767.1,
+769.4,
+"shot",
+"f_breaker"
+],
+[
+775.78,
+780.78,
+"shot",
+"n_igniter"
+],
+[
+791.09,
+794.08,
+"shot",
+"f_igniter_no"
+],
+[
+794.08,
+799.08,
+"shot",
+"n_door_switch"
+],
+[
+807.32,
+810.98,
+"shot",
+"f_cinta_puerta"
+],
+[
+810.98,
+815.98,
+"shot",
+"f_estufa_no"
+],
+[
+823.56,
+829.02,
+"shot",
+"n_space_heater"
+],
+[
+829.02,
+835.02,
+"shot",
+"f_co_alarma"
+],
+[
+841.07,
+846.07,
+"shot",
+"n_co_alarma"
+],
+[
+866.1,
+871.1,
+"shot",
+"f_presenta_sotano"
+],
+[
+893.36,
+897.94,
+"shot",
+"n_pvc_tubos"
+],
+[
+897.94,
+903.39,
+"shot",
+"f_pvc_horno"
+],
+[
+912.12,
+917.12,
+"shot",
+"n_pvc_tubos"
+],
+[
+928.5,
+934.5,
+"shot",
+"n_trampa_slime"
+],
+[
+941.9,
+946.56,
+"shot",
+"f_iglesia_forsyth"
+],
+[
+946.56,
+952.56,
+"shot",
+"n_trampa_slime"
+],
+[
+958.74,
+964.44,
+"shot",
+"n_salon_iglesia"
+],
+[
+964.44,
+970.44,
+"shot",
+"f_trampa_balde"
+],
+[
+981.53,
+986.07,
+"shot",
+"f_shopvac"
+],
+[
+990.83,
+998.83,
+"shot",
+"v08_vinagre"
+],
+[
+1000.63,
+1004.11,
+"shot",
+"n_igniter"
+],
+[
+1014.5,
+1020.5,
+"shot",
+"n_igniter"
+],
+[
+1032.97,
+1035.11,
+"shot",
+"f_mira_llama"
+],
+[
+1043.65,
+1048.6,
+"shot",
+"n_igniter_roto"
+],
+[
+1048.6,
+1053.6,
+"shot",
+"n_igniter"
+],
+[
+1070.82,
+1076.82,
+"shot",
+"n_pilot"
+],
+[
+1096.82,
+1100.32,
+"shot",
+"v09_llama"
+],
+[
+1100.32,
+1105.32,
+"shot",
+"n_quemadores"
+],
+[
+1105.34,
+1107.45,
+"shot",
+"n_llama_amarilla"
+],
+[
+1126.81,
+1128.54,
+"shot",
+"f_mira_llama"
+],
+[
+1128.54,
+1135.54,
+"shot",
+"f_earl_1984"
+],
+[
+1143.75,
+1149.75,
+"shot",
+"f_mirilla_cuenta"
+],
+[
+1160.73,
+1162.71,
+"shot",
+"f_presenta_sotano"
+],
+[
+1162.71,
+1168.71,
+"shot",
+"n_rejilla_piso"
+],
+[
+1191.28,
+1197.28,
+"shot",
+"f_cuaderno_noche"
+],
+[
+1210.36,
+1214.36,
+"shot",
+"f_mirilla_cuenta"
+],
+[
+1217.41,
+1219.08,
+"shot",
+"v07_marcador"
+],
+[
+1226.76,
+1230.76,
+"shot",
+"f_billete_sensor"
+],
+[
+1240.78,
+1243.39,
+"shot",
+"f_vinagre_trampa"
+],
+[
+1243.39,
+1247.39,
+"shot",
+"n_igniter"
+],
+[
+1257.07,
+1259.76,
+"shot",
+"n_co_alarma"
+],
+[
+1259.76,
+1265.76,
+"shot",
+"f_reese_cuadro"
+],
+[
+1267.62,
+1270.1,
+"shot",
+"f_hija_reese"
+],
+[
+1279.86,
+1281.6,
+"shot",
+"n_billete_cuadro"
+],
+[
+1281.6,
+1286.6,
+"shot",
+"f_presenta_sotano"
+],
+[
+1296.34,
+1302.14,
+"shot",
+"f_mirilla_cuenta"
+],
+[
+1306.86,
+1309.78,
+"shot",
+"v10_despide"
+]
+],
+"ov": [
+{
+"k": "big",
+"txt": "$289",
+"sub": "JUST TO COME OUT",
+"col": "red",
+"at": 37.7,
+"out": 40.7
+},
+{
+"k": "chip",
+"txt": "5 REASONS · 4 COST NOTHING",
+"col": "green",
+"at": 61.56,
+"out": 64.76
+},
+{
+"k": "chip",
+"txt": "SMELL GAS? GET OUT. CALL FROM THE YARD",
+"col": "red",
+"at": 124.2,
+"out": 127.8
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE FAN IS ON \"ON\"",
+"at": 141.22,
+"out": 144.02
+},
+{
+"k": "chip",
+"txt": "FAN: AUTO · MODE: HEAT · +5°",
+"col": "green",
+"at": 226.4,
+"out": 229.6
+},
+{
+"k": "step",
+"n": 2,
+"name": "A CLOGGED FILTER",
+"at": 243.56,
+"out": 246.36
+},
+{
+"k": "big",
+"txt": "$4,900",
+"sub": "THE NEW FURNACE THEY DIDN'T NEED",
+"col": "red",
+"at": 324.32,
+"out": 327.32
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE DIRTY FLAME SENSOR",
+"at": 399.06,
+"out": 401.86
+},
+{
+"k": "chip",
+"txt": "POWER OFF · GAS OFF · ONE SCREW",
+"col": "amber",
+"at": 503.36,
+"out": 506.56
+},
+{
+"k": "chip",
+"txt": "NO SANDPAPER. NO BARE FINGERS",
+"col": "red",
+"at": 579.1,
+"out": 582.3
+},
+{
+"k": "chip",
+"txt": "COUNT THE BLINKS FIRST",
+"col": "amber",
+"at": 723.04,
+"out": 726.04
+},
+{
+"k": "deal",
+"at": 740.24,
+"out": 742.24
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Power on, off, on, off",
+"at": 745.84,
+"out": 748.84
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Resetting the breaker twice",
+"at": 763.92,
+"out": 766.92
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Touching the igniter",
+"at": 775.78,
+"out": 778.78
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Taping the door switch",
+"at": 794.08,
+"out": 797.08
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Heating with the oven",
+"at": 810.98,
+"out": 813.98
+},
+{
+"k": "chip",
+"txt": "CO ALARM ON EVERY FLOOR",
+"col": "red",
+"at": 829.02,
+"out": 832.22
+},
+{
+"k": "step",
+"n": 4,
+"name": "A CLOGGED CONDENSATE DRAIN",
+"at": 893.36,
+"out": 896.16
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE IGNITER OR THE PILOT",
+"at": 1000.63,
+"out": 1003.43
+},
+{
+"k": "chip",
+"txt": "YELLOW, DANCING FLAMES = TURN IT OFF",
+"col": "red",
+"at": 1111.56,
+"out": 1114.96
+},
+{
+"k": "check",
+"title": "TONIGHT, IN ORDER",
+"rows": [
+{
+"txt": "Fan AUTO · HEAT · +5°",
+"at": 1202.06
+},
+{
+"txt": "Count the blinks, read the chart",
+"at": 1210.36
+},
+{
+"txt": "Filter: light through it?",
+"at": 1217.41
+},
+{
+"txt": "Dollar bill on the flame sensor",
+"at": 1226.76
+},
+{
+"txt": "Clear the trap · cup of vinegar",
+"at": 1236.89
+},
+{
+"txt": "No orange glow = igniter",
+"at": 1243.39
+}
+],
+"at": 1198.34,
+"out": 1245.89
+},
+{
+"k": "ask",
+"at": 1295.43,
+"out": 1304.43
+}
+],
+"end": 1309.78,
+"txt": {
+"recapTitle": "TONIGHT, IN ORDER",
+"recap": [],
+"ask": [
+"TELL ME IN THE COMMENTS",
+"How many blinks did yours give?",
+"…and the brand"
+],
+"next": [
+"BEFORE THE FIRST NIGHT BELOW FREEZING",
+"Do these before the cold hits"
+],
+"lower": [
+44.14,
+52.14
+]
+}
+}
