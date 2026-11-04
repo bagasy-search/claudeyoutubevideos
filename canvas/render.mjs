@@ -5,7 +5,7 @@ import { spawn } from "node:child_process";
 import path from "node:path";
 const [html, out, fpsArg] = process.argv.slice(2);
 const fps = +(fpsArg || 60);
-const b = await puppeteer.launch({ headless: true, args: ["--no-sandbox", "--use-gl=swiftshader", "--enable-unsafe-swiftshader"] });
+const b = await puppeteer.launch({ headless: true, args: ["--no-sandbox", "--use-gl=swiftshader", "--enable-unsafe-swiftshader", "--allow-file-access-from-files", "--disable-web-security"] });
 const p = await b.newPage();
 p.on("pageerror", e => console.log("pageerror", String(e)));
 await p.setViewport({ width: 1080, height: 1920 });
