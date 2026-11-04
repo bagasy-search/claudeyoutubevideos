@@ -1,4 +1,4 @@
-# FlashVSR encima de h3-comfy:fullup -> h3-comfy:fullvsr (3-nov-2026). Sólo sube la capa nueva.
+# FlashVSR encima de h3-comfy:refup -> h3-comfy:refvsr (full falló: el runner no aguanta 66 GB) (3-nov-2026). Sólo sube la capa nueva.
 name: h3vsr
 permissions: { contents: read, packages: write }
 on: { push: { branches: ["h3vsr-*"] } }
@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 120
-    strategy: { fail-fast: false, matrix: { variant: [full] } }
+    strategy: { fail-fast: false, matrix: { variant: [ref] } }
     steps:
       - uses: actions/checkout@v4
         with: { sparse-checkout: h3img }
