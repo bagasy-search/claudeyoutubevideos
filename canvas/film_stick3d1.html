@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>Why Planes Don't Fly in a Straight Line</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #f2ece0;
+  }
+  canvas {
+    display: block;
+    width: 1920px;
+    height: 1080px;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: contain;
+    background: #f2ece0;
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+</head>
+<body>
+<script type="module">
+import * as THREE from 'three';
+
+window.END = 57;
+window.READY = false;
+
+const WIDTH = 1920;
+const HEIGHT = 1080;
+const FLOOR_Y = -2.42;
+const MAP_W = 13.2;
+const MAP_H = 6.6;
+const GLOBE_R = 3.1;
+
+const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+const lerp = (a, b, u) => a + (b - a) * u;
+const smoothstep = (a, b, x) => {
+  const t = clamp((x - a) / (b - a), 0, 1);
+  return t * t * (3 - 2 * t);
+};
+const smootherstep = (a, b, x) => {
+  const t = clamp((x - a) / (b - a), 0, 1);
+  return t * t * t * (t * (t * 6 - 15) + 10);
+};
+const easeOutCubic = (x) => 1 - Math.pow(1 - clamp(x, 0, 1), 3);
+
+function mulberry32(seed) {
+  return function() {
+    seed |= 0;
+    seed = (seed + 0x6D2B79F5) | 0;
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+const renderer = new THREE.WebGLRenderer({
+  antialias: true,
+  preserveDrawingBuffer: true
+});
+renderer.setPixelRatio(1);
+renderer.setSize(WIDTH, HEIGHT);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.06;
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0xf2ece0);
+
+const camera = new THREE.PerspectiveCamera(38, WIDTH / HEIGHT, 0.1, 100);
+camera.position.set(0, 0.95, 10.8);
+scene.add(camera);
+
+const hemi = new THREE.HemisphereLight(0xfff5e4, 0xbca98c, 0.62);
+scene.add(hemi);
+
+const ambient = new THREE.AmbientLight(0xfff6ea, 0.2);
+scene.add(ambient);
+
+const keyLight = new THREE.DirectionalLight(0xfff1d8, 1.55);
+keyLight.position.set(-8.5, 13, 10);
+keyLight.target.position.set(0, 0.7, 0);
+keyLight.castShadow = true;
+keyLight.shadow.mapSize.set(2048, 2048);
+keyLight.shadow.camera.left = -14;
+keyLight.shadow.camera.right = 14;
+keyLight.shadow.camera.top = 14;
+keyLight.shadow.camera.bottom = -14;
+keyLight.shadow.camera.near = 0.5;
+keyLight.shadow.camera.far = 40;
+keyLight.shadow.bias = -0.0006;
+keyLight.shadow.normalBias = 0.025;
+keyLight.shadow.radius = 4;
+scene.add(keyLight);
+scene.add(keyLight.target);
+
+const fillLight = new THREE.DirectionalLight(0xdbe8f2, 0.32);
+fillLight.position.set(9, 5, 7);
+scene.add(fillLight);
+
+const ink = new THREE.MeshStandardMaterial({ color: 0x1b1b1b, roughness: 0.55, metalness: 0 });
+const redMat = new THREE.MeshStandardMaterial({ color: 0xd64933, roughness: 0.7, metalness: 0 });
+const blueMat = new THREE.MeshStandardMaterial({ color: 0x2f6f8f, roughness: 0.75, metalness: 0 });
+const greenMat = new THREE.MeshStandardMaterial({ color: 0x6b8f71, roughness: 0.8, metalness: 0 });
+const yellowMat = new THREE.MeshStandardMaterial({ color: 0xf7c948, roughness: 0.78, metalness: 0 });
+const clayMat = new THREE.MeshStandardMaterial({
+  color: 0xfff6e7,
+  roughness: 0.92,
+  metalness: 0.0,
+  emissive: 0x2d1f14,
+  emissiveIntensity: 0.025
+});
+
+function makeCanvas(w, h) {
+  const c = document.createElement('canvas');
+  c.width = w;
+  c.height = h;
+  return c;
+}
+
+function roundedRect(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + w, y, x + w, y + h, r);
+  ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r);
+  ctx.arcTo(x, y, x + w, y, r);
+  ctx.closePath();
+}
+
+function tornPoints(w, h, pad, seed) {
+  const rnd = mulberry32(seed);
+  const pts = [];
+  const n = 18;
+  for (let i = 0; i < n; i++) {
+    const x = pad + (w - pad * 2) * i / (n - 1);
+    const y = pad + (rnd() - 0.5) * Math.min(28, pad * 0.9);
+    pts.push([x, y]);
+  }
+  for (let i = 2; i < n; i++) {
+    const x = w - pad + (rnd() - 0.5) * Math.min(20, pad * 0.75);
+    const y = pad + (h - pad * 2) * i / (n - 1);
+    pts.push([x, y]);
+  }
+  for (let i = n - 2; i >= 0; i--) {
+    const x = pad + (w - pad * 2) * i / (n - 1);
+    const y = h - pad + (rnd() - 0.5) * Math.min(24, pad * 0.85);
+    pts.push([x, y]);
+  }
+  for (let i = n - 3; i >= 2; i--) {
+    const x = pad + (rnd() - 0.5) * Math.min(20, pad * 0.75);
+    const y = pad + (h - pad * 2) * i / (n - 1);
+    pts.push([x, y]);
+  }
+  return pts;
+}
+
+function pathFromPoints(ctx, pts) {
+  ctx.beginPath();
+  ctx.moveTo(pts[0][0], pts[0][1]);
+  for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i][0], pts[i][1]);
+  ctx.closePath();
+}
+
+function drawPaperNoise(ctx, w, h, rnd, strength = 1) {
+  ctx.save();
+  const fibers = Math.floor((w * h) / 2800 * strength);
+  for (let i = 0; i < fibers; i++) {
+    const x = rnd() * w;
+    const y = rnd() * h;
+    const a = 0.012 + rnd() * 0.035;
+    ctx.fillStyle = `rgba(88,72,48,${a})`;
+    ctx.fillRect(x, y, 1 + rnd() * 2.2, 1 + rnd() * 1.3);
+  }
+  ctx.strokeStyle = 'rgba(110,92,63,0.035)';
+  ctx.lineWidth = 1;
+  for (let i = 0; i < 120 * strength; i++) {
+    const x = rnd() * w;
+    const y = rnd() * h;
+    const l = 8 + rnd() * 36;
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.quadraticCurveTo(x + l * 0.3, y + (rnd() - 0.5) * 4, x + l, y + (rnd() - 0.5) * 3);
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
+function createPaperCanvas(w, h, seed, drawFn, opts = {}) {
+  const c = makeCanvas(w, h);
+  const ctx = c.getContext('2d');
+  const rnd = mulberry32(seed);
+  const torn = opts.torn !== false;
+  const pad = opts.pad ?? 24;
+  const pts = torn ? tornPoints(w, h, pad, seed) : null;
+
+  if (pts) {
+    pathFromPoints(ctx, pts);
+    ctx.save();
+    ctx.clip();
+  }
+
+  ctx.fillStyle = opts.base || '#fbf6ea';
+  ctx.fillRect(0, 0, w, h);
+
+  const grad = ctx.createRadialGradient(w * 0.28, h * 0.18, 0, w * 0.5, h * 0.52, Math.max(w, h) * 0.72);
+  grad.addColorStop(0, 'rgba(255,255,255,0.18)');
+  grad.addColorStop(0.55, 'rgba(255,255,255,0.025)');
+  grad.addColorStop(1, 'rgba(94,77,52,0.07)');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, w, h);
+
+  drawPaperNoise(ctx, w, h, rnd, opts.noise ?? 1);
+
+  if (drawFn) drawFn(ctx, w, h, rnd);
+
+  if (pts) ctx.restore();
+
+  if (pts) {
+    pathFromPoints(ctx, pts);
+    ctx.strokeStyle = 'rgba(90,73,50,0.18)';
+    ctx.lineWidth = 2.5;
+    ctx.stroke();
+    pathFromPoints(ctx, pts);
+    ctx.strokeStyle = 'rgba(255,255,255,0.34)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
+  return c;
+}
+
+function canvasTexture(c) {
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  t.wrapS = THREE.ClampToEdgeWrapping;
+  t.wrapT = THREE.ClampToEdgeWrapping;
+  t.anisotropy = 4;
+  t.needsUpdate = true;
+  return t;
+}
+
+function makeSheetTexture(seed, variant) {
+  const w = 1024;
+  const h = 640;
+  return createPaperCanvas(w, h, seed, (ctx, W, H, rnd) => {
+    ctx.save();
+    ctx.globalAlpha = 0.78;
+
+    if (variant === 0) {
+      ctx.strokeStyle = 'rgba(47,111,143,0.14)';
+      ctx.lineWidth = 2;
+      for (let x = 72; x < W; x += 64) {
+        ctx.beginPath();
+        ctx.moveTo(x, 70);
+        ctx.lineTo(x, H - 74);
+        ctx.stroke();
+      }
+      for (let y = 92; y < H; y += 64) {
+        ctx.beginPath();
+        ctx.moveTo(64, y);
+        ctx.lineTo(W - 64, y);
+        ctx.stroke();
+      }
+      ctx.fillStyle = 'rgba(27,27,27,0.78)';
+      ctx.font = '700 68px Oswald, sans-serif';
+      ctx.fillText('FIELD NOTES / 01', 68, 118);
+      ctx.font = '600 28px Inter, sans-serif';
+      ctx.fillStyle = 'rgba(27,27,27,0.55)';
+      ctx.fillText('A CARTOGRAPHIC PROBLEM', 72, 158);
+
+      ctx.strokeStyle = 'rgba(214,73,51,0.55)';
+      ctx.lineWidth = 5;
+      ctx.beginPath();
+      ctx.arc(790, 270, 94, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.fillStyle = 'rgba(214,73,51,0.68)';
+      ctx.font = '700 28px Oswald, sans-serif';
+      ctx.fillText('LIE', 764, 281);
+
+      ctx.fillStyle = 'rgba(27,27,27,0.42)';
+      ctx.font = '400 23px Inter, sans-serif';
+      const lines = [
+        'A flat sheet cannot keep every distance true.',
+        'The north is stretched. The route is bent.',
+        'But the shortest distance is not the drawing.'
+      ];
+      lines.forEach((line, i) => ctx.fillText(line, 76, 420 + i * 34));
+    }
+
+    if (variant === 1) {
+      ctx.fillStyle = 'rgba(27,27,27,0.78)';
+      ctx.font = '700 58px Oswald, sans-serif';
+      ctx.fillText('THE MERCATOR', 64, 114);
+      ctx.font = '700 58px Oswald, sans-serif';
+      ctx.fillText('PROBLEM', 64, 174);
+      ctx.fillStyle = 'rgba(47,111,143,0.5)';
+      ctx.fillRect(66, 204, 400, 5);
+
+      ctx.strokeStyle = 'rgba(47,111,143,0.34)';
+      ctx.lineWidth = 2;
+      for (let i = 0; i < 9; i++) {
+        const y = 270 + i * 38;
+        ctx.beginPath();
+        ctx.moveTo(90, y);
+        ctx.lineTo(560, y);
+        ctx.stroke();
+      }
+      ctx.fillStyle = 'rgba(27,27,27,0.45)';
+      ctx.font = '400 24px Inter, sans-serif';
+      ctx.fillText('DISTANCE', 90, 620);
+      ctx.fillText('LATITUDE', 450, 620);
+      ctx.fillStyle = 'rgba(247,201,72,0.62)';
+      ctx.fillRect(96, 282, 360, 42);
+      ctx.fillStyle = 'rgba(27,27,27,0.7)';
+      ctx.font = '600 25px Inter, sans-serif';
+      ctx.fillText('stretched near the poles', 108, 310);
+    }
+
+    if (variant === 2) {
+      ctx.fillStyle = 'rgba(27,27,27,0.76)';
+      ctx.font = '700 54px Oswald, sans-serif';
+      ctx.fillText('FLIGHT LOG', 76, 112);
+      ctx.font = '400 24px Inter, sans-serif';
+      ctx.fillStyle = 'rgba(27,27,27,0.45)';
+      for (let i = 0; i < 8; i++) {
+        ctx.fillText('________________________________________________', 74, 190 + i * 44);
+      }
+      ctx.fillStyle = 'rgba(214,73,51,0.72)';
+      ctx.font = '700 30px Oswald, sans-serif';
+      ctx.fillText('NYC — TOKYO', 80, 598);
+    }
+
+    if (variant === 3) {
+      ctx.fillStyle = 'rgba(27,27,27,0.74)';
+      ctx.font = '700 58px Oswald, sans-serif';
+      ctx.fillText('RIVERS OF AIR', 70, 114);
+      ctx.strokeStyle = 'rgba(247,201,72,0.78)';
+      ctx.lineWidth = 9;
+      ctx.lineCap = 'round';
+      for (let i = 0; i < 3; i++) {
+        ctx.beginPath();
+        ctx.moveTo(80, 270 + i * 82);
+        for (let x = 0; x <= 700; x += 20) {
+          const y = 270 + i * 82 + Math.sin(x * 0.014 + i * 1.7) * 16;
+          ctx.lineTo(80 + x, y);
+        }
+        ctx.stroke();
+      }
+      ctx.fillStyle = 'rgba(47,111,143,0.54)';
+      ctx.font = '600 28px Inter, sans-serif';
+      ctx.fillText('JET STREAM  /  EASTWARD', 78, 570);
+    }
+
+    if (variant === 4) {
+      ctx.strokeStyle = 'rgba(27,27,27,0.48)';
+      ctx.lineWidth = 4;
+      ctx.beginPath();
+      ctx.arc(480, 338, 178, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.strokeStyle = 'rgba(47,111,143,0.5)';
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.arc(480, 338, 124, -0.25, Math.PI + 0.25);
+      ctx.stroke();
+      ctx.fillStyle = 'rgba(27,27,27,0.76)';
+      ctx.font = '700 50px Oswald, sans-serif';
+      ctx.fillText('GREAT CIRCLE', 66, 104);
+      ctx.fillStyle = 'rgba(214,73,51,0.75)';
+      ctx.beginPath();
+      ctx.arc(383, 257, 11, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(574, 404, 11, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    ctx.restore();
+  }, { torn: true, pad: 24, base: '#fbf6ea' });
+}
+
+function makeMapTexture() {
+  const w = 2048;
+  const h = 1024;
+  return createPaperCanvas(w, h, 1207, (ctx, W, H, rnd) => {
+    ctx.save();
+
+    // Chart grid
+    for (let x = 0; x <= W; x += 64) {
+      const major = x % 256 === 0;
+      ctx.strokeStyle = major ? 'rgba(47,111,143,0.19)' : 'rgba(47,111,143,0.10)';
+      ctx.lineWidth = major ? 2 : 1;
+      ctx.beginPath();
+      ctx.moveTo(x, 0);
+      ctx.lineTo(x, H);
+      ctx.stroke();
+    }
+    for (let y = 0; y <= H; y += 64) {
+      const major = y % 256 === 0;
+      ctx.strokeStyle = major ? 'rgba(47,111,143,0.19)' : 'rgba(47,111,143,0.10)';
+      ctx.lineWidth = major ? 2 : 1;
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(W, y);
+      ctx.stroke();
+    }
+
+    // Equator / latitude bands
+    ctx.strokeStyle = 'rgba(47,111,143,0.22)';
+    ctx.lineWidth = 3;
+    ctx.setLineDash([16, 14]);
+    ctx.beginPath();
+    ctx.moveTo(0, H * 0.5);
+    ctx.lineTo(W, H * 0.5);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    const landFill = 'rgba(107,143,113,0.60)';
+    const landStroke = 'rgba(47,111,143,0.66)';
+
+    function blob(points) {
+      const p = points.map(([x, y]) => [x * W, y * H]);
+      ctx.beginPath();
+      ctx.moveTo(p[0][0], p[0][1]);
+      for (let i = 0; i < p.length; i++) {
+        const a = p[i];
+        const b = p[(i + 1) % p.length];
+        const mx = (a[0] + b[0]) * 0.5;
+        const my = (a[1] + b[1]) * 0.5;
+        ctx.quadraticCurveTo(a[0], a[1], mx, my);
+      }
+      ctx.closePath();
+      ctx.fillStyle = landFill;
+      ctx.fill();
+      ctx.strokeStyle = landStroke;
+      ctx.lineWidth = 3;
+      ctx.stroke();
+    }
+
+    blob([[0.045,0.30],[0.12,0.22],[0.22,0.24],[0.29,0.34],[0.28,0.47],[0.21,0.52],[0.19,0.65],[0.105,0.63],[0.07,0.48],[0.025,0.38]]);
+    blob([[0.205,0.64],[0.285,0.62],[0.315,0.73],[0.275,0.84],[0.225,0.79],[0.205,0.69]]);
+    blob([[0.34,0.22],[0.415,0.20],[0.455,0.27],[0.408,0.32],[0.342,0.285]]);
+    blob([[0.45,0.27],[0.525,0.245],[0.565,0.32],[0.505,0.382],[0.435,0.35]]);
+    blob([[0.46,0.44],[0.55,0.405],[0.59,0.50],[0.565,0.66],[0.49,0.71],[0.435,0.58]]);
+    blob([[0.535,0.20],[0.67,0.17],[0.82,0.22],[0.915,0.31],[0.865,0.45],[0.745,0.47],[0.67,0.56],[0.555,0.49],[0.52,0.35]]);
+    blob([[0.775,0.66],[0.87,0.64],[0.91,0.73],[0.835,0.80],[0.765,0.745]]);
+
+    // Ocean hatching and notes
+    ctx.strokeStyle = 'rgba(47,111,143,0.16)';
+    ctx.lineWidth = 2;
+    for (let i = 0; i < 22; i++) {
+      const y = 430 + i * 9;
+      ctx.beginPath();
+      ctx.moveTo(820 + Math.sin(i) * 30, y);
+      ctx.lineTo(1180 + Math.cos(i * 0.7) * 28, y);
+      ctx.stroke();
+    }
+
+    ctx.fillStyle = 'rgba(27,27,27,0.42)';
+    ctx.font = '600 26px Inter, sans-serif';
+    ctx.fillText('NORTH AMERICA', 165, 510);
+    ctx.fillText('ASIA', 1510, 430);
+    ctx.fillText('PACIFIC OCEAN', 960, 650);
+    ctx.save();
+    ctx.translate(390, 790);
+    ctx.rotate(-0.11);
+    ctx.font = '700 26px Oswald, sans-serif';
+    ctx.fillStyle = 'rgba(47,111,143,0.45)';
+    ctx.fillText('EQUATORIAL GRID / PRINTED CHART', 0, 0);
+    ctx.restore();
+
+    // Border
+    ctx.strokeStyle = 'rgba(27,27,27,0.28)';
+    ctx.lineWidth = 4;
+    ctx.strokeRect(34, 34, W - 68, H - 68);
+    ctx.strokeStyle = 'rgba(214,73,51,0.5)';
+    ctx.lineWidth = 2;
+    ctx.strokeRect(46, 46, W - 92, H - 92);
+
+    // Tick marks
+    ctx.strokeStyle = 'rgba(27,27,27,0.38)';
+    ctx.lineWidth = 3;
+    for (let i = 0; i < 12; i++) {
+      const x = 46 + (W - 92) * i / 11;
+      ctx.beginPath();
+      ctx.moveTo(x, 46);
+      ctx.lineTo(x, 16);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(x, H - 46);
+      ctx.lineTo(x, H - 16);
+      ctx.stroke();
+    }
+
+    // Faint stamp
+    ctx.save();
+    ctx.translate(W - 300, 160);
+    ctx.rotate(-0.12);
+    ctx.strokeStyle = 'rgba(214,73,51,0.45)';
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.arc(0, 0, 62, 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.fillStyle = 'rgba(214,73,51,0.55)';
+    ctx.font = '700 21px Oswald, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('FLAT MAP', 0, -4);
+    ctx.fillText('NOT TO SCALE', 0, 22);
+    ctx.restore();
+
+    ctx.restore();
+  }, { torn: false, base: '#f8f1e0', noise: 1.2 });
+}
+
+function makeChartTexture() {
+  const w = 1024;
+  const h = 1024;
+  return createPaperCanvas(w, h, 1681, (ctx, W, H, rnd) => {
+    ctx.fillStyle = 'rgba(27,27,27,0.82)';
+    ctx.font = '700 62px Oswald, sans-serif';
+    ctx.fillText('WHY THE MAP LIES', 62, 112);
+    ctx.fillStyle = 'rgba(47,111,143,0.65)';
+    ctx.font = '600 27px Inter, sans-serif';
+    ctx.fillText('DISTORTION BY LATITUDE', 66, 154);
+
+    ctx.strokeStyle = 'rgba(27,27,27,0.22)';
+    ctx.lineWidth = 3;
+    for (let i = 0; i <= 6; i++) {
+      const y = 230 + i * 104;
+      ctx.beginPath();
+      ctx.moveTo(84, y);
+      ctx.lineTo(906, y);
+      ctx.stroke();
+    }
+
+    ctx.save();
+    ctx.translate(80, 300);
+    ctx.rotate(-Math.PI / 2);
+    ctx.fillStyle = 'rgba(27,27,27,0.48)';
+    ctx.font = '600 22px Inter, sans-serif';
+    ctx.fillText('STRETCH', 0, 0);
+    ctx.restore();
+
+    ctx.fillStyle = 'rgba(27,27,27,0.48)';
+    ctx.font = '600 21px Inter, sans-serif';
+    const labels = ['0°','20°','40°','60°','80°'];
+    labels.forEach((t, i) => ctx.fillText(t, 65, 238 + i * 104));
+
+    ctx.fillStyle = 'rgba(27,27,27,0.5)';
+    ctx.font = '400 23px Inter, sans-serif';
+    const body = [
+      'The northern edge of a flat map is',
+      'stretched the most. A flight route',
+      'there looks long and strange.'
+    ];
+    body.forEach((line, i) => ctx.fillText(line, 90, 910 + i * 31));
+
+    ctx.strokeStyle = 'rgba(214,73,51,0.55)';
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.arc(820, 915, 42, 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.fillStyle = 'rgba(214,73,51,0.7)';
+    ctx.font = '700 19px Oswald, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('LIE', 820, 923);
+    ctx.textAlign = 'left';
+  }, { torn: true, pad: 26, base: '#fbf6ea' });
+}
+
+function makeFloorTexture() {
+  return createPaperCanvas(1800, 1100, 8891, (ctx, W, H, rnd) => {
+    ctx.strokeStyle = 'rgba(47,111,143,0.10)';
+    ctx.lineWidth = 2;
+    for (let x = 0; x < W; x += 84) {
+      ctx.beginPath();
+      ctx.moveTo(x, 0);
+      ctx.lineTo(x, H);
+      ctx.stroke();
+    }
+    for (let y = 0; y < H; y += 84) {
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(W, y);
+      ctx.stroke();
+    }
+    ctx.fillStyle = 'rgba(27,27,27,0.13)';
+    ctx.font = '700 76px Oswald, sans-serif';
+    ctx.fillText('WORK TABLE / PAPER WORLD', 90, 160);
+    ctx.strokeStyle = 'rgba(214,73,51,0.20)';
+    ctx.lineWidth = 8;
+    ctx.beginPath();
+    ctx.moveTo(240, 760);
+    ctx.bezierCurveTo(640, 540, 1060, 860, 1550, 610);
+    ctx.stroke();
+  }, { torn: false, pad: 10, base: '#efe7d8', noise: 1.4 });
+}
+
+function makeRingTexture() {
+  const w = 1800;
+  const h = 1100;
+  const c = createPaperCanvas(w, h, 4421, (ctx, W, H, rnd) => {
+    ctx.strokeStyle = 'rgba(47,111,143,0.10)';
+    ctx.lineWidth = 2;
+    for (let x = 0; x < W; x += 80) {
+      ctx.beginPath();
+      ctx.moveTo(x, 0);
+      ctx.lineTo(x, H);
+      ctx.stroke();
+    }
+    for (let y = 0; y < H; y += 80) {
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(W, y);
+      ctx.stroke();
+    }
+
+    ctx.fillStyle = 'rgba(27,27,27,0.55)';
+    ctx.font = '700 56px Oswald, sans-serif';
+    ctx.fillText('LOOK THROUGH', 88, 122);
+    ctx.font = '600 26px Inter, sans-serif';
+    ctx.fillStyle = 'rgba(27,27,27,0.38)';
+    ctx.fillText('PULL BACK / CLOSE THE MAP', 92, 162);
+
+    ctx.fillStyle = 'rgba(27,27,27,0.35)';
+    ctx.font = '600 25px Inter, sans-serif';
+    ctx.fillText('THE WORLD IS STILL THERE', 96, 1010);
+  }, { torn: true, pad: 26, base: '#f7efe0', noise: 1.15 });
+
+  const ctx = c.getContext('2d');
+  ctx.save();
+  ctx.globalCompositeOperation = 'destination-out';
+  ctx.beginPath();
+  ctx.arc(900, 550, 460, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.restore();
+
+  ctx.save();
+  ctx.strokeStyle = 'rgba(27,27,27,0.22)';
+  ctx.lineWidth = 4;
+  ctx.beginPath();
+  ctx.arc(900, 550, 460, 0, Math.PI * 2);
+  ctx.stroke();
+  ctx.strokeStyle = 'rgba(255,255,255,0.48)';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.arc(900, 550, 468, 0, Math.PI * 2);
+  ctx.stroke();
+  ctx.restore();
+
+  return c;
+}
+
+function makeTapeTexture(color, seed) {
+  const w = 256;
+  const h = 96;
+  const c = makeCanvas(w, h);
+  const ctx = c.getContext('2d');
+  const rnd = mulberry32(seed);
+  ctx.clearRect(0, 0, w, h);
+  ctx.fillStyle = color;
+  ctx.globalAlpha = 0.74;
+  roundedRect(ctx, 6, 9, w - 12, h - 18, 12);
+  ctx.fill();
+  ctx.globalAlpha = 0.20;
+  ctx.fillStyle = '#ffffff';
+  for (let i = -2; i < 12; i++) {
+    ctx.save();
+    ctx.translate(i * 28, 0);
+    ctx.rotate(-0.48);
+    ctx.fillRect(0, -30, 9, h + 70);
+    ctx.restore();
+  }
+  ctx.globalAlpha = 0.13;
+  ctx.fillStyle = '#1b1b1b';
+  for (let i = 0; i < 80; i++) {
+    ctx.fillRect(rnd() * w, rnd() * h, 2, 1);
+  }
+  return c;
+}
+
+function makeLabelTexture(text) {
+  const w = 512;
+  const h = 128;
+  const c = makeCanvas(w, h);
+  const ctx = c.getContext('2d');
+  ctx.clearRect(0, 0, w, h);
+  ctx.font = '700 44px Oswald, sans-serif';
+  const tw = Math.min(430, ctx.measureText(text).width + 66);
+  ctx.fillStyle = 'rgba(251,246,234,0.88)';
+  roundedRect(ctx, (w - tw) * 0.5, 22, tw, 78, 15);
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(27,27,27,0.16)';
+  ctx.lineWidth = 2;
+  roundedRect(ctx, (w - tw) * 0.5, 22, tw, 78, 15);
+  ctx.stroke();
+  ctx.fillStyle = 'rgba(27,27,27,0.88)';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(text, w * 0.5, 62);
+  ctx.fillStyle = 'rgba(247,201,72,0.9)';
+  ctx.fillRect((w - tw) * 0.5 + 20, 94, tw - 40, 5);
+  return c;
+}
+
+function addLabelSprite(text, u, v, scale = 1.55) {
+  const tex = canvasTexture(makeLabelTexture(text));
+  const mat = new THREE.SpriteMaterial({
+    map: tex,
+    transparent: true,
+    depthWrite: false,
+    depthTest: true
+  });
+  const sprite = new THREE.Sprite(mat);
+  sprite.scale.set(scale, scale * 0.25, 1);
+  sprite.userData.u = u;
+  sprite.userData.v = v;
+  sprite.userData.scale = scale;
+  return sprite;
+}
+
+function makePlaneModel(scale = 1) {
+  const g = new THREE.Group();
+  const bodyMat = new THREE.MeshStandardMaterial({ color: 0xfbf6ea, roughness: 0.72, metalness: 0.0 });
+  const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.045, 0.20, 6, 12), bodyMat);
+  body.rotation.x = Math.PI / 2;
+  body.castShadow = true;
+  g.add(body);
+
+  const nose = new THREE.Mesh(new THREE.ConeGeometry(0.060, 0.13, 14), redMat);
+  nose.rotation.x = Math.PI / 2;
+  nose.position.z = 0.18;
+  nose.castShadow = true;
+  g.add(nose);
+
+  const wing = new THREE.Mesh(new THREE.BoxGeometry(0.36, 0.020, 0.105), bodyMat);
+  wing.position.z = 0.01;
+  wing.castShadow = true;
+  g.add(wing);
+
+  const tail = new THREE.Mesh(new THREE.BoxGeometry(0.15, 0.018, 0.070), bodyMat);
+  tail.position.z = -0.16;
+  tail.castShadow = true;
+  g.add(tail);
+
+  const fin = new THREE.Mesh(new THREE.BoxGeometry(0.018, 0.105, 0.070), redMat);
+  fin.position.set(0, 0.046, -0.16);
+  fin.castShadow = true;
+  g.add(fin);
+
+  g.scale.setScalar(scale);
+  return g;
+}
+
+function capsuleMesh(radius, length, mat) {
+  const m = new THREE.Mesh(new THREE.CapsuleGeometry(radius, length, 8, 18), mat);
+  m.castShadow = true;
+  m.receiveShadow = true;
+  return m;
+}
+
+let mapMesh = null;
+let globeGroup = null;
+let mapTexture = null;
+let routeCurve = null;
+let routeDashes = null;
+let routePlane = null;
+let stringMesh = null;
+let windGroup = null;
+let windMats = [];
+let arrowMesh = null;
+let arrowCanvas = null;
+let arrowCtx = null;
+let arrowTexture = null;
+let arrowMat = null;
+let labelSprites = [];
+let paperSheets = [];
+let tapeMeshes = [];
+let tapeMats = [];
+let chartGroup = null;
+let chartBars = [];
+let highlightMesh = null;
+let highlightMat = null;
+let ringMesh = null;
+let ringMat = null;
+let contactShadow = null;
+let flyByPlane = null;
+let hudMesh = null;
+let subtitleCanvas = null;
+let subtitleCtx = null;
+let subtitleTexture = null;
+let stick = null;
+let lastSubKey = '';
+let lastArrowKey = '';
+
+const camKeys = [
+  { t: 0.0,  pos: [0.0, 0.95, 10.8],  target: [0.0, 0.75, 0.0],  fov: 38 },
+  { t: 4.7,  pos: [0.5, 0.95, 9.4],   target: [0.75, 0.80, 0.0], fov: 36 },
+  { t: 9.8,  pos: [1.7, 0.85, 8.35],  target: [1.55, 0.92, 0.0], fov: 35 },
+  { t: 13.8, pos: [-0.6, 0.78, 8.9],  target: [-0.15, 0.86, 0.0], fov: 36 },
+  { t: 17.1, pos: [3.2, 0.92, 8.3],   target: [5.1, 0.82, -0.3], fov: 36.5 },
+  { t: 21.4, pos: [6.25, 1.02, 7.45], target: [8.55, 0.92, -0.55], fov: 38 },
+  { t: 24.2, pos: [1.35, 1.30, 13.6], target: [1.65, 1.05, 0.0], fov: 40 },
+  { t: 28.5, pos: [0.0, 1.55, 11.6],  target: [0.0, 1.28, 0.0],  fov: 40.5 },
+  { t: 33.1, pos: [-5.8, 2.05, 8.45], target: [0.0, 1.42, 0.0],  fov: 42 },
+  { t: 39.0, pos: [4.65, 2.18, 8.8],  target: [0.0, 1.38, 0.0],  fov: 42 },
+  { t: 43.5, pos: [1.95, 2.62, 8.0],  target: [0.0, 1.62, 0.0],  fov: 42.5 },
+  { t: 46.8, pos: [0.3, 2.78, 5.65],  target: [0.0, 2.00, 0.0],  fov: 44 },
+  { t: 48.1, pos: [0.0, 2.92, 2.9],   target: [0.0, 2.30, 0.0],  fov: 44 },
+  { t: 50.7, pos: [-3.35, 4.42, 6.05],target: [0.0, 3.38, 0.0],  fov: 42 },
+  { t: 54.0, pos: [2.85, 4.0, 7.0],   target: [0.0, 3.08, 0.0],  fov: 42 },
+  { t: 57.0, pos: [0.0, 3.2, 11.0],   target: [0.0, 2.7, 0.0],   fov: 44 }
+];
+
+const SUBTITLES = [
+  { a: 0.0,  b: 5.0,  text: 'On a flat map, this flight makes no sense' },
+  { a: 5.0,  b: 11.0, text: 'New York to Tokyo, and the plane swings all the way up over Alaska' },
+  { a: 11.0, b: 16.5, text: "It looks like a detour. It isn't. The map is lying to you" },
+  { a: 16.5, b: 22.0, text: 'Flat maps stretch everything near the poles, so curves look longer than they are' },
+  { a: 22.0, b: 28.5, text: 'Wrap the map back around the Earth, and the picture changes' },
+  { a: 28.5, b: 35.0, text: 'Stretch a string between the two cities. That curve is the shortest path' },
+  { a: 35.0, b: 41.0, text: 'Pilots call it a great circle, and it saves hours of flying and tons of fuel' },
+  { a: 41.0, b: 47.5, text: 'Then the wind bends it again, riding fast rivers of air high up' },
+  { a: 47.5, b: 53.0, text: 'So the straightest line between two places is almost never straight' },
+  { a: 53.0, b: 57.0, text: 'It only looks curved, because we draw a round world on flat paper' }
+];
+
+function currentSubtitle(t) {
+  for (let i = 0; i < SUBTITLES.length; i++) {
+    if (t >= SUBTITLES[i].a && t < SUBTITLES[i].b) return SUBTITLES[i];
+  }
+  return null;
+}
+
+function mapNormal(u, v, morph) {
+  const lat = (0.5 - v) * Math.PI;
+  const lon = (u - 0.5) * Math.PI * 2;
+  const sphere = new THREE.Vector3(
+    Math.cos(lat) * Math.sin(lon),
+    Math.sin(lat),
+    Math.cos(lat) * Math.cos(lon)
+  ).normalize();
+  return new THREE.Vector3(0, 0, 1).lerp(sphere, morph).normalize();
+}
+
+function mapPos(u, v, morph, offset = 0) {
+  const flat = new THREE.Vector3((u - 0.5) * MAP_W, (0.5 - v) * MAP_H, 0);
+  const lat = (0.5 - v) * Math.PI;
+  const lon = (u - 0.5) * Math.PI * 2;
+  const sphere = new THREE.Vector3(
+    GLOBE_R * Math.cos(lat) * Math.sin(lon),
+    GLOBE_R * Math.sin(lat),
+    GLOBE_R * Math.cos(lat) * Math.cos(lon)
+  );
+  const n = mapNormal(u, v, morph);
+  return flat.lerp(sphere, morph).addScaledVector(n, offset);
+}
+
+function routeUV(s, t) {
+  const p = routeCurve.getPoint(clamp(s, 0, 1));
+  let u = p.x;
+  let v = p.y;
+  const bend = smoothstep(40.5, 43.5, t) * 0.062;
+  v -= Math.sin(Math.PI * s) * bend;
+  return { u, v };
+}
+
+function routeWorld(s, t, morph, offset = 0) {
+  const uv = routeUV(s, t);
+  return mapPos(uv.u, uv.v, morph, offset);
+}
+
+function initWorld() {
+  globeGroup = new THREE.Group();
+  globeGroup.position.set(0, 1.2, 0);
+  scene.add(globeGroup);
+
+  mapTexture = canvasTexture(makeMapTexture());
+  const geom = new THREE.PlaneGeometry(MAP_W, MAP_H, 112, 56);
+  const pos = geom.getAttribute('position');
+  const normal = geom.getAttribute('normal');
+  const targetPositions = new Float32Array(pos.count * 3);
+  const targetNormals = new Float32Array(pos.count * 3);
+
+  for (let i = 0; i < pos.count; i++) {
+    const x = pos.getX(i);
+    const y = pos.getY(i);
+    const u = x / MAP_W + 0.5;
+    const v = 0.5 - y / MAP_H;
+    const lat = (0.5 - v) * Math.PI;
+    const lon = (u - 0.5) * Math.PI * 2;
+    const nx = Math.cos(lat) * Math.sin(lon);
+    const ny = Math.sin(lat);
+    const nz = Math.cos(lat) * Math.cos(lon);
+    targetPositions[i * 3 + 0] = GLOBE_R * nx;
+    targetPositions[i * 3 + 1] = GLOBE_R * ny;
+    targetPositions[i * 3 + 2] = GLOBE_R * nz;
+    targetNormals[i * 3 + 0] = nx;
+    targetNormals[i * 3 + 1] = ny;
+    targetNormals[i * 3 + 2] = nz;
+  }
+
+  geom.morphAttributes.position = [new THREE.BufferAttribute(targetPositions, 3)];
+  geom.morphAttributes.normal = [new THREE.BufferAttribute(targetNormals, 3)];
+
+  const mapMat = new THREE.MeshStandardMaterial({
+    map: mapTexture,
+    roughness: 0.91,
+    metalness: 0.0,
+    side: THREE.DoubleSide
+  });
+
+  mapMesh = new THREE.Mesh(geom, mapMat);
+  mapMesh.castShadow = false;
+  mapMesh.receiveShadow = true;
+  mapMesh.morphTargetInfluences = [0];
+  globeGroup.add(mapMesh);
+
+  // Route curve on the printed map, deliberately bowed over the north.
+  routeCurve = new THREE.CatmullRomCurve3([
+    new THREE.Vector3(0.225, 0.560, 0),
+    new THREE.Vector3(0.300, 0.365, 0),
+    new THREE.Vector3(0.405, 0.220, 0),
+    new THREE.Vector3(0.500, 0.145, 0),
+    new THREE.Vector3(0.605, 0.205, 0),
+    new THREE.Vector3(0.710, 0.365, 0),
+    new THREE.Vector3(0.800, 0.560, 0)
+  ], false, 'catmullrom', 0.55);
+
+  const dashCount = 96;
+  const dashGeom = new THREE.BoxGeometry(1, 1, 1);
+  const dashMat = new THREE.MeshBasicMaterial({ color: 0xd64933 });
+  routeDashes = new THREE.InstancedMesh(dashGeom, dashMat, dashCount);
+  routeDashes.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+  routeDashes.frustumCulled = false;
+  globeGroup.add(routeDashes);
+
+  // The "string" that gets stretched between cities.
+  const stringCount = 150;
+  const stringGeom = new THREE.SphereGeometry(1, 8, 6);
+  const stringMat = new THREE.MeshBasicMaterial({
+    color: 0xfffcf2,
+    transparent: true,
+    opacity: 0.0,
+    depthWrite: false
+  });
+  stringMesh = new THREE.InstancedMesh(stringGeom, stringMat, stringCount);
+  stringMesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+  stringMesh.frustumCulled = false;
+  globeGroup.add(stringMesh);
+
+  routePlane = makePlaneModel(1.0);
+  routePlane.visible = false;
+  globeGroup.add(routePlane);
+
+  // Labels sit in the paper world and ride the map as it curls into a sphere.
+  [
+    ['NEW YORK', 0.225, 0.560, 1.42],
+    ['TOKYO', 0.800, 0.560, 1.25],
+    ['ALASKA', 0.500, 0.165, 1.18]
+  ].forEach(([txt, u, v, s]) => {
+    const sp = addLabelSprite(txt, u, v, s);
+    labelSprites.push(sp);
+    globeGroup.add(sp);
+  });
+
+  // Big felt-tip highlighter drawn as geometry.
+  const arrowCanvasBig = makeCanvas(1024, 512);
+  arrowCanvas = arrowCanvasBig;
+  arrowCtx = arrowCanvas.getContext('2d');
+  arrowTexture = canvasTexture(arrowCanvas);
+  arrowMat = new THREE.MeshBasicMaterial({
+    map: arrowTexture,
+    transparent: true,
+    opacity: 0,
+    depthWrite: false,
+    side: THREE.DoubleSide
+  });
+  arrowMesh = new THREE.Mesh(new THREE.PlaneGeometry(MAP_W, MAP_H), arrowMat);
+  arrowMesh.position.z = 0.125;
+  arrowMesh.renderOrder = 3;
+  globeGroup.add(arrowMesh);
+
+  // Jet stream ribbons.
+  windGroup = new THREE.Group();
+  globeGroup.add(windGroup);
+
+  const windDefs = [
+    { lat: 38, color: 0xf7c948, phase: 0.0, op: 0.52 },
+    { lat: 49, color: 0x2f6f8f, phase: 1.8, op: 0.42 },
+    { lat: 58, color: 0xd64933, phase: 3.2, op: 0.28 }
+  ];
+
+  windDefs.forEach((def) => {
+    const pts = [];
+    for (let i = 0; i <= 110; i++) {
+      const s = i / 110;
+      const lon = (s - 0.5) * Math.PI * 2.15;
+      const lat = (def.lat * Math.PI / 180) + Math.sin(s * Math.PI * 2.0 + def.phase) * 0.10;
+      const r = GLOBE_R + 0.12;
+      pts.push(new THREE.Vector3(
+        r * Math.cos(lat) * Math.sin(lon),
+        r * Math.sin(lat),
+        r * Math.cos(lat) * Math.cos(lon)
+      ));
+    }
+    const curve = new THREE.CatmullRomCurve3(pts);
+    const tube = new THREE.Mesh(
+      new THREE.TubeGeometry(curve, 170, 0.028, 6, false),
+      new THREE.MeshStandardMaterial({
+        color: def.color,
+        transparent: true,
+        opacity: 0,
+        roughness: 0.55,
+        metalness: 0,
+        depthWrite: false
+      })
+    );
+    tube.userData.baseOpacity = def.op;
+    windMats.push(tube.material);
+    windGroup.add(tube);
+  });
+
+  // Chart sheet, bars, highlighter swipe.
+  chartGroup = new THREE.Group();
+  chartGroup.position.set(8.8, 1.0, -1.1);
+  chartGroup.rotation.y = -0.12;
+  scene.add(chartGroup);
+
+  const chartTex = canvasTexture(makeChartTexture());
+  const chartMesh = new THREE.Mesh(
+    new THREE.PlaneGeometry(4.8, 4.8),
+    new THREE.MeshStandardMaterial({
+      map: chartTex,
+      transparent: true,
+      alphaTest: 0.05,
+      roughness: 0.95,
+      metalness: 0,
+      side: THREE.DoubleSide
+    })
+  );
+  chartMesh.receiveShadow = true;
+  chartGroup.add(chartMesh);
+
+  const barDefs = [
+    { x: -1.43, h: 0.70, color: 0x6b8f71 },
+    { x: -0.48, h: 1.15, color: 0x2f6f8f },
+    { x: 0.47, h: 1.85, color: 0xd64933 },
+    { x: 1.42, h: 2.55, color: 0xf7c948 }
+  ];
+  barDefs.forEach((d, i) => {
+    const mat = new THREE.MeshStandardMaterial({
+      color: d.color,
+      roughness: 0.76,
+      metalness: 0
+    });
+    const m = new THREE.Mesh(new THREE.BoxGeometry(0.38, 1, 0.36), mat);
+    m.castShadow = true;
+    m.receiveShadow = true;
+    m.position.set(d.x, -1.25 + d.h * 0.5, 0.44);
+    m.scale.y = 0.001;
+    m.userData.baseY = -1.25;
+    m.userData.targetH = d.h;
+    chartBars.push(m);
+    chartGroup.add(m);
+  });
+
+  highlightMat = new THREE.MeshBasicMaterial({
+    color: 0xf7c948,
+    transparent: true,
+    opacity: 0,
+    depthWrite: false
+  });
+  highlightMesh = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), highlightMat);
+  highlightMesh.position.set(-0.2, 0.48, 0.58);
+  highlightMesh.scale.set(0.001, 0.58, 1);
+  highlightMesh.renderOrder = 2;
+  chartGroup.add(highlightMesh);
+
+  // Paper sheets: at least four depth layers.
+  const sheetDefs = [
+    { w: 26, h: 16.25, pos: [-0.5, 2.2, -8.4], rot: [0.01, 0.01, 0.015], seed: 101, variant: 0, phase: 0.2, shadow: false },
+    { w: 14.5, h: 9.06, pos: [-7.4, 2.55, -5.6], rot: [0.035, 0.14, -0.06], seed: 202, variant: 1, phase: 1.7, shadow: false },
+    { w: 13.0, h: 8.12, pos: [7.05, 1.25, -4.2], rot: [-0.04, -0.16, 0.07], seed: 303, variant: 2, phase: 3.1, shadow: false },
+    { w: 10.6, h: 6.62, pos: [-8.1, -0.35, -2.35], rot: [0.035, 0.19, -0.10], seed: 404, variant: 3, phase: 4.4, shadow: false },
+    { w: 8.6, h: 5.38, pos: [3.35, 3.35, -1.15], rot: [0.03, -0.09, 0.06], seed: 505, variant: 4, phase: 5.9, shadow: false }
+  ];
+
+  sheetDefs.forEach((d) => {
+    const tex = canvasTexture(makeSheetTexture(d.seed, d.variant));
+    const mat = new THREE.MeshStandardMaterial({
+      map: tex,
+      transparent: true,
+      alphaTest: 0.05,
+      roughness: 0.96,
+      metalness: 0,
+      side: THREE.DoubleSide
+    });
+    const mesh = new THREE.Mesh(new THREE.PlaneGeometry(d.w, d.h), mat);
+    mesh.position.set(d.pos[0], d.pos[1], d.pos[2]);
+    mesh.rotation.set(d.rot[0], d.rot[1], d.rot[2]);
+    mesh.receiveShadow = d.shadow !== false;
+    mesh.castShadow = false;
+    mesh.userData.baseY = d.pos[1];
+    mesh.userData.baseRotZ = d.rot[2];
+    mesh.userData.phase = d.phase;
+    paperSheets.push(mesh);
+    scene.add(mesh);
+  });
+
+  // Floor sheet.
+  const floorTex = canvasTexture(makeFloorTexture());
+  const floorMat = new THREE.MeshStandardMaterial({
+    map: floorTex,
+    roughness: 0.97,
+    metalness: 0,
+    side: THREE.DoubleSide
+  });
+  const floorMesh = new THREE.Mesh(new THREE.PlaneGeometry(31, 18.8), floorMat);
+  floorMesh.rotation.x = -Math.PI / 2;
+  floorMesh.position.set(0, FLOOR_Y - 0.045, 1.2);
+  floorMesh.receiveShadow = true;
+  scene.add(floorMesh);
+
+  // Tape strips around the main map.
+  const tapeColors = [
+    ['rgba(247,201,72,0.88)', 5001],
+    ['rgba(214,73,51,0.78)', 5002],
+    ['rgba(247,201,72,0.82)', 5003],
+    ['rgba(47,111,143,0.68)', 5004],
+    ['rgba(247,201,72,0.76)', 5005]
+  ];
+  const tapePos = [
+    [-5.78, 4.22, 0.15, 0.25],
+    [5.92, 4.28, 0.14, -0.20],
+    [-5.88, -1.90, 0.14, -0.17],
+    [5.78, -1.98, 0.14, 0.18],
+    [8.45, 3.16, -0.63, 0.13]
+  ];
+  tapePos.forEach((p, i) => {
+    const tex = canvasTexture(makeTapeTexture(tapeColors[i][0], tapeColors[i][1]));
+    const mat = new THREE.MeshBasicMaterial({
+      map: tex,
+      transparent: true,
+      opacity: 0.92,
+      depthWrite: false,
+      side: THREE.DoubleSide
+    });
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(1.45, 0.34), mat);
+    m.position.set(p[0], p[1], p[2]);
+    m.rotation.z = p[3];
+    m.renderOrder = 2;
+    tapeMats.push(mat);
+    tapeMeshes.push(m);
+    scene.add(m);
+  });
+
+  // Foreground sheet with a circular cut-out. The camera passes through later.
+  ringMat = new THREE.MeshStandardMaterial({
+    map: canvasTexture(makeRingTexture()),
+    transparent: true,
+    alphaTest: 0.05,
+    opacity: 0,
+    roughness: 0.95,
+    metalness: 0,
+    side: THREE.DoubleSide
+  });
+  ringMesh = new THREE.Mesh(new THREE.PlaneGeometry(18, 11), ringMat);
+  ringMesh.position.set(0, 2.2, 4.4);
+  ringMesh.castShadow = false;
+  ringMesh.receiveShadow = false;
+  ringMesh.visible = false;
+  scene.add(ringMesh);
+
+  // Soft contact shadow.
+  const shadowCanvas = makeCanvas(256, 256);
+  const sctx = shadowCanvas.getContext('2d');
+  const sg = sctx.createRadialGradient(128, 128, 10, 128, 128, 120);
+  sg.addColorStop(0, 'rgba(25,20,15,0.52)');
+  sg.addColorStop(0.55, 'rgba(25,20,15,0.22)');
+  sg.addColorStop(1, 'rgba(25,20,15,0.0)');
+  sctx.fillStyle = sg;
+  sctx.fillRect(0, 0, 256, 256);
+  const shadowTex = canvasTexture(shadowCanvas);
+  const shadowMat = new THREE.MeshBasicMaterial({
+    map: shadowTex,
+    transparent: true,
+    opacity: 0.32,
+    depthWrite: false
+  });
+  contactShadow = new THREE.Mesh(new THREE.PlaneGeometry(1.65, 1.0), shadowMat);
+  contactShadow.rotation.x = -Math.PI / 2;
+  contactShadow.position.set(0, FLOOR_Y + 0.01, 1.3);
+  contactShadow.renderOrder = 1;
+  scene.add(contactShadow);
+
+  // Plane pass at the end.
+  flyByPlane = makePlaneModel(2.3);
+  flyByPlane.visible = false;
+  scene.add(flyByPlane);
+
+  // Clay stickman.
+  stick = buildStickman();
+  scene.add(stick.root);
+
+  // HUD subtitle plane, attached to camera.
+  subtitleCanvas = makeCanvas(1920, 1080);
+  subtitleCtx = subtitleCanvas.getContext('2d');
+  subtitleTexture = canvasTexture(subtitleCanvas);
+  const hudMat = new THREE.MeshBasicMaterial({
+    map: subtitleTexture,
+    transparent: true,
+    depthTest: false,
+    depthWrite: false,
+    side: THREE.DoubleSide
+  });
+  hudMat.toneMapped = false;
+  hudMesh = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), hudMat);
+  hudMesh.position.set(0, 0, -1.0);
+  hudMesh.renderOrder = 9999;
+  hudMesh.frustumCulled = false;
+  camera.add(hudMesh);
+}
+
+function buildStickman() {
+  const root = new THREE.Group();
+  const scaleGroup = new THREE.Group();
+  scaleGroup.scale.setScalar(0.72);
+  root.add(scaleGroup);
+
+  const hips = new THREE.Group();
+  hips.position.y = 1.12;
+  scaleGroup.add(hips);
+
+  const torso = capsuleMesh(0.265, 0.54, clayMat);
+  torso.position.y = 0.50;
+  hips.add(torso);
+
+  const belly = capsuleMesh(0.235, 0.36, clayMat);
+  belly.position.y = 0.39;
+  belly.scale.set(1.02, 0.95, 0.86);
+  hips.add(belly);
+
+  const neck = new THREE.Mesh(new THREE.CylinderGeometry(0.11, 0.13, 0.17, 16), clayMat);
+  neck.position.y = 1.07;
+  neck.castShadow = true;
+  hips.add(neck);
+
+  const headGroup = new THREE.Group();
+  headGroup.position.y = 1.34;
+  hips.add(headGroup);
+
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.34, 30, 24), clayMat);
+  head.scale.set(1.0, 1.03, 0.97);
+  head.castShadow = true;
+  head.receiveShadow = true;
+  headGroup.add(head);
+
+  const faceZ = 0.315;
+
+  const eyeGeo = new THREE.SphereGeometry(0.068, 16, 12);
+  const eyeL = new THREE.Mesh(eyeGeo, ink);
+  eyeL.position.set(-0.125, 0.055, faceZ);
+  eyeL.scale.set(0.9, 1.55, 0.34);
+  headGroup.add(eyeL);
+
+  const eyeR = new THREE.Mesh(eyeGeo, ink);
+  eyeR.position.set(0.125, 0.055, faceZ);
+  eyeR.scale.set(0.9, 1.55, 0.34);
+  headGroup.add(eyeR);
+
+  const browGeo = new THREE.BoxGeometry(0.135, 0.030, 0.022);
+  const browL = new THREE.Mesh(browGeo, ink);
+  browL.position.set(-0.13, 0.205, faceZ);
+  browL.rotation.z = 0.08;
+  headGroup.add(browL);
+
+  const browR = new THREE.Mesh(browGeo, ink);
+  browR.position.set(0.13, 0.205, faceZ);
+  browR.rotation.z = -0.08;
+  headGroup.add(browR);
+
+  const mouthOpen = new THREE.Mesh(new THREE.SphereGeometry(0.11, 16, 12), ink);
+  mouthOpen.position.set(0, -0.145, faceZ);
+  mouthOpen.scale.set(1.0, 0.58, 0.28);
+  mouthOpen.visible = false;
+  headGroup.add(mouthOpen);
+
+  const mouthO = new THREE.Mesh(new THREE.SphereGeometry(0.080, 16, 12), ink);
+  mouthO.position.set(0, -0.145, faceZ);
+  mouthO.scale.set(0.82, 1.05, 0.26);
+  mouthO.visible = false;
+  headGroup.add(mouthO);
+
+  const mouthSmile = new THREE.Mesh(new THREE.TorusGeometry(0.105, 0.018, 8, 22, Math.PI), ink);
+  mouthSmile.position.set(0, -0.135, faceZ);
+  mouthSmile.rotation.z = Math.PI;
+  mouthSmile.visible = true;
+  headGroup.add(mouthSmile);
+
+  function buildArm(side, x) {
+    const shoulder = new THREE.Group();
+    shoulder.position.set(x, 0.90, 0);
+    hips.add(shoulder);
+
+    const upper = capsuleMesh(0.085, 0.28, clayMat);
+    upper.position.y = -0.23;
+    shoulder.add(upper);
+
+    const elbow = new THREE.Group();
+    elbow.position.y = -0.46;
+    shoulder.add(elbow);
+
+    const lower = capsuleMesh(0.078, 0.28, clayMat);
+    lower.position.y = -0.23;
+    elbow.add(lower);
+
+    const hand = new THREE.Group();
+    hand.position.y = -0.50;
+    elbow.add(hand);
+
+    const handMesh = new THREE.Mesh(new THREE.SphereGeometry(0.105, 18, 14), clayMat);
+    handMesh.scale.set(0.92, 1.0, 0.90);
+    handMesh.castShadow = true;
+    hand.add(handMesh);
+
+    return { shoulder, elbow, hand };
+  }
+
+  const armL = buildArm(-1, -0.42);
+  const armR = buildArm(1, 0.42);
+
+  function buildLeg(side, x) {
+    const hip = new THREE.Group();
+    hip.position.set(x, 0.0, 0);
+    hips.add(hip);
+
+    const upper = capsuleMesh(0.112, 0.28, clayMat);
+    upper.position.y = -0.25;
+    hip.add(upper);
+
+    const knee = new THREE.Group();
+    knee.position.y = -0.50;
+    hip.add(knee);
+
+    const lower = capsuleMesh(0.105, 0.28, clayMat);
+    lower.position.y = -0.25;
+    knee.add(lower);
+
+    const foot = new THREE.Mesh(new THREE.SphereGeometry(0.11, 18, 14), clayMat);
+    foot.position.set(0, -0.50, 0.055);
+    foot.scale.set(0.95, 0.72, 1.35);
+    foot.castShadow = true;
+    knee.add(foot);
+
+    return { hip, knee, foot };
+  }
+
+  const legL = buildLeg(-1, -0.19);
+  const legR = buildLeg(1, 0.19);
+
+  const highlighter = new THREE.Group();
+  const markerBody = new THREE.Mesh(new THREE.CylinderGeometry(0.075, 0.075, 0.76, 18), yellowMat);
+  markerBody.position.y = -0.34;
+  markerBody.castShadow = true;
+  highlighter.add(markerBody);
+
+  const markerTip = new THREE.Mesh(new THREE.ConeGeometry(0.075, 0.17, 18), yellowMat);
+  markerTip.position.y = -0.79;
+  markerTip.rotation.z = Math.PI;
+  markerTip.castShadow = true;
+  highlighter.add(markerTip);
+
+  const markerCap = new THREE.Mesh(new THREE.CylinderGeometry(0.081, 0.081, 0.17, 18), ink);
+  markerCap.position.y = 0.06;
+  markerCap.castShadow = true;
+  highlighter.add(markerCap);
+
+  highlighter.position.set(0, -0.02, 0.02);
+  highlighter.rotation.z = 0.06;
+  highlighter.visible = false;
+  armR.hand.add(highlighter);
+
+  return {
+    root,
+    scaleGroup,
+    hips,
+    torso,
+    belly,
+    headGroup,
+    head,
+    eyeL,
+    eyeR,
+    browL,
+    browR,
+    mouthOpen,
+    mouthO,
+    mouthSmile,
+    armL,
+    armR,
+    legL,
+    legR,
+    highlighter
+  };
+}
+
+function drawArrowOverlay(progress, alpha) {
+  const ctx = arrowCtx;
+  const W = arrowCanvas.width;
+  const H = arrowCanvas.height;
+  ctx.clearRect(0, 0, W, H);
+  if (alpha <= 0.005) return;
+
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.strokeStyle = 'rgba(27,27,27,0.78)';
+  ctx.lineWidth = 5.5;
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+
+  const p0 = [W * 0.205, H * 0.655];
+  const p1 = [W * 0.175, H * 0.335];
+  const p2 = [W * 0.405, H * 0.205];
+  const p3 = [W * 0.505, H * 0.285];
+
+  const N = 80;
+  const pts = [];
+  for (let i = 0; i <= N; i++) {
+    const s = i / N;
+    const u = 1 - s;
+    const x = u * u * u * p0[0] + 3 * u * u * s * p1[0] + 3 * u * s * s * p2[0] + s * s * s * p3[0];
+    const y = u * u * u * p0[1] + 3 * u * u * s * p1[1] + 3 * u * s * s * p2[1] + s * s * s * p3[1];
+    const wob = Math.sin(s * 29.0) * 1.8 + Math.sin(s * 63.0) * 0.9;
+    pts.push([x + wob, y + wob * 0.4]);
+  }
+
+  const count = Math.max(2, Math.floor(progress * N));
+  ctx.beginPath();
+  ctx.moveTo(pts[0][0], pts[0][1]);
+  for (let i = 1; i <= count; i++) ctx.lineTo(pts[i][0], pts[i][1]);
+  ctx.stroke();
+
+  ctx.globalAlpha = alpha * 0.45;
+  ctx.strokeStyle = 'rgba(27,27,27,0.55)';
+  ctx.lineWidth = 2.4;
+  ctx.beginPath();
+  ctx.moveTo(pts[0][0] + 4, pts[0][1] + 3);
+  for (let i = 1; i <= count; i++) ctx.lineTo(pts[i][0] + 4, pts[i][1] + 3);
+  ctx.stroke();
+
+  if (progress > 0.82) {
+    const e = pts[count];
+    const prev = pts[Math.max(0, count - 8)];
+    const ang = Math.atan2(e[1] - prev[1], e[0] - prev[0]);
+    ctx.globalAlpha = alpha;
+    ctx.strokeStyle = 'rgba(27,27,27,0.78)';
+    ctx.lineWidth = 5.5;
+    ctx.beginPath();
+    ctx.moveTo(e[0], e[1]);
+    ctx.lineTo(e[0] - Math.cos(ang - 0.55) * 26, e[1] - Math.sin(ang - 0.55) * 26);
+    ctx.moveTo(e[0], e[1]);
+    ctx.lineTo(e[0] - Math.cos(ang + 0.55) * 26, e[1] - Math.sin(ang + 0.55) * 26);
+    ctx.stroke();
+
+    ctx.fillStyle = 'rgba(27,27,27,0.68)';
+    ctx.font = '700 34px Oswald, sans-serif';
+    ctx.fillText('DETOUR?', W * 0.39, H * 0.145);
+  }
+
+  if (progress > 0.92) {
+    ctx.fillStyle = 'rgba(247,201,72,0.68)';
+    ctx.fillRect(W * 0.385, H * 0.160, W * 0.16, 12);
+  }
+
+  ctx.restore();
+}
+
+function updateCamera(t) {
+  let i = 0;
+  while (i < camKeys.length - 1 && t > camKeys[i + 1].t) i++;
+  let pos = camKeys[i].pos;
+  let target = camKeys[i].target;
+  let fov = camKeys[i].fov;
+
+  if (i < camKeys.length - 1) {
+    const a = camKeys[i];
+    const b = camKeys[i + 1];
+    let u = clamp((t - a.t) / (b.t - a.t), 0, 1);
+    u = smootherstep(0, 1, u);
+    pos = [
+      lerp(a.pos[0], b.pos[0], u),
+      lerp(a.pos[1], b.pos[1], u),
+      lerp(a.pos[2], b.pos[2], u)
+    ];
+    target = [
+      lerp(a.target[0], b.target[0], u),
+      lerp(a.target[1], b.target[1], u),
+      lerp(a.target[2], b.target[2], u)
+    ];
+    fov = lerp(a.fov, b.fov, u);
+  }
+
+  const dx = Math.sin(t * 0.27) * 0.020 + Math.sin(t * 0.111 + 1.7) * 0.009;
+  const dy = Math.sin(t * 0.31 + 0.8) * 0.012;
+  const dz = Math.sin(t * 0.21 + 0.2) * 0.012;
+  const tx = Math.sin(t * 0.19 + 0.6) * 0.026;
+  const ty = Math.sin(t * 0.23 + 2.1) * 0.016;
+
+  camera.position.set(pos[0] + dx, pos[1] + dy, pos[2] + dz);
+  camera.lookAt(target[0] + tx, target[1] + ty, target[2]);
+  camera.fov = fov + Math.sin(t * 0.17) * 0.24;
+  camera.updateProjectionMatrix();
+
+  if (hudMesh) {
+    const dist = 1.0;
+    const h = 2 * Math.tan(THREE.MathUtils.degToRad(camera.fov * 0.5)) * dist;
+    const w = h * (WIDTH / HEIGHT);
+    hudMesh.position.set(0, 0, -dist);
+    hudMesh.scale.set(w, h, 1);
+  }
+}
+
+function updateRoute(t, morph) {
+  const draw = smoothstep(4.2, 9.9, t);
+  const dashCount = routeDashes.count;
+  const dummy = new THREE.Object3D();
+  const up = new THREE.Vector3();
+
+  for (let i = 0; i < dashCount; i++) {
+    const s = i / (dashCount - 1);
+    if (s > draw + 0.002) {
+      dummy.position.set(0, 0, -999);
+      dummy.scale.set(0, 0, 0);
+      dummy.updateMatrix();
+      routeDashes.setMatrixAt(i, dummy.matrix);
+      continue;
+    }
+
+    const uv = routeUV(s, t);
+    const uv0 = routeUV(Math.max(0, s - 0.004), t);
+    const uv1 = routeUV(Math.min(1, s + 0.004), t);
+    const p0 = mapPos(uv0.u, uv0.v, morph, 0.070);
+    const p1 = mapPos(uv1.u, uv1.v, morph, 0.070);
+    const mid = mapPos(uv.u, uv.v, morph, 0.070);
+    const tangent = new THREE.Vector3().subVectors(p1, p0);
+    if (tangent.lengthSq() < 1e-8) tangent.set(1, 0, 0);
+    tangent.normalize();
+    up.copy(mapNormal(uv.u, uv.v, morph));
+    const right = new THREE.Vector3().crossVectors(up, tangent).normalize();
+    const up2 = new THREE.Vector3().crossVectors(tangent, right).normalize();
+    const basis = new THREE.Matrix4().makeBasis(right, up2, tangent);
+    dummy.position.copy(mid);
+    dummy.quaternion.setFromRotationMatrix(basis);
+    const len = clamp(p0.distanceTo(p1) * 0.58, 0.04, 0.17);
+    dummy.scale.set(len, 0.034, 0.030);
+    dummy.updateMatrix();
+    routeDashes.setMatrixAt(i, dummy.matrix);
+  }
+  routeDashes.instanceMatrix.needsUpdate = true;
+
+  // String reveal.
+  const stringMat = stringMesh.material;
+  const stringAlpha = smoothstep(28.4, 29.2, t) * (1 - smoothstep(35.6, 36.4, t));
+  stringMat.opacity = stringAlpha * 0.92;
+  stringMesh.visible = stringAlpha > 0.003;
+  if (stringMesh.visible) {
+    const reveal = smoothstep(28.7, 32.1, t);
+    const sdummy = new THREE.Object3D();
+    for (let i = 0; i < stringMesh.count; i++) {
+      const s = i / (stringMesh.count - 1);
+      if (s > reveal) {
+        sdummy.position.set(0, 0, -999);
+        sdummy.scale.set(0, 0, 0);
+        sdummy.updateMatrix();
+        stringMesh.setMatrixAt(i, sdummy.matrix);
+      } else {
+        const p = routeWorld(s, t, morph, 0.145);
+        sdummy.position.copy(p);
+        sdummy.scale.set(0.034, 0.034, 0.034);
+        sdummy.quaternion.identity();
+        sdummy.updateMatrix();
+        stringMesh.setMatrixAt(i, sdummy.matrix);
+      }
+    }
+    stringMesh.instanceMatrix.needsUpdate = true;
+  }
+
+  // Small plane on the route.
+  let show = 0;
+  let prog = 0;
+  if (t >= 4.8 && t <= 14.1) {
+    show = smoothstep(4.7, 5.2, t) * (1 - smoothstep(13.2, 14.1, t));
+    prog = clamp((t - 5.0) / 8.0, 0, 1);
+  } else if (t >= 29.0 && t <= 41.1) {
+    show = smoothstep(28.9, 29.6, t) * (1 - smoothstep(40.2, 41.1, t));
+    prog = clamp((t - 29.2) / 10.2, 0, 1);
+  }
+
+  routePlane.visible = show > 0.02;
+  if (routePlane.visible) {
+    const uv = routeUV(prog, t);
+    const uvNext = routeUV(Math.min(1, prog + 0.012), t);
+    const p = mapPos(uv.u, uv.v, morph, 0.19);
+    const pNext = mapPos(uvNext.u, uvNext.v, morph, 0.19);
+    const fwd = new THREE.Vector3().subVectors(pNext, p).normalize();
+    if (fwd.lengthSq() < 1e-8) fwd.set(1, 0, 0);
+    const n = mapNormal(uv.u, uv.v, morph);
+    const right = new THREE.Vector3().crossVectors(n, fwd).normalize();
+    const up2 = new THREE.Vector3().crossVectors(fwd, right).normalize();
+    const basis = new THREE.Matrix4().makeBasis(right, up2, fwd);
+    routePlane.position.copy(p);
+    routePlane.quaternion.setFromRotationMatrix(basis);
+    routePlane.scale.setScalar(0.80 * show);
+  }
+
+  // Labels follow map / globe.
+  for (let i = 0; i < labelSprites.length; i++) {
+    const sp = labelSprites[i];
+    const u = sp.userData.u;
+    const v = sp.userData.v;
+    const p = mapPos(u, v, morph, 0.25);
+    sp.position.copy(p);
+  }
+}
+
+function updateArrow(t) {
+  const opacity = smoothstep(9.4, 10.2, t) * (1 - smoothstep(18.2, 21.0, t));
+  arrowMat.opacity = opacity;
+  arrowMesh.visible = opacity > 0.01 && t < 22.0;
+  if (!arrowMesh.visible) return;
+
+  const progress = smoothstep(10.0, 14.0, t);
+  const key = progress.toFixed(3) + '|' + opacity.toFixed(3);
+  if (key !== lastArrowKey) {
+    lastArrowKey = key;
+    drawArrowOverlay(progress, opacity);
+    arrowTexture.needsUpdate = true;
+  }
+}
+
+function updateWorld(t) {
+  const morph = smoothstep(22.0, 28.25, t);
+  mapMesh.morphTargetInfluences[0] = morph;
+
+  globeGroup.rotation.y = 0.18 * smoothstep(32, 57, t) + Math.sin(t * 0.23) * 0.018;
+  globeGroup.rotation.x = Math.sin(t * 0.16) * 0.008;
+
+  for (let i = 0; i < paperSheets.length; i++) {
+    const m = paperSheets[i];
+    m.position.y = m.userData.baseY + Math.sin(t * 0.42 + m.userData.phase) * 0.014;
+    m.rotation.z = m.userData.baseRotZ + Math.sin(t * 0.30 + m.userData.phase * 1.3) * 0.0025;
+  }
+
+  // Tape fades as the map curls away.
+  const tapeFade = 1 - smoothstep(20.3, 22.4, t);
+  for (let i = 0; i < tapeMats.length; i++) {
+    tapeMats[i].opacity = 0.92 * tapeFade;
+    tapeMeshes[i].visible = tapeFade > 0.015;
+  }
+
+  // Chart bars.
+  const grow = smoothstep(16.7, 20.8, t);
+  for (let i = 0; i < chartBars.length; i++) {
+    const bar = chartBars[i];
+    const h = bar.userData.targetH * grow;
+    bar.scale.y = Math.max(0.001, h);
+    bar.position.y = bar.userData.baseY + h * 0.5;
+    bar.visible = h > 0.006;
+  }
+
+  const swipe = smoothstep(17.5, 19.5, t) * (1 - smoothstep(21.6, 22.4, t));
+  highlightMat.opacity = 0.40 * swipe;
+  highlightMesh.scale.x = Math.max(0.001, 3.85 * swipe);
+  highlightMesh.visible = swipe > 0.015;
+
+  // Jet stream.
+  const windVis = smoothstep(40.6, 42.6, t) * (1 - smoothstep(47.4, 48.6, t));
+  windGroup.visible = windVis > 0.01;
+  for (let i = 0; i < windMats.length; i++) {
+    windMats[i].opacity = windVis * (0.40 + i * 0.07);
+  }
+  windGroup.rotation.y = Math.sin(t * 0.35) * 0.06;
+
+  // Foreground cut-out sheet fades in before the fly-through.
+  const ringOpacity = smoothstep(38.0, 41.0, t) * 0.96;
+  ringMat.opacity = ringOpacity;
+  ringMesh.visible = ringOpacity > 0.01;
+  ringMesh.position.y = 2.2 + Math.sin(t * 0.37) * 0.012;
+
+  updateRoute(t, morph);
+  updateArrow(t);
+}
+
+function updateFace(t, pose, narrationActive) {
+  const blinkPhase = (t % 3.2 + 3.2) % 3.2;
+  let blink = 0;
+  if (blinkPhase < 0.13) blink = Math.sin((blinkPhase / 0.13) * Math.PI);
+
+  let eyeScaleY = 1.55 * (1 - 0.90 * blink);
+  let browY = 0.205;
+  let browTilt = 0.08;
+  let browScale = 1.0;
+
+  if (pose === 'eureka' || pose === 'wow') {
+    browY += 0.042;
+    browTilt = 0.03;
+    eyeScaleY *= 1.12;
+  } else if (pose === 'shrug') {
+    browY += 0.018;
+    browTilt = 0.17;
+  } else if (pose === 'point' || pose === 'highlight') {
+    browY += 0.006;
+    browTilt = 0.13;
+  } else if (pose === 'sit') {
+    browTilt = 0.04;
+  }
+
+  stick.eyeL.scale.y = eyeScaleY;
+  stick.eyeR.scale.y = eyeScaleY;
+  stick.browL.position.y = browY;
+  stick.browR.position.y = browY;
+  stick.browL.rotation.z = browTilt;
+  stick.browR.rotation.z = -browTilt;
+  stick.browL.scale.x = browScale;
+  stick.browR.scale.x = browScale;
+
+  let mode = 2; // smile
+  if (narrationActive) {
+    mode = Math.floor(t / 0.12) % 3;
+  } else if (pose === 'shrug') {
+    mode = 1;
+  } else if (pose === 'eureka' || pose === 'wow') {
+    mode = 0;
+  }
+
+  stick.mouthOpen.visible = mode === 0;
+  stick.mouthO.visible = mode === 1;
+  stick.mouthSmile.visible = mode === 2;
+
+  const chatter = 0.92 + 0.10 * Math.sin(t * 31.0);
+  if (mode === 0) {
+    stick.mouthOpen.scale.set(1.0, 0.55 * chatter, 0.30);
+    stick.mouthOpen.position.y = -0.145 + Math.sin(t * 30.0) * 0.008;
+  } else if (mode === 1) {
+    stick.mouthO.scale.set(0.82 * chatter, 1.0, 0.28);
+    stick.mouthO.position.y = -0.145 + Math.sin(t * 30.0 + 1.0) * 0.006;
+  } else {
+    stick.mouthSmile.scale.set(0.95 * chatter, 1.0, 1.0);
+    stick.mouthSmile.position.y = -0.135 + Math.sin(t * 2.4) * 0.004;
+  }
+}
+
+function updateStickman(t, camPos) {
+  const narrationActive = !!currentSubtitle(t);
+  let x = 2.62;
+  let z = 1.25;
+  let y = FLOOR_Y;
+  let pose = 'idle';
+  let walking = false;
+  let walkPhase = 0;
+  let jumpSquash = 1.0;
+  let sit = 0;
+
+  if (t < 4.6) {
+    x = 2.62;
+    z = 1.25;
+    pose = t > 2.0 ? 'point' : 'idle';
+  } else if (t < 11.0) {
+    const u = smoothstep(4.6, 10.6, t);
+    x = lerp(2.62, 0.92, u);
+    z = 1.25;
+    walking = true;
+    pose = 'walk';
+    walkPhase = t * 7.4;
+  } else if (t < 16.5) {
+    x = 0.92;
+    z = 1.25;
+    pose = t > 12.9 ? 'shrug' : 'idle';
+  } else if (t < 21.5) {
+    const u = smoothstep(16.5, 21.0, t);
+    x = lerp(0.92, 7.30, u);
+    z = lerp(1.25, 0.92, u);
+    walking = true;
+    pose = 'highlight';
+    walkPhase = t * 7.0;
+  } else if (t < 22.0) {
+    x = 7.30;
+    z = 0.92;
+    pose = 'anticipate';
+    jumpSquash = 1 - 0.16 * Math.sin(Math.PI * clamp((t - 21.5) / 0.5, 0, 1));
+  } else if (t < 24.55) {
+    const u = clamp((t - 22.0) / 2.55, 0, 1);
+    const e = easeOutCubic(u);
+    x = lerp(7.30, 4.18, e);
+    z = lerp(0.92, 1.38, e);
+    y = FLOOR_Y + Math.sin(u * Math.PI) * 1.48;
+    pose = 'jump';
+    jumpSquash = 1.035;
+  } else if (t < 25.45) {
+    const u = smoothstep(24.55, 25.45, t);
+    x = 4.18;
+    z = 1.38;
+    y = FLOOR_Y;
+    pose = 'idle';
+    jumpSquash = lerp(0.90, 1.0, u);
+  } else if (t < 47.45) {
+    x = 4.13;
+    z = 1.38;
+    y = FLOOR_Y;
+    if (t < 28.6) {
+      pose = 'point';
+    } else if (t < 35.2) {
+      pose = 'point';
+    } else if (t < 41.0) {
+      pose = (t > 36.0 && t < 39.2) ? 'eureka' : 'point';
+    } else {
+      pose = 'point';
+    }
+  } else if (t < 49.55) {
+    const u = clamp((t - 47.45) / 2.1, 0, 1);
+    const e = smootherstep(0, 1, u);
+    x = lerp(4.13, 0.16, e);
+    z = lerp(1.38, 0.36, e);
+    const sitRootY = 3.48;
+    y = lerp(FLOOR_Y, sitRootY, e) + Math.sin(u * Math.PI) * 1.05;
+    pose = 'jump';
+    jumpSquash = 1.025;
+  } else {
+    x = 0.16;
+    z = 0.36;
+    y = 3.48;
+    pose = 'sit';
+    sit = 1;
+  }
+
+  stick.root.position.set(x, y, z);
+
+  const faceAngle = Math.atan2(camPos.x - x, camPos.z - z);
+  stick.root.rotation.y = faceAngle;
+
+  // Reset skeleton pose.
+  stick.hips.position.set(0, 1.12, 0);
+  stick.hips.rotation.set(0, 0, 0);
+  stick.scaleGroup.position.set(0, 0, 0);
+  stick.torso.scale.set(1, 1, 1);
+  stick.belly.scale.set(1.02, 0.95, 0.86);
+
+  stick.armL.shoulder.rotation.set(0, 0, -0.08);
+  stick.armR.shoulder.rotation.set(0, 0, 0.08);
+  stick.armL.elbow.rotation.set(0, 0, 0);
+  stick.armR.elbow.rotation.set(0, 0, 0);
+  stick.legL.hip.rotation.set(0, 0, 0);
+  stick.legR.hip.rotation.set(0, 0, 0);
+  stick.legL.knee.rotation.set(0, 0, 0);
+  stick.legR.knee.rotation.set(0, 0, 0);
+
+  let breath = Math.sin(t * 2.15) * 0.012;
+  stick.torso.scale.y = 1.0 + breath;
+  stick.headGroup.position.y = 1.34 + Math.sin(t * 2.15 + 0.4) * 0.008;
+  stick.headGroup.rotation.z = 0;
+  stick.headGroup.rotation.x = 0;
+
+  if (walking) {
+    const sw = Math.sin(walkPhase);
+    const sw2 = Math.cos(walkPhase * 0.5);
+    stick.hips.position.y = 1.12 + Math.abs(sw) * 0.018;
+    stick.legL.hip.rotation.x = sw * 0.55;
+    stick.legR.hip.rotation.x = -sw * 0.55;
+    stick.legL.knee.rotation.x = Math.max(0, -sw) * 0.55;
+    stick.legR.knee.rotation.x = Math.max(0, sw) * 0.55;
+    stick.armL.shoulder.rotation.x = -sw * 0.62;
+    stick.armR.shoulder.rotation.x = sw * 0.62;
+    stick.armL.elbow.rotation.x = -0.12 - Math.abs(sw) * 0.15;
+    stick.armR.elbow.rotation.x = -0.12 - Math.abs(sw) * 0.15;
+    stick.headGroup.rotation.z = sw * 0.012;
+    stick.headGroup.position.y += Math.abs(sw2) * 0.008;
+  }
+
+  if (pose === 'point') {
+    stick.armR.shoulder.rotation.set(-0.28, 0.05, 1.92);
+    stick.armR.elbow.rotation.set(-0.20, 0.0, 0.30);
+    stick.armL.shoulder.rotation.set(0.05, 0, -0.14);
+    stick.headGroup.rotation.z = -0.055;
+    stick.headGroup.rotation.x = -0.035;
+  } else if (pose === 'shrug') {
+    stick.armL.shoulder.rotation.set(-0.15, 0, -1.12);
+    stick.armR.shoulder.rotation.set(-0.15, 0, 1.12);
+    stick.armL.elbow.rotation.set(-0.78, 0, -0.68);
+    stick.armR.elbow.rotation.set(-0.78, 0, 0.68);
+    stick.headGroup.rotation.z = Math.sin(t * 1.3) * 0.025;
+    stick.hips.rotation.z = Math.sin(t * 1.2) * 0.012;
+  } else if (pose === 'eureka') {
+    stick.armL.shoulder.rotation.set(-0.18, 0, -2.45);
+    stick.armR.shoulder.rotation.set(-0.18, 0, 2.45);
+    stick.armL.elbow.rotation.set(-0.30, 0, -0.20);
+    stick.armR.elbow.rotation.set(-0.30, 0, 0.20);
+    stick.headGroup.rotation.z = Math.sin(t * 5.0) * 0.035;
+    stick.hips.position.y += Math.abs(Math.sin(t * 9.0)) * 0.025;
+  } else if (pose === 'jump') {
+    stick.legL.hip.rotation.x = 0.30;
+    stick.legR.hip.rotation.x = -0.30;
+    stick.legL.knee.rotation.x = 0.38;
+    stick.legR.knee.rotation.x = 0.38;
+    stick.armL.shoulder.rotation.set(-0.2, 0, -2.1);
+    stick.armR.shoulder.rotation.set(-0.2, 0, 2.1);
+    stick.armL.elbow.rotation.set(-0.2, 0, -0.1);
+    stick.armR.elbow.rotation.set(-0.2, 0, 0.1);
+  } else if (pose === 'highlight') {
+    stick.armR.shoulder.rotation.set(-0.55, 0.04, 0.95);
+    stick.armR.elbow.rotation.set(-0.78, 0, 0.18);
+    stick.armL.shoulder.rotation.set(0.04, 0, -0.15);
+    stick.headGroup.rotation.z = 0.04;
+  } else if (pose === 'sit') {
+    stick.legL.hip.rotation.x = -1.31;
+    stick.legR.hip.rotation.x = -1.31;
+    stick.legL.knee.rotation.x = 1.22;
+    stick.legR.knee.rotation.x = 1.22;
+    stick.armL.shoulder.rotation.set(-0.15, 0, -0.28);
+    stick.armR.shoulder.rotation.set(-0.15, 0, 0.28);
+    stick.armL.elbow.rotation.set(-0.25, 0, -0.1);
+    stick.armR.elbow.rotation.set(-0.25, 0, 0.1);
+    stick.hips.position.y = 1.12 + Math.sin(t * 1.6) * 0.006;
+    stick.headGroup.rotation.z = Math.sin(t * 0.9) * 0.018;
+  } else if (pose === 'anticipate') {
+    stick.armL.shoulder.rotation.set(0.22, 0, -0.22);
+    stick.armR.shoulder.rotation.set(0.22, 0, 0.22);
+    stick.legL.knee.rotation.x = 0.22;
+    stick.legR.knee.rotation.x = 0.22;
+  }
+
+  // Squash / stretch around the feet.
+  const sy = jumpSquash * (1 + breath * 0.30);
+  const sxz = 1 / Math.sqrt(Math.max(0.35, sy));
+  stick.scaleGroup.scale.set(0.72 * sxz, 0.72 * sy, 0.72 * sxz);
+
+  stick.highlighter.visible = t > 16.15 && t < 22.05;
+
+  // Contact shadow follows feet while on the floor.
+  const jumpHeight = Math.max(0, y - FLOOR_Y);
+  const shadowAlpha = 0.34 * clamp(1 - jumpHeight / 2.6, 0, 1) * (1 - sit);
+  contactShadow.material.opacity = shadowAlpha;
+  contactShadow.visible = shadowAlpha > 0.012;
+  contactShadow.position.set(x, FLOOR_Y + 0.012, z + 0.10);
+  const shadowScale = 1 + jumpHeight * 0.16;
+  contactShadow.scale.set(shadowScale, shadowScale, 1);
+
+  updateFace(t, pose, narrationActive);
+}
+
+function updateFlyBy(t) {
+  if (t < 49.3 || t > 55.2) {
+    flyByPlane.visible = false;
+    return;
+  }
+  const u = clamp((t - 49.3) / 5.9, 0, 1);
+  flyByPlane.visible = true;
+  const x = lerp(-10.5, 10.5, u);
+  const y = 4.92 + Math.sin(u * Math.PI) * 0.42;
+  const z = 2.0 - u * 0.7;
+  flyByPlane.position.set(x, y, z);
+  const dir = new THREE.Vector3(1.0, Math.cos(u * Math.PI) * 0.10, -0.16).normalize();
+  flyByPlane.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), dir);
+  const fade = smoothstep(49.3, 49.7, t) * (1 - smoothstep(54.5, 55.2, t));
+  flyByPlane.scale.setScalar(2.3 * fade);
+}
+
+function wrapSubtitleText(ctx, text, maxWidth) {
+  const words = text.split(' ');
+  const lines = [];
+  let line = '';
+  for (let i = 0; i < words.length; i++) {
+    const test = line ? line + ' ' + words[i] : words[i];
+    if (ctx.measureText(test).width > maxWidth && line) {
+      lines.push(line);
+      line = words[i];
+    } else {
+      line = test;
+    }
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+
+function updateSubtitle(t) {
+  const sub = currentSubtitle(t);
+  const key = sub ? sub.text : '';
+  if (key === lastSubKey) return;
+  lastSubKey = key;
+
+  const ctx = subtitleCtx;
+  ctx.clearRect(0, 0, 1920, 1080);
+  if (!sub) {
+    subtitleTexture.needsUpdate = true;
+    return;
+  }
+
+  ctx.save();
+  ctx.font = '400 40px Inter, sans-serif';
+  ctx.textBaseline = 'middle';
+  ctx.textAlign = 'left';
+  const maxTextWidth = 1320;
+  const lines = wrapSubtitleText(ctx, sub.text, maxTextWidth);
+  const lineHeight = 48;
+  const textWidth = Math.max(...lines.map(l => ctx.measureText(l).width));
+  const stripW = Math.min(1400, textWidth + 92);
+  const stripH = Math.max(78, lines.length * lineHeight + 28);
+  const centerY = 960;
+  const stripX = 960 - stripW * 0.5;
+  const stripY = centerY - stripH * 0.5;
+
+  ctx.fillStyle = 'rgba(27,27,27,0.72)';
+  roundedRect(ctx, stripX, stripY, stripW, stripH, 22);
+  ctx.fill();
+
+  ctx.strokeStyle = 'rgba(255,255,255,0.10)';
+  ctx.lineWidth = 1.5;
+  roundedRect(ctx, stripX, stripY, stripW, stripH, 22);
+  ctx.stroke();
+
+  ctx.fillStyle = 'rgba(255,255,255,0.97)';
+  ctx.textAlign = 'center';
+  const startY = centerY - (lines.length - 1) * lineHeight * 0.5;
+  for (let i = 0; i < lines.length; i++) {
+    ctx.fillText(lines[i], 960, startY + i * lineHeight + 1.5);
+  }
+  ctx.restore();
+
+  subtitleTexture.needsUpdate = true;
+}
+
+let pendingSeek = null;
+let isReady = false;
+
+function seek(t) {
+  if (!isReady) {
+    pendingSeek = t;
+    return;
+  }
+  t = clamp(t, 0, 57);
+  updateCamera(t);
+  updateWorld(t);
+  updateStickman(t, camera.position);
+  updateFlyBy(t);
+  updateSubtitle(t);
+  renderer.render(scene, camera);
+}
+
+async function boot() {
+  try {
+    await document.fonts.load('700 60px Oswald');
+    await document.fonts.load('600 28px Oswald');
+    await document.fonts.load('400 40px Inter');
+    await document.fonts.load('600 24px Inter');
+    await document.fonts.ready;
+  } catch (e) {
+    // Fonts still resolve to a viable fallback.
+  }
+
+  initWorld();
+
+  // Draw the first subtitle state explicitly.
+  lastSubKey = '__init__';
+  updateSubtitle(0);
+  subtitleTexture.needsUpdate = true;
+
+  isReady = true;
+  window.seek = seek;
+  seek(pendingSeek !== null ? pendingSeek : 0);
+
+  window.READY = true;
+}
+
+boot();
+</script>
+</body>
+</html>

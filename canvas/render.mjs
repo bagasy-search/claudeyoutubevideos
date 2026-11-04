@@ -23,5 +23,16 @@ for (let i = 0; i < N; i++) {
 }
 ff.stdin.end();
 await new Promise(r => ff.on("close", r));
+// audio escrito por la película (window.renderAudio → WAV base64) + narración (window.NARRATION)
+const extra = await p.evaluate(async () => ({ wav: window.renderAudio ? await window.renderAudio() : null, nar: window.NARRATION || null })).catch(e => (console.log("audio error", String(e)), {}));
 await b.close();
-console.log("listo", out, N, "cuadros");
+const base = out.replace(/\.mp4$/, "");
+const fs = await import("node:fs");
+if (extra.nar) fs.writeFileSync(base + "_narracion.json", JSON.stringify(extra.nar, null, 1));
+if (extra.wav) {
+  fs.writeFileSync(base + "_audio.wav", Buffer.from(extra.wav.replace(/^data:[^,]*,/, ""), "base64"));
+  await new Promise(r => spawn("ffmpeg", ["-y", "-loglevel", "error", "-i", out, "-i", base + "_audio.wav", "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", base + "_ds_audio.mp4"], { stdio: "inherit" }).on("close", r));
+}
+// copia liviana (sólo video) para el celular: 1280x720 crf 27
+await new Promise(r => spawn("ffmpeg", ["-y", "-loglevel", "error", "-i", out, "-vf", "scale=1280:-2", "-c:v", "libx264", "-preset", "slow", "-crf", "27", "-pix_fmt", "yuv420p", "-an", "-movflags", "+faststart", base + "_cel.mp4"], { stdio: "inherit" }).on("close", r));
+console.log("listo", out, N, "cuadros", extra.wav ? "con audio" : "sin audio");

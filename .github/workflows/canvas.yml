@@ -16,4 +16,9 @@ jobs:
       - run: cd canvas && npm init -y >/dev/null && npm i puppeteer@23.11.1 --silent
       - run: for f in $(cat canvas/RENDER.txt); do node canvas/render.mjs "canvas/$f" "canvas/${f%.html}.mp4" 60; done
       - uses: actions/upload-artifact@v4
-        with: { name: canvas-mp4, path: canvas/*.mp4 }
+        with:
+          name: canvas-mp4
+          path: |
+            canvas/*.mp4
+            canvas/*.wav
+            canvas/*_narracion.json
