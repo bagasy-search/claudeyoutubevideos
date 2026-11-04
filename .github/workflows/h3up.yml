@@ -1,0 +1,23 @@
+# Capa de upscalers encima de h3-comfy:<variant> -> h3-comfy:<variant>up (3-nov-2026). Sólo sube la capa nueva.
+name: h3up
+permissions: { contents: read, packages: write }
+on: { push: { branches: ["h3up-*"] } }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy: { fail-fast: false, matrix: { variant: [ref, full] } }
+    steps:
+      - uses: actions/checkout@v4
+        with: { sparse-checkout: h3img }
+      - name: liberar disco
+        run: |
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/lib/android /opt/hostedtoolcache /usr/local/share/boost /usr/local/lib/node_modules /usr/share/swift || true
+          sudo docker image prune -af || true
+          df -h /
+      - uses: docker/login-action@v3
+        with: { registry: ghcr.io, username: "${{ github.actor }}", password: "${{ github.token }}" }
+      - name: build y push
+        run: |
+          docker build -f h3img/Dockerfile.up --build-arg VARIANT=${{ matrix.variant }} --label org.opencontainers.image.source=https://github.com/${{ github.repository }} -t ghcr.io/bagasy-search/h3-comfy:${{ matrix.variant }}up .
+          docker push ghcr.io/bagasy-search/h3-comfy:${{ matrix.variant }}up

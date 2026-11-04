@@ -1,0 +1,10 @@
+# 3-nov-2026: capa CHICA encima de la imagen ya horneada (reusa sus 66 GB tal cual: en Vast sólo se baja esta capa nueva).
+# Agrega upscalers de video para generar barato a 640x368 y subir a 2K en la misma máquina (nodos core de ComfyUI).
+ARG VARIANT=ref
+FROM ghcr.io/bagasy-search/h3-comfy:${VARIANT}
+RUN mkdir -p /opt/h3/upscale_models && cd /opt/h3/upscale_models && \
+    wget -q https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth && \
+    wget -q https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth && \
+    wget -q https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.1/RealESRGAN_x2plus.pth && ls -la
+COPY h3img/onstart_baked.sh /opt/onstart_baked.sh
+RUN chmod +x /opt/onstart_baked.sh
