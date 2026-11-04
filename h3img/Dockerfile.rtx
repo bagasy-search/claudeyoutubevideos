@@ -1,0 +1,8 @@
+# RTX Video Super Resolution (NVIDIA VFX, TensorRT) encima de h3-comfy:refvsr -> h3-comfy:refx (3-nov-2026).
+# ai-muninn: 362 cuadros 960x540 -> 1080p en 11,2 s (Real-ESRGAN x2plus: ~109 s). Modo HIGHBITRATE_* para salida de difusión.
+ARG VARIANT=ref
+FROM ghcr.io/bagasy-search/h3-comfy:${VARIANT}vsr
+RUN PY=$(cat /opt/h3py 2>/dev/null || echo python) && \
+    git clone --depth 1 https://github.com/Comfy-Org/Nvidia_RTX_Nodes_ComfyUI /opt/h3nodes/Nvidia_RTX_Nodes_ComfyUI && \
+    $PY -m pip install --no-cache-dir --extra-index-url https://pypi.nvidia.com "nvidia-vfx>=0.2" && \
+    $PY -c "import importlib.util as u; assert u.find_spec('nvvfx'), 'nvvfx no quedó instalado'"
