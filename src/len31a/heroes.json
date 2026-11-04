@@ -27,7 +27,7 @@
 "fvAt": 119.7,
 "floatAt": 119.7,
 "ovAt": 122.48,
-"flAt": 131.34
+"flAt": 125.59
 },
 {
 "k": "twoways",
@@ -54,7 +54,7 @@
 "k": "spill",
 "at": 239.6,
 "out": 245.55,
-"downAt": 257.94
+"downAt": 242.28
 },
 {
 "k": "coffee",
@@ -67,7 +67,7 @@
 "k": "grit",
 "at": 333.6,
 "out": 343.7,
-"costAt": 351.98
+"costAt": 338.35
 },
 {
 "k": "kit",
@@ -106,8 +106,8 @@
 "k": "cup",
 "at": 455.34,
 "out": 460.66,
-"b1": 470.94,
-"b2": 475.98
+"b1": 457.05,
+"b2": 458.35
 },
 {
 "k": "fountain",
@@ -119,7 +119,7 @@
 "at": 531.9,
 "out": 538.95,
 "sealAt": 536.42,
-"valveAt": 560.28
+"valveAt": 537.18
 },
 {
 "k": "mistake",
@@ -133,7 +133,7 @@
 "k": "nomix",
 "at": 597.4,
 "out": 604.25,
-"boxAt": 607.48
+"boxAt": 600.52
 },
 {
 "k": "shutoff",
@@ -160,7 +160,7 @@
 "txt": "Lock nut under the tank"
 },
 {
-"at": 672.48,
+"at": 668.77,
 "txt": "Lift it straight out"
 }
 ]
@@ -190,15 +190,15 @@
 "k": "twist",
 "at": 765.8,
 "out": 771.45,
-"leftAt": 772.07,
-"ringAt": 793.04
+"leftAt": 767.62,
+"ringAt": 769.03
 },
 {
 "k": "twist",
 "at": 781.2,
 "out": 790.35,
 "leftAt": 781.6,
-"ringAt": 793.04
+"ringAt": 785.48
 },
 {
 "k": "out",
@@ -207,19 +207,19 @@
 "kick": "THE NEW ONE GOES IN",
 "rows": [
 {
-"at": 808.71,
+"at": 801.09,
 "txt": "Washer down · through the hole"
 },
 {
-"at": 814.73,
+"at": 802.58,
 "txt": "Nipple faces the center"
 },
 {
-"at": 820.76,
+"at": 804.07,
 "txt": "Lock nut on from underneath"
 },
 {
-"at": 823.04,
+"at": 805.56,
 "txt": "By hand. Hand tight."
 }
 ]
@@ -228,8 +228,8 @@
 "k": "wrench",
 "at": 828.9,
 "out": 837.0,
-"crackAt": 836.59,
-"moneyAt": 841.88
+"crackAt": 831.53,
+"moneyAt": 833.77
 },
 {
 "k": "handtight",
@@ -267,8 +267,8 @@
 "k": "hose",
 "at": 1059.9,
 "out": 1072.45,
-"braidAt": 1075.16,
-"askAt": 1086.05
+"braidAt": 1064.02,
+"askAt": 1067.73
 },
 {
 "k": "packing",
@@ -280,7 +280,7 @@
 "k": "stuck",
 "at": 1141.8,
 "out": 1148.05,
-"mainAt": 1158.81
+"mainAt": 1144.62
 },
 {
 "k": "story",
@@ -290,7 +290,7 @@
 "big": "3 WEEKS",
 "sub": "the landlord said he'd send somebody",
 "key": "text your landlord, in writing",
-"keyAt": 1208.77
+"keyAt": 1198.97
 },
 {
 "k": "story",
@@ -310,7 +310,7 @@
 "big": "TAKE IT OUT",
 "sub": "dye test · clean the cap · then the valve",
 "key": "that box was waiting for this video",
-"keyAt": 1276.23
+"keyAt": 1267.93
 },
 {
 "k": "bill",
@@ -318,17 +318,17 @@
 "out": 1285.95,
 "rows": [
 {
-"at": 1289.59,
+"at": 1280.56,
 "item": "Running toilet · visit",
 "v": "$150–250"
 },
 {
-"at": 1298.11,
+"at": 1282.03,
 "item": "Fill valve, installed",
 "v": "a lot more"
 },
 {
-"at": 1303.57,
+"at": 1283.49,
 "item": "Weekend · night",
 "v": "more"
 }
@@ -342,7 +342,7 @@
 "big": "7 MINUTES",
 "sub": "a grain of sand · the cap back on",
 "key": "and now you know how to do it",
-"keyAt": 1323.01
+"keyAt": 1317.78
 },
 {
 "k": "recap",
@@ -397,7 +397,7 @@
 "The refill tube in the overflow"
 ],
 "tAt": [
-1431.43,
+1427.6,
 1434.11,
 1435.87,
 1436.97
@@ -422,8 +422,8 @@
 "A whole chapter on the toilet that won't stop"
 ],
 "tAt": [
-1465.43,
-1470.29
+1457.8,
+1467.19
 ]
 },
 {
