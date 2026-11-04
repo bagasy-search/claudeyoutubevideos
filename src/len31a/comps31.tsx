@@ -442,8 +442,8 @@ const Height: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h}>{
     </svg>
     <Label tt={tt} a={a} x={TK.x0 - 40} y={TK.ovTop - 130} txt='3"' col={C.ok} size={90} anchor="r" />
     <Label tt={tt} a={a + 0.3} x={TK.x0 - 40} y={TK.ovTop - 30} txt="above the overflow" col={C.dim} size={34} anchor="r" />
-    <Label tt={tt} a={c} x={TK.ovx + 160} y={TK.cl - 30} txt='C.L. mark · 1" above' col={C.amb} size={44} />
-    <Label tt={tt} a={k} x={TK.ovx + 160} y={TK.cl + 40} txt="PLUMBING CODE" col={C.ink} size={56} />
+    <Label tt={tt} a={c} x={TK.x1 + 50} y={TK.cl - 30} txt='C.L. mark · 1" above' col={C.amb} size={38} />
+    <Label tt={tt} a={k} x={TK.x1 + 50} y={TK.cl + 40} txt="PLUMBING CODE" col={C.ink} size={46} />
     <Label tt={tt} a={k + 0.5} x={TK.ovx + 160} y={TK.cl + 110} txt="keeps tank water out of your drinking water" col={C.dim} size={30} />
   </>; }}</Stage>;
 
@@ -508,8 +508,8 @@ const Level: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h}>{(
     <svg width={1920} height={1080} style={{ position: "absolute" }}><line x1={TK.x1 + 40} y1={TK.ovTop} x2={TK.x1 + 40} y2={TK.ovTop + 30} stroke={C.ok} strokeWidth={6} opacity={e(tt, a, a + 0.5)} /></svg>
     <Label tt={tt} a={a} x={TK.x1 + 70} y={TK.ovTop - 40} txt={'½" BELOW'} col={C.ok} size={64} />
     <Label tt={tt} a={a + 0.4} x={TK.x1 + 70} y={TK.ovTop + 40} txt="the overflow" col={C.dim} size={36} />
-    <Label tt={tt} a={s} x={TK.x0 - 60} y={300} txt={`${turns} TURNS`} col={C.amb} size={56} anchor="r" />
-    <Label tt={tt} a={s + 0.4} x={TK.x0 - 60} y={380} txt={'of the screw = ½" lower'} col={C.dim} size={38} anchor="r" />
+    <Label tt={tt} a={s} x={TK.x0 - 40} y={300} txt={`${turns} TURNS`} col={C.amb} size={56} anchor="r" />
+    <Label tt={tt} a={s + 0.4} x={TK.x0 - 40} y={380} txt={'of the screw = ½" lower'} col={C.dim} size={30} anchor="r" />
   </>; }}</Stage>;
 
 // 28 · la manguera de la pared: plástico viejo ✗ · trenzada $8 ✓ (con lo que se pide en la ferretería)

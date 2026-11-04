@@ -3,7 +3,7 @@
 "k": "gallons",
 "at": 13.28,
 "out": 17.05,
-"galAt": 14.88
+"galAt": 13.68
 },
 {
 "k": "four",
@@ -54,7 +54,7 @@
 "k": "spill",
 "at": 239.6,
 "out": 245.55,
-"downAt": 242.28
+"downAt": 240.0
 },
 {
 "k": "coffee",
@@ -67,7 +67,7 @@
 "k": "grit",
 "at": 333.6,
 "out": 343.7,
-"costAt": 338.35
+"costAt": 334.0
 },
 {
 "k": "kit",
@@ -106,7 +106,7 @@
 "k": "cup",
 "at": 455.34,
 "out": 460.66,
-"b1": 457.05,
+"b1": 455.74,
 "b2": 458.35
 },
 {
@@ -118,7 +118,7 @@
 "k": "decide",
 "at": 531.9,
 "out": 538.95,
-"sealAt": 536.42,
+"sealAt": 532.3,
 "valveAt": 537.18
 },
 {
@@ -133,13 +133,13 @@
 "k": "nomix",
 "at": 597.4,
 "out": 604.25,
-"boxAt": 600.52
+"boxAt": 597.8
 },
 {
 "k": "shutoff",
 "at": 613.1,
 "out": 621.05,
-"turnAt": 614.84
+"turnAt": 613.5
 },
 {
 "k": "out",
@@ -190,7 +190,7 @@
 "k": "twist",
 "at": 765.8,
 "out": 771.45,
-"leftAt": 767.62,
+"leftAt": 766.2,
 "ringAt": 769.03
 },
 {
@@ -207,7 +207,7 @@
 "kick": "THE NEW ONE GOES IN",
 "rows": [
 {
-"at": 801.09,
+"at": 799.6,
 "txt": "Washer down · through the hole"
 },
 {
@@ -228,7 +228,7 @@
 "k": "wrench",
 "at": 828.9,
 "out": 837.0,
-"crackAt": 831.53,
+"crackAt": 829.3,
 "moneyAt": 833.77
 },
 {
@@ -240,7 +240,7 @@
 "k": "tube",
 "at": 896.1,
 "out": 906.45,
-"fixAt": 901.21
+"fixAt": 896.5
 },
 {
 "k": "level",
@@ -267,20 +267,20 @@
 "k": "hose",
 "at": 1059.9,
 "out": 1072.45,
-"braidAt": 1064.02,
+"braidAt": 1060.3,
 "askAt": 1067.73
 },
 {
 "k": "packing",
 "at": 1119.3,
 "out": 1122.75,
-"nutAt": 1120.35
+"nutAt": 1119.7
 },
 {
 "k": "stuck",
 "at": 1141.8,
 "out": 1148.05,
-"mainAt": 1144.62
+"mainAt": 1142.2
 },
 {
 "k": "story",
@@ -290,7 +290,7 @@
 "big": "3 WEEKS",
 "sub": "the landlord said he'd send somebody",
 "key": "text your landlord, in writing",
-"keyAt": 1198.97
+"keyAt": 1193.5
 },
 {
 "k": "story",
@@ -310,7 +310,7 @@
 "big": "TAKE IT OUT",
 "sub": "dye test · clean the cap · then the valve",
 "key": "that box was waiting for this video",
-"keyAt": 1267.93
+"keyAt": 1263.2
 },
 {
 "k": "bill",
@@ -318,7 +318,7 @@
 "out": 1285.95,
 "rows": [
 {
-"at": 1280.56,
+"at": 1279.1,
 "item": "Running toilet · visit",
 "v": "$150–250"
 },
@@ -342,7 +342,7 @@
 "big": "7 MINUTES",
 "sub": "a grain of sand · the cap back on",
 "key": "and now you know how to do it",
-"keyAt": 1317.78
+"keyAt": 1313.7
 },
 {
 "k": "recap",
@@ -407,7 +407,7 @@
 "k": "books",
 "at": 1442.1,
 "out": 1453.95,
-"setAt": 1443.55
+"setAt": 1442.5
 },
 {
 "k": "pages",
