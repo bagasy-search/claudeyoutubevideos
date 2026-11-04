@@ -153,7 +153,7 @@
 },
 {
 "at": 649.74,
-"txt": "Water line nut · by hand"
+"txt": "Water line nut Â· by hand"
 },
 {
 "at": 656.5,
@@ -208,7 +208,7 @@
 "rows": [
 {
 "at": 801.09,
-"txt": "Washer down · through the hole"
+"txt": "Washer down Â· through the hole"
 },
 {
 "at": 802.58,
@@ -286,7 +286,7 @@
 "k": "story",
 "at": 1193.1,
 "out": 1205.45,
-"kick": "NORTHWEST SIDE · RETIRED · RENTING",
+"kick": "NORTHWEST SIDE Â· RETIRED Â· RENTING",
 "big": "3 WEEKS",
 "sub": "the landlord said he'd send somebody",
 "key": "text your landlord, in writing",
@@ -308,7 +308,7 @@
 "out": 1273.65,
 "kick": "THE BOX IN YOUR CLOSET",
 "big": "TAKE IT OUT",
-"sub": "dye test · clean the cap · then the valve",
+"sub": "dye test Â· clean the cap Â· then the valve",
 "key": "that box was waiting for this video",
 "keyAt": 1267.93
 },
@@ -319,8 +319,8 @@
 "rows": [
 {
 "at": 1280.56,
-"item": "Running toilet · visit",
-"v": "$150–250"
+"item": "Running toilet Â· visit",
+"v": "$150â€“250"
 },
 {
 "at": 1282.03,
@@ -329,7 +329,7 @@
 },
 {
 "at": 1283.49,
-"item": "Weekend · night",
+"item": "Weekend Â· night",
 "v": "more"
 }
 ]
@@ -340,7 +340,7 @@
 "out": 1322.85,
 "kick": "THAT'S THE CALL",
 "big": "7 MINUTES",
-"sub": "a grain of sand · the cap back on",
+"sub": "a grain of sand Â· the cap back on",
 "key": "and now you know how to do it",
 "keyAt": 1317.78
 },

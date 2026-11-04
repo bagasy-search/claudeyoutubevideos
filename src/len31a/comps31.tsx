@@ -170,7 +170,7 @@ const Anatomy: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h}>
   const ks = ["fv", "float", "overflow", "flapper"], L = ["FILL VALVE", "FLOAT", "OVERFLOW TUBE", "FLAPPER"];
   const ts = [at(h, "fvAt", 0.4), at(h, "floatAt", 1.4), at(h, "ovAt", 2.4), at(h, "flAt", 3.4)];
   const cur = ts.reduce((c, x, i) => (tt >= x ? i : c), -1);
-  const pos = [[TK.fvx - 70, TK.fvTop - 40, "r"], [TK.fvx - 70, TK.lvl - 40, "r"], [TK.ovx + 60, TK.ovTop - 20, "l"], [TK.ovx + 160, TK.y1 - 110, "l"]] as const;
+  const pos = [[TK.x0 - 40, TK.fvTop - 40, "r"], [TK.x0 - 40, TK.lvl - 40, "r"], [TK.ovx + 60, TK.ovTop - 20, "l"], [TK.ovx + 160, TK.y1 - 110, "l"]] as const;
   return <>
     <Tank tt={tt} hi={cur >= 0 ? ks[cur] : undefined} />
     {L.map((l, i) => <Label key={i} tt={tt} a={ts[i]} x={pos[i][0]} y={pos[i][1]} txt={l} anchor={pos[i][2] as any} col={i === cur ? C.tur2 : C.dim} size={i === cur ? 46 : 34} />)}
@@ -241,7 +241,7 @@ const Spill: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h}>{(
   return <>
     <Kick tt={tt} txt="WATER SPILLING INTO THE OVERFLOW?" col={C.amb} />
     <Tank tt={tt} hi="float" level={lv} spill={sp} floatY={lv - 20} />
-    <Label tt={tt} a={0.6} x={TK.ovx + 70} y={TK.ovTop - 30} txt="float set too high" col={C.amb} />
+    <Label tt={tt} a={0.6} x={TK.x1 + 50} y={TK.ovTop - 30} txt="float set too high" col={C.amb} size={40} />
     <Label tt={tt} a={d} x={TK.fvx - 80} y={TK.lvl - 10} txt="TURN IT DOWN" col={C.ok} anchor="r" size={52} />
     <Big tt={tt} at={d + 0.6} txt="5 minutes · no parts" y={940} size={50} col={C.ink} />
   </>; }}</Stage>;
@@ -253,7 +253,7 @@ const Tube: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h}>{(t
     <Kick tt={tt} txt="THE REFILL TUBE" />
     <Tank tt={tt} hi="tube" tube={ok ? "ok" : "down"} level={ok ? TK.lvl : TK.lvl + 60 + 30 * Math.sin(tt * 2)} />
     <div style={{ position: "absolute", left: 1450, top: 330 }}><Badge p={ok ? tt - f : tt - 0.4} ok={ok} size={150} /></div>
-    <Label tt={tt} a={ok ? f + 0.2 : 0.6} x={1450} y={510} txt={ok ? "clipped above the water" : "shoved down the pipe"} col={ok ? C.ok : C.red} size={44} />
+    <Label tt={tt} a={ok ? f + 0.2 : 0.6} x={1450} y={510} txt={ok ? "clipped above the water" : "shoved down the pipe"} col={ok ? C.ok : C.red} size={36} />
     {!ok && <Label tt={tt} a={1.1} x={1450} y={570} txt="siphons the tank" col={C.dim} size={36} />}
   </>; }}</Stage>;
 
@@ -347,9 +347,9 @@ const Seal: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h}>{(t
   const a1 = at(h, "goodAt", 0.4), a2 = at(h, "wornAt", 1.6);
   const S = ({ x, worn, a }: { x: number; worn?: boolean; a: number }) => { const p = phys(tt, a, 6, 0.5);
     return <svg width={520} height={420} style={{ position: "absolute", left: x, top: 300, opacity: cl(p * 1.4), transform: `perspective(1200px) rotateX(${(1 - p) * 50 + 30}deg)` }}>
-      <circle cx={260} cy={210} r={190} fill="#1b1b1b" /><circle cx={260} cy={210} r={150} fill="#232323" />
-      {worn && <circle cx={260} cy={210} r={92} fill="none" stroke="#0b0b0b" strokeWidth={22} />}{worn && <circle cx={260} cy={210} r={92} fill="none" stroke="#3a3a3a" strokeWidth={4} />}
-      <circle cx={260} cy={210} r={40} fill="#0d0d0d" /></svg>; };
+      <circle cx={260} cy={210} r={190} fill="#4a5056" stroke="#8a949c" strokeWidth={5} /><circle cx={260} cy={210} r={150} fill="#5a6168" />
+      {worn && <circle cx={260} cy={210} r={92} fill="none" stroke="#2a2e32" strokeWidth={22} />}{worn && <circle cx={260} cy={210} r={92} fill="none" stroke="#ff4d3d" strokeWidth={4} />}
+      <circle cx={260} cy={210} r={40} fill="#0e1418" stroke="#8a949c" strokeWidth={3} /></svg>; };
   return <>
     <Kick tt={tt} txt="THE RUBBER SEAL INSIDE THE CAP" />
     <S x={300} a={a1} /><S x={1100} a={a2} worn />
@@ -440,8 +440,8 @@ const Height: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h}>{
       <line x1={TK.fvx + 30} y1={TK.cl} x2={TK.x1 + 40} y2={TK.cl} stroke={C.amb} strokeWidth={3} strokeDasharray="8 8" opacity={e(tt, c, c + 0.5)} />
       {dimL(TK.ovTop, TK.cl, TK.ovx + 120, e(tt, c, c + 0.6), C.amb)}
     </svg>
-    <Label tt={tt} a={a} x={TK.fvx - 150} y={TK.ovTop - 130} txt='3"' col={C.ok} size={90} anchor="r" />
-    <Label tt={tt} a={a + 0.3} x={TK.fvx - 150} y={TK.ovTop - 30} txt="above the overflow" col={C.dim} size={34} anchor="r" />
+    <Label tt={tt} a={a} x={TK.x0 - 40} y={TK.ovTop - 130} txt='3"' col={C.ok} size={90} anchor="r" />
+    <Label tt={tt} a={a + 0.3} x={TK.x0 - 40} y={TK.ovTop - 30} txt="above the overflow" col={C.dim} size={34} anchor="r" />
     <Label tt={tt} a={c} x={TK.ovx + 160} y={TK.cl - 30} txt='C.L. mark · 1" above' col={C.amb} size={44} />
     <Label tt={tt} a={k} x={TK.ovx + 160} y={TK.cl + 40} txt="PLUMBING CODE" col={C.ink} size={56} />
     <Label tt={tt} a={k + 0.5} x={TK.ovx + 160} y={TK.cl + 110} txt="keeps tank water out of your drinking water" col={C.dim} size={30} />
@@ -508,8 +508,8 @@ const Level: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h}>{(
     <svg width={1920} height={1080} style={{ position: "absolute" }}><line x1={TK.x1 + 40} y1={TK.ovTop} x2={TK.x1 + 40} y2={TK.ovTop + 30} stroke={C.ok} strokeWidth={6} opacity={e(tt, a, a + 0.5)} /></svg>
     <Label tt={tt} a={a} x={TK.x1 + 70} y={TK.ovTop - 40} txt={'½" BELOW'} col={C.ok} size={64} />
     <Label tt={tt} a={a + 0.4} x={TK.x1 + 70} y={TK.ovTop + 40} txt="the overflow" col={C.dim} size={36} />
-    <Label tt={tt} a={s} x={TK.x0 - 60} y={300} txt={`${turns} / 8 TURNS`} col={C.amb} size={56} anchor="r" />
-    <Label tt={tt} a={s + 0.4} x={TK.x0 - 60} y={380} txt={'= ½" of float'} col={C.dim} size={38} anchor="r" />
+    <Label tt={tt} a={s} x={TK.x0 - 60} y={300} txt={`${turns} TURNS`} col={C.amb} size={56} anchor="r" />
+    <Label tt={tt} a={s + 0.4} x={TK.x0 - 60} y={380} txt={'of the screw = ½" lower'} col={C.dim} size={38} anchor="r" />
   </>; }}</Stage>;
 
 // 28 · la manguera de la pared: plástico viejo ✗ · trenzada $8 ✓ (con lo que se pide en la ferretería)
@@ -585,7 +585,7 @@ const Bill: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h}>{(t
 const Chapter: React.FC<{ t: number; h: H }> = ({ t, h }) => <Stage t={t} h={h}>{(tt) => {
   const p = phys(tt, 0.15, 5.5, 0.5);
   return <>
-    <div style={{ position: "absolute", left: 0, width: 1920, top: 210, textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: 380, color: "transparent", WebkitTextStroke: `4px ${C.tur}`, opacity: 0.55 * cl(p), transform: `scale(${0.8 + 0.2 * p})` }}>{h.n}</div>
+    <div style={{ position: "absolute", left: 0, width: 1920, top: 40, textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: 340, color: "transparent", WebkitTextStroke: `4px ${C.tur}`, opacity: 0.35 * cl(p), transform: `scale(${0.8 + 0.2 * p})` }}>{h.n}</div>
     <Big tt={tt} at={0.4} txt={h.name} y={470} size={140} />
     <Big tt={tt} at={0.8} txt={h.sub} y={660} size={52} col={C.tur2} />
     <div style={{ position: "absolute", left: 960 - 260 * cl((tt - 0.6) * 1.5), width: 520 * cl((tt - 0.6) * 1.5), top: 640, height: 6, background: C.ok, borderRadius: 3 }} />
