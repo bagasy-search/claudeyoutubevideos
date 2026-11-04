@@ -14,6 +14,12 @@ jobs:
         with: { node-version: "20" }
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji
       - run: cd canvas && npm init -y >/dev/null && npm i puppeteer@23.11.1 --silent
+      - name: clips a VP9/Opus (el Chrome del farm no decodifica H.264/AAC)
+        run: |
+          for h in $(cat canvas/RENDER.txt); do grep -oE 'assets/[A-Za-z0-9_./-]+\.mp4' "canvas/$h" || true; done | sort -u | while read a; do
+            f="canvas/$a"; [ -f "$f" ] || continue
+            ffmpeg -nostdin -v error -y -i "$f" -c:v libvpx-vp9 -deadline realtime -cpu-used 8 -row-mt 1 -b:v 5M -g 6 -pix_fmt yuv420p -c:a libopus -b:a 128k "${f%.mp4}.vp9.mp4" && mv "${f%.mp4}.vp9.mp4" "$f" && echo "ok $a"
+          done
       - run: for f in $(cat canvas/RENDER.txt); do node canvas/render.mjs "canvas/$f" "canvas/${f%.html}.mp4" 60; done
       - uses: actions/upload-artifact@v4
         with:
