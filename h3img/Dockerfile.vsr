@@ -1,0 +1,10 @@
+# 3-nov-2026: capa encima de h3-comfy:fullup con FlashVSR 1.1 (upscaler de video por difusión, 1 paso, sin titileo).
+# Nodo de la comunidad 1038lab/ComfyUI-FlashVSR (sin Block-Sparse-Attention) + pesos 1038lab/FlashVSR. Pesos públicos.
+ARG VARIANT=full
+FROM ghcr.io/bagasy-search/h3-comfy:${VARIANT}up
+RUN mkdir -p /opt/h3nodes && git clone --depth 1 https://github.com/1038lab/ComfyUI-FlashVSR /opt/h3nodes/ComfyUI-FlashVSR && \
+    $(cat /opt/h3py) -m pip install -q einops && \
+    $(cat /opt/h3py) -c "from huggingface_hub import hf_hub_download as h; [h('1038lab/FlashVSR', f, local_dir='/opt/h3/FlashVSR') for f in ['FlashVSR1_1.safetensors','LQ_proj_in.safetensors','Prompt.safetensors','TCDecoder.safetensors','Wan2.1_VAE.safetensors','Wan2_1_FlashVSR_LQ_proj_model_bf16.safetensors']]" && \
+    rm -rf /opt/h3/FlashVSR/.cache /root/.cache/huggingface && ls -la /opt/h3/FlashVSR
+COPY h3img/onstart_baked.sh /opt/onstart_baked.sh
+RUN chmod +x /opt/onstart_baked.sh
