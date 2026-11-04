@@ -140,8 +140,9 @@ export const Quote: React.FC<D & { text: string; who: string; pos?: Pos }> = ({ 
     <div style={{ position: "absolute", ...place(pos), opacity: op, width: 1300, textAlign: "center" }}>
       <div style={{ fontFamily: FONT.serif, fontSize: 64, lineHeight: 1.3, color: C.white, textShadow: shadow }}>
         <span style={{ color: C.brass, fontSize: 90 }}>“</span>
-        {words.map((w, i) => <span key={i} style={{ opacity: k(f, 8 + i * 3, 16 + i * 3) }}>{w} </span>)}
-        <span style={{ color: C.brass, fontSize: 90 }}>”</span>
+        {words.map((w, i) => i < words.length - 1
+          ? <span key={i} style={{ opacity: k(f, 8 + i * 3, 16 + i * 3) }}>{w} </span>
+          : <span key={i} style={{ whiteSpace: "nowrap" }}><span style={{ opacity: k(f, 8 + i * 3, 16 + i * 3) }}>{w}</span><span style={{ color: C.brass, fontSize: 90, lineHeight: 0 }}>”</span></span>)}
       </div>
       <div style={{ fontFamily: FONT.plate, fontWeight: 700, fontSize: 40, color: C.brassHi, letterSpacing: 5, marginTop: 26, textTransform: "uppercase", opacity: k(f, 14 + words.length * 3, 26 + words.length * 3) }}>— {who}</div>
     </div>
@@ -154,7 +155,7 @@ export const ChapterPlate: React.FC<D & { n: number; title: string }> = ({ dur, 
   const op = io(f, dur, 10, 12);
   const w = k(f, 4, 22);
   return (
-    <div style={{ position: "absolute", left: 90, top: 80, display: "flex", alignItems: "center", gap: 22, opacity: op }}>
+    <div style={{ position: "absolute", left: 90, bottom: 100, display: "flex", alignItems: "center", gap: 22, opacity: op }}>
       <div style={{ transform: `rotate(${-30 + 30 * w}deg)` }}><TelegraphDial angle={-170 + 80 * w} size={130} /></div>
       <div style={{ ...plateStyle, padding: "14px 30px 12px", clipPath: `inset(0 ${100 - 100 * w}% 0 0)` }}>
         <div style={{ fontSize: 26, letterSpacing: 8, opacity: 0.75 }}>{`CHAPTER ${n}`}</div>
