@@ -1,0 +1,19 @@
+# Render de películas en canvas (HTML con window.seek) en el farm: se dispara con push a ramas canvas-*.
+name: canvas
+on:
+  push:
+    branches: ["canvas-*"]
+    paths: ["canvas/**", ".github/workflows/canvas.yml"]
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { sparse-checkout: canvas }
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji
+      - run: cd canvas && npm init -y >/dev/null && npm i puppeteer@23.11.1 --silent
+      - run: for f in canvas/film_*.html; do node canvas/render.mjs "$f" "${f%.html}.mp4" 60; done
+      - uses: actions/upload-artifact@v4
+        with: { name: canvas-mp4, path: canvas/*.mp4 }
