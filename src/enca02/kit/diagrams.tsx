@@ -147,7 +147,7 @@ export const ShipCut: React.FC<D & { highlight?: Zone; label?: string; sub?: str
         </g>
       </svg>
       {label && (
-        <div style={{ position: "absolute", left: 120, top: 110, opacity: k(f, 34, 48), transform: `translateX(${-30 * (1 - k(f, 34, 48))}px)` }}>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 130, textAlign: "center", opacity: k(f, 34, 48), transform: `translateY(${-20 * (1 - k(f, 34, 48))}px)` }}>
           <div style={{ fontFamily: FONT.plate, fontWeight: 700, fontSize: 84, color: C.white, letterSpacing: 2, textTransform: "uppercase", textShadow: shadow, lineHeight: 1 }}>{label}</div>
           {sub && <div style={{ fontFamily: FONT.mono, fontSize: 32, color: C.brassHi, marginTop: 14 }}>{sub}</div>}
         </div>
@@ -283,7 +283,7 @@ export const RouteMap: React.FC<D & { points: Port[]; view: [number, number, num
         <circle cx={ship[0]} cy={ship[1]} r={9 * sc} fill={C.brassHi} stroke={C.ink} strokeWidth={3 * sc} />
       </svg>
       {title && (
-        <div style={{ position: "absolute", left: 90, top: 80 }}>
+        <div style={{ position: "absolute", left: 90, bottom: 80 }}>
           <div style={{ fontFamily: FONT.plate, fontWeight: 700, fontSize: 64, color: C.white, textTransform: "uppercase", letterSpacing: 2, textShadow: shadow }}>{title}</div>
           {sub && <div style={{ fontFamily: FONT.mono, fontSize: 30, color: C.brassHi, marginTop: 8 }}>{sub}</div>}
         </div>
