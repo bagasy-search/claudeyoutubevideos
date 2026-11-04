@@ -1,0 +1,439 @@
+[
+{
+"k": "gallons",
+"at": 13.28,
+"out": 17.05,
+"galAt": 14.88
+},
+{
+"k": "four",
+"at": 52.9,
+"out": 63.0,
+"fourAt": 53.2
+},
+{
+"k": "anatomy",
+"at": 103.7,
+"out": 115.3,
+"fvAt": 103.9,
+"floatAt": 106.98,
+"ovAt": 999,
+"flAt": 999
+},
+{
+"k": "anatomy",
+"at": 119.6,
+"out": 129.7,
+"fvAt": 119.7,
+"floatAt": 119.7,
+"ovAt": 122.48,
+"flAt": 131.34
+},
+{
+"k": "twoways",
+"at": 151.7,
+"out": 160.45,
+"inAt": 147.98,
+"outAt": 152.08
+},
+{
+"k": "dye",
+"at": 189.36,
+"out": 196.13,
+"dropAt": 189.46,
+"waitAt": 195.1
+},
+{
+"k": "dyeread",
+"at": 202.3,
+"out": 212.4,
+"clearAt": 200.42,
+"colorAt": 206.88
+},
+{
+"k": "spill",
+"at": 239.6,
+"out": 245.55,
+"downAt": 257.94
+},
+{
+"k": "coffee",
+"at": 285.7,
+"out": 295.8,
+"billAt": 285.9,
+"secAt": 288
+},
+{
+"k": "grit",
+"at": 333.6,
+"out": 343.7,
+"costAt": 351.98
+},
+{
+"k": "kit",
+"at": 355.6,
+"out": 360.7
+},
+{
+"k": "shutoff",
+"at": 367.4,
+"out": 374.5,
+"turnAt": 367.52
+},
+{
+"k": "eighth",
+"at": 398.32,
+"out": 404.42,
+"twistAt": 395.58
+},
+{
+"k": "stays",
+"at": 413.9,
+"out": 426.0,
+"r1": 411.38,
+"r2": 413.72,
+"r3": 416.14,
+"shortAt": 422.16
+},
+{
+"k": "seal",
+"at": 448.3,
+"out": 455.64,
+"goodAt": 445.52,
+"wornAt": 448.22
+},
+{
+"k": "cup",
+"at": 455.34,
+"out": 460.66,
+"b1": 470.94,
+"b2": 475.98
+},
+{
+"k": "fountain",
+"at": 482.2,
+"out": 488.15
+},
+{
+"k": "decide",
+"at": 531.9,
+"out": 538.95,
+"sealAt": 536.42,
+"valveAt": 560.28
+},
+{
+"k": "mistake",
+"at": 581.6,
+"out": 587.15,
+"n": 2,
+"name": "NEW CAP, OLD BODY",
+"sub": "it's a sneaky one"
+},
+{
+"k": "nomix",
+"at": 597.4,
+"out": 604.25,
+"boxAt": 607.48
+},
+{
+"k": "shutoff",
+"at": 613.1,
+"out": 621.05,
+"turnAt": 614.84
+},
+{
+"k": "out",
+"at": 665.8,
+"out": 672.35,
+"kick": "TAKING THE OLD ONE OUT",
+"rows": [
+{
+"at": 625.16,
+"txt": "Sponge out the last water"
+},
+{
+"at": 649.74,
+"txt": "Water line nut · by hand"
+},
+{
+"at": 656.5,
+"txt": "Lock nut under the tank"
+},
+{
+"at": 672.48,
+"txt": "Lift it straight out"
+}
+]
+},
+{
+"k": "mistake",
+"at": 682.4,
+"out": 686.55,
+"n": 3,
+"name": "THE HEIGHT",
+"sub": "almost nobody knows about this one"
+},
+{
+"k": "short",
+"at": 699.3,
+"out": 704.05
+},
+{
+"k": "height",
+"at": 734.9,
+"out": 743.95,
+"threeAt": 720.3,
+"clAt": 729.7,
+"codeAt": 739.98
+},
+{
+"k": "twist",
+"at": 765.8,
+"out": 771.45,
+"leftAt": 772.07,
+"ringAt": 793.04
+},
+{
+"k": "twist",
+"at": 781.2,
+"out": 790.35,
+"leftAt": 781.6,
+"ringAt": 793.04
+},
+{
+"k": "out",
+"at": 799.2,
+"out": 808.05,
+"kick": "THE NEW ONE GOES IN",
+"rows": [
+{
+"at": 808.71,
+"txt": "Washer down · through the hole"
+},
+{
+"at": 814.73,
+"txt": "Nipple faces the center"
+},
+{
+"at": 820.76,
+"txt": "Lock nut on from underneath"
+},
+{
+"at": 823.04,
+"txt": "By hand. Hand tight."
+}
+]
+},
+{
+"k": "wrench",
+"at": 828.9,
+"out": 837.0,
+"crackAt": 836.59,
+"moneyAt": 841.88
+},
+{
+"k": "handtight",
+"at": 848.85,
+"out": 854.95
+},
+{
+"k": "tube",
+"at": 896.1,
+"out": 906.45,
+"fixAt": 901.21
+},
+{
+"k": "level",
+"at": 994.9,
+"out": 1005.85,
+"halfAt": 964.62,
+"eightAt": 995.04
+},
+{
+"k": "spill",
+"at": 1026.7,
+"out": 1039.65,
+"downAt": 9999
+},
+{
+"k": "chapter",
+"at": 1044.1,
+"out": 1051.05,
+"n": "+2",
+"name": "TWO MORE THINGS",
+"sub": "the reason it floods next year"
+},
+{
+"k": "hose",
+"at": 1059.9,
+"out": 1072.45,
+"braidAt": 1075.16,
+"askAt": 1086.05
+},
+{
+"k": "packing",
+"at": 1119.3,
+"out": 1122.75,
+"nutAt": 1120.35
+},
+{
+"k": "stuck",
+"at": 1141.8,
+"out": 1148.05,
+"mainAt": 1158.81
+},
+{
+"k": "story",
+"at": 1193.1,
+"out": 1205.45,
+"kick": "NORTHWEST SIDE · RETIRED · RENTING",
+"big": "3 WEEKS",
+"sub": "the landlord said he'd send somebody",
+"key": "text your landlord, in writing",
+"keyAt": 1208.77
+},
+{
+"k": "story",
+"at": 1244.2,
+"out": 1253.95,
+"kick": "CABINS UP IN WISCONSIN",
+"big": "7 TOILETS",
+"sub": "every spring, half of them ran",
+"key": "a few seals on a shelf",
+"keyAt": 1244.97
+},
+{
+"k": "story",
+"at": 1262.8,
+"out": 1273.65,
+"kick": "THE BOX IN YOUR CLOSET",
+"big": "TAKE IT OUT",
+"sub": "dye test · clean the cap · then the valve",
+"key": "that box was waiting for this video",
+"keyAt": 1276.23
+},
+{
+"k": "bill",
+"at": 1278.7,
+"out": 1285.95,
+"rows": [
+{
+"at": 1289.59,
+"item": "Running toilet · visit",
+"v": "$150–250"
+},
+{
+"at": 1298.11,
+"item": "Fill valve, installed",
+"v": "a lot more"
+},
+{
+"at": 1303.57,
+"item": "Weekend · night",
+"v": "more"
+}
+]
+},
+{
+"k": "story",
+"at": 1313.3,
+"out": 1322.85,
+"kick": "THAT'S THE CALL",
+"big": "7 MINUTES",
+"sub": "a grain of sand · the cap back on",
+"key": "and now you know how to do it",
+"keyAt": 1323.01
+},
+{
+"k": "recap",
+"at": 1327.7,
+"out": 1340.15,
+"part": 1
+},
+{
+"k": "recap",
+"at": 1344.6,
+"out": 1355.65,
+"part": 2
+},
+{
+"k": "recap",
+"at": 1360.3,
+"out": 1372.55,
+"part": 5
+},
+{
+"k": "recap",
+"at": 1377.3,
+"out": 1389.85,
+"part": 3
+},
+{
+"k": "recap",
+"at": 1394.6,
+"out": 1406.25,
+"part": 4
+},
+{
+"k": "recap",
+"at": 1410.1,
+"out": 1422.35,
+"part": 6
+},
+{
+"k": "pages",
+"at": 1427.2,
+"out": 1439.05,
+"imgs": [
+"g_clean",
+"g_dye",
+"g_level",
+"g_refill"
+],
+"tags": [
+"Clean the fill valve instead of replacing it",
+"The food-coloring test",
+"The right water level",
+"The refill tube in the overflow"
+],
+"tAt": [
+1431.43,
+1434.11,
+1435.87,
+1436.97
+]
+},
+{
+"k": "books",
+"at": 1442.1,
+"out": 1453.95,
+"setAt": 1443.55
+},
+{
+"k": "pages",
+"at": 1457.4,
+"out": 1469.95,
+"imgs": [
+"g_bill",
+"g_contents"
+],
+"tags": [
+"What the plumber charges, next to every fix",
+"A whole chapter on the toilet that won't stop"
+],
+"tAt": [
+1465.43,
+1470.29
+]
+},
+{
+"k": "ask",
+"at": 1498.4,
+"out": 1516.97,
+"q": [
+"How long has your toilet",
+"been running?",
+"A night, a week, a year?"
+]
+}
+]
