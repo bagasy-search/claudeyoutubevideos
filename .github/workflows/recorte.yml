@@ -1,13 +1,14 @@
-# RECORTE de personas cuadro por cuadro (rembg u2net_human_seg en CPU) -> webm VP9 con alfa, para poner texto DETRÁS
-# de la gente en una toma. Rama recorte-<slug> con params.json {slug, clips:["b3","d2"], modelo?}; los mp4 están en
-# el release recorte-<slug>; devuelve <clip>_fg.webm al mismo release.
+# RECORTE por PROFUNDIDAD cuadro por cuadro (Depth Anything V2 Small en CPU) -> webm VP9 con alfa de lo que está MÁS
+# CERCA que un plano dado, para poner texto ENTRE capas de una toma (lo cercano tapa las letras, lo lejano queda atrás).
+# Disparo: workflow_dispatch params = {slug, clips:[{c:"d2", y:0.3, q:0.6}]}; y = altura del texto (0-1), q = cuantil de
+# profundidad en esa franja que hace de plano del texto (más alto = menos cosas adelante). Los mp4 van en el release
+# recorte-<slug> y vuelve <clip>_fg.webm al mismo release. (rembg u2net_human_seg NO sirve: con una multitud con casco
+# devolvió la máscara vacía, 5-nov-2026.)
 name: recorte
 on:
-  push:
-    branches: ['recorte-*']
   workflow_dispatch:
     inputs:
-      params: { description: 'JSON {slug, clips:[...], modelo?}', required: true }
+      params: { description: 'JSON {slug, clips:[{c,y,q}]}', required: true }
 permissions:
   contents: write
 jobs:
@@ -16,53 +17,50 @@ jobs:
     outputs:
       matrix: ${{ steps.m.outputs.matrix }}
     steps:
-      - uses: actions/checkout@v4
-      - name: params
-        if: ${{ inputs.params != '' }}
-        run: echo '${{ inputs.params }}' > params.json
       - id: m
-        run: echo "matrix=$(python3 -c "import json;print(json.dumps(json.load(open('params.json'))['clips']))")" >> "$GITHUB_OUTPUT"
+        env: { P: "${{ inputs.params }}" }
+        run: echo "matrix=$(python3 -c "import json,os;print(json.dumps(json.loads(os.environ['P'])['clips']))")" >> "$GITHUB_OUTPUT"
   clip:
     needs: prepare
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 50
     strategy:
       fail-fast: false
       matrix:
-        c: ${{ fromJSON(needs.prepare.outputs.matrix) }}
-    env: { GH_TOKEN: "${{ github.token }}" }
+        k: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    env: { GH_TOKEN: "${{ github.token }}", P: "${{ inputs.params }}", C: "${{ matrix.k.c }}", Y: "${{ matrix.k.y }}", Q: "${{ matrix.k.q }}" }
     steps:
-      - uses: actions/checkout@v4
-      - name: params
-        if: ${{ inputs.params != '' }}
-        run: echo '${{ inputs.params }}' > params.json
       - name: deps
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
-          pip install -q "rembg[cpu]" pillow numpy
-      - name: recortar
+          pip install -q --index-url https://download.pytorch.org/whl/cpu torch
+          pip install -q transformers pillow numpy
+      - name: profundidad
         run: |
-          S=$(python3 -c "import json;print(json.load(open('params.json'))['slug'])")
-          M=$(python3 -c "import json;print(json.load(open('params.json')).get('modelo','u2net_human_seg'))")
-          gh release download "recorte-$S" -p "${{ matrix.c }}.mp4" -R "$GITHUB_REPOSITORY"
+          S=$(python3 -c "import json,os;print(json.loads(os.environ['P'])['slug'])")
+          gh release download "recorte-$S" -p "$C.mp4" -R "$GITHUB_REPOSITORY"
           mkdir fr al
-          ffmpeg -v error -i "${{ matrix.c }}.mp4" -vf scale=960:-2 fr/%04d.png
-          python3 - "$M" <<'PY'
-          import sys, os, glob
-          from rembg import new_session, remove
+          ffmpeg -v error -i "$C.mp4" -vf scale=768:-2 fr/%04d.png
+          python3 - <<'PY'
+          import os, glob, numpy as np, torch
           from PIL import Image
-          from concurrent.futures import ThreadPoolExecutor
-          s = new_session(sys.argv[1])
-          fs = sorted(glob.glob("fr/*.png"))
-          def uno(f):
-              m = remove(Image.open(f), session=s, only_mask=True, post_process_mask=True)
-              m.save("al/" + os.path.basename(f))
-          with ThreadPoolExecutor(4) as ex: list(ex.map(uno, fs))
+          from transformers import pipeline
+          torch.set_num_threads(os.cpu_count())
+          pipe = pipeline("depth-estimation", model="depth-anything/Depth-Anything-V2-Small-hf", device=-1)
+          fs = sorted(glob.glob("fr/*.png")); y = float(os.environ.get("Y") or 0.4); q = float(os.environ.get("Q") or 0.6)
+          ds = [np.array(pipe(Image.open(f))["predicted_depth"].squeeze().float().numpy()) for f in fs]
+          H = ds[0].shape[0]; a, b = int(max(0, y - 0.09) * H), int(min(1, y + 0.09) * H)
+          # plano del texto fijo para todo el clip (no parpadea): cuantil q de la franja del texto, en el cuadro del medio
+          ref = ds[len(ds) // 2]; thr = float(np.quantile(ref[a:b], q)); rng = float(np.quantile(ref, 0.98) - np.quantile(ref, 0.02)) or 1.0
+          print("umbral", thr, "rango", rng)
+          for f, d in zip(fs, ds):
+              m = np.clip((d - thr) / (0.06 * rng) + 0.5, 0, 1)
+              Image.fromarray((m * 255).astype(np.uint8)).resize(Image.open(f).size, Image.BILINEAR).save("al/" + os.path.basename(f))
           print(len(fs), "mascaras")
           PY
-          # mascara suavizada y estable en el tiempo (tmix) -> alfa del clip original a 1920
-          ffmpeg -v error -y -i "${{ matrix.c }}.mp4" -framerate 24 -i al/%04d.png -filter_complex \
-            "[1]scale=1920:1080,format=gray,tmix=frames=3,gblur=sigma=1.5[a];[0:v]format=rgba[v];[v][a]alphamerge,format=yuva420p" \
-            -an -c:v libvpx-vp9 -pix_fmt yuva420p -b:v 6M -auto-alt-ref 0 -row-mt 1 -deadline good -cpu-used 4 "${{ matrix.c }}_fg.webm"
-          ls -la *_fg.webm
-          for n in 1 2 3; do gh release upload "recorte-$S" "${{ matrix.c }}_fg.webm" --clobber -R "$GITHUB_REPOSITORY" && break; sleep $((n*8)); done
+          ffmpeg -v error -y -i "$C.mp4" -framerate 24 -i al/%04d.png -filter_complex \
+            "[1]scale=1920:1080,format=gray,tmix=frames=3,gblur=sigma=2[a];[0:v]format=rgba[v];[v][a]alphamerge,format=yuva420p" \
+            -an -c:v libvpx-vp9 -pix_fmt yuva420p -b:v 6M -auto-alt-ref 0 -row-mt 1 -deadline good -cpu-used 4 "${C}_fg.webm"
+          ffmpeg -v error -y -i al/0095.png -vf scale=480:-2 "${C}_mask.jpg"
+          ls -la "${C}_fg.webm"
+          for n in 1 2 3; do gh release upload "recorte-$S" "${C}_fg.webm" "${C}_mask.jpg" --clobber -R "$GITHUB_REPOSITORY" && break; sleep $((n*8)); done
