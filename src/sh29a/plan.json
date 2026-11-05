@@ -1,0 +1,1664 @@
+{
+"segs": [
+[
+3.5,
+11.5,
+"shot",
+"v01_bolsas"
+],
+[
+13.18,
+15.787,
+"shot",
+"n_martillos_banco"
+],
+[
+22.1,
+30.68,
+"shot",
+"n_bolsas_negras_entrada"
+],
+[
+30.68,
+34.299,
+"shot",
+"n_taller_padre_viejo"
+],
+[
+37.938,
+44.12,
+"shot",
+"n_casa_japonesa_frente"
+],
+[
+44.12,
+46.97,
+"shot",
+"n_cuaderno_reglas"
+],
+[
+50.45,
+56.82,
+"shot",
+"n_garaje_lleno"
+],
+[
+56.82,
+63.371,
+"shot",
+"n_puerta_garaje_entreabierta"
+],
+[
+69.024,
+75.28,
+"shot",
+"n_cajas_regalo_garaje"
+],
+[
+75.28,
+78.693,
+"shot",
+"n_estante_garaje_lleno"
+],
+[
+84.4,
+91.02,
+"shot",
+"n_un_estante"
+],
+[
+91.02,
+94.04,
+"shot",
+"n_cinta_mango_sierra"
+],
+[
+94.04,
+97.3,
+"shot",
+"n_balde_volcado"
+],
+[
+101.05,
+104.38,
+"shot",
+"n_herramientas_pared"
+],
+[
+104.38,
+112.46,
+"shot",
+"n_tatami_cajas"
+],
+[
+112.46,
+114.268,
+"shot",
+"n_te_banco_manana"
+],
+[
+118.008,
+122.48,
+"shot",
+"n_cepillo_carpintero"
+],
+[
+122.48,
+127.84,
+"shot",
+"n_galpon_madera"
+],
+[
+127.84,
+129.394,
+"shot",
+"n_cajas_galpon"
+],
+[
+134.436,
+137.06,
+"shot",
+"n_radios_rotas"
+],
+[
+137.06,
+142.46,
+"shot",
+"n_latas_clavos"
+],
+[
+142.46,
+147.4,
+"shot",
+"n_formones_fila"
+],
+[
+153.633,
+162.42,
+"shot",
+"n_reglas_pegadas"
+],
+[
+162.42,
+165.493,
+"shot",
+"n_mesa_plegable"
+],
+[
+170.944,
+180.5,
+"shot",
+"n_camino_cajas"
+],
+[
+186.743,
+191.24,
+"shot",
+"v03_estante"
+],
+[
+191.24,
+198.18,
+"shot",
+"n_estante_puerta_lateral"
+],
+[
+198.18,
+200.5,
+"shot",
+"n_tres_cajas"
+],
+[
+206.4,
+212.9,
+"shot",
+"n_puerta_grande_manana"
+],
+[
+212.9,
+217.764,
+"shot",
+"n_garaje_noche"
+],
+[
+222.704,
+227.52,
+"shot",
+"n_serrucho_oxidado"
+],
+[
+227.52,
+235.2,
+"shot",
+"n_serrucho_noche"
+],
+[
+240.404,
+247.86,
+"shot",
+"n_cajon_cocina"
+],
+[
+247.86,
+252.174,
+"shot",
+"n_hoja_puerta_casa"
+],
+[
+256.4,
+263.38,
+"shot",
+"n_cinta_destornilladores"
+],
+[
+263.38,
+267.756,
+"shot",
+"n_siete_cintas"
+],
+[
+271.225,
+279.38,
+"shot",
+"n_buscando_cajon"
+],
+[
+279.38,
+284.8,
+"shot",
+"v04_martillos"
+],
+[
+288.84,
+297.8,
+"shot",
+"n_aula_taller"
+],
+[
+297.8,
+301.991,
+"shot",
+"n_kit_joven"
+],
+[
+305.301,
+316.274,
+"shot",
+"n_dos_juegos"
+],
+[
+322.0,
+330.08,
+"shot",
+"n_cajas_cerradas_cinta"
+],
+[
+330.08,
+334.578,
+"shot",
+"n_caja_escrita_misc"
+],
+[
+338.423,
+342.08,
+"shot",
+"v05_caja_fecha"
+],
+[
+342.08,
+348.795,
+"shot",
+"n_calendario_cocina"
+],
+[
+354.142,
+360.62,
+"shot",
+"n_manos_objeto"
+],
+[
+360.62,
+366.161,
+"shot",
+"n_caja_polvo"
+],
+[
+369.9,
+379.7,
+"shot",
+"n_caja_abierta_cuadernos"
+],
+[
+379.7,
+381.5,
+"shot",
+"n_cuadernos_infantiles"
+],
+[
+384.847,
+388.71,
+"shot",
+"n_tres_cuadernos"
+],
+[
+388.71,
+395.877,
+"shot",
+"n_camion_donacion"
+],
+[
+401.1,
+404.45,
+"shot",
+"n_dos_tazas_mesa"
+],
+[
+404.45,
+410.85,
+"shot",
+"n_caja_preguntar"
+],
+[
+410.85,
+415.062,
+"shot",
+"n_reloj_guante"
+],
+[
+420.3,
+424.15,
+"shot",
+"n_latas_pintura_fila"
+],
+[
+424.15,
+431.577,
+"shot",
+"v02_lata"
+],
+[
+436.311,
+439.81,
+"shot",
+"n_aceite_motor"
+],
+[
+439.81,
+442.75,
+"shot",
+"n_garrafitas_propano"
+],
+[
+442.75,
+446.671,
+"shot",
+"n_bateria_vieja"
+],
+[
+453.0,
+460.05,
+"shot",
+"n_mancha_piso"
+],
+[
+460.05,
+463.37,
+"shot",
+"n_guantes_puerta"
+],
+[
+463.37,
+465.172,
+"shot",
+"n_dos_grupos_latas"
+],
+[
+470.1,
+481.765,
+"shot",
+"n_lata_sin_tapa_sol"
+],
+[
+487.101,
+495.2,
+"shot",
+"v06_arena"
+],
+[
+495.75,
+499.989,
+"shot",
+"n_folleto_municipio"
+],
+[
+504.424,
+511.83,
+"shot",
+"n_solventes"
+],
+[
+511.83,
+517.5,
+"shot",
+"n_desague"
+],
+[
+523.133,
+529.55,
+"shot",
+"n_laptop_condado"
+],
+[
+529.55,
+532.272,
+"shot",
+"n_punto_residuos"
+],
+[
+536.1,
+538.59,
+"shot",
+"n_papel_calendario"
+],
+[
+538.59,
+546.97,
+"shot",
+"n_baul_latas"
+],
+[
+546.97,
+550.6,
+"shot",
+"n_chaleco_naranja"
+],
+[
+555.9,
+560.29,
+"shot",
+"n_mostrador_ferreteria"
+],
+[
+560.29,
+567.6,
+"shot",
+"n_42_latas"
+],
+[
+573.4,
+582.966,
+"shot",
+"n_garaje_cinco_errores"
+],
+[
+586.509,
+591.43,
+"shot",
+"n_bauleras_naranjas"
+],
+[
+591.43,
+597.395,
+"shot",
+"n_candado_baulera"
+],
+[
+601.511,
+610.51,
+"shot",
+"n_baulera_abierta"
+],
+[
+610.51,
+613.892,
+"shot",
+"n_contenedores_tienda"
+],
+[
+619.604,
+627.15,
+"shot",
+"n_contenedores_llenos"
+],
+[
+627.15,
+631.759,
+"shot",
+"n_mesa_contar"
+],
+[
+635.412,
+645.99,
+"shot",
+"n_dos_contenedores"
+],
+[
+645.99,
+647.772,
+"shot",
+"n_azulejos_sobrantes"
+],
+[
+651.809,
+657.27,
+"shot",
+"n_silla_rota"
+],
+[
+657.27,
+663.273,
+"shot",
+"n_platos_cuidados"
+],
+[
+668.32,
+677.69,
+"shot",
+"n_entrega_herramienta"
+],
+[
+677.69,
+680.7,
+"shot",
+"n_contenedor_volquete"
+],
+[
+687.026,
+690.95,
+"shot",
+"n_garaje_abandonado"
+],
+[
+690.95,
+699.5,
+"shot",
+"n_reloj_cocina_banco"
+],
+[
+703.2,
+712.03,
+"shot",
+"n_caja_herramientas_padre"
+],
+[
+712.03,
+714.5,
+"shot",
+"n_tablero_vacio"
+],
+[
+719.4,
+729.31,
+"shot",
+"n_pegboard_nuevo"
+],
+[
+729.31,
+732.489,
+"shot",
+"n_marcador_contorno"
+],
+[
+737.5,
+741.21,
+"shot",
+"v07_siluetas"
+],
+[
+741.21,
+749.6,
+"shot",
+"n_sombra_vacia"
+],
+[
+754.5,
+759.91,
+"shot",
+"n_pared_llena"
+],
+[
+759.91,
+767.362,
+"shot",
+"n_herramienta_nueva_caja"
+],
+[
+772.0,
+779.26,
+"shot",
+"n_bici_rueda_pinchada"
+],
+[
+779.26,
+783.794,
+"shot",
+"n_lampara_cable"
+],
+[
+787.534,
+791.7,
+"shot",
+"n_motor_bote"
+],
+[
+791.7,
+799.1,
+"shot",
+"n_cinta_con_fecha"
+],
+[
+804.42,
+808.28,
+"shot",
+"n_taller_bicis"
+],
+[
+808.28,
+814.04,
+"shot",
+"n_repair_cafe"
+],
+[
+814.04,
+817.786,
+"shot",
+"n_dos_tazas_cocina"
+],
+[
+821.63,
+832.273,
+"shot",
+"n_bote_lago"
+],
+[
+835.8,
+843.48,
+"shot",
+"n_caja_cables"
+],
+[
+843.48,
+845.888,
+"shot",
+"n_cables_enredados"
+],
+[
+850.644,
+860.52,
+"shot",
+"n_cables_al_sol"
+],
+[
+860.52,
+864.6,
+"shot",
+"n_cargador_en_mano"
+],
+[
+869.2,
+878.6,
+"shot",
+"n_bolsa_electronica"
+],
+[
+878.6,
+881.1,
+"shot",
+"n_caja_reciclaje_tienda"
+],
+[
+886.2,
+894.28,
+"shot",
+"n_cables_etiquetados"
+],
+[
+894.28,
+899.0,
+"shot",
+"n_cosas_hijos"
+],
+[
+903.8,
+907.36,
+"shot",
+"n_trofeos_polvo"
+],
+[
+907.36,
+915.395,
+"shot",
+"n_cuna_desarmada"
+],
+[
+921.7,
+930.3,
+"shot",
+"n_telefono_mesa"
+],
+[
+930.3,
+932.2,
+"shot",
+"n_fecha_caja_hijo"
+],
+[
+938.5,
+947.82,
+"shot",
+"n_patines_viejos"
+],
+[
+947.82,
+949.874,
+"shot",
+"n_patines_trofeos_auto"
+],
+[
+953.8,
+964.876,
+"shot",
+"n_garaje_tarde_sol"
+],
+[
+968.644,
+977.04,
+"shot",
+"n_tienda_herramientas"
+],
+[
+977.04,
+978.7,
+"shot",
+"n_galpon_ordenado"
+],
+[
+984.5,
+995.2,
+"shot",
+"n_estante_lapiz"
+],
+[
+995.2,
+998.585,
+"shot",
+"n_escoba_piso"
+],
+[
+1002.2,
+1012.8,
+"shot",
+"n_mango_nuevo"
+],
+[
+1018.005,
+1026.68,
+"shot",
+"n_cinta_piso"
+],
+[
+1026.68,
+1029.956,
+"shot",
+"n_linea_piso"
+],
+[
+1035.0,
+1047.352,
+"shot",
+"n_piso_vacio"
+],
+[
+1051.1,
+1057.32,
+"shot",
+"v09_auto"
+],
+[
+1057.32,
+1061.9,
+"shot",
+"n_auto_luz"
+],
+[
+1067.114,
+1076.24,
+"shot",
+"n_hielo_parabrisas"
+],
+[
+1076.24,
+1079.873,
+"shot",
+"n_garaje_ordenado_amplio"
+],
+[
+1083.6,
+1093.3,
+"shot",
+"n_objeto_querido"
+],
+[
+1093.3,
+1095.869,
+"shot",
+"n_cuaderno_cajon"
+],
+[
+1099.909,
+1107.76,
+"shot",
+"n_cuaderno_lapiz"
+],
+[
+1107.76,
+1110.269,
+"shot",
+"n_mesa_antigua"
+],
+[
+1114.5,
+1122.56,
+"shot",
+"n_caja_herramientas_hijo"
+],
+[
+1122.56,
+1127.9,
+"shot",
+"n_maquina_coser"
+],
+[
+1133.418,
+1135.76,
+"shot",
+"n_cosa_rara"
+],
+[
+1135.76,
+1136.9,
+"shot",
+"n_frasco_ganchos"
+],
+[
+1136.9,
+1143.784,
+"shot",
+"n_llave_cuerda"
+],
+[
+1147.7,
+1157.24,
+"shot",
+"n_llave_clavo_puerta"
+],
+[
+1157.24,
+1159.473,
+"shot",
+"n_cerradura_vieja"
+],
+[
+1164.018,
+1177.1,
+"shot",
+"n_llave_cajon_cocina"
+],
+[
+1180.85,
+1188.24,
+"shot",
+"n_serrucho_mango_gastado"
+],
+[
+1188.24,
+1190.9,
+"shot",
+"n_cinta_en_mango"
+],
+[
+1195.704,
+1209.064,
+"shot",
+"n_piedra_afilar"
+],
+[
+1214.543,
+1224.27,
+"shot",
+"n_balde_galpon"
+],
+[
+1224.27,
+1226.9,
+"shot",
+"n_serrucho_pared"
+],
+[
+1231.7,
+1236.81,
+"shot",
+"v08_cinta"
+],
+[
+1236.81,
+1242.281,
+"shot",
+"n_garaje_domingo"
+],
+[
+1247.4,
+1257.18,
+"shot",
+"n_cinta_tres_lineas"
+],
+[
+1257.18,
+1259.5,
+"shot",
+"n_cana_pescar"
+],
+[
+1263.301,
+1269.59,
+"shot",
+"n_trineo_viejo"
+],
+[
+1269.59,
+1275.7,
+"shot",
+"n_caja_herr_cuna"
+],
+[
+1280.7,
+1289.53,
+"shot",
+"n_puerta_abriendo"
+],
+[
+1289.53,
+1292.5,
+"shot",
+"n_cinta_en_herramienta"
+],
+[
+1298.2,
+1302.85,
+"shot",
+"n_cajas_auto_hijos"
+],
+[
+1302.85,
+1310.8,
+"shot",
+"n_garaje_rutina"
+],
+[
+1314.5,
+1322.51,
+"shot",
+"n_guantes_latas"
+],
+[
+1322.51,
+1326.081,
+"shot",
+"n_estante_madera_limpia"
+],
+[
+1332.0,
+1337.74,
+"shot",
+"n_cajas_fechadas"
+],
+[
+1337.74,
+1341.72,
+"shot",
+"n_pared_sombras_banco"
+],
+[
+1341.72,
+1345.6,
+"shot",
+"n_proyecto_cinta"
+],
+[
+1349.413,
+1353.27,
+"shot",
+"n_telefono_cocina"
+],
+[
+1353.27,
+1358.11,
+"shot",
+"n_linea_auto"
+],
+[
+1358.11,
+1360.8,
+"shot",
+"n_cuaderno_banco"
+],
+[
+1364.723,
+1374.2,
+"shot",
+"n_escoba_garaje"
+],
+[
+1379.048,
+1387.48,
+"shot",
+"n_te_mesa_baja"
+],
+[
+1387.48,
+1391.273,
+"shot",
+"n_familia_cajas"
+],
+[
+1395.627,
+1406.9,
+"shot",
+"n_caja_herr_otro_garaje"
+],
+[
+1412.427,
+1422.81,
+"shot",
+"n_saco_colgado"
+],
+[
+1422.81,
+1425.3,
+"shot",
+"n_herramientas_mesa_elegir"
+],
+[
+1430.0,
+1434.9,
+"shot",
+"n_taller_escuela"
+],
+[
+1434.9,
+1442.255,
+"shot",
+"n_formones_nueva_mesa"
+],
+[
+1446.3,
+1452.03,
+"shot",
+"n_mueble_pesado"
+],
+[
+1452.03,
+1455.4,
+"shot",
+"n_manos_ayuda"
+],
+[
+1460.747,
+1469.88,
+"shot",
+"n_camion_muebles"
+],
+[
+1469.88,
+1473.8,
+"shot",
+"n_banco_garaje_vacio"
+],
+[
+1478.638,
+1485.59,
+"shot",
+"v10_puerta"
+],
+[
+1485.59,
+1489.983,
+"shot",
+"n_garaje_final_auto"
+],
+[
+1494.904,
+1504.8,
+"shot",
+"n_cinta_nueva"
+],
+[
+1510.1,
+1516.01,
+"shot",
+"n_puerta_sol"
+],
+[
+1516.01,
+1523.152,
+"shot",
+"n_herramienta_querida"
+],
+[
+1526.7,
+1538.9,
+"shot",
+"n_casa_tarde"
+]
+],
+"cam": [
+[
+11.5,
+13.18,
+"wide"
+],
+[
+495.2,
+495.75,
+"wide"
+]
+],
+"ov": [
+{
+"k": "words",
+"items": [
+{
+"txt": "5 HAMMERS",
+"col": "ice",
+"at": 13.18
+},
+{
+"txt": "30 PAINT CANS",
+"col": "amber",
+"at": 14.4
+}
+],
+"at": 13.18,
+"out": 16.9
+},
+{
+"k": "big",
+"txt": "9 OUT OF 10",
+"sub": "INTO BLACK BAGS",
+"col": "red",
+"at": 24.82,
+"out": 28.02
+},
+{
+"k": "chip",
+"txt": "50 YEARS IN THIS LITTLE HOUSE",
+"col": "ice",
+"at": 38.18,
+"out": 41.68
+},
+{
+"k": "big",
+"txt": "SEIZEN SEIRI",
+"sub": "ORDER WHILE YOU ARE STILL ALIVE",
+"col": "amber",
+"at": 107.02,
+"out": 110.22
+},
+{
+"k": "step",
+"n": 1,
+"name": "ONE SHELF · TO THE WOOD",
+"col": "green",
+"at": 156.08,
+"out": 160.08
+},
+{
+"k": "chip",
+"txt": "10 MINUTES · 11 THINGS WENT BACK",
+"col": "green",
+"at": 194.22,
+"out": 197.72
+},
+{
+"k": "chip",
+"txt": "MORNINGS ONLY · NEVER AT NIGHT",
+"col": "amber",
+"at": 206.72,
+"out": 210.22
+},
+{
+"k": "chip",
+"txt": "SUBSCRIBE · A JAPANESE HOME HABIT EVERY WEEK",
+"col": "green",
+"at": 229.96,
+"out": 233.46
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE RULE OF ONE",
+"col": "green",
+"at": 252.58,
+"out": 256.58
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "5 HAMMERS",
+"col": "red",
+"at": 263.78
+},
+{
+"txt": "7 TAPE MEASURES",
+"col": "red",
+"at": 265.18
+},
+{
+"txt": "4 FLASHLIGHTS",
+"col": "red",
+"at": 266.56
+}
+],
+"at": 263.38,
+"out": 269.06
+},
+{
+"k": "chip",
+"txt": "TWO KINDS OF WORK? KEEP TWO · NOT FIVE",
+"col": "ice",
+"at": 312.34,
+"out": 315.84
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE BOX RULE",
+"col": "green",
+"at": 316.76,
+"out": 320.76
+},
+{
+"k": "big",
+"txt": "30 DAYS",
+"sub": "NOT OPENED? IT GOES · UNOPENED",
+"col": "amber",
+"at": 346.68,
+"out": 349.88
+},
+{
+"k": "chip",
+"txt": "8 BOXES GONE · NOTHING MISSED IN 4 YEARS",
+"col": "green",
+"at": 392.57,
+"out": 396.07
+},
+{
+"k": "step",
+"n": 4,
+"name": "PAINT & CHEMICALS FIRST",
+"col": "red",
+"at": 418.95,
+"out": 422.95
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "LATEX",
+"col": "green",
+"at": 463.37
+},
+{
+"txt": "DRY IT · CAT LITTER",
+"col": "green",
+"at": 470.13
+}
+],
+"at": 463.37,
+"out": 472.63
+},
+{
+"k": "chip",
+"txt": "CHECK YOUR TOWN'S RULES",
+"col": "ice",
+"at": 495.75,
+"out": 499.25
+},
+{
+"k": "stamp",
+"txt": "NEVER MIX CHEMICALS",
+"at": 515.95,
+"out": 518.95
+},
+{
+"k": "chip",
+"txt": "HOUSEHOLD HAZARDOUS WASTE DAY · FREE",
+"col": "green",
+"at": 523.95,
+"out": 527.45
+},
+{
+"k": "big",
+"txt": "42",
+"sub": "PAINT CANS IN MY FATHER'S SHED",
+"col": "red",
+"at": 560.29,
+"out": 563.49
+},
+{
+"k": "deal",
+"at": 573.67,
+"out": 578.17
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "RENTING A STORAGE UNIT",
+"at": 583.39,
+"out": 591.39
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "BUYING ORGANIZERS FIRST",
+"at": 610.51,
+"out": 618.51
+},
+{
+"k": "chip",
+"txt": "EMPTY → COUNT → KEEP",
+"col": "green",
+"at": 627.15,
+"out": 630.65
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "«JUST IN CASE»",
+"at": 638.75,
+"out": 646.75
+},
+{
+"k": "big",
+"txt": "MOTTAINAI",
+"sub": "DON'T WASTE · GIVE IT TO SOMEONE",
+"col": "amber",
+"at": 657.27,
+"out": 660.47
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "ONE HUGE WEEKEND",
+"at": 673.83,
+"out": 681.83
+},
+{
+"k": "chip",
+"txt": "15 MINUTES A WEEK",
+"col": "green",
+"at": 690.95,
+"out": 694.45
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "DECIDING ALONE",
+"at": 695.29,
+"out": 703.29
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE SHADOW WALL",
+"col": "green",
+"at": 712.03,
+"out": 716.03
+},
+{
+"k": "chip",
+"txt": "A NEW TOOL IN = AN OLD ONE OUT",
+"col": "amber",
+"at": 756.03,
+"out": 759.53
+},
+{
+"k": "step",
+"n": 6,
+"name": "SOMEDAY GETS A DATE",
+"col": "green",
+"at": 772.28,
+"out": 776.28
+},
+{
+"k": "big",
+"txt": "3 MONTHS",
+"sub": "FIX IT · OR GIVE IT AWAY",
+"col": "amber",
+"at": 797.3,
+"out": 800.5
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE DEAD-WIRE BOX",
+"col": "green",
+"at": 832.52,
+"out": 836.52
+},
+{
+"k": "chip",
+"txt": "ELECTRONICS RECYCLING · STORE DROP BOX",
+"col": "green",
+"at": 876.02,
+"out": 879.52
+},
+{
+"k": "step",
+"n": 8,
+"name": "YOUR CHILDREN'S THINGS",
+"col": "green",
+"at": 894.28,
+"out": 898.28
+},
+{
+"k": "chip",
+"txt": "«TAKE WHAT YOU WANT BY THE END OF NEXT MONTH»",
+"col": "ice",
+"at": 923.38,
+"out": 926.88
+},
+{
+"k": "chip",
+"txt": "WHAT MY FATHER NEVER DID",
+"col": "amber",
+"at": 965.12,
+"out": 968.62
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE LINE ON THE FLOOR",
+"col": "green",
+"at": 1018.34,
+"out": 1022.34
+},
+{
+"k": "big",
+"txt": "1 ROLL",
+"sub": "OF TAPE · THAT IS ALL IT COSTS",
+"col": "green",
+"at": 1042.28,
+"out": 1045.48
+},
+{
+"k": "step",
+"n": 10,
+"name": "THE GARAGE NOTEBOOK",
+"col": "green",
+"at": 1093.3,
+"out": 1097.3
+},
+{
+"k": "big",
+"txt": "$5 → $800",
+"sub": "A TABLE SAW SOLD AT A YARD SALE",
+"col": "red",
+"at": 1115.64,
+"out": 1118.84
+},
+{
+"k": "step",
+"n": 11,
+"name": "THE TAPE RULE",
+"col": "green",
+"at": 1229.07,
+"out": 1233.07
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "WHO",
+"col": "ice",
+"at": 1248.85
+},
+{
+"txt": "WHERE FROM",
+"col": "ice",
+"at": 1250.98
+},
+{
+"txt": "HOW TO CARE",
+"col": "ice",
+"at": 1253.64
+}
+],
+"at": 1248.85,
+"out": 1256.14
+},
+{
+"k": "chip",
+"txt": "10 WORDS ON A PIECE OF TAPE",
+"col": "amber",
+"at": 1256.37,
+"out": 1259.87
+},
+{
+"k": "recap",
+"rows": [
+1310.94,
+1323.16,
+1329.27,
+1333.31,
+1337.74,
+1341.72,
+1345.46,
+1349.44,
+1353.27,
+1358.11,
+1360.96
+],
+"at": 1302.85,
+"out": 1366.96
+},
+{
+"k": "chip",
+"txt": "THE QUESTIONS PEOPLE ALWAYS ASK ME",
+"col": "ice",
+"at": 1379.27,
+"out": 1382.77
+},
+{
+"k": "chip",
+"txt": "«MY CHILDREN WANT EVERYTHING?» · GIVE IT NOW",
+"col": "ice",
+"at": 1387.48,
+"out": 1390.98
+},
+{
+"k": "chip",
+"txt": "«MY HUSBAND'S TOOLS?» · NO RUSH",
+"col": "ice",
+"at": 1408.9,
+"out": 1412.4
+},
+{
+"k": "chip",
+"txt": "«I CAN'T LIFT IT?» · ASK FOR HELP",
+"col": "ice",
+"at": 1446.51,
+"out": 1450.01
+},
+{
+"k": "chip",
+"txt": "«ISN'T THIS SAD?» · IT IS THE OPPOSITE",
+"col": "ice",
+"at": 1469.88,
+"out": 1473.38
+},
+{
+"k": "ask",
+"at": 1518.07,
+"out": 1530.07
+},
+{
+"k": "next",
+"at": 1529.48,
+"out": 1534.48
+}
+],
+"cta1": {
+"desc": 229.96,
+"end": 235.96
+},
+"cta2": {
+"desc": 1076.24,
+"end": 1082.24
+},
+"cta3": {
+"desc": 1526.85,
+"end": 1531.85
+},
+"end": 1538.92,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+206.72,
+212.9
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "THE 11 GARAGE RULES",
+"recap": [
+"Paint & chemicals first",
+"One shelf a day · to the wood",
+"The rule of one",
+"Date every closed box · 30 days",
+"The shadow wall",
+"Someday gets a date",
+"The dead-wire box",
+"Children: give them a date",
+"The line on the floor",
+"The garage notebook",
+"The tape rule"
+],
+"ask": [
+"What is the one thing",
+"you could never throw away?",
+"And who is it for?"
+],
+"next": [
+"NEXT WEEK",
+"The kitchen drawer"
+],
+"lower": [
+38.18,
+44.18
+]
+}
+}

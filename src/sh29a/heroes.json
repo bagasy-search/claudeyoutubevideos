@@ -1,0 +1,397 @@
+[
+{
+"k": "bags",
+"at": 24.82,
+"out": 30.82,
+"said": 24.82,
+"solo": true,
+"kw": "BAGS",
+"kw2": "",
+"ph": "ph_bags"
+},
+{
+"k": "notdoor",
+"at": 56.82,
+"out": 62.82,
+"said": 56.82,
+"solo": true,
+"kw": "NOTDOOR",
+"kw2": "",
+"ph": "ph_notdoor"
+},
+{
+"k": "shed",
+"at": 124.84,
+"out": 129.34,
+"said": 127.84,
+"sp": 1.333,
+"solo": true,
+"kw": "SHED",
+"kw2": "",
+"ph": "ph_shed"
+},
+{
+"k": "shelfwood",
+"at": 157.44,
+"out": 163.44,
+"said": 157.44,
+"solo": true,
+"kw": "SHELFWOOD",
+"kw2": "",
+"ph": "ph_shelfwood"
+},
+{
+"k": "eleven",
+"at": 194.36,
+"out": 200.36,
+"said": 196.16,
+"solo": true,
+"kw": "ELEVEN",
+"kw2": "",
+"ph": "ph_eleven"
+},
+{
+"k": "saw",
+"at": 227.52,
+"out": 233.52,
+"said": 227.52,
+"solo": true,
+"kw": "SAW",
+"kw2": "",
+"ph": "ph_saw"
+},
+{
+"k": "counted",
+"at": 261.36,
+"out": 267.36,
+"said": 261.36,
+"solo": true,
+"kw": "COUNTED",
+"kw2": "",
+"ph": "ph_counted"
+},
+{
+"k": "duplicate",
+"at": 275.64,
+"out": 281.64,
+"said": 275.64,
+"solo": true,
+"kw": "DUPLICATE",
+"kw2": "",
+"ph": "ph_duplicate"
+},
+{
+"k": "yellowtape",
+"at": 328.5,
+"out": 334.5,
+"said": 328.5,
+"solo": true,
+"kw": "YELLOWTAPE",
+"kw2": "",
+"ph": "ph_yellowtape"
+},
+{
+"k": "rattled",
+"at": 372.82,
+"out": 378.82,
+"said": 372.82,
+"solo": true,
+"kw": "RATTLED",
+"kw2": "",
+"ph": "ph_rattled"
+},
+{
+"k": "askbox",
+"at": 404.448,
+"out": 410.45,
+"said": 404.45,
+"solo": true,
+"kw": "ASKBOX",
+"kw2": "",
+"ph": "ph_askbox"
+},
+{
+"k": "chemshelf",
+"at": 436.428,
+"out": 442.43,
+"said": 436.43,
+"solo": true,
+"kw": "CHEMSHELF",
+"kw2": "",
+"ph": "ph_chemshelf"
+},
+{
+"k": "dryit",
+"at": 477.13,
+"out": 481.63,
+"said": 478.03,
+"sp": 1.333,
+"solo": true,
+"kw": "DRYIT",
+"kw2": "",
+"ph": "ph_dryit"
+},
+{
+"k": "trunk",
+"at": 538.588,
+"out": 544.59,
+"said": 538.59,
+"solo": true,
+"kw": "TRUNK",
+"kw2": "",
+"ph": "ph_trunk"
+},
+{
+"k": "fortytwo",
+"at": 563.05,
+"out": 567.55,
+"said": 564.95,
+"sp": 1.333,
+"solo": true,
+"kw": "FORTYTWO",
+"kw2": "",
+"ph": "ph_fortytwo"
+},
+{
+"k": "orange",
+"at": 591.428,
+"out": 596.93,
+"said": 591.43,
+"sp": 1.091,
+"solo": true,
+"kw": "ORANGE",
+"kw2": "",
+"ph": "ph_orange"
+},
+{
+"k": "neater",
+"at": 624.728,
+"out": 630.73,
+"said": 624.73,
+"solo": true,
+"kw": "NEATER",
+"kw2": "",
+"ph": "ph_neater"
+},
+{
+"k": "mottainai",
+"at": 657.19,
+"out": 663.19,
+"said": 658.89,
+"solo": true,
+"kw": "MOTTAINAI",
+"kw2": "",
+"ph": "ph_mottainai"
+},
+{
+"k": "dumpster",
+"at": 676.07,
+"out": 680.57,
+"said": 679.37,
+"sp": 1.333,
+"solo": true,
+"kw": "DUMPSTER",
+"kw2": "",
+"ph": "ph_dumpster"
+},
+{
+"k": "outline",
+"at": 727.91,
+"out": 732.41,
+"said": 729.31,
+"sp": 1.333,
+"solo": true,
+"kw": "OUTLINE",
+"kw2": "",
+"ph": "ph_outline"
+},
+{
+"k": "missing",
+"at": 741.208,
+"out": 747.21,
+"said": 741.21,
+"solo": true,
+"kw": "MISSING",
+"kw2": "",
+"ph": "ph_missing"
+},
+{
+"k": "someday",
+"at": 794.5,
+"out": 799.0,
+"said": 796.2,
+"sp": 1.333,
+"solo": true,
+"kw": "SOMEDAY",
+"kw2": "",
+"ph": "ph_someday"
+},
+{
+"k": "bike",
+"at": 804.557,
+"out": 810.56,
+"said": 804.56,
+"solo": true,
+"kw": "BIKE",
+"kw2": "",
+"ph": "ph_bike"
+},
+{
+"k": "labels",
+"at": 886.297,
+"out": 892.3,
+"said": 886.3,
+"solo": true,
+"kw": "LABELS",
+"kw2": "",
+"ph": "ph_labels"
+},
+{
+"k": "skates",
+"at": 940.997,
+"out": 947.0,
+"said": 941.0,
+"solo": true,
+"kw": "SKATES",
+"kw2": "",
+"ph": "ph_skates"
+},
+{
+"k": "aplace",
+"at": 974.14,
+"out": 978.64,
+"said": 977.04,
+"sp": 1.333,
+"solo": true,
+"kw": "APLACE",
+"kw2": "",
+"ph": "ph_aplace"
+},
+{
+"k": "line",
+"at": 1035.197,
+"out": 1041.2,
+"said": 1035.2,
+"solo": true,
+"kw": "LINE",
+"kw2": "",
+"ph": "ph_line"
+},
+{
+"k": "carin",
+"at": 1057.317,
+"out": 1061.82,
+"said": 1057.32,
+"sp": 1.333,
+"solo": true,
+"kw": "CARIN",
+"kw2": "",
+"ph": "ph_carin"
+},
+{
+"k": "notebook",
+"at": 1102.417,
+"out": 1108.42,
+"said": 1102.42,
+"solo": true,
+"kw": "NOTEBOOK",
+"kw2": "",
+"ph": "ph_notebook"
+},
+{
+"k": "redkey",
+"at": 1150.217,
+"out": 1156.22,
+"said": 1150.22,
+"solo": true,
+"kw": "REDKEY",
+"kw2": "",
+"ph": "ph_redkey"
+},
+{
+"k": "mysaw",
+"at": 1203.405,
+"out": 1208.9,
+"said": 1203.4,
+"sp": 1.091,
+"solo": true,
+"kw": "MYSAW",
+"kw2": "",
+"ph": "ph_mysaw"
+},
+{
+"k": "tenwords",
+"at": 1254.96,
+"out": 1259.46,
+"said": 1256.37,
+"sp": 1.333,
+"solo": true,
+"kw": "TENWORDS",
+"kw2": "",
+"ph": "ph_tenwords"
+},
+{
+"k": "tags",
+"at": 1287.93,
+"out": 1292.43,
+"said": 1289.53,
+"sp": 1.333,
+"solo": true,
+"kw": "TAGS",
+"kw2": "",
+"ph": "ph_tags"
+},
+{
+"k": "sontool",
+"at": 1398.825,
+"out": 1404.83,
+"said": 1398.83,
+"solo": true,
+"kw": "SONTOOL",
+"kw2": "",
+"ph": "ph_sontool"
+},
+{
+"k": "choose",
+"at": 1420.71,
+"out": 1425.21,
+"said": 1422.81,
+"sp": 1.333,
+"solo": true,
+"kw": "CHOOSE",
+"kw2": "",
+"ph": "ph_choose"
+},
+{
+"k": "firsttable",
+"at": 1437.66,
+"out": 1442.16,
+"said": 1439.07,
+"sp": 1.333,
+"solo": true,
+"kw": "FIRSTTABLE",
+"kw2": "",
+"ph": "ph_firsttable"
+},
+{
+"k": "decide",
+"at": 1465.205,
+"out": 1471.2,
+"said": 1465.2,
+"solo": true,
+"kw": "DECIDE",
+"kw2": "",
+"ph": "ph_decide"
+},
+{
+"k": "morning",
+"at": 1485.37,
+"out": 1489.87,
+"said": 1487.16,
+"sp": 1.333,
+"solo": true,
+"kw": "MORNING",
+"kw2": "",
+"ph": "ph_morning"
+}
+]

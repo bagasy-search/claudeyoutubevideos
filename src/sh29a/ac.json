@@ -1,0 +1,344 @@
+{
+"bags": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_bags"
+},
+"notdoor": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_notdoor"
+},
+"shed": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_shed"
+},
+"shelfwood": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_shelfwood"
+},
+"eleven": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_eleven"
+},
+"saw": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_saw"
+},
+"counted": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_counted"
+},
+"duplicate": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_duplicate"
+},
+"yellowtape": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_yellowtape"
+},
+"rattled": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_rattled"
+},
+"askbox": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_askbox"
+},
+"chemshelf": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_chemshelf"
+},
+"dryit": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_dryit"
+},
+"trunk": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_trunk"
+},
+"fortytwo": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_fortytwo"
+},
+"orange": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_orange"
+},
+"neater": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_neater"
+},
+"mottainai": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_mottainai"
+},
+"dumpster": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_dumpster"
+},
+"outline": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_outline"
+},
+"missing": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_missing"
+},
+"someday": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_someday"
+},
+"bike": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_bike"
+},
+"labels": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_labels"
+},
+"skates": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_skates"
+},
+"aplace": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_aplace"
+},
+"line": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_line"
+},
+"carin": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_carin"
+},
+"notebook": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_notebook"
+},
+"redkey": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_redkey"
+},
+"mysaw": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_mysaw"
+},
+"tenwords": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_tenwords"
+},
+"tags": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_tags"
+},
+"sontool": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_sontool"
+},
+"choose": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_choose"
+},
+"firsttable": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_firsttable"
+},
+"decide": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_decide"
+},
+"morning": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_morning"
+}
+}
