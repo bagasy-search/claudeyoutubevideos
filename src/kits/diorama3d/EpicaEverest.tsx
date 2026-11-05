@@ -1,7 +1,7 @@
 // Demo del Diorama 3D: 30 s en UNA toma. Fondo marino de crinoideos -> la cámara sube y atraviesa nubes
 // (transición) -> emerge sobre el mar de nubes frente al Everest al amanecer -> empuja hacia la cumbre.
 import React, { useMemo } from "react";
-import { AbsoluteFill } from "remotion";
+import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { Lienzo, Relieve, Recorte, Toma, Atmosfera, Clave, Aire } from "./Diorama3D";
 
 const R = (s: number) => { let x = Math.imul(s ^ 0x9e3779b9, 0x85ebca6b); x ^= x >>> 13; x = Math.imul(x, 0xc2b2ae35); x ^= x >>> 16; return (x >>> 0) / 4294967296; };
@@ -29,6 +29,10 @@ const AIRE: Aire[] = [
 ];
 
 export const EpicaEverest: React.FC = () => {
+  // cada capa se dibuja sólo en su tramo (el farm rinde por software: cada plano transparente de más cuesta)
+  const t = useCurrentFrame() / 30; const mar = t < 12.5, subida = t > 6 && t < 13.5, cima = t > 10;
+  // las nubes de la subida aparecen con rampa (nunca de golpe) cuando la cámara empieza a mirar arriba
+  const kn = Math.min(1, Math.max(0, (t - 6) / 2.5)); const kn2 = kn * kn * (3 - 2 * kn);
   const nubesSubida = useMemo(() => Array.from({ length: 22 }, (_, i) => ({
     pos: [(R(i * 3) - 0.5) * 32, 10 + R(i * 3 + 1) * 16, -15 - R(i * 3 + 2) * 14] as [number, number, number],
     ancho: 10 + R(i * 7) * 12, rz: (R(i * 11) - 0.5) * 0.4, op: 0.75 + R(i * 13) * 0.25,
@@ -49,18 +53,18 @@ export const EpicaEverest: React.FC = () => {
         <Atmosfera aire={AIRE} />
         <Toma claves={TOMA} fov={34} />
         {/* 1) fondo marino */}
-        <Relieve foto={E + "mar.jpg"} prof={E + "mar_d.png"} ancho={44} relieve={14} pos={[0, 0, -40]} />
+        <Relieve foto={E + "mar.jpg"} prof={E + "mar_d.png"} ancho={44} relieve={14} pos={[0, 0, -40]} visible={mar} />
         {[[-4.2, -2.6, -9, 3.2], [4.6, -2.2, -14, 3.8], [-5.5, -1.8, -20, 4.2], [3.2, -1.5, -25, 3.4], [-1.6, -1.2, -29, 3]].map(([x, y, z, a], i) => (
-          <Recorte key={"l" + i} tinte="#6f9c9c" src={E + "lirios.png"} ancho={a} aspecto={LIRIO_ASP} pos={[x, y + a / LIRIO_ASP / 2 - 2, z]} rot={[0, (R(i + 50) - 0.5) * 0.8, 0]} />
+          <Recorte key={"l" + i} tinte="#6f9c9c" src={E + "lirios.png"} ancho={a} aspecto={LIRIO_ASP} pos={[x, y + a / LIRIO_ASP / 2 - 2, z]} rot={[0, (R(i + 50) - 0.5) * 0.8, 0]} visible={mar} />
         ))}
         {/* 2) capa de nubes de la subida */}
-        {nubesSubida.map((n, i) => <Recorte key={"n" + i} nube src={E + "nube.png"} ancho={n.ancho} aspecto={NUBE_ASP} pos={n.pos} rot={[0, 0, n.rz]} opacidad={n.op} />)}
-        {velos.map((v, i) => <Recorte key={"v" + i} nube src={E + "nube.png"} ancho={18} aspecto={NUBE_ASP} pos={[0.6 + (i % 2 ? 1.5 : -1.5), v.y, v.z]} rot={[0, 0, i * 0.7]} />)}
+        {nubesSubida.map((n, i) => <Recorte key={"n" + i} nube src={E + "nube.png"} ancho={n.ancho} aspecto={NUBE_ASP} pos={n.pos} rot={[0, 0, n.rz]} opacidad={n.op * kn2} visible={subida} />)}
+        {velos.map((v, i) => <Recorte key={"v" + i} nube src={E + "nube.png"} ancho={18} aspecto={NUBE_ASP} pos={[0.6 + (i % 2 ? 1.5 : -1.5), v.y, v.z]} rot={[0, 0, i * 0.7]} opacidad={kn2} visible={subida} />)}
         {/* 3) Everest al amanecer */}
-        <Relieve foto={E + "everest_alto.jpg"} prof={E + "everest_alto_d.png"} ancho={120} aspecto={1312 / 1177} seg={300} relieve={15} piso={0.08} pos={[0, 62.45, -105]} niebla={false} />
+        <Relieve foto={E + "everest_alto.jpg"} prof={E + "everest_alto_d.png"} ancho={120} aspecto={1312 / 1177} seg={300} relieve={15} piso={0.08} pos={[0, 62.45, -105]} niebla={false} visible={cima} />
         {/* 4) mar de nubes en primer plano (horizontal) y ráfagas de nieve cerca de la cumbre */}
-        {marNubes.map((n, i) => <Recorte key={"m" + i} nube src={E + "nube.png"} ancho={n.ancho} aspecto={NUBE_ASP} pos={n.pos} rot={[0, 0, n.rz]} opacidad={0.85} />)}
-        {rafagas.map((n, i) => <Recorte key={"r" + i} nube src={E + "nube.png"} ancho={n.ancho} aspecto={NUBE_ASP} pos={n.pos} rot={[0, 0, n.rz]} opacidad={0.35} />)}
+        {marNubes.map((n, i) => <Recorte key={"m" + i} nube src={E + "nube.png"} ancho={n.ancho} aspecto={NUBE_ASP} pos={n.pos} rot={[0, 0, n.rz]} opacidad={0.85} visible={cima} />)}
+        {rafagas.map((n, i) => <Recorte key={"r" + i} nube src={E + "nube.png"} ancho={n.ancho} aspecto={NUBE_ASP} pos={n.pos} rot={[0, 0, n.rz]} opacidad={0.35} visible={cima} />)}
       </Lienzo>
     </AbsoluteFill>
   );

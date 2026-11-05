@@ -21,13 +21,13 @@ function avisar(h: number | null) {
   [30, 90, 180].forEach((ms) => setTimeout(ev, ms));
   setTimeout(() => h !== null && continueRender(h), 260);
 }
-function useTextura(src: string) {
+function useTextura(src: string, aniso = 4) {
   const [tex, setTex] = useState<THREE.Texture | null>(cacheTex.get(src) ?? null);
   const [h] = useState(() => (cacheTex.has(src) ? null : delayRender("tex " + src)));
   useEffect(() => {
     if (tex) return;
     cargarImg(src).then((im) => {
-      const t = new THREE.Texture(im); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; t.needsUpdate = true;
+      const t = new THREE.Texture(im); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = aniso; t.generateMipmaps = true; t.minFilter = THREE.LinearMipmapLinearFilter; t.needsUpdate = true;
       cacheTex.set(src, t); setTex(t); avisar(h);
     });
   }, [src]);
@@ -58,8 +58,8 @@ export const Redibuja: React.FC = () => {
 type V3 = [number, number, number];
 // rasgar: los triángulos que unen un objeto cercano con el fondo (salto de profundidad) se cortan, en vez de
 // estirarse como goma; detrás queda una copia plana de la foto que tapa el hueco.
-export const Relieve: React.FC<{ foto: string; prof: string; ancho: number; relieve: number; pos: V3; rot?: V3; seg?: number; aspecto?: number; piso?: number; rasgar?: number; niebla?: boolean }> =
-  ({ foto, prof, ancho, relieve, pos, rot = [0, 0, 0], seg = 320, aspecto = 16 / 9, piso = 0, rasgar = 0.07, niebla = true }) => {
+export const Relieve: React.FC<{ foto: string; prof: string; ancho: number; relieve: number; pos: V3; rot?: V3; seg?: number; aspecto?: number; piso?: number; rasgar?: number; niebla?: boolean; visible?: boolean }> =
+  ({ foto, prof, ancho, relieve, pos, rot = [0, 0, 0], seg = 320, aspecto = 16 / 9, piso = 0, rasgar = 0.07, niebla = true, visible = true }) => {
   const tex = useTextura(foto); const dp = useProfundidad(prof);
   const geo = useMemo(() => {
     const alto = ancho / aspecto; const sx = seg, sy = Math.round(seg / aspecto);
@@ -90,7 +90,7 @@ export const Relieve: React.FC<{ foto: string; prof: string; ancho: number; reli
   }, [dp, ancho, relieve, seg, aspecto, piso]);
   if (!tex) return null;
   return (
-    <group position={pos} rotation={rot}>
+    <group position={pos} rotation={rot} visible={visible}>
       <mesh geometry={geo}><meshBasicMaterial map={tex} fog={niebla} side={THREE.DoubleSide} /></mesh>
       {rasgar > 0 && <mesh position={[0, 0, -0.05]}><planeGeometry args={[ancho, ancho / aspecto]} /><meshBasicMaterial map={tex} fog={niebla} /></mesh>}
     </group>
@@ -98,12 +98,12 @@ export const Relieve: React.FC<{ foto: string; prof: string; ancho: number; reli
 };
 
 // ---------- recorte con alfa (nube, planta) ----------
-export const Recorte: React.FC<{ src: string; ancho: number; aspecto: number; pos: V3; rot?: V3; opacidad?: number; nube?: boolean; tinte?: string }> =
-  ({ src, ancho, aspecto, pos, rot = [0, 0, 0], opacidad = 1, nube = false, tinte = "#ffffff" }) => {
-  const tex = useTextura(src);
+export const Recorte: React.FC<{ src: string; ancho: number; aspecto: number; pos: V3; rot?: V3; opacidad?: number; nube?: boolean; tinte?: string; visible?: boolean }> =
+  ({ src, ancho, aspecto, pos, rot = [0, 0, 0], opacidad = 1, nube = false, tinte = "#ffffff", visible = true }) => {
+  const tex = useTextura(src, 1);
   if (!tex) return null;
   return (
-    <mesh position={pos} rotation={rot} renderOrder={nube ? 2 : 1}>
+    <mesh position={pos} rotation={rot} visible={visible} renderOrder={nube ? 2 : 1}>
       <planeGeometry args={[ancho, ancho / aspecto]} />
       <meshBasicMaterial map={tex} color={tinte} transparent opacity={opacidad} alphaTest={nube ? 0.01 : 0.35} depthWrite={!nube} fog side={THREE.DoubleSide} />
     </mesh>
