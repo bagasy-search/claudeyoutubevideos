@@ -1,0 +1,1810 @@
+{
+"segs": [
+[
+4.3,
+13.28,
+"shot",
+"n_tres_gallinas_puerta"
+],
+[
+13.28,
+14.78,
+"shot",
+"v01_comedero_lleno"
+],
+[
+14.78,
+16.5,
+"shot",
+"n_maiz_suelo_intacto"
+],
+[
+22.81,
+25.98,
+"shot",
+"n_termometro_28"
+],
+[
+25.98,
+28.9,
+"shot",
+"n_escarcha_bebedero"
+],
+[
+28.9,
+33.286,
+"shot",
+"v03_aprieta_niple"
+],
+[
+37.326,
+40.96,
+"shot",
+"n_libreta_lista_lapiz"
+],
+[
+40.96,
+48.02,
+"shot",
+"n_bandada_corral"
+],
+[
+48.02,
+50.186,
+"shot",
+"n_puerta_gallinero_abierta"
+],
+[
+55.926,
+64.4,
+"shot",
+"n_cuaderno_fechas"
+],
+[
+64.4,
+66.855,
+"shot",
+"n_mabel_retrato"
+],
+[
+72.433,
+76.18,
+"shot",
+"n_rosie_retrato"
+],
+[
+76.18,
+80.88,
+"shot",
+"n_pansy_retrato"
+],
+[
+80.88,
+83.89,
+"shot",
+"n_tres_viejas_sol"
+],
+[
+88.331,
+91.92,
+"shot",
+"n_cuaderno_tapa_gallina"
+],
+[
+91.92,
+98.5,
+"shot",
+"n_paginas_cuaderno"
+],
+[
+98.5,
+100.691,
+"shot",
+"n_monedas_mesa"
+],
+[
+105.031,
+109.82,
+"shot",
+"n_manos_gallina_mesa"
+],
+[
+109.82,
+114.32,
+"shot",
+"n_estetoscopio_no"
+],
+[
+114.32,
+115.6,
+"shot",
+"n_amanecer_gallinero"
+],
+[
+121.8,
+129.16,
+"shot",
+"n_pollonas_salen"
+],
+[
+129.16,
+130.94,
+"shot",
+"n_pollonas_comedero"
+],
+[
+130.94,
+136.3,
+"shot",
+"n_viejas_lentas_salen"
+],
+[
+142.425,
+145.48,
+"shot",
+"n_gallina_pasa_comida"
+],
+[
+145.48,
+150.52,
+"shot",
+"n_gallina_come_ansiosa"
+],
+[
+150.52,
+153.8,
+"shot",
+"n_gallina_esquina"
+],
+[
+157.901,
+165.82,
+"shot",
+"n_escarcha_tejado"
+],
+[
+165.82,
+168.261,
+"shot",
+"n_lista_vieja_pared"
+],
+[
+174.315,
+179.94,
+"shot",
+"n_linterna_toalla"
+],
+[
+179.94,
+186.3,
+"shot",
+"v02_toca_buche"
+],
+[
+191.9,
+196.6,
+"shot",
+"n_buche_plumas"
+],
+[
+196.6,
+202.074,
+"shot",
+"n_amanecer_ventana_gallinero"
+],
+[
+206.614,
+211.28,
+"shot",
+"n_manos_buche_vacio"
+],
+[
+211.28,
+216.32,
+"shot",
+"n_pelota_golf_paja"
+],
+[
+216.32,
+218.465,
+"shot",
+"n_pasto_largo_hilo"
+],
+[
+223.405,
+229.54,
+"shot",
+"n_pan_viejo"
+],
+[
+229.54,
+233.66,
+"shot",
+"n_gallina_buche_lleno"
+],
+[
+233.66,
+235.5,
+"shot",
+"n_alza_gallina_manos"
+],
+[
+239.9,
+246.1,
+"shot",
+"n_gallina_bajo_brazo"
+],
+[
+246.1,
+247.92,
+"shot",
+"n_rosie_brazos"
+],
+[
+247.92,
+250.186,
+"shot",
+"n_pansy_brazos"
+],
+[
+255.0,
+258.72,
+"shot",
+"n_tacha_lista"
+],
+[
+258.72,
+264.24,
+"shot",
+"n_gallinas_percha_dormidas"
+],
+[
+264.24,
+268.27,
+"shot",
+"n_comedero_nivel_alto"
+],
+[
+273.5,
+276.66,
+"shot",
+"n_tarde_corral"
+],
+[
+276.66,
+282.64,
+"shot",
+"n_tabla_bajo_percha"
+],
+[
+282.64,
+285.795,
+"shot",
+"n_lupa_tabla"
+],
+[
+290.7,
+293.5,
+"shot",
+"n_excremento_normal"
+],
+[
+293.5,
+299.16,
+"shot",
+"n_capuchon_blanco"
+],
+[
+299.16,
+301.06,
+"shot",
+"n_excremento_verde"
+],
+[
+305.146,
+309.14,
+"shot",
+"n_viruta_limpia_rastrillo"
+],
+[
+309.14,
+314.16,
+"shot",
+"n_linterna_percha"
+],
+[
+314.16,
+318.1,
+"shot",
+"n_extremo_percha"
+],
+[
+324.3,
+330.84,
+"shot",
+"n_excremento_chico_seco"
+],
+[
+330.84,
+333.12,
+"shot",
+"n_pocas_cacas"
+],
+[
+333.12,
+336.4,
+"shot",
+"n_escribe_libreta"
+],
+[
+341.1,
+352.6,
+"shot",
+"n_cresta_roja"
+],
+[
+352.6,
+353.883,
+"shot",
+"n_dedo_cresta"
+],
+[
+359.138,
+363.14,
+"shot",
+"n_goma_lapiz"
+],
+[
+363.14,
+368.92,
+"shot",
+"n_cresta_oscura"
+],
+[
+368.92,
+371.498,
+"shot",
+"n_cresta_palida_mabel"
+],
+[
+376.6,
+382.42,
+"shot",
+"n_pansy_cara"
+],
+[
+382.42,
+385.997,
+"shot",
+"n_ojo_cerrado"
+],
+[
+391.4,
+394.06,
+"shot",
+"n_ojo_brillante"
+],
+[
+394.06,
+399.84,
+"shot",
+"n_grietas_percha"
+],
+[
+399.84,
+403.09,
+"shot",
+"n_gallinero_noche"
+],
+[
+408.613,
+413.28,
+"shot",
+"n_grieta_madera"
+],
+[
+413.28,
+418.38,
+"shot",
+"n_manos_plumas_abre"
+],
+[
+418.38,
+421.0,
+"shot",
+"n_ala_abierta"
+],
+[
+425.8,
+428.72,
+"shot",
+"n_base_plumas"
+],
+[
+428.72,
+434.72,
+"shot",
+"n_toalla_papel_percha"
+],
+[
+434.72,
+436.1,
+"shot",
+"n_toalla_papel_limpia"
+],
+[
+440.2,
+448.28,
+"shot",
+"n_plumas_limpias"
+],
+[
+448.28,
+452.22,
+"shot",
+"n_reloj_pulsera_715"
+],
+[
+452.22,
+453.6,
+"shot",
+"n_gallinero_puerta_mira"
+],
+[
+458.607,
+464.46,
+"shot",
+"n_gallina_sola_rincon"
+],
+[
+464.46,
+466.94,
+"shot",
+"n_estante_remedios_tienda"
+],
+[
+466.94,
+469.967,
+"shot",
+"n_tienda_campo"
+],
+[
+473.436,
+478.72,
+"shot",
+"n_lapiz_libreta_abierta"
+],
+[
+478.72,
+485.493,
+"shot",
+"n_gallina_pica_otra"
+],
+[
+490.107,
+495.36,
+"shot",
+"n_pollona_guardiana"
+],
+[
+495.36,
+500.78,
+"shot",
+"n_picotazo"
+],
+[
+500.78,
+502.6,
+"shot",
+"n_vieja_se_aleja"
+],
+[
+507.945,
+511.46,
+"shot",
+"n_butterbean"
+],
+[
+511.46,
+516.26,
+"shot",
+"n_taza_cafe_poste"
+],
+[
+516.26,
+518.587,
+"shot",
+"n_pollonas_comen_juntas"
+],
+[
+524.543,
+533.54,
+"shot",
+"n_viejas_lejos_comedero"
+],
+[
+533.54,
+537.59,
+"shot",
+"n_segundo_comedero"
+],
+[
+542.93,
+548.1,
+"shot",
+"n_molde_torta"
+],
+[
+548.1,
+551.14,
+"shot",
+"n_bolsa_alimento"
+],
+[
+551.14,
+554.486,
+"shot",
+"n_gallinas_fila"
+],
+[
+558.5,
+564.3,
+"shot",
+"n_galpon_humedo"
+],
+[
+564.3,
+565.4,
+"shot",
+"n_gallina_mira_pellets"
+],
+[
+565.4,
+567.8,
+"shot",
+"n_comedero_intacto_tarde"
+],
+[
+571.5,
+574.7,
+"shot",
+"n_pellets_mano"
+],
+[
+574.7,
+579.4,
+"shot",
+"n_bolsa_abierta_cerca"
+],
+[
+579.4,
+583.0,
+"shot",
+"n_cereal_bol"
+],
+[
+586.934,
+589.8,
+"shot",
+"n_pellets_moho"
+],
+[
+589.8,
+593.78,
+"shot",
+"n_pellets_secos"
+],
+[
+593.78,
+596.5,
+"shot",
+"n_foto_abuela"
+],
+[
+600.4,
+604.98,
+"shot",
+"n_cuchara_metal"
+],
+[
+604.98,
+607.16,
+"shot",
+"n_sol_sube_corral"
+],
+[
+607.16,
+612.3,
+"shot",
+"n_balde_bebedero_cerca"
+],
+[
+617.5,
+621.68,
+"shot",
+"n_libreta_tres_lineas"
+],
+[
+621.68,
+628.3,
+"shot",
+"n_gallina_flaca"
+],
+[
+631.847,
+640.82,
+"shot",
+"n_espaguetis"
+],
+[
+640.82,
+643.2,
+"shot",
+"n_quilla_mano"
+],
+[
+647.8,
+654.02,
+"shot",
+"n_pechuga_llena"
+],
+[
+654.02,
+656.22,
+"shot",
+"n_cuchillo_mesa"
+],
+[
+656.22,
+660.8,
+"shot",
+"n_tres_gallinas_paja"
+],
+[
+665.042,
+672.86,
+"shot",
+"n_bolsita_muestra"
+],
+[
+672.86,
+676.9,
+"shot",
+"n_billetes_25"
+],
+[
+682.2,
+687.5,
+"shot",
+"n_huevos_canasta_espera"
+],
+[
+687.5,
+692.184,
+"shot",
+"n_semillas_calabaza"
+],
+[
+695.532,
+698.84,
+"shot",
+"n_nido_vacio_paja"
+],
+[
+698.84,
+704.4,
+"shot",
+"n_gallina_encorvada"
+],
+[
+704.4,
+708.392,
+"shot",
+"n_dottie"
+],
+[
+713.919,
+721.58,
+"shot",
+"n_libreta_ocho_tachadas"
+],
+[
+721.58,
+725.2,
+"shot",
+"n_gallinas_bien_corral"
+],
+[
+731.3,
+734.5,
+"shot",
+"n_bebedero_rojo"
+],
+[
+734.5,
+738.56,
+"shot",
+"n_agua_bebedero_lleno"
+],
+[
+738.56,
+743.7,
+"shot",
+"n_pico_seco"
+],
+[
+749.527,
+757.76,
+"shot",
+"n_gallina_pico_abierto"
+],
+[
+757.76,
+760.8,
+"shot",
+"n_camino_gallinero"
+],
+[
+760.8,
+762.5,
+"shot",
+"n_niples_abajo"
+],
+[
+768.0,
+772.83,
+"shot",
+"n_agua_clara"
+],
+[
+772.83,
+777.81,
+"shot",
+"n_bebedero_lleno_lateral"
+],
+[
+777.81,
+779.5,
+"shot",
+"n_mira_bebedero"
+],
+[
+784.826,
+789.26,
+"shot",
+"n_niple_seco"
+],
+[
+789.26,
+795.78,
+"shot",
+"n_gota_niple"
+],
+[
+795.78,
+799.3,
+"shot",
+"n_gallinas_bajo_bebedero"
+],
+[
+804.7,
+813.69,
+"shot",
+"n_sol_ventana_gallinero"
+],
+[
+813.69,
+815.33,
+"shot",
+"n_agua_movida"
+],
+[
+815.33,
+816.6,
+"shot",
+"n_escarcha_derretida"
+],
+[
+822.1,
+827.37,
+"shot",
+"v05_destornilla_niple"
+],
+[
+827.37,
+832.3,
+"shot",
+"n_costra_valvula"
+],
+[
+836.4,
+844.4,
+"shot",
+"v04_frasco_vinagre"
+],
+[
+844.49,
+849.6,
+"shot",
+"n_vinagre_turbio"
+],
+[
+855.6,
+859.81,
+"shot",
+"n_polvo_pellets"
+],
+[
+859.81,
+866.61,
+"shot",
+"n_baba_marron"
+],
+[
+866.61,
+867.4,
+"shot",
+"n_niples_fila"
+],
+[
+872.325,
+875.63,
+"shot",
+"n_pollona_bebe_niple"
+],
+[
+875.63,
+882.35,
+"shot",
+"n_vieja_pica_niple"
+],
+[
+882.35,
+884.6,
+"shot",
+"n_gallinas_quietas"
+],
+[
+889.002,
+890.64,
+"shot",
+"n_buche_vacio_cerca"
+],
+[
+890.64,
+899.59,
+"shot",
+"n_ojo_naranja"
+],
+[
+899.59,
+901.278,
+"shot",
+"n_libreta_pistas"
+],
+[
+906.436,
+914.9,
+"shot",
+"n_manos_delantal"
+],
+[
+914.9,
+917.296,
+"shot",
+"n_molde_pie_agua"
+],
+[
+921.4,
+928.73,
+"shot",
+"v08_gallina_bebe"
+],
+[
+928.73,
+933.05,
+"shot",
+"n_mabel_bebe"
+],
+[
+933.05,
+935.974,
+"shot",
+"n_gallina_levanta_cabeza"
+],
+[
+940.541,
+947.75,
+"shot",
+"n_gotas_pico"
+],
+[
+947.75,
+950.52,
+"shot",
+"n_sobre_electrolitos"
+],
+[
+950.52,
+952.4,
+"shot",
+"n_tres_dolares"
+],
+[
+956.4,
+959.57,
+"shot",
+"n_cucharita_azucar"
+],
+[
+959.57,
+966.16,
+"shot",
+"n_pizca_sal"
+],
+[
+966.16,
+968.095,
+"shot",
+"n_gallina_bebe_plato2"
+],
+[
+972.137,
+975.13,
+"shot",
+"n_desenroscar_niple"
+],
+[
+975.13,
+979.76,
+"shot",
+"n_niples_taza"
+],
+[
+979.76,
+982.39,
+"shot",
+"n_vinagre_blanco"
+],
+[
+982.39,
+984.5,
+"shot",
+"v06_cepillo_niple"
+],
+[
+990.249,
+995.66,
+"shot",
+"n_cepillo_botella_balde"
+],
+[
+995.66,
+999.23,
+"shot",
+"n_enjuague_balde"
+],
+[
+999.23,
+1001.7,
+"shot",
+"v07_balde_limpio"
+],
+[
+1005.435,
+1009.23,
+"shot",
+"n_reloj_cocina"
+],
+[
+1009.23,
+1012.87,
+"shot",
+"n_cepillo_vinagre_mesa"
+],
+[
+1012.87,
+1016.7,
+"shot",
+"n_tres_viejas_comen"
+],
+[
+1021.613,
+1032.37,
+"shot",
+"n_sobre_vacio"
+],
+[
+1032.37,
+1033.6,
+"shot",
+"n_camioneta_vieja"
+],
+[
+1038.0,
+1044.51,
+"shot",
+"n_mabel_descansa"
+],
+[
+1044.51,
+1047.85,
+"shot",
+"n_plumas_viejas"
+],
+[
+1047.85,
+1048.8,
+"shot",
+"n_corral_tarde_dorada"
+],
+[
+1053.931,
+1062.73,
+"shot",
+"n_bebedero_lleno_frente"
+],
+[
+1062.73,
+1067.188,
+"shot",
+"n_gallina_bebe_niple"
+],
+[
+1073.149,
+1082.7,
+"shot",
+"n_gallinas_nieve"
+],
+[
+1082.7,
+1085.0,
+"shot",
+"n_hielo_bebedero"
+],
+[
+1090.538,
+1093.07,
+"shot",
+"n_botellas_aditivos"
+],
+[
+1093.07,
+1100.898,
+"shot",
+"n_ajo_hierbas"
+],
+[
+1104.913,
+1112.05,
+"shot",
+"n_agua_turbia"
+],
+[
+1112.05,
+1117.075,
+"shot",
+"n_vinagre_claro"
+],
+[
+1123.3,
+1129.27,
+"shot",
+"n_vieja_timida"
+],
+[
+1129.27,
+1135.4,
+"shot",
+"n_gallinas_una_por_una"
+],
+[
+1140.728,
+1146.7,
+"shot",
+"n_estante_medicinas"
+],
+[
+1146.7,
+1151.984,
+"shot",
+"n_gallina_sedienta"
+],
+[
+1156.9,
+1160.95,
+"shot",
+"n_cepillo_dientes_viejo"
+],
+[
+1160.95,
+1168.1,
+"shot",
+"n_amanecer_granja"
+],
+[
+1172.446,
+1178.35,
+"shot",
+"n_abre_puerta_gallinero"
+],
+[
+1178.35,
+1183.4,
+"shot",
+"n_gallinas_salen_rapido"
+],
+[
+1188.8,
+1192.23,
+"shot",
+"n_bajo_percha_mañana"
+],
+[
+1192.23,
+1203.2,
+"shot",
+"n_lapiz_cuenta"
+],
+[
+1206.9,
+1211.87,
+"shot",
+"n_nivel_agua"
+],
+[
+1211.87,
+1215.99,
+"shot",
+"n_bebedero_cocina_noche"
+],
+[
+1215.99,
+1219.157,
+"shot",
+"n_base_calefactora"
+],
+[
+1223.2,
+1227.17,
+"shot",
+"n_comedero_bajando"
+],
+[
+1227.17,
+1233.755,
+"shot",
+"n_comedero_igual"
+],
+[
+1239.225,
+1247.67,
+"shot",
+"n_mano_pecho_gallina"
+],
+[
+1247.67,
+1252.4,
+"shot",
+"n_gallina_tranquila_regazo"
+],
+[
+1257.234,
+1266.27,
+"shot",
+"n_cielo_rosado"
+],
+[
+1266.27,
+1268.594,
+"shot",
+"n_foto_madre"
+],
+[
+1272.8,
+1280.37,
+"shot",
+"n_olla_hierro"
+],
+[
+1280.37,
+1284.888,
+"shot",
+"n_nido_huevo_unico"
+],
+[
+1289.223,
+1290.71,
+"shot",
+"n_pluma_suelo"
+],
+[
+1290.71,
+1299.95,
+"shot",
+"n_pollito_mano"
+],
+[
+1299.95,
+1301.794,
+"shot",
+"n_bebedero_galvanizado_viejo"
+],
+[
+1307.5,
+1313.93,
+"shot",
+"n_bebedero_oxidado_cerca"
+],
+[
+1313.93,
+1317.0,
+"shot",
+"n_sotano_caja"
+],
+[
+1322.0,
+1329.47,
+"shot",
+"n_jaula_hospital"
+],
+[
+1329.47,
+1334.5,
+"shot",
+"n_libreta_vieja"
+],
+[
+1339.403,
+1347.59,
+"shot",
+"n_mabel_perfil"
+],
+[
+1347.59,
+1350.287,
+"shot",
+"n_cuaderno_kraft"
+],
+[
+1355.211,
+1360.51,
+"shot",
+"n_cuaderno_abierto_luz"
+],
+[
+1360.51,
+1366.3,
+"shot",
+"n_pasillo_tienda"
+],
+[
+1369.8,
+1376.55,
+"shot",
+"n_gallina_sana_sol"
+],
+[
+1376.55,
+1382.4,
+"shot",
+"n_corral_verano"
+],
+[
+1388.0,
+1396.03,
+"shot",
+"n_gallinas_rodean_bebedero"
+],
+[
+1396.03,
+1399.172,
+"shot",
+"n_gallina_traga"
+],
+[
+1402.603,
+1408.47,
+"shot",
+"n_jarra_pinta"
+],
+[
+1408.47,
+1415.7,
+"shot",
+"n_bebedero_metal_invierno"
+],
+[
+1420.1,
+1426.63,
+"shot",
+"n_niple_escarchado"
+],
+[
+1426.63,
+1432.058,
+"shot",
+"n_clinica_veterinaria"
+],
+[
+1437.923,
+1444.57,
+"shot",
+"n_jaula_hospital_dentro"
+],
+[
+1444.57,
+1447.9,
+"shot",
+"n_mesa_libreta_gallina"
+],
+[
+1452.411,
+1457.47,
+"shot",
+"n_lista_nueve"
+],
+[
+1457.47,
+1461.71,
+"shot",
+"n_buche_mano2"
+],
+[
+1461.71,
+1464.65,
+"shot",
+"n_tabla_bajo_percha2"
+],
+[
+1464.65,
+1466.1,
+"shot",
+"n_cresta_ojo"
+],
+[
+1472.1,
+1479.69,
+"shot",
+"n_bolsa_pellets2"
+],
+[
+1479.69,
+1483.47,
+"shot",
+"n_huevo_paja"
+],
+[
+1483.47,
+1484.284,
+"shot",
+"n_agua_niple_gota"
+],
+[
+1489.701,
+1491.09,
+"shot",
+"n_bebedero_lleno_cerca"
+],
+[
+1491.09,
+1494.37,
+"shot",
+"n_vinagre_turbio2"
+],
+[
+1494.37,
+1497.39,
+"shot",
+"n_tres_viejas_juntas"
+],
+[
+1497.39,
+1500.872,
+"shot",
+"n_cepillo_y_sobre"
+],
+[
+1506.604,
+1508.17,
+"shot",
+"n_huevo_azul"
+],
+[
+1508.17,
+1516.69,
+"shot",
+"n_huevo_azul_mano"
+],
+[
+1516.69,
+1518.383,
+"shot",
+"v09_cuaderno"
+],
+[
+1524.4,
+1525.29,
+"shot",
+"n_pluma_libreta"
+],
+[
+1525.29,
+1532.07,
+"shot",
+"n_bebederos_varios"
+],
+[
+1532.07,
+1535.5,
+"shot",
+"v10_porche_final"
+],
+[
+1540.046,
+1542.1,
+"shot",
+"n_gallinero_atardecer"
+]
+],
+"cam": [
+[
+844.4,
+844.49,
+"wide"
+]
+],
+"ov": [
+{
+"k": "stamp",
+"txt": "NOT THE COLD",
+"at": 25.98,
+"out": 28.98
+},
+{
+"k": "big",
+"txt": "9",
+"sub": "REASONS A HEN QUITS EATING",
+"col": "amber",
+"at": 40.96,
+"out": 44.16
+},
+{
+"k": "chip",
+"txt": "MABEL · 11 · BUFF ORPINGTON",
+"col": "amber",
+"at": 67.22,
+"out": 70.72
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE CROP",
+"col": "amber",
+"at": 179.94,
+"out": 183.94
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE DROPPINGS",
+"col": "amber",
+"at": 276.66,
+"out": 280.66
+},
+{
+"k": "step",
+"n": 3,
+"name": "COMB AND EYES",
+"col": "amber",
+"at": 342.82,
+"out": 346.82
+},
+{
+"k": "step",
+"n": 4,
+"name": "MITES AND LICE",
+"col": "amber",
+"at": 395.54,
+"out": 399.54
+},
+{
+"k": "step",
+"n": 5,
+"name": "BULLYING AT THE FEEDER",
+"col": "amber",
+"at": 480.06,
+"out": 484.06
+},
+{
+"k": "step",
+"n": 6,
+"name": "SOMETHING NEW IN THE FEED",
+"col": "amber",
+"at": 549.32,
+"out": 553.32
+},
+{
+"k": "stamp",
+"txt": "I ATE A PELLET",
+"at": 591.26,
+"out": 594.26
+},
+{
+"k": "step",
+"n": 7,
+"name": "WORMS",
+"col": "amber",
+"at": 622.76,
+"out": 626.76
+},
+{
+"k": "chip",
+"txt": "FECAL TEST · ABOUT $25",
+"col": "ice",
+"at": 673.04,
+"out": 676.54
+},
+{
+"k": "step",
+"n": 8,
+"name": "A STUCK EGG",
+"col": "amber",
+"at": 691.32,
+"out": 695.32
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE WATER",
+"col": "red",
+"at": 734.5,
+"out": 738.5
+},
+{
+"k": "stamp",
+"txt": "NOT A DROP",
+"at": 784.95,
+"out": 787.95
+},
+{
+"k": "big",
+"txt": "31",
+"sub": "SIPS BEFORE SHE STOPPED",
+"col": "green",
+"at": 942.37,
+"out": 945.57
+},
+{
+"k": "chip",
+"txt": "WHITE VINEGAR · NOT RAW",
+"col": "amber",
+"at": 979.76,
+"out": 983.26
+},
+{
+"k": "big",
+"txt": "40 MIN",
+"sub": "AND IT COST ME NOTHING",
+"col": "green",
+"at": 1007.95,
+"out": 1011.15
+},
+{
+"k": "chip",
+"txt": "VET VISIT · $100",
+"col": "red",
+"at": 1033.93,
+"out": 1037.43
+},
+{
+"k": "chip",
+"txt": "5 MISTAKES I'VE MADE",
+"col": "red",
+"at": 1047.85,
+"out": 1051.35
+},
+{
+"k": "stamp",
+"txt": "FULL ≠ WORKING",
+"at": 1058.13,
+"out": 1061.13
+},
+{
+"k": "step",
+"n": 2,
+"name": "BLAMING THE COLD",
+"col": "red",
+"at": 1067.65,
+"out": 1071.65
+},
+{
+"k": "step",
+"n": 3,
+"name": "TOO MUCH IN THE WATER",
+"col": "red",
+"at": 1089.18,
+"out": 1093.18
+},
+{
+"k": "step",
+"n": 4,
+"name": "COUNTING THE FLOCK",
+"col": "red",
+"at": 1115.89,
+"out": 1119.89
+},
+{
+"k": "step",
+"n": 5,
+"name": "MEDICINE FIRST",
+"col": "red",
+"at": 1139.15,
+"out": 1143.15
+},
+{
+"k": "chip",
+"txt": "MY 10-MINUTE MORNING",
+"col": "green",
+"at": 1161.17,
+"out": 1164.67
+},
+{
+"k": "chip",
+"txt": "WHAT MY MOTHER NEVER DID",
+"col": "amber",
+"at": 1260.13,
+"out": 1263.63
+},
+{
+"k": "deal",
+"at": 1358.85,
+"out": 1363.35
+},
+{
+"k": "chip",
+"txt": "«HOW LONG WITHOUT FOOD?»",
+"col": "ice",
+"at": 1367.47,
+"out": 1370.97
+},
+{
+"k": "chip",
+"txt": "«HEATED WATERERS?»",
+"col": "ice",
+"at": 1407.87,
+"out": 1411.37
+},
+{
+"k": "chip",
+"txt": "«WHEN TO CALL THE VET?»",
+"col": "ice",
+"at": 1426.63,
+"out": 1430.13
+},
+{
+"k": "recap",
+"rows": [
+1457.47,
+1461.71,
+1464.65,
+1467.15,
+1469.15,
+1472.73,
+1475.81,
+1479.69,
+1483.47
+],
+"at": 1454.21,
+"out": 1489.47
+},
+{
+"k": "ask",
+"at": 1524.67,
+"out": 1536.67
+},
+{
+"k": "next",
+"at": 1540.07,
+"out": 1545.07
+}
+],
+"cta1": {
+"guide": 84.46,
+"page": 91.92,
+"desc": 107.28,
+"manual": "23 PROBLEMS · ONE PAGE EACH",
+"img": "page",
+"end": 113.28
+},
+"cta2": {
+"guide": 1348.09,
+"page": 1350.71,
+"desc": 1355.31,
+"manual": "23 PROBLEMS · ONE PAGE EACH",
+"img": "page",
+"end": 1361.31
+},
+"cta3": {
+"desc": 1516.69,
+"end": 1521.69
+},
+"end": 1542.07,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+1174.828,
+1260.128
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "THE 9-POINT CHECK",
+"recap": [
+"The crop at dawn",
+"Droppings under the roost",
+"Comb and eyes",
+"Mites and lice",
+"Bullying at the feeder",
+"Anything new in the feed",
+"Worms · feel the keel",
+"A stuck egg",
+"Test every nipple"
+],
+"ask": [
+"What waterer do you use?",
+"Ever had one clog on you?",
+"Tell me · I read every one"
+],
+"next": [
+"NEXT WEEK",
+"Molting… or not?"
+],
+"lower": [
+51.94,
+57.94
+]
+}
+}

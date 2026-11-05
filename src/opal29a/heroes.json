@@ -1,0 +1,302 @@
+[
+{
+"k": "fluffed",
+"at": 8.16,
+"out": 14.16,
+"said": 8.16,
+"solo": true,
+"kw": "WOULD NOT EAT",
+"kw2": "three old girls",
+"ph": "ph_fluffed"
+},
+{
+"k": "frost28",
+"at": 24.38,
+"out": 30.38,
+"said": 24.38,
+"solo": true,
+"kw": "28°F",
+"kw2": "and it wasn't the cold",
+"ph": "ph_frost28"
+},
+{
+"k": "tumbling",
+"at": 121.92,
+"out": 127.92,
+"said": 121.92,
+"solo": true,
+"kw": "LIKE POPCORN",
+"kw2": "the young ones",
+"ph": "ph_tumbling"
+},
+{
+"k": "greedy",
+"at": 144.1,
+"out": 150.1,
+"said": 144.1,
+"solo": true,
+"kw": "GREEDY",
+"kw2": "a healthy hen wakes up hungry",
+"ph": "ph_greedy"
+},
+{
+"k": "golfball",
+"at": 211.28,
+"out": 217.28,
+"said": 211.28,
+"solo": true,
+"kw": "HARD AT DAWN",
+"kw2": "impacted crop",
+"ph": "ph_golfball"
+},
+{
+"k": "emptycrop",
+"at": 258.72,
+"out": 265.22,
+"said": 258.72,
+"solo": true,
+"kw": "EMPTY",
+"kw2": "good news, and a clue",
+"ph": "ph_emptycrop"
+},
+{
+"k": "whitecap",
+"at": 293.5,
+"out": 299.5,
+"said": 293.5,
+"solo": true,
+"kw": "THE WHITE CAP",
+"kw2": "how a hen pees",
+"ph": "ph_whitecap"
+},
+{
+"k": "roostend",
+"at": 313.56,
+"out": 318.06,
+"said": 314.16,
+"sp": 1.333,
+"solo": true,
+"kw": "SAME SPOT",
+"kw2": "every night",
+"ph": "ph_roostend"
+},
+{
+"k": "eraser",
+"at": 360.36,
+"out": 366.36,
+"said": 360.36,
+"solo": true,
+"kw": "PALE PINK",
+"kw2": "like an eraser",
+"ph": "ph_eraser"
+},
+{
+"k": "papertowel",
+"at": 428.723,
+"out": 435.22,
+"said": 428.72,
+"solo": true,
+"kw": "RED SMEARS?",
+"kw2": "the paper towel test",
+"ph": "ph_papertowel"
+},
+{
+"k": "watch715",
+"at": 448.283,
+"out": 453.28,
+"said": 448.28,
+"sp": 1.2,
+"solo": true,
+"kw": "7:15 AM",
+"kw2": "four checks, nothing yet",
+"ph": "ph_watch715"
+},
+{
+"k": "secondfeeder",
+"at": 532.94,
+"out": 537.44,
+"said": 533.54,
+"sp": 1.444,
+"solo": true,
+"kw": "A SECOND FEEDER",
+"kw2": "out of her sight",
+"ph": "ph_secondfeeder"
+},
+{
+"k": "sniffbag",
+"at": 574.703,
+"out": 580.7,
+"said": 574.7,
+"solo": true,
+"kw": "SMELL IT",
+"kw2": "sweet like cereal",
+"ph": "ph_sniffbag"
+},
+{
+"k": "keel",
+"at": 654.023,
+"out": 660.52,
+"said": 654.02,
+"solo": true,
+"kw": "THE KEEL",
+"kw2": "meat on both sides?",
+"ph": "ph_keel"
+},
+{
+"k": "hunched",
+"at": 698.843,
+"out": 704.84,
+"said": 698.84,
+"solo": true,
+"kw": "HUNCHED",
+"kw2": "tail pointed down",
+"ph": "ph_hunched"
+},
+{
+"k": "fourpush",
+"at": 786.705,
+"out": 793.21,
+"said": 786.71,
+"solo": true,
+"kw": "1 OF 4",
+"kw2": "barely working",
+"ph": "ph_fourpush"
+},
+{
+"k": "crust",
+"at": 827.366,
+"out": 831.87,
+"said": 827.37,
+"sp": 1.444,
+"solo": true,
+"kw": "THE CRUST",
+"kw2": "right around the valve",
+"ph": "ph_crust"
+},
+{
+"k": "cloudyacv",
+"at": 844.486,
+"out": 849.49,
+"said": 844.49,
+"sp": 1.3,
+"solo": true,
+"kw": "RAW & CLOUDY",
+"kw2": "feeds the slime",
+"ph": "ph_cloudyacv"
+},
+{
+"k": "hogs",
+"at": 872.426,
+"out": 878.93,
+"said": 872.43,
+"solo": true,
+"kw": "ONE DRIP",
+"kw2": "the young ones hog it",
+"ph": "ph_hogs"
+},
+{
+"k": "piepan",
+"at": 912.7,
+"out": 917.2,
+"said": 914.9,
+"sp": 1.333,
+"solo": true,
+"kw": "A PIE PAN",
+"kw2": "water right now",
+"ph": "ph_piepan"
+},
+{
+"k": "sugarsalt",
+"at": 959.565,
+"out": 965.57,
+"said": 959.57,
+"solo": true,
+"kw": "½ TSP · A PINCH",
+"kw2": "in a quart of water",
+"ph": "ph_sugarsalt"
+},
+{
+"k": "soakcup",
+"at": 975.126,
+"out": 981.63,
+"said": 975.13,
+"solo": true,
+"kw": "20 MINUTES",
+"kw2": "hot water + white vinegar",
+"ph": "ph_soakcup"
+},
+{
+"k": "icewater",
+"at": 1080.4,
+"out": 1084.9,
+"said": 1081.81,
+"sp": 1.333,
+"solo": true,
+"kw": "FROZEN WATER",
+"kw2": "the real clue",
+"ph": "ph_icewater"
+},
+{
+"k": "byname",
+"at": 1129.266,
+"out": 1135.27,
+"said": 1129.27,
+"solo": true,
+"kw": "BY NAME",
+"kw2": "once a day",
+"ph": "ph_byname"
+},
+{
+"k": "heatedbase",
+"at": 1214.59,
+"out": 1219.09,
+"said": 1215.99,
+"sp": 1.333,
+"solo": true,
+"kw": "HEATED BASE",
+"kw2": "water stays liquid",
+"ph": "ph_heatedbase"
+},
+{
+"k": "cellar",
+"at": 1312.43,
+"out": 1316.93,
+"said": 1313.93,
+"sp": 1.333,
+"solo": true,
+"kw": "IN THE DARK",
+"kw2": "alone",
+"ph": "ph_cellar"
+},
+{
+"k": "nailbook",
+"at": 1339.55,
+"out": 1345.55,
+"said": 1335.25,
+"solo": true,
+"kw": "ON A NAIL",
+"kw2": "date · hen · what I did",
+"ph": "ph_nailbook"
+},
+{
+"k": "sipslift",
+"at": 1394.53,
+"out": 1399.03,
+"said": 1396.03,
+"sp": 1.333,
+"solo": true,
+"kw": "SIP · LIFT",
+"kw2": "that's drinking",
+"ph": "ph_sipslift"
+},
+{
+"k": "blueegg",
+"at": 1506.848,
+"out": 1512.85,
+"said": 1506.85,
+"solo": true,
+"kw": "THURSDAY",
+"kw2": "first egg since August",
+"ph": "ph_blueegg"
+}
+]
