@@ -1,0 +1,391 @@
+[
+{
+"k": "shelfcrowd",
+"at": 27.02,
+"out": 33.02,
+"said": 27.02,
+"solo": true,
+"kw": "SHELFCROWD",
+"kw2": "",
+"ph": "ph_shelfcrowd"
+},
+{
+"k": "picklejug",
+"at": 81.26,
+"out": 85.76,
+"said": 82.06,
+"sp": 1.333,
+"solo": true,
+"kw": "PICKLEJUG",
+"kw2": "",
+"ph": "ph_picklejug"
+},
+{
+"k": "kettlecrust",
+"at": 130.46,
+"out": 134.96,
+"said": 130.46,
+"sp": 1.333,
+"solo": true,
+"kw": "KETTLECRUST",
+"kw2": "",
+"ph": "ph_kettlecrust"
+},
+{
+"k": "bleachapart",
+"at": 161.98,
+"out": 166.48,
+"said": 161.98,
+"sp": 1.333,
+"solo": true,
+"kw": "BLEACHAPART",
+"kw2": "",
+"ph": "ph_bleachapart"
+},
+{
+"k": "acidstone",
+"at": 192.36,
+"out": 198.36,
+"said": 192.36,
+"solo": true,
+"kw": "ACIDSTONE",
+"kw2": "",
+"ph": "ph_acidstone"
+},
+{
+"k": "windowstreak",
+"at": 223.64,
+"out": 229.64,
+"said": 223.64,
+"solo": true,
+"kw": "WINDOWSTREAK",
+"kw2": "",
+"ph": "ph_windowstreak"
+},
+{
+"k": "sunlines",
+"at": 257.14,
+"out": 263.14,
+"said": 257.14,
+"solo": true,
+"kw": "SUNLINES",
+"kw2": "",
+"ph": "ph_sunlines"
+},
+{
+"k": "rinsekettle",
+"at": 292.1,
+"out": 298.1,
+"said": 293.8,
+"solo": true,
+"kw": "RINSEKETTLE",
+"kw2": "",
+"ph": "ph_rinsekettle"
+},
+{
+"k": "halftank",
+"at": 318.44,
+"out": 324.44,
+"said": 318.44,
+"solo": true,
+"kw": "HALFTANK",
+"kw2": "",
+"ph": "ph_halftank"
+},
+{
+"k": "showerholes",
+"at": 341.347,
+"out": 345.85,
+"said": 341.35,
+"sp": 1.333,
+"solo": true,
+"kw": "SHOWERHOLES",
+"kw2": "",
+"ph": "ph_showerholes"
+},
+{
+"k": "brassfinish",
+"at": 373.627,
+"out": 379.63,
+"said": 373.63,
+"solo": true,
+"kw": "BRASSFINISH",
+"kw2": "",
+"ph": "ph_brassfinish"
+},
+{
+"k": "faucetring",
+"at": 402.567,
+"out": 408.57,
+"said": 402.57,
+"solo": true,
+"kw": "FAUCETRING",
+"kw2": "",
+"ph": "ph_faucetring"
+},
+{
+"k": "doorfilm",
+"at": 437.507,
+"out": 443.51,
+"said": 437.51,
+"solo": true,
+"kw": "DOORFILM",
+"kw2": "",
+"ph": "ph_doorfilm"
+},
+{
+"k": "dishcrust",
+"at": 493.007,
+"out": 499.01,
+"said": 493.01,
+"solo": true,
+"kw": "DISHCRUST",
+"kw2": "",
+"ph": "ph_dishcrust"
+},
+{
+"k": "cloudyglass",
+"at": 527.09,
+"out": 531.59,
+"said": 528.19,
+"sp": 1.333,
+"solo": true,
+"kw": "CLOUDYGLASS",
+"kw2": "",
+"ph": "ph_cloudyglass"
+},
+{
+"k": "dryaway",
+"at": 556.087,
+"out": 562.09,
+"said": 556.09,
+"solo": true,
+"kw": "DRYAWAY",
+"kw2": "",
+"ph": "ph_dryaway"
+},
+{
+"k": "bowlglass",
+"at": 587.847,
+"out": 593.85,
+"said": 587.85,
+"solo": true,
+"kw": "BOWLGLASS",
+"kw2": "",
+"ph": "ph_bowlglass"
+},
+{
+"k": "cabinetgold",
+"at": 608.967,
+"out": 614.97,
+"said": 608.97,
+"solo": true,
+"kw": "CABINETGOLD",
+"kw2": "",
+"ph": "ph_cabinetgold"
+},
+{
+"k": "mildsoap",
+"at": 646.867,
+"out": 652.87,
+"said": 646.87,
+"solo": true,
+"kw": "MILDSOAP",
+"kw2": "",
+"ph": "ph_mildsoap"
+},
+{
+"k": "shortsoak",
+"at": 674.635,
+"out": 680.63,
+"said": 674.63,
+"solo": true,
+"kw": "SHORTSOAK",
+"kw2": "",
+"ph": "ph_shortsoak"
+},
+{
+"k": "towelwater",
+"at": 693.69,
+"out": 699.69,
+"said": 695.29,
+"solo": true,
+"kw": "TOWELWATER",
+"kw2": "",
+"ph": "ph_towelwater"
+},
+{
+"k": "rustytools",
+"at": 727.695,
+"out": 732.7,
+"said": 727.7,
+"sp": 1.2,
+"solo": true,
+"kw": "RUSTYTOOLS",
+"kw2": "",
+"ph": "ph_rustytools"
+},
+{
+"k": "fatherporch",
+"at": 752.275,
+"out": 758.27,
+"said": 752.27,
+"solo": true,
+"kw": "FATHERPORCH",
+"kw2": "",
+"ph": "ph_fatherporch"
+},
+{
+"k": "weedcracks",
+"at": 773.195,
+"out": 779.2,
+"said": 773.2,
+"solo": true,
+"kw": "WEEDCRACKS",
+"kw2": "",
+"ph": "ph_weedcracks"
+},
+{
+"k": "pullweeds",
+"at": 799.255,
+"out": 805.25,
+"said": 799.25,
+"solo": true,
+"kw": "PULLWEEDS",
+"kw2": "",
+"ph": "ph_pullweeds"
+},
+{
+"k": "fruitflies",
+"at": 819.455,
+"out": 823.96,
+"said": 819.46,
+"sp": 1.333,
+"solo": true,
+"kw": "FRUITFLIES",
+"kw2": "",
+"ph": "ph_fruitflies"
+},
+{
+"k": "stickylabel",
+"at": 862.755,
+"out": 868.75,
+"said": 862.75,
+"solo": true,
+"kw": "STICKYLABEL",
+"kw2": "",
+"ph": "ph_stickylabel"
+},
+{
+"k": "ironspots",
+"at": 884.395,
+"out": 889.39,
+"said": 884.39,
+"sp": 1.2,
+"solo": true,
+"kw": "IRONSPOTS",
+"kw2": "",
+"ph": "ph_ironspots"
+},
+{
+"k": "fishpot",
+"at": 917.25,
+"out": 923.25,
+"said": 918.96,
+"solo": true,
+"kw": "FISHPOT",
+"kw2": "",
+"ph": "ph_fishpot"
+},
+{
+"k": "waterdry",
+"at": 979.515,
+"out": 985.51,
+"said": 979.51,
+"solo": true,
+"kw": "WATERDRY",
+"kw2": "",
+"ph": "ph_waterdry"
+},
+{
+"k": "stovefront",
+"at": 1029.962,
+"out": 1035.96,
+"said": 1029.96,
+"solo": true,
+"kw": "STOVEFRONT",
+"kw2": "",
+"ph": "ph_stovefront"
+},
+{
+"k": "bigclean",
+"at": 1061.962,
+"out": 1067.96,
+"said": 1061.96,
+"solo": true,
+"kw": "BIGCLEAN",
+"kw2": "",
+"ph": "ph_bigclean"
+},
+{
+"k": "firstnight",
+"at": 1090.362,
+"out": 1096.36,
+"said": 1090.36,
+"solo": true,
+"kw": "FIRSTNIGHT",
+"kw2": "",
+"ph": "ph_firstnight"
+},
+{
+"k": "nightspray",
+"at": 1124.062,
+"out": 1130.06,
+"said": 1124.06,
+"solo": true,
+"kw": "NIGHTSPRAY",
+"kw2": "",
+"ph": "ph_nightspray"
+},
+{
+"k": "orangepeel",
+"at": 1177.28,
+"out": 1181.78,
+"said": 1178.28,
+"sp": 1.333,
+"solo": true,
+"kw": "ORANGEPEEL",
+"kw2": "",
+"ph": "ph_orangepeel"
+},
+{
+"k": "strongjug",
+"at": 1207.142,
+"out": 1213.14,
+"said": 1207.14,
+"solo": true,
+"kw": "STRONGJUG",
+"kw2": "",
+"ph": "ph_strongjug"
+},
+{
+"k": "jugdrain",
+"at": 1240.442,
+"out": 1246.44,
+"said": 1240.44,
+"solo": true,
+"kw": "JUGDRAIN",
+"kw2": "",
+"ph": "ph_jugdrain"
+},
+{
+"k": "threecrusts",
+"at": 1291.002,
+"out": 1297.0,
+"said": 1291.0,
+"solo": true,
+"kw": "THREECRUSTS",
+"kw2": "",
+"ph": "ph_threecrusts"
+}
+]

@@ -1,0 +1,344 @@
+{
+"shelfcrowd": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_shelfcrowd"
+},
+"picklejug": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_picklejug"
+},
+"kettlecrust": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_kettlecrust"
+},
+"bleachapart": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_bleachapart"
+},
+"acidstone": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_acidstone"
+},
+"windowstreak": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_windowstreak"
+},
+"sunlines": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_sunlines"
+},
+"rinsekettle": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_rinsekettle"
+},
+"halftank": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_halftank"
+},
+"showerholes": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_showerholes"
+},
+"brassfinish": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_brassfinish"
+},
+"faucetring": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_faucetring"
+},
+"doorfilm": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_doorfilm"
+},
+"dishcrust": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_dishcrust"
+},
+"cloudyglass": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_cloudyglass"
+},
+"dryaway": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_dryaway"
+},
+"bowlglass": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_bowlglass"
+},
+"cabinetgold": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_cabinetgold"
+},
+"mildsoap": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_mildsoap"
+},
+"shortsoak": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_shortsoak"
+},
+"towelwater": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_towelwater"
+},
+"rustytools": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_rustytools"
+},
+"fatherporch": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_fatherporch"
+},
+"weedcracks": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_weedcracks"
+},
+"pullweeds": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_pullweeds"
+},
+"fruitflies": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_fruitflies"
+},
+"stickylabel": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_stickylabel"
+},
+"ironspots": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_ironspots"
+},
+"fishpot": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_fishpot"
+},
+"waterdry": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_waterdry"
+},
+"stovefront": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_stovefront"
+},
+"bigclean": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_bigclean"
+},
+"firstnight": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_firstnight"
+},
+"nightspray": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_nightspray"
+},
+"orangepeel": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_orangepeel"
+},
+"strongjug": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_strongjug"
+},
+"jugdrain": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_jugdrain"
+},
+"threecrusts": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_threecrusts"
+}
+}

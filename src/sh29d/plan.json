@@ -1,0 +1,1714 @@
+{
+"segs": [
+[
+4.6,
+9.1,
+"shot",
+"v01_pava"
+],
+[
+9.1,
+13.4,
+"shot",
+"n_costra_pava"
+],
+[
+13.4,
+17.7,
+"shot",
+"n_ducha_cal"
+],
+[
+22.8,
+27.02,
+"shot",
+"n_vasos_turbios"
+],
+[
+27.02,
+34.569,
+"shot",
+"n_botellas_fila"
+],
+[
+39.845,
+44.18,
+"shot",
+"n_casa_osaka"
+],
+[
+44.18,
+48.4,
+"shot",
+"n_vinagre_botella"
+],
+[
+48.4,
+52.2,
+"shot",
+"n_pava_brillante"
+],
+[
+57.4,
+61.52,
+"shot",
+"n_bicarbonato_caja"
+],
+[
+61.52,
+68.985,
+"shot",
+"n_vinagre_mesa"
+],
+[
+74.508,
+78.64,
+"shot",
+"n_lista_dieciseis"
+],
+[
+78.64,
+85.887,
+"shot",
+"n_garrafa_vinagre"
+],
+[
+89.8,
+94.66,
+"shot",
+"n_cocina_pequena"
+],
+[
+94.66,
+99.58,
+"shot",
+"n_cuaderno_cocina"
+],
+[
+99.58,
+104.2,
+"shot",
+"n_te_taza"
+],
+[
+110.5,
+115.6,
+"shot",
+"n_calendario_semana"
+],
+[
+115.6,
+120.4,
+"shot",
+"n_interruptor_luz"
+],
+[
+124.045,
+127.76,
+"shot",
+"n_mesa_te_vinagre"
+],
+[
+127.76,
+135.16,
+"shot",
+"n_vinagre_vaso"
+],
+[
+139.8,
+144.2,
+"shot",
+"n_film_jabon"
+],
+[
+144.2,
+148.56,
+"shot",
+"n_manos_alto"
+],
+[
+148.56,
+152.893,
+"shot",
+"n_pollo_crudo"
+],
+[
+156.734,
+161.98,
+"shot",
+"n_alerta_amarilla"
+],
+[
+161.98,
+166.965,
+"shot",
+"n_dos_botellas"
+],
+[
+171.741,
+176.1,
+"shot",
+"n_bano_vapor"
+],
+[
+176.1,
+180.66,
+"shot",
+"n_peroxido_botella"
+],
+[
+180.66,
+184.867,
+"shot",
+"n_ventana_abierta"
+],
+[
+189.342,
+193.6,
+"shot",
+"n_marmol_mesada"
+],
+[
+193.6,
+197.52,
+"shot",
+"n_mancha_opaca"
+],
+[
+197.52,
+201.6,
+"shot",
+"n_piso_madera_cera"
+],
+[
+206.2,
+210.64,
+"shot",
+"n_pantalla_tele"
+],
+[
+210.64,
+214.36,
+"shot",
+"n_mezcla_medida"
+],
+[
+214.36,
+218.293,
+"shot",
+"v02_botella"
+],
+[
+223.427,
+228.12,
+"shot",
+"n_ventana_sucia"
+],
+[
+228.12,
+233.04,
+"shot",
+"v03_vidrio"
+],
+[
+233.04,
+236.895,
+"shot",
+"n_papel_diario"
+],
+[
+241.835,
+246.88,
+"shot",
+"n_pelusa_vidrio"
+],
+[
+246.88,
+251.9,
+"shot",
+"n_manos_negras"
+],
+[
+255.6,
+261.06,
+"shot",
+"n_sol_ventana"
+],
+[
+261.06,
+266.4,
+"shot",
+"n_dia_nublado"
+],
+[
+270.446,
+275.22,
+"shot",
+"n_pava_mitad"
+],
+[
+275.22,
+279.42,
+"shot",
+"n_pava_hirviendo"
+],
+[
+279.42,
+283.894,
+"shot",
+"n_pava_vertiendo"
+],
+[
+288.704,
+293.8,
+"shot",
+"n_pava_agua_limpia"
+],
+[
+293.8,
+298.2,
+"shot",
+"n_te_hirviendo"
+],
+[
+303.318,
+307.08,
+"shot",
+"n_cafetera"
+],
+[
+307.08,
+314.4,
+"shot",
+"n_tanque_cafetera"
+],
+[
+318.314,
+322.56,
+"shot",
+"n_cafetera_vinagre"
+],
+[
+322.56,
+326.6,
+"shot",
+"n_jarra_agua_limpia"
+],
+[
+326.6,
+330.59,
+"shot",
+"n_olor_cafetera"
+],
+[
+335.631,
+341.35,
+"shot",
+"n_manual_aparato"
+],
+[
+341.35,
+346.0,
+"shot",
+"n_ducha_pared"
+],
+[
+350.6,
+355.57,
+"shot",
+"v04_ducha"
+],
+[
+355.57,
+359.49,
+"shot",
+"n_banda_goma"
+],
+[
+359.49,
+363.9,
+"shot",
+"n_bolsa_quitada"
+],
+[
+369.7,
+373.63,
+"shot",
+"n_agua_fuerte"
+],
+[
+373.63,
+381.072,
+"shot",
+"n_ducha_dorada"
+],
+[
+385.937,
+391.41,
+"shot",
+"n_hogar_semana"
+],
+[
+391.41,
+396.595,
+"shot",
+"n_puerta_alacena"
+],
+[
+402.423,
+407.11,
+"shot",
+"n_canilla_base"
+],
+[
+407.11,
+410.87,
+"shot",
+"v05_canilla"
+],
+[
+410.87,
+415.0,
+"shot",
+"n_canilla_bufanda"
+],
+[
+421.1,
+426.57,
+"shot",
+"n_fregadero_piedra"
+],
+[
+426.57,
+431.4,
+"shot",
+"n_toalla_seca"
+],
+[
+437.2,
+441.89,
+"shot",
+"n_puerta_vidrio_sucia"
+],
+[
+441.89,
+448.9,
+"shot",
+"n_spray_puerta"
+],
+[
+454.748,
+459.17,
+"shot",
+"n_escurridor_puerta"
+],
+[
+459.17,
+463.87,
+"shot",
+"n_escurridor_goma"
+],
+[
+463.87,
+468.059,
+"shot",
+"n_banio_japones"
+],
+[
+473.8,
+479.01,
+"shot",
+"n_pared_seca"
+],
+[
+479.01,
+484.382,
+"shot",
+"n_lavavajillas_cerrado"
+],
+[
+488.922,
+493.01,
+"shot",
+"v07_lavavajillas"
+],
+[
+493.01,
+497.21,
+"shot",
+"n_panel_lavavajillas"
+],
+[
+497.21,
+501.187,
+"shot",
+"n_vapor_lavavajillas"
+],
+[
+505.4,
+509.97,
+"shot",
+"n_filtro_arroz"
+],
+[
+509.97,
+513.69,
+"shot",
+"n_libro_maquina"
+],
+[
+513.69,
+517.9,
+"shot",
+"n_goma_puerta"
+],
+[
+521.613,
+526.69,
+"shot",
+"n_vasos_nublados"
+],
+[
+526.69,
+531.677,
+"shot",
+"n_vaso_en_cuenco"
+],
+[
+535.7,
+540.19,
+"shot",
+"v06_vasos"
+],
+[
+540.19,
+544.61,
+"shot",
+"n_toalla_algodon"
+],
+[
+544.61,
+549.0,
+"shot",
+"n_vaso_rayado"
+],
+[
+554.4,
+558.31,
+"shot",
+"n_lavado_mano"
+],
+[
+558.31,
+565.9,
+"shot",
+"n_vaso_ventana"
+],
+[
+569.2,
+573.45,
+"shot",
+"n_apartamento_viejo"
+],
+[
+573.45,
+577.45,
+"shot",
+"n_vasos_oro"
+],
+[
+577.45,
+581.5,
+"shot",
+"n_vasos_opacos"
+],
+[
+586.6,
+591.21,
+"shot",
+"n_botella_vieja"
+],
+[
+591.21,
+595.83,
+"shot",
+"n_vaso_remojo"
+],
+[
+595.83,
+600.27,
+"shot",
+"n_lampara_vaso"
+],
+[
+605.4,
+610.13,
+"shot",
+"n_vasos_a_mano"
+],
+[
+610.13,
+613.61,
+"shot",
+"n_alacena_vasos"
+],
+[
+613.61,
+617.365,
+"shot",
+"n_ano_nuevo"
+],
+[
+623.5,
+628.35,
+"shot",
+"n_cloro_vinagre"
+],
+[
+628.35,
+632.71,
+"shot",
+"n_dedo_no"
+],
+[
+632.71,
+636.799,
+"shot",
+"n_piedra_travertino"
+],
+[
+641.12,
+645.39,
+"shot",
+"n_alfeizar_piedra"
+],
+[
+645.39,
+650.51,
+"shot",
+"n_jabon_agua_piedra"
+],
+[
+650.51,
+653.295,
+"shot",
+"n_exceso_vinagre"
+],
+[
+658.7,
+663.88,
+"shot",
+"n_taza_balde"
+],
+[
+663.88,
+669.0,
+"shot",
+"n_nariz_olor"
+],
+[
+672.331,
+677.84,
+"shot",
+"n_cuchillos_remojo"
+],
+[
+677.84,
+681.86,
+"shot",
+"n_germenes_tabla"
+],
+[
+681.86,
+685.86,
+"shot",
+"n_jabon_caliente"
+],
+[
+690.413,
+695.29,
+"shot",
+"n_suavizante"
+],
+[
+695.29,
+699.8,
+"shot",
+"n_toalla_dura"
+],
+[
+705.2,
+709.48,
+"shot",
+"n_taza_lavadora"
+],
+[
+709.48,
+717.068,
+"shot",
+"n_toallas_suaves"
+],
+[
+721.133,
+725.48,
+"shot",
+"n_sabanas_blancas"
+],
+[
+725.48,
+732.785,
+"shot",
+"n_recuerdo_no"
+],
+[
+736.0,
+739.98,
+"shot",
+"n_frasco_herramientas"
+],
+[
+739.98,
+747.8,
+"shot",
+"n_lana_acero"
+],
+[
+752.045,
+756.41,
+"shot",
+"n_herramientas_porche"
+],
+[
+756.41,
+760.93,
+"shot",
+"n_aceite_gota"
+],
+[
+760.93,
+764.1,
+"shot",
+"n_metal_picado"
+],
+[
+768.3,
+772.51,
+"shot",
+"n_patio_hierbas"
+],
+[
+772.51,
+776.65,
+"shot",
+"n_hojas_quemadas"
+],
+[
+776.65,
+780.961,
+"shot",
+"n_raiz_queda"
+],
+[
+784.134,
+787.89,
+"shot",
+"n_flores_borde"
+],
+[
+787.89,
+795.1,
+"shot",
+"n_spray_suelo"
+],
+[
+798.516,
+802.41,
+"shot",
+"n_manos_hierbas"
+],
+[
+802.41,
+810.1,
+"shot",
+"n_sendero_lluvia"
+],
+[
+813.631,
+819.46,
+"shot",
+"n_frutero_moscas"
+],
+[
+819.46,
+824.388,
+"shot",
+"n_vinagre_manzana"
+],
+[
+828.11,
+833.98,
+"shot",
+"v08_moscas"
+],
+[
+833.98,
+839.0,
+"shot",
+"n_frasco_moscas"
+],
+[
+843.1,
+847.27,
+"shot",
+"n_tacho_cocina"
+],
+[
+847.27,
+851.46,
+"shot",
+"n_luz_cocina_noche"
+],
+[
+851.46,
+855.662,
+"shot",
+"n_etiqueta_frasco"
+],
+[
+861.402,
+867.22,
+"shot",
+"n_pano_etiqueta"
+],
+[
+867.22,
+872.2,
+"shot",
+"n_uña_etiqueta"
+],
+[
+876.23,
+880.74,
+"shot",
+"n_frascos_vacios"
+],
+[
+880.74,
+885.34,
+"shot",
+"n_plancha_vapor"
+],
+[
+885.34,
+889.59,
+"shot",
+"n_camisa_manchas"
+],
+[
+895.7,
+899.67,
+"shot",
+"n_manual_plancha"
+],
+[
+899.67,
+903.84,
+"shot",
+"n_agua_destilada"
+],
+[
+903.84,
+907.7,
+"shot",
+"n_plancha_limpia"
+],
+[
+912.1,
+916.39,
+"shot",
+"n_arrocera_anillo"
+],
+[
+916.39,
+923.363,
+"shot",
+"n_olla_arroz_limpia"
+],
+[
+926.933,
+932.0,
+"shot",
+"n_olla_vinagre"
+],
+[
+932.0,
+936.58,
+"shot",
+"n_cuchara_vinagre"
+],
+[
+936.58,
+940.982,
+"shot",
+"n_ventana_cocina_abierta"
+],
+[
+946.5,
+950.38,
+"shot",
+"n_curry_col"
+],
+[
+950.38,
+957.694,
+"shot",
+"n_cuenco_vinagre"
+],
+[
+962.033,
+966.72,
+"shot",
+"n_cuaderno_comentarios"
+],
+[
+966.72,
+973.5,
+"shot",
+"n_costra_grifo"
+],
+[
+978.235,
+983.12,
+"shot",
+"n_producto_unico"
+],
+[
+983.12,
+987.2,
+"shot",
+"n_gotas_fregadero"
+],
+[
+987.2,
+991.0,
+"shot",
+"n_ventana_sol_marcas"
+],
+[
+995.3,
+998.96,
+"shot",
+"n_platos_sucios"
+],
+[
+998.96,
+1006.184,
+"shot",
+"n_cocina_dormida"
+],
+[
+1011.104,
+1015.54,
+"shot",
+"v09_noche"
+],
+[
+1015.54,
+1020.1,
+"shot",
+"n_pano_blanco"
+],
+[
+1020.1,
+1024.3,
+"shot",
+"n_fregadero_brillo"
+],
+[
+1029.723,
+1035.26,
+"shot",
+"n_frente_cocina"
+],
+[
+1035.26,
+1040.559,
+"shot",
+"v10_luz"
+],
+[
+1045.011,
+1049.5,
+"shot",
+"n_reloj_cocina"
+],
+[
+1049.5,
+1053.9,
+"shot",
+"n_cocina_sin_marcas"
+],
+[
+1057.7,
+1061.96,
+"shot",
+"n_canilla_seca"
+],
+[
+1061.96,
+1066.74,
+"shot",
+"n_cocina_cincuenta"
+],
+[
+1066.74,
+1070.46,
+"shot",
+"n_tarea_mesa"
+],
+[
+1075.2,
+1079.7,
+"shot",
+"n_interruptor_clic"
+],
+[
+1079.7,
+1086.5,
+"shot",
+"n_cocina_ordenada"
+],
+[
+1090.106,
+1095.72,
+"shot",
+"n_spray_nuevo"
+],
+[
+1095.72,
+1101.0,
+"shot",
+"n_marido_cocina"
+],
+[
+1105.913,
+1110.24,
+"shot",
+"n_dedo_aviso"
+],
+[
+1110.24,
+1117.7,
+"shot",
+"n_granito_mesada"
+],
+[
+1123.017,
+1128.2,
+"shot",
+"n_spray_fregadero"
+],
+[
+1128.2,
+1132.4,
+"shot",
+"n_pano_colgado"
+],
+[
+1137.01,
+1141.44,
+"shot",
+"n_ventana_nublada"
+],
+[
+1141.44,
+1145.84,
+"shot",
+"n_lavadora_taza"
+],
+[
+1145.84,
+1150.0,
+"shot",
+"n_ducha_bolsa"
+],
+[
+1154.6,
+1159.16,
+"shot",
+"n_tijeras_vinagre"
+],
+[
+1159.16,
+1166.469,
+"shot",
+"n_lista_cosas"
+],
+[
+1171.6,
+1176.72,
+"shot",
+"n_cocina_olor"
+],
+[
+1176.72,
+1181.9,
+"shot",
+"n_cascaras_naranja"
+],
+[
+1186.5,
+1190.34,
+"shot",
+"n_naranjas_ano_nuevo"
+],
+[
+1190.34,
+1198.168,
+"shot",
+"n_vinagre_manzana_cesta"
+],
+[
+1203.506,
+1207.56,
+"shot",
+"n_ensalada_vinagre"
+],
+[
+1207.56,
+1211.88,
+"shot",
+"n_vinagre_fuerte"
+],
+[
+1211.88,
+1215.6,
+"shot",
+"n_guantes_goma"
+],
+[
+1220.4,
+1224.8,
+"shot",
+"n_vinagre_basico"
+],
+[
+1224.8,
+1232.1,
+"shot",
+"n_fosa_septica"
+],
+[
+1236.2,
+1240.44,
+"shot",
+"n_taza_desague"
+],
+[
+1240.44,
+1244.2,
+"shot",
+"n_jarra_vacia"
+],
+[
+1244.2,
+1248.2,
+"shot",
+"n_botella_justa"
+],
+[
+1253.9,
+1258.44,
+"shot",
+"n_balde_tibio"
+],
+[
+1258.44,
+1262.8,
+"shot",
+"n_mopa_escurrida"
+],
+[
+1266.9,
+1271.92,
+"shot",
+"n_pasillo_madera"
+],
+[
+1271.92,
+1276.68,
+"shot",
+"n_trapo_rodillas"
+],
+[
+1276.68,
+1281.251,
+"shot",
+"n_madera_brillo"
+],
+[
+1285.4,
+1289.66,
+"shot",
+"n_costra_pava_dos"
+],
+[
+1289.66,
+1293.98,
+"shot",
+"n_vasos_costra"
+],
+[
+1293.98,
+1298.0,
+"shot",
+"n_agua_grifo"
+],
+[
+1302.44,
+1306.5,
+"shot",
+"n_bolsa_ducha_noche"
+],
+[
+1306.5,
+1313.496,
+"shot",
+"n_ducha_manana"
+],
+[
+1317.717,
+1322.54,
+"shot",
+"n_te_final"
+],
+[
+1322.54,
+1327.0,
+"shot",
+"n_cocina_noche_final"
+]
+],
+"cam": [],
+"ov": [
+{
+"k": "big",
+"txt": "7 BOTTLES",
+"sub": "$60+ A MONTH · IN ONE NEIGHBOR'S KITCHEN",
+"col": "red",
+"at": 34.9,
+"out": 38.1
+},
+{
+"k": "chip",
+"txt": "80 YEARS OLD · 50 YEARS IN THIS LITTLE HOUSE",
+"col": "ice",
+"at": 51.0,
+"out": 54.5
+},
+{
+"k": "big",
+"txt": "16 USES",
+"sub": "ONE BOTTLE · WHITE VINEGAR",
+"col": "green",
+"at": 74.76,
+"out": 77.96
+},
+{
+"k": "chip",
+"txt": "MILD ACID · DISSOLVES THE WHITE CRUST",
+"col": "green",
+"at": 127.76,
+"out": 131.26
+},
+{
+"k": "chip",
+"txt": "NOT A DISINFECTANT · NOT FOR RAW CHICKEN",
+"col": "amber",
+"at": 147.34,
+"out": 150.84
+},
+{
+"k": "big",
+"txt": "NEVER",
+"sub": "VINEGAR + BLEACH = CHLORINE GAS",
+"col": "red",
+"at": 161.98,
+"out": 165.18
+},
+{
+"k": "chip",
+"txt": "NO VINEGAR + PEROXIDE IN ONE BOTTLE EITHER",
+"col": "red",
+"at": 174.16,
+"out": 177.66
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "MARBLE · GRANITE · STONE",
+"col": "red",
+"at": 189.4
+},
+{
+"txt": "WAXED OR OILED WOOD",
+"col": "red",
+"at": 196.56
+},
+{
+"txt": "TV & COMPUTER SCREENS",
+"col": "red",
+"at": 199.0
+},
+{
+"txt": "CAST IRON PANS",
+"col": "red",
+"at": 201.92
+}
+],
+"at": 189.4,
+"out": 204.42
+},
+{
+"k": "big",
+"txt": "1 : 1",
+"sub": "VINEGAR · WATER · SPRAY BOTTLE",
+"col": "green",
+"at": 214.14,
+"out": 217.34
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE WINDOWS",
+"col": "green",
+"at": 223.64,
+"out": 227.64
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE KETTLE",
+"col": "green",
+"at": 270.54,
+"out": 274.54
+},
+{
+"k": "big",
+"txt": "1 HOUR",
+"sub": "HALF VINEGAR · HALF WATER · BOIL, THEN REST",
+"col": "green",
+"at": 278.82,
+"out": 282.02
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE COFFEE MAKER",
+"col": "green",
+"at": 303.6,
+"out": 307.6
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE SHOWER HEAD",
+"col": "green",
+"at": 341.35,
+"out": 345.35
+},
+{
+"k": "big",
+"txt": "ALL NIGHT",
+"sub": "A BAG OF VINEGAR · A RUBBER BAND",
+"col": "green",
+"at": 358.47,
+"out": 361.67
+},
+{
+"k": "chip",
+"txt": "SUBSCRIBE · A JAPANESE HOME HABIT EVERY WEEK",
+"col": "green",
+"at": 380.59,
+"out": 384.09
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE BASE OF THE FAUCET",
+"col": "green",
+"at": 399.75,
+"out": 403.75
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE GLASS SHOWER DOOR",
+"col": "green",
+"at": 434.33,
+"out": 438.33
+},
+{
+"k": "big",
+"txt": "$5",
+"sub": "A SMALL RUBBER SQUEEGEE · 30 SECONDS",
+"col": "green",
+"at": 460.15,
+"out": 463.35
+},
+{
+"k": "stamp",
+"txt": "A BATHROOM THAT DRIES NEVER GETS DIRTY",
+"at": 472.17,
+"out": 475.17
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE DISHWASHER",
+"col": "green",
+"at": 480.27,
+"out": 484.27
+},
+{
+"k": "chip",
+"txt": "ONE CUP · ONCE A MONTH · HOTTEST CYCLE",
+"col": "green",
+"at": 499.81,
+"out": 503.31
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE CLOUDY GLASSES",
+"col": "green",
+"at": 521.91,
+"out": 525.91
+},
+{
+"k": "big",
+"txt": "5 MIN",
+"sub": "CLEARS = LIME · STAYS CLOUDY = SCRATCHED",
+"col": "green",
+"at": 530.19,
+"out": 533.39
+},
+{
+"k": "stamp",
+"txt": "CLEAN ENOUGH TO SEE THE SKY",
+"at": 564.01,
+"out": 567.01
+},
+{
+"k": "deal",
+"at": 617.67,
+"out": 622.17
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "MIXING IT WITH BLEACH",
+"at": 623.67,
+"out": 631.67
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "USING IT ON STONE",
+"at": 632.71,
+"out": 640.71
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "USING TOO MUCH",
+"at": 650.51,
+"out": 658.51
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "LEAVING IT ON METAL",
+"at": 667.13,
+"out": 675.13
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "THINKING IT KILLS EVERY GERM",
+"at": 677.98,
+"out": 685.98
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE LAUNDRY · NO SOFTENER",
+"col": "green",
+"at": 689.43,
+"out": 693.43
+},
+{
+"k": "step",
+"n": 10,
+"name": "RUST ON SMALL TOOLS",
+"col": "green",
+"at": 727.7,
+"out": 731.7
+},
+{
+"k": "step",
+"n": 11,
+"name": "WEEDS BETWEEN THE STONES",
+"col": "green",
+"at": 764.51,
+"out": 768.51
+},
+{
+"k": "chip",
+"txt": "IT BURNS THE LEAVES · THE ROOTS STAY",
+"col": "red",
+"at": 779.36,
+"out": 782.86
+},
+{
+"k": "stamp",
+"txt": "A PATH IS LIKE A FACE · WASH IT A LITTLE EVERY DAY",
+"at": 806.22,
+"out": 809.22
+},
+{
+"k": "step",
+"n": 12,
+"name": "THE FRUIT FLIES",
+"col": "green",
+"at": 810.5,
+"out": 814.5
+},
+{
+"k": "chip",
+"txt": "WAIT FOR NUMBER 16 · MY MOTHER'S 2-MINUTE SECRET",
+"col": "amber",
+"at": 847.27,
+"out": 850.77
+},
+{
+"k": "step",
+"n": 13,
+"name": "STICKY LABELS",
+"col": "green",
+"at": 853.48,
+"out": 857.48
+},
+{
+"k": "step",
+"n": 14,
+"name": "THE IRON & THE RICE COOKER",
+"col": "green",
+"at": 878.08,
+"out": 882.08
+},
+{
+"k": "step",
+"n": 15,
+"name": "THE FISH SMELL",
+"col": "green",
+"at": 918.96,
+"out": 922.96
+},
+{
+"k": "big",
+"txt": "15 MIN",
+"sub": "A SMALL POT · A FEW SPOONS OF VINEGAR · WINDOW OPEN",
+"col": "green",
+"at": 935.05,
+"out": 938.25
+},
+{
+"k": "stamp",
+"txt": "IN A JAPANESE HOME, CLEAN SMELLS LIKE NOTHING",
+"at": 957.96,
+"out": 960.96
+},
+{
+"k": "chip",
+"txt": "SUBSCRIBE · TELL ME: WHAT IS YOUR WHITE CRUST?",
+"col": "green",
+"at": 959.74,
+"out": 963.24
+},
+{
+"k": "step",
+"n": 16,
+"name": "THE KITCHEN THAT SLEEPS CLEAN",
+"col": "green",
+"at": 1000.76,
+"out": 1004.76
+},
+{
+"k": "big",
+"txt": "2 MINUTES",
+"sub": "EVERY NIGHT · FOR FIFTY YEARS",
+"col": "green",
+"at": 1045.12,
+"out": 1048.32
+},
+{
+"k": "stamp",
+"txt": "PUTTING THE KITCHEN TO SLEEP",
+"at": 1098.12,
+"out": 1101.12
+},
+{
+"k": "recap",
+"rows": [
+1122.96,
+1132.94,
+1136.94,
+1143.28,
+1154.6
+],
+"at": 1119.8,
+"out": 1160.6
+},
+{
+"k": "chip",
+"txt": "THE QUESTIONS PEOPLE ALWAYS ASK ME",
+"col": "ice",
+"at": 1162.96,
+"out": 1166.46
+},
+{
+"k": "chip",
+"txt": "«DOESN'T IT SMELL?» · ONLY A FEW MINUTES",
+"col": "ice",
+"at": 1169.36,
+"out": 1172.86
+},
+{
+"k": "chip",
+"txt": "«CLEANING VINEGAR?» · STRONGER · GLOVES ON",
+"col": "ice",
+"at": 1206.56,
+"out": 1210.06
+},
+{
+"k": "chip",
+"txt": "«SEPTIC TANK?» · A CUP HERE AND THERE IS FINE",
+"col": "ice",
+"at": 1227.58,
+"out": 1231.08
+},
+{
+"k": "chip",
+"txt": "«WHY SO MANY BOTTLES?» · EACH ONE PROMISES TO BE SPECIAL",
+"col": "ice",
+"at": 1278.42,
+"out": 1281.92
+},
+{
+"k": "big",
+"txt": "1 BOTTLE",
+"sub": "SAME LIME · SAME WATER",
+"col": "green",
+"at": 1295.36,
+"out": 1298.56
+},
+{
+"k": "ask",
+"at": 1312.22,
+"out": 1322.22
+},
+{
+"k": "next",
+"at": 1320.32,
+"out": 1325.32
+}
+],
+"cta1": {
+"desc": 380.59,
+"end": 386.59
+},
+"cta2": {
+"desc": 959.74,
+"end": 965.74
+},
+"cta3": {
+"desc": 1317.9,
+"end": 1322.9
+},
+"end": 1327.02,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+1067.902,
+1077.382
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "THE 2-MINUTE NIGHT",
+"recap": [
+"Every night: spray, wipe, lights off",
+"Every shower: 30 s with the squeegee",
+"Weekly: windows · laundry rinse",
+"Monthly: kettle · shower head · dishwasher",
+"Any time: glasses · rust · flies · labels · fish"
+],
+"ask": [
+"What is the white crust",
+"in your house you have",
+"never been able to clean?"
+],
+"next": [
+"NEXT WEEK",
+"Another Japanese home habit"
+],
+"lower": [
+51.0,
+57.0
+]
+}
+}
