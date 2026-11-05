@@ -9,6 +9,8 @@
 // Mide y loguea tokens y US$ de cada llamada: el número es lo que decide si esto sirve.
 // Env: LLM_BASE (default AIHubMix) · LLM_KEY (default AIHUBMIX_KEY) · LLM_MODEL (default qwen3.8-flash)
 //      LLM_USD_IN / LLM_USD_OUT por millón (default 0,16 / 0,47, precio OpenRouter de qwen3.8-flash).
+//      ANTHROPIC_FABRICA_KEY: si está, va primero Claude (LLM_CLAUDE_MODEL, default claude-sonnet-5-5) con los
+//      créditos mensuales del plan Max; LLM_PROVIDER=barato lo saltea.
 import fs from "node:fs";
 import path from "node:path";
 import { spawn, spawnSync } from "node:child_process";
@@ -16,11 +18,22 @@ import { env, ROOT } from "../lib/env.mjs";
 import { loadSpec } from "../lib/spec.mjs";
 import { slugPaths } from "../lib/paths.mjs";
 
-const BASE = env("LLM_BASE") || "https://aihubmix.com/v1";
-const KEY = env("LLM_KEY") || env("AIHUBMIX_KEY");
-const MODEL = env("LLM_MODEL") || "qwen3.8-flash";
-const USD_IN = Number(env("LLM_USD_IN") || 0.16), USD_OUT = Number(env("LLM_USD_OUT") || 0.47);
-const tot = { in: 0, out: 0, llamadas: 0, seg: 0 };
+// Con ANTHROPIC_FABRICA_KEY en .env (créditos de API MENSUALES del plan Max, gratis y que vencen cada mes)
+// va primero Claude por su API compatible OpenAI; si se acaban los créditos, la corrida sigue con el barato.
+// LLM_PROVIDER=barato fuerza el de siempre.
+const BARATO = { base: env("LLM_BASE") || "https://aihubmix.com/v1", key: env("LLM_KEY") || env("AIHUBMIX_KEY"),
+  model: env("LLM_MODEL") || "qwen3.8-flash", usdIn: Number(env("LLM_USD_IN") || 0.16), usdOut: Number(env("LLM_USD_OUT") || 0.47) };
+// Sus tokens NO son plata (usd 0): no cuentan para LLM_TOPE_USD ni para el tope del piloto, y se loguean con
+// otro formato ("tok entrada/salida") para que autopilot.mjs no los cobre a precio del barato.
+const CLAUDE = { base: "https://api.anthropic.com/v1", key: env("ANTHROPIC_FABRICA_KEY"), claude: true,
+  model: env("LLM_CLAUDE_MODEL") || "claude-sonnet-5-5", usdIn: 0, usdOut: 0 };
+let P = CLAUDE.key && env("LLM_PROVIDER") !== "barato" ? CLAUDE : BARATO;
+let { base: BASE, key: KEY, model: MODEL, usdIn: USD_IN, usdOut: USD_OUT } = P;
+function pasarAlBarato(motivo) {
+  console.log(`   llm: ${motivo} → sigo con ${BARATO.model}`);
+  P = BARATO; ({ base: BASE, key: KEY, model: MODEL, usdIn: USD_IN, usdOut: USD_OUT } = P);
+}
+const tot = { in: 0, out: 0, llamadas: 0, seg: 0, usd: 0, clIn: 0, clOut: 0 };   // in/out/usd = sólo lo PAGO; cl* = créditos de Claude
 
 // Va por `curl` y no por fetch: undici corta a los 300 s sin cabeceras/sin bytes, y un modelo que
 // razona puede pasar más tiempo callado. Sin límite de tiempo salvo LLM_TIMEOUT_S. La clave viaja por
@@ -41,20 +54,22 @@ function curlStream(body, onLine) {
 }
 
 async function chat(messages, { json = false, maxTokens = 32000 } = {}) {
-  if (!KEY) throw new Error("falta LLM_KEY / AIHUBMIX_KEY en .env");
+  if (!KEY) throw new Error("falta LLM_KEY / AIHUBMIX_KEY (o ANTHROPIC_FABRICA_KEY) en .env");
   const t0 = Date.now();
   // ⛔ Medido 05-oct (hl20qwen): el tope se miraba DESPUÉS de cada ronda y una sola ronda razonando
   //    gastó US$ 2,57 sobre un tope de 2. Ahora se estima ANTES (entrada) y se corta DURANTE (salida).
   const tope = Number(env("LLM_TOPE_USD") || 0);
-  const gastado = () => (tot.in * USD_IN + tot.out * USD_OUT) / 1e6;
+  const gastado = () => tot.usd;
   const inEst = Math.ceil(JSON.stringify(messages).length / 3.5);
   if (tope && gastado() + (inEst * USD_IN) / 1e6 > tope) throw new Error(`TOPE_USD: no alcanza el presupuesto (US$ ${tope}) ni para leer el pedido`);
   for (let i = 0; i < 4; i++) {
     let txt = "", u = {}, razona = 0, ultimo = Date.now(), errApi = "";
     const caro = () => tope && gastado() + (inEst * USD_IN + ((txt.length + razona) / 3.5) * USD_OUT) / 1e6 > tope;
     try {
-      await curlStream({ model: MODEL, messages, max_tokens: maxTokens, temperature: 0.7, stream: true, stream_options: { include_usage: true },
-        ...(env("LLM_THINK") === "0" ? { enable_thinking: false } : {}), ...(json ? { response_format: { type: "json_object" } } : {}) }, (l) => {
+      // Claude no acepta temperature (deprecado en los modelos 5.x), ni response_format json_object, ni enable_thinking:
+      // el JSON lo saca sacarJson() de la respuesta igual.
+      await curlStream({ model: MODEL, messages, max_tokens: maxTokens, stream: true, stream_options: { include_usage: true },
+        ...(P.claude ? {} : { temperature: 0.7, ...(env("LLM_THINK") === "0" ? { enable_thinking: false } : {}), ...(json ? { response_format: { type: "json_object" } } : {}) }) }, (l) => {
         if (l.startsWith("{")) { errApi += l; return; }   // error de la API (no SSE)
         if (!l.startsWith("data:") || l === "data: [DONE]") return;
         const j = JSON.parse(l.slice(5));
@@ -64,15 +79,27 @@ async function chat(messages, { json = false, maxTokens = 32000 } = {}) {
         if (caro()) return false;   // corta la llamada: lo que sigue ya no entra en el presupuesto
         if (Date.now() - ultimo > 60_000) { ultimo = Date.now(); console.log(`   … ${((Date.now() - t0) / 1000).toFixed(0)} s: razonó ${razona} car., respondió ${txt.length} car.`); }
       });
-      tot.in += u.prompt_tokens || 0; tot.out += u.completion_tokens || 0; tot.llamadas++; tot.seg += (Date.now() - t0) / 1000;
-      console.log(`   llm ${MODEL}: ${u.prompt_tokens} in / ${u.completion_tokens} out · ${((Date.now() - t0) / 1000).toFixed(0)} s`);
+      tot.llamadas++; tot.seg += (Date.now() - t0) / 1000;
+      if (P.claude) {
+        tot.clIn += u.prompt_tokens || 0; tot.clOut += u.completion_tokens || 0;
+        console.log(`   llm ${MODEL}: ${u.prompt_tokens} tok entrada · ${u.completion_tokens} tok salida (créditos del plan Max) · ${((Date.now() - t0) / 1000).toFixed(0)} s`);
+      } else {
+        tot.in += u.prompt_tokens || 0; tot.out += u.completion_tokens || 0;
+        tot.usd += ((u.prompt_tokens || 0) * USD_IN + (u.completion_tokens || 0) * USD_OUT) / 1e6;
+        console.log(`   llm ${MODEL}: ${u.prompt_tokens} in / ${u.completion_tokens} out · ${((Date.now() - t0) / 1000).toFixed(0)} s`);
+      }
       return txt;
     } catch (e) {
       if (/TOPE_USD/.test(e.message)) {
         const outEst = Math.ceil((txt.length + razona) / 3.5);
-        tot.in += inEst; tot.out += outEst; tot.llamadas++;
+        tot.in += inEst; tot.out += outEst; tot.llamadas++; tot.usd += (inEst * USD_IN + outEst * USD_OUT) / 1e6;
         console.log(`   llm ${MODEL}: ${inEst} in / ${outEst} out · cortada por TOPE_USD (estimado)`);
         throw e;
+      }
+      // Se acabaron los créditos del mes, la clave dejó de servir o Claude no responde tras 4 intentos:
+      // la corrida no se corta, sigue con el barato desde cero.
+      if (P.claude && BARATO.key && (i === 3 || /credit|billing|balance|invalid.*key|authentication|permission/i.test(errApi))) {
+        pasarAlBarato(`Claude falló (${(errApi || e.message).slice(0, 160)})`); i = -1; continue;
       }
       if (/insufficient|invalid.*key|40[13]/i.test(errApi + e.message) || i === 3) throw new Error(`${e.message} ${errApi.slice(0, 300)}`);
       console.log(`   llm: ${e.message} ${errApi.slice(0, 200)} → reintento`);
@@ -82,7 +109,7 @@ async function chat(messages, { json = false, maxTokens = 32000 } = {}) {
   throw new Error("el modelo no respondió tras 4 intentos");
 }
 
-const costo = () => `${tot.llamadas} llamadas · ${tot.in} in / ${tot.out} out · ${tot.seg.toFixed(0)} s · US$ ${((tot.in * USD_IN + tot.out * USD_OUT) / 1e6).toFixed(4)}`;
+const costo = () => `${tot.llamadas} llamadas · ${tot.in} in / ${tot.out} out · ${tot.seg.toFixed(0)} s · US$ ${tot.usd.toFixed(4)}${tot.clIn ? ` · Claude ${tot.clIn} tok entrada / ${tot.clOut} tok salida con créditos del plan Max` : ""}`;
 
 function sacarJson(txt) {
   const s = txt.replace(/^[\s\S]*?```(?:json)?\s*/i, (m) => (/```/.test(m) ? "" : m)).replace(/```[\s\S]*$/, "");
