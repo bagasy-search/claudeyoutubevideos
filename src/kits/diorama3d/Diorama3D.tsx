@@ -105,7 +105,7 @@ export const Recorte: React.FC<{ src: string; ancho: number; aspecto: number; po
   return (
     <mesh position={pos} rotation={rot} visible={visible} renderOrder={nube ? 2 : 1}>
       <planeGeometry args={[ancho, ancho / aspecto]} />
-      <meshBasicMaterial map={tex} color={tinte} transparent opacity={opacidad} alphaTest={nube ? 0.01 : 0.35} depthWrite={!nube} fog side={THREE.DoubleSide} />
+      <meshBasicMaterial map={tex} color={tinte} transparent opacity={opacidad} alphaTest={nube ? 0.05 : 0.35} depthWrite={!nube} fog side={THREE.DoubleSide} />
     </mesh>
   );
 };
@@ -154,7 +154,7 @@ export const Atmosfera: React.FC<{ aire: Aire[] }> = ({ aire }) => {
 export const Lienzo: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { width, height } = useVideoConfig();
   return (
-    <ThreeCanvas width={width} height={height} gl={{ antialias: true, preserveDrawingBuffer: true }} style={{ position: "absolute", inset: 0 }}>
+    <ThreeCanvas width={width} height={height} gl={{ antialias: false, preserveDrawingBuffer: true }} style={{ position: "absolute", inset: 0 }}>
       <Redibuja />
       {children}
     </ThreeCanvas>
