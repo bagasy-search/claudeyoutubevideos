@@ -181,7 +181,7 @@ export const Wheel: React.FC<{ p?: V3; a?: number; r?: number; col?: string }> =
 
 // ---------- r2 (30-oct): piezas nuevas para los rediseños ----------
 const plaidTex = () => tex.text("plaid", 128, 128, (g) => { g.fillStyle = "#6a2a22"; g.fillRect(0, 0, 128, 128); g.fillStyle = "rgba(20,20,30,.55)"; for (let i = 0; i < 128; i += 32) { g.fillRect(i, 0, 12, 128); g.fillRect(0, i, 128, 12); } g.fillStyle = "rgba(230,200,150,.25)"; for (let i = 16; i < 128; i += 32) { g.fillRect(i, 0, 2, 128); g.fillRect(0, i, 128, 2); } });
-const skin = () => <meshPhysicalMaterial color="#d79e84" roughness={0.55} sheen={0.6} sheenColor="#ffb39a" clearcoat={0.15} />;
+const skin = () => <meshStandardMaterial color="#d79e84" roughness={0.55} />; // sin sheen/clearcoat: NaN en bloom del farm (rectángulo negro, 5-nov)
 // mano con el índice estirado: el origen es la PUNTA del índice, el dedo sube por +y; el dorso mira a +z (uña visible)
 export const Hand: React.FC<{ p?: V3; rot?: V3; s?: number; bend?: number }> = ({ p = [0, 0, 0], rot = [0, 0, 0], s = 1, bend = 0 }) => {
   const seg = (a: V3, b: V3, r: number, k: string) => { const A = new THREE.Vector3(...a), B = new THREE.Vector3(...b), d = B.clone().sub(A), L = d.length();
@@ -190,7 +190,7 @@ export const Hand: React.FC<{ p?: V3; rot?: V3; s?: number; bend?: number }> = (
   const b = bend * 0.25;
   return <group position={p} rotation={rot} scale={s}>
     {seg([0, 0.006, 0], [0, 0.026, -b * 0.02], 0.0085, "d")}
-    <mesh position={[0, 0.014, 0.0065]} rotation={[-0.1, 0, 0]} scale={[1, 1.5, 0.35]}><sphereGeometry args={[0.0062, 14, 10]} /><meshPhysicalMaterial color="#f0cdbd" roughness={0.25} clearcoat={0.8} /></mesh>
+    <mesh position={[0, 0.014, 0.0065]} rotation={[-0.1, 0, 0]} scale={[1, 1.5, 0.35]}><sphereGeometry args={[0.0062, 14, 10]} /><meshStandardMaterial color="#f0cdbd" roughness={0.3} /></mesh>
     {seg([0, 0.026, -b * 0.02], [0, 0.052, 0], 0.009, "m")}
     {seg([0, 0.052, 0], [0.004, 0.086, -0.004], 0.0098, "p")}
     {/* palma/dorso */}
