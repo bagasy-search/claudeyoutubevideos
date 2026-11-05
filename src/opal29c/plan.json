@@ -1,0 +1,1727 @@
+{
+"segs": [
+[
+3.5,
+7.48,
+"shot",
+"n_gallinero_noche_luz"
+],
+[
+7.48,
+11.82,
+"shot",
+"v09_cuenta_gallinas"
+],
+[
+11.82,
+14.894,
+"shot",
+"n_percha_huecos"
+],
+[
+20.2,
+24.14,
+"shot",
+"n_nidos_vacios_noche"
+],
+[
+24.14,
+27.02,
+"shot",
+"n_corral_amanecer_vacio"
+],
+[
+27.02,
+30.653,
+"shot",
+"v01_plumas_pila"
+],
+[
+36.526,
+44.74,
+"shot",
+"n_pluma_sola_barro"
+],
+[
+44.74,
+46.28,
+"shot",
+"n_cinco_piedras_mesa"
+],
+[
+46.28,
+48.886,
+"shot",
+"n_hojas_cerca_bosque"
+],
+[
+54.304,
+62.3,
+"shot",
+"n_granja_indiana_c"
+],
+[
+62.3,
+64.38,
+"shot",
+"n_cuaderno_lapiz_cafe"
+],
+[
+64.38,
+65.499,
+"shot",
+"n_porton_gallinero"
+],
+[
+70.004,
+80.44,
+"shot",
+"n_tres_gallinas_foto"
+],
+[
+80.44,
+82.3,
+"shot",
+"n_cuaderno_tapa_mesa"
+],
+[
+85.731,
+89.88,
+"shot",
+"n_reloj_cocina_c"
+],
+[
+89.88,
+95.8,
+"shot",
+"n_caja_herida_paja"
+],
+[
+95.8,
+97.4,
+"shot",
+"n_monedas_frasco"
+],
+[
+101.8,
+109.44,
+"shot",
+"n_gallinas_pasto_dia"
+],
+[
+109.44,
+111.14,
+"shot",
+"n_cerca_cuatro_pies"
+],
+[
+111.14,
+112.1,
+"shot",
+"n_gallinero_rojo_lateral"
+],
+[
+116.438,
+119.86,
+"shot",
+"n_percha_noche_c"
+],
+[
+119.86,
+126.18,
+"shot",
+"n_puerta_chica_cerrar"
+],
+[
+126.18,
+127.6,
+"shot",
+"n_reloj_atrasar"
+],
+[
+133.8,
+136.58,
+"shot",
+"n_atardecer_temprano"
+],
+[
+136.58,
+142.04,
+"shot",
+"n_gallinas_entrando"
+],
+[
+142.04,
+145.157,
+"shot",
+"n_auto_noche_granja"
+],
+[
+150.7,
+159.68,
+"shot",
+"n_linterna_mano_noche"
+],
+[
+159.68,
+161.6,
+"shot",
+"n_gallinas_juntas_percha"
+],
+[
+164.942,
+169.24,
+"shot",
+"n_puerta_chica_cerrada"
+],
+[
+169.24,
+174.44,
+"shot",
+"n_bloque_puerta"
+],
+[
+174.44,
+177.763,
+"shot",
+"n_cafe_cuaderno_amanecer"
+],
+[
+183.503,
+187.62,
+"shot",
+"n_perro_atado_porche"
+],
+[
+187.62,
+193.7,
+"shot",
+"n_lluvia_corral"
+],
+[
+193.7,
+194.773,
+"shot",
+"n_plumas_pasto_lejos"
+],
+[
+198.7,
+205.68,
+"shot",
+"n_lista_lapiz_cuaderno"
+],
+[
+205.68,
+209.8,
+"shot",
+"n_pasto_aplastado"
+],
+[
+209.8,
+210.958,
+"shot",
+"n_plumas_sin_cuerpo"
+],
+[
+215.8,
+226.96,
+"shot",
+"n_huellas_mapache_barro"
+],
+[
+226.96,
+228.373,
+"shot",
+"n_alambre_gallinero_roto"
+],
+[
+232.713,
+240.38,
+"shot",
+"n_collar_perro_pasto"
+],
+[
+240.38,
+241.6,
+"shot",
+"n_plumas_esparcidas"
+],
+[
+244.8,
+251.68,
+"shot",
+"n_halcon_poste"
+],
+[
+251.68,
+255.42,
+"shot",
+"n_tres_montones"
+],
+[
+255.42,
+257.6,
+"shot",
+"n_lista_tres_nombres"
+],
+[
+263.4,
+266.5,
+"shot",
+"n_bosque_borde_campo"
+],
+[
+266.5,
+272.62,
+"shot",
+"n_rodillas_plumas"
+],
+[
+272.62,
+273.588,
+"shot",
+"n_pluma_mano_cerca"
+],
+[
+278.333,
+284.12,
+"shot",
+"n_canon_limpio"
+],
+[
+284.12,
+288.92,
+"shot",
+"n_lechuza_rama"
+],
+[
+288.92,
+290.6,
+"shot",
+"v02_canon_mordido"
+],
+[
+295.021,
+302.66,
+"shot",
+"n_plumas_mordidas"
+],
+[
+302.66,
+305.28,
+"shot",
+"n_lupa_canon"
+],
+[
+305.28,
+306.884,
+"shot",
+"n_dientes_zorro_craneo"
+],
+[
+311.4,
+315.94,
+"shot",
+"n_campo_abierto_corral"
+],
+[
+315.94,
+322.7,
+"shot",
+"n_borde_cerca_tierra"
+],
+[
+326.3,
+334.5,
+"shot",
+"n_linea_plumas"
+],
+[
+334.5,
+337.68,
+"shot",
+"n_porton_esquina"
+],
+[
+337.68,
+339.6,
+"shot",
+"v04_hueco_porton"
+],
+[
+343.309,
+350.82,
+"shot",
+"n_tabla_torcida"
+],
+[
+350.82,
+353.9,
+"shot",
+"n_pelos_zorro_tabla"
+],
+[
+353.9,
+355.169,
+"shot",
+"n_tierra_cavada"
+],
+[
+360.3,
+366.34,
+"shot",
+"n_zorro_campo"
+],
+[
+366.34,
+369.5,
+"shot",
+"n_zorro_flaco_perfil"
+],
+[
+369.5,
+370.889,
+"shot",
+"n_zorro_cola"
+],
+[
+375.706,
+380.18,
+"shot",
+"n_coyote_campo"
+],
+[
+380.18,
+386.18,
+"shot",
+"n_barro_porton"
+],
+[
+386.18,
+387.073,
+"shot",
+"v03_huella"
+],
+[
+393.0,
+400.38,
+"shot",
+"n_huella_zorro_regla"
+],
+[
+400.38,
+404.4,
+"shot",
+"n_huella_garras"
+],
+[
+409.15,
+413.38,
+"shot",
+"n_rastro_linea_recta"
+],
+[
+413.38,
+418.6,
+"shot",
+"n_huella_coyote"
+],
+[
+418.6,
+421.5,
+"shot",
+"n_huella_perro"
+],
+[
+425.9,
+431.56,
+"shot",
+"n_huella_gato"
+],
+[
+431.56,
+436.8,
+"shot",
+"n_huella_mapache_mano"
+],
+[
+436.8,
+437.975,
+"shot",
+"n_huellas_zorro_porton"
+],
+[
+441.924,
+446.88,
+"shot",
+"n_hojas_pila_cerca"
+],
+[
+446.88,
+450.44,
+"shot",
+"n_montoncito_hojas"
+],
+[
+450.44,
+453.454,
+"shot",
+"n_zorro_bosque_sombra"
+],
+[
+458.3,
+463.76,
+"shot",
+"n_rastro_plumas_bosque"
+],
+[
+463.76,
+467.88,
+"shot",
+"n_tierra_hoyo_hojas"
+],
+[
+467.88,
+471.4,
+"shot",
+"n_campo_heno_abierto"
+],
+[
+477.606,
+481.04,
+"shot",
+"n_pastura_abajo"
+],
+[
+481.04,
+487.74,
+"shot",
+"n_distancia_gallinero"
+],
+[
+487.74,
+488.9,
+"shot",
+"n_monticulo_cerca"
+],
+[
+492.8,
+496.72,
+"shot",
+"n_pluma_sussex"
+],
+[
+496.72,
+501.34,
+"shot",
+"n_hojas_tapan"
+],
+[
+501.34,
+503.0,
+"shot",
+"n_mano_hojas"
+],
+[
+507.1,
+510.0,
+"shot",
+"n_huellas_ida_vuelta"
+],
+[
+510.0,
+517.94,
+"shot",
+"n_reloj_porche_noche"
+],
+[
+517.94,
+520.7,
+"shot",
+"n_zorro_mira_gallinero"
+],
+[
+526.1,
+530.78,
+"shot",
+"n_zorros_jovenes"
+],
+[
+530.78,
+535.78,
+"shot",
+"n_zorro_joven_campo"
+],
+[
+535.78,
+537.7,
+"shot",
+"n_calendario_octubre"
+],
+[
+542.831,
+549.4,
+"shot",
+"n_porton_hueco_cerca"
+],
+[
+549.4,
+551.76,
+"shot",
+"n_pala_zanja"
+],
+[
+551.76,
+552.24,
+"shot",
+"n_zanja_regla"
+],
+[
+552.24,
+555.363,
+"shot",
+"v05_malla_rollo"
+],
+[
+558.848,
+560.52,
+"shot",
+"n_dos_mallas"
+],
+[
+560.52,
+567.56,
+"shot",
+"n_malla_doblada_l"
+],
+[
+567.56,
+571.1,
+"shot",
+"v06_delantal_malla"
+],
+[
+577.2,
+584.8,
+"shot",
+"n_recibo_ferreteria"
+],
+[
+584.8,
+586.392,
+"shot",
+"n_nieto_espaldas_cerca"
+],
+[
+590.6,
+592.62,
+"shot",
+"n_hueco_cerca_dos"
+],
+[
+592.62,
+595.1,
+"shot",
+"n_compost_cerca"
+],
+[
+595.1,
+597.54,
+"shot",
+"n_poste_levantado"
+],
+[
+597.54,
+602.852,
+"shot",
+"n_estacas_malla"
+],
+[
+607.212,
+611.14,
+"shot",
+"n_mano_pestillo"
+],
+[
+611.14,
+616.44,
+"shot",
+"n_caja_puerta_auto"
+],
+[
+616.44,
+619.072,
+"shot",
+"v07_puerta_auto"
+],
+[
+623.136,
+627.5,
+"shot",
+"n_pollitas_jovenes"
+],
+[
+627.5,
+630.12,
+"shot",
+"n_iglesia_campo_noche"
+],
+[
+630.12,
+634.483,
+"shot",
+"n_gallinas_dentro_cerca"
+],
+[
+639.822,
+643.09,
+"shot",
+"n_reloj_tres"
+],
+[
+643.09,
+647.47,
+"shot",
+"n_zorro_amanecer"
+],
+[
+647.47,
+652.691,
+"shot",
+"n_luz_movimiento"
+],
+[
+655.95,
+664.21,
+"shot",
+"n_luz_porton_noche"
+],
+[
+664.21,
+666.33,
+"shot",
+"n_cuaderno_paginas"
+],
+[
+666.33,
+668.084,
+"shot",
+"n_cuaderno_viejo"
+],
+[
+672.826,
+681.79,
+"shot",
+"n_ropa_tendedero"
+],
+[
+681.79,
+684.5,
+"shot",
+"n_plumas_pasto_tarde"
+],
+[
+690.23,
+694.09,
+"shot",
+"n_huella_coyote_palma"
+],
+[
+694.09,
+700.95,
+"shot",
+"n_rastro_campo_heno"
+],
+[
+700.95,
+702.29,
+"shot",
+"n_coyote_lejos"
+],
+[
+707.008,
+710.41,
+"shot",
+"n_cable_electrico_cerca"
+],
+[
+710.41,
+716.27,
+"shot",
+"n_primavera_gallinero"
+],
+[
+716.27,
+717.8,
+"shot",
+"n_corral_manana_niebla"
+],
+[
+723.004,
+724.69,
+"shot",
+"n_tierra_sin_huellas"
+],
+[
+724.69,
+730.13,
+"shot",
+"n_techo_red_corral"
+],
+[
+730.13,
+732.39,
+"shot",
+"n_buho_cornudo"
+],
+[
+732.39,
+736.985,
+"shot",
+"n_red_rota"
+],
+[
+742.13,
+748.53,
+"shot",
+"n_halcon_vuelo"
+],
+[
+748.53,
+753.99,
+"shot",
+"n_gallina_pesada"
+],
+[
+758.1,
+761.15,
+"shot",
+"n_plumas_limpias"
+],
+[
+761.15,
+765.35,
+"shot",
+"n_halcon_poste_mira"
+],
+[
+765.35,
+768.4,
+"shot",
+"n_arbusto_corral"
+],
+[
+771.7,
+777.13,
+"shot",
+"n_mapache_noche"
+],
+[
+777.13,
+781.93,
+"shot",
+"n_gancho_ojo"
+],
+[
+781.93,
+784.5,
+"shot",
+"n_mano_mapache_alambre"
+],
+[
+789.8,
+793.01,
+"shot",
+"n_corral_noche_vacio"
+],
+[
+793.01,
+798.33,
+"shot",
+"n_pestillo_abierto"
+],
+[
+798.33,
+801.359,
+"shot",
+"n_pestillo_dos_pasos"
+],
+[
+807.2,
+817.25,
+"shot",
+"n_campo_niebla_lejos"
+],
+[
+817.25,
+819.385,
+"shot",
+"n_ferreteria_estante"
+],
+[
+824.6,
+829.91,
+"shot",
+"v08_puno_test"
+],
+[
+829.91,
+835.27,
+"shot",
+"n_puno_hueco"
+],
+[
+835.27,
+836.8,
+"shot",
+"n_mano_plana_malla"
+],
+[
+842.549,
+846.69,
+"shot",
+"n_delantal_enterrado"
+],
+[
+846.69,
+850.83,
+"shot",
+"n_cuaderno_cuentas"
+],
+[
+850.83,
+852.1,
+"shot",
+"n_porton_arreglado"
+],
+[
+857.9,
+865.77,
+"shot",
+"n_cinco_herramientas"
+],
+[
+865.77,
+868.67,
+"shot",
+"n_alambre_gallinero_rollo"
+],
+[
+868.67,
+870.6,
+"shot",
+"n_alambre_doblado"
+],
+[
+876.9,
+882.33,
+"shot",
+"n_malla_regla"
+],
+[
+882.33,
+888.857,
+"shot",
+"n_tabla_vieja_porton"
+],
+[
+893.7,
+896.77,
+"shot",
+"n_martillo_clavos"
+],
+[
+896.77,
+903.67,
+"shot",
+"n_gallina_muerta_tapada"
+],
+[
+903.67,
+905.182,
+"shot",
+"n_trampa_caja"
+],
+[
+910.232,
+916.17,
+"shot",
+"n_cuaderno_cinco_pistas"
+],
+[
+916.17,
+920.13,
+"shot",
+"n_huellas_y_hojas"
+],
+[
+920.13,
+923.2,
+"shot",
+"n_corral_dia_sol"
+],
+[
+926.8,
+933.19,
+"shot",
+"n_otono_bosque_hojas"
+],
+[
+933.19,
+937.45,
+"shot",
+"n_palet_cerca"
+],
+[
+937.45,
+938.757,
+"shot",
+"n_gallinas_bajo_palet"
+],
+[
+944.0,
+948.39,
+"shot",
+"n_zorro_sombra_noche"
+],
+[
+948.39,
+952.73,
+"shot",
+"n_bloque_puerta_noche"
+],
+[
+952.73,
+957.7,
+"shot",
+"n_pintura_brocha"
+],
+[
+962.546,
+966.25,
+"shot",
+"n_percha_contar"
+],
+[
+966.25,
+969.31,
+"shot",
+"n_nombres_tablita"
+],
+[
+969.31,
+974.176,
+"shot",
+"n_linterna_percha"
+],
+[
+979.916,
+984.17,
+"shot",
+"n_mesa_iglesia"
+],
+[
+984.17,
+987.97,
+"shot",
+"n_cerca_caminar"
+],
+[
+987.97,
+990.4,
+"shot",
+"n_poste_torcido"
+],
+[
+994.549,
+997.77,
+"shot",
+"n_huellas_barro_gallinero"
+],
+[
+997.77,
+1000.81,
+"shot",
+"n_pelo_alambre"
+],
+[
+1000.81,
+1007.889,
+"shot",
+"n_huellas_varias"
+],
+[
+1013.81,
+1021.01,
+"shot",
+"n_zorra_cachorros"
+],
+[
+1021.01,
+1025.67,
+"shot",
+"n_foto_vieja_gallinero"
+],
+[
+1030.3,
+1034.01,
+"shot",
+"n_gallina_sola_campo"
+],
+[
+1034.01,
+1039.11,
+"shot",
+"n_calendario_viejo"
+],
+[
+1039.11,
+1040.7,
+"shot",
+"n_campo_sin_cerca"
+],
+[
+1045.1,
+1048.73,
+"shot",
+"n_buho_granero"
+],
+[
+1048.73,
+1057.83,
+"shot",
+"n_botas_viejas"
+],
+[
+1057.83,
+1058.9,
+"shot",
+"n_perro_cerca_vecino"
+],
+[
+1064.53,
+1069.13,
+"shot",
+"n_cuaderno_cerrado"
+],
+[
+1069.13,
+1070.93,
+"shot",
+"n_cuaderno_escribe"
+],
+[
+1070.93,
+1074.998,
+"shot",
+"n_renglones_cuaderno"
+],
+[
+1080.3,
+1082.77,
+"shot",
+"n_atardecer_gallinero_c"
+],
+[
+1082.77,
+1092.682,
+"shot",
+"n_puerta_abierta_atardecer"
+],
+[
+1097.6,
+1102.65,
+"shot",
+"n_iglesia_campo_dia"
+],
+[
+1102.65,
+1107.31,
+"shot",
+"n_zorro_dia"
+],
+[
+1107.31,
+1109.4,
+"shot",
+"n_zorra_madre"
+],
+[
+1115.2,
+1120.37,
+"shot",
+"n_gallo_alerta"
+],
+[
+1120.37,
+1124.21,
+"shot",
+"n_gallinas_corren"
+],
+[
+1124.21,
+1125.7,
+"shot",
+"n_plumas_gallo"
+],
+[
+1130.121,
+1133.23,
+"shot",
+"n_gallo_percha"
+],
+[
+1133.23,
+1139.95,
+"shot",
+"n_trampa_viva"
+],
+[
+1139.95,
+1143.481,
+"shot",
+"n_telefono_pared_c"
+],
+[
+1149.347,
+1153.19,
+"shot",
+"n_campo_vacio_bosque"
+],
+[
+1153.19,
+1156.97,
+"shot",
+"n_gallina_herida_toalla"
+],
+[
+1156.97,
+1161.2,
+"shot",
+"n_caja_lampara"
+],
+[
+1165.547,
+1173.07,
+"shot",
+"n_jaula_separada"
+],
+[
+1173.07,
+1175.787,
+"shot",
+"n_veterinaria_puerta"
+],
+[
+1181.126,
+1186.47,
+"shot",
+"n_escena_corral"
+],
+[
+1186.47,
+1192.15,
+"shot",
+"n_corral_plumas_vacio"
+],
+[
+1192.15,
+1194.8,
+"shot",
+"n_dos_plumas"
+],
+[
+1200.904,
+1209.81,
+"shot",
+"n_huella_regla_c"
+],
+[
+1209.81,
+1212.5,
+"shot",
+"n_mapache_huellas"
+],
+[
+1216.1,
+1221.25,
+"shot",
+"n_hojas_monticulo2"
+],
+[
+1221.25,
+1225.47,
+"shot",
+"n_delantal_terminado"
+],
+[
+1225.47,
+1227.0,
+"shot",
+"n_percha_llena_noche"
+],
+[
+1232.537,
+1236.29,
+"shot",
+"n_gallina_joven_sol"
+],
+[
+1236.29,
+1240.21,
+"shot",
+"n_tres_gallinas_viejas"
+],
+[
+1240.21,
+1243.89,
+"shot",
+"v10_porche_noche"
+],
+[
+1247.3,
+1253.19,
+"shot",
+"n_nido_sin_huevos"
+],
+[
+1253.19,
+1257.966,
+"shot",
+"n_cuaderno_pluma_mesa"
+],
+[
+1263.633,
+1265.77,
+"shot",
+"n_hueco_cinco_pulgadas"
+],
+[
+1265.77,
+1271.5,
+"shot",
+"n_puerta_cerrada_final"
+]
+],
+"cam": [],
+"ov": [
+{
+"k": "big",
+"txt": "3",
+"sub": "HENS GONE · NO BODIES",
+"col": "red",
+"at": 11.82,
+"out": 15.02
+},
+{
+"k": "chip",
+"txt": "PEPPER · NUTMEG · CLOVE",
+"col": "amber",
+"at": 13.2,
+"out": 16.7
+},
+{
+"k": "chip",
+"txt": "5 CLUES",
+"col": "ice",
+"at": 44.74,
+"out": 48.24
+},
+{
+"k": "stamp",
+"txt": "CLOCKS BACK",
+"at": 125.26,
+"out": 128.26
+},
+{
+"k": "stamp",
+"txt": "CLOSE UP FIRST",
+"at": 159.68,
+"out": 162.68
+},
+{
+"k": "step",
+"n": 1,
+"name": "BODIES OR NO BODIES",
+"col": "amber",
+"at": 193.7,
+"out": 197.7
+},
+{
+"k": "chip",
+"txt": "FOX · COYOTE · BOBCAT",
+"col": "ice",
+"at": 255.42,
+"out": 258.92
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE QUILLS",
+"col": "amber",
+"at": 266.5,
+"out": 270.5
+},
+{
+"k": "stamp",
+"txt": "TEETH, NOT A BEAK",
+"at": 305.28,
+"out": 308.28
+},
+{
+"k": "step",
+"n": 3,
+"name": "WHERE THE PILES ARE",
+"col": "amber",
+"at": 308.6,
+"out": 312.6
+},
+{
+"k": "chip",
+"txt": "ORANGE-RED HAIR",
+"col": "red",
+"at": 350.82,
+"out": 354.32
+},
+{
+"k": "big",
+"txt": "10-12",
+"sub": "POUNDS · MOSTLY FUR",
+"col": "amber",
+"at": 366.34,
+"out": 369.54
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE TRACKS",
+"col": "amber",
+"at": 380.18,
+"out": 384.18
+},
+{
+"k": "chip",
+"txt": "FOX · 2 IN · NARROW OVAL",
+"col": "ice",
+"at": 393.26,
+"out": 396.76
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE CACHE",
+"col": "amber",
+"at": 445.52,
+"out": 449.52
+},
+{
+"k": "stamp",
+"txt": "CACHING",
+"at": 463.76,
+"out": 466.76
+},
+{
+"k": "big",
+"txt": "60 FT",
+"sub": "FROM THE COOP",
+"col": "red",
+"at": 481.04,
+"out": 484.24
+},
+{
+"k": "chip",
+"txt": "TRENCH · 8 IN DEEP",
+"col": "green",
+"at": 549.4,
+"out": 552.9
+},
+{
+"k": "stamp",
+"txt": "THE APRON",
+"at": 567.56,
+"out": 570.56
+},
+{
+"k": "big",
+"txt": "$12",
+"sub": "AND AN AFTERNOON",
+"col": "green",
+"at": 577.44,
+"out": 580.64
+},
+{
+"k": "chip",
+"txt": "AUTOMATIC DOOR",
+"col": "green",
+"at": 616.44,
+"out": 619.94
+},
+{
+"k": "chip",
+"txt": "MOTION LIGHT · $25",
+"col": "green",
+"at": 647.47,
+"out": 650.97
+},
+{
+"k": "stamp",
+"txt": "COYOTE",
+"at": 700.95,
+"out": 703.95
+},
+{
+"k": "chip",
+"txt": "GREAT HORNED OWL",
+"col": "ice",
+"at": 730.13,
+"out": 733.63
+},
+{
+"k": "big",
+"txt": "FIST",
+"sub": "THE TEST I DO NOW",
+"col": "amber",
+"at": 824.61,
+"out": 827.81
+},
+{
+"k": "chip",
+"txt": "$160 IN ALL",
+"col": "green",
+"at": 846.69,
+"out": 850.19
+},
+{
+"k": "step",
+"n": 1,
+"name": "CHICKEN WIRE",
+"col": "red",
+"at": 865.77,
+"out": 869.77
+},
+{
+"k": "step",
+"n": 2,
+"name": "FIXING IT LATER",
+"col": "red",
+"at": 882.33,
+"out": 886.33
+},
+{
+"k": "step",
+"n": 3,
+"name": "GUESSING",
+"col": "red",
+"at": 896.77,
+"out": 900.77
+},
+{
+"k": "step",
+"n": 4,
+"name": "ONLY THE NIGHT",
+"col": "red",
+"at": 918.63,
+"out": 922.63
+},
+{
+"k": "step",
+"n": 5,
+"name": "WAITING A NIGHT",
+"col": "red",
+"at": 938.11,
+"out": 942.11
+},
+{
+"k": "chip",
+"txt": "1 · COUNT HEADS",
+"col": "green",
+"at": 962.69,
+"out": 966.19
+},
+{
+"k": "chip",
+"txt": "2 · DOOR AT DARK",
+"col": "green",
+"at": 973.41,
+"out": 976.91
+},
+{
+"k": "chip",
+"txt": "3 · WALK THE FENCE",
+"col": "green",
+"at": 983.07,
+"out": 986.57
+},
+{
+"k": "chip",
+"txt": "4 · READ THE SIGNS",
+"col": "green",
+"at": 993.61,
+"out": 997.11
+},
+{
+"k": "chip",
+"txt": "5 · OCT NOV MAR APR",
+"col": "green",
+"at": 1006.45,
+"out": 1009.95
+},
+{
+"k": "chip",
+"txt": "WHAT MY MOTHER NEVER DID",
+"col": "amber",
+"at": 1021.01,
+"out": 1024.51
+},
+{
+"k": "deal",
+"at": 1097.77,
+"out": 1102.27
+},
+{
+"k": "chip",
+"txt": "«A FOX IN THE DAYTIME?»",
+"col": "ice",
+"at": 1102.65,
+"out": 1106.15
+},
+{
+"k": "chip",
+"txt": "«DOES A ROOSTER HELP?»",
+"col": "ice",
+"at": 1117.01,
+"out": 1120.51
+},
+{
+"k": "chip",
+"txt": "«SHOULD I TRAP IT?»",
+"col": "ice",
+"at": 1133.23,
+"out": 1136.73
+},
+{
+"k": "recap",
+"rows": [
+1186.47,
+1192.09,
+1197.43,
+1201.11,
+1214.67
+],
+"at": 1178.65,
+"out": 1220.67
+},
+{
+"k": "big",
+"txt": "19",
+"sub": "ON THE ROOST · COUNTED TWICE",
+"col": "green",
+"at": 1240.21,
+"out": 1243.41
+},
+{
+"k": "ask",
+"at": 1258.21,
+"out": 1268.21
+},
+{
+"k": "next",
+"at": 1263.75,
+"out": 1268.75
+}
+],
+"cta1": {
+"guide": 75.16,
+"page": 82.64,
+"desc": 97.66,
+"manual": "23 PROBLEMS · ONE PAGE EACH",
+"img": "page",
+"end": 103.66
+},
+"cta2": {
+"guide": 1086.39,
+"page": 1089.19,
+"desc": 1092.11,
+"manual": "23 PROBLEMS · ONE PAGE EACH",
+"img": "page",
+"end": 1098.11
+},
+"cta3": {
+"desc": 1245.51,
+"end": 1250.51
+},
+"end": 1271.49,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+174.44,
+183.54
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "READ THE NOTE",
+"recap": [
+"1 · Bodies or no bodies?",
+"2 · Clean quill or chewed?",
+"3 · Where the piles point",
+"4 · Size & line of the tracks",
+"5 · Look for the cache"
+],
+"ask": [
+"What's taken hens from you?",
+"How did you figure it out?",
+"Tell me · I read every one"
+],
+"next": [
+"NEXT WEEK",
+"My hens quit laying"
+],
+"lower": [
+52.94,
+58.94
+]
+}
+}

@@ -1,0 +1,272 @@
+[
+{
+"k": "roostgap",
+"at": 8.78,
+"out": 14.78,
+"said": 10.48,
+"solo": true,
+"kw": "3 SHORT",
+"kw2": "counted twice",
+"ph": "ph_roostgap"
+},
+{
+"k": "leftnote",
+"at": 39.36,
+"out": 45.36,
+"said": 39.36,
+"solo": true,
+"kw": "A NOTE",
+"kw2": "you just have to read it",
+"ph": "ph_leftnote"
+},
+{
+"k": "popdoor",
+"at": 123.0,
+"out": 127.5,
+"said": 123.0,
+"sp": 1.333,
+"solo": true,
+"kw": "THE RULE",
+"kw2": "every night, 50 years",
+"ph": "ph_popdoor"
+},
+{
+"k": "hourhalf",
+"at": 140.58,
+"out": 145.08,
+"said": 143.28,
+"sp": 1.444,
+"solo": true,
+"kw": "90 MINUTES",
+"kw2": "the door stood open",
+"ph": "ph_hourhalf"
+},
+{
+"k": "cinderdoor",
+"at": 169.24,
+"out": 175.24,
+"said": 169.24,
+"solo": true,
+"kw": "A CINDER BLOCK",
+"kw2": "it will come back",
+"ph": "ph_cinderdoor"
+},
+{
+"k": "onechance",
+"at": 185.28,
+"out": 191.28,
+"said": 185.28,
+"solo": true,
+"kw": "ONE CHANCE",
+"kw2": "before the rain",
+"ph": "ph_onechance"
+},
+{
+"k": "pillowfight",
+"at": 244.88,
+"out": 250.88,
+"said": 240.38,
+"solo": true,
+"kw": "A PILLOW FIGHT",
+"kw2": "that's a dog",
+"ph": "ph_pillowfight"
+},
+{
+"k": "quillroot",
+"at": 281.22,
+"out": 287.72,
+"said": 281.22,
+"solo": true,
+"kw": "CLEAN QUILL",
+"kw2": "a beak",
+"ph": "ph_quillroot"
+},
+{
+"k": "dotline",
+"at": 327.637,
+"out": 334.14,
+"said": 327.64,
+"solo": true,
+"kw": "A LINE OF DOTS",
+"kw2": "door → fence",
+"ph": "ph_dotline"
+},
+{
+"k": "foxhair",
+"at": 350.58,
+"out": 355.08,
+"said": 351.88,
+"sp": 1.333,
+"solo": true,
+"kw": "ORANGE-RED",
+"kw2": "fox hair",
+"ph": "ph_foxhair"
+},
+{
+"k": "mostlyfur",
+"at": 366.3,
+"out": 370.8,
+"said": 369.5,
+"sp": 1.333,
+"solo": true,
+"kw": "MOSTLY FUR",
+"kw2": "fits through 4 inches",
+"ph": "ph_mostlyfur"
+},
+{
+"k": "tightrope",
+"at": 411.157,
+"out": 417.66,
+"said": 411.16,
+"solo": true,
+"kw": "A TIGHTROPE",
+"kw2": "one foot in front",
+"ph": "ph_tightrope"
+},
+{
+"k": "tuckedin",
+"at": 498.117,
+"out": 502.62,
+"said": 498.12,
+"sp": 1.333,
+"solo": true,
+"kw": "TUCKED IN",
+"kw2": "saved for later",
+"ph": "ph_tuckedin"
+},
+{
+"k": "youngfox",
+"at": 530.777,
+"out": 536.78,
+"said": 530.78,
+"solo": true,
+"kw": "YOUNG FOXES",
+"kw2": "October · November",
+"ph": "ph_youngfox"
+},
+{
+"k": "lapron",
+"at": 563.637,
+"out": 570.14,
+"said": 563.64,
+"solo": true,
+"kw": "AN L",
+"kw2": "up the gate, flat under",
+"ph": "ph_lapron"
+},
+{
+"k": "heavedpost",
+"at": 596.137,
+"out": 602.14,
+"said": 596.14,
+"solo": true,
+"kw": "FROST HEAVE",
+"kw2": "a new gap",
+"ph": "ph_heavedpost"
+},
+{
+"k": "gadget",
+"at": 611.137,
+"out": 617.14,
+"said": 611.14,
+"solo": true,
+"kw": "A GADGET",
+"kw2": "right for 50 years",
+"ph": "ph_gadget"
+},
+{
+"k": "laundry",
+"at": 674.654,
+"out": 680.65,
+"said": 674.65,
+"solo": true,
+"kw": "IN DAYLIGHT",
+"kw2": "not fifty yards away",
+"ph": "ph_laundry"
+},
+{
+"k": "palmprint",
+"at": 691.774,
+"out": 697.77,
+"said": 691.77,
+"solo": true,
+"kw": "AS BIG AS MY PALM",
+"kw2": "a coyote",
+"ph": "ph_palmprint"
+},
+{
+"k": "nettear",
+"at": 732.394,
+"out": 736.89,
+"said": 732.39,
+"sp": 1.333,
+"solo": true,
+"kw": "ONE TEAR",
+"kw2": "an owl came through",
+"ph": "ph_nettear"
+},
+{
+"k": "hookeye",
+"at": 779.874,
+"out": 784.37,
+"said": 779.87,
+"sp": 1.333,
+"solo": true,
+"kw": "HOOK & EYE",
+"kw2": "a raccoon has hands",
+"ph": "ph_hookeye"
+},
+{
+"k": "flathand",
+"at": 842.67,
+"out": 848.67,
+"said": 836.97,
+"solo": true,
+"kw": "FLAT HAND",
+"kw2": "a weasel gets in",
+"ph": "ph_flathand"
+},
+{
+"k": "palletcover",
+"at": 934.13,
+"out": 938.63,
+"said": 935.33,
+"sp": 1.333,
+"solo": true,
+"kw": "COVER",
+"kw2": "something to run under",
+"ph": "ph_palletcover"
+},
+{
+"k": "mothershrug",
+"at": 1047.47,
+"out": 1053.47,
+"said": 1047.47,
+"solo": true,
+"kw": "A SHRUG",
+"kw2": "the cost of chickens?",
+"ph": "ph_mothershrug"
+},
+{
+"k": "losslog",
+"at": 1070.39,
+"out": 1074.89,
+"said": 1073.79,
+"sp": 1.444,
+"solo": true,
+"kw": "EVERY LOSS",
+"kw2": "date · hen · what I found",
+"ph": "ph_losslog"
+},
+{
+"k": "trapcall",
+"at": 1138.85,
+"out": 1143.35,
+"said": 1139.95,
+"sp": 1.333,
+"solo": true,
+"kw": "CALL FIRST",
+"kw2": "trapping rules differ",
+"ph": "ph_trapcall"
+}
+]
