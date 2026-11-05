@@ -1,0 +1,344 @@
+{
+"linerhem": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_linerhem"
+},
+"woodtub": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_woodtub"
+},
+"wetstory": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_wetstory"
+},
+"flashlight": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_flashlight"
+},
+"stoolbucket": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_stoolbucket"
+},
+"oldtile": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_oldtile"
+},
+"spread": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_spread"
+},
+"puffcolor": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_puffcolor"
+},
+"tenugui": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_tenugui"
+},
+"toiletlid": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_toiletlid"
+},
+"bentbristle": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_bentbristle"
+},
+"thickmat": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_thickmat"
+},
+"matsun": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_matsun"
+},
+"bluerect": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_bluerect"
+},
+"graystack": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_graystack"
+},
+"vinegarcup": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_vinegarcup"
+},
+"oldmeds": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_oldmeds"
+},
+"holderwater": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_holderwater"
+},
+"fanwisps": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_fanwisps"
+},
+"softthings": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_softthings"
+},
+"airfresh": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_airfresh"
+},
+"yuzudish": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_yuzudish"
+},
+"rustyrazor": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_rustyrazor"
+},
+"brushwash": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_brushwash"
+},
+"nowindow": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_nowindow"
+},
+"fandust": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_fandust"
+},
+"onecleaner": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_onecleaner"
+},
+"nightdry": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_nightdry"
+},
+"toiletgoddess": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_toiletgoddess"
+},
+"bucketcloth": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_bucketcloth"
+},
+"spotlessbowl": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_spotlessbowl"
+},
+"noscrub": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_noscrub"
+},
+"washcloth": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_washcloth"
+},
+"ceilingmold": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_ceilingmold"
+},
+"bluewater": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_bluewater"
+},
+"towelover": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_towelover"
+},
+"toybag": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_toybag"
+},
+"tonightliner": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_tonightliner"
+}
+}

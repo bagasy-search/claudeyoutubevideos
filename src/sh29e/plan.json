@@ -1,0 +1,1656 @@
+{
+"segs": [
+[
+4.4,
+11.06,
+"shot",
+"v01_cortina"
+],
+[
+11.06,
+17.187,
+"shot",
+"n_borde_tina_moho"
+],
+[
+22.3,
+29.48,
+"shot",
+"n_bano_americano_puerta"
+],
+[
+29.48,
+33.658,
+"shot",
+"n_esponja_amarilla_borde"
+],
+[
+38.2,
+43.34,
+"shot",
+"n_banio_japones_tina_madera"
+],
+[
+43.34,
+49.681,
+"shot",
+"n_cajon_cosas_afuera"
+],
+[
+52.9,
+56.02,
+"shot",
+"n_estante_banio_cosas"
+],
+[
+56.02,
+63.392,
+"shot",
+"n_esquina_azulejo_negro"
+],
+[
+68.709,
+73.14,
+"shot",
+"n_espejo_empanado_azulejos"
+],
+[
+73.14,
+78.5,
+"shot",
+"n_botiquin_blanco_estante"
+],
+[
+78.5,
+82.276,
+"shot",
+"n_mostrador_farmacia_bolsa"
+],
+[
+86.6,
+92.92,
+"shot",
+"n_monedas_jabon_mesa"
+],
+[
+92.92,
+98.5,
+"shot",
+"n_linterna_tapa_inodoro"
+],
+[
+104.302,
+110.82,
+"shot",
+"n_inodoro_blanco_trapo"
+],
+[
+110.82,
+115.162,
+"shot",
+"n_luz_ventana_tapa"
+],
+[
+119.506,
+126.46,
+"shot",
+"n_pasillo_puertas_madera"
+],
+[
+126.46,
+133.6,
+"shot",
+"n_banquito_balde_tina"
+],
+[
+138.9,
+141.74,
+"shot",
+"n_toalla_fina_colgada"
+],
+[
+141.74,
+145.02,
+"shot",
+"n_ventana_bano_noche_abierta"
+],
+[
+145.02,
+150.9,
+"shot",
+"n_azulejos_viejos_limpios"
+],
+[
+156.6,
+161.74,
+"shot",
+"n_liner_vacio_tina"
+],
+[
+161.74,
+167.491,
+"shot",
+"n_plastico_humedo_gotas"
+],
+[
+171.3,
+179.38,
+"shot",
+"n_lavadora_tambor_abierto"
+],
+[
+179.38,
+184.9,
+"shot",
+"n_liner_tendedero_sol"
+],
+[
+188.6,
+193.92,
+"shot",
+"v02_doblada"
+],
+[
+193.92,
+199.9,
+"shot",
+"n_cortina_abierta_secando"
+],
+[
+204.0,
+208.04,
+"shot",
+"n_tina_sin_cortina"
+],
+[
+208.04,
+213.6,
+"shot",
+"n_ventana_vidrio_vapor"
+],
+[
+213.6,
+216.5,
+"shot",
+"n_lufa_y_esponja_repisa"
+],
+[
+222.2,
+230.2,
+"shot",
+"n_lufa_fibras_macro"
+],
+[
+230.2,
+234.064,
+"shot",
+"n_esponja_vieja_y_nueva"
+],
+[
+238.804,
+244.38,
+"shot",
+"v04_esponja"
+],
+[
+244.38,
+248.76,
+"shot",
+"n_lufa_natural_gancho"
+],
+[
+254.0,
+257.3,
+"shot",
+"n_tenugui_enjuague_manos"
+],
+[
+257.3,
+261.08,
+"shot",
+"n_tenugui_varanda_sol"
+],
+[
+261.08,
+267.3,
+"shot",
+"n_esponja_gruesa_goteando"
+],
+[
+271.0,
+275.0,
+"shot",
+"n_inodoro_tapa_arriba"
+],
+[
+275.0,
+278.56,
+"shot",
+"n_gotas_rayo_luz"
+],
+[
+278.56,
+282.196,
+"shot",
+"n_vaso_cepillos_lavabo"
+],
+[
+286.026,
+291.54,
+"shot",
+"v03_tapa"
+],
+[
+291.54,
+296.386,
+"shot",
+"v05_cepillos"
+],
+[
+301.0,
+308.1,
+"shot",
+"n_cepillo_capuchon_cerrado"
+],
+[
+308.1,
+313.8,
+"shot",
+"n_puerta_inodoro_aparte"
+],
+[
+319.917,
+322.76,
+"shot",
+"n_cepillo_cerdas_abiertas"
+],
+[
+322.76,
+329.32,
+"shot",
+"n_escoba_paja_pisada"
+],
+[
+329.32,
+332.2,
+"shot",
+"n_tres_cepillos_fila"
+],
+[
+336.83,
+343.58,
+"shot",
+"n_cepillo_nuevo_vaso"
+],
+[
+343.58,
+349.475,
+"shot",
+"n_balde_limpieza_cepillos"
+],
+[
+355.227,
+358.05,
+"shot",
+"n_tetera_mesa_baja"
+],
+[
+358.05,
+364.58,
+"shot",
+"n_trapo_balde_cocina"
+],
+[
+364.58,
+367.6,
+"shot",
+"n_puerta_banio_noche"
+],
+[
+373.1,
+379.31,
+"shot",
+"n_alfombra_azul_tina"
+],
+[
+379.31,
+383.665,
+"shot",
+"n_dorso_goma_humedo"
+],
+[
+388.605,
+391.96,
+"shot",
+"n_moho_dorso_alfombra"
+],
+[
+391.96,
+396.29,
+"shot",
+"n_alfombra_algodon_borde"
+],
+[
+396.29,
+401.164,
+"shot",
+"n_tablas_madera_estera"
+],
+[
+405.143,
+411.12,
+"shot",
+"n_estera_riel_madera"
+],
+[
+411.12,
+415.878,
+"shot",
+"n_lavado_estera_manos"
+],
+[
+419.639,
+424.94,
+"shot",
+"v06_alfombra"
+],
+[
+424.94,
+429.669,
+"shot",
+"n_departamento_chico_ventana"
+],
+[
+433.901,
+437.32,
+"shot",
+"n_ventana_escarcha_cocina"
+],
+[
+437.32,
+441.69,
+"shot",
+"n_banio_alfombra_azul_cerrado"
+],
+[
+441.69,
+446.2,
+"shot",
+"n_manos_levantan_alfombra"
+],
+[
+450.5,
+457.5,
+"shot",
+"n_rectangulo_moho_azul"
+],
+[
+457.5,
+461.899,
+"shot",
+"n_alfombra_bolsa_basura"
+],
+[
+466.12,
+469.11,
+"shot",
+"n_piso_banio_desnudo"
+],
+[
+469.11,
+474.49,
+"shot",
+"n_toallas_gruesas_estante"
+],
+[
+474.49,
+479.2,
+"shot",
+"n_toalla_puerta_gancho"
+],
+[
+484.6,
+489.9,
+"shot",
+"n_toalla_gris_olor"
+],
+[
+489.9,
+493.08,
+"shot",
+"n_cesto_toallas_lavar"
+],
+[
+493.08,
+497.7,
+"shot",
+"n_toalla_mano_anillo"
+],
+[
+501.544,
+506.46,
+"shot",
+"n_toallas_abiertas_riel"
+],
+[
+506.46,
+510.29,
+"shot",
+"n_vinagre_taza_medida"
+],
+[
+510.29,
+513.0,
+"shot",
+"n_botiquin_espejo_cerrado"
+],
+[
+517.521,
+525.33,
+"shot",
+"v07_remedios"
+],
+[
+525.33,
+530.6,
+"shot",
+"n_vapor_espejo_botiquin"
+],
+[
+534.4,
+537.57,
+"shot",
+"n_cajon_dormitorio_ordenado"
+],
+[
+537.57,
+541.28,
+"shot",
+"n_estante_alto_cocina"
+],
+[
+541.28,
+545.7,
+"shot",
+"n_botellas_viejas_mesa"
+],
+[
+549.441,
+554.59,
+"shot",
+"n_basura_cocina_tapa"
+],
+[
+554.59,
+559.7,
+"shot",
+"n_buzon_devolucion_farmacia"
+],
+[
+563.527,
+567.04,
+"shot",
+"n_bolsa_papel_llena"
+],
+[
+567.04,
+570.71,
+"shot",
+"n_mostrador_manos_bolsa"
+],
+[
+570.71,
+575.9,
+"shot",
+"n_cepillo_inodoro_soporte"
+],
+[
+580.7,
+586.25,
+"shot",
+"n_agua_sucia_soporte"
+],
+[
+586.25,
+592.679,
+"shot",
+"n_cepillo_enjuague_taza"
+],
+[
+597.3,
+605.54,
+"shot",
+"n_soporte_cepillo_seco"
+],
+[
+605.54,
+609.6,
+"shot",
+"n_cepillo_inodoro_plano"
+],
+[
+614.3,
+618.95,
+"shot",
+"n_cinco_piedras_bandeja"
+],
+[
+618.95,
+626.754,
+"shot",
+"n_puerta_ventana_cerradas"
+],
+[
+631.0,
+636.07,
+"shot",
+"n_puerta_ventana_abiertas"
+],
+[
+636.07,
+641.854,
+"shot",
+"n_interruptor_dos_teclas"
+],
+[
+646.713,
+652.57,
+"shot",
+"n_panel_giratorio_ventilador"
+],
+[
+652.57,
+660.1,
+"shot",
+"n_estante_botellas_cargado"
+],
+[
+664.2,
+672.09,
+"shot",
+"n_pano_bicarbonato_ventana"
+],
+[
+672.09,
+675.3,
+"shot",
+"n_costra_moho_esquina"
+],
+[
+679.0,
+686.05,
+"shot",
+"n_alfombra_felpa_banio"
+],
+[
+686.05,
+690.163,
+"shot",
+"n_toallas_humedas_pila"
+],
+[
+695.1,
+700.21,
+"shot",
+"n_enchufe_aromatizante"
+],
+[
+700.21,
+706.9,
+"shot",
+"n_vela_tanque_inodoro"
+],
+[
+711.7,
+714.99,
+"shot",
+"n_bruma_banio_chico"
+],
+[
+714.99,
+721.885,
+"shot",
+"n_inhalador_mesa"
+],
+[
+725.925,
+732.57,
+"shot",
+"n_rincon_humedo_lavabo"
+],
+[
+732.57,
+735.51,
+"shot",
+"n_manos_abren_ventana"
+],
+[
+735.51,
+738.285,
+"shot",
+"n_alfeizar_platito_vacio"
+],
+[
+743.905,
+750.03,
+"shot",
+"n_cascaras_yuzu_secas"
+],
+[
+750.03,
+754.49,
+"shot",
+"n_radio_madera_estante"
+],
+[
+758.843,
+765.79,
+"shot",
+"n_navaja_oxidada_repisa"
+],
+[
+765.79,
+769.1,
+"shot",
+"n_navaja_seca_toalla"
+],
+[
+773.807,
+781.75,
+"shot",
+"n_brochas_maquillaje_vaso"
+],
+[
+781.75,
+786.4,
+"shot",
+"n_brochas_secando_toalla"
+],
+[
+791.5,
+795.65,
+"shot",
+"n_cajon_cosmeticos_viejos"
+],
+[
+795.65,
+802.0,
+"shot",
+"n_rimel_seco_tapa"
+],
+[
+805.4,
+810.49,
+"shot",
+"n_banio_ciego_foco"
+],
+[
+810.49,
+815.057,
+"shot",
+"n_toallas_nunca_secan"
+],
+[
+821.243,
+827.03,
+"shot",
+"v08_ventilador"
+],
+[
+827.03,
+830.75,
+"shot",
+"n_papel_pegado_rejilla"
+],
+[
+830.75,
+833.7,
+"shot",
+"n_papel_cae_piso"
+],
+[
+837.132,
+843.27,
+"shot",
+"n_ventilador_polvo_gris"
+],
+[
+843.27,
+847.7,
+"shot",
+"n_aspas_polvo_macro"
+],
+[
+851.622,
+859.21,
+"shot",
+"n_borde_tina_botellas"
+],
+[
+859.21,
+863.9,
+"shot",
+"n_vapor_mezcla_balde"
+],
+[
+870.1,
+877.63,
+"shot",
+"n_limpiador_inodoro_cuello"
+],
+[
+877.63,
+882.0,
+"shot",
+"n_una_botella_azulejo"
+],
+[
+887.2,
+891.59,
+"shot",
+"n_ventana_abierta_aire"
+],
+[
+891.59,
+898.0,
+"shot",
+"n_puerta_pasillo_luz"
+],
+[
+903.63,
+908.01,
+"shot",
+"n_manos_tela_mesa"
+],
+[
+908.01,
+914.23,
+"shot",
+"n_taza_te_panuelo"
+],
+[
+914.23,
+916.9,
+"shot",
+"n_liner_amarillento_ducha"
+],
+[
+921.0,
+928.49,
+"shot",
+"n_banio_japones_noche_seco"
+],
+[
+928.49,
+932.8,
+"shot",
+"n_piso_azulejo_sin_alfombra"
+],
+[
+938.0,
+941.89,
+"shot",
+"n_ventana_rendija_invierno"
+],
+[
+941.89,
+947.8,
+"shot",
+"n_trapo_balde_banio"
+],
+[
+952.413,
+959.25,
+"shot",
+"n_kamidana_estante"
+],
+[
+959.25,
+962.75,
+"shot",
+"n_cocina_antigua_fuego"
+],
+[
+962.75,
+966.2,
+"shot",
+"n_banio_inodoro_madera_vintage"
+],
+[
+970.321,
+976.17,
+"shot",
+"n_espejo_mano_tocador"
+],
+[
+976.17,
+981.681,
+"shot",
+"n_guitarra_silla_sol"
+],
+[
+985.226,
+990.58,
+"shot",
+"n_dos_tazas_veranda"
+],
+[
+990.58,
+994.64,
+"shot",
+"n_cocina_amanecer_arroz"
+],
+[
+994.64,
+997.377,
+"shot",
+"n_balde_agua_tibia_trapo"
+],
+[
+1003.138,
+1008.38,
+"shot",
+"v09_inodoro"
+],
+[
+1008.38,
+1012.52,
+"shot",
+"n_manos_trapo_taza"
+],
+[
+1012.52,
+1015.964,
+"shot",
+"n_cepillo_dentro_taza"
+],
+[
+1021.333,
+1026.3,
+"shot",
+"n_inodoro_impecable"
+],
+[
+1026.3,
+1031.7,
+"shot",
+"n_figura_ceramica_estante"
+],
+[
+1037.4,
+1043.32,
+"shot",
+"n_puerta_corrediza_zapatillas"
+],
+[
+1043.32,
+1051.0,
+"shot",
+"n_trapo_doblado_tapa"
+],
+[
+1054.35,
+1057.88,
+"shot",
+"n_trapo_blanco_clavo"
+],
+[
+1057.88,
+1062.48,
+"shot",
+"n_cuarto_inodoro_diminuto"
+],
+[
+1062.48,
+1066.8,
+"shot",
+"n_pasillo_madera_pulido"
+],
+[
+1070.8,
+1074.12,
+"shot",
+"n_camelia_vaso_ventana"
+],
+[
+1074.12,
+1080.8,
+"shot",
+"n_tetera_hierro_estufa"
+],
+[
+1086.149,
+1089.38,
+"shot",
+"n_cortina_abierta_puerta_vista"
+],
+[
+1089.38,
+1093.82,
+"shot",
+"n_estera_borde_tina_colgada"
+],
+[
+1093.82,
+1098.594,
+"shot",
+"n_pano_exprimido_gancho"
+],
+[
+1103.1,
+1109.72,
+"shot",
+"n_inodoro_sol_manana"
+],
+[
+1109.72,
+1114.3,
+"shot",
+"n_tendedero_estera_toallas"
+],
+[
+1119.5,
+1122.94,
+"shot",
+"n_manos_esponja_revisan"
+],
+[
+1122.94,
+1131.173,
+"shot",
+"n_cepillo_nuevo_estuche"
+],
+[
+1136.924,
+1139.76,
+"shot",
+"n_cartas_atadas_cordel"
+],
+[
+1139.76,
+1145.58,
+"shot",
+"n_techo_moho_puntos"
+],
+[
+1145.58,
+1148.866,
+"shot",
+"n_guantes_ventana_borde"
+],
+[
+1153.722,
+1160.84,
+"shot",
+"n_moho_grande_pared"
+],
+[
+1160.84,
+1164.554,
+"shot",
+"n_azulejo_suelto_mancha"
+],
+[
+1170.3,
+1178.32,
+"shot",
+"n_deshumidificador_blanco_piso"
+],
+[
+1178.32,
+1182.693,
+"shot",
+"n_destornillador_banqueta_ventilador"
+],
+[
+1187.6,
+1195.26,
+"shot",
+"n_tanque_abierto_pastilla"
+],
+[
+1195.26,
+1199.064,
+"shot",
+"n_taza_agua_azul_marcas"
+],
+[
+1203.8,
+1209.32,
+"shot",
+"n_junta_gris_azulejos"
+],
+[
+1209.32,
+1214.1,
+"shot",
+"n_junta_jabon_detalle"
+],
+[
+1217.9,
+1220.74,
+"shot",
+"n_bicarbonato_cuenco_cuchara"
+],
+[
+1220.74,
+1225.36,
+"shot",
+"n_esquina_negra_tina"
+],
+[
+1225.36,
+1229.776,
+"shot",
+"n_ventana_abierta_ventilador"
+],
+[
+1234.831,
+1239.98,
+"shot",
+"n_toalla_sobre_azulejos"
+],
+[
+1239.98,
+1247.5,
+"shot",
+"n_juguetes_banio_balde"
+],
+[
+1253.304,
+1257.66,
+"shot",
+"n_juguete_sin_agujero"
+],
+[
+1257.66,
+1262.38,
+"shot",
+"n_bolsa_red_juguetes"
+],
+[
+1262.38,
+1266.9,
+"shot",
+"n_inodoro_cuidado_tapa"
+],
+[
+1272.0,
+1278.24,
+"shot",
+"n_pantuflas_pasillo_filas"
+],
+[
+1278.24,
+1284.2,
+"shot",
+"n_regalo_furoshiki"
+],
+[
+1289.6,
+1295.88,
+"shot",
+"n_liner_bajado_cesto"
+],
+[
+1295.88,
+1299.666,
+"shot",
+"n_taza_cafe_estante_banio"
+],
+[
+1304.233,
+1308.74,
+"shot",
+"n_banio_limpio_ventana_tarde"
+],
+[
+1308.74,
+1313.3,
+"shot",
+"v10_mira"
+]
+],
+"cam": [],
+"ov": [
+{
+"k": "big",
+"txt": "EVERY MORNING",
+"sub": "YOU SHOWER BEHIND THAT LINER",
+"col": "amber",
+"at": 17.46,
+"out": 20.66
+},
+{
+"k": "chip",
+"txt": "80 YEARS OLD · 50 YEARS IN THIS LITTLE HOUSE",
+"col": "ice",
+"at": 46.66,
+"out": 50.16
+},
+{
+"k": "big",
+"txt": "13 THINGS",
+"sub": "IN YOUR BATHROOM · MOLD & GERMS",
+"col": "red",
+"at": 54.02,
+"out": 57.22
+},
+{
+"k": "chip",
+"txt": "NOT A DOCTOR · HEALTH PROBLEM? ASK YOURS",
+"col": "ice",
+"at": 73.64,
+"out": 77.14
+},
+{
+"k": "chip",
+"txt": "MOST OF THEM COST $0 OR A FEW DOLLARS",
+"col": "green",
+"at": 86.8,
+"out": 90.3
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "50 YEARS · NO MOLD",
+"col": "green",
+"at": 150.98
+},
+{
+"txt": "THE SECRET: NEVER WET",
+"col": "amber",
+"at": 153.1
+}
+],
+"at": 150.98,
+"out": 155.6
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE SHOWER CURTAIN LINER",
+"col": "green",
+"at": 156.44,
+"out": 160.44
+},
+{
+"k": "big",
+"txt": "A FEW $",
+"sub": "A NEW LINER · IF THE SPOTS STAY",
+"col": "green",
+"at": 188.72,
+"out": 191.92
+},
+{
+"k": "stamp",
+"txt": "SPREAD IT OPEN · DRY FLAT",
+"at": 193.92,
+"out": 196.92
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE SPONGE OR THE LOOFAH",
+"col": "green",
+"at": 213.6,
+"out": 217.6
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "PLASTIC PUFF · 2 MONTHS",
+"col": "amber",
+"at": 241.66
+},
+{
+"txt": "NATURAL LOOFAH · 1 MONTH",
+"col": "amber",
+"at": 244.38
+}
+],
+"at": 241.66,
+"out": 246.88
+},
+{
+"k": "chip",
+"txt": "TENUGUI · A THIN COTTON CLOTH THAT DRIES IN 1 HOUR",
+"col": "ice",
+"at": 252.12,
+"out": 255.62
+},
+{
+"k": "step",
+"n": 3,
+"name": "TOOTHBRUSH NEXT TO THE TOILET",
+"col": "green",
+"at": 265.06,
+"out": 269.06
+},
+{
+"k": "chip",
+"txt": "LID DOWN BEFORE YOU FLUSH · EVERY TIME",
+"col": "green",
+"at": 285.92,
+"out": 289.42
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE OLD TOOTHBRUSH",
+"col": "green",
+"at": 317.26,
+"out": 321.26
+},
+{
+"k": "big",
+"txt": "3–4 MONTHS",
+"sub": "THEN CHANGE YOUR TOOTHBRUSH",
+"col": "amber",
+"at": 330.56,
+"out": 333.76
+},
+{
+"k": "chip",
+"txt": "SUBSCRIBE · A JAPANESE HOME HABIT EVERY WEEK",
+"col": "green",
+"at": 349.76,
+"out": 353.26
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE THICK BATH MAT",
+"col": "green",
+"at": 368.02,
+"out": 372.02
+},
+{
+"k": "chip",
+"txt": "A THIN COTTON MAT · OR SOFT WOOD · OR STONE",
+"col": "ice",
+"at": 394.17,
+"out": 397.67
+},
+{
+"k": "chip",
+"txt": "WASH IT EVERY WEEK · WARM WATER",
+"col": "green",
+"at": 411.12,
+"out": 414.62
+},
+{
+"k": "stamp",
+"txt": "BLUE MOLD UNDER MY FEET",
+"at": 450.35,
+"out": 453.35
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE TOWELS",
+"col": "green",
+"at": 468.5,
+"out": 472.5
+},
+{
+"k": "big",
+"txt": "3–4 USES",
+"sub": "THEN WASH THE BATH TOWEL",
+"col": "green",
+"at": 489.9,
+"out": 493.1
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE MEDICINE CABINET",
+"col": "green",
+"at": 510.29,
+"out": 514.29
+},
+{
+"k": "chip",
+"txt": "WORST ROOM FOR MEDICINES · HEAT AND STEAM",
+"col": "red",
+"at": 525.33,
+"out": 528.83
+},
+{
+"k": "chip",
+"txt": "PHARMACY TAKE-BACK BOX · NOT THE TRASH, NOT THE TOILET",
+"col": "ice",
+"at": 556.59,
+"out": 560.09
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE TOILET BRUSH IN ITS BUCKET",
+"col": "green",
+"at": 570.71,
+"out": 574.71
+},
+{
+"k": "deal",
+"at": 611.75,
+"out": 616.25
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "DOOR & WINDOW CLOSED AFTER A SHOWER",
+"at": 618.95,
+"out": 626.95
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "FAN OFF WHEN YOU LEAVE",
+"at": 636.07,
+"out": 644.07
+},
+{
+"k": "big",
+"txt": "20 MIN",
+"sub": "FAN ON AFTER EVERY SHOWER",
+"col": "amber",
+"at": 639.23,
+"out": 642.43
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "TOO MANY STRONG PRODUCTS",
+"at": 652.57,
+"out": 660.57
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "CLEANING ONLY WHEN IT LOOKS DIRTY",
+"at": 667.33,
+"out": 675.33
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "SOFT THINGS IN THE BATHROOM",
+"at": 679.25,
+"out": 687.25
+},
+{
+"k": "step",
+"n": 9,
+"name": "THE AIR FRESHENER",
+"col": "green",
+"at": 692.61,
+"out": 696.61
+},
+{
+"k": "chip",
+"txt": "ASTHMA? STRONG SCENTS CAN IRRITATE",
+"col": "red",
+"at": 714.09,
+"out": 717.59
+},
+{
+"k": "stamp",
+"txt": "A CLEAN BATHROOM SMELLS OF NOTHING",
+"at": 722.31,
+"out": 725.31
+},
+{
+"k": "step",
+"n": 10,
+"name": "THE OLD RAZOR & MAKEUP SPONGES",
+"col": "green",
+"at": 754.97,
+"out": 758.97
+},
+{
+"k": "chip",
+"txt": "BRUSHES & SPONGES · WASH EVERY WEEK",
+"col": "green",
+"at": 781.75,
+"out": 785.25
+},
+{
+"k": "step",
+"n": 11,
+"name": "THE BATHROOM WITH NO AIR",
+"col": "green",
+"at": 802.41,
+"out": 806.41
+},
+{
+"k": "chip",
+"txt": "THE FAN TEST · ONE SQUARE OF TOILET PAPER",
+"col": "ice",
+"at": 824.01,
+"out": 827.51
+},
+{
+"k": "step",
+"n": 12,
+"name": "MIXING BATHROOM CLEANERS",
+"col": "red",
+"at": 851.77,
+"out": 855.77
+},
+{
+"k": "big",
+"txt": "NEVER MIX",
+"sub": "BLEACH + AMMONIA = POISON GAS",
+"col": "red",
+"at": 859.21,
+"out": 862.41
+},
+{
+"k": "stamp",
+"txt": "ONE CLEANER AT A TIME",
+"at": 877.63,
+"out": 880.63
+},
+{
+"k": "chip",
+"txt": "SUBSCRIBE · TELL ME: WHEN DID YOU LAST CHANGE YOUR LINER?",
+"col": "green",
+"at": 908.01,
+"out": 911.51
+},
+{
+"k": "chip",
+"txt": "WHAT MY GRANDMOTHER NEVER DID",
+"col": "amber",
+"at": 920.49,
+"out": 923.99
+},
+{
+"k": "step",
+"n": 13,
+"name": "THE GODDESS OF THE TOILET",
+"col": "green",
+"at": 947.43,
+"out": 951.43
+},
+{
+"k": "big",
+"txt": "TOIRE NO KAMISAMA",
+"sub": "THE GODDESS OF THE TOILET",
+"col": "amber",
+"at": 964.65,
+"out": 967.85
+},
+{
+"k": "big",
+"txt": "2 MIN",
+"sub": "EVERY MORNING · A CLOTH · WARM WATER",
+"col": "green",
+"at": 1014.72,
+"out": 1017.92
+},
+{
+"k": "big",
+"txt": "96 YEARS",
+"sub": "SHE CLEANED IT EVERY MORNING",
+"col": "amber",
+"at": 1064.8,
+"out": 1068.0
+},
+{
+"k": "recap",
+"rows": [
+1087.6,
+1089.38,
+1091.34,
+1093.82,
+1096.96,
+1101.8,
+1104.28,
+1110.82,
+1128.4
+],
+"at": 1081.1,
+"out": 1134.4
+},
+{
+"k": "chip",
+"txt": "THE QUESTIONS PEOPLE ALWAYS ASK ME",
+"col": "ice",
+"at": 1133.46,
+"out": 1136.96
+},
+{
+"k": "big",
+"txt": "DOORMAT SIZE",
+"sub": "BIGGER THAN THAT? CALL SOMEONE",
+"col": "red",
+"at": 1157.0,
+"out": 1160.2
+},
+{
+"k": "chip",
+"txt": "«BLUE TABLETS?» · THEY DON'T CLEAN THE BOWL",
+"col": "ice",
+"at": 1187.68,
+"out": 1191.18
+},
+{
+"k": "big",
+"txt": "10 SECONDS",
+"sub": "A TOWEL OVER THE WET TILES",
+"col": "green",
+"at": 1230.86,
+"out": 1234.06
+},
+{
+"k": "stamp",
+"txt": "THE SMALLEST GIFT FOR YOUR HOUSE",
+"at": 1278.24,
+"out": 1281.24
+},
+{
+"k": "ask",
+"at": 1299.98,
+"out": 1309.98
+},
+{
+"k": "next",
+"at": 1306.82,
+"out": 1311.82
+}
+],
+"cta1": {
+"desc": 349.76,
+"end": 355.76
+},
+"cta2": {
+"desc": 908.01,
+"end": 914.01
+},
+"cta3": {
+"desc": 1304.38,
+"end": 1309.38
+},
+"end": 1313.28,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+990.576,
+1014.716
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "THE 3-MINUTE BATHROOM",
+"recap": [
+"Curtain spread open",
+"Mat hung over the tub",
+"Towel open on the rail",
+"Washcloth hung outside",
+"Fan 20 min or window open",
+"Lid down every flush",
+"Mornings: 2 min for the goddess",
+"Weekly: mat · towels · brushes",
+"Month & season: liner · toothbrush · cabinet"
+],
+"ask": [
+"When did you last",
+"change your shower",
+"curtain liner?"
+],
+"next": [
+"NEXT WEEK",
+"Another Japanese home habit"
+],
+"lower": [
+46.66,
+52.66
+]
+}
+}

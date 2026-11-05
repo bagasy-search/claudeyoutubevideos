@@ -1,0 +1,395 @@
+[
+{
+"k": "linerhem",
+"at": 11.06,
+"out": 17.06,
+"said": 11.06,
+"solo": true,
+"kw": "LINERHEM",
+"kw2": "",
+"ph": "ph_linerhem"
+},
+{
+"k": "woodtub",
+"at": 40.98,
+"out": 46.98,
+"said": 40.98,
+"solo": true,
+"kw": "WOODTUB",
+"kw2": "",
+"ph": "ph_woodtub"
+},
+{
+"k": "wetstory",
+"at": 70.12,
+"out": 76.12,
+"said": 70.12,
+"solo": true,
+"kw": "WETSTORY",
+"kw2": "",
+"ph": "ph_wetstory"
+},
+{
+"k": "flashlight",
+"at": 92.92,
+"out": 98.42,
+"said": 92.92,
+"sp": 1.091,
+"solo": true,
+"kw": "FLASHLIGHT",
+"kw2": "",
+"ph": "ph_flashlight"
+},
+{
+"k": "stoolbucket",
+"at": 126.46,
+"out": 132.46,
+"said": 126.46,
+"solo": true,
+"kw": "STOOLBUCKET",
+"kw2": "",
+"ph": "ph_stoolbucket"
+},
+{
+"k": "oldtile",
+"at": 144.82,
+"out": 150.82,
+"said": 146.62,
+"solo": true,
+"kw": "OLDTILE",
+"kw2": "",
+"ph": "ph_oldtile"
+},
+{
+"k": "spread",
+"at": 195.16,
+"out": 199.66,
+"said": 195.16,
+"sp": 1.333,
+"solo": true,
+"kw": "SPREAD",
+"kw2": "",
+"ph": "ph_spread"
+},
+{
+"k": "puffcolor",
+"at": 229.5,
+"out": 234.0,
+"said": 230.2,
+"sp": 1.333,
+"solo": true,
+"kw": "PUFFCOLOR",
+"kw2": "",
+"ph": "ph_puffcolor"
+},
+{
+"k": "tenugui",
+"at": 255.68,
+"out": 261.68,
+"said": 255.68,
+"solo": true,
+"kw": "TENUGUI",
+"kw2": "",
+"ph": "ph_tenugui"
+},
+{
+"k": "toiletlid",
+"at": 277.56,
+"out": 282.06,
+"said": 278.56,
+"sp": 1.333,
+"solo": true,
+"kw": "TOILETLID",
+"kw2": "",
+"ph": "ph_toiletlid"
+},
+{
+"k": "bentbristle",
+"at": 322.76,
+"out": 328.76,
+"said": 322.76,
+"solo": true,
+"kw": "BENTBRISTLE",
+"kw2": "",
+"ph": "ph_bentbristle"
+},
+{
+"k": "thickmat",
+"at": 374.765,
+"out": 380.76,
+"said": 374.76,
+"solo": true,
+"kw": "THICKMAT",
+"kw2": "",
+"ph": "ph_thickmat"
+},
+{
+"k": "matsun",
+"at": 419.75,
+"out": 425.75,
+"said": 413.94,
+"solo": true,
+"kw": "MATSUN",
+"kw2": "",
+"ph": "ph_matsun"
+},
+{
+"k": "bluerect",
+"at": 450.61,
+"out": 456.61,
+"said": 444.81,
+"solo": true,
+"kw": "BLUERECT",
+"kw2": "",
+"ph": "ph_bluerect"
+},
+{
+"k": "graystack",
+"at": 486.465,
+"out": 492.46,
+"said": 486.46,
+"solo": true,
+"kw": "GRAYSTACK",
+"kw2": "",
+"ph": "ph_graystack"
+},
+{
+"k": "vinegarcup",
+"at": 506.465,
+"out": 512.46,
+"said": 506.46,
+"solo": true,
+"kw": "VINEGARCUP",
+"kw2": "",
+"ph": "ph_vinegarcup"
+},
+{
+"k": "oldmeds",
+"at": 554.585,
+"out": 559.59,
+"said": 554.59,
+"sp": 1.2,
+"solo": true,
+"kw": "OLDMEDS",
+"kw2": "",
+"ph": "ph_oldmeds"
+},
+{
+"k": "holderwater",
+"at": 582.585,
+"out": 588.59,
+"said": 582.59,
+"solo": true,
+"kw": "HOLDERWATER",
+"kw2": "",
+"ph": "ph_holderwater"
+},
+{
+"k": "fanwisps",
+"at": 631.11,
+"out": 637.11,
+"said": 630.9,
+"solo": true,
+"kw": "FANWISPS",
+"kw2": "",
+"ph": "ph_fanwisps"
+},
+{
+"k": "softthings",
+"at": 685.59,
+"out": 690.09,
+"said": 688.59,
+"sp": 1.333,
+"solo": true,
+"kw": "SOFTTHINGS",
+"kw2": "",
+"ph": "ph_softthings"
+},
+{
+"k": "airfresh",
+"at": 711.75,
+"out": 717.75,
+"said": 711.55,
+"solo": true,
+"kw": "AIRFRESH",
+"kw2": "",
+"ph": "ph_airfresh"
+},
+{
+"k": "yuzudish",
+"at": 733.71,
+"out": 738.21,
+"said": 735.51,
+"sp": 1.333,
+"solo": true,
+"kw": "YUZUDISH",
+"kw2": "",
+"ph": "ph_yuzudish"
+},
+{
+"k": "rustyrazor",
+"at": 758.99,
+"out": 764.99,
+"said": 758.79,
+"solo": true,
+"kw": "RUSTYRAZOR",
+"kw2": "",
+"ph": "ph_rustyrazor"
+},
+{
+"k": "brushwash",
+"at": 781.75,
+"out": 786.25,
+"said": 781.75,
+"sp": 1.333,
+"solo": true,
+"kw": "BRUSHWASH",
+"kw2": "",
+"ph": "ph_brushwash"
+},
+{
+"k": "nowindow",
+"at": 805.45,
+"out": 811.45,
+"said": 805.45,
+"solo": true,
+"kw": "NOWINDOW",
+"kw2": "",
+"ph": "ph_nowindow"
+},
+{
+"k": "fandust",
+"at": 841.67,
+"out": 847.67,
+"said": 843.27,
+"solo": true,
+"kw": "FANDUST",
+"kw2": "",
+"ph": "ph_fandust"
+},
+{
+"k": "onecleaner",
+"at": 875.93,
+"out": 881.93,
+"said": 877.63,
+"solo": true,
+"kw": "ONECLEANER",
+"kw2": "",
+"ph": "ph_onecleaner"
+},
+{
+"k": "nightdry",
+"at": 925.11,
+"out": 931.11,
+"said": 925.11,
+"solo": true,
+"kw": "NIGHTDRY",
+"kw2": "",
+"ph": "ph_nightdry"
+},
+{
+"k": "toiletgoddess",
+"at": 961.65,
+"out": 966.15,
+"said": 962.75,
+"sp": 1.333,
+"solo": true,
+"kw": "TOILETGODDESS",
+"kw2": "",
+"ph": "ph_toiletgoddess"
+},
+{
+"k": "bucketcloth",
+"at": 992.74,
+"out": 997.24,
+"said": 994.64,
+"sp": 1.333,
+"solo": true,
+"kw": "BUCKETCLOTH",
+"kw2": "",
+"ph": "ph_bucketcloth"
+},
+{
+"k": "spotlessbowl",
+"at": 1024.656,
+"out": 1030.66,
+"said": 1024.66,
+"solo": true,
+"kw": "SPOTLESSBOWL",
+"kw2": "",
+"ph": "ph_spotlessbowl"
+},
+{
+"k": "noscrub",
+"at": 1045.796,
+"out": 1050.8,
+"said": 1045.8,
+"sp": 1.2,
+"solo": true,
+"kw": "NOSCRUB",
+"kw2": "",
+"ph": "ph_noscrub"
+},
+{
+"k": "washcloth",
+"at": 1093.816,
+"out": 1098.32,
+"said": 1093.82,
+"sp": 1.333,
+"solo": true,
+"kw": "WASHCLOTH",
+"kw2": "",
+"ph": "ph_washcloth"
+},
+{
+"k": "ceilingmold",
+"at": 1140.496,
+"out": 1146.5,
+"said": 1140.5,
+"solo": true,
+"kw": "CEILINGMOLD",
+"kw2": "",
+"ph": "ph_ceilingmold"
+},
+{
+"k": "bluewater",
+"at": 1194.44,
+"out": 1198.94,
+"said": 1197.14,
+"sp": 1.333,
+"solo": true,
+"kw": "BLUEWATER",
+"kw2": "",
+"ph": "ph_bluewater"
+},
+{
+"k": "towelover",
+"at": 1236.156,
+"out": 1242.16,
+"said": 1236.16,
+"solo": true,
+"kw": "TOWELOVER",
+"kw2": "",
+"ph": "ph_towelover"
+},
+{
+"k": "toybag",
+"at": 1257.656,
+"out": 1263.66,
+"said": 1257.66,
+"solo": true,
+"kw": "TOYBAG",
+"kw2": "",
+"ph": "ph_toybag"
+},
+{
+"k": "tonightliner",
+"at": 1291.776,
+"out": 1297.78,
+"said": 1291.78,
+"solo": true,
+"kw": "TONIGHTLINER",
+"kw2": "",
+"ph": "ph_tonightliner"
+}
+]
