@@ -1,0 +1,1806 @@
+{
+"segs": [
+[
+3.5,
+8.28,
+"shot",
+"v01_alacena"
+],
+[
+8.28,
+14.88,
+"shot",
+"n_botellas_fila"
+],
+[
+14.88,
+16.8,
+"shot",
+"n_bidon_lavandina"
+],
+[
+23.0,
+25.78,
+"shot",
+"n_14_botellas"
+],
+[
+25.78,
+30.54,
+"shot",
+"n_ticket_super"
+],
+[
+30.54,
+33.89,
+"shot",
+"n_cocina_tarde"
+],
+[
+39.721,
+44.44,
+"shot",
+"n_cajita_polvo"
+],
+[
+44.44,
+49.562,
+"shot",
+"n_calle_casas"
+],
+[
+55.1,
+59.38,
+"shot",
+"v02_caja"
+],
+[
+59.38,
+67.952,
+"shot",
+"n_gondola_bicarbonato"
+],
+[
+72.0,
+79.04,
+"shot",
+"n_heladera_caja"
+],
+[
+79.04,
+82.9,
+"shot",
+"n_burbujas_pileta"
+],
+[
+87.526,
+94.32,
+"shot",
+"n_caja_balanza"
+],
+[
+94.32,
+98.0,
+"shot",
+"n_cuaderno_cocina"
+],
+[
+101.6,
+106.98,
+"shot",
+"n_frascos_errores"
+],
+[
+106.98,
+113.2,
+"shot",
+"n_reloj_cocina"
+],
+[
+113.2,
+114.579,
+"shot",
+"n_balde_madera_trapos"
+],
+[
+119.847,
+129.77,
+"shot",
+"n_polvo_cuchara"
+],
+[
+134.7,
+141.2,
+"shot",
+"n_polvo_dedos"
+],
+[
+141.2,
+145.56,
+"shot",
+"n_sarten_grasa"
+],
+[
+145.56,
+148.4,
+"shot",
+"n_tacho_cocina"
+],
+[
+154.2,
+159.84,
+"shot",
+"n_mesita_enfermo"
+],
+[
+159.84,
+161.7,
+"shot",
+"n_pollo_tabla"
+],
+[
+161.7,
+166.6,
+"shot",
+"n_agua_jabon"
+],
+[
+172.5,
+178.48,
+"shot",
+"n_caja_y_desinfectante"
+],
+[
+178.48,
+183.091,
+"shot",
+"n_caja_estante_limpio"
+],
+[
+188.536,
+194.76,
+"shot",
+"n_ventana_abierta"
+],
+[
+194.76,
+199.8,
+"shot",
+"n_caja_balde"
+],
+[
+199.8,
+202.059,
+"shot",
+"n_heladera_abierta"
+],
+[
+205.4,
+213.76,
+"shot",
+"n_caja_abierta_heladera"
+],
+[
+213.76,
+217.5,
+"shot",
+"n_fecha_caja"
+],
+[
+222.55,
+228.36,
+"shot",
+"n_cucharas_bowl"
+],
+[
+228.36,
+232.44,
+"shot",
+"n_trapo_estante"
+],
+[
+232.44,
+234.9,
+"shot",
+"n_burlete_manchas"
+],
+[
+240.215,
+249.6,
+"shot",
+"n_canasta_mercado"
+],
+[
+249.6,
+253.066,
+"shot",
+"n_heladera_vacia"
+],
+[
+258.106,
+266.26,
+"shot",
+"n_pava_desague"
+],
+[
+266.26,
+268.4,
+"shot",
+"n_olla_quemada"
+],
+[
+271.604,
+276.32,
+"shot",
+"n_fondo_negro"
+],
+[
+276.32,
+279.04,
+"shot",
+"n_esponja_rota"
+],
+[
+279.04,
+285.4,
+"shot",
+"v03_olla"
+],
+[
+289.536,
+292.04,
+"shot",
+"n_olla_enfriando"
+],
+[
+292.04,
+296.48,
+"shot",
+"n_espatula_madera"
+],
+[
+296.48,
+300.873,
+"shot",
+"n_escamas_olla"
+],
+[
+306.213,
+313.16,
+"shot",
+"n_sopa_miso"
+],
+[
+313.16,
+315.0,
+"shot",
+"n_olla_aluminio"
+],
+[
+318.518,
+324.42,
+"shot",
+"n_esponja_suave"
+],
+[
+324.42,
+329.76,
+"shot",
+"n_ollas_varias"
+],
+[
+329.76,
+332.8,
+"shot",
+"n_pileta_gris"
+],
+[
+338.433,
+344.45,
+"shot",
+"n_pasta_bowl"
+],
+[
+344.45,
+346.83,
+"shot",
+"n_pileta_circulos"
+],
+[
+346.83,
+349.0,
+"shot",
+"n_pileta_brilla"
+],
+[
+355.131,
+358.13,
+"shot",
+"n_banera_polvo"
+],
+[
+358.13,
+364.89,
+"shot",
+"n_cepillo_mango"
+],
+[
+364.89,
+367.3,
+"shot",
+"n_ofuro_madera"
+],
+[
+372.646,
+379.74,
+"shot",
+"n_juntas_grises"
+],
+[
+379.74,
+382.3,
+"shot",
+"n_pasta_espesa"
+],
+[
+382.3,
+384.771,
+"shot",
+"n_juntas_limpias_x"
+],
+[
+389.22,
+393.18,
+"shot",
+"v04_junta"
+],
+[
+393.18,
+396.98,
+"shot",
+"n_moho_esquina"
+],
+[
+396.98,
+398.8,
+"shot",
+"n_ventana_bano"
+],
+[
+403.6,
+409.74,
+"shot",
+"n_limpiador_moho"
+],
+[
+409.74,
+417.486,
+"shot",
+"n_caja_sola_banco"
+],
+[
+422.1,
+428.68,
+"shot",
+"n_vinagre_desague"
+],
+[
+428.68,
+433.57,
+"shot",
+"n_espuma_desague"
+],
+[
+433.57,
+434.8,
+"shot",
+"n_espuma_baja"
+],
+[
+440.0,
+444.74,
+"shot",
+"n_media_taza"
+],
+[
+444.74,
+446.74,
+"shot",
+"n_reloj_pared"
+],
+[
+446.74,
+448.6,
+"shot",
+"n_pava_grande"
+],
+[
+453.4,
+463.39,
+"shot",
+"n_cano_grasa"
+],
+[
+463.39,
+465.4,
+"shot",
+"n_desague_abierto"
+],
+[
+469.5,
+478.77,
+"shot",
+"n_botella_cerrada"
+],
+[
+478.77,
+480.559,
+"shot",
+"n_botella_tapa"
+],
+[
+484.821,
+487.3,
+"shot",
+"n_pileta_tapada"
+],
+[
+487.3,
+488.56,
+"shot",
+"n_sopapa"
+],
+[
+488.56,
+497.5,
+"shot",
+"n_cinta_pelos"
+],
+[
+502.1,
+510.8,
+"shot",
+"n_cocina_ordenada"
+],
+[
+510.8,
+513.097,
+"shot",
+"n_hoja_puerta"
+],
+[
+518.037,
+522.36,
+"shot",
+"n_tabla_cebolla"
+],
+[
+522.36,
+525.03,
+"shot",
+"n_tabla_polvo"
+],
+[
+525.03,
+528.9,
+"shot",
+"n_limon_tabla"
+],
+[
+533.906,
+539.79,
+"shot",
+"n_tabla_jabon"
+],
+[
+539.79,
+545.72,
+"shot",
+"n_dos_tablas"
+],
+[
+545.72,
+548.676,
+"shot",
+"n_marca_tabla"
+],
+[
+552.0,
+557.34,
+"shot",
+"n_tatami_cuarto"
+],
+[
+557.34,
+562.3,
+"shot",
+"n_tatami_cerca"
+],
+[
+566.4,
+569.22,
+"shot",
+"n_tatami_ventana"
+],
+[
+569.22,
+575.93,
+"shot",
+"n_escoba_tatami"
+],
+[
+575.93,
+576.884,
+"shot",
+"n_alfombra_living"
+],
+[
+581.824,
+587.01,
+"shot",
+"v05_alfombra"
+],
+[
+587.01,
+595.5,
+"shot",
+"n_perro_alfombra"
+],
+[
+599.606,
+609.96,
+"shot",
+"n_colchon_desnudo"
+],
+[
+609.96,
+610.966,
+"shot",
+"n_colador_colchon"
+],
+[
+616.706,
+622.34,
+"shot",
+"n_colchon_sol"
+],
+[
+622.34,
+626.55,
+"shot",
+"n_aspira_colchon"
+],
+[
+626.55,
+628.4,
+"shot",
+"n_cama_hecha"
+],
+[
+634.224,
+641.12,
+"shot",
+"n_futon_balcon"
+],
+[
+641.12,
+647.174,
+"shot",
+"n_zapatillas_viejas"
+],
+[
+653.5,
+656.7,
+"shot",
+"v06_medias"
+],
+[
+656.7,
+662.82,
+"shot",
+"n_zapatos_manana"
+],
+[
+662.82,
+664.7,
+"shot",
+"n_genkan_zapatos"
+],
+[
+669.1,
+677.59,
+"shot",
+"n_bowl_zapatera"
+],
+[
+677.59,
+681.554,
+"shot",
+"n_genkan_limpio"
+],
+[
+685.923,
+694.93,
+"shot",
+"n_cinco_cosas_mesa"
+],
+[
+694.93,
+696.9,
+"shot",
+"n_botella_mezcla"
+],
+[
+701.142,
+708.87,
+"shot",
+"n_vinagre_y_caja"
+],
+[
+708.87,
+711.989,
+"shot",
+"n_aluminio_oscuro"
+],
+[
+715.7,
+722.59,
+"shot",
+"n_marmol"
+],
+[
+722.59,
+726.31,
+"shot",
+"n_pano_pantalla"
+],
+[
+726.31,
+728.66,
+"shot",
+"n_lavandina_caja"
+],
+[
+734.017,
+738.31,
+"shot",
+"n_aire_cortina"
+],
+[
+738.31,
+740.99,
+"shot",
+"n_capa_fina"
+],
+[
+740.99,
+744.2,
+"shot",
+"n_dos_cucharas"
+],
+[
+750.336,
+757.59,
+"shot",
+"n_pelicula_blanca"
+],
+[
+757.59,
+760.33,
+"shot",
+"n_ultima_pasada"
+],
+[
+760.33,
+762.696,
+"shot",
+"n_trapo_doblado"
+],
+[
+768.1,
+777.11,
+"shot",
+"n_tacho_verano"
+],
+[
+777.11,
+780.451,
+"shot",
+"n_fondo_tacho"
+],
+[
+785.826,
+790.63,
+"shot",
+"n_lavar_tacho"
+],
+[
+790.63,
+796.195,
+"shot",
+"n_tacho_sol"
+],
+[
+801.6,
+808.89,
+"shot",
+"n_bowl_agua"
+],
+[
+808.89,
+810.45,
+"shot",
+"n_microondas"
+],
+[
+810.45,
+813.374,
+"shot",
+"n_microondas_cerrado"
+],
+[
+817.7,
+827.39,
+"shot",
+"n_microondas_limpio"
+],
+[
+827.39,
+828.7,
+"shot",
+"n_mano_nieta"
+],
+[
+833.921,
+842.45,
+"shot",
+"n_toallas_viejas"
+],
+[
+842.45,
+844.281,
+"shot",
+"n_tambor_lavarropas"
+],
+[
+848.5,
+853.03,
+"shot",
+"n_toallas_suaves"
+],
+[
+853.03,
+860.05,
+"shot",
+"n_lavarropas_vacio"
+],
+[
+860.05,
+861.657,
+"shot",
+"n_goma_lavarropas"
+],
+[
+865.0,
+873.09,
+"shot",
+"n_puerta_abierta_lav"
+],
+[
+873.09,
+875.3,
+"shot",
+"n_goma_humeda"
+],
+[
+880.1,
+882.35,
+"shot",
+"n_cucharas_negras"
+],
+[
+882.35,
+886.47,
+"shot",
+"n_collar_negro"
+],
+[
+886.47,
+893.6,
+"shot",
+"n_fuente_aluminio"
+],
+[
+898.2,
+906.2,
+"shot",
+"v07_plata"
+],
+[
+906.85,
+911.0,
+"shot",
+"n_vapor_fuente"
+],
+[
+915.7,
+924.79,
+"shot",
+"n_anillo_plata"
+],
+[
+924.79,
+926.5,
+"shot",
+"n_anillo_piedra"
+],
+[
+931.016,
+932.73,
+"shot",
+"n_cucharas_brillan"
+],
+[
+932.73,
+941.27,
+"shot",
+"n_manos_ajo"
+],
+[
+941.27,
+944.7,
+"shot",
+"n_palma_polvo"
+],
+[
+949.9,
+955.69,
+"shot",
+"n_lavar_manos"
+],
+[
+955.69,
+959.31,
+"shot",
+"n_te_invitado"
+],
+[
+959.31,
+960.8,
+"shot",
+"n_servir_te"
+],
+[
+965.5,
+967.33,
+"shot",
+"n_rejillas_horno"
+],
+[
+967.33,
+972.37,
+"shot",
+"n_pasta_horno"
+],
+[
+972.37,
+976.154,
+"shot",
+"v08_horno"
+],
+[
+980.944,
+985.49,
+"shot",
+"n_cocina_noche"
+],
+[
+985.49,
+988.39,
+"shot",
+"n_espatula_plastico"
+],
+[
+988.39,
+995.07,
+"shot",
+"n_pasta_marron"
+],
+[
+1000.029,
+1004.89,
+"shot",
+"n_aerosol_horno"
+],
+[
+1004.89,
+1010.07,
+"shot",
+"n_horno_limpio"
+],
+[
+1010.07,
+1012.279,
+"shot",
+"n_estante_madre"
+],
+[
+1018.019,
+1028.33,
+"shot",
+"n_botellas_decoracion"
+],
+[
+1028.33,
+1030.5,
+"shot",
+"n_trapo_mesa"
+],
+[
+1035.51,
+1042.81,
+"shot",
+"n_una_cuchara"
+],
+[
+1042.81,
+1045.73,
+"shot",
+"n_ventanas_casa"
+],
+[
+1045.73,
+1047.2,
+"shot",
+"n_ventana_invierno"
+],
+[
+1051.506,
+1060.53,
+"shot",
+"n_bajo_pileta"
+],
+[
+1060.53,
+1062.5,
+"shot",
+"n_tablet_mesa"
+],
+[
+1066.5,
+1076.79,
+"shot",
+"n_fin_de_ano"
+],
+[
+1076.79,
+1078.4,
+"shot",
+"n_osoji_casa"
+],
+[
+1081.707,
+1087.95,
+"shot",
+"n_familia_manos"
+],
+[
+1087.95,
+1090.67,
+"shot",
+"n_escuela_limpieza"
+],
+[
+1090.67,
+1092.278,
+"shot",
+"n_templo_limpieza"
+],
+[
+1098.323,
+1099.97,
+"shot",
+"n_amanecer_casa"
+],
+[
+1099.97,
+1107.97,
+"shot",
+"v09_balde"
+],
+[
+1114.8,
+1122.63,
+"shot",
+"n_pasillo_trapo"
+],
+[
+1122.63,
+1126.63,
+"shot",
+"n_entrada_lavada"
+],
+[
+1126.63,
+1128.6,
+"shot",
+"n_caja_en_mano"
+],
+[
+1132.845,
+1141.45,
+"shot",
+"n_casa_brilla"
+],
+[
+1141.45,
+1144.7,
+"shot",
+"n_toshikoshi_soba"
+],
+[
+1150.5,
+1157.89,
+"shot",
+"n_calendario_dic"
+],
+[
+1157.89,
+1161.63,
+"shot",
+"n_balde_caja_fin"
+],
+[
+1161.63,
+1163.093,
+"shot",
+"n_amanecer_ano"
+],
+[
+1167.633,
+1177.07,
+"shot",
+"n_nina_ventana"
+],
+[
+1177.07,
+1179.586,
+"shot",
+"n_casa_feliz"
+],
+[
+1185.0,
+1188.25,
+"shot",
+"n_rutina_desague"
+],
+[
+1188.25,
+1194.53,
+"shot",
+"n_rutina_tacho"
+],
+[
+1194.53,
+1196.0,
+"shot",
+"n_calendario_mes"
+],
+[
+1199.2,
+1203.75,
+"shot",
+"n_rutina_lavarropas"
+],
+[
+1203.75,
+1208.55,
+"shot",
+"n_medias_nuevas"
+],
+[
+1208.55,
+1212.684,
+"shot",
+"n_rutina_estaciones"
+],
+[
+1215.9,
+1222.13,
+"shot",
+"n_familia_balde"
+],
+[
+1222.13,
+1227.2,
+"shot",
+"n_te_preguntas"
+],
+[
+1233.033,
+1239.75,
+"shot",
+"n_cuatro_cosas"
+],
+[
+1239.75,
+1242.0,
+"shot",
+"n_vinagre_ventana"
+],
+[
+1246.5,
+1251.01,
+"shot",
+"n_monedas_billete"
+],
+[
+1251.01,
+1257.85,
+"shot",
+"n_masa_bicarbonato"
+],
+[
+1257.85,
+1260.556,
+"shot",
+"n_washing_soda"
+],
+[
+1263.915,
+1273.95,
+"shot",
+"n_gato_alfombra"
+],
+[
+1273.95,
+1275.451,
+"shot",
+"n_aspirar_bien"
+],
+[
+1279.9,
+1285.13,
+"shot",
+"n_caja_alta"
+],
+[
+1285.13,
+1288.93,
+"shot",
+"n_pasillo_super"
+],
+[
+1288.93,
+1290.6,
+"shot",
+"n_tele_comercial"
+],
+[
+1295.1,
+1299.51,
+"shot",
+"n_cocina_luz"
+],
+[
+1299.51,
+1303.15,
+"shot",
+"n_puerta_casa"
+],
+[
+1303.15,
+1308.0,
+"shot",
+"v10_cierra"
+],
+[
+1312.945,
+1315.17,
+"shot",
+"n_vertir_final"
+],
+[
+1315.17,
+1323.351,
+"shot",
+"n_pileta_manana"
+]
+],
+"cam": [
+[
+906.2,
+906.85,
+"wide"
+],
+[
+1107.97,
+1108.6,
+"wide"
+]
+],
+"ov": [
+{
+"k": "big",
+"txt": "14 BOTTLES",
+"sub": "MORE THAN $60 A MONTH",
+"col": "red",
+"at": 23.22,
+"out": 26.42
+},
+{
+"k": "chip",
+"txt": "80 YEARS OLD · 50 YEARS IN THIS LITTLE HOUSE",
+"col": "ice",
+"at": 46.72,
+"out": 50.22
+},
+{
+"k": "big",
+"txt": "JUSO",
+"sub": "BAKING SODA · ABOUT $1",
+"col": "amber",
+"at": 55.26,
+"out": 58.46
+},
+{
+"k": "chip",
+"txt": "16 USES · 5 MISTAKES · 1 WEEKLY ROUTINE",
+"col": "green",
+"at": 62.94,
+"out": 66.44
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "SCRUBS",
+"col": "green",
+"at": 136.62
+},
+{
+"txt": "LOOSENS GREASE",
+"col": "green",
+"at": 141.2
+},
+{
+"txt": "KILLS SMELLS",
+"col": "green",
+"at": 143.9
+}
+],
+"at": 134.84,
+"out": 146.4
+},
+{
+"k": "stamp",
+"txt": "NOT A DISINFECTANT",
+"at": 161.7,
+"out": 164.7
+},
+{
+"k": "chip",
+"txt": "NEVER MIX IT WITH OTHER CLEANERS",
+"col": "red",
+"at": 188.68,
+"out": 192.18
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE REFRIGERATOR",
+"col": "green",
+"at": 199.8,
+"out": 203.8
+},
+{
+"k": "chip",
+"txt": "AN OPEN BOX WORKS ~3 MONTHS · WRITE THE DATE",
+"col": "amber",
+"at": 212.12,
+"out": 215.62
+},
+{
+"k": "chip",
+"txt": "2 SPOONS · 1 QUART OF WARM WATER",
+"col": "ice",
+"at": 224.84,
+"out": 228.34
+},
+{
+"k": "big",
+"txt": "MOTTAINAI",
+"sub": "NOTHING IS WASTED",
+"col": "amber",
+"at": 262.34,
+"out": 265.54
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE BURNED POT",
+"col": "green",
+"at": 266.26,
+"out": 270.26
+},
+{
+"k": "stamp",
+"txt": "NOT ON ALUMINUM",
+"at": 313.16,
+"out": 316.16
+},
+{
+"k": "step",
+"n": 3,
+"name": "SINK & BATHTUB",
+"col": "green",
+"at": 329.76,
+"out": 333.76
+},
+{
+"k": "chip",
+"txt": "OFURO · ONLY THE WHITE POWDER AND A SOFT BRUSH",
+"col": "ice",
+"at": 366.57,
+"out": 370.07
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE GROUT",
+"col": "green",
+"at": 373.0,
+"out": 377.0
+},
+{
+"k": "chip",
+"txt": "MOLD = OPEN WINDOW + A REAL MOLD CLEANER",
+"col": "red",
+"at": 396.98,
+"out": 400.48
+},
+{
+"k": "deal",
+"at": 412.42,
+"out": 416.92
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE DRAIN",
+"col": "green",
+"at": 417.88,
+"out": 421.88
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "½ CUP",
+"col": "ice",
+"at": 441.39
+},
+{
+"txt": "15 MIN",
+"col": "amber",
+"at": 444.74
+},
+{
+"txt": "HOT KETTLE",
+"col": "red",
+"at": 446.74
+}
+],
+"at": 440.12,
+"out": 449.24
+},
+{
+"k": "big",
+"txt": "$3",
+"sub": "A PLUNGER OR A HAIR SNAKE",
+"col": "green",
+"at": 488.56,
+"out": 491.76
+},
+{
+"k": "chip",
+"txt": "SUBSCRIBE · A JAPANESE HOME HABIT EVERY WEEK",
+"col": "green",
+"at": 493.56,
+"out": 497.06
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE CUTTING BOARD",
+"col": "green",
+"at": 513.55,
+"out": 517.55
+},
+{
+"k": "chip",
+"txt": "RAW MEAT? HOT SOAPY WATER FIRST · EVERY TIME",
+"col": "red",
+"at": 533.93,
+"out": 537.43
+},
+{
+"k": "step",
+"n": 7,
+"name": "CARPET & TATAMI",
+"col": "green",
+"at": 552.17,
+"out": 556.17
+},
+{
+"k": "chip",
+"txt": "TWICE A YEAR · 1 HOUR · WINDOWS OPEN",
+"col": "amber",
+"at": 566.58,
+"out": 570.08
+},
+{
+"k": "step",
+"n": 8,
+"name": "THE MATTRESS",
+"col": "green",
+"at": 599.84,
+"out": 603.84
+},
+{
+"k": "big",
+"txt": "$1,000",
+"sub": "AND NEVER CLEANED",
+"col": "red",
+"at": 602.08,
+"out": 605.28
+},
+{
+"k": "step",
+"n": 9,
+"name": "SHOES",
+"col": "green",
+"at": 641.12,
+"out": 645.12
+},
+{
+"k": "chip",
+"txt": "SAME SOCKS · A WHOLE MONTH",
+"col": "ice",
+"at": 659.41,
+"out": 662.91
+},
+{
+"k": "chip",
+"txt": "THE 5 MISTAKES",
+"col": "red",
+"at": 686.89,
+"out": 690.39
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "MIXING IT WITH VINEGAR IN A BOTTLE",
+"at": 693.37,
+"out": 701.37
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "USING IT ON ALUMINUM",
+"at": 706.95,
+"out": 714.95
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "«IT DISINFECTS LIKE BLEACH»",
+"at": 724.99,
+"out": 732.99
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "USING TOO MUCH",
+"at": 735.41,
+"out": 743.41
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "NOT RINSING",
+"at": 748.77,
+"out": 756.77
+},
+{
+"k": "step",
+"n": 10,
+"name": "THE GARBAGE CAN",
+"col": "green",
+"at": 769.59,
+"out": 773.59
+},
+{
+"k": "step",
+"n": 11,
+"name": "THE MICROWAVE",
+"col": "green",
+"at": 799.45,
+"out": 803.45
+},
+{
+"k": "chip",
+"txt": "1 CUP WATER · 1 SPOON · 3 MIN · DOOR CLOSED 5 MORE",
+"col": "ice",
+"at": 808.89,
+"out": 812.39
+},
+{
+"k": "step",
+"n": 12,
+"name": "THE LAUNDRY",
+"col": "green",
+"at": 832.11,
+"out": 836.11
+},
+{
+"k": "chip",
+"txt": "THE REAL SECRET: LEAVE IT DRY",
+"col": "amber",
+"at": 873.09,
+"out": 876.59
+},
+{
+"k": "step",
+"n": 13,
+"name": "THE SILVER",
+"col": "green",
+"at": 875.65,
+"out": 879.65
+},
+{
+"k": "big",
+"txt": "5 MINUTES",
+"sub": "FOIL · HOT WATER · BAKING SODA",
+"col": "amber",
+"at": 901.15,
+"out": 904.35
+},
+{
+"k": "chip",
+"txt": "ONLY REAL SILVER · NO GLUED STONES",
+"col": "red",
+"at": 921.91,
+"out": 925.41
+},
+{
+"k": "step",
+"n": 14,
+"name": "YOUR HANDS",
+"col": "green",
+"at": 932.73,
+"out": 936.73
+},
+{
+"k": "step",
+"n": 15,
+"name": "THE OVEN",
+"col": "green",
+"at": 960.99,
+"out": 964.99
+},
+{
+"k": "chip",
+"txt": "ONE NIGHT · WHILE YOU SLEEP",
+"col": "ice",
+"at": 1004.89,
+"out": 1008.39
+},
+{
+"k": "chip",
+"txt": "WHAT MY MOTHER NEVER DID",
+"col": "amber",
+"at": 1010.07,
+"out": 1013.57
+},
+{
+"k": "stamp",
+"txt": "ONE BOTTLE, ONE JOB = A DECORATION",
+"at": 1022.85,
+"out": 1025.85
+},
+{
+"k": "step",
+"n": 16,
+"name": "OSOJI · THE BIG CLEANING",
+"col": "green",
+"at": 1066.49,
+"out": 1070.49
+},
+{
+"k": "big",
+"txt": "TOSHIKOSHI SOBA",
+"sub": "NOODLES FOR CROSSING INTO THE NEW YEAR",
+"col": "amber",
+"at": 1143.43,
+"out": 1146.63
+},
+{
+"k": "recap",
+"rows": [
+1185.15,
+1188.25,
+1190.99,
+1192.63,
+1199.25,
+1202.23,
+1203.75,
+1208.55,
+1212.05,
+1215.99
+],
+"at": 1179.91,
+"out": 1221.99
+},
+{
+"k": "chip",
+"txt": "THE QUESTIONS PEOPLE ALWAYS ASK ME",
+"col": "ice",
+"at": 1222.21,
+"out": 1225.71
+},
+{
+"k": "words",
+"items": [
+{
+"txt": "BAKING SODA",
+"col": "green",
+"at": 1235.73
+},
+{
+"txt": "DISH SOAP",
+"col": "green",
+"at": 1237.71
+},
+{
+"txt": "WHITE VINEGAR",
+"col": "green",
+"at": 1239.75
+}
+],
+"at": 1233.09,
+"out": 1242.25
+},
+{
+"k": "big",
+"txt": "$5",
+"sub": "A MONTH · ALL MY CLEANING",
+"col": "green",
+"at": 1246.57,
+"out": 1249.77
+},
+{
+"k": "chip",
+"txt": "WASHING SODA ≠ BAKING SODA · MUCH STRONGER",
+"col": "red",
+"at": 1257.85,
+"out": 1261.35
+},
+{
+"k": "chip",
+"txt": "«DOES IT HURT PETS?» · VACUUM IT WELL",
+"col": "ice",
+"at": 1269.97,
+"out": 1273.47
+},
+{
+"k": "big",
+"txt": "A CLEAN HOUSE",
+"sub": "SMELLS OF NOTHING",
+"col": "ice",
+"at": 1297.37,
+"out": 1300.57
+},
+{
+"k": "ask",
+"at": 1315.17,
+"out": 1327.17
+},
+{
+"k": "next",
+"at": 1326.25,
+"out": 1331.25
+}
+],
+"cta1": {
+"desc": 493.56,
+"end": 499.56
+},
+"cta2": {
+"desc": 1050.87,
+"end": 1056.87
+},
+"cta3": {
+"desc": 1323.29,
+"end": 1328.29
+},
+"end": 1331.77,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+1042.806,
+1045.726
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "THE WEEKLY ROUTINE · 10 MINUTES",
+"recap": [
+"½ cup down the drain + hot water",
+"2 spoons in the trash can",
+"Sink paste",
+"Last wipe with clean water",
+"Empty washer · 1 cup (monthly)",
+"Trash can in the sun",
+"New socks in the shoes",
+"Mattress · carpet · oven (season)",
+"Silver, for fun",
+"Osoji in December"
+],
+"ask": [
+"What is the one cleaner",
+"under your sink",
+"you would never give up?"
+],
+"next": [
+"NEXT WEEK",
+"Another Japanese home habit"
+],
+"lower": [
+46.72,
+52.72
+]
+}
+}

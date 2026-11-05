@@ -1,0 +1,335 @@
+{
+"undersink": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_undersink"
+},
+"cleanstreet": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_cleanstreet"
+},
+"fridgeback": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_fridgeback"
+},
+"hospital": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_hospital"
+},
+"fridgeseal": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_fridgeseal"
+},
+"emptyfridge": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_emptyfridge"
+},
+"burnedpot": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_burnedpot"
+},
+"misopot": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_misopot"
+},
+"graysink": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_graysink"
+},
+"tubbottom": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_tubbottom"
+},
+"grout": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_grout"
+},
+"fizzdrain": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_fizzdrain"
+},
+"closedbottle": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_closedbottle"
+},
+"plunger": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_plunger"
+},
+"twoboards": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_twoboards"
+},
+"tatamiroom": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_tatamiroom"
+},
+"dogcarpet": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_dogcarpet"
+},
+"mattress": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_mattress"
+},
+"oldshoes": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_oldshoes"
+},
+"genkan": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_genkan"
+},
+"aluminum": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_aluminum"
+},
+"whitefilm": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_whitefilm"
+},
+"trashcan": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_trashcan"
+},
+"microwave": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_microwave"
+},
+"towels": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_towels"
+},
+"washer": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_washer"
+},
+"silver": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_silver"
+},
+"ring": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_ring"
+},
+"garlichands": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_garlichands"
+},
+"oven": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_oven"
+},
+"decoration": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_decoration"
+},
+"winter": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_winter"
+},
+"osoji": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_osoji"
+},
+"hallway": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_hallway"
+},
+"soba": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_soba"
+},
+"fourthings": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_fourthings"
+},
+"smellnothing": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_smellnothing"
+}
+}
