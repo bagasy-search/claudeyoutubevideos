@@ -1,0 +1,307 @@
+[
+{
+"k": "stubs",
+"at": 7.54,
+"out": 13.54,
+"said": 7.54,
+"solo": true,
+"kw": "3 STUBS",
+"kw2": "and she quit laying",
+"ph": "ph_stubs"
+},
+{
+"k": "christmas",
+"at": 33.92,
+"out": 39.92,
+"said": 33.92,
+"solo": true,
+"kw": "BY CHRISTMAS",
+"kw2": "if I had waited",
+"ph": "ph_christmas"
+},
+{
+"k": "greenshine",
+"at": 72.94,
+"out": 77.94,
+"said": 72.94,
+"sp": 1.2,
+"solo": true,
+"kw": "GREEN SHINE",
+"kw2": "the color of a crow",
+"ph": "ph_greenshine"
+},
+{
+"k": "nestfeathers",
+"at": 132.84,
+"out": 138.84,
+"said": 127.14,
+"solo": true,
+"kw": "A LOT",
+"kw2": "not a few feathers",
+"ph": "ph_nestfeathers"
+},
+{
+"k": "snakeskin",
+"at": 141.62,
+"out": 146.12,
+"said": 142.22,
+"sp": 1.333,
+"solo": true,
+"kw": "LIKE A SNAKE",
+"kw2": "old coat out, new coat in",
+"ph": "ph_snakeskin"
+},
+{
+"k": "churchsupper",
+"at": 190.44,
+"out": 194.94,
+"said": 190.44,
+"sp": 1.333,
+"solo": true,
+"kw": "PICKING",
+"kw2": "a molting hen eats like a teenager",
+"ph": "ph_churchsupper"
+},
+{
+"k": "football",
+"at": 216.64,
+"out": 223.14,
+"said": 216.64,
+"solo": true,
+"kw": "LIKE A FOOTBALL",
+"kw2": "head behind you",
+"ph": "ph_football"
+},
+{
+"k": "plantedfield",
+"at": 253.26,
+"out": 259.76,
+"said": 253.26,
+"solo": true,
+"kw": "A PLANTED FIELD",
+"kw2": "pins = growing",
+"ph": "ph_plantedfield"
+},
+{
+"k": "boatkeel",
+"at": 290.7,
+"out": 295.2,
+"said": 291.3,
+"sp": 1.333,
+"solo": true,
+"kw": "THE KEEL",
+"kw2": "down the middle",
+"ph": "ph_boatkeel"
+},
+{
+"k": "shallowv",
+"at": 305.32,
+"out": 311.32,
+"said": 305.32,
+"solo": true,
+"kw": "A SHALLOW V",
+"kw2": "meat on both sides",
+"ph": "ph_shallowv"
+},
+{
+"k": "cleanvent",
+"at": 349.756,
+"out": 356.26,
+"said": 349.76,
+"solo": true,
+"kw": "CLEAN & WHITE",
+"kw2": "even in a molt",
+"ph": "ph_cleanvent"
+},
+{
+"k": "shellpale",
+"at": 372.096,
+"out": 376.6,
+"said": 372.1,
+"sp": 1.333,
+"solo": true,
+"kw": "PALE",
+"kw2": "like the inside of a shell",
+"ph": "ph_shellpale"
+},
+{
+"k": "doctorbag",
+"at": 418.0,
+"out": 422.5,
+"said": 418.6,
+"sp": 1.333,
+"solo": true,
+"kw": "THE EYELID",
+"kw2": "pink or pale?",
+"ph": "ph_doctorbag"
+},
+{
+"k": "fourclues",
+"at": 445.556,
+"out": 452.06,
+"said": 445.56,
+"solo": true,
+"kw": "4 FOR 4",
+"kw2": "not a molt",
+"ph": "ph_fourclues"
+},
+{
+"k": "dogcrate",
+"at": 482.896,
+"out": 488.9,
+"said": 482.9,
+"solo": true,
+"kw": "THE CRATE",
+"kw2": "one night, clean paper",
+"ph": "ph_dogcrate"
+},
+{
+"k": "littlefinger",
+"at": 502.36,
+"out": 506.86,
+"said": 504.36,
+"sp": 1.333,
+"solo": true,
+"kw": "ONE WORM",
+"kw2": "dozens you can't see",
+"ph": "ph_littlefinger"
+},
+{
+"k": "floatvial",
+"at": 538.26,
+"out": 542.76,
+"said": 541.26,
+"sp": 1.444,
+"solo": true,
+"kw": "THEY FLOAT",
+"kw2": "under the microscope",
+"ph": "ph_floatvial"
+},
+{
+"k": "labelletter",
+"at": 603.04,
+"out": 607.54,
+"said": 604.44,
+"sp": 1.333,
+"solo": true,
+"kw": "THE LABEL",
+"kw2": "to the letter",
+"ph": "ph_labelletter"
+},
+{
+"k": "cinderblock",
+"at": 703.09,
+"out": 707.59,
+"said": 703.89,
+"sp": 1.333,
+"solo": true,
+"kw": "OFF THE DIRT",
+"kw2": "no eggs picked back up",
+"ph": "ph_cinderblock"
+},
+{
+"k": "scrambled",
+"at": 716.492,
+"out": 722.49,
+"said": 716.49,
+"solo": true,
+"kw": "SCRAMBLED",
+"kw2": "cooled, chopped small",
+"ph": "ph_scrambled"
+},
+{
+"k": "pinsback",
+"at": 753.332,
+"out": 758.83,
+"said": 753.33,
+"sp": 1.182,
+"solo": true,
+"kw": "DAY 10",
+"kw2": "a whole field of pins",
+"ph": "ph_pinsback"
+},
+{
+"k": "gingerfloor",
+"at": 817.91,
+"out": 822.41,
+"said": 820.61,
+"sp": 1.333,
+"solo": true,
+"kw": "SO LIGHT",
+"kw2": "November, under the roost",
+"ph": "ph_gingerfloor"
+},
+{
+"k": "moltorder",
+"at": 858.752,
+"out": 865.25,
+"said": 858.75,
+"solo": true,
+"kw": "HEAD → TAIL",
+"kw2": "a normal molt has an order",
+"ph": "ph_moltorder"
+},
+{
+"k": "nightpick",
+"at": 912.052,
+"out": 918.05,
+"said": 912.05,
+"solo": true,
+"kw": "AT NIGHT",
+"kw2": "hens are calm in the dark",
+"ph": "ph_nightpick"
+},
+{
+"k": "bloodpin",
+"at": 999.01,
+"out": 1003.51,
+"said": 1000.11,
+"sp": 1.333,
+"solo": true,
+"kw": "FULL OF BLOOD",
+"kw2": "be gentle",
+"ph": "ph_bloodpin"
+},
+{
+"k": "scalefeathers",
+"at": 1072.97,
+"out": 1078.97,
+"said": 1067.27,
+"solo": true,
+"kw": "PURE PROTEIN",
+"kw2": "18-20% feed",
+"ph": "ph_scalefeathers"
+},
+{
+"k": "oldlitter",
+"at": 1129.39,
+"out": 1133.89,
+"said": 1131.49,
+"sp": 1.333,
+"solo": true,
+"kw": "OLD LITTER",
+"kw2": "a crop of worm eggs",
+"ph": "ph_oldlitter"
+},
+{
+"k": "milkglass",
+"at": 1312.688,
+"out": 1317.19,
+"said": 1312.69,
+"sp": 1.333,
+"solo": true,
+"kw": "PALE AS MILK",
+"kw2": "under the eye",
+"ph": "ph_milkglass"
+},
+{
+"k": "tailback",
+"at": 1327.908,
+"out": 1333.91,
+"said": 1327.91,
+"solo": true,
+"kw": "ALL BACK",
+"kw2": "black, with the green shine",
+"ph": "ph_tailback"
+}
+]

@@ -1,0 +1,1487 @@
+{
+"segs": [
+[
+3.304,
+5.68,
+"shot",
+"v01_plumas_piso"
+],
+[
+5.68,
+7.54,
+"shot",
+"n_negra_lomo_pelado"
+],
+[
+7.54,
+11.5,
+"shot",
+"n_cola_tres_plumas"
+],
+[
+11.5,
+15.0,
+"shot",
+"n_negra_rincon"
+],
+[
+19.0,
+21.46,
+"shot",
+"n_plumas_negras_viento"
+],
+[
+21.46,
+27.02,
+"shot",
+"n_octubre_gallinero"
+],
+[
+27.02,
+28.393,
+"shot",
+"n_negra_flaca_perfil"
+],
+[
+33.733,
+41.1,
+"shot",
+"n_corona_navidad_puerta"
+],
+[
+41.1,
+47.568,
+"shot",
+"v02_sostiene_negra"
+],
+[
+52.819,
+57.88,
+"shot",
+"n_granja_indiana"
+],
+[
+57.88,
+64.782,
+"shot",
+"n_cuaderno_mesa_huevos"
+],
+[
+68.0,
+72.94,
+"shot",
+"n_hazel_retrato"
+],
+[
+72.94,
+76.42,
+"shot",
+"n_brillo_verde_plumas"
+],
+[
+76.42,
+78.351,
+"shot",
+"n_huevos_marrones_nido"
+],
+[
+83.2,
+91.4,
+"shot",
+"n_cuaderno_kraft2"
+],
+[
+91.4,
+96.7,
+"shot",
+"n_paginas_cuaderno2"
+],
+[
+101.403,
+107.66,
+"shot",
+"n_dos_paginas"
+],
+[
+107.66,
+112.9,
+"shot",
+"n_clinica_rural"
+],
+[
+117.846,
+127.14,
+"shot",
+"n_otoño_gallinero_puerta"
+],
+[
+127.14,
+129.252,
+"shot",
+"n_plumas_nido"
+],
+[
+132.8,
+138.92,
+"shot",
+"n_plumas_varias_colores"
+],
+[
+138.92,
+142.22,
+"shot",
+"n_gallina_muda"
+],
+[
+142.22,
+146.2,
+"shot",
+"n_piel_serpiente"
+],
+[
+150.0,
+153.94,
+"shot",
+"n_cuello_pelado"
+],
+[
+153.94,
+159.44,
+"shot",
+"n_nido_vacio_otoño"
+],
+[
+159.44,
+160.5,
+"shot",
+"n_gallina_enojada"
+],
+[
+164.75,
+171.04,
+"shot",
+"n_hazel_desaliñada"
+],
+[
+171.04,
+178.5,
+"shot",
+"n_calendario_sin_texto"
+],
+[
+183.725,
+188.04,
+"shot",
+"n_gallina_come_mucho"
+],
+[
+188.04,
+190.44,
+"shot",
+"n_comedero_vacio_rapido"
+],
+[
+190.44,
+195.381,
+"shot",
+"n_negra_mira_comida"
+],
+[
+199.7,
+207.22,
+"shot",
+"n_manos_cuatro"
+],
+[
+207.22,
+210.976,
+"shot",
+"n_negra_bajo_brazo"
+],
+[
+216.418,
+223.1,
+"shot",
+"n_brazo_futbol"
+],
+[
+223.1,
+228.4,
+"shot",
+"v03_canones"
+],
+[
+234.538,
+238.5,
+"shot",
+"n_canones_azules"
+],
+[
+238.5,
+247.4,
+"shot",
+"n_canon_abierto"
+],
+[
+253.2,
+255.54,
+"shot",
+"n_campo_sembrado"
+],
+[
+255.54,
+259.96,
+"shot",
+"n_muchos_canones"
+],
+[
+259.96,
+263.7,
+"shot",
+"n_lomo_liso_pelado"
+],
+[
+267.826,
+274.68,
+"shot",
+"n_plumas_opacas"
+],
+[
+274.68,
+281.071,
+"shot",
+"n_pluma_cae"
+],
+[
+284.7,
+291.3,
+"shot",
+"n_quilla_dibujo"
+],
+[
+291.3,
+295.289,
+"shot",
+"n_quilla_bote"
+],
+[
+299.705,
+305.32,
+"shot",
+"v04_quilla"
+],
+[
+305.32,
+312.799,
+"shot",
+"n_pechuga_firme"
+],
+[
+317.247,
+325.32,
+"shot",
+"n_cuchillo_tabla"
+],
+[
+325.32,
+327.7,
+"shot",
+"n_hazel_gorda_foto"
+],
+[
+331.816,
+336.82,
+"shot",
+"n_muda_fea"
+],
+[
+336.82,
+340.5,
+"shot",
+"n_negra_flaca_pelada"
+],
+[
+340.5,
+343.065,
+"shot",
+"v05_cola"
+],
+[
+346.6,
+355.62,
+"shot",
+"n_cola_limpia"
+],
+[
+355.62,
+359.658,
+"shot",
+"n_cola_sucia"
+],
+[
+365.74,
+374.6,
+"shot",
+"n_cascara_interior"
+],
+[
+374.6,
+376.7,
+"shot",
+"n_lupa_bolsa_mesa"
+],
+[
+382.8,
+388.64,
+"shot",
+"n_excremento_suelto"
+],
+[
+388.64,
+391.88,
+"shot",
+"n_gallina_muda_cola_limpia"
+],
+[
+391.88,
+393.194,
+"shot",
+"n_cresta_palida_negra"
+],
+[
+397.2,
+405.34,
+"shot",
+"n_ojo_negra"
+],
+[
+405.34,
+409.453,
+"shot",
+"n_dos_gallinas_palidas"
+],
+[
+413.2,
+418.6,
+"shot",
+"v06_ojo"
+],
+[
+418.6,
+422.56,
+"shot",
+"n_doctor_viejo_maletin"
+],
+[
+426.625,
+434.1,
+"shot",
+"n_parpado_palido"
+],
+[
+434.1,
+438.985,
+"shot",
+"n_lombriz_dibujo_libro"
+],
+[
+445.325,
+447.64,
+"shot",
+"n_reloj_bolsillo"
+],
+[
+447.64,
+453.36,
+"shot",
+"n_lomo_liso2"
+],
+[
+453.36,
+457.054,
+"shot",
+"n_negra_quieta_sombra"
+],
+[
+463.1,
+468.92,
+"shot",
+"n_puerta_gallinero_cerrada"
+],
+[
+468.92,
+472.7,
+"shot",
+"n_camino_granja"
+],
+[
+477.5,
+482.9,
+"shot",
+"n_tabla_bajo_percha3"
+],
+[
+482.9,
+490.761,
+"shot",
+"n_jaula_perro_paja"
+],
+[
+494.834,
+502.82,
+"shot",
+"n_excremento_espumoso"
+],
+[
+502.82,
+504.36,
+"shot",
+"n_lombriz_palida"
+],
+[
+504.36,
+506.998,
+"shot",
+"n_dedo_menique"
+],
+[
+512.95,
+516.86,
+"shot",
+"n_lupa_periodico"
+],
+[
+516.86,
+524.2,
+"shot",
+"n_microscopio_viejo"
+],
+[
+529.914,
+535.02,
+"shot",
+"v07_bolsita"
+],
+[
+535.02,
+537.58,
+"shot",
+"n_camioneta_camino"
+],
+[
+537.58,
+542.868,
+"shot",
+"v08_lupa"
+],
+[
+547.524,
+555.74,
+"shot",
+"n_billetes_25b"
+],
+[
+555.74,
+558.19,
+"shot",
+"n_frasco_muestra"
+],
+[
+564.0,
+567.26,
+"shot",
+"n_negra_palida_cara"
+],
+[
+567.26,
+576.1,
+"shot",
+"n_receta_mostrador"
+],
+[
+581.6,
+590.5,
+"shot",
+"n_caja_medicina"
+],
+[
+590.5,
+593.482,
+"shot",
+"n_huevos_tacho"
+],
+[
+597.509,
+604.44,
+"shot",
+"n_estante_botellas"
+],
+[
+604.44,
+607.686,
+"shot",
+"n_etiqueta_lupa"
+],
+[
+613.743,
+617.5,
+"shot",
+"n_telefono_pared"
+],
+[
+617.5,
+627.1,
+"shot",
+"n_jeringa_caballo"
+],
+[
+631.9,
+634.4,
+"shot",
+"n_tierra_diatomeas"
+],
+[
+634.4,
+644.557,
+"shot",
+"n_vinagre_manzana"
+],
+[
+649.5,
+655.78,
+"shot",
+"n_gotero"
+],
+[
+655.78,
+659.857,
+"shot",
+"n_bandada_bebedero"
+],
+[
+663.1,
+670.8,
+"shot",
+"n_bandada_suelo"
+],
+[
+670.8,
+674.5,
+"shot",
+"n_sobre_vitaminas"
+],
+[
+678.805,
+682.4,
+"shot",
+"n_rastrillo_corral"
+],
+[
+682.4,
+691.359,
+"shot",
+"n_tierra_corral_cerca"
+],
+[
+696.7,
+698.93,
+"shot",
+"n_carretilla_viruta"
+],
+[
+698.93,
+703.89,
+"shot",
+"n_cepilla_bebedero"
+],
+[
+703.89,
+707.657,
+"shot",
+"n_comedero_bloque"
+],
+[
+712.4,
+716.49,
+"shot",
+"n_huevo_revuelto_sarten"
+],
+[
+716.49,
+723.19,
+"shot",
+"n_huevo_picado_plato"
+],
+[
+723.19,
+723.991,
+"shot",
+"n_gallinas_huevo"
+],
+[
+729.2,
+737.2,
+"shot",
+"v09_racion"
+],
+[
+737.97,
+740.7,
+"shot",
+"n_conchilla_plato"
+],
+[
+746.5,
+753.33,
+"shot",
+"n_negra_mejor"
+],
+[
+753.33,
+759.1,
+"shot",
+"n_canones_campo"
+],
+[
+764.817,
+770.85,
+"shot",
+"n_dos_plumas"
+],
+[
+770.85,
+776.678,
+"shot",
+"n_muda_flaca"
+],
+[
+781.618,
+789.91,
+"shot",
+"n_manos_gallina_regazo"
+],
+[
+789.91,
+791.4,
+"shot",
+"n_foto_vieja_gallinas"
+],
+[
+795.334,
+802.23,
+"shot",
+"n_ginger"
+],
+[
+802.23,
+807.373,
+"shot",
+"n_plumas_rojas_suelo"
+],
+[
+811.516,
+817.73,
+"shot",
+"n_roja_cuello_pelado"
+],
+[
+817.73,
+822.5,
+"shot",
+"n_piso_gallinero_viruta"
+],
+[
+828.23,
+832.59,
+"shot",
+"n_tumba_arbol"
+],
+[
+832.59,
+840.973,
+"shot",
+"n_libreta_cuatro"
+],
+[
+844.4,
+851.33,
+"shot",
+"n_reloj_mano"
+],
+[
+851.33,
+855.2,
+"shot",
+"n_gallina_muda_normal"
+],
+[
+858.632,
+863.31,
+"shot",
+"n_cabeza_muda"
+],
+[
+863.31,
+864.35,
+"shot",
+"n_ala_muda"
+],
+[
+864.35,
+869.7,
+"shot",
+"n_cola_nueva"
+],
+[
+875.44,
+879.09,
+"shot",
+"n_gallina_casi_entera"
+],
+[
+879.09,
+882.17,
+"shot",
+"n_gallina_muy_pelada"
+],
+[
+882.17,
+888.571,
+"shot",
+"n_pelada_parches"
+],
+[
+893.4,
+899.73,
+"shot",
+"n_plumas_mordidas"
+],
+[
+899.73,
+906.4,
+"shot",
+"n_pagina_acaros"
+],
+[
+911.9,
+916.97,
+"shot",
+"n_percha_noche_linterna"
+],
+[
+916.97,
+922.4,
+"shot",
+"n_mano_bajo_pecho"
+],
+[
+926.808,
+936.15,
+"shot",
+"n_gallina_ojos_cerrados"
+],
+[
+936.15,
+939.495,
+"shot",
+"n_corral_gris"
+],
+[
+943.0,
+949.99,
+"shot",
+"n_plumas_montón"
+],
+[
+949.99,
+955.47,
+"shot",
+"n_muda_come"
+],
+[
+960.3,
+967.29,
+"shot",
+"n_excremento_normal2"
+],
+[
+967.29,
+972.368,
+"shot",
+"n_bolsita_rotulada"
+],
+[
+977.4,
+981.55,
+"shot",
+"n_comedero_colgado"
+],
+[
+981.55,
+987.95,
+"shot",
+"n_negra_sola_jaula"
+],
+[
+987.95,
+989.7,
+"shot",
+"n_bandada_toda"
+],
+[
+993.2,
+1000.11,
+"shot",
+"n_manos_suaves"
+],
+[
+1000.11,
+1003.6,
+"shot",
+"n_canon_sangre"
+],
+[
+1007.4,
+1013.97,
+"shot",
+"n_suelta_gallina"
+],
+[
+1013.97,
+1019.76,
+"shot",
+"n_otoño_granja_amplia"
+],
+[
+1024.1,
+1027.43,
+"shot",
+"n_pluma_cayendo2"
+],
+[
+1027.43,
+1033.79,
+"shot",
+"n_libreta_clavo2"
+],
+[
+1033.79,
+1037.4,
+"shot",
+"n_calendario_hojas"
+],
+[
+1042.323,
+1052.2,
+"shot",
+"n_manos_negra2"
+],
+[
+1056.9,
+1065.57,
+"shot",
+"n_bolsa_proteina"
+],
+[
+1065.57,
+1067.27,
+"shot",
+"n_gusanos_secos"
+],
+[
+1067.27,
+1069.4,
+"shot",
+"n_plumas_balanza"
+],
+[
+1072.9,
+1081.13,
+"shot",
+"n_bolsitas_varias"
+],
+[
+1081.13,
+1084.2,
+"shot",
+"n_gallinero_nieve"
+],
+[
+1089.6,
+1096.79,
+"shot",
+"n_gallinas_enojadas"
+],
+[
+1096.79,
+1101.8,
+"shot",
+"n_hojas_otoño_corral"
+],
+[
+1108.138,
+1117.35,
+"shot",
+"n_foto_madre2"
+],
+[
+1117.35,
+1119.5,
+"shot",
+"n_gallina_vieja_sol"
+],
+[
+1123.303,
+1131.49,
+"shot",
+"n_plumas_tierra"
+],
+[
+1131.49,
+1133.9,
+"shot",
+"n_cama_vieja"
+],
+[
+1139.1,
+1141.59,
+"shot",
+"n_tierra_humeda"
+],
+[
+1141.59,
+1147.69,
+"shot",
+"n_pala_viruta"
+],
+[
+1147.69,
+1153.459,
+"shot",
+"n_cucharon_medio"
+],
+[
+1158.306,
+1165.97,
+"shot",
+"n_camioneta_vieja2"
+],
+[
+1165.97,
+1170.9,
+"shot",
+"n_dolar_viejo"
+],
+[
+1175.8,
+1180.21,
+"shot",
+"n_negra_sana"
+],
+[
+1180.21,
+1186.1,
+"shot",
+"n_cuaderno_kraft3"
+],
+[
+1190.828,
+1198.51,
+"shot",
+"n_tienda_alimentos"
+],
+[
+1198.51,
+1203.577,
+"shot",
+"n_nido_vacio2"
+],
+[
+1207.317,
+1213.39,
+"shot",
+"n_amanecer_invierno"
+],
+[
+1213.39,
+1218.677,
+"shot",
+"n_huevos_canasta2"
+],
+[
+1223.634,
+1227.99,
+"shot",
+"n_huevo_roto_tazon"
+],
+[
+1227.99,
+1236.3,
+"shot",
+"n_calendario_cocina"
+],
+[
+1240.8,
+1243.55,
+"shot",
+"n_gallina_palida2"
+],
+[
+1243.55,
+1252.6,
+"shot",
+"n_bolsita_vacia"
+],
+[
+1256.422,
+1263.81,
+"shot",
+"n_gallina_pelada_invierno"
+],
+[
+1263.81,
+1267.282,
+"shot",
+"n_gallina_pico_abierto2"
+],
+[
+1272.618,
+1281.45,
+"shot",
+"n_reloj_pared2"
+],
+[
+1281.45,
+1286.6,
+"shot",
+"n_dos_caminos_plumas"
+],
+[
+1290.5,
+1298.11,
+"shot",
+"n_quilla_mano3"
+],
+[
+1298.11,
+1302.564,
+"shot",
+"n_cola_limpia2"
+],
+[
+1308.0,
+1312.69,
+"shot",
+"n_ojo_rosado"
+],
+[
+1312.69,
+1316.41,
+"shot",
+"n_vaso_leche"
+],
+[
+1316.41,
+1317.465,
+"shot",
+"n_bolsita_rotulada2"
+],
+[
+1323.422,
+1327.91,
+"shot",
+"n_corral_limpio"
+],
+[
+1327.91,
+1333.89,
+"shot",
+"n_cola_negra_nueva"
+],
+[
+1333.89,
+1336.899,
+"shot",
+"n_nido_espera"
+],
+[
+1341.8,
+1347.21,
+"shot",
+"n_hazel_picotea"
+],
+[
+1347.21,
+1353.1,
+"shot",
+"v10_porton"
+],
+[
+1358.5,
+1362.45,
+"shot",
+"n_libreta_lapiz_noche"
+],
+[
+1362.45,
+1371.6,
+"shot",
+"n_negra_brillante_corral"
+],
+[
+1375.214,
+1375.9,
+"shot",
+"n_atardecer_gallinero_b"
+]
+],
+"cam": [
+[
+737.2,
+737.97,
+"wide"
+]
+],
+"ov": [
+{
+"k": "stamp",
+"txt": "NOT THE MOLT",
+"at": 27.02,
+"out": 30.02
+},
+{
+"k": "big",
+"txt": "30 SEC",
+"sub": "WITH TWO HANDS",
+"col": "amber",
+"at": 41.1,
+"out": 44.3
+},
+{
+"k": "chip",
+"txt": "HAZEL · 4 · AUSTRALORP",
+"col": "amber",
+"at": 68.22,
+"out": 71.72
+},
+{
+"k": "chip",
+"txt": "THE MOLT · ONCE A YEAR",
+"col": "ice",
+"at": 138.92,
+"out": 142.42
+},
+{
+"k": "stamp",
+"txt": "MOLT = HUNGRY",
+"at": 186.1,
+"out": 189.1
+},
+{
+"k": "big",
+"txt": "4",
+"sub": "TOUCHES · NO TOOLS",
+"col": "amber",
+"at": 203.5,
+"out": 206.7
+},
+{
+"k": "step",
+"n": 1,
+"name": "PIN FEATHERS",
+"col": "amber",
+"at": 213.8,
+"out": 217.8
+},
+{
+"k": "step",
+"n": 2,
+"name": "THE KEEL BONE",
+"col": "amber",
+"at": 283.42,
+"out": 287.42
+},
+{
+"k": "step",
+"n": 3,
+"name": "UNDER THE TAIL",
+"col": "amber",
+"at": 340.5,
+"out": 344.5
+},
+{
+"k": "step",
+"n": 4,
+"name": "UNDER THE EYE",
+"col": "amber",
+"at": 391.88,
+"out": 395.88
+},
+{
+"k": "stamp",
+"txt": "EATEN FROM INSIDE",
+"at": 453.36,
+"out": 456.36
+},
+{
+"k": "chip",
+"txt": "FECAL FLOAT · ABOUT $25",
+"col": "ice",
+"at": 537.58,
+"out": 541.08
+},
+{
+"k": "chip",
+"txt": "ROUNDWORMS · A LOT",
+"col": "red",
+"at": 555.74,
+"out": 559.24
+},
+{
+"k": "stamp",
+"txt": "NO HORSE WORMER",
+"at": 617.5,
+"out": 620.5
+},
+{
+"k": "chip",
+"txt": "DAY 1 · WHOLE FLOCK",
+"col": "green",
+"at": 655.78,
+"out": 659.28
+},
+{
+"k": "chip",
+"txt": "CLEAN THE RUN",
+"col": "green",
+"at": 679.12,
+"out": 682.62
+},
+{
+"k": "chip",
+"txt": "AN EGG · EVERY OTHER DAY",
+"col": "amber",
+"at": 716.49,
+"out": 719.99
+},
+{
+"k": "stamp",
+"txt": "MOLT + WORMS",
+"at": 769.23,
+"out": 772.23
+},
+{
+"k": "big",
+"txt": "GINGER",
+"sub": "THE ONE I WAITED ON",
+"col": "red",
+"at": 795.41,
+"out": 798.61
+},
+{
+"k": "chip",
+"txt": "5 MISTAKES",
+"col": "red",
+"at": 936.15,
+"out": 939.65
+},
+{
+"k": "step",
+"n": 2,
+"name": "WAITING TO SEE WORMS",
+"col": "red",
+"at": 957.45,
+"out": 961.45
+},
+{
+"k": "step",
+"n": 3,
+"name": "DIRTY LITTER",
+"col": "red",
+"at": 971.35,
+"out": 975.35
+},
+{
+"k": "step",
+"n": 4,
+"name": "ONLY THE SICK HEN",
+"col": "red",
+"at": 979.89,
+"out": 983.89
+},
+{
+"k": "step",
+"n": 5,
+"name": "ROUGH HANDS",
+"col": "red",
+"at": 991.45,
+"out": 995.45
+},
+{
+"k": "chip",
+"txt": "MY OCTOBER ROUTINE",
+"col": "green",
+"at": 1013.97,
+"out": 1017.47
+},
+{
+"k": "big",
+"txt": "8-12",
+"sub": "WEEKS · A NORMAL MOLT",
+"col": "green",
+"at": 1033.79,
+"out": 1036.99
+},
+{
+"k": "chip",
+"txt": "WHAT MY MOTHER NEVER DID",
+"col": "amber",
+"at": 1108.35,
+"out": 1111.85
+},
+{
+"k": "deal",
+"at": 1191.19,
+"out": 1195.69
+},
+{
+"k": "chip",
+"txt": "«NO EGGS IN THE MOLT?»",
+"col": "ice",
+"at": 1198.51,
+"out": 1202.01
+},
+{
+"k": "chip",
+"txt": "«CAN I EAT THE EGGS?»",
+"col": "ice",
+"at": 1213.39,
+"out": 1216.89
+},
+{
+"k": "chip",
+"txt": "«HOW OFTEN TO DEWORM?»",
+"col": "ice",
+"at": 1234.31,
+"out": 1237.81
+},
+{
+"k": "recap",
+"rows": [
+1281.45,
+1290.65,
+1298.11,
+1308.05,
+1316.41,
+1323.49
+],
+"at": 1275.23,
+"out": 1329.49
+},
+{
+"k": "ask",
+"at": 1360.77,
+"out": 1372.77
+},
+{
+"k": "next",
+"at": 1369.37,
+"out": 1374.37
+}
+],
+"cta1": {
+"guide": 84.74,
+"page": 91.4,
+"desc": 113.12,
+"manual": "23 PROBLEMS · ONE PAGE EACH",
+"img": "page",
+"end": 119.12
+},
+"cta2": {
+"guide": 1180.21,
+"page": 1182.13,
+"desc": 1186.83,
+"manual": "23 PROBLEMS · ONE PAGE EACH",
+"img": "page",
+"end": 1192.83
+},
+"cta3": {
+"desc": 1347.21,
+"end": 1352.21
+},
+"end": 1375.89,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+1013.972,
+1108.348
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "MOLT OR WORMS?",
+"recap": [
+"1 · Pins coming in?",
+"2 · Keel: V or knife?",
+"3 · Clean under the tail?",
+"4 · Pink under the eye?",
+"Fecal test · $25",
+"Deworm all · clean · protein"
+],
+"ask": [
+"Ever called it the molt",
+"and it turned out worse?",
+"Tell me · I read every one"
+],
+"next": [
+"NEXT WEEK",
+"Something took 3 hens"
+],
+"lower": [
+53.12,
+59.12
+]
+}
+}
