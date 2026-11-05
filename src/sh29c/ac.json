@@ -1,0 +1,335 @@
+{
+"stuffy": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_stuffy"
+},
+"usbedroom": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_usbedroom"
+},
+"grandroom": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_grandroom"
+},
+"floorday": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_floorday"
+},
+"pillowyellow": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_pillowyellow"
+},
+"zippercover": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_zippercover"
+},
+"husks": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_husks"
+},
+"layers": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_layers"
+},
+"breathe": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_breathe"
+},
+"underbed": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_underbed"
+},
+"angel": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_angel"
+},
+"humidtank": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_humidtank"
+},
+"bowlheater": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_bowlheater"
+},
+"plugin": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_plugin"
+},
+"lavender": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_lavender"
+},
+"drybag": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_drybag"
+},
+"chair": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_chair"
+},
+"hook": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_hook"
+},
+"wettowel": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_wettowel"
+},
+"towelrail": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_towelrail"
+},
+"purifier": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_purifier"
+},
+"coldwater": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_coldwater"
+},
+"toowarm": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_toowarm"
+},
+"oldcarpet": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_oldcarpet"
+},
+"plushbed": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_plushbed"
+},
+"zabuton": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_zabuton"
+},
+"curtains": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_curtains"
+},
+"shoji": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_shoji"
+},
+"shoesin": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_shoesin"
+},
+"blanket": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_blanket"
+},
+"heater": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_heater"
+},
+"window": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2_off": "ph2_window"
+},
+"futonhoshi": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_futonhoshi"
+},
+"street": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_street"
+},
+"porch": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_porch"
+},
+"neighbor": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_neighbor"
+},
+"simplest": {
+"m": "none",
+"x": 50,
+"y": 55,
+"r": 170,
+"t2": "melt",
+"noword": true,
+"ph2": "ph2_simplest"
+}
+}

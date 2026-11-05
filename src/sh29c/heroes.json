@@ -1,0 +1,390 @@
+[
+{
+"k": "stuffy",
+"at": 27.46,
+"out": 31.96,
+"said": 28.46,
+"sp": 1.333,
+"solo": true,
+"kw": "STUFFY",
+"kw2": "",
+"ph": "ph_stuffy"
+},
+{
+"k": "usbedroom",
+"at": 42.44,
+"out": 46.94,
+"said": 44.84,
+"sp": 1.333,
+"solo": true,
+"kw": "USBEDROOM",
+"kw2": "",
+"ph": "ph_usbedroom"
+},
+{
+"k": "grandroom",
+"at": 60.02,
+"out": 65.52,
+"said": 60.02,
+"sp": 1.091,
+"solo": true,
+"kw": "GRANDROOM",
+"kw2": "",
+"ph": "ph_grandroom"
+},
+{
+"k": "floorday",
+"at": 124.26,
+"out": 129.26,
+"said": 124.26,
+"sp": 1.2,
+"solo": true,
+"kw": "FLOORDAY",
+"kw2": "",
+"ph": "ph_floorday"
+},
+{
+"k": "pillowyellow",
+"at": 190.0,
+"out": 195.0,
+"said": 190.0,
+"sp": 1.2,
+"solo": true,
+"kw": "PILLOWYELLOW",
+"kw2": "",
+"ph": "ph_pillowyellow"
+},
+{
+"k": "zippercover",
+"at": 222.36,
+"out": 227.36,
+"said": 222.36,
+"sp": 1.2,
+"solo": true,
+"kw": "ZIPPERCOVER",
+"kw2": "",
+"ph": "ph_zippercover"
+},
+{
+"k": "husks",
+"at": 233.82,
+"out": 239.82,
+"said": 233.82,
+"solo": true,
+"kw": "HUSKS",
+"kw2": "",
+"ph": "ph_husks"
+},
+{
+"k": "layers",
+"at": 253.86,
+"out": 259.36,
+"said": 253.86,
+"sp": 1.091,
+"solo": true,
+"kw": "LAYERS",
+"kw2": "",
+"ph": "ph_layers"
+},
+{
+"k": "breathe",
+"at": 278.76,
+"out": 284.76,
+"said": 278.76,
+"solo": true,
+"kw": "BREATHE",
+"kw2": "",
+"ph": "ph_breathe"
+},
+{
+"k": "underbed",
+"at": 311.32,
+"out": 317.32,
+"said": 307.02,
+"solo": true,
+"kw": "UNDERBED",
+"kw2": "",
+"ph": "ph_underbed"
+},
+{
+"k": "angel",
+"at": 351.76,
+"out": 356.26,
+"said": 352.76,
+"sp": 1.333,
+"solo": true,
+"kw": "ANGEL",
+"kw2": "",
+"ph": "ph_angel"
+},
+{
+"k": "humidtank",
+"at": 395.199,
+"out": 401.2,
+"said": 395.2,
+"solo": true,
+"kw": "HUMIDTANK",
+"kw2": "",
+"ph": "ph_humidtank"
+},
+{
+"k": "bowlheater",
+"at": 444.659,
+"out": 450.66,
+"said": 444.66,
+"solo": true,
+"kw": "BOWLHEATER",
+"kw2": "",
+"ph": "ph_bowlheater"
+},
+{
+"k": "plugin",
+"at": 452.86,
+"out": 457.36,
+"said": 454.86,
+"sp": 1.333,
+"solo": true,
+"kw": "PLUGIN",
+"kw2": "",
+"ph": "ph_plugin"
+},
+{
+"k": "lavender",
+"at": 494.4,
+"out": 500.4,
+"said": 493.8,
+"solo": true,
+"kw": "LAVENDER",
+"kw2": "",
+"ph": "ph_lavender"
+},
+{
+"k": "drybag",
+"at": 502.879,
+"out": 507.38,
+"said": 502.88,
+"sp": 1.333,
+"solo": true,
+"kw": "DRYBAG",
+"kw2": "",
+"ph": "ph_drybag"
+},
+{
+"k": "chair",
+"at": 555.3,
+"out": 559.8,
+"said": 556.9,
+"sp": 1.333,
+"solo": true,
+"kw": "CHAIR",
+"kw2": "",
+"ph": "ph_chair"
+},
+{
+"k": "hook",
+"at": 601.96,
+"out": 606.46,
+"said": 602.66,
+"sp": 1.333,
+"solo": true,
+"kw": "HOOK",
+"kw2": "",
+"ph": "ph_hook"
+},
+{
+"k": "wettowel",
+"at": 617.86,
+"out": 622.36,
+"said": 621.06,
+"sp": 1.333,
+"solo": true,
+"kw": "WETTOWEL",
+"kw2": "",
+"ph": "ph_wettowel"
+},
+{
+"k": "towelrail",
+"at": 635.94,
+"out": 640.44,
+"said": 636.64,
+"sp": 1.333,
+"solo": true,
+"kw": "TOWELRAIL",
+"kw2": "",
+"ph": "ph_towelrail"
+},
+{
+"k": "purifier",
+"at": 675.9,
+"out": 681.9,
+"said": 674.1,
+"solo": true,
+"kw": "PURIFIER",
+"kw2": "",
+"ph": "ph_purifier"
+},
+{
+"k": "coldwater",
+"at": 692.118,
+"out": 698.12,
+"said": 692.12,
+"solo": true,
+"kw": "COLDWATER",
+"kw2": "",
+"ph": "ph_coldwater"
+},
+{
+"k": "toowarm",
+"at": 725.36,
+"out": 731.36,
+"said": 720.86,
+"solo": true,
+"kw": "TOOWARM",
+"kw2": "",
+"ph": "ph_toowarm"
+},
+{
+"k": "oldcarpet",
+"at": 758.658,
+"out": 764.66,
+"said": 758.66,
+"solo": true,
+"kw": "OLDCARPET",
+"kw2": "",
+"ph": "ph_oldcarpet"
+},
+{
+"k": "plushbed",
+"at": 777.958,
+"out": 783.96,
+"said": 777.96,
+"solo": true,
+"kw": "PLUSHBED",
+"kw2": "",
+"ph": "ph_plushbed"
+},
+{
+"k": "zabuton",
+"at": 814.24,
+"out": 818.74,
+"said": 816.54,
+"sp": 1.333,
+"solo": true,
+"kw": "ZABUTON",
+"kw2": "",
+"ph": "ph_zabuton"
+},
+{
+"k": "curtains",
+"at": 823.44,
+"out": 829.44,
+"said": 821.04,
+"solo": true,
+"kw": "CURTAINS",
+"kw2": "",
+"ph": "ph_curtains"
+},
+{
+"k": "shoji",
+"at": 862.18,
+"out": 866.68,
+"said": 863.48,
+"sp": 1.333,
+"solo": true,
+"kw": "SHOJI",
+"kw2": "",
+"ph": "ph_shoji"
+},
+{
+"k": "shoesin",
+"at": 872.6,
+"out": 878.6,
+"said": 869.7,
+"solo": true,
+"kw": "SHOESIN",
+"kw2": "",
+"ph": "ph_shoesin"
+},
+{
+"k": "blanket",
+"at": 941.398,
+"out": 947.4,
+"said": 941.4,
+"solo": true,
+"kw": "BLANKET",
+"kw2": "",
+"ph": "ph_blanket"
+},
+{
+"k": "heater",
+"at": 959.478,
+"out": 965.48,
+"said": 959.48,
+"solo": true,
+"kw": "HEATER",
+"kw2": "",
+"ph": "ph_heater"
+},
+{
+"k": "window",
+"at": 994.2,
+"out": 998.7,
+"said": 997.1,
+"sp": 1.333,
+"solo": true,
+"kw": "WINDOW",
+"kw2": "",
+"ph": "ph_window"
+},
+{
+"k": "futonhoshi",
+"at": 1025.82,
+"out": 1030.32,
+"said": 1028.32,
+"sp": 1.333,
+"solo": true,
+"kw": "FUTONHOSHI",
+"kw2": "",
+"ph": "ph_futonhoshi"
+},
+{
+"k": "street",
+"at": 1052.616,
+"out": 1058.62,
+"said": 1052.62,
+"solo": true,
+"kw": "STREET",
+"kw2": "",
+"ph": "ph_street"
+},
+{
+"k": "porch",
+"at": 1104.936,
+"out": 1110.94,
+"said": 1104.94,
+"solo": true,
+"kw": "PORCH",
+"kw2": "",
+"ph": "ph_porch"
+},
+{
+"k": "neighbor",
+"at": 1155.756,
+"out": 1161.76,
+"said": 1155.76,
+"solo": true,
+"kw": "NEIGHBOR",
+"kw2": "",
+"ph": "ph_neighbor"
+},
+{
+"k": "simplest",
+"at": 1307.26,
+"out": 1313.26,
+"said": 1309.16,
+"solo": true,
+"kw": "SIMPLEST",
+"kw2": "",
+"ph": "ph_simplest"
+}
+]
