@@ -17,12 +17,12 @@ def kf(item, prop, keys, kind="vector3"):
               "animator": {"type": "keyframes", "enabled": True, "keyframes": ks}, "dependencies": [], "layerRefBindings": []})
 
 A.append({"type": "createFxScene3DLayer", "compositionId": C, "layerId": L, "name": "Epica", "pixelsPerMeter": 100, "view": {"id": 9, "exposure": 0},
-          "activeRange": {"start": 0, "duration": DUR}, "transform": {"anchorPoint": [0, 0], "position": [960, 540], "scale": [100, 100], "rotation": 0, "opacity": 100},
+          "activeRange": {"start": 0, "duration": DUR}, "transform": {"anchorPoint": [0, 0], "position": [0, 0], "scale": [100, 100], "rotation": 0, "opacity": 100},
           "world": {"id": 2}, "renderSettings": {"id": 97, "filmGate": None, "overscan": None, "lightGroups": [], "lightCollections": [], "lightLinks": [], "outputs": [], "previewOutput": None}})
 # mundo: sin luz (las fotos son emisivas = se ven tal cual), fondo y niebla que viran de azul marino a cielo
 AGUA = [0.02, 0.16, 0.27, 1]; CIELO = [0.62, 0.70, 0.82, 1]
 A.append({"type": "setFxScene3DWorld", "compositionId": C, "layerId": L, "world": {"id": 2, "background": {"type": "color", "color": AGUA},
-          "fog": {"color": AGUA, "startDistance": 2, "endDistance": 38}}})
+          "fog": {"color": AGUA, "startDistance": 8, "endDistance": 95}}})
 A.append({"type": "addFxScene3DLayer", "compositionId": C, "layerId": L, "item": {"type": "Camera3D", "id": 3, "parentId": None, "name": "Toma",
           "transform": {"position": [0, 150, 0], "rotation": {"type": "euler", "order": "XYZ", "orientation": [0, 0, 0], "rotationX": 0, "rotationY": 0, "rotationZ": 0}},
           "lens": {"type": "angle", "projection": {"type": "perspective", "angleOfView": 52}}}})
@@ -40,7 +40,7 @@ def modelo(asset, pos, scale=100, rot=(0, 0, 0), name=None):
 
 # 1) fondo marino (relieve 14 m) y crinoideos recortados que la cámara pasa de costado
 modelo("mar", (0, 0, 4000))
-for k, (x, y, z, s) in enumerate([(-420, 260, 1150, 100), (520, 330, 1800, 115), (-700, 300, 2450, 130), (260, 380, 2950, 90)]):
+for k, (x, y, z, s) in enumerate([(-650, 330, 1300, 55), (700, 360, 1900, 65), (-900, 380, 2500, 70), (450, 420, 3100, 60), (-250, 440, 3400, 50)]):
     modelo("lirios", (x, y, z), s, (0, random.uniform(-25, 25), 0), f"lirio{k}")
 # 2) capa de nubes entre el agua y el cielo (la cámara sube a través)
 for k in range(16):
@@ -62,7 +62,7 @@ kf(3, "rotationZ", [(0, 1.5, LIN), (9000, -1.5), (13000, 2), (30000, 0)], "float
 # mundo: agua -> cielo durante la subida (fondo y niebla)
 for prop, a, b in [("backgroundColor", AGUA, CIELO), ("fogColor", AGUA, [0.80, 0.84, 0.90, 1])]:
     kf(2, prop, [(0, a, LIN), (9500, a), (12500, b)], "color")
-kf(2, "fogStartDistance", [(0, 2, LIN), (9500, 2), (12500, 25)], "float")
-kf(2, "fogEndDistance", [(0, 38, LIN), (9500, 38), (12500, 320)], "float")
+kf(2, "fogStartDistance", [(0, 8, LIN), (9500, 8), (12500, 25)], "float")
+kf(2, "fogEndDistance", [(0, 95, LIN), (9500, 95), (12500, 320)], "float")
 json.dump(A, open("actions.json", "w"), indent=0)
 print(len(A), "acciones")
