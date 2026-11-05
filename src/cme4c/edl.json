@@ -274,8 +274,33 @@
 },
 {
 "a": 167.9333,
+"b": 172.6333,
+"k": "clip",
+"id": "v021_heladera_foto",
+"pid": "v021_heladera",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 172.6333,
+"b": 177.3,
+"k": "clip",
+"id": "v019_heladera_foto",
+"pid": "v019_heladera",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 177.3,
 "b": 182.0,
-"k": "hold"
+"k": "clip",
+"id": "v023_heladera_foto",
+"pid": "v023_heladera",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 182.0,
@@ -396,8 +421,33 @@
 },
 {
 "a": 282.7,
+"b": 287.7667,
+"k": "clip",
+"id": "v032_agua_foto",
+"pid": "v032_agua",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 287.7667,
+"b": 292.8333,
+"k": "clip",
+"id": "v034_agua_foto",
+"pid": "v034_agua",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 292.8333,
 "b": 297.9,
-"k": "hold"
+"k": "clip",
+"id": "v027_heladera_foto",
+"pid": "v027_heladera",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 297.9,
@@ -509,8 +559,33 @@
 },
 {
 "a": 385.4667,
+"b": 389.9667,
+"k": "clip",
+"id": "v038_agua_foto",
+"pid": "v038_agua",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 389.9667,
+"b": 394.4333,
+"k": "clip",
+"id": "v036_agua_foto",
+"pid": "v036_agua",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 394.4333,
 "b": 398.9333,
-"k": "hold"
+"k": "clip",
+"id": "v043_agua_foto",
+"pid": "v043_agua",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 398.9333,
@@ -685,8 +760,33 @@
 },
 {
 "a": 541.1667,
+"b": 545.1667,
+"k": "clip",
+"id": "v052_cel_foto",
+"pid": "v052_cel",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 545.1667,
+"b": 549.1667,
+"k": "clip",
+"id": "v050_cel_foto",
+"pid": "v050_cel",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 549.1667,
 "b": 553.1667,
-"k": "hold"
+"k": "clip",
+"id": "v048_cel_foto",
+"pid": "v048_cel",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 553.1667,
@@ -696,8 +796,43 @@
 },
 {
 "a": 555.2667,
+"b": 559.6,
+"k": "clip",
+"id": "v053_net_foto",
+"pid": "v053_net",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 559.6,
+"b": 563.9,
+"k": "clip",
+"id": "v049_cel_foto",
+"pid": "v049_cel",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 563.9,
+"b": 568.2,
+"k": "clip",
+"id": "v054_net_foto",
+"pid": "v054_net",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 568.2,
 "b": 572.5333,
-"k": "hold"
+"k": "clip",
+"id": "v056_net_foto",
+"pid": "v056_net",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 572.5333,
@@ -1097,8 +1232,33 @@
 },
 {
 "a": 934.0,
+"b": 938.4667,
+"k": "clip",
+"id": "v081_remedios_foto",
+"pid": "v081_remedios",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 938.4667,
+"b": 942.9667,
+"k": "clip",
+"id": "v084_luz_foto",
+"pid": "v084_luz",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 942.9667,
 "b": 947.4333,
-"k": "hold"
+"k": "clip",
+"id": "v079_remedios_foto",
+"pid": "v079_remedios",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 947.4333,
@@ -1408,8 +1568,33 @@
 },
 {
 "a": 1218.7333,
+"b": 1223.1,
+"k": "clip",
+"id": "v105_errores_foto",
+"pid": "v105_errores",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1223.1,
+"b": 1227.4667,
+"k": "clip",
+"id": "v102_cocina_foto",
+"pid": "v102_cocina",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1227.4667,
 "b": 1231.8333,
-"k": "hold"
+"k": "clip",
+"id": "v106_errores_foto",
+"pid": "v106_errores",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 1231.8333,
@@ -1503,8 +1688,33 @@
 },
 {
 "a": 1322.7,
+"b": 1326.9,
+"k": "clip",
+"id": "v107_errores_foto",
+"pid": "v107_errores",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1326.9,
+"b": 1331.1333,
+"k": "clip",
+"id": "v113_regreso_foto",
+"pid": "v113_regreso",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1331.1333,
 "b": 1335.3333,
-"k": "hold"
+"k": "clip",
+"id": "v106_errores_foto",
+"pid": "v106_errores",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 1335.3333,
@@ -1601,8 +1811,33 @@
 },
 {
 "a": 1411.1667,
+"b": 1415.3667,
+"k": "clip",
+"id": "v118_moneda_foto",
+"pid": "v118_moneda",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1415.3667,
+"b": 1419.6,
+"k": "clip",
+"id": "v114_regreso_foto",
+"pid": "v114_regreso",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1419.6,
 "b": 1423.8,
-"k": "hold"
+"k": "clip",
+"id": "v123_moneda_foto",
+"pid": "v123_moneda",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 1423.8,
@@ -1699,8 +1934,33 @@
 },
 {
 "a": 1501.4333,
+"b": 1506.0,
+"k": "clip",
+"id": "v120_moneda_foto",
+"pid": "v120_moneda",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1506.0,
+"b": 1510.6,
+"k": "clip",
+"id": "v121_moneda_foto",
+"pid": "v121_moneda",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1510.6,
 "b": 1515.1667,
-"k": "hold"
+"k": "clip",
+"id": "v119_moneda_foto",
+"pid": "v119_moneda",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 1515.1667,
@@ -1710,8 +1970,33 @@
 },
 {
 "a": 1519.7667,
+"b": 1523.8,
+"k": "clip",
+"id": "v122_moneda_foto",
+"pid": "v122_moneda",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1523.8,
+"b": 1527.8,
+"k": "clip",
+"id": "v125_moneda_foto",
+"pid": "v125_moneda",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1527.8,
 "b": 1531.8333,
-"k": "hold"
+"k": "clip",
+"id": "v123_moneda_foto",
+"pid": "v123_moneda",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 1531.8333,
@@ -1745,8 +2030,23 @@
 },
 {
 "a": 1558.8,
+"b": 1563.2667,
+"k": "clip",
+"id": "v127_moneda_foto",
+"pid": "v127_moneda",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1563.2667,
 "b": 1567.7333,
-"k": "hold"
+"k": "clip",
+"id": "v129_ernesto_foto",
+"pid": "v129_ernesto",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 1567.7333,
@@ -1831,8 +2131,33 @@
 },
 {
 "a": 1662.3333,
+"b": 1667.3333,
+"k": "clip",
+"id": "v135_rutina_foto",
+"pid": "v135_rutina",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1667.3333,
+"b": 1672.3,
+"k": "clip",
+"id": "v137_rutina_foto",
+"pid": "v137_rutina",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1672.3,
 "b": 1677.3,
-"k": "hold"
+"k": "clip",
+"id": "v127_moneda_foto",
+"pid": "v127_moneda",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 1677.3,
@@ -1918,8 +2243,33 @@
 },
 {
 "a": 1735.1,
+"b": 1739.3667,
+"k": "clip",
+"id": "v135_rutina_foto",
+"pid": "v135_rutina",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1739.3667,
+"b": 1743.6,
+"k": "clip",
+"id": "v138_preg_foto",
+"pid": "v138_preg",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1743.6,
 "b": 1747.8667,
-"k": "hold"
+"k": "clip",
+"id": "v134_rutina_r02_foto",
+"pid": "v134_rutina_r02",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 1747.8667,
@@ -1959,8 +2309,33 @@
 },
 {
 "a": 1789.6667,
+"b": 1793.9667,
+"k": "clip",
+"id": "v136_rutina_foto",
+"pid": "v136_rutina",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1793.9667,
+"b": 1798.2667,
+"k": "clip",
+"id": "v141_preg_foto",
+"pid": "v141_preg",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1798.2667,
 "b": 1802.5667,
-"k": "hold"
+"k": "clip",
+"id": "v142_resumen_r03_foto",
+"pid": "v142_resumen_r03",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 1802.5667,
@@ -2009,8 +2384,33 @@
 },
 {
 "a": 1845.5,
+"b": 1849.3333,
+"k": "clip",
+"id": "v145_resumen_r03_foto",
+"pid": "v145_resumen_r03",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1849.3333,
+"b": 1853.2,
+"k": "clip",
+"id": "v140_preg_foto",
+"pid": "v140_preg",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1853.2,
 "b": 1857.0333,
-"k": "hold"
+"k": "clip",
+"id": "v139_preg_foto",
+"pid": "v139_preg",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 1857.0333,
@@ -2062,8 +2462,33 @@
 },
 {
 "a": 1894.6667,
+"b": 1899.3333,
+"k": "clip",
+"id": "v147_resumen_foto",
+"pid": "v147_resumen",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1899.3333,
+"b": 1903.9667,
+"k": "clip",
+"id": "v142_resumen_r03_foto",
+"pid": "v142_resumen_r03",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
+},
+{
+"a": 1903.9667,
 "b": 1908.6333,
-"k": "hold"
+"k": "clip",
+"id": "v149_cierre_foto",
+"pid": "v149_cierre",
+"o": 0.4,
+"rol": "plano",
+"relleno": 1
 },
 {
 "a": 1908.6333,
