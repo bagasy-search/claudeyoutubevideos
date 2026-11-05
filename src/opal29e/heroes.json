@@ -1,0 +1,293 @@
+[
+{
+"k": "growl",
+"at": 11.6,
+"out": 17.1,
+"said": 11.6,
+"sp": 1.091,
+"solo": true,
+"kw": "A GROWL",
+"kw2": "a sound I'd never heard",
+"ph": "ph_growl"
+},
+{
+"k": "shutdoor",
+"at": 41.52,
+"out": 48.02,
+"said": 41.52,
+"solo": true,
+"kw": "A SHUT DOOR",
+"kw2": "and a latched lid",
+"ph": "ph_shutdoor"
+},
+{
+"k": "calendaroct",
+"at": 101.32,
+"out": 107.32,
+"said": 97.12,
+"solo": true,
+"kw": "OCTOBER 12",
+"kw2": "she hatched anyway",
+"ph": "ph_calendaroct"
+},
+{
+"k": "heatplate",
+"at": 150.78,
+"out": 156.78,
+"said": 150.78,
+"solo": true,
+"kw": "TUCK UNDER",
+"kw2": "warm when they want",
+"ph": "ph_heatplate"
+},
+{
+"k": "peeping",
+"at": 180.16,
+"out": 186.16,
+"said": 176.26,
+"solo": true,
+"kw": "ALL 11",
+"kw2": "peeping at 8 PM",
+"ph": "ph_peeping"
+},
+{
+"k": "pileup",
+"at": 220.6,
+"out": 225.1,
+"said": 222.1,
+"sp": 1.444,
+"solo": true,
+"kw": "A PILE",
+"kw2": "that's cold",
+"ph": "ph_pileup"
+},
+{
+"k": "handunder",
+"at": 237.78,
+"out": 242.28,
+"said": 240.98,
+"sp": 1.333,
+"solo": true,
+"kw": "WARM",
+"kw2": "the plate was working",
+"ph": "ph_handunder"
+},
+{
+"k": "inarow",
+"at": 253.84,
+"out": 258.34,
+"said": 254.04,
+"sp": 1.444,
+"solo": true,
+"kw": "IN A ROW",
+"kw2": "something put them there",
+"ph": "ph_inarow"
+},
+{
+"k": "pastybutt",
+"at": 272.46,
+"out": 276.96,
+"said": 274.16,
+"sp": 1.333,
+"solo": true,
+"kw": "PASTY BUTT",
+"kw2": "a sick chick shows it",
+"ph": "ph_pastybutt"
+},
+{
+"k": "witness",
+"at": 301.22,
+"out": 307.22,
+"said": 301.22,
+"solo": true,
+"kw": "THE WITNESS",
+"kw2": "watch the mother hen",
+"ph": "ph_witness"
+},
+{
+"k": "notherblood",
+"at": 323.95,
+"out": 328.45,
+"said": 325.25,
+"sp": 1.333,
+"solo": true,
+"kw": "NOT HER BLOOD",
+"kw2": "she fought it",
+"ph": "ph_notherblood"
+},
+{
+"k": "longlist",
+"at": 350.45,
+"out": 356.45,
+"said": 345.35,
+"solo": true,
+"kw": "8 SUSPECTS",
+"kw2": "each leaves a different scene",
+"ph": "ph_longlist"
+},
+{
+"k": "staples",
+"at": 410.026,
+"out": 415.53,
+"said": 410.03,
+"sp": 1.091,
+"solo": true,
+"kw": "STAPLES",
+"kw2": "pulled loose",
+"ph": "ph_staples"
+},
+{
+"k": "mousehole",
+"at": 436.226,
+"out": 442.23,
+"said": 436.23,
+"solo": true,
+"kw": "A MOUSE HOLE",
+"kw2": "years ago",
+"ph": "ph_mousehole"
+},
+{
+"k": "pairedtracks",
+"at": 454.146,
+"out": 460.65,
+"said": 454.15,
+"solo": true,
+"kw": "2 · GAP · 2",
+"kw2": "it bounds",
+"ph": "ph_pairedtracks"
+},
+{
+"k": "pencilholes",
+"at": 474.586,
+"out": 479.09,
+"said": 474.59,
+"sp": 1.444,
+"solo": true,
+"kw": "2 TINY HOLES",
+"kw2": "back of the head",
+"ph": "ph_pencilholes"
+},
+{
+"k": "sausage",
+"at": 502.486,
+"out": 508.49,
+"said": 502.49,
+"solo": true,
+"kw": "SKINNY",
+"kw2": "brown on top, cream below",
+"ph": "ph_sausage"
+},
+{
+"k": "dottiefight",
+"at": 543.646,
+"out": 549.15,
+"said": 543.65,
+"sp": 1.091,
+"solo": true,
+"kw": "FIGHT ANYTHING",
+"kw2": "that's why only 3",
+"ph": "ph_dottiefight"
+},
+{
+"k": "dimehole",
+"at": 592.106,
+"out": 598.11,
+"said": 592.11,
+"solo": true,
+"kw": "A DIME",
+"kw2": "anything bigger gets tin",
+"ph": "ph_dimehole"
+},
+{
+"k": "feedcans",
+"at": 626.246,
+"out": 632.25,
+"said": 626.25,
+"solo": true,
+"kw": "TIGHT LIDS",
+"kw2": "no feed, no mice",
+"ph": "ph_feedcans"
+},
+{
+"k": "saltcup",
+"at": 645.746,
+"out": 651.75,
+"said": 645.75,
+"sp": 1.083,
+"solo": true,
+"kw": "SALT WATER",
+"kw2": "1 tsp · 1 cup · boiled",
+"ph": "ph_saltcup"
+},
+{
+"k": "beakdip",
+"at": 738.952,
+"out": 744.95,
+"said": 738.95,
+"solo": true,
+"kw": "IN AND OUT",
+"kw2": "where the water is",
+"ph": "ph_beakdip"
+},
+{
+"k": "woodstove",
+"at": 773.452,
+"out": 779.45,
+"said": 773.45,
+"solo": true,
+"kw": "BY THE STOVE",
+"kw2": "in my hand",
+"ph": "ph_woodstove"
+},
+{
+"k": "lampchain",
+"at": 853.712,
+"out": 859.71,
+"said": 853.71,
+"solo": true,
+"kw": "ON A CHAIN",
+"kw2": "it slipped",
+"ph": "ph_lampchain"
+},
+{
+"k": "ricegrains",
+"at": 894.83,
+"out": 899.33,
+"said": 895.73,
+"sp": 1.333,
+"solo": true,
+"kw": "BLACK RICE",
+"kw2": "that's a rat",
+"ph": "ph_ricegrains"
+},
+{
+"k": "pinkyfinger",
+"at": 1020.94,
+"out": 1026.94,
+"said": 1017.64,
+"solo": true,
+"kw": "PINKY TEST",
+"kw2": "if it fits, fix it",
+"ph": "ph_pinkyfinger"
+},
+{
+"k": "elevenight",
+"at": 1051.76,
+"out": 1057.76,
+"said": 1048.06,
+"solo": true,
+"kw": "11 → 8",
+"kw2": "you know right away",
+"ph": "ph_elevenight"
+},
+{
+"k": "arrowholes",
+"at": 1086.238,
+"out": 1092.24,
+"said": 1086.24,
+"solo": true,
+"kw": "ARM-SIZED HOLES",
+"kw2": "her old barn",
+"ph": "ph_arrowholes"
+}
+]
