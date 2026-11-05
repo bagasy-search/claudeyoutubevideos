@@ -1,0 +1,282 @@
+[
+{
+"k": "feedstore",
+"at": 9.7,
+"out": 14.2,
+"said": 9.7,
+"sp": 1.333,
+"solo": true,
+"kw": "EVERYONE SAID",
+"kw2": "\"they're molting\"",
+"ph": "ph_feedstore"
+},
+{
+"k": "somebody",
+"at": 28.92,
+"out": 33.42,
+"said": 29.02,
+"sp": 1.444,
+"solo": true,
+"kw": "SOMEBODY",
+"kw2": "got there first",
+"ph": "ph_somebody"
+},
+{
+"k": "cliff",
+"at": 116.46,
+"out": 120.96,
+"said": 117.06,
+"sp": 1.444,
+"solo": true,
+"kw": "SLOW, NOT A CLIFF",
+"kw2": "that's the fall",
+"ph": "ph_cliff"
+},
+{
+"k": "nobodybald",
+"at": 163.06,
+"out": 169.06,
+"said": 163.06,
+"solo": true,
+"kw": "NOBODY BALD",
+"kw2": "no pin feathers",
+"ph": "ph_nobodybald"
+},
+{
+"k": "summer15",
+"at": 181.56,
+"out": 187.56,
+"said": 181.56,
+"solo": true,
+"kw": "15 → 10 HOURS",
+"kw2": "June to November",
+"ph": "ph_summer15"
+},
+{
+"k": "pullets",
+"at": 230.96,
+"out": 235.96,
+"said": 230.96,
+"sp": 1.2,
+"solo": true,
+"kw": "YOUNG PULLETS",
+"kw2": "lay right through winter",
+"ph": "ph_pullets"
+},
+{
+"k": "papertowel2",
+"at": 260.88,
+"out": 266.88,
+"said": 260.88,
+"solo": true,
+"kw": "RED SMEARS",
+"kw2": "that's mites",
+"ph": "ph_papertowel2"
+},
+{
+"k": "shelldish",
+"at": 276.42,
+"out": 282.42,
+"said": 276.42,
+"solo": true,
+"kw": "ON THE SIDE",
+"kw2": "they take what they need",
+"ph": "ph_shelldish"
+},
+{
+"k": "autodoor2",
+"at": 324.84,
+"out": 330.84,
+"said": 324.84,
+"solo": true,
+"kw": "A NEW DOOR",
+"kw2": "a lot of change",
+"ph": "ph_autodoor2"
+},
+{
+"k": "strawbowl",
+"at": 349.8,
+"out": 354.3,
+"said": 350.1,
+"sp": 1.444,
+"solo": true,
+"kw": "LITTLE BOWLS",
+"kw2": "somebody sat here",
+"ph": "ph_strawbowl"
+},
+{
+"k": "hiddenbush",
+"at": 365.68,
+"out": 370.18,
+"said": 368.58,
+"sp": 1.333,
+"solo": true,
+"kw": "UNDER A BUSH",
+"kw2": "spring and summer",
+"ph": "ph_hiddenbush"
+},
+{
+"k": "broodygrowl",
+"at": 402.24,
+"out": 406.74,
+"said": 403.74,
+"sp": 1.333,
+"solo": true,
+"kw": "PUFFED UP",
+"kw2": "growling",
+"ph": "ph_broodygrowl"
+},
+{
+"k": "ratroll",
+"at": 425.92,
+"out": 431.92,
+"said": 425.92,
+"solo": true,
+"kw": "A RAT ROLLS IT",
+"kw2": "down a hole",
+"ph": "ph_ratroll"
+},
+{
+"k": "yellowstraw",
+"at": 477.2,
+"out": 483.7,
+"said": 477.2,
+"solo": true,
+"kw": "DRIED YELLOW",
+"kw2": "like something wet dried there",
+"ph": "ph_yellowstraw"
+},
+{
+"k": "thinshell",
+"at": 515.68,
+"out": 521.68,
+"said": 515.68,
+"solo": true,
+"kw": "THIN SHELL",
+"kw2": "not enough calcium",
+"ph": "ph_thinshell"
+},
+{
+"k": "bucketsit",
+"at": 557.18,
+"out": 563.18,
+"said": 557.18,
+"solo": true,
+"kw": "DON'T MOVE",
+"kw2": "hens forget you're there",
+"ph": "ph_bucketsit"
+},
+{
+"k": "yolkchin",
+"at": 587.84,
+"out": 594.34,
+"said": 587.84,
+"solo": true,
+"kw": "YOLK ON HER CHIN",
+"kw2": "red-handed",
+"ph": "ph_yolkchin"
+},
+{
+"k": "ovenshells",
+"at": 638.18,
+"out": 644.18,
+"said": 638.18,
+"solo": true,
+"kw": "IN THE OVEN",
+"kw2": "then crunch them up",
+"ph": "ph_ovenshells"
+},
+{
+"k": "sackstrips",
+"at": 658.801,
+"out": 664.8,
+"said": 658.8,
+"solo": true,
+"kw": "FEED SACK STRIPS",
+"kw2": "a dim box is a calm box",
+"ph": "ph_sackstrips"
+},
+{
+"k": "golfball2",
+"at": 695.2,
+"out": 699.7,
+"said": 698.8,
+"sp": 1.333,
+"solo": true,
+"kw": "A SORE BEAK",
+"kw2": "and nothing else",
+"ph": "ph_golfball2"
+},
+{
+"k": "crateside",
+"at": 723.641,
+"out": 729.64,
+"said": 723.64,
+"solo": true,
+"kw": "NEXT DOOR",
+"kw2": "sees the flock, no nests",
+"ph": "ph_crateside"
+},
+{
+"k": "mustard",
+"at": 744.041,
+"out": 750.04,
+"said": 744.04,
+"solo": true,
+"kw": "MUSTARD?",
+"kw2": "never enough on its own",
+"ph": "ph_mustard"
+},
+{
+"k": "ratmess",
+"at": 826.941,
+"out": 832.94,
+"said": 826.94,
+"solo": true,
+"kw": "A RAT'S MESS",
+"kw2": "shells in a corner",
+"ph": "ph_ratmess"
+},
+{
+"k": "dairyman",
+"at": 861.541,
+"out": 867.54,
+"said": 861.54,
+"solo": true,
+"kw": "A DAIRY FARMER",
+"kw2": "thick shells in 2 weeks",
+"ph": "ph_dairyman"
+},
+{
+"k": "milkcrate",
+"at": 979.861,
+"out": 984.36,
+"said": 979.86,
+"sp": 1.333,
+"solo": true,
+"kw": "A MILK CRATE",
+"kw2": "one box per 4-5 hens",
+"ph": "ph_milkcrate"
+},
+{
+"k": "openshelves",
+"at": 1095.001,
+"out": 1101.0,
+"said": 1095.0,
+"solo": true,
+"kw": "FULL LIGHT",
+"kw2": "every egg on show",
+"ph": "ph_openshelves"
+},
+{
+"k": "morninglight",
+"at": 1163.36,
+"out": 1167.86,
+"said": 1165.76,
+"sp": 1.333,
+"solo": true,
+"kw": "MORNING, NOT EVENING",
+"kw2": "if you add a light",
+"ph": "ph_morninglight"
+}
+]

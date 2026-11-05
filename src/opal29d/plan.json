@@ -1,0 +1,1759 @@
+{
+"segs": [
+[
+4.124,
+7.32,
+"shot",
+"n_canasta_nueve_huevos"
+],
+[
+7.32,
+12.54,
+"shot",
+"n_tienda_forraje"
+],
+[
+12.54,
+14.493,
+"shot",
+"n_gallinero_noviembre"
+],
+[
+20.2,
+22.7,
+"shot",
+"n_gallinas_plumaje_lleno"
+],
+[
+22.7,
+29.02,
+"shot",
+"n_nido_vacio_d"
+],
+[
+29.02,
+33.5,
+"shot",
+"v01_nido_vacio"
+],
+[
+39.1,
+48.62,
+"shot",
+"n_cuaderno_diez"
+],
+[
+48.62,
+50.0,
+"shot",
+"n_nidos_fila"
+],
+[
+55.4,
+61.28,
+"shot",
+"n_granja_indiana_d"
+],
+[
+61.28,
+65.46,
+"shot",
+"n_cuaderno_cafe_d"
+],
+[
+65.46,
+67.7,
+"shot",
+"n_balde_dado_vuelta"
+],
+[
+71.928,
+80.08,
+"shot",
+"n_cuaderno_tapa_d"
+],
+[
+80.08,
+85.184,
+"shot",
+"n_mesa_cuaderno_lampara"
+],
+[
+89.224,
+92.86,
+"shot",
+"n_monedas_conchilla"
+],
+[
+92.86,
+100.9,
+"shot",
+"n_veterinaria_campo"
+],
+[
+106.3,
+112.2,
+"shot",
+"n_huevos_hilera"
+],
+[
+112.2,
+119.7,
+"shot",
+"n_un_huevo_canasta"
+],
+[
+119.7,
+121.066,
+"shot",
+"n_atardecer_noviembre"
+],
+[
+127.1,
+133.46,
+"shot",
+"n_cuaderno_lista"
+],
+[
+133.46,
+140.1,
+"shot",
+"n_plumas_piso_d"
+],
+[
+145.4,
+152.2,
+"shot",
+"n_plumas_nuevas"
+],
+[
+152.2,
+155.3,
+"shot",
+"n_linterna_percha_d"
+],
+[
+159.73,
+168.32,
+"shot",
+"n_gallina_lomo_liso"
+],
+[
+168.32,
+171.72,
+"shot",
+"n_calendario_setiembre"
+],
+[
+171.72,
+172.5,
+"shot",
+"n_ventana_luz_corta"
+],
+[
+177.4,
+184.3,
+"shot",
+"n_sol_alto_verano"
+],
+[
+184.3,
+188.7,
+"shot",
+"n_campo_gris_noviembre"
+],
+[
+194.1,
+199.48,
+"shot",
+"n_hojas_caidas_gallinero"
+],
+[
+199.48,
+203.04,
+"shot",
+"n_reloj_sol"
+],
+[
+203.04,
+205.2,
+"shot",
+"n_seis_huevos"
+],
+[
+209.733,
+213.52,
+"shot",
+"n_cuaderno_tachar"
+],
+[
+213.52,
+219.06,
+"shot",
+"n_gallina_joven_d"
+],
+[
+219.06,
+222.052,
+"shot",
+"n_tres_viejas_d"
+],
+[
+225.331,
+234.0,
+"shot",
+"n_pollitas_doradas"
+],
+[
+234.0,
+236.191,
+"shot",
+"n_huevo_nieve"
+],
+[
+241.737,
+250.9,
+"shot",
+"n_percha_madera_cerca"
+],
+[
+250.9,
+253.36,
+"shot",
+"n_ala_abierta"
+],
+[
+253.36,
+255.0,
+"shot",
+"n_lupa_plumas"
+],
+[
+259.6,
+264.72,
+"shot",
+"n_papel_blanco_percha"
+],
+[
+264.72,
+269.24,
+"shot",
+"n_bolsa_alimento"
+],
+[
+269.24,
+271.4,
+"shot",
+"n_etiqueta_alimento"
+],
+[
+276.4,
+280.66,
+"shot",
+"n_plato_conchilla_lleno"
+],
+[
+280.66,
+284.26,
+"shot",
+"n_mano_alimento"
+],
+[
+284.26,
+286.7,
+"shot",
+"n_comedero_colgante"
+],
+[
+290.502,
+295.58,
+"shot",
+"v04_plato_conchilla"
+],
+[
+295.58,
+299.28,
+"shot",
+"n_escribe_cuaderno_d"
+],
+[
+299.28,
+303.277,
+"shot",
+"n_gallinas_asustadas"
+],
+[
+307.017,
+314.5,
+"shot",
+"n_ojos_noche"
+],
+[
+314.5,
+318.02,
+"shot",
+"n_perro_nuevo"
+],
+[
+318.02,
+319.396,
+"shot",
+"n_tormenta_granja"
+],
+[
+324.702,
+334.1,
+"shot",
+"n_puerta_automatica_d"
+],
+[
+334.1,
+338.186,
+"shot",
+"n_gallinas_percha_dia"
+],
+[
+343.4,
+350.1,
+"shot",
+"n_nido_paja_cuenco"
+],
+[
+350.1,
+354.4,
+"shot",
+"n_paja_aplastada"
+],
+[
+358.4,
+365.46,
+"shot",
+"n_huevos_bajo_arbusto"
+],
+[
+365.46,
+370.3,
+"shot",
+"n_gallina_arbusto"
+],
+[
+375.4,
+380.9,
+"shot",
+"n_bajo_gallinero"
+],
+[
+380.9,
+384.12,
+"shot",
+"n_heno_granero"
+],
+[
+384.12,
+390.169,
+"shot",
+"n_nieto_espaldas_heno"
+],
+[
+395.5,
+404.72,
+"shot",
+"n_gallina_clueca"
+],
+[
+404.72,
+406.86,
+"shot",
+"n_gallina_clueca_cerca"
+],
+[
+411.937,
+419.06,
+"shot",
+"n_nidos_vacios_mediodia"
+],
+[
+419.06,
+420.6,
+"shot",
+"n_huevo_roto_paja"
+],
+[
+425.1,
+428.78,
+"shot",
+"n_rata_rincon"
+],
+[
+428.78,
+431.12,
+"shot",
+"n_serpiente_paja"
+],
+[
+431.12,
+437.6,
+"shot",
+"n_cascaras_desorden"
+],
+[
+437.6,
+438.796,
+"shot",
+"n_hojas_heladas"
+],
+[
+442.248,
+446.32,
+"shot",
+"n_polvo_piso"
+],
+[
+446.32,
+452.36,
+"shot",
+"n_rincon_limpio"
+],
+[
+452.36,
+454.1,
+"shot",
+"n_gallinas_interior"
+],
+[
+458.2,
+460.84,
+"shot",
+"n_un_huevo_mano"
+],
+[
+460.84,
+466.3,
+"shot",
+"n_nido_dos"
+],
+[
+466.3,
+468.06,
+"shot",
+"n_mano_grano"
+],
+[
+468.06,
+470.182,
+"shot",
+"v02_cascara_rota"
+],
+[
+475.7,
+485.44,
+"shot",
+"n_paja_dura"
+],
+[
+485.44,
+489.174,
+"shot",
+"n_huevo_picado"
+],
+[
+493.115,
+501.2,
+"shot",
+"n_gallinas_miran"
+],
+[
+501.2,
+502.9,
+"shot",
+"n_nido_casi_limpio"
+],
+[
+502.9,
+504.3,
+"shot",
+"n_trocito_cascara"
+],
+[
+509.403,
+515.68,
+"shot",
+"n_plato_vacio_d"
+],
+[
+515.68,
+517.82,
+"shot",
+"n_cascara_fina"
+],
+[
+517.82,
+521.9,
+"shot",
+"n_huevo_rajado"
+],
+[
+526.747,
+534.0,
+"shot",
+"n_cascaras_trozos"
+],
+[
+534.0,
+536.679,
+"shot",
+"n_plato_vacio_cerca"
+],
+[
+540.6,
+549.34,
+"shot",
+"n_gallina_jefa"
+],
+[
+549.34,
+550.896,
+"shot",
+"n_amanecer_gallinero_d"
+],
+[
+555.236,
+563.04,
+"shot",
+"n_taza_balde"
+],
+[
+563.04,
+566.66,
+"shot",
+"n_australorp_nido"
+],
+[
+566.66,
+568.096,
+"shot",
+"n_huevo_fresco_paja"
+],
+[
+574.1,
+580.46,
+"shot",
+"n_gallina_roja_vieja"
+],
+[
+580.46,
+583.884,
+"shot",
+"v03_gallina_yema"
+],
+[
+587.701,
+591.36,
+"shot",
+"n_yema_plumas"
+],
+[
+591.36,
+597.74,
+"shot",
+"n_yema_pico"
+],
+[
+597.74,
+599.9,
+"shot",
+"n_gallina_roja_sol"
+],
+[
+603.61,
+607.64,
+"shot",
+"n_caras_gallinas"
+],
+[
+607.64,
+615.97,
+"shot",
+"n_yema_cara"
+],
+[
+620.244,
+623.74,
+"shot",
+"n_conchilla_vertir"
+],
+[
+623.74,
+629.1,
+"shot",
+"n_dos_platos_corral"
+],
+[
+635.419,
+641.0,
+"shot",
+"n_cascaras_horno"
+],
+[
+641.0,
+645.1,
+"shot",
+"n_cascaras_molidas"
+],
+[
+645.1,
+647.677,
+"shot",
+"n_nido_oscuro"
+],
+[
+653.8,
+657.38,
+"shot",
+"v05_cortina"
+],
+[
+657.38,
+662.44,
+"shot",
+"n_bolsa_tiras"
+],
+[
+662.44,
+664.1,
+"shot",
+"n_engrapadora"
+],
+[
+664.1,
+665.8,
+"shot",
+"n_cortina_nido"
+],
+[
+669.101,
+671.28,
+"shot",
+"n_canasta_huevos_mano"
+],
+[
+671.28,
+675.88,
+"shot",
+"n_reloj_nueve"
+],
+[
+675.88,
+679.665,
+"shot",
+"n_gallina_nido_manana"
+],
+[
+685.8,
+693.18,
+"shot",
+"v06_huevo_ceramica"
+],
+[
+693.18,
+697.74,
+"shot",
+"n_pelotas_golf"
+],
+[
+697.74,
+699.8,
+"shot",
+"n_huevo_ceramica_pico"
+],
+[
+704.8,
+712.94,
+"shot",
+"n_rosie_retrato"
+],
+[
+712.94,
+714.86,
+"shot",
+"n_granero_gris"
+],
+[
+714.86,
+716.0,
+"shot",
+"n_gallina_roja_descansa"
+],
+[
+721.6,
+725.98,
+"shot",
+"n_jaula_cerca_corral"
+],
+[
+725.98,
+731.66,
+"shot",
+"n_calendario_semanas"
+],
+[
+731.66,
+733.585,
+"shot",
+"n_mostaza_frasco"
+],
+[
+739.545,
+744.04,
+"shot",
+"n_foto_abuela_gallinero"
+],
+[
+744.04,
+750.06,
+"shot",
+"n_huevo_mostaza"
+],
+[
+750.06,
+752.778,
+"shot",
+"n_conchilla_cerca"
+],
+[
+757.404,
+761.82,
+"shot",
+"n_cuatro_huevos"
+],
+[
+761.82,
+764.88,
+"shot",
+"n_cinco_huevos"
+],
+[
+764.88,
+768.9,
+"shot",
+"v08_mesa_huevos"
+],
+[
+774.6,
+778.78,
+"shot",
+"n_gallina_vuelve"
+],
+[
+778.78,
+783.46,
+"shot",
+"n_cara_limpia"
+],
+[
+783.46,
+788.5,
+"shot",
+"n_cuaderno_viejo_d"
+],
+[
+793.04,
+795.62,
+"shot",
+"n_gallinero_viejo_foto"
+],
+[
+795.62,
+801.7,
+"shot",
+"n_gallina_blanca_negra"
+],
+[
+801.7,
+804.0,
+"shot",
+"n_yema_paja"
+],
+[
+808.813,
+818.02,
+"shot",
+"n_balde_gallinero"
+],
+[
+818.02,
+819.3,
+"shot",
+"n_ojo_gallina"
+],
+[
+823.4,
+828.94,
+"shot",
+"n_balde_volcado"
+],
+[
+828.94,
+834.48,
+"shot",
+"n_huevo_rodado"
+],
+[
+834.48,
+836.3,
+"shot",
+"n_cascaras_rincon"
+],
+[
+841.325,
+850.22,
+"shot",
+"n_nido_rastro"
+],
+[
+850.22,
+852.392,
+"shot",
+"n_gallinas_mirada"
+],
+[
+858.0,
+861.54,
+"shot",
+"n_bolsa_conchilla_vieja"
+],
+[
+861.54,
+865.14,
+"shot",
+"n_tambo_viejo"
+],
+[
+865.14,
+868.08,
+"shot",
+"n_huevos_cascara_gruesa"
+],
+[
+868.08,
+869.5,
+"shot",
+"n_gallina_vieja_sol"
+],
+[
+875.038,
+881.06,
+"shot",
+"n_cuaderno_paginas_d"
+],
+[
+881.06,
+885.3,
+"shot",
+"n_recibo_mesa"
+],
+[
+885.3,
+887.6,
+"shot",
+"n_huevos_ceramica_caja"
+],
+[
+891.018,
+893.92,
+"shot",
+"n_lampara_galpon"
+],
+[
+893.92,
+901.18,
+"shot",
+"n_estante_tienda"
+],
+[
+901.18,
+902.595,
+"shot",
+"n_cuaderno_tachados"
+],
+[
+908.616,
+915.88,
+"shot",
+"n_hojas_otono_gallinero"
+],
+[
+915.88,
+921.574,
+"shot",
+"n_plumas_viento_d"
+],
+[
+925.818,
+928.96,
+"shot",
+"n_cuaderno_numeros"
+],
+[
+928.96,
+931.32,
+"shot",
+"n_numeros_bajan"
+],
+[
+931.32,
+937.5,
+"shot",
+"n_plato_conchilla_vacio2"
+],
+[
+941.204,
+944.42,
+"shot",
+"n_bebedero_agua"
+],
+[
+944.42,
+947.36,
+"shot",
+"n_cascara_fina_luz"
+],
+[
+947.36,
+952.184,
+"shot",
+"n_huevos_nido_tarde"
+],
+[
+956.0,
+960.2,
+"shot",
+"n_canasta_tarde"
+],
+[
+960.2,
+962.42,
+"shot",
+"n_huevo_congelado"
+],
+[
+962.42,
+968.3,
+"shot",
+"n_nidos_pocos"
+],
+[
+973.403,
+979.86,
+"shot",
+"n_cinco_nidos"
+],
+[
+979.86,
+982.98,
+"shot",
+"n_cajon_leche"
+],
+[
+982.98,
+984.567,
+"shot",
+"n_balde_rincon_d"
+],
+[
+990.8,
+995.04,
+"shot",
+"v09_reloj"
+],
+[
+995.04,
+1000.2,
+"shot",
+"n_gallina_dulce"
+],
+[
+1000.2,
+1002.8,
+"shot",
+"n_canasta_cuaderno"
+],
+[
+1006.5,
+1013.06,
+"shot",
+"n_linea_cuaderno"
+],
+[
+1013.06,
+1015.94,
+"shot",
+"n_dos_dias"
+],
+[
+1015.94,
+1018.966,
+"shot",
+"n_conchilla_mano"
+],
+[
+1023.724,
+1027.86,
+"shot",
+"n_cascara_fina_polvo"
+],
+[
+1027.86,
+1033.18,
+"shot",
+"n_reloj_dos"
+],
+[
+1033.18,
+1034.5,
+"shot",
+"n_auto_llega_tarde"
+],
+[
+1039.7,
+1042.78,
+"shot",
+"n_paja_fresca"
+],
+[
+1042.78,
+1045.0,
+"shot",
+"n_cortina_tiras_luz"
+],
+[
+1045.0,
+1049.72,
+"shot",
+"n_calendario_semana"
+],
+[
+1049.72,
+1053.8,
+"shot",
+"n_pico_yema_cerca"
+],
+[
+1058.8,
+1068.88,
+"shot",
+"n_foto_madre_granja"
+],
+[
+1068.88,
+1071.5,
+"shot",
+"n_conchilla_bolsa_cerrada"
+],
+[
+1076.601,
+1082.46,
+"shot",
+"n_gallinas_campo_d"
+],
+[
+1082.46,
+1085.72,
+"shot",
+"n_cascara_papel"
+],
+[
+1085.72,
+1088.179,
+"shot",
+"n_gallina_mirada_lado"
+],
+[
+1091.6,
+1096.26,
+"shot",
+"n_estante_nidos"
+],
+[
+1096.26,
+1102.2,
+"shot",
+"n_huevos_a_la_vista"
+],
+[
+1102.2,
+1104.398,
+"shot",
+"n_balde_vacio_d"
+],
+[
+1109.0,
+1116.62,
+"shot",
+"n_balde_cafe"
+],
+[
+1116.62,
+1119.674,
+"shot",
+"n_hacha_tronco"
+],
+[
+1124.302,
+1132.08,
+"shot",
+"n_foto_vieja_mesa"
+],
+[
+1132.08,
+1133.86,
+"shot",
+"n_nido_cortina_huevos"
+],
+[
+1133.86,
+1136.662,
+"shot",
+"n_cuadernos_pila"
+],
+[
+1140.144,
+1145.32,
+"shot",
+"n_cuaderno_lapiz_d"
+],
+[
+1145.32,
+1148.42,
+"shot",
+"n_iglesia_campo_d"
+],
+[
+1148.42,
+1152.5,
+"shot",
+"n_bombilla_gallinero"
+],
+[
+1157.1,
+1165.76,
+"shot",
+"n_gallinas_descansan"
+],
+[
+1165.76,
+1167.9,
+"shot",
+"n_amanecer_ventana"
+],
+[
+1174.034,
+1182.8,
+"shot",
+"n_huevo_picado_mesa"
+],
+[
+1182.8,
+1185.02,
+"shot",
+"n_balde_compost"
+],
+[
+1185.02,
+1186.398,
+"shot",
+"n_huevo_trapo"
+],
+[
+1192.5,
+1201.04,
+"shot",
+"n_gallina_tranquila"
+],
+[
+1201.04,
+1202.3,
+"shot",
+"n_gallina_sombra"
+],
+[
+1206.3,
+1210.48,
+"shot",
+"n_puerta_gallinero_tarde"
+],
+[
+1210.48,
+1213.54,
+"shot",
+"n_telefono_cocina_d"
+],
+[
+1213.54,
+1218.1,
+"shot",
+"n_gallina_cola_baja"
+],
+[
+1222.5,
+1227.34,
+"shot",
+"n_gallina_echada"
+],
+[
+1227.34,
+1234.157,
+"shot",
+"n_veterinaria_puerta_d"
+],
+[
+1240.3,
+1246.54,
+"shot",
+"n_plumas_piso_e"
+],
+[
+1246.54,
+1251.851,
+"shot",
+"n_atardecer_campo_d"
+],
+[
+1257.6,
+1261.94,
+"shot",
+"n_huevos_heno"
+],
+[
+1261.94,
+1266.72,
+"shot",
+"n_rata_sombra"
+],
+[
+1266.72,
+1269.978,
+"shot",
+"n_gallina_roja_nido"
+],
+[
+1273.736,
+1281.2,
+"shot",
+"n_plato_vacio_final"
+],
+[
+1281.2,
+1284.12,
+"shot",
+"n_rosie_sol_final"
+],
+[
+1284.12,
+1286.0,
+"shot",
+"v10_porche_huevos"
+],
+[
+1290.6,
+1296.46,
+"shot",
+"n_pollitos_criadora"
+],
+[
+1296.46,
+1301.491,
+"shot",
+"n_cascara_rota_final"
+],
+[
+1306.132,
+1314.2,
+"shot",
+"v07_canasta"
+]
+],
+"cam": [
+[
+1314.2,
+1314.9,
+"wide"
+]
+],
+"ov": [
+{
+"k": "big",
+"txt": "9 → 1",
+"sub": "EGGS A DAY · IN ONE WEEK",
+"col": "red",
+"at": 5.44,
+"out": 8.64
+},
+{
+"k": "stamp",
+"txt": "NOT THE MOLT",
+"at": 22.7,
+"out": 25.7
+},
+{
+"k": "chip",
+"txt": "10 THINGS I CHECK",
+"col": "ice",
+"at": 40.42,
+"out": 43.92
+},
+{
+"k": "chip",
+"txt": "9 · 7 · 4 · 2 · 1",
+"col": "red",
+"at": 110.66,
+"out": 114.16
+},
+{
+"k": "step",
+"n": 1,
+"name": "THE MOLT",
+"col": "amber",
+"at": 133.46,
+"out": 137.46
+},
+{
+"k": "step",
+"n": 2,
+"name": "DAYLIGHT",
+"col": "amber",
+"at": 171.72,
+"out": 175.72
+},
+{
+"k": "big",
+"txt": "14 H",
+"sub": "OF LIGHT TO LAY WELL",
+"col": "amber",
+"at": 177.94,
+"out": 181.14
+},
+{
+"k": "step",
+"n": 3,
+"name": "AGE",
+"col": "amber",
+"at": 211.54,
+"out": 215.54
+},
+{
+"k": "step",
+"n": 4,
+"name": "MITES",
+"col": "amber",
+"at": 240.88,
+"out": 244.88
+},
+{
+"k": "step",
+"n": 5,
+"name": "FEED",
+"col": "amber",
+"at": 264.72,
+"out": 268.72
+},
+{
+"k": "chip",
+"txt": "LAYER FEED · 16%",
+"col": "ice",
+"at": 269.24,
+"out": 272.74
+},
+{
+"k": "stamp",
+"txt": "WROTE IT DOWN",
+"at": 295.58,
+"out": 298.58
+},
+{
+"k": "step",
+"n": 6,
+"name": "STRESS",
+"col": "amber",
+"at": 299.28,
+"out": 303.28
+},
+{
+"k": "step",
+"n": 7,
+"name": "A HIDDEN NEST",
+"col": "amber",
+"at": 358.7,
+"out": 362.7
+},
+{
+"k": "step",
+"n": 8,
+"name": "A BROODY HEN",
+"col": "amber",
+"at": 395.74,
+"out": 399.74
+},
+{
+"k": "step",
+"n": 9,
+"name": "A THIEF FROM OUTSIDE",
+"col": "amber",
+"at": 419.06,
+"out": 423.06
+},
+{
+"k": "stamp",
+"txt": "AN INSIDE JOB",
+"at": 452.36,
+"out": 455.36
+},
+{
+"k": "step",
+"n": 10,
+"name": "A THIEF FROM INSIDE",
+"col": "red",
+"at": 460.84,
+"out": 464.84
+},
+{
+"k": "big",
+"txt": "EGG EATING",
+"sub": "ONE HEN STARTS IT",
+"col": "red",
+"at": 485.34,
+"out": 488.54
+},
+{
+"k": "chip",
+"txt": "FIND THE RINGLEADER",
+"col": "red",
+"at": 543.54,
+"out": 547.04
+},
+{
+"k": "chip",
+"txt": "7:40 AM · NEST BOX 2",
+"col": "ice",
+"at": 561.3,
+"out": 564.8
+},
+{
+"k": "stamp",
+"txt": "TAP · TAP · CRACK",
+"at": 580.46,
+"out": 583.46
+},
+{
+"k": "big",
+"txt": "ROSIE",
+"sub": "10 YEARS OLD · THE BOSS",
+"col": "red",
+"at": 591.36,
+"out": 594.56
+},
+{
+"k": "chip",
+"txt": "1 · OYSTER SHELL · FULL",
+"col": "green",
+"at": 620.3,
+"out": 623.8
+},
+{
+"k": "chip",
+"txt": "DRIED EGGSHELLS · FREE",
+"col": "green",
+"at": 644.08,
+"out": 644.8
+},
+{
+"k": "chip",
+"txt": "2 · DARK NEST BOXES",
+"col": "green",
+"at": 645.1,
+"out": 648.6
+},
+{
+"k": "chip",
+"txt": "3 · COLLECT AT 9 & 2",
+"col": "green",
+"at": 669.66,
+"out": 673.16
+},
+{
+"k": "chip",
+"txt": "4 · DECOY EGGS",
+"col": "green",
+"at": 685.98,
+"out": 689.48
+},
+{
+"k": "chip",
+"txt": "5 · ROSIE GOES OUT",
+"col": "green",
+"at": 705.06,
+"out": 708.56
+},
+{
+"k": "chip",
+"txt": "DAY 1 · 4 EGGS",
+"col": "green",
+"at": 760.52,
+"out": 764.02
+},
+{
+"k": "big",
+"txt": "7",
+"sub": "A DAY · BY THE END OF THE WEEK",
+"col": "green",
+"at": 764.88,
+"out": 768.08
+},
+{
+"k": "chip",
+"txt": "BISCUIT · MY FIRST",
+"col": "amber",
+"at": 795.62,
+"out": 799.12
+},
+{
+"k": "stamp",
+"txt": "NOT A RAT",
+"at": 850.22,
+"out": 853.22
+},
+{
+"k": "chip",
+"txt": "CERAMIC EGGS · $10",
+"col": "green",
+"at": 885.3,
+"out": 888.8
+},
+{
+"k": "step",
+"n": 1,
+"name": "BLAMING THE SEASON",
+"col": "red",
+"at": 912.38,
+"out": 916.38
+},
+{
+"k": "step",
+"n": 2,
+"name": "NO OYSTER SHELL",
+"col": "red",
+"at": 931.32,
+"out": 935.32
+},
+{
+"k": "step",
+"n": 3,
+"name": "EGGS LEFT ALL DAY",
+"col": "red",
+"at": 947.36,
+"out": 951.36
+},
+{
+"k": "step",
+"n": 4,
+"name": "TOO FEW BOXES",
+"col": "red",
+"at": 962.42,
+"out": 966.42
+},
+{
+"k": "step",
+"n": 5,
+"name": "GUESSING WHO",
+"col": "red",
+"at": 982.98,
+"out": 986.98
+},
+{
+"k": "chip",
+"txt": "1 · COUNT EVERY DAY",
+"col": "green",
+"at": 1005.56,
+"out": 1009.06
+},
+{
+"k": "chip",
+"txt": "2 · OYSTER SHELL",
+"col": "green",
+"at": 1015.94,
+"out": 1019.44
+},
+{
+"k": "chip",
+"txt": "3 · AT 9 AND AT 2",
+"col": "green",
+"at": 1027.86,
+"out": 1031.36
+},
+{
+"k": "chip",
+"txt": "4 · CLEAN · DEEP · DIM",
+"col": "green",
+"at": 1034.84,
+"out": 1038.34
+},
+{
+"k": "chip",
+"txt": "5 · LOOK AT THEIR FACES",
+"col": "green",
+"at": 1045.0,
+"out": 1048.5
+},
+{
+"k": "chip",
+"txt": "WHAT MY MOTHER NEVER DID",
+"col": "amber",
+"at": 1059.98,
+"out": 1063.48
+},
+{
+"k": "deal",
+"at": 1142.44,
+"out": 1146.94
+},
+{
+"k": "chip",
+"txt": "«A LIGHT IN WINTER?»",
+"col": "ice",
+"at": 1148.42,
+"out": 1151.92
+},
+{
+"k": "chip",
+"txt": "«EAT A PECKED EGG?»",
+"col": "ice",
+"at": 1174.8,
+"out": 1178.3
+},
+{
+"k": "chip",
+"txt": "«WHEN TO CALL THE VET?»",
+"col": "ice",
+"at": 1210.48,
+"out": 1213.98
+},
+{
+"k": "recap",
+"rows": [
+1241.68,
+1246.38,
+1258.32,
+1260.02,
+1261.94,
+1266.72
+],
+"at": 1241.68,
+"out": 1272.72
+},
+{
+"k": "ask",
+"at": 1300.22,
+"out": 1310.22
+},
+{
+"k": "next",
+"at": 1304.06,
+"out": 1309.06
+}
+],
+"cta1": {
+"guide": 73.3,
+"page": 82.34,
+"desc": 98.3,
+"manual": "23 PROBLEMS · ONE PAGE EACH",
+"img": "page",
+"end": 104.3
+},
+"cta2": {
+"guide": 1133.86,
+"page": 1138.34,
+"desc": 1140.22,
+"manual": "23 PROBLEMS · ONE PAGE EACH",
+"img": "page",
+"end": 1146.22
+},
+"cta3": {
+"desc": 1284.12,
+"end": 1289.12
+},
+"end": 1314.9,
+"st": {
+"fire": [
+[
+0,
+0.1
+]
+],
+"hay": [
+[
+0,
+0.1
+]
+],
+"pot": [
+[
+0,
+0.1
+]
+],
+"hayOpen": [
+[
+0,
+0.1
+]
+],
+"books": [
+[
+0,
+0.1
+]
+],
+"hero": [
+[
+0,
+0.1
+]
+],
+"dawn": [
+[
+548.02,
+563.04
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "10 THINGS, IN ORDER",
+"recap": [
+"1 · The molt",
+"2 · Daylight",
+"3 · Age · 4 · Mites",
+"5 · Feed · 6 · Stress",
+"7 · Hidden nest · 8 · Broody",
+"9 · Thief outside · 10 · Inside"
+],
+"ask": [
+"Ever had an egg eater?",
+"How did you break her of it?",
+"Tell me · I read every one"
+],
+"next": [
+"NEXT WEEK",
+"Something got into the brooder"
+],
+"lower": [
+51.16,
+57.16
+]
+}
+}
