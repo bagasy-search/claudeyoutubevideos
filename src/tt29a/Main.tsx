@@ -1,6 +1,6 @@
 // tt29a — Tell Tape: cinta real + narración en off con un componente por idea (ttkit). Mudo: la mezcla entra en encfin.
 import React from "react";
-import { AbsoluteFill, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Freeze, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 import edl from "./edl.json";
 import { F, K, LIB, RoomBg, Hud, sp, lin } from "./ttkit";
 
@@ -28,14 +28,14 @@ const Subs: React.FC<{ words: Wd[]; t0: number }> = ({ words, t0 }) => {
   );
 };
 
-const Tape: React.FC<{ b: any }> = ({ b }) => {
-  const f = useCurrentFrame(); const dur = Math.round((b.e - b.s) * 30);
+const Tape: React.FC<{ b: any; hold: number }> = ({ b, hold }) => {
+  const f = useCurrentFrame(); const dur = hold;
   const k = sp(f, 0, { damping: 20, mass: 0.9, stiffness: 140 }); const out = lin(f, dur - 8, dur);
   const flash = lin(f, 0, 3) - lin(f, 3, 10);
   return (
     <AbsoluteFill style={{ backgroundColor: "#000", opacity: 1 - out }}>
       <AbsoluteFill style={{ transform: `scale(${1.06 - k * 0.06 + Math.sin(f / 200) * 0.006})`, filter: `brightness(${1 + flash * 0.6}) contrast(1.04)` }}>
-        <OffthreadVideo src={staticFile(b.clip)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        {(() => { const n = Math.round((b.e - b.s) * 30) - 1; const v = <OffthreadVideo src={staticFile(b.clip)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />; return f < n ? v : <Freeze frame={n - 1}>{v}</Freeze>; })()}
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0) 60%, rgba(0,0,0,.35) 100%)" }} />
       <Hud f={f + Math.round(b.src[0] * 30)} label="ORANGE CO. SHERIFF" />
@@ -51,7 +51,8 @@ export const Main: React.FC = () => {
     <AbsoluteFill style={{ backgroundColor: K.bg }}>
       {tl.map((b, i) => {
         const from = Math.round(b.s * 30); const nxt = tl[i + 1]; const to = Math.round((nxt ? nxt.s : (edl as any).end) * 30);
-        if (b.kind === "tape") return <Sequence key={i} from={from} durationInFrames={Math.round((b.e - b.s) * 30) + 6}><Tape b={b} /></Sequence>;
+        // la cinta dura hasta que el bloque siguiente (que arranca 6 cuadros antes y va encima) ya la tapa: sin baches negros
+        if (b.kind === "tape") return <Sequence key={i} from={from} durationInFrames={to - from + 8}><Tape b={b} hold={to - from + 8} /></Sequence>;
         const bg = BG[nb++ % BG.length];
         return (
           <Sequence key={i} from={from - 6} durationInFrames={to - from + 12}>
