@@ -1,0 +1,59 @@
+# RECORTE de personas cuadro por cuadro (rembg u2net_human_seg en CPU) -> webm VP9 con alfa, para poner texto DETRÁS
+# de la gente en una toma. Rama recorte-<slug> con params.json {slug, clips:["b3","d2"], modelo?}; los mp4 están en
+# el release recorte-<slug>; devuelve <clip>_fg.webm al mismo release.
+name: recorte
+on:
+  push:
+    branches: ['recorte-*']
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: echo "matrix=$(python3 -c "import json;print(json.dumps(json.load(open('params.json'))['clips']))")" >> "$GITHUB_OUTPUT"
+  clip:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        c: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    env: { GH_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - name: deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q "rembg[cpu]" pillow numpy
+      - name: recortar
+        run: |
+          S=$(python3 -c "import json;print(json.load(open('params.json'))['slug'])")
+          M=$(python3 -c "import json;print(json.load(open('params.json')).get('modelo','u2net_human_seg'))")
+          gh release download "recorte-$S" -p "${{ matrix.c }}.mp4" -R "$GITHUB_REPOSITORY"
+          mkdir fr al
+          ffmpeg -v error -i "${{ matrix.c }}.mp4" -vf scale=960:-2 fr/%04d.png
+          python3 - "$M" <<'PY'
+          import sys, os, glob
+          from rembg import new_session, remove
+          from PIL import Image
+          from concurrent.futures import ThreadPoolExecutor
+          s = new_session(sys.argv[1])
+          fs = sorted(glob.glob("fr/*.png"))
+          def uno(f):
+              m = remove(Image.open(f), session=s, only_mask=True, post_process_mask=True)
+              m.save("al/" + os.path.basename(f))
+          with ThreadPoolExecutor(4) as ex: list(ex.map(uno, fs))
+          print(len(fs), "mascaras")
+          PY
+          # mascara suavizada y estable en el tiempo (tmix) -> alfa del clip original a 1920
+          ffmpeg -v error -y -i "${{ matrix.c }}.mp4" -framerate 24 -i al/%04d.png -filter_complex \
+            "[1]scale=1920:1080,format=gray,tmix=frames=3,gblur=sigma=1.5[a];[0:v]format=rgba[v];[v][a]alphamerge,format=yuva420p" \
+            -an -c:v libvpx-vp9 -pix_fmt yuva420p -b:v 6M -auto-alt-ref 0 -row-mt 1 -deadline good -cpu-used 4 "${{ matrix.c }}_fg.webm"
+          ls -la *_fg.webm
+          for n in 1 2 3; do gh release upload "recorte-$S" "${{ matrix.c }}_fg.webm" --clobber -R "$GITHUB_REPOSITORY" && break; sleep $((n*8)); done
