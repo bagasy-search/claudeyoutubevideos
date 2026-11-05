@@ -1,0 +1,41 @@
+# Prueba de Tesseract (Mirage) en el farm: instala la CLI de Linux, render por software (Mesa lavapipe).
+# Rama huérfana tesseract-prueba; corre en cada push. Sin secretos (binario externo).
+name: tesseract
+on:
+  push:
+    branches: [tesseract-prueba]
+permissions:
+  contents: read
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - name: deps (vulkan por software + ffmpeg)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq mesa-vulkan-drivers libvulkan1 vulkan-tools ffmpeg unzip libasound2t64 >/dev/null
+          vulkaninfo --summary 2>&1 | head -30 || true
+      - name: instalar CLI
+        run: |
+          V=$(cat tesseract/version.txt)
+          mkdir -p /tmp/dl && cd /tmp/dl
+          curl -sfL -O https://github.com/mirage-hq/tesseract/releases/download/v$V/tesseract-$V-linux-x86_64.zip -O https://github.com/mirage-hq/tesseract/releases/download/v$V/tesseract-$V-linux-x86_64.zip.sha256
+          sha256sum -c tesseract-$V-linux-x86_64.zip.sha256
+          unzip -q tesseract-$V-linux-x86_64.zip -d x
+          bash x/*/install.sh
+          ~/.local/share/Tesseract/bin/tsrct --version
+          echo "TS=$HOME/.local/share/Tesseract/bin/tsrct" >> $GITHUB_ENV
+      - name: trabajo
+        env:
+          TESSERACT_TELEMETRY: "0"
+        run: |
+          mkdir -p out
+          bash tesseract/job.sh 2>&1 | tee out/log.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: out
+          path: out/
+          retention-days: 3
