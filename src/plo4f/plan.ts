@@ -74,7 +74,7 @@ export const estado = (t: number): Required<St> => {
 export const desde = (t: number) => { let i = -1; while (i < WB.length - 1 && WB[i + 1].a <= t) i++; return i < 0 ? t : t - WB[i].a; };
 // cámara: llega a la vista del plano en 0,9 s y después deriva despacito (órbita propia por plano)
 export const KEYS2: { t: number; p: V3; l: V3; fov?: number; arc?: number }[] = WB.flatMap((b, i) => {
-  const v = VIEW[b.arg] ?? VIEW.bano, end = (WB[i + 1]?.a ?? b.a + 8) - 0.05, sgn = i % 2 ? 1 : -1;
-  const d = (x: V3, k: number): V3 => [x[0] + sgn * 0.12 * k, x[1] + 0.03 * k, x[2] + 0.06 * k];
+  const v = VIEW[b.arg] ?? VIEW.bano, nxt = BEATS.find((x) => x.a > b.a + 0.01)?.a ?? b.a + 8, end = Math.min(WB[i + 1]?.a ?? b.a + 8, nxt, b.a + 10) - 0.05, sgn = i % 2 ? 1 : -1, amp = Math.min(2.2, Math.max(1, (end - b.a - 1) / 3));
+  const d = (x: V3, k: number): V3 => [x[0] + sgn * 0.12 * k * amp, x[1] + 0.03 * k * amp, x[2] + 0.06 * k * amp]; // 05-nov b: sin tope de 5 s y amplitud según el largo (plo4f: 2 congelados en planos «bajo» largos)
   return [{ t: b.a + 0.9, p: v.p, l: v.l, fov: v.fov }, { t: Math.max(b.a + 1.0, end), p: d(v.p, 1), l: v.l, fov: v.fov - 2 }];
 });
