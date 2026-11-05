@@ -11,6 +11,10 @@ import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPa
 import { GTAOPass } from "three/examples/jsm/postprocessing/GTAOPass.js";
 import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js";
 import { SMAAPass } from "three/examples/jsm/postprocessing/SMAAPass.js";
+import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass.js";
+// (5-nov) GL por software del farm: un NaN/Inf de un píxel lo agranda el bloom a un RECTÁNGULO NEGRO → se limpia antes del bloom
+const NanSafe = { uniforms: { tDiffuse: { value: null } }, vertexShader: "varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }",
+  fragmentShader: "uniform sampler2D tDiffuse; varying vec2 vUv; void main(){ vec4 c = texture2D(tDiffuse, vUv); if (any(isnan(c)) || any(isinf(c))) c = vec4(0.0, 0.0, 0.0, 1.0); gl_FragColor = min(c, vec4(64.0)); }" };
 import { RoomEnvironment } from "three/examples/jsm/environments/RoomEnvironment.js";
 import { RoundedBoxGeometry } from "three/examples/jsm/geometries/RoundedBoxGeometry.js";
 
@@ -25,6 +29,7 @@ export const Post: React.FC<{ bloom?: number; threshold?: number; ao?: boolean; 
     const c = new EffectComposer(gl);
     c.addPass(new RenderPass(scene, camera));
     if (ao) { const g = new GTAOPass(scene, camera, size.width, size.height); g.blendIntensity = 0.85; c.addPass(g); }
+    c.addPass(new ShaderPass(NanSafe));
     const b = new UnrealBloomPass(new THREE.Vector2(size.width, size.height), bloom, 0.55, threshold); c.addPass(b);
     c.addPass(new OutputPass());
     c.addPass(new SMAAPass(size.width, size.height));
