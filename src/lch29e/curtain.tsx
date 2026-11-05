@@ -24,9 +24,10 @@ export const Curtain: React.FC<{ w?: number; h?: number; folds?: number; amp?: n
   map?: THREE.Texture; col?: string; op?: number; lace?: boolean; rough?: number; gather?: number }> =
   ({ w = 0.6, h = 1.4, folds = 5, amp = 0.025, sway = 0, tt = 0, shrink = 0, pucker = 0, crease = 0, wrinkle = 0, map, col = "#ffffff", op = 1, lace = false, rough = 0.95, gather = 0 }) => {
   const geo = React.useMemo(() => new THREE.PlaneGeometry(1, 1, 36, 30), []);
-  const p = geo.attributes.position as THREE.BufferAttribute, H = h * (1 - shrink), W = w * (1 - gather * 0.6);
+  const p = geo.attributes.position as THREE.BufferAttribute, uv = geo.attributes.uv as THREE.BufferAttribute, H = h * (1 - shrink), W = w * (1 - gather * 0.6);
   for (let i = 0; i < p.count; i++) {
-    const u = p.getX(i) + 0.5, v = 0.5 - p.getY(i); // u 0..1 ancho, v 0..1 de arriba hacia abajo
+    // siempre desde la UV original: leer la posición ya deformada acumulaba el error cuadro a cuadro y la cortina se achicaba hasta desaparecer (destellos en el farm)
+    const u = uv.getX(i), v = 1 - uv.getY(i); // u 0..1 ancho, v 0..1 de arriba hacia abajo
     let z = amp * (1 + gather * 2) * Math.sin(u * folds * PI * 2) + sway * v * v * Math.sin(tt * 1.6 + u * 3);
     z += pucker * v ** 4 * 0.05 * Math.sin(u * 37) * Math.cos(v * 23);
     z += wrinkle * 0.012 * Math.sin(u * 41 + v * 17) * Math.sin(v * 29 - u * 7);
