@@ -13,13 +13,16 @@ on:
       slug:        { description: "slug del video", required: true }
       comp_id:     { description: "id de composicion Remotion", required: true }
       total_frames: { description: "frames totales", required: true }
-      chunks:      { description: "en cuantos pedazos partir", required: false, default: "60" }
+      chunks:      { description: "en cuantos pedazos partir (200: el reloj lo marca el chunk mas lento y el overhead por chunk es 0,5 min)", required: false, default: "200" }
       only_chunks: { description: "solo estos chunks (ej 3 | 3,4 | 3-5). vacio = todos", required: false, default: "" }
       entry:       { description: "entry propio del video (ej src/index_<slug>.tsx). vacio = Root.tsx compartido", required: false, default: "" }
+      stitch_raw:  { description: "1 = publicar el concat SIN re-encodear (ahorra ~65 min de un solo nucleo). El mp4 sale con las costuras y sin CFR: SOLO para flujos que lo re-encodean despues", required: false, default: "" }
+      ranges:      { description: "rangos explicitos a-b,a-b,... (chunkplan.mjs: reparto por COSTO). vacio = uniforme por cuadros", required: false, default: "" }
 
 jobs:
   prepare:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     outputs:
       matrix: ${{ steps.m.outputs.matrix }}
     steps:
@@ -41,13 +44,17 @@ jobs:
   render:
     needs: prepare
     runs-on: ubuntu-latest
+    # Un chunk que se cuelga (blur/backdrop-filter pesado bajo swangle, o decode trabado) NO debe
+    # comerse el default de 360 min de un runner en silencio. Con esto FALLA en 25' y stitch
+    # (if:!cancelled()) persiste los buenos → re-render parcial limpio con only_chunks. (21-sep-2026)
+    timeout-minutes: 25
     strategy:
       fail-fast: false
       matrix:
         idx: ${{ fromJSON(needs.prepare.outputs.matrix) }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with: { node-version: "20", cache: "npm" }
       - name: cache node_modules + chromium
         uses: actions/cache@v4
@@ -59,7 +66,7 @@ jobs:
           restore-keys: rmn-${{ runner.os }}-
       - name: install deps (si no vinieron del cache)
         run: |
-          if [ -d node_modules ] && node -e "require('@rspack/binding')" 2>/dev/null; then
+          if [ -d node_modules ] && node -e "require('@rspack/binding'); require.resolve('three')" 2>/dev/null; then
             echo "deps cacheadas ✓ — salteo npm ci"
           else
             n=0
@@ -88,9 +95,18 @@ jobs:
           fi
           mkdir -p public
           tar -xf "assets-${{ github.event.inputs.slug }}.tar" -C public
+          # TAR DELTA: parche para assets que se agregan DESPUES de haber tarreado (p.ej. el
+          # AUDITOR degrada un clip a su foto y esa foto nunca viajo en el tar original ->
+          # 404 y el chunk muere). Se extrae DESPUES del principal, asi tambien puede pisar.
+          # Evita re-subir 1.2 GB por unos pocos MB. El patron de descarga ya lo trae.
+          for d in "assets-${{ github.event.inputs.slug }}.tar.delta"*; do
+            [ -e "$d" ] || continue
+            echo "aplicando delta: $d"
+            tar -xf "$d" -C public
+          done
       - name: frame range
         id: r
-        run: node scripts/chunkmath.mjs ${{ github.event.inputs.total_frames }} ${{ github.event.inputs.chunks }} ${{ matrix.idx }} >> "$GITHUB_OUTPUT"
+        run: node scripts/chunkmath.mjs ${{ github.event.inputs.total_frames }} ${{ github.event.inputs.chunks }} ${{ matrix.idx }} "${{ github.event.inputs.ranges }}" >> "$GITHUB_OUTPUT"
       - name: render chunk
         run: |
           mkdir -p out
@@ -103,12 +119,12 @@ jobs:
             TMPDIR=/dev/shm npx remotion render "$ENTRY" "${{ github.event.inputs.comp_id }}" \
               "out/chunk_${{ matrix.idx }}.mp4" \
               --frames=${{ steps.r.outputs.start }}-${{ steps.r.outputs.end }} \
-              --concurrency=4 --timeout=120000 --crf=23
+              --concurrency=4 --timeout=180000 --crf=23 --gl=swangle
           else
             TMPDIR=/dev/shm npx remotion render "${{ github.event.inputs.comp_id }}" \
               "out/chunk_${{ matrix.idx }}.mp4" \
               --frames=${{ steps.r.outputs.start }}-${{ steps.r.outputs.end }} \
-              --concurrency=4 --timeout=120000 --crf=23
+              --concurrency=4 --timeout=180000 --crf=23 --gl=swangle
           fi
       - name: reportar progreso del chunk (Bagasy)
         continue-on-error: true
@@ -129,6 +145,9 @@ jobs:
     # intenta concatenar (el concat fallará si falta alguno, pero eso ya no se lleva puesto el resto).
     if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
+    # Sin tope, un stitch trabado se come 360 min y el que espera no se entera nunca. 150 cubre el
+    # re-encode completo (STITCH_RAW=0, medido hasta 101 min); el concat crudo tarda segundos. (9-oct)
+    timeout-minutes: 150
     # contents:write es OBLIGATORIO: los permisos por defecto del repo son READ, así que sin esto el
     # release chunks-<slug> NO se puede crear. Era la causa de que la persistencia de chunks nunca
     # funcionara (0 releases chunks-* en 156) y de que TODO re-render parcial saliera truncado.
@@ -150,18 +169,56 @@ jobs:
       # así que el re-render parcial rehacía los 20 desde cero, siempre. Se veía en los números:
       # cero releases chunks-* en el repo. Guardar es barato y es lo único que sobrevive a un
       # concat fallido, así que va primero.
+      # ⛔ 30-oct (ruth29d, run 41020853036): con 8 montajes a la vez el token del repo pega 403 «API rate
+      # limit exceeded»; el delete fallaba callado, el create/upload también, el paso seguía verde por
+      # continue-on-error y encfin armaba el MP4 con los chunks del render ANTERIOR (check_entrega 7/7 igual).
+      # Ahora: reintenta con espera y verifica que el release tenga TODOS los chunks; si no, el último paso
+      # del job («fallar si los chunks no se persistieron») pone el run en rojo.
       - name: persistir chunks (para re-render parcial)
+        id: persist
         if: ${{ !cancelled() }}
         continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           cd chunks
           ls chunk_*.mp4 >/dev/null 2>&1 || { echo "(no hay chunks para persistir)"; exit 0; }
-          echo "persistiendo $(ls chunk_*.mp4 | wc -l) chunks"
+          N=$(ls chunk_*.mp4 | wc -l); echo "persistiendo $N chunks"
           R="${{ github.repository }}"   # sin -R falla: el job stitch no hace checkout
-          gh release delete "chunks-${{ github.event.inputs.slug }}" -R "$R" --yes --cleanup-tag 2>/dev/null || true
-          gh release create "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --title "chunks-${{ github.event.inputs.slug }}" --notes "chunks para re-render parcial" \
-            || gh release upload "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --clobber
+          T="chunks-${{ github.event.inputs.slug }}"
+          for i in 1 2 3 4 5; do
+            gh release delete "$T" -R "$R" --yes --cleanup-tag 2>/dev/null || true
+            gh release create "$T" chunk_*.mp4 -R "$R" --title "$T" --notes "chunks para re-render parcial" \
+              || gh release upload "$T" chunk_*.mp4 -R "$R" --clobber || true
+            n=$(gh release view "$T" -R "$R" --json assets --jq '[.assets[]|select(.name|test("^chunk_.*mp4$"))]|length' 2>/dev/null || echo 0)
+            [ "$n" -ge "$N" ] && { echo "OK: $n/$N chunks en $T"; exit 0; }
+            echo "intento $i: $n/$N chunks en $T → espero $((i*60)) s"; sleep $((i*60))
+          done
+          echo "::error::no se pudieron persistir los chunks en $T: encfin usaría los VIEJOS"; exit 1
+      # ⛔⛔ EL WAV MÁSTER TIENE QUE ESTAR ACÁ O EL AUDIO SALE DE LOS CHUNKS (medido 29-ago-2026).
+      # Este job NO hace checkout ni baja el tar de assets, así que el `if [ -s "public/$SLUG.wav" ]`
+      # de más abajo daba SIEMPRE falso y el audio final se tomaba de los 60 pedazos concatenados.
+      # Cada frontera de AAC agrega ~73 ms: con 60 chunks la voz termina corrida +4,4 s respecto de
+      # la imagen. No lo ve ningún chequeo de cuadros (cada cuadro está perfecto) y el reproductor
+      # lo compensa tirando y repitiendo cuadros -> se ve como "todo el video lageado".
+      # El wav lo sube el dispatcher SUELTO al release de assets, además de adentro del tar.
+      - name: traer el WAV máster (si falta, el audio se corre)
+        continue-on-error: true
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          mkdir -p public
+          gh release download "assets-${{ github.event.inputs.slug }}" -R "${{ github.repository }}"             --dir public --pattern "*.wav" --clobber || true
+          # el dispatcher a veces lo llama <slug>_fish.wav (cola generada con Fish): el `if` de más
+          # abajo busca <slug>.wav exacto, así que si vino con otro nombre lo dejamos donde lo espera.
+          S="${{ github.event.inputs.slug }}"
+          if [ ! -s "public/$S.wav" ]; then
+            OTRO=$(ls public/*.wav 2>/dev/null | head -1)
+            [ -n "$OTRO" ] && cp "$OTRO" "public/$S.wav" && echo "usando $OTRO como wav máster"
+          fi
+          if [ -s "public/${{ github.event.inputs.slug }}.wav" ]; then
+            echo "wav máster OK -> el audio final sale de él"
+          else
+            echo "::warning::sin wav máster: el audio saldrá de los chunks y quedará corrido hasta ~4 s"
+          fi
       - name: install ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: concat (todos los N en orden)
@@ -186,7 +243,72 @@ jobs:
             exit 1
           fi
           cat list.txt
-          ffmpeg -y -f concat -safe 0 -i list.txt -c copy "${{ github.event.inputs.slug }}.mp4"
+          SLUG="${{ github.event.inputs.slug }}"
+          ffmpeg -y -f concat -safe 0 -i list.txt -c copy "_cat_$SLUG.mp4"
+          # ── STITCH_RAW ────────────────────────────────────────────────────────────────
+          # El re-encode de abajo tarda ~65 min en el runner de 2 nucleos (MEDIDO: es el 54% del
+          # tiempo total del video). Cuando el consumidor RE-ENCODEA igual antes de entregar, ese
+          # trabajo se tira: se encodea el mismo video dos veces y la segunda pisa a la primera.
+          # Con stitch_raw se publica el concat crudo y el CFR/color/audio los pone el paso final.
+          # ⛔ NO lo uses si el mp4 del farm se consume DIRECTO (reproductor de Bagasy, YouTube):
+          # sin re-encodear quedan las costuras de chunk y el tiron.
+          if [ -n "${{ github.event.inputs.stitch_raw }}" ]; then
+            echo "::warning::stitch_raw: publico el concat SIN re-encodear. HAY QUE re-encodearlo antes de entregar."
+            mv -f "_cat_$SLUG.mp4" "$SLUG.mp4"
+          else
+          # ⛔⛔ EL `concat -c copy` DEJA UN SALTO DE TIEMPO EN CADA COSTURA DE CHUNK.
+          # Medido en cmetemu (29-ago-2026): 59 costuras, y en cada una un cuadro dura 88 ms en vez
+          # de 33,33. Son 3,2 s de tiempo muerto repartido, el MP4 declara 30 fps pero su cadencia
+          # real es 29,936, y el audio se estira igual (deriva +2,7 s al minuto 20). Se ve como
+          # TIRÓN cada 25 segundos de punta a punta — el "todo el video lageado" de siempre, y NO
+          # lo detecta ningún chequeo de cuadros porque cada cuadro está perfecto: lo que está mal
+          # es CUÁNDO se muestra. Por eso hay que reescribir los timestamps a CFR exacto.
+          # El h264 crudo no tiene timestamps, así que `-r 30` al re-muxear los reparte perfectos.
+          # El audio se toma del WAV MÁSTER (continuo) si está; si no, del concat.
+          # ⛔ El AUDIO del `_cat` trae los MISMOS huecos que el video. Se demuxea a ADTS crudo (que
+          # tampoco lleva timestamps) y se re-muxea: asi los recupera continuos, y de paso conserva
+          # todo lo que el render puso adentro (tipeo, efectos). ⛔ NADA de `-shortest`: con una
+          # entrada cruda corta de mas — dejo el audio 6,7 s mas corto que el video y el cierre mudo.
+          OK=0
+          # ⛔⛔ NO SE PUEDE ARREGLAR LOS TIMESTAMPS COPIANDO EL STREAM. El h264 crudo no lleva
+          # tiempos, asi que `-fflags +genpts -r 30` los reparte EN FILA y deja pts == dts en todos
+          # los cuadros. Pero el stream tiene B-FRAMES (la mayoria de los cuadros lo son), y con
+          # B-frames el orden de MOSTRAR no es el de DECODIFICAR: el contenedor termina pidiendo
+          # que se muestren desordenados. Los reproductores de escritorio lo corrigen solos (por
+          # eso en local se ve fluido), pero CHROME obedece al contenedor y se ve como TIRON, solo
+          # donde hay movimiento continuo (el avatar); sobre fotos casi fijas es invisible.
+          # Costo real: 8 rondas y 6 renders en `cmetemu` buscandolo en el archivo equivocado.
+          # La UNICA forma correcta de forzar CFR conservando el reordenamiento es RE-ENCODEAR.
+          # Verificado midiendo pts vs dts en las dos variantes antes de tocar esto.
+          if ffmpeg -y -v error -i "_cat_$SLUG.mp4" -map 0:v:0 -map 0:a:0 -vf "setpts=N/30/TB,format=yuv420p" -r 30 -fps_mode cfr -c:v libx264 -preset fast -crf 18 -pix_fmt yuv420p -video_track_timescale 90000 -c:a aac -b:a 192k -ar 48000 -af "aresample=async=1:first_pts=0,apad" -movflags +faststart "$SLUG.mp4"; then OK=1; fi
+          # ⛔⛔ COMPUERTA: el final TIENE que tener pista de audio y durar casi lo mismo que el video.
+          if [ "$OK" = "1" ]; then
+            VD=$(ffprobe -v error -select_streams v -show_entries stream=duration -of csv=p=0 "$SLUG.mp4")
+            AD=$(ffprobe -v error -select_streams a -show_entries stream=duration -of csv=p=0 "$SLUG.mp4")
+            echo "remux CFR: video ${VD:-0}s · audio ${AD:-0}s"
+            if [ -z "$AD" ] || awk -v a="${AD:-0}" -v v="${VD:-1}" 'BEGIN{exit !(a < v-2)}'; then
+              echo "::warning::el remux dejo el audio corto o ausente — vuelvo al concat crudo"; OK=0
+            fi
+          fi
+          if [ "$OK" = "1" ]; then
+            NB=$(ffprobe -v error -select_streams v:0 -show_entries stream=has_b_frames -of csv=p=0 "$SLUG.mp4")
+            PD=$(ffprobe -v error -select_streams v -show_entries packet=pts_time,dts_time -read_intervals "%+1" -of csv=p=0 "$SLUG.mp4" | awk -F, '{ if ($1 != $2) c++ } END { print c+0 }')
+            if [ "${NB:-0}" != "0" ] && [ "$PD" = "0" ]; then
+              echo "::error::el mp4 tiene B-frames pero pts == dts en todos los cuadros — se veria con TIRON en Chrome"; exit 1
+            fi
+            echo "timestamps reescritos a 30 fps CFR (video y audio)"
+            rm -f "_v_$SLUG.h264" "_a_$SLUG.aac" "_cat_$SLUG.mp4"
+          else
+            # ⛔⛔ NO SE DEGRADA EN SILENCIO. Medido en fcsunaclavada (22-sep-2026): el remux murió
+            # con "Cannot allocate memory" en el muxer, el job siguió, publicó el concat crudo bajo
+            # el nombre del bueno y el run quedó en SUCCESS con el tirón de las 29 costuras adentro.
+            # Un run verde NO puede entregar el crudo. Se conserva para poder rescatarlo (son ~80 min
+            # de CPU), pero con OTRO NOMBRE de artefacto y el job termina en RED — ver el paso final.
+            echo "::error::el remux a CFR falló — el MP4 quedó CRUDO (tirón en cada costura). Se publica como final-$SLUG-RAW y el job falla a propósito: NO es entregable sin pasarle scripts/entrega_mp4.sh"
+            mv -f "_cat_$SLUG.mp4" "$SLUG.mp4"
+            echo "RAW=1" >> "$GITHUB_ENV"
+          fi
+          fi
           # Segundo cinturón: aunque estén los N archivos, si el resultado dura mucho menos de lo
           # esperado algo se truncó igual. total_frames/30 es la duración teórica.
           ESPERADO=$(awk "BEGIN{printf \"%.0f\", ${{ github.event.inputs.total_frames }}/30}")
@@ -198,7 +320,9 @@ jobs:
           fi
       - uses: actions/upload-artifact@v4
         with:
-          name: final-${{ github.event.inputs.slug }}
+          # Si el remux a CFR se cayó, el archivo es el concat CRUDO: va con sufijo -RAW para que
+          # nadie lo confunda con un entregable (el nombre limpio significa "pasó la compuerta CFR").
+          name: final-${{ github.event.inputs.slug }}${{ env.RAW == '1' && '-RAW' || '' }}
           path: ${{ github.event.inputs.slug }}.mp4
           retention-days: 7
       # ── CHEQUEO TECNICO EN LA NUBE (etapa 2 del auditor) ────────────────────────────────────
@@ -223,7 +347,10 @@ jobs:
       # mover un archivo de GitHub a GitHub. Peor: lo que se publicaba salia del disco local, y
       # por eso una vez se entrego un render viejo (la parte 1 sola) en vez del final.
       # Publicando aca, lo entregado ES exactamente lo que se acaba de concatenar.
+      # ⛔ Si el remux a CFR se cayó, el MP4 es el CRUDO: NO se publica como release. Antes sí se
+      # publicaba (fcsunaclavada, 22-sep-2026) con el título "MP4 final", y era el del tirón.
       - name: publicar el MP4 final como release
+        if: env.RAW != '1'
         continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
@@ -236,3 +363,20 @@ jobs:
         continue-on-error: true
         run: |
           curl -s -X POST "${{ secrets.SB_URL }}/rest/v1/rpc/render_bump" -H "apikey: ${{ secrets.SB_ANON }}" -H "Authorization: Bearer ${{ secrets.SB_ANON }}" -H "Content-Type: application/json" -d '{"p_slug":"${{ github.event.inputs.slug }}","p_delta":100}' || true
+      # ⛔⛔ ÚLTIMO PASO A PROPÓSITO: el job tiene que terminar en ROJO si se degradó.
+      # Va al final (y no en el paso del concat) para que el artefacto -RAW alcance a subirse:
+      # son ~80 min de CPU y se puede rescatar en local con scripts/entrega_mp4.sh. Pero el run
+      # NO puede quedar verde, porque "success" es lo que hace que nadie vuelva a mirar el archivo.
+      - name: fallar si el MP4 quedó crudo
+        if: env.RAW == '1'
+        run: |
+          echo "::error::el MP4 de ${{ github.event.inputs.slug }} quedó CRUDO (el remux a CFR falló)."
+          echo "Está en el artefacto final-${{ github.event.inputs.slug }}-RAW y NO se publicó como release."
+          echo "Para rescatarlo: bash scripts/entrega_mp4.sh <mp4> ${{ github.event.inputs.slug }} <salida.mp4>"
+          exit 1
+      - name: fallar si los chunks no se persistieron
+        if: steps.persist.outcome == 'failure'
+        run: |
+          echo "::error::el release chunks-${{ github.event.inputs.slug }} quedó con los chunks del render ANTERIOR (403 / rate limit)."
+          echo "NO lanzar encfin: volver a correr este job (gh run rerun <run> --job <id stitch>) y recién ahí encfin."
+          exit 1
