@@ -1,0 +1,1 @@
+{ "extends": "./tsconfig.json", "include": ["src/index_fb5nd.tsx"], "compilerOptions": { "noEmit": true } }
