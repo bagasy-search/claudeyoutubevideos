@@ -1,0 +1,475 @@
+{
+ "desc": "🚪 La toalla debajo de la puerta: 3 razones + El Método del Cerrajero",
+ "replies": [],
+ "pages": {},
+ "heroes": [
+  {
+   "k": "searchlight",
+   "at": 22.23,
+   "out": 28.23,
+   "img": "n_rendija_luz",
+   "lab": "LA RENDIJA HABLA",
+   "bg": "n_rendija_luz",
+   "mode": "shutter"
+  },
+  {
+   "k": "typewriter",
+   "at": 78.7,
+   "out": 83.2,
+   "lines": [
+    "UNA TOALLA",
+    "BIEN PUESTA"
+   ],
+   "bg": "n_tres_dedos",
+   "mode": "blinds"
+  },
+  {
+   "k": "candle",
+   "at": 127.08,
+   "out": 131.58,
+   "lab": "CON LO QUE YA TIENES",
+   "sub": "UNA TOALLA VIEJA",
+   "bg": "n_honestidad",
+   "mode": "iris"
+  },
+  {
+   "k": "neon",
+   "at": 196.41,
+   "out": 202.41,
+   "lab": "para quien vive sola",
+   "col": "#ffb44a",
+   "bg": "n_casa_cuenta",
+   "mode": "blinds"
+  },
+  {
+   "k": "led",
+   "at": 257.75,
+   "out": 263.75,
+   "lab": "ESTÁ SOLA Y DESPIERTA",
+   "sub": "LO QUE CUENTA LA LUZ",
+   "bg": "n_manija_palanca",
+   "mode": "shutter"
+  },
+  {
+   "k": "blueprint",
+   "at": 311.05,
+   "out": 317.05,
+   "img": "n_varilla",
+   "dims": [
+    {
+     "t": "la varilla",
+     "x1": 0.1,
+     "y1": 0.88,
+     "x2": 0.7,
+     "y2": 0.88
+    }
+   ],
+   "lab": "POR LA RENDIJA DE ABAJO",
+   "bg": "n_varilla",
+   "mode": "wipe"
+  },
+  {
+   "k": "chain",
+   "at": 382.49,
+   "out": 386.99,
+   "weak": 2,
+   "lab": "LA MANIJA DE PALANCA",
+   "sub": "LA QUE SE ENGANCHA",
+   "bg": "n_artritis",
+   "mode": "split"
+  },
+  {
+   "k": "xray",
+   "at": 432.46,
+   "out": 436.96,
+   "img": "n_pasan_pasillo",
+   "lab": "LA LÍNEA DE LUZ",
+   "bg": "n_pasan_pasillo",
+   "mode": "blinds"
+  },
+  {
+   "k": "abacus",
+   "at": 500.25,
+   "out": 505.75,
+   "v": 80,
+   "u": "CENTÍMETROS",
+   "sub": "UNA TOALLA DE BAÑO GRANDE",
+   "bg": "n_ochenta",
+   "mode": "split"
+  },
+  {
+   "k": "dart",
+   "at": 550.77,
+   "out": 555.27,
+   "miss": [
+    "DOBLADA",
+    "TIRADA"
+   ],
+   "lab": "ENROLLADA Y APRETADA",
+   "bg": "n_doblada_mal",
+   "mode": "iris"
+  },
+  {
+   "k": "weights",
+   "at": 615.21,
+   "out": 621.21,
+   "items": [
+    {
+     "t": "EL TUBO",
+     "at": 0
+    },
+    {
+     "t": "UN LIBRO",
+     "at": 0
+    },
+    {
+     "t": "UNA PESA",
+     "at": 0
+    }
+   ],
+   "lab": "UN POCO DE PESO DETRÁS",
+   "bg": "n_libro_peso",
+   "mode": "shutter"
+  },
+  {
+   "k": "peel",
+   "at": 678.05,
+   "out": 684.05,
+   "img": "n_sin_muebles",
+   "img2": "n_no_ates",
+   "a": "PARECE SEGURO",
+   "lab": "LA SALIDA, SIEMPRE LIBRE",
+   "bad": 1,
+   "bg": "n_sin_muebles",
+   "mode": "diag"
+  },
+  {
+   "k": "loupe",
+   "at": 729.71,
+   "out": 735.71,
+   "img": "n_luz_esquinas",
+   "fx": 0.5,
+   "fy": 0.75,
+   "lab": "SI TODAVÍA VES LUZ",
+   "bg": "n_luz_esquinas",
+   "mode": "iris"
+  },
+  {
+   "k": "puzzle",
+   "at": 795.49,
+   "out": 801.49,
+   "img": "n_alambre_entra",
+   "lab": "LA PRUEBA DEL ALAMBRE",
+   "bg": "n_alambre_entra",
+   "mode": "split"
+  },
+  {
+   "k": "traffic",
+   "at": 857.99,
+   "out": 863.99,
+   "lights": [
+    "PALANCA SOLA",
+    "PESTILLO",
+    "CERROJO PASADO"
+   ],
+   "only": 2,
+   "bg": "n_tu_puerta",
+   "mode": "diag"
+  },
+  {
+   "k": "compass",
+   "at": 910.99,
+   "out": 915.49,
+   "opts": [
+    "DE PALANCA",
+    "DE POMO",
+    "CON CERROJO",
+    "SIN TRABA"
+   ],
+   "win": 1,
+   "lab": "LA QUE NO SE ENGANCHA",
+   "bg": "n_palanca_arriba",
+   "mode": "iris"
+  },
+  {
+   "k": "level",
+   "at": 972.07,
+   "out": 978.07,
+   "lab": "QUE ROCE, QUE NO TRABE",
+   "sub": "EL BURLETE",
+   "bg": "n_roza",
+   "mode": "wipe"
+  },
+  {
+   "k": "indexbox",
+   "at": 1027.58,
+   "out": 1032.58,
+   "items": [
+    {
+     "t": "El plano",
+     "img": "n_cuenta_puertas",
+     "at": 0
+    },
+    {
+     "t": "Las puertas",
+     "img": "n_toalla_hotel",
+     "at": 0
+    },
+    {
+     "t": "La toalla",
+     "img": "n_libro_puerta",
+     "at": 0
+    }
+   ],
+   "lab": "en un hotel",
+   "bg": "n_cuenta_puertas",
+   "mode": "blinds"
+  },
+  {
+   "k": "pulse",
+   "at": 1096.28,
+   "out": 1100.78,
+   "a": "EL HUMO",
+   "lab": "LLEGA ANTES QUE EL FUEGO",
+   "bg": "n_humo_pasillo",
+   "mode": "shutter"
+  },
+  {
+   "k": "gears",
+   "at": 1158.08,
+   "out": 1164.08,
+   "items": [
+    {
+     "t": "DETECTOR",
+     "at": 0
+    },
+    {
+     "t": "PUERTA",
+     "at": 0
+    },
+    {
+     "t": "TOALLA MOJADA",
+     "at": 0
+    }
+   ],
+   "lab": "CADA UNO HACE LO SUYO",
+   "bg": "n_detector",
+   "mode": "diag"
+  },
+  {
+   "k": "drawer",
+   "at": 1209.2,
+   "out": 1215.2,
+   "items": [
+    {
+     "t": "LA TOALLA",
+     "img": "n_cuarto_limpio",
+     "at": 0
+    },
+    {
+     "t": "EL BALDE",
+     "img": "n_balde",
+     "at": 0
+    }
+   ],
+   "bg": "n_cuarto_limpio",
+   "mode": "shutter",
+   "lab": "JUNTO A LA CAMA"
+  },
+  {
+   "k": "fridge",
+   "at": 1276.12,
+   "out": 1282.12,
+   "items": [
+    {
+     "t": "Llamar",
+     "at": 0
+    },
+    {
+     "t": "Decir el cuarto",
+     "at": 0
+    },
+    {
+     "t": "Agacharte",
+     "at": 0
+    },
+    {
+     "t": "Tocar la puerta",
+     "at": 0
+    }
+   ],
+   "lab": "SI HAY HUMO",
+   "bg": "n_agachas",
+   "mode": "drop"
+  },
+  {
+   "k": "vault",
+   "at": 1340.34,
+   "out": 1346.34,
+   "img": "n_toalla_seca",
+   "lab": "UN MINUTO CADA NOCHE",
+   "bg": "n_toalla_seca",
+   "mode": "iris"
+  },
+  {
+   "k": "dominoes",
+   "at": 1391.68,
+   "out": 1397.68,
+   "items": [
+    {
+     "t": "MUEBLES",
+     "img": "n_floja",
+     "at": 0
+    },
+    {
+     "t": "SILLAS",
+     "img": "n_rejilla",
+     "at": 0
+    },
+    {
+     "t": "CADENAS",
+     "img": "n_estufa",
+     "at": 0
+    }
+   ],
+   "stamp": "TU SALIDA, LIBRE",
+   "bad": 1,
+   "bg": "n_floja",
+   "mode": "wipe"
+  },
+  {
+   "k": "conveyor",
+   "at": 1456.26,
+   "out": 1462.76,
+   "items": [
+    {
+     "t": "ENROLLADA",
+     "img": "n_gomitas_dos",
+     "at": 0
+    },
+    {
+     "t": "GOMITAS",
+     "img": "n_compra_detector",
+     "at": 0
+    },
+    {
+     "t": "PERCHERO",
+     "img": "n_ernesto_noche",
+     "at": 0
+    }
+   ],
+   "lab": "LISTA PARA LA NOCHE",
+   "bg": "n_gomitas_dos",
+   "mode": "shutter"
+  },
+  {
+   "k": "ticket",
+   "at": 1510.28,
+   "out": 1514.78,
+   "kick": "DON ERNESTO",
+   "title": "LO JUSTO",
+   "sub": "NUNCA LO QUE NO HACE FALTA",
+   "v": "✓",
+   "u": "SIEMPRE",
+   "bg": "n_tornillo",
+   "mode": "split"
+  },
+  {
+   "k": "branches",
+   "at": 1574.98,
+   "out": 1580.98,
+   "items": [
+    {
+     "t": "NO VEN LA LUZ",
+     "at": 0
+    },
+    {
+     "t": "NO VEN LA SOMBRA",
+     "at": 0
+    },
+    {
+     "t": "NO SABEN",
+     "at": 0
+    }
+   ],
+   "lab": "QUE NADIE TE MIRE",
+   "bg": "n_senora_sola",
+   "mode": "drop"
+  },
+  {
+   "k": "shelf",
+   "at": 1641.02,
+   "out": 1647.02,
+   "items": [
+    {
+     "t": "LA SALCHICHA",
+     "img": "n_salchicha",
+     "at": 0
+    },
+    {
+     "t": "LA TOALLA",
+     "img": "n_las_dos",
+     "at": 0
+    }
+   ],
+   "lab": "LAS DOS SIRVEN",
+   "bg": "n_salchicha",
+   "mode": "shutter"
+  },
+  {
+   "k": "podium",
+   "at": 1689.64,
+   "out": 1695.64,
+   "items": [
+    {
+     "t": "UNA TOALLA",
+     "img": "n_cuadra",
+     "at": 0
+    },
+    {
+     "t": "LAS GOMITAS",
+     "img": "n_carmen",
+     "at": 0
+    },
+    {
+     "t": "LO DEL HUMO",
+     "img": "n_mira_rendija",
+     "at": 0
+    }
+   ],
+   "bg": "n_cuadra",
+   "mode": "drop"
+  },
+  {
+   "k": "mosaic",
+   "at": 1749.02,
+   "out": 1755.02,
+   "imgs": [
+    "n_tres_cosas",
+    "n_tres_cosas",
+    "n_tres_cosas",
+    "n_tres_cosas",
+    "n_tres_cosas",
+    "n_tres_cosas",
+    "n_tres_cosas",
+    "n_tres_cosas",
+    "n_tres_cosas",
+    "n_tres_cosas",
+    "n_tres_cosas",
+    "n_tres_cosas"
+   ],
+   "lab": "LO QUE TAPA LA TOALLA",
+   "bg": "n_tres_cosas",
+   "mode": "split"
+  },
+  {
+   "k": "emboss",
+   "at": 1825.16,
+   "out": 1831.16,
+   "lab": "PONLE LA TOALLA TÚ",
+   "sub": "A QUIEN VIVE SOLO",
+   "bg": "n_tres_cosas",
+   "mode": "wipe"
+  }
+ ]
+}
