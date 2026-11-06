@@ -1,0 +1,556 @@
+{
+ "desc": "🥩 9 trucos para que la carne barata quede tierna + Gran Recetario",
+ "replies": [],
+ "pages": {},
+ "heroes": [
+  {
+   "k": "antes",
+   "at": 21.98,
+   "out": 28.48,
+   "img": "n_suela",
+   "img2": "v02_tierno",
+   "a": "DURA",
+   "b": "TIERNA",
+   "lab": "EL MISMO CORTE",
+   "bg": "n_suela",
+   "mode": "split"
+  },
+  {
+   "k": "abacus",
+   "at": 77.82,
+   "out": 83.82,
+   "v": 9,
+   "u": "TRUCOS",
+   "sub": "PARA LA CARNE BARATA",
+   "bg": "n_c_cocina",
+   "mode": "blinds"
+  },
+  {
+   "k": "candle",
+   "at": 128.26,
+   "out": 132.76,
+   "lab": "CARNE BARATA",
+   "sub": "QUE QUEDA TIERNA",
+   "bg": "r_sarten_olla",
+   "mode": "iris"
+  },
+  {
+   "k": "typewriter",
+   "at": 201.64,
+   "out": 207.64,
+   "lines": [
+    "LA CARNE",
+    "ERA UN LUJO"
+   ],
+   "bg": "n_abuela_pueblo",
+   "mode": "blinds"
+  },
+  {
+   "k": "xray",
+   "at": 256.1,
+   "out": 260.6,
+   "img": "n_musculo",
+   "lab": "LAS FIBRAS",
+   "bg": "n_musculo",
+   "mode": "split"
+  },
+  {
+   "k": "ticket",
+   "at": 323.7,
+   "out": 329.7,
+   "kick": "EL CARNICERO",
+   "title": "SABE MUCHO",
+   "sub": "PREGÚNTALE CON CARIÑO",
+   "v": "✓",
+   "u": "SIEMPRE",
+   "bg": "n_charola",
+   "mode": "drop"
+  },
+  {
+   "k": "pulse",
+   "at": 376.39,
+   "out": 382.39,
+   "a": "LA SAL",
+   "lab": "DESDE ADENTRO",
+   "bg": "n_jugo_sale",
+   "mode": "shutter"
+  },
+  {
+   "k": "traffic",
+   "at": 430.75,
+   "out": 435.25,
+   "lights": [
+    "SALADA",
+    "TAPADA",
+    "AL REFRI"
+   ],
+   "only": 2,
+   "bg": "n_lugar_fresco",
+   "mode": "diag"
+  },
+  {
+   "k": "level",
+   "at": 501.69,
+   "out": 506.19,
+   "lab": "QUINCE O VEINTE MINUTOS",
+   "sub": "NO MÁS",
+   "bg": "r_unta",
+   "mode": "wipe"
+  },
+  {
+   "k": "dart",
+   "at": 556.1,
+   "out": 560.6,
+   "miss": [
+    "TODA LA NOCHE",
+    "MUCHO LIMÓN"
+   ],
+   "lab": "SÓLO LA SUPERFICIE",
+   "bg": "n_harinosa",
+   "mode": "iris"
+  },
+  {
+   "k": "neon",
+   "at": 606.86,
+   "out": 611.36,
+   "lab": "naranja agria",
+   "col": "#ffb44a",
+   "bg": "v05_naranja",
+   "mode": "blinds"
+  },
+  {
+   "k": "puzzle",
+   "at": 670.08,
+   "out": 676.08,
+   "img": "n_carne_rota",
+   "lab": "EN UN TRAPO O UNA BOLSA",
+   "bg": "n_carne_rota",
+   "mode": "split"
+  },
+  {
+   "k": "searchlight",
+   "at": 742.66,
+   "out": 748.66,
+   "img": "r_fuego",
+   "lab": "EL TRUCO DE LAS FRUTAS",
+   "bg": "r_fuego",
+   "mode": "shutter"
+  },
+  {
+   "k": "loupe",
+   "at": 795.24,
+   "out": 801.24,
+   "img": "r_ralla",
+   "fx": 0.5,
+   "fy": 0.5,
+   "lab": "PAPAYA VERDE O PIÑA",
+   "bg": "r_ralla",
+   "mode": "diag"
+  },
+  {
+   "k": "dominoes",
+   "at": 852.34,
+   "out": 859.34,
+   "items": [
+    {
+     "t": "TODA JUNTA",
+     "img": "n_sarten_llena",
+     "at": 0
+    },
+    {
+     "t": "SUELTA JUGO",
+     "img": "r_sarten_hierro",
+     "at": 0
+    },
+    {
+     "t": "CHARCO GRIS",
+     "img": "r_gota",
+     "at": 0
+    }
+   ],
+   "stamp": "HIERVE, NO DORA",
+   "bad": 1,
+   "bg": "n_sarten_llena",
+   "mode": "wipe"
+  },
+  {
+   "k": "letter",
+   "at": 920.38,
+   "out": 926.88,
+   "lines": [
+    "Por tandas,",
+    "y la que está lista",
+    "a un plato tapado"
+   ],
+   "sign": "Rosa",
+   "bg": "r_sella",
+   "mode": "blinds"
+  },
+  {
+   "k": "shelf",
+   "at": 974.6,
+   "out": 980.6,
+   "items": [
+    {
+     "t": "LA BOLSITA",
+     "img": "n_bolsitas",
+     "at": 0
+    },
+    {
+     "t": "LA FECHA",
+     "img": "n_recetario_guisos",
+     "at": 0
+    }
+   ],
+   "lab": "AL CONGELADOR",
+   "bg": "n_bolsitas",
+   "mode": "drop"
+  },
+  {
+   "k": "chain",
+   "at": 1041.42,
+   "out": 1047.42,
+   "weak": 2,
+   "lab": "ESTOS NO SE ABLANDAN",
+   "sub": "EN LA SARTÉN",
+   "bg": "n_recetario_guisos",
+   "mode": "split"
+  },
+  {
+   "k": "funnel",
+   "at": 1090.13,
+   "out": 1096.63,
+   "items": [
+    {
+     "t": "LA CARNE",
+     "at": 0
+    },
+    {
+     "t": "CEBOLLA Y AJO",
+     "at": 0
+    },
+    {
+     "t": "PIMIENTA",
+     "at": 0
+    },
+    {
+     "t": "AGUA QUE CUBRA",
+     "at": 0
+    }
+   ],
+   "lab": "EL TRUCO DE LA OLLA",
+   "bg": "r_laurel",
+   "mode": "wipe"
+  },
+  {
+   "k": "vault",
+   "at": 1148.02,
+   "out": 1154.02,
+   "img": "r_deshebra",
+   "lab": "LA TARDE DEL DOMINGO",
+   "bg": "r_deshebra",
+   "mode": "iris"
+  },
+  {
+   "k": "conveyor",
+   "at": 1215.12,
+   "out": 1222.12,
+   "items": [
+    {
+     "t": "LA OLLA",
+     "img": "r_tiras",
+     "at": 0
+    },
+    {
+     "t": "DESHEBRADA",
+     "img": "r_corta_ya",
+     "at": 0
+    },
+    {
+     "t": "TOSTADAS",
+     "img": "n_charco",
+     "at": 0
+    }
+   ],
+   "lab": "LA DURA SE SALVA",
+   "bg": "r_tiras",
+   "mode": "shutter"
+  },
+  {
+   "k": "dice",
+   "at": 1284.1,
+   "out": 1289.6,
+   "v": 5,
+   "lab": "MINUTOS DE REPOSO",
+   "bg": "v08_reposo",
+   "mode": "drop"
+  },
+  {
+   "k": "blueprint",
+   "at": 1325.8,
+   "out": 1330.3,
+   "img": "n_rayitas",
+   "dims": [
+    {
+     "t": "corta así",
+     "x1": 0.2,
+     "y1": 0.5,
+     "x2": 0.8,
+     "y2": 0.5
+    }
+   ],
+   "lab": "CONTRA LA FIBRA",
+   "bg": "n_rayitas",
+   "mode": "wipe"
+  },
+  {
+   "k": "compass",
+   "at": 1395.14,
+   "out": 1399.64,
+   "opts": [
+    "A LO LARGO",
+    "CONTRA LA FIBRA",
+    "EN CUADRITOS",
+    "COMO SALGA"
+   ],
+   "win": 1,
+   "lab": "CÓMO SE CORTA",
+   "bg": "v09_fibra",
+   "mode": "iris"
+  },
+  {
+   "k": "podium",
+   "at": 1459.76,
+   "out": 1465.26,
+   "items": [
+    {
+     "t": "SALADA",
+     "img": "r_corta_fibra",
+     "at": 0
+    },
+    {
+     "t": "DORADA",
+     "img": "n_domingo",
+     "at": 0
+    },
+    {
+     "t": "CONTRA LA FIBRA",
+     "img": "n_falda_dos",
+     "at": 0
+    }
+   ],
+   "bg": "r_corta_fibra",
+   "mode": "drop"
+  },
+  {
+   "k": "led",
+   "at": 1511.88,
+   "out": 1516.38,
+   "lab": "LA MEJOR CARNICERÍA",
+   "sub": "NUNCA LE CONTAMOS",
+   "bg": "n_falda_dos",
+   "mode": "shutter"
+  },
+  {
+   "k": "fridge",
+   "at": 1564.96,
+   "out": 1569.96,
+   "items": [
+    {
+     "t": "Sal a tiempo",
+     "at": 0
+    },
+    {
+     "t": "Pinzas",
+     "at": 0
+    },
+    {
+     "t": "Reposo",
+     "at": 0
+    },
+    {
+     "t": "Contra la fibra",
+     "at": 0
+    }
+   ],
+   "lab": "LOS ERRORES, ARREGLADOS",
+   "bg": "n_falda_dos",
+   "mode": "drop"
+  },
+  {
+   "k": "indexbox",
+   "at": 1646.45,
+   "out": 1652.95,
+   "items": [
+    {
+     "t": "La carne",
+     "img": "r_seca_trapo",
+     "at": 0
+    },
+    {
+     "t": "Tortillas",
+     "img": "r_cilantro",
+     "at": 0
+    },
+    {
+     "t": "Cebolla y cilantro",
+     "img": "r_tacos",
+     "at": 0
+    }
+   ],
+   "lab": "tacos de falda",
+   "bg": "r_seca_trapo",
+   "mode": "wipe"
+  },
+  {
+   "k": "gears",
+   "at": 1689.65,
+   "out": 1694.15,
+   "items": [
+    {
+     "t": "LOS CHILES",
+     "at": 0
+    },
+    {
+     "t": "EL VINAGRE",
+     "at": 0
+    },
+    {
+     "t": "UNA HORA",
+     "at": 0
+    }
+   ],
+   "lab": "EL ADOBO DE LA ABUELA",
+   "bg": "r_tacos",
+   "mode": "diag"
+  },
+  {
+   "k": "peel",
+   "at": 1757.53,
+   "out": 1763.53,
+   "img": "r_tetera",
+   "img2": "n_fregadero",
+   "a": "DESTAPAR",
+   "lab": "SE ESCAPA EL CALOR",
+   "bad": 1,
+   "bg": "r_tetera",
+   "mode": "iris"
+  },
+  {
+   "k": "branches",
+   "at": 1824.75,
+   "out": 1830.75,
+   "items": [
+    {
+     "t": "NO SON LOS DIENTES",
+     "at": 0
+    },
+    {
+     "t": "ES EL CORTE",
+     "at": 0
+    },
+    {
+     "t": "Y CÓMO SE HACE",
+     "at": 0
+    }
+   ],
+   "lab": "LO QUE ME ESCRIBEN",
+   "bg": "n_tablas",
+   "mode": "drop"
+  },
+  {
+   "k": "radar",
+   "at": 1880.83,
+   "out": 1885.83,
+   "items": [
+    {
+     "t": "TODOS JUNTOS",
+     "at": 0
+    },
+    {
+     "t": "POLLO Y CERDO",
+     "at": 0
+    },
+    {
+     "t": "QUÉ CORTE",
+     "at": 0
+    }
+   ],
+   "lab": "LO QUE ME PREGUNTAN",
+   "bg": "n_muchacha",
+   "mode": "iris"
+  },
+  {
+   "k": "weights",
+   "at": 1931.01,
+   "out": 1936.01,
+   "items": [
+    {
+     "t": "FALDA",
+     "at": 0
+    },
+    {
+     "t": "AGUAYÓN",
+     "at": 0
+    },
+    {
+     "t": "CHAMBARETE",
+     "at": 0
+    }
+   ],
+   "lab": "CADA CORTE, SU COCCIÓN",
+   "bg": "n_muchacha",
+   "mode": "shutter"
+  },
+  {
+   "k": "drawer",
+   "at": 2003.03,
+   "out": 2007.53,
+   "items": [
+    {
+     "t": "CEBOLLITAS",
+     "img": "r_papas",
+     "at": 0
+    },
+    {
+     "t": "LA SALSA",
+     "img": "v10_sirve",
+     "at": 0
+    }
+   ],
+   "bg": "r_papas",
+   "mode": "diag"
+  },
+  {
+   "k": "mosaic",
+   "at": 2054.83,
+   "out": 2060.83,
+   "imgs": [
+    "n_mantel",
+    "n_carne_domingo",
+    "n_mantel",
+    "n_mantel",
+    "n_mantel",
+    "n_mantel",
+    "n_mantel",
+    "n_mantel",
+    "n_mantel",
+    "n_mantel",
+    "n_mantel",
+    "n_mantel"
+   ],
+   "lab": "LOS NUEVE",
+   "bg": "n_mantel",
+   "mode": "split"
+  },
+  {
+   "k": "emboss",
+   "at": 2109.81,
+   "out": 2115.81,
+   "lab": "UN POQUITO DE CARIÑO",
+   "sub": "Y DE PACIENCIA",
+   "bg": "n_mantel",
+   "mode": "wipe"
+  }
+ ]
+}
