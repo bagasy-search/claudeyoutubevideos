@@ -104,7 +104,9 @@ export const camOf = (t: number, a: number, b: number): React.CSSProperties => {
   const k = 0.5 - 0.5 * Math.cos(Math.PI * u), dir = hash(n, 21) < 0.5 ? -1 : 1;
   const ry = dir * (5 + 3 * hash(n, 22)) * (2 * k - 1), rx = 7 + 3 * hash(n, 23) - 4 * Math.sin(Math.PI * u);
   const z = 1.0 + 0.06 * k + 0.05 * (1 - e(t, a, a + 0.9)) * -1;
-  return { transform: `perspective(2200px) rotateX(${rx.toFixed(3)}deg) rotateY(${ry.toFixed(3)}deg) scale(${z.toFixed(4)})`, transformOrigin: "50% 60%" };
+  // 6-nov: SIN 3D (perspective+rotateX/Y sobre todo el componente: el Chrome del farm soltaba la capa 1 cuadro cada 4-6
+  // = destellos en fb5na). Misma curva, en 2D: deriva curva + giro leve + acercamiento.
+  return { transform: `translate(${(ry * 7).toFixed(2)}px,${((rx - 7) * 5).toFixed(2)}px) rotate(${(ry * 0.12).toFixed(3)}deg) scale(${z.toFixed(4)})`, transformOrigin: "50% 60%" };
 };
 export const BgCtx = React.createContext<string | undefined>(undefined);
 export const Stage: React.FC<{ t: number; a: number; b: number; heat?: number; children?: React.ReactNode }> = ({ t, a, b, heat = 0, children }) => {
