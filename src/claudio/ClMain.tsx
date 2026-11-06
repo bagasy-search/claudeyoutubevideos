@@ -3,7 +3,7 @@
 // real, o su clip agnes v2.0 ralentizado y luego su último cuadro) · componentes Cl* sobre camas reales. Encima: overlays.
 // Audio: sólo la voz (la mezcla final con foley/sfx la pone la entrega, determinista).
 import React from "react";
-import { AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, interpolate, Easing, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { rnd, CL } from "./ClTheme";
 import { ClRimCutaway3D } from "./ClRimCutaway3D";
 import { ClBottle3D } from "./ClBottle3D";
@@ -31,6 +31,7 @@ import { ClFlushJet3D, ClRiseOrSpin, ClTankMark, ClTwoDays, ClStickWire } from "
 import { ClFilterTest, ClPotBoil, ClGrainWipe } from "./ClCampana";
 import { ClMattressLayers3D, ClDampSoaked, ClSprayMix, ClDryFan, ClThreeRounds } from "./ClColchon";
 import { ClFaucet3D, ClDropDry, ClAerator, ClMaterials, ClAcidBase, ClWrapGuide } from "./ClLavabo";
+import { TbTub3D, TbLayers3D, TbLedger412, TbKnock, TbCotton, TbHeatJar, TbSprayFill, TbHourglass, TbCompress3D, TbScratchLens, TbBookTub, TbEnamelRust, TbSpongeScale, TbFiveKeys, TbRoutine, TbNeverPour, TbWipeTimer, TbTileFlip } from "./ClTina";
 import { manoCam } from "../kits/camara/CamaraMano";
 
 // Ken-Burns al azar POR PLANO (regla 1.ter): sentido 50/50, amplitud 3-9 % fotos / 1,5-4 % clips, foco 28-72 %, paneo atado a la escala.
@@ -39,13 +40,18 @@ const useKB = (seed: number, clip: boolean) => {
   const r = (o: number) => rnd(seed + o * 7919);
   const piso = clip ? 1.03 : 1.06, amp = (clip ? 1.5 + 2.5 * r(1) : 3 + 6 * r(1)) / 100;
   const acerca = r(2) > 0.5;
-  const k = interpolate(f, [0, Math.max(2, durationInFrames)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  // curva sorteada por plano (nunca zoom lineal): ease-in-out suave / sale rápido y frena / arranca lento
+  const CURVAS = [Easing.inOut(Easing.cubic), Easing.out(Easing.quad), Easing.bezier(0.45, 0, 0.25, 1)];
+  const k = interpolate(f, [0, Math.max(2, durationInFrames)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: CURVAS[Math.floor(r(7) * 3) % 3] });
   const z = acerca ? piso + amp * k : piso + amp * (1 - k);
   const pan = clip ? 0.6 : 1.3, dx = (r(3) - 0.5) * 2 * pan, dy = (r(4) - 0.5) * 2 * pan * 0.7;
   const kk = acerca ? k : 1 - k;
   return { transform: `scale(${z.toFixed(4)}) translate(${(dx * kk).toFixed(3)}%, ${(dy * kk).toFixed(3)}%)`, transformOrigin: `${(28 + 44 * r(5)).toFixed(1)}% ${(28 + 44 * r(6)).toFixed(1)}%` };
 };
-const FILL: React.CSSProperties = { position: "absolute", width: "100%", height: "100%", objectFit: "cover" };
+const FILL0: React.CSSProperties = { position: "absolute", width: "100%", height: "100%", objectFit: "cover" };
+// ⛔ estrellita de Nano Banana/Veo abajo a la derecha (1 de cada 5): toda foto/clip va con scale(1.11) anclado a la izquierda
+const WM = 1.11;
+const FILL: React.CSSProperties = { ...FILL0, width: `${(100 * WM).toFixed(2)}%`, height: `${(100 * WM).toFixed(2)}%`, left: 0, top: 0 };
 const Photo: React.FC<{ src: string | null; seed: number }> = ({ src, seed }) => {
   const kb = useKB(seed, false);
   return <AbsoluteFill style={{ overflow: "hidden", backgroundColor: CL.white }}>{src ? <Img src={staticFile(src)} style={{ ...FILL, ...kb }} /> : <Placeholder />}</AbsoluteFill>;
@@ -80,6 +86,7 @@ const Placeholder: React.FC<{ avatar?: boolean }> = ({ avatar }) => (
 const COMP: Record<string, React.FC<any>> = {
   ClRimCutaway3D, ClBottle3D, ClMicroscope3D, ClHallway3D, ClChapter, ClCheck, ClBookPage, ClQRCard, ClDoDont, ClPins, ClColorCode, ClBeforeAfter, ClSplit, ClMeasureCup, ClTimer30, ClRimJets, ClNeverMix, ClBowl3D, ClValve3D, ClPumiceTest, ClPasteRecipe, ClNotebook, ClVideoRef, ClWasher3D, ClFilterFind, ClDoseCap, ClSmellTest, ClPores3D, ClSwab, ClSpores, ClFlashlight, ClWallLeak, ClHygrometer, ClTray3D, ClPasteCheck, ClCoating, ClTally, ClReceipt, ClCaulk3D, ClFilmWrap, ClTubMap, ClCaulkGun, ClMixCloud3D, ClStoreLabel, ClMixLight, ClProtocol, ClLabelLens, ClFlushJet3D, ClMattressLayers3D, ClDampSoaked, ClSprayMix, ClDryFan, ClThreeRounds, ClRiseOrSpin, ClTankMark, ClTwoDays, ClStickWire, ClFilterTest, ClPotBoil, ClGrainWipe,
   ClFaucet3D, ClDropDry, ClAerator, ClMaterials, ClAcidBase, ClWrapGuide,
+  TbTub3D, TbLayers3D, TbLedger412, TbKnock, TbCotton, TbHeatJar, TbSprayFill, TbHourglass, TbCompress3D, TbScratchLens, TbBookTub, TbEnamelRust, TbSpongeScale, TbFiveKeys, TbRoutine, TbNeverPour, TbWipeTimer, TbTileFlip,
 };
 const OVC: Record<string, React.FC<any>> = { ClNameTag, ClStampOv, ClChip, ClAsk };
 

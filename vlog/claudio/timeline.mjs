@@ -24,7 +24,7 @@ shots[0].start = 0;
 // plano fijo largo → corte a avatar en la palabra más cercana (nunca dos av seguidos)
 const MAXFIX = { bi: 7.5, rh: 7.5, kf: 9.5, c: 9 }, KEEP = new Set([]);
 // tope POR COMPONENTE (el resto pasa al avatar): un separador no se queda 8 s, un 3D lleva su tiempo
-const CMAX = { ClFilterTest: 8, ClPotBoil: 8, ClGrainWipe: 8, ClMattressLayers3D: 9, ClDampSoaked: 8, ClSprayMix: 9, ClDryFan: 8, ClThreeRounds: 8, ClFlushJet3D: 9, ClRiseOrSpin: 8, ClTankMark: 8, ClTwoDays: 8, ClStickWire: 7, ClChapter: 3.6, ClColorCode: 6.5, ClCheck: 10, ClBookPage: 9, ClQRCard: 9, ClNeverMix: 9, ClRimCutaway3D: 10.5, ClTimer30: 6, ClMeasureCup: 5.5, ClDoDont: 6.5, ClPins: 8, ClBottle3D: 6.5, ClRimJets: 7, ClSplit: 9, ClMicroscope3D: 11, ClHallway3D: 6, ClBeforeAfter: 5, ClBowl3D: 10.5, ClValve3D: 8.5, ClPumiceTest: 8, ClPasteRecipe: 8.5, ClNotebook: 8, ClVideoRef: 6, ClWasher3D: 10, ClFilterFind: 8, ClDoseCap: 7, ClSmellTest: 8, ClPores3D: 10.5, ClSwab: 8, ClSpores: 7, ClFlashlight: 7, ClWallLeak: 9, ClHygrometer: 7, ClTray3D: 10.5, ClPasteCheck: 7, ClCoating: 8, ClTally: 8, ClReceipt: 8, ClCaulk3D: 10.5, ClFilmWrap: 8, ClTubMap: 9, ClCaulkGun: 9, ClMixCloud3D: 9, ClStoreLabel: 9, ClMixLight: 6, ClProtocol: 9, ClLabelLens: 7 };
+const CMAX = { TbTub3D: 9, TbLayers3D: 10, TbLedger412: 8, TbKnock: 9, TbCotton: 9, TbHeatJar: 8.5, TbSprayFill: 8.5, TbHourglass: 7.5, TbCompress3D: 10.5, TbScratchLens: 8, TbBookTub: 9, TbEnamelRust: 8.5, TbSpongeScale: 8.5, TbFiveKeys: 8, TbRoutine: 10, TbNeverPour: 7.5, TbWipeTimer: 7.5, TbTileFlip: 10, ClFilterTest: 8, ClPotBoil: 8, ClGrainWipe: 8, ClMattressLayers3D: 9, ClDampSoaked: 8, ClSprayMix: 9, ClDryFan: 8, ClThreeRounds: 8, ClFlushJet3D: 9, ClRiseOrSpin: 8, ClTankMark: 8, ClTwoDays: 8, ClStickWire: 7, ClChapter: 3.6, ClColorCode: 6.5, ClCheck: 10, ClBookPage: 9, ClQRCard: 9, ClNeverMix: 9, ClRimCutaway3D: 10.5, ClTimer30: 6, ClMeasureCup: 5.5, ClDoDont: 6.5, ClPins: 8, ClBottle3D: 6.5, ClRimJets: 7, ClSplit: 9, ClMicroscope3D: 11, ClHallway3D: 6, ClBeforeAfter: 5, ClBowl3D: 10.5, ClValve3D: 8.5, ClPumiceTest: 8, ClPasteRecipe: 8.5, ClNotebook: 8, ClVideoRef: 6, ClWasher3D: 10, ClFilterFind: 8, ClDoseCap: 7, ClSmellTest: 8, ClPores3D: 10.5, ClSwab: 8, ClSpores: 7, ClFlashlight: 7, ClWallLeak: 9, ClHygrometer: 7, ClTray3D: 10.5, ClPasteCheck: 7, ClCoating: 8, ClTally: 8, ClReceipt: 8, ClCaulk3D: 10.5, ClFilmWrap: 8, ClTubMap: 9, ClCaulkGun: 9, ClMixCloud3D: 9, ClStoreLabel: 9, ClMixLight: 6, ClProtocol: 9, ClLabelLens: 7 };
 const capOf = (s) => (s.kind === "c" ? CMAX[s.name] || MAXFIX.c : MAXFIX[s.kind]);
 const ws = W.map((w) => w.s); const nearW = (x) => ws.reduce((b, v) => (Math.abs(v - x) < Math.abs(b - x) ? v : b), ws[0]);
 let budget = process.env.AV_AUTO !== undefined ? +process.env.AV_AUTO : (process.env.AV_CAD === "0" ? 90 : 0); const cand = [];
@@ -54,6 +54,9 @@ if (process.env.AV_CAD !== "0") {
   const explicit = shots.filter((s) => s.kind === "av").map((s) => spanOf(s));
   let t = explicit.length && explicit[0][0] < 0.1 ? explicit[0][1] : 0;
   const wins = [];
+  // AV_LOCK=<json [[s,e],…]> = ventanas PAGADAS (avwins_PAID): se usan tal cual, sin cadencia propia
+  const LOCK = process.env.AV_LOCK ? JSON.parse(fs.readFileSync(process.env.AV_LOCK, "utf8")) : null;
+  if (LOCK) { for (const s of shots.filter((s) => s.kind === "av")) shots.splice(shots.indexOf(s), 1); for (const [s, e] of LOCK) wins.push({ s: s < 0.05 ? 0 : s, e }); t = END; }
   while (t < END - 6) {
     const nextEx = explicit.find(([a, b]) => a >= t - 0.05 && a > 0.1 && b > t + 0.05);
     if (nextEx && nextEx[0] - t <= GAPMAX) { t = nextEx[1]; continue; } // la ventana manual llega a tiempo: no se pega otra antes
@@ -74,12 +77,17 @@ if (process.env.AV_CAD !== "0") {
     wins.push(pick); t = pick.e;
   }
   for (const w of wins) {
+    if (LOCK) shots.sort((a, b) => a.start - b.start);
     const inside = shots.filter((s) => s.kind !== "av" && s.start >= w.s - 0.01 && s.start < w.e);
     const before = shots.filter((s) => s.start < w.s - 0.01).pop();
     for (const s of inside) shots.splice(shots.indexOf(s), 1);
     const last = inside.length ? inside[inside.length - 1] : before && ["bi", "cl"].includes(before.kind) && !before.q && !before.anim ? { ...before, cont: 1 } : null;
     const nxt = shots.find((s) => s.start >= w.e);
-    if (last && (!nxt || nxt.start - w.e >= 2.0)) { last.start = w.e; shots.push(last); }
+    if (LOCK) { // ventana PAGADA: el avatar termina EXACTO en w.e (si no, muestra la boca de la ventana siguiente)
+      if (last && (!nxt || nxt.start - w.e >= 0.6)) { last.start = w.e; shots.push(last); }
+      else if (nxt && nxt.start - w.e < 3.5) nxt.start = w.e;
+      else if (before) { shots.push({ ...before, start: w.e, cont: 1 }); }
+    } else if (last && (!nxt || nxt.start - w.e >= 2.0)) { last.start = w.e; shots.push(last); }
     tapadas.push(...inside.slice(0, -1).map((s) => s.name));
     shots.push({ kind: "av", name: "", p: 0, at: "", start: w.s, auto: 2 });
   }
@@ -102,6 +110,7 @@ for (let i = 0; i + 1 < shots.length; i++) {
 // dos av seguidos → uno
 for (let i = shots.length - 1; i > 0; i--) if (shots[i].kind === "av" && shots[i - 1].kind === "av") shots.splice(i, 1);
 shots.forEach((s, i) => { s.end = i + 1 < shots.length ? shots[i + 1].start : END; s.dur = +(s.end - s.start).toFixed(3); s.start = +s.start.toFixed(3); s.end = +s.end.toFixed(3); });
+if (process.env.AV_LOCK) { const LK = JSON.parse(fs.readFileSync(process.env.AV_LOCK, "utf8")); const out = shots.filter((s) => s.kind === "av" && !LK.some(([a, b]) => s.start >= a - 0.25 && s.end <= b + 0.25)); if (out.length) console.log("⛔ avatar FUERA de ventana pagada:", out.map((s) => `@${s.start}-${s.end}`).join(" ")); else console.log("ventanas pagadas OK (" + shots.filter((s) => s.kind === "av").length + " av)"); }
 const vl = {};
 for (const s of shots.filter((s) => s.kind === "vl")) { const v = (vl[s.name] ||= { s: s.start, e: s.end }); v.s = Math.min(v.s, s.start); v.e = Math.max(v.e, s.end); }
 const bad = Object.entries(vl).filter(([, v]) => v.e - v.s > 11.8 || v.e - v.s < 3.2);
