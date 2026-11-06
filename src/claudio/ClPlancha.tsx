@@ -128,7 +128,7 @@ export const PlFlakeCrack: React.FC<{ bed?: string }> = ({ bed }) => {
           <rect x={200} y={440} width={1520} height={70} fill={SCALE} stroke="#CFC7B4" strokeWidth={3} />
           {Array.from({ length: 10 }, (_, i) => <path key={i} d={`M${260 + i * 150} 440 l ${20 - rnd(i) * 40} ${35 * cr} l ${rnd(i + 2) * 30 - 15} ${35 * cr}`} stroke="#8E8676" strokeWidth={4} fill="none" />)}
           {Array.from({ length: 14 }, (_, i) => { const x0 = 260 + rnd(i) * 1400; const y = 480 + fly * (120 + rnd(i + 1) * 260); return <rect key={i} x={x0 + Math.sin(f / 6 + i) * 20 * fly} y={y} width={44 + rnd(i + 3) * 40} height={18 + rnd(i + 4) * 12} rx={4} fill={brn > 0 && i % 2 ? `rgb(${237 - 80 * brn},${232 - 110 * brn},${220 - 160 * brn})` : SCALE} transform={`rotate(${rnd(i + 5) * 60 * fly} ${x0} ${y})`} opacity={fly > 0 ? 1 : 0} />; })}
-          <rect x={0} y={930} width={1920} height={150} fill={SHIRT} />
+          <rect x={0} y={1010} width={1920} height={70} fill={SHIRT} />
         </svg>
         <Tag x={300} y={360} text="se agrieta y se suelta" k={cr * 2} />
         <Tag x={1080} y={360} text="con almidón quemado: marrón" k={brn * 2} color={BRN} />
@@ -235,8 +235,8 @@ export const PlSoleTypes: React.FC<{ bed?: string }> = ({ bed }) => {
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           {S.map(([, c], i) => { const p = pop(f, fps, 4 + i * 8, 12); return <g key={i} transform={`translate(${380 + i * 580} ${520}) scale(${0.95 * p}) rotate(${(1 - p) * 30})`}><SolePlate col={c} /><path d="M-60 -250 Q0 -300 40 -200" stroke="rgba(255,255,255,0.4)" strokeWidth={18} fill="none" /></g>; })}
         </svg>
-        {S.map(([n, , d], i) => <div key={i} style={{ position: "absolute", left: 380 + i * 580, top: 860, translate: "-50% 0", textAlign: "center", opacity: lin(f, 14 + i * 8, 22 + i * 8) }}>
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: CL.navy }}>{n}</div><div style={{ fontFamily: HAND, fontSize: 44, color: CL.ink }}>{d}</div></div>)}
+        {S.map(([n, , d], i) => <div key={i} style={{ position: "absolute", left: 380 + i * 580, top: 860, translate: "-50% 0", textAlign: "center", padding: "10px 30px", background: "#FFF8EA", borderRadius: 16, boxShadow: "0 18px 40px rgba(0,0,0,0.28)", border: "3px solid #E6DAC2", opacity: lin(f, 14 + i * 8, 22 + i * 8) }}>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: CL.navy }}>{n}</div><div style={{ fontFamily: HAND, fontSize: 46, color: CL.navy }}>{d}</div></div>)}
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -292,12 +292,12 @@ export const PlRatioJug: React.FC<{ bed?: string }> = ({ bed }) => {
           <path d="M1040 400 Q1180 420 1160 560 Q1140 680 1010 690" fill="none" stroke="#8FA3B5" strokeWidth={22} />
           {[0.25, 0.5, 0.75, 1].map((q) => <g key={q}><line x1={590} x2={660} y1={top - H * q} y2={top - H * q} stroke={CL.navy} strokeWidth={5} /><text x={670} y={top - H * q + 14} fontFamily="Arial" fontWeight={700} fontSize={36} fill={CL.navy}>{q === 1 ? "1" : q === 0.25 ? "¼" : q === 0.5 ? "½" : "¾"}</text></g>)}
         </svg>
-        <div style={{ position: "absolute", left: 1220, top: 260, fontFamily: SERIF, fontWeight: 900, color: CL.navy, lineHeight: 1.15, whiteSpace: "nowrap" }}>
-          <div style={{ fontSize: 68, opacity: lin(f, 6, 14), color: BRN }}>¼ vinagre blanco</div>
-          <div style={{ fontSize: 68, opacity: lin(f, T * 0.32, T * 0.4) }}>¾ agua destilada</div>
+        <div style={{ position: "absolute", left: 1220, top: 230, fontFamily: SERIF, fontWeight: 900, color: CL.navy, lineHeight: 1.15, whiteSpace: "nowrap", padding: "24px 36px", background: "#FFF8EA", borderRadius: 16, boxShadow: "0 18px 40px rgba(0,0,0,0.28)", border: "3px solid #E6DAC2" }}>
+          <div style={{ fontSize: 76, opacity: lin(f, 6, 14), color: BRN }}>¼ vinagre blanco</div>
+          <div style={{ fontSize: 76, opacity: lin(f, T * 0.32, T * 0.4) }}>¾ agua destilada</div>
         </div>
-        <div style={{ position: "absolute", left: 1220, top: 560, opacity: no, display: "flex", alignItems: "center", gap: 20 }}>
-          <Tick ok={false} s={110} k={no} /><div style={{ fontFamily: HAND, fontSize: 64, color: CL.red, textDecoration: "line-through" }}>vinagre puro</div>
+        <div style={{ position: "absolute", left: 1220, top: 560, opacity: no, display: "flex", alignItems: "center", gap: 20, padding: "8px 28px", background: "#FFF8EA", borderRadius: 16, boxShadow: "0 18px 40px rgba(0,0,0,0.28)", border: "3px solid #E6DAC2" }}>
+          <Tick ok={false} s={110} k={no} /><div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 70, color: CL.red, textDecoration: "line-through", textDecorationThickness: 8 }}>vinagre puro</div>
         </div>
         <Tag x={1240} y={860} text="sólo si el manual no lo prohíbe" k={lin(f, T * 0.82, T * 0.9)} color={CL.inkSoft} />
       </Hand2D>
@@ -316,14 +316,14 @@ export const PlRinses: React.FC<{ bed?: string }> = ({ bed }) => {
       <Hand2D seed={610}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           {C.map(([tb], i) => { const p = pop(f, fps, 4 + i * Math.round(T * 0.22), 12); const fl = ease(lin(f, 6 + i * T * 0.22, 20 + i * T * 0.22)); const x = 420 + i * 540; return <g key={i} opacity={p}>
-            <path d={`M${x - 150} 300 L${x - 120} 820 L${x + 120} 820 L${x + 150} 300 Z`} fill="rgba(255,255,255,0.45)" stroke="#9FB0BE" strokeWidth={6} />
-            <path d={`M${x - 150 + 30 * (1 - fl * 0.9)} ${820 - 460 * fl} L${x - 120} 820 L${x + 120} 820 L${x + 150 - 30 * (1 - fl * 0.9)} ${820 - 460 * fl} Z`} fill={`rgba(${200 - 60 * tb},${215 - 70 * tb},${225 - 110 * tb},${0.35 + 0.5 * tb})`} />
+            <path d={`M${x - 150} 300 L${x - 120} 820 L${x + 120} 820 L${x + 150} 300 Z`} fill="rgba(255,255,255,0.55)" stroke="#5E7388" strokeWidth={8} />
+            <path d={`M${x - 150 + 30 * (1 - fl * 0.9)} ${820 - 460 * fl} L${x - 120} 820 L${x + 120} 820 L${x + 150 - 30 * (1 - fl * 0.9)} ${820 - 460 * fl} Z`} fill={`rgba(${170 - 40 * tb},${200 - 60 * tb},${230 - 120 * tb},${0.7 + 0.25 * tb})`} />
             {tb > 0 ? Array.from({ length: Math.round(20 * tb) }, (_, k) => <rect key={k} x={x - 90 + rnd(k + i * 20) * 180} y={820 - 420 * fl * rnd(k + 7)} width={10} height={6} fill={SCALE} opacity={fl} />) : null}
           </g>; })}
         </svg>
-        {C.map(([, t], i) => <div key={i} style={{ position: "absolute", left: 420 + i * 540, top: 870, translate: "-50% 0", textAlign: "center", opacity: lin(f, 14 + i * T * 0.22, 22 + i * T * 0.22) }}>
-          <div style={{ fontFamily: LABEL, fontSize: 36, color: CL.inkSoft, letterSpacing: 3 }}>{i + 1}ª LLENADA</div><div style={{ fontFamily: HAND, fontSize: 56, color: i === 2 ? CL.navy : BRN }}>{t}</div></div>)}
-        <Tag x={1180} y={180} text="y sin olor a vinagre" k={lin(f, T * 0.8, T * 0.9)} />
+        {C.map(([, t], i) => <div key={i} style={{ position: "absolute", left: 420 + i * 540, top: 850, translate: "-50% 0", textAlign: "center", background: CL.navy, padding: "8px 26px", borderRadius: 14, opacity: lin(f, 14 + i * T * 0.22, 22 + i * T * 0.22) }}>
+          <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 38, color: "#fff", letterSpacing: 3 }}>{i + 1}ª LLENADA</div><div style={{ fontFamily: HAND, fontSize: 56, color: i === 2 ? "#BFE3FF" : "#F2C58A" }}>{t}</div></div>)}
+        <Tag x={1340} y={250} text="y sin olor a vinagre" k={lin(f, T * 0.8, T * 0.9)} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -342,12 +342,13 @@ export const PlColdCheck: React.FC<{ bed?: string }> = ({ bed }) => {
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           <rect x={0} y={760} width={1920} height={320} fill="#D5CDBE" />
           <Iron x={820} y={760} s={1.8} />
-          <rect x={480} y={735} width={720} height={26} fill={col} opacity={0.85} />
+          <defs><linearGradient id="plCool" x1="0" x2="1"><stop offset="0" stopColor="#D9452E" /><stop offset={String(clamp01(1 - cool))} stopColor="#D9452E" /><stop offset={String(Math.min(1, clamp01(1 - cool) + 0.2))} stopColor="#3D7FBF" /><stop offset="1" stopColor="#3D7FBF" /></linearGradient></defs>
+          <rect x={480} y={762} width={720} height={40} rx={12} fill="url(#plCool)" stroke="#555" strokeWidth={3} />
           {cool < 0.6 ? Array.from({ length: 10 }, (_, i) => { const t = ((f + i * 6) % 40) / 40; return <path key={i} d={`M${520 + i * 70} ${730 - t * 120} q 12 -15 0 -30 q -12 -15 0 -30`} stroke={`rgba(230,90,60,${0.6 * (1 - cool / 0.6)})`} strokeWidth={5} fill="none" opacity={1 - t} />; }) : null}
           {/* enchufe afuera */}
           <g transform="translate(1600 520)"><rect x={-70} y={-100} width={140} height={200} rx={16} fill="#F2F2EE" stroke="#BBB" strokeWidth={4} /><circle cx={-22} cy={0} r={10} fill="#555" /><circle cx={22} cy={0} r={10} fill="#555" /></g>
           <g transform={`translate(${1420 - 30 * lin(f, 4, 14)} 560)`}><rect x={-60} y={-30} width={90} height={60} rx={10} fill="#333" /><rect x={30} y={-14} width={30} height={8} fill="#999" /><rect x={30} y={6} width={30} height={8} fill="#999" /><path d="M-60 0 Q-400 40 -500 160" stroke="#333" strokeWidth={10} fill="none" /></g>
-          <g transform={`translate(${900 + 300 * (1 - hand)} 560)`} opacity={hand}>
+          <g transform={`translate(${930 + 300 * (1 - hand)} 520)`} opacity={hand}>
             <path d="M120 -50 L420 -70 L430 40 L130 50 Z" fill={CL.navy} />
             <path d="M-40 -60 Q20 -78 130 -60 L140 40 Q40 56 -30 40 Z" fill="#D9A47E" stroke="#A8724D" strokeWidth={4} />
             {[0, 1, 2, 3].map((i) => <path key={i} d={`M-30 ${-52 + i * 24} Q-120 ${-60 + i * 26} -170 ${-46 + i * 28} Q-186 ${-36 + i * 28} -170 ${-28 + i * 28} Q-120 ${-38 + i * 26} -30 ${-34 + i * 24}`} fill="#D59D77" stroke="#A8724D" strokeWidth={3} />)}
@@ -406,7 +407,7 @@ export const PlHoleSwab: React.FC<{ bed?: string }> = ({ bed }) => {
             <g transform={`translate(${hx} ${hy}) rotate(30)`}><rect x={-6} y={-8} width={12} height={320} rx={6} fill="#F4F1EA" stroke="#CFC8B8" strokeWidth={2} /><ellipse cx={0} cy={-8} rx={16} ry={26} fill="#FFFFFF" stroke="#DDD" strokeWidth={2} /></g>
           </g>
         </svg>
-        <div style={{ position: "absolute", left: 1320, top: 340, fontFamily: SERIF, fontWeight: 900, fontSize: 130, color: CL.navy, fontVariantNumeric: "tabular-nums" }}>{Math.min(cur, holeCount)}/{holeCount}</div>
+        <div style={{ position: "absolute", left: 1320, top: 330, fontFamily: SERIF, fontWeight: 900, fontSize: 120, color: CL.navy, fontVariantNumeric: "tabular-nums", padding: "6px 30px", background: "#FFF8EA", borderRadius: 16, boxShadow: "0 18px 40px rgba(0,0,0,0.28)", border: "3px solid #E6DAC2" }}>{Math.min(cur, holeCount)}/{holeCount}</div>
         <Tag x={1320} y={560} text="uno por uno" k={lin(f, 6, 16)} />
         <Tag x={1320} y={660} text="sale blanco o marrón" k={lin(f, T * 0.4, T * 0.5)} color={BRN} />
       </Hand2D>
@@ -429,12 +430,12 @@ export const PlNoScratch: React.FC<{ bed?: string }> = ({ bed }) => {
               : i === 1 ? <g>{Array.from({ length: 40 }, (_, k) => <path key={k} d={`M${(rnd(k) - 0.5) * 140} ${(rnd(k + 1) - 0.5) * 100} q 20 ${rnd(k + 2) * 30 - 15} 40 0`} stroke="#9AA0A6" strokeWidth={3} fill="none" />)}</g>
               : <g><rect x={-90} y={-60} width={180} height={50} rx={8} fill="#3D8B3D" /><rect x={-90} y={-12} width={180} height={70} rx={8} fill="#F2D35B" /></g>}
           </g>; })}
-          <g transform="translate(1400 600) rotate(-90) scale(0.9)"><SolePlate col="#2E3136" /></g>
+          <g transform="translate(1360 600) rotate(-90) scale(0.85)"><SolePlate col="#2E3136" /></g>
           <line x1={1250} y1={560} x2={1250 + 360 * sn} y2={620} stroke="#C8CED4" strokeWidth={4} />
           <path d={`M1100 820 Q${1300 + 100 * sn} ${720 - 60 * sn} 1700 820`} stroke="#E8E4DA" strokeWidth={6} fill="none" />
         </svg>
         {X.map((t, i) => <div key={i} style={{ position: "absolute", left: 260 + i * 300 - 70, top: 540, opacity: lin(f, 12 + i * 6, 20 + i * 6) }}><Tick ok={false} s={140} k={lin(f, 12 + i * 6, 24 + i * 6)} /></div>)}
-        {X.map((t, i) => <div key={i} style={{ position: "absolute", left: 260 + i * 300, top: 720, translate: "-50% 0", fontFamily: HAND, fontSize: 46, color: CL.ink, whiteSpace: "nowrap", opacity: lin(f, 8 + i * 6, 16 + i * 6) }}>{t}</div>)}
+        {X.map((t, i) => <div key={i} style={{ position: "absolute", left: 260 + i * 300, top: 720, translate: "-50% 0", fontFamily: LABEL, fontWeight: 700, fontSize: 40, color: CL.navy, whiteSpace: "nowrap", padding: "6px 18px", background: "#FFF8EA", borderRadius: 16, boxShadow: "0 18px 40px rgba(0,0,0,0.28)", border: "3px solid #E6DAC2", opacity: lin(f, 8 + i * 6, 16 + i * 6) }}>{t}</div>)}
         <Tag x={1150} y={920} text="una raya engancha la tela para siempre" k={sn * 2} color={CL.red} />
       </Hand2D>
       <RoomLight />
@@ -452,14 +453,16 @@ export const PlRagTest: React.FC<{ bed?: string }> = ({ bed }) => {
       <Hand2D seed={615} push={[1.04, 1.0]}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           <path d="M180 520 L1600 480 Q1780 500 1760 620 L1600 760 L180 780 Z" fill="#7C8FA6" />
-          <path d="M360 500 L1460 490 L1480 770 L340 780 Z" fill="#FFFFFF" stroke="#E5E1D8" strokeWidth={4} />
-          <Iron x={380 + 1000 * (((pass * 3) % 1))} y={640} s={0.8} rot={-4} />
+          <path d="M360 500 L1460 490 L1480 770 L340 780 Z" fill="#FFFFFF" stroke="#CFC9BC" strokeWidth={5} />
+          {[0, 1, 2, 3].map((i) => <path key={i} d={`M${420 + i * 260} 505 Q${470 + i * 260} 640 ${430 + i * 260} 772`} stroke="rgba(0,0,0,0.07)" strokeWidth={14} fill="none" />)}
+          {Array.from({ length: 36 }, (_, i) => <line key={i} x1={345 + i * 32} y1={778 - i * 0.3} x2={341 + i * 32 + (rnd(i) - 0.5) * 8} y2={806 - i * 0.3} stroke="#E2DDD2" strokeWidth={4} />)}
+          <Iron x={420 + 900 * (((pass * 3) % 1))} y={620} s={1.2} rot={-4} />
           <defs><linearGradient id="plLight" x1="0" x2="1"><stop offset="0" stopColor="rgba(255,240,190,0)" /><stop offset="0.5" stopColor="rgba(255,240,190,0.75)" /><stop offset="1" stopColor="rgba(255,240,190,0)" /></linearGradient></defs>
           {light > 0 ? <rect x={200 + 1300 * light} y={480} width={260} height={320} fill="url(#plLight)" /> : null}
         </svg>
         <Tag x={300} y={880} text="un trapo viejo, blanco" k={lin(f, 4, 14)} />
         <Tag x={1100} y={880} text="sin una gota · sin una escama" k={lin(f, T * 0.7, T * 0.8)} />
-        <Stamp text="LISTA" at={Math.round(T * 0.82)} x="78%" y="28%" size={74} rot={-6} />
+        <Stamp text="LISTA" at={Math.round(T * 0.82)} x="52%" y="38%" size={74} rot={-6} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -476,15 +479,15 @@ export const PlEmptyTank: React.FC<{ bed?: string }> = ({ bed }) => {
       <Hand2D seed={616}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           {[0, 1].map((s) => { const x = s ? 1340 : 580; return <g key={s} transform={`translate(${x} 560)`}>
-            <rect x={-260} y={-220} width={520} height={440} rx={40} fill="rgba(215,235,250,0.5)" stroke="#8FA3B5" strokeWidth={8} />
-            {!s ? <><rect x={-240} y={20} width={480} height={180} fill="rgba(140,190,230,0.6)" />
+            <rect x={-260} y={-220} width={520} height={440} rx={40} fill="rgba(215,235,250,0.7)" stroke="#2F6FB3" strokeWidth={10} />
+            {!s ? <><rect x={-240} y={20} width={480} height={180} fill="rgba(110,170,225,0.85)" />
               {Array.from({ length: Math.round(40 * d) }, (_, i) => <rect key={i} x={-230 + rnd(i) * 460} y={180 - rnd(i + 1) * 30 - (i % 3 === 0 ? 0 : 0)} width={14} height={8} fill={SCALE} />)}
-              <rect x={-240} y={190 - 16 * d} width={480} height={16 * d} fill={SCALE} />
+              <rect x={-240} y={190 - 34 * d} width={480} height={34 * d} fill={SCALE} stroke="#B9AE96" strokeWidth={2} />
               <rect x={-245} y={20} width={8} height={170} fill={SCALE} opacity={d} /><rect x={237} y={20} width={8} height={170} fill={SCALE} opacity={d} /></>
               : null}
           </g>; })}
         </svg>
-        <div style={{ position: "absolute", left: 480, top: 120, fontFamily: SERIF, fontWeight: 900, fontSize: 90, color: CL.navy, fontVariantNumeric: "tabular-nums" }}>día {day}</div>
+        <div style={{ position: "absolute", left: 580, top: 420, translate: "-50% 0", fontFamily: SERIF, fontWeight: 900, fontSize: 80, color: CL.navy, fontVariantNumeric: "tabular-nums", padding: "4px 28px", background: "#FFF8EA", borderRadius: 16, boxShadow: "0 18px 40px rgba(0,0,0,0.28)", border: "3px solid #E6DAC2" }}>día {day}</div>
         <Tag x={440} y={880} text="agua quieta adentro" k={lin(f, 4, 14)} color={CL.red} />
         <Tag x={1180} y={880} text="vacía y tibia: limpia" k={lin(f, T * 0.5, T * 0.6)} />
       </Hand2D>
@@ -522,14 +525,14 @@ export const PlIronRow: React.FC<{ bed?: string }> = ({ bed }) => {
   const scan = lin(f, T * 0.25, T * 0.9); const N = 6;
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
-      <Bed src={bed} seed={618} dim={0.35} />
+      <Bed src={bed} seed={618} dim={0.62} />
       <Hand2D seed={618}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           <rect x={120} y={720} width={1680} height={40} fill="#9A7048" stroke="#6E4E2E" strokeWidth={4} />
           {Array.from({ length: N }, (_, i) => { const p = pop(f, fps, 2 + i * 4, 11); return <g key={i} transform={`translate(${260 + i * 280} ${720 - (1 - p) * 300}) rotate(-90)`} opacity={p}><Iron x={185} y={0} s={0.65} tank={0} body={i % 2 ? "#3D7FBF" : "#3A9A8A"} /></g>; })}
           <rect x={160 + scan * 1600} y={120} width={6} height={600} fill={hexA(CL.yellow, 0.7)} />
         </svg>
-        {Array.from({ length: N }, (_, i) => <div key={i} style={{ position: "absolute", left: 230 + i * 280, top: 800, opacity: scan * N > i + 0.5 ? 1 : 0 }}><Tick ok s={80} k={clamp01(scan * N - i - 0.5) * 2} /></div>)}
+        {Array.from({ length: N }, (_, i) => <div key={i} style={{ position: "absolute", left: 220 + i * 280, top: 790, opacity: scan * N > i + 0.5 ? 1 : 0 }}><Tick ok s={110} k={clamp01(scan * N - i - 0.5) * 2} /></div>)}
         <Tag x={160} y={960} text="vacías · secas · paradas · en fila" k={lin(f, 6, 16)} />
         <Tag x={1300} y={960} text="Rosa pasaba revista" k={lin(f, T * 0.3, T * 0.4)} color={CL.brass} />
       </Hand2D>
@@ -547,9 +550,9 @@ export const PlFiveErrors: React.FC<{ hi?: number; bed?: string }> = ({ hi = 1, 
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
       <Bed src={bed} seed={619} dim={0.35} />
       <Hand2D seed={619}>
-        <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}><path d="M80 820 L1650 780 Q1860 800 1840 900 L1650 1000 L80 1010 Z" fill="#7C8FA6" /></svg>
+        <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}><path d="M120 760 L1650 740 Q1860 760 1840 830 L1650 880 L120 890 Z" fill="#7C8FA6" stroke="#4E5F75" strokeWidth={5} /><path d="M500 885 L760 1080 M1300 880 L1040 1080" stroke="#8E969F" strokeWidth={18} strokeLinecap="round" /></svg>
         {E.map((e, i) => { const a = (i - 2) * 5 * fan; const up = i + 1 === hi ? ease(lin(f, 20, 34)) : 0; return (
-          <div key={i} style={{ position: "absolute", left: 790 + (i - 2) * 350 * fan, top: 250 + Math.abs(i - 2) * 30 * fan, width: 320, height: 460, transformOrigin: "50% 100%", transform: `rotate(${a}deg) translateY(${-70 * up}px) scale(${1 + 0.1 * up})`, zIndex: i + 1 === hi ? 10 : i, background: i + 1 === hi ? "#FFFFFF" : "#F1EDE4", borderRadius: 14, border: `6px solid ${i + 1 === hi ? CL.red : "#D8D1C2"}`, boxShadow: `0 20px 40px ${CL.shadow}`, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", padding: 24 }}>
+          <div key={i} style={{ position: "absolute", left: 800 + (i - 2) * 335 * fan, top: 230 + Math.abs(i - 2) * 30 * fan, width: 320, height: 460, transformOrigin: "50% 100%", transform: `rotate(${a}deg) translateY(${-70 * up}px) scale(${1 + 0.1 * up})`, zIndex: i + 1 === hi ? 10 : i, background: i + 1 === hi ? "#FFFFFF" : "#F1EDE4", borderRadius: 14, border: `6px solid ${i + 1 === hi ? CL.red : "#D8D1C2"}`, boxShadow: `0 20px 40px ${CL.shadow}`, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", padding: 24 }}>
             <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 120, color: i + 1 === hi ? CL.red : "#9A9384", lineHeight: 1 }}>{i + 1}</div>
             <div style={{ fontFamily: LABEL, fontSize: 42, color: CL.ink, marginTop: 16, opacity: i + 1 === hi ? 1 : 0.7 }}>{e}</div>
           </div>); })}
@@ -568,12 +571,12 @@ export const PlStarch: React.FC<{ bed?: string }> = ({ bed }) => {
       <Bed src={bed} seed={620} dim={0.35} />
       <Hand2D seed={620}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
-          <rect x={200} y={620} width={1520} height={320} rx={20} fill={SHIRT} stroke="#DDD8CC" strokeWidth={4} />
+          <rect x={500} y={660} width={920} height={260} rx={20} fill={SHIRT} stroke="#C9C2B4" strokeWidth={5} /><path d="M520 700 Q960 680 1400 700" stroke="rgba(0,0,0,0.06)" strokeWidth={14} fill="none" />
           <g transform="translate(360 320) rotate(20)"><rect x={-50} y={-40} width={100} height={260} rx={20} fill="#E7E2F2" stroke="#8D82B5" strokeWidth={4} /><rect x={-24} y={-80} width={48} height={50} rx={6} fill="#5B4E8C" /></g>
           {Array.from({ length: 50 }, (_, i) => { const t = ((f * 1.5 + i * 5) % 30) / 30; return <circle key={i} cx={420 + t * (300 + rnd(i) * 400)} cy={280 + t * (300 + rnd(i + 1) * 120)} r={3 + rnd(i + 2) * 4} fill="rgba(200,210,230,0.9)" opacity={spray > 0 && spray < 1 ? 1 - t : 0} />; })}
-          {Array.from({ length: 40 }, (_, i) => <circle key={i} cx={700 + rnd(i) * 600} cy={660 + rnd(i + 1) * 240} r={5} fill="rgba(190,200,215,0.8)" opacity={spray * (1 - wait)} />)}
+          {Array.from({ length: 40 }, (_, i) => <circle key={i} cx={560 + rnd(i) * 800} cy={690 + rnd(i + 1) * 200} r={6} fill="rgba(190,200,215,0.8)" opacity={spray * (1 - wait)} />)}
           <g opacity={iron > 0 ? 1 : 0}><Iron x={1700 - 700 * iron} y={720} s={1} rot={-4} /></g>
-          <g transform="translate(1500 300)"><circle r={110} fill="#FFFFFF" stroke={CL.navy} strokeWidth={8} />{wait >= 0.99 ? <circle r={90} fill={hexA(CL.yellow, 0.8)} /> : <path d={`M0 0 L0 -90 A90 90 0 ${wait > 0.5 ? 1 : 0} 1 ${Math.sin(wait * Math.PI * 2) * 90} ${-Math.cos(wait * Math.PI * 2) * 90} Z`} fill={hexA(CL.yellow, 0.8)} />}</g>
+          <g transform="translate(1500 300)"><circle r={110} fill="#FFFFFF" stroke={CL.navy} strokeWidth={8} />{wait >= 0.99 ? <circle r={90} fill={hexA(CL.yellow, 0.8)} /> : <path d={`M0 0 L0 -90 A90 90 0 ${wait > 0.5 ? 1 : 0} 1 ${Math.sin(wait * Math.PI * 2) * 90} ${-Math.cos(wait * Math.PI * 2) * 90} Z`} fill={hexA(CL.yellow, 0.8)} />}<line x1={0} y1={0} x2={Math.sin(wait * Math.PI * 2) * 80} y2={-Math.cos(wait * Math.PI * 2) * 80} stroke={CL.navy} strokeWidth={10} strokeLinecap="round" /><circle r={12} fill={CL.navy} /></g>
         </svg>
         <Tag x={170} y={560} text="1 · rocíe" k={lin(f, 4, 12)} />
         <Tag x={1330} y={460} text="2 · espere unos segundos" k={lin(f, T * 0.3, T * 0.38)} />
@@ -594,11 +597,11 @@ export const PlRoutine: React.FC<{ bed?: string }> = ({ bed }) => {
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
       <Bed src={bed} seed={621} dim={0.3} />
       <Hand2D seed={621}>
-        <div style={{ position: "absolute", left: 200, top: 90, width: 1060, rotate: `${2 - 2 * p}deg`, translate: `0 ${(1 - p) * -900}px` }}>
+        <div style={{ position: "absolute", left: 170, top: 170, width: 1060, rotate: `${2 - 2 * p}deg`, translate: `0 ${(1 - p) * -900}px` }}>
           <div style={{ position: "absolute", left: 480, top: -40, width: 100, height: 60, borderRadius: 10, background: "#8C8F94" }} />
           <div style={{ background: "#FFFDF6", borderRadius: 8, boxShadow: `0 40px 80px ${CL.shadow}`, padding: "60px 60px 40px" }}>
-            <div style={{ fontFamily: LABEL, fontSize: 36, letterSpacing: 4, color: CL.inkSoft, marginBottom: 20 }}>CUARTO DE PLANCHADO · LIMPIEZA</div>
-            {S.map(([t, m], i) => <div key={i} style={{ display: "flex", alignItems: "center", gap: 22, height: 120, borderTop: "2px solid #E3DCCF", opacity: 0.35 + 0.65 * step(i) }}>
+            
+            {S.map(([t, m], i) => <div key={i} style={{ display: "flex", alignItems: "center", gap: 22, height: 120, borderTop: "2px solid #E3DCCF", opacity: 0.75 + 0.25 * step(i) }}>
               <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: CL.brass, width: 50 }}>{i + 1}</div>
               <div style={{ flex: 1, fontFamily: HAND, fontSize: 50, color: CL.ink }}>{t}</div>
               <div style={{ fontFamily: LABEL, fontSize: 40, color: CL.navy }}>{m} min</div>
@@ -606,8 +609,8 @@ export const PlRoutine: React.FC<{ bed?: string }> = ({ bed }) => {
             </div>)}
           </div>
         </div>
-        <div style={{ position: "absolute", left: 1340, top: 380, opacity: p }}>
-          <div style={{ fontFamily: LABEL, fontSize: 36, color: CL.inkSoft, letterSpacing: 3 }}>TOTAL</div>
+        <div style={{ position: "absolute", left: 1300, top: 340, opacity: p, padding: "24px 36px", background: "#FFF8EA", borderRadius: 16, boxShadow: "0 18px 40px rgba(0,0,0,0.28)", border: "3px solid #E6DAC2" }}>
+          <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40, color: CL.inkSoft, letterSpacing: 4 }}>TOTAL</div>
           <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 120, whiteSpace: "nowrap", color: CL.navy, lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{Math.round(sum)} min</div>
           <div style={{ fontFamily: HAND, fontSize: 50, color: CL.ink, opacity: lin(f, T * 0.8, T * 0.9), width: 520 }}>y recién ahí, la camisa</div>
         </div>
@@ -632,7 +635,7 @@ export const PlWaterSrc: React.FC<{ bed?: string }> = ({ bed }) => {
               <rect x={130} y={30} width={180} height={40} rx={8} fill={ok ? "#2F6FB3" : "#777"} />
               {!ok ? Array.from({ length: 30 }, (_, k) => <circle key={k} cx={100 + rnd(k + i * 40) * 240} cy={250 + rnd(k + 1 + i * 40) * 180} r={3 + rnd(k + 2) * 4} fill="rgba(100,95,70,0.6)" />) : null}
             </svg>
-            <div style={{ fontFamily: HAND, fontSize: 50, color: CL.ink }}>{t}</div>
+            <div style={{ display: "inline-block", fontFamily: LABEL, fontWeight: 700, fontSize: 44, color: CL.navy, padding: "6px 22px", background: "#FFF8EA", borderRadius: 16, boxShadow: "0 18px 40px rgba(0,0,0,0.28)", border: "3px solid #E6DAC2" }}>{t}</div>
             <div style={{ display: "flex", justifyContent: "center", marginTop: 6 }}><Tick ok={ok} s={100} k={lin(f, 12 + i * T * 0.2, 24 + i * T * 0.2)} /></div>
           </div>); })}
         <Tag x={300} y={960} text="polvo, mugre y bacterias: para las plantas" k={lin(f, T * 0.45, T * 0.55)} color={CL.red} />
@@ -652,8 +655,10 @@ export const PlWhenToss: React.FC<{ bed?: string }> = ({ bed }) => {
       <Hand2D seed={623}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           <Iron x={480} y={760} s={1.6} rot={-8} />
+          <g transform="translate(160 960) rotate(-10)"><rect x={-40} y={-26} width={70} height={52} rx={9} fill="#333" /><rect x={30} y={-14} width={26} height={7} fill="#999" /><rect x={30} y={6} width={26} height={7} fill="#999" /></g>
           {Array.from({ length: 6 }, (_, i) => { const t = ((f + i * 10) % 40) / 40; return <ellipse key={i} cx={560 + i * 12} cy={770 + t * 220} rx={8} ry={12} fill="#7FB6E0" opacity={(1 - t) * lin(f, T * 0.35, T * 0.4)} />; })}
         </svg>
+        <div style={{ position: "absolute", left: 860, top: 210, width: 960, height: 540, opacity: lin(f, 4, 12), background: "#FFF8EA", borderRadius: 16, boxShadow: "0 18px 40px rgba(0,0,0,0.28)", border: "3px solid #E6DAC2" }} />
         {R.map((r, i) => { const k = lin(f, 8 + i * T * 0.22, 18 + i * T * 0.22); return <div key={i} style={{ position: "absolute", left: 900, top: 260 + i * 170, display: "flex", alignItems: "center", gap: 24, opacity: k, translate: `${(1 - k) * 80}px 0` }}>
           <div style={{ width: 70, height: 70, borderRadius: "50%", background: CL.red, color: "#fff", fontFamily: SERIF, fontWeight: 900, fontSize: 48, display: "flex", alignItems: "center", justifyContent: "center" }}>{i + 1}</div>
           <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 52, color: CL.navy, whiteSpace: "nowrap" }}>{r}</div></div>; })}

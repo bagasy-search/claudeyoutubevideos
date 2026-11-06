@@ -544,7 +544,7 @@ export const TbBookTub: React.FC<{ page: string; cover: string; qr?: string; pag
         {/* borde de la tina en primer plano */}
         <div style={{ position: "absolute", left: -40, right: -40, top: 820, height: 320, background: `linear-gradient(180deg, #FFFFFF 0%, ${ACR} 40%, #E9E4DA 100%)`, borderRadius: "60px 60px 0 0", boxShadow: "0 -10px 40px rgba(0,0,0,0.1)" }} />
         <Contact x={820} y={850} w={1000} o={0.3} />
-        <div style={{ position: "absolute", left: 820, top: 80 + (1 - drop) * -900, translate: "-50% 0", rotate: `${(1 - drop) * -12 - 2}deg`, perspective: 2000 }}>
+        <div style={{ position: "absolute", left: 820, top: 160 + (1 - drop) * -900, translate: "-50% 0", rotate: `${(1 - drop) * -12 - 2}deg`, perspective: 2000 }}>
           <div style={{ display: "flex", transform: "perspective(2200px) rotateX(18deg)" }}>
             <div style={{ width: 520, height: 680, transformOrigin: "100% 50%", transform: `perspective(2000px) rotateY(${-170 * open}deg)`, backfaceVisibility: "hidden", boxShadow: `0 30px 60px ${CL.shadow}` }}>
               <Img src={staticFile(cover)} style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: 6 }} />
@@ -554,8 +554,8 @@ export const TbBookTub: React.FC<{ page: string; cover: string; qr?: string; pag
             </div>
           </div>
         </div>
-        <div style={{ position: "absolute", left: 1150, top: 120, opacity: lin(f, 40, 52) }}><Stamp text={`página ${pageNo}`} at={42} color={CL.navy} x={180} y={40} rot={-6} size={58} /></div>
-        {qr ? <div style={{ position: "absolute", left: 1420, top: 360, scale: String(kq), rotate: `${(1 - kq) * 20 + 4}deg` }}>
+        <div style={{ position: "absolute", left: 1150, top: 180, opacity: lin(f, 40, 52) }}><Stamp text={`página ${pageNo}`} at={42} color={CL.navy} x={180} y={40} rot={-6} size={58} /></div>
+        {qr ? <div style={{ position: "absolute", left: 1470, top: 420, scale: String(kq), rotate: `${(1 - kq) * 20 + 4}deg` }}>
           <Card style={{ padding: 22 }}><Img src={staticFile(qr)} style={{ width: 300, display: "block" }} /><div style={{ fontFamily: LABEL, fontSize: 28, textAlign: "center", marginTop: 10, color: CL.navy, letterSpacing: 2 }}>LINK EN LA DESCRIPCIÓN</div></Card>
           <Tape x={110} y={-16} rot={-5} />
         </div> : null}
