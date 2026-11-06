@@ -147,7 +147,8 @@
     }
    ],
    "bg": "n_dos_lugares",
-   "mode": "shutter"
+   "mode": "shutter",
+   "lab": "EL TOPE"
   },
   {
    "k": "weights",
