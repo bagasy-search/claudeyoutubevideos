@@ -1,0 +1,1391 @@
+{
+"end": 1263.35,
+"shots": [
+{
+"a": 4.687,
+"b": 8.687,
+"k": "img",
+"id": "c_driveway_crash",
+"seed": 0
+},
+{
+"a": 8.687,
+"b": 13.687,
+"k": "img",
+"id": "c_eyes_trashcan",
+"seed": 1
+},
+{
+"a": 13.687,
+"b": 16.074,
+"k": "world",
+"id": "world"
+},
+{
+"a": 20.715,
+"b": 25.715,
+"k": "img",
+"id": "c4_coffee_lawn",
+"seed": 2
+},
+{
+"a": 25.715,
+"b": 29.715,
+"k": "img",
+"id": "c_yogurt_car",
+"seed": 3
+},
+{
+"a": 29.715,
+"b": 30.975,
+"k": "world",
+"id": "world"
+},
+{
+"a": 34.815,
+"b": 38.815,
+"k": "img",
+"id": "c4_trap_price",
+"seed": 4
+},
+{
+"a": 38.815,
+"b": 42.815,
+"k": "img",
+"id": "c4_persimmon_old",
+"seed": 5
+},
+{
+"a": 42.815,
+"b": 46.211,
+"k": "img",
+"id": "c4_three_jars",
+"seed": 6
+},
+{
+"a": 51.651,
+"b": 56.651,
+"k": "img",
+"id": "c_kitchen_three",
+"seed": 7
+},
+{
+"a": 56.651,
+"b": 61.566,
+"k": "img",
+"id": "c4_bungee_lid",
+"seed": 8
+},
+{
+"a": 66.873,
+"b": 71.873,
+"k": "img",
+"id": "c4_raccoon_remember",
+"seed": 9
+},
+{
+"a": 71.873,
+"b": 76.873,
+"k": "img",
+"id": "n_garden_1970",
+"seed": 10
+},
+{
+"a": 76.873,
+"b": 79.932,
+"k": "world",
+"id": "world"
+},
+{
+"a": 85.743,
+"b": 90.743,
+"k": "img",
+"id": "c_raccoon_hands",
+"seed": 11
+},
+{
+"a": 90.743,
+"b": 97.975,
+"k": "world",
+"id": "world"
+},
+{
+"a": 103.661,
+"b": 107.1,
+"k": "world",
+"id": "world"
+},
+{
+"a": 107.1,
+"b": 111.1,
+"k": "img",
+"id": "c4_raccoon_growl",
+"seed": 12
+},
+{
+"a": 111.1,
+"b": 113.397,
+"k": "img",
+"id": "c4_raccoon_standing",
+"seed": 13
+},
+{
+"a": 117.509,
+"b": 125.06,
+"k": "world",
+"id": "world"
+},
+{
+"a": 125.06,
+"b": 129.97,
+"k": "img",
+"id": "c_gloves_mask",
+"seed": 14
+},
+{
+"a": 134.968,
+"b": 138.76,
+"k": "world",
+"id": "world"
+},
+{
+"a": 138.76,
+"b": 143.76,
+"k": "img",
+"id": "n_wall_phone",
+"seed": 15
+},
+{
+"a": 143.76,
+"b": 146.315,
+"k": "world",
+"id": "world"
+},
+{
+"a": 151.38,
+"b": 156.38,
+"k": "img",
+"id": "c4_tanuki_wild",
+"seed": 16
+},
+{
+"a": 156.38,
+"b": 161.38,
+"k": "img",
+"id": "c4_tanuki_figure",
+"seed": 17
+},
+{
+"a": 161.38,
+"b": 161.674,
+"k": "world",
+"id": "world"
+},
+{
+"a": 165.514,
+"b": 171.514,
+"k": "img",
+"id": "c_tanuki_statue",
+"seed": 18
+},
+{
+"a": 171.514,
+"b": 178.276,
+"k": "world",
+"id": "world"
+},
+{
+"a": 183.716,
+"b": 188.716,
+"k": "img",
+"id": "n_osaka_1957",
+"seed": 19
+},
+{
+"a": 188.716,
+"b": 194.326,
+"k": "img",
+"id": "c_tanuki_garden",
+"seed": 20
+},
+{
+"a": 198.928,
+"b": 203.928,
+"k": "img",
+"id": "c_osaka_sweetpotato",
+"seed": 21
+},
+{
+"a": 203.928,
+"b": 208.928,
+"k": "img",
+"id": "c_brick_pushed",
+"seed": 22
+},
+{
+"a": 208.928,
+"b": 211.27,
+"k": "img",
+"id": "c_ohio_brick",
+"seed": 23
+},
+{
+"a": 215.41,
+"b": 221.41,
+"k": "img",
+"id": "c4_bricks_lawn",
+"seed": 24
+},
+{
+"a": 221.41,
+"b": 221.8,
+"k": "world",
+"id": "world"
+},
+{
+"a": 221.8,
+"b": 226.8,
+"k": "img",
+"id": "c_trap_cage",
+"seed": 25
+},
+{
+"a": 226.8,
+"b": 228.276,
+"k": "img",
+"id": "c4_hardware_aisle",
+"seed": 26
+},
+{
+"a": 233.846,
+"b": 235.62,
+"k": "world",
+"id": "world"
+},
+{
+"a": 235.62,
+"b": 240.62,
+"k": "img",
+"id": "n_old_kitchen",
+"seed": 27
+},
+{
+"a": 240.62,
+"b": 241.1,
+"k": "world",
+"id": "world"
+},
+{
+"a": 241.1,
+"b": 243.5,
+"k": "img",
+"id": "c4_birdseed",
+"seed": 28
+},
+{
+"a": 248.483,
+"b": 252.483,
+"k": "img",
+"id": "c_catfood_porch",
+"seed": 29
+},
+{
+"a": 252.483,
+"b": 256.483,
+"k": "img",
+"id": "c_grill_grease",
+"seed": 30
+},
+{
+"a": 256.483,
+"b": 257.64,
+"k": "world",
+"id": "world"
+},
+{
+"a": 257.64,
+"b": 262.64,
+"k": "img",
+"id": "n_shed_gap",
+"seed": 31
+},
+{
+"a": 262.64,
+"b": 262.901,
+"k": "world",
+"id": "world"
+},
+{
+"a": 269.015,
+"b": 272.26,
+"k": "world",
+"id": "world"
+},
+{
+"a": 272.26,
+"b": 277.26,
+"k": "img",
+"id": "c_droppings_log",
+"seed": 32
+},
+{
+"a": 277.26,
+"b": 280.016,
+"k": "world",
+"id": "world"
+},
+{
+"a": 283.511,
+"b": 288.511,
+"k": "img",
+"id": "n_paw_print",
+"seed": 33
+},
+{
+"a": 288.511,
+"b": 289.74,
+"k": "world",
+"id": "world"
+},
+{
+"a": 289.74,
+"b": 294.091,
+"k": "img",
+"id": "c_tracks_mud",
+"seed": 34
+},
+{
+"a": 297.37,
+"b": 305.32,
+"k": "world",
+"id": "world"
+},
+{
+"a": 305.32,
+"b": 310.32,
+"k": "img",
+"id": "c_lawn_garbage",
+"seed": 35
+},
+{
+"a": 310.32,
+"b": 310.63,
+"k": "world",
+"id": "world"
+},
+{
+"a": 314.123,
+"b": 320.123,
+"k": "img",
+"id": "c4_torn_bag",
+"seed": 36
+},
+{
+"a": 320.123,
+"b": 323.791,
+"k": "img",
+"id": "c4_grub_holes",
+"seed": 37
+},
+{
+"a": 327.465,
+"b": 328.603,
+"k": "world",
+"id": "world"
+},
+{
+"a": 328.603,
+"b": 333.603,
+"k": "img",
+"id": "n_lawn_flipped",
+"seed": 38
+},
+{
+"a": 333.603,
+"b": 337.984,
+"k": "world",
+"id": "world"
+},
+{
+"a": 341.93,
+"b": 344.403,
+"k": "world",
+"id": "world"
+},
+{
+"a": 344.403,
+"b": 349.403,
+"k": "img",
+"id": "c_corn_pulled",
+"seed": 39
+},
+{
+"a": 349.403,
+"b": 353.889,
+"k": "world",
+"id": "world"
+},
+{
+"a": 359.729,
+"b": 364.729,
+"k": "img",
+"id": "c_corn_silk",
+"seed": 40
+},
+{
+"a": 364.729,
+"b": 370.489,
+"k": "world",
+"id": "world"
+},
+{
+"a": 376.38,
+"b": 381.38,
+"k": "img",
+"id": "c4_corn_night",
+"seed": 41
+},
+{
+"a": 381.38,
+"b": 387.38,
+"k": "img",
+"id": "c_radio_garden",
+"seed": 42
+},
+{
+"a": 387.38,
+"b": 389.251,
+"k": "img",
+"id": "c4_radio_dial",
+"seed": 43
+},
+{
+"a": 394.948,
+"b": 397.323,
+"k": "world",
+"id": "world"
+},
+{
+"a": 397.323,
+"b": 402.323,
+"k": "img",
+"id": "n_neighbor_fence",
+"seed": 44
+},
+{
+"a": 402.323,
+"b": 405.484,
+"k": "world",
+"id": "world"
+},
+{
+"a": 410.616,
+"b": 416.943,
+"k": "world",
+"id": "world"
+},
+{
+"a": 416.943,
+"b": 421.106,
+"k": "img",
+"id": "c_letter_seed",
+"seed": 45
+},
+{
+"a": 425.774,
+"b": 431.774,
+"k": "img",
+"id": "c_persimmon_tree",
+"seed": 46
+},
+{
+"a": 431.774,
+"b": 434.423,
+"k": "world",
+"id": "world"
+},
+{
+"a": 434.423,
+"b": 438.217,
+"k": "fx",
+"id": "MetalSkirt",
+"seed": 47
+},
+{
+"a": 443.906,
+"b": 449.023,
+"k": "world",
+"id": "world"
+},
+{
+"a": 449.023,
+"b": 454.023,
+"k": "img",
+"id": "n_metal_band",
+"seed": 48
+},
+{
+"a": 454.023,
+"b": 455.166,
+"k": "world",
+"id": "world"
+},
+{
+"a": 460.313,
+"b": 472.682,
+"k": "world",
+"id": "world"
+},
+{
+"a": 476.74,
+"b": 481.783,
+"k": "world",
+"id": "world"
+},
+{
+"a": 481.783,
+"b": 486.783,
+"k": "img",
+"id": "c_togarashi_string",
+"seed": 49
+},
+{
+"a": 486.783,
+"b": 489.33,
+"k": "img",
+"id": "c_stone_mortar",
+"seed": 50
+},
+{
+"a": 494.381,
+"b": 498.103,
+"k": "world",
+"id": "world"
+},
+{
+"a": 498.103,
+"b": 503.103,
+"k": "img",
+"id": "n_raccoon_sniff",
+"seed": 51
+},
+{
+"a": 503.103,
+"b": 504.853,
+"k": "world",
+"id": "world"
+},
+{
+"a": 509.7,
+"b": 514.7,
+"k": "img",
+"id": "c4_lid_sprayed",
+"seed": 52
+},
+{
+"a": 514.7,
+"b": 516.943,
+"k": "world",
+"id": "world"
+},
+{
+"a": 516.943,
+"b": 522.643,
+"k": "img",
+"id": "c4_raccoon_path",
+"seed": 53
+},
+{
+"a": 528.351,
+"b": 536.351,
+"k": "veo",
+"id": "c01_cayenne_mix",
+"seed": 54,
+"fb": "c_spray_bottle"
+},
+{
+"a": 536.351,
+"b": 538.228,
+"k": "world",
+"id": "world"
+},
+{
+"a": 542.668,
+"b": 549.668,
+"k": "veo",
+"id": "c02_spray_lid",
+"seed": 55,
+"fb": "c_spray_bottle"
+},
+{
+"a": 549.668,
+"b": 553.21,
+"k": "img",
+"id": "c_rain_porch",
+"seed": 56
+},
+{
+"a": 558.994,
+"b": 560.903,
+"k": "world",
+"id": "world"
+},
+{
+"a": 560.903,
+"b": 564.903,
+"k": "img",
+"id": "c4_powder_ground",
+"seed": 57
+},
+{
+"a": 564.903,
+"b": 566.263,
+"k": "world",
+"id": "world"
+},
+{
+"a": 566.263,
+"b": 570.263,
+"k": "img",
+"id": "c4_cat_porch",
+"seed": 58
+},
+{
+"a": 570.263,
+"b": 571.524,
+"k": "world",
+"id": "world"
+},
+{
+"a": 575.205,
+"b": 579.205,
+"k": "img",
+"id": "c4_spray_mix",
+"seed": 59
+},
+{
+"a": 579.205,
+"b": 581.823,
+"k": "world",
+"id": "world"
+},
+{
+"a": 581.823,
+"b": 585.623,
+"k": "img",
+"id": "n_vinegar_jug",
+"seed": 60
+},
+{
+"a": 589.567,
+"b": 593.303,
+"k": "world",
+"id": "world"
+},
+{
+"a": 593.303,
+"b": 599.303,
+"k": "fx",
+"id": "ScreamRings",
+"seed": 61
+},
+{
+"a": 599.303,
+"b": 601.673,
+"k": "img",
+"id": "c_engawa",
+"seed": 62
+},
+{
+"a": 605.52,
+"b": 609.52,
+"k": "img",
+"id": "c_rice_vinegar",
+"seed": 63
+},
+{
+"a": 609.52,
+"b": 611.783,
+"k": "world",
+"id": "world"
+},
+{
+"a": 611.783,
+"b": 616.783,
+"k": "img",
+"id": "n_empty_den",
+"seed": 64
+},
+{
+"a": 616.783,
+"b": 617.998,
+"k": "world",
+"id": "world"
+},
+{
+"a": 624.288,
+"b": 631.288,
+"k": "veo",
+"id": "c03_jar_holes",
+"seed": 65,
+"fb": "c_jar_punched"
+},
+{
+"a": 631.288,
+"b": 635.523,
+"k": "veo",
+"id": "c04_vinegar_rag",
+"seed": 66,
+"fb": "c_jar_punched"
+},
+{
+"a": 640.211,
+"b": 645.211,
+"k": "img",
+"id": "c_jar_punched",
+"seed": 67
+},
+{
+"a": 645.211,
+"b": 653.309,
+"k": "world",
+"id": "world"
+},
+{
+"a": 658.397,
+"b": 662.406,
+"k": "world",
+"id": "world"
+},
+{
+"a": 662.406,
+"b": 670.656,
+"k": "img",
+"id": "c4_den_hole",
+"seed": 68
+},
+{
+"a": 675.358,
+"b": 682.358,
+"k": "veo",
+"id": "c05_newspaper_test",
+"seed": 69,
+"fb": "c_porch_gap"
+},
+{
+"a": 682.358,
+"b": 685.666,
+"k": "img",
+"id": "c_newspaper_pushed",
+"seed": 70
+},
+{
+"a": 689.506,
+"b": 694.506,
+"k": "img",
+"id": "c_porch_gap",
+"seed": 71
+},
+{
+"a": 694.506,
+"b": 700.506,
+"k": "img",
+"id": "c_baby_raccoons",
+"seed": 72
+},
+{
+"a": 700.506,
+"b": 700.733,
+"k": "world",
+"id": "world"
+},
+{
+"a": 706.173,
+"b": 711.606,
+"k": "world",
+"id": "world"
+},
+{
+"a": 711.606,
+"b": 715.606,
+"k": "img",
+"id": "c_garlic_head",
+"seed": 73
+},
+{
+"a": 715.606,
+"b": 717.605,
+"k": "world",
+"id": "world"
+},
+{
+"a": 722.445,
+"b": 729.445,
+"k": "veo",
+"id": "c06_garlic_crush",
+"seed": 74,
+"fb": "c_suribachi"
+},
+{
+"a": 729.445,
+"b": 733.459,
+"k": "world",
+"id": "world"
+},
+{
+"a": 737.025,
+"b": 738.126,
+"k": "world",
+"id": "world"
+},
+{
+"a": 738.126,
+"b": 745.126,
+"k": "veo",
+"id": "c07_strain_garlic",
+"seed": 75,
+"fb": "c_garlic_strain"
+},
+{
+"a": 745.126,
+"b": 749.101,
+"k": "img",
+"id": "n_garlic_fence",
+"seed": 76
+},
+{
+"a": 754.547,
+"b": 762.547,
+"k": "fx",
+"id": "NoseThousand",
+"seed": 77
+},
+{
+"a": 762.547,
+"b": 765.644,
+"k": "world",
+"id": "world"
+},
+{
+"a": 770.284,
+"b": 772.086,
+"k": "world",
+"id": "world"
+},
+{
+"a": 772.086,
+"b": 782.086,
+"k": "img",
+"id": "c4_garlic_bed_pour",
+"seed": 78
+},
+{
+"a": 782.086,
+"b": 783.071,
+"k": "world",
+"id": "world"
+},
+{
+"a": 788.626,
+"b": 797.626,
+"k": "img",
+"id": "c4_stolen_glove",
+"seed": 79
+},
+{
+"a": 797.626,
+"b": 799.805,
+"k": "world",
+"id": "world"
+},
+{
+"a": 803.546,
+"b": 808.546,
+"k": "img",
+"id": "c4_persimmon_basket",
+"seed": 80
+},
+{
+"a": 808.546,
+"b": 809.306,
+"k": "world",
+"id": "world"
+},
+{
+"a": 809.306,
+"b": 812.012,
+"k": "img",
+"id": "c_persimmon_eaten",
+"seed": 81
+},
+{
+"a": 815.858,
+"b": 822.858,
+"k": "veo",
+"id": "c08_pick_persimmons",
+"seed": 82,
+"fb": "c_fallen_persimmons"
+},
+{
+"a": 822.858,
+"b": 828.858,
+"k": "img",
+"id": "c4_bowl_inside",
+"seed": 83
+},
+{
+"a": 828.858,
+"b": 829.386,
+"k": "world",
+"id": "world"
+},
+{
+"a": 834.826,
+"b": 838.826,
+"k": "img",
+"id": "c_bird_feeder",
+"seed": 84
+},
+{
+"a": 838.826,
+"b": 842.826,
+"k": "img",
+"id": "c_compost_open",
+"seed": 85
+},
+{
+"a": 842.826,
+"b": 846.715,
+"k": "world",
+"id": "world"
+},
+{
+"a": 851.555,
+"b": 856.555,
+"k": "img",
+"id": "c4_garage_gap",
+"seed": 86
+},
+{
+"a": 856.555,
+"b": 857.526,
+"k": "world",
+"id": "world"
+},
+{
+"a": 857.526,
+"b": 862.526,
+"k": "img",
+"id": "c4_freezer_morning",
+"seed": 87
+},
+{
+"a": 862.526,
+"b": 864.174,
+"k": "img",
+"id": "c_freezer_open",
+"seed": 88
+},
+{
+"a": 868.355,
+"b": 873.355,
+"k": "img",
+"id": "c_corn_cobs_garage",
+"seed": 89
+},
+{
+"a": 873.355,
+"b": 875.746,
+"k": "world",
+"id": "world"
+},
+{
+"a": 875.746,
+"b": 880.216,
+"k": "img",
+"id": "c4_evening_yard",
+"seed": 90
+},
+{
+"a": 886.153,
+"b": 894.153,
+"k": "veo",
+"id": "c10_night_patrol",
+"seed": 91,
+"fb": "c_flashlight_yard"
+},
+{
+"a": 894.153,
+"b": 897.771,
+"k": "world",
+"id": "world"
+},
+{
+"a": 902.762,
+"b": 905.587,
+"k": "world",
+"id": "world"
+},
+{
+"a": 905.587,
+"b": 910.587,
+"k": "img",
+"id": "n_porch_lamp",
+"seed": 92
+},
+{
+"a": 910.587,
+"b": 915.436,
+"k": "img",
+"id": "c_motion_light",
+"seed": 93
+},
+{
+"a": 919.401,
+"b": 922.406,
+"k": "world",
+"id": "world"
+},
+{
+"a": 922.406,
+"b": 927.406,
+"k": "img",
+"id": "n_raccoon_light",
+"seed": 94
+},
+{
+"a": 927.406,
+"b": 930.028,
+"k": "world",
+"id": "world"
+},
+{
+"a": 934.9,
+"b": 940.9,
+"k": "img",
+"id": "c4_fruit_grass",
+"seed": 95
+},
+{
+"a": 940.9,
+"b": 945.078,
+"k": "img",
+"id": "c4_open_compost",
+"seed": 96
+},
+{
+"a": 948.355,
+"b": 953.355,
+"k": "img",
+"id": "c4_boarded_hole",
+"seed": 97
+},
+{
+"a": 953.355,
+"b": 958.355,
+"k": "img",
+"id": "n_broom_porch",
+"seed": 98
+},
+{
+"a": 958.355,
+"b": 961.573,
+"k": "world",
+"id": "world"
+},
+{
+"a": 967.882,
+"b": 977.882,
+"k": "img",
+"id": "c4_stones_gate",
+"seed": 99
+},
+{
+"a": 977.882,
+"b": 979.491,
+"k": "world",
+"id": "world"
+},
+{
+"a": 982.909,
+"b": 983.01,
+"k": "world",
+"id": "world"
+},
+{
+"a": 983.01,
+"b": 988.01,
+"k": "img",
+"id": "n_open_gate",
+"seed": 100
+},
+{
+"a": 988.01,
+"b": 995.019,
+"k": "world",
+"id": "world"
+},
+{
+"a": 998.756,
+"b": 1003.756,
+"k": "img",
+"id": "c_attic_insulation",
+"seed": 101
+},
+{
+"a": 1003.756,
+"b": 1007.756,
+"k": "img",
+"id": "c_chimney_cap",
+"seed": 102
+},
+{
+"a": 1007.756,
+"b": 1012.48,
+"k": "img",
+"id": "c4_roof_hole",
+"seed": 103
+},
+{
+"a": 1018.692,
+"b": 1021.55,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1021.55,
+"b": 1026.55,
+"k": "img",
+"id": "c_clap_door",
+"seed": 104
+},
+{
+"a": 1026.55,
+"b": 1027.95,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1031.928,
+"b": 1036.928,
+"k": "img",
+"id": "c_spray_bottle",
+"seed": 105
+},
+{
+"a": 1036.928,
+"b": 1045.188,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1050.132,
+"b": 1058.132,
+"k": "img",
+"id": "c4_new_raccoon",
+"seed": 106
+},
+{
+"a": 1058.132,
+"b": 1061.58,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1066.317,
+"b": 1074.317,
+"k": "img",
+"id": "c4_cayenne_jar",
+"seed": 107
+},
+{
+"a": 1074.317,
+"b": 1075.071,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1078.432,
+"b": 1087.97,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1087.97,
+"b": 1090.727,
+"k": "img",
+"id": "c_osaka_flashlight",
+"seed": 108
+},
+{
+"a": 1096.205,
+"b": 1100.91,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1100.91,
+"b": 1105.91,
+"k": "img",
+"id": "n_fish_step",
+"seed": 109
+},
+{
+"a": 1105.91,
+"b": 1106.695,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1111.535,
+"b": 1116.535,
+"k": "img",
+"id": "c4_lid_corner",
+"seed": 110
+},
+{
+"a": 1116.535,
+"b": 1117.25,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1117.25,
+"b": 1122.25,
+"k": "img",
+"id": "c4_brick_grass",
+"seed": 111
+},
+{
+"a": 1122.25,
+"b": 1123.265,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1128.305,
+"b": 1132.305,
+"k": "img",
+"id": "c_bungee",
+"seed": 112
+},
+{
+"a": 1132.305,
+"b": 1140.305,
+"k": "veo",
+"id": "c09_bungee_lid",
+"seed": 113,
+"fb": "c_bungee_cross"
+},
+{
+"a": 1140.305,
+"b": 1141.992,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1147.357,
+"b": 1155.357,
+"k": "img",
+"id": "c4_spray_lid",
+"seed": 114
+},
+{
+"a": 1155.357,
+"b": 1157.493,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1161.06,
+"b": 1164.51,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1164.51,
+"b": 1169.51,
+"k": "img",
+"id": "c_bungee_cross",
+"seed": 115
+},
+{
+"a": 1169.51,
+"b": 1170.27,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1170.27,
+"b": 1172.974,
+"k": "img",
+"id": "c_lid_corner",
+"seed": 116
+},
+{
+"a": 1178.991,
+"b": 1183.991,
+"k": "img",
+"id": "c_morning_clean",
+"seed": 117
+},
+{
+"a": 1183.991,
+"b": 1191.139,
+"k": "fx",
+"id": "LanternRecap",
+"seed": 118
+},
+{
+"a": 1197.515,
+"b": 1206.951,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1211.284,
+"b": 1219.85,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1219.85,
+"b": 1223.773,
+"k": "img",
+"id": "c_garlic_strain",
+"seed": 119
+},
+{
+"a": 1229.691,
+"b": 1234.23,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1234.23,
+"b": 1241.768,
+"k": "img",
+"id": "c4_flash_yard",
+"seed": 120
+},
+{
+"a": 1246.278,
+"b": 1251.278,
+"k": "img",
+"id": "c_flashlight_yard",
+"seed": 121
+},
+{
+"a": 1251.278,
+"b": 1258.515,
+"k": "world",
+"id": "world"
+},
+{
+"a": 1262.573,
+"b": 1263.35,
+"k": "world",
+"id": "world"
+}
+]
+}
