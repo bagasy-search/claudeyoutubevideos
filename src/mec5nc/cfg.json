@@ -1,0 +1,478 @@
+{
+ "desc": "🔧 9 trucos «ilegales» para que tu auto ande mejor + Manual del Mecánico",
+ "replies": [],
+ "pages": {},
+ "heroes": [
+  {
+   "k": "typewriter",
+   "at": 9.62,
+   "out": 14.12,
+   "lines": [
+    "LE COSTABA",
+    "ARRANCAR"
+   ],
+   "red": 1,
+   "bg": "n_tiembla",
+   "mode": "blinds"
+  },
+  {
+   "k": "candle",
+   "at": 77.46,
+   "out": 82.46,
+   "lab": "NUEVE TRUCOS",
+   "sub": "QUE PARECEN DE TALLER",
+   "bg": "n_no_se_tocan",
+   "mode": "iris"
+  },
+  {
+   "k": "piggy",
+   "at": 127.25,
+   "out": 131.75,
+   "n": 4,
+   "lab": "QUE NO TE COBREN DE MÁS",
+   "bg": "n_fabricante",
+   "mode": "drop"
+  },
+  {
+   "k": "neon",
+   "at": 201.71,
+   "out": 207.71,
+   "lab": "el manual manda",
+   "col": "#5dff9a",
+   "bg": "n_manual_guantera",
+   "mode": "blinds"
+  },
+  {
+   "k": "searchlight",
+   "at": 249.15,
+   "out": 255.15,
+   "img": "n_cuerpo_acel",
+   "lab": "LA GARGANTA DEL MOTOR",
+   "bg": "n_cuerpo_acel",
+   "mode": "shutter"
+  },
+  {
+   "k": "chain",
+   "at": 317.63,
+   "out": 323.63,
+   "weak": 2,
+   "lab": "NUNCA A LA FUERZA",
+   "sub": "SE DAÑA EL MECANISMO",
+   "bg": "n_mariposa_elec",
+   "mode": "split"
+  },
+  {
+   "k": "pulse",
+   "at": 374.01,
+   "out": 378.51,
+   "a": "SIEMPRE FRÍO",
+   "flat": 1,
+   "lab": "NUNCA SE CALIENTA DEL TODO",
+   "bg": "n_aguja_pareja",
+   "mode": "shutter"
+  },
+  {
+   "k": "dice",
+   "at": 440.17,
+   "out": 444.17,
+   "v": 4,
+   "lab": "TRES O CUATRO VECES",
+   "bg": "n_senal_limite",
+   "mode": "drop"
+  },
+  {
+   "k": "weights",
+   "at": 491.3,
+   "out": 495.8,
+   "items": [
+    {
+     "t": "EL MOTOR",
+     "at": 0
+    },
+    {
+     "t": "LOS FRENOS",
+     "at": 0
+    },
+    {
+     "t": "LOS AMORTIGUADORES",
+     "at": 0
+    }
+   ],
+   "lab": "PESO DE MÁS",
+   "bg": "n_dos_personas",
+   "mode": "shutter"
+  },
+  {
+   "k": "compass",
+   "at": 557.47,
+   "out": 562.47,
+   "opts": [
+    "LO MÁXIMO",
+    "LA DE LA PUERTA",
+    "A OJO",
+    "LA DEL VECINO"
+   ],
+   "win": 1,
+   "lab": "LA PRESIÓN DE TU AUTO",
+   "bg": "n_costado_goma",
+   "mode": "iris"
+  },
+  {
+   "k": "antes",
+   "at": 607.09,
+   "out": 612.09,
+   "img": "n_llanta_baja",
+   "img2": "n_llanta_gastada",
+   "a": "DE MÁS",
+   "b": "JUSTA",
+   "lab": "UNA VEZ POR MES",
+   "bg": "n_llanta_baja",
+   "mode": "split"
+  },
+  {
+   "k": "xray",
+   "at": 669.11,
+   "out": 673.61,
+   "img": "n_grapas",
+   "lab": "LA CAJA DEL FILTRO",
+   "bg": "n_grapas",
+   "mode": "blinds"
+  },
+  {
+   "k": "loupe",
+   "at": 744.83,
+   "out": 750.83,
+   "img": "n_perfume",
+   "fx": 0.5,
+   "fy": 0.5,
+   "lab": "LA BOQUILLA DEL INYECTOR",
+   "bg": "n_perfume",
+   "mode": "diag"
+  },
+  {
+   "k": "abacus",
+   "at": 798.09,
+   "out": 804.09,
+   "v": 5,
+   "u": "MIL KILÓMETROS",
+   "sub": "UNA BOTELLA, UN TANQUE",
+   "bg": "n_tanque_lleno",
+   "mode": "blinds"
+  },
+  {
+   "k": "radar",
+   "at": 852.29,
+   "out": 858.79,
+   "items": [
+    {
+     "t": "EL AIRE",
+     "at": 0
+    },
+    {
+     "t": "EL RALENTÍ",
+     "at": 0
+    },
+    {
+     "t": "EL VENTILADOR",
+     "at": 0
+    }
+   ],
+   "lab": "EL MOTOR REAPRENDE",
+   "bg": "n_manual_p15",
+   "mode": "iris"
+  },
+  {
+   "k": "level",
+   "at": 919.81,
+   "out": 925.81,
+   "lab": "SIN TOCAR EL ACELERADOR",
+   "sub": "HASTA QUE PRENDA EL VENTILADOR",
+   "bg": "n_ventilador",
+   "mode": "wipe"
+  },
+  {
+   "k": "conveyor",
+   "at": 970.98,
+   "out": 976.48,
+   "items": [
+    {
+     "t": "UNO",
+     "img": "n_cafe",
+     "at": 0
+    },
+    {
+     "t": "DOS",
+     "img": "n_cable_masa",
+     "at": 0
+    },
+    {
+     "t": "TRES",
+     "img": "n_masa_oxido",
+     "at": 0
+    }
+   ],
+   "lab": "DEL MISMO BARRIO",
+   "bg": "n_cafe",
+   "mode": "shutter"
+  },
+  {
+   "k": "blueprint",
+   "at": 1040.74,
+   "out": 1046.74,
+   "img": "v07_masa",
+   "dims": [
+    {
+     "t": "la masa",
+     "x1": 0.25,
+     "y1": 0.7,
+     "x2": 0.7,
+     "y2": 0.7
+    }
+   ],
+   "lab": "HASTA QUE BRILLE",
+   "bg": "v07_masa",
+   "mode": "wipe"
+  },
+  {
+   "k": "vault",
+   "at": 1116.68,
+   "out": 1122.68,
+   "img": "n_carter_gases",
+   "lab": "LA VÁLVULA PCV",
+   "bg": "n_carter_gases",
+   "mode": "iris"
+  },
+  {
+   "k": "gears",
+   "at": 1154.36,
+   "out": 1160.36,
+   "items": [
+    {
+     "t": "PCV TAPADA",
+     "at": 0
+    },
+    {
+     "t": "GARGANTA SUCIA",
+     "at": 0
+    },
+    {
+     "t": "OTRA VEZ",
+     "at": 0
+    }
+   ],
+   "lab": "SE VUELVE A ENSUCIAR",
+   "bg": "n_aceite_juntas",
+   "mode": "diag"
+  },
+  {
+   "k": "dominoes",
+   "at": 1220.64,
+   "out": 1227.64,
+   "items": [
+    {
+     "t": "GASTA ACEITE",
+     "img": "n_senor_mediano",
+     "at": 0
+    },
+    {
+     "t": "OLOR A QUEMADO",
+     "img": "n_pcv_alquitran",
+     "at": 0
+    },
+    {
+     "t": "ABRIR EL MOTOR",
+     "img": "n_c_risa",
+     "at": 0
+    }
+   ],
+   "stamp": "ERA LA PCV",
+   "bad": 1,
+   "bg": "n_senor_mediano",
+   "mode": "wipe"
+  },
+  {
+   "k": "letter",
+   "at": 1270.52,
+   "out": 1277.02,
+   "lines": [
+    "En una tarde,",
+    "casi todo",
+    "lo de hoy"
+   ],
+   "sign": "Don Aurelio",
+   "bg": "n_senor_triste",
+   "mode": "blinds"
+  },
+  {
+   "k": "peel",
+   "at": 1335.98,
+   "out": 1340.48,
+   "img": "n_barato_caro",
+   "img2": "n_chip",
+   "a": "PROMETEN",
+   "lab": "NO HACEN NADA",
+   "bad": 1,
+   "bg": "n_barato_caro",
+   "mode": "diag"
+  },
+  {
+   "k": "funnel",
+   "at": 1397.53,
+   "out": 1404.03,
+   "items": [
+    {
+     "t": "UNO",
+     "at": 0
+    },
+    {
+     "t": "OTRO",
+     "at": 0
+    },
+    {
+     "t": "OTRO MÁS",
+     "at": 0
+    }
+   ],
+   "lab": "UNO POR TANQUE",
+   "bg": "n_aditivos",
+   "mode": "wipe"
+  },
+  {
+   "k": "fridge",
+   "at": 1451.35,
+   "out": 1457.85,
+   "items": [
+    {
+     "t": "Mirar",
+     "at": 0
+    },
+    {
+     "t": "Filtro",
+     "at": 0
+    },
+    {
+     "t": "Presión",
+     "at": 0
+    },
+    {
+     "t": "Masa",
+     "at": 0
+    },
+    {
+     "t": "Garganta",
+     "at": 0
+    }
+   ],
+   "lab": "EL SÁBADO, 30 MINUTOS",
+   "bg": "n_foto_pieza",
+   "mode": "drop"
+  },
+  {
+   "k": "shelf",
+   "at": 1514.47,
+   "out": 1520.47,
+   "items": [
+    {
+     "t": "LA FECHA",
+     "img": "n_foto_pieza",
+     "at": 0
+    },
+    {
+     "t": "LOS KILÓMETROS",
+     "img": "n_papel_parasol",
+     "at": 0
+    }
+   ],
+   "lab": "LA MEMORIA FALLA",
+   "bg": "n_foto_pieza",
+   "mode": "shutter"
+  },
+  {
+   "k": "branches",
+   "at": 1570.59,
+   "out": 1575.09,
+   "items": [
+    {
+     "t": "HAY ALGO DE VERDAD",
+     "at": 0
+    },
+    {
+     "t": "NUEVE QUE SÍ",
+     "at": 0
+    },
+    {
+     "t": "LO DEMÁS, AL TALLER",
+     "at": 0
+    }
+   ],
+   "lab": "LO QUE ME ESCRIBEN",
+   "bg": "n_aurelio_niega",
+   "mode": "drop"
+  },
+  {
+   "k": "led",
+   "at": 1632.75,
+   "out": 1638.75,
+   "lab": "GUARDAN HISTORIAS",
+   "sub": "CUÍDALO CON CALMA",
+   "bg": "n_auto_papa",
+   "mode": "shutter"
+  },
+  {
+   "k": "indexbox",
+   "at": 1696.0,
+   "out": 1702.5,
+   "items": [
+    {
+     "t": "Garganta",
+     "img": "n_garantia",
+     "at": 0
+    },
+    {
+     "t": "Filtro",
+     "img": "n_segunda_opinion",
+     "at": 0
+    },
+    {
+     "t": "PCV",
+     "img": "v09_cierra",
+     "at": 0
+    }
+   ],
+   "lab": "lo que ya hiciste",
+   "bg": "n_garantia",
+   "mode": "wipe"
+  },
+  {
+   "k": "mosaic",
+   "at": 1762.4,
+   "out": 1768.4,
+   "imgs": [
+    "n_segunda_opinion",
+    "v09_cierra",
+    "v10_manos",
+    "n_segunda_opinion",
+    "n_segunda_opinion",
+    "n_segunda_opinion",
+    "n_segunda_opinion",
+    "n_segunda_opinion",
+    "n_segunda_opinion",
+    "n_segunda_opinion",
+    "n_segunda_opinion",
+    "n_segunda_opinion"
+   ],
+   "lab": "LOS NUEVE",
+   "bg": "n_segunda_opinion",
+   "mode": "split"
+  },
+  {
+   "k": "emboss",
+   "at": 1810.86,
+   "out": 1816.86,
+   "lab": "GASTA MENOS",
+   "sub": "Y TE DURA MÁS",
+   "bg": "v09_cierra",
+   "mode": "wipe"
+  }
+ ]
+}
