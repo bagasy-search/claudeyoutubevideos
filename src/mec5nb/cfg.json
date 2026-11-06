@@ -1,0 +1,493 @@
+{
+ "desc": "🔧 Los trucos del video + El Manual del Mecánico",
+ "replies": [],
+ "pages": {},
+ "heroes": [
+  {
+   "k": "typewriter",
+   "at": 8.2,
+   "out": 12.7,
+   "lines": [
+    "SE APAGÓ",
+    "Y NO PRENDE"
+   ],
+   "red": 1,
+   "bg": "n_volante",
+   "mode": "blinds"
+  },
+  {
+   "k": "candle",
+   "at": 69.56,
+   "out": 75.56,
+   "lab": "DOCE SECRETOS",
+   "sub": "ESCONDIDOS EN TU AUTO",
+   "bg": "n_c_dedo",
+   "mode": "iris"
+  },
+  {
+   "k": "piggy",
+   "at": 140.65,
+   "out": 145.15,
+   "n": 5,
+   "lab": "UNA GRÚA MENOS",
+   "bg": "n_manual_banco",
+   "mode": "drop"
+  },
+  {
+   "k": "radar",
+   "at": 188.95,
+   "out": 195.45,
+   "items": [
+    {
+     "t": "ESCOBILLA",
+     "at": 0
+    },
+    {
+     "t": "MALETERO",
+     "at": 0
+    },
+    {
+     "t": "PALANCA",
+     "at": 0
+    },
+    {
+     "t": "EL BOTÓN",
+     "at": 0
+    }
+   ],
+   "lab": "LO QUE ME PREGUNTAN",
+   "bg": "n_telefono_taller",
+   "mode": "iris"
+  },
+  {
+   "k": "chain",
+   "at": 258.65,
+   "out": 264.65,
+   "weak": 2,
+   "lab": "EL BRAZO SIN ESCOBILLA",
+   "sub": "GOLPEA EL VIDRIO",
+   "bg": "n_vidrio_rajado",
+   "mode": "split"
+  },
+  {
+   "k": "xray",
+   "at": 322.71,
+   "out": 328.71,
+   "img": "n_alambre",
+   "lab": "ÓXIDO DESDE ADENTRO",
+   "bg": "n_alambre",
+   "mode": "blinds"
+  },
+  {
+   "k": "loupe",
+   "at": 369.55,
+   "out": 375.55,
+   "img": "n_tapita_palanca",
+   "fx": 0.5,
+   "fy": 0.55,
+   "lab": "LA LIBERACIÓN MANUAL",
+   "bg": "n_tapita_palanca",
+   "mode": "diag"
+  },
+  {
+   "k": "blueprint",
+   "at": 436.27,
+   "out": 441.77,
+   "img": "n_ruta_capo",
+   "dims": [
+    {
+     "t": "la segunda traba",
+     "x1": 0.2,
+     "y1": 0.3,
+     "x2": 0.75,
+     "y2": 0.3
+    }
+   ],
+   "lab": "DEBAJO DEL BORDE",
+   "bg": "n_ruta_capo",
+   "mode": "wipe"
+  },
+  {
+   "k": "level",
+   "at": 498.26,
+   "out": 504.26,
+   "lab": "EL SEGURO DE NIÑOS",
+   "sub": "EN EL CANTO DE LA PUERTA",
+   "bg": "n_nino_puerta",
+   "mode": "blinds"
+  },
+  {
+   "k": "searchlight",
+   "at": 549.37,
+   "out": 555.37,
+   "img": "n_graciela_rie",
+   "lab": "EL CANTO DE LA PUERTA",
+   "bg": "n_graciela_rie",
+   "mode": "shutter"
+  },
+  {
+   "k": "conveyor",
+   "at": 616.39,
+   "out": 622.39,
+   "items": [
+    {
+     "t": "TIRITA",
+     "img": "n_asiento_rebate",
+     "at": 0
+    },
+    {
+     "t": "PALANQUITA",
+     "img": "n_tirita",
+     "at": 0
+    },
+    {
+     "t": "ASIENTO ABAJO",
+     "img": "n_porton_agujero",
+     "at": 0
+    }
+   ],
+   "lab": "SALIR POR ATRÁS",
+   "bg": "n_asiento_rebate",
+   "mode": "diag"
+  },
+  {
+   "k": "vault",
+   "at": 668.39,
+   "out": 672.89,
+   "img": "n_surtidor_parado",
+   "lab": "LA TAPA DEL TANQUE",
+   "bg": "n_surtidor_parado",
+   "mode": "iris"
+  },
+  {
+   "k": "compass",
+   "at": 736.49,
+   "out": 740.99,
+   "opts": [
+    "EL CUELLO",
+    "LA NUCA",
+    "ARRIBA DE LA CABEZA",
+    "LOS HOMBROS"
+   ],
+   "win": 2,
+   "lab": "A LA ALTURA DE TU CABEZA",
+   "bg": "n_apoya_sube",
+   "mode": "wipe"
+  },
+  {
+   "k": "antes",
+   "at": 800.99,
+   "out": 805.99,
+   "img": "n_flechita",
+   "img2": "n_lado_equivocado",
+   "a": "IZQUIERDA",
+   "b": "DERECHA",
+   "lab": "DE QUÉ LADO CARGAS",
+   "bg": "n_flechita",
+   "mode": "split"
+  },
+  {
+   "k": "abacus",
+   "at": 852.08,
+   "out": 856.58,
+   "v": 25,
+   "u": "POR CIENTO",
+   "sub": "AHÍ CARGO YO",
+   "bg": "n_fondo_tanque",
+   "mode": "blinds"
+  },
+  {
+   "k": "drawer",
+   "at": 916.62,
+   "out": 922.62,
+   "items": [
+    {
+     "t": "EL AGUJERITO",
+     "img": "n_agujero_paragolpes",
+     "at": 0
+    },
+    {
+     "t": "LA LLAVE",
+     "img": "n_barra_llave",
+     "at": 0
+    }
+   ],
+   "bg": "n_agujero_paragolpes",
+   "mode": "shutter"
+  },
+  {
+   "k": "puzzle",
+   "at": 979.37,
+   "out": 985.37,
+   "img": "n_paragolpes_vista",
+   "lab": "EL GANCHO ESCONDIDO",
+   "bg": "n_paragolpes_vista",
+   "mode": "split"
+  },
+  {
+   "k": "dominoes",
+   "at": 1029.8,
+   "out": 1036.8,
+   "items": [
+    {
+     "t": "SIN GANCHO",
+     "img": "n_paragolpes_roto",
+     "at": 0
+    },
+    {
+     "t": "TIRAN DEL PARAGOLPES",
+     "img": "n_chofer_grua",
+     "at": 0
+    },
+    {
+     "t": "SUSPENSIÓN DOBLADA",
+     "img": "n_inercia",
+     "at": 0
+    }
+   ],
+   "stamp": "BUSCA EL GANCHO",
+   "bad": 1,
+   "bg": "n_paragolpes_roto",
+   "mode": "wipe"
+  },
+  {
+   "k": "pulse",
+   "at": 1101.04,
+   "out": 1107.04,
+   "a": "UN BACHE",
+   "lab": "SALTÓ EL CORTE",
+   "bg": "n_cano_roto",
+   "mode": "shutter"
+  },
+  {
+   "k": "neon",
+   "at": 1151.0,
+   "out": 1157.0,
+   "lab": "saltó para protegerte",
+   "col": "#ff5a4a",
+   "bg": "v03_arranca",
+   "mode": "blinds"
+  },
+  {
+   "k": "letter",
+   "at": 1218.78,
+   "out": 1225.28,
+   "lines": [
+    "No le cobro,",
+    "pero la próxima",
+    "lea el manual"
+   ],
+   "sign": "Don Aurelio",
+   "bg": "n_aurelio_mano",
+   "mode": "split"
+  },
+  {
+   "k": "shelf",
+   "at": 1272.54,
+   "out": 1277.54,
+   "items": [
+    {
+     "t": "LA FOTO",
+     "img": "n_foto_tel",
+     "at": 0
+    },
+    {
+     "t": "GUARDADA",
+     "img": "n_ramiro",
+     "at": 0
+    }
+   ],
+   "lab": "PARA EL DÍA QUE LO NECESITES",
+   "bg": "n_foto_tel",
+   "mode": "drop"
+  },
+  {
+   "k": "podium",
+   "at": 1340.34,
+   "out": 1344.84,
+   "items": [
+    {
+     "t": "EL BOTÓN",
+     "img": "n_mama_casa",
+     "at": 0
+    },
+    {
+     "t": "EL GANCHO",
+     "img": "n_propina",
+     "at": 0
+    },
+    {
+     "t": "LA ESCOBILLA",
+     "img": "n_taller_espera",
+     "at": 0
+    }
+   ],
+   "bg": "n_mama_casa",
+   "mode": "shutter"
+  },
+  {
+   "k": "indexbox",
+   "at": 1403.82,
+   "out": 1410.32,
+   "items": [
+    {
+     "t": "Corte de combustible",
+     "img": "n_indice",
+     "at": 0
+    },
+    {
+     "t": "Gancho",
+     "img": "n_papelitos",
+     "at": 0
+    },
+    {
+     "t": "Rueda de auxilio",
+     "img": "n_palanca_rota",
+     "at": 0
+    }
+   ],
+   "lab": "el índice",
+   "bg": "n_indice",
+   "mode": "wipe"
+  },
+  {
+   "k": "gears",
+   "at": 1453.79,
+   "out": 1459.79,
+   "items": [
+    {
+     "t": "LOS BOTONES",
+     "at": 0
+    },
+    {
+     "t": "EL TALLER",
+     "at": 0
+    },
+    {
+     "t": "LA GRÚA",
+     "at": 0
+    }
+   ],
+   "lab": "PRIMERO LOS BOTONES",
+   "bg": "n_puentear",
+   "mode": "diag"
+  },
+  {
+   "k": "fridge",
+   "at": 1508.87,
+   "out": 1513.87,
+   "items": [
+    {
+     "t": "Maletero",
+     "at": 0
+    },
+    {
+     "t": "Desagües",
+     "at": 0
+    },
+    {
+     "t": "Palanca",
+     "at": 0
+    },
+    {
+     "t": "Seguro de niños",
+     "at": 0
+    },
+    {
+     "t": "Gancho",
+     "at": 0
+    }
+   ],
+   "lab": "LA RUTINA DE DOS MINUTOS",
+   "bg": "n_manual_perdido",
+   "mode": "drop"
+  },
+  {
+   "k": "ticket",
+   "at": 1568.81,
+   "out": 1574.81,
+   "kick": "DON AURELIO",
+   "title": "TE MUESTRO",
+   "sub": "DÓNDE ESTÁ TODO",
+   "v": "✓",
+   "u": "SIEMPRE",
+   "bg": "n_aurelio_honesto",
+   "mode": "split"
+  },
+  {
+   "k": "funnel",
+   "at": 1626.91,
+   "out": 1631.91,
+   "items": [
+    {
+     "t": "EL PAPÁ",
+     "at": 0
+    },
+    {
+     "t": "EL HIJO",
+     "at": 0
+    },
+    {
+     "t": "EL NIETO",
+     "at": 0
+    }
+   ],
+   "lab": "CONOCER TU AUTO",
+   "bg": "n_c_senala",
+   "mode": "wipe"
+  },
+  {
+   "k": "branches",
+   "at": 1693.41,
+   "out": 1697.91,
+   "items": [
+    {
+     "t": "SÓLO PARA MOVERLO",
+     "at": 0
+    },
+    {
+     "t": "NO PARA ANDAR",
+     "at": 0
+    },
+    {
+     "t": "AL TALLER",
+     "at": 0
+    }
+   ],
+   "lab": "LA RANURA DE LA PALANCA",
+   "bg": "n_gancho_puesto",
+   "mode": "drop"
+  },
+  {
+   "k": "mosaic",
+   "at": 1752.25,
+   "out": 1758.25,
+   "imgs": [
+    "n_escobilla_toalla",
+    "n_manija_maletero",
+    "n_auxilio_tornillo",
+    "n_c_garaje",
+    "n_amigo_grua",
+    "v10_cierre",
+    "n_escobilla_toalla",
+    "n_escobilla_toalla",
+    "n_escobilla_toalla",
+    "n_escobilla_toalla",
+    "n_escobilla_toalla",
+    "n_escobilla_toalla"
+   ],
+   "lab": "LOS DOCE",
+   "bg": "n_escobilla_toalla",
+   "mode": "split"
+  },
+  {
+   "k": "emboss",
+   "at": 1820.47,
+   "out": 1826.47,
+   "lab": "¿DÓNDE ESTÁ EL TUYO?",
+   "sub": "EL BOTÓN DE CORTE",
+   "bg": "n_c_garaje",
+   "mode": "wipe"
+  }
+ ]
+}
