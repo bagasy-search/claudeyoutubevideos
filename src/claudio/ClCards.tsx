@@ -79,11 +79,11 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2, 18), pq = pop(f, fps, 16);
   const y = interpolate(p, [0, 1], [-1000, 0]), r = interpolate(p, [0, 1], [-14, -3]);
-  const push = lin(f, 20, 150, 0.92, 0.96);
+  const push = lin(f, 20, 150, 0.8, 0.83);
   return (
     <AbsoluteFill>
       <Bed src={bed} seed={21} dim={0.22} />
-      <div style={{ position: "absolute", left: qr ? "38%" : "50%", top: 110, translate: `-50% ${y}px`, rotate: `${r}deg`, scale: String(push), opacity: out, transformOrigin: "50% 30%" }}>
+      <div style={{ position: "absolute", left: qr ? "38%" : "50%", top: 40, translate: `-50% ${y}px`, rotate: `${r}deg`, scale: String(push), opacity: out, transformOrigin: "50% 30%" }}>
         <div style={{ background: "#fff", padding: 12, boxShadow: `0 44px 80px ${CL.shadow}, 0 6px 14px rgba(0,0,0,0.14)`, transform: "perspective(1800px) rotateX(8deg)" }}>
           <Img src={staticFile(page)} style={{ width: 760, display: "block" }} />
         </div>
@@ -98,7 +98,7 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
           </Card>
         </div>
       ) : null}
-      <Stamp text={stamp} at={28} color={CL.red} x={qr ? "80%" : "78%"} y="88%" rot={-5} size={44} />
+      <Stamp text={stamp} at={28} color={CL.red} x={qr ? "80%" : "81%"} y={qr ? "90%" : "26%"} rot={-5} size={44} />
       <RoomLight k={0.4} />
     </AbsoluteFill>
   );
