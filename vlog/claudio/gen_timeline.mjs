@@ -43,7 +43,7 @@ shots.forEach((s, i) => {
     else if (ex(ag)) { c.clip = ag; c.clipF = nFr(ag) - 1; }
     if (!c.img && !c.clip) warn.push(`falta imagen ${s.name}`);
   } else if (s.kind === "c") {
-    c.k = "comp"; c.props = { ...(s.props || {}) };
+    c.k = "comp"; c.props = { ...(s.props || {}) }; if (s.cont) c.cont = 1;
     if (!c.props.bed && !/^(ClPins|ClBeforeAfter|ClSplit|ClRimJets|ClMicroscope3D|ClHallway3D|ClSpores|ClFlashlight)$/.test(s.name)) {
       if (BEDABLE.has(s.name) && bi < beds.length) { c.props.bed = beds[bi++]; c.bedReal = 1; }
       else if (lastBed) c.props.bed = lastBed;
@@ -60,6 +60,8 @@ const snd = process.env.SFX_ON ? design(cues, shots, PUB, ovs) : { sfx: [], amb:
 const gaps = []; for (let i = 1; i < cues.length; i++) if (cues[i].from !== cues[i - 1].from + cues[i - 1].dur) gaps.push(i);
 if (gaps.length) { console.error("⛔ fronteras con hueco/solape:", gaps.slice(0, 10)); process.exit(1); }
 fs.mkdirSync(R + `src/${SLUG}`, { recursive: true });
+// componente partido por una ventana AV (cont): la 2ª parte SIGUE la animación (tot = largo total, sk = cuadros ya pasados), no la reinicia
+{ let head = null; for (const c of cues) { if (c.k !== "comp") continue; if (c.cont && head && head.name === c.name) { const tot = c.from + c.dur - head.from; head.tot = tot; c.tot = tot; c.sk = c.from - head.from; for (const o of cues) if (o.k === "comp" && o.name === c.name && o.from >= head.from && o.from < c.from) o.tot = tot; } else head = c; } }
 fs.writeFileSync(R + `src/${SLUG}/timeline.gen.ts`, `// GENERADO por vlog/claudio/gen_timeline.mjs (SLUG=${SLUG}) — no editar a mano
 export const TOTAL_FRAMES = ${TOTAL};
 export const AUDIO = "${SLUG}.m4a";

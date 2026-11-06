@@ -244,9 +244,15 @@ export const TbKnock: React.FC<{ bed?: string }> = ({ bed }) => {
           })}
         </svg>
         {/* puño */}
-        <div style={{ position: "absolute", left: -10, top: 0, translate: `${-30 + knuckle * 34}px ${-20 + knuckle * 30}px`, rotate: "-18deg", width: 120, height: 92, borderRadius: "46px 46px 40px 40px", background: `linear-gradient(160deg, #6FA3EA, ${CL.nitrile})`, boxShadow: `0 12px 24px ${CL.shadow}, inset 0 6px 0 rgba(255,255,255,0.35)` }}>
-          {[0, 1, 2, 3].map((i) => <div key={i} style={{ position: "absolute", left: 14 + i * 24, top: 52, width: 22, height: 30, borderRadius: 11, background: "rgba(0,0,0,0.12)" }} />)}
-        </div>
+        <svg width={260} height={220} viewBox="-110 -100 260 220" style={{ position: "absolute", left: -90, top: -80, overflow: "visible", translate: `${-30 + knuckle * 34}px ${-20 + knuckle * 30}px`, rotate: "-18deg", filter: `drop-shadow(0 12px 14px ${CL.shadow})` }}>
+          <defs><linearGradient id={`gl${x}`} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#7FB0F0" /><stop offset="1" stopColor={CL.nitrile} /></linearGradient></defs>
+          <rect x={-150} y={-70} width={170} height={80} rx={26} fill={CL.navy} transform="rotate(-32 10 30)" />
+          <path d="M8 22 Q8 0 34 0 L118 0 Q146 0 146 28 L146 76 Q146 98 124 98 L32 98 Q8 98 8 76 Z" fill={`url(#gl${x})`} />
+          {[0, 1, 2].map((i) => <line key={i} x1={52 + i * 28} y1={30} x2={52 + i * 28} y2={96} stroke="rgba(20,50,110,0.35)" strokeWidth={3} />)}
+          {[0, 1, 2, 3].map((i) => <ellipse key={i} cx={38 + i * 28} cy={94} rx={15} ry={11} fill="#8EBBF4" stroke="rgba(20,50,110,0.35)" strokeWidth={2} />)}
+          <path d="M8 34 Q52 22 92 40 Q104 54 84 62 Q44 64 8 58 Z" fill="#4E86D6" stroke="rgba(20,50,110,0.35)" strokeWidth={2} />
+          <path d="M30 8 Q70 2 120 8" stroke="rgba(255,255,255,0.45)" strokeWidth={6} fill="none" strokeLinecap="round" />
+        </svg>
         <div style={{ position: "absolute", left: 120, top: 540, opacity: label, display: "flex", gap: 18, alignItems: "center" }}>
           <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: CL.ink }}>{hollow ? "Acrílica" : "Esmaltada"}</div>
           <div style={{ fontFamily: LABEL, fontSize: 34, color: hollow ? CL.nitrile : CL.navy, letterSpacing: 2 }}>{hollow ? "HUECA · TIBIA" : "LLENA · FRÍA"}</div>
@@ -491,8 +497,8 @@ export const TbCompress3D: React.FC<{ bed?: string }> = ({ bed }) => {
           </g> : null}
           {film > 0.01 && film < 0.99 ? <rect x={fx - 14} y={curveY(fx) - 130} width={28} height={260} rx={14} fill="#E9EEF3" stroke="#B9C3CC" strokeWidth={3} /> : null}
         </svg>
-        <Tag x={260} y={120} text="papel + vinagre tibio + 3 gotas" k={lin(f, 8, 20)} />
-        <Tag x={260} y={220} text="film encima" k={lin(f, T * 0.55, T * 0.62)} color={CL.inkSoft} />
+        <Tag x={200} y={880} text="papel + vinagre tibio + 3 gotas" k={lin(f, 8, 20)} />
+        <Tag x={200} y={980} text="film encima" k={lin(f, T * 0.55, T * 0.62)} color={CL.inkSoft} />
         <div style={{ position: "absolute", left: 1420, top: 820, fontFamily: SERIF, fontWeight: 900, fontSize: 130, color: CL.navy, opacity: clock, scale: String(0.8 + 0.2 * clock) }}>1 hora</div>
       </Hand2D>
       <RoomLight />
@@ -507,10 +513,10 @@ export const TbScratchLens: React.FC<{ bed?: string }> = ({ bed }) => {
   const scratches = useMemo(() => Array.from({ length: 70 }, (_, i) => ({ x: 120 + rnd(i) * 720, y: 260 + rnd(i + 50) * 520, a: rnd(i + 9) * 3.14, l: 40 + rnd(i + 3) * 120 })), []);
   const surface = (zoom: number, clip?: string) => (
     <svg width={1920} height={1080} viewBox="0 0 1920 1080" style={{ position: "absolute", left: 0, top: 0, clipPath: clip }}>
-      <rect x={0} y={0} width={1920} height={1080} fill={ACR} />
+      <defs><linearGradient id="lensGloss" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#FFFFFF" /><stop offset="1" stopColor="#ECEFF2" /></linearGradient></defs><rect x={0} y={0} width={1920} height={1080} fill={ACR} />
       <rect x={960} y={0} width={960} height={1080} fill="#FFFFFF" />
       {scratches.filter((s) => zoom > 1 || s.x < 900).map((s, i) => <line key={i} x1={s.x} y1={s.y} x2={s.x + Math.cos(s.a) * s.l} y2={s.y + Math.sin(s.a) * s.l} stroke={i % 3 ? "rgba(140,105,55,0.75)" : "rgba(110,100,85,0.6)"} strokeWidth={zoom > 1 ? 4 : 1.6} />)}
-      {zoom > 1 ? <ellipse cx={1450} cy={560} rx={300} ry={80} fill="rgba(255,255,255,0.7)" /> : null}
+      {zoom > 1 ? <g><path d="M960 0 L1920 0 L1920 1080 L960 1080 Z" fill="url(#lensGloss)" /><path d="M1000 380 Q1440 300 1900 420" stroke="rgba(255,255,255,0.95)" strokeWidth={22} fill="none" /><path d="M1000 470 Q1440 400 1900 500" stroke="rgba(220,230,240,0.7)" strokeWidth={8} fill="none" /></g> : null}
     </svg>
   );
   return (
@@ -518,13 +524,13 @@ export const TbScratchLens: React.FC<{ bed?: string }> = ({ bed }) => {
       <Bed src={bed} seed={132} dim={0.2} />
       <Hand2D seed={132} push={[1, 1.03]}>
         <AbsoluteFill style={{ opacity: 0.92 }}>{surface(1)}</AbsoluteFill>
-        <AbsoluteFill style={{ transform: `scale(1.0)` }}>{surface(2, `circle(210px at ${lx}px ${ly}px)`)}</AbsoluteFill>
+        <AbsoluteFill style={{ clipPath: `circle(210px at ${lx}px ${ly}px)` }}><AbsoluteFill style={{ transformOrigin: `${lx}px ${ly}px`, transform: "scale(2.2)" }}>{surface(2)}</AbsoluteFill></AbsoluteFill>
         <div style={{ position: "absolute", left: lx - 220, top: ly - 220, width: 440, height: 440, borderRadius: "50%", border: `18px solid ${CL.navy}`, boxShadow: `0 30px 60px ${CL.shadow}, inset 0 0 40px rgba(255,255,255,0.6)` }} />
         <div style={{ position: "absolute", left: lx + 140, top: ly + 140, width: 46, height: 230, background: CL.navy, borderRadius: 20, rotate: "-40deg", transformOrigin: "50% 0" }} />
-        <div style={{ position: "absolute", left: 140, top: 100, fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: CL.ink }}>Frotar con polvo</div>
-        <div style={{ position: "absolute", left: 140, top: 180, fontFamily: HAND, fontSize: 54, color: CL.red }}>rayitas · la mugre se agarra</div>
-        <div style={{ position: "absolute", left: 1100, top: 100, fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: CL.ink, opacity: lin(f, T * 0.45, T * 0.6) }}>Compresa quieta</div>
-        <div style={{ position: "absolute", left: 1100, top: 180, fontFamily: HAND, fontSize: 54, color: "#2F8F48", opacity: lin(f, T * 0.5, T * 0.65) }}>lo que hacía el brazo, lo hace el tiempo</div>
+        <div style={{ position: "absolute", left: 140, top: 830, fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: CL.ink }}>Frotar con polvo</div>
+        <div style={{ position: "absolute", left: 140, top: 910, fontFamily: HAND, fontSize: 54, color: CL.red }}>rayitas · la mugre se agarra</div>
+        <div style={{ position: "absolute", left: 1100, top: 830, fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: CL.ink, opacity: lin(f, T * 0.45, T * 0.6) }}>Compresa quieta</div>
+        <div style={{ position: "absolute", left: 1100, top: 910, fontFamily: HAND, fontSize: 54, color: "#2F8F48", opacity: lin(f, T * 0.5, T * 0.65) }}>el tiempo hace el trabajo</div>
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -568,35 +574,57 @@ export const TbBookTub: React.FC<{ page: string; cover: string; qr?: string; pag
 // ═════════════════════════════ 12 · el óxido de la esmaltada
 export const TbEnamelRust: React.FC<{ bed?: string }> = ({ bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(8);
+  // la pared de una tina ESMALTADA vista de frente: la llave de cromo gotea y deja la lágrima naranja hasta la rejilla
   const paste = pop(f, fps, Math.round(T * 0.2), 12);
   const scrub = clamp01((f - T * 0.3) / (T * 0.35));
-  const shrink = 1 - 0.8 * ease(clamp01((f - T * 0.35) / (T * 0.45)));
+  const clean = ease(clamp01((f - T * 0.35) / (T * 0.45)));
   const stone = pop(f, fps, Math.round(T * 0.66), 13);
-  const sx = 960 + Math.cos(scrub * 30) * 90 * (scrub > 0 && scrub < 1 ? 1 : 0), sy = 610 + Math.sin(scrub * 30) * 50 * (scrub > 0 && scrub < 1 ? 1 : 0);
+  const moving = scrub > 0 && scrub < 1 ? 1 : 0;
+  const sx = 960 + Math.cos(scrub * 30) * 70 * moving, sy = 640 + Math.sin(scrub * 30) * 120 * moving;
+  const dropY = 330 + ((f * 7) % 220);
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
       <Bed src={bed} seed={154} dim={0.3} />
       <Hand2D seed={154}>
-        <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 40%, #FFFFFF 0%, #F2EEE6 55%, #DCD5C8 100%)" }} />
-        {/* llave de cromo arriba con su gota */}
-        <div style={{ position: "absolute", left: 830, top: 40, width: 260, height: 170, borderRadius: "0 0 60px 60px", background: "linear-gradient(90deg, #C9D0D8, #FFFFFF, #AEB6C0)", boxShadow: `0 20px 40px ${CL.shadow}` }} />
-        <div style={{ position: "absolute", left: 948, top: 190 + ((f * 6) % 280), width: 24, height: 32, borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%", background: "rgba(170,200,230,0.8)" }} />
-        {/* mancha de óxido (gotea hacia abajo) */}
-        <svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0 }}>
-          <defs><filter id="rz"><feTurbulence baseFrequency="0.035" numOctaves={3} seed={8} /><feDisplacementMap in="SourceGraphic" scale={40} /></filter></defs>
-          <g filter="url(#rz)" opacity={0.9}><ellipse cx={960} cy={640} rx={230 * shrink} ry={360 * shrink} fill={RUST} opacity={0.8} /><ellipse cx={960} cy={560} rx={110 * shrink} ry={220 * shrink} fill="#9E4317" opacity={0.65} /></g>
-          {paste > 0.01 ? <ellipse cx={960} cy={620} rx={170 * paste} ry={120 * paste} fill="#FFFFFF" opacity={0.85 * (1 - clamp01((f - T * 0.62) / 10))} /> : null}
+        <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+          <defs>
+            <linearGradient id="enW" x1="0" x2="1"><stop offset="0" stopColor="#E3DED2" /><stop offset="0.25" stopColor="#FBF8F0" /><stop offset="0.55" stopColor="#FFFFFF" /><stop offset="0.8" stopColor="#F6F2E8" /><stop offset="1" stopColor="#DCD6C9" /></linearGradient>
+            <linearGradient id="chr" x1="0" x2="1"><stop offset="0" stopColor="#9AA3AD" /><stop offset="0.45" stopColor="#FFFFFF" /><stop offset="1" stopColor="#8D96A0" /></linearGradient>
+            <filter id="rz2"><feTurbulence baseFrequency="0.03 0.006" numOctaves={3} seed={8} /><feDisplacementMap in="SourceGraphic" scale={34} /></filter>
+          </defs>
+          {/* azulejos de la pared del baño */}
+          {Array.from({ length: 24 }, (_, i) => <rect key={i} x={(i % 8) * 240} y={Math.floor(i / 8) * 90 - 20} width={236} height={86} fill="#DCE6EA" stroke="#C3CFD4" strokeWidth={3} />)}
+          {/* borde redondeado del esmalte */}
+          <rect x={60} y={240} width={1800} height={70} rx={35} fill="#FFFFFF" stroke="#D9D3C6" strokeWidth={4} />
+          <path d="M60 300 L1860 300 L1860 1080 L60 1080 Z" fill="url(#enW)" />
+          <path d="M120 330 Q960 300 1800 330" stroke="rgba(255,255,255,0.95)" strokeWidth={16} fill="none" />
+          <path d="M300 300 Q260 700 340 1080" stroke="rgba(0,0,0,0.05)" strokeWidth={30} fill="none" />
+          {/* la lágrima de óxido: de la llave a la rejilla */}
+          <g filter="url(#rz2)" opacity={0.95 * (1 - 0.9 * clean)}>
+            <path d="M930 312 Q915 620 880 930 Q960 970 1040 930 Q1005 620 990 312 Z" fill={RUST} opacity={0.75} />
+            <path d="M950 312 Q945 620 930 920 Q962 935 992 920 Q978 620 970 312 Z" fill="#9E4317" opacity={0.7} />
+          </g>
+          {/* rejilla */}
+          <ellipse cx={960} cy={950} rx={90} ry={30} fill="url(#chr)" stroke="#7E8791" strokeWidth={4} />
+          {[-40, -20, 0, 20, 40].map((d) => <line key={d} x1={960 + d} y1={936} x2={960 + d} y2={964} stroke="#6E7781" strokeWidth={4} />)}
+          {/* la llave de cromo sobre el borde */}
+          <rect x={900} y={140} width={120} height={70} rx={14} fill="url(#chr)" />
+          <path d="M920 200 L1000 200 L1000 280 Q1000 318 960 318 Q920 318 920 280 Z" fill="url(#chr)" stroke="#8D96A0" strokeWidth={3} />
+          <ellipse cx={960} cy={316} rx={22} ry={6} fill="#5E6670" />
+          <path d={`M960 ${dropY - 18} C 972 ${dropY - 4}, 972 ${dropY + 10}, 960 ${dropY + 14} C 948 ${dropY + 10}, 948 ${dropY - 4}, 960 ${dropY - 18} Z`} fill="rgba(160,195,230,0.9)" />
+          {/* la pasta de bicarbonato encima */}
+          {paste > 0.01 ? <path d="M900 470 Q960 430 1020 470 Q1060 640 1030 820 Q960 860 890 820 Q860 640 900 470 Z" fill="#FFFFFF" opacity={0.9 * paste * (1 - clamp01((f - T * 0.64) / 10))} /> : null}
         </svg>
-        {/* esponja */}
-        {scrub > 0 && scrub < 1 ? <div style={{ position: "absolute", left: sx - 110, top: sy - 60, width: 220, height: 120, borderRadius: 24, background: "linear-gradient(180deg, #FFFFFF, #E9E7E2)", boxShadow: `0 16px 30px ${CL.shadow}` }} /> : null}
+        {/* esponja blanca en círculos */}
+        {moving ? <div style={{ position: "absolute", left: sx - 110, top: sy - 60, width: 220, height: 120, borderRadius: 24, background: "linear-gradient(180deg, #FFFFFF, #E9E7E2)", boxShadow: `0 16px 30px ${CL.shadow}`, backgroundImage: "radial-gradient(rgba(180,175,165,0.45) 2px, transparent 3px)", backgroundSize: "14px 12px" }} /> : null}
         {/* piedra pómez mojada */}
-        <div style={{ position: "absolute", left: 1350, top: 520, scale: String(stone), rotate: `${-14 + 6 * Math.sin(f / 10)}deg` }}>
+        <div style={{ position: "absolute", left: 1400, top: 560, scale: String(stone), rotate: `${-14 + 6 * Math.sin(f / 10)}deg` }}>
           <div style={{ width: 260, height: 150, borderRadius: "40% 50% 45% 55%", background: "radial-gradient(circle at 30% 30%, #D8D3C8, #9A948A)", boxShadow: `0 20px 30px ${CL.shadow}`, backgroundImage: "radial-gradient(rgba(0,0,0,0.18) 2px, transparent 3px)", backgroundSize: "22px 18px" }} />
           {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", left: 40 + i * 70, top: 140 + ((f * 3 + i * 20) % 60), width: 16, height: 22, borderRadius: "50%", background: "rgba(160,200,235,0.85)" }} />)}
         </div>
-        <Tag x={1340} y={760} text="sólo esmaltada · siempre mojada" k={stone} />
-        <Tag x={460} y={300} text="óxido del agua" k={lin(f, 6, 18)} color={RUST} />
-        <Tag x={460} y={400} text="pasta de bicarbonato" k={paste} />
+        <Tag x={1100} y={420} text="óxido del agua" k={lin(f, 6, 18)} color={RUST} />
+        <Tag x={1100} y={500} text="pasta de bicarbonato" k={paste} />
+        <Tag x={1330} y={820} text="sólo esmaltada · siempre mojada" k={stone} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -629,13 +657,25 @@ export const TbSpongeScale: React.FC<{ bed?: string }> = ({ bed }) => {
             <div style={{ width: 400, height: 40, borderRadius: "0 0 200px 200px", background: `linear-gradient(180deg, ${CL.brassLight}, ${CL.brass})` }} />
             <div style={{ position: "absolute", left: 20, top: -110, width: 360, height: 110 }}>
               {s < 0 ? <>
-                <div style={{ position: "absolute", left: 10, bottom: 0, width: 140, height: 60, borderRadius: 10, background: "#3A8A3A", translate: `0 ${(1 - items[0]) * -300}px`, opacity: items[0] }} />
-                <div style={{ position: "absolute", left: 160, bottom: 0, width: 80, height: 100, borderRadius: 10, background: "#D8DCE0", border: "4px solid #8F98A2", translate: `0 ${(1 - items[1]) * -300}px`, opacity: items[1] }} />
-                <div style={{ position: "absolute", left: 250, bottom: 0, width: 100, height: 50, borderRadius: "40%", background: "repeating-radial-gradient(#9AA0A6 0 3px, #6F757B 3px 6px)", translate: `0 ${(1 - items[2]) * -300}px`, opacity: items[2] }} />
+                <div style={{ position: "absolute", left: 0, bottom: 0, width: 150, translate: `0 ${(1 - items[0]) * -300}px`, opacity: items[0] }}>
+                  <div style={{ height: 22, borderRadius: "8px 8px 2px 2px", background: "#2E7D32", backgroundImage: "repeating-linear-gradient(45deg, rgba(0,0,0,0.18) 0 3px, transparent 3px 7px)" }} />
+                  <div style={{ height: 44, borderRadius: "2px 2px 10px 10px", background: "#F2C94C", backgroundImage: "radial-gradient(rgba(160,110,20,0.35) 2px, transparent 3px)", backgroundSize: "12px 10px" }} />
+                </div>
+                <svg width={96} height={130} viewBox="0 0 96 130" style={{ position: "absolute", left: 160, bottom: 0, translate: `0 ${(1 - items[1]) * -300}px`, opacity: items[1] }}>
+                  <ellipse cx={48} cy={12} rx={44} ry={10} fill="#E9ECEF" stroke="#8F98A2" strokeWidth={3} />
+                  <path d="M4 12 L4 118 Q48 132 92 118 L92 12" fill="#FFFFFF" stroke="#8F98A2" strokeWidth={3} />
+                  <rect x={4} y={44} width={88} height={40} fill="#2F6FB5" /><text x={48} y={71} textAnchor="middle" fontFamily="Arial" fontWeight={800} fontSize={20} fill="#fff">POLVO</text>
+                  {[0, 1, 2, 3].map((i) => <circle key={i} cx={30 + i * 12} cy={10} r={2.5} fill="#8F98A2" />)}
+                </svg>
+                <svg width={110} height={80} viewBox="0 0 110 80" style={{ position: "absolute", left: 255, bottom: 0, translate: `0 ${(1 - items[2]) * -300}px`, opacity: items[2] }}>
+                  {Array.from({ length: 26 }, (_, i) => <ellipse key={i} cx={55 + (rnd(i) - 0.5) * 50} cy={46 + (rnd(i + 4) - 0.5) * 30} rx={14 + rnd(i + 2) * 22} ry={8 + rnd(i + 6) * 14} fill="none" stroke={i % 2 ? "#8C939A" : "#B9BFC5"} strokeWidth={2} transform={`rotate(${rnd(i + 8) * 180} 55 46)`} />)}
+                </svg>
                 {lbl("esponja verde · polvo · lana de acero", items[2], -10)}
               </> : <>
-                <div style={{ position: "absolute", left: 40, bottom: 0, width: 150, height: 66, borderRadius: 16, background: "#FFFFFF", boxShadow: "inset 0 -6px 0 #E3E0D8", translate: `0 ${(1 - right[0]) * -300}px`, opacity: right[0] }} />
-                <div style={{ position: "absolute", left: 210, bottom: 0, width: 130, height: 46, borderRadius: 12, background: "#5D8FD8", translate: `0 ${(1 - right[1]) * -300}px`, opacity: right[1] }} />
+                <div style={{ position: "absolute", left: 30, bottom: 0, width: 160, height: 70, borderRadius: 18, background: "#FFFFFF", boxShadow: "inset 0 -6px 0 #E3E0D8, 0 6px 10px rgba(0,0,0,0.15)", backgroundImage: "radial-gradient(rgba(180,175,165,0.45) 2px, transparent 3px)", backgroundSize: "14px 12px", translate: `0 ${(1 - right[0]) * -300}px`, opacity: right[0] }} />
+                <div style={{ position: "absolute", left: 205, bottom: 0, width: 140, height: 56, translate: `0 ${(1 - right[1]) * -300}px`, opacity: right[1] }}>
+                  {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", left: i * 4, bottom: i * 16, width: 136 - i * 8, height: 18, borderRadius: 6, background: i % 2 ? "#4F82CF" : "#6A9AE0", backgroundImage: "repeating-linear-gradient(90deg, rgba(255,255,255,0.12) 0 3px, transparent 3px 6px)" }} />)}
+                </div>
                 {lbl("esponja blanca · microfibra", right[1], 30)}
               </>}
             </div>
@@ -660,10 +700,10 @@ export const TbFiveKeys: React.FC<{ hi?: number; bed?: string }> = ({ hi = 1, be
         <div style={{ position: "absolute", left: 160, top: 120, width: 1600, height: 840, borderRadius: 24, background: "linear-gradient(160deg, #8A5A34, #6B4325)", boxShadow: `0 40px 80px ${CL.shadow}, inset 0 3px 0 rgba(255,255,255,0.2)`, backgroundImage: "repeating-linear-gradient(95deg, rgba(0,0,0,0.05) 0 8px, rgba(255,255,255,0.03) 8px 18px)" }} />
         {E.map((e, i) => {
           const p = pop(f, fps, 4 + i * 6, 10);
-          const flip = i + 1 === hi ? ease(clamp01((f - 34) / 16)) : 0;
+          const on = i + 1 === hi; const flip = on ? ease(clamp01((f - 34) / 16)) : 1;
           const sw = Math.sin(f / 9 + i) * 3 * (1 - flip);
           return (
-            <div key={i} style={{ position: "absolute", left: 250 + i * 300, top: 180, transformOrigin: "50% 0", rotate: `${sw + (1 - p) * 30}deg`, opacity: p }}>
+            <div key={i} style={{ position: "absolute", left: 250 + i * 300, top: 180, transformOrigin: "50% 0", rotate: `${sw + (1 - p) * 30}deg`, opacity: p * (on ? 1 : 0.45), scale: on ? "1.06" : "0.9", zIndex: on ? 2 : 1 }}>
               <div style={{ position: "absolute", left: 120, top: -6, width: 24, height: 24, borderRadius: "50%", background: CL.brassLight }} />
               <div style={{ transform: `perspective(1200px) rotateY(${flip * 180}deg)`, transformStyle: "flat" }}>
                 {flip < 0.5 ? <KeyTag num={i + 1} label="ERROR" w={260} /> : (
@@ -700,7 +740,7 @@ export const TbRoutine: React.FC<{ bed?: string }> = ({ bed }) => {
             <div style={{ position: "absolute", left: 340, top: -30, width: 200, height: 90, borderRadius: 14, background: `linear-gradient(180deg, #C9CED4, #8F98A2)` }} />
             <div style={{ fontFamily: LABEL, fontSize: 36, letterSpacing: 4, color: CL.inkSoft, marginBottom: 24 }}>HOJA DE SERVICIO · TINA</div>
             {S.map(([t, m], i) => (
-              <div key={i} style={{ display: "flex", alignItems: "center", gap: 22, height: 110, borderBottom: "2px solid #E3DCCF", opacity: 0.35 + 0.65 * step(i) }}>
+              <div key={i} style={{ display: "flex", alignItems: "center", gap: 22, height: 110, borderBottom: "2px solid #E3DCCF", opacity: step(i), translate: `${(1 - step(i)) * 40}px 0` }}>
                 <div style={{ width: 56, height: 56, border: `5px solid ${CL.navy}`, borderRadius: 8, position: "relative" }}>{step(i) > 0.1 ? <div style={{ position: "absolute", left: -6, top: -18 }}><Tick ok s={64} k={step(i)} /></div> : null}</div>
                 <div style={{ flex: 1, fontFamily: HAND, fontSize: 58, color: CL.ink }}>{t}</div>
                 <div style={{ fontFamily: LABEL, fontSize: 40, color: i === 4 ? CL.brass : CL.navy, background: i === 4 ? hexA(CL.yellow, 0.25) : "transparent", padding: "2px 12px", borderRadius: 8 }}>{m >= 60 ? "1 h" : `${m} min`}</div>
@@ -735,6 +775,14 @@ export const TbNeverPour: React.FC<{ bed?: string }> = ({ bed }) => {
         <div style={{ position: "absolute", left: 500, top: 420 }}>
           <svg width={240} height={480} viewBox="0 0 240 480"><path d="M80 20 L160 20 L160 80 Q220 110 220 180 L220 450 Q220 470 200 470 L40 470 Q20 470 20 450 L20 180 Q20 110 80 80 Z" fill="rgba(240,236,224,0.85)" stroke="#B9B2A3" strokeWidth={4} /><rect x={70} y={0} width={100} height={30} rx={6} fill="#E8E2D4" /><rect x={40} y={240} width={160} height={110} rx={10} fill="#FFFFFF" /><text x={120} y={305} textAnchor="middle" fontFamily={LABEL} fontSize={30} fill={CL.ink}>VINAGRE</text></svg>
         </div>
+        {/* amoníaco y agua oxigenada: tampoco */}
+        <div style={{ position: "absolute", left: 110, top: 560, opacity: pop(f, fps, 10, 12) }}>
+          <svg width={170} height={330} viewBox="0 0 170 330"><path d="M55 10 L115 10 L115 50 Q160 70 160 120 L160 310 Q160 322 148 322 L22 322 Q10 322 10 310 L10 120 Q10 70 55 50 Z" fill="rgba(225,240,236,0.85)" stroke="#9DB5AE" strokeWidth={4} /><rect x={50} y={0} width={70} height={22} rx={5} fill="#2E7D6B" /><rect x={18} y={150} width={134} height={84} rx={8} fill="#FFFFFF" /><text x={85} y={200} textAnchor="middle" fontFamily={LABEL} fontSize={24} fill={CL.ink}>AMONÍACO</text></svg>
+        </div>
+        <div style={{ position: "absolute", left: 300, top: 600, opacity: pop(f, fps, 14, 12) }}>
+          <svg width={160} height={290} viewBox="0 0 160 290"><path d="M55 10 L105 10 L105 46 Q150 60 150 110 L150 272 Q150 282 140 282 L20 282 Q10 282 10 272 L10 110 Q10 60 55 46 Z" fill="#5A3416" stroke="#3B200D" strokeWidth={4} /><rect x={48} y={0} width={64} height={22} rx={5} fill="#F2EFE8" /><rect x={18} y={130} width={124} height={92} rx={8} fill="#FFFFFF" /><text x={80} y={170} textAnchor="middle" fontFamily={LABEL} fontSize={21} fill={CL.ink}>AGUA</text><text x={80} y={200} textAnchor="middle" fontFamily={LABEL} fontSize={21} fill={CL.ink}>OXIGENADA</text></svg>
+        </div>
+        {[[560, 470, 0.45], [130, 460, 0.55], [310, 500, 0.63]].map(([x, y, a], i) => <div key={i} style={{ position: "absolute", left: x, top: y, opacity: lin(f, T * a, T * a + 6) }}><Tick ok={false} s={120} k={lin(f, T * a, T * a + 12)} /></div>)}
         {/* cloro que se inclina */}
         <div style={{ position: "absolute", left: 860, top: 400, rotate: `${-ang}deg`, transformOrigin: "20% 100%" }}>
           <svg width={260} height={500} viewBox="0 0 260 500"><path d="M60 30 L140 30 L150 90 Q240 110 240 200 L240 470 Q240 490 220 490 L30 490 Q10 490 10 470 L10 200 Q10 110 60 90 Z" fill="#FFFFFF" stroke="#C9C1B2" strokeWidth={4} /><rect x={50} y={0} width={100} height={40} rx={8} fill={CL.red} /><path d="M160 130 Q230 140 220 230 L190 230 Q195 170 160 165 Z" fill="none" stroke="#C9C1B2" strokeWidth={10} /><rect x={30} y={270} width={190} height={120} rx={10} fill="#E7F0FA" /><text x={125} y={340} textAnchor="middle" fontFamily={LABEL} fontSize={34} fill={CL.ink}>CLORO</text></svg>

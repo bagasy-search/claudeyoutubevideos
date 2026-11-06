@@ -39,16 +39,22 @@ export const SHOTS = [
   C(2, "Mire", "TbTub3D", { labels: true }),
   // 29,9 · treinta años
   ST(3, "Treinta años fui conserje", "s_hotelhall", "hotel corridor", `A long carpeted hotel corridor with numbered doors.`),
+  B(3, "de mantenimiento en un hotel", "b_workshopa", `An old hotel maintenance workshop with a wooden workbench, hand tools on a pegboard and a work lamp.`),
   B(3, "y casi todas con tina", "b_tubsrow", `A housekeeping cart parked in a hotel corridor next to an open door, a white bathtub visible inside the guest bathroom.`),
   B(3, "Y le digo una cosa", "b_keyring", `A big ring of old brass hotel master keys hanging from a hook in a maintenance workshop.`),
   B(3, "esa línea amarilla es la mancha", "b_ringhotel", `${RING} in a hotel guest bathroom, a folded white towel on the rim.`),
+  B(3, "sin que hiciera ninguna falta", "b_oldtubout", `An old white bathtub carried out of a hotel bathroom on a dolly by two workers, seen from the corridor.`),
   ST(3, "tinas vi cambiar", "s_demolition", "bathroom renovation demolition", `A bathroom being torn out, broken tiles and an old tub.`),
   // 44 · los tres anzuelos
   B(4, "Pero antes de tocarla", "b_glovehover", `${G} hovering just above ${RING}, not touching it yet.`),
   B(4, "hay tres cosas que tiene que saber", "b_threebottles", `A white bleach jug, a white cotton pad and a roll of clear plastic wrap lined up on the rim of a white bathtub.`),
+  B(4, "que tiene que saber", "b_notepad3", `A small notepad with three short handwritten lines and a pencil on the rim of a white bathtub, the writing not readable.`),
   B(4, "Por qué el cloro nunca la saca", "b_bleachedge", `${RING}, the upper edge a little paler than the middle where bleach was poured, close view.`),
+  B(4, "y a veces la deja peor", "b_bleachworse", `A dull chalky pale patch on the yellowed inside wall of a white acrylic bathtub, a bleach jug with a plain blank label on the rim, close view.`),
   B(4, "La prueba de diez segundos con un algodón", "b_cottonpad", `A white cotton pad held between two blue nitrile gloved fingers next to the yellow ring of a white bathtub.`),
+  B(4, "si su tina tiene arreglo", "b_padyellow", `A white cotton pad with a faint yellow tint held up by blue nitrile gloved fingers next to a white bathtub.`),
   B(4, "el que usábamos en las suites", "b_suitebath", `A bright hotel suite bathroom with a large white acrylic bathtub, folded towels and a small orchid on the counter.`),
+  B(4, "el que saca el amarillo", "b_yellowgone", `Half of a yellow ring on the inside wall of a white acrylic bathtub gone and glossy, the other half still yellow, close view.`),
   B(4, "sin rayarlas", "b_glossy", `A gloved hand gliding over the glossy, unscratched white acrylic wall of a bathtub, light reflecting smoothly.`, { anim: "the hand glides slowly along the wall" }),
   B(4, "Y el paso número cuatro", "b_tease", `Wet white paper towel strips pressed in a row along the curved inside wall of a white bathtub and covered with clear plastic wrap, close view.`),
   // 64,4 · CTA 1
