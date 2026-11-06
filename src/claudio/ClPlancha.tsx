@@ -105,7 +105,7 @@ export const PlCutaway: React.FC<{ bed?: string }> = ({ bed }) => {
             {Array.from({ length: 9 }, (_, i) => { const t = ((f + i * 7) % 30) / 30; return <path key={i} d={`M${-147 + i * 38} ${4 + t * 30} q 6 6 0 12`} stroke="rgba(255,255,255,0.9)" strokeWidth={3} fill="none" opacity={1 - t} />; })}
           </g>
         </svg>
-        <Tag x={420} y={290} text="el depósito" k={lbl(0)} />
+        <Tag x={560} y={420} text="el depósito" k={lbl(0)} />
         <Tag x={1290} y={520} text="la cámara de vapor" k={lbl(1)} />
         <Tag x={1150} y={930} text="los agujeritos" k={lbl(2)} color={CL.inkSoft} />
         <Tag x={300} y={930} text="una capita por planchada" k={lay * 2} color={CL.red} />
@@ -130,8 +130,8 @@ export const PlFlakeCrack: React.FC<{ bed?: string }> = ({ bed }) => {
           {Array.from({ length: 14 }, (_, i) => { const x0 = 260 + rnd(i) * 1400; const y = 480 + fly * (120 + rnd(i + 1) * 260); return <rect key={i} x={x0 + Math.sin(f / 6 + i) * 20 * fly} y={y} width={44 + rnd(i + 3) * 40} height={18 + rnd(i + 4) * 12} rx={4} fill={brn > 0 && i % 2 ? `rgb(${237 - 80 * brn},${232 - 110 * brn},${220 - 160 * brn})` : SCALE} transform={`rotate(${rnd(i + 5) * 60 * fly} ${x0} ${y})`} opacity={fly > 0 ? 1 : 0} />; })}
           <rect x={0} y={930} width={1920} height={150} fill={SHIRT} />
         </svg>
-        <Tag x={240} y={170} text="se agrieta y se suelta" k={cr * 2} />
-        <Tag x={1220} y={170} text="con almidón quemado: marrón" k={brn * 2} color={BRN} />
+        <Tag x={300} y={360} text="se agrieta y se suelta" k={cr * 2} />
+        <Tag x={1080} y={360} text="con almidón quemado: marrón" k={brn * 2} color={BRN} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -141,7 +141,7 @@ export const PlFlakeCrack: React.FC<{ bed?: string }> = ({ bed }) => {
 // ═════════════════════════════ 3 · el uniforme de gala, 2009
 export const PlUniform: React.FC<{ bed?: string }> = ({ bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(8);
-  const p = pop(f, fps, 0, 14); const st = lin(f, T * 0.25, T * 0.45); const mins = Math.round(60 - 0 * f);
+  const p = pop(f, fps, 0, 14); const st = lin(f, T * 0.25, T * 0.45); 
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
       <Bed src={bed} seed={604} dim={0.35} />
@@ -161,8 +161,7 @@ export const PlUniform: React.FC<{ bed?: string }> = ({ bed }) => {
             <line x1={0} y1={0} x2={70} y2={0} stroke={CL.navy} strokeWidth={14} strokeLinecap="round" transform="rotate(-60)" />
           </g>
         </svg>
-        <Tag x={1330} y={580} text={`falta ${mins} min`} k={lin(f, 10, 20)} color={CL.red} />
-        <Tag x={1250} y={680} text="la boda · 2009" k={lin(f, 4, 14)} />
+        <Tag x={1300} y={590} text="falta 1 hora" k={lin(f, 10, 20)} color={CL.red} />
         <Tag x={1000} y={980} text="donde va la plaqueta" k={st * 2} color={BRN} />
       </Hand2D>
       <RoomLight />
@@ -256,14 +255,18 @@ export const PlSelfClean: React.FC<{ bed?: string }> = ({ bed }) => {
           <rect x={300} y={700} width={1320} height={380} rx={20} fill="#C9CED4" />
           <rect x={420} y={740} width={1080} height={300} rx={40} fill="#9AA2AB" />
           <circle cx={960} cy={990} r={26} fill="#555" />
+          {/* el tomacorriente vacío y el enchufe colgando: desenchufada */}
+          <g transform="translate(1680 250)"><rect x={-60} y={-80} width={120} height={160} rx={14} fill="#F2F2EE" stroke="#BBB" strokeWidth={4} /><circle cx={-18} cy={0} r={9} fill="#555" /><circle cx={18} cy={0} r={9} fill="#555" /></g>
+          <path d={`M${720 + sway} 380 Q1300 300 1560 470`} stroke="#333" strokeWidth={9} fill="none" />
+          <g transform="translate(1580 490) rotate(20)"><rect x={-40} y={-26} width={70} height={52} rx={9} fill="#333" /><rect x={30} y={-14} width={26} height={7} fill="#999" /><rect x={30} y={6} width={26} height={7} fill="#999" /></g>
           <Iron x={960 + sway} y={480} s={1.5} tank={0.6 * (1 - k)} />
           {Array.from({ length: 30 }, (_, i) => { const t = ((f + i * 4) % 26) / 26; return <circle key={i} cx={960 + sway + (rnd(i) - 0.5) * 520} cy={490 + t * 360} r={5 + rnd(i + 1) * 7} fill={`rgba(${150 - 40 * rnd(i + 2)},${145 - 40 * rnd(i + 2)},${120},0.8)`} opacity={(1 - t) * clamp01(k * 4)} />; })}
           <Flakes n={30} x={960 + sway} y={500} k={((f % 40) / 40)} spread={260} seed={11} />
           {Array.from({ length: 8 }, (_, i) => { const t = ((f + i * 10) % 50) / 50; return <path key={i} d={`M${700 + i * 70} ${500 + t * 200} q 20 -30 0 -60 q -20 -30 0 -60`} stroke="rgba(255,255,255,0.7)" strokeWidth={8} fill="none" opacity={1 - t} />; })}
         </svg>
-        <Tag x={200} y={160} text="desenchufada · botón apretado" k={lin(f, 4, 14)} />
-        <Tag x={1220} y={160} text="toda la piedra que tenía adentro" k={lin(f, T * 0.4, T * 0.5)} color={CL.red} />
-        <Tag x={200} y={260} text="manos lejos: sale muy caliente" k={lin(f, T * 0.6, T * 0.7)} color={CL.inkSoft} />
+        <Tag x={120} y={560} text="desenchufada · botón apretado" k={lin(f, 4, 14)} />
+        <Tag x={1180} y={640} text="toda la piedra que tenía adentro" k={lin(f, T * 0.4, T * 0.5)} color={CL.red} />
+        <Tag x={120} y={650} text="manos lejos: sale muy caliente" k={lin(f, T * 0.6, T * 0.7)} color={CL.inkSoft} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -344,10 +347,16 @@ export const PlColdCheck: React.FC<{ bed?: string }> = ({ bed }) => {
           {/* enchufe afuera */}
           <g transform="translate(1600 520)"><rect x={-70} y={-100} width={140} height={200} rx={16} fill="#F2F2EE" stroke="#BBB" strokeWidth={4} /><circle cx={-22} cy={0} r={10} fill="#555" /><circle cx={22} cy={0} r={10} fill="#555" /></g>
           <g transform={`translate(${1420 - 30 * lin(f, 4, 14)} 560)`}><rect x={-60} y={-30} width={90} height={60} rx={10} fill="#333" /><rect x={30} y={-14} width={30} height={8} fill="#999" /><rect x={30} y={6} width={30} height={8} fill="#999" /><path d="M-60 0 Q-400 40 -500 160" stroke="#333" strokeWidth={10} fill="none" /></g>
-          <g transform={`translate(${900 + 300 * (1 - hand)} ${560 - 0})`} opacity={hand}><path d="M-120 0 Q-130 -70 -60 -80 L120 -60 Q160 -40 140 0 L120 30 L-100 40 Z" fill="#D9A47E" stroke="#B07A55" strokeWidth={4} /></g>
+          <g transform={`translate(${900 + 300 * (1 - hand)} 560)`} opacity={hand}>
+            <path d="M120 -50 L420 -70 L430 40 L130 50 Z" fill={CL.navy} />
+            <path d="M-40 -60 Q20 -78 130 -60 L140 40 Q40 56 -30 40 Z" fill="#D9A47E" stroke="#A8724D" strokeWidth={4} />
+            {[0, 1, 2, 3].map((i) => <path key={i} d={`M-30 ${-52 + i * 24} Q-120 ${-60 + i * 26} -170 ${-46 + i * 28} Q-186 ${-36 + i * 28} -170 ${-28 + i * 28} Q-120 ${-38 + i * 26} -30 ${-34 + i * 24}`} fill="#D59D77" stroke="#A8724D" strokeWidth={3} />)}
+            <path d="M40 30 Q-10 70 -70 66 Q-84 56 -70 48 Q-20 44 20 14 Z" fill="#CF9670" stroke="#A8724D" strokeWidth={3} />
+            {[0, 1, 2, 3].map((i) => <ellipse key={i} cx={-24} cy={-46 + i * 24} rx={9} ry={6} fill="#C88E68" />)}
+          </g>
         </svg>
-        <Tag x={220} y={180} text="desenchufada y fría" k={lin(f, 4, 14)} />
-        <Tag x={220} y={290} text="el dorso cerca, sin apoyar" k={hand * 2} color={CL.inkSoft} />
+        <Tag x={200} y={900} text="desenchufada y fría" k={lin(f, 4, 14)} />
+        <Tag x={200} y={1000} text="el dorso cerca, sin apoyar" k={hand * 2} color={CL.inkSoft} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -448,9 +457,9 @@ export const PlRagTest: React.FC<{ bed?: string }> = ({ bed }) => {
           <defs><linearGradient id="plLight" x1="0" x2="1"><stop offset="0" stopColor="rgba(255,240,190,0)" /><stop offset="0.5" stopColor="rgba(255,240,190,0.75)" /><stop offset="1" stopColor="rgba(255,240,190,0)" /></linearGradient></defs>
           {light > 0 ? <rect x={200 + 1300 * light} y={480} width={260} height={320} fill="url(#plLight)" /> : null}
         </svg>
-        <Tag x={300} y={200} text="un trapo viejo, blanco" k={lin(f, 4, 14)} />
-        <Tag x={1150} y={200} text="sin una gota · sin una escama" k={lin(f, T * 0.7, T * 0.8)} />
-        <Stamp text="LISTA" at={Math.round(T * 0.82)} x="78%" y="78%" size={74} rot={-6} />
+        <Tag x={300} y={880} text="un trapo viejo, blanco" k={lin(f, 4, 14)} />
+        <Tag x={1100} y={880} text="sin una gota · sin una escama" k={lin(f, T * 0.7, T * 0.8)} />
+        <Stamp text="LISTA" at={Math.round(T * 0.82)} x="78%" y="28%" size={74} rot={-6} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -521,8 +530,8 @@ export const PlIronRow: React.FC<{ bed?: string }> = ({ bed }) => {
           <rect x={160 + scan * 1600} y={120} width={6} height={600} fill={hexA(CL.yellow, 0.7)} />
         </svg>
         {Array.from({ length: N }, (_, i) => <div key={i} style={{ position: "absolute", left: 230 + i * 280, top: 800, opacity: scan * N > i + 0.5 ? 1 : 0 }}><Tick ok s={80} k={clamp01(scan * N - i - 0.5) * 2} /></div>)}
-        <Tag x={160} y={140} text="vacías · secas · paradas · en fila" k={lin(f, 6, 16)} />
-        <Tag x={1200} y={960} text="Rosa pasaba revista" k={lin(f, T * 0.3, T * 0.4)} color={CL.brass} />
+        <Tag x={160} y={960} text="vacías · secas · paradas · en fila" k={lin(f, 6, 16)} />
+        <Tag x={1300} y={960} text="Rosa pasaba revista" k={lin(f, T * 0.3, T * 0.4)} color={CL.brass} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -539,10 +548,10 @@ export const PlFiveErrors: React.FC<{ hi?: number; bed?: string }> = ({ hi = 1, 
       <Bed src={bed} seed={619} dim={0.35} />
       <Hand2D seed={619}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}><path d="M80 820 L1650 780 Q1860 800 1840 900 L1650 1000 L80 1010 Z" fill="#7C8FA6" /></svg>
-        {E.map((e, i) => { const a = (i - 2) * 16 * fan; const up = i + 1 === hi ? ease(lin(f, 20, 34)) : 0; return (
-          <div key={i} style={{ position: "absolute", left: 790, top: 220, width: 340, height: 480, transformOrigin: "50% 140%", transform: `rotate(${a}deg) translateY(${-80 * up}px) scale(${1 + 0.12 * up})`, zIndex: i + 1 === hi ? 10 : i, background: i + 1 === hi ? "#FFFFFF" : "#F1EDE4", borderRadius: 14, border: `6px solid ${i + 1 === hi ? CL.red : "#D8D1C2"}`, boxShadow: `0 20px 40px ${CL.shadow}`, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", padding: 24 }}>
+        {E.map((e, i) => { const a = (i - 2) * 5 * fan; const up = i + 1 === hi ? ease(lin(f, 20, 34)) : 0; return (
+          <div key={i} style={{ position: "absolute", left: 790 + (i - 2) * 350 * fan, top: 250 + Math.abs(i - 2) * 30 * fan, width: 320, height: 460, transformOrigin: "50% 100%", transform: `rotate(${a}deg) translateY(${-70 * up}px) scale(${1 + 0.1 * up})`, zIndex: i + 1 === hi ? 10 : i, background: i + 1 === hi ? "#FFFFFF" : "#F1EDE4", borderRadius: 14, border: `6px solid ${i + 1 === hi ? CL.red : "#D8D1C2"}`, boxShadow: `0 20px 40px ${CL.shadow}`, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", padding: 24 }}>
             <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 120, color: i + 1 === hi ? CL.red : "#9A9384", lineHeight: 1 }}>{i + 1}</div>
-            <div style={{ fontFamily: LABEL, fontSize: 44, color: CL.ink, marginTop: 16, opacity: i + 1 === hi ? 1 : 0.5 }}>{e}</div>
+            <div style={{ fontFamily: LABEL, fontSize: 42, color: CL.ink, marginTop: 16, opacity: i + 1 === hi ? 1 : 0.7 }}>{e}</div>
           </div>); })}
       </Hand2D>
       <RoomLight />
@@ -566,7 +575,7 @@ export const PlStarch: React.FC<{ bed?: string }> = ({ bed }) => {
           <g opacity={iron > 0 ? 1 : 0}><Iron x={1700 - 700 * iron} y={720} s={1} rot={-4} /></g>
           <g transform="translate(1500 300)"><circle r={110} fill="#FFFFFF" stroke={CL.navy} strokeWidth={8} />{wait >= 0.99 ? <circle r={90} fill={hexA(CL.yellow, 0.8)} /> : <path d={`M0 0 L0 -90 A90 90 0 ${wait > 0.5 ? 1 : 0} 1 ${Math.sin(wait * Math.PI * 2) * 90} ${-Math.cos(wait * Math.PI * 2) * 90} Z`} fill={hexA(CL.yellow, 0.8)} />}</g>
         </svg>
-        <Tag x={200} y={120} text="1 · rocíe" k={lin(f, 4, 12)} />
+        <Tag x={170} y={560} text="1 · rocíe" k={lin(f, 4, 12)} />
         <Tag x={1330} y={460} text="2 · espere unos segundos" k={lin(f, T * 0.3, T * 0.38)} />
         <Tag x={800} y={980} text="3 · recién ahí, planche" k={lin(f, T * 0.65, T * 0.72)} />
       </Hand2D>
@@ -658,7 +667,7 @@ export const PlWhenToss: React.FC<{ bed?: string }> = ({ bed }) => {
 // ═════════════════════════════ 23 · repaso en el perchero
 export const PlRecap: React.FC<{ bed?: string }> = ({ bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(8);
-  const W = ["piedra en la cámara", "primero el manual", "autolimpieza", "¼ vinagre + ¾ destilada", "5 min de vapor", "2-3 llenadas solas", "fría y desenchufada", "pasta + paño suave", "hisopo, uno por uno", "nada de metal", "la prueba del trapo", "vaciarla siempre"];
+  const W = ["piedra en la cámara", "primero el manual", "autolimpieza", "¼ vinagre: sólo si el manual deja", "2-3 llenadas de destilada", "fría y desenchufada", "pasta + paño suave", "hisopo, uno por uno", "nada de metal", "la prueba del trapo", "vaciarla siempre", "guardarla parada"];
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
       <Bed src={bed} seed={624} dim={0.35} />

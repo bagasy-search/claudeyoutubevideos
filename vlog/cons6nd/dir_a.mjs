@@ -20,7 +20,9 @@ export const I = "img/cons6nd/";
 export const SHOTS = [
   // ── 0:00 · domingo a la noche (avatar 0-~6)
   B(0, "o una boda, o una entrevista", "b_suit", `A dark suit jacket and a tie laid out on a bed at night, a lamp on, ready for the morning.`),
+  B(0, "o una entrevista", "b_interview", `A white dress shirt and a dark tie hanging on a closet door at night, a pair of polished shoes below.`),
   B(0, "Usted plancha la camisa blanca", "b_ironing", `${IRON} gliding over ${SHIRT} on ${BOARD} at night, a warm lamp nearby.`, { anim: "the iron glides over the shirt" }),
+  B(0, "la camisa blanca", "b_shirtboard", `${SHIRT} laid flat on ${BOARD} at night, a warm lamp nearby.`),
   B(0, "aprieta el botón del vapor", "b_button", `A thumb pressing the steam button on top of the handle of ${IRON}, close view.`),
   V(0, "y la plancha escupe", "d01"),
   C(0, "Un chorro turbio, con escamitas blancas", "PlSpit"),
@@ -38,10 +40,13 @@ export const SHOTS = [
   B(3, "Treinta años fui conserje", "b_hotel", `The front of an old city hotel with a canopy over the entrance, evening light.`),
   B(3, "de mantenimiento en un hotel", "b_lobby", `An old hotel lobby with a marble floor, a brass luggage cart and a reception desk, morning light.`),
   B(3, "En el cuarto de planchado", "b_iroom", `${IROOM}, warm overhead light, no people.`),
+  B(3, "se planchaban", "b_pressing", `Several steam irons gliding over white shirts on a row of ironing boards in ${IROOM}.`),
   B(3, "cuatrocientas camisas por semana", "b_racks", `Long rolling racks packed with hundreds of white shirts on hangers in a hotel basement.`),
   B(3, "Uniformes, camisas de huéspedes, manteles", "b_uniforms", `Hotel staff uniforms, guest shirts and folded white tablecloths stacked on a table in an ironing room.`),
+  B(3, "camisas de huéspedes", "b_guestshirts", `White guest shirts in clear bags with paper tags hanging on a rail in a hotel ironing room.`),
   // 50 · tres cosas
   B(4, "Pero antes de tocarla", "b_unplugged", `${IRON} unplugged, its cord coiled beside it on an ironing board.`),
+  B(4, "hay tres cosas", "b_threeitems", `${IRON}, ${DIST} and a small instruction booklet lined up on an ironing board.`),
   B(4, "Por qué escupe, y qué tiene adentro", "b_flakes", `White limescale flakes scattered on the dark cover of an ironing board under a steam iron, close view.`),
   B(4, "Lo que dice el manual de su plancha", "b_manualbox", `A small instruction booklet for an iron lying next to its open cardboard box, no readable text.`),
   B(4, "que casi nadie lee", "b_drawer", `A kitchen drawer full of old appliance instruction booklets and warranty papers.`),
@@ -72,7 +77,7 @@ export const SHOTS = [
   B(13, "y la plancharon con otra plancha, una limpia", "b_otheriron", `A clean steam iron pressing a white jacket on an ironing board in a hotel ironing room.`),
   B(13, "El gerente dio el discurso sin saber nada", "b_speech", `${MANAGER} in a white jacket speaking at a wedding on a hotel terrace at night, seen from the back of the room.`),
   B(13, "Pero al otro día, Don Ramiro juntó todas", "b_ironsrow", `About twenty old steam irons lined up on a long steel table in a hotel basement workshop.`),
-  C(13, "Y en la libreta del gerente quedó anotado", "ClNotebook", { title: "Boda · 2009", rows: [{ k: "Mancha", v: "el pecho" }, { k: "Causa", v: "piedra" }, { k: "Orden", v: "1 vez por mes" }] }),
+  C(13, "Y en la libreta del gerente quedó anotado", "ClNotebook", { title: "Boda · 2009", rows: [{ k: "Mancha", v: "el pecho" }, { k: "Causa", v: "piedra" }, { k: "Limpieza", v: "1 vez por mes" }] }),
   // 193 · el manual
   B(14, "Antes de echarle cualquier cosa adentro", "b_jugs", `${VIN} and ${DIST} on a laundry counter beside ${IRON}.`),
   V(14, "Lea el manual", "d03"),

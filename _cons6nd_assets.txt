@@ -1,0 +1,12 @@
+cons6nd.m4a
+ref_cons6nd.png
+avatar_clips/cons6nd/reel30.mp4
+img/cons6nd/b_suit.jpg
+img/cons6nd/b_ironing.jpg
+img/cons6nd/b_button.jpg
+broll/cons6nd/d01.mp4
+broll/cons6nd/d02.mp4
+img/cons6nd/book_p36.png
+img/cons6nd/book_cover.png
+img/cons6nd/qr.png
+img/cons6nd/th_sarro.jpg
