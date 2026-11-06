@@ -1,6 +1,6 @@
 // DIRECTOR C — cons6nd: los 5 errores + la rutina + lo que Rosa nunca hacía + preguntas (agua del aire, verticales, cuándo tirarla, la
 // camisa ya manchada) + la serie (hervidor y tina) + repaso + cierre (párr. 47-68).
-import { C, B, V, IRON, SHIRT, BOARD, HOME, IROOM, ROSA, MANAGER, DIST, VIN, I } from "./dir_a.mjs";
+import { ST, C, B, V, IRON, SHIRT, BOARD, HOME, IROOM, ROSA, MANAGER, DIST, VIN, I } from "./dir_a.mjs";
 export const SHOTS = [
   // 634 · los cinco errores
   B(47, "Ahora, los cinco errores", "b_brokenirons", `A shelf in a hotel storeroom with several old broken steam irons, white crust on their soleplates.`),
@@ -21,21 +21,21 @@ export const SHOTS = [
   B(54, "Quinto, la prueba del trapo", "b_ragboard", `An old white rag on an ironing board under a steam iron, clean, no spots.`),
   // 721 · Rosa nunca
   B(55, "Rosa tenía tres cosas que nunca hacía", "b_rosashelf", `${ROSA} placing a steam iron upright on a shelf in ${IROOM}.`),
-  B(56, "Ni una noche", "b_nightiron", `An iron standing on its heel on an ironing board in a dark room at night, its tank empty.`),
+  ST(56, "Ni una noche", "b_nightiron", "iron on ironing board", `An iron standing on its heel on an ironing board in a dark room at night, its tank empty.`),
   B(57, "Nunca la dejaba acostada sobre la suela", "b_flat", `A steam iron lying flat on its soleplate on a wooden shelf, close view.`),
   B(57, "Decía que la suela es la cara de la plancha", "b_soleshine", `A gleaming clean stainless steel soleplate of a steam iron reflecting window light, close view.`),
-  B(58, "Ni la noche de la boda", "b_terrace2", `A hotel rooftop terrace with a wedding party at night, string lights, seen from far.`),
+  ST(58, "Ni la noche de la boda", "b_terrace2", "wedding party night", `A hotel rooftop terrace with a wedding party at night, string lights, seen from far.`),
   // 748 · preguntas
   B(59, "las preguntas que más me dejan", "b_phone2", `A pair of reading glasses and a phone on a wooden bench in a hotel staff room.`),
   C(60, "Sirve el agua del aire acondicionado", "PlWaterSrc"),
   B(60, "En la plancha, destilada", "b_distonly", `${DIST} next to a steam iron on ${BOARD}, nothing else.`),
-  B(61, "Y las planchas de vapor de pie, las verticales", "b_steamer", `A standing garment steamer with its hose and head next to a white shirt on a hanger.`, { anim: "steam rises from the steamer head" }),
+  ST(61, "Y las planchas de vapor de pie, las verticales", "b_steamer", "garment steamer", `A standing garment steamer with its hose and head next to a white shirt on a hanger.`, { anim: "steam rises from the steamer head" }),
   B(61, "y casi todas traen su propio método", "b_steamermanual", `The instruction booklet of a garment steamer open on a table, the text not readable.`),
   C(62, "si gotea por abajo", "PlWhenToss"),
   B(62, "Ahí ya no es piedra, es la plancha", "b_oldiron", `An old worn steam iron in a cardboard box for recycling at the door of a hotel workshop.`),
   // 791 · la camisa ya manchada
   B(63, "Y la camisa que ya se manchó", "b_stainshirt", `${SHIRT} with a small brown iron mark on the front laid flat on a table.`),
-  B(63, "del revés, con agua fría primero", "b_insideout", `A white shirt turned inside out under a running cold water tap in a laundry sink.`, { anim: "cold water runs over the fabric" }),
+  ST(63, "del revés, con agua fría primero", "b_insideout", "washing shirt sink", `A white shirt turned inside out under a running cold water tap in a laundry sink.`, { anim: "cold water runs over the fabric" }),
   B(63, "con jabón en barra frotado antes del lavado", "b_barsoap", `A bar of laundry soap rubbed on a brown spot of a white shirt over a sink.`),
   // 810 · la serie
   C(64, "Es la misma piedra, en otro lugar", "ClVideoRef", { thumb: I + "th_sarro.jpg", title: "La misma piedra, en otro lugar", tag: "en el canal" }),
@@ -47,5 +47,5 @@ export const SHOTS = [
   // 865 · cierre
   B(67, "Y cuénteme en los comentarios", "b_button2", `Close view of the self-cleaning button on the back of a steam iron.`),
   B(68, "Treinta años cuidando un hotel", "b_keys", `A big ring of old brass hotel master keys hanging on a hook in a maintenance workshop.`),
-  B(68, "Nos vemos en el próximo", "b_shirtready", `A crisp white shirt on a hanger on a bedroom door in soft morning light, a steam iron standing on the board behind.`),
+  ST(68, "Nos vemos en el próximo", "b_shirtready", "white shirt hanger", `A crisp white shirt on a hanger on a bedroom door in soft morning light, a steam iron standing on the board behind.`),
 ];

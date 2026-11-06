@@ -1,11 +1,11 @@
 // DIRECTOR B — cons6nd: método dos (¼ vinagre + ¾ destilada, sólo si el manual lo permite) + vaciar + las llenadas de destilada (el
 // comentario de la señora) + la suela fría + la pasta + el hisopo + según la suela + CTA 2 + la prueba del trapo (premio) + la camisa +
 // para que no vuelva + el cuarto de planchado (párr. 23-46).
-import { C, B, V, IRON, SHIRT, BOARD, HOME, IROOM, ROSA, MANAGER, DIST, VIN, I } from "./dir_a.mjs";
+import { ST, C, B, V, IRON, SHIRT, BOARD, HOME, IROOM, ROSA, MANAGER, DIST, VIN, I } from "./dir_a.mjs";
 export const SHOTS = [
   // 315 · método dos
   B(23, "sin botón de autolimpieza", "b_plainiron", `An older simple steam iron with no extra buttons on an ironing board.`),
-  B(23, "y sólo si el manual no prohíbe el vinagre", "b_manualread", `A finger following a line in a small appliance instruction booklet, the text not readable.`),
+  ST(23, "y sólo si el manual no prohíbe el vinagre", "b_manualread", "reading instruction manual", `A finger following a line in a small appliance instruction booklet, the text not readable.`),
   C(24, "En una jarrita", "PlRatioJug"),
   B(24, "Un cuarto de vinagre, tres cuartos de agua", "b_pourvin", `White vinegar poured into a small clear measuring jug up to the first quarter mark, ${DIST} beside it.`, { anim: "the vinegar pours into the jug" }),
   // 335 · vapor
@@ -18,10 +18,10 @@ export const SHOTS = [
   // 362 · llenadas de destilada
   B(27, "Y ahora lo más importante", "b_distjug", `${DIST} next to a steam iron on a laundry counter.`),
   B(27, "caliente la plancha, y dele vapor sobre la pileta hasta vaciarla", "b_clearsteam", `Clean steam rising from an iron held over a white sink, clear drops falling.`),
-  B(27, "Y otra vez", "b_refill", `Distilled water poured from a small jug into the fill hole of a steam iron.`, { anim: "water pours into the iron" }),
+  ST(27, "Y otra vez", "b_refill", "pouring water iron", `Distilled water poured from a small jug into the fill hole of a steam iron.`, { anim: "water pours into the iron" }),
   // 378 · la señora
   B(28, "Una señora contaba en los comentarios", "b_phone", `Weathered hands holding a phone over a wooden workbench, the screen glowing, the screen content blurred.`),
-  B(28, "Le faltaron estos enjuagues", "b_newbox", `A new steam iron in its cardboard box on a store shelf, no brand visible, a price tag with no readable numbers.`),
+  ST(28, "Le faltaron estos enjuagues", "b_newbox", "appliance store shelf", `A new steam iron in its cardboard box on a store shelf, no brand visible, a price tag with no readable numbers.`),
   C(28, "Si le sigue saliendo turbia", "PlRinses"),
   // 398 · por fuera
   C(30, "Toque con el dorso de la mano", "PlColdCheck"),
@@ -45,12 +45,12 @@ export const SHOTS = [
   C(35, "El link está en la primera línea de la descripción", "ClQRCard", { qr: I + "qr.png", cover: I + "book_cover.png", head: "PÁGINA 36 · EL LAVADERO", text: "escanee con la cámara" }),
   // 519 · la prueba del trapo
   B(36, "Y ahora, el premio", "b_rosarag", `${ROSA} holding up an old white cotton rag to the light in ${IROOM}.`),
-  B(37, "Antes de planchar ropa buena", "b_goodshirt", `${SHIRT} hanging on a door, crisp and clean, waiting to be ironed.`),
+  ST(37, "Antes de planchar ropa buena", "b_goodshirt", "white shirt hanger door", `${SHIRT} hanging on a door, crisp and clean, waiting to be ironed.`),
   C(37, "y planche un trapo viejo de algodón blanco", "PlRagTest"),
   B(38, "Si aparece una mancha, una sola", "b_ragspot", `A single small gray water spot on an old white cotton rag on an ironing board, close view.`),
   // 546 · la camisa
   V(39, "Y ahora sí, la camisa blanca", "d09"),
-  B(39, "Así salían las camisas del cuarto de planchado", "b_rackwhite", `A rolling rack of crisp white shirts on hangers in ${IROOM}.`),
+  ST(39, "Así salían las camisas del cuarto de planchado", "b_rackwhite", "white shirts hangers", `A rolling rack of crisp white shirts on hangers in ${IROOM}.`),
   // 562 · para que no vuelva
   V(41, "Con la plancha todavía tibia, sobre la pileta", "d10"),
   C(41, "El agua que se queda quieta adentro", "PlEmptyTank"),

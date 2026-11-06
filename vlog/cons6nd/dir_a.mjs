@@ -5,6 +5,7 @@
 import { S, BI } from "../claudio/lib.mjs";
 export const C = (p, at, name, props = {}, o = {}) => S(p, at, "c", name, { props, ...o });
 export const B = (p, at, name, scene, o = {}) => S(p, at, "bi", name, { p: BI(scene), ...o });
+export const ST = (p, at, name, q, scene, o = {}) => S(p, at, "bi", name, { q, p: BI(scene), ...o });
 export const V = (p, at, name) => S(p, at, "cl", name, { p: "veo", veo: 1 });
 export const IRON = "a blue and white household steam iron with a stainless steel soleplate";
 export const SHIRT = "a white cotton dress shirt";
@@ -19,10 +20,10 @@ export const VIN = "a clear jug of white vinegar with a plain blank label";
 export const I = "img/cons6nd/";
 export const SHOTS = [
   // ── 0:00 · domingo a la noche (avatar 0-~6)
-  B(0, "o una boda, o una entrevista", "b_suit", `A dark suit jacket and a tie laid out on a bed at night, a lamp on, ready for the morning.`),
-  B(0, "o una entrevista", "b_interview", `A white dress shirt and a dark tie hanging on a closet door at night, a pair of polished shoes below.`),
-  B(0, "Usted plancha la camisa blanca", "b_ironing", `${IRON} gliding over ${SHIRT} on ${BOARD} at night, a warm lamp nearby.`, { anim: "the iron glides over the shirt" }),
-  B(0, "la camisa blanca", "b_shirtboard", `${SHIRT} laid flat on ${BOARD} at night, a warm lamp nearby.`),
+  ST(0, "o una boda, o una entrevista", "b_suit", "suit jacket on bed", `A dark suit jacket and a tie laid out on a bed at night, a lamp on, ready for the morning.`),
+  ST(0, "o una entrevista", "b_interview", "white shirt hanging", `A white dress shirt and a dark tie hanging on a closet door at night, a pair of polished shoes below.`),
+  ST(0, "Usted plancha la camisa blanca", "b_ironing", "ironing shirt night", `${IRON} gliding over ${SHIRT} on ${BOARD} at night, a warm lamp nearby.`, { anim: "the iron glides over the shirt" }),
+  ST(0, "la camisa blanca", "b_shirtboard", "shirt on ironing board", `${SHIRT} laid flat on ${BOARD} at night, a warm lamp nearby.`),
   B(0, "aprieta el botón del vapor", "b_button", `A thumb pressing the steam button on top of the handle of ${IRON}, close view.`),
   V(0, "y la plancha escupe", "d01"),
   C(0, "Un chorro turbio, con escamitas blancas", "PlSpit"),
@@ -30,18 +31,18 @@ export const SHOTS = [
   B(1, "una aureola marrón", "b_halo", `Close view of a pale brown water ring stain on the collar of ${SHIRT} on an ironing board.`),
   B(1, "Y la camisa", "b_collarclose", `Extreme close view of a brown water mark on the white collar of a dress shirt.`),
   B(1, "que estaba limpia", "b_hamper", `${SHIRT} with a brown spot on the collar tossed back into a laundry hamper.`),
-  B(1, "ahora hay que lavarla de nuevo", "b_washer", `A white dress shirt going back into the drum of a home washing machine at night.`),
+  ST(1, "ahora hay que lavarla de nuevo", "b_washer", "washing machine shirt", `A white dress shirt going back into the drum of a home washing machine at night.`),
   // 24 · promesa
   B(2, "Hoy le dejo la plancha como nueva", "b_newiron", `${IRON} standing on its heel on an ironing board, gleaming, morning light.`),
   B(2, "Por dentro", "b_fillhole", `Close view of the open water fill hole of a steam iron, white crust around its edge.`),
   B(2, "donde se junta la piedra", "b_tankcrust", `Close view through the clear water tank window of a steam iron, white chalky crust stuck inside.`),
   V(2, "y por fuera, en la suela", "d02"),
   // 34 · 400 camisas
-  B(3, "Treinta años fui conserje", "b_hotel", `The front of an old city hotel with a canopy over the entrance, evening light.`),
-  B(3, "de mantenimiento en un hotel", "b_lobby", `An old hotel lobby with a marble floor, a brass luggage cart and a reception desk, morning light.`),
+  ST(3, "Treinta años fui conserje", "b_hotel", "old hotel entrance", `The front of an old city hotel with a canopy over the entrance, evening light.`),
+  ST(3, "de mantenimiento en un hotel", "b_lobby", "hotel lobby marble", `An old hotel lobby with a marble floor, a brass luggage cart and a reception desk, morning light.`),
   B(3, "En el cuarto de planchado", "b_iroom", `${IROOM}, warm overhead light, no people.`),
-  B(3, "se planchaban", "b_pressing", `Several steam irons gliding over white shirts on a row of ironing boards in ${IROOM}.`),
-  B(3, "cuatrocientas camisas por semana", "b_racks", `Long rolling racks packed with hundreds of white shirts on hangers in a hotel basement.`),
+  ST(3, "se planchaban", "b_pressing", "laundry ironing press", `Several steam irons gliding over white shirts on a row of ironing boards in ${IROOM}.`),
+  ST(3, "cuatrocientas camisas por semana", "b_racks", "clothes rack shirts", `Long rolling racks packed with hundreds of white shirts on hangers in a hotel basement.`),
   B(3, "Uniformes, camisas de huéspedes, manteles", "b_uniforms", `Hotel staff uniforms, guest shirts and folded white tablecloths stacked on a table in an ironing room.`),
   B(3, "camisas de huéspedes", "b_guestshirts", `White guest shirts in clear bags with paper tags hanging on a rail in a hotel ironing room.`),
   // 50 · tres cosas
@@ -56,9 +57,9 @@ export const SHOTS = [
   C(5, "El link está en la primera línea", "TbBookTub", { page: I + "book_p36.png", cover: I + "book_cover.png", qr: I + "qr.png", pageNo: 36, skip: 96 }),
   // 85 · la cámara de vapor
   C(7, "La plancha tiene un depósito de agua", "PlCutaway"),
-  B(7, "se convierte en vapor", "b_steam", `Steam puffing out from the holes of a hot iron soleplate held above an ironing board, side view.`, { anim: "steam puffs out of the soleplate" }),
+  ST(7, "se convierte en vapor", "b_steam", "steam iron steam", `Steam puffing out from the holes of a hot iron soleplate held above an ironing board, side view.`, { anim: "steam puffs out of the soleplate" }),
   // 99 · la piedra
-  B(8, "Calcio, magnesio", "b_tap", `Tap water running from a chrome faucet with white mineral crust around its spout.`),
+  ST(8, "Calcio, magnesio", "b_tap", "tap water faucet", `Tap water running from a chrome faucet with white mineral crust around its spout.`),
   B(8, "Cuando el agua se hace vapor, la piedra se queda", "b_kettlecrust", `The inside of an old kettle with white mineral crust, seen through the open lid.`),
   B(8, "Una capita por cada planchada", "b_soleholes", `Extreme close view of the steam holes of an iron soleplate rimmed with white crust.`),
   // 113 · escamas y marrón
@@ -69,7 +70,7 @@ export const SHOTS = [
   B(10, "el vapor sale por los pocos que quedan", "b_weaksteam", `A weak uneven puff of steam from a few holes of an iron soleplate, side view.`, { anim: "a weak puff of steam" }),
   B(10, "y sale de golpe, escupiendo", "b_spurt", `A sudden spurt of cloudy water drops from an iron onto a white sheet on an ironing board.`),
   // 140 · la boda, 2009
-  B(11, "Fue en dos mil nueve", "b_terrace", `A hotel rooftop terrace set for a wedding at dusk, string lights, round tables with white cloths.`),
+  ST(11, "Fue en dos mil nueve", "b_terrace", "rooftop wedding lights", `A hotel rooftop terrace set for a wedding at dusk, string lights, round tables with white cloths.`),
   B(11, "Y le mandó a planchar el uniforme de gala", "b_galauniform", `A white formal hotel manager's jacket with brass buttons hanging on a hook in ${IROOM}.`),
   C(12, "La plancha escupió", "PlUniform"),
   // 169 · lo salvamos
@@ -93,12 +94,12 @@ export const SHOTS = [
   C(18, "Antiadherente, que es oscura y lisa", "PlSoleTypes"),
   B(18, "Eso decide qué le puede pasar por fuera", "b_soleup", `A steam iron resting on its heel with the soleplate turned to the window light, close view.`),
   // 264 · método uno
-  B(20, "Enchufe la plancha", "b_plug", `A hand plugging the cord of a steam iron into a wall socket near an ironing board.`),
+  ST(20, "Enchufe la plancha", "b_plug", "plugging cord socket", `A hand plugging the cord of a steam iron into a wall socket near an ironing board.`),
   B(20, "y espere a que se caliente", "b_light", `The small orange indicator light glowing on top of a steam iron, close view.`),
-  B(20, "Cuando se apaga la lucecita, la desenchufa", "b_unplug", `A hand pulling the plug of a steam iron out of a wall socket.`),
+  ST(20, "Cuando se apaga la lucecita, la desenchufa", "b_unplug", "unplugging cord", `A hand pulling the plug of a steam iron out of a wall socket.`),
   V(21, "con la plancha horizontal, apriete y sostenga", "d05"),
   C(21, "Va a salir vapor y agua sucia por la suela", "PlSelfClean"),
   B(22, "Cuando el depósito se vacía, suelte el botón", "b_emptywin", `The empty clear water tank window of a steam iron, close view.`),
   B(22, "Si salió muy sucia, repítalo una vez más", "b_dirtysink", `Dirty cloudy water with white flakes in the bottom of a white sink.`),
-  B(22, "pase la suela todavía tibia sobre un trapo viejo", "b_rag", `A steam iron gliding over an old folded white cotton rag on an ironing board, gray marks left on the rag.`, { anim: "the iron glides over the rag" }),
+  ST(22, "pase la suela todavía tibia sobre un trapo viejo", "b_rag", "ironing cloth", `A steam iron gliding over an old folded white cotton rag on an ironing board, gray marks left on the rag.`, { anim: "the iron glides over the rag" }),
 ];

@@ -587,19 +587,27 @@ export const PlStarch: React.FC<{ bed?: string }> = ({ bed }) => {
   const spray = lin(f, 4, T * 0.3); const wait = lin(f, T * 0.3, T * 0.65); const iron = ease(lin(f, T * 0.65, T * 0.95));
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
-      <Bed src={bed} seed={620} dim={0.35} />
+      <Bed src={bed} seed={620} dim={0.8} />
       <Hand2D seed={620}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
-          <rect x={440} y={680} width={1040} height={280} rx={20} fill={SHIRT} stroke="#C9C2B4" strokeWidth={5} /><path d="M470 720 Q960 700 1450 720" stroke="rgba(0,0,0,0.06)" strokeWidth={14} fill="none" />
-          <g transform="translate(360 320) rotate(20)"><rect x={-50} y={-40} width={100} height={260} rx={20} fill="#E7E2F2" stroke="#8D82B5" strokeWidth={4} /><rect x={-24} y={-80} width={48} height={50} rx={6} fill="#5B4E8C" /></g>
+          {/* tabla de planchar: patas, borde y cubierta con punta a la derecha */}
+          <path d="M800 885 L710 960 M1120 885 L1210 960 M790 900 L1130 900" stroke="#7E8791" strokeWidth={16} strokeLinecap="round" fill="none" />
+          <path d="M610 840 Q600 800 650 796 L1190 796 Q1330 800 1320 850 Q1310 890 1190 892 L650 892 Q610 888 610 840 Z" fill="#8FA3BA" stroke="#5E7388" strokeWidth={6} />
+          <path d="M650 880 L1200 880" stroke="rgba(255,255,255,0.35)" strokeWidth={6} />
+          {/* camisa tendida sobre la tabla */}
+          <path d="M700 812 L760 800 L840 812 L1210 812 L1214 878 L700 880 Z" fill={SHIRT} stroke="#C9C2B4" strokeWidth={4} />
+          <path d="M840 812 L900 846 L960 812 M900 846 L900 878" stroke="#D2CCBD" strokeWidth={4} fill="none" />
+          {[0, 1, 2].map((i) => <circle key={i} cx={900} cy={852 + i * 10} r={0} fill="#C9A44C" />)}
+          {[0, 1].map((i) => <circle key={i} cx={900} cy={858 + i * 12} r={4} fill="#C9A44C" />)}
+          <g transform="translate(330 340) rotate(20) scale(1.5)"><rect x={-50} y={-40} width={100} height={260} rx={20} fill="#E7E2F2" stroke="#8D82B5" strokeWidth={4} /><rect x={-24} y={-80} width={48} height={50} rx={6} fill="#5B4E8C" /></g>
           {Array.from({ length: 50 }, (_, i) => { const t = ((f * 1.5 + i * 5) % 30) / 30; return <circle key={i} cx={420 + t * (300 + rnd(i) * 400)} cy={280 + t * (300 + rnd(i + 1) * 120)} r={3 + rnd(i + 2) * 4} fill="rgba(200,210,230,0.9)" opacity={spray > 0 && spray < 1 ? 1 - t : 0} />; })}
-          {Array.from({ length: 40 }, (_, i) => <circle key={i} cx={500 + rnd(i) * 920} cy={710 + rnd(i + 1) * 220} r={6} fill="rgba(190,200,215,0.8)" opacity={spray * (1 - wait)} />)}
-          <g opacity={iron > 0 ? 1 : 0}><Iron x={1560 - 600 * iron} y={830 - 300 * (1 - iron)} s={0.9} rot={-4} /></g>
-          <g transform="translate(1520 230)"><circle r={110} fill="#FFFFFF" stroke={CL.navy} strokeWidth={8} />{wait >= 0.99 ? <circle r={90} fill={hexA(CL.yellow, 0.8)} /> : <path d={`M0 0 L0 -90 A90 90 0 ${wait > 0.5 ? 1 : 0} 1 ${Math.sin(wait * Math.PI * 2) * 90} ${-Math.cos(wait * Math.PI * 2) * 90} Z`} fill={hexA(CL.yellow, 0.8)} />}<line x1={0} y1={0} x2={Math.sin(wait * Math.PI * 2) * 80} y2={-Math.cos(wait * Math.PI * 2) * 80} stroke={CL.navy} strokeWidth={10} strokeLinecap="round" /><circle r={12} fill={CL.navy} /></g>
+          {Array.from({ length: 40 }, (_, i) => <circle key={i} cx={700 + rnd(i) * 500} cy={818 + rnd(i + 1) * 60} r={5} fill="rgba(170,185,205,0.9)" opacity={spray * (1 - wait)} />)}
+          <g opacity={iron > 0 ? 1 : 0}><Iron x={1300 - 365 * iron} y={850 - 300 * (1 - iron)} s={1.5} rot={-4} /></g>
+          <g transform="translate(1650 210)"><circle r={110} fill="#FFFFFF" stroke={CL.navy} strokeWidth={8} />{wait >= 0.99 ? <circle r={90} fill={hexA(CL.yellow, 0.8)} /> : <path d={`M0 0 L0 -90 A90 90 0 ${wait > 0.5 ? 1 : 0} 1 ${Math.sin(wait * Math.PI * 2) * 90} ${-Math.cos(wait * Math.PI * 2) * 90} Z`} fill={hexA(CL.yellow, 0.8)} />}<line x1={0} y1={0} x2={Math.sin(wait * Math.PI * 2) * 80} y2={-Math.cos(wait * Math.PI * 2) * 80} stroke={CL.navy} strokeWidth={10} strokeLinecap="round" /><circle r={12} fill={CL.navy} /></g>
         </svg>
-        <Tag x={170} y={560} text="1 · rocíe" k={lin(f, 4, 12)} />
-        <Tag x={1210} y={410} text="2 · espere unos segundos" k={lin(f, T * 0.3, T * 0.38)} />
-        <Tag x={760} y={1000} text="3 · recién ahí, planche" k={lin(f, T * 0.65, T * 0.72)} />
+        <Tag x={1290} y={400} text="2 · espere unos segundos" k={lin(f, T * 0.3, T * 0.38)} />
+        <Tag x={120} y={760} text="1 · rocíe" k={lin(f, 4, 12)} />
+        <Tag x={760} y={1005} text="3 · recién ahí, planche" k={lin(f, T * 0.65, T * 0.72)} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -698,11 +706,11 @@ export const PlRecap: React.FC<{ bed?: string }> = ({ bed }) => {
       <Hand2D seed={624} push={[1.04, 1.0]}>
         {[0, 1, 2].map((r) => <div key={r} style={{ position: "absolute", left: 80, right: 80, top: 56 + r * 320, height: 14, borderRadius: 7, background: "linear-gradient(180deg,#D7DCE1,#9AA2AB)" }} />)}
         {W.map((w, i) => { const r = Math.floor(i / 4), c = i % 4; const t0 = 4 + i * ((T - 30) / W.length); const p = pop(f, fps, t0, 10); const sw = Math.sin(f / 14 + i) * 2;
-          return <div key={i} style={{ position: "absolute", left: 110 + c * 430, top: 60 + r * 320, width: 405, transformOrigin: "50% 0", rotate: `${sw + (1 - p) * 30}deg`, opacity: clamp01(p * 2) }}>
+          return <div key={i} style={{ position: "absolute", left: 110 + (c + (r === 2 ? 1 : 0)) * 430, top: 60 + r * 320, width: 405, transformOrigin: "50% 0", rotate: `${sw + (1 - p) * 30}deg`, opacity: clamp01(p * 2) }}>
             <svg width={405} height={80} style={{ display: "block" }}><path d="M202 20 q 0 -18 16 -18" stroke="#888" strokeWidth={6} fill="none" /><path d="M20 76 L202 22 L385 76" stroke="#7A5A3A" strokeWidth={10} fill="none" /></svg>
-            <div style={{ marginTop: -6, height: 240, background: SHIRT, borderRadius: "0 0 10px 10px", boxShadow: `0 20px 40px ${CL.shadow}`, display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", padding: 10 }}>
-              <div style={{ fontFamily: LABEL, fontSize: 36, color: CL.brass, letterSpacing: 3 }}>{i + 1}</div>
-              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 55, color: CL.navy, lineHeight: 1.06 }}>{w}</div>
+            <div style={{ marginTop: -6, height: 246, background: SHIRT, borderRadius: "0 0 10px 10px", boxShadow: `0 20px 40px ${CL.shadow}`, display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", padding: "12px 16px" }}>
+              <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40, color: "#fff", background: CL.navy, borderRadius: 999, minWidth: 56, padding: "0 16px", lineHeight: "52px", height: 52, alignSelf: "center", marginBottom: 2 }}>{i + 1}</div>
+              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 51, color: CL.navy, lineHeight: 1.06 }}>{w}</div>
             </div>
           </div>; })}
       </Hand2D>
