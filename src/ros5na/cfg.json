@@ -1,0 +1,627 @@
+{
+ "desc": "🍲 Recetas del invierno + El Gran Recetario de la Abuela",
+ "replies": [],
+ "pages": {},
+ "heroes": [
+  {
+   "k": "piggy",
+   "at": 13.02,
+   "out": 17.52,
+   "n": 6,
+   "lab": "LLEGAR A FIN DE MES",
+   "bg": "n_estufa_cuenta",
+   "mode": "drop"
+  },
+  {
+   "k": "candle",
+   "at": 23.54,
+   "out": 29.54,
+   "lab": "CUARENTA INVIERNOS",
+   "sub": "EN ESTA COCINA",
+   "bg": "n_c_cocina",
+   "mode": "iris"
+  },
+  {
+   "k": "scroll",
+   "at": 74.94,
+   "out": 81.44,
+   "items": [
+    {
+     "t": "Lentejas sin gas",
+     "at": 0
+    },
+    {
+     "t": "Pies calientes",
+     "at": 0
+    },
+    {
+     "t": "Un cuarto tibio",
+     "at": 0
+    }
+   ],
+   "lab": "LO DE HOY",
+   "bg": "r_lentejas",
+   "mode": "drop"
+  },
+  {
+   "k": "vault",
+   "at": 135.36,
+   "out": 139.86,
+   "img": "n_olla_barro",
+   "lab": "LA OLLA DE MI MAMÁ",
+   "bg": "n_olla_barro",
+   "mode": "iris"
+  },
+  {
+   "k": "pulse",
+   "at": 189.04,
+   "out": 193.54,
+   "a": "LA CASA HELADA",
+   "flat": 1,
+   "lab": "ME ACORDÉ DE MI ABUELA",
+   "bg": "n_estufa_6am",
+   "mode": "shutter"
+  },
+  {
+   "k": "funnel",
+   "at": 256.34,
+   "out": 262.84,
+   "items": [
+    {
+     "t": "HUESOS",
+     "at": 0
+    },
+    {
+     "t": "CEBOLLA",
+     "at": 0
+    },
+    {
+     "t": "AJO",
+     "at": 0
+    },
+    {
+     "t": "ZANAHORIA",
+     "at": 0
+    }
+   ],
+   "lab": "CALDO DE TRES DÍAS",
+   "bg": "r_cebolla_corta",
+   "mode": "wipe"
+  },
+  {
+   "k": "fridge",
+   "at": 318.18,
+   "out": 324.68,
+   "items": [
+    {
+     "t": "Cáscaras",
+     "at": 0
+    },
+    {
+     "t": "Puntas de apio",
+     "at": 0
+    },
+    {
+     "t": "Tallos de cilantro",
+     "at": 0
+    },
+    {
+     "t": "A la olla",
+     "at": 0
+    }
+   ],
+   "lab": "LA BOLSA DEL CONGELADOR",
+   "bg": "n_bolsa_cascaras",
+   "mode": "drop"
+  },
+  {
+   "k": "letter",
+   "at": 379.74,
+   "out": 386.24,
+   "lines": [
+    "Lunes:",
+    "sopa de pan",
+    "y nada más"
+   ],
+   "sign": "Rosa",
+   "bg": "n_sopa_pan",
+   "mode": "blinds"
+  },
+  {
+   "k": "traffic",
+   "at": 430.24,
+   "out": 436.24,
+   "lights": [
+    "ENVUELTA HORAS",
+    "TIBIA",
+    "HERVIR OTRA VEZ"
+   ],
+   "only": 2,
+   "bg": "n_caja_heno",
+   "mode": "diag"
+  },
+  {
+   "k": "antes",
+   "at": 487.88,
+   "out": 492.88,
+   "img": "r_platano",
+   "img2": "v05_pan",
+   "a": "DURO",
+   "b": "COMO NUEVO",
+   "lab": "UNA PASADA DE AGUA",
+   "bg": "r_platano",
+   "mode": "split"
+  },
+  {
+   "k": "blueprint",
+   "at": 553.28,
+   "out": 559.28,
+   "img": "n_bolsa_goma",
+   "dims": [
+    {
+     "t": "caliente, no hirviendo",
+     "x1": 0.15,
+     "y1": 0.85,
+     "x2": 0.6,
+     "y2": 0.85
+    }
+   ],
+   "lab": "LA BOTELLA BIEN CERRADA",
+   "bg": "n_bolsa_goma",
+   "mode": "wipe"
+  },
+  {
+   "k": "level",
+   "at": 617.38,
+   "out": 623.38,
+   "lab": "SIEMPRE ENVUELTO",
+   "sub": "PRUEBA CON LA MANO",
+   "bg": "n_ladrillo_pies",
+   "mode": "blinds"
+  },
+  {
+   "k": "gears",
+   "at": 671.14,
+   "out": 677.14,
+   "items": [
+    {
+     "t": "OLLA",
+     "at": 0
+    },
+    {
+     "t": "VAPORERA",
+     "at": 0
+    },
+    {
+     "t": "PAN",
+     "at": 0
+    }
+   ],
+   "lab": "UN FUEGO, TRES COSAS",
+   "bg": "n_media_cuello",
+   "mode": "diag"
+  },
+  {
+   "k": "emboss",
+   "at": 691.36,
+   "out": 695.86,
+   "lab": "LA TAPA SIEMPRE",
+   "sub": "O UN PLATO BOCA ABAJO",
+   "bg": "r_tortillas",
+   "mode": "wipe"
+  },
+  {
+   "k": "compass",
+   "at": 759.42,
+   "out": 765.42,
+   "opts": [
+    "CANELA",
+    "CLAVO",
+    "NARANJA",
+    "AZÚCAR"
+   ],
+   "win": 0,
+   "lab": "TÉ PARA TODA LA TARDE",
+   "bg": "n_recetario_pag",
+   "mode": "iris"
+  },
+  {
+   "k": "dominoes",
+   "at": 798.64,
+   "out": 805.14,
+   "items": [
+    {
+     "t": "SIN COMER",
+     "img": "n_enfermera",
+     "at": 0
+    },
+    {
+     "t": "COMIDA FRÍA",
+     "img": "n_frio_de_pie",
+     "at": 0
+    },
+    {
+     "t": "MÁS FRÍO",
+     "img": "r_sopa_tarde",
+     "at": 0
+    }
+   ],
+   "stamp": "NO TE SALTES LA CENA",
+   "bad": 1,
+   "bg": "n_enfermera",
+   "mode": "wipe"
+  },
+  {
+   "k": "peel",
+   "at": 850.3,
+   "out": 856.3,
+   "img": "n_cobija_cortina",
+   "img2": "n_chiflon",
+   "a": "FEA",
+   "lab": "LA QUE MÁS CALIENTA",
+   "bg": "n_cobija_cortina",
+   "mode": "diag"
+  },
+  {
+   "k": "conveyor",
+   "at": 924.28,
+   "out": 930.78,
+   "items": [
+    {
+     "t": "EL CHAL",
+     "img": "n_c_gorro_chal",
+     "at": 0
+    },
+    {
+     "t": "EL SUÉTER",
+     "img": "n_sueter",
+     "at": 0
+    },
+    {
+     "t": "LA COBIJA",
+     "img": "n_c_cama_chal",
+     "at": 0
+    },
+    {
+     "t": "UNO GRUESO",
+     "img": "n_sueter_nuevo",
+     "ok": false,
+     "at": 0
+    }
+   ],
+   "lab": "CAPAS, NO UNO GRUESO",
+   "bg": "n_tapete_lana",
+   "mode": "shutter"
+  },
+  {
+   "k": "neon",
+   "at": 978.48,
+   "out": 983.98,
+   "lab": "un solo cuarto",
+   "col": "#ffb257",
+   "sub": "EL MÁS TIBIO DE LA CASA",
+   "bg": "n_c_dedo",
+   "mode": "blinds"
+  },
+  {
+   "k": "shelf",
+   "at": 1044.9,
+   "out": 1050.9,
+   "items": [
+    {
+     "t": "SOPA",
+     "img": "n_calabaza_tres",
+     "at": 0
+    },
+    {
+     "t": "PURÉ",
+     "img": "r_corta_verdura",
+     "at": 0
+    },
+    {
+     "t": "POSTRE",
+     "img": "r_frascos",
+     "at": 0
+    }
+   ],
+   "lab": "UNA CALABAZA",
+   "bg": "n_calabaza_tres",
+   "mode": "drop"
+  },
+  {
+   "k": "puzzle",
+   "at": 1100.23,
+   "out": 1104.73,
+   "img": "r_bolitas",
+   "lab": "PAN DE SARTÉN",
+   "bg": "r_bolitas",
+   "mode": "split"
+  },
+  {
+   "k": "typewriter",
+   "at": 1149.31,
+   "out": 1153.81,
+   "lines": [
+    "SOPA DE AJO",
+    "CINCO MINUTOS"
+   ],
+   "bg": "r_ajo_rebanadas",
+   "mode": "blinds"
+  },
+  {
+   "k": "indexbox",
+   "at": 1218.15,
+   "out": 1224.65,
+   "items": [
+    {
+     "t": "Lunes",
+     "img": "n_para_cuatro",
+     "at": 0
+    },
+    {
+     "t": "Martes",
+     "img": "r_porciones",
+     "at": 0
+    },
+    {
+     "t": "Miércoles",
+     "img": "n_congelador",
+     "at": 0
+    }
+   ],
+   "lab": "porciones",
+   "bg": "n_para_cuatro",
+   "mode": "wipe"
+  },
+  {
+   "k": "match",
+   "at": 1273.07,
+   "out": 1279.07,
+   "kick": "OJO",
+   "lab": "CÁSCARA DE NARANJA",
+   "sub": "SE VA EL AGUA, LA APAGAS",
+   "bg": "r_naranja_hierve",
+   "mode": "iris"
+  },
+  {
+   "k": "drawer",
+   "at": 1341.76,
+   "out": 1346.26,
+   "items": [
+    {
+     "t": "ARROZ",
+     "img": "r_vela",
+     "at": 0
+    },
+    {
+     "t": "LENTEJAS",
+     "img": "n_cajon_tormenta",
+     "at": 0
+    },
+    {
+     "t": "VELA",
+     "img": "n_brasero",
+     "at": 0
+    },
+    {
+     "t": "AGUA",
+     "img": "r_vela",
+     "at": 0
+    }
+   ],
+   "bg": "r_vela",
+   "mode": "shutter"
+  },
+  {
+   "k": "dart",
+   "at": 1390.33,
+   "out": 1396.33,
+   "miss": [
+    "ESTUFA PRENDIDA",
+    "SALTAR COMIDAS"
+   ],
+   "lab": "COMER CALIENTE",
+   "bg": "n_horno_abierto",
+   "mode": "iris"
+  },
+  {
+   "k": "xray",
+   "at": 1460.05,
+   "out": 1466.05,
+   "img": "n_ambulancia",
+   "lab": "NO HUELE, NO SE VE",
+   "bg": "n_ambulancia",
+   "mode": "blinds"
+  },
+  {
+   "k": "branches",
+   "at": 1516.47,
+   "out": 1520.97,
+   "items": [
+    {
+     "t": "CALDO",
+     "at": 0
+    },
+    {
+     "t": "VERDURAS",
+     "at": 0
+    },
+    {
+     "t": "LADRILLO TIBIO",
+     "at": 0
+    },
+    {
+     "t": "TEJER",
+     "at": 0
+    }
+   ],
+   "lab": "MI DÍA DE INVIERNO",
+   "bg": "r_vaporera",
+   "mode": "drop"
+  },
+  {
+   "k": "searchlight",
+   "at": 1566.87,
+   "out": 1571.37,
+   "img": "n_adobe",
+   "lab": "LA COCINA DE MI ABUELA",
+   "bg": "n_adobe",
+   "mode": "shutter"
+  },
+  {
+   "k": "chain",
+   "at": 1631.29,
+   "out": 1637.29,
+   "weak": 3,
+   "lab": "LA PUERTA ABIERTA",
+   "sub": "POR AHÍ SE VA EL CALOR",
+   "bg": "n_puerta_patio",
+   "mode": "split"
+  },
+  {
+   "k": "radar",
+   "at": 1698.79,
+   "out": 1705.29,
+   "items": [
+    {
+     "t": "DOMINGO CALDO",
+     "at": 0
+    },
+    {
+     "t": "LUNES SOPA",
+     "at": 0
+    },
+    {
+     "t": "MARTES LENTEJAS",
+     "at": 0
+    },
+    {
+     "t": "VIERNES ARROZ",
+     "at": 0
+    }
+   ],
+   "lab": "LA SEMANA ENTERA",
+   "bg": "r_caldo_verduras",
+   "mode": "iris"
+  },
+  {
+   "k": "weights",
+   "at": 1757.41,
+   "out": 1762.41,
+   "items": [
+    {
+     "t": "LO DEL MES",
+     "at": 0
+    },
+    {
+     "t": "LO DE LA SEMANA",
+     "at": 0
+    },
+    {
+     "t": "LO DEL DÍA",
+     "at": 0
+    }
+   ],
+   "lab": "LA COMPRA POR PARTES",
+   "bg": "r_huevos_pan",
+   "mode": "shutter"
+  },
+  {
+   "k": "abacus",
+   "at": 1818.67,
+   "out": 1824.67,
+   "v": 8,
+   "u": "VASOS AL DÍA",
+   "sub": "AUNQUE NO TENGAS SED",
+   "bg": "r_agua_vaso",
+   "mode": "blinds"
+  },
+  {
+   "k": "globe",
+   "at": 1883.35,
+   "out": 1887.85,
+   "items": [
+    {
+     "t": "URUGUAY",
+     "at": 0
+    },
+    {
+     "t": "HONDURAS",
+     "at": 0
+    },
+    {
+     "t": "MÉXICO",
+     "at": 0
+    }
+   ],
+   "lab": "LO QUE ME ESCRIBEN",
+   "bg": "n_ladrillo_sarten",
+   "mode": "iris"
+  },
+  {
+   "k": "mosaic",
+   "at": 1936.27,
+   "out": 1940.77,
+   "imgs": [
+    "n_cobija_tejida",
+    "n_cuenta_gas",
+    "n_sueter_nuevo",
+    "r_cocina_tarde",
+    "n_puerta_cocina",
+    "r_horno_pan",
+    "n_horno_apagado",
+    "n_ollas_mesa",
+    "r_nieve_final",
+    "v02_fogon"
+   ],
+   "lab": "TODOS JUNTOS TE TAPAN",
+   "bg": "n_cobija_tejida",
+   "mode": "split"
+  },
+  {
+   "k": "ticket",
+   "at": 1987.79,
+   "out": 1992.29,
+   "kick": "LO AHORRADO",
+   "title": "UN SUÉTER",
+   "sub": "DE LANA, QUE TODAVÍA USO",
+   "v": "✓",
+   "u": "PRIMAVERA",
+   "bg": "n_cuenta_gas",
+   "mode": "drop"
+  },
+  {
+   "k": "led",
+   "at": 2061.28,
+   "out": 2065.78,
+   "lab": "EL CALOR YA PAGADO",
+   "sub": "NO LO DEJES IR",
+   "bg": "n_ollas_mesa",
+   "mode": "shutter"
+  },
+  {
+   "k": "podium",
+   "at": 2113.08,
+   "out": 2117.58,
+   "items": [
+    {
+     "t": "UN CUARTO",
+     "img": "n_ollas_mesa",
+     "at": 0
+    },
+    {
+     "t": "LAS CAPAS",
+     "img": "r_nieve_final",
+     "at": 0
+    },
+    {
+     "t": "EL GORRO",
+     "img": "v02_fogon",
+     "at": 0
+    }
+   ],
+   "bg": "n_ollas_mesa",
+   "mode": "drop"
+  }
+ ]
+}
