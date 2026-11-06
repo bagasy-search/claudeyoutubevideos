@@ -30,20 +30,20 @@ const YEL = "#E2B33C", YELD = "#C98B2A", RUST = "#C8642A", ACR = "#FBFAF6";
 const Cam: React.FC<{ pos: THREE.Vector3; target: THREE.Vector3; roll: number }> = ({ pos, target, roll }) => {
   const { camera } = useThree(); camera.position.copy(pos); camera.lookAt(target); camera.rotateZ(roll); camera.updateProjectionMatrix(); return null;
 };
-const Tag: React.FC<{ x: number; y: number; text: string; k: number; left?: boolean; color?: string; size?: number }> = ({ x, y, text, k, left, color = CL.navy, size = 40 }) => {
+export const Tag: React.FC<{ x: number; y: number; text: string; k: number; left?: boolean; color?: string; size?: number }> = ({ x, y, text, k, left, color = CL.navy, size = 40 }) => {
   const w = text.length * size * 0.56 + 50; const x0 = Math.max(50, Math.min(1870 - w, left ? x - w : x));
   return (
   <div style={{ position: "absolute", left: x0, top: y, translate: "0% -50%", opacity: clamp01(k), scale: String(0.85 + 0.15 * clamp01(k)), background: color, color: "#fff", fontFamily: LABEL, fontWeight: 600, fontSize: size, letterSpacing: 2, padding: "8px 22px", borderRadius: 10, textTransform: "uppercase", whiteSpace: "nowrap", boxShadow: `0 10px 24px ${CL.shadow}`, borderBottom: `4px solid ${CL.yellow}` }}>{text}</div>
   );
 };
-const Tick: React.FC<{ ok: boolean; s?: number; k?: number }> = ({ ok, s = 70, k = 1 }) => (
+export const Tick: React.FC<{ ok: boolean; s?: number; k?: number }> = ({ ok, s = 70, k = 1 }) => (
   <svg width={s} height={s} viewBox="0 0 70 70" style={{ overflow: "visible" }}>
     {ok ? <path d="M10 38 L28 56 L60 16" stroke="#2F8F48" strokeWidth={11} fill="none" strokeLinecap="round" strokeDasharray={90} strokeDashoffset={90 * (1 - clamp01(k))} />
       : <path d="M14 14 L56 56 M56 14 L14 56" stroke={CL.red} strokeWidth={11} strokeLinecap="round" strokeDasharray={120} strokeDashoffset={120 * (1 - clamp01(k))} />}
   </svg>
 );
 // cámara de mano 2.5D compartida (curva, nunca lineal): envuelve la escena
-const Hand2D: React.FC<{ seed: number; children: React.ReactNode; push?: [number, number] }> = ({ seed, children, push = [1.0, 1.05] }) => {
+export const Hand2D: React.FC<{ seed: number; children: React.ReactNode; push?: [number, number] }> = ({ seed, children, push = [1.0, 1.05] }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig();
   const m = manoCam(f / fps, 1, seed);
   const z = interpolate(f, [0, T], push, { easing: Easing.inOut(Easing.cubic), extrapolateRight: "clamp" });
