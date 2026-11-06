@@ -97,7 +97,7 @@ export const HvSwirlCup: React.FC<{ bed?: string }> = ({ bed }) => {
 // ═════════════════════════════ 2 · así estaba / así quedó (el fondo desde la boca)
 export const HvBeforeAfter: React.FC<{ bed?: string }> = ({ bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(8);
-  const wipe = ease(clamp01((f - T * 0.45) / (T * 0.3)));
+  const wipe = 0.5 * ease(clamp01((f - T * 0.3) / (T * 0.3)));
   const cx = 960, cy = 560, R = 430;
   const stones = Array.from({ length: 140 }, (_, i) => { const a = rnd(i) * Math.PI * 2, r = Math.sqrt(rnd(i + 99)) * (R - 30); return { x: cx + Math.cos(a) * r, y: cy + Math.sin(a) * r, s: 6 + rnd(i + 5) * 22, rot: rnd(i + 3) * 180 }; });
   const edge = cx - R + 2 * R * wipe;
@@ -121,8 +121,8 @@ export const HvBeforeAfter: React.FC<{ bed?: string }> = ({ bed }) => {
           </g>
           {wipe > 0 && wipe < 1 ? <rect x={edge - 10} y={cy - R} width={20} height={2 * R} fill="rgba(170,210,240,0.55)" /> : null}
         </svg>
-        <Tag x={300} y={170} text="así estaba" k={lin(f, 4, 14)} color={CL.inkSoft} />
-        <Tag x={1350} y={170} text="así quedó" k={lin(f, T * 0.62, T * 0.72)} />
+        <Tag x={1420} y={900} text="así estaba" k={lin(f, 4, 14)} color={CL.inkSoft} />
+        <Tag x={260} y={900} text="así quedó" k={lin(f, T * 0.55, T * 0.65)} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -214,13 +214,13 @@ export const HvBlanket: React.FC<{ bed?: string }> = ({ bed }) => {
           <g transform="translate(1420 300)">
             <rect x={-170} y={-200} width={340} height={470} rx={30} fill="#E8E4DA" stroke="#9B958A" strokeWidth={4} />
             <rect x={-130} y={-150} width={260} height={70} rx={8} fill="#22262C" />
-            <text x={0} y={-102} textAnchor="middle" fontFamily="Courier New" fontWeight={700} fontSize={46} fill="#9FE39A">{kwh.toFixed(2)} kWh</text>
+            <text x={0} y={-102} textAnchor="middle" fontFamily="Courier New" fontWeight={700} fontSize={46} fill="#9FE39A">{kwh.toFixed(2).replace(".", ",")} kWh</text>
             <ellipse cx={0} cy={60} rx={130} ry={34} fill="#B7B1A5" />
             <ellipse cx={0} cy={56} rx={126} ry={30} fill="#D9D4C8" stroke="#8E887C" strokeWidth={3} />
             <rect x={-12 + Math.sin((disc * Math.PI) / 180) * 110} y={34} width={24} height={44} rx={4} fill={CL.red} opacity={0.4 + 0.6 * Math.abs(Math.cos((disc * Math.PI) / 180))} />
           </g>
         </svg>
-        <Tag x={160} y={120} text="la piedra es una manta" k={cover * 2} />
+        <Tag x={760} y={960} text="la piedra es una manta" k={cover * 2} />
         <Tag x={1290} y={880} text="más luz por hervor" k={lin(f, T * 0.55, T * 0.65)} color={CL.red} />
       </Hand2D>
       <RoomLight />
@@ -383,7 +383,6 @@ export const HvFillGauge: React.FC<{ bed?: string }> = ({ bed }) => {
 export const HvFizz: React.FC<{ bed?: string }> = ({ bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(8);
   const k = lin(f, 0, T);
-  const mins = Math.round(20 * k);
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
       <Bed src={bed} seed={310} dim={0.5} />
@@ -399,11 +398,11 @@ export const HvFizz: React.FC<{ bed?: string }> = ({ bed }) => {
             <circle r={120} fill="rgba(255,255,255,0.85)" />
             <circle r={100} fill="none" stroke="#E3DCCF" strokeWidth={22} />
             <circle r={100} fill="none" stroke={CL.navy} strokeWidth={22} strokeDasharray={628} strokeDashoffset={628 * (1 - k)} transform="rotate(-90)" strokeLinecap="round" />
-            <text y={22} textAnchor="middle" fontFamily="Georgia" fontWeight={900} fontSize={64} fill={CL.navy}>{mins}</text>
+            <text y={22} textAnchor="middle" fontFamily="Georgia" fontWeight={900} fontSize={64} fill={CL.navy}>20</text>
           </g>
         </svg>
         <Tag x={1540} y={380} text="min de reposo" k={lin(f, 4, 14)} />
-        <Tag x={120} y={150} text="el ácido se come la piedra" k={lin(f, 14, 26)} />
+        <Tag x={700} y={960} text="adentro: el ácido se come la piedra" k={lin(f, 14, 26)} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -417,23 +416,26 @@ export const HvThreeBoils: React.FC<{ bed?: string }> = ({ bed }) => {
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
       <Bed src={bed} seed={311} dim={0.35} />
       <Hand2D seed={311}>
-        <div style={{ position: "absolute", left: 0, right: 0, top: 740, height: 340, background: "linear-gradient(180deg, #CFD5DB, #9AA3AD)" }} />
+        <div style={{ position: "absolute", left: 0, right: 0, top: 760, height: 320, background: "linear-gradient(180deg, #D5DBE1, #9AA3AD)" }} />
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+          <SteelDefs />
+          {/* la pileta */}
+          <path d="M60 770 L1860 770 L1800 830 L120 830 Z" fill="#E9EDF1" stroke="#9AA3AD" strokeWidth={4} />
           {[0, 1, 2].map((i) => {
-            const t0 = 6 + i * (T * 0.27), p = pop(f, fps, t0, 12);
-            const pour = ease(lin(f, t0 + T * 0.14, t0 + T * 0.24));
-            const cloud = [0.75, 0.35, 0][i];
-            const x = 420 + i * 540;
-            return <g key={i} opacity={p} transform={`translate(${x} ${760}) rotate(${-70 * pour})`}>
-              <path d="M-130 -260 L-110 0 L110 0 L130 -260 Z" fill="#FFFFFF" stroke="#C9C2B4" strokeWidth={5} />
-              <path d="M130 -200 Q200 -180 196 -120 Q190 -60 120 -50" fill="none" stroke="#FFFFFF" strokeWidth={26} />
-              <rect x={-118} y={-220 + pour * 200} width={236} height={(210) * (1 - pour)} fill={`rgba(${200 + 40 * (1 - cloud)},${215 + 25 * (1 - cloud)},${200 + 40 * (1 - cloud)},${0.5 + 0.4 * cloud})`} />
-              {[0, 1, 2].map((s) => <path key={s} d={`M${-40 + s * 40} -270 q 14 -30 0 -60 q -14 -30 0 -60`} fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth={6} opacity={(1 - pour) * (0.5 + 0.5 * Math.sin(f / 7 + s))} />)}
+            const t0 = 4 + i * (T * 0.27), p = pop(f, fps, t0, 12);
+            const boil = lin(f, t0 + 8, t0 + T * 0.13), pour = ease(lin(f, t0 + T * 0.14, t0 + T * 0.24));
+            const x = 230 + i * 560;
+            return <g key={i} opacity={clamp01(p * 2)}>
+              <g transform={`translate(${x} ${300 + (1 - p) * 200}) rotate(${-38 * pour} 60 140)`}>
+                <KettleSide x={0} y={0} s={0.95} water={0.45 * (1 - pour)} led={boil * (1 - pour)} />
+              </g>
+              {[0, 1, 2].map((s) => <path key={s} d={`M${x + 150 + s * 40} 280 q 14 -30 0 -60 q -14 -30 0 -60`} fill="none" stroke="rgba(255,255,255,0.85)" strokeWidth={7} opacity={boil * (1 - pour) * (0.5 + 0.5 * Math.sin(f / 6 + s))} />)}
+              {pour > 0.05 && pour < 0.98 ? <path d={`M${x - 10} ${410} Q ${x - 40} 560 ${x - 30} 780`} stroke="rgba(150,195,225,0.8)" strokeWidth={14} fill="none" strokeLinecap="round" /> : null}
             </g>;
           })}
         </svg>
-        {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", left: 420 + i * 540, top: 840, translate: "-50% 0", fontFamily: SERIF, fontWeight: 900, fontSize: 110, color: CL.navy, opacity: lin(f, 6 + i * (T * 0.27), 16 + i * (T * 0.27)) }}>{i + 1}</div>)}
-        <Tag x={720} y={140} text="a la pileta · no se toma" k={lin(f, T * 0.7, T * 0.8)} color={CL.red} />
+        {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", left: 420 + i * 560, top: 860, translate: "-50% 0", fontFamily: SERIF, fontWeight: 900, fontSize: 110, color: CL.navy, opacity: lin(f, 6 + i * (T * 0.27), 16 + i * (T * 0.27)) }}>{i + 1}</div>)}
+        <Tag x={700} y={110} text="agua limpia · hierve · se tira" k={lin(f, T * 0.7, T * 0.8)} color={CL.red} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -463,7 +465,7 @@ export const HvMeshSoak: React.FC<{ bed?: string }> = ({ bed }) => {
           </g>
           {Array.from({ length: 30 }, (_, i) => { const t = ((f + i * 9) % 60) / 60; return <circle key={i} cx={760 + rnd(i) * 400} cy={700 - t * 360} r={4} fill="none" stroke="rgba(255,255,255,0.8)" strokeWidth={2} opacity={clean > 0 ? (1 - t) * (1 - clean * 0.5) : 0} />; })}
         </svg>
-        <Tag x={1420} y={300} text="agua caliente + 1 cucharadita" k={lin(f, 18, 30)} />
+        <Tag x={1420} y={300} text="agua caliente + 1 cdita de ácido" k={lin(f, 18, 30)} />
         <Tag x={1420} y={420} text="20 min" k={lin(f, 30, 42)} color={CL.inkSoft} />
       </Hand2D>
       <RoomLight />
@@ -499,7 +501,7 @@ export const HvCalendar: React.FC<{ bed?: string; hi?: number }> = ({ bed, hi = 
             </div>
           );
         })}
-        <Tag x={720} y={980} text="1 cucharada · 1 hervor · 10 min · 3 enjuagues" k={lin(f, T * 0.7, T * 0.8)} size={34} />
+        <Tag x={720} y={980} text="1 cucharada · 1 hervor · 20 min · 3 enjuagues" k={lin(f, T * 0.7, T * 0.8)} size={34} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -564,9 +566,8 @@ export const HvFiveErrors: React.FC<{ hi?: number; bed?: string }> = ({ hi = 1, 
           {E.map((_, i) => { const p = pop(f, fps, 2 + i * 4, 12); const act = i + 1 === hi; return <g key={i} opacity={(act ? 1 : 0.5) * p} transform={`translate(${120 + i * 350} ${720 - 300 * 0.82 - (act ? 30 * ease(lin(f, 10, 22)) : 0)})`}><KettleSide x={0} y={-100} s={0.72} /></g>; })}
         </svg>
         {E.map((e, i) => {
-          if (i + 1 !== hi) return null;
-          const k = ease(lin(f, 18, 32));
-          return <div key={i} style={{ position: "absolute", left: 120 + i * 350 + 145, top: 790, translate: "-50% 0", opacity: k, scale: String(0.8 + 0.2 * k) }}>
+          const act = i + 1 === hi; const k = act ? ease(lin(f, 18, 32)) : 0.42 * ease(lin(f, 6 + i * 4, 16 + i * 4));
+          return <div key={i} style={{ position: "absolute", left: 120 + i * 350 + 145, top: 790, translate: "-50% 0", opacity: k, scale: String(act ? 0.8 + 0.2 * k : 0.82), zIndex: act ? 2 : 1 }}>
             <Card style={{ padding: "18px 26px", border: `5px solid ${CL.red}`, textAlign: "center", width: 330 }}>
               <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 80, color: CL.red, lineHeight: 1 }}>{i + 1}</div>
               <div style={{ fontFamily: LABEL, fontSize: 44, color: CL.ink, lineHeight: 1.15 }}>{e}</div>
@@ -634,7 +635,7 @@ export const HvGlassKettle: React.FC<{ bed?: string }> = ({ bed }) => {
 // ═════════════════════════════ 18 · repaso: fichas colgadas de un hilo
 export const HvRecap: React.FC<{ bed?: string }> = ({ bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(8);
-  const W = ["piedra del agua", "gasta luz", "la prueba del vaso", "desenchufado y frío", "hasta la mitad", "1 cda × ½ litro", "1 hervor + 20 min", "3 enjuagues", "el filtrito", "nada de lana de acero", "base seca · sin cloro", "2 sem · 1 mes · 3 meses"];
+  const W = ["piedra del agua", "la prueba del vaso", "desenchufado y frío", "hasta la mitad", "1 cucharada por ½ litro", "1 hervor + 20 min", "3 hervores que se tiran", "el filtrito", "nada de lana de acero", "la base siempre seca", "piedras a la basura", "2 sem · 1 mes · 3 meses"];
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
       <Bed src={bed} seed={318} dim={0.35} />
