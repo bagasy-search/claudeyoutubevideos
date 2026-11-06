@@ -172,9 +172,9 @@
    "k": "searchlight",
    "at": 740.96,
    "out": 746.96,
-   "img": "n_huevo_salsa",
+   "img": "n_cocina_verano",
    "lab": "SIN PRENDER EL FUEGO",
-   "bg": "n_huevo_salsa",
+   "bg": "n_cocina_verano",
    "mode": "shutter"
   },
   {
@@ -190,9 +190,9 @@
    "k": "vault",
    "at": 854.26,
    "out": 858.76,
-   "img": "n_arroz_huevo",
+   "img": "n_cena_humilde",
    "lab": "HUMILDE, PERO SABE A GLORIA",
-   "bg": "n_arroz_huevo",
+   "bg": "n_cena_humilde",
    "mode": "iris"
   },
   {
@@ -431,7 +431,7 @@
     }
    ],
    "lab": "UNA SEMANA SIN REPETIR",
-   "bg": "n_despensa",
+   "bg": "n_semana_comidas",
    "mode": "drop"
   },
   {
@@ -488,7 +488,7 @@
    "items": [
     {
      "t": "UN HUEVO",
-     "img": "n_pan_cafe_sola",
+     "img": "n_mesa_dos",
      "at": 0
     },
     {
@@ -502,7 +502,7 @@
      "at": 0
     }
    ],
-   "bg": "n_pan_cafe_sola",
+   "bg": "n_mesa_dos",
    "mode": "drop"
   },
   {
@@ -524,7 +524,7 @@
     }
    ],
    "lab": "LO QUE ME PREGUNTAN",
-   "bg": "n_refri_tapado",
+   "bg": "n_molletes_sarten",
    "mode": "iris"
   },
   {
@@ -541,21 +541,21 @@
    "at": 2110.27,
    "out": 2116.27,
    "imgs": [
-    "n_mantelito",
+    "n_huevos_mexicana",
+    "n_tostada_atun",
+    "n_sopa_fideo_cazo",
     "n_huevo_tortilla",
-    "n_mantelito",
-    "n_mantelito",
-    "n_mantelito",
-    "n_mantelito",
-    "n_mantelito",
-    "n_mantelito",
-    "n_mantelito",
-    "n_mantelito",
-    "n_mantelito",
-    "n_mantelito"
+    "n_huevos_mexicana",
+    "n_huevos_mexicana",
+    "n_huevos_mexicana",
+    "n_huevos_mexicana",
+    "n_huevos_mexicana",
+    "n_huevos_mexicana",
+    "n_huevos_mexicana",
+    "n_huevos_mexicana"
    ],
    "lab": "LAS VEINTICINCO",
-   "bg": "n_mantelito",
+   "bg": "n_huevos_mexicana",
    "mode": "split"
   }
  ]
