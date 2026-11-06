@@ -1,0 +1,473 @@
+{
+ "desc": "🚪 Tu cuarto seguro en 20 trucos + El Método del Cerrajero",
+ "replies": [],
+ "pages": {},
+ "heroes": [
+  {
+   "k": "typewriter",
+   "at": 21.3,
+   "out": 27.3,
+   "lines": [
+    "NOVENTA SEGUNDOS",
+    "Y TÚ EN LA CAMA"
+   ],
+   "red": 1,
+   "bg": "n_sentada_cama",
+   "mode": "blinds"
+  },
+  {
+   "k": "candle",
+   "at": 69.14,
+   "out": 75.14,
+   "lab": "VEINTE TRUCOS",
+   "sub": "CON COSAS QUE YA TIENES",
+   "bg": "n_ferreteria",
+   "mode": "iris"
+  },
+  {
+   "k": "neon",
+   "at": 125.26,
+   "out": 129.76,
+   "lab": "dormir tranquila",
+   "col": "#ffb44a",
+   "bg": "n_abre_adentro",
+   "mode": "blinds"
+  },
+  {
+   "k": "radar",
+   "at": 192.58,
+   "out": 197.58,
+   "items": [
+    {
+     "t": "LA CALLE",
+     "at": 0
+    },
+    {
+     "t": "EL PATIO",
+     "at": 0
+    },
+    {
+     "t": "EL DORMITORIO",
+     "ok": false,
+     "at": 0
+    }
+   ],
+   "lab": "DÓNDE TE AGARRA EL RUIDO",
+   "bg": "n_c_casa_robada",
+   "mode": "iris"
+  },
+  {
+   "k": "compass",
+   "at": 259.8,
+   "out": 265.8,
+   "opts": [
+    "SIN VENTANA",
+    "AL PATIO",
+    "A LA CALLE",
+    "AL FONDO"
+   ],
+   "win": 2,
+   "lab": "QUE TE VEAN Y TE ESCUCHEN",
+   "bg": "n_ventana_calle",
+   "mode": "wipe"
+  },
+  {
+   "k": "antes",
+   "at": 310.95,
+   "out": 316.45,
+   "img": "v01_nudillos",
+   "img2": "n_puerta_maciza",
+   "a": "HUECA",
+   "b": "MACIZA",
+   "lab": "GOLPEA EN EL MEDIO",
+   "bg": "v01_nudillos",
+   "mode": "split"
+  },
+  {
+   "k": "abacus",
+   "at": 383.37,
+   "out": 387.87,
+   "v": 3,
+   "u": "PULGADAS",
+   "sub": "UN TORNILLO POR BISAGRA",
+   "bg": "n_tres_pulgadas",
+   "mode": "blinds"
+  },
+  {
+   "k": "loupe",
+   "at": 428.97,
+   "out": 434.97,
+   "img": "n_contrachapa",
+   "fx": 0.5,
+   "fy": 0.5,
+   "lab": "LA CONTRACHAPA",
+   "bg": "n_contrachapa",
+   "mode": "diag"
+  },
+  {
+   "k": "dominoes",
+   "at": 488.94,
+   "out": 495.94,
+   "items": [
+    {
+     "t": "LA PATADA",
+     "img": "n_cuatro_tornillos",
+     "at": 0
+    },
+    {
+     "t": "LA CHAPITA",
+     "img": "n_llave_oscuras",
+     "at": 0
+    },
+    {
+     "t": "EL MARCO",
+     "img": "v02_cerrojo",
+     "at": 0
+    }
+   ],
+   "stamp": "LA CERRADURA, ENTERA",
+   "bad": 1,
+   "bg": "n_cuatro_tornillos",
+   "mode": "wipe"
+  },
+  {
+   "k": "drawer",
+   "at": 561.64,
+   "out": 566.14,
+   "items": [
+    {
+     "t": "EL CERROJO",
+     "img": "n_dos_lugares",
+     "at": 0
+    },
+    {
+     "t": "DE PASADOR",
+     "img": "n_cajon",
+     "at": 0
+    }
+   ],
+   "bg": "n_dos_lugares",
+   "mode": "shutter"
+  },
+  {
+   "k": "weights",
+   "at": 610.98,
+   "out": 615.48,
+   "items": [
+    {
+     "t": "EL EMPUJÓN",
+     "at": 0
+    },
+    {
+     "t": "LA PUERTA",
+     "at": 0
+    },
+    {
+     "t": "LA CUÑA",
+     "at": 0
+    }
+   ],
+   "lab": "LA CUÑA AGUANTA",
+   "bg": "n_cuna_alarma",
+   "mode": "diag"
+  },
+  {
+   "k": "searchlight",
+   "at": 684.98,
+   "out": 690.98,
+   "img": "n_mirilla",
+   "lab": "SABER SIN ABRIR",
+   "bg": "n_mirilla",
+   "mode": "shutter"
+  },
+  {
+   "k": "traffic",
+   "at": 735.46,
+   "out": 739.96,
+   "lights": [
+    "SIN CARGA",
+    "EN LA COCINA",
+    "AL LADO DE LA CAMA"
+   ],
+   "only": 2,
+   "bg": "v07_cargador",
+   "mode": "diag"
+  },
+  {
+   "k": "level",
+   "at": 785.42,
+   "out": 789.92,
+   "lab": "PILAS NUEVAS",
+   "sub": "EL PRIMER DÍA DE CADA ESTACIÓN",
+   "bg": "n_linterna_cajon",
+   "mode": "wipe"
+  },
+  {
+   "k": "pulse",
+   "at": 849.23,
+   "out": 853.73,
+   "a": "SILBATO",
+   "lab": "QUE TE ESCUCHEN DESDE LA CALLE",
+   "bg": "n_guia_bisagra",
+   "mode": "shutter"
+  },
+  {
+   "k": "shelf",
+   "at": 910.72,
+   "out": 916.72,
+   "items": [
+    {
+     "t": "LA ROPA",
+     "img": "n_ropa_cama",
+     "at": 0
+    },
+    {
+     "t": "LOS ZAPATOS",
+     "img": "n_zapatos_cama",
+     "at": 0
+    }
+   ],
+   "lab": "LISTO PARA SALIR",
+   "bg": "n_ropa_cama",
+   "mode": "drop"
+  },
+  {
+   "k": "ticket",
+   "at": 965.38,
+   "out": 969.88,
+   "kick": "LA LLAVE DEL AUTO",
+   "title": "UNA ALARMA",
+   "sub": "QUE YA TIENES EN CASA",
+   "v": "✓",
+   "u": "DESDE LA CAMA",
+   "bg": "n_llave_auto",
+   "mode": "split"
+  },
+  {
+   "k": "xray",
+   "at": 1034.33,
+   "out": 1038.83,
+   "img": "n_sensor_pasillo",
+   "lab": "CUANDO SE CORTA LA LUZ",
+   "bg": "n_sensor_pasillo",
+   "mode": "blinds"
+  },
+  {
+   "k": "fridge",
+   "at": 1085.76,
+   "out": 1090.76,
+   "items": [
+    {
+     "t": "Agua",
+     "at": 0
+    },
+    {
+     "t": "Remedios",
+     "at": 0
+    },
+    {
+     "t": "Lentes",
+     "at": 0
+    },
+    {
+     "t": "Teléfono",
+     "at": 0
+    }
+   ],
+   "lab": "LA MESA DE LUZ",
+   "bg": "n_agua_remedios2",
+   "mode": "drop"
+  },
+  {
+   "k": "chain",
+   "at": 1148.02,
+   "out": 1154.02,
+   "weak": 2,
+   "lab": "NUNCA CLAVADA",
+   "sub": "TIENES QUE PODER SALIR",
+   "bg": "n_reja_apertura",
+   "mode": "split"
+  },
+  {
+   "k": "led",
+   "at": 1187.18,
+   "out": 1193.18,
+   "lab": "TRES VECES LA LUZ",
+   "sub": "LA SEÑA CON LA VECINA",
+   "bg": "n_luz_tres",
+   "mode": "shutter"
+  },
+  {
+   "k": "scroll",
+   "at": 1269.15,
+   "out": 1275.65,
+   "items": [
+    {
+     "t": "Cerrojo",
+     "at": 0
+    },
+    {
+     "t": "Cuña",
+     "at": 0
+    },
+    {
+     "t": "Luz y teléfono",
+     "at": 0
+    },
+    {
+     "t": "Llamar",
+     "at": 0
+    },
+    {
+     "t": "No cortar",
+     "at": 0
+    }
+   ],
+   "lab": "EL PLAN DE LA NOCHE",
+   "bg": "n_plan_papel",
+   "mode": "drop"
+  },
+  {
+   "k": "dart",
+   "at": 1331.58,
+   "out": 1337.58,
+   "miss": [
+    "LA PRIMERA",
+    "LA SEGUNDA"
+   ],
+   "lab": "LA TERCERA, EN UN MINUTO",
+   "bg": "n_simulacro",
+   "mode": "iris"
+  },
+  {
+   "k": "puzzle",
+   "at": 1386.36,
+   "out": 1390.86,
+   "img": "n_radio_sillon",
+   "lab": "LA PUERTA MACIZA",
+   "bg": "n_radio_sillon",
+   "mode": "split"
+  },
+  {
+   "k": "gears",
+   "at": 1453.14,
+   "out": 1457.64,
+   "items": [
+    {
+     "t": "LA BARRA",
+     "at": 0
+    },
+    {
+     "t": "EL PIE",
+     "at": 0
+    },
+    {
+     "t": "LA PUERTA",
+     "at": 0
+    }
+   ],
+   "lab": "SIN AGACHARTE",
+   "bg": "n_golpe_pared",
+   "mode": "diag"
+  },
+  {
+   "k": "peel",
+   "at": 1519.93,
+   "out": 1524.93,
+   "img": "n_mueble",
+   "img2": "n_sale_ver",
+   "a": "PARECE SEGURO",
+   "lab": "NO LO PUEDES MOVER",
+   "bad": 1,
+   "bg": "n_mueble",
+   "mode": "iris"
+  },
+  {
+   "k": "indexbox",
+   "at": 1567.62,
+   "out": 1572.62,
+   "items": [
+    {
+     "t": "Teléfono",
+     "img": "n_mesa_luz_llave",
+     "at": 0
+    },
+    {
+     "t": "Linterna",
+     "img": "n_cortina_libre",
+     "at": 0
+    },
+    {
+     "t": "Remedios",
+     "img": "n_taller_viejo",
+     "at": 0
+    }
+   ],
+   "lab": "siete cosas",
+   "bg": "n_mesa_luz_llave",
+   "mode": "wipe"
+  },
+  {
+   "k": "branches",
+   "at": 1631.88,
+   "out": 1636.88,
+   "items": [
+    {
+     "t": "¿DE DÍA O DE NOCHE?",
+     "at": 0
+    },
+    {
+     "t": "¿Y SI NO ME AGACHO?",
+     "at": 0
+    },
+    {
+     "t": "¿Y SI VIVO SOLA?",
+     "at": 0
+    }
+   ],
+   "lab": "LO QUE ME PREGUNTAN",
+   "bg": "n_ernesto_ventana",
+   "mode": "drop"
+  },
+  {
+   "k": "vault",
+   "at": 1698.23,
+   "out": 1704.23,
+   "img": "n_esta_noche",
+   "lab": "ESTA MISMA NOCHE",
+   "bg": "n_esta_noche",
+   "mode": "iris"
+  },
+  {
+   "k": "mosaic",
+   "at": 1751.1,
+   "out": 1755.6,
+   "imgs": [
+    "n_bisagra_tornillo",
+    "n_linterna_cajon2",
+    "n_temporizador_pasillo",
+    "v09_cama",
+    "v10_lampara",
+    "n_bisagra_tornillo",
+    "n_bisagra_tornillo",
+    "n_bisagra_tornillo",
+    "n_bisagra_tornillo",
+    "n_bisagra_tornillo",
+    "n_bisagra_tornillo",
+    "n_bisagra_tornillo"
+   ],
+   "lab": "LOS VEINTE",
+   "bg": "n_bisagra_tornillo",
+   "mode": "split"
+  },
+  {
+   "k": "emboss",
+   "at": 1815.13,
+   "out": 1819.63,
+   "lab": "TU CUARTO SEGURO",
+   "sub": "¿CUÁL ES EL TUYO?",
+   "bg": "v09_cama",
+   "mode": "wipe"
+  }
+ ]
+}
