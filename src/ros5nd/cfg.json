@@ -519,7 +519,8 @@
     }
    ],
    "bg": "r_papas",
-   "mode": "diag"
+   "mode": "diag",
+   "lab": "LA GUARNICIÓN"
   },
   {
    "k": "mosaic",
