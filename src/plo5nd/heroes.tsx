@@ -1,4 +1,4 @@
-// heroes plo5nd r1 · limpiar el fondo del tinaco sin vaciarlo: el sifón
+// heroes plo5nd r4 · limpiar el fondo del tinaco sin vaciarlo: el sifón
 import React from "react";
 import * as THREE from "three";
 import { cl, eio, H, lerp, phys, RED, Stage, Tag, VER } from "./ckit";
@@ -206,14 +206,14 @@ const Particula: React.FC<{ p: V3; r?: number; c?: string }> = ({ p, r = 0.014, 
 
 // ================= plo5nd · LIMPIAR EL FONDO DEL TINACO SIN VACIARLO (SIFÓN) · 19 componentes únicos 3D =================
 // Regla: el Stage comprime el tiempo del hijo a ≤4,4 s → toda línea de tiempo cierra antes de tt≈4,2. Cámara cerca, todo apoyado, sin rótulos.
-const LODO = "#6e5232", LODOC = "#8a6a44", LIMPIA = "#8fc6de";
+const LODO = "#4a3220", LODOC = "#7a5432", LIMPIA = "#5fa8d3";
 const lodoTex = () => ruido("d5lodo", LODO, ["#5a4228", "#7e6040", "#4a3420", "#8a6c48"], 5000, 3);
 // tinaco en corte: cuerpo de vidrio, agua al nivel lvl, capa de lodo de espesor ld (0..1 = 0..9 cm), salida lateral a la altura hs
 const TinC: React.FC<{ p: V3; s?: number; lvl?: number; ld?: number; turb?: number; hs?: number; sal?: boolean }> = ({ p, s = 1, lvl = 0.85, ld = 0.3, turb = 0, hs = 0.09, sal = true }) => <group position={p} scale={s}>
   <mesh position={[0, 0.3, 0]}><cylinderGeometry args={[0.26, 0.25, 0.6, 48, 1, true]} />{VIDRIO(0.2)}</mesh>
   <mesh position={[0, 0.004, 0]} rotation={[-P2, 0, 0]}><circleGeometry args={[0.25, 48]} /><meshStandardMaterial color="#1d1f22" roughness={0.6} /></mesh>
-  {ld > 0.005 && <mesh position={[0, 0.006 + 0.045 * ld, 0]}><cylinderGeometry args={[0.245, 0.245, 0.09 * ld, 48]} /><meshStandardMaterial map={lodoTex()} roughness={1} /></mesh>}
-  <mesh position={[0, 0.3 * lvl + 0.01, 0]}><cylinderGeometry args={[0.24, 0.24, 0.6 * lvl - 0.01, 48]} />{LIQ(col(LIMPIA, LODOC, turb), 0.35 + 0.4 * turb)}</mesh>
+  {ld > 0.005 && <mesh position={[0, 0.006 + 0.045 * ld, 0]}><cylinderGeometry args={[0.245, 0.245, 0.09 * ld, 48]} /><meshStandardMaterial map={lodoTex()} color="#b08050" roughness={1} /></mesh>}
+  <mesh position={[0, (0.6 * lvl + 0.09 * ld + 0.012) / 2, 0]}><cylinderGeometry args={[0.24, 0.24, Math.max(0.01, 0.6 * lvl - 0.09 * ld - 0.012), 48]} />{LIQ(col(LIMPIA, LODOC, turb), 0.5 + 0.35 * turb)}</mesh>
   <mesh position={[0, 0.6 * lvl + 0.006, 0]} rotation={[-P2, 0, 0]}><circleGeometry args={[0.24, 48]} />{LIQ(col("#a9d6ea", LODOC, turb), 0.6)}</mesh>
   {sal && <Caño a={[0.25, hs, 0]} b={[0.42, hs, 0]} r={0.018} mat={PVCM()} />}</group>;
 // manguera transparente como tubo: pts, color del líquido c, cuánto se llenó k
@@ -228,39 +228,39 @@ const Mang: React.FC<{ pts: V3[]; c?: string; o?: number; r?: number }> = ({ pts
 const DLodo: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="drop" mesa={false} tone="#10151a">{(tt) => {
   const baja = eio(tt, 0.4, 1.3), sale = eio(tt, 1.5, 3.8), ld = lerp(0.55, 0.3, sale);
   const pts: V3[] = [[-0.12, lerp(0.7, 0.04, baja), 0], [-0.12, 0.75, 0], [0.1, 0.85, 0], [0.32, 0.7, 0], [0.42, 0.25, 0.05], [0.5, 0.2, 0.1]];
-  return <Estudio t={tt} cam={[0.15, 0.55, 1.6]} look={[0.1, 0.32, 0]} orbit={0.012} mesa={false} fit={false}>
+  return <Estudio t={tt} cam={[0.2, 0.55, 1.3]} look={[0.12, 0.26, 0]} orbit={0.012} mesa={false} fit={false}>
     <Fondo z={-0.8} /><Piso />
     <TinC p={[-0.15, 0, 0]} s={1.05} lvl={0.95} ld={ld} sal={false} />
     <Caño a={[-0.27, lerp(0.75, 0.05, baja), 0]} b={[-0.27, lerp(1.35, 0.7, baja), 0]} r={0.016} mat={PVCM()} />
     {baja > 0.98 && <Mang pts={pts} c={sale > 0.02 ? LODOC : undefined} o={0.9} />}
-    <Cubeta p={[0.55, 0, 0.12]} s={0.85} lvl={0.85 * sale} c={LODO} />
+    <Cubeta p={[0.55, 0, 0.12]} s={0.85} lvl={0.85 * sale} c={LODO} corte />
     <Chorro a={[0.5, 0.2, 0.1]} t={tt} k={sale * (1 - eio(tt, 3.9, 4.1))} v={[0.02, -0.15, 0]} n={14} r={0.009} c={LODOC} />
   </Estudio>;
 }}</Stage>;
 
-// 2 · DE CAFÉ A TRANSPARENTE: tres cubetas en fila; la primera café oscuro, la segunda turbia, la tercera clara; aparece la palomita sobre la clara
+// 2 · DE CAFÉ A TRANSPARENTE: tres cubetas en corte, de frente y de cerca; la manguera pasa de una a otra y el agua que cae va de chocolate a turbia a clara; palomita sobre la clara
 const DCubeta: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="split" mesa={false} tone="#11151a">{(tt) => {
-  const cs = [LODO, "#a08766", "#9cc8de"];
-  return <Estudio t={tt} cam={[0, 0.55, 1.25]} look={[0, 0.15, 0]} orbit={0.01} mesa={false} fit={false}>
+  const cs = [LODO, "#9a7a52", "#6fb6de"], src = tt < 1.5 ? 0 : tt < 2.6 ? 1 : 2;
+  return <Estudio t={tt} cam={[0, 1.0, 0.85]} look={[0, 0.12, 0]} orbit={0.01} mesa={false} fit={false}>
     <Fondo z={-0.7} /><Piso />
-    {cs.map((c, i) => { const a = 0.5 + i * 1.0, k = eio(tt, a, a + 0.8); return <group key={i}>
-      <Cubeta p={[-0.42 + i * 0.42, 0, 0]} s={0.95} lvl={0.8 * k} c={c} />
-      <Chorro a={[-0.42 + i * 0.42, 0.65, 0]} t={tt} k={eio(tt, a - 0.1, a) * (1 - eio(tt, a + 0.8, a + 0.95))} v={[0, -0.1, 0]} n={12} r={0.009} c={c} /></group>; })}
-    <Palomita p={[0.42, 0.48, 0.05]} s={0.22} k={eio(tt, 3.3, 3.9)} />
+    {cs.map((c, i) => { const a = 0.4 + i * 1.1, k = eio(tt, a, a + 0.9); return <group key={i}>
+      <Cubeta p={[-0.4 + i * 0.4, 0, 0]} s={1.05} lvl={0.85 * k} c={c} />
+      <Chorro a={[-0.4 + i * 0.4, 0.5, 0]} t={tt} k={eio(tt, a - 0.1, a) * (1 - eio(tt, a + 0.9, a + 1.0))} v={[0, -0.12, 0]} n={14} r={0.012} c={c} /></group>; })}
+    <Caño a={[-0.4 + src * 0.4, 0.52, 0]} b={[-0.4 + src * 0.4, 0.62, -0.05]} r={0.014} mat={<meshPhysicalMaterial color={cs[src]} roughness={0.1} transparent opacity={0.85} />} />
+    <Palomita p={[0.4, 0.5, 0.08]} s={0.22} k={eio(tt, 3.5, 4.0)} />
   </Estudio>;
 }}</Stage>;
-
 // 3 · EL SIFÓN: diagrama 3D; tinaco alto en su base, manguera en arco hasta la cubeta abajo; partículas viajan solas por la manguera
 const DSifon: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="iris" mesa={false} tone="#10141a">{(tt) => {
   const k = eio(tt, 0.6, 1.4), pts: V3[] = [[-0.3, 0.42, 0], [-0.3, 0.98, 0], [-0.05, 1.05, 0], [0.12, 0.9, 0], [0.2, 0.3, 0], [0.42, 0.2, 0]];
   const curva = new THREE.CatmullRomCurve3(pts.map((q) => new THREE.Vector3(...q)));
-  return <Estudio t={tt} cam={[0.1, 0.65, 1.9]} look={[0, 0.5, 0]} orbit={0.012} mesa={false} fit={false}>
+  return <Estudio t={tt} cam={[0.1, 0.7, 1.6]} look={[0.02, 0.48, 0]} orbit={0.012} mesa={false} fit={false}>
     <Fondo z={-0.8} /><Piso />
     <RBox s={[0.5, 0.4, 0.5]} r={0.02} p={[-0.38, 0.2, 0]}><meshStandardMaterial color="#8d8a84" roughness={0.95} /></RBox>
     <TinC p={[-0.38, 0.4, 0]} s={0.85} lvl={0.9} ld={0.25} sal={false} />
     <Mang pts={pts} c={k > 0.02 ? "#7fb6d8" : undefined} o={0.85} />
     <Cubeta p={[0.5, 0, 0]} s={0.75} lvl={0.6 * eio(tt, 1.4, 4)} />
-    {k > 0.5 && Array.from({ length: 10 }, (_, i) => { const u = (tt * 0.45 + i / 10) % 1; const v = curva.getPoint(u); return <Particula key={i} p={[v.x, v.y, v.z + 0.02]} r={0.012} />; })}
+    {k > 0.5 && Array.from({ length: 10 }, (_, i) => { const u = (tt * 0.45 + i / 10) % 1; const v = curva.getPoint(u); return <Particula key={i} p={[v.x, v.y, v.z + 0.02]} r={0.022} c="#d8f2ff" />; })}
     <mesh position={[0.1, 0.4, 0.05]}><boxGeometry args={[1.25, 0.004, 0.004]} />{GLOW("#ffffff", 0.35 * k)}</mesh>
     <mesh position={[0.1, 0.2, 0.05]}><boxGeometry args={[1.25, 0.004, 0.004]} />{GLOW(VER, 0.6 * k)}</mesh>
   </Estudio>;
@@ -297,34 +297,34 @@ const DSalida: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="diag" mesa={fa
 // 6 · EL PALO CON CINTA BLANCA: el palo baja derechito al fondo, se queda, sube; la cinta blanca sale con una franja café; reglita al lado marca los centímetros
 const DPalo: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="wipe" mesa={false} tone="#11151a">{(tt) => {
   const baja = eio(tt, 0.3, 1.2), sube = eio(tt, 1.8, 2.7), y = lerp(lerp(0.75, 0.02, baja), 0.55, sube), marca = sube > 0.01 ? 1 : 0;
-  return <Estudio t={tt} cam={[0.05, 0.5, 1.35]} look={[0, 0.35, 0]} orbit={0.01} mesa={false} fit={false}>
+  return <Estudio t={tt} cam={[0.0, lerp(0.5, 0.62, sube), lerp(1.35, 0.85, sube)]} look={[-0.15, lerp(0.35, 0.6, sube), 0]} orbit={0.01} mesa={false} fit={false}>
     <Fondo z={-0.7} /><Piso />
     <TinC p={[-0.2, 0, 0]} s={1.0} lvl={0.85} ld={0.35} sal={false} />
     <group position={[-0.2, y, 0]}>
       <mesh position={[0, 0.5, 0]}><cylinderGeometry args={[0.014, 0.014, 1.0, 16]} /><meshStandardMaterial color="#b9945e" roughness={0.7} /></mesh>
       <mesh position={[0, 0.1, 0]}><cylinderGeometry args={[0.0165, 0.0165, 0.2, 16]} /><meshStandardMaterial color="#f4f2ec" roughness={0.6} /></mesh>
-      {marca > 0 && <mesh position={[0, 0.016, 0]}><cylinderGeometry args={[0.0172, 0.0172, 0.032, 16]} /><meshStandardMaterial map={lodoTex()} roughness={1} /></mesh>}</group>
-    {sube > 0.9 && <group position={[0.02, 0.55, 0]}>
+      {marca > 0 && <mesh position={[0, 0.03, 0]}><cylinderGeometry args={[0.0175, 0.0175, 0.06, 16]} /><meshStandardMaterial map={lodoTex()} color="#b08050" roughness={1} /></mesh>}</group>
+    {sube > 0.9 && <group position={[-0.12, 0.55, 0.03]} scale={2.2}>
       <RBox s={[0.035, 0.2, 0.01]} r={0.003} p={[0, 0.1, 0]}><meshStandardMaterial color="#f2d24a" roughness={0.5} /></RBox>
       {[0, 1, 2, 3].map((i) => <mesh key={i} position={[-0.008, 0.01 + i * 0.011, 0.006]}><boxGeometry args={[0.018, 0.002, 0.002]} /><meshBasicMaterial color="#1a1a1a" /></mesh>)}
       <Flecha p={[0.05, 0.016, 0.01]} k={eio(tt, 3.0, 3.4)} c={ROJO} rot={[0, 0, P2]} s={0.35} /></group>}
   </Estudio>;
 }}</Stage>;
 
-// 7 · EL KIT DE UNA PIZZA: caen de a uno, con su rebote, sobre la azotea: la manguera enrollada, el tubo, la cinta, el mecate, la cubeta y la linterna
+// 7 · EL KIT DE UNA PIZZA: sobre una tabla, caen de a uno con su rebote: la manguera transparente enrollada, el tubo PVC, la cinta, el mecate, la cubeta y la linterna
 const DKit: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="drop" mesa={false} tone="#10151b">{(tt) => {
-  const a = (i: number) => 0.35 + i * 0.5, Y = (i: number) => (1 - cl(phys(tt, a(i), 8, 0.5))) * 0.6, on = (i: number) => tt > a(i) - 0.05;
-  return <Estudio t={tt} cam={[0, 0.7, 1.35]} look={[0, 0.05, 0]} orbit={0.012} mesa={false} fit={false}>
+  const a = (i: number) => 0.3 + i * 0.5, Y = (i: number) => (1 - cl(phys(tt, a(i), 8, 0.5))) * 0.5, on = (i: number) => tt > a(i) - 0.05;
+  return <Estudio t={tt} cam={[0, 0.42, 0.78]} look={[0, 0.06, 0]} orbit={0.012} mesa={false} fit={false}>
     <Fondo z={-0.8} /><Piso />
-    {on(0) && <group position={[-0.48, 0.03 + Y(0), 0]}>{[0, 1, 2, 3].map((i) => <mesh key={i} rotation={[P2, 0, 0]} position={[0, i * 0.012, 0]}><torusGeometry args={[0.12 - i * 0.012, 0.012, 10, 40]} />{VIDRIO(0.55)}</mesh>)}</group>}
-    {on(1) && <Caño a={[-0.3, 0.02 + Y(1), 0.2]} b={[0.25, 0.02 + Y(1), 0.12]} r={0.016} mat={PVCM()} />}
-    {on(2) && <mesh position={[-0.12, 0.025 + Y(2), -0.12]} rotation={[P2, 0, 0]}><torusGeometry args={[0.04, 0.02, 12, 30]} /><meshStandardMaterial color="#161616" roughness={0.5} /></mesh>}
-    {on(3) && <mesh position={[0.08, 0.012 + Y(3), -0.1]} rotation={[P2, 0, 0]}><torusGeometry args={[0.05, 0.008, 8, 30]} /><meshStandardMaterial color="#c8a76a" roughness={0.9} /></mesh>}
-    {on(4) && <Cubeta p={[0.32, Y(4), -0.08]} s={0.7} />}
-    {on(5) && <Linterna p={[0.5, 0.03 + Y(5), 0.18]} rot={[0, 0.6, P2]} on={eio(tt, 3.4, 3.7)} />}
+    <RBox s={[1.2, 0.03, 0.5]} r={0.006} p={[0, 0.015, 0]}><meshStandardMaterial color="#9a7246" roughness={0.75} /></RBox>
+    {on(0) && <group position={[-0.42, 0.13 + Y(0), -0.05]}>{[0, 1, 2, 3, 4].map((i) => <mesh key={i} position={[0, 0, i * 0.022 - 0.044]}><torusGeometry args={[0.1, 0.011, 10, 48]} />{VIDRIO(0.6)}</mesh>)}</group>}
+    {on(1) && <Caño a={[-0.28, 0.05 + Y(1), 0.15]} b={[0.18, 0.05 + Y(1), 0.15]} r={0.018} mat={PVCM()} />}
+    {on(2) && <mesh position={[-0.16, 0.06 + Y(2), -0.08]}><torusGeometry args={[0.05, 0.03, 14, 30]} /><meshStandardMaterial color="#f2f0ea" roughness={0.5} /></mesh>}
+    {on(3) && <group position={[0.02, 0.04 + Y(3), -0.1]}>{[0, 1, 2].map((i) => <mesh key={i} rotation={[P2, 0, 0]} position={[0, i * 0.01, 0]}><torusGeometry args={[0.05 - i * 0.006, 0.007, 8, 30]} /><meshStandardMaterial color="#c8a76a" roughness={0.95} /></mesh>)}</group>}
+    {on(4) && <Cubeta p={[0.3, 0.03 + Y(4), -0.06]} s={0.65} />}
+    {on(5) && <Linterna p={[0.42, 0.06 + Y(5), 0.16]} rot={[0, -0.5, P2]} on={0} />}
   </Estudio>;
 }}</Stage>;
-
 // 8 · MÁS ABAJO QUE EL FONDO: la línea del fondo del tinaco queda marcada; la punta de salida sube por encima (el chorro se corta, cruz roja) y baja por debajo (corre, verde)
 const DAbajo: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="ring" mesa={false} tone="#10151a">{(tt) => {
   const arriba = eio(tt, 0.6, 1.2) * (1 - eio(tt, 2.2, 2.8)), yS = lerp(0.12, 0.62, arriba), corre = 1 - eio(tt, 0.9, 1.2) * (1 - eio(tt, 2.6, 2.9));
@@ -342,23 +342,23 @@ const DAbajo: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="ring" mesa={fal
   </Estudio>;
 }}</Stage>;
 
-// 9 · EL FLOTADOR AMARRADO: el chorro de entrada cae y revuelve el lodo (nube café); el brazo sube, el mecate lo amarra, el chorro se corta y el lodo se asienta
+// 9 · EL FLOTADOR AMARRADO: el chorro de entrada cae y revuelve el lodo (agua café); el brazo del flotador sube, el mecate lo amarra al tubo, el chorro se corta y el agua se aclara
 const DFlotador: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="blinds" mesa={false} tone="#11151a">{(tt) => {
-  const sube = eio(tt, 1.4, 2.1), entra = 1 - eio(tt, 2.0, 2.3), turb = 0.6 * (1 - eio(tt, 2.4, 3.8));
-  return <Estudio t={tt} cam={[0.15, 0.6, 1.3]} look={[0.05, 0.4, 0]} orbit={0.01} mesa={false} fit={false}>
+  const sube = eio(tt, 1.3, 2.0), entra = 1 - eio(tt, 1.9, 2.2), turb = 0.75 * (1 - eio(tt, 2.4, 3.9)), ang = lerp(0.5, -0.25, sube);
+  const bx = 0.12 - 0.2 * Math.cos(ang), by = 0.56 - 0.2 * Math.sin(ang);
+  return <Estudio t={tt} cam={[0.1, 0.62, 1.05]} look={[0.02, 0.38, 0]} orbit={0.01} mesa={false} fit={false}>
     <Fondo z={-0.8} /><Piso />
-    <TinC p={[0, 0, 0]} s={1.05} lvl={0.85} ld={0.35} turb={turb} sal={false} />
-    <Caño a={[0.32, 0.66, 0]} b={[0.12, 0.66, 0]} r={0.012} mat={BRONCE()} />
-    <Chorro a={[0.12, 0.65, 0]} t={tt} k={entra} v={[-0.05, -0.2, 0]} n={16} r={0.01} />
-    <group position={[0.12, 0.64, 0]} rotation={[0, 0, lerp(-0.55, 0.45, sube)]}>
-      <mesh position={[-0.11, 0, 0]} rotation={[0, 0, P2]}><cylinderGeometry args={[0.005, 0.005, 0.22, 8]} />{M.cromo()}</mesh>
-      <mesh position={[-0.23, 0, 0]}><sphereGeometry args={[0.045, 20, 14]} /><meshStandardMaterial color="#e8e2c8" roughness={0.5} /></mesh></group>
-    {sube > 0.95 && <Caño a={[0.03, 0.73, 0]} b={[0.03, 0.95, 0]} r={0.004} mat={<meshStandardMaterial color="#c8a76a" roughness={0.9} />} />}
-    <Burbujas p={[0.1, 0.05, 0]} t={tt} k={turb} w={0.3} hh={0.35} n={20} s={0.01} c={LODOC} />
-    <Palomita p={[0.42, 0.85, 0.05]} s={0.16} k={eio(tt, 3.2, 3.7)} />
+    <TinC p={[0, 0, 0]} s={1.05} lvl={0.82} ld={lerp(0.4, 0.3, turb > 0.3 ? 0 : 1)} turb={turb} sal={false} />
+    <Caño a={[0.38, 0.58, 0]} b={[0.12, 0.58, 0]} r={0.013} mat={BRONCE()} />
+    <Chorro a={[0.1, 0.57, 0]} t={tt} k={entra} v={[-0.03, -0.25, 0]} n={18} r={0.011} />
+    <group position={[0.12, 0.56, 0]} rotation={[0, 0, ang]}>
+      <mesh position={[-0.1, 0, 0]} rotation={[0, 0, P2]}><cylinderGeometry args={[0.006, 0.006, 0.2, 8]} />{M.cromo()}</mesh>
+      <mesh position={[-0.2, 0, 0]}><sphereGeometry args={[0.05, 24, 16]} /><meshStandardMaterial color="#efe9d0" roughness={0.45} /></mesh></group>
+    {sube > 0.9 && <Caño a={[bx, by + 0.04, 0]} b={[0.2, 0.6, 0]} r={0.005} mat={<meshStandardMaterial color="#c8a76a" roughness={0.9} />} />}
+    <Burbujas p={[0.05, 0.03, 0]} t={tt} k={turb} w={0.36} hh={0.4} n={26} s={0.013} c={LODOC} />
+    <Palomita p={[0.42, 0.75, 0.05]} s={0.16} k={eio(tt, 3.4, 3.9)} />
   </Estudio>;
 }}</Stage>;
-
 // 10 · NUNCA CON LA BOCA: la punta de la manguera con una cruz roja grande; después la llave del patio la llena de agua limpia y aparece la palomita
 const DBoca: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="iris" mesa={false} tone="#14100f">{(tt) => {
   const no = eio(tt, 0.4, 0.8) * (1 - eio(tt, 1.8, 2.1)), llena = eio(tt, 2.3, 3.6);
@@ -376,47 +376,52 @@ const DBoca: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="iris" mesa={fals
 // 11 · RÁPIDO NO: dos tinacos en corte; a la izquierda el tubo va y viene rápido y el agua se vuelve café (rojo); a la derecha avanza despacio y queda clara (verde)
 const DRapido: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="split" mesa={false} tone="#10141a">{(tt) => {
   const k = eio(tt, 0.4, 3.6), xr = Math.sin(tt * 9) * 0.15 * cl(k * 3), xl = lerp(-0.15, 0.15, k);
-  return <Estudio t={tt} cam={[0, 0.5, 1.6]} look={[0, 0.3, 0]} orbit={0.01} mesa={false} fit={false}>
+  return <Estudio t={tt} cam={[0, 0.62, 1.35]} look={[0, 0.3, 0]} orbit={0.01} mesa={false} fit={false}>
     <Fondo z={-0.8} /><Piso />
     <TinC p={[-0.33, 0, 0]} s={0.9} lvl={0.85} ld={0.3} turb={0.85 * k} sal={false} />
-    <Caño a={[-0.33 + xr, 0.04, 0]} b={[-0.33 + xr, 0.95, 0]} r={0.012} mat={PVCM()} />
+    <Caño a={[-0.33 + xr, 0.04, 0]} b={[-0.33 + xr, 0.68, 0]} r={0.012} mat={PVCM()} />
     <Burbujas p={[-0.33, 0.05, 0]} t={tt} k={k} w={0.4} hh={0.45} n={26} s={0.011} c={LODOC} />
     <TinC p={[0.33, 0, 0]} s={0.9} lvl={0.85} ld={0.3 * (1 - k * 0.6)} sal={false} />
-    <Caño a={[0.33 + xl, 0.04, 0]} b={[0.33 + xl, 0.95, 0]} r={0.012} mat={PVCM()} />
-    <Anillo p={[-0.33, 0.85, 0.25]} r={0.1} o={eio(tt, 3.0, 3.4)} c={ROJO} rot={[0, 0, 0]} />
-    <Anillo p={[0.33, 0.85, 0.25]} r={0.1} o={eio(tt, 3.2, 3.6)} c={VER} rot={[0, 0, 0]} />
+    <Caño a={[0.33 + xl, 0.04, 0]} b={[0.33 + xl, 0.68, 0]} r={0.012} mat={PVCM()} />
+    <Anillo p={[-0.33, 0.66, 0.25]} r={0.1} o={eio(tt, 3.0, 3.4)} c={ROJO} rot={[0, 0, 0]} />
+    <Anillo p={[0.33, 0.66, 0.25]} r={0.1} o={eio(tt, 3.2, 3.6)} c={VER} rot={[0, 0, 0]} />
   </Estudio>;
 }}</Stage>;
 
-// 12 · EN FRANJAS: el fondo visto desde arriba, todo café; la punta del tubo lo recorre en franjas de ida y vuelta y deja atrás el plástico negro limpio
+// 12 · EN FRANJAS: el fondo redondo del tinaco visto desde arriba, cubierto de lodo en baldosas; la punta del tubo lo recorre en franjas de ida y vuelta y deja atrás el plástico negro limpio
 const DFranjas: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="wipe" mesa={false} tone="#0f1418">{(tt) => {
   const k = eio(tt, 0.3, 3.9) * 5, f = Math.min(4, Math.floor(k)), u = k - f, dir = f % 2 ? -1 : 1;
-  const px = -0.36 + f * 0.18, pz = dir > 0 ? lerp(-0.4, 0.4, u) : lerp(0.4, -0.4, u);
-  return <Estudio t={tt} cam={[0, 1.35, 0.55]} look={[0, 0, 0]} orbit={0.006} mesa={false} fit={false}>
+  const px = -0.4 + f * 0.2, pz = dir > 0 ? lerp(-0.45, 0.45, u) : lerp(0.45, -0.45, u);
+  const N = 24, cs = 0.9 / N, cel: React.ReactNode[] = [];
+  for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) {
+    const x = -0.45 + (i + 0.5) * cs, z = -0.45 + (j + 0.5) * cs; if (x * x + z * z > 0.46 * 0.46) continue;
+    const col5 = Math.min(4, Math.floor((x + 0.5) / 0.2)), d = col5 % 2 ? -1 : 1, zz = d > 0 ? (z + 0.45) / 0.9 : (0.45 - z) / 0.9;
+    const limpio = col5 < f ? 1 : col5 === f ? cl((u - zz) * 8) : 0; if (limpio >= 1) continue;
+    cel.push(<mesh key={i * N + j} position={[x, 0.012 * (1 - limpio), z]} scale={[1 - limpio * 0.6, 1 - limpio, 1 - limpio * 0.6]}><boxGeometry args={[cs * 1.04, 0.02, cs * 1.04]} /><meshStandardMaterial color={col("#5a3c22", "#664629", rn(i * 31 + j, 5))} roughness={1} /></mesh>);
+  }
+  return <Estudio t={tt} cam={[0, 1.05, 0.62]} look={[0, 0, 0.02]} orbit={0.006} mesa={false} fit={false}>
     <Fondo z={-1.6} />
-    <mesh position={[0, 0, 0]} rotation={[-P2, 0, 0]}><circleGeometry args={[0.5, 64]} /><meshStandardMaterial color="#1d1f22" roughness={0.55} /></mesh>
-    {[0, 1, 2, 3, 4].map((i) => { const done = i < f ? 1 : i === f ? u : 0, d2 = i % 2 ? -1 : 1, L = 0.8 * done;
-      return <mesh key={i} position={[-0.36 + i * 0.18, 0.006, d2 > 0 ? L / 2 : -L / 2]} rotation={[-P2, 0, 0]}>
-        <planeGeometry args={[0.18, 0.8 - L + 0.0001]} /><meshStandardMaterial map={lodoTex()} roughness={1} /></mesh>; })}
-    <mesh position={[0, 0.004, 0]} rotation={[-P2, 0, 0]}><ringGeometry args={[0.5, 0.62, 64]} /><meshBasicMaterial color="#0f1418" /></mesh>
-    <mesh position={[px, 0.08, pz]}><cylinderGeometry args={[0.03, 0.03, 0.16, 20]} />{PVCM()}</mesh>
-    <Halo p={[px, 0.02, pz]} r={0.08} c="#ffffff" o={0.3} />
+    <mesh position={[0, -0.01, 0]}><cylinderGeometry args={[0.5, 0.5, 0.02, 64]} /><meshStandardMaterial color="#1b1d20" roughness={0.45} /></mesh>
+    <mesh position={[0, 0.05, 0]}><cylinderGeometry args={[0.52, 0.52, 0.1, 64, 1, true]} /><meshStandardMaterial color="#26282c" roughness={0.6} side={THREE.DoubleSide} /></mesh>
+    {cel}
+    <mesh position={[0, 0.012, 0]} rotation={[-P2, 0, 0]}><ringGeometry args={[0.43, 0.53, 64]} /><meshStandardMaterial color="#1b1d20" roughness={0.45} /></mesh>
+    <Caño a={[px, 0.03, pz]} b={[px, 0.5, pz - 0.1]} r={0.022} mat={PVCM()} />
+    <Halo p={[px, 0.03, pz]} r={0.09} c="#cfe9ff" o={0.35} />
   </Estudio>;
 }}</Stage>;
-
-// 13 · 40 DE 1100: dos columnas de agua; la grande de 1100 litros casi entera queda; sólo una rebanada finita (40 L) se va a la cubeta
+// 13 · 40 DE 1100: el cilindro de agua del tinaco entero; sólo una rebanada finita de arriba se despega, viaja y cae en la cubeta; los números 1100 y 40
 const DLitros: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="diag" mesa={false} tone="#10151a">{(tt) => {
-  const k = eio(tt, 0.8, 2.6);
-  return <Estudio t={tt} cam={[0, 0.5, 1.35]} look={[0, 0.3, 0]} orbit={0.01} mesa={false} fit={false}>
+  const sube = eio(tt, 0.9, 1.6), va = eio(tt, 1.6, 2.6), cae = eio(tt, 2.6, 3.1);
+  return <Estudio t={tt} cam={[0.05, 0.85, 1.3]} look={[0.05, 0.28, 0]} orbit={0.01} mesa={false} fit={false}>
     <Fondo z={-0.7} /><Piso />
-    <Barra p={[-0.25, 0, 0]} v={lerp(1, 0.964, k)} c="#5aa6cf" w={0.3} hmax={0.62} />
-    <group position={[0.25, 0, 0]}><Barra p={[0, 0, 0]} v={0.036 * k} c={LODOC} w={0.3} hmax={0.62} /></group>
-    <Num n={1100} p={[-0.25, 0.7, 0]} s={0.1} o={eio(tt, 0.3, 0.7)} />
-    <Num n={Math.round(40 * k)} p={[0.25, 0.12, 0.05]} s={0.1} o={eio(tt, 1.0, 1.4)} />
-    <Palomita p={[-0.25, 0.85, 0.05]} s={0.15} k={eio(tt, 3.0, 3.5)} />
+    <mesh position={[-0.25, 0.3, 0]}><cylinderGeometry args={[0.28, 0.28, 0.6, 48]} />{LIQ(LIMPIA, 0.7)}</mesh>
+    <mesh position={[-0.25, 0.006, 0]}><cylinderGeometry args={[0.28, 0.28, 0.012, 48]} /><meshStandardMaterial color={LODO} roughness={1} /></mesh>
+    <mesh position={[lerp(-0.25, 0.4, va), lerp(0.615, 0.7, sube) - cae * 0.55, 0]} scale={lerp(1, 0.55, va)}><cylinderGeometry args={[0.28, 0.28, 0.022, 48]} />{LIQ(col(LIMPIA, LODOC, va), 0.9)}</mesh>
+    <Cubeta p={[0.4, 0, 0]} s={0.8} lvl={0.4 * cae} c={LODOC} />
+    <Num n={1100} p={[-0.25, 0.32, 0.3]} s={0.11} o={eio(tt, 0.3, 0.7)} />
+    <Num n={Math.round(40 * eio(tt, 1.2, 2.8))} p={[0.4, 0.55, 0.05]} s={0.1} c={VIN} o={eio(tt, 1.0, 1.4)} />
   </Estudio>;
 }}</Stage>;
-
 // 14 · REPOSAR UNA HORA: la cubeta en corte con el agua café; los granitos bajan y se juntan al fondo; arriba queda clara y se vierte a la maceta
 const DReposo: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="ring" mesa={false} tone="#11161b">{(tt) => {
   const k = eio(tt, 0.3, 2.6), vierte = eio(tt, 2.9, 3.4);
@@ -434,17 +439,17 @@ const DReposo: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="ring" mesa={fa
 // 15 · CINCO JERINGAS Y MEDIA: la jeringa de 20 ml se llena y se vacía; cada descarga suma un punto al contador hasta 5,5 (110 ml)
 const DCloro: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="drop" mesa={false} tone="#10151b">{(tt) => {
   const ciclos = eio(tt, 0.3, 3.6) * 5.5, c = ciclos % 1, lleno = c < 0.5 ? c * 2 : (1 - c) * 2;
-  return <Estudio t={tt} cam={[0, 0.42, 1.1]} look={[0, 0.25, 0]} orbit={0.01} mesa={false} fit={false}>
+  return <Estudio t={tt} cam={[0, 0.5, 1.15]} look={[0, 0.3, 0]} orbit={0.01} mesa={false} fit={false}>
     <Fondo z={-0.7} /><Piso />
-    <group position={[-0.2, 0.38, 0]} rotation={[0, 0, P2 * 0.9]}>
+    <group position={[-0.08, 0.5, 0]} rotation={[0, 0, P2 * 0.75]}>
       <mesh><cylinderGeometry args={[0.035, 0.035, 0.34, 24, 1, true]} />{VIDRIO(0.35)}</mesh>
       <mesh position={[0, -0.17 + 0.17 * lleno, 0]}><cylinderGeometry args={[0.032, 0.032, 0.34 * lleno + 0.001, 24]} />{LIQ("#e9f2d2", 0.7)}</mesh>
       <mesh position={[0, 0.34 * lleno - 0.17 + 0.02, 0]}><cylinderGeometry args={[0.033, 0.033, 0.02, 24]} /><meshStandardMaterial color="#222" /></mesh>
       <mesh position={[0, -0.19, 0]}><coneGeometry args={[0.02, 0.04, 16]} />{VIDRIO(0.5)}</mesh></group>
-    <TinC p={[0.25, 0, 0]} s={0.6} lvl={0.88} ld={0} sal={false} />
-    {Array.from({ length: 6 }, (_, i) => <mesh key={i} position={[0.0 + i * 0.07, 0.62, 0.1]}><sphereGeometry args={[0.022, 16, 12]} />{GLOW(i < Math.floor(ciclos) ? VER : "#3a3f45", 0.95)}</mesh>)}
-    {ciclos >= 5.49 && <mesh position={[0.35, 0.62, 0.1]} scale={[0.5, 1, 1]}><sphereGeometry args={[0.022, 16, 12]} />{GLOW(VER, 0.95)}</mesh>}
-    <Num n={Math.round(ciclos * 20)} p={[0.18, 0.75, 0.05]} s={0.09} o={eio(tt, 0.4, 0.8)} />
+    <TinC p={[0.22, 0, 0]} s={0.75} lvl={0.85} ld={0} sal={false} />
+    {Array.from({ length: 6 }, (_, i) => <mesh key={i} position={[-0.3 + i * 0.07, 0.2, 0.15]}><sphereGeometry args={[0.022, 16, 12]} />{GLOW(i < Math.floor(ciclos) ? VER : "#3a3f45", 0.95)}</mesh>)}
+    {ciclos >= 5.49 && <mesh position={[0.05, 0.2, 0.15]} scale={[0.5, 1, 1]}><sphereGeometry args={[0.022, 16, 12]} />{GLOW(VER, 0.95)}</mesh>}
+    <Num n={Math.round(ciclos * 20)} p={[-0.13, 0.08, 0.15]} s={0.09} o={eio(tt, 0.4, 0.8)} />
   </Estudio>;
 }}</Stage>;
 
@@ -453,10 +458,11 @@ const DEspera: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="iris" mesa={fa
   const k = eio(tt, 0.4, 3.0), ok = eio(tt, 3.0, 3.5);
   return <Estudio t={tt} cam={[0, 0.4, 1.05]} look={[0, 0.25, 0]} orbit={0.01} mesa={false} fit={false}>
     <Fondo z={-0.7} /><Piso />
-    <Arco p={[0, 0.32, 0]} r={0.28} a0={P2} a={-P * k} c={VIN} w={0.03} />
+    <Arco p={[0, 0.32, 0]} r={0.28} a0={P2} a={-P * k} c={VIN} w={0.035} />
     <Arco p={[0, 0.32, -0.01]} r={0.28} a0={0} a={2 * P} c="#2a2f36" w={0.03} />
-    <mesh position={[0, 0.12, 0]}><cylinderGeometry args={[0.07, 0.06, 0.22, 32, 1, true]} />{VIDRIO(0.35)}</mesh>
-    <mesh position={[0, 0.1, 0]}><cylinderGeometry args={[0.065, 0.058, 0.17, 32]} />{LIQ(col("#bcd6e2", "#9ee0a8", ok), 0.6)}</mesh>
+    <Num n={Math.round(30 * k)} p={[0, 0.5, 0.02]} s={0.1} c={VIN} />
+    <mesh position={[0, 0.17, 0.1]}><cylinderGeometry args={[0.1, 0.085, 0.32, 32, 1, true]} />{VIDRIO(0.35)}</mesh>
+    <mesh position={[0, 0.145, 0.1]}><cylinderGeometry args={[0.094, 0.082, 0.26, 32]} />{LIQ(col("#bcd6e2", "#9ee0a8", ok), 0.6)}</mesh>
     <Halo p={[0, 0.15, 0.08]} r={0.2 * ok} c={VER} o={0.45} />
     <Palomita p={[0.2, 0.15, 0.05]} s={0.15} k={ok} />
   </Estudio>;
@@ -465,14 +471,15 @@ const DEspera: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="iris" mesa={fa
 // 17 · LA TAPA QUE CIERRA: con la tapa chueca entran hojas y polvo al tinaco; la tapa gira, baja y enrosca; las hojas siguientes rebotan encima
 const DTapa: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="blinds" mesa={false} tone="#10151a">{(tt) => {
   const cierra = eio(tt, 1.4, 2.4);
-  return <Estudio t={tt} cam={[0.1, 0.9, 1.1]} look={[0, 0.5, 0]} orbit={0.01} mesa={false} fit={false}>
-    <Fondo z={-1.0} /><Piso />
+  return <Estudio t={tt} cam={[0.2, 1.05, 1.75]} look={[0, 0.5, 0]} orbit={0.01} mesa={false} fit={false}>
+    <Fondo z={-1.0} c="#2c3a48" /><Piso />
+    <Halo p={[0, 0.72, -0.2]} r={0.45} c="#9fc6e6" o={0.25} />
     <Tinaco p={[0, 0, 0]} s={1.0} />
     <group position={[lerp(0.1, 0, cierra), 0.69 + 0.04 * (1 - cierra), lerp(0.08, 0, cierra)]} rotation={[lerp(0.35, 0, cierra), cierra * 3, 0]}>
       <mesh><cylinderGeometry args={[0.12, 0.12, 0.03, 32]} /><meshStandardMaterial color="#26282c" roughness={0.6} /></mesh></group>
     {Array.from({ length: 6 }, (_, i) => { const a = 0.2 + i * 0.6, q = cl((tt - a) / 0.9); if (q <= 0) return null;
       const dentro = a < 1.4, y = dentro ? lerp(1.1, 0.5, q) : lerp(1.1, 0.72, Math.min(1, q * 1.5)) + (q > 0.66 ? (q - 0.66) * 0.4 : 0);
-      return <mesh key={i} position={[(rn(i, 1) - 0.5) * 0.1 + (dentro ? 0 : (q - 0.66) * 0.4 * (i % 2 ? 1 : -1)), y, (rn(i, 2) - 0.5) * 0.1]} rotation={[q * 3, q * 2, 0]}><planeGeometry args={[0.04, 0.025]} /><meshStandardMaterial color={["#8a6a2a", "#6a7a2a", "#9a5a2a"][i % 3]} side={THREE.DoubleSide} /></mesh>; })}
+      return <mesh key={i} position={[(rn(i, 1) - 0.5) * 0.1 + (dentro ? 0 : (q - 0.66) * 0.4 * (i % 2 ? 1 : -1)), y, (rn(i, 2) - 0.5) * 0.1]} rotation={[q * 3, q * 2, 0]}><planeGeometry args={[0.08, 0.05]} /><meshStandardMaterial color={["#8a6a2a", "#6a7a2a", "#9a5a2a"][i % 3]} side={THREE.DoubleSide} /></mesh>; })}
     <Anillo p={[0, 0.72, 0]} r={0.14} o={eio(tt, 2.4, 2.8) * 0.9} c={VER} />
   </Estudio>;
 }}</Stage>;
@@ -486,7 +493,7 @@ const DLupe: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="split" mesa={fal
     <group position={[0.42, 0, 0.05]}>
       <mesh position={[0, 0.3, 0]}><cylinderGeometry args={[0.014, 0.014, 0.6, 16]} /><meshStandardMaterial color="#b9945e" roughness={0.7} /></mesh>
       <mesh position={[0, 0.1, 0]}><cylinderGeometry args={[0.0165, 0.0165, 0.2, 16]} /><meshStandardMaterial color="#f4f2ec" roughness={0.6} /></mesh>
-      <mesh position={[0, 0.0005 + 0.0385 * k, 0]}><cylinderGeometry args={[0.0172, 0.0172, 0.077 * k + 0.001, 16]} /><meshStandardMaterial map={lodoTex()} roughness={1} /></mesh>
+      <mesh position={[0, 0.0005 + 0.0385 * k, 0]}><cylinderGeometry args={[0.0172, 0.0172, 0.077 * k + 0.001, 16]} /><meshStandardMaterial map={lodoTex()} color="#b08050" roughness={1} /></mesh>
       <Num n={Math.max(1, Math.round(7 * k))} p={[0.12, 0.08, 0]} s={0.08} c="#f4e2c0" /></group>
     <Halo p={[0.2, 0.08, 0.05]} r={0.15 * tapa} c={ROJO} o={0.55} />
   </Estudio>;
@@ -495,7 +502,7 @@ const DLupe: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="split" mesa={fal
 // 19 · EL REPASO (items): tres pedestales: el vaso con capas de lodo (el agua quieta deja caer) · la manguera llena de agua limpia · la gota de cloro
 const DRecap: C = ({ t, h }) => <Stage t={t} h={h} cam={0} mode="split" mesa={false} tone="#12161b">{(tt) => {
   const a = [0, 1, 2].map((i) => AT(h, i, 0.9, 0.5));
-  return <Estudio t={tt} cam={[0, 0.48, 1.35]} look={[0, 0.25, 0]} orbit={0.01} mesa={false} fit={false}>
+  return <Estudio t={tt} cam={[0, 0.42, 1.0]} look={[0, 0.2, 0]} orbit={0.01} mesa={false} fit={false}>
     <Fondo z={-0.6} /><Piso />
     {[0, 1, 2].map((i) => { const x = -0.45 + i * 0.45, up = cl(phys(tt, a[i] - 0.2, 7, 0.45)), on = eio(tt, a[i], a[i] + 0.35); return <group key={i} position={[x, 0, 0]}>
       <mesh position={[0, 0.05, 0]}><cylinderGeometry args={[0.15, 0.17, 0.1, 32]} /><meshStandardMaterial color="#2a2e34" roughness={0.6} /></mesh>
