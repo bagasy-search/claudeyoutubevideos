@@ -98,7 +98,7 @@ const Shot: React.FC<{ c: any }> = ({ c }) => {
   if (c.k === "av") return <Avatar c={c} />;
   if (c.k === "vl" || c.k === "kf") return <Clip src={c.src} sf={c.sf} seed={c.seed} />;
   if (c.k === "img") return <ImgShot c={c} />;
-  if (c.k === "comp") { const C = COMP[c.name]; return C ? <C {...c.props} /> : <Placeholder />; }
+  if (c.k === "comp") { const C = COMP[c.name]; if (!C) return <Placeholder />; return c.tot ? <Sequence from={-(c.sk || 0)} durationInFrames={c.tot} layout="none"><C {...c.props} /></Sequence> : <C {...c.props} />; }
   return <Placeholder />;
 };
 

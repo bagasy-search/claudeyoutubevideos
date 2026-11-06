@@ -30,22 +30,28 @@ export const SHOTS = [
   // 13 · la lavandería del hotel
   B(1, "Esto es lo que se usaba en la lavandería", "b_laundry", `${LAUND}, warm overhead light, no people.`),
   B(1, "sábanas blancas en cada cama", "b_hotelbed", `A made hotel bed with crisp white sheets folded down, two white pillows, a soft lamp on.`),
+  B(1, "en cada cama", "b_bedrow", `A row of hotel guest rooms seen through open doors from the corridor, a crisp white made bed in each one.`),
   B(1, "todos los días", "b_maidcart", `A hotel housekeeping cart stacked with folded white sheets parked in a carpeted corridor.`),
   B(1, "Y en las sábanas no se usaba cloro", "b_nobleach", `A jug of bleach with a blank label pushed to the back of a dusty storeroom shelf in a hotel basement.`),
+  B(1, "no se usaba cloro", "b_bleachshelf", `A white bleach jug with a plain blank label pushed to the back of a high shelf in a hotel laundry room.`),
   V(1, "Se usaba este frasco marrón", "b02"),
   // 28 · el mismo juego
   B(2, "Mire esta sábana", "b_hold1", `Two hands holding up ${GRAYS} against a sunny window, its dull gray tone clear.`),
   B(2, "Y mire esta otra", "b_hold2", `Two hands holding up ${WHITES} against the same sunny window, bright and crisp.`),
   B(2, "y la otra no", "b_onlyone", `Two folded sheets on a table, one dingy gray and one bright white, a tag tied to the white one.`),
   C(2, "Hoy le enseño a hacerlo en su casa", "SbTwoSheets"),
+  B(2, "en una tarde, sin cloro", "b_afternoon", `A bucket of soaking white sheets on a home laundry floor in warm afternoon light from a window.`),
   // 40 · tres cosas
   B(3, "Pero antes, tres cosas", "b_three", `${GRAYS} and ${WHITES} folded side by side on a wooden table, ${BOTTLE} between them.`),
   B(3, "que tiene que saber", "b_closet", `A hand opening a home linen closet full of folded sheets, morning light.`),
   B(3, "Por qué sus sábanas se ponen grises", "b_washer", `A front-loading home washing machine running with white sheets tumbling in sudsy water behind the round glass door.`, { anim: "the sheets tumble behind the glass" }),
+  B(3, "se ponen grises", "b_grayfold", `A folded dingy gray cotton bed sheet on top of a white washing machine, close view.`),
   B(3, "aunque las lave bien", "b_powder", `A scoop of laundry powder poured into the drawer of a home washing machine.`),
   B(3, "y no es por la mugre", "b_mugre", `Close view of the inside of a clean white bed sheet corner held up to the light, dull gray tone, no visible dirt.`),
   B(3, "la proporción exacta que usaba Rosa en la lavandería", "b_rosa", `${ROSA} standing by a long folding table in ${LAUND}, a measuring jug in her hand.`),
+  B(3, "que usaba Rosa en la lavandería", "b_rosalaund", `${ROSA} pouring a measured amount from ${BOTTLE} into a big bucket in ${LAUND}.`),
   B(3, "la que le devolvía el blanco a las sábanas de trescientas camas", "b_shelves300", `Tall wooden shelves packed with hundreds of folded bright white sheets in a hotel linen room.`),
+  B(3, "de trescientas camas", "b_hotelbeds", `A row of hotel guest rooms seen through open doors from the corridor, a crisp white made bed in each one.`),
   // 62 · CTA 1 (pág. 37)
   C(4, "los blancos grises y apagados", "TbBookTub", { page: I + "book_p37.png", cover: I + "book_cover.png", qr: I + "qr.png", pageNo: 37 }),
   C(4, "El link está en la primera línea", "TbBookTub", { page: I + "book_p37.png", cover: I + "book_cover.png", qr: I + "qr.png", pageNo: 37, skip: 96 }),
@@ -71,7 +77,7 @@ export const SHOTS = [
   B(9, "con nuestro jabón, póngale el doble", "b_salesman", `A salesman in a short-sleeved shirt pouring a big scoop of laundry powder into an industrial washer drawer while ${MANAGER} watches.`),
   // 145 · grises
   B(10, "A los tres meses", "b_graypile", `A long folding table in ${LAUND} covered with piles of dingy gray sheets.`),
-  C(10, "Los huéspedes se quejaban", "ClNotebook", { title: "Lavandería · 1995", rows: [{ k: "Queja", v: "«grises»" }, { k: "Causa", v: "doble jabón" }, { k: "Orden", v: "cambiar 300" }] }),
+  C(10, "Los huéspedes se quejaban", "ClNotebook", { title: "Lavandería · 1995", rows: [{ k: "Queja", v: "«grises»" }, { k: "Causa", v: "doble jabón" }, { k: "Orden", v: "300 juegos nuevos" }] }),
   B(10, "Trescientos juegos", "b_cart300", `Laundry carts piled high with dingy gray bed sheets lined up in a hotel basement corridor.`),
   // 159 · Rosa pide una semana
   B(11, "le pidió una semana", "b_rosamgr", `${ROSA} talking to ${MANAGER} beside an industrial washing machine in ${LAUND}.`),
