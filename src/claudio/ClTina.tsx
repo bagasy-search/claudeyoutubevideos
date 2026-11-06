@@ -63,7 +63,7 @@ const rAt = (y: number) => { const pr = tubProfile(); for (let i = 1; i < pr.len
 export const TbTub3D: React.FC<{ labels?: boolean; bed?: string; still?: boolean }> = ({ labels = false, bed, still = false }) => {
   const f = useCurrentFrame(); const { width, height, fps, durationInFrames: T } = useVideoConfig(); const out = useOut(8);
   const m = manoCam(f / fps, still ? 0.4 : 1, 77);
-  const target = new THREE.Vector3(0, -0.25, 0);
+  const target = new THREE.Vector3(-0.3, -0.32, 0);
   const a = -0.55 + interpolate(f, [0, T], [0, 0.22], { easing: Easing.inOut(Easing.cubic) }) + (m.pan * Math.PI) / 180;
   const dist = interpolate(f, [0, T], [4.1, 3.6], { easing: Easing.inOut(Easing.sin) });
   const camPos = new THREE.Vector3(Math.sin(a) * dist, 2.35 + m.tilt * 0.02, Math.cos(a) * dist);
@@ -118,8 +118,8 @@ export const TbTub3D: React.FC<{ labels?: boolean; bed?: string; still?: boolean
         </ThreeCanvas>
       </div>
       {labels ? <>
-        <Tag x={L.x - 30} y={L.y - 150} text="así estaba" k={kl} left />
-        <Tag x={R.x + 30} y={R.y - 150} text="así quedó" k={kr} />
+        <Tag x={L.x - 20} y={L.y + 60} text="así estaba" k={kl} size={64} />
+        <Tag x={R.x + 20} y={R.y + 60} text="así quedó" k={kr} size={64} left />
       </> : null}
       <RoomLight k={0.8} />
     </AbsoluteFill>
@@ -138,7 +138,7 @@ export const TbLayers3D: React.FC<{ bed?: string; stage?: number }> = ({ bed, st
   const g = stage > 1 ? 1 : stage === 1 ? lift(14) : lift(Math.round(T * 0.1));
   const j = stage > 2 ? 1 : stage === 2 ? lift(12) : stage === 1 ? 0 : lift(Math.round(T * 0.28));
   const iron = stage === 3 ? ease(clamp01((f - 20) / (T * 0.5))) : stage ? 0 : ease(clamp01((f - T * 0.5) / (T * 0.3)));
-  const kS = stage === 3 ? lin(f, 4, 14) : stage ? 0.35 : lin(f, T * 0.45, T * 0.55);
+  const kS = stage === 3 ? lin(f, 4, 14) : stage ? 1 : lin(f, T * 0.45, T * 0.55);
   const mats = useMemo(() => ({
     tub: new THREE.MeshPhysicalMaterial({ color: ACR, roughness: 0.18, clearcoat: 1 }),
     scale: new THREE.MeshStandardMaterial({ color: "#EFEBE0", roughness: 1 }),
@@ -170,10 +170,10 @@ export const TbLayers3D: React.FC<{ bed?: string; stage?: number }> = ({ bed, st
           <mesh geometry={gG} material={mats.fat} position={[0, yG, 0]} />
         </ThreeCanvas>
       </div>
-      <Tag x={pG.x + 40} y={pG.y} text="1 · grasa de la piel" k={g} color={YELD} />
-      <Tag x={pJ.x + 40} y={Math.min(pJ.y, pS.y - 70)} text="2 · jabón" k={j} />
-      <Tag x={pS.x + 40} y={pS.y + 30} text={iron > 0.5 ? "3 · sarro + hierro" : "3 · sarro (piedra)"} k={kS} color={iron > 0.5 ? RUST : CL.navy} />
-      <Tag x={pT.x - 40} y={pT.y} text="la tina" k={lin(f, 4, 16)} left color={CL.inkSoft} size={34} />
+      <Tag x={pG.x + 40} y={pG.y} text="1 · grasa de la piel" k={g} color="#8A5A0E" size={50} />
+      <Tag x={pJ.x + 40} y={Math.min(pJ.y, pS.y - 90)} text="2 · jabón" k={j} size={50} />
+      <Tag x={pS.x + 40} y={pS.y + 40} text={iron > 0.5 ? "3 · sarro + hierro" : "3 · sarro (piedra)"} k={kS} color={iron > 0.5 ? "#A8450F" : CL.navyDeep} size={50} />
+      <Tag x={pT.x - 40} y={pT.y} text="la tina" k={lin(f, 4, 16)} left color={CL.navyDeep} size={48} />
       <RoomLight />
     </AbsoluteFill>
   );
@@ -254,9 +254,9 @@ export const TbKnock: React.FC<{ bed?: string }> = ({ bed }) => {
           <path d="M8 34 Q52 22 92 40 Q104 54 84 62 Q44 64 8 58 Z" fill="#4E86D6" stroke="rgba(20,50,110,0.35)" strokeWidth={2} />
           <path d="M30 8 Q70 2 120 8" stroke="rgba(255,255,255,0.45)" strokeWidth={6} fill="none" strokeLinecap="round" />
         </svg>
-        <div style={{ position: "absolute", left: 120, top: 540, opacity: label, display: "flex", gap: 18, alignItems: "center" }}>
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: "#FFFFFF", textShadow: "0 3px 10px rgba(0,0,0,0.5)" }}>{hollow ? "Acrílica" : "Esmaltada"}</div>
-          <div style={{ fontFamily: LABEL, fontSize: 40, color: "#FFFFFF", background: hollow ? CL.nitrile : CL.navy, padding: "4px 14px", borderRadius: 8, letterSpacing: 2 }}>{hollow ? "HUECA · TIBIA" : "LLENA · FRÍA"}</div>
+        <div style={{ position: "absolute", left: 60, top: 530, opacity: label, display: "flex", gap: 18, alignItems: "center" }}>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: "#FFFFFF", textShadow: "0 3px 10px rgba(0,0,0,0.5)" }}>{hollow ? "Acrílica" : "Esmaltada"}</div>
+          <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 58, color: "#FFFFFF", background: hollow ? "#1F5FB8" : CL.navy, padding: "6px 22px", borderRadius: 12, letterSpacing: 2, whiteSpace: "nowrap", boxShadow: `0 8px 18px ${CL.shadow}` }}>{hollow ? "HUECA · TIBIA" : "LLENA · FRÍA"}</div>
         </div>
       </div>
     );
@@ -274,7 +274,7 @@ export const TbKnock: React.FC<{ bed?: string }> = ({ bed }) => {
 };
 
 // ═════════════════════════════ 5 · la prueba del algodón
-const Cotton: React.FC<{ stain: number; size?: number }> = ({ stain, size = 300 }) => (
+const Cotton: React.FC<{ stain: number; size?: number }> = ({ stain, size = 430 }) => (
   <svg width={size} height={size} viewBox="0 0 100 100" style={{ overflow: "visible" }}>
     <defs>
       <radialGradient id={`ct${Math.round(stain * 100)}`} cx="0.45" cy="0.4" r="0.7"><stop offset="0" stopColor="#FFFFFF" /><stop offset="1" stopColor="#E9E6DE" /></radialGradient>
@@ -299,19 +299,19 @@ export const TbCotton: React.FC<{ bed?: string }> = ({ bed }) => {
       <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 38%, rgba(255,250,232,${0.95 * glow}) 0%, rgba(255,250,232,${0.6 * glow}) 35%, rgba(255,250,232,0) 70%)` }} />
       <Hand2D seed={85} push={[1.0, 1.06]}>
         {/* la franja amarilla de la tina (abajo) */}
-        <div style={{ position: "absolute", left: 160, right: 160, top: 760, height: 150, borderRadius: 30, background: "linear-gradient(180deg, #CFC3AE, #A8987E)", boxShadow: "inset 0 -14px 28px rgba(0,0,0,0.06)", opacity: 1 - lift * 0.85 }}>
+        <div style={{ position: "absolute", left: 160, right: 160, top: 760, height: 150, borderRadius: 30, background: "linear-gradient(180deg, #CFC3AE, #A8987E)", boxShadow: "inset 0 -14px 28px rgba(0,0,0,0.06)", opacity: 1 - lift }}>
           <div style={{ position: "absolute", left: 0, right: 0, top: 54, height: 34, background: `linear-gradient(90deg, ${hexA(YEL, 0.9)}, ${hexA(YELD, 0.85)}, ${hexA(YEL, 0.9)})`, filter: "blur(2px)" }} />
         </div>
         {/* algodón que frota → sube al centro izquierda */}
-        <div style={{ position: "absolute", left: interpolate(lift, [0, 1], [860 + sw * 260, 470]), top: interpolate(lift, [0, 1], [700, 250]), translate: "-50% 0" }}>
+        <div style={{ position: "absolute", left: interpolate(lift, [0, 1], [860 + sw * 220, 470]), top: interpolate(lift, [0, 1], [640, 400]), translate: "-50% 0" }}>
           <Cotton stain={sA} />
-          <div style={{ position: "absolute", left: 300, top: 110, opacity: kOk }}><Tick ok k={kOk} /></div>
+          <div style={{ position: "absolute", left: 400, top: 110, opacity: kOk }}><Tick ok k={kOk} s={100} /></div>
           <div style={{ marginTop: 18, textAlign: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 44, color: "#fff", background: CL.navy, padding: "6px 16px", borderRadius: 10, letterSpacing: 2, opacity: kOk }}>AMARILLO = SALE</div>
         </div>
         {/* el segundo algodón (limpio) */}
-        <div style={{ position: "absolute", left: 1450, top: interpolate(lift, [0, 1], [1200, 250]), translate: "-50% 0" }}>
+        <div style={{ position: "absolute", left: 1450, top: interpolate(lift, [0, 1], [1200, 400]), translate: "-50% 0" }}>
           <Cotton stain={0} />
-          <div style={{ position: "absolute", left: 300, top: 110, opacity: kNo }}><Tick ok={false} k={kNo} /></div>
+          <div style={{ position: "absolute", left: 400, top: 110, opacity: kNo }}><Tick ok={false} k={kNo} s={100} /></div>
           <div style={{ marginTop: 18, textAlign: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 44, color: "#fff", background: CL.red, padding: "6px 16px", borderRadius: 10, letterSpacing: 2, opacity: kNo, whiteSpace: "nowrap" }}>LIMPIO = ES EL MATERIAL</div>
         </div>
         <div style={{ position: "absolute", left: "50%", top: 120, translate: "-50% 0", fontFamily: HAND, fontSize: 64, color: CL.navy, opacity: lin(f, 4, 16) * (1 - lift) }}>5 o 6 pasadas, fuerte</div>
@@ -355,19 +355,21 @@ export const TbHeatJar: React.FC<{ bed?: string }> = ({ bed }) => {
           </svg>
         </div>
         {/* termómetro con la zona buena */}
-        <div style={{ position: "absolute", left: 1220, top: 230, width: 300, height: 700, opacity: p }}>
+        <div style={{ position: "absolute", left: 1240, top: 230, width: 300, height: 700, opacity: p }}>
           <svg width={300} height={700} viewBox="0 0 300 700" style={{ overflow: "visible" }}>
             <rect x={110} y={100} width={60} height={520} rx={30} fill="#FFFFFF" stroke="#BFC6CF" strokeWidth={5} />
             <rect x={116} y={thY(70)} width={48} height={thY(50) - thY(70)} fill={hexA(CL.yellow, 0.55)} />
             <rect x={116} y={thY(100) - 8} width={48} height={22} fill={hexA(CL.red, 0.35)} />
             <rect x={124} y={thY(temp)} width={32} height={620 - thY(temp)} rx={16} fill="#E25B4B" />
             <circle cx={140} cy={640} r={52} fill="#E25B4B" stroke="#BFC6CF" strokeWidth={5} />
-            <text x={190} y={thY(60) + 12} fontFamily={LABEL} fontSize={34} fill={CL.ink}>CALIENTE</text>
-            <text x={190} y={thY(100) + 12} fontFamily={LABEL} fontSize={34} fill={CL.red}>HIERVE ✗</text>
+            <text x={190} y={thY(60) + 18} fontFamily={LABEL} fontWeight={700} fontSize={54} fill={CL.navy}>CALIENTE</text>
+            <text x={190} y={thY(100) + 18} fontFamily={LABEL} fontWeight={700} fontSize={54} fill={CL.red}>HIERVE ✗</text>
+            {[[20, "20°"], [50, "50°"], [70, "70°"]].map(([t, l]) => <g key={String(l)}><line x1={92} x2={110} y1={thY(Number(t))} y2={thY(Number(t))} stroke={CL.navy} strokeWidth={5} /><text x={84} y={thY(Number(t)) + 14} textAnchor="end" fontFamily={LABEL} fontWeight={700} fontSize={44} fill={CL.navy}>{String(l)}</text></g>)}
+            <text x={140} y={655} textAnchor="middle" fontFamily={LABEL} fontWeight={700} fontSize={40} fill="#FFFFFF">{Math.round(temp)}°</text>
           </svg>
         </div>
-        <div style={{ position: "absolute", left: 520, top: 170, fontFamily: HAND, fontSize: 66, color: CL.navy, opacity: lin(f, 10, 24) }}>1 minuto · microondas</div>
-        <div style={{ position: "absolute", left: 470, top: 960, fontFamily: LABEL, fontSize: 40, letterSpacing: 2, color: CL.ink, opacity: lin(f, T * 0.6, T * 0.7) }}>CALIENTE DISUELVE LA PIEDRA EL DOBLE DE RÁPIDO</div>
+        <div style={{ position: "absolute", left: 470, top: 130, fontFamily: LABEL, fontWeight: 700, fontSize: 84, letterSpacing: 2, color: CL.navy, background: "rgba(255,253,246,0.94)", padding: "6px 30px", borderRadius: 16, boxShadow: `0 10px 24px ${CL.shadow}`, opacity: lin(f, 10, 24), whiteSpace: "nowrap", textTransform: "uppercase" }}>1 minuto · microondas</div>
+        <div style={{ position: "absolute", left: 470, top: 960, fontFamily: LABEL, fontWeight: 600, fontSize: 44, letterSpacing: 2, color: CL.navy, opacity: lin(f, T * 0.6, T * 0.7) }}>CALIENTE DISUELVE LA PIEDRA EL DOBLE DE RÁPIDO</div>
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -398,15 +400,15 @@ export const TbSprayFill: React.FC<{ bed?: string }> = ({ bed }) => {
             <rect x={160} y={190} width={80} height={62} rx={8} fill="#F4F4F2" stroke="#9AA2AB" strokeWidth={4} />
             <path d="M150 120 L300 120 L320 160 L240 170 L240 190 L160 190 Z" fill="#FFFFFF" stroke="#9AA2AB" strokeWidth={4} />
             <path d="M210 190 L250 240 L232 250" fill="none" stroke="#9AA2AB" strokeWidth={8} strokeLinecap="round" />
-            <line x1={90} x2={150} y1={435} y2={435} stroke={CL.navy} strokeWidth={7} /><text x={70} y={452} textAnchor="end" fontFamily={LABEL} fontWeight={700} fontSize={56} fill={CL.navy}>½</text>
+            <line x1={60} x2={150} y1={435} y2={435} stroke={CL.navy} strokeWidth={9} /><rect x={-70} y={388} width={130} height={94} rx={16} fill={CL.navy} /><text x={-5} y={466} textAnchor="middle" fontFamily={LABEL} fontWeight={700} fontSize={84} fill="#FFFFFF">½</text>
           </svg>
         </div>
-        <Tag x={1120} y={640} text="1 taza vinagre caliente" k={a} />
-        <Tag x={1120} y={470} text="1 taza detergente" k={b} color="#3F7F2F" />
-        <div style={{ position: "absolute", left: 1120, top: 760, opacity: no, display: "flex", alignItems: "center", gap: 18 }}>
-          <Tick ok={false} s={60} k={no} /><span style={{ fontFamily: HAND, fontSize: 60, color: CL.red }}>sacudir = espuma</span>
+        <Tag x={1080} y={620} text="1 taza vinagre caliente" k={a} size={46} />
+        <Tag x={1080} y={470} text="1 taza detergente" k={b} color="#2F6B22" size={46} />
+        <div style={{ position: "absolute", left: 1080, top: 780, opacity: no, display: "flex", alignItems: "center", gap: 18 }}>
+          <Tick ok={false} s={96} k={no} /><span style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 66, color: CL.navy, background: "rgba(255,253,246,0.95)", padding: "4px 24px", borderRadius: 14, boxShadow: `0 8px 20px ${CL.shadow}`, whiteSpace: "nowrap", textTransform: "uppercase" }}>sacudir = espuma</span>
         </div>
-        <div style={{ position: "absolute", left: 1120, top: 860, opacity: lin(f, T * 0.66, T * 0.74), fontFamily: HAND, fontSize: 60, color: CL.navy }}>se da vuelta despacito</div>
+        <div style={{ position: "absolute", left: 1080, top: 900, opacity: lin(f, T * 0.66, T * 0.74), fontFamily: LABEL, fontWeight: 700, fontSize: 66, color: "#FFFFFF", background: CL.navy, padding: "4px 26px", borderRadius: 14, boxShadow: `0 8px 20px ${CL.shadow}`, whiteSpace: "nowrap", textTransform: "uppercase" }}>se da vuelta despacito</div>
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -438,14 +440,15 @@ export const TbHourglass: React.FC<{ bed?: string }> = ({ bed }) => {
             <path d="M80 80 L360 80 Q360 260 236 380 L236 400 Q360 520 360 700 L80 700 Q80 520 204 400 L204 380 Q80 260 80 80 Z" fill="rgba(255,255,255,0.2)" stroke="rgba(120,130,140,0.7)" strokeWidth={5} />
           </svg>
         </div>
-        <div style={{ position: "absolute", left: 1150, top: 330, fontFamily: SERIF, fontWeight: 900, fontSize: 210, color: CL.navy, lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{mins}<span style={{ fontSize: 80 }}> min</span></div>
-        <div style={{ position: "absolute", left: 1160, top: 590, fontFamily: HAND, fontSize: 62, color: CL.inkSoft, opacity: lin(f, 20, 34) }}>no haga nada · vaya por un café</div>
+        <div style={{ position: "absolute", left: 1150, top: 240, fontFamily: SERIF, fontWeight: 900, fontSize: 210, color: CL.navy, lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{mins}<span style={{ fontSize: 80 }}> min</span></div>
+        <div style={{ position: "absolute", left: 1160, top: 450, width: 700, fontFamily: HAND, fontWeight: 700, fontSize: 68, lineHeight: 1.1, color: CL.navy, opacity: lin(f, 20, 34) }}>no haga nada<br />vaya por un café</div>
         {/* taza de café humeando */}
-        <div style={{ position: "absolute", left: 1220, top: 700 }}>
-          <svg width={220} height={200} viewBox="0 0 220 200" style={{ overflow: "visible" }}>
-            {[0, 1].map((i) => { const s = (tt * 0.6 + i / 2) % 1; return <path key={i} d={`M${80 + i * 40} 60 q 20 -30 0 -60`} fill="none" stroke="rgba(160,160,160,0.7)" strokeWidth={8} strokeLinecap="round" opacity={1 - s} transform={`translate(0 ${-s * 40})`} />; })}
-            <path d="M40 70 L170 70 L160 170 Q105 190 50 170 Z" fill="#FFFFFF" stroke="#C9C1B2" strokeWidth={4} />
-            <path d="M168 95 Q215 100 200 140 Q190 160 162 150" fill="none" stroke="#C9C1B2" strokeWidth={10} />
+        <div style={{ position: "absolute", left: 1230, top: 700, scale: "1.5", transformOrigin: "0 0" }}>
+          <svg width={240} height={210} viewBox="0 0 240 210" style={{ overflow: "visible" }}>
+            <ellipse cx={108} cy={186} rx={96} ry={14} fill="#DDD6C6" stroke="#8C8372" strokeWidth={3} />
+            {[0, 1].map((i) => { const s = (tt * 0.6 + i / 2) % 1; return <path key={i} d={`M${80 + i * 40} 60 q 20 -30 0 -60`} fill="none" stroke="rgba(110,110,110,0.85)" strokeWidth={9} strokeLinecap="round" opacity={1 - s} transform={`translate(0 ${-s * 40})`} />; })}
+            <path d="M40 70 L170 70 L160 170 Q105 190 50 170 Z" fill="#FFFFFF" stroke={CL.navy} strokeWidth={6} />
+            <path d="M168 95 Q215 100 200 140 Q190 160 162 150" fill="none" stroke={CL.navy} strokeWidth={11} />
             <ellipse cx={105} cy={72} rx={64} ry={10} fill="#5B3416" />
           </svg>
         </div>
@@ -498,8 +501,8 @@ export const TbCompress3D: React.FC<{ bed?: string }> = ({ bed }) => {
           </g> : null}
           {film > 0.01 && film < 0.99 ? <rect x={fx - 14} y={curveY(fx) - 130} width={28} height={260} rx={14} fill="#E9EEF3" stroke="#B9C3CC" strokeWidth={3} /> : null}
         </svg>
-        <Tag x={200} y={880} text="papel + vinagre tibio + 3 gotas" k={lin(f, 8, 20)} />
-        <Tag x={200} y={980} text="film encima" k={lin(f, T * 0.55, T * 0.62)} color={CL.inkSoft} />
+        <Tag x={120} y={870} text="papel + vinagre tibio + 3 gotas" k={lin(f, 8, 20)} size={46} />
+        <Tag x={120} y={965} text="film encima" k={lin(f, T * 0.55, T * 0.62)} color={CL.navyDeep} size={56} />
         <div style={{ position: "absolute", left: 1420, top: 820, fontFamily: SERIF, fontWeight: 900, fontSize: 130, color: CL.navy, opacity: clock, scale: String(0.8 + 0.2 * clock) }}>1 hora</div>
       </Hand2D>
       <RoomLight />
@@ -527,12 +530,20 @@ export const TbScratchLens: React.FC<{ bed?: string }> = ({ bed }) => {
       <Hand2D seed={132} push={[1, 1.03]}>
         <AbsoluteFill style={{ opacity: 0.92 }}>{surface(1)}</AbsoluteFill>
         <AbsoluteFill style={{ clipPath: `circle(210px at ${lx}px ${ly}px)` }}><AbsoluteFill style={{ transformOrigin: `${lx}px ${ly}px`, transform: "scale(2.2)" }}>{surface(2)}</AbsoluteFill></AbsoluteFill>
+        {/* adentro de la lupa sobre la parte lisa: superficie brillante con reflejo de ventana */}
+        <div style={{ position: "absolute", left: lx - 210, top: ly - 210, width: 420, height: 420, borderRadius: "50%", overflow: "hidden", opacity: clamp01((lx - 940) / 160), background: "radial-gradient(circle at 35% 30%, #FFFFFF 0%, #EEF4FA 45%, #D5E2F0 100%)" }}>
+          <svg width={420} height={420} viewBox="0 0 420 420">
+            <rect x={60} y={50} width={130} height={110} rx={8} fill="rgba(255,255,255,0.95)" stroke="rgba(130,160,195,0.85)" strokeWidth={5} /><line x1={125} y1={50} x2={125} y2={160} stroke="rgba(130,160,195,0.85)" strokeWidth={5} /><line x1={60} y1={105} x2={190} y2={105} stroke="rgba(130,160,195,0.85)" strokeWidth={5} />
+            <path d="M-20 330 L300 130 L350 160 L20 380 Z" fill="rgba(255,255,255,0.8)" /><path d="M230 420 L440 260 L440 310 L270 420 Z" fill="rgba(255,255,255,0.6)" />
+            {[[300, 90], [330, 250], [130, 280]].map(([x, y], i) => <path key={i} transform={`translate(${x} ${y})`} d="M0 -30 L6 -6 L30 0 L6 6 L0 30 L-6 6 L-30 0 L-6 -6 Z" fill="#FFFFFF" stroke="rgba(150,175,200,0.9)" strokeWidth={2} />)}
+          </svg>
+        </div>
         <div style={{ position: "absolute", left: lx - 220, top: ly - 220, width: 440, height: 440, borderRadius: "50%", border: `18px solid ${CL.navy}`, boxShadow: `0 30px 60px ${CL.shadow}, inset 0 0 40px rgba(255,255,255,0.6)` }} />
         <div style={{ position: "absolute", left: lx + 140, top: ly + 140, width: 46, height: 230, background: CL.navy, borderRadius: 20, rotate: "-40deg", transformOrigin: "50% 0" }} />
-        <div style={{ position: "absolute", left: 140, top: 830, fontFamily: SERIF, fontWeight: 900, fontSize: 70, color: CL.ink }}>Frotar con polvo</div>
-        <div style={{ position: "absolute", left: 140, top: 910, fontFamily: HAND, fontSize: 54, color: CL.red }}>rayitas · la mugre se agarra</div>
-        <div style={{ position: "absolute", left: 1100, top: 830, fontFamily: SERIF, fontWeight: 900, fontSize: 70, color: CL.ink, opacity: lin(f, T * 0.45, T * 0.6) }}>Compresa quieta</div>
-        <div style={{ position: "absolute", left: 1100, top: 910, fontFamily: HAND, fontSize: 54, color: "#2F8F48", opacity: lin(f, T * 0.5, T * 0.65) }}>el tiempo hace el trabajo</div>
+        <div style={{ position: "absolute", left: 90, top: 790, fontFamily: SERIF, fontWeight: 900, fontSize: 78, color: CL.ink }}>Frotar con polvo</div>
+        <div style={{ position: "absolute", left: 90, top: 890, fontFamily: LABEL, fontWeight: 700, fontSize: 62, color: "#FFFFFF", background: "#B4281C", padding: "4px 22px", borderRadius: 12, boxShadow: `0 8px 18px ${CL.shadow}`, whiteSpace: "nowrap" }}>rayitas · la mugre se agarra</div>
+        <div style={{ position: "absolute", left: 1010, top: 790, fontFamily: SERIF, fontWeight: 900, fontSize: 78, color: CL.ink, opacity: lin(f, T * 0.45, T * 0.6) }}>Compresa quieta</div>
+        <div style={{ position: "absolute", left: 1010, top: 890, fontFamily: LABEL, fontWeight: 700, fontSize: 62, color: "#FFFFFF", background: "#22703A", padding: "4px 22px", borderRadius: 12, boxShadow: `0 8px 18px ${CL.shadow}`, opacity: lin(f, T * 0.5, T * 0.65), whiteSpace: "nowrap" }}>el tiempo hace el trabajo</div>
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -582,7 +593,7 @@ export const TbEnamelRust: React.FC<{ bed?: string }> = ({ bed }) => {
   const clean = ease(clamp01((f - T * 0.35) / (T * 0.45)));
   const stone = pop(f, fps, Math.round(T * 0.66), 13);
   const moving = scrub > 0 && scrub < 1 ? 1 : 0;
-  const sx = 960 + Math.cos(scrub * 30) * 70 * moving, sy = 640 + Math.sin(scrub * 30) * 120 * moving;
+  const sx = 960 + Math.cos(scrub * 30) * 90 * moving, sy = 650 + Math.sin(scrub * 30) * 130 * moving;
   const dropY = 330 + ((f * 7) % 220);
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
@@ -602,9 +613,9 @@ export const TbEnamelRust: React.FC<{ bed?: string }> = ({ bed }) => {
           <path d="M120 330 Q960 300 1800 330" stroke="rgba(255,255,255,0.95)" strokeWidth={16} fill="none" />
           <path d="M300 300 Q260 700 340 1080" stroke="rgba(0,0,0,0.05)" strokeWidth={30} fill="none" />
           {/* la lágrima de óxido: de la llave a la rejilla */}
-          <g filter="url(#rz2)" opacity={0.95 * (1 - 0.9 * clean)}>
-            <path d="M920 312 Q880 620 810 930 Q960 990 1110 930 Q1040 620 1000 312 Z" fill="#C8642A" opacity={0.95} />
-            <path d="M945 312 Q930 620 900 920 Q962 945 1022 920 Q990 620 975 312 Z" fill="#8E3A12" opacity={0.85} />
+          <g filter="url(#rz2)" opacity={1 - 0.5 * clean}>
+            <path d="M920 312 Q880 620 810 930 Q960 990 1110 930 Q1040 620 1000 312 Z" fill="#E0560C" opacity={1} />
+            <path d="M945 312 Q930 620 900 920 Q962 945 1022 920 Q990 620 975 312 Z" fill="#8A2A06" opacity={0.95} />
           </g>
           {/* rejilla */}
           <ellipse cx={960} cy={950} rx={90} ry={30} fill="url(#chr)" stroke="#7E8791" strokeWidth={4} />
@@ -618,15 +629,23 @@ export const TbEnamelRust: React.FC<{ bed?: string }> = ({ bed }) => {
           {paste > 0.01 ? <path d="M900 470 Q960 430 1020 470 Q1060 640 1030 820 Q960 860 890 820 Q860 640 900 470 Z" fill="#FFFFFF" opacity={0.9 * paste * (1 - clamp01((f - T * 0.64) / 10))} /> : null}
         </svg>
         {/* esponja blanca en círculos */}
-        {moving ? <div style={{ position: "absolute", left: sx - 110, top: sy - 60, width: 220, height: 120, borderRadius: 24, background: "linear-gradient(180deg, #FFFFFF, #E9E7E2)", boxShadow: `0 16px 30px ${CL.shadow}`, backgroundImage: "radial-gradient(rgba(180,175,165,0.45) 2px, transparent 3px)", backgroundSize: "14px 12px" }} /> : null}
+        {moving ? <div style={{ position: "absolute", left: sx - 175, top: sy - 95, width: 350, height: 190, borderRadius: 36, background: "linear-gradient(180deg, #FFFFFF, #E9E7E2)", boxShadow: `0 16px 30px ${CL.shadow}`, backgroundImage: "radial-gradient(rgba(180,175,165,0.45) 2px, transparent 3px)", backgroundSize: "14px 12px" }} /> : null}
         {/* piedra pómez mojada */}
-        <div style={{ position: "absolute", left: 1400, top: 560, scale: String(stone), rotate: `${-14 + 6 * Math.sin(f / 10)}deg` }}>
+        <div style={{ position: "absolute", left: 300, top: 560, scale: String(stone * 1.45), transformOrigin: "0 0", rotate: `${-14 + 6 * Math.sin(f / 10)}deg` }}>
           <div style={{ width: 260, height: 150, borderRadius: "40% 50% 45% 55%", background: "radial-gradient(circle at 30% 30%, #D8D3C8, #9A948A)", boxShadow: `0 20px 30px ${CL.shadow}`, backgroundImage: "radial-gradient(rgba(0,0,0,0.18) 2px, transparent 3px)", backgroundSize: "22px 18px" }} />
           {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", left: 40 + i * 70, top: 140 + ((f * 3 + i * 20) % 60), width: 16, height: 22, borderRadius: "50%", background: "rgba(160,200,235,0.85)" }} />)}
         </div>
-        <Tag x={1160} y={380} text="óxido del agua" k={lin(f, 6, 18)} color={RUST} />
-        <Tag x={1160} y={500} text="pasta de bicarbonato" k={paste} />
-        <Tag x={1330} y={820} text="sólo esmaltada · siempre mojada" k={stone} />
+        {/* líneas guía: cada rótulo señala su objeto */}
+        <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, overflow: "visible" }}>
+          <g stroke={CL.navy} strokeWidth={6} strokeLinecap="round" fill={CL.navy}>
+            <line x1={770} y1={420} x2={920} y2={420} opacity={lin(f, 8, 20)} /><circle cx={920} cy={420} r={11} opacity={lin(f, 8, 20)} stroke="none" />
+            <line x1={1150} y1={520} x2={1020} y2={540} opacity={paste} /><circle cx={1020} cy={540} r={11} opacity={paste} stroke="none" />
+            <line x1={560} y1={905} x2={560} y2={790} opacity={stone} /><circle cx={560} cy={790} r={11} opacity={stone} stroke="none" />
+          </g>
+        </svg>
+        <Tag x={770} y={420} text="óxido del agua" k={lin(f, 6, 18)} color="#A8450F" left size={46} />
+        <Tag x={1160} y={520} text="pasta de bicarbonato" k={paste} size={46} />
+        <Tag x={100} y={930} text="sólo esmaltada · siempre mojada" k={stone} size={42} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -644,7 +663,7 @@ export const TbSpongeScale: React.FC<{ bed?: string }> = ({ bed }) => {
   const rad = (ang * Math.PI) / 180;
   const pan = (side: -1 | 1) => ({ x: 960 + side * 430 * Math.cos(rad), y: 360 + side * 430 * Math.sin(rad) });
   const L = pan(-1), R = pan(1);
-  const lbl = (txt: string, k: number, dx: number) => <div style={{ position: "absolute", left: dx, top: 0, opacity: k, translate: `0 ${(1 - k) * -60}px`, fontFamily: LABEL, fontWeight: 700, fontSize: 36, color: CL.ink, background: "rgba(255,255,255,0.95)", padding: "6px 14px", borderRadius: 10, whiteSpace: "nowrap", boxShadow: "0 6px 14px rgba(0,0,0,0.2)" }}>{txt}</div>;
+  const lbl = (txt: string, k: number, dx: number) => <div style={{ position: "absolute", left: dx, top: 0, opacity: k, translate: `0 ${(1 - k) * -60}px`, fontFamily: LABEL, fontWeight: 700, fontSize: 40, color: "#FFFFFF", background: CL.navy, padding: "6px 18px", borderRadius: 10, whiteSpace: "nowrap", boxShadow: "0 6px 14px rgba(0,0,0,0.3)" }}>{txt}</div>;
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
       <Bed src={bed} seed={165} dim={0.4} />
@@ -672,13 +691,13 @@ export const TbSpongeScale: React.FC<{ bed?: string }> = ({ bed }) => {
                 <svg width={110} height={80} viewBox="0 0 110 80" style={{ position: "absolute", left: 255, bottom: 0, translate: `0 ${(1 - items[2]) * -300}px`, opacity: items[2] }}>
                   {Array.from({ length: 26 }, (_, i) => <ellipse key={i} cx={55 + (rnd(i) - 0.5) * 50} cy={46 + (rnd(i + 4) - 0.5) * 30} rx={14 + rnd(i + 2) * 22} ry={8 + rnd(i + 6) * 14} fill="none" stroke={i % 2 ? "#8C939A" : "#B9BFC5"} strokeWidth={2} transform={`rotate(${rnd(i + 8) * 180} 55 46)`} />)}
                 </svg>
-                <div style={{ position: "absolute", left: -40, top: -90, scale: "0.62", transformOrigin: "0 0" }}>{lbl("esponja verde · polvo · lana de acero", items[2], 0)}</div>
+                <div style={{ position: "absolute", left: -40, top: -35, scale: "0.78", transformOrigin: "0 0" }}>{lbl("esponja verde · polvo · lana de acero", items[2], 0)}</div>
               </> : <>
                 <div style={{ position: "absolute", left: 30, bottom: 0, width: 160, height: 70, borderRadius: 18, background: "#FFFFFF", boxShadow: "inset 0 -6px 0 #E3E0D8, 0 6px 10px rgba(0,0,0,0.15)", backgroundImage: "radial-gradient(rgba(180,175,165,0.45) 2px, transparent 3px)", backgroundSize: "14px 12px", translate: `0 ${(1 - right[0]) * -300}px`, opacity: right[0] }} />
                 <div style={{ position: "absolute", left: 205, bottom: 0, width: 140, height: 56, translate: `0 ${(1 - right[1]) * -300}px`, opacity: right[1] }}>
                   {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", left: i * 4, bottom: i * 16, width: 136 - i * 8, height: 18, borderRadius: 6, background: i % 2 ? "#4F82CF" : "#6A9AE0", backgroundImage: "repeating-linear-gradient(90deg, rgba(255,255,255,0.12) 0 3px, transparent 3px 6px)" }} />)}
                 </div>
-                <div style={{ position: "absolute", left: 10, top: -90, scale: "0.62", transformOrigin: "0 0" }}>{lbl("esponja blanca · microfibra", right[1], 0)}</div>
+                <div style={{ position: "absolute", left: -10, top: -90, scale: "0.78", transformOrigin: "0 0" }}>{lbl("esponja blanca · microfibra", right[1], 0)}</div>
               </>}
             </div>
           </div>
@@ -705,7 +724,7 @@ export const TbFiveKeys: React.FC<{ hi?: number; bed?: string }> = ({ hi = 1, be
           const on = i + 1 === hi; const flip = on ? ease(clamp01((f - 34) / 16)) : 1;
           const sw = Math.sin(f / 9 + i) * 3 * (1 - flip);
           return (
-            <div key={i} style={{ position: "absolute", left: 130 + i * 340, top: 170, transformOrigin: "50% 0", rotate: `${sw + (1 - p) * 30}deg`, opacity: p * (on ? 1 : 0.68), scale: on ? "1.1" : "0.96", zIndex: on ? 2 : 1 }}>
+            <div key={i} style={{ position: "absolute", left: 130 + i * 340, top: 205, transformOrigin: "50% 0", rotate: `${sw + (1 - p) * 30}deg`, opacity: p * (on ? 1 : 0.68), scale: on ? "1.36" : "1.25", zIndex: on ? 2 : 1 }}>
               <div style={{ position: "absolute", left: 120, top: -6, width: 24, height: 24, borderRadius: "50%", background: CL.brassLight }} />
               <div style={{ transform: `perspective(1200px) rotateY(${flip * 180}deg)`, transformStyle: "flat" }}>
                 {flip < 0.5 ? <KeyTag num={i + 1} label="ERROR" w={260} /> : (
@@ -751,7 +770,7 @@ export const TbRoutine: React.FC<{ bed?: string }> = ({ bed }) => {
           </div>
         </div>
         <div style={{ position: "absolute", left: 1310, top: 330, opacity: p }}>
-          <div style={{ fontFamily: LABEL, fontSize: 36, color: CL.inkSoft, letterSpacing: 3 }}>TOTAL</div>
+          <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 58, color: CL.navy, letterSpacing: 4 }}>TOTAL</div>
           <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 150, color: CL.navy, lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{sum >= 60 ? `${Math.floor(sum / 60)} h ${String(Math.round(sum % 60)).padStart(2, "0")}` : `${Math.round(sum)} min`}</div>
           <div style={{ fontFamily: HAND, fontSize: 64, color: CL.ink, opacity: lin(f, T * 0.75, T * 0.85) }}>una tarde, y un vaso de vinagre</div>
         </div>
@@ -767,27 +786,30 @@ export const TbNeverPour: React.FC<{ bed?: string }> = ({ bed }) => {
   const tilt = interpolate(f, [6, T * 0.35], [0, 38], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) });
   const stop = pop(f, fps, Math.round(T * 0.35), 9);
   const ang = tilt * (1 - stop * 0.85);
-  const handX = interpolate(stop, [0, 1], [1700, 1060]);
+  const handX = interpolate(stop, [0, 1], [1800, 1430]);
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
       <Bed src={bed} seed={198} dim={0.35} />
       <Hand2D seed={198}>
-        <Contact x={620} y={900} w={360} /><Contact x={980} y={900} w={360} />
+        <Contact x={250} y={860} w={300} /><Contact x={510} y={860} w={300} /><Contact x={790} y={860} w={330} /><Contact x={1270} y={860} w={360} />
         {/* vinagre */}
-        <div style={{ position: "absolute", left: 500, top: 420 }}>
-          <svg width={240} height={480} viewBox="0 0 240 480"><path d="M80 20 L160 20 L160 80 Q220 110 220 180 L220 450 Q220 470 200 470 L40 470 Q20 470 20 450 L20 180 Q20 110 80 80 Z" fill="rgba(240,236,224,0.85)" stroke="#B9B2A3" strokeWidth={4} /><rect x={70} y={0} width={100} height={30} rx={6} fill="#E8E2D4" /><rect x={40} y={240} width={160} height={110} rx={10} fill="#FFFFFF" /><text x={120} y={305} textAnchor="middle" fontFamily={LABEL} fontSize={30} fill={CL.ink}>VINAGRE</text></svg>
+        <div style={{ position: "absolute", left: 790 - 144, top: 860 - 480 * 1.2, transformOrigin: "50% 100%", scale: "1.2" }}>
+          <svg width={240} height={480} viewBox="0 0 240 480"><path d="M80 20 L160 20 L160 80 Q220 110 220 180 L220 450 Q220 470 200 470 L40 470 Q20 470 20 450 L20 180 Q20 110 80 80 Z" fill="rgba(240,236,224,0.92)" stroke="#8F887A" strokeWidth={4} /><rect x={70} y={0} width={100} height={30} rx={6} fill="#E8E2D4" /><rect x={30} y={230} width={180} height={120} rx={10} fill="#FFFFFF" /><text x={120} y={303} textAnchor="middle" fontFamily={LABEL} fontWeight={700} fontSize={34} fill={CL.navy}>VINAGRE</text></svg>
         </div>
         {/* amoníaco y agua oxigenada: tampoco */}
-        <div style={{ position: "absolute", left: 90, top: 520, opacity: pop(f, fps, 10, 12), scale: "1.2", transformOrigin: "50% 100%" }}>
-          <svg width={170} height={330} viewBox="0 0 170 330"><path d="M55 10 L115 10 L115 50 Q160 70 160 120 L160 310 Q160 322 148 322 L22 322 Q10 322 10 310 L10 120 Q10 70 55 50 Z" fill="rgba(225,240,236,0.85)" stroke="#9DB5AE" strokeWidth={4} /><rect x={50} y={0} width={70} height={22} rx={5} fill="#2E7D6B" /><rect x={18} y={150} width={134} height={84} rx={8} fill="#FFFFFF" /><text x={85} y={200} textAnchor="middle" fontFamily={LABEL} fontSize={24} fill={CL.ink}>AMONÍACO</text></svg>
+        <div style={{ position: "absolute", left: 250 - 85, top: 860 - 330, opacity: pop(f, fps, 10, 12), scale: "1.5", transformOrigin: "50% 100%" }}>
+          <svg width={170} height={330} viewBox="0 0 170 330"><path d="M55 10 L115 10 L115 50 Q160 70 160 120 L160 310 Q160 322 148 322 L22 322 Q10 322 10 310 L10 120 Q10 70 55 50 Z" fill="rgba(225,240,236,0.92)" stroke="#6F918A" strokeWidth={4} /><rect x={50} y={0} width={70} height={22} rx={5} fill="#2E7D6B" /><rect x={14} y={140} width={142} height={100} rx={8} fill="#FFFFFF" /><text x={85} y={202} textAnchor="middle" fontFamily={LABEL} fontWeight={700} fontSize={26} fill={CL.navy}>AMONÍACO</text></svg>
         </div>
-        <div style={{ position: "absolute", left: 300, top: 560, opacity: pop(f, fps, 14, 12), scale: "1.2", transformOrigin: "50% 100%" }}>
-          <svg width={160} height={290} viewBox="0 0 160 290"><path d="M55 10 L105 10 L105 46 Q150 60 150 110 L150 272 Q150 282 140 282 L20 282 Q10 282 10 272 L10 110 Q10 60 55 46 Z" fill="#5A3416" stroke="#3B200D" strokeWidth={4} /><rect x={48} y={0} width={64} height={22} rx={5} fill="#F2EFE8" /><rect x={18} y={130} width={124} height={92} rx={8} fill="#FFFFFF" /><text x={80} y={170} textAnchor="middle" fontFamily={LABEL} fontSize={21} fill={CL.ink}>AGUA</text><text x={80} y={200} textAnchor="middle" fontFamily={LABEL} fontSize={21} fill={CL.ink}>OXIGENADA</text></svg>
+        <div style={{ position: "absolute", left: 510 - 80, top: 860 - 290, opacity: pop(f, fps, 14, 12), scale: "1.5", transformOrigin: "50% 100%" }}>
+          <svg width={160} height={290} viewBox="0 0 160 290"><path d="M55 10 L105 10 L105 46 Q150 60 150 110 L150 272 Q150 282 140 282 L20 282 Q10 282 10 272 L10 110 Q10 60 55 46 Z" fill="#5A3416" stroke="#3B200D" strokeWidth={4} /><rect x={48} y={0} width={64} height={22} rx={5} fill="#F2EFE8" /><rect x={14} y={120} width={132} height={110} rx={8} fill="#FFFFFF" /><text x={80} y={166} textAnchor="middle" fontFamily={LABEL} fontWeight={700} fontSize={25} fill={CL.navy}>AGUA</text><text x={80} y={202} textAnchor="middle" fontFamily={LABEL} fontWeight={700} fontSize={25} fill={CL.navy}>OXIGENADA</text></svg>
         </div>
-        {[[560, 470, 0.45], [130, 460, 0.55], [310, 500, 0.63]].map(([x, y, a], i) => <div key={i} style={{ position: "absolute", left: x, top: y, opacity: lin(f, T * a, T * a + 6) }}><Tick ok={false} s={120} k={lin(f, T * a, T * a + 12)} /></div>)}
+        {/* «+» y la X grande hacia el cloro */}
+        <div style={{ position: "absolute", left: 985, top: 470, translate: "-50% -50%", fontFamily: LABEL, fontWeight: 700, fontSize: 200, lineHeight: 1, color: CL.navy, opacity: lin(f, 16, 26) }}>+</div>
+        <div style={{ position: "absolute", left: 1010 - 110, top: 640 - 110, opacity: lin(f, T * 0.42, T * 0.42 + 6) }}><Tick ok={false} s={220} k={lin(f, T * 0.42, T * 0.42 + 14)} /></div>
+        {[[250, 440, 0.5], [510, 520, 0.58], [790, 390, 0.66]].map(([x, y, a], i) => <div key={i} style={{ position: "absolute", left: x - 70, top: y - 70, opacity: lin(f, T * a, T * a + 6) }}><Tick ok={false} s={140} k={lin(f, T * a, T * a + 12)} /></div>)}
         {/* cloro que se inclina */}
-        <div style={{ position: "absolute", left: 860, top: 400, rotate: `${-ang}deg`, transformOrigin: "20% 100%" }}>
-          <svg width={260} height={500} viewBox="0 0 260 500"><path d="M60 30 L140 30 L150 90 Q240 110 240 200 L240 470 Q240 490 220 490 L30 490 Q10 490 10 470 L10 200 Q10 110 60 90 Z" fill="#FFFFFF" stroke="#C9C1B2" strokeWidth={4} /><rect x={50} y={0} width={100} height={40} rx={8} fill={CL.red} /><path d="M160 130 Q230 140 220 230 L190 230 Q195 170 160 165 Z" fill="none" stroke="#C9C1B2" strokeWidth={10} /><rect x={30} y={270} width={190} height={120} rx={10} fill="#E7F0FA" /><text x={125} y={340} textAnchor="middle" fontFamily={LABEL} fontSize={34} fill={CL.ink}>CLORO</text></svg>
+        <div style={{ position: "absolute", left: 1130, top: 360, rotate: `${-ang}deg`, transformOrigin: "20% 100%", scale: "1.1" }}>
+          <svg width={260} height={500} viewBox="0 0 260 500"><path d="M60 30 L140 30 L150 90 Q240 110 240 200 L240 470 Q240 490 220 490 L30 490 Q10 490 10 470 L10 200 Q10 110 60 90 Z" fill="#FFFFFF" stroke="#C9C1B2" strokeWidth={4} /><rect x={50} y={0} width={100} height={40} rx={8} fill={CL.red} /><path d="M160 130 Q230 140 220 230 L190 230 Q195 170 160 165 Z" fill="none" stroke="#C9C1B2" strokeWidth={10} /><rect x={30} y={270} width={190} height={120} rx={10} fill="#E7F0FA" /><text x={125} y={340} textAnchor="middle" fontFamily={LABEL} fontWeight={700} fontSize={38} fill={CL.navy}>CLORO</text></svg>
         </div>
         {/* mano con guante azul y manga marino */}
         <div style={{ position: "absolute", left: handX, top: 360, rotate: "-8deg" }}>
@@ -800,8 +822,8 @@ export const TbNeverPour: React.FC<{ bed?: string }> = ({ bed }) => {
             {[0, 1, 2, 3].map((i) => <ellipse key={i} cx={-2} cy={58 + i * 48} rx={10} ry={8} fill="rgba(255,255,255,0.35)" />)}
           </svg>
         </div>
-        <Stamp text="nunca" at={Math.round(T * 0.42)} color={CL.red} x="52%" y="24%" rot={-8} size={96} />
-        <div style={{ position: "absolute", left: 960, top: 960, translate: "-50% 0", whiteSpace: "nowrap", fontFamily: HAND, fontSize: 66, color: CL.navy, opacity: lin(f, T * 0.55, T * 0.68) }}>ventana abierta · guantes puestos</div>
+        <Stamp text="nunca" at={Math.round(T * 0.42)} color={CL.red} x="58%" y="20%" rot={-8} size={110} />
+        <div style={{ position: "absolute", left: 960, top: 920, translate: "-50% 0", whiteSpace: "nowrap", fontFamily: LABEL, fontWeight: 700, fontSize: 70, letterSpacing: 2, color: CL.navy, background: "rgba(255,253,246,0.95)", padding: "4px 30px", borderRadius: 16, boxShadow: `0 10px 24px ${CL.shadow}`, opacity: lin(f, T * 0.55, T * 0.68), textTransform: "uppercase" }}>ventana abierta · guantes puestos</div>
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -817,7 +839,7 @@ export const TbWipeTimer: React.FC<{ bed?: string }> = ({ bed }) => {
   const th = -Math.PI / 2 + k * Math.PI * 2;
   const wx = cx + Math.cos(th) * rx, wy = cy + Math.sin(th) * ry;
   const drops = useMemo(() => Array.from({ length: 90 }, (_, i) => { const a = (i / 90) * Math.PI * 2 - Math.PI / 2; return { a, x: cx + Math.cos(a) * rx * (0.99 + rnd(i) * 0.03), y: cy + Math.sin(a) * ry * (0.99 + rnd(i + 3) * 0.03), r: 4 + rnd(i + 7) * 7 }; }), []);
-  const C = 2 * Math.PI * 120;
+  const C = 2 * Math.PI * 150;
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
       <Bed src={bed} seed={209} dim={0.3} />
@@ -826,17 +848,16 @@ export const TbWipeTimer: React.FC<{ bed?: string }> = ({ bed }) => {
           <ellipse cx={cx} cy={cy} rx={rx + 90} ry={ry + 70} fill="#FFFFFF" stroke="#E2DDD2" strokeWidth={6} />
           <ellipse cx={cx} cy={cy} rx={rx} ry={ry} fill={ACR} stroke="#D9D3C6" strokeWidth={10} />
           <ellipse cx={cx} cy={cy + 40} rx={rx * 0.8} ry={ry * 0.75} fill="#F4F1EA" />
-          <circle cx={cx + rx * 0.55} cy={cy + 80} r={30} fill="#C9CED4" />
-          {drops.map((d, i) => { const passed = ((d.a + Math.PI / 2 + Math.PI * 2) % (Math.PI * 2)) < k * Math.PI * 2; return passed ? null : <circle key={i} cx={d.x} cy={d.y} r={d.r} fill="rgba(140,185,225,0.75)" />; })}
+                    {drops.map((d, i) => { const passed = ((d.a + Math.PI / 2 + Math.PI * 2) % (Math.PI * 2)) < k * Math.PI * 2; return passed ? null : <circle key={i} cx={d.x} cy={d.y} r={d.r} fill="rgba(140,185,225,0.75)" />; })}
         </svg>
         {/* trapo gris de microfibra */}
         <div style={{ position: "absolute", left: wx - 120, top: wy - 70, width: 240, height: 140, borderRadius: 26, background: "linear-gradient(160deg, #A9AFB6, #7E858D)", rotate: `${(th * 180) / Math.PI + 90}deg`, boxShadow: `0 18px 30px ${CL.shadow}`, backgroundImage: "repeating-linear-gradient(45deg, rgba(255,255,255,0.08) 0 4px, transparent 4px 9px)" }} />
         {/* arco de 30 s */}
-        <div style={{ position: "absolute", left: cx - 150, top: cy - 150 }}>
-          <svg width={300} height={300} viewBox="0 0 300 300">
-            <circle cx={150} cy={150} r={120} fill="rgba(255,255,255,0.9)" stroke="#E3DCCF" strokeWidth={22} />
-            <circle cx={150} cy={150} r={120} fill="none" stroke={CL.navy} strokeWidth={22} strokeLinecap="round" strokeDasharray={C} strokeDashoffset={C * (1 - k)} transform="rotate(-90 150 150)" />
-            <text x={150} y={168} textAnchor="middle" fontFamily={SERIF} fontWeight={900} fontSize={84} fill={CL.navy}>{secs}s</text>
+        <div style={{ position: "absolute", left: cx - 190, top: cy - 190 }}>
+          <svg width={380} height={380} viewBox="0 0 380 380">
+            <circle cx={190} cy={190} r={150} fill="rgba(255,255,255,0.95)" stroke="#E3DCCF" strokeWidth={30} />
+            <circle cx={190} cy={190} r={150} fill="none" stroke={CL.navy} strokeWidth={30} strokeLinecap="round" strokeDasharray={C} strokeDashoffset={C * (1 - k)} transform="rotate(-90 190 190)" />
+            <text x={190} y={222} textAnchor="middle" fontFamily={SERIF} fontWeight={900} fontSize={100} fill={CL.navy}>{secs}s</text>
           </svg>
         </div>
         <div style={{ position: "absolute", left: 960, top: 940, translate: "-50% 0", fontFamily: HAND, fontSize: 64, color: CL.navy, whiteSpace: "nowrap", opacity: lin(f, 12, 26) }}>después de cada baño, con la tina tibia</div>
@@ -847,9 +868,25 @@ export const TbWipeTimer: React.FC<{ bed?: string }> = ({ bed }) => {
 };
 
 // ═════════════════════════════ 18 · repaso: azulejos que giran
+const TileIcon: React.FC<{ i: number }> = ({ i }) => {
+  const N = CL.navy, Y = YELD, R = CL.red;
+  const g = (c: React.ReactNode) => <svg width={130} height={130} viewBox="0 0 110 110" style={{ overflow: "visible" }}>{c}</svg>;
+  switch (i) {
+    case 0: return g(<><rect x={14} y={70} width={82} height={20} rx={5} fill="#FFFFFF" stroke={N} strokeWidth={5} /><rect x={14} y={44} width={82} height={20} rx={5} fill="#F4F1E6" stroke={N} strokeWidth={5} /><rect x={14} y={18} width={82} height={20} rx={5} fill="#E7C66B" stroke={N} strokeWidth={5} /></>);
+    case 1: return g(<><circle cx={55} cy={55} r={40} fill="#FFFFFF" stroke={N} strokeWidth={6} /><ellipse cx={55} cy={64} rx={22} ry={10} fill={Y} /></>);
+    case 2: return g(<><rect x={44} y={10} width={22} height={64} rx={11} fill="#FFFFFF" stroke={N} strokeWidth={5} /><circle cx={55} cy={82} r={19} fill={R} stroke={N} strokeWidth={5} /><rect x={51} y={34} width={8} height={44} fill={R} /><path d="M82 24 q10 -10 0 -20 M96 30 q10 -10 0 -20" fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" /></>);
+    case 3: return g(<><circle cx={55} cy={58} r={40} fill="#FFFFFF" stroke={N} strokeWidth={6} /><path d="M55 58 L55 32 M55 58 L76 70" stroke={N} strokeWidth={7} strokeLinecap="round" fill="none" /><rect x={45} y={6} width={20} height={9} rx={3} fill={N} /></>);
+    case 4: return g(<><rect x={10} y={30} width={90} height={58} rx={6} fill="#F2EEE2" stroke={N} strokeWidth={5} /><rect x={10} y={18} width={90} height={26} rx={10} fill="rgba(190,215,235,0.7)" stroke={N} strokeWidth={4} /><path d="M25 50 H85 M25 64 H85 M25 78 H70" stroke="#B9B2A3" strokeWidth={4} /></>);
+    case 5: return g(<><path d="M14 46 H96 L88 92 Q55 104 22 92 Z" fill="#FFFFFF" stroke={N} strokeWidth={5} /><ellipse cx={55} cy={46} rx={41} ry={11} fill="#F4F1E6" stroke={N} strokeWidth={5} /><path d="M70 40 L100 8" stroke={Y} strokeWidth={9} strokeLinecap="round" /></>);
+    case 6: return g(<><rect x={22} y={34} width={66} height={60} rx={10} fill="#FFFFFF" stroke={N} strokeWidth={5} /><text x={55} y={74} textAnchor="middle" fontFamily={LABEL} fontWeight={700} fontSize={22} fill={N}>POLVO</text><path d="M14 14 L96 96 M96 14 L14 96" stroke={R} strokeWidth={11} strokeLinecap="round" /></>);
+    case 7: return g(<><path d="M40 8 H70 V30 Q94 40 94 66 V96 Q94 102 88 102 H22 Q16 102 16 96 V66 Q16 40 40 30 Z" fill="#FFFFFF" stroke={N} strokeWidth={5} /><rect x={38} y={0} width={34} height={12} rx={4} fill={R} /><path d="M14 14 L96 96 M96 14 L14 96" stroke={R} strokeWidth={11} strokeLinecap="round" /></>);
+    default: return g(<><rect x={10} y={40} width={64} height={44} rx={12} fill="#A9AFB6" stroke={N} strokeWidth={5} transform="rotate(-12 42 62)" /><path d="M68 28 C78 14 90 14 100 28 M72 94 C82 80 94 80 104 94" fill="none" stroke={N} strokeWidth={5} strokeLinecap="round" /></>);
+  }
+};
 export const TbTileFlip: React.FC<{ bed?: string }> = ({ bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(8);
   const W = ["3 capas", "el algodón", "1 + 1 caliente", "30 min", "compresa 1 h", "bicarbonato", "nunca polvo", "nunca + cloro", "trapo 30 s"];
+  const span = (T * 0.78 - 20) / W.length;
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
       <Bed src={bed} seed={220} dim={0.3} />
@@ -857,14 +894,19 @@ export const TbTileFlip: React.FC<{ bed?: string }> = ({ bed }) => {
         <AbsoluteFill style={{ background: "#D8CFC1" }} />
         {W.map((w, i) => {
           const c = i % 3, r = Math.floor(i / 3);
-          const t0 = 6 + i * ((T * 0.78 - 20) / W.length);
+          const t0 = 6 + i * span;
           const k = ease(clamp01((f - t0) / 14));
           const deg = 180 * k;
           const face = deg < 90;
+          // sólo la tarjeta del momento crece (1.1); al terminar su paso vuelve a 1
+          const hot = ease(clamp01((f - t0) / 10)) * (1 - ease(clamp01((f - (t0 + span)) / 10)));
           return (
-            <div key={i} style={{ position: "absolute", left: 290 + c * 450, top: 70 + r * 320, width: 440, height: 310, transform: `perspective(1400px) rotateX(${deg}deg)` }}>
-              <div style={{ width: "100%", height: "100%", borderRadius: 8, background: face ? `radial-gradient(ellipse at ${30 + rnd(i) * 40}% 70%, ${hexA(YEL, 0.75)}, ${hexA(YELD, 0.5)} 40%, #EDE3CE 70%)` : "#FFFFFF", boxShadow: "inset 0 -8px 0 rgba(0,0,0,0.05), 0 6px 12px rgba(0,0,0,0.1)", transform: face ? "none" : "rotateX(180deg)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                {!face ? <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 58, color: CL.navy, textAlign: "center", padding: 20 }}><span style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 48, color: CL.brass, display: "block", letterSpacing: 3 }}>{i + 1}</span>{w}</div> : null}
+            <div key={i} style={{ position: "absolute", left: 200 + c * 540, top: 90 + r * 320, width: 500, height: 290, scale: String(1 + 0.1 * hot), zIndex: hot > 0.05 ? 2 : 1, rotate: `${((i % 3) - 1) * 0.8}deg`, transform: `perspective(1400px) rotateX(${deg}deg)` }}>
+              <div style={{ width: "100%", height: "100%", borderRadius: 14, background: face ? `radial-gradient(ellipse at ${30 + rnd(i) * 40}% 70%, ${hexA(YEL, 0.75)}, ${hexA(YELD, 0.5)} 40%, #EDE3CE 70%)` : "#FFFFFF", boxShadow: hot > 0.05 ? `inset 0 -8px 0 rgba(0,0,0,0.05), 0 22px 40px rgba(0,0,0,0.3)` : "inset 0 -8px 0 rgba(0,0,0,0.05), 0 6px 12px rgba(0,0,0,0.1)", border: !face && hot > 0.5 ? `6px solid ${CL.navy}` : "6px solid transparent", boxSizing: "border-box", transform: face ? "none" : "rotateX(180deg)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                {!face ? <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
+                  <TileIcon i={i} />
+                  <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 52, lineHeight: 1.05, color: CL.navy, textAlign: "center", whiteSpace: "nowrap" }}>{w}</div>
+                </div> : null}
               </div>
             </div>
           );
