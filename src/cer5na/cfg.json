@@ -1,0 +1,562 @@
+{
+ "desc": "🚪 Las 10 trampas de la corrediza + El Método del Cerrajero",
+ "replies": [],
+ "pages": {
+  "l3 13": {
+   "hl": "UN TORNILLO QUE IMPIDE QUE LA HOJA SE LEVANTE",
+   "n": 2,
+   "bar": [
+    0.12533202825808057,
+    0.0838380004420425,
+    0.7355684517255796,
+    0.02605560572460444
+   ]
+  },
+  "l3 36": {
+   "hl": "PELÍCULA DE SEGURIDAD EN LOS VIDRIOS DE LA CALLE",
+   "n": 13,
+   "bar": [
+    0.14734260708678001,
+    0.0838380004420425,
+    0.758309208489711,
+    0.02605560572460444
+   ]
+  }
+ },
+ "heroes": [
+  {
+   "k": "scroll",
+   "at": 10.1,
+   "out": 15.6,
+   "items": [
+    {
+     "t": "La calle, con llave",
+     "at": 0
+    },
+    {
+     "t": "Ventanas cerradas",
+     "at": 0
+    },
+    {
+     "t": "La corrediza",
+     "ok": false,
+     "at": 0
+    }
+   ],
+   "lab": "LO QUE REVISASTE",
+   "bg": "n_llave_calle",
+   "mode": "drop"
+  },
+  {
+   "k": "typewriter",
+   "at": 72.11,
+   "out": 76.61,
+   "lines": [
+    "TAN SIMPLE",
+    "QUE DA VERGÜENZA"
+   ],
+   "red": 1,
+   "bg": "n_cuaderno",
+   "mode": "blinds"
+  },
+  {
+   "k": "mosaic",
+   "at": 84.09,
+   "out": 90.09,
+   "imgs": [
+    "n_c_verguenza",
+    "n_c_mostrador",
+    "n_visita",
+    "n_c_taller",
+    "n_persiana",
+    "n_aprendiz",
+    "v02_mira",
+    "n_robo",
+    "n_frente",
+    "n_c_explica",
+    "n_instalador",
+    "n_canal"
+   ],
+   "lab": "VER, TOCAR, FRENAR",
+   "bg": "n_c_verguenza",
+   "mode": "split"
+  },
+  {
+   "k": "candle",
+   "at": 165.57,
+   "out": 171.57,
+   "lab": "TREINTA AÑOS",
+   "sub": "DE CERRAJERÍA DE BARRIO",
+   "bg": "n_c_taller",
+   "mode": "iris"
+  },
+  {
+   "k": "radar",
+   "at": 201.99,
+   "out": 208.49,
+   "items": [
+    {
+     "t": "LA CALLE",
+     "at": 0
+    },
+    {
+     "t": "VENTANA",
+     "at": 0
+    },
+    {
+     "t": "PATIO",
+     "at": 0
+    },
+    {
+     "t": "CORREDIZA",
+     "ok": false,
+     "at": 0
+    }
+   ],
+   "lab": "POR DÓNDE ENTRAN",
+   "bg": "n_robo",
+   "mode": "wipe"
+  },
+  {
+   "k": "blueprint",
+   "at": 267.41,
+   "out": 273.41,
+   "img": "n_juego",
+   "dims": [
+    {
+     "t": "1-2 cm",
+     "x1": 0.12,
+     "y1": 0.86,
+     "x2": 0.52,
+     "y2": 0.86
+    }
+   ],
+   "lab": "EL JUEGO QUE LA LEVANTA",
+   "bg": "n_juego",
+   "mode": "blinds"
+  },
+  {
+   "k": "searchlight",
+   "at": 322.39,
+   "out": 326.89,
+   "img": "n_muro",
+   "lab": "SE VE DESDE EL PATIO",
+   "bg": "n_muro",
+   "mode": "shutter"
+  },
+  {
+   "k": "antes",
+   "at": 381.07,
+   "out": 387.57,
+   "img": "n_desnuda",
+   "img2": "n_valor",
+   "a": "VISILLO",
+   "b": "CORTINA GRUESA",
+   "lab": "DE DÍA Y DE NOCHE",
+   "bg": "n_desnuda",
+   "mode": "split"
+  },
+  {
+   "k": "traffic",
+   "at": 438.66,
+   "out": 443.16,
+   "lights": [
+    "ENCHUFE",
+    "SOLAR",
+    "PILAS"
+   ],
+   "only": 2,
+   "bg": "n_sensores",
+   "mode": "diag"
+  },
+  {
+   "k": "puzzle",
+   "at": 488.46,
+   "out": 492.96,
+   "img": "v03_palo",
+   "lab": "EL PALO A MEDIDA",
+   "bg": "v03_palo",
+   "mode": "split"
+  },
+  {
+   "k": "loupe",
+   "at": 553.03,
+   "out": 557.53,
+   "img": "n_pinta",
+   "fx": 0.5,
+   "fy": 0.6,
+   "lab": "QUE NO SE NOTE",
+   "bg": "n_pinta",
+   "mode": "diag"
+  },
+  {
+   "k": "dominoes",
+   "at": 602.53,
+   "out": 608.03,
+   "items": [
+    {
+     "t": "LA LEVANTABA",
+     "img": "v04_rodillos",
+     "at": 0
+    },
+    {
+     "t": "GANCHO AFUERA",
+     "img": "n_hugo",
+     "at": 0
+    },
+    {
+     "t": "LE ENTRARON",
+     "img": "n_gancho_afuera",
+     "at": 0
+    }
+   ],
+   "stamp": "AÑOS AVISANDO",
+   "bad": 1,
+   "bg": "v04_rodillos",
+   "mode": "wipe"
+  },
+  {
+   "k": "neon",
+   "at": 667.91,
+   "out": 672.41,
+   "lab": "no te acostumbres",
+   "col": "#ff5a4a",
+   "bg": "n_tarjeta_pega",
+   "mode": "blinds"
+  },
+  {
+   "k": "dart",
+   "at": 731.96,
+   "out": 736.46,
+   "miss": [
+    "TORNILLO CORTO",
+    "SIN AJUSTAR"
+   ],
+   "lab": "TORNILLOS LARGOS",
+   "bg": "n_tornillos_largos",
+   "mode": "iris"
+  },
+  {
+   "k": "gears",
+   "at": 790.74,
+   "out": 796.74,
+   "items": [
+    {
+     "t": "HOJA FIJA",
+     "at": 0
+    },
+    {
+     "t": "PASADOR",
+     "at": 0
+    },
+    {
+     "t": "HOJA QUE CORRE",
+     "at": 0
+    }
+   ],
+   "lab": "NI CORRE NI SUBE",
+   "bg": "n_superpuestos",
+   "mode": "diag"
+  },
+  {
+   "k": "compass",
+   "at": 843.93,
+   "out": 848.43,
+   "opts": [
+    "EL PISO",
+    "LA CINTURA",
+    "ARRIBA",
+    "AFUERA"
+   ],
+   "win": 1,
+   "lab": "A LA ALTURA DE TU MANO",
+   "bg": "n_vecino_taladro",
+   "mode": "iris"
+  },
+  {
+   "k": "dice",
+   "at": 905.93,
+   "out": 909.93,
+   "v": 1,
+   "lab": "PARA UNA PERSONA MAYOR",
+   "bg": "n_barra_plegada",
+   "mode": "drop"
+  },
+  {
+   "k": "level",
+   "at": 920.05,
+   "out": 926.05,
+   "lab": "UNA MANO Y LISTO",
+   "sub": "LA BARRA QUE SE PLIEGA",
+   "bg": "v07_barra",
+   "mode": "wipe"
+  },
+  {
+   "k": "xray",
+   "at": 974.49,
+   "out": 978.99,
+   "img": "n_vidrio_roto",
+   "lab": "EL PUNTO DEL VIDRIO",
+   "bg": "n_vidrio_roto",
+   "mode": "blinds"
+  },
+  {
+   "k": "abacus",
+   "at": 1040.49,
+   "out": 1044.99,
+   "v": 4,
+   "u": "MILÉSIMAS DE PULGADA",
+   "sub": "EL FILM QUE AGUANTA",
+   "bg": "n_cuter",
+   "mode": "split"
+  },
+  {
+   "k": "pulse",
+   "at": 1090.73,
+   "out": 1095.23,
+   "a": "SUENA",
+   "lab": "AVISA, NO FRENA",
+   "bg": "n_alarma_piezas",
+   "mode": "shutter"
+  },
+  {
+   "k": "match",
+   "at": 1160.63,
+   "out": 1166.63,
+   "kick": "Nº 10",
+   "lab": "LOS TORNILLOS",
+   "sub": "DEL RIEL DE ARRIBA",
+   "bg": "n_pilas",
+   "mode": "iris"
+  },
+  {
+   "k": "peel",
+   "at": 1222.41,
+   "out": 1228.91,
+   "img": "n_cabeza_ancha",
+   "img2": "n_fija",
+   "a": "LO QUE PARECE",
+   "lab": "NO SUBE, NO SALE",
+   "bg": "n_cabeza_ancha",
+   "mode": "diag"
+  },
+  {
+   "k": "emboss",
+   "at": 1275.09,
+   "out": 1281.09,
+   "lab": "YA NO ES LA DÉBIL",
+   "sub": "TU CORREDIZA",
+   "bg": "v08_tornillos",
+   "mode": "wipe"
+  },
+  {
+   "k": "conveyor",
+   "at": 1328.73,
+   "out": 1334.23,
+   "items": [
+    {
+     "t": "FOCO AL CIELO",
+     "img": "n_foco_cielo",
+     "ok": false,
+     "at": 0
+    },
+    {
+     "t": "TECLA ADENTRO",
+     "img": "n_rafael_palido",
+     "ok": false,
+     "at": 0
+    },
+    {
+     "t": "EL PESTILLO",
+     "img": "n_rafael_empuja",
+     "at": 0
+    },
+    {
+     "t": "RUEDAS VIEJAS",
+     "img": "n_foco_cielo",
+     "ok": false,
+     "at": 0
+    }
+   ],
+   "lab": "LA REVISIÓN",
+   "bg": "n_foco_cielo",
+   "mode": "shutter"
+  },
+  {
+   "k": "funnel",
+   "at": 1393.84,
+   "out": 1398.84,
+   "items": [
+    {
+     "t": "CORTINA",
+     "at": 0
+    },
+    {
+     "t": "LUZ",
+     "at": 0
+    },
+    {
+     "t": "RUEDAS",
+     "at": 0
+    },
+    {
+     "t": "PALO",
+     "at": 0
+    },
+    {
+     "t": "TORNILLOS",
+     "at": 0
+    }
+   ],
+   "lab": "UNA MAÑANA",
+   "bg": "n_c_mano",
+   "mode": "wipe"
+  },
+  {
+   "k": "branches",
+   "at": 1445.43,
+   "out": 1449.93,
+   "items": [
+    {
+     "t": "HACE RUIDO",
+     "at": 0
+    },
+    {
+     "t": "SUENA LA ALARMA",
+     "at": 0
+    },
+    {
+     "t": "PRENDE LA LUZ",
+     "at": 0
+    }
+   ],
+   "lab": "EL MOSQUITERO",
+   "bg": "n_humedad",
+   "mode": "drop"
+  },
+  {
+   "k": "drawer",
+   "at": 1513.41,
+   "out": 1519.41,
+   "items": [
+    {
+     "t": "LA LLAVE",
+     "img": "n_llave_puesta",
+     "at": 0
+    },
+    {
+     "t": "LEJOS DEL VIDRIO",
+     "img": "n_mano_vidrio",
+     "at": 0
+    }
+   ],
+   "bg": "n_llave_puesta",
+   "mode": "shutter"
+  },
+  {
+   "k": "fridge",
+   "at": 1576.09,
+   "out": 1582.59,
+   "items": [
+    {
+     "t": "Cortina",
+     "at": 0
+    },
+    {
+     "t": "Pestillo",
+     "at": 0
+    },
+    {
+     "t": "Palo",
+     "at": 0
+    },
+    {
+     "t": "Pasador",
+     "at": 0
+    },
+    {
+     "t": "Luz",
+     "at": 0
+    }
+   ],
+   "lab": "LA RUTINA DE LA NOCHE",
+   "bg": "n_telefono_vecino",
+   "mode": "drop"
+  },
+  {
+   "k": "led",
+   "at": 1629.57,
+   "out": 1634.57,
+   "lab": "OJOS MANOS OÍDO",
+   "sub": "LA PRUEBA DE DON ERNESTO",
+   "bg": "n_ernesto",
+   "mode": "shutter"
+  },
+  {
+   "k": "chain",
+   "at": 1659.15,
+   "out": 1665.15,
+   "weak": 3,
+   "lab": "SI YO LA LEVANTO",
+   "sub": "LA LEVANTA CUALQUIERA",
+   "bg": "n_ernesto_palmas",
+   "mode": "split"
+  },
+  {
+   "k": "shelf",
+   "at": 1719.37,
+   "out": 1725.37,
+   "items": [
+    {
+     "t": "AVISAN",
+     "img": "n_otra_casa",
+     "at": 0
+    },
+    {
+     "t": "FRENAN",
+     "img": "n_blindada",
+     "at": 0
+    }
+   ],
+   "lab": "UNA CASA TIENE LAS DOS",
+   "bg": "n_otra_casa",
+   "mode": "drop"
+  },
+  {
+   "k": "ticket",
+   "at": 1751.59,
+   "out": 1757.59,
+   "kick": "REJA SÍ",
+   "title": "QUE ABRA",
+   "sub": "DESDE ADENTRO, SIN LLAVE",
+   "v": "✓",
+   "u": "RÁPIDO",
+   "bg": "n_reja",
+   "mode": "split"
+  },
+  {
+   "k": "podium",
+   "at": 1823.19,
+   "out": 1829.19,
+   "items": [
+    {
+     "t": "EL DIEZ",
+     "img": "n_candado",
+     "at": 0
+    },
+    {
+     "t": "EL CUATRO",
+     "img": "n_tranquila",
+     "at": 0
+    },
+    {
+     "t": "EL PALO",
+     "img": "v10_cierre",
+     "at": 0
+    }
+   ],
+   "bg": "n_candado",
+   "mode": "drop"
+  }
+ ]
+}
