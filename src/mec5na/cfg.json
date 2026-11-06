@@ -1,0 +1,539 @@
+{
+ "desc": "🔧 Los 10 errores de taller + El Manual del Mecánico",
+ "replies": [],
+ "pages": {},
+ "heroes": [
+  {
+   "k": "dominoes",
+   "at": 10.74,
+   "out": 15.74,
+   "items": [
+    {
+     "t": "LA SACAS",
+     "img": "n_bujias_caja",
+     "at": 0
+    },
+    {
+     "t": "LA MATRACA",
+     "img": "n_matraca",
+     "at": 0
+    },
+    {
+     "t": "ROSCA ROTA",
+     "img": "v01_bujia_crac",
+     "at": 0
+    }
+   ],
+   "stamp": "UNA TARDE PERDIDA",
+   "bad": 1,
+   "bg": "n_bujias_caja",
+   "mode": "wipe"
+  },
+  {
+   "k": "scroll",
+   "at": 75.77,
+   "out": 81.27,
+   "items": [
+    {
+     "t": "La rosca",
+     "at": 0
+    },
+    {
+     "t": "La dinamométrica",
+     "at": 0
+    },
+    {
+     "t": "La tapa del radiador",
+     "at": 0
+    },
+    {
+     "t": "El líquido",
+     "at": 0
+    },
+    {
+     "t": "La correa",
+     "ok": false,
+     "at": 0
+    }
+   ],
+   "lab": "DE CHICO A GRANDE",
+   "bg": "n_confiado",
+   "mode": "drop"
+  },
+  {
+   "k": "candle",
+   "at": 137.89,
+   "out": 143.89,
+   "lab": "UN TALLER CHICO",
+   "sub": "DE BARRIO, CON UN TUBO QUE ZUMBA",
+   "bg": "n_capo",
+   "mode": "iris"
+  },
+  {
+   "k": "xray",
+   "at": 192.95,
+   "out": 198.95,
+   "img": "n_tapa_aluminio",
+   "lab": "ALUMINIO BLANDO",
+   "bg": "n_tapa_aluminio",
+   "mode": "blinds"
+  },
+  {
+   "k": "match",
+   "at": 254.91,
+   "out": 260.91,
+   "kick": "OJO",
+   "lab": "CON LA MANO",
+   "sub": "NUNCA CON LA MATRACA",
+   "bg": "n_inserto",
+   "mode": "iris"
+  },
+  {
+   "k": "abacus",
+   "at": 323.95,
+   "out": 329.45,
+   "v": 12,
+   "u": "CADA TORNILLO, SU NÚMERO",
+   "sub": "NO SE ADIVINA CON EL BRAZO",
+   "bg": "n_rajada",
+   "mode": "blinds"
+  },
+  {
+   "k": "searchlight",
+   "at": 376.53,
+   "out": 381.03,
+   "img": "n_repuestos",
+   "lab": "LA PISTOLA DE LA VULCANIZADORA",
+   "bg": "n_repuestos",
+   "mode": "shutter"
+  },
+  {
+   "k": "radar",
+   "at": 425.93,
+   "out": 430.93,
+   "items": [
+    {
+     "t": "1",
+     "at": 0
+    },
+    {
+     "t": "3",
+     "at": 0
+    },
+    {
+     "t": "5",
+     "at": 0
+    },
+    {
+     "t": "2",
+     "at": 0
+    },
+    {
+     "t": "4",
+     "at": 0
+    }
+   ],
+   "lab": "EN ESTRELLA, DOS PASADAS",
+   "bg": "v05_estrella",
+   "mode": "iris"
+  },
+  {
+   "k": "chain",
+   "at": 490.44,
+   "out": 496.44,
+   "weak": 3,
+   "lab": "UN TORNILLO REDONDO",
+   "sub": "UNA TARDE, TRES DÍAS",
+   "bg": "n_redondeado",
+   "mode": "split"
+  },
+  {
+   "k": "pulse",
+   "at": 546.54,
+   "out": 551.04,
+   "a": "QUIETO",
+   "flat": 1,
+   "lab": "DIEZ MINUTOS Y UN GOLPECITO",
+   "bg": "n_aflojador",
+   "mode": "shutter"
+  },
+  {
+   "k": "loupe",
+   "at": 609.8,
+   "out": 615.8,
+   "img": "n_palancas",
+   "fx": 0.55,
+   "fy": 0.55,
+   "lab": "AL LADO DEL CLIP",
+   "bg": "n_palancas",
+   "mode": "diag"
+  },
+  {
+   "k": "traffic",
+   "at": 674.8,
+   "out": 680.8,
+   "lights": [
+    "CALIENTE",
+    "CUARTO DE VUELTA",
+    "FRÍO"
+   ],
+   "only": 2,
+   "bg": "n_trapo",
+   "mode": "iris"
+  },
+  {
+   "k": "peel",
+   "at": 695.56,
+   "out": 700.06,
+   "img": "n_barro",
+   "img2": "n_radiador_tapado",
+   "a": "DOS REFRIGERANTES",
+   "lab": "UNA GELATINA QUE TAPA",
+   "bad": 1,
+   "bg": "n_barro",
+   "mode": "diag"
+  },
+  {
+   "k": "mosaic",
+   "at": 755.88,
+   "out": 761.88,
+   "imgs": [
+    "v06_tapas",
+    "n_tapas",
+    "n_frenos_liquido",
+    "n_gomas",
+    "n_bomba",
+    "n_tapa_simbolo",
+    "n_junta",
+    "n_silicona_bano",
+    "n_sensor",
+    "n_luz_falla"
+   ],
+   "lab": "CINCO TAPAS PARECIDAS",
+   "bg": "v06_tapas",
+   "mode": "split"
+  },
+  {
+   "k": "emboss",
+   "at": 789.62,
+   "out": 795.62,
+   "lab": "SÓLO LÍQUIDO DE FRENOS",
+   "bad": 1,
+   "bg": "n_frenos_liquido",
+   "mode": "wipe"
+  },
+  {
+   "k": "funnel",
+   "at": 857.6,
+   "out": 864.1,
+   "items": [
+    {
+     "t": "SILICONA",
+     "at": 0
+    },
+    {
+     "t": "GASES",
+     "at": 0
+    },
+    {
+     "t": "COMBUSTIÓN",
+     "at": 0
+    }
+   ],
+   "lab": "SENSOR ENVENENADO",
+   "bg": "n_silicona_bano",
+   "mode": "blinds"
+  },
+  {
+   "k": "weights",
+   "at": 922.64,
+   "out": 928.64,
+   "items": [
+    {
+     "t": "MIL KILOS",
+     "at": 0
+    },
+    {
+     "t": "UN GATO",
+     "at": 0
+    },
+    {
+     "t": "TU CUERPO",
+     "at": 0
+    }
+   ],
+   "lab": "NUNCA SOLO EL GATO",
+   "bg": "n_acera",
+   "mode": "shutter"
+  },
+  {
+   "k": "level",
+   "at": 978.28,
+   "out": 984.28,
+   "lab": "CABALLETES Y PISO FIRME",
+   "sub": "EL GATO SÓLO DE RESPALDO",
+   "bg": "v07_caballete",
+   "mode": "wipe"
+  },
+  {
+   "k": "blueprint",
+   "at": 1042.04,
+   "out": 1048.04,
+   "img": "n_sin_marcas",
+   "dims": [
+    {
+     "t": "marca",
+     "x1": 0.3,
+     "y1": 0.2,
+     "x2": 0.3,
+     "y2": 0.7
+    }
+   ],
+   "lab": "MARCAS ANTES DE SACAR",
+   "bg": "n_sin_marcas",
+   "mode": "blinds"
+  },
+  {
+   "k": "dice",
+   "at": 1105.58,
+   "out": 1111.08,
+   "v": 1,
+   "lab": "UN SEGUNDO, MEDIA VUELTA",
+   "bg": "n_media_vuelta",
+   "mode": "drop"
+  },
+  {
+   "k": "drawer",
+   "at": 1158.86,
+   "out": 1164.86,
+   "items": [
+    {
+     "t": "DINAMOMÉTRICA",
+     "img": "n_c_consejo",
+     "at": 0
+    },
+    {
+     "t": "LLAVES DE SEIS",
+     "img": "n_linterna",
+     "at": 0
+    },
+    {
+     "t": "CABALLETES",
+     "img": "n_herramientas",
+     "at": 0
+    }
+   ],
+   "bg": "n_c_consejo",
+   "mode": "shutter"
+  },
+  {
+   "k": "fridge",
+   "at": 1210.68,
+   "out": 1215.68,
+   "items": [
+    {
+     "t": "Piso plano",
+     "at": 0
+    },
+    {
+     "t": "Freno de mano",
+     "at": 0
+    },
+    {
+     "t": "Motor frío",
+     "at": 0
+    },
+    {
+     "t": "El manual",
+     "at": 0
+    },
+    {
+     "t": "Foto antes",
+     "at": 0
+    }
+   ],
+   "lab": "ANTES DE ABRIR EL CAPÓ",
+   "bg": "n_manual_guantera",
+   "mode": "drop"
+  },
+  {
+   "k": "neon",
+   "at": 1279.16,
+   "out": 1285.16,
+   "lab": "tómese un café",
+   "col": "#ffb257",
+   "sub": "EL MOTOR SE ENFRÍA",
+   "bg": "n_cafe",
+   "mode": "blinds"
+  },
+  {
+   "k": "compass",
+   "at": 1333.4,
+   "out": 1337.9,
+   "opts": [
+    "VERDE",
+    "ROSA",
+    "NARANJA",
+    "MARRÓN"
+   ],
+   "win": 3,
+   "lab": "EL COLOR DICE QUÉ ES",
+   "bg": "n_mancha_verde",
+   "mode": "iris"
+  },
+  {
+   "k": "antes",
+   "at": 1390.58,
+   "out": 1397.08,
+   "img": "n_manana",
+   "img2": "n_carton_manchas",
+   "a": "LIMPIO",
+   "b": "CON MANCHA",
+   "lab": "EL CARTÓN DE LA MAÑANA",
+   "bg": "n_manana",
+   "mode": "split"
+  },
+  {
+   "k": "typewriter",
+   "at": 1463.11,
+   "out": 1469.11,
+   "lines": [
+    "DIECINUEVE AÑOS",
+    "MI PRIMER ERROR"
+   ],
+   "red": 1,
+   "bg": "n_c_joven",
+   "mode": "blinds"
+  },
+  {
+   "k": "vault",
+   "at": 1512.61,
+   "out": 1518.61,
+   "img": "n_aurelio_llave",
+   "lab": "ESTA LLAVE ES TUYA",
+   "bg": "n_aurelio_llave",
+   "mode": "iris"
+  },
+  {
+   "k": "branches",
+   "at": 1579.75,
+   "out": 1584.25,
+   "items": [
+    {
+     "t": "BUJÍAS",
+     "at": 0
+    },
+    {
+     "t": "FILTROS",
+     "at": 0
+    },
+    {
+     "t": "RUEDAS EN CRUZ",
+     "at": 0
+    },
+    {
+     "t": "TAPIZADO",
+     "at": 0
+    }
+   ],
+   "lab": "LO QUE SÍ",
+   "bg": "n_si_puedes",
+   "mode": "drop"
+  },
+  {
+   "k": "podium",
+   "at": 1640.44,
+   "out": 1646.44,
+   "items": [
+    {
+     "t": "LA CORREA",
+     "img": "n_neumaticos",
+     "at": 0
+    },
+    {
+     "t": "EL RADIADOR",
+     "img": "n_motor_usado",
+     "at": 0
+    },
+    {
+     "t": "LOS FRENOS",
+     "img": "n_c_honesto",
+     "at": 0
+    }
+   ],
+   "bg": "n_neumaticos",
+   "mode": "shutter"
+  },
+  {
+   "k": "ticket",
+   "at": 1692.84,
+   "out": 1698.84,
+   "kick": "HONESTO",
+   "title": "TE DICE QUÉ SÍ",
+   "sub": "Y QUÉ NO PUEDES HACER",
+   "v": "✓",
+   "u": "DE VERDAD",
+   "bg": "n_c_honesto",
+   "mode": "split"
+  },
+  {
+   "k": "dart",
+   "at": 1745.86,
+   "out": 1750.36,
+   "miss": [
+    "SILICONA",
+    "TEFLÓN"
+   ],
+   "lab": "LA ARANDELA SELLA",
+   "bg": "n_teflon",
+   "mode": "iris"
+  },
+  {
+   "k": "shelf",
+   "at": 1808.12,
+   "out": 1814.12,
+   "items": [
+    {
+     "t": "BANDEJA CON IMÁN",
+     "img": "n_iman",
+     "at": 0
+    },
+    {
+     "t": "TRAPOS LIMPIOS",
+     "img": "n_trapos",
+     "at": 0
+    },
+    {
+     "t": "AGUA PARA MÍ",
+     "img": "n_agua",
+     "at": 0
+    }
+   ],
+   "lab": "MI BANCO",
+   "bg": "n_iman",
+   "mode": "drop"
+  },
+  {
+   "k": "gears",
+   "at": 1879.93,
+   "out": 1884.43,
+   "items": [
+    {
+     "t": "MARCAS",
+     "at": 0
+    },
+    {
+     "t": "EJES QUIETOS",
+     "at": 0
+    },
+    {
+     "t": "DOS VUELTAS",
+     "at": 0
+    }
+   ],
+   "lab": "RECIÉN AHÍ ARRANCA",
+   "bg": "n_agua",
+   "mode": "diag"
+  }
+ ]
+}
