@@ -28,11 +28,11 @@ export const SHOTS = [
   // 765,4 · preguntas
   B(61, "las preguntas que más me dejan", "b_phone", `Weathered hands holding a phone over a wooden workbench, the screen glowing, the screen content blurred.`),
   C(62, "¿Sirve para los hervidores de vidrio?", "HvGlassKettle"),
-  B(63, "¿Y para la tetera de la estufa?", "b_stovetop", `A white enamel stovetop kettle on a gas burner, the lid off, a little steam.`, { anim: "steam rises from the open kettle" }),
+  ST(63, "¿Y para la tetera de la estufa?", "b_stovetop", "stovetop kettle gas", `A white enamel stovetop kettle on a gas burner, the lid off, a little steam.`, { anim: "steam rises from the open kettle" }),
   B(63, "sin tapa, que hierva una vez", "b_stovelid", `The lid of a stovetop kettle set aside on the counter next to the stove.`),
-  B(64, "¿Y la cafetera?", "b_coffeemaker", `A drip coffee maker with a glass carafe on a kitchen counter, no brand visible.`),
+  ST(64, "¿Y la cafetera?", "b_coffeemaker", "drip coffee maker", `A drip coffee maker with a glass carafe on a kitchen counter, no brand visible.`),
   B(65, "¿Las piedritas hacen mal?", "b_flakesspoon", `A teaspoon holding a few white limescale flakes over a cup of tea, close view.`),
-  B(65, "Son los mismos minerales que tiene el agua que toma", "b_glasswater", `A clear glass of tap water on a kitchen table in daylight.`),
+  ST(65, "Son los mismos minerales que tiene el agua que toma", "b_glasswater", "glass of water table", `A clear glass of tap water on a kitchen table in daylight.`),
   B(65, "el hervidor gasta más y dura menos", "b_oldnew", `An old crusted electric kettle and a shiny clean one side by side on a kitchen counter.`),
   // 809 · repaso
   B(66, "Repaso, para que se lo lleve", "b_notepad", `A small notepad and a pencil next to ${KET} and a citric acid sachet on a kitchen table.`),
@@ -44,5 +44,5 @@ export const SHOTS = [
   B(69, "¿cuánto aro le dejó el vaso?", "b_glassq", `A dry drinking glass with a white ring at the bottom on a sunny windowsill, close view.`),
   B(69, "Leo todos los comentarios", "b_glasses", `A pair of reading glasses and a phone on a wooden bench in a hotel staff room.`),
   B(70, "Treinta años cuidando un hotel", "b_keys", `A big ring of old brass hotel master keys hanging on a hook in a maintenance workshop.`),
-  B(70, "Nos vemos en el próximo", "b_morning", `A steaming white mug of tea next to a shiny stainless steel kettle on a home kitchen counter in soft morning light.`, { anim: "steam rises from the mug" }),
+  ST(70, "Nos vemos en el próximo", "b_morning", "cup of tea morning", `A steaming white mug of tea next to a shiny stainless steel kettle on a home kitchen counter in soft morning light.`, { anim: "steam rises from the mug" }),
 ];

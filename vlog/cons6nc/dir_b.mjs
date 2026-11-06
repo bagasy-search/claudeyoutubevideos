@@ -20,11 +20,11 @@ export const SHOTS = [
   B(29, "Se juntan en el caño y lo tapan", "b_drain", `Close view of a kitchen sink drain strainer with white mineral bits caught in it.`),
   B(29, "Échelos a la basura", "b_bin", `A paper towel with white limescale chunks being dropped into a kitchen trash bin.`, { anim: "the paper towel drops into the bin" }),
   // 410,8 · el enjuague
-  B(30, "el paso que no se saltea", "b_cleanwater", `A clear glass jug of clean water ready next to ${KET} on a steel counter in ${SERV}.`),
+  ST(30, "el paso que no se saltea", "b_cleanwater", "glass jug water", `A clear glass jug of clean water ready next to ${KET} on a steel counter in ${SERV}.`),
   V(31, "Llene el hervidor con agua limpia", "c04"),
   C(31, "Otra vez. Y otra vez", "HvThreeBoils"),
   B(32, "el ácido se queda en las paredes, en la tapa, en el filtro", "b_lid", `The underside of the black lid of an electric kettle and its small mesh spout filter, wet, close view.`),
-  B(32, "el primer té le sabe a limón", "b_lemontea", `A white cup of tea with a thin slice of lemon floating in it on a kitchen table.`),
+  ST(32, "el primer té le sabe a limón", "b_lemontea", "tea with lemon", `A white cup of tea with a thin slice of lemon floating in it on a kitchen table.`),
   V(32, "Esa agua es para la pileta", "c09"),
   // 442 · el filtrito
   B(33, "Y el filtrito", "b_spoutfilter", `Extreme close view of the small plastic-framed mesh filter inside the spout of a stainless steel electric kettle, white crust on the mesh.`),
@@ -37,7 +37,7 @@ export const SHOTS = [
   B(35, "y el libro lo recupera", "b_newbox", `A new electric kettle in its cardboard box on a store shelf, no brand visible, a price tag with no readable numbers.`),
   C(35, "El link está en la primera línea", "ClQRCard", { qr: I + "qr.png", cover: I + "book_cover.png", head: "PÁGINA 31 · LA COCINA", text: "escanee con la cámara" }),
   // 496 · la tabla de cada cuánto
-  B(36, "Cada cuánto lo tiene que hacer", "b_calendarwall", `A paper wall calendar hanging next to a kitchen sink, a pen on a string beside it.`),
+  ST(36, "Cada cuánto lo tiene que hacer", "b_calendarwall", "wall calendar", `A paper wall calendar hanging next to a kitchen sink, a pen on a string beside it.`),
   C(37, "Si su agua es muy dura", "HvCalendar"),
   B(37, "la piedra no llega a agarrarse", "b_thinfilm", `The inside bottom of a stainless steel kettle with only a very faint dusting of white, almost clean.`),
   B(39, "Y si es blanda", "b_glasssoft", `A dry, perfectly clear drinking glass on a windowsill, nothing left at the bottom.`),
@@ -50,15 +50,15 @@ export const SHOTS = [
   // 557,4 · por fuera
   B(42, "el hervidor por fuera", "b_outside", `Close view of dried white water spots on the outside of a stainless steel electric kettle around its spout and lid.`),
   B(43, "moje un paño en un poquito de la misma mezcla", "b_cloth", `A folded white cloth being wrung out over a small bowl of clear liquid on a kitchen counter.`, { anim: "the cloth is wrung, drops fall" }),
-  B(43, "Páselo por afuera, sin acercarse a la base", "b_wipe", `A hand wiping the outside of ${KET} with a damp folded cloth, the power base pushed aside and dry, the cord unplugged.`, { anim: "the cloth wipes along the kettle" }),
+  ST(43, "Páselo por afuera, sin acercarse a la base", "b_wipe", "wiping kitchen counter cloth", `A hand wiping the outside of ${KET} with a damp folded cloth, the power base pushed aside and dry, the cord unplugged.`, { anim: "the cloth wipes along the kettle" }),
   C(44, "En el hotel, el hervidor era lo primero", "HvGrainWipe"),
-  B(43, "le queda como de vidriera", "b_showroom", `A spotless brushed stainless steel kettle gleaming on a kitchen counter, reflections of the window on its body.`),
+  ST(43, "le queda como de vidriera", "b_showroom", "stainless steel kettle", `A spotless brushed stainless steel kettle gleaming on a kitchen counter, reflections of the window on its body.`),
   // 587,8 · el huésped tocaba
   B(44, "parecía sucio aunque estuviera limpio", "b_spots", `A small hotel room kettle with white water spots on its steel, on a tray with cups.`),
   B(44, "las camareras le pasaban el paño seco", "b_maid", `A hotel housekeeper in a light-blue uniform polishing a small electric kettle with a dry cloth in a guest room.`, { anim: "the cloth polishes the kettle" }),
   // 602,7 · las alternativas
   C(45, "Hay dos alternativas", "HvAltScale"),
-  B(46, "El jugo de dos limones, colado", "b_lemons", `Two lemons squeezed through a small strainer into a glass jug on a kitchen counter.`, { anim: "the lemon is squeezed, juice drips" }),
+  ST(46, "El jugo de dos limones, colado", "b_lemons", "squeezing lemon", `Two lemons squeezed through a small strainer into a glass jug on a kitchen counter.`, { anim: "the lemon is squeezed, juice drips" }),
   B(46, "deja un poco de olor si no enjuaga bien", "b_smell", `A cup of tea next to two squeezed lemon halves on a kitchen table.`),
   B(47, "O vinagre blanco, mitad vinagre y mitad agua", "b_vinhalf", `A clear jug of white vinegar with a plain blank label and a glass of water next to an open stainless steel kettle.`),
   C(48, "Y lo que nunca", "HvAltScale", { never: true }),

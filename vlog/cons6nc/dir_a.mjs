@@ -20,8 +20,8 @@ export const MANAGER = "a hotel manager in his forties with neat short hair, a d
 export const I = "img/cons6nc/";
 export const SHOTS = [
   // ── 0:00 · las siete de la mañana (avatar 0-3,4)
-  B(0, "Usted se sirve el primer té del día", "b_pour", `Hot water poured from ${KET} into ${CUP} with a tea bag, steam rising, on ${HOME}, morning light.`, { anim: "hot water pours into the mug, steam rises" }),
-  B(0, "o el primer café", "b_coffee", `A spoon of instant coffee being stirred into a white mug of hot water on a kitchen counter, morning window light.`, { anim: "the spoon stirs the coffee" }),
+  ST(0, "Usted se sirve el primer té del día", "b_pour", "pouring hot water tea", `Hot water poured from ${KET} into ${CUP} with a tea bag, steam rising, on ${HOME}, morning light.`, { anim: "hot water pours into the mug, steam rises" }),
+  ST(0, "o el primer café", "b_coffee", "stirring coffee mug", `A spoon of instant coffee being stirred into a white mug of hot water on a kitchen counter, morning window light.`, { anim: "the spoon stirs the coffee" }),
   B(0, "se sienta, mira la taza", "b_table", `${CUP} on a small kitchen table next to a folded newspaper and reading glasses, morning light from a window.`),
   V(0, "y ahí están", "c01"),
   C(0, "Unas escamitas blancas, girando en el agua", "HvSwirlCup"),
@@ -33,17 +33,17 @@ export const SHOTS = [
   B(1, "pegadas al fondo, cada semana más", "b_stuck", `Extreme close view of hard white limescale crust stuck to the inside steel floor of a kettle, water droplets on it.`),
   B(1, "cada semana más", "b_weekly", `A kitchen wall calendar next to ${KET} on a counter, a few weeks crossed off.`),
   // 25 · promesa
-  B(2, "Hoy se las saco", "b_kettlewin", `${KET} on ${HOME}, morning light, a white mug beside it.`),
+  ST(2, "Hoy se las saco", "b_kettlewin", "electric kettle kitchen morning", `${KET} on ${HOME}, morning light, a white mug beside it.`),
   B(2, "Con un solo ingrediente", "b_onesachet", `${ACID} alone on a wooden kitchen counter next to a tablespoon.`),
   B(2, "que cuesta menos que un café", "b_coins", `A few coins and ${ACID} next to a paper coffee cup on a kitchen counter.`),
   B(2, "y sin frotar", "b_nobrush", `A bottle brush and a steel wool pad left unused in a small basket beside a kitchen sink.`),
   C(2, "Mire. Así estaba este fondo", "HvBeforeAfter"),
   // 34,6 · treinta años
   ST(3, "Treinta años fui conserje", "s_hotel", "hotel exterior", `The front of an old city hotel with a canopy over the entrance.`),
-  B(3, "habitaciones", "b_corridor", `A long carpeted hotel corridor with numbered room doors and a housekeeping cart, warm light.`),
-  B(3, "y en cada una, un hervidor eléctrico para el té", "b_roomtray", `A hotel room tea tray on a dresser: a small stainless steel electric kettle, two white cups, tea bags in a little box.`),
+  ST(3, "habitaciones", "b_corridor", "hotel corridor", `A long carpeted hotel corridor with numbered room doors and a housekeeping cart, warm light.`),
+  ST(3, "y en cada una, un hervidor eléctrico para el té", "b_roomtray", "hotel room tea tray", `A hotel room tea tray on a dresser: a small stainless steel electric kettle, two white cups, tea bags in a little box.`),
   B(3, "un hervidor eléctrico para el té", "b_kettletray", `A small stainless steel electric kettle beside two white cups and tea bags on a hotel room dresser, close view.`),
-  B(3, "para el té", "b_teapour", `Hot water poured from a small stainless steel electric kettle into a white cup with a tea bag on a hotel room dresser.`, { anim: "the water pours into the cup" }),
+  ST(3, "para el té", "b_teapour", "kettle pouring water cup", `Hot water poured from a small stainless steel electric kettle into a white cup with a tea bag on a hotel room dresser.`, { anim: "the water pours into the cup" }),
   C(3, "Trescientos hervidores", "HvKettleWall"),
   B(3, "Y le aseguro", "b_ramirokettle", `${RAMIRO} holding up an old electric kettle with white crust in a maintenance workshop.`),
   B(3, "son la razón número uno", "b_trash", `An old stainless steel electric kettle with white crust around its spout dropped in a kitchen trash bin, close view.`),
@@ -51,8 +51,8 @@ export const SHOTS = [
   // 51,4 · los tres anzuelos
   B(4, "Qué son de verdad esas piedritas", "b_pebbles", `A small pile of white limescale pebbles and flakes in the palm of a blue nitrile glove, close view.`),
   B(4, "esas piedritas", "b_pebblesmacro", `Extreme close view of white limescale pebbles at the bottom of an open stainless steel kettle.`),
-  B(4, "por qué le hacen gastar más luz", "b_meter", `An old electricity meter with a spinning disc on a wall next to a kitchen door.`, { anim: "the meter disc spins" }),
-  B(4, "La prueba del vaso", "b_glasswin", `A clear drinking glass with a little water in it on a sunny windowsill.`),
+  ST(4, "por qué le hacen gastar más luz", "b_meter", "electricity meter", `An old electricity meter with a spinning disc on a wall next to a kitchen door.`, { anim: "the meter disc spins" }),
+  ST(4, "La prueba del vaso", "b_glasswin", "glass of water window", `A clear drinking glass with a little water in it on a sunny windowsill.`),
   B(4, "vaso que le dice", "b_glasshand", `A hand holding a clear glass of tap water up to the window light in a kitchen.`),
   B(4, "Y el paso número tres", "b_step3tease", `${ACID} and a tablespoon on a steel counter next to an open stainless steel kettle, close view.`),
   B(4, "el único ingrediente", "b_crystals", `Extreme close view of white citric acid crystals in a tablespoon, sparkling in window light.`),
@@ -63,7 +63,7 @@ export const SHOTS = [
   // 83,9 · qué son
   B(6, "No son óxido", "b_notrust", `A white limescale flake next to a small orange rust flake on a white saucer, close view, for comparison.`),
   B(6, "Son piedra", "b_stone", `A single hard white piece of limescale held between gloved fingertips against the light, close view.`),
-  B(7, "El agua de la llave trae piedra disuelta", "b_tapglass", `Tap water running into a clear glass in a kitchen sink, sunlight through the water.`, { anim: "water fills the glass" }),
+  ST(7, "El agua de la llave trae piedra disuelta", "b_tapglass", "tap water glass", `Tap water running into a clear glass in a kitchen sink, sunlight through the water.`, { anim: "water fills the glass" }),
   B(7, "Calcio y magnesio", "b_minerals", `Two small heaps of white mineral powder on a dark slate board in a kitchen, one fine and one coarse.`),
   B(7, "Se pega al fondo, a la resistencia", "b_element", `Inside an open stainless steel kettle: the flat heating plate on its floor covered in a white mineral crust, close view.`),
   C(8, "Como los anillos de un árbol", "HvTreeRings"),
@@ -72,11 +72,11 @@ export const SHOTS = [
   B(9, "Y acá viene lo que nadie le dice", "b_kettleside", `${KET} on a steel counter in ${SERV}, side view, a little steam from the spout.`),
   C(9, "Esa piedra es un aislante", "HvBlanket"),
   B(9, "los hervidores con sarro se queman antes", "b_burnt", `An old electric kettle base with a slightly scorched black mark on the inside floor of the kettle, close view.`),
-  B(10, "Y por eso también el té le sabe raro", "b_sip", `An older man's weathered hand lifting a white mug of tea at a kitchen table, the face not visible.`, { anim: "the hand lifts the mug slowly" }),
+  ST(10, "Y por eso también el té le sabe raro", "b_sip", "elderly hand tea cup", `An older man's weathered hand lifting a white mug of tea at a kitchen table, the face not visible.`, { anim: "the hand lifts the mug slowly" }),
   B(10, "Medio a tierra, medio a tiza", "b_chalk", `A stick of white chalk and a little garden soil next to a cup of tea on a wooden table, close view.`),
   // 150,6 · el huésped de la 207
   B(11, "Fue en dos mil tres", "b_door207", `A hotel room door with a brass number plaque reading 207 in a carpeted corridor, warm light.`),
-  B(11, "Un huésped bajó a la recepción furioso", "b_lobby", `A man in a bathrobe holding a white teacup at an old hotel reception desk, seen from behind, a clerk across the desk.`),
+  ST(11, "Un huésped bajó a la recepción furioso", "b_lobby", "hotel lobby", `A man in a bathrobe holding a white teacup at an old hotel reception desk, seen from behind, a clerk across the desk.`),
   B(11, "diciendo que el agua del hotel tenía vidrio", "b_glassbits", `Sharp-looking white flakes in the bottom of an empty white teacup, close view under a lamp.`),
   C(12, "El gerente, el de la libreta", "ClNotebook", { title: "Hab. 207 · 2003", rows: [{ k: "Queja", v: "«vidrio»" }, { k: "Causa", v: "piedra" }, { k: "Orden", v: "cambiar 300" }] }),
   B(12, "miré la taza, miré el hervidor", "b_inspect", `A gloved hand holding a small hotel room kettle with its lid open toward the light, white crust inside, in a hotel room.`),
@@ -92,13 +92,13 @@ export const SHOTS = [
   B(16, "que se siente con la uña", "b_nail", `A fingernail scratching a white chalky ring inside the bottom of a dry drinking glass, extreme close view.`),
   B(16, "Si queda una marquita finita", "b_ringthin", `Close view of the bottom of a dry clear drinking glass with only a faint thin white line.`),
   // 229,6 · las pistas
-  B(17, "si los vasos salen opacos del lavaplatos", "b_cloudy", `Cloudy, milky drinking glasses on the open rack of a dishwasher.`),
+  ST(17, "si los vasos salen opacos del lavaplatos", "b_cloudy", "dishwasher glasses", `Cloudy, milky drinking glasses on the open rack of a dishwasher.`),
   B(17, "No es que usted no lo cuide", "b_careful", `A tidy home kitchen counter with ${KET} wiped clean on the outside, a folded dish towel beside it.`),
   // 245,3 · el ingrediente
   B(18, "El paso número tres", "b_step3", `${ACID} placed in the center of a steel counter in ${SERV}, overhead light.`),
   C(22, "por cada medio litro de agua", "HvSachet"),
   ST(19, "en la parte de repostería", "s_baking", "baking supplies aisle", `A supermarket shelf of baking supplies.`),
-  B(19, "Es lo mismo que tiene el limón", "b_lemon", `A lemon cut in half next to a small heap of white citric acid crystals on a wooden board, close view.`),
+  ST(19, "Es lo mismo que tiene el limón", "b_lemon", "lemon cut half", `A lemon cut in half next to a small heap of white citric acid crystals on a wooden board, close view.`),
   B(20, "disuelve la piedra igual que el vinagre", "b_vinegar", `A clear jug of white vinegar with a plain blank label beside ${ACID} on a kitchen counter.`),
   B(20, "es suave con el metal y con el plástico", "b_plastic", `A white plastic electric kettle and a stainless steel electric kettle side by side on a kitchen counter.`),
   B(20, "En la cocina del hotel no se usaba otra cosa", "b_shelf", `A steel shelf in ${SERV} with several paper sachets of citric acid stacked in a plastic tub with a plain blank label.`),
@@ -113,9 +113,9 @@ export const SHOTS = [
   B(23, "Nunca pase la línea de máximo", "b_maxline", `Extreme close view of the MAX line on the water window of a stainless steel kettle.`),
   // 332,5 · hervir
   B(24, "tape, enchufe, y hágalo hervir", "b_plugin", `A hand closing the black lid of ${KET} and pressing its switch, the small light on the base turning on, kitchen counter.`),
-  B(24, "Cuando se apaga solo", "b_switch", `Close view of the on-off switch of an electric kettle clicking off, a little steam above.`),
+  ST(24, "Cuando se apaga solo", "b_switch", "electric kettle switch", `Close view of the on-off switch of an electric kettle clicking off, a little steam above.`),
   B(24, "veinte minutos", "b_timer", `A white kitchen timer set to twenty minutes next to ${KET} on a counter.`),
   B(25, "Me preguntan mucho cuánto tiempo hay que hervirlo", "b_comments", `Weathered hands holding a phone over a kitchen table, the screen glowing, the screen content blurred.`),
-  B(25, "Un hervor, y que repose", "b_rest", `${KET} sitting quietly on its base after boiling, a last wisp of steam from the spout, kitchen window light.`, { anim: "a last wisp of steam rises" }),
+  ST(25, "Un hervor, y que repose", "b_rest", "electric kettle steam", `${KET} sitting quietly on its base after boiling, a last wisp of steam from the spout, kitchen window light.`, { anim: "a last wisp of steam rises" }),
   B(25, "sólo gasta luz", "b_bill", `An electricity bill envelope and a pair of reading glasses on a kitchen table next to a kettle.`),
 ];
