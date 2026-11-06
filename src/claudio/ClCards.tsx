@@ -83,9 +83,9 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
   return (
     <AbsoluteFill>
       <Bed src={bed} seed={21} dim={0.22} />
-      <div style={{ position: "absolute", left: qr ? "38%" : "50%", top: 110, translate: `-50% ${y}px`, rotate: `${r}deg`, scale: String(push), opacity: out, transformOrigin: "50% 30%" }}>
+      <div style={{ position: "absolute", left: qr ? "38%" : "36%", top: 50, translate: `-50% ${y}px`, rotate: `${r}deg`, scale: String(push), opacity: out, transformOrigin: "50% 30%" }}>
         <div style={{ background: "#fff", padding: 12, boxShadow: `0 44px 80px ${CL.shadow}, 0 6px 14px rgba(0,0,0,0.14)`, transform: "perspective(1800px) rotateX(8deg)" }}>
-          <Img src={staticFile(page)} style={{ width: 760, display: "block" }} />
+          <Img src={staticFile(page)} style={{ width: 700, display: "block" }} />
         </div>
         <Tape x={300} y={-18} rot={4} w={160} />
         <div style={{ position: "absolute", right: -40, bottom: 40, background: CL.navy, color: "#fff", fontFamily: LABEL, fontWeight: 700, fontSize: 40, padding: "6px 22px", borderRadius: 10, rotate: "4deg", boxShadow: `0 10px 20px ${CL.shadow}` }}>PÁG. {pageNo}</div>
@@ -98,7 +98,7 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
           </Card>
         </div>
       ) : null}
-      <Stamp text={stamp} at={28} color={CL.red} x={qr ? "80%" : "78%"} y="88%" rot={-5} size={44} />
+      <Stamp text={stamp} at={28} color={CL.red} x={qr ? "80%" : "76%"} y={qr ? "88%" : "42%"} rot={-5} size={qr ? 44 : 52} />
       <RoomLight k={0.4} />
     </AbsoluteFill>
   );
