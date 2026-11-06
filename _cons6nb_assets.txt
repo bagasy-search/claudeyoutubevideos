@@ -212,3 +212,4 @@ img/cons6nb/b_whitepile.jpg
 img/cons6nb/b_drop.jpg
 img/cons6nb/b_keys.jpg
 img/cons6nb/b_bed.jpg
+broll/cons6nb_st/b_line_last.jpg
