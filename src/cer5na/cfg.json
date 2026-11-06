@@ -451,7 +451,8 @@
     }
    ],
    "bg": "n_llave_puesta",
-   "mode": "shutter"
+   "mode": "shutter",
+   "lab": "LA CORREDIZA"
   },
   {
    "k": "fridge",
