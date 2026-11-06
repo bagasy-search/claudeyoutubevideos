@@ -48,6 +48,15 @@ const Bottle: React.FC<{ x: number; y: number; s?: number; clear?: boolean }> = 
   </g>
 );
 
+const HandSvg: React.FC<{ skin?: string }> = ({ skin = "#D9A47E" }) => <g>
+  <rect x={-470} y={-46} width={380} height={92} rx={44} fill={skin} stroke="#A8724D" strokeWidth={4} />
+  <ellipse cx={-70} cy={0} rx={96} ry={66} fill={skin} stroke="#A8724D" strokeWidth={4} />
+  {[0, 1, 2, 3].map((i) => <rect key={i} x={-10} y={-58 + i * 30} width={118 - Math.abs(i - 1.3) * 14} height={26} rx={13} fill={skin} stroke="#A8724D" strokeWidth={3} />)}
+  {[0, 1, 2, 3].map((i) => <ellipse key={i} cx={98 - Math.abs(i - 1.3) * 14} cy={-45 + i * 30} rx={7} ry={6} fill="#F1D5C2" />)}
+  <rect x={-120} y={-92} width={92} height={30} rx={15} fill={skin} stroke="#A8724D" strokeWidth={3} transform="rotate(-24 -120 -92)" />
+  {[0, 1, 2].map((i) => <path key={i} d={`M${-30} ${-44 + i * 30} q 8 6 0 12`} stroke="#B9835C" strokeWidth={2} fill="none" />)}
+</g>;
+
 // ═════════════════════════════ 1 · dos sábanas del mismo juego
 export const SbTwoSheets: React.FC<{ bed?: string }> = ({ bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(8);
@@ -58,14 +67,15 @@ export const SbTwoSheets: React.FC<{ bed?: string }> = ({ bed }) => {
       <Hand2D seed={401} push={[1.0, 1.07]}>
         <AbsoluteFill style={{ background: "linear-gradient(180deg, #CFE3F2 0%, #EAF2F7 60%, #D9CDB8 60%)" }} />
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
-          <path d="M40 150 Q960 210 1880 150" stroke="#6B5A44" strokeWidth={5} fill="none" />
-          <g opacity={p}><Sheet x={170} y={176} w={720} h={720} col={GRAY} f={f} seed={1} /></g>
-          <g opacity={p}><Sheet x={1030} y={176} w={720} h={720} col={WHITE} f={f} seed={3} /></g>
-          {[190, 870, 1050, 1730].map((x, i) => <Pin key={i} x={x} y={176} />)}
+          <path d="M40 210 Q960 270 1880 210" stroke="#6B5A44" strokeWidth={5} fill="none" />
+          <g opacity={p}><Sheet x={170} y={236} w={720} h={650} col={GRAY} f={f} seed={1} /></g>
+          <g opacity={p}>{[[420, 520, 120, 70], [640, 700, 90, 60], [330, 760, 70, 46]].map(([x, y, a, b], i) => <ellipse key={i} cx={x} cy={y} rx={a} ry={b} fill="rgba(120,115,104,0.35)" />)}</g>
+          <g opacity={p}><Sheet x={1030} y={236} w={720} h={650} col={WHITE} f={f} seed={3} /></g>
+          {[190, 870, 1050, 1730].map((x, i) => <Pin key={i} x={x} y={236} />)}
         </svg>
         <Tag x={300} y={980} text="sin remojo" k={lin(f, 10, 20)} color={CL.inkSoft} />
         <Tag x={1180} y={980} text="con el frasco marrón" k={lin(f, T * 0.45, T * 0.55)} />
-        <Stamp text="mismo juego" at={Math.round(T * 0.25)} x="50%" y="12%" size={52} rot={-4} />
+        <Stamp text="mismo juego" at={Math.round(T * 0.25)} x="50%" y="10%" size={48} rot={-2} />
       </Hand2D>
       <RoomLight k={0.6} />
     </AbsoluteFill>
@@ -83,14 +93,15 @@ export const SbFiberTube: React.FC<{ bed?: string }> = ({ bed }) => {
       <Bed src={bed} seed={402} dim={0.45} />
       <Hand2D seed={402} push={[1.0, 1.1]}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
-          <defs><linearGradient id="sbTube" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#FFFFFF" /><stop offset="0.5" stopColor="#F2EEE6" /><stop offset="1" stopColor="#D8D2C6" /></linearGradient></defs>
+          <defs><marker id="sbArr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill={CL.navy} /></marker><linearGradient id="sbTube" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#FFFFFF" /><stop offset="0.5" stopColor="#F2EEE6" /><stop offset="1" stopColor="#D8D2C6" /></linearGradient></defs>
           {/* tubo en perspectiva */}
           <rect x={300} y={380} width={1150} height={320} fill="url(#sbTube)" />
           <ellipse cx={1450} cy={540} rx={90} ry={160} fill="#EFEAE0" stroke="#C9C2B4" strokeWidth={4} />
           {L.map(([, c], i) => <ellipse key={i} cx={1450} cy={540} rx={86 - 18 * (i + 1) * k(i) * 0.6} ry={156 - 30 * (i + 1) * k(i) * 0.6} fill="none" stroke={c} strokeWidth={22 * k(i)} />)}
           <ellipse cx={1450} cy={540} rx={30} ry={60} fill={`rgba(${120 - 30 * dirt},${118 - 30 * dirt},${110 - 30 * dirt},${0.2 + 0.6 * dirt})`} />
           {L.map(([, c], i) => <rect key={i} x={300} y={400 + i * 18} width={1150 * k(i)} height={280 - i * 36} fill={hexA(c, 0.35)} />)}
-          <rect x={300} y={380} width={1150} height={320} fill={`rgba(110,108,100,${0.45 * dirt})`} />
+          <rect x={300} y={380} width={1150} height={320} fill={`rgba(105,102,94,${0.65 * dirt})`} />
+          {[0, 1, 2].map((i) => <path key={"ar" + i} d={`M${470 + i * 380} 300 Q${520 + i * 380} 360 ${560 + i * 380} ${410 + i * 22}`} stroke={CL.navy} strokeWidth={5} fill="none" opacity={clamp01(k(i) * 2)} markerEnd="url(#sbArr)" />)}
           <ellipse cx={300} cy={540} rx={90} ry={160} fill="#E3DDD1" stroke="#C9C2B4" strokeWidth={4} />
         </svg>
         {L.map(([t, c], i) => <Tag key={i} x={360 + i * 380} y={260} text={t} k={k(i) * 2} color={i === 1 ? CL.navy : i === 0 ? CL.brass : CL.inkSoft} />)}
@@ -117,7 +128,7 @@ export const SbBleachThin: React.FC<{ bed?: string }> = ({ bed }) => {
           <g clipPath="url(#sbLens)">
             <rect x={500} y={100} width={920} height={900} fill={sheetCol(0.2 + 0.6 * bl)} />
             {Array.from({ length: 12 }, (_, i) => { const w = 34 * (1 - 0.7 * thin * (0.6 + 0.4 * rnd(i))); const gap = i === 6 && brk > 0; return <g key={`v${i}`}>{gap ? <><rect x={540 + i * 76 - w / 2} y={100} width={w} height={420 - 60 * brk} fill="#E9E4DA" /><rect x={540 + i * 76 - w / 2} y={580 + 60 * brk} width={w} height={420} fill="#E9E4DA" /></> : <rect x={540 + i * 76 - w / 2} y={100} width={w} height={900} fill="#E9E4DA" stroke="rgba(0,0,0,0.08)" />}</g>; })}
-            {Array.from({ length: 12 }, (_, i) => { const h = 34 * (1 - 0.7 * thin * (0.6 + 0.4 * rnd(i + 20))); return <rect key={`h${i}`} x={500} y={130 + i * 76 - h / 2} width={920} height={h} fill={sheetCol(0.3 + 0.6 * bl)} opacity={0.85} stroke="rgba(0,0,0,0.06)" />; })}
+            {Array.from({ length: 12 }, (_, i) => { const h = 34 * (1 - 0.7 * thin * (0.6 + 0.4 * rnd(i + 20))); const cut = i >= 5 && i <= 7 && brk > 0; const g2 = 30 + 70 * brk; return cut ? <g key={`h${i}`}><rect x={500} y={130 + i * 76 - h / 2} width={460 - g2} height={h} fill={sheetCol(0.3 + 0.6 * bl)} stroke="rgba(0,0,0,0.2)" /><rect x={960 + g2} y={130 + i * 76 - h / 2} width={460 - g2} height={h} fill={sheetCol(0.3 + 0.6 * bl)} stroke="rgba(0,0,0,0.2)" /><path d={`M${960 - g2} ${130 + i * 76 - h / 2} l 14 ${h / 2} l -14 ${h / 2} M${960 + g2} ${130 + i * 76 - h / 2} l -14 ${h / 2} l 14 ${h / 2}`} stroke="#8C877C" strokeWidth={3} fill="none" /></g> : <rect key={`h${i}`} x={500} y={130 + i * 76 - h / 2} width={920} height={h} fill={sheetCol(0.3 + 0.6 * bl)} opacity={0.85} stroke="rgba(0,0,0,0.06)" />; })}
             <rect x={500} y={100} width={920} height={900} fill={`rgba(230,210,140,${0.25 * thin})`} />
           </g>
           <circle cx={960} cy={540} r={430} fill="none" stroke="#8D939B" strokeWidth={26} />
@@ -125,7 +136,7 @@ export const SbBleachThin: React.FC<{ bed?: string }> = ({ bed }) => {
         </svg>
         <Tag x={1450} y={300} text="blanquea por arriba" k={bl * 2} />
         <Tag x={1450} y={420} text="se come el algodón" k={thin * 2} color={CL.red} />
-        <Tag x={1450} y={540} text="dura la mitad" k={brk * 2} color={CL.navy} />
+        <Tag x={1450} y={540} text="dura la mitad" k={lin(f, T * 0.62, T * 0.72)} color={CL.navy} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -144,12 +155,12 @@ export const SbFoamDrop: React.FC<{ bed?: string }> = ({ bed }) => {
       <Bed src={bed} seed={404} dim={0.4} />
       <Hand2D seed={404} push={[1.0, 1.1]}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
-          <path d="M520 420 Q760 380 1000 430 Q1180 470 1360 440 L1420 760 Q1180 800 960 760 Q720 720 480 780 Z" fill={GRAY} stroke={GRAYD} strokeWidth={3} />
+          <path d="M520 420 Q760 380 1000 430 Q1180 470 1360 440 L1420 760 Q1180 800 960 760 Q720 720 480 780 Z" fill={GRAY} stroke="#EDEAE2" strokeWidth={10} />
           {f < 20 ? <path d={`M960 ${dropY - 40} C 990 ${dropY - 5}, 990 ${dropY + 20}, 960 ${dropY + 26} C 930 ${dropY + 20}, 930 ${dropY - 5}, 960 ${dropY - 40} Z`} fill="#9FD0F0" /> : <ellipse cx={960} cy={560} rx={110 * lin(f, 18, 24)} ry={40 * lin(f, 18, 24)} fill="rgba(120,130,140,0.35)" />}
           {/* manos (guantes no: manos desnudas con agua de la llave) */}
           {rub > 0 ? <g opacity={lin(f, 18, 24)}>
-            <g transform={`translate(${900 + dx} 500)`}><path d="M-480 -60 Q-320 -120 -60 -70 Q40 -50 60 -10 Q60 30 0 34 L-480 40 Z" fill="#D9A47E" stroke="#A8724D" strokeWidth={4} /><path d="M-30 -52 Q30 -46 44 -14 Q20 8 -24 0 Z" fill="#F1D5C2" stroke="#C99A7B" strokeWidth={2} /><path d="M-200 -86 q 10 30 0 60" stroke="#B9835C" strokeWidth={3} fill="none" /></g>
-            <g transform={`translate(${1020 - dx} 620) scale(-1 -1)`}><path d="M-480 -60 Q-320 -110 -60 -66 Q40 -48 60 -10 Q60 30 0 34 L-480 40 Z" fill="#D59D77" stroke="#A8724D" strokeWidth={4} /><path d="M-30 -48 Q30 -44 44 -14 Q20 8 -24 0 Z" fill="#F1D5C2" stroke="#C99A7B" strokeWidth={2} /></g>
+            <g transform={`translate(${850 + dx} 520)`}><HandSvg /></g>
+            <g transform={`translate(${1070 - dx} 600) scale(-1 1)`}><HandSvg skin="#D59D77" /></g>
           </g> : null}
           {Array.from({ length: 40 }, (_, i) => { const a = rnd(i) * Math.PI * 2, r = 60 + rnd(i + 5) * 260; return <circle key={i} cx={960 + Math.cos(a) * r} cy={520 + Math.sin(a) * r * 0.45 - 40 * foam * rnd(i + 3)} r={(8 + rnd(i + 2) * 22) * foam} fill="rgba(255,255,255,0.95)" stroke="rgba(180,200,215,0.7)" strokeWidth={2} />; })}
         </svg>
@@ -242,13 +253,15 @@ export const SbRatio: React.FC<{ bed?: string }> = ({ bed }) => {
           {/* paleta */}
           {stir > 0 ? <rect x={830 + Math.sin(f / 5) * 80} y={160} width={26} height={600} rx={10} fill="#C8955B" stroke="#8C6234" strokeWidth={3} transform={`rotate(${Math.sin(f / 5) * 8} 840 600)`} /> : null}
           {/* chorro del frasco */}
-          {cups >= 0 && f > T * 0.32 && f < T * 0.56 ? <path d={`M760 120 Q780 220 800 ${top}`} stroke="rgba(230,240,245,0.9)" strokeWidth={14} fill="none" /> : null}
+          {f > T * 0.3 && f < T * 0.58 ? <g transform="translate(560 -40) rotate(128) scale(0.75)"><Bottle x={0} y={0} /></g> : null}
+          {cups >= 0 && f > T * 0.32 && f < T * 0.56 ? <path d={`M760 150 Q780 240 800 ${top}`} stroke="rgba(230,240,245,0.95)" strokeWidth={16} fill="none" /> : null}
+          {f > T * 0.58 && f < T * 0.78 ? <g transform={`translate(960 110) rotate(${60 * soda})`}><path d="M-60 -50 L-50 40 L50 40 L60 -50 Z" fill="#FFFFFF" stroke="#BDB5A6" strokeWidth={5} /></g> : null}
           {soda > 0 && soda < 1 ? Array.from({ length: 30 }, (_, i) => <circle key={i} cx={900 + rnd(i) * 60} cy={120 + ((f * 18 + i * 30) % (top - 120))} r={4} fill="#FFFFFF" />) : null}
         </svg>
-        <div style={{ position: "absolute", left: 1260, top: 300, fontFamily: SERIF, fontWeight: 900, color: CL.navy, lineHeight: 1.1 }}>
+        <div style={{ position: "absolute", left: 1180, top: 260, fontFamily: SERIF, fontWeight: 900, color: CL.navy, lineHeight: 1.15, background: "#FFF8EA", padding: "28px 36px", borderRadius: 18, boxShadow: `0 24px 50px ${CL.shadow}`, border: "3px solid #E6DAC2" }}>
           <div style={{ fontSize: 80, opacity: lin(f, 4, 14) }}>10 L bien caliente</div>
-          <div style={{ fontSize: 80, opacity: lin(f, T * 0.32, T * 0.4), color: BROWNL }}>+ {Math.max(1, cups)} {cups >= 1 ? "tazas" : "taza"} <span style={{ fontFamily: HAND, fontWeight: 400, fontSize: 52 }}>agua oxig. 3 %</span></div>
-          <div style={{ fontSize: 80, opacity: lin(f, T * 0.6, T * 0.68) }}>+ ½ taza <span style={{ fontFamily: HAND, fontWeight: 400, fontSize: 52 }}>bicarbonato</span></div>
+          <div style={{ fontSize: 80, opacity: lin(f, T * 0.32, T * 0.4), color: BROWNL }}>+ {Math.max(1, cups)} {cups >= 1 ? "tazas" : "taza"} <span style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40 }}>agua oxig. 3 %</span></div>
+          <div style={{ fontSize: 80, opacity: lin(f, T * 0.6, T * 0.68) }}>+ ½ taza <span style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40 }}>bicarbonato</span></div>
         </div>
       </Hand2D>
       <RoomLight />
@@ -266,11 +279,15 @@ export const SbBucketSoak: React.FC<{ bed?: string }> = ({ bed }) => {
       <Bed src={bed} seed={408} dim={0.5} />
       <Hand2D seed={408} push={[1.06, 1.0]}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
-          <circle cx={820} cy={560} r={470} fill="#4F78A8" />
-          <circle cx={820} cy={560} r={440} fill={`rgb(${170 - 50 * k},${200 - 70 * k},${225 - 95 * k})`} />
+          <defs><clipPath id="sbSoak"><path d="M440 330 L520 950 L1120 950 L1200 330 Z" /></clipPath></defs>
+          <path d="M430 300 Q820 60 1210 300" stroke="#555" strokeWidth={12} fill="none" />
+          <path d="M420 300 L510 960 L1130 960 L1220 300 Z" fill="#4F78A8" stroke="#2F527E" strokeWidth={8} />
+          <path d="M440 330 L520 950 L1120 950 L1200 330 Z" fill={`rgb(${170 - 50 * k},${200 - 70 * k},${225 - 95 * k})`} />
+          <rect x={410} y={290} width={820} height={30} rx={14} fill="#6E92BE" />
           {/* la sábana hundida: pliegues */}
-          {Array.from({ length: 7 }, (_, i) => <path key={i} d={`M${480 + i * 20} ${360 + i * 60} Q${820 + Math.sin(f / 30 + i) * 60} ${300 + i * 70} ${1160 - i * 20} ${380 + i * 60}`} stroke={sheetCol(0.25 + 0.5 * k)} strokeWidth={46} fill="none" opacity={0.85} transform={`rotate(${turns * 90 * ease(clamp01(((k * 5) % 1) * 4))} 820 560)`} />)}
-          {Array.from({ length: 60 }, (_, i) => { const per = 40 + rnd(i) * 30; const t = ((f + rnd(i + 1) * per) % per) / per; const a = rnd(i + 2) * Math.PI * 2, r = rnd(i + 3) * 400; return <circle key={i} cx={820 + Math.cos(a) * r} cy={560 + Math.sin(a) * r} r={2 + 5 * t} fill="none" stroke="rgba(255,255,255,0.9)" strokeWidth={2} opacity={1 - t} />; })}
+          <g clipPath="url(#sbSoak)">{Array.from({ length: 6 }, (_, i) => <path key={i} d={`M${500 + i * 12} ${560 + i * 64} Q${820 + Math.sin(f / 30 + i + turns) * 70} ${520 + i * 64} ${1140 - i * 12} ${570 + i * 64}`} stroke={sheetCol(0.25 + 0.5 * k)} strokeWidth={50} fill="none" opacity={0.9} />)}
+          <path d="M440 400 Q820 380 1200 400" stroke="rgba(255,255,255,0.6)" strokeWidth={6} fill="none" /></g>
+          {Array.from({ length: 60 }, (_, i) => { const per = 40 + rnd(i) * 30; const t = ((f + rnd(i + 1) * per) % per) / per; const a = rnd(i + 2) * Math.PI * 2, r = rnd(i + 3) * 400; return <circle key={i} cx={560 + rnd(i + 2) * 520} cy={930 - t * 520} r={3 + 6 * t} fill="none" stroke="rgba(255,255,255,0.9)" strokeWidth={2.5} opacity={1 - t} />; })}
           {/* reloj 2 h */}
           <g transform="translate(1530 400)">
             <circle r={190} fill="#FFFFFF" stroke={CL.navy} strokeWidth={10} />
@@ -304,11 +321,15 @@ export const SbHalfSoap: React.FC<{ bed?: string }> = ({ bed }) => {
             <line x1={x - 160} x2={x + 160} y1={760 - 190} y2={760 - 190} stroke={CL.navy} strokeWidth={5} strokeDasharray="12 8" />
           </g>; })}
           {/* tela con jabón pegado (gris) bajo el vaso lleno */}
-          <rect x={1060} y={820} width={400} height={140} rx={10} fill={sheetCol(1 - 0.8 * over)} />
-          {Array.from({ length: 24 }, (_, i) => <circle key={i} cx={1080 + rnd(i) * 360} cy={840 + rnd(i + 4) * 100} r={10 * over} fill="rgba(140,135,125,0.6)" />)}
+          <rect x={300} y={300} width={440} height={520} rx={24} fill="rgba(255,255,255,0.35)" stroke={CL.navy} strokeWidth={5} />
+          <rect x={1060} y={820} width={400} height={140} rx={10} fill={sheetCol(1 - 0.5 * over)} />
+          <path d="M1150 860 Q1220 830 1300 870 Q1360 900 1310 930 Q1220 950 1160 920 Q1110 890 1150 860 Z" fill={`rgba(120,114,100,${0.75 * over})`} />
+          {Array.from({ length: 10 }, (_, i) => <circle key={i} cx={1180 + rnd(i) * 140} cy={870 + rnd(i + 4) * 50} r={7 * over} fill="rgba(226,170,80,0.7)" />)}
+          <path d="M1450 420 Q1620 620 1400 830" stroke={CL.red} strokeWidth={8} fill="none" opacity={over} strokeLinecap="round" />
+          <path d="M1400 830 l 8 -42 M1400 830 l 40 -14" stroke={CL.red} strokeWidth={8} opacity={over} strokeLinecap="round" />
         </svg>
         <Tag x={330} y={880} text="la mitad · ni una gota más" k={lin(f, T * 0.3, T * 0.4)} />
-        <div style={{ position: "absolute", left: 1460, top: 860, opacity: lin(f, T * 0.65, T * 0.75) }}><Tick ok={false} s={110} k={lin(f, T * 0.7, T * 0.8)} /></div>
+        <div style={{ position: "absolute", left: 1560, top: 560, opacity: lin(f, T * 0.65, T * 0.75) }}><Tick ok={false} s={110} k={lin(f, T * 0.7, T * 0.8)} /></div>
         <Tag x={1100} y={880} text="lo que sobra queda en la tela" k={lin(f, T * 0.6, T * 0.7)} color={CL.red} />
       </Hand2D>
       <RoomLight />
@@ -352,12 +373,14 @@ export const SbSunLine: React.FC<{ bed?: string }> = ({ bed }) => {
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           <circle cx={300 + 300 * k} cy={420 - 300 * k} r={90} fill="#FFE59A" />
           {Array.from({ length: 12 }, (_, i) => { const a = (i / 12) * Math.PI * 2 + f / 60; return <line key={i} x1={300 + 300 * k + Math.cos(a) * 110} y1={420 - 300 * k + Math.sin(a) * 110} x2={300 + 300 * k + Math.cos(a) * 150} y2={420 - 300 * k + Math.sin(a) * 150} stroke="#FFE59A" strokeWidth={8} strokeLinecap="round" opacity={0.4 + 0.6 * k} />; })}
-          <path d="M80 300 Q960 360 1840 300" stroke="#6B5A44" strokeWidth={5} fill="none" />
-          <Sheet x={420} y={326} w={520} h={560} col={sheetCol(0.15 + 0.85 * k)} f={f} seed={5} />
-          <Sheet x={1000} y={330} w={520} h={560} col={sheetCol(0.1 + 0.9 * k)} f={f} seed={8} />
+          <path d="M80 240 Q960 300 1840 240" stroke="#6B5A44" strokeWidth={5} fill="none" />
+          <Sheet x={420} y={266} w={520} h={520} col={sheetCol(0.1)} f={f} seed={5} />
+          <path d={`M${600 + 300 * k} ${420 - 300 * k} L1000 270 L1520 270 L1560 800 L1000 800 Z`} fill={`rgba(255,229,154,${0.35 * k})`} />
+          <Sheet x={1000} y={270} w={520} h={520} col={sheetCol(0.1 + 0.9 * k)} f={f} seed={8} />
           {Array.from({ length: 6 }, (_, i) => { const t = ((f + i * 20) % 120) / 120; return <path key={i} d={`M${1550 + t * 300} ${420 + i * 60} q 40 -20 80 0 t 80 0`} stroke="rgba(255,255,255,0.8)" strokeWidth={5} fill="none" opacity={1 - t} />; })}
         </svg>
-        <Tag x={1200} y={980} text="al sol de la mañana, estiradas" k={lin(f, 8, 18)} />
+        <Tag x={420} y={900} text="a la sombra: gris" k={lin(f, 8, 18)} color={CL.inkSoft} />
+        <Tag x={1100} y={900} text="al sol de la mañana: blanca" k={lin(f, T * 0.4, T * 0.5)} />
       </Hand2D>
       <RoomLight k={0.5} />
     </AbsoluteFill>
@@ -375,9 +398,10 @@ export const SbPillowZone: React.FC<{ bed?: string }> = ({ bed }) => {
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           <rect x={460} y={80} width={1000} height={940} rx={30} fill="#8A6A4A" />
           <rect x={490} y={110} width={940} height={880} rx={20} fill={WHITE} stroke="#E0DCD2" strokeWidth={4} />
-          {[0, 1].map((i) => <g key={i}><rect x={540 + i * 450} y={150} width={390} height={200} rx={60} fill={WHITE} stroke="#DCD7CC" strokeWidth={4} /><ellipse cx={735 + i * 450} cy={250} rx={140} ry={60} fill={hexA("#E6C25A", 0.6 * y1)} /></g>)}
+          {[0, 1].map((i) => <g key={i}><rect x={540 + i * 450} y={150} width={390} height={200} rx={60} fill={WHITE} stroke="#DCD7CC" strokeWidth={4} /><path d={`M${615 + i * 450} 250 Q${640 + i * 450} 190 ${735 + i * 450} 196 Q${850 + i * 450} 186 ${862 + i * 450} 246 Q${870 + i * 450} 300 ${760 + i * 450} 306 Q${650 + i * 450} 316 ${615 + i * 450} 250 Z`} fill={hexA("#D9AE3E", 0.7 * y1)} stroke={hexA("#B98A22", 0.6 * y1)} strokeWidth={4} /></g>)}
           <rect x={490} y={420} width={940} height={120} fill="#F6F4EE" stroke="#E0DCD2" strokeWidth={3} />
-          <rect x={490} y={420} width={940} height={120} fill={hexA("#E6C25A", 0.45 * y2)} />
+          <path d="M490 430 Q700 410 960 440 Q1200 470 1430 430 L1430 520 Q1200 550 960 520 Q700 500 490 530 Z" fill={hexA("#D9AE3E", 0.6 * y2)} />
+          <path d="M1270 250 L1490 250" stroke={CL.navy} strokeWidth={4} opacity={y1} /><path d="M1430 480 L1490 480" stroke={CL.navy} strokeWidth={4} opacity={y2} />
         </svg>
         <Tag x={1500} y={250} text="cara, pelo, cremas" k={y1 * 2} />
         <Tag x={1500} y={480} text="el borde del cuello" k={y2 * 2} />
@@ -430,11 +454,11 @@ export const SbRoutine: React.FC<{ bed?: string }> = ({ bed }) => {
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
       <Bed src={bed} seed={414} dim={0.3} />
       <Hand2D seed={414}>
-        <div style={{ position: "absolute", left: 240, top: 80, rotate: `${-2 + (1 - p) * -8}deg`, translate: `0 ${(1 - p) * 900}px` }}>
+        <div style={{ position: "absolute", left: 200, top: 130, rotate: `${-2 + (1 - p) * -8}deg`, translate: `0 ${(1 - p) * 900}px` }}>
           <div style={{ width: 980, height: 900, background: "#FFFDF6", borderRadius: 10, boxShadow: `0 40px 80px ${CL.shadow}`, padding: "90px 60px 40px", backgroundImage: "repeating-linear-gradient(180deg, transparent 0 129px, #E3DCCF 129px 131px)", backgroundPosition: "0 170px" }}>
-            <div style={{ fontFamily: LABEL, fontSize: 36, letterSpacing: 4, color: CL.inkSoft, marginBottom: 24 }}>LAVANDERÍA · SÓTANO · ROSA</div>
+            
             {S.map(([t, m], i) => (
-              <div key={i} style={{ display: "flex", alignItems: "center", gap: 22, height: 130, opacity: 0.35 + 0.65 * step(i) }}>
+              <div key={i} style={{ display: "flex", alignItems: "center", gap: 22, height: 130, opacity: 0.55 + 0.45 * step(i) }}>
                 <div style={{ width: 56, height: 56, border: `5px solid ${CL.navy}`, borderRadius: 8, position: "relative" }}>{step(i) > 0.1 ? <div style={{ position: "absolute", left: -6, top: -18 }}><Tick ok s={64} k={step(i)} /></div> : null}</div>
                 <div style={{ flex: 1, fontFamily: HAND, fontSize: 52, color: CL.ink }}>{t}</div>
                 <div style={{ fontFamily: LABEL, fontSize: 40, color: CL.navy }}>{m === 0 ? "sol" : m >= 60 ? `${m / 60} h` : `${m} min`}</div>
@@ -442,8 +466,8 @@ export const SbRoutine: React.FC<{ bed?: string }> = ({ bed }) => {
             ))}
           </div>
         </div>
-        <div style={{ position: "absolute", left: 1330, top: 360, opacity: p }}>
-          <div style={{ fontFamily: LABEL, fontSize: 36, color: CL.inkSoft, letterSpacing: 3 }}>TOTAL</div>
+        <div style={{ position: "absolute", left: 1260, top: 300, opacity: p, background: "#FFF8EA", padding: "26px 40px", borderRadius: 18, boxShadow: `0 24px 50px ${CL.shadow}`, border: "3px solid #E6DAC2" }}>
+          <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40, color: CL.inkSoft, letterSpacing: 4 }}>TOTAL</div>
           <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 140, color: CL.navy, lineHeight: 1, fontVariantNumeric: "tabular-nums" }}>{sum >= 60 ? `${Math.floor(sum / 60)} h ${String(Math.round(sum % 60)).padStart(2, "0")}` : `${Math.round(sum)} min`}</div>
           <div style={{ fontFamily: HAND, fontSize: 60, color: CL.ink, opacity: lin(f, T * 0.8, T * 0.9) }}>una tarde</div>
         </div>
@@ -464,8 +488,8 @@ export const SbEverySix: React.FC<{ bed?: string; hard?: boolean }> = ({ bed, ha
         {Array.from({ length: n }, (_, i) => {
           const p = pop(f, fps, 4 + i * 6, 12); const last = i === n - 1; const w = 1600 / n;
           return <div key={i} style={{ position: "absolute", left: 160 + i * w, top: 300, width: w - 30, textAlign: "center", opacity: p, translate: `0 ${(1 - p) * 120}px` }}>
-            <Card style={{ padding: 24, height: 360, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", border: last ? `6px solid ${CL.brass}` : "none" }}>
-              <div style={{ width: 120, height: 120, borderRadius: "50%", background: last ? BROWN : "#DDE3E9", border: `8px solid ${last ? BROWNL : "#AEB6BF"}` }} />
+            <Card style={{ padding: 24, height: 360, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", border: last ? `6px solid ${CL.brass}` : "none", background: last ? "#FFF3D6" : undefined }}>
+              <svg width={140} height={140} viewBox="-70 -70 140 140">{last ? <g><path d="M-44 -30 L-34 46 L34 46 L44 -30 Z" fill="#5E86B8" stroke="#2F527E" strokeWidth={5} /><path d="M-40 -14 L40 -14 L36 18 L-36 18 Z" fill="#9EC3E6" /><path d="M-44 -30 Q0 -70 44 -30" stroke="#444" strokeWidth={5} fill="none" /></g> : <g><circle r={60} fill="#E9EEF3" stroke="#AEB6BF" strokeWidth={6} /><path d="M0 -38 C 26 -6, 30 16, 0 32 C -30 16, -26 -6, 0 -38 Z" fill="rgba(226,160,60,0.4)" stroke="#B9862E" strokeWidth={3} /><path d="M-22 8 C -18 22, 18 22, 22 8 L 22 20 C 14 32, -14 32, -22 20 Z" fill="rgba(226,160,60,0.95)" /></g>}</svg>
               <div style={{ fontFamily: LABEL, fontSize: 36, color: CL.navy, marginTop: 20 }}>LAVADO {i + 1}</div>
               <div style={{ fontFamily: HAND, fontSize: 44, color: last ? BROWNL : CL.ink }}>{last ? "+ remojo" : "½ jabón"}</div>
             </Card>
@@ -491,12 +515,14 @@ export const SbBottleLight: React.FC<{ bed?: string }> = ({ bed }) => {
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           {Array.from({ length: 8 }, (_, i) => <line key={i} x1={1900} y1={0} x2={500 + i * 160} y2={1080} stroke="rgba(255,230,160,0.12)" strokeWidth={50} />)}
           <Bottle x={640} y={820} s={1.6} />
+          <path d="M1900 0 L1330 400 L1480 440 Z" fill="rgba(255,220,120,0.35)" />
           <Bottle x={1240} y={820} s={1.6} clear />
+          <rect x={1144} y={404} width={192} height={416} rx={42} fill="none" stroke="#6E8792" strokeWidth={6} />
           {Array.from({ length: 24 }, (_, i) => { const t = ((f + i * 7) % 40) / 40; return <circle key={i} cx={1180 + rnd(i) * 120} cy={760 - t * 260} r={5} fill="none" stroke="rgba(120,160,180,0.9)" strokeWidth={2} opacity={(1 - t) * (1 - k)} />; })}
         </svg>
         <Tag x={460} y={960} text="se guarda en su frasco" k={lin(f, 6, 16)} />
-        <div style={{ position: "absolute", left: 1460, top: 300, fontFamily: SERIF, fontWeight: 900, fontSize: 100, color: CL.navy, opacity: lin(f, T * 0.2, T * 0.3) }}>día {day}</div>
-        <Tag x={1100} y={960} text="en una semana es agua" k={lin(f, T * 0.8, T * 0.9)} color={CL.red} />
+        <div style={{ position: "absolute", left: 1240, top: 860, translate: "-50% 0", fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: "#fff", background: CL.navy, padding: "4px 26px", borderRadius: 14, opacity: lin(f, T * 0.2, T * 0.3) }}>día {day}</div>
+        <Tag x={1380} y={980} text="en una semana es agua" k={lin(f, T * 0.8, T * 0.9)} color={CL.red} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -529,12 +555,13 @@ export const SbHemTest: React.FC<{ bed?: string }> = ({ bed }) => {
           {f < 22 ? <path d={`M520 ${drop - 34} C 548 ${drop - 4}, 548 ${drop + 18}, 520 ${drop + 24} C 492 ${drop + 18}, 492 ${drop - 4}, 520 ${drop - 34} Z`} fill={BROWN} /> : null}
           <g transform="translate(520 150)" opacity={1 - lin(f, 18, 26)}><rect x={-30} y={-90} width={60} height={80} rx={10} fill="#3B200D" /><path d="M-10 -10 L10 -10 L4 40 L-4 40 Z" fill="rgba(220,235,240,0.85)" stroke="#9FB3BD" strokeWidth={2} /></g>
           <circle cx={520} cy={730} r={86} fill="none" stroke={CL.navy} strokeWidth={6} strokeDasharray="14 10" opacity={lin(f, 22, 30)} />
+          <g opacity={lin(f, 26, 34)} transform="translate(660 560)"><circle r={70} fill="rgba(255,255,255,0.25)" stroke="#3B3F45" strokeWidth={14} /><rect x={44} y={44} width={26} height={110} rx={12} transform="rotate(-45 57 57)" fill="#3B3F45" /></g>
           {/* derecha: la sábana celeste que entró sin probar */}
           <g opacity={lin(f, T * 0.4, T * 0.5)}>
             <g clipPath="url(#sbHemB)">
               <rect x={1020} y={220} width={760} height={600} fill={SKY} />
               {weave(1020, 220, 760, 600)}
-              {Array.from({ length: 14 }, (_, i) => { const cx = 1080 + rnd(i) * 640, cy = 270 + rnd(i + 9) * 500; return <ellipse key={i} cx={cx} cy={cy} rx={(30 + rnd(i + 3) * 60) * sp} ry={(22 + rnd(i + 4) * 40) * sp} fill="#E8F2FA" opacity={0.95} transform={`rotate(${rnd(i + 6) * 60} ${cx} ${cy})`} />; })}
+              {Array.from({ length: 14 }, (_, i) => { const cx = 1080 + rnd(i) * 640, cy = 270 + rnd(i + 9) * 500; const r1 = (30 + rnd(i + 3) * 60) * sp, r2 = (22 + rnd(i + 4) * 40) * sp; return <path key={i} d={`M${cx - r1} ${cy} Q${cx - r1 * 0.8} ${cy - r2 * 1.2} ${cx} ${cy - r2} Q${cx + r1 * 1.1} ${cy - r2 * 0.7} ${cx + r1} ${cy + r2 * 0.2} Q${cx + r1 * 0.6} ${cy + r2 * 1.1} ${cx - r1 * 0.2} ${cy + r2 * 0.9} Q${cx - r1 * 1.2} ${cy + r2 * 0.6} ${cx - r1} ${cy} Z`} fill="#DDEBF6" stroke="#A9C6DE" strokeWidth={2} opacity={0.95} />; })}
             </g>
             <rect x={1020} y={220} width={760} height={600} rx={20} fill="none" stroke="#7FA6C8" strokeWidth={6} />
           </g>
@@ -558,9 +585,9 @@ export const SbPharmacy: React.FC<{ bed?: string }> = ({ bed }) => {
       <Hand2D seed={418}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           <g opacity={pop(f, fps, 2, 12)}><Bottle x={620} y={860} s={1.7} /></g>
-          <g opacity={pop(f, fps, 12, 12) * (1 - 0.5 * lin(f, T * 0.6, T * 0.7))}><rect x={1180} y={420} width={220} height={440} rx={20} fill="#E7E2F2" stroke="#8D82B5" strokeWidth={5} /><rect x={1240} y={360} width={100} height={70} rx={10} fill="#5B4E8C" /></g>
+          <g opacity={pop(f, fps, 12, 12)}><rect x={1180} y={420} width={220} height={440} rx={20} fill="#D9D0EE" stroke="#5B4E8C" strokeWidth={6} /><rect x={1240} y={360} width={100} height={70} rx={10} fill="#8B6FD0" stroke="#5B4E8C" strokeWidth={4} /><rect x={1200} y={540} width={180} height={150} rx={10} fill="#FFFFFF" /><text x={1290} y={600} textAnchor="middle" fontFamily="Arial" fontWeight={800} fontSize={40} fill="#5B4E8C">30 VOL</text><text x={1290} y={650} textAnchor="middle" fontFamily="Arial" fontSize={26} fill="#5B4E8C">peluquería</text></g>
         </svg>
-        <div style={{ position: "absolute", left: 500, top: 560, width: 240, textAlign: "center", fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: CL.navy, opacity: lin(f, 10, 20) }}>3 %<div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 30 }}>10 VOLÚMENES</div></div>
+        <div style={{ position: "absolute", left: 500, top: 560, width: 240, textAlign: "center", fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: CL.navy, opacity: lin(f, 10, 20) }}>3 %<div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 24, whiteSpace: "nowrap" }}>10 VOLÚMENES</div></div>
         <div style={{ position: "absolute", left: 640, top: 140, opacity: lin(f, 14, 24) }}><Tick ok s={120} k={lin(f, 14, 26)} /></div>
         <div style={{ position: "absolute", left: 1220, top: 200, opacity: lin(f, T * 0.6, T * 0.68) }}><Tick ok={false} s={140} k={lin(f, T * 0.6, T * 0.72)} /></div>
         <Tag x={500} y={980} text="farmacia" k={lin(f, 6, 16)} />
@@ -594,9 +621,9 @@ export const SbCost: React.FC<{ bed?: string }> = ({ bed }) => {
               <line x1={x} y1={y} x2={x - 170} y2={y + 230} stroke="#555" strokeWidth={3} /><line x1={x} y1={y} x2={x + 170} y2={y + 230} stroke="#555" strokeWidth={3} />
               <path d={`M${x - 210} ${y + 230} Q${x} ${y + 300} ${x + 210} ${y + 230} Z`} fill="#C9CED4" stroke="#8E969F" strokeWidth={4} />
               {s < 0 ? <g>
-                <g opacity={L(0)}><Bottle x={x - 110} y={y + 232} s={0.55} /></g>
-                <g opacity={L(1)} transform={`translate(${x + 10} ${y + 232})`}><rect x={-50} y={-120} width={100} height={120} rx={6} fill="#F2EFE8" stroke="#BDB5A6" strokeWidth={3} /><rect x={-50} y={-90} width={100} height={30} fill="#E7A33E" /></g>
-                <g opacity={L(2)} transform={`translate(${x + 120} ${y + 232})`}><path d="M-34 0 L-30 -110 L30 -110 L34 0 Z" fill="rgba(226,160,60,0.3)" stroke="#B9862E" strokeWidth={3} /><rect x={-31} y={-55} width={62} height={55} fill="rgba(226,160,60,0.85)" /></g>
+                <g opacity={L(0)}><Bottle x={x - 120} y={y + 232} s={0.75} /></g>
+                <g opacity={L(1)} transform={`translate(${x + 10} ${y + 232}) scale(1.35)`}><rect x={-50} y={-120} width={100} height={120} rx={6} fill="#F2EFE8" stroke="#BDB5A6" strokeWidth={3} /><rect x={-50} y={-90} width={100} height={30} fill="#E7A33E" /></g>
+                <g opacity={L(2)} transform={`translate(${x + 130} ${y + 232}) scale(1.35)`}><path d="M-34 0 L-30 -110 L30 -110 L34 0 Z" fill="rgba(226,160,60,0.3)" stroke="#B9862E" strokeWidth={3} /><rect x={-31} y={-55} width={62} height={55} fill="rgba(226,160,60,0.85)" /></g>
               </g> : <g opacity={L(3)} transform={`translate(${x} ${y + 228})`}>
                 <path d="M-160 -130 Q-170 -30 -160 0 L160 0 Q170 -30 160 -130 Q0 -150 -160 -130 Z" fill={WHITE} stroke="#CFC9BC" strokeWidth={4} />
                 <path d="M-160 -130 Q-128 -108 -160 -86 M160 -130 Q128 -108 160 -86" stroke="#CFC9BC" strokeWidth={3} fill="none" />
@@ -605,9 +632,9 @@ export const SbCost: React.FC<{ bed?: string }> = ({ bed }) => {
             </g>;
           })}
         </svg>
-        <Tag x={250} y={980} text="frasco + bicarbonato + ½ jabón" k={lin(f, 20, 30)} />
+        <Tag x={200} y={980} text="frasco + bicarbonato + ½ jabón" k={lin(f, 20, 30)} />
         <Tag x={1260} y={980} text="1 funda nueva" k={lin(f, 30, 40)} color={CL.red} />
-        <Stamp text="alcanza para meses" at={Math.round(T * 0.68)} x="50%" y="14%" size={56} rot={-4} />
+        <Stamp text="alcanza para meses" at={Math.round(T * 0.68)} x="50%" y="20%" size={50} rot={-1} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -671,14 +698,15 @@ export const SbShelf: React.FC<{ bed?: string }> = ({ bed }) => {
           <rect x={240} y={Y0} width={1440} height={44} rx={6} fill="#9A7048" stroke="#6E4E2E" strokeWidth={4} />
           <rect x={240} y={Y0 + 44} width={1440} height={16} fill="rgba(0,0,0,0.2)" />
           {Array.from({ length: 6 }, (_, i) => fold(`l${i}`, 360, Y0 - i * H, 460, 0.75 + 0.04 * i))}
-          {fold("out", 1100 + 700 * take, Y0 - 30 * Math.sin(take * Math.PI), 460, 0.62)}
-          {Array.from({ length: 5 }, (_, i) => fold(`r${i}`, 1100, Y0 - (i + 1) * H + H * take, 460, 0.78 + 0.04 * i))}
-          <g opacity={clamp01(drop * 3)}>{fold("new", 1100, Y0 - 5 * H - (1 - drop) * 500, 460, 1)}</g>
+          {fold("out", 1000 + 800 * take, Y0 - 30 * Math.sin(take * Math.PI), 460, 0.62)}
+          {Array.from({ length: 5 }, (_, i) => fold(`r${i}`, 1000, Y0 - (i + 1) * H + H * take, 460, 0.78 + 0.04 * i))}
+          <g opacity={clamp01(drop * 3)}>{fold("new", 1000, Y0 - 5 * H - (1 - drop) * 500, 460, 1)}</g>
           {Array.from({ length: 8 }, (_, i) => { const t = ((f + i * 12) % 80) / 80; return <path key={i} d={`M${900 + (i % 2) * 70} ${Y0 - 30 - t * 380} q 18 -22 0 -44 q -18 -22 0 -44`} stroke="rgba(130,175,210,0.85)" strokeWidth={6} fill="none" opacity={air * (1 - t)} />; })}
         </svg>
         <Tag x={640} y={970} text="estantes abiertos · aire entre pilas" k={air} />
-        <Tag x={1120} y={300} text="la recién lavada, arriba" k={lin(f, T * 0.6, T * 0.7)} color={CL.brass} />
-        <Tag x={1430} y={660} text="use la de abajo" k={lin(f, T * 0.32, T * 0.42)} color={CL.navy} />
+        <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}><path d="M1500 800 Q1640 600 1500 400" stroke={CL.brass} strokeWidth={9} fill="none" strokeLinecap="round" opacity={lin(f, T * 0.3, T * 0.4)} /><path d="M1500 400 l 44 4 M1500 400 l 4 44" stroke={CL.brass} strokeWidth={9} strokeLinecap="round" opacity={lin(f, T * 0.3, T * 0.4)} /></svg>
+        <Tag x={1540} y={340} text="la lavada, arriba" k={lin(f, T * 0.6, T * 0.7)} color={CL.brass} size={34} />
+        <Tag x={1540} y={820} text="use la de abajo" k={lin(f, T * 0.32, T * 0.42)} color={CL.navy} size={34} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -698,11 +726,11 @@ export const SbRecap: React.FC<{ bed?: string }> = ({ bed }) => {
           const r = Math.floor(i / 4), c = i % 4; const t0 = 4 + i * ((T - 30) / W.length);
           const p = pop(f, fps, t0, 10);
           const sw = Math.sin(f / 14 + i) * 2.5;
-          return <div key={i} style={{ position: "absolute", left: 130 + c * 430, top: 100 + r * 330 + Math.sin((c / 3) * Math.PI) * 30, width: 380, transformOrigin: "50% 0", rotate: `${sw + (1 - p) * 40}deg`, opacity: clamp01(p * 2) }}>
+          return <div key={i} style={{ position: "absolute", left: 130 + c * 430, top: 110 + r * 316 + Math.sin((c / 3) * Math.PI) * 24, width: 380, transformOrigin: "50% 0", rotate: `${sw + (1 - p) * 40}deg`, opacity: clamp01(p * 2) }}>
             <div style={{ position: "absolute", left: 180, top: -20, width: 20, height: 50, borderRadius: 4, background: "#C9A06A", zIndex: 2 }} />
-            <div style={{ height: 220, background: WHITE, borderRadius: 6, boxShadow: `0 20px 40px ${CL.shadow}`, display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", padding: 20 }}>
-              <div style={{ fontFamily: LABEL, fontSize: 30, color: CL.brass, letterSpacing: 3 }}>{i + 1}</div>
-              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 50, color: CL.navy, lineHeight: 1.1 }}>{w}</div>
+            <div style={{ height: 240, background: WHITE, borderRadius: 6, boxShadow: `0 20px 40px ${CL.shadow}`, display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", padding: 20 }}>
+              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: CL.brass, lineHeight: 1 }}>{i + 1}</div>
+              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 44, color: CL.navy, lineHeight: 1.1 }}>{w}</div>
             </div>
           </div>;
         })}
