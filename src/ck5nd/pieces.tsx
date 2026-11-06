@@ -127,16 +127,17 @@ const build = (): { P: P[]; Z: ZItem[] } => {
 
   // un objeto a la vez: cada uno se va antes de que entre el siguiente
   L.sort((p, q) => p.a - q.a).forEach((p, i, arr) => { const nx = arr[i + 1]; if (nx) p.out = Math.min(p.out, nx.a - 1.05); });
-  // nada encima de Loretta: cada objeto termina su salida antes de que entre la ventana del avatar
-  const AVS = (EDL as { shots: { a: number; b: number; k: string }[] }).shots.filter((x) => x.k === "av").map((x) => x.a);
-  L.forEach((p) => { const nx = AVS.find((v) => v > p.a + 0.5); if (nx !== undefined) p.out = Math.min(p.out, nx - 1.05); });
   return { P: L, Z: ZS };
 };
+
+const AVW = (EDL as { shots: { a: number; b: number; k: string }[] }).shots.filter((x) => x.k === "av").map((x) => [x.a, x.b] as [number, number]);
 
 export const pieces = (t: number, _h: Kit, _TEND: number): React.ReactNode[] => {
   if (!BUILT) BUILT = build();
   const out: React.ReactNode[] = [];
-  BUILT.P.forEach((p, i) => { if (t >= p.a - 0.3 && t <= p.out + 1) out.push(<React.Fragment key={"p" + i}>{p.r(t, p.out)}</React.Fragment>); });
+  // nada encima de Loretta: durante cada ventana del avatar el componente se funde (0,4 s) y vuelve al terminar la ventana
+  const vis = AVW.reduce((m, [a, b]) => Math.min(m, t < a ? Math.min(1, (a - t) / 0.4) : t > b ? Math.min(1, (t - b) / 0.4) : 0), 1);
+  if (vis > 0.001) BUILT.P.forEach((p, i) => { if (t >= p.a - 0.3 && t <= p.out + 1) out.push(<div key={"p" + i} style={{ position: "absolute", inset: 0, opacity: vis }}>{p.r(t, p.out)}</div>); });
   out.push(<ZocaloStack key="zs" t={t} items={BUILT.Z} />);
   return out;
 };

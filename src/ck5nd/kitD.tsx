@@ -743,7 +743,7 @@ export const PanRelay: React.FC<M2> = ({ t, a, out, m: [never1, keep, low, small
     {t < never1 + 2 && <XM t={t} at={never1 + 0.6} x={1300} y={380} s={80} />}
     <Lb t={t} a={never1} x={1300} y={160} txt="NEVER ONE BIG PAN" size={44} w={560} col={C.red} />
     <Ob t={t} n="potatopan" a={keep} x={lerp(1240, 1900, sw)} y={860} w={260} fl={`drop-shadow(0 12px 16px rgba(0,0,0,.4)) brightness(${(1 - 0.35 * ei(t, keep + 1, low)).toFixed(2)})`} op={1 - sw} />
-    <Ob t={t} n="potatopan" a={low + 0.6} x={lerp(1000, 1240, sw)} y={860} w={260} from="none" op={sw} />
+    <Ob t={t} n="potatopan" a={low + 0.6} x={lerp(1000, 1240, sw) + 14 * Math.sin(t * 1.3)} y={860 - 10 * Math.sin(t * 0.9 + 1)} w={260 + 10 * Math.sin(t * 0.7)} from="none" op={sw} />
     <Lb t={t} a={keep} x={1600} y={560} txt="THE OTHER 3 HOT IN THE OVEN" size={32} w={480} />
     <Lb t={t} a={small} x={1600} y={640} txt="SMALL PANS · REPLACE THEM" size={36} w={480} col={C.goldL} />
     <Tag t={t} a={two} x={1650} y={300} txt="2 H · HOT 140° · COLD 40°" w={420} size={32} />
