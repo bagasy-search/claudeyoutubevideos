@@ -491,7 +491,8 @@
     }
    ],
    "bg": "r_cebolla_sopa",
-   "mode": "shutter"
+   "mode": "shutter",
+   "lab": "SOPA DE ARROZ"
   },
   {
    "k": "podium",
