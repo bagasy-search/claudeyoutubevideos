@@ -126,7 +126,8 @@
     }
    ],
    "bg": "r_machaca",
-   "mode": "shutter"
+   "mode": "shutter",
+   "lab": "DE LA ALACENA"
   },
   {
    "k": "neon",

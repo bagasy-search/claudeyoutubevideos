@@ -167,7 +167,10 @@ export const HCandle: React.FC<HP> = ({ t, h }) => <Stage t={t} h={h} mode="iris
 export const HDrawer: React.FC<HP> = ({ t, h }) => <Stage t={t} h={h} mode="shutter">{(tt) => {
   const op = phys(tt, 0.4, 5, 0.7), xs = it(h).slice(0, 4);
   return <>
-    <div style={{ position: "absolute", left: 360, top: 140, width: 1200, height: 380, background: "linear-gradient(180deg,#6b4a2e,#4a321f)", borderRadius: 16, boxShadow: "0 40px 80px rgba(0,0,0,.6)" }} />
+    <div style={{ position: "absolute", left: 360, top: 140, width: 1200, height: 380, background: "linear-gradient(180deg,#6b4a2e,#4a321f)", borderRadius: 16, boxShadow: "0 40px 80px rgba(0,0,0,.6), inset 0 4px 0 rgba(255,255,255,.12)", display: "flex", alignItems: "center", justifyContent: "center", paddingBottom: 90 }}>
+      <div style={{ position: "absolute", left: 50, right: 50, bottom: 30, height: 70, borderRadius: 8, background: "linear-gradient(180deg,#0c0805,#24170d)", boxShadow: "inset 0 14px 24px rgba(0,0,0,.9)" }} />
+      {h.lab && <div style={{ fontWeight: 900, fontSize: String(h.lab).length > 14 ? 92 : 112, letterSpacing: 6, color: "#e2c48a", opacity: cl((tt - 0.3) * 3), textShadow: "0 -2px 0 rgba(0,0,0,.55), 0 2px 0 rgba(255,255,255,.18)" }}>{String(h.lab)}</div>}
+    </div>
     <div style={{ position: "absolute", left: 360 - 60 * op, top: 300 + 260 * op, width: 1200 + 120 * op, height: 340 + 120 * op, perspective: 1800 }}>
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,#2a1d12,#3d2a1a)", borderRadius: 10, transform: "rotateX(48deg)", transformOrigin: "50% 100%", boxShadow: "inset 0 30px 60px rgba(0,0,0,.7)" }}>
         {xs.map((x, i) => {
