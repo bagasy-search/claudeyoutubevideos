@@ -272,14 +272,14 @@ const Chip: React.FC<{ t: number; at: number; out: number; good?: boolean; text?
 };
 
 const Rows: React.FC<{ t: number; out: number; y?: number; items: { at: number; tx: string; ok?: boolean }[] }> = ({ t, out, y = 300, items }) => (
-  <div style={{ position: "absolute", left: 0, right: 0, top: y, display: "flex", flexDirection: "column", alignItems: "center", gap: 26, fontFamily: FONT }}>
+  <div style={{ position: "absolute", left: 0, right: 0, top: y, display: "flex", flexDirection: "column", alignItems: "center", gap: items.length > 3 ? 14 : 22, fontFamily: FONT }}>
     {items.map((it, i) => {
       const k = Math.min(1.1, spr(t, it.at, 0.9)), o = e(t, it.at, it.at + 0.12) * (1 - e(t, out, out + 0.3));
       return (
-        <div key={i} style={{ opacity: o, transform: `translateX(${(1 - Math.min(1, k)) * (i % 2 ? 300 : -300)}px)`, display: "flex", alignItems: "center", gap: 26, padding: "16px 44px", borderRadius: 22,
+        <div key={i} style={{ opacity: o, transform: `translateX(${(1 - Math.min(1, k)) * (i % 2 ? 300 : -300)}px)`, display: "flex", alignItems: "center", gap: 22, padding: items.length > 3 ? "6px 36px" : "14px 44px", borderRadius: 22,
           background: "rgba(10,14,22,.86)", boxShadow: `0 0 0 4px ${it.ok ? "#3fe08a" : it.ok === false ? COL.red : "#e8a33a"}, 0 30px 60px rgba(0,0,0,.55)` }}>
-          <span style={{ fontWeight: 900, fontSize: 70, color: it.ok ? "#7dffb4" : it.ok === false ? "#ff6b5e" : "#ffc35a" }}>{it.ok ? "✓" : it.ok === false ? "✗" : "›"}</span>   {/* sin marca = neutro (06-nov) */}
-          <span style={{ fontWeight: 900, fontSize: items.length > 3 ? 50 : 60, color: "#fff", letterSpacing: 2 }}>{it.tx}</span>
+          <span style={{ fontWeight: 900, fontSize: items.length > 3 ? 48 : 66, color: it.ok ? "#7dffb4" : it.ok === false ? "#ff6b5e" : "#ffc35a" }}>{it.ok ? "✓" : it.ok === false ? "✗" : "›"}</span>   {/* sin marca = neutro (06-nov) */}
+          <span style={{ fontWeight: 900, fontSize: Math.min(items.length > 3 ? 44 : 58, Math.floor(1500 / (Math.max(...items.map((x) => x.tx.length)) * 0.68))), color: "#fff", letterSpacing: 2 }}>{it.tx}</span>
         </div>
       );
     })}
@@ -436,12 +436,12 @@ export const makeVideo = (cfg: Cfg) => {
     switch (o.k) {
       case "place": { const [n, ...r] = args.split(" "); return <PlaceTitle key={key} t={t} at={o.a + 0.1} out={o.b} n={n} name={r.join(" ")} good={o.good ?? +n >= 6} />; }
       case "chip": { const [g, ...r] = args.split(" "); return <Chip key={key} t={t} at={o.a} out={o.b} good={g === "good"} text={r.length ? r.join(" ") : undefined} />; }
-      case "stamp": return <Stamp key={key} t={t} at={o.a} out={o.b} text={args} x={960} y={300} size={args.length > 20 ? 72 : 90} />;
+      case "stamp": return <Stamp key={key} t={t} at={o.a} out={o.b} text={args} x={960} y={870} size={args.length > 20 ? 72 : 90} />;
       case "big": return <BigNum key={key} t={t} at={o.a} out={o.b} text={args} size={Math.min(args.length > 24 ? 84 : args.length > 18 ? 100 : args.length > 12 ? 124 : 200, Math.floor(1700 / (args.length * 0.64)))} />;
       case "lower": { const [n, l2 = ""] = args.split("|").map((x) => x.trim()); return <LowerThird key={key} t={t} at={o.a} out={o.b} name={n} l2={l2} l2at={o.a + 0.6} />; }
       case "watch": { const [n, ...r] = args.split(" "); return <Stopwatch key={key} t={t} at={o.a} out={o.b} x={1300} y={540} n={+n} label={r.join(" ") || undefined} />; }
       case "docs": return <DocList key={key} t={t} out={o.b} items={(o.items ?? []).map((it) => { const [ic, ...r] = it.tx.split(" "); return { at: it.a, ic, tx: r.join(" ") }; })} />;
-      case "rows": return <Rows key={key} t={t} out={o.b} y={(o.items ?? []).length > 3 ? 220 : 300} items={(o.items ?? []).map((it) => ({ at: it.a, tx: it.tx, ok: it.ok }))} />;
+      case "rows": return <Rows key={key} t={t} out={o.b} y={(o.items ?? []).length > 3 ? 690 : 690} items={(o.items ?? []).map((it) => ({ at: it.a, tx: it.tx, ok: it.ok }))} />;
       case "sub": return <Subscribe key={key} t={t} at={o.a + 0.3} out={o.b} />;
       case "desc": return <Desc key={key} t={t} at={o.a} out={o.b} text={cfg.desc} />;
       case "cover": return <Cover key={key} t={t} at={o.a} out={o.b} n={args || "l4"} />;
