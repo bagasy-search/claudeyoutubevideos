@@ -1,0 +1,485 @@
+{
+ "desc": "🔧 El sensor que causa los tirones + Manual del Mecánico",
+ "replies": [],
+ "pages": {},
+ "heroes": [
+  {
+   "k": "typewriter",
+   "at": 9.24,
+   "out": 13.74,
+   "lines": [
+    "TIRÓN, TIRÓN",
+    "Y DESPUÉS AGARRA"
+   ],
+   "red": 1,
+   "bg": "n_cuesta",
+   "mode": "blinds"
+  },
+  {
+   "k": "dice",
+   "at": 76.82,
+   "out": 80.82,
+   "v": 10,
+   "lab": "SEGUNDOS DE PRUEBA",
+   "bg": "n_piezas_cambiadas",
+   "mode": "drop"
+  },
+  {
+   "k": "candle",
+   "at": 134.98,
+   "out": 140.98,
+   "lab": "TRUCOS DE MANTENIMIENTO",
+   "sub": "PASO A PASO",
+   "bg": "n_aerosol",
+   "mode": "iris"
+  },
+  {
+   "k": "antes",
+   "at": 201.98,
+   "out": 208.48,
+   "img": "n_pastel",
+   "img2": "n_motor_aire",
+   "a": "POCA",
+   "b": "MUCHA",
+   "lab": "LA MEDIDA JUSTA",
+   "bg": "n_pastel",
+   "mode": "split"
+  },
+  {
+   "k": "loupe",
+   "at": 252.22,
+   "out": 258.22,
+   "img": "n_pelicula",
+   "fx": 0.5,
+   "fy": 0.5,
+   "lab": "LOS HILITOS",
+   "bg": "n_pelicula",
+   "mode": "diag"
+  },
+  {
+   "k": "pulse",
+   "at": 307.95,
+   "out": 312.45,
+   "a": "DE A POCO",
+   "flat": 1,
+   "lab": "NO AVISA DE GOLPE",
+   "bg": "n_subida_rebasa",
+   "mode": "shutter"
+  },
+  {
+   "k": "searchlight",
+   "at": 372.93,
+   "out": 377.93,
+   "img": "n_caja_mal",
+   "lab": "SIGUE EL AIRE",
+   "bg": "n_caja_mal",
+   "mode": "diag"
+  },
+  {
+   "k": "compass",
+   "at": 442.61,
+   "out": 447.11,
+   "opts": [
+    "LO LLEVA",
+    "NO LO LLEVA",
+    "NO SÉ",
+    "EL VECINO"
+   ],
+   "win": 0,
+   "lab": "PREGUNTA EN LA CASA DE REPUESTOS",
+   "bg": "n_repuestos",
+   "mode": "iris"
+  },
+  {
+   "k": "radar",
+   "at": 503.37,
+   "out": 509.87,
+   "items": [
+    {
+     "t": "SIN FUERZA",
+     "at": 0
+    },
+    {
+     "t": "TIRONES",
+     "at": 0
+    },
+    {
+     "t": "CUESTA ARRANCAR",
+     "at": 0
+    },
+    {
+     "t": "LUZ DEL MOTOR",
+     "at": 0
+    }
+   ],
+   "lab": "LAS SEÑALES",
+   "bg": "n_semaforo",
+   "mode": "wipe"
+  },
+  {
+   "k": "dominoes",
+   "at": 554.87,
+   "out": 561.87,
+   "items": [
+    {
+     "t": "FILTRO LAVABLE",
+     "img": "n_caliente_suave",
+     "at": 0
+    },
+    {
+     "t": "ACEITADO",
+     "img": "n_herramientas",
+     "at": 0
+    },
+    {
+     "t": "SENSOR SUCIO",
+     "img": "n_punta_seguridad",
+     "at": 0
+    }
+   ],
+   "stamp": "MÁS MUGRE",
+   "bad": 1,
+   "bg": "n_caliente_suave",
+   "mode": "blinds"
+  },
+  {
+   "k": "traffic",
+   "at": 607.81,
+   "out": 612.31,
+   "lights": [
+    "CALIENTE",
+    "TIBIO",
+    "FRÍO"
+   ],
+   "only": 2,
+   "bg": "n_punta_seguridad",
+   "mode": "diag"
+  },
+  {
+   "k": "chain",
+   "at": 669.91,
+   "out": 675.91,
+   "weak": 1,
+   "lab": "NUNCA DE LOS CABLES",
+   "sub": "MUEVE EL ENCHUFE",
+   "bg": "v04_conector",
+   "mode": "split"
+  },
+  {
+   "k": "level",
+   "at": 741.25,
+   "out": 745.75,
+   "lab": "QUE SEQUE SOLO",
+   "sub": "VEINTE O TREINTA MINUTOS",
+   "bg": "v06_seca",
+   "mode": "wipe"
+  },
+  {
+   "k": "neon",
+   "at": 798.13,
+   "out": 804.13,
+   "lab": "sube parejo",
+   "col": "#5dff9a",
+   "bg": "n_sube_parejo",
+   "mode": "blinds"
+  },
+  {
+   "k": "fridge",
+   "at": 848.17,
+   "out": 854.67,
+   "items": [
+    {
+     "t": "Otro líquido",
+     "at": 0
+    },
+    {
+     "t": "Apuro",
+     "at": 0
+    },
+    {
+     "t": "Tocar los hilitos",
+     "at": 0
+    },
+    {
+     "t": "Mal cerrado",
+     "at": 0
+    },
+    {
+     "t": "Motor caliente",
+     "at": 0
+    }
+   ],
+   "lab": "LOS CINCO ERRORES",
+   "bg": "n_foto_tel",
+   "mode": "drop"
+  },
+  {
+   "k": "indexbox",
+   "at": 912.97,
+   "out": 919.47,
+   "items": [
+    {
+     "t": "Qué tocar",
+     "img": "n_tel_pausa",
+     "at": 0
+    },
+    {
+     "t": "Qué no tocar",
+     "img": "n_manual_filtro",
+     "at": 0
+    },
+    {
+     "t": "Cada cuánto",
+     "img": "n_bolsita",
+     "at": 0
+    }
+   ],
+   "lab": "en la guantera",
+   "bg": "n_tel_pausa",
+   "mode": "wipe"
+  },
+  {
+   "k": "peel",
+   "at": 968.45,
+   "out": 974.45,
+   "img": "n_cepillo",
+   "img2": "n_filtro_aceitado",
+   "a": "CUALQUIER LÍQUIDO",
+   "lab": "SÓLO EL CORRECTO",
+   "bad": 1,
+   "bg": "n_cepillo",
+   "mode": "diag"
+  },
+  {
+   "k": "xray",
+   "at": 1033.07,
+   "out": 1039.07,
+   "img": "n_plastico_rajado",
+   "lab": "EL AIRE QUE NADIE MIDE",
+   "bg": "n_plastico_rajado",
+   "mode": "blinds"
+  },
+  {
+   "k": "gears",
+   "at": 1096.79,
+   "out": 1102.79,
+   "items": [
+    {
+     "t": "BUJÍAS",
+     "at": 0
+    },
+    {
+     "t": "BOBINA",
+     "at": 0
+    },
+    {
+     "t": "FILTRO DE GASOLINA",
+     "at": 0
+    }
+   ],
+   "lab": "LO QUE SE PARECE",
+   "bg": "n_filtro_gas",
+   "mode": "diag"
+  },
+  {
+   "k": "puzzle",
+   "at": 1151.35,
+   "out": 1157.35,
+   "img": "n_silbido",
+   "lab": "LAS MANGUERITAS",
+   "bg": "n_silbido",
+   "mode": "split"
+  },
+  {
+   "k": "piggy",
+   "at": 1217.41,
+   "out": 1221.91,
+   "n": 4,
+   "lab": "CARGA MENOS GASOLINA",
+   "bg": "n_taxista_sonrie",
+   "mode": "drop"
+  },
+  {
+   "k": "vault",
+   "at": 1269.05,
+   "out": 1273.55,
+   "img": "n_aurelio_luz",
+   "lab": "LA PELÍCULA GRIS",
+   "bg": "n_aurelio_luz",
+   "mode": "iris"
+  },
+  {
+   "k": "conveyor",
+   "at": 1331.71,
+   "out": 1337.21,
+   "items": [
+    {
+     "t": "FILTRO SUCIO",
+     "img": "n_aurelio_manos",
+     "at": 0
+    },
+    {
+     "t": "SENSOR LIMPIO",
+     "img": "n_c_rie",
+     "at": 0
+    },
+    {
+     "t": "OTRA VEZ SUCIO",
+     "img": "n_camino_tierra",
+     "at": 0
+    }
+   ],
+   "lab": "LOS DOS JUNTOS",
+   "bg": "n_aurelio_manos",
+   "mode": "shutter"
+  },
+  {
+   "k": "letter",
+   "at": 1412.11,
+   "out": 1418.61,
+   "lines": [
+    "Un buen mecánico",
+    "prefiere un cliente",
+    "que sabe"
+   ],
+   "sign": "Claudio",
+   "bg": "n_c_rie",
+   "mode": "blinds"
+  },
+  {
+   "k": "shelf",
+   "at": 1451.79,
+   "out": 1456.29,
+   "items": [
+    {
+     "t": "LUZ APAGADA",
+     "img": "n_camino_tierra",
+     "at": 0
+    },
+    {
+     "t": "CÓDIGO FUERA",
+     "img": "n_alcohol",
+     "at": 0
+    }
+   ],
+   "lab": "QUEDÓ BIEN",
+   "bg": "n_camino_tierra",
+   "mode": "drop"
+  },
+  {
+   "k": "drawer",
+   "at": 1518.24,
+   "out": 1523.74,
+   "items": [
+    {
+     "t": "EL CONECTOR",
+     "img": "n_alcohol",
+     "at": 0
+    },
+    {
+     "t": "MOTOR EN MARCHA",
+     "img": "n_modo_emergencia",
+     "at": 0
+    }
+   ],
+   "bg": "n_alcohol",
+   "mode": "shutter"
+  },
+  {
+   "k": "dart",
+   "at": 1570.48,
+   "out": 1574.98,
+   "miss": [
+    "ROPA SUELTA",
+    "CERCA DE LA CORREA"
+   ],
+   "lab": "LEJOS DEL VENTILADOR",
+   "bg": "n_freno_mano",
+   "mode": "iris"
+  },
+  {
+   "k": "branches",
+   "at": 1638.02,
+   "out": 1642.52,
+   "items": [
+    {
+     "t": "VIEJOS: MÁS GRANDE",
+     "at": 0
+    },
+    {
+     "t": "NUEVOS: MÁS CHICO",
+     "at": 0
+    },
+    {
+     "t": "IGUAL SE LIMPIA",
+     "at": 0
+    }
+   ],
+   "lab": "VIEJOS Y NUEVOS",
+   "bg": "n_viejo_nuevo",
+   "mode": "drop"
+  },
+  {
+   "k": "weights",
+   "at": 1689.52,
+   "out": 1694.02,
+   "items": [
+    {
+     "t": "UN DÍA",
+     "at": 0
+    },
+    {
+     "t": "DOS DÍAS",
+     "at": 0
+    },
+    {
+     "t": "SE ACOMODA",
+     "at": 0
+    }
+   ],
+   "lab": "EL MOTOR REAPRENDE",
+   "bg": "n_viejo_nuevo",
+   "mode": "shutter"
+  },
+  {
+   "k": "blueprint",
+   "at": 1755.02,
+   "out": 1759.52,
+   "img": "n_grapas",
+   "dims": [
+    {
+     "t": "las grapas",
+     "x1": 0.18,
+     "y1": 0.75,
+     "x2": 0.8,
+     "y2": 0.75
+    }
+   ],
+   "lab": "QUE NO QUEDE UNA RENDIJA",
+   "bg": "n_grapas",
+   "mode": "wipe"
+  },
+  {
+   "k": "mosaic",
+   "at": 1822.06,
+   "out": 1826.56,
+   "imgs": [
+    "n_pcv",
+    "v10_cierra",
+    "n_pcv",
+    "n_pcv",
+    "n_pcv",
+    "n_pcv",
+    "n_pcv",
+    "n_pcv",
+    "n_pcv",
+    "n_pcv",
+    "n_pcv",
+    "n_pcv"
+   ],
+   "lab": "EL REPASO",
+   "bg": "n_pcv",
+   "mode": "split"
+  }
+ ]
+}
