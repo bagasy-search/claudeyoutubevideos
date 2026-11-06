@@ -30,9 +30,11 @@ const crypto = await import("node:crypto");
 const md5 = (f) => crypto.createHash("md5").update(fs.readFileSync(f)).digest("hex");
 const hashes = new Set(Object.values(used).map((u) => u.h).filter(Boolean));
 for (const n of fs.readdirSync(SH).filter((x) => x.endsWith("_raw.mp4"))) { const nm = n.replace(/_raw\.mp4$/, ""); if (fs.existsSync(OUT + nm + ".mp4")) hashes.add(md5(SH + n)); }
+const PICKS = process.env.STOCK_PICKS ? JSON.parse(fs.readFileSync(process.env.STOCK_PICKS, "utf8")) : {};
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const SYS = `You pick stock footage for a practical cleaning YouTube channel (a 58-year-old hotel maintenance janitor; bathrooms, toilets, sinks, hotel corridors and rooms, gloves, brushes). You see a numbered contact sheet (8 thumbnails, numbers in the corner, row by row 1-4 top, 5-8 bottom) and the SCENE the narration needs. First think in 8 words about what each candidate really shows, then choose the ONE thumbnail that clearly shows the NEED (the object and action named in the query); the extra details of the context are optional and need not appear. Reject (answer 0) if none clearly shows it, or if the best one has any of: visible text/logos/watermark, a person posing and looking at the camera, a young influencer or studio-cinematic look, a dark moody or neon grade, nudity or a person in a towel or shower, a blurred-background stock look, or the wrong object/action (a coffee machine is not a sink, shaving is not a mirror). Be practical: a clean, real-looking shot of the NEED is a pass. Prefer ordinary bathroom or hotel realism, ordinary light, gloved hands doing the action, the whole frame readable and in focus. Answer ONLY JSON: {"why": "<8 words>", "pick": <0-8>}`;
 async function judge(name, sheet) {
+  if (PICKS[name] != null) return { pick: +PICKS[name], why: "elegida a ojo (agnes caido)" };
   for (let a = 1; a <= 4; a++) {
     try {
       const b64 = fs.readFileSync(sheet).toString("base64");
