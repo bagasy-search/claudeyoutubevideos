@@ -1,0 +1,552 @@
+{
+ "desc": "🔔 20 trucos de centavos para que tu casa avise + El Método del Cerrajero",
+ "replies": [],
+ "pages": {},
+ "heroes": [
+  {
+   "k": "searchlight",
+   "at": 8.06,
+   "out": 12.56,
+   "img": "n_puerta_atras",
+   "lab": "TRES CENTÍMETROS",
+   "bg": "n_puerta_atras",
+   "mode": "shutter"
+  },
+  {
+   "k": "abacus",
+   "at": 69.45,
+   "out": 75.45,
+   "v": 20,
+   "u": "ALARMAS",
+   "sub": "DE CENTAVOS",
+   "bg": "v03_cocina",
+   "mode": "blinds"
+  },
+  {
+   "k": "candle",
+   "at": 123.49,
+   "out": 127.99,
+   "lab": "UN TRUCO POR SEMANA",
+   "sub": "DE CERRAJERO",
+   "bg": "n_vecino_luz",
+   "mode": "iris"
+  },
+  {
+   "k": "chain",
+   "at": 196.09,
+   "out": 200.59,
+   "weak": 1,
+   "lab": "LO CARO, APAGADO",
+   "sub": "NO SIRVE",
+   "bg": "n_tablero_llaves",
+   "mode": "split"
+  },
+  {
+   "k": "blueprint",
+   "at": 248.51,
+   "out": 253.01,
+   "img": "v04_pinza",
+   "dims": [
+    {
+     "t": "las tachuelas",
+     "x1": 0.25,
+     "y1": 0.7,
+     "x2": 0.72,
+     "y2": 0.7
+    }
+   ],
+   "lab": "LA PINZA QUE SUENA",
+   "bg": "v04_pinza",
+   "mode": "wipe"
+  },
+  {
+   "k": "xray",
+   "at": 315.01,
+   "out": 321.01,
+   "img": "n_nieto_arma",
+   "lab": "LA PUERTA DE ATRÁS",
+   "bg": "n_nieto_arma",
+   "mode": "blinds"
+  },
+  {
+   "k": "traffic",
+   "at": 382.89,
+   "out": 388.89,
+   "lights": [
+    "SE ABRE",
+    "SUENA",
+    "SE VA"
+   ],
+   "only": 2,
+   "bg": "n_timbre_bici",
+   "mode": "diag"
+  },
+  {
+   "k": "letter",
+   "at": 442.27,
+   "out": 448.77,
+   "lines": [
+    "El ring",
+    "lo asustó más",
+    "a él"
+   ],
+   "sign": "Claudio",
+   "bg": "n_muchacho_corre",
+   "mode": "blinds"
+  },
+  {
+   "k": "level",
+   "at": 496.99,
+   "out": 502.49,
+   "lab": "CINCO CENTÍMETROS",
+   "sub": "DE PIEDRA SUELTA",
+   "bg": "n_bolsa_grava",
+   "mode": "wipe"
+  },
+  {
+   "k": "loupe",
+   "at": 551.95,
+   "out": 556.95,
+   "img": "n_huellas",
+   "fx": 0.5,
+   "fy": 0.6,
+   "lab": "HUELLAS QUE NO SON TUYAS",
+   "bg": "n_huellas",
+   "mode": "diag"
+  },
+  {
+   "k": "dart",
+   "at": 625.29,
+   "out": 629.79,
+   "miss": [
+    "ESCONDIDO",
+    "CHIQUITO"
+   ],
+   "lab": "DONDE SE VEA",
+   "bg": "n_cartel_perro",
+   "mode": "iris"
+  },
+  {
+   "k": "drawer",
+   "at": 680.99,
+   "out": 685.49,
+   "items": [
+    {
+     "t": "EL PLATO",
+     "img": "n_plato_perro",
+     "at": 0
+    },
+    {
+     "t": "LA CADENA",
+     "img": "n_cerca_mira",
+     "at": 0
+    }
+   ],
+   "bg": "n_plato_perro",
+   "mode": "shutter",
+   "lab": "PERRO EN CASA"
+  },
+  {
+   "k": "ticket",
+   "at": 731.37,
+   "out": 737.37,
+   "kick": "EL PERRO",
+   "title": "QUE NO COME",
+   "sub": "NI LADRA, NI SE ENFERMA",
+   "v": "✓",
+   "u": "TRABAJA",
+   "bg": "n_plato_seco",
+   "mode": "split"
+  },
+  {
+   "k": "gears",
+   "at": 795.93,
+   "out": 801.93,
+   "items": [
+    {
+     "t": "LA RADIO",
+     "at": 0
+    },
+    {
+     "t": "EL TEMPORIZADOR",
+     "at": 0
+    },
+    {
+     "t": "VOCES",
+     "at": 0
+    }
+   ],
+   "lab": "ALGUIEN EN CASA",
+   "bg": "v07_temporizador",
+   "mode": "diag"
+  },
+  {
+   "k": "dominoes",
+   "at": 857.37,
+   "out": 862.87,
+   "items": [
+    {
+     "t": "MISMA LUZ",
+     "img": "n_vecina_mira",
+     "at": 0
+    },
+    {
+     "t": "MISMO CUARTO",
+     "img": "n_luces_cuartos",
+     "at": 0
+    },
+    {
+     "t": "MISMA HORA",
+     "img": "n_lampara_mesa",
+     "at": 0
+    }
+   ],
+   "stamp": "UNA CASA VACÍA",
+   "bad": 1,
+   "bg": "n_vecina_mira",
+   "mode": "wipe"
+  },
+  {
+   "k": "peel",
+   "at": 912.43,
+   "out": 916.93,
+   "img": "n_cortina",
+   "img2": "n_luz_azul",
+   "a": "VE LUZ",
+   "lab": "Y NADA DE VALOR",
+   "bg": "n_cortina",
+   "mode": "diag"
+  },
+  {
+   "k": "pulse",
+   "at": 980.37,
+   "out": 986.37,
+   "a": "LUZ QUE CAMBIA",
+   "lab": "LA CASA TIENE VIDA",
+   "bg": "n_c_celular",
+   "mode": "shutter"
+  },
+  {
+   "k": "shelf",
+   "at": 1032.29,
+   "out": 1038.29,
+   "items": [
+    {
+     "t": "LAS BOTAS",
+     "img": "n_sombrero",
+     "at": 0
+    },
+    {
+     "t": "EL CASCO",
+     "img": "n_chaqueta",
+     "at": 0
+    }
+   ],
+   "lab": "UN HOMBRE GRANDE EN CASA",
+   "bg": "n_sombrero",
+   "mode": "drop"
+  },
+  {
+   "k": "funnel",
+   "at": 1105.77,
+   "out": 1112.27,
+   "items": [
+    {
+     "t": "PASTO CORTADO",
+     "at": 0
+    },
+    {
+     "t": "DIARIO ADENTRO",
+     "at": 0
+    },
+    {
+     "t": "BUZÓN VACÍO",
+     "at": 0
+    }
+   ],
+   "lab": "ALGUIEN CUIDA LA CASA",
+   "bg": "n_pasto_alto",
+   "mode": "wipe"
+  },
+  {
+   "k": "piggy",
+   "at": 1156.47,
+   "out": 1162.47,
+   "n": 3,
+   "lab": "UN CHICO, CADA QUINCE DÍAS",
+   "bg": "n_chico_pasto",
+   "mode": "drop"
+  },
+  {
+   "k": "antes",
+   "at": 1214.47,
+   "out": 1220.97,
+   "img": "n_cinta_negra",
+   "img2": "n_espejo",
+   "a": "LUZ LLAMATIVA",
+   "b": "DISCRETA",
+   "lab": "LA CÁMARA DE IMITACIÓN",
+   "bg": "n_cinta_negra",
+   "mode": "split"
+  },
+  {
+   "k": "vault",
+   "at": 1274.21,
+   "out": 1278.71,
+   "img": "n_espejo",
+   "lab": "UN OJO MÁS EN LA CASA",
+   "bg": "n_espejo",
+   "mode": "iris"
+  },
+  {
+   "k": "neon",
+   "at": 1336.99,
+   "out": 1342.99,
+   "lab": "nadie quiere luz encima",
+   "col": "#ffb44a",
+   "bg": "n_iluminado",
+   "mode": "blinds"
+  },
+  {
+   "k": "puzzle",
+   "at": 1388.44,
+   "out": 1394.44,
+   "img": "n_magnetica",
+   "lab": "EL MAGNÉTICO",
+   "bg": "n_magnetica",
+   "mode": "split"
+  },
+  {
+   "k": "indexbox",
+   "at": 1459.18,
+   "out": 1464.18,
+   "items": [
+    {
+     "t": "Tu vecino",
+     "img": "n_ventana_bano",
+     "at": 0
+    },
+    {
+     "t": "La libreta",
+     "img": "n_libreta",
+     "at": 0
+    },
+    {
+     "t": "El de enfrente",
+     "img": "n_jubilados",
+     "at": 0
+    }
+   ],
+   "lab": "la libreta del vecino",
+   "bg": "n_ventana_bano",
+   "mode": "wipe"
+  },
+  {
+   "k": "typewriter",
+   "at": 1510.48,
+   "out": 1515.48,
+   "lines": [
+    "LA MEJOR ALARMA",
+    "ES LA VECINA"
+   ],
+   "bg": "n_jubilados",
+   "mode": "blinds"
+  },
+  {
+   "k": "compass",
+   "at": 1577.48,
+   "out": 1583.48,
+   "opts": [
+    "QUEMADO",
+    "LED QUE DURA",
+    "SIN FOCO",
+    "TAPADO"
+   ],
+   "win": 1,
+   "lab": "EL FOCO DE LA ENTRADA",
+   "bg": "n_mirilla",
+   "mode": "iris"
+  },
+  {
+   "k": "weights",
+   "at": 1631.43,
+   "out": 1635.93,
+   "items": [
+    {
+     "t": "BAJAS",
+     "at": 0
+    },
+    {
+     "t": "PODADAS",
+     "at": 0
+    },
+    {
+     "t": "CON ESPINAS",
+     "at": 0
+    }
+   ],
+   "lab": "LAS PLANTAS DE LA VENTANA",
+   "bg": "n_buganvilla",
+   "mode": "shutter"
+  },
+  {
+   "k": "radar",
+   "at": 1697.31,
+   "out": 1703.81,
+   "items": [
+    {
+     "t": "SALE A LA MISMA HORA",
+     "at": 0
+    },
+    {
+     "t": "VUELVE TARDE",
+     "at": 0
+    },
+    {
+     "t": "LOS FINES DE SEMANA",
+     "at": 0
+    }
+   ],
+   "lab": "LO QUE MIRA EL LADRÓN",
+   "bg": "n_patron",
+   "mode": "iris"
+  },
+  {
+   "k": "conveyor",
+   "at": 1749.23,
+   "out": 1756.23,
+   "items": [
+    {
+     "t": "EL DIARIO",
+     "img": "n_matrimonio",
+     "at": 0
+    },
+    {
+     "t": "EL AUTO",
+     "img": "n_auto_despacio",
+     "at": 0
+    },
+    {
+     "t": "LAS LUCES",
+     "img": "n_redes",
+     "at": 0
+    }
+   ],
+   "lab": "EL VECINO QUE AYUDA",
+   "bg": "n_matrimonio",
+   "mode": "shutter"
+  },
+  {
+   "k": "led",
+   "at": 1817.63,
+   "out": 1823.63,
+   "lab": "LA ESCALERA, ADENTRO",
+   "sub": "NUNCA EN EL PATIO",
+   "bg": "n_escalera",
+   "mode": "diag"
+  },
+  {
+   "k": "fridge",
+   "at": 1868.35,
+   "out": 1874.85,
+   "items": [
+    {
+     "t": "Cascabeles",
+     "at": 0
+    },
+    {
+     "t": "Ventana del baño",
+     "at": 0
+    },
+    {
+     "t": "Luz de entrada",
+     "at": 0
+    },
+    {
+     "t": "Radio",
+     "at": 0
+    }
+   ],
+   "lab": "CADA NOCHE, DOS MINUTOS",
+   "bg": "n_credencial",
+   "mode": "drop"
+  },
+  {
+   "k": "branches",
+   "at": 1946.49,
+   "out": 1952.49,
+   "items": [
+    {
+     "t": "LO QUE ME ESCRIBEN",
+     "at": 0
+    },
+    {
+     "t": "LO QUE RESPONDO",
+     "at": 0
+    },
+    {
+     "t": "LO QUE SIRVE",
+     "at": 0
+    }
+   ],
+   "lab": "LOS COMENTARIOS",
+   "bg": "v09_acera",
+   "mode": "shutter"
+  },
+  {
+   "k": "emboss",
+   "at": 2002.05,
+   "out": 2008.05,
+   "lab": "DORMIR SIN MIEDO",
+   "sub": "EN TU PROPIA CASA",
+   "bg": "n_viuda",
+   "mode": "wipe"
+  },
+  {
+   "k": "mosaic",
+   "at": 2051.87,
+   "out": 2057.87,
+   "imgs": [
+    "n_departamento",
+    "n_casa_viva",
+    "n_departamento",
+    "n_departamento",
+    "n_departamento",
+    "n_departamento",
+    "n_departamento",
+    "n_departamento",
+    "n_departamento",
+    "n_departamento",
+    "n_departamento",
+    "n_departamento"
+   ],
+   "lab": "LAS VEINTE",
+   "bg": "n_departamento",
+   "mode": "split"
+  },
+  {
+   "k": "podium",
+   "at": 2110.45,
+   "out": 2114.95,
+   "items": [
+    {
+     "t": "CASCABELES",
+     "img": "n_casa_viva",
+     "at": 0
+    },
+    {
+     "t": "LA GRAVA",
+     "img": "n_casa_viva",
+     "at": 0
+    },
+    {
+     "t": "EL VECINO",
+     "img": "n_casa_viva",
+     "at": 0
+    }
+   ],
+   "bg": "n_casa_viva",
+   "mode": "drop"
+  }
+ ]
+}
