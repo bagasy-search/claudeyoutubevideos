@@ -1,0 +1,561 @@
+{
+ "desc": "🍚 El arroz perfecto + El Gran Recetario de la Abuela",
+ "replies": [],
+ "pages": {},
+ "heroes": [
+  {
+   "k": "antes",
+   "at": 10.54,
+   "out": 15.54,
+   "img": "n_arroz_pasta",
+   "img2": "r_arroz_rojo",
+   "a": "PEGADO",
+   "b": "SUELTO",
+   "lab": "EL MISMO PAQUETE",
+   "bg": "n_arroz_pasta",
+   "mode": "split"
+  },
+  {
+   "k": "abacus",
+   "at": 80.22,
+   "out": 85.22,
+   "v": 3,
+   "u": "DÍAS",
+   "sub": "CON UNA TAZA DE ARROZ",
+   "bg": "r_arroz_crudo",
+   "mode": "blinds"
+  },
+  {
+   "k": "candle",
+   "at": 128.78,
+   "out": 133.28,
+   "lab": "COCINAR RICO",
+   "sub": "CON MUY POCO",
+   "bg": "r_jitomates",
+   "mode": "iris"
+  },
+  {
+   "k": "typewriter",
+   "at": 195.28,
+   "out": 201.28,
+   "lines": [
+    "NUNCA CON LA TAZA",
+    "CON LAS MANOS"
+   ],
+   "bg": "n_arroz_crudo_mal",
+   "mode": "blinds"
+  },
+  {
+   "k": "xray",
+   "at": 256.2,
+   "out": 260.7,
+   "img": "n_mano_nieta",
+   "lab": "EL ALMIDÓN",
+   "bg": "n_mano_nieta",
+   "mode": "split"
+  },
+  {
+   "k": "dice",
+   "at": 324.03,
+   "out": 329.53,
+   "v": 5,
+   "lab": "HASTA QUE SALGA CLARA",
+   "bg": "r_tira_agua",
+   "mode": "drop"
+  },
+  {
+   "k": "neon",
+   "at": 382.61,
+   "out": 387.11,
+   "lab": "dorar el arroz",
+   "col": "#ffb44a",
+   "bg": "n_arroz_leche_mini",
+   "mode": "blinds"
+  },
+  {
+   "k": "loupe",
+   "at": 431.61,
+   "out": 437.61,
+   "img": "n_capita",
+   "fx": 0.5,
+   "fy": 0.5,
+   "lab": "LA CAPITA DORADA",
+   "bg": "n_capita",
+   "mode": "diag"
+  },
+  {
+   "k": "level",
+   "at": 498.95,
+   "out": 504.95,
+   "lab": "MEDIR CON EL DEDO",
+   "sub": "HASTA LA PRIMERA RAYITA",
+   "bg": "n_olla_ancha",
+   "mode": "wipe"
+  },
+  {
+   "k": "funnel",
+   "at": 555.95,
+   "out": 560.95,
+   "items": [
+    {
+     "t": "JITOMATE",
+     "at": 0
+    },
+    {
+     "t": "CEBOLLA",
+     "at": 0
+    },
+    {
+     "t": "AJO",
+     "at": 0
+    },
+    {
+     "t": "AGUA",
+     "at": 0
+    }
+   ],
+   "lab": "EL ARROZ ROJO DE VERDAD",
+   "bg": "n_lata_cubito",
+   "mode": "blinds"
+  },
+  {
+   "k": "traffic",
+   "at": 618.89,
+   "out": 624.89,
+   "lights": [
+    "CRUDO",
+    "HIERVE UN MINUTO",
+    "COCIDO"
+   ],
+   "only": 2,
+   "bg": "n_color_oscuro",
+   "mode": "diag"
+  },
+  {
+   "k": "fridge",
+   "at": 690.47,
+   "out": 696.97,
+   "items": [
+    {
+     "t": "Cáscaras",
+     "at": 0
+    },
+    {
+     "t": "Puntas de cebolla",
+     "at": 0
+    },
+    {
+     "t": "Tallos",
+     "at": 0
+    },
+    {
+     "t": "Al caldo",
+     "at": 0
+    }
+   ],
+   "lab": "EL CALDO DE LA SEMANA",
+   "bg": "n_bolsa_cascaras",
+   "mode": "drop"
+  },
+  {
+   "k": "vault",
+   "at": 733.37,
+   "out": 737.87,
+   "img": "v06_caldo",
+   "lab": "SIEMPRE CALIENTE",
+   "bg": "v06_caldo",
+   "mode": "iris"
+  },
+  {
+   "k": "chain",
+   "at": 799.13,
+   "out": 805.13,
+   "weak": 2,
+   "lab": "NO LO DESTAPES",
+   "sub": "SI LO DESPIERTAS, LLORA",
+   "bg": "n_nino_dormido",
+   "mode": "split"
+  },
+  {
+   "k": "blueprint",
+   "at": 856.59,
+   "out": 862.59,
+   "img": "v07_trapo",
+   "dims": [
+    {
+     "t": "el trapo",
+     "x1": 0.12,
+     "y1": 0.22,
+     "x2": 0.88,
+     "y2": 0.22
+    }
+   ],
+   "lab": "EL TRAPO BAJO LA TAPA",
+   "bg": "v07_trapo",
+   "mode": "wipe"
+  },
+  {
+   "k": "dart",
+   "at": 911.75,
+   "out": 916.75,
+   "miss": [
+    "AL FINAL",
+    "POR ENCIMA"
+   ],
+   "lab": "EN EL LÍQUIDO, AL PRINCIPIO",
+   "bg": "r_arroz_suelto",
+   "mode": "iris"
+  },
+  {
+   "k": "searchlight",
+   "at": 983.53,
+   "out": 988.03,
+   "img": "n_laurel",
+   "lab": "UNA HOJITA DE LAUREL",
+   "bg": "n_laurel",
+   "mode": "shutter"
+  },
+  {
+   "k": "letter",
+   "at": 1034.13,
+   "out": 1039.13,
+   "lines": [
+    "El arroz cocido",
+    "no se queda",
+    "en la estufa"
+   ],
+   "sign": "Rosa",
+   "bg": "n_sobras",
+   "mode": "blinds"
+  },
+  {
+   "k": "indexbox",
+   "at": 1102.63,
+   "out": 1109.13,
+   "items": [
+    {
+     "t": "Lunes",
+     "img": "n_tres_tazas",
+     "at": 0
+    },
+    {
+     "t": "Martes",
+     "img": "r_frijoles_huevo",
+     "at": 0
+    },
+    {
+     "t": "Miércoles",
+     "img": "v10_porciones",
+     "at": 0
+    }
+   ],
+   "lab": "una taza, tres días",
+   "bg": "n_tres_tazas",
+   "mode": "wipe"
+  },
+  {
+   "k": "puzzle",
+   "at": 1157.25,
+   "out": 1161.75,
+   "img": "r_arroz_frito",
+   "lab": "ARROZ CON HUEVO",
+   "bg": "r_arroz_frito",
+   "mode": "split"
+  },
+  {
+   "k": "dominoes",
+   "at": 1226.21,
+   "out": 1233.21,
+   "items": [
+    {
+     "t": "REVOLVER",
+     "img": "n_revolver",
+     "at": 0
+    },
+    {
+     "t": "DESTAPAR",
+     "img": "n_destapa",
+     "at": 0
+    },
+    {
+     "t": "SAL AL FINAL",
+     "img": "n_agua_demas",
+     "at": 0
+    }
+   ],
+   "stamp": "LOS ERRORES",
+   "bad": 1,
+   "bg": "n_revolver",
+   "mode": "wipe"
+  },
+  {
+   "k": "led",
+   "at": 1282.27,
+   "out": 1286.77,
+   "lab": "ANTES DE DOS HORAS",
+   "sub": "AL REFRIGERADOR",
+   "bg": "n_afuera_tarde",
+   "mode": "shutter"
+  },
+  {
+   "k": "conveyor",
+   "at": 1332.53,
+   "out": 1338.53,
+   "items": [
+    {
+     "t": "LAVAR",
+     "img": "r_salsa_roja",
+     "at": 0
+    },
+    {
+     "t": "DORAR",
+     "img": "r_zanahoria",
+     "at": 0
+    },
+    {
+     "t": "LICUADO",
+     "img": "n_mido_dedo",
+     "at": 0
+    },
+    {
+     "t": "EL DEDO",
+     "img": "r_salsa_roja",
+     "at": 0
+    }
+   ],
+   "lab": "PASO A PASO",
+   "bg": "r_salsa_roja",
+   "mode": "diag"
+  },
+  {
+   "k": "ticket",
+   "at": 1400.67,
+   "out": 1406.67,
+   "kick": "EL PEGADO",
+   "title": "CRUJIENTE",
+   "sub": "PARA LOS NIÑOS",
+   "v": "✓",
+   "u": "GOLOSINA",
+   "bg": "n_ninos_golosina",
+   "mode": "split"
+  },
+  {
+   "k": "gears",
+   "at": 1456.17,
+   "out": 1460.67,
+   "items": [
+    {
+     "t": "EL FUEGO",
+     "at": 0
+    },
+    {
+     "t": "EL COMAL",
+     "at": 0
+    },
+    {
+     "t": "LA OLLA",
+     "at": 0
+    }
+   ],
+   "lab": "EL COMAL REPARTE",
+   "bg": "n_aluminio_fino",
+   "mode": "diag"
+  },
+  {
+   "k": "peel",
+   "at": 1508.17,
+   "out": 1514.17,
+   "img": "n_rajada",
+   "img2": "n_ceniza",
+   "a": "CON JABÓN",
+   "lab": "AGUA CALIENTE Y CENIZA",
+   "bad": 1,
+   "bg": "n_rajada",
+   "mode": "iris"
+  },
+  {
+   "k": "shelf",
+   "at": 1578.51,
+   "out": 1584.51,
+   "items": [
+    {
+     "t": "ARROZ",
+     "img": "r_huevo_frito",
+     "at": 0
+    },
+    {
+     "t": "FRIJOLES",
+     "img": "n_sarten_mezcla",
+     "at": 0
+    }
+   ],
+   "lab": "LOS DOS MEJORES AMIGOS",
+   "bg": "r_huevo_frito",
+   "mode": "drop"
+  },
+  {
+   "k": "scroll",
+   "at": 1636.23,
+   "out": 1641.23,
+   "items": [
+    {
+     "t": "Lavar",
+     "at": 0
+    },
+    {
+     "t": "Dorar",
+     "at": 0
+    },
+    {
+     "t": "Líquido caliente",
+     "at": 0
+    },
+    {
+     "t": "El dedo",
+     "at": 0
+    },
+    {
+     "t": "Tapar",
+     "at": 0
+    }
+   ],
+   "lab": "SIEMPRE LO MISMO",
+   "bg": "n_arroz_amarillo",
+   "mode": "shutter"
+  },
+  {
+   "k": "compass",
+   "at": 1703.99,
+   "out": 1709.99,
+   "opts": [
+    "FUEGO FUERTE",
+    "BRASAS",
+    "SIN FUEGO",
+    "LEÑA NUEVA"
+   ],
+   "win": 1,
+   "lab": "MOVIENDO LA LEÑA",
+   "bg": "n_lenos",
+   "mode": "iris"
+  },
+  {
+   "k": "globe",
+   "at": 1809.19,
+   "out": 1814.69,
+   "items": [
+    {
+     "t": "HONDURAS",
+     "at": 0
+    }
+   ],
+   "lab": "LO QUE ME ESCRIBEN",
+   "bg": "n_c_abrazo",
+   "mode": "wipe"
+  },
+  {
+   "k": "branches",
+   "at": 1820.59,
+   "out": 1826.59,
+   "items": [
+    {
+     "t": "UNA ENJUAGADA",
+     "at": 0
+    },
+    {
+     "t": "LECHE",
+     "at": 0
+    },
+    {
+     "t": "CANELA",
+     "at": 0
+    }
+   ],
+   "lab": "ARROZ CON LECHE",
+   "bg": "n_c_abrazo",
+   "mode": "drop"
+  },
+  {
+   "k": "drawer",
+   "at": 1875.43,
+   "out": 1881.43,
+   "items": [
+    {
+     "t": "CEBOLLA Y AJO",
+     "img": "r_cebolla_sopa",
+     "at": 0
+    },
+    {
+     "t": "ZANAHORIA",
+     "img": "r_acelga",
+     "at": 0
+    }
+   ],
+   "bg": "r_cebolla_sopa",
+   "mode": "shutter"
+  },
+  {
+   "k": "podium",
+   "at": 1929.01,
+   "out": 1935.01,
+   "items": [
+    {
+     "t": "EL DE ARRIBA",
+     "img": "n_quemado",
+     "at": 0
+    },
+    {
+     "t": "SIN RASPAR",
+     "img": "n_pan_encima",
+     "at": 0
+    },
+    {
+     "t": "UN PAN ENCIMA",
+     "img": "n_rocia",
+     "at": 0
+    }
+   ],
+   "bg": "n_quemado",
+   "mode": "drop"
+  },
+  {
+   "k": "piggy",
+   "at": 1990.07,
+   "out": 1994.57,
+   "n": 3,
+   "lab": "UNA TAZA DE ARROZ",
+   "bg": "n_pastoso",
+   "mode": "shutter"
+  },
+  {
+   "k": "emboss",
+   "at": 2056.49,
+   "out": 2062.49,
+   "lab": "LA MESA CON MANTEL",
+   "sub": "AUNQUE SEA PARA MÍ SOLA",
+   "bg": "n_mantel",
+   "mode": "wipe"
+  },
+  {
+   "k": "mosaic",
+   "at": 2110.13,
+   "out": 2116.13,
+   "imgs": [
+    "n_c_mesa",
+    "v09_sirve",
+    "v02_cuchara",
+    "n_c_mesa",
+    "n_c_mesa",
+    "n_c_mesa",
+    "n_c_mesa",
+    "n_c_mesa",
+    "n_c_mesa",
+    "n_c_mesa",
+    "n_c_mesa",
+    "n_c_mesa"
+   ],
+   "lab": "LOS NUEVE",
+   "bg": "n_c_mesa",
+   "mode": "split"
+  }
+ ]
+}
