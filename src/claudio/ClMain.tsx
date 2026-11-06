@@ -33,6 +33,7 @@ import { ClMattressLayers3D, ClDampSoaked, ClSprayMix, ClDryFan, ClThreeRounds }
 import { ClFaucet3D, ClDropDry, ClAerator, ClMaterials, ClAcidBase, ClWrapGuide } from "./ClLavabo";
 import { TbTub3D, TbLayers3D, TbLedger412, TbKnock, TbCotton, TbHeatJar, TbSprayFill, TbHourglass, TbCompress3D, TbScratchLens, TbBookTub, TbEnamelRust, TbSpongeScale, TbFiveKeys, TbRoutine, TbNeverPour, TbWipeTimer, TbTileFlip } from "./ClTina";
 import { HvSwirlCup, HvBeforeAfter, HvKettleWall, HvTreeRings, HvBlanket, HvGlassTest, HvSachet, HvUnplug, HvFillGauge, HvFizz, HvThreeBoils, HvMeshSoak, HvCalendar, HvAltScale, HvFiveErrors, HvRoutine, HvGlassKettle, HvRecap } from "./ClHervidor";
+import { PlSpit, PlCutaway, PlFlakeCrack, PlUniform, PlManual, PlCalcButton, PlSoleTypes, PlSelfClean, PlRatioJug, PlRinses, PlColdCheck, PlSolePaste, PlHoleSwab, PlNoScratch, PlRagTest, PlEmptyTank, PlParked, PlIronRow, PlFiveErrors, PlStarch, PlRoutine, PlWaterSrc, PlWhenToss, PlRecap } from "./ClPlancha";
 import { manoCam } from "../kits/camara/CamaraMano";
 
 // Ken-Burns al azar POR PLANO (regla 1.ter): sentido 50/50, amplitud 3-9 % fotos / 1,5-4 % clips, foco 28-72 %, paneo atado a la escala.
@@ -89,6 +90,7 @@ const COMP: Record<string, React.FC<any>> = {
   ClFaucet3D, ClDropDry, ClAerator, ClMaterials, ClAcidBase, ClWrapGuide,
   TbTub3D, TbLayers3D, TbLedger412, TbKnock, TbCotton, TbHeatJar, TbSprayFill, TbHourglass, TbCompress3D, TbScratchLens, TbBookTub, TbEnamelRust, TbSpongeScale, TbFiveKeys, TbRoutine, TbNeverPour, TbWipeTimer, TbTileFlip,
   HvSwirlCup, HvBeforeAfter, HvKettleWall, HvTreeRings, HvBlanket, HvGlassTest, HvSachet, HvUnplug, HvFillGauge, HvFizz, HvThreeBoils, HvMeshSoak, HvCalendar, HvAltScale, HvFiveErrors, HvRoutine, HvGlassKettle, HvRecap,
+  PlSpit, PlCutaway, PlFlakeCrack, PlUniform, PlManual, PlCalcButton, PlSoleTypes, PlSelfClean, PlRatioJug, PlRinses, PlColdCheck, PlSolePaste, PlHoleSwab, PlNoScratch, PlRagTest, PlEmptyTank, PlParked, PlIronRow, PlFiveErrors, PlStarch, PlRoutine, PlWaterSrc, PlWhenToss, PlRecap,
 };
 const OVC: Record<string, React.FC<any>> = { ClNameTag, ClStampOv, ClChip, ClAsk };
 
