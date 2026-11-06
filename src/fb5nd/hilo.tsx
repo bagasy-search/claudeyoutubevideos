@@ -1,4 +1,5 @@
 // fb5nd · el HILO: EL CUARTO DEL FONDO a lo largo del relato — el mismo cuarto con su ventana, y el piso que va cambiando
+// 6-nov 10:10: re-render, faltaba public/fb5nd/qr.png (11 chunks del CTA cayeron)
 // con la voz: contrapiso pelado con piedritas → limpio y humedecido → puente → fajas → carpeta mojada → mate → espolvoreado
 // → llana de acero y reflejo → nylon y ladrillos 7 días → sellador. Sirve de RELLENO cuando no hay plano. + el CTA con QR.
 import React from "react";
