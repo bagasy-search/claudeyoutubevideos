@@ -272,14 +272,14 @@ const Chip: React.FC<{ t: number; at: number; out: number; good?: boolean; text?
 };
 
 const Rows: React.FC<{ t: number; out: number; y?: number; items: { at: number; tx: string; ok?: boolean }[] }> = ({ t, out, y = 300, items }) => (
-  <div style={{ position: "absolute", left: 0, right: 0, top: y, display: "flex", flexDirection: "column", alignItems: "center", gap: items.length > 3 ? 14 : 22, fontFamily: FONT }}>
+  <div style={{ position: "absolute", left: items.length > 5 ? 120 : 0, right: items.length > 5 ? 120 : 0, top: y, display: "flex", flexDirection: "column", flexWrap: items.length > 5 ? "wrap" : "nowrap", height: items.length > 5 ? 290 : undefined, alignContent: "center", alignItems: "center", columnGap: 40, rowGap: items.length > 4 ? 10 : items.length > 3 ? 14 : 22, fontFamily: FONT }}>
     {items.map((it, i) => {
       const k = Math.min(1.1, spr(t, it.at, 0.9)), o = e(t, it.at, it.at + 0.12) * (1 - e(t, out, out + 0.3));
       return (
-        <div key={i} style={{ opacity: o, transform: `translateX(${(1 - Math.min(1, k)) * (i % 2 ? 300 : -300)}px)`, display: "flex", alignItems: "center", gap: 22, padding: items.length > 3 ? "6px 36px" : "14px 44px", borderRadius: 22,
+        <div key={i} style={{ opacity: o, transform: `translateX(${(1 - Math.min(1, k)) * (i % 2 ? 300 : -300)}px)`, display: "flex", alignItems: "center", gap: 22, padding: items.length > 4 ? "3px 30px" : items.length > 3 ? "6px 36px" : "14px 44px", borderRadius: 22,
           background: "rgba(10,14,22,.86)", boxShadow: `0 0 0 4px ${it.ok ? "#3fe08a" : it.ok === false ? COL.red : "#e8a33a"}, 0 30px 60px rgba(0,0,0,.55)` }}>
-          <span style={{ fontWeight: 900, fontSize: items.length > 3 ? 48 : 66, color: it.ok ? "#7dffb4" : it.ok === false ? "#ff6b5e" : "#ffc35a" }}>{it.ok ? "✓" : it.ok === false ? "✗" : "›"}</span>   {/* sin marca = neutro (06-nov) */}
-          <span style={{ fontWeight: 900, fontSize: Math.min(items.length > 3 ? 44 : 58, Math.floor(1500 / (Math.max(...items.map((x) => x.tx.length)) * 0.68))), color: "#fff", letterSpacing: 2 }}>{it.tx}</span>
+          <span style={{ fontWeight: 900, fontSize: items.length > 4 ? 38 : items.length > 3 ? 48 : 66, color: it.ok ? "#7dffb4" : it.ok === false ? "#ff6b5e" : "#ffc35a" }}>{it.ok ? "✓" : it.ok === false ? "✗" : "›"}</span>   {/* sin marca = neutro (06-nov) */}
+          <span style={{ fontWeight: 900, fontSize: Math.min(items.length > 4 ? 36 : items.length > 3 ? 44 : 58, Math.floor(1500 / (Math.max(...items.map((x) => x.tx.length)) * 0.68))), color: "#fff", letterSpacing: 2 }}>{it.tx}</span>
         </div>
       );
     })}
@@ -341,7 +341,7 @@ const Comment: React.FC<{ t: number; at: number; out: number; q: string; replies
   if (o <= 0.01) return null;
   const n = Math.round(q.length * e(t, a0 + 0.3, a0 + 2.6)), reply = a0 + 3.0;
   return (
-    <div style={{ position: "absolute", left: 360, top: 170, width: 1200, opacity: o, transform: `translateY(${(1 - Math.min(1, k)) * 120}px)`, fontFamily: FONT }}>
+    <div style={{ position: "absolute", left: 360, top: 590, width: 1200, opacity: o, transform: `translateY(${(1 - Math.min(1, k)) * 120}px)`, fontFamily: FONT }}>
       <div style={{ padding: "34px 44px", borderRadius: 28, background: "rgba(250,248,242,.97)", boxShadow: "0 40px 80px rgba(0,0,0,.6)" }}>
         <div style={{ fontWeight: 900, fontSize: 30, color: "#b03a2e", letterSpacing: 3 }}>💬 ESCRÍBEMELO EN LOS COMENTARIOS</div>
         <div style={{ fontWeight: 800, fontSize: 52, color: "#1d2733", marginTop: 14, lineHeight: 1.2, minHeight: 130 }}>{q.slice(0, n)}<span style={{ opacity: Math.sin(t * 9) > 0 ? 1 : 0 }}>|</span></div>
@@ -441,7 +441,7 @@ export const makeVideo = (cfg: Cfg) => {
       case "lower": { const [n, l2 = ""] = args.split("|").map((x) => x.trim()); return <LowerThird key={key} t={t} at={o.a} out={o.b} name={n} l2={l2} l2at={o.a + 0.6} />; }
       case "watch": { const [n, ...r] = args.split(" "); return <Stopwatch key={key} t={t} at={o.a} out={o.b} x={1300} y={540} n={+n} label={r.join(" ") || undefined} />; }
       case "docs": return <DocList key={key} t={t} out={o.b} items={(o.items ?? []).map((it) => { const [ic, ...r] = it.tx.split(" "); return { at: it.a, ic, tx: r.join(" ") }; })} />;
-      case "rows": return <Rows key={key} t={t} out={o.b} y={(o.items ?? []).length > 3 ? 690 : 690} items={(o.items ?? []).map((it) => ({ at: it.a, tx: it.tx, ok: it.ok }))} />;
+      case "rows": return <Rows key={key} t={t} out={o.b} y={(o.items ?? []).length > 5 ? 720 : 690} items={(o.items ?? []).map((it) => ({ at: it.a, tx: it.tx, ok: it.ok }))} />;
       case "sub": return <Subscribe key={key} t={t} at={o.a + 0.3} out={o.b} />;
       case "desc": return <Desc key={key} t={t} at={o.a} out={o.b} text={cfg.desc} />;
       case "cover": return <Cover key={key} t={t} at={o.a} out={o.b} n={args || "l4"} />;

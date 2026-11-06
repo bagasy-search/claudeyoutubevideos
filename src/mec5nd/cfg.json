@@ -21,7 +21,7 @@
    "out": 80.82,
    "v": 10,
    "lab": "SEGUNDOS DE PRUEBA",
-   "bg": "n_piezas_cambiadas",
+   "bg": "n_sensor_maf_mano",
    "mode": "drop"
   },
   {
@@ -63,16 +63,16 @@
    "a": "DE A POCO",
    "flat": 1,
    "lab": "NO AVISA DE GOLPE",
-   "bg": "n_subida_rebasa",
+   "bg": "n_balanza_polvo",
    "mode": "shutter"
   },
   {
    "k": "searchlight",
    "at": 372.93,
    "out": 377.93,
-   "img": "n_caja_mal",
+   "img": "n_tirones",
    "lab": "SIGUE EL AIRE",
-   "bg": "n_caja_mal",
+   "bg": "n_tirones",
    "mode": "diag"
   },
   {
@@ -152,7 +152,7 @@
     "FRÍO"
    ],
    "only": 2,
-   "bg": "n_punta_seguridad",
+   "bg": "n_auto_sombra",
    "mode": "diag"
   },
   {
@@ -210,7 +210,7 @@
     }
    ],
    "lab": "LOS CINCO ERRORES",
-   "bg": "n_foto_tel",
+   "bg": "n_sensor_roto",
    "mode": "drop"
   },
   {
@@ -242,12 +242,12 @@
    "k": "peel",
    "at": 968.45,
    "out": 974.45,
-   "img": "n_cepillo",
-   "img2": "n_filtro_aceitado",
+   "img": "n_limpiador_equivocado",
+   "img2": "n_sensor_secando",
    "a": "CUALQUIER LÍQUIDO",
    "lab": "SÓLO EL CORRECTO",
    "bad": 1,
-   "bg": "n_cepillo",
+   "bg": "n_limpiador_equivocado",
    "mode": "diag"
   },
   {
@@ -315,22 +315,22 @@
    "items": [
     {
      "t": "FILTRO SUCIO",
-     "img": "n_aurelio_manos",
+     "img": "n_filtro_nuevo",
      "at": 0
     },
     {
      "t": "SENSOR LIMPIO",
-     "img": "n_c_rie",
+     "img": "n_subida_pareja",
      "at": 0
     },
     {
      "t": "OTRA VEZ SUCIO",
-     "img": "n_camino_tierra",
+     "img": "n_c_rie",
      "at": 0
     }
    ],
    "lab": "LOS DOS JUNTOS",
-   "bg": "n_aurelio_manos",
+   "bg": "n_filtro_nuevo",
    "mode": "shutter"
   },
   {
@@ -343,7 +343,7 @@
     "que sabe"
    ],
    "sign": "Claudio",
-   "bg": "n_c_rie",
+   "bg": "n_taller_noche",
    "mode": "blinds"
   },
   {
@@ -353,17 +353,17 @@
    "items": [
     {
      "t": "LUZ APAGADA",
-     "img": "n_camino_tierra",
+     "img": "n_luz_apaga",
      "at": 0
     },
     {
      "t": "CÓDIGO FUERA",
-     "img": "n_alcohol",
+     "img": "n_mangueras_vacio",
      "at": 0
     }
    ],
    "lab": "QUEDÓ BIEN",
-   "bg": "n_camino_tierra",
+   "bg": "n_luz_apaga",
    "mode": "drop"
   },
   {
@@ -373,7 +373,7 @@
    "items": [
     {
      "t": "EL CONECTOR",
-     "img": "n_alcohol",
+     "img": "n_desenchufa",
      "at": 0
     },
     {
@@ -382,8 +382,9 @@
      "at": 0
     }
    ],
-   "bg": "n_alcohol",
-   "mode": "shutter"
+   "bg": "n_desenchufa",
+   "mode": "shutter",
+   "lab": "DESENCHUFAR 10″"
   },
   {
    "k": "dart",
@@ -438,7 +439,7 @@
     }
    ],
    "lab": "EL MOTOR REAPRENDE",
-   "bg": "n_viejo_nuevo",
+   "bg": "n_ralenti2",
    "mode": "shutter"
   },
   {
@@ -464,21 +465,21 @@
    "at": 1822.06,
    "out": 1826.56,
    "imgs": [
-    "n_pcv",
+    "n_descarte",
     "v10_cierra",
-    "n_pcv",
-    "n_pcv",
-    "n_pcv",
-    "n_pcv",
-    "n_pcv",
-    "n_pcv",
-    "n_pcv",
-    "n_pcv",
-    "n_pcv",
-    "n_pcv"
+    "n_descarte",
+    "n_descarte",
+    "n_descarte",
+    "n_descarte",
+    "n_descarte",
+    "n_descarte",
+    "n_descarte",
+    "n_descarte",
+    "n_descarte",
+    "n_descarte"
    ],
    "lab": "EL REPASO",
-   "bg": "n_pcv",
+   "bg": "n_descarte",
    "mode": "split"
   }
  ]
