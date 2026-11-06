@@ -145,14 +145,14 @@ export const HvKettleWall: React.FC<{ bed?: string }> = ({ bed }) => {
             const x = 110 + c * 69, y = 80 + r * 74;
             return <g key={i} transform={`translate(${x} ${y})`}>
               <rect x={-4} y={56} width={60} height={6} fill="#4A5059" />
-              <path d="M8 54 L12 14 Q28 6 44 14 L48 54 Z" fill={on > 0 ? STEEL : "#555B63"} />
+              <path d="M8 54 L12 14 Q28 6 44 14 L48 54 Z" fill={on > 0 ? "#F2B565" : "#555B63"} />
               <path d="M46 20 Q60 26 56 46" fill="none" stroke="#30343B" strokeWidth={5} />
               <circle cx={40} cy={50} r={3} fill={on > 0 ? `rgba(255,140,40,${on})` : "#333"} />
-              {on > 0 ? <circle cx={28} cy={32} r={34} fill={`rgba(255,200,120,${0.10 * on})`} /> : null}
+              {on > 0 ? <circle cx={28} cy={32} r={34} fill={`rgba(255,190,100,${0.22 * on})`} /> : null}
             </g>;
           })}
         </svg>
-        <div style={{ position: "absolute", left: "50%", top: "50%", translate: "-50% -50%", fontFamily: SERIF, fontWeight: 900, fontSize: 240, color: "#fff", textShadow: "0 10px 40px rgba(0,0,0,0.7)", fontVariantNumeric: "tabular-nums", opacity: lin(f, 10, 20) }}>{Math.round(lit)}</div>
+        <div style={{ position: "absolute", left: "50%", top: "50%", translate: "-50% -50%", background: "rgba(20,36,66,0.78)", padding: "10px 60px", borderRadius: 40, fontFamily: SERIF, fontWeight: 900, fontSize: 240, color: "#fff", textShadow: "0 10px 40px rgba(0,0,0,0.7)", fontVariantNumeric: "tabular-nums", opacity: lin(f, 10, 20) }}>{Math.round(lit)}</div>
         <div style={{ position: "absolute", left: "50%", top: "66%", translate: "-50% 0", fontFamily: HAND, fontSize: 70, color: "#fff", textShadow: "0 6px 20px rgba(0,0,0,0.7)", opacity: lin(f, T * 0.78, T * 0.88), whiteSpace: "nowrap" }}>hervidores, uno por habitación</div>
       </Hand2D>
       <RoomLight />
@@ -203,16 +203,20 @@ export const HvBlanket: React.FC<{ bed?: string }> = ({ bed }) => {
       <Hand2D seed={305}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           {/* agua arriba */}
-          <rect x={160} y={180} width={1000} height={520} rx={30} fill="rgba(130,180,220,0.45)" />
+          <rect x={160} y={180} width={1000} height={520} rx={30} fill="rgba(110,160,205,0.55)" stroke="rgba(60,90,130,0.7)" strokeWidth={6} />
+          <rect x={160} y={690} width={1000} height={60} rx={10} fill="#7E8791" />
           {/* resistencia en espiral */}
           <path d="M220 620 Q300 560 380 620 T540 620 T700 620 T860 620 T1020 620 T1100 620" fill="none" stroke={`rgb(${185 + 70 * hot},${115 - 40 * hot},${62 - 30 * hot})`} strokeWidth={34} strokeLinecap="round" />
           {/* manta de piedra */}
-          <path d={`M200 ${620 - 70 * cover} Q300 ${540 - 70 * cover} 390 ${600 - 60 * cover} T560 ${600 - 60 * cover} T720 ${600 - 60 * cover} T880 ${600 - 60 * cover} T1120 ${600 - 70 * cover} L1120 690 L200 690 Z`} fill={SCALE} stroke={SCALED} strokeWidth={4} opacity={cover} />
+          <path d={`M200 ${620 - 90 * cover} Q300 ${540 - 90 * cover} 390 ${600 - 80 * cover} T560 ${600 - 80 * cover} T720 ${600 - 80 * cover} T880 ${600 - 80 * cover} T1120 ${600 - 90 * cover} L1120 690 L200 690 Z`} fill={SCALE} stroke={SCALED} strokeWidth={5} opacity={0.4 + 0.6 * cover} />
+          {Array.from({ length: 30 }, (_, i) => <circle key={"cr" + i} cx={220 + rnd(i) * 880} cy={560 + rnd(i + 3) * 110} r={5 + rnd(i + 5) * 8} fill={SCALED} opacity={cover * 0.8} />)}
+          <path d="M220 620 Q300 560 380 620 T540 620 T700 620 T860 620 T1020 620 T1100 620" fill="none" stroke={`rgba(255,${120 - 60 * hot},40,${0.5 * hot})`} strokeWidth={14} strokeLinecap="round" />
+          <g transform="translate(1250 200)"><rect x={-22} y={0} width={44} height={420} rx={22} fill="#FFFFFF" stroke="#8E969F" strokeWidth={4} /><rect x={-12} y={410 - 360 * (0.3 + 0.7 * hot)} width={24} height={360 * (0.3 + 0.7 * hot)} rx={12} fill={CL.red} /><circle cx={0} cy={430} r={40} fill={CL.red} stroke="#8E969F" strokeWidth={4} /></g>
           {/* flechas de calor que no pasan */}
           {Array.from({ length: 5 }, (_, i) => { const y = 520 - ((f * 3 + i * 40) % 160) * (1 - 0.7 * cover); return <path key={i} d={`M${300 + i * 180} ${y} q 14 -20 0 -40 q -14 -20 0 -40`} fill="none" stroke={hexA("#E0592A", 0.7 * (1 - cover * 0.7))} strokeWidth={8} strokeLinecap="round" />; })}
           {/* medidor de luz de disco */}
-          <g transform="translate(1420 300)">
-            <rect x={-170} y={-200} width={340} height={470} rx={30} fill="#E8E4DA" stroke="#9B958A" strokeWidth={4} />
+          <g transform="translate(1600 330)">
+            <circle cx={0} cy={40} r={230} fill="#E8E4DA" stroke="#9B958A" strokeWidth={6} />
             <rect x={-130} y={-150} width={260} height={70} rx={8} fill="#22262C" />
             <text x={0} y={-102} textAnchor="middle" fontFamily="Courier New" fontWeight={700} fontSize={46} fill="#9FE39A">{kwh.toFixed(2).replace(".", ",")} kWh</text>
             <ellipse cx={0} cy={60} rx={130} ry={34} fill="#B7B1A5" />
@@ -246,16 +250,16 @@ export const HvGlassTest: React.FC<{ bed?: string }> = ({ bed }) => {
             const lvl = 170 * (1 - dry);
             return <g key={i} transform={`translate(${x} ${770 - (1 - p) * 300})`} opacity={p}>
               <ellipse cx={0} cy={6} rx={170} ry={26} fill="rgba(0,0,0,0.18)" />
-              <path d="M-150 -420 L-128 0 L128 0 L150 -420" fill="rgba(235,245,250,0.35)" stroke="rgba(160,180,190,0.9)" strokeWidth={5} />
-              <rect x={-130} y={-lvl - 4} width={260} height={lvl} fill="rgba(160,205,230,0.55)" />
+              <path d="M-150 -420 L-128 0 L128 0 L150 -420" fill="rgba(235,245,250,0.45)" stroke="rgba(255,255,255,0.85)" strokeWidth={8} />
+              <rect x={-130} y={-lvl - 4} width={260} height={lvl} fill="rgba(110,175,225,0.8)" />
               {/* aro que deja */}
-              <ellipse cx={0} cy={-6} rx={128} ry={20} fill="none" stroke="#F6F3EA" strokeWidth={4 + 22 * thick * dry} opacity={0.2 + 0.8 * dry} />
+              <ellipse cx={0} cy={-6} rx={128} ry={20} fill="none" stroke="#F6F3EA" strokeWidth={4 + 56 * thick * dry} opacity={0.3 + 0.7 * dry} />
               {thick > 0.5 ? Array.from({ length: 10 }, (_, k) => <circle key={k} cx={-120 + k * 26} cy={-6 + (k % 2 ? 4 : -4)} r={5 * dry} fill="#FFFFFF" />) : null}
             </g>;
           })}
         </svg>
-        {L.map(([t, , c], i) => <Tag key={i} x={380 + i * 580 - 120} y={250} text={t} color={c} k={lin(f, T * 0.6 + i * 8, T * 0.6 + i * 8 + 10)} />)}
-        <div style={{ position: "absolute", left: 1500, top: 90, fontFamily: HAND, fontSize: 64, color: CL.ink, opacity: lin(f, 4, 14) }}>{dry < 0.98 ? (f < T * 0.3 ? "1 día" : "2 días") : "seco"}</div>
+        {L.map(([t, , c], i) => <Tag key={i} x={380 + i * 580 - 110} y={300} text={t} color={c} k={lin(f, T * 0.6 + i * 8, T * 0.6 + i * 8 + 10)} />)}
+        <div style={{ position: "absolute", left: 1580, top: 420, fontFamily: LABEL, fontWeight: 700, fontSize: 52, color: "#fff", background: CL.navy, padding: "6px 22px", borderRadius: 12, opacity: lin(f, 4, 14) }}>{dry < 0.98 ? (f < T * 0.3 ? "1 día" : "2 días") : "seco"}</div>
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -272,22 +276,23 @@ export const HvSachet: React.FC<{ bed?: string }> = ({ bed }) => {
   const heap = ease(pourK);
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
-      <Bed src={bed} seed={307} dim={0.4} />
+      <Bed src={bed} seed={307} dim={0.72} />
       <Hand2D seed={307}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           {/* el sobre */}
-          <g transform={`translate(760 ${330 - (1 - p) * 500}) rotate(${tilt})`}>
+          <g transform={`translate(1560 ${300 - (1 - p) * 500}) rotate(${-tilt})`}>
             <rect x={-150} y={-230} width={300} height={400} rx={12} fill="#FFFFFF" stroke="#C9C2B4" strokeWidth={4} />
             <rect x={-150} y={-80} width={300} height={90} fill={hexA(CL.yellow, 0.8)} />
-            <rect x={-110} y={-56} width={220} height={16} rx={8} fill="rgba(0,0,0,0.12)" />
-            <rect x={-80} y={-28} width={160} height={12} rx={6} fill="rgba(0,0,0,0.1)" />
+            <text x={0} y={-40} textAnchor="middle" fontFamily="Arial" fontWeight={900} fontSize={40} fill={CL.navy}>ÁCIDO</text>
+            <text x={0} y={0} textAnchor="middle" fontFamily="Arial" fontWeight={900} fontSize={40} fill={CL.navy}>CÍTRICO</text>
+            <text x={0} y={100} textAnchor="middle" fontFamily="Arial" fontSize={28} fill="#777">100 g</text>
             <path d={`M150 -230 L${150 - 120 * tear} -230`} stroke="#FFFFFF" strokeWidth={10} />
             {tear > 0 ? <path d={`M150 -230 L${150 - 120 * tear} ${-230 - 30 * tear}`} stroke="#C9C2B4" strokeWidth={4} fill="#fff" /> : null}
           </g>
           {/* cristales con física */}
           {Array.from({ length: 70 }, (_, i) => {
             const t0 = 34 + rnd(i) * (T * 0.6 - 34); const tt = (f - t0) / fps; if (tt < 0) return null;
-            const y = 230 + 0.5 * 2600 * tt * tt; const x = 900 + rnd(i + 3) * 40 + tt * 120;
+            const y = 200 + 0.5 * 2600 * tt * tt; const x = 1330 - rnd(i + 3) * 40 - tt * 260;
             const land = 760 - heap * 20;
             if (y > land) return <rect key={i} x={1000 + (rnd(i + 8) - 0.5) * 160 * heap} y={land + rnd(i + 9) * 18} width={7} height={7} fill={CIT} stroke="#D8D2C2" strokeWidth={1} transform={`rotate(${rnd(i) * 90} ${1000} ${land})`} />;
             return <rect key={i} x={x} y={y} width={8} height={8} fill={CIT} stroke="#D8D2C2" strokeWidth={1} transform={`rotate(${f * 9 + i * 40} ${x} ${y})`} />;
@@ -297,7 +302,7 @@ export const HvSachet: React.FC<{ bed?: string }> = ({ bed }) => {
           <path d={`M${1010 - 150 * heap} 790 Q1010 ${790 - 60 * heap} ${1010 + 150 * heap} 790`} fill={CIT} stroke="#D8D2C2" strokeWidth={2} />
           <rect x={1180} y={784} width={560} height={30} rx={15} fill={STEEL} stroke={STEELD} strokeWidth={4} />
         </svg>
-        <div style={{ position: "absolute", left: 1230, top: 260, opacity: lin(f, T * 0.55, T * 0.66) }}>
+        <div style={{ position: "absolute", left: 160, top: 220, opacity: lin(f, T * 0.55, T * 0.66), background: "#FFF8EA", padding: "24px 36px", borderRadius: 18, boxShadow: `0 24px 50px ${CL.shadow}` }}>
           <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 96, color: CL.navy, lineHeight: 1 }}>1 cucharada</div>
           <div style={{ fontFamily: HAND, fontSize: 70, color: CL.ink }}>por cada ½ litro de agua</div>
         </div>
@@ -342,7 +347,7 @@ export const HvUnplug: React.FC<{ bed?: string }> = ({ bed }) => {
         </svg>
         <Tag x={1200} y={760} text="desenchufado · frío" k={lin(f, at + 6, at + 16)} />
         <Tag x={1200} y={860} text="apagado no alcanza" k={lin(f, at + 16, at + 26)} color={CL.red} />
-        <Tag x={600} y={960} text="la base nunca se moja" k={dry} color={CL.inkSoft} />
+        <Tag x={180} y={420} text="la base nunca se moja" k={dry} color={CL.navy} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -388,11 +393,12 @@ export const HvFizz: React.FC<{ bed?: string }> = ({ bed }) => {
       <Bed src={bed} seed={310} dim={0.5} />
       <Hand2D seed={310} push={[1.08, 1.0]}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
-          <rect x={0} y={0} width={1920} height={1080} fill={`rgba(${150 + 70 * k},${190 + 30 * k},${220 + 10 * k},0.55)`} />
+          <rect x={0} y={0} width={1920} height={1080} fill={`rgba(${150 + 70 * k},${190 + 30 * k},${220 + 10 * k},0.25)`} />
+          <rect x={210} y={400} width={1500} height={500} rx={40} fill={`rgba(${170 + 40 * k},${200 + 25 * k},${200 + 25 * k},0.85)`} stroke={STEELD} strokeWidth={8} />
           <rect x={0} y={860} width={1920} height={220} fill="url(#hvFzFloor)" />
           <defs><linearGradient id="hvFzFloor" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor={STEELL} /><stop offset="1" stopColor={STEELD} /></linearGradient></defs>
-          {Array.from({ length: 16 }, (_, i) => { const x = 80 + i * 118, w = (60 + rnd(i) * 70) * (1 - 0.85 * k), h = (40 + rnd(i + 5) * 60) * (1 - 0.85 * k); return <path key={i} d={`M${x - w} 862 Q${x - w * 0.6} ${862 - h} ${x} ${862 - h * 1.1} Q${x + w * 0.7} ${862 - h * 0.9} ${x + w} 862 Z`} fill={SCALE} stroke={SCALED} strokeWidth={3} />; })}
-          {Array.from({ length: 90 }, (_, i) => { const per = 30 + rnd(i) * 40; const t = ((f + rnd(i + 2) * per) % per) / per; const x = 80 + (i % 16) * 118 + (rnd(i + 4) - 0.5) * 80 + Math.sin(t * 8 + i) * 8; const y = 850 - t * 700; return <circle key={i} cx={x} cy={y} r={3 + rnd(i + 7) * 6} fill="none" stroke="rgba(255,255,255,0.85)" strokeWidth={2} opacity={(1 - t) * (1 - 0.6 * k)} />; })}
+          {Array.from({ length: 8 }, (_, i) => { const x = 330 + i * 180, w = (70 + rnd(i) * 40) * (1 - 0.85 * k), h = (60 + rnd(i + 5) * 50) * (1 - 0.85 * k); return <path key={i} d={`M${x - w} 862 Q${x - w * 0.6} ${862 - h} ${x} ${862 - h * 1.1} Q${x + w * 0.7} ${862 - h * 0.9} ${x + w} 862 Z`} fill={SCALE} stroke={SCALED} strokeWidth={3} />; })}
+          {Array.from({ length: 64 }, (_, i) => { const per = 30 + rnd(i) * 40; const t = ((f + rnd(i + 2) * per) % per) / per; const x = 330 + (i % 8) * 180 + (rnd(i + 4) - 0.5) * 50 + Math.sin(t * 8 + i) * 8; const y = 840 - t * 420; return <circle key={i} cx={x} cy={y} r={8 + rnd(i + 7) * 14} fill="none" stroke="rgba(255,255,255,0.85)" strokeWidth={2} opacity={(1 - t) * (1 - 0.6 * k)} />; })}
           {/* arco de 20 min */}
           <g transform="translate(1660 200)">
             <circle r={120} fill="rgba(255,255,255,0.85)" />
@@ -402,7 +408,7 @@ export const HvFizz: React.FC<{ bed?: string }> = ({ bed }) => {
           </g>
         </svg>
         <Tag x={1540} y={380} text="min de reposo" k={lin(f, 4, 14)} />
-        <Tag x={700} y={960} text="adentro: el ácido se come la piedra" k={lin(f, 14, 26)} />
+        <Tag x={560} y={970} text="adentro: el ácido se come la piedra" k={lin(f, 14, 26)} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -428,14 +434,15 @@ export const HvThreeBoils: React.FC<{ bed?: string }> = ({ bed }) => {
             return <g key={i} opacity={clamp01(p * 2)}>
               <g transform={`translate(${x} ${300 + (1 - p) * 200}) rotate(${-38 * pour} 60 140)`}>
                 <KettleSide x={0} y={0} s={0.95} water={0.45 * (1 - pour)} led={boil * (1 - pour)} />
+                <rect x={40} y={250} width={220} height={110} rx={20} fill={i < 2 ? "rgba(176,128,70,0.55)" : "rgba(150,200,235,0.45)"} opacity={1 - pour} />
               </g>
               {[0, 1, 2].map((s) => <path key={s} d={`M${x + 150 + s * 40} 280 q 14 -30 0 -60 q -14 -30 0 -60`} fill="none" stroke="rgba(255,255,255,0.85)" strokeWidth={7} opacity={boil * (1 - pour) * (0.5 + 0.5 * Math.sin(f / 6 + s))} />)}
               {pour > 0.05 && pour < 0.98 ? <path d={`M${x - 10} ${410} Q ${x - 40} 560 ${x - 30} 780`} stroke="rgba(150,195,225,0.8)" strokeWidth={14} fill="none" strokeLinecap="round" /> : null}
             </g>;
           })}
         </svg>
-        {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", left: 420 + i * 560, top: 860, translate: "-50% 0", fontFamily: SERIF, fontWeight: 900, fontSize: 110, color: CL.navy, opacity: lin(f, 6 + i * (T * 0.27), 16 + i * (T * 0.27)) }}>{i + 1}</div>)}
-        <Tag x={700} y={110} text="agua limpia · hierve · se tira" k={lin(f, T * 0.7, T * 0.8)} color={CL.red} />
+        {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", left: 300 + i * 560, top: 210, translate: "-50% 0", fontFamily: SERIF, fontWeight: 900, fontSize: 96, color: "#fff", background: CL.navy, width: 130, height: 130, borderRadius: 65, textAlign: "center", lineHeight: "130px", opacity: lin(f, 6 + i * (T * 0.27), 16 + i * (T * 0.27)) }}>{i + 1}</div>)}
+        <Tag x={640} y={130} text="agua limpia · hierve · se tira" k={lin(f, T * 0.7, T * 0.8)} color={CL.red} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -449,13 +456,13 @@ export const HvMeshSoak: React.FC<{ bed?: string }> = ({ bed }) => {
   const clean = lin(f, T * 0.3, T * 0.85);
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
-      <Bed src={bed} seed={312} dim={0.4} />
+      <Bed src={bed} seed={312} dim={0.65} />
       <Hand2D seed={312} push={[1.0, 1.12]}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           <defs><clipPath id="hvMesh"><rect x={-180} y={-120} width={360} height={240} rx={40} /></clipPath></defs>
           <path d="M560 160 L620 980 L1300 980 L1360 160" fill="rgba(235,245,250,0.3)" stroke="rgba(150,170,185,0.9)" strokeWidth={6} />
-          <rect x={585} y={330} width={750} height={640} fill={`rgba(${200 - 40 * clean},${215 - 20 * clean},${210},0.45)`} />
-          <g transform={`translate(960 ${130 + 560 * dip}) rotate(${-8 + 6 * dip})`}>
+          <rect x={585} y={330} width={750} height={640} fill={`rgba(${130 - 20 * clean},${185 - 10 * clean},${225},0.62)`} />
+          <g transform={`translate(960 ${130 + 560 * dip}) rotate(${-8 + 6 * dip}) scale(1.6)`}>
             <rect x={-190} y={-130} width={380} height={260} rx={44} fill="none" stroke={STEELD} strokeWidth={16} />
             <g clipPath="url(#hvMesh)">
               {Array.from({ length: 25 }, (_, i) => <line key={`a${i}`} x1={-180 + i * 15} x2={-180 + i * 15} y1={-120} y2={120} stroke={STEEL} strokeWidth={4} />)}
@@ -465,8 +472,8 @@ export const HvMeshSoak: React.FC<{ bed?: string }> = ({ bed }) => {
           </g>
           {Array.from({ length: 30 }, (_, i) => { const t = ((f + i * 9) % 60) / 60; return <circle key={i} cx={760 + rnd(i) * 400} cy={700 - t * 360} r={4} fill="none" stroke="rgba(255,255,255,0.8)" strokeWidth={2} opacity={clean > 0 ? (1 - t) * (1 - clean * 0.5) : 0} />; })}
         </svg>
-        <Tag x={1420} y={300} text="agua caliente + 1 cdita de ácido" k={lin(f, 18, 30)} />
-        <Tag x={1420} y={420} text="20 min" k={lin(f, 30, 42)} color={CL.inkSoft} />
+        <Tag x={1400} y={200} text="agua caliente + 1 cdita de ácido" k={lin(f, 18, 30)} />
+        <Tag x={1400} y={310} text="20 min" k={lin(f, 30, 42)} color={CL.navy} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -501,7 +508,7 @@ export const HvCalendar: React.FC<{ bed?: string; hi?: number }> = ({ bed, hi = 
             </div>
           );
         })}
-        <Tag x={720} y={980} text="1 cucharada · 1 hervor · 20 min · 3 enjuagues" k={lin(f, T * 0.7, T * 0.8)} size={34} />
+        <Tag x={300} y={980} text="1 cucharada · 1 hervor · 20 min · 3 enjuagues" k={lin(f, T * 0.7, T * 0.8)} size={50} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -511,11 +518,11 @@ export const HvCalendar: React.FC<{ bed?: string; hi?: number }> = ({ bed, hi = 
 // ═════════════════════════════ 14 · las alternativas (y lo que nunca)
 export const HvAltScale: React.FC<{ bed?: string; never?: boolean }> = ({ bed, never = false }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(8);
-  const J = [["Ácido cítrico", "sin olor", "$", "#F4F1E8"], ["Jugo de 2 limones", "algo de olor", "$$", "#F2DD6B"], ["Vinagre ½ y ½", "olor fuerte · ventana", "$", "#EDEFE6"]] as const;
+  const J = [["Ácido cítrico", "sin olor", "$", "#2B4A7A"], ["Jugo de 2 limones", "algo de olor", "$$", "#F2DD6B"], ["Vinagre", "olor fuerte · ventana", "$", "#E9E2C8"]] as const;
   const nv = lin(f, 10, 22);
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
-      <Bed src={bed} seed={314} dim={0.35} />
+      <Bed src={bed} seed={314} dim={0.62} />
       <Hand2D seed={314}>
         {!never ? J.map(([t, smell, price, col], i) => {
           const p = pop(f, fps, 4 + i * 8, 12);
@@ -525,16 +532,16 @@ export const HvAltScale: React.FC<{ bed?: string; never?: boolean }> = ({ bed, n
                 <div style={{ position: "absolute", left: 40, top: -40, width: 140, height: 50, borderRadius: 10, background: "#5A5F66" }} />
                 {i === 1 ? <div style={{ position: "absolute", left: 50, top: 120, width: 130, height: 90, borderRadius: "50%", background: "#E7C531", border: "4px solid #B9961E" }} /> : null}
               </div>
-              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 52, color: CL.navy, marginTop: 30 }}>{t}</div>
-              <div style={{ fontFamily: HAND, fontSize: 48, color: CL.ink, opacity: lin(f, 20 + i * 8, 30 + i * 8) }}>{smell}</div>
-              <div style={{ fontFamily: LABEL, fontSize: 44, color: CL.brass, opacity: lin(f, 26 + i * 8, 36 + i * 8) }}>{price}</div>
+              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 52, color: "#fff", textShadow: "0 3px 12px rgba(0,0,0,0.6)", marginTop: 30 }}>{t}</div>
+              <div style={{ fontFamily: HAND, fontSize: 48, color: "#fff", textShadow: "0 3px 12px rgba(0,0,0,0.6)", opacity: lin(f, 20 + i * 8, 30 + i * 8) }}>{smell}</div>
+              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: CL.brass, opacity: lin(f, 26 + i * 8, 36 + i * 8) }}>{price}</div>
               {i === 0 ? <div style={{ position: "absolute", left: 360, top: 40 }}><Tick ok s={100} k={lin(f, T * 0.6, T * 0.7)} /></div> : null}
             </div>
           );
         }) : (
           <>
             {[["vinagre", "+ bicarbonato", "mucha espuma, limpia 0"], ["cloro", "o limpiador de baño", "nunca donde calienta agua para tomar"]].map(([a, b, c], i) => (
-              <div key={i} style={{ position: "absolute", left: 200 + i * 800, top: 200, width: 700, opacity: pop(f, fps, 4 + i * 14, 12) }}>
+              <div key={i} style={{ position: "absolute", left: 200 + i * 800, top: 110, width: 700, opacity: pop(f, fps, 4 + i * 14, 12) }}>
                 <Card style={{ padding: 40, border: `6px solid ${CL.red}` }}>
                   <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 90, color: CL.navy, lineHeight: 1 }}>{a}</div>
                   <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: CL.inkSoft }}>{b}</div>
@@ -543,7 +550,7 @@ export const HvAltScale: React.FC<{ bed?: string; never?: boolean }> = ({ bed, n
                 <div style={{ position: "absolute", right: -30, top: -50 }}><Tick ok={false} s={150} k={lin(f, 14 + i * 14, 26 + i * 14)} /></div>
               </div>
             ))}
-            {Array.from({ length: 40 }, (_, i) => { const t = ((f + i * 5) % 50) / 50; return <div key={i} style={{ position: "absolute", left: 300 + rnd(i) * 500, top: 640 - t * 140 * nv, width: 30 + rnd(i + 2) * 40, height: 30 + rnd(i + 2) * 40, borderRadius: "50%", background: "rgba(255,255,255,0.9)", opacity: (1 - t) * nv * 0.8 }} />; })}
+            {Array.from({ length: 40 }, (_, i) => { const t = ((f + i * 5) % 50) / 50; return <div key={i} style={{ position: "absolute", left: 260 + rnd(i) * 560, top: 760 - t * 200 * nv, width: 50 + rnd(i + 2) * 60, height: 50 + rnd(i + 2) * 60, borderRadius: "50%", background: "rgba(255,255,255,0.9)", opacity: (1 - t) * nv * 0.8 }} />; })}
           </>
         )}
       </Hand2D>
@@ -563,10 +570,10 @@ export const HvFiveErrors: React.FC<{ hi?: number; bed?: string }> = ({ hi = 1, 
         <div style={{ position: "absolute", left: 80, right: 80, top: 720, height: 40, borderRadius: 6, background: "linear-gradient(180deg, #D7DCE1, #9AA3AD)", boxShadow: `0 20px 40px ${CL.shadow}` }} />
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           <SteelDefs />
-          {E.map((_, i) => { const p = pop(f, fps, 2 + i * 4, 12); const act = i + 1 === hi; return <g key={i} opacity={(act ? 1 : 0.5) * p} transform={`translate(${120 + i * 350} ${720 - 300 * 0.82 - (act ? 30 * ease(lin(f, 10, 22)) : 0)})`}><KettleSide x={0} y={-100} s={0.72} /></g>; })}
+          {E.map((_, i) => { const p = pop(f, fps, 2 + i * 4, 12); const act = i + 1 === hi; return <g key={i} opacity={(act ? 1 : 0.85) * p} transform={`translate(${120 + i * 350} ${720 - 300 * 0.82 - (act ? 30 * ease(lin(f, 10, 22)) : 0)})`}><KettleSide x={0} y={-100} s={0.72} /><path d="M70 -40 L220 110 M220 -40 L70 110" stroke={CL.red} strokeWidth={14} strokeLinecap="round" opacity={act ? 1 : 0.7} /></g>; })}
         </svg>
         {E.map((e, i) => {
-          const act = i + 1 === hi; const k = act ? ease(lin(f, 18, 32)) : 0.42 * ease(lin(f, 6 + i * 4, 16 + i * 4));
+          const act = i + 1 === hi; const k = act ? ease(lin(f, 18, 32)) : 0.86 * ease(lin(f, 6 + i * 4, 16 + i * 4));
           return <div key={i} style={{ position: "absolute", left: 120 + i * 350 + 145, top: 790, translate: "-50% 0", opacity: k, scale: String(act ? 0.8 + 0.2 * k : 0.82), zIndex: act ? 2 : 1 }}>
             <Card style={{ padding: "18px 26px", border: `5px solid ${CL.red}`, textAlign: "center", width: 330 }}>
               <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 80, color: CL.red, lineHeight: 1 }}>{i + 1}</div>
@@ -591,6 +598,7 @@ export const HvRoutine: React.FC<{ bed?: string }> = ({ bed }) => {
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
       <Bed src={bed} seed={316} dim={0.35} />
       <Hand2D seed={316}>
+        <div style={{ position: "absolute", left: 0, top: 200, width: 1920, height: 640, background: "rgba(20,30,50,0.55)" }} />
         <div style={{ position: "absolute", left: X0, top: 470, width: W, height: 120, borderRadius: 60, background: "#E8E2D6", boxShadow: `inset 0 6px 12px rgba(0,0,0,0.15)` }} />
         {S.map(([t, m, c], i) => {
           const a = acc / tot; acc += m; const b = acc / tot;
@@ -598,14 +606,14 @@ export const HvRoutine: React.FC<{ bed?: string }> = ({ bed }) => {
           const x = X0 + W * a, w = W * (b - a);
           return <React.Fragment key={i}>
             <div style={{ position: "absolute", left: x + 4, top: 476, width: Math.max(0, (w - 8) * fill), height: 108, borderRadius: 54, background: c }} />
-            <div style={{ position: "absolute", left: x + w / 2, top: i % 2 ? 640 : 250, translate: "-50% 0", textAlign: "center", opacity: fill > 0.05 ? 1 : 0.25, whiteSpace: "nowrap" }}>
-              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 72, color: CL.navy }}>{m} min</div>
-              <div style={{ fontFamily: HAND, fontSize: 52, color: CL.ink }}>{t}</div>
+            <div style={{ position: "absolute", left: x + w / 2, top: i % 2 ? 610 : 260, translate: `${i === 0 ? "-20%" : "-50%"} 0`, textAlign: "center", opacity: fill > 0.05 ? 1 : 0.45, whiteSpace: "nowrap" }}>
+              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 72, color: "#fff" }}>{m} min</div>
+              <div style={{ fontFamily: HAND, fontSize: 52, color: "#F4EBD8" }}>{t}</div>
             </div>
           </React.Fragment>;
         })}
         <div style={{ position: "absolute", right: 160, top: 840, fontFamily: SERIF, fontWeight: 900, fontSize: 110, color: CL.navy, opacity: lin(f, T * 0.8, T * 0.9) }}>≈ 40 min</div>
-        <Stamp text="+ una cruz en el calendario" at={Math.round(T * 0.86)} x="30%" y="86%" size={50} rot={-5} />
+        <Stamp text="+ una cruz en el calendario" at={Math.round(T * 0.86)} x="32%" y="84%" size={50} rot={-2} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>
@@ -618,14 +626,51 @@ export const HvGlassKettle: React.FC<{ bed?: string }> = ({ bed }) => {
   const sc = 1 - ease(lin(f, T * 0.15, T * 0.85));
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
-      <Bed src={bed} seed={317} dim={0.45} />
+      <Bed src={bed} seed={317} dim={0.8} />
       <Hand2D seed={317} push={[1.0, 1.1]}>
         <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
           <SteelDefs />
           <KettleSide x={560} y={60} s={2.0} water={0.45} glass scale={sc} />
+          <path d={`M${790} 1010 Q960 ${1010 - 40 * sc} 1130 1010 Z`} fill={SCALE} stroke={SCALED} strokeWidth={4} opacity={sc} />
           {Array.from({ length: 40 }, (_, i) => { const t = ((f + i * 7) % 45) / 45; return <circle key={i} cx={760 + rnd(i) * 420} cy={60 + 2 * (398 - t * 120)} r={3 + rnd(i) * 4} fill="none" stroke="rgba(255,255,255,0.9)" strokeWidth={2} opacity={(1 - t) * sc} />; })}
         </svg>
         <Tag x={1450} y={300} text="en vidrio se ve todo" k={lin(f, 4, 14)} />
+      </Hand2D>
+      <RoomLight />
+    </AbsoluteFill>
+  );
+};
+
+// ═════════════════════════════ 14b · el exterior: a favor de la veta
+export const HvGrainWipe: React.FC<{ bed?: string }> = ({ bed }) => {
+  const f = useCurrentFrame(); const { durationInFrames: T } = useVideoConfig(); const out = useOut(8);
+  const k = lin(f, 10, T * 0.7);
+  const panel = (x: number, good: boolean) => {
+    const sx = good ? x + 80 + ((k * 3) % 1) * 400 : x + 300 + Math.cos(f / 5) * 140, sy = good ? 410 : 410 + Math.sin(f / 5) * 110;
+    return <g>
+      <rect x={x} y={200} width={600} height={420} rx={24} fill="url(#hvGW)" stroke="#8E969F" strokeWidth={5} />
+      {Array.from({ length: 40 }, (_, i) => <line key={i} x1={x + 10} x2={x + 590} y1={212 + i * 10} y2={212 + i * 10 + (rnd(i) - 0.5) * 3} stroke="rgba(110,118,128,0.35)" strokeWidth={2} />)}
+      {!good ? Array.from({ length: 14 }, (_, i) => { const r = 60 + rnd(i) * 120; return <ellipse key={i} cx={x + 300 + (rnd(i + 3) - 0.5) * 120} cy={410 + (rnd(i + 5) - 0.5) * 80} rx={r} ry={r * 0.7} fill="none" stroke="rgba(80,85,92,0.55)" strokeWidth={2} opacity={clamp01(k * 1.5 - rnd(i))} />; }) : null}
+      <rect x={sx - 70} y={sy - 40} width={140} height={80} rx={18} fill="#3E78C9" stroke="#24508F" strokeWidth={4} />
+      <rect x={sx - 70} y={sy - 40} width={140} height={24} rx={10} fill="#F2C94C" />
+      {good ? <path d={`M${x + 80} 560 L${x + 520} 560`} stroke="#2F8F48" strokeWidth={8} strokeLinecap="round" markerEnd="url(#hvGWa)" /> : null}
+    </g>;
+  };
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", opacity: out }}>
+      <Bed src={bed} seed={318} dim={0.8} />
+      <Hand2D seed={318}>
+        <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+          <defs><linearGradient id="hvGW" x1="0" x2="1"><stop offset="0" stopColor="#C9CFD5" /><stop offset="0.45" stopColor="#F4F6F8" /><stop offset="1" stopColor="#B7BEC6" /></linearGradient>
+            <marker id="hvGWa" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#2F8F48" /></marker></defs>
+          {panel(240, true)}
+          {panel(1080, false)}
+        </svg>
+        <div style={{ position: "absolute", left: 470, top: 120, opacity: lin(f, T * 0.4, T * 0.5) }}><Tick ok s={100} k={lin(f, T * 0.4, T * 0.55)} /></div>
+        <div style={{ position: "absolute", left: 1330, top: 120, opacity: lin(f, T * 0.5, T * 0.6) }}><Tick ok={false} s={100} k={lin(f, T * 0.5, T * 0.65)} /></div>
+        <Tag x={340} y={700} text="a favor de la veta" k={lin(f, 8, 18)} color="#2F7F45" size={44} />
+        <Tag x={1240} y={700} text="en círculos: raya" k={lin(f, T * 0.3, T * 0.4)} color={CL.red} size={44} />
+        <Tag x={560} y={880} text="paño húmedo · enchufe afuera" k={lin(f, T * 0.6, T * 0.7)} size={40} />
       </Hand2D>
       <RoomLight />
     </AbsoluteFill>

@@ -51,7 +51,7 @@ export const SHOTS = [
   B(42, "el hervidor por fuera", "b_outside", `Close view of dried white water spots on the outside of a stainless steel electric kettle around its spout and lid.`),
   B(43, "moje un paño en un poquito de la misma mezcla", "b_cloth", `A folded white cloth being wrung out over a small bowl of clear liquid on a kitchen counter.`, { anim: "the cloth is wrung, drops fall" }),
   B(43, "Páselo por afuera, sin acercarse a la base", "b_wipe", `A hand wiping the outside of ${KET} with a damp folded cloth, the power base pushed aside and dry, the cord unplugged.`, { anim: "the cloth wipes along the kettle" }),
-  C(44, "En el hotel, el hervidor era lo primero", "ClGrainWipe"),
+  C(44, "En el hotel, el hervidor era lo primero", "HvGrainWipe"),
   B(43, "le queda como de vidriera", "b_showroom", `A spotless brushed stainless steel kettle gleaming on a kitchen counter, reflections of the window on its body.`),
   // 587,8 · el huésped tocaba
   B(44, "parecía sucio aunque estuviera limpio", "b_spots", `A small hotel room kettle with white water spots on its steel, on a tray with cups.`),

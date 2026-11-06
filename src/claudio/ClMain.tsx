@@ -32,7 +32,7 @@ import { ClFilterTest, ClPotBoil, ClGrainWipe } from "./ClCampana";
 import { ClMattressLayers3D, ClDampSoaked, ClSprayMix, ClDryFan, ClThreeRounds } from "./ClColchon";
 import { ClFaucet3D, ClDropDry, ClAerator, ClMaterials, ClAcidBase, ClWrapGuide } from "./ClLavabo";
 import { TbTub3D, TbLayers3D, TbLedger412, TbKnock, TbCotton, TbHeatJar, TbSprayFill, TbHourglass, TbCompress3D, TbScratchLens, TbBookTub, TbEnamelRust, TbSpongeScale, TbFiveKeys, TbRoutine, TbNeverPour, TbWipeTimer, TbTileFlip } from "./ClTina";
-import { HvSwirlCup, HvBeforeAfter, HvKettleWall, HvTreeRings, HvBlanket, HvGlassTest, HvSachet, HvUnplug, HvFillGauge, HvFizz, HvThreeBoils, HvMeshSoak, HvCalendar, HvAltScale, HvFiveErrors, HvRoutine, HvGlassKettle, HvRecap } from "./ClHervidor";
+import { HvSwirlCup, HvBeforeAfter, HvKettleWall, HvTreeRings, HvBlanket, HvGlassTest, HvSachet, HvUnplug, HvFillGauge, HvFizz, HvThreeBoils, HvMeshSoak, HvCalendar, HvAltScale, HvFiveErrors, HvRoutine, HvGlassKettle, HvGrainWipe, HvRecap } from "./ClHervidor";
 import { manoCam } from "../kits/camara/CamaraMano";
 
 // Ken-Burns al azar POR PLANO (regla 1.ter): sentido 50/50, amplitud 3-9 % fotos / 1,5-4 % clips, foco 28-72 %, paneo atado a la escala.
@@ -88,7 +88,7 @@ const COMP: Record<string, React.FC<any>> = {
   ClRimCutaway3D, ClBottle3D, ClMicroscope3D, ClHallway3D, ClChapter, ClCheck, ClBookPage, ClQRCard, ClDoDont, ClPins, ClColorCode, ClBeforeAfter, ClSplit, ClMeasureCup, ClTimer30, ClRimJets, ClNeverMix, ClBowl3D, ClValve3D, ClPumiceTest, ClPasteRecipe, ClNotebook, ClVideoRef, ClWasher3D, ClFilterFind, ClDoseCap, ClSmellTest, ClPores3D, ClSwab, ClSpores, ClFlashlight, ClWallLeak, ClHygrometer, ClTray3D, ClPasteCheck, ClCoating, ClTally, ClReceipt, ClCaulk3D, ClFilmWrap, ClTubMap, ClCaulkGun, ClMixCloud3D, ClStoreLabel, ClMixLight, ClProtocol, ClLabelLens, ClFlushJet3D, ClMattressLayers3D, ClDampSoaked, ClSprayMix, ClDryFan, ClThreeRounds, ClRiseOrSpin, ClTankMark, ClTwoDays, ClStickWire, ClFilterTest, ClPotBoil, ClGrainWipe,
   ClFaucet3D, ClDropDry, ClAerator, ClMaterials, ClAcidBase, ClWrapGuide,
   TbTub3D, TbLayers3D, TbLedger412, TbKnock, TbCotton, TbHeatJar, TbSprayFill, TbHourglass, TbCompress3D, TbScratchLens, TbBookTub, TbEnamelRust, TbSpongeScale, TbFiveKeys, TbRoutine, TbNeverPour, TbWipeTimer, TbTileFlip,
-  HvSwirlCup, HvBeforeAfter, HvKettleWall, HvTreeRings, HvBlanket, HvGlassTest, HvSachet, HvUnplug, HvFillGauge, HvFizz, HvThreeBoils, HvMeshSoak, HvCalendar, HvAltScale, HvFiveErrors, HvRoutine, HvGlassKettle, HvRecap,
+  HvSwirlCup, HvBeforeAfter, HvKettleWall, HvTreeRings, HvBlanket, HvGlassTest, HvSachet, HvUnplug, HvFillGauge, HvFizz, HvThreeBoils, HvMeshSoak, HvCalendar, HvAltScale, HvFiveErrors, HvRoutine, HvGlassKettle, HvGrainWipe, HvRecap,
 };
 const OVC: Record<string, React.FC<any>> = { ClNameTag, ClStampOv, ClChip, ClAsk };
 
