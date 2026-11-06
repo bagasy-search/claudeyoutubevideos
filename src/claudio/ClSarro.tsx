@@ -134,9 +134,9 @@ export const ClNotebook: React.FC<{ title?: string; rows: { k: string; v: string
               const t0 = strike ? 0 : 10 + i * per, wk = strike ? 1 : clamp01((f - t0) / (per * 0.8));
               const s0 = 12 + i * per, sk = strike ? ease(clamp01((f - s0) / (per * 0.6))) : 0;
               return (
-                <div key={i} style={{ position: "absolute", left: 150, top: 170 + i * 178, height: 120, display: "flex", alignItems: "flex-end", gap: 50 }}>
-                  <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 92, color: ink, clipPath: `inset(0 ${100 - Math.min(100, wk * 230)}% 0 0)` }}>{r.k}</div>
-                  <div style={{ position: "relative", fontFamily: HAND, fontWeight: 700, fontSize: 92, color: ink, clipPath: `inset(0 ${100 - clamp01(wk * 2.3 - 1.3) * 100}% 0 0)` }}>
+                <div key={i} style={{ position: "absolute", left: 150, top: 170 + i * 178, height: 120, display: "flex", alignItems: "flex-end", gap: 34 }}>
+                  <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: (r.k + r.v).length > 15 ? 66 : 92, whiteSpace: "nowrap", color: ink, clipPath: `inset(0 ${100 - Math.min(100, wk * 230)}% 0 0)` }}>{r.k}</div>
+                  <div style={{ position: "relative", fontFamily: HAND, fontWeight: 700, fontSize: (r.k + r.v).length > 15 ? 66 : 92, whiteSpace: "nowrap", color: ink, clipPath: `inset(0 ${100 - clamp01(wk * 2.3 - 1.3) * 100}% 0 0)` }}>
                     {r.v}
                     {strike ? <svg width={380} height={60} style={{ position: "absolute", left: -20, top: 40, overflow: "visible" }}><path d={`M 0 30 Q 95 ${18 + 10 * rnd(i)} 190 32 T ${380 * sk} 26`} stroke={CL.red} strokeWidth={9} fill="none" strokeLinecap="round" strokeDasharray={420} strokeDashoffset={420 * (1 - sk)} /></svg> : null}
                   </div>
@@ -173,7 +173,7 @@ export const ClVideoRef: React.FC<{ thumb: string; title: string; tag?: string; 
           <div style={{ position: "absolute", left: 40, bottom: 26, right: 40, fontFamily: HAND, fontWeight: 700, fontSize: 64, color: CL.ink, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{title}</div>
         </div>
         <Tape x={480} y={-22} rot={-4} w={170} />
-        <div style={{ position: "absolute", right: -40, top: -50, rotate: "6deg", background: next ? CL.yellow : CL.navy, color: next ? CL.ink : "#fff", fontFamily: LABEL, fontWeight: 700, fontSize: 50, letterSpacing: 3, padding: "8px 30px", borderRadius: 12, boxShadow: `0 14px 30px ${CL.shadow}`, opacity: lin(f, 10, 18) }}>{tag || (next ? "PRÓXIMO VIDEO" : "YA EN EL CANAL")}</div>
+        <div style={{ position: "absolute", right: 40, top: 30, rotate: "4deg", background: next ? CL.yellow : CL.navy, color: next ? CL.ink : "#fff", fontFamily: LABEL, fontWeight: 700, fontSize: 50, letterSpacing: 3, padding: "8px 30px", borderRadius: 12, boxShadow: `0 14px 30px ${CL.shadow}`, opacity: lin(f, 10, 18) }}>{tag || (next ? "PRÓXIMO VIDEO" : "YA EN EL CANAL")}</div>
       </div>
       <RoomLight k={0.35} />
     </AbsoluteFill>
