@@ -174,3 +174,4 @@ img/cons6nd/b_upright.jpg
 img/cons6nd/b_button2.jpg
 img/cons6nd/b_keys.jpg
 img/cons6nd/b_shirtready.jpg
+broll/cons6nd/d09_last.jpg
