@@ -13,18 +13,18 @@ export const SHOTS = [
   // 389,8 · 30 minutos
   C(27, "Treinta minutos", "TbHourglass"),
   B(27, "por eso usamos detergente", "b_cling", `A glossy wet film of dish soap and vinegar clinging to the curved inside wall of a white bathtub over a yellow ring, not running off, close view.`),
-  B(28, "frote en círculos, suave", "b_circles", `${G} rubbing the wet yellow ring of a white bathtub in small circles with ${WSPONGE}, foam, close view.`, { anim: "the sponge moves in slow circles" }),
+  ST(28, "frote en círculos, suave", "b_circles", "scrubbing bathtub sponge", `${G} rubbing the wet yellow ring of a white bathtub in small circles with ${WSPONGE}, foam, close view.`, { anim: "the sponge moves in slow circles" }),
   B(28, "Va a sentir que la línea se pone lisa", "b_smooth", `A gloved fingertip sliding along a wet, now smooth white bathtub wall, the yellow mostly gone.`),
   V(28, "Enjuague con la ducha de mano", "a07"),
   // 415,9 · la sombra
   B(29, "ahí ya se fue casi todo", "b_mostly", `The inside wall of a white bathtub after cleaning, wet and shiny, only a faint pale yellow shadow left along the water line.`),
   B(29, "queda como una sombra", "b_shadow", `Close view of a faint yellowish shadow line on otherwise clean white acrylic, water drops on it.`),
   // 427,2 · el paso 4: la compresa
-  B(30, "el paso número cuatro", "b_paperroll", `A roll of white paper towel and a roll of clear plastic wrap standing on the wide rim of a white bathtub.`),
+  ST(30, "el paso número cuatro", "b_paperroll", "paper towel roll", `A roll of white paper towel and a roll of clear plastic wrap standing on the wide rim of a white bathtub.`),
   B(30, "le decíamos la compresa", "b_compress", `Wet paper towel strips lying flat along the inside wall of a white bathtub, close view.`),
   ST(30, "en todas las tinas de hidromasaje", "s_jacuzzi", "jacuzzi tub", `A white whirlpool tub with jets in a spa bathroom.`),
   B(31, "Caliente otra taza de vinagre", "b_cup2", `A glass measuring cup of white vinegar, lightly steaming, on the rim of a white bathtub.`),
-  B(31, "Sólo tres", "b_threedrops", `Three drops of green dish soap falling from a bottle into a glass cup of vinegar, close view.`, { anim: "drops fall into the cup" }),
+  ST(31, "Sólo tres", "b_threedrops", "dish soap drop", `Three drops of green dish soap falling from a bottle into a glass cup of vinegar, close view.`, { anim: "drops fall into the cup" }),
   B(31, "Moje tiras de papel de cocina", "b_soakpaper", `${G} dipping a folded strip of white paper towel into a glass cup of vinegar until it is soaked.`),
   V(32, "una al lado de la otra", "a04"),
   B(32, "Que no quede aire abajo", "b_pressair", `${G} pressing a wet paper towel strip flat against the curved wall of a white bathtub, pushing a small air bubble out.`),
@@ -33,18 +33,18 @@ export const SHOTS = [
   // 488,7 · la hora
   B(35, "A la hora, saca el film", "b_peelfilm", `${G} peeling clear plastic wrap off wet paper towel strips on the inside of a white bathtub.`, { anim: "the wrap peels slowly away" }),
   B(35, "saca el papel", "b_peelpaper", `${G} lifting a soggy, slightly yellow-stained paper towel strip off a white bathtub wall.`),
-  B(35, "Una sola pasada", "b_onepass", `${WSPONGE} in a blue nitrile glove making one long pass along a white bathtub wall, the yellow shadow wiping away.`, { anim: "one slow pass of the sponge" }),
+  ST(35, "Una sola pasada", "b_onepass", "sponge wiping bathtub", `${WSPONGE} in a blue nitrile glove making one long pass along a white bathtub wall, the yellow shadow wiping away.`, { anim: "one slow pass of the sponge" }),
   B(35, "En la cuatrocientos doce salió entera", "b_cleanacr", `${CLEAN}, wet and shining in the light.`),
   B(36, "le saca el brillo", "b_dullenamel", `Close view of an old enameled bathtub with a dull matte etched patch where acid sat too long, the rest glossy.`),
-  B(36, "Una hora, y enjuague abundante", "b_bucket", `Water poured from a plastic bucket over the inside of an old white enameled bathtub.`, { anim: "water pours from the bucket" }),
+  ST(36, "Una hora, y enjuague abundante", "b_bucket", "pouring water bucket", `Water poured from a plastic bucket over the inside of an old white enameled bathtub.`, { anim: "water pours from the bucket" }),
   // 517,8 · el bicarbonato
-  B(37, "Y por el que después me escriben", "b_slick", `A bare wet foot stepping into a white bathtub, close view.`),
+  ST(37, "Y por el que después me escriben", "b_slick", "foot stepping into bathtub", `A bare wet foot stepping into a white bathtub, close view.`),
   B(38, "El detergente deja una película", "b_film", `Close view of water sheeting and beading oddly on a white bathtub floor that still has a thin soapy film.`),
-  B(38, "Es peligrosa, sobre todo para la gente mayor", "b_grabbar", `An older woman's hand holding a chrome grab bar next to a white bathtub.`),
+  ST(38, "Es peligrosa, sobre todo para la gente mayor", "b_grabbar", "bathroom grab bar", `An older woman's hand holding a chrome grab bar next to a white bathtub.`),
   V(39, "espolvoree un poco de bicarbonato", "a08"),
   B(39, "como si la lustrara", "b_polish", `${WSPONGE} in a blue nitrile glove gently buffing a thin paste of baking soda on a wet white bathtub floor.`),
-  B(39, "neutraliza lo que quedó de vinagre", "b_sodafizz", `Tiny bubbles fizzing where baking soda meets a little vinegar on a white bathtub wall, extreme close view.`, { anim: "tiny bubbles fizz" }),
-  B(40, "Tiene que rechinar un poquito", "b_squeak", `A bare hand rubbing a clean wet white bathtub wall, close view.`),
+  ST(39, "neutraliza lo que quedó de vinagre", "b_sodafizz", "baking soda vinegar fizz", `Tiny bubbles fizzing where baking soda meets a little vinegar on a white bathtub wall, extreme close view.`, { anim: "tiny bubbles fizz" }),
+  ST(40, "Tiene que rechinar un poquito", "b_squeak", "hand cleaning bathtub", `A bare hand rubbing a clean wet white bathtub wall, close view.`),
   // 559,6 · CTA 2
   C(41, "si quiere tener a mano las cantidades exactas", "ClBookPage", { page: I + "book_p29.png", pageNo: 29 }),
   B(41, "junto con otros noventa arreglos", "b_shelfcheap", `A hotel maintenance shelf with a jug of white vinegar, a box of baking soda, a brown bottle and a bottle of dish soap, all with plain blank labels.`),
@@ -59,5 +59,5 @@ export const SHOTS = [
   B(44, "esos que vienen en lata", "b_powdercan", `A round can of scouring powder with a plain blank label on the edge of an old enameled tub.`),
   C(44, "En una acrílica, nunca", "TbSpongeScale"),
   B(45, "Abajo, cerca de la pared", "b_corner", `${G} dabbing a little liquid on a hidden lower corner of a white bathtub next to the wall, close view.`),
-  B(45, "mire con luz", "b_flashlight", `A small flashlight beam raking across the corner of a white bathtub to check the shine.`, { anim: "the light beam sweeps across" }),
+  ST(45, "mire con luz", "b_flashlight", "flashlight beam dark", `A small flashlight beam raking across the corner of a white bathtub to check the shine.`, { anim: "the light beam sweeps across" }),
 ];
