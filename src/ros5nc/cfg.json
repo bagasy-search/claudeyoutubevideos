@@ -1,0 +1,562 @@
+{
+ "desc": "🍳 25 comidas de 5 minutos de la abuela + Gran Recetario",
+ "replies": [],
+ "pages": {},
+ "heroes": [
+  {
+   "k": "typewriter",
+   "at": 19.5,
+   "out": 25.5,
+   "lines": [
+    "CINCO MINUTOS",
+    "Y A LA MESA"
+   ],
+   "bg": "r_pica_jitomate",
+   "mode": "blinds"
+  },
+  {
+   "k": "abacus",
+   "at": 76.92,
+   "out": 81.42,
+   "v": 25,
+   "u": "COMIDAS",
+   "sub": "EN CINCO MINUTOS",
+   "bg": "n_papa_ayer",
+   "mode": "split"
+  },
+  {
+   "k": "candle",
+   "at": 126.36,
+   "out": 130.86,
+   "lab": "COCINA RÁPIDA",
+   "sub": "Y CON CARIÑO",
+   "bg": "n_c_sentada",
+   "mode": "iris"
+  },
+  {
+   "k": "letter",
+   "at": 201.26,
+   "out": 206.76,
+   "lines": [
+    "La comida rápida",
+    "es la que haces",
+    "con lo que tienes"
+   ],
+   "sign": "la abuela",
+   "bg": "n_mesa_seis",
+   "mode": "blinds"
+  },
+  {
+   "k": "fridge",
+   "at": 252.92,
+   "out": 257.92,
+   "items": [
+    {
+     "t": "Huevos",
+     "at": 0
+    },
+    {
+     "t": "Tortillas",
+     "at": 0
+    },
+    {
+     "t": "Frijoles",
+     "at": 0
+    },
+    {
+     "t": "Un jitomate",
+     "at": 0
+    }
+   ],
+   "lab": "LA ALACENA",
+   "bg": "v08_alacena",
+   "mode": "drop"
+  },
+  {
+   "k": "funnel",
+   "at": 321.42,
+   "out": 327.92,
+   "items": [
+    {
+     "t": "CEBOLLA",
+     "at": 0
+    },
+    {
+     "t": "JITOMATE",
+     "at": 0
+    },
+    {
+     "t": "CHILE",
+     "at": 0
+    },
+    {
+     "t": "HUEVO",
+     "at": 0
+    }
+   ],
+   "lab": "HUEVOS A LA MEXICANA",
+   "bg": "r_come_pie",
+   "mode": "wipe"
+  },
+  {
+   "k": "loupe",
+   "at": 377.54,
+   "out": 382.04,
+   "img": "r_comal_seco",
+   "fx": 0.5,
+   "fy": 0.5,
+   "lab": "EL QUESO QUE TENGAS",
+   "bg": "r_comal_seco",
+   "mode": "diag"
+  },
+  {
+   "k": "drawer",
+   "at": 429.22,
+   "out": 433.72,
+   "items": [
+    {
+     "t": "LOS FRIJOLES",
+     "img": "r_machaca",
+     "at": 0
+    },
+    {
+     "t": "EL QUESO",
+     "img": "n_tostada_frijol",
+     "at": 0
+    }
+   ],
+   "bg": "r_machaca",
+   "mode": "shutter"
+  },
+  {
+   "k": "neon",
+   "at": 493.5,
+   "out": 499.5,
+   "lab": "viene de muy lejos",
+   "col": "#ffb44a",
+   "bg": "n_pico_gallo",
+   "mode": "blinds"
+  },
+  {
+   "k": "piggy",
+   "at": 558.02,
+   "out": 564.02,
+   "n": 4,
+   "lab": "LO QUE OTROS TIRAN",
+   "bg": "n_mise",
+   "mode": "drop"
+  },
+  {
+   "k": "xray",
+   "at": 616.66,
+   "out": 622.66,
+   "img": "n_pan_cambia",
+   "lab": "EL PAN DURO REVIVE",
+   "bg": "v05_pan",
+   "mode": "blinds"
+  },
+  {
+   "k": "traffic",
+   "at": 670.92,
+   "out": 676.92,
+   "lights": [
+    "ROJA",
+    "VERDE",
+    "LA QUE TENGAS"
+   ],
+   "only": 2,
+   "bg": "r_salsa_roja",
+   "mode": "diag"
+  },
+  {
+   "k": "searchlight",
+   "at": 740.96,
+   "out": 746.96,
+   "img": "n_huevo_salsa",
+   "lab": "SIN PRENDER EL FUEGO",
+   "bg": "n_huevo_salsa",
+   "mode": "shutter"
+  },
+  {
+   "k": "level",
+   "at": 798.04,
+   "out": 802.54,
+   "lab": "EN HILO",
+   "sub": "SIN DEJAR DE MOVER",
+   "bg": "n_avena_huevo",
+   "mode": "wipe"
+  },
+  {
+   "k": "vault",
+   "at": 854.26,
+   "out": 858.76,
+   "img": "n_arroz_huevo",
+   "lab": "HUMILDE, PERO SABE A GLORIA",
+   "bg": "n_arroz_huevo",
+   "mode": "iris"
+  },
+  {
+   "k": "gears",
+   "at": 921.95,
+   "out": 927.45,
+   "items": [
+    {
+     "t": "EL FIDEO",
+     "at": 0
+    },
+    {
+     "t": "EL JITOMATE",
+     "at": 0
+    },
+    {
+     "t": "LA TAPA",
+     "at": 0
+    }
+   ],
+   "lab": "FIDEO SECO",
+   "bg": "n_fideo_seco",
+   "mode": "diag"
+  },
+  {
+   "k": "peel",
+   "at": 983.81,
+   "out": 989.81,
+   "img": "r_enjuaga",
+   "img2": "n_nopales",
+   "a": "DEL FRASCO",
+   "lab": "BIEN ENJUAGADOS",
+   "bg": "r_enjuaga",
+   "mode": "iris"
+  },
+  {
+   "k": "antes",
+   "at": 1040.05,
+   "out": 1045.05,
+   "img": "n_platano_crema",
+   "img2": "r_calabaza_corta",
+   "a": "POSTRE",
+   "b": "CENA",
+   "lab": "PLÁTANO CON CREMA",
+   "bg": "n_platano_crema",
+   "mode": "split"
+  },
+  {
+   "k": "ticket",
+   "at": 1091.29,
+   "out": 1095.79,
+   "kick": "LA CALABACITA",
+   "title": "SALVA EL MERCADO",
+   "sub": "CUANDO TODO ESTÁ CARO",
+   "v": "✓",
+   "u": "Y LLENA",
+   "bg": "n_calabacitas",
+   "mode": "drop"
+  },
+  {
+   "k": "conveyor",
+   "at": 1155.84,
+   "out": 1162.84,
+   "items": [
+    {
+     "t": "CALDO DE AYER",
+     "img": "n_pan_cambia",
+     "at": 0
+    },
+    {
+     "t": "PAPA DE LA MAÑANA",
+     "img": "r_remoja_pan",
+     "at": 0
+    },
+    {
+     "t": "TACOS",
+     "img": "r_pan_frances",
+     "at": 0
+    }
+   ],
+   "lab": "NADA SOBRA",
+   "bg": "n_pan_cambia",
+   "mode": "shutter"
+  },
+  {
+   "k": "puzzle",
+   "at": 1226.88,
+   "out": 1232.88,
+   "img": "n_sincronizada",
+   "lab": "EN CUATRO",
+   "bg": "n_sincronizada",
+   "mode": "split"
+  },
+  {
+   "k": "pulse",
+   "at": 1284.17,
+   "out": 1290.17,
+   "a": "CALDO",
+   "lab": "CURA MÁS QUE MEDICINAS",
+   "bg": "n_caldo_verdura",
+   "mode": "shutter"
+  },
+  {
+   "k": "shelf",
+   "at": 1334.28,
+   "out": 1340.28,
+   "items": [
+    {
+     "t": "FRIJOLES",
+     "img": "n_espagueti",
+     "at": 0
+    },
+    {
+     "t": "UN PEDACITO DE TOCINO",
+     "img": "r_tocino",
+     "at": 0
+    }
+   ],
+   "lab": "CHARROS DE LATA",
+   "bg": "n_espagueti",
+   "mode": "drop"
+  },
+  {
+   "k": "dice",
+   "at": 1405.94,
+   "out": 1411.44,
+   "v": 2,
+   "lab": "DOS PAPAS, TODA LA MESA",
+   "bg": "n_tacos_papa",
+   "mode": "shutter"
+  },
+  {
+   "k": "compass",
+   "at": 1462.74,
+   "out": 1468.74,
+   "opts": [
+    "CRUDO",
+    "DORADITO",
+    "COLOR CARAMELO",
+    "QUEMADO"
+   ],
+   "win": 2,
+   "lab": "EL FIDEO",
+   "bg": "r_fideo_caramelo",
+   "mode": "iris"
+  },
+  {
+   "k": "led",
+   "at": 1523.27,
+   "out": 1527.77,
+   "lab": "LA SOPA DEL MES DIFÍCIL",
+   "sub": "NADIE SE QUEJÓ",
+   "bg": "n_hijos_sopa",
+   "mode": "shutter"
+  },
+  {
+   "k": "dart",
+   "at": 1569.63,
+   "out": 1575.63,
+   "miss": [
+    "AL FINAL",
+    "DESPUÉS"
+   ],
+   "lab": "UN MINUTO ANTES",
+   "bg": "v10_fogon",
+   "mode": "iris"
+  },
+  {
+   "k": "dominoes",
+   "at": 1641.43,
+   "out": 1648.43,
+   "items": [
+    {
+     "t": "UN HUEVO",
+     "img": "n_ollas_refri",
+     "at": 0
+    },
+    {
+     "t": "UN JITOMATE",
+     "img": "r_mercado",
+     "at": 0
+    },
+    {
+     "t": "UN PAN",
+     "img": "n_cafe_pan",
+     "at": 0
+    }
+   ],
+   "stamp": "DE A UNO, MÁS CARO",
+   "bad": 1,
+   "bg": "n_ollas_refri",
+   "mode": "wipe"
+  },
+  {
+   "k": "blueprint",
+   "at": 1688.82,
+   "out": 1694.82,
+   "img": "r_jitomates_puesto",
+   "dims": [
+    {
+     "t": "para salsa",
+     "x1": 0.2,
+     "y1": 0.85,
+     "x2": 0.75,
+     "y2": 0.85
+    }
+   ],
+   "lab": "MÁS BARATOS Y MEJORES",
+   "bg": "r_jitomates_puesto",
+   "mode": "blinds"
+  },
+  {
+   "k": "scroll",
+   "at": 1761.8,
+   "out": 1768.3,
+   "items": [
+    {
+     "t": "Huevos",
+     "at": 0
+    },
+    {
+     "t": "Tortillas",
+     "at": 0
+    },
+    {
+     "t": "Frijoles",
+     "at": 0
+    },
+    {
+     "t": "Papas",
+     "at": 0
+    },
+    {
+     "t": "Pan",
+     "at": 0
+    }
+   ],
+   "lab": "UNA SEMANA SIN REPETIR",
+   "bg": "n_despensa",
+   "mode": "drop"
+  },
+  {
+   "k": "branches",
+   "at": 1812.8,
+   "out": 1818.8,
+   "items": [
+    {
+     "t": "EL PAN VIEJO",
+     "at": 0
+    },
+    {
+     "t": "TORTILLAS DURAS",
+     "at": 0
+    },
+    {
+     "t": "EL CALDO DE AYER",
+     "at": 0
+    }
+   ],
+   "lab": "LO QUE NUNCA TIRABA",
+   "bg": "n_pan_guardado",
+   "mode": "shutter"
+  },
+  {
+   "k": "indexbox",
+   "at": 1867.99,
+   "out": 1872.99,
+   "items": [
+    {
+     "t": "Rojos",
+     "img": "n_variantes",
+     "at": 0
+    },
+    {
+     "t": "Verdes",
+     "img": "n_chilaquiles_verdes",
+     "at": 0
+    },
+    {
+     "t": "Con frijoles",
+     "img": "n_pan_cafe_sola",
+     "at": 0
+    }
+   ],
+   "lab": "chilaquiles",
+   "bg": "n_variantes",
+   "mode": "wipe"
+  },
+  {
+   "k": "podium",
+   "at": 1939.23,
+   "out": 1943.73,
+   "items": [
+    {
+     "t": "UN HUEVO",
+     "img": "n_pan_cafe_sola",
+     "at": 0
+    },
+    {
+     "t": "UNA SOPA",
+     "img": "n_senor_cocina",
+     "at": 0
+    },
+    {
+     "t": "LA CENA",
+     "img": "n_senor_sirve",
+     "at": 0
+    }
+   ],
+   "bg": "n_pan_cafe_sola",
+   "mode": "drop"
+  },
+  {
+   "k": "radar",
+   "at": 1990.09,
+   "out": 1996.59,
+   "items": [
+    {
+     "t": "TRES O CUATRO DÍAS",
+     "at": 0
+    },
+    {
+     "t": "SARTÉN TAPADA",
+     "at": 0
+    },
+    {
+     "t": "EL QUESO QUE TENGAS",
+     "at": 0
+    }
+   ],
+   "lab": "LO QUE ME PREGUNTAN",
+   "bg": "n_refri_tapado",
+   "mode": "iris"
+  },
+  {
+   "k": "emboss",
+   "at": 2062.67,
+   "out": 2067.17,
+   "lab": "TODAVÍA IMPORTAS",
+   "sub": "COCÍNATE ALGO CALIENTITO",
+   "bg": "v09_ventana",
+   "mode": "wipe"
+  },
+  {
+   "k": "mosaic",
+   "at": 2110.27,
+   "out": 2116.27,
+   "imgs": [
+    "n_mantelito",
+    "n_huevo_tortilla",
+    "n_mantelito",
+    "n_mantelito",
+    "n_mantelito",
+    "n_mantelito",
+    "n_mantelito",
+    "n_mantelito",
+    "n_mantelito",
+    "n_mantelito",
+    "n_mantelito",
+    "n_mantelito"
+   ],
+   "lab": "LAS VEINTICINCO",
+   "bg": "n_mantelito",
+   "mode": "split"
+  }
+ ]
+}
