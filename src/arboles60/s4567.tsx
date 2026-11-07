@@ -353,7 +353,9 @@ const es2 = (k: number) => -(Math.cos(Math.PI * k) - 1) / 2;
 export const S7: React.FC<{ t: number }> = ({ t }) => {
   const down = eio(prog(t, 64.5, 65.7));
   const pull = eio(prog(t, 67.8, 72.8));
-  const cam: Cam = { x: 0, y: lerp(-360, 0, down) - pull * 60, z: lerp(1.12, 1.16, down) * lerp(1, 0.86, pull) };
+  const drift = eio(prog(t, 61.4, 65.7));
+  const cam: Cam = { x: lerp(-140, 0, drift), y: lerp(-360, 0, down) - pull * 60, z: lerp(1.04, 1.12, drift) * lerp(1, 1.035, down) * lerp(1, 0.86, pull) };
+  const shoot = prog(t, 62.5, 63.6);
   const sprout = spr(t, 65.9, 1.8, 6);
   const turnT = eio(prog(t, 65.5, 65.9)) * (1 - eio(prog(t, 67.6, 68.1)));
   const turnL = eio(prog(t, 66.9, 67.3)) * (1 - eio(prog(t, 67.8, 68.3)));
@@ -382,6 +384,12 @@ export const S7: React.FC<{ t: number }> = ({ t }) => {
           mood: face >= 0.5 ? "neutral" : "happy",
         }} />
       </NightWorld>
+      {shoot > 0 && shoot < 1 && (
+        <g opacity={Math.sin(Math.PI * shoot)}>
+          <line x1={lerp(380, 1250, eo(shoot))} y1={lerp(120, 380, eo(shoot))} x2={lerp(380, 1250, eo(shoot)) - 190} y2={lerp(120, 380, eo(shoot)) - 57} stroke="#FFF6D6" strokeWidth={4} strokeLinecap="round" opacity={0.75} />
+          <circle cx={lerp(380, 1250, eo(shoot))} cy={lerp(120, 380, eo(shoot))} r={6} fill="#FFFFFF" />
+        </g>
+      )}
       <text x={1880} y={1050} fontFamily={FONT} fontWeight={600} fontSize={22} fill="#C9D4FF" textAnchor="end" opacity={cred * 0.85}>Fuente: Crowther et al., Nature (2015)</text>
     </Stage>
   );
