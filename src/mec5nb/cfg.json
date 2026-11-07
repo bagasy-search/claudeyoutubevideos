@@ -213,7 +213,8 @@
     }
    ],
    "bg": "n_agujero_paragolpes",
-   "mode": "shutter"
+   "mode": "shutter",
+   "lab": "EL AUXILIO"
   },
   {
    "k": "puzzle",
