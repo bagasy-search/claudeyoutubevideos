@@ -201,3 +201,4 @@ export const HEmboss: React.FC<HP> = ({ t, h }) => <Stage t={t} h={h} mode="wipe
     {h.sub && <Tag tt={tt} at={0.8 + txt.length * 0.07} x={960} y={870} txt={h.sub} col={DIM} size={36} />}
   </>;
 }}</Stage>;
+// rerender cajón 06-11
