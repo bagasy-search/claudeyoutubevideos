@@ -44,8 +44,8 @@ shots.forEach((s, i) => {
     if (!c.img && !c.clip) warn.push(`falta imagen ${s.name}`);
   } else if (s.kind === "c") {
     c.k = "comp"; c.props = { ...(s.props || {}) }; if (s.cont) c.cont = 1;
-    if (!c.props.bed && !/^(ClPins|ClBeforeAfter|ClSplit|ClRimJets|ClMicroscope3D|ClHallway3D|ClSpores|ClFlashlight)$/.test(s.name)) {
-      if ((BEDABLE.has(s.name) || /^(Tb|Sb|Hv|Pl)[A-Z]/.test(s.name)) && s.name !== "ClNotebook" && bi < beds.length) { c.props.bed = beds[bi++]; c.bedReal = 1; }
+    if (!c.props.bed && !/^(ClPins|ClBeforeAfter|ClSplit|ClRimJets|ClMicroscope3D|ClHallway3D|ClSpores|ClFlashlight|MwWallReveal|MwSprayHalo|MwShadowLift|MwBreathGlass|MwGapPlan|MwLegs)$/.test(s.name)) {
+      if ((BEDABLE.has(s.name) || /^(Tb|Sb|Hv|Pl|Mw)[A-Z]/.test(s.name)) && s.name !== "ClNotebook" && bi < beds.length) { c.props.bed = beds[bi++]; c.bedReal = 1; }
       else if (lastBed) c.props.bed = lastBed;
     }
     if (c.props.bed && /\.mp4$/.test(c.props.bed)) c.props.bed += "#" + nFr(c.props.bed);
