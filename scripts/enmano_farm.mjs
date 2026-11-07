@@ -58,6 +58,8 @@ for (const f of files) {
 console.log(`enmano ${slug}: ${files.length} archivo(s) → ${items.length} trozo(s) en el farm`);
 if (items.length > 256) { console.error("más de 256 trozos: subí --trozo"); process.exit(1); }
 gh(["workflow", "run", "enmano.yml", "--ref", REF, "-f", "params=" + JSON.stringify({ slug, tag, items })]);
+// la corrida (por su run-name con el tag) para cortar la espera si termina sin traer todo
+const corrida = () => { try { return JSON.parse(gh(["run", "list", "-w", "enmano.yml", "-L", "20", "--json", "databaseId,displayTitle,status,conclusion"])).find((r) => r.displayTitle.includes(`(${tag})`)); } catch { return null; } };
 
 // esperar y bajar (sin gh run watch: quema el límite de la API)
 const dir = fs.mkdtempSync(path.join(path.dirname(path.resolve(files[0])), ".enmano_"));
@@ -72,6 +74,14 @@ while (hechos.size < items.length && Date.now() - T0 < MAX) {
     try { gh(["release", "download", R, "-p", a, "-D", dir, "--clobber"]); hechos.add(it.n); } catch {}
   }
   process.stdout.write(`\r  ${hechos.size}/${items.length} trozos listos · ${Math.round((Date.now() - T0) / 60e3)} min`);
+  const c = hechos.size < items.length ? corrida() : null;
+  if (c?.status === "completed") {   // terminó: una vuelta más por si el último upload llegó justo, y salir
+    await new Promise((r) => setTimeout(r, 10e3));
+    try { const nn = JSON.parse(gh(["release", "view", R, "--json", "assets", "-q", "[.assets[].name]"]));
+      for (const it of items) if (!hechos.has(it.n) && nn.includes(`${it.n}.mp4`)) { gh(["release", "download", R, "-p", `${it.n}.mp4`, "-D", dir, "--clobber"]); hechos.add(it.n); } } catch {}
+    if (hechos.size < items.length) console.log(`\n✗ la corrida ${c.databaseId} terminó ${c.conclusion}: gh run view ${c.databaseId} -R ${REPO} --log-failed`);
+    break;
+  }
 }
 console.log();
 for (const p of plan) {
@@ -82,7 +92,7 @@ for (const p of plan) {
   fs.writeFileSync(lista, p.trozos.map((n) => `file '${path.join(dir, n + ".mp4").replace(/\\/g, "/")}'`).join("\n"));
   const cat = path.join(dir, "cat.mp4");
   execFileSync("ffmpeg", ["-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lista, "-c", "copy", cat]);
-  execFileSync("ffmpeg", ["-v", "error", "-y", "-i", cat, "-i", p.f, "-map", "0:v", "-map", "1:a?", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", p.dst]);
+  execFileSync("ffmpeg", ["-v", "error", "-y", "-i", cat, "-i", p.f, "-map", "0:v", "-map", "1:a?", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", p.dst]);
   console.log(`✓ ${p.dst}`);
 }
 fs.rmSync(dir, { recursive: true, force: true });
