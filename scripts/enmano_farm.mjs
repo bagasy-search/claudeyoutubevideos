@@ -19,13 +19,17 @@ const OUT = opt("out", ""), TROZO = +opt("trozo", 12), KK = +opt("k", 1), DUR = 
 const REF = opt("ref", "main");
 const [slug, ...files] = argv;
 if (!slug || !files.length) { console.error("Uso: node scripts/enmano_farm.mjs <slug> <archivo...> [--out dir] [--trozo 12] [--k 1] [--dur 6]"); process.exit(1); }
-const gh = (args, o = {}) => execFileSync("gh", [...args, "-R", REPO], { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], ...o });
+const gh1 = (args, o = {}) => execFileSync("gh", [...args, "-R", REPO], { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], ...o });
+// la red de la PC a veces corta el TLS con api.github.com: reintentar lo que sea error de red, no lo demás
+const gh = (args, o = {}) => { for (let n = 1; ; n++) { try { return gh1(args, o); } catch (e) {
+  const red = /timeout|TLS|connection|EOF|reset|502|503|504/i.test(String(e.stderr || e.message));
+  if (!red || n >= 5) throw e; Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, n * 5000); } } };
 const R = `enmano-${slug}`;
 const esFoto = (f) => /\.(jpe?g|png|webp)$/i.test(f);
 const limpio = (s) => s.replace(/[^A-Za-z0-9._-]/g, "_");
 const semilla = (s) => SEED !== "" ? +SEED : parseInt(crypto.createHash("md5").update(s).digest("hex").slice(0, 6), 16);
 
-try { gh(["release", "view", R]); } catch { gh(["release", "create", R, "--title", R, "--notes", "cámara en mano (temporales)"]); }
+try { gh(["release", "view", R]); } catch (e) { if (!/not found/i.test(String(e.stderr))) throw e; gh(["release", "create", R, "--title", R, "--notes", "cámara en mano (temporales)"]); }
 
 const tag = Date.now().toString(36);
 const items = [], plan = [];

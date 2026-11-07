@@ -9,17 +9,23 @@
 // Uso:
 //   node scripts/avatar_assemble.mjs <out.mp4> <master.wav> <reel1.mp4:startS:endS> [<reel2.mp4:startS:endS> ...]
 //   - Un solo reel:  node scripts/avatar_assemble.mjs out.mp4 master.wav reel.mp4:0:1077.19
+//   - --enmano[=k]: antes de conformar, cámara en mano realista por el farm (scripts/enmano_farm.mjs). Opt-in por canal.
 //   - startS/endS = el span de ESE reel en el TIEMPO DEL MÁSTER (los mismos offsets con que cortaste el audio).
 //     El reel se estira/recorta a (endS-startS): el pad (clone del último frame) cae en el silencio del corte
 //     o en la cola, así que es invisible. Si el reel vino MÁS LARGO que su span, se recorta.
 import { spawnSync } from "child_process";
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 
 const FF = process.env.FFMPEG || "ffmpeg";
 const FP = process.env.FFPROBE || "C:/Users/bauti/AppData/Local/Microsoft/WinGet/Links/ffprobe";
 const args = process.argv.slice(2);
 if (args.length < 2) { console.error("uso: node scripts/avatar_assemble.mjs <out.mp4> <master.wav> <reel.mp4:startS:endS> [...]"); process.exit(1); }
+// --enmano[=k]: cámara en mano realista (scripts/enmano.py en el farm, 0 CPU local) sobre cada reel CRUDO antes de
+// conformarlo. Conserva cada cuadro y su tiempo, así que el lipsync y los spans no cambian. k = intensidad (1 calibrada).
+const iEM = args.findIndex((a) => /^--enmano(=|$)/.test(a));
+const ENMANO = iEM < 0 ? null : +(args.splice(iEM, 1)[0].split("=")[1] || 1);
 const [OUT, MASTER, ...reelSpecs] = args;
 const TMP = process.env.AVATAR_TMP || (process.env.TMPDIR || "D:/rtmp") + "/_avatar_asm";
 fs.mkdirSync(TMP, { recursive: true });
@@ -38,6 +44,24 @@ const realDur = (f) => {
 };
 const durOf = (f) => { const r = spawnSync(FP, ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f], { encoding: "utf8" }); return parseFloat((r.stdout || "").trim()); };
 const run = (a) => { const r = spawnSync(FF, a, { stdio: "inherit" }); if (r.status !== 0) { console.error("ffmpeg falló:", a.join(" ")); process.exit(1); } };
+
+if (ENMANO) {
+  const files = reelSpecs.map((r) => r.replace(/:[0-9.]+:[0-9.]+$/, ""));
+  const destino = (f) => f.replace(/\.mp4$/i, "_enmano.mp4");
+  const nCuadros = (f) => spawnSync(FP, ["-v", "error", "-select_streams", "v:0", "-count_packets", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", f], { encoding: "utf8" }).stdout.trim();
+  const faltan = files.filter((f) => !(fs.existsSync(destino(f)) && nCuadros(destino(f)) === nCuadros(f)));
+  if (faltan.length) {
+    const slug = path.basename(OUT).replace(/\.[^.]+$/, "").replace(/[^A-Za-z0-9_-]/g, "_");
+    console.log(`en mano (k=${ENMANO}) en el farm: ${faltan.length} reel(s)…`);
+    const r = spawnSync("node", [path.join(path.dirname(fileURLToPath(import.meta.url)), "enmano_farm.mjs"), slug, ...faltan, "--k", String(ENMANO)], { stdio: "inherit" });
+    if (r.status !== 0) { console.error("⛔ enmano_farm falló (sin cámara en mano no sigo: sacá --enmano si querés el reel plano)"); process.exit(1); }
+  }
+  for (let i = 0; i < reelSpecs.length; i++) {
+    const d = destino(files[i]);
+    if (!fs.existsSync(d) || nCuadros(d) !== nCuadros(files[i])) { console.error(`⛔ ${d}: faltan cuadros vs el reel (${nCuadros(d)} vs ${nCuadros(files[i])})`); process.exit(1); }
+    reelSpecs[i] = d + reelSpecs[i].slice(files[i].length);
+  }
+}
 
 const masterDur = durOf(MASTER);
 console.log(`máster: ${masterDur.toFixed(3)}s · reels: ${reelSpecs.length}`);
