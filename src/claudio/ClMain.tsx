@@ -63,8 +63,9 @@ const Clip: React.FC<{ src: string; sf?: number; seed: number }> = ({ src, sf = 
 };
 // foto con su clip (stock o agnes): el clip mientras dure (nunca en bucle ni repetido) y después su último cuadro quieto
 const ImgShot: React.FC<{ c: any }> = ({ c }) => {
+  const { durationInFrames } = useVideoConfig();
   if (!c.clip) return <Photo src={c.img} seed={c.seed} />;
-  const n = Math.min(c.dur, c.clipF);
+  const n = Math.min(durationInFrames, c.clipF); // el clip cubre también el solape de la transición (si no, cuadro blanco = destello)
   return (
     <AbsoluteFill>
       <Sequence durationInFrames={n}><Clip src={c.clip} seed={c.seed} /></Sequence>
@@ -103,6 +104,7 @@ const Shot: React.FC<{ c: any }> = ({ c }) => {
 // cámara a mano virtual (vara 23-oct): balanceo lento CONTINUO con el reloj global (no se reinicia en cada plano); los componentes
 // no llevan (sus mundos 3D/2.5D ya se mueven). Transición: cada plano entra XF cuadros antes, sobre el anterior (disolución, empuje
 // o barrido), con su reloj corrido para que el avatar siga en sincro.
+// El plano saliente sigue 9 cuadros DEBAJO del entrante: su fundido de salida (useOut) ya no deja ver el fondo blanco (destello).
 const XF = 7;
 const Mano: React.FC<{ t0: number; children: React.ReactNode }> = ({ t0, children }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const m = manoCam((t0 + f) / fps, 1, 7);
@@ -121,7 +123,7 @@ export const ClMain: React.FC<{ TL: any[]; OV: any[]; AUDIO: string }> = ({ TL, 
     {TL.map((c, i) => {
       const x = Math.max(0, lead(TL, i)); const cc = x && c.sf != null ? { ...c, sf: Math.max(0, c.sf - x) } : c;
       const body = <Shot c={x && c.k === "av" && c.sf < x ? c : cc} />;
-      return (<Sequence key={"b" + i} from={c.from - x} durationInFrames={c.dur + x}><Enter x={x} seed={c.seed || i}>{c.k === "comp" ? body : <Mano t0={c.from - x}>{body}</Mano>}</Enter></Sequence>);
+      return (<Sequence key={"b" + i} from={c.from - x} durationInFrames={c.dur + x + (i < TL.length - 1 ? 9 : 0)}><Enter x={x} seed={c.seed || i}>{c.k === "comp" ? body : <Mano t0={c.from - x}>{body}</Mano>}</Enter></Sequence>);
     })}
     {OV.map((o, i) => { const C = OVC[o.name]; return C ? <Sequence key={"o" + i} from={o.from} durationInFrames={o.dur}><C {...o.props} /></Sequence> : null; })}
     <Audio src={staticFile(AUDIO)} />
