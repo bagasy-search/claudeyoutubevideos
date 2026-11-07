@@ -1,0 +1,61 @@
+# EN MANO: cámara en mano realista (cámara 3D + paralaje por profundidad + movimiento real rastreado) para avatares y
+# fotos, en el farm para no gastar la PC (7-nov-2026). Motor: scripts/enmano.py; banco de movimientos: scripts/enmano_banco.npz.
+# Lo dispara scripts/enmano_farm.mjs: sube las entradas al release enmano-<slug>, parte cada video en trozos (1 runner por
+# trozo), y acá cada runner devuelve <n>.mp4 al mismo release; el lanzador los pega sin costura y le devuelve el audio.
+# params = {slug, items:[{n, src, desde, frames, seed, k, dur}]}   (foto: desde/frames se ignoran, usa dur)
+name: enmano
+run-name: enmano ${{ fromJSON(inputs.params).slug }} (${{ fromJSON(inputs.params).tag }})
+on:
+  workflow_dispatch:
+    inputs:
+      params: { description: 'JSON {slug, tag, items:[{n,src,desde,frames,seed,k,dur}]}', required: true }
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - id: m
+        env: { P: "${{ inputs.params }}" }
+        run: echo "matrix=$(python3 -c "import json,os;print(json.dumps(json.loads(os.environ['P'])['items']))")" >> "$GITHUB_OUTPUT"
+  trozo:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 24          # deja slots libres para los renders (el plan tiene 60 en total)
+      matrix:
+        it: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      P: ${{ inputs.params }}
+      IT: ${{ toJSON(matrix.it) }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { sparse-checkout: scripts, sparse-checkout-cone-mode: true }
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/huggingface
+          key: enmano-deps-v1
+      - name: deps
+        run: |
+          command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null)
+          pip install -q --index-url https://download.pytorch.org/whl/cpu torch
+          pip install -q transformers opencv-python-headless scipy numpy
+      - name: en mano
+        run: |
+          set -e
+          S=$(python3 -c "import json,os;print(json.loads(os.environ['P'])['slug'])")
+          g() { python3 -c "import json,os;v=json.loads(os.environ['IT']).get('$1');print('' if v is None else v)"; }
+          N=$(g n); SRC=$(g src)
+          for n in 1 2 3 4; do gh release download "enmano-$S" -p "$SRC" -R "$GITHUB_REPOSITORY" --clobber && break; sleep $((n*8)); done
+          ARGS="--seed $(g seed) --k ${K:-$(g k)} --desde $(g desde) --frames $(g frames)"
+          [ -n "$(g dur)" ] && ARGS="$ARGS --dur $(g dur)"
+          time python3 scripts/enmano.py --in "$SRC" --out "$N.mp4" $ARGS
+          ls -la "$N.mp4"
+          for n in 1 2 3 4; do gh release upload "enmano-$S" "$N.mp4" --clobber -R "$GITHUB_REPOSITORY" && break; sleep $((n*8)); done
