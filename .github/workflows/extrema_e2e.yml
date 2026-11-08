@@ -1,0 +1,44 @@
+# Edición extrema punta a punta sobre un video real: piezas -> render.py -> assemble.py -> validar.py
+#   gh workflow run extrema_e2e.yml -f tag=xm-e2e1
+# El release <tag> trae motor.tar.gz (motor web) y datos.tar (carpeta del video con extrema/partituras.json).
+name: extrema_e2e
+on:
+  workflow_dispatch:
+    inputs:
+      tag: { description: "release con motor.tar.gz y datos.tar", required: true }
+permissions:
+  contents: write
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: bajar
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null && (sudo apt-get install -y -qq fonts-inter fonts-noto-color-emoji > /dev/null || true)
+          mkdir -p dl app v
+          gh release download "${{ inputs.tag }}" -R "${{ github.repository }}" -D dl --pattern motor.tar.gz --pattern datos.tar
+          tar -xzf dl/motor.tar.gz -C app && tar -xf dl/datos.tar -C v && rm -rf dl
+          pip install -q -r app/motor/requirements.txt
+          echo '{}' > /tmp/cfg.json
+      - name: edicion extrema
+        env: { ESTUDIO_CONFIG: /tmp/cfg.json }
+        run: python app/motor/tools/extrema.py v --tope 0.20 2>&1 | tee xm.log
+      - name: armar
+        run: |
+          set -o pipefail
+          python app/motor/tools/render.py v 2>&1 | tee render.log | grep -E "extrema|rror" || true
+          python app/motor/tools/assemble.py v 2>&1 | tail -20 | tee assemble.log
+          python app/motor/tools/validar.py v --etapa final 2>&1 | tail -30 | tee validar.log
+      - name: subir
+        if: always()
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          cp v/extrema/manifest.json . 2>/dev/null || true
+          ls -la v/final.mp4 v/extrema/ || true
+          gh release upload "${{ inputs.tag }}" v/final.mp4 v/extrema/*.mp4 manifest.json xm.log render.log assemble.log validar.log -R "${{ github.repository }}" --clobber || true
