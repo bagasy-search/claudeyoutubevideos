@@ -1,0 +1,2137 @@
+{
+"end": 975.45,
+"shots": [
+{
+"a": 0.0,
+"b": 6.64,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "DistrictDusk",
+"at": {
+"tag": 0,
+"doors": 20
+}
+},
+"big": true
+},
+{
+"a": 6.64,
+"b": 9.12,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumhills_01.jpg",
+"o": {
+"credit": "Yash Soorma · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 9.12,
+"b": 11.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumvil_01.jpg",
+"o": {
+"credit": "Ashish.sadh · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 11.94,
+"b": 14.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_sp02.jpg"
+}
+},
+{
+"a": 14.28,
+"b": 16.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumvil_02.jpg",
+"o": {
+"credit": "Vipinvasudeva · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 16.48,
+"b": 18.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leopardin_01.jpg",
+"o": {
+"credit": "Tisha Mukherjee · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 18.84,
+"b": 21.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_vl02.png"
+}
+},
+{
+"a": 21.48,
+"b": 25.74,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "~400",
+"color": "#f14536",
+"size": 240,
+"a": 103
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 25.74,
+"b": 27.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leopardin_02.jpg",
+"o": {
+"credit": "Atudu · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 27.64,
+"b": 32.46,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Not the legend.",
+"The *record.*"
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+}
+},
+{
+"a": 32.46,
+"b": 34.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_vl04.png"
+}
+},
+{
+"a": 34.94,
+"b": 37.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumvil_03.jpg",
+"o": {
+"credit": "Vipinvasudeva · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 37.2,
+"b": 39.66,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumvil_05.jpg",
+"o": {
+"credit": "ArmouredCyborg · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 39.66,
+"b": 42.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumvil_06.jpg",
+"o": {
+"credit": "Vipinvasudeva · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 42.06,
+"b": 43.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumvil_07.jpg",
+"o": {
+"credit": "ArmouredCyborg · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 43.82,
+"b": 56.1,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "True stories of animals that crossed a line with people. Subscribe so the next file finds you."
+}
+},
+{
+"a": 56.1,
+"b": 58.53,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumhills_02.jpg",
+"o": {
+"credit": "Rajarshi MITRA · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 58.53,
+"b": 63.0,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+79.6,
+29.6
+],
+"lines": [
+"KUMAON",
+"INDIA"
+],
+"hot": 0,
+"name": "Kumaon"
+},
+"big": true
+},
+{
+"a": 63.0,
+"b": 84.76,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "KumaonRelief",
+"at": {
+"utt": 0,
+"him": 86,
+"nep": 134,
+"alm": 214,
+"panar": 305
+}
+},
+"big": true
+},
+{
+"a": 84.76,
+"b": 88.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_sp01.jpg"
+}
+},
+{
+"a": 88.4,
+"b": 92.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_vl05.png"
+}
+},
+{
+"a": 92.82,
+"b": 96.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumvil_08.jpg",
+"o": {
+"credit": "Shyamal · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 96.6,
+"b": 99.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/uttvil_03.jpg",
+"o": {
+"credit": "Rajneeshrawat13 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 99.54,
+"b": 105.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumterr_01.jpg",
+"o": {
+"credit": "Ramwik · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 105.0,
+"b": 113.74,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "HouseSection",
+"at": {
+"animals": 64,
+"family": 121,
+"open": 0,
+"leo": 121
+}
+},
+"big": true
+},
+{
+"a": 113.74,
+"b": 118.54,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/oak2_01.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Tangopaso · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 118.54,
+"b": 123.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_ng03.png"
+}
+},
+{
+"a": 123.28,
+"b": 126.6,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/leopardin_03.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Kingshuk Mondal · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 126.6,
+"b": 129.42,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leopardin_04.jpg",
+"o": {
+"credit": "Tisha Mukherjee · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 129.42,
+"b": 133.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leopardin_05.jpg",
+"o": {
+"credit": "Tisha Mukherjee · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 133.62,
+"b": 135.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leopardin_06.jpg",
+"o": {
+"credit": "Tisha Mukherjee · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 135.06,
+"b": 146.08,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NotAGiant",
+"at": {
+"giant": 0,
+"lb": 92,
+"man": 184
+}
+},
+"big": true
+},
+{
+"a": 146.08,
+"b": 150.42,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leopardin_07.jpg",
+"o": {
+"credit": "Tisha Mukherjee · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 150.42,
+"b": 153.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leopardin_08.jpg",
+"o": {
+"credit": "Tisha Mukherjee · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 153.92,
+"b": 156.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leopardin_09.jpg",
+"o": {
+"credit": "Tisha Mukherjee · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 156.64,
+"b": 167.06,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CoverHop",
+"at": {
+"low": 0,
+"rush": 197
+}
+},
+"big": true
+},
+{
+"a": 167.06,
+"b": 171.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_ng02.png"
+}
+},
+{
+"a": 171.92,
+"b": 176.18,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leopardin_10.jpg",
+"o": {
+"credit": "Tisha Mukherjee · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 176.18,
+"b": 180.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leopardin_11.jpg",
+"o": {
+"credit": "Tisha Mukherjee · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 180.26,
+"b": 183.36,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumterr_02.jpg",
+"o": {
+"credit": "Sharada Prasad CS · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 183.36,
+"b": 186.02,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumterr_03.jpg",
+"o": {
+"credit": "Kiran Jonnalagadda from Bangalore, India · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 186.02,
+"b": 189.14,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumterr_04.jpg",
+"o": {
+"credit": "Rohit Gosain · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 189.14,
+"b": 192.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leopardin_12.jpg",
+"o": {
+"credit": "Tisha Mukherjee · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 192.24,
+"b": 195.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumterr_05.jpg",
+"o": {
+"credit": "Akhilpandey9796 · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 195.52,
+"b": 200.26,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"The Panar leopard",
+"*broke it.*"
+],
+"a": 4,
+"y": 360,
+"size": 130
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 200.26,
+"b": 204.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leocorb_01.jpg",
+"o": {
+"credit": "Amankr3081 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 204.4,
+"b": 208.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leocorb_02.jpg",
+"o": {
+"credit": "Zeguy Lestrange · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 208.28,
+"b": 212.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leocorb_03.jpg",
+"o": {
+"credit": "lensnmatter · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 212.98,
+"b": 216.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leocorb_04.jpg",
+"o": {
+"credit": "Alosh Bennett from Hyderabad, India · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 216.3,
+"b": 219.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leomaha_05.jpg",
+"o": {
+"credit": "Drashokk · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 219.94,
+"b": 223.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leomaha_06.jpg",
+"o": {
+"credit": "Drashokk · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 223.3,
+"b": 227.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leotrap_01.jpg",
+"o": {
+"credit": "Pt1979 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 227.72,
+"b": 247.693,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CauseTabs",
+"at": {
+"inj": 0,
+"age": 138,
+"dis": 389
+}
+},
+"big": true
+},
+{
+"a": 247.693,
+"b": 251.313,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leotrap_02.jpg",
+"o": {
+"credit": "Rohit Naniwadekar · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 251.313,
+"b": 274.453,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "FluWave",
+"at": {
+"chol": 98,
+"flu": 183,
+"rites": 359
+}
+},
+"big": true
+},
+{
+"a": 274.453,
+"b": 277.653,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leotrap_03.jpg",
+"o": {
+"credit": "Rohit Naniwadekar · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 277.653,
+"b": 282.253,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leotrap_04.jpg",
+"o": {
+"credit": "Rohit Naniwadekar · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 282.253,
+"b": 286.273,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leoeyes_03.jpg",
+"o": {
+"credit": "Sagar.vikas7 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 286.273,
+"b": 289.013,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumhills_04.jpg",
+"o": {
+"credit": "KiranJO · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 289.013,
+"b": 291.693,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumhills_05.jpg",
+"o": {
+"credit": "Harshit SR · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 291.693,
+"b": 296.713,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumhills_07.jpg",
+"o": {
+"credit": "E. C. Ryal, Great Trigonometric Survey of India · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 296.713,
+"b": 299.993,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumhills_08.jpg",
+"o": {
+"credit": "Ari prantika · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 299.993,
+"b": 303.833,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumhills_09.jpg",
+"o": {
+"credit": "Richard Strachey · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 303.833,
+"b": 308.173,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/kumhills_10.jpg",
+"ar": 1.2038,
+"o": {
+"credit": "W. J. Webb, Survey of India · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 308.173,
+"b": 311.253,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/himview_01.jpg",
+"o": {
+"credit": "Original: Harshit SR Derivative work: Unpetitpro · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 311.253,
+"b": 314.133,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/himview_02.jpg",
+"o": {
+"credit": "Ravi Kumar · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 314.133,
+"b": 335.293,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NewsAtWalkingPace",
+"at": {
+"miles": 0,
+"go": 20
+}
+},
+"big": true
+},
+{
+"a": 335.293,
+"b": 337.233,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/leopardtree_01.jpg",
+"o": {
+"credit": "Davidvraju · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 337.233,
+"b": 340.813,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Because nobody knew",
+"*where it was.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 340.813,
+"b": 345.153,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_ng01.png"
+}
+},
+{
+"a": 345.153,
+"b": 349.393,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_dr02.png"
+}
+},
+{
+"a": 349.393,
+"b": 353.873,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumterr_06.jpg",
+"o": {
+"credit": "meg and rahul · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 353.873,
+"b": 357.773,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kumterr_07.jpg",
+"o": {
+"credit": "Ashokyadav739 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 357.773,
+"b": 362.553,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/terrace2_01.jpg",
+"o": {
+"credit": "Sridhar Rao · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 362.553,
+"b": 366.953,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/terrace2_02.jpg",
+"ar": 0.7695,
+"o": {
+"credit": "Digvijaysjanoti · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 366.953,
+"b": 371.233,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/terrace2_04.jpg",
+"o": {
+"credit": "Ramwik · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 371.233,
+"b": 375.773,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_dr01.png"
+}
+},
+{
+"a": 375.773,
+"b": 394.493,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BarredDoor",
+"at": {
+"bar": 0,
+"months": 348
+}
+},
+"big": true
+},
+{
+"a": 394.493,
+"b": 397.693,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/terrace2_06.jpg",
+"o": {
+"credit": "Varun Shiv Kapur · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 397.693,
+"b": 405.473,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "MorningCount",
+"at": {
+"count": 157
+}
+},
+"big": true
+},
+{
+"a": 405.473,
+"b": 408.493,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "~400",
+"color": "#f14536",
+"size": 240,
+"a": 44
+}
+}
+}
+},
+{
+"a": 408.493,
+"b": 411.913,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/himsunset_01.jpg",
+"ar": 1.0,
+"o": {
+"credit": "Rohit Sharma · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 411.913,
+"b": 416.253,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/himsunset_02.jpg",
+"o": {
+"credit": "Sujayadhar · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 416.253,
+"b": 419.633,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/himsunset_03.jpg",
+"o": {
+"credit": "Abhijit Kar Gupta from Kolkata, India · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 419.633,
+"b": 423.813,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/himsunset_04.jpg",
+"o": {
+"credit": "lensnmatter · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 423.813,
+"b": 447.393,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "FuzzyNumber",
+"at": {
+"lower": 0,
+"higher": 182,
+"half": 574
+}
+},
+"big": true
+},
+{
+"a": 447.393,
+"b": 452.573,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/bourne_01.jpg",
+"ar": 1.2137,
+"o": {
+"credit": "Rijksmuseum · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 452.573,
+"b": 474.153,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TwinTerritories",
+"at": {
+"tiger": 0,
+"both": 310,
+"decade": 540
+}
+},
+"big": true
+},
+{
+"a": 474.153,
+"b": 478.753,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"The same man",
+"ended *both.*"
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 478.753,
+"b": 482.013,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/corbett_01.jpg",
+"o": {
+"credit": "Giles Laurent · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 482.013,
+"b": 486.313,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/corbett_02.jpg",
+"o": {
+"credit": "Giles Laurent · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 486.313,
+"b": 489.725,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/corbett_03.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Giles Laurent · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 489.725,
+"b": 493.045,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/langur_01.jpg",
+"o": {
+"credit": "Charles J. Sharp · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 493.045,
+"b": 497.385,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/langur_02.jpg",
+"o": {
+"credit": "Tisha Mukherjee · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 497.385,
+"b": 500.025,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/oak2_02.jpg",
+"o": {
+"credit": "Ajtjohnsingh · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 500.025,
+"b": 504.305,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/langur_03.jpg",
+"o": {
+"credit": "Senthiaathavan · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 504.305,
+"b": 507.945,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/corbett_04.jpg",
+"o": {
+"credit": "Giles Laurent · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 507.945,
+"b": 512.225,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/corbett_05.jpg",
+"o": {
+"credit": "Giles Laurent · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 512.225,
+"b": 515.785,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/corbett_06.jpg",
+"o": {
+"credit": "Giles Laurent · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 515.785,
+"b": 518.825,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/corbett_07.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Giles Laurent · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 518.825,
+"b": 521.645,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/corbett_08.jpg",
+"ar": 0.8,
+"o": {
+"credit": "Giles Laurent · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 521.645,
+"b": 544.105,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ThreeTerms",
+"at": {
+"r1": 10,
+"r2": 197,
+"r3": 461
+}
+},
+"big": true
+},
+{
+"a": 544.105,
+"b": 548.866,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/corbett_09.jpg",
+"o": {
+"credit": "Giles Laurent · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 548.866,
+"b": 552.866,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_hu06.png"
+}
+},
+{
+"a": 552.866,
+"b": 555.785,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/corbett_10.jpg",
+"o": {
+"credit": "Giles Laurent · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 555.785,
+"b": 561.006,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/nainital_01.jpg",
+"ar": 1.2419,
+"o": {
+"credit": "The J. Paul Getty Museum, Los Angeles · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 561.006,
+"b": 566.006,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_hu01.png"
+}
+},
+{
+"a": 566.006,
+"b": 570.465,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_hu05.png"
+}
+},
+{
+"a": 570.465,
+"b": 573.705,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/nainit2_01.jpg",
+"o": {
+"credit": "Slyronit · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 573.705,
+"b": 576.585,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/nainit2_02.jpg",
+"o": {
+"credit": "Slyronit · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 576.585,
+"b": 579.225,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/nainit2_03.jpg",
+"o": {
+"credit": "Slyronit · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 579.225,
+"b": 582.426,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/nainit2_06.jpg",
+"o": {
+"credit": "Jeet5080 · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 582.426,
+"b": 585.046,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/kaladh_01.jpg",
+"o": {
+"credit": "Harshoo19741 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 585.046,
+"b": 587.546,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/kaladh_02.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Joshi neha 2 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 587.546,
+"b": 603.345,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CoverScale",
+"at": {
+"tiger": 0,
+"knee": 238,
+"climb": 295
+}
+},
+"big": true
+},
+{
+"a": 603.345,
+"b": 605.765,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/pineforest_01.jpg",
+"o": {
+"credit": "Ramwik · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 605.765,
+"b": 610.746,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Not to charge.",
+"To *listen.*"
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+}
+},
+{
+"a": 610.746,
+"b": 635.645,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "AlarmRelay",
+"at": {
+"go": 0,
+"deer": 229,
+"langur": 328,
+"birds": 422
+}
+},
+"big": true
+},
+{
+"a": 635.645,
+"b": 640.126,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_hu04.png"
+}
+},
+{
+"a": 640.126,
+"b": 643.825,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/langur_05.jpg",
+"o": {
+"credit": "Jakub Hałun · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 643.825,
+"b": 646.506,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/langur_06.jpg",
+"o": {
+"credit": "Jakub Hałun · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 646.506,
+"b": 648.546,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/langurn_01.jpg",
+"o": {
+"credit": "Aditya Pal · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 648.546,
+"b": 671.306,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TreeVigil",
+"at": {
+"still": 142,
+"ears": 499
+}
+},
+"big": true
+},
+{
+"a": 671.306,
+"b": 673.645,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/langurn_02.jpg",
+"o": {
+"credit": "Aditya Pal · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 673.645,
+"b": 681.705,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Nineteen ten.",
+"The killings *stopped.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 681.705,
+"b": 699.126,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "OneYearTwoCats",
+"at": {
+"tiger": 137,
+"year": 389
+}
+},
+"big": true
+},
+{
+"a": 699.126,
+"b": 702.665,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_vl01.png"
+}
+},
+{
+"a": 702.665,
+"b": 707.205,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/bourne_02.jpg",
+"ar": 1.2045,
+"o": {
+"credit": "Rijksmuseum · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 707.205,
+"b": 711.366,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/bourne_03.jpg",
+"o": {
+"credit": "Rijksmuseum · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 711.366,
+"b": 713.165,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/bourne_07.jpg",
+"ar": 0.7931,
+"o": {
+"credit": "Bourne, Samuel (1834-1912). Photographe · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 713.165,
+"b": 721.025,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"A monster?",
+"Or something *people made?*"
+],
+"a": 4,
+"y": 360,
+"size": 100
+}
+}
+}
+},
+{
+"a": 721.025,
+"b": 724.765,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/bourne_08.jpg",
+"ar": 0.7895,
+"o": {
+"credit": "Bourne, Samuel (1834-1912). Photographe · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 724.765,
+"b": 740.918,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ThreadsToCat",
+"at": {
+"w": 0,
+"b": 53,
+"c": 137,
+"cause": 317
+}
+},
+"big": true
+},
+{
+"a": 740.918,
+"b": 746.238,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/forestdept_01.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Harmeet Singh · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 746.238,
+"b": 767.938,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "RifleCamera",
+"at": {
+"camera": 0,
+"renamed": 343,
+"oldest": 506
+}
+},
+"big": true
+},
+{
+"a": 767.938,
+"b": 772.378,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/dhikala_06.jpg",
+"o": {
+"credit": "A. J. T. Johnsingh, WWF-India and NCF · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 772.378,
+"b": 775.218,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/dhikala_05.jpg",
+"o": {
+"credit": "A. J. T. Johnsingh, WWF-India and NCF · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 775.218,
+"b": 778.388,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/sanjay_01.jpg",
+"o": {
+"credit": "Shishirdasika · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 778.388,
+"b": 801.398,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CityForestEdge",
+"at": {
+"mumbai": 296,
+"sgnp": 409,
+"edge": 335,
+"attacks": 524
+}
+},
+"big": true
+},
+{
+"a": 801.398,
+"b": 805.438,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_md01.png"
+}
+},
+{
+"a": 805.438,
+"b": 808.578,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/sanjay_02.jpg",
+"o": {
+"credit": "Shishirdasika · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 808.578,
+"b": 811.718,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_md02.png"
+}
+},
+{
+"a": 811.718,
+"b": 816.018,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/sanjay_03.jpg",
+"o": {
+"credit": "Patrice78500 · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 816.018,
+"b": 818.698,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/sanjay_04.jpg",
+"o": {
+"credit": "Ninad Bhosale · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 818.698,
+"b": 821.558,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/sanjay_05.jpg",
+"o": {
+"credit": "Magpie2025 · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 821.558,
+"b": 825.798,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/sanjay_07.jpg",
+"o": {
+"credit": "Dinesh Valke from Thane, India · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 825.798,
+"b": 828.858,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/aarey_02.jpg",
+"o": {
+"credit": "Sanferd Rodrigues from India · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 828.858,
+"b": 833.178,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/aarey_03.jpg",
+"o": {
+"credit": "Shishirdasika · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 833.178,
+"b": 836.578,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/aarey_04.jpg",
+"o": {
+"credit": "Shishirdasika · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 836.578,
+"b": 861.058,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "DuskProtocol",
+"at": {
+"r1": 0,
+"r2": 0,
+"r3": 169
+}
+},
+"big": true
+},
+{
+"a": 861.058,
+"b": 864.858,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_md03.png"
+}
+},
+{
+"a": 864.858,
+"b": 869.278,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_md04.png"
+}
+},
+{
+"a": 869.278,
+"b": 873.538,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/ag/ap6na_md05.png"
+}
+},
+{
+"a": 873.538,
+"b": 877.838,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/uttgoat_01.jpg",
+"o": {
+"credit": "Anshul24Sharma · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 877.838,
+"b": 881.338,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/uttgoat_02.jpg",
+"o": {
+"credit": "Sibasis55 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 881.338,
+"b": 884.218,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/uttspring_01.jpg",
+"o": {
+"credit": "Ms Sarah Welch · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 884.218,
+"b": 887.458,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/uttspring_02.jpg",
+"o": {
+"credit": "Ms Sarah Welch · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 887.458,
+"b": 890.838,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/uttspring_03.jpg",
+"o": {
+"credit": "Ms Sarah Welch · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 890.838,
+"b": 909.818,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BackAway",
+"at": {
+"run": 82,
+"photo": 136,
+"back": 209,
+"path": 326,
+"report": 391
+}
+},
+"big": true
+},
+{
+"a": 909.818,
+"b": 915.038,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/dhikala_04.jpg",
+"o": {
+"credit": "A. J. T. Johnsingh, WWF-India and NCF · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 915.038,
+"b": 918.778,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/dhikala_03.jpg",
+"o": {
+"credit": "SanketManerikar · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 918.778,
+"b": 923.518,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/dhikala_02.jpg",
+"o": {
+"credit": "Timothy Gonsalves · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 923.518,
+"b": 946.158,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "FileShut",
+"at": {
+"names": 20,
+"shut": 482
+}
+},
+"big": true
+},
+{
+"a": 946.158,
+"b": 949.338,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6na/cand/dhikala_01.jpg",
+"o": {
+"credit": "Timothy Gonsalves · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 949.338,
+"b": 964.898,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Which is more frightening: the animal that is huge and loud, or the one that is small, silent and patient?"
+}
+},
+{
+"a": 964.898,
+"b": 967.298,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6na/cand/bourne_09.jpg",
+"ar": 0.7947,
+"o": {
+"credit": "Bourne, Samuel (1834-1912). Photographe · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 967.298,
+"b": 975.45,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Next file:",
+"the true story of *one man-eater.*"
+],
+"a": 4,
+"y": 360,
+"size": 96
+}
+}
+}
+}
+],
+"stops": []
+}
