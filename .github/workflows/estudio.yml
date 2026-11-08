@@ -1,7 +1,8 @@
-# Render del ESTUDIO en la nube (7-nov). Lo dispara D:/rtmp/dspanel/tools/nube.py desde render.py: nadie lo corre a mano.
-# La PC arma el plan y sube a la release "est-<video>" sólo las fotos/avatares que faltan + manifest_<plan>.json
-# (cada segmento = su comando ffmpeg exacto). Acá: un job por tanda de segmentos (matriz) y un job final con los fundidos.
-#   gh workflow run estudio.yml -f tag=est-fe05ds -f plan=<hash> -f chunks='[0,1,2]' -f final=1 -f nonce=<x>
+# Render del ESTUDIO en la nube (7/8-nov). Lo dispara D:/rtmp/dspanel/tools/nube.py desde render.py: nadie lo corre a mano.
+# La PC arma el plan y sube a la release "est-<video>" UN paquete con las fotos/avatares que faltan, otro con voz+SFX
+# y manifest_<plan>.json (cada segmento = su comando ffmpeg exacto). Acá:
+#   render (matriz, 1 máquina por pedazo): renderiza sus segmentos + los une con los fundidos -> part_<k>_<hash>.mp4 (calidad final)
+#   final: pega los pedazos SIN recomprimir + mezcla voz y SFX -> final_<plan>.mp4
 name: estudio
 run-name: estudio ${{ inputs.tag }} ${{ inputs.nonce }}
 
@@ -10,8 +11,8 @@ on:
     inputs:
       tag:    { description: "release del video (est-<carpeta>)", required: true }
       plan:   { description: "hash del plan (manifest_<plan>.json)", required: true }
-      chunks: { description: "tandas a renderizar, JSON (ej [0,3,4]); [] = ninguna", required: true }
-      final:  { description: "1 = armar video_<plan>.mp4 con los fundidos", required: false, default: "1" }
+      chunks: { description: "pedazos a renderizar, JSON (ej [0,3,4]); [] = ninguno", required: true }
+      final:  { description: "1 = armar final_<plan>.mp4", required: false, default: "1" }
       nonce:  { description: "id de la corrida (para encontrarla)", required: true }
 
 permissions:
@@ -20,6 +21,9 @@ permissions:
 env:
   GH_TOKEN: ${{ github.token }}
   FF_URL: https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz
+  T: ${{ inputs.tag }}
+  R: ${{ github.repository }}
+  P: ${{ inputs.plan }}
 
 jobs:
   render:
@@ -37,111 +41,90 @@ jobs:
           mkdir -p ~/ff
           if curl -fsSL --retry 3 "$FF_URL" | tar -xJ -C ~/ff --strip-components=1; then echo "$HOME/ff/bin" >> "$GITHUB_PATH"
           else sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; fi
-          ffmpeg -version | head -1 || ~/ff/bin/ffmpeg -version | head -1
-      - name: tanda ${{ matrix.k }}
+      - name: pedazo ${{ matrix.k }}
+        env:
+          K: ${{ matrix.k }}
         run: |
           set -e
-          R=${{ github.repository }}; T=${{ inputs.tag }}; P=${{ inputs.plan }}; K=${{ matrix.k }}
           mkdir -p w/in w/seg && cd w
           gh release download "$T" -R "$R" -p "manifest_$P.json" -O m.json
-          python3 - "$K" <<'EOF'
+          python3 - <<'EOF'
           import json, sys, subprocess, os, concurrent.futures as cf
-          m = json.load(open("m.json")); c = m["chunks"][str(sys.argv[1])]
+          E = os.environ; m = json.load(open("m.json")); K = E["K"]; c = m["chunks"][K]
+          def bajar(pat, dst):
+              for t in range(5):
+                  if subprocess.run(["gh", "release", "download", E["T"], "-R", E["R"], "-p", pat, "-O", dst, "--clobber"]).returncode == 0: return
+              sys.exit("no pude bajar " + pat)
           for pk in m.get("packs", []):
-              for t in range(5):
-                  if subprocess.run(["gh", "release", "download", os.environ["T"], "-R", os.environ["R"], "-p", pk, "-O", "pk.tar", "--clobber"]).returncode == 0: break
-              else: sys.exit("no pude bajar " + pk)
-              subprocess.run(["tar", "-xf", "pk.tar", "-C", "in"], check=True); os.remove("pk.tar")
-          need = sorted({x for s in c["segs"] for x in s["in"] if not os.path.exists("in/" + x)})
-          for n in need:
-              for t in range(5):
-                  if subprocess.run(["gh", "release", "download", os.environ["T"], "-R", os.environ["R"], "-p", n, "-D", "in", "--clobber"]).returncode == 0: break
-              else: sys.exit("no pude bajar " + n)
-          def run(s):
-              r = subprocess.run(s["cmd"], capture_output=True, text=True)
-              return s["i"], (r.returncode, r.stderr[-400:])
+              bajar(pk, "pk.tar"); subprocess.run(["tar", "-xf", "pk.tar", "-C", "in"], check=True); os.remove("pk.tar")
+          for n in sorted({x for s in c["segs"] for x in s["in"] if not os.path.exists("in/" + x)}): bajar(n, "in/" + n)
+          def run1(s):
+              r = subprocess.run(s["cmd"], capture_output=True, text=True); return s["i"], r.returncode, r.stderr[-400:]
           bad = 0
           with cf.ThreadPoolExecutor(4) as ex:
-              for i, (rc, err) in ex.map(run, c["segs"]):
+              for i, rc, err in ex.map(run1, c["segs"]):
                   if rc: bad += 1; print("seg", i, "ERR", err)
-          sys.exit(1 if bad else 0)
+          if bad: sys.exit(1)
+          # unir con los fundidos (igual que assemble.py), calidad final
+          U = c["une"]; files = [s["cmd"][-1] for s in c["segs"]]; ns = list(U["ns"]); ds = U["ds"]
+          ins, fc, prev, t = [], [], "[v0]", 0
+          for k, f in enumerate(files):
+              ins += ["-i", f]
+              pre = ("trim=start_frame=%d,setpts=PTS-STARTPTS," % U["o"]) if (k == 0 and U["o"]) else ""
+              fc.append("[%d:v]%ssettb=AVTB,fps=30,format=yuv420p,setsar=1[v%d]" % (k, pre, k))
+          ns[0] -= U["o"]
+          for k in range(1, len(files)):
+              t += ns[k - 1]; d = ds[k - 1]; o = "[x%d]" % k
+              fc.append(("%s[v%d]xfade=transition=fade:duration=%.4f:offset=%.4f%s" % (prev, k, d / 30, t / 30, o)) if d > 0 else ("%s[v%d]concat=n=2:v=1:a=0%s" % (prev, k, o)))
+              prev = o
+          out = "part_%s_%s.mp4" % (K, c["hash"])
+          r = subprocess.run(["ffmpeg", "-v", "error", "-y"] + ins + ["-filter_complex", ";".join(fc), "-map", prev if len(files) > 1 else "[v0]",
+                              "-frames:v", str(U["frames"]), "-c:v", "libx264", "-crf", "20", "-preset", "medium", "-pix_fmt", "yuv420p", "-r", "30",
+                              "-video_track_timescale", "15360", "-an", out], capture_output=True, text=True)
+          if r.returncode: print(r.stderr[-2000:]); sys.exit(1)
+          n = int(subprocess.run(["ffprobe", "-v", "error", "-count_packets", "-select_streams", "v", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", out], capture_output=True, text=True).stdout.strip())
+          print("pedazo", K, "cuadros", n, "esperados", U["frames"])
+          if n != U["frames"]: sys.exit("cuadros distintos a los esperados")
           EOF
-          tar -cf "chunk_${K}_$(python3 -c "import json;print(json.load(open('m.json'))['chunks']['$K']['hash'])").tar" seg
-          for t in 1 2 3 4 5; do gh release upload "$T" -R "$R" chunk_*.tar --clobber && break; sleep $((t*10)); done
-        env:
-          T: ${{ inputs.tag }}
-          R: ${{ github.repository }}
+          for t in 1 2 3 4 5; do gh release upload "$T" -R "$R" part_*.mp4 --clobber && break; sleep $((t*10)); done
 
   final:
     needs: render
     if: ${{ always() && inputs.final == '1' && (needs.render.result == 'success' || needs.render.result == 'skipped') }}
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 60
     steps:
       - name: ffmpeg
         run: |
           mkdir -p ~/ff
           if curl -fsSL --retry 3 "$FF_URL" | tar -xJ -C ~/ff --strip-components=1; then echo "$HOME/ff/bin" >> "$GITHUB_PATH"
           else sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; fi
-          ffmpeg -version | head -1 || ~/ff/bin/ffmpeg -version | head -1
-      - name: fundidos
+      - name: pegar + audio
         run: |
           set -e
-          R=${{ github.repository }}; T=${{ inputs.tag }}; P=${{ inputs.plan }}
-          mkdir -p w && cd w
+          mkdir -p w/a && cd w
           gh release download "$T" -R "$R" -p "manifest_$P.json" -O m.json
-          VP=$(python3 -c "import json;print(json.load(open('m.json')).get('vplan') or '$P')")
-          if gh release download "$T" -R "$R" -p "video_$VP.mp4" -O video.mp4 --clobber 2>/dev/null; then echo "video sin audio ya estaba"; else
-          for n in $(python3 -c "import json;m=json.load(open('m.json'));print(' '.join('chunk_%s_%s.tar'%(k,c['hash']) for k,c in m['chunks'].items()))"); do
-            for t in 1 2 3 4 5; do gh release download "$T" -R "$R" -p "$n" --clobber && break; sleep $((t*5)); done
-            tar -xf "$n" && rm "$n"
-          done
           python3 - <<'EOF'
           import json, subprocess, sys, os
-          m = json.load(open("m.json")); XF = m["xf"]; N = len(XF)
-          segs = ["seg/%04d.mp4" % i for i in range(N)]
-          miss = [s for s in segs if not os.path.exists(s)]
-          if miss: sys.exit("faltan segmentos: %s" % miss[:10])
-          def run(cmd):
-              r = subprocess.run(cmd, capture_output=True, text=True)
-              if r.returncode: print(r.stderr[-1500:]); sys.exit(1)
-          def chain(files, ns, ds, out, crf):
-              ins, fc, prev, t = [], [], "[v0]", 0
-              for k, f in enumerate(files):
-                  ins += ["-i", f]; fc.append("[%d:v]settb=AVTB,fps=30,format=yuv420p,setsar=1[v%d]" % (k, k))
-              for k in range(1, len(files)):
-                  t += ns[k - 1]; d = ds[k - 1]; o = "[x%d]" % k
-                  fc.append(("%s[v%d]xfade=transition=fade:duration=%.4f:offset=%.4f%s" % (prev, k, d / 30, t / 30, o)) if d > 0 else ("%s[v%d]concat=n=2:v=1:a=0%s" % (prev, k, o)))
-                  prev = o
-              run(["ffmpeg", "-v", "error", "-y"] + ins + ["-filter_complex", ";".join(fc), "-map", prev if len(files) > 1 else "[v0]",
-                   "-c:v", "libx264", "-crf", str(crf), "-preset", "veryfast" if crf < 20 else "medium", "-pix_fmt", "yuv420p", "-r", "30", "-an", out])
-          import concurrent.futures as cf
-          G = 25; groups = [list(range(c, min(c + G, N))) for c in range(0, N, G)]
-          def tramo(j):
-              idx = groups[j]; out = "c%03d.mp4" % j
-              chain([segs[i] for i in idx], [XF[i]["n"] for i in idx], [XF[i]["d"] for i in idx], out, 14); return out
-          with cf.ThreadPoolExecutor(4) as ex: outs = list(ex.map(tramo, range(len(groups))))
-          chain(outs, [sum(XF[i]["n"] for i in g) for g in groups], [XF[g[-1]]["d"] for g in groups], "video.mp4", 20)
-          EOF
-          cp video.mp4 "video_$VP.mp4"
-          for t in 1 2 3 4 5; do gh release upload "$T" -R "$R" "video_$VP.mp4" --clobber && break; sleep $((t*10)); done
-          fi
-          # audio (voz + SFX) y final.mp4, igual que assemble.py
-          python3 - <<'EOF'
-          import json, subprocess, sys, os
-          m = json.load(open("m.json")); A = m.get("audio"); P = os.environ["P"]
-          if not A:
-              os.rename("video.mp4", "video_%s.mp4" % P); sys.exit(0)
-          os.makedirs("a", exist_ok=True)
-          for pk in m.get("apacks", []):
+          E = os.environ; m = json.load(open("m.json")); P = E["P"]
+          def bajar(pat, dst):
               for t in range(5):
-                  if subprocess.run(["gh", "release", "download", os.environ["T"], "-R", os.environ["R"], "-p", pk, "-O", "ap.tar", "--clobber"]).returncode == 0: break
-              else: sys.exit("no pude bajar " + pk)
-              subprocess.run(["tar", "-xf", "ap.tar", "-C", "a"], check=True); os.remove("ap.tar")
+                  if subprocess.run(["gh", "release", "download", E["T"], "-R", E["R"], "-p", pat, "-O", dst, "--clobber"]).returncode == 0: return
+              sys.exit("no pude bajar " + pat)
           def run(cmd):
               r = subprocess.run(cmd, capture_output=True, text=True)
               if r.returncode: print(" ".join(cmd)[:400]); print(r.stderr[-1500:]); sys.exit(1)
               return r
+          ks = sorted(m["chunks"], key=int)
+          with open("lista.txt", "w") as fh:
+              for k in ks:
+                  f = "part_%s_%s.mp4" % (k, m["chunks"][k]["hash"]); bajar(f, f); fh.write("file '%s'\n" % f)
+          run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", "lista.txt", "-c", "copy", "-an", "video.mp4"])
+          A = m.get("audio")
+          if not A:
+              os.rename("video.mp4", "final_%s.mp4" % P); sys.exit(0)
+          for pk in m.get("apacks", []):
+              bajar(pk, "ap.tar"); subprocess.run(["tar", "-xf", "ap.tar", "-C", "a"], check=True); os.remove("ap.tar")
           def dur(p): return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p], capture_output=True, text=True).stdout.strip())
           VOZ = "a/" + A["voz"]; C = A["cues"]
           if not C:
@@ -155,10 +138,6 @@ jobs:
               fc = ";".join(parts) + ";[0:a]" + mix + ("amix=inputs=%d:normalize=0:duration=first[out]" % (len(C) + 1))
               run(["ffmpeg", "-v", "error", "-y"] + inputs + ["-filter_complex", fc, "-map", "[out]", "-ac", "2", "-c:a", "aac", "-b:a", "192k", "mix.m4a"])
           run(["ffmpeg", "-v", "error", "-y", "-i", "video.mp4", "-i", "mix.m4a", "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "copy", "-movflags", "+faststart", "final_%s.mp4" % P])
+          print("final", dur("final_%s.mp4" % P), "s · video", dur("video.mp4"), "s · voz", dur(VOZ), "s")
           EOF
-          OUT=$(ls final_$P.mp4 video_$P.mp4 2>/dev/null | head -1)
-          for t in 1 2 3 4 5; do gh release upload "$T" -R "$R" "$OUT" --clobber && break; sleep $((t*10)); done
-        env:
-          T: ${{ inputs.tag }}
-          R: ${{ github.repository }}
-          P: ${{ inputs.plan }}
+          for t in 1 2 3 4 5; do gh release upload "$T" -R "$R" "final_$P.mp4" --clobber && break; sleep $((t*10)); done
