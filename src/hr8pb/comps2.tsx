@@ -120,7 +120,7 @@ const ShoeBox3D: React.FC<P> = (p) => {
       <div style={{ ...abs(0, 124, 1080, 386), background: "linear-gradient(170deg,#c6b28b,#8d7a56)", borderRadius: "0 0 10px 10px", boxShadow: "inset 0 -26px 40px rgba(0,0,0,.3)" }} />
       <div style={{ ...abs(0, -lid * 560, 1080, 180), transform: `rotate(${lid * -8}deg)`, opacity: 1 - e(t, op + 0.2, op + 0.7) }}><div style={{ ...abs(0, 0, 1080, 124), background: "linear-gradient(170deg,#d6c29a,#b09a70)", clipPath: "polygon(7% 0,93% 0,100% 100%,0 100%)" }} /><div style={{ ...abs(-10, 122, 1100, 58), background: "linear-gradient(180deg,#a8926a,#7f6a48)", borderRadius: 6 }} /></div>
     </Drop>
-    <Say t={t} at={yr} tx="TOMMY" x={1120} y={230} size={140} col={ORO} w={560} />
+    <Say t={t} at={yr} tx="TOMMY" x={1440} y={230} size={140} col={ORO} w={560} />
   </Stage>;
 };
 
