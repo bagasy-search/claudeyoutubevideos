@@ -78,8 +78,13 @@ jobs:
               fc.append(("%s[v%d]xfade=transition=fade:duration=%.4f:offset=%.4f%s" % (prev, k, d / 30, t / 30, o)) if d > 0 else ("%s[v%d]concat=n=2:v=1:a=0%s" % (prev, k, o)))
               prev = o
           out = "part_%s_%s.mp4" % (K, c["hash"])
-          r = subprocess.run(["ffmpeg", "-v", "error", "-y"] + ins + ["-filter_complex", ";".join(fc), "-map", prev if len(files) > 1 else "[v0]",
+          # 8-nov (enc v2): sale YA en formato de entrega para YouTube (lo que antes recomprimía la PC al entregar):
+          # matriz bt709 rango tv, keyframe cada 2 s, tope 5 Mbps. Así el final no se toca más.
+          fc.append("%sscale=out_color_matrix=bt709:out_range=limited,format=yuv420p[vout]" % (prev if len(files) > 1 else "[v0]"))
+          r = subprocess.run(["ffmpeg", "-v", "error", "-y"] + ins + ["-filter_complex", ";".join(fc), "-map", "[vout]",
                               "-frames:v", str(U["frames"]), "-c:v", "libx264", "-crf", "20", "-preset", "medium", "-pix_fmt", "yuv420p", "-r", "30",
+                              "-maxrate", "5M", "-bufsize", "10M", "-g", "60", "-keyint_min", "60", "-sc_threshold", "0",
+                              "-color_range", "tv", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709",
                               "-video_track_timescale", "15360", "-an", out], capture_output=True, text=True)
           if r.returncode: print(r.stderr[-2000:]); sys.exit(1)
           n = int(subprocess.run(["ffprobe", "-v", "error", "-count_packets", "-select_streams", "v", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", out], capture_output=True, text=True).stdout.strip())
@@ -121,23 +126,37 @@ jobs:
                   f = "part_%s_%s.mp4" % (k, m["chunks"][k]["hash"]); bajar(f, f); fh.write("file '%s'\n" % f)
           run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", "lista.txt", "-c", "copy", "-an", "video.mp4"])
           A = m.get("audio")
-          if not A:
-              os.rename("video.mp4", "final_%s.mp4" % P); sys.exit(0)
+          if not A:      # sin voz (no debería pasar): final sin audio y qc vacío
+              os.rename("video.mp4", "final_%s.mp4" % P); os.makedirs("qc", exist_ok=True)
+              json.dump({"plan": P, "probe": {}, "negros": [], "voz": 0}, open("qc/final_info.json", "w"))
+              subprocess.run(["tar", "-cf", "qc_%s.tar" % P, "qc"], check=True); sys.exit(0)
           for pk in m.get("apacks", []):
               bajar(pk, "ap.tar"); subprocess.run(["tar", "-xf", "ap.tar", "-C", "a"], check=True); os.remove("ap.tar")
           def dur(p): return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p], capture_output=True, text=True).stdout.strip())
           VOZ = "a/" + A["voz"]; C = A["cues"]
+          ENT = ["-af", "pan=stereo|c0=c0|c1=c0", "-ar", "48000"]     # como la entrega de antes: estéreo parejo, 48 kHz
           if not C:
-              run(["ffmpeg", "-v", "error", "-y", "-i", VOZ, "-ac", "2", "-c:a", "aac", "-b:a", "192k", "mix.m4a"])
+              run(["ffmpeg", "-v", "error", "-y", "-i", VOZ, "-ac", "2"] + ENT + ["-c:a", "aac", "-b:a", "192k", "mix.m4a"])
           else:
               inputs = ["-i", VOZ]; parts = []
               for i, (f, t, g, fo) in enumerate(C, start=1):
                   inputs += ["-i", "a/" + f]; d = min(dur("a/" + f), 20.0)
                   parts.append("[%d:a]volume=%.4f,atrim=0:%.2f,afade=t=out:st=%.2f:d=%.2f,adelay=%d|%d[a%d]" % (i, g, d, max(0.0, d - fo), fo, t, t, i))
               mix = "".join("[a%d]" % i for i in range(1, len(C) + 1))
-              fc = ";".join(parts) + ";[0:a]" + mix + ("amix=inputs=%d:normalize=0:duration=first[out]" % (len(C) + 1))
-              run(["ffmpeg", "-v", "error", "-y"] + inputs + ["-filter_complex", fc, "-map", "[out]", "-ac", "2", "-c:a", "aac", "-b:a", "192k", "mix.m4a"])
-          run(["ffmpeg", "-v", "error", "-y", "-i", "video.mp4", "-i", "mix.m4a", "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "copy", "-movflags", "+faststart", "final_%s.mp4" % P])
-          print("final", dur("final_%s.mp4" % P), "s · video", dur("video.mp4"), "s · voz", dur(VOZ), "s")
+              fc = ";".join(parts) + ";[0:a]" + mix + ("amix=inputs=%d:normalize=0:duration=first,pan=stereo|c0=c0|c1=c0[out]" % (len(C) + 1))
+              run(["ffmpeg", "-v", "error", "-y"] + inputs + ["-filter_complex", fc, "-map", "[out]", "-ac", "2", "-ar", "48000", "-c:a", "aac", "-b:a", "192k", "mix.m4a"])
+          FIN = "final_%s.mp4" % P
+          run(["ffmpeg", "-v", "error", "-y", "-i", "video.mp4", "-i", "mix.m4a", "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "copy", "-movflags", "+faststart", FIN])
+          print("final", dur(FIN), "s · video", dur("video.mp4"), "s · voz", dur(VOZ), "s")
+          # 8-nov: el QC del final se hace ACÁ (la PC ya no baja el video): cuadros cada 30 s + datos + huecos negros
+          os.makedirs("qc", exist_ok=True)
+          run(["ffmpeg", "-v", "error", "-y", "-i", FIN, "-vf", "fps=1/30,scale=480:-2", "-q:v", "3", "qc/f_%03d.jpg"])
+          pr = json.loads(run(["ffprobe", "-v", "error", "-show_entries", "stream=codec_type,width,height,r_frame_rate,channels,sample_rate:format=duration,size", "-of", "json", FIN]).stdout)
+          bd = subprocess.run(["ffmpeg", "-v", "info", "-i", FIN, "-vf", "blackdetect=d=0.5:pix_th=0.10", "-an", "-f", "null", "-"], capture_output=True, text=True).stderr
+          import re
+          negros = [[float(a), float(b)] for a, b in re.findall(r"black_start:([\d.]+) black_end:([\d.]+)", bd)]
+          json.dump({"plan": P, "probe": pr, "negros": negros, "voz": dur(VOZ)}, open("qc/final_info.json", "w"))
+          subprocess.run(["tar", "-cf", "qc_%s.tar" % P, "qc"], check=True)
+          print("qc:", len(os.listdir("qc")) - 1, "cuadros ·", len(negros), "huecos negros")
           EOF
-          for t in 1 2 3 4 5; do gh release upload "$T" -R "$R" "final_$P.mp4" --clobber && break; sleep $((t*10)); done
+          for t in 1 2 3 4 5; do gh release upload "$T" -R "$R" "final_$P.mp4" "qc_$P.tar" --clobber && break; sleep $((t*10)); done
