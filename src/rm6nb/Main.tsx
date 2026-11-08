@@ -97,7 +97,7 @@ const AvatarPiP: React.FC<{ t: number }> = ({ t }) => {
   const w = AW.find((x) => t >= x.ms && t < x.me);
   if (!w) return null;
   const o = e(t, w.ms, w.ms + 0.3) * (1 - e(t, w.me - 0.3, w.me));
-  return <div style={{ position: "absolute", left: 60, bottom: 60, width: 480, height: 270, borderRadius: 18, overflow: "hidden", border: `6px solid ${CU.cal}`, boxShadow: "0 30px 60px rgba(0,0,0,.6)", opacity: o }}><AvatarR t={t} /></div>;
+  return <div style={{ position: "absolute", right: 60, bottom: 60, width: 480, height: 270, borderRadius: 18, overflow: "hidden", border: `6px solid ${CU.cal}`, boxShadow: "0 30px 60px rgba(0,0,0,.6)", opacity: o }}><AvatarR t={t} /></div>;
 };
 
 // =====================================================================================
@@ -225,43 +225,23 @@ const Final: React.FC<{ t: number; at: number; text: string; out: number }> = ({
 // =====================================================================================
 const BW = 430, BH = 610;
 const Guia: React.FC<{ t: number; c: Cta }> = ({ t, c }) => {
+  // regla Ramón: en pantalla SOLO la portada + «The $2 Mechanic — link in the first line of the description»; sin QR, sin precio
   const o = e(t, c.a - 0.3, c.a + 0.2) * (1 - e(t, c.b - 0.1, c.b + 0.4));
   if (o <= 0.01) return null;
-  const m = screenOf(t, PT.sink);
-  const fly = ei(t, c.a, c.a + 1.3), open = ei(t, c.open, c.open + 1.0), zoom = ei(t, c.open + 0.9, c.open + 2.0);
-  const x = m.x + (700 - m.x) * fly, y = m.y + (540 - m.y) * fly, sc = (0.22 + 0.78 * fly) * (1 + 0.28 * zoom);
-  const fl = Math.sin(t * 1.4) * 6, ry = -24 + 14 * fly + 2 * Math.sin(t * 0.7) + 24 * open;
-  const qi = Math.min(1.04, spr(t, c.a + 1.2, 0.9));
+  const fly = ei(t, c.a, c.a + 1.1), fl = Math.sin(t * 1.4) * 6, ry = -18 + 10 * fly + 2 * Math.sin(t * 0.7);
+  const tx = e(t, c.a + 0.9, c.a + 1.3), tx2 = e(t, c.a + 1.5, c.a + 1.9);
   return <AbsoluteFill style={{ opacity: o }}>
-    <AbsoluteFill style={{ background: `radial-gradient(ellipse at 40% 50%, rgba(20,12,8,${0.25 * fly}) 0%, rgba(10,6,4,${0.7 * fly}) 100%)` }} />
-    {/* el libro: tapa que se abre (gira sobre el lomo) y adentro la página real del PDF */}
-    <div style={{ position: "absolute", left: x, top: y + fl, perspective: 1800, transform: `translate(-50%,-50%) scale(${sc})` }}>
-      <div style={{ position: "relative", width: BW, height: BH, transformStyle: "preserve-3d", transform: `rotateY(${ry}deg) rotateX(${4 - 3 * fly}deg) translateX(${open * BW * 0.5}px)` }}>
-        <div style={{ position: "absolute", inset: 0, background: "#fffdf7", borderRadius: "4px 10px 10px 4px", boxShadow: "0 50px 100px rgba(0,0,0,.6)", overflow: "hidden" }}>
-          <Img src={staticFile(P + c.pag)} style={{ width: "100%", height: "100%", objectFit: "contain" }} />
-        </div>
-        <div style={{ position: "absolute", inset: 0, transformOrigin: "0 50%", transform: `rotateY(${-170 * open}deg)`, transformStyle: "preserve-3d" }}>
-          <div style={{ position: "absolute", inset: 0, backfaceVisibility: "hidden", borderRadius: "4px 12px 12px 4px", overflow: "hidden", boxShadow: "0 50px 100px rgba(0,0,0,.6), inset 0 0 0 1px rgba(255,255,255,.15)" }}>
-            <Img src={staticFile(P + c.cover)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(102deg, rgba(0,0,0,.42) 0%, rgba(0,0,0,.1) 9%, rgba(255,255,255,.12) 34%, rgba(255,255,255,0) 62%)" }} />
-          </div>
-          <div style={{ position: "absolute", inset: 0, backfaceVisibility: "hidden", transform: "rotateY(180deg)", borderRadius: "12px 4px 4px 12px", background: "linear-gradient(90deg,#efe2c4,#e3d2ab)", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", fontFamily: FONT, fontWeight: 900, color: CU.barro, textAlign: "center", padding: 30 }}>
-            <div style={{ fontSize: 34, letterSpacing: 4 }}>{c.libro}</div>
-            <div style={{ fontSize: 26, color: "#7a5a40", marginTop: 14 }}>50 ARREGLOS DE CASA</div>
-          </div>
-        </div>
+    <AbsoluteFill style={{ background: `radial-gradient(ellipse at 40% 50%, rgba(20,12,8,${0.3 * fly}) 0%, rgba(10,6,4,${0.78 * fly}) 100%)` }} />
+    <div style={{ position: "absolute", left: 560, top: 540 + fl + (1 - fly) * 140, perspective: 1800, transform: `translate(-50%,-50%) scale(${0.5 + 0.5 * fly})` }}>
+      <div style={{ width: BW, height: BH, transform: `rotateY(${ry}deg) rotateX(2deg)`, borderRadius: "4px 12px 12px 4px", overflow: "hidden", boxShadow: "0 50px 100px rgba(0,0,0,.6), inset 0 0 0 1px rgba(255,255,255,.15)" }}>
+        <Img src={staticFile(P + c.cover)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(102deg, rgba(0,0,0,.42) 0%, rgba(0,0,0,.1) 9%, rgba(255,255,255,.12) 34%, rgba(255,255,255,0) 62%)" }} />
       </div>
     </div>
-    {/* cinta del ahorro */}
-    <div style={{ position: "absolute", left: 700, top: 110, transform: `translate(-50%,-50%) scale(${Math.min(1.04, spr(t, c.a + 0.6))})`, opacity: e(t, c.a + 0.6, c.a + 0.8), padding: "16px 40px", borderRadius: 16, background: CU.maiz, ...caja, fontSize: 50, color: CU.tinta, boxShadow: "0 20px 40px rgba(0,0,0,.5)" }}>{c.ahorro}</div>
-    {/* el QR: tarjeta blanca limpia, sin filtros encima */}
-    <div style={{ position: "absolute", left: 1560, top: 500, transform: `translate(-50%,-50%) scale(${qi})`, opacity: e(t, c.a + 1.2, c.a + 1.4), display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <div style={{ width: 400, height: 400, borderRadius: 30, background: "#fff", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 30px 70px rgba(0,0,0,.55)", border: `8px solid ${CU.barro}` }}>
-        <Img src={staticFile(P + "qr_g.png")} style={{ width: 340, height: 340, objectFit: "contain" }} />
-      </div>
-      <div style={{ ...caja, fontSize: 44, marginTop: 26, textShadow: extrude(4, "#000") }}>ESCANEE CON LA CÁMARA</div>
-      <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 30, color: CU.masa, marginTop: 10, textAlign: "center", width: 520, lineHeight: 1.25, textShadow: "0 2px 10px #000" }}>o el link está en la primera línea de la descripción</div>
+    <div style={{ position: "absolute", left: 900, top: 420, opacity: tx, transform: `translateX(${(1 - tx) * 40}px)` }}>
+      <div style={{ ...caja, fontSize: 92, color: CU.maiz, textShadow: extrude(5, "#000") }}>The $2 Mechanic</div>
     </div>
+    <div style={{ position: "absolute", left: 904, top: 560, width: 900, opacity: tx2, transform: `translateX(${(1 - tx2) * 40}px)`, fontFamily: FONT, fontWeight: 800, fontSize: 48, lineHeight: 1.25, color: CU.cal, textShadow: "0 3px 14px #000" }}>link in the first line of the description</div>
   </AbsoluteFill>;
 };
 
