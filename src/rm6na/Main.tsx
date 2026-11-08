@@ -227,7 +227,7 @@ const BW = 430, BH = 610;
 const Guia: React.FC<{ t: number; c: Cta }> = ({ t, c }) => {
   const o = e(t, c.a - 0.3, c.a + 0.2) * (1 - e(t, c.b - 0.1, c.b + 0.4));
   if (o <= 0.01) return null;
-  const m = screenOf(t, PT.sink);
+  const m = { x: 1500, y: 1250 }; // sin mundo 3D en rm6na: el libro sube desde abajo a la derecha
   const fly = ei(t, c.a, c.a + 1.3), open = ei(t, c.open, c.open + 1.0), zoom = ei(t, c.open + 0.9, c.open + 2.0);
   const x = m.x + (700 - m.x) * fly, y = m.y + (540 - m.y) * fly, sc = (0.22 + 0.78 * fly) * (1 + 0.28 * zoom);
   const fl = Math.sin(t * 1.4) * 6, ry = -24 + 14 * fly + 2 * Math.sin(t * 0.7) + 24 * open;
