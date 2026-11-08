@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        modo: [chico, real]
+        modo: [chico]
     runs-on: ubuntu-latest
     timeout-minutes: 240
     steps:
@@ -35,7 +35,7 @@ jobs:
           for f in out/*.mp4; do
             n=$(basename "$f"); d=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f"); of=$(python3 -c "print(max(0.1,$d-0.8))")
             for crf in 25 27 29 31 33 35 38; do
-              ffmpeg -y -v error -i "$f" -filter_complex "[0:v]split[a][b];[a]trim=start=0.4,setpts=PTS-STARTPTS[x];[b]trim=end=0.4,setpts=PTS-STARTPTS[y];[x][y]xfade=transition=fade:duration=0.4:offset=$of,format=yuv420p,fps=30[v]" -map "[v]" -an -c:v libx264 -preset veryslow -crf $crf -movflags +faststart "xm/$n"
+              ffmpeg -y -v error -i "$f" -filter_complex "[0:v]split[a][b];[a]trim=start=0.4,setpts=PTS-STARTPTS[x];[b]trim=end=0.4,setpts=PTS-STARTPTS[y];[x][y]xfade=transition=fade:duration=0.4:offset=$of,format=yuv420p,fps=30[v]" -map "[v]" -an -c:v libx264 -preset slow -crf $crf -movflags +faststart "xm/$n"
               [ $(stat -c%s "xm/$n") -le 200000 ] && break
             done
             echo "$n crf=$crf $(stat -c%s xm/$n) bytes"
