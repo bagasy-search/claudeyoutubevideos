@@ -22,8 +22,8 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null && (sudo apt-get install -y -qq fonts-inter fonts-noto-color-emoji > /dev/null || true)
           mkdir -p dl app v
-          gh release download "${{ inputs.tag }}" -R "${{ github.repository }}" -D dl --pattern motor.tar.gz --pattern datos.tar
-          tar -xzf dl/motor.tar.gz -C app && tar -xf dl/datos.tar -C v && rm -rf dl
+          gh release download "${{ inputs.tag }}" -R "${{ github.repository }}" -D dl --pattern motor.tar.gz --pattern datos.tar --pattern extra.tar
+          tar -xzf dl/motor.tar.gz -C app && tar -xf dl/datos.tar -C v && (tar -xf dl/extra.tar -C v || true) && rm -rf dl
           pip install -q -r app/motor/requirements.txt
           echo '{}' > /tmp/cfg.json
       - name: edicion extrema
@@ -41,4 +41,4 @@ jobs:
         run: |
           cp v/extrema/manifest.json . 2>/dev/null || true
           ls -la v/final.mp4 v/extrema/ || true
-          gh release upload "${{ inputs.tag }}" v/final.mp4 v/extrema/*.mp4 manifest.json xm.log render.log assemble.log validar.log -R "${{ github.repository }}" --clobber || true
+          gh release upload "${{ inputs.tag }}" v/final.mp4 $(ls v/extrema/*.mp4 2>/dev/null) manifest.json xm.log render.log assemble.log validar.log -R "${{ github.repository }}" --clobber || true
