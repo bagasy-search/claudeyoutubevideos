@@ -1,0 +1,2620 @@
+{
+"end": 1159.91,
+"shots": [
+{
+"a": 0.0,
+"b": 2.22,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"DECEMBER 1915",
+"*HOKKAIDO*, JAPAN"
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+}
+},
+{
+"a": 2.22,
+"b": 4.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_cab01.jpg"
+}
+},
+{
+"a": 4.82,
+"b": 6.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_hearth01.jpg"
+}
+},
+{
+"a": 6.58,
+"b": 8.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_d4snow01.jpg"
+}
+},
+{
+"a": 8.3,
+"b": 11.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_cab02.jpg"
+}
+},
+{
+"a": 11.08,
+"b": 17.62,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "WallCircuit",
+"at": {
+"walk": 0,
+"window": 70
+}
+},
+"big": true
+},
+{
+"a": 17.62,
+"b": 20.04,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_d4cab05.jpg"
+}
+},
+{
+"a": 20.04,
+"b": 22.14,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_val01.jpg"
+}
+},
+{
+"a": 22.14,
+"b": 24.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_for01.jpg"
+}
+},
+{
+"a": 24.88,
+"b": 30.96,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LongDayAway",
+"at": {
+"phone": 86,
+"road": 130
+}
+},
+"big": true
+},
+{
+"a": 30.96,
+"b": 33.66,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_val02.jpg"
+}
+},
+{
+"a": 33.66,
+"b": 39.0,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SixDays",
+"at": {
+"go": 0,
+"back": 120
+}
+},
+"big": true
+},
+{
+"a": 39.0,
+"b": 40.66,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/bearsnow_01.jpg",
+"ar": 1.25,
+"o": {
+"credit": "USFWSAlaska · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 40.66,
+"b": 42.54,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/hkwinter_01.jpg",
+"ar": 1.2,
+"o": {
+"credit": "Michala Garrison, using MODIS data from NASA EOS · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 42.54,
+"b": 46.48,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "FUNERAL",
+"color": "#e6edf4",
+"size": 240,
+"a": 0
+}
+}
+}
+},
+{
+"a": 46.48,
+"b": 48.12,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/kaitaku_01.jpg",
+"o": {
+"credit": "663highland · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 48.12,
+"b": 50.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/matagi_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 50.46,
+"b": 53.0,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Why did this bear",
+"keep *coming back?*"
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 53.0,
+"b": 54.64,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "AVOID",
+"color": "#f14536",
+"size": 240,
+"a": 0
+}
+}
+}
+},
+{
+"a": 54.64,
+"b": 56.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_bear01.jpg"
+}
+},
+{
+"a": 56.38,
+"b": 58.14,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearsnow_02.jpg",
+"o": {
+"credit": "USFWSAlaska · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 58.14,
+"b": 60.02,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearsnow_03.jpg",
+"o": {
+"credit": "USFWSAlaska · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 60.02,
+"b": 64.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/irori_01.jpg",
+"o": {
+"credit": "JosephCoston · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 64.2,
+"b": 74.98,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "True stories of animals that crossed a line, without the gore and without the myths. Subscribe so the next file finds you."
+}
+},
+{
+"a": 74.98,
+"b": 86.86,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "If you had lived in that valley, would you have stayed, or walked out through the snow?"
+}
+},
+{
+"a": 86.86,
+"b": 89.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/hkwinter_03.jpg",
+"o": {
+"credit": "NASA · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 89.54,
+"b": 96.4,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+142.8,
+43.4
+],
+"lines": [
+"HOKKAIDO",
+"JAPAN",
+"1915"
+],
+"hot": 0,
+"name": "Hokkaido"
+},
+"big": true
+},
+{
+"a": 96.4,
+"b": 99.68,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/haboro_01.jpg",
+"o": {
+"credit": "MNRNSD · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 99.68,
+"b": 103.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/kaitaku_02.jpg",
+"o": {
+"credit": "663highland · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 103.58,
+"b": 108.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/tonden_01.jpg",
+"o": {
+"credit": "禁樹なずな · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 108.52,
+"b": 117.64,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SnowOverHead",
+"at": {
+"rise": 181
+}
+},
+"big": true
+},
+{
+"a": 117.64,
+"b": 123.54,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+141.65,
+44.33
+],
+"prev": [
+142.8,
+43.4
+],
+"lines": [
+"TOMAMAE",
+"SANKEBETSU"
+],
+"hot": 0,
+"name": "Tomamae"
+},
+"big": true
+},
+{
+"a": 123.54,
+"b": 128.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/tonden_07.jpg",
+"o": {
+"credit": "禁樹なずな · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 128.08,
+"b": 131.36,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/abies_01.jpg",
+"o": {
+"credit": "Σ64 · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 131.36,
+"b": 134.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/hkdog_01.jpg",
+"o": {
+"credit": "Midori · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 134.54,
+"b": 136.68,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/murata_01.jpg",
+"o": {
+"credit": "PHGCOM · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 136.68,
+"b": 146.52,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "FifteenFamilies",
+"at": {
+"houses": 0,
+"far": 167
+}
+},
+"big": true
+},
+{
+"a": 146.52,
+"b": 149.5,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_corn01.jpg"
+}
+},
+{
+"a": 149.5,
+"b": 153.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_for02.jpg"
+}
+},
+{
+"a": 153.26,
+"b": 154.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_bear02.jpg"
+}
+},
+{
+"a": 154.62,
+"b": 163.78,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "OneSpecies",
+"at": {
+"merge": 127
+}
+},
+"big": true
+},
+{
+"a": 163.78,
+"b": 168.78,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearsnow_04.jpg",
+"o": {
+"credit": "USFWSAlaska · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 168.78,
+"b": 171.8,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearsnow_05.jpg",
+"o": {
+"credit": "USFWSAlaska · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 171.8,
+"b": 174.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearsnow_06.jpg",
+"o": {
+"credit": "USFWSAlaska · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 174.4,
+"b": 182.74,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ScentRings",
+"at": {
+"rings": 0,
+"leave": 140
+}
+},
+"big": true
+},
+{
+"a": 182.74,
+"b": 185.36,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_trk01.jpg"
+}
+},
+{
+"a": 185.36,
+"b": 188.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_trk02.jpg"
+}
+},
+{
+"a": 188.82,
+"b": 192.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearsnow_07.jpg",
+"o": {
+"credit": "USFWSAlaska · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 192.6,
+"b": 205.28,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "DenFat",
+"at": {
+"sleep": 0,
+"fat": 143
+}
+},
+"big": true
+},
+{
+"a": 205.28,
+"b": 209.7,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"That rule",
+"*broke* in November."
+],
+"a": 4,
+"y": 360,
+"size": 130
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 209.7,
+"b": 213.9,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2cab09.jpg"
+}
+},
+{
+"a": 213.9,
+"b": 217.9,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/elm_02.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Stavast22 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 217.9,
+"b": 222.18,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/snowstorm_01.jpg",
+"o": {
+"credit": "Hal 0005 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 222.18,
+"b": 224.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/sanke_02.jpg",
+"o": {
+"credit": "Babi Hijau · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 224.4,
+"b": 248.74,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CornLedger",
+"at": {
+"n1": 0,
+"n20": 0,
+"n30": 346,
+"storm": 730
+}
+},
+"big": true
+},
+{
+"a": 248.74,
+"b": 252.06,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/matagi_03.jpg",
+"ar": 0.5624,
+"o": {
+"credit": "佐藤良美 · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 252.06,
+"b": 256.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_men01.jpg"
+}
+},
+{
+"a": 256.22,
+"b": 260.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_men02.jpg"
+}
+},
+{
+"a": 260.2,
+"b": 266.62,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "QuietTally",
+"at": {
+"go": 0
+}
+},
+"big": true
+},
+{
+"a": 266.62,
+"b": 270.9,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_cab03.jpg"
+}
+},
+{
+"a": 270.9,
+"b": 273.66,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_win01.jpg"
+}
+},
+{
+"a": 273.66,
+"b": 277.66,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/irori_02.jpg",
+"o": {
+"credit": "Alex Kerr · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 277.66,
+"b": 279.5,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/abies_02.jpg",
+"o": {
+"credit": "Petr Filippov · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 279.5,
+"b": 284.96,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "DaylightClock",
+"at": {
+"go": 0
+}
+},
+"big": true
+},
+{
+"a": 284.96,
+"b": 289.72,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "WINDOW",
+"color": "#f14536",
+"size": 240,
+"a": 0
+}
+}
+}
+},
+{
+"a": 289.72,
+"b": 293.53,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_trk03.jpg"
+}
+},
+{
+"a": 293.53,
+"b": 296.71,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_blood01.jpg"
+}
+},
+{
+"a": 296.71,
+"b": 300.57,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_fir01.jpg"
+}
+},
+{
+"a": 300.57,
+"b": 303.37,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_oak01.jpg"
+}
+},
+{
+"a": 303.37,
+"b": 307.05,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2fir02.jpg"
+}
+},
+{
+"a": 307.05,
+"b": 310.93,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_bear03.jpg"
+}
+},
+{
+"a": 310.93,
+"b": 315.11,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_bear04.jpg"
+}
+},
+{
+"a": 315.11,
+"b": 319.83,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_den01.jpg"
+}
+},
+{
+"a": 319.83,
+"b": 324.43,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2bear05.jpg"
+}
+},
+{
+"a": 324.43,
+"b": 328.99,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_hearth02.jpg"
+}
+},
+{
+"a": 328.99,
+"b": 332.47,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_lamp01.jpg"
+}
+},
+{
+"a": 332.47,
+"b": 335.71,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_men03.jpg"
+}
+},
+{
+"a": 335.71,
+"b": 339.27,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/matagi_04.jpg",
+"ar": 0.5624,
+"o": {
+"credit": "佐藤良美 · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 339.27,
+"b": 341.99,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_hunt01.jpg"
+}
+},
+{
+"a": 341.99,
+"b": 345.73,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/ainu2_02.jpg",
+"ar": 0.7811,
+"o": {
+"credit": "Gerhard Sisters · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 345.73,
+"b": 347.15,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_dog01.jpg"
+}
+},
+{
+"a": 347.15,
+"b": 355.53,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "OneInFive",
+"at": {
+"pull": 0,
+"one": 54
+}
+},
+"big": true
+},
+{
+"a": 355.53,
+"b": 360.03,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/abies_03.jpg",
+"o": {
+"credit": "Petr Filippov · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 360.03,
+"b": 361.37,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/abies_04.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Crusier · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 361.37,
+"b": 385.07,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "FirPantry",
+"at": {
+"mound": 223,
+"label": 559
+}
+},
+"big": true
+},
+{
+"a": 385.07,
+"b": 390.43,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"And the men had just",
+"taken its *food* away."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 390.43,
+"b": 393.43,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/abies_05.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Crusier · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 393.43,
+"b": 396.37,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/abies_06.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Daderot · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 396.37,
+"b": 409.35,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "WakeCandles",
+"at": {
+"go": 0,
+"gust": 230
+}
+},
+"big": true
+},
+{
+"a": 409.35,
+"b": 413.57,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/irori_03.jpg",
+"o": {
+"credit": "Ka23 13 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 413.57,
+"b": 417.89,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/irori_04.jpg",
+"o": {
+"credit": "Raita Futo from Tokyo, Japan · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 417.89,
+"b": 421.49,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2cab06.jpg"
+}
+},
+{
+"a": 421.49,
+"b": 424.83,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2cab05.jpg"
+}
+},
+{
+"a": 424.83,
+"b": 427.73,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2cab08.jpg"
+}
+},
+{
+"a": 427.73,
+"b": 432.61,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_inside01.jpg"
+}
+},
+{
+"a": 432.61,
+"b": 436.89,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/irori_05.jpg",
+"o": {
+"credit": "Ka23 13 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 436.89,
+"b": 440.45,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/irori_06.jpg",
+"ar": 0.7689,
+"o": {
+"credit": "Takashi Hososhima from Tokyo, Japan · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 440.45,
+"b": 444.85,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/hkdog_02.jpg",
+"o": {
+"credit": "Midori · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 444.85,
+"b": 447.13,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/murata_02.jpg",
+"o": {
+"credit": "Souka Kinmei · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 447.13,
+"b": 457.69,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LitWindow",
+"at": {
+"turn": 229
+}
+},
+"big": true
+},
+{
+"a": 457.69,
+"b": 461.25,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/asahikawa_01.jpg",
+"o": {
+"credit": "北海道鉄道写真帳編纂会 · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 461.25,
+"b": 465.11,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/elm_04.jpg",
+"ar": 1.147,
+"o": {
+"credit": "Susan Bentz · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 465.11,
+"b": 468.29,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/taisho_04.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 468.29,
+"b": 472.77,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/sanke_04.jpg",
+"o": {
+"credit": "Soica2001 (talk) · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 472.77,
+"b": 476.09,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/snowriv_03.jpg",
+"o": {
+"credit": "MODIS Land Rapid Response Team, NASA GSFC · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 476.09,
+"b": 479.39,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/hkdog_03.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Midori · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 479.39,
+"b": 504.29,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ElevenInside",
+"at": {
+"go": 0,
+"lost": 476
+}
+},
+"big": true
+},
+{
+"a": 504.29,
+"b": 508.19,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/murata_03.jpg",
+"o": {
+"credit": "工学会 · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 508.19,
+"b": 513.13,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/sanke_05.jpg",
+"ar": 0.75,
+"o": {
+"credit": "さえぼー · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 513.13,
+"b": 517.67,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/murata_04.jpg",
+"o": {
+"credit": "고려 · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 517.67,
+"b": 521.13,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/murata_05.jpg",
+"o": {
+"credit": "M11rtinb · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 521.13,
+"b": 523.75,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_gun01.jpg"
+}
+},
+{
+"a": 523.75,
+"b": 528.53,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/murata_06.jpg",
+"o": {
+"credit": "Oomoto (1894) · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 528.53,
+"b": 531.27,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "GONE",
+"color": "#e6edf4",
+"size": 240,
+"a": 0
+}
+}
+}
+},
+{
+"a": 531.27,
+"b": 548.51,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "Exodus",
+"at": {
+"go": 0,
+"walk": 204
+}
+},
+"big": true
+},
+{
+"a": 548.51,
+"b": 552.93,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"But one man went",
+"the *other way.*"
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+}
+},
+{
+"a": 552.93,
+"b": 556.79,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2gun03.jpg"
+}
+},
+{
+"a": 556.79,
+"b": 559.41,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_riv01.jpg"
+}
+},
+{
+"a": 559.41,
+"b": 564.39,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/daisetsu_01.jpg",
+"o": {
+"credit": "pakku · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 564.39,
+"b": 575.81,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PawnTicket",
+"at": {
+"stamp": 94,
+"back": 131
+}
+},
+"big": true
+},
+{
+"a": 575.81,
+"b": 594.91,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SashMark",
+"at": {
+"band": 392
+}
+},
+"big": true
+},
+{
+"a": 594.91,
+"b": 598.32,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearsnow_08.jpg",
+"o": {
+"credit": "USFWSAlaska · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 598.32,
+"b": 603.43,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearwalk_01.jpg",
+"o": {
+"credit": "Garst, Warren, 1922-2016, photographer · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 603.43,
+"b": 607.53,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/hkdog_04.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Midori · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 607.53,
+"b": 611.08,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/hkdog_05.jpg",
+"ar": 1.1301,
+"o": {
+"credit": "Pleple2000 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 611.08,
+"b": 614.74,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/hkdog_06.jpg",
+"ar": 1.0435,
+"o": {
+"credit": "Pleple2000 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 614.74,
+"b": 617.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_sled01.jpg"
+}
+},
+{
+"a": 617.98,
+"b": 636.0,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "HuntRoster",
+"at": {
+"men": 0,
+"guns": 174,
+"dogs": 211
+}
+},
+"big": true
+},
+{
+"a": 636.0,
+"b": 639.12,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Nobody",
+"could *find it.*"
+],
+"a": 4,
+"y": 360,
+"size": 130
+}
+}
+}
+},
+{
+"a": 639.12,
+"b": 663.03,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "EmptyHouses",
+"at": {
+"go": 263
+}
+},
+"big": true
+},
+{
+"a": 663.03,
+"b": 667.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2men04.jpg"
+}
+},
+{
+"a": 667.08,
+"b": 671.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2men05.jpg"
+}
+},
+{
+"a": 671.22,
+"b": 675.12,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2men08.jpg"
+}
+},
+{
+"a": 675.12,
+"b": 679.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2men09.jpg"
+}
+},
+{
+"a": 679.38,
+"b": 689.22,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BaitRing",
+"at": {
+"ring": 0,
+"approach": 61,
+"turn": 151
+}
+},
+"big": true
+},
+{
+"a": 689.22,
+"b": 705.46,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "IceBridgeShot",
+"at": {
+"shot": 368
+}
+},
+"big": true
+},
+{
+"a": 705.46,
+"b": 709.91,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2bear06.jpg"
+}
+},
+{
+"a": 709.91,
+"b": 714.5,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2bear10.jpg"
+}
+},
+{
+"a": 714.5,
+"b": 717.67,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2men06.jpg"
+}
+},
+{
+"a": 717.67,
+"b": 720.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2gun02.jpg"
+}
+},
+{
+"a": 720.38,
+"b": 725.17,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/sanke_06.jpg",
+"o": {
+"credit": "さえぼー · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 725.17,
+"b": 728.75,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_riv02.jpg"
+}
+},
+{
+"a": 728.75,
+"b": 731.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2men07.jpg"
+}
+},
+{
+"a": 731.34,
+"b": 754.84,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TwentyMeters",
+"at": {
+"measure": 0,
+"shot1": 381,
+"shot2": 536
+}
+},
+"big": true
+},
+{
+"a": 754.84,
+"b": 758.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2elm02.jpg"
+}
+},
+{
+"a": 758.38,
+"b": 761.65,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2den02.jpg"
+}
+},
+{
+"a": 761.65,
+"b": 777.63,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "StandScale",
+"at": {
+"go": 0
+}
+},
+"big": true
+},
+{
+"a": 777.63,
+"b": 781.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearskull_01.jpg",
+"o": {
+"credit": "Eric Polk · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 781.2,
+"b": 785.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearskull_02.jpg",
+"o": {
+"credit": "Eric Polk · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 785.2,
+"b": 788.01,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearskull_04.jpg",
+"o": {
+"credit": "Klaus Rassinger und Gerhard Cammerer, Museum Wie · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 788.01,
+"b": 790.96,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2sled02.jpg"
+}
+},
+{
+"a": 790.96,
+"b": 795.25,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2storm02.jpg"
+}
+},
+{
+"a": 795.25,
+"b": 800.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/daisetsu_02.jpg",
+"o": {
+"credit": "As6022014 · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 800.34,
+"b": 803.89,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"They called it",
+"the *bear storm.*"
+],
+"a": 4,
+"y": 360,
+"size": 130
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 803.89,
+"b": 808.75,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/sanke_08.jpg",
+"o": {
+"credit": "さえぼー · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 808.75,
+"b": 817.43,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Why did it",
+"keep *coming back?*"
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+}
+},
+{
+"a": 817.43,
+"b": 821.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearwalk_02.jpg",
+"o": {
+"credit": "Garst, Warren, 1922-2016, photographer · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 821.38,
+"b": 823.63,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearwalk_03.jpg",
+"o": {
+"credit": "Supercarwaar · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 823.63,
+"b": 828.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearwalk_04.jpg",
+"o": {
+"credit": "Katmai National Park and Preserve · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 828.24,
+"b": 849.17,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NoDenDrain",
+"at": {
+"go": 0,
+"drain": 439
+}
+},
+"big": true
+},
+{
+"a": 849.17,
+"b": 853.43,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearwalk_05.jpg",
+"o": {
+"credit": "Eric Kilby from Somerville, MA, USA · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 853.43,
+"b": 856.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearwalk_06.jpg",
+"o": {
+"credit": "Eric Kilby from Somerville, MA, USA · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 856.82,
+"b": 860.01,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/higuma_01.jpg",
+"o": {
+"credit": "Malene Thyssen · Wikimedia Commons · CC BY 2.5"
+}
+}
+},
+{
+"a": 860.01,
+"b": 863.41,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/higuma_02.jpg",
+"o": {
+"credit": "Robert F. Tobler · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 863.41,
+"b": 868.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/higuma_03.jpg",
+"o": {
+"credit": "Charles J. Sharp · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 868.1,
+"b": 870.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_storm01.jpg"
+}
+},
+{
+"a": 870.98,
+"b": 875.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/daisetsu_03.jpg",
+"o": {
+"credit": "pakku · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 875.86,
+"b": 878.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2val03.jpg"
+}
+},
+{
+"a": 878.86,
+"b": 883.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/daisetsu_04.jpg",
+"o": {
+"credit": "MODIS Land Rapid Response Team, NASA GSFC · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 883.06,
+"b": 895.96,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ThreeReasons",
+"at": {
+"r1": 0,
+"r2": 169,
+"r3": 299
+}
+},
+"big": true
+},
+{
+"a": 895.96,
+"b": 899.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/higuma_04.jpg",
+"o": {
+"credit": "Gregory \"Slobirdr\" Smith · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 899.34,
+"b": 903.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/higuma_05.jpg",
+"o": {
+"credit": "Charles J. Sharp · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 903.08,
+"b": 907.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/higuma_06.jpg",
+"o": {
+"credit": "Charles J. Sharp · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 907.54,
+"b": 911.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/higuma_07.jpg",
+"o": {
+"credit": "Charles J. Sharp · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 911.24,
+"b": 915.98,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/higuma_08.jpg",
+"ar": 1.0498,
+"o": {
+"credit": "Charles J. Sharp · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 915.98,
+"b": 917.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/higuma_10.jpg",
+"o": {
+"credit": "Charles J. Sharp · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 917.38,
+"b": 937.18,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CacheLoop",
+"at": {
+"go": 0
+}
+},
+"big": true
+},
+{
+"a": 937.18,
+"b": 940.16,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/ubear_04.jpg",
+"o": {
+"credit": "Nathan Ruser · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 940.16,
+"b": 943.02,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nc/cand/bearclaw_03.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Forest Service Alaska Region, USDA · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 943.02,
+"b": 946.16,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearclaw_04.jpg",
+"o": {
+"credit": "NPS Photo · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 946.16,
+"b": 949.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearriver_01.jpg",
+"o": {
+"credit": "Anil Öztas · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 949.24,
+"b": 953.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2book01.jpg"
+}
+},
+{
+"a": 953.84,
+"b": 957.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_door01.jpg"
+}
+},
+{
+"a": 957.24,
+"b": 961.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2cab04.jpg"
+}
+},
+{
+"a": 961.6,
+"b": 964.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2cab07.jpg"
+}
+},
+{
+"a": 964.64,
+"b": 968.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2val05.jpg"
+}
+},
+{
+"a": 968.84,
+"b": 972.16,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/hkforest_02.jpg",
+"o": {
+"credit": "掬茶 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 972.16,
+"b": 975.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2val06.jpg"
+}
+},
+{
+"a": 975.72,
+"b": 980.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/hkforest_05.jpg",
+"o": {
+"credit": "Kenneth Lee Sutherla… · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 980.0,
+"b": 984.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearriver_02.jpg",
+"o": {
+"credit": "Anil Öztas · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 984.28,
+"b": 987.78,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearriver_03.jpg",
+"o": {
+"credit": "Anil Öztas · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 987.78,
+"b": 997.92,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Not a *monster.*",
+"A bear in a winter",
+"that had *gone wrong.*"
+],
+"a": 4,
+"y": 360,
+"size": 100
+}
+}
+}
+},
+{
+"a": 997.92,
+"b": 1002.16,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2memo02.jpg"
+}
+},
+{
+"a": 1002.16,
+"b": 1004.9,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_memo01.jpg"
+}
+},
+{
+"a": 1004.9,
+"b": 1009.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearriver_04.jpg",
+"o": {
+"credit": "Anil Öztas · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1009.28,
+"b": 1014.04,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/cand/bearprint_01.jpg",
+"o": {
+"credit": "kallerna · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1014.04,
+"b": 1016.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_d4bear01.jpg"
+}
+},
+{
+"a": 1016.86,
+"b": 1039.22,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LifetimeTally",
+"at": {
+"go": 252
+}
+},
+"big": true
+},
+{
+"a": 1039.22,
+"b": 1043.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_d4bear02.jpg"
+}
+},
+{
+"a": 1043.88,
+"b": 1047.9,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_d4bear03.jpg"
+}
+},
+{
+"a": 1047.9,
+"b": 1053.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_d4bear04.jpg"
+}
+},
+{
+"a": 1053.06,
+"b": 1076.62,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LongRecord",
+"at": {
+"go": 0,
+"novel": 698,
+"memo": 560
+}
+},
+"big": true
+},
+{
+"a": 1076.62,
+"b": 1080.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_d4bear05.jpg"
+}
+},
+{
+"a": 1080.2,
+"b": 1084.32,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_d4bear06.jpg"
+}
+},
+{
+"a": 1084.32,
+"b": 1088.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_b2skull01.jpg"
+}
+},
+{
+"a": 1088.64,
+"b": 1092.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_d4snow02.jpg"
+}
+},
+{
+"a": 1092.84,
+"b": 1095.76,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_d4snow03.jpg"
+}
+},
+{
+"a": 1095.76,
+"b": 1098.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_d4snow04.jpg"
+}
+},
+{
+"a": 1098.74,
+"b": 1102.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_d4cab01.jpg"
+}
+},
+{
+"a": 1102.98,
+"b": 1105.42,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_d4cab02.jpg"
+}
+},
+{
+"a": 1105.42,
+"b": 1110.96,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"It had not lost its fear.",
+"It had *found food.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 1110.96,
+"b": 1113.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_c3a.jpg"
+}
+},
+{
+"a": 1113.88,
+"b": 1116.96,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_c3b.jpg"
+}
+},
+{
+"a": 1116.96,
+"b": 1124.54,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LeaveTheKill",
+"at": {
+"go": 0
+}
+},
+"big": true
+},
+{
+"a": 1124.54,
+"b": 1129.78,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nc/ag/ap6nc_c3d.jpg"
+}
+},
+{
+"a": 1129.78,
+"b": 1131.16,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"They brought",
+"*her home.*"
+],
+"a": 4,
+"y": 360,
+"size": 150
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 1131.16,
+"b": 1142.1,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "If you had lived in that valley in December 1915, would you have stayed, or walked out through the snow?"
+}
+},
+{
+"a": 1142.1,
+"b": 1159.91,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Next file:",
+"*two lions* that stopped a railway."
+],
+"a": 4,
+"y": 360,
+"size": 96
+}
+}
+}
+}
+],
+"stops": []
+}
