@@ -1,4 +1,4 @@
-// dur5na — minuto 4
+// dur5na â€” minuto 4
 import React from "react";
 import { Minute } from "./Shot";
 export const M4: React.FC = () => <Minute n={4} />;
