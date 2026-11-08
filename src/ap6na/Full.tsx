@@ -9,7 +9,7 @@ const MINS = Math.ceil(END / 60);
 export const FULL_FRAMES = COLD + S(END);
 export const Full: React.FC = () => (
   <AbsoluteFill style={{ background: "#000" }}>
-    <Sequence durationInFrames={COLD}><OffthreadVideo src={staticFile("broll/ap6na/cold.mp4")} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></Sequence>
+    {COLD > 0 && <Sequence durationInFrames={COLD}><OffthreadVideo src={staticFile("broll/ap6na/cold.mp4")} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></Sequence>}
     {(CFG as any).thumb && <Sequence durationInFrames={1}><Img src={staticFile((CFG as any).thumb)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></Sequence>}
     <Sequence from={COLD}>
       {Array.from({ length: MINS }).map((_, i) => <Sequence key={i} from={i * 1800} durationInFrames={Math.min(1800 + 900, S(END) - i * 1800)}><Minute n={i + 1} /></Sequence>)}
