@@ -1,0 +1,48 @@
+# Catálogo de Edición extrema: clips del visor (448x252, bucle, hasta 200 KB) y medición a 1920x1080 de las piezas pesadas.
+#   gh workflow run extrema_cat.yml -f tag=xm-cat1     El release <tag> trae pkg.tar.gz.
+name: extrema_cat
+on:
+  workflow_dispatch:
+    inputs:
+      tag: { description: "release con pkg.tar.gz", required: true }
+permissions:
+  contents: write
+jobs:
+  trabajo:
+    strategy:
+      fail-fast: false
+      matrix:
+        modo: [chico, real]
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: preparar
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          gh release download "${{ inputs.tag }}" -R "${{ github.repository }}" --pattern pkg.tar.gz
+          tar -xzf pkg.tar.gz && cd pkg && npm i --no-audit --no-fund --loglevel=error
+      - name: render
+        working-directory: pkg
+        run: node muestras.mjs ${{ matrix.modo }} 2>&1 | tail -80
+      - name: bucle y peso
+        if: matrix.modo == 'chico'
+        working-directory: pkg
+        run: |
+          mkdir -p xm
+          for f in out/*.mp4; do
+            n=$(basename "$f"); d=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f"); of=$(python3 -c "print(max(0.1,$d-0.8))")
+            for crf in 25 27 29 31 33 35 38; do
+              ffmpeg -y -v error -i "$f" -filter_complex "[0:v]split[a][b];[a]trim=start=0.4,setpts=PTS-STARTPTS[x];[b]trim=end=0.4,setpts=PTS-STARTPTS[y];[x][y]xfade=transition=fade:duration=0.4:offset=$of,format=yuv420p,fps=30[v]" -map "[v]" -an -c:v libx264 -preset veryslow -crf $crf -movflags +faststart "xm/$n"
+              [ $(stat -c%s "xm/$n") -le 200000 ] && break
+            done
+            echo "$n crf=$crf $(stat -c%s xm/$n) bytes"
+          done
+          tar -cf clips.tar xm && ls -la clips.tar
+      - name: subir
+        if: always()
+        env: { GH_TOKEN: "${{ github.token }}" }
+        working-directory: pkg
+        run: gh release upload "${{ inputs.tag }}" $(ls clips.tar real.json chico.json 2>/dev/null) -R "${{ github.repository }}" --clobber
