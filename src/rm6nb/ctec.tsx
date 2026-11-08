@@ -560,7 +560,7 @@ const TapaLabel: C = ({ t, h }) => <Stage t={t} h={h} mode="iris" tone="#191d22"
   return <>
     <Scene x={960} y={530} rx={0} ry={-8} s={1.1}>
       <div style={ab(-420, -330, { width: 840, height: 660, borderRadius: 44, background: "#131519", boxShadow: "inset 0 0 70px #000" })} />
-      <div style={ab(-420, -330, { width: 840, height: 660, borderRadius: 44, background: "linear-gradient(135deg,#d0d4d9,#979da4)", transformOrigin: "0 50%", transform: `perspective(1400px) rotateY(${-op * 76}deg)`, boxShadow: "inset 0 0 0 6px rgba(0,0,0,.2)" })}>
+      <div style={ab(-420, -330, { width: 840, height: 660, borderRadius: 44, background: "linear-gradient(135deg,#d0d4d9,#979da4)", transformOrigin: "0 50%", transform: `perspective(1400px) rotateY(${op * 76}deg)`, boxShadow: "inset 0 0 0 6px rgba(0,0,0,.2)" })}>
         <div style={ab(170, 180, { width: 500, height: 300, background: "#fff", borderRadius: 12, boxShadow: "0 8px 20px rgba(0,0,0,.3)", opacity: 1 })}><div style={{ ...txt(0, 80, 74, "#222"), width: 500, textAlign: "center" }}>FUEL</div><div style={{ ...txt(0, 170, 60, "#222"), width: 500, textAlign: "center" }}>LABEL</div></div>
       </div>
       <div style={ab(-250, -140, { width: 500, height: 280, borderRadius: 14, background: "#f9f5e3", opacity: y, boxShadow: `0 0 ${y * 50}px rgba(255,220,120,.7)` })}><div style={{ ...txt(0, 40, 68, "#222"), width: 500, textAlign: "center" }}>LOOK FOR</div><div style={{ ...txt(0, 130, 116, "#b42318"), width: 500, textAlign: "center" }}>1 OF 3</div></div>
