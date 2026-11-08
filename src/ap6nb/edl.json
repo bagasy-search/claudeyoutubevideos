@@ -1,0 +1,1999 @@
+{
+"end": 1093.28,
+"shots": [
+{
+"a": 0.0,
+"b": 17.24,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PickupLength",
+"at": {
+"truck": 0
+}
+},
+"big": true
+},
+{
+"a": 17.24,
+"b": 19.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_se03.png"
+}
+},
+{
+"a": 19.62,
+"b": 21.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_sh04.png"
+}
+},
+{
+"a": 21.34,
+"b": 23.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_ab01.png"
+}
+},
+{
+"a": 23.94,
+"b": 27.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/seaice_01.jpg",
+"o": {
+"credit": "NASA Goddard Space Flight Center from Greenbelt, · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 27.24,
+"b": 29.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/gshark_01.jpg",
+"o": {
+"credit": "NOAA Okeanos Explorer Program · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 29.1,
+"b": 31.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_sh01.jpg"
+}
+},
+{
+"a": 31.08,
+"b": 33.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/gshark_05.jpg",
+"o": {
+"credit": "NOAA Photo Library · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 33.28,
+"b": 35.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/gshark_03.jpg",
+"o": {
+"credit": "Hemming1952 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 35.06,
+"b": 37.18,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/gshark_02.jpg",
+"o": {
+"credit": "Uncredited · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 37.18,
+"b": 40.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/gshark2_06.jpg",
+"o": {
+"credit": "Jonathan Couch · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 40.6,
+"b": 45.52,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"How does *this slow*",
+"eat something *that fast?*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 45.52,
+"b": 47.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_ice01.jpg"
+}
+},
+{
+"a": 47.64,
+"b": 49.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_sh02.png"
+}
+},
+{
+"a": 49.84,
+"b": 52.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_ice02.jpg"
+}
+},
+{
+"a": 52.64,
+"b": 54.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_ice03.jpg"
+}
+},
+{
+"a": 54.98,
+"b": 57.44,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_sh06.png"
+}
+},
+{
+"a": 57.44,
+"b": 68.04,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "True stories of animals that crossed a line, without the gore and without the myths. Subscribe so the next file finds you."
+}
+},
+{
+"a": 68.04,
+"b": 80.02,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "If this shark could tell you one thing it has seen, what would you ask it?"
+}
+},
+{
+"a": 80.02,
+"b": 84.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_sh05.png"
+}
+},
+{
+"a": 84.26,
+"b": 106.22,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NotThatShark",
+"at": {
+"real": 143,
+"head": 322,
+"fins": 404,
+"skin": 498
+}
+},
+"big": true
+},
+{
+"a": 106.22,
+"b": 109.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/nuuk_01.jpg",
+"o": {
+"credit": "Quintin Soloviev · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 109.08,
+"b": 114.24,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nb/cand/packice_01.jpg",
+"ar": 1.2412,
+"o": {
+"credit": "George H. Wilkins · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 114.24,
+"b": 139.06,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "MeasuredOrSaid",
+"at": {
+"band": 0,
+"pin": 224,
+"said": 353
+}
+},
+"big": true
+},
+{
+"a": 139.06,
+"b": 142.14,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/gshark_04.jpg",
+"o": {
+"credit": "Chris_huh · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 142.14,
+"b": 145.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/disko_01.jpg",
+"o": {
+"credit": "Giles Laurent · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 145.84,
+"b": 148.5,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/svalb_01.jpg",
+"o": {
+"credit": "Buiobuione · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 148.5,
+"b": 151.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/disko_02.jpg",
+"o": {
+"credit": "Giles Laurent · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 151.48,
+"b": 154.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/svalb_02.jpg",
+"o": {
+"credit": "Buiobuione · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 154.34,
+"b": 165.6,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SunlightEnds",
+"at": {
+"mile": 103
+}
+},
+"big": true
+},
+{
+"a": 165.6,
+"b": 169.24,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"That cold is",
+"the *first clue.*"
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+}
+},
+{
+"a": 169.24,
+"b": 173.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x24.png"
+}
+},
+{
+"a": 173.46,
+"b": 178.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/narwhal_03.jpg",
+"o": {
+"credit": "Gazprom neft · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 178.56,
+"b": 198.58,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LoggerStrip",
+"at": {
+"cruise": 233,
+"burst": 433
+}
+},
+"big": true
+},
+{
+"a": 198.58,
+"b": 216.26,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SevenCount",
+"at": {
+"one": 205,
+"seven": 353,
+"white": 422
+}
+},
+"big": true
+},
+{
+"a": 216.26,
+"b": 238.98,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BelowTheLine",
+"at": {
+"dot": 119,
+"cold": 409
+}
+},
+"big": true
+},
+{
+"a": 238.98,
+"b": 243.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/ridge_01.jpg",
+"o": {
+"credit": "Matti&amp;Keti · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 243.6,
+"b": 246.84,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Including",
+"being *alive.*"
+],
+"a": 4,
+"y": 360,
+"size": 140
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 246.84,
+"b": 251.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x01.jpg"
+}
+},
+{
+"a": 251.46,
+"b": 255.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x02.jpg"
+}
+},
+{
+"a": 255.0,
+"b": 258.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x07.png"
+}
+},
+{
+"a": 258.3,
+"b": 262.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x08.png"
+}
+},
+{
+"a": 262.56,
+"b": 266.32,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x19.png"
+}
+},
+{
+"a": 266.32,
+"b": 271.12,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x23.png"
+}
+},
+{
+"a": 271.12,
+"b": 276.35,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/nansen_07.jpg",
+"o": {
+"credit": "Fridtjof Nansen · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 276.35,
+"b": 295.53,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SixteenYearRuler",
+"at": {
+"run": 0,
+"math": 172
+}
+},
+"big": true
+},
+{
+"a": 295.53,
+"b": 300.35,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/polarst_01.jpg",
+"o": {
+"credit": "Hannes Grobe/AWI · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 300.35,
+"b": 302.23,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/polarst_02.jpg",
+"o": {
+"credit": "Hannes Grobe · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 302.23,
+"b": 321.09,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LensCore",
+"at": {
+"center": 29,
+"capsule": 367
+}
+},
+"big": true
+},
+{
+"a": 321.09,
+"b": 325.71,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/crossr_01.jpg",
+"o": {
+"credit": "Original: United States Department of Defense (e · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 325.71,
+"b": 327.11,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nb/cand/crossr_03.jpg",
+"ar": 1.0245,
+"o": {
+"credit": "U.S. Navy (Rear Admiral S. Quackenbush collectio · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 327.11,
+"b": 347.83,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BombPulse",
+"at": {
+"tests": 0,
+"after": 327,
+"before": 429
+}
+},
+"big": true
+},
+{
+"a": 347.83,
+"b": 351.81,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/polarst_04.jpg",
+"o": {
+"credit": "Hannes Grobe · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 351.81,
+"b": 369.21,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TwentyEightLine",
+"at": {
+"mark": 0,
+"old": 163
+}
+},
+"big": true
+},
+{
+"a": 369.21,
+"b": 373.15,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_sh03.png"
+}
+},
+{
+"a": 373.15,
+"b": 377.35,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/tryworks_01.jpg",
+"o": {
+"credit": "Archival Photographer Stefan Claesson · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 377.35,
+"b": 381.57,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/ilul_01.jpg",
+"o": {
+"credit": "Daniel Weigert · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 381.57,
+"b": 405.85,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "StandOnFloor",
+"at": {
+"mid": 127,
+"range": 290,
+"floor": 617
+}
+},
+"big": true
+},
+{
+"a": 405.85,
+"b": 429.61,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LongestSpine",
+"at": {
+"bow": 271,
+"tort": 407,
+"shark": 532
+}
+},
+"big": true
+},
+{
+"a": 429.61,
+"b": 434.42,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nb/cand/tort_01.jpg",
+"ar": 1.0,
+"o": {
+"credit": "E bailey · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 434.42,
+"b": 438.71,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nb/cand/tort_02.jpg",
+"ar": 0.7146,
+"o": {
+"credit": "Bernard Gagnon · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 438.71,
+"b": 441.37,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nb/cand/mayfl_01.jpg",
+"ar": 1.1047,
+"o": {
+"credit": "Creator:J. E. Ellis · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 441.37,
+"b": 455.15,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "IceCoreCalendar",
+"at": {
+"go": 0
+}
+},
+"big": true
+},
+{
+"a": 455.15,
+"b": 459.35,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/wash_01.jpg",
+"o": {
+"credit": "Emanuel Leutze · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 459.35,
+"b": 464.05,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x18.png"
+}
+},
+{
+"a": 464.05,
+"b": 467.19,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/seaice_02.jpg",
+"o": {
+"credit": "NASA Goddard Space Flight Center from Greenbelt, · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 467.19,
+"b": 489.53,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CenturyTeen",
+"at": {
+"bar": 90,
+"human": 374,
+"war": 484
+}
+},
+"big": true
+},
+{
+"a": 489.53,
+"b": 507.49,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NeverSeen",
+"at": {
+"a": 96,
+"b": 266,
+"c": 335
+}
+},
+"big": true
+},
+{
+"a": 507.49,
+"b": 510.95,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/disko_03.jpg",
+"o": {
+"credit": "Buiobuione · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 510.95,
+"b": 514.69,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/disko_04.jpg",
+"o": {
+"credit": "Buiobuione · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 514.69,
+"b": 517.95,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/disko_05.jpg",
+"o": {
+"credit": "Buiobuione · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 517.95,
+"b": 520.59,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/disko_06.jpg",
+"o": {
+"credit": "Buiobuione · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 520.59,
+"b": 523.55,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nb/cand/ice3_01.jpg",
+"ar": 1.1794,
+"o": {
+"credit": "Jeremy Harbeck · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 523.55,
+"b": 545.91,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "HelixPatch",
+"at": {
+"repair": 312,
+"young": 376
+}
+},
+"big": true
+},
+{
+"a": 545.91,
+"b": 550.481,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"And then",
+"there are the *eyes.*"
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+}
+},
+{
+"a": 550.481,
+"b": 554.001,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/nuuk_02.jpg",
+"o": {
+"credit": "Algkalv (talk) · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 554.001,
+"b": 558.061,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/packice_02.jpg",
+"o": {
+"credit": "Miscellaneous Items in High Demand, PPOC, Librar · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 558.061,
+"b": 562.401,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/narwhal_04.jpg",
+"o": {
+"credit": "Dr. Kristin Laidre, Polar Science Center, UW NOA · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 562.401,
+"b": 565.441,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/ridge_02.jpg",
+"o": {
+"credit": "Matti&amp;Keti, Lorenz.King@geogr.uni-giessen.de · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 565.441,
+"b": 567.441,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/tryworks_05.jpg",
+"o": {
+"credit": "Detroit Publishing Company · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 567.441,
+"b": 583.281,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "EyeThread",
+"at": {
+"blind": 215,
+"wrong": 332
+}
+},
+"big": true
+},
+{
+"a": 583.281,
+"b": 586.981,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_la01.png"
+}
+},
+{
+"a": 586.981,
+"b": 590.381,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/ilul_02.jpg",
+"o": {
+"credit": "Daniel Weigert · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 590.381,
+"b": 593.041,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x17.png"
+}
+},
+{
+"a": 593.041,
+"b": 614.501,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "RodWall",
+"at": {
+"rods": 206,
+"still": 355
+}
+},
+"big": true
+},
+{
+"a": 614.501,
+"b": 617.921,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/polarst_06.jpg",
+"o": {
+"credit": "Hannes Grobe · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 617.921,
+"b": 620.721,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x10.png"
+}
+},
+{
+"a": 620.721,
+"b": 623.661,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/seaice_03.jpg",
+"o": {
+"credit": "NASA Goddard Space Flight Center from Greenbelt, · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 623.661,
+"b": 626.701,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/nuuk_05.jpg",
+"o": {
+"credit": "Kenny McFly · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 626.701,
+"b": 631.241,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/packice_03.jpg",
+"o": {
+"credit": "Vadeve (talk) 19:21, 27 November 2012 (UTC) · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 631.241,
+"b": 633.061,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/narwhal_05.jpg",
+"o": {
+"credit": "Dr. Kristin Laidre, Polar Science Center, UW NOA · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 633.061,
+"b": 638.001,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Do not",
+"*eat it.*"
+],
+"a": 4,
+"y": 360,
+"size": 170
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 638.001,
+"b": 641.061,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/gshark_08.jpg",
+"o": {
+"credit": "Chris 73 · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 641.061,
+"b": 645.341,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/bjarnar_01.jpg",
+"o": {
+"credit": "Bri from Philadelphia, USA · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 645.341,
+"b": 650.121,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nb/cand/bjarnar_02.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Hornstrandir1 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 650.121,
+"b": 653.121,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/hakarl_01.jpg",
+"o": {
+"credit": "Audrey from Seattle, USA · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 653.121,
+"b": 665.901,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BuryThenHang",
+"at": {
+"bury": 124,
+"hang": 219
+}
+},
+"big": true
+},
+{
+"a": 665.901,
+"b": 670.261,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/hakarl2_04.jpg",
+"o": {
+"credit": "Xfigpower · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 670.261,
+"b": 673.301,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_ha01.png"
+}
+},
+{
+"a": 673.301,
+"b": 676.741,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/gshark_07.jpg",
+"o": {
+"credit": "Andrva · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 676.741,
+"b": 680.161,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_bt04.png"
+}
+},
+{
+"a": 680.161,
+"b": 683.341,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_bt02.png"
+}
+},
+{
+"a": 683.341,
+"b": 686.101,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x12.png"
+}
+},
+{
+"a": 686.101,
+"b": 688.301,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x13.png"
+}
+},
+{
+"a": 688.301,
+"b": 712.081,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LiverOil",
+"at": {
+"lamp": 0,
+"green": 176,
+"nor": 341,
+"over": 510
+}
+},
+"big": true
+},
+{
+"a": 712.081,
+"b": 728.341,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NeverBred",
+"at": {
+"line": 134,
+"gray": 266
+}
+},
+"big": true
+},
+{
+"a": 728.341,
+"b": 747.921,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ThreeGenerations",
+"at": {
+"bar": 176,
+"gens": 357
+}
+},
+"big": true
+},
+{
+"a": 747.921,
+"b": 752.281,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_tr01.png"
+}
+},
+{
+"a": 752.281,
+"b": 755.361,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/ridge_04.jpg",
+"o": {
+"credit": "Bering Land Bridge National Preserve · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 755.361,
+"b": 759.761,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/whaleoil_01.jpg",
+"o": {
+"credit": "James St. John · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 759.761,
+"b": 764.041,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/svalb_03.jpg",
+"o": {
+"credit": "Buiobuione · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 764.041,
+"b": 767.081,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x04.png"
+}
+},
+{
+"a": 767.081,
+"b": 771.521,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x03.jpg"
+}
+},
+{
+"a": 771.521,
+"b": 774.041,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x05.png"
+}
+},
+{
+"a": 774.041,
+"b": 776.101,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"What has this thing",
+"been *eating?*"
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 776.101,
+"b": 799.021,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "StomachList",
+"at": {
+"fish": 114,
+"seal": 230,
+"big": 531
+}
+},
+"big": true
+},
+{
+"a": 799.021,
+"b": 802.541,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/polar_02.jpg",
+"o": {
+"credit": "Hannes Grobe/AWI · Wikimedia Commons · CC BY-SA 2.5"
+}
+}
+},
+{
+"a": 802.541,
+"b": 806.921,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/polar_03.jpg",
+"o": {
+"credit": "Hannes Grobe 21:16, 12 November 2006 (UTC), Alfr · Wikimedia Commons · CC BY 2.5"
+}
+}
+},
+{
+"a": 806.921,
+"b": 811.081,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/polar_04.jpg",
+"o": {
+"credit": "Hannes Grobe/AWI · Wikimedia Commons · CC BY-SA 2.5"
+}
+}
+},
+{
+"a": 811.081,
+"b": 815.921,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"The trouble",
+"is the *seals.*"
+],
+"a": 4,
+"y": 360,
+"size": 130
+}
+}
+}
+},
+{
+"a": 815.921,
+"b": 831.011,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NoCrawlers",
+"at": {
+"cross": 80,
+"line": 273
+}
+},
+"big": true
+},
+{
+"a": 831.011,
+"b": 835.451,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/seal_04.jpg",
+"o": {
+"credit": "Salwa Farwaneh Dameh · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 835.451,
+"b": 838.331,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/seal2_03.jpg",
+"o": {
+"credit": "Gary Bembridge from London, UK · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 838.331,
+"b": 842.831,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nb/cand/seal2_05.jpg",
+"ar": 1.2308,
+"o": {
+"credit": "Ansgar Walk · Wikimedia Commons · CC BY-SA 2.5"
+}
+}
+},
+{
+"a": 842.831,
+"b": 847.071,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/seal3_03.jpg",
+"o": {
+"credit": "Lysogeny · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 847.071,
+"b": 848.531,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/seal3_05.jpg",
+"o": {
+"credit": "Lysogeny · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 848.531,
+"b": 859.971,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TwoSpeeds",
+"at": {
+"go": 0
+}
+},
+"big": true
+},
+{
+"a": 859.971,
+"b": 862.951,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x06.png"
+}
+},
+{
+"a": 862.951,
+"b": 866.251,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/ilul_03.jpg",
+"o": {
+"credit": "Anne and David from Kent, England UK · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 866.251,
+"b": 890.691,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "AmbushFromAbove",
+"at": {
+"dark": 135,
+"never": 569
+}
+},
+"big": true
+},
+{
+"a": 890.691,
+"b": 894.991,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_se01.png"
+}
+},
+{
+"a": 894.991,
+"b": 898.451,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_se02.png"
+}
+},
+{
+"a": 898.451,
+"b": 902.651,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/seal_01.jpg",
+"o": {
+"credit": "Кирилл Уютнов · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 902.651,
+"b": 905.871,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/seal_03.jpg",
+"o": {
+"credit": "NOAA Fisheries Plans Western Alaska Meetings on  · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 905.871,
+"b": 909.591,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_x16.png"
+}
+},
+{
+"a": 909.591,
+"b": 931.911,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SleepingSeal",
+"at": {
+"still": 0,
+"unproven": 237
+}
+},
+"big": true
+},
+{
+"a": 931.911,
+"b": 956.351,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NetAndWeak",
+"at": {
+"hurt": 236,
+"dis": 291,
+"net": 357,
+"but": 561
+}
+},
+"big": true
+},
+{
+"a": 956.351,
+"b": 974.171,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NoFootage",
+"at": {
+"none": 154,
+"st": 343,
+"tags": 385,
+"th": 447
+}
+},
+"big": true
+},
+{
+"a": 974.171,
+"b": 977.171,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/seaice_04.jpg",
+"o": {
+"credit": "NASA/Sinead Farrell · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 977.171,
+"b": 981.131,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/nuuk_06.jpg",
+"o": {
+"credit": "Nanopixi · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 981.131,
+"b": 985.351,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_ice04.jpg"
+}
+},
+{
+"a": 985.351,
+"b": 988.871,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/ag/ap6nb_bt01.png"
+}
+},
+{
+"a": 988.871,
+"b": 994.091,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/packice_04.jpg",
+"o": {
+"credit": "John Alfred Hampton · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 994.091,
+"b": 998.951,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"No documented",
+"*attack on a human.*"
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 998.951,
+"b": 1004.011,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/ice_07.jpg",
+"o": {
+"credit": "Official U.S. Navy Page from United States of Am · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1004.011,
+"b": 1008.071,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/ice3_02.jpg",
+"o": {
+"credit": "Rita Willaert from 9890 Gavere, Belgium · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 1008.071,
+"b": 1011.751,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/ice3_03.jpg",
+"o": {
+"credit": "Jerzy Strzelecki · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1011.751,
+"b": 1016.131,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/ice3_05.jpg",
+"o": {
+"credit": "Christoph Strässler · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1016.131,
+"b": 1017.511,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/ice3_06.jpg",
+"o": {
+"credit": "Christoph Strässler · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1017.511,
+"b": 1025.611,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "OtherWay",
+"at": {
+"b": 53
+}
+},
+"big": true
+},
+{
+"a": 1025.611,
+"b": 1029.911,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/declar_01.jpg",
+"o": {
+"credit": "Frederick Girsch at the American Bank Note Compa · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1029.911,
+"b": 1032.751,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/declar_02.jpg",
+"o": {
+"credit": "John Trumbull · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1032.751,
+"b": 1036.271,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/halibut_01.jpg",
+"o": {
+"credit": "H. L. Todd · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1036.271,
+"b": 1040.571,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/ridge_05.jpg",
+"o": {
+"credit": "Michael Studinger · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1040.571,
+"b": 1044.811,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nb/cand/gshark_09.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Andrva · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1044.811,
+"b": 1048.611,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/polarst_05.jpg",
+"o": {
+"credit": "Hannes Grobe · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1048.611,
+"b": 1050.871,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/svalb_04.jpg",
+"o": {
+"credit": "Buiobuione · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1050.871,
+"b": 1065.831,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ThreeKnownOneNot",
+"at": {
+"a": 0,
+"b": 93,
+"c": 163,
+"q": 227
+}
+},
+"big": true
+},
+{
+"a": 1065.831,
+"b": 1076.251,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "If this shark could tell you one thing it has seen, what would you ask it?"
+}
+},
+{
+"a": 1076.251,
+"b": 1081.411,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nb/cand/ilul_04.jpg",
+"o": {
+"credit": "Anne and David from Kent, England UK · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1081.411,
+"b": 1093.28,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Next file:",
+"the true story of *one man-eater.*"
+],
+"a": 4,
+"y": 360,
+"size": 96
+}
+}
+}
+}
+],
+"stops": []
+}
