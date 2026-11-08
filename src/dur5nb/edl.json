@@ -1,0 +1,5053 @@
+{
+"end": 1693.69,
+"shots": [
+{
+"a": 0.0,
+"b": 17.5,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PlatoHongos",
+"at": {
+"roma": 35,
+"plato": 155,
+"emperador": 248,
+"primero": 300,
+"miran": 458
+}
+},
+"big": true
+},
+{
+"a": 17.5,
+"b": 19.82,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"el cronómetro *ya corre.*"
+],
+"a": 2,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 19.82,
+"b": 42.18,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CienTrabajos",
+"at": {
+"cien": 26,
+"menos": 551,
+"peor": 578
+}
+},
+"big": true
+},
+{
+"a": 42.18,
+"b": 44.44,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/claudius_02.jpg",
+"ar": 0.6946,
+"o": {
+"credit": "George E. Koronaios · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 44.44,
+"b": 46.72,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/claudius_03.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Gary Todd from Xinzheng, China · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 46.72,
+"b": 48.44,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/claudius_04.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Jamie Heath from United Kingdom · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 48.44,
+"b": 50.66,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/agrip_01.jpg",
+"o": {
+"credit": "Joe Mabel · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 50.66,
+"b": 52.72,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/agrip_03.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Joe Mabel · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 52.72,
+"b": 55.1,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/roman_01.jpg",
+"ar": 0.9143,
+"o": {
+"credit": "Tyler Bell · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 55.1,
+"b": 56.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/roman_02.jpg",
+"o": {
+"credit": "Tyler Bell · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 56.72,
+"b": 63.78,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"el número uno",
+"*no tiene sueldo.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 63.78,
+"b": 67.36,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/roman_03.jpg",
+"ar": 1.0202,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 67.36,
+"b": 71.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/roman_04.jpg",
+"o": {
+"credit": "Chappsnet · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 71.24,
+"b": 76.04,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Cada semana, otra época. Suscríbete + campanita."
+}
+},
+{
+"a": 76.04,
+"b": 83.46,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿Cuál es el trabajo más peligroso que has tenido tú?",
+"bell": false
+}
+},
+{
+"a": 83.46,
+"b": 88.64,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"10 tramos",
+"*de 10 trabajos.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 88.64,
+"b": 91.96,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/roman_05.jpg",
+"o": {
+"credit": "Chappsnet · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 91.96,
+"b": 93.66,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/lighthouse_01.jpg",
+"ar": 0.5626,
+"o": {
+"credit": "Barabbas1312 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 93.66,
+"b": 96.44,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 0
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 96.44,
+"b": 102.3,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+12.49,
+41.9
+],
+"lines": [
+"ROMA",
+"AÑO 54",
+"CATADOR"
+],
+"name": "Roma"
+},
+"big": true
+},
+{
+"a": 102.3,
+"b": 104.76,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/lighthouse_02.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Barabbas1312 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 104.76,
+"b": 108.58,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/claudius_01.jpg",
+"ar": 0.663,
+"o": {
+"credit": "Yair-haklai · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 108.58,
+"b": 111.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/lkeeper_02.jpg",
+"o": {
+"credit": "Dennis G. Jarvis · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 111.34,
+"b": 115.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/lkeeper_03.jpg",
+"o": {
+"credit": "Dennis G. Jarvis · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 115.4,
+"b": 126.98,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CatadorTres",
+"at": {
+"guardias": 126,
+"veneno": 175
+}
+},
+"big": true
+},
+{
+"a": 126.98,
+"b": 135.18,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 260,
+"tag": "4 MIN 20",
+"sub": "te tiembla la cuchara.",
+"fz": 138,
+"s0": 198
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 135.18,
+"b": 137.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/bell_01.jpg",
+"o": {
+"label": "N.º 99 · CAMPANERO",
+"credit": "Volume Editor: Bazeley, William, 1843-1925 · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 137.62,
+"b": 141.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/canterbury_02.jpg",
+"o": {
+"credit": "Diliff · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 141.7,
+"b": 146.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/canterbury_03.jpg",
+"o": {
+"credit": "Diliff · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 146.74,
+"b": 157.9,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "RayosTorre",
+"at": {
+"estudio": 0,
+"torres": 118,
+"anos": 199,
+"muertos": 246
+}
+},
+"big": true
+},
+{
+"a": 157.9,
+"b": 159.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/lkeeper_01.jpg",
+"o": {
+"label": "N.º 98 · FARERO",
+"credit": "Related names: Lindstrom, Frederick J, field tea · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 159.06,
+"b": 167.36,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LenteMercurio",
+"at": {
+"lentes": 0,
+"dormias": 167
+}
+},
+"big": true
+},
+{
+"a": 167.36,
+"b": 171.14,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/pony_02.jpg",
+"ar": 0.794,
+"o": {
+"label": "N.º 97 · JINETE DEL PONY EXPRESS",
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 171.14,
+"b": 176.1,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/pony_01.jpg",
+"ar": 0.7268,
+"o": {
+"credit": "Stanley L Wood · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 176.1,
+"b": 179.96,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/pony_03.jpg",
+"ar": 0.8416,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 179.96,
+"b": 184.12,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/ratcatch_01.jpg",
+"ar": 0.6864,
+"o": {
+"label": "N.º 96 · CAZADOR DE RATAS",
+"credit": "From Henry Mayhew's \"London Labour and the Londo · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 184.12,
+"b": 189.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/lkeeper_04.jpg",
+"o": {
+"credit": "Dennis G. Jarvis · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 189.7,
+"b": 195.1,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 95",
+"*cortador de hielo*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 195.1,
+"b": 199.04,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/honey_02.jpg",
+"o": {
+"credit": "Kandelrashmi · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 199.04,
+"b": 200.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/window_01.jpg",
+"o": {
+"credit": "w_lemay · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 200.38,
+"b": 203.7,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/honey_01.jpg",
+"ar": 1.2137,
+"o": {
+"label": "N.º 94 · CAZADOR DE MIEL",
+"credit": "Aerackkkkk · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 203.7,
+"b": 211.62,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "EscaleraMiel",
+"at": {
+"enjambre": 145
+}
+},
+"big": true
+},
+{
+"a": 211.62,
+"b": 214.68,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/coconut_01.jpg",
+"ar": 0.75,
+"o": {
+"label": "N.º 93 · TREPADOR DE COCOTEROS",
+"credit": "Roseli1990 · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 214.68,
+"b": 217.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/window_03.jpg",
+"o": {
+"credit": "w_lemay · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 217.7,
+"b": 219.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/ggate_01.jpg",
+"o": {
+"credit": "NASA Ames Research Center · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 219.08,
+"b": 223.76,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 92",
+"*lizzatore de Carrara*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 223.76,
+"b": 226.9,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/ggate_02.jpg",
+"o": {
+"credit": "NASA Ames Research Center · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 226.9,
+"b": 229.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/ggate_03.jpg",
+"o": {
+"credit": "Terry Kearney from liverpool, merseyside · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 229.48,
+"b": 232.96,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/goldrush_04.jpg",
+"ar": 0.8594,
+"o": {
+"label": "N.º 91 · BUSCADOR DE ORO",
+"credit": "inkknife_2000 (7.5 million views +) · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 232.96,
+"b": 236.96,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/ggate_04.jpg",
+"ar": 1.2435,
+"o": {
+"credit": "Manwaring, Jed Related names: Potts, Douglas Str · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 236.96,
+"b": 241.04,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/ggate_05.jpg",
+"ar": 1.2371,
+"o": {
+"credit": "Manwaring, Jed Related names: Potts, Douglas Str · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 241.04,
+"b": 244.04,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 1
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 244.04,
+"b": 247.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/window_02.jpg",
+"o": {
+"label": "N.º 90 · LIMPIADOR DE VENTANAS",
+"credit": "w_lemay · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 247.92,
+"b": 251.42,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-122.48,
+37.82
+],
+"prev": [
+12.49,
+41.9
+],
+"lines": [
+"SAN FRANCISCO",
+"1937",
+"GOLDEN GATE"
+],
+"name": "San Francisco"
+},
+"big": true
+},
+{
+"a": 251.42,
+"b": 268.88,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ClubRed",
+"at": {
+"diecinueve": 68,
+"club": 199,
+"andamio": 394
+}
+},
+"big": true
+},
+{
+"a": 268.88,
+"b": 289.34,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "VigaNiebla",
+"at": {
+"viga": 61,
+"metros": 136,
+"abajo": 402,
+"cuanto": 549
+}
+},
+"big": true
+},
+{
+"a": 289.34,
+"b": 294.38,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 7800,
+"tag": "2 H 10",
+"sub": "la red se mueve con el viento.",
+"fz": 50,
+"s0": 7281
+},
+"big": true
+},
+{
+"a": 294.38,
+"b": 298.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/tower_01.jpg",
+"o": {
+"label": "N.º 88 · TREPADOR DE ANTENAS",
+"credit": "Department of Defense. American Forces Informati · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 298.06,
+"b": 300.82,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/ggate_06.jpg",
+"ar": 1.2468,
+"o": {
+"credit": "Manwaring, Jed Related names: Potts, Douglas Str · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 300.82,
+"b": 306.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/crab_02.jpg",
+"o": {
+"credit": "Gillfoto · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 306.3,
+"b": 312.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/piper_02.jpg",
+"o": {
+"label": "N.º 87 · PLATAFORMA PETROLERA",
+"credit": "Iain Cameron · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 312.52,
+"b": 315.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/crab_03.jpg",
+"o": {
+"credit": "Gillfoto · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 315.38,
+"b": 318.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/dory_02.jpg",
+"o": {
+"credit": "Dennis G. Jarvis · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 318.82,
+"b": 322.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/crab_01.jpg",
+"o": {
+"label": "N.º 86 · PESCADOR DE CANGREJO",
+"credit": "Gillfoto · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 322.22,
+"b": 329.52,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NasaCangrejo",
+"at": {
+"olas": 0,
+"hielo": 46,
+"nasas": 91
+}
+},
+"big": true
+},
+{
+"a": 329.52,
+"b": 334.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/dory_01.jpg",
+"o": {
+"label": "N.º 85 · PESCADOR EN BOTE",
+"credit": "Dennis G. Jarvis · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 334.3,
+"b": 338.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/dory_03.jpg",
+"o": {
+"credit": "Dennis G. Jarvis · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 338.2,
+"b": 341.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/khumbu_01.jpg",
+"o": {
+"credit": "AngeliSherpa · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 341.0,
+"b": 344.74,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 84",
+"*ballenero de Nantucket*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 344.74,
+"b": 349.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/khumbu_03.jpg",
+"o": {
+"credit": "Catalina Quesada Castro · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 349.06,
+"b": 352.16,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/khumbu_04.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Bijaya2043 · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 352.16,
+"b": 354.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/khumbu_05.jpg",
+"o": {
+"credit": "AngeliSherpa · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 354.72,
+"b": 358.52,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 83",
+"*buzo de esponjas*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 358.52,
+"b": 362.78,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/powder_01.jpg",
+"o": {
+"credit": "PAUL FARMER · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 362.78,
+"b": 366.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/chilwell_02.jpg",
+"o": {
+"credit": "Horace Nicholls · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 366.6,
+"b": 369.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/chilwell_03.jpg",
+"o": {
+"credit": "Horace Nicholls · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 369.48,
+"b": 372.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/caphorn_01.jpg",
+"o": {
+"label": "N.º 82 · MARINERO DEL CABO DE HORNOS",
+"credit": "Cornelis Verbeeck · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 372.86,
+"b": 375.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/chilwell_04.jpg",
+"o": {
+"credit": "Ernest Milner · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 375.72,
+"b": 380.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/chilwell_05.jpg",
+"o": {
+"credit": "Horace Nicholls · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 380.48,
+"b": 384.02,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 81",
+"*cazador de focas*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 384.02,
+"b": 393.753,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "FocasHielo",
+"at": {
+"catorce": 4,
+"murieron": 205
+}
+},
+"big": true
+},
+{
+"a": 393.753,
+"b": 395.46,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 2
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 395.46,
+"b": 398.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/vigil_01.jpg",
+"o": {
+"label": "N.º 80 · VIGIL ROMANO",
+"credit": "Francisco Pradilla y Ortiz · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 398.46,
+"b": 401.96,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/ijen_01.jpg",
+"o": {
+"credit": "Sémhur (talk) · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 401.96,
+"b": 404.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/ijen_03.jpg",
+"o": {
+"credit": "CEphoto, Uwe Aranas · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 404.46,
+"b": 407.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/powder_02.jpg",
+"o": {
+"label": "N.º 79 · MOLINO DE PÓLVORA",
+"credit": "Michael Garlick · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 407.54,
+"b": 410.18,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/ijen_04.jpg",
+"o": {
+"credit": "CEphoto, Uwe Aranas · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 410.18,
+"b": 411.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/ijen2_01.jpg",
+"o": {
+"credit": "Sémhur (talk) · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 411.84,
+"b": 417.52,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-1.25,
+52.92
+],
+"prev": [
+-122.48,
+37.82
+],
+"lines": [
+"CHILWELL",
+"1918",
+"CANARIA"
+],
+"name": "Chilwell"
+},
+"big": true
+},
+{
+"a": 417.52,
+"b": 422.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/ijen2_02.jpg",
+"o": {
+"credit": "CEphoto, Uwe Aranas · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 422.34,
+"b": 425.513,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/chilwell_01.jpg",
+"o": {
+"credit": "Horace Nicholls · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 425.513,
+"b": 430.333,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/ijen2_03.jpg",
+"o": {
+"credit": "CEphoto, Uwe Aranas · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 430.333,
+"b": 449.273,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PielCanaria",
+"at": {
+"diecinueve": 32,
+"semanas": 326,
+"canaria": 522
+}
+},
+"big": true
+},
+{
+"a": 449.273,
+"b": 454.853,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 1814400,
+"tag": "3 SEMANAS",
+"sub": "te empieza a faltar el aire.",
+"fz": 52,
+"s0": 1666541
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 454.853,
+"b": 458.293,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/ijen_02.jpg",
+"o": {
+"label": "N.º 77 · MINERO DE AZUFRE",
+"credit": "CEphoto, Uwe Aranas · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 458.293,
+"b": 462.873,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/ijen2_04.jpg",
+"o": {
+"credit": "CEphoto, Uwe Aranas · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 462.873,
+"b": 467.353,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/oilfire_02.jpg",
+"o": {
+"credit": "U.S. Marine Corps photo by LCpl. Dick Kotecki. · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 467.353,
+"b": 471.133,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 76",
+"*torpedero de pozos*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 471.133,
+"b": 482.973,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CarretaNitro",
+"at": {
+"pensilvania": 0,
+"nitroglicerina": 87
+}
+},
+"big": true
+},
+{
+"a": 482.973,
+"b": 486.573,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 75",
+"*fogonero de transatlántico*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 486.573,
+"b": 490.593,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/oilfire_03.jpg",
+"o": {
+"credit": "U.S. Marine Corps photo by LCpl. Dick Kotecki. · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 490.593,
+"b": 493.193,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/oilfire_04.jpg",
+"o": {
+"credit": "E.A. Tilly · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 493.193,
+"b": 496.213,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/brake_01.jpg",
+"o": {
+"label": "N.º 74 · GUARDAFRENOS",
+"credit": "National Museum of the U.S. Navy · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 496.213,
+"b": 500.193,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/brakeman_01.jpg",
+"o": {
+"credit": "National Museum of the U.S. Navy · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 500.193,
+"b": 503.573,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/marseille_02.jpg",
+"o": {
+"credit": "Rvalette · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 503.573,
+"b": 507.857,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/marseille_03.jpg",
+"ar": 0.9052,
+"o": {
+"credit": "Michel Serre · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 507.857,
+"b": 510.113,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/marseille_04.jpg",
+"o": {
+"credit": "Finoskov · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 510.113,
+"b": 513.913,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/gotthard_02.jpg",
+"o": {
+"label": "N.º 73 · TÚNEL DE SAN GOTARDO",
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 513.913,
+"b": 519.193,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/marseille_05.jpg",
+"o": {
+"credit": "Michel Serre · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 519.193,
+"b": 522.473,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/plague1720_02.jpg",
+"o": {
+"label": "N.º 72 · SEPULTURERO DE LA PESTE",
+"credit": "Rvalette · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 522.473,
+"b": 525.973,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/gladiator_02.jpg",
+"o": {
+"credit": "Daderot · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 525.973,
+"b": 530.233,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/gladiator_03.jpg",
+"o": {
+"credit": "Daderot · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 530.233,
+"b": 533.313,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/plaguedoc_01.jpg",
+"ar": 0.95,
+"o": {
+"label": "N.º 71 · MÉDICO DE LA PESTE",
+"credit": "Anagoria · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 533.313,
+"b": 544.66,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "MascaraPico",
+"at": {
+"siglos": 109,
+"relleno": 200
+}
+},
+"big": true
+},
+{
+"a": 544.66,
+"b": 546.133,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 3
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 546.133,
+"b": 550.273,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/gladiator_01.jpg",
+"o": {
+"label": "N.º 70 · GLADIADOR",
+"credit": "Daderot · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 550.273,
+"b": 555.073,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/gladiator_04.jpg",
+"o": {
+"credit": "Daderot · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 555.073,
+"b": 559.873,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/chariot_03.jpg",
+"o": {
+"label": "N.º 69 · AURIGA",
+"credit": "John Samuel · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 559.873,
+"b": 561.778,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/chariot_01.jpg",
+"o": {
+"credit": "John Samuel · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 561.778,
+"b": 564.693,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hypo_01.jpg",
+"o": {
+"label": "N.º 68 · FORNACATOR",
+"credit": "Tristan Surtel · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 564.693,
+"b": 568.793,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hypo_02.jpg",
+"o": {
+"credit": "Joyofmuseums · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 568.793,
+"b": 572.653,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hypo_03.jpg",
+"o": {
+"credit": "Ad Meskens · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 572.653,
+"b": 577.553,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+24.05,
+37.72
+],
+"prev": [
+-1.25,
+52.92
+],
+"lines": [
+"LAURIÓN",
+"SIGLO V a. C.",
+"MINERO DE PLATA"
+],
+"name": "Laurión"
+},
+"big": true
+},
+{
+"a": 577.553,
+"b": 585.613,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PlataSalamina",
+"at": {
+"plata": 0,
+"flota": 31,
+"esclavos": 202
+}
+},
+"big": true
+},
+{
+"a": 585.613,
+"b": 604.633,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "GaleriaLaurion",
+"at": {
+"golpeando": 383,
+"pagan": 500
+}
+},
+"big": true
+},
+{
+"a": 604.633,
+"b": 613.233,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 1080,
+"tag": "18 MIN",
+"sub": "si la llama baja, tú también.",
+"fz": 70,
+"s0": 946
+},
+"big": true
+},
+{
+"a": 613.233,
+"b": 617.833,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 66",
+"*urinator*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 617.833,
+"b": 622.413,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hypo_04.jpg",
+"o": {
+"credit": "Gary Todd from Xinzheng, China · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 622.413,
+"b": 626.513,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 65",
+"*bestiario*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 626.513,
+"b": 629.993,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/gladiator_05.jpg",
+"o": {
+"credit": "Daderot · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 629.993,
+"b": 632.833,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/canterbury_01.jpg",
+"o": {
+"label": "N.º 64 · CONSTRUCTOR DE CATEDRALES",
+"credit": "Diliff · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 632.833,
+"b": 636.373,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/chariot_02.jpg",
+"o": {
+"credit": "John Samuel · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 636.373,
+"b": 639.033,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/chariot_04.jpg",
+"o": {
+"credit": "John Samuel · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 639.033,
+"b": 642.993,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/xray_01.jpg",
+"o": {
+"credit": "William J. Morton · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 642.993,
+"b": 646.633,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 63",
+"*la esperanza perdida*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 646.633,
+"b": 670.013,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BrechaMuralla",
+"at": {
+"nadie": 187,
+"abanderado": 251,
+"verdugo": 427,
+"multitud": 538
+}
+},
+"big": true
+},
+{
+"a": 670.013,
+"b": 687.363,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "AireRespiras",
+"at": {
+"cuarenta": 0,
+"caida": 327,
+"respiras": 379
+}
+},
+"big": true
+},
+{
+"a": 687.363,
+"b": 690.473,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 4
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 690.473,
+"b": 695.713,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 60",
+"*hilandera de lino*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 695.713,
+"b": 700.493,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/sengh_02.jpg",
+"ar": 0.805,
+"o": {
+"credit": "Illustrations Bureau · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 700.493,
+"b": 705.853,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 59",
+"*afilador de Sheffield*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 705.853,
+"b": 710.173,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/wittenoom_02.jpg",
+"o": {
+"credit": "lindsaybridge from Sydney, Australia · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 710.173,
+"b": 713.533,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/wittenoom_03.jpg",
+"o": {
+"credit": "Five Years · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 713.533,
+"b": 715.438,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/wittenoom_04.jpg",
+"o": {
+"credit": "User:Five Years · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 715.438,
+"b": 718.973,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 58",
+"*bañador de cerámica*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 718.973,
+"b": 722.893,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/alang_01.jpg",
+"o": {
+"credit": "Bambhaniya Ravikumar · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 722.893,
+"b": 725.433,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/alang_03.jpg",
+"o": {
+"credit": "Neilsatyam · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 725.433,
+"b": 730.893,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-74.23,
+40.77
+],
+"prev": [
+24.05,
+37.72
+],
+"lines": [
+"NUEVA JERSEY",
+"AÑOS 20",
+"PINTORA DE RADIO"
+],
+"name": "Orange"
+},
+"big": true
+},
+{
+"a": 730.893,
+"b": 733.833,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/radium_01.jpg",
+"ar": 0.7497,
+"o": {
+"credit": "TheBeSphereOfCourse · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 733.833,
+"b": 756.333,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PincelLabios",
+"at": {
+"salud": 161,
+"unas": 218,
+"meses": 340,
+"mandibula": 437,
+"demandaron": 528
+}
+},
+"big": true
+},
+{
+"a": 756.333,
+"b": 764.073,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 10368000,
+"tag": "4 MESES",
+"sub": "y no sabías que había que renunciar.",
+"fz": 55,
+"s0": 9275321
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 764.073,
+"b": 768.073,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/sengh_01.jpg",
+"o": {
+"label": "N.º 56 · MINERO DE SENGHENYDD",
+"credit": "Unclear. There are five photographs on the page, · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 768.073,
+"b": 771.133,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/pundit_03.jpg",
+"ar": 0.75,
+"o": {
+"credit": "DesiBoy101 · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 771.133,
+"b": 775.013,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/franklin_01.jpg",
+"o": {
+"credit": "James Wilson Carmichael · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 775.013,
+"b": 778.413,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/franklin_02.jpg",
+"o": {
+"credit": "William Smyth · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 778.413,
+"b": 781.773,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 55",
+"*azogador de espejos*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 781.773,
+"b": 787.613,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/franklin_03.jpg",
+"ar": 0.8526,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 787.613,
+"b": 790.553,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/granite_01.jpg",
+"o": {
+"label": "N.º 54 · CANTERO DE GRANITO",
+"credit": "National Institute for Occupational Safety and H · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 790.553,
+"b": 794.273,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/franklin_06.jpg",
+"ar": 1.2091,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 794.273,
+"b": 799.693,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/mahout_01.jpg",
+"o": {
+"credit": "Hendrapictures · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 799.693,
+"b": 802.573,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/wittenoom_01.jpg",
+"o": {
+"label": "N.º 53 · MINERO DE AMIANTO",
+"credit": "Five Years · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 802.573,
+"b": 806.853,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/mahout_03.jpg",
+"o": {
+"credit": "Rocky Masum · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 806.853,
+"b": 810.373,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 52",
+"*flores artificiales*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 810.373,
+"b": 813.453,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/stretcher_02.jpg",
+"ar": 0.7485,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 813.453,
+"b": 817.733,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/stretcher_04.jpg",
+"ar": 1.1341,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 817.733,
+"b": 820.253,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/stretcher_05.jpg",
+"ar": 0.7485,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 820.253,
+"b": 822.833,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/alang_02.jpg",
+"o": {
+"label": "N.º 51 · DESGUAZADOR DE BARCOS",
+"credit": "anil c patel · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 822.833,
+"b": 827.513,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/airmail_02.jpg",
+"o": {
+"credit": "S Kaiser · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 827.513,
+"b": 829.933,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/noor_02.jpg",
+"ar": 0.6372,
+"o": {
+"credit": "Luke McKernan · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 829.933,
+"b": 843.673,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "MarcadorMitad",
+"at": {
+"marcador": 92,
+"cuatro": 304
+}
+},
+"big": true
+},
+{
+"a": 843.673,
+"b": 846.613,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 5
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 846.613,
+"b": 851.667,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/pundit_01.jpg",
+"ar": 0.7159,
+"o": {
+"label": "N.º 50 · PUNDIT DEL HIMALAYA",
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 851.667,
+"b": 857.787,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "RosarioPasos",
+"at": {
+"nain": 0,
+"rosario": 50,
+"molinillo": 128
+}
+},
+"big": true
+},
+{
+"a": 857.787,
+"b": 860.847,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/khumbu_02.jpg",
+"o": {
+"label": "N.º 49 · DOCTOR DE LA CASCADA",
+"credit": "Sanjay Kodain Mountaineer · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 860.847,
+"b": 865.407,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/noor_03.jpg",
+"ar": 0.75,
+"o": {
+"credit": "PAUL FARMER · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 865.407,
+"b": 869.867,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/signal_01.jpg",
+"ar": 0.7703,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 869.867,
+"b": 871.907,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/balloon_01.jpg",
+"ar": 0.6434,
+"o": {
+"credit": "Department of the Army. Office of the Chief Sign · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 871.907,
+"b": 877.293,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-98.5,
+69.0
+],
+"prev": [
+-74.23,
+40.77
+],
+"lines": [
+"ÁRTICO",
+"1845",
+"EXPEDICIÓN FRANKLIN"
+],
+"name": "Isla del Rey Guillermo"
+},
+"big": true
+},
+{
+"a": 877.293,
+"b": 881.947,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/franklin_04.jpg",
+"o": {
+"credit": "Thomas Sewell Robins · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 881.947,
+"b": 901.587,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "HieloFranklin",
+"at": {
+"inviernos": 49,
+"sol": 307,
+"trineo": 530
+}
+},
+"big": true
+},
+{
+"a": 901.587,
+"b": 907.307,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 950400,
+"tag": "11 DÍAS",
+"sub": "te sientas en la nieve.",
+"fz": 52,
+"s0": 851195
+},
+"big": true
+},
+{
+"a": 907.307,
+"b": 910.247,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/chilkoot_01.jpg",
+"o": {
+"label": "N.º 47 · PORTEADOR DEL CHILKOOT",
+"credit": "Scan by NYPL · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 910.247,
+"b": 914.643,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/balloon_02.jpg",
+"ar": 0.6432,
+"o": {
+"credit": "tormentor4555 · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 914.643,
+"b": 918.507,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/capa_03.jpg",
+"o": {
+"credit": "Wall, U.S. Army Signal Corps · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 918.507,
+"b": 922.407,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 46",
+"*trampero de las Rocosas*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 922.407,
+"b": 926.207,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/soyuz_01.jpg",
+"ar": 1.0,
+"o": {
+"credit": "Bill Ingalls · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 926.207,
+"b": 935.887,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TroncosVara",
+"at": {
+"atascaban": 181,
+"vara": 257
+}
+},
+"big": true
+},
+{
+"a": 935.887,
+"b": 939.967,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/lumber_04.jpg",
+"o": {
+"label": "N.º 44 · LEÑADOR",
+"credit": "Madera Sugar Pine Company · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 939.967,
+"b": 944.387,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/soyuz_02.jpg",
+"ar": 1.0,
+"o": {
+"credit": "Bill Ingalls · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 944.387,
+"b": 949.747,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 43",
+"*extractor de veneno*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 949.747,
+"b": 953.147,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/soyuz11_03.jpg",
+"o": {
+"credit": "Godai · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 953.147,
+"b": 956.907,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 42",
+"*domador de leones*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 956.907,
+"b": 960.507,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/sl1_02.jpg",
+"ar": 0.7811,
+"o": {
+"credit": "ENERGY.GOV · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 960.507,
+"b": 963.887,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/sl1_03.jpg",
+"ar": 1.2229,
+"o": {
+"credit": "Related names: Louter, David, transmitter Reynol · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 963.887,
+"b": 968.407,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/mahout_02.jpg",
+"o": {
+"label": "N.º 41 · MAHOUT",
+"credit": "Basile Morin · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 968.407,
+"b": 972.76,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/atomic_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 972.76,
+"b": 975.007,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 6
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 975.007,
+"b": 977.087,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/stretcher_01.jpg",
+"ar": 1.1456,
+"o": {
+"label": "N.º 40 · CAMILLERO",
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 977.087,
+"b": 979.207,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/hunter_01.jpg",
+"ar": 0.6676,
+"o": {
+"credit": "U.S. Department of Defense Current Photos Staff  · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 979.207,
+"b": 983.767,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/ww1trench_01.jpg",
+"o": {
+"label": "N.º 39 · CORREDOR DE TRINCHERA",
+"credit": "John Warwick Brooke · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 983.767,
+"b": 986.267,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hunter_03.jpg",
+"o": {
+"credit": "U.S. Air Force Photo/Tech. Sgt. James B. Pritche · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 986.267,
+"b": 990.227,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/airmail_01.jpg",
+"o": {
+"label": "N.º 38 · CORREO AÉREO",
+"credit": "S Kaiser · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 990.227,
+"b": 994.087,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/cobalt_01.jpg",
+"o": {
+"credit": "The International Institute for Environment and  · Wikimedia Commons · CC BY 2.5"
+}
+}
+},
+{
+"a": 994.087,
+"b": 999.547,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/cobalt2_01.jpg",
+"o": {
+"credit": "The International Institute for Environment and  · Wikimedia Commons · CC BY 2.5"
+}
+}
+},
+{
+"a": 999.547,
+"b": 1007.107,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "VarillaCm",
+"at": {
+"camboya": 43,
+"centimetro": 144
+}
+},
+"big": true
+},
+{
+"a": 1007.107,
+"b": 1010.447,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 36",
+"*tendedor de cables*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 1010.447,
+"b": 1013.227,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/fuku_01.jpg",
+"o": {
+"credit": "US Air Force from USA · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1013.227,
+"b": 1016.987,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/fuku_02.jpg",
+"ar": 0.6775,
+"o": {
+"credit": "US Air Force from USA · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1016.987,
+"b": 1024.087,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+2.35,
+48.86
+],
+"prev": [
+-98.5,
+69.0
+],
+"lines": [
+"PARÍS OCUPADO",
+"1943",
+"RADIO CLANDESTINA"
+],
+"name": "París"
+},
+"big": true
+},
+{
+"a": 1024.087,
+"b": 1026.707,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/fuku2_01.jpg",
+"o": {
+"credit": "IAEA Imagebank · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1026.707,
+"b": 1030.607,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/noor_01.jpg",
+"ar": 1.0,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1030.607,
+"b": 1034.267,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/fuku2_02.jpg",
+"o": {
+"credit": "IAEA Imagebank · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1034.267,
+"b": 1054.867,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "MaletaRadio",
+"at": {
+"maleta": 73,
+"veinte": 233,
+"camionetas": 337,
+"cambias": 469,
+"vecino": 542
+}
+},
+"big": true
+},
+{
+"a": 1054.867,
+"b": 1059.547,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 777600,
+"tag": "9 DÍAS",
+"sub": "te quedas sin casas seguras.",
+"fz": 55,
+"s0": 708821
+},
+"big": true
+},
+{
+"a": 1059.547,
+"b": 1062.567,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/balloon_03.jpg",
+"o": {
+"label": "N.º 34 · OBSERVADOR EN GLOBO",
+"credit": "Frank Hurley · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1062.567,
+"b": 1067.907,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/fuku2_04.jpg",
+"o": {
+"credit": "US Air Force from USA · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1067.907,
+"b": 1071.367,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/bomb_01.jpg",
+"ar": 0.6761,
+"o": {
+"label": "N.º 33 · DESACTIVADOR",
+"credit": "Edward Ardizzone · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1071.367,
+"b": 1074.287,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/fuku3_01.jpg",
+"o": {
+"credit": "IAEA Imagebank · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1074.287,
+"b": 1076.387,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/serra_02.jpg",
+"o": {
+"credit": "Túllio F · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1076.387,
+"b": 1079.187,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/capa_02.jpg",
+"o": {
+"label": "N.º 32 · FOTÓGRAFO DE GUERRA",
+"credit": "Chief Photographer's Mate (CPHOM) Robert F. Sarg · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1079.187,
+"b": 1083.507,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/serra_03.jpg",
+"o": {
+"credit": "Túllio F · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1083.507,
+"b": 1087.672,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/serra_04.jpg",
+"o": {
+"credit": "Túllio F · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1087.672,
+"b": 1090.847,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 31",
+"*bombero paracaidista*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 1090.847,
+"b": 1094.807,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/mamore_01.jpg",
+"o": {
+"credit": "Alured Gray Bell · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 1094.807,
+"b": 1100.167,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LaderaFuego",
+"at": {
+"trece": 0,
+"rapido": 80
+}
+},
+"big": true
+},
+{
+"a": 1100.167,
+"b": 1104.207,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"quedan *30.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 1104.207,
+"b": 1108.067,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/mamore_02.jpg",
+"o": {
+"credit": "José Rosael/HélioNobre/Museu Paulista da USP · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1108.067,
+"b": 1111.427,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"el cronómetro",
+"*ya no se mide en días.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 1111.427,
+"b": 1113.174,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/mamore_04.jpg",
+"o": {
+"credit": "José Rosael/HélioNobre/Museu Paulista da USP · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1113.174,
+"b": 1114.427,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 7
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 1114.427,
+"b": 1123.427,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "DeltaPe",
+"at": {
+"delta": 104,
+"diferencia": 133,
+"succiona": 176
+}
+},
+"big": true
+},
+{
+"a": 1123.427,
+"b": 1126.887,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/soyuz_03.jpg",
+"o": {
+"label": "N.º 29 · COSMONAUTA DEL SOYUZ 11",
+"credit": "NASA/Sarah Volkman · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1126.887,
+"b": 1131.687,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/mamore2_02.jpg",
+"ar": 0.7483,
+"o": {
+"credit": "Freyah · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1131.687,
+"b": 1134.527,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/mamore2_03.jpg",
+"o": {
+"credit": "José Rosael/HélioNobre/Museu Paulista da USP · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1134.527,
+"b": 1136.467,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/mamore2_04.jpg",
+"o": {
+"credit": "José Rosael/HélioNobre/Museu Paulista da USP · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1136.467,
+"b": 1139.547,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/sl1_01.jpg",
+"ar": 1.2419,
+"o": {
+"label": "N.º 28 · OPERADOR DEL SL-1",
+"credit": "Related names: Louter, David, transmitter Reynol · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1139.547,
+"b": 1143.347,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/hoover_01.jpg",
+"ar": 0.6974,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1143.347,
+"b": 1147.247,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hoover_04.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1147.247,
+"b": 1149.927,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/atomic_01.jpg",
+"ar": 0.797,
+"o": {
+"label": "N.º 27 · VETERANO ATÓMICO",
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1149.927,
+"b": 1153.027,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/hoover2_01.jpg",
+"ar": 0.6974,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1153.027,
+"b": 1156.447,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hoover2_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1156.447,
+"b": 1159.487,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hunter_02.jpg",
+"o": {
+"label": "N.º 26 · CAZADOR DE HURACANES",
+"credit": "NOAA · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1159.487,
+"b": 1162.927,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hoover2_05.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1162.927,
+"b": 1167.287,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hoover3_01.jpg",
+"o": {
+"credit": "National Archives, Herbert Hoover Presidential L · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1167.287,
+"b": 1173.207,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+27.43,
+-26.43
+],
+"prev": [
+2.35,
+48.86
+],
+"lines": [
+"MPONENG",
+"HOY",
+"MINERO DE ORO"
+],
+"name": "Sudáfrica"
+},
+"big": true
+},
+{
+"a": 1173.207,
+"b": 1175.907,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/hoover3_03.jpg",
+"ar": 0.6974,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1175.907,
+"b": 1199.627,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PozoMponeng",
+"at": {
+"hielo": 248,
+"estallido": 519
+}
+},
+"big": true
+},
+{
+"a": 1199.627,
+"b": 1205.267,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 21600,
+"tag": "6 HORAS",
+"sub": "la jaula no sube antes.",
+"fz": 58,
+"s0": 19293
+},
+"big": true
+},
+{
+"a": 1205.267,
+"b": 1208.127,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 24",
+"*Serra Pelada*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 1208.127,
+"b": 1212.347,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hoover3_04.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1212.347,
+"b": 1216.467,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hawks2_01.jpg",
+"o": {
+"credit": "Jarek Tuszyński · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 1216.467,
+"b": 1226.127,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BateriaCobalto",
+"at": {
+"congo": 93,
+"bateria": 173,
+"mano": 252
+}
+},
+"big": true
+},
+{
+"a": 1226.127,
+"b": 1230.867,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/fuku_03.jpg",
+"o": {
+"label": "N.º 22 · LOS 50 DE FUKUSHIMA",
+"credit": "US Air Force from USA · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1230.867,
+"b": 1233.707,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/gotthard_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1233.707,
+"b": 1238.227,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/gotthard_03.jpg",
+"o": {
+"credit": "Dietler, Hermann (1839-10-01 - 1924-01-24); Röll · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1238.227,
+"b": 1240.127,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/gotthard_04.jpg",
+"o": {
+"credit": "Creator:Florentin Joseph Charnaux · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 1240.127,
+"b": 1244.227,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 21",
+"*buzo de aguas negras*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 1244.227,
+"b": 1248.447,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/hoosac_02.jpg",
+"ar": 1.0,
+"o": {
+"credit": "Ericshawwhite · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1248.447,
+"b": 1251.787,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hoosac_03.jpg",
+"o": {
+"credit": "John Phelan · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 1251.787,
+"b": 1256.634,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hoosac2_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1256.634,
+"b": 1261.187,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 8
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 1261.187,
+"b": 1266.647,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/mamore_03.jpg",
+"o": {
+"label": "N.º 20 · MADEIRA-MAMORÉ",
+"credit": "José Rosael/HélioNobre/Museu Paulista da USP · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1266.647,
+"b": 1269.607,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/hoover_02.jpg",
+"ar": 0.6646,
+"o": {
+"label": "N.º 19 · PRESA HOOVER",
+"credit": "When reusing, please credit me as author: Adam K · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1269.607,
+"b": 1274.48,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/hoosac2_02.jpg",
+"ar": 0.7494,
+"o": {
+"credit": "Henry Ward Photo circa 1870 · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1274.48,
+"b": 1279.98,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-81.12,
+38.12
+],
+"prev": [
+27.43,
+-26.43
+],
+"lines": [
+"HAWKS NEST",
+"1930",
+"PERFORADOR"
+],
+"name": "Virginia Occidental"
+},
+"big": true
+},
+{
+"a": 1279.98,
+"b": 1283.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/yungas_01.jpg",
+"o": {
+"credit": "Jan Beck · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 1283.86,
+"b": 1287.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/yungas_03.jpg",
+"o": {
+"credit": "JERRYE AND ROY KLOTZ MD · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1287.62,
+"b": 1289.36,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/yungas_04.jpg",
+"ar": 0.6794,
+"o": {
+"credit": "JERRYE AND ROY KLOTZ MD · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1289.36,
+"b": 1293.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hawks_01.jpg",
+"o": {
+"credit": "Jarek Tuszyński · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 1293.72,
+"b": 1298.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/lumber_01.jpg",
+"o": {
+"credit": "Moinats · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1298.1,
+"b": 1314.24,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PolvoBlanco",
+"at": {
+"fantasma": 143,
+"ingenieros": 187
+}
+},
+"big": true
+},
+{
+"a": 1314.24,
+"b": 1320.1,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 5184000,
+"tag": "2 MESES",
+"sub": "el polvo ya está adentro.",
+"fz": 55,
+"s0": 4769232
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 1320.1,
+"b": 1323.16,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/hoosac_01.jpg",
+"o": {
+"label": "N.º 17 · TÚNEL HOOSAC",
+"credit": "Doug Kerr from Albany, NY, United States · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1323.16,
+"b": 1326.76,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/lumber_02.jpg",
+"o": {
+"credit": "Moinats · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1326.76,
+"b": 1330.64,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 16",
+"*cortador de sal*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 1330.64,
+"b": 1335.4,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/lumber_03.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Moinats · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1335.4,
+"b": 1338.5,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 15",
+"*nidos de golondrina*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 1338.5,
+"b": 1343.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/granite_02.jpg",
+"o": {
+"credit": "Pub. by The Riverside Paper Co., Burlington, Ver · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1343.08,
+"b": 1344.7,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/granite_03.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "National Institute for Occupational Safety and H · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1344.7,
+"b": 1347.92,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 14",
+"*muro ami*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 1347.92,
+"b": 1352.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/granite_04.jpg",
+"o": {
+"credit": "James St. John · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 1352.24,
+"b": 1353.76,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/caphorn_03.jpg",
+"o": {
+"credit": "Jan Porcellis · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1353.76,
+"b": 1355.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/yungas_02.jpg",
+"o": {
+"label": "N.º 13 · CAMINO DE LAS YUNGAS",
+"credit": "Alicia Nijdam from Cordoba, Argentina · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 1355.6,
+"b": 1357.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/caphorn_04.jpg",
+"o": {
+"credit": "Bonaventura Peeters the Elder · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1357.84,
+"b": 1365.0,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "YungasAncho",
+"at": {
+"ancho": 23,
+"abismo": 75,
+"muerte": 155
+}
+},
+"big": true
+},
+{
+"a": 1365.0,
+"b": 1368.28,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 12",
+"*camino de la vida*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 1368.28,
+"b": 1372.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/diver_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1372.2,
+"b": 1375.04,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/diver_02.jpg",
+"o": {
+"credit": "U.S. Navy photo by Information Systems Technicia · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1375.04,
+"b": 1377.4,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/diver_03.jpg",
+"ar": 0.8091,
+"o": {
+"credit": "National Museum of the U.S. Navy · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1377.4,
+"b": 1391.833,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ManosRayosX",
+"at": {
+"dally": 91,
+"edison": 335
+}
+},
+"big": true
+},
+{
+"a": 1391.833,
+"b": 1395.66,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"los *10* últimos."
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 1395.66,
+"b": 1399.88,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/edison_01.jpg",
+"ar": 1.2237,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1399.88,
+"b": 1401.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/edison_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1401.54,
+"b": 1405.2,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"el número uno",
+"*no tiene sueldo.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 1405.2,
+"b": 1408.42,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 9
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 1408.42,
+"b": 1420.6,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "Destornillador",
+"at": {
+"slotin": 69,
+"plutonio": 146,
+"resbalo": 231,
+"nueve": 313
+}
+},
+"big": true
+},
+{
+"a": 1420.6,
+"b": 1423.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/stapp_01.jpg",
+"o": {
+"label": "N.º 9 · JOHN STAPP",
+"credit": "NASA Glenn Research Center · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1423.48,
+"b": 1427.78,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/stapp_02.jpg",
+"ar": 1.2492,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1427.78,
+"b": 1432.16,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/stapp_03.jpg",
+"o": {
+"credit": "AllenS · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1432.16,
+"b": 1435.12,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/oilfire_01.jpg",
+"o": {
+"label": "N.º 8 · APAGADOR DE POZOS",
+"credit": "U.S. Marine Corps photo by Pfc. Mary Rose Xenika · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1435.12,
+"b": 1439.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/edison_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1439.38,
+"b": 1441.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/ww1trench_02.jpg",
+"o": {
+"credit": "Ernest Brooks · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1441.92,
+"b": 1445.24,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/schnee_01.jpg",
+"ar": 1.0622,
+"o": {
+"label": "N.º 7 · MINERO DE SCHNEEBERG",
+"credit": "Leon Hupperichs · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1445.24,
+"b": 1449.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/ww1trench_05.jpg",
+"o": {
+"credit": "Ernest Brooks · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1449.46,
+"b": 1452.32,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/executioner_01.jpg",
+"ar": 0.7837,
+"o": {
+"credit": "Gustav Adolf Closs · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1452.32,
+"b": 1454.5,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/mannGulch_01.jpg",
+"o": {
+"credit": "Montanabw · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1454.5,
+"b": 1459.62,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/halifax_01.jpg",
+"ar": 0.6299,
+"o": {
+"label": "N.º 6 · PRÁCTICO DE HALIFAX",
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1459.62,
+"b": 1463.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/halifax_05.jpg",
+"o": {
+"credit": "Mike W. from Vancouver, Canada · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1463.0,
+"b": 1468.5,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/halifax2_01.jpg",
+"o": {
+"credit": "BiblioArchives / LibraryArchives from Canada · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 1468.5,
+"b": 1471.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/rfc_02.jpg",
+"o": {
+"label": "N.º 5 · PILOTO NOVATO · RFC",
+"credit": "Royal Flying Corps · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1471.86,
+"b": 1474.54,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/rfc_01.jpg",
+"ar": 0.563,
+"o": {
+"credit": "HominyGrits007 · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 1474.54,
+"b": 1478.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/sopwith_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1478.58,
+"b": 1481.04,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/mannGulch_02.jpg",
+"o": {
+"credit": "Montanabw · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1481.04,
+"b": 1482.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/uboat_04.jpg",
+"o": {
+"label": "N.º 4 · SUBMARINO",
+"credit": "leewrightonflickr · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 1482.94,
+"b": 1485.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/uboat2_04.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1485.34,
+"b": 1492.64,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "MitadUboat",
+"at": {
+"mitad": 62
+}
+},
+"big": true
+},
+{
+"a": 1492.64,
+"b": 1495.96,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"N.º 3",
+"*forzado de Almadén*"
+],
+"a": 4,
+"y": 360,
+"size": 104
+}
+}
+}
+},
+{
+"a": 1495.96,
+"b": 1499.04,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/uboat2_05.jpg",
+"o": {
+"credit": "Memorialman · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1499.04,
+"b": 1502.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/mannGulch_03.jpg",
+"o": {
+"credit": "Montanabw · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1502.48,
+"b": 1505.1,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/schnee_02.jpg",
+"ar": 1.1789,
+"o": {
+"credit": "Leon Hupperichs · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1505.1,
+"b": 1508.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/schnee_04.jpg",
+"o": {
+"credit": "Privoksalnaja · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1508.2,
+"b": 1513.08,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+5.37,
+43.3
+],
+"prev": [
+-81.12,
+38.12
+],
+"lines": [
+"MARSELLA",
+"1720",
+"FORZADO"
+],
+"name": "Marsella"
+},
+"big": true
+},
+{
+"a": 1513.08,
+"b": 1518.5,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/marseille_01.jpg",
+"o": {
+"credit": "Michel Serre · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1518.5,
+"b": 1521.52,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nb/cand/roze_01.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Jacques59370 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1521.52,
+"b": 1525.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/roze_02.jpg",
+"o": {
+"credit": "Rijksmuseum · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 1525.52,
+"b": 1547.12,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CarretaMarsella",
+"at": {
+"roze": 155,
+"vinagre": 256,
+"puerta": 579
+}
+},
+"big": true
+},
+{
+"a": 1547.12,
+"b": 1550.0,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 172800,
+"tag": "2 DÍAS",
+"sub": "la única puerta que te abrieron.",
+"fz": 54,
+"s0": 159122
+},
+"big": true
+},
+{
+"a": 1550.0,
+"b": 1552.57,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"número *UNO.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 1552.57,
+"b": 1560.96,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+150.8,
+59.56
+],
+"prev": [
+5.37,
+43.3
+],
+"lines": [
+"KOLIMÁ",
+"AÑOS 30-40",
+"PRESO POLÍTICO"
+],
+"name": "Kolimá"
+},
+"big": true
+},
+{
+"a": 1560.96,
+"b": 1564.96,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"no te contrataron.",
+"*te detuvieron.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 1564.96,
+"b": 1569.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/kolyma_01.jpg",
+"o": {
+"credit": "Сайга20К · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1569.24,
+"b": 1573.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/kolyma_02.jpg",
+"o": {
+"credit": "Сайга20К · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1573.48,
+"b": 1576.12,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/kolyma_03.jpg",
+"o": {
+"credit": "Сайга20К · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1576.12,
+"b": 1578.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/kolyma_04.jpg",
+"o": {
+"credit": "Сайга20К · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1578.74,
+"b": 1580.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/kolyma_06.jpg",
+"o": {
+"credit": "Сайга20К · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1580.86,
+"b": 1595.52,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "RacionEspiral",
+"at": {
+"racion": 0,
+"sola": 391
+}
+},
+"big": true
+},
+{
+"a": 1595.52,
+"b": 1614.3,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "VeinteDias",
+"at": {
+"shalamov": 61,
+"diseno": 544
+}
+},
+"big": true
+},
+{
+"a": 1614.3,
+"b": 1620.02,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/shalamov_01.jpg",
+"o": {
+"credit": "ОГПУ при СНК СССР (USSR Joint State Political Di · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1620.02,
+"b": 1622.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/kolyma2_01.jpg",
+"o": {
+"credit": "Laika ac from USA · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1622.54,
+"b": 1628.38,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 1728000,
+"tag": "20 DÍAS",
+"sub": "y aquí no hay pregunta.",
+"run": true,
+"fz": 38,
+"s0": 1672602
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 1628.38,
+"b": 1629.48,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"la *suma*"
+],
+"a": 4,
+"y": 360,
+"size": 150
+}
+}
+}
+},
+{
+"a": 1629.48,
+"b": 1653.8,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "tu tablero *final.*",
+"final": [
+0,
+78,
+157,
+243,
+318,
+383,
+454,
+529,
+587,
+646,
+688
+]
+},
+"big": true
+},
+{
+"a": 1653.8,
+"b": 1656.04,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nb/cand/kolyma2_03.jpg",
+"o": {
+"credit": "Government of Russia · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 1656.04,
+"b": 1669.1,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SumaTotal",
+"at": {
+"total": 22,
+"fijas": 175
+}
+},
+"big": true
+},
+{
+"a": 1669.1,
+"b": 1677.18,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿Cuál es el trabajo más peligroso que has tenido tú? ¿Cuánto duraste?",
+"bell": false
+}
+},
+{
+"a": 1677.18,
+"b": 1681.22,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Suscríbete + campanita: el próximo viaje ya está en camino."
+}
+},
+{
+"a": 1681.22,
+"b": 1689.76,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PerroCueva",
+"at": {
+"perro": 46
+}
+},
+"big": true
+},
+{
+"a": 1689.76,
+"b": 1693.69,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"si es que *duras.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+}
+],
+"stops": [
+{
+"n": 100,
+"a": 102.3,
+"q": 131.58,
+"w0": 126.98,
+"w1": 135.18,
+"fin": 260,
+"tag": "4 MIN 20",
+"b": 241.04
+},
+{
+"n": 89,
+"a": 251.42,
+"q": 291.007,
+"w0": 289.34,
+"w1": 294.38,
+"fin": 7800,
+"tag": "2 H 10",
+"b": 393.753
+},
+{
+"n": 78,
+"a": 417.52,
+"q": 451.006,
+"w0": 449.273,
+"w1": 454.853,
+"fin": 1814400,
+"tag": "3 SEMANAS",
+"b": 544.66
+},
+{
+"n": 67,
+"a": 577.553,
+"q": 606.966,
+"w0": 604.633,
+"w1": 613.233,
+"fin": 1080,
+"tag": "18 MIN",
+"b": 687.363
+},
+{
+"n": 57,
+"a": 730.893,
+"q": 758.166,
+"w0": 756.333,
+"w1": 764.073,
+"fin": 10368000,
+"tag": "4 MESES",
+"b": 843.673
+},
+{
+"n": 48,
+"a": 877.293,
+"q": 903.32,
+"w0": 901.587,
+"w1": 907.307,
+"fin": 950400,
+"tag": "11 DÍAS",
+"b": 972.76
+},
+{
+"n": 35,
+"a": 1024.087,
+"q": 1056.7,
+"w0": 1054.867,
+"w1": 1059.547,
+"fin": 777600,
+"tag": "9 DÍAS",
+"b": 1113.174
+},
+{
+"n": 25,
+"a": 1173.207,
+"q": 1201.56,
+"w0": 1199.627,
+"w1": 1205.267,
+"fin": 21600,
+"tag": "6 HORAS",
+"b": 1256.634
+},
+{
+"n": 18,
+"a": 1279.98,
+"q": 1316.073,
+"w0": 1314.24,
+"w1": 1320.1,
+"fin": 5184000,
+"tag": "2 MESES",
+"b": 1405.2
+},
+{
+"n": 2,
+"a": 1513.08,
+"q": 1548.92,
+"w0": 1547.12,
+"w1": 1550.0,
+"fin": 172800,
+"tag": "2 DÍAS",
+"b": 1629.48
+},
+{
+"n": 1,
+"a": 1560.96,
+"q": 1623.807,
+"w0": 1622.54,
+"w1": 1628.38,
+"fin": 1728000,
+"tag": "RUN",
+"b": 1629.48
+}
+]
+}
