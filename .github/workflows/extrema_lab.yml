@@ -1,0 +1,36 @@
+# Edición extrema (Estudio): renderiza piezas de motion graphics a MP4. Lo dispara la PC con:
+#   gh workflow run extrema_lab.yml -f tag=xm-<algo> -f ids=xm01,xm02
+# El release <tag> trae pkg.tar.gz (paquete extrema con src/gen + public/fotos). Sube <id>.mp4 al mismo release.
+name: extrema_lab
+on:
+  workflow_dispatch:
+    inputs:
+      tag: { description: "release con pkg.tar.gz", required: true }
+      ids: { description: "ids separados por coma", required: true }
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/setup-node@v5
+        with: { node-version: "20" }
+      - name: bajar paquete
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          mkdir -p pkg && cd pkg
+          gh release download "${{ inputs.tag }}" -R "${{ github.repository }}" --pattern pkg.tar.gz
+          tar -xzf pkg.tar.gz && rm pkg.tar.gz
+          (sudo apt-get install -y -qq fonts-noto-color-emoji > /dev/null || true)
+      - name: instalar
+        working-directory: pkg
+        run: npm i --no-audit --no-fund --loglevel=error
+      - name: render
+        working-directory: pkg
+        run: EXTREMA_HILOS=4 node render.mjs public out "${{ inputs.ids }}"
+      - name: subir
+        if: always()
+        working-directory: pkg
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          cat out/render.json || true
+          ls out/*.mp4 && gh release upload "${{ inputs.tag }}" out/*.mp4 out/render.json -R "${{ github.repository }}" --clobber
