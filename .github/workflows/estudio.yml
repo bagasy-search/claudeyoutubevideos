@@ -1,0 +1,116 @@
+# Render del ESTUDIO en la nube (7-nov). Lo dispara D:/rtmp/dspanel/tools/nube.py desde render.py: nadie lo corre a mano.
+# La PC arma el plan y sube a la release "est-<video>" sólo las fotos/avatares que faltan + manifest_<plan>.json
+# (cada segmento = su comando ffmpeg exacto). Acá: un job por tanda de segmentos (matriz) y un job final con los fundidos.
+#   gh workflow run estudio.yml -f tag=est-fe05ds -f plan=<hash> -f chunks='[0,1,2]' -f final=1 -f nonce=<x>
+name: estudio
+run-name: estudio ${{ inputs.tag }} ${{ inputs.nonce }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:    { description: "release del video (est-<carpeta>)", required: true }
+      plan:   { description: "hash del plan (manifest_<plan>.json)", required: true }
+      chunks: { description: "tandas a renderizar, JSON (ej [0,3,4]); [] = ninguna", required: true }
+      final:  { description: "1 = armar video_<plan>.mp4 con los fundidos", required: false, default: "1" }
+      nonce:  { description: "id de la corrida (para encontrarla)", required: true }
+
+permissions:
+  contents: write
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  FF_URL: https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n7.1-latest-linux64-gpl-7.1.tar.xz
+
+jobs:
+  render:
+    if: ${{ inputs.chunks != '[]' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 256
+      matrix:
+        k: ${{ fromJSON(inputs.chunks) }}
+    steps:
+      - name: ffmpeg
+        run: |
+          mkdir -p ~/ff && curl -sL "$FF_URL" | tar -xJ -C ~/ff --strip-components=1
+          echo "$HOME/ff/bin" >> "$GITHUB_PATH"
+      - name: tanda ${{ matrix.k }}
+        run: |
+          set -e
+          R=${{ github.repository }}; T=${{ inputs.tag }}; P=${{ inputs.plan }}; K=${{ matrix.k }}
+          mkdir -p w/in w/seg && cd w
+          gh release download "$T" -R "$R" -p "manifest_$P.json" -O m.json
+          python3 - "$K" <<'EOF'
+          import json, sys, subprocess, os, concurrent.futures as cf
+          m = json.load(open("m.json")); c = m["chunks"][str(sys.argv[1])]
+          need = sorted({x for s in c["segs"] for x in s["in"]})
+          for n in need:
+              for t in range(5):
+                  if subprocess.run(["gh", "release", "download", os.environ["T"], "-R", os.environ["R"], "-p", n, "-D", "in", "--clobber"]).returncode == 0: break
+              else: sys.exit("no pude bajar " + n)
+          def run(s):
+              r = subprocess.run(s["cmd"], capture_output=True, text=True)
+              return s["i"], (r.returncode, r.stderr[-400:])
+          bad = 0
+          with cf.ThreadPoolExecutor(4) as ex:
+              for i, (rc, err) in ex.map(run, c["segs"]):
+                  if rc: bad += 1; print("seg", i, "ERR", err)
+          sys.exit(1 if bad else 0)
+          EOF
+          tar -cf "chunk_${K}_$(python3 -c "import json;print(json.load(open('m.json'))['chunks']['$K']['hash'])").tar" seg
+          for t in 1 2 3 4 5; do gh release upload "$T" -R "$R" chunk_*.tar --clobber && break; sleep $((t*10)); done
+        env:
+          T: ${{ inputs.tag }}
+          R: ${{ github.repository }}
+
+  final:
+    needs: render
+    if: ${{ always() && inputs.final == '1' && (needs.render.result == 'success' || needs.render.result == 'skipped') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: ffmpeg
+        run: |
+          mkdir -p ~/ff && curl -sL "$FF_URL" | tar -xJ -C ~/ff --strip-components=1
+          echo "$HOME/ff/bin" >> "$GITHUB_PATH"
+      - name: fundidos
+        run: |
+          set -e
+          R=${{ github.repository }}; T=${{ inputs.tag }}; P=${{ inputs.plan }}
+          mkdir -p w && cd w
+          gh release download "$T" -R "$R" -p "manifest_$P.json" -O m.json
+          for n in $(python3 -c "import json;m=json.load(open('m.json'));print(' '.join('chunk_%s_%s.tar'%(k,c['hash']) for k,c in m['chunks'].items()))"); do
+            for t in 1 2 3 4 5; do gh release download "$T" -R "$R" -p "$n" --clobber && break; sleep $((t*5)); done
+            tar -xf "$n" && rm "$n"
+          done
+          python3 - <<'EOF'
+          import json, subprocess, sys, os
+          m = json.load(open("m.json")); XF = m["xf"]; N = len(XF)
+          segs = ["seg/%04d.mp4" % i for i in range(N)]
+          miss = [s for s in segs if not os.path.exists(s)]
+          if miss: sys.exit("faltan segmentos: %s" % miss[:10])
+          def run(cmd):
+              r = subprocess.run(cmd, capture_output=True, text=True)
+              if r.returncode: print(r.stderr[-1500:]); sys.exit(1)
+          def chain(files, ns, ds, out, crf):
+              ins, fc, prev, t = [], [], "[v0]", 0
+              for k, f in enumerate(files):
+                  ins += ["-i", f]; fc.append("[%d:v]settb=AVTB,fps=30,format=yuv420p,setsar=1[v%d]" % (k, k))
+              for k in range(1, len(files)):
+                  t += ns[k - 1]; d = ds[k - 1]; o = "[x%d]" % k
+                  fc.append(("%s[v%d]xfade=transition=fade:duration=%.4f:offset=%.4f%s" % (prev, k, d / 30, t / 30, o)) if d > 0 else ("%s[v%d]concat=n=2:v=1:a=0%s" % (prev, k, o)))
+                  prev = o
+              run(["ffmpeg", "-v", "error", "-y"] + ins + ["-filter_complex", ";".join(fc), "-map", prev if len(files) > 1 else "[v0]",
+                   "-c:v", "libx264", "-crf", str(crf), "-preset", "veryfast" if crf < 20 else "medium", "-pix_fmt", "yuv420p", "-r", "30", "-an", out])
+          import concurrent.futures as cf
+          G = 25; groups = [list(range(c, min(c + G, N))) for c in range(0, N, G)]
+          def tramo(j):
+              idx = groups[j]; out = "c%03d.mp4" % j
+              chain([segs[i] for i in idx], [XF[i]["n"] for i in idx], [XF[i]["d"] for i in idx], out, 14); return out
+          with cf.ThreadPoolExecutor(4) as ex: outs = list(ex.map(tramo, range(len(groups))))
+          chain(outs, [sum(XF[i]["n"] for i in g) for g in groups], [XF[g[-1]]["d"] for g in groups], "video.mp4", 20)
+          EOF
+          mv video.mp4 "video_$P.mp4"
+          for t in 1 2 3 4 5; do gh release upload "$T" -R "$R" "video_$P.mp4" --clobber && break; sleep $((t*10)); done
