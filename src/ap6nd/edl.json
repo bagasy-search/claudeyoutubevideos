@@ -1,0 +1,2463 @@
+{
+"end": 1146.85,
+"shots": [
+{
+"a": 0.0,
+"b": 2.02,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"MARCH 1898",
+"*TSAVO*, EAST AFRICA"
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+}
+},
+{
+"a": 2.02,
+"b": 3.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavoriv_01.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 3.72,
+"b": 5.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavobr_01.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 5.62,
+"b": 7.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavoriv_02.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 7.56,
+"b": 9.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/lionkenya_01.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 9.88,
+"b": 29.26,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LunaticLine",
+"at": {
+"miles": 191,
+"men": 266
+}
+},
+"big": true
+},
+{
+"a": 29.26,
+"b": 31.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/patterson_04.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 31.0,
+"b": 33.98,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nd/cand/mombasa_02.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Photograph by Mike Peel (www.mikepeel.net). · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 33.98,
+"b": 36.12,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "WRONG",
+"color": "#f14536",
+"size": 240,
+"a": 0
+}
+}
+}
+},
+{
+"a": 36.12,
+"b": 37.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_camp01.jpg"
+}
+},
+{
+"a": 37.94,
+"b": 40.32,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_fire01.png"
+}
+},
+{
+"a": 40.32,
+"b": 41.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_boma01.png"
+}
+},
+{
+"a": 41.92,
+"b": 43.68,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_camp02.jpg"
+}
+},
+{
+"a": 43.68,
+"b": 45.42,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavoeast_01.jpg",
+"o": {
+"credit": "Tall Black · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 45.42,
+"b": 48.32,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/buffalo_01.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 48.32,
+"b": 57.52,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TwoShapes",
+"at": {
+"mane": 71,
+"nine": 162
+}
+},
+"big": true
+},
+{
+"a": 57.52,
+"b": 59.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/lionnight_03.jpg",
+"o": {
+"credit": "shankar s. from Dubai, united arab emirates · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 59.86,
+"b": 61.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_boma02.png"
+}
+},
+{
+"a": 61.54,
+"b": 66.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/lionnight_04.jpg",
+"o": {
+"credit": "shankar s. from Dubai, united arab emirates · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 66.48,
+"b": 69.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2boma01.png"
+}
+},
+{
+"a": 69.52,
+"b": 72.22,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "135",
+"color": "#f14536",
+"size": 240,
+"a": 0
+}
+}
+}
+},
+{
+"a": 72.22,
+"b": 82.26,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "InkClaim",
+"at": {
+"doubt": 246
+}
+},
+"big": true
+},
+{
+"a": 82.26,
+"b": 91.96,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "True stories of animals that crossed a line, without the gore and without the myths. Subscribe so the next file finds you."
+}
+},
+{
+"a": 91.96,
+"b": 102.24,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "If you had been a worker in those camps in 1898, after the first month, would you have stayed?"
+}
+},
+{
+"a": 102.24,
+"b": 108.58,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+38.47,
+-3.0
+],
+"lines": [
+"TSAVO",
+"KENYA",
+"1898"
+],
+"hot": 0,
+"name": "Tsavo"
+},
+"big": true
+},
+{
+"a": 108.58,
+"b": 111.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavoeast_02.jpg",
+"o": {
+"credit": "Dr Peter James Chisholm · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 111.98,
+"b": 116.46,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nd/cand/baobab_01.jpg",
+"ar": 0.6847,
+"o": {
+"credit": "Guus Gorter · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 116.46,
+"b": 119.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_baob01.png"
+}
+},
+{
+"a": 119.26,
+"b": 123.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavoeast_03.jpg",
+"o": {
+"credit": "Rob Oo from NL · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 123.6,
+"b": 127.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_rail01.png"
+}
+},
+{
+"a": 127.84,
+"b": 132.4,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nd/cand/mombasa_03.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Photograph by Mike Peel (www.mikepeel.net). · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 132.4,
+"b": 135.52,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nd/cand/mombasa_04.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Photograph by Mike Peel (www.mikepeel.net). · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 135.52,
+"b": 140.8,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_camp03.png"
+}
+},
+{
+"a": 140.8,
+"b": 145.02,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2camp01.jpg"
+}
+},
+{
+"a": 145.02,
+"b": 147.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/lunatic_02.jpg",
+"o": {
+"credit": "Miscellaneous Items in High Demand, PPOC, Librar · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 147.7,
+"b": 151.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2camp02.png"
+}
+},
+{
+"a": 151.1,
+"b": 154.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2boma02.png"
+}
+},
+{
+"a": 154.56,
+"b": 159.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavobr_02.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 159.0,
+"b": 170.14,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "FrozenCamp",
+"at": {}
+},
+"big": true
+},
+{
+"a": 170.14,
+"b": 172.74,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"That detail *matters.*",
+"Remember it."
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 172.74,
+"b": 176.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_fire02.png"
+}
+},
+{
+"a": 176.58,
+"b": 180.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_lamp01.png"
+}
+},
+{
+"a": 180.74,
+"b": 185.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2fire01.png"
+}
+},
+{
+"a": 185.6,
+"b": 188.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2fire02.png"
+}
+},
+{
+"a": 188.34,
+"b": 191.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_track01.png"
+}
+},
+{
+"a": 191.22,
+"b": 196.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_track02.png"
+}
+},
+{
+"a": 196.38,
+"b": 204.32,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "DragTrail",
+"at": {
+"drag": 88,
+"paws": 118
+}
+},
+"big": true
+},
+{
+"a": 204.32,
+"b": 208.2,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "LION",
+"color": "#f14536",
+"size": 240,
+"a": 0
+}
+}
+}
+},
+{
+"a": 208.2,
+"b": 211.8,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_tree01.png"
+}
+},
+{
+"a": 211.8,
+"b": 215.72,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nd/cand/patterson_05.jpg",
+"ar": 0.6882,
+"o": {
+"credit": "Bain News Service, publisher · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 215.72,
+"b": 218.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_tree02.png"
+}
+},
+{
+"a": 218.54,
+"b": 232.86,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ElsewhereMap",
+"at": {}
+},
+"big": true
+},
+{
+"a": 232.86,
+"b": 236.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2prey01.png"
+}
+},
+{
+"a": 236.1,
+"b": 240.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/buffalo_02.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 240.1,
+"b": 244.78,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/lionkenya_02.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 244.78,
+"b": 250.16,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nd/cand/lionkenya_03.jpg",
+"ar": 0.75,
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 250.16,
+"b": 259.6,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TennisDash",
+"at": {
+"go": 147
+}
+},
+"big": true
+},
+{
+"a": 259.6,
+"b": 277.58,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NotOnMenu",
+"at": {
+"upright": 193,
+"groups": 229,
+"noise": 263,
+"fire": 293
+}
+},
+"big": true
+},
+{
+"a": 277.58,
+"b": 281.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/lionnight_05.jpg",
+"o": {
+"credit": "shankar s. from Dubai, united arab emirates · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 281.06,
+"b": 283.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/fieldmus_01.jpg",
+"o": {
+"credit": "Belugaboy · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 283.86,
+"b": 288.542,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/fieldmus_02.jpg",
+"o": {
+"credit": "Belugaboy · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 288.542,
+"b": 293.202,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/fieldmus_03.jpg",
+"o": {
+"credit": "Patterson, Lieut. Col. J.H. · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 293.202,
+"b": 305.902,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ManeMeter",
+"at": {
+"length": 223
+}
+},
+"big": true
+},
+{
+"a": 305.902,
+"b": 310.482,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Not their *size.*",
+"What they had *learned.*"
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 310.482,
+"b": 333.502,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NightRoutine",
+"at": {
+"low": 178,
+"fence": 349,
+"choose": 485
+}
+},
+"big": true
+},
+{
+"a": 333.502,
+"b": 353.182,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "BomaRise",
+"at": {
+"fire": 160,
+"tins": 279
+}
+},
+"big": true
+},
+{
+"a": 353.182,
+"b": 357.942,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_tank01.png"
+}
+},
+{
+"a": 357.942,
+"b": 361.162,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2tree01.png"
+}
+},
+{
+"a": 361.162,
+"b": 364.502,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2tree02.png"
+}
+},
+{
+"a": 364.502,
+"b": 368.842,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2night01.png"
+}
+},
+{
+"a": 368.842,
+"b": 371.882,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_lion01.png"
+}
+},
+{
+"a": 371.882,
+"b": 376.282,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2night02.png"
+}
+},
+{
+"a": 376.282,
+"b": 380.642,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2night03.png"
+}
+},
+{
+"a": 380.642,
+"b": 383.802,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2night04.png"
+}
+},
+{
+"a": 383.802,
+"b": 385.582,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2camp03.png"
+}
+},
+{
+"a": 385.582,
+"b": 407.262,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LearnedRules",
+"at": {
+"r1": 163,
+"r2": 270,
+"r3": 382
+}
+},
+"big": true
+},
+{
+"a": 407.262,
+"b": 410.522,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavobr_03.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 410.522,
+"b": 424.462,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "FollowTheLine",
+"at": {
+"quiet": 170,
+"follow": 298
+}
+},
+"big": true
+},
+{
+"a": 424.462,
+"b": 428.422,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_hosp01.png"
+}
+},
+{
+"a": 428.422,
+"b": 431.582,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/lunatic_03.jpg",
+"o": {
+"credit": "Photograph by Mike Peel (www.mikepeel.net). · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 431.582,
+"b": 434.922,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nd/cand/lionskull_01.jpg",
+"ar": 0.563,
+"o": {
+"credit": "Dev Jadiya · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 434.922,
+"b": 437.962,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_bridge01.png"
+}
+},
+{
+"a": 437.962,
+"b": 440.622,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_lion02.png"
+}
+},
+{
+"a": 440.622,
+"b": 453.682,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "HospitalSwitch",
+"at": {
+"empty": 87,
+"nw": 215
+}
+},
+"big": true
+},
+{
+"a": 453.682,
+"b": 457.182,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/lionkenya_04.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 457.182,
+"b": 460.682,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/lionkenya_05.jpg",
+"o": {
+"credit": "Richard Rhee · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 460.682,
+"b": 464.482,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/lionkenya_06.jpg",
+"o": {
+"credit": "McKay Savage from London, UK · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 464.482,
+"b": 468.582,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_rail02.png"
+}
+},
+{
+"a": 468.582,
+"b": 473.062,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_bridge02.png"
+}
+},
+{
+"a": 473.062,
+"b": 477.322,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2prey02.png"
+}
+},
+{
+"a": 477.322,
+"b": 480.662,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2trap01.png"
+}
+},
+{
+"a": 480.662,
+"b": 484.142,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2trap02.png"
+}
+},
+{
+"a": 484.142,
+"b": 487.182,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_trap01.png"
+}
+},
+{
+"a": 487.182,
+"b": 490.442,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2camp04.png"
+}
+},
+{
+"a": 490.442,
+"b": 494.722,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2camp05.png"
+}
+},
+{
+"a": 494.722,
+"b": 499.002,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2camp06.png"
+}
+},
+{
+"a": 499.002,
+"b": 500.922,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2camp07.png"
+}
+},
+{
+"a": 500.922,
+"b": 526.422,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TrapBolt",
+"at": {
+"bars": 0,
+"door": 113,
+"fire": 373,
+"bolt": 557,
+"out": 684
+}
+},
+"big": true
+},
+{
+"a": 526.422,
+"b": 529.562,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_lion03.png"
+}
+},
+{
+"a": 529.562,
+"b": 533.882,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_lion04.png"
+}
+},
+{
+"a": 533.882,
+"b": 536.962,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2lion01.png"
+}
+},
+{
+"a": 536.962,
+"b": 539.062,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2lion02.png"
+}
+},
+{
+"a": 539.062,
+"b": 542.382,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Fear makes",
+"people *miss.*"
+],
+"a": 4,
+"y": 360,
+"size": 140
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 542.382,
+"b": 546.322,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2camp08.png"
+}
+},
+{
+"a": 546.322,
+"b": 554.142,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TrainRush",
+"at": {
+"board": 179
+}
+},
+"big": true
+},
+{
+"a": 554.142,
+"b": 572.442,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "HighGround",
+"at": {
+"tank": 158,
+"roof": 202,
+"tree": 228,
+"pit": 260,
+"beam": 404
+}
+},
+"big": true
+},
+{
+"a": 572.442,
+"b": 575.145,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "STOPPED",
+"color": "#f14536",
+"size": 240,
+"a": 0
+}
+}
+}
+},
+{
+"a": 575.145,
+"b": 578.945,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavoriv_03.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 578.945,
+"b": 583.385,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/buffalo_03.jpg",
+"o": {
+"credit": "Donald Macauley · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 583.385,
+"b": 586.425,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2br01.png"
+}
+},
+{
+"a": 586.425,
+"b": 590.645,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nd/cand/tsavobr_04.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 590.645,
+"b": 595.065,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2tree03.png"
+}
+},
+{
+"a": 595.065,
+"b": 599.345,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2tank01.png"
+}
+},
+{
+"a": 599.345,
+"b": 602.545,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2tank02.png"
+}
+},
+{
+"a": 602.545,
+"b": 606.285,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_train01.png"
+}
+},
+{
+"a": 606.285,
+"b": 610.105,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2trk01.png"
+}
+},
+{
+"a": 610.105,
+"b": 632.105,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "OwlPlatform",
+"at": {
+"toward": 274,
+"hit": 403
+}
+},
+"big": true
+},
+{
+"a": 632.105,
+"b": 634.725,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2lion03.png"
+}
+},
+{
+"a": 634.725,
+"b": 637.645,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2lion04.png"
+}
+},
+{
+"a": 637.645,
+"b": 640.805,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2lion05.png"
+}
+},
+{
+"a": 640.805,
+"b": 643.605,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/maneater_07.jpg",
+"o": {
+"credit": "Field Museum · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 643.605,
+"b": 645.345,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2prey03.png"
+}
+},
+{
+"a": 645.345,
+"b": 658.365,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NineFeetEight",
+"at": {
+"carry": 94
+}
+},
+"big": true
+},
+{
+"a": 658.365,
+"b": 663.925,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"But there were",
+"*two* lions."
+],
+"a": 4,
+"y": 360,
+"size": 140
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 663.925,
+"b": 667.785,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/lionkenya_07.jpg",
+"o": {
+"credit": "McKay Savage from London, UK · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 667.785,
+"b": 671.625,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/lionkenya_08.jpg",
+"o": {
+"credit": "McKay Savage from London, UK · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 671.625,
+"b": 674.305,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavolion_01.jpg",
+"o": {
+"credit": "Skjold Søndergaard · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 674.305,
+"b": 678.525,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2trk02.png"
+}
+},
+{
+"a": 678.525,
+"b": 681.745,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2trk03.png"
+}
+},
+{
+"a": 681.745,
+"b": 684.445,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavowest_02.jpg",
+"o": {
+"credit": "Ninara · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 684.445,
+"b": 687.505,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavoriv_04.jpg",
+"o": {
+"credit": "HOWI - Horsch, Willy · Wikimedia Commons · CC BY 2.5"
+}
+}
+},
+{
+"a": 687.505,
+"b": 691.885,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/lionstalk_01.jpg",
+"o": {
+"credit": "Wilhelm Kuhnert · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 691.885,
+"b": 695.025,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavolion_02.jpg",
+"o": {
+"credit": "Charles Hamilton Smith · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 695.025,
+"b": 697.885,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nd/cand/tsavolion_04.jpg",
+"ar": 1.2276,
+"o": {
+"credit": "Alan Manson · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 697.885,
+"b": 699.645,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavolion_05.jpg",
+"o": {
+"credit": "David Knox · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 699.645,
+"b": 708.125,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "DecemberMarks",
+"at": {
+"d27": 0,
+"d29": 20
+}
+},
+"big": true
+},
+{
+"a": 708.125,
+"b": 712.565,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2br02.png"
+}
+},
+{
+"a": 712.565,
+"b": 716.245,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nd/cand/tsavobr_05.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 716.245,
+"b": 720.385,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_book01.png"
+}
+},
+{
+"a": 720.385,
+"b": 724.785,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/buffalo_04.jpg",
+"o": {
+"credit": "Nina R from Africa · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 724.785,
+"b": 728.305,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nd/cand/fieldmus_04.jpg",
+"ar": 0.7095,
+"o": {
+"credit": "Jason M Ramos · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 728.305,
+"b": 740.725,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TwoCounts",
+"at": {
+"scores": 83,
+"big": 234
+}
+},
+"big": true
+},
+{
+"a": 740.725,
+"b": 743.305,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "135",
+"color": "#e6edf4",
+"size": 240,
+"a": 0
+}
+}
+}
+},
+{
+"a": 743.305,
+"b": 745.905,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2mus01.png"
+}
+},
+{
+"a": 745.905,
+"b": 748.605,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2mus02.png"
+}
+},
+{
+"a": 748.605,
+"b": 752.885,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2mus03.png"
+}
+},
+{
+"a": 752.885,
+"b": 757.845,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_museum01.png"
+}
+},
+{
+"a": 757.845,
+"b": 764.605,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"The real lions",
+"never had *names.*"
+],
+"a": 4,
+"y": 360,
+"size": 120
+}
+}
+}
+},
+{
+"a": 764.605,
+"b": 769.025,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2rail01.png"
+}
+},
+{
+"a": 769.025,
+"b": 773.245,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2prey04.png"
+}
+},
+{
+"a": 773.245,
+"b": 777.845,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavowest_03.jpg",
+"o": {
+"credit": "Richard Mortel · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 777.845,
+"b": 779.025,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavoriv_05.jpg",
+"o": {
+"credit": "Guus Gorter · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 779.025,
+"b": 783.865,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/buffalo_05.jpg",
+"o": {
+"credit": "Nina R from Africa · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 783.865,
+"b": 785.445,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/fieldmus_05.jpg",
+"o": {
+"credit": "Superx308 Jeffrey Jung email: superx308 at gmail · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 785.445,
+"b": 802.545,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SkinsVoyage",
+"at": {
+"museum": 288,
+"sci": 415
+}
+},
+"big": true
+},
+{
+"a": 802.545,
+"b": 807.445,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2lab01.png"
+}
+},
+{
+"a": 807.445,
+"b": 811.625,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2lab02.png"
+}
+},
+{
+"a": 811.625,
+"b": 833.245,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "IsotopePlot",
+"at": {
+"groups": 217,
+"lions": 457
+}
+},
+"big": true
+},
+{
+"a": 833.245,
+"b": 847.625,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TenAndTwentyFour",
+"at": {
+"two": 118,
+"sum": 220,
+"vs": 343
+}
+},
+"big": true
+},
+{
+"a": 847.625,
+"b": 851.805,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2rail02.png"
+}
+},
+{
+"a": 851.805,
+"b": 854.465,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2br03.png"
+}
+},
+{
+"a": 854.465,
+"b": 857.365,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2boma03.png"
+}
+},
+{
+"a": 857.365,
+"b": 861.867,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavowest_04.jpg",
+"o": {
+"credit": "Ninara · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 861.867,
+"b": 866.323,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavoriv_06.jpg",
+"o": {
+"credit": "Николай Максимович · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 866.323,
+"b": 870.687,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavobr_06.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 870.687,
+"b": 872.507,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/buffalo_06.jpg",
+"o": {
+"credit": "Nina R from Africa · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 872.507,
+"b": 876.367,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Still a *horror.*",
+"Just not the *legend.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 876.367,
+"b": 880.567,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2fire03.png"
+}
+},
+{
+"a": 880.567,
+"b": 888.927,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*135* · what the men believed",
+"*~35* · what the bodies tell us"
+],
+"a": 4,
+"y": 360,
+"size": 90
+}
+}
+}
+},
+{
+"a": 888.927,
+"b": 897.007,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Why did two healthy lions",
+"start hunting *people?*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 897.007,
+"b": 918.567,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CrackedCanine",
+"at": {
+"grip": 365,
+"man": 487
+}
+},
+"big": true
+},
+{
+"a": 918.567,
+"b": 922.267,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavolion_06.jpg",
+"o": {
+"credit": "Peggy Schaeffer · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 922.267,
+"b": 925.027,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2rail03.png"
+}
+},
+{
+"a": 925.027,
+"b": 929.427,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavowest_05.jpg",
+"o": {
+"credit": "Richard Mortel · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 929.427,
+"b": 933.787,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nd/cand/tsavolion_07.jpg",
+"ar": 1.0,
+"o": {
+"credit": "Luke Lythgoe · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 933.787,
+"b": 936.747,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavolion_08.jpg",
+"o": {
+"credit": "Gregory Smith · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 936.747,
+"b": 940.307,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavolion_09.jpg",
+"o": {
+"credit": "Gregory Smith · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 940.307,
+"b": 943.367,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nd/cand/tsavolion_10.jpg",
+"ar": 0.7989,
+"o": {
+"credit": "A. J. T. Johnsingh, WWF-India and NCFMuhammad Ma · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 943.367,
+"b": 964.607,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "RinderpestDrain",
+"at": {
+"drought": 434
+}
+},
+"big": true
+},
+{
+"a": 964.607,
+"b": 966.927,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2carav01.png"
+}
+},
+{
+"a": 966.927,
+"b": 990.767,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CaravanTrail",
+"at": {
+"learned": 431
+}
+},
+"big": true
+},
+{
+"a": 990.767,
+"b": 993.647,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2carav02.png"
+}
+},
+{
+"a": 993.647,
+"b": 997.967,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_carav01.png"
+}
+},
+{
+"a": 997.967,
+"b": 1001.367,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavoriv_07.jpg",
+"o": {
+"credit": "Guus Gorter · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1001.367,
+"b": 1006.247,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavobr_07.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 1006.247,
+"b": 1025.447,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "FourStrands",
+"at": {
+"s1": 70,
+"s2": 130,
+"s3": 205,
+"s4": 280
+}
+},
+"big": true
+},
+{
+"a": 1025.447,
+"b": 1028.307,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavowest_06.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1028.307,
+"b": 1031.407,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavowest_07.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 1031.407,
+"b": 1035.667,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavowest_08.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 1035.667,
+"b": 1039.707,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/maneless_01.jpg",
+"o": {
+"credit": "Mgiganteus · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1039.707,
+"b": 1042.407,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_herd01.png"
+}
+},
+{
+"a": 1042.407,
+"b": 1045.227,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2herd01.png"
+}
+},
+{
+"a": 1045.227,
+"b": 1048.267,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2herd02.png"
+}
+},
+{
+"a": 1048.267,
+"b": 1062.947,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Not that lions are *evil.*"
+],
+"a": 4,
+"y": 360,
+"size": 130
+}
+}
+}
+},
+{
+"a": 1062.947,
+"b": 1077.707,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "GlassCase",
+"at": {
+"small": 188
+}
+},
+"big": true
+},
+{
+"a": 1077.707,
+"b": 1081.167,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/zebra_01.jpg",
+"o": {
+"credit": "Yakov Fedorov · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1081.167,
+"b": 1088.127,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Two ordinary lions",
+"who learned that *men sleep at night.*"
+],
+"a": 4,
+"y": 360,
+"size": 96
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 1088.127,
+"b": 1092.607,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavobr_08.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 1092.607,
+"b": 1096.327,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/zebra_02.jpg",
+"o": {
+"credit": "Dr Peter James Chisholm · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1096.327,
+"b": 1100.687,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/ap6nd/cand/zebra_03.jpg",
+"ar": 1.0079,
+"o": {
+"credit": "D Heaysman · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 1100.687,
+"b": 1106.307,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/zebra_04.jpg",
+"o": {
+"credit": "McKay Savage from London, UK · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 1106.307,
+"b": 1114.307,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"*135*",
+"or *~35?*"
+],
+"a": 4,
+"y": 360,
+"size": 200
+}
+}
+}
+},
+{
+"a": 1114.307,
+"b": 1119.147,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/ag/ap6nd_b2rail04.png"
+}
+},
+{
+"a": 1119.147,
+"b": 1122.807,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/ap6nd/cand/tsavoriv_10.jpg",
+"o": {
+"credit": "CT Cooper · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 1122.807,
+"b": 1139.907,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "If you had been one of the workers at Tsavo in 1898, after the fences, the fires and the trap failed, would you have stayed, or been on that train?"
+}
+},
+{
+"a": 1139.907,
+"b": 1146.85,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Next file:",
+"another *man-eater.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+}
+],
+"stops": []
+}
