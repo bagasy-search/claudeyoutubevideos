@@ -33,7 +33,7 @@ const base = (t: number): React.ReactNode => {
   // clip de Veo (8 s, ya con movimiento): va entero desde su cuadro 0; si todavía no llegó, el mundo
   if (id.startsWith("v")) return OK.has(id) ? <AbsoluteFill style={{ transform: `scale(${1.02 + 0.04 * e(t, a, a + 8)})` }}><Vid id={"veo/" + id} at={a} /></AbsoluteFill> : VF.has(id) ? <Shot k={"vf_" + id} t={t} a={a} /> : <World t={t} />;
   // si llegó el clip LTX de esa foto va el clip; si no, la foto
-  return <Clip k={"c_" + id} t={t} a={a}><Shot k={id} t={t} a={a} /></Clip>;
+  return <Clip k={"c_" + id} t={t} a={a}><Shot k={id === "n_bife_bandeja_barato" ? "n_bife_finito_regla" : id} t={t} a={a} /></Clip>;  // la bandeja trae etiqueta en yenes
 };
 
 // el avatar entra y sale con CORTE SECO (vara fe02): ni portal ni fundido
