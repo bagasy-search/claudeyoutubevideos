@@ -20,7 +20,8 @@ const mundo = (c: Cam): React.CSSProperties => ({ ...FILL, transformOrigin: "0 0
 
 const RENDIJA: [number, number][] = [[0, 606], [280, 606], [560, 606], [840, 606], [1124, 606], [1122, 632], [1112, 664], [1096, 682], [1064, 698], [900, 695], [700, 690], [480, 688], [240, 689], [0, 690]];
 const CARBON: [number, number][] = [[1006, 452], [1038, 430], [1070, 407], [1125, 397], [1185, 395], [1245, 404], [1305, 421], [1358, 433], [1398, 446], [1412, 473], [1370, 490], [1318, 500], [1260, 510], [1185, 511], [1120, 505], [1068, 482], [1024, 476]];
-const HORNO: [number, number][] = [[556, 526], [640, 516], [760, 503], [860, 494], [866, 600], [868, 728], [760, 762], [660, 794], [565, 822], [558, 700], [554, 600]];
+const FOCO_HORNO = "radial-gradient(ellipse 330px 300px at 712px 655px,#000 45%,transparent 100%)";
+const FOCO_HORNALLA = "radial-gradient(ellipse 520px 290px at 640px 290px,#000 30%,transparent 100%)";
 
 const pts = (p: [number, number][]) => p.map(([x, y]) => `${x}px ${y}px`).join(",");
 const poli = (p: [number, number][]) => `polygon(${pts(p)})`;
@@ -53,14 +54,22 @@ const camC = (f: number, b: Cam) => {
   }
   const k = tramo(f, 150, 205, IO);
   const S = f < 150 ? lerp(1.22, 1.3, tramo(f, 118, 160)) : lerp(lerp(1.22, 1.3, tramo(f, 118, 160)), 1.46, k);
-  return cam(lerp(790, 700, k), lerp(500, 470, k), S);
+  return cam(lerp(790, 690, k), lerp(500, 420, k), S);
 };
 
-const Brasa: React.FC<{ g: number; f: number; c: Cam }> = ({ g, f, c }) => {
+// Los carbones se queman desde el centro hacia afuera y por el agujero aparece la cocina.
+const Quemado: React.FC<{ f: number; c: Cam }> = ({ f, c }) => {
+  const k = tramo(f, 96, 112, Easing.in(Easing.quad));
   const pulso = 0.9 + 0.07 * Math.sin(f * 0.71) + 0.03 * Math.sin(f * 1.93);
-  return <div style={mundo(c)}>
-    <Img src={foto("p044")} style={{ ...FILL, opacity: g * pulso, filter: "sepia(1) saturate(7) hue-rotate(-18deg) brightness(1.25) contrast(1.15)", WebkitMaskImage: "radial-gradient(ellipse 250px 100px at 1208px 455px,#000 62%,transparent 100%)", maskImage: "radial-gradient(ellipse 250px 100px at 1208px 455px,#000 62%,transparent 100%)" }} />
-    <div style={{ ...FILL, opacity: g * pulso * 0.75, mixBlendMode: "screen", background: "radial-gradient(ellipse 430px 250px at 1208px 390px,rgba(255,120,30,.55) 0%,rgba(255,90,20,.18) 55%,rgba(0,0,0,0) 100%)" }} />
+  const elipse = `ellipse ${Math.max(1, 340 * k)}px ${Math.max(1, 130 * k)}px at 1208px 455px`;
+  const hueco = `radial-gradient(${elipse},transparent 72%,#000 100%)`;
+  const brasa = "radial-gradient(ellipse 250px 100px at 1208px 455px,#000 62%,transparent 100%)";
+  return <div style={{ ...mundo(c), clipPath: poli(CARBON) }}>
+    <div style={{ ...FILL, WebkitMaskImage: hueco, maskImage: hueco }}>
+      <Img src={foto("p044")} style={FILL} />
+      <Img src={foto("p044")} style={{ ...FILL, opacity: pulso, filter: "sepia(1) saturate(7) hue-rotate(-18deg) brightness(1.25) contrast(1.15)", WebkitMaskImage: brasa, maskImage: brasa }} />
+    </div>
+    <div style={{ ...FILL, opacity: 1 - tramo(f, 106, 113), mixBlendMode: "screen", background: `radial-gradient(${elipse},rgba(255,170,70,0) 60%,rgba(255,180,80,.95) 76%,rgba(255,120,30,0) 96%)` }} />
   </div>;
 };
 
@@ -68,7 +77,6 @@ export const Esc1: React.FC = () => {
   const f = useCurrentFrame();
   const a = camA(f), b = camB(f), c = camC(f, b);
   const brasa = tramo(f, 51, 66, Easing.out(Easing.cubic));
-  const puente = 1 - tramo(f, 96, 108);
   const oscura = tramo(f, 158, 170);
   const horno = tramo(f, 160, 172, Easing.out(Easing.cubic));
   const hornalla = tramo(f, 187, 200, Easing.out(Easing.cubic));
@@ -77,15 +85,13 @@ export const Esc1: React.FC = () => {
   return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
     {f >= 96 && <div style={{ ...FILL, overflow: "hidden" }}>
       <div style={mundo(c)}>
-        <Img src={foto("p050")} style={{ ...FILL, filter: `brightness(${lerp(1, 0.7, oscura)}) saturate(${lerp(1, 0.75, oscura)})` }} />
-        {horno > 0 && <div style={{ ...FILL, opacity: horno, filter: "drop-shadow(0 0 60px rgba(255,170,70,.55))" }}><Img src={foto("p050")} style={{ ...FILL, clipPath: poli(HORNO), filter: "brightness(1.45)" }} /></div>}
-        {hornalla > 0 && <Img src={foto("p050")} style={{ ...FILL, opacity: hornalla, filter: "brightness(1.7) sepia(.25)", WebkitMaskImage: "radial-gradient(ellipse 470px 270px at 640px 290px,#000 35%,transparent 100%)", maskImage: "radial-gradient(ellipse 470px 270px at 640px 290px,#000 35%,transparent 100%)" }} />}
+        <Img src={foto("p050")} style={{ ...FILL, filter: `brightness(${lerp(1, 0.66, oscura)}) saturate(${lerp(1, 0.75, oscura)})` }} />
+        {horno > 0 && <Img src={foto("p050")} style={{ ...FILL, opacity: horno * lerp(1, 0.55, hornalla), filter: "brightness(1.55) saturate(1.1)", WebkitMaskImage: FOCO_HORNO, maskImage: FOCO_HORNO }} />}
+        {horno > 0 && <div style={{ ...FILL, opacity: horno * lerp(0.5, 0.25, hornalla), mixBlendMode: "screen", background: "radial-gradient(ellipse 430px 400px at 712px 650px,rgba(255,165,70,.45) 0%,rgba(255,130,40,.14) 60%,rgba(0,0,0,0) 100%)" }} />}
+        {hornalla > 0 && <Img src={foto("p050")} style={{ ...FILL, opacity: hornalla, filter: "brightness(2.2) sepia(.2)", WebkitMaskImage: FOCO_HORNALLA, maskImage: FOCO_HORNALLA }} />}
       </div>
     </div>}
-    {f >= 96 && f < 108 && <div style={{ ...FILL, overflow: "hidden", opacity: puente }}>
-      <div style={{ ...mundo(b), clipPath: poli(CARBON) }}><Img src={foto("p044")} style={FILL} /></div>
-      <Brasa g={1} f={f} c={b} />
-    </div>}
+    {f >= 96 && f < 114 && <div style={{ ...FILL, overflow: "hidden" }}><Quemado f={f} c={b} /></div>}
     {f >= 28 && f <= 118 && <div style={{ ...FILL, overflow: "hidden" }}>
       <div style={{ ...mundo(b), clipPath: f >= 96 ? agujero(CARBON) : undefined }}>
         <Img src={foto("p044")} style={FILL} />
