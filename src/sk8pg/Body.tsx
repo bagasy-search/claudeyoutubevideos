@@ -37,7 +37,7 @@ const base = (t: number): React.ReactNode => {
 
 // el avatar entra y sale con CORTE SECO (vara fe02): ni portal ni fundido
 // CUADRO 0 = la miniatura rehecha en código (la casa abierta en corte, Sachiko en el almohadón que brilla), sin texto ni flecha
-const Stage: React.FC<{ t: number }> = ({ t }) => (t < 1 / 30 ? <Img src={staticFile("sk8pg/cover0.jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} /> : WIN.some((x) => t >= x.ms && t < x.me) ? <Avatar t={t} /> : <>{base(t)}</>);
+const Stage: React.FC<{ t: number }> = ({ t }) => (t < 1 / 30 ? <Img src={staticFile("sk8pg/cuadro0.jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} /> : WIN.some((x) => t >= x.ms && t < x.me) ? <Avatar t={t} /> : <>{base(t)}</>);
 
 // sobre el avatar, el rótulo de paso y la descripción van a la izquierda y más chicos: nunca tapan la cara
 const avOn = (a: number, b: number) => WIN.some((w) => a < w.me && b > w.ms);
