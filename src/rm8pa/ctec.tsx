@@ -45,13 +45,13 @@ const Zapatera: C = ({ t, h }) => <Stage t={t} h={h} mode="diag" tone="#1f2329">
 // 4 · la ficha se da vuelta y la columna derecha sigue atrás
 const Reverso: C = ({ t, h }) => <Stage t={t} h={h} mode="split" tone="#20262b">{(tt) => {
   const fl = eio(tt, 1.6, 2.5) * 180, fr = fl < 90, line = cl((tt - 0.3) / 1.2), line2 = cl((tt - 2.5) / 1.3);
-  return <div style={{ position: "absolute", inset: 0, transform: `perspective(1900px) rotateY(${fl}deg)`, transformStyle: "preserve-3d", transformOrigin: "960px 540px" }}>
+  return <div style={{ position: "absolute", inset: 0, transform: `perspective(1900px) rotateY(${fl}deg)`, transformOrigin: "960px 540px" }}>
     {fr ? <Card x={960} y={540} w={1000} h={640}>
       <div style={ab(498, 0, { width: 4, height: 640, background: "#333a56" })} />
       <Hand x={40} y={60} s={58} rot={0}>oil</Hand><Hand x={40} y={140} s={58} rot={0}>tires</Hand><Hand x={40} y={222} s={58} rot={0}>battery</Hand>
       {["transmission", "head gasket", "timing chain", "tow truck", "transmission", "water pump", "tow truck"].map((s, i) => <Hand key={i} x={530} y={60 + i * 80} s={58} rot={0} c="#a42c25" k={cl(line * 7 - i)}>{s}</Hand>)}
       <div style={{ ...txt(800, 590, 40, "#a42c25", cl(line * 7 - 6), HAND) }}>over →</div>
-    </Card> : <div style={{ position: "absolute", inset: 0, transform: "rotateY(180deg)" }}><Card x={960} y={540} w={1000} h={640}>{["clutch pack", "intake", "wiring", "tow truck", "head gasket", "transmission", "tow truck"].map((s, i) => <Hand key={i} x={80} y={60 + i * 80} s={58} rot={0} c="#a42c25" k={cl(line2 * 7 - i)}>{s}</Hand>)}<div style={{ ...txt(560, 280, 74, RED, cl(line2 * 3 - 2)) }}>SAME BADGE</div></Card></div>}
+    </Card> : <div style={{ position: "absolute", inset: 0, transform: "rotateY(180deg)" }}><Card x={960} y={540} w={1000} h={640}>{["clutch pack", "intake", "wiring", "tow truck", "head gasket", "transmission", "tow truck"].map((s, i) => <Hand key={i} x={80} y={60 + i * 80} s={58} rot={0} c="#a42c25" k={cl(line2 * 7 - i)}>{s}</Hand>)}<div style={{ ...txt(540, 280, 56, RED, cl(line2 * 3 - 2)) }}>SAME BADGE</div></Card></div>}
   </div>;
 }}</Stage>;
 
