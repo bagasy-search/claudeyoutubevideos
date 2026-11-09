@@ -163,27 +163,28 @@ export const HThreeMugs: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mode=
 }}</Scene3D>;
 
 // ---- TRES AMANECERES: el sol cruza tres veces; la loma no se mueve y cada día se clava una estaca ----
-export const HThreeSuns: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mode="wipe" floor="none" wall="none" key1={[-1.2, 1.3, 1]} cam={{ at: [0, 0.32, 0], az: [0.08, -0.08], el: [0.05, 0.04], r: [2.0, 1.72], fov: 30 }}
+export const HThreeSuns: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mode="wipe" floor="none" wall="none" key1={[-1.2, 1.3, 1]} cam={{ at: [0, 0.22, 0], az: [0.08, -0.08], el: [0.17, 0.13], r: [2.0, 1.72], fov: 30 }}
   over={(tt) => <Tag tt={tt} at={3.8} x={960} y={940} txt="FLAT = EMPTY" col={AMB} />}>{(tt) => {
   const ph = cl(tt / 4.8) * 3, d = Math.min(2, Math.floor(ph)), u = ph - d;
   return <>
     <Lawn />
     <Ridge id="tsr" pts={[[-1.4, 0, 0.14], [0, 0, 0.14], [1.4, 0, 0.14]]} r={0.05} up={0.34} col="#648544" />
-    <mesh position={[lerp(-1.25, 1.25, u), 0.08 + 0.92 * Math.sin(u * PI), -0.7]}><sphereGeometry args={[0.1, 32, 20]} />{M.glow({ col: "#ffd56b" })}</mesh>
+    <mesh position={[lerp(-1.25, 1.25, u), 0.1 + 0.48 * Math.sin(u * PI), -0.7]}><sphereGeometry args={[0.1, 32, 20]} />{M.glow({ col: "#ffd56b" })}</mesh>
     <pointLight position={[lerp(-1.25, 1.25, u), 1, 0.2]} intensity={3 * Math.sin(u * PI)} distance={5} color="#ffd9a0" />
-    {[0, 1, 2].map((i) => { const s = phys(tt, (i + 1) * 1.6 - 0.1, 7, 0.5); return <group key={i} position={[-0.3 + i * 0.3, 0.3 * (1 - s), 0.34]} scale={[1, Math.max(0.001, s), 1]}><mesh position={[0, 0.09, 0]} castShadow><cylinderGeometry args={[0.012, 0.008, 0.2, 10]} />{M.wood({ base: [150, 112, 70] })}</mesh></group>; })}
+    {[0, 1, 2].map((i) => { const s = phys(tt, (i + 1) * 1.6 - 0.1, 7, 0.5); return <group key={i} position={[-0.42 + i * 0.42, 0.3 * (1 - s), 0.42]} scale={[1.7, 1.7 * Math.max(0.001, s), 1.7]}><mesh position={[0, 0.09, 0]} castShadow><cylinderGeometry args={[0.012, 0.008, 0.2, 10]} />{M.wood({ base: [150, 112, 70] })}</mesh></group>; })}
   </>;
 }}</Scene3D>;
 
 // ---- TIERRA GRATIS: el rastrillo baja el montículo y la tierra negra se abre en abanico ----
 export const HRakeMound: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mode="split" floor="none" wall="none" key1={[-1, 1.8, 1.2]} cam={{ at: [0, 0.08, 0], az: [0.4, 0.18], el: [0.3, 0.22], r: [1.2, 0.98], fov: 26 }}
   over={(tt) => <Tag tt={tt} at={3.0} x={960} y={940} txt="FREE TOPSOIL" col={GRN} />}>{(tt) => {
-  const k = eio(tt, 0.5, 4.2), sw = Math.sin(tt * 3.4), rx = 0.2 + 0.18 * sw;
+  const k = eio(tt, 0.5, 4.2), sw = Math.sin(tt * 3.4), rz = 0.1 + 0.13 * sw;
   return <>
     <Lawn />
     <mesh position={[0, 0.004, 0]} rotation={[-PI / 2, 0, 0]} scale={[0.2 + 0.36 * k, 0.2 + 0.22 * k, 1]}><circleGeometry args={[1, 48]} /><meshStandardMaterial color="#2c1d11" roughness={1} /></mesh>
     <group scale={[1 + 0.5 * k, Math.max(0.06, 1 - 0.92 * k), 1 + 0.5 * k]}><Mound p={[0, 0, 0]} s={1.2} /></group>
-    <group position={[rx, 0.022, 0.03]} rotation={[0, PI / 2, 0]}>
+    {Array.from({ length: 46 }, (_, i) => { const an = i * 2.399, ra = Math.sqrt((i + 1) / 46), c = 0.012 + 0.016 * ((i * 37) % 7) / 6; return <mesh key={i} position={[Math.cos(an) * ra * (0.14 + 0.36 * k), c * 0.6, Math.sin(an) * ra * (0.1 + 0.2 * k)]} rotation={[i, i * 2, 0]} castShadow><dodecahedronGeometry args={[c, 0]} /><meshStandardMaterial color={i % 3 ? "#3a2716" : "#4c3520"} roughness={1} /></mesh>; })}
+    <group position={[0.04, 0.022, rz]} rotation={[0, PI, 0]}>
       <RBox s={[0.34, 0.03, 0.03]} p={[0, 0.02, 0]} r={0.008}>{M.steel({ col: "#62625e" })}</RBox>
       {Array.from({ length: 12 }, (_, i) => <mesh key={i} position={[-0.155 + i * 0.0282, -0.012, 0]} rotation={[0.1, 0, 0]}><coneGeometry args={[0.006, 0.05, 6]} />{M.steel({ col: "#62625e" })}</mesh>)}
       <mesh position={[0, 0.48, 0.42]} rotation={[-0.84, 0, 0]} castShadow><cylinderGeometry args={[0.014, 0.014, 1.25, 12]} />{M.wood({ base: [176, 134, 84] })}</mesh>
