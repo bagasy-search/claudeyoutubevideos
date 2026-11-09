@@ -318,7 +318,7 @@ export const puffT = () => { if (!puff_) { const c = document.createElement("can
 
 // ---- EL VAPOR QUE SE VA: sube de la olla y sale por la ventana abierta ----
 export const HSteamWindow: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mode="wipe" floor="none" wall="none" bg="#7f735f" key1={[-1, 1.9, 1.5]} cam={{ at: [0.1, 0.5, 0], az: [-0.2, 0.1], el: [0.04, 0.05], r: [1.7, 1.42], fov: 28 }}
-  over={(tt) => <Tag tt={tt} at={2.8} x={960} y={940} txt="KITCHEN WINDOW OPEN" col={GRN} />}>{(tt) => {
+  over={(tt) => <>{Array.from({ length: 30 }, (_, i) => { const u = (tt * 0.3 + i / 30) % 1, x = lerp(300, 1290, eio(u, 0.22, 1)) + 30 * Math.sin(u * 11 + i), y = lerp(650, 330, Math.min(1, u * 1.7)) + 22 * Math.sin(u * 9 + i * 2), d = 130 + 300 * u; return <div key={i} style={{ position: "absolute", left: x - d / 2, top: y - d / 2, width: d, height: d, borderRadius: "50%", opacity: 0.34 * Math.sin(u * PI) * cl((tt - 0.4) / 0.9), background: "radial-gradient(circle, rgba(250,246,236,0.95) 0%, rgba(250,246,236,0.4) 42%, rgba(250,246,236,0) 70%)" }} />; })}<Tag tt={tt} at={2.8} x={960} y={940} txt="KITCHEN WINDOW OPEN" col={GRN} /></>}>{(tt) => {
   const o = eio(tt, 0.2, 1.3), W = 0.62, wx = 0.42, wy = 0.66;
   return <>
     <mesh position={[0, 0.8, -0.36]}><planeGeometry args={[4, 2.4]} /><meshStandardMaterial color="#c8bb9c" roughness={1} /></mesh>
@@ -328,7 +328,6 @@ export const HSteamWindow: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mod
     <RBox s={[W, 0.3, 0.018]} p={[wx, wy + 0.14 + 0.28 * o - 0.1, -0.3]} r={0.004}>{M.glass({})}</RBox>
     <RBox s={[3.2, 0.05, 0.6]} p={[0, 0.22, 0]} r={0.01}>{M.wood({ base: [140, 104, 66] })}</RBox>
     <mesh position={[-0.42, 0.33, 0]} castShadow><cylinderGeometry args={[0.13, 0.12, 0.17, 40, 1, true]} />{M.steel({ col: "#6f7174", side: 2 })}</mesh>
-    {Array.from({ length: 34 }, (_, i) => { const u = (tt * 0.35 + i / 34) % 1, x = lerp(-0.42, wx, eio(u, 0.3, 1)), y = lerp(0.42, wy, Math.min(1, u * 1.6)) + 0.04 * Math.sin(u * 14 + i), z = lerp(0, -0.32, eio(u, 0.65, 1)), s = 0.05 + 0.09 * u; return <sprite key={i} position={[x, y, z]} scale={[s * 3.2, s * 3.2, 1]} visible={o > 0.2}><spriteMaterial map={puffT()} color="#f4f0e6" transparent opacity={0.3 * Math.sin(u * PI)} depthWrite={false} /></sprite>; })}
   </>;
 }}</Scene3D>;
 
@@ -351,11 +350,12 @@ export const HNotFood: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mode="i
 // ---- NO ES UN CERCO: la nube rociada se apaga sola y él pasa caminando ----
 export const HNoForce: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mode="split" floor="none" wall="none" key1={[-1, 2, 1.2]} cam={{ at: [0, 0.06, 0], az: [0.3, 0.1], el: [0.52, 0.42], r: [2.1, 1.75], fov: 28 }}
   over={(tt) => <Tag tt={tt} at={3.3} x={960} y={940} txt="IT'S NOT A FENCE" col={RED} />}>{(tt) => {
-  const f = 1 - eio(tt, 1.6, 3.4), w = eio(tt, 3.0, 6.0);
+  const f = 1 - eio(tt, 1.6, 3.0), w = eio(tt, 1.9, 5.7);
   return <>
     <Lawn />
     {Array.from({ length: 48 }, (_, i) => { const a = (i / 48) * 6.28; return <mesh key={i} position={[Math.cos(a) * 0.72, 0.09 + 0.015 * Math.sin(tt * 3 + i), Math.sin(a) * 0.44]} visible={f > 0.03}><sphereGeometry args={[0.09 * (0.8 + rn(i, 2) * 0.5), 14, 10]} /><meshBasicMaterial color="#d9733d" transparent opacity={0.42 * f} depthWrite={false} /></mesh>; })}
-    <Skunk p={[lerp(-1.25, 1.2, w), 0, 0.02]} s={0.82} walk={tt * 2.2} />
+    {Array.from({ length: 150 }, (_, i) => { const a = (i / 150) * 6.28 + rn(i, 5) * 0.06, q = 1 + (rn(i, 3) - 0.5) * 0.07; return <mesh key={i} position={[Math.cos(a) * 0.72 * q, 0.012, Math.sin(a) * 0.44 * q]} rotation={[-PI / 2, 0, rn(i, 7) * 6]}><circleGeometry args={[0.012 + rn(i, 4) * 0.014, 7]} /><meshStandardMaterial color={i % 3 ? "#b4431c" : "#7d2a12"} roughness={1} /></mesh>; })}
+    <Skunk p={[lerp(-1.02, 0.98, w), 0, 0.02]} s={0.82} walk={tt * 2.2} />
     <Blades w={3} d={1.8} n={280} h={0.05} />
   </>;
 }}</Scene3D>;

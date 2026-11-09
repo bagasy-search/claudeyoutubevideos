@@ -205,19 +205,20 @@ export const HDeckPull: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mode="
 // ---- LA LINTERNA: el cono barre la pared y un rincón revela la segunda salida ----
 export const HFlashGap: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mode="iris" floor="none" wall="none" bg="#0f0e12" key1={[-1, 0.5, 1]} cam={{ at: [0.42, 0.22, 0.5], az: [0.28, 0.08], el: [0.08, 0.06], r: [1.5, 1.24], fov: 26 }}
   over={(tt) => <Tag tt={tt} at={3.8} x={960} y={940} txt="THE SECOND DOOR" col={AMB} />}>{(tt) => {
-  const s = eio(tt, 0.3, 3.2), lx = lerp(-1.0, 0.72, s), lit = (x: number) => cl(1 - Math.abs(x - lx) / 0.34), hex = (v: number) => Math.round(Math.min(1, v) * 255).toString(16).padStart(2, "0");
+  const s = eio(tt, 0.3, 3.2), lx = lerp(-1.0, 0.72, s), lit = (x: number) => cl(1 - Math.abs(x - lx) / 0.56), hex = (v: number) => Math.round(Math.min(1, v) * 255).toString(16).padStart(2, "0");
   return <>
     <mesh position={[0, 0.0, 1]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[6, 3]} /><meshBasicMaterial color="#14110e" /></mesh>
-    {Array.from({ length: 26 }, (_, i) => { const x = -1.3 + i * 0.1, g = i === 20 || i === 21, b = lit(x); return <mesh key={i} position={[x, g ? 0.36 : 0.26, 0.5]}><planeGeometry args={[0.092, g ? 0.28 : 0.5]} /><meshBasicMaterial color={"#" + hex(0.18 + 0.48 * b) + hex(0.15 + 0.4 * b) + hex(0.12 + 0.26 * b)} /></mesh>; })}
+    {Array.from({ length: 26 }, (_, i) => { const x = -1.3 + i * 0.1, g = i === 20 || i === 21, b = lit(x); return <mesh key={i} position={[x, g ? 0.36 : 0.26, 0.5]}><planeGeometry args={[0.092, g ? 0.28 : 0.5]} /><meshBasicMaterial color={"#" + hex(0.3 + 0.62 * b) + hex(0.25 + 0.52 * b) + hex(0.18 + 0.34 * b)} /></mesh>; })}
     <mesh position={[0.75, 0.11, 0.499]}><planeGeometry args={[0.2, 0.22]} /><meshBasicMaterial color="#000" /></mesh>
-    <mesh position={[0.75, 0.005, 0.74]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[0.3, 0.46]} /><meshBasicMaterial color={"#" + hex(0.12 + 0.34 * lit(0.75)) + hex(0.09 + 0.26 * lit(0.75)) + hex(0.06 + 0.16 * lit(0.75))} /></mesh>
-    <sprite position={[lx, 0.27, 0.503]} scale={[1.0, 1.0, 1]}><spriteMaterial map={puffT()} color="#ffeec0" transparent opacity={0.4} depthWrite={false} depthTest={false} /></sprite>
+    <mesh position={[0.75, 0.005, 0.74]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[0.3, 0.46]} /><meshBasicMaterial color={"#" + hex(0.2 + 0.56 * lit(0.75)) + hex(0.15 + 0.44 * lit(0.75)) + hex(0.09 + 0.26 * lit(0.75))} /></mesh>
+    {[0, 1, 2, 3, 4, 5].map((i) => <mesh key={i} position={[0.75 + (i % 2 ? 0.05 : -0.05), 0.012, 0.92 - i * 0.075]} rotation={[-PI / 2, 0, 0]} visible={s > 0.6}><circleGeometry args={[0.024, 16]} /><meshBasicMaterial color="#2a1c10" /></mesh>)}
+    <sprite position={[lx, 0.27, 0.503]} scale={[1.15, 1.15, 1]}><spriteMaterial map={puffT()} color="#ffeec0" transparent opacity={0.62} depthWrite={false} depthTest={false} /></sprite>
     <group position={[lerp(-0.2, 0.2, s), 0.3, 1.25]} rotation={[0.1, lerp(-0.7, 0.42, s) + PI, 0]}>
       <mesh rotation={[PI / 2, 0, 0]} castShadow><cylinderGeometry args={[0.03, 0.022, 0.2, 20]} />{M.steel({ col: "#50504e" })}</mesh>
       <mesh rotation={[PI / 2, 0, 0]} position={[0, 0, 0.12]}><cylinderGeometry args={[0.044, 0.03, 0.05, 24]} />{M.steel({ col: "#68686a" })}</mesh>
       <mesh position={[0, 0, 0.1455]}><circleGeometry args={[0.04, 24]} />{M.glow({ col: "#fff2cd" })}</mesh>
     </group>
-    {Array.from({ length: 12 }, (_, i) => { const a = lerp(lerp(-0.2, 0.2, s), lx, (i + 1) / 13), zz = lerp(1.25, 0.51, (i + 1) / 13), r = 0.02 + 0.3 * ((i + 1) / 13); return <sprite key={i} position={[a, 0.28, zz]} scale={[r * 3.2, r * 3.2, 1]}><spriteMaterial map={puffT()} color="#ffeec0" transparent opacity={0.07} depthWrite={false} depthTest={false} /></sprite>; })}
+    {Array.from({ length: 12 }, (_, i) => { const a = lerp(lerp(-0.2, 0.2, s), lx, (i + 1) / 13), zz = lerp(1.25, 0.51, (i + 1) / 13), r = 0.02 + 0.3 * ((i + 1) / 13); return <sprite key={i} position={[a, 0.28, zz]} scale={[r * 3.2, r * 3.2, 1]}><spriteMaterial map={puffT()} color="#ffeec0" transparent opacity={0.12} depthWrite={false} depthTest={false} /></sprite>; })}
   </>;
 }}</Scene3D>;
 
