@@ -2,21 +2,21 @@
 import React from "react";
 import { AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 
-const foto = (k: string) => staticFile(`img/blt01/${k}.jpg`);
-const FILL: React.CSSProperties = { position: "absolute", left: 0, top: 0, width: 1920, height: 1080, objectFit: "fill" };
-const lerp = (a: number, b: number, k: number) => a + (b - a) * k;
-const tramo = (f: number, a: number, b: number, e: (x: number) => number = (x) => x) =>
+export const foto = (k: string) => staticFile(`img/blt01/${k}.jpg`);
+export const FILL: React.CSSProperties = { position: "absolute", left: 0, top: 0, width: 1920, height: 1080, objectFit: "fill" };
+export const lerp = (a: number, b: number, k: number) => a + (b - a) * k;
+export const tramo = (f: number, a: number, b: number, e: (x: number) => number = (x) => x) =>
   interpolate(f, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e });
-const IO = Easing.inOut(Easing.sin);
-const ENTRA = Easing.in(Easing.cubic);
+export const IO = Easing.inOut(Easing.sin);
+export const ENTRA = Easing.in(Easing.cubic);
 
-type Cam = { S: number; X: number; Y: number };
-const cam = (cx: number, cy: number, S: number): Cam => ({
+export type Cam = { S: number; X: number; Y: number };
+export const cam = (cx: number, cy: number, S: number): Cam => ({
   S,
   X: Math.min(0, Math.max(1920 - 1920 * S, 960 - cx * S)),
   Y: Math.min(0, Math.max(1080 - 1080 * S, 540 - cy * S)),
 });
-const mundo = (c: Cam): React.CSSProperties => ({ ...FILL, transformOrigin: "0 0", transform: `translate(${c.X}px,${c.Y}px) scale(${c.S})` });
+export const mundo = (c: Cam): React.CSSProperties => ({ ...FILL, transformOrigin: "0 0", transform: `translate(${c.X}px,${c.Y}px) scale(${c.S})` });
 
 const RENDIJA: [number, number][] = [[0, 606], [280, 606], [560, 606], [840, 606], [1124, 606], [1122, 632], [1112, 664], [1096, 682], [1064, 698], [900, 695], [700, 690], [480, 688], [240, 689], [0, 690]];
 const CARBON: [number, number][] = [[1006, 452], [1038, 430], [1070, 407], [1125, 397], [1185, 395], [1245, 404], [1305, 421], [1358, 433], [1398, 446], [1412, 473], [1370, 490], [1318, 500], [1260, 510], [1185, 511], [1120, 505], [1068, 482], [1024, 476]];
@@ -24,9 +24,9 @@ const FOCO_HORNO = "radial-gradient(ellipse 330px 300px at 712px 655px,#000 45%,
 const FOCO_HORNALLA = "radial-gradient(ellipse 520px 290px at 640px 290px,#000 30%,transparent 100%)";
 
 const pts = (p: [number, number][]) => p.map(([x, y]) => `${x}px ${y}px`).join(",");
-const poli = (p: [number, number][]) => `polygon(${pts(p)})`;
+export const poli = (p: [number, number][]) => `polygon(${pts(p)})`;
 // Toda la foto menos la forma: el contorno se une al borde por un puente de ancho cero.
-const agujero = (p: [number, number][]) => `polygon(evenodd,0px 0px,1920px 0px,1920px 1080px,0px 1080px,0px 0px,${pts(p)},${p[0][0]}px ${p[0][1]}px,0px 0px)`;
+export const agujero = (p: [number, number][]) => `polygon(evenodd,0px 0px,1920px 0px,1920px 1080px,0px 1080px,0px 0px,${pts(p)},${p[0][0]}px ${p[0][1]}px,0px 0px)`;
 
 const camA = (f: number) => {
   if (f <= 28) return cam(960, 540, lerp(1, 1.05, tramo(f, 0, 28)));
