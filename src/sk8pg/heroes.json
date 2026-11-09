@@ -1,0 +1,309 @@
+[
+{
+"k": "receipt",
+"at": 10.94,
+"out": 16.31,
+"ph": "And your hand is already reaching",
+"items": [
+{
+"at": 16.7,
+"txt": "taste like the box"
+}
+]
+},
+{
+"k": "tin",
+"at": 36.66,
+"out": 44.66,
+"ph": "It came to me in a cookie tin",
+"items": [
+{
+"at": 38.68,
+"txt": "Thirty dishes"
+},
+{
+"at": 40.86,
+"txt": "less than a dollar a plate"
+}
+]
+},
+{
+"k": "dance",
+"at": 77.76,
+"out": 82.91,
+"ph": "Do not laugh",
+"items": [
+{
+"at": 80.72,
+"txt": "big pinch"
+},
+{
+"at": 83.36,
+"txt": "three drops of soy"
+}
+]
+},
+{
+"k": "cabbagewater",
+"at": 124.54,
+"out": 130.17,
+"ph": "Fifteen minutes later it has gone soft",
+"items": []
+},
+{
+"k": "readthrough",
+"at": 156.54,
+"out": 163.54,
+"ph": "Slice a cucumber so thin",
+"items": []
+},
+{
+"k": "spiralpeel",
+"at": 191.22,
+"out": 197.72,
+"ph": "My mother used to say the white part",
+"items": [
+{
+"at": 193.0,
+"txt": "white part"
+},
+{
+"at": 195.24,
+"txt": "skin is for the family"
+}
+]
+},
+{
+"k": "puppet",
+"at": 203.52,
+"out": 211.52,
+"ph": "It is named for Kinpira",
+"items": []
+},
+{
+"k": "roofcrow",
+"at": 254.76,
+"out": 262.76,
+"ph": "In the winter of nineteen fifty-five",
+"items": [
+{
+"at": 262.66,
+"txt": "chase off the crows"
+}
+]
+},
+{
+"k": "flower",
+"at": 287.68,
+"out": 293.2,
+"ph": "like wet sand at the shore",
+"items": [
+{
+"at": 289.46,
+"txt": "We called it onohana"
+}
+]
+},
+{
+"k": "mortar",
+"at": 334.48,
+"out": 343.43,
+"ph": "The sprinkle on rice was invented",
+"items": [
+{
+"at": 337.55,
+"txt": "ground up fish bones"
+}
+]
+},
+{
+"k": "fivebill",
+"at": 382.41,
+"out": 388.41,
+"ph": "That is ten dishes",
+"items": [
+{
+"at": 384.59,
+"txt": "not yet spent"
+}
+]
+},
+{
+"k": "shoutpot",
+"at": 398.5,
+"out": 405.5,
+"ph": "The first mistake is cooking",
+"items": []
+},
+{
+"k": "otoshi",
+"at": 431.39,
+"out": 438.39,
+"ph": "My mother put a small wooden lid",
+"items": []
+},
+{
+"k": "sixfloat",
+"at": 481.33,
+"out": 491.14,
+"ph": "One cup of flour and a little",
+"items": [
+{
+"at": 492.59,
+"txt": "they float"
+}
+]
+},
+{
+"k": "emaki",
+"at": 546.05,
+"out": 552.58,
+"ph": "Travelers ate this at Mariko",
+"items": []
+},
+{
+"k": "stilts",
+"at": 622.66,
+"out": 629.16,
+"ph": "It is named after field dancers",
+"items": []
+},
+{
+"k": "snowsponge",
+"at": 700.61,
+"out": 707.61,
+"ph": "On Mount Koya",
+"items": [
+{
+"at": 700.93,
+"txt": "it became a sponge"
+}
+]
+},
+{
+"k": "sunpot",
+"at": 765.02,
+"out": 774.02,
+"ph": "From that one pot you get",
+"items": []
+},
+{
+"k": "larder",
+"at": 800.79,
+"out": 808.16,
+"ph": "You need seven things",
+"items": [
+{
+"at": 804.38,
+"txt": "Kombu"
+},
+{
+"at": 805.34,
+"txt": "Dried bonito"
+},
+{
+"at": 806.98,
+"txt": "Dried shiitake"
+},
+{
+"at": 808.51,
+"txt": "White miso"
+},
+{
+"at": 812.29,
+"txt": "Rice vinegar"
+},
+{
+"at": 813.79,
+"txt": "Mirin"
+},
+{
+"at": 814.39,
+"txt": "sesame oil"
+}
+]
+},
+{
+"k": "bones",
+"at": 862.12,
+"out": 870.62,
+"ph": "Pour boiling water over them, and rinse",
+"items": []
+},
+{
+"k": "stairsmell",
+"at": 929.67,
+"out": 937.17,
+"ph": "When I was a girl, the smell",
+"items": [
+{
+"at": 933.74,
+"txt": "had been paid"
+}
+]
+},
+{
+"k": "goose",
+"at": 980.06,
+"out": 987.13,
+"ph": "Gan is a wild goose",
+"items": []
+},
+{
+"k": "clearing",
+"at": 1001.58,
+"out": 1006.44,
+"ph": "It goes from milky to clear",
+"items": []
+},
+{
+"k": "fuwarise",
+"at": 1077.91,
+"out": 1085.91,
+"ph": "Pour them in, put on the lid",
+"items": []
+},
+{
+"k": "standing",
+"at": 1144.84,
+"out": 1152.84,
+"ph": "And she never, not one time",
+"items": [
+{
+"at": 1142.12,
+"txt": "not one time"
+}
+]
+},
+{
+"k": "twelve",
+"at": 1195.9,
+"out": 1204.2,
+"ph": "Make them small",
+"items": [
+{
+"at": 1203.04,
+"txt": "She had made twelve"
+}
+]
+},
+{
+"k": "lastboat",
+"at": 1212.88,
+"out": 1220.28,
+"ph": "That was the last time",
+"items": [
+{
+"at": 1219.48,
+"txt": "four days out"
+}
+]
+},
+{
+"k": "lastpage",
+"at": 1226.63,
+"out": 1234.13,
+"ph": "In the notebook, on the very last page",
+"items": []
+}
+]
