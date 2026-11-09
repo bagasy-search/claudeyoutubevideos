@@ -1,0 +1,1019 @@
+{
+"segs": [
+[
+4.42,
+12.34,
+"shot",
+"v01"
+],
+[
+12.34,
+14.73,
+"shot",
+"n_arroz_blando_sarten"
+],
+[
+18.21,
+22.96,
+"shot",
+"n_soja_arroz_oscuro"
+],
+[
+22.96,
+26.28,
+"shot",
+"n_caja_llevar_mostrador"
+],
+[
+26.28,
+31.032,
+"shot",
+"v02"
+],
+[
+36.42,
+42.34,
+"shot",
+"n_osaka_callecita"
+],
+[
+42.34,
+45.06,
+"shot",
+"n_mostrador_madera"
+],
+[
+45.06,
+47.3,
+"shot",
+"n_chahan_plato"
+],
+[
+51.336,
+61.84,
+"shot",
+"n_cuenco_viejo"
+],
+[
+61.84,
+63.1,
+"shot",
+"v03"
+],
+[
+67.165,
+75.64,
+"shot",
+"n_hornalla_comun"
+],
+[
+75.64,
+78.33,
+"shot",
+"n_cuchara_vacia"
+],
+[
+83.48,
+91.5,
+"shot",
+"n_vereda_noche"
+],
+[
+91.5,
+95.071,
+"shot",
+"n_receta_mano"
+],
+[
+99.219,
+107.18,
+"shot",
+"n_bolsa_arroz"
+],
+[
+107.18,
+113.35,
+"shot",
+"n_tupper_arroz_frio"
+],
+[
+117.739,
+125.1,
+"shot",
+"n_olla_arroz_fondo"
+],
+[
+125.1,
+130.37,
+"shot",
+"n_arroz_recien"
+],
+[
+135.558,
+143.88,
+"shot",
+"n_ladrillo_sarten"
+],
+[
+143.88,
+147.284,
+"shot",
+"n_arroz_se_abre"
+],
+[
+151.777,
+161.16,
+"shot",
+"n_taza_medidora"
+],
+[
+161.16,
+165.06,
+"shot",
+"n_bandeja_arroz"
+],
+[
+170.325,
+177.78,
+"shot",
+"v04"
+],
+[
+177.78,
+181.481,
+"shot",
+"n_reloj_bandeja"
+],
+[
+185.57,
+192.78,
+"shot",
+"n_arroz_afuera"
+],
+[
+192.78,
+197.84,
+"shot",
+"n_microondas_arroz"
+],
+[
+203.888,
+211.74,
+"shot",
+"n_etiqueta_nevera"
+],
+[
+211.74,
+217.43,
+"shot",
+"n_libro_cerrado"
+],
+[
+221.096,
+228.56,
+"shot",
+"n_valija_arroz"
+],
+[
+228.56,
+231.84,
+"shot",
+"n_agua_leche"
+],
+[
+236.14,
+243.82,
+"shot",
+"n_grumos"
+],
+[
+243.82,
+250.723,
+"shot",
+"n_primera_agua"
+],
+[
+256.15,
+264.14,
+"shot",
+"n_cuarta_agua"
+],
+[
+264.14,
+267.42,
+"shot",
+"n_dos_granos"
+],
+[
+271.53,
+281.942,
+"shot",
+"n_arroz_brillo"
+],
+[
+286.64,
+300.53,
+"shot",
+"n_frasco_blanco"
+],
+[
+303.758,
+311.36,
+"shot",
+"n_quemador_chico"
+],
+[
+311.36,
+314.825,
+"shot",
+"n_anillo_fuego"
+],
+[
+320.856,
+328.23,
+"shot",
+"n_gota_evapora"
+],
+[
+328.23,
+334.27,
+"shot",
+"n_sarten_llena"
+],
+[
+339.987,
+347.15,
+"shot",
+"n_dos_tazones"
+],
+[
+347.15,
+352.72,
+"shot",
+"n_mesa_cuatro"
+],
+[
+356.789,
+364.19,
+"shot",
+"n_gota_baila"
+],
+[
+364.19,
+366.87,
+"shot",
+"n_antiadherente"
+],
+[
+373.27,
+380.87,
+"shot",
+"n_arroz_antiadherente"
+],
+[
+380.87,
+385.68,
+"shot",
+"v05"
+],
+[
+389.91,
+397.35,
+"shot",
+"n_manteca_cuchara"
+],
+[
+397.35,
+402.14,
+"shot",
+"n_aceite_botella"
+],
+[
+406.4,
+413.97,
+"shot",
+"n_salsas_fila"
+],
+[
+413.97,
+417.062,
+"shot",
+"n_estante_manteca"
+],
+[
+422.35,
+434.073,
+"shot",
+"n_grasa_pollo"
+],
+[
+437.65,
+445.01,
+"shot",
+"n_mayonesa_arroz"
+],
+[
+445.01,
+448.963,
+"shot",
+"n_grano_mayonesa"
+],
+[
+454.08,
+467.29,
+"shot",
+"n_huevo_rincon"
+],
+[
+471.838,
+479.47,
+"shot",
+"n_trozos_huevo"
+],
+[
+479.47,
+483.514,
+"shot",
+"v06"
+],
+[
+487.44,
+495.11,
+"shot",
+"n_arroz_sobre_huevo"
+],
+[
+495.11,
+497.3,
+"shot",
+"n_grano_dorado"
+],
+[
+502.289,
+510.03,
+"shot",
+"n_doradito"
+],
+[
+510.03,
+515.863,
+"shot",
+"n_arroz_arena"
+],
+[
+520.78,
+532.78,
+"shot",
+"n_batido_tenedor"
+],
+[
+536.945,
+544.45,
+"shot",
+"n_soja_chorro"
+],
+[
+544.45,
+547.313,
+"shot",
+"n_cucharita_soja"
+],
+[
+552.648,
+560.09,
+"shot",
+"n_cuencos_listos"
+],
+[
+560.09,
+566.694,
+"shot",
+"n_cebolla_cuchillo"
+],
+[
+569.846,
+577.11,
+"shot",
+"n_espatula_pintura"
+],
+[
+577.11,
+581.16,
+"shot",
+"n_cucharon_presiona"
+],
+[
+585.678,
+593.73,
+"shot",
+"n_sal_pizca"
+],
+[
+593.73,
+597.2,
+"shot",
+"n_tapa_sarten"
+],
+[
+602.94,
+610.59,
+"shot",
+"n_directo_plato"
+],
+[
+610.59,
+615.251,
+"shot",
+"n_casi_vacio"
+],
+[
+619.878,
+630.43,
+"shot",
+"n_verdura_pila"
+],
+[
+636.41,
+648.12,
+"shot",
+"n_kamaboko_jamon"
+],
+[
+653.035,
+660.34,
+"shot",
+"n_platito_condimentos"
+],
+[
+660.34,
+665.57,
+"shot",
+"n_pimienta_blanca"
+],
+[
+671.258,
+681.28,
+"shot",
+"n_lata_caldo"
+],
+[
+687.26,
+701.411,
+"shot",
+"n_paleta_mojada"
+],
+[
+706.38,
+713.86,
+"shot",
+"n_bandeja_nevera"
+],
+[
+713.86,
+717.501,
+"shot",
+"n_cebolla_fina"
+],
+[
+723.24,
+730.38,
+"shot",
+"n_junto_hornalla"
+],
+[
+730.38,
+734.69,
+"shot",
+"n_manteca_derrite"
+],
+[
+740.95,
+748.58,
+"shot",
+"n_salta_arroz"
+],
+[
+748.58,
+754.07,
+"shot",
+"n_lluvia_chapa"
+],
+[
+759.359,
+770.225,
+"shot",
+"n_condimento_espolvorea"
+],
+[
+775.165,
+789.183,
+"shot",
+"n_bloque_frio"
+],
+[
+793.81,
+801.86,
+"shot",
+"v09"
+],
+[
+810.46,
+820.85,
+"shot",
+"n_arroz_suelto_bol"
+],
+[
+825.299,
+836.92,
+"shot",
+"n_arroz_quieto"
+],
+[
+842.24,
+850.24,
+"shot",
+"v07"
+],
+[
+857.765,
+865.0,
+"shot",
+"n_colina_dorada"
+],
+[
+865.0,
+870.76,
+"shot",
+"n_cupula_vapor"
+],
+[
+876.466,
+883.9,
+"shot",
+"n_taza_sopa"
+],
+[
+883.9,
+889.76,
+"shot",
+"n_caldo_cuchara"
+],
+[
+894.49,
+905.81,
+"shot",
+"n_sopa_y_arroz"
+],
+[
+911.63,
+925.71,
+"shot",
+"n_ajo_picado"
+],
+[
+930.04,
+932.92,
+"shot",
+"n_salmon_flakes"
+],
+[
+932.92,
+941.67,
+"shot",
+"n_pickles_finos"
+],
+[
+946.95,
+957.26,
+"shot",
+"n_todo_mezclado"
+],
+[
+962.028,
+973.124,
+"shot",
+"n_sobras_manana"
+],
+[
+977.49,
+984.79,
+"shot",
+"n_canasta_bambu"
+],
+[
+984.79,
+987.13,
+"shot",
+"n_gallinas_grano"
+],
+[
+992.386,
+1005.06,
+"shot",
+"n_cuchara_madre"
+],
+[
+1010.85,
+1023.632,
+"shot",
+"n_bicarbonato"
+],
+[
+1027.71,
+1038.02,
+"shot",
+"n_pollo_tiernito"
+],
+[
+1041.976,
+1049.47,
+"shot",
+"n_wok_plancha"
+],
+[
+1049.47,
+1055.112,
+"shot",
+"n_sarten_12"
+],
+[
+1058.389,
+1070.691,
+"shot",
+"n_arroz_integral"
+],
+[
+1074.48,
+1085.43,
+"shot",
+"n_tupper_cerrado"
+],
+[
+1090.57,
+1103.3,
+"shot",
+"n_arroz_tirar"
+],
+[
+1108.859,
+1120.24,
+"shot",
+"n_arroz_terminado"
+],
+[
+1125.805,
+1132.89,
+"shot",
+"n_arroz_empapado"
+],
+[
+1132.89,
+1138.33,
+"shot",
+"v08"
+],
+[
+1143.74,
+1150.93,
+"shot",
+"n_soja_hierve"
+],
+[
+1150.93,
+1155.88,
+"shot",
+"n_vereda_pies"
+],
+[
+1160.85,
+1170.58,
+"shot",
+"n_piel_sarten"
+],
+[
+1176.557,
+1184.28,
+"shot",
+"n_sarten_tibia"
+],
+[
+1184.28,
+1188.66,
+"shot",
+"n_nueve_dolares"
+],
+[
+1192.318,
+1199.54,
+"shot",
+"n_lado_sarten"
+],
+[
+1199.54,
+1204.39,
+"shot",
+"n_sesamo_gotas"
+],
+[
+1208.5,
+1218.491,
+"shot",
+"n_salpicadura"
+],
+[
+1256.129,
+1263.32,
+"shot",
+"n_cucharita_final"
+],
+[
+1263.32,
+1268.142,
+"shot",
+"n_estacionamiento"
+],
+[
+1273.93,
+1281.93,
+"shot",
+"v10"
+]
+],
+"cam": [
+[
+801.86,
+804.73,
+"kitchen"
+],
+[
+850.24,
+854.05,
+"counter"
+],
+[
+1222.99,
+1235.75,
+"stove"
+],
+[
+1241.27,
+1252.23,
+"pan"
+],
+[
+1281.93,
+1287.42,
+"board"
+],
+[
+1290.92,
+1291.69,
+"wide"
+]
+],
+"ov": [
+{
+"k": "chip",
+"txt": "CHAHAN",
+"at": 45.7,
+"out": 49.3
+},
+{
+"k": "step",
+"n": 1,
+"name": "WARM DRIED RICE",
+"at": 102.46,
+"out": 106.46
+},
+{
+"k": "chip",
+"txt": "BACILLUS CEREUS",
+"col": "red",
+"at": 186.84,
+"out": 190.44
+},
+{
+"k": "step",
+"n": 2,
+"name": "WASH IT FOUR TIMES",
+"at": 217.22,
+"out": 221.22
+},
+{
+"k": "step",
+"n": 3,
+"name": "A SMALLER PILE",
+"at": 294.6,
+"out": 298.6
+},
+{
+"k": "chip",
+"txt": "3 MINUTES · EMPTY",
+"at": 354.11,
+"out": 357.71
+},
+{
+"k": "chip",
+"txt": "NON-STICK · NEVER EMPTY",
+"col": "red",
+"at": 366.77,
+"out": 371.27
+},
+{
+"k": "step",
+"n": 4,
+"name": "THE WHITE JAR",
+"at": 375.79,
+"out": 379.79
+},
+{
+"k": "step",
+"n": 5,
+"name": "THE EGG GOES FIRST",
+"at": 456.91,
+"out": 460.91
+},
+{
+"k": "deal",
+"at": 530.47,
+"out": 534.97
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Too much soy sauce",
+"at": 537.11,
+"out": 553.61
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "Nothing ready",
+"at": 553.91,
+"out": 569.73
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Stirring like paint",
+"at": 570.03,
+"out": 585.55
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Salting at the end",
+"at": 585.85,
+"out": 593.43
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "A lid on the pan",
+"at": 593.73,
+"out": 603.07
+},
+{
+"k": "step",
+"n": 6,
+"name": "NEARLY EMPTY",
+"at": 607.17,
+"out": 611.17
+},
+{
+"k": "ask",
+"at": 1100.38,
+"out": 1107.38
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE SKIN OF THE PAN",
+"at": 1109.12,
+"out": 1113.12
+},
+{
+"k": "big",
+"txt": "NABE HADA",
+"sub": "THE SKIN OF THE PAN",
+"at": 1163.67,
+"out": 1167.67
+},
+{
+"k": "chip",
+"txt": "IT SPLATTERS · FACE BACK",
+"col": "red",
+"at": 1209.95,
+"out": 1213.95
+},
+{
+"k": "recap",
+"at": 1215.08,
+"rows": [
+1218.86,
+1230.15,
+1233.52,
+1237.12,
+1244.17,
+1250.95,
+1257.71
+],
+"out": 1263.32
+},
+{
+"k": "next",
+"at": 1282.86,
+"out": 1287.86
+}
+],
+"cta1": {
+"desc": 95.32,
+"end": 101.32
+},
+"cta2": {
+"desc": 1098.02,
+"end": 1104.02
+},
+"cta3": {
+"desc": 1282.86,
+"end": 1287.86
+},
+"end": 1291.69,
+"st": {
+"noren": [],
+"jar": [
+[
+286.72,
+293.06
+]
+],
+"kettle": [],
+"steam": [
+[
+159.76,
+177.78
+]
+],
+"sizzle": [
+[
+575.99,
+754.38
+]
+],
+"panFood": [
+[
+733.64,
+763.22
+]
+],
+"freezer": [],
+"frost": [],
+"clock": [],
+"calendar": [],
+"table": [],
+"plates": [
+[
+857.96,
+861.58
+]
+],
+"eve": [
+[
+1262.54,
+1290
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "CHAHAN · 7 THINGS",
+"recap": [
+"Warm dried rice",
+"Wash it four times",
+"Two cups at a time",
+"A spoon of lard",
+"Egg first, count to three",
+"Nearly empty",
+"Soy on the skin of the pan"
+],
+"ask": [
+"IN THE COMMENTS",
+"Best fried rice",
+"you ever had?"
+],
+"next": [
+"THE $8 BEEF",
+"NEXT TIME"
+],
+"lower": [
+31.4,
+37.4
+]
+},
+"tema": "fried rice"
+}

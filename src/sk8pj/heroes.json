@@ -1,0 +1,258 @@
+[
+ {
+  "k": "box9",
+  "at": 21.86,
+  "out": 30.86,
+  "ph": "sells a box of fried rice",
+  "dev": -1.1,
+  "items": []
+ },
+ {
+  "k": "shopwalk",
+  "at": 38.16,
+  "out": 47.16,
+  "ph": "my mother used to send me",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "sevenbowls",
+  "at": 67.37,
+  "out": 76.37,
+  "ph": "There are seven things",
+  "dev": 1.8,
+  "items": []
+ },
+ {
+  "k": "brick",
+  "at": 135.84,
+  "out": 144.34,
+  "ph": "So you put that brick",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "tray",
+  "at": 170.62,
+  "out": 177.62,
+  "ph": "wave a magazine",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "onehour",
+  "at": 204.24,
+  "out": 213.24,
+  "ph": "it within one day",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "glue",
+  "at": 236.29,
+  "out": 244.29,
+  "ph": "In the pan it's going",
+  "dev": 0.4,
+  "items": []
+ },
+ {
+  "k": "fourwaters",
+  "at": 259.3,
+  "out": 267.3,
+  "ph": "By the fourth water",
+  "dev": -1.0,
+  "items": []
+ },
+ {
+  "k": "jar",
+  "at": 286.84,
+  "out": 295.34,
+  "ph": "a white jar",
+  "dev": 0.1,
+  "items": []
+ },
+ {
+  "k": "btu",
+  "at": 303.98,
+  "out": 312.98,
+  "ph": "A home burner might",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "fourcups",
+  "at": 321.06,
+  "out": 330.56,
+  "ph": "What does a hot pan do",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "bead",
+  "at": 359.25,
+  "out": 366.75,
+  "ph": "until a drop of water",
+  "dev": -0.1,
+  "items": []
+ },
+ {
+  "k": "smell",
+  "at": 393.02,
+  "out": 402.02,
+  "ph": "Oil has no taste",
+  "dev": -1.9,
+  "items": []
+ },
+ {
+  "k": "mayo",
+  "at": 438.01,
+  "out": 446.01,
+  "ph": "tablespoon of mayonnaise",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "eggcloud",
+  "at": 475.34,
+  "out": 483.34,
+  "ph": "He poured the beaten",
+  "dev": -2.4,
+  "items": []
+ },
+ {
+  "k": "para",
+  "at": 505.93,
+  "out": 513.43,
+  "ph": "In Japan, we say",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "littlebowls",
+  "at": 559.02,
+  "out": 566.52,
+  "ph": "Everything goes in little bowls",
+  "dev": -4.2,
+  "items": []
+ },
+ {
+  "k": "steambomb",
+  "at": 620.11,
+  "out": 628.11,
+  "ph": "Every vegetable you add",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "dish",
+  "at": 653.24,
+  "out": 662.24,
+  "ph": "Half a teaspoon of salt",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "tin",
+  "at": 671.58,
+  "out": 678.58,
+  "ph": "Every shop in Osaka",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "sunday",
+  "at": 687.41,
+  "out": 696.41,
+  "ph": "wash the rice four times",
+  "dev": 0.1,
+  "items": []
+ },
+ {
+  "k": "rain",
+  "at": 745.95,
+  "out": 753.95,
+  "ph": "like rain on a tin roof",
+  "dev": -4.0,
+  "items": []
+ },
+ {
+  "k": "wake",
+  "at": 825.5,
+  "out": 832.5,
+  "ph": "It will also seem",
+  "dev": 1.0,
+  "items": []
+ },
+ {
+  "k": "hill",
+  "at": 861.58,
+  "out": 870.58,
+  "ph": "It stays hot longer",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "soup",
+  "at": 877.42,
+  "out": 885.92,
+  "ph": "a very small cup",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "week",
+  "at": 911.78,
+  "out": 920.78,
+  "ph": "In my kitchen, I have",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "basket",
+  "at": 977.64,
+  "out": 985.64,
+  "ph": "in the coolest place",
+  "dev": 0.1,
+  "items": []
+ },
+ {
+  "k": "wok",
+  "at": 1044.84,
+  "out": 1053.34,
+  "ph": "On a flat electric",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "pourwall",
+  "at": 1128.13,
+  "out": 1136.63,
+  "ph": "Mr. Chen did something else",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "street",
+  "at": 1146.62,
+  "out": 1155.62,
+  "ph": "the smell of it jumped",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "onespoon",
+  "at": 1196.17,
+  "out": 1203.67,
+  "ph": "Count to two",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "parking",
+  "at": 1260.47,
+  "out": 1267.97,
+  "ph": "gone a very long time",
+  "dev": -2.8,
+  "items": []
+ }
+]
