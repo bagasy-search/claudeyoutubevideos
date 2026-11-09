@@ -65,9 +65,9 @@ export const HFreeNights: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mode
   const n = Math.min(3, Math.floor((tt - 0.2) / 1.2)), set = eio(tt, 3.6, 4.1);
   return <>
     <SnapTrap p={[-0.05, 0.02, 0]} rat s={1.4} snap={1 - set} dab={1.2} />
-    <Rodent p={[0.32, 0.02, 0]} rot={[0, PI, 0]} s={1.15} rat walk={0} />
-    {[0, 1, 2, 3].map((i) => <group key={i} position={[-0.6 + i * 0.4, 0.74, -0.2]}>
-      <mesh><sphereGeometry args={[0.07, 28, 20]} />{M.glow({ col: i <= n ? "#f6edcc" : "#3a3c48", op: i <= n ? 1 : 0.5 })}</mesh></group>)}
+    <Rodent p={[lerp(0.42, 0.3, eio(tt, 0.2, 3.4)), 0.02, 0]} rot={[0, -PI / 2, 0]} s={1.15} rat walk={tt < 3.4 ? tt * 2 : 0} />
+    {[0, 1, 2, 3].map((i) => <group key={i} position={[-0.3 + i * 0.2, 0.25, -0.12]}>
+      <mesh><sphereGeometry args={[0.032, 28, 20]} />{M.glow({ col: i <= n ? "#f6edcc" : "#3a3c48", op: i <= n ? 1 : 0.5 })}</mesh></group>)}
     <pointLight position={[0, 1.0, 0.4]} intensity={1.8} distance={3} color="#9fb4ff" />
   </>;
 }}</Scene3D>;
