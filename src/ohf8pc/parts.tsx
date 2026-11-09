@@ -24,7 +24,7 @@ export const Avatar: React.FC<{ t: number; dark?: number }> = ({ t, dark = 0 }) 
   const face = REEL ? <><Img src={staticFile(P + "av_still.png")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />{WIN.map((w, i) => (
     <Sequence key={i} from={s(w.ms) - 10} durationInFrames={s(w.me - w.ms) + 12 + 14} layout="none">
       <AbsoluteFill style={{ opacity: i === vis ? 1 : 0 }}><OffthreadVideo src={staticFile(P + "reel0.mp4")} startFrom={Math.max(0, s(w.off) - 10)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>
-    </Sequence>))}</> : <Img src={staticFile(P + "av_still.png")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.02 + 0.015 * Math.sin(t * 0.7)})` }} />;
+    </Sequence>))}<Img src={staticFile(P + "av_plate.png")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} /></> : <Img src={staticFile(P + "av_still.png")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.02 + 0.015 * Math.sin(t * 0.7)})` }} />;
   // SIN desenfoque en el avatar (orden del creador 21-oct)
   return <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}><AbsoluteFill style={{ filter: dark > 0 ? `brightness(${1 - dark})` : undefined }}>{face}</AbsoluteFill></AbsoluteFill>;
 };
