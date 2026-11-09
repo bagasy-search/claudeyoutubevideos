@@ -204,7 +204,7 @@ export const HDeckPull: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mode="
 
 // ---- LA LINTERNA: el cono barre la pared y un rincón revela la segunda salida ----
 export const HFlashGap: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mode="iris" floor="none" wall="none" bg="#0f0e12" key1={[-1, 0.5, 1]} cam={{ at: [0.42, 0.22, 0.5], az: [0.28, 0.08], el: [0.08, 0.06], r: [1.5, 1.24], fov: 26 }}
-  over={(tt) => <Tag tt={tt} at={3.8} x={960} y={940} txt="THE SECOND DOOR" col={AMB} />}>{(tt) => {
+  over={(tt) => { const sx = 960 + (lerp(-1.0, 0.72, eio(tt, 0.3, 3.2)) - 0.42) * 1500; return <><div style={{ position: "absolute", left: sx - 520, top: 460 - 520, width: 1040, height: 1040, borderRadius: "50%", mixBlendMode: "screen", background: "radial-gradient(circle, rgba(255,236,186,0.55) 0%, rgba(255,226,160,0.22) 40%, rgba(255,226,160,0) 70%)" }} /><Tag tt={tt} at={3.8} x={960} y={940} txt="THE SECOND DOOR" col={AMB} /></>; }}>{(tt) => {
   const s = eio(tt, 0.3, 3.2), lx = lerp(-1.0, 0.72, s), lit = (x: number) => cl(1 - Math.abs(x - lx) / 0.56), hex = (v: number) => Math.round(Math.min(1, v) * 255).toString(16).padStart(2, "0");
   return <>
     <mesh position={[0, 0.0, 1]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[6, 3]} /><meshBasicMaterial color="#14110e" /></mesh>
@@ -212,13 +212,11 @@ export const HFlashGap: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mode="
     <mesh position={[0.75, 0.11, 0.499]}><planeGeometry args={[0.2, 0.22]} /><meshBasicMaterial color="#000" /></mesh>
     <mesh position={[0.75, 0.005, 0.74]} rotation={[-PI / 2, 0, 0]}><planeGeometry args={[0.3, 0.46]} /><meshBasicMaterial color={"#" + hex(0.2 + 0.56 * lit(0.75)) + hex(0.15 + 0.44 * lit(0.75)) + hex(0.09 + 0.26 * lit(0.75))} /></mesh>
     {[0, 1, 2, 3, 4, 5].map((i) => <mesh key={i} position={[0.75 + (i % 2 ? 0.05 : -0.05), 0.012, 0.92 - i * 0.075]} rotation={[-PI / 2, 0, 0]} visible={s > 0.6}><circleGeometry args={[0.024, 16]} /><meshBasicMaterial color="#2a1c10" /></mesh>)}
-    <sprite position={[lx, 0.27, 0.503]} scale={[1.15, 1.15, 1]}><spriteMaterial map={puffT()} color="#ffeec0" transparent opacity={0.62} depthWrite={false} depthTest={false} /></sprite>
     <group position={[lerp(-0.2, 0.2, s), 0.3, 1.25]} rotation={[0.1, lerp(-0.7, 0.42, s) + PI, 0]}>
       <mesh rotation={[PI / 2, 0, 0]} castShadow><cylinderGeometry args={[0.03, 0.022, 0.2, 20]} />{M.steel({ col: "#50504e" })}</mesh>
       <mesh rotation={[PI / 2, 0, 0]} position={[0, 0, 0.12]}><cylinderGeometry args={[0.044, 0.03, 0.05, 24]} />{M.steel({ col: "#68686a" })}</mesh>
       <mesh position={[0, 0, 0.1455]}><circleGeometry args={[0.04, 24]} />{M.glow({ col: "#fff2cd" })}</mesh>
     </group>
-    {Array.from({ length: 12 }, (_, i) => { const a = lerp(lerp(-0.2, 0.2, s), lx, (i + 1) / 13), zz = lerp(1.25, 0.51, (i + 1) / 13), r = 0.02 + 0.3 * ((i + 1) / 13); return <sprite key={i} position={[a, 0.28, zz]} scale={[r * 3.2, r * 3.2, 1]}><spriteMaterial map={puffT()} color="#ffeec0" transparent opacity={0.12} depthWrite={false} depthTest={false} /></sprite>; })}
   </>;
 }}</Scene3D>;
 
