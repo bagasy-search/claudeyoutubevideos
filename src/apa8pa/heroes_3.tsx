@@ -64,6 +64,7 @@ export const HFreeNights: React.FC<P_> = ({ t, h }) => <Scene3D t={t} h={h} mode
   over={(tt) => <Tag tt={tt} at={3.2} x={960} y={940} txt={tt > 3.6 ? "NIGHT FOUR. SET IT." : "THREE NIGHTS FREE"} col={tt > 3.6 ? RED : AMB} />}>{(tt) => {
   const n = Math.min(3, Math.floor((tt - 0.2) / 1.2)), set = eio(tt, 3.6, 4.1);
   return <>
+    <group position={[-0.05, 0, 0]} scale={1.4}><Tee cut arm={9} riser={false} door={false} /></group>
     <SnapTrap p={[-0.05, 0.02, 0]} rat s={1.4} snap={1 - set} dab={1.2} />
     <Rodent p={[lerp(0.42, 0.3, eio(tt, 0.2, 3.4)), 0.02, 0]} rot={[0, -PI / 2, 0]} s={1.15} rat walk={tt < 3.4 ? tt * 2 : 0} />
     {[0, 1, 2, 3].map((i) => <group key={i} position={[-0.3 + i * 0.2, 0.25, -0.12]}>
