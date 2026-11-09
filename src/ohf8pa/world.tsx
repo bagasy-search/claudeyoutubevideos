@@ -16,8 +16,8 @@ export const CAMS: Record<string, C> = {
   back: { p0: [1.2, 3.9, 3.8], p1: [2.0, 3.65, 3.1], l0: [3.0, 3.3, -0.7], l1: [3.05, 3.25, -0.7], f0: 40, f1: 36 },
   furnace: { p0: [-1.3, -1.5, 3.2], p1: [-1.9, -1.75, 2.6], l0: [-3.0, -1.4, -0.1], l1: [-3.0, -1.3, -0.1], f0: 40, f1: 36 },
   trunk: { p0: [-1.4, -1.75, 2.8], p1: [1.4, -1.65, 2.5], l0: [-0.8, -0.55, 0], l1: [1.6, -0.55, 0], f0: 42, f1: 38 },
-  branch1: { p0: [-1.5, -0.95, 1.05], p1: [-1.72, -1.05, 0.82], l0: [-2.0, -0.28, 0.02], l1: [-2.0, -0.25, 0.02], f0: 36, f1: 32 },
-  branch4: { p0: [2.5, -0.95, 1.1], p1: [2.72, -1.05, 0.85], l0: [3.0, -0.28, 0.02], l1: [3.0, -0.25, 0.02], f0: 36, f1: 32 },
+  branch1: { p0: [-2.18, -0.27, 1.14], p1: [-2.09, -0.29, 0.88], l0: [-2.0, -0.2, 0.08], l1: [-2.0, -0.21, 0.08], f0: 40, f1: 34 },
+  branch4: { p0: [3.24, -0.27, 1.14], p1: [3.13, -0.29, 0.88], l0: [3.0, -0.2, 0.08], l1: [3.0, -0.21, 0.08], f0: 40, f1: 34 },
   ret: { p0: [1.4, 0.9, 2.8], p1: [0.8, 0.8, 2.3], l0: [0.3, 0.4, -1.2], l1: [0.25, 0.42, -1.2], f0: 38, f1: 34 },
 };
 type Stop = [number, string];
@@ -86,6 +86,7 @@ export const DuctHouse: React.FC<{ t: number }> = ({ t }) => {
     {/* sótano: pared de piedra y piso */}
     <mesh position={[0, -1.3, -1.2]} receiveShadow><planeGeometry args={[9, 2.6]} /><meshStandardMaterial map={tex.brick(9, 3)} color="#a39a8c" roughness={0.95} /></mesh>
     <mesh position={[0, -2.6, 0.1]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[9, 2.6]} /><meshStandardMaterial map={tex.counter(5, 2)} roughness={0.8} /></mesh>
+    {[-1, 1].map((d) => <mesh key={d} position={[d * 4.46, -1.325, 0.115]} rotation={[0, (-d * Math.PI) / 2, 0]} receiveShadow><planeGeometry args={[2.67, 2.65]} /><meshStandardMaterial map={tex.brick(3, 3)} color="#a39a8c" roughness={0.95} /></mesh>)}
     {Array.from({ length: 19 }, (_, i) => <RBox key={i} s={[0.09, 0.2, 2.5]} p={[-4.3 + i * 0.48, -0.12, 0.1]} r={0.006}>{M.wood({ base: [86, 56, 32] })}</RBox>)}
     {/* losas */}
     <RBox s={[9, 0.05, 2.7]} p={[0, -0.03, 0.1]} r={0.006}>{M.wood({ base: [110, 72, 42] })}</RBox>
