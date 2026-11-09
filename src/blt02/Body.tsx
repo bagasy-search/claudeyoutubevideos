@@ -8,6 +8,8 @@ import OVJ from "./ov.json";
 import { LowerThird, P, e, s } from "./lib";
 import { AskCard, BigNum, CheckList, Chip, Desc, GuidePage, Headline, Mistake, StepTitle, TimeBars, Words } from "./premium";
 import * as E from "./escenas";
+import * as M1 from "./min1";
+import * as M5 from "./mas5";
 import { CamaraMano } from "../kits/camara/CamaraMano";
 
 type Seg = [number, number, string, string];
@@ -69,7 +71,7 @@ const Avatar: React.FC<{ t: number; cur: number }> = ({ t, cur }) => {
   </AbsoluteFill>;
 };
 
-const KIT: Record<string, React.FC<any>> = { ...E, AskCard, BigNum, CheckList, Chip, Desc, GuidePage, Headline, LowerThird, Mistake, StepTitle, TimeBars, Words };
+const KIT: Record<string, React.FC<any>> = { ...E, ...M1, ...M5, AskCard, BigNum, CheckList, Chip, Desc, GuidePage, Headline, LowerThird, Mistake, StepTitle, TimeBars, Words };
 
 export const Body: React.FC = () => {
   const f = useCurrentFrame();
