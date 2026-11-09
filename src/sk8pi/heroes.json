@@ -1,0 +1,196 @@
+[
+{
+"k": "whitewater",
+"at": 93.94,
+"out": 101.5,
+"ph": "that first rinse has",
+"items": []
+},
+{
+"k": "spoilsun",
+"at": 108.66,
+"out": 115.37,
+"ph": "And here is the rule",
+"items": []
+},
+{
+"k": "twotothree",
+"at": 143.54,
+"out": 148.15,
+"ph": "How much do you get",
+"items": []
+},
+{
+"k": "littlecarry",
+"at": 171.72,
+"out": 179.72,
+"ph": "I was six years old",
+"items": []
+},
+{
+"k": "bitterlift",
+"at": 226.48,
+"out": 230.69,
+"ph": "The starch in that water",
+"items": []
+},
+{
+"k": "bambooshed",
+"at": 251.6,
+"out": 259.6,
+"ph": "has a natural compound",
+"items": []
+},
+{
+"k": "twocauli",
+"at": 287.88,
+"out": 292.88,
+"ph": "It stays white",
+"items": []
+},
+{
+"k": "knockfish",
+"at": 322.3,
+"out": 331.3,
+"ph": "the rice water takes away",
+"items": []
+},
+{
+"k": "oilgrab",
+"at": 342.81,
+"out": 348.75,
+"ph": "Those particles can grab",
+"items": []
+},
+{
+"k": "basinlet",
+"at": 371.74,
+"out": 378.24,
+"ph": "the grease has let go",
+"items": []
+},
+{
+"k": "medome",
+"at": 423.83,
+"out": 430.03,
+"ph": "The starch sinks into",
+"items": []
+},
+{
+"k": "kettleskin",
+"at": 465.03,
+"out": 471.03,
+"ph": "This leaves a thin dark skin",
+"items": []
+},
+{
+"k": "tuesdaypot",
+"at": 480.15,
+"out": 488.15,
+"ph": "no matter how many times",
+"items": []
+},
+{
+"k": "clingspoon",
+"at": 547.29,
+"out": 553.27,
+"ph": "It comes out silky",
+"items": []
+},
+{
+"k": "nightcup",
+"at": 596.29,
+"out": 603.1,
+"ph": "is not a medicine",
+"items": []
+},
+{
+"k": "sinkwindow",
+"at": 689.59,
+"out": 697.59,
+"ph": "Wipe it down with rice water",
+"items": []
+},
+{
+"k": "shinelayers",
+"at": 726.87,
+"out": 733.87,
+"ph": "A small amount of the starch",
+"items": []
+},
+{
+"k": "bootsoff",
+"at": 757.87,
+"out": 764.87,
+"ph": "He stood on that floor",
+"items": []
+},
+{
+"k": "branbag",
+"at": 809.31,
+"out": 816.68,
+"ph": "she rubbed that bag",
+"items": []
+},
+{
+"k": "crispcloth",
+"at": 838.31,
+"out": 845.31,
+"ph": "The thin cotton of a summer",
+"items": []
+},
+{
+"k": "longhair",
+"at": 877.71,
+"out": 883.86,
+"ph": "who wore their hair down",
+"items": []
+},
+{
+"k": "twowindows",
+"at": 944.07,
+"out": 953.07,
+"ph": "I poured a little on her",
+"items": [
+{
+"at": 956.35,
+"txt": "there was a jar on her"
+}
+]
+},
+{
+"k": "dayjar",
+"at": 969.23,
+"out": 973.42,
+"ph": "Keep one clean glass jar",
+"items": []
+},
+{
+"k": "icetray",
+"at": 1065.83,
+"out": 1069.51,
+"ph": "Pour it into an ice cube",
+"items": []
+},
+{
+"k": "redlake",
+"at": 1138.6,
+"out": 1146.6,
+"ph": "the lake started to turn",
+"items": []
+},
+{
+"k": "milliondrains",
+"at": 1174.21,
+"out": 1182.21,
+"ph": "Now think about one hundred",
+"items": []
+},
+{
+"k": "downstream",
+"at": 1207.74,
+"out": 1214.74,
+"ph": "They believed that the water",
+"items": []
+}
+]
