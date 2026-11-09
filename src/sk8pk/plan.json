@@ -1,0 +1,1065 @@
+{
+"segs": [
+[
+4.57,
+11.78,
+"shot",
+"n_etiqueta_precio"
+],
+[
+11.78,
+15.92,
+"shot",
+"n_bandeja_8"
+],
+[
+15.92,
+17.732,
+"shot",
+"n_bife_gris"
+],
+[
+21.33,
+27.58,
+"shot",
+"n_vaso_agua"
+],
+[
+27.58,
+30.84,
+"shot",
+"v01"
+],
+[
+36.669,
+40.44,
+"shot",
+"n_tajadas_plato"
+],
+[
+40.44,
+46.02,
+"shot",
+"n_cartera_recibo"
+],
+[
+46.02,
+50.054,
+"shot",
+"n_recibo_mesa"
+],
+[
+53.289,
+60.66,
+"shot",
+"n_avion_foto"
+],
+[
+60.66,
+65.1,
+"shot",
+"v02"
+],
+[
+69.07,
+76.38,
+"shot",
+"n_cebolla_canasta"
+],
+[
+76.38,
+78.763,
+"shot",
+"n_mano_mandibula"
+],
+[
+82.989,
+90.8,
+"shot",
+"n_hotel_lobby"
+],
+[
+90.8,
+95.26,
+"shot",
+"n_wagyu_marmoleo"
+],
+[
+100.416,
+107.58,
+"shot",
+"n_bife_tierno"
+],
+[
+107.58,
+110.91,
+"shot",
+"n_cuchillo_cebolla"
+],
+[
+115.43,
+122.58,
+"shot",
+"n_tenedor_quieto"
+],
+[
+122.58,
+127.824,
+"shot",
+"n_cuaderno_cocina"
+],
+[
+132.986,
+140.44,
+"shot",
+"n_gondola_carne"
+],
+[
+140.44,
+144.36,
+"shot",
+"n_delantal_carnicero"
+],
+[
+149.007,
+154.16,
+"shot",
+"n_mostrador_carniceria"
+],
+[
+154.16,
+156.46,
+"shot",
+"n_chuck_eye"
+],
+[
+156.46,
+159.0,
+"shot",
+"n_diagrama_vaca"
+],
+[
+163.15,
+170.4,
+"shot",
+"n_tres_cortes"
+],
+[
+170.4,
+176.741,
+"shot",
+"n_sirloin_flat"
+],
+[
+181.0,
+188.6,
+"shot",
+"n_hilos_grasa"
+],
+[
+188.6,
+192.01,
+"shot",
+"n_olla_estofado"
+],
+[
+196.23,
+203.5,
+"shot",
+"n_bife_duro"
+],
+[
+203.5,
+206.4,
+"shot",
+"n_vaca_pasto"
+],
+[
+211.738,
+219.26,
+"shot",
+"n_cuerdas_fardo"
+],
+[
+219.26,
+223.334,
+"shot",
+"n_fibras_carne"
+],
+[
+227.445,
+235.34,
+"shot",
+"n_mordida_dura"
+],
+[
+235.34,
+239.68,
+"shot",
+"n_cuchillo_cuerda"
+],
+[
+244.667,
+251.98,
+"shot",
+"n_cartel_opera"
+],
+[
+251.98,
+256.49,
+"shot",
+"n_servilleta_grande"
+],
+[
+260.88,
+268.06,
+"shot",
+"n_cocina_hotel"
+],
+[
+268.06,
+272.73,
+"shot",
+"n_sopera_plata"
+],
+[
+277.34,
+289.024,
+"shot",
+"n_menu_antiguo"
+],
+[
+294.64,
+302.72,
+"shot",
+"n_jugo_cebolla"
+],
+[
+302.72,
+308.121,
+"shot",
+"v03"
+],
+[
+314.37,
+322.05,
+"shot",
+"n_paquete_abre"
+],
+[
+322.05,
+326.183,
+"shot",
+"n_papel_seca"
+],
+[
+330.27,
+337.53,
+"shot",
+"n_golpea_film"
+],
+[
+337.53,
+341.86,
+"shot",
+"n_jabon_manos"
+],
+[
+347.69,
+354.83,
+"shot",
+"n_cuarto_taza"
+],
+[
+354.83,
+356.73,
+"shot",
+"n_pañuelo_lagrima"
+],
+[
+356.73,
+359.66,
+"shot",
+"v04"
+],
+[
+364.91,
+376.01,
+"shot",
+"n_seattle_lluvia"
+],
+[
+380.34,
+387.51,
+"shot",
+"n_bife_mushy"
+],
+[
+387.51,
+391.205,
+"shot",
+"n_bolsa_mojada"
+],
+[
+394.789,
+402.13,
+"shot",
+"n_foto_esposo"
+],
+[
+402.13,
+405.66,
+"shot",
+"n_timer_mano"
+],
+[
+409.03,
+419.953,
+"shot",
+"n_sal_agua"
+],
+[
+425.2,
+433.97,
+"shot",
+"n_cuchara_sal"
+],
+[
+433.97,
+438.54,
+"shot",
+"n_cuchillo_raspa"
+],
+[
+442.79,
+450.27,
+"shot",
+"n_cebolla_cuenco"
+],
+[
+450.27,
+454.96,
+"shot",
+"n_cebolla_quemada"
+],
+[
+459.05,
+466.27,
+"shot",
+"n_pan_lista_error"
+],
+[
+466.27,
+469.36,
+"shot",
+"n_vapor_gris"
+],
+[
+474.825,
+482.03,
+"shot",
+"n_sarten_fina"
+],
+[
+482.03,
+488.48,
+"shot",
+"n_hierro_1974"
+],
+[
+492.15,
+503.38,
+"shot",
+"n_jugo_tabla"
+],
+[
+509.25,
+516.37,
+"shot",
+"n_cuchillo_tabla"
+],
+[
+516.37,
+519.713,
+"shot",
+"n_hierro_vacio"
+],
+[
+525.75,
+537.222,
+"shot",
+"n_mango_adentro"
+],
+[
+541.61,
+548.69,
+"shot",
+"v05"
+],
+[
+548.69,
+552.374,
+"shot",
+"n_termometro_pin"
+],
+[
+558.356,
+571.67,
+"shot",
+"n_probe_bife"
+],
+[
+576.456,
+586.852,
+"shot",
+"n_hamburguesa"
+],
+[
+590.36,
+597.61,
+"shot",
+"n_rodajas_145"
+],
+[
+597.61,
+601.47,
+"shot",
+"n_mesa_familia_vacia"
+],
+[
+607.85,
+615.65,
+"shot",
+"n_fond_sarten"
+],
+[
+615.65,
+619.18,
+"shot",
+"n_manteca_cebolla"
+],
+[
+623.38,
+630.45,
+"shot",
+"n_cebolla_dorada"
+],
+[
+630.45,
+635.8,
+"shot",
+"n_burbujea"
+],
+[
+639.67,
+647.58,
+"shot",
+"n_cucharas_tres"
+],
+[
+647.58,
+651.73,
+"shot",
+"v06"
+],
+[
+657.198,
+665.98,
+"shot",
+"n_salsa_cuchara"
+],
+[
+665.98,
+669.523,
+"shot",
+"n_salsa_arroz"
+],
+[
+675.15,
+687.05,
+"shot",
+"n_ocho_bife"
+],
+[
+692.438,
+699.7,
+"shot",
+"n_bife_enorme"
+],
+[
+699.7,
+705.282,
+"shot",
+"n_abanico_tazon"
+],
+[
+709.1,
+716.6,
+"shot",
+"n_cuatro_tazones"
+],
+[
+716.6,
+722.213,
+"shot",
+"n_dos_dolares"
+],
+[
+726.248,
+734.59,
+"shot",
+"n_repollo_fino"
+],
+[
+739.89,
+747.26,
+"shot",
+"n_bandeja_tokyo"
+],
+[
+747.26,
+753.91,
+"shot",
+"n_sobras_tupper"
+],
+[
+759.85,
+767.28,
+"shot",
+"n_cordones"
+],
+[
+767.28,
+771.68,
+"shot",
+"n_tapa_arroz"
+],
+[
+775.668,
+784.9,
+"shot",
+"n_microondas_papel"
+],
+[
+784.9,
+787.941,
+"shot",
+"n_mano_paquete"
+],
+[
+791.71,
+802.702,
+"shot",
+"n_cereza_rojo"
+],
+[
+805.979,
+807.98,
+"shot",
+"n_gris_verde"
+],
+[
+807.98,
+817.55,
+"shot",
+"n_liquido_bandeja"
+],
+[
+821.897,
+829.54,
+"shot",
+"n_fecha_venta"
+],
+[
+829.54,
+836.33,
+"shot",
+"n_papel_film_foil"
+],
+[
+840.947,
+852.65,
+"shot",
+"n_freezer_estante"
+],
+[
+858.47,
+869.24,
+"shot",
+"n_cuchillo_romo"
+],
+[
+875.129,
+882.22,
+"shot",
+"v07"
+],
+[
+882.22,
+887.14,
+"shot",
+"n_cajon_cuchillos"
+],
+[
+892.18,
+899.74,
+"shot",
+"n_cebolla_pelada"
+],
+[
+899.74,
+902.74,
+"shot",
+"n_sarten_dulce"
+],
+[
+906.808,
+914.4,
+"shot",
+"n_cebollas_al_costado"
+],
+[
+914.4,
+919.29,
+"shot",
+"n_salsa_raspada"
+],
+[
+923.679,
+936.483,
+"shot",
+"n_frasco_grasa"
+],
+[
+942.25,
+949.46,
+"shot",
+"n_paquete_papel"
+],
+[
+949.46,
+952.64,
+"shot",
+"n_descongela_mal"
+],
+[
+957.59,
+965.31,
+"shot",
+"n_fregadero_gotas"
+],
+[
+965.31,
+968.985,
+"shot",
+"n_mesa_vieja_dos"
+],
+[
+972.928,
+981.37,
+"shot",
+"n_silla_vacia"
+],
+[
+981.37,
+984.47,
+"shot",
+"n_pera_kiwi_anana"
+],
+[
+988.01,
+998.23,
+"shot",
+"n_anana_mush"
+],
+[
+1003.3,
+1010.57,
+"shot",
+"n_cebolla_sola"
+],
+[
+1010.57,
+1015.98,
+"shot",
+"n_shio_koji"
+],
+[
+1021.57,
+1032.09,
+"shot",
+"n_koji_bife"
+],
+[
+1036.96,
+1044.29,
+"shot",
+"n_chuleta_cerdo"
+],
+[
+1044.29,
+1049.292,
+"shot",
+"n_pollo_plato"
+],
+[
+1054.1,
+1066.642,
+"shot",
+"n_dos_tandas"
+],
+[
+1070.62,
+1081.063,
+"shot",
+"n_lentes_redondos"
+],
+[
+1085.03,
+1092.73,
+"shot",
+"v08"
+],
+[
+1092.73,
+1099.31,
+"shot",
+"n_reloj_cinco"
+],
+[
+1104.65,
+1112.53,
+"shot",
+"n_foil_suelto"
+],
+[
+1112.53,
+1117.275,
+"shot",
+"n_foil_abre"
+],
+[
+1121.025,
+1128.77,
+"shot",
+"n_grano_lineas"
+],
+[
+1128.77,
+1129.965,
+"shot",
+"n_grano_dedo"
+],
+[
+1134.937,
+1142.85,
+"shot",
+"v09"
+],
+[
+1142.85,
+1147.63,
+"shot",
+"n_rodajas_transversal"
+],
+[
+1151.62,
+1161.96,
+"shot",
+"n_cuerdas_cortadas"
+],
+[
+1166.947,
+1175.41,
+"shot",
+"n_comparado_cortes"
+],
+[
+1175.41,
+1179.12,
+"shot",
+"n_palillos_rodaja"
+],
+[
+1185.27,
+1192.61,
+"shot",
+"n_bandeja_rodajas"
+],
+[
+1192.61,
+1197.96,
+"shot",
+"n_abanico_final"
+],
+[
+1202.01,
+1212.975,
+"shot",
+"n_receta_lista"
+],
+[
+1236.265,
+1247.86,
+"shot",
+"n_cuarenta_centavos"
+],
+[
+1252.38,
+1260.38,
+"shot",
+"v10"
+],
+[
+1268.07,
+1277.73,
+"shot",
+"n_arroz_olla"
+]
+],
+"cam": [
+[
+1218.33,
+1231.04,
+"kitchen"
+],
+[
+1260.38,
+1262.23,
+"counter"
+]
+],
+"ov": [
+{
+"k": "big",
+"txt": "$8.12",
+"sub": "THE WHOLE STEAK",
+"at": 46.02,
+"out": 50.02
+},
+{
+"k": "step",
+"n": 1,
+"name": "WHAT YOU BUY",
+"at": 133.22,
+"out": 137.22
+},
+{
+"k": "step",
+"n": 2,
+"name": "WHY IT'S TOUGH",
+"at": 196.46,
+"out": 200.46
+},
+{
+"k": "step",
+"n": 3,
+"name": "THE STORY",
+"at": 237.12,
+"out": 241.12
+},
+{
+"k": "big",
+"txt": "CHALIAPIN STEAK",
+"sub": "IMPERIAL HOTEL · 1936",
+"at": 291.32,
+"out": 295.82
+},
+{
+"k": "step",
+"n": 4,
+"name": "ONION · ONE HOUR",
+"at": 314.86,
+"out": 318.86
+},
+{
+"k": "step",
+"n": 5,
+"name": "SALT AND WHEN",
+"at": 403.65,
+"out": 407.65
+},
+{
+"k": "deal",
+"at": 456.59,
+"out": 461.09
+},
+{
+"k": "mistake",
+"n": 1,
+"txt": "Cooking it cold and wet",
+"at": 462.55,
+"out": 474.71
+},
+{
+"k": "mistake",
+"n": 2,
+"txt": "A thin pan",
+"at": 475.01,
+"out": 488.59
+},
+{
+"k": "mistake",
+"n": 3,
+"txt": "Crowding",
+"at": 488.89,
+"out": 496.25
+},
+{
+"k": "mistake",
+"n": 4,
+"txt": "Cutting it right away",
+"at": 496.55,
+"out": 503.41
+},
+{
+"k": "mistake",
+"n": 5,
+"txt": "Cutting with the grain",
+"at": 503.71,
+"out": 512.63
+},
+{
+"k": "step",
+"n": 6,
+"name": "THE PAN",
+"at": 512.63,
+"out": 516.63
+},
+{
+"k": "chip",
+"txt": "FAN ON · HANDLE IN",
+"at": 525.87,
+"out": 529.47
+},
+{
+"k": "chip",
+"txt": "145°F · THEN REST 3 MIN",
+"at": 554.33,
+"out": 558.83
+},
+{
+"k": "chip",
+"txt": "GROUND BEEF · 160°F",
+"col": "red",
+"at": 574.91,
+"out": 578.91
+},
+{
+"k": "step",
+"n": 7,
+"name": "THE SAUCE",
+"at": 601.83,
+"out": 605.83
+},
+{
+"k": "ask",
+"at": 1071.97,
+"out": 1078.97
+},
+{
+"k": "recap",
+"at": 1202.17,
+"rows": [
+1206.37,
+1211.51,
+1218.57,
+1222.99,
+1227.35,
+1236.39,
+1240.89
+],
+"out": 1248.21
+},
+{
+"k": "next",
+"at": 1265.19,
+"out": 1270.19
+}
+],
+"cta1": {
+"desc": 126.86,
+"end": 132.86
+},
+"cta2": {
+"desc": 1068.27,
+"end": 1074.27
+},
+"cta3": {
+"desc": 1265.19,
+"end": 1270.19
+},
+"end": 1277.73,
+"st": {
+"noren": [],
+"jar": [
+[
+932.58,
+936.74
+]
+],
+"kettle": [],
+"steam": [],
+"sizzle": [
+[
+530.93,
+537.55
+]
+],
+"panFood": [],
+"freezer": [],
+"frost": [],
+"clock": [],
+"calendar": [],
+"table": [
+[
+24.48,
+49.84
+]
+],
+"plates": [
+[
+684.34,
+722.2
+]
+],
+"eve": [
+[
+1259.31,
+1270
+]
+]
+},
+"hb": [
+[
+0,
+3
+]
+],
+"txt": {
+"recapTitle": "$8 STEAK · 7 THINGS",
+"recap": [
+"Buy a chuck eye",
+"Grated onion, one hour",
+"Scrape, dry, then salt",
+"Heavy pan, flip each minute",
+"145°F, then rest",
+"Cook the onion into sauce",
+"Slice across the grain"
+],
+"ask": [
+"IN THE COMMENTS",
+"Cheapest thing",
+"that fooled them?"
+],
+"next": [
+"WHY MY RICE",
+"IS NEVER MUSHY"
+],
+"lower": [
+49.84,
+55.84
+]
+},
+"tema": "cheap steak"
+}

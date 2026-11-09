@@ -1,0 +1,258 @@
+[
+ {
+  "k": "sticker",
+  "at": 4.98,
+  "out": 13.98,
+  "ph": "you turn over the little",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "receipt",
+  "at": 40.88,
+  "out": 49.88,
+  "ph": "I took out the receipt",
+  "dev": -1.5,
+  "items": []
+ },
+ {
+  "k": "crate",
+  "at": 70.59,
+  "out": 78.59,
+  "ph": "It's probably in a basket",
+  "dev": -0.4,
+  "items": []
+ },
+ {
+  "k": "marble",
+  "at": 87.14,
+  "out": 95.14,
+  "ph": "Nothing you do in your kitchen",
+  "dev": -3.7,
+  "items": []
+ },
+ {
+  "k": "whisper",
+  "at": 149.21,
+  "out": 157.71,
+  "ph": "He looked left and looked",
+  "dev": 1.9,
+  "items": []
+ },
+ {
+  "k": "cowmap",
+  "at": 163.3,
+  "out": 171.8,
+  "ph": "There are only a few",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "treadcow",
+  "at": 198.28,
+  "out": 206.28,
+  "ph": "Cheap cuts come",
+  "dev": -4.4,
+  "items": []
+ },
+ {
+  "k": "ropes",
+  "at": 211.94,
+  "out": 220.94,
+  "ph": "like a bundle of thin ropes",
+  "dev": 0.1,
+  "items": []
+ },
+ {
+  "k": "tooth",
+  "at": 248.37,
+  "out": 256.37,
+  "ph": "a huge man with a huge",
+  "dev": -3.6,
+  "items": []
+ },
+ {
+  "k": "snip",
+  "at": 297.8,
+  "out": 307.3,
+  "ph": "those enzymes cut proteins",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "tap",
+  "at": 330.42,
+  "out": 338.92,
+  "ph": "the bottom of a small heavy",
+  "dev": 0.1,
+  "items": []
+ },
+ {
+  "k": "grater",
+  "at": 347.84,
+  "out": 356.34,
+  "ph": "of a box grater",
+  "dev": 0.1,
+  "items": []
+ },
+ {
+  "k": "gate",
+  "at": 367.89,
+  "out": 375.89,
+  "ph": "One hour and no more",
+  "dev": -1.6,
+  "items": []
+ },
+ {
+  "k": "wetbag",
+  "at": 383.03,
+  "out": 391.03,
+  "ph": "like a wet paper bag",
+  "dev": -4.5,
+  "items": []
+ },
+ {
+  "k": "beads",
+  "at": 410.49,
+  "out": 418.99,
+  "ph": "If you put salt on",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "grey",
+  "at": 461.24,
+  "out": 469.24,
+  "ph": "A wet steak",
+  "dev": -4.8,
+  "items": []
+ },
+ {
+  "k": "flip",
+  "at": 528.05,
+  "out": 537.05,
+  "ph": "And then you flip it",
+  "dev": -7.4,
+  "items": []
+ },
+ {
+  "k": "probe",
+  "at": 560.87,
+  "out": 569.87,
+  "ph": "Please buy a little instant",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "fond",
+  "at": 609.51,
+  "out": 618.51,
+  "ph": "All of those brown bits",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "line",
+  "at": 643.61,
+  "out": 651.61,
+  "ph": "thick enough to leave a line",
+  "dev": -5.4,
+  "items": []
+ },
+ {
+  "k": "fourbowls",
+  "at": 695.42,
+  "out": 704.92,
+  "ph": "In Japan, that would be",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "cabbage",
+  "at": 726.45,
+  "out": 734.44,
+  "ph": "a little cabbage",
+  "dev": 0.1,
+  "items": []
+ },
+ {
+  "k": "shoelace",
+  "at": 760.16,
+  "out": 768.16,
+  "ph": "that's how you turn tender",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "puddle",
+  "at": 808.82,
+  "out": 817.32,
+  "ph": "look at the bottom of the tray",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "wrap",
+  "at": 828.21,
+  "out": 836.21,
+  "ph": "Wrap it tightly",
+  "dev": -2.1,
+  "items": []
+ },
+ {
+  "k": "dull",
+  "at": 860.62,
+  "out": 869.12,
+  "ph": "A dull knife doesn't",
+  "dev": -1.3,
+  "items": []
+ },
+ {
+  "k": "fatjar",
+  "at": 927.81,
+  "out": 936.31,
+  "ph": "It went in a little jar",
+  "dev": -4.8,
+  "items": []
+ },
+ {
+  "k": "strength",
+  "at": 989.61,
+  "out": 998.11,
+  "ph": "be very careful because those",
+  "dev": -0.7,
+  "items": []
+ },
+ {
+  "k": "batches",
+  "at": 1057.97,
+  "out": 1066.47,
+  "ph": "cook them in two batches",
+  "dev": -1.4,
+  "items": []
+ },
+ {
+  "k": "rest",
+  "at": 1104.8,
+  "out": 1113.8,
+  "ph": "So you rest it for five",
+  "dev": 0.1,
+  "items": []
+ },
+ {
+  "k": "across",
+  "at": 1135.14,
+  "out": 1145.14,
+  "ph": "and cut across them",
+  "dev": 0.0,
+  "items": []
+ },
+ {
+  "k": "nochew",
+  "at": 1151.77,
+  "out": 1160.27,
+  "ph": "The tough part of chewing",
+  "dev": 0.1,
+  "items": []
+ }
+]
