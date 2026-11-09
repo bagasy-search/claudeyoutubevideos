@@ -1,0 +1,291 @@
+[
+{
+"k": "handscale",
+"at": 112.38,
+"out": 120.38,
+"ph": "drop it on a small kitchen scale",
+"items": [
+{
+"at": 114.88,
+"txt": "Do it five times"
+}
+]
+},
+{
+"k": "saucer",
+"at": 130.12,
+"out": 137.12,
+"ph": "she poured a little",
+"items": []
+},
+{
+"k": "towelgrip",
+"at": 162.68,
+"out": 169.68,
+"ph": "The board will not move",
+"items": []
+},
+{
+"k": "bowlsharp",
+"at": 192.72,
+"out": 199.72,
+"ph": "draw it along that ring",
+"items": [
+{
+"at": 194.36,
+"txt": "ten times on each"
+}
+]
+},
+{
+"k": "standup",
+"at": 211.06,
+"out": 219.06,
+"ph": "A carrot grew standing up",
+"items": [
+{
+"at": 224.22,
+"txt": "Stand them up"
+}
+]
+},
+{
+"k": "soldiers",
+"at": 251.44,
+"out": 256.24,
+"ph": "Flower arrangers in Japan",
+"items": [
+{
+"at": 258.04,
+"txt": "Those stems will stand"
+}
+]
+},
+{
+"k": "groundline",
+"at": 275.34,
+"out": 284.34,
+"ph": "What grows under the ground",
+"items": [
+{
+"at": 275.4,
+"txt": "What grows above the ground"
+}
+]
+},
+{
+"k": "dipstems",
+"at": 308.36,
+"out": 316.36,
+"ph": "Hold the bunch by the leaves",
+"items": [
+{
+"at": 313.92,
+"txt": "Then let go of the leaves"
+}
+]
+},
+{
+"k": "sashi",
+"at": 344.95,
+"out": 350.45,
+"ph": "It is the order you put",
+"items": []
+},
+{
+"k": "mushsponge",
+"at": 392.01,
+"out": 396.51,
+"ph": "A mushroom is a sponge",
+"items": []
+},
+{
+"k": "crowdpan",
+"at": 403.66,
+"out": 409.66,
+"ph": "If the pieces are touching",
+"items": []
+},
+{
+"k": "thumbfish",
+"at": 488.22,
+"out": 494.22,
+"ph": "she pressed my thumb",
+"items": [
+{
+"at": 488.35,
+"txt": "That is how you know"
+}
+]
+},
+{
+"k": "itazuri",
+"at": 504.85,
+"out": 512.85,
+"ph": "Lay a cucumber on the board",
+"items": []
+},
+{
+"k": "hiddencross",
+"at": 539.65,
+"out": 547.65,
+"ph": "We call it",
+"items": []
+},
+{
+"k": "vinegarbath",
+"at": 573.24,
+"out": 579.74,
+"ph": "drop the slices in as you cut",
+"items": []
+},
+{
+"k": "trembling",
+"at": 595.67,
+"out": 599.97,
+"ph": "keep it barely moving",
+"items": []
+},
+{
+"k": "sproutsnap",
+"at": 625.13,
+"out": 630.13,
+"ph": "they fill back up",
+"items": []
+},
+{
+"k": "moonjar",
+"at": 683.26,
+"out": 690.76,
+"ph": "Put them to bed",
+"items": [
+{
+"at": 684.51,
+"txt": "In the morning you have"
+}
+]
+},
+{
+"k": "twodaikon",
+"at": 699.64,
+"out": 707.64,
+"ph": "The top of a daikon",
+"items": [
+{
+"at": 698.73,
+"txt": "The bottom, near the point"
+}
+]
+},
+{
+"k": "onionlines",
+"at": 730.36,
+"out": 738.36,
+"ph": "Cut along the lines",
+"items": [
+{
+"at": 734.09,
+"txt": "Cut across those lines"
+}
+]
+},
+{
+"k": "fishbeads",
+"at": 765.06,
+"out": 772.06,
+"ph": "Little beads of water",
+"items": [
+{
+"at": 771.27,
+"txt": "Wipe it all off"
+}
+]
+},
+{
+"k": "farfire",
+"at": 807.65,
+"out": 813.42,
+"ph": "Up close, it burns",
+"items": []
+},
+{
+"k": "starchcoat",
+"at": 837.03,
+"out": 843.03,
+"ph": "The starch makes a thin coat",
+"items": []
+},
+{
+"k": "twofry",
+"at": 867.5,
+"out": 874.5,
+"ph": "while the heat walks",
+"items": []
+},
+{
+"k": "lace",
+"at": 907.23,
+"out": 911.16,
+"ph": "Lumps are lace",
+"items": []
+},
+{
+"k": "threepick",
+"at": 949.83,
+"out": 955.83,
+"ph": "Pick only three",
+"items": []
+},
+{
+"k": "chopgap",
+"at": 983.7,
+"out": 990.7,
+"ph": "Slide a chopstick under",
+"items": []
+},
+{
+"k": "atesilent",
+"at": 1030.06,
+"out": 1036.06,
+"ph": "she would eat all of it",
+"items": [
+{
+"at": 1029.9,
+"txt": "and she would say nothing"
+}
+]
+},
+{
+"k": "salthands",
+"at": 1051.5,
+"out": 1057.96,
+"ph": "The salt stays on the outside",
+"items": []
+},
+{
+"k": "firestreet",
+"at": 1081.23,
+"out": 1089.73,
+"ph": "a fire started three houses",
+"items": [
+{
+"at": 1086.46,
+"txt": "she came out carrying"
+}
+]
+},
+{
+"k": "nukabed",
+"at": 1135.1,
+"out": 1142.37,
+"ph": "You bury cabbage leaves",
+"items": []
+},
+{
+"k": "tincross",
+"at": 1214.81,
+"out": 1220.81,
+"ph": "It came across the ocean",
+"items": []
+}
+]
