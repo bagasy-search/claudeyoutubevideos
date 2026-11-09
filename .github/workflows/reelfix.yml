@@ -1,0 +1,45 @@
+﻿# REELFIX: saca el mosaico de un reel de avatar (InfiniteTalk lo mete a partir de ~130 s) en el runner, no en la laptop.
+# Entrada: el reel original como asset <asset> del release <tag> (lo sube la sesión: gh release upload).
+# Salida: reel0.mp4 + av_still.png + plate.png de vuelta al MISMO release (fixed-reel0.mp4, fixed-av_still.png, fixed-plate.png).
+#   gh workflow run reelfix.yml -f tag=reelfix-apa8pc -f asset=reel0_orig.mp4 -f foot=250,600,340
+# foot = caja x0,x1,y0 del parche fijo de pies (vacío = sin parche). Script: scripts/reelfix_farm.py. (8-nov-2026)
+name: reelfix
+run-name: reelfix ${{ inputs.tag }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag: { description: 'release con el reel original', required: true }
+      asset: { description: 'nombre del asset del reel original', required: true, default: 'reel0_orig.mp4' }
+      foot: { description: 'x0,x1,y0 del parche de pies (vacío = sin parche)', required: false, default: '250,600,340' }
+
+permissions:
+  contents: write
+
+jobs:
+  reelfix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: ${{ inputs.tag }}
+      ASSET: ${{ inputs.asset }}
+      FOOT: ${{ inputs.foot }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { sparse-checkout: scripts/reelfix_farm.py, sparse-checkout-cone-mode: false }
+      - name: dependencias
+        run: |
+          command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          pip install -q numpy opencv-python-headless onnxruntime
+          mkdir -p ~/.u2net
+          curl -fsSL --retry 4 -o ~/.u2net/u2net_human_seg.onnx https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net_human_seg.onnx
+      - name: bajar reel
+        run: gh release download "$TAG" -R "$GITHUB_REPOSITORY" -p "$ASSET" -O src.mp4
+      - name: reelfix
+        run: python scripts/reelfix_farm.py src.mp4 out "$FOOT"
+      - name: subir
+        run: |
+          cd out
+          for f in reel0.mp4 av_still.png plate.png; do cp "$f" "fixed-$f"; done
+          gh release upload "$TAG" -R "$GITHUB_REPOSITORY" --clobber fixed-reel0.mp4 fixed-av_still.png fixed-plate.png
