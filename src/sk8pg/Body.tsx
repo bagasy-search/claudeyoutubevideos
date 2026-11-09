@@ -26,8 +26,13 @@ export const END = PL.end;
 
 // ===== la BASE: foto/clip del tramo (con zoom lento) o el mundo =====
 const base = (t: number): React.ReactNode => {
-  const g = PL.segs.find(([a, b]) => t >= a && t < b);
-  if (!g) return <World t={t} />;
+  // hueco entre planos (cola del heroe, 1-3 cuadros al cruzar): nunca la cocina vacia. Veo recien terminado sigue; si no, la foto mas cercana quieta
+  const g = PL.segs.find(([a, b]) => t >= a && t < b) ?? PL.segs.find(([a, b, , i]) => i.startsWith("v") && t >= b && t < b + 0.35 && t - a < 7.9 && OK.has(i));
+  if (!g) {
+    let best: Seg | undefined, bd = 1e9;
+    for (const q of PL.segs) { if (q[3].startsWith("v")) continue; const d = t < q[0] ? q[0] - t : t - q[1]; if (d < bd) { bd = d; best = q; } }
+    return best ? <Shot k={best[3]} t={Math.min(best[1], Math.max(best[0], t))} a={best[0]} d={best[1] - best[0]} /> : <World t={t} />;
+  }
   const [a, , , id] = g;
   // clip de Veo (8 s, ya con movimiento): va entero desde su cuadro 0; si todavía no llegó, el mundo
   if (id.startsWith("v")) return OK.has(id) ? <AbsoluteFill style={{ transformOrigin: "0% 50%", transform: `scale(${1.11 + 0.03 * e(t, a, a + 8)})` }}><Vid id={"veo/" + id} at={a} /></AbsoluteFill> : VF.has(id) ? <Shot k={"vf_" + id} t={t} a={a} /> : <World t={t} />;
