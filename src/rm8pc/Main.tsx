@@ -202,7 +202,7 @@ const SubBtn: React.FC<{ t: number; at: number; out: number }> = ({ t, at: a, ou
   const click = e(t, a + 0.9, a + 1.05) * (1 - e(t, a + 1.05, a + 1.25)), on = t > a + 1.05, bell = a + 1.6;
   const sw = t > bell ? 22 * Math.exp(-(t - bell) * 1.5) * Math.sin((t - bell) * 18) : 0;
   return <div style={{ position: "absolute", left: 960, top: 840, opacity: o, transform: `translate(-50%,-50%) scale(${Math.min(1.05, spr(t, a))})`, display: "flex", alignItems: "center", gap: 30 }}>
-    <div style={{ padding: "26px 60px", borderRadius: 18, background: on ? "#5a5550" : "#e2231a", ...caja, fontSize: 64, letterSpacing: 2, boxShadow: `0 ${18 - click * 12}px 0 ${on ? "#2e2b28" : "#8a120c"}, 0 30px 50px rgba(0,0,0,.5)`, transform: `translateY(${click * 12}px)` }}>{on ? "SUSCRITA ✓" : "SUSCRÍBASE"}</div>
+    <div style={{ padding: "26px 60px", borderRadius: 18, background: on ? "#5a5550" : "#e2231a", ...caja, fontSize: 64, letterSpacing: 2, boxShadow: `0 ${18 - click * 12}px 0 ${on ? "#2e2b28" : "#8a120c"}, 0 30px 50px rgba(0,0,0,.5)`, transform: `translateY(${click * 12}px)` }}>{on ? "SUBSCRIBED ✓" : "SUBSCRIBE"}</div>
     <div style={{ fontSize: 110, transform: `rotate(${sw}deg)`, transformOrigin: "50% 10%", opacity: e(t, bell - 0.4, bell - 0.1) }}>🔔</div>
   </div>;
 };
