@@ -25,10 +25,11 @@ const sobre = (w: number, h: number, q: [P, P, P, P]) => {
 const BID_A: P[] = [[398, 124], [492, 124], [500, 186], [540, 222], [590, 290], [630, 365], [642, 440], [640, 620], [642, 800], [625, 880], [580, 898], [300, 898], [262, 880], [246, 800], [246, 440], [262, 365], [300, 290], [345, 225], [390, 186]];
 const BID_B: P[] = [[815, 114], [915, 114], [922, 180], [962, 215], [1010, 280], [1055, 360], [1070, 440], [1068, 620], [1070, 800], [1052, 895], [1000, 915], [735, 915], [680, 895], [663, 800], [664, 440], [678, 360], [722, 280], [770, 215], [808, 180]];
 const BID_D: P[] = [[1340, 146], [1430, 146], [1437, 205], [1475, 245], [1525, 320], [1555, 400], [1560, 480], [1558, 596], [1310, 596], [1300, 545], [1255, 520], [1220, 505], [1212, 470], [1214, 400], [1250, 320], [1295, 245], [1333, 205]];
+const ANOTADOR: P[] = [[150, 440], [270, 416], [400, 390], [534, 365], [590, 470], [650, 590], [716, 729], [590, 780], [440, 838], [285, 895], [240, 740], [195, 590]];
 const LENTE: P = [1004, 691];
 const FAROL: P = [1185, 705];
 // [cuadro de salida, cuadro de llegada, x, y, radio x, radio y]
-const PARADAS: [number, number, number, number, number, number][] = [[4, 14, 742, 555, 240, 190], [118, 140, 1300, 590, 340, 260], [171, 187, 935, 440, 240, 190], [210, 226, LENTE[0], LENTE[1], 170, 150]];
+const PARADAS: [number, number, number, number, number, number][] = [[4, 14, 770, 552, 210, 180], [118, 140, 1300, 590, 340, 260], [171, 187, 935, 440, 240, 190], [210, 226, LENTE[0], LENTE[1], 170, 150]];
 const foco = (f: number) => {
   let p = [900, 740, 330, 210];
   for (const [a, b, x, y, rx, ry] of PARADAS) { const k = tramo(f, a, b, IO); p = [lerp(p[0], x, k), lerp(p[1], y, k), lerp(p[2], rx, k), lerp(p[3], ry, k)]; }
@@ -52,6 +53,7 @@ export const Esc2: React.FC = () => {
     {f < 234 && <Caja><div style={mundo(camMesa)}>
       <Img src={foto("p139")} style={{ ...FILL, filter: "brightness(.34) saturate(.8)" }} />
       <Img src={foto("p139")} style={{ ...FILL, filter: `brightness(${pulso})`, ...mask(`radial-gradient(ellipse ${rx}px ${ry}px at ${x}px ${y}px,#000 38%,transparent 100%)`) }} />
+      <Img src={foto("p139")} style={{ ...FILL, clipPath: poli(ANOTADOR), filter: "brightness(.34) saturate(.8)" }} />
       {brilloLente > 0 && <div style={{ ...FILL, opacity: brilloLente, background: `radial-gradient(circle 130px at ${LENTE[0]}px ${LENTE[1]}px,#fff8ea 0%,#fff3dd 45%,rgba(255,240,215,0) 100%)` }} />}
     </div></Caja>}
     {f >= 228 && <Caja><div style={mundo(camEstante)}>
@@ -123,7 +125,7 @@ export const Esc4: React.FC = () => {
       <Img src={foto("p116")} style={{ ...FILL, filter: `brightness(${lerp(1, 0.4, baja)}) saturate(${lerp(1, 0.75, baja)})` }} />
       {tel > 0 && <>
         <div style={{ ...FILL, opacity: tel * 0.5, mixBlendMode: "screen", background: "radial-gradient(ellipse 380px 280px at 690px 770px,rgba(150,185,255,.5) 0%,rgba(120,160,240,.14) 60%,rgba(0,0,0,0) 100%)" }} />
-        <div style={{ ...FILL, opacity: tel, clipPath: poli(PANTALLA), background: "linear-gradient(135deg,#d6e4fb 0%,#9db8ea 55%,#6f8dcf 100%)" }} />
+        <div style={{ ...FILL, opacity: tel, clipPath: poli(PANTALLA), background: "linear-gradient(135deg,#4a6cb0 0%,#2a437f 55%,#16244d 100%)" }} />
       </>}
       {baja > 0 && <div style={{ ...FILL, opacity: baja, filter: "drop-shadow(0 0 26px rgba(255,240,215,.3))" }}><Img src={foto("p116")} style={{ ...FILL, clipPath: poli(PAPEL), filter: "brightness(1.1)" }} /></div>}
     </div></Caja>}
