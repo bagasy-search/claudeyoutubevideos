@@ -69,7 +69,7 @@ const Quemado: React.FC<{ f: number; c: Cam }> = ({ f, c }) => {
       <Img src={foto("p044")} style={FILL} />
       <Img src={foto("p044")} style={{ ...FILL, opacity: pulso, filter: "sepia(1) saturate(7) hue-rotate(-18deg) brightness(1.25) contrast(1.15)", WebkitMaskImage: brasa, maskImage: brasa }} />
     </div>
-    <div style={{ ...FILL, opacity: 1 - tramo(f, 106, 113), mixBlendMode: "screen", background: `radial-gradient(${elipse},rgba(255,170,70,0) 60%,rgba(255,180,80,.95) 76%,rgba(255,120,30,0) 96%)` }} />
+    <div style={{ ...FILL, opacity: 1 - tramo(f, 106, 113), mixBlendMode: "screen", background: `radial-gradient(${elipse},rgba(255,120,30,0) 68%,rgba(255,130,35,.75) 76%,rgba(255,90,20,0) 86%)` }} />
   </div>;
 };
 
@@ -87,7 +87,7 @@ export const Esc1: React.FC = () => {
       <div style={mundo(c)}>
         <Img src={foto("p050")} style={{ ...FILL, filter: `brightness(${lerp(1, 0.66, oscura)}) saturate(${lerp(1, 0.75, oscura)})` }} />
         {horno > 0 && <Img src={foto("p050")} style={{ ...FILL, opacity: horno * lerp(1, 0.55, hornalla), filter: "brightness(1.55) saturate(1.1)", WebkitMaskImage: FOCO_HORNO, maskImage: FOCO_HORNO }} />}
-        {horno > 0 && <div style={{ ...FILL, opacity: horno * lerp(0.5, 0.25, hornalla), mixBlendMode: "screen", background: "radial-gradient(ellipse 430px 400px at 712px 650px,rgba(255,165,70,.45) 0%,rgba(255,130,40,.14) 60%,rgba(0,0,0,0) 100%)" }} />}
+        {horno > 0 && <div style={{ ...FILL, opacity: horno * lerp(0.16, 0.08, hornalla), mixBlendMode: "screen", background: "radial-gradient(ellipse 300px 280px at 712px 650px,rgba(255,165,70,.45) 0%,rgba(255,130,40,.14) 60%,rgba(0,0,0,0) 100%)" }} />}
         {hornalla > 0 && <Img src={foto("p050")} style={{ ...FILL, opacity: hornalla, filter: "brightness(2.2) sepia(.2)", WebkitMaskImage: FOCO_HORNALLA, maskImage: FOCO_HORNALLA }} />}
       </div>
     </div>}
