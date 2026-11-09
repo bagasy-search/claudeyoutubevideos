@@ -1,0 +1,6 @@
+import * as A from "./heroes_a1";
+import * as B from "./heroes_a2";
+import * as C from "./heroes_a3";
+export const HREG: Record<string, any> = { needlebug: A.HNeedleBug, airdrink: A.HAirDrink, threehygros: A.HThreeHygros, frontdoor: A.HFrontDoor, dinoslab: A.HDinoSlab, carrot: A.HCarrot, nofangs: A.HNoFangs, biblebite: A.HBibleBite, restaurant: A.HRestaurant, wallapt: A.HWallApt, jarbread: A.HJarBread, jarclimb: A.HJarClimb, scorejars: A.HScoreJars, tptest: A.HTPTest, atticduct: A.HAtticDuct, runhome: A.HRunHome,
+  dumbwaiter: B.HDumbwaiter, foilsides: B.HFoilSides, gallons: B.HGallons, slopeball: B.HSlopeBall, waterguests: B.HWaterGuests, asbestosstop: B.HAsbestosStop, fastslow: B.HFastSlow, julywindow: B.HJulyWindow, dehumhose: B.HDehumHose, plasticfloor: B.HPlasticFloor, firebreathe: B.HFireBreathe, closetgap: B.HClosetGap,
+  fogbug: C.HFogBug, cardthree: C.HCardThree, chewbag: C.HChewBag, puffvoid: C.HPuffVoid, firebratdrip: C.HFirebratDrip, grazedpaper: C.HGrazedPaper, seambed: C.HSeamBed, pantryjars: C.HPantryJars, bayleaf: C.HBayLeaf, ladderplan: C.HLadderPlan, fewtonone: C.HFewToNone, jarpoints: C.HJarPoints, twinrooms: C.HTwinRooms, thankyou: C.HThankYou, below50: C.HBelow50, top84: C.HTop84 };
