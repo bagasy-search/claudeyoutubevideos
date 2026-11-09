@@ -104,7 +104,7 @@ export const Esc3: React.FC = () => {
 
 // ===== E4: lo escrito en la hoja real; el papel sigue cuando el teléfono se apaga =====
 const HOJA: [P, P, P, P] = [[361, 518], [906, 313], [1633, 681], [1000, 1095]];
-const PANTALLA: P[] = [[505, 688], [580, 672], [655, 656], [720, 715], [790, 775], [890, 838], [800, 855], [720, 870], [662, 875], [610, 820], [550, 755]];
+const PANTALLA: P[] = [[498, 686], [506, 678], [530, 673], [600, 663], [680, 652], [692, 651], [702, 658], [780, 721], [860, 786], [899, 819], [904, 828], [898, 836], [860, 842], [780, 855], [700, 867], [668, 873], [658, 870], [624, 830], [585, 783], [544, 738]];
 const PAPEL: P[] = [[760, 620], [900, 594], [1040, 570], [1190, 546], [1290, 605], [1385, 658], [1318, 656], [1260, 675], [1181, 706], [1147, 727], [1144, 770], [1175, 796], [1186, 828], [1244, 854], [1339, 870], [1160, 920]];
 const Renglon: React.FC<{ f: number; a: number; b: number; y: number; children: string }> = ({ f, a, b, y, children }) => {
   const v = tramo(f, a, b);
@@ -125,7 +125,7 @@ export const Esc4: React.FC = () => {
       <Img src={foto("p116")} style={{ ...FILL, filter: `brightness(${lerp(1, 0.4, baja)}) saturate(${lerp(1, 0.75, baja)})` }} />
       {tel > 0 && <>
         <div style={{ ...FILL, opacity: tel * 0.5, mixBlendMode: "screen", background: "radial-gradient(ellipse 380px 280px at 690px 770px,rgba(150,185,255,.5) 0%,rgba(120,160,240,.14) 60%,rgba(0,0,0,0) 100%)" }} />
-        <div style={{ ...FILL, opacity: tel, clipPath: poli(PANTALLA), background: "linear-gradient(135deg,#4a6cb0 0%,#2a437f 55%,#16244d 100%)" }} />
+        <div style={{ ...FILL, opacity: tel, clipPath: poli(PANTALLA), filter: "blur(.5px)", background: "linear-gradient(135deg,#4a6cb0 0%,#2a437f 55%,#16244d 100%)" }} />
       </>}
       {baja > 0 && <div style={{ ...FILL, opacity: baja, filter: "drop-shadow(0 0 26px rgba(255,240,215,.3))" }}><Img src={foto("p116")} style={{ ...FILL, clipPath: poli(PAPEL), filter: "brightness(1.1)" }} /></div>}
     </div></Caja>}
