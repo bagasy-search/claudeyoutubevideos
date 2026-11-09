@@ -1,0 +1,9 @@
+// MIO apa8pc · registro de los componentes únicos (clave de heroes.json → componente) y cuadro 0.
+import React from "react";
+import { H } from "./hkit";
+import { HFlipSquares, HGrubScent, HCupFit, HSodCarpet, HWornDirt, HFiveToes, HBackupBoots, HRangeArc, HWobblePath, HVialShot, HCageDrop, HMonthGate, HSundownHour, HUnderDeckCut, HLightFill, HRadioTalk, HPotToss, HSteamWindow, HNotFood, HNoForce, HRakeSlide, HPerimeterGap } from "./heroes_1";
+import { HMothDrip, HFourRing, HSwingOut, HSevenMoons, HWindowLift, HSealDark, HThermo40, HPaperStuff, HPaperOut, HRollMeasure, HDigQuits, HNemaDrop, HDeckPull, HFlashGap, HKnotRope, HShakeKeys, HSprinklerIce, HDkBag, HTomatoJuice, HSulfurBreak, HBottleBurst } from "./heroes_2";
+export { Thumb0 } from "./thumb0";
+export const HC: Record<string, React.FC<{ t: number; h: H }>> = {
+  flipsquares: HFlipSquares, grubscent: HGrubScent, cupfit: HCupFit, sodcarpet: HSodCarpet, worndirt: HWornDirt, fivetoes: HFiveToes, backupboots: HBackupBoots, rangearc: HRangeArc, wobblepath: HWobblePath, vialshot: HVialShot, cagedrop: HCageDrop, monthgate: HMonthGate, sundownhour: HSundownHour, underdeckcut: HUnderDeckCut, lightfill: HLightFill, radiotalk: HRadioTalk, pottoss: HPotToss, steamwindow: HSteamWindow, notfood: HNotFood, noforce: HNoForce, rakeslide: HRakeSlide, perimetergap: HPerimeterGap, mothdrip: HMothDrip, fourring: HFourRing, swingout: HSwingOut, sevenmoons: HSevenMoons, windowlift: HWindowLift, sealdark: HSealDark, thermo40: HThermo40, paperstuff: HPaperStuff, paperout: HPaperOut, rollmeasure: HRollMeasure, digquits: HDigQuits, nemadrop: HNemaDrop, deckpull: HDeckPull, flashgap: HFlashGap, knotrope: HKnotRope, shakekeys: HShakeKeys, sprinklerice: HSprinklerIce, dkbag: HDkBag, tomatojuice: HTomatoJuice, sulfurbreak: HSulfurBreak, bottleburst: HBottleBurst,
+};
