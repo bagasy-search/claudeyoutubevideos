@@ -26,6 +26,8 @@ const PL = PLAN as unknown as { segs: Seg[]; ov: Ov[]; cta1: Cta; cta2: Cta; cta
 export const END = PL.end;
 
 // ===== la BASE: foto/clip del tramo (con zoom lento) o el mundo =====
+// 8-nov: la foto de fondo asomaba 2-3 cuadros al cerrar una ventana del avatar: en esos cuadros sigue el avatar (el reel vive +14 cuadros)
+const HOLD: [number, number][] = [[198.611, 198.7], [604.784, 604.861]];
 const base = (t: number): React.ReactNode => {
   const g = PL.segs.find(([a, b]) => t >= a && t < b);
   if (!g) return <World t={t} />;
@@ -38,7 +40,7 @@ const base = (t: number): React.ReactNode => {
 
 // el avatar entra y sale con CORTE SECO (vara fe02): ni portal ni fundido
 // CUADRO 0 = la miniatura rehecha en código (la casa abierta en corte, Sachiko en el almohadón que brilla), sin texto ni flecha
-const Stage: React.FC<{ t: number }> = ({ t }) => (t < 1 / 30 ? <AbsoluteFill><Img src={staticFile("sk8pe/cuadro0.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill> : WIN.some((x) => t >= x.ms && t < x.me) ? <Avatar t={t} /> : <>{base(t)}</>);
+const Stage: React.FC<{ t: number }> = ({ t }) => (t < 1 / 30 ? <AbsoluteFill><Img src={staticFile("sk8pe/cuadro0.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill> : WIN.some((x) => t >= x.ms && t < x.me) || HOLD.some(([a, b]) => t >= a && t < b) ? <Avatar t={t} /> : <>{base(t)}</>);
 
 // sobre el avatar, el rótulo de paso y la descripción van a la izquierda y más chicos: nunca tapan la cara
 const avOn = (a: number, b: number) => WIN.some((w) => a < w.me && b > w.ms);
