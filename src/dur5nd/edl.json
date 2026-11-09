@@ -1,0 +1,3770 @@
+{
+"end": 1558.99,
+"shots": [
+{
+"a": 0.0,
+"b": 9.58,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ChapoteBrilla",
+"at": {
+"huele": 154
+}
+},
+"big": true
+},
+{
+"a": 9.58,
+"b": 12.8,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/labrea_01.jpg",
+"ar": 1.2089,
+"o": {
+"credit": "Didier Descouens · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 12.8,
+"b": 14.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_lb01.jpg"
+}
+},
+{
+"a": 14.52,
+"b": 16.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/labrea_02.jpg",
+"o": {
+"credit": "Daniel Schwen · Wikimedia Commons · CC BY-SA 2.5"
+}
+}
+},
+{
+"a": 16.22,
+"b": 19.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_lb02.jpg"
+}
+},
+{
+"a": 19.0,
+"b": 20.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/labrea_03.jpg",
+"o": {
+"credit": "WikiWhens · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 20.62,
+"b": 22.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_lb03.jpg"
+}
+},
+{
+"a": 22.92,
+"b": 24.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/labrea_04.jpg",
+"o": {
+"credit": "Downtowngal · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 24.62,
+"b": 26.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/labrea_05.jpg",
+"o": {
+"credit": "Carsten Tolkmit · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 26.58,
+"b": 28.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/labreafos_01.jpg",
+"o": {
+"credit": "AbstractionBlue · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 28.56,
+"b": 31.4,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "AlasSala",
+"at": {}
+},
+"big": true
+},
+{
+"a": 31.4,
+"b": 36.28,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"el cronómetro *ya corre.*"
+],
+"a": 2,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 36.28,
+"b": 38.14,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/wolf_01.jpg",
+"ar": 0.801,
+"o": {
+"credit": "Gary Kramer · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 38.14,
+"b": 39.5,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/wolf_02.jpg",
+"o": {
+"credit": "Malene Thyssen · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 39.5,
+"b": 49.02,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "RazasJovenes",
+"at": {}
+},
+"big": true
+},
+{
+"a": 49.02,
+"b": 51.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/wolf_03.jpg",
+"o": {
+"credit": "Mariofan13 · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 51.6,
+"b": 53.68,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/iceage_01.jpg",
+"o": {
+"credit": "Benjamin Waterhouse Hawkins · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 53.68,
+"b": 56.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/iceage_02.jpg",
+"o": {
+"credit": "Mauricio Antón · Wikimedia Commons · CC BY 2.5"
+}
+}
+},
+{
+"a": 56.46,
+"b": 58.8,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/mammstep_01.jpg",
+"ar": 1.2183,
+"o": {
+"credit": "Grom22 · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 58.8,
+"b": 61.14,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_ya01.jpg"
+}
+},
+{
+"a": 61.14,
+"b": 64.9,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/mammstep_02.jpg",
+"o": {
+"credit": "Nattnewl · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 64.9,
+"b": 69.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_ya02.jpg"
+}
+},
+{
+"a": 69.24,
+"b": 73.76,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/mammstep_03.jpg",
+"o": {
+"credit": "Jonathan Chen · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 73.76,
+"b": 84.08,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ReglaCargar",
+"at": {}
+},
+"big": true
+},
+{
+"a": 84.08,
+"b": 87.44,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_ya03.jpg"
+}
+},
+{
+"a": 87.44,
+"b": 98.02,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SinRazaSombra",
+"at": {}
+},
+"big": true
+},
+{
+"a": 98.02,
+"b": 100.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/mammstep_04.jpg",
+"o": {
+"credit": "Zissoudisctrucker · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 100.94,
+"b": 104.66,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/cavelion_01.jpg",
+"o": {
+"credit": "Didier Descouens · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 104.66,
+"b": 107.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/cavelion_02.jpg",
+"o": {
+"credit": "HTO · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 107.54,
+"b": 113.08,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Cada semana, otra época. Suscríbete + campanita."
+}
+},
+{
+"a": 113.08,
+"b": 123.34,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿Qué raza es tu perro y cuánto duraría?",
+"bell": false
+}
+},
+{
+"a": 123.34,
+"b": 124.56,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 0
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 124.56,
+"b": 132.48,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-118.36,
+34.06
+],
+"lines": [
+"RANCHO LA BREA",
+"13.000 AÑOS",
+"CHIHUAHUA"
+],
+"name": "La Brea"
+},
+"big": true
+},
+{
+"a": 132.48,
+"b": 136.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/labreafos_02.jpg",
+"o": {
+"credit": "James St. John · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 136.26,
+"b": 140.12,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/labreafos_03.jpg",
+"o": {
+"credit": "James St. John · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 140.12,
+"b": 142.36,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/labreafos_04.jpg",
+"o": {
+"credit": "James St. John · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 142.36,
+"b": 155.78,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TrampaAsfalto",
+"at": {}
+},
+"big": true
+},
+{
+"a": 155.78,
+"b": 159.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/teratornis_01.jpg",
+"o": {
+"credit": "Nobu Tamura (http://spinops.blogspot.com) · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 159.84,
+"b": 163.36,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/teratornis_02.jpg",
+"ar": 0.9731,
+"o": {
+"credit": "reverendlukewarm · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 163.36,
+"b": 167.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/teratornis_03.jpg",
+"o": {
+"credit": "Ellen from Ann Arbor, MI, USA · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 167.58,
+"b": 171.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/teratornis_04.jpg",
+"o": {
+"credit": "Esv · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 171.46,
+"b": 175.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/chihuahua_01.jpg",
+"o": {
+"credit": "JackyM59 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 175.0,
+"b": 179.22,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/chihuahua_02.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Banne27 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 179.22,
+"b": 183.72,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/chihuahua_03.jpg",
+"ar": 0.5625,
+"o": {
+"credit": "Banne27 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 183.72,
+"b": 187.54,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/chihuahua_04.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Carlos.ferreira.rejas · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 187.54,
+"b": 192.44,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/direwolf_01.jpg",
+"o": {
+"credit": "Bill Abbott · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 192.44,
+"b": 196.8,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/direwolf_02.jpg",
+"o": {
+"credit": "Eden, Janine and Jim · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 196.8,
+"b": 203.48,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ConejoTamano",
+"at": {}
+},
+"big": true
+},
+{
+"a": 203.48,
+"b": 213.88,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LadridoInutil",
+"at": {}
+},
+"big": true
+},
+{
+"a": 213.88,
+"b": 218.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/direwolf_03.jpg",
+"o": {
+"credit": "Momotarou2012 · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 218.0,
+"b": 221.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/direwolf_04.jpg",
+"o": {
+"credit": "Peter D. Tillman from USA · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 221.0,
+"b": 225.62,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 47,
+"tag": "47 SEG",
+"sub": "La pata tocó el asfalto.",
+"fz": 79,
+"s0": 45
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 225.62,
+"b": 226.72,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 1
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 226.72,
+"b": 234.42,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+134.0,
+-25.0
+],
+"prev": [
+-118.36,
+34.06
+],
+"lines": [
+"AUSTRALIA",
+"45.000 AÑOS",
+"BULLDOG INGLÉS"
+],
+"name": "Australia"
+},
+"big": true
+},
+{
+"a": 234.42,
+"b": 245.18,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TermometroCalor",
+"at": {}
+},
+"big": true
+},
+{
+"a": 245.18,
+"b": 249.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/diproto_01.jpg",
+"o": {
+"credit": "Bloopityboop · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 249.58,
+"b": 252.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_au01.jpg"
+}
+},
+{
+"a": 252.26,
+"b": 256.52,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/diproto_02.jpg",
+"ar": 1.2053,
+"o": {
+"credit": "Ghedoghedo · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 256.52,
+"b": 260.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_au02.jpg"
+}
+},
+{
+"a": 260.08,
+"b": 271.32,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TilacoleoRama",
+"at": {}
+},
+"big": true
+},
+{
+"a": 271.32,
+"b": 275.54,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/diproto_03.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Gameraquai · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 275.54,
+"b": 279.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_au03.jpg"
+}
+},
+{
+"a": 279.46,
+"b": 284.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/diproto_04.jpg",
+"o": {
+"credit": "Bloopityboop · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 284.48,
+"b": 287.14,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/thylacoleo_01.jpg",
+"o": {
+"credit": "Karora · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 287.14,
+"b": 288.66,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/bulldog_01.jpg",
+"ar": 0.75,
+"o": {
+"credit": "OtisGD · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 288.66,
+"b": 302.28,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TuboJadeo",
+"at": {}
+},
+"big": true
+},
+{
+"a": 302.28,
+"b": 306.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/bulldog_02.jpg",
+"o": {
+"credit": "Pleple2000 · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 306.72,
+"b": 310.36,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/bulldog_03.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Koala91 · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 310.36,
+"b": 315.16,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/smilodon_01.jpg",
+"o": {
+"credit": "TheUltimateGrass · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 315.16,
+"b": 316.9,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/smilodon_02.jpg",
+"o": {
+"credit": "Jonathan Chen · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 316.9,
+"b": 323.64,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 252,
+"tag": "4:12",
+"sub": "La lengua ya estaba morada.",
+"fz": 128,
+"s0": 232
+},
+"big": true
+},
+{
+"a": 323.64,
+"b": 324.78,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 2
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 324.78,
+"b": 331.12,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+129.7,
+62.0
+],
+"prev": [
+134.0,
+-25.0
+],
+"lines": [
+"YAKUTIA",
+"20.000 AÑOS",
+"TECKEL"
+],
+"name": "Yakutia"
+},
+"big": true
+},
+{
+"a": 331.12,
+"b": 334.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/cavelion_03.jpg",
+"o": {
+"credit": "HTO · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 334.56,
+"b": 344.7,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "EstepaMamut",
+"at": {}
+},
+"big": true
+},
+{
+"a": 344.7,
+"b": 348.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/woolrhino_01.jpg",
+"o": {
+"credit": "JukoFF · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 348.46,
+"b": 351.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/woolrhino_02.jpg",
+"o": {
+"credit": "Altes · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 351.58,
+"b": 354.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/woolrhino_03.jpg",
+"o": {
+"credit": "Franco Atirador · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 354.92,
+"b": 367.36,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CachorroHielo",
+"at": {}
+},
+"big": true
+},
+{
+"a": 367.36,
+"b": 371.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/dachshund_01.jpg",
+"o": {
+"credit": "Another one of my pictures: This photograph was  · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 371.58,
+"b": 373.66,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/dachshund_03.jpg",
+"o": {
+"credit": "Larry D. Moore · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 373.66,
+"b": 386.12,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "GenPatas",
+"at": {}
+},
+"big": true
+},
+{
+"a": 386.12,
+"b": 389.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/smilodon_03.jpg",
+"o": {
+"credit": "Chris Hunkeler from Carlsbad, California, USA · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 389.24,
+"b": 390.937,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/smilodon_04.jpg",
+"o": {
+"credit": "BrokenSphere · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 390.937,
+"b": 403.297,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NieveAlPecho",
+"at": {}
+},
+"big": true
+},
+{
+"a": 403.297,
+"b": 407.157,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/doggerland_02.jpg",
+"o": {
+"credit": "Jl FilpoC · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 407.157,
+"b": 411.237,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_do01.jpg"
+}
+},
+{
+"a": 411.237,
+"b": 414.917,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/doggerland_03.jpg",
+"o": {
+"credit": "Ogmios · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 414.917,
+"b": 432.137,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 690,
+"tag": "11:30",
+"sub": "Valiente. Pero el frío no se va.",
+"fz": 106,
+"s0": 646
+},
+"big": true
+},
+{
+"a": 432.137,
+"b": 438.957,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TresDisenos",
+"at": {}
+},
+"big": true
+},
+{
+"a": 438.957,
+"b": 445.497,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"perros hechos",
+"para *trabajar.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 445.497,
+"b": 450.457,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_do02.jpg"
+}
+},
+{
+"a": 450.457,
+"b": 452.437,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 3
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 452.437,
+"b": 456.957,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+3.0,
+54.5
+],
+"prev": [
+129.7,
+62.0
+],
+"lines": [
+"DOGGERLAND",
+"10.000 AÑOS",
+"CANICHE"
+],
+"name": "Doggerland"
+},
+"big": true
+},
+{
+"a": 456.957,
+"b": 471.777,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PaisHundido",
+"at": {}
+},
+"big": true
+},
+{
+"a": 471.777,
+"b": 474.597,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/aurochs_01.jpg",
+"o": {
+"credit": "Ivan Iofrida · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 474.597,
+"b": 478.897,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_do03.jpg"
+}
+},
+{
+"a": 478.897,
+"b": 482.417,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/aurochs_02.jpg",
+"o": {
+"credit": "Eldrichr · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 482.417,
+"b": 486.657,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/aurochs_03.jpg",
+"o": {
+"credit": "Daniele Zanni · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 486.657,
+"b": 491.637,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/poodle_03.jpg",
+"ar": 0.8771,
+"o": {
+"credit": "Don Ramey Logan · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 491.637,
+"b": 495.857,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/poodle_04.jpg",
+"ar": 0.75,
+"o": {
+"credit": "AnGomPe · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 495.857,
+"b": 498.257,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/mesolith_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 498.257,
+"b": 511.677,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CortePoodle",
+"at": {}
+},
+"big": true
+},
+{
+"a": 511.677,
+"b": 514.957,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/chauvet_01.jpg",
+"o": {
+"credit": "Inocybe at French Wikipedia · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 514.957,
+"b": 519.697,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_ch01.jpg"
+}
+},
+{
+"a": 519.697,
+"b": 522.957,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/chauvet_02.jpg",
+"ar": 1.1707,
+"o": {
+"credit": "HTO · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 522.957,
+"b": 527.257,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_ch02.jpg"
+}
+},
+{
+"a": 527.257,
+"b": 531.297,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/chauvet_03.jpg",
+"ar": 1.0089,
+"o": {
+"credit": "Thomas T. from somewhere on Earth · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 531.297,
+"b": 545.797,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NudosPeso",
+"at": {}
+},
+"big": true
+},
+{
+"a": 545.797,
+"b": 550.617,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_ch03.jpg"
+}
+},
+{
+"a": 550.617,
+"b": 554.377,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 198000,
+"tag": "2 D 7 H",
+"sub": "Un abrigo mojado que no se seca.",
+"fz": 43,
+"s0": 193247
+},
+"big": true
+},
+{
+"a": 554.377,
+"b": 555.577,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 4
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 555.577,
+"b": 562.297,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+4.4,
+44.4
+],
+"prev": [
+3.0,
+54.5
+],
+"lines": [
+"CHAUVET",
+"36.000 AÑOS",
+"GOLDEN RETRIEVER"
+],
+"name": "Chauvet"
+},
+"big": true
+},
+{
+"a": 562.297,
+"b": 564.737,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/ardeche_01.jpg",
+"o": {
+"credit": "W. Bulach · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 564.737,
+"b": 574.317,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "AntorchaPinta",
+"at": {}
+},
+"big": true
+},
+{
+"a": 574.317,
+"b": 578.597,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/ardeche_02.jpg",
+"o": {
+"credit": "Jan Hager · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 578.597,
+"b": 582.957,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/cavebear_01.jpg",
+"o": {
+"credit": "Llez · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 582.957,
+"b": 585.037,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/cavebear_02.jpg",
+"o": {
+"credit": "Ermell · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 585.037,
+"b": 596.457,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "HuellasNino",
+"at": {}
+},
+"big": true
+},
+{
+"a": 596.457,
+"b": 599.697,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/cavebear_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 599.697,
+"b": 602.597,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/cavebear_04.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Seriykotik · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 602.597,
+"b": 606.657,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/golden_01.jpg",
+"o": {
+"credit": "Dietmar Rabich · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 606.657,
+"b": 610.317,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/golden_02.jpg",
+"o": {
+"credit": "Grendelkhan · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 610.317,
+"b": 614.917,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/golden_03.jpg",
+"o": {
+"credit": "Barras · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 614.917,
+"b": 619.137,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/golden_04.jpg",
+"o": {
+"credit": "Museum of Veterinary Anatomy FMVZ USP · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 619.137,
+"b": 622.197,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/hyena_01.jpg",
+"o": {
+"credit": "Charles J. Sharp · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 622.197,
+"b": 625.877,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_af01.jpg"
+}
+},
+{
+"a": 625.877,
+"b": 630.397,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/hyena_02.jpg",
+"o": {
+"credit": "Diego Delso · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 630.397,
+"b": 632.337,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_af02.jpg"
+}
+},
+{
+"a": 632.337,
+"b": 647.217,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "OsoVegetariano",
+"at": {}
+},
+"big": true
+},
+{
+"a": 647.217,
+"b": 654.877,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 266400,
+"tag": "3 D 2 H",
+"sub": "Por suerte, es de los que vuelven.",
+"fz": 169,
+"s0": 240386
+},
+"big": true
+},
+{
+"a": 654.877,
+"b": 655.817,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 5
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 655.817,
+"b": 661.677,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+36.4,
+-1.8
+],
+"prev": [
+4.4,
+44.4
+],
+"lines": [
+"ÁFRICA DEL ESTE",
+"1 MILLÓN DE AÑOS",
+"DÁLMATA"
+],
+"name": "Sabana"
+},
+"big": true
+},
+{
+"a": 661.677,
+"b": 664.517,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/hyena_03.jpg",
+"o": {
+"credit": "Ikiwaner · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 664.517,
+"b": 668.897,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_af03.jpg"
+}
+},
+{
+"a": 668.897,
+"b": 672.277,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/hyena_04.jpg",
+"o": {
+"credit": "Charles J. Sharp · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 672.277,
+"b": 676.297,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/pachycrocuta_01.jpg",
+"o": {
+"credit": "Nachosan · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 676.297,
+"b": 686.397,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "HienaDoble",
+"at": {}
+},
+"big": true
+},
+{
+"a": 686.397,
+"b": 696.317,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CarruajeKm",
+"at": {}
+},
+"big": true
+},
+{
+"a": 696.317,
+"b": 701.537,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/pachycrocuta_02.jpg",
+"o": {
+"credit": "Jonathan Chen · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 701.537,
+"b": 712.757,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "OidoSordo",
+"at": {}
+},
+"big": true
+},
+{
+"a": 712.757,
+"b": 717.297,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/handaxe_01.jpg",
+"ar": 0.6884,
+"o": {
+"credit": "Osama Shukir Muhammed Amin FRCP(Glasg) · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 717.297,
+"b": 721.557,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/handaxe_02.jpg",
+"ar": 0.8044,
+"o": {
+"credit": "Daderot · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 721.557,
+"b": 725.317,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/handaxe_03.jpg",
+"ar": 0.6491,
+"o": {
+"credit": "Osama Shukir Muhammed Amin FRCP(Glasg) · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 725.317,
+"b": 728.737,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/handaxe_04.jpg",
+"ar": 0.6877,
+"o": {
+"credit": "Osama Shukir Muhammed Amin FRCP(Glasg) · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 728.737,
+"b": 733.017,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/dalmatian_01.jpg",
+"o": {
+"credit": "Lucasbosch · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 733.017,
+"b": 735.337,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/dalmatian_03.jpg",
+"o": {
+"credit": "Neoprotección · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 735.337,
+"b": 757.657,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 378000,
+"tag": "4 D 9 H",
+"sub": "Vino por detrás.",
+"fz": 40,
+"s0": 367305
+},
+"big": true
+},
+{
+"a": 757.657,
+"b": 765.797,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CincoPerdidas",
+"at": {
+"uno": 0,
+"dos": 99999,
+"tres": 99999,
+"cuatro": 99999,
+"cinco": 99999
+}
+},
+"big": true
+},
+{
+"a": 765.797,
+"b": 773.547,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CincoPerdidas",
+"at": {
+"uno": -400,
+"dos": 0,
+"tres": 99999,
+"cuatro": 99999,
+"cinco": 99999
+}
+},
+"big": true
+},
+{
+"a": 773.547,
+"b": 783.094,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CincoPerdidas",
+"at": {
+"uno": -400,
+"dos": -400,
+"tres": 0,
+"cuatro": 99999,
+"cinco": 99999
+}
+},
+"big": true
+},
+{
+"a": 783.094,
+"b": 792.554,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CincoPerdidas",
+"at": {
+"uno": -400,
+"dos": -400,
+"tres": -400,
+"cuatro": 0,
+"cinco": 99999
+}
+},
+"big": true
+},
+{
+"a": 792.554,
+"b": 805.034,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CincoPerdidas",
+"at": {
+"uno": -400,
+"dos": -400,
+"tres": -400,
+"cuatro": -400,
+"cinco": 0
+}
+},
+"big": true
+},
+{
+"a": 805.034,
+"b": 806.154,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 6
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 806.154,
+"b": 812.434,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-60.0,
+-36.0
+],
+"prev": [
+36.4,
+-1.8
+],
+"lines": [
+"LA PAMPA",
+"15.000 AÑOS",
+"GALGO"
+],
+"name": "Pampa"
+},
+"big": true
+},
+{
+"a": 812.434,
+"b": 816.594,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/pampa_01.jpg",
+"o": {
+"credit": "User:Alfonso\" · Wikimedia Commons · CC BY 2.5"
+}
+}
+},
+{
+"a": 816.594,
+"b": 830.474,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "GigantesPampa",
+"at": {}
+},
+"big": true
+},
+{
+"a": 830.474,
+"b": 833.854,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_pa01.jpg"
+}
+},
+{
+"a": 833.854,
+"b": 838.374,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/pampa_04.jpg",
+"o": {
+"credit": "Claudio Elias · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 838.374,
+"b": 843.074,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_pa02.jpg"
+}
+},
+{
+"a": 843.074,
+"b": 845.834,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/megatherium_01.jpg",
+"ar": 1.0047,
+"o": {
+"credit": "APK · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 845.834,
+"b": 849.694,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_pa03.jpg"
+}
+},
+{
+"a": 849.694,
+"b": 863.454,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "VelocidadMara",
+"at": {}
+},
+"big": true
+},
+{
+"a": 863.454,
+"b": 868.094,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/megatherium_02.jpg",
+"ar": 0.7459,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 868.094,
+"b": 872.434,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_pa04.jpg"
+}
+},
+{
+"a": 872.434,
+"b": 876.194,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/megatherium_03.jpg",
+"o": {
+"credit": "Emőke Dénes · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 876.194,
+"b": 878.014,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/megatherium_04.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Emőke Dénes · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 878.014,
+"b": 893.254,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "NocheFrio",
+"at": {}
+},
+"big": true
+},
+{
+"a": 893.254,
+"b": 896.834,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/glyptodon_01.jpg",
+"ar": 0.7348,
+"o": {
+"credit": "H. Zell · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 896.834,
+"b": 900.034,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 777600,
+"tag": "9 DÍAS",
+"sub": "Lo que caza de día, lo gasta de noche.",
+"fz": 43,
+"s0": 756928
+},
+"big": true
+},
+{
+"a": 900.034,
+"b": 901.214,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 7
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 901.214,
+"b": 908.334,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-101.0,
+41.0
+],
+"prev": [
+-60.0,
+-36.0
+],
+"lines": [
+"GRANDES LLANURAS",
+"13.000 AÑOS",
+"PASTOR ALEMÁN"
+],
+"name": "Llanuras"
+},
+"big": true
+},
+{
+"a": 908.334,
+"b": 912.694,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/plains_03.jpg",
+"o": {
+"credit": "Shannon · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 912.694,
+"b": 915.114,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_gp01.jpg"
+}
+},
+{
+"a": 915.114,
+"b": 921.274,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CamellosAmerica",
+"at": {}
+},
+"big": true
+},
+{
+"a": 921.274,
+"b": 923.214,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/plains_04.jpg",
+"o": {
+"credit": "Matthew Dillon from Hollywood, CA, USA · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 923.214,
+"b": 932.494,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "LeonCuarto",
+"at": {}
+},
+"big": true
+},
+{
+"a": 932.494,
+"b": 935.434,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_gp02.jpg"
+}
+},
+{
+"a": 935.434,
+"b": 939.254,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/bisonant_01.jpg",
+"o": {
+"credit": "Nikhil Iyengar · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 939.254,
+"b": 943.134,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/bisonant_02.jpg",
+"ar": 1.2075,
+"o": {
+"credit": "James St. John · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 943.134,
+"b": 947.014,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/bisonant_03.jpg",
+"ar": 0.714,
+"o": {
+"credit": "James St. John · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 947.014,
+"b": 951.214,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/camelops_01.jpg",
+"ar": 0.5626,
+"o": {
+"credit": "Photaro · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 951.214,
+"b": 956.074,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/camelops_02.jpg",
+"o": {
+"credit": "Cory Doctorow from London, UK · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 956.074,
+"b": 960.654,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/atrox_01.jpg",
+"o": {
+"credit": "Joe Mabel · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 960.654,
+"b": 964.594,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/atrox_02.jpg",
+"o": {
+"credit": "Joe Mabel · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 964.594,
+"b": 968.454,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/gsd_01.jpg",
+"o": {
+"credit": "Museum of Veterinary Anatomy FMVZ USP / Wagner S · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 968.454,
+"b": 984.094,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TerritorioManada",
+"at": {
+"una": 469,
+"dos": 510
+}
+},
+"big": true
+},
+{
+"a": 984.094,
+"b": 987.974,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/gsd_02.jpg",
+"o": {
+"credit": "Jakub Hałun · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 987.974,
+"b": 990.794,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/gsd_03.jpg",
+"o": {
+"credit": "PROPOLI87 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 990.794,
+"b": 1003.454,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 1641600,
+"tag": "19 DÍAS",
+"sub": "Cada pelea lo deja más cansado.",
+"fz": 44,
+"s0": 1595944
+},
+"big": true
+},
+{
+"a": 1003.454,
+"b": 1020.554,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TratoFuego",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1020.554,
+"b": 1023.574,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/stephanitz_01.jpg",
+"o": {
+"credit": "Paulae · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1023.574,
+"b": 1028.014,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/oberkassel_01.jpg",
+"o": {
+"credit": "Don Hitchcock · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1028.014,
+"b": 1032.634,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_bo01.jpg"
+}
+},
+{
+"a": 1032.634,
+"b": 1035.354,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/oberkassel_02.jpg",
+"o": {
+"credit": "Don Hitchcock · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1035.354,
+"b": 1039.714,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_bo02.jpg"
+}
+},
+{
+"a": 1039.714,
+"b": 1043.954,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/oberkassel_03.jpg",
+"o": {
+"credit": "Thilo Parg · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1043.954,
+"b": 1048.474,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_bo03.jpg"
+}
+},
+{
+"a": 1048.474,
+"b": 1055.454,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"los cuatro",
+"*que faltan.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 1055.454,
+"b": 1059.634,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/villagedog_01.jpg",
+"o": {
+"credit": "Alan Shearman from London · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 1059.634,
+"b": 1061.154,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 8
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 1061.154,
+"b": 1065.574,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+-169.0,
+65.0
+],
+"prev": [
+-101.0,
+41.0
+],
+"lines": [
+"BERINGIA",
+"18.000 AÑOS",
+"HUSKY SIBERIANO"
+],
+"name": "Beringia"
+},
+"big": true
+},
+{
+"a": 1065.574,
+"b": 1076.274,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PuenteBeringia",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1076.274,
+"b": 1078.894,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/arctodus_01.jpg",
+"o": {
+"credit": "Chris Light · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1078.894,
+"b": 1083.954,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_be01.jpg"
+}
+},
+{
+"a": 1083.954,
+"b": 1089.174,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/arctodus_02.jpg",
+"o": {
+"credit": "Chris Light · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1089.174,
+"b": 1092.054,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_be02.jpg"
+}
+},
+{
+"a": 1092.054,
+"b": 1096.534,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/serumrun_02.jpg",
+"ar": 0.8,
+"o": {
+"credit": "Copyright: Copyright © Carrie McLain Museum / Al · Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 1096.534,
+"b": 1099.854,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_be03.jpg"
+}
+},
+{
+"a": 1099.854,
+"b": 1101.654,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/serumrun_03.jpg",
+"ar": 0.7488,
+"o": {
+"credit": "photo by Uris (English Wikipedia), statue by Fre · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1101.654,
+"b": 1112.554,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "CarreraNome",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1112.554,
+"b": 1115.174,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/serumrun_04.jpg",
+"ar": 1.2038,
+"o": {
+"credit": "Jim.henderson · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1115.174,
+"b": 1125.714,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "ColaNariz",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1125.714,
+"b": 1130.034,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/husky_01.jpg",
+"o": {
+"credit": "Isiwal · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1130.034,
+"b": 1132.714,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/husky_02.jpg",
+"ar": 1.1801,
+"o": {
+"credit": "MrPanyGoff · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1132.714,
+"b": 1136.134,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/husky_03.jpg",
+"o": {
+"credit": "Richard Bartz, Munich aka Makro Freak · Wikimedia Commons · CC BY-SA 2.5"
+}
+}
+},
+{
+"a": 1136.134,
+"b": 1140.574,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/husky_04.jpg",
+"o": {
+"credit": "Isiwal · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1140.574,
+"b": 1143.874,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/dalmatian_04.jpg",
+"o": {
+"credit": "Carlos Estrada · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1143.874,
+"b": 1148.354,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/glyptodon_02.jpg",
+"o": {
+"credit": "LadyofHats · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1148.354,
+"b": 1150.134,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/glyptodon_03.jpg",
+"o": {
+"credit": "Hermann Burmeister · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1150.134,
+"b": 1153.234,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 3628800,
+"tag": "42 DÍAS",
+"sub": "Se fue detrás de una liebre.",
+"fz": 43,
+"s0": 3532517
+},
+"big": true
+},
+{
+"a": 1153.234,
+"b": 1154.134,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 9
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 1154.134,
+"b": 1160.934,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+38.92,
+37.22
+],
+"prev": [
+-169.0,
+65.0
+],
+"lines": [
+"GÖBEKLI TEPE",
+"11.600 AÑOS",
+"KANGAL"
+],
+"name": "Göbekli Tepe"
+},
+"big": true
+},
+{
+"a": 1160.934,
+"b": 1172.111,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PilaresT",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1172.111,
+"b": 1175.311,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/gobekli_01.jpg",
+"o": {
+"credit": "Teomancimit · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1175.311,
+"b": 1178.451,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_go01.jpg"
+}
+},
+{
+"a": 1178.451,
+"b": 1183.631,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/gobekli_03.jpg",
+"o": {
+"credit": "Creator:Rolfcosar · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1183.631,
+"b": 1188.151,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_go02.jpg"
+}
+},
+{
+"a": 1188.151,
+"b": 1192.011,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/gobekli_04.jpg",
+"o": {
+"credit": "Immanuelle · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1192.011,
+"b": 1195.651,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_go03.jpg"
+}
+},
+{
+"a": 1195.651,
+"b": 1199.391,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/gobekli_05.jpg",
+"o": {
+"credit": "Immanuelle · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1199.391,
+"b": 1202.051,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/gobpillar_01.jpg",
+"ar": 0.6641,
+"o": {
+"credit": "Teomancimit · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1202.051,
+"b": 1206.671,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/gobpillar_02.jpg",
+"o": {
+"credit": "Dosseman · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1206.671,
+"b": 1209.931,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/gobpillar_03.jpg",
+"o": {
+"credit": "Dosseman · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1209.931,
+"b": 1214.551,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/gobpillar_04.jpg",
+"o": {
+"credit": "Dosseman · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1214.551,
+"b": 1218.571,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/leopard_01.jpg",
+"o": {
+"credit": "Tamar Assaf · Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1218.571,
+"b": 1221.391,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/leopard_02.jpg",
+"o": {
+"credit": "ThunderJag · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1221.391,
+"b": 1232.831,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "GuardiaColina",
+"at": {
+"hoyno": 300
+}
+},
+"big": true
+},
+{
+"a": 1232.831,
+"b": 1237.131,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/kangal_01.jpg",
+"o": {
+"credit": "Zeynel Cebeci · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1237.131,
+"b": 1240.951,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/kangal_02.jpg",
+"o": {
+"credit": "Candeadly · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 1240.951,
+"b": 1244.211,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/kangal_03.jpg",
+"o": {
+"credit": "Candeadly · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 1244.211,
+"b": 1247.111,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/kangal_04.jpg",
+"ar": 0.6725,
+"o": {
+"credit": "Zeynel Cebeci · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1247.111,
+"b": 1249.951,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 12960000,
+"tag": "5 MESES",
+"sub": "Solo lo frena el hambre.",
+"fz": 44,
+"s0": 12614700
+},
+"big": true
+},
+{
+"a": 1249.951,
+"b": 1251.251,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 10
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 1251.251,
+"b": 1256.491,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+90.0,
+32.0
+],
+"prev": [
+38.92,
+37.22
+],
+"lines": [
+"MESETA DEL TÍBET",
+"30.000 AÑOS",
+"MASTÍN TIBETANO"
+],
+"name": "Tíbet"
+},
+"big": true
+},
+{
+"a": 1256.491,
+"b": 1267.711,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "OxigenoMenos",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1267.711,
+"b": 1270.871,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/tibet_03.jpg",
+"o": {
+"credit": "Dan · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 1270.871,
+"b": 1275.211,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_ti01.jpg"
+}
+},
+{
+"a": 1275.211,
+"b": 1278.551,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/tibet_04.jpg",
+"o": {
+"credit": "Dan · Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 1278.551,
+"b": 1282.871,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_ti02.jpg"
+}
+},
+{
+"a": 1282.871,
+"b": 1286.271,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/yak_01.jpg",
+"o": {
+"credit": "travelwayoflife · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1286.271,
+"b": 1288.531,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/ag/dur5nd_ti03.jpg"
+}
+},
+{
+"a": 1288.531,
+"b": 1303.051,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "GenLobo",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1303.051,
+"b": 1307.211,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/yak_02.jpg",
+"o": {
+"credit": "Jim, the Photographer · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 1307.211,
+"b": 1311.651,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/yak_03.jpg",
+"o": {
+"credit": "Pavel Novak · Wikimedia Commons · CC BY-SA 2.5"
+}
+}
+},
+{
+"a": 1311.651,
+"b": 1316.111,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/snowleo_01.jpg",
+"ar": 1.0,
+"o": {
+"credit": "Original: Tambako The Jaguar Derivative work: Us · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1316.111,
+"b": 1319.751,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/snowleo_02.jpg",
+"ar": 1.0614,
+"o": {
+"credit": "Tambako The Jaguar · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1319.751,
+"b": 1324.231,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/snowleo_03.jpg",
+"o": {
+"credit": "kallerna · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1324.231,
+"b": 1327.171,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/mastiff_01.jpg",
+"o": {
+"credit": "Alexandr frolov · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1327.171,
+"b": 1330.531,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 39312000,
+"tag": "1 AÑO 3 M",
+"sub": "Demasiado perro para tan poca comida.",
+"fz": 42,
+"s0": 38097231
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 1330.531,
+"b": 1331.971,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 11
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 1331.971,
+"b": 1337.691,
+"k": "ilus",
+"t": "map",
+"p": {
+"at": [
+7.18,
+50.71
+],
+"prev": [
+90.0,
+32.0
+],
+"lines": [
+"BONN",
+"14.200 AÑOS",
+"PERRO SIN RAZA"
+],
+"name": "Oberkassel"
+},
+"big": true
+},
+{
+"a": 1337.691,
+"b": 1340.731,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/streetdog_01.jpg",
+"o": {
+"credit": "Basile Morin · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1340.731,
+"b": 1345.391,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/streetdog_02.jpg",
+"o": {
+"credit": "Gpkp · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1345.391,
+"b": 1348.851,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/glyptodon_04.jpg",
+"ar": 0.75,
+"o": {
+"credit": "No Swan So Fine · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1348.851,
+"b": 1358.411,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TresDeCuatro",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1358.411,
+"b": 1372.211,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "FormaVieja",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1372.211,
+"b": 1375.671,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/smilopop_01.jpg",
+"o": {
+"credit": "Wilfredor · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1375.671,
+"b": 1379.731,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/smilopop_02.jpg",
+"ar": 1.1933,
+"o": {
+"credit": "JJonahJackalope · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1379.731,
+"b": 1381.771,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/smilopop_03.jpg",
+"o": {
+"credit": "Dmitry Bogdanov · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1381.771,
+"b": 1400.211,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "TumbaBonn",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1400.211,
+"b": 1403.731,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/ameghino_02.jpg",
+"o": {
+"credit": "Lmalena · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1403.731,
+"b": 1407.231,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/ameghino_03.jpg",
+"ar": 0.721,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 1407.231,
+"b": 1410.451,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/mara_01.jpg",
+"o": {
+"credit": "Fernando Losada Rodríguez · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1410.451,
+"b": 1413.651,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/mara_02.jpg",
+"o": {
+"credit": "Fernando Losada Rodríguez · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1413.651,
+"b": 1418.411,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/mara_03.jpg",
+"ar": 0.7234,
+"o": {
+"credit": "H. Zell · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1418.411,
+"b": 1422.911,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/greyhound_01.jpg",
+"o": {
+"credit": "AngMoKio · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 1422.911,
+"b": 1435.491,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SigueCorriendo",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1435.491,
+"b": 1438.471,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/dur5nd/cand/greyhound_02.jpg",
+"ar": 1.0,
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.5"
+}
+}
+},
+{
+"a": 1438.471,
+"b": 1446.971,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": null,
+"tag": "SIGUE ▶",
+"sub": "Este perro ya estuvo aquí.",
+"fz": 64,
+"s0": 9864049
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 1446.971,
+"b": 1470.011,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "tu tablero *final.*",
+"final": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+"big": true
+},
+{
+"a": 1470.011,
+"b": 1493.331,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "tu tablero *final.*",
+"final": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+"big": true
+},
+{
+"a": 1493.331,
+"b": 1509.931,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "tu tablero *final.*",
+"final": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+"big": true
+},
+{
+"a": 1509.931,
+"b": 1523.551,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "SumaDosAnos",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1523.551,
+"b": 1526.411,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/mastiff_02.jpg",
+"o": {
+"credit": "Brunodesola · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1526.411,
+"b": 1535.471,
+"k": "ilus",
+"t": "u",
+"p": {
+"n": "PerroAlSol",
+"at": {}
+},
+"big": true
+},
+{
+"a": 1535.471,
+"b": 1540.051,
+"k": "g",
+"t": "word",
+"p": {
+"bg": null,
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"en esta época",
+"*no está solo.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 1540.051,
+"b": 1542.571,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/dur5nd/cand/mastiff_04.jpg",
+"o": {
+"credit": "Rod Waddington · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 1542.571,
+"b": 1550.371,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Próximo: ¿cuánto durarías contra cada especie humana?"
+}
+},
+{
+"a": 1550.371,
+"b": 1558.99,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿En qué parada se rendiría tu perro?",
+"bell": false
+}
+}
+],
+"stops": [
+{
+"n": 12,
+"a": 132.48,
+"q": 223.633,
+"w0": 221.0,
+"w1": 225.62,
+"fin": 47,
+"tag": "47 SEG",
+"b": 225.62
+},
+{
+"n": 11,
+"a": 234.42,
+"q": 321.167,
+"w0": 316.9,
+"w1": 323.64,
+"fin": 252,
+"tag": "4:12",
+"b": 323.64
+},
+{
+"n": 10,
+"a": 331.12,
+"q": 418.45,
+"w0": 414.917,
+"w1": 432.137,
+"fin": 690,
+"tag": "11:30",
+"b": 450.457
+},
+{
+"n": 9,
+"a": 456.957,
+"q": 552.05,
+"w0": 550.617,
+"w1": 554.377,
+"fin": 198000,
+"tag": "2 D 7 H",
+"b": 554.377
+},
+{
+"n": 8,
+"a": 562.297,
+"q": 652.85,
+"w0": 647.217,
+"w1": 654.877,
+"fin": 266400,
+"tag": "3 D 2 H",
+"b": 654.877
+},
+{
+"n": 7,
+"a": 661.677,
+"q": 736.67,
+"w0": 735.337,
+"w1": 757.657,
+"fin": 378000,
+"tag": "4 D 9 H",
+"b": 805.034
+},
+{
+"n": 6,
+"a": 812.434,
+"q": 898.267,
+"w0": 896.834,
+"w1": 900.034,
+"fin": 777600,
+"tag": "9 DÍAS",
+"b": 900.034
+},
+{
+"n": 5,
+"a": 908.334,
+"q": 992.261,
+"w0": 990.794,
+"w1": 1003.454,
+"fin": 1641600,
+"tag": "19 DÍAS",
+"b": 1059.634
+},
+{
+"n": 4,
+"a": 1065.574,
+"q": 1151.567,
+"w0": 1150.134,
+"w1": 1153.234,
+"fin": 3628800,
+"tag": "42 DÍAS",
+"b": 1153.234
+},
+{
+"n": 3,
+"a": 1160.934,
+"q": 1248.578,
+"w0": 1247.111,
+"w1": 1249.951,
+"fin": 12960000,
+"tag": "5 MESES",
+"b": 1249.951
+},
+{
+"n": 2,
+"a": 1256.491,
+"q": 1328.571,
+"w0": 1327.171,
+"w1": 1330.531,
+"fin": 39312000,
+"tag": "1 AÑO 3 M",
+"b": 1330.531
+},
+{
+"n": 1,
+"a": 1337.691,
+"q": 1440.604,
+"w0": 1438.471,
+"w1": 1446.971,
+"fin": null,
+"tag": "SIGUE ▶",
+"b": 1446.971
+}
+]
+}
