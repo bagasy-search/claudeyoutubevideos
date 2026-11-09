@@ -21,7 +21,7 @@ export const Avatar: React.FC<{ t: number; dark?: number }> = ({ t, dark = 0 }) 
   const vis = cur >= 0 ? cur : WIN.findIndex((w) => t >= w.ms - 0.32 && t < w.me + 0.8);
   const face = REEL ? <><Img src={staticFile(P + "av_still.png")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />{WIN.map((w, i) => (
     <Sequence key={i} from={s(w.ms) - 10} durationInFrames={s(w.me - w.ms) + 12 + 14} layout="none">
-      <AbsoluteFill style={{ opacity: i === vis ? 1 : 0 }}><OffthreadVideo src={staticFile(P + "reel0.mp4")} startFrom={Math.max(0, s(w.off) - 10)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>
+      <AbsoluteFill style={{ opacity: i === vis ? 1 : 0, WebkitMaskImage: `url(${staticFile(P + "avmask.png")})`, WebkitMaskSize: "100% 100%", maskImage: `url(${staticFile(P + "avmask.png")})`, maskSize: "100% 100%" }}><OffthreadVideo src={staticFile(P + "reel0.mp4")} startFrom={Math.max(0, s(w.off) - 10)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>
     </Sequence>))}</> : <Img src={staticFile(P + "av_still.png")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.02 + 0.015 * Math.sin(t * 0.7)})` }} />;
   // SIN desenfoque en el avatar (orden del creador 21-oct)
   return <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}><AbsoluteFill style={{ filter: dark > 0 ? `brightness(${1 - dark})` : undefined }}>{face}</AbsoluteFill></AbsoluteFill>;
