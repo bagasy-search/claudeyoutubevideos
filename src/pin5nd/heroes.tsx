@@ -261,7 +261,7 @@ const Hilitos: C = ({ t, h }) => <Stage t={t} h={h} mode="iris">{(tt) => { const
 const Alfombra: C = ({ t, h }) => <Stage t={t} h={h} mode="wipe">{(tt) => { const g = W(tt, 1, 3); return <AbsoluteFill><Svg><Defs />
   <rect x={120} y={700} width={1680} height={260} fill="#8a6a4a" /><rect x={120} y={700} width={1680} height={14} fill="#5a4430" />
   <Wire x1={140} x2={1780} y={665} col="#d9d9d4" th={36} hot={g > 0.6 ? 1 : 0} />
-  <circle cx={980} cy={665} r={120} fill={RED} opacity={0.45 * g} filter="url(#glow)" />
+  {g > 0.02 && <circle cx={980} cy={665} r={120} fill={RED} opacity={0.45 * g} filter="url(#glow)" />}
   <path d="M 200 650 Q 980 560 1720 650 L 1720 690 Q 980 600 200 690 Z" fill="#b8543a" /><rect x={200} y={600} width={1520} height={48} rx={18} fill="#c86a4a" opacity={0.95} />
   {[0, 1, 2].map((i) => <path key={i} d={`M ${930 + i * 50} 560 q 18 -50 0 -100 q -18 -50 0 -100`} stroke="#999" strokeWidth={6} fill="none" opacity={0.5 * g} strokeDasharray="10 10" />)}
   </Svg><Lbl tt={tt} at={0.8} x={500} y={300} tx="NO LO VES" bg={INK} /><Lbl tt={tt} at={1.4} x={960} y={240} tx="NO SE VENTILA" bg={INK} /><Lbl tt={tt} at={2} x={1420} y={300} tx="ARRIBA, ALGO QUE PRENDE" bg={RED} col={INK} size={40} /></AbsoluteFill>; }}</Stage>;
@@ -361,7 +361,7 @@ const CortaNeutro: C = ({ t, h }) => <Stage t={t} h={h} mode="blinds">{(tt) => {
   <circle cx={900} cy={760} r={18} fill={INK} /><circle cx={1100} cy={760} r={18} fill={INK} />
   <Bulb x={1500} y={600} s={0.6} g={1 - k} />
   {[0, 1, 2].map((i) => { const q = (p + i / 3) % 1; return <circle key={i} cx={lp(200, 1500, q)} cy={360} r={14} fill={AMB} />; })}
-  <circle cx={1500} cy={480} r={60} fill={RED} opacity={0.4 * k * (0.7 + 0.3 * Math.sin(tt * 8))} filter="url(#glow)" />
+  {k > 0.02 && <circle cx={1500} cy={480} r={60} fill={RED} opacity={0.4 * k * (0.7 + 0.3 * Math.sin(tt * 8))} filter="url(#glow)" />}
   <T x={160} y={340} tx="FASE" size={40} col={AMB} anchor="start" /><T x={160} y={740} tx="NEUTRO" size={40} col={BLU} anchor="start" />
   </Svg><Lbl tt={tt} at={1.6} x={1000} y={900} tx="LA LLAVE CORTA EL NEUTRO" bg={INK} /><Lbl tt={tt} at={2.4} x={1500} y={220} tx="LA FASE SIGUE LLEGANDO" bg={RED} col={INK} size={40} /></AbsoluteFill>; }}</Stage>;
 const Diecinueve: C = ({ t, h }) => <Stage t={t} h={h} mode="drop">{(tt) => <AbsoluteFill style={{ background: "rgba(40,30,10,.35)" }}><Svg><Defs />
