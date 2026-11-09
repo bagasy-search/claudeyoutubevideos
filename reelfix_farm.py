@@ -14,7 +14,7 @@ if not os.path.exists(D + "masks.npy"):
     so = ort.SessionOptions(); so.intra_op_num_threads = 4; so.enable_cpu_mem_arena = False
     s = ort.InferenceSession("u2net_human_seg.onnx", so, providers=["CPUExecutionProvider"]); n = s.get_inputs()[0].name
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", SRC], capture_output=True, text=True).stdout); total = int(dur * FPS - 1) // 25 + 1
-    def abre(ini): return subprocess.Popen(["ffmpeg", "-v", "error", "-ss", str(ini), "-i", SRC, "-vf", "select='not(mod(n\\,25))',format=rgb24", "-vsync", "0", "-f", "rawvideo", "-"], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
+    def abre(ini): return subprocess.Popen(["ffmpeg", "-v", "error", "-ss", str(ini), "-i", SRC, "-vf", "select='not(mod(n\\,25))',format=rgb24", "-fps_mode", "passthrough", "-f", "rawvideo", "-"], stdout=subprocess.PIPE)
     def paso(b):
         im = np.frombuffer(b, np.uint8).reshape(H, W, 3)
         x = cv2.resize(im, (320, 320), interpolation=cv2.INTER_AREA) / 255.0
@@ -26,7 +26,7 @@ if not os.path.exists(D + "masks.npy"):
         b = seguro(p.stdout.read, W * H * 3)
         if len(b) < W * H * 3:  # ffmpeg murió sin memoria: se retoma desde el segundo que falta, nunca se guarda a medias
             cortes += 1
-            if cortes > 200: sys.exit(f"ffmpeg cortó {cortes} veces en {len(out)}/{total}")
+            if cortes > 5: sys.exit(f"ffmpeg cortó {cortes} veces en {len(out)}/{total}")
             gc.collect(); time.sleep(6); p = abre(len(out)); continue
         out.append(seguro(paso, b))
         if len(out) % 50 == 0: print(len(out), round(time.time() - t0), flush=True)
