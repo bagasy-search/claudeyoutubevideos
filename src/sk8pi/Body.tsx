@@ -29,6 +29,9 @@ const base = (t: number): React.ReactNode => {
   // hueco entre planos (cola del heroe, 1-3 cuadros al cruzar): nunca la cocina vacia. Veo recien terminado sigue; si no, la foto mas cercana quieta
   const g = PL.segs.find(([a, b]) => t >= a && t < b) ?? PL.segs.find(([a, b, , i]) => i.startsWith("v") && t >= b && t < b + 0.35 && t - a < 7.9 && OK.has(i));
   if (!g) {
+    // hueco justo antes de un Veo (avatar/heroe -> clip): primer cuadro quieto del clip, nunca una foto ajena de 2-3 cuadros
+    const nv = PL.segs.find(([a, , , i]) => i.startsWith("v") && t < a && a - t <= 1 && OK.has(i));
+    if (nv) return <AbsoluteFill style={{ transformOrigin: "0% 50%", transform: "scale(1.11)" }}><Vid id={"veo/" + nv[3]} at={t} /></AbsoluteFill>;
     let best: Seg | undefined, bd = 1e9;
     for (const q of PL.segs) { if (q[3].startsWith("v")) continue; const d = t < q[0] ? q[0] - t : t - q[1]; if (d < bd) { bd = d; best = q; } }
     return best ? <Shot k={best[3]} t={Math.min(best[1], Math.max(best[0], t))} a={best[0]} d={best[1] - best[0]} /> : <World t={t} />;
