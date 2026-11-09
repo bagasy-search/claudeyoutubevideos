@@ -7,6 +7,7 @@ import AVW from "./avwin.json";
 import OVJ from "./ov.json";
 import { LowerThird, P, e, s } from "./lib";
 import { AskCard, BigNum, CheckList, Chip, Desc, GuidePage, Headline, Mistake, StepTitle, TimeBars, Words } from "./premium";
+import * as E from "./escenas";
 import { CamaraMano } from "../kits/camara/CamaraMano";
 
 type Seg = [number, number, string, string];
@@ -68,7 +69,7 @@ const Avatar: React.FC<{ t: number; cur: number }> = ({ t, cur }) => {
   </AbsoluteFill>;
 };
 
-const KIT: Record<string, React.FC<any>> = { AskCard, BigNum, CheckList, Chip, Desc, GuidePage, Headline, LowerThird, Mistake, StepTitle, TimeBars, Words };
+const KIT: Record<string, React.FC<any>> = { ...E, AskCard, BigNum, CheckList, Chip, Desc, GuidePage, Headline, LowerThird, Mistake, StepTitle, TimeBars, Words };
 
 export const Body: React.FC = () => {
   const f = useCurrentFrame();
@@ -77,7 +78,6 @@ export const Body: React.FC = () => {
   const cur = t >= WIN[ult].ms ? ult : WIN.findIndex((w) => t >= w.ms && t < w.me);
   return <AbsoluteFill style={{ background: "#000" }}>
     <CamaraMano intensidad={0.7}>{cur >= 0 ? <Avatar t={t} cur={cur} /> : <Fotos t={t} />}</CamaraMano>
-    <AbsoluteFill style={{ background: "radial-gradient(ellipse 78% 78% at 50% 48%, transparent 62%, rgba(0,0,0,.26) 100%)", pointerEvents: "none" }} />
     {OV.map(({ k, ...p }, i) => { const X = KIT[k]; return <X key={i} t={t} {...p} />; })}
     <AbsoluteFill style={{ background: "#000", opacity: e(t, END - 1.4, END - 0.1) }} />
   </AbsoluteFill>;
