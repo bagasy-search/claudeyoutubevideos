@@ -106,8 +106,8 @@ export const EscNevera: React.FC<P> = ({ t, at, out }) => {
     return <Raiz><World cx={mix(mix(800, 250, n), 330, k)} cy={mix(mix(540, 490, n), 420, k)} S={S} blur={10 * cl(t, 454.8, 455.15)}><Foto id="s061" /></World>
       <AbsoluteFill style={{ background: "#000", opacity: cl(t, 454.9, 455.15) }} /></Raiz>;
   }
-  const p = cl(t, 455.175, 456.4, cubOut), luz = cl(t, 455.95, 456.28, cubOut), th = 28 * cl(t, 455.95, 457.86, sin), dx = -1100 * cl(t, 458.55, 459.2, cubIO);
-  return <Raiz><World cx={mix(570, 640, p)} cy={mix(400, 470, p)} S={mix(2, 1.62, p)}>
+  const fin = 1 - cl(t, 460.0, 460.3), p = cl(t, 455.175, 456.4, cubOut), luz = cl(t, 455.95, 456.28, cubOut), th = 28 * cl(t, 455.95, 457.86, sin), dx = -1100 * cl(t, 458.55, 459.2, cubIO);
+  return <AbsoluteFill style={{ opacity: fin }}><Raiz><World cx={mix(570, 640, p)} cy={mix(400, 470, p)} S={mix(2, 1.62, p)}>
     <Foto id="s062" />
     <Lit id="s062" pts={TERMO} t={t} at={455.95} cx={570} cy={405} lift={0} rise={0} base={2} flash={false} fe={5} plain />
     {luz > 0 && <div style={{ ...full, ...mk(M_PARCHE), filter: "brightness(2)", opacity: luz }}><Img src={src("s062")} style={{ ...full, objectFit: "fill", transform: "translateX(44px)", filter: "blur(2px)" }} /></div>}
@@ -120,7 +120,7 @@ export const EscNevera: React.FC<P> = ({ t, at, out }) => {
     <AbsoluteFill style={{ background: "#000", opacity: 1 - cl(t, 455.175, 455.5) }} />
     <Lab t={t} at={457.56} x={760} y={590} txt="4 hours" size={110} align="left" />
     <Lab t={t} at={458.95} x={764} y={722} txt="if it stays closed" size={64} align="left" />
-  </Raiz>;
+  </Raiz></AbsoluteFill>;
 };
 
 // ── 4 · Tres días en dos segundos: pasa el día y la noche sobre el garaje y los bidones reales se vacían de a dos
@@ -149,7 +149,7 @@ export const EscBidones: React.FC<P> = ({ t, at, out }) => {
     {noche > 0 && <Foto id="s072" filter="brightness(.38) saturate(.7)" opacity={noche} />}
     <Lab t={t} at={535.58} x={1035} y={716} txt="6 gallons" size={54} />
     {DIAS.map((d, i) => <Lab key={i} t={t} at={d} x={[653, 963, 1228][i]} y={[1022, 992, 960][i]} txt={`day ${i + 1}`} size={42} />)}
-    <Lab t={t} at={538.41} x={1430} y={700} txt="+ the dog" size={54} />
+    <Lab t={t} at={538.41} x={1240} y={615} txt="+ the dog" size={54} />
   </World></Raiz>;
 };
 
