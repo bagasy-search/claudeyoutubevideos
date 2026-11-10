@@ -294,11 +294,12 @@ export const MapJP: React.FC<{ a: [number, number]; b: [number, number]; la: str
 };
 
 // (10) recap: las 10 tarjetas del carrusel ordenadas en grilla, se tildan una a una
-export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: HabCard[]; bg: string; dur: number }> = ({ items, cards, bg }) => {
+export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: HabCard[]; bg: string; dur: number }> = ({ items, cards, bg, dur }) => {
   const f = useCurrentFrame(); const p = useIn(0, 20);
+  const k = f / Math.max(1, dur);
   return (
     <AbsoluteFill>
-      <BlurBg src={bg} dark={0.5} />
+      <AbsoluteFill style={{ transform: `scale(${1.02 + 0.1 * k}) translateX(${-30 * k}px)` }}><BlurBg src={bg} dark={0.5} /></AbsoluteFill>
       <div style={{ position: "absolute", top: 50, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 74, color: C.white, textShadow: shadow, opacity: p }}>
         <span style={{ color: PINK }}>{cards.length}</span> things · every morning
       </div>
@@ -310,7 +311,7 @@ export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: H
         const lit = f >= it.f;
         const pop = lit ? 1 + 0.08 * Math.max(0, 1 - (f - it.f) / 10) : 1;
         return (
-          <div key={i} style={{ position: "absolute", left: 70 + col * 362, top: 300 + row * 420, opacity: e, transform: `translateY(${(1 - e) * 60}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8}deg) scale(${(lit ? 1 : 0.94) * pop})` }}>
+          <div key={i} style={{ position: "absolute", left: 70 + col * 362, top: 300 + row * 420, opacity: e, transform: `translateY(${(1 - e) * 60 + 7 * Math.sin(f / 26 + i * 1.3)}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8 + 0.6 * Math.sin(f / 34 + i)}deg) scale(${(lit ? 1 : 0.94) * pop * (1 + 0.025 * k)})` }}>
             <HabitPhotoCard n={i + 1} title={c.title} src={c.src} w={340} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
           </div>
         );
