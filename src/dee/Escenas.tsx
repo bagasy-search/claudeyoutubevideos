@@ -12,10 +12,10 @@ const salida = (f: number, dur: number) => interpolate(f, [dur - 8, dur], [1, 0]
 
 // ---------- Escena 1 · el salón se arma como rompecabezas: cada pieza cae y encaja en su palabra
 const PIEZAS: { pts: number[][]; cx: number; cy: number; rot: number }[] = [
-  { pts: [[615, 560], [700, 553], [822, 565], [828, 700], [805, 800], [760, 860], [795, 960], [785, 1080], [450, 1080], [440, 965], [560, 880], [400, 862], [372, 800], [370, 700], [405, 680], [600, 690]], cx: 600, cy: 820, rot: -6 },
-  { pts: [[890, 478], [1010, 472], [1138, 488], [1135, 600], [1120, 690], [1000, 720], [985, 740], [1090, 790], [1090, 828], [870, 828], [870, 790], [960, 740], [950, 715], [860, 690], [838, 560], [880, 540]], cx: 990, cy: 650, rot: 5 },
-  { pts: [[1545, 480], [1620, 470], [1700, 468], [1800, 474], [1905, 495], [1905, 620], [1860, 700], [1800, 705], [1800, 1080], [1700, 1080], [1700, 705], [1600, 690], [1555, 600], [1548, 540]], cx: 1720, cy: 700, rot: -4 },
-  { pts: [[1688, 262], [1740, 250], [1735, 30], [1770, 12], [1800, 10], [1840, 22], [1870, 40], [1860, 200], [1838, 262], [1842, 350], [1840, 435], [1688, 435], [1680, 350]], cx: 1765, cy: 300, rot: 7 },
+  { pts: [[632, 600], [700, 585], [760, 572], [820, 566], [824, 590], [812, 690], [806, 760], [782, 772], [752, 810], [736, 850], [705, 866], [665, 870], [665, 958], [740, 965], [780, 990], [785, 1080], [450, 1080], [455, 1000], [520, 968], [585, 958], [585, 880], [540, 860], [470, 850], [400, 835], [392, 800], [392, 720], [388, 690], [410, 680], [470, 690], [540, 705], [600, 712], [605, 640]], cx: 610, cy: 820, rot: -6 },
+  { pts: [[983, 483], [1128, 485], [1112, 560], [1100, 625], [1083, 671], [1002, 683], [1002, 758], [1083, 773], [1091, 810], [1050, 825], [900, 825], [873, 803], [885, 768], [960, 758], [960, 683], [885, 668], [852, 638], [843, 563], [863, 543], [918, 558], [972, 570], [975, 518]], cx: 990, cy: 650, rot: 5 },
+  { pts: [[1553, 492], [1680, 480], [1845, 483], [1902, 518], [1893, 600], [1845, 660], [1808, 693], [1800, 1035], [1710, 1035], [1718, 698], [1650, 683], [1575, 630], [1553, 570]], cx: 1720, cy: 700, rot: -4 },
+  { pts: [[1692, 273], [1748, 263], [1833, 268], [1833, 435], [1688, 435], [1683, 360]], cx: 1760, cy: 350, rot: 7 },
 ];
 export const EscSalon: React.FC<{ src: string; m: number[]; dur: number }> = ({ src, m, dur }) => {
   const f = useCurrentFrame();
@@ -26,7 +26,7 @@ export const EscSalon: React.FC<{ src: string; m: number[]; dur: number }> = ({ 
   return (
     <AbsoluteFill style={{ background: "#120D0F", overflow: "hidden", opacity: salida(f, dur) }}>
       <AbsoluteFill style={{ transform: `scale(${cam})`, transformOrigin: "1080px 560px" }}>
-        <Foto src={src} style={{ filter: `brightness(${0.32 + 0.68 * luz}) saturate(${0.35 + 0.65 * luz}) blur(${5 * (1 - luz)}px)` }} />
+        <Foto src={src} style={{ filter: `brightness(${0.55 + 0.45 * luz}) saturate(${0.45 + 0.55 * luz}) blur(${4 * (1 - luz)}px)` }} />
         {PIEZAS.map((p, i) => {
           const t = llegada[i];
           if (f < t - 14) return null;
@@ -42,7 +42,7 @@ export const EscSalon: React.FC<{ src: string; m: number[]; dur: number }> = ({ 
         {/* el vapor real sigue subiendo: "never turns off" */}
         {f > llegada[3] + 4 && (
           <Foto src={src} clip={poly([[1730, 0], [1880, 0], [1880, 250], [1730, 250]])}
-            style={{ transform: `translateY(${-((f - llegada[3]) % 36) * 0.9}px)`, opacity: 0.45 + 0.25 * Math.sin((f - llegada[3]) / 6), mixBlendMode: "screen" }} />
+            style={{ transform: `translateY(${-((f - llegada[3]) % 36) * 0.9}px)`, opacity: 0.55 + 0.25 * Math.sin((f - llegada[3]) / 6), mixBlendMode: "screen", filter: "grayscale(1) brightness(0.85) contrast(3.2)" }} />
         )}
       </AbsoluteFill>
     </AbsoluteFill>
@@ -56,7 +56,8 @@ const franja = (k: number, gap = 0) => {
   const c1 = (k * CMAX) / N + gap, c2 = ((k + 1) * CMAX) / N - gap;
   return poly([[-120, c1 + PEND * 120], [2040, c1 - PEND * 2040], [2040, c2 - PEND * 2040], [-120, c2 + PEND * 120]]);
 };
-export const EscPedazos: React.FC<{ a: string; b: string; fB: number; fAsk: number; dur: number }> = ({ a, b, fB, fAsk, dur }) => {
+export const EscPedazos: React.FC<{ a: string; b: string; prev: string; fB: number; fAsk: number; dur: number }> = ({ a, b, prev, fB, fAsk, dur }) => {
+  const asentado = (N - 1) * 3 + 22; // todas las franjas ya en su lugar
   const f = useCurrentFrame();
   // telón: cae con gravedad y golpea
   const caida = interpolate(f, [fB, fB + 11], [0, 1], { ...CL, easing: Easing.in(Easing.quad) });
@@ -65,7 +66,8 @@ export const EscPedazos: React.FC<{ a: string; b: string; fB: number; fAsk: numb
   return (
     <AbsoluteFill style={{ background: "#120D0F", overflow: "hidden", opacity: salida(f, dur) }}>
       <AbsoluteFill style={{ transform: `translateY(${golpe}px) scale(1.03)` }}>
-        {f < fB + 12 && Array.from({ length: N }, (_, k) => {
+        {f < fB + 12 && <Foto src={f >= asentado ? a : prev} />}
+        {f < fB + 12 && f < asentado + 2 && Array.from({ length: N }, (_, k) => {
           const q = spring({ frame: f - k * 3, fps: 30, config: { damping: 11, stiffness: 110 } });
           return (
             <AbsoluteFill key={k} style={{ transform: `translate(${(1 - q) * 70}px, ${(1 - q) * -300}px) rotate(${(1 - q) * (k % 2 ? 4 : -3)}deg)`, opacity: Math.min(1, q * 2.5) }}>
