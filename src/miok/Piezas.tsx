@@ -258,9 +258,9 @@ export const Sand: React.FC<{ label: string; sub?: string; dur: number }> = ({ l
 export const Greet: React.FC<{ kr: string; en: string; dur: number }> = ({ kr, en, dur }) => {
   const f = useCurrentFrame(); const o = useOut(dur, 10);
   return (
-    <div style={{ position: "absolute", left: 120, top: 150, opacity: o }}>
+    <div style={{ position: "absolute", left: 110, bottom: 120, opacity: o }}>
       <div style={{ display: "flex", gap: 6 }}>
-        {[...kr].map((c, i) => { const q = spring({ frame: f - i * 3, fps: 30, config: { damping: 10 } }); return <span key={i} style={{ fontFamily: KR, fontWeight: 700, fontSize: 150, color: C.white, textShadow: shadow, opacity: q, display: "inline-block", transform: `translateY(${(1 - q) * 40}px) rotate(${(1 - q) * -12}deg)` }}>{c}</span>; })}
+        {[...kr].map((c, i) => { const q = spring({ frame: f - i * 3, fps: 30, config: { damping: 10 } }); return <span key={i} style={{ fontFamily: KR, fontWeight: 700, fontSize: 130, color: C.white, textShadow: shadow, opacity: q, display: "inline-block", transform: `translateY(${(1 - q) * 40}px) rotate(${(1 - q) * -12}deg)` }}>{c}</span>; })}
       </div>
       <div style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 600, fontSize: 54, color: "#FFD9DF", textShadow: shadow, opacity: interpolate(f, [14, 26], [0, 1], CL) }}>{en}</div>
     </div>

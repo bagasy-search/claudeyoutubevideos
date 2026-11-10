@@ -46,7 +46,7 @@ export const EscEspejos: React.FC<{ src: string; a: string; b: string; marks: nu
   ];
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#0D2226" }}>
-      <AbsoluteFill style={{ transform: `scale(${cam})`, transformOrigin: "492px 372px" }}>
+      <AbsoluteFill style={{ transform: `translate(${Math.min(0, 960 - 490 * cam)}px, ${Math.min(0, 540 - 362 * cam)}px) scale(${cam})`, transformOrigin: "0px 0px" }}>
         <Img src={staticFile(src)} style={FULL} />
         {M.map((m, i) => {
           if (f < m.at - 4) return null;

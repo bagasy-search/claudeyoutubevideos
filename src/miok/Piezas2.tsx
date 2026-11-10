@@ -62,7 +62,7 @@ export const Carousel: React.FC<{ cards: HabCard[]; bg: string; subAt: number; s
   const f = useCurrentFrame(); const o = useOut(dur, 12); const pIn = useIn(0, 22);
   const fanT = ease((f - dur * 0.62) / 34);
   const rot = -f * 0.55;
-  const R = 760, PR = 1150;
+  const R = 640, PR = 1250;
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <BlurBg src={bg} dark={0.45} />
@@ -77,16 +77,16 @@ export const Carousel: React.FC<{ cards: HabCard[]; bg: string; subAt: number; s
           const th = ((((i * (360 / N) + rot) % 360) + 540) % 360) - 180;
           const rad = (th * Math.PI) / 180;
           const rx = R * Math.sin(rad), rz = R * (Math.cos(rad) - 1);
-          const phi = -33 + i * (66 / (N - 1)), pr = (phi * Math.PI) / 180;
+          const phi = -30 + i * (60 / (N - 1)), pr = (phi * Math.PI) / 180;
           const fx = PR * Math.sin(pr), fy = PR * (1 - Math.cos(pr));
           const x = lerp(rx, fx, fanT), y = lerp(40, fy, fanT), z = lerp(rz, i * 2, fanT);
           const ry = lerp(th, 0, fanT), rzz = lerp(0, phi, fanT);
-          const sc = lerp(1, 0.86, fanT) * appear;
-          const vis = lerp(cl(0.25 + 0.75 * Math.cos(rad), 0.12, 1), 1, fanT);
+          const sc = lerp(1, 0.7, fanT) * appear;
+          const vis = lerp(cl(0.5 + 0.5 * Math.cos(rad), 0.28, 1), 1, fanT);
           return (
-            <div key={i} style={{ position: "absolute", left: 960 - 200, top: 400, zIndex: Math.round(2000 + z), opacity: vis * appear,
+            <div key={i} style={{ position: "absolute", left: 960 - 230, top: 350, zIndex: Math.round(2000 + z), opacity: vis * appear,
               transform: `translate3d(${x}px, ${y}px, ${z}px) rotateY(${ry}deg) rotateZ(${rzz}deg) scale(${sc})` }}>
-              <HabitPhotoCard n={i + 1} title={c.title} src={c.src} w={400} />
+              <HabitPhotoCard n={i + 1} title={c.title} src={c.src} w={460} />
             </div>
           );
         })}

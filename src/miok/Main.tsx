@@ -41,7 +41,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "kinetic": return <P.Kinetic lines={o.lines} accent={o.accent} dur={d} />;
     case "quote": return <P.Quote text={o.text} dur={d} />;
     case "tag": return <P.Tag text={o.text} kr={o.kr} left={o.left} dur={d} />;
-    case "counter": return <P.Counter to={o.to} from={o.from} suffix={o.suffix} label={o.label} right={o.right} dur={d} />;
+    case "counter": return <P.Counter to={o.to} from={o.start} suffix={o.suffix} label={o.label} right={o.right} dur={d} />;
     case "stat": return <P.Stat title={o.title} lines={o.lines} foot={o.foot} dur={d} />;
     case "thermo": return <P.Thermo deg={o.deg} label={o.label} sub={o.sub} subAt={o.subAt} dur={d} />;
     case "sand": return <P.Sand label={o.label} sub={o.sub} dur={d} />;
@@ -83,7 +83,7 @@ export const MainMiok01: React.FC = () => (
     <P.Grade />
     {/* capa 3: gráficos */}
     {OVERLAYS.map((o, i) => (
-      <Sequence key={"o" + i} from={o.from} durationInFrames={Math.min(o.dur, TOTAL - o.from)}>
+      <Sequence key={"o" + i} from={o.start} durationInFrames={Math.min(o.dur, TOTAL - o.from)}>
         <Overlay o={o} />
       </Sequence>
     ))}
