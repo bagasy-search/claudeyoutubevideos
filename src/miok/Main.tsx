@@ -83,7 +83,7 @@ export const MainMiok01: React.FC = () => (
     <P.Grade />
     {/* capa 3: gráficos */}
     {OVERLAYS.map((o, i) => (
-      <Sequence key={"o" + i} from={o.start} durationInFrames={Math.min(o.dur, TOTAL - o.from)}>
+      <Sequence key={"o" + i} from={o.from} durationInFrames={Math.min(o.dur, TOTAL - o.from)}>
         <Overlay o={o} />
       </Sequence>
     ))}
