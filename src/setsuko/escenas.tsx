@@ -45,7 +45,7 @@ export const pilas: React.FC<SP> = ({ t, arg }) => {
 
 // 3 · "White leather sneakers, and black loafers": dos mitades llegan desde lados opuestos, cada una con su par, y cierran en la piedra libre (x=712)
 export const pares: React.FC<SP> = ({ t, a, b, arg }) => {
-  const negro = Number(arg), L = eo(t, a + 0.05, 0.6), Rr = eo(t, negro - 0.1, 0.6), junto = e(t, negro + 0.5, b + 0.4);
+  const negro = Number(arg), L = eo(t, a - 0.3, 0.55), Rr = eo(t, negro - 0.1, 0.6), junto = e(t, negro + 0.5, b + 0.4);
   return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
     <Img src={foto("g064")} style={{ ...FULL, transform: "scale(1.15)", filter: "blur(24px) brightness(.28)" }} />
     <AbsoluteFill style={{ transformOrigin: "700px 790px", transform: `scale(${1.22 + junto * 0.16})` }}>

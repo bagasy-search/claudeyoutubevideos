@@ -10,21 +10,22 @@ const cap: React.CSSProperties = { fontFamily: SANS, fontWeight: 400, letterSpac
 export const Rail: React.FC<SP> = ({ t, a, b, arg }) => {
   const n = Number(arg), z = PZ[n - 1], d = b - a;
   const drop = spr(t, a + 0.12, 1.25), guarda = d >= 3.5 ? e(t, b - 0.95, b - 0.2) : 0;
-  const bx = lerp(690, slotX(n - 1), guarda), bw = lerp(540, 150, guarda);
+  const px = (i: number) => 175 + i * 70;
+  const bx = lerp(930, px(n - 1), guarda), bw = lerp(520, 112, guarda);
   const txt = a + 0.45;
   return <Washi>
     <Riel />
-    {PZ.slice(0, n - 1).map((q, i) => <Prenda key={i} f={q.f} hook={q.hook} x={slotX(i)} y={RAIL_Y} w={150} rot={swing(t, a + 0.5, 2.2, 1.6, 6 + i * 0.4)} />)}
+    {PZ.slice(0, n - 1).map((q, i) => <Prenda key={i} f={q.f} hook={q.hook} x={px(i)} y={RAIL_Y} w={112} rot={swing(t, a + 0.5, 2.2, 1.6, 6 + i * 0.4)} />)}
     <Prenda f={z.f} hook={z.hook} x={bx} y={lerp(-1000, RAIL_Y, cl(drop))} w={bw} rot={swing(t, a + 0.3, 7, 1.9, 6.4)} />
-    <div style={{ position: "absolute", left: 1130, top: 300, width: 700, opacity: 1 - guarda * 0.0 }}>
+    <div style={{ position: "absolute", left: 1290, top: 250, width: 560 }}>
       <div style={{ display: "flex", alignItems: "baseline", gap: 26, fontFamily: SERIF, color: C.sumi }}>
-        <span style={{ fontSize: 330, lineHeight: 0.9, opacity: eo(t, txt, 0.4), transform: `translateY(${(1 - eo(t, txt, 0.5)) * 40}px)`, display: "inline-block" }}>{n}</span>
-        <span style={{ fontSize: 120, opacity: eo(t, txt + 0.15, 0.4) * 0.45 }}>/ 9</span>
+        <span style={{ fontSize: 310, lineHeight: 0.9, opacity: eo(t, txt, 0.4), transform: `translateY(${(1 - eo(t, txt, 0.5)) * 40}px)`, display: "inline-block" }}>{n}</span>
+        <span style={{ fontSize: 104, opacity: eo(t, txt + 0.15, 0.4) * 0.45 }}>/ 9</span>
         <span style={{ fontSize: 96, color: C.hanko, opacity: eo(t, txt + 0.25, 0.4), marginLeft: "auto" }}>{z.kan}</span>
       </div>
-      <Pincel t={t} at={txt + 0.2} x={0} y={330} w={620} hgt={10} />
-      <Palabras t={t} at={txt + 0.3} txt={z.name} style={{ fontFamily: SERIF, fontSize: 84, color: C.sumi, marginTop: 56 }} />
-      <div style={{ ...cap, fontSize: 27, marginTop: 22, opacity: eo(t, txt + 0.65, 0.5) * 0.75 }}>{z.sub}</div>
+      <Pincel t={t} at={txt + 0.2} x={0} y={315} w={540} hgt={10} />
+      <Palabras t={t} at={txt + 0.3} txt={z.name} style={{ fontFamily: SERIF, fontSize: 78, color: C.sumi, marginTop: 60, lineHeight: 1.15 }} />
+      <div style={{ ...cap, fontSize: 26, marginTop: 24, lineHeight: 1.5, opacity: eo(t, txt + 0.65, 0.5) * 0.75 }}>{z.sub}</div>
     </div>
   </Washi>;
 };
@@ -47,13 +48,11 @@ export const Rail9: React.FC<SP> = ({ t, a }) => {
 // ── "Nine hangers. I can see every one.": el riel completo, una brisa lo recorre
 export const RailFull: React.FC<SP> = ({ t, a }) => (
   <Washi>
-    <AbsoluteFill style={{ transform: `scale(${lerp(1.16, 1.04, eo(t, a, 3.2))}) translateY(${lerp(120, 96, eo(t, a, 3.2))}px)`, transformOrigin: "50% 20%" }}>
-      <Riel />
-      {PZ.map((q, i) => <Prenda key={i} f={q.f} hook={q.hook} x={slotX(i)} y={RAIL_Y} w={172} rot={3.2 * Math.sin((t - a) * 2.3 - i * 0.55) * Math.exp(-0.25 * (t - a))} />)}
-    </AbsoluteFill>
+    <Riel y={RAIL_Y + 110} />
+    {PZ.map((q, i) => <Prenda key={i} f={q.f} hook={q.hook} x={slotX(i)} y={RAIL_Y + 110} w={lerp(196, 188, eo(t, a, 3))} rot={3.4 * Math.sin((t - a) * 2.3 - i * 0.55) * Math.exp(-0.25 * (t - a))} />)}
     <div style={{ position: "absolute", left: 0, right: 0, top: 800, textAlign: "center" }}>
-      <Palabras t={t} at={a + 0.15} txt="nine hangers" style={{ justifyContent: "center", fontFamily: SERIF, fontSize: 92, color: C.sumi }} />
-      <div style={{ ...cap, fontSize: 26, marginTop: 20, opacity: eo(t, FR(182), 0.5) * 0.7 }}>I can see every one</div>
+      <Palabras t={t} at={a + 0.15} txt="nine hangers" style={{ justifyContent: "center", fontFamily: SERIF, fontSize: 100, color: C.sumi }} />
+      <div style={{ ...cap, fontSize: 28, marginTop: 20, opacity: eo(t, FR(182), 0.5) * 0.7 }}>I can see every one</div>
     </div>
   </Washi>
 );
@@ -63,20 +62,20 @@ export const Cambio: React.FC<SP> = ({ t, a }) => {
   const sale = a + 1.5, entra = FR(175) + 3.2, dos = FR(176), azul = FR(177);
   const out = eo(t, sale, 0.8), inn = spr(t, entra, 1.1);
   const reb = (at: number) => { const x = t - at; return x < 0 ? 1 : x < 0.45 ? 1 - eo(t, at, 0.45) * 0.62 : 0.38 + eo(t, at + 0.55, 0.5) * 0.9; }; // entra hasta 38 % y sale despedida
-  const X0 = slotX(2);
+  const X0 = slotX(2), RY = RAIL_Y + 110;
   return <Washi>
-    <AbsoluteFill style={{ transform: "translateY(110px) scale(1.06)", transformOrigin: "50% 20%" }}>
-      <Riel />
-      {PZ.map((q, i) => i === 2 ? null : <Prenda key={i} f={q.f} hook={q.hook} x={slotX(i)} y={RAIL_Y} w={160} rot={swing(t, a + 0.2, 1.6, 1.2, 5 + i)} op={0.55} />)}
+    <>
+      <Riel y={RY} />
+      {PZ.map((q, i) => i === 2 ? null : <Prenda key={i} f={q.f} hook={q.hook} x={slotX(i)} y={RY} w={176} rot={swing(t, a + 0.2, 1.6, 1.2, 5 + i)} op={0.55} />)}
       {/* la camisa gastada se va hacia abajo y se apaga */}
-      <Prenda f="p3" hook={0.035} x={X0} y={RAIL_Y + out * 620} w={160} rot={out * 14 + swing(t, a + 0.2, 3, 1.2, 6)} op={1 - out} style={{ filter: `saturate(${1 - e(t, a + 0.3, sale) * 0.7}) contrast(${1 - e(t, a + 0.3, sale) * 0.25})` }} />
+      <Prenda f="p3" hook={0.035} x={X0} y={RY + out * 620} w={176} rot={out * 14 + swing(t, a + 0.2, 3, 1.2, 6)} op={1 - out} style={{ filter: `saturate(${1 - e(t, a + 0.3, sale) * 0.7}) contrast(${1 - e(t, a + 0.3, sale) * 0.25})` }} />
       {/* entra UNA camisa de lino */}
-      {t >= entra && <Prenda f="p3" hook={0.035} x={X0} y={lerp(-420, RAIL_Y, cl(inn))} w={160} rot={swing(t, entra + 0.1, 8, 2, 7)} />}
+      {t >= entra && <Prenda f="p3" hook={0.035} x={X0} y={lerp(-420, RY, cl(inn))} w={176} rot={swing(t, entra + 0.1, 8, 2, 7)} />}
       {/* "Not two." */}
-      {t >= dos && t < dos + 1.3 && <Prenda f="p3" hook={0.035} x={lerp(X0 + 60, 2150, reb(dos))} y={RAIL_Y - 4} w={160} rot={-10 * (1 - reb(dos))} op={0.9} />}
+      {t >= dos && t < dos + 1.3 && <Prenda f="p3" hook={0.035} x={lerp(X0 + 60, 2150, reb(dos))} y={RY - 4} w={176} rot={-10 * (1 - reb(dos))} op={0.9} />}
       {/* "Not one more in blue" */}
-      {t >= azul && t < azul + 1.6 && <Prenda f="pblue" hook={0.065} x={lerp(X0 + 70, 2150, reb(azul + 0.25))} y={RAIL_Y - 4} w={160} rot={-12 * (1 - reb(azul + 0.25))} />}
-    </AbsoluteFill>
+      {t >= azul && t < azul + 1.6 && <Prenda f="pblue" hook={0.065} x={lerp(X0 + 70, 2150, reb(azul + 0.25))} y={RY - 4} w={176} rot={-12 * (1 - reb(azul + 0.25))} />}
+    </>
     <div style={{ position: "absolute", left: 0, right: 0, top: 740, display: "flex", justifyContent: "center", gap: 90, fontFamily: SERIF, fontSize: 104, color: C.sumi }}>
       <span style={{ opacity: eo(t, entra, 0.4) }}>one in</span>
       <span style={{ opacity: eo(t, a + 0.3, 0.4), color: C.hanko }}>·</span>
@@ -86,8 +85,8 @@ export const Cambio: React.FC<SP> = ({ t, a }) => {
       <span style={{ opacity: e(t, dos, dos + 0.25) * (1 - e(t, azul - 0.1, azul + 0.1)) }}>not two</span>
       <span style={{ opacity: e(t, azul + 0.3, azul + 0.6), position: "absolute", left: 0, right: 0 }}>not one more in blue</span>
     </div>
-    <Pincel t={t} at={dos + 0.4} dur={0.22} x={X0 + 150} y={420} w={230} hgt={16} rot={-38} col={C.hanko} op={(1 - e(t, dos + 1.0, dos + 1.25)) * 0.9} />
-    <Pincel t={t} at={azul + 0.65} dur={0.22} x={X0 + 150} y={420} w={230} hgt={16} rot={-38} col={C.hanko} op={(1 - e(t, azul + 1.4, azul + 1.7)) * 0.9} />
+    <Pincel t={t} at={dos + 0.4} dur={0.22} x={X0 + 130} y={520} w={230} hgt={16} rot={-38} col={C.hanko} op={(1 - e(t, dos + 1.0, dos + 1.25)) * 0.9} />
+    <Pincel t={t} at={azul + 0.65} dur={0.22} x={X0 + 130} y={520} w={230} hgt={16} rot={-38} col={C.hanko} op={(1 - e(t, azul + 1.4, azul + 1.7)) * 0.9} />
   </Washi>;
 };
 
@@ -138,16 +137,16 @@ export const Agenda: React.FC<SP> = ({ t }) => {
   const a = FR(11); // la escena ocupa dos planos del plan (011 cortina + 012 índice): siempre se ancla a la frase 11
   const abre = eo(t, a + 1.0, 1.5);
   return <Washi>
-    <div style={{ position: "absolute", left: 150, right: 150, top: 215, display: "flex", justifyContent: "space-between" }}>
+    <div style={{ position: "absolute", left: 110, right: 110, top: 130, display: "flex", justifyContent: "space-between" }}>
       {IDX.map(([f, kan, num, lab], i) => { const at = FR(f), p = eo(t, at, 0.5);
-        return <div key={i} style={{ width: 350, textAlign: "center", opacity: p, transform: `translateY(${(1 - p) * 36}px)` }}>
-          <div style={{ fontFamily: SERIF, fontSize: 64, color: C.hanko, height: 150, writingMode: "vertical-rl", margin: "0 auto", letterSpacing: "0.1em" }}>{kan}</div>
-          <div style={{ fontFamily: SERIF, fontSize: 250, lineHeight: 1, color: C.sumi, marginTop: 20 }}>{num}</div>
+        return <div key={i} style={{ width: 400, textAlign: "center", opacity: p, transform: `translateY(${(1 - p) * 36}px)` }}>
+          <div style={{ fontFamily: SERIF, fontSize: 88, color: C.hanko, height: 200, writingMode: "vertical-rl", margin: "0 auto", letterSpacing: "0.1em" }}>{kan}</div>
+          <div style={{ fontFamily: SERIF, fontSize: 340, lineHeight: 1, color: C.sumi, marginTop: 20 }}>{num}</div>
           <div style={{ height: 3, background: C.sumi, opacity: 0.8, width: `${eo(t, at + 0.2, 0.5) * 60}%`, margin: "34px auto 30px" }} />
-          <div style={{ ...cap, fontSize: 34 }}>{lab}</div>
+          <div style={{ ...cap, fontSize: 44 }}>{lab}</div>
         </div>; })}
     </div>
-    <Hanko t={t} at={FR(15) + 1.5} x={1690} y={905} size={120} />
+    <Hanko t={t} at={FR(15) + 1.5} x={1740} y={960} size={130} />
     {abre < 0.999 && <><div style={{ position: "absolute", left: -40, top: -22, width: 2000, height: 34, background: "linear-gradient(180deg,#d8bd7c,#8e7440)", zIndex: 3, opacity: 1 - e(t, a + 2.2, a + 2.6) }} />
       <Panel lado={-1} p={abre} t={t} /><Panel lado={1} p={abre} t={t} /></>}
   </Washi>;
@@ -188,13 +187,13 @@ const FLOR: React.CSSProperties = { backgroundColor: "#efe3d6", backgroundImage:
 export const NoColores: React.FC<SP> = ({ t, a, b }) => {
   const T = [FR(89), FR(90), FR(91)], S = [tela("#b3242b"), tela("#e7a3b5", true), FLOR], N = ["red", "pink", "flowers"];
   return <Washi>
-    {T.map((at, i) => { const p = spr(t, at - 0.1, 1.4), x = 330 + i * 470;
-      return <div key={i} style={{ position: "absolute", left: x, top: 240, width: 330, height: 440, opacity: cl(p * 3) }}>
+    {T.map((at, i) => { const p = spr(t, at - 0.1, 1.4), x = 200 + i * 560;
+      return <div key={i} style={{ position: "absolute", left: x, top: 150, width: 400, height: 530, opacity: cl(p * 3) }}>
         <div style={{ width: "100%", height: "100%", ...S[i], borderRadius: 6, boxShadow: "0 26px 40px rgba(30,20,10,.25)", transform: `rotate(${(i - 1) * 3 + (1 - cl(p)) * 12}deg) translateY(${(1 - cl(p)) * -260}px)`, filter: `saturate(${1 - e(t, at + 0.35, at + 0.8) * 0.75})` }} />
-        <Pincel t={t} at={at + 0.25} dur={0.2} x={-40} y={380} w={470} hgt={26} rot={-46} />
-        <div style={{ ...cap, fontSize: 30, textAlign: "center", marginTop: 46, opacity: eo(t, at + 0.1, 0.3) }}>no {N[i]}</div>
+        <Pincel t={t} at={at + 0.25} dur={0.2} x={-50} y={460} w={570} hgt={30} rot={-46} />
+        <div style={{ ...cap, fontSize: 38, textAlign: "center", marginTop: 50, opacity: eo(t, at + 0.1, 0.3) }}>no {N[i]}</div>
       </div>; })}
-    <div style={{ position: "absolute", left: 0, right: 0, top: 880, textAlign: "center", fontFamily: SERIF, fontSize: 80, color: C.sumi, opacity: eo(t, FR(92), 0.4) }}>why?</div>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 880, textAlign: "center", fontFamily: SERIF, fontSize: 110, color: C.sumi, opacity: eo(t, FR(92), 0.4) }}>why?</div>
     <div style={{ display: "none" }}>{a + b}</div>
   </Washi>;
 };
@@ -207,10 +206,10 @@ export const COLORES = [
 export const Tarjeta: React.FC<{ i: number; t: number; at: number; w?: number; style?: React.CSSProperties }> = ({ i, t, at, w = 300, style }) => {
   const c = COLORES[i], hgt = w * 1.36, r = eo(t, at + 0.25, 0.5);
   return <div style={{ width: w, height: hgt, borderRadius: 5, ...tela(c.col, c.claro), boxShadow: "0 22px 44px rgba(20,15,5,.38), 0 2px 0 rgba(255,255,255,.18) inset", position: "relative", ...style }}>
-    <div style={{ position: "absolute", left: w * 0.08, right: w * 0.08, bottom: w * 0.08, background: "#f6f1e6", padding: `${w * 0.05}px ${w * 0.07}px`, display: "flex", alignItems: "center", gap: w * 0.06, boxShadow: "0 3px 8px rgba(0,0,0,.2)" }}>
-      <div style={{ fontFamily: SERIF, fontSize: w * (c.kan.length > 1 ? 0.14 : 0.24), color: C.sumi, lineHeight: 1, clipPath: `inset(0 ${(1 - r) * 100}% 0 0)`, whiteSpace: "nowrap" }}>{c.kan}</div>
+    <div style={{ position: "absolute", left: w * 0.08, right: w * 0.08, bottom: w * 0.08, background: "#f6f1e6", padding: `${w * 0.05}px ${w * 0.07}px`, display: "flex", alignItems: "center", gap: w * 0.045, boxShadow: "0 3px 8px rgba(0,0,0,.2)" }}>
+      <div style={{ fontFamily: SERIF, fontSize: w * (c.kan.length > 1 ? 0.105 : 0.24), color: C.sumi, lineHeight: 1, clipPath: `inset(0 ${(1 - r) * 100}% 0 0)`, whiteSpace: "nowrap" }}>{c.kan}</div>
       <div style={{ opacity: eo(t, at + 0.45, 0.4) }}>
-        <div style={{ fontFamily: SERIF, fontSize: w * 0.105, color: C.sumi, lineHeight: 1.05 }}>{c.ro}</div>
+        <div style={{ fontFamily: SERIF, fontSize: w * (c.kan.length > 1 ? 0.085 : 0.105), color: C.sumi, lineHeight: 1.05 }}>{c.ro}</div>
         <div style={{ ...cap, fontSize: w * 0.043, letterSpacing: "0.2em", opacity: 0.7, marginTop: 4 }}>{c.en}</div>
       </div>
     </div>
@@ -249,9 +248,9 @@ export const Matriz: React.FC<SP> = ({ t, a, b }) => {
   const num = Math.round(lerp(prev, cur, eo(t, tn, cur - prev > 10 ? 0.9 : 0.35)));
   const fin = t >= FR(137);
   return <Washi>
-    <AbsoluteFill style={{ transform: `scale(${lerp(1.03, 1, eo(t, a, 1.2))})` }}>
+    <AbsoluteFill>
       {ORD.map((n, j) => { const z = PZ[n - 1], cx = 150 + (j % 3) * 330, cy = 60 + Math.floor(j / 3) * 330, act = on.includes(n), lift = act ? eo(t, Math.max(at, a), 0.3) : 0, ent = eo(t, a + 0.05 + j * 0.05, 0.45);
-        return <div key={n} style={{ position: "absolute", left: cx, top: cy + (1 - ent) * 40, width: 300, height: 300, opacity: ent * (act || fin ? 1 : 0.3), transform: `translateY(${-lift * 10}px) scale(${1 + lift * 0.05})`,
+        return <div key={n} style={{ position: "absolute", left: cx, top: cy + (1 - ent) * 40, width: 300, height: 300, opacity: ent * (act || fin ? 1 : 0.42), transform: `translateY(${-lift * 10}px) scale(${1 + lift * 0.05})`,
           background: "rgba(250,247,240,.75)", boxShadow: act ? "0 18px 34px rgba(30,20,5,.22)" : "0 2px 6px rgba(30,20,5,.08)", border: `2px solid ${act ? C.sumi : "rgba(30,28,26,.12)"}`, borderRadius: 4 }}>
           <Prenda f={z.f} hook={0} x={150} y={12} w={176} />
           <div style={{ position: "absolute", left: 14, top: 10, fontFamily: SERIF, fontSize: 30, color: act ? C.hanko : C.sumi, opacity: 0.85 }}>{z.kan}</div>
@@ -278,15 +277,15 @@ export const Matriz: React.FC<SP> = ({ t, a, b }) => {
 // ── cierre: nueve prendas · cinco colores · tres reglas
 export const Recap: React.FC<SP> = ({ t }) => {
   const A = FR(190), B = FR(191), Cc = FR(192);
-  const fila = (at: number, y: number, num: string, lab: string, ch: React.ReactNode) => <div style={{ position: "absolute", left: 170, right: 170, top: y, height: 250, display: "flex", alignItems: "center", opacity: eo(t, at, 0.35), transform: `translateX(${(1 - eo(t, at, 0.45)) * -50}px)` }}>
-    <div style={{ fontFamily: SERIF, fontSize: 230, color: C.sumi, width: 250, lineHeight: 1 }}>{num}</div>
-    <div style={{ ...cap, fontSize: 34, width: 300 }}>{lab}</div>
+  const fila = (at: number, y: number, num: string, lab: string, ch: React.ReactNode) => <div style={{ position: "absolute", left: 170, right: 170, top: y, height: 250, display: "flex", alignItems: "center" }}>
+    <div style={{ fontFamily: SERIF, fontSize: 230, color: C.sumi, width: 250, lineHeight: 1, opacity: eo(t, at, 0.35), transform: `translateX(${(1 - eo(t, at, 0.45)) * -50}px)` }}>{num}</div>
+    <div style={{ ...cap, fontSize: 34, width: 300, opacity: eo(t, at + 0.1, 0.35) }}>{lab}</div>
     <div style={{ position: "relative", flex: 1, height: 250 }}>{ch}</div>
   </div>;
   return <Washi>
-    {fila(A, 60, "9", "pieces", <>{PZ.map((q, i) => <Prenda key={i} f={q.f} hook={0} x={70 + i * 108} y={20} w={128} rot={swing(t, A + i * 0.04, 5, 2.4, 7)} />)}</>)}
+    {fila(A, 60, "9", "pieces", <>{PZ.map((q, i) => <Prenda key={i} f={q.f} hook={0} x={70 + i * 108} y={20 - (1 - cl(spr(t, A + i * 0.05, 1.5))) * 420} w={128} rot={swing(t, A + i * 0.05, 5, 2.4, 7)} op={t >= A ? 1 : 0} />)}</>)}
     <div style={{ position: "absolute", left: 170, right: 170, top: 345, height: 2, background: C.line }} />
-    {fila(B, 400, "5", "colours", <>{COLORES.map((c, i) => <div key={i} style={{ position: "absolute", left: 20 + i * 190, top: 40, width: 160, height: 170, borderRadius: 4, ...tela(c.col, c.claro), boxShadow: "0 12px 22px rgba(20,15,5,.25)", transform: `translateY(${(1 - cl(spr(t, B + i * 0.06, 1.5))) * -60}px) rotate(${(i - 2) * 1.5}deg)` }} />)}</>)}
+    {fila(B, 400, "5", "colours", <>{COLORES.map((c, i) => <div key={i} style={{ position: "absolute", left: 20 + i * 190, top: 40, width: 160, height: 170, borderRadius: 4, ...tela(c.col, c.claro), boxShadow: "0 12px 22px rgba(20,15,5,.25)", opacity: eo(t, B + i * 0.06, 0.2), transform: `translateY(${(1 - cl(spr(t, B + i * 0.06, 1.5))) * -60}px) rotate(${(i - 2) * 1.5}deg)` }} />)}</>)}
     <div style={{ position: "absolute", left: 170, right: 170, top: 690, height: 2, background: C.line }} />
     {fila(Cc, 740, "3", "rules", <>{["一", "二", "三"].map((k, i) => <Hanko key={i} t={t} at={Cc + 0.25 + i * 0.22} x={110 + i * 220} y={125} size={150} txt={"掟" + k} rot={-6 + i * 5} />)}</>)}
   </Washi>;

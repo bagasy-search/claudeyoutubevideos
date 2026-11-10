@@ -12,10 +12,10 @@ const papel: React.CSSProperties = { background: "linear-gradient(180deg,#f8f4ea
 // regla N: el sello cae y la regla se escribe al lado
 export const Regla: React.FC<OP> = ({ t, a, b, n, txt }) => {
   const p = eo(t, a, 0.45) * sale(t, b);
-  return <div style={{ position: "absolute", left: 90, bottom: 86, ...papel, padding: "30px 46px 30px 190px", minHeight: 150, opacity: p, transform: `translateY(${(1 - eo(t, a, 0.45)) * 50}px)`, borderLeft: `5px solid ${C.hanko}` }}>
-    <Hanko t={t} at={a + 0.4} x={100} y={76} size={118} txt={"掟" + ["一", "二", "三"][n - 1]} />
-    <div style={{ ...cap, fontSize: 21, color: C.hanko }}>the Kyoto closet rule · {["one", "two", "three"][n - 1]}</div>
-    <Palabras t={t} at={a + 0.55} txt={txt} gap={0.09} style={{ fontFamily: SERIF, fontSize: 50, color: C.sumi, marginTop: 10, maxWidth: 900 }} />
+  return <div style={{ position: "absolute", left: 90, bottom: 86, ...papel, padding: "34px 54px 36px 210px", minHeight: 170, opacity: p, transform: `translateY(${(1 - eo(t, a, 0.45)) * 50}px)`, borderLeft: `5px solid ${C.hanko}` }}>
+    <Hanko t={t} at={a + 0.4} x={108} y={88} size={132} txt={"掟" + ["一", "二", "三"][n - 1]} />
+    <div style={{ ...cap, fontSize: 24, color: C.hanko }}>the Kyoto closet rule · {["one", "two", "three"][n - 1]}</div>
+    <Palabras t={t} at={a + 0.55} txt={txt} gap={0.09} style={{ fontFamily: SERIF, fontSize: 60, color: C.sumi, marginTop: 12, maxWidth: 1100 }} />
   </div>;
 };
 
@@ -56,8 +56,8 @@ export const Lower: React.FC<OP> = ({ t, a, b, name, sub }) => {
   return <div style={{ position: "absolute", left: 100, bottom: 96, opacity: p, transform: `translateX(${(1 - eo(t, a, 0.5)) * -40}px)`, display: "flex", alignItems: "stretch", gap: 24 }}>
     <div style={{ width: 5, background: C.hanko }} />
     <div style={{ ...papel, padding: "22px 40px 24px" }}>
-      <div style={{ fontFamily: SERIF, fontSize: 58, color: C.sumi, lineHeight: 1.1 }}>{name}</div>
-      <div style={{ ...cap, fontSize: 21, color: C.sumi, opacity: 0.72, marginTop: 8 }}>{sub}</div>
+      <div style={{ fontFamily: SERIF, fontSize: 72, color: C.sumi, lineHeight: 1.1 }}>{name}</div>
+      <div style={{ ...cap, fontSize: 26, color: C.sumi, opacity: 0.72, marginTop: 8 }}>{sub}</div>
     </div>
   </div>;
 };
@@ -78,7 +78,7 @@ export const Chip: React.FC<OP> = ({ t, a, b, kan, txt }) => {
 export const Muestra: React.FC<OP> = ({ t, a, b, i }) => {
   const p = spr(t, a, 1.15), q = cl(p);
   return <div style={{ position: "absolute", left: 96 + i * 34, bottom: 80 + i * 10, transform: `translateY(${(q - 1) * 900}px) rotate(${lerp(-18, [-5, 3, -2, 4, -3][i], q)}deg)`, opacity: sale(t, b, 0.3) }}>
-    <Tarjeta i={i} t={t} at={a + 0.25} w={300} />
+    <Tarjeta i={i} t={t} at={a + 0.25} w={370} />
   </div>;
 };
 
