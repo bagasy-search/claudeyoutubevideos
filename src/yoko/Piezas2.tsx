@@ -104,7 +104,7 @@ export const Progress: React.FC<{ n: number; title: string; total?: number; dur:
   const o = interpolate(f, [0, 8, dur - 8, dur], [0, 1, 1, 0], CL);
   const pop = spring({ frame: f - 6, fps: 30, config: { damping: 9, mass: 0.6 } });
   return (
-    <div style={{ position: "absolute", right: 50, top: 42, opacity: o, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 10 }}>
+    <div style={{ position: "absolute", right: 50, top: 42, opacity: o, transform: "scale(1.3)", transformOrigin: "100% 0%", display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 10 }}>
       <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 20, letterSpacing: 4, color: C.white, textShadow: shadow }}>
         <span style={{ color: PINK }}>{n}</span> / {total} · {title.toUpperCase()}
       </div>
@@ -229,7 +229,7 @@ export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: H
   return (
     <AbsoluteFill>
       <BlurBg src={bg} dark={0.5} />
-      <div style={{ position: "absolute", top: 110, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 78, color: C.white, textShadow: shadow, opacity: p }}>
+      <div style={{ position: "absolute", top: 150, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 78, color: C.white, textShadow: shadow, opacity: p }}>
         <span style={{ color: PINK }}>{cards.length}</span> {title}
       </div>
       {cards.map((c, i) => {
@@ -240,7 +240,7 @@ export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: H
         const lit = f >= it.f;
         const pop = lit ? 1 + 0.08 * Math.max(0, 1 - (f - it.f) / 10) : 1;
         return (
-          <div key={i} style={{ position: "absolute", left: 68 + col * 362, top: 300 + row * 420, opacity: e, transform: `translateY(${(1 - e) * 60}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8}deg) scale(${(lit ? 1 : 0.94) * pop})` }}>
+          <div key={i} style={{ position: "absolute", left: 68 + col * 362, top: 330 + row * 420, opacity: e, transform: `translateY(${(1 - e) * 60}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8}deg) scale(${(lit ? 1 : 0.94) * pop})` }}>
             <HabitPhotoCard n={i + 1} title={c.title} src={c.src} w={336} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
           </div>
         );

@@ -15,7 +15,7 @@ const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   if (s.veo) return <P.Clip src={s.veo} seed={s.id + 1} dur={dur} clipDur={s.veoDur} minRate={0.42} />; // foto animada con Veo (primer cuadro)
   if (s.k === "Y") return <P.Clip src={s.src} seed={s.id + 1} dur={dur} clipDur={s.clipDur} />;
   if (s.k === "W" || s.k === "G") return <P.Photo src={s.src} seed={s.id + 1} dur={dur} />;
-  if (s.k === "C" && s.comp === "routine") return <P.Shopping items={s.items} bg={s.bg} kicker="EVERY MORNING · BEFORE BREAKFAST" title="Five minutes" dur={dur} />;
+  if (s.k === "C" && s.comp === "routine") return <P.Shopping items={s.items} bg={s.bg} kicker="EVERY MORNING" title="Five minutes" dur={dur} />;
   if (s.k === "C" && s.comp === "recap") return <P.Recap items={s.items} bg={s.bg} dur={dur} />;
   return null;
 };
@@ -44,7 +44,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "clock": return <P.Clock h={o.h} m={o.m} label={o.label} night={o.night} dur={d} />;
     case "tag": return <P.Tag text={o.text} dur={d} />;
     case "gauge": return <P.Gauge pct={o.pct} jp={o.jp} label={o.label} dur={d} />;
-    case "counter": return <P.Counter to={o.to} from={o.from} prefix={o.prefix} suffix={o.suffix} label={o.label} dur={d} />;
+    case "counter": return <P.Counter to={o.to} from={o.v0} prefix={o.prefix} suffix={o.suffix} label={o.label} dur={d} />;
     case "stat": return <P.Stat title={o.title} lines={o.lines} foot={o.foot} kicker={o.kicker} dur={d} />;
     case "route": return <P.Route a={o.a} b={o.b} dur={d} />;
     case "thermo": return <P.Thermo deg={o.deg} label={o.label} sub={o.sub} subAt={o.subAt} dur={d} />;
@@ -60,7 +60,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "compare": return <R.Compare a={o.a} b={o.b} la={o.la} lb={o.lb} atB={o.atB} note={o.note} noteAt={o.noteAt} dur={d} />;
     case "progress": return <Q.Progress n={o.n} title={o.title} total={5} dur={d} />;
     case "split": return <Q.SplitPhoto src={o.src} seed={o.seed} dur={d} />;
-    case "polaroid": return <Q.Polaroid src={o.src} caption={o.caption} seed={o.seed} dur={d} />;
+    case "polaroid": return <Q.Polaroid src={o.src} caption={o.caption} seed={o.seed} left dur={d} />;
     case "map": return <Q.MapJP a={o.a} b={o.b} la={o.la} ja={o.ja} lb={o.lb} jb={o.jb} dur={d} />;
     case "cta": return <Q.CTA text={o.text} cards={CARDS} dur={d} />;
     default: return null;

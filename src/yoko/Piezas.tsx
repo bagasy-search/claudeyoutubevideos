@@ -454,8 +454,7 @@ export const Shopping: React.FC<{ items: { txt: string; f: number }[]; bg: strin
     <AbsoluteFill>
       <Photo src={bg} seed={5252} dur={dur} />
       <AbsoluteFill style={{ background: "rgba(8,14,30,0.5)" }} />
-      <Washi style={{ position: "absolute", left: 560, top: 110, width: 800, height: 860, padding: "50px 60px 50px 70px", transform: `translateY(${(1 - p) * 900}px) rotate(-1.5deg)`,
-        backgroundImage: "repeating-linear-gradient(180deg, transparent 0 89px, rgba(44,71,102,0.22) 89px 91px)" }}>
+      <Washi style={{ position: "absolute", left: 560, top: 110, width: 800, height: 860, padding: "50px 60px 50px 70px", transform: `translateY(${(1 - p) * 900}px) rotate(-1.5deg)` }}>
         <div style={{ fontFamily: SANS, fontWeight: 600, letterSpacing: 8, fontSize: 24, color: C.ver }}>{kicker}</div>
         <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 80, color: C.ink, margin: "6px 0 30px" }}>{title}</div>
         {items.map((it, i) => {
