@@ -4,9 +4,9 @@ import { AbsoluteFill, Img, OffthreadVideo, interpolate, spring, staticFile, use
 import { C, FONTS, hash, useKB } from "./Piezas";
 
 const { SERIF, SANS, HAND, JP } = FONTS;
-const KANJI = ["", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
+const KANJI = ["", ...Array.from({ length: 30 }, (_, i) => String(i + 1))];
 const shadow = "0 2px 18px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.6)";
-const PINK = "#F0A35E";
+const PINK = "#E3BC52";
 const cl = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 const ease = (t: number) => Easing.inOut(Easing.cubic)(cl(t, 0, 1));
@@ -26,7 +26,7 @@ export const Grain: React.FC<{ op?: number }> = ({ op = 0.18 }) => {
 };
 
 export type HabCard = { title: string; src: string };
-export const LIST = { n: 5, head: "things I stopped", tag: "STOPPED", short: "THING" };
+export const LIST = { n: 12, head: "señales", tag: "SEÑAL", short: "SEÑAL" };
 
 // tarjeta de hábito con foto (carrusel / recap)
 const HabitPhotoCard: React.FC<{ n: number; title: string; src: string; w: number; dim?: number; check?: number }> = ({ n, title, src, w, dim = 0, check = 0 }) => (
@@ -43,7 +43,7 @@ const HabitPhotoCard: React.FC<{ n: number; title: string; src: string; w: numbe
     {check > 0 && (
       <div style={{ position: "absolute", right: -w * 0.05, top: -w * 0.05, width: w * 0.22, height: w * 0.22, borderRadius: "50%", background: C.ver, display: "flex", alignItems: "center", justifyContent: "center",
         transform: `scale(${interpolate(check, [0, 1], [2.2, 1])}) rotate(${interpolate(check, [0, 1], [-30, -8])}deg)`, opacity: cl(check * 2, 0, 1), boxShadow: "0 8px 20px rgba(0,0,0,0.35)" }}>
-        <span style={{ fontFamily: JP, fontWeight: 700, fontSize: w * 0.12, color: C.white, lineHeight: 1 }}>止</span>
+        <span style={{ fontFamily: JP, fontWeight: 700, fontSize: w * 0.12, color: C.white, lineHeight: 1 }}>✓</span>
       </div>
     )}
   </div>
@@ -64,14 +64,14 @@ export const Carousel: React.FC<{ cards: HabCard[]; bg: string; subAt: number; d
   const f = useCurrentFrame(); const o = useOut(dur, 12); const pIn = useIn(0, 22);
   const fanT = ease((f - dur * 0.62) / 34);
   const rot = -f * 0.55;
-  const R = 640, PR = 1500;
+  const R = cards.length > 8 ? 820 : 640, PR = cards.length > 8 ? 1700 : 1500; const CW = cards.length > 8 ? 330 : 460, FAN = cards.length > 8 ? 62 : 52;
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <BlurBg src={bg} dark={0.45} />
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, rgba(20,12,6,0) 30%, rgba(20,12,6,0.55) 100%)" }} />
       <div style={{ position: "absolute", top: 60, width: "100%", textAlign: "center", opacity: pIn, transform: `translateY(${(1 - pIn) * -40}px)` }}>
         <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 104, color: C.white, textShadow: shadow, lineHeight: 1 }}><span style={{ color: PINK }}>{cards.length}</span> {LIST.head}</div>
-        <div style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 600, fontSize: 52, color: C.paper, textShadow: shadow, marginTop: 10, opacity: interpolate(f, [subAt, subAt + 10], [0, 1], CL) }}>Nothing to buy.</div>
+        <div style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 600, fontSize: 52, color: C.paper, textShadow: shadow, marginTop: 10, opacity: interpolate(f, [subAt, subAt + 10], [0, 1], CL) }}>Y qué hacer con cada una.</div>
       </div>
       <AbsoluteFill style={{ perspective: 2200, perspectiveOrigin: "50% 40%" }}>
         {cards.map((c, i) => {
@@ -79,16 +79,16 @@ export const Carousel: React.FC<{ cards: HabCard[]; bg: string; subAt: number; d
           const N = cards.length; const th = ((((i * (360 / N) + rot) % 360) + 540) % 360) - 180;
           const rad = (th * Math.PI) / 180;
           const rx = R * Math.sin(rad), rz = R * (Math.cos(rad) - 1);
-          const phi = -26 + i * (52 / Math.max(1, N - 1)), pr = (phi * Math.PI) / 180;
+          const phi = -FAN / 2 + i * (FAN / Math.max(1, N - 1)), pr = (phi * Math.PI) / 180;
           const fx = PR * Math.sin(pr), fy = PR * (1 - Math.cos(pr));
           const x = lerp(rx, fx, fanT), y = lerp(40, fy, fanT), z = lerp(rz, i * 2, fanT);
           const ry = lerp(th, 0, fanT), rzz = lerp(0, phi, fanT);
           const sc = lerp(1, 0.86, fanT) * appear;
           const vis = lerp(cl(0.25 + 0.75 * Math.cos(rad), 0.12, 1), 1, fanT);
           return (
-            <div key={i} style={{ position: "absolute", left: 960 - 230, top: 350, zIndex: Math.round(2000 + z), opacity: vis * appear,
+            <div key={i} style={{ position: "absolute", left: 960 - CW / 2, top: 350, zIndex: Math.round(2000 + z), opacity: vis * appear,
               transform: `translate3d(${x}px, ${y}px, ${z}px) rotateY(${ry}deg) rotateZ(${rzz}deg) scale(${sc})` }}>
-              <HabitPhotoCard n={i + 1} title={c.title} src={c.src} w={460} />
+              <HabitPhotoCard n={(c as any).num ?? i + 1} title={c.title} src={c.src} w={CW} />
             </div>
           );
         })}
@@ -289,18 +289,18 @@ export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: H
     <AbsoluteFill>
       <BlurBg src={bg} dark={0.5} />
       <div style={{ position: "absolute", top: 50, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 74, color: C.white, textShadow: shadow, opacity: p }}>
-        <span style={{ color: PINK }}>{cards.length}</span> things I stopped · after 70
+        <span style={{ color: PINK }}>{cards.length}</span> señales · repaso
       </div>
       {cards.map((c, i) => {
-        const col = i, row = 0;
+        const per = cards.length > 6 ? 6 : cards.length; const col = i % per, row = Math.floor(i / per); const GW = cards.length > 6 ? 270 : 340, GX = cards.length > 6 ? 296 : 362;
         const it = items[i];
         const e = spring({ frame: f - i * 3, fps: 30, config: { damping: 16 } });
         const ck = spring({ frame: f - it.f, fps: 30, config: { damping: 11, mass: 0.6 } });
         const lit = f >= it.f;
         const pop = lit ? 1 + 0.08 * Math.max(0, 1 - (f - it.f) / 10) : 1;
         return (
-          <div key={i} style={{ position: "absolute", left: 70 + col * 362, top: 300 + row * 420, opacity: e, transform: `translateY(${(1 - e) * 60}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8}deg) scale(${(lit ? 1 : 0.94) * pop})` }}>
-            <HabitPhotoCard n={i + 1} title={c.title} src={c.src} w={340} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
+          <div key={i} style={{ position: "absolute", left: 78 + col * GX, top: (cards.length > 6 ? 190 : 300) + row * (cards.length > 6 ? 410 : 420), opacity: e, transform: `translateY(${(1 - e) * 60}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8}deg) scale(${(lit ? 1 : 0.94) * pop})` }}>
+            <HabitPhotoCard n={(c as any).num ?? i + 1} title={c.title} src={c.src} w={GW} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
           </div>
         );
       })}
@@ -317,13 +317,13 @@ export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number }> = ({
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 215, textAlign: "center", opacity: p }}>
         <span style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 600, fontSize: 62, color: C.white, textShadow: shadow, borderBottom: `4px solid ${C.ver}`, paddingBottom: 6 }}>{text}</span>
       </div>
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 52, display: "flex", justifyContent: "center", gap: 14 }}>
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 52, display: "flex", justifyContent: "center", gap: cards.length > 8 ? 8 : 14 }}>
         {cards.map((c, i) => {
           const e = spring({ frame: f - 8 - i * 3, fps: 30, config: { damping: 14 } });
           return (
-            <div key={i} style={{ width: 170, height: 150, borderRadius: 8, overflow: "hidden", border: `3px solid ${C.paper}`, position: "relative", opacity: e, transform: `translateY(${(1 - e) * 80}px)`, boxShadow: "0 8px 18px rgba(0,0,0,0.45)" }}>
+            <div key={i} style={{ width: cards.length > 8 ? 140 : 170, height: cards.length > 8 ? 124 : 150, borderRadius: 8, overflow: "hidden", border: `3px solid ${C.paper}`, position: "relative", opacity: e, transform: `translateY(${(1 - e) * 80}px)`, boxShadow: "0 8px 18px rgba(0,0,0,0.45)" }}>
               <Img src={staticFile(c.src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-              <div style={{ position: "absolute", left: 6, top: 4, fontFamily: SANS, fontWeight: 700, fontSize: 22, color: C.white, textShadow: shadow }}>{String(i + 1).padStart(2, "0")}</div>
+              <div style={{ position: "absolute", left: 6, top: 4, fontFamily: SANS, fontWeight: 700, fontSize: 22, color: C.white, textShadow: shadow }}>{String((c as any).num ?? i + 1).padStart(2, "0")}</div>
             </div>
           );
         })}

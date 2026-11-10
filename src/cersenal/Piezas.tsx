@@ -1,4 +1,4 @@
-// Piezas del video seisho01 — look "bingata + mar": papel arena, tinta azul noche, coral, azul de mar, amarillo bingata.
+// Piezas de cersenal (Claudio el Cerrajero) — look "taller de cerrajero": etiqueta de llave (papel kraft claro), verde botella del polo, latón y rojo de aviso. Basado en seisho01.
 import React from "react";
 import { AbsoluteFill, Img, OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from "remotion";
 import { loadFont as loadSerif } from "@remotion/google-fonts/CormorantGaramond";
@@ -9,14 +9,9 @@ const { fontFamily: SERIF } = loadSerif("normal", { weights: ["500", "600", "700
 const { fontFamily: SANS } = loadSans("normal", { weights: ["400", "500", "600"], subsets: ["latin"] });
 const { fontFamily: HAND } = loadHand("normal", { weights: ["500", "700"], subsets: ["latin"] });
 // kanji: subset de Shippori Mincho (OFL) bajado solo con los caracteres que se usan
-const JP = "ShipporiSub";
-if (typeof document !== "undefined" && !document.getElementById("fk-jp")) {
-  const st = document.createElement("style"); st.id = "fk-jp";
-  st.innerHTML = `@font-face{font-family:'${JP}';src:url('${staticFile("seisho01/font/shippori_sub.woff2")}') format('woff2');font-weight:700;font-display:block;}`;
-  document.head.appendChild(st);
-}
+const JP = SANS; // este canal no usa kanji: los números van en la sans
 
-export const C = { paper: "#F3ECDD", paper2: "#E4D6BC", ink: "#17242E", ver: "#D4553A", indigo: "#1C6E8C", gold: "#E2A42C", white: "#FFFDF7" };
+export const C = { paper: "#F2EADA", paper2: "#DCCDAF", ink: "#18221D", ver: "#C7402E", indigo: "#1E4D3B", gold: "#C9A227", white: "#FFFDF7" };
 export const FONTS = { SERIF, SANS, HAND, JP };
 
 // ---------- azar determinista (hash entero)
@@ -98,7 +93,7 @@ const Hanko: React.FC<{ text: string; size?: number; delay?: number }> = ({ text
   );
 };
 
-const KANJI = ["", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
+const KANJI = ["", ...Array.from({ length: 30 }, (_, i) => String(i + 1))];
 
 // ---------- tarjeta de hábito: panel de papel que entra de la izquierda + número kanji sellado
 export const HabitCard: React.FC<{ n: number; title: string; dur: number }> = ({ n, title, dur }) => {
@@ -111,7 +106,7 @@ export const HabitCard: React.FC<{ n: number; title: string; dur: number }> = ({
       <Washi style={{ position: "absolute", left: 90, top: 300, width: 600, padding: "44px 52px 46px", transform: `translateX(${interpolate(p, [0, 1], [-720, 0])}px)` }}>
         <div style={{ display: "flex", alignItems: "center", gap: 26 }}>
           <Hanko text={KANJI[n]} delay={9} />
-          <div style={{ fontFamily: SANS, fontWeight: 600, letterSpacing: 6, fontSize: 24, color: C.ver }}>THING {String(n).padStart(2, "0")} / 05</div>
+          <div style={{ fontFamily: SANS, fontWeight: 600, letterSpacing: 6, fontSize: 24, color: C.ver }}>SEÑAL {String(n).padStart(2, "0")} / 12</div>
         </div>
         <div style={{ height: 3, background: C.ink, width: `${line * 100}%`, margin: "26px 0 22px", opacity: 0.8 }} />
         <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 70, lineHeight: 1.02, color: C.ink }}>{title}</div>
@@ -413,7 +408,7 @@ export const Three: React.FC<{ items: string[]; marks: number[]; dur: number }> 
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Washi style={{ position: "absolute", left: 110, top: 200, width: 640, padding: "34px 44px", transform: `translateX(${(1 - p) * -700}px) rotate(-1deg)` }}>
-        <div style={{ fontFamily: SANS, fontWeight: 600, letterSpacing: 6, fontSize: 22, color: C.ver, marginBottom: 14 }}>THREE GOOD THINGS · TODAY</div>
+        <div style={{ fontFamily: SANS, fontWeight: 600, letterSpacing: 6, fontSize: 22, color: C.ver, marginBottom: 14 }}>ANOTA ESTO</div>
         {items.map((it, i) => {
           const n = Math.round(interpolate(f, [marks[i], marks[i] + it.length * 1.1], [0, it.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
           const q = spring({ frame: f - marks[i], fps: 30, config: { damping: 14 } });
@@ -479,7 +474,7 @@ export const Recap: React.FC<{ items: { txt: string; f: number }[]; bg: string; 
       <AbsoluteFill style={{ background: "rgba(20,12,6,0.5)" }} />
       <Washi style={{ position: "absolute", left: 260, right: 260, top: 90, bottom: 90, padding: "48px 70px", transform: `scale(${0.92 + 0.08 * p})`, opacity: p }}>
         <div style={{ display: "flex", alignItems: "center", gap: 26, marginBottom: 26 }}>
-          <Hanko text="五" size={86} delay={6} />
+          <Hanko text="12" size={86} delay={6} />
           <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 74, color: C.ink }}>Five things I stopped</div>
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", columnGap: 70, rowGap: 14 }}>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Composition, registerRoot } from "remotion";
-import { MainSeisho01, TOTAL_FRAMES_SEISHO01 } from "./seisho/Main";
+import { MainCersenal, TOTAL_FRAMES_CERSENAL } from "./cersenal/Main";
 
 const Root: React.FC = () => (
-  <Composition id="Seisho01" component={MainSeisho01}
-    durationInFrames={TOTAL_FRAMES_SEISHO01} fps={30} width={1920} height={1080} />
+  <Composition id="Cersenal" component={MainCersenal}
+    durationInFrames={TOTAL_FRAMES_CERSENAL} fps={30} width={1920} height={1080} />
 );
 registerRoot(Root);

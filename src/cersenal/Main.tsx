@@ -4,7 +4,7 @@ import { SHOTS, AVATAR, OVERLAYS, SFX, TOTAL, CARDS } from "./cues.gen";
 import * as P from "./Piezas";
 import * as Q from "./Piezas2";
 
-export const TOTAL_FRAMES_SEISHO01 = TOTAL;
+export const TOTAL_FRAMES_CERSENAL = TOTAL;
 const T = 8; // frames de transición
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
@@ -63,7 +63,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
   }
 };
 
-export const MainSeisho01: React.FC = () => (
+export const MainCersenal: React.FC = () => (
   <AbsoluteFill style={{ background: P.C.ink }}>
     {/* capa 1: avatar (ventanas visibles) */}
     {AVATAR.map((a, i) => (
@@ -91,7 +91,7 @@ export const MainSeisho01: React.FC = () => (
       </Sequence>
     ))}
     {/* audio: voz + piano premezclados, SFX por debajo */}
-    <Audio src={staticFile("seisho01_mix.m4a")} />
+    <Audio src={staticFile("cersenal_mix.m4a")} />
     {SFX.map((x, i) => (
       <Sequence key={"x" + i} from={x.from} durationInFrames={90}>
         <Audio src={staticFile(x.src)} volume={x.vol} />
