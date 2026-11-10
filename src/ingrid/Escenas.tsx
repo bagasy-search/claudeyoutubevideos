@@ -77,8 +77,8 @@ type Cell = { x: number; y: number; w: number; h: number };
 const TOP: Cell[] = [[40, 495], [495, 860], [860, 1225], [1225, 1565], [1565, 1900]].map(([a, b]) => ({ x: a, y: 20, w: b - a, h: 475 }));
 const BOT: Cell[] = [[60, 380], [380, 680], [680, 995], [995, 1370], [1370, 1690], [1690, 1910]].map(([a, b]) => ({ x: a, y: 495, w: b - a, h: 570 }));
 // paradas: [desde, hasta, f0, f1]; la última vuelve a un múltiplo de N = orden original
-const SEG_TOP: [number, number, number, number][] = [[0, 6, 6, 38], [6, 13, 52, 80], [13, 20, 92, 118]];
-const SEG_BOT: [number, number, number, number][] = [[0, 8, 8, 40], [8, 15, 54, 82], [15, 24, 94, 120]];
+const SEG_TOP: [number, number, number, number][] = [[0, 6, 4, 32], [6, 13, 42, 66], [13, 20, 76, 98]]; // el último rodillo arranca 10 cuadros tarde: termina en 108, antes del corte (123)
+const SEG_BOT: [number, number, number, number][] = [[0, 8, 6, 34], [8, 15, 44, 68], [15, 24, 76, 98]];
 const reel = (f: number, seg: [number, number, number, number][]) => {
   let o = 0;
   for (const [a, b, f0, f1] of seg) if (f >= f0) o = interpolate(f, [f0, f1], [a, b], { ...CL, easing: Easing.inOut(Easing.cubic) });
