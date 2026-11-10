@@ -1,12 +1,15 @@
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
-import { SHOTS, AVATAR, OVERLAYS, SFX, TOTAL } from "./cues.gen";
+import { SHOTS, AVATAR, OVERLAYS, SFX, TOTAL, CARDS } from "./cues.gen";
 import * as P from "./Piezas";
+import * as Q from "./Piezas2";
 
 export const TOTAL_FRAMES_FUMIKO01 = TOTAL;
 const T = 8; // frames de transición
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
+  if (s.album) return <Q.Album src={s.src} under={s.under} seed={s.id + 1} dur={dur} />; // foto antigua como objeto
+  if (s.k === "C" && s.comp === "recap") return <Q.RecapGrid items={s.items} cards={CARDS} bg={s.bgv || s.bg} dur={dur} />;
   if (s.veo) return <P.Clip src={s.veo} seed={s.id + 1} dur={dur} clipDur={s.veoDur} minRate={0.42} />; // foto animada con Veo (primer cuadro)
   if (s.k === "Y") return <P.Clip src={s.src} seed={s.id + 1} dur={dur} clipDur={s.clipDur} />;
   if (s.k === "W" || s.k === "G") return <P.Photo src={s.src} seed={s.id + 1} dur={dur} />;
@@ -49,6 +52,13 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "greet": return <P.Greet jp={o.jp} en={o.en} dur={d} />;
     case "three": return <P.Three items={o.items} marks={o.marks} dur={d} />;
     case "soft": return <P.Soft text={o.text} dur={d} />;
+    case "carousel": return <Q.Carousel cards={CARDS} bg={o.bg} subAt={o.subAt} dur={d} />;
+    case "scene": return <Q.HabitScene n={o.n} title={o.title} src={o.src} dur={d} />;
+    case "progress": return <Q.Progress n={o.n} title={o.title} dur={d} />;
+    case "split": return <Q.SplitPhoto src={o.src} seed={o.seed} dur={d} />;
+    case "polaroid": return <Q.Polaroid src={o.src} caption={o.caption} seed={o.seed} dur={d} />;
+    case "map": return <Q.MapJP a={o.a} b={o.b} la={o.la} ja={o.ja} lb={o.lb} jb={o.jb} dur={d} />;
+    case "cta": return <Q.CTA text={o.text} cards={CARDS} dur={d} />;
     default: return null;
   }
 };
@@ -58,7 +68,7 @@ export const MainFumiko01: React.FC = () => (
     {/* capa 1: avatar (ventanas visibles) */}
     {AVATAR.map((a, i) => (
       <Sequence key={"a" + i} from={a.from} durationInFrames={a.dur} premountFor={30}>
-        <P.AvatarClip src={a.src} seed={i} dur={a.dur} />
+        <Q.AvatarFramed src={a.src} seed={i} dur={a.dur} mods={a.mods} />
       </Sequence>
     ))}
     {/* capa 2: material (clips reales, fotos, componentes) */}
