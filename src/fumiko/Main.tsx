@@ -7,6 +7,7 @@ export const TOTAL_FRAMES_FUMIKO01 = TOTAL;
 const T = 8; // frames de transición
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
+  if (s.veo) return <P.Clip src={s.veo} seed={s.id + 1} dur={dur} clipDur={s.veoDur} minRate={0.42} />; // foto animada con Veo (primer cuadro)
   if (s.k === "Y") return <P.Clip src={s.src} seed={s.id + 1} dur={dur} clipDur={s.clipDur} />;
   if (s.k === "W" || s.k === "G") return <P.Photo src={s.src} seed={s.id + 1} dur={dur} />;
   if (s.k === "C" && s.comp === "shopping") return <P.Shopping items={s.items} bg={s.bg} dur={dur} />;

@@ -53,9 +53,9 @@ export const Photo: React.FC<{ src: string; seed: number; dur: number }> = ({ sr
   );
 };
 
-export const Clip: React.FC<{ src: string; seed: number; dur: number; clipDur?: number }> = ({ src, seed, dur, clipDur }) => {
+export const Clip: React.FC<{ src: string; seed: number; dur: number; clipDur?: number; minRate?: number }> = ({ src, seed, dur, clipDur, minRate = 0.75 }) => {
   const kb = useKB(seed, dur, true);
-  const rate = clipDur && clipDur < dur / 30 + 0.1 ? Math.max(0.75, (clipDur - 0.15) / (dur / 30)) : 1;
+  const rate = clipDur && clipDur < dur / 30 + 0.1 ? Math.max(minRate, (clipDur - 0.15) / (dur / 30)) : 1;
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: C.ink }}>
       <OffthreadVideo src={staticFile(src)} muted playbackRate={rate} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
