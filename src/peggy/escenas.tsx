@@ -1,11 +1,11 @@
-// Escenas sobre fotos de chiyo01 (skill edicion-sobre-fotos): un mecanismo distinto por escena, escritas de cero.
-// Ideas y coordenadas: D:/rtmp/chiyo01/ideas.md. Fotos a 1920x1080 con objectFit:'fill'.
+// Escenas sobre fotos de peggy01 (skill edicion-sobre-fotos): un mecanismo distinto por cosa (7).
+// Biombo/Aceite/Vapor/Presion/Aguja vienen de chiyo01 con la paleta de Londres; Tres/Zurcido/Sobre son nuevas. Fotos a 1920x1080 con objectFit:'fill'.
 import React from "react";
 import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, Easing } from "remotion";
 
 const CL = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const FULL: React.CSSProperties = { position: "absolute", left: 0, top: 0, width: 1920, height: 1080, objectFit: "fill" };
-const GOLD = "#B79A5B", LACA = "#2B0F19", CREMA = "#EEE4D8";
+const GOLD = "#A9843F", LACA = "#1F2A22", CREMA = "#F2EADB";
 const sh = "0 2px 18px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.6)";
 
 // ---------- Escena 1 (gancho): biombo de cuatro hojas; cada hoja gira en su palabra y trae su franja del tocador
@@ -16,7 +16,7 @@ export const Biombo: React.FC<{ src: string; marks: number[]; labels: string[]; 
   const cam = 1.02 + 0.05 * (f / Math.max(1, dur));
   const tIn = spring({ frame: f - titleAt, fps: 30, config: { damping: 18 } });
   return (
-    <AbsoluteFill style={{ background: "#12060A", overflow: "hidden" }}>
+    <AbsoluteFill style={{ background: "#0E1310", overflow: "hidden" }}>
       <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, perspective: 2600, transform: `scale(${cam})`, transformOrigin: "50% 46%" }}>
         {HOJAS.map(([x0, x1], i) => {
           const p = spring({ frame: f - marks[i], fps: 30, config: { damping: 17, mass: 0.9 } });
@@ -30,7 +30,7 @@ export const Biombo: React.FC<{ src: string; marks: number[]; labels: string[]; 
                 <div style={{ position: "absolute", left: 0, top: 0, width: w, height: 1080, boxShadow: "inset 10px 0 24px -12px rgba(0,0,0,0.55), inset -10px 0 24px -12px rgba(0,0,0,0.55)" }} />
               </div>
               <div style={{ position: "absolute", left: 0, top: 0, width: w, height: 1080, backfaceVisibility: "hidden", transform: "rotateY(180deg)",
-                background: `linear-gradient(100deg, #3A1522 0%, ${LACA} 45%, #1A080E 100%)`, boxShadow: `inset 0 0 0 3px ${GOLD}, inset 0 0 0 26px ${LACA}, inset 0 0 0 27px rgba(183,154,91,0.5)` }}>
+                background: `linear-gradient(100deg, #2C3A30 0%, ${LACA} 45%, #141B16 100%)`, boxShadow: `inset 0 0 0 3px ${GOLD}, inset 0 0 0 26px ${LACA}, inset 0 0 0 27px rgba(183,154,91,0.5)` }}>
                 <div style={{ position: "absolute", left: w / 2 - 44, top: 496, width: 88, height: 88, borderRadius: 44, boxShadow: `inset 0 0 0 2px rgba(183,154,91,0.6)` }} />
               </div>
             </div>
@@ -55,7 +55,7 @@ const Aceite: React.FC<{ src: string; dur: number }> = ({ src, dur }) => {
   const y = sube + baja;
   const pts = Array.from({ length: 13 }, (_, i) => `${(i / 12) * 100}% ${(18 + 9 * Math.sin(i * 1.1 + f * 0.16) + 5 * Math.sin(i * 2.3 - f * 0.11)).toFixed(1)}px`);
   return (
-    <AbsoluteFill style={{ overflow: "hidden", background: "#1A080E" }}>
+    <AbsoluteFill style={{ overflow: "hidden", background: "#141B16" }}>
       <Img src={staticFile(src)} style={{ ...FULL, transform: `scale(${z})`, transformOrigin: "62% 54%" }} />
       <div style={{ position: "absolute", left: 0, top: y, width: 1920, height: 1100, clipPath: `polygon(${pts.join(", ")}, 100% 100%, 0% 100%)`,
         background: "linear-gradient(180deg, rgba(255,228,140,0.62) 0px, rgba(226,170,48,0.40) 26px, rgba(190,128,20,0.44) 420px, rgba(150,92,8,0.5) 1100px)" }} />
@@ -70,7 +70,7 @@ const Vapor: React.FC<{ src: string; dur: number }> = ({ src, dur }) => {
   const e = interpolate(f, [16, 58], [-10, 122], { ...CL, easing: Easing.inOut(Easing.cubic) });
   const tr: React.CSSProperties = { transform: `scale(${z})`, transformOrigin: "45% 60%" };
   return (
-    <AbsoluteFill style={{ overflow: "hidden", background: "#1A080E" }}>
+    <AbsoluteFill style={{ overflow: "hidden", background: "#141B16" }}>
       <Img src={staticFile(src)} style={{ ...FULL, ...tr }} />
       <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, overflow: "hidden", clipPath: `polygon(${e}% 0%, 100% 0%, 100% 100%, ${e - 14}% 100%)` }}>
         <Img src={staticFile(src)} style={{ ...FULL, ...tr, filter: "blur(18px) brightness(1.1)" }} />
@@ -90,7 +90,7 @@ const Presion: React.FC<{ src: string; dur: number }> = ({ src, dur }) => {
   const f = useCurrentFrame();
   const z = 1.05 + 0.05 * (f / dur);
   return (
-    <AbsoluteFill style={{ overflow: "hidden", background: "#1A080E" }}>
+    <AbsoluteFill style={{ overflow: "hidden", background: "#141B16" }}>
       <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `scale(${z})`, transformOrigin: "72% 70%" }}>
         <Img src={staticFile(src)} style={FULL} />
         {HOYOS.map(([cx, cy], i) => {
@@ -135,10 +135,102 @@ const Aguja: React.FC<{ src: string; dur: number }> = ({ src, dur }) => {
   );
 };
 
-// capa de foto de la apertura de cada paso
+// ---------- Cosa 3 (regla de tres): tres paños de color (azul marino, crema, rojo) caen y se abren dejando la foto
+const PANOS = ["#1C2A44", "#EFE6D2", "#8E2230"];
+const Tres: React.FC<{ src: string; dur: number }> = ({ src, dur }) => {
+  const f = useCurrentFrame();
+  const z = 1.04 + 0.06 * (f / dur);
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: "#141B16" }}>
+      <Img src={staticFile(src)} style={{ ...FULL, transform: `scale(${z})`, transformOrigin: "50% 45%" }} />
+      {PANOS.map((c, i) => {
+        const cae = spring({ frame: f - 4 - i * 6, fps: 30, config: { damping: 14, mass: 0.8 } });
+        const abre = interpolate(f, [34 + i * 9, 58 + i * 9], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
+        const x = i * 640;
+        return (
+          <div key={i} style={{ position: "absolute", left: x + 320 * abre, top: (1 - cae) * -1100, width: 640 * (1 - abre), height: 1080, overflow: "hidden",
+            background: `repeating-linear-gradient(90deg, rgba(0,0,0,0.08) 0 2px, transparent 2px 6px), ${c}`, boxShadow: "0 0 40px rgba(0,0,0,0.45)" }} />
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+
+// ---------- Cosa 4 (zurcido): la foto aparece tejida, hebras horizontales y luego verticales "por arriba y por abajo"
+const Zurcido: React.FC<{ src: string; dur: number }> = ({ src, dur }) => {
+  const f = useCurrentFrame();
+  const z = 1.1 - 0.06 * Easing.out(Easing.cubic)(Math.min(1, f / dur));
+  const N = 18, H = 1080 / N, W = 1920 / 24;
+  const img = (st: React.CSSProperties) => <Img src={staticFile(src)} style={{ ...FULL, transform: `scale(${z})`, transformOrigin: "50% 55%", ...st }} />;
+  const todo = f > 70;
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: CREMA }}>
+      {todo ? img({}) : (
+        <>
+          {Array.from({ length: N }, (_, i) => {
+            const k = interpolate(f, [6 + i * 1.4, 26 + i * 1.4], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) });
+            const ida = i % 2 === 0;
+            return <div key={"h" + i} style={{ position: "absolute", left: 0, top: i * H, width: 1920, height: H, overflow: "hidden", clipPath: ida ? `inset(0 ${100 - k * 100}% 0 0)` : `inset(0 0 0 ${100 - k * 100}%)` }}>
+              <div style={{ position: "absolute", left: 0, top: -i * H, width: 1920, height: 1080 }}>{img({ filter: "brightness(0.82)" })}</div>
+            </div>;
+          })}
+          {Array.from({ length: 24 }, (_, j) => {
+            const k = interpolate(f, [36 + j * 1.1, 54 + j * 1.1], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) });
+            return <div key={"v" + j} style={{ position: "absolute", left: j * W, top: 0, width: W, height: 1080, overflow: "hidden", clipPath: j % 2 ? `inset(${100 - k * 100}% 0 0 0)` : `inset(0 0 ${100 - k * 100}% 0)` }}>
+              <div style={{ position: "absolute", left: -j * W, top: 0, width: 1920, height: 1080 }}>{img({})}</div>
+            </div>;
+          })}
+        </>
+      )}
+    </AbsoluteFill>
+  );
+};
+
+// ---------- Cosa 6 (zapatos): un brillo de betún cruza en diagonal y la foto queda lustrada
+const Brillo: React.FC<{ src: string; dur: number }> = ({ src, dur }) => {
+  const f = useCurrentFrame();
+  const z = 1.12 - 0.07 * Easing.out(Easing.cubic)(Math.min(1, f / dur));
+  const x = interpolate(f, [10, 46], [-700, 2400], { ...CL, easing: Easing.inOut(Easing.cubic) });
+  const lustre = interpolate(f, [10, 46], [0.78, 1.04], CL);
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: "#0E1310" }}>
+      <Img src={staticFile(src)} style={{ ...FULL, transform: `scale(${z})`, transformOrigin: "50% 70%", filter: `brightness(${lustre}) contrast(${0.9 + (lustre - 0.78) * 0.5})` }} />
+      <div style={{ position: "absolute", left: x, top: -300, width: 260, height: 1700, transform: "rotate(22deg)", background: "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,250,235,0.55) 45%, rgba(255,255,255,0.85) 50%, rgba(255,250,235,0.55) 55%, rgba(255,255,255,0) 100%)", mixBlendMode: "screen" }} />
+    </AbsoluteFill>
+  );
+};
+
+// ---------- Cosa 7 (sobres): un sobre marrón de jornal ocupa el cuadro; la solapa se abre y la foto sale de adentro
+const Sobre: React.FC<{ src: string; dur: number }> = ({ src, dur }) => {
+  const f = useCurrentFrame();
+  const solapa = interpolate(f, [8, 30], [0, 180], { ...CL, easing: Easing.inOut(Easing.cubic) });
+  const sale = spring({ frame: f - 30, fps: 30, config: { damping: 16, mass: 0.9 } });
+  const cae = interpolate(f, [44, 66], [0, 1], { ...CL, easing: Easing.in(Easing.cubic) });
+  const z = 1.03 + 0.05 * (f / dur);
+  const kraft = "repeating-linear-gradient(80deg, rgba(0,0,0,0.04) 0 2px, transparent 2px 5px), linear-gradient(160deg, #B98E5A, #9C7444)";
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: "#141B16", perspective: 2400 }}>
+      <div style={{ position: "absolute", inset: 0, transform: `translateY(${(1 - sale) * 700}px) scale(${0.72 + 0.28 * sale})`, transformOrigin: "50% 100%" }}>
+        <Img src={staticFile(src)} style={{ ...FULL, transform: `scale(${z})` }} />
+      </div>
+      <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `translateY(${cae * 1300}px)` }}>
+        <div style={{ position: "absolute", left: 0, top: 420, width: 1920, height: 660, background: kraft, boxShadow: "0 -20px 60px rgba(0,0,0,0.45)" }}>
+          <div style={{ position: "absolute", left: 120, top: 120, fontFamily: "Caveat, cursive", fontSize: 92, color: "#3A2A1A", transform: "rotate(-3deg)", opacity: 0.85 }}>Miss M. Fairbrother</div>
+          <div style={{ position: "absolute", right: 140, top: 150, fontFamily: "Caveat, cursive", fontSize: 72, color: "#3A2A1A", opacity: 0.8 }}>£5 10s 0d</div>
+        </div>
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 440, transformOrigin: "50% 100%", transform: `translateY(-20px) rotateX(${solapa}deg)`, clipPath: "polygon(0 0, 100% 0, 50% 100%)", background: kraft, filter: `brightness(${solapa > 90 ? 0.8 : 1})` }} />
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// capa de foto de la apertura de cada cosa (1 abrigo, 2 guantes, 3 regla de tres, 4 zurcido, 5 planchado, 6 zapatos, 7 sobres)
 export const Mecanismo: React.FC<{ n: number; src: string; dur: number }> = ({ n, src, dur }) => {
-  if (n === 1) return <Aceite src={src} dur={dur} />;
-  if (n === 2) return <Vapor src={src} dur={dur} />;
-  if (n === 3) return <Presion src={src} dur={dur} />;
-  return <Aguja src={src} dur={dur} />;
+  if (n === 1) return <Aguja src={src} dur={dur} />;
+  if (n === 2) return <Presion src={src} dur={dur} />;
+  if (n === 3) return <Tres src={src} dur={dur} />;
+  if (n === 4) return <Zurcido src={src} dur={dur} />;
+  if (n === 5) return <Vapor src={src} dur={dur} />;
+  if (n === 6) return <Brillo src={src} dur={dur} />;
+  return <Sobre src={src} dur={dur} />;
 };

@@ -1,4 +1,4 @@
-// chiyo01 — mejoras 1-10 con el look del mostrador de Ginza (parten de src/fumiko/Piezas2.tsx)
+// peggy01 — mejoras 1-10 con el look de los grandes almacenes de Londres 1960 (parten de chiyo01)
 import React from "react";
 import { AbsoluteFill, Img, OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, Easing } from "remotion";
 import { C, FONTS, CL, shadow, hash, useKB, useIn, useOut, Card, KANJI } from "./Piezas";
@@ -31,7 +31,7 @@ const StepCard: React.FC<{ n: number; title: string; src: string; w: number; dim
     <div style={{ position: "absolute", left: w * 0.5 - w * 0.085, top: w * 0.04 + w * 0.66 - w * 0.085, width: w * 0.17, height: w * 0.17, borderRadius: "50%", background: `radial-gradient(circle at 35% 30%, #D2414C, ${C.ver} 55%, #8E1722)`,
       color: C.white, fontFamily: JP, fontWeight: 700, fontSize: w * 0.09, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: `0 4px 10px rgba(0,0,0,0.35), inset 0 0 0 ${Math.max(1, w * 0.006)}px rgba(255,253,251,0.6)` }}>{KANJI[n]}</div>
     <div style={{ textAlign: "center", marginTop: w * 0.11, height: w * 0.26 }}>
-      <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: w * 0.042, color: C.ver, letterSpacing: w * 0.014 }}>STEP {n}</div>
+      <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: w * 0.042, color: C.ver, letterSpacing: w * 0.014 }}>No. {n}</div>
       <div style={{ fontFamily: SERIF, fontWeight: 500, fontSize: w * 0.092, color: C.ink, lineHeight: 1.08, marginTop: w * 0.012, opacity: 1 - dim * 0.5 }}>{title}</div>
     </div>
     {check > 0 && (
@@ -68,8 +68,8 @@ export const Carousel: React.FC<{ cards: StepCardT[]; bg: string; marks: number[
       <BlurBg src={bg} dark={0.45} />
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, rgba(30,12,20,0) 30%, rgba(30,12,20,0.6) 100%)" }} />
       <div style={{ position: "absolute", top: 54, width: "100%", textAlign: "center", opacity: pIn, transform: `translateY(${(1 - pIn) * -40}px)` }}>
-        <div style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 100, color: C.white, textShadow: shadow, lineHeight: 1 }}><span style={{ color: C.blush }}>4</span> steps <span style={{ fontStyle: "italic", fontWeight: 400 }}>·</span> <span style={{ color: C.blush }}>7</span> minutes</div>
-        <div style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 400, fontSize: 50, color: C.paper, textShadow: shadow, marginTop: 12, opacity: interpolate(f, [subAt, subAt + 10], [0, 1], CL) }}>Nothing expensive.</div>
+        <div style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 100, color: C.white, textShadow: shadow, lineHeight: 1 }}><span style={{ color: C.blush }}>7</span> things <span style={{ fontStyle: "italic", fontWeight: 400 }}>·</span> a small budget</div>
+        <div style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 400, fontSize: 50, color: C.paper, textShadow: shadow, marginTop: 12, opacity: interpolate(f, [subAt, subAt + 10], [0, 1], CL) }}>London, 1960.</div>
       </div>
       <AbsoluteFill style={{ perspective: 2200, perspectiveOrigin: "50% 42%" }}>
         {cards.map((c, i) => {
@@ -102,26 +102,26 @@ export const Progress: React.FC<{ n: number; title: string; dur: number }> = ({ 
   return (
     <div style={{ position: "absolute", right: 56, top: 46, opacity: o, display: "flex", alignItems: "center", gap: 16, background: "rgba(42,32,37,0.5)", borderRadius: 40, padding: "9px 22px 9px 18px", boxShadow: `inset 0 0 0 1.5px rgba(183,154,91,0.75)` }}>
       <div style={{ display: "flex", gap: 8 }}>
-        {Array.from({ length: 4 }, (_, i) => (
+        {Array.from({ length: 7 }, (_, i) => (
           <div key={i} style={{ width: 13, height: 13, borderRadius: "50%", background: i < n ? C.blush : "rgba(255,253,251,0.28)", boxShadow: i === n - 1 ? `0 0 0 3px rgba(241,189,184,0.35)` : undefined }} />
         ))}
       </div>
       <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 21, letterSpacing: 4, color: C.white }}>
-        <span style={{ color: C.blush }}>{n}</span> / 4 · {title.toUpperCase()}
+        <span style={{ color: C.blush }}>{n}</span> / 7 · {title.toUpperCase()}
       </div>
     </div>
   );
 };
 
-// (5) transición de capítulo: una toalla de algodón blanca barre la pantalla (dir 0 →, 1 ←, 2 ↓, 3 ↘)
+// (5) transición de capítulo: un paño de tweed barre la pantalla (dir 0 →, 1 ←, 2 ↓, 3 ↘)
 export const ClothWipe: React.FC<{ dir: number; len?: number }> = ({ dir, len = 22 }) => {
   const f = useCurrentFrame();
   const t = f / len; if (t < 0 || t > 1) return null;
   const pos = lerp(-1.25, 1.25, Easing.inOut(Easing.quad)(t));
   const sign = dir === 1 ? -1 : 1;
   const tela: React.CSSProperties = {
-    position: "absolute", background: "repeating-linear-gradient(0deg, rgba(210,198,184,0.5) 0 2px, transparent 2px 7px), repeating-linear-gradient(90deg, rgba(210,198,184,0.4) 0 2px, transparent 2px 7px), linear-gradient(135deg, #FFFDFB, #F1E9DF)",
-    boxShadow: "0 0 90px 30px rgba(0,0,0,0.38), inset 0 0 0 14px rgba(255,255,255,0.6), inset 0 0 0 17px rgba(180,35,47,0.55), inset 0 0 0 22px rgba(255,255,255,0.6)", borderRadius: 36,
+    position: "absolute", background: "repeating-linear-gradient(45deg, rgba(236,220,190,0.16) 0 3px, transparent 3px 9px), repeating-linear-gradient(-45deg, rgba(20,14,8,0.22) 0 3px, transparent 3px 9px), repeating-linear-gradient(90deg, rgba(124,31,44,0.35) 0 3px, transparent 3px 120px), repeating-linear-gradient(0deg, rgba(31,68,51,0.35) 0 3px, transparent 3px 120px), linear-gradient(135deg, #7A6448, #5C4A34 55%, #4A3B2A)",
+    boxShadow: "0 0 90px 30px rgba(0,0,0,0.45), inset 0 0 0 14px rgba(169,132,63,0.35), inset 0 0 0 17px rgba(124,31,44,0.7), inset 0 0 40px rgba(0,0,0,0.4)", borderRadius: 18,
   };
   return (
     <AbsoluteFill style={{ pointerEvents: "none", overflow: "hidden" }}>
@@ -150,7 +150,7 @@ export const StepScene: React.FC<{ n: number; title: string; src: string; dur: n
           <AbsoluteFill><Mecanismo n={n} src={src} dur={dur} /></AbsoluteFill>
           <AbsoluteFill style={{ background: `linear-gradient(${right ? 270 : 90}deg, rgba(30,12,20,0.84) 0%, rgba(30,12,20,0.4) 42%, rgba(30,12,20,0) 66%)`, opacity: interpolate(f, [18, 34], [0, 1], CL) }} />
           <div style={{ position: "absolute", top: 210, width: 900, display: "flex", flexDirection: "column", ...side }}>
-            <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 26, letterSpacing: 12, color: C.blush, opacity: draw }}>STEP · {KANJI[n]}</div>
+            <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 26, letterSpacing: 12, color: C.blush, opacity: draw }}>No. {KANJI[n]}</div>
             <svg width="420" height="310" viewBox="0 0 420 310" style={{ overflow: "visible" }}>
               <text x={right ? 420 : 0} y="270" textAnchor={right ? "end" : "start"} fontFamily={SERIF} fontWeight={400} fontSize="320"
                 fill={`rgba(255,253,251,${fill})`} stroke={C.white} strokeWidth={2.5} strokeDasharray={1500} strokeDashoffset={1500 * (1 - draw)}>{n}</text>
@@ -216,8 +216,8 @@ export const Album: React.FC<{ src: string; seed: number; dur: number; under?: s
       <AbsoluteFill style={{ transform: `scale(${1 + 0.06 * t}) translateY(${-10 * t}px) rotate(${-0.6 * t}deg)` }}>
         {/* sobre de la tienda, debajo */}
         <div style={{ position: "absolute", left: 1010, top: 520, width: 860, height: 600, background: `linear-gradient(160deg, ${C.paper}, ${C.paper2})`, transform: `rotate(${-r * 2.2}deg)`, boxShadow: `0 20px 46px rgba(0,0,0,0.5), inset 0 0 0 2px ${C.gold}, inset 0 0 0 10px ${C.paper}, inset 0 0 0 11px rgba(183,154,91,0.5)` }}>
-          <div style={{ position: "absolute", right: 60, bottom: 70, fontFamily: SERIF, fontStyle: "italic", fontSize: 44, color: C.plum, opacity: 0.75 }}>Ginza</div>
-          <div style={{ position: "absolute", right: 60, bottom: 40, fontFamily: JP, fontWeight: 700, fontSize: 26, color: C.ver, opacity: 0.8, letterSpacing: 6 }}>銀座</div>
+          <div style={{ position: "absolute", right: 60, bottom: 70, fontFamily: SERIF, fontStyle: "italic", fontSize: 44, color: C.plum, opacity: 0.75 }}>Oxford Street</div>
+          <div style={{ position: "absolute", right: 60, bottom: 40, fontFamily: JP, fontWeight: 700, fontSize: 26, color: C.ver, opacity: 0.8, letterSpacing: 6 }}>W.1</div>
         </div>
         {under && (
           <div style={{ position: "absolute", left: 1250, top: 80, width: 540, padding: 16, background: "#F3EADB", transform: `rotate(${-r * 2.5}deg)`, boxShadow: "0 18px 40px rgba(0,0,0,0.45)", opacity: 0.85 }}>
@@ -267,7 +267,7 @@ export const MapJP: React.FC<{ a: [number, number]; b: [number, number]; la: str
   return (
     <AbsoluteFill style={{ opacity: o, background: C.paper, overflow: "hidden" }}>
       <AbsoluteFill style={{ transform: `scale(${z}) translate(${tx}px, ${ty}px)`, transformOrigin: "50% 50%" }}>
-        <Img src={staticFile("chiyo01/g/mapjp.png")} style={{ width: "100%", height: "100%", objectFit: "fill" }} />
+        <Img src={staticFile("peggy01/g/mapldn.png")} style={{ width: "100%", height: "100%", objectFit: "fill" }} />
         <svg width="1920" height="1080" style={{ position: "absolute", inset: 0, overflow: "visible" }}>
           <path d={`M${ax} ${ay} Q${mx} ${my} ${bx} ${by}`} fill="none" stroke={C.plum} strokeWidth={5 / z} strokeLinecap="round" pathLength={1000} strokeDasharray={1000} strokeDashoffset={1000 * (1 - line)} />
           <circle cx={ax} cy={ay} r={(11 / z) * pulse} fill={C.plum} />
@@ -292,7 +292,7 @@ export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: S
       <BlurBg src={bg} dark={0.5} />
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, rgba(30,12,20,0) 30%, rgba(30,12,20,0.55) 100%)" }} />
       <div style={{ position: "absolute", top: 56, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 500, fontSize: 78, color: C.white, textShadow: shadow, opacity: p }}>
-        The Japanese night <span style={{ color: C.blush, fontStyle: "italic", fontWeight: 400 }}>· one more time</span>
+        Seven small things <span style={{ color: C.blush, fontStyle: "italic", fontWeight: 400 }}>· one more time</span>
       </div>
       {cards.map((c, i) => {
         const it = items[i];
@@ -302,16 +302,16 @@ export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: S
         const pop = lit ? 1 + 0.07 * Math.max(0, 1 - (f - it.f) / 10) : 1;
         const tx = spring({ frame: f - it.f - 4, fps: 30, config: { damping: 16 } });
         return (
-          <div key={i} style={{ position: "absolute", left: 96 + i * 444, top: 200, width: 400, opacity: e, transform: `translateY(${(1 - e) * 60}px)` }}>
+          <div key={i} style={{ position: "absolute", left: (i < 4 ? 315 + i * 330 : 480 + (i - 4) * 330), top: i < 4 ? 160 : 560, width: 300, opacity: e, transform: `translateY(${(1 - e) * 60}px)` }}>
             <div style={{ transform: `rotate(${((hash(i + 40) % 5) - 2) * 0.7}deg) scale(${(lit ? 1 : 0.95) * pop})` }}>
-              <StepCard n={i + 1} title={c.title} src={c.src} w={400} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
+              <StepCard n={i + 1} title={c.title} src={c.src} w={300} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
             </div>
-            <div style={{ marginTop: 26, textAlign: "center", fontFamily: SERIF, fontStyle: "italic", fontWeight: 500, fontSize: 40, lineHeight: 1.15, color: C.white, textShadow: shadow, opacity: tx, transform: `translateY(${(1 - tx) * 16}px)` }}>{it.txt}</div>
+            <div style={{ marginTop: 12, textAlign: "center", fontFamily: SERIF, fontStyle: "italic", fontWeight: 500, fontSize: 30, lineHeight: 1.15, color: C.white, textShadow: shadow, opacity: tx, transform: `translateY(${(1 - tx) * 16}px)` }}>{it.txt}</div>
           </div>
         );
       })}
-      <div style={{ position: "absolute", bottom: 54, width: "100%", textAlign: "center", opacity: fin, transform: `translateY(${(1 - fin) * 20}px)` }}>
-        <span style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 70, color: C.white, textShadow: shadow }}><span style={{ color: C.blush }}>7</span> minutes. <span style={{ fontStyle: "italic", fontWeight: 400 }}>And then, sleep.</span></span>
+      <div style={{ position: "absolute", bottom: 36, width: "100%", textAlign: "center", opacity: fin, transform: `translateY(${(1 - fin) * 20}px)` }}>
+        <span style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 70, color: C.white, textShadow: shadow }}>Not money. <span style={{ fontStyle: "italic", fontWeight: 400, color: C.blush }}>Attention.</span></span>
       </div>
     </AbsoluteFill>
   );

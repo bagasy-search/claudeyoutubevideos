@@ -5,7 +5,7 @@ import * as P from "./Piezas";
 import * as Q from "./Piezas2";
 import { Biombo } from "./escenas";
 
-export const TOTAL_FRAMES_CHIYO01 = TOTAL;
+export const TOTAL_FRAMES_PEGGY01 = TOTAL;
 const T = 8; // frames de transición
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
@@ -57,7 +57,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
   }
 };
 
-export const MainChiyo01: React.FC = () => (
+export const MainPeggy01: React.FC = () => (
   <AbsoluteFill style={{ background: P.C.ink }}>
     {/* capa 1: avatar (ventanas visibles) */}
     {AVATAR.map((a, i) => (
@@ -84,7 +84,7 @@ export const MainChiyo01: React.FC = () => (
       </Sequence>
     ))}
     {/* audio: voz + piano premezclados, SFX por debajo (el audio final se rearma en local) */}
-    <Audio src={staticFile("chiyo01_mix.m4a")} />
+    <Audio src={staticFile("peggy01_mix.m4a")} />
     {SFX.map((x, i) => (
       <Sequence key={"x" + i} from={x.from} durationInFrames={90}>
         <Audio src={staticFile(x.src)} volume={x.vol} />

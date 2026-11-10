@@ -1,8 +1,8 @@
-// Piezas del video chiyo01 — look "mostrador de Ginza": tarjeta perla con filete dorado, rojo camelia, ciruela, rubor.
-// Parten de las piezas de fumiko01 (src/fumiko) con otro mundo: nada de washi ni tinta.
+// Piezas del video peggy01 — look "grandes almacenes de Londres, 1960": tarjeta crema de la tienda con filete de latón,
+// verde inglés, borgoña y lápiz. Parten de las piezas de chiyo01/fumiko01 con otro mundo.
 import React from "react";
 import { AbsoluteFill, Img, OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from "remotion";
-import { loadFont as loadSerif } from "@remotion/google-fonts/BodoniModa";
+import { loadFont as loadSerif } from "@remotion/google-fonts/PlayfairDisplay";
 import { loadFont as loadSans } from "@remotion/google-fonts/Jost";
 import { loadFont as loadHand } from "@remotion/google-fonts/Caveat";
 
@@ -10,15 +10,10 @@ const { fontFamily: SERIF } = loadSerif("normal", { weights: ["400", "500", "600
 loadSerif("italic", { weights: ["400", "500"], subsets: ["latin"] });
 const { fontFamily: SANS } = loadSans("normal", { weights: ["400", "500", "600"], subsets: ["latin"] });
 const { fontFamily: HAND } = loadHand("normal", { weights: ["500", "700"], subsets: ["latin"] });
-// japonés: subset de Zen Old Mincho (OFL) solo con los caracteres que se usan
-const JP = "ZenSub";
-if (typeof document !== "undefined" && !document.getElementById("ch-jp")) {
-  const st = document.createElement("style"); st.id = "ch-jp";
-  st.innerHTML = `@font-face{font-family:'${JP}';src:url('${staticFile("chiyo01/font/zen_sub.woff2")}') format('woff2');font-weight:700;font-display:block;}`;
-  document.head.appendChild(st);
-}
+const JP = SERIF; // (sin japonés en este canal)
 
-export const C = { paper: "#F7F2EB", paper2: "#EEE4D8", ink: "#2A2025", ver: "#B4232F", plum: "#5B2B3D", gold: "#B79A5B", blush: "#F1BDB8", white: "#FFFDFB" };
+export const C = { paper: "#F5EFE3", paper2: "#E9DFCC", ink: "#1F1B17", ver: "#7C1F2C", plum: "#1F4433", gold: "#A9843F", blush: "#E8D6B0", white: "#FFFCF5" };
+// ver = borgoña de la caja · plum = verde inglés · gold = latón · blush = crema tostada
 export const FONTS = { SERIF, SANS, HAND, JP };
 export const CL = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 export const shadow = "0 2px 18px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.6)";
@@ -45,7 +40,7 @@ export const useKB = (seed: number, dur: number, clip = false) => {
 };
 
 export const Grade: React.FC = () => (
-  <AbsoluteFill style={{ pointerEvents: "none", background: "radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 58%, rgba(30,14,20,0.28) 100%)" }} />
+  <AbsoluteFill style={{ pointerEvents: "none", background: "radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 58%, rgba(20,18,12,0.26) 100%)" }} />
 );
 
 export const Photo: React.FC<{ src: string; seed: number; dur: number }> = ({ src, seed, dur }) => {
@@ -79,13 +74,13 @@ export const Card: React.FC<{ style?: React.CSSProperties; children?: React.Reac
   </div>
 );
 
-// sello redondo rojo camelia (como la tapa de un labial) con el número en kanji
-export const KANJI = ["", "一", "二", "三", "四"];
+// botón de latón y borgoña (como el de un abrigo) con el número
+export const KANJI = ["", "1", "2", "3", "4", "5", "6", "7"];
 export const Seal: React.FC<{ text: string; size?: number; delay?: number }> = ({ text, size = 92, delay = 0 }) => {
   const p = useIn(delay, 12);
   return (
-    <div style={{ width: size, height: size, borderRadius: "50%", background: `radial-gradient(circle at 35% 30%, #D2414C 0%, ${C.ver} 55%, #8E1722 100%)`, color: C.white, display: "flex", alignItems: "center", justifyContent: "center",
-      fontFamily: JP, fontWeight: 700, fontSize: size * 0.5, transform: `scale(${interpolate(p, [0, 1], [1.7, 1])})`, opacity: p, boxShadow: `0 6px 16px rgba(0,0,0,0.35), inset 0 0 0 ${Math.max(2, size * 0.03)}px rgba(255,253,251,0.55)` }}>{text}</div>
+    <div style={{ width: size, height: size, borderRadius: "50%", background: `radial-gradient(circle at 35% 30%, #A2333F 0%, ${C.ver} 55%, #521019 100%)`, color: C.white, display: "flex", alignItems: "center", justifyContent: "center",
+      fontFamily: SERIF, fontWeight: 700, fontSize: size * 0.52, transform: `scale(${interpolate(p, [0, 1], [1.7, 1])})`, opacity: p, boxShadow: `0 6px 16px rgba(0,0,0,0.35), inset 0 0 0 ${Math.max(2, size * 0.03)}px rgba(255,253,251,0.55)` }}>{text}</div>
   );
 };
 
@@ -95,7 +90,7 @@ export const Kinetic: React.FC<{ lines: string[]; accent?: number; dur: number }
   let idx = 0;
   return (
     <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: 120, opacity: o }}>
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 440, background: "linear-gradient(0deg, rgba(24,10,16,0.6), rgba(24,10,16,0))" }} />
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 440, background: "linear-gradient(0deg, rgba(16,20,14,0.6), rgba(16,20,14,0))" }} />
       {lines.map((ln, li) => (
         <div key={li} style={{ display: "flex", gap: 20, flexWrap: "wrap", justifyContent: "center", maxWidth: 1600, position: "relative" }}>
           {ln.split(" ").map((w, wi) => {
@@ -103,7 +98,7 @@ export const Kinetic: React.FC<{ lines: string[]; accent?: number; dur: number }
             const p = spring({ frame: f - d, fps: 30, config: { damping: 16, mass: 0.6 } });
             const acc = li === accent;
             return (
-              <span key={wi} style={{ fontFamily: SERIF, fontStyle: acc ? "normal" : "italic", fontWeight: acc ? 600 : 400, fontSize: acc ? 116 : 72, lineHeight: 1.1, color: acc ? C.white : "#F6E6E1",
+              <span key={wi} style={{ fontFamily: SERIF, fontStyle: acc ? "normal" : "italic", fontWeight: acc ? 600 : 400, fontSize: acc ? 116 : 72, lineHeight: 1.1, color: acc ? C.white : "#F3EAD8",
                 textShadow: shadow, opacity: p, transform: `translateY(${interpolate(p, [0, 1], [26, 0])}px)`, filter: `blur(${interpolate(p, [0, 1], [6, 0])}px)` }}>{w}</span>
             );
           })}
@@ -130,7 +125,7 @@ export const LowerThird: React.FC<{ title: string; sub: string; dur: number }> =
   );
 };
 
-// rótulo de lugar: punto rojo + nombre + japonés
+// rótulo de lugar: punto borgoña + nombre
 export const Place: React.FC<{ text: string; jp?: string; dur: number }> = ({ text, jp, dur }) => {
   const p = useIn(0, 18), o = useOut(dur, 10);
   return (
@@ -144,7 +139,7 @@ export const Place: React.FC<{ text: string; jp?: string; dur: number }> = ({ te
   );
 };
 
-// etiqueta de precio del mostrador (abajo a la derecha)
+// etiqueta de la tienda (abajo a la derecha)
 export const Tag: React.FC<{ text: string; dur: number; left?: boolean }> = ({ text, dur, left }) => {
   const p = useIn(0, 16), o = useOut(dur, 10);
   return (
@@ -202,7 +197,7 @@ export const Stat: React.FC<{ title: string; lines: string[]; foot: string; dur:
     <AbsoluteFill style={{ opacity: o }}>
       <div style={{ position: "absolute", left: 110, top: 150, width: 760, transform: `translateX(${interpolate(p, [0, 1], [-860, 0])}px)` }}>
         <Card style={{ padding: "42px 52px 38px" }}>
-          <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 22, letterSpacing: 7, color: C.ver }}>THE STUDY</div>
+          <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 22, letterSpacing: 7, color: C.ver }}>THE RECORD</div>
           <div style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 58, lineHeight: 1.08, color: C.ink, margin: "12px 0 20px" }}>{title}</div>
           {lines.map((l, i) => { const q = spring({ frame: f - 10 - i * 8, fps: 30, config: { damping: 18 } }); return <div key={i} style={{ fontFamily: SANS, fontWeight: 400, fontSize: 34, color: C.ink, opacity: q, transform: `translateX(${(1 - q) * 30}px)`, marginBottom: 6 }}>{l}</div>; })}
           <div style={{ height: 2, background: C.gold, margin: "22px 0 16px", opacity: 0.8 }} />
@@ -219,12 +214,12 @@ export const Greet: React.FC<{ jp: string; ro?: string; en: string; dur: number;
   const chars = [...jp];
   return (
     <AbsoluteFill style={{ justifyContent: low ? "flex-end" : "center", alignItems: "center", opacity: o, paddingBottom: low ? 110 : 0 }}>
-      <div style={{ position: "absolute", inset: 0, background: low ? "linear-gradient(0deg, rgba(24,10,16,0.62), rgba(24,10,16,0) 55%)" : "radial-gradient(ellipse at center, rgba(24,10,16,0.55), rgba(24,10,16,0) 70%)" }} />
+      <div style={{ position: "absolute", inset: 0, background: low ? "linear-gradient(0deg, rgba(16,20,14,0.62), rgba(16,20,14,0) 55%)" : "radial-gradient(ellipse at center, rgba(16,20,14,0.55), rgba(16,20,14,0) 70%)" }} />
       <div style={{ display: "flex", gap: 6, position: "relative" }}>
         {chars.map((c, i) => { const q = spring({ frame: f - i * 2, fps: 30, config: { damping: 15 } }); return <span key={i} style={{ fontFamily: JP, fontWeight: 700, fontSize: low ? 100 : 128, color: C.white, textShadow: shadow, opacity: q, transform: `translateY(${(1 - q) * 30}px)` }}>{c}</span>; })}
       </div>
       {ro ? <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 30, letterSpacing: 10, color: C.blush, textShadow: shadow, textTransform: "uppercase", marginTop: 4, position: "relative", opacity: interpolate(f, [10, 22], [0, 1], CL) }}>{ro}</div> : null}
-      <div style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 500, fontSize: 60, color: "#FBEDE8", textShadow: shadow, position: "relative", marginTop: 6, opacity: interpolate(f, [18, 30], [0, 1], CL) }}>{en}</div>
+      <div style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 500, fontSize: 60, color: "#F3EAD8", textShadow: shadow, position: "relative", marginTop: 6, opacity: interpolate(f, [18, 30], [0, 1], CL) }}>{en}</div>
     </AbsoluteFill>
   );
 };
