@@ -88,9 +88,9 @@ export const Cta: React.FC<OP> = ({ t, a, b }) => {
   return <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 250, ...papel, opacity: p, transform: `translateY(${(1 - eo(t, a, 0.5)) * 250}px)`, borderTop: `4px solid ${C.hanko}` }}>
     <div style={{ position: "absolute", left: 90, top: 46 }}>
       <div style={{ ...cap, fontSize: 22, color: C.hanko }}>tell me below</div>
-      <Palabras t={t} at={a + 0.35} txt="Which one piece would you keep?" gap={0.08} style={{ fontFamily: SERIF, fontSize: 62, color: C.sumi, marginTop: 12 }} />
+      <Palabras t={t} at={a + 0.35} txt="Which one piece would you keep?" gap={0.08} style={{ fontFamily: SERIF, fontSize: 56, color: C.sumi, marginTop: 12 }} />
     </div>
-    {PZ.map((q, i) => <Prenda key={i} f={q.f} hook={0} x={1130 + i * 86} y={30 + (1 - cl(spr(t, a + 0.5 + i * 0.06, 1.4))) * 260} w={118} rot={swing(t, a + 0.6 + i * 0.06, 6, 2, 7)} />)}
+    {PZ.map((q, i) => <Prenda key={i} f={q.f} hook={0} x={1175 + i * 84} y={34 + (1 - cl(spr(t, a + 0.5 + i * 0.06, 1.4))) * 260} w={112} rot={swing(t, a + 0.6 + i * 0.06, 6, 2, 7)} />)}
   </div>;
 };
 

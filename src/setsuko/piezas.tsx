@@ -68,7 +68,7 @@ export const Cambio: React.FC<SP> = ({ t, a }) => {
       <Riel y={RY} />
       {PZ.map((q, i) => i === 2 ? null : <Prenda key={i} f={q.f} hook={q.hook} x={slotX(i)} y={RY} w={176} rot={swing(t, a + 0.2, 1.6, 1.2, 5 + i)} op={0.55} />)}
       {/* la camisa gastada se va hacia abajo y se apaga */}
-      <Prenda f="p3" hook={0.035} x={X0} y={RY + out * 620} w={176} rot={out * 14 + swing(t, a + 0.2, 3, 1.2, 6)} op={1 - out} style={{ filter: `saturate(${1 - e(t, a + 0.3, sale) * 0.7}) contrast(${1 - e(t, a + 0.3, sale) * 0.25})` }} />
+      <Prenda f="p3" hook={0.035} x={X0} y={RY + out * 620} w={176} rot={out * 14 + swing(t, a + 0.2, 3, 1.2, 6)} op={(1 - out) * (1 - e(t, a + 0.3, sale) * 0.35)} />
       {/* entra UNA camisa de lino */}
       {t >= entra && <Prenda f="p3" hook={0.035} x={X0} y={lerp(-420, RY, cl(inn))} w={176} rot={swing(t, entra + 0.1, 8, 2, 7)} />}
       {/* "Not two." */}
@@ -85,8 +85,8 @@ export const Cambio: React.FC<SP> = ({ t, a }) => {
       <span style={{ opacity: e(t, dos, dos + 0.25) * (1 - e(t, azul - 0.1, azul + 0.1)) }}>not two</span>
       <span style={{ opacity: e(t, azul + 0.3, azul + 0.6), position: "absolute", left: 0, right: 0 }}>not one more in blue</span>
     </div>
-    <Pincel t={t} at={dos + 0.4} dur={0.22} x={X0 + 130} y={520} w={230} hgt={16} rot={-38} col={C.hanko} op={(1 - e(t, dos + 1.0, dos + 1.25)) * 0.9} />
-    <Pincel t={t} at={azul + 0.65} dur={0.22} x={X0 + 130} y={520} w={230} hgt={16} rot={-38} col={C.hanko} op={(1 - e(t, azul + 1.4, azul + 1.7)) * 0.9} />
+    <Pincel t={t} at={dos + 0.4} dur={0.22} x={X0 + 40} y={540} w={230} hgt={16} rot={-38} col={C.hanko} op={(1 - e(t, dos + 1.0, dos + 1.25)) * 0.9} />
+    <Pincel t={t} at={azul + 0.65} dur={0.22} x={X0 + 40} y={540} w={230} hgt={16} rot={-38} col={C.hanko} op={(1 - e(t, azul + 1.4, azul + 1.7)) * 0.9} />
   </Washi>;
 };
 
