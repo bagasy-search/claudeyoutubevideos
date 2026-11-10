@@ -255,7 +255,9 @@ export const MapJP: React.FC<{ a: [number, number]; b: [number, number]; la: str
   const mx = (ax + bx) / 2 - (by - ay) * 0.22, my = (ay + by) / 2 - Math.abs(bx - ax) * 0.22;
   const pulse = 1 + 0.3 * Math.sin(f / 5);
   const pb = spring({ frame: f - 48, fps: 30, config: { damping: 12 } });
-  const tx = (50 - ox) * 19.2, ty = (50 - oy) * 10.8;
+  // el mapa siempre cubre el cuadro: el traslado se topa con lo que la escala deja de margen
+  const mxT = ((z - 1) / z) * 960, myT = ((z - 1) / z) * 540;
+  const tx = cl((50 - ox) * 19.2, -mxT, mxT), ty = cl((50 - oy) * 10.8, -myT, myT);
   const lab = (x: number, y: number, t: string, jp?: string, op = 1, below = false) => (
     <div style={{ position: "absolute", left: x, top: y, opacity: op, transform: `scale(${1 / z}) translate(26px, ${below ? "20%" : "-112%"})`, transformOrigin: "0 0", whiteSpace: "nowrap", background: "rgba(255,253,251,0.92)", padding: "4px 18px 6px", borderRadius: 3, boxShadow: `inset 0 0 0 1.5px ${C.gold}, 0 6px 16px rgba(0,0,0,0.18)` }}>
       <span style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 56, color: C.ink }}>{t}</span>
