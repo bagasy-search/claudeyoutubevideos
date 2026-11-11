@@ -7,17 +7,17 @@ const FULL: React.CSSProperties = { position: "absolute", left: 0, top: 0, width
 const ease = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
 const salida = (f: number, dur: number) => interpolate(f, [dur - 8, dur], [1, 0], CL);
 
-// 1 · subibaja: la foto de los tres caniches se balancea apoyada bajo el del medio (790,800)
+// 1 · subibaja: la foto de los tres caniches se balancea apoyada en el del medio (790,540)
 export const EscSubibaja: React.FC<{ src: string; fA: number; fB: number; fC: number; dur: number }> = ({ src, fA, fB, fC, dur }) => {
   const f = useCurrentFrame();
   const sp = (t0: number) => spring({ frame: f - t0, fps: 30, config: { damping: 9, mass: 0.9, stiffness: 90 } });
-  const ang = -3.5 * sp(fA) + 7 * sp(fB) - 3.5 * sp(fC); // baja el lado del chico → baja el del grande → nivel
+  const ang = -5 * sp(fA) + 10 * sp(fB) - 5 * sp(fC); // baja el lado del chico → baja el del grande → nivel
   const k = ease(f, fC + 2, fC + 44);
   const drift = interpolate(f, [0, dur], [0, 0.03], CL);
   return (
     <AbsoluteFill style={{ background: "#14100c", overflow: "hidden", opacity: salida(f, dur) }}>
-      <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "790px 610px", transform: `translateX(${170 * k}px) scale(${1 + drift + 0.3 * k})` }}>
-        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "790px 800px", transform: `rotate(${ang.toFixed(3)}deg) scale(1.35)` }}>
+      <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "790px 500px", transform: `translateX(${170 * k}px) scale(${1 + drift + 0.32 * k})` }}>
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "790px 540px", transform: `rotate(${ang.toFixed(3)}deg) scale(1.3)` }}>
           <Img src={staticFile(src)} style={FULL} />
         </div>
       </div>

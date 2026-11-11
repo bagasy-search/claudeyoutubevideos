@@ -73,7 +73,7 @@ export const Carousel: React.FC<{ cards: HabCard[]; bg: string; subAt: number; s
         <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 104, color: C.white, textShadow: shadow, lineHeight: 1 }}><span style={{ color: PINK }}>{cards.length}</span> {LIST.head}</div>
         <div style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 500, fontSize: 50, color: C.paper, textShadow: shadow, marginTop: 10, opacity: interpolate(f, [subAt, subAt + 10], [0, 1], CL) }}>{sub}</div>
       </div>
-      <AbsoluteFill style={{ perspective: 2200, perspectiveOrigin: "50% 40%" }}>
+      <AbsoluteFill style={{ perspective: 2200, perspectiveOrigin: "50% 40%", transformOrigin: "50% 52%", transform: `scale(${lerp(1.42, 1, fanT)})` }}>
         {cards.map((c, i) => {
           const appear = spring({ frame: f - 4 - i * 5, fps: 30, config: { damping: 16, mass: 0.6 } });
           const N = cards.length; const th = ((((i * (360 / N) + rot) % 360) + 540) % 360) - 180;
@@ -289,9 +289,9 @@ export const MapJP: React.FC<{ a: [number, number]; b: [number, number]; la: str
 export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: HabCard[]; bg: string; dur: number }> = ({ items, cards, bg }) => {
   const f = useCurrentFrame(); const p = useIn(0, 20);
   return (
-    <AbsoluteFill style={{ transform: `scale(${1 + 0.00022 * f})` }}>
-      <BlurBg src={bg} dark={0.5} />
-      <div style={{ position: "absolute", top: 50, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 74, color: C.white, textShadow: shadow, opacity: p }}>
+    <AbsoluteFill>
+      <AbsoluteFill style={{ transform: `scale(${1 + 0.00025 * f})` }}><BlurBg src={bg} dark={0.5} /></AbsoluteFill>
+      <div style={{ position: "absolute", top: 170, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 74, color: C.white, textShadow: shadow, opacity: p }}>
         <span style={{ color: PINK }}>{cards.length}</span> breeds I&rsquo;d recommend · after 65
       </div>
       {cards.map((c, i) => {
@@ -302,7 +302,7 @@ export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: H
         const lit = f >= it.f;
         const pop = lit ? 1 + 0.08 * Math.max(0, 1 - (f - it.f) / 10) : 1;
         return (
-          <div key={i} style={{ position: "absolute", left: 70 + col * 362, top: 300 + row * 420, opacity: e, transform: `translateY(${(1 - e) * 60 + Math.sin((f + i * 23) / 19) * 7}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8}deg) scale(${(lit ? 1 : 0.94) * pop})` }}>
+          <div key={i} style={{ position: "absolute", left: 70 + col * 362, top: 400 + row * 420, opacity: e, transform: `translateY(${(1 - e) * 60 + Math.sin((f + i * 23) / 19) * 7}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8}deg) scale(${(lit ? 1 : 0.94) * pop})` }}>
             <HabitPhotoCard n={i + 1} title={c.title} src={c.src} w={340} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
           </div>
         );
