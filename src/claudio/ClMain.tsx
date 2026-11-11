@@ -9,10 +9,10 @@ import { ClRimCutaway3D } from "./ClRimCutaway3D";
 import { ClBottle3D } from "./ClBottle3D";
 import { ClMicroscope3D } from "./ClMicroscope3D";
 import { ClHallway3D } from "./ClHallway3D";
-import { ClChapter, ClCheck, ClBookPage, ClQRCard, ClDoDont, ClPins, ClColorCode, ClBeforeAfter, ClSplit } from "./ClCards";
+import { ClChapter, ClCheck, ClBookPage, ClQRCard, ClDoDont, ClPins, ClColorCode, ClBeforeAfter, ClSplit, ClLamina } from "./ClCards";
 import { ClMeasureCup, ClTimer30 } from "./ClGauges";
 import { ClRimJets, ClNeverMix } from "./ClScience";
-import { ClNameTag, ClStampOv, ClChip, ClAsk } from "./ClOverlays";
+import { ClNameTag, ClStampOv, ClChip, ClAsk, ClQRFloat } from "./ClOverlays";
 import { tileBg } from "./ClParts";
 import { ClBowl3D } from "./ClBowl3D";
 import { ClValve3D } from "./ClValve3D";
@@ -86,13 +86,13 @@ const Placeholder: React.FC<{ avatar?: boolean }> = ({ avatar }) => (
 );
 
 const COMP: Record<string, React.FC<any>> = {
-  ClRimCutaway3D, ClBottle3D, ClMicroscope3D, ClHallway3D, ClChapter, ClCheck, ClBookPage, ClQRCard, ClDoDont, ClPins, ClColorCode, ClBeforeAfter, ClSplit, ClMeasureCup, ClTimer30, ClRimJets, ClNeverMix, ClBowl3D, ClValve3D, ClPumiceTest, ClPasteRecipe, ClNotebook, ClVideoRef, ClWasher3D, ClFilterFind, ClDoseCap, ClSmellTest, ClPores3D, ClSwab, ClSpores, ClFlashlight, ClWallLeak, ClHygrometer, ClTray3D, ClPasteCheck, ClCoating, ClTally, ClReceipt, ClCaulk3D, ClFilmWrap, ClTubMap, ClCaulkGun, ClMixCloud3D, ClStoreLabel, ClMixLight, ClProtocol, ClLabelLens, ClFlushJet3D, ClMattressLayers3D, ClDampSoaked, ClSprayMix, ClDryFan, ClThreeRounds, ClRiseOrSpin, ClTankMark, ClTwoDays, ClStickWire, ClFilterTest, ClPotBoil, ClGrainWipe,
+  ClRimCutaway3D, ClBottle3D, ClMicroscope3D, ClHallway3D, ClChapter, ClLamina, ClCheck, ClBookPage, ClQRCard, ClDoDont, ClPins, ClColorCode, ClBeforeAfter, ClSplit, ClMeasureCup, ClTimer30, ClRimJets, ClNeverMix, ClBowl3D, ClValve3D, ClPumiceTest, ClPasteRecipe, ClNotebook, ClVideoRef, ClWasher3D, ClFilterFind, ClDoseCap, ClSmellTest, ClPores3D, ClSwab, ClSpores, ClFlashlight, ClWallLeak, ClHygrometer, ClTray3D, ClPasteCheck, ClCoating, ClTally, ClReceipt, ClCaulk3D, ClFilmWrap, ClTubMap, ClCaulkGun, ClMixCloud3D, ClStoreLabel, ClMixLight, ClProtocol, ClLabelLens, ClFlushJet3D, ClMattressLayers3D, ClDampSoaked, ClSprayMix, ClDryFan, ClThreeRounds, ClRiseOrSpin, ClTankMark, ClTwoDays, ClStickWire, ClFilterTest, ClPotBoil, ClGrainWipe,
   ClFaucet3D, ClDropDry, ClAerator, ClMaterials, ClAcidBase, ClWrapGuide,
   TbTub3D, TbLayers3D, TbLedger412, TbKnock, TbCotton, TbHeatJar, TbSprayFill, TbHourglass, TbCompress3D, TbScratchLens, TbBookTub, TbEnamelRust, TbSpongeScale, TbFiveKeys, TbRoutine, TbNeverPour, TbWipeTimer, TbTileFlip,
   HvSwirlCup, HvBeforeAfter, HvKettleWall, HvTreeRings, HvBlanket, HvGlassTest, HvSachet, HvUnplug, HvFillGauge, HvFizz, HvThreeBoils, HvMeshSoak, HvCalendar, HvAltScale, HvFiveErrors, HvRoutine, HvGlassKettle, HvRecap,
   PlSpit, PlCutaway, PlFlakeCrack, PlUniform, PlManual, PlCalcButton, PlSoleTypes, PlSelfClean, PlRatioJug, PlRinses, PlColdCheck, PlSolePaste, PlHoleSwab, PlNoScratch, PlRagTest, PlEmptyTank, PlParked, PlIronRow, PlFiveErrors, PlStarch, PlRoutine, PlWaterSrc, PlWhenToss, PlRecap,
 };
-const OVC: Record<string, React.FC<any>> = { ClNameTag, ClStampOv, ClChip, ClAsk };
+const OVC: Record<string, React.FC<any>> = { ClNameTag, ClStampOv, ClChip, ClAsk, ClQRFloat };
 
 const Shot: React.FC<{ c: any }> = ({ c }) => {
   if (c.k === "av") return <Avatar c={c} />;

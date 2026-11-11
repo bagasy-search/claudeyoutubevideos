@@ -4,7 +4,7 @@
 //   ClChip     etiqueta corta que entra en una esquina (día, dato): rojo sólo si alert
 //   ClAsk      la pregunta para los comentarios, en una tarjetita de "No molestar" colgada, firmada por Claudio
 import React from "react";
-import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { CL, SERIF, LABEL, HAND } from "./ClTheme";
 import { Plaque, Stamp, lin, pop, useOut } from "./ClParts";
 
@@ -57,6 +57,24 @@ export const ClAsk: React.FC<{ q: string; sign?: string }> = ({ q, sign = "— C
           <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 30, letterSpacing: 4, color: CL.yellow }}>CUÉNTEME EN LOS COMENTARIOS</div>
           <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 68, color: "#fff", lineHeight: 1.08, marginTop: 10 }}>{q}</div>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 54, color: CL.yellowSoft, textAlign: "right", opacity: lin(f, 30, 44), marginTop: 6 }}>{sign}</div>
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// ClQRFloat — QR en tarjeta crema redondeada FLOTANDO al costado del avatar full (regla del canal: nunca a pantalla completa).
+export const ClQRFloat: React.FC<{ qr: string; kicker?: string; side?: "right" | "left" }> = ({ qr, kicker = "Escanea con tu celular", side = "right" }) => {
+  const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig();
+  const p = spring({ frame: f - 3, fps, config: { damping: 15, stiffness: 120, mass: 0.8 } });
+  const out = interpolate(f, [T - 8, T], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const bob = Math.sin(f / 22) * 5;
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <div style={{ position: "absolute", top: 210, [side]: 110, opacity: Math.min(out, p), translate: `${(1 - p) * (side === "right" ? 160 : -160)}px ${bob}px`, rotate: `${side === "right" ? 2 : -2}deg` }}>
+        <div style={{ background: "#F6EFDD", borderRadius: 34, padding: "30px 34px 26px", boxShadow: "0 40px 80px rgba(0,0,0,0.35), 0 8px 18px rgba(0,0,0,0.18)", textAlign: "center", width: 470 }}>
+          <div style={{ background: "#fff", borderRadius: 20, padding: 18 }}><Img src={staticFile(qr)} style={{ width: 370, height: 370, display: "block", margin: "0 auto" }} /></div>
+          <div style={{ marginTop: 18, fontFamily: LABEL, fontWeight: 700, fontSize: 40, color: CL.ink }}>{kicker}</div>
         </div>
       </div>
     </AbsoluteFill>

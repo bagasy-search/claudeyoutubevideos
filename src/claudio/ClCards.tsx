@@ -9,7 +9,7 @@
 //   ClBeforeAfter cortina que barre de ANTES a DESPUÉS sobre dos fotos reales del mismo lugar, con su rótulo
 //   ClSplit       pantalla partida de la misma foto: CLORO = sólo color (arriba blanco, abajo sigue) | AGUA OXIGENADA = raíz
 import React from "react";
-import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig, Easing } from "remotion";
+import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from "remotion";
 import { CL, SERIF, LABEL, HAND, hexA } from "./ClTheme";
 import { Bed, Card, KeyTag, RoomLight, Stamp, Tape, lin, pop, useOut } from "./ClParts";
 
@@ -266,6 +266,29 @@ export const ClSplit: React.FC<{ img: string; left?: [string, string]; right?: [
         </div>
       </div>
       <div style={{ position: "absolute", left: 957, top: 0, width: 6, height: 1080 * open, background: "#fff", boxShadow: "0 0 24px rgba(0,0,0,0.35)" }} />
+    </AbsoluteFill>
+  );
+};
+
+// ClLamina — lámina a pantalla completa con recorrido de cámara por tramos (genérico, cualquier slug).
+// Cada toma del DIRECTOR es un tramo: viaja de `from` a `to` ({x,y} = punto de la lámina 0-1 que queda al centro, z = zoom) con
+// resorte y después deriva lento; tramos seguidos con to→from iguales = una sola cámara continua. `intro` = la lámina entra cayendo.
+type LamStop = { x: number; y: number; z: number };
+export const ClLamina: React.FC<{ img: string; from?: LamStop; to?: LamStop; intro?: boolean; last?: boolean }> = ({ img, from = { x: 0.5, y: 0.5, z: 1 }, to = { x: 0.5, y: 0.5, z: 1 }, intro, last }) => {
+  const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig();
+  const k = spring({ frame: f - 2, fps, config: { damping: 22, stiffness: 46, mass: 1.1 } });
+  const drift = lin(f, 30, T, 0, 1);
+  const z = interpolate(k, [0, 1], [from.z, to.z]) * (1 + 0.018 * drift);
+  const cl = (v: number) => Math.min(1 - 0.5 / z, Math.max(0.5 / z, v)); // nunca asoma el borde de la lámina
+  const cx = cl(interpolate(k, [0, 1], [from.x, to.x])), cy = cl(interpolate(k, [0, 1], [from.y, to.y]));
+  const tx = (0.5 - cx) * 1920 * z, ty = (0.5 - cy) * 1080 * z;
+  const pin = intro ? pop(f, fps, 0, 16) : 1;
+  const out = last ? lin(f, T - 8, T, 1, 0) : 1;
+  return (
+    <AbsoluteFill style={{ background: "#ECE6DA", overflow: "hidden" }}>
+      <AbsoluteFill style={{ transform: `translate(${tx}px, ${ty + (1 - pin) * -900}px) scale(${z})`, transformOrigin: "50% 50%", opacity: out }}>
+        <Img src={staticFile(img)} style={{ width: 1920, height: 1080, objectFit: "contain", display: "block" }} />
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
