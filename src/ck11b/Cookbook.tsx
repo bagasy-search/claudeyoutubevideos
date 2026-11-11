@@ -11,7 +11,7 @@ const cl = (v: number, a = 0, b = 1) => Math.max(a, Math.min(b, v));
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 const ease = (t: number) => Easing.inOut(Easing.cubic)(cl(t));
 const sp = (f: number, d = 14, m = 0.7) => spring({ frame: f, fps: 30, config: { damping: d, mass: m } });
-const DEPTH = "0 1px 0 rgba(255,255,255,.6) inset, 0 3px 6px rgba(0,0,0,.28), 0 18px 34px rgba(0,0,0,.38), 0 46px 90px rgba(0,0,0,.32)";
+const DEPTH = "0 1px 0 rgba(255,255,255,.6) inset, 0 4px 8px rgba(0,0,0,.3), 0 26px 46px rgba(0,0,0,.42)"; // 2 capas: en swangle cada sombra grande cuesta caro
 const shadow = "0 2px 18px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.6)";
 
 export type Line = { t: string; f: number };
@@ -20,7 +20,8 @@ export type Recipe = { title: string; sub?: string; crock?: string; lines: Line[
 // mesa de madera de la iglesia (foto) de fondo, con viñeta cálida
 const Table: React.FC<{ src: string; f: number }> = ({ src, f }) => (
   <AbsoluteFill style={{ overflow: "hidden", background: "#24170d" }}>
-    <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.08 + f * 0.00012})`, filter: "brightness(0.82) saturate(0.9)" }} />
+    <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.08 + f * 0.00012})` }} />
+    <AbsoluteFill style={{ background: "rgba(14,8,3,0.2)" }} />
     <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, rgba(30,18,8,0) 40%, rgba(30,18,8,0.55) 100%)" }} />
   </AbsoluteFill>
 );
@@ -61,8 +62,7 @@ export const RecipeCard: React.FC<{ r: Recipe; n?: number; bg: string; dur: numb
     <AbsoluteFill style={{ opacity: 1 - out }}>
       <Table src={bg} f={f} />
       <AbsoluteFill style={{ transform: `translate(${camX}px, ${camY}px) scale(${zoom})`, transformOrigin: "50% 50%" }}>
-        {/* sombra que "aterriza" */}
-        <div style={{ position: "absolute", left: 960 - W / 2 + 30, top: 540 - H / 2 + 40, width: W, height: H, borderRadius: 10, background: "rgba(0,0,0,0.45)", filter: `blur(${lerp(60, 26, drop)}px)`, opacity: drop }} />
+        {/* la sombra que aterriza la da DEPTH (el div con filter: blur costaba caro en el farm) */}
         <div style={{ position: "absolute", left: 960 - W / 2, top: 540 - H / 2, width: W, height: H, borderRadius: 8, boxShadow: DEPTH,
           transform: `translateY(${lerp(-1300, 0, drop)}px) rotate(${lerp(rot0 * 6, rot0, drop)}deg)`,
           background: `radial-gradient(120% 90% at 25% 12%, #FCF5E6 0%, ${C.paper} 55%, ${C.paper2} 100%)`, overflow: "hidden" }}>
