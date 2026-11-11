@@ -1,0 +1,1 @@
+{ "extends": "./tsconfig.json", "include": ["src/index_lcf11b.tsx"], "compilerOptions": { "noEmit": true, "resolveJsonModule": true, "skipLibCheck": true } }
