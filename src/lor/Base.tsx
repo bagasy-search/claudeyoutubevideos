@@ -171,8 +171,10 @@ export const MapIowa: React.FC<{ look: Look; pins: { lon: number; lat: number; l
   const P = (lon: number, lat: number) => [X0 + (lon + 96.7) * 0.74 * S, Y0 + (43.55 - lat) * S];
   const d = IOWA.map(([a, b], i) => `${i ? "L" : "M"}${P(a, b).join(" ")}`).join(" ") + "Z";
   const draw = interpolate(f, [4, 40], [3000, 0], CL);
+  const kz = 1 + 0.09 * Math.min(1, f / Math.max(1, dur)); // empuje continuo: el mapa nunca queda congelado
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
+     <AbsoluteFill style={{ transform: `scale(${kz})`, transformOrigin: "42% 50%" }}>
       <Img src={staticFile(look.paper)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
         <path d={d} fill="rgba(123,94,167,0.10)" stroke={C.ink} strokeWidth={6} strokeLinejoin="round" strokeDasharray={3000} strokeDashoffset={draw} />
@@ -180,6 +182,7 @@ export const MapIowa: React.FC<{ look: Look; pins: { lon: number; lat: number; l
           <g key={i} opacity={o}><circle cx={x} cy={y} r={16} fill={C.red} /><text x={x + 28} y={y + 14} fontFamily={HAND} fontWeight={700} fontSize={50} fill={C.ink}>{p.label}</text></g>); })}
       </svg>
       <div style={{ position: "absolute", left: 360, top: 90, fontFamily: HAND, fontWeight: 700, fontSize: 72, color: C.ink, opacity: interpolate(f, [0, 10], [0, 1], CL) }}>{title || "IOWA"}</div>
+     </AbsoluteFill>
     </AbsoluteFill>
   );
 };
