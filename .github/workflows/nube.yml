@@ -1,0 +1,52 @@
+# Runner GENÉRICO de proceso (regla 11-nov: la PC no procesa audio/video). Rama huérfana nube-<slug>-<job> con:
+#   job/run.sh       script a correr (cwd = job/), con ffmpeg/ffprobe, python3 (numpy scipy soundfile opencv) y node 20
+#   job/params.json  {"slug":..., "out_release":"nube-<slug>" (opcional), "inputs":[["<release>","<patrón>"],...]}
+#   job/*            insumos chicos (scripts, json, wav cortos)
+# Los insumos de "inputs" se bajan a job/in/. Todo lo que run.sh deje en job/out/ se sube al release out_release (--clobber).
+name: nube
+on:
+  push:
+    branches: ['nube-*']
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env: { GH_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg
+        timeout-minutes: 8
+        run: |
+          for n in 1 2 3; do curl -sfL --max-time 120 -o ff.tar.xz https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz && xz -t ff.tar.xz && break; rm -f ff.tar.xz; sleep $((n*5)); done
+          [ -s ff.tar.xz ] || for n in 1 2 3 4; do curl -sfL --max-time 170 -o ff.tar.xz https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz && xz -t ff.tar.xz && break; rm -f ff.tar.xz; sleep $((n*10)); done
+          mkdir -p /tmp/ffx /tmp/ff/bin && tar xf ff.tar.xz -C /tmp/ffx --strip-components=1 && rm ff.tar.xz
+          find /tmp/ffx -type f \( -name ffmpeg -o -name ffprobe \) -exec cp {} /tmp/ff/bin/ \;
+          chmod +x /tmp/ff/bin/*; echo "/tmp/ff/bin" >> "$GITHUB_PATH"
+      - name: python
+        run: pip install -q numpy scipy soundfile opencv-python-headless pillow 2>&1 | tail -1
+      - name: insumos
+        working-directory: job
+        run: |
+          mkdir -p in out
+          python3 - <<'PY' > dl.sh
+          import json; p=json.load(open('params.json'))
+          for rel,pat in p.get('inputs',[]): print(f'for n in 1 2 3 4 5; do gh release download "{rel}" -R "$GITHUB_REPOSITORY" -p "{pat}" -D in --clobber && break; sleep $((n*6)); done')
+          PY
+          bash -e dl.sh; ls -la in | head -50; du -sh in
+      - name: correr job
+        working-directory: job
+        run: bash -e run.sh
+      - name: publicar salidas
+        if: always()
+        working-directory: job
+        run: |
+          R=$(python3 -c "import json;p=json.load(open('params.json'));print(p.get('out_release') or 'nube-'+p['slug'])")
+          ls out | head -100
+          [ -n "$(ls -A out)" ] || exit 0
+          gh release view "$R" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create "$R" -R "$GITHUB_REPOSITORY" --title "$R" --notes "salidas del runner nube"
+          for n in 1 2 3; do gh release upload "$R" out/* -R "$GITHUB_REPOSITORY" --clobber && break; sleep $((n*10)); done
+      - name: borrar la rama
+        if: always()
+        run: git push origin --delete "$GITHUB_REF_NAME" || true
