@@ -55,7 +55,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "three": return <P.Three items={o.items} marks={o.marks} dur={d} />;
     case "soft": return <P.Soft text={o.text} dur={d} />;
     case "carousel": return <Q.Carousel cards={CARDS} bg={o.bg} subAt={o.subAt} dur={d} />;
-    case "scene": return <Q.HabitScene n={o.n} title={o.title} src={o.cite} dur={d} />;
+    case "scene": return <Q.HabitScene n={o.n} title={o.title} src={o.src} dur={d} />;
     case "progress": return <Q.Progress n={o.n} title={o.title} dur={d} />;
     case "split": return <Q.SplitPhoto src={o.src} seed={o.seed} dur={d} />;
     case "polaroid": return <Q.Polaroid src={o.src} caption={o.caption} seed={o.seed} dur={d} />;
