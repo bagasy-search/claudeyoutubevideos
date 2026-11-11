@@ -342,7 +342,7 @@ const Flap: React.FC<{ text: string; at: number; w?: number }> = ({ text, at, w 
 export const SplitFlap: React.FC<P> = ({ m, dur }) => {
   const f = useCurrentFrame(); const at = [M(m, 0, 10), M(m, 1, 100), M(m, 2, 220), M(m, 3, 420)];
   const rows = [["RUNNING", "1,800 W"], ["BIGGEST START", "2,000 W"], ["SURGE ON TOP", "+1,200 W"], ["GENERATOR", "3K-4K W"]];
-  return <AbsoluteFill style={{ background: "#0d0f12" }}>
+  return <AbsoluteFill style={{ background: "#1a2433" }}>
     <div style={{ position: "absolute", left: 140, top: 90, fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: C.paper, letterSpacing: 4 }}>ADD IT UP</div>
     {rows.map(([l, v], i) => f >= at[i] - 2 ? <div key={i} style={{ position: "absolute", left: 140, top: 230 + i * 200, display: "flex", alignItems: "center", gap: 50, opacity: k(f, at[i] - 2, 6) }}>
       <div style={{ width: 560, fontFamily: SANS, fontWeight: 600, fontSize: 46, letterSpacing: 5, color: i === 3 ? "#ffd27a" : "rgba(245,240,224,.8)" }}>{l}</div><Flap text={v} at={at[i]} w={i === 3 ? 92 : 80} /></div> : null)}
