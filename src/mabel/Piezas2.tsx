@@ -263,8 +263,8 @@ export const MapJP: React.FC<{ a: [number, number]; b: [number, number]; la: str
   // traslado para que el punto (ox,oy)% quede en el centro de la pantalla a escala z
   const hv = 50 / z; // el encuadre nunca se sale del mapa
   const tx = (50 - cl(ox, hv, 100 - hv)) * 19.2, ty = (50 - cl(oy, hv, 100 - hv)) * 10.8;
-  const lab = (x: number, y: number, t: string, jp?: string, op = 1) => (
-    <div style={{ position: "absolute", left: x, top: y, opacity: op, transform: x > 1250 ? `scale(${1 / z}) translate(calc(-100% - 24px), 18%)` : `scale(${1 / z}) translate(24px, -110%)`, transformOrigin: "0 0", whiteSpace: "nowrap", background: "rgba(244,237,225,0.85)", padding: "2px 14px", borderRadius: 4 }}>
+  const lab = (x: number, y: number, t: string, jp?: string, op = 1, flip = false) => (
+    <div style={{ position: "absolute", left: x, top: y, opacity: op, transform: flip ? `scale(${1 / z}) translate(calc(-100% - 24px), 18%)` : `scale(${1 / z}) translate(24px, -110%)`, transformOrigin: "0 0", whiteSpace: "nowrap", background: "rgba(244,237,225,0.85)", padding: "2px 14px", borderRadius: 4 }}>
       <span style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 58, color: C.ink }}>{t}</span>
       {jp && <span style={{ fontFamily: JP, fontWeight: 700, fontSize: 40, color: C.ver, marginLeft: 14 }}>{jp}</span>}
     </div>
@@ -279,8 +279,8 @@ export const MapJP: React.FC<{ a: [number, number]; b: [number, number]; la: str
           <circle cx={ax} cy={ay} r={(30 / z) * pulse} fill="none" stroke={C.ver} strokeWidth={3 / z} opacity={0.5} />
           <circle cx={bx} cy={by} r={(14 / z) * pb} fill={C.indigo} />
         </svg>
-        {lab(ax, ay, la, ja)}
-        {lab(bx, by, lb, jb, pb)}
+        {lab(ax, ay, la, ja, 1, ax > bx && ax > 1250)}
+        {lab(bx, by, lb, jb, pb, bx > ax && bx > 1250)}
       </AbsoluteFill>
       <Grain op={0.1} />
     </AbsoluteFill>
