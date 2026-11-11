@@ -283,12 +283,18 @@ export const MapJP: React.FC<{ a: [number, number]; b: [number, number]; la: str
 };
 
 // (10) recap: las 10 tarjetas del carrusel ordenadas en grilla, se tildan una a una
-export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: HabCard[]; bg: string; dur: number }> = ({ items, cards, bg }) => {
+export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: HabCard[]; bg: string; dur: number }> = ({ items, cards, bg, dur }) => {
   const f = useCurrentFrame(); const p = useIn(0, 20);
+  const k = f / Math.max(1, dur);
+  // fondo: zoom + paneo continuo durante todo el recap (sin esto freezedetect lo marca como imagen quieta)
+  const bz = 1.08 + 0.16 * k, bx = -2.5 + 5 * k, by = 1.5 - 3 * k;
+  const gx = Math.sin(f / 47) * 14, gy = Math.cos(f / 61) * 8;
   return (
     <AbsoluteFill>
-      <BlurBg src={bg} dark={0.5} />
-      <div style={{ position: "absolute", top: 50, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 500, fontSize: 74, color: C.white, textShadow: shadow, opacity: p }}>
+      <AbsoluteFill style={{ transform: `scale(${bz}) translate(${bx}%, ${by}%)`, transformOrigin: "45% 55%" }}>
+        <BlurBg src={bg} dark={0.5} />
+      </AbsoluteFill>
+      <div style={{ position: "absolute", top: 50, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 500, fontSize: 74, color: C.white, textShadow: shadow, opacity: p, transform: `translateY(${Math.sin(f / 53) * 6}px) scale(${1 + 0.03 * k})` }}>
         <span style={{ color: PINK }}>{cards.length}</span> steps · every night
       </div>
       {cards.map((c, i) => {
@@ -299,7 +305,7 @@ export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: H
         const lit = f >= it.f;
         const pop = lit ? 1 + 0.08 * Math.max(0, 1 - (f - it.f) / 10) : 1;
         return (
-          <div key={i} style={{ position: "absolute", left: 70 + col * 362, top: 300 + row * 420, opacity: e, transform: `translateY(${(1 - e) * 60}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8}deg) scale(${(lit ? 1 : 0.94) * pop})` }}>
+          <div key={i} style={{ position: "absolute", left: 70 + col * 362 + gx + Math.sin(f / (29 + i * 4) + i * 1.7) * 9, top: 300 + row * 420 + gy + Math.sin(f / (23 + i * 3) + i * 2.3) * 16, opacity: e, transform: `translateY(${(1 - e) * 60}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8 + Math.sin(f / (37 + i * 5) + i) * 1.6}deg) scale(${(lit ? 1 : 0.94) * pop * (1 + 0.025 * Math.sin(f / (41 + i * 6) + i * 0.9))})` }}>
             <HabitPhotoCard n={i + 1} title={c.title} src={c.src} w={340} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
           </div>
         );
