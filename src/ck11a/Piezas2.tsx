@@ -346,7 +346,7 @@ export const AvatarFramed: React.FC<{ src: string; seed: number; dur: number; mo
     const ra = m.k === "punch" ? 4 : 12, rb = m.k === "punch" ? 6 : 10;
     const w = interpolate(f, [m.a, m.a + ra, Math.max(m.a + ra + 1, m.b - rb), Math.max(m.a + ra + 2, m.b)], [0, 1, 1, 0], { ...CL, easing: Easing.inOut(Easing.cubic) });
     if (m.k === "punch") z *= 1 + 0.12 * w;
-    if (m.k === "split") tx += -24 * w;
+    if (m.k === "split") { z *= 1 + 0.14 * w; tx += -4 * w; } // reencuadre lateral que nunca deja borde (antes -24 % sin foto = franja negra)
   }
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: C.ink }}>
