@@ -164,7 +164,7 @@ export const Place: React.FC<{ text: string; jp?: string; dur: number }> = ({ te
   const p = useIn(0, 18), o = useOut(dur, 10);
   return (
     <AbsoluteFill style={{ opacity: o }}>
-      <div style={{ position: "absolute", left: 100, top: 90, display: "flex", alignItems: "center", gap: 18, transform: `translateY(${interpolate(p, [0, 1], [-30, 0])}px)`, opacity: p }}>
+      <div style={{ position: "absolute", left: 90, top: 80, display: "flex", alignItems: "center", gap: 18, background: "rgba(20,16,12,0.58)", padding: "10px 26px 10px 20px", borderRadius: 8, transform: `translateY(${interpolate(p, [0, 1], [-30, 0])}px)`, opacity: p }}>
         <svg width="34" height="44" viewBox="0 0 24 32"><path d="M12 0C5.4 0 0 5.2 0 11.7 0 20.5 12 32 12 32s12-11.5 12-20.3C24 5.2 18.6 0 12 0z" fill={C.ver} /><circle cx="12" cy="11.5" r="4.5" fill={C.paper} /></svg>
         <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 54, color: C.white, textShadow: shadow }}>{text}</div>
         {jp ? <div style={{ fontFamily: JP, fontWeight: 700, fontSize: 40, color: "#F1E2C9", textShadow: shadow, marginLeft: 6 }}>{jp}</div> : null}
@@ -248,7 +248,7 @@ export const Counter: React.FC<{ to: number; suffix: string; label: string; dur:
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <div style={{ position: "absolute", left: 120, bottom: 120, transform: `translateY(${interpolate(p, [0, 1], [40, 0])}px)`, opacity: p }}>
-        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 170, lineHeight: 0.9, color: C.white, textShadow: shadow }}>30–{v}<span style={{ fontSize: 70, marginLeft: 14 }}>{suffix}</span></div>
+        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 170, lineHeight: 0.9, color: C.white, textShadow: shadow }}>{v.toLocaleString("en-US")}<span style={{ fontSize: 70, marginLeft: 14 }}>{suffix}</span></div>
         <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 30, letterSpacing: 3, color: "#F0E3CE", textShadow: shadow, marginTop: 10 }}>{label}</div>
       </div>
     </AbsoluteFill>
@@ -408,7 +408,7 @@ export const Greet: React.FC<{ jp: string; en: string; dur: number }> = ({ jp, e
 };
 
 export const Three: React.FC<{ head?: string; items: string[]; marks: number[]; dur: number }> = ({ head = "", items, marks, dur }) => {
-  const big = items.length > 4 || items.some((x) => x.length > 22); const W = big ? 900 : 640, FS = big ? 44 : 50;
+  const big = items.length > 4 || items.some((x) => x.length > 22); const W = big ? 720 : 600, FS = big ? 36 : 44;
   const f = useCurrentFrame(); const p = useIn(0, 18), o = useOut(dur, 10);
   return (
     <AbsoluteFill style={{ opacity: o }}>

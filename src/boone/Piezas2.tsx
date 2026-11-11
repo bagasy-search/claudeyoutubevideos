@@ -253,7 +253,7 @@ export const MapJP: React.FC<{ a: [number, number]; b: [number, number]; la: str
   const span = Math.max(Math.abs(a[0] - b[0]), Math.abs(a[1] - b[1]) * 1.78);
   const zEnd = cl(60 / Math.max(span, 6), 1.0, 4);
   const k = ease((f - 4) / 30);
-  const z = lerp(Math.max(zEnd, 4.2), zEnd, k), ox = lerp(a[0], cx, k), oy = lerp(a[1], cy, k);
+  const z = lerp(Math.max(zEnd, 4.2), zEnd, k) * (1 + 0.0005 * f), ox = lerp(a[0], cx, k), oy = lerp(a[1], cy, k);
   const line = interpolate(f, [18, 50], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
   const ax = a[0] * 19.2, ay = a[1] * 10.8, bx = b[0] * 19.2, by = b[1] * 10.8;
   const mx = (ax + bx) / 2 - (by - ay) * 0.25, my = (ay + by) / 2 - Math.abs(bx - ax) * 0.25;
@@ -289,7 +289,7 @@ export const MapJP: React.FC<{ a: [number, number]; b: [number, number]; la: str
 export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: HabCard[]; bg: string; dur: number }> = ({ items, cards, bg }) => {
   const f = useCurrentFrame(); const p = useIn(0, 20);
   return (
-    <AbsoluteFill>
+    <AbsoluteFill style={{ transform: `scale(${1 + 0.00022 * f})` }}>
       <BlurBg src={bg} dark={0.5} />
       <div style={{ position: "absolute", top: 50, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 74, color: C.white, textShadow: shadow, opacity: p }}>
         <span style={{ color: PINK }}>{cards.length}</span> breeds I&rsquo;d recommend · after 65
@@ -302,7 +302,7 @@ export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: H
         const lit = f >= it.f;
         const pop = lit ? 1 + 0.08 * Math.max(0, 1 - (f - it.f) / 10) : 1;
         return (
-          <div key={i} style={{ position: "absolute", left: 70 + col * 362, top: 300 + row * 420, opacity: e, transform: `translateY(${(1 - e) * 60}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8}deg) scale(${(lit ? 1 : 0.94) * pop})` }}>
+          <div key={i} style={{ position: "absolute", left: 70 + col * 362, top: 300 + row * 420, opacity: e, transform: `translateY(${(1 - e) * 60 + Math.sin((f + i * 23) / 19) * 7}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8}deg) scale(${(lit ? 1 : 0.94) * pop})` }}>
             <HabitPhotoCard n={i + 1} title={c.title} src={c.src} w={340} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
           </div>
         );
