@@ -1,0 +1,44 @@
+# Trabajo genérico de audio/video EN LA NUBE (modo 100 % nube, 11-nov-2026): rama huérfana mix-<slug>[-<tag>] con job.sh + scripts.
+# El runner trae ffmpeg/ffprobe, python (numpy, scipy, soundfile, pyloudnorm, opencv), node y gh. job.sh baja sus insumos del
+# release assets-<slug> con `get <archivo>` y sube resultados con `put <archivos>`. Lo empuja tools/nube/push.sh.
+name: nube
+on:
+  push:
+    branches: ['mix-*']
+permissions:
+  contents: write
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env: { GH_TOKEN: "${{ github.token }}", YTPROXIES: "${{ secrets.YTPROXIES }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg
+        timeout-minutes: 8
+        run: |
+          for n in 1 2; do curl -sfL --max-time 120 -o ff.tar.xz https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz && xz -t ff.tar.xz && break; rm -f ff.tar.xz; sleep $((n*5)); done
+          [ -s ff.tar.xz ] || for n in 1 2 3 4; do curl -sfL --max-time 170 -o ff.tar.xz https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz && xz -t ff.tar.xz && break; rm -f ff.tar.xz; sleep $((n*10)); done
+          mkdir -p /tmp/ffx /tmp/ff/bin && tar xf ff.tar.xz -C /tmp/ffx --strip-components=1 && rm ff.tar.xz
+          find /tmp/ffx -type f \( -name ffmpeg -o -name ffprobe \) -exec cp {} /tmp/ff/bin/ \;
+          chmod +x /tmp/ff/bin/*; echo "/tmp/ff/bin" >> "$GITHUB_PATH"; /tmp/ff/bin/ffmpeg -version | head -1
+      - name: python
+        run: '[ -f requirements.txt ] && pip install -q -r requirements.txt 2>&1 | tail -1 || true'
+      - name: job
+        run: |
+          export S=$(cat SLUG) R="$GITHUB_REPOSITORY"
+          # insumos y resultados viven en el release insumos-<slug> (farm.mjs BORRA y recrea assets-<slug> en cada tar);
+          # sólo <slug>_mix.wav / <slug>_mix.m4a van a assets-<slug>, que es de donde los lee encfin.
+          I="insumos-$S"; export I
+          gh release view "$I" -R "$R" >/dev/null 2>&1 || gh release create "$I" -R "$R" --title "$I" --notes "insumos y resultados de los trabajos de nube"
+          get() { for f in "$@"; do for n in 1 2 3 4 5; do gh release download "$I" -R "$R" -p "$f" --clobber 2>/dev/null && break; gh release download "assets-$S" -R "$R" -p "$f" --clobber 2>/dev/null && break; sleep $((n*6)); done; ls $f >/dev/null; done; }
+          put() { for f in "$@"; do T="$I"; case "$(basename "$f")" in "${S}_mix.wav"|"${S}_mix.m4a") T="assets-$S"; gh release view "$T" -R "$R" >/dev/null 2>&1 || gh release create "$T" -R "$R" --title "$T" --notes "assets del render";; esac
+            ok=0; for n in 1 2 3 4 5; do gh release upload "$T" "$f" -R "$R" --clobber && ok=1 && break; sleep $((n*10)); done; [ $ok = 1 ] || return 1; done; }
+          export -f get put
+          mkdir -p out && bash job.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: out, path: out, retention-days: 3, if-no-files-found: ignore }
+      - name: borrar la rama
+        if: success()
+        run: git push origin --delete "$GITHUB_REF_NAME" || true
