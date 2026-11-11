@@ -22,12 +22,12 @@ const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
 // anti-congelado (AUDITOR 11-nov): grano vivo + empuje lento + piso de negro en los componentes a pantalla completa
 const Breathe: React.FC<{ dur: number; seed: number; children: React.ReactNode }> = ({ dur, seed, children }) => {
   const f = useCurrentFrame();
-  const s = 1 + 0.035 * Math.min(1, f / Math.max(1, dur));
-  const x = Math.sin(f / 50 + seed) * 7, y = Math.cos(f / 63 + seed) * 5;
+  const s = 1.02 + 0.06 * Math.min(1, f / Math.max(1, dur));
+  const x = Math.sin(f / 38 + seed) * 14, y = Math.cos(f / 47 + seed) * 10;
   return <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
     <AbsoluteFill style={{ transform: `translate(${x}px,${y}px) scale(${s})` }}>{children}</AbsoluteFill>
     <AbsoluteFill style={{ background: "rgb(30,34,46)", mixBlendMode: "screen", pointerEvents: "none" }} />
-    <svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0, opacity: 0.08, pointerEvents: "none" }}>
+    <svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0, opacity: 0.14, pointerEvents: "none" }}>
       <filter id={`gr${seed}`}><feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves={2} seed={(f * 7) % 97} stitchTiles="stitch" /><feColorMatrix type="saturate" values="0" /></filter>
       <rect width={1920} height={1080} filter={`url(#gr${seed})`} /></svg>
   </AbsoluteFill>;
