@@ -1,0 +1,29 @@
+# Corredor genérico de audio/video liviano en la nube (rama mix-<slug>, huérfana: workflow + job.sh + lo que el job necesite).
+# Cada push corre `bash job.sh` en un runner con ffmpeg + numpy/scipy/soundfile/pyloudnorm. El job baja sus insumos de
+# releases (aud-<slug>, assets-<slug>) y sube sus resultados ahí mismo; lo que deje en out/ queda además como artifact.
+name: mix
+on:
+  push:
+    branches: ['mix-*']
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env: { GH_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg
+        timeout-minutes: 8
+        run: |
+          for n in 1 2 3; do curl -sfL --max-time 170 -o ff.tar.xz https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz && xz -t ff.tar.xz && break; rm -f ff.tar.xz; sleep $((n*10)); done
+          if [ -s ff.tar.xz ]; then mkdir -p /tmp/ffx /tmp/ff/bin && tar xf ff.tar.xz -C /tmp/ffx --strip-components=1 && cp /tmp/ffx/ffmpeg /tmp/ffx/ffprobe /tmp/ff/bin/ && echo "/tmp/ff/bin" >> "$GITHUB_PATH"; rm -f ff.tar.xz
+          else sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; fi
+      - name: python
+        run: pip install -q numpy scipy soundfile pyloudnorm opencv-python-headless 2>&1 | tail -1
+      - name: job
+        run: ffmpeg -version | head -1; mkdir -p out; bash job.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: out, path: out, retention-days: 3, if-no-files-found: ignore }
