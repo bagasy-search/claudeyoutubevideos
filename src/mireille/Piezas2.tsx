@@ -158,7 +158,7 @@ export const HabitScene: React.FC<{ n: number; title: string; src: string; dur: 
             <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `translateX(${px}%) scale(${z})` }} />
           </AbsoluteFill>
           <AbsoluteFill style={{ background: `linear-gradient(${right ? 270 : 90}deg, rgba(16,11,8,0.85) 0%, rgba(16,11,8,0.4) 45%, rgba(16,11,8,0) 70%)` }} />
-          <div style={{ position: "absolute", top: 230, width: 860, display: "flex", flexDirection: "column", ...side }}>
+          <div style={{ position: "absolute", top: 230, width: 1040, display: "flex", flexDirection: "column", ...side }}>
             <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, letterSpacing: 10, color: PINK, opacity: draw }}>{LIST.short} · {KANJI[n]}</div>
             <svg width="560" height="300" viewBox="0 0 560 300" style={{ overflow: "visible" }}>
               <text x={right ? 560 : 0} y="262" textAnchor={right ? "end" : "start"} fontFamily={SERIF} fontWeight={700} fontSize="300"
@@ -167,7 +167,7 @@ export const HabitScene: React.FC<{ n: number; title: string; src: string; dur: 
             <div style={{ display: "flex", flexWrap: "wrap", columnGap: 22, justifyContent: right ? "flex-end" : "flex-start", marginTop: 6 }}>
               {words.map((w, i) => {
                 const p = spring({ frame: f - 30 - i * 5, fps: 30, config: { damping: 15, mass: 0.6 } });
-                return <span key={i} style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 92, color: C.white, textShadow: shadow, display: "inline-block", opacity: p, transform: `translateY(${(1 - p) * 40}px)` }}>{w}</span>;
+                return <span key={i} style={{ fontFamily: SERIF, fontWeight: 700, fontSize: title.length > 16 ? 80 : 92, color: C.white, textShadow: shadow, display: "inline-block", opacity: p, transform: `translateY(${(1 - p) * 40}px)` }}>{w}</span>;
               })}
             </div>
             <div style={{ height: 4, background: C.ver, marginTop: 18, width: 260 * interpolate(f, [44, 60], [0, 1], CL) }} />
@@ -203,7 +203,7 @@ export const Polaroid: React.FC<{ src: string; caption: string; dur: number; see
           <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "sepia(0.35) contrast(0.95)" }} />
           <Grain op={0.25} />
         </div>
-        <div style={{ position: "absolute", bottom: 20, left: 0, right: 0, textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 54, color: C.indigo }}>{caption}</div>
+        <div style={{ position: "absolute", bottom: 20, left: 0, right: 0, textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: caption.length > 14 ? 40 : 54, whiteSpace: "nowrap", color: C.indigo }}>{caption}</div>
         <div style={{ position: "absolute", top: -18, left: 190, width: 140, height: 40, background: "rgba(234,223,203,0.85)", transform: "rotate(-3deg)", boxShadow: "0 2px 6px rgba(0,0,0,0.15)" }} />
       </div>
     </div>

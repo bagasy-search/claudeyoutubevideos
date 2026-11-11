@@ -243,7 +243,7 @@ export const Counter: React.FC<{ to: number; suffix: string; label: string; dur:
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <div style={{ position: "absolute", left: 120, bottom: 120, transform: `translateY(${interpolate(p, [0, 1], [40, 0])}px)`, opacity: p }}>
-        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 170, lineHeight: 0.9, color: C.white, textShadow: shadow }}>30–{v}<span style={{ fontSize: 70, marginLeft: 14 }}>{suffix}</span></div>
+        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 170, lineHeight: 0.9, color: C.white, textShadow: shadow }}>{v}<span style={{ fontSize: 70, marginLeft: 14 }}>{suffix}</span></div>
         <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 30, letterSpacing: 3, color: "#F0E3CE", textShadow: shadow, marginTop: 10 }}>{label}</div>
       </div>
     </AbsoluteFill>
