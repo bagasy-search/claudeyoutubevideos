@@ -12,9 +12,9 @@ const TR = 8;
 const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   const seed = s.id + 1;
   switch (s.view) {
-    case "clip": return <K.Clip src={s.src} seed={seed} dur={dur} clipDur={s.clipDur} minRate={s.veo ? 0.42 : 0.75} />;
+    case "clip": return <K.Clip src={s.src} seed={seed} dur={dur} clipDur={s.clipDur} minRate={s.veo ? 0.42 : 0.6} />;
     case "photo": return <K.Photo src={s.src} seed={seed} dur={dur} />;
-    case "clips": { let a = 0; return <AbsoluteFill>{s.parts.map((x: any, i: number) => { const el = <Sequence key={i} from={a} durationInFrames={x.dur}><K.Clip src={x.src} seed={seed + i * 7} dur={x.dur} clipDur={x.clipDur} minRate={0.75} /></Sequence>; a += x.dur; return el; })}{s.tail ? <Sequence from={a} durationInFrames={dur - a}><K.Photo src={s.tailSrc} seed={seed + 3} dur={dur - a} /></Sequence> : null}</AbsoluteFill>; }
+    case "clips": { let a = 0; return <AbsoluteFill>{s.parts.map((x: any, i: number) => { const el = <Sequence key={i} from={a} durationInFrames={x.dur}><K.Clip src={x.src} seed={seed + i * 7} dur={x.dur} clipDur={x.clipDur} minRate={0.6} /></Sequence>; a += x.dur; return el; })}{s.tail ? <Sequence from={a} durationInFrames={dur - a}><K.Photo src={s.tailSrc} seed={seed + 3} dur={dur - a} /></Sequence> : null}</AbsoluteFill>; }
     case "album": return <K.Album src={s.src} seed={seed} dur={dur} caption={s.caption} />;
     case "polaroid": return <K.PolaroidShot src={s.src} caption={s.caption} bg={s.bg} seed={seed} dur={dur} />;
     case "card": return <K.RecipeCard {...s.p} bg={s.bg} dur={dur} />;
