@@ -16,8 +16,22 @@ const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   if (s.k === "Y") return <P.Clip src={s.src} seed={s.id + 1} dur={dur} clipDur={s.clipDur} />;
   if (s.k === "W" || s.k === "G") return <P.Photo src={s.src} seed={s.id + 1} dur={dur} />;
   if (s.k === "C" && s.cta) return <CtaBook page={s.page} under={s.under} dur={dur} />;
-  if (s.k === "C") return <B.CompC s={s} dur={dur} />;
+  if (s.k === "C") return <Breathe dur={dur} seed={s.id % 13}><B.CompC s={s} dur={dur} /></Breathe>;
   return null;
+};
+
+// anti-congelado (AUDITOR 11-nov): grano vivo + empuje lento + piso de negro en los componentes a pantalla completa
+const Breathe: React.FC<{ dur: number; seed: number; children: React.ReactNode }> = ({ dur, seed, children }) => {
+  const f = useCurrentFrame();
+  const s = 1 + 0.035 * Math.min(1, f / Math.max(1, dur));
+  const x = Math.sin(f / 50 + seed) * 7, y = Math.cos(f / 63 + seed) * 5;
+  return <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
+    <AbsoluteFill style={{ transform: `translate(${x}px,${y}px) scale(${s})` }}>{children}</AbsoluteFill>
+    <AbsoluteFill style={{ background: "rgb(30,34,46)", mixBlendMode: "screen", pointerEvents: "none" }} />
+    <svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0, opacity: 0.08, pointerEvents: "none" }}>
+      <filter id={`gr${seed}`}><feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves={2} seed={(f * 7) % 97} stitchTiles="stitch" /><feColorMatrix type="saturate" values="0" /></filter>
+      <rect width={1920} height={1080} filter={`url(#gr${seed})`} /></svg>
+  </AbsoluteFill>;
 };
 
 // el manual 3D sobre el banco (página real + tarjeta con el QR)
