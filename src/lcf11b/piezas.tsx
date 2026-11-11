@@ -102,7 +102,7 @@ export const RecipeCard: React.FC<{ s: any; c: any }> = ({ s, c }) => {
           <div style={{ position: "absolute", left: 80, top: 250, width: 640, fontFamily: HAND, fontSize: 44, lineHeight: "80px", color: K.pencil }}>
             {ing.map((x: string, i: number) => {
               const m = x.match(PORTION); const a = 1.2 + i * 0.32;
-              return <div key={i} style={{ position: "relative", opacity: wr(i, 1.2, 0.32), whiteSpace: "nowrap", overflow: "visible" }}>
+              return <div key={i} style={{ position: "relative", opacity: wr(i, 1.2, 0.32), whiteSpace: "nowrap", overflow: "visible", fontSize: x.length > 29 ? Math.floor(44 * 29 / x.length) : 44 }}>
                 {m && m[1].trim() && <span style={{ position: "relative", display: "inline-block" }}><Ring k={cl((t - a - 0.6) / 0.4)} w={Math.max(90, m[1].length * 21 + 30)} />{m[1]}</span>}
                 {m ? x.slice(m[1].length) : x}
               </div>;
