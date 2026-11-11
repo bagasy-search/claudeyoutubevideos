@@ -1,0 +1,4 @@
+faster-whisper
+av<15
+librosa
+numpy
