@@ -37,6 +37,7 @@ const Body: React.FC<{ s: any }> = ({ s }) => {
       if (s.type === "dato") return <P.Dato s={s} />;
       if (s.type === "map") return <P.MapIowa s={s} />;
       if (s.type === "carousel") return <P.Carousel s={s} items={C.CAROUSEL} title={s.val.includes("shopping") ? "My shopping list for the week" : undefined} />;
+      if (s.type === "list") return <P.ShoppingList s={s} part={Number(s.val) || 0} />;
       if (s.type === "week") return <P.WeekDay s={s} idx={WEEK.indexOf(s)} days={DAYS} />;
       return null;
   }

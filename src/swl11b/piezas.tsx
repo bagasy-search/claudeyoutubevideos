@@ -324,3 +324,41 @@ export const Progress: React.FC<{ n: number; of: number; name: string; t: number
     </div>
   </div>
 );
+
+// ---------- la lista de compras de la semana: un anotador rayado en la mesa, cada cosa se escribe cuando Loretta la nombra ----------
+// 3 planos seguidos (part 0/1/2) con encuadre distinto sobre el MISMO anotador: lo ya escrito queda arriba.
+export const SHOP: { t: number; txt: string; q?: string }[] = [
+  { t: 2367.3, txt: "russets", q: "10 lb bag" }, { t: 2369.9, txt: "ground beef", q: "1 lb · split in 4" }, { t: 2373.0, txt: "breakfast sausage", q: "1 roll · split in 4" },
+  { t: 2376.5, txt: "rotisserie chicken" }, { t: 2378.4, txt: "ham steak" }, { t: 2379.7, txt: "frozen broccoli", q: "1 bag" },
+  { t: 2381.7, txt: "sharp cheddar", q: "a block — shred it" }, { t: 2387.5, txt: "sour cream", q: "small tub" }, { t: 2389.9, txt: "green onions", q: "1 bunch" },
+  { t: 2391.5, txt: "kidney beans", q: "1 can" }, { t: 2393.2, txt: "tomato sauce", q: "1 can" }, { t: 2395.3, txt: "taco seasoning", q: "1 packet" }, { t: 2397.1, txt: "barbecue sauce", q: "1 bottle" },
+];
+export const ShoppingList: React.FC<{ s: any; part: number }> = ({ s, part }) => {
+  const t = useT(), d = s.dur / FPS, now = s.from / FPS + t;
+  const GAP = 96, TOP = 250, PW = 1180;
+  const cam = [
+    { z0: 0.70, z1: 0.74, y0: 70, y1: 40, r0: -1.5, r1: -0.8, x: 0 },
+    { z0: 1.02, z1: 1.06, y0: 540 - (TOP + GAP * 7.5) * 1.02, y1: 540 - (TOP + GAP * 7.9) * 1.06, r0: 1.6, r1: 1.0, x: 60 },
+    { z0: 0.90, z1: 0.93, y0: 560 - (TOP + GAP * 10.6) * 0.90, y1: 560 - (TOP + GAP * 11.0) * 0.93, r0: -2.2, r1: -1.4, x: -40 },
+  ][part];
+  const k = eIO(t, 0, d), z = lerp(cam.z0, cam.z1, k), y = lerp(cam.y0, cam.y1, k), r = lerp(cam.r0, cam.r1, k);
+  return <AbsoluteFill style={{ overflow: "hidden" }}>
+    <Wood t={now} />
+    <div style={{ position: "absolute", left: 960 - PW / 2 + cam.x, top: 0, width: PW, transformOrigin: "50% 0%", transform: `translateY(${y}px) scale(${z}) rotate(${r}deg)` }}>
+      <IndexCard w={PW} h={TOP + GAP * 13 + 120} lineGap={GAP} top={TOP - 30}>
+        <div style={{ position: "absolute", left: 90, top: 70, fontFamily: HAND, fontWeight: 700, fontSize: 92, color: K.red, transform: "rotate(-1.5deg)" }}>Groceries — my potato week</div>
+        {SHOP.map((it, i) => {
+          const w = eOut(now, it.t, it.t + 0.7);
+          if (w <= 0) return null;
+          const yy = TOP + GAP * i + GAP * 0.08 - 30;
+          return <div key={i} style={{ position: "absolute", left: 110, top: yy, height: GAP, display: "flex", alignItems: "flex-end", gap: 26, clipPath: `inset(0 ${100 - 100 * w}% 0 0)`, transform: `rotate(${(rnd(i) - 0.5) * 1.2}deg)` }}>
+            <span style={{ width: 40, height: 40, marginBottom: 24, border: `4px solid ${K.ink}`, borderRadius: 4, transform: `rotate(${(rnd(i + 9) - 0.5) * 8}deg)`, opacity: 0.8 }} />
+            <span style={{ fontFamily: HAND, fontWeight: 700, fontSize: 70, lineHeight: `${GAP}px`, color: K.ink }}>{it.txt}</span>
+            {it.q && <span style={{ fontFamily: HAND, fontWeight: 600, fontSize: 50, lineHeight: `${GAP}px`, color: K.pencil, opacity: 0.85 }}>{it.q}</span>}
+          </div>;
+        })}
+      </IndexCard>
+    </div>
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse 95% 85% at 50% 50%, transparent 60%, rgba(40,20,6,.35))" }} />
+  </AbsoluteFill>;
+};
