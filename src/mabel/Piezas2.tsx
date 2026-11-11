@@ -251,18 +251,20 @@ export const MapJP: React.FC<{ a: [number, number]; b: [number, number]; la: str
   const o = interpolate(f, [0, 8, dur - 10, dur], [0, 1, 1, 0], CL);
   const cx = (a[0] + b[0]) / 2, cy = (a[1] + b[1]) / 2;
   const span = Math.max(Math.abs(a[0] - b[0]), Math.abs(a[1] - b[1]) * 1.78);
-  const zEnd = cl(60 / Math.max(span, 6), 1.0, 4);
+  const zEnd = cl(42 / Math.max(span, 6), 1.12, 2.3);
   const k = ease((f - 4) / 30);
-  const z = lerp(Math.max(zEnd, 4.2), zEnd, k), ox = lerp(a[0], cx, k), oy = lerp(a[1], cy, k);
+  const dr = f / Math.max(1, dur); // deriva lenta: el mapa nunca queda quieto
+  const z = lerp(Math.max(zEnd, 3.4), zEnd, k) * (1 + 0.07 * dr), ox = lerp(a[0], cx, k) + 1.2 * dr, oy = lerp(a[1], cy, k) - 0.6 * dr;
   const line = interpolate(f, [18, 50], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
   const ax = a[0] * 19.2, ay = a[1] * 10.8, bx = b[0] * 19.2, by = b[1] * 10.8;
   const mx = (ax + bx) / 2 - (by - ay) * 0.25, my = (ay + by) / 2 - Math.abs(bx - ax) * 0.25;
   const pulse = 1 + 0.3 * Math.sin(f / 5);
   const pb = spring({ frame: f - 48, fps: 30, config: { damping: 12 } });
   // traslado para que el punto (ox,oy)% quede en el centro de la pantalla a escala z
-  const tx = (50 - ox) * 19.2, ty = (50 - oy) * 10.8;
+  const hv = 50 / z; // el encuadre nunca se sale del mapa
+  const tx = (50 - cl(ox, hv, 100 - hv)) * 19.2, ty = (50 - cl(oy, hv, 100 - hv)) * 10.8;
   const lab = (x: number, y: number, t: string, jp?: string, op = 1) => (
-    <div style={{ position: "absolute", left: x, top: y, opacity: op, transform: `scale(${1 / z}) translate(24px, -110%)`, transformOrigin: "0 0", whiteSpace: "nowrap", background: "rgba(244,237,225,0.85)", padding: "2px 14px", borderRadius: 4 }}>
+    <div style={{ position: "absolute", left: x, top: y, opacity: op, transform: x > 1250 ? `scale(${1 / z}) translate(calc(-100% - 24px), 18%)` : `scale(${1 / z}) translate(24px, -110%)`, transformOrigin: "0 0", whiteSpace: "nowrap", background: "rgba(244,237,225,0.85)", padding: "2px 14px", borderRadius: 4 }}>
       <span style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 58, color: C.ink }}>{t}</span>
       {jp && <span style={{ fontFamily: JP, fontWeight: 700, fontSize: 40, color: C.ver, marginLeft: 14 }}>{jp}</span>}
     </div>
