@@ -15,15 +15,8 @@ const useIn = (delay = 0, damping = 18) => { const f = useCurrentFrame(); const 
 const useOut = (dur: number, len = 10) => { const f = useCurrentFrame(); return interpolate(f, [dur - len, dur], [1, 0], CL); };
 
 // grano de película (SVG, sin imágenes)
-export const Grain: React.FC<{ op?: number }> = ({ op = 0.18 }) => {
-  const f = useCurrentFrame(); const id = "gr" + (f % 4);
-  return (
-    <svg style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity: op, mixBlendMode: "overlay", pointerEvents: "none" }}>
-      <filter id={id}><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={f % 4} /><feColorMatrix type="saturate" values="0" /></filter>
-      <rect width="100%" height="100%" filter={`url(#${id})`} />
-    </svg>
-  );
-};
+// grano anulado: el feTurbulence a pantalla completa costaba ~2,4 s por cuadro en el farm y la regla del canal es sin grano
+export const Grain: React.FC<{ op?: number }> = () => null;
 
 export type HabCard = { title: string; src: string };
 export const LIST = { n: 5, head: "slow cooker sides · feeds 20", tag: "SIDE", short: "SIDE NO." };
