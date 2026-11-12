@@ -451,9 +451,9 @@ export const ListCard: React.FC<{ head: string; title: string; rows: { a?: strin
               const on = f >= r.f;
               const st = interpolate(f, [r.f + 10, r.f + 22], [0, 1], CL);
               return (
-                <div key={i} style={{ display: "flex", gap: 22, alignItems: "flex-end", height: H, opacity: on ? 1 : 0, position: "relative" }}>
+                <div key={i} style={{ display: "flex", gap: 22, alignItems: "baseline", minHeight: H, paddingTop: 8, opacity: on ? 1 : 0, position: "relative" }}>
                   {r.a && <span style={{ fontFamily: SANS, fontWeight: 600, fontSize: FS * 0.72, color: T.acc, width: 190, whiteSpace: "nowrap" }}>{r.a}</span>}
-                  <Typed txt={r.txt} at={r.f} speed={0.8} style={{ fontFamily: HAND, fontWeight: 700, fontSize: FS, color: T.pen }} />
+                  <Typed txt={r.txt} at={r.f} speed={0.8} style={{ fontFamily: HAND, fontWeight: 700, fontSize: rows.some((q) => q.txt.length > (wide ? 50 : 34)) ? FS * 0.84 : FS, lineHeight: 1.15, color: T.pen }} />
                   {cross && on && <div style={{ position: "absolute", left: r.a ? 212 : 0, top: H * 0.55, height: 4, width: `${st * 70}%`, background: T.acc, transform: "rotate(-1deg)", opacity: 0.85 }} />}
                 </div>
               );
