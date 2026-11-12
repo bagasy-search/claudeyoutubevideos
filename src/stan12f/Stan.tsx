@@ -85,15 +85,15 @@ export const PriceTag: React.FC<{ text: string; dur: number }> = ({ text, dur })
 };
 // palabras en tiza, grandes, que se escriben una por una (centro-abajo)
 export const Chalk: React.FC<{ lines: string[]; dur: number }> = ({ lines, dur }) => {
-  const f = useCurrentFrame(); let k = 0;
+  const f = useCurrentFrame(); let k = 0; const cfs = Math.min(lines.length > 1 ? 104 : 124, Math.floor(1640 / (Math.max(...lines.map((l) => l.length), 6) * 0.62)));
   return (
     <AbsoluteFill style={{ opacity: fadeOut(f, dur), justifyContent: "flex-end", alignItems: "center", paddingBottom: 110 }}>
       <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(14,10,7,0.78) 0%, rgba(14,10,7,0.35) 38%, rgba(14,10,7,0) 60%)" }} />
       <div style={{ position: "relative", textAlign: "center" }}>
         {lines.map((ln, i) => (
-          <div key={i} style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", columnGap: 26 }}>
+          <div key={i} style={{ display: "flex", justifyContent: "center", flexWrap: "nowrap", whiteSpace: "nowrap", columnGap: Math.round(cfs * 0.24) }}>
             {ln.split(" ").map((w, j) => { const d = 3 + (k++) * 4; const p = interpolate(f, [d, d + 7], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) });
-              return <span key={j} style={{ ...chalkTxt, fontFamily: SLAB, fontWeight: 400, fontSize: lines.length > 1 ? 104 : 124, lineHeight: 1.08, color: i === lines.length - 1 && lines.length > 1 ? K.gold : K.chalk, textShadow: SH, display: "inline-block", clipPath: `inset(0 ${100 - p * 100}% 0 0)`, transform: `translateY(${(1 - p) * 10}px)` }}>{w}</span>; })}
+              return <span key={j} style={{ ...chalkTxt, fontFamily: SLAB, fontWeight: 400, fontSize: cfs, lineHeight: 1.08, color: i === lines.length - 1 && lines.length > 1 ? K.gold : K.chalk, textShadow: SH, display: "inline-block", clipPath: `inset(0 ${100 - p * 100}% 0 0)`, transform: `translateY(${(1 - p) * 10}px)` }}>{w}</span>; })}
           </div>
         ))}
       </div>
@@ -402,7 +402,7 @@ export const Ask: React.FC<{ text: string; bg: string; dur: number; seed: number
   return (
     <AbsoluteFill style={{ opacity: fadeOut(f, dur, 10) }}>
       <AbsoluteFill style={{ overflow: "hidden" }}><Img src={staticFile(bg)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${interpolate(f, [0, dur], [1.05, 1.15])})`, filter: "brightness(0.62)" }} /></AbsoluteFill>
-      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 50 }}>
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "flex-end", paddingBottom: 70, flexDirection: "column", gap: 36 }}>
         <div style={{ ...kraftBg(seed), padding: "44px 90px 50px", clipPath: torn(seed + 5, 30, 1.8), maxWidth: 1500, textAlign: "center", transform: `translateY(${(1 - p) * 80}px) rotate(-1deg)`, opacity: p }}>
           <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 26, letterSpacing: 7, color: K.redD }}>TELL ME IN THE COMMENTS</div>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 92, color: K.ink, lineHeight: 1.05, marginTop: 8 }}>{text}</div>
@@ -431,7 +431,7 @@ export const Avatar: React.FC<{ src: string; seed: number; dur: number; mods?: {
 // foto de época como objeto: hoja de álbum con esquineros (CSS), sin grano
 export const Album: React.FC<{ src: string; seed: number; dur: number }> = ({ src, seed, dur }) => {
   const f = useCurrentFrame(); const t = f / Math.max(1, dur); const r = (hash(seed) % 2 ? 1 : -1) * (1.2 + (hash(seed + 1) % 3) * 0.7);
-  const p = spring({ frame: f, fps: 30, config: { damping: 15, mass: 0.9 } });
+  const p = spring({ frame: f + 6, fps: 30, config: { damping: 15, mass: 0.9 } });
   const corner = (s: React.CSSProperties) => <div style={{ position: "absolute", width: 0, height: 0, borderStyle: "solid", ...s }} />;
   const cw = 86, cc = "#2B1E14";
   return (
