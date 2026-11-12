@@ -435,11 +435,13 @@ export const Clock2h: React.FC<{ head: string; sub: string; foot: string; bg?: s
 export const ListCard: React.FC<{ head: string; title: string; rows: { a?: string; txt: string; f: number; done?: boolean }[]; bg?: string; dur: number; wide?: boolean; cross?: boolean }> = ({ head, title, rows, bg, dur, wide, cross }) => {
   const f = useCurrentFrame(); const p = useIn(0, 19), o = useOut(dur, 8);
   const many = rows.length > 8; const H = many ? 52 : 64, FS = many ? 38 : 46;
+  // fichas largas (>40 s): deriva lenta continua para que nunca quede un tramo quieto (freezedetect del AUDITOR)
+  const lg = dur > 1200; const dz = lg ? 1 + 0.06 * f / dur : 1, dr = lg ? 0.5 * Math.sin(f / 70) : 0, dx = lg ? -18 * f / dur : 0;
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Fondo src={bg} seed={hash(rows.length + title.length)} dur={dur} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
-        <Paper style={{ width: wide ? 1640 : 1240, height: 940, padding: "22px 70px 30px 120px", transform: `translateY(${(1 - p) * 700}px) rotate(${wide ? 0.6 : -0.9}deg)` }}>
+        <Paper style={{ width: wide ? 1640 : 1240, height: 940, padding: "22px 70px 30px 120px", transform: `translateY(${(1 - p) * 700}px) translateX(${dx}px) scale(${dz}) rotate(${(wide ? 0.6 : -0.9) + dr}deg)` }}>
           <div style={{ display: "flex", justifyContent: "space-between", height: 92 }}>
             <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 66, color: T.ink }}>{title}</div>
             <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 22, letterSpacing: 5, color: T.acc, marginTop: 20 }}>{head}</div>

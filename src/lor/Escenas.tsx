@@ -279,7 +279,7 @@ export const EscVentaja: React.FC<{ a: string; b: string; fHead: number; fMe: nu
   const L = 270, T = 195, W = 1265, H = 720;           // costado cromado en esc_tost
   const out = suave((f - fHead + 6) / 40);              // la cámara se aleja del reflejo
   const s0 = 1920 / W * 1.04;
-  const s = s0 + (1.03 - s0) * out;
+  const s = (s0 + (1.03 - s0) * out) * (1 + 0.05 * f / Math.max(1, dur));   // sigue moviéndose lento: sin tramo quieto
   const cx = L + W / 2, cy = T + H / 2;
   const tx = 960 - cx * s, ty = 540 - cy * s;
   const refl = interpolate(f, [fMe - 4, fMe + 18], [1, 0], CLX);
