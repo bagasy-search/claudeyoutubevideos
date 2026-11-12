@@ -39,8 +39,8 @@ export const h = (n: number, k: number) => {
 };
 
 // papel washi: degradé cálido + fibras (ruido estático en un SVG de fondo, se rasteriza una vez)
-const FIBRA = "url(\"data:image/svg+xml;utf8," + encodeURIComponent(
-  "<svg xmlns='http://www.w3.org/2000/svg' width='480' height='480'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9 0.035' numOctaves='2' seed='7'/><feColorMatrix values='0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0 0.22  0 0 0 0.11 0'/></filter><rect width='480' height='480' filter='url(%23n)'/></svg>".replace(/%23/g, "#")) + "\")";
+// 12-nov: la fibra era un SVG feTurbulence (≈7 s/cuadro en el runner bajo clipPath); ahora textura PNG horneada
+const FIBRA = `url("${staticFile(P + "g/fibra.png")}")`;
 export const Washi: React.FC<{ children?: React.ReactNode; tone?: string }> = ({ children, tone = C.washi }) => (
   <AbsoluteFill style={{ background: `radial-gradient(120% 90% at 30% 20%, #faf6ee 0%, ${tone} 55%, ${C.washi2} 100%)`, overflow: "hidden" }}>
     <AbsoluteFill style={{ backgroundImage: FIBRA, opacity: 0.9 }} />
