@@ -5,7 +5,7 @@ import * as B from "./Base";
 import * as S from "./Stan";
 import * as E from "./Escenas";
 
-export const TOTAL_FRAMES_STAN12F = TOTAL;
+export const TOTAL_FRAMES_STAN12J = TOTAL;
 const T = 8; // frames de transición
 
 export const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
@@ -53,12 +53,12 @@ export const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "dial": return <S.Dial deg={o.deg} label={o.label} dur={d} />;
     case "windup": return <S.WindUp min={o.min} label={o.label} dur={d} />;
     case "scale": return <S.Scale to={o.to} suffix={o.suffix} label={o.label} dur={d} />;
-    case "rail": return <S.Rail n={o.n} total={o.total} word={o.word} asc title={o.title} dur={d} />;
+    case "rail": return <S.Rail n={o.n} total={o.total} word={o.word} title={o.title} dur={d} />;
     default: return null;
   }
 };
 
-export const MainStan12f: React.FC = () => (
+export const MainStan12j: React.FC = () => (
   <AbsoluteFill style={{ background: S.K.ink }}>
     {/* capa 1: Stan sentado (ventanas visibles del reel) */}
     {AVATAR.map((a, i) => (
@@ -84,7 +84,7 @@ export const MainStan12f: React.FC = () => (
       </Sequence>
     ))}
     {/* audio: mezcla hecha en la nube (voz + sonido real de los clips + foley); encfin la monta sobre el video */}
-    <Audio src={staticFile("stan12f_mix.m4a")} />
+    <Audio src={staticFile("stan12j_mix.m4a")} />
     {SFX.length < 0 ? null : null}
   </AbsoluteFill>
 );
