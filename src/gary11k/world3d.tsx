@@ -156,10 +156,15 @@ const KitPiece: React.FC<{ q: KP; f: (k: string) => number; t: number }> = ({ q,
   </group>;
 };
 // el teclado de la alarma de pared junto a la puerta de atrás: pantalla verde que se muere con el corte
-const Keypad: React.FC<{ f: (k: string) => number }> = ({ f }) => { const live = cl(1 - f("dark") + f("power")) * (1 - f("kpdead"));
+// r84 (QC: 8 s quieto en 2:47): «on a normal day» vuelve la luz → pantalla viva, LED de armado que titila, y al «sees the signal» la señal sale (barras + ondas)
+const Keypad: React.FC<{ f: (k: string) => number; t: number }> = ({ f, t }) => { const live = cl(1 - f("dark") + f("power")) * (1 - f("kpdead")), sig = f("kpsig");
   return <group position={[-1.56, F0 + 0.62, 0.22]} rotation={[0, PI / 2, 0]}>
     <RBox s={[0.1, 0.13, 0.02]} r={0.008}>{M.plastic({ col: "#e8e1cc" })}</RBox>
     <mesh position={[0, 0.03, 0.011]}><planeGeometry args={[0.07, 0.03]} /><meshStandardMaterial color="#0d140d" emissive="#7dff9a" emissiveIntensity={1.6 * live} toneMapped={false} /></mesh>
+    <mesh position={[0.036, 0.056, 0.012]}><circleGeometry args={[0.0035, 12]} /><meshStandardMaterial color="#300" emissive="#ff3a2a" emissiveIntensity={5 * live * (Math.sin(t * PI * 2) > 0 ? 1 : 0.08)} toneMapped={false} /></mesh>
+    <mesh position={[0.024, 0.056, 0.012]}><circleGeometry args={[0.0035, 12]} /><meshStandardMaterial color="#030" emissive="#4dff7a" emissiveIntensity={3 * live} toneMapped={false} /></mesh>
+    {[0, 1, 2, 3].map((i) => <mesh key={i} position={[-0.024 + i * 0.012, 0.022 + i * 0.003, 0.0115]}><planeGeometry args={[0.008, 0.006 + i * 0.006]} /><meshBasicMaterial color="#0a1a0a" transparent opacity={0.9 * sig * ((t * 3 - i) % 4 < 2.2 ? 1 : 0.15)} toneMapped={false} /></mesh>)}
+    <group position={[0, 0.03, 0.03]} scale={0.32}><Rings t={t} k={sig} vert /></group>
     {Array.from({ length: 12 }, (_, i) => <mesh key={i} position={[-0.025 + (i % 3) * 0.025, -0.01 - Math.floor(i / 3) * 0.014, 0.011]}><boxGeometry args={[0.016, 0.009, 0.004]} />{M.plastic({ col: "#cfc6ad" })}</mesh>)}
   </group>;
 };
@@ -355,7 +360,7 @@ export const HouseWorld: React.FC<{ t: number }> = ({ t }) => {
     {/* cocina */}
     <Fridge f={f} />
     <KitCase f={f} />
-    <Keypad f={f} />
+    <Keypad f={f} t={t} />
     {KPIECES.map((q) => <KitPiece key={q.k} q={q} f={f} t={t} />)}
     <Lantern on={f("lan")} />
     <Stove f={f} t={t} />
