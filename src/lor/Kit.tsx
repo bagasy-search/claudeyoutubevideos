@@ -244,7 +244,7 @@ export const MapIowa: React.FC<{ map: string; town: [number, number]; label: str
   const f = useCurrentFrame();
   const o = interpolate(f, [0, 8, dur - 10, dur], [0, 1, 1, 0], CL);
   const k = Easing.out(Easing.cubic)(cl((f - 6) / 50, 0, 1));
-  const z = lerp(1.0, 1.55, k), ox = lerp(50, town[0], k), oy = lerp(50, town[1], k);
+  const z = lerp(1.0, 1.55, k) + 0.12 * cl(f / Math.max(1, dur), 0, 1), ox = lerp(50, town[0], k), oy = lerp(50, town[1], k);
   const pin = spring({ frame: f - 34, fps: 30, config: { damping: 10 } });
   const lab = spring({ frame: f - 46, fps: 30, config: { damping: 16 } });
   const big = interpolate(f, [0, 14], [0, 1], CL);

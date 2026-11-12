@@ -96,7 +96,8 @@ export const EscAceituna: React.FC<{ a: string; b: string; fOl: number; fCel: nu
   x = x + (OA.x - x) * p3; y = y + (OA.y - y) * p3;
   // entrada en la aceituna: escala en log desde 1.25 hasta 16 al llegar a fSwap
   const kin = Math.max(0, Math.min(1, (f - fIn) / Math.max(1, fSwap - fIn)));
-  const sA = Math.exp(Math.log(1.25) + (Math.log(16) - Math.log(1.25)) * Easing.in(Easing.quad)(kin));
+  const sPre = 1.25 + 0.08 * Math.min(1, f / Math.max(1, fIn));
+  const sA = Math.exp(Math.log(1.33) + (Math.log(16) - Math.log(1.33)) * Easing.in(Easing.quad)(kin));
   // olivas: arranca con la misma escala aparente y abre hasta 1.04
   const sB0 = 16 * (OA.r / OB.r);
   const kout = Math.max(0, Math.min(1, (f - fSwap) / Math.max(1, Math.min(dur - fSwap - 10, 70))));
@@ -106,7 +107,7 @@ export const EscAceituna: React.FC<{ a: string; b: string; fOl: number; fCel: nu
   const libre = (px: number, py: number, s: number) => ({ transform: `translate(${960 - px * s}px, ${540 - py * s}px) scale(${s})`, transformOrigin: "0 0" } as React.CSSProperties);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
-      {op < 1 && <AbsoluteFill style={f < fIn ? camara(x, y, 1.25) : libre(x, y, sA)}><Img src={staticFile(a)} style={FOTO} /></AbsoluteFill>}
+      {op < 1 && <AbsoluteFill style={f < fIn ? camara(x, y, sPre) : libre(x, y, sA)}><Img src={staticFile(a)} style={FOTO} /></AbsoluteFill>}
       {op > 0 && <AbsoluteFill style={{ opacity: op, ...(kout < 0.999 ? libre(bx, by, sB) : camara(bx, by, sB)) }}><Img src={staticFile(b)} style={FOTO} /></AbsoluteFill>}
     </AbsoluteFill>
   );
