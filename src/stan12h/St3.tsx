@@ -71,7 +71,7 @@ export const BeefMap: React.FC<{ src: string; regs: Reg[]; now: number; sweep?: 
         <Img src={staticFile(src)} style={{ position: "absolute", width: 1920, height: 1080, objectFit: "fill", WebkitMaskImage: mask, maskImage: mask, opacity: dark, filter: `brightness(${1.06 + 0.05 * Math.sin(f / 7)})` }} />
       </AbsoluteFill>
       <div style={{ position: "absolute", left: 90, bottom: 64, opacity: pop * dark, transform: `rotate(-2deg) scale(${lerp(1.14, 1, pop)})`, transformOrigin: "0 100%", whiteSpace: "nowrap" }}>
-        <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 58, letterSpacing: 6, color: "#F3E7CC", textShadow: "0 2px 12px rgba(0,0,0,0.95)" }}>{i + 1} OF {N} · FRONT TO BACK</div>
+        <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 70, letterSpacing: 6, color: "#F3E7CC", textShadow: "0 2px 12px rgba(0,0,0,0.95)" }}>{i + 1} OF {N} · FRONT TO BACK</div>
         <div style={{ fontFamily: MARK, fontSize: 150, lineHeight: 1, color: "#FFFDF6", textShadow: "0 4px 24px rgba(0,0,0,0.95), 0 1px 3px rgba(0,0,0,0.9)" }}>{r.t}</div>
       </div>
     </AbsoluteFill>
@@ -80,7 +80,7 @@ export const BeefMap: React.FC<{ src: string; regs: Reg[]; now: number; sweep?: 
 
 // ---------- DOS FOTOS: la segunda entra corriendo a la primera cuando la nombra; rótulo escrito en cinta de papel
 const Tape: React.FC<{ t: string; show: number }> = ({ t, show }) => (
-  <div style={{ position: "absolute", left: 60, bottom: 70, padding: "12px 34px 16px", background: "#F4EDDC", boxShadow: "0 10px 26px rgba(0,0,0,0.5)", transform: `rotate(-2.5deg) translateY(${(1 - show) * 60}px)`, opacity: cl(show * 2), fontFamily: MARK, fontSize: 88, color: K.ink, whiteSpace: "nowrap" }}>{t}</div>
+  <div style={{ position: "absolute", left: 60, bottom: 70, padding: "12px 34px 16px", background: "linear-gradient(170deg, #D6B47C 0%, #C39C5E 100%)", boxShadow: "0 10px 26px rgba(0,0,0,0.5)", transform: `rotate(-2.5deg) translateY(${(1 - show) * 60}px)`, opacity: cl(show * 2), fontFamily: MARK, fontSize: 88, color: K.ink, whiteSpace: "nowrap" }}>{t}</div>
 );
 export const Duo: React.FC<{ a: { src: string; t: string }; b: { src: string; t: string; f: number }; dur: number }> = ({ a, b, dur }) => {
   const f = useCurrentFrame(); const p = eio((f - b.f) / 16); const z = lerp(1.04, 1.1, f / Math.max(1, dur));
