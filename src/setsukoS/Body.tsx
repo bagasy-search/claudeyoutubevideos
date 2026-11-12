@@ -32,7 +32,9 @@ const Plano: React.FC<{ i: number; t: number }> = ({ i, t }) => {
       <OffthreadVideo src={staticFile(P + "reel0.mp4")} startFrom={s(q.off || 0)} muted style={{ width: "100%", height: "100%", objectFit: "cover", transformOrigin: "58% 34%", transform: `translateX(${tx}%) scale(${z})` }} />
     </AbsoluteFill>;
   }
-  if (q.k === "S") { const X = ESCENAS[q.sc as string]; return <X t={t} a={q.s} b={q.e} arg={q.arg} />; }
+  if (q.k === "S") { const X = ESCENAS[q.sc as string], el = <X t={t} a={q.s} b={q.e} arg={q.arg} />;
+    if (q.sc === "carrusel" || q.sc === "repaso") { const k = t - q.s; return <AbsoluteFill style={{ transform: `scale(${1 + 0.004 * k}) translateX(${Math.sin(k * 0.45) * 8}px)` }}>{el}</AbsoluteFill>; } // deriva lenta: sin cuadros congelados
+    return el; }
   if (q.f && q.f.endsWith(".mp4")) { // clip (Veo o real) ENTERO: llena el plano, nunca se congela; si es corto corre más lento (piso 0,42)
     const need = d + TR + 0.1, rate = q.len && q.len < need ? Math.max(0.42, q.len / need) : 1;
     return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}><OffthreadVideo src={staticFile(P + q.f)} muted playbackRate={rate} style={kb(i, t, q.s, q.e, true)} /></AbsoluteFill>;
