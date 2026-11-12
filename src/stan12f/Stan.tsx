@@ -340,7 +340,7 @@ export type Line = { t: string; f: number };
 export const Ticket: React.FC<{ kicker: string; title: string; lines: Line[]; img: string; dur: number; seed: number }> = ({ kicker, title, lines, img, dur, seed }) => {
   const f = useCurrentFrame(); const pin = useSp(0, 17, 0.8);
   let cur = -1; lines.forEach((l, i) => { if (f >= l.f) cur = i; });
-  const fs = lines.length > 7 ? 46 : lines.length > 5 ? 54 : 62;
+  const fs = Math.min(lines.length > 7 ? 50 : lines.length > 5 ? 62 : 76, Math.floor(900 / (Math.max(...lines.map((l: any) => String(l.t ?? l).length), 8) * 0.43)));
   const kb = interpolate(f, [0, dur], [1.04, 1.14]);
   return (
     <AbsoluteFill style={{ opacity: fadeOut(f, dur, 10), background: K.ink }}>

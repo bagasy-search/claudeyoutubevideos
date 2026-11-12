@@ -26,10 +26,10 @@ export const Board: React.FC<{ head: string; rows: { t: string; f: number; st: n
           <div style={{ ...chalk, fontSize: 40, opacity: 0.55 }}>Stan's Meats</div>
         </div>
         <div style={{ height: 4, background: "rgba(243,239,228,0.5)", margin: "16px 0 10px", borderRadius: 2 }} />
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", gap: big ? 26 : 8 }}>
+        <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", gap: big ? 26 : 16 }}>
           {rows.map((r, i) => {
             const p = interpolate(f, [r.f, r.f + 14], [0, 1], { ...CL, easing: Easing.out(Easing.quad) });
-            const fs = r.st === 2 ? Math.min(big ? 190 : 150, Math.floor(1330 / (r.t.length * 0.66))) : r.st === 1 ? Math.min(92, Math.floor(1330 / (r.t.length * 0.44))) : Math.min(66, Math.floor(1330 / (r.t.length * 0.4)));
+            const fs = r.st === 2 ? Math.min(big ? 190 : 150, Math.floor(1330 / (r.t.length * 0.66))) : r.st === 1 ? Math.min(124, Math.floor(1330 / (r.t.length * 0.44))) : Math.min(96, Math.floor(1330 / (r.t.length * 0.42)));
             return <div key={i} style={{ ...chalk, fontFamily: r.st === 2 ? SLAB : HAND, fontWeight: r.st === 2 ? 400 : 700, fontSize: fs, lineHeight: 1.08, color: r.st === 2 ? K.gold : K.chalk, clipPath: `inset(0 ${100 - p * 100}% 0 0)`, whiteSpace: "nowrap" }}>{r.t}</div>;
           })}
         </div>
