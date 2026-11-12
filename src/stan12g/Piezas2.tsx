@@ -26,7 +26,7 @@ export const Grain: React.FC<{ op?: number }> = ({ op = 0.18 }) => {
 };
 
 export type HabCard = { title: string; src: string };
-export const LIST = { n: 12, head: "cheap steaks that are still good", tag: "CUT", short: "CUT" };
+export const LIST = { n: 8, head: "pieces, one bird, one knife", tag: "PIECE", short: "PIECE" };
 
 // tarjeta de hábito con foto (carrusel / recap)
 const HabitPhotoCard: React.FC<{ n: number; title: string; src: string; w: number; dim?: number; check?: number }> = ({ n, title, src, w, dim = 0, check = 0 }) => (
