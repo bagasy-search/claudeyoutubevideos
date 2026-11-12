@@ -19,7 +19,6 @@ const damp = (t: number, tau: number, per: number) => (t <= 0 ? 0 : 1 - Math.exp
 const seg = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1], { ...CL, easing: io });
 
 
-const seg = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1], { ...CL, easing: io });
 
 // ── Escena 1 · la foto se entreabre como un libro con el lomo en la línea de grasa real (de 860,110 a 880,720)
 export const EscLibro: React.FC<{ src: string; fMap: number; fUnder: number; fCut: number; dur: number }> = ({ src, fMap, fUnder, fCut, dur }) => {
