@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Audio, Img, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { SHOTS, AVATAR, OVERLAYS, SFX, TOTAL, CARDS } from "./cues.gen";
 import * as S from "./St";
 import * as E from "./Escenas";
@@ -62,7 +62,7 @@ export const MainStan12d: React.FC = () => (
   <AbsoluteFill style={{ background: S.K.ink }}>
     {AVATAR.map((a, i) => (
       <Sequence key={"a" + i} from={a.from} durationInFrames={a.dur} premountFor={30}>
-        <S.Avatar src={a.src} seed={i} dur={a.dur} mods={a.mods} />
+        {a.still ? <AbsoluteFill><Img src={staticFile(a.src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill> : <S.Avatar src={a.src} seed={i} dur={a.dur} mods={a.mods} />}
       </Sequence>
     ))}
     {SHOTS.map((s, i) => {
