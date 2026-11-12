@@ -5,6 +5,10 @@ import { K, HAND, SERIF, SANS, cl, lerp, eOut, eIO, spr, rnd, hash, sf, hand, Wo
 
 const FPS = 30;
 const useT = () => useCurrentFrame() / FPS;
+// cámara en mano lenta para piezas quietas (QR, semana): nunca un cuadro congelado, el QR sigue legible
+const Drift: React.FC<{ t: number; d: number; children?: React.ReactNode }> = ({ t, d, children }) => (
+  <AbsoluteFill style={{ transform: `translate(${-16 * Math.sin(t * 0.42)}px, ${-9 * Math.cos(t * 0.31)}px) scale(${1.045 + 0.05 * cl(t / Math.max(1, d))})`, transformOrigin: "50% 48%" }}>{children}</AbsoluteFill>
+);
 
 // ---------- avatar (MEJORA 4: encuadres) ----------
 export const Avatar: React.FC<{ s: any }> = ({ s }) => {
@@ -164,7 +168,7 @@ export const Book: React.FC<{ s: any }> = ({ s }) => {
 export const QR: React.FC<{ s: any }> = ({ s }) => {
   const t = useT();
   const k = spr(t, 0.05, 7, 0.6);
-  return <AbsoluteFill style={{ overflow: "hidden" }}>
+  return <AbsoluteFill style={{ overflow: "hidden" }}><Drift t={t} d={s.dur / FPS}>
     <Wood t={t} />
     <div style={{ position: "absolute", left: 260, top: 150, width: 560, height: 746, transform: `rotate(-4deg) translateY(${(1 - k) * 600}px)`, boxShadow: "16px 28px 50px rgba(40,20,5,.5)" }}>
       <Img src={sf("swl11b/book/p1.png")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
@@ -179,7 +183,7 @@ export const QR: React.FC<{ s: any }> = ({ s }) => {
       </IndexCard>
       <Tape x={340} y={-4} w={200} rot={3} />
     </div>
-  </AbsoluteFill>;
+  </Drift></AbsoluteFill>;
 };
 
 // ---------- MEJORA 3: apertura de cada receta = la ficha-título entra a la mesa, el número se dibuja y el nombre se escribe ----------
@@ -296,7 +300,7 @@ export const Carousel: React.FC<{ s: any; items: any[]; title?: string }> = ({ s
 // ---------- la semana: cada día una ficha que se agrega a la fila del corcho ----------
 export const WeekDay: React.FC<{ s: any; idx: number; days: any[] }> = ({ s, idx, days }) => {
   const t = useT();
-  return <AbsoluteFill style={{ overflow: "hidden" }}>
+  return <AbsoluteFill style={{ overflow: "hidden" }}><Drift t={t} d={s.dur / FPS}>
     <Wood t={t} />
     {days.slice(0, idx + 1).map((dd, i) => {
       const me = i === idx, k = me ? spr(t, 0.05, 7, 0.55) : 1;
@@ -312,7 +316,7 @@ export const WeekDay: React.FC<{ s: any; idx: number; days: any[] }> = ({ s, idx
         <Tape x={250} y={-4} w={150} rot={(i % 2 ? 4 : -4)} />
       </div>;
     })}
-  </AbsoluteFill>;
+  </Drift></AbsoluteFill>;
 };
 
 // ---------- MEJORA 2: barra de progreso «recipe 3 of 7» (esquina inferior derecha; se esconde en el avatar) ----------
@@ -341,7 +345,7 @@ export const ShoppingList: React.FC<{ s: any; part: number }> = ({ s, part }) =>
     { z0: 1.02, z1: 1.06, y0: 540 - (TOP + GAP * 7.5) * 1.02, y1: 540 - (TOP + GAP * 7.9) * 1.06, r0: 1.6, r1: 1.0, x: 60 },
     { z0: 0.90, z1: 0.93, y0: 560 - (TOP + GAP * 10.6) * 0.90, y1: 560 - (TOP + GAP * 11.0) * 0.93, r0: -2.2, r1: -1.4, x: -40 },
   ][part];
-  const k = eIO(t, 0, d), z = lerp(cam.z0, cam.z1, k), y = lerp(cam.y0, cam.y1, k), r = lerp(cam.r0, cam.r1, k);
+  const k = 0.55 * cl(t / d) + 0.45 * eIO(t, 0, d), z = lerp(cam.z0, cam.z1, k), y = lerp(cam.y0, cam.y1, k), r = lerp(cam.r0, cam.r1, k);
   return <AbsoluteFill style={{ overflow: "hidden" }}>
     <Wood t={now} />
     <div style={{ position: "absolute", left: 960 - PW / 2 + cam.x, top: 0, width: PW, transformOrigin: "50% 0%", transform: `translateY(${y}px) scale(${z}) rotate(${r}deg)` }}>
