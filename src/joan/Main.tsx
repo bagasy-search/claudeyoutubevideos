@@ -32,6 +32,12 @@ const Enter: React.FC<{ trans: string; dur: number; children: React.ReactNode; s
   return <AbsoluteFill style={{ opacity: o }}>{children}</AbsoluteFill>;
 };
 
+// empuje lento y parejo: mapa y carrusel quedaban quietos varios segundos (freezedetect)
+const Drift: React.FC<{ dur: number; to: number; children: React.ReactNode }> = ({ dur, to, children }) => {
+  const f = useCurrentFrame();
+  return <AbsoluteFill style={{ transform: `scale(${interpolate(f, [0, dur], [1, to], { extrapolateRight: "clamp" })})` }}>{children}</AbsoluteFill>;
+};
+
 const Overlay: React.FC<{ o: any }> = ({ o }) => {
   const d = o.dur;
   switch (o.type) {
@@ -53,12 +59,12 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "greet": return <P.Greet jp={o.jp} en={o.en} dur={d} />;
     case "three": case "ticket": return <P.Three head={o.head} items={o.items} marks={o.marks} dur={d} />;
     case "soft": return <P.Soft text={o.text} dur={d} />;
-    case "carousel": return <Q.Carousel cards={CARDS} bg={o.bg} subAt={o.subAt} sub={o.sub} dur={d} />;
+    case "carousel": return <Drift dur={d} to={1.07}><Q.Carousel cards={CARDS} bg={o.bg} subAt={o.subAt} sub={o.sub} dur={d} /></Drift>;
     case "scene": return <Q.HabitScene n={o.n} title={o.title} src={o.src} dur={d} />;
     case "progress": return <Q.Progress n={o.n} title={o.title} dur={d} />;
     case "split": return <Q.SplitPhoto src={o.src} seed={o.seed} dur={d} />;
     case "polaroid": return <Q.Polaroid src={o.src} caption={o.caption} seed={o.seed} dur={d} />;
-    case "map": return <Q.MapJP a={o.a} b={o.b} la={o.la} ja={o.ja} lb={o.lb} jb={o.jb} dur={d} />;
+    case "map": return <Drift dur={d} to={1.1}><Q.MapJP a={o.a} b={o.b} la={o.la} ja={o.ja} lb={o.lb} jb={o.jb} dur={d} /></Drift>;
     case "escena": { const K = (E as any)[o.name]; return K ? <K dur={d} {...o} /> : null; }
     case "cta": return <Q.CTA text={o.text} cards={CARDS} dur={d} />;
     default: return null;

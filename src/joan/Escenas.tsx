@@ -53,14 +53,16 @@ export const EscGrieta: React.FC<{ a: string; b: string; fM: number; dur: number
   const w = 6 + band * 70 + open * 1400;
   const poly = [[960 - dx * L + nx * w, 540 - dy * L + ny * w], [960 + dx * L + nx * w, 540 + dy * L + ny * w], [960 + dx * L - nx * w, 540 + dy * L - ny * w], [960 - dx * L - nx * w, 540 - dy * L - ny * w]]
     .map(([x, y]) => `${x.toFixed(1)}px ${y.toFixed(1)}px`).join(", ");
-  const lay = (src: string, m: number[], r: number, s: number) => (
-    <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "0 0",
+  const lay = (src: string, m: number[], r: number, s: number, filter?: string) => (
+    <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "0 0", filter,
       transform: `translate(960px, 540px) rotate(${r}deg) scale(${s}) translate(${-m[0]}px, ${-m[1]}px)` }}>
       <Img src={staticFile(src)} style={FULL} />
     </div>
   );
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#17151A" }}>
+      {/* fondo: la misma foto más grande y desenfocada, para que el giro no deje esquinas vacías */}
+      {f < fM + 26 && lay(a, MA, rA, sA * 2.3, "blur(26px) brightness(0.85)")}
       {f < fM + 26 && lay(a, MA, rA, sA)}
       {band > 0 && <AbsoluteFill style={{ clipPath: `polygon(${poly})` }}>{lay(b, MB, 0, sB)}</AbsoluteFill>}
     </AbsoluteFill>
@@ -71,7 +73,7 @@ export const EscGrieta: React.FC<{ a: string; b: string; fM: number; dur: number
 export const EscRuth: React.FC<{ a: string; b: string; fEyes: number; fCheeks: number; fAll: number; dur: number }> = ({ a, b, fEyes, fCheeks, fAll, dur }) => {
   const f = useCurrentFrame();
   const k = f / Math.max(1, dur);
-  const z = 1.36 + 0.08 * ez(k), cx = 1035, cy = 400 - 20 * ez(k);
+  const z = 1.3 + 0.16 * k, cx = 1035, cy = 400 - 20 * k; // lineal: con ease el arranque quedaba quieto 2,7 s (freezedetect)
   const tx = 960 - cx * z, ty = 540 - cy * z;
   const e = interpolate(f, [fEyes, fEyes + 16], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) });
   const c = interpolate(f, [fCheeks, fCheeks + 18], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) });
