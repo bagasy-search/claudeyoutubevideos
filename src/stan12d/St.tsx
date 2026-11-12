@@ -394,7 +394,7 @@ const MethodCard: React.FC<{ c: MCard; w: number; dim?: number; lit?: number }> 
       <div style={{ position: "absolute", left: w * 0.03, top: w * 0.03, background: K.red, color: K.white, fontFamily: SLAB, fontWeight: 800, fontSize: w * 0.1, padding: `0 ${w * 0.035}px`, transform: "rotate(-4deg)", boxShadow: "0 4px 10px rgba(0,0,0,0.4)" }}><span style={{ fontFamily: COND, fontWeight: 500, fontSize: w * 0.05, marginRight: 4 }}>Nº</span>{c.rank}</div>
     </div>
     <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: w * 0.03, height: w * 0.17 }}>
-      <span style={{ fontFamily: MARK, fontSize: w * 0.088, color: K.ink, lineHeight: 1, opacity: 1 - dim * 0.5 }}>{c.title}</span>
+      <span style={{ fontFamily: MARK, fontSize: w * (c.title.length > 12 ? 0.092 : 0.115), color: K.ink, lineHeight: 1, opacity: 1 - dim * 0.5 }}>{c.title}</span>
       {lit > 0 && <span style={{ fontFamily: SLAB, fontWeight: 800, fontSize: w * 0.11, color: K.red, transform: `scale(${lerp(2.2, 1, lit)})`, opacity: cl(lit * 3) }}>{c.score}<span style={{ fontSize: w * 0.05 }}>/10</span></span>}
     </div>
   </div>
@@ -406,7 +406,7 @@ const DimBg: React.FC<{ src: string; dark?: number }> = ({ src, dark = 0.68 }) =
 // carrusel 3D de los 8 métodos → abanico
 export const Carousel: React.FC<{ cards: MCard[]; bg: string; head: string; sub: string; subAt: number; dur: number }> = ({ cards, bg, head, sub, subAt, dur }) => {
   const f = useCurrentFrame(); const o = interpolate(f, [dur - 12, dur], [1, 0], CL); const pIn = sp(f, 0, 22);
-  const fanT = eio((f - dur * 0.62) / 34); const rot = -f * 0.55; const R = 660, PR = 1500;
+  const fanT = eio((f - dur * 0.62) / 34); const rot = -f * 0.9; const R = 700, PR = 1700;
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <DimBg src={bg} />
@@ -420,7 +420,7 @@ export const Carousel: React.FC<{ cards: MCard[]; bg: string; head: string; sub:
           const rx = R * Math.sin(rad), rz = R * (Math.cos(rad) - 1); const phi = -28 + i * (56 / Math.max(1, N - 1)), pr = (phi * Math.PI) / 180;
           const x = lerp(rx, PR * Math.sin(pr), fanT), y = lerp(40, PR * (1 - Math.cos(pr)), fanT), z = lerp(rz, i * 2, fanT);
           const vis = lerp(cl(0.25 + 0.75 * Math.cos(rad), 0.12, 1), 1, fanT);
-          return <div key={i} style={{ position: "absolute", left: 960 - 220, top: 350, zIndex: Math.round(2000 + z), opacity: vis * appear, transform: `translate3d(${x}px, ${y}px, ${z}px) rotateY(${lerp(th, 0, fanT)}deg) rotateZ(${lerp(0, phi, fanT)}deg) scale(${lerp(1, 0.8, fanT) * appear})` }}><MethodCard c={c} w={440} /></div>;
+          return <div key={i} style={{ position: "absolute", left: 960 - 220, top: 350, zIndex: Math.round(2000 + z), opacity: vis * appear, transform: `translate3d(${x}px, ${y}px, ${z}px) rotateY(${lerp(th, 0, fanT)}deg) rotateZ(${lerp(0, phi, fanT)}deg) scale(${lerp(1, 0.92, fanT) * appear})` }}><MethodCard c={c} w={440} /></div>;
         })}
       </AbsoluteFill>
     </AbsoluteFill>

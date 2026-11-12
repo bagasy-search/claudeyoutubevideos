@@ -3,6 +3,7 @@ import { AbsoluteFill, Audio, Img, Sequence, interpolate, staticFile, useCurrent
 import { SHOTS, AVATAR, OVERLAYS, SFX, TOTAL, CARDS } from "./cues.gen";
 import * as S from "./St";
 import * as E from "./Escenas";
+import * as N from "./St2";
 
 export const TOTAL_FRAMES_STAN12D = TOTAL;
 const T = 8;
@@ -10,13 +11,15 @@ const T = 8;
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   if (s.k === "C") {
     switch (s.c) {
-      case "scene": return <S.MethodScene n={s.n} rank={s.rank} total={8} title={s.title} src={s.src} dur={dur} />;
+      case "scene": return <N.MethodScene2 n={s.n} rank={s.rank} total={8} title={s.title} src={s.src} dur={dur} />;
+      case "rail": return <N.RankRail cards={CARDS} now={s.now} final={s.final} dur={dur} />;
+      case "need": return <N.NeedPhoto src={s.src} tags={s.tags} dur={dur} />;
       case "score": return <S.ScoreBoard rows={s.rows} now={s.now} dur={dur} />;
       case "sheet": return <S.Sheet kicker={s.kicker} title={s.title} lines={s.lines} dur={dur} seed={s.id} />;
-      case "chapter": return <S.Chapter kicker={s.kicker} title={s.title} dur={dur} />;
-      case "seven": return <S.Seven items={s.items} dur={dur} />;
-      case "cta": return <S.CTA text={s.text} dur={dur} seed={s.id} />;
-      case "map": return <S.MapPins src={s.src} pins={s.pins} dur={dur} />;
+      case "chapter": return <N.Chapter2 kicker={s.kicker} title={s.title} img={s.img} dur={dur} />;
+      case "seven": return <N.SevenPhotos items={s.items} dur={dur} />;
+      case "cta": return <N.SpikeCTA src={s.src} lines={s.lines} box={s.box} dur={dur} />;
+      case "map": return <N.MapDolly src={s.src} pins={s.pins} dur={dur} />;
       case "carousel": return <S.Carousel cards={CARDS} bg={s.bg} head={s.head} sub={s.sub} subAt={s.subAt} dur={dur} />;
       case "recap": return <S.Recap cards={CARDS} marks={s.marks} bg={s.bg} head={s.head} dur={dur} />;
       case "esc": { const K = (E as any)[s.name]; return K ? <K dur={dur} {...s.props} /> : null; }
@@ -54,6 +57,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "rec": return <S.Rec n={o.n} title={o.title} score={o.score} dur={d} />;
     case "progress": return <S.Progress n={o.n} total={8} title={o.title} dur={d} />;
     case "top": return <S.Top n={o.n} text={o.text} dur={d} />;
+    case "strip": return <N.Strip n={o.n} total={5} text={o.text} dur={d} />;
     default: return null;
   }
 };

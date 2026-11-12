@@ -27,24 +27,26 @@ export const EscCalor: React.FC<{ src: string; faces: [number, number, number][]
             <Img src={staticFile(src)} style={{ ...FULL, filter: "saturate(0.42) brightness(0.84) hue-rotate(-14deg)" }} />
           </div>
         ) : null))}
+        {faces.map(([x, y, r], i) => (k > 0.03 && k < 0.99 ? (
+          <div key={"h" + i} style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, mixBlendMode: "screen", opacity: cold, background: `radial-gradient(circle at ${x}px ${y}px, transparent ${Math.max(0, r * k - 34)}px, rgba(255,128,40,0.5) ${r * k}px, rgba(255,90,20,0.18) ${r * k + 26}px, transparent ${r * k + 60}px)` }} />
+        ) : null))}
       </div>
     </AbsoluteFill>
   );
 };
 
-// ── Escena 2 · la foto cenital gira sobre el centro real de la sartén, como una perilla: cada pancho llega arriba en su palabra
+// ── Escena 2 · la foto cenital gira sobre el centro real de la sartén, como una perilla: cada pancho llega arriba en su palabra; al final la cámara entra a los cortes
 export const EscPerilla: React.FC<{ src: string; fRed: number; fMah: number; fGills: number; dur: number }> = ({ src, fRed, fMah, fGills, dur }) => {
   const f = useCurrentFrame();
   const PX = 955, PY = 510; // centro de la sartén
-  const a1 = interpolate(f, [fRed - 16, fRed + 2], [0, -90], { ...CL, easing: io });
-  const a2 = interpolate(f, [fMah - 26, fMah + 2], [0, -180], { ...CL, easing: io });
-  const ang = a1 + a2;
-  // encuadre fijo sobre el rayo de arriba; al final entra a los cortes abiertos
-  const g = interpolate(f, [fGills - 6, fGills + 30], [0, 1], { ...CL, easing: io });
-  const z = lerp(interpolate(f, [0, dur], [1.82, 1.9]), 2.7, g);
-  const fx = PX, fy = lerp(255, 250, g); // punto de la foto (antes de girar) que va al centro del cuadro: el rayo de arriba
+  const step = (at: number, len: number, deg: number) => { const t = interpolate(f, [at - len, at], [0, 1], CL); const b = Easing.out(Easing.back(1.6))(t); return deg * b; }; // frena con un rebote, como un clic
+  const ang = step(fRed, 18, -90) + step(fMah, 28, -180);
+  const g = interpolate(f, [fGills - 4, fGills + 34], [0, 1], { ...CL, easing: io });
+  // plano abierto (toda la sartén) y, en "the gills open up", entra al rayo de arriba
+  const z = lerp(interpolate(f, [0, dur], [1.2, 1.3]), 3.0, g);
+  const fx = PX, fy = lerp(PY - 40, 250, g);
   return (
-    <AbsoluteFill style={{ background: "#141312", overflow: "hidden" }}>
+    <AbsoluteFill style={{ background: "#171615", overflow: "hidden" }}>
       <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "0 0", transform: `translate(${960 - fx * z}px, ${540 - fy * z}px) scale(${z})` }}>
         <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: `${PX}px ${PY}px`, transform: `rotate(${ang}deg)` }}>
           <Img src={staticFile(src)} style={FULL} />
@@ -58,9 +60,9 @@ export const EscPerilla: React.FC<{ src: string; fRed: number; fMah: number; fGi
 export const EscPliego: React.FC<{ src: string; under: string; fL: number; fR: number; fT: number; dur: number }> = ({ src, under, fL, fR, fT, dur }) => {
   const f = useCurrentFrame();
   const XL = 760, XR = 1150, W = XR - XL; // columna de los panchos; cada solapa mide lo mismo que la columna
-  const f1 = Math.max(fL, 34), f2 = Math.max(fR, f1 + 26), f3 = Math.max(fT, f2 + 30);
-  const L = interpolate(f, [f1, f1 + 24], [0, 180], { ...CL, easing: io });
-  const R = interpolate(f, [f2, f2 + 24], [0, 180], { ...CL, easing: io });
+  const f1 = Math.max(fL, 34), f2 = Math.max(fR, f1 + 40), f3 = Math.max(fT, f2 + 30);
+  const L = interpolate(f, [f1, f1 + 34], [0, 180], { ...CL, easing: io });
+  const R = interpolate(f, [f2, f2 + 34], [0, 180], { ...CL, easing: io });
   const sq = interpolate(f, [f3, f3 + 14], [0, 1], { ...CL, easing: io });
   // encuadre fijo sobre los tres tercios (370–1540): nunca se ve el papel que sobra
   const z = interpolate(f, [0, f1, f3 + 20, dur], [1.64, 1.7, 1.86, 1.95], { ...CL, easing: io });
