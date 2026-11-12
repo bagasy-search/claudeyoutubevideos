@@ -525,7 +525,7 @@ export const Bingo: React.FC<P> = ({ m, dur }) => {
 
 // ==================== nesting — las mamushkas de tanques: el tanque grande se abre y adentro sólo un tercio es agua usable
 export const Nesting: React.FC<P> = ({ m, dur }) => {
-  const f = useCurrentFrame(); const S = [20, 32, 44, 86]; const ats = S.map((_, i) => M(m, i + 1, 30 + i * 15));
+  const f = useCurrentFrame(); const S = [20, 32, 44, 86]; const ats = S.map((_, i) => M(m, i + 1, 30 + i * 15)); ats[0] = Math.min(ats[0], 6); // AUDITOR 11-nov: sin arranque vacío (congelado 3,6 s)
   return <Bg>{S.map((g, i) => { const h = 260 + i * 140, w = 160 + i * 70, e = k(f, ats[i], 10); const x = 260 + i * 400;
     return <div key={g} style={{ position: "absolute", left: x, top: 960 - h, width: w, height: h, borderRadius: w / 2, background: "#2f5fa8", opacity: e, boxShadow: "0 20px 40px rgba(0,0,0,.5)" }}>
       <div style={{ position: "absolute", left: 10, right: 10, bottom: 10, height: (h - 20) / 3 * io((f - ats[i] - 10) / 20), background: COLD, borderRadius: `0 0 ${w / 2}px ${w / 2}px`, opacity: 0.9 }} />
