@@ -29,7 +29,7 @@ export const Board: React.FC<{ head: string; rows: { t: string; f: number; st: n
         <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", gap: big ? 26 : 8 }}>
           {rows.map((r, i) => {
             const p = interpolate(f, [r.f, r.f + 14], [0, 1], { ...CL, easing: Easing.out(Easing.quad) });
-            const fs = r.st === 2 ? (big ? 190 : 150) : r.st === 1 ? 92 : 66;
+            const fs = r.st === 2 ? Math.min(big ? 190 : 150, Math.floor(1330 / (r.t.length * 0.66))) : r.st === 1 ? Math.min(92, Math.floor(1330 / (r.t.length * 0.44))) : Math.min(66, Math.floor(1330 / (r.t.length * 0.4)));
             return <div key={i} style={{ ...chalk, fontFamily: r.st === 2 ? SLAB : HAND, fontWeight: r.st === 2 ? 400 : 700, fontSize: fs, lineHeight: 1.08, color: r.st === 2 ? K.gold : K.chalk, clipPath: `inset(0 ${100 - p * 100}% 0 0)`, whiteSpace: "nowrap" }}>{r.t}</div>;
           })}
         </div>
@@ -55,7 +55,7 @@ export const Versus: React.FC<{ a: string; la: string; b: string; lb: string; du
   const w = 70 * win;
   const tag = (t: string, left: boolean, good: boolean, p: number) => (
     <div style={{ position: "absolute", bottom: 90, left: left ? 0 : 960 - w, width: 960 + (left ? -w : w), display: "flex", justifyContent: "center", opacity: cl((f - 14) / 8, 0, 1) * p }}>
-      <div style={{ ...kraftBg(left ? 2 : 5), background: good ? K.paper : undefined, padding: "16px 54px", transform: `rotate(${left ? -2 : 1.5}deg) scale(${good ? 1 + 0.12 * win : 1})`, boxShadow: SH }}>
+      <div style={{ background: K.paper, padding: "16px 54px", transform: `rotate(${left ? -2 : 1.5}deg) scale(${good ? 1 + 0.12 * win : 1})`, boxShadow: SH }}>
         <span style={{ fontFamily: SLAB, fontSize: 96, color: good ? K.red : K.ink, lineHeight: 1 }}>{t}</span>
       </div>
     </div>
@@ -122,7 +122,7 @@ export const Sunday: React.FC<{ stops: { f: number; day: string; h: number; m: n
             <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(14,8,6,0.82) 0%, rgba(14,8,6,0.2) 36%, rgba(14,8,6,0) 55%)" }} />
             <div style={{ position: "absolute", left: 110, right: 520, bottom: 84 }}>
               {s.lines.map((l, j) => { const p = interpolate(lf, [l.f, l.f + 10], [0, 1], { ...CL, easing: Easing.out(Easing.quad) });
-                return <div key={j} style={{ ...chalk, fontSize: 78, lineHeight: 1.12, textShadow: SH, clipPath: `inset(0 ${100 - p * 100}% 0 0)`, whiteSpace: "nowrap" }}>{l.t}</div>; })}
+                return <div key={j} style={{ ...chalk, fontSize: 96, lineHeight: 1.1, textShadow: SH, clipPath: `inset(0 ${100 - p * 100}% 0 0)`, whiteSpace: "nowrap" }}>{l.t}</div>; })}
             </div>
           </AbsoluteFill>
         );
@@ -193,4 +193,36 @@ export const EscBelt: React.FC<{ src: string; fShrink: number; fFast: number; du
     );
   }
   return <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>{rows}</AbsoluteFill>;
+};
+
+// ---------- pasos con fotos: cada parada cambia la foto real a pantalla completa, deja caer su chapa de papel y escribe sus renglones en tiza
+export const Steps: React.FC<{ stops: { f: number; src: string; tag?: string; sub?: string; lines?: { t: string; f: number }[] }[]; dur: number }> = ({ stops, dur }) => {
+  const f = useCurrentFrame();
+  return (
+    <AbsoluteFill style={{ background: K.ink }}>
+      {stops.map((s, i) => {
+        const end = stops[i + 1]?.f ?? dur; if (f < s.f - 1 || f > end + 12) return null;
+        const lf = f - s.f; const o = i === 0 ? 1 : interpolate(lf, [0, 10], [0, 1], CL); const k = lf / Math.max(1, end - s.f);
+        const tg = spring({ frame: lf - 5, fps: 30, config: { damping: 11, mass: 0.7 } }); const right = i % 2 === 0;
+        return (
+          <AbsoluteFill key={i} style={{ opacity: o, overflow: "hidden" }}>
+            <Img src={staticFile(s.src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${i % 2 ? lerp(1.17, 1.06, k) : lerp(1.06, 1.17, k)}) translate(${((i % 3) - 1) * k * 1.3}%, ${(((i + 1) % 3) - 1) * k * 0.8}%)`, transformOrigin: `${38 + (i * 13) % 26}% ${40 + (i * 7) % 22}%` }} />
+            <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(14,8,6,0.84) 0%, rgba(14,8,6,0.22) 36%, rgba(14,8,6,0) 56%)" }} />
+            {s.tag ? (
+              <div style={{ position: "absolute", top: 70, ...(right ? { right: 90 } : { left: 90 }), transformOrigin: right ? "100% 0" : "0 0", transform: `rotate(${lerp(right ? 18 : -18, right ? 2.5 : -2.5, tg)}deg) scale(${lerp(1.6, 1, tg)})`, opacity: cl(tg * 1.8, 0, 1) }}>
+                <div style={{ ...kraftBg(i + 2), padding: "16px 44px 20px", boxShadow: SH, textAlign: "center" }}>
+                  <div style={{ fontFamily: SLAB, fontSize: s.tag.length > 16 ? 60 : 84, color: K.ink, lineHeight: 1.02, whiteSpace: "nowrap" }}>{s.tag}</div>
+                  {s.sub ? <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 26, letterSpacing: 5, color: K.redD, marginTop: 4, whiteSpace: "nowrap" }}>{s.sub}</div> : null}
+                </div>
+              </div>
+            ) : null}
+            <div style={{ position: "absolute", left: 110, right: 110, bottom: 84 }}>
+              {(s.lines || []).map((l, j) => { const p = interpolate(lf, [l.f, l.f + 10], [0, 1], { ...CL, easing: Easing.out(Easing.quad) });
+                return <div key={j} style={{ ...chalk, fontSize: 80, lineHeight: 1.12, textShadow: SH, clipPath: `inset(0 ${100 - p * 100}% 0 0)`, whiteSpace: "nowrap" }}>{l.t}</div>; })}
+            </div>
+          </AbsoluteFill>
+        );
+      })}
+    </AbsoluteFill>
+  );
 };

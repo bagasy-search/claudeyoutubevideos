@@ -183,9 +183,9 @@ export const Scale: React.FC<{ to: number; suffix: string; label: string; dur: n
   );
 };
 // barra de progreso: riel de ganchos; los hechos llevan su chapa roja
-export const Rail: React.FC<{ n: number; total: number; title: string; dur: number; word?: string }> = ({ n, total, title, dur, word = "TECHNIQUE" }) => {
+export const Rail: React.FC<{ n: number; total: number; title: string; dur: number; word?: string; asc?: boolean }> = ({ n, total, title, dur, word = "TECHNIQUE", asc }) => {
   const f = useCurrentFrame(); const o = interpolate(f, [0, 8, dur - 8, dur], [0, 1, 1, 0], CL);
-  const done = total - n; // cuenta regresiva: n=10 es el primero
+  const done = asc ? n - 1 : total - n; // cuenta regresiva (n=10 es el primero) o ascendente
   return (
     <div style={{ position: "absolute", right: 60, top: 46, opacity: o, display: "flex", flexDirection: "column", alignItems: "flex-end", transform: "scale(1.35)", transformOrigin: "100% 0" }}>
       <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 21, letterSpacing: 4, color: K.chalk, textShadow: SH }}>
@@ -217,13 +217,14 @@ export const KraftWipe: React.FC<{ dir: number; len?: number }> = ({ dir, len = 
   );
 };
 // apertura de cada técnica: el papel pasa, la foto del corte llena la pantalla, el número se sella y el título se escribe
-export const TechScene: React.FC<{ n: number; label: string; title: string; src: string; dur: number; total?: number }> = ({ n, label, title, src, dur, total = 10 }) => {
+export const TechScene: React.FC<{ n: number; label: string; title: string; src: string; dur: number; total?: number; num?: string }> = ({ n, label, title, src, dur, total = 10, num }) => {
   const f = useCurrentFrame();
   const v = n, right = v % 2 === 1, mode = v % 3;
   const k = cl((f - 10) / (dur - 10), 0, 1);
   const z = mode === 0 ? lerp(1.26, 1.08, eout(k)) : mode === 1 ? lerp(1.05, 1.2, k) : 1.14;
   const px = mode === 2 ? lerp(right ? 3.5 : -3.5, right ? -3.5 : 3.5, k) : 0;
-  const st = spring({ frame: f - 16, fps: 30, config: { damping: 9, mass: 0.7 } });
+  const q = dur < 100 ? 0.55 : 1;   // planos cortos: todo entra antes
+  const st = spring({ frame: f - 16 * q, fps: 30, config: { damping: 9, mass: 0.7 } });
   const words = title.split(" ");
   const side: React.CSSProperties = right ? { right: 110, alignItems: "flex-end", textAlign: "right" } : { left: 110, alignItems: "flex-start" };
   return (
@@ -236,9 +237,9 @@ export const TechScene: React.FC<{ n: number; label: string; title: string; src:
           <AbsoluteFill style={{ background: `linear-gradient(${right ? 270 : 90}deg, rgba(16,11,8,0.88) 0%, rgba(16,11,8,0.45) 42%, rgba(16,11,8,0) 68%)` }} />
           <div style={{ position: "absolute", top: 210, width: 900, display: "flex", flexDirection: "column", ...side }}>
             <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 38, letterSpacing: 9, color: K.gold, textShadow: SH, opacity: cl((f - 12) / 8, 0, 1) }}>{label}</div>
-            <div style={{ fontFamily: SLAB, fontSize: 330, lineHeight: 0.92, color: K.chalk, textShadow: SH, opacity: cl(st * 1.6, 0, 1), transform: `scale(${lerp(2.1, 1, st)}) rotate(${lerp(-12, -3, st)}deg)`, transformOrigin: right ? "100% 60%" : "0% 60%" }}>{n > total ? "+" : String(n)}</div>
+            <div style={{ fontFamily: SLAB, fontSize: 330, lineHeight: 0.92, color: K.chalk, textShadow: SH, opacity: cl(st * 1.6, 0, 1), transform: `scale(${lerp(2.1, 1, st)}) rotate(${lerp(-12, -3, st)}deg)`, transformOrigin: right ? "100% 60%" : "0% 60%" }}>{num ?? (n > total ? "+" : String(n))}</div>
             <div style={{ display: "flex", flexWrap: "wrap", columnGap: 22, justifyContent: right ? "flex-end" : "flex-start", marginTop: 4 }}>
-              {words.map((w, i) => { const p = spring({ frame: f - 30 - i * 5, fps: 30, config: { damping: 15, mass: 0.6 } });
+              {words.map((w, i) => { const p = spring({ frame: f - (30 + i * 5) * q, fps: 30, config: { damping: 15, mass: 0.6 } });
                 return <span key={i} style={{ fontFamily: SERIF, fontSize: 96, color: K.chalk, textShadow: SH, display: "inline-block", opacity: p, transform: `translateY(${(1 - p) * 40}px)` }}>{w}</span>; })}
             </div>
             <div style={{ height: 7, marginTop: 20, width: 300 * interpolate(f, [44, 62], [0, 1], CL), backgroundImage: `repeating-linear-gradient(60deg, ${K.twine} 0 5px, #CDBF9F 5px 9px)`, borderRadius: 4 }} />
@@ -312,21 +313,21 @@ export const Recap: React.FC<{ cards: TCard[]; items: { f: number; lines: string
         const e = spring({ frame: f - i * 3, fps: 30, config: { damping: 16 } });
         const ck = spring({ frame: f - it.f, fps: 30, config: { damping: 11, mass: 0.6 } }); const lit = f >= it.f; const isCur = i === cur;
         return (
-          <div key={i} style={{ position: "absolute", left: 60 + col * 232, top: 110 + row * 250, opacity: e, zIndex: isCur ? 5 : 1,
+          <div key={i} style={{ position: "absolute", left: 70 + col * 360, top: 36 + row * 292, opacity: e, zIndex: isCur ? 5 : 1,
             transform: `translateY(${(1 - e) * 60}px) rotate(${((hash(i + 40) % 7) - 3) * 0.7}deg) scale(${isCur ? 1.1 : lit ? 1 : 0.94})` }}>
-            <Parcel c={c} w={212} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
+            <Parcel c={c} w={300} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
           </div>
         );
       })}
       {/* pizarra con el dato de la técnica en curso */}
-      <div style={{ position: "absolute", left: 60, right: 60, top: 640, height: 380, ...slateBg, borderRadius: 6, border: "14px solid #6B4A2B", boxShadow: "0 24px 60px rgba(0,0,0,0.6), inset 0 0 40px rgba(0,0,0,0.5)", padding: "26px 50px", overflow: "hidden" }}>
+      <div style={{ position: "absolute", left: 60, right: 60, top: 650, height: 384, ...slateBg, borderRadius: 6, border: "14px solid #6B4A2B", boxShadow: "0 24px 60px rgba(0,0,0,0.6), inset 0 0 40px rgba(0,0,0,0.5)", padding: "26px 50px", overflow: "hidden" }}>
         {cur >= 0 && (() => { const it = items[cur]; const c = cards[cur];
           return (
             <div key={cur} style={{ display: "flex", gap: 44, alignItems: "center", height: "100%" }}>
               <div style={{ fontFamily: SLAB, fontSize: 250, color: K.gold, lineHeight: 0.9, minWidth: 250, textAlign: "center", opacity: cl((f - it.f) / 6, 0, 1) }}>{c.n}</div>
               <div>
                 <div style={{ ...chalkTxt, fontSize: 84, lineHeight: 1, clipPath: `inset(0 ${100 - cl((f - it.f) / 10, 0, 1) * 100}% 0 0)` }}>{c.title}</div>
-                {it.lines.map((l, j) => <div key={j} style={{ ...chalkTxt, fontSize: 52, lineHeight: 1.2, opacity: 0.92, clipPath: `inset(0 ${100 - cl((f - it.f - 12 - j * 14) / 14, 0, 1) * 100}% 0 0)` }}>{l}</div>)}
+                {it.lines.map((l, j) => <div key={j} style={{ ...chalkTxt, fontSize: 62, lineHeight: 1.15, opacity: 0.92, whiteSpace: "nowrap", clipPath: `inset(0 ${100 - cl((f - it.f - 12 - j * 14) / 14, 0, 1) * 100}% 0 0)` }}>{l}</div>)}
               </div>
             </div>
           ); })()}
@@ -352,7 +353,7 @@ export const Ticket: React.FC<{ kicker: string; title: string; lines: Line[]; im
         <div style={{ position: "absolute", left: 70, top: 56, right: 60, display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
           <div>
             <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 24, letterSpacing: 6, color: K.redD }}>{kicker}</div>
-            <div style={{ fontFamily: SLAB, fontSize: title.length > 22 ? 62 : 76, color: K.ink, lineHeight: 1.02, marginTop: 8, maxWidth: 700 }}>{title}</div>
+            <div style={{ fontFamily: SLAB, fontSize: title.length > 16 ? 56 : 76, color: K.ink, lineHeight: 1.02, marginTop: 8, maxWidth: 720, whiteSpace: "nowrap" }}>{title}</div>
           </div>
           <Seal s={0.95} />
         </div>
