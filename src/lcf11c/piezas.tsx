@@ -222,12 +222,14 @@ export const ChapterBar: React.FC<{ s: any }> = ({ s }) => {
   const t = useT(), d = s.dur / FPS;
   const sweep = eIO(t, 0, Math.min(0.9, d * 0.5));
   return <AbsoluteFill style={{ overflow: "hidden" }}>
+    <Drift t={t} d={d}>
     <BlurBg src={s.bg} t={t} dim={0.3} />
     <div style={{ position: "absolute", left: lerp(-2100, -40, sweep), top: 300, transform: "rotate(-2deg)" }}>
       <IndexCard w={2000} h={480} top={150} lineGap={56}>
         <div style={{ position: "absolute", left: 300, top: 170, fontFamily: HAND, fontWeight: 700, fontSize: 150, color: K.ink, opacity: cl((t - 0.5) / 0.3), whiteSpace: "nowrap" }}>{s.chapter}</div>
       </IndexCard>
     </div>
+    </Drift>
   </AbsoluteFill>;
 };
 
