@@ -55,7 +55,9 @@ export const Clip: React.FC<{ src: string; seed: number; dur: number; clipDur?: 
 };
 
 // avatar con encuadres variados: plano normal / cerrado (punch) / corrido para la foto al lado (split); "mano" = vaivén lento de cámara en mano
-export const AvatarFramed: React.FC<{ src: string; seed: number; dur: number; mods?: { a: number; b: number; k: string }[]; mano?: boolean }> = ({ src, seed, dur, mods = [], mano }) => {
+// fondo limpio (cuadro del propio reel) + el video sólo sobre la persona: tapa el ruido de fondo que el reel junta con los minutos
+const AVMASK = "radial-gradient(ellipse 12.5% 25% at 50.5% 19%, #000 72%, transparent 100%), radial-gradient(ellipse 27% 48% at 50% 88%, #000 78%, transparent 100%)";
+export const AvatarFramed: React.FC<{ src: string; seed: number; dur: number; mods?: { a: number; b: number; k: string }[]; mano?: boolean; plate?: string }> = ({ src, seed, dur, mods = [], mano, plate }) => {
   const f = useCurrentFrame();
   const v = hash(seed + 99) % 4; // 0 empuje, 1 abre, 2 cerrado fijo-lento, 3 medio
   const t = f / Math.max(1, dur);
@@ -70,7 +72,10 @@ export const AvatarFramed: React.FC<{ src: string; seed: number; dur: number; mo
   if (mano) { const g = (seed % 7) * 40; tx += 0.35 * Math.sin((f + g) / 47) + 0.2 * Math.sin((f + g) / 23); ty += 0.25 * Math.sin((f + g) / 61); rot = 0.18 * Math.sin((f + g) / 71); z *= 1.03; }
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#111" }}>
-      <OffthreadVideo src={staticFile(src)} muted style={{ width: "100%", height: "100%", objectFit: "cover", transform: `translate(${tx}%, ${ty}%) rotate(${rot}deg) scale(${z})`, transformOrigin: "55% 30%" }} />
+      <AbsoluteFill style={{ transform: `translate(${tx}%, ${ty}%) rotate(${rot}deg) scale(${z})`, transformOrigin: "55% 30%" }}>
+        {plate ? <Img src={staticFile(plate)} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover" }} /> : null}
+        <OffthreadVideo src={staticFile(src)} muted style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", ...(plate ? { WebkitMaskImage: AVMASK, maskImage: AVMASK } : {}) }} />
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };

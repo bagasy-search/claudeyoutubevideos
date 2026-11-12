@@ -86,7 +86,7 @@ export const MainStan: React.FC = () => (
   <AbsoluteFill style={{ background: "#111" }}>
     {AVATAR.map((a: any, i: number) => (
       <Sequence key={"a" + i} from={a.from} durationInFrames={a.dur} premountFor={30}>
-        <K.AvatarFramed src={a.src} seed={i} dur={a.dur} mods={a.mods} mano={MANO} />
+        <K.AvatarFramed src={a.src} seed={i} dur={a.dur} mods={a.mods} mano={MANO} plate="stan12a/av_plate.png" />
       </Sequence>
     ))}
     {SHOTS.map((s: any, i: number) => {

@@ -167,7 +167,7 @@ export const TicketS: React.FC<{ n: number; title: string; rows: [string, string
               <span style={{ fontFamily: HAND, fontWeight: 700, fontSize: 44, color: C.ink, lineHeight: 1.12 }}>{b}</span>
             </div>
           ); })}
-          <div style={{ position: "absolute", right: -40, bottom: -70, width: 300, height: 300, borderRadius: "50%", border: `12px solid ${C.red}`, boxShadow: `inset 0 0 0 6px ${C.papel}, inset 0 0 0 10px ${C.red}`, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", color: C.red, background: "rgba(237,201,182,0.92)", opacity: cl(st * 1.6), transform: `rotate(-12deg) scale(${interpolate(st, [0, 1], [2.4, 1])})` }}>
+          <div style={{ position: "absolute", right: -300, bottom: -30, width: 270, height: 270, borderRadius: "50%", border: `12px solid ${C.red}`, boxShadow: `inset 0 0 0 6px ${C.papel}, inset 0 0 0 10px ${C.red}`, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", color: C.red, background: "rgba(237,201,182,0.92)", opacity: cl(st * 1.6), transform: `rotate(-12deg) scale(${interpolate(st, [0, 1], [2.4, 1])})` }}>
             <div style={{ fontFamily: MARK, fontSize: score.length > 2 ? 104 : 140, lineHeight: 0.95 }}>{score}</div>
             <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 24, letterSpacing: 5 }}>OUT OF 10</div>
             {scoreNote && <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 16, letterSpacing: 2, marginTop: 4, maxWidth: 220, textAlign: "center" }}>{scoreNote}</div>}
