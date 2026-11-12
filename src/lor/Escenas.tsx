@@ -163,3 +163,135 @@ export const EscEscarcha: React.FC<{ a: string; b: string; fCubre: number; fSwap
     </AbsoluteFill>
   );
 };
+
+// ======================= lcf11e (ideas en D:/rtmp/lcf11e/esc/ideas.md) =======================
+// coordenadas en px del cuadro 1920x1080 (fotos 1088x608 estiradas con 'fill')
+
+// 5 EscCorona · el plato recortado por su borde sube de la mesa y queda colgado en la puerta de la cocina como corona, balanceándose en el clavo
+export const EscCorona: React.FC<{ a: string; b: string; fRing: number; fWreath: number; fHot: number; dur: number }> = ({ a, b, fRing, fWreath, fHot, dur }) => {
+  const f = useCurrentFrame();
+  const CX = 902, CY = 508, R = 488;               // plato en esc_corona_a
+  const HX = 1075, HY = 470, HS = 0.5;              // punto del clavo en la puerta (esc_corona_b) y escala de la corona colgada
+  const lift = suave((f - fWreath + 14) / 26);       // el plato sube y viaja a la puerta
+  const dark = interpolate(f, [fRing - 4, fRing + 10], [0, 0.55], CLX) * (1 - lift);
+  const door = interpolate(lift, [0.25, 0.75], [0, 1], CLX);
+  const x = CX + (HX - CX) * lift, y = CY + (HY - CY) * lift, s = 1 + (HS - 1) * lift;
+  const settle = Math.max(0, f - (fWreath + 12));
+  const swing = lift >= 1 ? 6 * Math.exp(-settle / 14) * Math.sin(settle / 4.2) : (1 - lift) * 0 + lift * 9;
+  const cam = 1.02 + 0.05 * (f / Math.max(1, dur));
+  return (
+    <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
+      <AbsoluteFill style={{ transform: `scale(${cam})` }}>
+        <Img src={staticFile(a)} style={{ ...FOTO, opacity: 1 - door }} />
+        <Img src={staticFile(b)} style={{ ...FOTO, opacity: door }} />
+        <AbsoluteFill style={{ background: `rgba(10,8,6,${dark})` }} />
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: `${CX}px ${CY - R}px`,
+          transform: `translate(${x - CX}px, ${y - CY}px) scale(${s}) rotate(${swing}deg)`,
+          filter: `drop-shadow(0 ${10 + 30 * lift}px ${16 + 30 * lift}px rgba(0,0,0,${0.35 + 0.25 * lift}))`, opacity: f < fRing - 4 ? 0 : 1 }}>
+          <Img src={staticFile(a)} style={{ ...FOTO, clipPath: circulo(CX, CY, R, 48) }} />
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// 6 EscHielo · la humedad baja del cubo: el arroz arranca seco y opaco y desde el cubo hacia abajo recupera el brillo
+export const EscHielo: React.FC<{ src: string; fMelt: number; fTop: number; dur: number }> = ({ src, fMelt, fTop, dur }) => {
+  const f = useCurrentFrame();
+  const CX = 960, CY = 515;                           // cubo de hielo en g1050
+  const t = suave((f - fMelt) / Math.max(20, fTop + 30 - fMelt));
+  const rx = 40 + 420 * t, ry = 30 + 620 * t;          // la mancha se alarga hacia abajo más rápido
+  const k = 1.08 + 0.32 * suave(f / Math.max(1, dur * 0.7));
+  const cam = camara(CX, CY + 60, k);
+  const mask = `radial-gradient(ellipse ${rx}px ${ry}px at ${CX}px ${CY - 10}px, #000 70%, transparent 100%)`;
+  return (
+    <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
+      <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, ...cam }}>
+        <Img src={staticFile(src)} style={{ ...FOTO, filter: "saturate(0.55) brightness(1.1) contrast(0.82)" }} />
+        <div style={{ ...FOTO, WebkitMaskImage: mask, maskImage: mask } as React.CSSProperties}>
+          <Img src={staticFile(src)} style={{ ...FOTO, filter: "saturate(1.08) contrast(1.06)" }} />
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// 7 EscAire · una banda de aire caliente (la propia foto ondulada) da la vuelta a la presa: arriba, y en "underneath" por debajo de la rejilla
+export const EscAire: React.FC<{ src: string; fAround: number; fUnder: number; fSoggy: number; dur: number }> = ({ src, fAround, fUnder, fSoggy, dur }) => {
+  const f = useCurrentFrame();
+  // recorrido: arriba de izquierda a derecha (y 330), baja por la derecha, por debajo de la rejilla de derecha a izquierda (y 590)
+  const p1 = suave((f - fAround + 6) / Math.max(18, fUnder - fAround));
+  const p2 = suave((f - fUnder + 4) / 34);
+  let px: number, py: number;
+  if (p2 <= 0) { px = 200 + 1520 * p1; py = 330 + 60 * Math.sin(p1 * Math.PI) * -0.4; }
+  else { px = 1720 - 1520 * p2; py = 330 + 260 * Math.min(1, p2 * 4); }
+  const on = interpolate(f, [fAround - 8, fAround + 2], [0, 1], CLX) * interpolate(f, [fSoggy + 10, fSoggy + 30], [1, 0], CLX);
+  const mask = `radial-gradient(ellipse 300px 120px at ${px}px ${py}px, #000 45%, transparent 100%)`;
+  const seed = Math.floor(f / 2) % 50;
+  const cam = 1.03 + 0.06 * (f / Math.max(1, dur));
+  return (
+    <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
+      <svg width="0" height="0" style={{ position: "absolute" }}>
+        <filter id="lcfAire"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.045" numOctaves="2" seed={seed} /><feDisplacementMap in="SourceGraphic" scale={26} /></filter>
+      </svg>
+      <AbsoluteFill style={{ transform: `scale(${cam})` }}>
+        <Img src={staticFile(src)} style={FOTO} />
+        <div style={{ ...FOTO, opacity: on, WebkitMaskImage: mask, maskImage: mask } as React.CSSProperties}>
+          <Img src={staticFile(src)} style={{ ...FOTO, filter: "url(#lcfAire) brightness(1.12) saturate(1.15)" }} />
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// 8 EscLibros · la bolsa plana de la bandeja gira sobre su canto, se para de perfil y entra como un libro en el hueco de la fila del freezer
+export const EscLibros: React.FC<{ a: string; b: string; fStand: number; fBooks: number; fSee: number; dur: number }> = ({ a, b, fStand, fBooks, fSee, dur }) => {
+  const f = useCurrentFrame();
+  const BX = 1133, BY = 718, BW = 500, BH = 486;     // bolsa en d23 (centro y tamaño)
+  const GX = 980, GY = 465;                            // hueco en esc_libros
+  const st = suave((f - fStand + 4) / 22);             // gira a vertical y se pone de canto
+  const mv = suave((f - fBooks + 10) / 24);            // viaja al hueco
+  const bgx = interpolate(mv, [0.1, 0.6], [0, 1], CLX);
+  const x = BX + (GX - BX) * mv, y = BY + (GY - BY) * mv;
+  const s = 1 + (1.1 - 1) * mv;
+  const pan = suave((f - fSee) / 50);
+  const zoom = 1 + 0.18 * pan;
+  return (
+    <AbsoluteFill style={{ background: "#000", overflow: "hidden", perspective: 1600 }}>
+      <AbsoluteFill style={{ transform: `scale(${zoom}) translateX(${-pan * 60}px)` }}>
+        <Img src={staticFile(a)} style={{ ...FOTO, opacity: 1 - bgx, transform: `scale(${1.02 + 0.04 * (f / Math.max(1, dur))})` }} />
+        <Img src={staticFile(b)} style={{ ...FOTO, opacity: bgx }} />
+        {f < fBooks + 40 && (
+          <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: `${BX}px ${BY}px`,
+            transform: `translate(${x - BX}px, ${y - BY}px) scale(${s}) rotate(${-90 * st}deg) rotateX(${78 * st}deg)`,
+            opacity: interpolate(f, [fBooks + 20, fBooks + 36], [1, 0], CLX), filter: `drop-shadow(0 18px 24px rgba(0,0,0,${0.45 * (1 - bgx)}))` }}>
+            <Img src={staticFile(a)} style={{ ...FOTO, clipPath: `inset(${BY - BH / 2}px ${1920 - BX - BW / 2}px ${1080 - BY - BH / 2}px ${BX - BW / 2}px round 10px)` }} />
+          </div>
+        )}
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// 9 EscVentaja · la foto de 1945 resulta ser el reflejo en el costado cromado de la tostadora de hoy; en "just me" el reflejo vuelve a ser la ventana
+export const EscVentaja: React.FC<{ a: string; b: string; fHead: number; fMe: number; dur: number }> = ({ a, b, fHead, fMe, dur }) => {
+  const f = useCurrentFrame();
+  const L = 270, T = 195, W = 1265, H = 720;           // costado cromado en esc_tost
+  const out = suave((f - fHead + 6) / 40);              // la cámara se aleja del reflejo
+  const s0 = 1920 / W * 1.04;
+  const s = s0 + (1.03 - s0) * out;
+  const cx = L + W / 2, cy = T + H / 2;
+  const tx = 960 - cx * s, ty = 540 - cy * s;
+  const refl = interpolate(f, [fMe - 4, fMe + 18], [1, 0], CLX);
+  const blend = interpolate(out, [0, 0.6], [0, 1], CLX);
+  return (
+    <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
+      <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `translate(${tx}px, ${ty}px) scale(${s})`, transformOrigin: "0 0" }}>
+        <Img src={staticFile(b)} style={FOTO} />
+        <div style={{ position: "absolute", left: L, top: T, width: W, height: H, borderRadius: "140px 140px 30px 30px", overflow: "hidden", opacity: refl * (1 - 0.45 * blend), mixBlendMode: blend > 0.5 ? "screen" : "normal" }}>
+          <Img src={staticFile(a)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scaleX(${1 + 0.06 * blend}) scaleY(${1 - 0.03 * blend})`, filter: `sepia(${0.25 * blend}) contrast(${1 - 0.15 * blend})` }} />
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};

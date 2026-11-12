@@ -29,6 +29,7 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
     case "list": return <K.ListCard {...s.p} bg={s.bg} dur={dur} />;
     case "guarda": return <K.Guarda {...s.p} bg={s.bg} dur={dur} />;
     case "cartas": return <K.Cartas {...s.p} bg={s.bg} dur={dur} />;
+    case "carta": return <K.Carta {...s.p} bg={s.bg} dur={dur} />;
     case "cuenta": return <K.Cuenta {...s.p} bg={s.bg} dur={dur} />;
     case "book": return <K.BookPage {...s.p} bg={s.bg} seed={seed} dur={dur} />;
     case "qr": return <K.BookQR {...s.p} bg={s.bg} dur={dur} />;

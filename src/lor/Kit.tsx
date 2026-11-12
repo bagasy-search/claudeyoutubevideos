@@ -6,7 +6,7 @@ import { AbsoluteFill, Img, OffthreadVideo, interpolate, spring, staticFile, use
 import { loadFont as loadSerif } from "@remotion/google-fonts/Spectral";
 import { loadFont as loadSans } from "@remotion/google-fonts/WorkSans";
 import { loadFont as loadHand } from "@remotion/google-fonts/Kalam";
-import { THEME } from "./cues.gen";
+import { THEME, LABEL } from "./cues.gen";
 
 const { fontFamily: SERIF } = loadSerif("normal", { weights: ["400", "600", "700"], subsets: ["latin"] });
 const { fontFamily: SANS } = loadSans("normal", { weights: ["500", "600"], subsets: ["latin"] });
@@ -135,7 +135,7 @@ export const RecipeCard: React.FC<{ n: number; N: number; title: string; meta: s
         <Paper style={{ width: 1640, height: 930, padding: "26px 70px 30px 120px", transform: `translateY(${(1 - p) * 700}px) rotate(${tilt * p}deg) scale(${1 + 0.012 * (f / Math.max(1, dur))})` }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", height: 92 }}>
             <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 70, color: T.ink, lineHeight: 1.1 }}>{title}</div>
-            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 22, letterSpacing: 4, color: T.acc, marginTop: 18, whiteSpace: "nowrap" }}>{recap ? "ONCE MORE · " : ""}RECIPE {n} OF {N}</div>
+            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 22, letterSpacing: 4, color: T.acc, marginTop: 18, whiteSpace: "nowrap" }}>{recap ? "ONCE MORE · " : ""}{LABEL} {n} OF {N}</div>
           </div>
           <div style={{ display: "flex", gap: 14, margin: "22px 0 12px" }}>
             {meta.map((m, i) => { const q = useIn(6 + i * 4, 16); return <div key={i} style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, color: T.paper, background: i === 0 ? T.acc : T.ink, padding: "6px 18px", borderRadius: 20, opacity: q, transform: `scale(${0.8 + 0.2 * q})` }}>{m}</div>; })}
@@ -151,7 +151,7 @@ export const RecipeCard: React.FC<{ n: number; N: number; title: string; meta: s
               ))}
             </div>
             <div style={{ flex: 1 }}>
-              <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 22, letterSpacing: 5, color: T.acc, height: 49, lineHeight: "49px" }}>HOW I MAKE IT</div>
+              <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 22, letterSpacing: 5, color: T.acc, height: 49, lineHeight: "49px" }}>{LABEL === "RECIPE" ? "HOW I MAKE IT" : "HOW I DO IT"}</div>
               {steps.map((s, i) => { const q = useIn(recap ? 6 + i * 3 : 14 + i * 5, 18); return (
                 <div key={i} style={{ display: "flex", gap: 12, alignItems: "baseline", marginBottom: 10, opacity: q }}>
                   <span style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 32, color: T.acc }}>{i + 1}.</span>
@@ -179,7 +179,7 @@ export const ChapterOpen: React.FC<{ n: number | string; N: number; title: strin
       <Photo src={src} seed={typeof n === "number" ? n * 7 + 3 : 77} dur={dur} />
       <div style={{ position: "absolute", top: 250, ...(right ? { right: 130 } : { left: 130 }), transform: `translateY(${(1 - p) * -900}px) rotate(${(right ? 3 : -3) * p + (1 - p) * 18}deg)` }}>
         <Paper style={{ width: 760, padding: "26px 54px 40px 110px" }}>
-          <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, letterSpacing: 7, color: T.acc, height: 70, lineHeight: "70px" }}>{typeof n === "number" ? `RECIPE ${n} OF ${N}` : String(n).toUpperCase()}</div>
+          <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, letterSpacing: 7, color: T.acc, height: 70, lineHeight: "70px" }}>{typeof n === "number" ? `${LABEL} ${n} OF ${N}` : String(n).toUpperCase()}</div>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 88, color: T.ink, lineHeight: 1.05, marginTop: 30 }}>
             <Typed txt={title} at={18} speed={1.2} />
           </div>
@@ -196,10 +196,10 @@ export const Progress: React.FC<{ n: number; N: number; title: string; dur: numb
   const o = interpolate(f, [0, 8, dur - 8, dur], [0, 1, 1, 0], CL);
   return (
     <div style={{ position: "absolute", right: 54, top: 44, opacity: o, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 8 }}>
-      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 21, letterSpacing: 3, color: "#FFF8EA", textShadow: shadow }}>RECIPE {n} OF {N} · {title.toUpperCase()}</div>
-      <div style={{ display: "flex", gap: 5 }}>
+      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 21, letterSpacing: 3, color: "#FFF8EA", textShadow: shadow }}>{LABEL} {n} OF {N} · {title.toUpperCase()}</div>
+      <div style={{ display: "flex", gap: N > 12 ? 3 : 5 }}>
         {Array.from({ length: N }, (_, i) => (
-          <div key={i} style={{ width: 40, height: 14, borderRadius: "5px 5px 0 0", background: i < n ? (i === n - 1 ? T.acc : T.paper) : "rgba(255,250,240,0.35)", boxShadow: "0 1px 4px rgba(0,0,0,0.4)" }} />
+          <div key={i} style={{ width: N > 12 ? 13 : 40, height: N > 12 ? 12 : 14, borderRadius: "5px 5px 0 0", background: i < n ? (i === n - 1 ? T.acc : T.paper) : "rgba(255,250,240,0.35)", boxShadow: "0 1px 4px rgba(0,0,0,0.4)" }} />
         ))}
       </div>
     </div>
@@ -234,7 +234,7 @@ export const Carousel: React.FC<{ cards: { title: string; src: string }[]; bg?: 
         );
       })}
       <div style={{ position: "absolute", left: 470, top: 700, width: 980, height: 380, zIndex: 400, background: "linear-gradient(180deg, #8A5A34, #6B4226)", borderRadius: "10px 10px 0 0", boxShadow: "0 -14px 40px rgba(0,0,0,0.5), inset 0 6px 0 rgba(255,220,170,0.25)" }}>
-        <div style={{ position: "absolute", left: 390, top: 60, width: 200, height: 70, border: "4px solid #C9A46A", borderRadius: 6, background: "#F3E7CF", fontFamily: HAND, fontSize: 34, color: "#5A3A22", display: "flex", alignItems: "center", justifyContent: "center" }}>Recipes</div>
+        <div style={{ position: "absolute", left: 390, top: 60, width: 200, height: 70, border: "4px solid #C9A46A", borderRadius: 6, background: "#F3E7CF", fontFamily: HAND, fontSize: 34, color: "#5A3A22", display: "flex", alignItems: "center", justifyContent: "center" }}>{LABEL === "RECIPE" ? "Recipes" : LABEL.charAt(0) + LABEL.slice(1).toLowerCase() + "s"}</div>
       </div>
     </AbsoluteFill>
   );
@@ -352,7 +352,7 @@ export const Thermo: React.FC<{ deg: number; label: string; sub?: string; foot?:
 };
 
 // perilla del horno vieja: gira hasta la temperatura; el tiempo al lado
-export const OvenDial: React.FC<{ deg: number; min: number; bg?: string; dur: number }> = ({ deg, min, bg, dur }) => {
+export const OvenDial: React.FC<{ deg: number; min: number; txt?: string; bg?: string; dur: number }> = ({ deg, min, txt, bg, dur }) => {
   const f = useCurrentFrame(); const o = useOut(dur, 8); const p = useIn(0, 14);
   const t = interpolate(f, [4, 34], [0, 1], { ...CL, easing: Easing.out(Easing.back(1.3)) });
   const ang = -135 + ((deg - 200) / 300) * 270 * t;
@@ -370,7 +370,7 @@ export const OvenDial: React.FC<{ deg: number; min: number; bg?: string; dur: nu
         </div>
         <div style={{ opacity: p }}>
           <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 200, lineHeight: 0.9, color: "#FFF8EA", textShadow: shadow }}>{Math.round(200 + (deg - 200) * Math.min(1, t))}°F</div>
-          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 84, color: "#FFE7C4", textShadow: shadow, marginTop: 10, opacity: interpolate(f, [26, 40], [0, 1], CL) }}>{min} minutes</div>
+          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 84, color: "#FFE7C4", textShadow: shadow, marginTop: 10, opacity: interpolate(f, [26, 40], [0, 1], CL) }}>{txt || `${min} minutes`}</div>
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
@@ -378,7 +378,7 @@ export const OvenDial: React.FC<{ deg: number; min: number; bg?: string; dur: nu
 };
 
 // reloj de cocina: dos tiempos (grande y chico)
-export const Timer: React.FC<{ a: number; b?: number; la: string; lb?: string; bg?: string; dur: number }> = ({ a, b, la, lb, bg, dur }) => {
+export const Timer: React.FC<{ a: number; b?: number; la: string; lb?: string; unit?: string; bg?: string; dur: number }> = ({ a, b, la, lb, unit = "min", bg, dur }) => {
   const f = useCurrentFrame(); const o = useOut(dur, 8);
   const dial = (min: number, label: string, delay: number, size: number) => {
     const p = spring({ frame: f - delay, fps: 30, config: { damping: 14 } });
@@ -390,7 +390,7 @@ export const Timer: React.FC<{ a: number; b?: number; la: string; lb?: string; b
           <div style={{ position: "absolute", left: size / 2 - 16, top: size / 2 - 16, width: 32, height: 32, borderRadius: "50%", background: T.acc }} />
           <div style={{ position: "absolute", left: size / 2 - 5, top: size * 0.12, width: 10, height: size * 0.38, borderRadius: 5, background: "#2A2520", transformOrigin: `5px ${size * 0.38}px`, transform: `rotate(${(set / 60) * 360}deg)` }} />
         </div>
-        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 90, color: "#FFF8EA", textShadow: shadow, marginTop: 16 }}>{Math.round(set)} min</div>
+        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 90, color: "#FFF8EA", textShadow: shadow, marginTop: 16 }}>{Math.round(set)} {unit}</div>
         <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 50, color: "#FFE7C4", textShadow: shadow }}>{label}</div>
       </div>
     );
@@ -613,6 +613,29 @@ export const Pregunta: React.FC<{ text: string; dur: number }> = ({ text, dur })
       <Paper head={false} style={{ padding: "18px 50px", maxWidth: 1500, transform: `translateY(${(1 - p) * 300}px) rotate(-1deg)` }}>
         <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 56, color: T.ink, textAlign: "center" }}>{text}</div>
       </Paper>
+    </AbsoluteFill>
+  );
+};
+
+// carta de un espectador, parafraseada por Loretta: hoja de carta con doblez, se escribe a su ritmo; el sobre abierto atrás
+export const Carta: React.FC<{ txt: string; n?: number; bg?: string; dur: number }> = ({ txt, n = 1, bg, dur }) => {
+  const f = useCurrentFrame(); const p = useIn(0, 18), o = useOut(dur, 8);
+  const sp = Math.max(0.35, Math.min(1.1, (dur - 40) / Math.max(1, txt.length)));
+  const r = (hash(n * 31) % 2 ? 1 : -1) * (1 + (hash(n) % 3) * 0.5);
+  return (
+    <AbsoluteFill style={{ opacity: o }}>
+      <Fondo src={bg} seed={700 + n} dur={dur} />
+      <div style={{ position: "absolute", left: 300, top: 250, width: 640, height: 400, background: "#EADFC8", boxShadow: "0 20px 50px rgba(0,0,0,0.5)", transform: `rotate(${-r * 3}deg) translateX(${(1 - p) * -700}px)` }}>
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(155deg, transparent 49%, rgba(0,0,0,0.10) 50%, transparent 51%), linear-gradient(25deg, transparent 49%, rgba(0,0,0,0.10) 50%, transparent 51%)" }} />
+        <div style={{ position: "absolute", right: 30, top: 24, width: 70, height: 84, border: `3px dashed ${T.acc}`, opacity: 0.6 }} />
+      </div>
+      <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
+        <div style={{ width: 1180, padding: "40px 80px 60px", background: "#FFFDF6", backgroundImage: `repeating-linear-gradient(180deg, transparent 0 63px, rgba(90,140,190,0.28) 63px 65px)`, boxShadow: "0 30px 70px rgba(0,0,0,0.5)", transform: `translateY(${(1 - p) * 800}px) rotate(${r}deg)`, position: "relative" }}>
+          <div style={{ position: "absolute", left: 0, right: 0, top: "50%", height: 2, background: "rgba(0,0,0,0.07)" }} />
+          <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 22, letterSpacing: 6, color: T.acc, height: 64 }}>FROM YOUR LETTERS</div>
+          <Typed txt={txt} at={12} speed={sp} style={{ fontFamily: HAND, fontWeight: 700, fontSize: txt.length > 120 ? 46 : 54, color: T.pen, lineHeight: "65px" }} />
+        </div>
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
