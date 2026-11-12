@@ -266,18 +266,18 @@ export const ScoreBoard: React.FC<{ rows: Row[]; now: number; dur: number }> = (
     <AbsoluteFill style={{ opacity: o }}>
       <Tile dur={dur} dark={0.3} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
-        <div style={{ width: 1280, background: slateBg, border: `26px solid ${K.wood}`, borderRadius: 10, boxShadow: `0 40px 90px rgba(0,0,0,0.6), inset 0 0 0 4px ${K.wood2}, inset 0 0 60px rgba(0,0,0,0.5)`, padding: "30px 64px 38px", transform: `scale(${(0.9 + 0.1 * p) * cam}) rotate(${lerp(-2, -0.6, p)}deg)` }}>
+        <div style={{ width: 1560, background: slateBg, border: `26px solid ${K.wood}`, borderRadius: 10, boxShadow: `0 40px 90px rgba(0,0,0,0.6), inset 0 0 0 4px ${K.wood2}, inset 0 0 60px rgba(0,0,0,0.5)`, padding: "26px 70px 30px", transform: `scale(${(0.9 + 0.1 * p) * cam}) rotate(${lerp(-2, -0.6, p)}deg)` }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", borderBottom: "3px solid rgba(242,239,228,0.5)", paddingBottom: 10, marginBottom: 12 }}>
-            <div style={{ fontFamily: MARK, fontSize: 60, color: K.chalk }}>8 ways to cook a hot dog</div>
-            <div style={{ fontFamily: COND, fontWeight: 500, fontSize: 28, letterSpacing: 5, color: "#E9C46A" }}>OUT OF 10</div>
+            <div style={{ fontFamily: MARK, fontSize: 74, color: K.chalk }}>8 ways to cook a hot dog</div>
+            <div style={{ fontFamily: COND, fontWeight: 500, fontSize: 34, letterSpacing: 5, color: "#E9C46A" }}>OUT OF 10</div>
           </div>
           {rows.map((r) => {
             const done = r.rank > now, cur = r.rank === now; const show = done || cur;
             return (
-              <div key={r.rank} style={{ display: "flex", alignItems: "baseline", height: 86, gap: 26, opacity: show ? 1 : 0.28 }}>
-                <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 36, letterSpacing: 3, color: "#E9C46A", width: 96 }}>Nº {r.rank}</div>
-                <div style={{ fontFamily: MARK, fontSize: cur ? 62 : 52, color: K.chalk, flex: 1, whiteSpace: "nowrap", clipPath: cur ? `inset(0 ${100 - wr * 100}% 0 0)` : undefined }}>{show ? r.title : "· · · · ·"}</div>
-                <div style={{ fontFamily: SLAB, fontWeight: 800, fontSize: cur ? 70 : 54, color: cur ? "#E9C46A" : K.chalk, transform: cur ? `scale(${lerp(2.4, 1, sc)}) rotate(${lerp(-12, 0, sc)}deg)` : undefined, opacity: cur ? cl(sc * 3) : show ? 1 : 0 }}>{show ? r.score : ""}</div>
+              <div key={r.rank} style={{ display: "flex", alignItems: "baseline", height: 92, gap: 30, opacity: show ? 1 : 0.28 }}>
+                <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 44, letterSpacing: 3, color: "#E9C46A", width: 124 }}>Nº {r.rank}</div>
+                <div style={{ fontFamily: MARK, fontSize: cur ? 76 : 62, color: K.chalk, flex: 1, whiteSpace: "nowrap", clipPath: cur ? `inset(0 ${100 - wr * 100}% 0 0)` : undefined }}>{show ? r.title : "· · · · ·"}</div>
+                <div style={{ fontFamily: SLAB, fontWeight: 800, fontSize: cur ? 86 : 66, color: cur ? "#E9C46A" : K.chalk, transform: cur ? `scale(${lerp(2.4, 1, sc)}) rotate(${lerp(-12, 0, sc)}deg)` : undefined, opacity: cur ? cl(sc * 3) : show ? 1 : 0 }}>{show ? r.score : ""}</div>
               </div>
             );
           })}
@@ -290,20 +290,20 @@ export const ScoreBoard: React.FC<{ rows: Row[]; now: number; dur: number }> = (
 export type Line = { t: string; f: number; done?: boolean };
 export const Sheet: React.FC<{ kicker: string; title: string; lines: Line[]; dur: number; seed: number; stamp?: boolean }> = ({ kicker, title, lines, dur, seed, stamp = true }) => {
   const f = useCurrentFrame(); const pin = sp(f, 0, 17, 0.8); const o = interpolate(f, [dur - 10, dur], [1, 0], CL);
-  const fs = lines.length > 6 ? 46 : 56; let cur = -1; lines.forEach((l, i) => { if (f >= l.f) cur = i; });
+  const fs = lines.length > 6 ? 54 : lines.length > 4 ? 68 : 78; let cur = -1; lines.forEach((l, i) => { if (f >= l.f) cur = i; });
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Tile dur={dur} dark={0.28} />
-      <div style={{ position: "absolute", left: 250, top: 80, width: 1420, height: 920, background: paperBg, boxShadow: "0 34px 80px rgba(0,0,0,0.55)", transform: `translateY(${(1 - pin) * 300}px) rotate(${((seed % 3) - 1) * 0.7}deg) scale(${lerp(1, 1.04, f / Math.max(1, dur))})`, opacity: pin, clipPath: "polygon(0 0, 100% 0, 100% 97%, 96% 100%, 90% 97.5%, 84% 100%, 78% 97.5%, 72% 100%, 66% 97.5%, 60% 100%, 54% 97.5%, 48% 100%, 42% 97.5%, 36% 100%, 30% 97.5%, 24% 100%, 18% 97.5%, 12% 100%, 6% 97.5%, 0 100%)" }}>
+      <div style={{ position: "absolute", left: 190, top: 70, width: 1540, height: 940, background: paperBg, boxShadow: "0 34px 80px rgba(0,0,0,0.55)", transform: `translateY(${(1 - pin) * 300}px) rotate(${((seed % 3) - 1) * 0.7}deg) scale(${lerp(1, 1.04, f / Math.max(1, dur))})`, opacity: pin, clipPath: "polygon(0 0, 100% 0, 100% 97%, 96% 100%, 90% 97.5%, 84% 100%, 78% 97.5%, 72% 100%, 66% 97.5%, 60% 100%, 54% 97.5%, 48% 100%, 42% 97.5%, 36% 100%, 30% 97.5%, 24% 100%, 18% 97.5%, 12% 100%, 6% 97.5%, 0 100%)" }}>
         <div style={{ position: "absolute", left: 90, right: 80, top: 54, display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-          <div><div style={{ fontFamily: COND, fontWeight: 600, fontSize: 28, letterSpacing: 7, color: K.red }}>{kicker}</div><div style={{ fontFamily: SLAB, fontWeight: 800, fontSize: 84, color: K.ink, lineHeight: 1.05, marginTop: 6 }}>{title}</div></div>
+          <div><div style={{ fontFamily: COND, fontWeight: 600, fontSize: 28, letterSpacing: 7, color: K.red }}>{kicker}</div><div style={{ fontFamily: SLAB, fontWeight: 800, fontSize: 104, color: K.ink, lineHeight: 1.05, marginTop: 6 }}>{title}</div></div>
           {stamp && <div style={{ marginTop: -6 }}><Stamp size={0.92} /></div>}
         </div>
-        <div style={{ position: "absolute", left: 90, right: 80, top: 250 }}>
+        <div style={{ position: "absolute", left: 90, right: 80, top: 280 }}>
           {lines.map((l, i) => {
             const p = l.done ? 1 : eio((f - l.f) / 13); const now = i === cur && !l.done;
             return (
-              <div key={i} style={{ fontFamily: MARK, fontSize: fs, color: l.done ? "rgba(42,27,18,0.5)" : K.ink, lineHeight: 1.62, whiteSpace: "nowrap", position: "relative", clipPath: `inset(-10% ${100 - p * 100}% -10% 0)` }}>
+              <div key={i} style={{ fontFamily: MARK, fontSize: fs, color: l.done ? "rgba(42,27,18,0.5)" : K.ink, lineHeight: 1.5, whiteSpace: "nowrap", position: "relative", clipPath: `inset(-10% ${100 - p * 100}% -10% 0)` }}>
                 <span style={{ color: K.red, marginRight: 18 }}>{l.done ? "✓" : "—"}</span>{l.t}
                 {now && <span style={{ position: "absolute", left: -10, right: 0, bottom: fs * 0.2, height: fs * 0.36, background: "rgba(233,196,106,0.4)", zIndex: -1 }} />}
               </div>
@@ -337,16 +337,16 @@ export const Seven: React.FC<{ items: { t: string; f: number }[]; dur: number }>
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Tile dur={dur} dark={0.3} />
-      <div style={{ position: "absolute", left: -20, right: -20, top: 250, height: 7, background: "repeating-linear-gradient(60deg, #EDE3CC 0 6px, #B9A983 6px 10px)", boxShadow: "0 3px 6px rgba(0,0,0,0.4)", transform: "rotate(-0.6deg)" }} />
+      <div style={{ position: "absolute", left: -20, right: -20, top: 150, height: 9, background: "repeating-linear-gradient(60deg, #EDE3CC 0 6px, #B9A983 6px 10px)", boxShadow: "0 3px 6px rgba(0,0,0,0.4)", transform: "rotate(-0.6deg)" }} />
       {items.map((it, i) => {
-        const p = sp(f, it.f, 8, 0.9); const x = 90 + i * 252; const sway = Math.sin((f + i * 17) / 21) * 1.6;
+        const p = sp(f, it.f, 8, 0.9); const x = 62 + i * 258; const sway = Math.sin((f + i * 17) / 21) * 1.6;
         return (
-          <div key={i} style={{ position: "absolute", left: x, top: 246 - i * 2.6, width: 232, transformOrigin: "50% 0", transform: `rotate(${lerp(i % 2 ? 50 : -50, sway, p)}deg) translateY(${(1 - cl(p * 2)) * -500}px)`, opacity: cl((f - it.f) / 3) }}>
+          <div key={i} style={{ position: "absolute", left: x, top: 146 - i * 2.7, width: 246, transformOrigin: "50% 0", transform: `rotate(${lerp(i % 2 ? 50 : -50, sway, p)}deg) translateY(${(1 - cl(p * 2)) * -500}px)`, opacity: cl((f - it.f) / 3) }}>
             <div style={{ width: 3, height: 70, background: "#D9CFB6", margin: "0 auto" }} />
-            <div style={{ background: kraftBg, borderRadius: "70px 70px 10px 10px", padding: "56px 10px 30px", textAlign: "center", boxShadow: "0 16px 34px rgba(0,0,0,0.5)", position: "relative", minHeight: 400 }}>
+            <div style={{ background: kraftBg, borderRadius: "70px 70px 10px 10px", padding: "70px 10px 30px", textAlign: "center", boxShadow: "0 16px 34px rgba(0,0,0,0.5)", position: "relative", minHeight: 620 }}>
               <div style={{ position: "absolute", left: "50%", top: 18, marginLeft: -12, width: 24, height: 24, borderRadius: "50%", background: "rgba(30,20,10,0.8)", boxShadow: "inset 0 0 0 4px rgba(255,235,200,0.5)" }} />
-              <div style={{ fontFamily: SLAB, fontWeight: 800, fontSize: 130, color: K.red, lineHeight: 1 }}>{i + 1}</div>
-              <div style={{ fontFamily: MARK, fontSize: it.t.length > 9 ? 40 : 50, color: K.ink, lineHeight: 1.05, marginTop: 14 }}>{it.t}</div>
+              <div style={{ fontFamily: SLAB, fontWeight: 800, fontSize: 210, color: K.red, lineHeight: 1 }}>{i + 1}</div>
+              <div style={{ fontFamily: MARK, fontSize: it.t.length > 9 ? 50 : 62, color: K.ink, lineHeight: 1.05, marginTop: 34 }}>{it.t}</div>
             </div>
           </div>
         );

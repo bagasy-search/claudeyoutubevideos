@@ -24,7 +24,7 @@ export const EscCalor: React.FC<{ src: string; faces: [number, number, number][]
         <Img src={staticFile(src)} style={{ ...FULL, filter: `saturate(${1 + 0.18 * warm}) brightness(${1 + 0.05 * warm})` }} />
         {faces.map(([x, y, r], i) => (k > 0.01 ? (
           <div key={i} style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: `circle(${r * k}px at ${x}px ${y}px)`, opacity: cold }}>
-            <Img src={staticFile(src)} style={{ ...FULL, filter: "saturate(0.35) brightness(0.8) hue-rotate(160deg) contrast(1.05)" }} />
+            <Img src={staticFile(src)} style={{ ...FULL, filter: "saturate(0.15) brightness(0.7) contrast(1.08)" }} />
           </div>
         ) : null))}
       </div>
