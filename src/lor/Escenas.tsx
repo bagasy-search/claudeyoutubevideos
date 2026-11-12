@@ -5,7 +5,9 @@
 // 3 EscRevelado: la copia de 1969 se revela persona por persona (brillo 3,2 → 1, por zonas).
 // 4 EscEntrega: la copia de 1988 se levanta de la mesa y se le entrega al espectador (esquinas → rectángulo).
 import React from "react";
-import { AbsoluteFill, Img, interpolate, useCurrentFrame, Easing } from "remotion";
+import { AbsoluteFill, Img as Img0, interpolate, useCurrentFrame, Easing, staticFile } from "remotion";
+// las rutas de cues vienen relativas a public/ ("ck11d/g/…"): sin staticFile el render pide /ck11d/… y da 404
+const Img: React.FC<any> = ({ src, ...r }) => <Img0 src={typeof src === "string" && !/^(https?:|data:|\/)/.test(src) ? staticFile(src) : src} {...r} />;
 import { loadFont } from "@remotion/google-fonts/Kalam";
 
 const { fontFamily: MANO } = loadFont("normal", { weights: ["700"], subsets: ["latin"] });
