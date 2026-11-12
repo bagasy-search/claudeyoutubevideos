@@ -25,7 +25,7 @@ export const EscLibro: React.FC<{ src: string; fMap: number; fUnder: number; fCu
   const f = useCurrentFrame();
   const LX = 885;                                                  // lomo del libro
   const open = seg(f, fMap - 4, fMap + 26) * (1 - seg(f, fCut + 4, fCut + 22));
-  const th = 24 * open;
+  const th = 36 * open;
   const down = seg(f, fUnder - 6, fUnder + 30) * (1 - 0.6 * seg(f, fCut + 4, fCut + 30));
   const cx = lerp(960, LX, Math.max(open, down)), cy = lerp(520, 430, down), s = lerp(1.06, 1.55, down) + 0.04 * seg(f, 0, dur);
   const stage: React.CSSProperties = { position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "0 0", transform: `translate(${960 - cx * s}px, ${540 - cy * s}px) scale(${s})`, perspective: 1500, perspectiveOrigin: `${LX}px 480px` };
@@ -38,6 +38,7 @@ export const EscLibro: React.FC<{ src: string; fMap: number; fUnder: number; fCu
       <div style={stage}>
         <div style={hoja(true)}><Img src={staticFile(src)} style={FULL} /></div>
         <div style={hoja(false)}><Img src={staticFile(src)} style={FULL} /></div>
+        <div style={{ position: "absolute", left: LX - 150, top: 0, width: 300, height: 1080, opacity: open, background: "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%)" }} />
       </div>
     </AbsoluteFill>
   );
@@ -47,9 +48,9 @@ export const EscLibro: React.FC<{ src: string; fMap: number; fUnder: number; fCu
 export const EscLupas: React.FC<{ src: string; fOne: number; fEach: number; fName: number; dur: number }> = ({ src, fOne, fEach, fName, dur }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
   const L = [{ x: 1290, y: 350, f0: fOne }, { x: 1300, y: 700, f0: fOne + 16 }];
-  const R = 185, Z = 1.55;
+  const R = 158, Z = 2.15;
   const push = seg(f, 0, fOne) * 0.5 + seg(f, fName, dur) * 0.5;
-  const cx = lerp(960, 1220, seg(f, 0, fOne + 10)), cy = lerp(540, 525, seg(f, 0, fOne + 10)), s = 1.04 + 0.2 * push;
+  const cx = lerp(960, 1170, seg(f, 0, fOne + 10)), cy = lerp(540, 525, seg(f, 0, fOne + 10)), s = 1.04 + 0.2 * push + 0.09 * (f / dur);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#2a1a12" }}>
       <AbsoluteFill style={cam(cx, cy, s)}>
@@ -62,7 +63,7 @@ export const EscLupas: React.FC<{ src: string; fOne: number; fEach: number; fNam
             <React.Fragment key={i}>
               <div style={{ position: "absolute", left: l.x - r - 9, top: l.y - r - 9, width: 2 * r + 18, height: 2 * r + 18, borderRadius: "50%", background: "linear-gradient(135deg, #F4F6F7 0%, #8F969C 45%, #E3E6E8 60%, #6C7378 100%)", boxShadow: "0 18px 34px rgba(0,0,0,0.5)" }} />
               <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: `circle(${r}px at ${l.x}px ${l.y}px)` }}>
-                <Img src={staticFile(src)} style={{ ...FULL, transformOrigin: `${l.x}px ${l.y}px`, transform: `scale(${Z})` }} />
+                <Img src={staticFile(src)} style={{ ...FULL, transformOrigin: `${l.x}px ${l.y}px`, transform: `scale(${Z + 0.1 * Math.sin((f + i * 30) / 34)})` }} />
               </div>
             </React.Fragment>
           );
