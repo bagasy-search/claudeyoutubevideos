@@ -30,7 +30,7 @@ ck11f/g/g0750.png
 ck11f/y/y760.mp4
 ck11f/y/y780.mp4
 ck11f/y/y790.mp4
-ck11f/y/y800.mp4
+ck11f/g/g0800.png
 ck11f/y/y830.mp4
 ck11f/y/y840.mp4
 ck11f/g/g0860.png
@@ -56,7 +56,7 @@ ck11f/y/y1310.mp4
 ck11f/y/y1320.mp4
 ck11f/y/y1340.mp4
 ck11f/y/y1360.mp4
-ck11f/y/y1380.mp4
+ck11f/g/g1380.png
 ck11f/y/y1400.mp4
 ck11f/g/g1410.png
 ck11f/y/y1420.mp4
@@ -67,7 +67,7 @@ ck11f/g/g1460.png
 ck11f/g/g1470.png
 ck11f/g/g1480.png
 ck11f/y/y1490.mp4
-ck11f/y/y1500.mp4
+ck11f/g/g1500.png
 ck11f/g/g1510.png
 ck11f/g/g1520.png
 ck11f/y/y1530.mp4
@@ -98,7 +98,7 @@ ck11f/g/g1930.png
 ck11f/y/y1940.mp4
 ck11f/y/y1960.mp4
 ck11f/g/g1970.png
-ck11f/y/y1990.mp4
+ck11f/g/g1990.png
 ck11f/y/y2020.mp4
 ck11f/g/g2040.png
 ck11f/g/g2080.png
@@ -167,7 +167,7 @@ ck11f/y/y3310.mp4
 ck11f/y/y3320.mp4
 ck11f/y/y3340.mp4
 ck11f/y/y3370.mp4
-ck11f/y/y3390.mp4
+ck11f/g/g3390.png
 ck11f/y/y3400.mp4
 ck11f/g/g3420.png
 ck11f/y/y3430.mp4
@@ -176,12 +176,12 @@ ck11f/g/g3460.png
 ck11f/y/y3480.mp4
 ck11f/y/y3500.mp4
 ck11f/y/y3520.mp4
+ck11f/g/g3600.png
 ck11f/y/y3590.mp4
-ck11f/y/y3600.mp4
 ck11f/y/y3620.mp4
 ck11f/y/y3630.mp4
 ck11f/g/g3650.png
-ck11f/y/y3660.mp4
+ck11f/g/g3660.png
 ck11f/g/g3680.png
 ck11f/g/g3690.png
 ck11f/g/g3720.png
@@ -191,9 +191,10 @@ ck11f/g/g3810.png
 ck11f/y/y3820.mp4
 ck11f/y/y3840.mp4
 ck11f/g/g3850.png
-ck11f/y/y3870.mp4
+ck11f/g/s3860.png
+ck11f/g/g3870.png
 ck11f/y/y3890.mp4
-ck11f/y/y3910.mp4
+ck11f/g/g3910.png
 ck11f/g/g3940.png
 ck11f/y/y3950.mp4
 ck11f/y/y3960.mp4
@@ -210,7 +211,8 @@ ck11f/g/g4180.png
 ck11f/g/g4200.png
 ck11f/y/y4210.mp4
 ck11f/y/y4220.mp4
-ck11f/y/y4240.mp4
+ck11f/g/g4240.png
+ck11f/g/s4250.png
 ck11f/g/g4260.png
 ck11f/g/g4300.png
 ck11f/y/y4450.mp4
@@ -298,7 +300,7 @@ ck11f/g/g5680.png
 ck11f/g/g5690.png
 ck11f/g/g5700.png
 ck11f/g/g5710.png
-ck11f/y/y5711.mp4
+ck11f/g/g5711.png
 ck11f/g/g5720.png
 ck11f/g/g5730.png
 ck11f/y/y5740.mp4
@@ -333,7 +335,7 @@ ck11f/y/y6110.mp4
 ck11f/y/y6120.mp4
 ck11f/y/y6130.mp4
 ck11f/y/y6140.mp4
-ck11f/y/y6170.mp4
+ck11f/g/g6170.png
 ck11f/y/y6190.mp4
 ck11f/g/g6200.png
 ck11f/y/y6220.mp4
@@ -342,7 +344,7 @@ ck11f/y/y6270.mp4
 ck11f/y/y6290.mp4
 ck11f/y/y6300.mp4
 ck11f/g/g6310.png
-ck11f/y/y6340.mp4
+ck11f/g/g6340.png
 ck11f/g/g6350.png
 ck11f/y/y6360.mp4
 ck11f/g/g6370.png
@@ -372,8 +374,6 @@ ck11f/y/y7100.mp4
 ck11f/g/s2010.png
 ck11f/g/s3470.png
 ck11f/g/s4910.png
-ck11f/g/s3860.png
-ck11f/g/s4250.png
 ck11f/g/s4610.png
 ck11f/g/s6400.png
 ck11f/y/y7630.mp4
