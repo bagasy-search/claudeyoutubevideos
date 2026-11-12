@@ -26,17 +26,17 @@ export type RCard = { title: string; src: string; rank: number; score: number };
 export const RankRail: React.FC<{ cards: RCard[]; now: number; final?: boolean; dur: number }> = ({ cards, now, final, dur }) => {
   const f = useCurrentFrame(); const o = interpolate(f, [0, 6, dur - 8, dur], [0, 1, 1, 0], CL);
   const order = [...cards].sort((a, b) => b.rank - a.rank); // de izquierda (Nº 8) a derecha (Nº 1)
-  const cam = lerp(1.0, 1.05, f / Math.max(1, dur)); const W = 214;
+  const cam = lerp(1.0, 1.05, f / Math.max(1, dur)); const W = 214; const cxNow = 70 + order.findIndex((c) => c.rank === now) * 228 + W / 2;
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Tile dur={dur} dark={0.34} />
-      <AbsoluteFill style={{ transform: `scale(${cam})`, transformOrigin: "50% 40%" }}>
-        <div style={{ position: "absolute", left: -40, right: -40, top: 150, height: 26, background: steel, boxShadow: "0 14px 22px rgba(0,0,0,0.45)" }} />
+      <AbsoluteFill style={final ? { transform: `scale(${cam})`, transformOrigin: "50% 40%" } : { transform: `translate(${960 - cxNow}px, 70px) scale(${lerp(2.25, 2.0, f / Math.max(1, dur))})`, transformOrigin: `${cxNow}px 300px` }}>
+        <div style={{ position: "absolute", left: -1400, right: -1400, top: 150, height: 26, background: steel, boxShadow: "0 14px 22px rgba(0,0,0,0.45)" }} />
         {[300, 960, 1620].map((x) => <div key={x} style={{ position: "absolute", left: x - 14, top: 96, width: 28, height: 66, background: steel, borderRadius: 6 }} />)}
         {order.map((c, i) => {
           const x = 70 + i * 228; const done = c.rank > now, cur = c.rank === now; const show = done || cur || final;
           const drop = cur && !final ? sp(f, 8, 7, 1.0) : 1; const sway = Math.sin((f + i * 19) / 23) * (cur ? 1.2 : 0.7);
-          const lift = final && c.rank === 1 ? eio((f - 10) / 24) : 0; const big = cur && !final ? 1.34 : 1 + 0.5 * lift;
+          const lift = final && c.rank === 1 ? eio((f - 10) / 24) : 0; const big = cur && !final ? 1.12 : 1 + 0.5 * lift;
           return (
             <div key={c.rank} style={{ position: "absolute", left: x, top: 164, width: W, transformOrigin: "50% 0", zIndex: cur || lift ? 5 : 1, transform: `translateY(${(1 - cl(drop * 1.6)) * -700}px) rotate(${lerp(cur ? -26 : 0, sway, cl(drop))}deg) scale(${big})` }}>
               <div style={{ width: 26, height: 54, margin: "0 auto", border: "7px solid #9AA1A5", borderBottom: "none", borderRadius: "16px 16px 0 0", boxSizing: "border-box" }} />
@@ -162,7 +162,7 @@ export const SpikeCTA: React.FC<{ src: string; lines: string[]; box: [number, nu
         <div style={{ position: "absolute", left: bx, top: by, width: bw, height: bh, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", transform: "rotate(-1deg)" }}>
           {lines.map((l, i) => { const w = eio((f - 10 - i * 16) / 16); return <div key={i} style={{ fontFamily: MARK, fontSize: bw / 11.5, color: "#2A1B12", lineHeight: 1.12, whiteSpace: "nowrap", clipPath: `inset(-10% ${100 - w * 104}% -10% 0)` }}>{l}</div>; })}
         </div>
-        <div style={{ position: "absolute", left: bx + bw - 250, top: by + bh - 60, transform: `scale(${lerp(3.2, 1, hit)}) rotate(${lerp(-30, -8, hit)}deg)`, opacity: cl(hit * 3) }}>
+        <div style={{ position: "absolute", left: bx + bw - 400, top: by + bh - 86, transform: `scale(${lerp(3.2, 1, hit)}) rotate(${lerp(-30, -8, hit)}deg)`, opacity: cl(hit * 3) }}>
           <div style={{ border: `9px solid ${K.red}`, outline: `3px solid ${K.red}`, outlineOffset: 6, borderRadius: 14, padding: "4px 28px", color: K.red, fontFamily: COND, fontWeight: 600, fontSize: 84, letterSpacing: 6, background: "rgba(255,250,240,0.35)", boxShadow: "0 0 0 2px rgba(179,38,30,0.15)" }}>SUBSCRIBE</div>
         </div>
       </AbsoluteFill>
