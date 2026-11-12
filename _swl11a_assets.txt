@@ -118,7 +118,6 @@ swl11a/y/2190_0.mp4
 swl11a/g/pol1962.png
 swl11a/g/g2610.png
 swl11a/y/2660_0.mp4
-swl11a/y/2740_1c.mp4
 swl11a/y/2750_0b.mp4
 swl11a/y/2750_1b.mp4
 swl11a/y/2740_1b.mp4
