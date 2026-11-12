@@ -30,7 +30,7 @@ export const RankRail: React.FC<{ cards: RCard[]; now: number; final?: boolean; 
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Tile dur={dur} dark={0.34} />
-      <AbsoluteFill style={final ? { transform: `scale(${cam})`, transformOrigin: "50% 40%" } : { transform: `translate(${960 - cxNow}px, 70px) scale(${lerp(2.25, 2.0, f / Math.max(1, dur))})`, transformOrigin: `${cxNow}px 300px` }}>
+      <AbsoluteFill style={final ? { transform: `scale(${cam})`, transformOrigin: "50% 40%" } : { transform: `translate(${960 - cxNow - 60}px, 150px) scale(${lerp(2.9, 2.7, f / Math.max(1, dur))})`, transformOrigin: `${cxNow}px 290px` }}>
         <div style={{ position: "absolute", left: -1400, right: -1400, top: 150, height: 26, background: steel, boxShadow: "0 14px 22px rgba(0,0,0,0.45)" }} />
         {[300, 960, 1620].map((x) => <div key={x} style={{ position: "absolute", left: x - 14, top: 96, width: 28, height: 66, background: steel, borderRadius: 6 }} />)}
         {order.map((c, i) => {
@@ -43,9 +43,9 @@ export const RankRail: React.FC<{ cards: RCard[]; now: number; final?: boolean; 
               {show ? (
                 <div style={{ background: paper, padding: 10, paddingBottom: 12, boxShadow: `0 ${18 + 22 * lift}px ${34 + 30 * lift}px rgba(0,0,0,0.55)`, position: "relative" }}>
                   <div style={{ width: "100%", height: 150, overflow: "hidden" }}><Img src={staticFile(c.src)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: done && !final ? "saturate(0.75) brightness(0.9)" : undefined }} /></div>
-                  <div style={{ fontFamily: MARK, fontSize: c.title.length > 12 ? 22 : 27, color: K.ink, textAlign: "center", marginTop: 8, lineHeight: 1.05, height: 50 }}>{c.title}</div>
+                  <div style={{ fontFamily: MARK, fontSize: c.title.length > 12 ? 24 : 30, color: K.ink, textAlign: "center", marginTop: 8, lineHeight: 1.05, height: 50 }}>{c.title}</div>
                   <div style={{ position: "absolute", left: -12, top: -10, background: K.ink, color: "#E9C46A", fontFamily: SLAB, fontWeight: 800, fontSize: 30, padding: "0 10px", transform: "rotate(-5deg)" }}><span style={{ fontFamily: COND, fontWeight: 500, fontSize: 16, marginRight: 3 }}>Nº</span>{c.rank}</div>
-                  <Slam f={f} at={cur && !final ? 30 : final ? 6 + i * 2 : -99} rot={8} style={{ position: "absolute", right: -16, bottom: 44 }}>
+                  <Slam f={f} at={cur && !final ? 30 : final ? 6 + i * 2 : -99} rot={8} style={{ position: "absolute", right: -18, top: 84 }}>
                     <div style={{ border: `5px solid ${c.rank === 1 ? "#B8860B" : K.red}`, color: c.rank === 1 ? "#B8860B" : K.red, background: "rgba(255,250,240,0.93)", borderRadius: 10, fontFamily: SLAB, fontWeight: 800, fontSize: 52, lineHeight: 1, padding: "2px 10px 6px" }}>{c.score}<span style={{ fontSize: 22 }}>/10</span></div>
                   </Slam>
                 </div>
@@ -65,9 +65,11 @@ export const Strip: React.FC<{ n: number; total: number; text: string; dur: numb
     <div style={{ position: "absolute", left: 100, bottom: 110, opacity: o, transform: `translateX(${(1 - p) * -900}px) rotate(${lerp(-6, -1.5, p)}deg)` }}>
       <div style={{ position: "absolute", left: -34, top: -16, width: 120, height: 40, background: "rgba(236,226,204,0.88)", transform: "rotate(-24deg)", boxShadow: "0 2px 6px rgba(0,0,0,0.2)", zIndex: 2 }} />
       <div style={{ background: paper, padding: "20px 44px 26px 40px", boxShadow: "0 18px 40px rgba(0,0,0,0.5)", clipPath: "polygon(0 0, 100% 0, 98% 22%, 100% 46%, 98.5% 70%, 100% 100%, 0 100%)" }}>
-        <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 28, letterSpacing: 6, color: K.red }}>READ THE PACK · {n} OF {total}</div>
-        <div style={{ fontFamily: MARK, fontSize: 66, color: K.ink, lineHeight: 1.1, whiteSpace: "nowrap", position: "relative" }}>{text}
-          <div style={{ position: "absolute", left: 0, bottom: -4, height: 9, width: `${u * 100}%`, background: K.red, borderRadius: 5, transform: "rotate(-0.6deg)", opacity: 0.85 }} />
+        <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 36, letterSpacing: 6, color: K.red }}>READ THE PACK · {n} OF {total}</div>
+        <div style={{ fontFamily: MARK, fontSize: 66, color: K.ink, lineHeight: 1.1, whiteSpace: "nowrap" }}>{text.split(" ").slice(0, -1).join(" ")}{" "}
+          <span style={{ position: "relative", display: "inline-block", fontSize: 78, color: K.red }}>{text.split(" ").slice(-1)[0]}
+            <span style={{ position: "absolute", left: 0, bottom: -2, height: 9, width: `${u * 100}%`, background: K.red, borderRadius: 5, transform: "rotate(-1deg)", opacity: 0.9 }} />
+          </span>
         </div>
       </div>
     </div>
@@ -88,8 +90,8 @@ export const NeedPhoto: React.FC<{ src: string; tags: { x: number; y: number; t:
               <div style={{ width: 3, height: 34, background: "#E9E0C8", marginLeft: 20 }} />
               <div style={{ background: kraft, borderRadius: "28px 8px 8px 8px", padding: "10px 22px 12px 44px", boxShadow: "0 12px 26px rgba(0,0,0,0.55)", position: "relative", whiteSpace: "nowrap" }}>
                 <div style={{ position: "absolute", left: 14, top: 12, width: 18, height: 18, borderRadius: "50%", background: "rgba(30,20,10,0.8)" }} />
-                <span style={{ fontFamily: SLAB, fontWeight: 800, fontSize: 52, color: K.red, marginRight: 12 }}>{t.t.split("|")[0]}</span>
-                <span style={{ fontFamily: MARK, fontSize: 40, color: K.ink }}>{t.t.split("|")[1]}</span>
+                <span style={{ fontFamily: SLAB, fontWeight: 800, fontSize: 60, color: K.red, marginRight: 12 }}>{t.t.split("|")[0]}</span>
+                <span style={{ fontFamily: MARK, fontSize: 46, color: K.ink }}>{t.t.split("|")[1]}</span>
               </div>
             </div>
           );
@@ -102,9 +104,12 @@ export const NeedPhoto: React.FC<{ src: string; tags: { x: number; y: number; t:
 // ── los siete del Chicago: siete fotos reales colgadas con broches de una cuerda de atar; cada una cae y se balancea en su palabra
 export const SevenPhotos: React.FC<{ items: { t: string; f: number; src: string }[]; dur: number }> = ({ items, dur }) => {
   const f = useCurrentFrame(); const o = interpolate(f, [0, 6, dur - 8, dur], [0, 1, 1, 0], CL);
+  let cx = 44 + 122; for (let i = 1; i < items.length; i++) cx = lerp(cx, 44 + i * 264 + 122, eio((f - (items[i].f - 10)) / 14));
+  const fin = eio((f - (items[items.length - 1].f + 22)) / 22); const z = lerp(1.75, 1.0, fin); const px = cl(lerp(cx, 960, fin), 960 / z, 1920 - 960 / z);
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Tile dur={dur} dark={0.34} />
+      <AbsoluteFill style={{ transformOrigin: "0 0", transform: `translate(${960 - px * z}px, ${540 - 560 * z}px) scale(${z})` }}>
       <div style={{ position: "absolute", left: -30, right: -30, top: 326, height: 10, background: "repeating-linear-gradient(60deg, #EDE3CC 0 7px, #B9A983 7px 12px)", boxShadow: "0 6px 10px rgba(0,0,0,0.4)", transform: "rotate(-0.5deg)" }} />
       {items.map((it, i) => {
         const p = sp(f, it.f, 7, 1.0); const x = 44 + i * 264; const sway = Math.sin((f + i * 17) / 20) * 1.8;
@@ -115,12 +120,13 @@ export const SevenPhotos: React.FC<{ items: { t: string; f: number; src: string 
               <div style={{ width: 220, height: 260, overflow: "hidden" }}><Img src={staticFile(it.src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.5)" }} /></div>
               <div style={{ display: "flex", alignItems: "baseline", justifyContent: "center", gap: 10, marginTop: 10, height: 96 }}>
                 <span style={{ fontFamily: SLAB, fontWeight: 800, fontSize: 54, color: K.red, lineHeight: 1 }}>{i + 1}</span>
-                <span style={{ fontFamily: MARK, fontSize: it.t.length > 8 ? 34 : 42, color: K.ink, lineHeight: 1.0 }}>{it.t}</span>
+                <span style={{ fontFamily: MARK, fontSize: it.t.length > 8 ? 30 : 42, color: K.ink, lineHeight: 1.0, whiteSpace: "nowrap" }}>{it.t}</span>
               </div>
             </div>
           </div>
         );
       })}
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -134,12 +140,12 @@ export const Chapter2: React.FC<{ kicker: string; title: string; img?: string; d
       <Tile dur={dur} dark={0.34} />
       <div style={{ position: "absolute", left: 250, right: 250, top: 26 + R, height: H, background: kraft, boxShadow: "18px 30px 60px rgba(0,0,0,0.5)", overflow: "hidden", transform: `skewX(${Math.sin(f / 9) * 0.25 * (1 - roll)}deg)` }}>
         <div style={{ position: "absolute", inset: 0, backgroundImage: "repeating-linear-gradient(180deg, rgba(0,0,0,0.05) 0 2px, rgba(255,255,255,0.05) 2px 4px, transparent 4px 190px)" }} />
-        <div style={{ position: "absolute", left: 70, top: H - 560, width: img ? 760 : 1280 }}>
+        <div style={{ position: "absolute", left: 70, top: H - 600, width: img ? 700 : 1280 }}>
           <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 40, letterSpacing: 10, color: K.red, opacity: wr }}>{kicker}</div>
-          <div style={{ fontFamily: MARK, fontSize: title.length > 16 ? 120 : 170, color: K.ink, lineHeight: 0.98, marginTop: 16, transform: "rotate(-3deg)", clipPath: `inset(-10% ${100 - wr * 104}% -10% 0)` }}>{title}</div>
+          <div style={{ fontFamily: MARK, fontSize: img ? Math.min(170, Math.round(1180 / Math.max(6, Math.max(...title.split(" ").map((w) => w.length)) + 1))) : (title.length > 16 ? 120 : 170), color: K.ink, lineHeight: 1.0, marginTop: 16, transform: "rotate(-3deg)", transformOrigin: "0 50%", clipPath: `inset(-10% ${100 - wr * 104}% -10% 0)` }}>{title}</div>
         </div>
         {img && (
-          <div style={{ position: "absolute", right: 70, top: H - 640, width: 520, padding: 16, paddingBottom: 20, background: "#F6F1E6", transform: `rotate(${lerp(18, 4, ph)}deg) scale(${lerp(1.3, 1, ph)})`, opacity: cl(ph * 2), boxShadow: "0 24px 50px rgba(0,0,0,0.5)" }}>
+          <div style={{ position: "absolute", right: 56, top: H - 640, width: 490, padding: 16, paddingBottom: 20, background: "#F6F1E6", transform: `rotate(${lerp(18, 4, ph)}deg) scale(${lerp(1.3, 1, ph)})`, opacity: cl(ph * 2), boxShadow: "0 24px 50px rgba(0,0,0,0.5)" }}>
             <Img src={staticFile(img)} style={{ width: "100%", height: 420, objectFit: "cover" }} />
             <div style={{ position: "absolute", left: 190, top: -20, width: 140, height: 42, background: "rgba(236,226,204,0.88)", transform: "rotate(-4deg)" }} />
           </div>
@@ -163,7 +169,7 @@ export const SpikeCTA: React.FC<{ src: string; lines: string[]; box: [number, nu
           {lines.map((l, i) => { const w = eio((f - 10 - i * 16) / 16); return <div key={i} style={{ fontFamily: MARK, fontSize: bw / 11.5, color: "#2A1B12", lineHeight: 1.12, whiteSpace: "nowrap", clipPath: `inset(-10% ${100 - w * 104}% -10% 0)` }}>{l}</div>; })}
         </div>
         <div style={{ position: "absolute", left: bx + bw - 400, top: by + bh - 86, transform: `scale(${lerp(3.2, 1, hit)}) rotate(${lerp(-30, -8, hit)}deg)`, opacity: cl(hit * 3) }}>
-          <div style={{ border: `9px solid ${K.red}`, outline: `3px solid ${K.red}`, outlineOffset: 6, borderRadius: 14, padding: "4px 28px", color: K.red, fontFamily: COND, fontWeight: 600, fontSize: 84, letterSpacing: 6, background: "rgba(255,250,240,0.35)", boxShadow: "0 0 0 2px rgba(179,38,30,0.15)" }}>SUBSCRIBE</div>
+          <div style={{ border: `9px solid ${K.red}`, outline: `3px solid ${K.red}`, outlineOffset: 6, borderRadius: 14, padding: "4px 28px", color: K.red, fontFamily: COND, fontWeight: 600, fontSize: 84, letterSpacing: 6, background: "rgba(255,250,240,0.35)", boxShadow: `0 0 0 ${interpolate(f, [52, 70], [0, 26], CL)}px rgba(179,38,30,${interpolate(f, [52, 70], [0.35, 0], CL)})` }}>SUBSCRIBE</div>
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
@@ -175,20 +181,20 @@ export const MapDolly: React.FC<{ src: string; pins: { x: number; y: number; t: 
   const f = useCurrentFrame();
   let cx = pins[0].x, cy = pins[0].y;
   for (let i = 1; i < pins.length; i++) { const t = eio((f - (pins[i].f - 16)) / 22); cx = lerp(cx, pins[i].x, t); cy = lerp(cy, pins[i].y, t); }
-  const out = eio((f - (dur - 34)) / 26); const z = lerp(2.0, 1.12, out);
-  const tx = cl(lerp(cx, 960, out), 960 / z, 1920 - 960 / z), ty = cl(lerp(cy, 540, out), 540 / z, 1080 - 540 / z);
+  const out = eio((f - (dur - 34)) / 26); const z = lerp(1.9, 1.5, out);
+  const mx = pins.reduce((a, p) => a + p.x, 0) / pins.length, my = pins.reduce((a, p) => a + p.y, 0) / pins.length; const tx = cl(lerp(cx, mx, out), 960 / z, 1920 - 960 / z), ty = cl(lerp(cy - 30, my - 20, out), 540 / z, 1080 - 540 / z);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink, opacity: interpolate(f, [0, 5, dur - 8, dur], [0, 1, 1, 0], CL) }}>
       <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "0 0", transform: `translate(${960 - tx * z}px, ${540 - ty * z}px) scale(${z})` }}>
         <Img src={staticFile(src)} style={{ width: 1920, height: 1080, objectFit: "fill" }} />
         {pins.map((p, i) => {
-          const s = sp(f, p.f, 7, 0.7); const fall = cl(s * 1.4); const up = i % 2 === 0;
+          const s = sp(f, p.f, 7, 0.7); const fall = cl(s * 1.4); const up = i % 2 === 0; const izq = p.x > 1200;
           return (
             <div key={i} style={{ position: "absolute", left: p.x, top: p.y, opacity: cl((f - p.f) / 2) }}>
               <div style={{ position: "absolute", left: 4, top: -4, width: 46 * fall, height: 12, borderRadius: "50%", background: "rgba(0,0,0,0.38)", transform: "skewX(-40deg)" }} />
               <div style={{ position: "absolute", left: -2, top: -46 - (1 - fall) * 260, width: 4, height: 48, background: "linear-gradient(90deg, #7d8286, #f2f4f5, #6c7175)" }} />
               <div style={{ position: "absolute", left: -17, top: -78 - (1 - fall) * 260, width: 34, height: 34, borderRadius: "50%", background: `radial-gradient(circle at 34% 28%, #FF9A8F 0%, #D7362B 34%, ${K.red} 62%, #5E0F0A 100%)`, boxShadow: "4px 8px 10px rgba(0,0,0,0.4)" }} />
-              <div style={{ position: "absolute", left: 16, top: up ? -118 : -40, transformOrigin: "0 50%", transform: `scale(${s}) rotate(${up ? -6 : 5}deg)`, background: paper, padding: "4px 16px 6px 14px", boxShadow: "0 8px 16px rgba(0,0,0,0.4)", clipPath: "polygon(0 0, 100% 0, 92% 50%, 100% 100%, 0 100%)", whiteSpace: "nowrap", fontFamily: MARK, fontSize: 30, color: K.ink }}>{p.t}&nbsp;&nbsp;</div>
+              <div style={{ position: "absolute", ...(izq ? { right: 18 } : { left: 18 }), top: up ? -124 : -34, transformOrigin: izq ? "100% 50%" : "0 50%", transform: `scale(${s}) rotate(${(izq ? -1 : 1) * (up ? -5 : 4)}deg)`, background: paper, padding: "5px 20px 8px 18px", boxShadow: "0 8px 16px rgba(0,0,0,0.4)", whiteSpace: "nowrap", fontFamily: MARK, fontSize: 40, color: K.ink }}>{p.t}</div>
             </div>
           );
         })}
@@ -207,11 +213,11 @@ export const MethodScene2: React.FC<{ n: number; rank: number; total: number; ti
       {f >= 9 && (
         <AbsoluteFill style={{ opacity: o }}>
           <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}><Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z})`, transformOrigin: right ? "30% 60%" : "70% 60%" }} /></AbsoluteFill>
-          <div style={{ position: "absolute", top: 0, ...(right ? { right: 150 } : { left: 150 }), transformOrigin: "50% 0", transform: `rotate(${lerp(right ? -40 : 40, Math.sin(f / 21) * 1.4, cl(sw))}deg) translateY(${(1 - cl(sw * 1.6)) * -600}px)` }}>
+          <div style={{ position: "absolute", top: 0, ...(right ? { right: 50 } : { left: 50 }), transformOrigin: "50% 0", transform: `rotate(${lerp(right ? -40 : 40, Math.sin(f / 21) * 1.4, cl(sw))}deg) translateY(${(1 - cl(sw * 1.6)) * -600}px)` }}>
             <div style={{ width: 4, height: 150, background: "#E9E0C8", margin: "0 auto" }} />
-            <div style={{ background: kraft, borderRadius: "90px 90px 14px 14px", padding: "74px 44px 34px", minWidth: 430, textAlign: "center", boxShadow: "0 30px 60px rgba(0,0,0,0.6)", position: "relative" }}>
+            <div style={{ background: kraft, borderRadius: "90px 90px 14px 14px", padding: "74px 36px 30px", minWidth: 390, textAlign: "center", boxShadow: "0 30px 60px rgba(0,0,0,0.6)", position: "relative" }}>
               <div style={{ position: "absolute", left: "50%", top: 22, marginLeft: -15, width: 30, height: 30, borderRadius: "50%", background: "rgba(30,20,10,0.82)", boxShadow: "inset 0 0 0 5px rgba(255,235,200,0.5)" }} />
-              <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 30, letterSpacing: 7, color: K.red }}>METHOD {n} OF {total}</div>
+              <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 40, letterSpacing: 6, color: K.red }}>METHOD {rank} OF {total}</div>
               <div style={{ fontFamily: SLAB, fontWeight: 800, fontSize: 250, lineHeight: 0.92, color: K.ink }}><span style={{ fontFamily: COND, fontWeight: 500, fontSize: 70, verticalAlign: "top", marginRight: 8, color: K.red }}>Nº</span>{rank}</div>
               <div style={{ display: "flex", flexWrap: "wrap", columnGap: 16, justifyContent: "center", maxWidth: 520 }}>
                 {words.map((w, i) => { const p = sp(f, 30 + i * 5, 14, 0.6); return <span key={i} style={{ fontFamily: MARK, fontSize: 70, color: K.ink, opacity: p, transform: `translateY(${(1 - p) * 24}px)`, display: "inline-block" }}>{w}</span>; })}
@@ -231,3 +237,34 @@ export const MethodScene2: React.FC<{ n: number; rank: number; total: number; ti
   );
 };
 export const seedOf = (n: number) => hash(n);
+
+// ── índice del video: la cámara recorre el riel de ganchos del Nº 8 al Nº 1; las siete primeras fotos cuelgan y la Nº 1 va envuelta en papel madera
+export const RailIndex: React.FC<{ cards: RCard[]; dur: number }> = ({ cards, dur }) => {
+  const f = useCurrentFrame(); const o = interpolate(f, [0, 6, dur - 10, dur], [0, 1, 1, 0], CL);
+  const order = [...cards].sort((a, b) => b.rank - a.rank); const W = 214;
+  const t = eio((f - 6) / (dur - 40)); const cx = lerp(70 + W / 2 + 130, 70 + 7 * 228 + W / 2 - 40, t); const z = lerp(2.3, 2.6, t);
+  return (
+    <AbsoluteFill style={{ opacity: o }}>
+      <Tile dur={dur} dark={0.34} />
+      <AbsoluteFill style={{ transform: `translate(${960 - cx}px, 130px) scale(${z})`, transformOrigin: `${cx}px 290px` }}>
+        <div style={{ position: "absolute", left: -1400, right: -1400, top: 150, height: 26, background: steel, boxShadow: "0 14px 22px rgba(0,0,0,0.45)" }} />
+        {order.map((c, i) => {
+          const x = 70 + i * 228; const drop = sp(f, 4 + i * 5, 8, 1.0); const sway = Math.sin((f + i * 19) / 21) * 1.5; const tapada = c.rank === 1;
+          return (
+            <div key={c.rank} style={{ position: "absolute", left: x, top: 164, width: W, transformOrigin: "50% 0", transform: `translateY(${(1 - cl(drop * 1.6)) * -700}px) rotate(${lerp(i % 2 ? 22 : -22, sway, cl(drop))}deg)` }}>
+              <div style={{ width: 26, height: 54, margin: "0 auto", border: "7px solid #9AA1A5", borderBottom: "none", borderRadius: "16px 16px 0 0", boxSizing: "border-box" }} />
+              <div style={{ background: tapada ? kraft : paper, padding: 10, paddingBottom: 12, boxShadow: "0 18px 34px rgba(0,0,0,0.55)", position: "relative" }}>
+                <div style={{ width: "100%", height: 150, overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  {tapada ? <span style={{ fontFamily: SLAB, fontWeight: 800, fontSize: 80, color: K.red }}>1961</span> : <Img src={staticFile(c.src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />}
+                </div>
+                <div style={{ fontFamily: MARK, fontSize: c.title.length > 12 ? 24 : 30, color: K.ink, textAlign: "center", marginTop: 8, lineHeight: 1.05, height: 50 }}>{tapada ? "My father\u2019s" : c.title}</div>
+                <div style={{ position: "absolute", left: -12, top: -10, background: K.ink, color: "#E9C46A", fontFamily: SLAB, fontWeight: 800, fontSize: 30, padding: "0 10px", transform: "rotate(-5deg)" }}><span style={{ fontFamily: COND, fontWeight: 500, fontSize: 16, marginRight: 3 }}>Nº</span>{c.rank}</div>
+                {tapada && <div style={{ position: "absolute", left: 0, right: 0, top: 96, height: 6, background: "repeating-linear-gradient(60deg, #EDE3CC 0 6px, #B9A983 6px 10px)" }} />}
+              </div>
+            </div>
+          );
+        })}
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};

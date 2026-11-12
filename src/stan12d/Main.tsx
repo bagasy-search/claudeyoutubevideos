@@ -20,7 +20,7 @@ const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
       case "seven": return <N.SevenPhotos items={s.items} dur={dur} />;
       case "cta": return <N.SpikeCTA src={s.src} lines={s.lines} box={s.box} dur={dur} />;
       case "map": return <N.MapDolly src={s.src} pins={s.pins} dur={dur} />;
-      case "carousel": return <S.Carousel cards={CARDS} bg={s.bg} head={s.head} sub={s.sub} subAt={s.subAt} dur={dur} />;
+      case "carousel": return <N.RailIndex cards={CARDS} dur={dur} />;
       case "recap": return <S.Recap cards={CARDS} marks={s.marks} bg={s.bg} head={s.head} dur={dur} />;
       case "esc": { const K = (E as any)[s.name]; return K ? <K dur={dur} {...s.props} /> : null; }
       default: return null;
@@ -55,7 +55,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "counter": return <S.Count to={o.to} suffix={o.suffix} label={o.label} dur={d} />;
     case "mis": return <S.Mis n={o.n} text={o.text} dur={d} />;
     case "rec": return <S.Rec n={o.n} title={o.title} score={o.score} dur={d} />;
-    case "progress": return <S.Progress n={o.n} total={8} title={o.title} dur={d} />;
+    case "progress": return <S.Progress n={9 - o.n} total={8} title={o.title} dur={d} />;
     case "top": return <S.Top n={o.n} text={o.text} dur={d} />;
     case "strip": return <N.Strip n={o.n} total={5} text={o.text} dur={d} />;
     default: return null;
