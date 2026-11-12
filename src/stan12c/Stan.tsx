@@ -328,9 +328,9 @@ export const RecapItem: React.FC<{ n: number; total: number; name: string; fact:
       <div style={{ position: "absolute", left: 0, bottom: 60, width: W, height: 300, overflow: "hidden", backgroundImage: paperBg, boxShadow: "0 -10px 30px rgba(0,0,0,0.35), 0 14px 30px rgba(0,0,0,0.35)" }}>
         <div style={{ position: "absolute", left: 70, top: 22, width: 1780, display: "flex", alignItems: "center" }}>
           <div style={{ fontFamily: SERIF, fontSize: 190, lineHeight: 1, color: K.red, width: n > 9 ? 250 : 170 }}>{n}</div>
-          <div>
+          <div style={{ flex: 1, minWidth: 0 }}>
             <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 116, lineHeight: 1, color: K.ink, whiteSpace: "nowrap" }}>{name}</div>
-            <Write f0={Math.min(fFact, Math.round(dur * 0.45))} len={22} style={{ fontFamily: HAND, fontWeight: 700, fontSize: Math.min(96, Math.floor((n > 9 ? 1500 : 1580) / (fact.length * 0.5))), lineHeight: 1.1, color: "rgba(42,26,18,0.92)", marginTop: 2, whiteSpace: "nowrap" }}>{fact}</Write>
+            <Write f0={Math.min(fFact, Math.round(dur * 0.45))} len={22} style={{ fontFamily: HAND, fontWeight: 700, fontSize: Math.min(108, Math.floor((n > 9 ? 1500 : 1580) / (fact.length * 0.43))), lineHeight: 1.1, color: "rgba(42,26,18,0.92)", marginTop: 2, whiteSpace: "nowrap" }}>{fact}</Write>
           </div>
         </div>
       </div>
