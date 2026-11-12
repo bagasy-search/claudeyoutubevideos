@@ -206,7 +206,7 @@ export const RuleSheet: React.FC<{ n: number; title: string; sub: string; fSub: 
           <div style={{ position: "absolute", left: 80, top: 70, fontFamily: SERIF, fontSize: 300, lineHeight: 0.8, color: K.red }}>{n}</div>
           <div style={{ position: "absolute", left: 330, right: 70, top: 110 }}>
             <Write f0={5} len={18} style={{ fontFamily: HAND, fontWeight: 700, fontSize: 150, lineHeight: 1, color: K.ink }}>{title}</Write>
-            <Write f0={fSub} len={20} style={{ fontFamily: HAND, fontSize: 70, lineHeight: 1.15, color: "rgba(42,26,18,0.82)", marginTop: 40 }}>{sub}</Write>
+            <Write f0={fSub} len={20} style={{ fontFamily: HAND, fontSize: 88, lineHeight: 1.12, color: "rgba(42,26,18,0.88)", marginTop: 36 }}>{sub}</Write>
           </div>
         </div>
         <Tape style={{ left: 880, top: 126, transform: `rotate(${side * 3}deg)`, opacity: p }} />
@@ -229,7 +229,7 @@ export const RecapItem: React.FC<{ n: number; total: number; name: string; fact:
           <div style={{ fontFamily: SERIF, fontSize: 190, lineHeight: 1, color: K.red, width: n > 9 ? 250 : 170 }}>{n}</div>
           <div>
             <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 104, lineHeight: 1, color: K.ink }}>{name}</div>
-            <Write f0={fFact} len={22} style={{ fontFamily: HAND, fontSize: 58, lineHeight: 1.1, color: "rgba(42,26,18,0.85)", marginTop: 6, whiteSpace: "nowrap" }}>{fact}</Write>
+            <Write f0={fFact} len={22} style={{ fontFamily: HAND, fontSize: 70, lineHeight: 1.1, color: "rgba(42,26,18,0.9)", marginTop: 2, whiteSpace: "nowrap" }}>{fact}</Write>
           </div>
         </div>
       </div>
@@ -282,7 +282,7 @@ export const MapChi: React.FC<{ src: string; pins: Pin[]; dur: number }> = ({ sr
               {nx && <div style={{ position: "absolute", left: p.x, top: p.y - 3, width: len * grow, height: 6, background: K.red, transformOrigin: "0 50%", transform: `rotate(${ang}deg)`, boxShadow: "0 3px 5px rgba(0,0,0,0.35)", borderRadius: 3 }} />}
               <div style={{ position: "absolute", left: p.x - 20, top: p.y - 20 - (1 - Math.min(1, s)) * 240, width: 40, height: 40, borderRadius: "50%", opacity: Math.min(1, s * 3),
                 background: "radial-gradient(circle at 34% 30%, #FF9A8C 0%, #B3261E 45%, #5E0F0A 100%)", boxShadow: `${7 * s}px ${10 * s}px 10px rgba(0,0,0,0.45)` }} />
-              <div style={{ position: "absolute", left: p.x + 30, top: p.y - 44, backgroundImage: paperBg, padding: "6px 20px", fontFamily: HAND, fontWeight: 700, fontSize: 44, color: K.ink, whiteSpace: "nowrap",
+              <div style={{ position: "absolute", left: p.x + 34, top: p.y - 56, backgroundImage: paperBg, padding: "8px 24px", fontFamily: HAND, fontWeight: 700, fontSize: 62, color: K.ink, whiteSpace: "nowrap",
                 boxShadow: "0 8px 16px rgba(0,0,0,0.35)", transform: `rotate(-2deg) scale(${Math.min(1, s)})`, transformOrigin: "0 50%", opacity: Math.min(1, s * 2) }}>{p.label}</div>
             </React.Fragment>
           );
