@@ -188,8 +188,9 @@ export const QR: React.FC<{ s: any }> = ({ s }) => {
 
 // ---------- MEJORA 3: apertura de cada receta = la ficha-título entra a la mesa, el número se dibuja y el nombre se escribe ----------
 export const Opener: React.FC<{ s: any }> = ({ s }) => {
-  const t = useT(), d = s.dur / FPS, sd = hash(s.uid);
-  const land = spr(t, 0.1, 7, 0.55), cam = eIO(t, 0, d);
+  const t0 = useT(), d = s.dur / FPS, sd = hash(s.uid);
+  const t = t0 / Math.min(1, d / 3.2);   // aperturas cortas: todo entra más rápido, el nombre se lee entero
+  const land = spr(t, 0.1, 7, 0.55), cam = eIO(t0, 0, d);
   const words = String(s.name).split(" ");
   const num = String(s.n);
   const draw = cl((t - 0.45) / 0.7);
