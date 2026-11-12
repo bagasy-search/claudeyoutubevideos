@@ -141,7 +141,7 @@ export const Chapter2: React.FC<{ kicker: string; title: string; img?: string; d
         <div style={{ position: "absolute", inset: 0, backgroundImage: "repeating-linear-gradient(180deg, rgba(0,0,0,0.05) 0 2px, rgba(255,255,255,0.05) 2px 4px, transparent 4px 190px)" }} />
         <div style={{ position: "absolute", left: 70, top: H - 600, width: img ? 700 : 1280 }}>
           <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 40, letterSpacing: 10, color: K.red, opacity: wr }}>{kicker}</div>
-          <div style={{ fontFamily: MARK, fontSize: img ? Math.min(170, Math.round(1180 / Math.max(6, Math.max(...title.split(" ").map((w) => w.length)) + 1))) : (title.length > 16 ? 120 : 170), color: K.ink, lineHeight: 1.0, marginTop: 16, transform: "rotate(-3deg)", transformOrigin: "0 50%", clipPath: `inset(-10% ${100 - wr * 104}% -10% 0)` }}>{title}</div>
+          <div style={{ fontFamily: MARK, fontSize: img ? Math.min(170, title.length <= 9 ? Math.round(1000 / title.length) : 170, Math.round(1180 / Math.max(6, Math.max(...title.split(" ").map((w) => w.length)) + 1))) : (title.length > 16 ? 120 : 170), color: K.ink, lineHeight: 1.0, marginTop: 16, transform: "rotate(-3deg)", transformOrigin: "0 50%", clipPath: `inset(-10% ${100 - wr * 104}% -10% 0)` }}>{title}</div>
         </div>
         {img && (
           <div style={{ position: "absolute", right: 56, top: H - 640, width: 490, padding: 16, paddingBottom: 20, background: "#F6F1E6", transform: `rotate(${lerp(18, 4, ph)}deg) scale(${lerp(1.3, 1, ph)})`, opacity: cl(ph * 2), boxShadow: "0 24px 50px rgba(0,0,0,0.5)" }}>

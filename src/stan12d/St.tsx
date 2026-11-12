@@ -39,6 +39,7 @@ export const Clip: React.FC<{ src: string; seed: number; dur: number; clipDur?: 
   const rate = clipDur && clipDur < dur / 30 + 0.1 ? Math.max(minRate, (clipDur - 0.15) / (dur / 30)) : 1;
   return <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}><OffthreadVideo src={staticFile(src)} muted={volume === 0} volume={volume} playbackRate={rate} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} /></AbsoluteFill>;
 };
+const AVMASK = "radial-gradient(ellipse 12.5% 25% at 50.5% 19%, #000 72%, transparent 100%), radial-gradient(ellipse 25% 30% at 50% 50%, #000 76%, transparent 100%), radial-gradient(ellipse 29% 50% at 50% 90%, #000 80%, transparent 100%)";
 // avatar: push lento siempre, punch-in y reencuadre lateral
 export const Avatar: React.FC<{ src: string; seed: number; dur: number; mods?: { a: number; b: number; k: string }[] }> = ({ src, seed, dur, mods = [] }) => {
   const f = useCurrentFrame(); const inn = hash(seed + 99) % 3 !== 0; const t = f / Math.max(1, dur);
@@ -49,7 +50,15 @@ export const Avatar: React.FC<{ src: string; seed: number; dur: number; mods?: {
     if (m.k === "punch") z *= 1 + 0.12 * w;
     if (m.k === "split") { z *= 1 + 0.14 * w; tx += -4 * w; }
   }
-  return <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}><OffthreadVideo src={staticFile(src)} muted style={{ width: "100%", height: "100%", objectFit: "cover", transform: `translateX(${tx}%) scale(${z})`, transformOrigin: "50% 30%" }} /></AbsoluteFill>;
+  // fondo limpio (cuadro del propio reel) + el video solo sobre la persona: tapa el ruido de color que el reel junta con los minutos
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
+      <AbsoluteFill style={{ transform: `translateX(${tx}%) scale(${z})`, transformOrigin: "50% 30%" }}>
+        <Img src={staticFile("stan12d/av_plate.png")} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover" }} />
+        <OffthreadVideo src={staticFile(src)} muted style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", WebkitMaskImage: AVMASK, maskImage: AVMASK }} />
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
 };
 
 // ---------- materiales
