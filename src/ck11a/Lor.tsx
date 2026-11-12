@@ -27,7 +27,7 @@ const TableBg: React.FC<{ src: string; dur: number; seed: number; dark?: number 
 const Stamp: React.FC<{ size?: number; rot?: number }> = ({ size = 1, rot = -8 }) => (
   <div style={{ border: `${3 * size}px solid ${WINE}`, borderRadius: 8 * size, padding: `${6 * size}px ${16 * size}px`, color: WINE, fontFamily: SANS, fontWeight: 600,
     fontSize: 19 * size, letterSpacing: 3 * size, transform: `rotate(${rot}deg)`, opacity: 0.82, whiteSpace: "nowrap", outline: `${1 * size}px solid ${WINE}`, outlineOffset: 3 * size }}>
-    FROM MY CHURCH COOKBOOK
+    FROM LORETTA'S KITCHEN
   </div>
 );
 
