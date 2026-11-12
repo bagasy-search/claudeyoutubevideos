@@ -160,7 +160,7 @@ lcf11d/y/y3131.mp4
 lcf11d/g/g3150.png
 lcf11d/g/g3160.png
 lcf11d/libro/p51.png
-lcf11d/y/y3240.mp4
+lcf11d/g/g3240.png
 lcf11d/g/g3270.png
 lcf11d/g/g3280.png
 lcf11d/g/g3290.png
