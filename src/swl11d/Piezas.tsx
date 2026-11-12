@@ -294,7 +294,7 @@ export const Route: React.FC<{ a: string; b: string; dur: number }> = ({ a, b, d
 export const Thermo: React.FC<{ deg: number; label: string; sub: string; subAt: number; dur: number }> = ({ deg, label, sub, subAt, dur }) => {
   const f = useCurrentFrame(); const p = useIn(0, 16), o = useOut(dur, 10);
   const t = interpolate(f, [6, 46], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
-  const v = Math.round(20 + (deg - 20) * t);
+  const v = Math.round(70 + (deg - 70) * t);
   const s = interpolate(f, [subAt, subAt + 12], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <AbsoluteFill style={{ opacity: o }}>
@@ -306,7 +306,7 @@ export const Thermo: React.FC<{ deg: number; label: string; sub: string; subAt: 
           {[0, 1, 2, 3, 4, 5].map((i) => <line key={i} x1="75" x2="92" y1={60 + i * 55} y2={60 + i * 55} stroke={C.ink} strokeWidth="3" />)}
         </svg>
         <div>
-          <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 160, lineHeight: 0.9, color: C.white, textShadow: shadow }}>{v}°C</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 160, lineHeight: 0.9, color: C.white, textShadow: shadow }}>{v}°F</div>
           <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 28, letterSpacing: 4, textTransform: "uppercase", color: "#F2E6D3", textShadow: shadow }}>{label}</div>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 58, color: "#FFE7C9", textShadow: shadow, marginTop: 16, opacity: s, transform: `translateY(${(1 - s) * 16}px)` }}>{sub}</div>
         </div>
