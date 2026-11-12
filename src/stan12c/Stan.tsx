@@ -307,7 +307,7 @@ export const RuleSheet: React.FC<{ n: number; title: string; sub: string; fSub: 
             <div style={{ position: "absolute", left: 350, right: 50, top: 0, bottom: 0, display: "flex", flexDirection: "column", justifyContent: "center" }}>
               <Write f0={5} len={18} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fsT, lineHeight: 1, color: K.ink, whiteSpace: "nowrap" }}>{title}</Write>
               <div style={{ height: 10, width: 980, background: K.red, borderRadius: 5, marginTop: 10, transform: `scaleX(${und}) rotate(-0.6deg)`, transformOrigin: "0 50%" }} />
-              <Write f0={fSub} len={20} style={{ fontFamily: HAND, fontWeight: 700, fontSize: Math.min(92, Math.floor(1020 / (sub.length * 0.42))), lineHeight: 1.1, color: "rgba(42,26,18,0.9)", marginTop: 30, whiteSpace: "nowrap" }}>{sub}</Write>
+              <Write f0={Math.min(fSub, Math.round(dur * 0.45))} len={20} style={{ fontFamily: HAND, fontWeight: 700, fontSize: Math.min(92, Math.floor(1020 / (sub.length * 0.42))), lineHeight: 1.1, color: "rgba(42,26,18,0.9)", marginTop: 30, whiteSpace: "nowrap" }}>{sub}</Write>
             </div>
           </div>
         </div>
@@ -368,10 +368,11 @@ export type Pin = { x: number; y: number; label: string; f: number };
 export const MapChi: React.FC<{ src: string; pins: Pin[]; dur: number }> = ({ src, pins, dur }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
   const last = pins[pins.length - 1];
-  const sc = interpolate(f, [0, dur], [1.05, 1.42], { ...CL, easing: ease });
+  const sc = interpolate(f, [0, dur], [1.04, 1.2], { ...CL, easing: ease });
+  const mx = pins.reduce((a, p) => a + p.x, 0) / pins.length, my = pins.reduce((a, p) => a + p.y, 0) / pins.length;
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink, opacity: fadeIO(f, dur, 5, 7) }}>
-      <AbsoluteFill style={{ transform: `scale(${sc})`, transformOrigin: `${last.x}px ${last.y}px` }}>
+      <AbsoluteFill style={{ transform: `scale(${sc})`, transformOrigin: `${mx}px ${my}px` }}>
         <Img src={staticFile(src)} style={{ width: 1920, height: 1080, objectFit: "fill" }} />
         {pins.map((p, i) => {
           const s = spring({ frame: f - p.f, fps, config: { damping: 9, mass: 0.6 } });

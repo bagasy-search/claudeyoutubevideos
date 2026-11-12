@@ -35,14 +35,14 @@ export const EscBalanza: React.FC<{ src: string; fRib: number; fSlice: number; f
   const HX = 975, HY = 60;
   const b = seg(f, 0, 40);
   const down = seg(f, fRib - 10, fRib + 30);
-  const cx = lerp(960, 975, b), cy = lerp(lerp(540, 470, b), 600, down), k = lerp(1.0, 1.14, b) + 0.03 * seg(f, fFight, dur);
+  const cx = lerp(960, 975, b), cy = lerp(lerp(540, 470, b), 600, down), k = lerp(1.0, 1.14, b) + 0.05 * (f / dur);
   const th = -3 * damp(f - fSlice, 16, 34);
   // aguja: 0 = arriba. 285 grados = la res entera; 16 grados = los tres bifes
   const heavy = 285 * damp(f - 12, 9, 40) * (f >= 12 ? 1 : 0);
   const small = seg(f, fRib + 4, fRib + 26);
   const wob = f > fRib + 26 ? 5 * Math.exp(-(f - fRib - 26) / 18) * Math.sin((f - fRib) / 2.6) : 0;
   const fight = f > fFight ? 2.2 * Math.sin(f / 1.7) * Math.exp(-(f - fFight) / 40) : 0;
-  const ang = lerp(Math.min(300, heavy), 16, small) + wob + fight;
+  const ang = lerp(Math.min(300, heavy), 16, small) + wob + fight + 1.1 * Math.sin(f / 6.5);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#1b1a18" }}>
       <AbsoluteFill style={cam(cx, cy, k)}>
@@ -70,21 +70,24 @@ export const EscCompas: React.FC<{ src: string; fOne: number; fOther: number; fC
   const open = damp(f - fCut, 12, 60) * (f >= fCut ? 1 : 0);
   const o = Math.min(1.06, open);
   const cx = lerp(lerp(lerp(960, 640, seg(f, fOne - 6, fOne + 30)), 1330, seg(f, fOther - 6, fOther + 30)), 1010, seg(f, fCut - 14, fCut + 10));
-  const cy = lerp(lerp(520, 420, seg(f, fOne - 6, fOne + 30)), 640, seg(f, fCut - 14, fCut + 16));
-  const s = lerp(lerp(1.12, 1.32, seg(f, fOne - 6, fOne + 30)), 0.74, seg(f, fCut - 14, fCut + 16)) + 0.05 * seg(f, fSlice, dur);
+  const cy = lerp(lerp(520, 420, seg(f, fOne - 6, fOne + 30)), 560, seg(f, fCut - 14, fCut + 16));
+  const s = lerp(lerp(1.12, 1.32, seg(f, fOne - 6, fOne + 30)), 0.9, seg(f, fCut - 8, fCut + 18)) + 0.06 * seg(f, fSlice, dur);
   // mientras la escala es 1 o más, la cámara nunca deja ver el borde de la foto
   let tx = 960 - cx * s, ty = 540 - cy * s;
   if (s >= 1) { tx = Math.min(0, Math.max(1920 - 1920 * s, tx)); ty = Math.min(0, Math.max(1080 - 1080 * s, ty)); }
   const stage: React.CSSProperties = { position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "0 0", transform: `translate(${tx}px, ${ty}px) scale(${s})` };
   const half = (left: boolean): React.CSSProperties => ({ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: `${PX}px ${PY}px`, transform: `rotate(${(left ? -1 : 1) * ANG * o}deg)` });
-  const clip = (left: boolean): React.CSSProperties => ({ ...FULL, clipPath: left ? `polygon(0px 0px, ${PX}px 0px, ${PX}px 935px, 0px 935px)` : `polygon(${PX}px 0px, 1920px 0px, 1920px 935px, ${PX}px 935px)` });
+  const clip = (left: boolean): React.CSSProperties => ({ ...FULL, clipPath: left
+    ? "polygon(52px 142px, 300px 92px, 700px 66px, 1010px 56px, 1010px 566px, 900px 508px, 700px 428px, 480px 348px, 300px 278px, 150px 226px, 56px 166px)"
+    : "polygon(1010px 56px, 1150px 40px, 1400px 64px, 1650px 104px, 1746px 146px, 1796px 400px, 1816px 700px, 1806px 866px, 1740px 892px, 1560px 838px, 1300px 748px, 1100px 628px, 1010px 566px)" });
+  const base = 1 - seg(f, fCut - 18, fCut - 9);
   const cutLine = seg(f, fCut - 12, fCut);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#d79a8c" }}>
       {/* fondo: el mismo papel rosa de la foto, ampliado */}
       <Img src={staticFile(src)} style={{ ...FULL, transformOrigin: "330px 700px", transform: "scale(4.2)" }} />
       <div style={stage}>
-        {f < fCut - 14 && <Img src={staticFile(src)} style={FULL} />}
+        {base > 0 && <Img src={staticFile(src)} style={{ ...FULL, opacity: base }} />}
         <div style={half(true)}>
           <Img src={staticFile(src)} style={clip(true)} />
           <Fibra x={300} y={205} len={430} a={22} f0={fOne} />
@@ -144,12 +147,11 @@ export const EscFalla: React.FC<{ src: string; fStop: number; fCut: number; dur:
         {/* lado del lomo: se estira hacia arriba desde la mesa (y = 946), la pared no se mueve */}
         <Img src={staticFile(src)} style={{ ...FULL, transformOrigin: "50% 946px", transform: `scaleY(${1 + 0.13 * up})`, clipPath: POLY }} />
         {/* sombra del escalón sobre la línea del corte */}
-        <div style={{ position: "absolute", left: 500, top: 440 - 64 * up, width: 26, height: 360 + 64 * up, transformOrigin: "50% 0", transform: "rotate(-6.6deg)", background: "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 70%, rgba(0,0,0,0) 100%)", opacity: Math.min(1, up) }} />
+        <div style={{ position: "absolute", left: 500, top: 462 - 56 * up, width: 26, height: 338 + 56 * up, transformOrigin: "50% 0", transform: "rotate(-6.6deg)", background: "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 70%, rgba(0,0,0,0) 100%)", opacity: Math.min(1, up) }} />
         {/* la hoja: una línea de luz baja por el hueco entre la 5ª y la 6ª costilla */}
         {f < fCut + 12 && <div style={{ position: "absolute", left: 517, top: 330, width: 6, height: 500 * blade, transformOrigin: "50% 0", transform: "rotate(-6.2deg)", background: "rgba(255,255,255,0.96)", boxShadow: "0 0 0 2px rgba(0,0,0,0.3)", opacity: 1 - seg(f, fCut + 2, fCut + 12) }} />}
         <Rotulo x={170} y={300} t="chuck" f0={fCut + 16} size={78} rot={-3} />
         <Rotulo x={650} y={236} t="ribeye" f0={fCut + 30} size={78} rot={2} />
-        <Rotulo x={420} y={880} t="5th rib | 6th rib" f0={fCut + 46} size={54} rot={-1} />
       </AbsoluteFill>
     </AbsoluteFill>
   );
