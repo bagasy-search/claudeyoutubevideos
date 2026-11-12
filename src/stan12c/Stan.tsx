@@ -191,7 +191,7 @@ export const ChalkBoard: React.FC<{ head: string; lines: BLine[]; source: string
                 <Write key={i} f0={l.f} len={l.big ? 20 : 14} style={{ fontFamily: HAND, fontWeight: 700, fontSize: l.big ? (kind === "tally" ? 150 : 170) : 84, lineHeight: l.big ? 1.02 : 1.18, color: l.red ? "#FF9D8A" : K.chalk, textShadow: "0 0 2px rgba(255,255,255,0.35)", whiteSpace: "nowrap" }}>{l.t}</Write>
               ))}
             </div>
-            <div style={{ position: "absolute", left: 70, bottom: 30, fontFamily: SANS, fontWeight: 500, fontSize: 42, letterSpacing: 1, color: "rgba(243,240,230,0.9)", opacity: interpolate(f, [18, 30], [0, 1], CL) }}>{source}</div>
+            <div style={{ position: "absolute", left: 70, bottom: 30, fontFamily: SANS, fontWeight: 500, fontSize: source.length > 48 ? 32 : 42, letterSpacing: 1, color: "rgba(243,240,230,0.9)", opacity: interpolate(f, [18, 30], [0, 1], CL) }}>{source}</div>
           </div>
           {/* repisa de la tiza */}
           <div style={{ position: "absolute", left: 20, right: 20, bottom: -18, height: 26, backgroundImage: woodBg, boxShadow: "0 10px 14px rgba(0,0,0,0.35)" }} />
@@ -262,7 +262,7 @@ export const CounterCard: React.FC<{ title: string; sub: string; dur: number; se
         <div style={{ position: "absolute", left: 800, top: -60, width: 320, height: 250, borderRadius: "0 0 160px 160px", background: `linear-gradient(90deg, #7A1410 0%, ${K.red} 40%, #E0584E 55%, #7A1410 100%)`, boxShadow: "0 18px 34px rgba(0,0,0,0.4)" }} />
         <div style={{ position: "absolute", left: 868, top: 110, width: 184, height: 30, borderRadius: 8, background: "#2A1A12" }} />
         {/* timbre de mostrador */}
-        <div style={{ position: "absolute", left: 1440, top: 790, width: 220, height: 130, transformOrigin: "50% 100%", transform: `scale(1.5) ` +  `translateY(${-16 * ring * Math.abs(Math.sin(f / 2.2))}px) rotate(${Math.sin(f / 1.8) * 4 * ring}deg)` }}>
+        <div style={{ position: "absolute", left: 1620, top: 850, width: 220, height: 130, transformOrigin: "50% 100%", transform: `scale(1.5) ` +  `translateY(${-16 * ring * Math.abs(Math.sin(f / 2.2))}px) rotate(${Math.sin(f / 1.8) * 4 * ring}deg)` }}>
           <div style={{ position: "absolute", left: 96, top: 0, width: 28, height: 26, borderRadius: 8, background: "linear-gradient(90deg,#6F757A,#E9EDF0,#8B9196)" }} />
           <div style={{ position: "absolute", left: 20, top: 22, width: 180, height: 90, borderRadius: "90px 90px 8px 8px", background: "linear-gradient(100deg, #8B9196 0%, #F4F6F7 34%, #B9BEC2 60%, #6F757A 100%)", boxShadow: "0 14px 22px rgba(0,0,0,0.35)" }} />
           <div style={{ position: "absolute", left: 0, top: 108, width: 220, height: 20, borderRadius: 8, background: "#2A1A12" }} />
