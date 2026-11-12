@@ -64,7 +64,7 @@ stan12a/g/y1450.png
 stan12a/g/y1480.png
 stan12a/g/y1490.png
 stan12a/g/y1520.png
-stan12a/y/p1530.mp4
+stan12a/g/y1530.png
 stan12a/g/y1540.png
 stan12a/g/y1560.png
 stan12a/g/y1590.png
@@ -74,8 +74,9 @@ stan12a/g/y1650.png
 stan12a/g/y1680.png
 stan12a/v/v1700.mp4
 stan12a/g/g1740.png
-stan12a/g/g1810.png
+stan12a/g/y1790.png
 stan12a/g/y1800.png
+stan12a/g/g1810.png
 stan12a/g/y1850.png
 stan12a/g/y1860.png
 stan12a/g/y1930.png
@@ -141,11 +142,12 @@ stan12a/g/y3400.png
 stan12a/v/v3410.mp4
 stan12a/g/y3430.png
 stan12a/v/v3450.mp4
-stan12a/y/p3460.mp4
+stan12a/g/y3460.png
 stan12a/g/alb1961b.png
 stan12a/v/v3550.mp4
 stan12a/g/y3590.png
 stan12a/g/g3660.png
+stan12a/g/y3690.png
 stan12a/g/g3700.png
 stan12a/y/p3760.mp4
 stan12a/g/y3820.png
@@ -240,7 +242,7 @@ stan12a/g/y6140.png
 stan12a/g/y6150.png
 stan12a/g/y6160.png
 stan12a/g/y6170.png
-stan12a/g/g6190.png
+stan12a/g/y6180.png
 stan12a/v/v6190.mp4
 stan12a/g/g6210.png
 stan12a/g/y6220.png
@@ -250,7 +252,7 @@ stan12a/g/y6260.png
 stan12a/v/v6280.mp4
 stan12a/g/y6281.png
 stan12a/g/y6290.png
-stan12a/y/p6300.mp4
+stan12a/g/y6300.png
 stan12a/g/y6310.png
 stan12a/g/y6330.png
 stan12a/g/next.png
@@ -371,3 +373,4 @@ stan12a/a/win-114.mp4
 stan12a/a/win-115.mp4
 stan12a/a/win-116.mp4
 stan12a/a/win-117.mp4
+stan12a/av_plate.png

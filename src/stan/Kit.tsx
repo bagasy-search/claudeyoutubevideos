@@ -56,7 +56,7 @@ export const Clip: React.FC<{ src: string; seed: number; dur: number; clipDur?: 
 
 // avatar con encuadres variados: plano normal / cerrado (punch) / corrido para la foto al lado (split); "mano" = vaivén lento de cámara en mano
 // fondo limpio (cuadro del propio reel) + el video sólo sobre la persona: tapa el ruido de fondo que el reel junta con los minutos
-const AVMASK = "radial-gradient(ellipse 12.5% 25% at 50.5% 19%, #000 72%, transparent 100%), radial-gradient(ellipse 27% 48% at 50% 88%, #000 78%, transparent 100%)";
+const AVMASK = "radial-gradient(ellipse 12.5% 25% at 50.5% 19%, #000 72%, transparent 100%), radial-gradient(ellipse 25% 30% at 50% 50%, #000 76%, transparent 100%), radial-gradient(ellipse 29% 50% at 50% 90%, #000 80%, transparent 100%)";
 export const AvatarFramed: React.FC<{ src: string; seed: number; dur: number; mods?: { a: number; b: number; k: string }[]; mano?: boolean; plate?: string }> = ({ src, seed, dur, mods = [], mano, plate }) => {
   const f = useCurrentFrame();
   const v = hash(seed + 99) % 4; // 0 empuje, 1 abre, 2 cerrado fijo-lento, 3 medio
