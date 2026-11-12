@@ -23,8 +23,8 @@ export const EscCalor: React.FC<{ src: string; faces: [number, number, number][]
       <div style={st}>
         <Img src={staticFile(src)} style={{ ...FULL, filter: `saturate(${1 + 0.18 * warm}) brightness(${1 + 0.05 * warm})` }} />
         {faces.map(([x, y, r], i) => (k > 0.01 ? (
-          <div key={i} style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: `circle(${r * k}px at ${x}px ${y}px)`, opacity: cold }}>
-            <Img src={staticFile(src)} style={{ ...FULL, filter: "saturate(0.15) brightness(0.7) contrast(1.08)" }} />
+          <div key={i} style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, opacity: cold, WebkitMaskImage: `radial-gradient(circle ${r * k}px at ${x}px ${y}px, #000 78%, transparent 100%)`, maskImage: `radial-gradient(circle ${r * k}px at ${x}px ${y}px, #000 78%, transparent 100%)` }}>
+            <Img src={staticFile(src)} style={{ ...FULL, filter: "saturate(0.42) brightness(0.84) hue-rotate(-14deg)" }} />
           </div>
         ) : null))}
       </div>
@@ -54,31 +54,28 @@ export const EscPerilla: React.FC<{ src: string; fRed: number; fMah: number; fGi
   );
 };
 
-// ── Escena 3 · la foto se pliega como el papel que muestra: izquierda, derecha y solapas; debajo queda la tabla real
+// ── Escena 3 · la foto se pliega como el papel que muestra: el tercio izquierdo y el derecho giran sobre líneas reales y caen sobre los panchos; debajo queda la tabla
 export const EscPliego: React.FC<{ src: string; under: string; fL: number; fR: number; fT: number; dur: number }> = ({ src, under, fL, fR, fT, dur }) => {
   const f = useCurrentFrame();
-  const XL = 760, XR = 1150, YT = 270, YB = 835;
-  const L = interpolate(f, [fL, fL + 22], [0, 180], { ...CL, easing: io });
-  const R = interpolate(f, [fR, fR + 22], [0, 180], { ...CL, easing: io });
-  const T = interpolate(f, [fT, fT + 18], [0, 180], { ...CL, easing: io });
-  const B = interpolate(f, [fT + 8, fT + 26], [0, 180], { ...CL, easing: io });
-  const z = interpolate(f, [0, fL, fT + 30, dur], [1.0, 1.05, 1.5, 1.62], { ...CL, easing: io });
-  const squeeze = interpolate(f, [fT + 26, fT + 40], [1, 0.965], { ...CL, easing: io });
-  const piece = (x0: number, y0: number, w: number, h: number, dark: number): React.CSSProperties => ({ position: "absolute", left: x0, top: y0, width: w, height: h, backgroundImage: `url(${staticFile(src)})`, backgroundSize: "1920px 1080px", backgroundPosition: `${-x0}px ${-y0}px`, filter: `brightness(${1 - dark})` });
-  const sh = (a: number) => 0.1 * Math.sin((a * Math.PI) / 180) + (a > 90 ? 0.07 : 0);
+  const XL = 760, XR = 1150, W = XR - XL; // columna de los panchos; cada solapa mide lo mismo que la columna
+  const f1 = Math.max(fL, 34), f2 = Math.max(fR, f1 + 26), f3 = Math.max(fT, f2 + 30);
+  const L = interpolate(f, [f1, f1 + 24], [0, 180], { ...CL, easing: io });
+  const R = interpolate(f, [f2, f2 + 24], [0, 180], { ...CL, easing: io });
+  const sq = interpolate(f, [f3, f3 + 14], [0, 1], { ...CL, easing: io });
+  // encuadre fijo sobre los tres tercios (370–1540): nunca se ve el papel que sobra
+  const z = interpolate(f, [0, f1, f3 + 20, dur], [1.64, 1.7, 1.86, 1.95], { ...CL, easing: io });
+  const piece = (x0: number, w: number, dark: number): React.CSSProperties => ({ position: "absolute", left: x0, top: 0, width: w, height: 1080, backgroundImage: `url(${staticFile(src)})`, backgroundSize: "1920px 1080px", backgroundPosition: `${-x0}px 0px`, filter: `brightness(${1 - dark})` });
+  const sh = (a: number) => 0.1 * Math.sin((a * Math.PI) / 180) + (a > 90 ? 0.06 : 0);
   return (
     <AbsoluteFill style={{ background: "#2a1c10", overflow: "hidden" }}>
       <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "955px 552px", transform: `scale(${z})` }}>
-        <Img src={staticFile(under)} style={{ ...FULL, filter: "brightness(0.82)" }} />
-        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, perspective: 2600, perspectiveOrigin: "955px 552px", transformOrigin: "955px 552px", transform: `scale(${squeeze})` }}>
-          {/* columna central: queda abajo de todo, con los panchos */}
-          <div style={{ ...piece(XL, YT, XR - XL, YB - YT, 0), boxShadow: "0 30px 60px rgba(0,0,0,0.55)" }} />
-          {/* tercio izquierdo y derecho, a toda la altura: giran sobre las líneas 760 y 1150 y caen sobre los panchos */}
-          <div style={{ ...piece(0, 0, XL, 1080, sh(L)), transformOrigin: "100% 50%", transform: `translateZ(${L > 2 ? 2 : 0}px) rotateY(${L}deg)`, boxShadow: L > 90 ? "14px 0 26px rgba(0,0,0,0.3)" : undefined }} />
-          <div style={{ ...piece(XR, 0, 1920 - XR, 1080, sh(R)), transformOrigin: "0% 50%", transform: `translateZ(${R > 2 ? 4 : 0}px) rotateY(${-R}deg)`, boxShadow: R > 90 ? "-14px 0 26px rgba(0,0,0,0.3)" : undefined }} />
-          {/* solapas de arriba y de abajo de la columna central (se doblan al final, por encima de todo) */}
-          <div style={{ ...piece(XL, 0, XR - XL, YT, sh(T)), transformOrigin: `50% 100%`, transform: `translateZ(${T > 2 ? 8 : 0}px) rotateX(${-T}deg)`, boxShadow: T > 90 ? "0 10px 24px rgba(0,0,0,0.35)" : undefined }} />
-          <div style={{ ...piece(XL, YB, XR - XL, 1080 - YB, sh(B)), transformOrigin: `50% 0%`, transform: `translateZ(${B > 2 ? 9 : 0}px) rotateX(${B}deg)`, boxShadow: B > 90 ? "0 -10px 24px rgba(0,0,0,0.35)" : undefined }} />
+        <Img src={staticFile(under)} style={{ ...FULL, filter: "brightness(0.8)" }} />
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, perspective: 2400, perspectiveOrigin: "955px 552px", transformOrigin: "955px 552px", transform: `scale(${1 - 0.035 * sq})` }}>
+          <div style={piece(0, XL - W, 0)} />
+          <div style={piece(XR + W, 1920 - XR - W, 0)} />
+          <div style={{ ...piece(XL, W, 0), boxShadow: `0 ${30 - 14 * sq}px ${60 - 30 * sq}px rgba(0,0,0,0.55)` }} />
+          <div style={{ ...piece(XL - W, W, sh(L)), transformOrigin: "100% 50%", transform: `translateZ(${L > 2 ? 2 : 0}px) rotateY(${L}deg)`, boxShadow: L > 90 ? "12px 0 22px rgba(0,0,0,0.28)" : undefined }} />
+          <div style={{ ...piece(XR, W, sh(R)), transformOrigin: "0% 50%", transform: `translateZ(${R > 2 ? 4 : 0}px) rotateY(${-R}deg)`, boxShadow: R > 90 ? "-12px 0 22px rgba(0,0,0,0.28)" : undefined }} />
         </div>
       </div>
     </AbsoluteFill>
