@@ -39,7 +39,7 @@ export const Clip: React.FC<{ src: string; seed: number; dur: number; clipDur?: 
   const rate = clipDur && clipDur < dur / 30 + 0.1 ? Math.max(minRate, (clipDur - 0.15) / (dur / 30)) : 1;
   return <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}><OffthreadVideo src={staticFile(src)} muted={volume === 0} volume={volume} playbackRate={rate} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} /></AbsoluteFill>;
 };
-const AVMASK = "radial-gradient(ellipse 12.5% 25% at 50.5% 19%, #000 72%, transparent 100%), radial-gradient(ellipse 25% 30% at 50% 50%, #000 76%, transparent 100%), radial-gradient(ellipse 29% 50% at 50% 90%, #000 80%, transparent 100%)";
+const AVMASK = "radial-gradient(ellipse 9.11% 19.91% at 49.48% 17.13%, #000 80%, transparent 100%), radial-gradient(ellipse 9.90% 10.19% at 50.26% 39.81%, #000 80%, transparent 100%), radial-gradient(ellipse 20.83% 30.56% at 50.26% 66.67%, #000 80%, transparent 100%), radial-gradient(ellipse 6.40% 23.15% at 34.10% 63.89%, #000 80%, transparent 100%), radial-gradient(ellipse 6.40% 24.07% at 67.50% 63.89%, #000 80%, transparent 100%), radial-gradient(ellipse 24.48% 10.65% at 50.26% 88.89%, #000 80%, transparent 100%)";
 // avatar: push lento siempre, punch-in y reencuadre lateral
 export const Avatar: React.FC<{ src: string; seed: number; dur: number; mods?: { a: number; b: number; k: string }[] }> = ({ src, seed, dur, mods = [] }) => {
   const f = useCurrentFrame(); const inn = hash(seed + 99) % 3 !== 0; const t = f / Math.max(1, dur);

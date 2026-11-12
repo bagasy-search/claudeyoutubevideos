@@ -62,12 +62,12 @@ export const BeefMap: React.FC<{ src: string; regs: Reg[]; now: number; sweep?: 
   const f = useCurrentFrame(); const N = regs.length;
   const pos = sweep ? cl((f - 14) / Math.max(1, dur - 24)) * (N - 0.01) : now - 1; const i = Math.floor(cl(pos, 0, N - 1));
   const z = lerp(1.02, 1.07, eio(f / Math.max(1, dur))); const dark = sweep ? cl(f / 12) : 1;
-  const r = regs[i]; const mask = `radial-gradient(ellipse ${r.rx}px ${r.ry}px at ${r.x}px ${r.y}px, #000 58%, transparent 100%)`;
+  const r = regs[i]; const mask = `radial-gradient(ellipse ${r.rx}px ${r.ry}px at ${r.x}px ${r.y}px, #000 28%, transparent 100%)`;
   const pop = sweep ? cl((pos - i) * 6) : cl((f + 3) / 5);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
       <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: `${r.x}px ${r.y}px` }}>
-        <Img src={staticFile(src)} style={{ position: "absolute", width: 1920, height: 1080, objectFit: "fill", filter: `brightness(${lerp(1, 0.38, dark)}) saturate(${lerp(1, 0.55, dark)})` }} />
+        <Img src={staticFile(src)} style={{ position: "absolute", width: 1920, height: 1080, objectFit: "fill", filter: `brightness(${lerp(1, 0.46, dark)}) saturate(${lerp(1, 0.5, dark)})` }} />
         <Img src={staticFile(src)} style={{ position: "absolute", width: 1920, height: 1080, objectFit: "fill", WebkitMaskImage: mask, maskImage: mask, opacity: dark }} />
         <div style={{ position: "absolute", left: r.lx, top: r.ly, opacity: pop * dark, transform: `rotate(-3deg) scale(${lerp(1.18, 1, pop)})`, transformOrigin: "0 100%", whiteSpace: "nowrap" }}>
           <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 34, letterSpacing: 6, color: "#F3E7CC", textShadow: "0 2px 10px rgba(0,0,0,0.9)" }}>{i + 1} OF {N} · FRONT TO BACK</div>
