@@ -11,9 +11,16 @@ const HEROES: Record<string, any> = { ...HA };
 export const TOTAL_FRAMES_LEN11 = TOTAL;
 const T = 8; // frames de transición
 
+// cámara viva sobre los componentes: deriva lenta (zoom ≤5 % + paneo) y grano, para que ningún cierre quede congelado (AUDITOR freezedetect)
+const HeroDrift: React.FC<{ dur: number; seed: number; children: React.ReactNode }> = ({ dur, seed, children }) => {
+  const f = useCurrentFrame(); const k = interpolate(f, [0, Math.max(1, dur)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const dx = (seed % 2 ? 1 : -1) * 14 * k, dy = (seed % 3 === 0 ? -1 : 1) * 8 * k;
+  return (<AbsoluteFill><AbsoluteFill style={{ transform: `translate(${dx}px, ${dy}px) scale(${1.01 + 0.05 * k})` }}>{children}</AbsoluteFill><Q.Grain op={0.07} /></AbsoluteFill>);
+};
+
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   if (s.album) return <Q.Album src={s.src} under={s.under} seed={s.id + 1} dur={dur} />; // foto antigua como objeto
-  if (s.k === "C" && HEROES[s.comp]) { const Hh = HEROES[s.comp]; return <Hh dur={dur} src={s.bg} v={s.v} />; }
+  if (s.k === "C" && HEROES[s.comp]) { const Hh = HEROES[s.comp]; return <HeroDrift dur={dur} seed={s.id}><Hh dur={dur} src={s.bg} v={s.v} /></HeroDrift>; }
   if (s.veo) return <P.Clip src={s.veo} seed={s.id + 1} dur={dur} clipDur={s.veoDur} minRate={0.42} />; // foto animada con Veo (primer cuadro)
   if (s.k === "Y") return <P.Clip src={s.src} seed={s.id + 1} dur={dur} clipDur={s.clipDur} />;
   if (s.k === "W" || s.k === "G") return <P.Photo src={s.src} seed={s.id + 1} dur={dur} />;
