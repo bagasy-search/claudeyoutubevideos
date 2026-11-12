@@ -3,7 +3,6 @@ len11a/g/g0010.png
 len11a/y/y11.mp4
 len11a/y/y20.mp4
 len11a/g/g0021.png
-len11a/y/y22.mp4
 len11a/g/g0023.png
 len11a/g/g0050.png
 len11a/y/y90.mp4
@@ -82,7 +81,6 @@ len11a/g/g1140.png
 len11a/g/g1170.png
 len11a/g/g1180.png
 len11a/g/g1190.png
-len11a/y/y1200.mp4
 len11a/g/g1240.png
 len11a/g/g1290.png
 len11a/g/g1310.png
@@ -155,7 +153,6 @@ len11a/g/g2450.png
 len11a/g/g2460.png
 len11a/g/g2470.png
 len11a/y/y2480.mp4
-len11a/y/y2481.mp4
 len11a/g/g2520.png
 len11a/g/g2540.png
 len11a/g/g2550.png
@@ -202,7 +199,6 @@ len11a/g/g3301.png
 len11a/g/g3302.png
 len11a/g/g3330.png
 len11a/g/g3340.png
-len11a/y/y3370.mp4
 len11a/g/g3380.png
 len11a/g/g3430.png
 len11a/y/y3510.mp4
@@ -225,7 +221,6 @@ len11a/g/g3750.png
 len11a/g/g3760.png
 len11a/g/g3770.png
 len11a/g/g3790.png
-len11a/y/y3800.mp4
 len11a/y/y3820.mp4
 len11a/g/g3830.png
 len11a/y/y3890.mp4
@@ -238,14 +233,11 @@ len11a/g/g3980.png
 len11a/y/y4000.mp4
 len11a/g/g4010.png
 len11a/y/y4020.mp4
-len11a/y/y4030.mp4
 len11a/g/g4040.png
 len11a/g/g4050.png
 len11a/g/g4060.png
-len11a/y/y4070.mp4
 len11a/g/g4080.png
 len11a/y/y4090.mp4
-len11a/y/y4100.mp4
 len11a/y/y4110.mp4
 len11a/g/g4120.png
 len11a/g/g4130.png
