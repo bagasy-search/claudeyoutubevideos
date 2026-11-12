@@ -1,27 +1,23 @@
 import React from "react";
 import { AbsoluteFill, Audio, Img, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
-import { SHOTS, AVATAR, OVERLAYS, SFX, TOTAL, CARDS } from "./cues.gen";
+import { SHOTS, AVATAR, OVERLAYS, SFX, TOTAL } from "./cues.gen";
 import * as S from "./St";
 import * as E from "./Escenas";
 import * as N from "./St2";
+import * as H from "./St3";
 
-export const TOTAL_FRAMES_STAN12D = TOTAL;
+export const TOTAL_FRAMES_STAN12H = TOTAL;
 const T = 8;
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   if (s.k === "C") {
     switch (s.c) {
-      case "scene": return <N.MethodScene2 n={s.n} rank={s.rank} total={8} title={s.title} src={s.src} dur={dur} />;
-      case "rail": return <N.RankRail cards={CARDS} now={s.now} final={s.final} dur={dur} />;
+      case "hoja": return <H.Hoja src={s.src} skin={s.skin} box={s.box} rows={s.rows} size={s.size} pitch={s.pitch} focus={s.focus} zoom={s.zoom} dur={dur} />;
+      case "beef": return <H.BeefMap src={s.src} regs={s.regs} now={s.now} sweep={s.sweep} dur={dur} />;
+      case "duo": return <H.Duo a={s.a} b={s.b} dur={dur} />;
       case "need": return <N.NeedPhoto src={s.src} tags={s.tags} dur={dur} />;
-      case "score": return <S.ScoreBoard rows={s.rows} now={s.now} dur={dur} />;
-      case "sheet": return <S.Sheet kicker={s.kicker} title={s.title} lines={s.lines} dur={dur} seed={s.id} />;
       case "chapter": return <N.Chapter2 kicker={s.kicker} title={s.title} img={s.img} dur={dur} />;
-      case "seven": return <N.SevenPhotos items={s.items} dur={dur} />;
       case "cta": return <N.SpikeCTA src={s.src} lines={s.lines} box={s.box} dur={dur} />;
-      case "map": return <N.MapDolly src={s.src} pins={s.pins} dur={dur} />;
-      case "carousel": return <N.RailIndex cards={CARDS} dur={dur} />;
-      case "recap": return <S.Recap cards={CARDS} marks={s.marks} bg={s.bg} head={s.head} dur={dur} />;
       case "esc": { const K = (E as any)[s.name]; return K ? <K dur={dur} {...s.props} /> : null; }
       default: return null;
     }
@@ -54,15 +50,11 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "timer": return <S.Timer min={o.min} label={o.label} dur={d} />;
     case "counter": return <S.Count to={o.to} suffix={o.suffix} label={o.label} dur={d} />;
     case "mis": return <S.Mis n={o.n} text={o.text} dur={d} />;
-    case "rec": return <S.Rec n={o.n} title={o.title} score={o.score} dur={d} />;
-    case "progress": return <S.Progress n={9 - o.n} total={8} title={o.title} dur={d} />;
-    case "top": return <S.Top n={o.n} text={o.text} dur={d} />;
-    case "strip": return <N.Strip n={o.n} total={5} text={o.text} dur={d} />;
     default: return null;
   }
 };
 
-export const MainStan12d: React.FC = () => (
+export const MainStan12h: React.FC = () => (
   <AbsoluteFill style={{ background: S.K.ink }}>
     {AVATAR.map((a, i) => (
       <Sequence key={"a" + i} from={a.from} durationInFrames={a.dur} premountFor={30}>
@@ -84,7 +76,7 @@ export const MainStan12d: React.FC = () => (
         <Overlay o={o} />
       </Sequence>
     ))}
-    <Audio src={staticFile("stan12d_mix.m4a")} />
+    <Audio src={staticFile("stan12h_mix.m4a")} />
     {SFX.map((x, i) => (
       <Sequence key={"x" + i} from={x.from} durationInFrames={90}>
         <Audio src={staticFile(x.src)} volume={x.vol} />
