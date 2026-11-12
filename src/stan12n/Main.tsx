@@ -5,7 +5,7 @@ import * as B from "./Base";
 import * as S from "./Stan";
 import * as E from "./Escenas";
 
-export const TOTAL_FRAMES_STAN12J = TOTAL;
+export const TOTAL_FRAMES_STAN12N = TOTAL;
 const T = 8; // frames de transición
 
 export const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
@@ -58,7 +58,7 @@ export const Overlay: React.FC<{ o: any }> = ({ o }) => {
   }
 };
 
-export const MainStan12j: React.FC = () => (
+export const MainStan12n: React.FC = () => (
   <AbsoluteFill style={{ background: S.K.ink }}>
     {/* capa 1: Stan sentado (ventanas visibles del reel) */}
     {AVATAR.map((a, i) => (
@@ -84,7 +84,7 @@ export const MainStan12j: React.FC = () => (
       </Sequence>
     ))}
     {/* audio: mezcla hecha en la nube (voz + sonido real de los clips + foley); encfin la monta sobre el video */}
-    <Audio src={staticFile("stan12j_mix.m4a")} />
+    <Audio src={staticFile("stan12n_mix.m4a")} />
     {SFX.length < 0 ? null : null}
   </AbsoluteFill>
 );
