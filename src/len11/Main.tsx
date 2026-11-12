@@ -15,8 +15,8 @@ const T = 8; // frames de transición
 // cámara viva sobre los componentes: deriva lenta (zoom ≤5 % + paneo) y grano, para que ningún cierre quede congelado (AUDITOR freezedetect)
 const HeroDrift: React.FC<{ dur: number; seed: number; children: React.ReactNode }> = ({ dur, seed, children }) => {
   const f = useCurrentFrame(); const k = interpolate(f, [0, Math.max(1, dur)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const dx = (seed % 2 ? 1 : -1) * 14 * k, dy = (seed % 3 === 0 ? -1 : 1) * 8 * k;
-  return (<AbsoluteFill><AbsoluteFill style={{ transform: `translate(${dx}px, ${dy}px) scale(${1.01 + 0.05 * k})` }}>{children}</AbsoluteFill><Q.Grain op={0.07} /></AbsoluteFill>);
+  const ph = (seed * 1.7) % 6.283, w = (seed % 2 ? 1 : -1) * 6.283 / 240; const dx = 30 * Math.sin(ph + w * f), dy = 30 * Math.cos(ph + w * f);
+  return (<AbsoluteFill><AbsoluteFill style={{ transform: `translate(${dx}px, ${dy}px) scale(${1.08 + 0.04 * k})` }}>{children}</AbsoluteFill><Q.Grain op={0.1} /></AbsoluteFill>);
 };
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
