@@ -144,7 +144,7 @@ export const InkWipe: React.FC<{ dir: number; len?: number }> = ({ dir, len = 20
 // (3) apertura de cada hábito: pincelada → foto a pantalla completa, número trazado, título palabra por palabra
 export const HabitScene: React.FC<{ n: number; title: string; src: string; dur: number }> = ({ n, title, src, dur }) => {
   const f = useCurrentFrame();
-  const v = n - 1, dir = v % 4, right = v % 2 === 1, mode = Math.floor(v / 2) % 3;
+  const v = n - 1, dir = v % 4, right = v % 2 === 1, mode = ((Math.floor(v / 2) % 3) + 3) % 3;
   const o = useOut(dur, 10);
   const k = cl((f - 10) / (dur - 10), 0, 1);
   const z = mode === 0 ? lerp(1.28, 1.08, Easing.out(Easing.cubic)(k)) : mode === 1 ? lerp(1.05, 1.2, k) : 1.14;

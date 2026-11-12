@@ -1,0 +1,3 @@
+{ "compilerOptions": { "jsx": "react-jsx", "strict": false, "noEmit": true, "skipLibCheck": true, "esModuleInterop": true, "moduleResolution": "node", "module": "esnext", "target": "es2020", "baseUrl": ".", "typeRoots": ["D:/rtmp/edicion_lab/node_modules/@types"],
+  "paths": { "react": ["D:/rtmp/edicion_lab/node_modules/react", "D:/rtmp/edicion_lab/node_modules/@types/react"], "react/*": ["D:/rtmp/edicion_lab/node_modules/@types/react/*"], "remotion": ["D:/rtmp/edicion_lab/node_modules/remotion"] } },
+  "include": ["src/len11/heroes_e.tsx","src/len11/heroes_e2.tsx","src/len11/kit.tsx"] }
