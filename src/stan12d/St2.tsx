@@ -165,10 +165,10 @@ export const SpikeCTA: React.FC<{ src: string; lines: string[]; box: [number, nu
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
       <AbsoluteFill style={{ transform: `scale(${z}) translateY(${bump}px)`, transformOrigin: `${bx + bw / 2}px ${by + bh / 2}px` }}>
         <Img src={staticFile(src)} style={{ width: 1920, height: 1080, objectFit: "fill" }} />
-        <div style={{ position: "absolute", left: bx, top: by, width: bw, height: bh, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", transform: "rotate(-1deg)" }}>
+        <div style={{ position: "absolute", left: bx, top: by, width: bw, height: bh, display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "center", transform: "rotate(-1deg)" }}>
           {lines.map((l, i) => { const w = eio((f - 10 - i * 16) / 16); return <div key={i} style={{ fontFamily: MARK, fontSize: bw / 11.5, color: "#2A1B12", lineHeight: 1.12, whiteSpace: "nowrap", clipPath: `inset(-10% ${100 - w * 104}% -10% 0)` }}>{l}</div>; })}
         </div>
-        <div style={{ position: "absolute", left: bx + bw - 400, top: by + bh - 86, transform: `scale(${lerp(3.2, 1, hit)}) rotate(${lerp(-30, -8, hit)}deg)`, opacity: cl(hit * 3) }}>
+        <div style={{ position: "absolute", left: bx + bw - 330, top: by + bh - 92, transform: `scale(${lerp(3.2, 1, hit)}) rotate(${lerp(-30, -8, hit)}deg)`, opacity: cl(hit * 3) }}>
           <div style={{ border: `9px solid ${K.red}`, outline: `3px solid ${K.red}`, outlineOffset: 6, borderRadius: 14, padding: "4px 28px", color: K.red, fontFamily: COND, fontWeight: 600, fontSize: 84, letterSpacing: 6, background: "rgba(255,250,240,0.35)", boxShadow: `0 0 0 ${interpolate(f, [52, 70], [0, 26], CL)}px rgba(179,38,30,${interpolate(f, [52, 70], [0.35, 0], CL)})` }}>SUBSCRIBE</div>
         </div>
       </AbsoluteFill>
@@ -181,7 +181,7 @@ export const MapDolly: React.FC<{ src: string; pins: { x: number; y: number; t: 
   const f = useCurrentFrame();
   let cx = pins[0].x, cy = pins[0].y;
   for (let i = 1; i < pins.length; i++) { const t = eio((f - (pins[i].f - 16)) / 22); cx = lerp(cx, pins[i].x, t); cy = lerp(cy, pins[i].y, t); }
-  const out = eio((f - (dur - 34)) / 26); const z = lerp(1.9, 1.5, out);
+  const out = eio((f - (dur - 34)) / 26); const z = lerp(1.9, 1.38, out);
   const mx = pins.reduce((a, p) => a + p.x, 0) / pins.length, my = pins.reduce((a, p) => a + p.y, 0) / pins.length; const tx = cl(lerp(cx, mx, out), 960 / z, 1920 - 960 / z), ty = cl(lerp(cy - 30, my - 20, out), 540 / z, 1080 - 540 / z);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink, opacity: interpolate(f, [0, 5, dur - 8, dur], [0, 1, 1, 0], CL) }}>
