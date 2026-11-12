@@ -147,8 +147,8 @@ export const HabitScene: React.FC<{ n: number; title: string; src: string; dur: 
   const v = n - 1, dir = v % 4, right = v % 2 === 1, mode = ((Math.floor(v / 2) % 3) + 3) % 3;
   const o = useOut(dur, 10);
   const k = cl((f - 10) / (dur - 10), 0, 1);
-  const z = mode === 0 ? lerp(1.28, 1.08, Easing.out(Easing.cubic)(k)) : mode === 1 ? lerp(1.05, 1.2, k) : 1.14;
-  const px = mode === 2 ? lerp(right ? 4 : -4, right ? -4 : 4, k) : 0;
+  const z = mode === 0 ? lerp(1.28, 1.08, Easing.out(Easing.cubic)(k)) : mode === 1 ? lerp(1.05, 1.2, k) : lerp(1.1, 1.24, k);
+  const px = mode === 2 ? lerp(right ? 6 : -6, right ? -6 : 6, k) : 0;
   const draw = interpolate(f, [14, 40], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
   const fill = interpolate(f, [36, 48], [0, 1], CL);
   const words = title.split(" ");
@@ -159,6 +159,10 @@ export const HabitScene: React.FC<{ n: number; title: string; src: string; dur: 
         <AbsoluteFill style={{ opacity: o }}>
           <AbsoluteFill style={{ overflow: "hidden", background: C.ink }}>
             <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `translateX(${px}%) scale(${z})` }} />
+            <svg style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity: 0.08, mixBlendMode: "overlay" }}>
+              <filter id={`hgr${n}`}><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={f % 97} /></filter>
+              <rect width="100%" height="100%" filter={`url(#hgr${n})`} />
+            </svg>
           </AbsoluteFill>
           <AbsoluteFill style={{ background: `linear-gradient(${right ? 270 : 90}deg, rgba(16,11,8,0.85) 0%, rgba(16,11,8,0.4) 45%, rgba(16,11,8,0) 70%)` }} />
           <div style={{ position: "absolute", top: 230, width: 860, display: "flex", flexDirection: "column", ...side }}>
