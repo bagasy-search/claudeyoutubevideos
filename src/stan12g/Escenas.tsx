@@ -1,5 +1,6 @@
 // Escenas sobre fotos de stan12g (D:/rtmp/stan12g/ideas.md). Escritas de cero: sólo React y Remotion, sin SVG.
 import React from "react";
+import { FONTS } from "./Piezas";
 import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from "remotion";
 
 const CL = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -20,6 +21,12 @@ const seg = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1], 
 
 
 
+const Rotulo: React.FC<{ x: number; y: number; t: string; f0: number; size?: number; rot?: number }> = ({ x, y, t, f0, size = 96, rot = -2 }) => {
+  const f = useCurrentFrame(); const p = f < f0 ? 0 : Math.min(1, 1 - Math.exp(-(f - f0) / 5) * Math.cos(((f - f0) / 22) * Math.PI * 2));
+  return <div style={{ position: "absolute", left: x, top: y, padding: "6px 28px 12px", backgroundImage: "linear-gradient(180deg, #EDC2AE 0%, #E2AE97 100%)", fontFamily: FONTS.HAND, fontWeight: 700, fontSize: size, lineHeight: 1.05, color: "#2A1A12", whiteSpace: "nowrap",
+    boxShadow: "0 10px 20px rgba(0,0,0,0.4)", opacity: Math.min(1, p * 2), transform: `rotate(${rot}deg) scale(${p})`, transformOrigin: "0 50%" }}>{t}</div>;
+};
+
 // ── Escena 1 · la foto se entreabre como un libro con el lomo en la línea de grasa real (de 860,110 a 880,720)
 export const EscLibro: React.FC<{ src: string; fMap: number; fUnder: number; fCut: number; dur: number }> = ({ src, fMap, fUnder, fCut, dur }) => {
   const f = useCurrentFrame();
@@ -39,6 +46,9 @@ export const EscLibro: React.FC<{ src: string; fMap: number; fUnder: number; fCu
         <div style={hoja(true)}><Img src={staticFile(src)} style={FULL} /></div>
         <div style={hoja(false)}><Img src={staticFile(src)} style={FULL} /></div>
         <div style={{ position: "absolute", left: LX - 150, top: 0, width: 300, height: 1080, opacity: open, background: "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%)" }} />
+        <div style={{ position: "absolute", left: 866, top: 110, width: 9, height: 610 * seg(f, fCut - 4, fCut + 14), transformOrigin: "50% 0", transform: "rotate(-1.9deg)", background: "#D9372C", borderRadius: 4, boxShadow: "0 0 0 2px rgba(255,255,255,0.6)" }} />
+        <Rotulo x={960} y={150} t="the fat line" f0={fMap - 14} size={78} rot={-2} />
+        <Rotulo x={960} y={560} t="cut here" f0={fCut + 4} size={78} rot={2} />
       </div>
     </AbsoluteFill>
   );
@@ -55,6 +65,7 @@ export const EscLupas: React.FC<{ src: string; fOne: number; fEach: number; fNam
     <AbsoluteFill style={{ overflow: "hidden", background: "#2a1a12" }}>
       <AbsoluteFill style={cam(cx, cy, s)}>
         <Img src={staticFile(src)} style={FULL} />
+        <Rotulo x={640} y={470} t="the oysters" f0={fName - 4} size={104} rot={-2} />
         {L.map((l, i) => {
           const p = spring({ frame: f - l.f0, fps, config: { damping: 12, mass: 0.7 } });
           if (f < l.f0) return null;
