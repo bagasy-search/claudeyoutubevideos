@@ -1,4 +1,4 @@
-// Piezas del video boone01 — look "libreta de adiestrador de Kentucky": papel rayado crema, grafito, rojo granero, azul denim, latón de la chapita.
+// Piezas base de stan12c (heredadas de la oleada 1) — paleta de la carnicería de Stan: blanco azulejo, rojo de etiqueta, tinta marrón.
 import React from "react";
 import { AbsoluteFill, Img, OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from "remotion";
 import { loadFont as loadSerif } from "@remotion/google-fonts/DMSerifDisplay";
@@ -10,7 +10,7 @@ const { fontFamily: SANS } = loadSans("normal", { weights: ["400", "500", "600"]
 const { fontFamily: HAND } = loadHand("normal", { weights: ["400", "700"], subsets: ["latin"] });
 const JP = SERIF;
 
-export const C = { paper: "#FBF3E4", paper2: "#F3E5CB", ink: "#22150D", ver: "#8E1D2B", indigo: "#4D0C16", gold: "#E3B25C", white: "#FFFBF2", rose: "#F8DDA4", brown: "#5A3A22" };
+export const C = { paper: "#FAF7F0", paper2: "#EDC2AE", ink: "#2A1A12", ver: "#B3261E", indigo: "#4D0C16", gold: "#E3B25C", white: "#FFFBF2", rose: "#F8DDA4", brown: "#5A3A22" };
 export const FONTS = { SERIF, SANS, HAND, JP };
 
 // ---------- azar determinista (hash entero)

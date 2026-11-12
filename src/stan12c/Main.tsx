@@ -1,25 +1,27 @@
 import React from "react";
-import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Audio, Img, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { SHOTS, AVATAR, OVERLAYS, SFX, TOTAL, CARDS } from "./cues.gen";
 import * as P from "./Piezas";
 import * as Q from "./Piezas2";
 import * as E from "./Escenas";
-import * as L from "./Lor";
+import * as St from "./Stan";
 
-export const TOTAL_FRAMES_CK11A = TOTAL;
+export const TOTAL_FRAMES_STAN12C = TOTAL;
 const T = 8; // frames de transición
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   if (s.k === "C") {
     switch (s.c) {
-      case "card": return <L.RecipeCard kicker={s.kicker} title={s.title} lines={s.lines} img={s.img} photo={s.photo} dur={dur} seed={s.id} />;
-      case "book": return <L.BookPage src={s.src} qr={s.qr} qrFrom={s.qrFrom} label={s.label} cover={s.cover} bg={s.bg} dur={dur} seed={s.id} />;
-      case "chapter": return <L.Chapter kicker={s.kicker} title={s.title} bg={s.bg} dur={dur} seed={s.id} />;
-      case "map": return <L.MapIowa src={s.src} label={s.label} sub={s.sub} dur={dur} />;
-      case "scene": return <Q.HabitScene n={s.n} title={s.title} src={s.src} dur={dur} />;
+      case "tag": return <St.PriceTag n={s.n} total={12} name={s.name} img={s.img} fName={s.fName} dur={dur} seed={s.id} />;
+      case "cow": return <St.CowChart src={s.src} cx={s.cx} cy={s.cy} label={s.label} sub={s.sub} fPin={s.fPin} dur={dur} />;
+      case "board": return <St.ChalkBoard head={s.head} lines={s.lines} source={s.source} dur={dur} seed={s.id} />;
+      case "pad": return <St.OrderPad rows={s.rows} n={s.n} fScore={s.fScore} dur={dur} seed={s.id} />;
+      case "counter": return <St.CounterCard title={s.title} sub={s.sub} dur={dur} seed={s.id} />;
+      case "rule": return <St.RuleSheet n={s.n} title={s.title} sub={s.sub} fSub={s.fSub} dur={dur} seed={s.id} />;
+      case "recap": return <St.RecapItem n={s.n} total={12} name={s.name} fact={s.fact} fFact={s.fFact} img={s.img} dur={dur} seed={s.id} />;
+      case "ask": return <St.AskPaper kicker={s.kicker} text={s.text} img={s.img} dur={dur} seed={s.id} />;
+      case "map": return <St.MapChi src={s.src} pins={s.pins} dur={dur} />;
       case "carousel": return <Q.Carousel cards={CARDS} bg={s.bg} subAt={s.subAt} sub={s.sub} dur={dur} />;
-      case "recap": return <Q.RecapGrid items={s.items} cards={CARDS} bg={s.bg} dur={dur} />;
-      case "cta": return <AbsoluteFill><P.Photo src={s.bg} seed={s.id} dur={dur} /><Q.CTA text={s.text} cards={CARDS} dur={dur} /></AbsoluteFill>;
       case "esc": { const K = (E as any)[s.name]; return K ? <K dur={dur} {...s.props} /> : null; }
       default: return null;
     }
@@ -77,12 +79,12 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
   }
 };
 
-export const MainCk11a: React.FC = () => (
+export const MainStan12c: React.FC = () => (
   <AbsoluteFill style={{ background: P.C.ink }}>
     {/* capa 1: avatar (ventanas visibles) */}
     {AVATAR.map((a, i) => (
       <Sequence key={"a" + i} from={a.from} durationInFrames={a.dur} premountFor={30}>
-        <Q.AvatarFramed src={a.src} seed={i} dur={a.dur} mods={a.mods} />
+        {a.still ? <AbsoluteFill><Img src={staticFile(a.src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill> : <Q.AvatarFramed src={a.src} seed={i} dur={a.dur} mods={a.mods} />}
       </Sequence>
     ))}
     {/* capa 2: material (clips reales, fotos, componentes) */}
@@ -105,7 +107,7 @@ export const MainCk11a: React.FC = () => (
       </Sequence>
     ))}
     {/* audio: voz premezclada (sin música); SFX y sonido real de los clips por debajo */}
-    <Audio src={staticFile("ck11a_mix.m4a")} />
+    <Audio src={staticFile("stan12c_mix.m4a")} />
     {SFX.map((x, i) => (
       <Sequence key={"x" + i} from={x.from} durationInFrames={90}>
         <Audio src={staticFile(x.src)} volume={x.vol} />

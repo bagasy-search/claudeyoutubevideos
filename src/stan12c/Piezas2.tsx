@@ -4,7 +4,7 @@ import { AbsoluteFill, Img, OffthreadVideo, interpolate, spring, staticFile, use
 import { C, FONTS, hash, useKB } from "./Piezas";
 
 const { SERIF, SANS, HAND, JP } = FONTS;
-const KANJI = ["", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+const KANJI = ["", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
 const shadow = "0 2px 18px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.6)";
 const PINK = "#E7C078";
 const cl = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
@@ -26,7 +26,7 @@ export const Grain: React.FC<{ op?: number }> = ({ op = 0.18 }) => {
 };
 
 export type HabCard = { title: string; src: string };
-export const LIST = { n: 7, head: "pumpkin recipes from my church kitchen", tag: "RECIPE", short: "RECIPE" };
+export const LIST = { n: 12, head: "cheap steaks that are still good", tag: "CUT", short: "CUT" };
 
 // tarjeta de hábito con foto (carrusel / recap)
 const HabitPhotoCard: React.FC<{ n: number; title: string; src: string; w: number; dim?: number; check?: number }> = ({ n, title, src, w, dim = 0, check = 0 }) => (
@@ -51,7 +51,7 @@ const HabitPhotoCard: React.FC<{ n: number; title: string; src: string; w: numbe
 
 // fondo: material real desenfocado
 const BlurBg: React.FC<{ src: string; dark?: number }> = ({ src, dark = 0.5 }) => {
-  const st: React.CSSProperties = { width: "100%", height: "100%", objectFit: "cover", filter: `blur(22px) brightness(${1 - dark})`, transform: "scale(1.15)" };
+  const st: React.CSSProperties = { width: "100%", height: "100%", objectFit: "cover", filter: `brightness(${1 - dark}) saturate(0.75)`, transform: "scale(1.08)" };
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: C.ink }}>
       {src.endsWith(".mp4") ? <OffthreadVideo src={staticFile(src)} muted playbackRate={0.5} style={st} /> : <Img src={staticFile(src)} style={st} />}
