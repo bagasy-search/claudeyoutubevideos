@@ -309,7 +309,7 @@ export const RecapGrid: React.FC<{ items: { txt: string; f: number; f2?: number;
         const lit = f >= it.f;
         const pop = lit ? 1 + 0.08 * Math.max(0, 1 - (f - it.f) / 10) : 1;
         return (
-          <div key={i} style={{ position: "absolute", left: 175 + col * 400, top: 215 + row * 410, opacity: e, transform: `translateY(${(1 - e) * 60}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8}deg) scale(${(lit ? 1 : 0.94) * pop})` }}>
+          <div key={i} style={{ position: "absolute", left: 175 + col * 400, top: 215 + row * 410, opacity: e, transform: `translate(${Math.cos((f + i * 23) / 47) * 4}px, ${(1 - e) * 60 + Math.sin((f + i * 17) / 36) * 7}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8 + Math.sin((f + i * 31) / 53) * 0.5}deg) scale(${(lit ? 1 : 0.94) * pop * (1 + 0.025 * Math.min(1, f / 900))})` }}>
             <HabitPhotoCard n={i + 1} title={c.title} src={c.src} w={370} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
             {it.f2 !== undefined && f >= it.f2 && (() => { const q2 = spring({ frame: f - it.f2!, fps: 30, config: { damping: 14 } }); return (
               <div style={{ position: "absolute", left: -10, right: -10, bottom: 18, background: C.indigo, color: C.white, fontFamily: SANS, fontWeight: 500, fontSize: 25, letterSpacing: 0.5, padding: "10px 14px", textAlign: "center",

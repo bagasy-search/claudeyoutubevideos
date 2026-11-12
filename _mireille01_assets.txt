@@ -61,7 +61,6 @@ mireille01/v/v0600.mp4
 mireille01/g/g0630.png
 mireille01/v/v0630.mp4
 mireille01/w/w650.jpg
-mireille01/v/v0650.mp4
 mireille01/g/g0660.png
 mireille01/v/v0660.mp4
 mireille01/g/g0670.png
