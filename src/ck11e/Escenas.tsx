@@ -16,7 +16,9 @@ export const Horno: React.FC<{ dur: number; fFifty: number; fReally: number; fSp
   // cámara: entra al termómetro y, en "spreads", vuelve a la bandeja entera
   const zin = interpolate(f, [0, fFifty], [1.0, 1.75], { ...CL, easing: io });
   const zout = interpolate(f, [fSpreads - 14, fSpreads + 22], [0, 1], { ...CL, easing: io });
-  const k = zin + (1.04 - zin) * zout;
+  // deriva lenta mientras se lee "really 325°" (sin esto el plano quedaba quieto ~4 s y el QC lo marcaba congelado)
+  const drift = interpolate(f, [fFifty, fSpreads - 14], [1, 1.09], { ...CL, easing: io });
+  const k = zin * drift + (1.04 - zin * drift) * zout;
   const ox = T.x + (D.x - T.x) * zout, oy = T.y + (D.y - T.y) * zout;
   // aguja: la cara entera gira (recorte circular) a 350 y vuelve con rebote
   const ang = f < fReally
