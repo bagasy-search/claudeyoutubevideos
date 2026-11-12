@@ -66,7 +66,6 @@ len11f/y/y1601.mp4
 len11f/g/g1640.png
 len11f/g/g1670.png
 len11f/g/g1710.png
-len11f/y/y1720.mp4
 len11f/g/g1740.png
 len11f/g/g1760.png
 len11f/g/g1790.png
