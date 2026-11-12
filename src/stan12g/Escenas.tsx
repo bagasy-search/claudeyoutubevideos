@@ -58,7 +58,7 @@ export const EscLibro: React.FC<{ src: string; fMap: number; fUnder: number; fCu
 export const EscLupas: React.FC<{ src: string; fOne: number; fEach: number; fName: number; dur: number }> = ({ src, fOne, fEach, fName, dur }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
   const L = [{ x: 1290, y: 350, f0: fOne }, { x: 1300, y: 700, f0: fOne + 16 }];
-  const R = 158, Z = 2.15;
+  const R = 140, Z = 2.3;
   const push = seg(f, 0, fOne) * 0.5 + seg(f, fName, dur) * 0.5;
   const cx = lerp(960, 1170, seg(f, 0, fOne + 10)), cy = lerp(540, 525, seg(f, 0, fOne + 10)), s = 1.04 + 0.2 * push + 0.09 * (f / dur);
   return (
