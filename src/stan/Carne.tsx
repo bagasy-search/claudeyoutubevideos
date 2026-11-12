@@ -50,7 +50,7 @@ export const Sello: React.FC<{ delay?: number; style?: React.CSSProperties; txt?
 };
 
 // ---------- (3) apertura de capítulo: la foto del pavo entera + la etiqueta de precio que cae colgando del hilo y se hamaca
-export const ChapS: React.FC<{ n: number; N: number; title: string; sub?: string; src: string; dur: number }> = ({ n, N, title, sub, src, dur }) => {
+export const ChapS: React.FC<{ n: number; N: number; title: string; sub?: string; src: string; dur: number; label?: string; big?: string }> = ({ n, N, title, sub, src, dur, label, big }) => {
   const f = useCurrentFrame(); const o = useOut(dur, 8);
   const drop = sp(f, 4, 11);
   const sw = Math.sin(f / 9) * 7 * Math.exp(-f / 45);
@@ -61,8 +61,8 @@ export const ChapS: React.FC<{ n: number; N: number; title: string; sub?: string
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0) 40%)" }} />
       <div style={{ position: "absolute", top: 240, ...(right ? { right: 150 } : { left: 150 }), transformOrigin: "50% -220px", transform: `translateY(${(1 - drop) * -900}px) rotate(${sw + (right ? 2 : -2)}deg)` }}>
         <Tag w={620}>
-          <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, letterSpacing: 7, color: C.ink, opacity: 0.75, textAlign: "center" }}>TURKEY {n} OF {N}</div>
-          <div style={{ fontFamily: MARK, fontSize: 210, lineHeight: 0.95, color: C.red, textAlign: "center", margin: "6px 0 0" }}>#{n}</div>
+          <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, letterSpacing: 7, color: C.ink, opacity: 0.75, textAlign: "center" }}>{label ?? `TURKEY ${n} OF ${N}`}</div>
+          <div style={{ fontFamily: MARK, fontSize: big && big.length > 3 ? 120 : 210, lineHeight: 0.95, color: C.red, textAlign: "center", margin: "6px 0 0" }}>{big ?? `#${n}`}</div>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 70, color: C.ink, lineHeight: 1.05, textAlign: "center", minHeight: 150 }}><Typed txt={title} at={16} speed={1.1} /></div>
           {sub && <div style={{ fontFamily: TYPE, fontSize: 28, color: C.ink, opacity: interpolate(f, [40, 52], [0, 0.8], CL), textAlign: "center", marginTop: 8 }}>{sub}</div>}
         </Tag>
@@ -72,13 +72,14 @@ export const ChapS: React.FC<{ n: number; N: number; title: string; sub?: string
 };
 
 // ---------- (2) progreso: 10 etiquetitas arriba a la DERECHA, la del pavo actual en rojo
-export const ProgS: React.FC<{ n: number; N: number; title: string; dur: number }> = ({ n, N, title, dur }) => {
+export const ProgS: React.FC<{ n: number; N: number; title: string; dur: number; unit?: string }> = ({ n, N, title, dur, unit = "TURKEY" }) => {
+  const asc = unit !== "TURKEY";
   const f = useCurrentFrame(); const o = interpolate(f, [0, 8, dur - 8, dur], [0, 1, 1, 0], CL);
   return (
     <div style={{ position: "absolute", right: 54, top: 40, opacity: o, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 8 }}>
-      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 21, letterSpacing: 3, color: "#FFF8EA", textShadow: shadow }}>TURKEY #{n} · {title.toUpperCase()}</div>
+      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 21, letterSpacing: 3, color: "#FFF8EA", textShadow: shadow }}>{unit} {asc ? `${n} OF ${N}` : `#${n}`} · {title.toUpperCase()}</div>
       <div style={{ display: "flex", gap: 6 }}>
-        {Array.from({ length: N }, (_, i) => { const k = N - i; const done = k > n, cur = k === n; return (
+        {Array.from({ length: N }, (_, i) => { const k = asc ? i + 1 : N - i; const done = asc ? k < n : k > n, cur = k === n; return (
           <div key={i} style={{ width: 34, height: 44, clipPath: "polygon(22% 0, 78% 0, 100% 22%, 100% 100%, 0 100%, 0 22%)", background: cur ? C.red : done ? C.kraft : "rgba(255,246,230,0.38)", display: "flex", alignItems: "flex-end", justifyContent: "center", paddingBottom: 3, fontFamily: SANS, fontWeight: 600, fontSize: 17, color: cur ? "#FFF3E0" : done ? C.ink : "rgba(255,255,255,0.85)" }}>{k}</div>
         ); })}
       </div>

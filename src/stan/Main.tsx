@@ -2,7 +2,7 @@
 // Sin Grade/viñeta/grano. Datos en cues.gen.ts (D:/rtmp/<slug>/tools/gen.mjs).
 import React from "react";
 import { AbsoluteFill, Sequence, interpolate, useCurrentFrame, Easing } from "remotion";
-import { SHOTS, AVATAR, OVERLAYS, TOTAL, MIX, MANO } from "./cues.gen";
+import { SHOTS, AVATAR, OVERLAYS, TOTAL, MIX, MANO, PLATE } from "./cues.gen";
 import * as K from "./Kit";
 import * as E from "./Escenas";
 import * as S from "./Carne";
@@ -76,7 +76,7 @@ const Enter: React.FC<{ trans: string; children: React.ReactNode; seed: number }
 const Overlay: React.FC<{ o: any }> = ({ o }) => {
   switch (o.type) {
     case "price": return <K.Price text={o.text} dur={o.dur} />;
-    case "progress": return <S.ProgS n={o.n} N={o.N} title={o.title} dur={o.dur} />;
+    case "progress": return <S.ProgS n={o.n} N={o.N} title={o.title} dur={o.dur} unit={o.unit} />;
     case "pregunta": return <K.Pregunta text={o.text} dur={o.dur} />;
     default: return null;
   }
@@ -86,7 +86,7 @@ export const MainStan: React.FC = () => (
   <AbsoluteFill style={{ background: "#111" }}>
     {AVATAR.map((a: any, i: number) => (
       <Sequence key={"a" + i} from={a.from} durationInFrames={a.dur} premountFor={30}>
-        <K.AvatarFramed src={a.src} seed={i} dur={a.dur} mods={a.mods} mano={MANO} plate="stan12a/av_plate.png" />
+        <K.AvatarFramed src={a.src} seed={i} dur={a.dur} mods={a.mods} mano={MANO} plate={PLATE} />
       </Sequence>
     ))}
     {SHOTS.map((s: any, i: number) => {
