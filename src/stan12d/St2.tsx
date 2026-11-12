@@ -18,7 +18,7 @@ const steel = "linear-gradient(180deg, #7E858A 0%, #EEF1F2 32%, #A9B0B4 62%, #5E
 // sello rojo que golpea (nota del ranking, SUBSCRIBE)
 const Slam: React.FC<{ f: number; at: number; children: React.ReactNode; rot?: number; style?: React.CSSProperties }> = ({ f, at, children, rot = -9, style }) => {
   const h = sp(f, at, 8, 0.5);
-  return <div style={{ transform: `scale(${lerp(3, 1, h)}) rotate(${lerp(rot - 20, rot, h)}deg)`, opacity: cl(h * 3), ...style }}>{children}</div>;
+  return <div style={{ transform: `scale(${lerp(1.9, 1, h)}) rotate(${lerp(rot - 14, rot, h)}deg)`, opacity: h > 0.45 ? 1 : 0, ...style }}>{children}</div>;
 };
 
 // ── riel de ganchos del local: cada método cuelga como una foto con su nota; el de ahora cae al gancho y se balancea
@@ -30,9 +30,8 @@ export const RankRail: React.FC<{ cards: RCard[]; now: number; final?: boolean; 
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Tile dur={dur} dark={0.34} />
-      <AbsoluteFill style={final ? { transform: `scale(${cam})`, transformOrigin: "50% 40%" } : { transform: `translate(${960 - cxNow - 60}px, 150px) scale(${lerp(2.9, 2.7, f / Math.max(1, dur))})`, transformOrigin: `${cxNow}px 290px` }}>
+      <AbsoluteFill style={final ? { transform: `scale(${cam})`, transformOrigin: "50% 40%" } : { transform: `translate(${960 - cxNow + (now < 8 ? 150 : 0)}px, 150px) scale(${lerp(2.75, 2.55, f / Math.max(1, dur))})`, transformOrigin: `${cxNow}px 290px` }}>
         <div style={{ position: "absolute", left: -1400, right: -1400, top: 150, height: 26, background: steel, boxShadow: "0 14px 22px rgba(0,0,0,0.45)" }} />
-        {[300, 960, 1620].map((x) => <div key={x} style={{ position: "absolute", left: x - 14, top: 96, width: 28, height: 66, background: steel, borderRadius: 6 }} />)}
         {order.map((c, i) => {
           const x = 70 + i * 228; const done = c.rank > now, cur = c.rank === now; const show = done || cur || final;
           const drop = cur && !final ? sp(f, 8, 7, 1.0) : 1; const sway = Math.sin((f + i * 19) / 23) * (cur ? 1.2 : 0.7);
@@ -45,7 +44,7 @@ export const RankRail: React.FC<{ cards: RCard[]; now: number; final?: boolean; 
                   <div style={{ width: "100%", height: 150, overflow: "hidden" }}><Img src={staticFile(c.src)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: done && !final ? "saturate(0.75) brightness(0.9)" : undefined }} /></div>
                   <div style={{ fontFamily: MARK, fontSize: c.title.length > 12 ? 24 : 30, color: K.ink, textAlign: "center", marginTop: 8, lineHeight: 1.05, height: 50 }}>{c.title}</div>
                   <div style={{ position: "absolute", left: -12, top: -10, background: K.ink, color: "#E9C46A", fontFamily: SLAB, fontWeight: 800, fontSize: 30, padding: "0 10px", transform: "rotate(-5deg)" }}><span style={{ fontFamily: COND, fontWeight: 500, fontSize: 16, marginRight: 3 }}>Nº</span>{c.rank}</div>
-                  <Slam f={f} at={cur && !final ? 30 : final ? 6 + i * 2 : -99} rot={8} style={{ position: "absolute", right: -18, top: 84 }}>
+                  <Slam f={f} at={cur && !final ? 30 : final ? 6 + i * 2 : -99} rot={8} style={{ position: "absolute", right: -34, top: -30 }}>
                     <div style={{ border: `5px solid ${c.rank === 1 ? "#B8860B" : K.red}`, color: c.rank === 1 ? "#B8860B" : K.red, background: "rgba(255,250,240,0.93)", borderRadius: 10, fontFamily: SLAB, fontWeight: 800, fontSize: 52, lineHeight: 1, padding: "2px 10px 6px" }}>{c.score}<span style={{ fontSize: 22 }}>/10</span></div>
                   </Slam>
                 </div>
@@ -65,7 +64,7 @@ export const Strip: React.FC<{ n: number; total: number; text: string; dur: numb
     <div style={{ position: "absolute", left: 100, bottom: 110, opacity: o, transform: `translateX(${(1 - p) * -900}px) rotate(${lerp(-6, -1.5, p)}deg)` }}>
       <div style={{ position: "absolute", left: -34, top: -16, width: 120, height: 40, background: "rgba(236,226,204,0.88)", transform: "rotate(-24deg)", boxShadow: "0 2px 6px rgba(0,0,0,0.2)", zIndex: 2 }} />
       <div style={{ background: paper, padding: "20px 44px 26px 40px", boxShadow: "0 18px 40px rgba(0,0,0,0.5)", clipPath: "polygon(0 0, 100% 0, 98% 22%, 100% 46%, 98.5% 70%, 100% 100%, 0 100%)" }}>
-        <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 36, letterSpacing: 6, color: K.red }}>READ THE PACK · {n} OF {total}</div>
+        <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 46, letterSpacing: 5, color: K.red }}>READ THE PACK · {n} OF {total}</div>
         <div style={{ fontFamily: MARK, fontSize: 66, color: K.ink, lineHeight: 1.1, whiteSpace: "nowrap" }}>{text.split(" ").slice(0, -1).join(" ")}{" "}
           <span style={{ position: "relative", display: "inline-block", fontSize: 78, color: K.red }}>{text.split(" ").slice(-1)[0]}
             <span style={{ position: "absolute", left: 0, bottom: -2, height: 9, width: `${u * 100}%`, background: K.red, borderRadius: 5, transform: "rotate(-1deg)", opacity: 0.9 }} />
@@ -217,7 +216,7 @@ export const MethodScene2: React.FC<{ n: number; rank: number; total: number; ti
             <div style={{ width: 4, height: 150, background: "#E9E0C8", margin: "0 auto" }} />
             <div style={{ background: kraft, borderRadius: "90px 90px 14px 14px", padding: "74px 36px 30px", minWidth: 390, textAlign: "center", boxShadow: "0 30px 60px rgba(0,0,0,0.6)", position: "relative" }}>
               <div style={{ position: "absolute", left: "50%", top: 22, marginLeft: -15, width: 30, height: 30, borderRadius: "50%", background: "rgba(30,20,10,0.82)", boxShadow: "inset 0 0 0 5px rgba(255,235,200,0.5)" }} />
-              <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 40, letterSpacing: 6, color: K.red }}>METHOD {rank} OF {total}</div>
+              <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 52, letterSpacing: 5, color: K.red }}>METHOD {rank} OF {total}</div>
               <div style={{ fontFamily: SLAB, fontWeight: 800, fontSize: 250, lineHeight: 0.92, color: K.ink }}><span style={{ fontFamily: COND, fontWeight: 500, fontSize: 70, verticalAlign: "top", marginRight: 8, color: K.red }}>Nº</span>{rank}</div>
               <div style={{ display: "flex", flexWrap: "wrap", columnGap: 16, justifyContent: "center", maxWidth: 520 }}>
                 {words.map((w, i) => { const p = sp(f, 30 + i * 5, 14, 0.6); return <span key={i} style={{ fontFamily: MARK, fontSize: 70, color: K.ink, opacity: p, transform: `translateY(${(1 - p) * 24}px)`, display: "inline-block" }}>{w}</span>; })}

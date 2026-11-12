@@ -42,8 +42,8 @@ export const EscPerilla: React.FC<{ src: string; fRed: number; fMah: number; fGi
   const step = (at: number, len: number, deg: number) => { const t = interpolate(f, [at - len, at], [0, 1], CL); return deg * Easing.out(Easing.back(1.6))(t); }; // frena con un rebote, como un clic
   const ang = step(fRed, 18, -90) + step(fMah, 28, -180);
   const g = interpolate(f, [fGills - 4, dur - 6], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) });
-  const k = lerp(interpolate(f, [0, fGills], [1.0, 1.08], CL), 2.2, g);
-  const fx = lerp(960, PX, g), fy = lerp(540, 300, g);
+  const k = lerp(interpolate(f, [0, fGills], [1.0, 1.08], CL), 1.6, g);
+  const fx = lerp(960, PX, g), fy = lerp(540, 380, g);
   const tx = Math.min(0, Math.max(1920 - 1920 * k, 960 - fx * k)), ty = Math.min(0, Math.max(1080 - 1080 * k, 540 - fy * k));
   return (
     <AbsoluteFill style={{ background: "#171615", overflow: "hidden" }}>
