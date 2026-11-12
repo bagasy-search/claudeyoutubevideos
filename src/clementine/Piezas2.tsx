@@ -50,8 +50,9 @@ const HabitPhotoCard: React.FC<{ n: number; title: string; src: string; w: numbe
 );
 
 // fondo: material real desenfocado
-const BlurBg: React.FC<{ src: string; dark?: number }> = ({ src, dark = 0.5 }) => {
-  const st: React.CSSProperties = { width: "100%", height: "100%", objectFit: "cover", filter: `blur(22px) brightness(${1 - dark})`, transform: "scale(1.15)" };
+const BlurBg: React.FC<{ src: string; dark?: number; drift?: boolean }> = ({ src, dark = 0.5, drift = false }) => {
+  const fr = useCurrentFrame();
+  const st: React.CSSProperties = { width: "100%", height: "100%", objectFit: "cover", filter: `blur(22px) brightness(${1 - dark})`, transform: drift ? `scale(${1.15 + fr * 0.00035}) translateX(${Math.sin(fr / 90) * 18}px)` : "scale(1.15)" };
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: C.ink }}>
       {src.endsWith(".mp4") ? <OffthreadVideo src={staticFile(src)} muted playbackRate={0.5} style={st} /> : <Img src={staticFile(src)} style={st} />}
@@ -286,27 +287,33 @@ export const MapJP: React.FC<{ a: [number, number]; b: [number, number]; la: str
 };
 
 // (10) recap: las 10 tarjetas del carrusel ordenadas en grilla, se tildan una a una
-export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: HabCard[]; bg: string; dur: number }> = ({ items, cards, bg }) => {
+export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: HabCard[]; bg: string; dur: number }> = ({ items, cards, bg, dur }) => {
   const f = useCurrentFrame(); const p = useIn(0, 20);
+  const W = 360, GAP = 50;
+  const push = 1 + 0.045 * (f / Math.max(1, dur));
   return (
     <AbsoluteFill>
-      <BlurBg src={bg} dark={0.5} />
-      <div style={{ position: "absolute", top: 50, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 74, color: C.white, textShadow: shadow, opacity: p }}>
-        <span style={{ color: PINK }}>{cards.length}</span> things I ask for · after 60
+      <BlurBg src={bg} dark={0.5} drift />
+      <div style={{ position: "absolute", top: 64, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 74, color: C.white, textShadow: shadow, opacity: p }}>
+        <span style={{ color: PINK }}>{cards.length}</span> tricks from Big Mama's jar
       </div>
+      <AbsoluteFill style={{ transform: `scale(${push})`, transformOrigin: "50% 58%" }}>
       {cards.map((c, i) => {
-        const col = i, row = 0;
+        const row = i < 4 ? 0 : 1, col = row === 0 ? i : i - 4, nRow = row === 0 ? Math.min(4, cards.length) : cards.length - 4;
+        const left = (1920 - (nRow * W + (nRow - 1) * GAP)) / 2 + col * (W + GAP);
         const it = items[i];
         const e = spring({ frame: f - i * 3, fps: 30, config: { damping: 16 } });
         const ck = spring({ frame: f - it.f, fps: 30, config: { damping: 11, mass: 0.6 } });
         const lit = f >= it.f;
         const pop = lit ? 1 + 0.08 * Math.max(0, 1 - (f - it.f) / 10) : 1;
+        const bob = Math.sin((f + i * 23) / 40) * 5;
         return (
-          <div key={i} style={{ position: "absolute", left: 70 + col * 362, top: 300 + row * 420, opacity: e, transform: `translateY(${(1 - e) * 60}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8}deg) scale(${(lit ? 1 : 0.94) * pop})` }}>
-            <HabitPhotoCard n={i + 1} title={c.title} src={c.src} w={340} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
+          <div key={i} style={{ position: "absolute", left, top: 225 + row * 400 + bob, opacity: e, transform: `translateY(${(1 - e) * 60}px) rotate(${((hash(i + 40) % 7) - 3) * 0.8}deg) scale(${(lit ? 1 : 0.94) * pop})` }}>
+            <HabitPhotoCard n={i + 1} title={c.title} src={c.src} w={W} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
           </div>
         );
       })}
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
