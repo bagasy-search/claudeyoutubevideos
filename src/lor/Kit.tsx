@@ -123,7 +123,7 @@ const Typed: React.FC<{ txt: string; at: number; speed?: number; style?: React.C
 };
 
 // ---------- (receta) tarjeta a pantalla completa: cantidades exactas, °F, tiempo, porciones; cada renglón cuando ella lo lee
-export const RecipeCard: React.FC<{ n: number; N: number; title: string; meta: string[]; items: { txt: string; f: number }[]; steps: string[]; keeps?: string; bg?: string; dur: number; recap?: boolean }> = ({ n, N, title, meta, items, steps, keeps, bg, dur, recap }) => {
+export const RecipeCard: React.FC<{ n: number; N: number; title: string; meta: string[]; items: { txt: string; f: number }[]; steps: string[]; keeps?: string; bg?: string; dur: number; recap?: boolean; label?: string }> = ({ n, N, title, meta, items, steps, keeps, bg, dur, recap, label }) => {
   const f = useCurrentFrame();
   const p = useIn(0, 19), o = useOut(dur, 8);
   const tilt = (hash(n + (recap ? 50 : 0)) % 2 ? 1 : -1) * 0.8;
@@ -135,7 +135,7 @@ export const RecipeCard: React.FC<{ n: number; N: number; title: string; meta: s
         <Paper style={{ width: 1640, height: 930, padding: "26px 70px 30px 120px", transform: `translateY(${(1 - p) * 700}px) rotate(${tilt * p}deg) scale(${1 + 0.012 * (f / Math.max(1, dur))})` }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", height: 92 }}>
             <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 70, color: T.ink, lineHeight: 1.1 }}>{title}</div>
-            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 22, letterSpacing: 4, color: T.acc, marginTop: 18, whiteSpace: "nowrap" }}>{recap ? "ONCE MORE · " : ""}RECIPE {n} OF {N}</div>
+            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 22, letterSpacing: 4, color: T.acc, marginTop: 18, whiteSpace: "nowrap" }}>{recap ? "ONCE MORE · " : ""}{label || `RECIPE ${n} OF ${N}`}</div>
           </div>
           <div style={{ display: "flex", gap: 14, margin: "22px 0 12px" }}>
             {meta.map((m, i) => { const q = useIn(6 + i * 4, 16); return <div key={i} style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, color: T.paper, background: i === 0 ? T.acc : T.ink, padding: "6px 18px", borderRadius: 20, opacity: q, transform: `scale(${0.8 + 0.2 * q})` }}>{m}</div>; })}
@@ -308,7 +308,7 @@ export const PolaroidShot: React.FC<{ src: string; caption: string; bg?: string;
 };
 
 // ---------- (9) dato con fuente real
-export const Stat: React.FC<{ head: string; title: string; lines: string[]; foot: string; bg?: string; dur: number }> = ({ head, title, lines, foot, bg, dur }) => {
+export const Stat: React.FC<{ head: string; title: string; lines: string[]; foot?: string; bg?: string; dur: number }> = ({ head, title, lines, foot, bg, dur }) => {
   const p = useIn(0, 18), o = useOut(dur, 10);
   return (
     <AbsoluteFill style={{ opacity: o }}>
@@ -319,7 +319,7 @@ export const Stat: React.FC<{ head: string; title: string; lines: string[]; foot
           <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 76, color: T.ink, margin: "26px 0 18px", lineHeight: 1.05 }}>{title}</div>
           {lines.map((l, i) => { const q = useIn(14 + i * 9, 18); return <div key={i} style={{ fontFamily: HAND, fontWeight: 700, fontSize: 48, color: T.pen, opacity: q, transform: `translateX(${(1 - q) * 30}px)`, marginBottom: 4 }}>— {l}</div>; })}
           <div style={{ height: 2, background: T.ink, opacity: 0.25, margin: "22px 0 14px" }} />
-          <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 26, color: T.ink, opacity: 0.8 }}>Source: {foot}</div>
+          {foot && <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 26, color: T.ink, opacity: 0.8 }}>Source: {foot}</div>}
         </Paper>
       </AbsoluteFill>
     </AbsoluteFill>
@@ -407,7 +407,8 @@ export const Timer: React.FC<{ a: number; b?: number; la: string; lb?: string; b
 };
 
 // regla de las 2 horas: reloj que corre hasta 2 h y se marca
-export const Clock2h: React.FC<{ head: string; sub: string; foot: string; bg?: string; dur: number }> = ({ head, sub, foot, bg, dur }) => {
+export const Clock2h: React.FC<{ head: string; sub: string; foot?: string; bg?: string; dur: number; frac?: number }> = ({ head, sub, foot, bg, dur, frac = 1 / 6 }) => {
+  const A = 360 * frac;
   const f = useCurrentFrame(); const o = useOut(dur, 8); const p = useIn(0, 14);
   const t = interpolate(f, [6, 40], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
   const R = 200;
@@ -415,16 +416,16 @@ export const Clock2h: React.FC<{ head: string; sub: string; foot: string; bg?: s
     <AbsoluteFill style={{ opacity: o }}>
       <Fondo src={bg} seed={22} dur={dur} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", flexDirection: "row", gap: 90 }}>
-        <div style={{ width: R * 2, height: R * 2, borderRadius: "50%", background: `conic-gradient(${T.acc} 0deg ${60 * t}deg, ${T.paper} ${60 * t}deg 360deg)`, boxShadow: "0 18px 40px rgba(0,0,0,0.45)", position: "relative", opacity: p }}>
+        <div style={{ width: R * 2, height: R * 2, borderRadius: "50%", background: `conic-gradient(${T.acc} 0deg ${A * t}deg, ${T.paper} ${A * t}deg 360deg)`, boxShadow: "0 18px 40px rgba(0,0,0,0.45)", position: "relative", opacity: p }}>
           <div style={{ position: "absolute", inset: 28, borderRadius: "50%", background: T.paper }} />
           {Array.from({ length: 12 }, (_, i) => <div key={i} style={{ position: "absolute", left: R - 4, top: 34, width: 8, height: i % 3 ? 18 : 30, background: T.ink, transformOrigin: `4px ${R - 34}px`, transform: `rotate(${i * 30}deg)` }} />)}
-          <div style={{ position: "absolute", left: R - 7, top: R - 120, width: 14, height: 120, borderRadius: 7, background: T.ink, transformOrigin: "7px 120px", transform: `rotate(${60 * t}deg)` }} />
+          <div style={{ position: "absolute", left: R - 7, top: R - 120, width: 14, height: 120, borderRadius: 7, background: T.ink, transformOrigin: "7px 120px", transform: `rotate(${A * t}deg)` }} />
           <div style={{ position: "absolute", left: R - 18, top: R - 18, width: 36, height: 36, borderRadius: "50%", background: T.acc }} />
         </div>
         <div style={{ opacity: p, maxWidth: 820 }}>
           <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 110, lineHeight: 0.95, color: "#FFF8EA", textShadow: shadow }}>{head}</div>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 56, color: "#FFE7C4", textShadow: shadow, marginTop: 14, opacity: interpolate(f, [30, 44], [0, 1], CL) }}>{sub}</div>
-          <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 24, color: "#F4E6D0", textShadow: shadow, marginTop: 20 }}>Source: {foot}</div>
+          {foot && <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 24, color: "#F4E6D0", textShadow: shadow, marginTop: 20 }}>Source: {foot}</div>}
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
@@ -465,17 +466,18 @@ export const ListCard: React.FC<{ head: string; title: string; rows: { a?: strin
 };
 
 // tabla de guardado: heladera / freezer
-export const Guarda: React.FC<{ rows: { item: string; fridge: string; freezer: string; f: number }[]; bg?: string; dur: number }> = ({ rows, bg, dur }) => {
+export const Guarda: React.FC<{ rows: { item: string; tin?: string; fridge: string; freezer: string; f: number }[]; bg?: string; dur: number }> = ({ rows, bg, dur }) => {
   const f = useCurrentFrame(); const p = useIn(0, 19), o = useOut(dur, 8);
+  const TIN = rows.some((r) => r.tin != null); const H = TIN ? ["", "IN A TIN", "REFRIGERATOR", "FREEZER"] : ["", "REFRIGERATOR", "FREEZER"];
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Fondo src={bg} seed={566} dur={dur} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <Paper style={{ width: 1500, padding: "22px 70px 40px 120px", transform: `translateY(${(1 - p) * 700}px) rotate(0.7deg)` }}>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 66, color: T.ink, height: 92 }}>How long it keeps</div>
-          <div style={{ display: "grid", gridTemplateColumns: "1.5fr 1fr 1fr", rowGap: 4, marginTop: 24 }}>
-            {["", "REFRIGERATOR", "FREEZER"].map((h, i) => <div key={i} style={{ fontFamily: SANS, fontWeight: 600, fontSize: 22, letterSpacing: 4, color: T.acc, height: 48, lineHeight: "48px" }}>{h}</div>)}
-            {rows.map((r, i) => [r.item, r.fridge, r.freezer].map((c, j) => (
+          <div style={{ display: "grid", gridTemplateColumns: TIN ? "1.6fr 1fr 1fr 1fr" : "1.5fr 1fr 1fr", rowGap: 4, marginTop: 24 }}>
+            {H.map((h, i) => <div key={i} style={{ fontFamily: SANS, fontWeight: 600, fontSize: 22, letterSpacing: 4, color: T.acc, height: 48, lineHeight: "48px" }}>{h}</div>)}
+            {rows.map((r, i) => (TIN ? [r.item, r.tin || "—", r.fridge, r.freezer] : [r.item, r.fridge, r.freezer]).map((c, j) => (
               <div key={i + "-" + j} style={{ height: 56, display: "flex", alignItems: "flex-end", fontFamily: HAND, fontWeight: 700, fontSize: 42, color: j === 0 ? T.ink : T.pen, opacity: f >= r.f ? 1 : 0.0 }}>{c}</div>
             )))}
           </div>
@@ -564,14 +566,14 @@ export const CounterShot: React.FC<{ src: string; steps: { to: number; f: number
 };
 
 // cuenta del día: libreta de gastos que suma (cifras = las que ella dice)
-export const Cuenta: React.FC<{ rows: { txt: string; amt: string }[]; total: string; bg?: string; dur: number }> = ({ rows, total, bg, dur }) => {
+export const Cuenta: React.FC<{ rows: { txt: string; amt: string }[]; total: string; bg?: string; dur: number; head?: string; label?: string }> = ({ rows, total, bg, dur, head = "Thanksgiving, for one", label = "ONE PLATE, ABOUT" }) => {
   const f = useCurrentFrame(); const p = useIn(0, 18), o = useOut(dur, 8);
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Fondo src={bg} seed={382} dur={dur} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <Paper style={{ width: 1100, padding: "22px 70px 36px 120px", transform: `translateY(${(1 - p) * 700}px) rotate(-0.6deg)` }}>
-          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 64, color: T.ink, height: 92 }}>Thanksgiving, for one</div>
+          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 64, color: T.ink, height: 92 }}>{head}</div>
           <div style={{ marginTop: 22 }}>
             {rows.map((r, i) => (
               <div key={i} style={{ display: "flex", justifyContent: "space-between", height: 49, alignItems: "flex-end", opacity: interpolate(f, [4 + i * 3, 10 + i * 3], [0, 1], CL) }}>
@@ -582,7 +584,7 @@ export const Cuenta: React.FC<{ rows: { txt: string; amt: string }[]; total: str
           </div>
           <div style={{ height: 4, background: T.ink, margin: "16px 0 10px", width: `${interpolate(f, [34, 48], [0, 100], CL)}%` }} />
           <div style={{ display: "flex", justifyContent: "space-between", opacity: interpolate(f, [46, 58], [0, 1], CL) }}>
-            <span style={{ fontFamily: SANS, fontWeight: 600, fontSize: 30, letterSpacing: 4, color: T.acc, marginTop: 14 }}>ONE PLATE, ABOUT</span>
+            <span style={{ fontFamily: SANS, fontWeight: 600, fontSize: 30, letterSpacing: 4, color: T.acc, marginTop: 14 }}>{label}</span>
             <span style={{ fontFamily: HAND, fontWeight: 700, fontSize: 84, color: T.acc }}>{total}</span>
           </div>
         </Paper>
