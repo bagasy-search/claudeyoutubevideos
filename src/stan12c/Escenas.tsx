@@ -51,6 +51,8 @@ export const EscBalanza: React.FC<{ src: string; fRib: number; fSlice: number; f
           <div style={{ position: "absolute", left: 975 - 6, top: 320 - 190, width: 12, height: 250, transformOrigin: "6px 190px", transform: `rotate(${ang}deg)`, borderRadius: "6px 6px 3px 3px",
             background: "linear-gradient(90deg, #7A1410, #D9372C 45%, #8E1D17)", boxShadow: "4px 6px 8px rgba(0,0,0,0.45)" }} />
           <div style={{ position: "absolute", left: 975 - 20, top: 320 - 20, width: 40, height: 40, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #F4F6F7, #6F757A 70%)", boxShadow: "2px 3px 5px rgba(0,0,0,0.5)" }} />
+          <div style={{ opacity: 1 - seg(f, fRib - 4, fRib + 8) }}><Rotulo x={250} y={560} t="about 1,200 lb" f0={16} size={96} rot={-3} /></div>
+          <Rotulo x={1250} y={800} t="a small slice" f0={fSlice - 6} size={92} rot={2} />
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
@@ -117,7 +119,7 @@ export const EscParpadeo: React.FC<{ src: string; fSame: number[]; fTags: number
   const out = seg(f, fTags - 6, fTags + 34);
   const last = Math.max(0, ...fSame.filter((x) => f >= x));
   const punch = n > 0 && f < fTags - 6 ? 0.035 * Math.exp(-(f - last) / 5) : 0;
-  const cx = lerp(640, 900, out), cy = lerp(610, 380, out), s0 = lerp(2.05 + 0.12 * Math.min(1, f / Math.max(1, fTags)) + punch, 1.42, out) + 0.04 * seg(f, fTags + 34, dur);
+  const cx = lerp(640, 985, out), cy = lerp(610, 560, out), s0 = lerp(2.05 + 0.12 * Math.min(1, f / Math.max(1, fTags)) + punch, 1.1, out) + 0.05 * seg(f, fTags + 34, dur);
   const w = (f0: number) => `inset(-20% ${100 - seg(f, f0, f0 + 14) * 100}% -20% 0)`;
   const tag: React.CSSProperties = { position: "absolute", fontFamily: FONTS.HAND, fontWeight: 700, color: "#2A1A12", whiteSpace: "nowrap", lineHeight: 1 };
   return (
@@ -126,6 +128,8 @@ export const EscParpadeo: React.FC<{ src: string; fSame: number[]; fTags: number
         <Img src={staticFile(src)} style={{ ...FULL, transform: b ? `translate(${DX}px, ${DY}px)` : undefined }} />
         <div style={{ ...tag, left: 438, top: 164, fontSize: 40, clipPath: w(fTags + 40), transform: "rotate(-1deg)" }}>chuck eye</div>
         <div style={{ ...tag, left: 1112, top: 186, fontSize: 46, clipPath: w(fTags + 62), transform: "rotate(1.5deg)" }}>ribeye</div>
+        <Rotulo x={470} y={868} t="chuck eye" f0={fTags + 44} size={104} rot={-2} />
+        <Rotulo x={1190} y={892} t="ribeye" f0={fTags + 66} size={104} rot={2} />
       </AbsoluteFill>
     </AbsoluteFill>
   );
@@ -150,8 +154,9 @@ export const EscFalla: React.FC<{ src: string; fStop: number; fCut: number; dur:
         <div style={{ position: "absolute", left: 500, top: 462 - 56 * up, width: 26, height: 338 + 56 * up, transformOrigin: "50% 0", transform: "rotate(-6.6deg)", background: "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 70%, rgba(0,0,0,0) 100%)", opacity: Math.min(1, up) }} />
         {/* la hoja: una línea de luz baja por el hueco entre la 5ª y la 6ª costilla */}
         {f < fCut + 12 && <div style={{ position: "absolute", left: 517, top: 330, width: 6, height: 500 * blade, transformOrigin: "50% 0", transform: "rotate(-6.2deg)", background: "rgba(255,255,255,0.96)", boxShadow: "0 0 0 2px rgba(0,0,0,0.3)", opacity: 1 - seg(f, fCut + 2, fCut + 12) }} />}
-        <Rotulo x={170} y={300} t="chuck" f0={fCut + 16} size={78} rot={-3} />
-        <Rotulo x={650} y={236} t="ribeye" f0={fCut + 30} size={78} rot={2} />
+        <div style={{ position: "absolute", left: 516, top: 440 - 60 * up, width: 9, height: (372 + 60 * up) * blade, transformOrigin: "50% 0", transform: "rotate(-6.4deg)", background: "#D9372C", borderRadius: 4, boxShadow: "0 0 0 2px rgba(255,255,255,0.55)", opacity: seg(f, fCut + 2, fCut + 12) }} />
+        <Rotulo x={150} y={610} t="chuck" f0={fCut + 12} size={112} rot={-3} />
+        <Rotulo x={720} y={520} t="ribeye" f0={fCut + 24} size={112} rot={2} />
       </AbsoluteFill>
     </AbsoluteFill>
   );
