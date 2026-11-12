@@ -67,7 +67,7 @@ export const MainCk11f: React.FC = () => (
     ))}
     {/* capa 2: material (clips reales, fotos, piezas del recetario) */}
     {SHOTS.map((s, i) => {
-      if (s.k === "A") return null;
+      if (s.k === "A" || s.esc) return null; // tapadas por una escena: no se dibujan (y un .mp4 como foto rompe el render)
       const nx = SHOTS[i + 1];
       const tail = nx && nx.k !== "A" && nx.trans && nx.trans !== "cut" ? T + 2 : 0;
       return (
