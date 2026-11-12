@@ -105,11 +105,11 @@ export const SevenPhotos: React.FC<{ items: { t: string; f: number; src: string 
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Tile dur={dur} dark={0.34} />
-      <div style={{ position: "absolute", left: -30, right: -30, top: 196, height: 10, background: "repeating-linear-gradient(60deg, #EDE3CC 0 7px, #B9A983 7px 12px)", boxShadow: "0 6px 10px rgba(0,0,0,0.4)", transform: "rotate(-0.5deg)" }} />
+      <div style={{ position: "absolute", left: -30, right: -30, top: 326, height: 10, background: "repeating-linear-gradient(60deg, #EDE3CC 0 7px, #B9A983 7px 12px)", boxShadow: "0 6px 10px rgba(0,0,0,0.4)", transform: "rotate(-0.5deg)" }} />
       {items.map((it, i) => {
         const p = sp(f, it.f, 7, 1.0); const x = 44 + i * 264; const sway = Math.sin((f + i * 17) / 20) * 1.8;
         return (
-          <div key={i} style={{ position: "absolute", left: x, top: 180 - i * 2.3, width: 244, transformOrigin: "50% 0", opacity: cl((f - it.f) / 3), transform: `translateY(${(1 - cl(p * 1.7)) * -620}px) rotate(${lerp(i % 2 ? 34 : -34, sway, cl(p))}deg)` }}>
+          <div key={i} style={{ position: "absolute", left: x, top: 310 - i * 2.3, width: 244, transformOrigin: "50% 0", opacity: cl((f - it.f) / 3), transform: `translateY(${(1 - cl(p * 1.7)) * -620}px) rotate(${lerp(i % 2 ? 34 : -34, sway, cl(p))}deg)` }}>
             <div style={{ width: 22, height: 58, margin: "0 auto -18px", background: "linear-gradient(90deg, #B98A4E, #E3BE86, #9C7038)", borderRadius: 4, position: "relative", zIndex: 2, boxShadow: "0 3px 6px rgba(0,0,0,0.4)" }} />
             <div style={{ background: "#F6F1E6", padding: "12px 12px 16px", boxShadow: "0 22px 40px rgba(0,0,0,0.55)" }}>
               <div style={{ width: 220, height: 260, overflow: "hidden" }}><Img src={staticFile(it.src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.5)" }} /></div>
