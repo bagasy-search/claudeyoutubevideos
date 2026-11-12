@@ -156,7 +156,7 @@ export const TicketS: React.FC<{ n: number; title: string; rows: [string, string
     <AbsoluteFill style={{ opacity: o }}>
       <Fondo src={bg} seed={n * 17 + 5} dur={dur} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
-        <Hoja style={{ width: 1180, padding: "36px 70px 46px", transform: `translateY(${(1 - p) * 760}px) rotate(${n % 2 ? -1.2 : 1.2}deg) scale(${1 + 0.015 * (f / Math.max(1, dur))})` }}>
+        <Hoja style={{ width: 1380, padding: "36px 330px 46px 70px", transform: `translateY(${(1 - p) * 760}px) rotate(${n % 2 ? -1.2 : 1.2}deg) scale(${1 + 0.015 * (f / Math.max(1, dur))})` }}>
           <div style={{ display: "flex", alignItems: "baseline", gap: 26, borderBottom: `4px dashed rgba(42,26,18,0.4)`, paddingBottom: 10 }}>
             <span style={{ fontFamily: MARK, fontSize: 96, color: C.red, lineHeight: 1 }}>#{n}</span>
             <span style={{ fontFamily: HAND, fontWeight: 700, fontSize: 72, color: C.ink, lineHeight: 1 }}>{title}</span>
@@ -321,7 +321,7 @@ export const ListaS: React.FC<{ head: string; title: string; rows: { a?: string;
               <span style={{ fontFamily: HAND, fontWeight: 700, fontSize: dense ? 40 : 58, color: C.ink, lineHeight: 1.08 }}>{r.txt}{r.sub && <span style={{ fontFamily: TYPE, fontWeight: 400, fontSize: dense ? 27 : 32, opacity: 0.8 }}>{"  "}{r.sub}</span>}</span>
             </div>
           ); })}
-          {sello && <Sello delay={rows[rows.length - 1].f + 14} style={{ right: 40, bottom: 20 }} />}
+          {sello && <Sello delay={rows[rows.length - 1].f + 14} style={{ right: 36, top: 26 }} />}
         </Hoja>
       </AbsoluteFill>
     </AbsoluteFill>
@@ -357,9 +357,9 @@ export const BarrasS: React.FC<{ head: string; rows: { name: string; val: number
           {rows.map((r, i) => { const g = ease(cl((f - r.f) / 26)); return (
             <div key={i} style={{ marginTop: 34 }}>
               <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 54, color: C.ink }}>{r.name}</div>
-              <div style={{ position: "relative", height: 74, width: 1400, background: "rgba(42,26,18,0.08)" }}>
-                <div style={{ position: "absolute", left: 0, top: 0, height: 74, width: 1400 * (r.val / max) * g, background: i ? C.red : "#E7C98B", backgroundImage: "repeating-linear-gradient(90deg, rgba(42,26,18,0.55) 0 3px, transparent 3px " + 1400 / max + "px)", boxShadow: "0 6px 12px rgba(0,0,0,0.25)" }} />
-                <div style={{ position: "absolute", left: 1400 * (r.val / max) * g + 18, top: 2, fontFamily: MARK, fontSize: 58, color: C.ink, whiteSpace: "nowrap", opacity: cl(g * 2) }}>{r.label}</div>
+              <div style={{ position: "relative", height: 74, width: 1000, background: "rgba(42,26,18,0.08)" }}>
+                <div style={{ position: "absolute", left: 0, top: 0, height: 74, width: 1000 * (r.val / max) * g, background: i ? C.red : "#E7C98B", backgroundImage: "repeating-linear-gradient(90deg, rgba(42,26,18,0.55) 0 3px, transparent 3px " + 1000 / max + "px)", boxShadow: "0 6px 12px rgba(0,0,0,0.25)" }} />
+                <div style={{ position: "absolute", left: 1000 * (r.val / max) * g + 18, top: 2, fontFamily: MARK, fontSize: 58, color: C.ink, whiteSpace: "nowrap", opacity: cl(g * 2) }}>{r.label}</div>
               </div>
             </div>
           ); })}
@@ -373,7 +373,7 @@ export const BarrasS: React.FC<{ head: string; rows: { name: string; val: number
 // ---------- «fresh» = nunca bajo 26 °F: termómetro de cámara con dos marcas
 export const FreshS: React.FC<{ fA: number; fB: number; bg?: string; dur: number }> = ({ fA, fB, bg, dur }) => {
   const f = useCurrentFrame(); const o = useOut(dur, 8); const p = sp(f, 0, 16);
-  const y = (deg: number) => 640 - (deg / 50) * 600; const t = ease(cl((f - 6) / 40)); const cur = 50 - 24 * t;
+  const y = (deg: number) => 640 - ((deg - 14) / 28) * 600; const t = ease(cl((f - 6) / 40)); const cur = 42 - 16 * t;
   const Mark: React.FC<{ deg: number; txt: string; sub: string; at: number; col: string }> = ({ deg, txt, sub, at, col }) => (
     <div style={{ position: "absolute", left: 150, top: y(deg) - 3, opacity: cl((f - at) / 6) }}>
       <div style={{ width: 420, height: 6, background: col }} />
