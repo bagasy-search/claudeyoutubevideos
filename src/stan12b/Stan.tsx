@@ -74,9 +74,9 @@ export const PriceTag: React.FC<{ text: string; dur: number }> = ({ text, dur })
   return (
     <div style={{ position: "absolute", right: 110, bottom: 120, opacity: fadeOut(f, dur), transformOrigin: "88% -30%", transform: `rotate(${lerp(-38, -4, p) + sw}deg)` }}>
       <div style={{ position: "absolute", right: 46, top: -150, width: 5, height: 170, background: K.twine, transform: "rotate(9deg)", boxShadow: "1px 0 2px rgba(0,0,0,0.4)" }} />
-      <div style={{ ...kraftBg(3), background: K.paper, padding: "26px 60px 26px 44px", clipPath: "polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%)", boxShadow: SH, minWidth: 300 }}>
+      <div style={{ ...kraftBg(3), background: K.paper, padding: "30px 84px 32px 52px", clipPath: "polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%)", boxShadow: SH, minWidth: 300 }}>
         {parts.map((t, i) => (
-          <div key={i} style={{ fontFamily: i ? SANS : HAND, fontWeight: 700, fontSize: i ? 26 : (text.length > 26 ? 52 : 66), letterSpacing: i ? 3 : 0, color: i ? K.red : K.ink, lineHeight: 1.05, whiteSpace: "nowrap" }}>{t}</div>
+          <div key={i} style={{ fontFamily: i ? SANS : HAND, fontWeight: 700, fontSize: i ? 34 : (text.length > 26 ? 68 : 88), letterSpacing: i ? 4 : 0, color: i ? K.red : K.ink, lineHeight: 1.05, whiteSpace: "nowrap" }}>{t}</div>
         ))}
       </div>
       <div style={{ position: "absolute", right: 30, top: "50%", width: 16, height: 16, marginTop: -8, borderRadius: "50%", background: "#3a2a1a", boxShadow: "inset 0 2px 3px rgba(0,0,0,0.6)" }} />
@@ -120,7 +120,7 @@ export const Dial: React.FC<{ deg: number; dur: number; label?: string }> = ({ d
   const ang = (x: number) => -130 + ((x - 0) / 220) * 260;   // escala 0-220 °F
   const hot = deg >= 145;
   return (
-    <div style={{ position: "absolute", right: 130, top: 120, opacity: p * fadeOut(f, dur), transform: `scale(${0.75 + 0.25 * p})`, transformOrigin: "100% 0", display: "flex", flexDirection: "column", alignItems: "center" }}>
+    <div style={{ position: "absolute", right: 130, top: 120, opacity: p * fadeOut(f, dur), transform: `scale(${(0.75 + 0.25 * p) * 1.4})`, transformOrigin: "100% 0", display: "flex", flexDirection: "column", alignItems: "center" }}>
       <div style={{ width: 330, height: 330, borderRadius: "50%", background: `radial-gradient(circle at 35% 28%, #FFFFFF, ${K.steel} 62%, #8E969A 100%)`, boxShadow: "0 18px 40px rgba(0,0,0,0.55), inset 0 0 0 10px #A9B0B4, inset 0 0 0 14px #6E777B", position: "relative" }}>
         <div style={{ position: "absolute", inset: 26, borderRadius: "50%", background: K.paper, boxShadow: "inset 0 4px 12px rgba(0,0,0,0.3)" }} />
         {Array.from({ length: 23 }, (_, i) => (
@@ -148,7 +148,7 @@ export const WindUp: React.FC<{ min: number; label?: string; dur: number }> = ({
   const a = -((set - Math.min(val * 0.3, tick)) / top) * 360;
   const big = secs ? `${Math.round(val)} seconds` : val >= 60 ? `${val / 60} hour${val > 60 ? "s" : ""}` : `${String(val).replace(".5", "½")} minute${val === 1 ? "" : "s"}`;
   return (
-    <div style={{ position: "absolute", right: 130, top: 130, opacity: p * fadeOut(f, dur), transform: `scale(${0.75 + 0.25 * p})`, transformOrigin: "100% 0", display: "flex", flexDirection: "column", alignItems: "center" }}>
+    <div style={{ position: "absolute", right: 130, top: 130, opacity: p * fadeOut(f, dur), transform: `scale(${(0.75 + 0.25 * p) * 1.4})`, transformOrigin: "100% 0", display: "flex", flexDirection: "column", alignItems: "center" }}>
       <div style={{ width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle at 35% 28%, #FFFDF4, #EDE3C8 65%, #C9BB96 100%)", boxShadow: "0 18px 40px rgba(0,0,0,0.55), inset 0 0 0 8px #D9CDAA", position: "relative" }}>
         <div style={{ position: "absolute", inset: 0, transform: `rotate(${a}deg)` }}>
           {Array.from({ length: 60 }, (_, i) => (
@@ -171,7 +171,7 @@ export const Scale: React.FC<{ to: number; suffix: string; label: string; dur: n
   const f = useCurrentFrame(); const p = useSp(0, 14);
   const v = Math.round(to * interpolate(f, [6, 36], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) }));
   return (
-    <div style={{ position: "absolute", right: 120, top: 130, opacity: p * fadeOut(f, dur), transform: `translateY(${(1 - p) * -60}px)` }}>
+    <div style={{ position: "absolute", right: 120, top: 130, opacity: p * fadeOut(f, dur), transform: `translateY(${(1 - p) * -60}px) scale(1.3)`, transformOrigin: "100% 0" }}>
       <div style={{ background: "linear-gradient(180deg, #DDE1E3, #A9B0B4)", padding: 16, borderRadius: 14, boxShadow: "0 18px 40px rgba(0,0,0,0.55)" }}>
         <div style={{ background: "#141a14", borderRadius: 8, padding: "10px 34px", minWidth: 330, textAlign: "right", boxShadow: "inset 0 4px 10px rgba(0,0,0,0.8)" }}>
           <span style={{ fontFamily: SLAB, fontSize: 130, color: "#F6E7B0", lineHeight: 1 }}>{v}</span>
@@ -187,7 +187,7 @@ export const Rail: React.FC<{ n: number; total: number; title: string; dur: numb
   const f = useCurrentFrame(); const o = interpolate(f, [0, 8, dur - 8, dur], [0, 1, 1, 0], CL);
   const done = total - n; // cuenta regresiva: n=10 es el primero
   return (
-    <div style={{ position: "absolute", right: 60, top: 46, opacity: o, display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
+    <div style={{ position: "absolute", right: 60, top: 46, opacity: o, display: "flex", flexDirection: "column", alignItems: "flex-end", transform: "scale(1.35)", transformOrigin: "100% 0" }}>
       <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 21, letterSpacing: 4, color: K.chalk, textShadow: SH }}>
         {word} <span style={{ color: K.gold }}>{done + 1}</span> OF {total} · {title.toUpperCase()}
       </div>
@@ -235,7 +235,7 @@ export const TechScene: React.FC<{ n: number; label: string; title: string; src:
           </AbsoluteFill>
           <AbsoluteFill style={{ background: `linear-gradient(${right ? 270 : 90}deg, rgba(16,11,8,0.88) 0%, rgba(16,11,8,0.45) 42%, rgba(16,11,8,0) 68%)` }} />
           <div style={{ position: "absolute", top: 210, width: 900, display: "flex", flexDirection: "column", ...side }}>
-            <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 28, letterSpacing: 9, color: K.gold, opacity: cl((f - 12) / 8, 0, 1) }}>{label}</div>
+            <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 38, letterSpacing: 9, color: K.gold, textShadow: SH, opacity: cl((f - 12) / 8, 0, 1) }}>{label}</div>
             <div style={{ fontFamily: SLAB, fontSize: 330, lineHeight: 0.92, color: K.chalk, textShadow: SH, opacity: cl(st * 1.6, 0, 1), transform: `scale(${lerp(2.1, 1, st)}) rotate(${lerp(-12, -3, st)}deg)`, transformOrigin: right ? "100% 60%" : "0% 60%" }}>{n > total ? "+" : String(n)}</div>
             <div style={{ display: "flex", flexWrap: "wrap", columnGap: 22, justifyContent: right ? "flex-end" : "flex-start", marginTop: 4 }}>
               {words.map((w, i) => { const p = spring({ frame: f - 30 - i * 5, fps: 30, config: { damping: 15, mass: 0.6 } });
@@ -271,7 +271,7 @@ const Parcel: React.FC<{ c: TCard; w: number; dim?: number; check?: number }> = 
 // carrusel 3D de las N técnicas sobre la foto real oscurecida → termina en abanico
 export const Carousel: React.FC<{ cards: TCard[]; bg: string; head: string; sub: string; subAt: number; dur: number }> = ({ cards, bg, head, sub, subAt, dur }) => {
   const f = useCurrentFrame(); const pIn = useSp(0, 20);
-  const fanT = eio((f - dur * 0.6) / 34); const rot = -f * 0.6; const R = 700, PR = 1700; const N = cards.length;
+  const fanT = eio((f - dur * 0.6) / 34); const rot = -f * 0.6; const R = 860, PR = 2000; const N = cards.length;
   return (
     <AbsoluteFill style={{ opacity: fadeOut(f, dur, 12) }}>
       <DarkPhoto src={bg} dur={dur} dark={0.62} />
@@ -279,7 +279,7 @@ export const Carousel: React.FC<{ cards: TCard[]; bg: string; head: string; sub:
         <div style={{ fontFamily: SLAB, fontSize: 86, color: K.chalk, textShadow: SH, lineHeight: 1 }}><span style={{ color: K.gold }}>{N}</span> {head}</div>
         <div style={{ ...chalkTxt, fontSize: 54, marginTop: 6, opacity: interpolate(f, [subAt, subAt + 10], [0, 1], CL) }}>{sub}</div>
       </div>
-      <AbsoluteFill style={{ perspective: 2200, perspectiveOrigin: "50% 40%", transformOrigin: "50% 52%", transform: `scale(${lerp(1.4, 0.98, fanT)})` }}>
+      <AbsoluteFill style={{ perspective: 2200, perspectiveOrigin: "50% 40%", transformOrigin: "50% 52%", transform: `scale(${lerp(1.3, 0.8, fanT)})` }}>
         {cards.map((c, i) => {
           const appear = spring({ frame: f - 4 - i * 4, fps: 30, config: { damping: 16, mass: 0.6 } });
           const th = ((((i * (360 / N) + rot) % 360) + 540) % 360) - 180; const rad = (th * Math.PI) / 180;
@@ -289,9 +289,9 @@ export const Carousel: React.FC<{ cards: TCard[]; bg: string; head: string; sub:
           const x = lerp(rx, fx, fanT), y = lerp(40, fy, fanT), zz = lerp(rz, i * 2, fanT);
           const vis = lerp(cl(0.25 + 0.75 * Math.cos(rad), 0.1, 1), 1, fanT);
           return (
-            <div key={i} style={{ position: "absolute", left: 960 - 200, top: 370, zIndex: Math.round(2000 + zz), opacity: vis * appear,
+            <div key={i} style={{ position: "absolute", left: 960 - 260, top: 330, zIndex: Math.round(2000 + zz), opacity: vis * appear,
               transform: `translate3d(${x}px, ${y}px, ${zz}px) rotateY(${lerp(th, 0, fanT)}deg) rotateZ(${lerp(0, phi, fanT)}deg) scale(${lerp(1, 0.78, fanT) * appear})` }}>
-              <Parcel c={c} w={400} />
+              <Parcel c={c} w={520} />
             </div>
           );
         })}

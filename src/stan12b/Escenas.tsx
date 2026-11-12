@@ -85,8 +85,8 @@ export const Mistakes: React.FC<{ items: { f: number; title: string; src: string
             <AbsoluteFill style={{ background: `linear-gradient(0deg, rgba(14,8,6,0.85) 0%, rgba(14,8,6,0.25) 40%, rgba(14,8,6,0) 60%)` }} />
             <div style={{ position: "absolute", bottom: 90, left: 0, right: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: 46, flexDirection: right ? "row-reverse" : "row" }}>
               <div style={{ border: `8px solid ${K.red}`, outline: `3px solid ${K.red}`, outlineOffset: 6, borderRadius: 10, padding: "8px 30px 12px", transform: `scale(${lerp(2.6, 1, st)}) rotate(${lerp(-22, right ? 5 : -6, st)}deg)`, opacity: cl(st * 1.8, 0, 1), background: "rgba(20,10,8,0.35)", textAlign: "center" }}>
-                <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 30, letterSpacing: 8, color: K.red }}>MISTAKE</div>
-                <div style={{ fontFamily: SLAB, fontSize: 150, color: K.red, lineHeight: 0.9 }}>{it.n}</div>
+                <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 42, letterSpacing: 9, color: K.red }}>MISTAKE</div>
+                <div style={{ fontFamily: SLAB, fontSize: 220, color: K.red, lineHeight: 0.9 }}>{it.n}</div>
               </div>
               <div style={{ fontFamily: SLAB, fontSize: 110, color: K.chalk, textShadow: SH, lineHeight: 1, maxWidth: 1100, clipPath: `inset(0 ${100 - cl((lf - 14) / 14, 0, 1) * 100}% 0 0)` }}>{it.title}</div>
             </div>
