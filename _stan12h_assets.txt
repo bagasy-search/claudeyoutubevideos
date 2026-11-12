@@ -9,6 +9,7 @@ stan12h/g/e_board.png
 stan12h/g/g0110.png
 stan12h/g/g0130.png
 stan12h/g/g0140.png
+stan12h/v/v0140.mp4
 stan12h/g/g0200.png
 stan12h/g/g0220.png
 stan12h/g/g0240.png
@@ -24,13 +25,16 @@ stan12h/g/g0420.png
 stan12h/g/g0430.png
 stan12h/g/g0450.png
 stan12h/g/g0480.png
+stan12h/v/v0480.mp4
 stan12h/y/y530.mp4
 stan12h/g/g0540.png
 stan12h/y/y550.mp4
 stan12h/g/g0560.png
 stan12h/g/g0590.png
+stan12h/g/g0610.png
 stan12h/g/g0620.png
 stan12h/g/g0660.png
+stan12h/v/v0660.mp4
 stan12h/g/g4850.png
 stan12h/g/g0780.png
 stan12h/y/y800.mp4
@@ -46,9 +50,11 @@ stan12h/g/g1070.png
 stan12h/g/g1080.png
 stan12h/g/g1090.png
 stan12h/g/g1190.png
+stan12h/v/v1190.mp4
 stan12h/g/g1290.png
 stan12h/g/g1300.png
 stan12h/g/g1330.png
+stan12h/v/v1330.mp4
 stan12h/g/g1350.png
 stan12h/g/xb_side.png
 stan12h/y/y1400.mp4
@@ -70,6 +76,7 @@ stan12h/g/g1710.png
 stan12h/g/g1720.png
 stan12h/g/g1730.png
 stan12h/g/g1750.png
+stan12h/v/v1750.mp4
 stan12h/y/y1790.mp4
 stan12h/g/g1820.png
 stan12h/g/g1890.png
@@ -101,9 +108,12 @@ stan12h/g/g2360.png
 stan12h/g/g2390.png
 stan12h/g/g2430.png
 stan12h/g/g2490.png
+stan12h/v/v2490.mp4
 stan12h/g/g2520.png
 stan12h/g/g2580.png
 stan12h/g/g2590.png
+stan12h/g/g2620.png
+stan12h/g/g2660.png
 stan12h/g/g2670.png
 stan12h/g/g2740.png
 stan12h/g/g2710.png
@@ -120,6 +130,7 @@ stan12h/g/g2990.png
 stan12h/g/g3010.png
 stan12h/g/g3020.png
 stan12h/g/g3040.png
+stan12h/v/v3040.mp4
 stan12h/g/xb_form.png
 stan12h/g/g3070.png
 stan12h/g/g3090.png
@@ -134,6 +145,7 @@ stan12h/g/g3400.png
 stan12h/g/g3410.png
 stan12h/g/g3460.png
 stan12h/g/g3470.png
+stan12h/g/g3500.png
 stan12h/g/g3570.png
 stan12h/g/g3590.png
 stan12h/g/g3650.png
@@ -149,8 +161,9 @@ stan12h/g/g4010.png
 stan12h/g/g4050.png
 stan12h/g/g4080.png
 stan12h/g/g4090.png
-stan12h/g/g4190.png
+stan12h/g/g4120.png
 stan12h/g/g4160.png
+stan12h/g/g4190.png
 stan12h/g/g4230.png
 stan12h/y/y4260.mp4
 stan12h/g/g4300.png
@@ -160,8 +173,9 @@ stan12h/g/xb_week.png
 stan12h/y/y4460.mp4
 stan12h/g/g4470.png
 stan12h/g/g4520.png
-stan12h/g/g4620.png
+stan12h/g/g4560.png
 stan12h/g/g4580.png
+stan12h/g/g4620.png
 stan12h/g/g4650.png
 stan12h/y/y4700.mp4
 stan12h/g/g4710.png
@@ -178,6 +192,7 @@ stan12h/g/g5030.png
 stan12h/y/y5040.mp4
 stan12h/g/g5050.png
 stan12h/g/g5080.png
+stan12h/v/v5080.mp4
 stan12h/g/g5680.png
 stan12h/g/xb_bag.png
 stan12h/g/g5160.png
@@ -185,6 +200,7 @@ stan12h/g/g5190.png
 stan12h/g/g5240.png
 stan12h/g/g5280.png
 stan12h/g/g5330.png
+stan12h/g/g5360.png
 stan12h/g/g5530.png
 stan12h/g/g5580.png
 stan12h/g/g5590.png
@@ -192,6 +208,7 @@ stan12h/g/g5610.png
 stan12h/y/y5640.mp4
 stan12h/g/g5700.png
 stan12h/g/g6100.png
+stan12h/v/v6100.mp4
 stan12h/g/g6120.png
 stan12h/av_plate.png
 stan12h/a/win-001.mp4

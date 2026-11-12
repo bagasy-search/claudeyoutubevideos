@@ -89,8 +89,8 @@ export const NeedPhoto: React.FC<{ src: string; tags: { x: number; y: number; t:
               <div style={{ width: 3, height: 34, background: "#E9E0C8", marginLeft: 20 }} />
               <div style={{ background: kraft, borderRadius: "28px 8px 8px 8px", padding: "10px 22px 12px 44px", boxShadow: "0 12px 26px rgba(0,0,0,0.55)", position: "relative", whiteSpace: "nowrap" }}>
                 <div style={{ position: "absolute", left: 14, top: 12, width: 18, height: 18, borderRadius: "50%", background: "rgba(30,20,10,0.8)" }} />
-                <span style={{ fontFamily: SLAB, fontWeight: 800, fontSize: 60, color: K.red, marginRight: 12 }}>{t.t.split("|")[0]}</span>
-                <span style={{ fontFamily: MARK, fontSize: 46, color: K.ink }}>{t.t.split("|")[1]}</span>
+                <span style={{ fontFamily: SLAB, fontWeight: 800, fontSize: 78, color: K.red, marginRight: 14 }}>{t.t.split("|")[0]}</span>
+                <span style={{ fontFamily: MARK, fontSize: 64, color: K.ink }}>{t.t.split("|")[1]}</span>
               </div>
             </div>
           );
@@ -165,10 +165,10 @@ export const SpikeCTA: React.FC<{ src: string; lines: string[]; box: [number, nu
       <AbsoluteFill style={{ transform: `scale(${z}) translateY(${bump}px)`, transformOrigin: `${bx + bw / 2}px ${by + bh / 2}px` }}>
         <Img src={staticFile(src)} style={{ width: 1920, height: 1080, objectFit: "fill" }} />
         <div style={{ position: "absolute", left: bx, top: by, width: bw, height: bh, display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "center", transform: "rotate(-1deg)" }}>
-          {lines.map((l, i) => { const w = eio((f - 10 - i * 16) / 16); return <div key={i} style={{ fontFamily: MARK, fontSize: bw / 11.5, color: "#2A1B12", lineHeight: 1.12, whiteSpace: "nowrap", clipPath: `inset(-10% ${100 - w * 104}% -10% 0)` }}>{l}</div>; })}
+          {lines.map((l, i) => { const w = eio((f - 10 - i * 16) / 16); return <div key={i} style={{ fontFamily: MARK, fontSize: bw / 10.2, color: "#2A1B12", lineHeight: 1.12, whiteSpace: "nowrap", clipPath: `inset(-10% ${100 - w * 104}% -10% 0)` }}>{l}</div>; })}
         </div>
-        <div style={{ position: "absolute", left: bx + bw - 330, top: by + bh - 92, transform: `scale(${lerp(3.2, 1, hit)}) rotate(${lerp(-30, -8, hit)}deg)`, opacity: cl(hit * 3) }}>
-          <div style={{ border: `9px solid ${K.red}`, outline: `3px solid ${K.red}`, outlineOffset: 6, borderRadius: 14, padding: "4px 28px", color: K.red, fontFamily: COND, fontWeight: 600, fontSize: 84, letterSpacing: 6, background: "rgba(255,250,240,0.35)", boxShadow: `0 0 0 ${interpolate(f, [52, 70], [0, 26], CL)}px rgba(179,38,30,${interpolate(f, [52, 70], [0.35, 0], CL)})` }}>SUBSCRIBE</div>
+        <div style={{ position: "absolute", left: bx + bw - 250, top: by + bh - 26, transform: `scale(${lerp(3.2, 1, hit)}) rotate(${lerp(-30, -8, hit)}deg)`, opacity: cl(hit * 3) }}>
+          <div style={{ border: `9px solid ${K.red}`, outline: `3px solid ${K.red}`, outlineOffset: 6, borderRadius: 14, padding: "4px 28px", color: K.red, fontFamily: COND, fontWeight: 600, fontSize: 72, letterSpacing: 6, background: "rgba(255,250,240,0.6)", boxShadow: `0 0 0 ${interpolate(f, [52, 70], [0, 26], CL)}px rgba(179,38,30,${interpolate(f, [52, 70], [0.35, 0], CL)})` }}>SUBSCRIBE</div>
         </div>
       </AbsoluteFill>
     </AbsoluteFill>

@@ -17,7 +17,7 @@ export type Row = { segs: Seg[]; size?: number; indent?: number; gap?: number };
 const SKIN: Record<string, { font: string; ink: string; k: number; ls: number }> = {
   pencil: { font: MARK, ink: "#26221E", k: 1, ls: 0 },
   marker: { font: MARK, ink: "#1B1612", k: 1, ls: 0 },
-  pen: { font: HAND, ink: "#1C2F86", k: 1.28, ls: 0.5 },
+  pen: { font: HAND, ink: "#0F1E6E", k: 1.28, ls: 0.5 },
   lead: { font: HAND, ink: "#33302C", k: 1.28, ls: 0.5 },
 };
 export const Hoja: React.FC<{ src: string; skin: string; box: [number, number, number]; rows: Row[]; size?: number; pitch?: number; focus?: number; rot?: number; zoom?: [number, number]; dur: number }> = ({ src, skin, box, rows, size = 62, pitch, focus, rot = -1.2, zoom = [1.03, 1.1], dur }) => {
@@ -27,9 +27,9 @@ export const Hoja: React.FC<{ src: string; skin: string; box: [number, number, n
   const z = lerp(zoom[0], zoom[1], eio(f / Math.max(1, dur)));
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
-      <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: `${box[0] + box[2] * 0.45}px ${fy}px` }}>
+      <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: `${box[0] + box[2] * 0.42}px ${fy}px` }}>
         <Img src={staticFile(src)} style={{ width: 1920, height: 1080, objectFit: "fill" }} />
-        <div style={{ position: "absolute", left: box[0], top: box[1], width: box[2], transform: `rotate(${rot}deg)`, transformOrigin: "0 0", mixBlendMode: "multiply", opacity: 0.93 }}>
+        <div style={{ position: "absolute", left: box[0], top: box[1], width: box[2], transform: `rotate(${rot}deg)`, transformOrigin: "0 0", mixBlendMode: "multiply", opacity: 0.97 }}>
           {rows.map((r, i) => {
             const sz = (r.size || size) * S.k;
             return (
@@ -61,26 +61,26 @@ export type Reg = { x: number; y: number; rx: number; ry: number; t: string; lx:
 export const BeefMap: React.FC<{ src: string; regs: Reg[]; now: number; sweep?: boolean; dur: number }> = ({ src, regs, now, sweep, dur }) => {
   const f = useCurrentFrame(); const N = regs.length;
   const pos = sweep ? cl((f - 14) / Math.max(1, dur - 24)) * (N - 0.01) : now - 1; const i = Math.floor(cl(pos, 0, N - 1));
-  const z = lerp(1.02, 1.07, eio(f / Math.max(1, dur))); const dark = sweep ? cl(f / 12) : 1;
+  const z = sweep ? lerp(1.02, 1.07, eio(f / Math.max(1, dur))) : lerp(1.06, 1.2, eout(f / Math.max(1, dur))); const dark = sweep ? cl(f / 12) : 1;
   const r = regs[i]; const mask = `radial-gradient(ellipse ${r.rx}px ${r.ry}px at ${r.x}px ${r.y}px, #000 28%, transparent 100%)`;
   const pop = sweep ? cl((pos - i) * 6) : cl((f + 3) / 5);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
       <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: `${r.x}px ${r.y}px` }}>
-        <Img src={staticFile(src)} style={{ position: "absolute", width: 1920, height: 1080, objectFit: "fill", filter: `brightness(${lerp(1, 0.46, dark)}) saturate(${lerp(1, 0.5, dark)})` }} />
-        <Img src={staticFile(src)} style={{ position: "absolute", width: 1920, height: 1080, objectFit: "fill", WebkitMaskImage: mask, maskImage: mask, opacity: dark }} />
-        <div style={{ position: "absolute", left: r.lx, top: r.ly, opacity: pop * dark, transform: `rotate(-3deg) scale(${lerp(1.18, 1, pop)})`, transformOrigin: "0 100%", whiteSpace: "nowrap" }}>
-          <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 34, letterSpacing: 6, color: "#F3E7CC", textShadow: "0 2px 10px rgba(0,0,0,0.9)" }}>{i + 1} OF {N} · FRONT TO BACK</div>
-          <div style={{ fontFamily: MARK, fontSize: 118, lineHeight: 1, color: "#FFFDF6", textShadow: "0 4px 22px rgba(0,0,0,0.95), 0 1px 3px rgba(0,0,0,0.9)" }}>{r.t}</div>
-        </div>
+        <Img src={staticFile(src)} style={{ position: "absolute", width: 1920, height: 1080, objectFit: "fill", filter: `brightness(${lerp(1, 0.36, dark)}) saturate(${lerp(1, 0.4, dark)})` }} />
+        <Img src={staticFile(src)} style={{ position: "absolute", width: 1920, height: 1080, objectFit: "fill", WebkitMaskImage: mask, maskImage: mask, opacity: dark, filter: `brightness(${1.06 + 0.05 * Math.sin(f / 7)})` }} />
       </AbsoluteFill>
+      <div style={{ position: "absolute", left: 90, bottom: 64, opacity: pop * dark, transform: `rotate(-2deg) scale(${lerp(1.14, 1, pop)})`, transformOrigin: "0 100%", whiteSpace: "nowrap" }}>
+        <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 58, letterSpacing: 6, color: "#F3E7CC", textShadow: "0 2px 12px rgba(0,0,0,0.95)" }}>{i + 1} OF {N} · FRONT TO BACK</div>
+        <div style={{ fontFamily: MARK, fontSize: 150, lineHeight: 1, color: "#FFFDF6", textShadow: "0 4px 24px rgba(0,0,0,0.95), 0 1px 3px rgba(0,0,0,0.9)" }}>{r.t}</div>
+      </div>
     </AbsoluteFill>
   );
 };
 
 // ---------- DOS FOTOS: la segunda entra corriendo a la primera cuando la nombra; rótulo escrito en cinta de papel
 const Tape: React.FC<{ t: string; show: number }> = ({ t, show }) => (
-  <div style={{ position: "absolute", left: 60, bottom: 70, padding: "12px 34px 16px", background: "#F4EDDC", boxShadow: "0 10px 26px rgba(0,0,0,0.5)", transform: `rotate(-2.5deg) translateY(${(1 - show) * 60}px)`, opacity: cl(show * 2), fontFamily: MARK, fontSize: 64, color: K.ink, whiteSpace: "nowrap" }}>{t}</div>
+  <div style={{ position: "absolute", left: 60, bottom: 70, padding: "12px 34px 16px", background: "#F4EDDC", boxShadow: "0 10px 26px rgba(0,0,0,0.5)", transform: `rotate(-2.5deg) translateY(${(1 - show) * 60}px)`, opacity: cl(show * 2), fontFamily: MARK, fontSize: 88, color: K.ink, whiteSpace: "nowrap" }}>{t}</div>
 );
 export const Duo: React.FC<{ a: { src: string; t: string }; b: { src: string; t: string; f: number }; dur: number }> = ({ a, b, dur }) => {
   const f = useCurrentFrame(); const p = eio((f - b.f) / 16); const z = lerp(1.04, 1.1, f / Math.max(1, dur));
@@ -92,7 +92,7 @@ export const Duo: React.FC<{ a: { src: string; t: string }; b: { src: string; t:
       </div>
       {p > 0 && (
         <div style={{ position: "absolute", left: lerp(1920, 966, p), top: 0, width: 954, height: 1080, overflow: "hidden" }}>
-          <Img src={staticFile(b.src)} style={{ position: "absolute", left: -483, width: 1920, height: 1080, objectFit: "cover", transform: `scale(${lerp(1.12, 1.04, cl((f - b.f) / Math.max(1, dur - b.f)))})` }} />
+          <Img src={staticFile(b.src)} style={{ position: "absolute", left: -483, width: 1920, height: 1080, objectFit: "cover", filter: "brightness(1.22)", transform: `scale(${lerp(1.12, 1.04, cl((f - b.f) / Math.max(1, dur - b.f)))})` }} />
           <Tape t={b.t} show={eout((f - b.f - 12) / 10)} />
         </div>
       )}
