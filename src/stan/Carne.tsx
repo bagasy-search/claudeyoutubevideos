@@ -73,13 +73,13 @@ export const ChapS: React.FC<{ n: number; N: number; title: string; sub?: string
 
 // ---------- (2) progreso: 10 etiquetitas arriba a la DERECHA, la del pavo actual en rojo
 export const ProgS: React.FC<{ n: number; N: number; title: string; dur: number; unit?: string }> = ({ n, N, title, dur, unit = "TURKEY" }) => {
-  const asc = unit !== "TURKEY";
+  const asc = unit === "STEP";
   const f = useCurrentFrame(); const o = interpolate(f, [0, 8, dur - 8, dur], [0, 1, 1, 0], CL);
   return (
     <div style={{ position: "absolute", right: 54, top: 40, opacity: o, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 8 }}>
       <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 21, letterSpacing: 3, color: "#FFF8EA", textShadow: shadow }}>{unit} {asc ? `${n} OF ${N}` : `#${n}`} · {title.toUpperCase()}</div>
       <div style={{ display: "flex", gap: 6 }}>
-        {Array.from({ length: N }, (_, i) => { const k = asc ? i + 1 : N - i; const done = asc ? k < n : k > n, cur = k === n; return (
+        {N > 12 ? null : Array.from({ length: N }, (_, i) => { const k = asc ? i + 1 : N - i; const done = asc ? k < n : k > n, cur = k === n; return (
           <div key={i} style={{ width: 34, height: 44, clipPath: "polygon(22% 0, 78% 0, 100% 22%, 100% 100%, 0 100%, 0 22%)", background: cur ? C.red : done ? C.kraft : "rgba(255,246,230,0.38)", display: "flex", alignItems: "flex-end", justifyContent: "center", paddingBottom: 3, fontFamily: SANS, fontWeight: 600, fontSize: 17, color: cur ? "#FFF3E0" : done ? C.ink : "rgba(255,255,255,0.85)" }}>{k}</div>
         ); })}
       </div>
