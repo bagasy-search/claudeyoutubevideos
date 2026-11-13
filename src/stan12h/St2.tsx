@@ -132,7 +132,7 @@ export const SevenPhotos: React.FC<{ items: { t: string; f: number; src: string 
 
 // ── capítulo: el papel se desenrolla de verdad desde el rodillo (el rollo se achica) y trae una foto pegada con cinta; el título se pinta
 export const Chapter2: React.FC<{ kicker: string; title: string; img?: string; dur: number }> = ({ kicker, title, img, dur }) => {
-  const f = useCurrentFrame(); const roll = eout(f / 24); const o = interpolate(f, [0, 4, dur - 8, dur], [0, 1, 1, 0], CL);
+  const f0 = useCurrentFrame(); const kq = dur < 75 ? 2.4 : 1; const f = f0 * kq; const roll = eout(f / 24); const o = interpolate(f0, [0, 3, dur - 6, dur], [0, 1, 1, 0], CL);
   const H = 800 * roll; const R = lerp(64, 40, roll); const wr = eio((f - 16) / 18); const ph = sp(f, 20, 9, 0.8);
   return (
     <AbsoluteFill style={{ opacity: o }}>

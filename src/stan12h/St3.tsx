@@ -25,9 +25,10 @@ export const Hoja: React.FC<{ src: string; skin: string; box: [number, number, n
   let y = 0; const ys = rows.map((r) => { const v = y; y += (r.size ? Math.round(r.size * 1.42) : P) + (r.gap || 0); return v; });
   const fi = focus ?? rows.length - 1; const fy = box[1] + (ys[Math.max(0, Math.min(rows.length - 1, fi))] || 0) + P / 2;
   const z = lerp(zoom[0], zoom[1], eio(f / Math.max(1, dur)));
+  const top = Math.max(0, box[1] - 46); const shift = Math.max(0, top + (fy - top) * z - 720);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
-      <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: `${box[0] + box[2] * 0.42}px ${fy}px` }}>
+      <AbsoluteFill style={{ transform: `translateY(${-shift}px) scale(${z})`, transformOrigin: `${box[0] + box[2] * 0.42}px ${top}px` }}>
         <Img src={staticFile(src)} style={{ width: 1920, height: 1080, objectFit: "fill" }} />
         <div style={{ position: "absolute", left: box[0], top: box[1], width: box[2], transform: `rotate(${rot}deg)`, transformOrigin: "0 0", mixBlendMode: "multiply", opacity: 0.97 }}>
           {rows.map((r, i) => {
