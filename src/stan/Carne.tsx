@@ -459,3 +459,55 @@ export const NextS: React.FC<{ title: string; src: string; dur: number }> = ({ t
     </AbsoluteFill>
   );
 };
+
+// ---------- las 13 costillas (stan12m): chuck 1-5 · rib 6-12 · el mismo músculo cruza la línea de la sierra. etapa 1 = contar; etapa 2 = la soga, la sierra y los precios
+export const RibsS: React.FC<{ stage: number; m: number[]; bg?: string; dur: number }> = ({ stage, m, bg, dur }) => {
+  const f = useCurrentFrame(); const o = useOut(dur, 8); const p = sp(f, 0, 16);
+  const BW = 104, GAP = 10, X0 = 24, s2 = stage === 2;
+  const x = (i: number) => X0 + i * (BW + GAP);
+  const on = (k: number, d = 6) => cl((f - (m[k] ?? 9999)) / d);
+  const chuck = s2 ? 1 : on(0), rib = s2 ? 1 : on(1), seven = s2 ? 0 : on(2);
+  const grow = s2 ? interpolate(cl((f - m[0]) / 36), [0, 1], [0, 1], { easing: ease }) : 0;
+  const ext = s2 ? interpolate(cl((f - m[1]) / 44), [0, 1], [0, 1], { easing: ease }) : 0;
+  const saw = s2 ? interpolate(cl((f - m[2]) / 10), [0, 1], [0, 1], { easing: ease }) : 0;
+  const ribL = x(5), ribR = x(12) + BW, left = ribL - ext * (ribL - x(1) - 20);
+  const col = (i: number) => (i < 5 ? C.kraft2 : i < 12 ? C.red : "#8C8A84");
+  const vis = (i: number) => (s2 ? 1 : cl((f - 10 - i * 3) / 6));
+  return (
+    <AbsoluteFill style={{ opacity: o }}>
+      <Fondo src={bg} seed={1313} dur={dur} />
+      <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
+        <Hoja style={{ width: 1640, padding: "50px 60px 46px", transform: `translateY(${(1 - p) * 760}px) rotate(-0.6deg)` }}>
+          <div style={{ fontFamily: TYPE, fontSize: 40, letterSpacing: 5, color: C.red }}>{s2 ? "ONE MUSCLE · TWO PRICES" : "THE BUTCHER COUNTS FROM THE FRONT"}</div>
+          <div style={{ fontFamily: MARK, fontSize: 84, color: C.ink, lineHeight: 1.05, marginTop: 4 }}>{s2 ? "It doesn’t stop at rib six" : "13 ribs on each side"}</div>
+          <div style={{ position: "relative", height: 520, marginTop: 26 }}>
+            <div style={{ position: "absolute", left: X0, top: 0, fontFamily: TYPE, fontSize: 30, color: C.ink, opacity: 0.75 }}>← FRONT · the shoulder</div>
+            <div style={{ position: "absolute", right: 24, top: 0, fontFamily: TYPE, fontSize: 30, color: C.ink, opacity: 0.75 }}>the back →</div>
+            {s2 && <div style={{ position: "absolute", left, top: 52, width: (ribR - left) * (ext > 0 ? 1 : grow), height: 62, borderRadius: 31, background: "linear-gradient(180deg,#C4433A 0%,#8E1F19 100%)", boxShadow: "0 6px 14px rgba(0,0,0,0.35)" }} />}
+            {s2 && <div style={{ position: "absolute", left: x(7), top: 62, width: 560, fontFamily: HAND, fontWeight: 700, fontSize: 40, color: C.chalk, opacity: cl((f - m[0] - 26) / 8), whiteSpace: "nowrap" }}>the ribeye muscle</div>}
+            {Array.from({ length: 13 }, (_, i) => (
+              <div key={i} style={{ position: "absolute", left: x(i), top: 136, width: BW, height: 150, borderRadius: 10, background: col(i), opacity: vis(i) * (i < 5 ? 0.35 + 0.65 * chuck : i < 12 ? 0.35 + 0.65 * rib : 0.6), display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 5px 12px rgba(0,0,0,0.3)", transform: `translateY(${(1 - vis(i)) * 30}px)` }}>
+                <span style={{ fontFamily: MARK, fontSize: 62, color: C.chalk }}>{i + 1}</span>
+              </div>
+            ))}
+            <div style={{ position: "absolute", left: x(0), top: 300, width: x(4) + BW - x(0), borderTop: `6px solid ${C.ink}`, opacity: chuck }} />
+            <div style={{ position: "absolute", left: x(0), top: 312, width: x(4) + BW - x(0), textAlign: "center", opacity: chuck }}>
+              <div style={{ fontFamily: MARK, fontSize: 70, color: C.ink, lineHeight: 1 }}>CHUCK</div>
+              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 40, color: C.ink }}>ribs 1 to 5</div>
+              {s2 && <div style={{ fontFamily: MARK, fontSize: 88, color: C.red, lineHeight: 1, marginTop: 6, opacity: on(4), transform: `scale(${interpolate(on(4), [0, 1], [1.5, 1])})` }}>about $8 a pound</div>}
+            </div>
+            <div style={{ position: "absolute", left: x(5), top: 300, width: x(11) + BW - x(5), borderTop: `6px solid ${C.red}`, opacity: rib }} />
+            <div style={{ position: "absolute", left: x(5), top: 312, width: x(11) + BW - x(5), textAlign: "center", opacity: rib }}>
+              <div style={{ fontFamily: MARK, fontSize: 70, color: C.red, lineHeight: 1 }}>RIB · the prime rib</div>
+              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 40, color: C.ink }}>ribs 6 to 12{seven > 0 ? <span style={{ opacity: seven }}> · seven bones</span> : null}</div>
+              {s2 && <div style={{ fontFamily: MARK, fontSize: 88, color: C.ink, lineHeight: 1, marginTop: 6, opacity: on(3), transform: `scale(${interpolate(on(3), [0, 1], [1.5, 1])})` }}>$15 to $20 a pound</div>}
+            </div>
+            {s2 && <div style={{ position: "absolute", left: x(5) - GAP / 2 - 4, top: 30, width: 0, height: 270 * saw, borderLeft: `8px dashed ${C.ink}` }} />}
+            {s2 && <div style={{ position: "absolute", left: x(5) - 110, top: -10, width: 220, textAlign: "center", fontFamily: TYPE, fontSize: 32, letterSpacing: 3, color: C.ink, background: C.papel, opacity: cl((f - m[2] - 6) / 6) }}>THE SAW</div>}
+          </div>
+          {s2 && <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: C.ink, textAlign: "center", marginTop: 4, opacity: on(5, 8) }}>Same muscle. Two inches away.</div>}
+        </Hoja>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};

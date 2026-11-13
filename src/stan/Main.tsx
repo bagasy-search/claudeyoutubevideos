@@ -50,6 +50,7 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
     case "freshS": return <S.FreshS {...s.p} bg={s.bg} dur={dur} />;
     case "pasosS": return <S.PasosS {...s.p} bg={s.bg} dur={dur} />;
     case "razasS": return <S.RazasS {...s.p} bg={s.bg} dur={dur} />;
+    case "ribsS": return <S.RibsS {...s.p} bg={s.bg} dur={dur} />;
     case "nextS": return <S.NextS {...s.p} dur={dur} />;
     case "escena": { const C = (E as any)[s.p.name]; return C ? <C {...s.p} dur={dur} /> : null; }
     default: return null;
