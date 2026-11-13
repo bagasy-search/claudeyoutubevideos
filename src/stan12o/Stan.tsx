@@ -734,7 +734,7 @@ export const TriTags: React.FC<{ head: string; tags: TTag[]; source: string; dur
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
   return (
     <TileWall dur={dur} seed={seed}>
-      <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1.2, 1.27])})`, transformOrigin: "50% 8%" }}>
+      <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1.0, 1.04])})`, transformOrigin: "50% 8%" }}>
         <div style={{ position: "absolute", left: -40, right: -40, top: 70, height: 26, background: "linear-gradient(180deg,#E9EDF0 0%,#8B9196 55%,#5D6367 100%)", boxShadow: "0 12px 18px rgba(0,0,0,0.3)" }} />
         <div style={{ position: "absolute", left: 0, right: 0, bottom: 250, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 50, letterSpacing: 10, color: K.red }}>{head}</div>
         {tags.map((t, i) => {

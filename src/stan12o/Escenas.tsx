@@ -80,7 +80,7 @@ export const EscEspada: React.FC<{ src: string; fPull: number; dur: number }> = 
   const BONE = "polygon(886px 280px, 1000px 280px, 1004px 478px, 884px 478px)";
   const tug = f < fPull ? Math.sin(f / 3) * 3 * seg(f, fPull - 24, fPull) : 0;
   const up = seg(f, fPull, fPull + Math.min(70, Math.max(30, dur - fPull - 30)));
-  const y = -300 * up;
+  const y = -130 * up;
   const s = lerp(1.25, 1.55, seg(f, 0, fPull)) - 0.2 * seg(f, fPull + 6, dur);
   const cy = lerp(520, 400, seg(f, 0, fPull)) + 60 * seg(f, fPull + 6, dur);
   return (
@@ -91,7 +91,7 @@ export const EscEspada: React.FC<{ src: string; fPull: number; dur: number }> = 
         {f >= fPull - 1 && <Img src={staticFile(src)} style={{ ...FULL, transform: "translateX(-135px)", clipPath: "polygon(1013px 270px, 1143px 270px, 1147px 492px, 1011px 492px)", opacity: Math.min(1, up * 12) }} />}
         <Img src={staticFile(src)} style={{ ...FULL, transform: `translate(${tug + 150 * up}px, ${y}px) rotate(${up * 16}deg)`, transformOrigin: "945px 470px", clipPath: BONE, filter: `drop-shadow(0 ${18 * up}px ${14 * up}px rgba(0,0,0,0.5))` }} />
       </AbsoluteFill>
-      <Papel x={1250} y={150} t="out clean" f0={fPull + 30} size={150} rot={3} />
+      <Papel x={1280} y={420} t="out clean" f0={fPull + 30} size={150} rot={3} />
     </AbsoluteFill>
   );
 };
