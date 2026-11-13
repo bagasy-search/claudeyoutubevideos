@@ -67,7 +67,7 @@ export const GrillLid: React.FC<{ open: string; lid: string; geo: LidGeo; phase:
         <Img src={staticFile(open)} style={{ position: "absolute", width: 1920, height: 1080, objectFit: "fill", filter: "brightness(0.5) saturate(0.7)" }} />
         <div style={{ position: "absolute", left: gx - gr, top: gy - gr, width: gr * 2, height: gr * 2, borderRadius: "50%", overflow: "hidden" }}>
           <Img src={staticFile(open)} style={{ position: "absolute", left: gr - gx, top: gr - gy, width: 1920, height: 1080, objectFit: "fill", filter: "brightness(0.82)" }} />
-          {[0, 0.14, 0.28, 0.42].map((d, q) => { const lp = (((f - 10) / 70 - d) % 1 + 1) % 1; const pp = eio(lp); const x = lerp(sx, ex, pp), y = lerp(sy, ey, pp) - Math.sin(pp * Math.PI) * gr * 0.16 + (q % 2 ? 26 : -26); const s2 = gr * lerp(0.5, 0.3, q / 3); return <div key={q} style={{ position: "absolute", left: x - (gx - gr) - s2 / 2, top: y - (gy - gr) - s2 / 2, width: s2, height: s2, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,200,120,0.9) 0%, rgba(255,140,50,0.45) 40%, rgba(255,120,40,0) 70%)", mixBlendMode: "screen", opacity: f < 10 ? 0 : Math.sin(lp * Math.PI) }} />; })}
+          {[0, 0.5].map((d, q) => { const lp = (((f - 10) / 90 - d) % 1 + 1) % 1; return <div key={q} style={{ position: "absolute", left: lerp(-gr * 0.9, gr * 1.7, lp), top: 0, width: gr * 1.2, height: gr * 2, background: "linear-gradient(90deg, rgba(255,205,160,0) 0%, rgba(255,205,160,0.34) 45%, rgba(255,225,190,0.42) 60%, rgba(255,205,160,0) 100%)", mixBlendMode: "screen", opacity: f < 10 ? 0 : Math.sin(lp * Math.PI) }} />; })}
         </div>
       </AbsoluteFill>
       <Note x={110} y={840} a="heat + smoke" b="cross the brats" show={eout((f - fNote) / 12)} />
