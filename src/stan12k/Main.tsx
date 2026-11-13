@@ -6,7 +6,7 @@ import * as Q from "./Piezas2";
 import * as E from "./Escenas";
 import * as St from "./Stan";
 
-export const TOTAL_FRAMES_STAN12G = TOTAL;
+export const TOTAL_FRAMES_STAN12K = TOTAL;
 const T = 8; // frames de transición
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
@@ -25,6 +25,13 @@ const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
       case "receipt": return <St.Receipt head={s.head} lines={s.lines} foot={s.foot} dur={dur} seed={s.id} />;
       case "ask": return <St.AskPaper kicker={s.kicker} text={s.text} img={s.img} dur={dur} seed={s.id} />;
       case "map": return <St.MapChi src={s.src} pins={s.pins} dur={dur} />;
+      case "ruletag": return <St.RuleTag img={s.img} big={s.big} sub={s.sub} stamp={s.stamp} fBig={s.fBig} fStamp={s.fStamp} dur={dur} seed={s.id} />;
+      case "gram": return <St.GramScale top={s.top} to={s.to} label={s.label} fTop={s.fTop} fRun={s.fRun} dur={dur} seed={s.id} />;
+      case "cal": return <St.TearCal days={s.days} fDays={s.fDays} note={s.note} dur={dur} seed={s.id} />;
+      case "probe": return <St.ProbeBox label={s.label} from={s.fromV} to={s.to} fHit={s.fHit} note={s.note} dur={dur} seed={s.id} />;
+      case "five": return <St.FiveBags n={s.n} text={s.text} dur={dur} seed={s.id} />;
+      case "ctags": return <St.CounterTags img={s.img} tags={s.tags} stamp={s.stamp} fStamp={s.fStamp} dur={dur} seed={s.id} />;
+      case "tape": return <St.AddTape head={s.head} lines={s.lines} dur={dur} seed={s.id} />;
       case "carousel": return <Q.Carousel cards={CARDS} bg={s.bg} subAt={s.subAt} sub={s.sub} dur={dur} />;
       case "esc": { const K = (E as any)[s.name]; return K ? <K dur={dur} {...s.props} /> : null; }
       default: return null;
@@ -83,7 +90,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
   }
 };
 
-export const MainStan12g: React.FC = () => (
+export const MainStan12k: React.FC = () => (
   <AbsoluteFill style={{ background: P.C.ink }}>
     {/* capa 1: avatar (ventanas visibles) */}
     {AVATAR.map((a, i) => (
@@ -111,7 +118,7 @@ export const MainStan12g: React.FC = () => (
       </Sequence>
     ))}
     {/* audio: voz premezclada (sin música); SFX y sonido real de los clips por debajo */}
-    <Audio src={staticFile("stan12g_mix.m4a")} />
+    <Audio src={staticFile("stan12k_mix.m4a")} />
     {SFX.map((x, i) => (
       <Sequence key={"x" + i} from={x.from} durationInFrames={90}>
         <Audio src={staticFile(x.src)} volume={x.vol} />
