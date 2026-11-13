@@ -503,7 +503,7 @@ export const RuleTag: React.FC<{ img: string; big: string; sub: string; stamp: s
           <Write f0={fBig + 10} len={18} style={{ fontFamily: HAND, fontWeight: 700, fontSize: 80, lineHeight: 1, color: K.ink, whiteSpace: "nowrap", display: "inline-block" }}>{sub}</Write>
         </div>
       </div>
-      <div style={{ position: "absolute", left: 150, top: 150, padding: "18px 46px", border: `12px solid ${K.red}`, outline: `4px solid ${K.red}`, outlineOffset: 9, borderRadius: 18, background: "rgba(250,247,240,0.92)", fontFamily: SANS, fontWeight: 600, fontSize: 124, letterSpacing: 10, color: K.red, whiteSpace: "nowrap",
+      <div style={{ position: "absolute", left: 90, top: 250, padding: "18px 40px", border: `12px solid ${K.red}`, outline: `4px solid ${K.red}`, outlineOffset: 9, borderRadius: 18, background: "rgba(250,247,240,0.92)", fontFamily: SANS, fontWeight: 600, fontSize: 92, letterSpacing: 6, color: K.red, whiteSpace: "nowrap",
         transform: `rotate(-8deg) scale(${2.6 - 1.6 * Math.min(1.05, st)})`, opacity: Math.min(1, st * 3), boxShadow: "0 16px 30px rgba(0,0,0,0.35)" }}>{stamp}</div>
     </AbsoluteFill>
   );
@@ -572,9 +572,9 @@ export const TearCal: React.FC<{ days: number[]; fDays: number[]; note: string; 
             return <React.Fragment key={i}>{page(days[i - 1], { transformOrigin: "0% 0%", transform: `translate(${t * 260}px, ${t * 900}px) rotate(${t * 38}deg)`, opacity: 1 - t * 0.3, zIndex: 4 })}</React.Fragment>;
           })}
         </div>
-        <div style={{ position: "absolute", left: 1010, top: 380, maxWidth: 800, padding: "30px 46px 38px", backgroundImage: paperBg, boxShadow: "0 22px 44px rgba(0,0,0,0.35)", transform: `rotate(2deg) translateX(${(1 - inn) * 900}px)` }}>
+        <div style={{ position: "absolute", left: 1000, top: 330, width: 780, padding: "34px 46px 42px", boxSizing: "border-box", backgroundImage: paperBg, boxShadow: "0 22px 44px rgba(0,0,0,0.35)", transform: `rotate(2deg) translateX(${(1 - inn) * 900}px)` }}>
           <Tape style={{ left: "50%", marginLeft: -75, top: -22, transform: "rotate(-3deg)" }} />
-          <Write f0={10} len={22} style={{ fontFamily: HAND, fontWeight: 700, fontSize: Math.min(124, Math.floor(700 / (note.length * 0.45))), lineHeight: 1.1, color: K.ink, whiteSpace: "nowrap" }}>{note}</Write>
+          <Write f0={10} len={22} style={{ fontFamily: HAND, fontWeight: 700, fontSize: 108, lineHeight: 1.08, color: K.ink }}>{note}</Write>
         </div>
       </AbsoluteFill>
     </TileWall>
@@ -596,9 +596,9 @@ export const ProbeBox: React.FC<{ label: string; from: number; to: number; fHit:
         {/* cable trenzado que sale hacia el horno */}
         <div style={{ position: "absolute", left: 1330, top: 520, width: 700, height: 22, borderRadius: 11, background: "repeating-linear-gradient(120deg, #3A3F44 0px, #3A3F44 10px, #8B9196 10px, #8B9196 20px)", transformOrigin: "0 50%", transform: `rotate(${-14 + Math.sin(f / 17) * 1.5}deg)`, boxShadow: "0 8px 12px rgba(0,0,0,0.3)" }} />
         <div style={{ position: "absolute", left: 420, top: 250, width: 960, height: 560, borderRadius: 40, background: "linear-gradient(160deg,#FAF7F0,#DAD5C8)", boxShadow: "0 40px 70px rgba(0,0,0,0.45), inset 0 0 0 8px rgba(255,255,255,0.6)", transform: `translateY(${(1 - inn) * 700}px) rotate(${-1.5 + inn}deg)` }}>
-          <div style={{ position: "absolute", left: 60, top: 40, fontFamily: SANS, fontWeight: 600, fontSize: 46, letterSpacing: 9, color: K.red }}>{label}</div>
+          <div style={{ position: "absolute", left: 60, top: 40, fontFamily: SANS, fontWeight: 600, fontSize: 46, letterSpacing: 7, color: K.red, whiteSpace: "nowrap" }}>{label}</div>
           <div style={{ position: "absolute", left: 60, top: 120, width: 840, height: 300, borderRadius: 20, background: "linear-gradient(180deg,#1C2A22,#24362B)", boxShadow: "inset 0 10px 24px rgba(0,0,0,0.7)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 260, letterSpacing: 8, color: done ? "#FFD27A" : "#B8FFB0", textShadow: `0 0 16px ${done ? "rgba(255,200,90,0.6)" : "rgba(140,255,130,0.5)"}`, transform: `scale(${1 + 0.12 * (1 - Math.min(1, Math.abs(hit - 1) * 3)) * (done ? 1 : 0) + (done ? 0.02 * Math.sin(f / 5) : 0)})` }}>{val}°F</div>
+            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 210, letterSpacing: 4, whiteSpace: "nowrap", color: done ? "#FFD27A" : "#B8FFB0", textShadow: `0 0 16px ${done ? "rgba(255,200,90,0.6)" : "rgba(140,255,130,0.5)"}`, transform: `scale(${1 + 0.12 * (1 - Math.min(1, Math.abs(hit - 1) * 3)) * (done ? 1 : 0) + (done ? 0.02 * Math.sin(f / 5) : 0)})` }}>{val}°F</div>
           </div>
           <div style={{ position: "absolute", left: 60, right: 60, top: 440, fontFamily: HAND, fontWeight: 700, fontSize: Math.min(84, Math.floor(820 / (note.length * 0.45))), color: K.ink, whiteSpace: "nowrap", opacity: interpolate(f, [fHit + 4, fHit + 16], [0, 1], CL) }}>{note}</div>
         </div>
@@ -617,7 +617,7 @@ export const FiveBags: React.FC<{ n: number; text: string; dur: number; seed: nu
         <div style={{ position: "absolute", left: 0, right: 0, top: 800, height: 280, backgroundImage: woodBg, boxShadow: "0 -14px 30px rgba(0,0,0,0.3)" }} />
         {[1, 2, 3, 4, 5].map((i) => {
           const me = i === n, done = i < n;
-          const x = 190 + (i - 1) * 330, sc = me ? 0.86 + 0.5 * p : 0.86, y = me ? -70 * p : 0;
+          const x = 190 + (i - 1) * 330, sc = me ? 0.8 + 0.32 * p : 0.8, y = me ? -20 * p : 0;
           return (
             <div key={i} style={{ position: "absolute", left: x, top: 440 + y, width: 240, height: 380, transformOrigin: "50% 100%", transform: `scale(${sc}) rotate(${me ? Math.sin(f / 9) * 2 : (i % 2 ? -2 : 2)}deg)`, zIndex: me ? 5 : 1, opacity: done ? 0.55 : 1 }}>
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(100deg, #B98A55 0%, #D2A572 40%, #C4965F 60%, #A87A47 100%)", clipPath: "polygon(4% 8%, 14% 0, 30% 7%, 48% 1%, 66% 8%, 84% 0, 96% 7%, 100% 100%, 0 100%)", boxShadow: "0 20px 30px rgba(0,0,0,0.35)" }} />
@@ -626,9 +626,9 @@ export const FiveBags: React.FC<{ n: number; text: string; dur: number; seed: nu
             </div>
           );
         })}
-        <div style={{ position: "absolute", left: 0, right: 0, top: 110, display: "flex", justifyContent: "center" }}>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 60, display: "flex", justifyContent: "center" }}>
           <div style={{ padding: "22px 56px 30px", backgroundImage: paperBg, boxShadow: "0 22px 44px rgba(0,0,0,0.35)", transform: `rotate(-1.5deg) translateY(${(1 - p) * -300}px)` }}>
-            <Write f0={3} len={16} style={{ fontFamily: HAND, fontWeight: 700, fontSize: Math.min(150, Math.floor(1500 / (text.length * 0.45))), lineHeight: 1.05, color: K.ink, whiteSpace: "nowrap" }}>{text}</Write>
+            <Write f0={3} len={16} style={{ fontFamily: HAND, fontWeight: 700, fontSize: Math.min(150, Math.floor(1500 / (text.length * 0.45))), lineHeight: 1.05, color: K.ink, whiteSpace: "nowrap", paddingRight: 30 }}>{text}</Write>
           </div>
         </div>
       </AbsoluteFill>
@@ -652,7 +652,7 @@ export const CounterTags: React.FC<{ img: string; tags: CTag[]; stamp?: string; 
             <div style={{ position: "absolute", left: 292, top: 320, width: 16, height: 300, borderRadius: 8, background: "linear-gradient(90deg, #6F757A 0%, #E9EDF0 45%, #8B9196 100%)", boxShadow: "8px 10px 16px rgba(0,0,0,0.35)" }} />
             <div style={{ position: "absolute", left: 0, top: 0, width: 600, height: 350, background: K.white, border: `10px solid ${K.red}`, borderRadius: 16, boxShadow: "0 26px 50px rgba(0,0,0,0.5)", textAlign: "center", boxSizing: "border-box" }}>
               <div style={{ fontFamily: SERIF, fontSize: Math.min(210, Math.floor(540 / (g.t.length * 0.5))), lineHeight: 1.05, color: K.ink, marginTop: 30, whiteSpace: "nowrap" }}>{g.t}</div>
-              <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 44, letterSpacing: 6, color: K.red, whiteSpace: "nowrap" }}>{g.s}</div>
+              <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: Math.min(44, Math.floor(540 / (g.s.length * 0.66))), letterSpacing: 2, color: K.red, whiteSpace: "nowrap" }}>{g.s}</div>
             </div>
           </div>
         );
@@ -676,10 +676,10 @@ export const AddTape: React.FC<{ head: string; lines: TLine[]; dur: number; seed
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundImage: woodBg, opacity: fadeIO(f, dur, 4, 7) }}>
       <AbsoluteFill style={{ background: "radial-gradient(ellipse 1300px 760px at 50% 30%, rgba(255,225,170,0.22), rgba(0,0,0,0) 70%)" }} />
-      <AbsoluteFill style={{ transform: `scale(${interpolate(f, [0, dur], [1, 1.05])})`, transformOrigin: "50% 80%" }}>
+      <AbsoluteFill style={{ transform: `scale(${interpolate(f, [0, dur], [1.2, 1.27])})`, transformOrigin: "50% 100%" }}>
         {/* cinta */}
         <div style={{ position: "absolute", left: 420, top: 0, width: 1080, height: 820, overflow: "hidden" }}>
-          <div style={{ position: "absolute", left: 0, top: 820 - 150 - up * LH, width: 1080, minHeight: 1400, background: "linear-gradient(180deg,#FFFEF8,#F4EEDC)", boxShadow: "0 0 30px rgba(0,0,0,0.4)", padding: "30px 70px", boxSizing: "border-box" }}>
+          <div style={{ position: "absolute", left: 0, top: 820 - 330 - up * LH, width: 1080, minHeight: 1400, background: "linear-gradient(180deg,#FFFEF8,#F4EEDC)", boxShadow: "0 0 30px rgba(0,0,0,0.4)", padding: "30px 70px", boxSizing: "border-box" }}>
             <div style={{ height: 120, fontFamily: SANS, fontWeight: 600, fontSize: 46, letterSpacing: 9, color: K.red, textAlign: "center", whiteSpace: "nowrap" }}>{head}</div>
             {lines.map((l, i) => f < l.f ? null : (
               <div key={i} style={{ height: LH, display: "flex", justifyContent: "space-between", alignItems: "baseline", whiteSpace: "nowrap", fontFamily: l.bold ? SERIF : HAND, fontWeight: 700, fontSize: l.bold ? 100 : 78, color: l.bold ? K.red : K.ink, borderTop: l.bold ? `5px solid ${K.ink}` : "none", opacity: interpolate(f, [l.f, l.f + 4], [0, 1], CL) }}>

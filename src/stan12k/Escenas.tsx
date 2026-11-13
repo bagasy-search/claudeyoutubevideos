@@ -24,13 +24,13 @@ export const EscCajones: React.FC<{ src: string; fStart: number; fHalf: number; 
   const s = 1.06 + 0.1 * (f / dur);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#2a1a12" }}>
-      <AbsoluteFill style={cam(960, 500, s)}>
+      <AbsoluteFill style={{ transform: `scale(${1 + 0.05 * (f / dur)})` }}>
         <Img src={staticFile(src)} style={{ ...FULL, filter: "brightness(0.42) saturate(0.8)" }} />
         <Img src={staticFile(src)} style={{ ...FULL, clipPath: "polygon(0px 0px, 1920px 0px, 1920px 340px, 0px 340px)" }} />
         <Img src={staticFile(src)} style={{ ...FULL, clipPath: "polygon(0px 792px, 1920px 792px, 1920px 1080px, 0px 1080px)" }} />
         {B.map(([y0, y1, dir], i) => {
           const out = damp(f - fStart - i * step, 5, 26) * (f >= fStart + i * step ? 1 : 0);
-          const x = dir * 190 * out * (1 - back);
+          const x = dir * 300 * out * (1 - back);
           return <Img key={i} src={staticFile(src)} style={{ ...FULL, transform: `translateX(${x}px)`, clipPath: `polygon(0px ${y0}px, 1920px ${y0}px, 1920px ${y1}px, 0px ${y1}px)` }} />;
         })}
       </AbsoluteFill>
@@ -58,7 +58,7 @@ export const EscRemolino: React.FC<{ src: string; fStir: number; fPink: number; 
           <Img src={staticFile(src)} style={{ ...FULL, transformOrigin: `${CX}px ${CY}px`, transform: `rotate(${ang}deg)` }} />
           <Img src={staticFile(src)} style={{ ...FULL, transformOrigin: `${CX}px ${CY}px`, transform: `rotate(${-ang * 0.7 + 120}deg)`, opacity: 0.5 * Math.min(1, sp / 12) }} />
           <Img src={staticFile(src)} style={{ ...FULL, transformOrigin: `${CX}px ${CY}px`, transform: `rotate(${ang * 1.3 + 240}deg)`, opacity: 0.34 * Math.min(1, sp / 12) }} />
-          <div style={{ position: "absolute", left: CX - R, top: CY - R, width: 2 * R, height: 2 * R, borderRadius: "50%", opacity: 0.93 * mix,
+          <div style={{ position: "absolute", left: CX - R, top: CY - R, width: 2 * R, height: 2 * R, borderRadius: "50%", opacity: 0.62 * mix,
             background: "radial-gradient(circle at 42% 38%, #F3D3CC 0%, #EBC3BB 45%, #D9A9A2 78%, #B98C86 100%)" }} />
           <div style={{ position: "absolute", left: CX - R, top: CY - R, width: 2 * R, height: 2 * R, borderRadius: "50%", opacity: 0.5 * mix * (1 - done),
             background: `repeating-conic-gradient(from ${ang}deg, rgba(255,255,255,0.5) 0deg, rgba(255,255,255,0) 24deg, rgba(190,120,120,0.35) 40deg, rgba(255,255,255,0) 60deg)` }} />
@@ -75,7 +75,7 @@ export const EscFecha: React.FC<{ src: string; fIn: number; fOut: number; dur: n
   const f = useCurrentFrame();
   const z = seg(f, 0, Math.max(20, fIn));
   const cx = lerp(960, 690, z), cy = lerp(540, 300, z), s = lerp(1.0, 2.25, z) + 0.12 * (f / dur);
-  const w = (f0: number) => `inset(-20% ${100 - seg(f, f0, f0 + 16) * 100}% -20% 0)`;
+  const w = (f0: number) => `inset(-20% ${100 - seg(f, f0, f0 + 16) * 115}% -20% 0)`;
   const ln: React.CSSProperties = { position: "absolute", left: 428, fontFamily: FONTS.HAND, fontWeight: 700, fontSize: 54, lineHeight: 1, color: "#16120f", whiteSpace: "nowrap", transform: "rotate(-0.6deg)" };
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#2a2a28" }}>
