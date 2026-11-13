@@ -105,7 +105,7 @@ export const EscVuelta: React.FC<{ src: string; fTurn: number; dur: number }> = 
   const s = 1.2 + 0.1 * (f / dur);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#12110f", perspective: 1800 }}>
-      <AbsoluteFill style={{ transformOrigin: "50% 64%", transform: `rotateX(${shown}deg)` }}>
+      <AbsoluteFill style={{ transformOrigin: "50% 64%", transform: `scale(1.14) rotateX(${shown}deg)` }}>
         <AbsoluteFill style={cam(990, 640, s)}>
           <Img src={staticFile(src)} style={FULL} />
           {t < 0.5 && <Papel x={420} y={330} t="the salt only goes down" f0={10} size={104} rot={-2} />}
