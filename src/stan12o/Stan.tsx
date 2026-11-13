@@ -37,7 +37,7 @@ const Tape: React.FC<{ style: React.CSSProperties }> = ({ style }) => (
 const Write: React.FC<{ f0: number; len?: number; children: React.ReactNode; style?: React.CSSProperties }> = ({ f0, len = 14, children, style }) => {
   const f = useCurrentFrame();
   const p = interpolate(f, [f0, f0 + len], [0, 1], { ...CL, easing: ease });
-  return <div style={{ clipPath: `inset(-20% ${100 - p * 100}% -20% 0)`, ...style }}>{children}</div>;
+  return <div style={{ clipPath: `inset(-20% ${(1 - p) * 100 - p * 14}% -20% 0)`, ...style }}>{children}</div>;
 };
 
 // ---------- apertura de capítulo: la foto del corte a pantalla completa y la etiqueta de precio que se clava y se da vuelta
@@ -721,7 +721,7 @@ export const DayPaper: React.FC<{ img: string; day: string; what: string; fDay: 
         <div style={{ position: "absolute", left: 0, right: 0, top: 96, textAlign: "center" }}>
           <Write f0={fDay} len={14} style={{ display: "inline-block", fontFamily: HAND, fontWeight: 700, fontSize: day.length > 8 ? 150 : 190, lineHeight: 1, color: GREASE, whiteSpace: "nowrap", paddingRight: 20, transform: "rotate(-3deg)" }}>{day}</Write>
           <div style={{ height: 12, width: 520 * interpolate(f, [fDay + 12, fDay + 24], [0, 1], CL), background: GREASE, borderRadius: 6, margin: "6px auto 0", transform: "rotate(-2deg)", opacity: 0.85 }} />
-          <Write f0={fDay + 20} len={16} style={{ display: "inline-block", fontFamily: HAND, fontWeight: 700, fontSize: Math.min(92, Math.floor(680 / (what.length * 0.46))), lineHeight: 1.1, color: K.red, whiteSpace: "nowrap", marginTop: 34, paddingRight: 16 }}>{what}</Write>
+          <Write f0={fDay + 9} len={10} style={{ display: "inline-block", fontFamily: HAND, fontWeight: 700, fontSize: Math.min(92, Math.floor(680 / (what.length * 0.46))), lineHeight: 1.1, color: K.red, whiteSpace: "nowrap", marginTop: 34, paddingRight: 16 }}>{what}</Write>
         </div>
       </div>
     </AbsoluteFill>
@@ -736,10 +736,10 @@ export const TriTags: React.FC<{ head: string; tags: TTag[]; source: string; dur
     <TileWall dur={dur} seed={seed}>
       <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1, 1.05])})`, transformOrigin: "50% 20%" }}>
         <div style={{ position: "absolute", left: -40, right: -40, top: 70, height: 26, background: "linear-gradient(180deg,#E9EDF0 0%,#8B9196 55%,#5D6367 100%)", boxShadow: "0 12px 18px rgba(0,0,0,0.3)" }} />
-        <div style={{ position: "absolute", left: 0, right: 0, top: 118, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 46, letterSpacing: 10, color: K.red }}>{head}</div>
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 130, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 56, letterSpacing: 10, color: K.red }}>{head}</div>
         {tags.map((t, i) => {
           const d = spring({ frame: f - t.f, fps, config: { damping: 10, mass: 0.9 } });
-          const x = 330 + i * 630, sw = 9 * Math.exp(-Math.max(0, f - t.f) / 26) * Math.cos((f - t.f) / 6.5) + 1.2 * Math.sin(f / 21 + i);
+          const x = 370 + i * 590, sw = 9 * Math.exp(-Math.max(0, f - t.f) / 26) * Math.cos((f - t.f) / 6.5) + 1.2 * Math.sin(f / 21 + i);
           return (
             <div key={i} style={{ position: "absolute", left: x - 260, top: 80, width: 520, height: 800, transformOrigin: "260px 0px", transform: `rotate(${f < t.f ? 0 : sw}deg)`, opacity: f < t.f ? 0.0 : 1 }}>
               <div style={{ position: "absolute", left: 257, top: 0, width: 6, height: 190 * Math.min(1, d) + 10, background: "#6B4A2A" }} />
@@ -813,12 +813,12 @@ export const PlateStack: React.FC<{ from: number; rows: SRow[]; final?: string; 
         <div style={{ position: "absolute", left: 1010, top: 70, width: 780, minHeight: 620, backgroundImage: whitePaper, boxShadow: "0 26px 44px rgba(0,0,0,0.35)", padding: "36px 50px 46px", boxSizing: "border-box", transform: "rotate(1.5deg)" }}>
           <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 44, letterSpacing: 9, color: K.red }}>PLATES THIS WEEK</div>
           {rows.map((r, i) => f < r.f - 14 ? null : (
-            <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", fontFamily: HAND, fontWeight: 700, fontSize: 84, lineHeight: 1.22, color: GREASE, whiteSpace: "nowrap" }}>
+            <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", fontFamily: HAND, fontWeight: 700, fontSize: rows.length > 5 ? 66 : 84, lineHeight: 1.2, color: GREASE, whiteSpace: "nowrap" }}>
               <Write f0={r.f - 14} len={10}>{r.day}</Write>
               <Write f0={r.f} len={6} style={{ color: K.red, paddingRight: 14 }}>{`${r.n}`}</Write>
             </div>
           ))}
-          {final && <div style={{ marginTop: 20, fontFamily: HAND, fontWeight: 700, fontSize: 104, lineHeight: 1.05, color: K.red, opacity: Math.min(1, st * 3), transform: `scale(${1.8 - 0.8 * Math.min(1.05, st)})`, transformOrigin: "0 50%" }}>{final}</div>}
+          {final && <div style={{ marginTop: 20, fontFamily: HAND, fontWeight: 700, fontSize: 84, lineHeight: 1.05, color: K.red, whiteSpace: "nowrap", opacity: Math.min(1, st * 3), transform: `scale(${1.8 - 0.8 * Math.min(1.05, st)})`, transformOrigin: "0 50%" }}>{final}</div>}
         </div>
       </AbsoluteFill>
     </TileWall>
@@ -840,7 +840,7 @@ export const PaperBill: React.FC<{ head: string; lines: PLine[]; dur: number; se
             <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 50, letterSpacing: 10, color: K.red, whiteSpace: "nowrap" }}>{head}</div>
             <div style={{ height: 8, background: GREASE, opacity: 0.8, margin: "14px 0 18px", borderRadius: 4 }} />
             {lines.map((l, i) => f < l.f ? null : (
-              <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", whiteSpace: "nowrap", fontFamily: HAND, fontWeight: 700, fontSize: l.bold ? 116 : 98, lineHeight: 1.28, color: l.bold ? K.red : GREASE, gap: 30 }}>
+              <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", whiteSpace: "nowrap", fontFamily: HAND, fontWeight: 700, fontSize: l.bold ? 136 : 116, lineHeight: 1.3, color: l.bold ? K.red : GREASE, gap: 30 }}>
                 <Write f0={l.f} len={12}>{l.a}</Write>
                 <Write f0={l.f + 8} len={8} style={{ paddingRight: 16 }}>{l.b}</Write>
               </div>

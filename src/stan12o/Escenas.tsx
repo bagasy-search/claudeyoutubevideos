@@ -35,6 +35,9 @@ export const EscRuta: React.FC<{ src: string; fMap: number; fPoint: number; dur:
     <AbsoluteFill style={{ overflow: "hidden", background: "#2a1a12" }}>
       <AbsoluteFill style={cam(cx, cy, s)}>
         <Img src={staticFile(src)} style={{ ...FULL, filter: `contrast(${1 + 0.28 * pop}) saturate(${1 + 0.18 * pop})` }} />
+        {[0, 1, 2].map((k) => { const g = Math.max(0, Math.min(1, u - k)); const dx = P[k + 1][0] - P[k][0], dy = P[k + 1][1] - P[k][1];
+          return <div key={k} style={{ position: "absolute", left: P[k][0], top: P[k][1] - 5, width: Math.hypot(dx, dy) * g, height: 10, borderRadius: 5, background: "#D9372C", boxShadow: "0 0 0 3px rgba(255,255,255,0.75)", transformOrigin: "0 50%", transform: `rotate(${Math.atan2(dy, dx) * 180 / Math.PI}deg)` }} />; })}
+        <div style={{ position: "absolute", left: cx - 22, top: cy - 22, width: 44, height: 44, borderRadius: "50%", background: "radial-gradient(circle at 34% 30%, #FF9A8C 0%, #B3261E 45%, #5E0F0A 100%)", boxShadow: "6px 9px 10px rgba(0,0,0,0.45)" }} />
       </AbsoluteFill>
       <Papel x={980} y={110} t="like a road map" f0={fMap} size={116} rot={2} />
     </AbsoluteFill>
@@ -61,8 +64,8 @@ export const EscPaquetes: React.FC<{ src: string; fDays: number[]; dur: number }
           return (
             <div key={i} style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `translateX(${x}px) rotate(${i === 1 ? 0 : (i - 1) * 2.5 * Math.min(1, out(i))}deg)`, transformOrigin: "955px 605px" }}>
               {i !== 1 && <Img src={staticFile(src)} style={{ ...FULL, clipPath: BOX }} />}
-              <div style={{ position: "absolute", left: 640, top: 500, width: 640, textAlign: "center", fontFamily: FONTS.HAND, fontWeight: 700, fontSize: 132, lineHeight: 1, color: GREASE, whiteSpace: "nowrap", transform: "rotate(-4deg)",
-                clipPath: `inset(-20% ${100 - seg(f, fDays[i], fDays[i] + 10) * 115}% -20% 0)` }}>{DAYS[i]}</div>
+              <div style={{ position: "absolute", left: 640, top: 500, width: 640, textAlign: "center", fontFamily: FONTS.HAND, fontWeight: 700, fontSize: 150, lineHeight: 1, color: GREASE, whiteSpace: "nowrap", transform: "rotate(-4deg)",
+                clipPath: `inset(-20% ${100 - seg(f, Math.min(fDays[i], dur - 26), Math.min(fDays[i], dur - 26) + 10) * 115}% -20% 0)` }}>{DAYS[i]}</div>
             </div>
           );
         })}
@@ -76,8 +79,8 @@ export const EscEspada: React.FC<{ src: string; fPull: number; dur: number }> = 
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
   const BONE = "polygon(886px 280px, 1000px 280px, 1004px 478px, 884px 478px)";
   const tug = f < fPull ? Math.sin(f / 3) * 3 * seg(f, fPull - 24, fPull) : 0;
-  const up = spring({ frame: f - fPull, fps, config: { damping: 14, mass: 0.9 } });
-  const y = -900 * up;
+  const up = seg(f, fPull, fPull + Math.min(70, Math.max(30, dur - fPull - 30)));
+  const y = -760 * up;
   const s = lerp(1.25, 1.55, seg(f, 0, fPull)) - 0.2 * seg(f, fPull + 6, dur);
   const cy = lerp(520, 400, seg(f, 0, fPull)) + 60 * seg(f, fPull + 6, dur);
   return (
@@ -85,10 +88,10 @@ export const EscEspada: React.FC<{ src: string; fPull: number; dur: number }> = 
       <AbsoluteFill style={cam(960, cy, s)}>
         <Img src={staticFile(src)} style={FULL} />
         {/* parche: la misma foto corrida 135 px tapa el hueco del hueso (azulejo arriba, carne abajo) */}
-        {f >= fPull - 1 && <Img src={staticFile(src)} style={{ ...FULL, transform: "translateX(-135px)", clipPath: "polygon(1013px 270px, 1143px 270px, 1147px 492px, 1011px 492px)", opacity: Math.min(1, up * 6) }} />}
+        {f >= fPull - 1 && <Img src={staticFile(src)} style={{ ...FULL, transform: "translateX(-135px)", clipPath: "polygon(1013px 270px, 1143px 270px, 1147px 492px, 1011px 492px)", opacity: Math.min(1, up * 12) }} />}
         <Img src={staticFile(src)} style={{ ...FULL, transform: `translate(${tug}px, ${y}px) rotate(${up * 5}deg)`, transformOrigin: "945px 470px", clipPath: BONE }} />
       </AbsoluteFill>
-      <Papel x={1090} y={170} t="clean" f0={fPull + 10} size={132} rot={3} />
+      <Papel x={1130} y={420} t="clean" f0={fPull + 30} size={170} rot={3} />
     </AbsoluteFill>
   );
 };
