@@ -503,7 +503,7 @@ export const RuleTag: React.FC<{ img: string; big: string; sub: string; stamp: s
           <Write f0={fBig + 10} len={18} style={{ fontFamily: HAND, fontWeight: 700, fontSize: 80, lineHeight: 1, color: K.ink, whiteSpace: "nowrap", display: "inline-block" }}>{sub}</Write>
         </div>
       </div>
-      <div style={{ position: "absolute", left: 90, top: 250, padding: "18px 40px", border: `12px solid ${K.red}`, outline: `4px solid ${K.red}`, outlineOffset: 9, borderRadius: 18, background: "rgba(250,247,240,0.92)", fontFamily: SANS, fontWeight: 600, fontSize: 92, letterSpacing: 6, color: K.red, whiteSpace: "nowrap",
+      <div style={{ position: "absolute", left: 70, top: 500, padding: "18px 40px", border: `12px solid ${K.red}`, outline: `4px solid ${K.red}`, outlineOffset: 9, borderRadius: 18, background: "rgba(250,247,240,0.92)", fontFamily: SANS, fontWeight: 600, fontSize: 92, letterSpacing: 6, color: K.red, whiteSpace: "nowrap",
         transform: `rotate(-8deg) scale(${2.6 - 1.6 * Math.min(1.05, st)})`, opacity: Math.min(1, st * 3), boxShadow: "0 16px 30px rgba(0,0,0,0.35)" }}>{stamp}</div>
     </AbsoluteFill>
   );
@@ -648,11 +648,11 @@ export const CounterTags: React.FC<{ img: string; tags: CTag[]; stamp?: string; 
         const d = spring({ frame: f - g.f, fps, config: { damping: 10, mass: 0.8 } });
         if (f < g.f) return null;
         return (
-          <div key={i} style={{ position: "absolute", left: g.x - 300, top: 130, width: 600, height: 620, transformOrigin: "50% 100%", transform: `translateY(${(1 - d) * -800}px) rotate(${(i % 2 ? 2 : -2) + Math.sin(f / 15 + i) * 0.8}deg)` }}>
+          <div key={i} style={{ position: "absolute", left: g.x - 300, top: 190, width: 600, height: 620, transformOrigin: "50% 100%", transform: `translateY(${(1 - d) * -800}px) rotate(${(i % 2 ? 2 : -2) + Math.sin(f / 15 + i) * 0.8}deg)` }}>
             <div style={{ position: "absolute", left: 292, top: 320, width: 16, height: 300, borderRadius: 8, background: "linear-gradient(90deg, #6F757A 0%, #E9EDF0 45%, #8B9196 100%)", boxShadow: "8px 10px 16px rgba(0,0,0,0.35)" }} />
             <div style={{ position: "absolute", left: 0, top: 0, width: 600, height: 350, background: K.white, border: `10px solid ${K.red}`, borderRadius: 16, boxShadow: "0 26px 50px rgba(0,0,0,0.5)", textAlign: "center", boxSizing: "border-box" }}>
               <div style={{ fontFamily: SERIF, fontSize: Math.min(210, Math.floor(540 / (g.t.length * 0.5))), lineHeight: 1.05, color: K.ink, marginTop: 30, whiteSpace: "nowrap" }}>{g.t}</div>
-              <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: Math.min(50, Math.floor(560 / (g.s.length * 0.6))), letterSpacing: 1, color: K.red, whiteSpace: "nowrap" }}>{g.s}</div>
+              <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: Math.min(58, Math.floor(560 / (g.s.length * 0.6))), letterSpacing: 1, color: K.red, whiteSpace: "nowrap" }}>{g.s}</div>
             </div>
           </div>
         );

@@ -23,7 +23,7 @@ const Papel: React.FC<{ x: number; y: number; t: string; f0: number; size?: numb
 };
 export const EscCajones: React.FC<{ src: string; fStart: number; fHalf: number; dur: number }> = ({ src, fStart, fHalf, dur }) => {
   const f = useCurrentFrame();
-  const B: [number, number, string, number][] = [[340, 430, "meat", 1180], [430, 525, "fat", 1420], [525, 640, "meat", 1180], [640, 792, "fat", 1420]];
+  const B: [number, number, string, number][] = [[340, 430, "meat", 1020], [430, 525, "fat", 1420], [525, 640, "meat", 1020], [640, 792, "fat", 1420]];
   const step = Math.max(6, (fHalf - fStart) / 4);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#2a1a12" }}>
@@ -34,11 +34,11 @@ export const EscCajones: React.FC<{ src: string; fStart: number; fHalf: number; 
           return (
             <React.Fragment key={i}>
               <Img src={staticFile(src)} style={{ ...FULL, clipPath: `polygon(0px ${y0}px, 1920px ${y0}px, 1920px ${y1}px, 0px ${y1}px)`, filter: `brightness(${1 + 0.32 * pulse}) saturate(${1 + 0.4 * pulse})`, transformOrigin: `960px ${(y0 + y1) / 2}px`, transform: `scaleY(${1 + 0.06 * pulse})` }} />
-              <Papel x={x} y={(y0 + y1) / 2 - 52} t={t} f0={f0} rot={i % 2 ? 2 : -2} />
+              <Papel x={x} y={(y0 + y1) / 2 - 72} t={t} f0={f0} size={124} rot={i % 2 ? 2 : -2} />
             </React.Fragment>
           );
         })}
-        <Papel x={330} y={836} t="about half and half" f0={fHalf + 6} size={96} rot={-1.5} />
+        <Papel x={180} y={830} t="about half and half" f0={fHalf + 6} size={124} rot={-1.5} />
       </AbsoluteFill>
     </AbsoluteFill>
   );
@@ -64,9 +64,9 @@ export const EscRemolino: React.FC<{ src: string; fStir: number; fPink: number; 
           <Img src={staticFile(src)} style={{ ...FULL, transformOrigin: `${CX}px ${CY}px`, transform: `rotate(${ang}deg)` }} />
           <Img src={staticFile(src)} style={{ ...FULL, transformOrigin: `${CX}px ${CY}px`, transform: `rotate(${-ang * 0.7 + 120}deg)`, opacity: 0.5 * Math.min(1, sp / 12) }} />
           <Img src={staticFile(src)} style={{ ...FULL, transformOrigin: `${CX}px ${CY}px`, transform: `rotate(${ang * 1.3 + 240}deg)`, opacity: 0.34 * Math.min(1, sp / 12) }} />
-          <div style={{ position: "absolute", left: CX - R, top: CY - R, width: 2 * R, height: 2 * R, borderRadius: "50%", opacity: 0.34 * mix,
+          <div style={{ position: "absolute", left: CX - R, top: CY - R, width: 2 * R, height: 2 * R, borderRadius: "50%", opacity: 0.12 * mix,
             background: "radial-gradient(circle at 42% 38%, #F3D3CC 0%, #EBC3BB 45%, #D9A9A2 78%, #B98C86 100%)" }} />
-          <div style={{ position: "absolute", left: CX - R, top: CY - R, width: 2 * R, height: 2 * R, borderRadius: "50%", opacity: 0.22 * mix * (1 - done),
+          <div style={{ position: "absolute", left: CX - R, top: CY - R, width: 2 * R, height: 2 * R, borderRadius: "50%", opacity: 0,
             background: `repeating-conic-gradient(from ${ang}deg, rgba(255,255,255,0.5) 0deg, rgba(255,255,255,0) 24deg, rgba(190,120,120,0.35) 40deg, rgba(255,255,255,0) 60deg)` }} />
         </div>
         <div style={{ position: "absolute", left: 1490, top: 150, padding: "8px 30px 12px", backgroundImage: "linear-gradient(180deg, #EDC2AE 0%, #E2AE97 100%)", boxShadow: "0 10px 20px rgba(0,0,0,0.45)", fontFamily: FONTS.HAND, fontWeight: 700, fontSize: 110, lineHeight: 1, color: "#2A1A12", whiteSpace: "nowrap",
@@ -97,7 +97,7 @@ export const EscFecha: React.FC<{ src: string; fIn: number; fOut: number; dur: n
 // ── Escena 4 · la vuelta: la sal baja y se frena; la foto entera se da vuelta como una carta sobre el eje de la tabla y la sal vuelve a bajar desde el lado nuevo
 export const EscVuelta: React.FC<{ src: string; fTurn: number; dur: number }> = ({ src, fTurn, dur }) => {
   const f = useCurrentFrame();
-  const t = seg(f, fTurn, fTurn + 24);
+  const t = seg(f, fTurn - 6, fTurn + 34);
   const rot = 180 * t, shown = rot < 90 ? rot : rot - 180;
   const v1 = interpolate(f, [0, Math.max(10, fTurn)], [0.3, 1], CL) * (t < 0.5 ? 1 : 0);
   const v2 = t < 0.5 ? 0 : seg(f, fTurn + 14, dur - 4);
@@ -108,6 +108,8 @@ export const EscVuelta: React.FC<{ src: string; fTurn: number; dur: number }> = 
       <AbsoluteFill style={{ transformOrigin: "50% 64%", transform: `rotateX(${shown}deg)` }}>
         <AbsoluteFill style={cam(990, 640, s)}>
           <Img src={staticFile(src)} style={FULL} />
+          {t < 0.5 && <Papel x={420} y={330} t="the salt only goes down" f0={10} size={104} rot={-2} />}
+          {t >= 0.5 && <Papel x={560} y={330} t="so turn the meat" f0={fTurn + 16} size={112} rot={2} />}
           <div style={{ position: "absolute", left: 310, top: 646, width: 1360, height: 26 + 120 * v, background: "linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.32) 58%, rgba(255,255,255,0) 100%)", opacity: f < 4 ? 0 : 1 }} />
         </AbsoluteFill>
       </AbsoluteFill>
@@ -115,24 +117,19 @@ export const EscVuelta: React.FC<{ src: string; fTurn: number; dur: number }> = 
   );
 };
 
-// ── Escena 5 · la mancha: en el centro de la cara cortada (960,560) aparece un círculo de la misma foto sin color; después se achica hasta desaparecer y la cámara recorre la cara de borde a borde
+// ── Escena 5 · la cámara recorre la cara cortada real de borde a borde; un papel avisa qué sería una mancha gris y otro confirma el rosa parejo
 export const EscMancha: React.FC<{ src: string; fGrey: number; fLook: number; dur: number }> = ({ src, fGrey, fLook, dur }) => {
-  const f = useCurrentFrame(); const { fps } = useVideoConfig();
-  const grow = spring({ frame: f - fGrey, fps, config: { damping: 12, mass: 0.8 } });
-  const gone = seg(f, fLook, fLook + 18);
-  const r = 185 * Math.min(1.06, grow) * (1 - gone) * (f >= fGrey ? 1 : 0);
-  const z = seg(f, fGrey - 10, fGrey + 20) * (1 - seg(f, fLook, fLook + 24));
-  const pan = seg(f, fLook + 10, dur);
-  const cx = lerp(lerp(700, 960, seg(f, 0, fGrey)), lerp(520, 1400, pan), seg(f, fLook, fLook + 24));
-  const s = 1.18 + 0.38 * z + 0.3 * seg(f, fLook, fLook + 24);
+  const f = useCurrentFrame();
+  const pan = seg(f, 0, dur);
+  const cx = lerp(620, 1300, pan), s = 1.3 + 0.08 * Math.sin(pan * Math.PI);
+  const off = 1 - seg(f, fLook - 6, fLook + 4);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#2a1a12" }}>
       <AbsoluteFill style={cam(cx, 560, s)}>
         <Img src={staticFile(src)} style={FULL} />
-        {r > 1 && <Img src={staticFile(src)} style={{ ...FULL, filter: "grayscale(1) brightness(0.8) contrast(0.92)",
-          maskImage: `radial-gradient(ellipse ${r * 2.1}px ${r * 0.95}px at 940px 575px, black 0%, black 45%, transparent 78%), radial-gradient(ellipse ${r * 1.1}px ${r * 0.7}px at 1140px 520px, black 0%, black 35%, transparent 80%)`,
-          WebkitMaskImage: `radial-gradient(ellipse ${r * 2.1}px ${r * 0.95}px at 940px 575px, black 0%, black 45%, transparent 78%), radial-gradient(ellipse ${r * 1.1}px ${r * 0.7}px at 1140px 520px, black 0%, black 35%, transparent 80%)` }} />}
       </AbsoluteFill>
+      {off > 0 && <div style={{ opacity: off }}><Papel x={330} y={120} t="grey in the middle = more days" f0={fGrey} size={96} rot={-2} /></div>}
+      <Papel x={500} y={120} t="pink, edge to edge" f0={fLook + 6} size={124} rot={1.5} />
     </AbsoluteFill>
   );
 };
@@ -148,7 +145,7 @@ export const EscFuelle: React.FC<{ src: string; fFold1: number; fFold2: number; 
   const s = 1.02 + 0.06 * (f / dur);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#3a3a38" }}>
-      <Img src={staticFile(src)} style={{ ...FULL, transformOrigin: "960px 980px", transform: "scale(3.2)", filter: "brightness(0.55)" }} />
+      <Img src={staticFile(src)} style={{ ...FULL, transformOrigin: "960px 980px", transform: "scale(3.2)", filter: "brightness(0.28)" }} />
       <AbsoluteFill style={{ transform: `scale(${s})`, transformOrigin: "50% 60%", perspective: 2200 }}>
         {X.slice(0, 7).map((x0, i) => {
           const w = X[i + 1] - x0, left = x; x += w * c;
