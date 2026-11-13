@@ -494,18 +494,18 @@ export const RibsS: React.FC<{ stage: number; m: number[]; bg?: string; dur: num
             <div style={{ position: "absolute", left: x(0), top: 312, width: x(4) + BW - x(0), textAlign: "center", opacity: chuck }}>
               <div style={{ fontFamily: MARK, fontSize: 70, color: C.ink, lineHeight: 1 }}>CHUCK</div>
               <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 40, color: C.ink }}>ribs 1 to 5</div>
-              {s2 && <div style={{ fontFamily: MARK, fontSize: 88, color: C.red, lineHeight: 1, marginTop: 6, opacity: on(4), transform: `scale(${interpolate(on(4), [0, 1], [1.5, 1])})` }}>about $8 a pound</div>}
+              {s2 && <div style={{ fontFamily: MARK, fontSize: 62, whiteSpace: "nowrap", color: C.red, lineHeight: 1, marginTop: 10, opacity: on(4), transform: `scale(${interpolate(on(4), [0, 1], [1.5, 1])})` }}>about $8 a pound</div>}
             </div>
             <div style={{ position: "absolute", left: x(5), top: 300, width: x(11) + BW - x(5), borderTop: `6px solid ${C.red}`, opacity: rib }} />
             <div style={{ position: "absolute", left: x(5), top: 312, width: x(11) + BW - x(5), textAlign: "center", opacity: rib }}>
               <div style={{ fontFamily: MARK, fontSize: 70, color: C.red, lineHeight: 1 }}>RIB · the prime rib</div>
               <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 40, color: C.ink }}>ribs 6 to 12{seven > 0 ? <span style={{ opacity: seven }}> · seven bones</span> : null}</div>
-              {s2 && <div style={{ fontFamily: MARK, fontSize: 88, color: C.ink, lineHeight: 1, marginTop: 6, opacity: on(3), transform: `scale(${interpolate(on(3), [0, 1], [1.5, 1])})` }}>$15 to $20 a pound</div>}
+              {s2 && <div style={{ fontFamily: MARK, fontSize: 62, whiteSpace: "nowrap", color: C.ink, lineHeight: 1, marginTop: 10, opacity: on(3), transform: `scale(${interpolate(on(3), [0, 1], [1.5, 1])})` }}>$15 to $20 a pound</div>}
             </div>
             {s2 && <div style={{ position: "absolute", left: x(5) - GAP / 2 - 4, top: 30, width: 0, height: 270 * saw, borderLeft: `8px dashed ${C.ink}` }} />}
             {s2 && <div style={{ position: "absolute", left: x(5) - 110, top: -10, width: 220, textAlign: "center", fontFamily: TYPE, fontSize: 32, letterSpacing: 3, color: C.ink, background: C.papel, opacity: cl((f - m[2] - 6) / 6) }}>THE SAW</div>}
           </div>
-          {s2 && <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: C.ink, textAlign: "center", marginTop: 4, opacity: on(5, 8) }}>Same muscle. Two inches away.</div>}
+          {s2 && <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: C.ink, textAlign: "center", marginTop: 14, opacity: on(5, 8) }}>Same muscle. Two inches away.</div>}
         </Hoja>
       </AbsoluteFill>
     </AbsoluteFill>
