@@ -2,6 +2,7 @@ stan12p_mix.m4a
 stan12p/g/g0010.png
 stan12p/g/g0020.png
 stan12p/g/g0070.png
+stan12p/v/v0070.mp4
 stan12p/g/g0090.png
 stan12p/g/e_board.png
 stan12p/y/y130.mp4
@@ -38,12 +39,14 @@ stan12p/g/g1200.png
 stan12p/g/g1230.png
 stan12p/g/g1290.png
 stan12p/g/g1320.png
+stan12p/v/v1320.mp4
 stan12p/g/g1350.png
 stan12p/g/g1380.png
 stan12p/g/g1390.png
 stan12p/g/g1420.png
 stan12p/g/g1450.png
 stan12p/g/g1480.png
+stan12p/v/v1480.mp4
 stan12p/g/g1530.png
 stan12p/g/g1580.png
 stan12p/g/g1630.png
@@ -70,6 +73,7 @@ stan12p/y/y2280.mp4
 stan12p/g/g2290.png
 stan12p/g/g2330.png
 stan12p/g/g2340.png
+stan12p/v/v2340.mp4
 stan12p/g/g2380.png
 stan12p/y/y2410.mp4
 stan12p/g/g2430.png
@@ -79,6 +83,7 @@ stan12p/g/g2550.png
 stan12p/g/g2560.png
 stan12p/g/g2590.png
 stan12p/g/g2620.png
+stan12p/v/v2620.mp4
 stan12p/g/g2640.png
 stan12p/g/g2680.png
 stan12p/g/g2730.png
@@ -123,6 +128,7 @@ stan12p/g/g4290.png
 stan12p/g/g4310.png
 stan12p/y/y4320.mp4
 stan12p/g/g4330.png
+stan12p/v/v4330.mp4
 stan12p/g/g4360.png
 stan12p/g/g4400.png
 stan12p/g/g4410.png
@@ -150,6 +156,7 @@ stan12p/g/g5170.png
 stan12p/g/g5200.png
 stan12p/g/g5260.png
 stan12p/g/g5310.png
+stan12p/v/v5310.mp4
 stan12p/g/g5420.png
 stan12p/g/g5380.png
 stan12p/g/g5460.png
