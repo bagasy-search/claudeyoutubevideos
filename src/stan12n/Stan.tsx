@@ -189,7 +189,7 @@ export const Rail: React.FC<{ n: number; total: number; title: string; dur: numb
   return (
     <div style={{ position: "absolute", right: 60, top: 46, opacity: o, display: "flex", flexDirection: "column", alignItems: "flex-end", transform: "scale(1.35)", transformOrigin: "100% 0" }}>
       <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 21, letterSpacing: 4, color: K.chalk, textShadow: SH }}>
-        {word} <span style={{ color: K.gold }}>{done + 1}</span> OF {total} · {title.toUpperCase()}
+        {word} <span style={{ color: K.gold }}>{word === "NUMBER" ? n : done + 1}</span> OF {total} · {title.toUpperCase()}
       </div>
       <div style={{ position: "relative", height: 46, width: total * 44 + 10, marginTop: 8 }}>
         <div style={{ position: "absolute", left: 0, right: 0, top: 4, height: 6, borderRadius: 3, background: "linear-gradient(180deg, #E3E7E9, #7B8488)", boxShadow: "0 2px 5px rgba(0,0,0,0.5)" }} />
@@ -303,7 +303,7 @@ export const Carousel: React.FC<{ cards: TCard[]; bg: string; head: string; sub:
 // recap: las N en dos filas, se sellan una por una sobre su palabra; a la derecha se escribe el dato clave en tiza
 export const Recap: React.FC<{ cards: TCard[]; items: { f: number; lines: string[] }[]; bg: string; dur: number }> = ({ cards, items, bg, dur }) => {
   const f = useCurrentFrame(); let cur = -1; items.forEach((it, i) => { if (f >= it.f) cur = i; });
-  const per = Math.ceil(cards.length / 2);
+  const per = Math.ceil(cards.length / 2); const stepX = Math.min(360, Math.floor(1790 / per)); const cw = Math.min(300, stepX - 46);
   return (
     <AbsoluteFill>
       <DarkPhoto src={bg} dur={dur} dark={0.72} />
@@ -313,9 +313,9 @@ export const Recap: React.FC<{ cards: TCard[]; items: { f: number; lines: string
         const e = spring({ frame: f - i * 3, fps: 30, config: { damping: 16 } });
         const ck = spring({ frame: f - it.f, fps: 30, config: { damping: 11, mass: 0.6 } }); const lit = f >= it.f; const isCur = i === cur;
         return (
-          <div key={i} style={{ position: "absolute", left: 70 + col * 360, top: 36 + row * 292, opacity: e, zIndex: isCur ? 5 : 1,
+          <div key={i} style={{ position: "absolute", left: 70 + col * stepX, top: 36 + row * 292, opacity: e, zIndex: isCur ? 5 : 1,
             transform: `translateY(${(1 - e) * 60}px) rotate(${((hash(i + 40) % 7) - 3) * 0.7}deg) scale(${isCur ? 1.1 : lit ? 1 : 0.94})` }}>
-            <Parcel c={c} w={300} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
+            <Parcel c={c} w={cw} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
           </div>
         );
       })}
