@@ -46,7 +46,8 @@ export const EscPaquetes: React.FC<{ src: string; fDays: number[]; dur: number }
   const f = useCurrentFrame();
   const BOX = "polygon(585px 340px, 1325px 340px, 1325px 870px, 585px 870px)";
   const DAYS = ["Sunday", "Tuesday", "Thursday"], DX = [-640, 0, 640];
-  const out = (i: number) => (i === 1 ? 0 : damp(f - (fDays[i] - 12), 6, 30) * (f >= fDays[i] - 12 ? 1 : 0));
+  const T0 = [Math.max(0, fDays[0] - 14), 0, Math.max(0, fDays[0] + 4)];
+  const out = (i: number) => (i === 1 ? 0 : damp(f - T0[i], 6, 30) * (f >= T0[i] ? 1 : 0));
   const s = lerp(1.0, 0.86, seg(f, 0, Math.max(10, fDays[1])));
   const ORD = [1, 0, 2];
   return (
@@ -56,7 +57,7 @@ export const EscPaquetes: React.FC<{ src: string; fDays: number[]; dur: number }
         <Img src={staticFile(src)} style={FULL} />
         {ORD.map((i) => {
           const x = DX[i] * Math.min(1.03, out(i));
-          if (i !== 1 && f < fDays[i] - 12) return null;
+          if (i !== 1 && f < T0[i]) return null;
           return (
             <div key={i} style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `translateX(${x}px) rotate(${i === 1 ? 0 : (i - 1) * 2.5 * Math.min(1, out(i))}deg)`, transformOrigin: "955px 605px" }}>
               {i !== 1 && <Img src={staticFile(src)} style={{ ...FULL, clipPath: BOX }} />}
@@ -84,7 +85,7 @@ export const EscEspada: React.FC<{ src: string; fPull: number; dur: number }> = 
       <AbsoluteFill style={cam(960, cy, s)}>
         <Img src={staticFile(src)} style={FULL} />
         {/* parche: la misma foto corrida 135 px tapa el hueco del hueso (azulejo arriba, carne abajo) */}
-        {f >= fPull - 1 && <Img src={staticFile(src)} style={{ ...FULL, transform: "translateX(-135px)", clipPath: "polygon(1021px 280px, 1135px 280px, 1139px 478px, 1019px 478px)", opacity: Math.min(1, up * 6) }} />}
+        {f >= fPull - 1 && <Img src={staticFile(src)} style={{ ...FULL, transform: "translateX(-135px)", clipPath: "polygon(1013px 270px, 1143px 270px, 1147px 492px, 1011px 492px)", opacity: Math.min(1, up * 6) }} />}
         <Img src={staticFile(src)} style={{ ...FULL, transform: `translate(${tug}px, ${y}px) rotate(${up * 5}deg)`, transformOrigin: "945px 470px", clipPath: BONE }} />
       </AbsoluteFill>
       <Papel x={1090} y={170} t="clean" f0={fPull + 10} size={132} rot={3} />

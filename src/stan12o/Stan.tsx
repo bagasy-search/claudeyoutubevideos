@@ -170,7 +170,7 @@ export const ChalkBoard: React.FC<{ head: string; lines: BLine[]; source: string
   const inn = spring({ frame: f, fps, config: { damping: 17, mass: 0.9 } });
   const sc = interpolate(f, [0, dur], [1, 1.06]);
   const bigL = lines.find((l) => l.big); const fBig = bigL ? bigL.f : Math.round(dur * 0.6);
-  const kind = lines.some((l) => l.t.includes("°F")) ? "thermo" : head.includes("HERD") ? "tally" : (bigL && bigL.t.includes("RECORD")) ? "arrow" : "none";
+  const kind = (bigL && lines.some((l) => l.t.includes("°F"))) ? "thermo" : head.includes("HERD") ? "tally" : (bigL && bigL.t.includes("RECORD")) ? "arrow" : "none";
   const target = Number(((bigL ? bigL.t : "").match(/\d+/) || ["145"])[0]);
   const longHead = head.length > 24;
   return (
@@ -749,7 +749,7 @@ export const TriTags: React.FC<{ head: string; tags: TTag[]; source: string; dur
                 <div style={{ fontFamily: SERIF, fontSize: Math.min(190, Math.floor(470 / (t.big.length * 0.52))), lineHeight: 1, color: K.ink, marginTop: 130, whiteSpace: "nowrap" }}>{t.big}</div>
                 <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 52, letterSpacing: 6, color: K.red, marginTop: 4 }}>DAYS</div>
                 <div style={{ height: 6, background: K.ink, opacity: 0.5, margin: "20px 60px 14px" }} />
-                <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: Math.min(74, Math.floor(450 / (t.sub.length * 0.45))), lineHeight: 1.05, color: K.ink, whiteSpace: "nowrap" }}>{t.sub}</div>
+                <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: Math.min(84, Math.floor(480 / (t.sub.length * 0.43))), lineHeight: 1.05, color: K.ink, whiteSpace: "nowrap" }}>{t.sub}</div>
               </div>
             </div>
           );
@@ -793,7 +793,7 @@ export type SRow = { day: string; n: number; f: number };
 export const PlateStack: React.FC<{ from: number; rows: SRow[]; final?: string; fFinal?: number; dur: number; seed: number }> = ({ from, rows, final, fFinal = 9999, dur, seed }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
   let total = from; const grow: number[] = [];
-  rows.forEach((r) => { for (let k = 0; k < r.n; k++) grow.push(r.f + k * 4); });
+  rows.forEach((r) => { if (r.f >= 0) for (let k = 0; k < r.n; k++) grow.push(r.f + k * 4); });
   grow.forEach((g) => { if (f >= g) total++; });
   const all = from + grow.length, MAXP = 19, PH = 30;
   const st = spring({ frame: f - fFinal, fps, config: { damping: 8, mass: 0.5 } });
@@ -810,15 +810,15 @@ export const PlateStack: React.FC<{ from: number; rows: SRow[]; final?: string; 
         })}
         <div style={{ position: "absolute", left: 300, top: 850 - Math.min(MAXP, total) * PH - 250, width: 520, textAlign: "center", fontFamily: SERIF, fontSize: 250, lineHeight: 1, color: K.red }}>{total}</div>
         {/* la cuenta en papel blanco */}
-        <div style={{ position: "absolute", left: 1010, top: 150, width: 780, minHeight: 620, backgroundImage: whitePaper, boxShadow: "0 26px 44px rgba(0,0,0,0.35)", padding: "36px 50px 46px", boxSizing: "border-box", transform: "rotate(1.5deg)" }}>
+        <div style={{ position: "absolute", left: 1010, top: 70, width: 780, minHeight: 620, backgroundImage: whitePaper, boxShadow: "0 26px 44px rgba(0,0,0,0.35)", padding: "36px 50px 46px", boxSizing: "border-box", transform: "rotate(1.5deg)" }}>
           <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 44, letterSpacing: 9, color: K.red }}>PLATES THIS WEEK</div>
           {rows.map((r, i) => f < r.f - 14 ? null : (
-            <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", fontFamily: HAND, fontWeight: 700, fontSize: 96, lineHeight: 1.25, color: GREASE, whiteSpace: "nowrap" }}>
+            <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", fontFamily: HAND, fontWeight: 700, fontSize: 84, lineHeight: 1.22, color: GREASE, whiteSpace: "nowrap" }}>
               <Write f0={r.f - 14} len={10}>{r.day}</Write>
               <Write f0={r.f} len={6} style={{ color: K.red, paddingRight: 14 }}>{`${r.n}`}</Write>
             </div>
           ))}
-          {final && <div style={{ marginTop: 20, fontFamily: HAND, fontWeight: 700, fontSize: Math.min(110, Math.floor(660 / (final.length * 0.45))), color: K.red, whiteSpace: "nowrap", opacity: Math.min(1, st * 3), transform: `scale(${1.8 - 0.8 * Math.min(1.05, st)})`, transformOrigin: "0 50%" }}>{final}</div>}
+          {final && <div style={{ marginTop: 20, fontFamily: HAND, fontWeight: 700, fontSize: 104, lineHeight: 1.05, color: K.red, opacity: Math.min(1, st * 3), transform: `scale(${1.8 - 0.8 * Math.min(1.05, st)})`, transformOrigin: "0 50%" }}>{final}</div>}
         </div>
       </AbsoluteFill>
     </TileWall>
@@ -840,7 +840,7 @@ export const PaperBill: React.FC<{ head: string; lines: PLine[]; dur: number; se
             <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 50, letterSpacing: 10, color: K.red, whiteSpace: "nowrap" }}>{head}</div>
             <div style={{ height: 8, background: GREASE, opacity: 0.8, margin: "14px 0 18px", borderRadius: 4 }} />
             {lines.map((l, i) => f < l.f ? null : (
-              <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", whiteSpace: "nowrap", fontFamily: HAND, fontWeight: 700, fontSize: l.bold ? 132 : 98, lineHeight: 1.28, color: l.bold ? K.red : GREASE }}>
+              <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", whiteSpace: "nowrap", fontFamily: HAND, fontWeight: 700, fontSize: l.bold ? 116 : 98, lineHeight: 1.28, color: l.bold ? K.red : GREASE, gap: 30 }}>
                 <Write f0={l.f} len={12}>{l.a}</Write>
                 <Write f0={l.f + 8} len={8} style={{ paddingRight: 16 }}>{l.b}</Write>
               </div>
