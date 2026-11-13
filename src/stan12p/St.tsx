@@ -54,7 +54,7 @@ export const Avatar: React.FC<{ src: string; seed: number; dur: number; mods?: {
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
       <AbsoluteFill style={{ transform: `translateX(${tx}%) scale(${z})`, transformOrigin: "50% 30%" }}>
-        <Img src={staticFile("stan12l/av_plate.png")} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover" }} />
+        <Img src={staticFile("stan12p/av_plate.png")} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover" }} />
         <OffthreadVideo src={staticFile(src)} muted style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", WebkitMaskImage: AVMASK, maskImage: AVMASK }} />
       </AbsoluteFill>
     </AbsoluteFill>

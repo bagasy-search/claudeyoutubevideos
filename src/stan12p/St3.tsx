@@ -1,4 +1,4 @@
-// St3.tsx — piezas de stan12l: todo escrito a mano SOBRE fotos reales (puro CSS/DOM, sin SVG, sin filtros pesados)
+// St3.tsx — piezas de stan12p: todo escrito a mano SOBRE fotos reales (puro CSS/DOM, sin SVG, sin filtros pesados)
 import React from "react";
 import { AbsoluteFill, Img, staticFile, useCurrentFrame, Easing } from "remotion";
 import { loadFont as loadHand } from "@remotion/google-fonts/Caveat";
@@ -59,10 +59,10 @@ export const Hoja: React.FC<{ src: string; skin: string; box: [number, number, n
 
 // ---------- MEDIA RES: la foto se apaga y queda encendida la zona del corte que nombra (máscara radial sobre la misma foto)
 export type Reg = { x: number; y: number; rx: number; ry: number; t: string; lx: number; ly: number; k?: string };
-export const BeefMap: React.FC<{ src: string; regs: Reg[]; now: number; sweep?: boolean; dur: number; dim?: number; lift?: number }> = ({ src, regs, now, sweep, dur, dim = 0.36, lift = 1.06 }) => {
+export const BeefMap: React.FC<{ src: string; regs: Reg[]; now: number; sweep?: boolean; dur: number; dim?: number; lift?: number; times?: number[] }> = ({ src, regs, now, sweep, dur, dim = 0.36, lift = 1.06, times }) => {
   const f = useCurrentFrame(); const N = regs.length;
-  const pos = sweep ? cl((f - 14) / Math.max(1, dur - 24)) * (N - 0.01) : now - 1; const i = Math.floor(cl(pos, 0, N - 1));
-  const z = sweep ? lerp(1.02, 1.07, eio(f / Math.max(1, dur))) : lerp(1.06, 1.2, eout(f / Math.max(1, dur))); const dark = sweep ? cl(f / 12) : 1;
+  const ti = times ? Math.max(0, times.filter((x) => x <= f).length - 1) : 0; const pos = times ? ti + cl((f - times[ti]) / 30) * 0.99 : sweep ? cl((f - 14) / Math.max(1, dur - 24)) * (N - 0.01) : now - 1; const i = Math.floor(cl(pos, 0, N - 1));
+  const z = sweep ? lerp(1.02, 1.07, eio(f / Math.max(1, dur))) : lerp(1.06, 1.2, eout(f / Math.max(1, dur))); const dark = times ? cl((f - times[0]) / 12) : sweep ? cl(f / 12) : 1;
   const r = regs[i]; const mask = `radial-gradient(ellipse ${r.rx}px ${r.ry}px at ${r.x}px ${r.y}px, #000 28%, transparent 100%)`;
   const pop = sweep ? cl((pos - i) * 6) : cl((f + 3) / 5);
   return (

@@ -1,4 +1,4 @@
-// St4.tsx — stan12l: el truco de la tapa, hecho con las dos fotos reales de la parrilla vista desde arriba (puro CSS/DOM)
+// St4.tsx — stan12p: el truco de la tapa, hecho con las dos fotos reales de la parrilla vista desde arriba (puro CSS/DOM)
 import React from "react";
 import { AbsoluteFill, Img, staticFile, useCurrentFrame, Easing } from "remotion";
 import { F, K } from "./St";

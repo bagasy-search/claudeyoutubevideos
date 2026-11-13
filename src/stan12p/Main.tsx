@@ -7,14 +7,14 @@ import * as N from "./St2";
 import * as H from "./St3";
 import * as L from "./St4";
 
-export const TOTAL_FRAMES_STAN12L = TOTAL;
+export const TOTAL_FRAMES_STAN12P = TOTAL;
 const T = 8;
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   if (s.k === "C") {
     switch (s.c) {
       case "hoja": return <H.Hoja src={s.src} skin={s.skin} box={s.box} rows={s.rows} size={s.size} pitch={s.pitch} focus={s.focus} zoom={s.zoom} dur={dur} />;
-      case "beef": return <H.BeefMap src={s.src} regs={s.regs} now={s.now} sweep={s.sweep} dim={s.dim} lift={s.lift} dur={dur} />;
+      case "beef": return <H.BeefMap src={s.src} regs={s.regs} now={s.now} sweep={s.sweep} dim={s.dim} lift={s.lift} times={s.times} dur={dur} />;
       case "lid": return <L.GrillLid open={s.open} lid={s.lid} geo={s.geo} phase={s.phase} fTurn={s.fTurn} fNote={s.fNote} fB={s.fB} dur={dur} />;
       case "duo": return <H.Duo a={s.a} b={s.b} dur={dur} />;
       case "need": return <N.NeedPhoto src={s.src} tags={s.tags} dur={dur} />;
@@ -57,7 +57,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
   }
 };
 
-export const MainStan12l: React.FC = () => (
+export const MainStan12p: React.FC = () => (
   <AbsoluteFill style={{ background: S.K.ink }}>
     {AVATAR.map((a, i) => (
       <Sequence key={"a" + i} from={a.from} durationInFrames={a.dur} premountFor={30}>
@@ -79,7 +79,7 @@ export const MainStan12l: React.FC = () => (
         <Overlay o={o} />
       </Sequence>
     ))}
-    <Audio src={staticFile("stan12l_mix.m4a")} />
+    <Audio src={staticFile("stan12p_mix.m4a")} />
     {SFX.map((x, i) => (
       <Sequence key={"x" + i} from={x.from} durationInFrames={90}>
         <Audio src={staticFile(x.src)} volume={x.vol} />

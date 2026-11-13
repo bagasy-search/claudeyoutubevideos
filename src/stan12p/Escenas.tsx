@@ -1,4 +1,4 @@
-// Escenas sobre fotos de stan12l (ideas.md). Escritas de cero: sólo React y Remotion, sin SVG.
+// Escenas sobre fotos de stan12p (ideas.md). Escritas de cero: sólo React y Remotion, sin SVG.
 import React from "react";
 import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, Easing } from "remotion";
 
