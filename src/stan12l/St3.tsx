@@ -1,4 +1,4 @@
-// St3.tsx — piezas de stan12h: todo escrito a mano SOBRE fotos reales (puro CSS/DOM, sin SVG, sin filtros pesados)
+// St3.tsx — piezas de stan12l: todo escrito a mano SOBRE fotos reales (puro CSS/DOM, sin SVG, sin filtros pesados)
 import React from "react";
 import { AbsoluteFill, Img, staticFile, useCurrentFrame, Easing } from "remotion";
 import { loadFont as loadHand } from "@remotion/google-fonts/Caveat";
@@ -58,7 +58,7 @@ export const Hoja: React.FC<{ src: string; skin: string; box: [number, number, n
 };
 
 // ---------- MEDIA RES: la foto se apaga y queda encendida la zona del corte que nombra (máscara radial sobre la misma foto)
-export type Reg = { x: number; y: number; rx: number; ry: number; t: string; lx: number; ly: number };
+export type Reg = { x: number; y: number; rx: number; ry: number; t: string; lx: number; ly: number; k?: string };
 export const BeefMap: React.FC<{ src: string; regs: Reg[]; now: number; sweep?: boolean; dur: number }> = ({ src, regs, now, sweep, dur }) => {
   const f = useCurrentFrame(); const N = regs.length;
   const pos = sweep ? cl((f - 14) / Math.max(1, dur - 24)) * (N - 0.01) : now - 1; const i = Math.floor(cl(pos, 0, N - 1));
@@ -72,7 +72,7 @@ export const BeefMap: React.FC<{ src: string; regs: Reg[]; now: number; sweep?: 
         <Img src={staticFile(src)} style={{ position: "absolute", width: 1920, height: 1080, objectFit: "fill", WebkitMaskImage: mask, maskImage: mask, opacity: dark, filter: `brightness(${1.06 + 0.05 * Math.sin(f / 7)})` }} />
       </AbsoluteFill>
       <div style={{ position: "absolute", left: 90, bottom: 64, opacity: pop * dark, transform: `rotate(-2deg) scale(${lerp(1.14, 1, pop)})`, transformOrigin: "0 100%", whiteSpace: "nowrap" }}>
-        <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 70, letterSpacing: 6, color: "#F3E7CC", textShadow: "0 2px 12px rgba(0,0,0,0.95)" }}>{i + 1} OF {N} · FRONT TO BACK</div>
+        <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 70, letterSpacing: 6, color: "#F3E7CC", textShadow: "0 2px 12px rgba(0,0,0,0.95)" }}>{r.k ?? `${i + 1} OF ${N}`}</div>
         <div style={{ fontFamily: MARK, fontSize: 150, lineHeight: 1, color: "#FFFDF6", textShadow: "0 4px 24px rgba(0,0,0,0.95), 0 1px 3px rgba(0,0,0,0.9)" }}>{r.t}</div>
       </div>
     </AbsoluteFill>

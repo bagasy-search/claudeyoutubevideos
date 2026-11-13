@@ -58,13 +58,13 @@ export const RankRail: React.FC<{ cards: RCard[]; now: number; final?: boolean; 
 };
 
 // ── tira de papel blanco de carnicero pegada con cinta: "n de 5" + renglón; un trazo de lápiz graso lo subraya (overlay sobre la foto del momento)
-export const Strip: React.FC<{ n: number; total: number; text: string; dur: number }> = ({ n, total, text, dur }) => {
+export const Strip: React.FC<{ n: number; total: number; text: string; dur: number; label?: string }> = ({ n, total, text, dur, label = "STEP" }) => {
   const f = useCurrentFrame(); const p = sp(f, 0, 12, 0.7); const o = interpolate(f, [dur - 9, dur], [1, 0], CL); const u = eout((f - 10) / 16);
   return (
     <div style={{ position: "absolute", left: 100, bottom: 110, opacity: o, transform: `translateX(${(1 - p) * -900}px) rotate(${lerp(-6, -1.5, p)}deg)` }}>
       <div style={{ position: "absolute", left: -34, top: -16, width: 120, height: 40, background: "rgba(236,226,204,0.88)", transform: "rotate(-24deg)", boxShadow: "0 2px 6px rgba(0,0,0,0.2)", zIndex: 2 }} />
       <div style={{ background: paper, padding: "20px 44px 26px 40px", boxShadow: "0 18px 40px rgba(0,0,0,0.5)", clipPath: "polygon(0 0, 100% 0, 98% 22%, 100% 46%, 98.5% 70%, 100% 100%, 0 100%)" }}>
-        <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 46, letterSpacing: 5, color: K.red }}>READ THE PACK · {n} OF {total}</div>
+        <div style={{ fontFamily: COND, fontWeight: 600, fontSize: 46, letterSpacing: 5, color: K.red }}>{label} {n} OF {total}</div>
         <div style={{ fontFamily: MARK, fontSize: 66, color: K.ink, lineHeight: 1.1, whiteSpace: "nowrap" }}>{text.split(" ").slice(0, -1).join(" ")}{" "}
           <span style={{ position: "relative", display: "inline-block", fontSize: 78, color: K.red }}>{text.split(" ").slice(-1)[0]}
             <span style={{ position: "absolute", left: 0, bottom: -2, height: 9, width: `${u * 100}%`, background: K.red, borderRadius: 5, transform: "rotate(-1deg)", opacity: 0.9 }} />
