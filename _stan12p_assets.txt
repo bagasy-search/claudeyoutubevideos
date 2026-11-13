@@ -5,8 +5,8 @@ stan12p/g/g0070.png
 stan12p/v/v0070.mp4
 stan12p/g/g0090.png
 stan12p/g/e_board.png
-stan12p/y/y130.mp4
-stan12p/y/y150.mp4
+stan12p/g/g0130.png
+stan12p/g/g0150.png
 stan12p/g/g0160.png
 stan12p/g/g0170.png
 stan12p/g/g0180.png
@@ -67,7 +67,7 @@ stan12p/g/xp_tilt.png
 stan12p/g/g2150.png
 stan12p/g/g2180.png
 stan12p/g/g2210.png
-stan12p/y/y2230.mp4
+stan12p/g/g2230.png
 stan12p/g/g2250.png
 stan12p/y/y2280.mp4
 stan12p/g/g2290.png
