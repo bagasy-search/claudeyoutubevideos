@@ -522,11 +522,11 @@ export const GramScale: React.FC<{ top: string; to: number; label: string; fTop:
       <AbsoluteFill style={{ background: "radial-gradient(ellipse 1300px 760px at 45% 35%, rgba(255,225,170,0.22), rgba(0,0,0,0) 70%)" }} />
       <AbsoluteFill style={{ transform: `scale(${interpolate(f, [0, dur], [1, 1.07])})`, transformOrigin: "60% 60%" }}>
         {/* papel con la cuenta */}
-        <div style={{ position: "absolute", left: 120, top: 150, width: 760, padding: "40px 50px 50px", backgroundImage: paperBg, boxShadow: "0 22px 44px rgba(0,0,0,0.45)", transform: `rotate(${-4 + inn * 1.5}deg) translateX(${(1 - inn) * -700}px)` }}>
+        <div style={{ position: "absolute", left: 70, top: 120, width: 900, boxSizing: "border-box", padding: "40px 50px 50px", backgroundImage: paperBg, boxShadow: "0 22px 44px rgba(0,0,0,0.45)", transform: `rotate(${-4 + inn * 1.5}deg) translateX(${(1 - inn) * -700}px)` }}>
           <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 8, color: K.red }}>THE ARITHMETIC</div>
-          <Write f0={fTop} len={22} style={{ fontFamily: HAND, fontWeight: 700, fontSize: Math.min(120, Math.floor(640 / (top.length * 0.47))), lineHeight: 1.2, color: K.ink, whiteSpace: "nowrap", marginTop: 14 }}>{top}</Write>
-          <Write f0={fRun + 20} len={16} style={{ fontFamily: HAND, fontWeight: 700, fontSize: 150, lineHeight: 1.1, color: K.red, whiteSpace: "nowrap" }}>{`= ${to.toFixed(1)} g`}</Write>
-          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 70, color: "rgba(42,26,18,0.8)", marginTop: 6, opacity: interpolate(f, [fRun + 34, fRun + 46], [0, 1], CL) }}>{label}</div>
+          <Write f0={fTop} len={22} style={{ fontFamily: HAND, fontWeight: 700, fontSize: Math.min(140, Math.floor(790 / (top.length * 0.47))), lineHeight: 1.2, color: K.ink, whiteSpace: "nowrap", marginTop: 14 }}>{top}</Write>
+          <Write f0={fRun + 20} len={16} style={{ fontFamily: HAND, fontWeight: 700, fontSize: 200, lineHeight: 1.1, color: K.red, whiteSpace: "nowrap" }}>{`= ${to.toFixed(1)} g`}</Write>
+          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 88, lineHeight: 1.05, color: "rgba(42,26,18,0.85)", marginTop: 6, opacity: interpolate(f, [fRun + 34, fRun + 46], [0, 1], CL) }}>{label}</div>
         </div>
         {/* balanza */}
         <div style={{ position: "absolute", left: 1010, top: 250, width: 700, height: 640, transform: `translateY(${(1 - inn) * 500}px) rotate(${2 - inn * 1}deg)` }}>
@@ -652,7 +652,7 @@ export const CounterTags: React.FC<{ img: string; tags: CTag[]; stamp?: string; 
             <div style={{ position: "absolute", left: 292, top: 320, width: 16, height: 300, borderRadius: 8, background: "linear-gradient(90deg, #6F757A 0%, #E9EDF0 45%, #8B9196 100%)", boxShadow: "8px 10px 16px rgba(0,0,0,0.35)" }} />
             <div style={{ position: "absolute", left: 0, top: 0, width: 600, height: 350, background: K.white, border: `10px solid ${K.red}`, borderRadius: 16, boxShadow: "0 26px 50px rgba(0,0,0,0.5)", textAlign: "center", boxSizing: "border-box" }}>
               <div style={{ fontFamily: SERIF, fontSize: Math.min(210, Math.floor(540 / (g.t.length * 0.5))), lineHeight: 1.05, color: K.ink, marginTop: 30, whiteSpace: "nowrap" }}>{g.t}</div>
-              <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: Math.min(44, Math.floor(540 / (g.s.length * 0.66))), letterSpacing: 2, color: K.red, whiteSpace: "nowrap" }}>{g.s}</div>
+              <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: Math.min(50, Math.floor(560 / (g.s.length * 0.6))), letterSpacing: 1, color: K.red, whiteSpace: "nowrap" }}>{g.s}</div>
             </div>
           </div>
         );
