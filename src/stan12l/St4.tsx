@@ -10,10 +10,10 @@ const eio = (t: number) => Easing.inOut(Easing.cubic)(cl(t));
 const eout = (t: number) => Easing.out(Easing.cubic)(cl(t));
 const kraft = `repeating-linear-gradient(92deg, rgba(90,60,25,0.07) 0 2px, transparent 2px 7px), linear-gradient(170deg, ${K.kraft} 0%, ${K.kraft2} 100%)`;
 
-const Note: React.FC<{ x: number; y: number; a: string; b: string; show: number; rot?: number }> = ({ x, y, a, b, show, rot = -2 }) => (
+const Note: React.FC<{ x: number; y: number; a: string; b: string; show: number; rot?: number; k?: number }> = ({ x, y, a, b, show, rot = -2, k = 1 }) => (
   <div style={{ position: "absolute", left: x, top: y, opacity: cl(show * 2), transform: `translateY(${(1 - show) * 50}px) rotate(${rot}deg)`, transformOrigin: "0 100%", background: kraft, padding: "10px 26px 14px", boxShadow: "0 12px 28px rgba(0,0,0,0.55)", whiteSpace: "nowrap" }}>
-    <span style={{ fontFamily: SLAB, fontWeight: 800, fontSize: 72, color: K.red, marginRight: 14 }}>{a}</span>
-    <span style={{ fontFamily: MARK, fontSize: 62, color: K.ink }}>{b}</span>
+    <span style={{ fontFamily: SLAB, fontWeight: 800, fontSize: 72 * k, color: K.red, marginRight: 14 * k }}>{a}</span>
+    <span style={{ fontFamily: MARK, fontSize: 62 * k, color: K.ink }}>{b}</span>
   </div>
 );
 
@@ -25,7 +25,7 @@ export const GrillLid: React.FC<{ open: string; lid: string; geo: LidGeo; phase:
   const f = useCurrentFrame(); const [gx, gy, gr] = geo.g; const [lx, ly, lr] = geo.l; const [vx, vy] = geo.vent;
   const t = f / Math.max(1, dur);
   if (phase === 1) {
-    const drop = eout((f - 6) / 22); const turn = eio((f - fTurn) / 34); const k = gr / lr;
+    const drop = eout((f - 34) / 22); const turn = eio((f - fTurn) / 34); const k = gr / lr;
     const z = lerp(1.0, 1.08, eio(t));
     // posición de la ventilación ya girada, en coordenadas de la parrilla abierta
     const nvx = gx + (vx - lx) * k, nvy = gy + (vy - ly) * k;
@@ -36,7 +36,9 @@ export const GrillLid: React.FC<{ open: string; lid: string; geo: LidGeo; phase:
           <div style={{ position: "absolute", left: gx - gr, top: gy - gr - (1 - drop) * 1100, width: gr * 2, height: gr * 2, borderRadius: "50%", overflow: "hidden", boxShadow: `0 ${lerp(120, 14, drop)}px ${lerp(90, 30, drop)}px rgba(0,0,0,0.6)`, transform: `rotate(${lerp(180, 0, turn)}deg) scale(${lerp(1.12, 1, drop)})` }}>
             <Img src={staticFile(lid)} style={{ position: "absolute", left: (lr - lx) * k, top: (lr - ly) * k, width: 1920 * k, height: 1080 * k, objectFit: "fill" }} />
           </div>
-          <Note x={Math.min(1180, nvx - 250)} y={Math.max(40, nvy - 230)} a="vent" b="over the cool side" show={eout((f - fNote) / 12)} />
+          <Note x={30} y={gy - 60} a="HOT" b="side" show={eout((f - 6) / 10)} k={0.8} rot={-3} />
+          <Note x={1575} y={gy - 60} a="COOL" b="side" show={eout((f - 14) / 10)} k={0.8} rot={3} />
+          <Note x={Math.min(980, nvx - 250)} y={Math.max(40, nvy - 230)} a="vent" b="over the cool side" show={eout((f - fNote) / 12)} />
           <Note x={Math.max(60, gx - gr - 40)} y={Math.min(900, gy + gr - 150)} a="and" b="leave it open" show={eout((f - fB) / 12)} rot={2} />
         </AbsoluteFill>
       </AbsoluteFill>
@@ -65,7 +67,7 @@ export const GrillLid: React.FC<{ open: string; lid: string; geo: LidGeo; phase:
         <Img src={staticFile(open)} style={{ position: "absolute", width: 1920, height: 1080, objectFit: "fill", filter: "brightness(0.5) saturate(0.7)" }} />
         <div style={{ position: "absolute", left: gx - gr, top: gy - gr, width: gr * 2, height: gr * 2, borderRadius: "50%", overflow: "hidden" }}>
           <Img src={staticFile(open)} style={{ position: "absolute", left: gr - gx, top: gr - gy, width: 1920, height: 1080, objectFit: "fill", filter: "brightness(0.82)" }} />
-          <div style={{ position: "absolute", left: bx - (gx - gr) - gr * 0.55, top: by - (gy - gr) - gr * 0.55, width: gr * 1.1, height: gr * 1.1, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,170,70,0.85) 0%, rgba(255,120,40,0.4) 38%, rgba(255,120,40,0) 70%)", mixBlendMode: "screen", opacity: a }} />
+          {[0, 0.14, 0.28, 0.42].map((d, q) => { const lp = (((f - 10) / 70 - d) % 1 + 1) % 1; const pp = eio(lp); const x = lerp(sx, ex, pp), y = lerp(sy, ey, pp) - Math.sin(pp * Math.PI) * gr * 0.16 + (q % 2 ? 26 : -26); const s2 = gr * lerp(0.5, 0.3, q / 3); return <div key={q} style={{ position: "absolute", left: x - (gx - gr) - s2 / 2, top: y - (gy - gr) - s2 / 2, width: s2, height: s2, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,200,120,0.9) 0%, rgba(255,140,50,0.45) 40%, rgba(255,120,40,0) 70%)", mixBlendMode: "screen", opacity: f < 10 ? 0 : Math.sin(lp * Math.PI) }} />; })}
         </div>
       </AbsoluteFill>
       <Note x={110} y={840} a="heat + smoke" b="cross the brats" show={eout((f - fNote) / 12)} />

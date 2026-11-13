@@ -14,7 +14,7 @@ const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   if (s.k === "C") {
     switch (s.c) {
       case "hoja": return <H.Hoja src={s.src} skin={s.skin} box={s.box} rows={s.rows} size={s.size} pitch={s.pitch} focus={s.focus} zoom={s.zoom} dur={dur} />;
-      case "beef": return <H.BeefMap src={s.src} regs={s.regs} now={s.now} sweep={s.sweep} dur={dur} />;
+      case "beef": return <H.BeefMap src={s.src} regs={s.regs} now={s.now} sweep={s.sweep} dim={s.dim} lift={s.lift} dur={dur} />;
       case "lid": return <L.GrillLid open={s.open} lid={s.lid} geo={s.geo} phase={s.phase} fTurn={s.fTurn} fNote={s.fNote} fB={s.fB} dur={dur} />;
       case "duo": return <H.Duo a={s.a} b={s.b} dur={dur} />;
       case "need": return <N.NeedPhoto src={s.src} tags={s.tags} dur={dur} />;
