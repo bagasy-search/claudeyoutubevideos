@@ -95,7 +95,7 @@ export const CarruselS: React.FC<{ cards: { n: number; title: string; src: strin
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Fondo src={bg} seed={909} dur={dur} />
-      <div style={{ position: "absolute", top: 46, width: "100%", textAlign: "center", fontFamily: MARK, fontSize: 76, color: "#FFF4E2", textShadow: shadow, opacity: cl(f / 10) }}>{head}</div>
+      <div style={{ position: "absolute", top: 78, width: "100%", textAlign: "center", fontFamily: MARK, fontSize: 70, lineHeight: 1.3, zIndex: 500, color: "#FFF4E2", textShadow: shadow, opacity: cl(f / 10) }}>{head}</div>
       <AbsoluteFill style={{ perspective: 1600 }}>
         {cards.map((c, i) => {
           const t = (f - 10 - i * k) / k; // 0..1 = su turno al frente
