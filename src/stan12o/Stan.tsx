@@ -721,7 +721,7 @@ export const DayPaper: React.FC<{ img: string; day: string; what: string; fDay: 
         <div style={{ position: "absolute", left: 0, right: 0, top: 96, textAlign: "center" }}>
           <Write f0={fDay} len={14} style={{ display: "inline-block", fontFamily: HAND, fontWeight: 700, fontSize: day.length > 8 ? 150 : 190, lineHeight: 1, color: GREASE, whiteSpace: "nowrap", paddingRight: 20, transform: "rotate(-3deg)" }}>{day}</Write>
           <div style={{ height: 12, width: 520 * interpolate(f, [fDay + 12, fDay + 24], [0, 1], CL), background: GREASE, borderRadius: 6, margin: "6px auto 0", transform: "rotate(-2deg)", opacity: 0.85 }} />
-          <Write f0={fDay + 9} len={10} style={{ display: "inline-block", fontFamily: HAND, fontWeight: 700, fontSize: Math.min(92, Math.floor(680 / (what.length * 0.46))), lineHeight: 1.1, color: K.red, whiteSpace: "nowrap", marginTop: 34, paddingRight: 16 }}>{what}</Write>
+          <Write f0={fDay + 9} len={10} style={{ display: "inline-block", fontFamily: HAND, fontWeight: 700, fontSize: Math.min(112, Math.floor(690 / (what.length * 0.46))), lineHeight: 1.1, color: K.red, whiteSpace: "nowrap", marginTop: 34, paddingRight: 16 }}>{what}</Write>
         </div>
       </div>
     </AbsoluteFill>
@@ -734,9 +734,9 @@ export const TriTags: React.FC<{ head: string; tags: TTag[]; source: string; dur
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
   return (
     <TileWall dur={dur} seed={seed}>
-      <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1, 1.05])})`, transformOrigin: "50% 20%" }}>
+      <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1.2, 1.27])})`, transformOrigin: "50% 8%" }}>
         <div style={{ position: "absolute", left: -40, right: -40, top: 70, height: 26, background: "linear-gradient(180deg,#E9EDF0 0%,#8B9196 55%,#5D6367 100%)", boxShadow: "0 12px 18px rgba(0,0,0,0.3)" }} />
-        <div style={{ position: "absolute", left: 0, right: 0, bottom: 130, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 56, letterSpacing: 10, color: K.red }}>{head}</div>
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 250, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 50, letterSpacing: 10, color: K.red }}>{head}</div>
         {tags.map((t, i) => {
           const d = spring({ frame: f - t.f, fps, config: { damping: 10, mass: 0.9 } });
           const x = 370 + i * 590, sw = 9 * Math.exp(-Math.max(0, f - t.f) / 26) * Math.cos((f - t.f) / 6.5) + 1.2 * Math.sin(f / 21 + i);
@@ -754,7 +754,7 @@ export const TriTags: React.FC<{ head: string; tags: TTag[]; source: string; dur
             </div>
           );
         })}
-        <div style={{ position: "absolute", left: 0, right: 0, bottom: 60, textAlign: "center", fontFamily: SANS, fontWeight: 500, fontSize: 42, color: "rgba(42,26,18,0.8)", opacity: interpolate(f, [20, 32], [0, 1], CL) }}>{source}</div>
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 186, textAlign: "center", fontFamily: SANS, fontWeight: 500, fontSize: 36, color: "rgba(42,26,18,0.8)", opacity: interpolate(f, [20, 32], [0, 1], CL) }}>{source}</div>
       </AbsoluteFill>
     </TileWall>
   );
@@ -835,12 +835,12 @@ export const PaperBill: React.FC<{ head: string; lines: PLine[]; dur: number; se
       <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1, 1.05])})`, transformOrigin: "50% 10%" }}>
         <div style={{ position: "absolute", left: 330, top: -60, width: 1260, height: 130, borderRadius: 65, background: "linear-gradient(180deg,#FFFFFF 0%,#E9E4D6 55%,#C9C3B2 100%)", boxShadow: "0 16px 26px rgba(0,0,0,0.35)" }} />
         <div style={{ position: "absolute", left: 300, top: 52, width: 1320, height: 18, background: "linear-gradient(180deg,#8B9196,#4D5357)", boxShadow: "0 6px 8px rgba(0,0,0,0.35)" }} />
-        <div style={{ position: "absolute", left: 380, top: 60, width: 1160, height: 940 * pull, overflow: "hidden", backgroundImage: whitePaper, boxShadow: "0 26px 44px rgba(0,0,0,0.35)" }}>
+        <div style={{ position: "absolute", left: 380, top: 60, width: 1160, height: 800 * pull, overflow: "hidden", backgroundImage: whitePaper, boxShadow: "0 26px 44px rgba(0,0,0,0.35)" }}>
           <div style={{ padding: "46px 70px" }}>
             <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 50, letterSpacing: 10, color: K.red, whiteSpace: "nowrap" }}>{head}</div>
             <div style={{ height: 8, background: GREASE, opacity: 0.8, margin: "14px 0 18px", borderRadius: 4 }} />
             {lines.map((l, i) => f < l.f ? null : (
-              <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", whiteSpace: "nowrap", fontFamily: HAND, fontWeight: 700, fontSize: l.bold ? 136 : 116, lineHeight: 1.3, color: l.bold ? K.red : GREASE, gap: 30 }}>
+              <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", whiteSpace: "nowrap", fontFamily: HAND, fontWeight: 700, fontSize: l.bold ? 122 : 100, lineHeight: 1.3, color: l.bold ? K.red : GREASE, gap: 30 }}>
                 <Write f0={l.f} len={12}>{l.a}</Write>
                 <Write f0={l.f + 8} len={8} style={{ paddingRight: 16 }}>{l.b}</Write>
               </div>

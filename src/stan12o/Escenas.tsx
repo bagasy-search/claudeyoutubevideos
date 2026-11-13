@@ -80,7 +80,7 @@ export const EscEspada: React.FC<{ src: string; fPull: number; dur: number }> = 
   const BONE = "polygon(886px 280px, 1000px 280px, 1004px 478px, 884px 478px)";
   const tug = f < fPull ? Math.sin(f / 3) * 3 * seg(f, fPull - 24, fPull) : 0;
   const up = seg(f, fPull, fPull + Math.min(70, Math.max(30, dur - fPull - 30)));
-  const y = -760 * up;
+  const y = -300 * up;
   const s = lerp(1.25, 1.55, seg(f, 0, fPull)) - 0.2 * seg(f, fPull + 6, dur);
   const cy = lerp(520, 400, seg(f, 0, fPull)) + 60 * seg(f, fPull + 6, dur);
   return (
@@ -89,9 +89,9 @@ export const EscEspada: React.FC<{ src: string; fPull: number; dur: number }> = 
         <Img src={staticFile(src)} style={FULL} />
         {/* parche: la misma foto corrida 135 px tapa el hueco del hueso (azulejo arriba, carne abajo) */}
         {f >= fPull - 1 && <Img src={staticFile(src)} style={{ ...FULL, transform: "translateX(-135px)", clipPath: "polygon(1013px 270px, 1143px 270px, 1147px 492px, 1011px 492px)", opacity: Math.min(1, up * 12) }} />}
-        <Img src={staticFile(src)} style={{ ...FULL, transform: `translate(${tug}px, ${y}px) rotate(${up * 5}deg)`, transformOrigin: "945px 470px", clipPath: BONE }} />
+        <Img src={staticFile(src)} style={{ ...FULL, transform: `translate(${tug + 150 * up}px, ${y}px) rotate(${up * 16}deg)`, transformOrigin: "945px 470px", clipPath: BONE, filter: `drop-shadow(0 ${18 * up}px ${14 * up}px rgba(0,0,0,0.5))` }} />
       </AbsoluteFill>
-      <Papel x={1130} y={420} t="clean" f0={fPull + 30} size={170} rot={3} />
+      <Papel x={1250} y={150} t="out clean" f0={fPull + 30} size={150} rot={3} />
     </AbsoluteFill>
   );
 };
@@ -100,7 +100,7 @@ export const EscEspada: React.FC<{ src: string; fPull: number; dur: number }> = 
 export const EscCapas: React.FC<{ src: string; fFat: number; fJelly: number; fGood: number; dur: number }> = ({ src, fFat, fJelly, fGood, dur }) => {
   const f = useCurrentFrame();
   const lift = damp(f - fFat, 7, 34) * (f >= fFat ? 1 : 0);
-  const wob = f >= fJelly ? Math.sin((f - fJelly) / 2.2) * 2.4 * Math.exp(-(f - fJelly) / 26) : 0;
+  const wob = f >= fJelly ? Math.sin((f - fJelly) / 2.2) * 4.5 * Math.exp(-(f - fJelly) / 40) : 0;
   const s = lerp(1.2, 1.7, seg(f, 0, Math.max(12, fFat))) + 0.06 * (f / dur);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#2a2a28" }}>
@@ -109,7 +109,7 @@ export const EscCapas: React.FC<{ src: string; fFat: number; fJelly: number; fGo
         {/* cuerpo ámbar: tiembla */}
         <Img src={staticFile(src)} style={{ ...FULL, clipPath: "polygon(800px 500px, 1116px 500px, 1116px 905px, 800px 905px)", transformOrigin: "958px 905px", transform: `skewX(${wob}deg)` }} />
         {/* la capa de arriba: se levanta */}
-        <Img src={staticFile(src)} style={{ ...FULL, clipPath: "polygon(798px 452px, 1118px 452px, 1118px 502px, 798px 502px)", transform: `translateY(${-96 * Math.min(1.05, lift)}px)` }} />
+        <Img src={staticFile(src)} style={{ ...FULL, clipPath: "polygon(798px 452px, 1118px 452px, 1118px 502px, 798px 502px)", transform: `translateY(${-150 * Math.min(1.05, lift)}px)`, filter: "drop-shadow(0 16px 10px rgba(0,0,0,0.45))" }} />
       </AbsoluteFill>
       <Papel x={1230} y={250} t="fat · fry in it" f0={fFat + 8} size={104} rot={2} />
       <Papel x={1230} y={600} t="jelly · the flavor" f0={fJelly + 4} size={104} rot={-2} />
@@ -131,7 +131,7 @@ export const EscPimenton: React.FC<{ src: string; fStir: number; fOff: number; d
           background: "radial-gradient(ellipse at 50% 50%, rgba(170,44,22,0.92) 0%, rgba(176,52,26,0.8) 60%, rgba(176,52,26,0) 100%)" }} />
       </AbsoluteFill>
       <Papel x={140} y={120} t="off the heat" f0={6} size={124} rot={-2} />
-      <Papel x={140} y={300} t="or it turns bitter" f0={fOff + 20} size={104} rot={2} />
+      <Papel x={140} y={880} t="or it turns bitter" f0={fOff + 20} size={104} rot={2} />
     </AbsoluteFill>
   );
 };
