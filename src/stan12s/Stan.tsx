@@ -851,3 +851,405 @@ export const PaperBill: React.FC<{ head: string; lines: PLine[]; dur: number; se
     </TileWall>
   );
 };
+
+// ====================== componentes propios de stan12s (el bife de $7) — CSS y DOM puro ======================
+const cardStock = "linear-gradient(96deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 24%, rgba(120,90,40,0.08) 62%, rgba(255,255,255,0.12) 100%), linear-gradient(180deg, #F6E9C8 0%, #E9D5A4 100%)";
+const steelS = "linear-gradient(180deg,#F1F4F6 0%,#A9AFB4 45%,#6A7075 100%)";
+const fit = (txt: string, w: number, max: number, k = 0.5) => Math.min(max, Math.floor(w / (Math.max(1, txt.length) * k)));
+
+// ---------- tarjeta de 12 casilleros: la perforadora muerde el casillero del truco (cuenta regresiva 12 → 1)
+export const PunchCard: React.FC<{ n: number; title: string; img: string; fTitle?: number; sub?: string; dur: number; seed: number }> = ({ n, title, img, fTitle = 10, sub, dur, seed }) => {
+  const f = useCurrentFrame(); const { fps } = useVideoConfig();
+  const kb = useKB(seed + 5, dur);
+  const intro = n === 0;
+  const up = spring({ frame: f - 2, fps, config: { damping: 13, mass: 0.9 } });
+  const fP = intro ? 9999 : 14;
+  const bite = interpolate(f, [fP - 6, fP, fP + 3, fP + 10], [0, 1, 1, 0], CL);
+  const W = intro ? 1640 : 1560, H = intro ? 560 : 430, L = (1920 - W) / 2, T = intro ? 260 : 1080 - H - 70;
+  const cell = (W - 120) / 12;
+  const curX = intro ? 0 : 60 + (12 - n) * cell + cell / 2;
+  const sweep = intro ? Math.floor(interpolate(f, [24, Math.max(40, dur - 30)], [0, 12], CL)) : 0;
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
+      <Img src={staticFile(img)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,0.5) 100%)" }} />
+      <div style={{ position: "absolute", left: L, top: T + (1 - Math.min(1, up)) * 700, width: W, height: H, backgroundImage: cardStock, borderRadius: 26, boxShadow: "0 30px 50px rgba(0,0,0,0.55)", transform: `rotate(${(seed % 2 ? 1 : -1) * 0.8 + Math.sin(f / 23) * 0.25}deg) translateY(${bite * 5}px)` }}>
+        <div style={{ position: "absolute", left: 14, right: 14, top: 14, bottom: 14, border: `4px solid ${K.red}`, borderRadius: 16, opacity: 0.75 }} />
+        {intro ? (
+          <div style={{ position: "absolute", left: 0, right: 0, top: 50, textAlign: "center" }}>
+            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 46, letterSpacing: 14, color: K.red }}>{"STAN'S MEATS · CHICAGO"}</div>
+            <div style={{ fontFamily: SERIF, fontSize: 150, lineHeight: 1.05, color: K.ink, whiteSpace: "nowrap" }}>{title}</div>
+            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 70, color: K.ink, opacity: 0.85 }}>{sub}</div>
+          </div>
+        ) : (
+          <div style={{ position: "absolute", left: 60, right: 60, top: 40, display: "flex", alignItems: "center", gap: 40 }}>
+            <div style={{ textAlign: "center", flex: "0 0 auto" }}>
+              <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 12, color: K.red }}>TRICK</div>
+              <div style={{ fontFamily: SERIF, fontSize: 190, lineHeight: 0.9, color: K.red }}>{n}</div>
+            </div>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <Write f0={fTitle} len={16} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(title, W - 420, 150, 0.47), lineHeight: 1.05, color: GREASE, whiteSpace: "nowrap", paddingRight: 24 }}>{title}</Write>
+              {sub ? <Write f0={fTitle + 16} len={14} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(sub, W - 420, 84, 0.45), lineHeight: 1.1, color: K.red, whiteSpace: "nowrap", paddingRight: 20, marginTop: 6 }}>{sub}</Write> : null}
+            </div>
+          </div>
+        )}
+        {/* los 12 casilleros */}
+        {Array.from({ length: 12 }, (_, i) => {
+          const num = 12 - i, done = intro ? false : num > n || (num === n && f >= fP);
+          const lit = intro && i < sweep;
+          const x = 60 + i * cell + cell / 2, r = intro ? 44 : 36;
+          return (
+            <div key={i} style={{ position: "absolute", left: x - r, bottom: intro ? 60 : 34, width: r * 2, height: r * 2, borderRadius: "50%", boxSizing: "border-box",
+              border: `5px solid ${num === n || lit ? K.red : "rgba(42,26,18,0.55)"}`, background: done ? "radial-gradient(circle at 40% 35%, #3a2a20 0%, #120c08 80%)" : lit ? "rgba(179,38,30,0.14)" : "transparent",
+              boxShadow: done ? "inset 0 6px 10px rgba(0,0,0,0.8)" : "none", display: "flex", alignItems: "center", justifyContent: "center",
+              fontFamily: SERIF, fontSize: intro ? 48 : 40, color: done ? "transparent" : lit || num === n ? K.red : "rgba(42,26,18,0.7)", transform: `scale(${lit && i === sweep - 1 ? 1.18 : 1})` }}>{num}</div>
+          );
+        })}
+        {/* la perforadora y el confeti que cae */}
+        {!intro && bite > 0 ? (
+          <div style={{ position: "absolute", left: curX - 70, bottom: -40 + bite * 44, width: 140, height: 150, borderRadius: "22px 22px 60px 60px", backgroundImage: steelS, boxShadow: "0 14px 20px rgba(0,0,0,0.5)", opacity: Math.min(1, bite * 3) }}>
+            <div style={{ position: "absolute", left: 40, top: 22, width: 60, height: 60, borderRadius: "50%", background: "#2b2f33" }} />
+          </div>
+        ) : null}
+        {!intro && f >= fP ? <div style={{ position: "absolute", left: curX - 30 + (f - fP) * 1.2, bottom: 40 - (f - fP) * (f - fP) * 0.9, width: 60, height: 60, borderRadius: "50%", backgroundImage: cardStock, transform: `rotate(${(f - fP) * 14}deg) scaleY(${Math.cos((f - fP) / 3)})`, boxShadow: "0 4px 6px rgba(0,0,0,0.3)" }} /> : null}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// ---------- termómetro de columna de vidrio: la columna roja sube y se frena en cada marca dicha
+export type GMark = { v: number; big: string; label: string; f: number };
+export const GlassTherm: React.FC<{ head: string; marks: GMark[]; min: number; max: number; note?: string; fNote?: number; source: string; dur: number; seed: number }> = ({ head, marks, min, max, note, fNote = 9999, source, dur, seed }) => {
+  const f = useCurrentFrame(); const { fps } = useVideoConfig();
+  const fr = [0, ...marks.flatMap((m) => [Math.max(1, m.f - 12), m.f])], va = [min, ...marks.flatMap((m, i) => [i ? marks[i - 1].v : min, m.v])];
+  for (let i = 1; i < fr.length; i++) if (fr[i] <= fr[i - 1]) fr[i] = fr[i - 1] + 1;
+  const val = interpolate(f, fr, va, { ...CL, easing: ease });
+  const TOP = 150, BOT = 860, yOf = (v: number) => BOT - ((v - min) / (max - min)) * (BOT - TOP);
+  const nS = spring({ frame: f - fNote, fps, config: { damping: 9, mass: 0.6 } });
+  return (
+    <TileWall dur={dur} seed={seed}>
+      <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1, 1.04])})`, transformOrigin: "30% 60%" }}>
+        <div style={{ position: "absolute", left: 620, top: 54, fontFamily: SANS, fontWeight: 600, fontSize: 50, letterSpacing: 10, color: K.red, whiteSpace: "nowrap" }}>{head}</div>
+        {/* tabla de madera y tubo */}
+        <div style={{ position: "absolute", left: 250, top: 90, width: 260, height: 930, borderRadius: 28, backgroundImage: woodBg, boxShadow: "0 26px 40px rgba(0,0,0,0.4)" }} />
+        {Array.from({ length: 15 }, (_, i) => <div key={i} style={{ position: "absolute", left: 290, top: TOP + (i * (BOT - TOP)) / 14, width: i % 2 ? 34 : 56, height: 5, background: "rgba(255,240,210,0.75)" }} />)}
+        <div style={{ position: "absolute", left: 352, top: TOP - 30, width: 56, height: BOT - TOP + 60, borderRadius: 28, background: "linear-gradient(90deg, rgba(255,255,255,0.85) 0%, rgba(230,238,242,0.55) 30%, rgba(190,205,212,0.5) 70%, rgba(255,255,255,0.8) 100%)", boxShadow: "inset 0 0 0 3px rgba(120,130,136,0.6), 0 8px 14px rgba(0,0,0,0.3)" }} />
+        <div style={{ position: "absolute", left: 368, top: yOf(val), width: 24, height: BOT - yOf(val) + 40, borderRadius: "12px 12px 0 0", background: "linear-gradient(90deg,#E0463C,#B3261E 60%,#7d1812)" }} />
+        <div style={{ position: "absolute", left: 320, top: BOT + 6, width: 120, height: 120, borderRadius: "50%", background: "radial-gradient(circle at 36% 30%, #F0685E 0%, #B3261E 55%, #6f1510 100%)", boxShadow: "0 10px 16px rgba(0,0,0,0.4), inset 0 0 0 4px rgba(255,255,255,0.35)" }} />
+        {/* marcas */}
+        {marks.map((m, i) => {
+          const s = spring({ frame: f - m.f, fps, config: { damping: 11, mass: 0.7 } });
+          if (f < m.f - 12) return null;
+          const y = marks.length === 1 ? 420 : yOf(m.v);
+          return (
+            <div key={i} style={{ position: "absolute", left: 420, top: y - 100, opacity: interpolate(f, [m.f - 12, m.f], [0.25, 1], CL) }}>
+              <div style={{ position: "absolute", left: 0, top: 97 + (yOf(m.v) - y), width: 190, height: 6, background: K.red }} />
+              <div style={{ position: "absolute", left: 200, top: 0, transform: `scale(${0.7 + 0.3 * Math.min(1.06, s)})`, transformOrigin: "0 50%", whiteSpace: "nowrap" }}>
+                <div style={{ fontFamily: SERIF, fontSize: marks.length === 1 ? 250 : 170, lineHeight: 1, color: K.ink }}>{m.big}</div>
+                <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: marks.length === 1 ? 96 : 84, lineHeight: 1, color: K.red }}>{m.label}</div>
+              </div>
+            </div>
+          );
+        })}
+        {note ? <div style={{ position: "absolute", left: 620, top: 690, padding: "14px 44px", border: `8px solid ${K.red}`, borderRadius: 14, fontFamily: SANS, fontWeight: 700, fontSize: 84, letterSpacing: 4, color: K.red, whiteSpace: "nowrap", opacity: Math.min(1, nS * 3), transform: `rotate(-4deg) scale(${1.7 - 0.7 * Math.min(1.05, nS)})`, transformOrigin: "20% 50%" }}>{note}</div> : null}
+        <div style={{ position: "absolute", left: 620, bottom: 70, fontFamily: SANS, fontWeight: 500, fontSize: 38, color: "rgba(42,26,18,0.8)", opacity: interpolate(f, [16, 28], [0, 1], CL), whiteSpace: "nowrap" }}>{source}</div>
+      </AbsoluteFill>
+    </TileWall>
+  );
+};
+
+// ---------- fichero de recetas: la ficha rayada sale del fichero de madera y los renglones se escriben en su palabra
+export type RCLine = { t: string; f: number; red?: boolean };
+export const RecipeBox: React.FC<{ head: string; lines: RCLine[]; dur: number; seed: number }> = ({ head, lines, dur, seed }) => {
+  const f = useCurrentFrame(); const { fps } = useVideoConfig();
+  const up = spring({ frame: f - 1, fps, config: { damping: 14, mass: 0.9 } });
+  const longest = lines.reduce((a, l) => Math.max(a, l.t.length), 8);
+  const fs = Math.min(lines.length > 5 ? 78 : lines.length > 3 ? 96 : 118, Math.floor(1240 / (longest * 0.45)));
+  const rowH = Math.min(128, Math.floor(560 / Math.max(3, lines.length)));
+  return (
+    <TileWall dur={dur} seed={seed}>
+      <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1, 1.045])})`, transformOrigin: "50% 80%" }}>
+        {/* separadores del fichero, detrás */}
+        {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", left: 330 + i * 26, top: 760 - i * 22, width: 1260 - i * 52, height: 300, background: "linear-gradient(180deg,#F1E3BE,#DCC690)", borderRadius: "16px 16px 0 0", boxShadow: "0 -4px 8px rgba(0,0,0,0.15)" }}><div style={{ position: "absolute", left: 80 + i * 330, top: -34, width: 200, height: 40, borderRadius: "12px 12px 0 0", background: "#DCC690" }} /></div>)}
+        {/* la ficha */}
+        <div style={{ position: "absolute", left: 250, top: 70 + (1 - Math.min(1, up)) * 760, width: 1420, height: 800, background: "linear-gradient(180deg,#FFFEF8 0%,#F4F0E2 100%)", borderRadius: 14, boxShadow: "0 26px 44px rgba(0,0,0,0.38)", transform: `rotate(${-1.2 + Math.sin(f / 26) * 0.2}deg)`, overflow: "hidden" }}>
+          <div style={{ position: "absolute", left: 0, right: 0, top: 150, height: 6, background: "#D9544C" }} />
+          {Array.from({ length: Math.max(3, lines.length) }, (_, i) => <div key={i} style={{ position: "absolute", left: 0, right: 0, top: 150 + (i + 1) * rowH + 8, height: 3, background: "rgba(70,120,170,0.35)" }} />)}
+          <div style={{ position: "absolute", left: 70, top: 44, fontFamily: SANS, fontWeight: 600, fontSize: fit(head, 1280, 62, 0.72), letterSpacing: 8, color: K.red, whiteSpace: "nowrap" }}>{head}</div>
+          {lines.map((l, i) => f < l.f ? null : (
+            <div key={i} style={{ position: "absolute", left: 70, top: 150 + i * rowH + (rowH - fs * 1.05) + 6 }}>
+              <Write f0={l.f} len={14} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fs, lineHeight: 1.05, color: l.red ? K.red : GREASE, whiteSpace: "nowrap", paddingRight: 24 }}>{l.t}</Write>
+            </div>
+          ))}
+        </div>
+        {/* frente del fichero de madera */}
+        <div style={{ position: "absolute", left: 210, top: 900, width: 1500, height: 260, backgroundImage: woodBg, borderRadius: "14px 14px 0 0", boxShadow: "0 -16px 30px rgba(0,0,0,0.35)" }}>
+          <div style={{ position: "absolute", left: 640, top: 50, width: 220, height: 70, borderRadius: 10, border: "6px solid #C9A24B", boxSizing: "border-box", background: "#F6EFD9" }} />
+        </div>
+      </AbsoluteFill>
+    </TileWall>
+  );
+};
+
+// ---------- frasco de papelitos: cada pregunta del mostrador es un papel doblado que sale del frasco y se despliega
+export const SlipJar: React.FC<{ n: number; text: string; dur: number; seed: number }> = ({ n, text, dur, seed }) => {
+  const f = useCurrentFrame(); const { fps } = useVideoConfig();
+  const intro = n === 0;
+  const rise = spring({ frame: f - 3, fps, config: { damping: 14, mass: 0.8 } });
+  const open = interpolate(f, [12, 26], [0, 1], { ...CL, easing: ease });
+  const JX = intro ? 700 : 150, JW = intro ? 520 : 430, JH = intro ? 640 : 560, JT = intro ? 330 : 440;
+  const words = text.split(" "); const rows: string[] = []; let cur = "";
+  words.forEach((w) => { if ((cur + " " + w).trim().length > 21 && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); if (cur) rows.push(cur);
+  const fs = Math.min(132, Math.floor(1020 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.45)), Math.floor(560 / (rows.length * 1.08)));
+  return (
+    <TileWall dur={dur} seed={seed}>
+      <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1, 1.04])})`, transformOrigin: "40% 70%" }}>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 960, height: 140, backgroundImage: woodBg, boxShadow: "0 -14px 30px rgba(0,0,0,0.3)" }} />
+        {intro ? (
+          <div style={{ position: "absolute", left: 0, right: 0, top: 70, textAlign: "center" }}>
+            <div style={{ fontFamily: SERIF, fontSize: 150, lineHeight: 1, color: K.ink }}>From the counter</div>
+            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 54, letterSpacing: 14, color: K.red, marginTop: 10 }}>FOUR QUESTIONS</div>
+          </div>
+        ) : null}
+        {/* el papel que sale y se despliega */}
+        {!intro ? (
+          <div style={{ position: "absolute", left: 680, top: 110 + (1 - Math.min(1, rise)) * 520, width: 1120, height: 760, perspective: 1800, transform: `rotate(${1.2 - open * 0.6}deg)` }}>
+            <div style={{ position: "absolute", left: 0, top: 0, width: 1120, height: 190, backgroundImage: whitePaper, boxShadow: "0 18px 30px rgba(0,0,0,0.3)", display: "flex", alignItems: "center", paddingLeft: 60, boxSizing: "border-box", gap: 30 }}>
+              <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 52, letterSpacing: 12, color: K.red }}>QUESTION</div>
+              <div style={{ fontFamily: SERIF, fontSize: 150, lineHeight: 1, color: K.red }}>{n}</div>
+            </div>
+            <div style={{ position: "absolute", left: 0, top: 190, width: 1120, height: 570, backgroundImage: whitePaper, boxShadow: "0 26px 40px rgba(0,0,0,0.35)", transformOrigin: "50% 0%", transform: `rotateX(${(1 - open) * -96}deg)`, backfaceVisibility: "hidden", display: "flex", flexDirection: "column", justifyContent: "center", paddingLeft: 60, boxSizing: "border-box" }}>
+              <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 4, background: "rgba(0,0,0,0.12)" }} />
+              {rows.map((r, i) => <Write key={i} f0={24 + i * 9} len={12} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fs, lineHeight: 1.08, color: GREASE, whiteSpace: "nowrap", paddingRight: 24 }}>{r}</Write>)}
+            </div>
+          </div>
+        ) : null}
+        {/* el frasco */}
+        <div style={{ position: "absolute", left: JX, top: JT, width: JW, height: JH }}>
+          {Array.from({ length: 9 }, (_, i) => <div key={i} style={{ position: "absolute", left: 40 + ((i * 97) % (JW - 190)), bottom: 26 + ((i * 61) % 210), width: 130, height: 56, backgroundImage: whitePaper, boxShadow: "0 3px 5px rgba(0,0,0,0.25)", transform: `rotate(${((i * 47) % 70) - 35}deg)` }}><div style={{ position: "absolute", left: 0, right: 0, top: 26, height: 3, background: "rgba(0,0,0,0.13)" }} /></div>)}
+          <div style={{ position: "absolute", left: 0, top: 60, width: JW, height: JH - 60, borderRadius: "70px 70px 46px 46px", boxSizing: "border-box", border: "7px solid rgba(150,170,180,0.75)", background: "linear-gradient(90deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.06) 16%, rgba(180,205,215,0.12) 70%, rgba(255,255,255,0.4) 93%, rgba(255,255,255,0.1) 100%)", boxShadow: "0 22px 30px rgba(0,0,0,0.3)" }} />
+          <div style={{ position: "absolute", left: 56, top: 14, width: JW - 112, height: 60, borderRadius: 14, boxSizing: "border-box", border: "7px solid rgba(150,170,180,0.8)", background: "rgba(255,255,255,0.25)" }} />
+          <div style={{ position: "absolute", left: 30, top: 150, width: 26, height: JH - 300, borderRadius: 13, background: "rgba(255,255,255,0.65)" }} />
+        </div>
+      </AbsoluteFill>
+    </TileWall>
+  );
+};
+
+// ---------- contador de mano de rueditas: dos contadores cromados, cada uno cuenta las mordidas hasta su número
+const TallyOne: React.FC<{ x: number; to: number; f0: number; len: number; label: string; red?: boolean }> = ({ x, to, f0, len, label, red }) => {
+  const f = useCurrentFrame(); const { fps } = useVideoConfig();
+  const v = interpolate(f, [f0, f0 + len], [0, to], CL); const n = Math.floor(v), frac = v - n;
+  const press = f >= f0 && f < f0 + len ? Math.abs(Math.sin(v * Math.PI)) : 0;
+  const s = spring({ frame: f - (f0 - 10), fps, config: { damping: 12, mass: 0.8 } });
+  const done = spring({ frame: f - (f0 + len), fps, config: { damping: 8, mass: 0.5 } });
+  const dg = (k: number) => String(k).padStart(2, "0");
+  return (
+    <div style={{ position: "absolute", left: x - 330, top: 120, width: 660, height: 900, opacity: Math.min(1, s * 2), transform: `translateY(${(1 - Math.min(1, s)) * 120}px)` }}>
+      <div style={{ position: "absolute", left: 250, top: 10 + press * 16, width: 160, height: 120, borderRadius: "30px 30px 10px 10px", backgroundImage: steelS, boxShadow: "0 8px 12px rgba(0,0,0,0.35)" }} />
+      <div style={{ position: "absolute", left: 60, top: 90, width: 540, height: 540, borderRadius: "50%", background: "radial-gradient(circle at 34% 28%, #FFFFFF 0%, #D5DADD 30%, #8D9499 68%, #5A6065 100%)", boxShadow: "0 30px 44px rgba(0,0,0,0.45), inset 0 0 0 10px rgba(255,255,255,0.3)", transform: `scale(${1 + 0.04 * Math.min(1.2, done) * (f >= f0 + len ? 1 : 0)})` }}>
+        <div style={{ position: "absolute", left: 100, top: 160, width: 340, height: 220, borderRadius: 18, background: "#15181A", boxShadow: "inset 0 8px 14px rgba(0,0,0,0.9), 0 0 0 8px rgba(40,44,48,0.9)", overflow: "hidden" }}>
+          <div style={{ position: "absolute", left: 0, right: 0, top: 0, transform: `translateY(${-frac * 220}px)` }}>
+            {[n, n + 1].map((k, i) => <div key={i} style={{ height: 220, lineHeight: "220px", textAlign: "center", fontFamily: SERIF, fontSize: 210, color: "#F6F2E6", letterSpacing: 10 }}>{dg(Math.min(k, to))}</div>)}
+          </div>
+          <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 60, background: "linear-gradient(180deg, rgba(0,0,0,0.7), rgba(0,0,0,0))" }} />
+          <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 60, background: "linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0))" }} />
+        </div>
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 664, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 46, letterSpacing: 8, color: "rgba(42,26,18,0.75)" }}>CHEWS</div>
+      <div style={{ position: "absolute", left: 20, right: 20, top: 730, textAlign: "center" }}>
+        <div style={{ display: "inline-block", backgroundImage: whitePaper, padding: "10px 34px 14px", boxShadow: "0 12px 20px rgba(0,0,0,0.28)", transform: `rotate(${red ? 2 : -2}deg)`, fontFamily: HAND, fontWeight: 700, fontSize: fit(label, 580, 92, 0.45), lineHeight: 1.05, color: red ? K.red : GREASE, whiteSpace: "nowrap" }}>{label}</div>
+      </div>
+    </div>
+  );
+};
+export const Tally: React.FC<{ a: number; b: number; fA: number; fB: number; labA: string; labB: string; dur: number; seed: number }> = ({ a, b, fA, fB, labA, labB, dur, seed }) => {
+  const f = useCurrentFrame();
+  return (
+    <TileWall dur={dur} seed={seed}>
+      <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1, 1.04])})` }}>
+        <TallyOne x={520} to={a} f0={fA} len={Math.max(20, Math.min(46, fB - fA - 6))} label={labA} />
+        <TallyOne x={1400} to={b} f0={fB} len={18} label={labB} red />
+      </AbsoluteFill>
+    </TileWall>
+  );
+};
+
+// ---------- tira de tiempos de la sal: una cinta de papel con marcas; el broche de bronce avanza y la zona roja es la trampa
+const SPOS: Record<string, number> = { "0": 0, "10 min": 0.2, "30 min": 0.42, "1 hour": 0.62, "24 hours": 1 };
+export const SaltStrip: React.FC<{ stage: number; big: string; sub: string; fBig: number; fs?: number[]; dur: number; seed: number }> = ({ stage, big, sub, fBig, fs = [], dur, seed }) => {
+  const f = useCurrentFrame(); const { fps } = useVideoConfig();
+  const X0 = 190, WW = 1540, Y = 300;
+  const from = stage === 1 ? 0 : stage === 2 ? 0.1 : 0.0, to = stage === 1 ? 0.1 : stage === 2 ? 0.3 : 0.31;
+  const clip = stage === 3 ? interpolate(f, [fs[0] ?? 10, (fs[0] ?? 10) + 26], [0.0, 0.31], { ...CL, easing: ease }) : interpolate(f, [4, Math.max(30, dur - 20)], [from, to], { ...CL, easing: ease });
+  const sB = spring({ frame: f - fBig, fps, config: { damping: 11, mass: 0.7 } });
+  const zone = stage === 3 ? interpolate(f, [fs[0] ?? 10, (fs[0] ?? 10) + 14], [0, 1], CL) : 0;
+  const stamp = spring({ frame: f - ((fs[0] ?? 10) + 18), fps, config: { damping: 8, mass: 0.5 } });
+  const ok1 = spring({ frame: f - (fs[1] ?? 9999), fps, config: { damping: 10, mass: 0.6 } }), ok2 = spring({ frame: f - (fs[2] ?? 9999), fps, config: { damping: 10, mass: 0.6 } });
+  return (
+    <TileWall dur={dur} seed={seed}>
+      <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1, 1.035])})`, transformOrigin: "50% 30%" }}>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 60, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 50, letterSpacing: 10, color: K.red }}>AFTER YOU SALT A STEAK</div>
+        {/* la cinta */}
+        <div style={{ position: "absolute", left: X0 - 70, top: Y, width: WW + 140, height: 170, backgroundImage: whitePaper, boxShadow: "0 20px 32px rgba(0,0,0,0.3)", transform: "rotate(-0.4deg)" }}>
+          <div style={{ position: "absolute", left: 70 + WW * 0.2, top: 0, width: WW * 0.22 * zone, height: 170, background: "repeating-linear-gradient(135deg, rgba(179,38,30,0.85) 0px, rgba(179,38,30,0.85) 16px, rgba(179,38,30,0.35) 16px, rgba(179,38,30,0.35) 32px)" }} />
+          {Object.entries(SPOS).map(([k, p]) => (
+            <div key={k} style={{ position: "absolute", left: 70 + WW * p - 3, top: 0, width: 6, height: 62, background: GREASE }}>
+              <div style={{ position: "absolute", left: p === 1 ? -220 : p === 0 ? 0 : -110, top: 76, width: 220, textAlign: p === 1 ? "right" : p === 0 ? "left" : "center", fontFamily: SERIF, fontSize: 62, lineHeight: 1, color: K.ink, whiteSpace: "nowrap" }}>{k}</div>
+            </div>
+          ))}
+        </div>
+        {/* broche */}
+        <div style={{ position: "absolute", left: X0 + WW * clip - 34, top: Y - 56, width: 68, height: 250, borderRadius: "34px 34px 12px 12px", background: "linear-gradient(90deg,#8C6A22,#F3D88A 40%,#C9A24B 70%,#7A5A18)", boxShadow: "0 12px 18px rgba(0,0,0,0.4)" }}>
+          <div style={{ position: "absolute", left: 19, top: 18, width: 30, height: 30, borderRadius: "50%", background: "rgba(0,0,0,0.35)" }} />
+        </div>
+        {stage === 3 ? (
+          <>
+            <div style={{ position: "absolute", left: X0 + WW * 0.2 - 40, top: Y + 30, width: WW * 0.22 + 80, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 96, letterSpacing: 6, color: "#FFF8EE", textShadow: "0 4px 0 rgba(90,10,6,0.9)", whiteSpace: "nowrap", opacity: Math.min(1, stamp * 3), transform: `rotate(-5deg) scale(${1.8 - 0.8 * Math.min(1.05, stamp)})` }}>NOT NOW</div>
+            <div style={{ position: "absolute", left: 120, top: 560, width: 560, opacity: Math.min(1, ok1 * 2), transform: `translateY(${(1 - Math.min(1, ok1)) * 60}px) rotate(-2deg)`, backgroundImage: whitePaper, padding: "22px 36px 28px", boxSizing: "border-box", boxShadow: "0 16px 26px rgba(0,0,0,0.3)" }}>
+              <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 8, color: "#2F6B3A" }}>GOOD</div>
+              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 92, lineHeight: 1.02, color: GREASE }}>right as it<br />hits the pan</div>
+            </div>
+            <div style={{ position: "absolute", left: 1180, top: 560, width: 620, opacity: Math.min(1, ok2 * 2), transform: `translateY(${(1 - Math.min(1, ok2)) * 60}px) rotate(2deg)`, backgroundImage: whitePaper, padding: "22px 36px 28px", boxSizing: "border-box", boxShadow: "0 16px 26px rgba(0,0,0,0.3)" }}>
+              <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 8, color: "#2F6B3A" }}>BEST</div>
+              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 92, lineHeight: 1.02, color: GREASE }}>one hour<br />or more</div>
+            </div>
+            <div style={{ position: "absolute", left: 700, top: 590, width: 460, textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 84, lineHeight: 1.02, color: K.red, opacity: Math.min(1, stamp * 2) }}>10 to 30<br />minutes</div>
+          </>
+        ) : (
+          <div style={{ position: "absolute", left: 0, right: 0, top: 560, textAlign: "center", opacity: Math.min(1, sB * 2), transform: `translateY(${(1 - Math.min(1, sB)) * 50}px)` }}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: 44, backgroundImage: whitePaper, padding: "26px 60px 34px", boxShadow: "0 18px 30px rgba(0,0,0,0.3)", transform: "rotate(-1deg)" }}>
+              <div style={{ fontFamily: SERIF, fontSize: 230, lineHeight: 0.9, color: K.red }}>{stage}</div>
+              <div style={{ textAlign: "left" }}>
+                <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(big, 1180, 132, 0.45), lineHeight: 1.02, color: GREASE, whiteSpace: "nowrap" }}>{big}</div>
+                <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(sub, 1180, 84, 0.45), lineHeight: 1.1, color: K.red, whiteSpace: "nowrap" }}>{sub}</div>
+              </div>
+            </div>
+          </div>
+        )}
+      </AbsoluteFill>
+    </TileWall>
+  );
+};
+
+// ---------- comanda de restaurante (guest check): la cuenta del bife en casa, renglón por cifra, total y por persona
+export type GLine = { a: string; b: string; f: number };
+export const GuestCheck: React.FC<{ mode: number; lines: GLine[]; total?: string; fTotal?: number; each?: string; fEach?: number; big?: string; sub?: string; fBig?: number; dur: number; seed: number }> = ({ mode, lines, total, fTotal = 9999, each, fEach = 9999, big, sub, fBig = 12, dur, seed }) => {
+  const f = useCurrentFrame(); const { fps } = useVideoConfig();
+  const sE = spring({ frame: f - fEach, fps, config: { damping: 8, mass: 0.5 } }), sB = spring({ frame: f - fBig, fps, config: { damping: 9, mass: 0.6 } });
+  const inS = spring({ frame: f, fps, config: { damping: 15, mass: 0.9 } });
+  const green = "linear-gradient(180deg,#EEF5E6 0%,#DDEBD2 100%)";
+  if (mode === 3) return (
+    <AbsoluteFill style={{ overflow: "hidden", background: "radial-gradient(ellipse 1500px 900px at 50% 40%, #5a2a1c 0%, #2a120b 75%)" }}>
+      <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1, 1.05])})` }}>
+        <div style={{ position: "absolute", left: 360, top: 90 + (1 - Math.min(1, inS)) * 500, width: 1200, height: 900, borderRadius: 26, background: "linear-gradient(160deg,#3b1a12,#1d0b07)", boxShadow: "0 40px 60px rgba(0,0,0,0.6), inset 0 0 0 6px rgba(201,162,75,0.5)", transform: "rotate(-1.5deg)" }}>
+          <div style={{ position: "absolute", left: 90, top: 70, width: 1020, height: 760, background: "linear-gradient(180deg,#FFFDF5,#F2ECDA)", boxShadow: "0 10px 20px rgba(0,0,0,0.5)", textAlign: "center" }}>
+            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 48, letterSpacing: 14, color: K.ink, marginTop: 50 }}>THE STEAKHOUSE</div>
+            <div style={{ height: 4, background: K.ink, opacity: 0.4, margin: "18px 120px" }} />
+            <div style={{ fontFamily: SERIF, fontSize: 230, lineHeight: 1.05, color: K.red, whiteSpace: "nowrap", opacity: Math.min(1, sB * 3), transform: `scale(${1.5 - 0.5 * Math.min(1.05, sB)})` }}>{big}</div>
+            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 96, lineHeight: 1.1, color: K.ink, opacity: interpolate(f, [fBig + 10, fBig + 22], [0, 1], CL) }}>{sub}</div>
+            <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 40, color: "rgba(42,26,18,0.75)", marginTop: 30, opacity: interpolate(f, [fBig + 22, fBig + 34], [0, 1], CL) }}>with tax and tip · where I live</div>
+          </div>
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+  const rowH = 86;
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", backgroundImage: woodBg }}>
+      <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1.0, 1.04])})`, transformOrigin: "50% 40%" }}>
+        <div style={{ position: "absolute", left: 420, top: 26 + (mode === 1 ? (1 - Math.min(1, inS)) * 900 : 0), width: 1080, height: 1030, background: green, boxShadow: "0 30px 50px rgba(0,0,0,0.55)", transform: "rotate(1deg)" }}>
+          <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 26, background: "#B3261E" }} />
+          <div style={{ position: "absolute", left: 60, top: 46, fontFamily: SANS, fontWeight: 700, fontSize: 60, letterSpacing: 12, color: "#2F6B3A" }}>GUEST CHECK</div>
+          <div style={{ position: "absolute", right: 60, top: 54, fontFamily: SERIF, fontSize: 50, color: K.red }}>No. 0052</div>
+          <div style={{ position: "absolute", left: 60, top: 124, fontFamily: HAND, fontWeight: 700, fontSize: 56, color: GREASE }}>steak dinner for two, at home</div>
+          <div style={{ position: "absolute", left: 800, top: 200, width: 3, height: 800, background: "rgba(47,107,58,0.5)" }} />
+          {Array.from({ length: 9 }, (_, i) => <div key={i} style={{ position: "absolute", left: 40, right: 40, top: 200 + (i + 1) * rowH, height: 3, background: "rgba(47,107,58,0.4)" }} />)}
+          {lines.map((l, i) => f < l.f ? null : (
+            <div key={i} style={{ position: "absolute", left: 60, right: 60, top: 200 + i * rowH + 4, display: "flex", justifyContent: "space-between", alignItems: "baseline", fontFamily: HAND, fontWeight: 700, fontSize: 74, lineHeight: `${rowH}px`, color: GREASE, whiteSpace: "nowrap" }}>
+              <Write f0={l.f} len={10}>{l.a}</Write>
+              <Write f0={l.f + 6} len={8} style={{ paddingRight: 14 }}>{l.b}</Write>
+            </div>
+          ))}
+          {total && f >= fTotal ? (
+            <div style={{ position: "absolute", left: 60, right: 60, top: 200 + 6 * rowH + 10, display: "flex", justifyContent: "space-between", alignItems: "baseline", whiteSpace: "nowrap" }}>
+              <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 64, letterSpacing: 10, color: "#2F6B3A" }}>TOTAL</div>
+              <Write f0={fTotal} len={12} style={{ fontFamily: HAND, fontWeight: 700, fontSize: 150, lineHeight: 1, color: K.red, paddingRight: 18 }}>{total}</Write>
+            </div>
+          ) : null}
+          {each && f >= fEach ? (
+            <div style={{ position: "absolute", left: 150, top: 200 + 8 * rowH - 20, padding: "6px 50px 14px", border: `9px solid ${K.red}`, borderRadius: "50%", fontFamily: HAND, fontWeight: 700, fontSize: 118, lineHeight: 1.1, color: K.red, whiteSpace: "nowrap", opacity: Math.min(1, sE * 3), transform: `rotate(-4deg) scale(${1.6 - 0.6 * Math.min(1.05, sE)})` }}>{each}</div>
+          ) : null}
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// ---------- riel de comandas de la cocina: cada error es una comanda que entra corriendo por el riel y queda colgada
+export const PassRail: React.FC<{ n: number; text: string; fix: string; fFix: number; img: string; dur: number; seed: number }> = ({ n, text, fix, fFix, img, dur, seed }) => {
+  const f = useCurrentFrame(); const { fps } = useVideoConfig();
+  const kb = useKB(seed + 9, dur);
+  const s = spring({ frame: f - 3, fps, config: { damping: 12, mass: 0.9 } });
+  const sw = 7 * Math.exp(-Math.max(0, f - 6) / 22) * Math.cos((f - 6) / 6) + 0.6 * Math.sin(f / 24);
+  const sF = spring({ frame: f - fFix, fps, config: { damping: 10, mass: 0.6 } });
+  const words = text.split(" "); const rows: string[] = []; let cur = "";
+  words.forEach((w) => { if ((cur + " " + w).trim().length > 20 && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); if (cur) rows.push(cur);
+  const fs = Math.min(104, Math.floor(820 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.45)));
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
+      <Img src={staticFile(img)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
+      <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.45) 100%)" }} />
+      <div style={{ position: "absolute", left: -40, right: -40, top: 40, height: 44, backgroundImage: steelS, boxShadow: "0 14px 22px rgba(0,0,0,0.55)" }} />
+      {Array.from({ length: n - 1 }, (_, i) => (
+        <div key={i} style={{ position: "absolute", left: 90 + i * 210, top: 66, width: 180, height: 260, backgroundImage: whitePaper, boxShadow: "0 12px 18px rgba(0,0,0,0.4)", transformOrigin: "50% 0", transform: `rotate(${Math.sin(f / 19 + i) * 1.2}deg)`, textAlign: "center" }}>
+          <div style={{ fontFamily: SERIF, fontSize: 130, lineHeight: 1.3, color: "rgba(42,26,18,0.4)" }}>{i + 1}</div>
+          <div style={{ position: "absolute", left: 20, right: 20, top: 120, height: 10, background: K.red, transform: "rotate(-18deg)", opacity: 0.8 }} />
+        </div>
+      ))}
+      <div style={{ position: "absolute", left: 900 + (1 - Math.min(1, s)) * 1200, top: 66, width: 920, height: 900, transformOrigin: "50% 0", transform: `rotate(${sw}deg)` }}>
+        <div style={{ position: "absolute", left: 0, top: 0, width: 920, minHeight: 760, backgroundImage: whitePaper, boxShadow: "0 30px 50px rgba(0,0,0,0.55)", padding: "50px 56px 60px", boxSizing: "border-box",
+          clipPath: "polygon(0 0, 100% 0, 100% 97.5%, 95% 100%, 90% 97.5%, 85% 100%, 80% 97.5%, 75% 100%, 70% 97.5%, 65% 100%, 60% 97.5%, 55% 100%, 50% 97.5%, 45% 100%, 40% 97.5%, 35% 100%, 30% 97.5%, 25% 100%, 20% 97.5%, 15% 100%, 10% 97.5%, 5% 100%, 0 97.5%)" }}>
+          <div style={{ display: "flex", alignItems: "baseline", gap: 26 }}>
+            <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 60, letterSpacing: 12, color: K.red }}>MISTAKE</div>
+            <div style={{ fontFamily: SERIF, fontSize: 170, lineHeight: 0.9, color: K.red }}>{n}</div>
+          </div>
+          <div style={{ height: 6, background: GREASE, opacity: 0.7, margin: "12px 0 20px" }} />
+          {rows.map((r, i) => <Write key={i} f0={12 + i * 9} len={12} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fs, lineHeight: 1.1, color: GREASE, whiteSpace: "nowrap", paddingRight: 22 }}>{r}</Write>)}
+          <div style={{ marginTop: 34, opacity: Math.min(1, sF * 3), transform: `scale(${1.3 - 0.3 * Math.min(1.05, sF)})`, transformOrigin: "0 50%" }}>
+            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 8, color: "#2F6B3A" }}>INSTEAD</div>
+            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(fix, 800, 96, 0.45), lineHeight: 1.1, color: "#2F6B3A", whiteSpace: "nowrap" }}>{fix}</div>
+          </div>
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// ---------- cartel plegado de mesa: se levanta sobre la foto con la pregunta escrita y el sello SUBSCRIBE
+export const TentCard: React.FC<{ kicker: string; text: string; img: string; stamp?: boolean; dur: number; seed: number }> = ({ kicker, text, img, stamp = true, dur, seed }) => {
+  const f = useCurrentFrame(); const { fps } = useVideoConfig();
+  const kb = useKB(seed + 4, dur);
+  const up = spring({ frame: f - 4, fps, config: { damping: 11, mass: 0.9 } });
+  const st = spring({ frame: f - 44, fps, config: { damping: 8, mass: 0.5 } });
+  const words = text.split(" "); const rows: string[] = []; let cur = "";
+  words.forEach((w) => { if ((cur + " " + w).trim().length > 26 && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); if (cur) rows.push(cur);
+  const fs = Math.min(120, Math.floor(1280 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.45)), Math.floor(360 / (rows.length * 1.08)));
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
+      <Img src={staticFile(img)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.5) 100%)" }} />
+      <div style={{ position: "absolute", left: 230, top: 400, width: 1460, height: 620, perspective: 2000 }}>
+        <div style={{ position: "absolute", left: 40, top: -30, width: 1380, height: 80, background: "linear-gradient(180deg,#CDBB8C,#E9D5A4)", transform: `skewX(-14deg) scaleY(${Math.min(1, up)})`, transformOrigin: "50% 100%", opacity: 0.95 }} />
+        <div style={{ position: "absolute", left: 0, top: 40, width: 1460, height: 560, backgroundImage: cardStock, borderRadius: "6px 6px 16px 16px", boxShadow: "0 36px 50px rgba(0,0,0,0.6)", transformOrigin: "50% 100%", transform: `rotateX(${(1 - Math.min(1, up)) * 88}deg)`, padding: "40px 70px", boxSizing: "border-box" }}>
+          <div style={{ position: "absolute", left: 16, right: 16, top: 16, bottom: 16, border: `4px solid ${K.red}`, borderRadius: 10, opacity: 0.7 }} />
+          <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: fit(kicker, 1300, 46, 0.78), letterSpacing: 9, color: K.red, whiteSpace: "nowrap" }}>{kicker}</div>
+          <div style={{ marginTop: 18 }}>
+            {rows.map((r, i) => <Write key={i} f0={16 + i * 11} len={14} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fs, lineHeight: 1.08, color: GREASE, whiteSpace: "nowrap", paddingRight: 24 }}>{r}</Write>)}
+          </div>
+          {stamp ? <div style={{ position: "absolute", right: 60, bottom: 40, padding: "8px 34px", border: `8px solid ${K.red}`, borderRadius: 12, fontFamily: SANS, fontWeight: 700, fontSize: 72, letterSpacing: 8, color: K.red, opacity: Math.min(1, st * 3), transform: `rotate(-6deg) scale(${1.9 - 0.9 * Math.min(1.05, st)})` }}>SUBSCRIBE</div> : null}
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};

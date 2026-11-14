@@ -6,7 +6,7 @@ import * as Q from "./Piezas2";
 import * as E from "./Escenas";
 import * as St from "./Stan";
 
-export const TOTAL_FRAMES_STAN12O = TOTAL;
+export const TOTAL_FRAMES_STAN12S = TOTAL;
 const T = 8; // frames de transición
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
@@ -37,6 +37,15 @@ const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
       case "spike": return <St.OrderSpike n={s.n} name={s.name} img={s.img} dur={dur} seed={s.id} />;
       case "stack": return <St.PlateStack from={s.fromN} rows={s.rows} final={s.final} fFinal={s.fFinal} dur={dur} seed={s.id} />;
       case "pbill": return <St.PaperBill head={s.head} lines={s.lines} dur={dur} seed={s.id} />;
+      case "punch": return <St.PunchCard n={s.n} title={s.title} sub={s.sub} img={s.img} fTitle={s.fTitle} dur={dur} seed={s.id} />;
+      case "gtherm": return <St.GlassTherm head={s.head} marks={s.marks} min={s.min} max={s.max} note={s.note} fNote={s.fNote} source={s.source} dur={dur} seed={s.id} />;
+      case "rbox": return <St.RecipeBox head={s.head} lines={s.lines} dur={dur} seed={s.id} />;
+      case "slip": return <St.SlipJar n={s.n} text={s.text} dur={dur} seed={s.id} />;
+      case "tally": return <St.Tally a={s.a} b={s.b} fA={s.fA} fB={s.fB} labA={s.labA} labB={s.labB} dur={dur} seed={s.id} />;
+      case "strip": return <St.SaltStrip stage={s.stage} big={s.big} sub={s.sub} fBig={s.fBig} fs={s.fs} dur={dur} seed={s.id} />;
+      case "check": return <St.GuestCheck mode={s.mode} lines={s.lines} total={s.total} fTotal={s.fTotal} each={s.each} fEach={s.fEach} big={s.big} sub={s.sub} fBig={s.fBig} dur={dur} seed={s.id} />;
+      case "rail": return <St.PassRail n={s.n} text={s.text} fix={s.fix} fFix={s.fFix} img={s.img} dur={dur} seed={s.id} />;
+      case "tent": return <St.TentCard kicker={s.kicker} text={s.text} img={s.img} dur={dur} seed={s.id} />;
       case "carousel": return <Q.Carousel cards={CARDS} bg={s.bg} subAt={s.subAt} sub={s.sub} dur={dur} />;
       case "esc": { const K = (E as any)[s.name]; return K ? <K dur={dur} {...s.props} /> : null; }
       default: return null;
@@ -95,7 +104,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
   }
 };
 
-export const MainStan12o: React.FC = () => (
+export const MainStan12s: React.FC = () => (
   <AbsoluteFill style={{ background: P.C.ink }}>
     {/* capa 1: avatar (ventanas visibles) */}
     {AVATAR.map((a, i) => (
@@ -123,7 +132,7 @@ export const MainStan12o: React.FC = () => (
       </Sequence>
     ))}
     {/* audio: voz premezclada (sin música); SFX y sonido real de los clips por debajo */}
-    <Audio src={staticFile("stan12o_mix.m4a")} />
+    <Audio src={staticFile("stan12s_mix.m4a")} />
     {SFX.map((x, i) => (
       <Sequence key={"x" + i} from={x.from} durationInFrames={90}>
         <Audio src={staticFile(x.src)} volume={x.vol} />
