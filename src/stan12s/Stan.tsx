@@ -855,7 +855,7 @@ export const PaperBill: React.FC<{ head: string; lines: PLine[]; dur: number; se
 // ====================== componentes propios de stan12s (el bife de $7) — CSS y DOM puro ======================
 const cardStock = "linear-gradient(96deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 24%, rgba(120,90,40,0.08) 62%, rgba(255,255,255,0.12) 100%), linear-gradient(180deg, #F6E9C8 0%, #E9D5A4 100%)";
 const steelS = "linear-gradient(180deg,#F1F4F6 0%,#A9AFB4 45%,#6A7075 100%)";
-const fit = (txt: string, w: number, max: number, k = 0.5) => Math.min(max, Math.floor(w / (Math.max(1, txt.length) * k)));
+const fit = (txt: string, w: number, max: number, k = 0.38) => Math.min(max, Math.floor(w / (Math.max(1, txt.length) * k)));
 
 // ---------- tarjeta de 12 casilleros: la perforadora muerde el casillero del truco (cuenta regresiva 12 → 1)
 export const PunchCard: React.FC<{ n: number; title: string; img: string; fTitle?: number; sub?: string; dur: number; seed: number }> = ({ n, title, img, fTitle = 10, sub, dur, seed }) => {
@@ -865,7 +865,7 @@ export const PunchCard: React.FC<{ n: number; title: string; img: string; fTitle
   const up = spring({ frame: f - 2, fps, config: { damping: 13, mass: 0.9 } });
   const fP = intro ? 9999 : 14;
   const bite = interpolate(f, [fP - 6, fP, fP + 3, fP + 10], [0, 1, 1, 0], CL);
-  const W = intro ? 1640 : 1560, H = intro ? 560 : 430, L = (1920 - W) / 2, T = intro ? 260 : 1080 - H - 70;
+  const W = intro ? 1640 : 1560, H = intro ? 560 : 480, L = (1920 - W) / 2, T = intro ? 260 : 1080 - H - 70;
   const cell = (W - 120) / 12;
   const curX = intro ? 0 : 60 + (12 - n) * cell + cell / 2;
   const sweep = intro ? Math.floor(interpolate(f, [24, Math.max(40, dur - 30)], [0, 12], CL)) : 0;
@@ -888,8 +888,8 @@ export const PunchCard: React.FC<{ n: number; title: string; img: string; fTitle
               <div style={{ fontFamily: SERIF, fontSize: 190, lineHeight: 0.9, color: K.red }}>{n}</div>
             </div>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <Write f0={fTitle} len={16} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(title, W - 420, 150, 0.47), lineHeight: 1.05, color: GREASE, whiteSpace: "nowrap", paddingRight: 24 }}>{title}</Write>
-              {sub ? <Write f0={fTitle + 16} len={14} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(sub, W - 420, 84, 0.45), lineHeight: 1.1, color: K.red, whiteSpace: "nowrap", paddingRight: 20, marginTop: 6 }}>{sub}</Write> : null}
+              <Write f0={fTitle} len={16} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(title, W - 420, 200, 0.37), lineHeight: 1.05, color: GREASE, whiteSpace: "nowrap", paddingRight: 24 }}>{title}</Write>
+              {sub ? <Write f0={fTitle + 16} len={14} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(sub, W - 420, 108, 0.37), lineHeight: 1.1, color: K.red, whiteSpace: "nowrap", paddingRight: 20, marginTop: 6 }}>{sub}</Write> : null}
             </div>
           </div>
         )}
@@ -940,7 +940,7 @@ export const GlassTherm: React.FC<{ head: string; marks: GMark[]; min: number; m
         {marks.map((m, i) => {
           const s = spring({ frame: f - m.f, fps, config: { damping: 11, mass: 0.7 } });
           if (f < m.f - 12) return null;
-          const y = marks.length === 1 ? 420 : yOf(m.v);
+          const y = marks.length === 1 ? 420 : i === 0 ? 660 : 300;
           return (
             <div key={i} style={{ position: "absolute", left: 420, top: y - 100, opacity: interpolate(f, [m.f - 12, m.f], [0.25, 1], CL) }}>
               <div style={{ position: "absolute", left: 0, top: 97 + (yOf(m.v) - y), width: 190, height: 6, background: K.red }} />
@@ -964,8 +964,8 @@ export const RecipeBox: React.FC<{ head: string; lines: RCLine[]; dur: number; s
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
   const up = spring({ frame: f - 1, fps, config: { damping: 14, mass: 0.9 } });
   const longest = lines.reduce((a, l) => Math.max(a, l.t.length), 8);
-  const fs = Math.min(lines.length > 5 ? 78 : lines.length > 3 ? 96 : 118, Math.floor(1240 / (longest * 0.45)));
-  const rowH = Math.min(128, Math.floor(560 / Math.max(3, lines.length)));
+  const rowH = Math.min(170, Math.floor(600 / Math.max(3, lines.length)));
+  const fs = Math.min(Math.floor(rowH * 0.8), Math.floor(1260 / (longest * 0.37)));
   return (
     <TileWall dur={dur} seed={seed}>
       <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1, 1.045])})`, transformOrigin: "50% 80%" }}>
@@ -1000,7 +1000,7 @@ export const SlipJar: React.FC<{ n: number; text: string; dur: number; seed: num
   const JX = intro ? 700 : 150, JW = intro ? 520 : 430, JH = intro ? 640 : 560, JT = intro ? 330 : 440;
   const words = text.split(" "); const rows: string[] = []; let cur = "";
   words.forEach((w) => { if ((cur + " " + w).trim().length > 21 && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); if (cur) rows.push(cur);
-  const fs = Math.min(132, Math.floor(1020 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.45)), Math.floor(560 / (rows.length * 1.08)));
+  const fs = Math.min(170, Math.floor(1020 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.37)), Math.floor(540 / (rows.length * 1.08)));
   return (
     <TileWall dur={dur} seed={seed}>
       <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1, 1.04])})`, transformOrigin: "40% 70%" }}>
@@ -1058,7 +1058,7 @@ const TallyOne: React.FC<{ x: number; to: number; f0: number; len: number; label
       </div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 664, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 46, letterSpacing: 8, color: "rgba(42,26,18,0.75)" }}>CHEWS</div>
       <div style={{ position: "absolute", left: 20, right: 20, top: 730, textAlign: "center" }}>
-        <div style={{ display: "inline-block", backgroundImage: whitePaper, padding: "10px 34px 14px", boxShadow: "0 12px 20px rgba(0,0,0,0.28)", transform: `rotate(${red ? 2 : -2}deg)`, fontFamily: HAND, fontWeight: 700, fontSize: fit(label, 580, 92, 0.45), lineHeight: 1.05, color: red ? K.red : GREASE, whiteSpace: "nowrap" }}>{label}</div>
+        <div style={{ display: "inline-block", backgroundImage: whitePaper, padding: "10px 34px 14px", boxShadow: "0 12px 20px rgba(0,0,0,0.28)", transform: `rotate(${red ? 2 : -2}deg)`, fontFamily: HAND, fontWeight: 700, fontSize: fit(label, 580, 92, 0.37), lineHeight: 1.05, color: red ? K.red : GREASE, whiteSpace: "nowrap" }}>{label}</div>
       </div>
     </div>
   );
@@ -1095,7 +1095,7 @@ export const SaltStrip: React.FC<{ stage: number; big: string; sub: string; fBig
           <div style={{ position: "absolute", left: 70 + WW * 0.2, top: 0, width: WW * 0.22 * zone, height: 170, background: "repeating-linear-gradient(135deg, rgba(179,38,30,0.85) 0px, rgba(179,38,30,0.85) 16px, rgba(179,38,30,0.35) 16px, rgba(179,38,30,0.35) 32px)" }} />
           {Object.entries(SPOS).map(([k, p]) => (
             <div key={k} style={{ position: "absolute", left: 70 + WW * p - 3, top: 0, width: 6, height: 62, background: GREASE }}>
-              <div style={{ position: "absolute", left: p === 1 ? -220 : p === 0 ? 0 : -110, top: 76, width: 220, textAlign: p === 1 ? "right" : p === 0 ? "left" : "center", fontFamily: SERIF, fontSize: 62, lineHeight: 1, color: K.ink, whiteSpace: "nowrap" }}>{k}</div>
+              <div style={{ position: "absolute", left: p === 1 ? -220 : p === 0 ? 0 : -110, top: 76, width: 220, textAlign: p === 1 ? "right" : p === 0 ? "left" : "center", fontFamily: SERIF, fontSize: 72, lineHeight: 1, color: K.ink, whiteSpace: "nowrap" }}>{k}</div>
             </div>
           ))}
         </div>
@@ -1105,7 +1105,7 @@ export const SaltStrip: React.FC<{ stage: number; big: string; sub: string; fBig
         </div>
         {stage === 3 ? (
           <>
-            <div style={{ position: "absolute", left: X0 + WW * 0.2 - 40, top: Y + 30, width: WW * 0.22 + 80, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 96, letterSpacing: 6, color: "#FFF8EE", textShadow: "0 4px 0 rgba(90,10,6,0.9)", whiteSpace: "nowrap", opacity: Math.min(1, stamp * 3), transform: `rotate(-5deg) scale(${1.8 - 0.8 * Math.min(1.05, stamp)})` }}>NOT NOW</div>
+            <div style={{ position: "absolute", left: X0 + WW * 0.2 - 40, top: Y - 170, width: WW * 0.22 + 80, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 110, letterSpacing: 6, color: K.red, whiteSpace: "nowrap", opacity: Math.min(1, stamp * 3), transform: `rotate(-5deg) scale(${1.8 - 0.8 * Math.min(1.05, stamp)})` }}>NOT NOW</div>
             <div style={{ position: "absolute", left: 120, top: 560, width: 560, opacity: Math.min(1, ok1 * 2), transform: `translateY(${(1 - Math.min(1, ok1)) * 60}px) rotate(-2deg)`, backgroundImage: whitePaper, padding: "22px 36px 28px", boxSizing: "border-box", boxShadow: "0 16px 26px rgba(0,0,0,0.3)" }}>
               <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 8, color: "#2F6B3A" }}>GOOD</div>
               <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 92, lineHeight: 1.02, color: GREASE }}>right as it<br />hits the pan</div>
@@ -1117,15 +1117,18 @@ export const SaltStrip: React.FC<{ stage: number; big: string; sub: string; fBig
             <div style={{ position: "absolute", left: 700, top: 590, width: 460, textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 84, lineHeight: 1.02, color: K.red, opacity: Math.min(1, stamp * 2) }}>10 to 30<br />minutes</div>
           </>
         ) : (
+          <>
+          {[1, 2, 3].map((n) => <div key={n} style={{ position: "absolute", left: 640 + (n - 1) * 230, top: 590, width: 170, height: 200, backgroundImage: whitePaper, boxShadow: "0 14px 22px rgba(0,0,0,0.28)", textAlign: "center", fontFamily: SERIF, fontSize: 150, lineHeight: "200px", color: n === stage ? K.red : "rgba(42,26,18,0.35)", transform: `rotate(${(n - 2) * 2}deg)`, opacity: interpolate(f, [6 + n * 5, 14 + n * 5], [0, 1], CL) * (1 - Math.min(1, sB * 2)) }}>{n}</div>)}
           <div style={{ position: "absolute", left: 0, right: 0, top: 560, textAlign: "center", opacity: Math.min(1, sB * 2), transform: `translateY(${(1 - Math.min(1, sB)) * 50}px)` }}>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 44, backgroundImage: whitePaper, padding: "26px 60px 34px", boxShadow: "0 18px 30px rgba(0,0,0,0.3)", transform: "rotate(-1deg)" }}>
               <div style={{ fontFamily: SERIF, fontSize: 230, lineHeight: 0.9, color: K.red }}>{stage}</div>
               <div style={{ textAlign: "left" }}>
-                <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(big, 1180, 132, 0.45), lineHeight: 1.02, color: GREASE, whiteSpace: "nowrap" }}>{big}</div>
-                <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(sub, 1180, 84, 0.45), lineHeight: 1.1, color: K.red, whiteSpace: "nowrap" }}>{sub}</div>
+                <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(big, 1180, 150, 0.37), lineHeight: 1.02, color: GREASE, whiteSpace: "nowrap" }}>{big}</div>
+                <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(sub, 1180, 96, 0.37), lineHeight: 1.1, color: K.red, whiteSpace: "nowrap" }}>{sub}</div>
               </div>
             </div>
           </div>
+          </>
         )}
       </AbsoluteFill>
     </TileWall>
@@ -1158,15 +1161,15 @@ export const GuestCheck: React.FC<{ mode: number; lines: GLine[]; total?: string
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundImage: woodBg }}>
       <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1.0, 1.04])})`, transformOrigin: "50% 40%" }}>
-        <div style={{ position: "absolute", left: 420, top: 26 + (mode === 1 ? (1 - Math.min(1, inS)) * 900 : 0), width: 1080, height: 1030, background: green, boxShadow: "0 30px 50px rgba(0,0,0,0.55)", transform: "rotate(1deg)" }}>
+        <div style={{ position: "absolute", left: 300, top: 26 + (mode === 1 ? (1 - Math.min(1, inS)) * 900 : 0), width: 1320, height: 1030, background: green, boxShadow: "0 30px 50px rgba(0,0,0,0.55)", transform: "rotate(1deg)" }}>
           <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 26, background: "#B3261E" }} />
           <div style={{ position: "absolute", left: 60, top: 46, fontFamily: SANS, fontWeight: 700, fontSize: 60, letterSpacing: 12, color: "#2F6B3A" }}>GUEST CHECK</div>
           <div style={{ position: "absolute", right: 60, top: 54, fontFamily: SERIF, fontSize: 50, color: K.red }}>No. 0052</div>
-          <div style={{ position: "absolute", left: 60, top: 124, fontFamily: HAND, fontWeight: 700, fontSize: 56, color: GREASE }}>steak dinner for two, at home</div>
-          <div style={{ position: "absolute", left: 800, top: 200, width: 3, height: 800, background: "rgba(47,107,58,0.5)" }} />
+          <div style={{ position: "absolute", left: 60, top: 124, fontFamily: HAND, fontWeight: 700, fontSize: 64, color: GREASE }}>steak dinner for two, at home</div>
+          <div style={{ position: "absolute", left: 1010, top: 200, width: 3, height: 800, background: "rgba(47,107,58,0.5)" }} />
           {Array.from({ length: 9 }, (_, i) => <div key={i} style={{ position: "absolute", left: 40, right: 40, top: 200 + (i + 1) * rowH, height: 3, background: "rgba(47,107,58,0.4)" }} />)}
           {lines.map((l, i) => f < l.f ? null : (
-            <div key={i} style={{ position: "absolute", left: 60, right: 60, top: 200 + i * rowH + 4, display: "flex", justifyContent: "space-between", alignItems: "baseline", fontFamily: HAND, fontWeight: 700, fontSize: 74, lineHeight: `${rowH}px`, color: GREASE, whiteSpace: "nowrap" }}>
+            <div key={i} style={{ position: "absolute", left: 60, right: 60, top: 200 + i * rowH + 4, display: "flex", justifyContent: "space-between", alignItems: "baseline", fontFamily: HAND, fontWeight: 700, fontSize: 88, lineHeight: `${rowH}px`, color: GREASE, whiteSpace: "nowrap" }}>
               <Write f0={l.f} len={10}>{l.a}</Write>
               <Write f0={l.f + 6} len={8} style={{ paddingRight: 14 }}>{l.b}</Write>
             </div>
@@ -1178,7 +1181,7 @@ export const GuestCheck: React.FC<{ mode: number; lines: GLine[]; total?: string
             </div>
           ) : null}
           {each && f >= fEach ? (
-            <div style={{ position: "absolute", left: 150, top: 200 + 8 * rowH - 20, padding: "6px 50px 14px", border: `9px solid ${K.red}`, borderRadius: "50%", fontFamily: HAND, fontWeight: 700, fontSize: 118, lineHeight: 1.1, color: K.red, whiteSpace: "nowrap", opacity: Math.min(1, sE * 3), transform: `rotate(-4deg) scale(${1.6 - 0.6 * Math.min(1.05, sE)})` }}>{each}</div>
+            <div style={{ position: "absolute", left: 260, top: 200 + 8 * rowH - 20, padding: "6px 50px 14px", border: `9px solid ${K.red}`, borderRadius: "50%", fontFamily: HAND, fontWeight: 700, fontSize: 118, lineHeight: 1.1, color: K.red, whiteSpace: "nowrap", opacity: Math.min(1, sE * 3), transform: `rotate(-4deg) scale(${1.6 - 0.6 * Math.min(1.05, sE)})` }}>{each}</div>
           ) : null}
         </div>
       </AbsoluteFill>
@@ -1195,7 +1198,7 @@ export const PassRail: React.FC<{ n: number; text: string; fix: string; fFix: nu
   const sF = spring({ frame: f - fFix, fps, config: { damping: 10, mass: 0.6 } });
   const words = text.split(" "); const rows: string[] = []; let cur = "";
   words.forEach((w) => { if ((cur + " " + w).trim().length > 20 && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); if (cur) rows.push(cur);
-  const fs = Math.min(104, Math.floor(820 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.45)));
+  const fs = Math.min(124, Math.floor(820 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.37)));
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
       <Img src={staticFile(img)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
@@ -1218,7 +1221,7 @@ export const PassRail: React.FC<{ n: number; text: string; fix: string; fFix: nu
           {rows.map((r, i) => <Write key={i} f0={12 + i * 9} len={12} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fs, lineHeight: 1.1, color: GREASE, whiteSpace: "nowrap", paddingRight: 22 }}>{r}</Write>)}
           <div style={{ marginTop: 34, opacity: Math.min(1, sF * 3), transform: `scale(${1.3 - 0.3 * Math.min(1.05, sF)})`, transformOrigin: "0 50%" }}>
             <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 8, color: "#2F6B3A" }}>INSTEAD</div>
-            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(fix, 800, 96, 0.45), lineHeight: 1.1, color: "#2F6B3A", whiteSpace: "nowrap" }}>{fix}</div>
+            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(fix, 800, 100, 0.37), lineHeight: 1.1, color: "#2F6B3A", whiteSpace: "nowrap" }}>{fix}</div>
           </div>
         </div>
       </div>
@@ -1234,7 +1237,7 @@ export const TentCard: React.FC<{ kicker: string; text: string; img: string; sta
   const st = spring({ frame: f - 44, fps, config: { damping: 8, mass: 0.5 } });
   const words = text.split(" "); const rows: string[] = []; let cur = "";
   words.forEach((w) => { if ((cur + " " + w).trim().length > 26 && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); if (cur) rows.push(cur);
-  const fs = Math.min(120, Math.floor(1280 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.45)), Math.floor(360 / (rows.length * 1.08)));
+  const fs = Math.min(150, Math.floor(1280 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.37)), Math.floor(390 / (rows.length * 1.08)));
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
       <Img src={staticFile(img)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
