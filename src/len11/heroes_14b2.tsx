@@ -155,7 +155,7 @@ export const pipe_join: H = ({ dur }) => {
     {Array.from({ length: 10 }, (_, i) => <div key={i} style={{ position: "absolute", left: 950 + (i * 7) % 40, top: lerp(700, 1080, cl(flow * 1.3 - 0.4)) + (i * 13) % 50, width: 12, height: 12, borderRadius: 6, background: "#f7f5ef" }} />)}
     <Tx x={530} y={160} w={400} s={44} c={K.navy} wt={900}>SHOWER</Tx>
     <Tx x={1390} y={160} w={400} s={44} c={K.navy} wt={900}>SINK</Tx>
-    <Tx x={1500} y={860} w={700} s={48} c={K.red} wt={900} o={cl(flow * 2 - 0.6)}>WASHES THE CUP THROUGH</Tx>
+    <Tx x={1380} y={860} w={700} s={48} c={K.red} wt={900} o={cl(flow * 2 - 0.6)}>WASHES THE CUP THROUGH</Tx>
   </Stage></F>);
 };
 

@@ -81,7 +81,7 @@ export const balance_pans: H = ({ dur, v = 0 }) => {
     <div style={{ position: "absolute", left: 580, top: 380, width: 760, height: 20, background: "#9aa3a8", transform: `rotate(${tilt}deg)` }} />
     {pan(-1, v === 0 ? "BAKING SODA" : "VINEGAR")}{pan(1, v === 0 ? "VINEGAR" : "SOAP SCUM + OIL")}
     <Tx x={960} y={80} s={62} c={K.navy} wt={900}>{v === 0 ? "THEY CANCEL OUT" : "IT DOES VERY LITTLE"}</Tx>
-    {v === 0 && <Rubber t={t} at={2.4} x={960} y={250} text="= SALTY WATER" c={K.red} s={52} r={-4} />}
+    {v === 0 && <Rubber t={t} at={2.4} x={960} y={820} text="= SALTY WATER" c={K.red} s={52} r={-4} />}
   </Stage></F>);
 };
 

@@ -116,8 +116,8 @@ export const tile_lay: H = ({ dur }) => {
   const t = useT();
   return (<F dur={dur}><Stage rx={48} persp={1300} bg={{ background: "linear-gradient(180deg,#8d8a83,#6f6c66)" }}>
     {Array.from({ length: 12 }, (_, i) => { const p = eout(pr(t, 0.1 + i * 0.22, 0.45 + i * 0.22));
-      return <Box key={i} x={300 + (i % 4) * 340} y={180 + Math.floor(i / 4) * 260} w={310} h={230} z={lerp(260, 0, p)} o={cl(p * 2)} style={{ background: "linear-gradient(135deg,#ffffff,#e6e6e0)", borderRadius: 8, boxShadow: `0 ${lerp(40, 4, p)}px ${lerp(40, 6, p)}px rgba(0,0,0,0.35)` }}>
-        <div style={{ fontFamily: SLAB, fontWeight: 900, fontSize: 130, color: "#2f6fa5", textAlign: "center", lineHeight: "230px" }}>{i + 1}</div>
+      return <Box key={i} x={300 + (i % 4) * 340} y={250 + Math.floor(i / 4) * 230} w={310} h={210} z={lerp(260, 0, p)} o={cl(p * 2)} style={{ background: "linear-gradient(135deg,#ffffff,#e6e6e0)", borderRadius: 8, boxShadow: `0 ${lerp(40, 4, p)}px ${lerp(40, 6, p)}px rgba(0,0,0,0.35)` }}>
+        <div style={{ fontFamily: SLAB, fontWeight: 900, fontSize: 130, color: "#2f6fa5", textAlign: "center", lineHeight: "210px" }}>{i + 1}</div>
       </Box>; })}
     <Tx x={960} y={40} s={70} c="#fff" wt={900}>TWELVE STEPS · SKIP TO YOURS</Tx>
   </Stage></F>);
@@ -222,14 +222,14 @@ export const drain_cut: H = ({ dur, v = 0 }) => {
 
 // ── ABACUS: ábaco de madera; las cuentas corren: 100 pelos × 4 personas × 365 días
 export const abacus: H = ({ dur }) => {
-  const t = useT(), rows = [["100", "HAIRS A DAY"], ["× 4", "PEOPLE"], ["× 365", "DAYS"], ["146,000", "A YEAR"]];
+  const t = useT(), rows = [["50–100", "HAIRS A DAY"], ["× 4", "PEOPLE"], ["× 365", "DAYS"], ["73,000+", "A YEAR"]];
   return (<F dur={dur}><Stage rx={10} ry={Math.sin(t * 0.3) * 8} bg={PALEWOOD}>
-    <Box x={360} y={180} w={1200} h={720} z={0} style={{ border: "40px solid #6b4a2a", borderRadius: 16, background: "rgba(255,255,255,0.08)" }} />
+    <Box x={160} y={180} w={1200} h={720} z={0} style={{ border: "40px solid #6b4a2a", borderRadius: 16, background: "rgba(255,255,255,0.08)" }} />
     {rows.map(([n, l], r) => { const p = eio(pr(t, 0.3 + r * 0.55, 0.9 + r * 0.55));
       return <React.Fragment key={r}>
-        <div style={{ position: "absolute", left: 400, top: 300 + r * 160, width: 1120, height: 8, background: "#c9b48a" }} />
-        {Array.from({ length: 10 }, (_, k) => <div key={k} style={{ position: "absolute", left: lerp(420 + k * 56, 1440 - (9 - k) * 56 - (r === 3 ? 0 : 300), p * (k < 6 + r ? 1 : 0)), top: 274 + r * 160, width: 52, height: 60, borderRadius: 26, background: r === 3 ? "radial-gradient(circle at 35% 30%, #ff8a73, #a0261a)" : "radial-gradient(circle at 35% 30%, #f3d27a, #a0761a)" }} />)}
-        <Tx x={1700} y={270 + r * 160} w={420} s={r === 3 ? 56 : 44} c={r === 3 ? K.red : K.navy} wt={900} o={p}>{n} {l}</Tx>
+        <div style={{ position: "absolute", left: 200, top: 300 + r * 160, width: 1120, height: 8, background: "#c9b48a" }} />
+        {Array.from({ length: 10 }, (_, k) => <div key={k} style={{ position: "absolute", left: lerp(220 + k * 56, 1240 - (9 - k) * 56 - (r === 3 ? 0 : 300), p * (k < 6 + r ? 1 : 0)), top: 274 + r * 160, width: 52, height: 60, borderRadius: 26, background: r === 3 ? "radial-gradient(circle at 35% 30%, #ff8a73, #a0261a)" : "radial-gradient(circle at 35% 30%, #f3d27a, #a0761a)" }} />)}
+        <Tx a="left" x={1400} y={270 + r * 160} w={480} s={r === 3 ? 60 : 50} c={r === 3 ? K.red : K.navy} wt={900} o={p}>{n} {l}</Tx>
       </React.Fragment>; })}
   </Stage></F>);
 };
@@ -248,7 +248,7 @@ export const lazy_susan: H = ({ dur, v = 0 }) => {
         <div style={{ position: "absolute", top: 110, width: "100%", textAlign: "center", ...tg(K.ink, 28) }}>{i + 1}. {n}</div>
       </div>)}
     </div>
-    <Tx x={960} y={60} s={66} c={K.navy} wt={900}>{v === 0 ? "WORST TO LEAST" : `#${target + 1} · ${LZ[target][0]}`}</Tx>
+    <Tx x={960} y={950} s={66} c={K.navy} wt={900}>{v === 0 ? "WORST TO LEAST" : `#${target + 1} · ${LZ[target][0]}`}</Tx>
   </Stage></F>);
 };
 
