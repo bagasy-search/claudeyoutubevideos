@@ -19,7 +19,7 @@ export const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
       case "src": return <S.Source head={s.head} big={s.big} lines={s.lines} foot={s.foot} bg={s.bg} strike={s.strike} dur={dur} seed={s.id} />;
       case "vs": return <E.Versus a={s.a} la={s.la} b={s.b} lb={s.lb} dur={dur} />;
       case "counter": return <S.Counter kicker={s.kicker} title={s.title} bg={s.bg} dur={dur} seed={s.id} />;
-      case "ask": return <S.Ask text={s.text} bg={s.bg} dur={dur} seed={s.id} />;
+      case "ask": return <S.Ask text={s.text} bg={s.bg} dur={dur} seed={s.id} qAt={s.qAt} />;
             case "steps": return <E.Steps stops={s.stops} dur={dur} />;
       case "recap": return <S.Recap cards={s.cards ?? CARDS} items={s.items} bg={s.bg} dur={dur} />;
       case "esc": { const K = (E as any)[s.name]; return K ? <K dur={dur} {...s.props} /> : null; }

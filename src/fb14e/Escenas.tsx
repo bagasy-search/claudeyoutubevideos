@@ -30,7 +30,7 @@ export const Board: React.FC<{ head: string; rows: { t: string; f: number; st: n
           {rows.map((r, i) => {
             const p = interpolate(f, [r.f, r.f + 14], [0, 1], { ...CL, easing: Easing.out(Easing.quad) });
             const fs = r.st === 2 ? Math.min(big ? 190 : 150, Math.floor(1330 / (r.t.length * 0.66))) : r.st === 1 ? Math.min(124, Math.floor(1330 / (r.t.length * 0.44))) : Math.min(96, Math.floor(1330 / (r.t.length * 0.42)));
-            return <div key={i} style={{ ...chalk, fontFamily: r.st === 2 ? SLAB : HAND, fontWeight: r.st === 2 ? 400 : 700, fontSize: fs, lineHeight: 1.08, color: r.st === 2 ? K.gold : K.chalk, clipPath: `inset(0 ${100 - p * 100}% 0 0)`, whiteSpace: "nowrap" }}>{r.t}</div>;
+            return <div key={i} style={{ ...chalk, fontFamily: r.st === 2 ? SLAB : HAND, fontWeight: r.st === 2 ? 400 : 700, fontSize: fs, lineHeight: 1.08, color: r.st === 2 ? K.gold : K.chalk, clipPath: `inset(-35% ${100 - p * 100}% -25% 0)`, whiteSpace: "nowrap" }}>{r.t}</div>;
           })}
         </div>
         {foot ? <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, letterSpacing: 2, color: "rgba(243,239,228,0.7)" }}>Source: {foot}</div> : null}
@@ -88,7 +88,7 @@ export const Mistakes: React.FC<{ items: { f: number; title: string; src: string
                 <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 42, letterSpacing: 9, color: K.red }}>ERROR</div>
                 <div style={{ fontFamily: SLAB, fontSize: 220, color: K.red, lineHeight: 0.9 }}>{it.n}</div>
               </div>
-              <div style={{ fontFamily: SLAB, fontSize: 110, color: K.chalk, textShadow: SH, lineHeight: 1, maxWidth: 1100, clipPath: `inset(0 ${100 - cl((lf - 14) / 14, 0, 1) * 100}% 0 0)` }}>{it.title}</div>
+              <div style={{ fontFamily: SLAB, fontSize: 110, color: K.chalk, textShadow: SH, lineHeight: 1, maxWidth: 1100, clipPath: `inset(-35% ${100 - cl((lf - 14) / 14, 0, 1) * 100}% -25% 0)` }}>{it.title}</div>
             </div>
           </AbsoluteFill>
         );
@@ -122,7 +122,7 @@ export const Sunday: React.FC<{ stops: { f: number; day: string; h: number; m: n
             <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(14,8,6,0.82) 0%, rgba(14,8,6,0.2) 36%, rgba(14,8,6,0) 55%)" }} />
             <div style={{ position: "absolute", left: 110, right: 520, bottom: 84 }}>
               {s.lines.map((l, j) => { const p = interpolate(lf, [l.f, l.f + 10], [0, 1], { ...CL, easing: Easing.out(Easing.quad) });
-                return <div key={j} style={{ ...chalk, fontSize: 96, lineHeight: 1.1, textShadow: SH, clipPath: `inset(0 ${100 - p * 100}% 0 0)`, whiteSpace: "nowrap" }}>{l.t}</div>; })}
+                return <div key={j} style={{ ...chalk, fontSize: 96, lineHeight: 1.1, textShadow: SH, clipPath: `inset(-35% ${100 - p * 100}% -25% 0)`, whiteSpace: "nowrap" }}>{l.t}</div>; })}
             </div>
           </AbsoluteFill>
         );
@@ -157,7 +157,7 @@ export const EscLoin: React.FC<{ src: string; fA: number; fB: number; fC: number
   const py = lerp(540, 475, tilt);
   const lab = (t: string, x: number, at: number) => (
     <div style={{ position: "absolute", left: x, top: 236, transform: "translateX(-50%)", opacity: interpolate(f, [at, at + 8, fC - 4, fC + 6], [0, 1, 1, 0], CL) }}>
-      <div style={{ fontFamily: SLAB, fontSize: 66, color: K.chalk, textShadow: SH, whiteSpace: "nowrap", clipPath: `inset(0 ${100 - cl((f - at) / 10, 0, 1) * 100}% 0 0)` }}>{t}</div>
+      <div style={{ fontFamily: SLAB, fontSize: 66, color: K.chalk, textShadow: SH, whiteSpace: "nowrap", clipPath: `inset(-35% ${100 - cl((f - at) / 10, 0, 1) * 100}% -25% 0)` }}>{t}</div>
     </div>
   );
   return (
@@ -218,7 +218,7 @@ export const Steps: React.FC<{ stops: { f: number; src: string; tag?: string; su
             ) : null}
             <div style={{ position: "absolute", left: 110, right: 110, bottom: 84 }}>
               {(s.lines || []).map((l, j) => { const p = interpolate(lf, [l.f, l.f + 10], [0, 1], { ...CL, easing: Easing.out(Easing.quad) });
-                return <div key={j} style={{ ...chalk, fontSize: 80, lineHeight: 1.12, textShadow: SH, clipPath: `inset(0 ${100 - p * 100}% 0 0)`, whiteSpace: "nowrap" }}>{l.t}</div>; })}
+                return <div key={j} style={{ ...chalk, fontSize: 80, lineHeight: 1.12, textShadow: SH, clipPath: `inset(-35% ${100 - p * 100}% -25% 0)`, whiteSpace: "nowrap" }}>{l.t}</div>; })}
             </div>
           </AbsoluteFill>
         );
