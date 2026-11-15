@@ -130,7 +130,8 @@ export const HabitScene: React.FC<{ n: number; title: string; src: string; dur: 
   const v = n - 1, dir = v % 4, right = v % 2 === 1, mode = Math.floor(v / 2) % 3;
   const o = useOut(dur, 10);
   const k = cl((f - 10) / (dur - 10), 0, 1);
-  const z = mode === 0 ? lerp(1.16, 1.04, Easing.out(Easing.cubic)(k)) : lerp(1.04, 1.14, k);
+  const z = lerp(1.02, 1.16, k);
+  const roll = spring({ frame: f - 24, fps: 30, config: { damping: 14, mass: 0.8 } });
   const px = mode === 2 ? lerp(right ? 3 : -3, right ? -3 : 3, k) : 0;
   const tin = spring({ frame: f - 14, fps: 30, config: { damping: 16, mass: 0.7 } });
   const tout = interpolate(f, [dur - 26, dur - 14], [1, 0], CL);
@@ -147,8 +148,8 @@ export const HabitScene: React.FC<{ n: number; title: string; src: string; dur: 
           <AbsoluteFill style={{ opacity: t, background: `linear-gradient(${right ? 270 : 90}deg, rgba(12,9,7,0.95) 0%, rgba(12,9,7,0.9) 50%, rgba(12,9,7,0.5) 66%, rgba(12,9,7,0) 82%)` }} />
           <div style={{ position: "absolute", top: 0, bottom: 0, width: 900, display: "flex", flexDirection: "column", justifyContent: "center", opacity: t, transform: `translateY(${(1 - tin) * 30}px)`, ...side }}>
             <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 72, letterSpacing: 5, color: PINK, textShadow: shadow }}>{LIST.short} {n} DE {LIST.n}</div>
-            <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 230, lineHeight: 1, fontVariantNumeric: "lining-nums tabular-nums", fontFeatureSettings: '"lnum" 1, "tnum" 1', color: C.white, textShadow: shadow }}>{String(n).padStart(2, "0")}</div>
-            <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: title.length > 22 ? 84 : 100, lineHeight: 1.08, color: C.white, textShadow: shadow, maxWidth: 880, textWrap: "balance" as any }}>{title}</div>
+            <div style={{ height: 230, overflow: "hidden" }}><div style={{ transform: `translateY(${-230 * roll}px)` }}>{[n - 1, n].map((x) => (<div key={x} style={{ height: 230, fontFamily: SANS, fontWeight: 900, fontSize: 230, lineHeight: 1, fontVariantNumeric: "lining-nums tabular-nums", fontFeatureSettings: '"lnum" 1, "tnum" 1', color: C.white, textShadow: shadow }}>{String(x).padStart(2, "0")}</div>))}</div></div>
+            <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: title.length > 22 ? 100 : 120, lineHeight: 1.05, color: C.white, textShadow: shadow, maxWidth: 880, textWrap: "balance" as any }}>{title}</div>
             <div style={{ height: 8, borderRadius: 4, background: C.ver, marginTop: 22, width: 300 * line }} />
           </div>
         </AbsoluteFill>
@@ -292,7 +293,7 @@ export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number; com?: 
   const txt = spring({ frame: f - 14, fps: 30, config: { damping: 16, mass: 0.7 } });
   const band = (
     <div style={{ position: "absolute", left: 0, right: 0, bottom: 70, display: "flex", justifyContent: "center", opacity: txt, transform: `translateY(${(1 - txt) * 24}px)` }}>
-      <div style={{ background: "rgba(12,9,7,0.88)", borderRadius: 18, padding: "18px 40px", maxWidth: 1600, fontFamily: SANS, fontWeight: 800, fontSize: text.length > 48 ? 54 : 64, lineHeight: 1.15, color: C.white, textAlign: "center", textWrap: "balance" as any }}>{text}</div>
+      <div style={{ background: "rgba(12,9,7,0.88)", borderRadius: 18, padding: "18px 40px", maxWidth: 1600, fontFamily: SANS, fontWeight: 800, fontSize: text.length > 48 ? 66 : 78, lineHeight: 1.12, color: C.white, textAlign: "center", textWrap: "balance" as any }}>{text}</div>
     </div>
   );
   if (com) {
@@ -321,7 +322,7 @@ export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number; com?: 
     <AbsoluteFill style={{ opacity: o }}>
       <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(12,9,7,0.75) 0%, rgba(12,9,7,0) 55%)" }} />
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 250, display: "flex", justifyContent: "center", alignItems: "center", gap: 40, transform: `translateY(${(1 - btn) * 160}px) scale(${press})`, opacity: btn }}>
-        <div style={{ background: on ? "#F1F1F1" : "#D42A20", color: on ? "#222" : C.white, fontFamily: SANS, fontWeight: 900, fontSize: 96, letterSpacing: 4, padding: "26px 72px", borderRadius: 22, boxShadow: "0 22px 50px rgba(0,0,0,0.6)" }}>{on ? "SUSCRITO ✓" : "SUSCRÍBETE"}</div>
+        <div style={{ background: on ? "#262626" : "#D42A20", color: C.white, border: on ? "4px solid #FFFFFF" : "4px solid transparent", fontFamily: SANS, fontWeight: 900, fontSize: 96, letterSpacing: 4, padding: "26px 72px", borderRadius: 22, boxShadow: "0 22px 50px rgba(0,0,0,0.6)" }}>{on ? "SUSCRITO ✓" : "SUSCRÍBETE"}</div>
         <svg width="150" height="150" viewBox="0 0 24 24" style={{ transform: `rotate(${bell}deg)`, transformOrigin: "50% 8%", filter: "drop-shadow(0 8px 14px rgba(0,0,0,0.6))" }}>
           <path fill={on ? "#FFD34D" : C.white} d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22zm7-6V11a7 7 0 0 0-5.5-6.84V3a1.5 1.5 0 0 0-3 0v1.16A7 7 0 0 0 5 11v5l-2 2v1h18v-1z" />
         </svg>
