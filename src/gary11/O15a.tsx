@@ -18,7 +18,9 @@ export const StepTape: React.FC<{ n: number; dur: number }> = ({ n, dur }) => {
     <div style={{ display: "flex", height: 34, width: 600, background: "linear-gradient(#d9dde0,#9aa1a6)", border: "3px solid #5f666c", borderRadius: 4, overflow: "hidden" }}>
       {STEPS.map((_, i) => <div key={i} style={{ flex: 1, borderRight: i < 11 ? "2px solid #4a5055" : undefined, background: i + 1 < n ? "#c97d2c" : i + 1 === n ? (f > 10 ? AMBER : "#c97d2c") : "transparent" }} />)}
     </div>
-    <div style={{ marginTop: 8, textAlign: "right", fontFamily: SANS, fontWeight: 900, fontSize: 38, color: "#fff", letterSpacing: 2, textShadow: "2px 2px 0 rgba(0,0,0,.65)" }}>STEP {n} / 12 · {STEPS[n - 1]}</div>
+    <div style={{ marginTop: 10, marginLeft: "auto", width: "fit-content", padding: "6px 22px", background: "rgba(20,18,16,.88)", borderRadius: 8, display: "flex", alignItems: "baseline", gap: 16, whiteSpace: "nowrap" }}>
+      <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: AMBER, lineHeight: 1 }}>{n}<span style={{ fontSize: 34, color: "#b9b1a2" }}> / 12</span></span>
+      <span style={{ fontFamily: SANS, fontWeight: 900, fontSize: 34, color: "#fff", letterSpacing: 2 }}>{STEPS[n - 1]}</span></div>
   </div>;
 };
 
@@ -29,6 +31,9 @@ export const IronSheet: React.FC<{ dur: number; src: string }> = ({ dur, src }) 
     <div style={{ position: "absolute", left: 1920 - t * 3840, top: 0, width: 1920, height: 1080, overflow: "hidden", boxShadow: "-18px 0 26px rgba(0,0,0,.5), 18px 0 26px rgba(0,0,0,.5)" }}>
       <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.15)" }} />
       <div style={{ position: "absolute", inset: 0, background: "rgba(40,20,10,.25)" }} />
+      <div style={{ position: "absolute", top: 0, bottom: 0, left: `${t * 140 - 20}%`, width: 260, background: "linear-gradient(90deg,transparent,rgba(255,240,220,.28),transparent)" }} />
+      <div style={{ position: "absolute", top: 0, bottom: 0, left: 0, width: 18, background: "linear-gradient(90deg,#e6ddd2,#6a5a4e)" }} />
+      <div style={{ position: "absolute", top: 0, bottom: 0, right: 0, width: 18, background: "linear-gradient(90deg,#6a5a4e,#e6ddd2)" }} />
       {[0, 1].map((i) => <div key={i} style={{ position: "absolute", left: i ? 1840 : 50, top: 0, bottom: 0, width: 30, display: "flex", flexDirection: "column", justifyContent: "space-around" }}>
         {Array.from({ length: 6 }).map((_, j) => <div key={j} style={{ width: 30, height: 30, borderRadius: "50%", background: "radial-gradient(#b0a8a0,#3a332e)" }} />)}</div>)}
     </div>
@@ -38,10 +43,10 @@ export const IronSheet: React.FC<{ dur: number; src: string }> = ({ dur, src }) 
 // presentación: chapa de acero estampada (abajo a la izquierda), que cae de canto y queda
 export const SteelTag: React.FC<{ text: string; sub: string; dur: number }> = ({ text, sub, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 12, 14); const r = interpolate(f, [0, 14], [70, 0], { ...CL, easing: Easing.out(Easing.back(1.6)) });
-  return <div style={{ position: "absolute", left: 90, bottom: 90, opacity: o, perspective: 1200 }}>
-    <div style={{ padding: "26px 46px", background: "linear-gradient(135deg,#e1e4e6,#9097a0)", border: "4px solid #626970", borderRadius: 12, transform: `rotateX(${r}deg) rotate(-2deg)`, transformOrigin: "50% 100%", boxShadow: "6px 10px 0 rgba(0,0,0,.35)" }}>
+  const hit = cl(1 - Math.abs(f - 12) / 4);
+  return <div style={{ position: "absolute", right: 90, top: 80, opacity: o, perspective: 1200, transform: `scale(${1 + 0.05 * hit})`, transformOrigin: "100% 0" }}>
+    <div style={{ padding: "26px 46px", position: "relative", background: "linear-gradient(135deg,#e1e4e6,#9097a0)", border: "4px solid #626970", borderRadius: 12, transform: `rotateX(${r}deg) rotate(-2deg)`, transformOrigin: "50% 100%", boxShadow: "6px 10px 0 rgba(0,0,0,.35)" }}>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: "#33393f", letterSpacing: 4, textShadow: "-2px -2px 0 rgba(0,0,0,.3), 2px 2px 0 rgba(255,255,255,.6)", whiteSpace: "nowrap" }}>{text}</div>
-      <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 30, color: "#3e454b", letterSpacing: 2, whiteSpace: "nowrap" }}>{sub}</div>
     </div>
   </div>;
 };
@@ -49,9 +54,9 @@ export const SteelTag: React.FC<{ text: string; sub: string; dur: number }> = ({
 // MEJORA 4 · pantalla partida: el avatar se corre y a la derecha una copia queda sujeta con dos imanes a la chapa del taller
 export const MagnetBoard: React.FC<{ src: string; seed: number; dur: number; label?: string }> = ({ src, seed, dur, label }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 14, 12); const kb = useKB(seed, dur);
-  return <><div style={{ position: "absolute", left: 1040, top: 0, right: 0, bottom: 0, opacity: cl(o * 2), background: "linear-gradient(90deg,#3a3633,#24211f)", boxShadow: "-16px 0 24px rgba(0,0,0,.45)" }} />
-    <div style={{ position: "absolute", left: 1100, top: 150, width: 760, padding: 14, paddingBottom: label ? 70 : 14, background: "#f7f3ea", transform: `translateY(${(1 - o) * 900}px) rotate(${seed % 2 ? 1.5 : -1.5}deg)`, boxShadow: "0 22px 28px rgba(0,0,0,.5)" }}>
-      <div style={{ width: 760, height: 620, overflow: "hidden" }}><Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} /></div>
+  return <><div style={{ position: "absolute", left: 1120, top: 0, right: 0, bottom: 0, opacity: cl(o * 2), background: "linear-gradient(90deg,#3a3633,#24211f)", boxShadow: "-16px 0 24px rgba(0,0,0,.45)" }} />
+    <div style={{ position: "absolute", left: 1160, top: 170, width: 700, padding: 14, paddingBottom: label ? 70 : 14, background: "#f7f3ea", transform: `translateY(${(1 - o) * 900}px) rotate(${seed % 2 ? 1.5 : -1.5}deg)`, boxShadow: "0 22px 28px rgba(0,0,0,.5)" }}>
+      <div style={{ width: 700, height: 580, overflow: "hidden" }}><Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} /></div>
       {label && <div style={{ position: "absolute", left: 14, right: 14, bottom: 12, height: 50, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 32, color: INK, whiteSpace: "nowrap" }}>{label}</div>}
       {[60, 640].map((x) => <div key={x} style={{ position: "absolute", left: x, top: -20, width: 64, height: 40, borderRadius: 8, background: "linear-gradient(#e0453a,#9c1d14)", boxShadow: "0 6px 0 rgba(0,0,0,.35)" }} />)}
     </div></>;
@@ -61,11 +66,14 @@ export const MagnetBoard: React.FC<{ src: string; seed: number; dur: number; lab
 export const Slate: React.FC<{ big: string; label: string; src: string; dur: number }> = ({ big, label, src, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 12, 12); const rev = cl((f - 8) / 16);
   return <div style={{ position: "absolute", left: 80, bottom: 70, opacity: o, transform: `translateY(${(1 - o) * 60}px) rotate(-1.5deg)` }}>
+    <div style={{ position: "absolute", left: "50%", top: -70, width: 4, height: 80, background: "#d8cdb8", transform: "rotate(18deg)", transformOrigin: "50% 100%" }} />
+    <div style={{ position: "absolute", left: "50%", top: -70, width: 4, height: 80, background: "#d8cdb8", transform: "rotate(-18deg)", transformOrigin: "50% 100%" }} />
+    <div style={{ position: "absolute", left: "calc(50% - 8px)", top: -80, width: 18, height: 18, borderRadius: "50%", background: "#8a8f94" }} />
     <div style={{ padding: "22px 34px", background: "linear-gradient(170deg,#2f322f,#1f221f)", border: "12px solid #7a5a36", borderRadius: 6, boxShadow: "6px 10px 0 rgba(0,0,0,.35)" }}>
       <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: big.length > 7 ? 64 : 80, color: AMBER, lineHeight: 1, whiteSpace: "nowrap", clipPath: `inset(-20% ${100 - rev * 100}% -20% 0)` }}>{big}</div>
       <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 32, color: CHALK, marginTop: 10, whiteSpace: "nowrap" }}>{label}</div>
-      <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 30, color: "#b9b1a2", marginTop: 6, whiteSpace: "nowrap" }}>SOURCE · {src}</div>
     </div>
+    <div style={{ position: "absolute", right: -30, bottom: -18, padding: "6px 14px", background: "#efe6d0", transform: "rotate(3deg)", fontFamily: SANS, fontWeight: 800, fontSize: 24, color: INK, whiteSpace: "nowrap", boxShadow: "0 4px 0 rgba(0,0,0,.3)" }}>SOURCE · {src}</div>
   </div>;
 };
 
