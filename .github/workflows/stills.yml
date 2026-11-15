@@ -18,6 +18,7 @@ on:
       # podia muestrear los 20 min completos, y una escena de 8s no se veia en la cuadricula.
       from:         { description: "frame inicial (opcional, para auditar una escena)", required: false, default: "" }
       to:           { description: "frame final (opcional)", required: false, default: "" }
+      lista:        { description: "frames exactos separados por espacio (opcional, gana sobre el resto)", required: false, default: "" }
 
 jobs:
   stills:
@@ -77,6 +78,7 @@ jobs:
             else { s.add(15); s.add(45); for(let i=0;i<n;i++) s.add(Math.min(total-2, Math.round(total*i/n))); }
             console.log([...s].filter(f=>f>=0&&f<total).sort((x,y)=>x-y).join(' '));
           " "$TOTAL" "$N" "$FROM" "$TO")
+          if [ -n "${{ inputs.lista }}" ]; then FRAMES="${{ inputs.lista }}"; fi
           echo "frames: $FRAMES"
           i=0
           for f in $FRAMES; do
