@@ -65,7 +65,7 @@ export const Carousel: React.FC<{ cards: HabCard[]; bg: string; subAt: number; d
         <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 104, color: C.white, textShadow: shadow, lineHeight: 1 }}><span style={{ color: PINK }}>{cards.length}</span> {LIST.head}</div>
         <div style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 600, fontSize: 52, color: C.paper, textShadow: shadow, marginTop: 10, opacity: interpolate(f, [subAt, subAt + 10], [0, 1], CL) }}>Que ningún ladrón revisa.</div>
       </div>
-      <AbsoluteFill style={{ perspective: 2200, perspectiveOrigin: "50% 40%" }}>
+      <AbsoluteFill style={{ perspective: 2200, perspectiveOrigin: "50% 40%", transform: `scale(${interpolate(f, [dur * 0.62, dur], [1, 1.09], CL)}) rotate(${interpolate(f, [dur * 0.62, dur], [0, -1.6], CL)}deg)` }}>
         {cards.map((c, i) => {
           const appear = spring({ frame: f - 4 - i * 5, fps: 30, config: { damping: 16, mass: 0.6 } });
           const N = cards.length; const th = ((((i * (360 / N) + rot) % 360) + 540) % 360) - 180;
