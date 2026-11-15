@@ -54,7 +54,7 @@ export const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "dial": return <S.Dial deg={o.deg} label={o.label} dur={d} />;
     case "windup": return <S.WindUp min={o.min} label={o.label} dur={d} />;
     case "scale": return <S.Scale to={o.to} suffix={o.suffix} label={o.label} dur={d} />;
-    case "rail": return <S.Rail n={o.n} total={o.total} word={o.word} title={o.title} dur={d} />;
+    case "rail": return <S.Rail n={o.n} total={o.total} word={o.word} title={o.title} dur={d} asc />;
     case "qr": return <S.QrCard qr={o.qr} cover={o.cover} dur={d} />;
     default: return null;
   }
@@ -80,12 +80,9 @@ export const MainFb14e: React.FC = () => (
       );
     })}
     {/* capa 2b: escenas sobre las fotos reales (ideas.md) */}
-    {[
-      { a: 13.74, b: 20.28, el: <FT.Capilar /> },
-      { a: 1152.23, b: 1168.53, el: <FT.Poros parte="a" /> },
-      { a: 1172.03, b: 1177.09, el: <FT.Poros parte="b" /> },
-      { a: 2050.95, b: 2064.28, el: <FT.Empanado /> },
-    ].map((x, i) => (
+    {([
+      // evaluador v2: escenas FT 4-5/10 → se quitan (queda la foto real limpia debajo)
+    ] as { a: number; b: number; el: React.ReactNode }[]).map((x, i) => (
       <Sequence key={"ft" + i} from={Math.round(x.a * 30)} durationInFrames={Math.round(x.b * 30) - Math.round(x.a * 30)} premountFor={30}>
         {x.el}
       </Sequence>

@@ -212,7 +212,7 @@ export const Steps: React.FC<{ stops: { f: number; src: string; tag?: string; su
               <div style={{ position: "absolute", top: 70, ...(right ? { right: 90 } : { left: 90 }), transformOrigin: right ? "100% 0" : "0 0", transform: `rotate(${lerp(right ? 18 : -18, right ? 2.5 : -2.5, tg)}deg) scale(${lerp(1.6, 1, tg)})`, opacity: cl(tg * 1.8, 0, 1) }}>
                 <div style={{ ...kraftBg(i + 2), padding: "16px 44px 20px", boxShadow: SH, textAlign: "center" }}>
                   <div style={{ fontFamily: SLAB, fontSize: s.tag.length > 16 ? 60 : 84, color: K.ink, lineHeight: 1.02, whiteSpace: "nowrap" }}>{s.tag}</div>
-                  {s.sub ? <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 26, letterSpacing: 5, color: K.redD, marginTop: 4, whiteSpace: "nowrap" }}>{s.sub}</div> : null}
+                  {s.sub ? <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 36, letterSpacing: 4, color: K.redD, marginTop: 6, whiteSpace: "nowrap" }}>{s.sub}</div> : null}
                 </div>
               </div>
             ) : null}

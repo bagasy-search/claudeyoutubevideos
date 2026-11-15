@@ -227,7 +227,7 @@ export const TechScene: React.FC<{ n: number; label: string; title: string; src:
   const st = spring({ frame: f - 8 * q, fps: 30, config: { damping: 12, mass: 0.7 } });
   const words = title.replace(/\s+[–-]\s+/g, ": ").split(" ");
   const len = title.length;
-  const fs = Math.round(Math.min(96, 2300 / Math.max(10, len)));   // una sola línea, siempre
+  const fs = Math.round(Math.min(112, 2700 / Math.max(10, len)));   // una sola línea, siempre
   const side: React.CSSProperties = right ? { right: 100, alignItems: "flex-end", textAlign: "right" } : { left: 100, alignItems: "flex-start" };
   const fin = cl(f / 8, 0, 1);
   return (
@@ -388,7 +388,7 @@ export const Counter: React.FC<{ kicker: string; title: string; bg: string; dur:
             <div style={{ position: "absolute", left: 0, top: 156, width: 240, height: 26, borderRadius: 13, background: "linear-gradient(180deg,#3A2A1C,#1C130C)" }} />
           </div>
           <div style={{ ...kraftBg(seed), padding: "40px 80px", clipPath: torn(seed, 24, 2.4), transform: `rotate(${lerp(-5, -1.2, p)}deg) scale(${0.85 + 0.15 * p})`, opacity: p, textAlign: "center" }}>
-            <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 28, letterSpacing: 8, color: K.redD }}>{kicker}</div>
+            <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 42, letterSpacing: 6, color: K.redD }}>{kicker}</div>
             <div style={{ fontFamily: SLAB, fontSize: 104, color: K.ink, marginTop: 6, lineHeight: 1 }}>{title}</div>
           </div>
         </div>
@@ -405,8 +405,8 @@ export const Ask: React.FC<{ text: string; bg: string; dur: number; seed: number
       <AbsoluteFill style={{ overflow: "hidden" }}><Img src={staticFile(bg)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${interpolate(f, [0, dur], [1.05, 1.15])})`, filter: "brightness(0.62)" }} /></AbsoluteFill>
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "flex-end", paddingBottom: 70, flexDirection: "column", gap: 36 }}>
         <div style={{ ...kraftBg(seed), padding: "44px 90px 50px", clipPath: torn(seed + 5, 30, 1.8), maxWidth: 1500, textAlign: "center", transform: `translateY(${(1 - p) * 80}px) rotate(-1deg)`, opacity: p }}>
-          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 26, letterSpacing: 7, color: K.redD }}>CUÉNTAME EN LOS COMENTARIOS</div>
-          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 92, color: K.ink, lineHeight: 1.05, marginTop: 8 }}>{text}</div>
+          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 38, letterSpacing: 6, color: K.redD }}>CUÉNTAME EN LOS COMENTARIOS</div>
+          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 110, color: K.ink, lineHeight: 1.05, marginTop: 8 }}>{text}</div>
         </div>
         <div style={{ transform: `scale(${b * press})`, background: K.red, color: K.paper, fontFamily: SANS, fontWeight: 700, fontSize: 44, letterSpacing: 3, padding: "20px 60px", borderRadius: 50, boxShadow: SH }}>SUSCRÍBETE</div>
       </AbsoluteFill>
@@ -483,13 +483,13 @@ export const Source: React.FC<{ head: string; big: string; lines: string[]; foot
 export const QrCard: React.FC<{ qr: string; cover: string; dur: number }> = ({ qr, cover, dur }) => {
   const f = useCurrentFrame(); const p = useSp(0, 15); const bob = Math.sin(f / 22) * 5;
   return (
-    <div style={{ position: "absolute", right: 64, top: 150 + bob, width: 600, borderRadius: 18, background: K.paper, boxShadow: "0 30px 70px rgba(0,0,0,0.55)", padding: 28, opacity: p * fadeOut(f, dur, 10), transform: `translateX(${(1 - p) * 700}px) rotate(${(1 - p) * 6}deg)`, display: "flex", flexDirection: "column", alignItems: "center" }}>
+    <div style={{ position: "absolute", right: 70, top: 130 + bob, width: 780, borderRadius: 18, background: K.paper, boxShadow: "0 30px 70px rgba(0,0,0,0.55)", padding: 28, opacity: p * fadeOut(f, dur, 10), transform: `scale(${0.85 + 0.15 * p})`, transformOrigin: "100% 0", display: "flex", flexDirection: "column", alignItems: "center" }}>
       <div style={{ display: "flex", gap: 22, alignItems: "center" }}>
-        <Img src={staticFile(cover)} style={{ height: 290, borderRadius: 6, boxShadow: "0 10px 22px rgba(0,0,0,0.35)" }} />
-        <Img src={staticFile(qr)} style={{ width: 290, height: 290 }} />
+        <Img src={staticFile(cover)} style={{ height: 330, width: 330, objectFit: "cover", borderRadius: 6, boxShadow: "0 10px 22px rgba(0,0,0,0.35)" }} />
+        <Img src={staticFile(qr)} style={{ width: 330, height: 330 }} />
       </div>
-      <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 28, letterSpacing: 3, color: K.redD, marginTop: 18 }}>ESCANEA CON TU TELÉFONO</div>
-      <div style={{ fontFamily: SERIF, fontSize: 48, color: K.ink, marginTop: 4 }}>constructorlibre.com</div>
+      <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 36, letterSpacing: 3, color: K.redD, marginTop: 18 }}>ESCANEA CON TU TELÉFONO</div>
+      <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 60, color: K.ink, marginTop: 4 }}>constructorlibre.com</div>
     </div>
   );
 };
