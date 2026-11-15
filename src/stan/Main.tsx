@@ -5,7 +5,9 @@ import { AbsoluteFill, Sequence, interpolate, useCurrentFrame, Easing } from "re
 import { SHOTS, AVATAR, OVERLAYS, TOTAL, MIX, MANO, PLATE } from "./cues.gen";
 import * as K from "./Kit";
 import * as E from "./Escenas";
+import * as E2 from "./EscAlb";
 import * as S from "./Carne";
+import * as A from "./Alb";
 
 export const TOTAL_FRAMES_STAN = TOTAL;
 const TR = 8;
@@ -51,7 +53,25 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
     case "pasosS": return <S.PasosS {...s.p} bg={s.bg} dur={dur} />;
     case "razasS": return <S.RazasS {...s.p} bg={s.bg} dur={dur} />;
     case "nextS": return <S.NextS {...s.p} dur={dur} />;
-    case "escena": { const C = (E as any)[s.p.name]; return C ? <C {...s.p} dur={dur} /> : null; }
+    case "pasoA": return <A.PasoA {...s.p} bg={s.bg} dur={dur} />;
+    case "listaA": return <A.ListaA {...s.p} bg={s.bg} dur={dur} />;
+    case "dosA": return <A.DosA {...s.p} bg={s.bg} dur={dur} />;
+    case "numA": return <A.NumA {...s.p} bg={s.bg} dur={dur} />;
+    case "cadenaA": return <A.CadenaA {...s.p} bg={s.bg} dur={dur} />;
+    case "palabraA": return <A.PalabraA {...s.p} bg={s.bg} dur={dur} />;
+    case "gotaA": return <A.GotaA {...s.p} bg={s.bg} dur={dur} />;
+    case "metroA": return <A.MetroA {...s.p} bg={s.bg} dur={dur} />;
+    case "ticketA": return <A.TicketA {...s.p} bg={s.bg} dur={dur} />;
+    case "precioA": return <A.PrecioA {...s.p} bg={s.bg} dur={dur} />;
+    case "peligroA": return <A.PeligroA {...s.p} bg={s.bg} dur={dur} />;
+    case "relojA": return <A.RelojA {...s.p} bg={s.bg} dur={dur} />;
+    case "frascosA": return <A.FrascosA {...s.p} bg={s.bg} dur={dur} />;
+    case "superficieA": return <A.SuperficieA {...s.p} bg={s.bg} dur={dur} />;
+    case "corteA": return <A.CorteA {...s.p} bg={s.bg} dur={dur} />;
+    case "manualA": return <A.ManualA {...s.p} bg={s.bg} dur={dur} />;
+    case "ctaA": return <A.CtaA {...s.p} bg={s.bg} dur={dur} />;
+    case "proximoA": return <A.ProximoA {...s.p} bg={s.bg} dur={dur} />;
+    case "escena": { const C = (E2 as any)[s.p.name] ?? (E as any)[s.p.name]; return C ? <C {...s.p} dur={dur} /> : null; }
     default: return null;
   }
 };
@@ -76,7 +96,7 @@ const Enter: React.FC<{ trans: string; children: React.ReactNode; seed: number }
 const Overlay: React.FC<{ o: any }> = ({ o }) => {
   switch (o.type) {
     case "price": return <K.Price text={o.text} dur={o.dur} />;
-    case "progress": return <S.ProgS n={o.n} N={o.N} title={o.title} dur={o.dur} unit={o.unit} />;
+    case "progress": return <A.ProgA n={o.n} N={o.N} title={o.title} dur={o.dur} unit={o.unit} />;
     case "pregunta": return <K.Pregunta text={o.text} dur={o.dur} />;
     default: return null;
   }
