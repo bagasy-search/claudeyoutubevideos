@@ -17,10 +17,10 @@ export const FuseStrip: React.FC<{ n: number; dur: number }> = ({ n, dur }) => {
   return <div style={{ position: "absolute", right: 56, top: 48, opacity: o, transform: `translateY(${(1 - o) * -30}px)` }}>
     <div style={{ display: "flex", gap: 8, background: "rgba(24,26,30,.86)", padding: "14px 16px", borderRadius: 8 }}>
       {ROUNDS.map((_, i) => { const on = i + 1 < n || (i + 1 === n && f > 10); const cur = i + 1 === n;
-        return <div key={i} style={{ width: 22, height: 54, borderRadius: 11, background: "linear-gradient(90deg,#b9b9b9,#eee,#9a9a9a)", position: "relative", transform: cur ? `scale(${1 + 0.15 * cl((f - 10) / 6)})` : "none" }}>
-          <div style={{ position: "absolute", left: 5, right: 5, top: 14, bottom: 14, borderRadius: 3, background: on ? (cur ? YEL : "#e98f2a") : "#3a3a3a" }} /></div>; })}
+        return <div key={i} style={{ width: 28, height: 66, borderRadius: 14, background: "linear-gradient(90deg,#b9b9b9,#eee,#9a9a9a)", position: "relative", transform: cur ? `scale(${1 + 0.15 * cl((f - 10) / 6)})` : "none" }}>
+          <div style={{ position: "absolute", left: 6, right: 6, top: 17, bottom: 17, borderRadius: 3, background: on ? (cur ? YEL : "#e98f2a") : "#3a3a3a" }} /></div>; })}
     </div>
-    <div style={{ marginTop: 8, textAlign: "right", fontFamily: SANS, fontWeight: 800, fontSize: 32, color: "#fff", letterSpacing: 2, textShadow: "2px 2px 0 rgba(0,0,0,.6)" }}>ROUND {n} / 10 · {ROUNDS[n - 1]}</div>
+    <div style={{ marginTop: 8, textAlign: "right", fontFamily: SANS, fontWeight: 800, fontSize: 38, color: "#fff", letterSpacing: 2, textShadow: "2px 2px 0 rgba(0,0,0,.6)" }}>ROUND {n} / 10 · {ROUNDS[n - 1]}</div>
   </div>;
 };
 
@@ -32,8 +32,6 @@ export const Conduit: React.FC<{ dur: number; src?: string }> = ({ dur, src = "g
     <div style={{ position: "absolute", left: x, top: 0, width: 1920, height: 1080, overflow: "hidden", boxShadow: "-18px 0 26px rgba(0,0,0,.5), 18px 0 26px rgba(0,0,0,.5)" }}>
       <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `translateX(${(t - 0.5) * 120}px) scale(1.08)` }} />
       <div style={{ position: "absolute", inset: 0, background: "rgba(12,14,18,.25)" }} />
-      <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 14, background: YEL }} />
-      <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 14, background: YEL }} />
     </div>
   </AbsoluteFill>;
 };
@@ -44,7 +42,7 @@ export const Patch: React.FC<{ text: string; sub: string; dur: number }> = ({ te
   return <div style={{ position: "absolute", left: 90, bottom: 90, opacity: o, transform: `scale(${s}) rotate(-3deg)`, transformOrigin: "0 100%" }}>
     <div style={{ width: 680, height: 240, borderRadius: "50%", background: "#1f3a5f", border: "10px solid #e9dcc4", outline: "4px dashed #e9dcc4", outlineOffset: -24, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", boxShadow: "6px 10px 0 rgba(0,0,0,.35)" }}>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: "#f6efe0", letterSpacing: 6 }}>{text}</div>
-      <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 26, color: "#e9dcc4", letterSpacing: 1, whiteSpace: "nowrap" }}>{sub}</div>
+      <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 30, color: "#e9dcc4", letterSpacing: 1, whiteSpace: "nowrap" }}>{sub}</div>
     </div>
   </div>;
 };
@@ -53,7 +51,7 @@ export const Patch: React.FC<{ text: string; sub: string; dur: number }> = ({ te
 export const PanelDoor: React.FC<{ src: string; seed: number; dur: number; label?: string }> = ({ src, seed, dur, label }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 14, 12); const kb = useKB(seed, dur);
   return <><div style={{ position: "absolute", left: 1040, top: 0, right: 0, bottom: 0, opacity: cl(o * 2), overflow: "hidden", boxShadow: "-16px 0 24px rgba(0,0,0,.45)" }}>
-    <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(0deg, rgba(255,255,255,.03) 0 1px, rgba(0,0,0,.05) 1px 3px), linear-gradient(90deg,#2e343a,#1c2025)" }} /></div>
+    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg,#2e343a,#1c2025)" }} /></div>
   <div style={{ position: "absolute", left: 1100, top: 110, width: 760, height: 860, perspective: 1800 }}>
     <div style={{ position: "absolute", inset: 0, background: "#9aa1a8", borderRadius: 10, border: "16px solid #6f767c", overflow: "hidden", opacity: cl(o * 2) }}>
       <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
@@ -84,12 +82,12 @@ export const DataTag: React.FC<{ big: string; label: string; src: string; dur: n
   const f = useCurrentFrame(); const o = inout(f, dur, 12, 12); const sw = Math.sin(f / 18) * 1.2 * o;
   return <div style={{ position: "absolute", left: 80, top: 0, opacity: cl(o * 1.5) }}>
     <div style={{ marginLeft: 120, width: 6, height: 50 * o, background: "#2a2a2a" }} />
-    <div style={{ display: "flex", alignItems: "center", gap: 26, width: 800, padding: "18px 26px", boxSizing: "border-box", background: CREAM, borderRadius: 12, border: "4px solid #c9b88f", transform: `rotate(${sw}deg)`, transformOrigin: "120px 0", boxShadow: "6px 10px 0 rgba(0,0,0,.35)", position: "relative" }}>
+    <div style={{ display: "inline-flex", alignItems: "center", gap: 26, padding: "18px 26px", boxSizing: "border-box", background: CREAM, borderRadius: 12, border: "4px solid #c9b88f", transform: `rotate(${sw}deg)`, transformOrigin: "120px 0", boxShadow: "6px 10px 0 rgba(0,0,0,.35)", position: "relative" }}>
       <div style={{ position: "absolute", left: 108, top: -8, width: 26, height: 26, borderRadius: "50%", background: "#2a2a2a" }} />
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: big.length > 6 ? 58 : 70, color: INK, lineHeight: 1, whiteSpace: "nowrap", marginTop: 12 }}>{big}</div>
       <div style={{ borderLeft: "3px dashed #c9b88f", paddingLeft: 22, marginTop: 12 }}>
-        <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 28, color: INK, lineHeight: 1.15 }}>{label}</div>
-        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 26, color: "#6a5a40", marginTop: 8 }}>SOURCE · {src}</div></div>
+        <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 32, color: INK, lineHeight: 1.15, whiteSpace: "nowrap" }}>{label}</div>
+        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 30, color: "#6a5a40", marginTop: 8, whiteSpace: "nowrap" }}>SOURCE · {src}</div></div>
     </div>
   </div>;
 };

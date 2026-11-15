@@ -55,12 +55,13 @@ const Paper: React.FC<{ x: number; y: number; w: number; h: number | "auto"; rot
 // letra a mano que se escribe (revela por recorte)
 const Hand: React.FC<{ text: string; at: number; f: number; len?: number; size?: number; col?: string; style?: CSS }> = ({ text, at, f, len = 16, size = 58, col = INK, style }) => {
   const p = cl((f - at) / len); if (p <= 0) return null;
-  return <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: size, color: col, whiteSpace: "nowrap", clipPath: `inset(-30% ${100 - p * 100}% -30% 0)`, ...style }}>{text}</div>;
+  // r4: revelado terminado = sin recorte (el último trazo de la letra a mano sobresale de la caja y se cortaba)
+  return <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: size, color: col, whiteSpace: "nowrap", paddingRight: 12, clipPath: p >= 1 ? "none" : `inset(-30% ${100 - p * 100}% -30% -5%)`, ...style }}>{text}</div>;
 };
 const Lbl: React.FC<{ children: React.ReactNode; size?: number; col?: string; style?: CSS }> = ({ children, size = 34, col = INK, style }) =>
   <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: size, color: col, letterSpacing: 2, ...style }}>{children}</div>;
 const Src: React.FC<{ text: string; f: number; at: number }> = ({ text, f, at }) =>
-  <div style={{ position: "absolute", right: 70, bottom: 46, fontFamily: SANS, fontWeight: 600, fontSize: 26, color: "#fff", background: "rgba(20,24,30,.78)", padding: "8px 18px", borderRadius: 4, opacity: k(f, at, 10) }}>SOURCE · {text}</div>;
+  <div style={{ position: "absolute", right: 70, bottom: 46, fontFamily: SANS, fontWeight: 700, fontSize: 32, color: "#fff", background: "rgba(20,24,30,.78)", padding: "8px 18px", borderRadius: 4, opacity: k(f, at, 10) }}>SOURCE · {text}</div>;
 const Screw: React.FC<{ x: number; y: number; r?: number; rot?: number }> = ({ x, y, r = 14, rot = 30 }) =>
   <div style={{ position: "absolute", left: x - r, top: y - r, width: r * 2, height: r * 2, borderRadius: "50%", background: "radial-gradient(circle at 35% 35%, #f4f4f4, #8a8f94 60%, #50555a)", boxShadow: "1px 2px 0 rgba(0,0,0,.35)" }}>
     <div style={{ position: "absolute", left: "15%", right: "15%", top: "50%", height: Math.max(2, r * 0.22), marginTop: -Math.max(1, r * 0.11), background: "#4a4f54", transform: `rotate(${rot}deg)` }} /></div>;
@@ -91,7 +92,6 @@ const Round: React.FC<P> = ({ a }) => {
         </div>;
       })}
       <div style={{ position: "absolute", right: 40, bottom: 18, fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: YEL, opacity: k(f, 18) }}>{n} / 10</div>
-      <div style={{ position: "absolute", left: 40, bottom: 30, fontFamily: SANS, fontWeight: 700, fontSize: 26, letterSpacing: 4, color: "#9c907c" }}>STATION vs GENERATOR · KITCHEN TABLE BOUT</div>
     </div>
     <div style={{ position: "absolute", left: 0, right: 0, top: 820, textAlign: "center", opacity: k(f, 10), transform: `translateY(${(1 - k(f, 10)) * 30}px)` }}>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 96, color: CREAM, letterSpacing: 6 }}>ROUND {n} <span style={{ color: YEL }}>· {ROUNDS[n - 1]}</span></div>
@@ -200,9 +200,7 @@ const Exhaust: React.FC<P> = ({ m }) => {
   const f = useCurrentFrame(); const co = M(m, 0, 40);
   return <Plate src="y2660" d={0.6}>
     <Print src="y1090" x={80} y={300} w={640} h={460} rot={-2} e={k(f, 0)} cap="FUEL GOES IN THE TANK CAP" capCol={GN} />
-    <Print src="y0410" x={860} y={250} w={900} h={560} rot={1.5} e={k(f, 4)} cap="RUNNING · EXHAUST OUT THE BACK" />
-    {Array.from({ length: 9 }).map((_, i) => { const t = (f - co - i * 12) / 60; if (t < 0 || t > 1) return null; const y = 250 - t * 250, x = 1040 + (i % 3) * 230 + t * 120 + Math.sin(t * 4 + i) * 20, z = 74 + t * 50;
-      return <div key={i} style={{ position: "absolute", left: x - z / 2, top: y - z / 2, width: z, height: z, borderRadius: "50%", background: "rgba(70,74,80,.9)", border: "3px solid rgba(255,255,255,.25)", opacity: cl(1.2 - t), display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 34, color: "#fff" }}>CO</div>; })}
+    <Print src="y0410" x={860} y={250} w={900} h={560} rot={1.5} e={k(f, 4)} cap="RUNNING · EXHAUST OUT THE SIDE" />
     <Lbl size={54} col={CREAM} style={{ position: "absolute", left: 80, top: 930, opacity: k(f, co), background: "rgba(24,26,30,.85)", padding: "8px 26px", borderRadius: 6, whiteSpace: "nowrap" }}>CARBON MONOXIDE · <span style={{ color: "#ff8a6a" }}>NO SMELL, NO COLOR</span></Lbl>
   </Plate>;
 };
@@ -222,16 +220,13 @@ const Stencil: React.FC<P> = ({ m }) => {
 };
 // ================= twenty (045): la cinta métrica sale de la pared de la casa hasta el generador, 20 FT
 const Tape20: React.FC<P> = ({ m }) => {
-  const f = useCurrentFrame(); const t = io((f - 10) / 50), ft = Math.round(t * 20), X0 = 540, L = 840;
+  // r4: sin cinta dibujada; las dos copias reales y el contador de pies entre ellas
+  const f = useCurrentFrame(); const t = io((f - 10) / 50), ft = Math.round(t * 20);
   return <Plate src="y0430" d={0.58}>
     <Print src="g1810" x={60} y={250} w={420} h={480} rot={-2} cap="THE HOUSE" />
     <Print src="y0080" x={1390} y={250} w={440} h={480} rot={2} e={k(f, 50)} cap="GENERATOR" capCol={GN} />
-    <div style={{ position: "absolute", left: 600, top: 120, width: 700, textAlign: "center", fontFamily: SERIF, fontWeight: 900, fontSize: 210, color: CREAM, lineHeight: 1 }}>{ft} FT</div>
-    <div style={{ position: "absolute", left: X0, top: 560, width: L * t, height: 74, background: YEL, borderTop: "4px solid #b8901a", borderBottom: "4px solid #b8901a", overflow: "hidden", boxShadow: "0 8px 0 rgba(0,0,0,.3)" }}>
-      {Array.from({ length: 21 }).map((_, i) => <div key={i} style={{ position: "absolute", left: i * (L / 20) - 2, top: 0, width: 4, height: i % 5 ? 26 : 46, background: INK }} />)}
-    </div>
-    {[0, 5, 10, 15, 20].map((i) => <div key={i} style={{ position: "absolute", left: X0 + i * (L / 20) - (i === 20 ? 74 : 30), width: 60, top: 672, textAlign: "center", fontFamily: SANS, fontWeight: 800, fontSize: 34, color: CREAM, opacity: i / 20 <= t + 0.001 ? 1 : 0 }}>{i}</div>)}
-    <div style={{ position: "absolute", left: X0 + L * t - 44, top: 540, width: 88, height: 116, background: "linear-gradient(#444,#1a1a1a)", borderRadius: 14, boxShadow: "0 6px 0 rgba(0,0,0,.35)" }}><div style={{ margin: "34px 18px", height: 40, borderRadius: 20, background: YEL }} /></div>
+    <div style={{ position: "absolute", left: 540, top: 330, width: 820, textAlign: "center", fontFamily: SERIF, fontWeight: 900, fontSize: 220, color: CREAM, lineHeight: 1, whiteSpace: "nowrap" }}>{ft} FT</div>
+    <Lbl size={44} col={YEL} style={{ position: "absolute", left: 540, top: 590, width: 820, textAlign: "center", whiteSpace: "nowrap" }}>AT LEAST 20 FEET OUT</Lbl>
     <Lbl size={40} col={CREAM} style={{ position: "absolute", left: 60, top: 900, opacity: k(f, M(m, 0, 120)), background: "rgba(29,36,48,.88)", padding: "10px 24px", borderRadius: 6, whiteSpace: "nowrap" }}>EXHAUST POINTED AWAY FROM DOORS, WINDOWS & VENTS</Lbl>
   </Plate>;
 };
@@ -241,45 +236,32 @@ const Hose: React.FC<P> = ({ a, m }) => {
   const cfg: Record<string, [number, number, string, string]> = { // ancho manguera, nivel tanque, rótulo izq, rótulo der
     watts: [64, 0.7, "WATTS = HOW HARD IT PUSHES", "WATT-HOURS = HOW LONG"], wide: [104, 0.7, "WATTS = HOSE WIDTH", "WATT-HOURS = WATER IN THE TANK"],
     gen: [40, 1, "GENERATOR · SMALL HOSE", "HUGE TANK (YOUR GAS CANS)"], station: [104, 0.32, "POWER STATION · WIDE HOSE", "SMALL TANK · ~1,000 Wh"], half: [104, 0.32, "1,800 W FLAT OUT", "EMPTY IN ~30 MIN"] };
-  const [w, lvl0, L1, L2] = cfg[v]; const drain = v === "half" ? interpolate(f, [8, 80], [lvl0, 0.02], CL) : lvl0;
-  const hy = 770, he = 700 + 920 * k(f, 2, 14), flowing = drain > 0.03;
-  return <Concrete src="y0740" d={0.7}>
-    <div style={{ position: "absolute", left: 180, top: 180, width: 520, height: 660 }}>
-      <div style={{ position: "absolute", left: 18, right: 18, top: 0, bottom: 18, background: "linear-gradient(90deg, rgba(210,228,240,.42), rgba(240,248,252,.6) 30%, rgba(200,220,235,.38))", overflow: "hidden" }}>
-        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: `${drain * 100}%`, background: "linear-gradient(#5aa3d8,#2f74ad)", borderTop: "6px solid #8cc6ee" }} />
-        <div style={{ position: "absolute", left: 40, top: 30, bottom: 30, width: 16, background: "rgba(255,255,255,.35)", borderRadius: 8 }} />
-      </div>
-      {[0, 1].map((i) => <div key={i} style={{ position: "absolute", [i ? "right" : "left"]: 0, top: -10, bottom: 0, width: 26, background: `${BRUSH}, ${CHROME}`, borderRadius: 4 } as CSS}>{[60, 300, 560].map((y) => <Screw key={y} x={13} y={y} r={8} />)}</div>)}
-      <div style={{ position: "absolute", left: -10, right: -10, top: -18, height: 26, background: `${BRUSH}, linear-gradient(#e9edf0,#8d959b)`, borderRadius: 6 }} />
-      <div style={{ position: "absolute", left: -14, right: -14, bottom: -6, height: 30, background: `${BRUSH}, linear-gradient(#a9b1b7,#5d666e)`, borderRadius: 6 }} />
+  // r4: sin tanque ni manguera dibujados; la foto real de la manguera y las dos ideas en texto (y en «half» el % que cae)
+  const [, lvl0, L1, L2] = cfg[v]; const pct = Math.round((v === "half" ? interpolate(f, [8, 80], [1, 0], CL) : lvl0) * 100);
+  return <Plate src="y0740" d={0.5}>
+    <div style={{ position: "absolute", left: 110, bottom: 110, background: "rgba(24,26,30,.88)", padding: "30px 44px", borderRadius: 8, opacity: k(f, M(m, 0, 4)) }}>
+      <Lbl size={60} col={CREAM} style={{ whiteSpace: "nowrap" }}>{L1}</Lbl>
+      <Lbl size={60} col="#8cc6ee" style={{ marginTop: 18, opacity: k(f, M(m, 1, 30)), whiteSpace: "nowrap" }}>{L2}</Lbl>
     </div>
-    <div style={{ position: "absolute", left: 690, top: hy - w / 2 - 14, width: 50, height: w + 28, background: "linear-gradient(#e9c46a,#b8862b)", borderRadius: 8 }} />
-    <div style={{ position: "absolute", left: 736, top: hy - w / 2, width: Math.max(0, he - 736), height: w, background: "repeating-linear-gradient(90deg, rgba(0,0,0,.18) 0 4px, transparent 4px 16px), linear-gradient(#3f6b43,#1d3b20 55%,#2f5a32)", borderRadius: w / 2 }} />
-    <div style={{ position: "absolute", left: he - 10, top: hy - w * 0.42, width: 90, height: w * 0.84, background: "linear-gradient(#f0cf78,#b8862b 60%,#8d6418)", borderRadius: "8px 30px 30px 8px" }} />
-    {flowing && Array.from({ length: Math.round(w / 8) }).map((_, i) => { const p = ((f * (v === "gen" ? 2 : 5) + i * 37) % 120) / 120; const x = he + 80 + p * 260, y = hy + (i % 5 - 2) * w * 0.12 + p * p * 160;
-      return <div key={i} style={{ position: "absolute", left: x, top: y, width: 18, height: 12, borderRadius: 8, background: "#5aa3d8", opacity: 1 - p }} />; })}
-    <div style={{ position: "absolute", left: 790, top: 250, background: "rgba(24,26,30,.86)", padding: "22px 34px", borderRadius: 8, opacity: k(f, M(m, 0, 4)) }}>
-      <Lbl size={46} col={CREAM}>{L1}</Lbl>
-      <Lbl size={46} col="#8cc6ee" style={{ marginTop: 14, opacity: k(f, M(m, 1, 30)) }}>{L2}</Lbl>
-    </div>
-  </Concrete>;
+    {v === "half" && <div style={{ position: "absolute", right: 120, top: 110, fontFamily: SERIF, fontWeight: 900, fontSize: 220, lineHeight: 1, color: pct < 20 ? "#ff8a6a" : CREAM }}>{pct}%</div>}
+  </Plate>;
 };
 
 // ================= sticker (087): la chapa de datos de la heladera (aluminio remachado), el 6 A resaltado con marcador
 const Sticker: React.FC<P> = ({ m }) => {
   const f = useCurrentFrame(); const hl = k(f, M(m, 0, 40), 14);
   const rows: [string, string, boolean?][] = [["MODEL", "RF-21 · TOP FREEZER"], ["SERIAL", "0419 23 77 · MADE 2019"], ["SUPPLY", "115 V ~ 60 Hz · 1 PH"], ["RATED", "6.0 A", true], ["DEFROST HEATER", "450 W"], ["REFRIGERANT", "R-600a · 2.1 oz"]];
-  const emb: CSS = { color: "#3e454b", textShadow: "-1px -1px 0 rgba(0,0,0,.25), 1px 1px 0 rgba(255,255,255,.7)" };
+  // r4: tarjeta lisa oscura (sin aluminio cepillado ni tornillos), el 6 A con marcador
+  const emb: CSS = { color: CREAM };
   return <Plate src="y0910" d={0.62}>
-    <div style={{ position: "absolute", left: 300, top: 110, width: 1320, height: 840, background: `repeating-linear-gradient(90deg, rgba(255,255,255,.08) 0 2px, rgba(0,0,0,.04) 2px 4px), linear-gradient(135deg,#e8ebed,#aab1b6)`, border: "4px solid #858d93", borderRadius: 10, boxShadow: "0 22px 30px rgba(0,0,0,.45), 0 4px 0 rgba(0,0,0,.25)", transform: `translateY(${(1 - k(f, 0)) * 60}px)`, opacity: k(f, 0) }}>
-      {[[30, 30], [1290, 30], [30, 810], [1290, 810]].map(([x, y], i) => <Screw key={i} x={x} y={y} r={14} rot={i * 40} />)}
+    <div style={{ position: "absolute", left: 300, top: 110, width: 1320, height: 840, background: "rgba(20,24,30,.9)", borderRadius: 10, boxShadow: "0 22px 30px rgba(0,0,0,.45)", transform: `translateY(${(1 - k(f, 0)) * 60}px)`, opacity: k(f, 0) }}>
       <div style={{ padding: "50px 90px" }}>
         <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 60, letterSpacing: 6, ...emb }}>REFRIGERATOR / FREEZER</div>
-        <div style={{ height: 4, background: "#7d858b", margin: "18px 0 10px" }} />
-        {rows.map(([l, v, hot], i) => <div key={i} style={{ display: "flex", alignItems: "center", height: 96, borderBottom: "2px solid rgba(62,69,75,.25)", position: "relative" }}>
-          {hot && <div style={{ position: "absolute", left: -16, right: 300, top: 14, bottom: 14, background: YEL, opacity: 0.85, transform: `scaleX(${hl})`, transformOrigin: "0 50%" }} />}
-          <div style={{ position: "relative", width: 460, fontFamily: SANS, fontWeight: 800, fontSize: 38, letterSpacing: 3, ...emb }}>{l}</div>
-          <div style={{ position: "relative", fontFamily: SANS, fontWeight: 900, fontSize: hot ? 66 : 46, ...emb }}>{v}</div>
+        <div style={{ height: 4, background: "rgba(243,236,220,.4)", margin: "18px 0 10px" }} />
+        {rows.map(([l, v, hot], i) => <div key={i} style={{ display: "flex", alignItems: "center", height: 96, borderBottom: "2px solid rgba(243,236,220,.18)", position: "relative" }}>
+          {hot && <div style={{ position: "absolute", left: -16, right: 300, top: 14, bottom: 14, background: YEL, transform: `scaleX(${hl})`, transformOrigin: "0 50%" }} />}
+          <div style={{ position: "relative", width: 460, fontFamily: SANS, fontWeight: 800, fontSize: 38, letterSpacing: 3, ...emb, color: hot && hl > 0.5 ? INK : CREAM }}>{l}</div>
+          <div style={{ position: "relative", fontFamily: SANS, fontWeight: 900, fontSize: hot ? 66 : 46, ...emb, color: hot && hl > 0.5 ? INK : CREAM }}>{v}</div>
         </div>)}
       </div>
     </div>
@@ -342,7 +324,7 @@ const Napkin: React.FC<P> = ({ a }) => {
   const f = useCurrentFrame(); const n = +a[0];
   return <Oak src="g4000" d={0.66}>
     <div style={{ position: "absolute", left: 440, top: 60, width: 1040, height: 960, background: "#fbfbf7", transform: "rotate(-2deg)", boxShadow: "6px 10px 0 rgba(0,0,0,.25)",
-      backgroundImage: "repeating-linear-gradient(45deg, rgba(0,0,0,.025) 0 6px, transparent 6px 12px)", clipPath: "polygon(0 2%,3% 0,97% 1%,100% 3%,99% 97%,96% 100%,2% 99%,0 96%)" }}>
+      clipPath: "polygon(0 2%,3% 0,97% 1%,100% 3%,99% 97%,96% 100%,2% 99%,0 96%)" }}>
       <div style={{ padding: "60px 80px" }}>
         {NAP.slice(0, n + 1).map((s, i) => { const last = i === 6 && n === 6;
           const line = <Hand text={s} at={i === n ? 4 : -99} f={f} len={22} size={last ? 84 : 62} col={i === n ? "#1f4f8f" : "#555"} />;
@@ -391,7 +373,7 @@ const Refill: React.FC<P> = ({ m }) => {
 const SunArc: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const t = io(f / dur);
   return <Plate src="g1710" d={0.42}>
-    <Print src="y1680" x={820} y={140} w={980} h={660} rot={1.5} e={k(f, 0)} cap="400 W PANEL · CLEAR DECEMBER DAY" />
+    <Print src="y1680" x={820} y={140} w={980} h={660} rot={1.5} e={k(f, 0)} cap="400 W PANEL · AFTER YOU CLEAR THE SNOW" />
     <div style={{ position: "absolute", left: 100, top: 180, width: 620, background: CREAM, padding: "26px 36px", boxSizing: "border-box", boxShadow: "0 22px 30px rgba(0,0,0,.45)" }}>
       <Lbl size={30} col="#3d4a57">INTO THE BATTERY</Lbl>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 130, color: INK, lineHeight: 1.05 }}>{fmt(t * 700)} Wh</div>
@@ -407,20 +389,11 @@ const SunArc: React.FC<P> = ({ dur }) => {
 };
 // ================= lock32 (191): el termómetro baja a 32°F y un candado se cierra sobre la batería
 const Lock32: React.FC<P> = ({ dur }) => {
+  // r4: sin termómetro ni candado dibujados; la foto real de la pantalla de la estación de fondo y el número que baja
   const f = useCurrentFrame(); const deg = Math.round(interpolate(f, [0, dur * 0.6], [45, 32], CL)), lk = k(f, dur * 0.6, 8);
-  const TH = 640, y = (d: number) => TH - 30 - (d / 100) * (TH - 80);
-  return <Plate src="g1950" d={0.7}>
-    <div style={{ position: "absolute", left: 120, top: 150, width: 110, height: TH, background: "#fafafa", borderRadius: 55, border: "6px solid #8a9095", boxShadow: "0 18px 26px rgba(0,0,0,.4)" }}>
-      <div style={{ position: "absolute", left: 38, width: 22, top: y(deg), bottom: 50, background: deg <= 35 ? "#2f74ad" : GN, borderRadius: 11 }} />
-      <div style={{ position: "absolute", left: 22, bottom: 14, width: 54, height: 54, borderRadius: "50%", background: deg <= 35 ? "#2f74ad" : GN }} />
-      {[0, 20, 32, 50, 80, 100].map((d) => <div key={d} style={{ position: "absolute", left: 104, top: y(d) - 2, width: d === 32 ? 60 : 30, height: d === 32 ? 6 : 4, background: d === 32 ? "#7fc4ff" : "#ddd" }}>
-        <span style={{ position: "absolute", left: d === 32 ? 70 : 40, top: -18, fontFamily: SANS, fontWeight: 800, fontSize: d === 32 ? 36 : 28, color: d === 32 ? "#7fc4ff" : CREAM, whiteSpace: "nowrap" }}>{d}°</span></div>)}
-    </div>
-    <div style={{ position: "absolute", left: 400, top: 160, fontFamily: SERIF, fontWeight: 900, fontSize: 140, color: CREAM }}>{deg}°F</div>
-    <Print src="g1920" x={820} y={150} w={960} h={620} rot={1.5} cap="STATION SCREEN · FREEZING GARAGE" />
-    <div style={{ position: "absolute", left: 1690, top: 70, opacity: lk, transform: `translateY(${(1 - lk) * -120}px) rotate(8deg)` }}>
-      <div style={{ width: 110, height: 100, border: "22px solid #9aa1a6", borderBottom: "none", borderRadius: "60px 60px 0 0", marginLeft: 25, boxSizing: "border-box" }} />
-      <div style={{ width: 160, height: 130, background: "linear-gradient(135deg,#e2b54a,#a8791d)", borderRadius: 12, position: "relative", boxShadow: "0 12px 18px rgba(0,0,0,.45)" }}><div style={{ position: "absolute", left: 66, top: 40, width: 28, height: 50, borderRadius: "14px 14px 4px 4px", background: "#3a2a10" }} /></div></div>
+  return <Plate src="g1920" d={0.5} pos="70% 50%">
+    <div style={{ position: "absolute", left: 120, top: 150, fontFamily: SERIF, fontWeight: 900, fontSize: 260, lineHeight: 1, color: deg <= 32 ? "#7fc4ff" : CREAM }}>{deg}°F</div>
+    <Lbl size={44} col={CREAM} style={{ position: "absolute", left: 130, top: 430, whiteSpace: "nowrap" }}>IN AN UNHEATED GARAGE</Lbl>
     <Lbl size={46} col={CREAM} style={{ position: "absolute", left: 120, top: 900, opacity: lk, background: "rgba(29,36,48,.88)", padding: "10px 26px", borderRadius: 6, whiteSpace: "nowrap" }}>LITHIUM WON'T CHARGE BELOW 32°F</Lbl>
   </Plate>;
 };
@@ -462,7 +435,7 @@ const Backfeed: React.FC<P> = ({ m, dur }) => {
     <Lbl size={40} col={CREAM} style={{ position: "absolute", left: 80, top: 50 }}>BACKFEEDING · NO INTERLOCK</Lbl>
     <Lbl size={88} col="#ff6a55" style={{ position: "absolute", left: 80, top: 100, fontFamily: SERIF, opacity: hv, transform: `scale(${0.7 + 0.3 * hv})`, transformOrigin: "0 50%", whiteSpace: "nowrap" }}>THOUSANDS OF VOLTS</Lbl>
     <Lbl size={40} col={CREAM} style={{ position: "absolute", left: 80, top: 215, opacity: hv, whiteSpace: "nowrap" }}>ON THE LINE A LINEMAN IS HOLDING</Lbl>
-    <Print src="y2330" x={80} y={330} w={620} h={500} rot={-2} cap="CORD IN THE DRYER OUTLET" capCol={GN} />
+    <Print src="y2330" x={80} y={330} w={620} h={500} rot={-2} cap="THE DRYER OUTLET" capCol={GN} />
     {hops.map((h, i) => { const p = cl(t * 3 - i);
       return <div key={i} style={{ position: "absolute", left: 762, top: 400 + i * 150, width: 300, height: 96, background: "rgba(24,26,30,.9)", borderLeft: `10px solid ${GN}`, borderRadius: 6, display: "flex", alignItems: "center", paddingLeft: 18, boxSizing: "border-box", opacity: p, transform: `translateX(${(1 - p) * -40}px)` }}>
         <Lbl size={30} col={CREAM} style={{ whiteSpace: "nowrap", letterSpacing: 1 }}>→ {h}</Lbl></div>; })}
@@ -485,39 +458,26 @@ const Interlock: React.FC<P> = ({ m }) => {
 // ================= heatjob (246): «HEAT IS THE JOB» con marcador sobre el filtro plisado de la caldera
 const HeatJob: React.FC<P> = () => {
   const f = useCurrentFrame();
-  return <Plate src="y2170" d={0.62}>
-    <div style={{ position: "absolute", left: 160, top: 200, width: 1600, height: 680, border: "28px solid #e8e2d4", background: "repeating-linear-gradient(90deg,#f4f1e8 0 30px,#e3dccb 30px 34px)", boxShadow: "0 22px 30px rgba(0,0,0,.45)", boxSizing: "border-box" }} />
-    <Lbl size={32} col="#7a6a50" style={{ position: "absolute", left: 230, top: 250 }}>16 × 25 × 1 FURNACE FILTER · AIR FLOW →</Lbl>
-    <Hand text="HEAT IS THE JOB." at={2} f={f} len={22} size={200} col={GN} style={{ position: "absolute", left: 250, top: 400 }} />
+  // r4: sin filtro de rayas; la foto real del blower y la frase
+  return <Plate src="y2170" d={0.6}>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 380, display: "flex", justifyContent: "center" }}>
+      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 190, color: CREAM, whiteSpace: "nowrap", opacity: k(f, 2, 14), transform: `translateY(${(1 - k(f, 2, 14)) * 40}px)` }}>HEAT IS <span style={{ color: YEL }}>THE JOB.</span></div></div>
   </Plate>;
 };
 // ================= decibels (258): el decibelímetro de aguja en caja de baquelita; escala con cosas de la casa en una tarjeta
 const Decibel: React.FC<P> = () => {
   const f = useCurrentFrame(); const v = interpolate(f, [6, 40], [30, 57], CL);
-  const marks: [number, string][] = [[40, "fridge hum"], [57, "inverter gen @ 23 ft"], [60, "conversation"], [75, "vacuum"], [90, "open-frame gen, up close"]];
-  const R = 490, cx = 490, cy = 490, th = (d: number) => 180 - ((d - 30) / 70) * 180;
-  return <Oak src="y3190" d={0.7}>
-    <div style={{ position: "absolute", left: 120, top: 150, width: 1080, height: 700, background: "linear-gradient(#2a2a2a,#121212)", borderRadius: 40, boxShadow: "10px 14px 0 rgba(0,0,0,.35)" }}>
-      <div style={{ position: "absolute", left: 50, top: 50, width: 980, height: 490, borderRadius: "490px 490px 0 0", background: CREAM, overflow: "hidden" }}>
-        {Array.from({ length: 15 }).map((_, i) => { const d = 30 + i * 5, maj = d % 10 === 0, L = maj ? 46 : 26;
-          return <div key={d} style={{ position: "absolute", left: cx, top: cy - (maj ? 3 : 2), width: L, height: maj ? 6 : 4, background: INK, transformOrigin: "0 50%", transform: `rotate(${-th(d)}deg) translateX(${R - L - 10}px)` }} />; })}
-        {[40, 50, 60, 70, 80, 90].map((d) => { const a = th(d) * Math.PI / 180, r = R - 100;
-          return <div key={d} style={{ position: "absolute", left: cx + Math.cos(a) * r, top: cy - Math.sin(a) * r, transform: "translate(-50%,-50%)", fontFamily: SERIF, fontWeight: 900, fontSize: 34, color: INK }}>{d}</div>; })}
-        {(() => { const a = th(57); return <div style={{ position: "absolute", left: cx, top: cy - 9, width: 60, height: 18, background: GN, transformOrigin: "0 50%", transform: `rotate(${-a}deg) translateX(${R - 72}px)`, borderRadius: 4 }} />; })()}
-        <div style={{ position: "absolute", left: cx - 6, top: cy - 430, width: 12, height: 430, background: GN, transformOrigin: "50% 100%", transform: `rotate(${90 - th(v)}deg)`, borderRadius: 6 }} />
-        <div style={{ position: "absolute", left: cx - 40, top: cy - 40, width: 80, height: 80, borderRadius: "50%", background: "radial-gradient(#666,#111)" }} />
-      </div>
-      <div style={{ position: "absolute", left: 380, top: 570, width: 320, height: 100, background: "#2d3a2c", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "monospace", fontWeight: 900, fontSize: 70, color: "#bfe8b0" }}>{Math.round(v)} dB</div>
-      <Screw x={60} y={640} r={12} /><Screw x={1020} y={640} r={12} rot={70} />
+  const marks: [number, string][] = [[40, "fridge hum"], [57, "inverter gen @ 23 ft"], [60, "conversation"], [75, "vacuum"], [90, "open-frame, up close"]];
+  // r4: sin decibelímetro dibujado; el generador real queda a la vista (foto con poca sombra) y la escala va en una tarjeta al costado
+  return <Plate src="y3190" d={0.35} pos="30% 50%">
+    <div style={{ position: "absolute", right: 70, top: 90, width: 720, background: "rgba(20,24,30,.9)", borderRadius: 10, padding: "34px 40px", boxSizing: "border-box", boxShadow: "0 22px 30px rgba(0,0,0,.45)" }}>
+      <div style={{ fontFamily: "monospace", fontWeight: 900, fontSize: 130, color: "#bfe8b0", lineHeight: 1 }}>{Math.round(v)} dB</div>
+      <Lbl size={34} col={CREAM} style={{ marginTop: 12 }}>HOW LOUD IS IT?</Lbl>
+      {marks.map(([d, l], i) => <div key={i} style={{ display: "flex", alignItems: "baseline", gap: 22, marginTop: 18, background: i === 1 ? YEL : "none", padding: "4px 12px", borderRadius: 4 }}>
+        <div style={{ width: 90, fontFamily: SERIF, fontWeight: 900, fontSize: 52, color: i === 1 ? INK : CREAM }}>{d}</div>
+        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 38, color: i === 1 ? INK : CREAM, whiteSpace: "nowrap" }}>{l}</div></div>)}
     </div>
-    <Paper x={1270} y={170} w={560} h={660} rot={1.5}>
-      <div style={{ padding: "34px 34px" }}><Lbl size={26} col="#7a6a50">HOW LOUD IS IT?</Lbl>
-        {marks.map(([d, l], i) => <div key={i} style={{ display: "flex", alignItems: "baseline", gap: 18, marginTop: 26, background: i === 1 ? "rgba(242,194,48,.45)" : "none", padding: "4px 8px" }}>
-          <div style={{ width: 90, fontFamily: SERIF, fontWeight: 900, fontSize: 48, color: i === 1 ? GN : INK }}>{d}</div>
-          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 36, color: INK, whiteSpace: "nowrap" }}>{l}</div></div>)}
-      </div>
-    </Paper>
-  </Oak>;
+  </Plate>;
 };
 
 // ================= hourbook (279): la planilla de horas del generador, renglonada; se anotan los services
@@ -547,8 +507,9 @@ const StoreBand: React.FC<P> = ({ m }) => {
       <div style={{ width: "65%", height: "100%", background: `linear-gradient(90deg, ${ST}, #6fd1b8)`, borderRadius: 14 }} />
       <div style={{ position: "absolute", left: 16 + 0.5 * 1468, top: -30, width: 0.3 * 1468 * b, height: 230, border: `8px solid ${YEL}`, borderRadius: 14, boxSizing: "border-box" }} />
     </div>
-    <Lbl size={52} col={CREAM} style={{ position: "absolute", left: 210 + 0.5 * 1500, top: 400, opacity: b, background: "rgba(29,36,48,.85)", padding: "6px 22px", borderRadius: 6 }}>STORE AT 50–80 %</Lbl>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 560, display: "flex", justifyContent: "center", gap: 50, opacity: cal }}>{["JAN", "APR", "JUL", "OCT"].map((s, i) => <div key={i} style={{ width: 320, height: 360, background: "repeating-linear-gradient(0deg, rgba(31,79,143,.12) 0 2px, transparent 2px 46px), #fbf7ec", borderTop: `64px solid ${GN}`, boxShadow: "0 18px 26px rgba(0,0,0,.45)", position: "relative", transform: `rotate(${[-2.5, 1.5, -1, 2.2][i]}deg)` }}>
+    {[0, 50, 80, 100].map((p) => <Lbl key={p} size={34} col={p === 50 || p === 80 ? YEL : CREAM} style={{ position: "absolute", left: 210 + 16 + (p / 100) * 1468 - 60, width: 120, textAlign: "center", top: 396 }}>{p}%</Lbl>)}
+    <Lbl size={52} col={CREAM} style={{ position: "absolute", left: 210 + 0.5 * 1500, top: 456, opacity: b, background: "rgba(29,36,48,.85)", padding: "6px 22px", borderRadius: 6 }}>STORE AT 50–80 %</Lbl>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 590, display: "flex", justifyContent: "center", gap: 50, opacity: cal }}>{["JAN", "APR", "JUL", "OCT"].map((s, i) => <div key={i} style={{ width: 320, height: 360, background: "#fbf7ec", borderTop: `64px solid ${GN}`, boxShadow: "0 18px 26px rgba(0,0,0,.45)", position: "relative", transform: `rotate(${[-2.5, 1.5, -1, 2.2][i]}deg)` }}>
       <div style={{ position: "absolute", top: -54, left: 0, right: 0, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 40, color: "#fff", letterSpacing: 4 }}>{s}</div>
       <Hand text="top up ✓" at={M(m, 1, 100) + i * 8} f={f} size={60} col="#1f4f8f" style={{ padding: "100px 0 0 34px" }} /></div>)}</div>
   </Oak>;
@@ -557,7 +518,6 @@ const StoreBand: React.FC<P> = ({ m }) => {
 const Shelf: React.FC<P> = ({ a }) => {
   const f = useCurrentFrame(); const g = a[0] === "gen"; const t = k(f, 10, 14);
   return <Plate src={g ? "y3910" : "y3030"} d={0.7}>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 650, height: 60, background: `${BRUSH}, linear-gradient(#e9edf0,#9aa3ab)`, borderBottom: "8px solid #5d666e", boxShadow: "0 16px 22px rgba(0,0,0,.4)" }} />
     <div style={{ position: "absolute", left: 960 - 330, top: 150 }}><Print src={g ? "y1110" : "y0570"} w={660} h={470} rot={g ? -1 : 1} /></div>
     <div style={{ position: "absolute", left: 600, top: 712, width: 720, height: 220, perspective: 800 }}>
       <div style={{ width: "100%", height: "100%", background: YEL, transformOrigin: "50% 0", transform: `rotateX(${(1 - t) * 90}deg)`, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", boxShadow: "0 12px 18px rgba(0,0,0,.4)" }}>
@@ -607,14 +567,14 @@ const Cycles: React.FC<P> = ({ dur }) => {
 };
 // ================= letters (326): LiFePO4 punzonado letra por letra en una chapa de acero cepillado atornillada
 const Punch: React.FC<P> = () => {
-  const f = useCurrentFrame(); const L = "LiFePO4".split("");
+  // r4: tarjeta lisa oscura (sin chapa cepillada ni tornillos); las letras aparecen de a una
+  const f = useCurrentFrame(); const Lt = "LiFePO4".split("");
   return <Plate src="g3640" d={0.7}>
-    <div style={{ position: "absolute", left: 160, top: 260, width: 1600, height: 520, background: `repeating-linear-gradient(90deg, rgba(255,255,255,.07) 0 2px, rgba(0,0,0,.05) 2px 5px), linear-gradient(135deg,#d6dade,#8e959b)`, borderRadius: 12, boxShadow: "0 22px 30px rgba(0,0,0,.5)", display: "flex", alignItems: "center", justifyContent: "center", gap: 14 }}>
-      {[[34, 34], [1566, 34], [34, 486], [1566, 486]].map(([x, y], i) => <Screw key={i} x={x} y={y} r={18} rot={20 + i * 35} />)}
-      {L.map((c, i) => { const at = 6 + i * 9, t = f >= at ? 1 : 0, hit = cl(1 - (f - at) / 5);
-        return <div key={i} style={{ fontFamily: SANS, fontWeight: 900, fontSize: 250, color: "#5a6168", textShadow: "-3px -3px 0 rgba(0,0,0,.45), 3px 3px 0 rgba(255,255,255,.55)", opacity: t, transform: `scale(${1 + 0.15 * hit})` }}>{c}</div>; })}
+    <div style={{ position: "absolute", left: 160, top: 240, width: 1600, height: 480, background: "rgba(20,24,30,.9)", borderRadius: 12, boxShadow: "0 22px 30px rgba(0,0,0,.5)", display: "flex", alignItems: "center", justifyContent: "center", gap: 14 }}>
+      {Lt.map((c, i) => { const at = 6 + i * 9, t = f >= at ? 1 : 0, hit = cl(1 - (f - at) / 5);
+        return <div key={i} style={{ fontFamily: SANS, fontWeight: 900, fontSize: 250, color: YEL, opacity: t, transform: `scale(${1 + 0.15 * hit})` }}>{c}</div>; })}
     </div>
-    <Lbl size={44} col="#e9eef2" style={{ position: "absolute", left: 160, top: 850 }}>LOOK FOR THESE LETTERS ON THE SPEC SHEET</Lbl>
+    <Lbl size={48} col="#e9eef2" style={{ position: "absolute", left: 160, top: 790 }}>LOOK FOR THESE LETTERS ON THE LABEL</Lbl>
   </Plate>;
 };
 // ================= schedule (345): el reloj de 24 h de la cocina: generador mañana y tarde, estación de tarde y de noche
@@ -639,25 +599,14 @@ const Dial24: React.FC<P> = ({ dur }) => {
 };
 
 // ================= counter (353): «FROM THE COUNTER» — la campanita de mostrador y lo que hay sobre el mostrador
-const Bell: React.FC<{ ring: number }> = ({ ring }) => <div style={{ position: "relative", width: 300, height: 220, transform: `rotate(${ring}deg)`, transformOrigin: "50% 100%" }}>
-  <div style={{ position: "absolute", left: 140, top: 0, width: 20, height: 34, background: CHROME, borderRadius: 4 }} />
-  <div style={{ position: "absolute", left: 128, top: -18, width: 44, height: 26, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #fff, #9aa3ab 60%, #5d666e)" }} />
-  <div style={{ position: "absolute", left: 20, top: 30, width: 260, height: 150, borderRadius: "130px 130px 14px 14px", background: "radial-gradient(circle at 34% 26%, #fff6d0 0 7%, #ecc967 20%, #b48d2c 58%, #6e5214 100%)" }} />
-  <div style={{ position: "absolute", left: 0, top: 176, width: 300, height: 40, borderRadius: 20, background: "linear-gradient(#3a3a3a,#0e0e0e)" }} />
-</div>;
 const Counter: React.FC<P> = () => {
-  const f = useCurrentFrame(); const ring = Math.sin(f * 1.6) * 5 * cl(1 - f / 20);
-  return <Plate src="y0530" d={0.62}>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 700, bottom: 0, background: "linear-gradient(#8a6040,#5a3c26 30%,#3e2a1b)", boxShadow: "0 -6px 0 #a8784e" }} />
-    <div style={{ position: "absolute", left: 460, top: 120, width: 1000, height: 220, background: CREAM, border: "10px solid #2a2a2a", display: "flex", alignItems: "center", justifyContent: "center", transform: `rotate(${Math.sin(f / 14) * 1.2}deg)`, boxShadow: "0 22px 30px rgba(0,0,0,.45)" }}>
-      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 84, color: INK, whiteSpace: "nowrap" }}>FROM THE COUNTER</div></div>
-    {[700, 1220].map((x) => <div key={x} style={{ position: "absolute", left: x, top: 0, width: 6, height: 128, background: "#333" }} />)}
-    <div style={{ position: "absolute", left: 810, top: 500 }}><Bell ring={ring} /></div>
-    <div style={{ position: "absolute", left: 260, top: 560, width: 260, height: 170, background: "linear-gradient(90deg,#3a3a3a,#5a5a5a 50%,#2a2a2a)", borderRadius: 8, boxShadow: "0 14px 20px rgba(0,0,0,.45)" }}>
-      <div style={{ position: "absolute", left: 20, right: 20, top: 16, bottom: 16, background: "repeating-linear-gradient(90deg,#f2c230 0 10px,#c79a1c 10px 13px)" }} /></div>
-    <Lbl size={30} col={CREAM} style={{ position: "absolute", left: 270, top: 760 }}>12 AWG · 50 FT</Lbl>
-    <div style={{ position: "absolute", left: 1300, top: 580, width: 300, height: 150, background: "linear-gradient(#d9b98a,#b8935e)", borderRadius: 4, boxShadow: "0 14px 20px rgba(0,0,0,.45)" }}>
-      <div style={{ margin: "30px 24px", padding: "10px 14px", background: "#fff", fontFamily: SANS, fontWeight: 900, fontSize: 32, color: GN, letterSpacing: 2 }}>BLADE FUSES</div></div>
+  // r4: sin campanita, mostrador ni cajas dibujadas; la foto real de la ferretería y el título
+  const f = useCurrentFrame(); const t = k(f, 2, 14);
+  return <Plate src="y0530" d={0.5}>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 380, display: "flex", flexDirection: "column", alignItems: "center", opacity: t, transform: `translateY(${(1 - t) * 40}px)` }}>
+      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 150, color: CREAM, whiteSpace: "nowrap" }}>FROM THE COUNTER</div>
+      <Lbl size={46} col={YEL} style={{ marginTop: 10 }}>YOUR QUESTIONS, ANSWERED</Lbl>
+    </div>
   </Plate>;
 };
 // ================= SERIE checklist:0-5 — etiquetas de cartón ensartadas en un aro de acero
@@ -666,42 +615,33 @@ const KeyRing: React.FC<P> = ({ a }) => {
   const f = useCurrentFrame(); const n = +a[0];
   return <Oak src="y3270" d={0.72}>
     <Lbl size={58} col={CREAM} style={{ position: "absolute", left: 300, top: 110, fontFamily: SERIF }}>MY STATION CHECKLIST</Lbl>
-    <div style={{ position: "absolute", left: 334, top: 250, width: 30, height: n ? 110 + (n - 1) * 150 : 0, borderRadius: 15, background: CHROME, boxShadow: "4px 6px 0 rgba(0,0,0,.3)", zIndex: 2 }} />
     {REQ.slice(0, n).map((r, i) => { const nw = i === n - 1, t = nw ? sp(f, 4) : 1;
       return <div key={i} style={{ position: "absolute", left: 300, top: 280 + i * 150, transform: `translateY(${(1 - t) * -80}px)`, opacity: cl(t * 3) }}>
-        <div style={{ width: 1300, height: 118, background: "#f1e3c2", borderRadius: 12, display: "flex", alignItems: "center", paddingLeft: 120, boxShadow: "0 14px 20px rgba(0,0,0,.4)", position: "relative", boxSizing: "border-box" }}>
-          <div style={{ position: "absolute", left: 24, top: 39, width: 50, height: 40, borderRadius: 20, background: "#3a2a1c", boxShadow: "inset 0 0 0 6px #c9b88f" }} />
+        <div style={{ width: 1300, height: 118, background: "#f1e3c2", borderRadius: 12, display: "flex", alignItems: "center", paddingLeft: 50, boxShadow: "0 14px 20px rgba(0,0,0,.4)", position: "relative", boxSizing: "border-box" }}>
           <Hand text={`${i + 1}. ${r}`} at={nw ? 8 : -99} f={f} size={62} /></div></div>; })}
   </Oak>;
 };
 // ================= SERIE q:N — el turnero rojo de mostrador: sale el papelito con el número de pregunta
 const Ticket: React.FC<P> = ({ a }) => {
-  const f = useCurrentFrame(); const n = +a[0]; const t = k(f, 2, 16);
-  return <Plate src="y1011" d={0.66}>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 900, bottom: 0, background: "linear-gradient(#8a6040,#5a3c26)", boxShadow: "0 -6px 0 #a8784e" }} />
-    <div style={{ position: "absolute", left: 870, top: 880, width: 180, height: 40, borderRadius: "50%", background: "linear-gradient(#bfc5ca,#5d666e)" }} />
-    <div style={{ position: "absolute", left: 945, top: 400, width: 30, height: 500, background: CHROME }} />
-    <div style={{ position: "absolute", left: 680, top: 90, width: 560, height: 360, background: "radial-gradient(circle at 35% 25%, #ef6a55, #c0392b 45%, #7a1c12)", borderRadius: "180px 180px 60px 60px", boxShadow: "0 22px 30px rgba(0,0,0,.45)" }}>
-      <div style={{ position: "absolute", left: 100, right: 100, top: 90, height: 130, background: CREAM, borderRadius: 14, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-        <Lbl size={28} col={GN}>PLEASE</Lbl><Lbl size={38} col={INK} style={{ whiteSpace: "nowrap", letterSpacing: 1 }}>TAKE A NUMBER</Lbl></div>
-      <div style={{ position: "absolute", left: 160, right: 160, top: 290, height: 22, background: "#1a0a07", borderRadius: 11 }} />
+  // r4: sin turnero dibujado; foto real y el número de pregunta grande
+  const f = useCurrentFrame(); const n = +a[0]; const t = k(f, 2, 14);
+  return <Plate src="y1011" d={0.55}>
+    <div style={{ position: "absolute", left: 140, top: 250, opacity: t, transform: `translateX(${(1 - t) * -60}px)` }}>
+      <Lbl size={64} col={YEL} style={{ letterSpacing: 8 }}>QUESTION</Lbl>
+      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 420, color: CREAM, lineHeight: 0.95 }}>{n}</div>
     </div>
-    <div style={{ position: "absolute", left: 790, top: 392, width: 340, height: 470 * t, overflow: "hidden", transform: "rotate(3deg)", transformOrigin: "50% 0" }}>
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 470, background: "#fff4d6", borderBottomRightRadius: 46, boxShadow: "inset -10px -10px 0 rgba(0,0,0,.06)", textAlign: "center", borderTop: "4px dashed #c9b88f" }}>
-        <Lbl size={34} col="#9a6a2a" style={{ marginTop: 60 }}>QUESTION</Lbl><div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 240, color: INK, lineHeight: 1 }}>{n}</div></div></div>
   </Plate>;
 };
 // ================= fuse (369): la toma de 12 V del tablero de la camioneta y el fusible de cuchilla de 15 A
 const Fuse: React.FC<P> = () => {
+  // r4: sin fusible dibujado; la copia real y el dato en grande
   const f = useCurrentFrame(); const t = k(f, 4, 14);
   return <Plate src="y3730" d={0.72}>
     <Print src="g3710" x={90} y={130} w={920} h={660} rot={-1.5} cap="STATION ON THE DASH SOCKET" />
-    <div style={{ position: "absolute", left: 1270, top: 150 + (1 - t) * 200, opacity: t, transform: "rotate(4deg)" }}>
-      <div style={{ width: 380, height: 300, background: "linear-gradient(135deg, rgba(250,210,80,.96), rgba(214,150,16,.94))", borderRadius: "22px 22px 10px 10px", boxShadow: "inset 0 0 0 10px rgba(255,255,255,.25), 0 18px 26px rgba(0,0,0,.45)", position: "relative" }}>
-        <div style={{ position: "absolute", left: 60, right: 60, top: 30, height: 70, background: "rgba(255,255,255,.22)", borderRadius: 10 }} />
-        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 140, textAlign: "center", paddingTop: 100, lineHeight: 1, color: "#3a2a06" }}>15</div></div>
-      <div style={{ display: "flex", gap: 120, marginLeft: 90 }}><div style={{ width: 50, height: 200, background: CHROME }} /><div style={{ width: 50, height: 200, background: CHROME }} /></div>
-      <Lbl size={36} col={CREAM} style={{ marginTop: 18, marginLeft: 40 }}>BLADE FUSE · 15 A</Lbl></div>
+    <div style={{ position: "absolute", left: 1160, top: 220, opacity: t, transform: `translateY(${(1 - t) * 40}px)` }}>
+      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 260, color: YEL, lineHeight: 1 }}>15 A</div>
+      <Lbl size={48} col={CREAM} style={{ marginTop: 10 }}>BLADE FUSE</Lbl>
+    </div>
     <Lbl size={46} col="#fff" style={{ position: "absolute", left: 90, top: 940, whiteSpace: "nowrap" }}>12 V SOCKET · 10–15 A FUSE ≈ 120–180 W</Lbl>
   </Plate>;
 };
@@ -727,16 +667,14 @@ const Surge: React.FC<P> = ({ m }) => {
 };
 // ================= prize (413): «THE PRIZE» — el sobre se abre y la tarjeta sale de adentro del bolsillo
 const Prize: React.FC<P> = () => {
-  const f = useCurrentFrame(); const o = k(f, 6, 16), c = k(f, 18, 14);
-  return <Oak src="g4030" d={0.62}>
-    <div style={{ position: "absolute", left: 560, top: 440, width: 800, height: 460, perspective: 1000 }}>
-      <div style={{ position: "absolute", inset: 0, background: "#b99c63", boxShadow: "8px 12px 0 rgba(0,0,0,.3)", zIndex: 1 }} />
-      <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 0, borderLeft: "400px solid transparent", borderRight: "400px solid transparent", borderTop: "260px solid #c9ad72", transformOrigin: "50% 0", transform: `rotateX(${o * 180}deg)`, zIndex: o < 0.5 ? 5 : 2 }} />
-      <div style={{ position: "absolute", left: 70, right: 70, top: 30 - c * 300, height: 380, zIndex: 3, background: CREAM, display: "flex", alignItems: "flex-start", justifyContent: "center", boxShadow: "0 -4px 0 rgba(0,0,0,.1)" }}>
-        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 86, color: INK, textAlign: "center", marginTop: 40, lineHeight: 1.05 }}>WHAT I'D<br />BUY</div></div>
-      <div style={{ position: "absolute", inset: 0, background: "#d9c08a", zIndex: 4, clipPath: "polygon(0 0, 50% 52%, 100% 0, 100% 100%, 0 100%)" }} />
+  // r4: sin sobre dibujado; foto real y título
+  const f = useCurrentFrame(); const t = k(f, 4, 14);
+  return <Plate src="g4030" d={0.55}>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 330, display: "flex", flexDirection: "column", alignItems: "center", opacity: t, transform: `scale(${0.92 + 0.08 * t})` }}>
+      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 190, color: CREAM, whiteSpace: "nowrap" }}>WHAT I'D BUY</div>
+      <Lbl size={64} col={YEL} style={{ marginTop: 6 }}>WITH $1,000 · WITH $2,500</Lbl>
     </div>
-  </Oak>;
+  </Plate>;
 };
 
 // ================= SERIE cart:1000:0-2 / cart:2500 — el ticket de la caja registradora sale y se suma
@@ -755,7 +693,7 @@ const Register: React.FC<P> = ({ a }) => {
         return <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 20, fontSize: 50, fontWeight: 700, marginBottom: 30, opacity: t }}><span>{n}</span><span style={{ whiteSpace: "nowrap" }}>~${fmt(p)}</span></div>; })}
       <div style={{ borderTop: "3px dashed #999", margin: "24px 0" }} />
       <div style={{ display: "flex", justifyContent: "space-between", fontSize: 76, fontWeight: 900 }}><span>TOTAL</span><span style={{ color: tot > +key ? GN : INK }}>~${fmt(tot)}</span></div>
-      <div style={{ fontSize: 30, color: "#777", marginTop: 20 }}>RANGES WHERE I SHOP · YOURS WILL VARY</div>
+      <div style={{ fontSize: 36, fontWeight: 700, color: "#555", marginTop: 20 }}>RANGES WHERE I SHOP · YOURS WILL VARY</div>
     </div>
   </Oak>;
 };

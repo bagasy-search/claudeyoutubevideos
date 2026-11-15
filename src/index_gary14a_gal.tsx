@@ -11,7 +11,7 @@ const BG = "gary14a/g/g2720.png", AV = "gary14a/a/win-004.mp4";
 const OV: [string, React.ReactNode][] = [
   ["patch", <O.Patch text="GARY" sub="ELECTRICIAN · 40 YEARS · OHIO" dur={160} />], ["fuses", <O.FuseStrip n={4} dur={160} />], ["conduit", <O.Conduit dur={140} />],
   ["door", <O.PanelDoor src="gary14a/g/g3000.png" seed={3} label="WHAT I'D BUY · $1,000 / $2,500" dur={160} />], ["clip", <O.Clipboard src="gary14a/g/g3970.png" note="Mrs. Dale · Wooster, 2019" seed={5} dur={160} />],
-  ["datatag", <O.DataTag big="4 HOURS" label="A CLOSED FRIDGE KEEPS FOOD COLD" src="USDA · FOODSAFETY.GOV" dur={160} />], ["safe", <O.SafeWay text="20 FT OUT · EXHAUST AWAY" dur={160} />], ["midcta", <O.MidCta dur={160} />]];
+  ["datatag", <O.DataTag big="4 HOURS" label="CLOSED FRIDGE · FOOD STAYS COLD" src="USDA · FOODSAFETY.GOV" dur={160} />], ["safe", <O.SafeWay text="20 FT OUT · EXHAUST AWAY" dur={160} />], ["midcta", <O.MidCta dur={160} />]];
 const N = C.length + OV.length;
 const Gal: React.FC = () => <AbsoluteFill style={{ background: "#000" }}>
   {C.map((c, i) => <Sequence key={c} from={i * 100} durationInFrames={100}><CompC14a s={{ comp: c, m: [6, 14, 22, 30, 38, 46, 52, 56, 60, 64] }} dur={80} /></Sequence>)}
