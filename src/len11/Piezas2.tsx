@@ -15,18 +15,10 @@ const useIn = (delay = 0, damping = 18) => { const f = useCurrentFrame(); const 
 const useOut = (dur: number, len = 10) => { const f = useCurrentFrame(); return interpolate(f, [dur - len, dur], [1, 0], CL); };
 
 // grano de película (SVG, sin imágenes)
-export const Grain: React.FC<{ op?: number }> = ({ op = 0.18 }) => {
-  const f = useCurrentFrame(); const id = "gr" + (f % 4);
-  return (
-    <svg style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity: op, mixBlendMode: "overlay", pointerEvents: "none" }}>
-      <filter id={id}><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={f % 4} /><feColorMatrix type="saturate" values="0" /></filter>
-      <rect width="100%" height="100%" filter={`url(#${id})`} />
-    </svg>
-  );
-};
+export const Grain: React.FC<{ op?: number }> = () => null; // len14: sin grano
 
 export type HabCard = { title: string; src: string };
-export const LIST = { n: 6, head: "steps", tag: "STEP", short: "STEP" };
+export const LIST = { n: 12, head: "steps", tag: "STEP", short: "STEP" };
 
 // tarjeta de hábito con foto (carrusel / recap)
 const HabitPhotoCard: React.FC<{ n: number; title: string; src: string; w: number; dim?: number; check?: number }> = ({ n, title, src, w, dim = 0, check = 0 }) => (
@@ -51,7 +43,7 @@ const HabitPhotoCard: React.FC<{ n: number; title: string; src: string; w: numbe
 
 // fondo: material real desenfocado
 const BlurBg: React.FC<{ src: string; dark?: number }> = ({ src, dark = 0.5 }) => {
-  const st: React.CSSProperties = { width: "100%", height: "100%", objectFit: "cover", filter: `blur(22px) brightness(${1 - dark})`, transform: "scale(1.15)" };
+  const st: React.CSSProperties = { width: "100%", height: "100%", objectFit: "cover", filter: `brightness(${1 - dark})`, transform: "scale(1.15)" };
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: C.ink }}>
       {src.endsWith(".mp4") ? <OffthreadVideo src={staticFile(src)} muted playbackRate={0.5} style={st} /> : <Img src={staticFile(src)} style={st} />}
@@ -117,26 +109,20 @@ export const Progress: React.FC<{ n: number; title: string; dur: number; of?: nu
 
 // (5) hoja de papel madera de la libreta que barre la pantalla (dobleces) (dir 0 →, 1 ←, 2 ↓, 3 ↘ en diagonal)
 export const InkWipe: React.FC<{ dir: number; len?: number }> = ({ dir, len = 20 }) => {
+  // len14: barrido CSS de tres tiras de cinta de papel (sin SVG ni feTurbulence)
   const f = useCurrentFrame();
   const t = f / len; if (t < 0 || t > 1) return null;
-  const pos = lerp(-1.3, 1.3, Easing.inOut(Easing.quad)(t));
-  const sign = dir === 1 ? -1 : 1;
-  const id = "iw" + dir;
+  const pos = lerp(-1.4, 1.4, Easing.inOut(Easing.quad)(t));
+  const cols = ["#E9DCBC", "#D6C49C", "#BFA676"];
   return (
     <AbsoluteFill style={{ pointerEvents: "none", overflow: "hidden" }}>
-      <svg width="1920" height="1080" style={{ position: "absolute", inset: 0 }}>
-        <defs>
-          <filter id={id} x="-20%" y="-20%" width="140%" height="140%"><feTurbulence type="fractalNoise" baseFrequency={dir === 2 ? "0.02 0.004" : "0.004 0.02"} numOctaves={2} seed={dir + 3} /><feDisplacementMap in="SourceGraphic" scale={90} /></filter>
-          <linearGradient id={id + "s"} x1="0" y1="0" x2={dir === 2 ? "0" : "1"} y2={dir === 2 ? "1" : "0.15"}>
-            {Array.from({ length: 13 }, (_, i) => <stop key={i} offset={`${(i / 12) * 100}%`} stopColor={i % 3 === 1 ? "#E9DCBC" : i % 3 === 2 ? "#BFA676" : "#D6C49C"} />)}
-          </linearGradient>
-        </defs>
-        <g transform={`rotate(${dir === 3 ? 20 : 0} 960 540)`} filter={`url(#${id})`}>
-          {dir === 2
-            ? <rect x={-300} y={540 + pos * 1080 - 800} width={2520} height={1600} fill={`url(#${id}s)`} />
-            : <rect x={960 + sign * pos * 1920 - 1250} y={-500} width={2500} height={2080} fill={`url(#${id}s)`} />}
-        </g>
-      </svg>
+      {cols.map((c, i) => {
+        const off = (i - 1) * 0.12, k = pos + off;
+        const st: React.CSSProperties = dir === 2
+          ? { position: "absolute", left: -200, width: 2320, top: 540 + k * 1080 - 700, height: 1400, background: c }
+          : { position: "absolute", top: -300, height: 1680, left: 960 + (dir === 1 ? -1 : 1) * k * 1920 - 1100, width: 2200, background: c, transform: `rotate(${dir === 3 ? 20 : 6}deg)` };
+        return <div key={i} style={{ ...st, boxShadow: "0 0 30px rgba(60,40,10,0.25)" }} />;
+      })}
     </AbsoluteFill>
   );
 };
