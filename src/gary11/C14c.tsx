@@ -295,7 +295,7 @@ const Reel: React.FC<P & { recap?: boolean }> = ({ dur, m, a, recap }) => {
   const ang = lerp(from, n - 1, p) * 36 + (p < 1 ? 0 : Math.sin((f - land) / 5) * 1.2 * Math.exp(-(f - land) / 12));
   const lt = D(m, 0, dur, 0.1); const c1 = recap ? GRN : RED, c2 = recap ? "#1f6f3e" : "#8f241a";
   return <Floor dark={0.25}>
-    <div style={ab(260, 150, 1400, 520, { perspective: 1700 })}>
+    <div style={ab(260, 215, 1400, 520, { perspective: 1700 })}>
       <div style={{ position: "absolute", left: 0, right: 0, top: 160, height: H, transformStyle: "preserve-3d", transform: `rotateX(${ang}deg)` }}>
         {Array.from({ length: 10 }, (_, i) => { const done = recap && i < n - 1; const cur = i === n - 1;
           return <div key={i} style={{ position: "absolute", left: 0, right: 0, top: 0, height: H, transform: `rotateX(${-i * 36}deg) translateZ(${R}px)`, backfaceVisibility: "hidden",
@@ -308,8 +308,8 @@ const Reel: React.FC<P & { recap?: boolean }> = ({ dur, m, a, recap }) => {
       <div style={ab(-30, 150, 30, 220, { background: "linear-gradient(90deg,#5e666d,#c8cdd1,#5e666d)", borderRadius: 8 })} />
       <div style={ab(1400, 150, 30, 220, { background: "linear-gradient(90deg,#5e666d,#c8cdd1,#5e666d)", borderRadius: 8 })} />
     </div>
-    <Tx size={46} col={recap ? "#9be3b5" : "#ffb3a8"} style={{ position: "absolute", left: 0, right: 0, top: 70, textAlign: "center", letterSpacing: 8, opacity: k(f, 0, 10) }}>{recap ? `RECAP · ${n} OF 10` : `MISTAKE ${n} OF 10`}</Tx>
-    <Ch t={recap ? RECL[n - 1] : MISL[n - 1]} at={Math.max(land - 4, lt)} f={f} x={960} y={760} size={Math.min(recap ? 66 : 76, Math.floor(1780 / ((recap ? RECL[n - 1] : MISL[n - 1]).length * 0.44)))} c len={18} />
+    <Tx size={46} col={recap ? "#9be3b5" : "#ffb3a8"} style={{ position: "absolute", left: 0, right: 0, top: 34, textAlign: "center", letterSpacing: 8, opacity: k(f, 0, 10) }}>{recap ? `RECAP · ${n} OF 10` : `MISTAKE ${n} OF 10`}</Tx>
+    <Ch t={recap ? RECL[n - 1] : MISL[n - 1]} at={Math.max(land - 4, lt)} f={f} x={960} y={850} size={Math.min(recap ? 66 : 76, Math.floor(1780 / ((recap ? RECL[n - 1] : MISL[n - 1]).length * 0.44)))} c len={18} />
   </Floor>;
 };
 
@@ -572,9 +572,8 @@ const Climb: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame();
   return <AbsoluteFill style={{ background: "repeating-linear-gradient(0deg,#8c4a36 0 56px,#d8cbb8 56px 62px)" }}>
     <AbsoluteFill style={{ backgroundImage: "repeating-linear-gradient(90deg, rgba(0,0,0,0) 0 120px, #d8cbb8 120px 126px)", backgroundSize: "126px 124px", opacity: 0.9, maskImage: "repeating-linear-gradient(0deg, #000 0 62px, transparent 62px 124px)" } as CS} />
-    <Puffs f={f} x={900} y={1000} at={0} dy={-1100} size={150} n={10} life={34} col="150,150,155" />
-    <div style={ab(860, 960 - 860 * io(f / Math.max(20, dur * 0.8)), 80, 860 * io(f / Math.max(20, dur * 0.8)), { background: `linear-gradient(rgba(255,170,90,0), rgba(255,140,60,.5))` })} />
-    <Ch t="exhaust is hot — and it climbs." at={2} f={f} x={960} y={90} size={92} c len={10} />
+    <Win x={1180} y={130} w={300} h={340} open={0.35} /><div style={ab(760, 960, 300, 120, { background: "#3a3f45", borderRadius: "20px 20px 0 0" })} /><div style={ab(870, 930, 80, 40, { background: "#222", borderRadius: 8, boxShadow: `0 0 ${30 + 10 * Math.sin(f / 4)}px rgba(255,120,40,.8)` })} /><Puffs f={f} x={900} y={930} at={0} dy={-720} size={150} n={10} life={34} col="150,150,155" curve={420} />
+    <Ch t="exhaust is hot — and it climbs." at={2} f={f} x={140} y={120} size={92} len={10} />
   </AbsoluteFill>;
 };
 
@@ -1318,7 +1317,7 @@ const Cta: React.FC<P> = ({ dur, m }) => {
 
 // ================= THE TWO-MINUTE CHECK =================
 // check:0-4 · LA REGLETA DE CUATRO MEDIOS MINUTOS: cuatro baldosas de 0:30 forman los 2:00; en cada paso la suya se llena como un vaso y arriba aparece el pictograma del paso
-const STEP = ["PRESS THE TEST BUTTON", "FIND THE DATE ON THE BACK", "COUNT: ONE ON EVERY FLOOR?", "THE GARAGE DOOR · LOOK AT THE BOTTOM"];
+const STEP = ["PRESS THE TEST BUTTON", "FIND THE DATE ON THE BACK", "COUNT: ONE ON EVERY FLOOR?", "HOUSE-TO-GARAGE DOOR · LOOK AT THE BOTTOM"];
 const Check: React.FC<P> = ({ dur, a }) => {
   const f = useCurrentFrame(); const n = Math.max(0, Math.min(4, +a[0] || 0));
   const pic = (i: number) => [
@@ -1336,7 +1335,7 @@ const Check: React.FC<P> = ({ dur, a }) => {
           <Tx size={30} col={i === n - 1 ? INK : CH} style={{ position: "absolute", left: 0, right: 0, top: 120, textAlign: "center" }}>STEP {i + 1}</Tx>
         </div>; })}
     </div>
-    {n === 0 ? <Ch t="do it tonight." at={10} f={f} x={960} y={330} size={140} c />
+    {n === 0 ? <><div style={ab(330, 170, 480, 480, { borderRadius: "50%", background: "#f3f0e6", border: "18px solid #2b3442", boxSizing: "border-box", boxShadow: "0 20px 40px rgba(0,0,0,.35)" })}>{Array.from({ length: 12 }, (_, j) => <div key={j} style={ab(213, 14, 18, 40, { background: "#2b3442", transformOrigin: "9px 208px", transform: `rotate(${j * 30}deg)` })} />)}<Tx size={80} col={INK} style={{ position: "absolute", left: 0, right: 0, top: 270, textAlign: "center" }}>{`${Math.floor((120 - Math.round(f / 3)) / 60)}:${String((120 - Math.round(f / 3)) % 60).padStart(2, "0")}`}</Tx><div style={ab(214, 60, 16, 170, { background: RED, borderRadius: 8, transformOrigin: "8px 162px", transform: `rotate(${f * 6}deg)` })} /><div style={ab(202, 202, 40, 40, { borderRadius: "50%", background: RED })} /><div style={ab(190, -70, 64, 60, { background: "#2b3442", borderRadius: 10 })} /></div><Ch t="do it tonight." at={10} f={f} x={1330} y={380} size={130} c /></>
       : <><div style={ab(260, 220, 300, 300, { transform: `scale(${sp(f, 2)})` })}>{pic(n - 1)}</div>
         <Tx size={64} col={CH} style={{ position: "absolute", left: 660, top: 300, width: 1100, opacity: k(f, 6, 8) }}>{STEP[n - 1]}</Tx></>}
   </Floor>;
