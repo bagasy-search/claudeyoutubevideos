@@ -203,7 +203,7 @@ export const CadenaA: React.FC<{ steps: string[]; marks: number[]; bg?: string; 
         </div>
         <div style={{ position: "absolute", left: 640, top: 0, width: 80, height: 760, background: "linear-gradient(90deg,#E8DFCB,#D6CAB0)", boxShadow: "6px 0 18px rgba(0,0,0,.5)" }} />
         <div style={{ position: "absolute", left: -40, top: 760, width: 820, height: 100, background: "linear-gradient(180deg,#6B4A2E,#4A3220)", borderRadius: 4 }} />
-        {Array.from({ length: 9 }, (_, k) => <div key={k} style={{ position: "absolute", left: 700 + (k % 3) * 22, top: 250 + Math.floor(k / 3) * 22, width: 18 * salt, height: 18 * salt, background: "#FFFFFF", transform: `rotate(${k * 23}deg)`, boxShadow: "0 0 6px rgba(255,255,255,.9)" }} />)}
+        {Array.from({ length: 14 }, (_, k) => { const r = (16 + (k * 7) % 22) * salt; return <div key={k} style={{ position: "absolute", left: 712 + ((k * 29) % 40) - r / 2, top: 230 + ((k * 47) % 120) - r / 2, width: r, height: r * 1.3, borderRadius: "40% 55% 45% 60%", background: "radial-gradient(circle at 40% 35%, #FFFFFF, #F1EFEA 55%, #D9D4C8)", boxShadow: "1px 2px 3px rgba(0,0,0,.35)" }} />; })}
         <div style={{ position: "absolute", left: px - 120 - 26, top: py - 120 - 30, width: 52 * (1 - salt * 0.8), height: 62 * (1 - salt * 0.8), borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%", background: "radial-gradient(circle at 38% 35%, #E6F4FF, #4C93D0 55%, #1F5A8C)", boxShadow: "0 6px 14px rgba(0,0,0,.45)", opacity: 1 - salt }} />
       </div>
       <div style={{ position: "absolute", left: 960, right: 80, top: 380, height: 360 }}>{steps.map((_, i) => (i === cur || i === cur - 1) && f >= M[i] ? txt(i) : null)}</div>
@@ -272,7 +272,7 @@ export const MetroA: React.FC<{ big: string; sub?: string; bg?: string; dur: num
 // ---------- (9) ticket de ferretería que se imprime renglón por renglón (de costado, nunca encima de la persona)
 export const TicketA: React.FC<{ rows: { name: string; price: string; f: number }[]; total?: string; ft?: number; head?: string; bg?: string; dur: number; side?: string }> = ({ rows, total, ft = 999, head = "FERRETERÍA DE LA ESQUINA", bg, dur, side }) => {
   const f = useCurrentFrame(); const o = fade(f, dur); const last = Math.max(...rows.map((r) => r.f), total ? ft : 0);
-  const shown = rows.filter((r) => f >= r.f).length + (total && f >= ft ? 1.5 : 0); const h = 190 + shown * 104; const W = side ? 680 : 860;
+  const shown = rows.filter((r) => f >= r.f).length + (total && f >= ft ? 1.5 : 0); const h = 190 + shown * 104; const W = side ? 740 : 860;
   const k = sp(f, 0, 15); const teeth = Array.from({ length: 34 }, (_, i) => `${(i * 100) / 33}% ${i % 2 ? "100%" : "calc(100% - 10px)"}`).reverse().join(", ");
   return (
     <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={29} dur={dur} />
@@ -280,8 +280,8 @@ export const TicketA: React.FC<{ rows: { name: string; price: string; f: number 
         <div style={{ height: interpolate(f, [0, last + 10], [170, h], CL), overflow: "hidden", background: "#FBFBF7", boxShadow: SH, padding: "30px 40px", fontFamily: "'Courier New', monospace", color: "#222", clipPath: `polygon(0 0, 100% 0, ${teeth})` }}>
           <div style={{ textAlign: "center", fontSize: 36, fontWeight: 700, letterSpacing: 2 }}>{head}</div>
           <div style={{ borderBottom: "3px dashed #999", margin: "14px 0 16px" }} />
-          {rows.map((r, i) => f >= r.f ? <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 20, fontSize: 42, fontWeight: 700, minHeight: 104, alignItems: "center", lineHeight: 1.05, opacity: cl((f - r.f) / 5) }}><span>{r.name}</span><span style={{ whiteSpace: "nowrap" }}>{r.price}</span></div> : null)}
-          {total && f >= ft ? <><div style={{ borderBottom: "3px dashed #999", margin: "6px 0 14px" }} /><div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", fontSize: 50, fontWeight: 700 }}><span>TOTAL</span><span style={{ color: CU.chile, fontSize: 60, transform: `scale(${0.6 + 0.4 * sp(f, ft, 9)})`, display: "inline-block", whiteSpace: "nowrap" }}>{total}</span></div></> : null}
+          {rows.map((r, i) => f >= r.f ? <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 20, fontSize: side ? 36 : 42, whiteSpace: "nowrap", fontWeight: 700, minHeight: 104, alignItems: "center", lineHeight: 1.05, opacity: cl((f - r.f) / 5) }}><span>{r.name}</span><span style={{ whiteSpace: "nowrap" }}>{r.price}</span></div> : null)}
+          {total && f >= ft ? <><div style={{ borderBottom: "3px dashed #999", margin: "6px 0 14px" }} /><div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", fontSize: 50, fontWeight: 700 }}><span style={{ marginRight: 24 }}>TOTAL</span><span style={{ color: CU.chile, fontSize: side ? 50 : 60, transform: `scale(${0.6 + 0.4 * sp(f, ft, 9)})`, display: "inline-block", whiteSpace: "nowrap" }}>{total}</span></div></> : null}
         </div>
       </div>
     </AbsoluteFill>
