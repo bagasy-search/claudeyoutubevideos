@@ -3,8 +3,9 @@ import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame
 import { SHOTS, AVATAR, OVERLAYS, SFX, TOTAL, CARDS } from "./cues.gen";
 import * as P from "./Piezas";
 import * as Q from "./Piezas2";
+import * as Z from "./Conserje";
 
-export const TOTAL_FRAMES_CER14D = TOTAL;
+export const TOTAL_FRAMES_CONS15A = TOTAL;
 const T = 8; // frames de transición
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
@@ -59,11 +60,15 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "polaroid": return <Q.Polaroid src={o.src} caption={o.caption} seed={o.seed} dur={d} />;
     case "map": return <Q.MapJP a={o.a} b={o.b} la={o.la} ja={o.ja} lb={o.lb} jb={o.jb} dur={d} />;
     case "cta": return <Q.CTA text={o.text} cards={CARDS} dur={d} com={o.com} />;
+    case "step": return <Z.StepKey n={o.n} total={o.total} title={o.title} src={o.src} dur={d} />;
+    case "hanger": return <Z.DoorHanger text={o.text} dur={d} />;
+    case "guest": return <Z.GuestCard text={o.text} dur={d} />;
+    case "sheet": return <Z.ServiceSheet items={o.items} marks={o.marks} dur={d} />;
     default: return null;
   }
 };
 
-export const MainCer14d: React.FC = () => (
+export const MainCons15a: React.FC = () => (
   <AbsoluteFill style={{ background: P.C.ink }}>
     {/* capa 1: avatar (ventanas visibles) */}
     {AVATAR.map((a, i) => (
@@ -91,7 +96,7 @@ export const MainCer14d: React.FC = () => (
       </Sequence>
     ))}
     {/* audio: voz + piano premezclados, SFX por debajo */}
-    <Audio src={staticFile("cer14d_mix.m4a")} />
+    <Audio src={staticFile("cons15a_mix.m4a")} />
     {SFX.map((x, i) => (
       <Sequence key={"x" + i} from={x.from} durationInFrames={90}>
         <Audio src={staticFile(x.src)} volume={x.vol} />
