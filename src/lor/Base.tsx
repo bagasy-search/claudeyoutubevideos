@@ -97,9 +97,9 @@ export const RecipeCard: React.FC<{ card: Card; look: Look; dur: number }> = ({ 
   const col = look.key === "church" ? "#2B2219" : C.ink;
   // alto real estimado contando los renglones partidos (columna ≈ 30 caracteres de Kalam 42 px)
   const wr = (x: string, c: number) => Math.max(1, Math.ceil(x.length / c));
-  const nIng = card.ing.reduce((a, x) => a + wr(x, 30), 0) * 61;
-  const nSt = card.steps.reduce((a, x) => a + wr(x, 32) * 56 + 8, 0);
-  const nNote = card.note ? 24 + wr(card.note, 52) * 52 : 0;
+  const nIng = card.ing.reduce((a, x) => a + wr(x, 26), 0) * 61;
+  const nSt = card.steps.reduce((a, x) => a + wr(x, 27) * 56 + 8, 0);
+  const nNote = card.note ? 24 + wr(card.note, 44) * 52 : 0;
   const nL = (Math.max(nIng, nSt) + nNote) / 64;
   const H = 92 + 96 + 110 + nL * 64 + 120;
   // márgenes calculados para que, con la escala ZC, ningún texto quede a menos de 80 px del borde
@@ -278,9 +278,9 @@ export const Data: React.FC<{ big: string; line: string; src: string; dur: numbe
     <div style={{ position: "absolute", left: 50, top: 190, background: "rgba(255,250,240,0.97)", padding: "22px 38px", width: 620, boxShadow: "0 16px 40px rgba(0,0,0,0.4)", transform: `scale(${(0.6 + 0.4 * s) * out * (1 + 0.025 * Math.sin(f / 16))})`, transformOrigin: "0% 0%" }}>
       <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 20 }}>
         <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: cnt.length > 6 ? 104 : 130, color: C.red, lineHeight: 1, whiteSpace: "nowrap" }}>{cnt}</div>
-        <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 34, color: "#fff", background: C.ink, padding: "4px 14px", borderRadius: 8 }}>{short}</div>
       </div>
       <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 46, color: C.ink, marginTop: 8, lineHeight: 1.15 }}>{line.replace(/ °/g, "°")}</div>
+      <div style={{ display: "inline-block", fontFamily: SANS, fontWeight: 600, fontSize: 26, color: "#fff", background: C.ink, padding: "4px 14px", borderRadius: 8, marginTop: 14 }}>{short}</div>
     </div></AbsoluteFill>);
 };
 
