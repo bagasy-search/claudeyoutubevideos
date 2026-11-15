@@ -190,7 +190,7 @@ export const RecapPaquetes: React.FC<{ n: number; cards: Card[]; lines: string[]
         );
       })}
       {n > 0 && (
-        <div style={{ position: "absolute", left: 720, top: 230, width: 1060, padding: "46px 56px", ...KRAFT, boxShadow: "0 24px 50px rgba(0,0,0,0.5)", transform: `translateX(${(1 - sp(f - 10, 16)) * 1300}px) rotate(1deg)` }}>
+        <div style={{ position: "absolute", zIndex: 20, left: 720, top: 230, width: 1060, padding: "46px 56px", ...KRAFT, boxShadow: "0 24px 50px rgba(0,0,0,0.5)", transform: `translateX(${(1 - sp(f - 10, 16)) * 1300}px) rotate(1deg)` }}>
           <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 34, letterSpacing: 8, color: H.leaf }}>RAZÓN {n} DE 10</div>
           <div style={{ fontFamily: SERIF, fontSize: 88, lineHeight: 1.02, color: H.ink, marginTop: 12 }}>{cards[n - 1]?.title}</div>
           {lines.map((l, i) => (
