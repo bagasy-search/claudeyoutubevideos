@@ -267,9 +267,9 @@ export const Data: React.FC<{ big: string; line: string; src: string; dur: numbe
   const cnt = m && v >= 20 ? Math.round(v * (0.6 + 0.4 * ease(f / 22))) + m[2].replace(/^ (°)/, "$1") : big.replace(/ °/, "°");
   const short = /USDA/.test(src) ? "USDA" : src;
   return (<AbsoluteFill>
-    <div style={{ position: "absolute", right: 70, top: 70, background: "rgba(255,250,240,0.97)", padding: "22px 38px", width: 640, boxShadow: "0 16px 40px rgba(0,0,0,0.4)", transform: `scale(${(0.6 + 0.4 * s) * out * (1 + 0.025 * Math.sin(f / 16))})`, transformOrigin: "100% 0%" }}>
-      <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between" }}>
-        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 130, color: C.red, lineHeight: 1 }}>{cnt}</div>
+    <div style={{ position: "absolute", left: 50, top: 190, background: "rgba(255,250,240,0.97)", padding: "22px 38px", width: 620, boxShadow: "0 16px 40px rgba(0,0,0,0.4)", transform: `scale(${(0.6 + 0.4 * s) * out * (1 + 0.025 * Math.sin(f / 16))})`, transformOrigin: "0% 0%" }}>
+      <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 20 }}>
+        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: cnt.length > 6 ? 104 : 130, color: C.red, lineHeight: 1, whiteSpace: "nowrap" }}>{cnt}</div>
         <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 34, color: "#fff", background: C.ink, padding: "4px 14px", borderRadius: 8 }}>{short}</div>
       </div>
       <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 46, color: C.ink, marginTop: 8, lineHeight: 1.15 }}>{line.replace(/ °/g, "°")}</div>
@@ -300,7 +300,7 @@ export const Close: React.FC<{ cover: string; qr: string; look: Look; head: stri
       <Img src={staticFile(cover)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
     <div style={{ position: "absolute", left: 1130, top: 150, width: 560, transform: `translateX(${(1 - inn) * 900}px) rotate(${2 - 2 * ease(f / Math.max(1, dur))}deg)` }}>
       <div style={{ background: "#fff", padding: 22, boxShadow: "0 20px 50px rgba(0,0,0,0.45)" }}><Img src={staticFile(qr)} style={{ width: "100%", display: "block" }} /></div>
-      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 44, color: C.ink, background: "#FFF3D6", padding: "10px 14px", boxShadow: "0 10px 26px rgba(0,0,0,0.4)", marginTop: 22, textAlign: "center" }}>cookbook.lorettaschurch.com</div>
+      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 36, color: C.ink, background: "#FFF3D6", padding: "10px 12px", whiteSpace: "nowrap", boxShadow: "0 10px 26px rgba(0,0,0,0.4)", marginTop: 22, textAlign: "center" }}>cookbook.lorettaschurch.com</div>
     </div>
    </AbsoluteFill>
     {question && <div style={{ position: "absolute", left: 140, right: 140, bottom: 70, textAlign: "center", background: "#fff", borderRadius: 34, padding: "26px 40px", fontFamily: HAND, fontWeight: 700, fontSize: 66, color: C.ink, boxShadow: "0 18px 44px rgba(0,0,0,0.45)", opacity: q > 0.02 ? 1 : 0, transform: `translateY(${(1 - q) * 300 + 6 * Math.sin(f / 20)}px) scale(${0.85 + 0.15 * q})` }}>{question}</div>}
