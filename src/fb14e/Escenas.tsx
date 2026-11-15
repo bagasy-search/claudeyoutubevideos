@@ -22,15 +22,15 @@ export const Board: React.FC<{ head: string; rows: { t: string; f: number; st: n
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 40%, rgba(255,255,255,0) 40%, rgba(60,45,30,0.35) 100%)" }} />
       <div style={{ position: "absolute", left: 190, top: 96, width: 1540, height: 880, transform: `scale(${z}) rotate(${(seed % 2 ? 0.5 : -0.5)}deg)`, borderRadius: 8, border: "26px solid #7A5230", borderTopColor: "#8B6038", borderBottomColor: "#5E3E22", boxShadow: "0 30px 70px rgba(0,0,0,0.5), inset 0 0 60px rgba(0,0,0,0.55)", ...slateBg, padding: "50px 80px", display: "flex", flexDirection: "column" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
-          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 30, letterSpacing: 9, color: K.gold }}>{head}</div>
+          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 44, letterSpacing: 7, color: K.gold }}>{head}</div>
           <div style={{ ...chalk, fontSize: 40, opacity: 0.55 }}>El Constructor Libre</div>
         </div>
         <div style={{ height: 4, background: "rgba(243,239,228,0.5)", margin: "16px 0 10px", borderRadius: 2 }} />
         <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", gap: big ? 26 : 16 }}>
           {rows.map((r, i) => {
-            const p = interpolate(f, [r.f, r.f + 14], [0, 1], { ...CL, easing: Easing.out(Easing.quad) });
-            const fs = r.st === 2 ? Math.min(big ? 190 : 150, Math.floor(1330 / (r.t.length * 0.66))) : r.st === 1 ? Math.min(124, Math.floor(1330 / (r.t.length * 0.44))) : Math.min(96, Math.floor(1330 / (r.t.length * 0.42)));
-            return <div key={i} style={{ ...chalk, fontFamily: r.st === 2 ? SLAB : HAND, fontWeight: r.st === 2 ? 400 : 700, fontSize: fs, lineHeight: 1.08, color: r.st === 2 ? K.gold : K.chalk, clipPath: `inset(-35% ${100 - p * 100}% -25% 0)`, whiteSpace: "nowrap" }}>{r.t}</div>;
+            const p = interpolate(f, [i * 3, i * 3 + 12], [0, 1], { ...CL, easing: Easing.out(Easing.quad) }); const hi = f >= r.f;
+            const fs = r.st === 2 ? Math.min(big ? 190 : 150, Math.floor(1330 / (r.t.length * 0.62))) : Math.min(124, Math.floor(1330 / (r.t.length * 0.42)));
+            return <div key={i} style={{ ...chalk, fontFamily: r.st === 2 ? SLAB : HAND, fontWeight: r.st === 2 ? 400 : 700, fontSize: fs, lineHeight: 1.08, color: r.st === 2 ? K.gold : K.chalk, opacity: p * (hi ? 1 : 0.42), transform: `scale(${hi ? 1 : 0.97})`, transformOrigin: "0 50%", whiteSpace: "nowrap" }}>{r.t}</div>;
           })}
         </div>
         {foot ? <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, letterSpacing: 2, color: "rgba(243,239,228,0.7)" }}>Source: {foot}</div> : null}
@@ -209,7 +209,7 @@ export const Steps: React.FC<{ stops: { f: number; src: string; tag?: string; su
             <Img src={staticFile(s.src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${i % 2 ? lerp(1.17, 1.06, k) : lerp(1.06, 1.17, k)}) translate(${((i % 3) - 1) * k * 1.3}%, ${(((i + 1) % 3) - 1) * k * 0.8}%)`, transformOrigin: `${38 + (i * 13) % 26}% ${40 + (i * 7) % 22}%` }} />
             <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(14,8,6,0.84) 0%, rgba(14,8,6,0.22) 36%, rgba(14,8,6,0) 56%)" }} />
             {s.tag ? (
-              <div style={{ position: "absolute", top: 70, ...(right ? { right: 90 } : { left: 90 }), transformOrigin: right ? "100% 0" : "0 0", transform: `rotate(${lerp(right ? 18 : -18, right ? 2.5 : -2.5, tg)}deg) scale(${lerp(1.6, 1, tg)})`, opacity: cl(tg * 1.8, 0, 1) }}>
+              <div style={{ position: "absolute", top: 110, ...(right ? { right: 90 } : { left: 90 }), transform: `translateY(${(1 - cl(tg, 0, 1)) * 30}px) rotate(${right ? 1.5 : -1.5}deg)`, opacity: cl(tg * 1.8, 0, 1) }}>
                 <div style={{ ...kraftBg(i + 2), padding: "16px 44px 20px", boxShadow: SH, textAlign: "center" }}>
                   <div style={{ fontFamily: SLAB, fontSize: s.tag.length > 16 ? 60 : 84, color: K.ink, lineHeight: 1.02, whiteSpace: "nowrap" }}>{s.tag}</div>
                   {s.sub ? <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 36, letterSpacing: 4, color: K.redD, marginTop: 6, whiteSpace: "nowrap" }}>{s.sub}</div> : null}

@@ -17,8 +17,8 @@ export const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
       case "card": return <S.Ticket kicker={s.kicker} title={s.title} lines={s.lines} img={s.img} dur={dur} seed={s.id} />;
       case "board": return <E.Board head={s.head} rows={s.rows} foot={s.foot} dur={dur} seed={s.id} />;
       case "src": return <S.Source head={s.head} big={s.big} lines={s.lines} foot={s.foot} bg={s.bg} strike={s.strike} dur={dur} seed={s.id} />;
-      case "vs": return <E.Versus a={s.a} la={s.la} b={s.b} lb={s.lb} dur={dur} />;
-      case "counter": return <S.Counter kicker={s.kicker} title={s.title} bg={s.bg} dur={dur} seed={s.id} />;
+      case "vs": return <E.Steps stops={[{ f: 0, src: s.a, tag: s.la.split(": ")[0], sub: s.la.split(": ")[1] }, { f: s.bAt ?? Math.round(dur / 2), src: s.b, tag: s.lb.split(": ")[0], sub: s.lb.split(": ")[1] }]} dur={dur} />;
+      case "counter": return <S.TechScene n={s.id} label={s.kicker} title={s.title} src={s.bg} dur={dur} num="?" />;
       case "ask": return <S.Ask text={s.text} bg={s.bg} dur={dur} seed={s.id} qAt={s.qAt} />;
             case "steps": return <E.Steps stops={s.stops} dur={dur} />;
       case "recap": return <S.Recap cards={s.cards ?? CARDS} items={s.items} bg={s.bg} dur={dur} />;

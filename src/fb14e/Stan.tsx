@@ -76,7 +76,7 @@ export const PriceTag: React.FC<{ text: string; dur: number }> = ({ text, dur })
       <div style={{ position: "absolute", right: 46, top: -150, width: 5, height: 170, background: K.twine, transform: "rotate(9deg)", boxShadow: "1px 0 2px rgba(0,0,0,0.4)" }} />
       <div style={{ ...kraftBg(3), background: K.paper, padding: "30px 84px 32px 52px", clipPath: "polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%)", boxShadow: SH, minWidth: 300 }}>
         {parts.map((t, i) => (
-          <div key={i} style={{ fontFamily: i ? SANS : HAND, fontWeight: 700, fontSize: i ? 34 : (text.length > 26 ? 68 : 88), letterSpacing: i ? 4 : 0, color: i ? K.red : K.ink, lineHeight: 1.05, whiteSpace: "nowrap" }}>{t}</div>
+          <div key={i} style={{ fontFamily: i ? SANS : HAND, fontWeight: 700, fontSize: i ? 44 : (text.length > 26 ? 76 : 96), letterSpacing: i ? 4 : 0, color: i ? K.red : K.ink, lineHeight: 1.05, whiteSpace: "nowrap" }}>{t}</div>
         ))}
       </div>
       <div style={{ position: "absolute", right: 30, top: "50%", width: 16, height: 16, marginTop: -8, borderRadius: "50%", background: "#3a2a1a", boxShadow: "inset 0 2px 3px rgba(0,0,0,0.6)" }} />
@@ -185,20 +185,11 @@ export const Scale: React.FC<{ to: number; suffix: string; label: string; dur: n
 // barra de progreso: riel de ganchos; los hechos llevan su chapa roja
 export const Rail: React.FC<{ n: number; total: number; title: string; dur: number; word?: string; asc?: boolean }> = ({ n, total, title, dur, word = "PASO", asc }) => {
   const f = useCurrentFrame(); const o = interpolate(f, [0, 8, dur - 8, dur], [0, 1, 1, 0], CL);
-  const done = asc ? n - 1 : total - n; // cuenta regresiva (n=10 es el primero) o ascendente
+  const num = asc ? n : total - n + 1;
   return (
-    <div style={{ position: "absolute", right: 50, top: 40, opacity: o, display: "flex", flexDirection: "column", alignItems: "flex-end", transform: "scale(1.5)", transformOrigin: "100% 0", background: "rgba(14,10,7,0.72)", padding: "14px 20px 4px", borderRadius: 10 }}>
-      <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 26, letterSpacing: 3, color: "#FFFFFF", textShadow: SH }}>
-        {word} <span style={{ color: K.gold }}>{word === "NÚMERO" ? n : done + 1}</span> DE {total} · {title.toUpperCase()}
-      </div>
-      <div style={{ position: "relative", height: 46, width: total * 44 + 10, marginTop: 8 }}>
-        <div style={{ position: "absolute", left: 0, right: 0, top: 4, height: 6, borderRadius: 3, background: "linear-gradient(180deg, #E3E7E9, #7B8488)", boxShadow: "0 2px 5px rgba(0,0,0,0.5)" }} />
-        {Array.from({ length: total }, (_, i) => (
-          <div key={i} style={{ position: "absolute", left: 14 + i * 44, top: 6, width: 4, height: 16, background: "#AEB5B8" }}>
-            <div style={{ position: "absolute", left: -8, top: 14, width: 20, height: 22, borderRadius: 3, background: i <= done ? (i === done ? K.gold : K.red) : "rgba(244,235,221,0.4)", boxShadow: "0 2px 4px rgba(0,0,0,0.45)", transform: i === done ? `rotate(${Math.sin(f / 6) * 7}deg)` : undefined, transformOrigin: "50% 0" }} />
-          </div>
-        ))}
-      </div>
+    <div style={{ position: "absolute", right: 56, top: 48, opacity: o, transform: `translateY(${(1 - o) * -16}px)`, background: "rgba(14,10,7,0.82)", borderRadius: 14, padding: "16px 30px", boxShadow: "0 10px 30px rgba(0,0,0,0.45)", display: "flex", alignItems: "baseline", gap: 18, whiteSpace: "nowrap" }}>
+      <span style={{ fontFamily: SANS, fontWeight: 800, fontSize: 44, letterSpacing: 3, color: K.gold }}>{word} {num}/{total}</span>
+      <span style={{ fontFamily: SANS, fontWeight: 700, fontSize: 44, color: "#FFFFFF" }}>{title}</span>
     </div>
   );
 };
@@ -236,7 +227,7 @@ export const TechScene: React.FC<{ n: number; label: string; title: string; src:
         <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `translateX(${px}%) scale(${z})` }} />
       </AbsoluteFill>
       <AbsoluteFill style={{ opacity: fin, background: `linear-gradient(${right ? 270 : 90}deg, rgba(12,8,6,0.92) 0%, rgba(12,8,6,0.7) 38%, rgba(12,8,6,0) 70%)` }} />
-      <div style={{ position: "absolute", top: 230, maxWidth: 1150, display: "flex", flexDirection: "column", ...side }}>
+      <div style={{ position: "absolute", top: 200, maxWidth: 1250, display: "flex", flexDirection: "column", ...side, background: `rgba(12,8,6,${0.74 * fin})`, padding: "26px 44px 30px", borderRadius: 14 }}>
         <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 40, letterSpacing: 8, color: K.gold, textShadow: SH, opacity: cl((f - 4) / 8, 0, 1) }}>{label}</div>
         <div style={{ fontFamily: SLAB, fontSize: 300, lineHeight: 0.92, color: "#FFF8EA", textShadow: SH, opacity: cl(st * 1.6, 0, 1), transform: `scale(${lerp(1.6, 1, st)}) rotate(${lerp(-8, -3, st)}deg)`, transformOrigin: right ? "100% 60%" : "0% 60%" }}>{num ?? (n > total ? "+" : String(n))}</div>
         <div style={{ display: "flex", flexWrap: "nowrap", whiteSpace: "nowrap", columnGap: fs * 0.24, justifyContent: right ? "flex-end" : "flex-start", marginTop: 6 }}>
@@ -276,7 +267,7 @@ export const Carousel: React.FC<{ cards: TCard[]; bg: string; head: string; sub:
       <DarkPhoto src={bg} dur={dur} dark={0.62} />
       <div style={{ position: "absolute", top: 54, width: "100%", textAlign: "center", opacity: pIn, transform: `translateY(${(1 - pIn) * -40}px)` }}>
         <div style={{ fontFamily: SLAB, fontSize: 86, color: K.chalk, textShadow: SH, lineHeight: 1 }}><span style={{ color: K.gold }}>{N}</span> {head}</div>
-        <div style={{ ...chalkTxt, fontSize: 54, marginTop: 6, opacity: interpolate(f, [subAt, subAt + 10], [0, 1], CL) }}>{sub}</div>
+        <div style={{ ...chalkTxt, fontSize: 72, marginTop: 10, textShadow: SH, opacity: interpolate(f, [subAt, subAt + 10], [0, 1], CL) }}>{sub}</div>
       </div>
       <AbsoluteFill style={{ perspective: 2200, perspectiveOrigin: "50% 40%", transformOrigin: "50% 52%", transform: `scale(${lerp(1.3, 0.8, fanT)})` }}>
         {cards.map((c, i) => {
@@ -301,38 +292,27 @@ export const Carousel: React.FC<{ cards: TCard[]; bg: string; head: string; sub:
 // recap: las N en dos filas, se sellan una por una sobre su palabra; a la derecha se escribe el dato clave en tiza
 export const Recap: React.FC<{ cards: TCard[]; items: { f: number; lines: string[] }[]; bg: string; dur: number }> = ({ cards, items, bg, dur }) => {
   const f = useCurrentFrame(); let cur = -1; items.forEach((it, i) => { if (f >= it.f) cur = i; });
-  const per = Math.ceil(cards.length / 2); const stepX = Math.min(360, Math.floor(1790 / per)); const cw = Math.min(300, stepX - 46);
+  const src = cur >= 0 ? cards[cur].src : bg; const t0 = cur >= 0 ? items[cur].f : 0; const lf = f - t0;
+  const nxt = cur + 1 < items.length ? items[cur + 1].f : dur; const k = cl(lf / Math.max(1, nxt - t0), 0, 1);
   return (
-    <AbsoluteFill style={{ overflow: "hidden" }}>
-      <DarkPhoto src={bg} dur={dur} dark={0.72} />
-      {/* cámara de mano lenta sobre el tablero: nunca queda un cuadro quieto */}
-      <AbsoluteFill style={{ transform: `scale(${1.01 + 0.035 * f / Math.max(1, dur)}) translate(${Math.sin(f / 70) * 9}px, ${Math.cos(f / 95) * 6}px) rotate(${Math.sin(f / 120) * 0.25}deg)` }}>
-      <div style={{ position: "absolute", left: 60, top: 40, fontFamily: SANS, fontWeight: 700, fontSize: 24, letterSpacing: 7, color: K.gold, textShadow: SH, opacity: 0 }}> </div>
-      {cards.map((c, i) => {
-        const row = Math.floor(i / per), col = i % per; const it = items[i];
-        const e = spring({ frame: f - i * 3, fps: 30, config: { damping: 16 } });
-        const ck = spring({ frame: f - it.f, fps: 30, config: { damping: 11, mass: 0.6 } }); const lit = f >= it.f; const isCur = i === cur;
-        return (
-          <div key={i} style={{ position: "absolute", left: 70 + col * stepX, top: 36 + row * 292, opacity: e, zIndex: isCur ? 5 : 1,
-            transform: `translateY(${(1 - e) * 60}px) rotate(${((hash(i + 40) % 7) - 3) * 0.7}deg) scale(${isCur ? 1.1 + Math.sin(f / 9) * 0.012 : lit ? 1 : 0.94})` }}>
-            <Parcel c={c} w={cw} dim={lit ? 0 : 0.85} check={lit ? ck : 0} />
-          </div>
-        );
-      })}
-      {/* pizarra con el dato de la técnica en curso */}
-      <div style={{ position: "absolute", left: 60, right: 60, top: 650, height: 384, ...slateBg, borderRadius: 6, border: "14px solid #6B4A2B", boxShadow: "0 24px 60px rgba(0,0,0,0.6), inset 0 0 40px rgba(0,0,0,0.5)", padding: "26px 50px", overflow: "hidden" }}>
-        {cur >= 0 && (() => { const it = items[cur]; const c = cards[cur];
-          return (
-            <div key={cur} style={{ display: "flex", gap: 44, alignItems: "center", height: "100%" }}>
-              <div style={{ fontFamily: SLAB, fontSize: 250, color: K.gold, lineHeight: 0.9, minWidth: 250, textAlign: "center", opacity: cl((f - it.f) / 6, 0, 1) }}>{c.n}</div>
-              <div>
-                <div style={{ ...chalkTxt, fontSize: 84, lineHeight: 1, clipPath: `inset(-35% ${100 - cl((f - it.f) / 10, 0, 1) * 100}% -25% 0)` }}>{c.title}</div>
-                {it.lines.map((l, j) => <div key={j} style={{ ...chalkTxt, fontSize: 62, lineHeight: 1.15, opacity: 0.92, whiteSpace: "nowrap", clipPath: `inset(-35% ${100 - cl((f - it.f - 12 - j * 14) / 14, 0, 1) * 100}% -25% 0)` }}>{l}</div>)}
-              </div>
-            </div>
-          ); })()}
-      </div>
+    <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
+      <AbsoluteFill key={"p" + cur} style={{ opacity: cl(lf / 8, 0, 1) }}>
+        <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${lerp(1.04, 1.12, k)})` }} />
       </AbsoluteFill>
+      <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(12,8,6,0.94) 0%, rgba(12,8,6,0.75) 34%, rgba(12,8,6,0) 60%)" }} />
+      <div style={{ position: "absolute", left: 70, top: 56, fontFamily: SANS, fontWeight: 800, fontSize: 40, letterSpacing: 6, color: K.gold, textShadow: SH }}>RESUMEN · LOS {cards.length} PASOS</div>
+      {cur >= 0 && (
+        <div key={cur} style={{ position: "absolute", left: 70, right: 70, bottom: 70, display: "flex", gap: 44, alignItems: "flex-end" }}>
+          <div style={{ fontFamily: SLAB, fontSize: 260, color: K.gold, lineHeight: 0.85, textShadow: SH, opacity: cl(lf / 6, 0, 1) }}>{cards[cur].n}</div>
+          <div style={{ paddingBottom: 18 }}>
+            <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 96, color: "#FFFFFF", lineHeight: 1, textShadow: SH, whiteSpace: "nowrap", opacity: cl((lf - 3) / 8, 0, 1) }}>{cards[cur].title}</div>
+            {items[cur].lines.map((l, j) => <div key={j} style={{ fontFamily: SANS, fontWeight: 700, fontSize: 58, color: "#F3E6CC", marginTop: 10, textShadow: SH, whiteSpace: "nowrap", opacity: cl((lf - 10 - j * 8) / 8, 0, 1) }}>{l}</div>)}
+          </div>
+        </div>
+      )}
+      <div style={{ position: "absolute", right: 70, top: 56, display: "flex", gap: 10 }}>
+        {cards.map((c, i) => <div key={i} style={{ width: 22, height: 22, borderRadius: 11, background: i <= cur ? K.gold : "rgba(255,255,255,0.3)", boxShadow: SH }} />)}
+      </div>
     </AbsoluteFill>
   );
 };
@@ -398,15 +378,15 @@ export const Counter: React.FC<{ kicker: string; title: string; bg: string; dur:
 };
 // pregunta para los comentarios sobre la foto del mostrador (CTA): tira de papel + botón de suscripción de la casa
 export const Ask: React.FC<{ text: string; bg: string; dur: number; seed: number; qAt?: number }> = ({ text, bg, dur, seed, qAt = 4 }) => {
-  const f = useCurrentFrame(); const p = useSp(qAt, 15); const b = useSp(10, 10);
-  const press = interpolate(f, [40, 46, 54], [1, 0.9, 1], CL);
+  const f = useCurrentFrame(); const p = useSp(qAt, 15); const b = useSp(qAt + 8, 10);
+  const press = interpolate(f, [qAt + 30, qAt + 36, qAt + 44], [1, 0.9, 1], CL);
   return (
     <AbsoluteFill style={{ opacity: fadeOut(f, dur, 10) }}>
-      <AbsoluteFill style={{ overflow: "hidden" }}><Img src={staticFile(bg)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${interpolate(f, [0, dur], [1.05, 1.15])})`, filter: "brightness(0.62)" }} /></AbsoluteFill>
+      <AbsoluteFill style={{ overflow: "hidden" }}><Img src={staticFile(bg)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${interpolate(f, [0, dur], [1.05, 1.15])})`, filter: `brightness(${1 - 0.38 * p})` }} /></AbsoluteFill>
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "flex-end", paddingBottom: 70, flexDirection: "column", gap: 36 }}>
         <div style={{ ...kraftBg(seed), padding: "44px 90px 50px", clipPath: torn(seed + 5, 30, 1.8), maxWidth: 1500, textAlign: "center", transform: `translateY(${(1 - p) * 80}px) rotate(-1deg)`, opacity: p }}>
           <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 38, letterSpacing: 6, color: K.redD }}>CUÉNTAME EN LOS COMENTARIOS</div>
-          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 110, color: K.ink, lineHeight: 1.05, marginTop: 8 }}>{text}</div>
+          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 110, color: K.ink, lineHeight: 1.05, marginTop: 8, textWrap: "balance" } as React.CSSProperties}>{text}</div>
         </div>
         <div style={{ transform: `scale(${b * press})`, background: K.red, color: K.paper, fontFamily: SANS, fontWeight: 700, fontSize: 44, letterSpacing: 3, padding: "20px 60px", borderRadius: 50, boxShadow: SH }}>SUSCRÍBETE</div>
       </AbsoluteFill>
@@ -483,10 +463,10 @@ export const Source: React.FC<{ head: string; big: string; lines: string[]; foot
 export const QrCard: React.FC<{ qr: string; cover: string; dur: number }> = ({ qr, cover, dur }) => {
   const f = useCurrentFrame(); const p = useSp(0, 15); const bob = Math.sin(f / 22) * 5;
   return (
-    <div style={{ position: "absolute", right: 70, top: 130 + bob, width: 780, borderRadius: 18, background: K.paper, boxShadow: "0 30px 70px rgba(0,0,0,0.55)", padding: 28, opacity: p * fadeOut(f, dur, 10), transform: `scale(${0.85 + 0.15 * p})`, transformOrigin: "100% 0", display: "flex", flexDirection: "column", alignItems: "center" }}>
+    <div style={{ position: "absolute", right: 60, top: 110 + bob, width: 790, borderRadius: 18, background: K.paper, boxShadow: "0 30px 70px rgba(0,0,0,0.55)", padding: 28, opacity: p * fadeOut(f, dur, 10), transform: `scale(${0.85 + 0.15 * p})`, transformOrigin: "100% 0", display: "flex", flexDirection: "column", alignItems: "center" }}>
       <div style={{ display: "flex", gap: 22, alignItems: "center" }}>
-        <Img src={staticFile(cover)} style={{ height: 330, width: 330, objectFit: "cover", borderRadius: 6, boxShadow: "0 10px 22px rgba(0,0,0,0.35)" }} />
-        <Img src={staticFile(qr)} style={{ width: 330, height: 330 }} />
+        <Img src={staticFile(cover)} style={{ height: 380, width: 300, objectFit: "cover", borderRadius: 6, boxShadow: "0 10px 22px rgba(0,0,0,0.35)" }} />
+        <Img src={staticFile(qr)} style={{ width: 380, height: 380 }} />
       </div>
       <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 36, letterSpacing: 3, color: K.redD, marginTop: 18 }}>ESCANEA CON TU TELÉFONO</div>
       <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 60, color: K.ink, marginTop: 4 }}>constructorlibre.com</div>
