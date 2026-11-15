@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Audio, Img, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Audio, Freeze, Img, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { SHOTS, AVATAR, OVERLAYS, SFX, TOTAL } from "./cues.gen";
 import * as P from "./Piezas";
 import * as Q from "./Piezas2";
@@ -59,6 +59,10 @@ export const MainCme14a: React.FC = () => (
         {a.still ? <AbsoluteFill><Img src={staticFile(a.src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill> : <Q.AvatarFramed src={a.src} seed={i} dur={a.dur} mods={a.mods} />}
       </Sequence>
     ))}
+    {(() => { const L = AVATAR[AVATAR.length - 1]; const fin = L.from + L.dur; return fin < TOTAL ? (
+      <Sequence from={fin} durationInFrames={TOTAL - fin}>
+        <Freeze frame={L.dur - 1}><Q.AvatarFramed src={L.src} seed={AVATAR.length - 1} dur={L.dur} mods={L.mods} /></Freeze>
+      </Sequence>) : null; })()}
     {SHOTS.map((s, i) => {
       if (s.k === "A") return null;
       const nx = SHOTS[i + 1];
