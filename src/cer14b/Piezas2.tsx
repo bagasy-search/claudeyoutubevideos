@@ -130,12 +130,13 @@ export const HabitScene: React.FC<{ n: number; title: string; src: string; dur: 
   const v = n - 1, dir = v % 4, right = v % 2 === 1, mode = Math.floor(v / 2) % 3;
   const o = useOut(dur, 10);
   const k = cl((f - 10) / (dur - 10), 0, 1);
-  const z = mode === 0 ? lerp(1.28, 1.08, Easing.out(Easing.cubic)(k)) : mode === 1 ? lerp(1.05, 1.2, k) : 1.14;
-  const px = mode === 2 ? lerp(right ? 4 : -4, right ? -4 : 4, k) : 0;
-  const draw = interpolate(f, [14, 40], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
-  const fill = interpolate(f, [36, 48], [0, 1], CL);
-  const words = title.split(" ");
-  const side: React.CSSProperties = right ? { right: 120, alignItems: "flex-end" } : { left: 120, alignItems: "flex-start" };
+  const z = mode === 0 ? lerp(1.22, 1.06, Easing.out(Easing.cubic)(k)) : mode === 1 ? lerp(1.04, 1.16, k) : 1.12;
+  const px = mode === 2 ? lerp(right ? 3 : -3, right ? -3 : 3, k) : 0;
+  const tin = spring({ frame: f - 14, fps: 30, config: { damping: 16, mass: 0.7 } });
+  const tout = interpolate(f, [dur - 26, dur - 14], [1, 0], CL);
+  const t = Math.min(tin, tout);
+  const line = interpolate(f, [26, 42], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) });
+  const side: React.CSSProperties = right ? { right: 110, alignItems: "flex-end", textAlign: "right" } : { left: 110, alignItems: "flex-start", textAlign: "left" };
   return (
     <AbsoluteFill>
       {f >= 10 && (
@@ -143,17 +144,12 @@ export const HabitScene: React.FC<{ n: number; title: string; src: string; dur: 
           <AbsoluteFill style={{ overflow: "hidden", background: C.ink }}>
             <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `translateX(${px}%) scale(${z})` }} />
           </AbsoluteFill>
-          <AbsoluteFill style={{ background: `linear-gradient(${right ? 270 : 90}deg, rgba(16,11,8,0.85) 0%, rgba(16,11,8,0.4) 45%, rgba(16,11,8,0) 70%)` }} />
-          <div style={{ position: "absolute", top: 230, width: 860, display: "flex", flexDirection: "column", ...side }}>
-            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 8, color: PINK, opacity: draw }}>{LIST.short} {n} DE {LIST.n}</div>
-            <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 300, lineHeight: 0.9, color: C.white, opacity: draw, textShadow: shadow, transform: `translateY(${(1 - fill) * 18}px)` }}>{String(n).padStart(2, "0")}</div>
-            <div style={{ display: "flex", flexWrap: "wrap", columnGap: 22, justifyContent: right ? "flex-end" : "flex-start", marginTop: 6 }}>
-              {words.map((w, i) => {
-                const p = spring({ frame: f - 30 - i * 5, fps: 30, config: { damping: 15, mass: 0.6 } });
-                return <span key={i} style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 92, color: C.white, textShadow: shadow, display: "inline-block", opacity: p, transform: `translateY(${(1 - p) * 40}px)` }}>{w}</span>;
-              })}
-            </div>
-            <div style={{ height: 4, background: C.ver, marginTop: 18, width: 260 * interpolate(f, [44, 60], [0, 1], CL) }} />
+          <AbsoluteFill style={{ opacity: t, background: `linear-gradient(${right ? 270 : 90}deg, rgba(12,9,7,0.94) 0%, rgba(12,9,7,0.82) 38%, rgba(12,9,7,0.35) 62%, rgba(12,9,7,0) 80%)` }} />
+          <div style={{ position: "absolute", top: 0, bottom: 0, width: 900, display: "flex", flexDirection: "column", justifyContent: "center", opacity: t, transform: `translateY(${(1 - tin) * 30}px)`, ...side }}>
+            <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 58, letterSpacing: 6, color: PINK, textShadow: shadow }}>{LIST.short} {n} DE {LIST.n}</div>
+            <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 250, lineHeight: 0.95, color: C.white, textShadow: shadow }}>{String(n).padStart(2, "0")}</div>
+            <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: title.length > 22 ? 84 : 100, lineHeight: 1.08, color: C.white, textShadow: shadow, maxWidth: 880, textWrap: "balance" as any }}>{title}</div>
+            <div style={{ height: 8, borderRadius: 4, background: C.ver, marginTop: 22, width: 300 * line }} />
           </div>
         </AbsoluteFill>
       )}
@@ -162,7 +158,6 @@ export const HabitScene: React.FC<{ n: number; title: string; src: string; dur: 
   );
 };
 
-// (4) 50/50: la foto ocupa la mitad derecha (el avatar se corre solo, ver AvatarFramed)
 export const SplitPhoto: React.FC<{ src: string; seed: number; dur: number }> = ({ src, seed, dur }) => {
   const f = useCurrentFrame();
   const p = interpolate(f, [0, 12, dur - 10, dur], [0, 1, 1, 0], { ...CL, easing: Easing.inOut(Easing.cubic) });
@@ -292,25 +287,45 @@ export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: H
 };
 
 // (10) CTA suave junto al avatar, con la fila de los 10 hábitos
-export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number }> = ({ text, dur }) => {
-  const f = useCurrentFrame(); const p = useIn(0, 18), o = useOut(dur, 12);
-  const btn = spring({ frame: f - 6, fps: 30, config: { damping: 12, mass: 0.7 } });
-  const press = interpolate(f, [34, 39, 46], [1, 0.9, 1], CL);
-  const on = f >= 39;
-  const bell = on ? Math.sin((f - 39) / 2.2) * 18 * Math.max(0, 1 - (f - 39) / 40) : 0;
-  const fs = Math.min(64, Math.floor(1560 / Math.max(10, text.length * 0.52)));
+export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number; com?: boolean }> = ({ text, dur, com }) => {
+  const f = useCurrentFrame(); const o = useOut(dur, 14);
+  const btn = spring({ frame: f - 2, fps: 30, config: { damping: 13, mass: 0.7 } });
+  const txt = spring({ frame: f - 14, fps: 30, config: { damping: 16, mass: 0.7 } });
+  const band = (
+    <div style={{ position: "absolute", left: 0, right: 0, bottom: 70, display: "flex", justifyContent: "center", opacity: txt, transform: `translateY(${(1 - txt) * 24}px)` }}>
+      <div style={{ background: "rgba(12,9,7,0.88)", borderRadius: 18, padding: "18px 40px", maxWidth: 1600, fontFamily: SANS, fontWeight: 800, fontSize: text.length > 48 ? 54 : 64, lineHeight: 1.15, color: C.white, textAlign: "center", textWrap: "balance" as any }}>{text}</div>
+    </div>
+  );
+  if (com) {
+    const shown = Math.floor(interpolate(f, [16, 16 + text.length * 1.1], [0, text.length], CL));
+    return (
+      <AbsoluteFill style={{ opacity: o }}>
+        <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(12,9,7,0.7) 0%, rgba(12,9,7,0) 50%)" }} />
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 90, display: "flex", justifyContent: "center", opacity: btn, transform: `translateY(${(1 - btn) * 120}px)` }}>
+          <div style={{ display: "flex", gap: 28, alignItems: "flex-start", background: "#FFFFFF", borderRadius: 26, padding: "30px 40px", width: 1400, boxShadow: "0 20px 50px rgba(0,0,0,0.55)" }}>
+            <div style={{ width: 96, height: 96, borderRadius: 48, background: C.indigo, color: C.white, fontFamily: SANS, fontWeight: 800, fontSize: 52, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>C</div>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 38, color: "#555" }}>Claudio el Cerrajero · 📌 fijado</div>
+              <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 56, lineHeight: 1.18, color: "#111", minHeight: 132 }}>{text.slice(0, shown)}<span style={{ opacity: f % 30 < 15 ? 1 : 0, color: "#D42A20" }}>|</span></div>
+            </div>
+          </div>
+        </div>
+      </AbsoluteFill>
+    );
+  }
+  const press = interpolate(f, [52, 57, 64], [1, 0.88, 1], CL);
+  const on = f >= 57;
+  const bell = on ? Math.sin((f - 57) / 2.4) * 22 * Math.max(0, 1 - (f - 57) / 75) : 0;
   return (
     <AbsoluteFill style={{ opacity: o }}>
-      <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(16,11,8,0.78) 0%, rgba(16,11,8,0) 42%)" }} />
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 210, display: "flex", justifyContent: "center", alignItems: "center", gap: 26, transform: `translateY(${(1 - btn) * 120}px) scale(${press})`, opacity: btn }}>
-        <div style={{ background: on ? "#3A3A3A" : "#D42A20", color: C.white, fontFamily: SANS, fontWeight: 800, fontSize: 58, letterSpacing: 3, padding: "18px 46px", borderRadius: 14, boxShadow: "0 14px 34px rgba(0,0,0,0.5)" }}>{on ? "SUSCRITO" : "SUSCRÍBETE"}</div>
-        <svg width="86" height="86" viewBox="0 0 24 24" style={{ transform: `rotate(${bell}deg)`, transformOrigin: "50% 8%", filter: "drop-shadow(0 6px 10px rgba(0,0,0,0.5))" }}>
-          <path fill={C.white} d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22zm7-6V11a7 7 0 0 0-5.5-6.84V3a1.5 1.5 0 0 0-3 0v1.16A7 7 0 0 0 5 11v5l-2 2v1h18v-1z" />
+      <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(12,9,7,0.75) 0%, rgba(12,9,7,0) 55%)" }} />
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 250, display: "flex", justifyContent: "center", alignItems: "center", gap: 40, transform: `translateY(${(1 - btn) * 160}px) scale(${press})`, opacity: btn }}>
+        <div style={{ background: on ? "#F1F1F1" : "#D42A20", color: on ? "#222" : C.white, fontFamily: SANS, fontWeight: 900, fontSize: 96, letterSpacing: 4, padding: "26px 72px", borderRadius: 22, boxShadow: "0 22px 50px rgba(0,0,0,0.6)" }}>{on ? "SUSCRITO ✓" : "SUSCRÍBETE"}</div>
+        <svg width="150" height="150" viewBox="0 0 24 24" style={{ transform: `rotate(${bell}deg)`, transformOrigin: "50% 8%", filter: "drop-shadow(0 8px 14px rgba(0,0,0,0.6))" }}>
+          <path fill={on ? "#FFD34D" : C.white} d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22zm7-6V11a7 7 0 0 0-5.5-6.84V3a1.5 1.5 0 0 0-3 0v1.16A7 7 0 0 0 5 11v5l-2 2v1h18v-1z" />
         </svg>
       </div>
-      <div style={{ position: "absolute", left: 120, right: 120, bottom: 96, textAlign: "center", opacity: p }}>
-        <span style={{ fontFamily: SERIF, fontWeight: 700, fontSize: fs, color: C.white, textShadow: shadow, whiteSpace: "nowrap" }}>{text}</span>
-      </div>
+      {band}
     </AbsoluteFill>
   );
 };
