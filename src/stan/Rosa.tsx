@@ -82,7 +82,7 @@ export const IdxR: React.FC<{ head: string; cards: { n: number; title: string; s
       <div style={{ position: "absolute", top: 230, left: 0, right: 0, display: "flex", justifyContent: "center", gap: 56 }}>
         {cards.map((c, i) => { const p = sp(f, c.f ?? 10 + i * 12, 13); const lit = on === undefined || on === c.n;
           return (
-            <div key={i} style={{ width: 500, background: R.crema, padding: 18, paddingBottom: 26, transform: `translateY(${(1 - p) * 300}px) rotate(${(i - 1) * 2.2}deg)`, opacity: p * (lit ? 1 : 0.42), boxShadow: "0 24px 50px rgba(0,0,0,0.5)" }}>
+            <div key={i} style={{ width: 500, background: R.crema, padding: 18, paddingBottom: 26, transform: `translateY(${(1 - p) * 300}px) rotate(${(i - 1) * 2.2}deg)`, opacity: p * (lit ? 1 : 0.72), boxShadow: "0 24px 50px rgba(0,0,0,0.5)" }}>
               <Img src={staticFile(c.src)} style={{ width: "100%", height: 300, objectFit: "cover" }} />
               <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 24, letterSpacing: 5, color: R.barro, marginTop: 16 }}>RECETA {c.n}</div>
               <div style={{ fontFamily: HAND, fontSize: 44, lineHeight: 1.1, color: R.pen, marginTop: 6 }}>{c.title}</div>
