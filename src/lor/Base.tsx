@@ -205,10 +205,14 @@ export const Carousel: React.FC<{ items: { title: string; src: string }[]; look:
 
 // (7) mapa de Iowa dibujado a mano sobre la hoja (contorno por lon/lat reales)
 const IOWA: [number, number][] = [[-96.64, 43.5], [-91.22, 43.5], [-91.06, 43.0], [-90.64, 42.5], [-90.15, 42.1], [-90.31, 41.75], [-90.95, 41.43], [-91.05, 41.17], [-91.12, 40.7], [-91.42, 40.38], [-91.73, 40.61], [-95.77, 40.58], [-95.86, 41.1], [-95.94, 41.5], [-96.1, 41.75], [-96.35, 42.2], [-96.62, 42.5], [-96.6, 43.0], [-96.46, 43.3], [-96.64, 43.5]];
-export const MapIowa: React.FC<{ look: Look; pins: { lon: number; lat: number; label: string }[]; dur: number; title?: string }> = ({ look, pins, dur, title }) => {
-  const f = useCurrentFrame(); const S = 250, X0 = 360, Y0 = 210;
-  const P = (lon: number, lat: number) => [X0 + (lon + 96.7) * 0.74 * S, Y0 + (43.55 - lat) * S];
-  const d = IOWA.map(([a, b], i) => `${i ? "L" : "M"}${P(a, b).join(" ")}`).join(" ") + "Z";
+export const MapIowa: React.FC<{ look: Look; pins: { lon: number; lat: number; label: string }[]; dur: number; title?: string; outline?: [number, number][] }> = ({ look, pins, dur, title, outline }) => {
+  const f = useCurrentFrame(); const OL = outline || IOWA;
+  const lons = OL.map((p) => p[0]), lats = OL.map((p) => p[1]);
+  const lo0 = Math.min(...lons), lo1 = Math.max(...lons), la0 = Math.min(...lats), la1 = Math.max(...lats);
+  const kx = Math.cos(((la0 + la1) / 2) * Math.PI / 180);
+  const S = Math.min(1150 / ((lo1 - lo0) * kx), 700 / (la1 - la0)); const X0 = 360, Y0 = 230;
+  const P = (lon: number, lat: number) => [X0 + (lon - lo0) * kx * S, Y0 + (la1 - lat) * S];
+  const d = OL.map(([a, b], i) => `${i ? "L" : "M"}${P(a, b).join(" ")}`).join(" ") + "Z";
   const draw = interpolate(f, [4, 40], [3000, 0], CL);
   const kz = 1 + 0.09 * Math.min(1, f / Math.max(1, dur)); // empuje continuo: el mapa nunca queda congelado
   return (
@@ -220,7 +224,7 @@ export const MapIowa: React.FC<{ look: Look; pins: { lon: number; lat: number; l
         {pins.map((p, i) => { const [x, y] = P(p.lon, p.lat); const o = interpolate(f, [36 + i * 14, 46 + i * 14], [0, 1], CL); return (
           <g key={i} opacity={o}><circle cx={x} cy={y} r={16} fill={C.red} /><text x={x + 28} y={y + 14} fontFamily={HAND} fontWeight={700} fontSize={50} fill={C.ink}>{p.label}</text></g>); })}
       </svg>
-      <div style={{ position: "absolute", left: 360, top: 90, fontFamily: HAND, fontWeight: 700, fontSize: 72, color: C.ink, opacity: interpolate(f, [0, 10], [0, 1], CL) }}>{title || "IOWA"}</div>
+      <div style={{ position: "absolute", left: 360, top: 90, fontFamily: HAND, fontWeight: 700, fontSize: 72, color: C.ink, opacity: interpolate(f, [0, 10], [0, 1], CL) }}>{title || ""}</div>
      </AbsoluteFill>
     </AbsoluteFill>
   );
@@ -273,7 +277,7 @@ export const Data: React.FC<{ big: string; line: string; src: string; dur: numbe
   const m = big.match(/^(\d+)(.*)$/); const v = m ? parseInt(m[1]) : 0;
   // la cifra llega al valor real en 8 cuadros: nunca queda leíble un número equivocado
   const cnt = m && v >= 20 ? Math.round(v * (0.9 + 0.1 * ease(f / 8))) + m[2].replace(/^ (°)/, "$1") : big.replace(/ °/, "°");
-  const short = /USDA/.test(src) ? "USDA" : src;
+  const short = (src.match(/^(USDA|EPA|CDC|DOE|ACCA|FTC)\b/) || [])[1] || (/Department of Energy/.test(src) ? "DOE" : /Disease Control/.test(src) ? "CDC" : /Environmental Protection/.test(src) ? "EPA" : src);
   return (<AbsoluteFill>
     <div style={{ position: "absolute", left: 50, top: 190, background: "rgba(255,250,240,0.97)", padding: "22px 38px", width: 620, boxShadow: "0 16px 40px rgba(0,0,0,0.4)", transform: `scale(${(0.6 + 0.4 * s) * out * (1 + 0.025 * Math.sin(f / 16))})`, transformOrigin: "0% 0%" }}>
       <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 20 }}>
@@ -298,7 +302,7 @@ export const RecapLine: React.FC<{ n: number; N: number; name: string; text: str
 };
 
 // cierre: el libro cerrado sobre la mesa + QR + pregunta para los comentarios
-export const Close: React.FC<{ cover: string; qr: string; look: Look; head: string; question?: string; qAt?: number; dur: number }> = ({ cover, qr, look, head, question, qAt = 9999, dur }) => {
+export const Close: React.FC<{ cover: string; qr?: string; url?: string; look: Look; head: string; question?: string; qAt?: number; dur: number }> = ({ cover, qr, url, look, head, question, qAt = 9999, dur }) => {
   const f = useCurrentFrame(); const inn = spring({ frame: f, fps: 30, config: { damping: 18 } }); const q = spring({ frame: f - qAt, fps: 30, config: { damping: 16 } });
   const cam = 1 + 0.12 * ease(f / Math.max(1, dur));
   return (<AbsoluteFill style={{ overflow: "hidden" }}>
@@ -307,8 +311,8 @@ export const Close: React.FC<{ cover: string; qr: string; look: Look; head: stri
     <div style={{ position: "absolute", left: 300, top: 90, height: 900, width: 696, boxShadow: "0 34px 80px rgba(0,0,0,0.55)", transform: `translateY(${(1 - inn) * 1000}px) rotateY(${10 - 14 * ease(f / Math.max(1, dur))}deg) rotate(${-3 * inn}deg)` }}>
       <Img src={staticFile(cover)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
     <div style={{ position: "absolute", left: 1130, top: 150, width: 560, transform: `translateX(${(1 - inn) * 900}px) rotate(${2 - 2 * ease(f / Math.max(1, dur))}deg)` }}>
-      <div style={{ background: "#fff", padding: 22, boxShadow: "0 20px 50px rgba(0,0,0,0.45)" }}><Img src={staticFile(qr)} style={{ width: "100%", display: "block" }} /></div>
-      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 36, color: C.ink, background: "#FFF3D6", padding: "10px 12px", whiteSpace: "nowrap", boxShadow: "0 10px 26px rgba(0,0,0,0.4)", marginTop: 22, textAlign: "center" }}>cookbook.lorettaschurch.com</div>
+      {qr && <div style={{ background: "#fff", padding: 22, boxShadow: "0 20px 50px rgba(0,0,0,0.45)" }}><Img src={staticFile(qr)} style={{ width: "100%", display: "block" }} /></div>}
+      {(url ?? "cookbook.lorettaschurch.com") && <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 36, color: C.ink, background: "#FFF3D6", padding: "10px 12px", whiteSpace: "nowrap", boxShadow: "0 10px 26px rgba(0,0,0,0.4)", marginTop: 22, textAlign: "center" }}>{url ?? "cookbook.lorettaschurch.com"}</div>}
     </div>
    </AbsoluteFill>
     {question && <div style={{ position: "absolute", left: 140, right: 140, bottom: 70, textAlign: "center", background: "#fff", borderRadius: 34, padding: "26px 40px", fontFamily: HAND, fontWeight: 700, fontSize: 66, color: C.ink, boxShadow: "0 18px 44px rgba(0,0,0,0.45)", opacity: q > 0.02 ? 1 : 0, transform: `translateY(${(1 - q) * 300 + 6 * Math.sin(f / 20)}px) scale(${0.85 + 0.15 * q})` }}>{question}</div>}
