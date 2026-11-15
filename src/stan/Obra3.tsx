@@ -69,8 +69,7 @@ export const Pizarra: React.FC<{ src: string; kicker: string; rows: Row[]; foot?
 export const ChapO: React.FC<any> = ({ n, N, title, src, dur }) => <Placa src={src} kicker={`PASO ${n} DE ${N}`} num={n} title={title} pos={n % 2 ? "left" : "right"} dur={dur} seed={n * 11 + 5} />;
 export const CarruselO: React.FC<any> = ({ head, cards, bg, recap, dur }) => {
   const f = useCurrentFrame();
-  if (!recap) return <Placa src={bg} kicker="LAJAS QUE PARECEN PIEDRA" title="12 pasos" big={150} sub={"te los voy contando
-uno por uno"} pos="left" dur={dur} />;
+  if (!recap) return <Placa src={bg} kicker="LAJAS QUE PARECEN PIEDRA" title="12 pasos" big={150} sub={"te los voy contando\nuno por uno"} pos="left" dur={dur} />;
   const first = cards[0].f ?? 0;
   if (f < first) return <Placa src={bg} kicker="REPASO" title="Los 12 pasos" big={130} pos="left" dur={first + 8} />;
   const cur = Math.max(0, cards.filter((c: any) => (c.f ?? 0) <= f).length - 1); const c = cards[cur];
