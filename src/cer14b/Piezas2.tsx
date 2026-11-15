@@ -130,7 +130,7 @@ export const HabitScene: React.FC<{ n: number; title: string; src: string; dur: 
   const v = n - 1, dir = v % 4, right = v % 2 === 1, mode = Math.floor(v / 2) % 3;
   const o = useOut(dur, 10);
   const k = cl((f - 10) / (dur - 10), 0, 1);
-  const z = mode === 0 ? lerp(1.22, 1.06, Easing.out(Easing.cubic)(k)) : mode === 1 ? lerp(1.04, 1.16, k) : 1.12;
+  const z = mode === 0 ? lerp(1.16, 1.04, Easing.out(Easing.cubic)(k)) : lerp(1.04, 1.14, k);
   const px = mode === 2 ? lerp(right ? 3 : -3, right ? -3 : 3, k) : 0;
   const tin = spring({ frame: f - 14, fps: 30, config: { damping: 16, mass: 0.7 } });
   const tout = interpolate(f, [dur - 26, dur - 14], [1, 0], CL);
@@ -139,21 +139,20 @@ export const HabitScene: React.FC<{ n: number; title: string; src: string; dur: 
   const side: React.CSSProperties = right ? { right: 110, alignItems: "flex-end", textAlign: "right" } : { left: 110, alignItems: "flex-start", textAlign: "left" };
   return (
     <AbsoluteFill>
-      {f >= 10 && (
-        <AbsoluteFill style={{ opacity: o }}>
+      {(
+        <AbsoluteFill style={{ opacity: Math.min(o, interpolate(f, [0, 10], [0, 1], CL)) }}>
           <AbsoluteFill style={{ overflow: "hidden", background: C.ink }}>
             <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `translateX(${px}%) scale(${z})` }} />
           </AbsoluteFill>
-          <AbsoluteFill style={{ opacity: t, background: `linear-gradient(${right ? 270 : 90}deg, rgba(12,9,7,0.94) 0%, rgba(12,9,7,0.82) 38%, rgba(12,9,7,0.35) 62%, rgba(12,9,7,0) 80%)` }} />
+          <AbsoluteFill style={{ opacity: t, background: `linear-gradient(${right ? 270 : 90}deg, rgba(12,9,7,0.95) 0%, rgba(12,9,7,0.9) 50%, rgba(12,9,7,0.5) 66%, rgba(12,9,7,0) 82%)` }} />
           <div style={{ position: "absolute", top: 0, bottom: 0, width: 900, display: "flex", flexDirection: "column", justifyContent: "center", opacity: t, transform: `translateY(${(1 - tin) * 30}px)`, ...side }}>
-            <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 58, letterSpacing: 6, color: PINK, textShadow: shadow }}>{LIST.short} {n} DE {LIST.n}</div>
-            <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 250, lineHeight: 0.95, color: C.white, textShadow: shadow }}>{String(n).padStart(2, "0")}</div>
+            <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 72, letterSpacing: 5, color: PINK, textShadow: shadow }}>{LIST.short} {n} DE {LIST.n}</div>
+            <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 230, lineHeight: 1, fontVariantNumeric: "lining-nums tabular-nums", fontFeatureSettings: '"lnum" 1, "tnum" 1', color: C.white, textShadow: shadow }}>{String(n).padStart(2, "0")}</div>
             <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: title.length > 22 ? 84 : 100, lineHeight: 1.08, color: C.white, textShadow: shadow, maxWidth: 880, textWrap: "balance" as any }}>{title}</div>
             <div style={{ height: 8, borderRadius: 4, background: C.ver, marginTop: 22, width: 300 * line }} />
           </div>
         </AbsoluteFill>
       )}
-      <InkWipe dir={dir} len={20} />
     </AbsoluteFill>
   );
 };
@@ -297,7 +296,9 @@ export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number; com?: 
     </div>
   );
   if (com) {
-    const shown = Math.floor(interpolate(f, [16, 16 + text.length * 1.1], [0, text.length], CL));
+    const T0 = 50, T1 = T0 + Math.round(text.length * 1.75);
+    const shown = Math.floor(interpolate(f, [T0, T1], [0, text.length], CL));
+    const typing = f < T1 + 8;
     return (
       <AbsoluteFill style={{ opacity: o }}>
         <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(12,9,7,0.7) 0%, rgba(12,9,7,0) 50%)" }} />
@@ -306,16 +307,16 @@ export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number; com?: 
             <div style={{ width: 96, height: 96, borderRadius: 48, background: C.indigo, color: C.white, fontFamily: SANS, fontWeight: 800, fontSize: 52, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>C</div>
             <div style={{ flex: 1 }}>
               <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 38, color: "#555" }}>Claudio el Cerrajero · 📌 fijado</div>
-              <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 56, lineHeight: 1.18, color: "#111", minHeight: 132 }}>{text.slice(0, shown)}<span style={{ opacity: f % 30 < 15 ? 1 : 0, color: "#D42A20" }}>|</span></div>
+              <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 56, lineHeight: 1.18, color: "#111", minHeight: 200 }}>{text.slice(0, shown)}{typing && <span style={{ opacity: f % 30 < 15 ? 1 : 0, color: "#D42A20" }}>|</span>}</div>
             </div>
           </div>
         </div>
       </AbsoluteFill>
     );
   }
-  const press = interpolate(f, [52, 57, 64], [1, 0.88, 1], CL);
-  const on = f >= 57;
-  const bell = on ? Math.sin((f - 57) / 2.4) * 22 * Math.max(0, 1 - (f - 57) / 75) : 0;
+  const press = interpolate(f, [70, 75, 82], [1, 0.88, 1], CL);
+  const on = f >= 75;
+  const bell = on ? Math.sin((f - 75) / 2.4) * 24 * Math.max(0, 1 - (f - 75) / 80) : 0;
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(12,9,7,0.75) 0%, rgba(12,9,7,0) 55%)" }} />
