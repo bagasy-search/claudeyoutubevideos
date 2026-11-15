@@ -37,7 +37,7 @@ export const EscCoccion: React.FC<{ src: string; fSame: number; fThin: number; f
   const B = [[330, 338, 440, 835], [632, 340, 718, 835], [1305, 355, 1495, 835]];
   const d = interpolate(f, [fThin + 6, dur - 24], [0, 58], CL);
   const a = seg(f, fThin - 14, fThin + 16), b = seg(f, fThick - 14, fThick + 18);
-  const cx = lerp(lerp(960, 650, a), 1270, b), cy = lerp(540, 590, a), s = lerp(1.0, 1.46, a) + 0.03 * (f / dur);
+  const cx = lerp(960, 1100, b), cy = lerp(540, 590, a), s = lerp(lerp(1.0, 1.12, a), 1.3, b) + 0.03 * (f / dur);
   const cooked = "grayscale(0.78) sepia(0.55) brightness(0.74) contrast(1.05)";
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#d9d6cf" }}>
@@ -53,8 +53,8 @@ export const EscCoccion: React.FC<{ src: string; fSame: number; fThin: number; f
             ); }); })}
         <PapelT x={390} y={880} t="12 oz" f0={fSame} f1={fThin - 10} size={84} rot={-3} />
         <PapelT x={1300} y={880} t="12 oz" f0={fSame + 6} f1={fThin - 10} size={84} rot={2} />
-        <PapelT x={250} y={250} t="gray all the way" f0={fThin + 44} f1={fThick - 6} size={76} rot={-2} />
-        <PapelT x={700} y={300} t="still a middle" f0={fThick + 44} size={76} rot={2} />
+        <PapelT x={300} y={200} t="gray all the way" f0={fThin + 44} f1={fThick - 6} size={92} rot={-2} />
+        <PapelT x={1000} y={230} t="still a middle" f0={fThick + 44} size={92} rot={2} />
       </AbsoluteFill>
     </AbsoluteFill>
   );
@@ -76,10 +76,10 @@ export const EscCortina: React.FC<{ src: string; fOne: number; fMany: number; fF
             <div style={{ position: "absolute", left: 0, top: 0, width: w, height: 1080, overflow: "hidden" }}>
               <Img src={staticFile(src)} style={{ ...FULL, transform: "scaleX(-1)" }} />
             </div>
-            <div style={{ position: "absolute", left: w - 5, top: 200, width: 10, height: 640, background: "linear-gradient(90deg, rgba(255,250,235,0), rgba(255,250,235,0.95), rgba(255,250,235,0))", boxShadow: "0 0 22px 6px rgba(0,0,0,0.5)" }} />
+            <div style={{ position: "absolute", left: w - 5, top: 200, width: 10, height: 640, background: "linear-gradient(90deg, rgba(255,250,235,0), rgba(255,250,235,0.95), rgba(255,250,235,0))", boxShadow: "0 0 22px 6px rgba(0,0,0,0.5)", opacity: w > 880 ? 0 : 1 }} />
           </>
         ) : null}
-        <PapelT x={150} y={800} t="1 flip" f0={fOne} f1={fFace - 6} size={110} rot={-3} />
+        <PapelT x={150} y={800} t="1 flip" f0={fOne} f1={fMany - 10} size={110} rot={-3} />
         <PapelT x={1180} y={800} t="every 30 sec" f0={fMany} f1={fFace - 6} size={100} rot={2} />
         <PapelT x={60} y={790} t="thick gray band" f0={fBand + 4} f1={fThin - 8} size={84} rot={-2} />
         <PapelT x={60} y={790} t="pink to the edge" f0={fThin + 40} size={84} rot={-2} />
@@ -137,8 +137,8 @@ export const EscTrago: React.FC<{ src: string; fDrink: number; fTime: number; fD
         <AbsoluteFill style={{ clipPath: FACE }}><Img src={staticFile(src)} style={{ ...FULL, filter: `brightness(${1 - 0.26 * p}) saturate(${1 + 0.3 * p})` }} /></AbsoluteFill>
         <div style={{ position: "absolute", left: 215, top: 372, width: 1530, height: 16, background: "linear-gradient(180deg, rgba(40,0,0,0.45), rgba(40,0,0,0))", opacity: p * (1 - seg(f, dur - 30, dur - 10)), transform: "rotate(0.7deg)", transformOrigin: "0 0" }} />
       </AbsoluteFill>
-      <Papel x={940} y={60} t="45 minutes to start" f0={fTime} size={100} rot={2} />
-      <Papel x={1180} y={210} t="…then all day" f0={fDown - 18} size={100} rot={-2} />
+      <Papel x={820} y={50} t="45 minutes to start" f0={fTime} size={118} rot={2} />
+      <Papel x={1130} y={205} t="…then all day" f0={fDown - 18} size={118} rot={-2} />
     </AbsoluteFill>
   );
 };
