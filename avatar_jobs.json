@@ -1,0 +1,618 @@
+[
+ {
+  "win": 1,
+  "out": "win-001.mp4",
+  "timeline_start_s": 0.0,
+  "offset_s": 0,
+  "seconds": 8.22
+ },
+ {
+  "win": 2,
+  "out": "win-002.mp4",
+  "timeline_start_s": 11.64,
+  "offset_s": 8.22,
+  "seconds": 2.18
+ },
+ {
+  "win": 3,
+  "out": "win-003.mp4",
+  "timeline_start_s": 23.84,
+  "offset_s": 10.4,
+  "seconds": 4.22
+ },
+ {
+  "win": 4,
+  "out": "win-004.mp4",
+  "timeline_start_s": 52.28,
+  "offset_s": 14.62,
+  "seconds": 1.46
+ },
+ {
+  "win": 5,
+  "out": "win-005.mp4",
+  "timeline_start_s": 63.74,
+  "offset_s": 16.08,
+  "seconds": 2.08
+ },
+ {
+  "win": 6,
+  "out": "win-006.mp4",
+  "timeline_start_s": 75.18,
+  "offset_s": 18.16,
+  "seconds": 3.04
+ },
+ {
+  "win": 7,
+  "out": "win-007.mp4",
+  "timeline_start_s": 115.92,
+  "offset_s": 21.2,
+  "seconds": 2.74
+ },
+ {
+  "win": 8,
+  "out": "win-008.mp4",
+  "timeline_start_s": 134.16,
+  "offset_s": 23.94,
+  "seconds": 5.9
+ },
+ {
+  "win": 9,
+  "out": "win-009.mp4",
+  "timeline_start_s": 176.44,
+  "offset_s": 29.84,
+  "seconds": 3.4
+ },
+ {
+  "win": 10,
+  "out": "win-010.mp4",
+  "timeline_start_s": 181.7,
+  "offset_s": 33.24,
+  "seconds": 6.32
+ },
+ {
+  "win": 11,
+  "out": "win-011.mp4",
+  "timeline_start_s": 197.5,
+  "offset_s": 39.56,
+  "seconds": 2.88
+ },
+ {
+  "win": 12,
+  "out": "win-012.mp4",
+  "timeline_start_s": 205.56,
+  "offset_s": 42.44,
+  "seconds": 2.62
+ },
+ {
+  "win": 13,
+  "out": "win-013.mp4",
+  "timeline_start_s": 217.14,
+  "offset_s": 45.06,
+  "seconds": 1.74
+ },
+ {
+  "win": 14,
+  "out": "win-014.mp4",
+  "timeline_start_s": 282.7,
+  "offset_s": 46.8,
+  "seconds": 7.62
+ },
+ {
+  "win": 15,
+  "out": "win-015.mp4",
+  "timeline_start_s": 298.18,
+  "offset_s": 54.42,
+  "seconds": 1.36
+ },
+ {
+  "win": 16,
+  "out": "win-016.mp4",
+  "timeline_start_s": 316.3,
+  "offset_s": 55.78,
+  "seconds": 2.8
+ },
+ {
+  "win": 17,
+  "out": "win-017.mp4",
+  "timeline_start_s": 322.86,
+  "offset_s": 58.58,
+  "seconds": 4.34
+ },
+ {
+  "win": 18,
+  "out": "win-018.mp4",
+  "timeline_start_s": 352.24,
+  "offset_s": 62.92,
+  "seconds": 2.5
+ },
+ {
+  "win": 19,
+  "out": "win-019.mp4",
+  "timeline_start_s": 366.46,
+  "offset_s": 65.42,
+  "seconds": 0.28
+ },
+ {
+  "win": 20,
+  "out": "win-020.mp4",
+  "timeline_start_s": 393.96,
+  "offset_s": 65.7,
+  "seconds": 1.64
+ },
+ {
+  "win": 21,
+  "out": "win-021.mp4",
+  "timeline_start_s": 413.76,
+  "offset_s": 67.34,
+  "seconds": 11.48
+ },
+ {
+  "win": 22,
+  "out": "win-022.mp4",
+  "timeline_start_s": 462.5,
+  "offset_s": 78.82,
+  "seconds": 2.74
+ },
+ {
+  "win": 23,
+  "out": "win-023.mp4",
+  "timeline_start_s": 491.88,
+  "offset_s": 81.56,
+  "seconds": 8.7
+ },
+ {
+  "win": 24,
+  "out": "win-024.mp4",
+  "timeline_start_s": 503.12,
+  "offset_s": 90.26,
+  "seconds": 2.44
+ },
+ {
+  "win": 25,
+  "out": "win-025.mp4",
+  "timeline_start_s": 512.5,
+  "offset_s": 92.7,
+  "seconds": 3.34
+ },
+ {
+  "win": 26,
+  "out": "win-026.mp4",
+  "timeline_start_s": 560.288,
+  "offset_s": 96.04,
+  "seconds": 2.74
+ },
+ {
+  "win": 27,
+  "out": "win-027.mp4",
+  "timeline_start_s": 593.268,
+  "offset_s": 98.78,
+  "seconds": 2.68
+ },
+ {
+  "win": 28,
+  "out": "win-028.mp4",
+  "timeline_start_s": 629.428,
+  "offset_s": 101.46,
+  "seconds": 21.84
+ },
+ {
+  "win": 29,
+  "out": "win-029.mp4",
+  "timeline_start_s": 653.528,
+  "offset_s": 123.3,
+  "seconds": 6.98
+ },
+ {
+  "win": 30,
+  "out": "win-030.mp4",
+  "timeline_start_s": 669.468,
+  "offset_s": 130.28,
+  "seconds": 1.22
+ },
+ {
+  "win": 31,
+  "out": "win-031.mp4",
+  "timeline_start_s": 682.868,
+  "offset_s": 131.5,
+  "seconds": 2.18
+ },
+ {
+  "win": 32,
+  "out": "win-032.mp4",
+  "timeline_start_s": 686.268,
+  "offset_s": 133.68,
+  "seconds": 2.78
+ },
+ {
+  "win": 33,
+  "out": "win-033.mp4",
+  "timeline_start_s": 705.968,
+  "offset_s": 136.46,
+  "seconds": 2.82
+ },
+ {
+  "win": 34,
+  "out": "win-034.mp4",
+  "timeline_start_s": 722.348,
+  "offset_s": 139.28,
+  "seconds": 2.32
+ },
+ {
+  "win": 35,
+  "out": "win-035.mp4",
+  "timeline_start_s": 741.448,
+  "offset_s": 141.6,
+  "seconds": 17.06
+ },
+ {
+  "win": 36,
+  "out": "win-036.mp4",
+  "timeline_start_s": 764.028,
+  "offset_s": 158.66,
+  "seconds": 3.66
+ },
+ {
+  "win": 37,
+  "out": "win-037.mp4",
+  "timeline_start_s": 775.748,
+  "offset_s": 162.32,
+  "seconds": 2.34
+ },
+ {
+  "win": 38,
+  "out": "win-038.mp4",
+  "timeline_start_s": 783.928,
+  "offset_s": 164.66,
+  "seconds": 2.26
+ },
+ {
+  "win": 39,
+  "out": "win-039.mp4",
+  "timeline_start_s": 842.808,
+  "offset_s": 166.92,
+  "seconds": 8.36
+ },
+ {
+  "win": 40,
+  "out": "win-040.mp4",
+  "timeline_start_s": 861.468,
+  "offset_s": 175.28,
+  "seconds": 2.62
+ },
+ {
+  "win": 41,
+  "out": "win-041.mp4",
+  "timeline_start_s": 877.288,
+  "offset_s": 177.9,
+  "seconds": 16.24
+ },
+ {
+  "win": 42,
+  "out": "win-042.mp4",
+  "timeline_start_s": 932.248,
+  "offset_s": 194.14,
+  "seconds": 1.14
+ },
+ {
+  "win": 43,
+  "out": "win-043.mp4",
+  "timeline_start_s": 942.408,
+  "offset_s": 195.28,
+  "seconds": 1.58
+ },
+ {
+  "win": 44,
+  "out": "win-044.mp4",
+  "timeline_start_s": 954.148,
+  "offset_s": 196.86,
+  "seconds": 3.54
+ },
+ {
+  "win": 45,
+  "out": "win-045.mp4",
+  "timeline_start_s": 974.048,
+  "offset_s": 200.4,
+  "seconds": 4.88
+ },
+ {
+  "win": 46,
+  "out": "win-046.mp4",
+  "timeline_start_s": 999.528,
+  "offset_s": 205.28,
+  "seconds": 2.34
+ },
+ {
+  "win": 47,
+  "out": "win-047.mp4",
+  "timeline_start_s": 1010.968,
+  "offset_s": 207.62,
+  "seconds": 2.96
+ },
+ {
+  "win": 48,
+  "out": "win-048.mp4",
+  "timeline_start_s": 1048.368,
+  "offset_s": 210.58,
+  "seconds": 7.34
+ },
+ {
+  "win": 49,
+  "out": "win-049.mp4",
+  "timeline_start_s": 1064.508,
+  "offset_s": 217.92,
+  "seconds": 10.94
+ },
+ {
+  "win": 50,
+  "out": "win-050.mp4",
+  "timeline_start_s": 1097.877,
+  "offset_s": 228.86,
+  "seconds": 6.2
+ },
+ {
+  "win": 51,
+  "out": "win-051.mp4",
+  "timeline_start_s": 1180.677,
+  "offset_s": 235.06,
+  "seconds": 7.68
+ },
+ {
+  "win": 52,
+  "out": "win-052.mp4",
+  "timeline_start_s": 1215.997,
+  "offset_s": 242.74,
+  "seconds": 1.06
+ },
+ {
+  "win": 53,
+  "out": "win-053.mp4",
+  "timeline_start_s": 1226.197,
+  "offset_s": 243.8,
+  "seconds": 24.74
+ },
+ {
+  "win": 54,
+  "out": "win-054.mp4",
+  "timeline_start_s": 1252.137,
+  "offset_s": 268.54,
+  "seconds": 3.04
+ },
+ {
+  "win": 55,
+  "out": "win-055.mp4",
+  "timeline_start_s": 1258.417,
+  "offset_s": 271.58,
+  "seconds": 2.28
+ },
+ {
+  "win": 56,
+  "out": "win-056.mp4",
+  "timeline_start_s": 1261.657,
+  "offset_s": 273.86,
+  "seconds": 1.42
+ },
+ {
+  "win": 57,
+  "out": "win-057.mp4",
+  "timeline_start_s": 1280.717,
+  "offset_s": 275.28,
+  "seconds": 5.54
+ },
+ {
+  "win": 58,
+  "out": "win-058.mp4",
+  "timeline_start_s": 1296.677,
+  "offset_s": 280.82,
+  "seconds": 3.36
+ },
+ {
+  "win": 59,
+  "out": "win-059.mp4",
+  "timeline_start_s": 1364.837,
+  "offset_s": 284.18,
+  "seconds": 14.68
+ },
+ {
+  "win": 60,
+  "out": "win-060.mp4",
+  "timeline_start_s": 1393.277,
+  "offset_s": 298.86,
+  "seconds": 5.46
+ },
+ {
+  "win": 61,
+  "out": "win-061.mp4",
+  "timeline_start_s": 1407.857,
+  "offset_s": 304.32,
+  "seconds": 1.88
+ },
+ {
+  "win": 62,
+  "out": "win-062.mp4",
+  "timeline_start_s": 1413.657,
+  "offset_s": 306.2,
+  "seconds": 14.4
+ },
+ {
+  "win": 63,
+  "out": "win-063.mp4",
+  "timeline_start_s": 1441.917,
+  "offset_s": 320.6,
+  "seconds": 3.6
+ },
+ {
+  "win": 64,
+  "out": "win-064.mp4",
+  "timeline_start_s": 1459.397,
+  "offset_s": 324.2,
+  "seconds": 7.68
+ },
+ {
+  "win": 65,
+  "out": "win-065.mp4",
+  "timeline_start_s": 1470.657,
+  "offset_s": 331.88,
+  "seconds": 5.08
+ },
+ {
+  "win": 66,
+  "out": "win-066.mp4",
+  "timeline_start_s": 1483.637,
+  "offset_s": 336.96,
+  "seconds": 3.18
+ },
+ {
+  "win": 67,
+  "out": "win-067.mp4",
+  "timeline_start_s": 1565.477,
+  "offset_s": 340.14,
+  "seconds": 4.46
+ },
+ {
+  "win": 68,
+  "out": "win-068.mp4",
+  "timeline_start_s": 1573.957,
+  "offset_s": 344.6,
+  "seconds": 4.42
+ },
+ {
+  "win": 69,
+  "out": "win-069.mp4",
+  "timeline_start_s": 1589.957,
+  "offset_s": 349.02,
+  "seconds": 2.98
+ },
+ {
+  "win": 70,
+  "out": "win-070.mp4",
+  "timeline_start_s": 1595.637,
+  "offset_s": 352.0,
+  "seconds": 4.84
+ },
+ {
+  "win": 71,
+  "out": "win-071.mp4",
+  "timeline_start_s": 1624.297,
+  "offset_s": 356.84,
+  "seconds": 2.86
+ },
+ {
+  "win": 72,
+  "out": "win-072.mp4",
+  "timeline_start_s": 1656.026,
+  "offset_s": 359.7,
+  "seconds": 2.66
+ },
+ {
+  "win": 73,
+  "out": "win-073.mp4",
+  "timeline_start_s": 1680.426,
+  "offset_s": 362.36,
+  "seconds": 7.42
+ },
+ {
+  "win": 74,
+  "out": "win-074.mp4",
+  "timeline_start_s": 1690.286,
+  "offset_s": 369.78,
+  "seconds": 17.98
+ },
+ {
+  "win": 75,
+  "out": "win-075.mp4",
+  "timeline_start_s": 1711.626,
+  "offset_s": 387.76,
+  "seconds": 5.68
+ },
+ {
+  "win": 76,
+  "out": "win-076.mp4",
+  "timeline_start_s": 1727.406,
+  "offset_s": 393.44,
+  "seconds": 8.7
+ },
+ {
+  "win": 77,
+  "out": "win-077.mp4",
+  "timeline_start_s": 1776.386,
+  "offset_s": 402.14,
+  "seconds": 0.82
+ },
+ {
+  "win": 78,
+  "out": "win-078.mp4",
+  "timeline_start_s": 1780.766,
+  "offset_s": 402.96,
+  "seconds": 4.56
+ },
+ {
+  "win": 79,
+  "out": "win-079.mp4",
+  "timeline_start_s": 1836.886,
+  "offset_s": 407.52,
+  "seconds": 7.28
+ },
+ {
+  "win": 80,
+  "out": "win-080.mp4",
+  "timeline_start_s": 1871.366,
+  "offset_s": 414.8,
+  "seconds": 11.04
+ },
+ {
+  "win": 81,
+  "out": "win-081.mp4",
+  "timeline_start_s": 1921.706,
+  "offset_s": 425.84,
+  "seconds": 2.6
+ },
+ {
+  "win": 82,
+  "out": "win-082.mp4",
+  "timeline_start_s": 1937.146,
+  "offset_s": 428.44,
+  "seconds": 3.9
+ },
+ {
+  "win": 83,
+  "out": "win-083.mp4",
+  "timeline_start_s": 1952.666,
+  "offset_s": 432.34,
+  "seconds": 3.02
+ },
+ {
+  "win": 84,
+  "out": "win-084.mp4",
+  "timeline_start_s": 2020.506,
+  "offset_s": 435.36,
+  "seconds": 8.86
+ },
+ {
+  "win": 85,
+  "out": "win-085.mp4",
+  "timeline_start_s": 2038.446,
+  "offset_s": 444.22,
+  "seconds": 2.3
+ },
+ {
+  "win": 86,
+  "out": "win-086.mp4",
+  "timeline_start_s": 2070.846,
+  "offset_s": 446.52,
+  "seconds": 1.82
+ },
+ {
+  "win": 87,
+  "out": "win-087.mp4",
+  "timeline_start_s": 2150.206,
+  "offset_s": 448.34,
+  "seconds": 18.04
+ },
+ {
+  "win": 88,
+  "out": "win-088.mp4",
+  "timeline_start_s": 2180.106,
+  "offset_s": 466.38,
+  "seconds": 1.24
+ }
+]
