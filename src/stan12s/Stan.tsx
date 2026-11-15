@@ -954,7 +954,7 @@ export const GlassTherm: React.FC<{ head: string; marks: GMark[]; min: number; m
           );
         })}
         {note ? <div style={{ position: "absolute", left: 620, top: 770, padding: "14px 44px", border: `8px solid ${K.red}`, borderRadius: 14, fontFamily: SANS, fontWeight: 700, fontSize: 84, letterSpacing: 4, color: K.red, whiteSpace: "nowrap", opacity: Math.min(1, nS * 3), transform: `rotate(-4deg) scale(${1.7 - 0.7 * Math.min(1.05, nS)})`, transformOrigin: "20% 50%" }}>{note}</div> : null}
-        <div style={{ position: "absolute", left: 620, bottom: 36, fontFamily: SANS, fontWeight: 600, fontSize: 58, color: "rgba(42,26,18,0.85)", opacity: interpolate(f, [16, 28], [0, 1], CL), whiteSpace: "nowrap" }}>{source}</div>
+        <div style={{ position: "absolute", left: 620, bottom: 40, fontFamily: SANS, fontWeight: 600, fontSize: 44, color: "rgba(42,26,18,0.85)", opacity: interpolate(f, [16, 28], [0, 1], CL), whiteSpace: "nowrap" }}>{source}</div>
       </AbsoluteFill>
     </TileWall>
   );
@@ -1015,7 +1015,7 @@ export const SlipJar: React.FC<{ n: number; text: string; dur: number; seed: num
         ) : null}
         {/* el papel que sale y se despliega */}
         {!intro ? (
-          <div style={{ position: "absolute", left: 680, top: 110 + Math.sin(f / 19) * 6, width: 1120, height: 760, perspective: 1800, transformOrigin: "0 0", transform: `translate(${(1 - Math.min(1, rise)) * -370}px, ${(1 - Math.min(1, rise)) * 310}px) scale(${0.12 + 0.88 * Math.min(1, rise)}) rotate(${1.2 - open * 0.6 + (1 - Math.min(1, rise)) * -24}deg)` }}>
+          <div style={{ position: "absolute", left: 630, top: 110 + Math.sin(f / 19) * 6, width: 1120, height: 760, perspective: 1800, transformOrigin: "0 0", transform: `translate(${(1 - Math.min(1, rise)) * -370}px, ${(1 - Math.min(1, rise)) * 310}px) scale(${0.12 + 0.88 * Math.min(1, rise)}) rotate(${1.2 - open * 0.6 + (1 - Math.min(1, rise)) * -24}deg)` }}>
             <div style={{ position: "absolute", left: 0, top: 0, width: 1120, height: 190, backgroundImage: whitePaper, boxShadow: "0 18px 30px rgba(0,0,0,0.3)", display: "flex", alignItems: "center", paddingLeft: 60, boxSizing: "border-box", gap: 30 }}>
               <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 52, letterSpacing: 12, color: K.red }}>QUESTION</div>
               <div style={{ fontFamily: SERIF, fontSize: 150, lineHeight: 1, color: K.red }}>{n}</div>
