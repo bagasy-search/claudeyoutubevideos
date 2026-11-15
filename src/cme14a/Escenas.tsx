@@ -17,6 +17,7 @@ export const EscPersiana: React.FC<{ dur: number; img: string; fs: number[] }> =
   return (
     <AbsoluteFill style={{ background: "#0E0E0F", overflow: "hidden", opacity: fade(f, dur) }}>
       <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: "960px 520px" }}>
+        <Img src={staticFile(img)} style={{ ...FULL, filter: "grayscale(0.6) brightness(0.32) blur(3px)" }} />
         {CORTES.slice(0, -1).map((x0, i) => {
           const w = CORTES[i + 1] - x0;
           const at = Math.max(fs[i] ?? 9999, 10);
@@ -27,14 +28,14 @@ export const EscPersiana: React.FC<{ dur: number; img: string; fs: number[] }> =
           const face: React.CSSProperties = { position: "absolute", inset: 0, overflow: "hidden", backfaceVisibility: "hidden" };
           return (
             <div key={i} style={{ position: "absolute", left: x0 + 3, top: 0, width: w - 6, height: 1080, perspective: 1100 }}>
-              <div style={{ position: "absolute", inset: 0, transformStyle: "preserve-3d", transform: `translateZ(${-140 * lift}px) rotateY(${a}deg)`, boxShadow: "0 0 24px rgba(0,0,0,0.6)" }}>
+              <div style={{ position: "absolute", inset: 0, transformStyle: "preserve-3d", transform: `translateZ(${-50 * lift}px) rotateY(${a}deg)`, boxShadow: "0 0 24px rgba(0,0,0,0.6)" }}>
                 <div style={face}><Img src={staticFile(img)} style={{ ...FULL, left: -x0 - 3 }} /></div>
                 <div style={{ ...face, transform: "rotateY(180deg)" }}>
                   <Img src={staticFile(img)} style={{ ...FULL, left: -x0 - 3, filter: "grayscale(1) brightness(0.5) contrast(1.1)" }} />
-                  <div style={{ position: "absolute", left: 0, right: 0, top: 430, textAlign: "center", fontFamily: OSW, fontWeight: 700, fontSize: Math.min(170, w * 0.6), color: "#E0402F", opacity: noOp, textShadow: "0 4px 18px rgba(0,0,0,0.8)" }}>NO</div>
+                  <div style={{ position: "absolute", left: 0, right: 0, top: 430, textAlign: "center", fontFamily: OSW, fontWeight: 700, fontSize: Math.min(200, w * 0.7), color: "#E0402F", opacity: noOp, textShadow: "0 4px 18px rgba(0,0,0,0.8)" }}>NO</div>
                 </div>
               </div>
-              {a > 2 && a < 178 ? <div style={{ position: "absolute", inset: 0, background: `rgba(0,0,0,${0.55 * lift})`, pointerEvents: "none" }} /> : null}
+              {a > 2 && a < 178 ? <div style={{ position: "absolute", inset: 0, background: `linear-gradient(90deg, rgba(255,240,215,${0.35 * lift}) 0%, rgba(0,0,0,${0.22 * lift}) 18%, rgba(0,0,0,${0.22 * lift}) 82%, rgba(255,240,215,${0.35 * lift}) 100%)`, pointerEvents: "none" }} /> : null}
             </div>
           );
         })}
@@ -47,17 +48,17 @@ export const EscPersiana: React.FC<{ dur: number; img: string; fs: number[] }> =
 export const EscBalanza: React.FC<{ dur: number; img: string; fTilt: number }> = ({ dur, img, fTilt }) => {
   const f = useCurrentFrame();
   const t = Math.max(0, f - fTilt) / 30;
-  const ang = f < fTilt ? 0 : 7 * (1 - Math.exp(-2.2 * t) * Math.cos(7 * t));
-  const z = 1.42 + interpolate(f, [0, dur], [0, 0.03]);
+  const ang = f < fTilt ? 0 : 10 * (1 - Math.exp(-2.0 * t) * Math.cos(6.5 * t));
+  const z = 1.62 + interpolate(f, [0, dur], [0, 0.03]);
   const tx = (k: number) => interpolate(f, [k, k + 10], [0, 1], { ...CL, easing: io });
-  const lab: React.CSSProperties = { position: "absolute", top: 70, width: 600, textAlign: "center", fontFamily: OSW, fontWeight: 700, fontSize: 84, color: "#F4F1E8", textShadow: "0 4px 16px rgba(0,0,0,0.85)" };
+  const lab: React.CSSProperties = { position: "absolute", top: 70, width: 600, textAlign: "center", fontFamily: OSW, fontWeight: 700, fontSize: 120, color: "#F4F1E8", textShadow: "0 4px 16px rgba(0,0,0,0.85)" };
   return (
     <AbsoluteFill style={{ background: "#0E0E0F", overflow: "hidden", opacity: fade(f, dur) }}>
       <AbsoluteFill style={{ transformOrigin: "905px 740px", transform: `rotate(${ang}deg) scale(${z})` }}>
         <Img src={staticFile(img)} style={FULL} />
       </AbsoluteFill>
       <div style={{ ...lab, left: 150, opacity: tx(4), transform: `translateY(${(1 - tx(4)) * 20}px)` }}>11 kg</div>
-      <div style={{ ...lab, left: 1170, fontSize: 110, color: "#FFC93C", opacity: tx(fTilt + 8), transform: `translateY(${(1 - tx(fTilt + 8)) * 20}px)` }}>×2</div>
+      <div style={{ ...lab, left: 1120, top: 330, fontSize: 210, color: "#FFC93C", opacity: tx(fTilt + 6), transform: `scale(${1 + 0.6 * (1 - tx(fTilt + 6))})` }}>×2</div>
     </AbsoluteFill>
   );
 };
@@ -70,17 +71,19 @@ export const EscFrio: React.FC<{ dur: number; img: string; fCold: number }> = ({
   for (let i = 0; i < STEPS; i++) edge += interpolate(f, [fCold + i * 6, fCold + i * 6 + 8], [0, H], { ...CL, easing: io });
   const y0 = 640, yE = y0 + 160 + edge;
   const ty = interpolate(f, [0, dur], [0, -50], { easing: io });
+  const fadeF = interpolate(f, [0, 6, dur - 3, dur], [0, 1, 1, 0], CL);
   const mask = `linear-gradient(180deg, black 0px, black ${yE - 40}px, transparent ${yE + 30}px)`;
   const cold = interpolate(f, [fCold, fCold + 12], [0, 1], CL);
   return (
-    <AbsoluteFill style={{ background: "#0E0E0F", overflow: "hidden", opacity: fade(f, dur) }}>
+    <AbsoluteFill style={{ background: "#0E0E0F", overflow: "hidden", opacity: fadeF }}>
       <AbsoluteFill style={{ transform: `translateY(${ty}px) scale(1.12)` }}>
         <Img src={staticFile(img)} style={FULL} />
         <div style={{ position: "absolute", inset: 0, clipPath: "polygon(0 800px, 1750px 640px, 1920px 640px, 1920px 1080px, 0 1080px)", WebkitMaskImage: mask, maskImage: mask, opacity: cold }}>
           <Img src={staticFile(img)} style={{ ...FULL, filter: "saturate(0.35) brightness(1.22) contrast(0.92) blur(0.8px)" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(120,180,255,0.62)", mixBlendMode: "color" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(225,240,255,0.26)" }} />
-          <div style={{ position: "absolute", left: 0, right: 0, top: yE - 70, height: 90, background: "linear-gradient(180deg, rgba(235,248,255,0) 0%, rgba(235,248,255,0.85) 70%, rgba(235,248,255,0) 100%)", mixBlendMode: "screen" }} />
+          <div style={{ position: "absolute", left: 0, right: 0, top: 640, height: 260, background: "linear-gradient(180deg, rgba(245,252,255,0.55), rgba(245,252,255,0))", filter: "blur(6px)" }} />
+          <div style={{ position: "absolute", left: 0, right: 0, top: yE - 170, height: 200, background: "linear-gradient(180deg, rgba(235,248,255,0) 0%, rgba(235,248,255,0.45) 75%, rgba(235,248,255,0) 100%)", mixBlendMode: "screen" }} />
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
@@ -90,7 +93,10 @@ export const EscFrio: React.FC<{ dur: number; img: string; fCold: number }> = ({
 // 4 · BLANDA: la mitad de abajo, cortada en tiras, se comba en arco a lo largo del cable derretido y después vuelve
 export const EscBlanda: React.FC<{ dur: number; img: string; fSoft: number; fBack: number }> = ({ dur, img, fSoft, fBack }) => {
   const f = useCurrentFrame();
-  const A = 115 * interpolate(f, [fSoft, fSoft + 12], [0, 1], { ...CL, easing: io }) * interpolate(f, [fBack, fBack + 14], [1, 0], { ...CL, easing: io });
+  const fB = Math.max(fBack, fSoft + 30);
+  const tb = Math.max(0, f - fB) / 30;
+  const back = f < fB ? 1 : Math.exp(-4 * tb) * Math.cos(9 * tb);
+  const A = 115 * interpolate(f, [fSoft, fSoft + 10], [0, 1], { ...CL, easing: Easing.out(Easing.back(1.6)) }) * back;
   const z = interpolate(f, [0, dur], [1.0, 1.06]);
   const X0 = 380, X1 = 1250, SW = 30;
   const mask = "linear-gradient(180deg, transparent 0px, transparent 380px, black 520px, black 1080px)";
@@ -99,7 +105,7 @@ export const EscBlanda: React.FC<{ dur: number; img: string; fSoft: number; fBac
     const c = x + SW / 2;
     const d = c > X0 && c < X1 ? A * Math.sin((Math.PI * (c - X0)) / (X1 - X0)) : 0;
     tiras.push(
-      <div key={x} style={{ position: "absolute", left: x, top: 0, width: SW + 1, height: 1080, overflow: "hidden", transformOrigin: "50% 450px", transform: `scaleY(${1 + d / 630})`, WebkitMaskImage: mask, maskImage: mask }}>
+      <div key={x} style={{ position: "absolute", left: x, top: 0, width: SW + 1, height: 1080, overflow: "hidden", transformOrigin: "50% 450px", transform: `scaleY(${1 + d / 290})`, WebkitMaskImage: mask, maskImage: mask }}>
         <Img src={staticFile(img)} style={{ ...FULL, left: -x }} />
       </div>
     );
@@ -108,8 +114,8 @@ export const EscBlanda: React.FC<{ dur: number; img: string; fSoft: number; fBac
     <AbsoluteFill style={{ background: "#0E0E0F", overflow: "hidden", opacity: fade(f, dur) }}>
       <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: "820px 650px", overflow: "hidden" }}>
         <Img src={staticFile(img)} style={FULL} />
-        {A > 0.3 ? tiras : null}
-        {A > 0.3 ? <div style={{ position: "absolute", left: 815 - 420, top: 720 - 260, width: 840, height: 520, borderRadius: "50%", opacity: A / 115, background: "radial-gradient(ellipse, rgba(255,150,60,0.45) 0%, rgba(255,110,40,0.15) 45%, rgba(255,110,40,0) 70%)", mixBlendMode: "screen" }} /> : null}
+        {Math.abs(A) > 0.3 ? tiras : null}
+        {A > 0.3 ? <div style={{ position: "absolute", left: 815 - 420, top: 720 - 200, width: 840, height: 400, borderRadius: "50%", opacity: 0.6 * A / 115, background: "radial-gradient(ellipse, rgba(255,150,60,0.45) 0%, rgba(255,110,40,0.15) 45%, rgba(255,110,40,0) 70%)", mixBlendMode: "screen" }} /> : null}
       </AbsoluteFill>
     </AbsoluteFill>
   );
