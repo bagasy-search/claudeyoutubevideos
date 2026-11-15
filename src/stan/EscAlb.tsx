@@ -16,7 +16,7 @@
 //   cruza la cinta a la mitad derecha 1250,400 en "mitad derecha".
 // 3 EscChorro (g2690) · LA IDEA: el chorro real tarda. Copia sin chorro (revoque del escalón 50 px a la derecha)
 //   y el chorro recortado se alarga desde la boca del bidón (587,490) y toca el escalón (658,732) justo en
-//   "Directo"; ahí aparece el charco real y los escurridos blancos del contraescalón bajan columna por columna.
+//   "Directo"; ahí aparece el charco real (los escurridos del contraescalón son los de la foto, no se tocan).
 import React from "react";
 import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, Easing } from "remotion";
 
@@ -55,7 +55,7 @@ const Trazo: React.FC<{ src: string; cx: number; cy: number; rx: number; ry: num
   ({ src, cx, cy, rx, ry, aro, marca, ang, ox = 0, oy = 0, tinta }) => {
     const deg = aro * 362;
     const el = `ellipse ${P(rx)} ${P(ry)} at ${P(cx)} ${P(cy)}`;
-    const look: React.CSSProperties = tinta ? { filter: "grayscale(1) contrast(2.4) brightness(1.45)", mixBlendMode: "multiply" } : {};
+    const look: React.CSSProperties = tinta ? { filter: "grayscale(1) contrast(3) brightness(1.5)", mixBlendMode: "multiply" } : {};
     const m = marca * 118 - 9;
     return (
       <div style={{ position: "absolute", left: ox, top: oy, width: 1920, height: 1080, ...look }}>
@@ -89,7 +89,7 @@ export const EscLapiz: React.FC<{ a: string; b: string; dur: number }> = ({ a, b
       {swap < 1 && (
         <div style={camStyle(c1)}>
           <Foto src={a} />
-          <Tapa src={a} cx={545} cy={380} rx={92} ry={104} dx={-190} dy={0} />
+          <Tapa src={a} cx={545} cy={380} rx={92} ry={104} dx={190} dy={0} />
           <Tapa src={a} cx={749} cy={355} rx={70} ry={92} dx={0} dy={-150} />
           <Trazo src={a} cx={545} cy={380} rx={74} ry={86} aro={prog(f, 16, 34)} marca={prog(f, 36, 48)} ang={70} />
           <Trazo src={a} cx={749} cy={355} rx={53} ry={75} aro={prog(f, 70, 86)} marca={prog(f, 86, 98)} ang={180} />
@@ -119,7 +119,7 @@ export const EscCinta: React.FC<{ src: string; dur: number }> = ({ src }) => {
       <div style={camStyle(c)}>
         <Foto src={src} />
         {h > 1 && (
-          <div style={{ position: "absolute", left: 904, top, width: 28, height: h, overflow: "hidden", filter: "drop-shadow(1px 1px 1px rgba(0,0,0,.35))" }}>
+          <div style={{ position: "absolute", left: 904, top, width: 28, height: h, overflow: "hidden", mixBlendMode: "multiply", filter: "brightness(1.35) saturate(0.85)" }}>
             {/* la misma cinta del piso (903-933 x 760-1060) estirada por el muro, el extremo ancho arriba */}
             <div style={{ position: "absolute", inset: 0, transform: "scaleY(-1)" }}>
               <Img src={staticFile(src)} style={{ position: "absolute", left: -904, top: -760 * k, width: 1920, height: 1080 * k, objectFit: "fill" }} />
@@ -147,7 +147,6 @@ export const EscChorro: React.FC<{ src: string; dur: number }> = ({ src }) => {
   // cae con gravedad: lento al salir, rápido al llegar; toca en "Directo" (3.37 s = cuadro 101)
   const tip = 488 + (734 - 488) * Math.pow(prog(f, 34, 101, false), 1.7);
   const charco = prog(f, 100, 112);
-  const COLS = 20, x0 = 615, x1 = 1410, w = (x1 - x0) / COLS;
   return (
     <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
       <div style={camStyle(c)}>
@@ -156,18 +155,6 @@ export const EscChorro: React.FC<{ src: string; dur: number }> = ({ src }) => {
         <div style={{ position: "absolute", inset: 0, clipPath: `polygon(${TAPA_CH.map(([x, y]) => `${x}px ${y}px`).join(",")})` }}>
           <Foto src={src} dx={-50} />
         </div>
-        {/* contraescalón sin escurridos: la franja de abajo (890-902) estirada hacia arriba; cada columna se retira hacia abajo */}
-        {Array.from({ length: COLS }).map((_, i) => {
-          const p = prog(f, 103 + i * 1.1, 122 + i * 1.1);
-          const t = 750 + p * 140, hh = 892 - t;
-          if (hh <= 0) return null;
-          const kk = 140 / 12;
-          return (
-            <div key={i} style={{ position: "absolute", left: x0 + i * w, top: t, width: w + 1, height: hh, overflow: "hidden" }}>
-              <Img src={staticFile(src)} style={{ position: "absolute", left: -(x0 + i * w), top: 750 - t - 890 * kk, width: 1920, height: 1080 * kk, objectFit: "fill" }} />
-            </div>
-          );
-        })}
         {/* charco real */}
         {charco > 0 && (
           <div style={{ position: "absolute", inset: 0, clipPath: `ellipse(${42 * charco}px ${18 * charco}px at 660px 738px)` }}>
