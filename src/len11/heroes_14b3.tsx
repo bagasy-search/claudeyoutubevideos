@@ -112,11 +112,11 @@ export const room_doors: H = ({ dur }) => {
     {Array.from({ length: 9 }, (_, i) => { const side = i % 2 ? 1 : -1, depth = Math.floor(i / 2), p = pr(t, 0.3 + i * 0.25, 0.6 + i * 0.25);
       return <div key={i} style={{ position: "absolute", left: 960 + side * 520 - 140, top: 260, width: 280, height: 560, transformOrigin: side < 0 ? "100% 50%" : "0 50%", transform: `translateZ(${-depth * 520}px) rotateY(${side * -70}deg)`, background: "#7a4a2a", boxShadow: "inset 0 0 0 14px #5a3420" }}>
         <div style={{ ...tg("#e2b04a", 70), textAlign: "center", marginTop: 60, fontFamily: SLAB }}>{i + 1}</div>
-        <div style={{ margin: "40px auto 0", width: 40, height: 40, borderRadius: 20, background: p > 0.5 ? "#2a3a2a" : "#ff5a3c" }} />
-        <div style={{ ...tg("#9fd39a", 30), textAlign: "center", marginTop: 20, opacity: p }}>$4 CATCHER</div>
+        <div style={{ margin: "40px auto 0", width: 40, height: 40, borderRadius: 20, background: p > 0.5 ? "#3fd36a" : "#ff5a3c" }} />
+        <div style={{ ...tg("#9fd39a", 46), textAlign: "center", marginTop: 20, opacity: p }}>$4 CATCHER</div>
       </div>; })}
     <Tx x={960} y={60} s={62} c="#f3ead6" wt={900}>WICKER PARK · 2012 · NINE ROOMS</Tx>
-    <Tx x={960} y={940} s={52} c="#ffe1a0" wt={900} o={cl((t - 2.8) * 2)}>NO CALL FOR OVER A YEAR</Tx>
+    <Tx x={960} y={940} s={52} c="#ffe1a0" wt={900} o={cl((t - 1.6) * 2)}>NO CALL FOR OVER A YEAR</Tx>
   </Stage></F>);
 };
 

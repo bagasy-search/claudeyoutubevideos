@@ -62,15 +62,15 @@ export const core_sample: H = ({ dur, v = 0 }) => {
 
 // ── CANDLE_PAIR: dos velas de cera en candeleros: la de 15 MIN se consume enseguida, la de 8 HOURS sigue alumbrando
 export const candle_pair: H = ({ dur }) => {
-  const t = useT(), shortH = lerp(300, 30, eio(pr(t, 0.3, 2.2))), longH = lerp(480, 440, pr(t, 0.3, 4));
+  const t = useT(), grow = eout(pr(t, 0, 0.6)), shortH = lerp(300, 60, eio(pr(t, 0.9, 2.6))) * grow, longH = lerp(480, 440, pr(t, 0.9, 4)) * grow;
   const candle = (x: number, h: number, lab: string, on: boolean) => <>
     <Box x={x - 60} y={820 - h} w={120} h={h} z={0} style={{ background: "linear-gradient(90deg,#efe6cf,#fffaf0,#e3d8bb)", borderRadius: "10px 10px 4px 4px" }} />
     {on && <div style={{ position: "absolute", left: x - 22, top: 820 - h - 90 + Math.sin(t * 9) * 3, width: 44, height: 80, borderRadius: "50% 50% 50% 50% / 70% 70% 30% 30%", background: "radial-gradient(ellipse at 50% 70%, #fff6c8, #ffb63c 55%, rgba(255,120,30,0) 75%)" }} />}
     <Box x={x - 130} y={820} w={260} h={50} z={0} style={{ background: "linear-gradient(180deg,#d9b66a,#8a6424)", borderRadius: 25 }} />
-    <Tx x={x} y={900} w={500} s={54} c="#ffe1a0" wt={900}>{lab}</Tx>
+    <Tx x={x} y={890} w={560} s={66} c="#ffe1a0" wt={900} o={grow}>{lab}</Tx>
   </>;
   return (<F dur={dur}><Stage rx={4} ry={Math.sin(t * 0.3) * 8} bg={NIGHT}>
-    {candle(620, shortH, "15 MINUTES", shortH > 40)}{candle(1300, longH, "8 HOURS", true)}
+    {candle(620, shortH, "15 MINUTES", shortH > 75)}{candle(1300, longH, "8 HOURS", true)}
     <Tx x={960} y={80} s={68} c="#e8eef6" wt={900}>AT NIGHT, NOBODY WASHES IT AWAY</Tx>
   </Stage></F>);
 };
