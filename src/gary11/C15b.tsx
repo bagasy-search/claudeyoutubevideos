@@ -377,7 +377,7 @@ const Mist: React.FC<P> = ({ a }) => {
 };
 
 // ================= asked (368) + ask:n — preguntas en fichas pegadas con cinta sobre cartón
-const ASK: [string, string][] = [["g3740", "Is this real or is it AI?"], ["y3780", "Inside, if I crack a window?"], ["g3840", "How long does a burner last?"], ["g3870", "One in the trunk for winter?"], ["y3930", "Cooking oil instead of wax?"]];
+const ASK: [string, string][] = [["g3740", "Is this real or is it AI?"], ["g2270", "Inside, if I crack a window?"], ["g3840", "How long does a burner last?"], ["g3870", "One in the trunk for winter?"], ["g3900", "Cooking oil instead of wax?"]];
 const Asked: React.FC<P> = () => {
   const f = useCurrentFrame();
   return <AbsoluteFill style={{ background: CORR }}>
