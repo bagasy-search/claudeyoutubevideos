@@ -660,7 +660,7 @@ export const LaminaP: React.FC<{ src: string; focus: { x: number; y: number; f: 
   const W = 1640, H = 922;
   return (
     <AbsoluteFill style={{ opacity: o, background: "#1E1C1A" }}>
-      <div style={{ position: "absolute", left: 140, top: 79, width: W, height: H, transform: `scale(${(0.9 + 0.1 * p) * (1 + 0.04 * f / Math.max(1, dur))}) rotate(${0.5 * Math.sin(f / 70)}deg)`, background: "#F4F0E6", boxShadow: "0 30px 60px rgba(0,0,0,0.6)", overflow: "hidden" }}>
+      <div style={{ position: "absolute", left: 140, top: 79, width: W, height: H, transform: `translate(${24 * Math.sin(f / 71) + 8 * Math.sin(f / 21)}px, ${16 * Math.cos(f / 88) + 6 * Math.cos(f / 27)}px) scale(${(0.9 + 0.1 * p) * (1 + 0.08 * f / Math.max(1, dur))}) rotate(${0.8 * Math.sin(f / 60)}deg)`, background: "#F4F0E6", boxShadow: "0 30px 60px rgba(0,0,0,0.6)", overflow: "hidden" }}>
         <Img src={staticFile(src)} style={{ width: W, height: H, objectFit: "contain" }} />
         <div style={{ position: "absolute", inset: 0, background: `radial-gradient(circle 260px at ${x}% ${y}%, transparent 0 70%, rgba(10,10,10,${dark}) 100%)` }} />
       </div>
