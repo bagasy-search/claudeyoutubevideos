@@ -6,7 +6,7 @@ import { SHOTS, AVATAR, OVERLAYS, TOTAL, MIX, MANO, PLATE } from "./cues.gen";
 import * as K from "./Kit";
 import * as E from "./Escenas";
 import * as S from "./Carne";
-import * as Ob from "./Obra";
+import * as Ob from "./Obra3";
 
 export const TOTAL_FRAMES_STAN = TOTAL;
 const TR = 8;
