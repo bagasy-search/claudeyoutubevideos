@@ -14,14 +14,14 @@ const INK = "#1b2330", RED = "#d6402f", GRN = "#2f9e5a", YEL = "#f2c230";
 export const DetectorRow: React.FC<{ n: number; dur: number }> = ({ n, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 12, 12);
   return <div style={{ position: "absolute", right: 50, top: 44, opacity: o, transform: `translateX(${(1 - o) * 60}px)` }}>
-    <div style={{ display: "flex", gap: 10, padding: "12px 16px", background: "rgba(20,24,30,.82)", borderRadius: 40 }}>
+    <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "12px 16px 12px 26px", background: "rgba(16,19,25,.94)", borderRadius: 40, border: "3px solid rgba(255,255,255,.25)" }}>
+      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 30, color: YEL, letterSpacing: 3, whiteSpace: "nowrap", marginRight: 10 }}>MISTAKE {n} / 10</div>
       {Array.from({ length: 10 }, (_, i) => { const cur = i + 1 === n, done = i + 1 < n; const s = cur ? 1 + 0.18 * ou((f - 8) / 8) : 1;
         return <div key={i} style={{ width: 40, height: 40, borderRadius: "50%", background: "radial-gradient(circle at 40% 35%, #fff, #d9dcdf 70%)", position: "relative", transform: `scale(${s})` }}>
           <div style={{ position: "absolute", inset: 11, borderRadius: "50%", background: "repeating-radial-gradient(circle, #c9cdd0 0 2px, #f2f3f4 2px 5px)" }} />
           <div style={{ position: "absolute", right: 5, top: 5, width: 9, height: 9, borderRadius: "50%", background: cur ? (Math.floor(f / 6) % 2 ? RED : "#7a2a22") : done ? GRN : "#9aa0a5" }} />
         </div>; })}
     </div>
-    <div style={{ marginTop: 8, textAlign: "right", fontFamily: SANS, fontWeight: 900, fontSize: 30, color: "#fff", letterSpacing: 3, textShadow: "2px 2px 0 rgba(0,0,0,.65)" }}>MISTAKE {n} / 10</div>
   </div>;
 };
 
@@ -32,10 +32,11 @@ export const GarageDoor: React.FC<{ dur: number }> = ({ dur }) => {
   const h = 1080 * p;
   return <AbsoluteFill style={{ pointerEvents: "none" }}>
     <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: h, overflow: "hidden" }}>
-      <div style={{ position: "absolute", left: 0, bottom: 0, width: 1920, height: 1080, background: "repeating-linear-gradient(0deg, #d8d3c8 0 262px, #8f8a80 262px 270px)" }}>
-        {[0, 1, 2, 3].map((r) => <div key={r} style={{ position: "absolute", left: 0, right: 0, top: r * 270 + 40, display: "flex", justifyContent: "space-around" }}>
-          {[0, 1, 2, 3, 4].map((c) => <div key={c} style={{ width: 300, height: 180, border: "6px solid #bdb7aa", boxShadow: "inset 4px 4px 0 rgba(255,255,255,.4)" }} />)}</div>)}
-        <div style={{ position: "absolute", left: 900, bottom: 30, width: 120, height: 26, background: "#555", borderRadius: 6 }} />
+      {/* el portón es la FOTO real del garaje del video (cover), con su burlete oscuro abajo */}
+      <div style={{ position: "absolute", left: 0, bottom: 0, width: 1920, height: 1080, background: "#2a2c30" }}>
+        <Img src={staticFile("gary14c/g/g0280.png")} style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, objectFit: "cover" }} />
+        <div style={{ position: "absolute", left: 0, right: 0, top: 0, bottom: 0, background: "rgba(10,12,16,.18)" }} />
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 60, background: "#1b1d21" }} />
       </div>
     </div>
     <div style={{ position: "absolute", left: 0, top: h - 18, width: 1920, height: 18, background: "#222", opacity: p > 0.01 ? 1 : 0 }} />
@@ -47,9 +48,9 @@ export const Dymo: React.FC<{ text: string; sub: string; dur: number }> = ({ tex
   const f = useCurrentFrame(); const o = inout(f, dur, 6, 12); const n = Math.round(text.length * cl(f / 14)); const n2 = Math.round(sub.length * cl((f - 12) / 26));
   const tape = (t: string, size: number, bg: string) => <div style={{ display: "inline-block", padding: `${size * 0.22}px ${size * 0.5}px`, background: bg, borderRadius: 6, boxShadow: "4px 6px 0 rgba(0,0,0,.4)",
     fontFamily: SANS, fontWeight: 900, fontSize: size, letterSpacing: size * 0.18, color: "#fff", textShadow: "-1px -1px 0 rgba(0,0,0,.35), 1px 1px 0 rgba(255,255,255,.45)", whiteSpace: "pre" }}>{t || " "}</div>;
-  return <div style={{ position: "absolute", left: 90, bottom: 100, opacity: o, transform: "rotate(-2deg)" }}>
+  return <div style={{ position: "absolute", right: 90, bottom: 100, opacity: o, transform: "rotate(-2deg)", textAlign: "right" }}>
     {tape(text.slice(0, n), 78, "#c62a22")}
-    <div style={{ marginTop: 14, marginLeft: 30 }}>{n2 > 0 && tape(sub.slice(0, n2), 30, "#1b2330")}</div>
+    <div style={{ marginTop: 14, marginRight: 30 }}>{n2 > 0 && tape(sub.slice(0, n2), 30, "#1b2330")}</div>
   </div>;
 };
 
@@ -61,10 +62,8 @@ export const WindowSplit: React.FC<{ src: string; seed: number; dur: number; lab
     <div style={{ position: "absolute", left: 34, top: 34, right: 34, bottom: label ? 120 : 34, overflow: "hidden" }}>
       <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
       <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 0 0, rgba(255,255,255,.7) 0 8%, rgba(255,255,255,0) 18%), radial-gradient(circle at 100% 100%, rgba(255,255,255,.7) 0 8%, rgba(255,255,255,0) 18%)" }} />
-      <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: 22, marginLeft: -11, background: "#e9e4d8" }} />
-      <div style={{ position: "absolute", top: "50%", left: 0, right: 0, height: 22, marginTop: -11, background: "#e9e4d8" }} />
     </div>
-    {label && <div style={{ position: "absolute", left: 34, right: 34, bottom: 30, height: 70, display: "flex", alignItems: "center", fontFamily: SANS, fontWeight: 900, fontSize: 32, color: INK, letterSpacing: 2 }}>{label}</div>}
+    {label && <div style={{ position: "absolute", left: 34, right: 34, bottom: 30, height: 70, display: "flex", alignItems: "center", fontFamily: SANS, fontWeight: 900, fontSize: Math.min(36, Math.floor(780 / (label.length * 0.68))), color: INK, letterSpacing: 1, whiteSpace: "nowrap", overflow: "hidden" }}>{label}</div>}
   </div>;
 };
 
@@ -82,12 +81,12 @@ export const Slide: React.FC<{ src: string; note: string; seed: number; dur: num
 // MEJORA 9 · dato con fuente: etiqueta naranja de advertencia que se pega desde una esquina (se despega el papel de atrás)
 export const WarnLabel: React.FC<{ big: string; label: string; src: string; dur: number }> = ({ big, label, src, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 12, 12); const peel = 1 - ou(f / 16);
-  return <div style={{ position: "absolute", left: 90, top: 80, width: 560, opacity: cl(o * 1.6), transform: `rotate(${-3 + peel * -10}deg) translateY(${peel * -60}px)`, transformOrigin: "0 0" }}>
+  return <div style={{ position: "absolute", right: 90, top: 200, width: 560, opacity: cl(o * 1.6), transform: `rotate(${3 + peel * 10}deg) translateY(${peel * -60}px)`, transformOrigin: "100% 0" }}>
     <div style={{ background: "#f08a24", borderRadius: 18, padding: "26px 34px", border: "6px solid #1b2330", boxShadow: "8px 10px 0 rgba(0,0,0,.35)" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 16 }}><div style={{ width: 0, height: 0, borderLeft: "26px solid transparent", borderRight: "26px solid transparent", borderBottom: `46px solid ${INK}` }} /><div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 32, color: INK, letterSpacing: 6 }}>WARNING</div></div>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 96, color: INK, lineHeight: 1, marginTop: 12 }}>{big}</div>
       <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 30, color: INK, marginTop: 8 }}>{label}</div>
-      <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 20, color: "#3a2a12", marginTop: 14, paddingTop: 10, borderTop: `3px solid ${INK}` }}>SOURCE · {src}</div>
+      <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 24, color: "#3a2a12", marginTop: 14, paddingTop: 10, borderTop: `3px solid ${INK}` }}>SOURCE · {src}</div>
     </div>
   </div>;
 };
@@ -95,7 +94,7 @@ export const WarnLabel: React.FC<{ big: string; label: string; src: string; dur:
 // chip «THE SAFE WAY»: cartel luminoso verde tipo SALIDA de emergencia que se enciende con un parpadeo
 export const ExitSign: React.FC<{ text: string; dur: number }> = ({ text, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 6, 10); const lit = f < 4 ? 0.3 : f < 7 ? 1 : f < 9 ? 0.4 : 1;
-  return <div style={{ position: "absolute", left: 80, bottom: 80, opacity: o }}>
+  return <div style={{ position: "absolute", right: 80, bottom: 80, opacity: o }}>
     <div style={{ padding: "16px 36px", background: `rgba(${Math.round(30 + 17 * lit)},${Math.round(90 + 68 * lit)},${Math.round(55 + 35 * lit)},1)`, borderRadius: 10, border: "8px solid #e9ecee", boxShadow: "6px 8px 0 rgba(0,0,0,.4)" }}>
       <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 26, letterSpacing: 6, color: "#e8fff0", opacity: 0.6 + 0.4 * lit }}>THE SAFE WAY ➜</div>
       <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 44, color: "#fff", opacity: 0.6 + 0.4 * lit }}>{text}</div>
@@ -106,7 +105,7 @@ export const ExitSign: React.FC<{ text: string; dur: number }> = ({ text, dur })
 // CTA de mitad (sin voz): la puerta de un mueble de cocina se entreabre en la esquina y deja ver la página del manual pegada adentro
 export const CabinetPeek: React.FC<{ dur: number }> = ({ dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 18, 14);
-  return <div style={{ position: "absolute", right: 70, bottom: 60, width: 520, height: 700, transform: `translateY(${(1 - cl(o * 2)) * 760}px)`, perspective: 1600 }}>
+  return <div style={{ position: "absolute", right: 60, top: 20, width: 520, height: 700, transformOrigin: "100% 0", transform: `translateY(${(1 - cl(o * 2)) * -760}px) scale(.74)`, perspective: 1600 }}>
     <div style={{ position: "absolute", inset: 0, background: "#6e4526", borderRadius: 8, boxShadow: "8px 10px 0 rgba(0,0,0,.35)" }} />
     <div style={{ position: "absolute", left: 30, top: 30, right: 30, bottom: 30, background: "#f8f5ec", padding: 30, boxSizing: "border-box" }}>
       <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 22, color: "#8a7a5c", letterSpacing: 4 }}>THE WINTER BLACKOUT MANUAL</div>

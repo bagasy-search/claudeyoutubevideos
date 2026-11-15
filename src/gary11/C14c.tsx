@@ -2,7 +2,7 @@
 // Mundo: el piso de concreto del garaje de Gary, escrito con tiza; detectores blancos, caños de PVC, nieve, chapa esmaltada. Registro: D:/rtmp/gary14_COMPONENTES.md
 // m = cuadros (relativos al plano) en que se dice cada palabra ancla; dur = cuadros del plano. Todo dato en pantalla sale del guion (frases_t.txt).
 import React from "react";
-import { AbsoluteFill, Easing, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Easing, Img, staticFile, useCurrentFrame } from "remotion";
 import { FONTS } from "./Piezas";
 
 const { SERIF, SANS, HAND } = FONTS;
@@ -18,25 +18,30 @@ type CS = React.CSSProperties;
 const ab = (x: number, y: number, w: number, h: number, st: CS = {}): CS => ({ position: "absolute", left: x, top: y, width: w, height: h, ...st });
 
 const CH = "#f3f0e6", RED = "#d6402f", GRN = "#2f9e5a", YEL = "#f2c230", INK = "#1b2330", NIGHT = "#141b27", PVC = "#eef0ee", SNOW = "#eef3f7", BLUE = "#2b5d8f", ORG = "#e8892a";
+const G = (id: string) => staticFile(`gary14c/g/${id}.png`);
 
-// ---------- base: el piso de concreto del garaje (juntas de dilatación, manchas, luz de la lamparita) — sin grano
-const Floor: React.FC<{ children?: React.ReactNode; dark?: number }> = ({ children, dark = 0 }) => (
-  <AbsoluteFill style={{ background: "#7f8387", overflow: "hidden" }}>
-    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 22% 30%, rgba(255,246,225,.30) 0%, rgba(255,246,225,0) 55%), radial-gradient(ellipse at 80% 85%, rgba(40,42,46,.35) 0%, rgba(40,42,46,0) 50%), radial-gradient(ellipse at 65% 20%, rgba(70,72,76,.25) 0%, rgba(0,0,0,0) 30%)" }} />
-    <AbsoluteFill style={{ backgroundImage: "repeating-linear-gradient(0deg, rgba(0,0,0,0) 0 536px, rgba(38,40,44,.55) 536px 541px, rgba(200,200,200,.18) 541px 543px), repeating-linear-gradient(90deg, rgba(0,0,0,0) 0 636px, rgba(38,40,44,.55) 636px 641px, rgba(200,200,200,.18) 641px 643px)" }} />
-    <div style={ab(1260, 640, 420, 230, { borderRadius: "50%", background: "radial-gradient(ellipse, rgba(30,30,34,.28), rgba(30,30,34,0) 70%)", transform: "rotate(-12deg)" })} />
-    {dark > 0 && <AbsoluteFill style={{ background: `rgba(10,14,22,${dark})` }} />}
+// ---------- base: una FOTO REAL del video como plancha de fondo (cover) con un degradé oscuro suave — sin baldosas, sin manchas, sin grano
+const PlateCtx = React.createContext<string>("g0020");
+const Floor: React.FC<{ children?: React.ReactNode; dark?: number; ph?: string }> = ({ children, dark = 0, ph }) => {
+  const f = useCurrentFrame(); const ctx = React.useContext(PlateCtx); const id = ph || ctx;
+  return <AbsoluteFill style={{ background: "#141922", overflow: "hidden" }}>
+    <Img src={G(id)} style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, objectFit: "cover", transform: `scale(${1.08 - 0.05 * cl(f / 240)})` }} />
+    <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(12,15,22,.82) 0%, rgba(12,15,22,.68) 38%, rgba(12,15,22,.72) 70%, rgba(12,15,22,.88) 100%)" }} />
+    {dark > 0 && <AbsoluteFill style={{ background: `rgba(10,14,22,${dark * 0.6})` }} />}
     {children}
-  </AbsoluteFill>
-);
+  </AbsoluteFill>;
+};
 // cielo de invierno (noche → amanecer con t)
 const Sky: React.FC<{ t?: number; children?: React.ReactNode }> = ({ t = 0, children }) => (
-  <AbsoluteFill style={{ background: `linear-gradient(${["#0f1624", "#1b2740"][0]}, ${t > 0 ? `rgba(${Math.round(lerp(27, 236, t))},${Math.round(lerp(39, 168, t))},${Math.round(lerp(64, 120, t))},1)` : "#1b2740"})`, overflow: "hidden" }}>{children}</AbsoluteFill>
+  <AbsoluteFill style={{ background: `linear-gradient(#0f1624, ${t > 0 ? `rgba(${Math.round(lerp(27, 236, t))},${Math.round(lerp(39, 168, t))},${Math.round(lerp(64, 120, t))},1)` : "#1b2740"})`, overflow: "hidden" }}>{children}</AbsoluteFill>
 );
-// tiza que se escribe (revela por recorte)
-const Ch: React.FC<{ t: string; at: number; f: number; x: number; y: number; size?: number; col?: string; len?: number; c?: boolean; style?: CS }> = ({ t, at, f, x, y, size = 64, col = CH, len = 14, c, style }) => {
-  const p = cl((f - at) / len); if (p <= 0) return null;
-  return <div style={{ position: "absolute", left: x, top: y, transform: c ? "translateX(-50%)" : undefined, fontFamily: HAND, fontWeight: 700, fontSize: size, color: col, whiteSpace: "nowrap", clipPath: `inset(-40% ${100 - p * 100}% -40% 0)`, textShadow: "2px 3px 0 rgba(0,0,0,.28)", ...style }}>{t}</div>;
+// números y unidades SIEMPRE en sans (en la letra a mano «FT» se leía «F1» y «CO» se leía «CC»)
+const SEG = /(9-1-1|\d[\d,.:–\-]*\+?|\bFT\b|\bPPM\b|\bCO\b|O₂)/g;
+const hand = (t: string) => t.split(SEG).map((s, i) => i % 2 ? <span key={i} style={{ fontFamily: SANS, fontWeight: 800, fontSize: "0.84em", letterSpacing: 1 }}>{s}</span> : s);
+// tiza que se escribe (revela por recorte). Al terminar NO queda recorte (antes el inset 0% comía la cola de las letras inclinadas).
+const Ch: React.FC<{ t: string; at: number; f: number; x: number; y: number; size?: number; col?: string; len?: number; c?: boolean; style?: CS }> = ({ t, at, f, x, y, size = 64, col = CH, len = 10, c, style }) => {
+  const p = cl((f - at) / Math.min(len, 12)); if (p <= 0) return null;
+  return <div style={{ position: "absolute", left: x, top: y, transform: c ? "translateX(-50%)" : undefined, fontFamily: HAND, fontWeight: 700, fontSize: size, color: col, whiteSpace: "nowrap", padding: "0 0.25em", margin: "0 -0.25em", clipPath: p >= 1 ? undefined : `inset(-40% ${(1 - p) * 112 - 12}% -40% -12%)`, textShadow: "2px 3px 0 rgba(0,0,0,.35)", ...style }}>{hand(t)}</div>;
 };
 const Tx: React.FC<{ children: React.ReactNode; size?: number; col?: string; style?: CS }> = ({ children, size = 34, col = INK, style }) =>
   <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: size, color: col, letterSpacing: 2, lineHeight: 1.05, ...style }}>{children}</div>;
@@ -45,7 +50,29 @@ const Strike: React.FC<{ x: number; y: number; w: number; at: number; f: number;
   <div style={ab(x, y, w * k(f, at, 10), th, { background: col, borderRadius: th, transform: `rotate(${rot}deg)`, transformOrigin: "0 50%", boxShadow: "2px 3px 0 rgba(0,0,0,.25)" })} />;
 // fuente visible: etiqueta de papel amarillo pegada abajo a la izquierda (MEJORA 9)
 const Src: React.FC<{ text: string; f: number; at: number }> = ({ text, f, at }) =>
-  <div style={{ position: "absolute", left: 70, bottom: 54, padding: "10px 22px", background: "#f6e27a", fontFamily: SANS, fontWeight: 800, fontSize: 28, color: INK, letterSpacing: 2, transform: `rotate(-2deg) translateY(${(1 - k(f, at, 10)) * 40}px)`, opacity: k(f, at, 10), boxShadow: "4px 6px 0 rgba(0,0,0,.3)" }}>SOURCE · {text}</div>;
+  <div style={{ position: "absolute", left: 70, bottom: 54, padding: "10px 22px", background: "#f6e27a", fontFamily: SANS, fontWeight: 800, fontSize: 28, color: INK, letterSpacing: 2, whiteSpace: "nowrap", transform: `rotate(-2deg) translateY(${(1 - k(f, at, 10)) * 40}px)`, opacity: k(f, at, 10), boxShadow: "4px 6px 0 rgba(0,0,0,.3)" }}>SOURCE · {text}</div>;
+// sello de goma: caja con borde que cae; el texto nunca se sale (nowrap + padding)
+const Stamp: React.FC<{ text: string; f: number; at: number; x: number; y: number; col?: string; size?: number; rot?: number; bg?: string }> = ({ text, f, at, x, y, col = RED, size = 48, rot = -6, bg = "rgba(255,255,255,.9)" }) =>
+  <div style={{ position: "absolute", left: x, top: y, padding: `${size * 0.32}px ${size * 0.6}px`, border: `8px solid ${col}`, borderRadius: 12, background: bg, whiteSpace: "nowrap", transform: `rotate(${rot}deg) scale(${1 + 0.5 * (1 - k(f, at, 6))})`, opacity: k(f, at, 4), boxShadow: "6px 8px 0 rgba(0,0,0,.3)" }}>
+    <Tx size={size} col={col}>{text}</Tx></div>;
+
+// ---------- FOTO COMO OBJETO: copia impresa / polaroid / papel rasgado / tarjeta redondeada, con sombra dura y cinta; entra cayendo
+const TORN = "polygon(0 1.6%, 6% 0, 13% 1.8%, 21% 0.4%, 30% 1.6%, 38% 0, 47% 1.7%, 55% 0.3%, 64% 1.5%, 72% 0.1%, 81% 1.9%, 89% 0.5%, 100% 1.6%, 100% 98.4%, 93% 100%, 85% 98.2%, 76% 99.7%, 68% 98.3%, 59% 100%, 50% 98.4%, 41% 99.8%, 33% 98.1%, 24% 99.7%, 15% 98.3%, 7% 100%, 0 98.4%)";
+const Pic: React.FC<{ id: string; x: number; y: number; w: number; h: number; f: number; at?: number; rot?: number; kind?: "pol" | "print" | "torn" | "round"; cap?: string; capCol?: string; pos?: string; op?: number; tape?: boolean }> =
+  ({ id, x, y, w, h, f, at = 0, rot = 0, kind = "print", cap, capCol = INK, pos = "50% 50%", op = 1, tape }) => {
+  const e = sp(f, at), o = k(f, at, 6) * op; if (o <= 0.001) return null;
+  const pad = kind === "pol" ? 20 : kind === "round" ? 10 : 14, bot = kind === "pol" ? (cap ? 96 : 64) : (cap ? 76 : pad);
+  const paper: CS = { position: "absolute", inset: 0, background: "#f6f2e8", borderRadius: kind === "round" ? 28 : 4, clipPath: kind === "torn" ? TORN : undefined };
+  return <div style={ab(x, y, w, h, { transform: `translateY(${(1 - e) * 70}px) rotate(${rot + (1 - e) * 5}deg)`, opacity: o })}>
+    <div style={{ ...paper, transform: "translate(12px,16px)", background: "rgba(0,0,0,.38)" }} />
+    <div style={paper} />
+    <div style={ab(pad, pad, w - 2 * pad, h - pad - bot, { overflow: "hidden", borderRadius: kind === "round" ? 20 : 2, background: "#222" })}>
+      <Img src={G(id)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: pos, transform: `scale(${1.1 - 0.06 * e})` }} />
+    </div>
+    {cap && <div style={{ position: "absolute", left: pad, right: pad, bottom: 0, height: bot, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: HAND, fontWeight: 700, fontSize: Math.min(44, Math.floor((w - 2 * pad) / (cap.length * 0.5))), color: capCol, whiteSpace: "nowrap" }}>{hand(cap)}</div>}
+    {tape && <div style={ab(w / 2 - 80, -22, 160, 46, { background: "rgba(236,226,186,.82)", transform: "rotate(-3deg)", boxShadow: "1px 2px 0 rgba(0,0,0,.15)" })} />}
+  </div>;
+};
 
 // ---------- actores (piezas reutilizadas DENTRO de los componentes)
 // detector de CO blanco, redondo, con rejilla de anillos y LED
@@ -114,17 +141,20 @@ const Person: React.FC<{ s?: number; col?: string; slump?: number }> = ({ s = 1,
 const Sleep: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t = io(f / Math.max(1, dur * 0.9)); const w = D(m, 0, dur, 0.45);
   const houses = [0, 1, 2, 3, 4, 5]; const dark = [2, 4];
-  return <Sky t={t * 0.85}>
-    <div style={ab(0, 820, 1920, 260, { background: SNOW })} />
-    {houses.map((i) => { const x = 90 + i * 300, lit = dark.includes(i) ? 0 : k(f, 6 + i * 4, 8);
-      return <div key={i} style={ab(x, 470 + (i % 2) * 30, 250, 360 - (i % 2) * 30)}>
-        <div style={{ position: "absolute", left: -20, right: -20, top: 0, height: 120, background: "#2c2f36", clipPath: "polygon(50% 0, 100% 100%, 0 100%)" }} />
-        <div style={{ position: "absolute", left: 0, right: 0, top: 118, bottom: 0, background: "#3c4049" }} />
-        <Win x={30} y={150} w={80} h={90} lit={lit} /><Win x={140} y={150} w={80} h={90} lit={lit * 0.8} />
-        {dark.includes(i) && <div style={{ position: "absolute", left: 95, top: 266, width: 60, height: 60, borderRadius: "50%", background: "#d9dcde", opacity: k(f, w, 10), boxShadow: `0 0 0 6px rgba(214,64,47,${(0.5 + 0.5 * Math.sin(f / 3)) * k(f, w, 10)})` }} />}
-      </div>; })}
-    <Ch t="some of them don't wake up." at={w} f={f} x={960} y={110} size={92} c />
-  </Sky>;
+  return <Floor ph="g0020" dark={0.2 * (1 - t)}>
+    <AbsoluteFill style={{ background: `linear-gradient(rgba(236,168,120,${0.22 * t}), rgba(0,0,0,0) 60%)` }} />
+    <Ch t="some of them don't wake up." at={w} f={f} x={960} y={50} size={92} c />
+    <Pic id="g0220" x={190} y={200} w={740} h={560} f={f} at={2} rot={-3} kind="pol" cap="the first night of a blackout" tape />
+    <Pic id="g2610" x={1010} y={230} w={700} h={520} f={f} at={8} rot={2.5} kind="pol" tape />
+    <div style={ab(165, 850, 1620, 190)}>
+      {houses.map((i) => { const lit = dark.includes(i) ? 0 : k(f, 6 + i * 4, 8);
+        return <div key={i} style={ab(i * 275, 20, 230, 170)}>
+          <div style={{ position: "absolute", left: -14, right: -14, top: 0, height: 60, background: "#23262d", clipPath: "polygon(50% 0, 100% 100%, 0 100%)" }} />
+          <div style={{ position: "absolute", left: 0, right: 0, top: 58, bottom: 0, background: "#343842" }} />
+          {[28, 138].map((x) => <div key={x} style={ab(x, 78, 64, 50, { background: lit ? `rgba(255,214,120,${0.4 + 0.5 * lit})` : "#1e2733", border: "6px solid #e8e6df", boxSizing: "border-box" })} />)}
+        </div>; })}
+    </div>
+  </Floor>;
 };
 
 // tenlist · DIEZ TARJETAS QUE SE DAN VUELTA: rojo «MISTAKE» → verde «SAFE WAY», en cascada
@@ -167,12 +197,12 @@ const Promise2: React.FC<P> = ({ dur, m, a }) => {
       <div style={ab(0, 420, 620, 120, { background: SNOW })} />
       <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: 14, marginLeft: -7, background: "#e9e4d8" }} />
     </div>
-    <div style={ab(260, 210, 360, 360)}><Puck s={2} /></div>
-    <div style={ab(420, 380 - 40 * (1 - k(f, t0, 12)), 360, 290, { background: "#ffe66b", transform: `rotate(${6 - 4 * k(f, t0, 12)}deg)`, opacity: k(f, t0, 8), boxShadow: "5px 8px 0 rgba(0,0,0,.3)" })}>
-      <Ch t="2-min check" at={t0 + 4} f={f} x={26} y={18} size={58} col={INK} />
-      <Ch t="TONIGHT" at={t1} f={f} x={26} y={100} size={74} col={RED} />
-      <div style={ab(26, 214, 46, 46, { border: `5px solid ${INK}` })} />
-      <Ch t="before bed" at={t2} f={f} x={90} y={200} size={54} col={INK} />
+    <Pic id="g2330" x={150} y={150} w={600} h={520} f={f} at={0} rot={-2} kind="print" tape />
+    <div style={ab(520, 520 - 40 * (1 - k(f, t0, 12)), 470, 330, { background: "#ffe66b", transform: `rotate(${6 - 4 * k(f, t0, 12)}deg)`, opacity: k(f, t0, 8), boxShadow: "5px 8px 0 rgba(0,0,0,.3)" })}>
+      <Ch t="2-minute check" at={t0 + 4} f={f} x={30} y={22} size={56} col={INK} />
+      <Ch t="TONIGHT" at={t1} f={f} x={30} y={110} size={78} col={RED} />
+      <div style={ab(30, 238, 46, 46, { border: `5px solid ${INK}` })} />
+      <Ch t="before bed" at={t2} f={f} x={100} y={222} size={58} col={INK} />
     </div>
     <div style={ab(1250, 760, 220, 300)}>
       <div style={{ position: "absolute", left: 30, top: 0, width: 160, height: 120, background: `rgba(255,228,170,${1 - 0.7 * k(f, t2, 10)})`, clipPath: "polygon(20% 0, 80% 0, 100% 100%, 0 100%)" }} />
@@ -200,25 +230,26 @@ const Cdc: React.FC<P> = ({ dur, m, a }) => {
         <Tx size={250} col="#fff" style={{ fontFamily: SERIF }}>{n}</Tx>
         <Tx size={40} col={CH}>DIE EVERY YEAR FROM CO</Tx>
       </div>
-      <div style={ab(1180, 650, 620, 150, { border: `8px solid ${RED}`, borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", transform: `rotate(-6deg) scale(${1 + 0.5 * (1 - k(f, t1, 6))})`, opacity: k(f, t1, 4), background: "rgba(255,255,255,.85)" })}>
-        <Tx size={52} col={RED}>NOTHING TO DO WITH A FIRE</Tx></div>
+      <Stamp text="NOTHING TO DO WITH A FIRE" f={f} at={t1} x={1110} y={690} size={34} />
       <Src text="CDC" f={f} at={t0} />
     </Floor>;
   }
   if (v === "er" || v === "hosp") {
     const hosp = v === "hosp"; const t0 = D(m, 0, dur, 0.4);
-    const pe = hosp ? 1 : io((f - t0 + 8) / 30), ph = hosp ? io((f - t0 + 4) / 28) : 0;
+    // mismos dos recipientes: 100.000 llena el de la guardia; 14.000 llena 1/7 del otro (≈ 7 : 1)
+    const pe = hosp ? 1 : io((f - t0 + 8) / 30), ph = hosp ? io((f - t0 + 4) / 28) * 0.14 : 0;
     const bin = (x: number, w: number, h: number, lvl: number, big: string, lbl: string, col: string) => <div style={ab(x, 960 - h, w, h)}>
       <div style={{ position: "absolute", inset: 0, border: "10px solid rgba(230,238,244,.85)", borderTop: "none", borderRadius: "0 0 26px 26px" }} />
       <div style={{ position: "absolute", left: 10, right: 10, bottom: 10, height: (h - 20) * lvl, borderRadius: "0 0 18px 18px", background: `radial-gradient(circle at 10px 10px, ${col} 0 7px, rgba(0,0,0,.28) 8px 10px)`, backgroundSize: "20px 20px" }} />
-      {[0.25, 0.5, 0.75].map((q) => <div key={q} style={{ position: "absolute", right: -40, bottom: h * q, width: 30, height: 5, background: CH }} />)}
-      <div style={{ position: "absolute", left: -100, right: -100, top: -200, textAlign: "center", opacity: cl(lvl * 3) }}><Tx size={104} col="#fff" style={{ fontFamily: SERIF }}>{big}</Tx><Tx size={36} col={CH}>{lbl}</Tx></div>
+      {[1 / 7, 2 / 7, 3 / 7, 4 / 7, 5 / 7, 6 / 7].map((q) => <div key={q} style={{ position: "absolute", right: -40, bottom: 10 + (h - 20) * q, width: 30, height: 5, background: CH }} />)}
+      <div style={{ position: "absolute", left: -120, right: -120, top: -230, textAlign: "center", opacity: cl(lvl * 30) }}><Tx size={104} col="#fff" style={{ fontFamily: SERIF }}>{big}</Tx><Tx size={36} col={CH} style={{ whiteSpace: "nowrap" }}>{lbl}</Tx></div>
     </div>;
     return <Floor dark={0.3}>
-      {bin(220, 620, 560, pe, "100,000+", "GO TO THE EMERGENCY ROOM", "#e9c46a")}
-      {bin(1180, 440, 330, ph * 0.9, "14,000+", "END UP IN THE HOSPITAL", "#e76f51")}
-      {hosp && Array.from({ length: 10 }, (_, i) => { const t = cl((f - t0 - i * 2) / 18); return <div key={i} style={ab(lerp(840, 1300, t), 420 - Math.sin(t * Math.PI) * 180 + i * 6, 20, 20, { borderRadius: "50%", background: "#e76f51", opacity: t > 0 && t < 1 ? 1 : 0 })} />; })}
-      <Ch t="every year" at={4} f={f} x={960} y={60} size={70} c />
+      {bin(300, 520, 560, pe, "100,000+", "GO TO THE EMERGENCY ROOM", "#e9c46a")}
+      {bin(1100, 520, 560, ph, "14,000+", "END UP IN THE HOSPITAL", "#e76f51")}
+      {hosp && Array.from({ length: 10 }, (_, i) => { const t = cl((f - t0 - i * 2) / 18); return <div key={i} style={ab(lerp(760, 1300, t), 420 - Math.sin(t * Math.PI) * 180 + i * 6, 20, 20, { borderRadius: "50%", background: "#e76f51", opacity: t > 0 && t < 1 ? 1 : 0 })} />; })}
+      {hosp && <Tx size={40} col={YEL} style={{ position: "absolute", left: 1100, width: 520, top: 960 - 560 * 0.14 - 70, textAlign: "center", opacity: k(f, t0 + 20, 8) }}>≈ 1 IN 7</Tx>}
+      <Ch t="every year" at={4} f={f} x={960} y={50} size={70} c />
       <Src text="CDC" f={f} at={6} />
     </Floor>;
   }
@@ -289,24 +320,27 @@ const REC = ["NO GENERATOR IN THE GARAGE", "NO CAR IN THE GARAGE", "NOT UNDER A 
 const RECL = ["never a generator in the garage, even with the door open", "never the car in the garage, even with a hose through the wall", "not under a window, not next to a door, not on the porch",
   "grills, camp stoves and charcoal stay outside", "the gas oven is for cooking, not for heat", "clear the snow off every vent and pipe", "labeled heaters only, with fresh air and a detector, never while you sleep",
   "the damper stays open until the fire is out cold", "every detector works without wall power", "check the date on the back"];
+// plancha de cada error = la foto real de ESE error; en el repaso, la foto de la manera segura
+const MPH = ["g0410", "g0910", "g1040", "g1240", "g1430", "g1600", "g1770", "g1880", "g2000", "g2380"];
+const RPH = ["g3640", "g0941", "g0531", "g1380", "g1500", "g1680", "g1801", "g1930", "g1980", "g3270"];
 const Reel: React.FC<P & { recap?: boolean }> = ({ dur, m, a, recap }) => {
   const f = useCurrentFrame(); const n = Math.max(1, Math.min(10, +a[0] || 1)); const H = 200, R = H / (2 * Math.tan(Math.PI / 10));
   const from = recap ? n - 2 : n - 1 - 10; const land = recap ? 22 : 30; const p = io(f / land);
   const ang = lerp(from, n - 1, p) * 36 + (p < 1 ? 0 : Math.sin((f - land) / 5) * 1.2 * Math.exp(-(f - land) / 12));
   const lt = D(m, 0, dur, 0.1); const c1 = recap ? GRN : RED, c2 = recap ? "#1f6f3e" : "#8f241a";
-  return <Floor dark={0.25}>
-    <div style={ab(260, 215, 1400, 520, { perspective: 1700 })}>
+  return <Floor dark={0.25} ph={(recap ? RPH : MPH)[n - 1]}>
+    <div style={ab(330, 215, 1260, 520, { perspective: 1700 })}>
       <div style={{ position: "absolute", left: 0, right: 0, top: 160, height: H, transformStyle: "preserve-3d", transform: `rotateX(${ang}deg)` }}>
         {Array.from({ length: 10 }, (_, i) => { const done = recap && i < n - 1; const cur = i === n - 1;
-          return <div key={i} style={{ position: "absolute", left: 0, right: 0, top: 0, height: H, transform: `rotateX(${-i * 36}deg) translateZ(${R}px)`, backfaceVisibility: "hidden",
+          // las chapas que se van de eje se apagan del todo (nada de filas espejadas ilegibles arriba/abajo)
+          const rel = ((((ang - i * 36) % 360) + 540) % 360) - 180; const vis = cl(1 - (Math.abs(rel) - 30) / 14);
+          return <div key={i} style={{ position: "absolute", left: 0, right: 0, top: 0, height: H, opacity: vis, transform: `rotateX(${-i * 36}deg) translateZ(${R}px)`, backfaceVisibility: "hidden",
             background: `linear-gradient(${cur ? c1 : "#26364a"}, ${cur ? c2 : "#1b2838"})`, border: "10px solid #f2efe6", borderRadius: 18, boxSizing: "border-box", display: "flex", alignItems: "center", padding: "0 40px", gap: 36 }}>
             <div style={{ width: 130, height: 130, borderRadius: "50%", background: "#f2efe6", display: "flex", alignItems: "center", justifyContent: "center", flex: "none" }}><Tx size={84} col={cur ? c2 : "#26364a"} style={{ fontFamily: SERIF }}>{i + 1}</Tx></div>
-            <Tx size={i === n - 1 ? 62 : 54} col="#f2efe6" style={{ flex: 1 }}>{recap ? REC[i] : MIS[i]}</Tx>
+            <Tx size={Math.min(i === n - 1 ? 62 : 54, Math.floor((done ? 900 : 1000) / ((recap ? REC[i] : MIS[i]).length * 0.7)))} col="#f2efe6" style={{ flex: 1, whiteSpace: "nowrap" }}>{recap ? REC[i] : MIS[i]}</Tx>
             {done && <Tx size={90} col="#7fe0a2">✓</Tx>}
           </div>; })}
       </div>
-      <div style={ab(-30, 150, 30, 220, { background: "linear-gradient(90deg,#5e666d,#c8cdd1,#5e666d)", borderRadius: 8 })} />
-      <div style={ab(1400, 150, 30, 220, { background: "linear-gradient(90deg,#5e666d,#c8cdd1,#5e666d)", borderRadius: 8 })} />
     </div>
     <Tx size={46} col={recap ? "#9be3b5" : "#ffb3a8"} style={{ position: "absolute", left: 0, right: 0, top: 34, textAlign: "center", letterSpacing: 8, opacity: k(f, 0, 10) }}>{recap ? `RECAP · ${n} OF 10` : `MISTAKE ${n} OF 10`}</Tx>
     <Ch t={recap ? RECL[n - 1] : MISL[n - 1]} at={Math.max(land - 4, lt)} f={f} x={960} y={850} size={Math.min(recap ? 66 : 76, Math.floor(1780 / ((recap ? RECL[n - 1] : MISL[n - 1]).length * 0.44)))} c len={18} />
@@ -319,35 +353,55 @@ const Reel: React.FC<P & { recap?: boolean }> = ({ dur, m, a, recap }) => {
 const TOWNS: Record<string, [number, number, string]> = { wooster: [1056, 324, "WOOSTER"], loudonville: [592, 691, "LOUDONVILLE"], shreve: [928, 583, "SHREVE"], mounteaton: [1440, 562, "MOUNT EATON"] };
 const LOG: Record<string, [string, string]> = { wooster: ["FEBRUARY 2011", "A house outside of Wooster, the morning after"], loudonville: ["FALL 2009", "A deer camp near Loudonville"],
   shreve: ["JANUARY 2014", "A big drift · a family near Shreve"], mounteaton: ["DECEMBER 2018", "A farmhouse outside of Mount Eaton"] };
+// el papel del mapa (hl = pueblo del recuerdo: su rótulo va aparte, DENTRO de la lupa / del recorte)
+const MapPaper: React.FC<{ hl: string }> = ({ hl }) => (
+  <AbsoluteFill style={{ background: "#e6dcc3" }}>
+    <AbsoluteFill style={{ backgroundImage: "repeating-linear-gradient(0deg, rgba(120,140,110,.18) 0 2px, rgba(0,0,0,0) 2px 90px), repeating-linear-gradient(90deg, rgba(120,140,110,.18) 0 2px, rgba(0,0,0,0) 2px 90px)" }} />
+    <div style={ab(-50, 316, 2100, 14, { background: "#c46a3a", transform: "rotate(-1.5deg)" })} />
+    <div style={ab(1040, -50, 12, 1200, { background: "#c46a3a", transform: "rotate(3deg)" })} />
+    <div style={ab(200, 520, 1700, 10, { background: "#d19a52", transform: "rotate(-9deg)" })} />
+    <div style={ab(400, 120, 10, 1000, { background: "#d19a52", transform: "rotate(-22deg)" })} />
+    <div style={ab(752, -20, 0, 660, { borderLeft: "6px dashed rgba(90,80,60,.55)" })} />
+    <div style={ab(0, 640, 1920, 0, { borderTop: "6px dashed rgba(90,80,60,.55)" })} />
+    {[["WAYNE CO.", 1240, 150], ["ASHLAND CO.", 300, 120], ["HOLMES CO.", 1150, 860]].map(([s, x, y]) => <Tx key={s as string} size={40} col="rgba(90,80,60,.7)" style={{ position: "absolute", left: x as number, top: y as number, letterSpacing: 10 }}>{s}</Tx>)}
+    <div style={ab(820, 760, 900, 120, { background: "rgba(120,160,190,.35)", borderRadius: "50%", transform: "rotate(-12deg)" })} />
+    {Object.entries(TOWNS).map(([kk, [x, y, nm]]) => <React.Fragment key={kk}>
+      <div style={ab(x - 12, y - 12, 24, 24, { borderRadius: "50%", background: kk === hl ? RED : INK, border: "4px solid #e6dcc3" })} />
+      {kk !== hl && <Tx size={32} col={INK} style={{ position: "absolute", left: x + 24, top: y - 20, opacity: 0.75 }}>{nm}</Tx>}
+    </React.Fragment>)}
+  </AbsoluteFill>
+);
+// MAPA CON LUPA DE BORDE DURO (sin halo difuso): el papel entero se ve apagado parejo; la lupa de bronce muestra el pueblo aumentado con su nombre adentro.
+// Cuatro movimientos distintos: wooster = la lupa entra deslizando de costado · loudonville = cae desde arriba · shreve = el pedazo de mapa se recorta y se levanta · mount eaton = la lupa se abre en el lugar
 const FlashMap: React.FC<P> = ({ dur, m, a }) => {
   const f = useCurrentFrame(); const key = a[0] in TOWNS ? a[0] : "wooster"; const [tx, ty, name] = TOWNS[key]; const [date, line] = LOG[key];
-  const p = io(f / 34); const lx = lerp(tx < 960 ? 1700 : 200, tx, p) + Math.sin(f / 9) * 6 * (1 - p), ly = lerp(900, ty, p) + Math.cos(f / 11) * 5 * (1 - p);
-  const z = 1 + 0.12 * io((f - 30) / Math.max(30, dur - 30));
+  const mode = ["wooster", "loudonville", "shreve", "mounteaton"].indexOf(key); const p = io(f / 26); const R = 270;
+  const lx = mode === 0 ? lerp(tx + 1100, tx, p) : tx, ly = mode === 1 ? lerp(-400, ty, p) : ty;
+  const r = mode === 3 ? R * sp(f, 2) : R; const Z = 1.55;
+  const chip = (x: number, y: number) => <div style={{ position: "absolute", left: x, top: y, transform: "translateX(-50%)", padding: "6px 18px", background: "#fbf8ef", border: `4px solid ${INK}`, borderRadius: 8, whiteSpace: "nowrap", opacity: k(f, 24, 8) }}><Tx size={42} col={INK}>{name}</Tx></div>;
+  const flag = (x: number, y: number) => <div style={ab(x - 4, y - 130 + 50 * (1 - sp(f, 26)), 8, 130, { background: "#a98b5c", opacity: k(f, 26, 4) })}>
+    <div style={{ position: "absolute", left: 8, top: 0, width: 80, height: 50, background: ORG, clipPath: "polygon(0 0, 100% 50%, 0 100%)" }} /></div>;
+  const cw = 620, chh = 440; const cx = Math.max(40, Math.min(1920 - cw - 40, tx - cw / 2)), cy = Math.max(40, Math.min(1080 - chh - 40, ty - chh / 2)); const lift = sp(f, 4);
+  const sx = tx > 1200 ? 120 : 1100, sy = 830;
   return <AbsoluteFill style={{ background: "#0b0f16", overflow: "hidden" }}>
-    <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: `${tx}px ${ty}px` }}>
-      <AbsoluteFill style={{ background: "#e6dcc3" }}>
-        <AbsoluteFill style={{ backgroundImage: "repeating-linear-gradient(0deg, rgba(120,140,110,.18) 0 2px, rgba(0,0,0,0) 2px 90px), repeating-linear-gradient(90deg, rgba(120,140,110,.18) 0 2px, rgba(0,0,0,0) 2px 90px)" }} />
-        <div style={ab(-50, 316, 2100, 14, { background: "#c46a3a", transform: "rotate(-1.5deg)" })} />
-        <div style={ab(1040, -50, 12, 1200, { background: "#c46a3a", transform: "rotate(3deg)" })} />
-        <div style={ab(200, 520, 1700, 10, { background: "#d19a52", transform: "rotate(-9deg)" })} />
-        <div style={ab(400, 120, 10, 1000, { background: "#d19a52", transform: "rotate(-22deg)" })} />
-        <div style={ab(752, -20, 0, 660, { borderLeft: "6px dashed rgba(90,80,60,.55)" })} />
-        <div style={ab(0, 640, 1920, 0, { borderTop: "6px dashed rgba(90,80,60,.55)" })} />
-        {[["WAYNE CO.", 1240, 150], ["ASHLAND CO.", 300, 120], ["HOLMES CO.", 1150, 860]].map(([s, x, y]) => <Tx key={s as string} size={40} col="rgba(90,80,60,.6)" style={{ position: "absolute", left: x as number, top: y as number, letterSpacing: 10 }}>{s}</Tx>)}
-        <div style={ab(820, 760, 900, 120, { background: "rgba(120,160,190,.35)", borderRadius: "50%", transform: "rotate(-12deg)" })} />
-        {Object.entries(TOWNS).map(([kk, [x, y, nm]]) => <React.Fragment key={kk}>
-          <div style={ab(x - 12, y - 12, 24, 24, { borderRadius: "50%", background: INK, border: "4px solid #e6dcc3" })} />
-          <Tx size={kk === key ? 46 : 34} col={INK} style={{ position: "absolute", left: x + 24, top: y - 22, opacity: kk === key ? 1 : 0.7 }}>{nm}</Tx>
-        </React.Fragment>)}
+    <MapPaper hl={key} />
+    <AbsoluteFill style={{ background: "rgba(10,12,18,.6)" }} />
+    {mode !== 2 ? <>
+      <AbsoluteFill style={{ clipPath: `circle(${Math.max(0, r)}px at ${lx}px ${ly}px)` }}>
+        <AbsoluteFill style={{ transform: `translate(${lx - tx}px, ${ly - ty}px) scale(${Z})`, transformOrigin: `${tx}px ${ty}px` }}><MapPaper hl={key} /></AbsoluteFill>
+        {flag(lx, ly)}{chip(lx, ly + 50)}
       </AbsoluteFill>
-      <AbsoluteFill style={{ background: `radial-gradient(circle at ${lx}px ${ly}px, rgba(255,240,200,.12) 0 200px, rgba(8,10,16,.9) 270px)` }} />
-      <div style={ab(tx - 4, ty - 150 + 60 * (1 - sp(f, 32)), 8, 150, { background: "#d9c8a0", opacity: k(f, 32, 4) })}>
-        <div style={{ position: "absolute", left: 8, top: 0, width: 90, height: 56, background: ORG, clipPath: "polygon(0 0, 100% 50%, 0 100%)", transform: `skewY(${Math.sin(f / 6) * 6}deg)` }} />
+      <div style={ab(lx - r - 16, ly - r - 16, 2 * r + 32, 2 * r + 32, { borderRadius: "50%", border: "16px solid #b08d4a", boxSizing: "border-box", boxShadow: "8px 12px 0 rgba(0,0,0,.45), inset 0 0 0 4px #6e5526", opacity: r > 4 ? 1 : 0 })} />
+      <div style={ab(lx + r * 0.7 + 4, ly + r * 0.7 + 4, 46, 230, { background: "linear-gradient(90deg,#3b2a1a,#6b4a2c,#3b2a1a)", borderRadius: 18, transformOrigin: "50% 0", transform: "rotate(-45deg)", opacity: r > 4 ? 1 : 0 })} />
+    </> : <div style={ab(cx, cy, cw, chh, { transform: `translateY(${-30 * lift}px) rotate(${-4 * lift}deg)`, background: "#f6f2e8", padding: 12, boxSizing: "border-box", boxShadow: `${14 * lift}px ${20 * lift}px 0 rgba(0,0,0,.5)` })}>
+      <div style={{ position: "absolute", left: 12, top: 12, right: 12, bottom: 12, overflow: "hidden" }}>
+        <div style={ab(-(cx + 12), -(cy + 12), 1920, 1080, { transform: `scale(${lerp(1, Z, lift)})`, transformOrigin: `${tx}px ${ty}px` })}><MapPaper hl={key} /></div>
+        {flag(tx - cx - 12, ty - cy - 12)}{chip(tx - cx - 12, ty - cy + 40)}
       </div>
-    </AbsoluteFill>
-    <div style={ab(tx > 1200 ? 120 : 1100, 760, 720, 210, { background: "#fbfaf4", boxShadow: "6px 8px 0 rgba(0,0,0,.4)", clipPath: `inset(0 0 ${100 - 100 * k(f, 40, 16)}% 0)`, borderTop: "10px dotted #c9c1ad" })}>
-      <Tx size={64} col={RED} style={{ fontFamily: SERIF, padding: "26px 30px 6px" }}>{date}</Tx>
-      <div style={{ padding: "0 30px", fontFamily: SERIF, fontSize: 38, color: INK, fontStyle: "italic" }}>{line}</div>
+    </div>}
+    <div style={ab(sx, sy, 720, 200, { background: "#fbfaf4", boxShadow: "6px 8px 0 rgba(0,0,0,.4)", clipPath: `inset(0 0 ${100 - 100 * k(f, 30, 12)}% 0)`, borderTop: "10px dotted #c9c1ad" })}>
+      <Tx size={60} col={RED} style={{ fontFamily: SERIF, padding: "24px 30px 6px" }}>{date}</Tx>
+      <div style={{ padding: "0 30px", fontFamily: SERIF, fontSize: 36, color: INK, fontStyle: "italic" }}>{line}</div>
     </div>
   </AbsoluteFill>;
 };
@@ -357,8 +411,7 @@ const FlashMap: React.FC<P> = ({ dur, m, a }) => {
 const Hundreds: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t0 = D(m, 0, dur, 0.1), t1 = D(m, 1, dur, 0.55), t2 = D(m, 2, dur, 0.85); const rows = 12, cols = 18;
   return <Floor dark={0.2}>
-    <div style={ab(80, 360, 420, 360, { opacity: k(f, t0, 10) })}><Gen2 s={1.3} run={1} f={f} /><Puffs f={f} x={470} y={450} at={t0} dy={-260} size={60} /></div>
-    <Ch t="1 portable generator" at={t0} f={f} x={70} y={790} size={56} />
+    <Pic id="g2760" x={60} y={300} w={480} h={460} f={f} at={t0} rot={-3} kind="pol" cap="1 portable generator" tape />
     <div style={ab(560, 260, 30, 600, { display: "flex", alignItems: "center", justifyContent: "center", opacity: k(f, t1 - 10, 8) })}><Tx size={150} col={CH}>=</Tx></div>
     <div style={ab(680, 160, 1180, 760, { background: "#4e5257", borderRadius: 10, overflow: "hidden" })}>
       {Array.from({ length: rows }, (_, r) => Array.from({ length: cols }, (_, c) => { const i = r * cols + c; const show = cl((f - t1 + 26 - i * 0.12) / 6);
@@ -428,7 +481,7 @@ const Draft: React.FC<P> = ({ dur, m, a }) => {
 // yard20 · LAS OCHO PISADAS HASTA LA ESTACA: patio nevado visto de arriba, las botas caminan, se clava la estaca, la soga marca 20 FT y el escape gira hacia afuera
 const Yard20: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t0 = D(m, 0, dur, 0.12), t1 = D(m, 1, dur, 0.5), t2 = D(m, 2, dur, 0.72);
-  const sx = 1500; const rot = lerp(180, 0, io((f - t1) / 16));
+  const sx = 1430; const rot = lerp(180, 0, io((f - t1) / 16)); // la soga mide de la PARED a la cara del generador: eso son los 20 FT
   return <AbsoluteFill style={{ background: SNOW, overflow: "hidden" }}>
     <AbsoluteFill style={{ background: "radial-gradient(ellipse at 70% 30%, rgba(255,255,255,1), rgba(214,224,234,1) 80%)" }} />
     <div style={ab(0, 120, 420, 840, { background: "repeating-linear-gradient(90deg,#4f4740 0 40px,#3e3832 40px 44px)", boxShadow: "10px 0 0 rgba(0,0,0,.2)" })}><Tx size={40} col="#d8cfc0" style={{ position: "absolute", left: 120, top: 400, transform: "rotate(-90deg)" }}>THE HOUSE</Tx></div>
@@ -438,13 +491,14 @@ const Yard20: React.FC<P> = ({ dur, m }) => {
       return <div key={i} style={ab(x, 520 + (i % 2 ? 40 : -40), 70, 34, { borderRadius: "50%", background: "#b9c7d4", opacity: sh, boxShadow: "inset 4px 4px 0 rgba(90,110,130,.35)" })} />; })}
     <div style={ab(420, 470, (sx - 420) * k(f, t0, 18), 8, { background: "repeating-linear-gradient(90deg,#c08a3e 0 18px,#8f6528 18px 22px)" })} />
     <Ch t="20 FT" at={t0 + 6} f={f} x={900} y={390} size={86} col={RED} />
-    <div style={ab(sx - 10, 380, 20, 140 * sp(f, t0 + 10), { background: "#a87b45", opacity: k(f, t0 + 10, 4) })}><div style={ab(18, 0, 60, 26, { background: ORG })} /></div>
-    <div style={ab(sx - 200, 600, 360, 260, { transform: `rotate(${rot}deg)`, transformOrigin: "50% 40%" })}>
+    <div style={ab(sx - 10, 330, 20, 150 * sp(f, t0 + 10), { background: "#a87b45", opacity: k(f, t0 + 10, 4) })}><div style={ab(-62, 0, 60, 26, { background: ORG })} /></div>
+    <Pic id="g0481" x={600} y={640} w={540} h={390} f={f} at={t0 + 8} rot={-2} kind="print" tape />
+    <div style={ab(sx - 50, 364, 360, 260, { transform: `rotate(${rot}deg)`, transformOrigin: "50% 40%" })}>
       <div style={ab(60, 30, 240, 160, { background: "#2a2e33", borderRadius: 16 })}><div style={ab(30, 24, 120, 112, { background: ORG, borderRadius: 12 })} /></div>
       <div style={ab(300, 80, 50, 40, { background: "#a7aeb4", borderRadius: 10 })} />
       <div style={ab(350, 92, 160 * k(f, t1, 12), 16, { background: RED })}><div style={{ position: "absolute", right: -24, top: -14, width: 0, height: 0, borderLeft: `30px solid ${RED}`, borderTop: "22px solid transparent", borderBottom: "22px solid transparent" }} /></div>
     </div>
-    <Ch t="exhaust pointed away" at={t1 + 4} f={f} x={1270} y={900} size={54} col={INK} />
+    <Ch t="exhaust pointed away" at={t1 + 4} f={f} x={1240} y={720} size={54} col={INK} />
     <Src text="U.S. CPSC" f={f} at={t0 + 4} />
   </AbsoluteFill>;
 };
@@ -474,35 +528,26 @@ const ChainPrice: React.FC<P> = ({ dur, m }) => {
 // tarp · LA CARPA QUE DEVUELVE EL CALOR: lona azul atada sobre el generador; las ondas de calor y escape suben, rebotan en la lona y el adentro se pone rojo
 const Tarp: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t0 = D(m, 0, dur, 0.15), t1 = D(m, 1, dur, 0.45); const heat = k(f, t1, 30);
-  return <AbsoluteFill style={{ background: "linear-gradient(#cdd7e1, #eef3f7 60%)" }}>
-    <div style={ab(0, 820, 1920, 260, { background: SNOW })} />
-    <div style={ab(660, 470, 600, 380, { background: `rgba(${Math.round(lerp(60, 200, heat))},${Math.round(lerp(60, 50, heat))},40,.75)` })}>
-      <div style={ab(130, 120, 390, 270, {})}><Gen2 s={1.1} run={1} f={f} /></div>
-      {Array.from({ length: 7 }, (_, i) => { const ph = ((f + i * 9) % 50) / 50; const up = ph < 0.5 ? ph * 2 : 2 - ph * 2;
-        return <div key={i} style={ab(80 + i * 70, 340 - up * 300, 44, 10, { background: i % 2 ? "rgba(255,170,80,.9)" : "rgba(170,170,170,.9)", borderRadius: 5, opacity: k(f, t0 - 10, 10) })} />; })}
-    </div>
-    <div style={ab(600, 400, 720, 470, { background: "repeating-linear-gradient(90deg,#2e6db4 0 60px,#2a63a3 60px 64px)", clipPath: "polygon(8% 0, 92% 0, 100% 100%, 92% 100%, 90% 14%, 10% 14%, 8% 100%, 0 100%)", boxShadow: "0 8px 0 rgba(0,0,0,.2)" })} />
-    {[620, 1290].map((x) => <div key={x} style={ab(x, 860, 10, 60, { background: "#c8b48a", transform: `rotate(${x < 900 ? 20 : -20}deg)` })} />)}
-    <div style={ab(1380, 360, 60, 420, { background: "#fff", borderRadius: 30, border: "6px solid #9aa" })}><div style={{ position: "absolute", left: 14, right: 14, bottom: 14, height: `${20 + 70 * heat}%`, background: RED, borderRadius: 16 }} /></div>
-    <Ch t="a tarp tied down tight" at={2} f={f} x={120} y={110} size={64} col={INK} />
-    <Ch t="traps the exhaust and the heat" at={t0} f={f} x={120} y={200} size={64} col={RED} />
-    <Ch t="right around the engine" at={t1} f={f} x={120} y={290} size={60} col={INK} />
-  </AbsoluteFill>;
+  return <Floor>
+    <Pic id="g0560" x={880} y={200} w={760} h={680} f={f} at={0} rot={2} kind="print" tape />
+    <div style={ab(1730, 260, 70, 520, { background: "#fff", borderRadius: 35, border: "6px solid #9aa", boxShadow: "6px 8px 0 rgba(0,0,0,.3)" })}><div style={{ position: "absolute", left: 14, right: 14, bottom: 14, height: `${20 + 70 * heat}%`, background: RED, borderRadius: 20 }} /></div>
+    <Tx size={30} col={CH} style={{ position: "absolute", left: 1700, top: 800, width: 130, textAlign: "center" }}>HEAT</Tx>
+    <Ch t="a tarp tied down tight" at={2} f={f} x={90} y={300} size={62} />
+    <Ch t="traps the exhaust and the heat" at={t0} f={f} x={90} y={420} size={58} col="#ff9a8a" />
+    <Ch t="right around the engine" at={t1} f={f} x={90} y={540} size={62} />
+  </Floor>;
 };
 
 // shutoff · LA CAJA CON EL ESCUDO Y EL APAGADO SOLO: la caja del generador con el sello «CO SHUT-OFF»; el gris sube alrededor, toca la línea del sensor y la llave pasa a OFF
 const Shutoff: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t0 = D(m, 0, dur, 0.25), t1 = D(m, 1, dur, 0.75); const lvl = io((f - t0) / Math.max(20, t1 - t0)); const off = k(f, t1, 6);
   return <Floor>
-    <div style={ab(130, 170, 640, 700, { background: "linear-gradient(#c9a26b,#b48b54)", boxShadow: "10px 12px 0 rgba(0,0,0,.3)", transform: "perspective(1600px) rotateY(16deg)" })}>
-      <div style={ab(40, 40, 560, 90, { background: INK })}><Tx size={46} col="#fff" style={{ padding: "18px 24px" }}>PORTABLE GENERATOR</Tx></div>
-      <div style={ab(130, 190, 380, 280, {})}><Gen2 s={1.2} /></div>
-      <div style={ab(330, 470, 270, 190, { background: GRN, clipPath: "polygon(50% 0, 100% 18%, 92% 70%, 50% 100%, 8% 70%, 0 18%)", display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${0.4 + 0.6 * sp(f, t0)})`, opacity: k(f, t0, 4) })}>
-        <Tx size={40} col="#fff" style={{ textAlign: "center" }}>CO<br />SHUT-OFF</Tx></div>
-    </div>
+    <Pic id="g0720" x={110} y={150} w={720} h={620} f={f} at={0} rot={-2} kind="print" tape />
+    <div style={ab(330, 800, 270, 200, { background: GRN, clipPath: "polygon(50% 0, 100% 18%, 92% 70%, 50% 100%, 8% 70%, 0 18%)", display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${0.4 + 0.6 * sp(f, t0)})`, opacity: k(f, t0, 4) })}>
+      <Tx size={40} col="#fff" style={{ textAlign: "center" }}>CO<br />SHUT-OFF</Tx></div>
     <div style={ab(940, 260, 860, 660, { background: "#d7dde2", borderRadius: 12, overflow: "hidden" })}>
       <div style={ab(220, 330, 390, 280, {})}><Gen2 s={1.3} run={1 - off} f={f} /></div>
-      <Puffs f={f} x={630} y={410} at={0} stop={t1} dy={-80} dx={-120} size={70} life={50} />
+      <Puffs f={f} x={624} y={424} at={0} stop={t1} dy={-110} dx={90} size={70} life={50} />
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: `${70 * lvl}%`, background: "rgba(110,116,124,.55)" }} />
       <div style={ab(0, 660 - 0.7 * 660 + 0 - 2, 860, 6, { background: "repeating-linear-gradient(90deg,#d6402f 0 24px, rgba(0,0,0,0) 24px 36px)" })} />
       <Tx size={30} col={RED} style={{ position: "absolute", right: 20, top: 150 }}>SENSOR TRIPS</Tx>
@@ -525,28 +570,21 @@ const HoseWall: React.FC<P> = ({ dur, m }) => {
     {pts.slice(0, -1).map(([x1, y1], i) => { const [x2, y2] = pts[i + 1]; const q = cl(hp * 4 - i); const len = Math.hypot(x2 - x1, y2 - y1), an = Math.atan2(y2 - y1, x2 - x1);
       return <div key={i} style={ab(x1, y1 - 9, len * q, 18, { transform: `rotate(${an}rad)`, transformOrigin: "0 50%", background: "#1f1f1f", borderRadius: 9, border: "3px solid #f3f0e6" })} />; })}
     <div style={ab(1376, 610, 60, 60, { borderRadius: "50%", background: "#1a1a1a", border: "4px solid #f3f0e6", transform: `scale(${k(f, t2, 8)})` })} />
-    <div style={ab(1440, 620, 300, 40, { opacity: cl(k(f, t2 - 12, 6) - k(f, t2 + 14, 6)), background: "linear-gradient(90deg, #555, #222)", borderRadius: 8 })}>
-      <div style={ab(-60, 12, 60, 16, { background: `repeating-linear-gradient(${f * 30}deg,#ccc 0 4px,#777 4px 8px)` })} /></div>
+    <Pic id="g0880" x={1460} y={360} w={420} h={380} f={f} at={t2} rot={3} kind="print" tape />
     <Ch t="a hose out through a hole in the wall" at={t1} f={f} x={160} y={80} size={66} />
-    <Ch t="safe?" at={t2 + 12} f={f} x={1500} y={420} size={110} col={YEL} />
+    <Ch t="safe?" at={t2 + 12} f={f} x={1560} y={790} size={110} col={YEL} />
   </Floor>;
 };
 
 // hoseleak · LA PRUEBA DEL AGUA CON JABÓN: primer plano de la abrazadera; crecen burbujas en la unión
 const HoseLeak: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t0 = D(m, 0, dur, 0.1), t1 = D(m, 1, dur, 0.6);
-  return <AbsoluteFill style={{ background: "#2a2d31" }}>
-    <div style={ab(0, 440, 900, 200, { background: "linear-gradient(#d4d9dd,#7a8389 60%,#4d555b)" })} />
-    <div style={ab(800, 410, 1120, 260, { background: "repeating-linear-gradient(90deg,#1c1c1c 0 26px,#2b2b2b 26px 34px)", borderRadius: "30px 0 0 30px" })} />
-    <div style={ab(840, 390, 120, 300, { background: "repeating-linear-gradient(0deg,#c3c9cd 0 10px,#8e969c 10px 14px)", borderRadius: 14 })} />
-    <div style={ab(950, 360, 70, 70, { background: "#a5adb3", borderRadius: 10 })} />
-    {Array.from({ length: 9 }, (_, i) => { const st = t1 - 6 + i * 4; const g = k(f, st, 18); const s = 30 + ((i * 53) % 70);
-      return <div key={i} style={ab(800 + ((i * 41) % 90) - s / 2, 380 + ((i * 97) % 300) - s / 2 - g * 10, s * g, s * g, { borderRadius: "50%", border: "3px solid rgba(220,240,255,.85)", background: "radial-gradient(circle at 35% 30%, rgba(255,255,255,.8) 0 12%, rgba(180,220,255,.15) 30%, rgba(255,255,255,.05) 70%)" })} />; })}
-    <Ch t="never sealed." at={t0} f={f} x={120} y={140} size={96} />
-    <Ch t="the clamp leaks." at={t1} f={f} x={120} y={800} size={96} col={YEL} />
-  </AbsoluteFill>;
+  return <Floor>
+    <Pic id="g0860" x={760} y={150} w={1040} h={780} f={f} at={0} rot={1.5} kind="torn" />
+    <Ch t="never sealed." at={t0} f={f} x={100} y={300} size={96} />
+    <Ch t="the clamp leaks." at={t1} f={f} x={100} y={560} size={96} col={YEL} />
+  </Floor>;
 };
-
 // sealedbox · LA CAJA DE CARTÓN QUE SE CIERRA: las solapas se pliegan sobre un motorcito y por la ventana del corte sube el gris
 const SealedBox: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t0 = D(m, 0, dur, 0.2), t1 = D(m, 1, dur, 0.65); const cls = io((f - t0) / 14);
@@ -586,8 +624,9 @@ const Window10: React.FC<P> = ({ dur, m }) => {
     <div style={ab(1240, 240, 620, 480, { background: "#cfc6b4", opacity: 0.0 })} />
     <div style={ab(1300, 300, 240, 300, { background: `rgba(120,125,132,${0.85 * k(f, t2, 30)})` })} />
     <Win x={1300} y={300} w={240} h={300} open={op} />
+    <Pic id="g1040" x={90} y={300} w={500} h={340} f={f} at={t0} rot={-3} kind="print" tape />
     <div style={ab(330, 680, 330, 230, {})}><Gen2 s={1.05} run={1} f={f} /></div>
-    <Puffs f={f} x={650} y={760} at={0} dy={-480} dx={620} curve={40} size={70} n={9} life={50} />
+    <Puffs f={f} x={645} y={750} at={0} dy={-430} dx={640} curve={40} size={70} n={9} life={50} />
     <div style={ab(660, 940, 640 * k(f, t0, 14), 8, { background: RED })} />
     <Ch t="10 FT" at={t0 + 4} f={f} x={900} y={960} size={70} col={RED} />
     <Ch t="a window cracked open" at={t1} f={f} x={80} y={90} size={66} col={INK} />
@@ -598,23 +637,27 @@ const Window10: React.FC<P> = ({ dur, m }) => {
 // neighbor · LOS DOS PIOLINES: dos techos a 20 pies; del generador del vecino salen dos hilos — a tu ventana y a la suya — y se ve cuál es más corto
 const Neighbor: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t0 = D(m, 0, dur, 0.1), t1 = D(m, 1, dur, 0.45), t2 = D(m, 2, dur, 0.78);
-  const g: [number, number] = [930, 560]; const yours: [number, number] = [700, 470], his: [number, number] = [1640, 760];
-  const str = (to: [number, number], at: number, col: string, lbl: string) => { const len = Math.hypot(to[0] - g[0], to[1] - g[1]), an = Math.atan2(to[1] - g[1], to[0] - g[0]); const q = k(f, at, 16);
+  // el vecino dejó SU generador a 20 FT de SU casa (la cota va del generador a su pared) … y quedó pegado a tu ventana
+  const g: [number, number] = [760, 640]; const yours: [number, number] = [606, 470], his: [number, number] = [1300, 780];
+  const str = (to: [number, number], at: number, col: string, lbl: string, lx: number, ly: number) => { const len = Math.hypot(to[0] - g[0], to[1] - g[1]), an = Math.atan2(to[1] - g[1], to[0] - g[0]); const q = k(f, at, 16);
     return <><div style={ab(g[0], g[1] - 4, len * q, 8, { background: col, transform: `rotate(${an}rad)`, transformOrigin: "0 50%", borderRadius: 4 })} />
-      <Tx size={34} col={col} style={{ position: "absolute", left: (g[0] + to[0]) / 2 - 60, top: (g[1] + to[1]) / 2 + 20, opacity: q, background: "rgba(255,255,255,.85)", padding: "4px 10px" }}>{lbl}</Tx></>; };
-  return <AbsoluteFill style={{ background: SNOW }}>
-    <div style={ab(120, 200, 580, 640, { background: "repeating-linear-gradient(90deg,#5a4f45 0 40px,#4a4139 40px 44px)" })}><Tx size={40} col="#efe6d6" style={{ position: "absolute", left: 40, top: 40 }}>YOUR HOUSE</Tx></div>
-    <div style={ab(1080, 200, 720, 640, { background: "repeating-linear-gradient(90deg,#6b5a4a 0 40px,#5a4b3d 40px 44px)" })}><Tx size={40} col="#efe6d6" style={{ position: "absolute", right: 40, top: 40 }}>NEIGHBOR</Tx></div>
-    <div style={ab(686, 420, 28, 110, { background: "#9ec3e6" })} />
-    <div style={ab(1640, 828, 110, 28, { background: "#9ec3e6", left: 1600 })} />
-    <div style={ab(700, 900, 380 * k(f, t0, 12), 8, { background: INK })} /><Ch t="20 FT" at={t0 + 4} f={f} x={810} y={920} size={56} col={INK} />
+      <Tx size={34} col={col} style={{ position: "absolute", left: lx, top: ly, opacity: q, background: "rgba(255,255,255,.92)", padding: "4px 12px", whiteSpace: "nowrap" }}>{lbl}</Tx></>; };
+  return <AbsoluteFill style={{ background: "linear-gradient(#c3ced9,#e6edf3)" }}>
+    <div style={ab(0, 900, 1920, 180, { background: SNOW })} />
+    <div style={ab(100, 240, 520, 660, { background: "repeating-linear-gradient(90deg,#5a4f45 0 40px,#4a4139 40px 44px)" })}><Tx size={40} col="#efe6d6" style={{ position: "absolute", left: 40, top: 40 }}>YOUR HOUSE</Tx></div>
+    <div style={ab(1300, 240, 520, 660, { background: "repeating-linear-gradient(90deg,#6b5a4a 0 40px,#5a4b3d 40px 44px)" })}><Tx size={40} col="#efe6d6" style={{ position: "absolute", right: 40, top: 40 }}>NEIGHBOR</Tx></div>
+    <div style={ab(592, 410, 28, 120, { background: "#9ec3e6", border: "4px solid #f4f4f0" })} />
+    <div style={ab(1300, 720, 28, 120, { background: "#9ec3e6", border: "4px solid #f4f4f0" })} />
+    <div style={ab(820, 700, 480 * k(f, t0, 12), 8, { background: INK })} />
+    <div style={ab(816, 680, 8, 48, { background: INK, opacity: k(f, t0, 6) })} /><div style={ab(1296, 680, 8, 48, { background: INK, opacity: k(f, t0, 12) })} />
+    <Ch t="20 FT" at={t0 + 4} f={f} x={1000} y={720} size={60} col={INK} />
     <div style={ab(g[0] - 60, g[1] - 45, 120, 90, { background: "#2a2e33", borderRadius: 12 })}><div style={ab(16, 14, 60, 60, { background: ORG, borderRadius: 8 })} /></div>
-    {str(yours, t1, RED, "YOUR BEDROOM")}
-    {str(his, t2, BLUE, "HIS OWN")}
-    <Ch t="closer to your window than his own" at={t2 + 6} f={f} x={960} y={60} size={64} c col={INK} />
+    {str(yours, t1, RED, "YOUR BEDROOM", 330, 560)}
+    {str(his, t2, BLUE, "HIS OWN", 960, 810)}
+    <Ch t="closer to your window than his own" at={t2 + 6} f={f} x={960} y={70} size={64} c col={INK} />
+    <Pic id="g1110" x={690} y={160} w={540} h={380} f={f} at={t0 + 6} rot={-2} kind="print" tape />
   </AbsoluteFill>;
 };
-
 // sidecheck · EL BARRIDO DE LA PARED: una línea de escaneo recorre el costado de la casa y etiqueta ventana, puerta y ventilación
 const SideCheck: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const sx = lerp(80, 1840, io((f - 6) / Math.max(30, dur * 0.7)));
@@ -624,7 +667,9 @@ const SideCheck: React.FC<P> = ({ dur }) => {
     <Win x={300} y={330} w={200} h={250} /><div style={ab(820, 420, 170, 480, { background: "#7a5a3c", border: "10px solid #f4f4f0" })} /><div style={ab(1400, 560, 110, 80, { background: "#f4f4f0", borderRadius: 8 })} />
     <div style={ab(0, 900, 1920, 180, { background: SNOW })} />
     <div style={ab(sx - 6, 140, 12, 800, { background: YEL, boxShadow: "0 0 0 6px rgba(242,194,48,.35)" })} />
-    {items.map(([x, s]) => { const q = k(f, 6 + (x - 80) / 1760 * Math.max(30, dur * 0.7), 6); return <div key={s} style={ab(x - 20, 200, 260, 70, { background: YEL, opacity: q, transform: `translateY(${(1 - q) * -20}px)`, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "4px 6px 0 rgba(0,0,0,.25)" })}><Tx size={40}>{s}</Tx></div>; })}
+    {items.map(([x, s], i) => { const at = 6 + (x - 80) / 1760 * Math.max(30, dur * 0.7); const q = k(f, at, 6); return <React.Fragment key={s}>
+      <Pic id={["g0591", "g1060", "g1620"][i]} x={x - 70} y={300} w={380} h={330} f={f} at={at} rot={[-3, 2, -2][i]} kind="print" tape />
+      <div style={ab(x - 20, 180, 260, 70, { background: YEL, opacity: q, transform: `translateY(${(1 - q) * -20}px)`, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "4px 6px 0 rgba(0,0,0,.25)" })}><Tx size={40}>{s}</Tx></div></React.Fragment>; })}
     <Ch t="20 feet — and look at that side of the house" at={4} f={f} x={960} y={50} size={60} c col={INK} />
   </AbsoluteFill>;
 };
@@ -648,7 +693,7 @@ const Cord: React.FC<P> = ({ dur, m }) => {
       <div style={ab(0, 50, 400, 480, { background: "#fbf6e8", borderRadius: 14, boxShadow: "6px 8px 0 rgba(0,0,0,.3)", padding: 30, boxSizing: "border-box" })}>
         <div style={{ width: 60, height: 60, borderRadius: "50%", background: "#7f8387", margin: "0 auto 20px" }} />
         <Tx size={30}>HEAVY GENERATOR CORD</Tx>
-        <Tx size={100} col={RED} style={{ fontFamily: SERIF, marginTop: 20 }}>$50–150</Tx>
+        <Tx size={78} col={RED} style={{ fontFamily: SERIF, marginTop: 20, whiteSpace: "nowrap" }}>$50–150</Tx>
         <Tx size={26} col="#6a5a40" style={{ marginTop: 20 }}>WHERE GARY SHOPS</Tx>
       </div>
     </div>
@@ -673,7 +718,7 @@ const Coals: React.FC<P> = ({ dur, m, a }) => {
       <Tx size={44} col={INK} style={{ position: "absolute", left: 0, right: 0, top: -70, textAlign: "center", color: CH }}>CO</Tx>
     </div>
     {short ? <>
-      <div style={ab(1120, 300, 260, 340, { background: "linear-gradient(#e6e1d2,#cfc7b2)", borderRadius: "10px 10px 4px 4px", transform: "rotate(10deg)", boxShadow: "6px 8px 0 rgba(0,0,0,.35)" })}><Tx size={46} col={INK} style={{ padding: "40px 20px" }}>CHARCOAL</Tx></div>
+      <Pic id="g1250" x={260} y={250} w={1020} h={740} f={f} at={0} rot={-2} kind="pol" cap="charcoal" tape />
       <Ch t="charcoal is one of the worst." at={2} f={f} x={120} y={100} size={86} len={10} /></>
       : <><Ch t="long after the flames are gone" at={t0} f={f} x={100} y={70} size={70} />
         <Ch t="…just warm gray coals" at={t1} f={f} x={100} y={170} size={70} col="#c9c4bb" /></>}
@@ -683,39 +728,27 @@ const Coals: React.FC<P> = ({ dur, m, a }) => {
 // ================= MISTAKE 5 =================
 // oven · LA PUERTA DEL HORNO QUE BAJA: el horno a gas de frente, la puerta se abate hacia abajo, las agujas del reloj del horno dan horas; el repasador se mece cerca de la llama
 const Oven: React.FC<P> = ({ dur, m }) => {
-  const f = useCurrentFrame(); const t = [D(m, 0, dur, 0.08), D(m, 1, dur, 0.22), D(m, 2, dur, 0.5), D(m, 3, dur, 0.8)]; const door = io((f - t[1]) / 16);
+  const f = useCurrentFrame(); const t = [D(m, 0, dur, 0.08), D(m, 1, dur, 0.22), D(m, 2, dur, 0.5), D(m, 3, dur, 0.8)];
   const hrs = io((f - t[0]) / Math.max(30, dur * 0.7)) * 4;
   return <AbsoluteFill style={{ background: "#d8cbb2" }}>
     <div style={ab(0, 900, 1920, 180, { background: "repeating-linear-gradient(45deg,#b9a98c 0 60px,#cbbd9f 60px 120px)" })} />
-    <div style={ab(560, 140, 800, 780, { background: "linear-gradient(#f2efe8,#d9d4c8)", borderRadius: 14, boxShadow: "10px 12px 0 rgba(0,0,0,.25)", perspective: 1400 })}>
-      <div style={ab(0, 0, 800, 150, { background: "#3b3f44", borderRadius: "14px 14px 0 0" })}>
-        {[100, 220, 580, 700].map((x) => <div key={x} style={ab(x - 30, 45, 60, 60, { borderRadius: "50%", background: "#c9ced2" })} />)}
-        <div style={ab(330, 25, 140, 100, { borderRadius: "50%", background: "#f4f1e6", border: "6px solid #8d949a" })}>
-          <div style={ab(66, 14, 6, 40, { background: INK, transformOrigin: "50% 100%", transform: `rotate(${hrs * 30}deg)` })} />
-          <div style={ab(67, 6, 4, 48, { background: RED, transformOrigin: "50% 100%", transform: `rotate(${hrs * 360}deg)` })} />
-        </div>
-      </div>
-      <div style={ab(60, 190, 680, 520, { background: "#1e1a17", overflow: "hidden" })}>
-        <div style={ab(40, 380, 600, 120, { background: `radial-gradient(ellipse at 50% 100%, rgba(255,120,40,${0.4 + 0.3 * door}), rgba(0,0,0,0) 70%)` })} />
-        {Array.from({ length: 12 }, (_, i) => <div key={i} style={ab(70 + i * 48, 470 - 30 - 8 * Math.sin(f / 3 + i), 26, 40 + 8 * Math.sin(f / 3 + i), { background: "linear-gradient(#9fd2ff,#2f6fe0)", clipPath: "polygon(50% 0, 100% 100%, 0 100%)" })} />)}
-      </div>
-      <div style={ab(40, 170, 720, 560, { background: "linear-gradient(#e9e5dc,#cdc7ba)", borderRadius: 12, transformOrigin: "50% 100%", transform: `rotateX(${-100 * door}deg)`, border: "6px solid #b3ac9e", boxSizing: "border-box" })}>
-        <div style={ab(100, 110, 520, 280, { background: "#2a2622", borderRadius: 8 })} />
-        <div style={ab(80, 30, 560, 26, { background: "#a4abb1", borderRadius: 13 })} />
-      </div>
+    <Pic id="g1430" x={560} y={110} w={820} h={640} f={f} at={0} rot={-1.5} kind="print" tape />
+    <div style={ab(1520, 90, 230, 230, { borderRadius: "50%", background: "#f4f1e6", border: "12px solid #8d949a", boxSizing: "border-box", boxShadow: "6px 8px 0 rgba(0,0,0,.25)" })}>
+      {Array.from({ length: 12 }, (_, j) => <div key={j} style={ab(100, 6, 6, 18, { background: INK, transformOrigin: "3px 97px", transform: `rotate(${j * 30}deg)` })} />)}
+      <div style={ab(99, 45, 8, 58, { background: INK, borderRadius: 4, transformOrigin: "4px 58px", transform: `rotate(${hrs * 30}deg)` })} />
+      <div style={ab(100, 22, 6, 81, { background: RED, borderRadius: 3, transformOrigin: "3px 81px", transform: `rotate(${hrs * 360}deg)` })} />
     </div>
-    <div style={ab(1000, 610 + 0 * door, 150, 230, { opacity: k(f, t[3], 10), transformOrigin: "50% 0", transform: `rotate(${Math.sin(f / 10) * 7}deg)`, background: "repeating-linear-gradient(90deg,#e6e9ec 0 22px,#c94f3f 22px 30px)" })} />
+    <Pic id="g1481" x={1390} y={500} w={440} h={400} f={f} at={t[3]} rot={4} kind="pol" />
     <div style={ab(80, 120, 440, 700)}>
       <Ch t="for hours" at={t[0]} f={f} x={0} y={0} size={70} col={INK} />
       <Ch t="door open" at={t[1]} f={f} x={0} y={110} size={70} col={INK} />
-      <Ch t="→ more CO" at={t[1] + 14} f={f} x={0} y={210} size={66} col={RED} />
+      <Ch t="→ more CO" at={t[1] + 10} f={f} x={0} y={210} size={66} col={RED} />
       <Ch t="older ones" at={t[2]} f={f} x={0} y={330} size={58} col={INK} />
-      <Ch t="needing a cleaning" at={t[2] + 10} f={f} x={0} y={410} size={50} col={INK} />
+      <Ch t="needing a cleaning" at={t[2] + 8} f={f} x={0} y={410} size={50} col={INK} />
     </div>
-    <Ch t="an open flame" at={t[3]} f={f} x={1420} y={300} size={70} col={RED} />
+    <Ch t="an open flame" at={t[3]} f={f} x={1400} y={400} size={70} col={RED} />
   </AbsoluteFill>;
 };
-
 // rooms · EL PLANO CON PUERTAS QUE SE CIERRAN: plano de tiza de la casa; las puertas de los cuartos giran a cerrado, caen tres frazadas apiladas y queda el anuncio del próximo video
 const Rooms: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t0 = D(m, 0, dur, 0.08), t1 = D(m, 1, dur, 0.3), t2 = D(m, 2, dur, 0.7);
@@ -733,8 +766,8 @@ const Rooms: React.FC<P> = ({ dur, m }) => {
     {[0, 1, 2].map((i) => <div key={i} style={ab(330, 760 - i * 40 - (1 - sp(f, t1 + i * 5)) * 200, 420, 46, { background: ["#9c3b3b", "#3b6e9c", "#c9a23b"][i], borderRadius: 10, opacity: k(f, t1 + i * 5, 4), boxShadow: "3px 5px 0 rgba(0,0,0,.3)" })} />)}
     <Ch t="close off rooms" at={t0} f={f} x={220} y={60} size={64} />
     <Ch t="layer up" at={t1} f={f} x={820} y={680} size={64} />
-    <div style={ab(1160, 560, 500, 260, { background: "#fbf8ef", transform: `rotate(-3deg) translateY(${(1 - k(f, t2, 12)) * 400}px)`, boxShadow: "6px 8px 0 rgba(0,0,0,.3)", padding: 26, boxSizing: "border-box" })}>
-      <Tx size={30} col="#6a5a40">MY NEXT VIDEO</Tx><Tx size={64} col={INK} style={{ fontFamily: SERIF, marginTop: 10 }}>12 WAYS TO KEEP THE HOUSE WARM</Tx></div>
+    <div style={ab(1120, 560, 640, 330, { background: "#fbf8ef", transform: `rotate(-3deg) translateY(${(1 - k(f, t2, 12)) * 500}px)`, boxShadow: "6px 8px 0 rgba(0,0,0,.3)", padding: "26px 34px", boxSizing: "border-box" })}>
+      <Tx size={30} col="#6a5a40">MY NEXT VIDEO</Tx><Tx size={50} col={INK} style={{ fontFamily: SERIF, marginTop: 14, lineHeight: 1.12 }}>12 WAYS TO KEEP THE HOUSE WARM</Tx></div>
   </Floor>;
 };
 
@@ -812,8 +845,8 @@ const Label: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t0 = D(m, 0, dur, 0.1), t1 = D(m, 1, dur, 0.4), t2 = D(m, 2, dur, 0.75); const lvl = 1 - 0.62 * io((f - t0) / Math.max(20, t2 - t0)); const off = k(f, t2 + 4, 6);
   return <Floor>
     <div style={ab(200, 160, 1000, 760, { border: "10px solid rgba(235,242,246,.85)", borderTop: "none", borderRadius: "0 0 20px 20px" })}>
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: `${lvl * 100}%`, background: "rgba(95,179,232,.28)" }}>
-        {Array.from({ length: 30 }, (_, i) => <div key={i} style={ab((i * 97) % 940 + 10, ((i * 61 + f * 2) % 600), 44, 44, { borderRadius: "50%", border: "3px solid rgba(220,240,255,.8)", fontFamily: SANS, fontWeight: 800, fontSize: 15, color: "#e8f6ff", display: "flex", alignItems: "center", justifyContent: "center" })}>O₂</div>)}
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: `${lvl * 100}%`, background: "rgba(95,179,232,.28)", overflow: "hidden" }}>
+        {Array.from({ length: 30 }, (_, i) => <div key={i} style={ab((i * 97) % 910 + 14, ((i * 61 + f * 2) % Math.max(60, lvl * 750 - 54)) + 4, 44, 44, { borderRadius: "50%", border: "3px solid rgba(220,240,255,.8)", fontFamily: SANS, fontWeight: 800, fontSize: 15, color: "#e8f6ff", display: "flex", alignItems: "center", justifyContent: "center" })}>O₂</div>)}
       </div>
       <div style={ab(-10, 760 * 0.62 - 4, 1020, 8, { background: "repeating-linear-gradient(90deg,#d6402f 0 24px, rgba(0,0,0,0) 24px 36px)", top: 760 - 760 * 0.38 })} />
       <Tx size={30} col={RED} style={{ position: "absolute", right: 16, top: 760 - 760 * 0.38 - 44 }}>OXYGEN SENSOR LINE</Tx>
@@ -851,14 +884,14 @@ const HeaterRules: React.FC<P> = ({ dur, m }) => {
 const NoSleep: React.FC<P> = () => {
   const f = useCurrentFrame();
   return <Floor>
-    <div style={ab(520, 380, 520, 260, { background: "#f4f1e8", borderRadius: 90, boxShadow: "inset -20px -20px 0 #ddd6c6, 8px 10px 0 rgba(0,0,0,.25)" })} />
-    <div style={ab(1120, 360, 240, 300, { background: "#5d6266", borderRadius: 18 })}><div style={ab(30, 40, 180, 130, { background: "linear-gradient(#ffb05a,#e86a1a)", borderRadius: 8 })} /></div>
-    <div style={ab(470, 260, 1000 * k(f, 4, 6), 22, { background: RED, transform: "rotate(22deg)", transformOrigin: "0 50%", borderRadius: 11 })} />
-    <div style={ab(470, 740, 1000 * k(f, 9, 6), 22, { background: RED, transform: "rotate(-22deg)", transformOrigin: "0 50%", borderRadius: 11 })} />
-    <Ch t="never while you sleep" at={6} f={f} x={960} y={110} size={92} c len={10} />
+    <Pic id="g1770" x={300} y={240} w={900} h={700} f={f} at={0} rot={-2} kind="print" tape />
+    <div style={ab(1330, 380, 420, 420, { borderRadius: "50%", border: `34px solid ${RED}`, boxSizing: "border-box", transform: `scale(${0.5 + 0.5 * sp(f, 8)})`, opacity: k(f, 8, 4), boxShadow: "6px 8px 0 rgba(0,0,0,.3)", background: "rgba(255,255,255,.08)" })}>
+      <div style={ab(155, -20, 42, 420, { background: RED, transform: "rotate(-45deg)", transformOrigin: "50% 50%", top: -34 })} />
+      <Tx size={58} col="#fff" style={{ position: "absolute", left: 0, right: 0, top: 150, textAlign: "center", textShadow: "2px 3px 0 rgba(0,0,0,.6)" }}>ASLEEP</Tx>
+    </div>
+    <Ch t="never while you sleep" at={4} f={f} x={960} y={70} size={92} c len={10} />
   </Floor>;
 };
-
 // towers · EL UMBRAL QUE NO SE CRUZA: tres siluetas (torre, de patio, torpedo) avanzan hacia la puerta, chocan contra la raya roja del umbral y rebotan
 const Towers: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t = [D(m, 0, dur, 0.05), D(m, 1, dur, 0.3), D(m, 2, dur, 0.55), D(m, 3, dur, 0.82)];
@@ -875,7 +908,9 @@ const Towers: React.FC<P> = ({ dur, m }) => {
     {shapes.map((sh, i) => { const p = go(t[i]); const x = lerp(-400, 1240 - [90, 240, 300][i] - i * 0, p) - (2 - i) * 330 * (p > 0.98 ? 1 : p);
       return <div key={i} style={ab(x, 480, 320, 520, { opacity: f >= t[i] ? 1 : 0 })}>{sh}</div>; })}
     {["tower heaters", "patio heaters", "torpedo heaters"].map((s, i) => <Ch key={s} t={s} at={t[i]} f={f} x={60} y={60 + i * 90} size={56} col={INK} />)}
-    <Ch t="never come inside." at={t[3]} f={f} x={1340} y={260} size={62} col={RED} />
+    <Ch t="never come inside." at={t[3]} f={f} x={1340} y={240} size={62} col={RED} />
+    <Pic id="g1780" x={1350} y={360} w={430} h={400} f={f} at={t[3] + 4} rot={3} kind="pol" />
+    <Stamp text="✕ OUTDOOR ONLY" f={f} at={t[3] + 10} x={1370} y={790} size={36} rot={-4} />
   </AbsoluteFill>;
 };
 
@@ -883,7 +918,8 @@ const Towers: React.FC<P> = ({ dur, m }) => {
 // damper · LA TAPA DEL TIRAJE: chimenea en corte; la tapa gira a cerrado, el humo de las brasas choca y se derrama en el living (el gris baja del techo); al final se reabre
 const Damper: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t = [D(m, 0, dur, 0.08), D(m, 1, dur, 0.4), D(m, 2, dur, 0.6), D(m, 3, dur, 0.9)];
-  const closed = io((f - 4) / 14) * (1 - io((f - t[3]) / 12)); const fill = io((f - t[1]) / 50) * (1 - k(f, t[3], 30));
+  const reopen = Math.max(t[3], Math.round(dur * 0.88)); // se reabre recién al final del plano
+  const closed = io((f - 4) / 14) * (1 - io((f - reopen) / 12)); const fill = io((f - t[1]) / 50) * (1 - k(f, reopen, 30));
   return <AbsoluteFill style={{ background: "#e8dcc4" }}>
     <div style={ab(0, 0, 1920, 600 * fill, { background: "rgba(110,112,118,.75)" })} />
     <div style={ab(560, 0, 520, 1080, { background: "repeating-linear-gradient(0deg,#8c4a36 0 50px,#d8cbb8 50px 56px)" })} />
@@ -896,7 +932,8 @@ const Damper: React.FC<P> = ({ dur, m }) => {
     <Ch t="the coals are still burning" at={t[0]} f={f} x={1140} y={720} size={58} col={INK} />
     <Ch t="nowhere to go" at={t[1]} f={f} x={1140} y={820} size={64} col={RED} />
     <Ch t="but into the room" at={t[2]} f={f} x={1140} y={910} size={64} col={RED} />
-    <div style={ab(80, 760, 420, 120, { background: GRN, borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", opacity: k(f, t[3], 8), transform: `scale(${0.7 + 0.3 * sp(f, t[3])})` })}><Tx size={46} col="#fff">DAMPER OPEN</Tx></div>
+    <Pic id="g1880" x={70} y={90} w={440} h={380} f={f} at={0} rot={-3} kind="print" tape />
+    <div style={ab(80, 720, 440, 120, { background: closed > 0.5 ? RED : GRN, borderRadius: 12, border: "6px solid #fff", display: "flex", alignItems: "center", justifyContent: "center", opacity: k(f, 6, 8), boxShadow: "6px 8px 0 rgba(0,0,0,.3)" })}><Tx size={46} col="#fff" style={{ whiteSpace: "nowrap" }}>{closed > 0.5 ? "DAMPER CLOSED" : "DAMPER OPEN"}</Tx></div>
   </AbsoluteFill>;
 };
 
@@ -914,8 +951,13 @@ const PerFloor: React.FC<P> = ({ dur, m }) => {
         {i === 0 && <>{[700, 820].map((x) => <div key={x} style={ab(x, 70, 90, 150, { background: "#7a5a3c" })} />)}
           <div style={ab(560, 50, 110, 110, { transform: `scale(${sp(f, t1)})` })}><Puck s={0.6} /></div></>}
       </div>; })}
-    <div style={ab(1340, 420, 120, 160, { background: "#f4f4f0", borderRadius: 12, border: "4px solid #bbb" })}>{[40, 70].map((x) => <div key={x} style={ab(x, 50, 10, 40, { background: "#222" })} />)}</div>
-    <div style={ab(1360 + yank * 360, 460 - yank * 120, 110, 90, { background: "#e9e9e6", borderRadius: 10, transform: `rotate(${yank * 30}deg)` })}><div style={ab(110, 40, 300, 12, { background: "#e9e9e6" })} /></div>
+    <div style={ab(1340, 400, 150, 200, { background: "#f4f4f0", borderRadius: 14, border: "4px solid #bbb", boxShadow: "4px 6px 0 rgba(0,0,0,.3)" })}>{[60, 100].map((y) => <div key={y} style={ab(40, y - 8, 64, 14, { background: "#222", borderRadius: 3 })} />)}</div>
+    {/* la ficha: sus dos patas entran justo en las dos ranuras; al arrancarla sale derecha hacia afuera */}
+    <div style={ab(1424 + yank * 200, 400 + 52 - 22, 0, 0)}>
+      {[0, 40].map((y) => <div key={y} style={ab(-44, 22 + y - 8 + 8, 64, 10, { background: "linear-gradient(#e8d28a,#b8963a)", borderRadius: 2 })} />)}
+      <div style={ab(16, 0, 110, 96, { background: "#e9e9e6", borderRadius: 12, border: "3px solid #c9c9c4", boxShadow: "4px 6px 0 rgba(0,0,0,.3)" })} />
+      <div style={ab(126, 40, 420, 16, { background: "#e9e9e6", borderRadius: 8 })} />
+    </div>
     <Ch t="one on every floor" at={t0} f={f} x={1300} y={150} size={58} />
     <Ch t="+ outside the bedrooms" at={t1} f={f} x={1300} y={240} size={54} />
     <Ch t="no wall power? still on." at={t2} f={f} x={1300} y={700} size={58} col={YEL} />
@@ -956,8 +998,8 @@ const Place: React.FC<P> = ({ dur, m, a }) => {
     {room(140, 570, 560, 400, "LIVING ROOM", v === 1)}{room(700, 570, 420, 400, "KITCHEN · STOVE", v === 2)}
     {room(1120, 570, 420, 400, "GARAGE", v === 4)}
     {room(1240, 120, 560, 380, "BASEMENT", v === 3)}
-    <div style={ab(1300, 360, 120, 120, { background: "#5d6266", border: `4px solid ${CH}` })}><Tx size={22} col="#fff" style={{ padding: 6 }}>FURNACE</Tx></div>
-    <div style={ab(1460, 360, 100, 120, { background: "#e7e9ea", borderRadius: 40 })}><Tx size={18} col={INK} style={{ padding: "40px 6px" }}>W. HEATER</Tx></div>
+    <div style={ab(1270, 340, 170, 140, { background: "#5d6266", border: `4px solid ${CH}`, display: "flex", alignItems: "center", justifyContent: "center" })}><Tx size={24} col="#fff" style={{ whiteSpace: "nowrap", letterSpacing: 1 }}>FURNACE</Tx></div>
+    <div style={ab(1456, 340, 190, 140, { background: "#e7e9ea", borderRadius: 40, display: "flex", alignItems: "center", justifyContent: "center" })}><Tx size={24} col={INK} style={{ whiteSpace: "nowrap", letterSpacing: 1 }}>W. HEATER</Tx></div>
     <div style={ab(960, 860, 100, 80, { background: "#3b3f44", borderRadius: 8 })} />
     <div style={ab(1112, 700, 16, 140, { background: YEL, opacity: v >= 4 ? 1 : 0.3 })} />
     {chip(640, 510, 0, v === 0 ? t0 : 0)}
@@ -983,7 +1025,7 @@ const Mixes: React.FC<P> = ({ dur, m }) => {
     <div style={ab(560, 140, 300, 840, { border: "10px solid rgba(80,100,120,.5)", borderTop: "none", borderRadius: "0 0 30px 30px", background: "rgba(255,255,255,.35)", overflow: "hidden" })}>
       {Array.from({ length: 60 }, (_, i) => <div key={i} style={ab(((i * 53) % 260) + Math.sin(f / 9 + i) * 8, ((i * 137) % 800) + Math.cos(f / 11 + i) * 10, 22, 22, { borderRadius: "50%", background: "#7c8188", opacity: k(f, t[0] - 10, 10) })} />)}
     </div>
-    <div style={ab(940, 300, 90, 200, { opacity: k(f, t[1], 8) })}><div style={ab(35, 0, 20, 150, { background: INK })} /><div style={{ position: "absolute", left: 10, top: 140, borderTop: `50px solid ${INK}`, borderLeft: "35px solid transparent", borderRight: "35px solid transparent" }} /></div>
+    {/* sin flecha: contradecía la mezcla */}
     <Ch t="doesn't sink much ✕" at={t[1]} f={f} x={1050} y={360} size={56} col={INK} />
     <Ch t="doesn't float much ✕" at={t[1] + 10} f={f} x={1050} y={480} size={56} col={INK} />
     <div style={ab(1600, 70 - (1 - sp(f, t[2])) * 100, 130, 130, { opacity: k(f, t[2], 4) })}><Puck s={0.72} /></div>
@@ -1053,9 +1095,9 @@ const Suspect: React.FC<P> = ({ dur, m, a }) => {
   return <Floor>
     <Tent n={n} f={f} />
     <Tx size={36} col={CH} style={{ position: "absolute", left: 120, top: 940 }}>SUSPICIOUS · {n} OF 4</Tx>
-    {n === 1 && <>{[0, 1, 2, 3].map((i) => { const sick = k(f, t0 + i * 3, 10); return <div key={i} style={ab(560 + i * 260, 380 + (i === 3 ? 60 : 0), 140, 400, { transform: `scale(${i === 3 ? 0.75 : 1})`, transformOrigin: "50% 100%" })}>
-      <Person s={2} col={`rgb(${Math.round(lerp(240, 170, sick))},${Math.round(lerp(230, 200, sick))},${Math.round(lerp(214, 150, sick))})`} slump={sick * (i % 2 ? 0.4 : -0.3)} />
-      <div style={ab(40, -60, 60, 40, { opacity: sick, fontFamily: HAND, fontSize: 60, color: CH })}>~</div></div>; })}
+    {n === 1 && <>
+      <Pic id="g2680" x={430} y={250} w={640} h={500} f={f} at={t0 - 10} rot={-3} kind="print" tape />
+      <Pic id="g2450" x={1140} y={290} w={640} h={500} f={f} at={t0} rot={2.5} kind="print" tape />
       <Ch t="everybody sick at the same time" at={t0} f={f} x={1060} y={110} size={66} c /></>}
     {n === 3 && <>
       <div style={ab(500, 200, 620, 640, { background: "linear-gradient(#cdd7e1,#eef3f7)", borderRadius: 12, overflow: "hidden" })}><div style={ab(0, 520, 620, 120, { background: SNOW })} />
@@ -1103,6 +1145,7 @@ const Dispatch: React.FC<P> = ({ dur, m }) => {
       <div style={{ position: "absolute", left: -40, top: 140, width: 0, height: 0, borderRight: "60px solid #fff", borderTop: "30px solid transparent", borderBottom: "30px solid transparent" }} />
     </div>
     <Ch t="tell them" at={0} f={f} x={830} y={180} size={70} />
+    <Pic id="g2690" x={1200} y={600} w={540} h={400} f={f} at={6} rot={3} kind="pol" />
   </AbsoluteFill>;
 };
 
@@ -1203,10 +1246,11 @@ const Propane: React.FC<P> = ({ dur, m }) => {
 const Protect: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const S = ["A CHAIN ON A GENERATOR OUTSIDE", "A LOCKED CAR IN THE DAYLIGHT", "A BATTERY FOR THE NIGHT"];
   return <Floor>
-    <div style={ab(160, 520, 1600, 440, { background: "rgba(47,158,90,.35)", border: `10px solid ${GRN}`, borderRadius: 24, boxSizing: "border-box" })}><Tx size={50} col="#d6f5e1" style={{ position: "absolute", left: 40, bottom: 26 }}>THOSE PROTECT YOU</Tx></div>
-    {S.map((s, i) => { const at = D(m, i, dur, 0.05 + i * 0.3); const p = io((f - at) / 14); const x = 220 + i * 520, y = lerp(80, 580, p);
-      return <div key={s} style={ab(x, y, 460, 260, { background: "#fbf8ef", borderRadius: 14, transform: `rotate(${(1 - p) * (i - 1) * 8}deg)`, boxShadow: "6px 8px 0 rgba(0,0,0,.3)", opacity: k(f, at - 6, 6), padding: 26, boxSizing: "border-box" })}>
-        <Tx size={30} col="#8a7a5c">{i === 2 ? "NIGHT" : "DAY"}</Tx><Tx size={44} col={INK} style={{ marginTop: 14 }}>{s}</Tx></div>; })}
+    <div style={ab(150, 470, 1620, 560, { background: "rgba(47,158,90,.35)", border: `10px solid ${GRN}`, borderRadius: 24, boxSizing: "border-box" })}><Tx size={46} col="#d6f5e1" style={{ position: "absolute", left: 40, bottom: 20, whiteSpace: "nowrap" }}>THOSE PROTECT YOU</Tx></div>
+    {S.map((s, i) => { const at = D(m, i, dur, 0.05 + i * 0.3); const p = io((f - at) / 14); const x = 200 + i * 520, y = lerp(40, 500, p);
+      return <div key={s} style={ab(x, y, 480, 420, { background: "#fbf8ef", borderRadius: 14, transform: `rotate(${(1 - p) * (i - 1) * 8}deg)`, boxShadow: "6px 8px 0 rgba(0,0,0,.3)", opacity: k(f, at - 6, 6), boxSizing: "border-box", overflow: "hidden" })}>
+        <div style={ab(14, 14, 452, 190, { overflow: "hidden", borderRadius: 8, background: "#222" })}><Img src={G(["g0490", "g0940", "g3200"][i])} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
+        <div style={{ position: "absolute", left: 24, right: 24, top: 218 }}><Tx size={28} col="#8a7a5c">{i === 2 ? "NIGHT" : "DAY"}</Tx><Tx size={36} col={INK} style={{ marginTop: 10 }}>{s}</Tx></div></div>; })}
   </Floor>;
 };
 
@@ -1218,14 +1262,15 @@ const Chirp: React.FC<P> = ({ dur, m }) => {
     <div style={ab(x0, 470, 1600, 8, { background: CH })} />
     {[0, 1, 2, 3, 4].map((i) => <React.Fragment key={i}>
       <div style={ab(x0 + i * step - 3, 440, 6, 70, { background: CH })} />
-      <Tx size={34} col={CH} style={{ position: "absolute", left: x0 + i * step - 40, top: 520 }}>{["0:00", "0:30", "1:00", "1:30", "2:00"][i]}</Tx>
+      <Tx size={32} col={CH} style={{ position: "absolute", left: x0 + i * step + 18, top: 488, whiteSpace: "nowrap" }}>{["0:00", "0:30", "1:00", "1:30", "2:00"][i]}</Tx>
       <div style={ab(x0 + i * step - 14, 470 - 200 * cl(1 - Math.abs(play - i) * 2.5), 28, 200 * cl(1 - Math.abs(play - i) * 2.5), { background: YEL, borderRadius: 14 })} />
       {play >= i && <div style={ab(x0 + i * step - 20, 380, 40, 40, { borderRadius: "50%", background: YEL })} />}
     </React.Fragment>)}
     <Ch t="one single chirp · every half minute" at={t0} f={f} x={960} y={120} size={64} c />
-    {[["LOW BATTERY", t1, 420], ["END OF ITS LIFE", t2, 1080]].map(([s, at, x]) => <div key={s as string} style={ab(x as number, 640, 440, 220, { transformOrigin: "50% 0", transform: `rotate(${Math.sin((f - (at as number)) / 7) * 8 * Math.exp(-Math.max(0, f - (at as number)) / 24)}deg)`, opacity: k(f, at as number, 6) })}>
-      <div style={ab(212, 0, 16, 60, { background: "#9aa2a8" })} />
-      <div style={ab(0, 60, 440, 160, { background: "#fbf8ef", borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "6px 8px 0 rgba(0,0,0,.3)" })}><Tx size={48}>{s as string}</Tx></div></div>)}
+    {/* cada cartel cuelga de SU marca (0:30 y 1:30): el poste nace en la línea, justo en el tic */}
+    {[["LOW BATTERY", t1, x0 + step], ["END OF ITS LIFE", t2, x0 + 3 * step]].map(([s, at, cx]) => <div key={s as string} style={ab((cx as number) - 220, 478, 440, 330, { transformOrigin: "50% 0", transform: `rotate(${Math.sin((f - (at as number)) / 7) * 8 * Math.exp(-Math.max(0, f - (at as number)) / 24)}deg)`, opacity: k(f, at as number, 6) })}>
+      <div style={ab(212, 0, 16, 150, { background: "#9aa2a8" })} />
+      <div style={ab(0, 150, 440, 160, { background: "#fbf8ef", borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "6px 8px 0 rgba(0,0,0,.3)" })}><Tx size={46} style={{ whiteSpace: "nowrap" }}>{s as string}</Tx></div></div>)}
   </Floor>;
 };
 
@@ -1252,7 +1297,7 @@ const Ppm: React.FC<P> = ({ dur, m }) => {
       <div style={ab(1200, 540, 12, 12, { borderRadius: "50%", background: RED })} />
     </AbsoluteFill>
     <div style={ab(100, 120, 760, 340, { background: "#1b2330", borderRadius: 20, padding: 30, boxSizing: "border-box", boxShadow: "8px 10px 0 rgba(0,0,0,.25)" })}>
-      <div style={{ background: "#b9c8a4", borderRadius: 10, height: 200, display: "flex", alignItems: "center", justifyContent: "flex-end", padding: "0 30px", fontFamily: "monospace", fontWeight: 900, fontSize: 130, color: "#24301a" }}>0<span style={{ fontSize: 50, marginLeft: 20 }}>PPM</span></div>
+      <div style={{ background: "#b9c8a4", borderRadius: 10, height: 200, display: "flex", alignItems: "center", justifyContent: "flex-end", padding: "0 30px", fontFamily: "monospace", fontWeight: 900, fontSize: 130, color: "#24301a" }}>1<span style={{ fontSize: 50, marginLeft: 20 }}>PPM</span></div>
       <Tx size={34} col={CH} style={{ marginTop: 20 }}>PARTS PER MILLION</Tx>
     </div>
     <Ch t="1 part in 1,000,000 of the air" at={t0 + 10} f={f} x={100} y={520} size={66} col={INK} />
@@ -1268,15 +1313,10 @@ const DayNight: React.FC<P> = ({ dur, m }) => {
       <div style={ab(640, 1260, 120, 120, { borderRadius: "50%", background: "#f4f1e2", boxShadow: "inset -28px -10px 0 #d6d0b8", transform: "rotate(180deg)" })} />
     </div>
     <div style={ab(0, 760, 1920, 320, { background: SNOW })} />
-    <div style={ab(160, 360, 640, 420, { background: "#e8dcc4", border: "12px solid #4a3f36", boxSizing: "border-box", opacity: 0.4 + 0.6 * night })}>
-      <div style={ab(40, 210, 300, 160, { background: "#f4f1e8", borderRadius: 30 })} />
-      <div style={ab(380, 220, 180, 150, { background: "#2f3a44", borderRadius: 16, opacity: night })}><div style={ab(20, 20, 140, 50, { background: "#7fe0d0", borderRadius: 8 })} /></div>
-      <Tx size={34} col={INK} style={{ position: "absolute", left: 30, top: 24 }}>OVERNIGHT · POWER STATION</Tx>
-    </div>
-    <div style={ab(1250, 540, 320, 230, { opacity: 1 - night })}><Gen2 s={1.05} run={1 - night} f={f} /></div>
-    <Puffs f={f} x={1560} y={600} at={0} stop={t0} dy={-200} />
-    <Puffs f={f} x={1560} y={600} at={t1} dy={-200} />
-    <Tx size={40} col={INK} style={{ position: "absolute", left: 1150, top: 800, opacity: 1 - night }}>DAYTIME · GENERATOR OUTSIDE</Tx>
+    <Pic id="g3200" x={140} y={250} w={760} h={520} f={f} at={0} rot={-2} kind="print" op={0.35 + 0.65 * night} />
+    <Pic id="g3640" x={1020} y={250} w={760} h={520} f={f} at={0} rot={2} kind="print" op={1 - 0.65 * night} />
+    <Tx size={40} col={INK} style={{ position: "absolute", left: 160, top: 820, whiteSpace: "nowrap", opacity: 0.4 + 0.6 * night }}>OVERNIGHT · POWER STATION</Tx>
+    <Tx size={40} col={INK} style={{ position: "absolute", left: 1040, top: 820, whiteSpace: "nowrap", opacity: 1 - 0.6 * night }}>DAYTIME · GENERATOR OUTSIDE</Tx>
   </AbsoluteFill>;
 };
 
@@ -1301,18 +1341,19 @@ const CtaQ: React.FC<P> = ({ dur, m }) => {
 // cta · EL BUZÓN CON LA BANDERITA: el buzón rural levanta su bandera roja (suscribite) y entra el sobre del próximo video
 const Cta: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t0 = D(m, 0, dur, 0.1), t1 = D(m, 1, dur, 0.4), t2 = D(m, 2, dur, 0.9); const flag = io((f - t0) / 12); const env = io((f - t1) / 18);
-  return <AbsoluteFill style={{ background: "linear-gradient(#cdd7e1,#eef3f7)" }}>
-    <div style={ab(0, 820, 1920, 260, { background: SNOW })} />
+  return <Floor ph="g1600">
+    <div style={ab(0, 860, 1920, 220, { background: "rgba(238,243,247,.92)" })} />
     <div style={ab(880, 560, 40, 300, { background: "#7a5a3c" })} />
     <div style={ab(600, 300, 620, 280, { background: "linear-gradient(#b9c0c6,#7d858c)", borderRadius: "140px 140px 10px 10px", boxShadow: "8px 10px 0 rgba(0,0,0,.25)" })}>
       <div style={ab(-10, 20, 40, 250, { background: "#2a2e33", borderRadius: "40px 0 0 10px" })} />
     </div>
     <div style={ab(1180, 340, 24, 230, { background: RED, transformOrigin: "50% 100%", transform: `rotate(${90 - 90 * flag}deg)` })}><div style={ab(0, 0, 110, 70, { background: RED })} /></div>
-    <div style={ab(lerp(-700, 640, env), 380 + (1 - env) * -200, 520, 200, { background: "#fbf8ef", boxShadow: "6px 8px 0 rgba(0,0,0,.25)", transform: `rotate(${(1 - env) * -14}deg)`, padding: 20, boxSizing: "border-box", clipPath: env > 0.98 ? "inset(0 0 0 0)" : undefined })}>
-      <Tx size={26} col="#6a5a40">NEXT VIDEO</Tx><Tx size={40} col={INK} style={{ fontFamily: SERIF, marginTop: 8 }}>KEEPING YOUR HOUSE WARM WHEN THE POWER'S OUT</Tx></div>
+    <div style={ab(lerp(-700, 560, env), 640 + (1 - env) * -200, 620, 270, { background: "#fbf8ef", boxShadow: "6px 8px 0 rgba(0,0,0,.3)", transform: `rotate(${(1 - env) * -14 - 2}deg)`, boxSizing: "border-box" })}>
+      <div style={ab(18, 18, 220, 234, { overflow: "hidden", borderRadius: 10, background: "#222" })}><Img src={G("g2630")} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
+      <div style={{ position: "absolute", left: 260, right: 20, top: 22 }}><Tx size={26} col="#6a5a40">NEXT VIDEO</Tx><Tx size={36} col={INK} style={{ fontFamily: SERIF, marginTop: 10, lineHeight: 1.12 }}>KEEPING YOUR HOUSE WARM WHEN THE POWER'S OUT</Tx></div></div>
     <Ch t="subscribe" at={t0} f={f} x={1300} y={200} size={100} col={RED} />
-    <Ch t="now the prize →" at={t2} f={f} x={1300} y={700} size={70} col={INK} />
-  </AbsoluteFill>;
+    <Ch t="now the prize →" at={t2} f={f} x={1300} y={700} size={70} col={YEL} />
+  </Floor>;
 };
 
 // ================= THE TWO-MINUTE CHECK =================
@@ -1335,7 +1376,7 @@ const Check: React.FC<P> = ({ dur, a }) => {
           <Tx size={30} col={i === n - 1 ? INK : CH} style={{ position: "absolute", left: 0, right: 0, top: 120, textAlign: "center" }}>STEP {i + 1}</Tx>
         </div>; })}
     </div>
-    {n === 0 ? <><div style={ab(330, 170, 480, 480, { borderRadius: "50%", background: "#f3f0e6", border: "18px solid #2b3442", boxSizing: "border-box", boxShadow: "0 20px 40px rgba(0,0,0,.35)" })}>{Array.from({ length: 12 }, (_, j) => <div key={j} style={ab(213, 14, 18, 40, { background: "#2b3442", transformOrigin: "9px 208px", transform: `rotate(${j * 30}deg)` })} />)}<Tx size={80} col={INK} style={{ position: "absolute", left: 0, right: 0, top: 270, textAlign: "center" }}>{`${Math.floor((120 - Math.round(f / 3)) / 60)}:${String((120 - Math.round(f / 3)) % 60).padStart(2, "0")}`}</Tx><div style={ab(214, 60, 16, 170, { background: RED, borderRadius: 8, transformOrigin: "8px 162px", transform: `rotate(${f * 6}deg)` })} /><div style={ab(202, 202, 40, 40, { borderRadius: "50%", background: RED })} /><div style={ab(190, -70, 64, 60, { background: "#2b3442", borderRadius: 10 })} /></div><Ch t="do it tonight." at={10} f={f} x={1330} y={380} size={130} c /></>
+    {n === 0 ? <><div style={ab(330, 170, 480, 480, { borderRadius: "50%", background: "#f3f0e6", border: "18px solid #2b3442", boxSizing: "border-box", boxShadow: "0 20px 40px rgba(0,0,0,.35)" })}>{Array.from({ length: 12 }, (_, j) => <div key={j} style={ab(213, 14, 18, 40, { background: "#2b3442", transformOrigin: "9px 208px", transform: `rotate(${j * 30}deg)` })} />)}<Tx size={80} col={INK} style={{ position: "absolute", left: 0, right: 0, top: 270, textAlign: "center" }}>{`${Math.floor((120 - Math.round(f / 3)) / 60)}:${String((120 - Math.round(f / 3)) % 60).padStart(2, "0")}`}</Tx><div style={ab(214, 60, 16, 170, { background: RED, borderRadius: 8, transformOrigin: "8px 162px", transform: `rotate(${((120 - Math.round(f / 3)) % 60) * 6}deg)` })} /><div style={ab(202, 202, 40, 40, { borderRadius: "50%", background: RED })} /><div style={ab(190, -70, 64, 60, { background: "#2b3442", borderRadius: 10 })} /></div><Ch t="do it tonight." at={10} f={f} x={1330} y={380} size={130} c /></>
       : <><div style={ab(260, 220, 300, 300, { transform: `scale(${sp(f, 2)})` })}>{pic(n - 1)}</div>
         <Tx size={64} col={CH} style={{ position: "absolute", left: 660, top: 300, width: 1100, opacity: k(f, 6, 8) }}>{STEP[n - 1]}</Tx></>}
   </Floor>;
@@ -1384,28 +1425,37 @@ const Next: React.FC<P> = ({ dur, m }) => {
     <div style={ab(740, 60, 26, 960, { background: "#c9a26b" })} /><div style={ab(1160, 60, 26, 960, { background: "#c9a26b" })} />
     {Array.from({ length: 12 }, (_, i) => { const e = k(f, t[0] + i * 1.5, 8); const mark = i >= 9 ? k(f, t[3] + (i - 9) * 4, 8) : 0;
       return <div key={i} style={ab(766 - (1 - e) * 400, 80 + i * 78, 394, 56, { background: `hsl(${130 - i * 11}, 60%, 50%)`, borderRadius: 8, opacity: e, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: mark ? `0 0 0 8px ${YEL}` : "3px 4px 0 rgba(0,0,0,.25)" })}><Tx size={34} col="#fff">{i + 1}</Tx></div>; })}
-    <Ch t="12 ways to keep your house warm" at={t[0]} f={f} x={60} y={120} size={50} />
+    <Ch t="12 ways to keep" at={t[0]} f={f} x={60} y={120} size={60} />
+    <Ch t="your house warm" at={t[0] + 4} f={f} x={60} y={200} size={60} />
     <Ch t="safest ↑" at={t[1]} f={f} x={1240} y={70} size={64} col="#8ff0b0" />
     <Ch t="riskiest ↓" at={t[2]} f={f} x={1240} y={930} size={64} col="#ff9a8a" />
-    <Ch t="3 of them: mistakes you just saw" at={t[3] + 4} f={f} x={60} y={830} size={50} col={YEL} />
+    <Ch t="3 of them:" at={t[3] + 4} f={f} x={60} y={790} size={58} col={YEL} />
+    <Ch t="mistakes you just saw" at={t[3] + 8} f={f} x={60} y={870} size={58} col={YEL} />
   </Floor>;
 };
 
 // recap:out · LA SALIDA EN FILA: la familia sale por la puerta a la nieve y recién afuera se enciende el teléfono con el 9-1-1
 const ExitWalk: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t0 = D(m, 0, dur, 0.2), t1 = D(m, 1, dur, 0.7);
-  return <AbsoluteFill style={{ background: "linear-gradient(#1c2a3e,#34465e)" }}>
-    <div style={ab(0, 840, 1920, 240, { background: SNOW })} />
-    <Siding x={1180} y={180} w={740} h={660} col="#c9c0ae" />
-    <div style={ab(1300, 440, 220, 400, { background: "rgba(255,214,120,.85)", border: "12px solid #f4f4f0", boxSizing: "border-box" })} />
-    {[0, 1, 2, 3].map((i) => { const p = io((f - t0 - i * 5) / 30); return <div key={i} style={ab(lerp(1360, 260 + i * 170, p), 840 - (i === 3 ? 120 : 170), 70, 170, { opacity: k(f, t0 + i * 5 - 2, 4), transform: `scale(${i === 3 ? 0.7 : 1})`, transformOrigin: "50% 100%" })}><Person col="#f0e6d6" /></div>; })}
-    <div style={ab(860, 300, 220, 400, { background: "#15181c", borderRadius: 30, border: "8px solid #3a3f45", opacity: k(f, t1, 8), transform: `scale(${0.6 + 0.4 * sp(f, t1)})` })}>
-      <div style={ab(16, 40, 172, 300, { background: "#0f3b26", borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center" })}><Tx size={56} col="#fff">9-1-1</Tx></div></div>
+  return <Floor>
+    <Pic id="g2510" x={110} y={300} w={760} h={560} f={f} at={t0 - 8} rot={-2.5} kind="pol" tape />
+    <Pic id="g2520" x={1010} y={270} w={800} h={560} f={f} at={t1 - 8} rot={2} kind="print" tape />
+    <div style={ab(1270, 850, 300, 120, { background: RED, borderRadius: 16, border: "6px solid #fff", display: "flex", alignItems: "center", justifyContent: "center", opacity: k(f, t1, 6), transform: `scale(${0.6 + 0.4 * sp(f, t1)})`, boxShadow: "6px 8px 0 rgba(0,0,0,.3)" })}><Tx size={64} col="#fff" style={{ whiteSpace: "nowrap" }}>9-1-1</Tx></div>
     <Ch t="everybody out first" at={t0} f={f} x={80} y={90} size={80} />
-    <Ch t="then call 9-1-1 from outside" at={t1} f={f} x={80} y={190} size={70} col={YEL} />
-  </AbsoluteFill>;
+    <Ch t="then call 9-1-1 from outside" at={t1} f={f} x={80} y={185} size={66} col={YEL} />
+  </Floor>;
 };
 
+// plancha de fondo por escena: una foto real distinta del video en cada plano (bajo degradé oscuro)
+const PLATE: Record<string, string> = {
+  tenlist: "g0230", rooms: "g0230", "promise:garage": "g2560", "cdc:400": "g2251", cdc: "g0420", nosense: "g3530", hundreds: "g2240", leaks: "g0280",
+  draft: "g2251", "draft:garage": "g0970", chainprice: "g0281", shutoff: "g2800", hosewall: "g0910", hoseleak: "g3120", sealedbox: "g3110", cord: "g1190",
+  rank12: "g1730", heaterrules: "g1730", label: "g1801", nosleep: "g0020", perfloor: "g1980", twotypes: "g3420", "place:hall": "g2610", "place:15": "g2980",
+  "place:no": "g3150", age14: "g2370", sensor: "g2330", signs: "g0290", "suspect:1": "g3530", "suspect:4": "g3140", suspect: "g3140", firstmin: "g2510",
+  emergency: "g2680", propane: "g2760", chirp: "g2950", ctaq: "g2370", check: "g3350", datecalc: "g3390", floorplan: "g3480", next: "g0970", tarp: "g1630",
+  risk: "g2450", counter: "g3270", q: "g2000", protect: "g2800", climb: "g1240", window10: "g1090", inout: "g1780", flue: "g1910", ventmap: "g2380",
+  towers: "g1690", mixes: "g3420", blood: "g0420", sleep: "g0020", recap: "g2520", promise: "g1290", coals: "g1310", sidecheck: "g1350", yard20: "g2010", alarm4: "g2020", dispatch: "g2070", hundreds2: "g2170",
+};
 export const CompC14c: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   const [c, ...a] = String(s.comp || s.spec).split(":"); const m: number[] = s.m || [];
   const T: Record<string, React.FC<P>> = { sleep: Sleep, tenlist: TenList, promise: Promise2, cdc: Cdc, nosense: NoSense, blood: Blood, postmark: FlashMap, hundreds: Hundreds, leaks: Leaks, draft: Draft,
@@ -1414,7 +1464,9 @@ export const CompC14c: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
     towers: Towers, damper: Damper, perfloor: PerFloor, twotypes: TwoTypes, place: Place, mixes: Mixes, age14: Age14, sensor: Sensor, signs: Signs, suspect: Suspect, firstmin: FirstMin,
     dispatch: Dispatch, emergency: Emergency, risk: Risk, counter: CounterJar, q: Q, propane: Propane, protect: Protect, chirp: Chirp, alarm4: Alarm4, ppm: Ppm, daynight: DayNight, ctaq: CtaQ, cta: Cta,
     check: Check, datecalc: DateCalc, floorplan: FloorPlan, next: Next };
-  if (c === "mistake") return <Reel m={m} dur={dur} a={a} />;
-  if (c === "recap") return a[0] === "out" ? <ExitWalk m={m} dur={dur} a={a} /> : <Reel m={m} dur={dur} a={a} recap />;
-  const X = T[c]; return X ? <X m={m} dur={dur} a={a} /> : <AbsoluteFill style={{ background: "#f0f" }} />;
+  const key = String(s.comp || s.spec);
+  const ph = PLATE[key] || PLATE[c] || "g2060";
+  const inner = c === "mistake" ? <Reel m={m} dur={dur} a={a} /> : c === "recap" ? (a[0] === "out" ? <ExitWalk m={m} dur={dur} a={a} /> : <Reel m={m} dur={dur} a={a} recap />)
+    : T[c] ? React.createElement(T[c], { m, dur, a }) : <AbsoluteFill style={{ background: "#f0f" }} />;
+  return <PlateCtx.Provider value={ph}>{inner}</PlateCtx.Provider>;
 };
