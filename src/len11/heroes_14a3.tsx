@@ -1,11 +1,11 @@
-﻿// HÃ©roes de len14a â€” parte 3. CSS/DOM puro (kit hk14).
+// Héroes de len14a — parte 3. CSS/DOM puro (kit hk14).
 import React from "react";
 import { Img, staticFile } from "remotion";
 import { H, F, K, SLAB, SANS, HAND, cl, lerp, eio, eout, pr, spr, useT, WOOD, PALEWOOD, TILE, PAPER, CORK, STEEL, PEG, CHALK, CLOTH, NIGHT, Box, Tx, Stage, Card, Pin, Rubber } from "./hk14";
 
 const tag = (c: string = K.ink, s = 40): React.CSSProperties => ({ fontFamily: SANS, fontWeight: 900, fontSize: s, color: c });
 
-// â”€â”€ RECEIPT_SPIKE: pinche de mostrador; caen tres tickets de flapper (2011) y se ensartan uno sobre otro
+// ── RECEIPT_SPIKE: pinche de mostrador; caen tres tickets de flapper (2011) y se ensartan uno sobre otro
 export const receipt_spike: H = ({ dur }) => {
   const t = useT();
   return (<F dur={dur}><Stage rx={20} ry={Math.sin(t * 0.4) * 6} bg={WOOD}>
@@ -19,7 +19,7 @@ export const receipt_spike: H = ({ dur }) => {
   </Stage></F>);
 };
 
-// â”€â”€ DRIP_DIVE: corte del tubo de rebalse; el tubito de relleno se mete adentro (DIVE âœ—) y luego sube y queda goteando por encima (DRIP âœ“)
+// ── DRIP_DIVE: corte del tubo de rebalse; el tubito de relleno se mete adentro (DIVE ✗) y luego sube y queda goteando por encima (DRIP ✓)
 export const drip_dive: H = ({ dur }) => {
   const t = useT(), up = eio(pr(t, 1.6, 2.4)), tipY = lerp(560, 330, up);
   return (<F dur={dur}><Stage rx={6} ry={Math.sin(t * 0.4) * 6} bg={{ background: "linear-gradient(180deg,#cfe6f0,#8fbfd8)" }}>
@@ -29,12 +29,12 @@ export const drip_dive: H = ({ dur }) => {
     <div style={{ position: "absolute", left: 360, top: 300, width: 600, height: 26, background: "#222", borderRadius: 13, transformOrigin: "0 50%", transform: `rotate(${lerp(18, 3, up)}deg)` }} />
     <div style={{ position: "absolute", left: 940, top: tipY, width: 26, height: 80, background: "#222", borderRadius: 13 }} />
     {up > 0.9 && [0, 1, 2].map((k) => { const ph = (t * 1.6 + k / 3) % 1; return <div key={k} style={{ position: "absolute", left: 944, top: tipY + 80 + ph * 140, width: 18, height: 24, borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%", background: "#e4f4ff", opacity: 1 - ph }} />; })}
-    <Rubber t={t} at={0.6} x={600} y={620} text="DIVE âœ—" c={K.red} />
-    <Rubber t={t} at={2.4} x={1400} y={420} text="DRIP âœ“" c={K.green} />
+    <Rubber t={t} at={0.6} x={600} y={620} text="DIVE ✗" c={K.red} />
+    <Rubber t={t} at={2.4} x={1400} y={420} text="DRIP ✓" c={K.green} />
   </Stage></F>);
 };
 
-// â”€â”€ GRIT_RIDE: corte de caÃ±o; granos de arena y Ã³xido viajan por el caÃ±o y se meten todos por el agujerito de la vÃ¡lvula
+// ── GRIT_RIDE: corte de caño; granos de arena y óxido viajan por el caño y se meten todos por el agujerito de la válvula
 export const grit_ride: H = ({ dur }) => {
   const t = useT();
   return (<F dur={dur}><Stage rx={14} ry={-6 + Math.sin(t * 0.3) * 5} bg={{ background: "#e9e1cf" }}>
@@ -51,7 +51,7 @@ export const grit_ride: H = ({ dur }) => {
   </Stage></F>);
 };
 
-// â”€â”€ GEYSER_CUP: la torre de la vÃ¡lvula vista de costado; un vaso boca abajo encima; un chorro sube, golpea el fondo del vaso y la mugre cae afuera
+// ── GEYSER_CUP: la torre de la válvula vista de costado; un vaso boca abajo encima; un chorro sube, golpea el fondo del vaso y la mugre cae afuera
 export const geyser_cup: H = ({ dur }) => {
   const t = useT(), on = pr(t, 0.6, 0.9) * (1 - pr(t, 3.2, 3.5)), jet = on * (0.8 + Math.sin(t * 30) * 0.05);
   return (<F dur={dur}><Stage rx={4} ry={Math.sin(t * 0.4) * 8} bg={TILE}>
@@ -60,12 +60,12 @@ export const geyser_cup: H = ({ dur }) => {
     <Box x={800} y={160} w={320} h={240} z={30} style={{ background: "linear-gradient(90deg,rgba(255,255,255,0.35),rgba(255,255,255,0.75),rgba(255,255,255,0.3))", border: "6px solid rgba(255,255,255,0.9)", borderRadius: "40px 40px 10px 10px", clipPath: "polygon(8% 0,92% 0,100% 100%,0 100%)" }} />
     {Array.from({ length: 12 }, (_, i) => { const ph = cl((t - 0.9 - i * 0.12) / 1.2); if (ph <= 0 || ph >= 1) return null; const side = i % 2 ? 1 : -1;
       return <div key={i} style={{ position: "absolute", left: 960 + side * (180 + ph * 160), top: 400 + ph * ph * 520, width: 14, height: 10, borderRadius: 3, background: "#7a4a1f" }} />; })}
-    <Tx x={960} y={50} s={70} c={K.navy} wt={900}>FIVE SECONDS Â· A LITTLE WATER</Tx>
+    <Tx x={960} y={50} s={70} c={K.navy} wt={900}>FIVE SECONDS · A LITTLE WATER</Tx>
     <Tx x={1500} y={620} w={600} s={48} c={K.red} wt={900} o={cl((t - 2) * 2)}>the grit blows out</Tx>
   </Stage></F>);
 };
 
-// â”€â”€ OVER_UNDER: tarjeta de encuesta de la ferreterÃ­a con dos casillas de lÃ¡piz; una mano tilda una (v0); v1 cuatro casillas
+// ── OVER_UNDER: tarjeta de encuesta de la ferretería con dos casillas de lápiz; una mano tilda una (v0); v1 cuatro casillas
 export const over_under: H = ({ dur, v = 0 }) => {
   const t = useT(), opts = v === 0 ? ["OVER THE TOP", "OUT THE BOTTOM"] : ["THE FLOAT", "THE CHAIN", "THE FLAPPER", "SOMETHING ELSE"];
   const pick = Math.floor(t * 0.9) % opts.length;
@@ -73,7 +73,7 @@ export const over_under: H = ({ dur, v = 0 }) => {
     <Card x={460} y={140} w={1000} h={800} z={0} r={-2}>
       <div style={{ ...tag(K.navy, 60), textAlign: "center", marginTop: 50 }}>TELL ME IN THE COMMENTS</div>
       {opts.map((o, i) => <div key={o} style={{ display: "flex", alignItems: "center", gap: 40, margin: `${v ? 36 : 70}px 0 0 120px`, opacity: cl((t - 0.3 - i * 0.25) * 3) }}>
-        <div style={{ width: 80, height: 80, border: `6px solid ${K.ink}`, position: "relative" }}>{pick === i && <div style={{ position: "absolute", left: 6, top: -30, fontFamily: HAND, fontSize: 120, color: K.red, lineHeight: 1 }}>âœ“</div>}</div>
+        <div style={{ width: 80, height: 80, border: `6px solid ${K.ink}`, position: "relative" }}>{pick === i && <div style={{ position: "absolute", left: 6, top: -30, fontFamily: HAND, fontSize: 120, color: K.red, lineHeight: 1 }}>✓</div>}</div>
         <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 72, color: K.ink }}>{o}</div>
       </div>)}
     </Card>
@@ -81,7 +81,7 @@ export const over_under: H = ({ dur, v = 0 }) => {
   </Stage></F>);
 };
 
-// â”€â”€ GHOST_SHEET: tanque de noche; una sÃ¡bana-fantasma de papel recortado sube del tanque, el nivel baja y el relleno se prende solo
+// ── GHOST_SHEET: tanque de noche; una sábana-fantasma de papel recortado sube del tanque, el nivel baja y el relleno se prende solo
 export const ghost_sheet: H = ({ dur }) => {
   const t = useT(), rise = eout(pr(t, 0.4, 1.8));
   return (<F dur={dur}><Stage rx={6} ry={Math.sin(t * 0.3) * 6} bg={NIGHT}>
@@ -90,14 +90,14 @@ export const ghost_sheet: H = ({ dur }) => {
       <div style={{ position: "absolute", left: 110, top: 140, width: 50, height: 70, borderRadius: 25, background: "#1b2533" }} /><div style={{ position: "absolute", left: 240, top: 140, width: 50, height: 70, borderRadius: 25, background: "#1b2533" }} />
     </div>
     <Tx x={960} y={60} s={84} c="#e8eef6" f={SLAB} wt={900}>"PHANTOM FLUSH"</Tx>
-    <Tx x={960} y={1000} s={44} c="#ffd37a" wt={800} o={cl((t - 1.6) * 2)}>2:14 AM Â· nobody touched it</Tx>
+    <Tx x={960} y={1000} s={44} c="#ffd37a" wt={800} o={cl((t - 1.6) * 2)}>2:14 AM · nobody touched it</Tx>
   </Stage></F>);
 };
 
-// â”€â”€ LEAK_PATHS: corte del tanque con tres salidas numeradas; una gota recorre cada una (v0); v1 las tilda en orden 1-2-3
+// ── LEAK_PATHS: corte del tanque con tres salidas numeradas; una gota recorre cada una (v0); v1 las tilda en orden 1-2-3
 export const leak_paths: H = ({ dur, v = 0 }) => {
   const t = useT();
-  const P: [string, number, number][] = [["1 Â· PAST THE FLAPPER", 820, 860], ["2 Â· DOWN THE REFILL TUBE", 1080, 520], ["3 Â· OUT THE BOTTOM", 640, 1000]];
+  const P: [string, number, number][] = [["1 · PAST THE FLAPPER", 820, 860], ["2 · DOWN THE REFILL TUBE", 1080, 520], ["3 · OUT THE BOTTOM", 640, 1000]];
   return (<F dur={dur}><Stage rx={10} ry={Math.sin(t * 0.4) * 6} bg={TILE}>
     <Box x={560} y={240} w={800} h={620} z={0} style={{ background: "linear-gradient(180deg,#f8f8f4,#d7d3c8)", borderRadius: 20, boxShadow: "0 30px 40px rgba(0,0,0,0.3)" }}>
       <div style={{ position: "absolute", left: 30, right: 30, top: 140, bottom: 30, background: "linear-gradient(180deg,#a9d3e6,#6aa6c6)", borderRadius: 10 }} />
@@ -105,13 +105,13 @@ export const leak_paths: H = ({ dur, v = 0 }) => {
     {P.map(([s, x, y], i) => { const a = v === 0 ? 0.3 + i * 0.9 : 0.3 + i * 0.5, p = pr(t, a, a + 0.8);
       return <React.Fragment key={s}>
         {v === 0 && p > 0 && p < 1 && <div style={{ position: "absolute", left: x - 12, top: lerp(y - 220, y, p), width: 24, height: 32, borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%", background: "#3d8fd1" }} />}
-        <div style={{ position: "absolute", left: i === 1 ? 1390 : 80, top: 300 + i * 200, width: 460, ...PAPER, padding: "14px 20px", ...tag(K.navy, 38), opacity: cl((t - a) * 3), boxShadow: "0 10px 18px rgba(0,0,0,0.3)" }}>{s}{v === 1 && <span style={{ color: K.green, marginLeft: 16 }}>{t > a + 0.4 ? "âœ“" : ""}</span>}</div>
+        <div style={{ position: "absolute", left: i === 1 ? 1390 : 80, top: 300 + i * 200, width: 460, ...PAPER, padding: "14px 20px", ...tag(K.navy, 38), opacity: cl((t - a) * 3), boxShadow: "0 10px 18px rgba(0,0,0,0.3)" }}>{s}{v === 1 && <span style={{ color: K.green, marginLeft: 16 }}>{t > a + 0.4 ? "✓" : ""}</span>}</div>
       </React.Fragment>; })}
     <Tx x={960} y={60} s={68} c={K.navy} wt={900}>{v === 0 ? "ONLY THREE PLACES IT CAN GO" : "CHECK THEM IN THAT ORDER"}</Tx>
   </Stage></F>);
 };
 
-// â”€â”€ BUILDING_12: fachada de ladrillo de Pilsen de noche; las 12 ventanas se prenden de a una con un "SSHHH" de inodoro
+// ── BUILDING_12: fachada de ladrillo de Pilsen de noche; las 12 ventanas se prenden de a una con un "SSHHH" de inodoro
 export const building_12: H = ({ dur }) => {
   const t = useT();
   return (<F dur={dur}><Stage rx={-6} ry={Math.sin(t * 0.3) * 8} bg={NIGHT}>
@@ -121,17 +121,17 @@ export const building_12: H = ({ dur }) => {
           {on && <div style={{ position: "absolute", width: "100%", top: 40, textAlign: "center", fontFamily: HAND, fontSize: 34, fontWeight: 700, color: "#5a3a10" }}>sshhh</div>}
         </div>; })}
     </Box>
-    <Tx x={960} y={30} s={64} c="#ffd37a" wt={900}>PILSEN Â· 2008 Â· 12 APARTMENTS</Tx>
+    <Tx x={960} y={30} s={64} c="#ffd37a" wt={900}>PILSEN · 2008 · 12 APARTMENTS</Tx>
   </Stage></F>);
 };
 
-// â”€â”€ LEFTY_NUT: tuerca grande en un perno; una mano de tiza gira hacia la izquierda y la tuerca BAJA (aprieta); un espejo de mano refleja la flecha
+// ── LEFTY_NUT: tuerca grande en un perno; una mano de tiza gira hacia la izquierda y la tuerca BAJA (aprieta); un espejo de mano refleja la flecha
 export const lefty_nut: H = ({ dur }) => {
   const t = useT(), rot = -eio(pr(t, 0.6, 2.6)) * 540;
   return (<F dur={dur}><Stage rx={8} ry={Math.sin(t * 0.4) * 6} bg={CHALK}>
     <Box x={500} y={180} w={80} h={700} z={0} style={{ background: "repeating-linear-gradient(-20deg,#c9cfd2 0 10px,#7a8186 10px 16px)", borderRadius: 10 }} />
     <Box x={400} y={lerp(300, 560, -rot / 540)} w={280} h={140} z={20} style={{ background: "linear-gradient(180deg,#ececec,#b5b5b5)", clipPath: "polygon(15% 0,85% 0,100% 50%,85% 100%,15% 100%,0 50%)", transform: `translateZ(20px) rotateY(${rot}deg)` }} />
-    <Tx x={540} y={110} w={600} s={110} c="#f4f1e8" f={HAND} wt={700}>âŸ²</Tx>
+    <Tx x={540} y={110} w={600} s={110} c="#f4f1e8" f={HAND} wt={700}>⟲</Tx>
     <Box x={1100} y={260} w={520} h={520} z={10} style={{ borderRadius: 260, background: "radial-gradient(circle at 40% 35%, #f3f7fa, #aab6be 70%)", boxShadow: "0 0 0 24px #b08d57" }}>
       <div style={{ position: "absolute", width: "100%", top: 150, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 70, color: K.navy, transform: "scaleX(-1)" }}>RIGHTY TIGHTY</div>
       <div style={{ position: "absolute", width: "100%", top: 280, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 56, color: K.red, opacity: cl((t - 1.4) * 2) }}>NOT HERE</div>
@@ -140,7 +140,7 @@ export const lefty_nut: H = ({ dur }) => {
   </Stage></F>);
 };
 
-// â”€â”€ HALF_JUG: jarra medidora de vidrio que se llena solo hasta la mitad mientras la lÃ­nea FULL queda seca
+// ── HALF_JUG: jarra medidora de vidrio que se llena solo hasta la mitad mientras la línea FULL queda seca
 export const half_jug: H = ({ dur }) => {
   const t = useT(), f = eio(pr(t, 0.3, 2.4)) * 0.5;
   return (<F dur={dur}><Stage rx={6} ry={Math.sin(t * 0.4) * 10} bg={PALEWOOD}>
@@ -150,11 +150,11 @@ export const half_jug: H = ({ dur }) => {
       <div style={{ position: "absolute", left: 240, top: 10, ...tag(K.red, 44) }}>FULL</div>
     </Box>
     <Tx x={960} y={60} s={74} c={K.navy} wt={900}>VALVE HALF CLOSED = HALF FLUSH</Tx>
-    <Tx x={1520} y={560} w={500} s={46} c={K.ink} wt={800} o={cl((t - 1.8) * 2)}>slow fill Â· weak flush</Tx>
+    <Tx x={1520} y={560} w={500} s={46} c={K.ink} wt={800} o={cl((t - 1.8) * 2)}>slow fill · weak flush</Tx>
   </Stage></F>);
 };
 
-// â”€â”€ SPRING_COIL: una tuerca de plÃ¡stico sobre una losa de porcelana; un resorte (fuerza) se comprime; al pasarse, la losa se marca
+// ── SPRING_COIL: una tuerca de plástico sobre una losa de porcelana; un resorte (fuerza) se comprime; al pasarse, la losa se marca
 export const spring_coil: H = ({ dur }) => {
   const t = useT(), squeeze = eio(pr(t, 0.3, 1.6)), over = pr(t, 1.6, 1.9);
   return (<F dur={dur}><Stage rx={14} ry={Math.sin(t * 0.4) * 6} bg={TILE}>
@@ -170,7 +170,7 @@ export const spring_coil: H = ({ dur }) => {
   </Stage></F>);
 };
 
-// â”€â”€ EGG_VISE: un huevo en una morsa de banco; un cuarto de vuelta lo sostiene; otro y se quiebra â€” la porcelana no perdona
+// ── EGG_VISE: un huevo en una morsa de banco; un cuarto de vuelta lo sostiene; otro y se quiebra — la porcelana no perdona
 export const egg_vise: H = ({ dur }) => {
   const t = useT(), close = eio(pr(t, 0.2, 1.1)) * 0.6 + eio(pr(t, 1.5, 1.9)) * 0.4, broke = t > 1.9;
   return (<F dur={dur}><Stage rx={16} ry={Math.sin(t * 0.4) * 8} bg={WOOD}>
@@ -183,8 +183,8 @@ export const egg_vise: H = ({ dur }) => {
   </Stage></F>);
 };
 
-// â”€â”€ KEY_RING: llavero de portero con 6 llaves con etiqueta de cartÃ³n; v0 se presenta; v1..v6 la llave i se adelanta; v7 todas giran: ONCE A YEAR
-const KEYS = ["WATER LEVEL 1\"", "CHAIN Â½\" SLACK", "FLAPPER: SOFT?", "DYE TEST", "SHUTOFF OPEN", "DRY TOWEL"];
+// ── KEY_RING: llavero de portero con 6 llaves con etiqueta de cartón; v0 se presenta; v1..v6 la llave i se adelanta; v7 todas giran: ONCE A YEAR
+const KEYS = ["WATER LEVEL 1\"", "CHAIN ½\" SLACK", "FLAPPER: SOFT?", "DYE TEST", "SHUTOFF OPEN", "DRY TOWEL"];
 export const key_ring: H = ({ dur, v = 0 }) => {
   const t = useT(), sel = v >= 1 && v <= 6 ? v - 1 : -1, spin = v === 7 ? t * 40 : Math.sin(t * 1.2) * 6;
   return (<F dur={dur}><Stage rx={18} persp={1300} bg={PEG}>
@@ -196,11 +196,11 @@ export const key_ring: H = ({ dur, v = 0 }) => {
           <div style={{ marginLeft: -60, width: 200, ...PAPER, padding: "8px 6px", textAlign: "center", ...tag(K.navy, 24), border: "2px solid #a68d5d" }}>{k}</div>
         </div>; })}
     </div>
-    <Tx x={960} y={40} s={64} c={K.navy} wt={900}>{v === 0 ? "FIVE MINUTES PER TOILET" : v === 7 ? "ONCE A YEAR Â· FIVE MINUTES" : `CHECK ${v} OF 6`}</Tx>
+    <Tx x={960} y={40} s={64} c={K.navy} wt={900}>{v === 0 ? "FIVE MINUTES PER TOILET" : v === 7 ? "ONCE A YEAR · FIVE MINUTES" : `CHECK ${v} OF 6`}</Tx>
   </Stage></F>);
 };
 
-// â”€â”€ COUNTER_BELL: timbre de mostrador; al tocarlo, la pantalla roja de turnos NOW SERVING salta al nÃºmero; ticket con la pregunta
+// ── COUNTER_BELL: timbre de mostrador; al tocarlo, la pantalla roja de turnos NOW SERVING salta al número; ticket con la pregunta
 const QS = ["QUESTIONS FROM THE COUNTER", "VALVES THAT WON'T TURN", "BOILING WATER IN THE TOILET?", "THE NEW SUPPLY LINE", "WHY A 2-INCH HOLE?"];
 export const counter_bell: H = ({ dur, v = 0 }) => {
   const t = useT(), hit = pr(t, 0.3, 0.45), shake = Math.sin(t * 50) * Math.exp(-(t - 0.4) * 6) * (t > 0.4 ? 4 : 0);
@@ -216,7 +216,7 @@ export const counter_bell: H = ({ dur, v = 0 }) => {
   </Stage></F>);
 };
 
-// â”€â”€ BRICK_WALL: dos botellas (TOILET CLEANER / BLEACH) y un muro de ladrillos que se levanta hilada por hilada entre ellas
+// ── BRICK_WALL: dos botellas (TOILET CLEANER / BLEACH) y un muro de ladrillos que se levanta hilada por hilada entre ellas
 export const brick_wall: H = ({ dur }) => {
   const t = useT();
   const bottle = (x: number, lab: string, c: string) => <Box x={x} y={360} w={240} h={480} z={0} style={{ background: `linear-gradient(90deg, ${c}, #fff8 45%, ${c})`, borderRadius: "60px 60px 20px 20px" }}><div style={{ position: "absolute", top: 200, left: 20, right: 20, ...PAPER, padding: 10, textAlign: "center", ...tag(K.ink, 30) }}>{lab}</div></Box>;
@@ -228,7 +228,7 @@ export const brick_wall: H = ({ dur }) => {
   </Stage></F>);
 };
 
-// â”€â”€ BALL_VALVE: corte de una vÃ¡lvula de cuarto de vuelta; la manija gira 90Â° y la esfera con agujero rota: abierto â†’ cerrado
+// ── BALL_VALVE: corte de una válvula de cuarto de vuelta; la manija gira 90° y la esfera con agujero rota: abierto → cerrado
 export const ball_valve: H = ({ dur }) => {
   const t = useT(), q = eio(pr(t, 1, 1.8)), ang = q * 90;
   return (<F dur={dur}><Stage rx={10} ry={Math.sin(t * 0.4) * 8} bg={PALEWOOD}>
@@ -245,7 +245,7 @@ export const ball_valve: H = ({ dur }) => {
   </Stage></F>);
 };
 
-// â”€â”€ GALLON_POUR: dos baldes de pintor marcados; el viejo vuelca 3.5 gal por un agujero de 2"; el nuevo 1.6 gal por uno de 3" en el mismo tiempo
+// ── GALLON_POUR: dos baldes de pintor marcados; el viejo vuelca 3.5 gal por un agujero de 2"; el nuevo 1.6 gal por uno de 3" en el mismo tiempo
 export const gallon_pour: H = ({ dur }) => {
   const t = useT(), p = eio(pr(t, 0.5, 2.6));
   const pail = (x: number, gal: string, hole: number, lvl: number, lab: string) => <>
@@ -257,12 +257,12 @@ export const gallon_pour: H = ({ dur }) => {
     <Tx x={x + 210} y={180} w={500} s={42} c={K.ink} wt={900}>{lab}</Tx>
   </>;
   return (<F dur={dur}><Stage rx={6} ry={Math.sin(t * 0.4) * 6} bg={TILE}>
-    {pail(360, "3.5 GAL", 2, 0.95, "OLD Â· 2-INCH HOLE")}{pail(1140, "1.6 GAL", 3, 0.45, "NEW Â· 3-INCH HOLE")}
+    {pail(360, "3.5 GAL", 2, 0.95, "OLD · 2-INCH HOLE")}{pail(1140, "1.6 GAL", 3, 0.45, "NEW · 3-INCH HOLE")}
     <Tx x={960} y={40} s={64} c={K.navy} wt={900}>LESS WATER, BIGGER HOLE, FASTER DUMP</Tx>
   </Stage></F>);
 };
 
-// â”€â”€ FLAPPER_CARDS: gancho de exhibiciÃ³n de ferreterÃ­a con flappers en blÃ­ster; v0 el mÃ¡s barato sin ajuste se cae del gancho; v1 el ajustable se adelanta
+// ── FLAPPER_CARDS: gancho de exhibición de ferretería con flappers en blíster; v0 el más barato sin ajuste se cae del gancho; v1 el ajustable se adelanta
 export const flapper_cards: H = ({ dur, v = 0 }) => {
   const t = useT(), L: [string, string][] = [["BASIC FLAT", "$4.97"], ["ADJUSTABLE", "$6.98"], ["UNIVERSAL", "$7.48"]];
   return (<F dur={dur}><Stage rx={8} ry={Math.sin(t * 0.4) * 8} bg={PEG}>
@@ -281,7 +281,7 @@ export const flapper_cards: H = ({ dur, v = 0 }) => {
   </Stage></F>);
 };
 
-// â”€â”€ FLAPPER_SLIDER: corte del flapper ajustable con su perilla; un fader de mezcladora SOONER â†” LATER mueve cuÃ¡nto tarda en cerrar
+// ── FLAPPER_SLIDER: corte del flapper ajustable con su perilla; un fader de mezcladora SOONER ↔ LATER mueve cuánto tarda en cerrar
 export const flapper_slider: H = ({ dur }) => {
   const t = useT(), pos = 0.5 + Math.sin(t * 1.1) * 0.45, close = (Math.sin(t * 3) + 1) / 2;
   return (<F dur={dur}><Stage rx={14} ry={Math.sin(t * 0.3) * 6} bg={{ background: "linear-gradient(180deg,#cfe6f0,#8fbfd8)" }}>
@@ -297,8 +297,8 @@ export const flapper_slider: H = ({ dur }) => {
   </Stage></F>);
 };
 
-// â”€â”€ BLOCK_STACK: bloques de madera de juguete con precios pintados; cada variante suma uno a la torre
-const BLK: [string, string][] = [["TRIP FEE", "$100â€“200"], ["FLAPPER, PLUMBER", "$150â€“250"], ["FILL VALVE", "$200â€“300"], ["WAX RING + RESET", "$250â€“400"]];
+// ── BLOCK_STACK: bloques de madera de juguete con precios pintados; cada variante suma uno a la torre
+const BLK: [string, string][] = [["TRIP FEE", "$100–200"], ["FLAPPER, PLUMBER", "$150–250"], ["FILL VALVE", "$200–300"], ["WAX RING + RESET", "$250–400"]];
 export const block_stack: H = ({ dur, v = 0 }) => {
   const t = useT();
   return (<F dur={dur}><Stage rx={12} ry={-14 + Math.sin(t * 0.4) * 8} bg={PALEWOOD}>
@@ -306,16 +306,16 @@ export const block_stack: H = ({ dur, v = 0 }) => {
       return <Box key={a} x={560} y={lerp(-300, 840 - i * 190, p)} w={800} h={180} z={0} style={{ background: ["#c0392b", "#2f6fa5", "#e2a91e", "#3c8a4a"][i], borderRadius: 10, transform: `scaleY(${1 - sq})`, boxShadow: "inset 0 -14px 0 rgba(0,0,0,0.2), 0 10px 0 rgba(0,0,0,0.25)" }}>
         <div style={{ display: "flex", justifyContent: "space-between", padding: "50px 50px", ...tag("#fff", 60) }}><span>{a}</span><span>{b}</span></div>
       </Box>; })}
-    {v === 1 && <Rubber t={t} at={1} x={1600} y={300} text="PART: $6â€“10" c={K.navy} s={52} />}
+    {v === 1 && <Rubber t={t} at={1} x={1600} y={300} text="PART: $6–10" c={K.navy} s={52} />}
     <Tx x={960} y={40} s={66} c={K.navy} wt={900}>WHAT THE CALL COSTS</Tx>
   </Stage></F>);
 };
 
-// â”€â”€ IN_OUT_TRAY: bandejas de escritorio YOU / CALL; las tarjetas de arreglos caen en la que corresponde
+// ── IN_OUT_TRAY: bandejas de escritorio YOU / CALL; las tarjetas de arreglos caen en la que corresponde
 export const in_out_tray: H = ({ dur, v = 0 }) => {
   const t = useT(), items: [string, number][] = v === 0 ? [["FLOAT", 0], ["CHAIN", 0], ["FLAPPER", 0], ["CUP TRICK", 0]] : [["WAX RING", 1], ["STUCK VALVE", 1]];
   return (<F dur={dur}><Stage rx={34} persp={1300} bg={WOOD}>
-    {["YOU Â· $0", "CALL HIM"].map((s, j) => <Box key={s} x={300 + j * 760} y={460} w={560} h={360} z={0} style={{ background: j ? "#3a3f44" : "#2f6a3f", borderRadius: 14, boxShadow: "inset 0 30px 0 rgba(0,0,0,0.25)" }}><div style={{ position: "absolute", bottom: 24, width: "100%", textAlign: "center", ...tag("#fff", 54) }}>{s}</div></Box>)}
+    {["YOU · $0", "CALL HIM"].map((s, j) => <Box key={s} x={300 + j * 760} y={460} w={560} h={360} z={0} style={{ background: j ? "#3a3f44" : "#2f6a3f", borderRadius: 14, boxShadow: "inset 0 30px 0 rgba(0,0,0,0.25)" }}><div style={{ position: "absolute", bottom: 24, width: "100%", textAlign: "center", ...tag("#fff", 54) }}>{s}</div></Box>)}
     {items.map(([n, j], i) => { const p = eio(pr(t, 0.2 + i * 0.4, 0.8 + i * 0.4));
       return <Card key={n} x={lerp(810, 360 + j * 760 + (i % 2) * 120, p)} y={lerp(80, 480 + i * 18, p)} w={320} h={120} z={20 + i * 3} r={lerp(0, (i % 2 ? 6 : -5), p)}><div style={{ ...tag(K.navy, 46), textAlign: "center", paddingTop: 30 }}>{n}</div></Card>; })}
     {v === 0 && <Tx x={960} y={60} s={64} c={K.cream} wt={900}>YOU JUST SAVED THE WHOLE BILL</Tx>}
@@ -323,8 +323,8 @@ export const in_out_tray: H = ({ dur, v = 0 }) => {
   </Stage></F>);
 };
 
-// â”€â”€ PARTS_BIN: gabinete de cajoncitos de ferreterÃ­a; el cajÃ³n de la pieza sale hacia cÃ¡mara con su etiqueta de precio y tiempo
-const BINS: [string, string, string][] = [["FLAPPER", "$6â€“10", "5 MIN"], ["FILL VALVE SEAL", "â‰ˆ $9", "STRETCHES ON"], ["REFILL TUBE", "$1â€“2", "BRING THE OLD ONE"], ["CUP TRICK", "$0", "YOU SAVED $12â€“15"], ["HANDLE", "$8â€“12", "SAME BACKWARDS NUT"], ["BOLTS + WASHERS", "$8â€“12", "Â½ HOUR Â· p.73"], ["QUARTER-TURN VALVE", "$10â€“15", "BEST THING IN AN OLD HOUSE"]];
+// ── PARTS_BIN: gabinete de cajoncitos de ferretería; el cajón de la pieza sale hacia cámara con su etiqueta de precio y tiempo
+const BINS: [string, string, string][] = [["FLAPPER", "$6–10", "5 MIN"], ["FILL VALVE SEAL", "≈ $9", "STRETCHES ON"], ["REFILL TUBE", "$1–2", "BRING THE OLD ONE"], ["CUP TRICK", "$0", "YOU SAVED $12–15"], ["HANDLE", "$8–12", "SAME BACKWARDS NUT"], ["BOLTS + WASHERS", "$8–12", "½ HOUR · p.73"], ["QUARTER-TURN VALVE", "$10–15", "BEST THING IN AN OLD HOUSE"]];
 export const parts_bin: H = ({ dur, v = 0 }) => {
   const t = useT(), out = eout(pr(t, 0.3, 1)), [n, pz, note] = BINS[v] ?? BINS[0];
   return (<F dur={dur}><Stage rx={10} ry={-10 + Math.sin(t * 0.3) * 6} bg={TILE}>
@@ -339,7 +339,7 @@ export const parts_bin: H = ({ dur, v = 0 }) => {
   </Stage></F>);
 };
 
-// â”€â”€ BKA_LECTERN: el libro abierto sobre un atril de madera; las hojas pasan en 3D y aterriza en la pÃ¡gina citada (imagen real de la pÃ¡gina)
+// ── BKA_LECTERN: el libro abierto sobre un atril de madera; las hojas pasan en 3D y aterriza en la página citada (imagen real de la página)
 const PAGES = [17, 17, 26, 21, 61, 78, 0, 60, 363, 32];
 export const bka_lectern: H = ({ dur, v = 0 }) => {
   const t = useT(), pg = PAGES[v] ?? 17, flips = 5;
@@ -358,14 +358,14 @@ export const bka_lectern: H = ({ dur, v = 0 }) => {
   </Stage></F>);
 };
 
-// â”€â”€ BKA_RECEIPT: la impresora de tickets de la caja escupe un ticket largo; al final viene el QR de lennys-plumbing.vercel.app/tank
+// ── BKA_RECEIPT: la impresora de tickets de la caja escupe un ticket largo; al final viene el QR de lennys-plumbing.vercel.app/tank
 export const bka_receipt: H = ({ dur }) => {
   const t = useT(), len = eio(pr(t, 0.2, 2.2));
   return (<F dur={dur}><Stage rx={18} ry={Math.sin(t * 0.3) * 6} bg={WOOD}>
     <Box x={660} y={720} w={600} h={240} z={0} style={{ background: "linear-gradient(180deg,#3a3f44,#15181b)", borderRadius: 20 }} />
     <Box x={710} y={720 - 640 * len} w={500} h={640 * len} z={10} style={{ background: "#fbfaf4", overflow: "hidden", boxShadow: "0 10px 20px rgba(0,0,0,0.3)" }}>
       <div style={{ position: "absolute", top: 0, width: "100%", textAlign: "center", fontFamily: "Courier New, monospace", fontWeight: 700, fontSize: 30, color: K.ink, lineHeight: 1.5, paddingTop: 20 }}>
-        LENNY'S PLUMBING<br />THE TEN DOLLAR PLUMBER<br />RUNNING TOILET Â· p.17â€“32<br />--------------------
+        LENNY'S PLUMBING<br />THE TEN DOLLAR PLUMBER<br />RUNNING TOILET · p.17–32<br />--------------------
         <Img src={staticFile("len14a/book/qr_tank.png")} style={{ display: "block", margin: "16px auto", width: 260, height: 260 }} />
         FIRST LINK BELOW
       </div>
@@ -374,7 +374,7 @@ export const bka_receipt: H = ({ dur }) => {
   </Stage></F>);
 };
 
-// â”€â”€ BKA_TOOLBOX: la caja de herramientas metÃ¡lica se abre en sus bandejas escalonadas; el libro cae en la bandeja de arriba
+// ── BKA_TOOLBOX: la caja de herramientas metálica se abre en sus bandejas escalonadas; el libro cae en la bandeja de arriba
 export const bka_toolbox: H = ({ dur }) => {
   const t = useT(), open = eio(pr(t, 0.2, 1.2)), drop = eout(pr(t, 1.3, 2));
   return (<F dur={dur}><Stage rx={30} ry={Math.sin(t * 0.3) * 8} persp={1400} bg={TILE}>

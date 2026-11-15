@@ -45,9 +45,9 @@ export const NIGHT: React.CSSProperties = { background: "radial-gradient(ellipse
 export const Box: React.FC<{ x: number; y: number; w: number; h: number; style?: React.CSSProperties; children?: React.ReactNode; z?: number; r?: number; o?: number }> = ({ x, y, w, h, style, children, z = 0, r = 0, o = 1 }) => (
   <div style={{ position: "absolute", left: x, top: y, width: w, height: h, transform: `translateZ(${z}px) rotate(${r}deg)`, opacity: o, ...style }}>{children}</div>
 );
-export const Tx: React.FC<{ x: number; y: number; w?: number; s?: number; c?: string; f?: string; wt?: number; a?: "left" | "center" | "right"; o?: number; ls?: number; children: React.ReactNode; z?: number }> = ({ x, y, w = 1600, s = 60, c = K.ink, f = SANS, wt = 800, a = "center", o = 1, ls = 0, children, z = 0 }) => (
-  <div style={{ position: "absolute", left: a === "center" ? x - w / 2 : a === "right" ? x - w : x, top: y, width: w, textAlign: a, fontFamily: f, fontWeight: wt, fontSize: s, color: c, opacity: o, letterSpacing: ls, lineHeight: 1.08, transform: `translateZ(${z}px)` }}>{children}</div>
-);
+export const Tx: React.FC<{ x: number; y: number; w?: number; s?: number; c?: string; f?: string; wt?: number; a?: "left" | "center" | "right"; o?: number; ls?: number; children: React.ReactNode; z?: number }> = ({ x, y, w = 1600, s: s0 = 60, c = K.ink, f = SANS, wt = 800, a = "center", o = 1, ls = 0, children, z = 0 }) => { const s = Math.max(s0, 46); const top = Math.min(Math.max(y, 110), 1080 - 90 - s * 1.1); return (
+  <div style={{ position: "absolute", left: a === "center" ? x - w / 2 : a === "right" ? x - w : x, top, width: w, textAlign: a, fontFamily: f, fontWeight: wt, fontSize: s, color: c, opacity: o, letterSpacing: ls, lineHeight: 1.08, transform: `translateZ(${z}px)` }}>{children}</div>
+); };
 /** escenario 3D: la cámara inclina y se mueve lento */
 export const Stage: React.FC<{ rx?: number; ry?: number; persp?: number; bg?: React.CSSProperties; children: React.ReactNode }> = ({ rx = 0, ry = 0, persp = 1600, bg, children }) => (
   <AbsoluteFill style={{ perspective: persp, overflow: "hidden", ...(bg || {}) }}>
