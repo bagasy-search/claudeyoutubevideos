@@ -19,26 +19,13 @@ const HAND = poly([[0, 170], [120, 168], [250, 205], [330, 145], [440, 104], [56
 const STRAND = poly([[468, 300], [646, 300], [614, 450], [596, 600], [580, 826], [516, 826], [502, 600], [490, 450]]);
 export const Bowls: React.FC<{ dur: number; fLift: number; fPaste: number }> = ({ dur, fLift, fPaste }) => {
   const f = useCurrentFrame();
-  const k = interpolate(f, [fLift - 4, fLift + 26], [0, 1], { ...CL, easing: io });
-  const k2 = interpolate(f, [fPaste, fPaste + 30], [0, 0.35], { ...CL, easing: io });
-  const drop = 130 * k + 40 * k2;                 // el bol baja
-  const sy = (526 + drop) / 526;                 // el hilo se alarga desde y=300 hasta el puré que bajó
-  const cam = interpolate(f, [0, dur], [1.0, 1.16], { ...CL, easing: io });
+  const z = interpolate(f, [0, Math.max(1, fLift - 4), Math.max(2, fLift + 26), Math.max(3, dur)], [1.0, 1.12, 1.55, 1.75], { ...CL, easing: io });
+  const ox = interpolate(f, [0, Math.max(1, fLift + 26), Math.max(2, dur)], [700, 560, 560], { ...CL, easing: io });
+  const oy = interpolate(f, [0, Math.max(1, fLift + 26), Math.max(2, dur)], [560, 420, 470], { ...CL, easing: io });
   return (
-    <AbsoluteFill style={{ overflow: "hidden", background: "#888" }}>
-      <div style={{ ...full, transform: `scale(${cam})`, transformOrigin: "560px 520px" }}>
+    <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
+      <div style={{ ...full, transform: `scale(${z})`, transformOrigin: `${ox}px ${oy}px` }}>
         <Img src={S("e_bowls")} style={full} />
-        {/* acero liso bajo el bol: el rincón de acero de arriba a la derecha de la misma foto, ampliado */}
-        <div style={{ ...full, overflow: "hidden", clipPath: BOWL }}>
-          <Img src={S("e_bowls")} style={{ ...full, transform: "scale(4)", transformOrigin: "1840px 40px" }} />
-        </div>
-        <div style={{ ...full, transform: `translateY(${drop}px)`, filter: "drop-shadow(0 10px 16px rgba(0,0,0,0.35))" }}>
-          <div style={{ ...full, overflow: "hidden", clipPath: BOWL }}><Img src={S("e_bowls")} style={full} /></div>
-        </div>
-        <div style={{ ...full, overflow: "hidden", clipPath: STRAND, transform: `scaleY(${sy})`, transformOrigin: "560px 300px" }}>
-          <Img src={S("e_bowls")} style={full} />
-        </div>
-        <div style={{ ...full, overflow: "hidden", clipPath: HAND }}><Img src={S("e_bowls")} style={full} /></div>
       </div>
     </AbsoluteFill>
   );
@@ -47,23 +34,12 @@ export const Bowls: React.FC<{ dur: number; fLift: number; fPaste: number }> = (
 // ---------- 2 · el vapor real, separado por luminancia, sube en tres franjas a distinta velocidad
 export const Steam: React.FC<{ dur: number }> = ({ dur }) => {
   const f = useCurrentFrame();
-  const bands = [[0, 160, 230], [160, 320, 150], [320, 480, 90]];
-  const cam = interpolate(f, [0, dur], [1.02, 1.18], { ...CL, easing: io });
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], { ...CL, easing: io });
+  const z = 1.06 + 0.3 * p, oy = 620 - 260 * p;
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
-      <div style={{ ...full, transform: `scale(${cam})`, transformOrigin: "860px 470px" }}>
+      <div style={{ ...full, transform: `scale(${z})`, transformOrigin: `860px ${oy}px` }}>
         <Img src={S("e_steam")} style={full} />
-        {bands.map(([y0, y1, v], i) => {
-          const dy = -v * interpolate(f, [0, dur], [0, 1], CL);
-          const op = interpolate(f, [0, 6, dur - 8, dur], [0, 0.95, 0.7, 0], CL);
-          return (
-            <div key={i} style={{ ...full, transform: `translateY(${dy}px)`, opacity: op, mixBlendMode: "screen" }}>
-              <div style={{ ...full, overflow: "hidden", clipPath: `inset(${y0}px 720px ${1080 - y1}px 350px)` }}>
-                <Img src={S("e_steam")} style={{ ...full, filter: "grayscale(1) brightness(0.85) contrast(3.2)" }} />
-              </div>
-            </div>
-          );
-        })}
       </div>
     </AbsoluteFill>
   );
@@ -79,7 +55,7 @@ export const Puddle: React.FC<{ dur: number; fPuddle: number; fEdges: number }> 
   const L = 650 + 1100, d = p * L;
   const x = d < 650 ? 1495 : 1495 - (d - 650), y = d < 650 ? 250 + d : 885;
   const op = interpolate(f, [t0, t0 + 8, t1 - 10, t1 + 6], [0, 0.9, 0.9, 0], CL);
-  const cam = interpolate(f, [0, t0, t1, dur], [1.0, 1.05, 1.45, 1.5], { ...CL, easing: io });
+  const cam = interpolate(f, [0, t0, t1, dur], [1.0, 1.18, 1.5, 1.58], { ...CL, easing: io });
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
       <div style={{ ...full, transform: `scale(${cam})`, transformOrigin: "1480px 860px" }}>
@@ -97,7 +73,7 @@ const BOX = poly([[745, 158], [1022, 158], [1024, 244], [1300, 250], [1560, 288]
 export const Box: React.FC<{ dur: number }> = ({ dur }) => {
   const f = useCurrentFrame();
   const CAM = interpolate(f, [0, dur], [1.25, 1.42], { ...CL, easing: io });
-  const b = interpolate(f, [0, dur], [1.0, 0.72], { ...CL, easing: io }); // fondo efectivo 1,25 → 1,0
+  const b = interpolate(f, [0, dur], [1.0, 0.76], { ...CL, easing: io }); // fondo efectivo 1,25 → 1,0
   const O = "1020px 590px";
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#ddd" }}>
