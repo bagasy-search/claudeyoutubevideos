@@ -186,7 +186,7 @@ const Exhaust: React.FC<P> = ({ m }) => {
     <div style={{ position: "absolute", left: 1260, top: 380, width: 70, height: 330 * k(f, 20, 14), background: `linear-gradient(90deg,${STEEL},${STEEL2})`, borderRadius: 35, transformOrigin: "50% 100%", bottom: 370 }} />
     {Array.from({ length: 14 }).map((_, i) => { const t = (f - co - i * 7) / 60; if (t < 0) return null; const y = 360 - t * 420, x = 1295 + Math.sin(t * 5 + i) * (40 + i * 6);
       return <div key={i} style={{ position: "absolute", left: x - 45, top: y - 45, width: 90, height: 90, borderRadius: "50%", background: "rgba(70,74,80,.85)", opacity: cl(1.4 - t), display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 34, color: "#fff" }}>CO</div>; })}
-    <Lbl size={60} style={{ position: "absolute", left: 160, top: 120, opacity: k(f, co) }}>CARBON MONOXIDE · <span style={{ color: GN }}>NO SMELL, NO COLOR</span></Lbl>
+    <Lbl size={60} style={{ position: "absolute", left: 160, top: 920, opacity: k(f, co) }}>CARBON MONOXIDE · <span style={{ color: GN }}>NO SMELL, NO COLOR</span></Lbl>
   </AbsoluteFill>;
 };
 
@@ -413,9 +413,9 @@ const Backfeed: React.FC<P> = ({ m, dur }) => {
     <div style={{ position: "absolute", left: 1450, top: 260, width: 130, height: 150, background: "#7d8790", borderRadius: 14 }} />
     {seg.map(([a, b], i) => { const p = cl(t * tot - i), L = Math.hypot(b[0] - a[0], b[1] - a[1]), ang = Math.atan2(b[1] - a[1], b[0] - a[0]) * 180 / Math.PI;
       return <div key={i} style={{ position: "absolute", left: a[0], top: a[1], width: L * p, height: 12, background: GN, transform: `rotate(${ang}deg)`, transformOrigin: "0 50%" }} />; })}
-    <Lbl size={74} col="#9b1d14" style={{ position: "absolute", left: 700, top: 480, fontFamily: SERIF, opacity: hv, transform: `scale(${0.7 + 0.3 * hv})` }}>THOUSANDS OF VOLTS</Lbl>
-    <Lbl size={36} style={{ position: "absolute", left: 700, top: 590, opacity: hv }}>ON THE LINE A LINEMAN IS HOLDING</Lbl>
-    <Lbl size={36} style={{ position: "absolute", left: 100, top: 120 }}>BACKFEEDING · NO INTERLOCK</Lbl>
+    <Lbl size={74} col="#9b1d14" style={{ position: "absolute", left: 100, top: 180, fontFamily: SERIF, opacity: hv, transform: `scale(${0.7 + 0.3 * hv})` }}>THOUSANDS OF VOLTS</Lbl>
+    <Lbl size={36} style={{ position: "absolute", left: 100, top: 290, opacity: hv }}>ON THE LINE A LINEMAN IS HOLDING</Lbl>
+    <Lbl size={36} style={{ position: "absolute", left: 100, top: 100 }}>BACKFEEDING · NO INTERLOCK</Lbl>
   </AbsoluteFill>;
 };
 
@@ -451,10 +451,11 @@ const Decibel: React.FC<P> = ({ m }) => {
   const marks = [[40, "fridge hum"], [55, "INVERTER GEN @ 23 FT"], [60, "conversation"], [75, "vacuum"], [90, "open-frame gen up close"]];
   return <AbsoluteFill style={{ background: "#2b2f33" }}>
     <div style={{ position: "absolute", left: 360, top: 160, width: 1200, height: 600, borderRadius: "600px 600px 0 0", background: "#f3ecdc", overflow: "hidden" }}>
-      {marks.map(([d, l], i) => { const a = -90 + ((+d - 30) / 70) * 180; return <div key={i} style={{ position: "absolute", left: 600, top: 600, width: 560, height: 4, background: "#999", transformOrigin: "0 50%", transform: `rotate(${a - 90}deg)` }}><span style={{ position: "absolute", left: 300, top: -40, fontFamily: SANS, fontWeight: 700, fontSize: 24, color: i === 1 ? GN : INK, whiteSpace: "nowrap" }}>{d} dB {l}</span></div>; })}
+      {marks.map(([d, l], i) => { const a = -90 + ((+d - 30) / 70) * 180; return <div key={i} style={{ position: "absolute", left: 600, top: 600, width: 560, height: 4, background: "#999", transformOrigin: "0 50%", transform: `rotate(${a - 90}deg)` }}><span style={{ position: "absolute", left: 470, top: -14, fontFamily: SERIF, fontWeight: 900, fontSize: 26, color: i === 1 ? GN : INK }}>{d}</span></div>; })}
       <div style={{ position: "absolute", left: 594, top: 60, width: 12, height: 540, background: GN, transformOrigin: "50% 100%", transform: `rotate(${-90 + ((v - 30) / 70) * 180}deg)` }} />
     </div>
-    <Lbl size={90} col={YEL} style={{ position: "absolute", left: 360, top: 820, fontFamily: SERIF }}>{Math.round(v)} dB</Lbl>
+    <Lbl size={90} col={YEL} style={{ position: "absolute", left: 360, top: 800, fontFamily: SERIF }}>{Math.round(v)} dB</Lbl>
+    <div style={{ position: "absolute", left: 760, top: 800 }}>{marks.map(([d, l], i) => <Lbl key={i} size={26} col={i === 1 ? YEL : "#e9eef2"} style={{ marginBottom: 4 }}>{d} dB · {l}</Lbl>)}</div>
   </AbsoluteFill>;
 };
 
@@ -556,13 +557,13 @@ const Dial24: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const t = io(f / dur);
   const arcs = [[7, 10, GN, "GEN"], [10, 17, ST, "STATION"], [17, 20, GN, "GEN"], [20, 31, ST, "STATION"]];
   return <Oak>
-    <div style={{ position: "absolute", left: 560, top: 140, width: 800, height: 800, borderRadius: "50%", background: CREAM, border: "18px solid #3b3b3b", overflow: "hidden" }}>
+    <div style={{ position: "absolute", left: 1000, top: 140, width: 800, height: 800, borderRadius: "50%", background: CREAM, border: "18px solid #3b3b3b", overflow: "hidden" }}>
       {arcs.map(([a, b, c, l], i) => { const p = cl(t * 4 - i); return Array.from({ length: Math.round((+b - +a) * 4 * p) }).map((_, j) => { const h = +a + j / 4, ang = (h / 24) * 360;
         return <div key={i + "_" + j} style={{ position: "absolute", left: 400 - 8, top: 30, width: 16, height: 120, background: c as string, transformOrigin: "50% 370px", transform: `rotate(${ang}deg)` }} />; }); })}
       {[0, 6, 12, 18].map((h) => <div key={h} style={{ position: "absolute", left: 400 + Math.sin(h / 24 * 2 * Math.PI) * 220 - 40, top: 400 - Math.cos(h / 24 * 2 * Math.PI) * 220 - 30, fontFamily: SERIF, fontWeight: 900, fontSize: 50 }}>{h === 0 ? 24 : h}</div>)}
     </div>
-    <Lbl size={36} col={GN} style={{ position: "absolute", left: 120, top: 400 }}>■ GENERATOR · MORNING & EVENING, ~3 H</Lbl>
-    <Lbl size={36} col="#7fe0c8" style={{ position: "absolute", left: 120, top: 470 }}>■ STATION · AFTERNOON & OVERNIGHT</Lbl>
+    <Lbl size={36} col={GN} style={{ position: "absolute", left: 100, top: 440, width: 860 }}>■ GENERATOR · MORNING & EVENING, ~3 H</Lbl>
+    <Lbl size={36} col="#7fe0c8" style={{ position: "absolute", left: 100, top: 520, width: 860 }}>■ STATION · AFTERNOON & OVERNIGHT</Lbl>
   </Oak>;
 };
 
@@ -574,7 +575,7 @@ const Counter: React.FC<P> = () => {
     <div style={{ position: "absolute", left: 860, top: 470, transform: `rotate(${ring}deg)`, transformOrigin: "50% 100%" }}>
       <div style={{ width: 200, height: 110, background: "linear-gradient(#e7c66a,#b48d2c)", borderRadius: "100px 100px 10px 10px" }} /><div style={{ width: 240, height: 24, background: "#333", marginLeft: -20, borderRadius: 6 }} /></div>
     <div style={{ position: "absolute", left: 460, top: 140, width: 1000, height: 220, background: CREAM, border: "10px solid #2a2a2a", display: "flex", alignItems: "center", justifyContent: "center", transform: `rotate(${Math.sin(f / 14) * 1.2}deg)` }}>
-      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 100, color: INK }}>FROM THE COUNTER</div></div>
+      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 84, color: INK, whiteSpace: "nowrap" }}>FROM THE COUNTER</div></div>
   </AbsoluteFill>;
 };
 
@@ -633,7 +634,7 @@ const Prize: React.FC<P> = () => {
   const f = useCurrentFrame(); const o = k(f, 6, 16), c = k(f, 18, 14);
   return <Oak>
     <div style={{ position: "absolute", left: 560, top: 380, width: 800, height: 460, background: "#d9c08a", boxShadow: "8px 12px 0 rgba(0,0,0,.3)", perspective: 1000 }}>
-      <div style={{ position: "absolute", left: 80, right: 80, top: 40 - c * 300, height: 380, background: CREAM, display: "flex", alignItems: "center", justifyContent: "center" }}>
+      <div style={{ position: "absolute", left: 80, right: 80, top: 40 - c * 340, height: 380, zIndex: c > 0.02 ? 3 : 0, background: CREAM, display: "flex", alignItems: "center", justifyContent: "center" }}>
         <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 90, color: INK, textAlign: "center" }}>WHAT I'D<br />BUY</div></div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 0, borderLeft: "400px solid transparent", borderRight: "400px solid transparent", borderTop: "260px solid #c9ad72", transformOrigin: "50% 0", transform: `rotateX(${o * 180}deg)` }} />
     </div>
