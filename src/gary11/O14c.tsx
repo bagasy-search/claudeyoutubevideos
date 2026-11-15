@@ -105,14 +105,14 @@ export const ExitSign: React.FC<{ text: string; dur: number }> = ({ text, dur })
 // CTA de mitad (sin voz): la puerta de un mueble de cocina se entreabre en la esquina y deja ver la página del manual pegada adentro
 export const CabinetPeek: React.FC<{ dur: number }> = ({ dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 18, 14);
-  return <div style={{ position: "absolute", right: 60, top: 20, width: 520, height: 700, transformOrigin: "100% 0", transform: `translateY(${(1 - cl(o * 2)) * -760}px) scale(.74)`, perspective: 1600 }}>
+  return <div style={{ position: "absolute", right: 60, top: 20, width: 600, height: 900, transformOrigin: "100% 0", transform: `translateY(${(1 - cl(o * 2)) * -960}px) scale(.8)`, perspective: 1600 }}>
     <div style={{ position: "absolute", inset: 0, background: "#6e4526", borderRadius: 8, boxShadow: "8px 10px 0 rgba(0,0,0,.35)" }} />
     <div style={{ position: "absolute", left: 30, top: 30, right: 30, bottom: 30, background: "#f8f5ec", padding: 30, boxSizing: "border-box" }}>
-      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 30, color: "#8a7a5c", letterSpacing: 1 }}>THE WINTER BLACKOUT MANUAL</div>
-      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 56, color: INK, lineHeight: 1.05, marginTop: 12 }}>THE TWO-MINUTE CHECK</div>
+      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 34, color: "#8a7a5c", letterSpacing: 1 }}>THE WINTER BLACKOUT MANUAL</div>
+      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: INK, lineHeight: 1.05, marginTop: 12 }}>THE TWO-MINUTE CHECK</div>
       {["test button", "date on the back", "one every floor", "garage door gap"].map((s, i) => <div key={s} style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 12 }}>
-        <div style={{ width: 30, height: 30, border: `4px solid ${INK}` }} /><div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 46, color: "#1f4f8f" }}>{s}</div></div>)}
-      <div style={{ position: "absolute", left: 20, right: 20, bottom: 20, padding: "10px 0", background: YEL, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 30, color: INK, letterSpacing: 0 }}>LINK IN THE DESCRIPTION</div>
+        <div style={{ width: 34, height: 34, flex: "none", border: `4px solid ${INK}` }} /><div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 48, whiteSpace: "nowrap", color: "#1f4f8f" }}>{s}</div></div>)}
+      <div style={{ position: "absolute", left: 20, right: 20, bottom: 20, padding: "10px 0", background: YEL, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 34, color: INK, letterSpacing: 0 }}>LINK IN THE DESCRIPTION</div>
     </div>
     <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg,#8a5a33,#7a4e2b)", borderRadius: 8, border: "10px solid #5a3a20", boxSizing: "border-box", transformOrigin: "0 50%", transform: `rotateY(${-100 * o}deg)`, backfaceVisibility: "hidden" }}>
       <div style={{ position: "absolute", right: 30, top: 300, width: 20, height: 60, background: "#c9ced2", borderRadius: 6 }} />

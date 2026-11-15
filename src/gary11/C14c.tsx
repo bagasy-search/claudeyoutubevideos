@@ -165,8 +165,10 @@ const TenList: React.FC<P> = ({ dur, m }) => {
     <div style={{ position: "absolute", left: 160, top: 250, width: 1600, display: "flex", flexWrap: "wrap", gap: 40, perspective: 1600 }}>
       {Array.from({ length: 10 }, (_, i) => { const r = 180 * io((f - a - i * 2.4) / 10); const e = k(f, i * 1.5, 10);
         return <div key={i} style={{ width: 280, height: 290, position: "relative", transformStyle: "preserve-3d", transform: `translateY(${(1 - e) * 60}px) rotateY(${r}deg)`, opacity: e }}>
-          <div style={{ position: "absolute", inset: 0, background: RED, borderRadius: 12, backfaceVisibility: "hidden", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", boxShadow: "6px 8px 0 rgba(0,0,0,.3)" }}>
-            <Tx size={30} col="#ffd9d2">MISTAKE</Tx><Tx size={130} col="#fff">{i + 1}</Tx></div>
+          <div style={{ position: "absolute", inset: 0, background: RED, borderRadius: 12, backfaceVisibility: "hidden", overflow: "hidden", boxShadow: "6px 8px 0 rgba(0,0,0,.3)" }}>
+            <Img src={G(MPH[i])} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} />
+            <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 96, background: RED, display: "flex", alignItems: "center", justifyContent: "center", gap: 14 }}>
+              <Tx size={30} col="#ffd9d2">MISTAKE</Tx><Tx size={70} col="#fff">{i + 1}</Tx></div></div>
           <div style={{ position: "absolute", inset: 0, background: GRN, borderRadius: 12, backfaceVisibility: "hidden", transform: "rotateY(180deg)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", boxShadow: "-6px 8px 0 rgba(0,0,0,.3)" }}>
             <Tx size={30} col="#d6f5e1">THE SAFE WAY</Tx><Tx size={130} col="#fff">✓</Tx></div>
         </div>; })}
@@ -263,11 +265,9 @@ const NoSense: React.FC<P> = ({ dur, m }) => {
     <Ch t="carbon monoxide has…" at={0} f={f} x={960} y={70} size={74} c />
     {["COLOR", "SMELL", "TASTE"].map((s, i) => { const x = 230 + i * 540, lid = sp(f, t[i]), st = k(f, t[i] + 6, 6);
       return <div key={s} style={ab(x, 260, 380, 620)}>
-        <div style={{ position: "absolute", left: 40, right: 40, top: 70, bottom: 0, borderRadius: "40px 40px 30px 30px", background: "linear-gradient(90deg, rgba(255,255,255,.35), rgba(255,255,255,.08) 30%, rgba(255,255,255,.04) 70%, rgba(255,255,255,.3))", border: "6px solid rgba(235,242,246,.8)" }} />
-        <div style={{ position: "absolute", left: 60, right: 60, top: 26 - lid * 120, height: 60, borderRadius: 10, background: "repeating-linear-gradient(90deg,#b8bec4 0 8px,#8d949a 8px 12px)", transform: `rotate(${lid * -24}deg)` }} />
-        <div style={{ position: "absolute", left: 70, right: 70, top: 280, height: 170, background: "#f7f2e4", borderRadius: 6, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+        <div style={{ position: "absolute", left: 40, right: 40, top: 200 + (1 - lid) * 40, height: 210, opacity: cl(lid * 2), background: "#f7f2e4", borderRadius: 6, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
           <Tx size={30} col="#6b5d44">NO</Tx><Tx size={52}>{s}</Tx></div>
-        <div style={{ position: "absolute", left: 50, right: 50, top: 470, height: 110, border: `8px solid ${RED}`, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", transform: `rotate(-10deg) scale(${1 + 0.6 * (1 - st)})`, opacity: st }}><Tx size={64} col={RED}>NONE</Tx></div>
+        <div style={{ position: "absolute", left: 60, right: 60, top: 450, height: 110, background: "rgba(255,255,255,.92)", border: `8px solid ${RED}`, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", transform: `rotate(-10deg) scale(${1 + 0.6 * (1 - st)})`, opacity: st }}><Tx size={64} col={RED}>NONE</Tx></div>
       </div>; })}
   </Floor>;
 };
@@ -720,7 +720,6 @@ const Oven: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t = [D(m, 0, dur, 0.08), D(m, 1, dur, 0.22), D(m, 2, dur, 0.5), D(m, 3, dur, 0.8)];
   const hrs = io((f - t[0]) / Math.max(30, dur * 0.7)) * 4;
   return <AbsoluteFill style={{ background: "#d8cbb2" }}>
-    <div style={ab(0, 900, 1920, 180, { background: "repeating-linear-gradient(45deg,#b9a98c 0 60px,#cbbd9f 60px 120px)" })} />
     <Pic id="g1430" x={560} y={110} w={820} h={640} f={f} at={0} rot={-1.5} kind="print" tape />
     <div style={ab(1520, 90, 230, 230, { borderRadius: "50%", background: "#f4f1e6", border: "12px solid #8d949a", boxSizing: "border-box", boxShadow: "6px 8px 0 rgba(0,0,0,.25)" })}>
       {Array.from({ length: 12 }, (_, j) => <div key={j} style={ab(100, 6, 6, 18, { background: INK, transformOrigin: "3px 97px", transform: `rotate(${j * 30}deg)` })} />)}
@@ -1063,7 +1062,7 @@ const Signs: React.FC<P> = ({ dur, m }) => {
     <Ch t="the signs" at={0} f={f} x={960} y={70} size={84} c />
     <div style={ab(110, 300, 1700, 520, { background: "#3b6e9c", borderRadius: 30, padding: 24, boxSizing: "border-box", display: "flex", gap: 18, boxShadow: "8px 12px 0 rgba(0,0,0,.3)", perspective: 1200 })}>
       {S.map((s, i) => { const at = D(m, i, dur, 0.08 + i * 0.11); const o = io((f - at) / 10);
-        return <div key={s} style={{ flex: 1, position: "relative", background: "#f4f1e8", borderRadius: 16, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        return <div key={s} style={{ flex: 1, minWidth: 0, overflow: "hidden", position: "relative", background: "#f4f1e8", borderRadius: 16, display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Tx size={s.length > 10 ? 30 : 36} col={i === 6 || i === 5 ? RED : INK} style={{ textAlign: "center", transform: "rotate(-90deg)", whiteSpace: "nowrap", opacity: o }}>{s}</Tx>
           <div style={{ position: "absolute", inset: -6, background: "linear-gradient(#5c93c6,#4a7fb0)", borderRadius: 16, transformOrigin: "50% 0", transform: `rotateX(${o * 80}deg)`, opacity: 1 - o, display: "flex", alignItems: "flex-end", justifyContent: "center", paddingBottom: 20 }}><Tx size={40} col="#dbe9f6">{i + 1}</Tx></div>
         </div>; })}
@@ -1089,10 +1088,10 @@ const Suspect: React.FC<P> = ({ dur, m, a }) => {
       <Pic id="g2450" x={1140} y={290} w={640} h={500} f={f} at={t0} rot={2.5} kind="print" tape />
       <Ch t="everybody sick at the same time" at={t0} f={f} x={1060} y={110} size={66} c /></>}
     {n === 3 && <>
-      <div style={ab(500, 200, 620, 640, { background: "linear-gradient(#cdd7e1,#eef3f7)", borderRadius: 12, overflow: "hidden" })}><div style={ab(0, 520, 620, 120, { background: SNOW })} />
-        <div style={ab(250, 180 + 40 * (1 - k(f, t0, 12)), 140, 400, {})}><Person s={2} col="#3b6e9c" slump={0.4 * (1 - k(f, t0, 12))} /></div><Tx size={60} col={GRN} style={{ position: "absolute", left: 30, top: 30, opacity: k(f, t0, 8) }}>OUTSIDE · BETTER</Tx></div>
-      <div style={ab(1180, 200, 620, 640, { background: "#e8dcc4", borderRadius: 12, overflow: "hidden" })}>
-        <div style={ab(250, 180, 140, 400, {})}><Person s={2} col="#3b6e9c" slump={0.6 * k(f, t1, 12)} /></div><Tx size={60} col={RED} style={{ position: "absolute", left: 30, top: 30, opacity: k(f, t1, 8) }}>BACK IN · WORSE</Tx></div></>}
+      <Pic id="g2510" x={460} y={250} w={640} h={520} f={f} at={t0 - 6} rot={-2} kind="print" tape />
+      <Tx size={56} col={GRN} style={{ position: "absolute", left: 480, top: 800, opacity: k(f, t0, 8), background: "rgba(255,255,255,.92)", padding: "6px 18px", whiteSpace: "nowrap" }}>OUTSIDE · BETTER</Tx>
+      <Pic id="g0420" x={1180} y={250} w={640} h={520} f={f} at={t1 - 6} rot={2} kind="print" tape />
+      <Tx size={56} col={RED} style={{ position: "absolute", left: 1200, top: 800, opacity: k(f, t1, 8), background: "rgba(255,255,255,.92)", padding: "6px 18px", whiteSpace: "nowrap" }}>BACK IN · WORSE</Tx></>}
     {n === 4 && <>
       {["GENERATOR", "HEATER", "STOVE"].map((s, i) => <div key={s} style={ab(520 + i * 440, 280, 360, 420, { background: "#2c3036", borderRadius: 16, opacity: k(f, t0 + i * 4, 8) })}>
         <Tx size={40} col={CH} style={{ textAlign: "center", marginTop: 30 }}>{s}</Tx>
@@ -1202,7 +1201,7 @@ const CounterJar: React.FC<P> = ({ dur, m }) => {
 const Q: React.FC<P> = ({ dur, m, a }) => {
   const f = useCurrentFrame(); const n = Math.max(1, Math.min(7, +a[0] || 1)); const o = io((f - 4) / 14); const yes = n === 7 ? D(m, 0, dur, 0.85) : 1e9;
   return <AbsoluteFill>
-    <Counter f={f} slips={30 - n * 2} />
+    <Floor dark={0.3} />
     <div style={ab(620 + (1 - o) * -300, 180 + (1 - o) * 200, 1150, 560, { transform: `rotate(${-2 + (1 - o) * 30}deg) scale(${0.3 + 0.7 * o})`, transformOrigin: "0 100%" })}>
       <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 280, background: "#fbf8ef", transformOrigin: "50% 100%", transform: `rotateX(${(1 - o) * 120}deg)`, boxShadow: "6px 8px 0 rgba(0,0,0,.3)" }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 280, height: 280, background: "#f4efe2", boxShadow: "6px 8px 0 rgba(0,0,0,.3)" }} />
@@ -1435,6 +1434,48 @@ const ExitWalk: React.FC<P> = ({ dur, m }) => {
   </Floor>;
 };
 
+// ---------- r4 limpieza: escenas que dibujaban generador/casa/caja/calefactor/frasco con CSS → foto real como plancha + copias reales + texto grande
+// L = renglón: [texto, índice de marca (−1 = arranque; ≥0 = m[i]), color?, tamaño?, demora extra?]
+type L = [string, number, string?, number?, number?];
+type TK = { ph?: string; pics?: [string, string][]; lines: L[]; stamp?: [string, number]; src?: string; head?: string };
+const Talk: React.FC<P & { k: TK }> = ({ dur, m, k: c }) => {
+  const f = useCurrentFrame(); const n = c.lines.length;
+  const at = (i: number, ex = 0) => (i < 0 ? 3 : D(m, i, dur, 0.1 + 0.75 * (i / Math.max(1, n)))) + ex;
+  const P = c.pics || []; const row = P.length >= 3; const none = P.length === 0;
+  const lx = none ? 960 : 90, ly0 = row ? 170 : none ? 300 : 230;
+  return <Floor dark={0.25} ph={c.ph}>
+    {c.head && <Ch t={c.head} at={2} f={f} x={960} y={50} size={60} c />}
+    {P.length === 1 && <Pic id={P[0][0]} x={1000} y={170} w={820} h={680} f={f} at={2} rot={2} kind="pol" cap={P[0][1]} tape />}
+    {P.length === 2 && <><Pic id={P[0][0]} x={980} y={90} w={600} h={480} f={f} at={2} rot={-3} kind="print" cap={P[0][1]} tape />
+      <Pic id={P[1][0]} x={1260} y={520} w={600} h={480} f={f} at={at(Math.min(1, n - 1))} rot={3} kind="print" cap={P[1][1]} tape /></>}
+    {row && P.map(([id, cap], i) => <Pic key={id} id={id} x={90 + i * 600} y={360} w={540} h={480} f={f} at={6 + i * Math.max(8, dur * 0.22)} rot={[-3, 2, -2][i]} kind="pol" cap={cap} tape />)}
+    {!row && c.lines.map(([t, i, col, size, ex], j) => <Ch key={j} t={t} at={at(i, ex || 0)} f={f} x={lx} y={ly0 + j * 128} size={size || 66} col={col || CH} c={none} />)}
+    {c.stamp && <Stamp text={c.stamp[0]} f={f} at={at(c.stamp[1], 10)} x={none ? 760 : 120} y={none ? 880 : 860} size={44} rot={-4} />}
+    {c.src && <Src text={c.src} f={f} at={6} />}
+  </Floor>;
+};
+const FIX: Record<string, TK> = {
+  leaks: { ph: "g0280", pics: [["g0410", "the garage"], ["g0420", "the kitchen"]], lines: [["three ways in:", -1], ["the door", 0, YEL], ["gaps around pipes", 1, YEL], ["& the wires", 1, YEL, 66, 8], ["the attic", 2, YEL]] },
+  draft: { ph: "g2251", pics: [["g0420", "pulled in from the garage"]], lines: [["the furnace runs", 0], ["the wind blows", 1], ["warm air rises", 2], ["it pulls air", 3, YEL], ["from anywhere it can", 3, YEL, 62, 8]] },
+  "draft:garage": { ph: "g1690", pics: [["g0410", "the attached garage"]], lines: [["a lot of it", -1, CH, 84], ["comes from", -1, CH, 84, 10], ["the garage.", -1, YEL, 92, 22]] },
+  yard20: { ph: "g2010", pics: [["g0480", "a stake at 20 FT"], ["g0531", "exhaust pointed away"]], lines: [["at least 20 FT", 0, YEL, 84], ["from the house", 0, CH, 66, 10], ["exhaust pointed away", 1], ["from windows,", 2], ["doors and vents", 2, CH, 66, 8]], src: "U.S. CPSC" },
+  chainprice: { ph: "g0281", pics: [["g0490", "chained to the stake"]], lines: [["a 12-ft chain", 0], ["+ a good padlock", 1], ["cost less than", 2, YEL], ["one night in the ER", 2, YEL, 66, 10]] },
+  shutoff: { ph: "g2800", pics: [["g0720", "CO shut-off on the box"]], lines: [["many new generators", -1], ["have a CO shut-off", 0], ["exhaust builds up…", 1], ["it shuts itself off.", 1, YEL, 70, 12]], stamp: ["CO SHUT-OFF", 0] },
+  hosewall: { ph: "g0630", pics: [["g0910", "the car in the garage"], ["g0880", "the hose out the wall"]], lines: [["run the car", 0], ["door closed", 0, CH, 66, 10], ["a hose from the tailpipe", 1, CH, 60], ["through the wall", 2], ["safe?", 2, YEL, 110, 14]] },
+  sealedbox: { ph: "g3110", pics: [["g0910", "door down"]], lines: [["a closed garage", 0, CH, 80], ["is a sealed box", 0, CH, 80, 10], ["with an engine in it.", 1, YEL, 72]] },
+  climb: { ph: "g1240", pics: [["g0630", "up the wall"]], lines: [["exhaust is hot", -1, CH, 92], ["— and it climbs.", -1, YEL, 92, 18]] },
+  window10: { ph: "g1090", pics: [["g1040", "10 FT from the house"]], lines: [["10 FT from the house", 0, CH, 66], ["a window cracked open", 1], ["for fresh air…", 1, CH, 66, 10], ["straight into", 2, YEL, 80], ["the house", 2, YEL, 80, 8]] },
+  neighbor: { ph: "g1350", pics: [["g1110", "20 feet apart"]], lines: [["houses 20 FT apart", 0], ["your neighbor's generator", 1, CH, 58], ["closer to your window", 2, YEL], ["than his own.", 2, YEL, 66, 10]] },
+  sidecheck: { ph: "g1350", head: "20 feet — and look at that side of the house", pics: [["g0591", "WINDOW?"], ["g1060", "DOOR?"], ["g1620", "VENT?"]], lines: [] },
+  flue: { ph: "g1910", pics: [["g1570", "the exhaust goes out"]], lines: [["your furnace", 0], ["your water heater", 0, CH, 66, 10], ["they burn gas", 0, CH, 66, 20], ["the exhaust", 1, YEL, 80], ["has to go out.", 1, YEL, 80, 8]] },
+  inout: { ph: "g1780", pics: [["g1680", "two pipes"]], lines: [["one brings", 0], ["air in", 0, "#8fc4f0", 96, 8], ["one pushes", 1], ["exhaust out", 1, YEL, 96, 8]] },
+  ventmap: { ph: "g2380", pics: [["g1620", "dryer + water heater"], ["g1650", "the furnace pipe"]], lines: [["FURNACE", 0, CH, 80], ["WATER HEATER", 1, CH, 80], ["DRYER", 2, CH, 80], ["FIREPLACE", 3, CH, 80]] },
+  towers: { ph: "g1690", pics: [["g1801", "indoor-rated only"]], lines: [["tower heaters", 0], ["patio heaters", 1], ["torpedo heaters", 2], ["never come inside.", 3, RED, 72]], stamp: ["OUTDOOR ONLY", 3] },
+  damper: { ph: "g1930", pics: [["g1880", "damper closed too soon"]], lines: [["the coals are", 0], ["still burning", 0, CH, 66, 8], ["nowhere to go", 1, YEL, 76], ["but into the room", 2, YEL, 76]], stamp: ["DAMPER CLOSED", -1] },
+  counter: { ph: "g3270", lines: [["questions from the counter", 0, CH, 92], ["— from your comments", 1, YEL, 76]] },
+  alarm4: { ph: "g2020", pics: [["g2950", "the back label"]], lines: [["the real alarm:", -1], ["loud", 0, YEL, 92], ["in groups of four", 0, CH, 66, 10], ["again and again", 1, YEL, 76]] },
+};
+
 // plancha de fondo por escena: una foto real distinta del video en cada plano (bajo degradé oscuro)
 const PLATE: Record<string, string> = {
   tenlist: "g0230", rooms: "g0230", "promise:garage": "g2560", "cdc:400": "g2251", cdc: "g0420", nosense: "g3530", hundreds: "g2240", leaks: "g0280",
@@ -1455,7 +1496,7 @@ export const CompC14c: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
     check: Check, datecalc: DateCalc, floorplan: FloorPlan, next: Next };
   const key = String(s.comp || s.spec);
   const ph = PLATE[key] || PLATE[c] || "g2060";
-  const inner = c === "mistake" ? <Reel m={m} dur={dur} a={a} /> : c === "recap" ? (a[0] === "out" ? <ExitWalk m={m} dur={dur} a={a} /> : <Reel m={m} dur={dur} a={a} recap />)
+  const inner = FIX[key] ? <Talk m={m} dur={dur} a={a} k={FIX[key]} /> : c === "mistake" ? <Reel m={m} dur={dur} a={a} /> : c === "recap" ? (a[0] === "out" ? <ExitWalk m={m} dur={dur} a={a} /> : <Reel m={m} dur={dur} a={a} recap />)
     : T[c] ? React.createElement(T[c], { m, dur, a }) : <AbsoluteFill style={{ background: "#f0f" }} />;
   return <PlateCtx.Provider value={ph}>{inner}</PlateCtx.Provider>;
 };

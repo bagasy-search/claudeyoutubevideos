@@ -7,7 +7,7 @@ const C = ["sleep", "tenlist", "promise", "cdc:400", "cdc:er", "cdc:hosp", "cdc:
   "chainprice", "tarp", "shutoff", "hosewall", "hoseleak", "sealedbox", "climb", "window10", "neighbor", "sidecheck", "cord", "postmark:loudonville", "coals", "oven", "rooms", "rank12",
   "flue", "inout", "postmark:shreve", "ventmap", "label", "heaterrules", "nosleep", "towers", "damper", "perfloor", "twotypes", "place:hall", "mixes", "place:15", "place:no",
   "mistake:10", "postmark:mounteaton", "age14", "sensor", "signs", "suspect:1", "suspect:4", "firstmin", "dispatch", "emergency", "risk", "counter", "q:1", "propane", "protect", "chirp", "alarm4",
-  "ppm", "q:7", "daynight", "ctaq", "cta", "check:0", "check:2", "datecalc", "floorplan", "promise:garage", "recap:1", "recap:7", "recap:out", "next"];
+  "ppm", "q:7", "daynight", "ctaq", "cta", "check:0", "check:2", "datecalc", "floorplan", "promise:garage", "recap:1", "recap:7", "recap:out", "next", "suspect:3"];
 const BG = "gary14c/g/g1650.png", AV = "gary14c/g/g0050.png";
 const OV: [string, React.ReactNode][] = [
   ["name", <O.Dymo text="GARY" sub="ELECTRICIAN · 40 YEARS · OHIO" dur={160} />], ["fuses", <O.DetectorRow n={4} dur={160} />], ["conduit", <O.GarageDoor dur={140} />],
