@@ -147,7 +147,7 @@ export const LowerThird: React.FC<{ title: string; sub: string; dur: number }> =
         <div style={{ width: 6, height: 110 * w, background: C.ver }} />
         <div style={{ clipPath: `inset(0 ${100 - w * 100}% 0 0)` }}>
           <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 66, color: C.white, textShadow: shadow }}>{title}</div>
-          <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 26, letterSpacing: 5, color: "#EFE4D2", textShadow: shadow, textTransform: "uppercase" }}>{sub}</div>
+          <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 36, letterSpacing: 4, color: "#EFE4D2", textShadow: shadow, textTransform: "uppercase" }}>{sub}</div>
         </div>
       </div>
     </AbsoluteFill>
@@ -172,7 +172,7 @@ export const Tag: React.FC<{ text: string; dur: number }> = ({ text, dur }) => {
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Washi style={{ position: "absolute", right: 110, bottom: 120, padding: "18px 30px", transform: `translateX(${interpolate(p, [0, 1], [500, 0])}px) rotate(-1.2deg)` }}>
-        <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 44, color: C.ink }}><span style={{ color: C.ver, marginRight: 12 }}>●</span>{text}</div>
+        <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: text.length > 30 ? 40 : 48, color: C.ink, whiteSpace: "nowrap" }}>{text}</div>
       </Washi>
     </AbsoluteFill>
   );

@@ -56,7 +56,7 @@ export const Carousel: React.FC<{ cards: HabCard[]; bg: string; subAt: number; d
   const f = useCurrentFrame(); const o = useOut(dur, 12); const pIn = useIn(0, 22);
   const fanT = ease((f - dur * 0.62) / 34);
   const rot = -f * 0.55;
-  const BIG = cards.length > 16; const R = BIG ? 1150 : cards.length > 8 ? 820 : 640, PR = BIG ? 2100 : cards.length > 8 ? 1700 : 1500; const CW = BIG ? 250 : cards.length > 8 ? 330 : 460, FAN = BIG ? 56 : cards.length > 8 ? 62 : 52;
+  const BIG = cards.length > 16; const R = BIG ? 1150 : cards.length > 8 ? 820 : 640, PR = BIG ? 1500 : cards.length > 8 ? 1300 : 1200; const CW = BIG ? 250 : cards.length > 8 ? 330 : 460, FAN = BIG ? 56 : cards.length > 8 ? 62 : 52;
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <BlurBg src={bg} dark={0.45} />
@@ -145,7 +145,7 @@ export const HabitScene: React.FC<{ n: number; title: string; src: string; dur: 
           </AbsoluteFill>
           <AbsoluteFill style={{ background: `linear-gradient(${right ? 270 : 90}deg, rgba(16,11,8,0.85) 0%, rgba(16,11,8,0.4) 45%, rgba(16,11,8,0) 70%)` }} />
           <div style={{ position: "absolute", top: 230, width: 860, display: "flex", flexDirection: "column", ...side }}>
-            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, letterSpacing: 10, color: PINK, opacity: draw }}>{LIST.short} {n} DE {LIST.n}</div>
+            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 8, color: PINK, opacity: draw }}>{LIST.short} {n} DE {LIST.n}</div>
             <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 300, lineHeight: 0.9, color: C.white, opacity: draw, textShadow: shadow, transform: `translateY(${(1 - fill) * 18}px)` }}>{String(n).padStart(2, "0")}</div>
             <div style={{ display: "flex", flexWrap: "wrap", columnGap: 22, justifyContent: right ? "flex-end" : "flex-start", marginTop: 6 }}>
               {words.map((w, i) => {
@@ -292,30 +292,29 @@ export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: H
 };
 
 // (10) CTA suave junto al avatar, con la fila de los 10 hábitos
-export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number }> = ({ text, cards, dur }) => {
-  const f = useCurrentFrame(); const p = useIn(0, 20), o = useOut(dur, 12);
+export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number }> = ({ text, dur }) => {
+  const f = useCurrentFrame(); const p = useIn(0, 18), o = useOut(dur, 12);
+  const btn = spring({ frame: f - 6, fps: 30, config: { damping: 12, mass: 0.7 } });
+  const press = interpolate(f, [34, 39, 46], [1, 0.9, 1], CL);
+  const on = f >= 39;
+  const bell = on ? Math.sin((f - 39) / 2.2) * 18 * Math.max(0, 1 - (f - 39) / 40) : 0;
+  const fs = Math.min(64, Math.floor(1560 / Math.max(10, text.length * 0.52)));
   return (
     <AbsoluteFill style={{ opacity: o }}>
-      <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(16,11,8,0.72) 0%, rgba(16,11,8,0) 40%)" }} />
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 215, textAlign: "center", opacity: p }}>
-        <span style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 600, fontSize: 62, color: C.white, textShadow: shadow, borderBottom: `4px solid ${C.ver}`, paddingBottom: 6 }}>{text}</span>
+      <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(16,11,8,0.78) 0%, rgba(16,11,8,0) 42%)" }} />
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 210, display: "flex", justifyContent: "center", alignItems: "center", gap: 26, transform: `translateY(${(1 - btn) * 120}px) scale(${press})`, opacity: btn }}>
+        <div style={{ background: on ? "#3A3A3A" : "#D42A20", color: C.white, fontFamily: SANS, fontWeight: 800, fontSize: 58, letterSpacing: 3, padding: "18px 46px", borderRadius: 14, boxShadow: "0 14px 34px rgba(0,0,0,0.5)" }}>{on ? "SUSCRITO" : "SUSCRÍBETE"}</div>
+        <svg width="86" height="86" viewBox="0 0 24 24" style={{ transform: `rotate(${bell}deg)`, transformOrigin: "50% 8%", filter: "drop-shadow(0 6px 10px rgba(0,0,0,0.5))" }}>
+          <path fill={C.white} d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22zm7-6V11a7 7 0 0 0-5.5-6.84V3a1.5 1.5 0 0 0-3 0v1.16A7 7 0 0 0 5 11v5l-2 2v1h18v-1z" />
+        </svg>
       </div>
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 52, display: "flex", justifyContent: "center", gap: cards.length > 8 ? 8 : 14 }}>
-        {cards.filter((_, i) => cards.length <= 13 || i % 2 === 0).map((c, i) => {
-          const e = spring({ frame: f - 8 - i * 3, fps: 30, config: { damping: 14 } });
-          return (
-            <div key={i} style={{ width: cards.length > 8 ? 140 : 170, height: cards.length > 8 ? 124 : 150, borderRadius: 8, overflow: "hidden", border: `3px solid ${C.paper}`, position: "relative", opacity: e, transform: `translateY(${(1 - e) * 80}px)`, boxShadow: "0 8px 18px rgba(0,0,0,0.45)" }}>
-              <Img src={staticFile(c.src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-              <div style={{ position: "absolute", left: 6, top: 4, fontFamily: SANS, fontWeight: 700, fontSize: 22, color: C.white, textShadow: shadow }}>{String((c as any).num ?? i + 1).padStart(2, "0")}</div>
-            </div>
-          );
-        })}
+      <div style={{ position: "absolute", left: 120, right: 120, bottom: 96, textAlign: "center", opacity: p }}>
+        <span style={{ fontFamily: SERIF, fontWeight: 700, fontSize: fs, color: C.white, textShadow: shadow, whiteSpace: "nowrap" }}>{text}</span>
       </div>
     </AbsoluteFill>
   );
 };
 
-// (4) avatar con encuadres: punch-in 112 % en golpes y corrimiento a la izquierda para el 50/50
 export const AvatarFramed: React.FC<{ src: string; seed: number; dur: number; mods?: { a: number; b: number; k: string }[] }> = ({ src, seed, dur, mods = [] }) => {
   const f = useCurrentFrame();
   const inn = hash(seed + 99) % 3 !== 0;
