@@ -65,31 +65,34 @@ const Pieces: React.FC<P> = ({ m }) => {
   const f = useCurrentFrame();
   const L: [string, string][] = [["g0590", "A TUNA CAN"], ["g0910", "CARDBOARD"], ["g1210", "OLD CANDLE WAX"], ["g1980", "A COFFEE CAN"]];
   return <Plate src="g0050" d={0.75}>
-    {L.map(([s, c], i) => <Lid key={i} src={s} r={170} x={150 + i * 420} y={190 + (i % 2) * 40} e={k(f, M(m, i, 6 + i * 14), 12)} cap={c} />)}
+    {L.map(([s, c], i) => <Lid key={i} src={s} r={170} x={150 + i * 420} y={210} e={k(f, M(m, i, 6 + i * 14), 12)} cap={c} />)}
     <Big e={k(f, 4, 14)} y={100}>Stuff you'd normally throw out.</Big>
   </Plate>;
 };
 
 // ================= carousel (017) + recap/rc:n — diez tiras de cartón corrugado con el número a esténcil
 const PARTS = ["WHAT IT IS", "THE CAN", "THE CARDBOARD", "THE WAX", "MELT IT SAFE", "FILL IT TWICE", "THE STOVE", "LIGHT + BOIL TEST", "TURN DOWN · PUT OUT", "REFILL + STORE"];
-const Strips: React.FC<P & { pick?: number; recap?: boolean }> = ({ m, pick, recap }) => {
+const Strips: React.FC<P & { pick?: number; recap?: boolean }> = ({ pick, recap }) => {
   const f = useCurrentFrame();
-  return <Plate src={recap ? "g3140" : "g0210"} d={0.7}>
-    <div style={{ position: "absolute", left: 120, right: 120, top: 110, display: "grid", gridTemplateColumns: "1fr 1fr", columnGap: 60, rowGap: 22 }}>
-      {PARTS.map((s, i) => {
-        const a = recap ? (pick !== undefined ? (i < pick - 1 ? -99 : i === pick - 1 ? 2 : 999) : 2 + i * 3) : M(m, 0, 4) + i * 4;
-        const e = k(f, a, 8); const on = pick === undefined || i <= pick - 1; const cur = pick !== undefined && i === pick - 1;
-        return <div key={i} style={{ height: 112, background: cur ? `linear-gradient(90deg, ${ORANGE}, #f7b85a)` : CORR, border: "3px solid #7a5530", display: "flex", alignItems: "center", gap: 26, padding: "0 30px",
-          opacity: on ? cl(e * 1.5) : 0.3, transform: `translateX(${(1 - e) * (i % 2 ? 700 : -700)}px)`, boxShadow: "0 10px 14px rgba(0,0,0,.45)" }}>
-          <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 76, color: INK, width: 90, textAlign: "center" }}>{i + 1}</div>
-          <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 42, color: INK, letterSpacing: 1 }}>{s}</div></div>; })}
-    </div>
-    <Big e={k(f, 2, 14)} y={60} size={70}>{recap ? (pick !== undefined ? `PART ${pick}: ${PARTS[pick - 1]}` : "From the top.") : "10 short parts."}</Big>
+  if (pick !== undefined) { const e = k(f, 0, 14); const drop = interpolate(f, [8, 20], [-700, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.bounce) });
+    return <AbsoluteFill style={{ background: CORR }}>
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,.1), rgba(0,0,0,.4))" }} />
+      <Card src={PART_IMG[pick - 1]} w={1120} h={680} x={600} y={160} rot={1.5} e={e} />
+      <div style={{ position: "absolute", left: 120, top: 320, width: 360, height: 400, background: WAX, border: `10px solid ${ENAMEL}`, transform: `translateY(${drop}px) rotate(-4deg)`, boxShadow: "0 22px 26px rgba(0,0,0,.55)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+        <Lbl size={40} col={ENAMEL} style={{ letterSpacing: 10 }}>PART</Lbl>
+        <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 240, lineHeight: 0.95, color: INK }}>{pick}</div></div>
+    </AbsoluteFill>; }
+  const x = -f * 30;
+  return <Plate src={recap ? "g1890" : "g1730"} d={0.8}>
+    {PART_IMG.map((src, i) => <div key={i} style={{ position: "absolute", left: 0, top: 0 }}>
+      <Card src={src} w={440} h={330} x={240 + i * 520 + x} y={230} rot={[-2, 1.5, -1, 2][i % 4]} e={k(f, i * 3, 8)} cap={`${i + 1} · ${PARTS[i]}`} /></div>)}
+    <Big e={k(f, 2, 14)} y={90} size={76}>{recap ? "Ten parts, one can." : "10 short parts."}</Big>
   </Plate>;
 };
 const RecapBonus: React.FC<P> = () => {
   const f = useCurrentFrame();
-  return <Plate src="g1890" d={0.6}><Big e={k(f, 2, 14)} y={120} col={ORANGE}>Bonus: the three-day can.</Big></Plate>;
+  return <Plate src="g1890" d={0.6}><div style={{ position: "absolute", left: 0, right: 0, bottom: 90, display: "flex", justifyContent: "center", opacity: k(f, 2, 14) }}>
+    <div style={{ padding: "20px 50px", background: CORR, border: "4px solid #7a5530", fontFamily: SANS, fontWeight: 900, fontSize: 72, color: INK, whiteSpace: "nowrap", boxShadow: "0 14px 18px rgba(0,0,0,.5)" }}>Bonus: the three-day can.</div></div></Plate>;
 };
 
 // ================= part:n — panel de cartón con «PART n / 10» pintado a esténcil y la copia del capítulo
@@ -98,9 +101,9 @@ const Part: React.FC<P> = ({ a }) => {
   const f = useCurrentFrame(); const n = +a[0]; const e = k(f, 0, 14), s = k(f, 8, 10);
   return <AbsoluteFill style={{ background: CORR }}>
     <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,.05), rgba(0,0,0,.35))" }} />
-    <Card src={PART_IMG[n - 1]} w={860} h={560} x={900 + (1 - e) * 900} y={200} rot={-2 + e} />
-    <div style={{ position: "absolute", left: 110, top: 270, opacity: cl(s * 2), transform: `scale(${1 + 0.1 * cl(1 - (f - 16) / 8)})`, transformOrigin: "0 50%" }}>
-      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 70, color: ENAMEL, letterSpacing: 14 }}>PART</div>
+    <Card src={PART_IMG[n - 1]} w={860} h={560} x={n % 2 ? 900 + (1 - e) * 900 : 120 - (1 - e) * 900} y={200} rot={n % 2 ? -2 + e : 2 - e} />
+    <div style={{ position: "absolute", left: n % 2 ? 110 : 1100, top: 270, opacity: cl(s * 2), transform: `scale(${1 + 0.1 * cl(1 - (f - 16) / 8)})`, transformOrigin: "0 50%" }}>
+      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 70, color: INK, letterSpacing: 14 }}>PART</div>
       <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 280, lineHeight: 0.9, color: INK, letterSpacing: -6 }}>{n}<span style={{ fontSize: 110, color: "#5a3f22" }}> / 10</span></div>
       <div style={{ marginTop: 22, display: "inline-block", padding: "12px 26px", background: WAX, fontFamily: SANS, fontWeight: 900, fontSize: 50, color: INK, maxWidth: 680 }}>{PARTS[n - 1]}</div>
     </div>
@@ -141,9 +144,9 @@ const STAT: Record<string, [string, string, string, string]> = {
 const Stat: React.FC<P> = ({ a }) => {
   const f = useCurrentFrame(); const [src, big, lab, so] = STAT[a[0]]; const e = k(f, 2, 14);
   return <Plate src={src} d={0.55}>
-    <Band style={{ position: "absolute", left: 0, right: 0, top: 300, textAlign: "center", transform: `scaleX(${e})` }}>
-      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: big.length > 9 ? 110 : 150, color: INK, lineHeight: 1 }}>{big}</div>
-      <Lbl size={40} col={INK} style={{ marginTop: 12, whiteSpace: "normal" }}>{lab}</Lbl>
+    <Band style={{ position: "absolute", left: 0, right: 0, bottom: 70, textAlign: "center", transform: `scaleX(${e})`, padding: "24px 50px" }}>
+      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: big.length > 9 ? 96 : 120, color: INK, lineHeight: 1, whiteSpace: "nowrap" }}>{big}</div>
+      <Lbl size={38} col={INK} style={{ marginTop: 10 }}>{lab}</Lbl>
       <Lbl size={30} col={ENAMEL} style={{ marginTop: 14 }}>SOURCE · {so}</Lbl>
     </Band>
   </Plate>;
@@ -191,16 +194,20 @@ const Tubes: React.FC<P> = ({ m }) => {
   </Plate>;
 };
 
-// ================= stubs (128): la lata de café de los cabos se llena a lo largo del año
+// ================= stubs (128): los cabos de vela caen uno a uno en la lata de café y la hoja del almanaque pasa de mes
 const Stubs: React.FC<P> = ({ m }) => {
-  const f = useCurrentFrame(); const lvl = interpolate(f, [M(m, 0, 6), M(m, 0, 6) + 60], [0.05, 0.92], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const MO = ["JAN", "MAR", "MAY", "JUL", "SEP", "NOV"]; const mi = Math.min(5, Math.floor(lvl / 0.92 * 6));
-  return <Plate src="g1300" d={0.75}>
-    <div style={{ position: "absolute", left: 760, top: 170, width: 400, height: 560, borderRadius: "10px 10px 26px 26px", background: "linear-gradient(90deg,#7d838a,#e6e9ec 35%,#b7bcc1 60%,#6f757c)", boxShadow: "0 22px 30px rgba(0,0,0,.55)", overflow: "hidden" }}>
-      <div style={{ position: "absolute", left: 18, right: 18, bottom: 18, height: `${lvl * 96}%`, background: `repeating-linear-gradient(170deg, ${WAX} 0 26px, #e8d6a8 26px 40px, #f7e4e4 40px 58px, #efe7c0 58px 80px)`, borderRadius: "4px 4px 18px 18px" }} />
-    </div>
-    <Lbl size={70} col={ORANGE} style={{ position: "absolute", left: 1220, top: 380 }}>{MO[mi]}</Lbl>
-    <Big e={k(f, M(m, 0, 6) + 50, 12)} y={90} size={74}>Every stub in the house. Full in a year.</Big>
+  const f = useCurrentFrame(); const a0 = M(m, 0, 6); const lvl = interpolate(f, [a0, a0 + 60], [0.05, 0.85], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const MO = ["JAN", "MAR", "MAY", "JUL", "SEP", "NOV"]; const mi = Math.min(5, Math.floor(lvl / 0.85 * 6)); const COL = [WAX, "#f2c9c9", "#e9d98c", "#cfe3f7", WAX, "#d9ecd0"];
+  return <Plate src="g1560" d={0.8}>
+    {[0, 1, 2, 3, 4, 5].map((i) => { const t = ((f + i * 9) % 30) / 30; return <div key={i} style={{ position: "absolute", left: 830 + (i % 3) * 90, top: 40 + t * 260, width: 50, height: 110, borderRadius: 8, background: COL[i], transform: `rotate(${(i - 2.5) * 18}deg)`, opacity: t < 0.85 ? 1 : 0, boxShadow: "0 6px 0 rgba(0,0,0,.3)" }} />; })}
+    <div style={{ position: "absolute", left: 760, top: 340, width: 400, height: 520, borderRadius: "0 0 26px 26px", background: "linear-gradient(90deg,#7d838a,#e6e9ec 35%,#b7bcc1 60%,#6f757c)", boxShadow: "0 22px 30px rgba(0,0,0,.55)", overflow: "hidden" }}>
+      {Array.from({ length: 6 }).map((_, i) => <div key={i} style={{ position: "absolute", left: 0, right: 0, top: 40 + i * 80, height: 6, background: "rgba(0,0,0,.15)" }} />)}
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: `${lvl * 100}%`, background: `repeating-linear-gradient(170deg, ${WAX} 0 26px, #e8d6a8 26px 40px, #f2c9c9 40px 58px, #efe7c0 58px 80px)`, opacity: 0.45 }} /></div>
+    <div style={{ position: "absolute", left: 750, top: 310, width: 420, height: 60, borderRadius: "50%", background: "radial-gradient(ellipse,#2a2d31 55%,#c9ced3 60%,#7d838a)" }} />
+    <div style={{ position: "absolute", left: 1290, top: 380, width: 300, background: WHITE, boxShadow: "0 16px 22px rgba(0,0,0,.5)", transform: "rotate(3deg)" }}>
+      <div style={{ height: 70, background: RED, display: "flex", alignItems: "center", justifyContent: "center" }}><Lbl size={34}>THIS YEAR</Lbl></div>
+      <div style={{ height: 200, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 120, color: INK }}>{MO[mi]}</div></div>
+    <Big e={k(f, a0 + 50, 12)} y={70} size={70}>Every stub in the house. Full in a year.</Big>
   </Plate>;
 };
 
@@ -208,25 +215,35 @@ const Stubs: React.FC<P> = ({ m }) => {
 const Stamp: React.FC<{ src: string; t1: string; t2: string }> = ({ src, t1, t2 }) => {
   const f = useCurrentFrame(); const hit = cl((f - 8) / 4); const sh = f > 8 && f < 14 ? Math.sin(f * 3) * 6 : 0;
   return <Plate src={src} d={0.45}>
-    <div style={{ position: "absolute", left: 420, top: 300, transform: `translate(${sh}px,${sh}px) rotate(-7deg) scale(${2.2 - 1.2 * hit})`, opacity: hit, border: `14px solid ${RED}`, borderRadius: 18, padding: "20px 50px", fontFamily: SANS, fontWeight: 900, fontSize: 110, color: RED, letterSpacing: 5, background: "rgba(255,240,230,.14)", whiteSpace: "nowrap" }}>{t1}</div>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 110, display: "flex", justifyContent: "center" }}><div style={{ transform: `translate(${sh}px,${sh}px) rotate(-5deg) scale(${2.2 - 1.2 * hit})`, opacity: hit, border: `12px solid ${RED}`, borderRadius: 18, padding: "16px 44px", fontFamily: SANS, fontWeight: 900, fontSize: 88, color: RED, letterSpacing: 4, background: "rgba(255,240,230,.82)", whiteSpace: "nowrap" }}>{t1}</div></div>
     <Big e={k(f, 20, 12)} y={110} size={72}>{t2}</Big>
   </Plate>;
 };
 const Grease: React.FC<P> = () => <Stamp src="g3310" t1="NEVER ON DIRECT HEAT" t2="Hot wax catches like a grease fire." />;
-const NoWater: React.FC<P> = () => <Stamp src="g1700" t1="NO WATER · LID IT" t2="Water on burning wax throws the fire at you." />;
+const NoWater: React.FC<P> = () => {
+  const f = useCurrentFrame(); const down = interpolate(f, [20, 34], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) }); const out = k(f, 34, 14);
+  return <Plate src="g1700" d={0.8}>
+    <div style={{ position: "absolute", left: 660, top: 520, width: 600, height: 200, borderRadius: "0 0 20px 20px", background: "linear-gradient(90deg,#7d838a,#e6e9ec 35%,#b7bcc1 60%,#6f757c)", boxShadow: "0 22px 30px rgba(0,0,0,.55)" }} />
+    <div style={{ position: "absolute", left: 660, top: 500, width: 600, height: 50, borderRadius: "50%", background: `repeating-radial-gradient(ellipse, ${WAX} 0 10px, #b98a52 10px 14px)` }} />
+    <div style={{ position: "absolute", left: 700, top: 360, width: 520, display: "flex", justifyContent: "space-around" }}>{[0, 1, 2, 3].map((i) => <Flame key={i} s={1.9} seed={i} on={1 - out} />)}</div>
+    <div style={{ position: "absolute", left: 630, top: 120 + down * 360, width: 660, height: 40, borderRadius: "50%", background: "radial-gradient(ellipse at 50% 30%,#eef0f2,#8b9198)", boxShadow: "0 16px 20px rgba(0,0,0,.5)" }}>
+      <div style={{ position: "absolute", left: 300, top: -34, width: 60, height: 40, borderRadius: 10, background: "#3a3f45" }} /></div>
+    <Big e={k(f, 40, 12)} y={90} size={76}>Lid it. Never water.</Big>
+  </Plate>;
+};
 
 // ================= bath (151): corte del baño María — la olla, el agua azul, la lata y la cera que pasa de trozos a líquido
 const Bath: React.FC<P> = ({ m }) => {
   const f = useCurrentFrame(); const melt = k(f, M(m, 1, 40), 50); const bub = (f % 20) / 20;
-  return <Plate src="g1550" d={0.8}>
+  return <Plate src="g1550" d={0.93}>
     <div style={{ position: "absolute", left: 560, top: 260, width: 800, height: 470, border: "16px solid #3a3f45", borderTop: "none", borderRadius: "0 0 40px 40px", boxShadow: "0 22px 30px rgba(0,0,0,.5)" }}>
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 220 * k(f, M(m, 0, 4), 16), background: `linear-gradient(180deg,#7fb0f0,${BLUE})`, borderRadius: "0 0 26px 26px", opacity: 0.85 }} />
       {[0, 1, 2, 3, 4].map((i) => <div key={i} style={{ position: "absolute", left: 60 + i * 150, bottom: 20 + ((bub + i * 0.2) % 1) * 180, width: 16, height: 16, borderRadius: "50%", background: "rgba(255,255,255,.7)" }} />)}
       <div style={{ position: "absolute", left: 270, bottom: 30, width: 260, height: 380, background: "linear-gradient(90deg,#7d838a,#e6e9ec 35%,#b7bcc1 60%,#6f757c)", borderRadius: "6px 6px 14px 14px" }}>
         <div style={{ position: "absolute", left: 14, right: 14, bottom: 14, height: 260, background: melt > 0.6 ? `linear-gradient(180deg,#f8e9a8,#e9c862)` : `repeating-linear-gradient(160deg, ${WAX} 0 30px, #d9cfb3 30px 38px)`, borderRadius: "2px 2px 10px 10px" }} /></div>
     </div>
-    <Lbl size={46} col="#bcd6ff" style={{ position: "absolute", left: 1400, top: 560 }}>WATER: MAX 212 °F</Lbl>
-    <Lbl size={46} col={WAX} style={{ position: "absolute", left: 1400, top: 360, opacity: k(f, M(m, 1, 40), 10) }}>WAX: MELTS, NEVER CATCHES</Lbl>
+    <Lbl size={46} col="#bcd6ff" style={{ position: "absolute", right: 80, top: 560 }}>WATER ≤ 212 °F</Lbl>
+    <Lbl size={46} col={WAX} style={{ position: "absolute", right: 80, top: 360, opacity: k(f, M(m, 1, 40), 10) }}>WAX MELTS · NO FLAME</Lbl>
     <Big e={k(f, 10, 12)} y={70} size={70}>A water bath. Slow and safe.</Big>
   </Plate>;
 };
@@ -239,8 +256,8 @@ const Pours: React.FC<P> = ({ m, dur }) => {
       <div style={{ position: "absolute", left: 18, right: 18, bottom: 16, height: 280, background: CORR, opacity: 0.85 }} />
       <div style={{ position: "absolute", left: 18, right: 18, bottom: 16, height: 280 * lv, background: "rgba(246,226,150,.88)" }} /></div>
     <div style={{ position: "absolute", left: 1290, top: 330 + 330 - 16 - 280 * 0.5, width: 120, height: 5, background: ORANGE }} />
-    <Lbl size={42} col={ORANGE} style={{ position: "absolute", left: 1430, top: 330 + 330 - 16 - 280 * 0.5 - 26 }}>1st POUR · WAIT</Lbl>
-    <Lbl size={42} col={WAX} style={{ position: "absolute", left: 1430, top: 360, opacity: cl(l2 * 4) }}>2nd POUR · TO THE TOP</Lbl>
+    <Lbl size={42} col={ORANGE} style={{ position: "absolute", left: 1420, top: 330 + 330 - 16 - 280 * 0.5 - 26 }}>1st · HALF</Lbl>
+    <Lbl size={42} col={WAX} style={{ position: "absolute", left: 1420, top: 360, opacity: cl(l2 * 4) }}>2nd POUR · FULL</Lbl>
     <Big e={k(f, 10, 12)} y={90} size={74}>Two pours. Let it soak in between.</Big>
   </Plate>;
 };
@@ -248,10 +265,10 @@ const Pours: React.FC<P> = ({ m, dur }) => {
 // ================= stove (202): la anatomía de la cocina sobre la copia — tres etiquetas de cinta de papel
 const Stove: React.FC<P> = ({ m }) => {
   const f = useCurrentFrame();
-  const T: [string, number, number][] = [["CLOSED END ON TOP = YOUR SKILLET", 1050, 230], ["SQUARE DOOR · 3\" × 3\"", 1050, 470], ["RING OF HOLES AT THE TOP", 1050, 710]];
+  const T: [string, number, number][] = [["CLOSED END ON TOP = SKILLET", 1000, 230], ["SQUARE DOOR · 3\" × 3\"", 1000, 470], ["RING OF HOLES ON TOP", 1000, 710]];
   return <Plate src="g2060" d={0.72}>
     <Card src="g0050" w={720} h={620} x={170} y={160} rot={-1.5} e={k(f, 2, 12)} />
-    {T.map(([t, x, y], i) => <div key={i} style={{ position: "absolute", left: x, top: y, padding: "18px 30px", background: "rgba(238,229,205,.95)", transform: `rotate(${[-1.5, 1, -1][i]}deg) translateX(${(1 - k(f, M(m, i, 10 + i * 30), 10)) * 900}px)`, boxShadow: "0 10px 14px rgba(0,0,0,.45)", fontFamily: SANS, fontWeight: 900, fontSize: 44, color: INK, whiteSpace: "nowrap" }}>{t}</div>)}
+    {T.map(([t, x, y], i) => <div key={i} style={{ position: "absolute", left: x, top: y, padding: "18px 30px", background: "rgba(238,229,205,.95)", transform: `rotate(${[-1.5, 1, -1][i]}deg) translateX(${(1 - k(f, M(m, i, 10 + i * 30), 10)) * 900}px)`, boxShadow: "0 10px 14px rgba(0,0,0,.45)", fontFamily: SANS, fontWeight: 900, fontSize: 38, color: INK, whiteSpace: "nowrap" }}>{t}</div>)}
   </Plate>;
 };
 
@@ -289,7 +306,7 @@ const LidWind: React.FC<P> = () => {
     <Lbl size={40} style={{ marginBottom: 12 }}>{lab}</Lbl>
     <div style={{ height: 90, background: "rgba(255,255,255,.12)", borderRadius: 45, position: "relative" }}>
       <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: `${e * 100}%`, background: col, borderRadius: 45 }} />
-      <div style={{ position: "absolute", right: 30, top: 14, fontFamily: SANS, fontWeight: 900, fontSize: 56, color: WHITE, opacity: cl(e * 3 - 2) }}>{end}</div></div></div>;
+      </div><div style={{ marginTop: 12, textAlign: "right", fontFamily: SANS, fontWeight: 900, fontSize: 52, color: WHITE, opacity: cl(e * 3 - 2), whiteSpace: "nowrap" }}>{end}</div></div>;
   return <Plate src="g2540" d={0.8}>
     {lane(220, "LID ON · DOOR AWAY FROM THE WIND", a, "BOIL · 18 MIN", `linear-gradient(90deg,${BLUE},${ORANGE})`)}
     {lane(470, "NO LID · DOOR INTO THE WIND", b * 0.7, "25 MIN · BARELY SIMMERING", "linear-gradient(90deg,#4a5c78,#7b8aa0)")}
@@ -301,10 +318,10 @@ const LidWind: React.FC<P> = () => {
 const Menu: React.FC<P> = () => {
   const f = useCurrentFrame(); const Y = ["OATMEAL", "RAMEN", "A CAN OF SOUP · 12 MIN", "FRIED EGGS"], N = ["DRY BEANS", "A ROAST", "PASTA FOR SIX"];
   return <Plate src="g2700" d={0.75}>
-    <div style={{ position: "absolute", left: 360, top: 110, width: 1200, height: 760, background: "linear-gradient(170deg,#2b2d2b,#1d1f1d)", border: "18px solid #6b4a2a", boxShadow: "0 22px 30px rgba(0,0,0,.55)", padding: "40px 70px", boxSizing: "border-box" }}>
+    <div style={{ position: "absolute", left: 360, top: 110, width: 1200, height: 760, background: "linear-gradient(170deg,#2b2d2b,#1d1f1d)", border: "18px solid #6b4a2a", boxShadow: "0 22px 30px rgba(0,0,0,.55)", padding: "40px 70px", boxSizing: "border-box", display: "flex", flexDirection: "column", justifyContent: "space-evenly" }}>
       <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 76, color: ORANGE, textAlign: "center" }}>ON THE CAN TODAY</div>
-      {Y.map((t, i) => <div key={t} style={{ fontFamily: HAND, fontWeight: 700, fontSize: 62, color: WHITE, opacity: k(f, 10 + i * 10, 8) }}>✓ {t}</div>)}
-      {N.map((t, i) => <div key={t} style={{ fontFamily: HAND, fontWeight: 700, fontSize: 54, color: "#b5aca0", textDecoration: "line-through", textDecorationColor: RED, textDecorationThickness: 6, opacity: k(f, 60 + i * 10, 8) }}>{t}</div>)}
+      {Y.map((t, i) => <div key={t} style={{ fontFamily: HAND, fontWeight: 700, fontSize: 68, color: WHITE, opacity: k(f, 10 + i * 10, 8) }}>✓ {t}</div>)}
+      {N.map((t, i) => <div key={t} style={{ fontFamily: HAND, fontWeight: 700, fontSize: 60, color: "#d5ccc0", textDecoration: "line-through", textDecorationColor: RED, textDecorationThickness: 8, opacity: k(f, 60 + i * 10, 8) }}>{t}</div>)}
     </div>
   </Plate>;
 };
@@ -326,16 +343,18 @@ const Damper: React.FC<P> = ({ m }) => {
 const TenMin: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const s = interpolate(f, [6, Math.max(40, dur - 10)], [600, 540], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return <Plate src="g3060" d={0.65}>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 230, textAlign: "center", fontFamily: "monospace", fontWeight: 900, fontSize: 280, color: WHITE, textShadow: "0 8px 0 rgba(0,0,0,.5)" }}>{Math.floor(s / 60)}:{String(Math.floor(s % 60)).padStart(2, "0")}</div>
+    <div style={{ position: "absolute", right: 110, top: 150, width: 460, height: 460, borderRadius: "50%", background: "radial-gradient(#fbfaf5 62%,#d9d4c6)", border: `26px solid ${ENAMEL}`, boxShadow: "0 22px 30px rgba(0,0,0,.55)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+      <div style={{ position: "absolute", left: "50%", top: "50%", width: 12, height: 180, marginLeft: -6, marginTop: -180, background: RED, borderRadius: 6, transformOrigin: "50% 100%", transform: `rotate(${(s / 600) * 360}deg)` }} />
+      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 96, color: INK, marginTop: 200 }}>{Math.ceil(s / 60)} MIN</div></div>
     <Big e={k(f, 10, 12)} y={130} size={84} col={ORANGE}>Liquid wax. Do not pick it up.</Big>
   </Plate>;
 };
 
 // ================= lineup (321): la receta entera en tapas de lata en fila
 const Lineup: React.FC<P> = ({ m }) => {
-  const f = useCurrentFrame(); const L: [string, string][] = [["g0590", "A TUNA CAN"], ["g1090", "A CARDBOARD COIL"], ["g1840", "A POUR OF WAX"], ["g0050", "A COFFEE CAN STOVE"]];
+  const f = useCurrentFrame(); const L: [string, string][] = [["g0590", "TUNA CAN"], ["g0430", "CARDBOARD"], ["g1840", "WAX"], ["g0050", "COFFEE CAN"]];
   return <Plate src="g1730" d={0.75}>
-    {L.map(([s, c], i) => <Lid key={i} src={s} r={160} x={140 + i * 430} y={200} e={k(f, M(m, i, 4 + i * 10), 10)} cap={c} />)}
+    {L.map(([s, c], i) => <Card key={i} src={s} w={360} h={360} x={90 + i * 445} y={170} rot={[-2.5, 1.5, -1.5, 2.5][i]} e={k(f, M(m, i, 4 + i * 10), 10)} cap={c} />)}
     <Big e={k(f, M(m, 3, 40) + 10, 12)} y={110}>That's the whole build.</Big>
   </Plate>;
 };
@@ -362,10 +381,13 @@ const MIST: [string, string][] = [["g3310", "WAX ON DIRECT HEAT"], ["g3420", "MO
 const CAUTION = `repeating-linear-gradient(-45deg, #f2c418 0 40px, #1b1b1b 40px 80px)`;
 const Mistakes: React.FC<P> = () => {
   const f = useCurrentFrame();
-  return <Plate src="g3510" d={0.6}>
-    <div style={{ position: "absolute", left: -40, right: -40, top: 330, height: 70, background: CAUTION, transform: `rotate(-4deg) scaleX(${k(f, 2, 12)})` }} />
-    <Big e={k(f, 6, 14)} y={400} size={190}>5 MISTAKES</Big><Big e={k(f, 18, 12)} y={290} size={56} col={ORANGE}>Number two is mine.</Big></Plate>;
+  return <Plate src="g1920" d={0.8}>
+    {MIST.map(([src], i) => <div key={i} style={{ position: "absolute", left: 0, top: 0 }}><Card src={src} w={290} h={230} x={110 + i * 350} y={150} rot={[-3, 2, -1.5, 3, -2][i]} e={k(f, 2 + i * 6, 10)} /></div>)}
+    {MIST.map((_, i) => <div key={"n" + i} style={{ position: "absolute", left: 100 + i * 350, top: 136, width: 70, height: 70, background: "#f2c418", color: INK, fontFamily: SANS, fontWeight: 900, fontSize: 52, display: "flex", alignItems: "center", justifyContent: "center", opacity: k(f, 2 + i * 6, 10) }}>{i + 1}</div>)}
+    <Big e={k(f, 34, 14)} y={210} size={170}>5 MISTAKES</Big><Big e={k(f, 46, 12)} y={120} size={56} col={ORANGE}>Number two is mine.</Big>
+  </Plate>;
 };
+
 const Mist: React.FC<P> = ({ a }) => {
   const f = useCurrentFrame(); const n = +a[0]; const [src, bad] = MIST[n - 1]; const e = k(f, 0, 10);
   return <Plate src={src} d={0.5}>
@@ -380,58 +402,56 @@ const Mist: React.FC<P> = ({ a }) => {
 const ASK: [string, string][] = [["g3740", "Is this real or is it AI?"], ["g2270", "Inside, if I crack a window?"], ["g3840", "How long does a burner last?"], ["g3870", "One in the trunk for winter?"], ["g3900", "Cooking oil instead of wax?"]];
 const Asked: React.FC<P> = () => {
   const f = useCurrentFrame();
-  return <AbsoluteFill style={{ background: CORR }}>
-    {ASK.map(([, q], i) => <div key={i} style={{ position: "absolute", left: 110 + (i % 3) * 580, top: 120 + Math.floor(i / 3) * 360 + (i >= 3 ? 0 : 0), width: 520, padding: "36px 36px", background: "#fbf8ee", transform: `rotate(${[-2, 1.5, -1, 2, -1.5][i]}deg) translateY(${(1 - k(f, 4 + i * 7, 10)) * 900}px)`, boxShadow: "0 16px 22px rgba(0,0,0,.45)" }}>
+  return <Plate src="g1920" d={0.85}>
+    {ASK.map(([, q], i) => <div key={i} style={{ position: "absolute", left: i < 3 ? 110 + i * 580 : 400 + (i - 3) * 580, top: 120 + Math.floor(i / 3) * 360 + (i >= 3 ? 0 : 0), width: 520, padding: "36px 36px", background: "#fbf8ee", transform: `rotate(${[-2, 1.5, -1, 2, -1.5][i]}deg) translateY(${(1 - k(f, 4 + i * 7, 10)) * 900}px)`, boxShadow: "0 16px 22px rgba(0,0,0,.45)" }}>
       <div style={{ position: "absolute", left: 180, top: -20, width: 160, height: 44, background: "rgba(232,222,190,.9)", transform: "rotate(-3deg)" }} />
       <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 54, color: ENAMEL, lineHeight: 1.05 }}>{q}</div></div>)}
-    <Big e={k(f, 44, 12)} y={70} size={74} col={INK} style={{ textShadow: "none" }}>You asked me.</Big>
-  </AbsoluteFill>;
+    <Big e={k(f, 44, 12)} y={70} size={74}>You asked me.</Big>
+  </Plate>;
 };
 const Ask: React.FC<P> = ({ a }) => {
   const f = useCurrentFrame(); const n = +a[0]; const [src, q] = ASK[n - 1]; const e = k(f, 0, 12);
   return <Plate src={src} d={0.55}>
     <div style={{ position: "absolute", left: 160, right: 160, bottom: 130, padding: "36px 50px", background: "#fbf8ee", transform: `rotate(-1.5deg) translateY(${(1 - e) * 600}px)`, boxShadow: "0 16px 22px rgba(0,0,0,.5)" }}>
-      <Lbl size={32} col="#7a6a4a">QUESTION {n} OF 5</Lbl>
+      <Lbl size={40} col="#7a6a4a">QUESTION {n} OF 5</Lbl>
       <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 88, color: ENAMEL, lineHeight: 1.05, marginTop: 8 }}>{q}</div></div>
   </Plate>;
 };
 
 // ================= memory (400): la foto vieja del auto del padre — se da vuelta y atrás dice «Dad's storm box»
 const Memory: React.FC<P> = () => {
-  const f = useCurrentFrame(); const flip = interpolate(f, [50, 70], [0, 180], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
+  const f = useCurrentFrame(); const flip = interpolate(f, [90, 110], [0, 180], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
   return <Plate src="g4030" d={0.75}>
-    <div style={{ position: "absolute", left: 560, top: 120, width: 800, height: 640, perspective: 2000 }}>
+    <div style={{ position: "absolute", left: 1140, top: 150, width: 620, height: 520, perspective: 2000 }}>
       <div style={{ position: "absolute", inset: 0, transformStyle: "preserve-3d", transform: `rotateY(${flip}deg) rotate(3deg) translateY(${(1 - k(f, 0, 14)) * 600}px)` }}>
         <div style={{ position: "absolute", inset: 0, background: "#f1ead6", padding: "26px 26px 90px", boxSizing: "border-box", backfaceVisibility: "hidden", boxShadow: "0 22px 30px rgba(0,0,0,.5)" }}>
           <div style={{ width: "100%", height: "100%", backgroundImage: IMG("g4010"), backgroundSize: "cover", filter: "sepia(.4) saturate(.85)" }} /></div>
         <div style={{ position: "absolute", inset: 0, background: "#f1ead6", transform: "rotateY(180deg)", backfaceVisibility: "hidden", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 22px 30px rgba(0,0,0,.5)" }}>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 84, color: ENAMEL, textAlign: "center", lineHeight: 1.1, transform: "rotate(-4deg)" }}>Dad's storm box<br />winter, '87</div></div>
       </div></div>
-    <Big e={k(f, 76, 12)} y={80} size={72}>He never needed it. It was always there.</Big>
+    <Big e={k(f, 116, 12)} y={80} size={72}>He never needed it. It was always there.</Big>
   </Plate>;
 };
 
 // ================= canpack (406): la lata vista en corte se llena de abajo hacia arriba con cada cosa
-const PACK: [string, number][] = [["2 BURNERS, CAPPED", 110], ["A 1-QUART POT", 150], ["MATCHES + A LIGHTER", 70], ["PLIERS · GLOVES · FOIL", 80], ["A BLOCK OF PARAFFIN", 90]];
+const PACK: [string, number][] = [["2 TUNA CAN BURNERS", 110], ["A SMALL STEEL POT", 150], ["STRIKE-ANYWHERE MATCHES", 70], ["A PAIR OF PLIERS", 80], ["A BLOCK OF PARAFFIN", 90]];
 const CanPack: React.FC<P> = ({ m }) => {
   const f = useCurrentFrame(); let acc = 0;
   return <Plate src="g4090" d={0.8}>
-    <div style={{ position: "absolute", left: 300, top: 150, width: 560, height: 640, borderRadius: "12px 12px 30px 30px", background: "linear-gradient(90deg,#7d838a,#e6e9ec 35%,#b7bcc1 60%,#6f757c)", boxShadow: "0 22px 30px rgba(0,0,0,.55)", overflow: "hidden" }}>
+    <div style={{ position: "absolute", left: 620, top: 130, width: 680, height: 640, borderRadius: "12px 12px 30px 30px", background: "linear-gradient(90deg,#7d838a,#e6e9ec 35%,#b7bcc1 60%,#6f757c)", boxShadow: "0 22px 30px rgba(0,0,0,.55)", overflow: "hidden" }}>
       {PACK.map(([t, h], i) => { const e = k(f, M(m, i, 6 + i * 26), 10); const b = acc; acc += h + 10;
-        return <div key={i} style={{ position: "absolute", left: 24, right: 24, bottom: 20 + b + (1 - e) * 600, height: h, opacity: cl(e * 2), background: [WAX, ENAMEL, RED, "#6d5a44", "#efe5c6"][i], borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 30, color: i === 1 || i === 2 || i === 3 ? WHITE : INK }}>{t}</div>; })}
+        return <div key={i} style={{ position: "absolute", left: 24, right: 24, bottom: 20 + b + (1 - e) * 600, height: h, opacity: cl(e * 2), background: [WAX, ENAMEL, RED, "#6d5a44", "#efe5c6"][i], borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 38, whiteSpace: "nowrap", color: i === 1 || i === 2 || i === 3 ? WHITE : INK }}>{t}</div>; })}
     </div>
-    <div style={{ position: "absolute", left: 960, top: 220 }}>
-      {PACK.map(([t], i) => <div key={i} style={{ fontFamily: SANS, fontWeight: 900, fontSize: 50, color: WHITE, marginBottom: 26, opacity: k(f, M(m, i, 6 + i * 26), 8) }}>✓ {t}</div>)}</div>
     <Big e={k(f, 6, 12)} y={70} size={66}>Everything goes inside the stove.</Big>
   </Plate>;
 };
 
 // ================= kitmath (418): la cuenta del kit en una tira de sumadora
 const KitMath: React.FC<P> = ({ m }) => {
-  const f = useCurrentFrame(); const R: [string, string][] = [["BURNERS + REFILLS", "4 BURNS"], ["× 2 HOURS EACH", "8 HOURS"], ["× 3 QUARTS / 2 H", "12 QUARTS"]];
+  const f = useCurrentFrame(); const R: [string, string][] = [["BURNERS + REFILLS", "4 BURNS"], ["× 2 HOURS EACH", "= 8 HOURS"], ["1½ QUARTS AN HOUR", "= 12 QUARTS"]];
   const shown = R.filter((_, i) => f >= M(m, i, 8 + i * 30)).length;
   return <Plate src="g4120" d={0.72}>
-    <div style={{ position: "absolute", left: 480, top: 60, width: 960, minHeight: 120 + shown * 140, background: "#fbfaf4", boxShadow: "0 22px 30px rgba(0,0,0,.5)", padding: "70px 50px 30px", boxSizing: "border-box", fontFamily: "monospace" }}>
+    <div style={{ position: "absolute", left: 360, top: 140, width: 1200, background: "#fbfaf4", boxShadow: "0 22px 30px rgba(0,0,0,.5)", padding: "50px 60px 10px", boxSizing: "border-box", fontFamily: "monospace", opacity: shown ? 1 : 0 }}>
       {R.slice(0, shown).map(([l, v], i) => <div key={i} style={{ display: "flex", justifyContent: "space-between", fontSize: i === 2 ? 60 : 44, fontWeight: 900, color: i === 2 ? ENAMEL : INK, marginBottom: 50, whiteSpace: "nowrap", gap: 30, borderTop: i === 2 ? "4px solid #222" : undefined, paddingTop: i === 2 ? 20 : 0 }}><span>{l}</span><span>{v}</span></div>)}
     </div>
   </Plate>;
@@ -444,7 +464,7 @@ const Days: React.FC<P> = ({ m }) => {
     <div style={{ position: "absolute", left: 180, right: 180, top: 140, display: "flex", gap: 40 }}>
       {["DAY 1", "DAY 2", "DAY 3"].map((d, i) => <div key={d} style={{ flex: 1, background: WAX, padding: "26px 30px", boxShadow: "0 16px 22px rgba(0,0,0,.45)", opacity: cl(used[i] * 1.5), transform: `translateY(${(1 - used[i]) * 300}px)` }}>
         <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 56, color: ENAMEL }}>{d}</div>
-        <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 34, color: INK, marginTop: 10, lineHeight: 1.3 }}>HOT BREAKFAST<br />HOT DINNER<br />COFFEE</div></div>)}
+        <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 40, color: INK, marginTop: 10, lineHeight: 1.3, whiteSpace: "nowrap" }}>{[["OATMEAL", "CAN OF SOUP"], ["FRIED EGGS", "RAMEN"], ["COFFEE", "RICE + BEANS"]][i].map((x) => <div key={x}>{x}</div>)}</div></div>)}
     </div>
     <div style={{ position: "absolute", left: 180, right: 180, top: 560, height: 70, background: "rgba(255,255,255,.14)", borderRadius: 35 }}>
       <div style={{ width: `${(q / 12) * 100}%`, height: "100%", background: `linear-gradient(90deg,#7fb0f0,${BLUE})`, borderRadius: 35 }} />
@@ -456,12 +476,12 @@ const Days: React.FC<P> = ({ m }) => {
 // ================= next (457): el próximo video
 const Next: React.FC<P> = () => {
   const f = useCurrentFrame(); const e = k(f, 4, 14);
-  return <Plate src="g2180" d={0.8}>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 220, textAlign: "center", opacity: e, transform: `scale(${0.94 + 0.06 * e})` }}>
-      <Lbl size={44} col={ORANGE} style={{ letterSpacing: 10 }}>NEXT TIME ON THE SCRAP WORKSHOP</Lbl>
-      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 150, color: WHITE, lineHeight: 1.02, marginTop: 20 }}>The 3-in-1 Pellet Stove</div>
-      <Lbl size={46} style={{ marginTop: 26 }}>HEATS · COOKS · BOILS WATER · ONE FIRE</Lbl></div>
-    <div style={{ position: "absolute", left: 0, right: 0, bottom: 110, display: "flex", justifyContent: "center", gap: 40 }}>{[0, 1, 2].map((i) => <Flame key={i} s={1.6} seed={i} on={k(f, 20 + i * 6, 10)} />)}</div>
+  return <Plate src="g2180" d={0.82}>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 110, textAlign: "center", opacity: e, transform: `scale(${0.94 + 0.06 * e})` }}>
+      <Lbl size={40} col={ORANGE} style={{ letterSpacing: 8 }}>NEXT VIDEO</Lbl>
+      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 116, color: WHITE, lineHeight: 1.02, marginTop: 14, whiteSpace: "nowrap", textShadow: "0 5px 0 rgba(0,0,0,.5)" }}>The 3-in-1 Pellet Stove</div></div>
+    <div style={{ position: "absolute", left: 0, right: 0, bottom: 110, display: "flex", justifyContent: "center", gap: 40 }}>
+      {["HEATS", "COOKS", "BOILS WATER"].map((t, i) => <div key={t} style={{ padding: "14px 34px", background: CORR, border: "4px solid #7a5530", fontFamily: SANS, fontWeight: 900, fontSize: 48, color: INK, opacity: k(f, 20 + i * 8, 8), transform: `translateY(${(1 - k(f, 20 + i * 8, 8)) * 80}px)` }}>{t}</div>)}</div>
   </Plate>;
 };
 

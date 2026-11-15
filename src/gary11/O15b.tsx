@@ -15,11 +15,11 @@ const PARTS = ["WHAT IT IS", "THE CAN", "THE CARDBOARD", "THE WAX", "MELT IT SAF
 // MEJORA 2 · progreso: tira de cartón corrugado de 10 tramos arriba a la derecha; la parte actual se llena de naranja
 export const PartStrip: React.FC<{ n: number; dur: number }> = ({ n, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 12, 12);
-  return <div style={{ position: "absolute", right: 56, top: 46, opacity: o, transform: `translateY(${(1 - o) * -60}px)` }}>
+  return <div style={{ position: "absolute", right: 70, top: 60, opacity: o, transform: `translateY(${(1 - o) * -60}px)` }}>
     <div style={{ display: "flex", gap: 6, height: 40, width: 560 }}>
       {PARTS.map((_, i) => <div key={i} style={{ flex: 1, background: i + 1 < n ? "#d98a2a" : i + 1 === n ? (f > 10 ? ORANGE : "#d98a2a") : CORR, border: "2px solid #6a4826", borderRadius: 3 }} />)}
     </div>
-    <div style={{ marginTop: 8, textAlign: "right", fontFamily: SANS, fontWeight: 900, fontSize: 38, color: "#fff", letterSpacing: 2, textShadow: "2px 2px 0 rgba(0,0,0,.65)" }}>PART {n} / 10 · {PARTS[n - 1]}</div>
+    <div style={{ marginTop: 10, marginLeft: "auto", width: "fit-content", padding: "6px 22px", background: "rgba(20,18,16,.88)", borderRadius: 8, whiteSpace: "nowrap", fontFamily: SANS, fontWeight: 900, fontSize: 46, color: "#fff", letterSpacing: 2 }}><span style={{ color: ORANGE, fontSize: 70 }}>{n}</span> / 10 · {PARTS[n - 1]}</div>
   </div>;
 };
 
@@ -38,7 +38,7 @@ export const CardFlap: React.FC<{ dur: number; src: string }> = ({ dur, src }) =
 // presentación: faja de etiqueta de lata (crema con bandas azul enlozado), abajo a la izquierda, se desenrolla
 export const CanLabel: React.FC<{ text: string; sub: string; dur: number }> = ({ text, sub, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 12, 14); const w = ou(f / 16);
-  return <div style={{ position: "absolute", right: 90, top: 80, opacity: o, clipPath: `inset(0 0 0 ${100 - w * 100}%)` }}>
+  return <div style={{ position: "absolute", right: 90, bottom: 110, opacity: o, clipPath: `inset(0 0 0 ${100 - w * 100}%)` }}>
     <div style={{ padding: "30px 50px", background: `linear-gradient(180deg, ${ENAMEL} 0 12px, ${WAX} 12px calc(100% - 12px), ${ENAMEL} calc(100% - 12px))`, boxShadow: "6px 10px 0 rgba(0,0,0,.35)" }}>
       <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 60, color: INK, letterSpacing: 4, whiteSpace: "nowrap" }}>{text}</div>
     </div>
