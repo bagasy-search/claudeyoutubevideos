@@ -4,10 +4,11 @@ import { SHOTS, AVATAR, OVERLAYS, SFX, TOTAL, CARDS } from "./cues.gen";
 import * as P from "./Piezas";
 import * as Q from "./Piezas2";
 import * as E from "./Escenas";
-import * as HA from "./heroes_e";
-import * as HB from "./heroes_e2";
+import * as HA from "./heroes_14a";
+import * as HB from "./heroes_14a2";
+import * as HC from "./heroes_14a3";
 import { MIX } from "./cues.gen";
-const HEROES: Record<string, any> = { ...HA, ...HB };
+const HEROES: Record<string, any> = { ...HA, ...HB, ...HC };
 
 export const TOTAL_FRAMES_LEN11 = TOTAL;
 const T = 8; // frames de transición
@@ -16,7 +17,7 @@ const T = 8; // frames de transición
 const HeroDrift: React.FC<{ dur: number; seed: number; children: React.ReactNode }> = ({ dur, seed, children }) => {
   const f = useCurrentFrame(); const k = interpolate(f, [0, Math.max(1, dur)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const ph = (seed * 1.7) % 6.283, w = (seed % 2 ? 1 : -1) * 6.283 / 240; const dx = 30 * Math.sin(ph + w * f), dy = 30 * Math.cos(ph + w * f);
-  return (<AbsoluteFill><AbsoluteFill style={{ transform: `translate(${dx}px, ${dy}px) scale(${1.08 + 0.04 * k})` }}>{children}</AbsoluteFill><Q.Grain op={0.1} /></AbsoluteFill>);
+  return (<AbsoluteFill><AbsoluteFill style={{ transform: `translate(${dx}px, ${dy}px) scale(${1.08 + 0.04 * k})` }}>{children}</AbsoluteFill></AbsoluteFill>);
 };
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
@@ -97,7 +98,7 @@ export const MainLen11: React.FC = () => (
         </Sequence>
       );
     })}
-    <P.Grade />
+    {/* sin viñeta (regla len14) */}
     {/* capa 3: gráficos */}
     {OVERLAYS.map((o, i) => (
       <Sequence key={"o" + i} from={o.from} durationInFrames={Math.min(o.dur, TOTAL - o.from)}>
