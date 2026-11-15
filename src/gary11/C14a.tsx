@@ -242,9 +242,9 @@ const Exhaust: React.FC<P> = ({ m }) => {
     <div style={{ position: "absolute", left: 440, top: 540, width: (gx + 60 - 440) * k(f, 6, 16), height: 16, background: "linear-gradient(#3a3a3a,#0e0e0e)", borderRadius: 8 }} />
     <div style={{ position: "absolute", left: gx, top: gy, opacity: k(f, 4) }}><Gen s={1.5} run={1} /></div>
     <div style={{ position: "absolute", left: gx + 520, top: gy + 230, width: 90, height: 40, background: CHROME, borderRadius: "6px 20px 20px 6px" }} />
-    {Array.from({ length: 14 }).map((_, i) => { const t = (f - co - i * 7) / 60; if (t < 0) return null; const y = gy + 230 - t * 520, x = gx + 640 + t * 140 + Math.sin(t * 5 + i) * (30 + i * 4);
+    {Array.from({ length: 9 }).map((_, i) => { const t = (f - co - i * 14) / 70; if (t < 0) return null; const y = gy + 240 - t * 380, x = gx + 650 + t * 430 + Math.sin(t * 4 + i) * 24, z = 70 + t * 60;
       if (y < 60) return null;
-      return <div key={i} style={{ position: "absolute", left: x - 50, top: y - 50, width: 100, height: 100, borderRadius: "50%", background: "rgba(62,66,72,.82)", opacity: cl(1.15 - t), display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 36, color: "#fff" }}>CO</div>; })}
+      return <div key={i} style={{ position: "absolute", left: x - z / 2, top: y - z / 2, width: z, height: z, borderRadius: "50%", background: "rgba(62,66,72,.82)", opacity: cl(1.15 - t), display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 36, color: "#fff" }}>CO</div>; })}
     <Lbl size={58} col={CREAM} style={{ position: "absolute", left: 170, top: 930, opacity: k(f, co), background: "rgba(24,26,30,.85)", padding: "8px 26px", borderRadius: 6 }}>CARBON MONOXIDE · <span style={{ color: "#ff8a6a" }}>NO SMELL, NO COLOR</span></Lbl>
   </Concrete>;
 };
@@ -560,7 +560,7 @@ const Backfeed: React.FC<P> = ({ m, dur }) => {
   const pts = [[575, 690], [575, 540], [1470, 286]];
   const seg = pts.slice(1).map((p, i) => [pts[i], p]); const tot = seg.length;
   return <AbsoluteFill style={{ background: "linear-gradient(#9fb1c3, #dde4ea 75%, #f4f6f8 75%)" }}>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 286, height: 3, background: "#333" }} />
+    <div style={{ position: "absolute", left: 1300, right: 0, top: 286, height: 3, background: "#333" }} />
     <div style={{ position: "absolute", left: 1400, right: 0, top: 230, height: 3, background: "#333" }} />
     <div style={{ position: "absolute", left: 60, top: 400, width: 600, height: 150, background: "repeating-linear-gradient(0deg,#4a3a30 0 14px,#3b2e26 14px 17px)", clipPath: "polygon(50% 0, 100% 100%, 0 100%)" }} />
     <div style={{ position: "absolute", left: 90, top: 550, width: 540, height: 260, background: "repeating-linear-gradient(0deg,#e3dccb 0 22px,#c4bba6 22px 25px)" }}>
@@ -641,7 +641,7 @@ const Decibel: React.FC<P> = () => {
       <div style={{ position: "absolute", left: 50, top: 50, width: 980, height: 490, borderRadius: "490px 490px 0 0", background: CREAM, overflow: "hidden" }}>
         {Array.from({ length: 15 }).map((_, i) => { const d = 30 + i * 5, maj = d % 10 === 0, L = maj ? 46 : 26;
           return <div key={d} style={{ position: "absolute", left: cx, top: cy - (maj ? 3 : 2), width: L, height: maj ? 6 : 4, background: INK, transformOrigin: "0 50%", transform: `rotate(${-th(d)}deg) translateX(${R - L - 10}px)` }} />; })}
-        {[30, 40, 50, 60, 70, 80, 90, 100].map((d) => { const a = th(d) * Math.PI / 180, r = R - 100;
+        {[40, 50, 60, 70, 80, 90].map((d) => { const a = th(d) * Math.PI / 180, r = R - 100;
           return <div key={d} style={{ position: "absolute", left: cx + Math.cos(a) * r, top: cy - Math.sin(a) * r, transform: "translate(-50%,-50%)", fontFamily: SERIF, fontWeight: 900, fontSize: 34, color: INK }}>{d}</div>; })}
         {(() => { const a = th(57); return <div style={{ position: "absolute", left: cx, top: cy - 9, width: 60, height: 18, background: GN, transformOrigin: "0 50%", transform: `rotate(${-a}deg) translateX(${R - 72}px)`, borderRadius: 4 }} />; })()}
         <div style={{ position: "absolute", left: cx - 6, top: cy - 430, width: 12, height: 430, background: GN, transformOrigin: "50% 100%", transform: `rotate(${90 - th(v)}deg)`, borderRadius: 6 }} />
@@ -850,7 +850,7 @@ const Ticket: React.FC<P> = ({ a }) => {
     <div style={{ position: "absolute", left: 945, top: 400, width: 30, height: 500, background: CHROME }} />
     <div style={{ position: "absolute", left: 680, top: 90, width: 560, height: 360, background: "radial-gradient(circle at 35% 25%, #ef6a55, #c0392b 45%, #7a1c12)", borderRadius: "180px 180px 60px 60px", boxShadow: "8px 12px 0 rgba(0,0,0,.3)" }}>
       <div style={{ position: "absolute", left: 110, right: 110, top: 90, height: 120, background: CREAM, borderRadius: 14, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-        <Lbl size={26} col={GN}>PLEASE</Lbl><Lbl size={40} col={INK}>TAKE A NUMBER</Lbl></div>
+        <Lbl size={26} col={GN}>PLEASE</Lbl><Lbl size={36} col={INK} style={{ whiteSpace: "nowrap", letterSpacing: 1 }}>TAKE A NUMBER</Lbl></div>
       <div style={{ position: "absolute", left: 160, right: 160, top: 290, height: 22, background: "#1a0a07", borderRadius: 11 }} />
     </div>
     <div style={{ position: "absolute", left: 790, top: 392, width: 340, height: 470 * t, overflow: "hidden", transform: "rotate(3deg)", transformOrigin: "50% 0" }}>
