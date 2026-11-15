@@ -19,7 +19,7 @@ const Body: React.FC<{ s: any; cu: Cues; esc: Record<string, React.FC<any>> }> =
     case "map": return <B.MapIowa look={L} pins={s.pins} title={s.title} dur={d} />;
     case "book": return <B.BookCTA page={s.page} qr={s.qr} look={L} head={s.head} sub={s.sub} qrAt={s.qrAt} dur={d} />;
     case "letters": return <B.Letters bg={s.bg} notes={s.notes} head={s.head} dur={d} />;
-    case "close": return <B.Close cover={s.cover} qr={s.qr} look={L} head={s.head} question={s.question} qAt={s.qAt} dur={d} />;
+    case "close": return <B.Close cover={s.cover} qr={s.qr} look={L} head={s.head} sub={s.sub} question={s.question} qAt={s.qAt} dur={d} />;
     case "photo": return <B.Photo src={s.src} seed={s.id} dur={d} />;
   }
   return null;

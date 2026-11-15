@@ -55,7 +55,8 @@ export const Patty: React.FC<{ dur: number; fCut: number }> = ({ dur, fCut }) =>
   const z = interpolate(f, [0, dur], [1.0, 1.06], CL);
   const Q = [[0, 0], [960, 0], [960, 540], [0, 540]];
   return (
-    <AbsoluteFill style={{ background: "#0d0b09", overflow: "hidden", perspective: 2200 }}>
+    <AbsoluteFill style={{ background: "#0d0b09", overflow: "hidden" }}>
+     <AbsoluteFill style={{ transform: `scale(${z})`, perspective: 2200 }}>
       {Q.map(([x, y], i) => {
         const p = interpolate(f, [fCut + i * 9, fCut + i * 9 + 18], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
         const ang = p * 180;
@@ -63,14 +64,15 @@ export const Patty: React.FC<{ dur: number; fCut: number }> = ({ dur, fCut }) =>
         const clip = `inset(${y}px ${1920 - x - 960}px ${1080 - y - 540}px ${x}px)`;
         return (
           <div key={i} style={{ ...FULL, clipPath: clip }}>
-            <div style={{ ...FULL, transformOrigin: `${x + 480}px ${y + 270}px`, transform: `rotateY(${front ? ang : ang - 180}deg) scale(${z})` }}>
+            <div style={{ ...FULL, transformOrigin: `${x + 480}px ${y + 270}px`, transform: `rotateY(${front ? ang : ang - 180}deg)` }}>
               <Img src={S(front ? "e_patty_whole" : "e_patty_cut")} style={FULL} />
             </div>
           </div>
         );
       })}
-      <div style={{ position: "absolute", left: 957, top: 0, width: 6, height: 1080, background: "#0d0b09", opacity: interpolate(f, [fCut - 6, fCut], [0, 1], CL) }} />
-      <div style={{ position: "absolute", left: 0, top: 537, width: 1920, height: 6, background: "#0d0b09", opacity: interpolate(f, [fCut - 6, fCut], [0, 1], CL) }} />
+     </AbsoluteFill>
+      <div style={{ position: "absolute", left: 957, top: 0, width: 6, height: 1080, background: "#0d0b09", opacity: interpolate(f, [fCut - 6, fCut, fCut + 50, fCut + 62], [0, 1, 1, 0], CL) }} />
+      <div style={{ position: "absolute", left: 0, top: 537, width: 1920, height: 6, background: "#0d0b09", opacity: interpolate(f, [fCut - 6, fCut, fCut + 50, fCut + 62], [0, 1, 1, 0], CL) }} />
       {tag(interpolate(f, [10, 20], [0, 1], CL) * interpolate(f, [fCut - 10, fCut], [1, 0], CL), 70, 70, "4 MINUTES · HANDS OFF", "#8E3B12")}
     </AbsoluteFill>
   );
@@ -86,7 +88,7 @@ export const Lid: React.FC<{ dur: number; fSteam: number; fWater: number }> = ({
   return (
     <AbsoluteFill style={{ background: "#0e0d0c", overflow: "hidden" }}>
       <div style={{ ...FULL, transform: `scale(${z})`, transformOrigin: "960px 600px" }}><Img src={S("e_lid_steam")} style={FULL} /></div>
-      <div style={{ ...FULL, background: `linear-gradient(to top, rgba(230,232,234,.62) 0px, rgba(230,232,234,.5) ${Math.max(0, 1080 - top - 140)}px, rgba(230,232,234,0) ${1080 - top + 80}px)` }} />
+      <div style={{ ...FULL, background: `linear-gradient(to top, rgba(230,232,234,.38) 0px, rgba(230,232,234,.26) ${Math.max(0, 1080 - top - 140)}px, rgba(230,232,234,0) ${1080 - top + 80}px)` }} />
       {drops.map((x, i) => {
         const t0 = fWater + i * 5;
         const y = interpolate(f, [t0, t0 + 40], [80 + (i % 3) * 60, 1000], { ...CL, easing: Easing.in(Easing.quad) });

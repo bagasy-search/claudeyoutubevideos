@@ -104,9 +104,11 @@ export const RecipeCard: React.FC<{ card: Card; look: Look; dur: number }> = ({ 
   const H = 92 + 96 + 110 + nL * 64 + 120;
   // márgenes calculados para que, con la escala ZC, ningún texto quede a menos de 80 px del borde
   const ZC = 1.12, M = 960 - (960 - 80) / ZC;
-  const travel = Math.max(0, H * ZC - 1080 + 110);
+  // si no entra, primero se achica (hasta 0.78) y recién después se desplaza, con margen abajo de 170 px
+  const Z0 = Math.max(0.78, Math.min(ZC, 960 / H));
+  const travel = Math.max(0, H * Z0 - 1080 + 170);
   const cy = -travel * ease((f - dur * 0.15) / (dur * 0.55));
-  const cz = ZC + 0.03 * f / Math.max(1, dur);
+  const cz = Z0 + 0.02 * f / Math.max(1, dur);
   return (
     <Paper look={look} dur={dur}>
      <AbsoluteFill style={{ transform: `translateY(${cy}px) scale(${cz})`, transformOrigin: "50% 0%" }}>
@@ -166,7 +168,7 @@ export const Carousel: React.FC<{ items: { title: string; src: string }[]; look:
   // las fotos reales de cada receta entran de a una, grandes y numeradas, y van a su lugar en una grilla 3x2
   const f = useCurrentFrame(); const N = items.length;
   // hasta 8 en 4 columnas; 9–10 en 5 columnas x 2 filas para que entren enteras
-  const cols = N <= 6 ? 3 : N <= 8 ? 4 : 5, rows = Math.ceil(N / cols);
+  const cols = N === 4 ? 4 : N <= 6 ? 3 : N <= 8 ? 4 : 5, rows = Math.ceil(N / cols);
   const W = cols === 3 ? 500 : cols === 4 ? 400 : 318, IH = Math.round(W * 0.56), CW = W + (cols === 5 ? 50 : 70), RH = IH + (cols === 5 ? 170 : 150);
   const gy0 = 205 + Math.max(0, (2 - rows) * RH / 2);
   const step = Math.max(10, Math.floor((dur * 0.62) / N));
@@ -277,7 +279,7 @@ export const Data: React.FC<{ big: string; line: string; src: string; dur: numbe
   return (<AbsoluteFill>
     <div style={{ position: "absolute", left: 50, top: 190, background: "rgba(255,250,240,0.97)", padding: "22px 38px", width: 620, boxShadow: "0 16px 40px rgba(0,0,0,0.4)", transform: `scale(${(0.6 + 0.4 * s) * out * (1 + 0.025 * Math.sin(f / 16))})`, transformOrigin: "0% 0%" }}>
       <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 20 }}>
-        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: cnt.length > 6 ? 104 : 130, color: C.red, lineHeight: 1, whiteSpace: "nowrap" }}>{cnt}</div>
+        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: cnt.length <= 6 ? 130 : cnt.length <= 9 ? 104 : 76, color: C.red, lineHeight: 1.02, whiteSpace: cnt.length <= 9 ? "nowrap" : "normal" }}>{cnt}</div>
       </div>
       <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 46, color: C.ink, marginTop: 8, lineHeight: 1.15 }}>{line.replace(/ °/g, "°")}</div>
       <div style={{ display: "inline-block", fontFamily: SANS, fontWeight: 600, fontSize: 26, color: "#fff", background: C.ink, padding: "4px 14px", borderRadius: 8, marginTop: 14 }}>{short}</div>
@@ -298,19 +300,18 @@ export const RecapLine: React.FC<{ n: number; N: number; name: string; text: str
 };
 
 // cierre: el libro cerrado sobre la mesa + QR + pregunta para los comentarios
-export const Close: React.FC<{ cover: string; qr: string; look: Look; head: string; question?: string; qAt?: number; dur: number }> = ({ cover, qr, look, head, question, qAt = 9999, dur }) => {
+export const Close: React.FC<{ cover: string; qr: string; look: Look; head: string; sub?: string; question?: string; qAt?: number; dur: number }> = ({ cover, qr, look, head, sub, question, qAt = 9999, dur }) => {
   const f = useCurrentFrame(); const inn = spring({ frame: f, fps: 30, config: { damping: 18 } }); const q = spring({ frame: f - qAt, fps: 30, config: { damping: 16 } });
   const cam = 1 + 0.12 * ease(f / Math.max(1, dur));
-  return (<AbsoluteFill style={{ overflow: "hidden" }}>
-   <AbsoluteFill style={{ transform: `scale(${cam})`, transformOrigin: "55% 40%", perspective: 2400 }}>
-    <Img src={staticFile(look.table)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.03 * f / Math.max(1, dur)})` }} />
-    <div style={{ position: "absolute", left: 300, top: 90, height: 900, width: 696, boxShadow: "0 34px 80px rgba(0,0,0,0.55)", transform: `translateY(${(1 - inn) * 1000}px) rotateY(${10 - 14 * ease(f / Math.max(1, dur))}deg) rotate(${-3 * inn}deg)` }}>
-      <Img src={staticFile(cover)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
-    <div style={{ position: "absolute", left: 1130, top: 150, width: 560, transform: `translateX(${(1 - inn) * 900}px) rotate(${2 - 2 * ease(f / Math.max(1, dur))}deg)` }}>
-      <div style={{ background: "#fff", padding: 22, boxShadow: "0 20px 50px rgba(0,0,0,0.45)" }}><Img src={staticFile(qr)} style={{ width: "100%", display: "block" }} /></div>
-      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 36, color: C.ink, background: "#FFF3D6", padding: "10px 12px", whiteSpace: "nowrap", boxShadow: "0 10px 26px rgba(0,0,0,0.4)", marginTop: 22, textAlign: "center" }}>cookbook.lorettaschurch.com</div>
-    </div>
+  // la foto del libro va a pantalla completa (no como rectángulo pegado sobre otra mesa); QR siempre dentro del cuadro
+  return (<AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
+   <AbsoluteFill style={{ transform: `scale(${cam})`, transformOrigin: "40% 55%" }}>
+    <Img src={staticFile(cover)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
    </AbsoluteFill>
+    <div style={{ position: "absolute", left: 1290, top: 110, width: 470, transform: `translateX(${(1 - inn) * 900}px) rotate(${2 - 2 * ease(f / Math.max(1, dur))}deg)` }}>
+      <div style={{ background: "#fff", padding: 20, boxShadow: "0 20px 50px rgba(0,0,0,0.45)" }}><Img src={staticFile(qr)} style={{ width: "100%", display: "block" }} /></div>
+      {sub && <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 30, color: C.ink, background: "#FFF3D6", padding: "10px 12px", whiteSpace: "nowrap", boxShadow: "0 10px 26px rgba(0,0,0,0.4)", marginTop: 20, textAlign: "center" }}>{sub}</div>}
+    </div>
     {question && <div style={{ position: "absolute", left: 140, right: 140, bottom: 70, textAlign: "center", background: "#fff", borderRadius: 34, padding: "26px 40px", fontFamily: HAND, fontWeight: 700, fontSize: 66, color: C.ink, boxShadow: "0 18px 44px rgba(0,0,0,0.45)", opacity: q > 0.02 ? 1 : 0, transform: `translateY(${(1 - q) * 300 + 6 * Math.sin(f / 20)}px) scale(${0.85 + 0.15 * q})` }}>{question}</div>}
   </AbsoluteFill>);
 };
@@ -333,7 +334,7 @@ export const Prog: React.FC<{ n: number; N: number; label: string; look: Look; d
   if (n > N) return null; const s = spring({ frame: f, fps: 30, config: { damping: 18 } });
   const out = interpolate(f, [dur - 6, dur - 1], [0, 1], { ...CL, easing: Easing.in(Easing.cubic) });
   return (<AbsoluteFill>
-    <div style={{ position: "absolute", left: 50, top: 44, padding: "16px 26px 20px", background: "rgba(20,17,13,0.86)", borderRadius: 20, transform: `translateX(${(1 - s) * -480 - out * 520}px)` }}>
+    <div style={{ position: "absolute", left: 50, top: 44, padding: "16px 26px 20px", background: "rgba(20,17,13,0.86)", borderRadius: 20, opacity: s * (1 - out), transform: `translateX(${(1 - s) * -40 - out * 40}px)` }}>
       <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 44, color: "#fff", marginBottom: 12, letterSpacing: 1 }}>{label.toUpperCase()} {n} / {N}</div>
       <div style={{ display: "flex", gap: 8 }}>{Array.from({ length: N }, (_, i) => <div key={i} style={{ width: 30, height: 14, borderRadius: 4, background: i < n ? "#E0533F" : "rgba(255,255,255,0.22)", transform: i === n - 1 ? `scaleY(${1 + 0.6 * Math.max(0, 1 - f / 14)})` : undefined }} />)}</div>
     </div></AbsoluteFill>);
