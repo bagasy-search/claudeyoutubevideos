@@ -62,7 +62,7 @@ fb14a/y/p1230.mp4
 fb14a/y/p1260.mp4
 fb14a/g/y1270.png
 fb14a/g/y1320.png
-fb14a/y/p1340.mp4
+fb14a/g/y1340.png
 fb14a/v/v1370.mp4
 fb14a/y/p1380.mp4
 fb14a/y/p1400.mp4
@@ -146,7 +146,7 @@ fb14a/g/y3830.png
 fb14a/g/y3850.png
 fb14a/y/p3920.mp4
 fb14a/y/p3970.mp4
-fb14a/y/p4000.mp4
+fb14a/g/y4000.png
 fb14a/y/p4040.mp4
 fb14a/y/p4060.mp4
 fb14a/g/y4220.png
