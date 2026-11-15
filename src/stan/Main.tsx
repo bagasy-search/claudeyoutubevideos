@@ -6,6 +6,7 @@ import { SHOTS, AVATAR, OVERLAYS, TOTAL, MIX, MANO, PLATE } from "./cues.gen";
 import * as K from "./Kit";
 import * as E from "./Escenas";
 import * as S from "./Carne";
+import * as Ob from "./Obra";
 
 export const TOTAL_FRAMES_STAN = TOTAL;
 const TR = 8;
@@ -15,7 +16,7 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   switch (s.view) {
     case "clip": return <K.Clip src={s.src} seed={seed} dur={dur} clipDur={s.clipDur} minRate={s.veo ? 0.42 : 0.6} />;
     case "photo": return <K.Photo src={s.src} seed={seed} dur={dur} />;
-    case "clips": { let a = 0; return <AbsoluteFill>{s.parts.map((x: any, i: number) => { const el = <Sequence key={i} from={a} durationInFrames={x.dur}><K.Clip src={x.src} seed={seed + i * 7} dur={x.dur} clipDur={x.clipDur} minRate={0.6} /></Sequence>; a += x.dur; return el; })}{s.tail ? <Sequence from={a} durationInFrames={dur - a}><K.Photo src={s.tailSrc} seed={seed + 3} dur={dur - a} /></Sequence> : null}</AbsoluteFill>; }
+    case "clips": { let a = 0; return <AbsoluteFill>{s.parts.map((x: any, i: number) => { const el = <Sequence key={i} from={a} durationInFrames={x.dur}><K.Clip src={x.src} seed={seed + i * 7} dur={x.dur} clipDur={x.clipDur} minRate={0.6} start={x.start} rate={x.rate} /></Sequence>; a += x.dur; return el; })}{s.tail ? <Sequence from={a} durationInFrames={dur - a}><K.Photo src={s.tailSrc} seed={seed + 3} dur={dur - a} /></Sequence> : null}</AbsoluteFill>; }
     case "album": return <K.Album src={s.src} seed={seed} dur={dur} caption={s.caption} />;
     case "polaroid": return <K.PolaroidShot src={s.src} caption={s.caption} bg={s.bg} seed={seed} dur={dur} />;
     case "card": return <K.RecipeCard {...s.p} bg={s.bg} dur={dur} />;
@@ -52,6 +53,33 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
     case "razasS": return <S.RazasS {...s.p} bg={s.bg} dur={dur} />;
     case "ribsS": return <S.RibsS {...s.p} bg={s.bg} dur={dur} />;
     case "nextS": return <S.NextS {...s.p} dur={dur} />;
+    case "chapO": return <Ob.ChapO {...s.p} dur={dur} />;
+    case "carruselO": return <Ob.CarruselO {...s.p} dur={dur} />;
+    case "dedoO": return <Ob.DedoO {...s.p} dur={dur} />;
+    case "sobreO": return <Ob.SobreO {...s.p} dur={dur} />;
+    case "tendederoO": return <Ob.TendederoO {...s.p} dur={dur} />;
+    case "estudioO": return <Ob.EstudioO {...s.p} dur={dur} />;
+    case "probetaO": return <Ob.ProbetaO {...s.p} dur={dur} />;
+    case "tablasNoO": return <Ob.TablasNoO {...s.p} dur={dur} />;
+    case "vuelveO": return <Ob.VuelveO {...s.p} dur={dur} />;
+    case "cintaO": return <Ob.CintaO {...s.p} dur={dur} />;
+    case "baldesO": return <Ob.BaldesO {...s.p} dur={dur} />;
+    case "corteO": return <Ob.CorteO {...s.p} dur={dur} />;
+    case "vueltasO": return <Ob.VueltasO {...s.p} dur={dur} />;
+    case "laminaO": return <Ob.LaminaO {...s.p} dur={dur} />;
+    case "curaO": return <Ob.CuraO {...s.p} dur={dur} />;
+    case "sieteO": return <Ob.SieteO {...s.p} dur={dur} />;
+    case "rodilloO": return <Ob.RodilloO {...s.p} dur={dur} />;
+    case "barrioO": return <Ob.BarrioO dur={dur} />;
+    case "capasO": return <Ob.CapasO {...s.p} dur={dur} />;
+    case "rajaO": return <Ob.RajaO {...s.p} dur={dur} />;
+    case "cintasO": return <Ob.CintasO {...s.p} dur={dur} />;
+    case "metroO": return <Ob.MetroO {...s.p} dur={dur} />;
+    case "cuentaO": return <Ob.CuentaO {...s.p} dur={dur} />;
+    case "premioO": return <Ob.PremioO {...s.p} dur={dur} />;
+    case "unaO": return <Ob.UnaO {...s.p} dur={dur} />;
+    case "cepilloO": return <Ob.CepilloO {...s.p} dur={dur} />;
+    case "eligeO": return <Ob.EligeO {...s.p} dur={dur} />;
     case "escena": { const C = (E as any)[s.p.name]; return C ? <C {...s.p} dur={dur} /> : null; }
     default: return null;
   }
@@ -71,13 +99,20 @@ const Enter: React.FC<{ trans: string; children: React.ReactNode; seed: number }
     const r = interpolate(f, [0, 14], [4, 0], { extrapolateRight: "clamp" });
     return <AbsoluteFill style={{ transform: `translateY(${y}%) rotate(${r}deg)`, boxShadow: "0 -20px 50px rgba(0,0,0,0.5)" }}>{children}</AbsoluteFill>;
   }
+  if (trans === "llana") { // capítulo de obra: la llana pasa de izquierda a derecha alisando el plano nuevo sobre el anterior
+    const x = interpolate(f, [0, 14], [0, 100], { extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
+    return <AbsoluteFill><AbsoluteFill style={{ clipPath: `inset(0 ${100 - x}% 0 0)` }}>{children}</AbsoluteFill>
+      {f < 15 ? <div style={{ position: "absolute", top: 0, bottom: 0, left: `calc(${x}% - 70px)`, width: 140, background: "linear-gradient(90deg, rgba(120,117,110,0) 0%, #8E8B85 35%, #B7B3AA 50%, #8E8B85 65%, rgba(120,117,110,0) 100%)", boxShadow: "0 0 40px rgba(0,0,0,0.5)" }} /> : null}</AbsoluteFill>;
+  }
   return <AbsoluteFill>{children}</AbsoluteFill>;
 };
 
 const Overlay: React.FC<{ o: any }> = ({ o }) => {
   switch (o.type) {
     case "price": return <K.Price text={o.text} dur={o.dur} />;
-    case "progress": return <S.ProgS n={o.n} N={o.N} title={o.title} dur={o.dur} unit={o.unit} />;
+    case "progress": return <Ob.ProgO n={o.n} N={o.N} title={o.title} dur={o.dur} />;
+    case "qr": return <Ob.QrO qr={o.qr} cover={o.cover} dur={o.dur} />;
+    case "split": return <Ob.SplitO src={o.src} label={o.label} dur={o.dur} />;
     case "pregunta": return <K.Pregunta text={o.text} dur={o.dur} />;
     default: return null;
   }

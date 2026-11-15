@@ -48,10 +48,10 @@ export const Photo: React.FC<{ src: string; seed: number; dur: number }> = ({ sr
 };
 
 // clip real: mudo (su ambiente de cocina va premezclado en la pista), encuadre propio
-export const Clip: React.FC<{ src: string; seed: number; dur: number; clipDur?: number; minRate?: number }> = ({ src, seed, dur, clipDur, minRate = 0.75 }) => {
+export const Clip: React.FC<{ src: string; seed: number; dur: number; clipDur?: number; minRate?: number; start?: number; rate?: number }> = ({ src, seed, dur, clipDur, minRate = 0.75, start = 0, rate: fixed }) => {
   const kb = useKB(seed, dur, true);
-  const rate = clipDur && clipDur < dur / 30 + 0.1 ? Math.max(minRate, (clipDur - 0.15) / (dur / 30)) : 1;
-  return <AbsoluteFill style={{ overflow: "hidden", background: "#111" }}><OffthreadVideo src={staticFile(src)} muted playbackRate={rate} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} /></AbsoluteFill>;
+  const rate = fixed ?? (clipDur && clipDur < dur / 30 + 0.1 ? Math.max(minRate, (clipDur - 0.15) / (dur / 30)) : 1);
+  return <AbsoluteFill style={{ overflow: "hidden", background: "#111" }}><OffthreadVideo src={staticFile(src)} muted startFrom={Math.round(start * 30)} playbackRate={rate} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} /></AbsoluteFill>;
 };
 
 // avatar con encuadres variados: plano normal / cerrado (punch) / corrido para la foto al lado (split); "mano" = vaivén lento de cámara en mano
