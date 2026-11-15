@@ -66,16 +66,10 @@ export const Snap: React.FC<{ dur: number; fSnap: number }> = ({ dur, fSnap }) =
   const after = f >= fSnap;
   const z = after ? interpolate(f, [fSnap, fSnap + 6, dur], [1.16, 1.06, 1.12], CL) : interpolate(f, [0, fSnap], [1.0, 1.08], CL);
   const gap = after ? interpolate(f, [fSnap, fSnap + 8, fSnap + 40], [0, 26, 10], CL) : 0;
-  const half = (left: boolean) => (
-    <div style={{ ...FULL, clipPath: left ? "inset(0px 960px 0px 0px)" : "inset(0px 0px 0px 960px)", transform: `translateX(${left ? -gap : gap}px) rotate(${left ? -gap / 30 : gap / 30}deg)` }}>
-      <div style={{ ...FULL, transform: `scale(${z})` }}><Img src={S("e_snap_crack")} style={FULL} /></div>
-    </div>
-  );
   return (
     <AbsoluteFill style={{ background: "#0d0b09", overflow: "hidden" }}>
       {!after && <div style={{ ...FULL, transform: `scale(${z})` }}><Img src={S("e_snap_bend")} style={FULL} /></div>}
-      {after && half(true)}
-      {after && half(false)}
+      {after && <div style={{ ...FULL, transform: `translateX(${gap * Math.sin(f * 2.1) * 0.4}px) scale(${z})` }}><Img src={S("e_snap_crack")} style={FULL} /></div>}
       {chip(interpolate(f, [8, 18], [0, 1], CL) * (after ? 0 : 1), 70, "BENDS = NOT DONE", "#9B2C1F")}
       {chip(after ? interpolate(f, [fSnap + 6, fSnap + 16], [0, 1], CL) : 0, 70, "SNAPS = DONE", "#2F6B3A")}
     </AbsoluteFill>

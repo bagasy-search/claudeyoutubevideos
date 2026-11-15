@@ -104,9 +104,11 @@ export const RecipeCard: React.FC<{ card: Card; look: Look; dur: number }> = ({ 
   const H = 92 + 96 + 110 + nL * 64 + 120;
   // márgenes calculados para que, con la escala ZC, ningún texto quede a menos de 80 px del borde
   const ZC = 1.12, M = 960 - (960 - 80) / ZC;
-  const travel = Math.max(0, H * ZC - 1080 + 110);
+  // si no entra, primero se achica (hasta 0.78) y recién después se desplaza, con margen abajo de 170 px
+  const Z0 = Math.max(0.78, Math.min(ZC, 960 / H));
+  const travel = Math.max(0, H * Z0 - 1080 + 170);
   const cy = -travel * ease((f - dur * 0.15) / (dur * 0.55));
-  const cz = ZC + 0.03 * f / Math.max(1, dur);
+  const cz = Z0 + 0.02 * f / Math.max(1, dur);
   return (
     <Paper look={look} dur={dur}>
      <AbsoluteFill style={{ transform: `translateY(${cy}px) scale(${cz})`, transformOrigin: "50% 0%" }}>
@@ -166,7 +168,7 @@ export const Carousel: React.FC<{ items: { title: string; src: string }[]; look:
   // las fotos reales de cada receta entran de a una, grandes y numeradas, y van a su lugar en una grilla 3x2
   const f = useCurrentFrame(); const N = items.length;
   // hasta 8 en 4 columnas; 9–10 en 5 columnas x 2 filas para que entren enteras
-  const cols = N <= 6 ? 3 : N <= 8 ? 4 : 5, rows = Math.ceil(N / cols);
+  const cols = N === 4 ? 4 : N <= 6 ? 3 : N <= 8 ? 4 : 5, rows = Math.ceil(N / cols);
   const W = cols === 3 ? 500 : cols === 4 ? 400 : 318, IH = Math.round(W * 0.56), CW = W + (cols === 5 ? 50 : 70), RH = IH + (cols === 5 ? 170 : 150);
   const gy0 = 205 + Math.max(0, (2 - rows) * RH / 2);
   const step = Math.max(10, Math.floor((dur * 0.62) / N));
@@ -277,7 +279,7 @@ export const Data: React.FC<{ big: string; line: string; src: string; dur: numbe
   return (<AbsoluteFill>
     <div style={{ position: "absolute", left: 50, top: 190, background: "rgba(255,250,240,0.97)", padding: "22px 38px", width: 620, boxShadow: "0 16px 40px rgba(0,0,0,0.4)", transform: `scale(${(0.6 + 0.4 * s) * out * (1 + 0.025 * Math.sin(f / 16))})`, transformOrigin: "0% 0%" }}>
       <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 20 }}>
-        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: cnt.length > 6 ? 104 : 130, color: C.red, lineHeight: 1, whiteSpace: "nowrap" }}>{cnt}</div>
+        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: cnt.length <= 6 ? 130 : cnt.length <= 9 ? 104 : 76, color: C.red, lineHeight: 1.02, whiteSpace: cnt.length <= 9 ? "nowrap" : "normal" }}>{cnt}</div>
       </div>
       <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 46, color: C.ink, marginTop: 8, lineHeight: 1.15 }}>{line.replace(/ °/g, "°")}</div>
       <div style={{ display: "inline-block", fontFamily: SANS, fontWeight: 600, fontSize: 26, color: "#fff", background: C.ink, padding: "4px 14px", borderRadius: 8, marginTop: 14 }}>{short}</div>
