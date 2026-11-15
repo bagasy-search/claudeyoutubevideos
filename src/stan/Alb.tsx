@@ -70,8 +70,8 @@ export const FotoFija: React.FC<{ src?: string; cam?: Cam; tint?: number; childr
 };
 // overrides por plano (coordenadas leídas con la rejilla sobre la foto de ese plano)
 export const OVA: Record<number, any> = {
-  110: { label: { x: 745, y: 732, w: 92, h: 84 }, cam: { x: 792, y: 720, s: 2.3, a: 0, b: 70 } },
-  720: { at: { x: 1200, y: 716 }, tip: { x: 1197, y: 664 }, cam: { x: 1150, y: 640, s: 1.9, a: 0, b: 40 } },
+  110: { label: { x: 745, y: 732, w: 92, h: 84 }, cam: { x: 792, y: 770, s: 3.1, a: 0, b: 60 } },
+  720: { at: { x: 1200, y: 716 }, tip: { x: 1197, y: 664 }, cam: { x: 1200, y: 700, s: 3.2, a: 0, b: 36 } },
   940: { tape: { x0: 60, x1: 1120, y: 940, up: 560 } },
   1080: { side: "right" },
   1120: { botA: { x: 405, y: 200, t: "CLORO" }, botB: { x: 1590, y: 220, t: "VINAGRE" }, mid: { x: 1000, y: 560 } },
@@ -149,7 +149,7 @@ export const DosA: React.FC<{ title?: string; a: { t: string; s?: string }; b: {
       <AbsoluteFill style={{ background: "radial-gradient(ellipse 420px 300px at 50% 50%, rgba(0,0,0,.55), transparent)", opacity: cl((f - at) / 8) }} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", padding: 60, textAlign: "center", opacity: cl((f - at) / 8), transform: `translateY(${(1 - sp(f, at, 14)) * 40}px)` }}>
         <Big size={x.t.length > 10 ? 110 : 160} col={col} edge="#111" style={{ transform: `scale(${0.6 + 0.4 * sp(f, at, 10)})` }}>{x.t}</Big>
-        {x.s ? <div style={{ marginTop: 34, opacity: cl((f - at - 10) / 8), transform: `translateY(${(1 - sp(f, at + 10, 14)) * 30}px)` }}><Cinta size={70}>{x.s}</Cinta></div> : null}
+        {x.s ? <div style={{ marginTop: 34, opacity: cl((f - at - 10) / 8), transform: `translateY(${(1 - sp(f, at + 10, 14)) * 30}px)` }}><Cinta size={86}>{x.s}</Cinta></div> : null}
       </AbsoluteFill>
     </div>);
   return (
@@ -181,7 +181,7 @@ export const CadenaA: React.FC<{ steps: string[]; marks: number[]; bg?: string; 
   let cur = 0; for (let i = 0; i < n; i++) if (f >= M[i]) cur = i;
   const txt = (i: number) => { const a = sp(f, M[i], 13); const out = i < cur ? cl((f - M[i + 1]) / 8) : 0;
     return <div key={i} style={{ position: "absolute", left: 0, right: 0, top: 0, opacity: cl(a * 1.5) * (1 - out), transform: `translateY(${(1 - a) * 70 - out * 60}px)` }}>
-      <div style={{ fontFamily: BOLD, fontWeight: 900, fontSize: 40, letterSpacing: 6, color: CU.maiz, textShadow: "0 3px 10px #000" }}>{i + 1} DE {n}</div>
+      <div style={{ fontFamily: BOLD, fontWeight: 900, fontSize: 52, letterSpacing: 6, color: CU.maiz, textShadow: "0 3px 10px #000" }}>{i + 1} DE {n}</div>
       <Big size={steps[i].length > 22 ? 84 : 112} col={CU.cal} edge="#111" style={{ whiteSpace: "normal", lineHeight: 1.05, marginTop: 10 }}>{steps[i]}</Big>
     </div>; };
   if (!loop) return (
@@ -189,24 +189,19 @@ export const CadenaA: React.FC<{ steps: string[]; marks: number[]; bg?: string; 
       <div style={{ position: "absolute", left: 160, right: 160, top: 400, height: 300, textAlign: "center" }}>{steps.map((_, i) => (i === cur || i === cur - 1) && f >= M[i] ? txt(i) : null)}</div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 800, display: "flex", justifyContent: "center", gap: 26 }}>{steps.map((_, i) => <div key={i} style={{ width: 120, height: 14, borderRadius: 7, background: f >= M[i] ? CU.maiz : "rgba(255,255,255,.25)", boxShadow: "0 2px 8px rgba(0,0,0,.6)" }} />)}</div>
     </AbsoluteFill>);
-  // corte del muro: ladrillo con revoque a la derecha, tierra abajo; la gota recorre P y en el último paso se vuelve sal
-  const P = n >= 4 ? [[300, 900], [480, 620], [700, 400], [770, 400]] : [[300, 900], [480, 620], [700, 400]];
-  const ci = cur; const t = ease(cl((f - M[ci]) / 26)); const a = P[Math.max(0, ci - 1)], b = P[ci];
-  const px = ci === 0 ? b[0] : a[0] + (b[0] - a[0]) * t, py = ci === 0 ? b[1] : a[1] + (b[1] - a[1]) * t;
-  const salt = ci === n - 1 ? t : 0; const dryS = n >= 4 && ci >= 2 ? (ci === 2 ? t : 1) : 0;
+  // sobre la pared real: la humedad sube desde el piso (pasos 1-2), se seca (3) y la sal de la foto se enciende blanca (4)
+  const st = (i: number) => (i < n && f >= M[i] ? ease(cl((f - M[i]) / 24)) : 0);
+  const wet = n >= 4 ? Math.max(0, st(0) * 0.45 + st(1) * 0.55 - st(2)) : st(0) * 0.5 + st(1) * 0.5 - st(2) * 0.4;
+  const salt = st(n - 1);
   return (
-    <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={13} dur={dur} /><AbsoluteFill style={{ background: "rgba(8,12,18,.45)" }} />
-      <div style={{ position: "absolute", left: 120, top: 120, width: 720, height: 860, transform: `translateX(${(1 - sp(f, 0, 16)) * -900}px)` }}>
-        <div style={{ position: "absolute", left: 0, top: 0, width: 640, height: 760, borderRadius: 6, overflow: "hidden", boxShadow: SH, background: "#C9C0B0" }}>
-          {Array.from({ length: 11 }, (_, r) => Array.from({ length: 5 }, (_, c) => <div key={r + "-" + c} style={{ position: "absolute", left: c * 180 - (r % 2 ? 90 : 0), top: r * 70, width: 172, height: 62, borderRadius: 3, background: `linear-gradient(${(r * 37 + c * 53) % 180}deg, #B4532A, #9C4524)` }} />))}
-          <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 430 - 230 * dryS, background: "linear-gradient(0deg, rgba(31,90,140,.55), rgba(31,90,140,0))" }} />
-        </div>
-        <div style={{ position: "absolute", left: 640, top: 0, width: 80, height: 760, background: "linear-gradient(90deg,#E8DFCB,#D6CAB0)", boxShadow: "6px 0 18px rgba(0,0,0,.5)" }} />
-        <div style={{ position: "absolute", left: -40, top: 760, width: 820, height: 100, background: "linear-gradient(180deg,#6B4A2E,#4A3220)", borderRadius: 4 }} />
-        {Array.from({ length: 14 }, (_, k) => { const r = (16 + (k * 7) % 22) * salt; return <div key={k} style={{ position: "absolute", left: 712 + ((k * 29) % 40) - r / 2, top: 230 + ((k * 47) % 120) - r / 2, width: r, height: r * 1.3, borderRadius: "40% 55% 45% 60%", background: "radial-gradient(circle at 40% 35%, #FFFFFF, #F1EFEA 55%, #D9D4C8)", boxShadow: "1px 2px 3px rgba(0,0,0,.35)" }} />; })}
-        <div style={{ position: "absolute", left: px - 120 - 26, top: py - 120 - 30, width: 52 * (1 - salt * 0.8), height: 62 * (1 - salt * 0.8), borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%", background: "radial-gradient(circle at 38% 35%, #E6F4FF, #4C93D0 55%, #1F5A8C)", boxShadow: "0 6px 14px rgba(0,0,0,.45)", opacity: 1 - salt }} />
-      </div>
-      <div style={{ position: "absolute", left: 960, right: 80, top: 380, height: 360 }}>{steps.map((_, i) => (i === cur || i === cur - 1) && f >= M[i] ? txt(i) : null)}</div>
+    <AbsoluteFill style={{ opacity: o }}>
+      <FotoFija src={bg} tint={0.18} cam={{ x: 700, y: 560, s: 1.12, a: 0, b: dur }}>
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 1080 * Math.max(0, wet), background: "linear-gradient(0deg, rgba(20,60,110,.62), rgba(20,60,110,.35) 70%, rgba(20,60,110,0))", mixBlendMode: "multiply" }} />
+        {wet > 0.05 ? <div style={{ position: "absolute", left: 0, right: 0, bottom: 1080 * wet - 30, height: 60, background: "linear-gradient(0deg, rgba(20,60,110,0), rgba(20,60,110,.45), rgba(20,60,110,0))", mixBlendMode: "multiply" }} /> : null}
+        <div style={{ position: "absolute", left: 0, top: 120, width: 1300, height: 860, background: "radial-gradient(ellipse 620px 380px at 45% 50%, rgba(255,255,255,.75), rgba(255,255,255,0) 70%)", mixBlendMode: "screen", opacity: salt }} />
+      </FotoFija>
+      <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(0,0,0,0) 55%, rgba(0,0,0,.6) 80%)" }} />
+      <div style={{ position: "absolute", left: 1180, right: 60, top: 380, height: 360 }}>{steps.map((_, i) => (i === cur || i === cur - 1) && f >= M[i] ? txt(i) : null)}</div>
     </AbsoluteFill>
   );
 };
@@ -236,11 +231,11 @@ export const GotaA: React.FC<{ label: string; bg?: string; dur: number; at?: { x
         {f >= 6 && f < hit ? <div style={{ position: "absolute", left: t0.x - 5, top: y, width: 10, height: 14, borderRadius: "50% 50% 50% 50% / 62% 62% 38% 38%", background: "radial-gradient(circle at 40% 35%, #FFFFFF, #CFE2EE 60%, #9DB8C9)", boxShadow: "0 2px 3px rgba(0,0,0,.35)" }} /> : null}
         {f >= hit ? <div style={{ position: "absolute", left: at.x - 34, top: at.y - 9, width: 68, height: 18, borderRadius: "50%", background: "radial-gradient(ellipse at 50% 45%, rgba(255,255,255,.85), rgba(225,232,236,.55) 60%, rgba(200,210,215,0) 100%)", transform: `scale(${0.3 + 0.9 * cl((f - hit) / 30)})` }} /> : null}
         {Array.from({ length: 46 }, (_, i) => { const st = hit + 2 + (i % 16) * 2.2; if (f < st) return null; const life = ((f - st) % 34) / 34; const sp2 = 0.4 + 0.6 * cl((f - hit) / 40);
-          const x = at.x + (((i * 37) % 64) - 32) * sp2; const r = 2.5 + (i % 5) * 1.6; const yy = at.y - 2 + (((i * 13) % 10) - 5) * 0.8 - life * (8 + (i % 4) * 4);
+          const x = at.x + (((i * 37) % 80) - 40) * sp2; const r = 3.5 + (i % 5) * 2.2; const yy = at.y - 2 + (((i * 13) % 10) - 5) * 0.8 - life * (8 + (i % 4) * 4);
           return <div key={i} style={{ position: "absolute", left: x - r, top: yy - r, width: r * 2 * (1 + life * 0.6), height: r * 2 * (1 + life * 0.6), borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, rgba(255,255,255,.98), rgba(255,255,255,.15) 65%)", border: "0.8px solid rgba(255,255,255,.95)", boxShadow: "0 1px 2px rgba(0,0,0,.25)", opacity: life > 0.85 ? (1 - life) * 6 : 1 }} />; })}
       </FotoFija>
       <div style={{ position: "absolute", left: 90, bottom: 110, opacity: cl((f - hit - 10) / 8), transform: `translateY(${(1 - sp(f, hit + 10, 12)) * 60}px)` }}>
-        <Big size={150} col={CU.maiz} edge="#3A2000">{w1}</Big>
+        <Big size={120} col={CU.maiz} edge="#3A2000">{w1}</Big>
         {w2 ? <div style={{ marginTop: 22, opacity: cl((f - hit - 24) / 8) }}><Cinta size={66}>= {w2}</Cinta></div> : null}
       </div>
     </AbsoluteFill>
@@ -263,7 +258,7 @@ export const MetroA: React.FC<{ big: string; sub?: string; bg?: string; dur: num
     </FotoFija>
       <div style={{ position: "absolute", left: 90, top: 110, opacity: cl((f - 10) / 8), transform: `translateY(${(1 - sp(f, 10, 13)) * -50}px)` }}>
         <Big size={big.length > 16 ? 112 : 140} col={CU.cal} edge="#111">{big}</Big>
-        {sub ? <div style={{ marginTop: 28, opacity: cl((f - 40) / 8) }}><Cinta size={72}>{sub}</Cinta></div> : null}
+        {sub ? <div style={{ marginTop: 28, opacity: cl((f - 40) / 8) }}><Cinta size={88}>{sub}</Cinta></div> : null}
       </div>
     </AbsoluteFill>
   );
@@ -272,16 +267,16 @@ export const MetroA: React.FC<{ big: string; sub?: string; bg?: string; dur: num
 // ---------- (9) ticket de ferretería que se imprime renglón por renglón (de costado, nunca encima de la persona)
 export const TicketA: React.FC<{ rows: { name: string; price: string; f: number }[]; total?: string; ft?: number; head?: string; bg?: string; dur: number; side?: string }> = ({ rows, total, ft = 999, head = "FERRETERÍA DE LA ESQUINA", bg, dur, side }) => {
   const f = useCurrentFrame(); const o = fade(f, dur); const last = Math.max(...rows.map((r) => r.f), total ? ft : 0);
-  const shown = rows.filter((r) => f >= r.f).length + (total && f >= ft ? 1.5 : 0); const h = 190 + shown * 104; const W = side ? 740 : 860;
+  const shown = rows.filter((r) => f >= r.f).length + (total && f >= ft ? 1.5 : 0); const h = 190 + shown * 104; const W = side ? 820 : 900;
   const k = sp(f, 0, 15); const teeth = Array.from({ length: 34 }, (_, i) => `${(i * 100) / 33}% ${i % 2 ? "100%" : "calc(100% - 10px)"}`).reverse().join(", ");
   return (
     <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={29} dur={dur} />
-      <div style={{ position: "absolute", top: 90, left: side === "right" ? 1920 - W - 50 : side === "left" ? 50 : 960 - W / 2, width: W, transform: `translateY(${(1 - k) * -500}px) rotate(${side ? 1.5 : -1}deg)` }}>
+      <div style={{ position: "absolute", top: 90, left: side === "right" ? 1920 - W - 30 : side === "left" ? 50 : 960 - W / 2, width: W, opacity: cl(k * 1.6), transform: `translateY(${(1 - k) * -70}px) rotate(${side ? 1.5 : -1}deg)` }}>
         <div style={{ height: interpolate(f, [0, last + 10], [170, h], CL), overflow: "hidden", background: "#FBFBF7", boxShadow: SH, padding: "30px 40px", fontFamily: "'Courier New', monospace", color: "#222", clipPath: `polygon(0 0, 100% 0, ${teeth})` }}>
           <div style={{ textAlign: "center", fontSize: 36, fontWeight: 700, letterSpacing: 2 }}>{head}</div>
           <div style={{ borderBottom: "3px dashed #999", margin: "14px 0 16px" }} />
-          {rows.map((r, i) => f >= r.f ? <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 20, fontSize: side ? 36 : 42, whiteSpace: "nowrap", fontWeight: 700, minHeight: 104, alignItems: "center", lineHeight: 1.05, opacity: cl((f - r.f) / 5) }}><span>{r.name}</span><span style={{ whiteSpace: "nowrap" }}>{r.price}</span></div> : null)}
-          {total && f >= ft ? <><div style={{ borderBottom: "3px dashed #999", margin: "6px 0 14px" }} /><div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", fontSize: 50, fontWeight: 700 }}><span style={{ marginRight: 24 }}>TOTAL</span><span style={{ color: CU.chile, fontSize: side ? 50 : 60, transform: `scale(${0.6 + 0.4 * sp(f, ft, 9)})`, display: "inline-block", whiteSpace: "nowrap" }}>{total}</span></div></> : null}
+          {rows.map((r, i) => f >= r.f ? <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 20, fontSize: side ? 40 : 46, whiteSpace: "nowrap", fontWeight: 700, minHeight: 104, alignItems: "center", lineHeight: 1.05, opacity: cl((f - r.f) / 5) }}><span>{r.name}</span><span style={{ whiteSpace: "nowrap" }}>{r.price}</span></div> : null)}
+          {total && f >= ft ? <><div style={{ borderBottom: "3px dashed #999", margin: "6px 0 14px" }} /><div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", fontSize: 50, fontWeight: 700 }}><span style={{ marginRight: 24 }}>TOTAL</span><span style={{ color: CU.chile, fontSize: side ? 62 : 68, transform: `scale(${0.6 + 0.4 * sp(f, ft, 9)})`, display: "inline-block", whiteSpace: "nowrap" }}>{total}</span></div></> : null}
         </div>
       </div>
     </AbsoluteFill>
@@ -300,7 +295,6 @@ export const PrecioA: React.FC<{ item: string; price: string; bg?: string; dur: 
             <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 36, color: "#C0201A", lineHeight: 1 }}>{amt}</div>
           </div>
         </FotoFija>
-        <div style={{ position: "absolute", left: 80, top: 90, opacity: cl((f - 8) / 8), transform: `translateX(${(1 - sp(f, 8, 14)) * -120}px)` }}><Cinta size={66} rot={-2}>{item}</Cinta></div>
       </AbsoluteFill>); }
   const k = sp(f, 0, 7); const sw = 9 * Math.exp(-f / 20) * Math.cos(f / 4);
   return (
@@ -322,13 +316,13 @@ export const PrecioA: React.FC<{ item: string; price: string; bg?: string; dur: 
 export const PeligroA: React.FC<{ line: string; sub?: string; stamp?: string; fs?: number; bg?: string; dur: number; botA?: { x: number; y: number; t: string }; botB?: { x: number; y: number; t: string }; mid?: { x: number; y: number } }> = ({ line, sub, stamp, fs = 26, bg, dur, botA, botB, mid }) => {
   const f = useCurrentFrame(); const o = fade(f, dur);
   if (botA && botB && mid) { const g = ease(cl((f - 10) / 30));
-    const tag = (b: { x: number; y: number; t: string }, at: number) => <div style={{ position: "absolute", left: b.x, top: b.y, transform: `translate(-50%, -100%) translateY(${(1 - sp(f, at, 12)) * -80}px)`, opacity: cl((f - at) / 6) }}><Cinta size={64} rot={b.x < 960 ? -3 : 3} col={CU.chile}>{b.t}</Cinta></div>;
+    const tag = (b: { x: number; y: number; t: string }, at: number) => <div style={{ position: "absolute", left: b.x, top: b.y, transform: `translate(-50%, -100%) translateY(${(1 - sp(f, at, 12)) * -80}px)`, opacity: cl((f - at) / 6) }}><Cinta size={80} rot={b.x < 960 ? -3 : 3} col={CU.chile}>{b.t}</Cinta></div>;
     const eq = line.split("=").pop()?.trim() ?? "GAS";
     return (
       <AbsoluteFill style={{ opacity: o }}>
         <FotoFija src={bg} tint={0.1 + 0.15 * g} cam={{ x: mid.x, y: 480, s: 1.08, a: 0, b: dur }}>
           {Array.from({ length: 7 }, (_, i) => { const ph = ((f * 0.9 + i * 31) % 90) / 90; const x = mid.x + (i - 3) * 150 * g; const yy = mid.y - ph * 360 * g;
-            return <div key={i} style={{ position: "absolute", left: x - 230, top: yy - 150, width: 460, height: 300, borderRadius: "50%", background: "radial-gradient(ellipse at 50% 50%, rgba(196,214,92,.55), rgba(176,196,70,.25) 45%, rgba(170,190,60,0) 70%)", opacity: g * (ph < 0.15 ? ph / 0.15 : 1 - (ph - 0.15) / 0.85) }} />; })}
+            return <div key={i} style={{ position: "absolute", left: x - 230, top: yy - 150, width: 460, height: 300, borderRadius: "50%", background: "radial-gradient(ellipse at 50% 50%, rgba(196,214,92,.8), rgba(176,196,70,.45) 45%, rgba(170,190,60,0) 70%)", opacity: g * (ph < 0.15 ? ph / 0.15 : 1 - (ph - 0.15) / 0.85) }} />; })}
         </FotoFija>
         {tag(botA, 2)}{tag(botB, 10)}
         <div style={{ position: "absolute", left: 0, right: 0, top: 330, textAlign: "center", opacity: cl((f - 18) / 6), transform: `scale(${0.7 + 0.3 * sp(f, 18, 10)})` }}><Big size={170} col={CU.cal} edge="#3F4A08">= {eq}</Big></div>
@@ -355,7 +349,7 @@ export const RelojA: React.FC<{ big: string; sweep?: number; chips?: { t: string
   return (
     <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={41} dur={dur} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "row", gap: 110 }}>
-        <div style={{ position: "relative", width: 560, height: 560, borderRadius: "50%", background: `conic-gradient(rgba(240,122,26,.9) 0 ${a}deg, #FFFDF7 ${a}deg 360deg)`, border: "24px solid #E9EDF0", boxShadow: SH, transform: `scale(${0.6 + 0.4 * k})`, opacity: cl(k * 1.5) }}>
+        <div style={{ position: "relative", width: 560, height: 560, borderRadius: "50%", background: `conic-gradient(${c ? (c.ok ? "rgba(63,174,126,.92)" : "rgba(232,67,46,.9)") : "rgba(240,122,26,.9)"} 0 ${a}deg, #FFFDF7 ${a}deg 360deg)`, border: "24px solid #E9EDF0", boxShadow: SH, transform: `scale(${0.6 + 0.4 * k})`, opacity: cl(k * 1.5) }}>
           {Array.from({ length: 12 }, (_, i) => <div key={i} style={{ position: "absolute", left: 252, top: 6, width: 8, height: 34, background: CU.tinta, transformOrigin: "4px 250px", transform: `rotate(${i * 30}deg)` }} />)}
           {[0, 15, 30, 45].map((m, i) => <div key={m} style={{ position: "absolute", left: 256 + Math.sin((i * Math.PI) / 2) * 190 - 40, top: 256 - Math.cos((i * Math.PI) / 2) * 190 - 26, width: 80, textAlign: "center", fontFamily: BOLD, fontWeight: 800, fontSize: 40, color: CU.tinta }}>{m}</div>)}
           <div style={{ position: "absolute", left: 248, top: 50, width: 16, height: 228, background: CU.tinta, borderRadius: 8, transformOrigin: "8px 206px", transform: `rotate(${a}deg)` }} />
@@ -364,7 +358,7 @@ export const RelojA: React.FC<{ big: string; sweep?: number; chips?: { t: string
         <div style={{ width: 640, height: 420, position: "relative" }}>
           {c ? <div key={ci} style={{ position: "absolute", left: 0, top: 40, transform: `translateY(${(1 - sp(f, c.f, 12)) * 60}px)`, opacity: cl((f - c.f) / 6) }}>
             <Big size={150} col={CU.cal} edge="#111">{c.t}</Big>
-            <div style={{ marginTop: 30, marginLeft: 10 }}><Sello txt={c.ok ? "SÍ" : "NO"} col={c.ok ? CU.verde : CU.chile} f={f} at={c.f + 14} size={130} rot={c.ok ? -4 : -8} /></div>
+            <div style={{ marginTop: 30, marginLeft: 10 }}><Sello txt={c.ok ? "SÍ" : "NO"} col={c.ok ? CU.verde : CU.chile} f={f} at={c.f + 14} size={170} rot={c.ok ? -4 : -8} /></div>
           </div> : <div style={{ position: "absolute", left: 0, top: 120, opacity: cl((f - 8) / 8) }}><Big size={170} col={CU.cal} edge="#111">{big}</Big></div>}
         </div>
       </AbsoluteFill>
@@ -430,7 +424,7 @@ export const SuperficieA: React.FC<{ mats: { mat: string; name: string; f: numbe
         <div style={{ display: "flex", gap: 34 }}>
           {mats.map((m, i) => { const a = sp(f, m.f, 14); return <div key={i} style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center", gap: 18, opacity: cl(a * 1.5), transform: `translateY(${(1 - a) * 60}px)` }}>
             <Muestra mat={m.mat} w={w} h={h} />
-            <div style={{ fontFamily: BOLD, fontWeight: 900, fontSize: n > 3 ? 58 : 66, color: CU.cal, textShadow: "0 4px 12px #000, 0 0 3px #000", whiteSpace: "nowrap" }}>{m.name}</div>
+            <div style={{ fontFamily: BOLD, fontWeight: 900, fontSize: n > 3 ? 66 : 74, color: CU.cal, textShadow: "0 4px 12px #000, 0 0 3px #000", whiteSpace: "nowrap" }}>{m.name}</div>
             {verdict.length <= 4 ? <div style={{ position: "absolute", left: 0, right: 0, top: h / 2 - 70, textAlign: "center" }}><Sello txt={verdict} col={col} f={f} at={vf + i * 5} size={n > 3 ? 96 : 120} rot={-10 + (i % 2) * 6} /></div> : null}
           </div>; })}
         </div>
@@ -500,8 +494,8 @@ export const CtaA: React.FC<{ kind: string; lines: string[]; marks: number[]; bg
         <div style={{ opacity: cl((f - 36) / 8) }}><Cinta size={60}>{lines[0]}</Cinta></div>
       </AbsoluteFill></AbsoluteFill>; }
   return <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={67} dur={dur} />
-    <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", gap: 30 }}>
-      <div style={{ opacity: cl(f / 8), transform: `translateY(${(1 - sp(f, 0, 13)) * -60}px)` }}><Cinta size={70} rot={-2}>cuéntame en los comentarios</Cinta></div>
+    <AbsoluteFill style={{ alignItems: "center", justifyContent: "flex-start", paddingTop: 110, gap: 40 }}>
+      <div style={{ opacity: cl(f / 8), transform: `translateY(${(1 - sp(f, 0, 13)) * -60}px)` }}><Cinta size={86} rot={-2}>cuéntame en los comentarios</Cinta></div>
       {lines.map((l, i) => { const a = sp(f, marks[i], 12); return <div key={i} style={{ position: "relative", maxWidth: 1500, padding: "40px 70px", background: "#FFFDF7", borderRadius: 46, boxShadow: SH, fontFamily: BOLD, fontWeight: 900, fontSize: 88, color: CU.tinta, opacity: cl(a * 1.5), transform: `translateY(${(1 - a) * 160}px) scale(${0.7 + 0.3 * a})` }}>
         {l.split(" ").map((w, j) => <span key={j} style={{ color: /^[¿¡]?[A-ZÁÉÍÓÚÑ]{4,}[?!]?$/.test(w) ? CU.naranja : undefined }}>{w} </span>)}
         <div style={{ position: "absolute", left: 90, bottom: -40, width: 70, height: 50, background: "#FFFDF7", clipPath: "polygon(0 0, 100% 0, 10% 100%)" }} />
