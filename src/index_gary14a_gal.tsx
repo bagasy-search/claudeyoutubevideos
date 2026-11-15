@@ -14,6 +14,6 @@ const OV: [string, React.ReactNode][] = [
 const N = C.length + OV.length;
 const Gal: React.FC = () => <AbsoluteFill style={{ background: "#000" }}>
   {C.map((c, i) => <Sequence key={c} from={i * 100} durationInFrames={100}><CompC14a s={{ comp: c, m: [6, 14, 22, 30, 38, 46, 52, 56, 60, 64] }} dur={80} /></Sequence>)}
-  {OV.map(([k, el], j) => <Sequence key={k} from={(C.length + j) * 100} durationInFrames={100}><AbsoluteFill><Img src={staticFile(k === "door" || k === "clip" ? AV : BG)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>{el}</Sequence>)}
+  {OV.map(([k, el], j) => <Sequence key={k} from={(C.length + j) * 100} durationInFrames={100}><AbsoluteFill><Img src={staticFile(k === "door" || k === "clip" ? AV : BG)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: k === "door" ? "translateX(-24%)" : "none" }} /></AbsoluteFill>{el}</Sequence>)}
 </AbsoluteFill>;
 registerRoot(() => <Composition id="Gal" component={Gal} durationInFrames={N * 100} fps={30} width={1920} height={1080} />);

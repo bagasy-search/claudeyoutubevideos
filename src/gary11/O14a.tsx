@@ -27,13 +27,15 @@ export const FuseStrip: React.FC<{ n: number; dur: number }> = ({ n, dur }) => {
 // MEJORA 5 · transición de capítulo: un caño de EMT pasa de lado a lado tapando el corte, con el cable amarillo tirado detrás
 export const Conduit: React.FC<{ dur: number }> = ({ dur }) => {
   const f = useCurrentFrame(); const t = interpolate(f, [0, dur], [-0.2, 1.2], { ...CL, easing: Easing.inOut(Easing.quad) });
-  const x = -2400 + t * 4300;
+  const x = -2400 + t * 4300; const BR = "repeating-linear-gradient(0deg, rgba(255,255,255,.05) 0 1px, rgba(0,0,0,.06) 1px 3px)";
   return <AbsoluteFill style={{ pointerEvents: "none" }}>
-    <div style={{ position: "absolute", left: x - 1900, top: 0, width: 1900, height: 1080, background: "#2a2622" }} />
-    <div style={{ position: "absolute", left: x, top: 0, width: 520, height: 1080, background: "linear-gradient(90deg,#6f777e 0%,#d9dee2 30%,#a3abb2 55%,#5b636a 100%)" }}>
-      {[180, 520, 860].map((y) => <div key={y} style={{ position: "absolute", left: -10, right: -10, top: y, height: 36, background: "linear-gradient(#c9ced3,#7d858c)", borderRadius: 4 }} />)}
-    </div>
+    <div style={{ position: "absolute", left: x - 1900, top: 0, width: 1900, height: 1080, background: `${BR}, linear-gradient(135deg,#4a5056,#2c3035)` }} />
     <div style={{ position: "absolute", left: x - 1900, top: 520, width: 1900, height: 40, background: YEL, borderTop: "4px solid #b8901a", borderBottom: "4px solid #b8901a" }} />
+    <div style={{ position: "absolute", left: x, top: 0, width: 520, height: 1080, background: `repeating-linear-gradient(0deg, rgba(255,255,255,.06) 0 2px, rgba(0,0,0,.05) 2px 5px), linear-gradient(90deg,#5b636a 0%,#a3abb2 18%,#f4f6f8 30%,#c4cacf 40%,#8d959c 70%,#4f565c 100%)` }}>
+      <div style={{ position: "absolute", left: 300, top: 300, fontFamily: SANS, fontWeight: 800, fontSize: 30, color: "rgba(40,44,48,.55)", letterSpacing: 6, transform: "rotate(90deg)", transformOrigin: "0 0", whiteSpace: "nowrap" }}>EMT · 3/4 IN · UL</div>
+      {[160, 820].map((y) => <div key={y} style={{ position: "absolute", left: -18, right: -18, top: y, height: 90, background: "linear-gradient(90deg,#6d757b,#e9edf0 30%,#b0b7bd 55%,#5d666e)", borderRadius: 6, borderTop: "3px solid #4f565c", borderBottom: "3px solid #4f565c" }}>
+        <div style={{ position: "absolute", left: 230, top: 24, width: 42, height: 42, borderRadius: "50%", background: "radial-gradient(circle at 35% 35%, #f4f4f4, #8a8f94 60%, #50555a)" }}><div style={{ position: "absolute", left: 6, right: 6, top: 18, height: 6, background: "#3e4347" }} /></div></div>)}
+    </div>
   </AbsoluteFill>;
 };
 
@@ -41,9 +43,9 @@ export const Conduit: React.FC<{ dur: number }> = ({ dur }) => {
 export const Patch: React.FC<{ text: string; sub: string; dur: number }> = ({ text, sub, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 12, 14), s = 0.6 + 0.4 * ou(f / 14);
   return <div style={{ position: "absolute", left: 90, bottom: 90, opacity: o, transform: `scale(${s}) rotate(-3deg)`, transformOrigin: "0 100%" }}>
-    <div style={{ width: 460, height: 210, borderRadius: "50%", background: "#1f3a5f", border: "10px solid #e9dcc4", outline: "4px dashed #e9dcc4", outlineOffset: -24, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", boxShadow: "6px 10px 0 rgba(0,0,0,.35)" }}>
+    <div style={{ width: 620, height: 230, borderRadius: "50%", background: "#1f3a5f", border: "10px solid #e9dcc4", outline: "4px dashed #e9dcc4", outlineOffset: -24, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", boxShadow: "6px 10px 0 rgba(0,0,0,.35)" }}>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: "#f6efe0", letterSpacing: 6 }}>{text}</div>
-      <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 24, color: "#e9dcc4", letterSpacing: 3 }}>{sub}</div>
+      <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 22, color: "#e9dcc4", letterSpacing: 2, whiteSpace: "nowrap" }}>{sub}</div>
     </div>
   </div>;
 };
@@ -51,7 +53,7 @@ export const Patch: React.FC<{ text: string; sub: string; dur: number }> = ({ te
 // MEJORA 4 · pantalla partida: el avatar se corre a la izquierda y a la derecha se abre la puerta del tablero con la foto adentro
 export const PanelDoor: React.FC<{ src: string; seed: number; dur: number; label?: string }> = ({ src, seed, dur, label }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 14, 12); const kb = useKB(seed, dur);
-  return <div style={{ position: "absolute", left: 1010, top: 90, width: 840, height: 900, perspective: 1800 }}>
+  return <div style={{ position: "absolute", left: 1100, top: 110, width: 760, height: 860, perspective: 1800 }}>
     <div style={{ position: "absolute", inset: 0, background: "#9aa1a8", borderRadius: 10, border: "16px solid #6f767c", overflow: "hidden", opacity: cl(o * 2) }}>
       <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
       {label && <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, padding: "16px 24px", background: "rgba(20,22,26,.85)", fontFamily: SANS, fontWeight: 800, fontSize: 32, color: "#fff", letterSpacing: 2 }}>{label}</div>}
@@ -66,26 +68,27 @@ export const PanelDoor: React.FC<{ src: string; seed: number; dur: number; label
 export const Clipboard: React.FC<{ src: string; note: string; seed: number; dur: number; left?: boolean }> = ({ src, note, seed, dur, left }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 16, 12); const r = (hash(seed) % 2 ? 1 : -1) * (3 + (hash(seed + 3) % 3));
   const p = Math.min(1, f / 26);
-  return <div style={{ position: "absolute", [left ? "left" : "right"]: 90, top: 120, width: 640, height: 860, transform: `translateY(${(1 - o) * 1000}px) rotate(${r}deg)` } as React.CSSProperties}>
+  return <div style={{ position: "absolute", [left ? "left" : "right"]: 60, top: 230, width: 520, height: 700, transform: `translateY(${(1 - o) * 1000}px) rotate(${r}deg)` } as React.CSSProperties}>
     <div style={{ position: "absolute", inset: 0, background: "#a8763f", borderRadius: 18, boxShadow: "8px 12px 0 rgba(0,0,0,.35)" }} />
     <div style={{ position: "absolute", left: 30, right: 30, top: 70, bottom: 30, background: "#fbf8ef" }}>
-      <div style={{ margin: 26, height: 500, overflow: "hidden", border: "8px solid #fff", boxShadow: "2px 3px 0 rgba(0,0,0,.2)" }}><Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
-      <div style={{ padding: "0 30px", fontFamily: HAND, fontWeight: 700, fontSize: 50, color: "#1f4f8f", lineHeight: 1.05, clipPath: `inset(-20% ${100 - 100 * cl((f - 18) / 22)}% -20% 0)` }}>{note}</div>
+      <div style={{ margin: 22, height: 390, overflow: "hidden", border: "8px solid #fff", boxShadow: "2px 3px 0 rgba(0,0,0,.2)" }}><Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
+      <div style={{ padding: "0 30px", fontFamily: HAND, fontWeight: 700, fontSize: 40, color: "#1f4f8f", lineHeight: 1.05, clipPath: `inset(-20% ${100 - 100 * cl((f - 18) / 22)}% -20% 0)` }}>{note}</div>
     </div>
-    <div style={{ position: "absolute", left: 200, top: 20, width: 240, height: 90, background: "linear-gradient(#d9dee2,#8d959c)", borderRadius: 12, transform: `scaleY(${0.7 + 0.3 * p})` }} />
+    <div style={{ position: "absolute", left: 150, top: 20, width: 220, height: 80, background: "linear-gradient(#d9dee2,#8d959c)", borderRadius: 12, transform: `scaleY(${0.7 + 0.3 * p})` }} />
   </div>;
 };
 
 // MEJORA 9 · dato con fuente sobre material real: la tarjeta de inspección colgada de un precinto
 export const DataTag: React.FC<{ big: string; label: string; src: string; dur: number }> = ({ big, label, src, dur }) => {
-  const f = useCurrentFrame(); const o = inout(f, dur, 12, 12); const sw = Math.sin(f / 18) * 2.5 * o;
-  return <div style={{ position: "absolute", left: 100, top: 0, opacity: cl(o * 1.5) }}>
-    <div style={{ marginLeft: 196, width: 8, height: 120 * o, background: "#2a2a2a" }} />
-    <div style={{ width: 400, padding: "28px 30px", background: CREAM, borderRadius: "14px 14px 14px 14px", border: "4px solid #c9b88f", transform: `rotate(${sw}deg)`, transformOrigin: "50% 0", boxShadow: "6px 10px 0 rgba(0,0,0,.35)" }}>
-      <div style={{ width: 40, height: 40, borderRadius: "50%", background: "#2a2a2a", margin: "-10px auto 14px" }} />
-      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 92, color: INK, lineHeight: 1 }}>{big}</div>
-      <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 28, color: INK, marginTop: 10 }}>{label}</div>
-      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 20, color: "#6a5a40", marginTop: 16, borderTop: "2px dashed #c9b88f", paddingTop: 10 }}>SOURCE · {src}</div>
+  const f = useCurrentFrame(); const o = inout(f, dur, 12, 12); const sw = Math.sin(f / 18) * 1.2 * o;
+  return <div style={{ position: "absolute", left: 80, top: 0, opacity: cl(o * 1.5) }}>
+    <div style={{ marginLeft: 120, width: 6, height: 50 * o, background: "#2a2a2a" }} />
+    <div style={{ display: "flex", alignItems: "center", gap: 26, width: 680, padding: "18px 26px", boxSizing: "border-box", background: CREAM, borderRadius: 12, border: "4px solid #c9b88f", transform: `rotate(${sw}deg)`, transformOrigin: "120px 0", boxShadow: "6px 10px 0 rgba(0,0,0,.35)", position: "relative" }}>
+      <div style={{ position: "absolute", left: 108, top: -8, width: 26, height: 26, borderRadius: "50%", background: "#2a2a2a" }} />
+      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: big.length > 6 ? 58 : 70, color: INK, lineHeight: 1, whiteSpace: "nowrap", marginTop: 12 }}>{big}</div>
+      <div style={{ borderLeft: "3px dashed #c9b88f", paddingLeft: 22, marginTop: 12 }}>
+        <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 22, color: INK, lineHeight: 1.15 }}>{label}</div>
+        <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 16, color: "#6a5a40", marginTop: 8 }}>SOURCE · {src}</div></div>
     </div>
   </div>;
 };
@@ -106,10 +109,10 @@ export const SafeWay: React.FC<{ text: string; dur: number }> = ({ text, dur }) 
 export const MidCta: React.FC<{ dur: number }> = ({ dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 16, 14);
   return <div style={{ position: "absolute", right: 80, bottom: 70, transform: `translateY(${(1 - o) * 520}px) rotate(-4deg)` }}>
-    <div style={{ width: 380, height: 470, background: "#1f3a5f", borderRadius: "6px 14px 14px 6px", borderLeft: "26px solid #142843", boxShadow: "8px 12px 0 rgba(0,0,0,.35)", padding: "40px 30px" }}>
+    <div style={{ width: 360, height: 440, background: "#1f3a5f", borderRadius: "6px 14px 14px 6px", borderLeft: "26px solid #142843", boxShadow: "8px 12px 0 rgba(0,0,0,.35)", padding: "40px 30px" }}>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 52, color: "#f6efe0", lineHeight: 1.05 }}>THE WINTER BLACKOUT MANUAL</div>
       <div style={{ marginTop: 26, fontFamily: SANS, fontWeight: 700, fontSize: 24, color: "#e9dcc4" }}>the full station + generator plan on one page</div>
     </div>
-    <div style={{ position: "absolute", left: -40, right: -40, bottom: 40, padding: "12px 0", background: YEL, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 30, color: INK, letterSpacing: 3, transform: "rotate(3deg)" }}>LINK IN THE DESCRIPTION</div>
+    <div style={{ position: "absolute", left: -40, right: -40, bottom: -40, padding: "12px 0", background: YEL, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 30, color: INK, letterSpacing: 3, transform: "rotate(3deg)" }}>LINK IN THE DESCRIPTION</div>
   </div>;
 };
