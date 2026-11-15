@@ -16,18 +16,14 @@ export const Pans: React.FC<{ dur: number; fSand: number; fGolden: number; fCorn
   const mono = kf.map((v, i) => Math.max(v, i)).reduce<number[]>((a, v) => [...a, Math.max(v, (a[a.length - 1] ?? -1) + 1)], []);
   const cx = interpolate(f, mono, xs, { ...CL, easing: io });
   const cy = interpolate(f, mono, ys, { ...CL, easing: io });
-  const r = interpolate(f, [0, 10, fUnder - 6, fUnder + 14], [0, 230, 230, 330], { ...CL, easing: io });
-  const m = 2.4;
-  const cam = interpolate(f, [0, dur], [1.0, 1.04], CL);
+  // zoom: plano general → 2,1x sobre cada zona nombrada → vuelve a 1,25x al final; el centro sigue a la palabra
+  const z = interpolate(f, [0, Math.max(12, fSand - 10), fSand + 10, fUnder + 4, dur], [1.0, 1.0, 2.1, 2.1, 1.3], { ...CL, easing: io });
+  // traslación que mantiene (cx, cy) en el centro del cuadro sin dejar bordes vacíos
+  const tx = Math.max(Math.min(960 - cx * z, 0), 1920 - 1920 * z), ty = Math.max(Math.min(540 - cy * z, 0), 1080 - 1080 * z);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#fff" }}>
-      <div style={{ ...full, transform: `scale(${cam})`, transformOrigin: "960px 540px" }}>
+      <div style={{ ...full, transform: `translate(${tx}px, ${ty}px) scale(${z})`, transformOrigin: "0px 0px" }}>
         <Img src={S("e_pans")} style={full} />
-        <div style={{ ...full, filter: "drop-shadow(0 16px 22px rgba(0,0,0,0.45))" }}>
-          <div style={{ ...full, overflow: "hidden", clipPath: `circle(${r}px at ${cx}px ${cy}px)` }}>
-            <Img src={S("e_pans")} style={{ ...full, transform: `scale(${m})`, transformOrigin: `${cx}px ${cy}px` }} />
-          </div>
-        </div>
       </div>
     </AbsoluteFill>
   );
@@ -44,7 +40,7 @@ export const Squeeze: React.FC<{ dur: number; fSqueeze: number; fFist: number }>
   const ho = interpolate(f, [fSqueeze + 6, fSqueeze + 16], [1, 0], CL);
   const d0 = Math.min(fFist, fSqueeze + 16);
   const drip = interpolate(f, [d0, d0 + 18], [742, 990], { ...CL, easing: Easing.in(Easing.quad) });
-  const cam = interpolate(f, [0, dur], [1.0, 1.06], CL);
+  const cam = interpolate(f, [0, fSqueeze, dur], [1.0, 1.04, 1.22], { ...CL, easing: io });
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
       <div style={{ ...full, transform: `scale(${cam})`, transformOrigin: "1000px 520px" }}>
@@ -74,10 +70,10 @@ export const Squeeze: React.FC<{ dur: number; fSqueeze: number; fFist: number }>
 const PIECE = "polygon(420px 405px, 520px 300px, 630px 203px, 750px 280px, 863px 353px, 870px 435px, 780px 540px, 668px 660px, 548px 585px, 428px 503px)";
 export const Corner: React.FC<{ dur: number; fCut: number }> = ({ dur, fCut }) => {
   const f = useCurrentFrame();
-  const k = interpolate(f, [fCut - 6, fCut + 16], [1, 1.34], { ...CL, easing: io });
+  const k = interpolate(f, [fCut - 6, fCut + 20], [1, 1.6], { ...CL, easing: io });
   const rot = interpolate(f, [fCut - 6, fCut + 16], [0, -3], { ...CL, easing: io });
   const sh = interpolate(f, [fCut - 6, fCut + 16], [4, 34], { ...CL, easing: io });
-  const cam = interpolate(f, [0, dur], [1.0, 1.05], CL);
+  const cam = interpolate(f, [0, dur], [1.0, 1.18], { ...CL, easing: io });
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
       <div style={{ ...full, transform: `scale(${cam})`, transformOrigin: "645px 430px" }}>
@@ -96,15 +92,15 @@ export const Corner: React.FC<{ dur: number; fCut: number }> = ({ dur, fCut }) =
 export const Skillet: React.FC<{ dur: number; fHattie: number; fSkillet: number }> = ({ dur, fHattie, fSkillet }) => {
   const f = useCurrentFrame();
   const E = { x: 1020, y: 742, rx: 315, ry: 135 };
-  const o = interpolate(f, [fHattie - 4, fHattie + 12, fSkillet, fSkillet + 18], [0, 0.62, 0.62, 0], { ...CL, easing: io });
+  const o = interpolate(f, [fHattie - 4, fHattie + 14, fSkillet + 10, fSkillet + 30], [0, 0.9, 0.9, 0], { ...CL, easing: io });
   const drift = interpolate(f, [0, dur], [0, 18], CL);
-  const cam = interpolate(f, [0, dur], [1.0, 1.08], { ...CL, easing: io });
+  const cam = interpolate(f, [0, dur], [1.0, 1.32], { ...CL, easing: io });
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
       <div style={{ ...full, transform: `scale(${cam})`, transformOrigin: `${E.x}px ${E.y}px` }}>
         <Img src={S("e_skillet")} style={full} />
         {o > 0 && (
-          <div style={{ ...full, overflow: "hidden", opacity: o, mixBlendMode: "screen", clipPath: `ellipse(${E.rx}px ${E.ry}px at ${E.x}px ${E.y}px)` }}>
+          <div style={{ ...full, overflow: "hidden", opacity: o, clipPath: `ellipse(${E.rx}px ${E.ry}px at ${E.x}px ${E.y}px)`, filter: "sepia(0.35) contrast(1.05)", WebkitMaskImage: `radial-gradient(ellipse ${E.rx}px ${E.ry}px at ${E.x}px ${E.y}px, #000 55%, transparent 100%)` }}>
             <Img src={S("g0530")} style={{ ...full, transform: `translate(${E.x - 1065}px, ${E.y - 520 + drift}px) scale(0.62, -0.62)`, transformOrigin: "1065px 520px" }} />
           </div>
         )}

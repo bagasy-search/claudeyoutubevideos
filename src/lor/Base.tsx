@@ -29,9 +29,14 @@ export const useKB = (seed: number, dur: number, clip = false) => {
   return { transform: `scale(${1.04 + amp * k})`, transformOrigin: `${ox}% ${oy}%` } as React.CSSProperties;
 };
 
-export const Photo: React.FC<{ src: string; seed: number; dur: number }> = ({ src, seed, dur }) => {
-  const kb = useKB(seed, dur);
-  return (<AbsoluteFill style={{ overflow: "hidden", background: C.dark }}><Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} /></AbsoluteFill>);
+const REP_O = [[50, 50], [28, 38], [72, 62], [30, 70], [70, 30], [50, 25], [50, 75], [22, 50], [78, 50], [40, 60], [60, 40], [35, 30]];
+export const Photo: React.FC<{ src: string; seed: number; dur: number; rep?: number }> = ({ src, seed, dur, rep = 0 }) => {
+  const kb = useKB(seed, dur); const f = useCurrentFrame();
+  if (!rep) return (<AbsoluteFill style={{ overflow: "hidden", background: C.dark }}><Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} /></AbsoluteFill>);
+  // repetición: plano de detalle en otra zona de la foto + paneo lateral (otro plano, no la misma foto otra vez)
+  const [ox, oy] = REP_O[rep % REP_O.length]; const z = 1.42 + 0.06 * ease(f / Math.max(1, dur));
+  const dx = (hash(seed + rep) % 2 ? 1 : -1) * 3 * ease(f / Math.max(1, dur));
+  return (<AbsoluteFill style={{ overflow: "hidden", background: C.dark }}><Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z}) translateX(${dx}%)`, transformOrigin: `${ox}% ${oy}%` }} /></AbsoluteFill>);
 };
 
 // tramo real de YouTube: empieza en `from` (s) dentro del archivo; si falta largo, se encadena el segundo tramo
@@ -90,9 +95,15 @@ export const RecipeCard: React.FC<{ card: Card; look: Look; dur: number }> = ({ 
   const L = (i: number) => interpolate(f, [8 + i * 7, 18 + i * 7], [0, 1], CL);
   const x0 = look.key === "nb" ? 330 : 210;
   const col = look.key === "church" ? "#2B2219" : C.ink;
+  const nL = Math.max(card.ing.length * 1.25, card.steps.length * 1.1) + (card.note ? 1 : 0);
+  const H = 92 + 90 + 60 + 40 + nL * 66 + 60;
+  const ZC = 1.18, travel = Math.max(0, H * ZC - 1080 + 60);
+  const cy = -travel * ease((f - dur * 0.18) / (dur * 0.62));
+  const cz = ZC + 0.03 * f / Math.max(1, dur);
   return (
     <Paper look={look} dur={dur}>
-      {look.stamp && <div style={{ position: "absolute", right: 120, top: 70, border: `5px solid ${C.red}`, color: C.red, fontFamily: SANS, fontWeight: 600, fontSize: 30, letterSpacing: 3, padding: "8px 18px", transform: "rotate(-6deg)", opacity: 0.85 * L(0) }}>{look.stamp}</div>}
+     <AbsoluteFill style={{ transform: `translateY(${cy}px) scale(${cz})`, transformOrigin: "50% 0%" }}>
+      {look.stamp && <div style={{ position: "absolute", right: 90, top: Math.max(980, H - 40), border: `5px solid ${C.red}`, color: C.red, fontFamily: SANS, fontWeight: 600, fontSize: 30, letterSpacing: 3, padding: "8px 18px", transform: "rotate(-6deg)", opacity: 0.85 * L(0) }}>{look.stamp}</div>}
       <div style={{ position: "absolute", left: x0, top: 92, right: 120, color: col }}>
         <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 82, lineHeight: 1.05, opacity: L(0) }}>{card.title}</div>
         <div style={{ display: "flex", gap: 46, marginTop: 14, fontFamily: SANS, fontWeight: 600, fontSize: 34, color: C.red, opacity: L(1) }}>
@@ -108,6 +119,7 @@ export const RecipeCard: React.FC<{ card: Card; look: Look; dur: number }> = ({ 
         </div>
         {card.note && <div style={{ fontFamily: HAND, fontSize: 40, color: C.red, marginTop: 26, opacity: L(5 + card.ing.length + card.steps.length) }}>{card.note}</div>}
       </div>
+     </AbsoluteFill>
     </Paper>
   );
 };
@@ -122,15 +134,15 @@ export const TrickTitle: React.FC<{ n: number; N: number; name: string; look: Lo
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <Img src={staticFile(look.table)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.03 * f / Math.max(1, dur)})` }} />
       <div style={{ position: "absolute", left: 960 - 560, top: 175, width: 1120, height: 640, overflow: "hidden", boxShadow: "0 34px 70px rgba(0,0,0,0.5)",
-        transform: `translate(${(1 - inn) * 1300}px, ${(1 - inn) * -120}px) rotate(${rot * inn + (1 - inn) * 24}deg)` }}>
+        transform: `translate(${(1 - inn) * 1300}px, ${(1 - inn) * -120}px) rotate(${rot * inn + (1 - inn) * 24 - rot * 0.6 * ease(f / Math.max(1, dur))}deg) scale(${1 + 0.1 * ease(f / Math.max(1, dur))})` }}>
         <Img src={staticFile(look.paper)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
         <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", padding: "0 90px" }}>
-          <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 6, color: C.red }}>{label.toUpperCase()} {n}</div>
-          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 92, lineHeight: 1.08, color: C.ink, marginTop: 14 }}>{name}</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 150, lineHeight: 1, color: C.red, transform: `scale(${1 + 1.6 * (1 - spring({ frame: f - 12, fps: 30, config: { damping: 11, mass: 0.7 } }))})`, opacity: interpolate(f, [12, 16], [0, 1], CL) }}>{n}</div>
+          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 96, lineHeight: 1.05, color: C.ink, marginTop: 6 }}>{name.split(" ").map((w, i) => <span key={i} style={{ opacity: interpolate(f, [18 + i * 4, 24 + i * 4], [0, 1], CL) }}>{w} </span>)}</div>
         </div>
       </div>
       <div style={{ position: "absolute", left: 360, right: 360, bottom: 92 }}>
-        <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 30, color: "#fff", textShadow: shadow, marginBottom: 10, textAlign: "center" }}>{label.toLowerCase()} {n} of {N}</div>
+        <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 42, color: "#fff", textShadow: shadow, marginBottom: 10, textAlign: "center" }}>{label} {n} of {N}</div>
         <div style={{ height: 14, background: "rgba(255,255,255,0.35)", borderRadius: 7, overflow: "hidden" }}><div style={{ width: `${bar * 100}%`, height: "100%", background: look.accent }} /></div>
       </div>
     </AbsoluteFill>
@@ -142,24 +154,27 @@ export const Carousel: React.FC<{ items: { title: string; src: string }[]; look:
   const f = useCurrentFrame(); const N = items.length;
   const fan = ease((f - dur * 0.6) / 30); const rot = -f * 0.7;
   const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
+  const kz = 1 + 0.07 * Math.min(1, f / Math.max(1, dur)); // empuje continuo: el carrusel nunca queda congelado al final
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
+     <AbsoluteFill style={{ transform: `scale(${kz})`, transformOrigin: "50% 60%" }}>
       <Img src={staticFile(look.table)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       <div style={{ position: "absolute", top: 54, width: "100%", textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 86, color: "#fff", textShadow: "0 3px 18px rgba(0,0,0,0.75)" }}>{head}</div>
       <AbsoluteFill style={{ perspective: 2200, perspectiveOrigin: "50% 45%" }}>
         {items.map((c, i) => {
           const th = ((((i * (360 / N) + rot) % 360) + 540) % 360) - 180; const rad = (th * Math.PI) / 180;
           const phi = -30 + i * (60 / Math.max(1, N - 1)), pr = (phi * Math.PI) / 180;
-          const x = lerp(700 * Math.sin(rad), 1500 * Math.sin(pr), fan), y = lerp(30, 1500 * (1 - Math.cos(pr)), fan), z = lerp(700 * (Math.cos(rad) - 1), i * 2, fan);
+          const x = lerp(640 * Math.sin(rad), 1150 * Math.sin(pr), fan), y = lerp(30, 1150 * (1 - Math.cos(pr)) - 40, fan), z = lerp(700 * (Math.cos(rad) - 1), i * 2, fan);
           const ap = spring({ frame: f - i * 3, fps: 30, config: { damping: 16 } });
-          return (<div key={i} style={{ position: "absolute", left: 960 - 190, top: 330, width: 380, zIndex: Math.round(3000 + z), opacity: ap,
-            transform: `translate3d(${x}px, ${y}px, ${z}px) rotateY(${lerp(th, 0, fan)}deg) rotateZ(${lerp(0, phi, fan)}deg) scale(${lerp(1, 0.8, fan)})` }}>
+          return (<div key={i} style={{ position: "absolute", left: 960 - 230, top: 290, width: 460, zIndex: Math.round(3000 + z), opacity: ap,
+            transform: `translate3d(${x}px, ${y}px, ${z}px) rotateY(${lerp(th, 0, fan)}deg) rotateZ(${lerp(0, phi * 0.7, fan)}deg) scale(${lerp(1, 0.74, fan)})` }}>
             <div style={{ background: "#FBF6EC", padding: 12, boxShadow: "0 18px 40px rgba(0,0,0,0.45)" }}>
-              <Img src={staticFile(c.src)} style={{ width: "100%", height: 214, objectFit: "cover" }} />
-              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 32, color: C.ink, textAlign: "center", marginTop: 6, lineHeight: 1.1 }}>{c.title}</div>
+              <Img src={staticFile(c.src)} style={{ width: "100%", height: 260, objectFit: "cover" }} />
+              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 42, color: C.ink, textAlign: "center", marginTop: 6, lineHeight: 1.1 }}>{c.title}</div>
             </div></div>);
         })}
       </AbsoluteFill>
+     </AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -193,17 +208,20 @@ export const BookCTA: React.FC<{ page: string; qr: string; look: Look; head: str
   const inn = spring({ frame: f, fps: 30, config: { damping: 18, mass: 0.9 } });
   const q = spring({ frame: f - qrAt, fps: 30, config: { damping: 16 } });
   const z = 1 + 0.05 * ease(f / Math.max(1, dur));
+  const cam = 1 + 0.1 * ease(f / Math.max(1, dur)); const pulse = f > qrAt + 20 ? 1 + 0.035 * Math.max(0, Math.sin((f - qrAt) / 9)) : 1;
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
+     <AbsoluteFill style={{ transform: `scale(${cam})`, transformOrigin: "62% 45%", perspective: 2400 }}>
       <Img src={staticFile(look.table)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.02 * f / Math.max(1, dur)})` }} />
-      <div style={{ position: "absolute", left: 230, top: 40, height: 1000, width: 773, boxShadow: "0 30px 70px rgba(0,0,0,0.5)", transform: `translateY(${(1 - inn) * 1100}px) rotate(${-2.5 * inn}deg) scale(${z})`, transformOrigin: "50% 60%" }}>
+      <div style={{ position: "absolute", left: 230, top: 40, height: 1000, width: 773, boxShadow: "0 30px 70px rgba(0,0,0,0.5)", transform: `translateY(${(1 - inn) * 1100}px) rotateX(${8 * inn}deg) rotateY(${6 - 6 * ease(f / Math.max(1, dur))}deg) rotate(${-2.5 * inn}deg) scale(${z})`, transformOrigin: "50% 60%" }}>
         <Img src={staticFile(page)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </div>
-      <div style={{ position: "absolute", left: 1130, top: 250, width: 560, opacity: q, transform: `translateY(${(1 - q) * 60}px) rotate(2deg)` }}>
+      <div style={{ position: "absolute", left: 1100, top: 170, width: 620, opacity: q, transform: `translateY(${(1 - q) * 60}px) rotate(2deg) scale(${pulse})` }}>
         <div style={{ background: "#fff", padding: 26, boxShadow: "0 20px 50px rgba(0,0,0,0.45)" }}><Img src={staticFile(qr)} style={{ width: "100%", display: "block" }} /></div>
         <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 58, color: "#fff", textShadow: "0 3px 16px rgba(0,0,0,0.8)", marginTop: 26, textAlign: "center", lineHeight: 1.1 }}>{head}</div>
-        <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 32, color: "#fff", textShadow: "0 2px 12px rgba(0,0,0,0.8)", marginTop: 10, textAlign: "center" }}>{sub}</div>
+        <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 44, color: "#fff", textShadow: "0 2px 12px rgba(0,0,0,0.8)", marginTop: 10, textAlign: "center" }}>{sub}</div>
       </div>
+     </AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -217,7 +235,7 @@ export const Letters: React.FC<{ bg: string; notes: { t: string; at: number }[];
       <div style={{ position: "absolute", top: 60, width: "100%", textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 84, color: "#fff", textShadow: "0 3px 18px rgba(0,0,0,0.8)" }}>{head}</div>
       {notes.map((n, i) => { const s = spring({ frame: f - n.at, fps: 30, config: { damping: 16 } }); return (
         <div key={i} style={{ position: "absolute", left: 260 + (i % 2) * 720, top: 260 + Math.floor(i / 2) * 330, width: 640, background: "#FFFDF6", padding: "26px 34px", boxShadow: "0 18px 40px rgba(0,0,0,0.4)",
-          fontFamily: HAND, fontSize: 40, color: C.ink, lineHeight: 1.3, opacity: s, transform: `translateY(${(1 - s) * 80}px) rotate(${(i % 2 ? 2 : -2)}deg)` }}>“{n.t}”</div>); })}
+          fontFamily: HAND, fontSize: 54, fontWeight: 700, color: C.ink, lineHeight: 1.25, opacity: s, transform: `translateY(${(1 - s) * 300}px) rotate(${(i % 2 ? 2 : -2) + (1 - s) * 14}deg) scale(${1 + 0.05 * ease((f - n.at) / Math.max(1, dur))})` }}>“{n.t}”</div>); })}
     </AbsoluteFill>
   );
 };
@@ -225,11 +243,12 @@ export const Letters: React.FC<{ bg: string; notes: { t: string; at: number }[];
 // (9) dato con fuente real, como cinta sobre el plano
 export const Data: React.FC<{ big: string; line: string; src: string; dur: number }> = ({ big, line, src, dur }) => {
   const f = useCurrentFrame(); const s = spring({ frame: f, fps: 30, config: { damping: 17 } }); const o = interpolate(f, [dur - 10, dur], [1, 0], CL);
+  const m = big.match(/^(\d+)(.*)$/); const cnt = m ? Math.round(parseInt(m[1]) * ease(f / 26)) + m[2] : big;
   return (<AbsoluteFill style={{ opacity: o }}>
-    <div style={{ position: "absolute", left: 110, bottom: 110, background: "rgba(255,250,240,0.95)", padding: "26px 40px", maxWidth: 980, boxShadow: "0 16px 40px rgba(0,0,0,0.4)", transform: `translateX(${(1 - s) * -700}px)` }}>
-      <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 92, color: C.red, lineHeight: 1 }}>{big}</div>
-      <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 40, color: C.ink, marginTop: 8 }}>{line}</div>
-      <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 24, color: "#555", marginTop: 10 }}>Source: {src}</div>
+    <div style={{ position: "absolute", right: 90, top: 80, background: "rgba(255,250,240,0.96)", padding: "26px 44px", width: 760, boxShadow: "0 16px 40px rgba(0,0,0,0.4)", transform: `scale(${0.6 + 0.4 * s}) rotate(${2 * (1 - s)}deg)`, transformOrigin: "100% 0%", opacity: Math.min(1, s * 1.5) }}>
+      <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 130, color: C.red, lineHeight: 1 }}>{cnt}</div>
+      <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 44, color: C.ink, marginTop: 8, lineHeight: 1.15 }}>{line}</div>
+      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 30, color: "#555", marginTop: 12 }}>Source: {src}</div>
     </div></AbsoluteFill>);
 };
 
@@ -249,15 +268,18 @@ export const RecapLine: React.FC<{ n: number; N: number; name: string; text: str
 // cierre: el libro cerrado sobre la mesa + QR + pregunta para los comentarios
 export const Close: React.FC<{ cover: string; qr: string; look: Look; head: string; question?: string; qAt?: number; dur: number }> = ({ cover, qr, look, head, question, qAt = 9999, dur }) => {
   const f = useCurrentFrame(); const inn = spring({ frame: f, fps: 30, config: { damping: 18 } }); const q = spring({ frame: f - qAt, fps: 30, config: { damping: 16 } });
+  const cam = 1 + 0.12 * ease(f / Math.max(1, dur));
   return (<AbsoluteFill style={{ overflow: "hidden" }}>
+   <AbsoluteFill style={{ transform: `scale(${cam})`, transformOrigin: "55% 40%", perspective: 2400 }}>
     <Img src={staticFile(look.table)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.03 * f / Math.max(1, dur)})` }} />
-    <div style={{ position: "absolute", left: 300, top: 90, height: 900, width: 696, boxShadow: "0 34px 80px rgba(0,0,0,0.55)", transform: `translateY(${(1 - inn) * 1000}px) rotate(${-3 * inn}deg)` }}>
+    <div style={{ position: "absolute", left: 300, top: 90, height: 900, width: 696, boxShadow: "0 34px 80px rgba(0,0,0,0.55)", transform: `translateY(${(1 - inn) * 1000}px) rotateY(${10 - 14 * ease(f / Math.max(1, dur))}deg) rotate(${-3 * inn}deg)` }}>
       <Img src={staticFile(cover)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
     <div style={{ position: "absolute", left: 1150, top: 200, width: 480, opacity: inn }}>
       <div style={{ background: "#fff", padding: 22, boxShadow: "0 20px 50px rgba(0,0,0,0.45)" }}><Img src={staticFile(qr)} style={{ width: "100%", display: "block" }} /></div>
-      <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: "#fff", textShadow: "0 3px 16px rgba(0,0,0,0.8)", marginTop: 22, textAlign: "center" }}>{head}</div>
+      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, color: "#fff", textShadow: "0 3px 16px rgba(0,0,0,0.8)", marginTop: 22, textAlign: "center" }}>cookbook.lorettaschurch.com</div>
     </div>
-    {question && <div style={{ position: "absolute", left: 120, right: 120, bottom: 60, textAlign: "center", background: "rgba(255,250,240,0.96)", padding: "20px 30px", fontFamily: HAND, fontWeight: 700, fontSize: 54, color: C.ink, opacity: q, transform: `translateY(${(1 - q) * 80}px)` }}>{question}</div>}
+   </AbsoluteFill>
+    {question && <div style={{ position: "absolute", left: 140, right: 140, bottom: 70, textAlign: "center", background: "#fff", borderRadius: 34, padding: "26px 40px", fontFamily: HAND, fontWeight: 700, fontSize: 68, color: C.ink, boxShadow: "0 18px 44px rgba(0,0,0,0.45)", opacity: q, transform: `translateY(${(1 - q) * 160 + 6 * Math.sin(f / 20)}px) scale(${0.85 + 0.15 * q})` }}>{question}</div>}
   </AbsoluteFill>);
 };
 
@@ -265,9 +287,10 @@ export const Close: React.FC<{ cover: string; qr: string; look: Look; head: stri
 export const Ask: React.FC<{ text: string; dur: number }> = ({ text, dur }) => {
   const f = useCurrentFrame(); const s = spring({ frame: f, fps: 30, config: { damping: 17 } }); const o = interpolate(f, [dur - 8, dur], [1, 0], CL);
   return (<AbsoluteFill style={{ opacity: o }}>
-    <div style={{ position: "absolute", left: 160, right: 160, bottom: 70, textAlign: "center", background: "rgba(255,250,240,0.97)", padding: "22px 34px", boxShadow: "0 16px 40px rgba(0,0,0,0.4)", transform: `translateY(${(1 - s) * 160}px)` }}>
-      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, letterSpacing: 4, color: C.red }}>TELL ME IN THE COMMENTS</div>
-      <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 58, color: C.ink, lineHeight: 1.15, marginTop: 6 }}>{text}</div>
+    <div style={{ position: "absolute", right: 90, top: 90, width: 820, background: "#fff", borderRadius: 40, padding: "30px 44px", boxShadow: "0 18px 44px rgba(0,0,0,0.45)", transform: `translateY(${(1 - s) * -60 + 8 * Math.sin(f / 18)}px) scale(${0.7 + 0.3 * s})`, transformOrigin: "90% 100%", opacity: Math.min(1, s * 1.5) }}>
+      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 36, letterSpacing: 3, color: C.red }}>TELL ME IN THE COMMENTS</div>
+      <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 72, color: C.ink, lineHeight: 1.1, marginTop: 8 }}>{text}</div>
+      <div style={{ position: "absolute", right: 90, bottom: -34, width: 0, height: 0, borderLeft: "26px solid transparent", borderRight: "26px solid transparent", borderTop: "36px solid #fff" }} />
     </div></AbsoluteFill>);
 };
 
@@ -275,8 +298,8 @@ export const Ask: React.FC<{ text: string; dur: number }> = ({ text, dur }) => {
 export const Prog: React.FC<{ n: number; N: number; label: string; look: Look; dur: number }> = ({ n, N, label, look, dur }) => {
   const f = useCurrentFrame(); const o = Math.min(interpolate(f, [0, 8], [0, 1], CL), interpolate(f, [dur - 8, dur], [1, 0], CL));
   return (<AbsoluteFill style={{ opacity: o }}>
-    <div style={{ position: "absolute", left: 60, bottom: 44, width: 420 }}>
-      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 24, color: "#fff", textShadow: shadow, marginBottom: 6 }}>{label.toLowerCase()} {n} of {N}</div>
-      <div style={{ height: 8, background: "rgba(255,255,255,0.35)", borderRadius: 4, overflow: "hidden" }}><div style={{ width: `${(n / N) * 100}%`, height: "100%", background: look.accent }} /></div>
+    <div style={{ position: "absolute", left: 56, top: 48, padding: "14px 22px", background: "rgba(20,17,13,0.55)", borderRadius: 18 }}>
+      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 34, color: "#fff", marginBottom: 10 }}>{label} {n} of {N}</div>
+      <div style={{ display: "flex", gap: 10 }}>{Array.from({ length: N }, (_, i) => <div key={i} style={{ width: 24, height: 24, borderRadius: 12, background: i < n ? look.accent : "rgba(255,255,255,0.35)", border: "2px solid rgba(255,255,255,0.8)", transform: i === n - 1 ? `scale(${1 + 0.35 * Math.max(0, 1 - f / 14)})` : undefined }} />)}</div>
     </div></AbsoluteFill>);
 };
