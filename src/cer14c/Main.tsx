@@ -58,7 +58,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "split": return <Q.SplitPhoto src={o.src} seed={o.seed} dur={d} />;
     case "polaroid": return <Q.Polaroid src={o.src} caption={o.caption} seed={o.seed} dur={d} />;
     case "map": return <Q.MapJP a={o.a} b={o.b} la={o.la} ja={o.ja} lb={o.lb} jb={o.jb} dur={d} />;
-    case "cta": return <Q.CTA text={o.text} cards={CARDS} dur={d} />;
+    case "cta": return <Q.CTA text={o.text} cards={CARDS} dur={d} com={o.com} />;
     default: return null;
   }
 };
