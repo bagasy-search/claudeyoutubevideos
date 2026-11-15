@@ -3,14 +3,14 @@ import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame
 import * as B from "./Base";
 
 export type Cues = { TOTAL: number; LOOK: B.Look; SHOTS: any[]; AVATAR: any[]; OVERLAYS: any[]; SFX: any[]; MIX: string; CARDS: Record<string, B.Card> };
-const T = 8;
+const T = 5;
 
 const Body: React.FC<{ s: any; cu: Cues; esc: Record<string, React.FC<any>> }> = ({ s, cu, esc }) => {
   const d = s.dur, L = cu.LOOK;
   if (s.k === "Y") return <B.Clip src={s.src} from={s.at} seed={s.id} dur={d} src2={s.src2} from2={s.at2} cut={s.cut} />;
   if (s.k === "V") return <B.Clip src={s.src} from={0} seed={s.id} dur={d} />;
   if (s.k === "G" && s.vint) return <B.Vintage src={s.src} table={L.table} seed={s.id} dur={d} />;
-  if (s.k === "G") return <B.Photo src={s.src} seed={s.id} dur={d} />;
+  if (s.k === "G") return <B.Photo src={s.src} seed={s.id} dur={d} rep={s.rep} />;
   if (s.k === "E") { const K = esc[s.name]; return K ? <K dur={d} {...(s.props || {})} /> : null; }
   if (s.k === "C") switch (s.comp) {
     case "card": return <B.RecipeCard card={cu.CARDS[s.key]} look={L} dur={d} />;

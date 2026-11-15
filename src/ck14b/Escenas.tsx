@@ -21,9 +21,9 @@ export const Bowls: React.FC<{ dur: number; fLift: number; fPaste: number }> = (
   const f = useCurrentFrame();
   const k = interpolate(f, [fLift - 4, fLift + 26], [0, 1], { ...CL, easing: io });
   const k2 = interpolate(f, [fPaste, fPaste + 30], [0, 0.35], { ...CL, easing: io });
-  const drop = 72 * k + 22 * k2;                 // el bol baja
+  const drop = 130 * k + 40 * k2;                 // el bol baja
   const sy = (526 + drop) / 526;                 // el hilo se alarga desde y=300 hasta el puré que bajó
-  const cam = interpolate(f, [0, dur], [1.0, 1.05], CL);
+  const cam = interpolate(f, [0, dur], [1.0, 1.16], { ...CL, easing: io });
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#888" }}>
       <div style={{ ...full, transform: `scale(${cam})`, transformOrigin: "560px 520px" }}>
@@ -47,15 +47,15 @@ export const Bowls: React.FC<{ dur: number; fLift: number; fPaste: number }> = (
 // ---------- 2 · el vapor real, separado por luminancia, sube en tres franjas a distinta velocidad
 export const Steam: React.FC<{ dur: number }> = ({ dur }) => {
   const f = useCurrentFrame();
-  const bands = [[0, 160, 110], [160, 320, 70], [320, 480, 40]];
-  const cam = interpolate(f, [0, dur], [1.02, 1.08], CL);
+  const bands = [[0, 160, 230], [160, 320, 150], [320, 480, 90]];
+  const cam = interpolate(f, [0, dur], [1.02, 1.18], { ...CL, easing: io });
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
       <div style={{ ...full, transform: `scale(${cam})`, transformOrigin: "860px 470px" }}>
         <Img src={S("e_steam")} style={full} />
         {bands.map(([y0, y1, v], i) => {
           const dy = -v * interpolate(f, [0, dur], [0, 1], CL);
-          const op = interpolate(f, [0, 6, dur - 8, dur], [0, 0.8, 0.55, 0], CL);
+          const op = interpolate(f, [0, 6, dur - 8, dur], [0, 0.95, 0.7, 0], CL);
           return (
             <div key={i} style={{ ...full, transform: `translateY(${dy}px)`, opacity: op, mixBlendMode: "screen" }}>
               <div style={{ ...full, overflow: "hidden", clipPath: `inset(${y0}px 720px ${1080 - y1}px 350px)` }}>
@@ -79,13 +79,13 @@ export const Puddle: React.FC<{ dur: number; fPuddle: number; fEdges: number }> 
   const L = 650 + 1100, d = p * L;
   const x = d < 650 ? 1495 : 1495 - (d - 650), y = d < 650 ? 250 + d : 885;
   const op = interpolate(f, [t0, t0 + 8, t1 - 10, t1 + 6], [0, 0.9, 0.9, 0], CL);
-  const cam = interpolate(f, [0, dur], [1.0, 1.06], CL);
+  const cam = interpolate(f, [0, t0, t1, dur], [1.0, 1.05, 1.45, 1.5], { ...CL, easing: io });
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
-      <div style={{ ...full, transform: `scale(${cam})`, transformOrigin: "1240px 640px" }}>
+      <div style={{ ...full, transform: `scale(${cam})`, transformOrigin: "1480px 860px" }}>
         <Img src={S("e_puddle")} style={full} />
         <div style={{ ...full, overflow: "hidden", clipPath: RING, mixBlendMode: "screen", opacity: op }}>
-          <div style={{ ...full, background: `radial-gradient(ellipse 150px 120px at ${x}px ${y}px, rgba(255,255,255,0.85), rgba(255,255,255,0.25) 45%, rgba(255,255,255,0) 75%)` }} />
+          <div style={{ ...full, background: `radial-gradient(ellipse 240px 190px at ${x}px ${y}px, rgba(255,255,255,1), rgba(255,255,255,0.4) 45%, rgba(255,255,255,0) 78%)` }} />
         </div>
       </div>
     </AbsoluteFill>
@@ -96,8 +96,8 @@ export const Puddle: React.FC<{ dur: number; fPuddle: number; fEdges: number }> 
 const BOX = poly([[745, 158], [1022, 158], [1024, 244], [1300, 250], [1560, 288], [1580, 700], [1548, 1022], [1250, 830], [1236, 800], [700, 1002], [478, 892], [458, 262], [745, 246]]);
 export const Box: React.FC<{ dur: number }> = ({ dur }) => {
   const f = useCurrentFrame();
-  const CAM = 1.25;
-  const b = interpolate(f, [0, dur], [1.0, 0.8], { ...CL, easing: io }); // fondo efectivo 1,25 → 1,0
+  const CAM = interpolate(f, [0, dur], [1.25, 1.42], { ...CL, easing: io });
+  const b = interpolate(f, [0, dur], [1.0, 0.72], { ...CL, easing: io }); // fondo efectivo 1,25 → 1,0
   const O = "1020px 590px";
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#ddd" }}>
