@@ -94,10 +94,10 @@ export const RecapCelda: React.FC<{ n: number; title: string; fact: string; img?
   const a = pop(f, 4, fps); const b = appear(f, 16, 14);
   return (
     <AbsoluteFill style={{ background: S.ink, opacity: fadeIO(f, dur) }}>
-      {img ? <AbsoluteFill style={{ overflow: "hidden", opacity: 0.55 }}><Img src={staticFile(img)} style={{ width: 1920, height: 1080, objectFit: "cover", transform: `scale(${interpolate(f, [0, dur], [1.06, 1.0])})` }} /></AbsoluteFill> : null}
+      {img ? <AbsoluteFill style={{ overflow: "hidden", opacity: 0.55 }}><Img src={staticFile(img)} style={{ width: 1920, height: 1080, objectFit: "cover", transform: `translateX(${interpolate(f, [0, dur], [-60, 60])}px) scale(${interpolate(f, [0, dur], [1.2, 1.04])})` }} /></AbsoluteFill> : null}
       <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(14,15,17,0.9), rgba(14,15,17,0.55))" }} />
       <div style={{ position: "absolute", left: 90, top: 70 }}><Cells n={n} f0={0} size={76} /></div>
-      <div style={{ position: "absolute", left: 330, top: 260, width: 1400 }}>
+      <div style={{ position: "absolute", left: 330, top: 260, width: 1400, transform: `translateY(${interpolate(f, [0, dur], [10, -24])}px)` }}>
         <div style={{ fontFamily: SANS, fontSize: 52, letterSpacing: 8, color: S.lime, opacity: a }}>{n} · {title.toUpperCase()}</div>
         <div style={{ fontFamily: SERIF, fontSize: 78, lineHeight: 1.12, color: "#F4F0E6", marginTop: 26, clipPath: `inset(0 ${(1 - b) * 100}% 0 0)` }}>{fact}</div>
       </div>
