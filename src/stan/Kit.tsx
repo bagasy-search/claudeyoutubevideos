@@ -67,7 +67,7 @@ export const AvatarFramed: React.FC<{ src: string; seed: number; dur: number; mo
     const ra = m.k === "punch" ? 4 : 12, rb = m.k === "punch" ? 6 : 10;
     const w = interpolate(f, [m.a, m.a + ra, Math.max(m.a + ra + 1, m.b - rb), Math.max(m.a + ra + 2, m.b)], [0, 1, 1, 0], { ...CL, easing: Easing.inOut(Easing.cubic) });
     if (m.k === "punch") z *= 1 + 0.12 * w;
-    if (m.k === "split") tx += -24 * w;
+    if (m.k === "split") tx += 24 * w;
   }
   if (mano) { const g = (seed % 7) * 40; tx += 0.35 * Math.sin((f + g) / 47) + 0.2 * Math.sin((f + g) / 23); ty += 0.25 * Math.sin((f + g) / 61); rot = 0.18 * Math.sin((f + g) / 71); z *= 1.03; }
   return (

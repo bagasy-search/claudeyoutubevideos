@@ -1,7 +1,7 @@
 // Main Stan (stan12; base Main Loretta lor11 S1): 3 capas (avatar por ventanas · material con entradas · overlays) + mezcla de audio.
 // Sin Grade/viñeta/grano. Datos en cues.gen.ts (D:/rtmp/<slug>/tools/gen.mjs).
 import React from "react";
-import { AbsoluteFill, Sequence, interpolate, useCurrentFrame, Easing } from "remotion";
+import { AbsoluteFill, Sequence, interpolate, useCurrentFrame, Easing, Img, staticFile } from "remotion";
 import { SHOTS, AVATAR, OVERLAYS, TOTAL, MIX, MANO, PLATE } from "./cues.gen";
 import * as K from "./Kit";
 import * as E from "./Escenas";
@@ -147,6 +147,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
 
 export const MainStan: React.FC = () => (
   <AbsoluteFill style={{ background: "#111" }}>
+    {PLATE ? <Img src={staticFile(PLATE)} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover" }} /> : null}
     {AVATAR.map((a: any, i: number) => (
       <Sequence key={"a" + i} from={a.from} durationInFrames={a.dur} premountFor={30}>
         <K.AvatarFramed src={a.src} seed={i} dur={a.dur} mods={a.mods} mano={MANO} plate={PLATE} />
