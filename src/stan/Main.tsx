@@ -114,7 +114,7 @@ const Enter: React.FC<{ trans: string; children: React.ReactNode; seed: number }
   }
   if (trans === "sube") { // paso nuevo: entra de abajo hacia arriba como sube el agua por la pared, con su línea de humedad azul
     const y = interpolate(f, [0, 16], [100, 0], { extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
-    return <AbsoluteFill><AbsoluteFill style={{ clipPath: `inset(${y}% 0 0 0)` }}>{children}</AbsoluteFill>
+    return <AbsoluteFill><AbsoluteFill style={{ filter: `brightness(${0.45 + 0.55 * (1 - y / 100)})` }}>{children}</AbsoluteFill><AbsoluteFill style={{ clipPath: `inset(${y}% 0 0 0)` }}>{children}</AbsoluteFill>
       {f < 17 ? <div style={{ position: "absolute", left: 0, right: 0, top: `calc(${y}% - 4px)`, height: 8, background: "#7FB7D9", boxShadow: "0 0 18px rgba(127,183,217,0.8)" }} /> : null}</AbsoluteFill>;
   }
   return <AbsoluteFill>{children}</AbsoluteFill>;
