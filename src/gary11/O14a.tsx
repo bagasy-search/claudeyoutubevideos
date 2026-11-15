@@ -53,8 +53,7 @@ export const Patch: React.FC<{ text: string; sub: string; dur: number }> = ({ te
 export const PanelDoor: React.FC<{ src: string; seed: number; dur: number; label?: string }> = ({ src, seed, dur, label }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 14, 12); const kb = useKB(seed, dur);
   return <><div style={{ position: "absolute", left: 1040, top: 0, right: 0, bottom: 0, opacity: cl(o * 2), overflow: "hidden", boxShadow: "-16px 0 24px rgba(0,0,0,.45)" }}>
-    <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(14,16,20,.78), rgba(14,16,20,.88))" }} /></div>
+    <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(0deg, rgba(255,255,255,.03) 0 1px, rgba(0,0,0,.05) 1px 3px), linear-gradient(90deg,#2e343a,#1c2025)" }} /></div>
   <div style={{ position: "absolute", left: 1100, top: 110, width: 760, height: 860, perspective: 1800 }}>
     <div style={{ position: "absolute", inset: 0, background: "#9aa1a8", borderRadius: 10, border: "16px solid #6f767c", overflow: "hidden", opacity: cl(o * 2) }}>
       <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
@@ -113,8 +112,8 @@ export const MidCta: React.FC<{ dur: number }> = ({ dur }) => {
   return <div style={{ position: "absolute", right: 80, bottom: 70, transform: `translateY(${(1 - o) * 520}px) rotate(-4deg)` }}>
     <div style={{ width: 400, height: 500, background: "#1f3a5f", borderRadius: "6px 14px 14px 6px", borderLeft: "26px solid #142843", boxShadow: "0 22px 30px rgba(0,0,0,.45)", padding: "40px 30px", boxSizing: "border-box" }}>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 52, color: "#f6efe0", lineHeight: 1.05 }}>THE WINTER BLACKOUT MANUAL</div>
-      <div style={{ marginTop: 26, fontFamily: SANS, fontWeight: 700, fontSize: 28, color: "#e9dcc4", lineHeight: 1.2 }}>station + generator: the whole plan on one page</div>
+      <div style={{ marginTop: 26, fontFamily: SANS, fontWeight: 700, fontSize: 28, color: "#e9dcc4", lineHeight: 1.2 }}>the whole station +<br />generator plan, one page</div>
     </div>
-    <div style={{ position: "absolute", left: 6, right: 6, bottom: 34, padding: "12px 0", background: YEL, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 28, color: INK, letterSpacing: 1, transform: "rotate(-3deg)", boxShadow: "0 6px 10px rgba(0,0,0,.35)", whiteSpace: "nowrap" }}>LINK IN THE DESCRIPTION</div>
+    <div style={{ position: "absolute", left: 6, right: 6, bottom: 34, padding: "12px 0", background: YEL, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 26, color: INK, letterSpacing: 1, transform: "rotate(-3deg)", boxShadow: "0 6px 10px rgba(0,0,0,.35)", whiteSpace: "nowrap" }}>LINK IN THE DESCRIPTION</div>
   </div>;
 };

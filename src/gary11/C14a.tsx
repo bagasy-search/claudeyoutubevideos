@@ -222,7 +222,7 @@ const Stencil: React.FC<P> = ({ m }) => {
 };
 // ================= twenty (045): la cinta métrica sale de la pared de la casa hasta el generador, 20 FT
 const Tape20: React.FC<P> = ({ m }) => {
-  const f = useCurrentFrame(); const t = io((f - 10) / 50), ft = Math.round(t * 20), X0 = 506, L = 884;
+  const f = useCurrentFrame(); const t = io((f - 10) / 50), ft = Math.round(t * 20), X0 = 540, L = 840;
   return <Plate src="y0430" d={0.58}>
     <Print src="g1810" x={60} y={250} w={420} h={480} rot={-2} cap="THE HOUSE" />
     <Print src="y0080" x={1390} y={250} w={440} h={480} rot={2} e={k(f, 50)} cap="GENERATOR" capCol={GN} />
@@ -230,7 +230,7 @@ const Tape20: React.FC<P> = ({ m }) => {
     <div style={{ position: "absolute", left: X0, top: 560, width: L * t, height: 74, background: YEL, borderTop: "4px solid #b8901a", borderBottom: "4px solid #b8901a", overflow: "hidden", boxShadow: "0 8px 0 rgba(0,0,0,.3)" }}>
       {Array.from({ length: 21 }).map((_, i) => <div key={i} style={{ position: "absolute", left: i * (L / 20) - 2, top: 0, width: 4, height: i % 5 ? 26 : 46, background: INK }} />)}
     </div>
-    {[0, 5, 10, 15, 20].map((i) => <div key={i} style={{ position: "absolute", left: X0 + i * (L / 20) - 30, width: 60, top: 650, textAlign: "center", fontFamily: SANS, fontWeight: 800, fontSize: 34, color: CREAM, opacity: i / 20 <= t + 0.001 ? 1 : 0 }}>{i}</div>)}
+    {[0, 5, 10, 15, 20].map((i) => <div key={i} style={{ position: "absolute", left: X0 + i * (L / 20) - 30, width: 60, top: 672, textAlign: "center", fontFamily: SANS, fontWeight: 800, fontSize: 34, color: CREAM, opacity: i / 20 <= t + 0.001 ? 1 : 0 }}>{i}</div>)}
     <div style={{ position: "absolute", left: X0 + L * t - 44, top: 540, width: 88, height: 116, background: "linear-gradient(#444,#1a1a1a)", borderRadius: 14, boxShadow: "0 6px 0 rgba(0,0,0,.35)" }}><div style={{ margin: "34px 18px", height: 40, borderRadius: 20, background: YEL }} /></div>
     <Lbl size={40} col={CREAM} style={{ position: "absolute", left: 60, top: 900, opacity: k(f, M(m, 0, 120)), background: "rgba(29,36,48,.88)", padding: "10px 24px", borderRadius: 6, whiteSpace: "nowrap" }}>EXHAUST POINTED AWAY FROM DOORS, WINDOWS & VENTS</Lbl>
   </Plate>;
