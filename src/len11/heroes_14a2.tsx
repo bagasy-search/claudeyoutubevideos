@@ -27,14 +27,14 @@ export const water_bill: H = ({ dur, v = 0 }) => {
 // ── TUB_ROW (dato con fuente real): 200 galones = cinco bañeras de hierro que entran en fila y se llenan
 export const tub_row: H = ({ dur }) => {
   const t = useT();
-  return (<F dur={dur}><Stage rx={18} ry={-8 + Math.sin(t * 0.3) * 4} bg={TILE}>
+  return (<F dur={dur}><Stage rx={14} ry={Math.sin(t * 0.3) * 3} bg={TILE}>
     {[0, 1, 2, 3, 4].map((i) => { const p = eout(pr(t, 0.2 + i * 0.3, 0.7 + i * 0.3)), fill = eio(pr(t, 1.4 + i * 0.25, 2.4 + i * 0.25));
-      return <Box key={i} x={150 + i * 340} y={420} w={300} h={260} z={lerp(-500, 0, p)} o={p} style={{ background: "linear-gradient(180deg,#ffffff,#d9d6cc)", borderRadius: "30px 30px 120px 120px", boxShadow: "0 30px 30px rgba(0,0,0,0.3)", overflow: "hidden" }}>
+      return <Box key={i} x={210 + i * 310} y={420} w={280} h={260} z={lerp(-500, 0, p)} o={p} style={{ background: "linear-gradient(180deg,#ffffff,#d9d6cc)", borderRadius: "30px 30px 120px 120px", boxShadow: "0 30px 30px rgba(0,0,0,0.3)", overflow: "hidden" }}>
         <div style={{ position: "absolute", left: 18, right: 18, bottom: 18, height: 180 * fill, borderRadius: "10px 10px 100px 100px", background: "linear-gradient(180deg,#8fc6e6,#4e8fbf)" }} />
         <div style={{ position: "absolute", bottom: -40, left: 40, width: 36, height: 50, background: "#b08d57", borderRadius: 8 }} /><div style={{ position: "absolute", bottom: -40, right: 40, width: 36, height: 50, background: "#b08d57", borderRadius: 8 }} />
-        <div style={{ position: "absolute", top: 90, width: "100%", textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 36, color: K.navy, opacity: fill }}>40 GAL</div>
+        <div style={{ position: "absolute", top: 90, width: "100%", textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 56, color: K.navy, opacity: fill }}>40 GAL</div>
       </Box>; })}
-    <Tx x={960} y={110} s={92} c={K.navy} f={SLAB} wt={900}>~200 GALLONS A DAY</Tx>
+    <Tx x={960} y={110} s={92} c={K.navy} f={SLAB} wt={900}>UP TO 200 GALLONS A DAY</Tx>
     <Tx x={960} y={830} s={40} c={K.ink} wt={700} o={cl((t - 2) * 2)}>a toilet that keeps running · source: EPA WaterSense</Tx>
   </Stage></F>);
 };

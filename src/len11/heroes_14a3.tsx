@@ -219,9 +219,9 @@ export const counter_bell: H = ({ dur, v = 0 }) => {
 // ── BRICK_WALL: dos botellas (TOILET CLEANER / BLEACH) y un muro de ladrillos que se levanta hilada por hilada entre ellas
 export const brick_wall: H = ({ dur }) => {
   const t = useT();
-  const bottle = (x: number, lab: string, c: string) => <Box x={x} y={360} w={240} h={480} z={0} style={{ background: `linear-gradient(90deg, ${c}, #fff8 45%, ${c})`, borderRadius: "60px 60px 20px 20px" }}><div style={{ position: "absolute", top: 200, left: 20, right: 20, ...PAPER, padding: 10, textAlign: "center", ...tag(K.ink, 30) }}>{lab}</div></Box>;
+  const bottle = (x: number, lab: string, c: string) => <Box x={x} y={360} w={240} h={480} z={0} style={{ background: `linear-gradient(90deg, ${c}, #fff8 45%, ${c})`, borderRadius: "60px 60px 20px 20px" }}><div style={{ position: "absolute", top: 200, left: 20, right: 20, ...PAPER, padding: 10, textAlign: "center", ...tag(K.ink, 46) }}>{lab}</div></Box>;
   return (<F dur={dur}><Stage rx={10} ry={Math.sin(t * 0.4) * 10} bg={TILE}>
-    {bottle(360, "TOILET CLEANER", "#2f7fb8")}{bottle(1320, "BLEACH", "#e8e8e8")}
+    {bottle(360, "CLEANER", "#2f7fb8")}{bottle(1320, "BLEACH", "#e8e8e8")}
     {Array.from({ length: 30 }, (_, i) => { const row = Math.floor(i / 3), col = i % 3, p = eout(pr(t, 0.2 + i * 0.07, 0.5 + i * 0.07));
       return <div key={i} style={{ position: "absolute", left: 770 + col * 130 + (row % 2) * 30 - 15, top: 860 - row * 52 - (1 - p) * 300, width: 124, height: 46, background: "linear-gradient(180deg,#b5553a,#8a3a24)", borderRadius: 3, opacity: p, boxShadow: "0 3px 0 #d8cfc0" }} />; })}
     <Tx x={960} y={60} s={84} c={K.red} wt={900}>NEVER MIX. EVER.</Tx>
@@ -238,10 +238,10 @@ export const ball_valve: H = ({ dur }) => {
     <Box x={810} y={420} w={300} h={300} z={10} style={{ borderRadius: 150, background: "radial-gradient(circle at 35% 30%, #fff, #c9c9c9 60%, #888)", transform: `translateZ(10px) rotate(${ang}deg)` }}>
       <div style={{ position: "absolute", left: 0, right: 0, top: 110, height: 80, background: "#5d9ec4" }} />
     </Box>
-    <div style={{ position: "absolute", left: 950, top: 240, width: 20, height: 200, background: "#555" }} />
-    <div style={{ position: "absolute", left: 960, top: 230, width: 420, height: 60, background: "linear-gradient(180deg,#e04a2a,#9a2a12)", borderRadius: 30, transformOrigin: "0 50%", transform: `rotate(${-ang}deg)` }} />
-    <Tx x={960} y={50} s={74} c={K.navy} wt={900}>ONE QUARTER TURN</Tx>
-    <Tx x={960} y={800} s={64} c={q < 0.5 ? K.green : K.red} wt={900}>{q < 0.5 ? "OPEN" : "CLOSED"}</Tx>
+    <div style={{ position: "absolute", left: 950, top: 360, width: 20, height: 80, background: "#555" }} />
+    <div style={{ position: "absolute", left: 960, top: 340, width: 250, height: 60, background: "linear-gradient(180deg,#e04a2a,#9a2a12)", borderRadius: 30, transformOrigin: "0 50%", transform: `rotate(${-ang}deg)` }} />
+    <Tx x={960} y={880} s={74} c={K.navy} wt={900}>ONE QUARTER TURN</Tx>
+    <Tx a="left" x={1260} y={300} w={560} s={72} c={q < 0.5 ? K.green : K.red} wt={900}>{q < 0.5 ? "OPEN" : "CLOSED"}</Tx>
   </Stage></F>);
 };
 
