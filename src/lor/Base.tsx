@@ -95,12 +95,17 @@ export const RecipeCard: React.FC<{ card: Card; look: Look; dur: number }> = ({ 
   // título y datos ya están en el cuadro 0 (nada de hoja vacía); las líneas entran rápido de a una
   const L = (i: number) => (i <= 1 ? 1 : interpolate(f, [i * 3, i * 3 + 6], [0, 1], CL));
   const col = look.key === "church" ? "#2B2219" : C.ink;
-  const nL = Math.max(card.ing.length * 1.2, card.steps.length * 1.55) + (card.note ? 1 : 0);
-  const H = 92 + 96 + 110 + nL * 64 + 80;
+  // alto real estimado contando los renglones partidos (columna ≈ 30 caracteres de Kalam 42 px)
+  const wr = (x: string, c: number) => Math.max(1, Math.ceil(x.length / c));
+  const nIng = card.ing.reduce((a, x) => a + wr(x, 30), 0) * 61;
+  const nSt = card.steps.reduce((a, x) => a + wr(x, 32) * 56 + 8, 0);
+  const nNote = card.note ? 24 + wr(card.note, 52) * 52 : 0;
+  const nL = (Math.max(nIng, nSt) + nNote) / 64;
+  const H = 92 + 96 + 110 + nL * 64 + 120;
   // márgenes calculados para que, con la escala ZC, ningún texto quede a menos de 80 px del borde
   const ZC = 1.12, M = 960 - (960 - 80) / ZC;
-  const travel = Math.max(0, H * ZC - 1080 + 70);
-  const cy = -travel * ease((f - dur * 0.2) / (dur * 0.6));
+  const travel = Math.max(0, H * ZC - 1080 + 110);
+  const cy = -travel * ease((f - dur * 0.15) / (dur * 0.55));
   const cz = ZC + 0.03 * f / Math.max(1, dur);
   return (
     <Paper look={look} dur={dur}>
@@ -136,6 +141,7 @@ export const TrickTitle: React.FC<{ n: number; N: number; name: string; look: Lo
   const rot = (hash(n) % 2 ? 1 : -1) * (3 + (hash(n + 7) % 4));
   const bar = interpolate(f, [4, 22], [(n - 1) / N, n / N], { ...CL, easing: Easing.out(Easing.cubic) });
   const p = ease(f / Math.max(1, dur));
+  const extra = n > N; // capítulo fuera de la cuenta (p. ej. «From Your Letters»): sin número ni barra
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <Img src={staticFile(look.table)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.08 * p})` }} />
@@ -143,14 +149,14 @@ export const TrickTitle: React.FC<{ n: number; N: number; name: string; look: Lo
         transform: `translate(${(1 - inn) * 900}px, ${(1 - inn) * -80}px) rotate(${rot * inn + (1 - inn) * 18 - rot * 0.7 * p}deg) scale(${1 + 0.12 * p})` }}>
         <Img src={staticFile(look.paper)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
         <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", padding: "0 80px" }}>
-          <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 190, lineHeight: 1, color: C.red, transform: `scale(${1 + 0.5 * (1 - spring({ frame: f, fps: 30, config: { damping: 11, mass: 0.6 } }))})` }}>{n}</div>
+          {!extra && <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 190, lineHeight: 1, color: C.red, transform: `scale(${1 + 0.5 * (1 - spring({ frame: f, fps: 30, config: { damping: 11, mass: 0.6 } }))})` }}>{n}</div>}
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 100, lineHeight: 1.05, color: C.ink, marginTop: 4 }}>{name.split(" ").map((w, i) => { const s = spring({ frame: f - 4 - i * 3, fps: 30, config: { damping: 14 } }); return <span key={i} style={{ display: "inline-block", opacity: s > 0.02 ? 1 : 0, transform: `translateY(${(1 - s) * 40}px) scale(${0.7 + 0.3 * s})`, marginRight: 22 }}>{w}</span>; })}</div>
         </div>
       </div>
-      <div style={{ position: "absolute", left: 320, right: 320, bottom: 70, background: "rgba(20,17,13,0.82)", borderRadius: 22, padding: "16px 34px 22px" }}>
+      {!extra && <div style={{ position: "absolute", left: 320, right: 320, bottom: 70, background: "rgba(20,17,13,0.82)", borderRadius: 22, padding: "16px 34px 22px" }}>
         <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 50, color: "#fff", marginBottom: 12, textAlign: "center", letterSpacing: 1 }}>{label.toUpperCase()} {n} OF {N}</div>
         <div style={{ height: 20, background: "rgba(255,255,255,0.28)", borderRadius: 10, overflow: "hidden" }}><div style={{ width: `${bar * 100}%`, height: "100%", background: "#E0533F" }} /></div>
-      </div>
+      </div>}
     </AbsoluteFill>
   );
 };
@@ -159,8 +165,9 @@ export const TrickTitle: React.FC<{ n: number; N: number; name: string; look: Lo
 export const Carousel: React.FC<{ items: { title: string; src: string }[]; look: Look; head: string; dur: number }> = ({ items, look, head, dur }) => {
   // las fotos reales de cada receta entran de a una, grandes y numeradas, y van a su lugar en una grilla 3x2
   const f = useCurrentFrame(); const N = items.length;
-  const cols = N <= 6 ? 3 : 4, rows = Math.ceil(N / cols);
-  const W = cols === 3 ? 500 : 400, IH = Math.round(W * 0.56), CW = W + 70, RH = IH + 150;
+  // hasta 8 en 4 columnas; 9–10 en 5 columnas x 2 filas para que entren enteras
+  const cols = N <= 6 ? 3 : N <= 8 ? 4 : 5, rows = Math.ceil(N / cols);
+  const W = cols === 3 ? 500 : cols === 4 ? 400 : 318, IH = Math.round(W * 0.56), CW = W + (cols === 5 ? 50 : 70), RH = IH + (cols === 5 ? 170 : 150);
   const gy0 = 205 + Math.max(0, (2 - rows) * RH / 2);
   const step = Math.max(10, Math.floor((dur * 0.62) / N));
   const kz = 1 + 0.06 * ease(f / Math.max(1, dur));
@@ -189,7 +196,7 @@ export const Carousel: React.FC<{ items: { title: string; src: string }[]; look:
                 <Img src={staticFile(c.src)} style={{ width: "100%", height: IH, objectFit: "cover", display: "block" }} />
                 <div style={{ position: "absolute", left: 10, top: 10, width: 58, height: 58, borderRadius: 29, background: C.red, color: "#fff", fontFamily: SERIF, fontWeight: 700, fontSize: 38, display: "flex", alignItems: "center", justifyContent: "center" }}>{i + 1}</div>
               </div>
-              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: cols === 3 ? 40 : 34, color: C.ink, textAlign: "center", marginTop: 8, lineHeight: 1.08, height: 88, display: "flex", alignItems: "center", justifyContent: "center" }}>{c.title}</div>
+              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: cols === 3 ? 40 : cols === 4 ? 34 : 31, color: C.ink, textAlign: "center", marginTop: 8, lineHeight: 1.08, height: 88, display: "flex", alignItems: "center", justifyContent: "center" }}>{c.title}</div>
             </div></div>);
       })}
     </AbsoluteFill>
@@ -233,7 +240,7 @@ export const BookCTA: React.FC<{ page: string; qr: string; look: Look; head: str
       <div style={{ position: "absolute", left: 230, top: 40, height: 1000, width: 773, boxShadow: "0 30px 70px rgba(0,0,0,0.5)", transform: `translateY(${(1 - inn) * 700}px) rotateX(${8 * inn}deg) rotateY(${6 - 6 * ease(f / Math.max(1, dur))}deg) rotate(${-2.5 * inn}deg) scale(${z})`, transformOrigin: "50% 60%" }}>
         <Img src={staticFile(page)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </div>
-      <div style={{ position: "absolute", left: 1100, top: 170, width: 620, opacity: q > 0.02 ? 1 : 0, transform: `translateX(${(1 - q) * 700}px) rotate(2deg) scale(${pulse})` }}>
+      <div style={{ position: "absolute", left: 1130, top: 110, width: 520, opacity: q > 0.02 ? 1 : 0, transform: `translateX(${(1 - q) * 700}px) rotate(2deg) scale(${pulse})` }}>
         <div style={{ background: "#fff", padding: 26, boxShadow: "0 20px 50px rgba(0,0,0,0.45)" }}><Img src={staticFile(qr)} style={{ width: "100%", display: "block" }} /></div>
         <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 58, color: "#fff", textShadow: "0 3px 16px rgba(0,0,0,0.8)", marginTop: 26, textAlign: "center", lineHeight: 1.1 }}>{head}</div>
         <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 44, color: "#fff", textShadow: "0 2px 12px rgba(0,0,0,0.8)", marginTop: 10, textAlign: "center" }}>{sub}</div>
@@ -264,7 +271,8 @@ export const Data: React.FC<{ big: string; line: string; src: string; dur: numbe
   const f = useCurrentFrame(); const s = spring({ frame: f, fps: 30, config: { damping: 17 } });
   const out = interpolate(f, [dur - 6, dur - 1], [1, 0], { ...CL, easing: Easing.in(Easing.cubic) });
   const m = big.match(/^(\d+)(.*)$/); const v = m ? parseInt(m[1]) : 0;
-  const cnt = m && v >= 20 ? Math.round(v * (0.6 + 0.4 * ease(f / 22))) + m[2].replace(/^ (°)/, "$1") : big.replace(/ °/, "°");
+  // la cifra llega al valor real en 8 cuadros: nunca queda leíble un número equivocado
+  const cnt = m && v >= 20 ? Math.round(v * (0.9 + 0.1 * ease(f / 8))) + m[2].replace(/^ (°)/, "$1") : big.replace(/ °/, "°");
   const short = /USDA/.test(src) ? "USDA" : src;
   return (<AbsoluteFill>
     <div style={{ position: "absolute", left: 50, top: 190, background: "rgba(255,250,240,0.97)", padding: "22px 38px", width: 620, boxShadow: "0 16px 40px rgba(0,0,0,0.4)", transform: `scale(${(0.6 + 0.4 * s) * out * (1 + 0.025 * Math.sin(f / 16))})`, transformOrigin: "0% 0%" }}>
@@ -321,7 +329,8 @@ export const Ask: React.FC<{ text: string; dur: number }> = ({ text, dur }) => {
 
 // (2) barra de progreso chica, abajo: «trick 7 of 30»
 export const Prog: React.FC<{ n: number; N: number; label: string; look: Look; dur: number }> = ({ n, N, label, look, dur }) => {
-  const f = useCurrentFrame(); const s = spring({ frame: f, fps: 30, config: { damping: 18 } });
+  const f = useCurrentFrame();
+  if (n > N) return null; const s = spring({ frame: f, fps: 30, config: { damping: 18 } });
   const out = interpolate(f, [dur - 6, dur - 1], [0, 1], { ...CL, easing: Easing.in(Easing.cubic) });
   return (<AbsoluteFill>
     <div style={{ position: "absolute", left: 50, top: 44, padding: "16px 26px 20px", background: "rgba(20,17,13,0.86)", borderRadius: 20, transform: `translateX(${(1 - s) * -480 - out * 520}px)` }}>

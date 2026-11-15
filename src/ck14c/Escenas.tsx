@@ -109,6 +109,8 @@ export const Corn: React.FC<{ dur: number; fDrive: number; fBuckets: number; fSh
   return (
     <AbsoluteFill style={{ backgroundColor: "#0b0907", overflow: "hidden" }}>
       <div style={{ ...BOX, transform: `scale(${cam})`, transformOrigin: "1210px 400px" }}>
+        {/* la foto entera ya está, en penumbra, desde el cuadro 0: nunca hay negro */}
+        <Img src={S("e_corn")} style={{ ...FULL, opacity: 0.3, filter: "brightness(0.55) saturate(0.6)" }} />
         {plane("radial-gradient(ellipse 230px 190px at 1210px 205px, #000 60%, transparent 100%)", o(fDrive))}
         {plane("linear-gradient(to bottom, transparent 270px, #000 340px, #000 720px, transparent 800px)", o(fBuckets))}
         {plane("linear-gradient(to bottom, #000 0px, #000 430px, transparent 560px)", o(fShed))}
@@ -142,7 +144,8 @@ const PANES = ["inset(0px 1365px 612px 248px)", "inset(497px 1365px 128px 248px)
 export const Blizzard: React.FC<{ dur: number; fWind: number; fCars: number }> = ({ dur, fWind, fCars }) => {
   const f = useCurrentFrame();
   const R = interpolate(f, [0, fWind - 12, fCars + 6], [70, 260, 1250], { ...CL, easing: Easing.in(Easing.quad) });
-  const fog = `radial-gradient(circle at 1190px 150px, rgba(238,234,226,0.97) 0px, rgba(238,234,226,0.95) ${R * 0.72}px, rgba(238,234,226,0) ${R}px)`;
+  // niebla de borde muy suave (sin disco duro) y tope 0,88: los marcos y un fantasma de los autos siguen viéndose
+  const fog = `radial-gradient(circle at 1190px 150px, rgba(238,234,226,0.88) 0px, rgba(238,234,226,0.8) ${R * 0.3}px, rgba(238,234,226,0.45) ${R * 0.65}px, rgba(238,234,226,0) ${R}px)`;
   const cam = interpolate(f, [0, dur], [1.0, 1.04], CL);
   return (
     <AbsoluteFill style={{ backgroundColor: "#000", overflow: "hidden" }}>
