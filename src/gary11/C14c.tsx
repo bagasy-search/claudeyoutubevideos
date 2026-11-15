@@ -1338,7 +1338,7 @@ const Cta: React.FC<P> = ({ dur, m }) => {
     <div style={ab(1180, 340, 24, 230, { background: RED, transformOrigin: "50% 100%", transform: `rotate(${90 - 90 * flag}deg)` })}><div style={ab(0, 0, 110, 70, { background: RED })} /></div>
     <div style={ab(lerp(-700, 560, env), 640 + (1 - env) * -200, 620, 270, { background: "#fbf8ef", boxShadow: "6px 8px 0 rgba(0,0,0,.3)", transform: `rotate(${(1 - env) * -14 - 2}deg)`, boxSizing: "border-box" })}>
       <div style={ab(18, 18, 220, 234, { overflow: "hidden", borderRadius: 10, background: "#222" })}><Img src={G("g2630")} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
-      <div style={{ position: "absolute", left: 260, right: 20, top: 22 }}><Tx size={26} col="#6a5a40">NEXT VIDEO</Tx><Tx size={36} col={INK} style={{ fontFamily: SERIF, marginTop: 10, lineHeight: 1.12 }}>KEEPING YOUR HOUSE WARM WHEN THE POWER'S OUT</Tx></div></div>
+      <div style={{ position: "absolute", left: 260, right: 20, top: 22 }}><Tx size={28} col="#6a5a40">NEXT VIDEO</Tx><Tx size={36} col={INK} style={{ fontFamily: SERIF, marginTop: 10, lineHeight: 1.12 }}>KEEPING YOUR HOUSE WARM WHEN THE POWER'S OUT</Tx></div></div>
     <Ch t="subscribe" at={t0} f={f} x={1300} y={200} size={100} col={RED} />
     <Ch t="now the prize →" at={t2} f={f} x={1300} y={700} size={70} col={YEL} />
   </Floor>;
@@ -1456,22 +1456,22 @@ const Talk: React.FC<P & { k: TK }> = ({ dur, m, k: c }) => {
 };
 const FIX: Record<string, TK> = {
   leaks: { ph: "g0280", pics: [["g0410", "the garage"], ["g0420", "the kitchen"]], lines: [["three ways in:", -1], ["the door", 0, YEL], ["gaps around pipes", 1, YEL], ["& the wires", 1, YEL, 66, 8], ["the attic", 2, YEL]] },
-  draft: { ph: "g2251", pics: [["g0420", "pulled in from the garage"]], lines: [["the furnace runs", 0], ["the wind blows", 1], ["warm air rises", 2], ["it pulls air", 3, YEL], ["from anywhere it can", 3, YEL, 62, 8]] },
+  draft: { ph: "g2251", pics: [["g0420", "pulled in from the garage"]], lines: [["warm air rises —", 2, CH, 84], ["it pulls air in", 3, YEL, 84]] }, // r3: 2 renglones
   "draft:garage": { ph: "g1690", pics: [["g0410", "the attached garage"]], lines: [["a lot of it", -1, CH, 84], ["comes from", -1, CH, 84, 10], ["the garage.", -1, YEL, 92, 22]] },
   yard20: { ph: "g2010", pics: [["g0480", "a stake at 20 FT"], ["g0531", "exhaust pointed away"]], lines: [["at least 20 FT", 0, YEL, 84], ["from the house", 0, CH, 66, 10], ["exhaust pointed away", 1], ["from windows,", 2], ["doors and vents", 2, CH, 66, 8]], src: "U.S. CPSC" },
   chainprice: { ph: "g0281", pics: [["g0490", "chained to the stake"]], lines: [["a 12-ft chain", 0], ["+ a good padlock", 1], ["cost less than", 2, YEL], ["one night in the ER", 2, YEL, 66, 10]] },
-  shutoff: { ph: "g2800", pics: [["g0720", "CO shut-off on the box"]], lines: [["many new generators", -1], ["have a CO shut-off", 0], ["exhaust builds up…", 1], ["it shuts itself off.", 1, YEL, 70, 12]], stamp: ["CO SHUT-OFF", 0] },
+  shutoff: { ph: "g2800", pics: [["g0720", "CO shut-off on the box"]], lines: [["many new generators", -1], ["have a CO shut-off", 0], ["exhaust builds up…", 1], ["it shuts itself off.", 1, YEL, 70, 12]] }, // r3: sin sello repetido
   hosewall: { ph: "g0630", pics: [["g0910", "the car in the garage"], ["g0880", "the hose out the wall"]], lines: [["run the car", 0], ["door closed", 0, CH, 66, 10], ["a hose from the tailpipe", 1, CH, 60], ["through the wall", 2], ["safe?", 2, YEL, 110, 14]] },
   sealedbox: { ph: "g3110", pics: [["g0910", "door down"]], lines: [["a closed garage", 0, CH, 80], ["is a sealed box", 0, CH, 80, 10], ["with an engine in it.", 1, YEL, 72]] },
   climb: { ph: "g1240", pics: [["g0630", "up the wall"]], lines: [["exhaust is hot", -1, CH, 92], ["— and it climbs.", -1, YEL, 92, 18]] },
-  window10: { ph: "g1090", pics: [["g1040", "10 FT from the house"]], lines: [["10 FT from the house", 0, CH, 66], ["a window cracked open", 1], ["for fresh air…", 1, CH, 66, 10], ["straight into", 2, YEL, 80], ["the house", 2, YEL, 80, 8]] },
-  neighbor: { ph: "g1350", pics: [["g1110", "20 feet apart"]], lines: [["houses 20 FT apart", 0], ["your neighbor's generator", 1, CH, 58], ["closer to your window", 2, YEL], ["than his own.", 2, YEL, 66, 10]] },
-  sidecheck: { ph: "g1350", head: "20 feet — and look at that side of the house", pics: [["g0591", "WINDOW?"], ["g1060", "DOOR?"], ["g1620", "VENT?"]], lines: [] },
-  flue: { ph: "g1910", pics: [["g1570", "the exhaust goes out"]], lines: [["your furnace", 0], ["your water heater", 0, CH, 66, 10], ["they burn gas", 0, CH, 66, 20], ["the exhaust", 1, YEL, 80], ["has to go out.", 1, YEL, 80, 8]] },
-  inout: { ph: "g1780", pics: [["g1680", "two pipes"]], lines: [["one brings", 0], ["air in", 0, "#8fc4f0", 96, 8], ["one pushes", 1], ["exhaust out", 1, YEL, 96, 8]] },
+  window10: { ph: "g1090", pics: [["g1040", "right under the window"]], lines: [["10 FT from the house", 0, CH, 66], ["a window cracked open", 1], ["for fresh air…", 1, CH, 66, 10], ["straight into", 2, YEL, 80], ["the house", 2, YEL, 80, 8]] },
+  neighbor: { ph: "g1200", pics: [["g1110", "20 feet apart"]], lines: [["houses 20 FT apart", 0], ["your neighbor's generator", 1, CH, 58], ["closer to your window", 2, YEL], ["than his own.", 2, YEL, 66, 10]] },
+  sidecheck: { ph: "g0660", head: "20 feet — and look at that side of the house", pics: [["g0591", "WINDOW?"], ["g1060", "DOOR?"], ["g1620", "VENT?"]], lines: [] },
+  flue: { ph: "g1600", pics: [["g1570", "the exhaust goes out"]], lines: [["your furnace", 0], ["your water heater", 0, CH, 66, 10], ["they burn gas", 0, CH, 66, 20], ["the exhaust", 1, YEL, 80], ["has to go out.", 1, YEL, 80, 8]] },
+  inout: { ph: "g1650", pics: [["g1680", "two pipes"]], lines: [["one brings", 0], ["air in", 0, "#8fc4f0", 96, 8], ["one pushes", 1], ["exhaust out", 1, YEL, 96, 8]] },
   ventmap: { ph: "g2380", pics: [["g1620", "dryer + water heater"], ["g1650", "the furnace pipe"]], lines: [["FURNACE", 0, CH, 80], ["WATER HEATER", 1, CH, 80], ["DRYER", 2, CH, 80], ["FIREPLACE", 3, CH, 80]] },
-  towers: { ph: "g1690", pics: [["g1801", "indoor-rated only"]], lines: [["tower heaters", 0], ["patio heaters", 1], ["torpedo heaters", 2], ["never come inside.", 3, RED, 72]], stamp: ["OUTDOOR ONLY", 3] },
-  damper: { ph: "g1930", pics: [["g1880", "damper closed too soon"]], lines: [["the coals are", 0], ["still burning", 0, CH, 66, 8], ["nowhere to go", 1, YEL, 76], ["but into the room", 2, YEL, 76]], stamp: ["DAMPER CLOSED", -1] },
+  towers: { ph: "g1630", pics: [["g1780", "a patio heater · in the den"]], lines: [["tower heaters", 0], ["patio heaters", 1], ["torpedo heaters", 2], ["never come inside.", 3, RED, 72]] }, // r3: foto del error real, sin sello
+  damper: { ph: "g1930", pics: [["g1880", "damper closed too soon"]], lines: [["the coals are", 0], ["still burning", 0, CH, 66, 8], ["nowhere to go", 1, YEL, 76], ["but into the room", 2, YEL, 76]] }, // r3: sin sello
   counter: { ph: "g3270", lines: [["questions from the counter", 0, CH, 92], ["— from your comments", 1, YEL, 76]] },
   alarm4: { ph: "g2020", pics: [["g2950", "the back label"]], lines: [["the real alarm:", -1], ["loud", 0, YEL, 92], ["in groups of four", 0, CH, 66, 10], ["again and again", 1, YEL, 76]] },
 };
@@ -1483,8 +1483,8 @@ const PLATE: Record<string, string> = {
   rank12: "g1730", heaterrules: "g1730", label: "g1801", nosleep: "g0020", perfloor: "g1980", twotypes: "g3420", "place:hall": "g2610", "place:15": "g2980",
   "place:no": "g1802", age14: "g2370", sensor: "g2330", signs: "g0290", "suspect:1": "g3530", "suspect:4": "g3140", suspect: "g3140", firstmin: "g2510",
   emergency: "g2680", propane: "g2760", chirp: "g2950", ctaq: "g2370", check: "g3350", datecalc: "g3390", floorplan: "g3480", next: "g3370", tarp: "g1630",
-  risk: "g2450", counter: "g3270", q: "g2000", protect: "g2800", climb: "g1240", window10: "g1090", inout: "g1780", flue: "g1910", ventmap: "g2380",
-  towers: "g1690", mixes: "g3420", blood: "g0420", sleep: "g0020", recap: "g1280", promise: "g1290", coals: "g1310", sidecheck: "g1350", yard20: "g2010", alarm4: "g2020", dispatch: "g2070", hundreds2: "g2170",
+  risk: "g2450", counter: "g3270", q: "g2000", protect: "g2800", climb: "g1240", window10: "g1090", inout: "g1650", flue: "g1600", ventmap: "g2380",
+  towers: "g1630", mixes: "g3420", blood: "g0420", sleep: "g0020", recap: "g1280", promise: "g1290", coals: "g1310", sidecheck: "g0660", yard20: "g2010", alarm4: "g2020", dispatch: "g2070", hundreds2: "g2170",
 };
 export const CompC14c: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   const [c, ...a] = String(s.comp || s.spec).split(":"); const m: number[] = s.m || [];

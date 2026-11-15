@@ -36,10 +36,8 @@ export const GarageDoor: React.FC<{ dur: number }> = ({ dur }) => {
       <div style={{ position: "absolute", left: 0, bottom: 0, width: 1920, height: 1080, background: "#2a2c30" }}>
         <Img src={staticFile("gary14c/g/g0280.png")} style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, objectFit: "cover" }} />
         <div style={{ position: "absolute", left: 0, right: 0, top: 0, bottom: 0, background: "rgba(10,12,16,.18)" }} />
-        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 60, background: "#1b1d21" }} />
       </div>
     </div>
-    <div style={{ position: "absolute", left: 0, top: h - 18, width: 1920, height: 18, background: "#222", opacity: p > 0.01 ? 1 : 0 }} />
   </AbsoluteFill>;
 };
 
@@ -63,7 +61,7 @@ export const WindowSplit: React.FC<{ src: string; seed: number; dur: number; lab
       <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
       <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 0 0, rgba(255,255,255,.7) 0 8%, rgba(255,255,255,0) 18%), radial-gradient(circle at 100% 100%, rgba(255,255,255,.7) 0 8%, rgba(255,255,255,0) 18%)" }} />
     </div>
-    {label && <div style={{ position: "absolute", left: 34, right: 34, bottom: 30, height: 70, display: "flex", alignItems: "center", fontFamily: SANS, fontWeight: 900, fontSize: Math.min(36, Math.floor(780 / (label.length * 0.68))), color: INK, letterSpacing: 1, whiteSpace: "nowrap", overflow: "hidden" }}>{label}</div>}
+    {label && <div style={{ position: "absolute", left: 34, right: 34, bottom: 30, height: 70, display: "flex", alignItems: "center", fontFamily: SANS, fontWeight: 900, fontSize: Math.max(28, Math.min(36, Math.floor(780 / (label.length * 0.66)))), color: INK, letterSpacing: 0, whiteSpace: "nowrap" }}>{label}</div>}
   </div>;
 };
 
@@ -73,20 +71,20 @@ export const Slide: React.FC<{ src: string; note: string; seed: number; dur: num
   return <div style={{ position: "absolute", [left ? "left" : "right"]: 90, top: 150, width: 760, height: 760, transform: `translateY(${(1 - o) * -1100}px) rotate(${r + (1 - o) * 20}deg)` } as React.CSSProperties}>
     <div style={{ position: "absolute", inset: 0, background: "#f3efe6", borderRadius: 26, boxShadow: "10px 14px 0 rgba(0,0,0,.35)" }} />
     <div style={{ position: "absolute", left: 90, top: 150, width: 580, height: 400, overflow: "hidden", borderRadius: 10, boxShadow: "inset 0 0 0 4px rgba(0,0,0,.2)" }}><Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "sepia(.25) saturate(.9)", ...kb }} /></div>
-    <div style={{ position: "absolute", left: 60, right: 60, top: 40, fontFamily: SANS, fontWeight: 800, fontSize: 24, color: "#8a7a5c", letterSpacing: 4, display: "flex", justifyContent: "space-between" }}><span>KODACHROME</span><span>◦ 35 MM ◦</span></div>
-    <div style={{ position: "absolute", left: 60, right: 60, top: 580, fontFamily: HAND, fontWeight: 700, fontSize: 54, color: "#1f4f8f", lineHeight: 1.05, clipPath: `inset(-20% ${100 - 100 * cl((f - 16) / 22)}% -20% 0)` }}>{note}</div>
+    <div style={{ position: "absolute", left: 60, right: 60, top: 40, fontFamily: SANS, fontWeight: 800, fontSize: 30, color: "#8a7a5c", letterSpacing: 3, display: "flex", justifyContent: "space-between" }}><span>KODACHROME</span><span>◦ 35 MM ◦</span></div>
+    <div style={{ position: "absolute", left: 60, right: 60, top: 580, fontFamily: HAND, fontWeight: 700, fontSize: 48, color: "#1f4f8f", lineHeight: 1.05, textWrap: "balance", clipPath: `inset(-20% ${100 - 100 * cl((f - 16) / 22)}% -20% 0)` }}>{note}</div>
   </div>;
 };
 
 // MEJORA 9 · dato con fuente: etiqueta naranja de advertencia que se pega desde una esquina (se despega el papel de atrás)
 export const WarnLabel: React.FC<{ big: string; label: string; src: string; dur: number }> = ({ big, label, src, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 12, 12); const peel = 1 - ou(f / 16);
-  return <div style={{ position: "absolute", right: 90, top: 30, width: 560, opacity: cl(o * 1.6), transform: `rotate(${3 + peel * 10}deg) translateY(${peel * -60}px)`, transformOrigin: "100% 0" }}>
+  return <div style={{ position: "absolute", right: 90, top: 30, width: 620, opacity: cl(o * 1.6), transform: `rotate(${3 + peel * 10}deg) translateY(${peel * -60}px)`, transformOrigin: "100% 0" }}>
     <div style={{ background: "#f08a24", borderRadius: 18, padding: "26px 34px", border: "6px solid #1b2330", boxShadow: "8px 10px 0 rgba(0,0,0,.35)" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 16 }}><div style={{ width: 0, height: 0, borderLeft: "26px solid transparent", borderRight: "26px solid transparent", borderBottom: `46px solid ${INK}` }} /><div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 32, color: INK, letterSpacing: 6 }}>WARNING</div></div>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 96, color: INK, lineHeight: 1, marginTop: 12 }}>{big}</div>
-      <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 30, color: INK, marginTop: 8 }}>{label}</div>
-      <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 24, color: "#3a2a12", marginTop: 14, paddingTop: 10, borderTop: `3px solid ${INK}` }}>SOURCE · {src}</div>
+      <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 30, color: INK, marginTop: 8, textWrap: "balance" }}>{label}</div>
+      <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 28, color: "#3a2a12", marginTop: 14, paddingTop: 10, borderTop: `3px solid ${INK}`, textWrap: "balance" }}>SOURCE · {src}</div>
     </div>
   </div>;
 };
@@ -96,7 +94,7 @@ export const ExitSign: React.FC<{ text: string; dur: number }> = ({ text, dur })
   const f = useCurrentFrame(); const o = inout(f, dur, 6, 10); const lit = f < 4 ? 0.3 : f < 7 ? 1 : f < 9 ? 0.4 : 1;
   return <div style={{ position: "absolute", right: 80, bottom: 80, opacity: o }}>
     <div style={{ padding: "16px 36px", background: `rgba(${Math.round(30 + 17 * lit)},${Math.round(90 + 68 * lit)},${Math.round(55 + 35 * lit)},1)`, borderRadius: 10, border: "8px solid #e9ecee", boxShadow: "6px 8px 0 rgba(0,0,0,.4)" }}>
-      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 26, letterSpacing: 6, color: "#e8fff0", opacity: 0.6 + 0.4 * lit }}>THE SAFE WAY ➜</div>
+      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 30, letterSpacing: 5, color: "#e8fff0", opacity: 0.6 + 0.4 * lit }}>THE SAFE WAY ➜</div>
       <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 44, color: "#fff", opacity: 0.6 + 0.4 * lit }}>{text}</div>
     </div>
   </div>;
@@ -105,14 +103,15 @@ export const ExitSign: React.FC<{ text: string; dur: number }> = ({ text, dur })
 // CTA de mitad (sin voz): la puerta de un mueble de cocina se entreabre en la esquina y deja ver la página del manual pegada adentro
 export const CabinetPeek: React.FC<{ dur: number }> = ({ dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 18, 14);
-  return <div style={{ position: "absolute", right: 60, top: 20, width: 600, height: 900, transformOrigin: "100% 0", transform: `translateY(${(1 - cl(o * 2)) * -960}px) scale(.8)`, perspective: 1600 }}>
+  // r3: más angosto y pegado al borde derecho (x ≥ 1430) para no tapar la mano de Gary ni el caño; título en 2 renglones fijos, sin corte en «TWO-»
+  return <div style={{ position: "absolute", right: 30, top: 40, width: 460, height: 650, transformOrigin: "100% 0", transform: `translateY(${(1 - cl(o * 2)) * -760}px)`, perspective: 1600 }}>
     <div style={{ position: "absolute", inset: 0, background: "#6e4526", borderRadius: 8, boxShadow: "8px 10px 0 rgba(0,0,0,.35)" }} />
-    <div style={{ position: "absolute", left: 30, top: 30, right: 30, bottom: 30, background: "#f8f5ec", padding: 30, boxSizing: "border-box" }}>
-      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 34, color: "#8a7a5c", letterSpacing: 1 }}>THE WINTER BLACKOUT MANUAL</div>
-      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: INK, lineHeight: 1.05, marginTop: 12 }}>THE TWO-MINUTE CHECK</div>
-      {["test button", "date on the back", "one every floor", "garage door gap"].map((s, i) => <div key={s} style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 12 }}>
-        <div style={{ width: 34, height: 34, flex: "none", border: `4px solid ${INK}` }} /><div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 48, whiteSpace: "nowrap", color: "#1f4f8f" }}>{s}</div></div>)}
-      <div style={{ position: "absolute", left: 20, right: 20, bottom: 20, padding: "10px 0", background: YEL, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 34, color: INK, letterSpacing: 0 }}>LINK IN THE DESCRIPTION</div>
+    <div style={{ position: "absolute", left: 24, top: 24, right: 24, bottom: 24, background: "#f8f5ec", padding: 26, boxSizing: "border-box" }}>
+      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 28, color: "#8a7a5c", letterSpacing: 1, lineHeight: 1.1 }}>THE WINTER BLACKOUT MANUAL</div>
+      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 48, color: INK, lineHeight: 1.05, marginTop: 10, whiteSpace: "nowrap" }}>THE 2-MINUTE<br />CO CHECK</div>
+      {["test button", "date on the back", "one every floor", "garage door gap"].map((s, i) => <div key={s} style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 10 }}>
+        <div style={{ width: 30, height: 30, flex: "none", border: `4px solid ${INK}` }} /><div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 40, whiteSpace: "nowrap", color: "#1f4f8f" }}>{s}</div></div>)}
+      <div style={{ position: "absolute", left: 16, right: 16, bottom: 16, padding: "8px 0", background: YEL, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 32, color: INK, letterSpacing: 0 }}>LINK BELOW</div>
     </div>
     <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg,#8a5a33,#7a4e2b)", borderRadius: 8, border: "10px solid #5a3a20", boxSizing: "border-box", transformOrigin: "0 50%", transform: `rotateY(${-100 * o}deg)`, backfaceVisibility: "hidden" }}>
       <div style={{ position: "absolute", right: 30, top: 300, width: 20, height: 60, background: "#c9ced2", borderRadius: 6 }} />
