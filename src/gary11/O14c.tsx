@@ -81,7 +81,7 @@ export const Slide: React.FC<{ src: string; note: string; seed: number; dur: num
 // MEJORA 9 · dato con fuente: etiqueta naranja de advertencia que se pega desde una esquina (se despega el papel de atrás)
 export const WarnLabel: React.FC<{ big: string; label: string; src: string; dur: number }> = ({ big, label, src, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 12, 12); const peel = 1 - ou(f / 16);
-  return <div style={{ position: "absolute", right: 90, top: 200, width: 560, opacity: cl(o * 1.6), transform: `rotate(${3 + peel * 10}deg) translateY(${peel * -60}px)`, transformOrigin: "100% 0" }}>
+  return <div style={{ position: "absolute", right: 90, top: 30, width: 560, opacity: cl(o * 1.6), transform: `rotate(${3 + peel * 10}deg) translateY(${peel * -60}px)`, transformOrigin: "100% 0" }}>
     <div style={{ background: "#f08a24", borderRadius: 18, padding: "26px 34px", border: "6px solid #1b2330", boxShadow: "8px 10px 0 rgba(0,0,0,.35)" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 16 }}><div style={{ width: 0, height: 0, borderLeft: "26px solid transparent", borderRight: "26px solid transparent", borderBottom: `46px solid ${INK}` }} /><div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 32, color: INK, letterSpacing: 6 }}>WARNING</div></div>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 96, color: INK, lineHeight: 1, marginTop: 12 }}>{big}</div>
@@ -108,11 +108,11 @@ export const CabinetPeek: React.FC<{ dur: number }> = ({ dur }) => {
   return <div style={{ position: "absolute", right: 60, top: 20, width: 520, height: 700, transformOrigin: "100% 0", transform: `translateY(${(1 - cl(o * 2)) * -760}px) scale(.74)`, perspective: 1600 }}>
     <div style={{ position: "absolute", inset: 0, background: "#6e4526", borderRadius: 8, boxShadow: "8px 10px 0 rgba(0,0,0,.35)" }} />
     <div style={{ position: "absolute", left: 30, top: 30, right: 30, bottom: 30, background: "#f8f5ec", padding: 30, boxSizing: "border-box" }}>
-      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 22, color: "#8a7a5c", letterSpacing: 4 }}>THE WINTER BLACKOUT MANUAL</div>
-      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 50, color: INK, lineHeight: 1.05, marginTop: 12 }}>THE TWO-MINUTE CHECK</div>
+      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 30, color: "#8a7a5c", letterSpacing: 1 }}>THE WINTER BLACKOUT MANUAL</div>
+      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 56, color: INK, lineHeight: 1.05, marginTop: 12 }}>THE TWO-MINUTE CHECK</div>
       {["test button", "date on the back", "one every floor", "garage door gap"].map((s, i) => <div key={s} style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 12 }}>
-        <div style={{ width: 30, height: 30, border: `4px solid ${INK}` }} /><div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 40, color: "#1f4f8f" }}>{s}</div></div>)}
-      <div style={{ position: "absolute", left: 20, right: 20, bottom: 20, padding: "10px 0", background: YEL, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 26, color: INK, letterSpacing: 2 }}>LINK IN THE DESCRIPTION</div>
+        <div style={{ width: 30, height: 30, border: `4px solid ${INK}` }} /><div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 46, color: "#1f4f8f" }}>{s}</div></div>)}
+      <div style={{ position: "absolute", left: 20, right: 20, bottom: 20, padding: "10px 0", background: YEL, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 30, color: INK, letterSpacing: 0 }}>LINK IN THE DESCRIPTION</div>
     </div>
     <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg,#8a5a33,#7a4e2b)", borderRadius: 8, border: "10px solid #5a3a20", boxSizing: "border-box", transformOrigin: "0 50%", transform: `rotateY(${-100 * o}deg)`, backfaceVisibility: "hidden" }}>
       <div style={{ position: "absolute", right: 30, top: 300, width: 20, height: 60, background: "#c9ced2", borderRadius: 6 }} />

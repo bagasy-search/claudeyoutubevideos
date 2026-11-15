@@ -69,7 +69,7 @@ const Pic: React.FC<{ id: string; x: number; y: number; w: number; h: number; f:
     <div style={ab(pad, pad, w - 2 * pad, h - pad - bot, { overflow: "hidden", borderRadius: kind === "round" ? 20 : 2, background: "#222" })}>
       <Img src={G(id)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: pos, transform: `scale(${1.1 - 0.06 * e})` }} />
     </div>
-    {cap && <div style={{ position: "absolute", left: pad, right: pad, bottom: 0, height: bot, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: HAND, fontWeight: 700, fontSize: Math.min(44, Math.floor((w - 2 * pad) / (cap.length * 0.5))), color: capCol, whiteSpace: "nowrap" }}>{hand(cap)}</div>}
+    {cap && <div style={{ position: "absolute", left: pad, right: pad, bottom: 0, height: bot, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: HAND, fontWeight: 700, fontSize: Math.min(44, Math.floor((w - 2 * pad) / (cap.length * 0.5))), color: capCol, whiteSpace: "nowrap" }}><span style={{ whiteSpace: "pre" }}>{hand(cap)}</span></div>}
     {tape && <div style={ab(w / 2 - 80, -22, 160, 46, { background: "rgba(236,226,186,.82)", transform: "rotate(-3deg)", boxShadow: "1px 2px 0 rgba(0,0,0,.15)" })} />}
   </div>;
 };
@@ -190,27 +190,16 @@ const Promise2: React.FC<P> = ({ dur, m, a }) => {
     </Floor>;
   }
   const t0 = D(m, 0, dur, 0.15), t1 = D(m, 1, dur, 0.55), t2 = D(m, 2, dur, 0.75); const moon = io(f / dur);
-  return <AbsoluteFill style={{ background: "#2a2f3a" }}>
-    <div style={ab(0, 0, 1920, 1080, { background: `rgba(255,214,140,${0.22 * (1 - k(f, t2, 14))})` })} />
-    <div style={ab(1080, 140, 620, 560, { background: "#0f1828", border: "22px solid #e9e4d8", boxSizing: "border-box", overflow: "hidden" })}>
-      <div style={ab(60 + moon * 320, 360 - moon * 260, 110, 110, { borderRadius: "50%", background: "#f4f1e2", boxShadow: "inset -26px -10px 0 #d9d4bf" })} />
-      <div style={ab(0, 420, 620, 120, { background: SNOW })} />
-      <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: 14, marginLeft: -7, background: "#e9e4d8" }} />
-    </div>
-    <Pic id="g2330" x={150} y={150} w={600} h={520} f={f} at={0} rot={-2} kind="print" tape />
+  return <Floor ph="g3220" dark={0.15}>
+    {/* placa real de noche: sin ventana ni lámpara CSS */}    <Pic id="g2330" x={150} y={150} w={600} h={520} f={f} at={0} rot={-2} kind="print" tape />
     <div style={ab(520, 520 - 40 * (1 - k(f, t0, 12)), 470, 330, { background: "#ffe66b", transform: `rotate(${6 - 4 * k(f, t0, 12)}deg)`, opacity: k(f, t0, 8), boxShadow: "5px 8px 0 rgba(0,0,0,.3)" })}>
       <Ch t="2-minute check" at={t0 + 4} f={f} x={30} y={22} size={56} col={INK} />
       <Ch t="TONIGHT" at={t1} f={f} x={30} y={110} size={78} col={RED} />
       <div style={ab(30, 238, 46, 46, { border: `5px solid ${INK}` })} />
       <Ch t="before bed" at={t2} f={f} x={100} y={222} size={58} col={INK} />
     </div>
-    <div style={ab(1250, 760, 220, 300)}>
-      <div style={{ position: "absolute", left: 30, top: 0, width: 160, height: 120, background: `rgba(255,228,170,${1 - 0.7 * k(f, t2, 10)})`, clipPath: "polygon(20% 0, 80% 0, 100% 100%, 0 100%)" }} />
-      <div style={{ position: "absolute", left: 100, top: 120, width: 20, height: 140, background: "#8a6a48" }} />
-    </div>
-  </AbsoluteFill>;
+  </Floor>;
 };
-
 // ================= CDC =================
 // cdc:400 · LA CUADRA DE 400 CASAS: 400 casitas encendidas; el contador sube y se apagan; sello «NOT FROM A FIRE»
 // cdc:er / cdc:hosp · LOS DOS RECIPIENTES DE MEDIR: perlitas que llenan el de la guardia y una parte salta al del hospital
@@ -278,7 +267,7 @@ const NoSense: React.FC<P> = ({ dur, m }) => {
         <div style={{ position: "absolute", left: 60, right: 60, top: 26 - lid * 120, height: 60, borderRadius: 10, background: "repeating-linear-gradient(90deg,#b8bec4 0 8px,#8d949a 8px 12px)", transform: `rotate(${lid * -24}deg)` }} />
         <div style={{ position: "absolute", left: 70, right: 70, top: 280, height: 170, background: "#f7f2e4", borderRadius: 6, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
           <Tx size={30} col="#6b5d44">NO</Tx><Tx size={52}>{s}</Tx></div>
-        <div style={{ position: "absolute", left: 50, right: 50, top: 300, height: 110, border: `8px solid ${RED}`, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", transform: `rotate(-10deg) scale(${1 + 0.6 * (1 - st)})`, opacity: st }}><Tx size={64} col={RED}>NONE</Tx></div>
+        <div style={{ position: "absolute", left: 50, right: 50, top: 470, height: 110, border: `8px solid ${RED}`, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", transform: `rotate(-10deg) scale(${1 + 0.6 * (1 - st)})`, opacity: st }}><Tx size={64} col={RED}>NONE</Tx></div>
       </div>; })}
   </Floor>;
 };
@@ -293,8 +282,8 @@ const Blood: React.FC<P> = ({ dur, m }) => {
         <div style={{ position: "absolute", inset: 0, borderRadius: "50%", background: "radial-gradient(circle, #a8262d 0 30%, #d8434a 46%, #b9313a 70%)", boxShadow: "0 8px 0 rgba(0,0,0,.25)" }} />
         {[0, 1, 2, 3].map((s) => { const ang = s * 90 + 45, rx = 100 + Math.cos(ang * Math.PI / 180) * 70 - 22, ry = 100 + Math.sin(ang * Math.PI / 180) * 70 - 22; const gone = s < 3 ? swap : 0;
           return <React.Fragment key={s}>
-            <div style={ab(rx, ry - gone * 260, 44, 44, { borderRadius: "50%", background: "#5fb3e8", opacity: 1 - gone, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 16, color: "#fff" })}>O₂</div>
-            {s < 3 && <div style={ab(rx + (1 - swap) * 160, ry - (1 - swap) * 120, 44, 44, { borderRadius: "50%", background: "#8b9096", opacity: swap, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 16, color: "#fff" })}>CO</div>}
+            <div style={ab(rx, ry - gone * 260, 60, 60, { borderRadius: "50%", background: "#5fb3e8", opacity: 1 - gone, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 24, color: "#fff" })}>O₂</div>
+            {s < 3 && <div style={ab(rx + (1 - swap) * 160, ry - (1 - swap) * 120, 60, 60, { borderRadius: "50%", background: "#8b9096", opacity: swap, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 24, color: "#fff" })}>CO</div>}
           </React.Fragment>; })}
       </div>; })}
     <Ch t="it gets into your blood" at={t0} f={f} x={80} y={90} size={74} />
@@ -464,12 +453,12 @@ const Draft: React.FC<P> = ({ dur, m, a }) => {
   return <Floor dark={0.45}>
     <HouseCut>
       <div style={ab(1120, 600, 200, 200, { background: "#54595e", border: "6px solid #2b2f33", opacity: 1 })}><div style={{ margin: "120px auto 0", width: 90, height: 34, borderRadius: 8, background: `rgba(90,170,255,${0.4 + 0.6 * k(f, t[0], 8)})` }} /></div>
-      <Tx size={28} col="#4a4f55" style={{ position: "absolute", left: 1128, top: 816 }}>FURNACE</Tx>
+      <Tx size={28} col="#fff" style={{ position: "absolute", left: 1134, top: 614, whiteSpace: "nowrap" }}>FURNACE</Tx>
       {Array.from({ length: 6 }, (_, i) => <div key={i} style={ab(820 + i * 46, 780 - i * 70, 120, 16, { background: "#8a6a48" })} />)}
       {ribbon(632, 560, -1, g ? 1.25 : 1, "g")}
       {ribbon(1588, 600, 1, 0.8, "f")}
       {ribbon(960, 300, -1, 0.7, "s")}
-      {!g && [0, 1, 2].map((i) => <div key={i} style={ab(1700 + ((f * 9 + i * 80) % 240) - 120, 380 + i * 90, 110, 12, { background: CH, opacity: 0.8 * k(f, t[1], 10), borderRadius: 6 })} />)}
+      {/* sin barras de viento sueltas */}
       {!g && <div style={ab(850, 380, 16, 300 * k(f, t[2], 18), { background: "linear-gradient(rgba(255,170,90,.0), rgba(255,170,90,.8))", transform: "rotate(-34deg)", transformOrigin: "50% 100%" })} />}
     </HouseCut>
     {g ? <Ch t="a lot of it comes from the garage." at={4} f={f} x={960} y={50} size={80} c col={YEL} len={18} />
@@ -611,6 +600,7 @@ const Climb: React.FC<P> = ({ dur }) => {
   return <AbsoluteFill style={{ background: "repeating-linear-gradient(0deg,#8c4a36 0 56px,#d8cbb8 56px 62px)" }}>
     <AbsoluteFill style={{ backgroundImage: "repeating-linear-gradient(90deg, rgba(0,0,0,0) 0 120px, #d8cbb8 120px 126px)", backgroundSize: "126px 124px", opacity: 0.9, maskImage: "repeating-linear-gradient(0deg, #000 0 62px, transparent 62px 124px)" } as CS} />
     <Win x={1180} y={130} w={300} h={340} open={0.35} /><div style={ab(760, 960, 300, 120, { background: "#3a3f45", borderRadius: "20px 20px 0 0" })} /><div style={ab(870, 930, 80, 40, { background: "#222", borderRadius: 8, boxShadow: `0 0 ${30 + 10 * Math.sin(f / 4)}px rgba(255,120,40,.8)` })} /><Puffs f={f} x={900} y={930} at={0} dy={-720} size={150} n={10} life={34} col="150,150,155" curve={420} />
+    <Pic id="g0630" x={140} y={380} w={600} h={440} f={f} at={6} rot={-3} kind="print" tape />
     <Ch t="exhaust is hot — and it climbs." at={2} f={f} x={140} y={120} size={92} len={10} />
   </AbsoluteFill>;
 };
@@ -624,9 +614,8 @@ const Window10: React.FC<P> = ({ dur, m }) => {
     <div style={ab(1240, 240, 620, 480, { background: "#cfc6b4", opacity: 0.0 })} />
     <div style={ab(1300, 300, 240, 300, { background: `rgba(120,125,132,${0.85 * k(f, t2, 30)})` })} />
     <Win x={1300} y={300} w={240} h={300} open={op} />
-    <Pic id="g1040" x={90} y={300} w={500} h={340} f={f} at={t0} rot={-3} kind="print" tape />
-    <div style={ab(330, 680, 330, 230, {})}><Gen2 s={1.05} run={1} f={f} /></div>
-    <Puffs f={f} x={645} y={750} at={0} dy={-430} dx={640} curve={40} size={70} n={9} life={50} />
+    <Pic id="g1040" x={90} y={330} w={640} h={460} f={f} at={t0} rot={-3} kind="print" tape />
+    <Puffs f={f} x={700} y={720} at={0} dy={-430} dx={640} curve={40} size={70} n={9} life={50} />
     <div style={ab(660, 940, 640 * k(f, t0, 14), 8, { background: RED })} />
     <Ch t="10 FT" at={t0 + 4} f={f} x={900} y={960} size={70} col={RED} />
     <Ch t="a window cracked open" at={t1} f={f} x={80} y={90} size={66} col={INK} />
@@ -664,7 +653,7 @@ const SideCheck: React.FC<P> = ({ dur }) => {
   const items: [number, string][] = [[380, "WINDOW?"], [900, "DOOR?"], [1450, "VENT?"]];
   return <AbsoluteFill style={{ background: "linear-gradient(#c9d4de,#eaf0f4)" }}>
     <Siding x={60} y={180} w={1800} h={720} />
-    <Win x={300} y={330} w={200} h={250} /><div style={ab(820, 420, 170, 480, { background: "#7a5a3c", border: "10px solid #f4f4f0" })} /><div style={ab(1400, 560, 110, 80, { background: "#f4f4f0", borderRadius: 8 })} />
+    <Pic id="g1090" x={1150} y={300} w={640} h={480} f={f} at={4} rot={2} kind="print" tape />
     <div style={ab(0, 900, 1920, 180, { background: SNOW })} />
     <div style={ab(sx - 6, 140, 12, 800, { background: YEL, boxShadow: "0 0 0 6px rgba(242,194,48,.35)" })} />
     {items.map(([x, s], i) => { const at = 6 + (x - 80) / 1760 * Math.max(30, dur * 0.7); const q = k(f, at, 6); return <React.Fragment key={s}>
@@ -685,7 +674,7 @@ const Cord: React.FC<P> = ({ dur, m }) => {
           {[[150, 95], [95, 190], [205, 190]].map(([cx, cy], j) => <div key={j} style={ab(cx - r * 1.7, cy - r * 1.7, r * 3.4, r * 3.4, { borderRadius: "50%", background: ["#222", "#f4f4f0", GRN][j], display: "flex", alignItems: "center", justifyContent: "center" })}>
             <div style={{ width: r * 2, height: r * 2, borderRadius: "50%", background: "radial-gradient(circle at 35% 35%, #f6b07a, #b8652c)" }} /></div>)}
         </div>
-        <Tx size={64} col={sel ? YEL : CH} style={{ textAlign: "center", marginTop: 330 }}>{g}-GAUGE</Tx>
+        <Tx size={54} col={sel ? YEL : CH} style={{ textAlign: "center", marginTop: 330, whiteSpace: "nowrap" }}>{g}-GAUGE</Tx>
       </div>; })}
     <Ch t="10-gauge or thicker" at={t0 + 4} f={f} x={980} y={80} size={76} c col={YEL} />
     <div style={ab(1450, 230, 400, 560, { transformOrigin: "50% 0", transform: `rotate(${Math.sin((f - t1) / 9) * 6 * Math.exp(-Math.max(0, f - t1) / 30)}deg)`, opacity: k(f, t1, 6) })}>
@@ -797,7 +786,7 @@ const Flue: React.FC<P> = ({ dur, m }) => {
     <div style={ab(420, 714, 1080, 306, { background: "#9a9da1" })} />
     {[[560, "FURNACE"], [1000, "WATER HEATER"]].map(([x, s], i) => <div key={i} style={ab(x as number, 780, 220, 220, { background: i ? "#e7e9ea" : "#5d6266", borderRadius: i ? 60 : 8 })}>
       <div style={{ position: "absolute", left: 70, bottom: 30, width: 80, height: 50, background: "linear-gradient(#9fd2ff,#2f6fe0)", clipPath: "polygon(50% 0, 100% 100%, 0 100%)", opacity: k(f, t0 + i * 6, 8), transform: `scaleY(${0.8 + 0.2 * Math.sin(f / 3)})`, transformOrigin: "50% 100%" }} />
-      <Tx size={26} col={i ? INK : "#fff"} style={{ position: "absolute", left: 0, right: 0, top: 20, textAlign: "center" }}>{s as string}</Tx></div>)}
+      <Tx size={i ? 26 : 30} col={i ? INK : "#fff"} style={{ position: "absolute", left: 0, right: 0, top: 74, textAlign: "center", whiteSpace: "nowrap" }}>{s as string}</Tx></div>)}
     <div style={ab(640, 600 - 500 * up + 180, 50, 500 * up, { background: "linear-gradient(90deg,#8d949a,#dfe3e6,#8d949a)" })} />
     <div style={ab(690, 780, 400, 40, { background: "linear-gradient(#8d949a,#dfe3e6,#8d949a)", opacity: k(f, t1 - 10, 8) })} />
     <Puffs f={f} x={665} y={260} at={t1 + 16} dy={-220} size={70} />
@@ -812,6 +801,7 @@ const InOut: React.FC<P> = ({ dur, m }) => {
   const mouth = (x: number) => <div style={ab(x, 330, 380, 380, { borderRadius: "50%", background: PVC, boxShadow: "0 12px 0 rgba(0,0,0,.25)" })}><div style={ab(50, 50, 280, 280, { borderRadius: "50%", background: "radial-gradient(circle, #111 0 40%, #3a3d40 70%, #c9cdd0 100%)" })} /></div>;
   return <AbsoluteFill style={{ background: "repeating-linear-gradient(0deg,#d9d2c3 0 34px,#bdb5a5 34px 37px)" }}>
     {mouth(330)}{mouth(1210)}
+    <Pic id="g1570" x={760} y={390} w={420} h={330} f={f} at={4} rot={-2} kind="pol" tape />
     {Array.from({ length: 6 }, (_, i) => { const ph = ((f - t0) / 22 + i / 6) % 1; if (f < t0) return null; const ang = i * 60; const r = 420 * (1 - ph);
       return <div key={i} style={ab(520 + Math.cos(ang * Math.PI / 180) * r - 40, 520 + Math.sin(ang * Math.PI / 180) * r - 8, 80, 16, { background: "#5fb3e8", borderRadius: 8, transform: `rotate(${ang}deg)`, opacity: ph < 0.9 ? 1 : 0 })} />; })}
     <Puffs f={f} x={1400} y={520} at={t1} dy={0} dx={0} size={260} n={6} life={36} col="140,144,150" />
@@ -846,7 +836,7 @@ const Label: React.FC<P> = ({ dur, m }) => {
   return <Floor>
     <div style={ab(200, 160, 1000, 760, { border: "10px solid rgba(235,242,246,.85)", borderTop: "none", borderRadius: "0 0 20px 20px" })}>
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: `${lvl * 100}%`, background: "rgba(95,179,232,.28)", overflow: "hidden" }}>
-        {Array.from({ length: 30 }, (_, i) => <div key={i} style={ab((i * 97) % 910 + 14, ((i * 61 + f * 2) % Math.max(60, lvl * 750 - 54)) + 4, 44, 44, { borderRadius: "50%", border: "3px solid rgba(220,240,255,.8)", fontFamily: SANS, fontWeight: 800, fontSize: 15, color: "#e8f6ff", display: "flex", alignItems: "center", justifyContent: "center" })}>O₂</div>)}
+        {Array.from({ length: 30 }, (_, i) => <div key={i} style={ab((i * 97) % 910 + 14, ((i * 61 + f * 2) % Math.max(60, lvl * 750 - 54)) + 4, 64, 64, { borderRadius: "50%", border: "3px solid rgba(220,240,255,.8)", fontFamily: SANS, fontWeight: 800, fontSize: 26, color: "#e8f6ff", display: "flex", alignItems: "center", justifyContent: "center" })}>O₂</div>)}
       </div>
       <div style={ab(-10, 760 * 0.62 - 4, 1020, 8, { background: "repeating-linear-gradient(90deg,#d6402f 0 24px, rgba(0,0,0,0) 24px 36px)", top: 760 - 760 * 0.38 })} />
       <Tx size={30} col={RED} style={{ position: "absolute", right: 16, top: 760 - 760 * 0.38 - 44 }}>OXYGEN SENSOR LINE</Tx>
@@ -873,7 +863,7 @@ const HeaterRules: React.FC<P> = ({ dur, m }) => {
     <div style={ab(180, 230, 1560, 640, { display: "flex", perspective: 1800 })}>
       {panel(0, <div style={ab(130, 260, 260, 260, { borderRadius: "50%", border: `16px solid ${GRN}`, display: "flex", alignItems: "center", justifyContent: "center" })}><Tx size={150} col={GRN}>✓</Tx></div>, "LABELED FOR INDOOR USE")}
       {panel(1, <div style={ab(260 - 120 - 80 * g, 230 + 160 - 120 - 60 * g, 240 + 160 * g, 240 + 120 * g, { border: `8px solid ${INK}` })}><Tx size={28} col={INK} style={{ position: "absolute", left: 10, bottom: 6 }}>MIN. ROOM SIZE</Tx></div>, "HOW BIG THE ROOM HAS TO BE")}
-      {panel(2, <div style={ab(130, 260, 260, 300, { background: "#9ec3e6", border: "12px solid #e9e4d8" })}><div style={ab(0, -w * 80, 236, 140, { borderBottom: "10px solid #e9e4d8", background: "#9ec3e6" })} />
+      {panel(2, <div style={ab(130, 360, 260, 230, { background: "#9ec3e6", border: "12px solid #e9e4d8" })}><div style={ab(0, -w * 80, 236, 140, { borderBottom: "10px solid #e9e4d8", background: "#9ec3e6" })} />
         {[0, 1, 2].map((i) => <div key={i} style={ab(60 + i * 50, 170 - ((f * 3 + i * 30) % 90), 12, 50, { background: "#fff", opacity: w, borderRadius: 6 })} />)}</div>, "HOW MUCH FRESH AIR IT NEEDS")}
     </div>
     <Ch t="read the label" at={0} f={f} x={960} y={80} size={76} c />
@@ -1006,7 +996,7 @@ const Place: React.FC<P> = ({ dur, m, a }) => {
     {chip(300, 720, 1, v === 1 ? t0 : 0)}
     {v === 1 && <div style={ab(820, 760, 260, 200, { background: `repeating-linear-gradient(45deg, rgba(214,64,47,.55) 0 14px, rgba(0,0,0,0) 14px 28px)`, opacity: k(f, t1, 10) })} />}
     {v === 2 && <><div style={ab(1010 - 380 * io((f - t0) / 18), 900 - 380 * io((f - t0) / 18), 760 * io((f - t0) / 18), 760 * io((f - t0) / 18), { borderRadius: "50%", border: `8px dashed ${YEL}` })} />
-      <Ch t="≈ 15 FT" at={t0 + 10} f={f} x={620} y={640} size={70} col={YEL} /></>}
+      <Ch t="≈ 15 FT" at={t0 + 10} f={f} x={170} y={870} size={70} col={YEL} /></>}
     {chip(1700, 300, 3, v === 3 ? t0 : 0)}
     {chip(1040, 760, 4, v === 4 ? t1 : 0)}
     {v === 4 && <><div style={ab(1250, 680, 180, 180, { opacity: k(f, t0, 6) })}><div style={ab(0, 80, 180, 20, { background: RED, transform: "rotate(45deg)" })} /><div style={ab(0, 80, 180, 20, { background: RED, transform: "rotate(-45deg)" })} /></div></>}
@@ -1020,19 +1010,18 @@ const Place: React.FC<P> = ({ dur, m, a }) => {
 // mixes · LA PROBETA PAREJA: una columna de vidrio con partículas grises repartidas igual de arriba a abajo; «¿se hunde?» ✕ «¿flota?» ✕; aparecen los detectores en pared y techo
 const Mixes: React.FC<P> = ({ dur, m }) => {
   const f = useCurrentFrame(); const t = [D(m, 0, dur, 0.08), D(m, 1, dur, 0.3), D(m, 2, dur, 0.75)];
-  return <AbsoluteFill style={{ background: "#e8dcc4" }}>
-    <div style={ab(0, 0, 1920, 60, { background: "#cfc3aa" })} />
+  return <Floor>
     <div style={ab(560, 140, 300, 840, { border: "10px solid rgba(80,100,120,.5)", borderTop: "none", borderRadius: "0 0 30px 30px", background: "rgba(255,255,255,.35)", overflow: "hidden" })}>
       {Array.from({ length: 60 }, (_, i) => <div key={i} style={ab(((i * 53) % 260) + Math.sin(f / 9 + i) * 8, ((i * 137) % 800) + Math.cos(f / 11 + i) * 10, 22, 22, { borderRadius: "50%", background: "#7c8188", opacity: k(f, t[0] - 10, 10) })} />)}
     </div>
     {/* sin flecha: contradecía la mezcla */}
-    <Ch t="doesn't sink much ✕" at={t[1]} f={f} x={1050} y={360} size={56} col={INK} />
-    <Ch t="doesn't float much ✕" at={t[1] + 10} f={f} x={1050} y={480} size={56} col={INK} />
+    <Ch t="doesn't sink much ✕" at={t[1]} f={f} x={1050} y={360} size={56} col={CH} />
+    <Ch t="doesn't float much ✕" at={t[1] + 10} f={f} x={1050} y={480} size={56} col={CH} />
     <div style={ab(1600, 70 - (1 - sp(f, t[2])) * 100, 130, 130, { opacity: k(f, t[2], 4) })}><Puck s={0.72} /></div>
     <div style={ab(60, 520, 130, 130, { opacity: k(f, t[2] + 8, 4), transform: `scale(${sp(f, t[2] + 8)})` })}><Puck s={0.72} /></div>
     <Ch t="the wall or the ceiling — fine" at={t[2] + 4} f={f} x={1050} y={700} size={56} col={GRN} />
-    <Ch t="it mixes with the air" at={t[0]} f={f} x={1050} y={170} size={66} col={INK} />
-  </AbsoluteFill>;
+    <Ch t="it mixes with the air" at={t[0]} f={f} x={1050} y={170} size={66} col={YEL} />
+  </Floor>;
 };
 
 // ================= MISTAKE 10 =================
@@ -1076,7 +1065,7 @@ const Signs: React.FC<P> = ({ dur, m }) => {
       {S.map((s, i) => { const at = D(m, i, dur, 0.08 + i * 0.11); const o = io((f - at) / 10);
         return <div key={s} style={{ flex: 1, position: "relative", background: "#f4f1e8", borderRadius: 16, display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Tx size={s.length > 10 ? 30 : 36} col={i === 6 || i === 5 ? RED : INK} style={{ textAlign: "center", transform: "rotate(-90deg)", whiteSpace: "nowrap", opacity: o }}>{s}</Tx>
-          <div style={{ position: "absolute", inset: -6, background: "linear-gradient(#5c93c6,#4a7fb0)", borderRadius: 16, transformOrigin: "50% 0", transform: `rotateX(${o * 100}deg)`, opacity: 1 - o * 0.3, display: "flex", alignItems: "flex-end", justifyContent: "center", paddingBottom: 20 }}><Tx size={40} col="#dbe9f6">{i + 1}</Tx></div>
+          <div style={{ position: "absolute", inset: -6, background: "linear-gradient(#5c93c6,#4a7fb0)", borderRadius: 16, transformOrigin: "50% 0", transform: `rotateX(${o * 80}deg)`, opacity: 1 - o, display: "flex", alignItems: "flex-end", justifyContent: "center", paddingBottom: 20 }}><Tx size={40} col="#dbe9f6">{i + 1}</Tx></div>
         </div>; })}
     </div>
     <Src text="CDC" f={f} at={4} />
@@ -1175,17 +1164,17 @@ const Risk: React.FC<P> = ({ dur, m }) => {
     <div style={{ width: 150, height: 150, position: "relative", marginTop: 20 }}><div style={ab(25, 35, 100, 100, { background: RED, transform: "rotate(45deg)" })} /><div style={ab(5, 10, 80, 80, { background: RED, borderRadius: "50%" })} /><div style={ab(65, 10, 80, 80, { background: RED, borderRadius: "50%" })} /></div>,
     <div style={{ width: 150, height: 190, position: "relative" }}><div style={ab(40, 0, 70, 130, { background: "#5fb3e8", borderRadius: 14 })} /><div style={ab(40, 120, 110, 60, { background: "#3b6e9c", borderRadius: 14 })} /></div>,
     <div style={{ width: 130, height: 130, background: RED, borderRadius: "0 50% 50% 50%", transform: "rotate(45deg)", marginTop: 30 }} />][i];
-  return <AbsoluteFill style={{ background: "#e8dcc4" }}>
+  return <Floor>
     <div style={ab(100, 210, 1720, 50, { background: "linear-gradient(#8a5a33,#6e4526)", borderRadius: 10, boxShadow: "0 8px 0 rgba(0,0,0,.25)" })} />
     {S.map((s, i) => { const at = D(m, i, dur, 0.06 + i * 0.14); const sw = Math.sin((f - at) / 6) * 18 * Math.exp(-Math.max(0, f - at) / 22); const e = k(f, at, 6);
       return <div key={s} style={ab(200 + i * 330, 250, 260, 600, { transformOrigin: "50% 0", transform: `rotate(${sw}deg) translateY(${(1 - e) * -200}px)`, opacity: e })}>
         <div style={ab(120, 0, 18, 60, { background: "#9aa2a8", borderRadius: 9 })} />
         <div style={{ position: "absolute", top: 70, left: 0, right: 0, display: "flex", justifyContent: "center" }}>{item(i)}</div>
-        <Tx size={s.length > 12 ? 30 : 36} col={INK} style={{ position: "absolute", top: 400, left: -20, right: -20, textAlign: "center" }}>{s}</Tx>
+        <Tx size={s.length > 12 ? 30 : 36} col={CH} style={{ position: "absolute", top: 400, left: -20, right: -20, textAlign: "center" }}>{s}</Tx>
       </div>; })}
     <Ch t="get sick faster — and worse" at={t5} f={f} x={960} y={820} size={78} c col={RED} />
     <Src text="CDC" f={f} at={6} />
-  </AbsoluteFill>;
+  </Floor>;
 };
 
 // ================= QUESTIONS FROM THE COUNTER =================
@@ -1376,7 +1365,7 @@ const Check: React.FC<P> = ({ dur, a }) => {
           <Tx size={30} col={i === n - 1 ? INK : CH} style={{ position: "absolute", left: 0, right: 0, top: 120, textAlign: "center" }}>STEP {i + 1}</Tx>
         </div>; })}
     </div>
-    {n === 0 ? <><div style={ab(330, 170, 480, 480, { borderRadius: "50%", background: "#f3f0e6", border: "18px solid #2b3442", boxSizing: "border-box", boxShadow: "0 20px 40px rgba(0,0,0,.35)" })}>{Array.from({ length: 12 }, (_, j) => <div key={j} style={ab(213, 14, 18, 40, { background: "#2b3442", transformOrigin: "9px 208px", transform: `rotate(${j * 30}deg)` })} />)}<Tx size={80} col={INK} style={{ position: "absolute", left: 0, right: 0, top: 270, textAlign: "center" }}>{`${Math.floor((120 - Math.round(f / 3)) / 60)}:${String((120 - Math.round(f / 3)) % 60).padStart(2, "0")}`}</Tx><div style={ab(214, 60, 16, 170, { background: RED, borderRadius: 8, transformOrigin: "8px 162px", transform: `rotate(${((120 - Math.round(f / 3)) % 60) * 6}deg)` })} /><div style={ab(202, 202, 40, 40, { borderRadius: "50%", background: RED })} /><div style={ab(190, -70, 64, 60, { background: "#2b3442", borderRadius: 10 })} /></div><Ch t="do it tonight." at={10} f={f} x={1330} y={380} size={130} c /></>
+    {n === 0 ? <><div style={ab(330, 170, 480, 480, { borderRadius: "50%", background: "#f3f0e6", border: "18px solid #2b3442", boxSizing: "border-box", boxShadow: "0 20px 40px rgba(0,0,0,.35)" })}>{Array.from({ length: 12 }, (_, j) => <div key={j} style={ab(213, 14, 18, 40, { background: "#2b3442", transformOrigin: "9px 208px", transform: `rotate(${j * 30}deg)` })} />)}<Tx size={64} col={CH} style={{ position: "absolute", left: 0, right: 0, top: 470, textAlign: "center" }}>{`${Math.floor((120 - Math.round(f / 3)) / 60)}:${String((120 - Math.round(f / 3)) % 60).padStart(2, "0")}`}</Tx><div style={ab(214, 60, 16, 170, { background: RED, borderRadius: 8, transformOrigin: "8px 162px", transform: `rotate(${((120 - Math.round(f / 3)) % 60) * 6}deg)` })} /><div style={ab(202, 202, 40, 40, { borderRadius: "50%", background: RED })} /><div style={ab(190, -70, 64, 60, { background: "#2b3442", borderRadius: 10 })} /></div><Ch t="do it tonight." at={10} f={f} x={1330} y={380} size={130} c /></>
       : <><div style={ab(260, 220, 300, 300, { transform: `scale(${sp(f, 2)})` })}>{pic(n - 1)}</div>
         <Tx size={64} col={CH} style={{ position: "absolute", left: 660, top: 300, width: 1100, opacity: k(f, 6, 8) }}>{STEP[n - 1]}</Tx></>}
   </Floor>;
@@ -1449,12 +1438,12 @@ const ExitWalk: React.FC<P> = ({ dur, m }) => {
 // plancha de fondo por escena: una foto real distinta del video en cada plano (bajo degradé oscuro)
 const PLATE: Record<string, string> = {
   tenlist: "g0230", rooms: "g0230", "promise:garage": "g2560", "cdc:400": "g2251", cdc: "g0420", nosense: "g3530", hundreds: "g2240", leaks: "g0280",
-  draft: "g2251", "draft:garage": "g0970", chainprice: "g0281", shutoff: "g2800", hosewall: "g0910", hoseleak: "g3120", sealedbox: "g3110", cord: "g1190",
+  draft: "g2251", "draft:garage": "g1690", chainprice: "g0281", shutoff: "g2800", hosewall: "g0630", hoseleak: "g3120", sealedbox: "g3110", cord: "g1190",
   rank12: "g1730", heaterrules: "g1730", label: "g1801", nosleep: "g0020", perfloor: "g1980", twotypes: "g3420", "place:hall": "g2610", "place:15": "g2980",
-  "place:no": "g3150", age14: "g2370", sensor: "g2330", signs: "g0290", "suspect:1": "g3530", "suspect:4": "g3140", suspect: "g3140", firstmin: "g2510",
-  emergency: "g2680", propane: "g2760", chirp: "g2950", ctaq: "g2370", check: "g3350", datecalc: "g3390", floorplan: "g3480", next: "g0970", tarp: "g1630",
+  "place:no": "g1802", age14: "g2370", sensor: "g2330", signs: "g0290", "suspect:1": "g3530", "suspect:4": "g3140", suspect: "g3140", firstmin: "g2510",
+  emergency: "g2680", propane: "g2760", chirp: "g2950", ctaq: "g2370", check: "g3350", datecalc: "g3390", floorplan: "g3480", next: "g3370", tarp: "g1630",
   risk: "g2450", counter: "g3270", q: "g2000", protect: "g2800", climb: "g1240", window10: "g1090", inout: "g1780", flue: "g1910", ventmap: "g2380",
-  towers: "g1690", mixes: "g3420", blood: "g0420", sleep: "g0020", recap: "g2520", promise: "g1290", coals: "g1310", sidecheck: "g1350", yard20: "g2010", alarm4: "g2020", dispatch: "g2070", hundreds2: "g2170",
+  towers: "g1690", mixes: "g3420", blood: "g0420", sleep: "g0020", recap: "g1280", promise: "g1290", coals: "g1310", sidecheck: "g1350", yard20: "g2010", alarm4: "g2020", dispatch: "g2070", hundreds2: "g2170",
 };
 export const CompC14c: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   const [c, ...a] = String(s.comp || s.spec).split(":"); const m: number[] = s.m || [];
