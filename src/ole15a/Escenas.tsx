@@ -24,7 +24,7 @@ export const Steam: React.FC<{ dur: number; fBrown: number; fStuck: number }> = 
       </div>
       <div style={{ position: "absolute", left: 0, top: lvl - 2, width: 1920, height: 4, background: "rgba(255,240,220,.7)", opacity: on && lvl > 4 ? 1 : 0 }} />
       {tag(interpolate(f, [8, 18], [0, 1], CL) * (lvl > 540 ? 1 : 0), 70, 70, "212 °F · BOILING", "#55606B")}
-      {tag(interpolate(lvl, [600, 200], [0, 1], CL), 70, 70, "300 °F · BROWNING", "#8E3B12")}
+      {tag(interpolate(lvl, [200, 600], [1, 0], CL), 70, 70, "300 °F · BROWNING", "#8E3B12")}
     </AbsoluteFill>
   );
 };
