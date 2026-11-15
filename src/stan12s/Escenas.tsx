@@ -138,7 +138,7 @@ export const EscTrago: React.FC<{ src: string; fDrink: number; fTime: number; fD
         <div style={{ position: "absolute", left: 215, top: 372, width: 1530, height: 16, background: "linear-gradient(180deg, rgba(40,0,0,0.45), rgba(40,0,0,0))", opacity: p * (1 - seg(f, dur - 30, dur - 10)), transform: "rotate(0.7deg)", transformOrigin: "0 0" }} />
       </AbsoluteFill>
       <Papel x={820} y={50} t="45 minutes to start" f0={fTime} size={118} rot={2} />
-      <Papel x={1130} y={205} t="…then all day" f0={fDown - 18} size={118} rot={-2} />
+      <Papel x={1000} y={250} t="…then all day" f0={fDown - 18} size={118} rot={-2} />
     </AbsoluteFill>
   );
 };

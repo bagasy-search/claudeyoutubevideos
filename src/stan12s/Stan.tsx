@@ -1107,16 +1107,16 @@ export const SaltStrip: React.FC<{ stage: number; big: string; sub: string; fBig
         </div>
         {stage === 3 ? (
           <>
-            <div style={{ position: "absolute", left: X0 + WW * 0.2 - 110, top: Y - 190, width: WW * 0.22 + 220, textAlign: "center", background: K.red, boxShadow: "0 14px 22px rgba(0,0,0,0.35)", padding: "8px 0 12px", fontFamily: SANS, fontWeight: 700, fontSize: 102, letterSpacing: 8, color: "#FFF8EE", whiteSpace: "nowrap", opacity: Math.min(1, stamp * 3), transform: `rotate(-5deg) scale(${1.8 - 0.8 * Math.min(1.05, stamp)})` }}>NOT NOW</div>
-            <div style={{ position: "absolute", left: 60, top: 620, width: 650, opacity: Math.min(1, ok1 * 2), transform: `translateY(${(1 - Math.min(1, ok1)) * 60}px) rotate(-2deg)`, backgroundImage: whitePaper, padding: "22px 36px 28px", boxSizing: "border-box", boxShadow: "0 16px 26px rgba(0,0,0,0.3)" }}>
+            <div style={{ position: "absolute", left: X0 + WW * 0.2 - 110, top: Y - 172, width: WW * 0.22 + 220, textAlign: "center", background: K.red, boxShadow: "0 14px 22px rgba(0,0,0,0.35)", padding: "8px 0 12px", fontFamily: SANS, fontWeight: 700, fontSize: 102, letterSpacing: 8, color: "#FFF8EE", whiteSpace: "nowrap", opacity: Math.min(1, stamp * 3), transform: `rotate(-5deg) scale(${1.8 - 0.8 * Math.min(1.05, stamp)})` }}>NOT NOW</div>
+            <div style={{ position: "absolute", left: 60, top: 620, width: 610, opacity: Math.min(1, ok1 * 2), transform: `translateY(${(1 - Math.min(1, ok1)) * 60}px) rotate(-2deg)`, backgroundImage: whitePaper, padding: "22px 36px 28px", boxSizing: "border-box", boxShadow: "0 16px 26px rgba(0,0,0,0.3)" }}>
               <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 58, letterSpacing: 8, color: "#2F6B3A" }}>GOOD</div>
-              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 118, lineHeight: 1.02, color: GREASE }}>right as it<br />hits the pan</div>
+              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 106, lineHeight: 1.02, color: GREASE }}>right as it<br />hits the pan</div>
             </div>
-            <div style={{ position: "absolute", left: 1210, top: 620, width: 650, opacity: Math.min(1, ok2 * 2), transform: `translateY(${(1 - Math.min(1, ok2)) * 60}px) rotate(2deg)`, backgroundImage: whitePaper, padding: "22px 36px 28px", boxSizing: "border-box", boxShadow: "0 16px 26px rgba(0,0,0,0.3)" }}>
+            <div style={{ position: "absolute", left: 1230, top: 620, width: 610, opacity: Math.min(1, ok2 * 2), transform: `translateY(${(1 - Math.min(1, ok2)) * 60}px) rotate(2deg)`, backgroundImage: whitePaper, padding: "22px 36px 28px", boxSizing: "border-box", boxShadow: "0 16px 26px rgba(0,0,0,0.3)" }}>
               <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 58, letterSpacing: 8, color: "#2F6B3A" }}>BEST</div>
-              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 118, lineHeight: 1.02, color: GREASE }}>one hour<br />or more</div>
+              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 106, lineHeight: 1.02, color: GREASE }}>one hour<br />or more</div>
             </div>
-            <div style={{ position: "absolute", left: 720, top: 650, width: 480, textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 108, lineHeight: 1.02, color: K.red, opacity: Math.min(1, stamp * 2) }}>10 to 30<br />minutes</div>
+            <div style={{ position: "absolute", left: 690, top: 650, width: 520, textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 108, lineHeight: 1.02, color: K.red, opacity: Math.min(1, stamp * 2) }}>10 to 30<br />minutes</div>
           </>
         ) : (
           <>
@@ -1200,7 +1200,7 @@ export const PassRail: React.FC<{ n: number; text: string; fix: string; fFix: nu
   const sF = spring({ frame: f - fFix, fps, config: { damping: 10, mass: 0.6 } });
   const words = text.split(" "); const rows: string[] = []; let cur = "";
   words.forEach((w) => { if ((cur + " " + w).trim().length > 15 && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); if (cur) rows.push(cur);
-  const fs = Math.min(104, Math.floor(680 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.37)));
+  const fs = Math.min(90, Math.floor(680 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.37)));
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
       <Img src={staticFile(img)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
@@ -1223,7 +1223,7 @@ export const PassRail: React.FC<{ n: number; text: string; fix: string; fFix: nu
           {rows.map((r, i) => <Write key={i} f0={12 + i * 9} len={12} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fs, lineHeight: 1.1, color: GREASE, whiteSpace: "nowrap", paddingRight: 22 }}>{r}</Write>)}
           <div style={{ marginTop: 22, opacity: Math.min(1, sF * 3), transform: `scale(${1.3 - 0.3 * Math.min(1.05, sF)})`, transformOrigin: "0 50%" }}>
             <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 56, letterSpacing: 8, color: "#2F6B3A" }}>INSTEAD</div>
-            {(() => { const w = fix.split(" "); const h = Math.ceil(w.length / 2); const R = [w.slice(0, h).join(" "), w.slice(h).join(" ")].filter(Boolean); const z = Math.min(90, Math.floor(680 / (Math.max(...R.map((r) => r.length)) * 0.37))); return R.map((r, i) => <div key={i} style={{ fontFamily: HAND, fontWeight: 700, fontSize: z, lineHeight: 1.08, color: "#2F6B3A", whiteSpace: "nowrap" }}>{r}</div>); })()}
+            {(() => { const w = fix.split(" "); const h = Math.ceil(w.length / 2); const R = [w.slice(0, h).join(" "), w.slice(h).join(" ")].filter(Boolean); const z = Math.min(74, Math.floor(680 / (Math.max(...R.map((r) => r.length)) * 0.37))); return R.map((r, i) => <div key={i} style={{ fontFamily: HAND, fontWeight: 700, fontSize: z, lineHeight: 1.08, color: "#2F6B3A", whiteSpace: "nowrap" }}>{r}</div>); })()}
           </div>
         </div>
       </div>
