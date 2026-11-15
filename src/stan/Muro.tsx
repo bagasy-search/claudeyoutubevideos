@@ -482,11 +482,11 @@ export const LaminaM: React.FC<{ src: string; focus: { x: number; y: number; f: 
   const k = nxt === cur ? 1 : cl((f - cur.f) / 18); const W = 1500, H = 844, R = 230, Z = 2;
   const show = f >= focus[0].f && focus.indexOf(cur) < focus.length - 1;
   // deriva lenta continua (hoja que respira + lupa que tiembla en la mano): nunca hay cuadros idénticos
-  const drift = 1 + 0.05 * (f / Math.max(1, dur)); const rot = 0.6 * Math.sin(f / 70); const wx = 1.6 * Math.sin(f / 23), wy = 1.2 * Math.cos(f / 29);
+  const drift = 1 + 0.08 * (f / Math.max(1, dur)); const rot = 0.8 * Math.sin(f / 60); const wx = 9 * Math.sin(f / 23), wy = 7 * Math.cos(f / 29); const px = 26 * Math.sin(f / 75), py = 16 * Math.cos(f / 90);
   const x = cur.x + wx * k, y = cur.y + wy * k;
   return (
     <AbsoluteFill style={{ opacity: o, background: "#2A2622" }}>
-      <div style={{ position: "absolute", left: 210, top: 150, width: W, height: H, transform: `translateY(${(1 - p) * 500}px) scale(${drift}) rotate(${rot}deg)`, boxShadow: "0 30px 60px rgba(0,0,0,0.6)", background: "#F4F0E6", padding: 0 }}>
+      <div style={{ position: "absolute", left: 210, top: 150, width: W, height: H, transform: `translate(${px}px, ${(1 - p) * 500 + py}px) scale(${drift}) rotate(${rot}deg)`, boxShadow: "0 30px 60px rgba(0,0,0,0.6)", background: "#F4F0E6", padding: 0 }}>
         <Img src={staticFile(src)} style={{ width: W, height: H, objectFit: "contain" }} />
         <div style={{ position: "absolute", left: W / 2 - 140, top: -70, width: 280, height: 90, borderRadius: 10, background: "linear-gradient(180deg, #CFCFC9, #8F8F8A)", boxShadow: "0 8px 14px rgba(0,0,0,0.5)" }} />
         {show && <div style={{ position: "absolute", left: (x / 100) * W - R, top: (y / 100) * H - R, width: 2 * R, height: 2 * R, borderRadius: "50%", overflow: "hidden", border: "12px solid #1E1B18", boxShadow: "0 20px 40px rgba(0,0,0,0.6)", opacity: k }}>
@@ -569,10 +569,10 @@ export const AmpollaM: React.FC<{ bg?: string; dur: number }> = ({ bg, dur }) =>
   const f = useCurrentFrame(); const o = useOut(dur, 8); const inf = interpolate(f, [10, 60], [0, 1], { ...CL, easing: ease });
   return (
     <AbsoluteFill style={{ opacity: o, ...revoque(0.2, 30), transform: `scale(${1 + 0.06 * f / Math.max(1, dur)})` }}>
-      <div style={{ position: "absolute", left: 560, top: 300, width: 800, height: 420, transform: `scale(${1 + 0.03 * Math.sin(f / 18)})`, transformOrigin: "50% 100%" }}>
+      <div style={{ position: "absolute", left: 560, top: 300, width: 800, height: 420, transform: `scale(${1 + 0.07 * Math.sin(f / 14)}) translateX(${18 * Math.sin(f / 33)}px)`, transformOrigin: "50% 100%" }}>
         <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 30, background: "#E4DFD4" }} />
         <div style={{ position: "absolute", left: 160, bottom: 20, width: 480, height: 360 * inf, borderRadius: "50% 50% 0 0", background: "radial-gradient(ellipse at 40% 30%, #FFFFFF, #E4DFD4 60%, #BDB6A8)", boxShadow: "0 -10px 30px rgba(0,0,0,0.25)" }} />
-        {Array.from({ length: 8 }, (_, j) => { const t = ((f - j * 6) % 40) / 40; return <div key={j} style={{ position: "absolute", left: 220 + j * 48, bottom: 30 + t * 220 * inf, width: 16, height: 16, borderRadius: "50%", background: "rgba(127,183,217,0.7)", opacity: inf }} />; })}
+        {Array.from({ length: 12 }, (_, j) => { const t = ((f - j * 6) % 40) / 40; return <div key={j} style={{ position: "absolute", left: 200 + j * 36, bottom: 30 + t * 220 * inf, width: 34, height: 34, borderRadius: "50%", background: "rgba(127,183,217,0.7)", opacity: inf }} />; })}
       </div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 120, textAlign: "center" }}><Big txt="El vapor queda atrapado" f0={6} size={78} color={M.ink} style={{ textShadow: "none" }} /></div>
     </AbsoluteFill>
