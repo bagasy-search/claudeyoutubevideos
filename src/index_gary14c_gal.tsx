@@ -10,9 +10,9 @@ const C = ["draft", "shutoff", "hoseleak", "window10", "neighbor", "sidecheck", 
 const BG = "gary14c/g/g1650.png", AV = "gary14c/g/g0050.png";
 const OV: [string, string, React.ReactNode][] = [
   ["name", AV, <O.Dymo text="GARY" sub="ELECTRICIAN · 40 YEARS · OHIO" dur={160} />], ["conduit", BG, <O.GarageDoor dur={140} />],
-  ["door", AV, <O.WindowSplit src="gary14c/g/g0480.png" seed={3} label="LABELED FOR INDOOR USE · WINDOW CRACKED" dur={160} />],
+  ["door", AV, <O.WindowSplit src="gary14c/g/g1801.png" seed={3} label="LABELED FOR INDOOR USE · WINDOW CRACKED" dur={160} />],
   ["datatag", "gary14c/g/g2060.png", <O.WarnLabel big="$20–40" label="A BASIC BATTERY CO DETECTOR" src="STORE SHELF PRICE" dur={160} />],
-  ["safe", "gary14c/g/g0480.png", <O.ExitSign text="DAMPER OPEN TILL THE ASHES ARE COLD" dur={160} />], ["midcta", "gary14c/g/g2070.png", <O.CabinetPeek dur={160} />]];
+  ["safe", "gary14c/g/g1910.png", <O.ExitSign text="DAMPER OPEN TILL THE ASHES ARE COLD" dur={160} />], ["midcta", "gary14c/g/g2070.png", <O.CabinetPeek dur={160} />]];
 const CAP = (SHOTS as any[]).filter((s) => s.cap && s.k !== "A" && s.k !== "C");
 const N = C.length + OV.length + CAP.length;
 const Gal: React.FC = () => <AbsoluteFill style={{ background: "#000" }}>

@@ -1082,7 +1082,7 @@ const Suspect: React.FC<P> = ({ dur, m, a }) => {
   const f = useCurrentFrame(); const n = +a[0] || 1; const t0 = D(m, 0, dur, 0.25), t1 = D(m, 1, dur, 0.65);
   return <Floor>
     <Tent n={n} f={f} />
-    <Tx size={36} col={CH} style={{ position: "absolute", left: 120, top: 940 }}>SUSPICIOUS · {n} OF 4</Tx>
+    <Tx size={48} col={CH} style={{ position: "absolute", left: 120, top: 940 }}>SUSPICIOUS · {n} OF 4</Tx>
     {n === 1 && <>
       <Pic id="g2680" x={430} y={250} w={640} h={500} f={f} at={t0 - 10} rot={-3} kind="print" tape />
       <Pic id="g2450" x={1140} y={290} w={640} h={500} f={f} at={t0} rot={2.5} kind="print" tape />
@@ -1238,7 +1238,7 @@ const Protect: React.FC<P> = ({ dur, m }) => {
     {S.map((s, i) => { const at = D(m, i, dur, 0.05 + i * 0.3); const p = io((f - at) / 14); const x = 200 + i * 520, y = lerp(40, 500, p);
       return <div key={s} style={ab(x, y, 480, 420, { background: "#fbf8ef", borderRadius: 14, transform: `rotate(${(1 - p) * (i - 1) * 8}deg)`, boxShadow: "6px 8px 0 rgba(0,0,0,.3)", opacity: k(f, at - 6, 6), boxSizing: "border-box", overflow: "hidden" })}>
         <div style={ab(14, 14, 452, 190, { overflow: "hidden", borderRadius: 8, background: "#222" })}><Img src={G(["g0490", "g0940", "g3200"][i])} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
-        <div style={{ position: "absolute", left: 24, right: 24, top: 218 }}><Tx size={28} col="#8a7a5c">{i === 2 ? "NIGHT" : "DAY"}</Tx><Tx size={36} col={INK} style={{ marginTop: 10 }}>{s}</Tx></div></div>; })}
+        <div style={{ position: "absolute", left: 24, right: 24, top: 218 }}><Tx size={36} col="#8a7a5c">{i === 2 ? "NIGHT" : "DAY"}</Tx><Tx size={36} col={INK} style={{ marginTop: 10 }}>{s}</Tx></div></div>; })}
   </Floor>;
 };
 
@@ -1465,9 +1465,9 @@ const FIX: Record<string, TK> = {
   sealedbox: { ph: "g3110", pics: [["g0910", "door down"]], lines: [["a closed garage", 0, CH, 80], ["is a sealed box", 0, CH, 80, 10], ["with an engine in it.", 1, YEL, 72]] },
   climb: { ph: "g1240", pics: [["g0630", "up the wall"]], lines: [["exhaust is hot", -1, CH, 92], ["— and it climbs.", -1, YEL, 92, 18]] },
   window10: { ph: "g1090", pics: [["g1040", "right under the window"]], lines: [["10 FT from the house", 0, CH, 66], ["a window cracked open", 1], ["for fresh air…", 1, CH, 66, 10], ["straight into", 2, YEL, 80], ["the house", 2, YEL, 80, 8]] },
-  neighbor: { ph: "g1200", pics: [["g1110", "20 feet apart"]], lines: [["houses 20 FT apart", 0], ["your neighbor's generator", 1, CH, 58], ["closer to your window", 2, YEL], ["than his own.", 2, YEL, 66, 10]] },
+  neighbor: { ph: "g1110", lines: [["houses 20 FT apart", 0], ["your neighbor's generator", 1, CH, 58], ["closer to your window", 2, YEL], ["than his own.", 2, YEL, 66, 10]] },
   sidecheck: { ph: "g0660", head: "20 feet — and look at that side of the house", pics: [["g0591", "WINDOW?"], ["g1060", "DOOR?"], ["g1620", "VENT?"]], lines: [] },
-  flue: { ph: "g1600", pics: [["g1570", "the exhaust goes out"]], lines: [["your furnace", 0], ["your water heater", 0, CH, 66, 10], ["they burn gas", 0, CH, 66, 20], ["the exhaust", 1, YEL, 80], ["has to go out.", 1, YEL, 80, 8]] },
+  flue: { ph: "g1600", lines: [["your furnace", 0], ["your water heater", 0, CH, 66, 10], ["they burn gas", 0, CH, 66, 20], ["the exhaust", 1, YEL, 80], ["has to go out.", 1, YEL, 80, 8]] },
   inout: { ph: "g1650", pics: [["g1680", "two pipes"]], lines: [["one brings", 0], ["air in", 0, "#8fc4f0", 96, 8], ["one pushes", 1], ["exhaust out", 1, YEL, 96, 8]] },
   ventmap: { ph: "g2380", pics: [["g1620", "dryer + water heater"], ["g1650", "the furnace pipe"]], lines: [["FURNACE", 0, CH, 80], ["WATER HEATER", 1, CH, 80], ["DRYER", 2, CH, 80], ["FIREPLACE", 3, CH, 80]] },
   towers: { ph: "g1630", pics: [["g1780", "a patio heater · in the den"]], lines: [["tower heaters", 0], ["patio heaters", 1], ["torpedo heaters", 2], ["never come inside.", 3, RED, 72]] }, // r3: foto del error real, sin sello

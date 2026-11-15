@@ -20,12 +20,12 @@ const Sway: React.FC<{ dur: number; seed: number; children: React.ReactNode }> =
 };
 
 // ronda 3: UNA línea grande sobre la foto real — banda oscura sólida en el tercio inferior, 60 px (56 si es larga), sin blur
-export const CapBand: React.FC<{ text: string; dur: number }> = ({ text, dur }) => {
+export const CapBand: React.FC<{ text: string; dur: number; top?: boolean }> = ({ text, dur, top }) => {
   const f = useCurrentFrame();
   const o = interpolate(f, [6, 14, dur - 8, dur], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const y = interpolate(f, [6, 14], [14, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
-    <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: 92, opacity: o }}>
+    <AbsoluteFill style={{ justifyContent: top ? "flex-start" : "flex-end", alignItems: "center", paddingBottom: top ? 0 : 92, paddingTop: top ? 80 : 0, opacity: o }}>
       <div style={{ transform: `translateY(${y}px)`, background: "rgba(12,14,18,0.86)", padding: "18px 44px 20px", borderRadius: 6, borderBottom: "6px solid #f2c230",
         fontFamily: P.FONTS.SANS, fontWeight: 900, fontSize: text.length > 30 ? 56 : 60, lineHeight: 1.1, letterSpacing: 1, color: "#f3f0e6", textTransform: "uppercase", whiteSpace: "nowrap" }}>{text}</div>
     </AbsoluteFill>
@@ -33,7 +33,7 @@ export const CapBand: React.FC<{ text: string; dur: number }> = ({ text, dur }) 
 };
 
 export const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
-  if (s.cap && s.k !== "C") return <AbsoluteFill><ShotBody s={{ ...s, cap: undefined }} dur={dur} /><CapBand text={s.cap} dur={dur} /></AbsoluteFill>;
+  if (s.cap && s.k !== "C") return <AbsoluteFill><ShotBody s={{ ...s, cap: undefined }} dur={dur} /><CapBand text={s.cap} dur={dur} top={!!s.capTop} /></AbsoluteFill>;
   // Veo: zoom 1,11 para dejar la estrellita de la marca fuera de cuadro
   if (s.veo) return <AbsoluteFill style={{ overflow: "hidden" }}><AbsoluteFill style={{ transform: "scale(1.11)" }}><P.Clip src={s.veo} seed={s.id + 1} dur={dur} clipDur={s.veoDur} minRate={0.42} /></AbsoluteFill></AbsoluteFill>;
   if (s.k === "Y") return <P.Clip src={s.src} seed={s.id + 1} dur={dur} clipDur={s.clipDur} />;

@@ -48,7 +48,7 @@ export const Dymo: React.FC<{ text: string; sub: string; dur: number }> = ({ tex
     fontFamily: SANS, fontWeight: 900, fontSize: size, letterSpacing: size * 0.18, color: "#fff", textShadow: "-1px -1px 0 rgba(0,0,0,.35), 1px 1px 0 rgba(255,255,255,.45)", whiteSpace: "pre" }}>{t || " "}</div>;
   return <div style={{ position: "absolute", right: 90, bottom: 100, opacity: o, transform: "rotate(-2deg)", textAlign: "right" }}>
     {tape(text.slice(0, n), 78, "#c62a22")}
-    <div style={{ marginTop: 14, marginRight: 30 }}>{n2 > 0 && tape(sub.slice(0, n2), 30, "#1b2330")}</div>
+    <div style={{ marginTop: 14, marginRight: 30 }}>{n2 > 0 && tape(sub.slice(0, n2), 34, "#1b2330")}</div>
   </div>;
 };
 
@@ -80,11 +80,11 @@ export const Slide: React.FC<{ src: string; note: string; seed: number; dur: num
 export const WarnLabel: React.FC<{ big: string; label: string; src: string; dur: number }> = ({ big, label, src, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 12, 12); const peel = 1 - ou(f / 16);
   return <div style={{ position: "absolute", right: 90, top: 30, width: 620, opacity: cl(o * 1.6), transform: `rotate(${3 + peel * 10}deg) translateY(${peel * -60}px)`, transformOrigin: "100% 0" }}>
-    <div style={{ background: "#f08a24", borderRadius: 18, padding: "26px 34px", border: "6px solid #1b2330", boxShadow: "8px 10px 0 rgba(0,0,0,.35)" }}>
-      <div style={{ display: "flex", alignItems: "center", gap: 16 }}><div style={{ width: 0, height: 0, borderLeft: "26px solid transparent", borderRight: "26px solid transparent", borderBottom: `46px solid ${INK}` }} /><div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 32, color: INK, letterSpacing: 6 }}>WARNING</div></div>
+    <div style={{ background: "#f6f1e3", borderRadius: 18, padding: "26px 34px", border: "6px solid #1b2330", boxShadow: "8px 10px 0 rgba(0,0,0,.35)" }}>
+      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 34, color: "#8a7a5c", letterSpacing: 6 }}>SHELF PRICE</div>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 96, color: INK, lineHeight: 1, marginTop: 12 }}>{big}</div>
-      <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 30, color: INK, marginTop: 8, textWrap: "balance" }}>{label}</div>
-      <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 28, color: "#3a2a12", marginTop: 14, paddingTop: 10, borderTop: `3px solid ${INK}`, textWrap: "balance" }}>SOURCE · {src}</div>
+      <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 36, color: INK, marginTop: 8, textWrap: "balance" }}>{label}</div>
+      <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 34, color: "#3a2a12", marginTop: 14, paddingTop: 10, borderTop: `3px solid ${INK}`, textWrap: "balance" }}>SOURCE · {src}</div>
     </div>
   </div>;
 };
@@ -107,7 +107,7 @@ export const CabinetPeek: React.FC<{ dur: number }> = ({ dur }) => {
   return <div style={{ position: "absolute", right: 30, top: 40, width: 460, height: 650, transformOrigin: "100% 0", transform: `translateY(${(1 - cl(o * 2)) * -760}px)`, perspective: 1600 }}>
     <div style={{ position: "absolute", inset: 0, background: "#6e4526", borderRadius: 8, boxShadow: "8px 10px 0 rgba(0,0,0,.35)" }} />
     <div style={{ position: "absolute", left: 24, top: 24, right: 24, bottom: 24, background: "#f8f5ec", padding: 26, boxSizing: "border-box" }}>
-      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 28, color: "#8a7a5c", letterSpacing: 1, lineHeight: 1.1 }}>THE WINTER BLACKOUT MANUAL</div>
+      <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 34, color: "#8a7a5c", letterSpacing: 1, lineHeight: 1.1 }}>THE WINTER BLACKOUT MANUAL</div>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 48, color: INK, lineHeight: 1.05, marginTop: 10, whiteSpace: "nowrap" }}>THE 2-MINUTE<br />CO CHECK</div>
       {["test button", "date on the back", "one every floor", "garage door gap"].map((s, i) => <div key={s} style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 10 }}>
         <div style={{ width: 30, height: 30, flex: "none", border: `4px solid ${INK}` }} /><div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 40, whiteSpace: "nowrap", color: "#1f4f8f" }}>{s}</div></div>)}
