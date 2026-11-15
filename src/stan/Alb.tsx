@@ -53,6 +53,30 @@ const Cuaderno: React.FC<{ w: number; children: React.ReactNode; rot?: number; s
   </div>
 );
 
+// foto fija a 1920x1080 exactos (coordenadas de la rejilla) con una cámara que se acerca a un punto; lo de adentro viaja con la foto
+type Cam = { x: number; y: number; s: number; a?: number; b?: number };
+export const FotoFija: React.FC<{ src?: string; cam?: Cam; tint?: number; children?: React.ReactNode }> = ({ src, cam, tint = 0.18, children }) => {
+  const f = useCurrentFrame(); const c = cam ?? { x: 960, y: 540, s: 1.06 };
+  const t = interpolate(f, [c.a ?? 0, c.b ?? 90], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
+  const sc = 1 + (c.s - 1) * t; let cx = 960 + (c.x - 960) * t, cy = 540 + (c.y - 540) * t;
+  cx = Math.max(960 / sc, Math.min(1920 - 960 / sc, cx)); cy = Math.max(540 / sc, Math.min(1080 - 540 / sc, cy));
+  return <AbsoluteFill style={{ overflow: "hidden", background: "#111" }}>
+    <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "0 0", transform: `translate(${960 - cx * sc}px, ${540 - cy * sc}px) scale(${sc})` }}>
+      {src ? <Img src={staticFile(src)} style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, objectFit: "fill" }} /> : null}
+      <div style={{ position: "absolute", inset: 0, background: `rgba(8,10,14,${tint})` }} />
+      {children}
+    </div>
+  </AbsoluteFill>;
+};
+// overrides por plano (coordenadas leídas con la rejilla sobre la foto de ese plano)
+export const OVA: Record<number, any> = {
+  110: { label: { x: 745, y: 732, w: 92, h: 84 }, cam: { x: 792, y: 720, s: 2.3, a: 0, b: 70 } },
+  720: { at: { x: 1200, y: 716 }, tip: { x: 1197, y: 664 }, cam: { x: 1150, y: 640, s: 1.9, a: 0, b: 40 } },
+  940: { tape: { x0: 60, x1: 1120, y: 940, up: 560 } },
+  1080: { side: "right" },
+  1120: { botA: { x: 405, y: 200, t: "CLORO" }, botB: { x: 1590, y: 220, t: "VINAGRE" }, mid: { x: 1000, y: 560 } },
+};
+
 // ---------- (1) apertura de paso / regla / error / pregunta / frase de Don Lalo
 export const PasoA: React.FC<{ kind: string; n?: number; N?: number; title: string; bg?: string; dur: number }> = ({ kind, n = 0, N = 9, title, bg, dur }) => {
   const f = useCurrentFrame(); const o = fade(f, dur); const k = sp(f, 0, 13), k2 = sp(f, 7, 15);
@@ -121,17 +145,18 @@ export const DosA: React.FC<{ title?: string; a: { t: string; s?: string }; b: {
   const side = (x: { t: string; s?: string }, src: string | undefined, col: string, at: number, left: boolean) => (
     <div style={{ position: "absolute", top: 0, bottom: 0, left: left ? 0 : 960, width: 960, overflow: "hidden" }}>
       <div style={{ position: "absolute", left: left ? 0 : -960, top: 0, width: 1920, height: 1080 }}>{src ? <Photo src={src} seed={left ? 3 : 9} dur={dur} /> : <AbsoluteFill style={{ background: "#2A2F35" }} />}</div>
-      <AbsoluteFill style={{ background: `rgba(8,12,18,${0.42 + 0.2 * cl((f - at) / 8)})` }} />
+      <AbsoluteFill style={{ background: `rgba(8,12,18,${0.32 + 0.18 * cl((f - at) / 8)})` }} />
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse 420px 300px at 50% 50%, rgba(0,0,0,.55), transparent)", opacity: cl((f - at) / 8) }} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", padding: 60, textAlign: "center", opacity: cl((f - at) / 8), transform: `translateY(${(1 - sp(f, at, 14)) * 40}px)` }}>
-        <Big size={x.t.length > 10 ? 92 : 120} col={col} edge="#111">{x.t}</Big>
-        {x.s ? <div style={{ marginTop: 30 }}><Cinta size={50}>{x.s}</Cinta></div> : null}
+        <Big size={x.t.length > 10 ? 110 : 160} col={col} edge="#111" style={{ transform: `scale(${0.6 + 0.4 * sp(f, at, 10)})` }}>{x.t}</Big>
+        {x.s ? <div style={{ marginTop: 34, opacity: cl((f - at - 10) / 8), transform: `translateY(${(1 - sp(f, at + 10, 14)) * 30}px)` }}><Cinta size={70}>{x.s}</Cinta></div> : null}
       </AbsoluteFill>
     </div>);
   return (
     <AbsoluteFill style={{ opacity: o, background: "#111" }}>
       {side(a, srcA, colA, fa, true)}{side(b, srcB, colB, fb, false)}
       <div style={{ position: "absolute", left: 948, top: 0, width: 24, height: 1080 * cut, background: "linear-gradient(90deg,#9BA3AB,#E9EDF0 45%,#7F878F)", boxShadow: "0 0 18px rgba(0,0,0,.6)" }} />
-      {title ? <div style={{ position: "absolute", top: 60, left: 0, right: 0, textAlign: "center" }}><Cinta size={48} rot={1}>{title}</Cinta></div> : null}
+      {title ? <div style={{ position: "absolute", top: 60, left: 0, right: 0, textAlign: "center" }}><Cinta size={64} rot={1}>{title}</Cinta></div> : null}
     </AbsoluteFill>
   );
 };
@@ -150,24 +175,38 @@ export const NumA: React.FC<{ n: string; label: string; sub?: string; bg?: strin
   );
 };
 
-// ---------- (5) cadena de pasos con flechas (ciclo del agua y la sal, rocías → esperas → cepillas)
+// ---------- (5) ciclo: una gota que viaja por el corte del muro (loop) o los pasos uno por vez, grandes
 export const CadenaA: React.FC<{ steps: string[]; marks: number[]; bg?: string; dur: number; loop?: boolean }> = ({ steps, marks, bg, dur, loop }) => {
-  const f = useCurrentFrame(); const o = fade(f, dur); const n = steps.length; const w = n > 3 ? 380 : 470;
+  const f = useCurrentFrame(); const o = fade(f, dur); const n = steps.length; const M = [...marks].sort((x, y) => x - y);
+  let cur = 0; for (let i = 0; i < n; i++) if (f >= M[i]) cur = i;
+  const txt = (i: number) => { const a = sp(f, M[i], 13); const out = i < cur ? cl((f - M[i + 1]) / 8) : 0;
+    return <div key={i} style={{ position: "absolute", left: 0, right: 0, top: 0, opacity: cl(a * 1.5) * (1 - out), transform: `translateY(${(1 - a) * 70 - out * 60}px)` }}>
+      <div style={{ fontFamily: BOLD, fontWeight: 900, fontSize: 40, letterSpacing: 6, color: CU.maiz, textShadow: "0 3px 10px #000" }}>{i + 1} DE {n}</div>
+      <Big size={steps[i].length > 22 ? 84 : 112} col={CU.cal} edge="#111" style={{ whiteSpace: "normal", lineHeight: 1.05, marginTop: 10 }}>{steps[i]}</Big>
+    </div>; };
+  if (!loop) return (
+    <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={13} dur={dur} /><AbsoluteFill style={{ background: "radial-gradient(ellipse 900px 420px at 50% 50%, rgba(0,0,0,.5), transparent)" }} />
+      <div style={{ position: "absolute", left: 160, right: 160, top: 400, height: 300, textAlign: "center" }}>{steps.map((_, i) => (i === cur || i === cur - 1) && f >= M[i] ? txt(i) : null)}</div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 800, display: "flex", justifyContent: "center", gap: 26 }}>{steps.map((_, i) => <div key={i} style={{ width: 120, height: 14, borderRadius: 7, background: f >= M[i] ? CU.maiz : "rgba(255,255,255,.25)", boxShadow: "0 2px 8px rgba(0,0,0,.6)" }} />)}</div>
+    </AbsoluteFill>);
+  // corte del muro: ladrillo con revoque a la derecha, tierra abajo; la gota recorre P y en el último paso se vuelve sal
+  const P = n >= 4 ? [[300, 900], [480, 620], [700, 400], [770, 400]] : [[300, 900], [480, 620], [700, 400]];
+  const ci = cur; const t = ease(cl((f - M[ci]) / 26)); const a = P[Math.max(0, ci - 1)], b = P[ci];
+  const px = ci === 0 ? b[0] : a[0] + (b[0] - a[0]) * t, py = ci === 0 ? b[1] : a[1] + (b[1] - a[1]) * t;
+  const salt = ci === n - 1 ? t : 0; const dryS = n >= 4 && ci >= 2 ? (ci === 2 ? t : 1) : 0;
   return (
-    <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={13} dur={dur} />
-      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 0 }}>
-          {steps.map((s, i) => { const a = sp(f, marks[i], 13);
-            return <React.Fragment key={i}>
-              {i > 0 ? <div style={{ width: 70, height: 16, background: CU.maiz, clipPath: "polygon(0 30%, 70% 30%, 70% 0, 100% 50%, 70% 100%, 70% 70%, 0 70%)", transform: `scaleX(${cl((f - marks[i] + 6) / 6)})`, transformOrigin: "0 50%" }} /> : null}
-              <div style={{ width: w, minHeight: 230, padding: "26px 26px", borderRadius: 18, background: i === n - 1 ? CU.naranja : "#FFFDF7", boxShadow: SH, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", transform: `translateY(${(1 - a) * 60}px) scale(${0.85 + 0.15 * a})`, opacity: cl(a * 1.4) }}>
-                <div style={{ fontFamily: BOLD, fontWeight: 900, fontSize: 34, color: i === n - 1 ? "#FFE7D2" : CU.naranja }}>{i + 1}</div>
-                <div style={{ fontFamily: BOLD, fontWeight: 800, fontSize: s.length > 22 ? 40 : 50, color: i === n - 1 ? "#fff" : CU.tinta, lineHeight: 1.1 }}>{s}</div>
-              </div>
-            </React.Fragment>; })}
+    <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={13} dur={dur} /><AbsoluteFill style={{ background: "rgba(8,12,18,.45)" }} />
+      <div style={{ position: "absolute", left: 120, top: 120, width: 720, height: 860, transform: `translateX(${(1 - sp(f, 0, 16)) * -900}px)` }}>
+        <div style={{ position: "absolute", left: 0, top: 0, width: 640, height: 760, borderRadius: 6, overflow: "hidden", boxShadow: SH, background: "#C9C0B0" }}>
+          {Array.from({ length: 11 }, (_, r) => Array.from({ length: 5 }, (_, c) => <div key={r + "-" + c} style={{ position: "absolute", left: c * 180 - (r % 2 ? 90 : 0), top: r * 70, width: 172, height: 62, borderRadius: 3, background: `linear-gradient(${(r * 37 + c * 53) % 180}deg, #B4532A, #9C4524)` }} />))}
+          <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 430 - 230 * dryS, background: "linear-gradient(0deg, rgba(31,90,140,.55), rgba(31,90,140,0))" }} />
         </div>
-        {loop ? <div style={{ marginTop: 40, opacity: cl((f - marks[n - 1] - 10) / 8) }}><Cinta size={52}>↺ y vuelve a empezar</Cinta></div> : null}
-      </AbsoluteFill>
+        <div style={{ position: "absolute", left: 640, top: 0, width: 80, height: 760, background: "linear-gradient(90deg,#E8DFCB,#D6CAB0)", boxShadow: "6px 0 18px rgba(0,0,0,.5)" }} />
+        <div style={{ position: "absolute", left: -40, top: 760, width: 820, height: 100, background: "linear-gradient(180deg,#6B4A2E,#4A3220)", borderRadius: 4 }} />
+        {Array.from({ length: 9 }, (_, k) => <div key={k} style={{ position: "absolute", left: 700 + (k % 3) * 22, top: 250 + Math.floor(k / 3) * 22, width: 18 * salt, height: 18 * salt, background: "#FFFFFF", transform: `rotate(${k * 23}deg)`, boxShadow: "0 0 6px rgba(255,255,255,.9)" }} />)}
+        <div style={{ position: "absolute", left: px - 120 - 26, top: py - 120 - 30, width: 52 * (1 - salt * 0.8), height: 62 * (1 - salt * 0.8), borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%", background: "radial-gradient(circle at 38% 35%, #E6F4FF, #4C93D0 55%, #1F5A8C)", boxShadow: "0 6px 14px rgba(0,0,0,.45)", opacity: 1 - salt }} />
+      </div>
+      <div style={{ position: "absolute", left: 960, right: 80, top: 380, height: 360 }}>{steps.map((_, i) => (i === cur || i === cur - 1) && f >= M[i] ? txt(i) : null)}</div>
     </AbsoluteFill>
   );
 };
@@ -186,106 +225,147 @@ export const PalabraA: React.FC<{ word: string; sub?: string; sub2?: string; bg?
   );
 };
 
-// ---------- (7) la gota que burbujea sobre la costra (cuenta-gotas, burbujas con radial-gradient)
-export const GotaA: React.FC<{ label: string; bg?: string; dur: number }> = ({ label, bg, dur }) => {
-  const f = useCurrentFrame(); const o = fade(f, dur); const hit = 22; const y = interpolate(f, [4, hit], [-260, 470], { ...CL, easing: Easing.in(Easing.quad) });
+// ---------- (7) la gota que burbujea: sobre la foto fija, en el punto donde cae el gotero (coordenadas de la rejilla)
+export const GotaA: React.FC<{ label: string; bg?: string; dur: number; at?: { x: number; y: number }; tip?: { x: number; y: number }; cam?: Cam }> = ({ label, bg, dur, at = { x: 960, y: 620 }, tip, cam }) => {
+  const f = useCurrentFrame(); const o = fade(f, dur); const hit = 20; const t0 = tip ?? { x: at.x, y: at.y - 200 };
+  const y = interpolate(f, [6, hit], [t0.y, at.y - 6], { ...CL, easing: Easing.in(Easing.quad) });
+  const [w1, w2] = label.split(" = ");
   return (
-    <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={19} dur={dur} />
-      <div style={{ position: "absolute", left: 0, right: 0, top: 560, height: 520, background: "linear-gradient(180deg, #E9E7E0, #CFCBC0)", boxShadow: "inset 0 18px 30px rgba(0,0,0,.25)" }}>
-        {Array.from({ length: 40 }, (_, i) => <div key={i} style={{ position: "absolute", left: (i * 211) % 1900, top: (i * 97) % 480, width: 14 + (i % 5) * 9, height: 10 + (i % 4) * 7, borderRadius: "50%", background: "rgba(255,255,255,.75)" }} />)}
+    <AbsoluteFill style={{ opacity: o }}>
+      <FotoFija src={bg} cam={cam ?? { x: at.x, y: at.y, s: 1.8, a: 0, b: 40 }} tint={0.08}>
+        {f >= 6 && f < hit ? <div style={{ position: "absolute", left: t0.x - 5, top: y, width: 10, height: 14, borderRadius: "50% 50% 50% 50% / 62% 62% 38% 38%", background: "radial-gradient(circle at 40% 35%, #FFFFFF, #CFE2EE 60%, #9DB8C9)", boxShadow: "0 2px 3px rgba(0,0,0,.35)" }} /> : null}
+        {f >= hit ? <div style={{ position: "absolute", left: at.x - 34, top: at.y - 9, width: 68, height: 18, borderRadius: "50%", background: "radial-gradient(ellipse at 50% 45%, rgba(255,255,255,.85), rgba(225,232,236,.55) 60%, rgba(200,210,215,0) 100%)", transform: `scale(${0.3 + 0.9 * cl((f - hit) / 30)})` }} /> : null}
+        {Array.from({ length: 46 }, (_, i) => { const st = hit + 2 + (i % 16) * 2.2; if (f < st) return null; const life = ((f - st) % 34) / 34; const sp2 = 0.4 + 0.6 * cl((f - hit) / 40);
+          const x = at.x + (((i * 37) % 64) - 32) * sp2; const r = 2.5 + (i % 5) * 1.6; const yy = at.y - 2 + (((i * 13) % 10) - 5) * 0.8 - life * (8 + (i % 4) * 4);
+          return <div key={i} style={{ position: "absolute", left: x - r, top: yy - r, width: r * 2 * (1 + life * 0.6), height: r * 2 * (1 + life * 0.6), borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, rgba(255,255,255,.98), rgba(255,255,255,.15) 65%)", border: "0.8px solid rgba(255,255,255,.95)", boxShadow: "0 1px 2px rgba(0,0,0,.25)", opacity: life > 0.85 ? (1 - life) * 6 : 1 }} />; })}
+      </FotoFija>
+      <div style={{ position: "absolute", left: 90, bottom: 110, opacity: cl((f - hit - 10) / 8), transform: `translateY(${(1 - sp(f, hit + 10, 12)) * 60}px)` }}>
+        <Big size={150} col={CU.maiz} edge="#3A2000">{w1}</Big>
+        {w2 ? <div style={{ marginTop: 22, opacity: cl((f - hit - 24) / 8) }}><Cinta size={66}>= {w2}</Cinta></div> : null}
       </div>
-      {f < hit ? <div style={{ position: "absolute", left: 930, top: y, width: 60, height: 84, background: "radial-gradient(circle at 40% 60%, #F7F2D8, #D7CFA4)", borderRadius: "50% 50% 50% 50% / 62% 62% 38% 38%", boxShadow: "0 6px 14px rgba(0,0,0,.35)" }} /> : null}
-      {f >= hit ? <div style={{ position: "absolute", left: 960 - 160, top: 540, width: 320, height: 70, borderRadius: "50%", background: "rgba(214,204,160,.75)", transform: `scale(${0.4 + 0.6 * cl((f - hit) / 8)})` }} /> : null}
-      {Array.from({ length: 34 }, (_, i) => { const t0 = hit + (i % 12) * 3; if (f < t0) return null; const life = ((f - t0) % 40) / 40; const x = 960 + (((i * 73) % 300) - 150); const r = 8 + (i % 5) * 5;
-        return <div key={i} style={{ position: "absolute", left: x, top: 560 - life * 140, width: r, height: r, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, rgba(255,255,255,.95), rgba(255,255,255,.2) 60%)", border: "1.5px solid rgba(255,255,255,.8)", opacity: 1 - life }} />; })}
-      <div style={{ position: "absolute", left: 0, right: 0, top: 150, textAlign: "center" }}><Sello txt={label} col={CU.maiz} f={f} at={hit + 14} size={74} rot={-4} /></div>
     </AbsoluteFill>
   );
 };
 
-// ---------- (8) cinta métrica que se desenrolla con la medida
-export const MetroA: React.FC<{ big: string; sub?: string; bg?: string; dur: number }> = ({ big, sub, bg, dur }) => {
-  const f = useCurrentFrame(); const o = fade(f, dur); const w = ease(cl(f / 18));
+// ---------- (8) cinta métrica que se estira sobre la superficie real (tramo horizontal y, si hay, el alto)
+export const MetroA: React.FC<{ big: string; sub?: string; bg?: string; dur: number; tape?: { x0: number; x1: number; y: number; up?: number } }> = ({ big, sub, bg, dur, tape }) => {
+  const f = useCurrentFrame(); const o = fade(f, dur); const T = tape ?? { x0: 140, x1: 1780, y: 900 };
+  const w = ease(cl((f - 4) / 26)); const L = (T.x1 - T.x0) * w; const hU = T.up ? (T.y - T.up) * ease(cl((f - 34) / 18)) : 0;
+  const nums = (big.match(/(\d+)\s*m\b/) || [])[1]; const N = nums ? Math.min(10, parseInt(nums)) : 0;
+  const strip = "repeating-linear-gradient(90deg, #111 0 3px, transparent 3px 22px), linear-gradient(180deg, #FFD54A, #F2B70E)";
   return (
-    <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={23} dur={dur} />
-      <div style={{ position: "absolute", left: 120, top: 560, width: 1680 * w, height: 96, background: `repeating-linear-gradient(90deg, #111 0 3px, transparent 3px 21px), repeating-linear-gradient(90deg, #111 0 4px, transparent 4px 105px), linear-gradient(180deg, #FFD54A, #F2B70E)`, backgroundSize: "100% 30%, 100% 55%, 100% 100%", backgroundRepeat: "repeat-x", boxShadow: "0 14px 30px rgba(0,0,0,.5)", borderRadius: 4 }} />
-      <div style={{ position: "absolute", left: 40, top: 500, width: 210, height: 210, borderRadius: 36, background: "linear-gradient(160deg, #3A3F45, #1A1D21)", boxShadow: SH, border: "6px solid #FFC23A" }} />
-      <AbsoluteFill style={{ alignItems: "center", paddingTop: 210 }}>
-        <Big size={big.length > 16 ? 110 : 140} col={CU.cal} edge="#111" style={{ opacity: cl((f - 10) / 8) }}>{big}</Big>
-      </AbsoluteFill>
-      {sub ? <div style={{ position: "absolute", left: 0, right: 0, top: 760, textAlign: "center", opacity: cl((f - 20) / 8) }}><Cinta size={64}>{sub}</Cinta></div> : null}
+    <AbsoluteFill style={{ opacity: o }}><FotoFija src={bg} tint={0.22} cam={{ x: 960, y: 540, s: 1.05, a: 0, b: dur }}>
+      <div style={{ position: "absolute", left: T.x0, top: T.y - 30, width: L, height: 60, background: strip, backgroundSize: "100% 30%, 100% 100%", backgroundRepeat: "repeat-x", boxShadow: "0 10px 18px rgba(0,0,0,.55)", borderRadius: 3 }}>
+        <div style={{ position: "absolute", right: -14, top: -8, width: 16, height: 76, background: "linear-gradient(90deg,#9AA0A6,#E3E6E8,#7E848A)", borderRadius: 3 }} />
+        {N > 0 ? Array.from({ length: N + 1 }, (_, i) => { const x = ((T.x1 - T.x0) * i) / N; return x <= L ? <div key={i} style={{ position: "absolute", left: Math.max(0, x - 30 - (i === N ? 30 : 0)), top: 18, width: 60, textAlign: "center", fontFamily: BOLD, fontWeight: 900, fontSize: 36, color: "#111" }}>{i}</div> : null; }) : null}
+      </div>
+      {T.up ? <div style={{ position: "absolute", left: T.x0, top: T.y - 30 - hU, width: 60, height: hU, background: "repeating-linear-gradient(0deg, #111 0 3px, transparent 3px 22px), linear-gradient(90deg, #FFD54A, #F2B70E)", backgroundSize: "30% 100%, 100% 100%", backgroundRepeat: "repeat-y", boxShadow: "8px 0 16px rgba(0,0,0,.5)", borderRadius: 3 }} /> : null}
+    </FotoFija>
+      <div style={{ position: "absolute", left: 90, top: 110, opacity: cl((f - 10) / 8), transform: `translateY(${(1 - sp(f, 10, 13)) * -50}px)` }}>
+        <Big size={big.length > 16 ? 112 : 140} col={CU.cal} edge="#111">{big}</Big>
+        {sub ? <div style={{ marginTop: 28, opacity: cl((f - 40) / 8) }}><Cinta size={72}>{sub}</Cinta></div> : null}
+      </div>
     </AbsoluteFill>
   );
 };
 
-// ---------- (9) ticket de ferretería que se imprime renglón por renglón
-export const TicketA: React.FC<{ rows: { name: string; price: string; f: number }[]; total?: string; ft?: number; head?: string; bg?: string; dur: number }> = ({ rows, total, ft = 999, head = "FERRETERÍA DE LA ESQUINA", bg, dur }) => {
+// ---------- (9) ticket de ferretería que se imprime renglón por renglón (de costado, nunca encima de la persona)
+export const TicketA: React.FC<{ rows: { name: string; price: string; f: number }[]; total?: string; ft?: number; head?: string; bg?: string; dur: number; side?: string }> = ({ rows, total, ft = 999, head = "FERRETERÍA DE LA ESQUINA", bg, dur, side }) => {
   const f = useCurrentFrame(); const o = fade(f, dur); const last = Math.max(...rows.map((r) => r.f), total ? ft : 0);
-  const shown = rows.filter((r) => f >= r.f).length + (total && f >= ft ? 1.3 : 0); const h = 230 + shown * 96;
+  const shown = rows.filter((r) => f >= r.f).length + (total && f >= ft ? 1.5 : 0); const h = 190 + shown * 104; const W = side ? 680 : 860;
+  const k = sp(f, 0, 15); const teeth = Array.from({ length: 34 }, (_, i) => `${(i * 100) / 33}% ${i % 2 ? "100%" : "calc(100% - 10px)"}`).reverse().join(", ");
   return (
     <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={29} dur={dur} />
-      <AbsoluteFill style={{ alignItems: "center", justifyContent: "flex-start", paddingTop: 70 }}>
-        <div style={{ width: 860, height: interpolate(f, [0, last + 10], [180, h], CL), overflow: "hidden", background: "#FBFBF7", boxShadow: SH, padding: "36px 56px", fontFamily: "'Courier New', monospace", color: "#222", transform: "rotate(-1deg)" }}>
-          <div style={{ textAlign: "center", fontSize: 34, fontWeight: 700, letterSpacing: 2 }}>{head}</div>
-          <div style={{ borderBottom: "3px dashed #999", margin: "16px 0 22px" }} />
-          {rows.map((r, i) => f >= r.f ? <div key={i} style={{ display: "flex", justifyContent: "space-between", fontSize: 44, height: 96, alignItems: "center" }}><span>{r.name}</span><span style={{ fontWeight: 700 }}>{r.price}</span></div> : null)}
-          {total && f >= ft ? <><div style={{ borderBottom: "3px dashed #999", margin: "6px 0 14px" }} /><div style={{ display: "flex", justifyContent: "space-between", fontSize: 54, fontWeight: 700 }}><span>TOTAL</span><span style={{ color: CU.chile }}>{total}</span></div></> : null}
-        </div>
-      </AbsoluteFill>
-    </AbsoluteFill>
-  );
-};
-
-// ---------- (10) etiqueta de precio colgada con hilo (de la tienda de la esquina)
-export const PrecioA: React.FC<{ item: string; price: string; bg?: string; dur: number }> = ({ item, price, bg, dur }) => {
-  const f = useCurrentFrame(); const o = fade(f, dur); const k = sp(f, 0, 7); const sw = 9 * Math.exp(-f / 20) * Math.cos(f / 4);
-  return (
-    <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={31} dur={dur} />
-      <div style={{ position: "absolute", left: 960, top: -40, transformOrigin: "0 0", transform: `rotate(${sw}deg) translateY(${(1 - k) * -500}px)` }}>
-        <div style={{ position: "absolute", left: -3, top: 0, width: 6, height: 300, background: "linear-gradient(90deg,#8E6B3E,#D8C19A 50%,#8E6B3E)" }} />
-        <div style={{ position: "absolute", left: -360, top: 290, width: 720, padding: "90px 50px 50px", textAlign: "center", background: "linear-gradient(170deg,#FFF4D6,#F4DFA8)", clipPath: "polygon(14% 0, 86% 0, 100% 13%, 100% 100%, 0 100%, 0 13%)", boxShadow: SH }}>
-          <div style={{ position: "absolute", left: 342, top: 26, width: 36, height: 36, borderRadius: "50%", background: "#2B211A", boxShadow: "0 0 0 8px #E9DCC2" }} />
-          <div style={{ fontFamily: BOLD, fontWeight: 800, fontSize: 46, color: CU.tinta, lineHeight: 1.15 }}>{item}</div>
-          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 128, color: CU.chile, lineHeight: 1.05, marginTop: 10 }}>{price}</div>
+      <div style={{ position: "absolute", top: 90, left: side === "right" ? 1920 - W - 50 : side === "left" ? 50 : 960 - W / 2, width: W, transform: `translateY(${(1 - k) * -500}px) rotate(${side ? 1.5 : -1}deg)` }}>
+        <div style={{ height: interpolate(f, [0, last + 10], [170, h], CL), overflow: "hidden", background: "#FBFBF7", boxShadow: SH, padding: "30px 40px", fontFamily: "'Courier New', monospace", color: "#222", clipPath: `polygon(0 0, 100% 0, ${teeth})` }}>
+          <div style={{ textAlign: "center", fontSize: 36, fontWeight: 700, letterSpacing: 2 }}>{head}</div>
+          <div style={{ borderBottom: "3px dashed #999", margin: "14px 0 16px" }} />
+          {rows.map((r, i) => f >= r.f ? <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 20, fontSize: 42, fontWeight: 700, minHeight: 104, alignItems: "center", lineHeight: 1.05, opacity: cl((f - r.f) / 5) }}><span>{r.name}</span><span style={{ whiteSpace: "nowrap" }}>{r.price}</span></div> : null)}
+          {total && f >= ft ? <><div style={{ borderBottom: "3px dashed #999", margin: "6px 0 14px" }} /><div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", fontSize: 50, fontWeight: 700 }}><span>TOTAL</span><span style={{ color: CU.chile, fontSize: 60, transform: `scale(${0.6 + 0.4 * sp(f, ft, 9)})`, display: "inline-block", whiteSpace: "nowrap" }}>{total}</span></div></> : null}
         </div>
       </div>
     </AbsoluteFill>
   );
 };
 
-// ---------- (11) peligro: banda de obra amarilla y negra, la frase en blanco, el sello en rojo
-export const PeligroA: React.FC<{ line: string; sub?: string; stamp?: string; fs?: number; bg?: string; dur: number }> = ({ line, sub, stamp, fs = 26, bg, dur }) => {
-  const f = useCurrentFrame(); const o = fade(f, dur); const w = ease(cl(f / 12));
-  const band = (top: number, dir: number) => <div style={{ position: "absolute", left: 0, top, width: 1920, height: 86, transform: `translateX(${dir * (1 - w) * 1920}px)`, background: "repeating-linear-gradient(-45deg, #111 0 50px, #FFC23A 50px 100px)", boxShadow: "0 10px 26px rgba(0,0,0,.5)" }} />;
+// ---------- (10) precio: escrito con plumón en la etiqueta blanca real del envase (si hay coordenadas); si no, etiqueta colgada a un costado
+export const PrecioA: React.FC<{ item: string; price: string; bg?: string; dur: number; label?: { x: number; y: number; w: number; h: number }; cam?: Cam }> = ({ item, price, bg, dur, label, cam }) => {
+  const f = useCurrentFrame(); const o = fade(f, dur);
+  if (label) { const wr = cl((f - 30) / 22); const m = price.match(/^(.*?)(US\$.*)$/); const pre = m ? m[1].trim() : ""; const amt = m ? m[2] : price;
+    return (
+      <AbsoluteFill style={{ opacity: o }}>
+        <FotoFija src={bg} cam={cam} tint={0.05}>
+          <div style={{ position: "absolute", left: label.x, top: label.y, width: label.w, height: label.h, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", transform: "rotate(-3deg)", mixBlendMode: "multiply", clipPath: `inset(0 ${100 - wr * 100}% 0 0)` }}>
+            {pre ? <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 19, color: "#1B2C8F", lineHeight: 1 }}>{pre}</div> : null}
+            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 36, color: "#C0201A", lineHeight: 1 }}>{amt}</div>
+          </div>
+        </FotoFija>
+        <div style={{ position: "absolute", left: 80, top: 90, opacity: cl((f - 8) / 8), transform: `translateX(${(1 - sp(f, 8, 14)) * -120}px)` }}><Cinta size={66} rot={-2}>{item}</Cinta></div>
+      </AbsoluteFill>); }
+  const k = sp(f, 0, 7); const sw = 9 * Math.exp(-f / 20) * Math.cos(f / 4);
   return (
-    <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={37} dur={dur} /><AbsoluteFill style={{ background: "rgba(40,6,4,.45)" }} />
-      {band(120, -1)}{band(874, 1)}
-      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", gap: 34, padding: 90, textAlign: "center" }}>
-        <Big size={line.length > 28 ? 84 : 112} col={CU.cal} edge="#5A0C06" style={{ whiteSpace: "normal", lineHeight: 1.1, opacity: cl((f - 6) / 8) }}>{line}</Big>
-        {sub ? <div style={{ opacity: cl((f - 14) / 8) }}><Cinta size={54}>{sub}</Cinta></div> : null}
-        {stamp ? <Sello txt={stamp} col={CU.chile} f={f} at={fs} size={110} /> : null}
-      </AbsoluteFill>
+    <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={31} dur={dur} />
+      <div style={{ position: "absolute", left: 1460, top: -40, transformOrigin: "0 0", transform: `rotate(${sw}deg) translateY(${(1 - k) * -500}px)` }}>
+        <div style={{ position: "absolute", left: -14, top: 30, width: 28, height: 28, borderRadius: "50%", background: "radial-gradient(circle at 35% 35%, #F25C4A, #8E1C12)", boxShadow: "0 3px 5px rgba(0,0,0,.5)" }} />
+        <div style={{ position: "absolute", left: -3, top: 44, width: 6, height: 230, background: "linear-gradient(90deg,#8E6B3E,#D8C19A 50%,#8E6B3E)" }} />
+        <div style={{ position: "absolute", left: -300, top: 260, width: 600, padding: "84px 40px 44px", textAlign: "center", background: "linear-gradient(170deg,#FFF4D6,#F4DFA8)", clipPath: "polygon(14% 0, 86% 0, 100% 13%, 100% 100%, 0 100%, 0 13%)", boxShadow: SH }}>
+          <div style={{ position: "absolute", left: 282, top: 24, width: 36, height: 36, borderRadius: "50%", background: "#2B211A", boxShadow: "0 0 0 8px #E9DCC2" }} />
+          <div style={{ fontFamily: BOLD, fontWeight: 800, fontSize: 52, color: CU.tinta, lineHeight: 1.1 }}>{item}</div>
+          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: price.length > 14 ? 92 : 120, color: CU.chile, lineHeight: 1.05, marginTop: 10 }}>{price}</div>
+        </div>
+      </div>
     </AbsoluteFill>
   );
 };
 
-// ---------- (12) reloj de cocina: la aguja recorre los minutos; o tres fichas NO / SÍ / NO
+// ---------- (11) peligro: sobre la foto real; si están los dos envases, sus nombres arriba y el gas que sube entre ellos; el sello abajo, sin pisar
+export const PeligroA: React.FC<{ line: string; sub?: string; stamp?: string; fs?: number; bg?: string; dur: number; botA?: { x: number; y: number; t: string }; botB?: { x: number; y: number; t: string }; mid?: { x: number; y: number } }> = ({ line, sub, stamp, fs = 26, bg, dur, botA, botB, mid }) => {
+  const f = useCurrentFrame(); const o = fade(f, dur);
+  if (botA && botB && mid) { const g = ease(cl((f - 10) / 30));
+    const tag = (b: { x: number; y: number; t: string }, at: number) => <div style={{ position: "absolute", left: b.x, top: b.y, transform: `translate(-50%, -100%) translateY(${(1 - sp(f, at, 12)) * -80}px)`, opacity: cl((f - at) / 6) }}><Cinta size={64} rot={b.x < 960 ? -3 : 3} col={CU.chile}>{b.t}</Cinta></div>;
+    const eq = line.split("=").pop()?.trim() ?? "GAS";
+    return (
+      <AbsoluteFill style={{ opacity: o }}>
+        <FotoFija src={bg} tint={0.1 + 0.15 * g} cam={{ x: mid.x, y: 480, s: 1.08, a: 0, b: dur }}>
+          {Array.from({ length: 7 }, (_, i) => { const ph = ((f * 0.9 + i * 31) % 90) / 90; const x = mid.x + (i - 3) * 150 * g; const yy = mid.y - ph * 360 * g;
+            return <div key={i} style={{ position: "absolute", left: x - 230, top: yy - 150, width: 460, height: 300, borderRadius: "50%", background: "radial-gradient(ellipse at 50% 50%, rgba(196,214,92,.55), rgba(176,196,70,.25) 45%, rgba(170,190,60,0) 70%)", opacity: g * (ph < 0.15 ? ph / 0.15 : 1 - (ph - 0.15) / 0.85) }} />; })}
+        </FotoFija>
+        {tag(botA, 2)}{tag(botB, 10)}
+        <div style={{ position: "absolute", left: 0, right: 0, top: 330, textAlign: "center", opacity: cl((f - 18) / 6), transform: `scale(${0.7 + 0.3 * sp(f, 18, 10)})` }}><Big size={170} col={CU.cal} edge="#3F4A08">= {eq}</Big></div>
+        {stamp ? <div style={{ position: "absolute", left: 0, right: 0, top: 800, textAlign: "center" }}><Sello txt={stamp} col={CU.chile} f={f} at={fs + 12} size={120} rot={-6} /></div> : null}
+      </AbsoluteFill>); }
+  return (
+    <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={37} dur={dur} /><AbsoluteFill style={{ background: "radial-gradient(ellipse 1100px 600px at 50% 50%, rgba(60,8,4,.55), rgba(60,8,4,.2))" }} />
+      <div style={{ position: "absolute", left: 120, right: 120, top: stamp ? 300 : 380, textAlign: "center", opacity: cl((f - 4) / 8), transform: `translateY(${(1 - sp(f, 4, 13)) * 50}px)` }}>
+        <Big size={line.length > 28 ? 92 : 124} col={CU.cal} edge="#5A0C06" style={{ whiteSpace: "normal", lineHeight: 1.08 }}>{line}</Big>
+        {sub ? <div style={{ marginTop: 30, opacity: cl((f - 14) / 8) }}><Cinta size={60}>{sub}</Cinta></div> : null}
+      </div>
+      {stamp ? <div style={{ position: "absolute", left: 0, right: 0, top: 760, textAlign: "center" }}><Sello txt={stamp} col={CU.chile} f={f} at={fs} size={120} /></div> : null}
+    </AbsoluteFill>
+  );
+};
+
+// ---------- (12) reloj de cocina: la aguja recorre los minutos y al lado, uno por vez, el veredicto de cada tiempo
 export const RelojA: React.FC<{ big: string; sweep?: number; chips?: { t: string; ok: boolean; f: number }[]; bg?: string; dur: number }> = ({ big, sweep = 360, chips, bg, dur }) => {
-  const f = useCurrentFrame(); const o = fade(f, dur); const a = interpolate(f, [6, Math.min(dur - 10, 60)], [0, sweep], { ...CL, easing: Easing.inOut(Easing.cubic) });
+  const f = useCurrentFrame(); const o = fade(f, dur); const k = sp(f, 0, 14);
+  const cs = chips ?? []; let ci = -1; cs.forEach((c, i) => { if (f >= c.f) ci = i; });
+  const deg = (i: number) => Math.min(360, (parseFloat(cs[i].t) || 0) * 6);
+  const a = cs.length ? (ci < 0 ? 0 : (ci > 0 ? deg(ci - 1) : 0) + (deg(ci) - (ci > 0 ? deg(ci - 1) : 0)) * ease(cl((f - cs[ci].f) / 20))) : interpolate(f, [6, Math.min(dur - 10, 60)], [0, sweep], { ...CL, easing: Easing.inOut(Easing.cubic) });
+  const c = ci >= 0 ? cs[ci] : null;
   return (
     <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={41} dur={dur} />
-      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "row", gap: 90 }}>
-        <div style={{ position: "relative", width: 520, height: 520, borderRadius: "50%", background: `conic-gradient(rgba(240,122,26,.85) 0 ${a}deg, #FFFDF7 ${a}deg 360deg)`, border: "22px solid #E9EDF0", boxShadow: SH }}>
-          {Array.from({ length: 12 }, (_, i) => <div key={i} style={{ position: "absolute", left: 238, top: 6, width: 8, height: 34, background: CU.tinta, transformOrigin: "4px 232px", transform: `rotate(${i * 30}deg)` }} />)}
-          <div style={{ position: "absolute", left: 234, top: 40, width: 16, height: 220, background: CU.tinta, borderRadius: 8, transformOrigin: "8px 198px", transform: `rotate(${a}deg)` }} />
-          <div style={{ position: "absolute", left: 222, top: 222, width: 40, height: 40, borderRadius: "50%", background: CU.chile }} />
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "row", gap: 110 }}>
+        <div style={{ position: "relative", width: 560, height: 560, borderRadius: "50%", background: `conic-gradient(rgba(240,122,26,.9) 0 ${a}deg, #FFFDF7 ${a}deg 360deg)`, border: "24px solid #E9EDF0", boxShadow: SH, transform: `scale(${0.6 + 0.4 * k})`, opacity: cl(k * 1.5) }}>
+          {Array.from({ length: 12 }, (_, i) => <div key={i} style={{ position: "absolute", left: 252, top: 6, width: 8, height: 34, background: CU.tinta, transformOrigin: "4px 250px", transform: `rotate(${i * 30}deg)` }} />)}
+          {[0, 15, 30, 45].map((m, i) => <div key={m} style={{ position: "absolute", left: 256 + Math.sin((i * Math.PI) / 2) * 190 - 40, top: 256 - Math.cos((i * Math.PI) / 2) * 190 - 26, width: 80, textAlign: "center", fontFamily: BOLD, fontWeight: 800, fontSize: 40, color: CU.tinta }}>{m}</div>)}
+          <div style={{ position: "absolute", left: 248, top: 50, width: 16, height: 228, background: CU.tinta, borderRadius: 8, transformOrigin: "8px 206px", transform: `rotate(${a}deg)` }} />
+          <div style={{ position: "absolute", left: 236, top: 236, width: 40, height: 40, borderRadius: "50%", background: CU.chile }} />
         </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 30, alignItems: "flex-start" }}>
-          <Big size={140} col={CU.cal} edge="#111">{big}</Big>
-          {chips?.map((c, i) => f >= c.f ? <div key={i} style={{ display: "flex", alignItems: "center", gap: 22, transform: `translateX(${(1 - sp(f, c.f, 13)) * 80}px)` }}>
-            <div style={{ fontFamily: BOLD, fontWeight: 900, fontSize: 66, color: CU.cal, width: 260, textShadow: "0 3px 10px #000" }}>{c.t}</div>
-            <div style={{ padding: "6px 26px", borderRadius: 12, background: c.ok ? CU.verde : CU.chile, fontFamily: BOLD, fontWeight: 900, fontSize: 56, color: "#fff" }}>{c.ok ? "SÍ" : "NO"}</div>
-          </div> : null)}
+        <div style={{ width: 640, height: 420, position: "relative" }}>
+          {c ? <div key={ci} style={{ position: "absolute", left: 0, top: 40, transform: `translateY(${(1 - sp(f, c.f, 12)) * 60}px)`, opacity: cl((f - c.f) / 6) }}>
+            <Big size={150} col={CU.cal} edge="#111">{c.t}</Big>
+            <div style={{ marginTop: 30, marginLeft: 10 }}><Sello txt={c.ok ? "SÍ" : "NO"} col={c.ok ? CU.verde : CU.chile} f={f} at={c.f + 14} size={130} rot={c.ok ? -4 : -8} /></div>
+          </div> : <div style={{ position: "absolute", left: 0, top: 120, opacity: cl((f - 8) / 8) }}><Big size={170} col={CU.cal} edge="#111">{big}</Big></div>}
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
@@ -332,7 +412,8 @@ const Muestra: React.FC<{ mat: string; w: number; h: number }> = ({ mat, w, h })
     case "revoque": return speck("linear-gradient(160deg,#E8DFCB,#D6CAB0)", "#B7A98A", 140);
     case "cantera": return speck("linear-gradient(150deg,#D9A08C,#C4826C)", "#8E4E3C", 180);
     case "marmol": return <div style={{ ...box, background: "linear-gradient(115deg, transparent 40%, rgba(120,120,130,.35) 41%, transparent 43%), linear-gradient(60deg, transparent 62%, rgba(120,120,130,.3) 63%, transparent 64.5%), linear-gradient(160deg,#F5F4F0,#E2E0DA)" }} />;
-    case "caliza": case "travertino": return speck("linear-gradient(160deg,#E7DDC6,#D3C6A6)", "#A7946C", 90);
+    case "caliza": return speck("linear-gradient(160deg,#E7DDC6,#D3C6A6)", "#A7946C", 90);
+    case "travertino": return <div style={{ ...box, background: "repeating-linear-gradient(4deg, #D9C29A 0 26px, #C9AE80 26px 31px, #E2CFAA 31px 58px, #B89A6A 58px 61px)" }}>{Array.from({ length: 26 }, (_, i) => <div key={i} style={{ position: "absolute", left: (i * 97) % w, top: (i * 53) % h, width: 10 + (i % 4) * 6, height: 4 + (i % 3) * 2, borderRadius: "50%", background: "#7E6440", opacity: 0.6 }} />)}</div>;
     case "granito": return speck("linear-gradient(160deg,#4A4A4C,#2E2E30)", "#D8D8D8", 220);
     case "madera": return <div style={{ ...box, background: "repeating-linear-gradient(0deg, #9C6B3E 0 18px, #8A5B32 18px 22px, #A97748 22px 40px)" }} />;
     case "metal": case "aluminio": case "herreria": return <div style={{ ...box, background: "linear-gradient(135deg,#C9CED3,#8E959C 50%,#D9DDE1)" }} />;
@@ -347,14 +428,15 @@ export const SuperficieA: React.FC<{ mats: { mat: string; name: string; f: numbe
     <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={47} dur={dur} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", gap: 40 }}>
         <div style={{ display: "flex", gap: 34 }}>
-          {mats.map((m, i) => { const a = sp(f, m.f, 14); return <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 18, opacity: cl(a * 1.5), transform: `translateY(${(1 - a) * 60}px)` }}>
+          {mats.map((m, i) => { const a = sp(f, m.f, 14); return <div key={i} style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center", gap: 18, opacity: cl(a * 1.5), transform: `translateY(${(1 - a) * 60}px)` }}>
             <Muestra mat={m.mat} w={w} h={h} />
-            <div style={{ fontFamily: BOLD, fontWeight: 800, fontSize: n > 3 ? 44 : 54, color: CU.cal, textShadow: "0 3px 10px #000", whiteSpace: "nowrap" }}>{m.name}</div>
+            <div style={{ fontFamily: BOLD, fontWeight: 900, fontSize: n > 3 ? 58 : 66, color: CU.cal, textShadow: "0 4px 12px #000, 0 0 3px #000", whiteSpace: "nowrap" }}>{m.name}</div>
+            {verdict.length <= 4 ? <div style={{ position: "absolute", left: 0, right: 0, top: h / 2 - 70, textAlign: "center" }}><Sello txt={verdict} col={col} f={f} at={vf + i * 5} size={n > 3 ? 96 : 120} rot={-10 + (i % 2) * 6} /></div> : null}
           </div>; })}
         </div>
         {sub ? <div style={{ opacity: cl((f - vf - 8) / 8) }}><Cinta size={50}>{sub}</Cinta></div> : null}
       </AbsoluteFill>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 380, textAlign: "center" }}><Sello txt={verdict} col={col} f={f} at={vf} size={verdict.length > 4 ? 100 : 170} /></div>
+      {verdict.length > 4 ? <div style={{ position: "absolute", left: 0, right: 0, top: 380, textAlign: "center" }}><Sello txt={verdict} col={col} f={f} at={vf} size={100} /></div> : null}
     </AbsoluteFill>
   );
 };
@@ -419,8 +501,11 @@ export const CtaA: React.FC<{ kind: string; lines: string[]; marks: number[]; bg
       </AbsoluteFill></AbsoluteFill>; }
   return <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={67} dur={dur} />
     <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", gap: 30 }}>
-      <Cinta size={48} rot={-3}>cuéntame en los comentarios</Cinta>
-      {lines.map((l, i) => { const a = sp(f, marks[i], 14); return <div key={i} style={{ maxWidth: 1400, padding: "34px 60px", background: "#FFFDF7", borderRadius: "40px 40px 40px 8px", boxShadow: SH, fontFamily: BOLD, fontWeight: 800, fontSize: 70, color: CU.tinta, opacity: cl(a * 1.5), transform: `translateX(${(1 - a) * -90}px)` }}>{l}</div>; })}
+      <div style={{ opacity: cl(f / 8), transform: `translateY(${(1 - sp(f, 0, 13)) * -60}px)` }}><Cinta size={70} rot={-2}>cuéntame en los comentarios</Cinta></div>
+      {lines.map((l, i) => { const a = sp(f, marks[i], 12); return <div key={i} style={{ position: "relative", maxWidth: 1500, padding: "40px 70px", background: "#FFFDF7", borderRadius: 46, boxShadow: SH, fontFamily: BOLD, fontWeight: 900, fontSize: 88, color: CU.tinta, opacity: cl(a * 1.5), transform: `translateY(${(1 - a) * 160}px) scale(${0.7 + 0.3 * a})` }}>
+        {l.split(" ").map((w, j) => <span key={j} style={{ color: /^[¿¡]?[A-ZÁÉÍÓÚÑ]{4,}[?!]?$/.test(w) ? CU.naranja : undefined }}>{w} </span>)}
+        <div style={{ position: "absolute", left: 90, bottom: -40, width: 70, height: 50, background: "#FFFDF7", clipPath: "polygon(0 0, 100% 0, 10% 100%)" }} />
+      </div>; })}
     </AbsoluteFill></AbsoluteFill>;
 };
 
