@@ -4,7 +4,7 @@ import { SHOTS, AVATAR, OVERLAYS, SFX, TOTAL, CARDS } from "./cues.gen";
 import * as P from "./Piezas";
 import * as Q from "./Piezas2";
 
-export const TOTAL_FRAMES_CER14A = TOTAL;
+export const TOTAL_FRAMES_CER14B = TOTAL;
 const T = 8; // frames de transición
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
