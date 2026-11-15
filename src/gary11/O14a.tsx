@@ -112,7 +112,7 @@ export const MidCta: React.FC<{ dur: number }> = ({ dur }) => {
   return <div style={{ position: "absolute", right: 80, bottom: 70, transform: `translateY(${(1 - o) * 520}px) rotate(-4deg)` }}>
     <div style={{ width: 400, height: 500, background: "#1f3a5f", borderRadius: "6px 14px 14px 6px", borderLeft: "26px solid #142843", boxShadow: "0 22px 30px rgba(0,0,0,.45)", padding: "40px 30px", boxSizing: "border-box" }}>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 52, color: "#f6efe0", lineHeight: 1.05 }}>THE WINTER BLACKOUT MANUAL</div>
-      <div style={{ marginTop: 26, fontFamily: SANS, fontWeight: 700, fontSize: 28, color: "#e9dcc4", lineHeight: 1.2 }}>the whole station +<br />generator plan, one page</div>
+      <div style={{ marginTop: 26, fontFamily: SANS, fontWeight: 700, fontSize: 28, color: "#e9dcc4", lineHeight: 1.2 }}>the whole plan,<br />on one page</div>
     </div>
     <div style={{ position: "absolute", left: 6, right: 6, bottom: 34, padding: "12px 0", background: YEL, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 26, color: INK, letterSpacing: 1, transform: "rotate(-3deg)", boxShadow: "0 6px 10px rgba(0,0,0,.35)", whiteSpace: "nowrap" }}>LINK IN THE DESCRIPTION</div>
   </div>;
