@@ -15,11 +15,11 @@ const PARTS = ["WHAT IT IS", "THE CAN", "THE CARDBOARD", "THE WAX", "MELT IT SAF
 // MEJORA 2 · progreso: tira de cartón corrugado de 10 tramos arriba a la derecha; la parte actual se llena de naranja
 export const PartStrip: React.FC<{ n: number; dur: number }> = ({ n, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 12, 12);
-  return <div style={{ position: "absolute", right: 70, top: 60, opacity: o, transform: `translateY(${(1 - o) * -60}px)` }}>
+  return <div style={{ position: "absolute", left: 70, top: 60, opacity: o, transform: `translateY(${(1 - o) * -60}px)` }}>
     <div style={{ display: "flex", gap: 6, height: 40, width: 560 }}>
       {PARTS.map((_, i) => <div key={i} style={{ flex: 1, background: i + 1 < n ? "#d98a2a" : i + 1 === n ? (f > 10 ? ORANGE : "#d98a2a") : CORR, border: "2px solid #6a4826", borderRadius: 3 }} />)}
     </div>
-    <div style={{ marginTop: 10, marginLeft: "auto", width: "fit-content", padding: "6px 22px", background: "rgba(20,18,16,.88)", borderRadius: 8, whiteSpace: "nowrap", fontFamily: SANS, fontWeight: 900, fontSize: 46, color: "#fff", letterSpacing: 2 }}><span style={{ color: ORANGE, fontSize: 70 }}>{n}</span> / 10 · {PARTS[n - 1]}</div>
+    <div style={{ marginTop: 10, width: "fit-content", padding: "6px 22px", background: "rgba(20,18,16,.88)", borderRadius: 8, whiteSpace: "nowrap", fontFamily: SANS, fontWeight: 900, fontSize: 46, color: "#fff", letterSpacing: 2 }}><span style={{ color: ORANGE, fontSize: 70 }}>{n}</span> / 10 · {PARTS[n - 1]}</div>
   </div>;
 };
 
@@ -72,7 +72,7 @@ export const TapeData: React.FC<{ big: string; label: string; src: string; dur: 
 // chip de seguridad: cartel enlozado rojo y blanco, abajo a la izquierda
 export const Enamel: React.FC<{ text: string; dur: number }> = ({ text, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 8, 10); const w = ou(f / 10);
-  return <div style={{ position: "absolute", left: 70, bottom: 60, opacity: o, transform: `scale(${0.9 + 0.1 * w})`, transformOrigin: "0 100%" }}>
+  return <div style={{ position: "absolute", left: 70, top: 70, opacity: o, transform: `scale(${0.9 + 0.1 * w})`, transformOrigin: "0 0" }}>
     <div style={{ display: "flex", alignItems: "center", gap: 24, padding: "20px 40px", background: RED, border: "8px solid #f5f3ee", borderRadius: 18, boxShadow: "0 8px 0 rgba(0,0,0,.35)" }}>
       <div style={{ width: 64, height: 64, borderRadius: "50%", background: "#f5f3ee", color: RED, fontFamily: SANS, fontWeight: 900, fontSize: 52, display: "flex", alignItems: "center", justifyContent: "center" }}>!</div>
       <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 46, color: "#f5f3ee", letterSpacing: 1, whiteSpace: "nowrap" }}>{text}</div>
