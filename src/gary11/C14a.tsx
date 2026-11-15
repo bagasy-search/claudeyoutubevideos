@@ -339,8 +339,8 @@ const Napkin: React.FC<P> = ({ a }) => {
 
 // ================= cans3 (150): bidones de 5 galones que caen sobre el piso del garaje: 1 día, 2, 3 = 15 galones
 const Cans: React.FC<P> = ({ m }) => {
-  const f = useCurrentFrame(); const at = [M(m, 0, 30), M(m, 1, 80), M(m, 2, 130)]; const SRC = ["y1530", "y1590", "g1610"];
-  return <Plate src="g2320" d={0.66}>
+  const f = useCurrentFrame(); const at = [Math.min(M(m, 0, 30), 12), M(m, 1, 80), M(m, 2, 130)]; const SRC = ["y1530", "y1590", "g1610"];
+  return <Plate src="g1461" d={0.66}>
     <div style={{ position: "absolute", left: 0, right: 0, top: 80, textAlign: "center" }}>
       <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 110, color: INK, background: CREAM, padding: "0 40px", boxShadow: "0 18px 26px rgba(0,0,0,.4)" }}>{f < at[1] ? 5 : f < at[2] ? 10 : 15} GALLONS</span></div>
     {at.map((t, i) => <div key={i} style={{ position: "absolute", left: 170 + i * 560, top: 300 - (1 - sp(f, t)) * 500, opacity: cl(sp(f, t) * 3), display: "flex", flexDirection: "column", alignItems: "center" }}>
