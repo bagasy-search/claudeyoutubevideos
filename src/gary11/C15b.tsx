@@ -45,7 +45,7 @@ const Lid: React.FC<{ src: string; r: number; x: number; y: number; e?: number; 
 const Card: React.FC<{ src: string; w: number; h: number; x: number; y: number; rot?: number; e?: number; cap?: string }> = ({ src, w, h, x, y, rot = 0, e = 1, cap }) => (
   <div style={{ position: "absolute", left: x, top: y, width: w, padding: 14, paddingBottom: cap ? 70 : 14, background: CORR, transform: `translateY(${(1 - e) * 90}px) rotate(${rot}deg)`, opacity: cl(e * 1.6), boxShadow: "0 20px 26px rgba(0,0,0,.5)" }}>
     <div style={{ width: w, height: h, backgroundImage: IMG(src), backgroundSize: "cover", backgroundPosition: "50% 50%" }} />
-    {cap && <div style={{ position: "absolute", left: 14, right: 14, bottom: 12, height: 50, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 32, color: INK, whiteSpace: "nowrap" }}>{cap}</div>}
+    {cap && <div style={{ position: "absolute", left: 14, right: 14, bottom: 12, height: 50, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: cap.length > 16 && w < 360 ? 23 : 32, color: INK, whiteSpace: "nowrap" }}>{cap}</div>}
   </div>
 );
 // llama de cera en CSS (naranja con base azul)
@@ -85,7 +85,7 @@ const Strips: React.FC<P & { pick?: number; recap?: boolean }> = ({ pick, recap 
   const x = -f * 30;
   if (recap) return <Plate src="g1890" d={0.86}>
     {PART_IMG.map((src, i) => <div key={i} style={{ position: "absolute", left: 0, top: 0 }}>
-      <Card src={src} w={300} h={220} x={110 + (i % 5) * 350} y={i < 5 ? 220 : 590} rot={[-2, 1.5, -1, 2][i % 4]} e={k(f, i * 3, 8)} cap={`${i + 1} · ${PARTS[i]}`} /></div>)}
+      <Card src={src} w={310} h={220} x={90 + (i % 5) * 356} y={i < 5 ? 220 : 590} rot={[-2, 1.5, -1, 2][i % 4]} e={k(f, i * 3, 8)} cap={`${i + 1} · ${PARTS[i]}`} /></div>)}
     <Big e={k(f, 2, 14)} y={70} size={70}>Ten parts, one can.</Big>
   </Plate>;
   return <Plate src="g1730" d={0.8}>
@@ -315,14 +315,14 @@ const BoilTimer: React.FC<P> = ({ m, dur }) => {
 // ================= lidwind (255): dos ollas compiten — con tapa y de espaldas al viento vs sin tapa y de cara al viento
 const LidWind: React.FC<P> = () => {
   const f = useCurrentFrame(); const a = k(f, 6, 40), b = k(f, 6, 60);
-  const lane = (y: number, lab: string, e: number, end: string, col: string) => <div style={{ position: "absolute", left: 160, right: 160, top: y }}>
+  const lane = (y: number, lab: string, e: number, end: string, col: string, op?: number) => <div style={{ position: "absolute", left: 160, right: 160, top: y }}>
     <Lbl size={40} style={{ marginBottom: 12, display: "inline-block", background: "rgba(20,18,16,.86)", padding: "8px 22px", borderRadius: 8 }}>{lab}</Lbl>
     <div style={{ height: 90, background: "rgba(255,255,255,.12)", borderRadius: 45, position: "relative" }}>
       <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: `${e * 100}%`, background: col, borderRadius: 45 }} />
-      </div><div style={{ marginTop: 14, display: "flex", justifyContent: "flex-end" }}><div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 52, color: WHITE, opacity: cl(e * 3 - 2), whiteSpace: "nowrap", background: "rgba(20,18,16,.86)", padding: "8px 22px", borderRadius: 8 }}>{end}</div></div></div>;
+      </div><div style={{ marginTop: 14, display: "flex", justifyContent: "flex-end" }}><div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 52, color: WHITE, opacity: op ?? cl(e * 3 - 2), whiteSpace: "nowrap", background: "rgba(20,18,16,.86)", padding: "8px 22px", borderRadius: 8 }}>{end}</div></div></div>;
   return <Plate src="g2540" d={0.9}>
     {lane(220, "LID ON · DOOR AWAY FROM THE WIND", a, "BOIL · 18 MIN", `linear-gradient(90deg,${BLUE},${ORANGE})`)}
-    {lane(470, "NO LID · DOOR INTO THE WIND", b * 0.7, "25 MIN · BARELY SIMMERING", "linear-gradient(90deg,#6d86ad,#a9bbd6)")}
+    {lane(470, "NO LID · DOOR INTO THE WIND", b * 0.7, "25 MIN · BARELY SIMMERING", "linear-gradient(90deg,#6d86ad,#a9bbd6)", cl(b * 3 - 2))}
     <Big e={k(f, 50, 12)} y={90} size={72}>A lid and a wind block: free heat.</Big>
   </Plate>;
 };
