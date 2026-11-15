@@ -272,7 +272,7 @@ const Blood: React.FC<P> = ({ dur, m }) => {
       <Tx size={44} col={CH} style={{ textAlign: "center" }}>FIRST THING IT TAKES:</Tx>
       <div style={{ marginTop: 16, height: 80, border: `6px solid ${CH}`, borderRadius: 10, position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: `${100 - 82 * io((f - t2) / 30)}%`, background: YEL }} />
-        <Tx size={50} style={{ position: "absolute", left: 0, right: 0, top: 10, textAlign: "center" }}>YOUR JUDGMENT</Tx>
+        <Tx size={50} col="#f3f0e6" style={{ textShadow: "0 2px 6px rgba(0,0,0,.6)", position: "absolute", left: 0, right: 0, top: 10, textAlign: "center" }}>YOUR JUDGMENT</Tx>
       </div>
     </div>
   </AbsoluteFill>;
@@ -748,8 +748,8 @@ const Rank12: React.FC<P> = ({ dur, m }) => {
         <Tx size={50} col="#fff" style={{ textAlign: "center", marginTop: 20 }}>{i + 1}</Tx></div>)}
       <div style={ab(-34, -34, 68, 68, { borderRadius: "50%", background: "radial-gradient(#eee,#777)" })} />
     </div>
-    <Ch t="safest" at={t0} f={f} x={80} y={480} size={92} col="#8ff0b0" />
-    <Ch t="riskiest" at={t1} f={f} x={1500} y={480} size={92} col="#ff9a8a" />
+    <Ch t="safest" at={t0} f={f} x={60} y={900} size={92} col="#8ff0b0" />
+    <Ch t="riskiest" at={t1} f={f} x={1560} y={900} size={92} col="#ff9a8a" />
   </Floor>;
 };
 
@@ -1138,7 +1138,7 @@ const Risk: React.FC<P> = ({ dur, m }) => {
       return <div key={s} style={ab(200 + i * 330, 250, 260, 600, { transformOrigin: "50% 0", transform: `rotate(${sw}deg) translateY(${(1 - e) * -200}px)`, opacity: e })}>
         <div style={ab(120, 0, 18, 60, { background: "#9aa2a8", borderRadius: 9 })} />
         <div style={{ position: "absolute", top: 70, left: 0, right: 0, display: "flex", justifyContent: "center" }}>{item(i)}</div>
-        <Tx size={s.length > 12 ? 30 : 36} col={INK} style={{ position: "absolute", top: 330, left: -20, right: -20, textAlign: "center" }}>{s}</Tx>
+        <Tx size={s.length > 12 ? 30 : 36} col={INK} style={{ position: "absolute", top: 400, left: -20, right: -20, textAlign: "center" }}>{s}</Tx>
       </div>; })}
     <Ch t="get sick faster — and worse" at={t5} f={f} x={960} y={820} size={78} c col={RED} />
     <Src text="CDC" f={f} at={6} />

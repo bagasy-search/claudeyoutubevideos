@@ -106,12 +106,12 @@ export const ExitSign: React.FC<{ text: string; dur: number }> = ({ text, dur })
 // CTA de mitad (sin voz): la puerta de un mueble de cocina se entreabre en la esquina y deja ver la página del manual pegada adentro
 export const CabinetPeek: React.FC<{ dur: number }> = ({ dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 18, 14);
-  return <div style={{ position: "absolute", right: 70, bottom: 60, width: 520, height: 640, transform: `translateY(${(1 - cl(o * 2)) * 700}px)`, perspective: 1600 }}>
+  return <div style={{ position: "absolute", right: 70, bottom: 60, width: 520, height: 700, transform: `translateY(${(1 - cl(o * 2)) * 760}px)`, perspective: 1600 }}>
     <div style={{ position: "absolute", inset: 0, background: "#6e4526", borderRadius: 8, boxShadow: "8px 10px 0 rgba(0,0,0,.35)" }} />
     <div style={{ position: "absolute", left: 30, top: 30, right: 30, bottom: 30, background: "#f8f5ec", padding: 30, boxSizing: "border-box" }}>
       <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 22, color: "#8a7a5c", letterSpacing: 4 }}>THE WINTER BLACKOUT MANUAL</div>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 50, color: INK, lineHeight: 1.05, marginTop: 12 }}>THE TWO-MINUTE CHECK</div>
-      {["test button", "date on the back", "one every floor", "garage door gap"].map((s, i) => <div key={s} style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 18 }}>
+      {["test button", "date on the back", "one every floor", "garage door gap"].map((s, i) => <div key={s} style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 12 }}>
         <div style={{ width: 30, height: 30, border: `4px solid ${INK}` }} /><div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 40, color: "#1f4f8f" }}>{s}</div></div>)}
       <div style={{ position: "absolute", left: 20, right: 20, bottom: 20, padding: "10px 0", background: YEL, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 26, color: INK, letterSpacing: 2 }}>LINK IN THE DESCRIPTION</div>
     </div>
