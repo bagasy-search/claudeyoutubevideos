@@ -11,6 +11,8 @@ import * as Ob from "./Obra";
 export const TOTAL_FRAMES_STAN = TOTAL;
 const TR = 8;
 
+// deriva continua (anti-congelado): zoom lento y parejo sobre todo el plano
+const Drift: React.FC<{ dur: number; children: React.ReactNode }> = ({ dur, children }) => { const f = useCurrentFrame(); const k = 1 + 0.035 * Math.min(1, f / Math.max(1, dur)); return <AbsoluteFill style={{ transform: `scale(${k})`, transformOrigin: "50% 45%" }}>{children}</AbsoluteFill>; };
 const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   const seed = s.id + 1;
   switch (s.view) {
@@ -66,14 +68,14 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
     case "baldesO": return <Ob.BaldesO {...s.p} dur={dur} />;
     case "corteO": return <Ob.CorteO {...s.p} dur={dur} />;
     case "vueltasO": return <Ob.VueltasO {...s.p} dur={dur} />;
-    case "laminaO": return <Ob.LaminaO {...s.p} dur={dur} />;
+    case "laminaO": return <Drift dur={dur}><Ob.LaminaO {...s.p} dur={dur} /></Drift>;
     case "curaO": return <Ob.CuraO {...s.p} dur={dur} />;
     case "sieteO": return <Ob.SieteO {...s.p} dur={dur} />;
     case "rodilloO": return <Ob.RodilloO {...s.p} dur={dur} />;
     case "barrioO": return <Ob.BarrioO dur={dur} />;
     case "capasO": return <Ob.CapasO {...s.p} dur={dur} />;
     case "rajaO": return <Ob.RajaO {...s.p} dur={dur} />;
-    case "cintasO": return <Ob.CintasO {...s.p} dur={dur} />;
+    case "cintasO": return <Drift dur={dur}><Ob.CintasO {...s.p} dur={dur} /></Drift>;
     case "metroO": return <Ob.MetroO {...s.p} dur={dur} />;
     case "cuentaO": return <Ob.CuentaO {...s.p} dur={dur} />;
     case "premioO": return <Ob.PremioO {...s.p} dur={dur} />;
