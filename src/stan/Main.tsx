@@ -6,6 +6,7 @@ import { SHOTS, AVATAR, OVERLAYS, TOTAL, MIX, MANO, PLATE } from "./cues.gen";
 import * as K from "./Kit";
 import * as E from "./Escenas";
 import * as S from "./Carne";
+import * as Mu from "./Muro";
 
 export const TOTAL_FRAMES_STAN = TOTAL;
 const TR = 8;
@@ -15,7 +16,7 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   switch (s.view) {
     case "clip": return <K.Clip src={s.src} seed={seed} dur={dur} clipDur={s.clipDur} minRate={s.veo ? 0.42 : 0.6} />;
     case "photo": return <K.Photo src={s.src} seed={seed} dur={dur} />;
-    case "clips": { let a = 0; return <AbsoluteFill>{s.parts.map((x: any, i: number) => { const el = <Sequence key={i} from={a} durationInFrames={x.dur}><K.Clip src={x.src} seed={seed + i * 7} dur={x.dur} clipDur={x.clipDur} minRate={0.6} /></Sequence>; a += x.dur; return el; })}{s.tail ? <Sequence from={a} durationInFrames={dur - a}><K.Photo src={s.tailSrc} seed={seed + 3} dur={dur - a} /></Sequence> : null}</AbsoluteFill>; }
+    case "clips": { let a = 0; return <AbsoluteFill>{s.parts.map((x: any, i: number) => { const el = <Sequence key={i} from={a} durationInFrames={x.dur}><K.Clip src={x.src} seed={seed + i * 7} dur={x.dur} clipDur={x.clipDur} minRate={0.6} start={x.start} rate={x.rate} /></Sequence>; a += x.dur; return el; })}{s.tail ? <Sequence from={a} durationInFrames={dur - a}><K.Photo src={s.tailSrc} seed={seed + 3} dur={dur - a} /></Sequence> : null}</AbsoluteFill>; }
     case "album": return <K.Album src={s.src} seed={seed} dur={dur} caption={s.caption} />;
     case "polaroid": return <K.PolaroidShot src={s.src} caption={s.caption} bg={s.bg} seed={seed} dur={dur} />;
     case "card": return <K.RecipeCard {...s.p} bg={s.bg} dur={dur} />;
@@ -52,6 +53,46 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
     case "razasS": return <S.RazasS {...s.p} bg={s.bg} dur={dur} />;
     case "ribsS": return <S.RibsS {...s.p} bg={s.bg} dur={dur} />;
     case "nextS": return <S.NextS {...s.p} dur={dur} />;
+    case "ChapM": return <Mu.ChapM {...s.p} dur={dur} />;
+    case "MuroIdx": return <Mu.MuroIdx {...s.p} dur={dur} />;
+    case "LitroM": return <Mu.LitroM {...s.p} dur={dur} />;
+    case "TachuelaM": return <Mu.TachuelaM {...s.p} dur={dur} />;
+    case "CajaM": return <Mu.CajaM {...s.p} dur={dur} />;
+    case "ComentM": return <Mu.ComentM {...s.p} dur={dur} />;
+    case "LupaM": return <Mu.LupaM {...s.p} dur={dur} />;
+    case "TresM": return <Mu.TresM {...s.p} dur={dur} />;
+    case "RelojM": return <Mu.RelojM {...s.p} dur={dur} />;
+    case "PlasticoM": return <Mu.PlasticoM {...s.p} dur={dur} />;
+    case "FichaM": return <Mu.FichaM {...s.p} dur={dur} />;
+    case "GelM": return <Mu.GelM {...s.p} dur={dur} />;
+    case "EtiqM": return <Mu.EtiqM {...s.p} dur={dur} />;
+    case "EstarcidoM": return <Mu.EstarcidoM {...s.p} dur={dur} />;
+    case "VentanaM": return <Mu.VentanaM {...s.p} dur={dur} />;
+    case "GolpeM": return <Mu.GolpeM {...s.p} dur={dur} />;
+    case "SalitreM": return <Mu.SalitreM {...s.p} dur={dur} />;
+    case "PalmaM": return <Mu.PalmaM {...s.p} dur={dur} />;
+    case "VasosM": return <Mu.VasosM {...s.p} dur={dur} />;
+    case "CotasM": return <Mu.CotasM {...s.p} dur={dur} />;
+    case "SubeM": return <Mu.SubeM {...s.p} dur={dur} />;
+    case "ChupaM": return <Mu.ChupaM {...s.p} dur={dur} />;
+    case "LaminaM": return <Mu.LaminaM {...s.p} dur={dur} />;
+    case "RasanteM": return <Mu.RasanteM {...s.p} dur={dur} />;
+    case "BidonesM": return <Mu.BidonesM {...s.p} dur={dur} />;
+    case "TizaM": return <Mu.TizaM {...s.p} dur={dur} />;
+    case "RespiraM": return <Mu.RespiraM {...s.p} dur={dur} />;
+    case "AmpollaM": return <Mu.AmpollaM {...s.p} dur={dur} />;
+    case "AñosM": return <Mu.AñosM {...s.p} dur={dur} />;
+    case "MensajeM": return <Mu.MensajeM {...s.p} dur={dur} />;
+    case "CruzM": return <Mu.CruzM {...s.p} dur={dur} />;
+    case "GotasQM": return <Mu.GotasQM {...s.p} dur={dur} />;
+    case "SecadoM": return <Mu.SecadoM {...s.p} dur={dur} />;
+    case "TicketM": return <Mu.TicketM {...s.p} dur={dur} />;
+    case "PromesaM": return <Mu.PromesaM {...s.p} dur={dur} />;
+    case "BotellaM": return <Mu.BotellaM {...s.p} dur={dur} />;
+    case "NivelM": return <Mu.NivelM {...s.p} dur={dur} />;
+    case "DosBotM": return <Mu.DosBotM {...s.p} dur={dur} />;
+    case "PreciosM": return <Mu.PreciosM {...s.p} dur={dur} />;
+    case "VotoM": return <Mu.VotoM {...s.p} dur={dur} />;
     case "escena": { const C = (E as any)[s.p.name]; return C ? <C {...s.p} dur={dur} /> : null; }
     default: return null;
   }
@@ -71,13 +112,20 @@ const Enter: React.FC<{ trans: string; children: React.ReactNode; seed: number }
     const r = interpolate(f, [0, 14], [4, 0], { extrapolateRight: "clamp" });
     return <AbsoluteFill style={{ transform: `translateY(${y}%) rotate(${r}deg)`, boxShadow: "0 -20px 50px rgba(0,0,0,0.5)" }}>{children}</AbsoluteFill>;
   }
+  if (trans === "sube") { // paso nuevo: entra de abajo hacia arriba como sube el agua por la pared, con su línea de humedad azul
+    const y = interpolate(f, [0, 16], [100, 0], { extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
+    return <AbsoluteFill><AbsoluteFill style={{ clipPath: `inset(${y}% 0 0 0)` }}>{children}</AbsoluteFill>
+      {f < 17 ? <div style={{ position: "absolute", left: 0, right: 0, top: `calc(${y}% - 4px)`, height: 8, background: "#7FB7D9", boxShadow: "0 0 18px rgba(127,183,217,0.8)" }} /> : null}</AbsoluteFill>;
+  }
   return <AbsoluteFill>{children}</AbsoluteFill>;
 };
 
 const Overlay: React.FC<{ o: any }> = ({ o }) => {
   switch (o.type) {
     case "price": return <K.Price text={o.text} dur={o.dur} />;
-    case "progress": return <S.ProgS n={o.n} N={o.N} title={o.title} dur={o.dur} unit={o.unit} />;
+    case "progress": return <Mu.ProgM n={o.n} N={o.N} title={o.title} dur={o.dur} />;
+    case "qr": return <Mu.QrM qr={o.qr} cover={o.cover} dur={o.dur} />;
+    case "split": return <Mu.PanelM src={o.src} label={o.label} dur={o.dur} />;
     case "pregunta": return <K.Pregunta text={o.text} dur={o.dur} />;
     default: return null;
   }
