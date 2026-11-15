@@ -55,33 +55,33 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
     case "razasS": return <S.RazasS {...s.p} bg={s.bg} dur={dur} />;
     case "ribsS": return <S.RibsS {...s.p} bg={s.bg} dur={dur} />;
     case "nextS": return <S.NextS {...s.p} dur={dur} />;
-    case "chapO": return <Ob.ChapO {...s.p} dur={dur} />;
-    case "carruselO": return <Ob.CarruselO {...s.p} dur={dur} />;
-    case "dedoO": return <Ob.DedoO {...s.p} dur={dur} />;
-    case "sobreO": return <Ob.SobreO {...s.p} dur={dur} />;
-    case "tendederoO": return <Ob.TendederoO {...s.p} dur={dur} />;
-    case "estudioO": return <Ob.EstudioO {...s.p} dur={dur} />;
-    case "probetaO": return <Ob.ProbetaO {...s.p} dur={dur} />;
-    case "tablasNoO": return <Ob.TablasNoO {...s.p} dur={dur} />;
-    case "vuelveO": return <Ob.VuelveO {...s.p} dur={dur} />;
-    case "cintaO": return <Ob.CintaO {...s.p} dur={dur} />;
-    case "baldesO": return <Ob.BaldesO {...s.p} dur={dur} />;
-    case "corteO": return <Ob.CorteO {...s.p} dur={dur} />;
-    case "vueltasO": return <Ob.VueltasO {...s.p} dur={dur} />;
+    case "chapO": return <Drift dur={dur}><Ob.ChapO {...s.p} dur={dur} /></Drift>;
+    case "carruselO": return <Drift dur={dur}><Ob.CarruselO {...s.p} dur={dur} /></Drift>;
+    case "dedoO": return <Drift dur={dur}><Ob.DedoO {...s.p} dur={dur} /></Drift>;
+    case "sobreO": return <Drift dur={dur}><Ob.SobreO {...s.p} dur={dur} /></Drift>;
+    case "tendederoO": return <Drift dur={dur}><Ob.TendederoO {...s.p} dur={dur} /></Drift>;
+    case "estudioO": return <Drift dur={dur}><Ob.EstudioO {...s.p} dur={dur} /></Drift>;
+    case "probetaO": return <Drift dur={dur}><Ob.ProbetaO {...s.p} dur={dur} /></Drift>;
+    case "tablasNoO": return <Drift dur={dur}><Ob.TablasNoO {...s.p} dur={dur} /></Drift>;
+    case "vuelveO": return <Drift dur={dur}><Ob.VuelveO {...s.p} dur={dur} /></Drift>;
+    case "cintaO": return <Drift dur={dur}><Ob.CintaO {...s.p} dur={dur} /></Drift>;
+    case "baldesO": return <Drift dur={dur}><Ob.BaldesO {...s.p} dur={dur} /></Drift>;
+    case "corteO": return <Drift dur={dur}><Ob.CorteO {...s.p} dur={dur} /></Drift>;
+    case "vueltasO": return <Drift dur={dur}><Ob.VueltasO {...s.p} dur={dur} /></Drift>;
     case "laminaO": return <Drift dur={dur}><Ob.LaminaO {...s.p} dur={dur} /></Drift>;
-    case "curaO": return <Ob.CuraO {...s.p} dur={dur} />;
-    case "sieteO": return <Ob.SieteO {...s.p} dur={dur} />;
-    case "rodilloO": return <Ob.RodilloO {...s.p} dur={dur} />;
-    case "barrioO": return <Ob.BarrioO dur={dur} />;
-    case "capasO": return <Ob.CapasO {...s.p} dur={dur} />;
-    case "rajaO": return <Ob.RajaO {...s.p} dur={dur} />;
+    case "curaO": return <Drift dur={dur}><Ob.CuraO {...s.p} dur={dur} /></Drift>;
+    case "sieteO": return <Drift dur={dur}><Ob.SieteO {...s.p} dur={dur} /></Drift>;
+    case "rodilloO": return <Drift dur={dur}><Ob.RodilloO {...s.p} dur={dur} /></Drift>;
+    case "barrioO": return <Drift dur={dur}><Ob.BarrioO dur={dur} /></Drift>;
+    case "capasO": return <Drift dur={dur}><Ob.CapasO {...s.p} dur={dur} /></Drift>;
+    case "rajaO": return <Drift dur={dur}><Ob.RajaO {...s.p} dur={dur} /></Drift>;
     case "cintasO": return <Drift dur={dur}><Ob.CintasO {...s.p} dur={dur} /></Drift>;
-    case "metroO": return <Ob.MetroO {...s.p} dur={dur} />;
-    case "cuentaO": return <Ob.CuentaO {...s.p} dur={dur} />;
-    case "premioO": return <Ob.PremioO {...s.p} dur={dur} />;
-    case "unaO": return <Ob.UnaO {...s.p} dur={dur} />;
-    case "cepilloO": return <Ob.CepilloO {...s.p} dur={dur} />;
-    case "eligeO": return <Ob.EligeO {...s.p} dur={dur} />;
+    case "metroO": return <Drift dur={dur}><Ob.MetroO {...s.p} dur={dur} /></Drift>;
+    case "cuentaO": return <Drift dur={dur}><Ob.CuentaO {...s.p} dur={dur} /></Drift>;
+    case "premioO": return <Drift dur={dur}><Ob.PremioO {...s.p} dur={dur} /></Drift>;
+    case "unaO": return <Drift dur={dur}><Ob.UnaO {...s.p} dur={dur} /></Drift>;
+    case "cepilloO": return <Drift dur={dur}><Ob.CepilloO {...s.p} dur={dur} /></Drift>;
+    case "eligeO": return <Drift dur={dur}><Ob.EligeO {...s.p} dur={dur} /></Drift>;
     case "escena": { const C = (E as any)[s.p.name]; return C ? <C {...s.p} dur={dur} /> : null; }
     default: return null;
   }
@@ -101,11 +101,7 @@ const Enter: React.FC<{ trans: string; children: React.ReactNode; seed: number }
     const r = interpolate(f, [0, 14], [4, 0], { extrapolateRight: "clamp" });
     return <AbsoluteFill style={{ transform: `translateY(${y}%) rotate(${r}deg)`, boxShadow: "0 -20px 50px rgba(0,0,0,0.5)" }}>{children}</AbsoluteFill>;
   }
-  if (trans === "llana") { // capítulo de obra: la llana pasa de izquierda a derecha alisando el plano nuevo sobre el anterior
-    const x = interpolate(f, [0, 14], [0, 100], { extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
-    return <AbsoluteFill><AbsoluteFill style={{ clipPath: `inset(0 ${100 - x}% 0 0)` }}>{children}</AbsoluteFill>
-      {f < 15 ? <div style={{ position: "absolute", top: 0, bottom: 0, left: `calc(${x}% - 70px)`, width: 140, background: "linear-gradient(90deg, rgba(120,117,110,0) 0%, #8E8B85 35%, #B7B3AA 50%, #8E8B85 65%, rgba(120,117,110,0) 100%)", boxShadow: "0 0 40px rgba(0,0,0,0.5)" }} /> : null}</AbsoluteFill>;
-  }
+  if (trans === "llana") return <AbsoluteFill style={{ opacity: interpolate(f, [0, 8], [0, 1], { extrapolateRight: "clamp" }) }}>{children}</AbsoluteFill>; // capítulo: fundido corto, sin barra
   return <AbsoluteFill>{children}</AbsoluteFill>;
 };
 
