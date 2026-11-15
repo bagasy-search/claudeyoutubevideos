@@ -17,7 +17,7 @@ export const Pans: React.FC<{ dur: number; fSand: number; fGolden: number; fCorn
   const cx = interpolate(f, mono, xs, { ...CL, easing: io });
   const cy = interpolate(f, mono, ys, { ...CL, easing: io });
   // zoom: plano general → 2,1x sobre cada zona nombrada → vuelve a 1,25x al final; el centro sigue a la palabra
-  const z = interpolate(f, [0, Math.max(12, fSand - 10), fSand + 10, fUnder + 4, dur], [1.0, 1.0, 2.1, 2.1, 1.3], { ...CL, easing: io });
+  const z = interpolate(f, [0, Math.max(12, fSand - 10), fSand + 10, Math.max(fSand + 11, fUnder + 4), Math.max(fSand + 12, dur)], [1.0, 1.0, 2.0, 2.5, 1.3], { ...CL, easing: io });
   // traslación que mantiene (cx, cy) en el centro del cuadro sin dejar bordes vacíos
   const tx = Math.max(Math.min(960 - cx * z, 0), 1920 - 1920 * z), ty = Math.max(Math.min(540 - cy * z, 0), 1080 - 1080 * z);
   return (
@@ -99,7 +99,7 @@ export const Skillet: React.FC<{ dur: number; fHattie: number; fSkillet: number 
     <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
       <div style={{ ...full, transform: `scale(${cam})`, transformOrigin: `${E.x}px ${E.y}px` }}>
         <Img src={S("e_skillet")} style={full} />
-        {o > 0 && (
+        {false && o > 0 && (
           <div style={{ ...full, overflow: "hidden", opacity: o, clipPath: `ellipse(${E.rx}px ${E.ry}px at ${E.x}px ${E.y}px)`, filter: "sepia(0.35) contrast(1.05)", WebkitMaskImage: `radial-gradient(ellipse ${E.rx}px ${E.ry}px at ${E.x}px ${E.y}px, #000 55%, transparent 100%)` }}>
             <Img src={S("g0530")} style={{ ...full, transform: `translate(${E.x - 1065}px, ${E.y - 520 + drift}px) scale(0.62, -0.62)`, transformOrigin: "1065px 520px" }} />
           </div>
