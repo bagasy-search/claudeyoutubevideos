@@ -423,6 +423,10 @@ cer14d/y/y5250.mp4
 cer14d/y/y5251.mp4
 cer14d/y/y5280.mp4
 cer14d/y/y5290.mp4
+cer14d/g/gs2.png
+cer14d/g/gs3.png
+cer14d/g/gs5.png
+cer14d/g/gs7.png
 cer14d/a/win-001.mp4
 cer14d/a/win-002.mp4
 cer14d/a/win-003.mp4
