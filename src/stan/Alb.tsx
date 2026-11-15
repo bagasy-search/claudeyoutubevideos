@@ -71,7 +71,7 @@ export const FotoFija: React.FC<{ src?: string; cam?: Cam; tint?: number; childr
 // overrides por plano (coordenadas leídas con la rejilla sobre la foto de ese plano)
 export const OVA: Record<number, any> = {
   110: { label: { x: 745, y: 732, w: 92, h: 84 }, cam: { x: 792, y: 770, s: 3.1, a: 0, b: 60 } },
-  720: { at: { x: 1200, y: 716 }, tip: { x: 1197, y: 664 }, cam: { x: 1200, y: 700, s: 3.2, a: 0, b: 36 } },
+  720: { at: { x: 1200, y: 716 }, tip: { x: 1197, y: 664 }, cam: { x: 1200, y: 700, s: 3.2, a: 0, b: 175 } },
   940: { tape: { x0: 60, x1: 1120, y: 940, up: 560 } },
   1080: { side: "right" },
   1120: { botA: { x: 405, y: 200, t: "CLORO" }, botB: { x: 1590, y: 220, t: "VINAGRE" }, mid: { x: 1000, y: 560 } },
