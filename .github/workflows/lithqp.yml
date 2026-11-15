@@ -40,15 +40,13 @@ jobs:
           sudo curl -sL https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp && sudo chmod a+rx /usr/local/bin/yt-dlp
           sudo apt-get install -y -qq ffmpeg > /dev/null
           sudo mv /usr/local/bin/yt-dlp /usr/local/bin/yt-dlp-real
-          printf '%s
-' '#!/bin/bash' 'mapfile -t P < <(grep @ /tmp/px.txt | shuf)' 'for p in "${P[@]:0:3}"; do /usr/local/bin/yt-dlp-real --proxy "$p" "$@" && exit 0; done' 'exit 1' | sudo tee /usr/local/bin/yt-dlp > /dev/null
+          printf '%s\n' '#!/bin/bash' 'mapfile -t P < <(grep @ /tmp/px.txt | shuf)' 'for p in "${P[@]:0:3}"; do /usr/local/bin/yt-dlp-real --proxy "$p" "$@" && exit 0; done' 'exit 1' | sudo tee /usr/local/bin/yt-dlp > /dev/null
           sudo chmod a+rx /usr/local/bin/yt-dlp
       - name: proxies
         env:
           YTPROXIES: ${{ secrets.YTPROXIES }}
         run: |
-          printf '%s
-' "$YTPROXIES" > /tmp/px.txt
+          printf '%s\n' "$YTPROXIES" > /tmp/px.txt
           echo "proxies: $(grep -c @ /tmp/px.txt)"
       - name: listas
         env:
