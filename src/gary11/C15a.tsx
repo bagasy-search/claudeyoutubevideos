@@ -74,6 +74,12 @@ const STEPS = ["CANDLE MATH", "THE DRUM", "CLEAN IT WET", "PAN + SAND", "3 LEGS 
 const Tags: React.FC<P & { pick?: number; recap?: boolean }> = ({ m, pick, recap }) => {
   const f = useCurrentFrame();
   if (pick !== undefined) return <RecapPick n={pick} />;
+  if (recap) { const x = -f * 34;
+    return <Plate src="g2100" d={0.8}>
+      {STEP_IMG.map((src, i) => <Print key={i} src={src} w={440} h={330} x={240 + i * 520 + x} y={250} rot={[-2, 1.5, -1, 2][i % 4]} e={k(f, i * 3, 8)}>
+        <div style={{ position: "absolute", left: -14, top: -14, width: 84, height: 84, background: AMBER, color: INK, fontFamily: SERIF, fontWeight: 900, fontSize: 60, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 6px 0 rgba(0,0,0,.4)" }}>{i + 1}</div></Print>)}
+      <Big e={k(f, 2, 14)} y={110} size={80}>Twelve steps, one bench.</Big>
+    </Plate>; }
   return <Plate src={recap ? "g3740" : "g1600"} d={0.7}>
     <div style={{ position: "absolute", left: 70, right: 70, top: 150, display: "grid", gridTemplateColumns: "repeat(6, 1fr)", gap: 24 }}>
       {STEPS.map((s, i) => {
@@ -105,17 +111,7 @@ const RecapPick: React.FC<{ n: number }> = ({ n }) => {
 };
 const RecapBonus: React.FC<P> = () => {
   const f = useCurrentFrame();
-  const wrap = k(f, 14, 26);
-  return <Plate src="g3800" d={0.6}>
-    <div style={{ position: "absolute", left: 660, top: 240, width: 600, height: 300, perspective: 1400 }}>
-      <div style={{ position: "absolute", left: 40, right: 40, bottom: -30, height: 40, borderRadius: "50%", background: "rgba(0,0,0,.55)" }} />
-      <div style={{ position: "absolute", inset: 0, borderRadius: 10, background: "linear-gradient(160deg,#c4532f,#8e3018)", boxShadow: "inset 0 -14px 0 rgba(0,0,0,.25)", transform: `translateY(${(1 - k(f, 0, 12)) * -400}px) rotateX(18deg)` }}>
-        {[0, 1].map((r) => <div key={r} style={{ position: "absolute", left: 0, right: 0, top: 96 + r * 100, height: 6, background: "rgba(60,20,10,.4)" }} />)}
-        <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: `${wrap * 100}%`, background: "repeating-linear-gradient(90deg,#b8262b 0 40px,#7c1418 40px 52px,#b8262b 52px 92px,#1b1b2a 92px 98px)", borderRadius: 10, boxShadow: "8px 0 14px rgba(0,0,0,.4)" }} />
-      </div>
-    </div>
-    <Big e={k(f, 30, 12)} y={130} col={CHALK}>Bonus: a hot brick in a flannel shirt.</Big>
-  </Plate>;
+  return <Plate src="g3800" d={0.6}><Big e={k(f, 2, 14)} y={120} col={CHALK}>Bonus: a hot brick in a flannel shirt.</Big></Plate>;
 };
 
 // ================= step:n (apertura de capítulo): la copia del paso entra a la mesa y cae la chapa «STEP n / 12»
@@ -214,7 +210,7 @@ const Gap: React.FC<P> = ({ m }) => {
     <div style={{ position: "absolute", left: 520, top: 150 - (1 - dr) * 500, width: 880, height: 360, borderRadius: "0 0 30px 30px", background: "linear-gradient(90deg,#3a2a20,#7a4a2c 30%,#5a3a26 55%,#2a1e18)", boxShadow: "0 24px 30px rgba(0,0,0,.6), inset 0 -18px 0 rgba(0,0,0,.35)" }}>
       {Array.from({ length: 7 }).map((_, i) => <div key={i} style={{ position: "absolute", left: 60 + i * 120, top: 40, width: 40, height: 260, background: "rgba(176,86,44,.35)", borderRadius: 20 }} />)}
     </div>
-    <div style={{ position: "absolute", left: 864, top: 590 }}><Tealight s={1.6} on={1} seed={3} /></div>
+    <div style={{ position: "absolute", left: 864, top: 533 }}><Tealight s={1.6} on={1} seed={3} /></div>
     <div style={{ position: "absolute", left: 1150, top: 510, width: 8, height: 90 * e, background: AMBER, boxShadow: "0 3px 0 rgba(0,0,0,.5)" }} />
     {[510, 600].map((y) => <div key={y} style={{ position: "absolute", left: 1120, top: y - 4, width: 68, height: 8, background: AMBER, opacity: cl(e * 3) }} />)}
     <div style={{ position: "absolute", left: 1000, top: 506, width: 120, height: 4, background: "rgba(244,168,58,.6)", opacity: cl(e * 3) }} />
@@ -244,7 +240,7 @@ const Pot: React.FC<P> = ({ m }) => {
     <div style={{ position: "absolute", left: 0, top: 0, width: 955, bottom: 0, backgroundImage: IMG("g1690"), backgroundSize: "cover", backgroundPosition: "50% 50%" }} />
     <div style={{ position: "absolute", left: 965, top: 0, right: 0, bottom: 0, backgroundImage: IMG("g3740"), backgroundSize: "cover", backgroundPosition: "50% 50%", clipPath: `inset(0 0 0 ${100 - r * 100}%)` }} />
     <AbsoluteFill style={{ background: "linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.1) 55%,rgba(14,12,10,.88))" }} />
-    <div style={{ position: "absolute", left: 952, top: 0, bottom: 0, width: 16, background: CHALK }} />
+    <div style={{ position: "absolute", left: 952, top: 0, bottom: 250, width: 16, background: CHALK }} />
     {[0, 1, 2].map((i) => flow(380, false, i))}
     {r > 0.6 && [0, 1, 2].map((i) => flow(1360, true, i))}
     <Lbl size={44} col="#ffb39f" style={{ position: "absolute", left: 0, width: 955, top: 70, textAlign: "center", textShadow: "0 3px 0 rgba(0,0,0,.6)" }}>OPEN HOLE · HEAT LEAVES</Lbl>
@@ -318,6 +314,7 @@ const Cooldown: React.FC<P> = ({ m }) => {
   const f = useCurrentFrame(); const a0 = M(m, 0, 6); const t = k(f, a0 + 16, 60); const temp = 140 - 40 * t; const mins = Math.round(45 * t);
   const yOf = (v: number) => 760 - ((v - 60) / 100) * 560;
   return <Plate src="g2440" d={0.82}>
+    <div style={{ position: "absolute", left: 270, top: 700, width: 700, height: 70, borderRadius: 10, background: "linear-gradient(180deg,#d9d2c0,#a99f88)", border: "6px solid #8d9399", boxShadow: "0 22px 26px rgba(0,0,0,.55)" }} />
     <div style={{ position: "absolute", left: 300, top: 560, display: "flex", gap: 40 }}>{[0, 1, 2, 3].map((i) => <Tealight key={i} s={1.1} on={1 - k(f, a0 + i * 4, 6)} seed={i} />)}</div>
     <div style={{ position: "absolute", left: 1180, top: 160, width: 110, height: 640, borderRadius: 55, background: "linear-gradient(90deg,#d9dcdf,#fdfdfd 45%,#b8bec4)", boxShadow: "0 22px 30px rgba(0,0,0,.55)" }} />
     <div style={{ position: "absolute", left: 1215, top: yOf(temp), width: 40, height: 800 - yOf(temp), borderRadius: 20, background: `linear-gradient(90deg,#a3220f,${RED} 50%,#e4573c)` }} />
@@ -392,7 +389,7 @@ const MIST: [string, string, string][] = [["g3180", "DRUM FLAT ON THE CANDLES", 
 const Mistakes: React.FC<P> = () => {
   const f = useCurrentFrame();
   return <Plate src="g2100" d={0.75}>
-    {MIST.map(([src], i) => <Print key={i} src={src} w={300} h={230} x={70 + i * 362} y={150} rot={[-3, 2, -1.5, 3, -2][i]} e={k(f, 2 + i * 6, 10)}>
+    {MIST.map(([src], i) => <Print key={i} src={src} w={290} h={230} x={110 + i * 350} y={150} rot={[-3, 2, -1.5, 3, -2][i]} e={k(f, 2 + i * 6, 10)}>
       <div style={{ position: "absolute", left: -12, top: -12, width: 70, height: 70, background: RED, color: "#fff", fontFamily: SERIF, fontWeight: 900, fontSize: 52, display: "flex", alignItems: "center", justifyContent: "center" }}>{i + 1}</div></Print>)}
     <Big e={k(f, 34, 14)} y={210} size={170} col={CHALK}>5 MISTAKES</Big><Big e={k(f, 46, 12)} y={120} size={56} col={AMBER}>Number three is mine.</Big>
   </Plate>;

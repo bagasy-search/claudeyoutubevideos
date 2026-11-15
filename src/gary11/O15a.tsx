@@ -14,13 +14,13 @@ const STEPS = ["CANDLE MATH", "THE DRUM", "CLEAN IT WET", "PAN + SAND", "3 LEGS 
 // MEJORA 2 · progreso: una cinta de acero de 12 tramos arriba a la derecha; el tramo del paso actual se pinta ámbar
 export const StepTape: React.FC<{ n: number; dur: number }> = ({ n, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 12, 12);
-  return <div style={{ position: "absolute", right: 56, top: 46, opacity: o, transform: `translateX(${(1 - o) * 80}px)` }}>
+  return <div style={{ position: "absolute", right: 70, top: 60, opacity: o, transform: `translateX(${(1 - o) * 80}px)` }}>
     <div style={{ display: "flex", height: 34, width: 600, background: "linear-gradient(#d9dde0,#9aa1a6)", border: "3px solid #5f666c", borderRadius: 4, overflow: "hidden" }}>
       {STEPS.map((_, i) => <div key={i} style={{ flex: 1, borderRight: i < 11 ? "2px solid #4a5055" : undefined, background: i + 1 < n ? "#c97d2c" : i + 1 === n ? (f > 10 ? AMBER : "#c97d2c") : "transparent" }} />)}
     </div>
     <div style={{ marginTop: 10, marginLeft: "auto", width: "fit-content", padding: "6px 22px", background: "rgba(20,18,16,.88)", borderRadius: 8, display: "flex", alignItems: "baseline", gap: 16, whiteSpace: "nowrap" }}>
-      <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: AMBER, lineHeight: 1 }}>{n}<span style={{ fontSize: 34, color: "#b9b1a2" }}> / 12</span></span>
-      <span style={{ fontFamily: SANS, fontWeight: 900, fontSize: 34, color: "#fff", letterSpacing: 2 }}>{STEPS[n - 1]}</span></div>
+      <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 84, color: AMBER, lineHeight: 1 }}>{n}<span style={{ fontSize: 34, color: "#b9b1a2" }}> / 12</span></span>
+      <span style={{ fontFamily: SANS, fontWeight: 900, fontSize: 46, color: "#fff", letterSpacing: 2 }}>{STEPS[n - 1]}</span></div>
   </div>;
 };
 
@@ -44,7 +44,7 @@ export const IronSheet: React.FC<{ dur: number; src: string }> = ({ dur, src }) 
 export const SteelTag: React.FC<{ text: string; sub: string; dur: number }> = ({ text, sub, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 12, 14); const r = interpolate(f, [0, 14], [70, 0], { ...CL, easing: Easing.out(Easing.back(1.6)) });
   const hit = cl(1 - Math.abs(f - 12) / 4);
-  return <div style={{ position: "absolute", right: 90, top: 80, opacity: o, perspective: 1200, transform: `scale(${1 + 0.05 * hit})`, transformOrigin: "100% 0" }}>
+  return <div style={{ position: "absolute", right: 90, bottom: 110, opacity: o, perspective: 1200, transform: `scale(${1 + 0.05 * hit})`, transformOrigin: "100% 100%" }}>
     <div style={{ padding: "26px 46px", position: "relative", background: "linear-gradient(135deg,#e1e4e6,#9097a0)", border: "4px solid #626970", borderRadius: 12, transform: `rotateX(${r}deg) rotate(-2deg)`, transformOrigin: "50% 100%", boxShadow: "6px 10px 0 rgba(0,0,0,.35)" }}>
       <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: "#33393f", letterSpacing: 4, textShadow: "-2px -2px 0 rgba(0,0,0,.3), 2px 2px 0 rgba(255,255,255,.6)", whiteSpace: "nowrap" }}>{text}</div>
     </div>
@@ -73,7 +73,7 @@ export const Slate: React.FC<{ big: string; label: string; src: string; dur: num
       <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: big.length > 7 ? 64 : 80, color: AMBER, lineHeight: 1, whiteSpace: "nowrap", clipPath: `inset(-20% ${100 - rev * 100}% -20% 0)` }}>{big}</div>
       <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 32, color: CHALK, marginTop: 10, whiteSpace: "nowrap" }}>{label}</div>
     </div>
-    <div style={{ position: "absolute", right: -30, bottom: -18, padding: "6px 14px", background: "#efe6d0", transform: "rotate(3deg)", fontFamily: SANS, fontWeight: 800, fontSize: 24, color: INK, whiteSpace: "nowrap", boxShadow: "0 4px 0 rgba(0,0,0,.3)" }}>SOURCE · {src}</div>
+    <div style={{ position: "absolute", right: 0, bottom: -52, padding: "6px 14px", background: "#efe6d0", transform: "rotate(3deg)", fontFamily: SANS, fontWeight: 800, fontSize: 24, color: INK, whiteSpace: "nowrap", boxShadow: "0 4px 0 rgba(0,0,0,.3)" }}>SOURCE · {src}</div>
   </div>;
 };
 
