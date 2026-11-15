@@ -35,9 +35,9 @@ const PapelT: React.FC<{ x: number; y: number; t: string; f0: number; f1?: numbe
 export const EscCoccion: React.FC<{ src: string; fSame: number; fThin: number; fThick: number; dur: number }> = ({ src, fSame, fThin, fThick, dur }) => {
   const f = useCurrentFrame();
   const B = [[330, 338, 440, 835], [632, 340, 718, 835], [1305, 355, 1495, 835]];
-  const d = interpolate(f, [fThin + 6, Math.min(dur - 30, fThick + 50)], [0, 58], { ...CL, easing: Easing.out(Easing.quad) });
+  const d = interpolate(f, [fThin + 6, dur - 24], [0, 58], CL);
   const a = seg(f, fThin - 14, fThin + 16), b = seg(f, fThick - 14, fThick + 18);
-  const cx = lerp(lerp(960, 525, a), 1400, b), cy = lerp(540, 590, a), s = lerp(lerp(1.0, 1.5, a), 1.7, b) + 0.05 * (f / dur);
+  const cx = lerp(lerp(960, 650, a), 1270, b), cy = lerp(540, 590, a), s = lerp(1.0, 1.46, a) + 0.03 * (f / dur);
   const cooked = "grayscale(0.78) sepia(0.55) brightness(0.74) contrast(1.05)";
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#d9d6cf" }}>
@@ -54,7 +54,7 @@ export const EscCoccion: React.FC<{ src: string; fSame: number; fThin: number; f
         <PapelT x={390} y={880} t="12 oz" f0={fSame} f1={fThin - 10} size={84} rot={-3} />
         <PapelT x={1300} y={880} t="12 oz" f0={fSame + 6} f1={fThin - 10} size={84} rot={2} />
         <PapelT x={250} y={250} t="gray all the way" f0={fThin + 44} f1={fThick - 6} size={76} rot={-2} />
-        <PapelT x={880} y={300} t="still a middle" f0={fThick + 44} size={76} rot={2} />
+        <PapelT x={700} y={300} t="still a middle" f0={fThick + 44} size={76} rot={2} />
       </AbsoluteFill>
     </AbsoluteFill>
   );
@@ -64,9 +64,9 @@ export const EscCoccion: React.FC<{ src: string; fSame: number; fThin: number; f
 export const EscCortina: React.FC<{ src: string; fOne: number; fMany: number; fFace: number; fBand: number; fThin: number; dur: number }> = ({ src, fOne, fMany, fFace, fBand, fThin, dur }) => {
   const f = useCurrentFrame();
   const a = seg(f, fOne - 12, fOne + 14), b = seg(f, fMany - 12, fMany + 16), c = seg(f, fFace - 10, fFace + 22);
-  const cx = lerp(lerp(lerp(960, 450, a), 1470, b), 470, c), cy = lerp(540, 560, c), s = lerp(lerp(1.0, 1.32, a), 1.5, c) + 0.04 * (f / dur);
+  const cx = lerp(lerp(lerp(960, 740, a), 1180, b), 660, c), cy = lerp(540, 560, c), s = lerp(lerp(1.0, 1.28, a), 1.42, c) + 0.03 * (f / dur);
   const back = seg(f, dur - 46, dur - 12);
-  const w = 900 * (seg(f, fThin - 4, fThin + 44) - 0.5 * back);
+  const w = 900 * seg(f, fThin - 4, fThin + 50) + 0 * back;
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#14181c" }}>
       <AbsoluteFill style={cam(cx, cy, s)}>
@@ -113,8 +113,7 @@ export const EscTajos: React.FC<{ src: string; fCut: number; fShort: number; fDo
         {Array.from({ length: N - 1 }, (_, k) => { const c = fCut + (k + 1) * 4; const o = interpolate(f, [c - 2, c, c + 5], [0, 1, 0], CL);
           return o > 0 ? <div key={k} style={{ position: "absolute", left: (k + 1) * W - 4, top: -40 + (1 - o) * 60, width: 8, height: 1160, background: "linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.95), rgba(255,255,255,0))", opacity: o }} /> : null; })}
       </AbsoluteFill>
-      <Papel x={960} y={90} t="cut every fiber short" f0={fCut + 50} size={100} rot={2} />
-      <Papel x={1280} y={230} t="⅛ inch" f0={fShort + 6} size={120} rot={-2} />
+      <Papel x={1240} y={110} t="⅛ inch" f0={fShort + 6} size={170} rot={-2} />
     </AbsoluteFill>
   );
 };
@@ -122,7 +121,7 @@ export const EscTajos: React.FC<{ src: string; fCut: number; fShort: number; fDo
 // ── Escena 4 · el trago: la tapa salada real (260,255–1650,372) baja y desaparece detrás del borde de arriba de la cara cortada; queda el azulejo de atrás y la cara toma un rojo más hondo
 export const EscTrago: React.FC<{ src: string; fDrink: number; fTime: number; fDown: number; dur: number }> = ({ src, fDrink, fTime, fDown, dur }) => {
   const f = useCurrentFrame();
-  const p = interpolate(f, [fDrink, dur - 18], [0, 1], { ...CL, easing: Easing.inOut(Easing.quad) });
+  const p = interpolate(f, [fDrink - 6, fDrink + (dur - fDrink) * 0.72], [0, 1], { ...CL, easing: Easing.out(Easing.quad) });
   const FACE = "polygon(205px 374px, 450px 366px, 700px 362px, 1200px 365px, 1500px 378px, 1745px 398px, 1750px 660px, 1700px 700px, 235px 700px, 200px 640px)";
   const TOP = "polygon(150px 236px, 1770px 236px, 1770px 404px, 1500px 384px, 1200px 371px, 700px 368px, 450px 372px, 150px 380px)";
   const s = 1.02 + 0.2 * seg(f, 0, dur), cy = lerp(500, 440, seg(f, 0, dur));
@@ -135,7 +134,7 @@ export const EscTrago: React.FC<{ src: string; fDrink: number; fTime: number; fD
         {/* la tapa salada, que baja */}
         <AbsoluteFill style={{ clipPath: TOP, transform: `translateY(${p * 128}px)` }}><Img src={staticFile(src)} style={FULL} /></AbsoluteFill>
         {/* la cara cortada, por delante: se traga la tapa */}
-        <AbsoluteFill style={{ clipPath: FACE }}><Img src={staticFile(src)} style={{ ...FULL, filter: `brightness(${1 - 0.14 * p}) saturate(${1 + 0.22 * p})` }} /></AbsoluteFill>
+        <AbsoluteFill style={{ clipPath: FACE }}><Img src={staticFile(src)} style={{ ...FULL, filter: `brightness(${1 - 0.26 * p}) saturate(${1 + 0.3 * p})` }} /></AbsoluteFill>
         <div style={{ position: "absolute", left: 215, top: 372, width: 1530, height: 16, background: "linear-gradient(180deg, rgba(40,0,0,0.45), rgba(40,0,0,0))", opacity: p * (1 - seg(f, dur - 30, dur - 10)), transform: "rotate(0.7deg)", transformOrigin: "0 0" }} />
       </AbsoluteFill>
       <Papel x={940} y={60} t="45 minutes to start" f0={fTime} size={100} rot={2} />

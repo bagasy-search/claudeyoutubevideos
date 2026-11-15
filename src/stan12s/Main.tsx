@@ -37,7 +37,7 @@ const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
       case "spike": return <St.OrderSpike n={s.n} name={s.name} img={s.img} dur={dur} seed={s.id} />;
       case "stack": return <St.PlateStack from={s.fromN} rows={s.rows} final={s.final} fFinal={s.fFinal} dur={dur} seed={s.id} />;
       case "pbill": return <St.PaperBill head={s.head} lines={s.lines} dur={dur} seed={s.id} />;
-      case "punch": return <St.PunchCard n={s.n} title={s.title} sub={s.sub} img={s.img} fTitle={s.fTitle} dur={dur} seed={s.id} />;
+      case "punch": return <St.PunchCard n={s.n} title={s.title} sub={s.sub} img={s.img} fTitle={s.fTitle} recap={s.recap} dur={dur} seed={s.id} />;
       case "gtherm": return <St.GlassTherm head={s.head} marks={s.marks} min={s.min} max={s.max} note={s.note} fNote={s.fNote} source={s.source} dur={dur} seed={s.id} />;
       case "rbox": return <St.RecipeBox head={s.head} lines={s.lines} dur={dur} seed={s.id} />;
       case "slip": return <St.SlipJar n={s.n} text={s.text} dur={dur} seed={s.id} />;

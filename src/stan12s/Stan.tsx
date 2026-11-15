@@ -858,13 +858,13 @@ const steelS = "linear-gradient(180deg,#F1F4F6 0%,#A9AFB4 45%,#6A7075 100%)";
 const fit = (txt: string, w: number, max: number, k = 0.38) => Math.min(max, Math.floor(w / (Math.max(1, txt.length) * k)));
 
 // ---------- tarjeta de 12 casilleros: la perforadora muerde el casillero del truco (cuenta regresiva 12 → 1)
-export const PunchCard: React.FC<{ n: number; title: string; img: string; fTitle?: number; sub?: string; dur: number; seed: number }> = ({ n, title, img, fTitle = 10, sub, dur, seed }) => {
+export const PunchCard: React.FC<{ n: number; title: string; img: string; fTitle?: number; sub?: string; recap?: boolean; dur: number; seed: number }> = ({ n, title, img, fTitle = 10, sub, recap, dur, seed }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig();
   const kb = useKB(seed + 5, dur);
   const intro = n === 0;
-  const up = spring({ frame: f - 2, fps, config: { damping: 13, mass: 0.9 } });
-  const fP = intro ? 9999 : 14;
-  const bite = interpolate(f, [fP - 6, fP, fP + 3, fP + 10], [0, 1, 1, 0], CL);
+  const up = spring({ frame: f - 2, fps, config: { damping: 10, mass: 0.9 } });
+  const fP = intro ? 9999 : 16;
+  const bite = interpolate(f, [fP - 10, fP, fP + 4, fP + 16], [0, 1, 1, 0], CL);
   const W = intro ? 1640 : 1560, H = intro ? 560 : 480, L = (1920 - W) / 2, T = intro ? 260 : 1080 - H - 70;
   const cell = (W - 120) / 12;
   const curX = intro ? 0 : 60 + (12 - n) * cell + cell / 2;
@@ -873,7 +873,7 @@ export const PunchCard: React.FC<{ n: number; title: string; img: string; fTitle
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
       <Img src={staticFile(img)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,0.5) 100%)" }} />
-      <div style={{ position: "absolute", left: L, top: T + (1 - Math.min(1, up)) * 700, width: W, height: H, backgroundImage: cardStock, borderRadius: 26, boxShadow: "0 30px 50px rgba(0,0,0,0.55)", transform: `rotate(${(seed % 2 ? 1 : -1) * 0.8 + Math.sin(f / 23) * 0.25}deg) translateY(${bite * 5}px)` }}>
+      <div style={{ position: "absolute", left: L, top: recap ? T : T - (1 - Math.min(1.03, up)) * 1150, width: W, height: H, backgroundImage: cardStock, borderRadius: 26, boxShadow: "0 30px 50px rgba(0,0,0,0.55)", transformOrigin: "50% 100%", transform: `${recap ? `perspective(1800px) rotateX(${(1 - Math.min(1, up)) * -88}deg) ` : ""}scale(${1 + (0.03 * f) / dur}) rotate(${(seed % 2 ? 1 : -1) * 0.8 + Math.sin(f / 23) * 0.25}deg) translateY(${bite * 5}px)` }}>
         <div style={{ position: "absolute", left: 14, right: 14, top: 14, bottom: 14, border: `4px solid ${K.red}`, borderRadius: 16, opacity: 0.75 }} />
         {intro ? (
           <div style={{ position: "absolute", left: 0, right: 0, top: 50, textAlign: "center" }}>
@@ -888,8 +888,8 @@ export const PunchCard: React.FC<{ n: number; title: string; img: string; fTitle
               <div style={{ fontFamily: SERIF, fontSize: 190, lineHeight: 0.9, color: K.red }}>{n}</div>
             </div>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <Write f0={fTitle} len={16} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(title, W - 420, 200, 0.37), lineHeight: 1.05, color: GREASE, whiteSpace: "nowrap", paddingRight: 24 }}>{title}</Write>
-              {sub ? <Write f0={fTitle + 16} len={14} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(sub, W - 420, 108, 0.37), lineHeight: 1.1, color: K.red, whiteSpace: "nowrap", paddingRight: 20, marginTop: 6 }}>{sub}</Write> : null}
+              <Write f0={fTitle} len={16} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(title, W - 420, recap ? 116 : 200, 0.37), lineHeight: 1.05, color: recap ? K.red : GREASE, whiteSpace: "nowrap", paddingRight: 24 }}>{title}</Write>
+              {sub ? <Write f0={fTitle + (recap ? 6 : 16)} len={14} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(sub, W - 420, recap ? 176 : 112, 0.37), lineHeight: 1.1, color: recap ? GREASE : K.red, whiteSpace: "nowrap", paddingRight: 20, marginTop: 6 }}>{sub}</Write> : null}
             </div>
           </div>
         )}
@@ -907,8 +907,8 @@ export const PunchCard: React.FC<{ n: number; title: string; img: string; fTitle
         })}
         {/* la perforadora y el confeti que cae */}
         {!intro && bite > 0 ? (
-          <div style={{ position: "absolute", left: curX - 70, bottom: -40 + bite * 44, width: 140, height: 150, borderRadius: "22px 22px 60px 60px", backgroundImage: steelS, boxShadow: "0 14px 20px rgba(0,0,0,0.5)", opacity: Math.min(1, bite * 3) }}>
-            <div style={{ position: "absolute", left: 40, top: 22, width: 60, height: 60, borderRadius: "50%", background: "#2b2f33" }} />
+          <div style={{ position: "absolute", left: curX - 120, bottom: -330 + bite * 300, width: 240, height: 330, borderRadius: "40px 40px 110px 110px", backgroundImage: steelS, boxShadow: "0 14px 20px rgba(0,0,0,0.5)", opacity: Math.min(1, bite * 3) }}>
+            <div style={{ position: "absolute", left: 76, top: 34, width: 88, height: 88, borderRadius: "50%", background: "#2b2f33", boxShadow: "inset 0 6px 10px rgba(0,0,0,0.8)" }} />
           </div>
         ) : null}
         {!intro && f >= fP ? <div style={{ position: "absolute", left: curX - 30 + (f - fP) * 1.2, bottom: 40 - (f - fP) * (f - fP) * 0.9, width: 60, height: 60, borderRadius: "50%", backgroundImage: cardStock, transform: `rotate(${(f - fP) * 14}deg) scaleY(${Math.cos((f - fP) / 3)})`, boxShadow: "0 4px 6px rgba(0,0,0,0.3)" }} /> : null}
@@ -945,14 +945,14 @@ export const GlassTherm: React.FC<{ head: string; marks: GMark[]; min: number; m
             <div key={i} style={{ position: "absolute", left: 420, top: y - 100, opacity: interpolate(f, [m.f - 12, m.f], [0.25, 1], CL) }}>
               <div style={{ position: "absolute", left: 0, top: 97 + (yOf(m.v) - y), width: 190, height: 6, background: K.red }} />
               <div style={{ position: "absolute", left: 200, top: 0, transform: `scale(${0.7 + 0.3 * Math.min(1.06, s)})`, transformOrigin: "0 50%", whiteSpace: "nowrap" }}>
-                <div style={{ fontFamily: SERIF, fontSize: marks.length === 1 ? 250 : 170, lineHeight: 1, color: K.ink }}>{m.big}</div>
+                <div style={{ fontFamily: SERIF, fontSize: marks.length === 1 ? 260 : 200, lineHeight: 1, color: K.ink }}>{m.big}</div>
                 <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: marks.length === 1 ? 96 : 84, lineHeight: 1, color: K.red }}>{m.label}</div>
               </div>
             </div>
           );
         })}
-        {note ? <div style={{ position: "absolute", left: 620, top: 690, padding: "14px 44px", border: `8px solid ${K.red}`, borderRadius: 14, fontFamily: SANS, fontWeight: 700, fontSize: 84, letterSpacing: 4, color: K.red, whiteSpace: "nowrap", opacity: Math.min(1, nS * 3), transform: `rotate(-4deg) scale(${1.7 - 0.7 * Math.min(1.05, nS)})`, transformOrigin: "20% 50%" }}>{note}</div> : null}
-        <div style={{ position: "absolute", left: 620, bottom: 70, fontFamily: SANS, fontWeight: 500, fontSize: 38, color: "rgba(42,26,18,0.8)", opacity: interpolate(f, [16, 28], [0, 1], CL), whiteSpace: "nowrap" }}>{source}</div>
+        {note ? <div style={{ position: "absolute", left: 620, top: 770, padding: "14px 44px", border: `8px solid ${K.red}`, borderRadius: 14, fontFamily: SANS, fontWeight: 700, fontSize: 84, letterSpacing: 4, color: K.red, whiteSpace: "nowrap", opacity: Math.min(1, nS * 3), transform: `rotate(-4deg) scale(${1.7 - 0.7 * Math.min(1.05, nS)})`, transformOrigin: "20% 50%" }}>{note}</div> : null}
+        <div style={{ position: "absolute", left: 620, bottom: 40, fontFamily: SANS, fontWeight: 500, fontSize: 46, color: "rgba(42,26,18,0.85)", opacity: interpolate(f, [16, 28], [0, 1], CL), whiteSpace: "nowrap" }}>{source}</div>
       </AbsoluteFill>
     </TileWall>
   );
@@ -997,23 +997,23 @@ export const SlipJar: React.FC<{ n: number; text: string; dur: number; seed: num
   const intro = n === 0;
   const rise = spring({ frame: f - 3, fps, config: { damping: 14, mass: 0.8 } });
   const open = interpolate(f, [12, 26], [0, 1], { ...CL, easing: ease });
-  const JX = intro ? 700 : 150, JW = intro ? 520 : 430, JH = intro ? 640 : 560, JT = intro ? 330 : 440;
+  const JX = intro ? 700 : 150, JW = intro ? 520 : 430, JH = intro ? 640 : 560, JT = intro ? 330 : 425;
   const words = text.split(" "); const rows: string[] = []; let cur = "";
   words.forEach((w) => { if ((cur + " " + w).trim().length > 21 && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); if (cur) rows.push(cur);
   const fs = Math.min(170, Math.floor(1020 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.37)), Math.floor(540 / (rows.length * 1.08)));
   return (
     <TileWall dur={dur} seed={seed}>
       <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1, 1.04])})`, transformOrigin: "40% 70%" }}>
-        <div style={{ position: "absolute", left: 0, right: 0, top: 960, height: 140, backgroundImage: woodBg, boxShadow: "0 -14px 30px rgba(0,0,0,0.3)" }} />
+        <div style={{ position: "absolute", left: 0, right: 0, top: 975, height: 140, backgroundImage: woodBg, boxShadow: "0 -14px 30px rgba(0,0,0,0.3)" }} />
         {intro ? (
           <div style={{ position: "absolute", left: 0, right: 0, top: 70, textAlign: "center" }}>
             <div style={{ fontFamily: SERIF, fontSize: 150, lineHeight: 1, color: K.ink }}>From the counter</div>
-            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 54, letterSpacing: 14, color: K.red, marginTop: 10 }}>FOUR QUESTIONS</div>
+            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 84, letterSpacing: 14, color: K.red, marginTop: 10 }}>FOUR QUESTIONS</div>
           </div>
         ) : null}
         {/* el papel que sale y se despliega */}
         {!intro ? (
-          <div style={{ position: "absolute", left: 680, top: 110 + (1 - Math.min(1, rise)) * 520, width: 1120, height: 760, perspective: 1800, transform: `rotate(${1.2 - open * 0.6}deg)` }}>
+          <div style={{ position: "absolute", left: 680, top: 110 + Math.sin(f / 19) * 6, width: 1120, height: 760, perspective: 1800, transformOrigin: "0 0", transform: `translate(${(1 - Math.min(1, rise)) * -330}px, ${(1 - Math.min(1, rise)) * 330}px) scale(${0.12 + 0.88 * Math.min(1, rise)}) rotate(${1.2 - open * 0.6 + (1 - Math.min(1, rise)) * -24}deg)` }}>
             <div style={{ position: "absolute", left: 0, top: 0, width: 1120, height: 190, backgroundImage: whitePaper, boxShadow: "0 18px 30px rgba(0,0,0,0.3)", display: "flex", alignItems: "center", paddingLeft: 60, boxSizing: "border-box", gap: 30 }}>
               <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 52, letterSpacing: 12, color: K.red }}>QUESTION</div>
               <div style={{ fontFamily: SERIF, fontSize: 150, lineHeight: 1, color: K.red }}>{n}</div>
@@ -1095,7 +1095,7 @@ export const SaltStrip: React.FC<{ stage: number; big: string; sub: string; fBig
           <div style={{ position: "absolute", left: 70 + WW * 0.2, top: 0, width: WW * 0.22 * zone, height: 170, background: "repeating-linear-gradient(135deg, rgba(179,38,30,0.85) 0px, rgba(179,38,30,0.85) 16px, rgba(179,38,30,0.35) 16px, rgba(179,38,30,0.35) 32px)" }} />
           {Object.entries(SPOS).map(([k, p]) => (
             <div key={k} style={{ position: "absolute", left: 70 + WW * p - 3, top: 0, width: 6, height: 62, background: GREASE }}>
-              <div style={{ position: "absolute", left: p === 1 ? -220 : p === 0 ? 0 : -110, top: 76, width: 220, textAlign: p === 1 ? "right" : p === 0 ? "left" : "center", fontFamily: SERIF, fontSize: 72, lineHeight: 1, color: K.ink, whiteSpace: "nowrap" }}>{k}</div>
+              <div style={{ position: "absolute", left: p === 1 ? -220 : p === 0 ? 0 : -110, top: 186, width: 220, textAlign: p === 1 ? "right" : p === 0 ? "left" : "center", fontFamily: SERIF, fontSize: 72, lineHeight: 1, color: K.ink, whiteSpace: "nowrap" }}>{k}</div>
             </div>
           ))}
         </div>
@@ -1105,21 +1105,21 @@ export const SaltStrip: React.FC<{ stage: number; big: string; sub: string; fBig
         </div>
         {stage === 3 ? (
           <>
-            <div style={{ position: "absolute", left: X0 + WW * 0.2 - 40, top: Y - 170, width: WW * 0.22 + 80, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 110, letterSpacing: 6, color: K.red, whiteSpace: "nowrap", opacity: Math.min(1, stamp * 3), transform: `rotate(-5deg) scale(${1.8 - 0.8 * Math.min(1.05, stamp)})` }}>NOT NOW</div>
-            <div style={{ position: "absolute", left: 120, top: 560, width: 560, opacity: Math.min(1, ok1 * 2), transform: `translateY(${(1 - Math.min(1, ok1)) * 60}px) rotate(-2deg)`, backgroundImage: whitePaper, padding: "22px 36px 28px", boxSizing: "border-box", boxShadow: "0 16px 26px rgba(0,0,0,0.3)" }}>
+            <div style={{ position: "absolute", left: X0 + WW * 0.2 - 40, top: Y + 26, width: WW * 0.22 + 80, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 100, letterSpacing: 6, color: "#FFF8EE", textShadow: "0 5px 0 rgba(90,10,6,0.95)", whiteSpace: "nowrap", opacity: Math.min(1, stamp * 3), transform: `rotate(-5deg) scale(${1.8 - 0.8 * Math.min(1.05, stamp)})` }}>NOT NOW</div>
+            <div style={{ position: "absolute", left: 120, top: 630, width: 560, opacity: Math.min(1, ok1 * 2), transform: `translateY(${(1 - Math.min(1, ok1)) * 60}px) rotate(-2deg)`, backgroundImage: whitePaper, padding: "22px 36px 28px", boxSizing: "border-box", boxShadow: "0 16px 26px rgba(0,0,0,0.3)" }}>
               <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 8, color: "#2F6B3A" }}>GOOD</div>
               <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 92, lineHeight: 1.02, color: GREASE }}>right as it<br />hits the pan</div>
             </div>
-            <div style={{ position: "absolute", left: 1180, top: 560, width: 620, opacity: Math.min(1, ok2 * 2), transform: `translateY(${(1 - Math.min(1, ok2)) * 60}px) rotate(2deg)`, backgroundImage: whitePaper, padding: "22px 36px 28px", boxSizing: "border-box", boxShadow: "0 16px 26px rgba(0,0,0,0.3)" }}>
+            <div style={{ position: "absolute", left: 1180, top: 630, width: 620, opacity: Math.min(1, ok2 * 2), transform: `translateY(${(1 - Math.min(1, ok2)) * 60}px) rotate(2deg)`, backgroundImage: whitePaper, padding: "22px 36px 28px", boxSizing: "border-box", boxShadow: "0 16px 26px rgba(0,0,0,0.3)" }}>
               <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 8, color: "#2F6B3A" }}>BEST</div>
               <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 92, lineHeight: 1.02, color: GREASE }}>one hour<br />or more</div>
             </div>
-            <div style={{ position: "absolute", left: 700, top: 590, width: 460, textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 84, lineHeight: 1.02, color: K.red, opacity: Math.min(1, stamp * 2) }}>10 to 30<br />minutes</div>
+            <div style={{ position: "absolute", left: 700, top: 660, width: 460, textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 84, lineHeight: 1.02, color: K.red, opacity: Math.min(1, stamp * 2) }}>10 to 30<br />minutes</div>
           </>
         ) : (
           <>
-          {[1, 2, 3].map((n) => <div key={n} style={{ position: "absolute", left: 640 + (n - 1) * 230, top: 590, width: 170, height: 200, backgroundImage: whitePaper, boxShadow: "0 14px 22px rgba(0,0,0,0.28)", textAlign: "center", fontFamily: SERIF, fontSize: 150, lineHeight: "200px", color: n === stage ? K.red : "rgba(42,26,18,0.35)", transform: `rotate(${(n - 2) * 2}deg)`, opacity: interpolate(f, [6 + n * 5, 14 + n * 5], [0, 1], CL) * (1 - Math.min(1, sB * 2)) }}>{n}</div>)}
-          <div style={{ position: "absolute", left: 0, right: 0, top: 560, textAlign: "center", opacity: Math.min(1, sB * 2), transform: `translateY(${(1 - Math.min(1, sB)) * 50}px)` }}>
+          {[1, 2, 3].map((n) => <div key={n} style={{ position: "absolute", left: 640 + (n - 1) * 230, top: 640, width: 170, height: 200, backgroundImage: whitePaper, boxShadow: "0 14px 22px rgba(0,0,0,0.28)", textAlign: "center", fontFamily: SERIF, fontSize: 150, lineHeight: "200px", color: n === stage ? K.red : "rgba(42,26,18,0.35)", transform: `rotate(${(n - 2) * 2}deg)`, opacity: interpolate(f, [6 + n * 5, 14 + n * 5], [0, 1], CL) * (1 - Math.min(1, sB * 2)) }}>{n}</div>)}
+          <div style={{ position: "absolute", left: 0, right: 0, top: 620, textAlign: "center", opacity: Math.min(1, sB * 2), transform: `translateY(${(1 - Math.min(1, sB)) * 50}px)` }}>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 44, backgroundImage: whitePaper, padding: "26px 60px 34px", boxShadow: "0 18px 30px rgba(0,0,0,0.3)", transform: "rotate(-1deg)" }}>
               <div style={{ fontFamily: SERIF, fontSize: 230, lineHeight: 0.9, color: K.red }}>{stage}</div>
               <div style={{ textAlign: "left" }}>
@@ -1144,14 +1144,14 @@ export const GuestCheck: React.FC<{ mode: number; lines: GLine[]; total?: string
   const green = "linear-gradient(180deg,#EEF5E6 0%,#DDEBD2 100%)";
   if (mode === 3) return (
     <AbsoluteFill style={{ overflow: "hidden", background: "radial-gradient(ellipse 1500px 900px at 50% 40%, #5a2a1c 0%, #2a120b 75%)" }}>
-      <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1, 1.05])})` }}>
+      <AbsoluteFill style={{ opacity: fadeIO(f, dur, 3, 6), transform: `scale(${interpolate(f, [0, dur], [1.2, 1.27])})` }}>
         <div style={{ position: "absolute", left: 360, top: 90 + (1 - Math.min(1, inS)) * 500, width: 1200, height: 900, borderRadius: 26, background: "linear-gradient(160deg,#3b1a12,#1d0b07)", boxShadow: "0 40px 60px rgba(0,0,0,0.6), inset 0 0 0 6px rgba(201,162,75,0.5)", transform: "rotate(-1.5deg)" }}>
           <div style={{ position: "absolute", left: 90, top: 70, width: 1020, height: 760, background: "linear-gradient(180deg,#FFFDF5,#F2ECDA)", boxShadow: "0 10px 20px rgba(0,0,0,0.5)", textAlign: "center" }}>
             <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 48, letterSpacing: 14, color: K.ink, marginTop: 50 }}>THE STEAKHOUSE</div>
             <div style={{ height: 4, background: K.ink, opacity: 0.4, margin: "18px 120px" }} />
             <div style={{ fontFamily: SERIF, fontSize: 230, lineHeight: 1.05, color: K.red, whiteSpace: "nowrap", opacity: Math.min(1, sB * 3), transform: `scale(${1.5 - 0.5 * Math.min(1.05, sB)})` }}>{big}</div>
             <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 96, lineHeight: 1.1, color: K.ink, opacity: interpolate(f, [fBig + 10, fBig + 22], [0, 1], CL) }}>{sub}</div>
-            <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 40, color: "rgba(42,26,18,0.75)", marginTop: 30, opacity: interpolate(f, [fBig + 22, fBig + 34], [0, 1], CL) }}>with tax and tip · where I live</div>
+            <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 54, color: "rgba(42,26,18,0.8)", marginTop: 24, opacity: interpolate(f, [fBig + 22, fBig + 34], [0, 1], CL) }}>with tax and tip · where I live</div>
           </div>
         </div>
       </AbsoluteFill>
@@ -1197,21 +1197,21 @@ export const PassRail: React.FC<{ n: number; text: string; fix: string; fFix: nu
   const sw = 7 * Math.exp(-Math.max(0, f - 6) / 22) * Math.cos((f - 6) / 6) + 0.6 * Math.sin(f / 24);
   const sF = spring({ frame: f - fFix, fps, config: { damping: 10, mass: 0.6 } });
   const words = text.split(" "); const rows: string[] = []; let cur = "";
-  words.forEach((w) => { if ((cur + " " + w).trim().length > 20 && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); if (cur) rows.push(cur);
-  const fs = Math.min(124, Math.floor(820 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.37)));
+  words.forEach((w) => { if ((cur + " " + w).trim().length > 15 && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); if (cur) rows.push(cur);
+  const fs = Math.min(124, Math.floor(680 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.37)));
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
       <Img src={staticFile(img)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
       <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.45) 100%)" }} />
       <div style={{ position: "absolute", left: -40, right: -40, top: 40, height: 44, backgroundImage: steelS, boxShadow: "0 14px 22px rgba(0,0,0,0.55)" }} />
       {Array.from({ length: n - 1 }, (_, i) => (
-        <div key={i} style={{ position: "absolute", left: 90 + i * 210, top: 66, width: 180, height: 260, backgroundImage: whitePaper, boxShadow: "0 12px 18px rgba(0,0,0,0.4)", transformOrigin: "50% 0", transform: `rotate(${Math.sin(f / 19 + i) * 1.2}deg)`, textAlign: "center" }}>
-          <div style={{ fontFamily: SERIF, fontSize: 130, lineHeight: 1.3, color: "rgba(42,26,18,0.4)" }}>{i + 1}</div>
-          <div style={{ position: "absolute", left: 20, right: 20, top: 120, height: 10, background: K.red, transform: "rotate(-18deg)", opacity: 0.8 }} />
+        <div key={i} style={{ position: "absolute", left: 60 + i * 250, top: 66, width: 220, height: 300, backgroundImage: whitePaper, boxShadow: "0 12px 18px rgba(0,0,0,0.4)", transformOrigin: "50% 0", transform: `rotate(${Math.sin(f / 19 + i) * 1.2}deg)`, textAlign: "center" }}>
+          <div style={{ fontFamily: SERIF, fontSize: 170, lineHeight: 1.3, color: "rgba(42,26,18,0.45)" }}>{i + 1}</div>
+          <div style={{ position: "absolute", left: 20, right: 20, top: 150, height: 10, background: K.red, transform: "rotate(-18deg)", opacity: 0.8 }} />
         </div>
       ))}
-      <div style={{ position: "absolute", left: 900 + (1 - Math.min(1, s)) * 1200, top: 66, width: 920, height: 900, transformOrigin: "50% 0", transform: `rotate(${sw}deg)` }}>
-        <div style={{ position: "absolute", left: 0, top: 0, width: 920, minHeight: 760, backgroundImage: whitePaper, boxShadow: "0 30px 50px rgba(0,0,0,0.55)", padding: "50px 56px 60px", boxSizing: "border-box",
+      <div style={{ position: "absolute", left: 1100 + (1 - Math.min(1, s)) * 1200, top: 66, width: 760, height: 900, transformOrigin: "50% 0", transform: `rotate(${sw}deg)` }}>
+        <div style={{ position: "absolute", left: 0, top: 0, width: 760, minHeight: 720, backgroundImage: whitePaper, boxShadow: "0 30px 50px rgba(0,0,0,0.55)", padding: "44px 40px 60px", boxSizing: "border-box",
           clipPath: "polygon(0 0, 100% 0, 100% 97.5%, 95% 100%, 90% 97.5%, 85% 100%, 80% 97.5%, 75% 100%, 70% 97.5%, 65% 100%, 60% 97.5%, 55% 100%, 50% 97.5%, 45% 100%, 40% 97.5%, 35% 100%, 30% 97.5%, 25% 100%, 20% 97.5%, 15% 100%, 10% 97.5%, 5% 100%, 0 97.5%)" }}>
           <div style={{ display: "flex", alignItems: "baseline", gap: 26 }}>
             <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 60, letterSpacing: 12, color: K.red }}>MISTAKE</div>
@@ -1220,8 +1220,8 @@ export const PassRail: React.FC<{ n: number; text: string; fix: string; fFix: nu
           <div style={{ height: 6, background: GREASE, opacity: 0.7, margin: "12px 0 20px" }} />
           {rows.map((r, i) => <Write key={i} f0={12 + i * 9} len={12} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fs, lineHeight: 1.1, color: GREASE, whiteSpace: "nowrap", paddingRight: 22 }}>{r}</Write>)}
           <div style={{ marginTop: 34, opacity: Math.min(1, sF * 3), transform: `scale(${1.3 - 0.3 * Math.min(1.05, sF)})`, transformOrigin: "0 50%" }}>
-            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 8, color: "#2F6B3A" }}>INSTEAD</div>
-            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(fix, 800, 100, 0.37), lineHeight: 1.1, color: "#2F6B3A", whiteSpace: "nowrap" }}>{fix}</div>
+            <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 56, letterSpacing: 8, color: "#2F6B3A" }}>INSTEAD</div>
+            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: fit(fix, 680, 100, 0.37), lineHeight: 1.1, color: "#2F6B3A", whiteSpace: "nowrap" }}>{fix}</div>
           </div>
         </div>
       </div>
@@ -1237,20 +1237,19 @@ export const TentCard: React.FC<{ kicker: string; text: string; img: string; sta
   const st = spring({ frame: f - 44, fps, config: { damping: 8, mass: 0.5 } });
   const words = text.split(" "); const rows: string[] = []; let cur = "";
   words.forEach((w) => { if ((cur + " " + w).trim().length > 26 && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); if (cur) rows.push(cur);
-  const fs = Math.min(150, Math.floor(1280 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.37)), Math.floor(390 / (rows.length * 1.08)));
+  const fs = Math.min(150, Math.floor(1280 / (rows.reduce((a, r) => Math.max(a, r.length), 6) * 0.37)), Math.floor(380 / (rows.length * 1.08)));
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
       <Img src={staticFile(img)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.5) 100%)" }} />
       <div style={{ position: "absolute", left: 230, top: 400, width: 1460, height: 620, perspective: 2000 }}>
         <div style={{ position: "absolute", left: 40, top: -30, width: 1380, height: 80, background: "linear-gradient(180deg,#CDBB8C,#E9D5A4)", transform: `skewX(-14deg) scaleY(${Math.min(1, up)})`, transformOrigin: "50% 100%", opacity: 0.95 }} />
-        <div style={{ position: "absolute", left: 0, top: 40, width: 1460, height: 560, backgroundImage: cardStock, borderRadius: "6px 6px 16px 16px", boxShadow: "0 36px 50px rgba(0,0,0,0.6)", transformOrigin: "50% 100%", transform: `rotateX(${(1 - Math.min(1, up)) * 88}deg)`, padding: "40px 70px", boxSizing: "border-box" }}>
+        <div style={{ position: "absolute", left: 0, top: 40, width: 1460, height: 560, backgroundImage: cardStock, borderRadius: "6px 6px 16px 16px", boxShadow: "0 36px 50px rgba(0,0,0,0.6)", transformOrigin: "50% 100%", transform: `rotateX(${12 + (1 - Math.min(1, up)) * 76}deg) translateY(${Math.sin(f / 21) * 3}px)`, padding: "40px 70px", boxSizing: "border-box" }}>
           <div style={{ position: "absolute", left: 16, right: 16, top: 16, bottom: 16, border: `4px solid ${K.red}`, borderRadius: 10, opacity: 0.7 }} />
-          <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: fit(kicker, 1300, 46, 0.78), letterSpacing: 9, color: K.red, whiteSpace: "nowrap" }}>{kicker}</div>
-          <div style={{ marginTop: 18 }}>
+          <div style={{ marginTop: 92 }}>
             {rows.map((r, i) => <Write key={i} f0={16 + i * 11} len={14} style={{ fontFamily: HAND, fontWeight: 700, fontSize: fs, lineHeight: 1.08, color: GREASE, whiteSpace: "nowrap", paddingRight: 24 }}>{r}</Write>)}
           </div>
-          {stamp ? <div style={{ position: "absolute", right: 60, bottom: 40, padding: "8px 34px", border: `8px solid ${K.red}`, borderRadius: 12, fontFamily: SANS, fontWeight: 700, fontSize: 72, letterSpacing: 8, color: K.red, opacity: Math.min(1, st * 3), transform: `rotate(-6deg) scale(${1.9 - 0.9 * Math.min(1.05, st)})` }}>SUBSCRIBE</div> : null}
+          {stamp ? <div style={{ position: "absolute", right: 56, top: 34, padding: "6px 30px", border: `8px solid ${K.red}`, borderRadius: 12, fontFamily: SANS, fontWeight: 700, fontSize: 66, letterSpacing: 8, color: K.red, opacity: Math.min(1, st * 3), transform: `rotate(-6deg) scale(${1.9 - 0.9 * Math.min(1.05, st)})` }}>SUBSCRIBE</div> : null}
         </div>
       </div>
     </AbsoluteFill>
