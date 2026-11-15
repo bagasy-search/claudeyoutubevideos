@@ -7,6 +7,7 @@ import * as K from "./Kit";
 import * as E from "./Escenas";
 import * as S from "./Carne";
 import * as Mu from "./Muro";
+import * as Ro from "./Rosa";
 
 export const TOTAL_FRAMES_STAN = TOTAL;
 const TR = 8;
@@ -93,6 +94,19 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
     case "DosBotM": return <Mu.DosBotM {...s.p} dur={dur} />;
     case "PreciosM": return <Mu.PreciosM {...s.p} dur={dur} />;
     case "VotoM": return <Mu.VotoM {...s.p} dur={dur} />;
+    case "chapR": return <Ro.ChapR {...s.p} bg={s.bg} seed={seed} dur={dur} />;
+    case "idxR": return <Ro.IdxR {...s.p} bg={s.bg} seed={seed} dur={dur} />;
+    case "listaR": return <Ro.ListaR {...s.p} bg={s.bg} seed={seed} dur={dur} />;
+    case "ticketR": return <Ro.TicketR {...s.p} bg={s.bg} seed={seed} dur={dur} />;
+    case "numR": return <Ro.NumR {...s.p} bg={s.bg} seed={seed} dur={dur} />;
+    case "vsR": return <Ro.VsR {...s.p} bg={s.bg} seed={seed} dur={dur} />;
+    case "datoR": return <Ro.DatoR {...s.p} bg={s.bg} seed={seed} dur={dur} />;
+    case "relojR": return <Ro.RelojR {...s.p} bg={s.bg} seed={seed} dur={dur} />;
+    case "albumR": return <Ro.AlbumR {...s.p} bg={s.bg} seed={seed} dur={dur} />;
+    case "semanaR": return <Ro.SemanaR {...s.p} bg={s.bg} seed={seed} dur={dur} />;
+    case "avisoR": return <Ro.AvisoR {...s.p} bg={s.bg} seed={seed} dur={dur} />;
+    case "comentR": return <Ro.ComentR {...s.p} bg={s.bg} seed={seed} dur={dur} />;
+    case "precioR": return <Ro.PrecioR {...s.p} bg={s.bg} seed={seed} dur={dur} />;
     case "escena": { const C = (E as any)[s.p.name]; return C ? <C {...s.p} dur={dur} /> : null; }
     default: return null;
   }
@@ -123,9 +137,9 @@ const Enter: React.FC<{ trans: string; children: React.ReactNode; seed: number }
 const Overlay: React.FC<{ o: any }> = ({ o }) => {
   switch (o.type) {
     case "price": return <K.Price text={o.text} dur={o.dur} />;
-    case "progress": return <Mu.ProgM n={o.n} N={o.N} title={o.title} dur={o.dur} />;
-    case "qr": return <Mu.QrM qr={o.qr} cover={o.cover} dur={o.dur} />;
-    case "split": return <Mu.PanelM src={o.src} label={o.label} dur={o.dur} />;
+    case "progress": return <Ro.ProgR n={o.n} N={o.N} title={o.title} unit={o.unit} dur={o.dur} />;
+    case "qr": return <Ro.QrR qr={o.qr} cover={o.cover} dur={o.dur} />;
+    case "split": return <Ro.PanelR src={o.src} label={o.label} dur={o.dur} />;
     case "pregunta": return <K.Pregunta text={o.text} dur={o.dur} />;
     default: return null;
   }
