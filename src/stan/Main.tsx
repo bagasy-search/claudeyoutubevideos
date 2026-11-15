@@ -7,6 +7,7 @@ import * as K from "./Kit";
 import * as E from "./Escenas";
 import * as S from "./Carne";
 import * as Mu from "./Muro";
+import * as Pi from "./Piso";
 
 export const TOTAL_FRAMES_STAN = TOTAL;
 const TR = 8;
@@ -93,6 +94,51 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
     case "DosBotM": return <Mu.DosBotM {...s.p} dur={dur} />;
     case "PreciosM": return <Mu.PreciosM {...s.p} dur={dur} />;
     case "VotoM": return <Mu.VotoM {...s.p} dur={dur} />;
+    case "ChapP": return <Pi.ChapP {...s.p} dur={dur} />;
+    case "IdxP": return <Pi.IdxP {...s.p} dur={dur} />;
+    case "RepasoP": return <Pi.RepasoP {...s.p} dur={dur} />;
+    case "PrecioP": return <Pi.PrecioP {...s.p} dur={dur} />;
+    case "PremioP": return <Pi.PremioP {...s.p} dur={dur} />;
+    case "ComentP": return <Pi.ComentP {...s.p} dur={dur} />;
+    case "FotoCaeP": return <Pi.FotoCaeP {...s.p} dur={dur} />;
+    case "GiroP": return <Pi.GiroP {...s.p} dur={dur} />;
+    case "FundaP": return <Pi.FundaP {...s.p} dur={dur} />;
+    case "HarinaP": return <Pi.HarinaP {...s.p} dur={dur} />;
+    case "DustP": return <Pi.DustP {...s.p} dur={dur} />;
+    case "CapasP": return <Pi.CapasP {...s.p} dur={dur} />;
+    case "CostraP": return <Pi.CostraP {...s.p} dur={dur} />;
+    case "CintaP": return <Pi.CintaP {...s.p} dur={dur} />;
+    case "EscalaP": return <Pi.EscalaP {...s.p} dur={dur} />;
+    case "DosCintasP": return <Pi.DosCintasP {...s.p} dur={dur} />;
+    case "LlaveP": return <Pi.LlaveP {...s.p} dur={dur} />;
+    case "GotaP": return <Pi.GotaP {...s.p} dur={dur} />;
+    case "OrigenP": return <Pi.OrigenP {...s.p} dur={dur} />;
+    case "CalP": return <Pi.CalP {...s.p} dur={dur} />;
+    case "GelP": return <Pi.GelP {...s.p} dur={dur} />;
+    case "FuentesP": return <Pi.FuentesP {...s.p} dur={dur} />;
+    case "BidonP": return <Pi.BidonP {...s.p} dur={dur} />;
+    case "TableroP": return <Pi.TableroP {...s.p} dur={dur} />;
+    case "VidrioP": return <Pi.VidrioP {...s.p} dur={dur} />;
+    case "TrucoP": return <Pi.TrucoP {...s.p} dur={dur} />;
+    case "PorosP": return <Pi.PorosP {...s.p} dur={dur} />;
+    case "SolP": return <Pi.SolP {...s.p} dur={dur} />;
+    case "PlasticoP": return <Pi.PlasticoP {...s.p} dur={dur} />;
+    case "ClimaP": return <Pi.ClimaP {...s.p} dur={dur} />;
+    case "MezclaP": return <Pi.MezclaP {...s.p} dur={dur} />;
+    case "RindeP": return <Pi.RindeP {...s.p} dur={dur} />;
+    case "LaminaP": return <Pi.LaminaP {...s.p} dur={dur} />;
+    case "MojadoP": return <Pi.MojadoP {...s.p} dur={dur} />;
+    case "SecadorP": return <Pi.SecadorP {...s.p} dur={dur} />;
+    case "SemanaP": return <Pi.SemanaP {...s.p} dur={dur} />;
+    case "ErroresP": return <Pi.ErroresP {...s.p} dur={dur} />;
+    case "ErrorP": return <Pi.ErrorP {...s.p} dur={dur} />;
+    case "PreguntasP": return <Pi.PreguntasP {...s.p} dur={dur} />;
+    case "DuraP": return <Pi.DuraP {...s.p} dur={dur} />;
+    case "CostoP": return <Pi.CostoP {...s.p} dur={dur} />;
+    case "TotalP": return <Pi.TotalP {...s.p} dur={dur} />;
+    case "DiscosP": return <Pi.DiscosP {...s.p} dur={dur} />;
+    case "CantaP": return <Pi.CantaP {...s.p} dur={dur} />;
+    case "VotaP": return <Pi.VotaP {...s.p} dur={dur} />;
     case "escena": { const C = (E as any)[s.p.name]; return C ? <C {...s.p} dur={dur} /> : null; }
     default: return null;
   }
@@ -114,7 +160,7 @@ const Enter: React.FC<{ trans: string; children: React.ReactNode; seed: number }
   }
   if (trans === "sube") { // paso nuevo: entra de abajo hacia arriba como sube el agua por la pared, con su línea de humedad azul
     const y = interpolate(f, [0, 16], [100, 0], { extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
-    return <AbsoluteFill><AbsoluteFill style={{ clipPath: `inset(${y}% 0 0 0)` }}>{children}</AbsoluteFill>
+    return <AbsoluteFill><AbsoluteFill style={{ filter: `brightness(${0.45 + 0.55 * (1 - y / 100)})` }}>{children}</AbsoluteFill><AbsoluteFill style={{ clipPath: `inset(${y}% 0 0 0)` }}>{children}</AbsoluteFill>
       {f < 17 ? <div style={{ position: "absolute", left: 0, right: 0, top: `calc(${y}% - 4px)`, height: 8, background: "#7FB7D9", boxShadow: "0 0 18px rgba(127,183,217,0.8)" }} /> : null}</AbsoluteFill>;
   }
   return <AbsoluteFill>{children}</AbsoluteFill>;
