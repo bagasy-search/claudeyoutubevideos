@@ -15,7 +15,7 @@ export const Fan: React.FC<{ dur: number; fSpin: number }> = ({ dur, fSpin }) =>
   const cam = interpolate(f, [0, dur], [1.02, 1.08], CL);
   const hum = interpolate(f, [4, 14], [0, 1], CL);
   const jx = Math.sin(f * 2.1) * 1.6 * hum, jy = Math.cos(f * 2.7) * 1.2 * hum;
-  const rot = interpolate(f, [fSpin, fSpin + 7, fSpin + 24], [0, 9, 0], { ...CL, easing: EASE });
+  const rot = interpolate(f, [fSpin, fSpin + 6, fSpin + 18, fSpin + 30, fSpin + 37, fSpin + 54], [0, 26, 0, 0, 38, 0], { ...CL, easing: EASE });
   return (
     <AbsoluteFill style={{ backgroundColor: "#1d1c18", overflow: "hidden" }}>
       <div style={{ ...BOX, transform: `scale(${cam})`, transformOrigin: "945px 520px" }}>
@@ -56,7 +56,7 @@ export const Scope: React.FC<{ dur: number; fRust: number; fNo: number }> = ({ d
           <Img src={S("e_scope")} style={{ ...FULL, filter: "brightness(1.08)" }} />
         </div>
         <div style={{ ...BOX, opacity: all }}>
-          <Img src={S("e_scope")} style={FULL} />
+          <Img src={S("e_scope")} style={{ ...FULL, filter: `brightness(${1.12 + 0.35 * interpolate(f, [fNo + 6, fNo + 14, fNo + 34], [0, 1, 0], CL)})` }} />
         </div>
       </div>
     </AbsoluteFill>
@@ -67,8 +67,8 @@ export const Scope: React.FC<{ dur: number; fRust: number; fNo: number }> = ({ d
 const HOUSE = poly([[0, 0], [1300, 0], [1300, 40], [1112, 250], [1104, 862], [0, 872]]);
 export const Big: React.FC<{ dur: number; fTwice: number }> = ({ dur, fTwice }) => {
   const f = useCurrentFrame();
-  const up = interpolate(f, [fTwice, fTwice + 26], [0, 1], { ...CL, easing: EASE });
-  const down = interpolate(f, [dur - 34, dur - 8], [0, 1], { ...CL, easing: EASE });
+  const up = interpolate(f, [fTwice - 44, fTwice + 4], [0, 1], { ...CL, easing: EASE });
+  const down = 0;
   const k = 1 + 0.9 * up * (1 - down);
   const cam = interpolate(f, [0, dur], [1.0, 1.04], CL);
   return (
@@ -100,6 +100,11 @@ export const Drive: React.FC<{ dur: number; fOut: number; fBack: number; fAgain:
         <div style={{ ...BOX, clipPath: SHPATCH }}>
           <Img src={S("e_drive")} style={{ ...FULL, transform: "translateY(-72px)" }} />
         </div>
+        {[fOut, fBack, fAgain].map((at, i) => f < at + 12 ? null : (
+          <div key={i} style={{ ...BOX, overflow: "visible", opacity: 0.38, transform: `rotate(${-26 * i}deg)`, transformOrigin: "985px 700px" }}>
+            <div style={{ ...BOX, clipPath: SHADOW }}><Img src={S("e_drive")} style={FULL} /></div>
+          </div>
+        ))}
         <div style={{ ...BOX, overflow: "visible", transform: `rotate(${ang}deg)`, transformOrigin: "985px 700px" }}>
           <div style={{ ...BOX, clipPath: SHADOW }}>
             <Img src={S("e_drive")} style={FULL} />
