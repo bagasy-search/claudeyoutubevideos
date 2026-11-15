@@ -55,6 +55,7 @@ export const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "windup": return <S.WindUp min={o.min} label={o.label} dur={d} />;
     case "scale": return <S.Scale to={o.to} suffix={o.suffix} label={o.label} dur={d} />;
     case "rail": return <S.Rail n={o.n} total={o.total} word={o.word} title={o.title} dur={d} />;
+    case "qr": return <S.QrCard qr={o.qr} cover={o.cover} dur={d} />;
     default: return null;
   }
 };

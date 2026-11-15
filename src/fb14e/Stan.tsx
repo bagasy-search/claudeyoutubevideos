@@ -477,3 +477,18 @@ export const Source: React.FC<{ head: string; big: string; lines: string[]; foot
     </AbsoluteFill>
   );
 };
+
+// QR de la guía: tarjeta kraft a la derecha (portada + código + dirección), entra cuando la voz dice la web
+export const QrCard: React.FC<{ qr: string; cover: string; dur: number }> = ({ qr, cover, dur }) => {
+  const f = useCurrentFrame(); const p = useSp(0, 15); const bob = Math.sin(f / 22) * 5;
+  return (
+    <div style={{ position: "absolute", right: 64, top: 150 + bob, width: 600, borderRadius: 18, background: K.paper, boxShadow: "0 30px 70px rgba(0,0,0,0.55)", padding: 28, opacity: p * fadeOut(f, dur, 10), transform: `translateX(${(1 - p) * 700}px) rotate(${(1 - p) * 6}deg)`, display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <div style={{ display: "flex", gap: 22, alignItems: "center" }}>
+        <Img src={staticFile(cover)} style={{ height: 290, borderRadius: 6, boxShadow: "0 10px 22px rgba(0,0,0,0.35)" }} />
+        <Img src={staticFile(qr)} style={{ width: 290, height: 290 }} />
+      </div>
+      <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 28, letterSpacing: 3, color: K.redD, marginTop: 18 }}>ESCANEA CON TU TELÉFONO</div>
+      <div style={{ fontFamily: SERIF, fontSize: 48, color: K.ink, marginTop: 4 }}>constructorlibre.com</div>
+    </div>
+  );
+};
