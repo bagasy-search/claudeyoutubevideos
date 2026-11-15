@@ -42,12 +42,15 @@ const Enter: React.FC<{ trans: string; children: React.ReactNode; seed: number }
   return <AbsoluteFill>{children}</AbsoluteFill>;
 };
 
+// r3: cada barrido de capítulo es una foto real distinta del video (ninguna repetida más de 2 veces en todo el video)
+const CONDUIT_SRC = ["y2040", "y2710", "y1790", "g0050", "y2780", "y2800", "g2890", "g3290", "y1460", "y4210"];
+const CONDUIT_FROM = (OVERLAYS as any[]).filter((o) => o.type === "conduit").map((o) => o.from);
 const Overlay: React.FC<{ o: any }> = ({ o }) => {
   const d = o.dur;
   switch (o.type) {
     case "name": return <O.Patch text={o.text} sub={o.sub} dur={d} />;
     case "fuses": return <O.FuseStrip n={o.n} dur={d} />;
-    case "conduit": return <O.Conduit dur={d} />;
+    case "conduit": return <O.Conduit dur={d} src={`gary14a/g/${CONDUIT_SRC[Math.max(0, CONDUIT_FROM.indexOf(o.from)) % CONDUIT_SRC.length]}.png`} />;
     case "door": return <O.PanelDoor src={o.src} seed={o.seed} label={o.label} dur={d} />;
     case "clip": return <O.Clipboard src={o.src} note={o.note} seed={o.seed} left={o.left} dur={d} />;
     case "datatag": return <O.DataTag big={o.big} label={o.label} src={o.srcTxt} dur={d} />;
