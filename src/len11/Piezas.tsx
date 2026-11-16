@@ -154,7 +154,7 @@ export const LowerThird: React.FC<{ title: string; sub: string; dur: number }> =
         <div style={{ width: 12, background: "#E0B85A", borderRadius: "8px 0 0 8px", }} />
         <div style={{ background: "rgba(18,14,10,0.88)", padding: "14px 34px 16px 26px", borderRadius: "0 12px 12px 0" }}>
           <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 76, lineHeight: 1.05, color: C.white }}>{title}</div>
-          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 46, letterSpacing: 1, color: "#FFF4DC", opacity: interpolate(f, [16, 26], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>{sub}</div>
+          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 56, letterSpacing: 1, color: "#FFFFFF", opacity: interpolate(f, [16, 26], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>{sub}</div>
         </div>
       </div>
     </AbsoluteFill>
