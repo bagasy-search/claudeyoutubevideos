@@ -44,6 +44,29 @@ const Enter: React.FC<{ trans: string; dur: number; children: React.ReactNode; s
   return <AbsoluteFill style={{ opacity: o }}>{children}</AbsoluteFill>;
 };
 
+// len14c v3 (EVALUADOR v2): (a) insignias de paso consecutivas del mismo n se funden en UNA (entra una vez, no en cada corte);
+// (b) en el repaso final la insignia lleva la tira de 12 fotos reales (primera foto de cada paso) con la actual resaltada;
+// (c) sin cortinilla (corte limpio).
+const OV: any[] = (() => {
+  const src = (OVERLAYS as any[]).filter((o) => o.type !== "wipe").slice().sort((a, b) => a.from - b.from);
+  const out: any[] = [];
+  for (const o of src) {
+    const last = [...out].reverse().find((x) => x.type === "progress");
+    if (o.type === "progress" && last && last.n === o.n && o.from - (last.from + last.dur) <= 20) { last.dur = o.from + o.dur - last.from; continue; }
+    out.push({ ...o });
+  }
+  const pr = out.filter((x) => x.type === "progress");
+  const i12 = pr.findIndex((x) => x.n === 12);
+  const thumbs: string[] = [];
+  for (let n = 1; n <= 12; n++) {
+    const p = pr.find((x) => x.n === n);
+    const sh = p ? (SHOTS as any[]).find((s) => s.from >= p.from && s.k === "G" && s.src && !/\.mp4$/.test(s.src)) : null;
+    thumbs.push(sh ? sh.src : "");
+  }
+  if (i12 >= 0) pr.slice(i12 + 1).forEach((x) => { x.recap = true; x.thumbs = thumbs; });
+  return out;
+})();
+
 const Overlay: React.FC<{ o: any }> = ({ o }) => {
   const d = o.dur;
   switch (o.type) {
@@ -67,13 +90,13 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "soft": return <P.Soft text={o.text} dur={d} />;
     case "carousel": return <Q.Carousel cards={CARDS} bg={o.bg} subAt={o.subAt} sub={o.sub} dur={d} />;
     case "scene": return <Q.HabitScene n={o.n} title={o.title} src={o.src} dur={d} kick={o.kick} />;
-    case "progress": return <Q.Progress n={o.n} title={o.title} dur={d} of={o.of} />;
+    case "progress": return <Q.Progress n={o.n} title={o.title} dur={d} of={o.of} recap={o.recap} thumbs={o.thumbs} />;
     case "split": return <Q.SplitPhoto src={o.src} seed={o.seed} dur={d} />;
     case "polaroid": return <Q.Polaroid src={o.src} caption={o.caption} seed={o.seed} dur={d} />;
     case "map": return <Q.MapJP a={o.a} b={o.b} la={o.la} ja={o.ja} lb={o.lb} jb={o.jb} dur={d} />;
     case "escena": { const K = (E as any)[o.name]; return K ? <K dur={d} {...o} /> : null; }
     case "cta": return <Q.CTA text={o.text} cards={[]} dur={d} />;
-    case "wipe": return <Q.InkWipe dir={o.dir} len={o.dur} />;
+    case "wipe": return null;
     default: return null;
   }
 };
@@ -100,7 +123,7 @@ export const MainLen11: React.FC = () => (
     })}
     {/* sin viñeta (regla len14) */}
     {/* capa 3: gráficos */}
-    {OVERLAYS.map((o, i) => (
+    {OV.map((o, i) => (
       <Sequence key={"o" + i} from={o.from} durationInFrames={Math.min(o.dur, TOTAL - o.from)}>
         <Overlay o={o} />
       </Sequence>
