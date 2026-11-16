@@ -14,7 +14,7 @@ const tag = (o: number, y: number, t: string, bg: string): React.ReactNode => (
 export const Loupe: React.FC<{ dur: number; fChuck: number }> = ({ dur, fChuck }) => {
   const f = useCurrentFrame();
   const t = Math.min(1, f / Math.max(1, fChuck - 4));
-  const cx = 560 + 820 * t, cy = 420 + Math.sin(t * Math.PI * 1.6) * 170;
+  const cx = 740 + 380 * t, cy = 610 + Math.sin(t * Math.PI * 1.6) * 90;   // solo sobre la bandeja de carne (no el trapo)
   const open = interpolate(f, [fChuck - 2, fChuck + 22], [0, 1], { ...CL, easing: EASE });
   const R = 230 + open * 1900;
   const z = interpolate(f, [0, dur], [1.0, 1.06], CL);
@@ -69,7 +69,7 @@ export const Coffee: React.FC<{ dur: number; fLift: number }> = ({ dur, fLift })
       <div style={{ ...FULL, WebkitMaskImage: m, maskImage: m }}>
         <div style={{ ...FULL, transform: `rotate(${rot}deg) scale(${z * 1.05})` }}><Img src={S("e_coffee_lift")} style={FULL} /></div>
       </div>
-      {tag(interpolate(f, [fLift + 30, fLift + 42], [0, 1], CL), 80, "1 CUP STRONG BLACK COFFEE", "#3E2A1A")}
+      {tag(interpolate(f, [8, 20], [0, 1], CL), 80, "1 CUP STRONG BLACK COFFEE", "#3E2A1A")}
     </AbsoluteFill>
   );
 };
