@@ -306,7 +306,7 @@ export const Close: React.FC<{ cover: string; qr?: string; url?: string; look: L
   const f = useCurrentFrame(); const inn = spring({ frame: f, fps: 30, config: { damping: 18 } }); const q = spring({ frame: f - qAt, fps: 30, config: { damping: 16 } });
   const cam = 1 + 0.12 * ease(f / Math.max(1, dur));
   return (<AbsoluteFill style={{ overflow: "hidden" }}>
-   <AbsoluteFill style={{ transform: `scale(${cam})`, transformOrigin: "55% 40%", perspective: 2400 }}>
+   <AbsoluteFill style={{ transform: `translateY(${question ? -150 * Math.min(1, Math.max(0, q)) : 0}px) scale(${cam * (question ? 1 - 0.1 * Math.min(1, Math.max(0, q)) : 1)})`, transformOrigin: "55% 40%", perspective: 2400 }}>
     <Img src={staticFile(look.table)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.03 * f / Math.max(1, dur)})` }} />
     <div style={{ position: "absolute", left: 300, top: 90, height: 900, width: 696, boxShadow: "0 34px 80px rgba(0,0,0,0.55)", transform: `translateY(${(1 - inn) * 1000}px) rotateY(${10 - 14 * ease(f / Math.max(1, dur))}deg) rotate(${-3 * inn}deg)` }}>
       <Img src={staticFile(cover)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
