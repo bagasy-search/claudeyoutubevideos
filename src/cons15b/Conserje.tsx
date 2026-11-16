@@ -20,22 +20,22 @@ export const ElevatorDial: React.FC<{ n: number; total: number; title: string; s
   const f = useCurrentFrame();
   const y = liftOut(f, dur);
   const last = n === total;
-  const W = 940, H = 500, CX = W / 2 - 46, CY = 404, R = 330;
+  const W = 1100, H = 560, CX = W / 2 - 46, CY = 460, R = 380;
   const A0 = -72, A1 = 72;
   const ang = (k: number) => A0 + ((k - 1) / Math.max(1, total - 1)) * (A1 - A0);
   const pos = (k: number) => { const r = (ang(k) * Math.PI) / 180; return [CX + Math.sin(r) * R, CY - Math.cos(r) * R]; };
   const prev = n > 1 ? n - 1 : 1;
   const inn = spring({ frame: f, fps: 30, config: { damping: 15 } });
   const doors = interpolate(f, [4, 16], [0, 1], { ...K, easing: Easing.inOut(Easing.cubic) });
-  const sp = spring({ frame: f - 14, fps: 30, config: { damping: 7, stiffness: 80 } });
+  const sp = spring({ frame: f - 10, fps: 30, config: { damping: 7, stiffness: 80 } });
   const ARR = 26;
-  const hum = f > ARR ? Math.sin(f / 1.7) * 0.6 : 0;
+  const hum = f > ARR ? Math.sin(f / 1.7) * 1.6 : 0;
   const a = ang(prev) + (ang(n) - ang(prev)) * sp + hum;
   const lit = f >= ARR && !(f >= ARR + 6 && f < ARR + 9); // parpadea una vez al llegar
   const ding = interpolate(f, [ARR, ARR + 22], [0, 1], K);
   const glint = interpolate(f, [ARR + 14, ARR + 44], [-40, 140], K);
   const big = last ? 1 + 0.16 * spring({ frame: f - ARR, fps: 30, config: { damping: 11 } }) : 1;
-  const flash = last ? interpolate(f, [ARR, ARR + 4, ARR + 20], [0, 0.55, 0], K) : 0;
+  const flash = last ? interpolate(f, [ARR, ARR + 4, ARR + 20], [0, 0.25, 0], K) : 0;
   const z = interpolate(f, [0, dur], [1.05, 1.16]);
   const panX = interpolate(f, [0, dur], [-14, 14]);
   const tIn = spring({ frame: f - 20, fps: 30, config: { damping: 18 } });
@@ -94,7 +94,7 @@ export const ElevatorDial: React.FC<{ n: number; total: number; title: string; s
 // y la placa de al lado da vuelta de SUSCRÍBASE a SUSCRITO ✓; la tarjeta 412 descansa junto a ella.
 export const KeycardLock: React.FC<{ text?: string; v?: number; dur: number }> = ({ v = 1, dur }) => {
   const f = useCurrentFrame();
-  const y = liftOut(f, dur, 14);
+  const y = v === 2 ? interpolate(f, [dur - 12, dur], [0, 600], K) : liftOut(f, dur, 14);
   if (v === 2) {
     const inn = spring({ frame: f, fps: 30, config: { damping: 16 } });
     const hits = [14, 30];
@@ -122,12 +122,12 @@ export const KeycardLock: React.FC<{ text?: string; v?: number; dur: number }> =
             <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: CL.navy, lineHeight: 1 }}>412</div>
           </div>
           {/* placa que da vuelta */}
-          <div style={{ position: "absolute", left: 380, top: -250, width: 500, height: 150, perspective: 1200 }}>
+          <div style={{ position: "absolute", left: 350, top: -215, width: 560, height: 150, perspective: 1200 }}>
             <div style={{ position: "absolute", inset: 0, transformStyle: "preserve-3d", transform: `rotateX(${flip}deg)` }}>
               {[0, 1].map((s) => (
                 <div key={s} style={{ position: "absolute", inset: 0, borderRadius: 16, background: s ? CL.navy : brass, backfaceVisibility: "hidden",
                   transform: s ? "rotateX(180deg)" : undefined, boxShadow: "0 14px 28px rgba(0,0,0,0.45)", display: "flex", alignItems: "center", justifyContent: "center",
-                  fontFamily: LABEL, fontWeight: 700, fontSize: 66, letterSpacing: 5, color: s ? CL.yellow : CL.navyDeep, whiteSpace: "nowrap" }}>{s ? "SUSCRITO ✓" : "SUSCRÍBASE"}</div>
+                  fontFamily: LABEL, fontWeight: 700, fontSize: 72, letterSpacing: 5, color: s ? CL.yellow : CL.navyDeep, whiteSpace: "nowrap" }}>{s ? "SUSCRITO ✓" : "SUSCRÍBASE"}</div>
               ))}
             </div>
           </div>
@@ -138,20 +138,20 @@ export const KeycardLock: React.FC<{ text?: string; v?: number; dur: number }> =
   const doorIn = spring({ frame: f, fps: 30, config: { damping: 17 } });
   const cardX = interpolate(f, [4, 26], [760, 0], { ...K, easing: Easing.out(Easing.cubic) });
   const cardRot = interpolate(f, [4, 26], [55, 0], K);
-  const cardY = interpolate(f, [34, 52], [0, 170], { ...K, easing: Easing.inOut(Easing.quad) });
+  const cardY = interpolate(f, [34, 52], [0, 95], { ...K, easing: Easing.inOut(Easing.quad) });
   const G = 54;
   const green = f >= G;
   const blink = !green && f > 26 && Math.floor(f / 5) % 2 === 0;
-  const flash = interpolate(f, [G, G + 3, G + 14], [0, 0.45, 0], K);
+  const flash = interpolate(f, [G, G + 3, G + 14], [0, 0.18, 0], K);
   const handle = interpolate(f, [G + 4, G + 14], [0, 30], { ...K, easing: Easing.out(Easing.back(1.6)) });
   const open = interpolate(f, [G + 16, G + 40], [0, 1], { ...K, easing: Easing.out(Easing.cubic) });
   return (
     <AbsoluteFill style={{ transform: `translateY(${y}px)` }}>
       <AbsoluteFill style={{ background: "linear-gradient(270deg, rgba(19,29,53,0.55) 0%, rgba(19,29,53,0) 50%)" }} />
       {/* luz cálida que sale por la puerta entreabierta */}
-      <div style={{ position: "absolute", left: 1030, top: 0, bottom: 0, width: 30 + open * 90, opacity: open,
+      <div style={{ position: "absolute", left: 1150, top: 0, bottom: 0, width: 30 + open * 90, opacity: open,
         background: "linear-gradient(90deg, rgba(255,214,140,0) 0%, rgba(255,214,140,0.85) 70%, #FFE2A6 100%)", filter: "blur(6px)" }} />
-      <div style={{ position: "absolute", left: 1060, top: 0, width: 900, height: 1080, perspective: 2000, transform: `translateX(${(1 - doorIn) * 900}px)` }}>
+      <div style={{ position: "absolute", left: 1180, top: 0, width: 900, height: 1080, perspective: 2000, transform: `translateX(${(1 - doorIn) * 900}px)` }}>
         <div style={{ position: "absolute", inset: 0, transformOrigin: "100% 50%", transform: `rotateY(${open * -14}deg)`,
           background: "repeating-linear-gradient(90deg, #7A4E2C 0 46px, #6E4426 46px 92px)",
           boxShadow: "-30px 0 50px rgba(0,0,0,0.45), inset 12px 0 0 rgba(255,255,255,0.08)" }}>
@@ -160,7 +160,7 @@ export const KeycardLock: React.FC<{ text?: string; v?: number; dur: number }> =
           {/* cerradura */}
           <div style={{ position: "absolute", left: 120, top: 360, width: 330, height: 640 }}>
             <div style={{ position: "absolute", inset: 0, borderRadius: 36, background: brass, boxShadow: "0 26px 50px rgba(0,0,0,0.55), inset 0 3px 0 rgba(255,255,255,0.45)" }} />
-            <div style={{ position: "absolute", left: 30, top: 44, width: 270, height: 120, borderRadius: 12, background: "#0E1410", boxShadow: "inset 0 4px 10px rgba(0,0,0,0.8)",
+            <div style={{ position: "absolute", left: 30, top: 28, width: 270, height: 120, borderRadius: 12, background: "#0E1410", boxShadow: "inset 0 4px 10px rgba(0,0,0,0.8)",
               display: "flex", alignItems: "center", justifyContent: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 44, letterSpacing: 2, whiteSpace: "nowrap",
               color: green ? "#5BE37D" : "#E25A4C", textShadow: green ? "0 0 14px #5BE37D" : "0 0 10px #E25A4C" }}>{green ? "SUSCRITO" : "SUSCRÍBASE"}</div>
             <div style={{ position: "absolute", left: 140, top: 190, width: 50, height: 50, borderRadius: 25, background: green ? "#3FD267" : blink ? "#F04A3A" : "#7A2A22",
@@ -203,15 +203,15 @@ export const PhoneMessage: React.FC<{ text: string; v?: number; dur: number }> =
     return (
       <AbsoluteFill style={{ opacity: o }}>
         <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(19,29,53,0.55) 0%, rgba(19,29,53,0) 45%)" }} />
-        <div style={{ position: "absolute", left: 90, top: 640, width: 1180, height: 380, transform: `translateX(${(1 - inn) * -1300}px) rotate(-2deg)` }}>
+        <div style={{ position: "absolute", left: 90, top: 690, width: 1180, height: 380, transform: `translateX(${(1 - inn) * -1300}px) rotate(-2deg)` }}>
           <div style={{ position: "absolute", left: -20, top: -16, right: -20, bottom: -24, borderRadius: 14, background: "linear-gradient(180deg, #7A2E26, #5A1F19)", boxShadow: "0 30px 60px rgba(0,0,0,0.5)" }} />
           <div style={{ position: "absolute", inset: 0, background: CL.white, borderRadius: 6, transformOrigin: "0% 100%",
             transform: `rotate(${tear * -9}deg) translateY(${tear * -40}px) scale(${1 + tear * 0.05})`,
-            backgroundImage: "repeating-linear-gradient(0deg, transparent 0 74px, #C9D3E6 74px 77px)", boxShadow: tear > 0 ? "0 20px 40px rgba(0,0,0,0.4)" : "none" }}>
+            backgroundImage: "repeating-linear-gradient(0deg, transparent 0 74px, #C9D3E6 74px 77px)", boxShadow: tear > 0 ? "0 20px 40px rgba(0,0,0,0.4), inset 0 0 40px rgba(120,100,70,0.22)" : "inset 0 0 40px rgba(120,100,70,0.22), inset 0 -6px 0 rgba(0,0,0,0.06)" }}>
             <div style={{ position: "absolute", left: 40, top: 22, fontFamily: LABEL, fontWeight: 600, fontSize: 30, letterSpacing: 8, color: CL.brass }}>LIBRO DE HUÉSPEDES · RECEPCIÓN</div>
             <div style={{ position: "absolute", left: 40, top: 110, right: 40, fontFamily: HAND, fontWeight: 700, fontSize: 108, lineHeight: 1.1, color: CL.navy, whiteSpace: "nowrap",
               clipPath: `inset(-20px ${(1 - p) * 100}% -30px 0)` }}>{text}</div>
-            <div style={{ position: "absolute", left: 40, top: 280, fontFamily: LABEL, fontWeight: 500, fontSize: 36, letterSpacing: 4, color: CL.ink, opacity: interpolate(f, [W1, W1 + 10], [0, 1], K) }}>CONTÉSTEME ABAJO, EN LOS COMENTARIOS</div>
+            <div style={{ position: "absolute", left: 40, top: 280, fontFamily: LABEL, fontWeight: 500, fontSize: 44, letterSpacing: 4, color: CL.ink, opacity: interpolate(f, [W1, W1 + 10], [0, 1], K) }}>CONTÉSTEME ABAJO, EN LOS COMENTARIOS</div>
           </div>
           {/* pluma */}
           <div style={{ position: "absolute", left: 40 + p * 1060, top: -40 + Math.sin(f / 2) * (p < 1 ? 6 : 0), width: 26, height: 210, transformOrigin: "50% 100%",
@@ -247,12 +247,12 @@ export const PhoneMessage: React.FC<{ text: string; v?: number; dur: number }> =
           </div>
         ))}
         {/* recado */}
-        <div style={{ position: "absolute", left: 120, top: 30 + fall, width: 1160, height: 250, background: "#F9DDE2", borderRadius: 6,
+        <div style={{ position: "absolute", left: 80, top: 30 + fall, width: 1240, height: 250, background: "#F9DDE2", borderRadius: 6,
           transform: `rotate(${-2.5 + settle * 0.3}deg)`, boxShadow: "0 22px 40px rgba(0,0,0,0.5)", padding: "26px 44px" }}>
           <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 32, letterSpacing: 6, color: "#A3324A", borderBottom: "3px solid #A3324A", paddingBottom: 8 }}>MIENTRAS USTED NO ESTABA · HAB. 412</div>
-          <div style={{ fontFamily: MONO, fontWeight: 700, fontSize: text.length > 30 ? 62 : 72, color: CL.navy, marginTop: 34, whiteSpace: "nowrap" }}>{text}</div>
-          <div style={{ position: "absolute", right: 36, top: 64, transform: `rotate(-12deg) scale(${st})`, opacity: stO, border: `7px solid ${CL.red}`, borderRadius: 10,
-            padding: "4px 20px", fontFamily: LABEL, fontWeight: 700, fontSize: 42, letterSpacing: 5, color: CL.red, background: "rgba(249,221,226,0.7)" }}>COMENTARIOS</div>
+          <div style={{ fontFamily: MONO, fontWeight: 700, fontSize: text.length > 24 ? 54 : 64, color: CL.navy, marginTop: 34, whiteSpace: "nowrap", maxWidth: 1000 }}>{text}</div>
+          <div style={{ position: "absolute", right: -30, top: -34, transform: `rotate(-12deg) scale(${st})`, opacity: stO, border: `7px solid ${CL.red}`, borderRadius: 10,
+            padding: "4px 20px", fontFamily: LABEL, fontWeight: 700, fontSize: 34, letterSpacing: 5, color: CL.red, background: "rgba(249,221,226,0.7)" }}>COMENTARIOS</div>
         </div>
       </div>
     </AbsoluteFill>
@@ -268,9 +268,9 @@ export const BlindRecap: React.FC<{ items: string[]; marks: number[]; srcs?: str
   const N = items.length;
   const mk = [...marks].sort((a, b) => a - b);
   for (let i = 1; i < N; i++) mk[i] = Math.max(mk[i] ?? 0, (mk[i - 1] ?? 0) + 8);
-  const H = 100, G = 6, top = (1080 - (N * H + (N - 1) * G)) / 2 + 30;
-  const inn = interpolate(f, [0, 18], [0, 1], { ...K, easing: Easing.out(Easing.cubic) });
-  const waveT = dur - 40;
+  const H = 92, G = 5, top = (1080 - (N * H + (N - 1) * G)) / 2 + 30;
+  const inn = interpolate(f, [0, 10], [0, 1], { ...K, easing: Easing.out(Easing.cubic) });
+  const waveT = dur - 56; // la ola termina 14+14 cuadros antes del corte: último cuadro quieto
   return (
     <AbsoluteFill style={{ transform: `translateY(${y}px)` }}>
       <AbsoluteFill style={{ overflow: "hidden", background: CL.navyDeep }}>
@@ -287,7 +287,7 @@ export const BlindRecap: React.FC<{ items: string[]; marks: number[]; srcs?: str
       ))}
       {items.map((t, i) => {
         const m = mk[i];
-        const drop = interpolate(f, [i * 1.5, i * 1.5 + 12], [0, 1], { ...K, easing: Easing.out(Easing.cubic) });
+        const drop = interpolate(f, [i * 3, i * 3 + 12], [0, 1], { ...K, easing: Easing.out(Easing.cubic) });
         let a = interpolate(f, [m - 6, m + 8], [0, 180], { ...K, easing: Easing.inOut(Easing.cubic) });
         if (f >= waveT) a += interpolate(f, [waveT + i * 2, waveT + i * 2 + 14], [0, 360], { ...K, easing: Easing.inOut(Easing.cubic) });
         const back = Math.cos((a * Math.PI) / 180) < 0;
