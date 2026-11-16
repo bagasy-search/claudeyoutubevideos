@@ -146,7 +146,7 @@ export const Kinetic: React.FC<{ lines: string[]; accent?: number; dur: number }
 
 export const LowerThird: React.FC<{ title: string; sub: string; dur: number }> = ({ title, sub, dur }) => {
   const f = useCurrentFrame(); const o = useOut(dur, 10);
-  const w = interpolate(f, [0, 18], [0, 1], { extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+  const w = interpolate(f, [0, 20], [0, 1], { extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) }); // v4: se abre de verdad
   return (
     <AbsoluteFill style={{ opacity: o }}>
       {/* len14c v2 (EVALUADOR): placa oscura sólida, subtítulo 38 px, entra abriéndose desde la barra */}
@@ -154,7 +154,7 @@ export const LowerThird: React.FC<{ title: string; sub: string; dur: number }> =
         <div style={{ width: 12, background: "#E0B85A", borderRadius: "8px 0 0 8px", transform: `scaleY(${w})` }} />
         <div style={{ clipPath: `inset(0 ${100 - w * 100}% 0 0)`, background: "rgba(18,14,10,0.88)", padding: "14px 34px 16px 26px", borderRadius: "0 12px 12px 0" }}>
           <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 76, lineHeight: 1.05, color: C.white }}>{title}</div>
-          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 46, letterSpacing: 1, color: "#FFF4DC", opacity: interpolate(f, [10, 22], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>{sub}</div>
+          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 46, letterSpacing: 1, color: "#FFF4DC", opacity: interpolate(f, [16, 26], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>{sub}</div>
         </div>
       </div>
     </AbsoluteFill>
