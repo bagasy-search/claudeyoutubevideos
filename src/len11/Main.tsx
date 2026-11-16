@@ -53,7 +53,7 @@ const OV: any[] = (() => {
   const out: any[] = [];
   for (const o of src) {
     const last = [...out].reverse().find((x) => x.type === "progress");
-    if (o.type === "progress" && last && last.n === o.n && o.from - (last.from + last.dur) <= 3000) // v6: una sola insignia por paso (sin salidas y reentradas) { last.dur = o.from + o.dur - last.from; continue; }
+    if (o.type === "progress" && last && last.n === o.n && o.from - (last.from + last.dur) <= 3000) { last.dur = o.from + o.dur - last.from; continue; } // v6: una sola insignia por paso (sin salidas y reentradas)
     out.push({ ...o });
   }
   const pr = out.filter((x) => x.type === "progress");
