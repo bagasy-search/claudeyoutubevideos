@@ -138,7 +138,7 @@ export const KeycardLock: React.FC<{ text?: string; v?: number; dur: number }> =
   const doorIn = spring({ frame: f, fps: 30, config: { damping: 17 } });
   const cardX = interpolate(f, [4, 26], [760, 0], { ...K, easing: Easing.out(Easing.cubic) });
   const cardRot = interpolate(f, [4, 26], [55, 0], K);
-  const cardY = interpolate(f, [34, 52], [0, 95], { ...K, easing: Easing.inOut(Easing.quad) });
+  const cardY = interpolate(f, [34, 52], [0, 340], { ...K, easing: Easing.inOut(Easing.quad) });
   const G = 54;
   const green = f >= G;
   const blink = !green && f > 26 && Math.floor(f / 5) % 2 === 0;
@@ -232,7 +232,7 @@ export const PhoneMessage: React.FC<{ text: string; v?: number; dur: number }> =
   const st = interpolate(f, [ST, ST + 6], [2.6, 1], { ...K, easing: Easing.in(Easing.cubic) });
   const stO = interpolate(f, [ST, ST + 3], [0, 1], K);
   const shake = f >= ST + 6 && f < ST + 12 ? (f % 2 ? 4 : -4) : 0;
-  const L = 260, T = 600, CW = 1400, CH = 440;
+  const L = 260, T = 660, CW = 1400, CH = 440;
   return (
     <AbsoluteFill style={{ transform: `translateY(${y}px)` }}>
       <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(19,29,53,0.6) 0%, rgba(19,29,53,0) 50%)" }} />
