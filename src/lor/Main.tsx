@@ -14,13 +14,13 @@ const Body: React.FC<{ s: any; cu: Cues; esc: Record<string, React.FC<any>> }> =
   if (s.k === "E") { const K = esc[s.name]; return K ? <K dur={d} {...(s.props || {})} /> : null; }
   if (s.k === "C") switch (s.comp) {
     case "card": return <B.RecipeCard card={cu.CARDS[s.key]} look={L} dur={d} />;
-    case "trick": return <B.TrickTitle n={s.n} N={s.N} name={s.name} look={L} dur={d} label={s.label} />;
+    case "trick": { const car = cu.SHOTS.find((x: any) => x.comp === "carousel"); const it = car && car.items[s.n - 1]; return <B.TrickTitle n={s.n} N={s.N} name={s.name} look={L} dur={d} label={s.label} src={it && it.title === s.name ? it.src : undefined} />; }
     case "carousel": return <B.Carousel items={s.items} look={L} head={s.head} dur={d} />;
     case "map": return <B.MapIowa look={L} pins={s.pins} title={s.title} dur={d} />;
     case "book": return <B.BookCTA page={s.page} qr={s.qr} look={L} head={s.head} sub={s.sub} qrAt={s.qrAt} dur={d} />;
     case "letters": return <B.Letters bg={s.bg} notes={s.notes} head={s.head} dur={d} />;
     case "close": return <B.Close cover={s.cover} qr={s.qr} look={L} head={s.head} sub={s.sub} question={s.question} qAt={s.qAt} dur={d} />;
-    case "photo": return <B.Photo src={s.src} seed={s.id} dur={d} />;
+    case "photo": { const car = cu.SHOTS.find((x: any) => x.comp === "carousel"); if (car && /e_recap/.test(s.src)) return <B.Carousel items={car.items} look={L} head={car.head} dur={d} />; return <B.Photo src={s.src} seed={s.id} dur={d} />; }
   }
   return null;
 };

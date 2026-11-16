@@ -7,7 +7,7 @@ const S = (n: string) => staticFile(`ole15b/g/${n}.png`);
 const FULL: React.CSSProperties = { position: "absolute", left: 0, top: 0, width: 1920, height: 1080, objectFit: "cover" };
 const EASE = Easing.bezier(0.45, 0, 0.2, 1);
 const tag = (o: number, y: number, t: string, bg: string): React.ReactNode => (
-  <div style={{ position: "absolute", right: 70, top: y, opacity: o, transform: `translateY(${(1 - o) * -20}px)`, background: bg, color: "#fff", fontFamily: "Georgia, serif", fontWeight: 700, fontSize: 44, letterSpacing: 2, padding: "12px 26px", borderRadius: 6, boxShadow: "0 6px 20px rgba(0,0,0,.45)" }}>{t}</div>
+  <div style={{ position: "absolute", right: 70, top: y, opacity: o, transform: `translateY(${(1 - o) * -20}px)`, background: bg, color: "#fff", fontFamily: "Georgia, serif", fontWeight: 700, fontSize: 62, letterSpacing: 2, padding: "16px 34px", borderRadius: 6, boxShadow: "0 6px 20px rgba(0,0,0,.45)" }}>{t}</div>
 );
 
 // 1 · La lupa: un círculo de aumento recorre la bandeja de «stew meat» mostrando los pedazos dispares; en «chuck» la lupa se abre hasta llenar el cuadro con los cubos parejos
@@ -51,7 +51,7 @@ export const Batch: React.FC<{ dur: number; fSpot: number }> = ({ dur, fSpot }) 
           <div style={{ ...FULL, transform: `scale(${z})` }}><Img src={S("e_batch_crowd")} style={FULL} /></div>
         </div>
       </>}
-      {tag(interpolate(f, [fSpot + 22, fSpot + 34], [0, 1], CL), 80, "ONE LAYER · ROOM AROUND IT", "#8E3B12")}
+      {tag(interpolate(f, [4, 14], [0, 1], CL), 80, "ONE LAYER · ROOM AROUND IT", "#8E3B12")}
     </AbsoluteFill>
   );
 };
@@ -69,7 +69,13 @@ export const Coffee: React.FC<{ dur: number; fLift: number }> = ({ dur, fLift })
       <div style={{ ...FULL, WebkitMaskImage: m, maskImage: m }}>
         <div style={{ ...FULL, transform: `rotate(${rot}deg) scale(${z * 1.05})` }}><Img src={S("e_coffee_lift")} style={FULL} /></div>
       </div>
-      {tag(interpolate(f, [8, 20], [0, 1], CL), 80, "1 CUP STRONG BLACK COFFEE", "#3E2A1A")}
+      {(() => { const t0 = 2, t1 = Math.max(t0 + 20, fLift - 4); const g = interpolate(f, [t0, t0 + 10], [0, 1], CL), e = interpolate(f, [t1, t1 + 8], [0, 1], CL); if (e >= 1) return null;
+        const top = -40 + 620 * e, bot = 40 + 520 * g; const wob = Math.sin(f / 2.3) * 5;
+        return <>
+          <div style={{ position: "absolute", left: 930 + wob, top, width: 46 - 16 * e, height: Math.max(0, bot - top), borderRadius: 23, background: "linear-gradient(90deg,#1a0f07,#4a2a14 45%,#160c05)", boxShadow: "0 0 18px rgba(0,0,0,.35)" }} />
+          {g > 0.9 && Array.from({ length: 7 }).map((_, i) => { const ph = ((f * 1.7 + i * 13) % 22) / 22; const a = (i / 7) * Math.PI - Math.PI; return <div key={i} style={{ position: "absolute", left: 950 + Math.cos(a) * (40 + 90 * ph), top: 560 + Math.sin(a) * 70 * ph + 120 * ph * ph, width: 14, height: 14, borderRadius: 7, background: "#2b1709", opacity: (1 - ph) * (1 - e) }} />; })}
+        </>; })()}
+      {tag(interpolate(f, [4, 14], [0, 1], CL), 80, "1 CUP STRONG BLACK COFFEE", "#3E2A1A")}
     </AbsoluteFill>
   );
 };
@@ -86,7 +92,7 @@ export const Simmer: React.FC<{ dur: number; fTop: number }> = ({ dur, fTop }) =
       <div style={{ ...FULL, transformOrigin: "50% 50%", transform: `rotateX(${ang}deg) scale(${z})`, filter: `brightness(${1 - Math.abs(ang) / 160})` }}>
         <Img src={S(side ? "e_simmer_side" : "e_simmer_top")} style={FULL} />
       </div>
-      {tag(interpolate(f, [fTop + 22, fTop + 34], [0, 1], CL), 80, "180–190 °F · LAZY BUBBLES", "#8E3B12")}
+      {tag(interpolate(f, [4, 14], [0, 1], CL), 80, "LAZY BUBBLES · LID CRACKED", "#8E3B12")}
     </AbsoluteFill>
   );
 };
@@ -111,7 +117,7 @@ export const Cool: React.FC<{ dur: number; fSplit: number }> = ({ dur, fSplit })
           </div>
         );
       })}
-      {tag(interpolate(f, [fSplit + 32, fSplit + 44], [0, 1], CL), 80, "2–3 INCHES DEEP · FRIDGE IN 2 HOURS", "#2F5D7A")}
+      {tag(interpolate(f, [4, 14], [0, 1], CL), 80, "2–3 INCHES DEEP", "#8E3B12")}
     </AbsoluteFill>
   );
 };

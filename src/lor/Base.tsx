@@ -54,14 +54,14 @@ export const Clip: React.FC<{ src: string; from?: number; seed: number; dur: num
 // (8) foto antigua como objeto: copia en papel con borde blanco apoyada sobre la mesa real
 export const Vintage: React.FC<{ src: string; table: string; seed: number; dur: number }> = ({ src, table, seed, dur }) => {
   const f = useCurrentFrame();
-  const inn = spring({ frame: f, fps: 30, config: { damping: 17, mass: 0.8 } });
+  const inn = spring({ frame: f + 3, fps: 30, config: { damping: 11, mass: 0.9, stiffness: 120 } });
   const rot = (r01(seed, 5) - 0.5) * 7;
   const z = 1 + 0.06 * ease(f / Math.max(1, dur));
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <Img src={staticFile(table)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.05 + 0.03 * f / Math.max(1, dur)})` }} />
-      <div style={{ position: "absolute", left: 960 - 690, top: 540 - 400, width: 1380, height: 800, background: "#F7F3EA", padding: 26, boxShadow: "0 30px 60px rgba(0,0,0,0.45)",
-        transform: `translateY(${(1 - inn) * 260}px) rotate(${rot * inn}deg) scale(${z})` }}>
+      <div style={{ position: "absolute", left: 960 - 640, top: 190, width: 1280, height: 740, background: "#F7F3EA", padding: 24, boxShadow: `0 ${12 + 30 * inn}px ${30 + 40 * inn}px rgba(0,0,0,${0.25 + 0.25 * inn})`,
+        transform: `translateY(${(1 - inn) * -1150}px) rotate(${rot * inn + (1 - inn) * -14}deg) scale(${z})` }}>
         <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </div>
     </AbsoluteFill>
@@ -88,18 +88,19 @@ const Paper: React.FC<{ look: Look; children: React.ReactNode; dur: number }> = 
   </AbsoluteFill>);
 };
 
+const Num: React.FC<{ t: string }> = ({ t }) => <>{t.split(/(\d+(?:[\/.\-–]\d+)?)/).map((p, i) => /\d/.test(p) ? <span key={i} style={{ fontFamily: SERIF, fontWeight: 700 }}>{p}</span> : p)}</>;
 export type Card = { title: string; serves: string; temp: string; time: string; ing: string[]; steps: string[]; note: string };
 // tarjeta de receta a pantalla completa (≥8 s): todo lo que hace falta para copiarla
 export const RecipeCard: React.FC<{ card: Card; look: Look; dur: number }> = ({ card, look, dur }) => {
   const f = useCurrentFrame();
   // título y datos ya están en el cuadro 0 (nada de hoja vacía); las líneas entran rápido de a una
-  const L = (i: number) => (i <= 1 ? 1 : interpolate(f, [i * 3, i * 3 + 6], [0, 1], CL));
+  const L = (i: number) => (i < 1 ? 1 : interpolate(f, [i * 7, i * 7 + 8], [0, 1], CL));
   const col = look.key === "church" ? "#2B2219" : C.ink;
   // alto real estimado contando los renglones partidos (columna ≈ 30 caracteres de Kalam 42 px)
   const wr = (x: string, c: number) => Math.max(1, Math.ceil(x.length / c));
-  const nIng = card.ing.reduce((a, x) => a + wr(x, 26), 0) * 61;
-  const nSt = card.steps.reduce((a, x) => a + wr(x, 27) * 56 + 8, 0);
-  const nNote = card.note ? 24 + wr(card.note, 44) * 52 : 0;
+  const nIng = card.ing.reduce((a, x) => a + wr(x, card.ing.length > 4 ? 40 : 32), 0) * (card.ing.length > 4 ? 73 : 94);
+  const nSt = 0;
+  const nNote = card.note ? 28 + wr(card.note, 50) * 68 : 0;
   const nL = (Math.max(nIng, nSt) + nNote) / 64;
   const H = 92 + 96 + 110 + nL * 64 + 120;
   // márgenes calculados para que, con la escala ZC, ningún texto quede a menos de 80 px del borde
@@ -118,18 +119,18 @@ export const RecipeCard: React.FC<{ card: Card; look: Look; dur: number }> = ({ 
           {look.stamp && <div style={{ flexShrink: 0, border: `5px solid ${C.red}`, color: C.red, fontFamily: SANS, fontWeight: 600, fontSize: 24, letterSpacing: 2, padding: "8px 14px", transform: "rotate(-6deg)", opacity: 0.85, marginTop: 10, whiteSpace: "nowrap" }}>{look.stamp}</div>}
         </div>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "10px 18px", marginTop: 16 }}>
-          {[card.serves && `Makes: ${card.serves}`, card.temp, card.time].filter(Boolean).map((x, i) => (
-            <span key={i} style={{ fontFamily: SANS, fontWeight: 600, fontSize: 32, color: "#fff", background: C.red, padding: "6px 16px", borderRadius: 10, whiteSpace: "nowrap" }}>{x}</span>))}
+          {[card.serves, card.temp, card.time].filter(Boolean).map((x, i) => (
+            <span key={i} style={{ fontFamily: SANS, fontWeight: 600, fontSize: 38, color: "#fff", background: C.red, padding: "8px 20px", borderRadius: 10, whiteSpace: "nowrap", opacity: L(1 + i) }}>{x}</span>))}
         </div>
         <div style={{ display: "flex", gap: 54, marginTop: 30 }}>
           <div style={{ flex: 1.1, minWidth: 0 }}>
-            {card.ing.map((x, i) => (<div key={i} style={{ fontFamily: HAND, fontSize: card.ing.length > 6 ? 42 : 46, lineHeight: 1.45, opacity: L(2 + i) }}>• {x}</div>))}
+            {card.ing.map((x, i) => (<div key={i} style={{ fontFamily: HAND, fontWeight: 700, fontSize: card.ing.length > 4 ? 56 : 72, lineHeight: 1.3, opacity: L(2 + i), transform: `translateX(${(1 - L(2 + i)) * -60}px)` }}>• <Num t={x} /></div>))}
           </div>
-          {card.steps.length > 0 && <div style={{ flex: 1, minWidth: 0 }}>
+          {false && card.steps.length > 0 && <div style={{ flex: 1, minWidth: 0 }}>
             {card.steps.map((x, i) => (<div key={i} style={{ fontFamily: HAND, fontSize: 40, lineHeight: 1.4, marginBottom: 8, color: C.pencil, opacity: L(3 + card.ing.length + i) }}>{i + 1}. {x}</div>))}
           </div>}
         </div>
-        {card.note && <div style={{ fontFamily: HAND, fontSize: 42, fontWeight: 700, color: C.red, marginTop: 24, opacity: L(5 + card.ing.length + card.steps.length) }}>{card.note}</div>}
+        {card.note && <div style={{ fontFamily: HAND, fontSize: 56, fontWeight: 700, color: C.red, marginTop: 28, opacity: L(4 + card.ing.length) }}>{card.note}</div>}
       </div>
      </AbsoluteFill>
     </Paper>
@@ -137,7 +138,7 @@ export const RecipeCard: React.FC<{ card: Card; look: Look; dur: number }> = ({ 
 };
 
 // (3)+(2) apertura de capítulo: la tarjeta entra a la mesa como objeto + barra "trick n of N"
-export const TrickTitle: React.FC<{ n: number; N: number; name: string; look: Look; dur: number; label: string }> = ({ n, N, name, look, dur, label }) => {
+export const TrickTitle: React.FC<{ n: number; N: number; name: string; look: Look; dur: number; label: string; src?: string }> = ({ n, N, name, look, dur, label, src }) => {
   const f = useCurrentFrame();
   const inn = spring({ frame: f, fps: 30, config: { damping: 17, mass: 0.6, stiffness: 160 } });
   const rot = (hash(n) % 2 ? 1 : -1) * (3 + (hash(n + 7) % 4));
@@ -150,10 +151,18 @@ export const TrickTitle: React.FC<{ n: number; N: number; name: string; look: Lo
       <div style={{ position: "absolute", left: 960 - 580, top: 150, width: 1160, height: 650, overflow: "hidden", boxShadow: "0 34px 70px rgba(0,0,0,0.5)",
         transform: `translate(${(1 - inn) * 900}px, ${(1 - inn) * -80}px) rotate(${rot * inn + (1 - inn) * 18 - rot * 0.7 * p}deg) scale(${1 + 0.12 * p})` }}>
         <Img src={staticFile(look.paper)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-        <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", padding: "0 80px" }}>
+        {src && <>
+          <div style={{ position: "absolute", left: 22, top: 22, right: 22, height: 470, overflow: "hidden", background: "#000" }}>
+            <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.12 - 0.1 * p})`, transformOrigin: `${30 + (n * 9) % 40}% 50%` }} />
+          </div>
+          <div style={{ position: "absolute", left: 22, right: 22, top: 492, bottom: 0, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: HAND, fontWeight: 700, fontSize: name.length > 22 ? 78 : 96, color: C.ink, lineHeight: 1, textAlign: "center", padding: "0 40px" }}>{name}</div>
+          {!extra && (() => { const st = spring({ frame: f - 6, fps: 30, config: { damping: 9, mass: 0.7, stiffness: 140 } }); return (
+            <div style={{ position: "absolute", left: 50, top: 46, width: 170, height: 170, borderRadius: 85, border: "8px solid #fff", background: C.red, color: "#fff", fontFamily: SERIF, fontWeight: 700, fontSize: 120, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: `0 ${4 + 14 * st}px ${10 + 20 * st}px rgba(0,0,0,0.5)`, opacity: st > 0.02 ? 1 : 0, transform: `scale(${2.4 - 1.4 * st}) rotate(${-12 * st}deg)` }}>{n}</div>); })()}
+        </>}
+        {!src && <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", padding: "0 80px" }}>
           {!extra && <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 190, lineHeight: 1, color: C.red, transform: `scale(${1 + 0.5 * (1 - spring({ frame: f, fps: 30, config: { damping: 11, mass: 0.6 } }))})` }}>{n}</div>}
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 100, lineHeight: 1.05, color: C.ink, marginTop: 4 }}>{name.split(" ").map((w, i) => { const s = spring({ frame: f - 4 - i * 3, fps: 30, config: { damping: 14 } }); return <span key={i} style={{ display: "inline-block", opacity: s > 0.02 ? 1 : 0, transform: `translateY(${(1 - s) * 40}px) scale(${0.7 + 0.3 * s})`, marginRight: 22 }}>{w}</span>; })}</div>
-        </div>
+        </div>}
       </div>
       {!extra && <div style={{ position: "absolute", left: 320, right: 320, bottom: 70, background: "rgba(20,17,13,0.82)", borderRadius: 22, padding: "16px 34px 22px" }}>
         <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 50, color: "#fff", marginBottom: 12, textAlign: "center", letterSpacing: 1 }}>{label.toUpperCase()} {n} OF {N}</div>
@@ -182,6 +191,7 @@ export const Carousel: React.FC<{ items: { title: string; src: string }[]; look:
       <div style={{ position: "absolute", top: 34, left: 0, right: 0, display: "flex", justifyContent: "center" }}>
         <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 84, color: "#fff", background: "rgba(20,17,13,0.72)", padding: "4px 46px 10px", borderRadius: 20 }}>{head}</div>
       </div>
+      {(() => { const k = items.findIndex((_, i) => f >= i * step && f < i * step + step + 12); return k > 0 ? <AbsoluteFill style={{ zIndex: 60, background: "rgba(10,8,6,0.55)", opacity: Math.min(1, (f - k * step) / 5) }} /> : null; })()}
       {items.map((c, i) => {
         const t0 = i * step; if (f < t0) return null;
         const a = spring({ frame: f - t0, fps: 30, config: { damping: 15, mass: 0.7 } });
@@ -198,7 +208,7 @@ export const Carousel: React.FC<{ items: { title: string; src: string }[]; look:
                 <Img src={staticFile(c.src)} style={{ width: "100%", height: IH, objectFit: "cover", display: "block" }} />
                 <div style={{ position: "absolute", left: 10, top: 10, width: 58, height: 58, borderRadius: 29, background: C.red, color: "#fff", fontFamily: SERIF, fontWeight: 700, fontSize: 38, display: "flex", alignItems: "center", justifyContent: "center" }}>{i + 1}</div>
               </div>
-              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: cols === 3 ? 40 : cols === 4 ? 34 : 31, color: C.ink, textAlign: "center", marginTop: 8, lineHeight: 1.08, height: 88, display: "flex", alignItems: "center", justifyContent: "center" }}>{c.title}</div>
+              <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: cols === 3 ? 44 : cols === 4 ? 40 : 34, color: C.ink, textAlign: "center", marginTop: 8, lineHeight: 1.08, height: 88, display: "flex", alignItems: "center", justifyContent: "center" }}>{c.title}</div>
             </div></div>);
       })}
     </AbsoluteFill>
@@ -261,8 +271,8 @@ export const Letters: React.FC<{ bg: string; notes: { t: string; at: number }[];
       <div style={{ position: "absolute", top: 46, left: 0, right: 0, display: "flex", justifyContent: "center" }}>
         <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 80, color: "#fff", background: "rgba(20,17,13,0.78)", padding: "4px 44px 10px", borderRadius: 20 }}>{head}</div>
       </div>
-      {notes.map((n, i) => { const s = spring({ frame: f - n.at, fps: 30, config: { damping: 16 } }); return (
-        <div key={i} style={{ position: "absolute", left: notes.length === 1 ? 460 : 260 + (i % 2) * 720, top: notes.length === 1 ? 360 : 260 + Math.floor(i / 2) * 330, width: notes.length === 1 ? 1000 : 640, background: "#FFFDF6", padding: "34px 44px", boxShadow: "0 22px 50px rgba(0,0,0,0.5)",
+      {notes.map((n0, i) => { const n = { ...n0, at: i === 0 ? Math.min(n0.at, 8) : n0.at }; const s = spring({ frame: f - n.at, fps: 30, config: { damping: 13 } }); return (
+        <div key={i} style={{ position: "absolute", left: notes.length === 1 ? 460 : 260 + (i % 2) * 720, top: notes.length === 1 ? 360 : 260 + Math.floor(i / 2) * 330, width: notes.length === 1 ? 1000 : 640, background: "#FFFDF6", padding: "34px 44px", boxShadow: "0 30px 60px rgba(0,0,0,0.65), 0 6px 14px rgba(0,0,0,0.4)",
           fontFamily: HAND, fontSize: notes.length === 1 ? 72 : 54, fontWeight: 700, color: C.ink, lineHeight: 1.2, opacity: s > 0.02 ? 1 : 0, transform: `translateY(${(1 - s) * 300}px) rotate(${(i % 2 ? 2 : -2) + (1 - s) * 14}deg) scale(${1 + 0.06 * ease((f - n.at) / Math.max(1, dur))})` }}>“{n.t}”</div>); })}
     </AbsoluteFill>
   );
@@ -275,15 +285,25 @@ export const Data: React.FC<{ big: string; line: string; src: string; dur: numbe
   const m = big.match(/^(\d+)(.*)$/); const v = m ? parseInt(m[1]) : 0;
   // la cifra llega al valor real en 8 cuadros: nunca queda leíble un número equivocado
   const cnt = m && v >= 20 ? Math.round(v * (0.9 + 0.1 * ease(f / 8))) + m[2].replace(/^ (°)/, "$1") : big.replace(/ °/, "°");
-  const short = /USDA/.test(src) ? "USDA" : src;
+  const deg = /°F/.test(big); const dv = deg ? parseInt(big) : 0; const sw = ease(f / 22);
+  const A = (v: number) => (-120 + 240 * Math.min(1, Math.max(0, (v - 40) / 180))) * Math.PI / 180;
+  const ang = (-120 + 240 * Math.min(1, Math.max(0, (dv - 40) / 180)) * sw);
   return (<AbsoluteFill>
     <div style={{ position: "absolute", left: 50, top: 190, background: "rgba(255,250,240,0.97)", padding: "22px 38px", width: 620, boxShadow: "0 16px 40px rgba(0,0,0,0.4)", transform: `scale(${(0.6 + 0.4 * s) * out * (1 + 0.025 * Math.sin(f / 16))})`, transformOrigin: "0% 0%" }}>
       <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 20 }}>
         <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: cnt.length <= 6 ? 130 : cnt.length <= 9 ? 104 : 76, color: C.red, lineHeight: 1.02, whiteSpace: cnt.length <= 9 ? "nowrap" : "normal" }}>{cnt}</div>
       </div>
       <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 46, color: C.ink, marginTop: 8, lineHeight: 1.15 }}>{line.replace(/ °/g, "°")}</div>
-      <div style={{ display: "inline-block", fontFamily: SANS, fontWeight: 600, fontSize: 26, color: "#fff", background: C.ink, padding: "4px 14px", borderRadius: 8, marginTop: 14 }}>{short}</div>
-    </div></AbsoluteFill>);
+    </div>
+    {deg && <svg width={300} height={300} viewBox="-150 -150 300 300" style={{ position: "absolute", left: 790, top: 190, transform: `scale(${(0.6 + 0.4 * s) * out})`, filter: "drop-shadow(0 14px 24px rgba(0,0,0,0.5))" }}>
+      <circle r={140} fill="#F4EFE4" stroke="#8a8a8a" strokeWidth={10} />
+      {Array.from({ length: 13 }, (_, i) => { const a = (-120 + i * 20) * Math.PI / 180; return <line key={i} x1={Math.sin(a) * 108} y1={-Math.cos(a) * 108} x2={Math.sin(a) * 126} y2={-Math.cos(a) * 126} stroke={C.ink} strokeWidth={i % 3 ? 3 : 6} />; })}
+      <path d={`M ${Math.sin(A(dv - 8)) * 96} ${-Math.cos(A(dv - 8)) * 96} A 96 96 0 0 1 ${Math.sin(A(dv + 8)) * 96} ${-Math.cos(A(dv + 8)) * 96}`} stroke={C.red} strokeWidth={16} fill="none" opacity={sw} />
+      <line x1={0} y1={18} x2={0} y2={-112} stroke={C.red} strokeWidth={7} strokeLinecap="round" transform={`rotate(${ang})`} />
+      <circle r={14} fill={C.ink} />
+      <text y={70} textAnchor="middle" fontFamily={SANS} fontWeight={600} fontSize={30} fill={C.ink}>°F</text>
+    </svg>}
+    </AbsoluteFill>);
 };
 
 // (10) resumen: tira con el número y lo que se dice, mientras se repasan las 30
@@ -301,16 +321,16 @@ export const RecapLine: React.FC<{ n: number; N: number; name: string; text: str
 
 // cierre: el libro cerrado sobre la mesa + QR + pregunta para los comentarios
 export const Close: React.FC<{ cover: string; qr: string; look: Look; head: string; sub?: string; question?: string; qAt?: number; dur: number }> = ({ cover, qr, look, head, sub, question, qAt = 9999, dur }) => {
-  const f = useCurrentFrame(); const inn = spring({ frame: f, fps: 30, config: { damping: 18 } }); const q = spring({ frame: f - qAt, fps: 30, config: { damping: 16 } });
+  const f = useCurrentFrame(); const inn = spring({ frame: f - 6, fps: 30, config: { damping: 14, mass: 0.8 } }); const q = spring({ frame: f - qAt, fps: 30, config: { damping: 16 } });
   const cam = 1 + 0.12 * ease(f / Math.max(1, dur));
   // la foto del libro va a pantalla completa (no como rectángulo pegado sobre otra mesa); QR siempre dentro del cuadro
   return (<AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
    <AbsoluteFill style={{ transform: `scale(${cam})`, transformOrigin: "40% 55%" }}>
     <Img src={staticFile(cover)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
    </AbsoluteFill>
-    <div style={{ position: "absolute", left: 1250, top: 110, width: 470, opacity: Math.min(1, inn * 1.4), transformOrigin: "50% 50%", transform: `scale(${0.88 + 0.12 * inn}) rotate(${2 - 2 * ease(f / Math.max(1, dur))}deg)` }}>
+    <div style={{ position: "absolute", left: 1190, top: 80, width: 560, transformOrigin: "50% 50%", transform: `translateX(${(1 - inn) * 900}px) rotate(${(1 - inn) * 14 + 2 - 2 * ease(f / Math.max(1, dur))}deg)` }}>
       <div style={{ background: "#fff", padding: 20, boxShadow: "0 20px 50px rgba(0,0,0,0.45)" }}><Img src={staticFile(qr)} style={{ width: "100%", display: "block" }} /></div>
-      {sub && <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 27, color: C.ink, background: "#FFF3D6", padding: "10px 22px", whiteSpace: "nowrap", boxShadow: "0 10px 26px rgba(0,0,0,0.4)", marginTop: 20, textAlign: "center" }}>{sub}</div>}
+      {sub && <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 46, lineHeight: 1.15, color: C.ink, background: "#FFF3D6", padding: "14px 22px", boxShadow: "0 10px 26px rgba(0,0,0,0.4)", marginTop: 20, textAlign: "center" }}>{sub.replace(".vercel.app", "|.vercel.app").split("|").map((x, i) => <div key={i}>{x}</div>)}</div>}
     </div>
     {question && <div style={{ position: "absolute", left: 140, right: 140, bottom: 70, textAlign: "center", background: "#fff", borderRadius: 34, padding: "26px 40px", fontFamily: HAND, fontWeight: 700, fontSize: 66, color: C.ink, boxShadow: "0 18px 44px rgba(0,0,0,0.45)", opacity: q > 0.02 ? 1 : 0, transform: `translateY(${(1 - q) * 300 + 6 * Math.sin(f / 20)}px) scale(${0.85 + 0.15 * q})` }}>{question}</div>}
   </AbsoluteFill>);
@@ -322,7 +342,7 @@ export const Ask: React.FC<{ text: string; dur: number }> = ({ text, dur }) => {
   const out = interpolate(f, [dur - 6, dur - 1], [1, 0], { ...CL, easing: Easing.in(Easing.cubic) });
   return (<AbsoluteFill>
     <div style={{ position: "absolute", right: 50, top: 60, width: 760, background: "#fff", borderRadius: 40, padding: "28px 42px", boxShadow: "0 18px 44px rgba(0,0,0,0.45)", transform: `translateY(${(1 - s) * -60 + 6 * Math.sin(f / 18)}px) rotate(${1.5 * Math.sin(f / 26)}deg) scale(${(0.7 + 0.3 * s) * out * (1 + 0.03 * ease(f / Math.max(1, dur)))})`, transformOrigin: "20% 100%" }}>
-      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 36, letterSpacing: 3, color: C.red }}>TELL ME IN THE COMMENTS</div>
+      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 46, letterSpacing: 2, color: C.red }}>TELL ME IN THE COMMENTS</div>
       <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 70, color: C.ink, lineHeight: 1.1, marginTop: 8 }}>{text}</div>
       <div style={{ position: "absolute", left: 70, bottom: -34, width: 0, height: 0, borderLeft: "26px solid transparent", borderRight: "26px solid transparent", borderTop: "36px solid #fff" }} />
     </div></AbsoluteFill>);
