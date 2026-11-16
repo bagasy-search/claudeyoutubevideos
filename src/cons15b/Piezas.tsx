@@ -41,7 +41,9 @@ export const Photo: React.FC<{ src: string; seed: number; dur: number }> = ({ sr
   const kb = useKB(seed, dur);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: C.ink }}>
-      <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
+      <AbsoluteFill style={src.endsWith(".jpg") ? { transform: "scale(1.11)", transformOrigin: "0% 0%" } : undefined}>{/* SinEstrella: tapa la marca de Nano Banana abajo a la derecha */}
+        <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} />
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
