@@ -105,7 +105,7 @@ export const RecipeCard: React.FC<{ card: Card; look: Look; dur: number }> = ({ 
   // márgenes calculados para que, con la escala ZC, ningún texto quede a menos de 80 px del borde
   const ZC = 1.12, M = 960 - (960 - 80) / ZC;
   // si no entra, primero se achica (hasta 0.78) y recién después se desplaza, con margen abajo de 170 px
-  const Z0 = Math.max(0.78, Math.min(ZC, 960 / H));
+  const Z0 = Math.max(0.6, Math.min(ZC, 940 / H));
   const travel = Math.max(0, H * Z0 - 1080 + 170);
   const cy = -travel * ease((f - dur * 0.15) / (dur * 0.55));
   const cz = Z0 + 0.02 * f / Math.max(1, dur);
@@ -308,9 +308,9 @@ export const Close: React.FC<{ cover: string; qr: string; look: Look; head: stri
    <AbsoluteFill style={{ transform: `scale(${cam})`, transformOrigin: "40% 55%" }}>
     <Img src={staticFile(cover)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
    </AbsoluteFill>
-    <div style={{ position: "absolute", left: 1290, top: 110, width: 470, transform: `translateX(${(1 - inn) * 900}px) rotate(${2 - 2 * ease(f / Math.max(1, dur))}deg)` }}>
+    <div style={{ position: "absolute", left: 1250, top: 110, width: 470, opacity: Math.min(1, inn * 1.4), transformOrigin: "50% 50%", transform: `scale(${0.88 + 0.12 * inn}) rotate(${2 - 2 * ease(f / Math.max(1, dur))}deg)` }}>
       <div style={{ background: "#fff", padding: 20, boxShadow: "0 20px 50px rgba(0,0,0,0.45)" }}><Img src={staticFile(qr)} style={{ width: "100%", display: "block" }} /></div>
-      {sub && <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 30, color: C.ink, background: "#FFF3D6", padding: "10px 12px", whiteSpace: "nowrap", boxShadow: "0 10px 26px rgba(0,0,0,0.4)", marginTop: 20, textAlign: "center" }}>{sub}</div>}
+      {sub && <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 27, color: C.ink, background: "#FFF3D6", padding: "10px 22px", whiteSpace: "nowrap", boxShadow: "0 10px 26px rgba(0,0,0,0.4)", marginTop: 20, textAlign: "center" }}>{sub}</div>}
     </div>
     {question && <div style={{ position: "absolute", left: 140, right: 140, bottom: 70, textAlign: "center", background: "#fff", borderRadius: 34, padding: "26px 40px", fontFamily: HAND, fontWeight: 700, fontSize: 66, color: C.ink, boxShadow: "0 18px 44px rgba(0,0,0,0.45)", opacity: q > 0.02 ? 1 : 0, transform: `translateY(${(1 - q) * 300 + 6 * Math.sin(f / 20)}px) scale(${0.85 + 0.15 * q})` }}>{question}</div>}
   </AbsoluteFill>);
