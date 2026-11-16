@@ -91,17 +91,28 @@ export const Carousel: React.FC<{ cards: HabCard[]; bg: string; subAt: number; s
 
 // (2) barra de progreso n / 10 en la esquina
 export const Progress: React.FC<{ n: number; title: string; dur: number; of?: number }> = ({ n, title, dur, of = LIST.n }) => {
+  // len14c v2 (EVALUADOR): placa oscura sólida (no depende del fondo), número en disco de latón tipo etiqueta de válvula,
+  // título grande, entrada deslizando desde la derecha y segmentos que se llenan de a uno.
   const f = useCurrentFrame();
-  const o = interpolate(f, [0, 8, dur - 8, dur], [0, 1, 1, 0], CL);
+  const o = interpolate(f, [dur - 10, dur], [1, 0], CL);
+  const e = spring({ frame: f, fps: 30, config: { damping: 16 } });
+  const fill = interpolate(f, [8, 22], [0, 1], CL);
   return (
-    <div style={{ position: "absolute", right: 56, top: 48, opacity: o, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 10 }}>
-      <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 20, letterSpacing: 4, color: C.white, textShadow: shadow }}>
-        <span style={{ color: PINK }}>{String(n).padStart(2, "0")}</span> / {String(of).padStart(2, "0")} · {title.toUpperCase()}
-      </div>
-      <div style={{ display: "flex", gap: 6 }}>
-        {Array.from({ length: of }, (_, i) => (
-          <div key={i} style={{ width: 44, height: 5, borderRadius: 3, background: i < n ? C.ver : "rgba(255,253,248,0.45)", boxShadow: "0 1px 4px rgba(0,0,0,0.4)" }} />
-        ))}
+    <div style={{ position: "absolute", right: 48, top: 44, opacity: o * e, transform: `translateX(${(1 - e) * 120}px)`,
+      display: "flex", alignItems: "center", gap: 20, background: "rgba(18,14,10,0.86)", padding: "14px 26px 16px 16px", borderRadius: 14,
+      boxShadow: "0 10px 26px rgba(0,0,0,0.45)" }}>
+      <div style={{ width: 84, height: 84, borderRadius: 42, background: "radial-gradient(circle at 35% 30%, #F2D58A 0%, #C9A04A 55%, #8C6A24 100%)",
+        boxShadow: "inset 0 -4px 8px rgba(0,0,0,0.35), 0 3px 8px rgba(0,0,0,0.5)", display: "flex", alignItems: "center", justifyContent: "center",
+        fontFamily: SANS, fontWeight: 800, fontSize: 46, color: "#2A1E0C" }}>{n}</div>
+      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 36, letterSpacing: 1, color: C.white, whiteSpace: "nowrap" }}>
+          <span style={{ color: "#F2D58A" }}>STEP {n}</span> <span style={{ opacity: 0.6, fontSize: 28 }}>of {of}</span> · {title}
+        </div>
+        <div style={{ display: "flex", gap: 6 }}>
+          {Array.from({ length: of }, (_, i) => (
+            <div key={i} style={{ width: 34, height: 9, borderRadius: 5, background: i < n - 1 || (i === n - 1 && fill > 0.5) ? "#E0B85A" : "rgba(255,253,248,0.28)" }} />
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -118,9 +129,10 @@ export const InkWipe: React.FC<{ dir: number; len?: number }> = ({ dir, len = 20
     <AbsoluteFill style={{ pointerEvents: "none", overflow: "hidden" }}>
       {cols.map((c, i) => {
         const off = (i - 1) * 0.12, k = pos + off;
+        // len14c v2 (EVALUADOR): tiras angostas (520 px) — nunca tapan el cuadro entero, sin frame «vacío»
         const st: React.CSSProperties = dir === 2
-          ? { position: "absolute", left: -200, width: 2320, top: 540 + k * 1080 - 700, height: 1400, background: c }
-          : { position: "absolute", top: -300, height: 1680, left: 960 + (dir === 1 ? -1 : 1) * k * 1920 - 1100, width: 2200, background: c, transform: `rotate(${dir === 3 ? 20 : 6}deg)` };
+          ? { position: "absolute", left: -200, width: 2320, top: 540 + k * 1080 - 260, height: 520, background: c }
+          : { position: "absolute", top: -300, height: 1680, left: 960 + (dir === 1 ? -1 : 1) * k * 1920 - 260, width: 520, background: c, transform: `rotate(${dir === 3 ? 20 : 6}deg)` };
         return <div key={i} style={{ ...st, boxShadow: "0 0 30px rgba(60,40,10,0.25)" }} />;
       })}
     </AbsoluteFill>
@@ -303,8 +315,10 @@ export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number }> = ({
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(16,11,8,0.72) 0%, rgba(16,11,8,0) 40%)" }} />
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 215, textAlign: "center", opacity: p }}>
-        <span style={{ fontFamily: SERIF, fontStyle: "italic", fontWeight: 600, fontSize: 62, color: C.white, textShadow: shadow, borderBottom: `4px solid ${C.ver}`, paddingBottom: 6 }}>{text}</span>
+      {/* len14c v2 (EVALUADOR): placa sólida, sans grande, sube con resorte; no depende de la imagen de abajo */}
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 120, display: "flex", justifyContent: "center", opacity: p, transform: `translateY(${(1 - p) * 60}px)` }}>
+        <div style={{ maxWidth: 1500, background: "rgba(18,14,10,0.9)", borderRadius: 16, padding: "22px 40px", borderLeft: "10px solid #E0B85A",
+          fontFamily: SANS, fontWeight: 800, fontSize: 58, lineHeight: 1.18, color: C.white, textAlign: "center", boxShadow: "0 12px 30px rgba(0,0,0,0.5)" }}>{text}</div>
       </div>
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 52, display: "flex", justifyContent: "center", gap: 14 }}>
         {cards.map((c, i) => {
