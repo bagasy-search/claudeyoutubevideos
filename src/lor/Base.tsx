@@ -105,7 +105,7 @@ export const RecipeCard: React.FC<{ card: Card; look: Look; dur: number }> = ({ 
   // márgenes calculados para que, con la escala ZC, ningún texto quede a menos de 80 px del borde
   const ZC = 1.12, M = 960 - (960 - 80) / ZC;
   // si no entra, primero se achica (hasta 0.78) y recién después se desplaza, con margen abajo de 170 px
-  const Z0 = Math.max(0.78, Math.min(ZC, 960 / H));
+  const Z0 = Math.max(0.6, Math.min(ZC, 940 / H));
   const travel = Math.max(0, H * Z0 - 1080 + 170);
   const cy = -travel * ease((f - dur * 0.15) / (dur * 0.55));
   const cz = Z0 + 0.02 * f / Math.max(1, dur);
@@ -126,7 +126,7 @@ export const RecipeCard: React.FC<{ card: Card; look: Look; dur: number }> = ({ 
             {card.ing.map((x, i) => (<div key={i} style={{ fontFamily: HAND, fontSize: card.ing.length > 6 ? 42 : 46, lineHeight: 1.45, opacity: L(2 + i) }}>• {x}</div>))}
           </div>
           {card.steps.length > 0 && <div style={{ flex: 1, minWidth: 0 }}>
-            {card.steps.map((x, i) => (<div key={i} style={{ fontFamily: HAND, fontSize: 40, lineHeight: 1.4, marginBottom: 8, color: C.pencil, opacity: L(3 + card.ing.length + i) }}>{i + 1}. {x}</div>))}
+            {card.steps.map((x, i) => (<div key={i} style={{ fontFamily: HAND, fontSize: 40, lineHeight: 1.4, marginBottom: 8, color: C.pencil, opacity: L(3 + card.ing.length + i) }}>{i + 1}. {x.replace(/^\d+\s*·\s*/, "")}</div>))}
           </div>}
         </div>
         {card.note && <div style={{ fontFamily: HAND, fontSize: 42, fontWeight: 700, color: C.red, marginTop: 24, opacity: L(5 + card.ing.length + card.steps.length) }}>{card.note}</div>}
