@@ -3,9 +3,9 @@ import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame
 import { SHOTS, AVATAR, OVERLAYS, SFX, TOTAL, CARDS } from "./cues.gen";
 import * as P from "./Piezas";
 import * as Q from "./Piezas2";
-import * as Z from "./Conserje";
+import * as Z from "./Lavaloza";
 
-export const TOTAL_FRAMES_CONS15B = TOTAL;
+export const TOTAL_FRAMES_CONS15C = TOTAL;
 const T = 8; // frames de transición
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
@@ -60,15 +60,17 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "polaroid": return <Q.Polaroid src={o.src} caption={o.caption} seed={o.seed} dur={d} />;
     case "map": return <Q.MapJP a={o.a} b={o.b} la={o.la} ja={o.ja} lb={o.lb} jb={o.jb} dur={d} />;
     case "cta": return <Q.CTA text={o.text} cards={CARDS} dur={d} com={o.com} />;
-    case "step": return <Z.ElevatorDial n={o.n} total={o.total} title={o.title} src={o.src} dur={d} />;
-    case "hanger": return <Z.KeycardLock text={o.text} v={o.v} dur={d} />;
-    case "guest": return <Z.PhoneMessage text={o.text} v={o.v} dur={d} />;
-    case "sheet": return <Z.BlindRecap items={o.items} marks={o.marks} srcs={o.srcs} bg={o.bg} dur={d} />;
+    case "step": return <Z.ComandaRail n={o.n} total={o.total} title={o.title} src={o.src} dur={d} />;
+    case "hanger": return <Z.ClocheCTA text={o.text} v={o.v} dur={d} />;
+    case "guest": return <Z.VaporText text={o.text} v={o.v} dur={d} />;
+    case "sheet": return <Z.RackRecap items={o.items} marks={o.marks} srcs={o.srcs} bg={o.bg} dur={d} />;
+    case "tinas": return <Z.TresTinas marks={o.marks} dose={o.dose} dur={d} />;
+    case "nunca": return <Z.NuncaJuntos dur={d} />;
     default: return null;
   }
 };
 
-export const MainCons15b: React.FC = () => (
+export const MainCons15c: React.FC = () => (
   <AbsoluteFill style={{ background: P.C.ink }}>
     {/* capa 1: avatar (ventanas visibles) */}
     {AVATAR.map((a, i) => (
@@ -96,7 +98,7 @@ export const MainCons15b: React.FC = () => (
       </Sequence>
     ))}
     {/* audio: voz + piano premezclados, SFX por debajo */}
-    <Audio src={staticFile("cons15b_mix.m4a")} />
+    <Audio src={staticFile("cons15c_mix.m4a")} />
     {SFX.map((x, i) => (
       <Sequence key={"x" + i} from={x.from} durationInFrames={90}>
         <Audio src={staticFile(x.src)} volume={x.vol} />
