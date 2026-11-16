@@ -103,20 +103,20 @@ export const Progress: React.FC<{ n: number; title: string; dur: number; of?: nu
   return (
     <AbsoluteFill style={{ opacity: o, pointerEvents: "none" }}>
       {G > 20 && f < G ? (
-        <AbsoluteFill style={{ opacity: go, background: "rgba(14,10,7,0.88)" }}>
+        <AbsoluteFill style={{ opacity: go, background: "#120E0A" }}>
           <div style={{ position: "absolute", left: 0, right: 0, top: 70, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 60, letterSpacing: 2, color: "#F2D58A" }}>
             STEP {n} OF {of} · <span style={{ color: C.white }}>{title}</span></div>
-          <div style={{ position: "absolute", left: 150, right: 150, top: 190, display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 26,
+          <div style={{ position: "absolute", left: 80, right: 80, top: 170, display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 22,
             transform: `scale(${1 + 0.03 * (f / G)})` }}>
             {thumbs.slice(0, of).map((t, i) => {
               const cur = i === n - 1, done = i < n - 1;
               const k = cur ? spring({ frame: f - 10, fps: 30, config: { damping: 11 } }) : 1;
               return (
-                <div key={i} style={{ height: 248, borderRadius: 12, overflow: "hidden", position: "relative", background: "#2a2018",
+                <div key={i} style={{ height: 272, borderRadius: 12, overflow: "hidden", position: "relative", background: "#2a2018",
                   border: `${cur ? 8 : 3}px solid ${cur ? "#F2D58A" : "rgba(255,253,248,0.5)"}`, zIndex: cur ? 2 : 1,
-                  boxShadow: cur ? "0 18px 40px rgba(0,0,0,0.7)" : "none", opacity: cur ? k : done ? 0.9 : 0.35,
+                  boxShadow: cur ? "0 18px 40px rgba(0,0,0,0.7)" : "none", opacity: cur ? k : 1,
                   transform: `scale(${cur ? 0.7 + 0.42 * k : 1})` }}>
-                  {t ? <Img src={staticFile(t)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: cur || done ? "none" : "grayscale(1)" }} /> : null}
+                  {t ? <Img src={staticFile(t)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "none" }} /> : null}
                   <div style={{ position: "absolute", left: 12, top: 6, fontFamily: SANS, fontWeight: 900, fontSize: cur ? 64 : 46, color: C.white, textShadow: shadow }}>{i + 1}</div>
                 </div>
               );
@@ -132,7 +132,13 @@ export const Progress: React.FC<{ n: number; title: string; dur: number; of?: nu
         </div>
         <div style={{ width: 140, height: 140, borderRadius: 70, background: "radial-gradient(circle at 35% 30%, #F6DE9A 0%, #CDA24C 55%, #8C6A24 100%)", flexShrink: 0,
           boxShadow: "inset 0 -6px 10px rgba(0,0,0,0.35), 0 8px 14px rgba(0,0,0,0.6)", display: "flex", alignItems: "center", justifyContent: "center",
-          fontFamily: SANS, fontWeight: 900, fontSize: 80, color: "#2A1E0C", transform: `translateY(${(1 - drop) * -220}px) rotate(${(1 - drop) * -90}deg)`, zIndex: 2 }}>{n}</div>
+          fontFamily: SANS, fontWeight: 900, fontSize: 80, color: "#2A1E0C", transform: `translateY(${(1 - drop) * -220}px)`, zIndex: 2, overflow: "hidden", position: "relative" }}>
+          {/* v5: cuentavueltas — el número anterior sube y entra el nuevo (el contador AVANZA) */}
+          <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 140, display: "flex", flexDirection: "column", alignItems: "center",
+            transform: `translateY(${-140 * spring({ frame: f - 12, fps: 30, config: { damping: 12, stiffness: 160 } })}px)` }}>
+            <div style={{ height: 140, lineHeight: "140px" }}>{Math.max(0, n - 1)}</div><div style={{ height: 140, lineHeight: "140px" }}>{n}</div>
+          </div>
+        </div>
       </div>
     </AbsoluteFill>
   );
@@ -341,7 +347,7 @@ export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number }> = ({
     <AbsoluteFill style={{ opacity: o }}>
       <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(16,11,8,0.7) 0%, rgba(16,11,8,0) 45%)" }} />
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 300, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 46, letterSpacing: 4,
-        color: "#F2D58A", textShadow: shadow, opacity: p }}>COMMENT BELOW <span style={{ display: "inline-block", transform: `translateY(${bob}px)` }}>↓</span></div>
+        color: "#F2D58A", textShadow: shadow, opacity: p * interpolate(f, [dur - 30, dur - 18], [1, 0], CL) }}>{/below/i.test(text) ? "TELL ME BELOW" : "COMMENT BELOW"} <span style={{ display: "inline-block", transform: `translateY(${bob}px)` }}>↓</span></div>
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 110, display: "flex", justifyContent: "center", opacity: p, transform: `translateY(${(1 - p) * 80}px)` }}>
         <div style={{ width: 1440, minHeight: 150, background: "#FFFFFF", borderRadius: 24, padding: "26px 40px", display: "flex", alignItems: "center", gap: 30,
           boxShadow: "0 18px 40px rgba(0,0,0,0.55)" }}>
