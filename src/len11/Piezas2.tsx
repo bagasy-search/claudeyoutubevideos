@@ -90,31 +90,51 @@ export const Carousel: React.FC<{ cards: HabCard[]; bg: string; subAt: number; s
 };
 
 // (2) barra de progreso n / 10 en la esquina
-export const Progress: React.FC<{ n: number; title: string; dur: number; of?: number }> = ({ n, title, dur, of = LIST.n }) => {
-  // len14c v2 (EVALUADOR): placa oscura sólida (no depende del fondo), número en disco de latón tipo etiqueta de válvula,
-  // título grande, entrada deslizando desde la derecha y segmentos que se llenan de a uno.
+export const Progress: React.FC<{ n: number; title: string; dur: number; of?: number; recap?: boolean; thumbs?: string[] }> = ({ n, title, dur, of = LIST.n, recap, thumbs = [] }) => {
+  // len14c v3 (EVALUADOR v2): insignia 1,5x — disco de latón que cae con rebote, título 52 px, 12 arandelas grandes de progreso
+  // (la actual dorada y más grande). En el repaso: tira de 12 fotos reales abajo, la del paso actual resaltada.
   const f = useCurrentFrame();
-  const o = interpolate(f, [dur - 10, dur], [1, 0], CL);
-  const e = spring({ frame: f, fps: 30, config: { damping: 16 } });
-  const fill = interpolate(f, [8, 22], [0, 1], CL);
+  const o = interpolate(f, [dur - 8, dur], [1, 0], CL);
+  const e = spring({ frame: f, fps: 30, config: { damping: 15 } });
+  const drop = spring({ frame: f - 4, fps: 30, config: { damping: 9, stiffness: 140 } });
   return (
-    <div style={{ position: "absolute", right: 48, top: 44, opacity: o * e, transform: `translateX(${(1 - e) * 120}px)`,
-      display: "flex", alignItems: "center", gap: 20, background: "rgba(18,14,10,0.86)", padding: "14px 26px 16px 16px", borderRadius: 14,
-      boxShadow: "0 10px 26px rgba(0,0,0,0.45)" }}>
-      <div style={{ width: 84, height: 84, borderRadius: 42, background: "radial-gradient(circle at 35% 30%, #F2D58A 0%, #C9A04A 55%, #8C6A24 100%)",
-        boxShadow: "inset 0 -4px 8px rgba(0,0,0,0.35), 0 3px 8px rgba(0,0,0,0.5)", display: "flex", alignItems: "center", justifyContent: "center",
-        fontFamily: SANS, fontWeight: 800, fontSize: 46, color: "#2A1E0C" }}>{n}</div>
-      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-        <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 36, letterSpacing: 1, color: C.white, whiteSpace: "nowrap" }}>
-          <span style={{ color: "#F2D58A" }}>STEP {n}</span> <span style={{ opacity: 0.6, fontSize: 28 }}>of {of}</span> · {title}
-        </div>
-        <div style={{ display: "flex", gap: 6 }}>
-          {Array.from({ length: of }, (_, i) => (
-            <div key={i} style={{ width: 34, height: 9, borderRadius: 5, background: i < n - 1 || (i === n - 1 && fill > 0.5) ? "#E0B85A" : "rgba(255,253,248,0.28)" }} />
-          ))}
+    <AbsoluteFill style={{ opacity: o, pointerEvents: "none" }}>
+      <div style={{ position: "absolute", right: 64, top: 56, opacity: e, transform: `translateX(${(1 - e) * 160}px)`,
+        display: "flex", alignItems: "center", gap: 26, background: "rgba(18,14,10,0.9)", padding: "18px 34px 20px 20px", borderRadius: 18,
+        boxShadow: "0 12px 30px rgba(0,0,0,0.5)" }}>
+        <div style={{ width: 124, height: 124, borderRadius: 62, background: "radial-gradient(circle at 35% 30%, #F6DE9A 0%, #CDA24C 55%, #8C6A24 100%)",
+          boxShadow: "inset 0 -6px 10px rgba(0,0,0,0.35), 0 5px 10px rgba(0,0,0,0.55)", display: "flex", alignItems: "center", justifyContent: "center",
+          fontFamily: SANS, fontWeight: 900, fontSize: 70, color: "#2A1E0C", transform: `translateY(${(1 - drop) * -70}px)` }}>{n}</div>
+        <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+          <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 30, letterSpacing: 3, color: "#F2D58A" }}>{recap ? "RECAP · " : ""}STEP {n} OF {of}</div>
+          <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 46, lineHeight: 1.05, color: C.white, whiteSpace: "nowrap" }}>{title}</div>
+          <div style={{ display: "flex", gap: 9, alignItems: "center" }}>
+            {Array.from({ length: of }, (_, i) => {
+              const cur = i === n - 1, done = i < n - 1;
+              return <div key={i} style={{ width: cur ? 30 : 22, height: cur ? 30 : 22, borderRadius: "50%", boxSizing: "border-box",
+                border: `6px solid ${cur ? "#F2D58A" : done ? "#B8913F" : "rgba(255,253,248,0.35)"}`, background: cur ? "rgba(242,213,138,0.25)" : "transparent" }} />;
+            })}
+          </div>
         </div>
       </div>
-    </div>
+      {recap && thumbs.length ? (
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 56, display: "flex", justifyContent: "center", alignItems: "flex-end", gap: 12 }}>
+          {thumbs.map((t, i) => {
+            const cur = i === n - 1, done = i < n - 1;
+            const k = spring({ frame: f - i * 2, fps: 30, config: { damping: 14 } });
+            const w = cur ? 196 : 128;
+            return (
+              <div key={i} style={{ width: w, height: w * 0.62, borderRadius: 8, overflow: "hidden", position: "relative", background: "#222",
+                border: `${cur ? 6 : 3}px solid ${cur ? "#F2D58A" : "rgba(255,253,248,0.85)"}`, boxShadow: "0 8px 18px rgba(0,0,0,0.55)",
+                opacity: k * (cur ? 1 : done ? 0.85 : 0.55), transform: `translateY(${(1 - k) * 60}px)` }}>
+                {t ? <Img src={staticFile(t)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: cur || done ? "none" : "grayscale(0.7)" }} /> : null}
+                <div style={{ position: "absolute", left: 6, top: 2, fontFamily: SANS, fontWeight: 900, fontSize: cur ? 34 : 24, color: C.white, textShadow: shadow }}>{i + 1}</div>
+              </div>
+            );
+          })}
+        </div>
+      ) : null}
+    </AbsoluteFill>
   );
 };
 
@@ -318,7 +338,10 @@ export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number }> = ({
       {/* len14c v2 (EVALUADOR): placa sólida, sans grande, sube con resorte; no depende de la imagen de abajo */}
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 120, display: "flex", justifyContent: "center", opacity: p, transform: `translateY(${(1 - p) * 60}px)` }}>
         <div style={{ maxWidth: 1500, background: "rgba(18,14,10,0.9)", borderRadius: 16, padding: "22px 40px", borderLeft: "10px solid #E0B85A",
-          fontFamily: SANS, fontWeight: 800, fontSize: 58, lineHeight: 1.18, color: C.white, textAlign: "center", boxShadow: "0 12px 30px rgba(0,0,0,0.5)" }}>{text}</div>
+          fontFamily: SANS, fontWeight: 800, fontSize: 58, lineHeight: 1.18, color: C.white, textAlign: "center", boxShadow: "0 12px 30px rgba(0,0,0,0.5)" }}>
+          {/* corte de renglón controlado (sin huérfanas): pregunta / pedido */}
+          {text.includes("?") ? <>{text.slice(0, text.indexOf("?") + 1)}<br /><span style={{ color: "#F2D58A" }}>{text.slice(text.indexOf("?") + 1).trim()}</span></> : text}
+        </div>
       </div>
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 52, display: "flex", justifyContent: "center", gap: 14 }}>
         {cards.map((c, i) => {
