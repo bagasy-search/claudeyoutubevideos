@@ -32,7 +32,7 @@ const Baldosa: React.FC<{ txt: string; size?: number; f0?: number; style?: React
   const f = useCurrentFrame(); const p = sp(f, f0, 12);
   return (
     <div style={{ width: size, height: size, ...azulejo(size), border: `${size * 0.04}px solid ${R.azul}`, boxShadow: "0 18px 40px rgba(0,0,0,0.5), inset 0 0 0 6px #EFE8D6", display: "flex", alignItems: "center", justifyContent: "center", transform: `perspective(900px) rotateY(${(1 - p) * 90}deg)`, opacity: cl(p * 2), ...style }}>
-      <div style={{ width: size * 0.62, height: size * 0.62, borderRadius: "50%", background: R.cal, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SERIF, fontWeight: 700, fontSize: size * 0.42, color: R.azul }}>{txt}</div>
+      <div style={{ width: size * 0.62, height: size * 0.62, borderRadius: "50%", background: R.cal, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SERIF, fontWeight: 700, fontSize: size * (txt.length > 2 ? 0.92 / txt.length : 0.42), color: R.azul, whiteSpace: "nowrap" }}>{txt}</div>
     </div>
   );
 };
@@ -145,7 +145,7 @@ export const NumR: React.FC<{ unit: string; k: number | string; N?: number; titl
       <div style={{ position: "absolute", left: 140, top: 0, bottom: 0, display: "flex", alignItems: "center", gap: 70 }}>
         <Baldosa txt={String(k)} size={300} />
         <div style={{ maxWidth: 1180 }}>
-          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 32, letterSpacing: 8, color: col, textShadow: tsh, opacity: sp(f, 6) }}>{unit}{N ? ` ${k} DE ${N}` : ""}</div>
+          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 38, letterSpacing: 8, ...(tone === "no" ? { color: "#fff", background: R.no, display: "inline-block", padding: "6px 20px", borderRadius: 8, boxShadow: "0 6px 18px rgba(0,0,0,0.45)" } : { color: col, textShadow: tsh }), opacity: sp(f, 6) }}>{unit}{N ? ` ${k} DE ${N}` : ""}</div>
           <Big txt={title} f0={10} size={88} style={{ marginTop: 10 }} />
           {sub ? <div style={{ fontFamily: HAND, fontSize: 50, color: "#F3E6C8", textShadow: tsh, marginTop: 18, opacity: sp(f, 22) }}>{sub}</div> : null}
         </div>
