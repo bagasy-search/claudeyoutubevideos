@@ -8,12 +8,21 @@ import * as E from "./Escenas";
 import * as S from "./Carne";
 import * as Mu from "./Muro";
 import * as Pi from "./Piso";
+import * as Fr from "./Frasco";
 
 export const TOTAL_FRAMES_STAN = TOTAL;
 const TR = 8;
+const SK = 12;
+const PiWrap: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
+  const f = useCurrentFrame(); const z = interpolate(f, [0, dur], [1, 1.05], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const x = interpolate(f, [0, dur], [0, (s.id % 2 ? 1 : -1) * 12], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return <AbsoluteFill style={{ transform: `translateX(${x}px) scale(${z})` }}><Sequence from={-SK} layout="none"><Body s={s} dur={dur + SK} /></Sequence></AbsoluteFill>;
+};
 
 const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   const seed = s.id + 1;
+  const FrC = (Fr as any)[s.view || ""];
+  if (/N$/.test(s.view || "") && FrC) return <FrC {...s.p} dur={dur} />;
   switch (s.view) {
     case "clip": return <K.Clip src={s.src} seed={seed} dur={dur} clipDur={s.clipDur} minRate={s.veo ? 0.42 : 0.6} />;
     case "photo": return <K.Photo src={s.src} seed={seed} dur={dur} />;
@@ -163,15 +172,20 @@ const Enter: React.FC<{ trans: string; children: React.ReactNode; seed: number }
     return <AbsoluteFill><AbsoluteFill style={{ filter: `brightness(${0.45 + 0.55 * (1 - y / 100)})` }}>{children}</AbsoluteFill><AbsoluteFill style={{ clipPath: `inset(${y}% 0 0 0)` }}>{children}</AbsoluteFill>
       {f < 17 ? <div style={{ position: "absolute", left: 0, right: 0, top: `calc(${y}% - 4px)`, height: 8, background: "#7FB7D9", boxShadow: "0 0 18px rgba(127,183,217,0.8)" }} /> : null}</AbsoluteFill>;
   }
+  if (trans === "iris") { // paso nuevo (fb14d): se abre desde el centro como la boca de un frasco, con su aro naranja
+    const r = interpolate(f, [0, 14], [0, 75], { extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+    return <AbsoluteFill><AbsoluteFill style={{ clipPath: `circle(${r}% at 50% 50%)` }}>{children}</AbsoluteFill>
+      {f < 15 ? <div style={{ position: "absolute", left: "50%", top: "50%", width: `${r * 31.15}px`, height: `${r * 31.15}px`, transform: "translate(-50%,-50%)", borderRadius: "50%", border: "10px solid #E8812A" }} /> : null}</AbsoluteFill>;
+  }
   return <AbsoluteFill>{children}</AbsoluteFill>;
 };
 
 const Overlay: React.FC<{ o: any }> = ({ o }) => {
   switch (o.type) {
     case "price": return <K.Price text={o.text} dur={o.dur} />;
-    case "progress": return <Mu.ProgM n={o.n} N={o.N} title={o.title} dur={o.dur} />;
-    case "qr": return <Mu.QrM qr={o.qr} cover={o.cover} dur={o.dur} />;
-    case "split": return <Mu.PanelM src={o.src} label={o.label} dur={o.dur} />;
+    case "progress": return <Fr.ProgN n={o.n} N={o.N} title={o.title} dur={o.dur} />;
+    case "qr": return <Fr.QrN qr={o.qr} cover={o.cover} dur={o.dur} />;
+    case "split": return <Fr.PanelN src={o.src} label={o.label} dur={o.dur} />;
     case "pregunta": return <K.Pregunta text={o.text} dur={o.dur} />;
     default: return null;
   }
@@ -190,7 +204,7 @@ export const MainStan: React.FC = () => (
       const tail = nx && nx.k !== "A" && nx.trans && nx.trans !== "cut" ? TR + 8 : 0;
       return (
         <Sequence key={"s" + s.id} from={s.from} durationInFrames={Math.min(s.dur + tail, TOTAL - s.from)} premountFor={45}>
-          <Enter trans={s.trans || "cut"} seed={s.id}><Body s={s} dur={s.dur} /></Enter>
+          <Enter trans={s.trans || "cut"} seed={s.id}>{/^[A-Z].*[PN]$/.test(s.view || "") && s.view !== "LaminaN" ? <PiWrap s={s} dur={s.dur} /> : <Body s={s} dur={s.dur} />}</Enter>
         </Sequence>
       );
     })}
