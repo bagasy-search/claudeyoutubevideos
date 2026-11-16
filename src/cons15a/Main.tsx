@@ -63,7 +63,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "step": return <Z.StepKey n={o.n} total={o.total} title={o.title} src={o.src} dur={d} />;
     case "hanger": return <Z.DoorHanger text={o.text} dur={d} />;
     case "guest": return <Z.GuestCard text={o.text} dur={d} />;
-    case "sheet": return <Z.ServiceSheet items={o.items} marks={o.marks} dur={d} />;
+    case "sheet": return <Z.ServiceSheet items={o.items} marks={o.marks} srcs={o.srcs} dur={d} />;
     default: return null;
   }
 };
