@@ -306,7 +306,7 @@ export const Close: React.FC<{ cover: string; qr?: string; url?: string; look: L
   const f = useCurrentFrame(); const inn = spring({ frame: f, fps: 30, config: { damping: 18 } }); const q = spring({ frame: f - qAt, fps: 30, config: { damping: 16 } });
   const cam = 1 + 0.12 * ease(f / Math.max(1, dur));
   return (<AbsoluteFill style={{ overflow: "hidden" }}>
-   <AbsoluteFill style={{ transform: `translateY(${question ? -150 * Math.min(1, Math.max(0, q)) : 0}px) scale(${cam * (question ? 1 - 0.1 * Math.min(1, Math.max(0, q)) : 1)})`, transformOrigin: "55% 40%", perspective: 2400 }}>
+   <AbsoluteFill style={{ transform: `translateY(${question ? -110 * Math.min(1, Math.max(0, q)) : 0}px) scale(${cam * (question ? 1 - 0.32 * Math.min(1, Math.max(0, q)) : 1)})`, transformOrigin: "55% 40%", perspective: 2400 }}>
     <Img src={staticFile(look.table)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.03 * f / Math.max(1, dur)})` }} />
     <div style={{ position: "absolute", left: 300, top: 90, height: 900, width: 696, boxShadow: "0 34px 80px rgba(0,0,0,0.55)", transform: `translateY(${(1 - inn) * 1000}px) rotateY(${10 - 14 * ease(f / Math.max(1, dur))}deg) rotate(${-3 * inn}deg)` }}>
       <Img src={staticFile(cover)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
@@ -315,7 +315,7 @@ export const Close: React.FC<{ cover: string; qr?: string; url?: string; look: L
       {(url ?? "cookbook.lorettaschurch.com") && <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 36, color: C.ink, background: "#FFF3D6", padding: "10px 12px", whiteSpace: "nowrap", boxShadow: "0 10px 26px rgba(0,0,0,0.4)", marginTop: 22, textAlign: "center" }}>{url ?? "cookbook.lorettaschurch.com"}</div>}
     </div>
    </AbsoluteFill>
-    {question && <div style={{ position: "absolute", left: 140, right: 140, bottom: 70, textAlign: "center", background: "#fff", borderRadius: 34, padding: "26px 40px", fontFamily: HAND, fontWeight: 700, fontSize: 66, color: C.ink, boxShadow: "0 18px 44px rgba(0,0,0,0.45)", opacity: q > 0.02 ? 1 : 0, transform: `translateY(${(1 - q) * 300 + 6 * Math.sin(f / 20)}px) scale(${0.85 + 0.15 * q})` }}>{question}</div>}
+    {question && <div style={{ position: "absolute", left: 140, right: 140, bottom: 70, textAlign: "center", background: "#fff", borderRadius: 34, padding: "22px 40px", fontFamily: HAND, fontWeight: 700, fontSize: 56, color: C.ink, boxShadow: "0 18px 44px rgba(0,0,0,0.45)", opacity: q > 0.02 ? 1 : 0, transform: `translateY(${(1 - q) * 300 + 6 * Math.sin(f / 20)}px) scale(${0.85 + 0.15 * q})` }}>{question}</div>}
   </AbsoluteFill>);
 };
 

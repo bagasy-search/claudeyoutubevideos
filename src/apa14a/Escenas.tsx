@@ -14,105 +14,68 @@ const cam = (s: number, cx: number, cy: number) => {
   return `translate(${tx}px, ${ty}px) scale(${s})`;
 };
 
-// 1 · Una huella real se despega del piso, se endereza hacia la cámara y crece; en "five" cambia a la de atrás; en "tail" se acuesta y la cámara sigue la raya de la cola.
-const PRINTS: [number, number][] = [[1220, 780], [1480, 860]];
+// Las fotos fuente son 1088x608: la cámara no pasa de ~1.8x para que el detalle siga nítido.
+const glide = (f: number, ks: number[], vs: number[][]) => [0, 1, 2].map((k) => interpolate(f, ks, vs.map((v) => v[k]), { ...CL, easing: EASE }));
+
+// 1 · Rastreo a ras del piso: la cámara se agacha sobre la huella de adelante (se cuentan los dedos), en "five" salta a la de atrás y en "tail" sigue la raya de la cola hacia la pared.
 export const Tracks: React.FC<{ dur: number; fFive: number; fTail: number }> = ({ dur, fFive, fTail }) => {
   const f = useCurrentFrame();
-  const lift = (a: number, b: number) => interpolate(f, [a, a + 22, b, b + 14], [0, 1, 1, 0], { ...CL, easing: EASE });
-  const l1 = lift(14, fFive), l2 = lift(fFive + 6, fTail);
-  const pan = interpolate(f, [fTail + 10, dur], [0, 1], { ...CL, easing: EASE });
-  const base = cam(1 + 0.25 * pan, 980 + 720 * pan, 665 + 295 * pan);
-  const dim = 1 - 0.35 * Math.max(l1, l2);
-  const card = (p: [number, number], l: number) => l <= 0 ? null : (
-    <div style={{ ...BOX, overflow: "visible", perspective: 1400, perspectiveOrigin: `${p[0]}px ${p[1]}px` }}>
-      <div style={{ ...BOX, overflow: "visible", transformOrigin: `${p[0]}px ${p[1]}px`, transform: `translate(${(960 - p[0]) * l}px, ${(520 - p[1]) * l}px) rotateX(${62 * (1 - l)}deg) scale(${1 + 1.5 * l})`, filter: `drop-shadow(0 18px 24px rgba(0,0,0,${0.5 * l}))` }}>
-        <div style={{ ...BOX, clipPath: `circle(105px at ${p[0]}px ${p[1]}px)`, filter: `contrast(${1 + 0.45 * l}) brightness(${1 - 0.12 * l})` }}>
-          <Img src={S("e_tracks")} style={FULL} />
-        </div>
-      </div>
-    </div>
-  );
+  const [z, x, y] = glide(f, [0, 34, fFive, fFive + 22, fTail, Math.min(dur, fTail + 40)], [[1.05, 1100, 760], [1.8, 1220, 790], [1.8, 1240, 795], [1.8, 1480, 865], [1.8, 1470, 860], [1.3, 900, 690]]);
+  const k = (z - 1.05) / 0.75;
   return (
     <AbsoluteFill style={{ backgroundColor: "#22262a", overflow: "hidden" }}>
-      <div style={{ ...BOX, transform: base, transformOrigin: "0 0" }}>
-        <Img src={S("e_tracks")} style={{ ...FULL, filter: `brightness(${dim})` }} />
+      <div style={{ ...BOX, transform: cam(z, x, y), transformOrigin: "0 0" }}>
+        <Img src={S("e_tracks")} style={{ ...FULL, filter: `contrast(${1 + 0.35 * k}) brightness(${1 - 0.08 * k})` }} />
       </div>
-      {card(PRINTS[0], l1)}
-      {card(PRINTS[1], l2)}
     </AbsoluteFill>
   );
 };
 
-// 2 · El codo real de la izquierda gira sobre el eje del caño: en "Not" se da vuelta con la boca hacia arriba y vuelve con rebote a apuntar al piso.
-const ELBOW = poly([[250, 425], [300, 418], [345, 425], [380, 440], [382, 500], [370, 540], [360, 590], [330, 606], [280, 606], [250, 590], [246, 520]]);
+// 2 · La foto entera se da vuelta como una tarjeta sobre su eje horizontal en "Not up": por un instante las bocas quedan para arriba (así NO) y vuelve.
 export const Station: React.FC<{ dur: number; fDown: number; fNot: number }> = ({ dur, fDown, fNot }) => {
   const f = useCurrentFrame();
-  const push = interpolate(f, [0, dur], [0, 1], { ...CL, easing: Easing.inOut(Easing.sin) });
-  const back = Math.min(fNot + 18, dur - 16); // la vuelta tiene que terminar ANTES del corte (la escena dura poco después de "Not up")
-  const flip = interpolate(f, [fNot, fNot + 10], [0, 180], { ...CL, easing: EASE }) - interpolate(f, [back, back + 13], [0, 180], { ...CL, easing: Easing.out(Easing.back(1.4)) });
-  const moving = Math.abs(flip) > 1;
+  const a = Math.min(fNot, dur - 30);
+  const flip = interpolate(f, [a, a + 9, a + 19, a + 28], [0, 180, 180, 360], { ...CL, easing: EASE });
+  const [z, x, y] = glide(f, [0, fDown, fDown + 40, dur], [[1.0, 960, 540], [1.0, 960, 540], [1.45, 640, 420], [1.55, 620, 420]]);
   return (
-    <AbsoluteFill style={{ backgroundColor: "#2a2620", overflow: "hidden" }}>
-      <div style={{ ...BOX, transform: cam(1 + 0.4 * push, 560, 470), transformOrigin: "0 0" }}>
-        <Img src={S("e_station")} style={FULL} />
-        {moving && (
-          <div style={{ ...BOX, WebkitMaskImage: "radial-gradient(ellipse 95px 125px at 312px 512px, #000 62%, transparent 100%)", maskImage: "radial-gradient(ellipse 95px 125px at 312px 512px, #000 62%, transparent 100%)" }}>
-            <Img src={S("e_station")} style={{ ...FULL, transform: "translate(130px, -17px)" }} />
-          </div>
-        )}
-        <div style={{ ...BOX, overflow: "visible", perspective: 1200, perspectiveOrigin: "312px 470px" }}>
-          <div style={{ ...BOX, overflow: "visible", transformOrigin: "312px 470px", transform: `rotateX(${flip}deg)` }}>
-            <div style={{ ...BOX, clipPath: ELBOW }}>
-              <Img src={S("e_station")} style={FULL} />
-            </div>
-          </div>
+    <AbsoluteFill style={{ backgroundColor: "#15120e", overflow: "hidden", perspective: 2200 }}>
+      <div style={{ ...BOX, transform: `rotateX(${flip}deg)`, transformOrigin: "960px 540px" }}>
+        <div style={{ ...BOX, transform: cam(z, x, y), transformOrigin: "0 0" }}>
+          <Img src={S("e_station")} style={FULL} />
         </div>
       </div>
     </AbsoluteFill>
   );
 };
 
-// 3 · La tabla real gira sobre su borde de abajo como una tapa: arriba hacia la cámara en "row", al revés en "two", plana en "nothing".
-const BOARD = poly([[265, 35], [1450, 35], [1446, 875], [262, 880]]);
+// 3 · Lectura de la tabla renglón por renglón: la cámara se pega a las filas llenas en "row", baja a la fila rala en "two" y se queda en las filas vacías en "nothing".
 export const Board: React.FC<{ dur: number; fRow: number; fTwo: number; fNothing: number }> = ({ dur, fRow, fTwo, fNothing }) => {
   const f = useCurrentFrame();
-  const a = interpolate(f, [fRow - 6, fRow + 14, fTwo - 4, fTwo + 18, fNothing - 2, fNothing + 16], [0, -36, -30, 30, 26, 0], { ...CL, easing: EASE });
-  const lifted = Math.min(1, Math.abs(a) / 20);
-  const end = interpolate(f, [fNothing, dur], [0, 1], { ...CL, easing: EASE });
+  const [z, x, y] = glide(f, [0, fRow - 8, fRow + 18, fTwo - 6, fTwo + 22, fNothing - 4, fNothing + 26, dur], [[1.1, 860, 450], [1.15, 860, 430], [1.75, 760, 190], [1.75, 860, 230], [1.75, 560, 520], [1.7, 600, 530], [1.6, 860, 730], [1.65, 860, 740]]);
   return (
     <AbsoluteFill style={{ backgroundColor: "#1f1a15", overflow: "hidden" }}>
-      <div style={{ ...BOX, transform: cam(1.04 + 0.04 * Math.sin(f / 40) + 0.45 * end, 857 + 30 * Math.sin(f / 55), 700), transformOrigin: "0 0" }}>
-        <Img src={S("e_board")} style={{ ...FULL, filter: `brightness(${1 - 0.6 * lifted})` }} />
-        <div style={{ ...BOX, overflow: "visible", perspective: 1700, perspectiveOrigin: "857px 600px" }}>
-          <div style={{ ...BOX, overflow: "visible", transformOrigin: "857px 878px", transform: `rotateX(${a}deg)`, filter: `drop-shadow(0 ${14 * lifted}px ${22 * lifted}px rgba(0,0,0,0.55))` }}>
-            <div style={{ ...BOX, clipPath: BOARD }}>
-              <Img src={S("e_board")} style={FULL} />
-            </div>
-          </div>
-        </div>
+      <div style={{ ...BOX, transform: cam(z, x, y), transformOrigin: "0 0" }}>
+        <Img src={S("e_board")} style={{ ...FULL, filter: "contrast(1.18)" }} />
       </div>
     </AbsoluteFill>
   );
 };
 
-// 4 · Una pasada de cortadora destapa la franja real: la franja arranca tapada con pasto alto de la misma foto y el borde de corte avanza de izquierda a derecha hasta "turn".
-const top = (x: number) => 520 + (x / 1920) * 88, bot = (x: number) => 612 + (x / 1920) * 82;
+// 4 · Grúa desde adentro del pasto alto: arranca entre los tallos y sube hasta que aparece la franja corta delante de la casa y el granero en "turn"; el pasto de adelante baja más rápido (paralaje).
+const GRASS = poly([[0, 585], [500, 600], [960, 635], [1400, 670], [1920, 715], [1920, 1080], [0, 1080]]);
 export const Strip: React.FC<{ dur: number; fTurn: number }> = ({ dur, fTurn }) => {
   const f = useCurrentFrame();
-  const wx = interpolate(f, [6, Math.max(fTurn, 30)], [-40, 1960], { ...CL, easing: Easing.inOut(Easing.quad) });
-  const pts: number[][] = [];
-  for (let i = 0; i <= 8; i++) { const y = top(wx) + ((bot(wx) - top(wx)) * i) / 8; pts.push([wx + (i % 2 ? 14 : -10), y]); }
-  const cover = poly([...pts, [1920, bot(1920) + 6], [1920, top(1920) - 4]].concat([[wx - 10, top(wx) - 4]]));
-  const c = interpolate(f, [0, dur], [1.0, 1.32], { ...CL, easing: EASE });
+  const u = interpolate(f, [0, Math.max(30, fTurn)], [0, 1], { ...CL, easing: EASE });
+  const z = 1.75 - 0.65 * u + 0.04 * interpolate(f, [fTurn, dur], [0, 1], CL);
+  const y = 900 - 360 * u;
+  const drop = 90 * u;
   return (
     <AbsoluteFill style={{ backgroundColor: "#3a3a36", overflow: "hidden" }}>
-      <div style={{ ...BOX, transform: `scale(${c})`, transformOrigin: "960px 575px" }}>
+      <div style={{ ...BOX, transform: cam(z, 960, y), transformOrigin: "0 0" }}>
         <Img src={S("e_strip")} style={FULL} />
-        {wx < 1940 && (
-          <div style={{ ...BOX, clipPath: cover }}>
-            <Img src={S("e_strip")} style={{ ...FULL, transform: "translateY(-115px)" }} />
-          </div>
-        )}
+        <div style={{ ...BOX, clipPath: GRASS, transform: `translateY(${drop}px) scale(1.06)`, transformOrigin: "960px 1080px" }}>
+          <Img src={S("e_strip")} style={FULL} />
+        </div>
       </div>
     </AbsoluteFill>
   );
