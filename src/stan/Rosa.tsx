@@ -79,11 +79,11 @@ export const IdxR: React.FC<{ head: string; cards: { n: number; title: string; s
     <AbsoluteFill style={{ ...azulejo(150), opacity: o }}>
       <AbsoluteFill style={{ background: "rgba(16,24,48,0.35)" }} />
       <div style={{ position: "absolute", top: 70, width: "100%", textAlign: "center" }}><Big txt={head} size={64} /></div>
-      <div style={{ position: "absolute", top: 230, left: 0, right: 0, display: "flex", justifyContent: "center", gap: 56 }}>
+      <div style={{ position: "absolute", top: 230, left: 0, right: 0, display: "flex", justifyContent: "center", gap: 56, transform: `scale(${1 + 0.06 * cl(f / Math.max(1, dur))})`, transformOrigin: "50% 40%" }}>
         {cards.map((c, i) => { const p = sp(f, c.f ?? 10 + i * 12, 13); const lit = on === undefined || on === c.n;
           return (
             <div key={i} style={{ width: 500, background: R.crema, padding: 18, paddingBottom: 26, transform: `translateY(${(1 - p) * 300}px) rotate(${(i - 1) * 2.2}deg)`, opacity: p * (lit ? 1 : 0.72), boxShadow: "0 24px 50px rgba(0,0,0,0.5)" }}>
-              <Img src={staticFile(c.src)} style={{ width: "100%", height: 300, objectFit: "cover" }} />
+              <div style={{ height: 300, overflow: "hidden" }}><Img src={staticFile(c.src)} style={{ width: "100%", height: 300, objectFit: "cover", transform: `scale(${1.04 + 0.1 * cl(f / Math.max(1, dur))})` }} /></div>
               <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 24, letterSpacing: 5, color: R.barro, marginTop: 16 }}>RECETA {c.n}</div>
               <div style={{ fontFamily: HAND, fontSize: 44, lineHeight: 1.1, color: R.pen, marginTop: 6 }}>{c.title}</div>
             </div>
@@ -100,7 +100,7 @@ export const ListaR: React.FC<{ head: string; title: string; rows: { txt: string
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Base bg={bg} dur={dur} dim={0.45} />
-      <div style={{ position: "absolute", left: "50%", top: 70, width: 1080, marginLeft: -540, height: 940, ...ficha, transform: `translateY(${(1 - p) * 900}px) rotate(-1.2deg)`, boxShadow: "0 30px 70px rgba(0,0,0,0.6)", padding: "26px 60px" }}>
+      <div style={{ position: "absolute", left: "50%", top: 112, width: 1080, marginLeft: -540, height: 900, ...ficha, transform: `translateY(${(1 - p) * 900}px) rotate(-1.2deg)`, boxShadow: "0 30px 70px rgba(0,0,0,0.6)", padding: "26px 60px" }}>
         <div style={{ position: "absolute", top: -18, left: 420, width: 240, height: 44, background: "rgba(236,224,190,0.9)", transform: "rotate(2deg)" }} />
         <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 24, letterSpacing: 6, color: R.barro }}>{head}</div>
         <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 44, color: R.ink, marginTop: 2 }}>{title}</div>
@@ -159,7 +159,7 @@ export const VsR: React.FC<{ head: string; mal: { t: string; s: string; src: str
   const f = useCurrentFrame(); const o = useOut(dur, 8); const m = sp(f, 4, 15), b = sp(f, modo === "bien" ? 4 : 999, 15); const mark = sp(f, 18, 11);
   const Half: React.FC<{ x: typeof mal; on: number; bad: boolean; lit: boolean }> = ({ x, on, bad, lit }) => (
     <div style={{ flex: 1, position: "relative", overflow: "hidden", opacity: cl(on) * (lit ? 1 : 0.82), filter: lit ? undefined : "saturate(0.45) brightness(0.8)", transform: `translateY(${(1 - on) * 80}px)` }}>
-      <Img src={staticFile(x.src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      <Img src={staticFile(x.src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.1 * cl(f / Math.max(1, dur))})` }} />
       <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(16,10,6,0.85), transparent 55%)" }} />
       <div style={{ position: "absolute", left: 50, bottom: 60, right: 40 }}>
         <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 64, color: "#FBF6EA", textShadow: tsh }}>{x.t}</div>
@@ -211,7 +211,7 @@ export const RelojR: React.FC<{ min: number; label: string; sub?: string; bg?: s
       <Base bg={bg} dur={dur} dim={0.55} />
       <div style={{ position: "absolute", left: 230, top: 190, width: 700, height: 700, borderRadius: "50%", background: `conic-gradient(${R.barro} 0 ${fill}deg, ${R.crema} ${fill}deg 360deg)`, border: `22px solid ${R.azul}`, boxShadow: "0 30px 70px rgba(0,0,0,0.55)", transform: `scale(${p})`, display: "flex", alignItems: "center", justifyContent: "center" }}>
         <div style={{ width: 430, height: 430, borderRadius: "50%", background: R.crema, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-          <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 190, color: R.azul, lineHeight: 1 }}>{Math.round((fill / 360) * 60)}</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 190, color: R.azul, lineHeight: 1 }}>{min % 1 && fill >= (min / 60) * 360 - 0.5 ? `${Math.floor(min) || ""}½` : Math.floor((fill / 360) * 60 + 0.001)}</div>
           <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 36, letterSpacing: 6, color: R.barro2 }}>MINUTOS</div>
         </div>
       </div>
