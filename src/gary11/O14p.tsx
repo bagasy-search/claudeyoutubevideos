@@ -81,7 +81,7 @@ export const ShipTag: React.FC<{ big: string; label: string; src: string; dur: n
 // chip de seguridad: cinta de peligro amarilla y negra que cruza abajo con el aviso en un rótulo negro
 export const Hazard: React.FC<{ text: string; dur: number }> = ({ text, dur }) => {
   const f = useCurrentFrame(); const o = inout(f, dur, 8, 10); const w = ou(f / 12);
-  return <div style={{ position: "absolute", left: 0, right: 0, bottom: 80, opacity: o, display: "flex", justifyContent: "center" }}>
+  return <div style={{ position: "absolute", left: 0, right: 0, bottom: 230, opacity: o, display: "flex", justifyContent: "center" }}>
     <div style={{ position: "absolute", left: 0, top: 22, width: `${w * 100}%`, height: 64, background: "repeating-linear-gradient(-45deg,#f2c21b 0 34px,#151515 34px 68px)", boxShadow: "0 8px 0 rgba(0,0,0,.35)" }} />
     <div style={{ position: "relative", padding: "16px 44px", background: INK, border: "6px solid #f2c21b", borderRadius: 10, fontFamily: SANS, fontWeight: 900, fontSize: 48, color: "#fff", letterSpacing: 1, whiteSpace: "nowrap", transform: `scale(${0.9 + 0.1 * w})` }}>⚠ {text}</div>
   </div>;
