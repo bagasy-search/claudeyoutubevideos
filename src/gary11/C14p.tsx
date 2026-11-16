@@ -66,39 +66,38 @@ const Dial: React.FC<{ x: number; y: number; d: number; ang: number; ring?: stri
 );
 // corte de la garrafa (vista de costado, parada)
 const TankCut: React.FC<{ x: number; y: number; w: number; h: number; children?: React.ReactNode; style?: CSS }> = ({ x, y, w, h, children, style }) => (
-  <div style={{ position: "absolute", left: x, top: y, width: w, height: h, borderRadius: `${w * 0.28}px ${w * 0.28}px ${w * 0.22}px ${w * 0.22}px`, border: "14px solid #6a6f75", background: "rgba(10,10,12,.82)", overflow: "hidden", boxShadow: "0 22px 30px rgba(0,0,0,.55), inset 0 0 0 4px #9aa0a6", ...style }}>{children}</div>
+  <div style={{ position: "absolute", left: x, top: y, width: w, height: h, borderRadius: `${w * 0.28}px ${w * 0.28}px ${w * 0.22}px ${w * 0.22}px`, border: "14px solid #6a6f75", background: "rgba(34,36,40,.72)", overflow: "hidden", boxShadow: "0 22px 30px rgba(0,0,0,.55), inset 0 0 0 4px #9aa0a6", ...style }}>{children}</div>
 );
 
 // ================= jobs (001) / jobs:go (191) / jobs:done (241): tres trabajos, un fuego
-const JOBS: [string, string, string][] = [["HEAT", "g1940", "+19 °F"], ["COOK", "g2250", "5 MIN"], ["BOIL", "y2380", "22 MIN"]];
+const JOBS: [string, string, string][] = [["HEAT", "g1040", "+19 °F"], ["COOK", "g2250", "5 MIN"], ["BOIL", "y2380", "22 MIN"]];
 const Jobs: React.FC<P> = ({ m, a }) => {
   const f = useCurrentFrame(); const mode = a[0] || "";
-  return <Plate src="g0050" d={0.88}>
+  return <Plate src="g3130" d={0.88}>
     <div style={{ position: "absolute", left: 140, right: 140, top: 130, display: "flex", gap: 50 }}>
       {JOBS.map(([t, src, v], i) => { const e = k(f, M(m, i, 6 + i * 20), 12); const glow = mode === "go" ? 0.3 : e;
         return <div key={t} style={{ flex: 1, opacity: cl(e * 2), transform: `translateY(${(1 - e) * 120}px)` }}>
           <div style={{ height: 420, backgroundImage: IMG(src), backgroundSize: "cover", backgroundPosition: "50% 50%", border: `8px solid ${glow > 0.5 ? EMBER : "#3a3c40"}`, boxShadow: `0 0 ${50 * glow}px rgba(255,122,26,${0.7 * glow}), 0 20px 26px rgba(0,0,0,.5)` }} />
-          <div style={{ marginTop: 22, display: "flex", alignItems: "baseline", justifyContent: "space-between" }}>
+          <div style={{ marginTop: 22, display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 6 }}>
             <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 84, color: WHITE }}>{i + 1}. {t}</div>
             {mode === "done" && <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 54, color: EMBER, opacity: k(f, 20 + i * 14, 8) }}>✓ {v}</div>}
             {mode === "go" && <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 60, color: HOT, opacity: k(f, 20 + i * 14, 8) }}>?</div>}
           </div></div>; })}
     </div>
-    <Big e={k(f, mode ? 50 : M(m, 2, 46) + 16, 12)} y={70} size={76}>{mode === "done" ? "All three, from one little fire." : mode === "go" ? "Real numbers. Thermometer and stopwatch." : "One fire. Three jobs."}</Big>
+    <Big e={k(f, mode ? 50 : M(m, 2, 46) + 16, 12)} y={70} size={76}>{mode === "done" ? "All three, from one little fire." : mode === "go" ? "Heat. Cook. Boil." : "One fire. Three jobs."}</Big>
   </Plate>;
 };
 
 // ================= nope (004): FAN · AUGER · CIRCUIT BOARD — cada placa se parte en dos con un corte de amoladora
 const Nope: React.FC<P> = ({ m }) => {
   const f = useCurrentFrame(); const W = ["FAN", "AUGER", "CIRCUIT BOARD"];
-  return <Plate src="g0050" d={0.86}>
-    {W.map((t, i) => { const a0 = M(m, i, 4 + i * 16); const cut = k(f, a0 + 8, 10); const sp = f > a0 + 4 && f < a0 + 14;
-      const half = (top: boolean) => <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg,#3b3e43,#24262a)", border: "6px solid #55595f", display: "flex", alignItems: "center", justifyContent: "center",
-        clipPath: top ? "polygon(0 0,100% 0,100% 38%,0 62%)" : "polygon(0 62%,100% 38%,100% 100%,0 100%)", transform: `translate(${(top ? -1 : 1) * cut * 18}px,${(top ? -1 : 1) * cut * 26}px) rotate(${(top ? -1 : 1) * cut * 3}deg)` }}>
-        <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: t.length > 6 ? 58 : 84, color: WHITE, letterSpacing: 3 }}>{t}</div></div>;
-      return <div key={t} style={{ position: "absolute", left: 130 + i * 580, top: 230, width: 500, height: 330, opacity: k(f, a0 - 6, 8) }}>
-        {half(true)}{half(false)}
-        {sp && Array.from({ length: 10 }).map((_, j) => <div key={j} style={{ position: "absolute", left: 250 + Math.cos(j * 0.7 + f) * (30 + (f - a0) * 14), top: 165 + Math.sin(j * 0.9) * 20 - (f - a0) * 3, width: 26, height: 4, borderRadius: 2, background: HOT, transform: `rotate(${j * 36}deg)` }} />)}
+  return <Plate src="g0840" d={0.82}>
+    {W.map((t, i) => { const a0 = M(m, i, 4 + i * 16); const x1 = k(f, a0 + 6, 8), x2 = k(f, a0 + 10, 8);
+      return <div key={t} style={{ position: "absolute", left: 110 + i * 590, top: 260, width: 520, height: 260, opacity: k(f, a0 - 6, 8), transform: `translateY(${(1 - k(f, a0 - 6, 10)) * 60}px)`,
+        background: "linear-gradient(135deg,#3b3e43,#24262a)", border: "6px solid #55595f", borderRadius: 8, boxShadow: "0 18px 24px rgba(0,0,0,.5)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 66, color: x1 > 0.5 ? "#8a8d92" : WHITE, letterSpacing: 2, textAlign: "center", lineHeight: 1.05 }}>{t}</div>
+        <div style={{ position: "absolute", left: "50%", top: "50%", width: 440 * x1, height: 22, marginLeft: -220, marginTop: -11, background: RED, borderRadius: 11, transform: "rotate(-22deg)", transformOrigin: "0 50%" }} />
+        <div style={{ position: "absolute", left: "50%", top: "50%", width: 440 * x2, height: 22, marginLeft: -220, marginTop: -11, background: RED, borderRadius: 11, transform: "rotate(22deg)", transformOrigin: "0 50%" }} />
       </div>; })}
     <Big e={k(f, M(m, 2, 40) + 18, 12)} y={120} size={92} col={HOT}>Just gravity.</Big>
   </Plate>;
@@ -115,8 +114,8 @@ const Board: React.FC<P & { pick?: number; recap?: boolean }> = ({ pick, recap }
     {STEP_IMG.map((src, i) => { const e = k(f, i * 3, 10); const sw = Math.sin((f - i * 3) / 5) * 9 * Math.exp(-(f - i * 3) / 22) * (f > i * 3 ? 1 : 0);
       const on = pick === undefined || pick === i + 1; const big = pick === i + 1 ? k(f, 10, 14) : 0;
       const x = 70 + (i % 5) * 362, y = i < 5 ? 70 : 520;
-      return <div key={i} style={{ position: "absolute", left: x, top: y, width: 330, transformOrigin: "50% -20px", opacity: cl(e * 2) * (on ? 1 : 0.35), zIndex: big > 0 ? 5 : 1,
-        transform: `rotate(${sw}deg) translateY(${(1 - e) * -200}px) scale(${1 + big * 0.35})` }}>
+      return <div key={i} style={{ position: "absolute", left: x, top: y, width: 330, transformOrigin: "50% -20px", opacity: cl(e * 2), filter: on ? "none" : "brightness(.35)", zIndex: big > 0 ? 5 : 1,
+        transform: `translate(${(795 - x) * big}px,${(330 - y) * big}px) rotate(${sw}deg) translateY(${(1 - e) * -200}px) scale(${1 + big * 0.6})` }}>
         <div style={{ position: "absolute", left: 151, top: -34, width: 28, height: 44, border: "6px solid #c9ced3", borderBottom: "none", borderRadius: "14px 14px 0 0" }} />
         <div style={{ background: CREAM, padding: 12, boxShadow: "0 16px 20px rgba(0,0,0,.5)" }}>
           <div style={{ height: 210, backgroundImage: IMG(src), backgroundSize: "cover", backgroundPosition: "50% 50%" }} />
@@ -131,11 +130,11 @@ const Board: React.FC<P & { pick?: number; recap?: boolean }> = ({ pick, recap }
 // ================= step:n — chapa negra: «STEP n» se escribe con tiza de jabón (borde con chispa), a la derecha la copia del paso abulonada
 const Step: React.FC<P> = ({ a }) => {
   const f = useCurrentFrame(); const n = +a[0]; const w = k(f, 2, 22); const e = k(f, 6, 14);
-  return <Plate src={STEP_IMG[n - 1]} d={0.9}>
+  return <Plate src="g3130" d={0.9}>
     <div style={{ position: "absolute", left: 90, top: 180, width: 820, height: 600, background: "linear-gradient(160deg,#2a2c30,#141517)", border: "4px solid #3f4247", boxShadow: "0 22px 30px rgba(0,0,0,.55)" }}>
       <div style={{ position: "absolute", left: 60, top: 40, clipPath: `inset(0 ${100 - w * 100}% 0 0)` }}>
         <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 90, color: "#e9e6de", letterSpacing: 6 }}>STEP</div>
-        <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 300, lineHeight: 0.9, color: "#f2efe6" }}>{n}<span style={{ fontSize: 110, color: "#a9a59b" }}> of 10</span></div>
+        <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 250, lineHeight: 0.9, color: "#f2efe6", whiteSpace: "nowrap" }}>{n}<span style={{ fontSize: 90, color: "#a9a59b" }}> of 10</span></div>
       </div>
       {w < 0.98 && <div style={{ position: "absolute", left: 60 + w * 640, top: 200, width: 24, height: 24, borderRadius: "50%", background: "#fff6d8", boxShadow: `0 0 30px 12px ${HOT}` }} />}
       <div style={{ position: "absolute", left: 60, bottom: 50, padding: "12px 26px", background: EMBER, fontFamily: SANS, fontWeight: 900, fontSize: 48, color: INK, opacity: k(f, 22, 10), whiteSpace: "nowrap" }}>{STEPS[n - 1]}</div>
@@ -147,17 +146,20 @@ const Step: React.FC<P> = ({ a }) => {
 };
 
 // ================= prize (014): la puerta de la estufa se cierra sobre el truco de la noche — «AL FINAL»
-const Prize: React.FC<P> = ({ dur }) => {
-  const f = useCurrentFrame(); const shut = lin(f, dur - 40, dur - 22, 0, 1);
-  return <Plate src="g2620" d={0.6}>
-    <div style={{ position: "absolute", left: 460, top: 150, width: 1000, height: 560, overflow: "hidden", border: "18px solid #2b2d31", background: "rgba(10,10,12,.55)", boxShadow: "0 22px 30px rgba(0,0,0,.55)" }}>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 120, textAlign: "center", opacity: k(f, 4, 12) }}>
+const Prize: React.FC<P> = () => {
+  const f = useCurrentFrame(); const e = k(f, 4, 14); const lock = k(f, 30, 10); const sw = Math.sin(f / 7) * 3 * Math.exp(-Math.max(0, f - 40) / 30);
+  return <Plate src="g3130" d={0.7}>
+    <div style={{ position: "absolute", left: 360, top: 140, width: 1200, height: 560, backgroundImage: IMG("g1040"), backgroundSize: "cover", border: "18px solid #2b2d31", boxShadow: "0 22px 30px rgba(0,0,0,.55)", opacity: cl(e * 2), transform: `scale(${0.94 + 0.06 * e})` }}>
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,rgba(14,13,12,.15),rgba(14,13,12,.75))" }} />
+      <div style={{ position: "absolute", left: 50, bottom: 40 }}>
         <Lbl size={44} col={HOT} style={{ letterSpacing: 10 }}>STEP 10</Lbl>
-        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 104, color: WHITE, lineHeight: 1.05, marginTop: 14 }}>All night<br />on one load</div></div>
-      <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: "50%", background: "linear-gradient(90deg,#3a3d42,#55595f)", transform: `translateX(${(shut - 1) * 100}%)`, borderRight: "6px solid #1d1f22" }} />
-      <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "50%", background: "linear-gradient(270deg,#3a3d42,#55595f)", transform: `translateX(${(1 - shut) * 100}%)` }} />
+        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 100, color: WHITE, lineHeight: 1.02, marginTop: 8, textShadow: "0 4px 0 rgba(0,0,0,.6)" }}>All night on one load</div></div>
     </div>
-    <Big e={k(f, 20, 12)} y={90} size={70} col={HOT}>Saved for the end.</Big>
+    <div style={{ position: "absolute", left: 1380, top: 560 - (1 - lock) * 500, opacity: lock, transform: `rotate(${sw}deg)`, transformOrigin: "50% 0" }}>
+      <div style={{ width: 110, height: 110, margin: "0 auto -40px", border: "22px solid #b9bec3", borderBottom: "none", borderRadius: "60px 60px 0 0", boxSizing: "border-box" }} />
+      <div style={{ width: 190, height: 160, borderRadius: 18, background: `linear-gradient(160deg,${HOT},#c4561a)`, boxShadow: "0 14px 20px rgba(0,0,0,.55)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div style={{ width: 30, height: 56, borderRadius: 15, background: INK }} /></div></div>
+    <Big e={k(f, 24, 12)} y={90} size={70} col={HOT}>Saved for the end.</Big>
   </Plate>;
 };
 
@@ -165,8 +167,8 @@ const Prize: React.FC<P> = ({ dur }) => {
 const PARTS: [string, string, number, number][] = [["PROPANE TANK", "g0220", 80, 90], ["4\" SQUARE TUBE", "g0260", 80, 600], ["¼\" PLATE", "g0300", 1480, 90], ["GRILL GRATE", "g0320", 1480, 600], ["STEEL BUCKET", "g0340", 780, 690]];
 const Parts: React.FC<P> = () => {
   const f = useCurrentFrame();
-  return <Plate src="g0050" d={0.9}>
-    <div style={{ position: "absolute", left: 700, top: 90, width: 520, height: 520, borderRadius: "50%", backgroundImage: IMG("g0050"), backgroundSize: "cover", border: `10px solid ${EMBER}`, boxShadow: "0 22px 30px rgba(0,0,0,.6)", opacity: k(f, 0, 12) }} />
+  return <Plate src="g3130" d={0.9}>
+    <div style={{ position: "absolute", left: 700, top: 90, width: 520, height: 520, borderRadius: "50%", backgroundImage: IMG("g1040"), backgroundSize: "cover", border: `10px solid ${EMBER}`, boxShadow: "0 22px 30px rgba(0,0,0,.6)", opacity: k(f, 0, 12) }} />
     {PARTS.map(([t, src, x, y], i) => { const e = k(f, 8 + i * 9, 10); const cx = x + 180, cy = y + 140; const dx = 960 - cx, dy = 350 - cy; const L = Math.hypot(dx, dy) - 280;
       return <React.Fragment key={t}>
         <div style={{ position: "absolute", left: cx, top: cy, width: L * e, borderTop: "5px dashed rgba(246,242,234,.8)", transformOrigin: "0 0", transform: `rotate(${Math.atan2(dy, dx)}rad)` }} />
@@ -176,37 +178,36 @@ const Parts: React.FC<P> = () => {
 };
 
 // ================= receipt (036): ticket de ferretería que sale impreso renglón a renglón
-const RCPT: [string, string][] = [["PROPANE TANK", "FREE"], ["4\" SQ TUBE · DROP", "$4.00"], ["¼\" PLATE (MY PILE)", "$12.00"], ["GRILL GRATE", "FREE"], ["STEEL BUCKET", "FREE"], ["HOSE BIB", "FREE"]];
+const RCPT: [string, string][] = [["PROPANE TANK", "FREE"], ["4\" SQ TUBE · DROP", "$2.00"], ["¼\" PLATE", "$12.00"], ["GRILL GRATE", "FREE"], ["STEEL BUCKET", "FREE"], ["HOSE BIB", "FREE"]];
 const Receipt: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const n = Math.floor(lin(f, 6, Math.max(40, dur - 30), 0, RCPT.length + 0.99));
   return <Plate src="g0270" d={0.78}>
     <div style={{ position: "absolute", left: 640, top: 60, width: 640, height: 40, background: "#2b2d31", borderRadius: 8 }} />
     <div style={{ position: "absolute", left: 670, top: 80, width: 580, background: "#fdfcf8", boxShadow: "0 22px 30px rgba(0,0,0,.5)", padding: "40px 40px 30px", boxSizing: "border-box", fontFamily: "monospace", fontWeight: 900, color: INK }}>
       <div style={{ fontSize: 36, textAlign: "center", letterSpacing: 4, marginBottom: 24 }}>SCRAP RUN</div>
-      {RCPT.slice(0, n).map(([l, v]) => <div key={l} style={{ display: "flex", justifyContent: "space-between", fontSize: 34, marginBottom: 18, whiteSpace: "nowrap" }}><span>{l}</span><span style={{ color: v === "FREE" ? GREEN : INK }}>{v}</span></div>)}
-      <div style={{ borderTop: "4px dashed #333", marginTop: 10, height: 10 }} />
+      {RCPT.slice(0, n).map(([l, v]) => <div key={l} style={{ display: "flex", justifyContent: "space-between", gap: 30, fontSize: 30, marginBottom: 18, whiteSpace: "nowrap" }}><span>{l}</span><span style={{ color: v === "FREE" ? GREEN : INK }}>{v}</span></div>)}
+      <div style={{ borderTop: "4px dashed #333", marginTop: 10, paddingTop: 14, display: "flex", justifyContent: "space-between", fontSize: 46, opacity: n >= RCPT.length ? 1 : 0 }}><span>TOTAL</span><span>$14.00</span></div>
     </div>
     <Big e={k(f, dur - 30, 12)} y={70} size={74} col={HOT}>Most of it was free.</Big>
   </Plate>;
 };
 
 // ================= tools (037): pared de herramientas con siluetas pintadas que se llenan
-const TOOLS: [string, number, number, number, number][] = [["ANGLE GRINDER", 140, 130, 520, 200], ["WELDER", 720, 130, 460, 300], ["DRILL + STEP BIT", 1240, 130, 520, 200], ["TAPE", 140, 420, 260, 170], ["SOAPSTONE", 440, 420, 220, 170], ["FACE SHIELD", 1240, 420, 520, 200], ["FIRE EXTINGUISHER", 720, 520, 460, 200]];
+const TOOLS: [string, number, number, number, number][] = [["ANGLE GRINDER", 120, 140, 540, 200], ["WELDER", 700, 140, 500, 320], ["DRILL + STEP BIT", 1240, 140, 560, 200], ["TAPE", 120, 400, 260, 180], ["SOAPSTONE", 400, 400, 260, 180], ["FACE SHIELD", 1240, 400, 560, 200], ["FIRE EXTINGUISHER", 700, 520, 500, 200]];
 const Tools: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame();
-  return <AbsoluteFill style={{ background: "linear-gradient(180deg,#c4a77d,#a98a5f)" }}>
-    <AbsoluteFill style={{ background: "repeating-linear-gradient(90deg, rgba(0,0,0,.05) 0 2px, transparent 2px 160px)" }} />
+  return <Plate src="g0270" d={0.8}>
     {TOOLS.map(([t, x, y, w, h], i) => { const on = k(f, 6 + i * Math.max(6, (dur - 60) / 7), 8);
-      return <div key={t} style={{ position: "absolute", left: x, top: y, width: w, height: h, borderRadius: 26, border: `8px solid ${EMBER}`, background: `rgba(27,26,24,${0.2 + on * 0.7})`, display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: w < 300 ? 34 : 44, color: on > 0.5 ? WHITE : "rgba(27,26,24,.5)", textAlign: "center", lineHeight: 1.1 }}>{on > 0.5 ? "✓ " : ""}{t}</div></div>; })}
-    <Big e={k(f, dur - 40, 12)} y={70} size={70} col={INK} style={{ textShadow: "none" }}>Extinguisher within reach.</Big>
-  </AbsoluteFill>;
+      return <div key={t} style={{ position: "absolute", left: x, top: y, width: w, height: h, borderRadius: 22, border: `8px ${on > 0.5 ? "solid" : "dashed"} ${EMBER}`, boxSizing: "border-box", background: `rgba(20,20,22,${0.35 + on * 0.5})`, display: "flex", alignItems: "center", justifyContent: "center", padding: 10, transform: `scale(${0.96 + 0.04 * on})` }}>
+        <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: w < 300 ? 32 : 44, color: on > 0.5 ? WHITE : "rgba(246,242,234,.45)", textAlign: "center", lineHeight: 1.1 }}>{on > 0.5 && <span style={{ color: HOT }}>✓<br /></span>}{t}</div></div>; })}
+    <Big e={k(f, dur - 40, 12)} y={70} size={70} col={HOT}>Extinguisher within reach.</Big>
+  </Plate>;
 };
 
 // ================= vapor (045): la garrafa acostada en corte — el vapor pesado en el fondo y la chispa que se acerca
 const Vapor: React.FC<P> = ({ dur }) => {
-  const f = useCurrentFrame(); const sx = lin(f, 30, dur - 30, 1700, 1300); const boom = f > dur - 30 ? Math.sin((f - dur + 30) * 0.9) * 0.5 + 0.5 : 0;
-  return <Plate src="g0440" d={0.9}>
+  const f = useCurrentFrame(); const sx = lin(f, 30, dur - 30, 1700, 1300); const boom = k(f, dur - 30, 6);
+  return <Plate src="g0490" d={0.9}>
     <TankCut x={420} y={300} w={880} h={420} style={{ borderRadius: 200 }}>
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 150 * k(f, 6, 30), background: `repeating-linear-gradient(${f * 2}deg, rgba(255,190,90,.55) 0 18px, rgba(255,150,60,.35) 18px 36px)` }} />
     </TankCut>
@@ -220,7 +221,7 @@ const Vapor: React.FC<P> = ({ dur }) => {
 // ================= fill (056): la garrafa parada en corte — el agua sube y empuja el vapor afuera por el agujero
 const Fill: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const lv = lin(f, 6, dur - 20, 0.05, 1);
-  return <Plate src="g0540" d={0.88}>
+  return <Plate src="g0490" d={0.88}>
     <div style={{ position: "absolute", left: 875, top: 120, width: 170, height: 70, background: "#6a6f75", borderRadius: 10 }} />
     <TankCut x={700} y={170} w={520} h={680}>
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: `${lv * 100}%`, background: `linear-gradient(180deg,#7fb6f0,${WATER})` }} />
@@ -235,7 +236,7 @@ const Fill: React.FC<P> = ({ dur }) => {
 
 // ================= stat:x — chapa de identificación de bronce remachada, con un brillo que la cruza
 const STAT: Record<string, [string, string, string, string]> = {
-  mercaptan: ["y0610", "ETHYL MERCAPTAN", "THE ROTTEN-EGG SMELL ADDED TO PROPANE", "NFPA 58 · LP-GAS CODE"],
+  mercaptan: ["g0220", "ETHYL MERCAPTAN", "THE ROTTEN-EGG SMELL ADDED TO PROPANE", "NFPA 58 · LP-GAS CODE"],
   btu: ["y0100", "≈ 8,000 BTU / LB", "HEAT IN ONE POUND OF WOOD PELLETS", "US DOE · PELLET FUELS INSTITUTE"],
   cdc: ["y2700", "TENS OF THOUSANDS", "ER VISITS A YEAR FROM CARBON MONOXIDE", "CDC"],
   nfpa: ["g3080", "36 INCHES", "UNLISTED STOVE TO ANYTHING THAT CAN BURN", "NFPA 211"] };
@@ -256,14 +257,14 @@ const Stat: React.FC<P> = ({ a }) => {
 const Cuts: React.FC<P> = ({ m }) => {
   const f = useCurrentFrame(); const d1 = k(f, M(m, 0, 6), 20), d2 = k(f, M(m, 1, 50), 20);
   const dash = "6px dashed #f2efe6";
-  return <Plate src="g0680" d={0.9}>
+  return <Plate src="g0720" d={0.9}>
     <div style={{ position: "absolute", left: 660, top: 170, width: 600, height: 700, borderRadius: "170px 170px 120px 120px", background: "linear-gradient(90deg,#6d7278,#c3c8cd 35%,#9aa0a6 60%,#5c6167)", boxShadow: "0 22px 30px rgba(0,0,0,.55)" }}>
       <div style={{ position: "absolute", left: 175, top: 430, width: 250 * d1, height: 200, borderTop: dash, borderBottom: d1 > 0.98 ? dash : "none" }} />
       <div style={{ position: "absolute", left: 175, top: 430, width: 250, height: 200 * d1, borderLeft: dash, borderRight: d1 > 0.98 ? dash : "none", boxSizing: "border-box" }} />
       <div style={{ position: "absolute", left: 150, top: -20, width: 300, height: 60, borderRadius: "50%", border: dash, opacity: d2, transform: `scale(${0.6 + 0.4 * d2})` }} />
     </div>
     <Lbl size={44} box style={{ position: "absolute", left: 1290, top: 590, opacity: d1 }}>DOOR · 5" × 4"</Lbl>
-    <Lbl size={36} box style={{ position: "absolute", left: 1290, top: 680, opacity: d1 }}>2" ABOVE THE BOTTOM SEAM</Lbl>
+    <Lbl size={36} box style={{ position: "absolute", right: 60, top: 680, opacity: d1 }}>2" ABOVE THE SEAM</Lbl>
     <Lbl size={44} box col={HOT} style={{ position: "absolute", left: 1290, top: 150, opacity: d2 }}>TOP · 6" ROUND HOLE</Lbl>
     <Big e={k(f, 8, 12)} y={40} size={62}>Two cuts, with the tank full of water.</Big>
   </Plate>;
@@ -271,16 +272,16 @@ const Cuts: React.FC<P> = ({ m }) => {
 
 // ================= three (080): cuatro patas se hamacan en el piso desparejo, tres no
 const Three: React.FC<P> = () => {
-  const f = useCurrentFrame(); const rock = Math.sin(f / 5) * 3;
-  const stove = (x: number, legs: number, r: number, lab: string, col: string) => <div style={{ position: "absolute", left: x, top: 250, width: 520 }}>
+  const f = useCurrentFrame(); const rock = Math.sin(f / 5) * 4;
+  const stove = (x: number, legs: number, r: number, lab: string, col: string) => <div style={{ position: "absolute", left: x, top: 200, width: 560 }}>
     <div style={{ transform: `rotate(${r}deg)`, transformOrigin: "50% 100%" }}>
-      <div style={{ margin: "0 auto", width: 300, height: 340, borderRadius: "90px 90px 60px 60px", background: STEELG }} />
-      <div style={{ display: "flex", justifyContent: "space-between", width: 320, margin: "0 auto" }}>{Array.from({ length: legs }).map((_, i) => <div key={i} style={{ width: 22, height: 90, background: "#3a3d42" }} />)}</div></div>
-    <div style={{ height: 24, background: "repeating-linear-gradient(90deg,#8b8478 0 60px,#7b7468 60px 130px)", borderRadius: 6 }} />
-    <Lbl size={46} col={col} box style={{ marginTop: 26, textAlign: "center" }}>{lab}</Lbl></div>;
-  return <Plate src="g0760" d={0.88}>
-    {stove(260, 4, rock, "4 LEGS · ROCKS", "#ff9a8a")}{stove(1140, 3, 0, "3 LEGS · NEVER ROCKS", HOT)}
-    <Big e={k(f, 20, 12)} y={70} size={70}>A stove full of fire should never rock.</Big>
+      <div style={{ margin: "0 auto", width: 320, height: 400, borderRadius: "100px 100px 60px 60px", backgroundImage: IMG("g0220"), backgroundSize: "cover", backgroundPosition: "50% 45%", border: "6px solid #3a3d42", boxShadow: "0 16px 22px rgba(0,0,0,.5)" }} />
+      <div style={{ display: "flex", justifyContent: legs === 3 ? "space-between" : "space-around", width: 340, margin: "0 auto" }}>{Array.from({ length: legs }).map((_, i) => <div key={i} style={{ width: 26, height: 100, background: "linear-gradient(90deg,#55595f,#2c2f33)", transform: legs === 3 && i === 1 ? "translateY(-6px)" : "none" }} />)}</div></div>
+    <div style={{ height: 26, background: "repeating-linear-gradient(90deg,#9a9286 0 60px,#857d70 60px 130px)", borderRadius: 6, transform: legs === 4 ? "rotate(-2deg)" : "none" }} />
+    <Lbl size={50} col={col} box style={{ marginTop: 26, textAlign: "center" }}>{lab}</Lbl></div>;
+  return <Plate src="g0760" d={0.9}>
+    {stove(220, 4, rock, "4 LEGS · IT ROCKS", "#ffb0a4")}{stove(1140, 3, 0, "3 LEGS · ROCK SOLID", HOT)}
+    <Big e={k(f, 20, 12)} y={60} size={66}>On a rough floor, three legs never rock.</Big>
   </Plate>;
 };
 
@@ -291,7 +292,7 @@ const Auger: React.FC<P> = ({ m, dur }) => {
     <div style={{ position: "absolute", left: 300, top: 260, width: 1000, height: 120, borderRadius: 60, background: "#2b2d31", border: "8px solid #55595f", overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0, background: `repeating-linear-gradient(60deg, #9aa0a6 0 20px, #4a4e54 20px 44px)`, backgroundPositionX: on ? f * 6 : cut * 6 }} /></div>
     <Lbl size={40} box style={{ position: "absolute", left: 300, top: 190 }}>AUGER · NEEDS A MOTOR</Lbl>
-    <div style={{ position: "absolute", left: 1330, top: 230, width: 180, height: 180, borderRadius: 24, background: on ? "#ffe9b0" : "#3a3c40", boxShadow: on ? `0 0 60px 10px ${HOT}` : "none", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 40, color: INK }}>{on ? "POWER" : ""}</div>
+    <div style={{ position: "absolute", left: 1330, top: 230, width: 180, height: 180, borderRadius: 24, background: on ? "#ffe9b0" : "#3a3c40", boxShadow: on ? `0 0 60px 10px ${HOT}` : "none", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 40, color: INK }}>{on ? "POWER" : "OFF"}</div>
     <div style={{ position: "absolute", left: 1420, top: 410, width: 12, height: 220, background: "#111" }} />
     <div style={{ position: "absolute", left: 1385, top: 630 + (1 - on) * 60, width: 80, height: 60, borderRadius: 10, background: "#222", transform: `rotate(${(1 - on) * 25}deg)` }} />
     {!on && <Lbl size={66} col={WHITE} style={{ position: "absolute", left: 300, top: 470, background: RED, padding: "12px 36px", borderRadius: 12 }}>POWER OUT = COLD STOVE</Lbl>}
@@ -307,7 +308,7 @@ const Gravity: React.FC<P> = () => {
       {Array.from({ length: 30 }).map((_, i) => { const t = ((i / 30) + f / 160) % 1; return <Pel key={i} x={t * 880} y={20 + (i * 37) % 100} r={(i * 47) % 180} s={1.5} />; })}
     </div>
     <div style={{ position: "absolute", left: 1050, top: 640, display: "flex", gap: 6 }}>{[0, 1, 2, 3, 4].map((i) => <Flame key={i} s={1.5} seed={i} />)}</div>
-    <Lbl size={50} col={HOT} box style={{ position: "absolute", left: 1220, top: 520 }}>FIRE EATS · PELLETS SLIDE IN</Lbl>
+    <Lbl size={50} col={HOT} box style={{ position: "absolute", right: 60, top: 520 }}>PELLETS SLIDE IN</Lbl>
     <Big e={k(f, 10, 12)} y={70} size={84}>It feeds itself.</Big>
   </Plate>;
 };
@@ -322,7 +323,7 @@ const Angle: React.FC<P> = ({ m }) => {
     <div style={{ position: "absolute", left: O.x, top: O.y, width: 700, height: 260, background: "linear-gradient(180deg,#c99a5c,#8a5d2e)", clipPath: "polygon(0 100%,100% 100%,0 25%)", transform: "translateY(-260px)", opacity: k(f, 4, 12) }} />
     <div style={{ position: "absolute", left: O.x, top: O.y - 7, width: 900, height: 14, background: ok ? EMBER : "#ff9a8a", transformOrigin: "0 50%", transform: `rotate(${-t}deg)`, borderRadius: 7 }} />
     <div style={{ position: "absolute", left: O.x - 40, top: O.y - 40, width: 80, height: 80, borderRadius: "50%", background: CREAM }} />
-    <Lbl size={46} box col="#e8c79a" style={{ position: "absolute", left: 1290, top: 690 }}>PELLETS STOP AT 30–35°</Lbl>
+    <Lbl size={46} box col="#e8c79a" style={{ position: "absolute", right: 60, top: 690 }}>A PILE STOPS AT 30–35°</Lbl>
     <div style={{ position: "absolute", left: 1290, top: 360, fontFamily: SERIF, fontWeight: 700, fontSize: 170, color: ok ? EMBER : WHITE, textShadow: "0 5px 0 rgba(0,0,0,.6)" }}>{Math.round(t)}°</div>
     <Big e={k(f, M(m, 1, 60), 12)} y={60} size={70}>Steeper than the pile. I go 45.</Big>
   </Plate>;
@@ -350,10 +351,10 @@ const Slope: React.FC<P> = ({ a, m }) => {
     </TankCut>
     <div style={{ position: "absolute", left: 300, top: 120, width: 560, height: 150, transformOrigin: "100% 100%", transform: "rotate(45deg) translate(-20px,0)", background: "rgba(40,42,46,.95)", border: "10px solid #8d949b" }}>
       {Array.from({ length: 14 }).map((_, i) => <Pel key={i} x={20 + (i % 7) * 76} y={20 + Math.floor(i / 7) * 50} r={(i * 40) % 180} s={1.6} />)}</div>
-    <Lbl size={42} box col={HOT} style={{ position: "absolute", left: 120, top: 620, opacity: e1 }}>TUBE STOPS AT THE WALL</Lbl>
-    <Lbl size={42} box style={{ position: "absolute", left: 120, top: 700, opacity: e2 }}>FIRE BURNS THE FRONT OF THE PILE</Lbl>
+    <Lbl size={46} box col={HOT} style={{ position: "absolute", left: 80, top: 560, opacity: e1, whiteSpace: "normal", width: 560 }}>TUBE STOPS AT THE WALL</Lbl>
+    <Lbl size={46} box style={{ position: "absolute", left: 80, top: 720, opacity: e2, whiteSpace: "normal", width: 560 }}>FIRE EATS THE FRONT OF THE PILE</Lbl>
     {back && <><div style={{ position: "absolute", left: 830, top: 650, width: 230, height: 8, background: HOT, opacity: k(f, 30, 10) }} />
-      <Lbl size={56} col={HOT} box style={{ position: "absolute", left: 860, top: 560, opacity: k(f, 30, 10) }}>~4 IN</Lbl></>}
+      <Lbl size={56} col={HOT} box style={{ position: "absolute", left: 1560, top: 600, opacity: k(f, 30, 10) }}>~4 IN</Lbl></>}
     <Big e={k(f, 10, 12)} y={40} size={62}>{back ? "The heat has to swim upstream." : "The tube stays out of the hottest part."}</Big>
   </Plate>;
 };
@@ -362,10 +363,10 @@ const Slope: React.FC<P> = ({ a, m }) => {
 const AIR: [string, string, string][] = [["TOO LITTLE", "SMOKE · SOOT · CO", "#ff9a8a"], ["JUST RIGHT", "CLEAN, STEADY FIRE", HOT], ["TOO MUCH", "A BAG IN AN AFTERNOON", "#ff9a8a"]];
 const Air3: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const t = lin(f, 6, dur - 20, 0, 2.99); const i = t < 1 ? 0 : t < 2 ? 2 : 1; const ang = [-60, 60, 0][i];
-  return <Plate src="y1160" d={0.85}>
+  return <Plate src="g1180" d={0.85}>
     <div style={{ position: "absolute", left: 220, top: 200, width: 480, height: 480, borderRadius: "50%", background: "radial-gradient(circle at 40% 35%,#6a6f75,#24262a)", boxShadow: "0 22px 30px rgba(0,0,0,.6)", transform: `rotate(${ang}deg)`, transition: "none" }}>
       <div style={{ position: "absolute", left: 210, top: 20, width: 60, height: 200, borderRadius: 30, background: CREAM }} /></div>
-    {AIR.map(([t1, t2, col], j) => <div key={j} style={{ position: "absolute", left: 860, top: 200 + j * 190, opacity: i === j ? 1 : 0.25 }}>
+    {AIR.map(([t1, t2, col], j) => <div key={j} style={{ position: "absolute", left: 860, top: 200 + j * 190, opacity: i === j ? 1 : 0.45 }}>
       <Lbl size={66} col={col}>{t1}</Lbl><Lbl size={42} style={{ marginTop: 6 }}>{t2}</Lbl></div>)}
     <Big e={k(f, 8, 12)} y={70} size={70}>With pellets, you manage the air.</Big>
   </Plate>;
@@ -380,7 +381,7 @@ const Chevs: React.FC<{ x: number; y: number; rot: number; n: number; col: strin
 };
 const Airflow: React.FC<P> = ({ m }) => {
   const f = useCurrentFrame(); const e2 = k(f, M(m, 1, 60), 12);
-  return <Plate src="g1220" d={0.9}>
+  return <Plate src="g1040" d={0.9}>
     <TankCut x={640} y={140} w={640} h={720}>
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 170, height: 12, background: "repeating-linear-gradient(90deg,#9aa0a6 0 20px,transparent 20px 34px)" }} />
       <div style={{ position: "absolute", left: 120, bottom: 182, display: "flex", gap: 10 }}>{[0, 1, 2, 3, 4, 5].map((i) => <Flame key={i} s={1.5} seed={i} />)}</div>
@@ -389,7 +390,7 @@ const Airflow: React.FC<P> = ({ m }) => {
     <Chevs x={360} y={700} rot={0} n={5} col="#9cc8ff" len={420} />
     <Chevs x={1600} y={300} rot={180} n={4} col="#9cc8ff" len={300} />
     <Lbl size={44} box col="#bfe0ff" style={{ position: "absolute", left: 140, top: 780 }}>PRIMARY · UNDER THE PELLETS</Lbl>
-    <Lbl size={44} box col="#bfe0ff" style={{ position: "absolute", left: 1330, top: 380, opacity: k(f, M(m, 1, 60) - 10, 10) }}>SECONDARY · BURNS THE SMOKE</Lbl>
+    <Lbl size={44} box col="#bfe0ff" style={{ position: "absolute", right: 60, top: 380, opacity: k(f, M(m, 1, 60) - 10, 10) }}>SECONDARY · BURNS THE SMOKE</Lbl>
     <Big e={k(f, 10, 12)} y={40} size={62}>Air from below. A little more up high.</Big>
   </Plate>;
 };
@@ -398,7 +399,7 @@ const Airflow: React.FC<P> = ({ m }) => {
 const Slider: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const off = lin(f, dur * 0.45, dur * 0.45 + 16, 0, 1); const full = off < 0.5;
   const holes = (y: number, x0: number, col: string) => <div style={{ position: "absolute", left: x0, top: y, display: "flex", gap: 90 }}>{[0, 1, 2, 3, 4].map((i) => <div key={i} style={{ width: 70, height: 70, borderRadius: "50%", background: col }} />)}</div>;
-  return <Plate src="g1220" d={0.75}>
+  return <Plate src="g1180" d={0.75}>
     <div style={{ position: "absolute", left: 300, top: 330, width: 1320, height: 230, background: "linear-gradient(180deg,#4b5056,#2c2f33)", boxShadow: "0 22px 30px rgba(0,0,0,.5)" }}>
       {holes(80, 170, "#0b0b0c")}</div>
     <div style={{ position: "absolute", left: 300 + off * 80, top: 370, width: 1320, height: 150, background: STEELG, boxShadow: "0 14px 18px rgba(0,0,0,.5)", WebkitMaskImage: "none" }}>
@@ -429,7 +430,7 @@ const Season: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const a = lin(f, 6, dur * 0.45, 0, 100), b = lin(f, dur * 0.5, dur - 16, 0, 100);
   const lay = (filter: string, clip: number) => <AbsoluteFill style={{ backgroundImage: IMG("g0300"), backgroundSize: "cover", filter, clipPath: `inset(0 ${100 - clip}% 0 0)` }} />;
   return <AbsoluteFill style={{ background: IRON }}>
-    {lay("none", 100)}{lay("grayscale(1) brightness(1.5) contrast(1.1)", a)}{lay("grayscale(1) brightness(.35) contrast(1.3)", b)}
+    {lay("none", 100)}{lay("grayscale(1) brightness(1.5) contrast(1.1)", a)}{lay("grayscale(.6) brightness(.62) contrast(1.35) sepia(.25)", b)}
     <div style={{ position: "absolute", top: 0, bottom: 0, left: `${(b > 0 ? b : a)}%`, width: 10, background: HOT, boxShadow: `0 0 30px 8px ${HOT}`, opacity: (a > 0 && a < 100) || (b > 0 && b < 100) ? 1 : 0 }} />
     <div style={{ position: "absolute", left: 0, right: 0, bottom: 90, display: "flex", justifyContent: "center", gap: 30 }}>
       {["RUST", "BRIGHT METAL", "SEASONED"].map((t, i) => <Lbl key={t} size={54} box col={[0, a > 98 ? 1 : 0, b > 98 ? 1 : 0][i] || i === 0 ? HOT : "#777"}>{i ? "→ " : ""}{t}</Lbl>)}</div>
@@ -441,7 +442,7 @@ const Pressure: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const v = lin(f, 6, dur - 20, -120, 110) + (f > dur - 30 ? Math.sin(f * 2) * 4 : 0);
   return <Plate src="g1570" d={0.75}>
     <Dial x={190} y={150} d={620} ang={v} red={[60, 130]}>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 380, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 52, color: INK }}>CLOSED TANK</div></Dial>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 150, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 46, color: INK }}>CLOSED TANK</div></Dial>
     <div style={{ position: "absolute", left: 960, top: 260, width: 800 }}>
       <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 110, color: WHITE, lineHeight: 1.05, textShadow: "0 5px 0 rgba(0,0,0,.6)" }}>Steam doesn't<br />ask permission.</div>
       <Lbl size={52} col={WHITE} style={{ marginTop: 40, display: "inline-block", background: RED, padding: "12px 30px", borderRadius: 10, opacity: k(f, dur - 30, 8) }}>NEVER A CLOSED TANK</Lbl></div>
@@ -451,7 +452,7 @@ const Pressure: React.FC<P> = ({ dur }) => {
 // ================= bucket (163): corte del balde «dona» — el caño caliente al medio, agua a los dos lados, vapor libre arriba
 const Bucket: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const heat = lin(f, 6, dur - 10, 0, 1);
-  return <Plate src="g1620" d={0.9}>
+  return <Plate src="g1650" d={0.9}>
     <div style={{ position: "absolute", left: 900, top: 60, width: 120, height: 900, background: `linear-gradient(90deg,#2a2b2e,rgba(255,${160 - heat * 60},40,${0.5 + heat * 0.4}) 50%,#2a2b2e)` }} />
     <div style={{ position: "absolute", left: 600, top: 330, width: 720, height: 460, borderLeft: "14px solid #9aa0a6", borderRight: "14px solid #9aa0a6", borderBottom: "14px solid #9aa0a6", borderRadius: "0 0 30px 30px" }}>
       <div style={{ position: "absolute", left: 0, top: 60, width: 286, bottom: 0, background: `linear-gradient(180deg,#7fb6f0,${WATER})` }} />
@@ -492,7 +493,7 @@ const Climb: React.FC<P> = ({ m, dur }) => {
   const f = useCurrentFrame(); const ts = [6, M(m, 0, dur * 0.4), M(m, 1, dur * 0.7)];
   const cur = ts.reduce((acc, t, i) => f >= t ? i : acc, 0); const tv = lin(f, ts[cur], ts[cur] + 16, cur ? CLIMB[cur - 1][1] : 20, CLIMB[cur][1]);
   const y = (v: number) => 800 - ((v - 20) / 40) * 600;
-  return <Plate src="g1940" d={0.88}>
+  return <Plate src="g1320" d={0.88}>
     <div style={{ position: "absolute", left: 780, top: 150, width: 90, height: 690, borderRadius: 45, background: "rgba(240,240,240,.9)", boxShadow: "0 18px 24px rgba(0,0,0,.5)" }} />
     <div style={{ position: "absolute", left: 800, top: y(tv), width: 50, height: 840 - y(tv), borderRadius: 25, background: RED }} />
     <div style={{ position: "absolute", left: 760, top: 800, width: 130, height: 130, borderRadius: "50%", background: RED }} />
@@ -505,7 +506,7 @@ const Climb: React.FC<P> = ({ m, dur }) => {
 // ================= btu (212): 16.000 BTU/h entran; se reparten — chimenea, agua, y la mitad al taller
 const Btu: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const e0 = k(f, 6, 20), e1 = k(f, dur * 0.35, 16), e2 = k(f, dur * 0.7, 14);
-  return <Plate src="y2100" d={0.9}>
+  return <Plate src="g2990" d={0.9}>
     <div style={{ position: "absolute", left: 160, top: 150 }}><Lbl size={40} box>FUEL IN · 2 LB/H × 8,000</Lbl>
       <div style={{ marginTop: 14, width: 1600 * e0, height: 110, background: `linear-gradient(90deg,#8a5d2e,${EMBER})`, borderRadius: 10, display: "flex", alignItems: "center", paddingLeft: 30, boxSizing: "border-box", fontFamily: SANS, fontWeight: 900, fontSize: 66, color: WHITE, whiteSpace: "nowrap" }}>16,000 BTU/H</div></div>
     <div style={{ position: "absolute", left: 160, top: 420, display: "flex", gap: 20, opacity: cl(e1 * 1.5) }}>
@@ -519,12 +520,12 @@ const Btu: React.FC<P> = ({ dur }) => {
 // ================= zones (220): la chapa vista de arriba — centro 450–500 °F, esquinas ~250 °F; la olla se corre
 const Zones: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const px = lin(f, dur * 0.5, dur * 0.5 + 30, 0, 1);
-  return <Plate src="g2220" d={0.85}>
-    <div style={{ position: "absolute", left: 560, top: 110, width: 800, height: 800, background: `radial-gradient(circle at 50% 50%, rgba(255,110,30,.85) 0%, rgba(255,150,60,.55) 30%, rgba(80,80,86,.95) 70%), linear-gradient(135deg,#3a3d42,#24262a)`, boxShadow: "0 22px 30px rgba(0,0,0,.55)", border: "14px solid #55595f" }}>
+  return <Plate src="g2250" d={0.85}>
+    <div style={{ position: "absolute", left: 560, top: 110, width: 800, height: 800, background: `radial-gradient(circle at 50% 50%, rgba(255,110,30,.7) 0%, rgba(255,150,60,.4) 30%, rgba(60,60,66,.55) 70%)`, boxShadow: "0 22px 30px rgba(0,0,0,.55)", border: "14px solid #55595f" }}>
       <div style={{ position: "absolute", left: 230, top: 230, width: 340, height: 340, borderRadius: "50%", background: "radial-gradient(circle,#2b2c2e 60%,#141516 62%,#3a3b3d)", boxShadow: "0 10px 16px rgba(0,0,0,.6)" }} />
       <div style={{ position: "absolute", left: 560 - px * 60, top: 560 - px * 60, width: 200, height: 200, borderRadius: "50%", background: "radial-gradient(circle,#8b2f12 55%,#5c6167 58%,#9aa0a6)", boxShadow: "0 10px 16px rgba(0,0,0,.6)" }} /></div>
     <Lbl size={50} box col={HOT} style={{ position: "absolute", left: 100, top: 420 }}>CENTER · 450–500°F</Lbl>
-    <Lbl size={50} box col="#e8c79a" style={{ position: "absolute", left: 1390, top: 720 }}>CORNER · ~250°F</Lbl>
+    <Lbl size={50} box col="#e8c79a" style={{ position: "absolute", right: 60, top: 720 }}>CORNER · ~250°F</Lbl>
     <Big e={k(f, dur * 0.5, 12)} y={50} size={70}>You don't turn a knob. You slide the pot.</Big>
   </Plate>;
 };
@@ -534,10 +535,10 @@ const BOIL: [string, number][] = [["START", 48], ["10 MIN", 120], ["22 MIN", 210
 const Boil: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const ts = [4, dur * 0.3, dur * 0.6]; const cur = ts.reduce((acc, t, i) => f >= t ? i : acc, 0);
   const v = lin(f, ts[cur], ts[cur] + 14, cur ? BOIL[cur - 1][1] : 40, BOIL[cur][1]);
-  return <Plate src="g2330" d={0.85}>
+  return <Plate src="g1650" d={0.85}>
     <Dial x={180} y={170} d={560} ang={-135 + (v / 220) * 270} ring="#9aa0a6">
       <div style={{ position: "absolute", left: 0, right: 0, top: 340, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 80, color: INK }}>{Math.round(v)}°F</div></Dial>
-    <div style={{ position: "absolute", left: 730, top: 430, width: 600, height: 26, background: STEELG, borderRadius: 13 }} />
+    
     <div style={{ position: "absolute", left: 980, top: 180 }}>
       {BOIL.map(([t, val], i) => <div key={t} style={{ display: "flex", alignItems: "baseline", gap: 30, marginBottom: 30, opacity: cur >= i ? 1 : 0.2 }}>
         <Lbl size={52} style={{ width: 240 }}>{t}</Lbl><div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 110, color: i === 2 ? EMBER : WHITE }}>{val}°</div></div>)}</div>
@@ -552,7 +553,7 @@ const Battery: React.FC<P> = () => {
     <div style={{ position: "absolute", left: 300, right: 300, bottom: 300, height: 520, display: "flex", alignItems: "flex-end", justifyContent: "space-around" }}>
       <div style={{ textAlign: "center" }}><div style={{ width: 260, height: 25 * e0, background: STEELG, margin: "0 auto" }} /><Lbl size={42} box style={{ marginTop: 16 }}>STEEL TANK · ~2</Lbl></div>
       <div style={{ textAlign: "center" }}><div style={{ width: 260, height: 480 * e1, background: `linear-gradient(180deg,#7fb6f0,${WATER})`, margin: "0 auto" }} /><Lbl size={42} box col="#bfe0ff" style={{ marginTop: 16 }}>5 GAL WATER · ~42</Lbl></div></div>
-    <Lbl size={34} style={{ position: "absolute", left: 0, right: 0, textAlign: "center", top: 70 }}>BTU STORED PER °F</Lbl>
+    <Lbl size={52} style={{ position: "absolute", left: 0, right: 0, textAlign: "center", top: 70 }}>HEAT STORED PER DEGREE</Lbl>
     <Big e={k(f, 50, 12)} y={90} size={76} col={HOT}>A heat battery on the chimney.</Big>
   </Plate>;
 };
@@ -560,12 +561,12 @@ const Battery: React.FC<P> = () => {
 // ================= burnback (251): el fuego trepa por el caño lleno de pellets y sale humo arriba
 const Burnback: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const up = lin(f, 10, dur - 20, 0, 1);
-  return <Plate src="y2530" d={0.9}>
+  return <Plate src="g2900" d={0.9}>
     <div style={{ position: "absolute", left: 420, top: 820, width: 1100, height: 150, transformOrigin: "0 50%", transform: "rotate(-35deg)", background: "rgba(40,42,46,.95)", border: "10px solid #8d949b", overflow: "hidden" }}>
       {Array.from({ length: 28 }).map((_, i) => <Pel key={i} x={10 + (i % 14) * 76} y={20 + Math.floor(i / 14) * 56} r={(i * 40) % 180} s={1.7} c={(i % 14) / 14 < up ? "linear-gradient(180deg,#ffb347,#c4361a)" : undefined} />)}
       <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: `${up * 100}%`, background: "linear-gradient(90deg,rgba(255,90,20,.55),rgba(255,180,70,.25))" }} /></div>
     {[0, 1, 2, 3].map((i) => { const t = ((f + i * 10) % 40) / 40; return <div key={i} style={{ position: "absolute", left: 1290 + i * 20, top: 160 - t * 140, width: 110, height: 110, borderRadius: "50%", background: "rgba(120,120,120,.6)", opacity: (1 - t) * up }} />; })}
-    <Lbl size={70} col={WHITE} style={{ position: "absolute", left: 160, top: 160, background: RED, padding: "10px 36px", borderRadius: 12 }}>BURNBACK</Lbl>
+    <Lbl size={70} col={WHITE} style={{ position: "absolute", left: 760, top: 60, background: RED, padding: "10px 36px", borderRadius: 12 }}>BURNBACK</Lbl>
     <Big e={k(f, 20, 12)} y={70} size={70}>The fire climbs into the hopper.</Big>
   </Plate>;
 };
@@ -573,8 +574,8 @@ const Burnback: React.FC<P> = ({ dur }) => {
 // ================= guards (254): tres tuercas gigantes — PENDIENTE · TAPA · CORREDERA
 const Guards: React.FC<P> = () => {
   const f = useCurrentFrame(); const G = ["THE SLOPE", "THE LID", "THE SLIDER"];
-  return <Plate src="g2620" d={0.85}>
-    {G.map((t, i) => { const e = k(f, 6 + i * 12, 10); return <div key={t} style={{ position: "absolute", left: 210 + i * 540, top: 200, width: 420, textAlign: "center", opacity: cl(e * 2), transform: `rotate(${(1 - e) * -90}deg) scale(${0.6 + 0.4 * e})` }}>
+  return <Plate src="g1080" d={0.85}>
+    {G.map((t, i) => { const e = k(f, 6 + i * 12, 10); return <div key={t} style={{ position: "absolute", left: 210 + i * 540, top: 260, width: 420, textAlign: "center", opacity: cl(e * 2), transform: `rotate(${(1 - e) * -90}deg) scale(${0.6 + 0.4 * e})` }}>
       <div style={{ width: 360, height: 360, margin: "0 auto", background: "linear-gradient(140deg,#d7dbdf,#6d7279)", clipPath: "polygon(25% 3%,75% 3%,100% 50%,75% 97%,25% 97%,0 50%)", display: "flex", alignItems: "center", justifyContent: "center" }}>
         <div style={{ width: 170, height: 170, borderRadius: "50%", background: IRON, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 120, color: HOT }}>{i + 1}</div></div>
       <Lbl size={52} style={{ marginTop: 26 }}>{t}</Lbl></div>; })}
@@ -586,40 +587,41 @@ const Guards: React.FC<P> = () => {
 const DeadEnd: React.FC<P> = () => {
   const f = useCurrentFrame();
   return <Plate src="g2620" d={0.9}>
-    <TankCut x={760} y={250} w={520} h={620} />
-    <div style={{ position: "absolute", left: 1160, top: 60, width: 90, height: 260, background: "#2b2d31", border: "6px solid #6a6f75" }} />
-    <div style={{ position: "absolute", left: 340, top: 120, width: 520, height: 130, transformOrigin: "100% 100%", transform: "rotate(40deg)", background: "rgba(40,42,46,.95)", border: "10px solid #8d949b" }}>
+    <TankCut x={760} y={250} w={520} h={620}><div style={{ position: "absolute", left: 120, bottom: 120, display: "flex", gap: 8 }}>{[0, 1, 2, 3].map((i) => <Flame key={i} s={1.4} seed={i} />)}</div></TankCut>
+    <div style={{ position: "absolute", left: 1160, top: 90, width: 90, height: 170, background: "#2b2d31", border: "6px solid #6a6f75" }} />
+    <div style={{ position: "absolute", left: 300, top: 330, width: 480, height: 130, transformOrigin: "100% 100%", transform: "rotate(30deg)", background: "rgba(40,42,46,.95)", border: "10px solid #8d949b" }}>
       <div style={{ position: "absolute", left: -30, top: -26, width: 40, height: 182, background: CREAM }} />
       <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 900, fontSize: 52, color: "#ff9a8a", letterSpacing: 4 }}>DEAD END</div></div>
     <Chevs x={520} y={760} rot={0} n={4} col="#9cc8ff" len={260} />
-    <Chevs x={1205} y={330} rot={-90} n={4} col="#9cc8ff" len={300} />
-    <Lbl size={44} box col={HOT} style={{ position: "absolute", left: 1330, top: 160 }}>CHIMNEY PULLS FROM THE FRONT</Lbl>
+    <Chevs x={1175} y={520} rot={-90} n={4} col="#9cc8ff" len={250} />
+    <Lbl size={44} box col={HOT} style={{ position: "absolute", right: 60, top: 160 }}>AIR IN AT THE DOOR</Lbl>
     <Big e={k(f, 14, 12)} y={50} size={70}>Lid down. Never run it open.</Big>
   </Plate>;
 };
 
 // ================= hours (273): la tolva de 7 lb se vacía — alto 2 lb/h vs bajo 1 lb/h
 const Hours: React.FC<P> = ({ dur }) => {
-  const f = useCurrentFrame(); const t = lin(f, 10, dur - 20, 0, 7);
-  const col = (x: number, rate: number, lab: string, end: string, c: string) => { const left = Math.max(0, 7 - t * rate * 0.5 * 2 / 2 * (rate === 2 ? 2 : 1)); const h = Math.max(0, 7 - t * (rate === 2 ? 2 : 1));
-    return <div style={{ position: "absolute", left: x, top: 150, width: 640, textAlign: "center" }}>
-      <div style={{ width: 200, height: 560, margin: "0 auto", border: "10px solid #8d949b", position: "relative", background: "rgba(20,20,22,.8)" }}>
-        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: `${(h / 7) * 100}%`, background: "repeating-linear-gradient(170deg,#c99a5c 0 14px,#8a5d2e 14px 22px)" }} /></div>
-      <Lbl size={46} col={c} style={{ marginTop: 20 }}>{lab}</Lbl><Lbl size={60} style={{ marginTop: 6 }}>{h <= 0.01 || left < 0 ? end : end}</Lbl></div>; };
+  const f = useCurrentFrame(); const t = lin(f, 10, dur - 16, 0, 1);
+  const col = (x: number, h: number, lab: string, end: string, c: string) => <div style={{ position: "absolute", left: x, top: 180, width: 640, textAlign: "center" }}>
+      <div style={{ width: 220, height: 520, margin: "0 auto", border: "10px solid #8d949b", position: "relative", background: "#1c1d20" }}>
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: `${(h / 7) * 100}%`, background: "repeating-linear-gradient(170deg,#c99a5c 0 14px,#8a5d2e 14px 22px)" }} />
+        <div style={{ position: "absolute", left: 0, right: 0, top: "40%", textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 54, color: WHITE, textShadow: "0 3px 0 #000" }}>{h.toFixed(1)} LB</div></div>
+      <Lbl size={46} col={c} style={{ marginTop: 20 }}>{lab}</Lbl><Lbl size={64} style={{ marginTop: 6 }}>{end}</Lbl></div>;
   return <Plate src="g2900" d={0.9}>
-    {col(260, 2, "HIGH · 2 LB/H", "3½ HOURS", "#ff9a8a")}{col(1020, 1, "LOW · 1 LB/H", "6–7 HOURS", HOT)}
-    <Lbl size={40} box style={{ position: "absolute", left: 0, right: 0, margin: "0 auto", width: 380, textAlign: "center", top: 80 }}>FULL HOPPER · 7 LB</Lbl>
+    {col(240, 7 - 7 * t, "HIGH · 2 LB/H", "3½ HOURS", "#ff9a8a")}{col(1040, 7 - 3.5 * t, "LOW · 1 LB/H", "6–7 HOURS", HOT)}
+    <Lbl size={44} box style={{ position: "absolute", left: 0, right: 0, margin: "0 auto", width: 440, textAlign: "center", top: 70 }}>FULL HOPPER · 7 LB</Lbl>
   </Plate>;
 };
 
 // ================= night (276): el reloj corre de las 10 de la noche a las 5:30; afuera 19 °F, adentro 46 °F
 const Night: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const h = lin(f, 8, dur - 30, 22, 29.5); const hh = Math.floor(h) % 24; const mm = Math.round((h % 1) * 60 / 30) * 30 % 60;
-  return <Plate src="g2690" d={0.9}>
+  return <Plate src="g1320" d={0.9}>
     <div style={{ position: "absolute", left: 200, top: 170, width: 560, height: 560, borderRadius: "50%", background: "#fbf8f0", border: "26px solid #2b2d31", boxShadow: "0 22px 30px rgba(0,0,0,.55)" }}>
       <div style={{ position: "absolute", left: "50%", top: "50%", width: 16, height: 150, marginLeft: -8, marginTop: -150, background: INK, borderRadius: 8, transformOrigin: "50% 100%", transform: `rotate(${(h % 12) * 30}deg)` }} />
       <div style={{ position: "absolute", left: "50%", top: "50%", width: 10, height: 220, marginLeft: -5, marginTop: -220, background: RED, borderRadius: 5, transformOrigin: "50% 100%", transform: `rotate(${(h % 1) * 360}deg)` }} />
-      <div style={{ position: "absolute", left: 0, right: 0, top: 330, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 66, color: INK }}>{((hh + 11) % 12) + 1}:{mm ? "30" : "00"} {hh >= 12 && hh < 24 ? "PM" : "AM"}</div></div>
+      {Array.from({ length: 12 }).map((_, i) => <div key={i} style={{ position: "absolute", left: "50%", top: "50%", width: 10, height: 34, marginLeft: -5, background: INK, transformOrigin: "50% 0", transform: `rotate(${i * 30}deg) translateY(-240px)` }} />)}</div>
+    <div style={{ position: "absolute", left: 200, top: 770, width: 560, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 72, color: WHITE, textShadow: "0 4px 0 rgba(0,0,0,.6)" }}>{((hh + 11) % 12) + 1}:{mm ? "30" : "00"} {hh >= 12 && hh < 24 ? "PM" : "AM"}</div>
     <div style={{ position: "absolute", left: 960, top: 220, opacity: k(f, dur - 40, 12) }}>
       <Lbl size={52} col="#bfe0ff">OUTSIDE · 19°F</Lbl>
       <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 170, color: HOT, lineHeight: 1.1 }}>46°F</div>
@@ -631,7 +633,7 @@ const Night: React.FC<P> = ({ dur }) => {
 // ================= co (279): detector de monóxido a pilas en la pared, con su luz que titila
 const Co: React.FC<P> = () => {
   const f = useCurrentFrame(); const led = Math.floor(f / 15) % 2;
-  return <Plate src="g3300" d={0.6}>
+  return <Plate src="g3120" d={0.6}>
     <div style={{ position: "absolute", left: 1160, top: 210, width: 420, height: 420, borderRadius: 60, background: "linear-gradient(160deg,#ffffff,#d9dbdd)", boxShadow: "0 22px 30px rgba(0,0,0,.55)", transform: `translateY(${(1 - k(f, 2, 14)) * -500}px)` }}>
       <div style={{ position: "absolute", left: 60, top: 60, right: 60, height: 160, display: "grid", gridTemplateColumns: "repeat(8,1fr)", gap: 10 }}>{Array.from({ length: 32 }).map((_, i) => <div key={i} style={{ borderRadius: "50%", background: "#b8bcc0" }} />)}</div>
       <div style={{ position: "absolute", left: 60, bottom: 70, width: 30, height: 30, borderRadius: "50%", background: led ? "#3ad15a" : "#1f5a2b", boxShadow: led ? "0 0 18px 6px rgba(58,209,90,.7)" : "none" }} />
@@ -650,7 +652,7 @@ const Mistakes: React.FC<P> = () => {
   const f = useCurrentFrame();
   return <Plate src="g3080" d={0.85}>
     {MIST.map(([src], i) => <Print key={i} src={src} w={300} h={230} x={90 + i * 360} y={170} rot={[-2, 1.5, -1, 2, -1.5][i]} e={k(f, 4 + i * 6, 10)} />)}
-    {MIST.map((_, i) => <div key={"n" + i} style={{ position: "absolute", left: 210 + i * 360, top: 410, fontFamily: SERIF, fontWeight: 700, fontSize: 110, color: "#2a1a12", WebkitTextStroke: "4px #ff8a3a", textShadow: hotTxt(cl((f - 10 - i * 6) / 40)), opacity: k(f, 6 + i * 6, 8) }}>{i + 1}</div>)}
+    {MIST.map((_, i) => <div key={"n" + i} style={{ position: "absolute", left: 210 + i * 360, top: 410, fontFamily: SERIF, fontWeight: 700, fontSize: 110, color: HOT, WebkitTextStroke: "4px #2a1a12", textShadow: hotTxt(cl((f - 10 - i * 6) / 40)), opacity: k(f, 6 + i * 6, 8) }}>{i + 1}</div>)}
     <Big e={k(f, 36, 14)} y={170} size={150}>5 MISTAKES</Big><Big e={k(f, 48, 12)} y={90} size={56} col={HOT}>Two of them were mine.</Big>
   </Plate>;
 };
@@ -658,7 +660,7 @@ const Mist: React.FC<P> = ({ a }) => {
   const f = useCurrentFrame(); const n = +a[0]; const [src, bad] = MIST[n - 1]; const cool = cl((f - 6) / 40);
   return <Plate src={src} d={0.6}>
     <div style={{ position: "absolute", left: 120, bottom: 120, display: "flex", alignItems: "center", gap: 40, opacity: k(f, 0, 8) }}>
-      <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 260, lineHeight: 0.9, color: "#22150e", WebkitTextStroke: "6px #ff8a3a", textShadow: hotTxt(cool) }}>{n}</div>
+      <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 260, lineHeight: 0.9, color: HOT, WebkitTextStroke: "6px #22150e", textShadow: hotTxt(cool) }}>{n}</div>
       <div><Lbl size={36} col={HOT} style={{ letterSpacing: 8 }}>MISTAKE</Lbl><div style={{ fontFamily: SANS, fontWeight: 900, fontSize: bad.length > 28 ? 58 : 70, color: WHITE, textShadow: "0 4px 0 rgba(0,0,0,.6)", whiteSpace: "nowrap", marginTop: 6 }}>{bad}</div></div></div>
   </Plate>;
 };
@@ -670,13 +672,13 @@ const Clear: React.FC<P> = ({ dur }) => {
     <div style={{ position: "absolute", left: 960 - r, top: 520 - r, width: r * 2, height: r * 2, borderRadius: "50%", border: `10px dashed ${HOT}`, boxSizing: "border-box" }} />
     <div style={{ position: "absolute", left: 900, top: 460, width: 120, height: 120, borderRadius: "50%", background: STEELG, boxShadow: `0 0 40px 10px rgba(255,122,26,.5)` }} />
     {IT.map((t, i) => { const ang = -2.4 + i * 1.6; const d = Math.max(r + 120, 260); return <Lbl key={t} size={40} box col="#ff9a8a" style={{ position: "absolute", left: 960 + Math.cos(ang) * d * 1.4 - 150, top: 520 + Math.sin(ang) * d - 30 }}>{t}</Lbl>; })}
-    <Lbl size={70} col={HOT} style={{ position: "absolute", left: 1300, top: 860 }}>36"</Lbl>
+    <Lbl size={80} col={HOT} box style={{ position: "absolute", left: 960 + r + 20, top: 470 }}>36"</Lbl>
     <Big e={k(f, dur * 0.55, 12)} y={40} size={64}>Three feet from anything that can burn.</Big>
   </Plate>;
 };
 
 // ================= asked (316) + ask:n + ask:cta — cinta rotuladora negra con letras blancas en relieve
-const ASK: [string, string][] = [["y3200", "WHY PELLETS, NOT WOOD?"], ["g3300", "CAN I USE IT IN MY HOUSE?"], ["y3240", "HOW LONG DOES A BAG LAST?"], ["g3460", "DOESN'T THE HOPPER GET HOT?"]];
+const ASK: [string, string][] = [["y3200", "WHY PELLETS, NOT WOOD?"], ["g3130", "CAN I USE IT IN MY HOUSE?"], ["y3240", "HOW LONG DOES A BAG LAST?"], ["g1080", "DOESN'T THE HOPPER GET HOT?"]];
 const Dymo: React.FC<{ t: string; size?: number; e?: number; style?: CSS }> = ({ t, size = 64, e = 1, style }) => (
   <div style={{ display: "inline-block", padding: `${size * 0.28}px ${size * 0.6}px`, background: "linear-gradient(180deg,#232427,#0e0f10)", borderRadius: 6, boxShadow: "0 10px 14px rgba(0,0,0,.55)",
     clipPath: `inset(0 ${100 - e * 100}% 0 0)`, ...style }}>
@@ -684,17 +686,17 @@ const Dymo: React.FC<{ t: string; size?: number; e?: number; style?: CSS }> = ({
 );
 const Asked: React.FC<P> = () => {
   const f = useCurrentFrame();
-  return <Plate src="g3300" d={0.85}>
+  return <Plate src="g3120" d={0.85}>
     <div style={{ position: "absolute", left: 160, top: 130 }}>{ASK.map(([, q], i) => <div key={i} style={{ marginBottom: 46, transform: `rotate(${[-1.5, 1, -0.5, 1.5][i]}deg)` }}><Dymo t={q} size={60} e={k(f, 4 + i * 8, 14)} /></div>)}</div>
     <Big e={k(f, 44, 12)} y={80} size={78} col={HOT}>You asked.</Big>
   </Plate>;
 };
 const Ask: React.FC<P> = ({ a }) => {
   const f = useCurrentFrame(); const cta = a[0] === "cta"; const n = +a[0];
-  const [src, q] = cta ? ["g3870", "WHAT WOULD YOU COOK FIRST?"] : ASK[n - 1];
+  const [src, q] = cta ? ["g2250", "WHAT WOULD YOU COOK FIRST?"] : ASK[n - 1];
   return <Plate src={src} d={0.55}>
     <div style={{ position: "absolute", left: 0, right: 0, bottom: 150, textAlign: "center" }}>
-      <Lbl size={40} col={HOT} style={{ marginBottom: 20 }}>{cta ? "TELL ME IN THE COMMENTS" : `QUESTION ${n} OF 4`}</Lbl>
+      <Lbl size={46} col={HOT} box style={{ marginBottom: 20, display: "inline-block" }}>{cta ? "TELL ME IN THE COMMENTS" : `QUESTION ${n} OF 4`}</Lbl>
       <Dymo t={q} size={q.length > 24 ? 74 : 86} e={k(f, 2, 16)} /></div>
   </Plate>;
 };
@@ -705,7 +707,7 @@ const Bag: React.FC<P> = () => {
   return <Plate src="g3400" d={0.8}>
     <div style={{ position: "absolute", left: 220, top: 160, width: 520, height: 700, borderRadius: "30px 30px 50px 50px", background: "linear-gradient(90deg,#c9b38a,#efe2c4 40%,#bca478)", boxShadow: "0 22px 30px rgba(0,0,0,.55)", transform: `translateY(${(1 - e) * 600}px)` }}>
       <div style={{ position: "absolute", left: 0, right: 0, top: 260, textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 150, color: "#3d2d18" }}>40 LB</div>
-      <div style={{ position: "absolute", right: -60, top: 60, padding: "16px 30px", background: EMBER, borderRadius: 10, transform: `rotate(8deg) scale(${k(f, 18, 8)})`, fontFamily: SANS, fontWeight: 900, fontSize: 60, color: INK }}>$5–7</div></div>
+      <div style={{ position: "absolute", right: -60, top: 60, padding: "16px 30px", background: EMBER, borderRadius: 10, transform: `rotate(8deg) scale(${k(f, 18, 8)})`, fontFamily: SANS, fontWeight: 900, fontSize: 110, color: INK }}>$5–7</div></div>
     <div style={{ position: "absolute", left: 900, top: 230 }}>
       {[["HIGH", "≈ 20 HOURS", 26], ["LOW", "≈ 40 HOURS", 42]].map(([t, v, a0]) => <div key={t as string} style={{ marginBottom: 40, opacity: k(f, a0 as number, 10) }}><Lbl size={46} col={HOT}>{t}</Lbl><div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 120, color: WHITE }}>{v}</div></div>)}</div>
     <Big e={k(f, 60, 12)} y={70} size={72}>About 30 cents an hour, on high.</Big>
@@ -715,8 +717,8 @@ const Bag: React.FC<P> = () => {
 // ================= hopper (344): el caño en corte con su gradiente — 180 °F abajo, 90 °F arriba
 const Hopper: React.FC<P> = () => {
   const f = useCurrentFrame(); const e = k(f, 4, 30);
-  return <Plate src="g3460" d={0.85}>
-    <div style={{ position: "absolute", left: 600, top: 120, width: 220, height: 800, border: "12px solid #8d949b", background: `linear-gradient(0deg, rgba(255,110,30,${0.9 * e}) 0%, rgba(255,180,90,${0.6 * e}) 45%, rgba(239,230,210,${0.4 * e}) 100%)` }} />
+  return <Plate src="g0980" d={0.85}>
+    <div style={{ position: "absolute", left: 600, top: 120, width: 220, height: 800, border: "12px solid #8d949b", backgroundColor: "#2a2c30", backgroundImage: `linear-gradient(0deg, rgba(255,110,30,${0.9 * e}) 0%, rgba(255,180,90,${0.6 * e}) 45%, rgba(239,230,210,${0.4 * e}) 100%)` }} />
     <Lbl size={60} box col={EMBER} style={{ position: "absolute", left: 900, top: 760, opacity: e }}>BOTTOM · 180°F</Lbl>
     <Lbl size={60} box col={CREAM} style={{ position: "absolute", left: 900, top: 160, opacity: e }}>TOP · 90°F</Lbl>
     <Big e={k(f, 30, 12)} y={90} size={74} style={{ left: 880, textAlign: "left", right: 80 }}>Warm. Glove to lift the lid.</Big>
@@ -724,10 +726,10 @@ const Hopper: React.FC<P> = () => {
 };
 
 // ================= cost (348): etiquetas de pistola de precios caen sobre cada pieza; el total corre
-const COST: [string, string, string][] = [["g0220", "TANK", "FREE"], ["g0260", "TUBE", "$4"], ["g0300", "PLATE", "$12"], ["g0320", "GRATE", "FREE"], ["g0340", "BUCKET", "FREE"], ["g0340", "HOSE BIB", "FREE"], ["g1840", "STOVE PAINT", "$9"], ["g1510", "PIPE (NEW)", "$20"]];
+const COST: [string, string, string][] = [["g0220", "TANK", "FREE"], ["g0260", "TUBE", "$2"], ["g0300", "PLATE", "$12"], ["g0320", "GRATE", "FREE"], ["g0340", "BUCKET", "FREE"], ["g1650", "HOSE BIB", "FREE"], ["g1840", "STOVE PAINT", "$9"], ["g1510", "PIPE (NEW)", "$20"]];
 const Cost: React.FC<P> = ({ dur }) => {
   const f = useCurrentFrame(); const step = Math.max(8, (dur - 80) / COST.length);
-  return <Plate src="g1840" d={0.9}>
+  return <Plate src="g0270" d={0.9}>
     {COST.map(([src, t, v], i) => { const a0 = 6 + i * step; const e = k(f, a0, 8); const x = 90 + (i % 4) * 445, y = i < 4 ? 70 : 430;
       return <div key={i} style={{ position: "absolute", left: x, top: y, opacity: cl(e * 2) }}>
         <Print src={src} w={360} h={230} x={0} y={0} cap={t} e={e} />
@@ -740,7 +742,7 @@ const Cost: React.FC<P> = ({ dur }) => {
 // ================= pie (361): las cuatro horas — la mayor parte, hacer segura la garrafa
 const Pie: React.FC<P> = () => {
   const f = useCurrentFrame(); const e = k(f, 4, 30);
-  return <Plate src="g0540" d={0.85}>
+  return <Plate src="g0220" d={0.85}>
     <div style={{ position: "absolute", left: 220, top: 170, width: 620, height: 620, borderRadius: "50%", background: `conic-gradient(${EMBER} 0deg ${200 * e}deg, #55595f ${200 * e}deg ${360 * e}deg, transparent ${360 * e}deg)`, boxShadow: "0 22px 30px rgba(0,0,0,.5)" }}>
       <div style={{ position: "absolute", inset: 150, borderRadius: "50%", background: IRON, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 120, color: WHITE }}>4 h</div></div>
     <div style={{ position: "absolute", left: 960, top: 300 }}>
@@ -754,9 +756,9 @@ const Next: React.FC<P> = () => {
   const f = useCurrentFrame(); const e = k(f, 4, 14);
   return <Plate src="n_burner" d={0.7}>
     <div style={{ position: "absolute", left: 160, right: 160, top: 80, padding: "26px 0 34px", background: PANEL, borderRadius: 18, textAlign: "center", opacity: e, transform: `scale(${0.94 + 0.06 * e})` }}>
-      <Lbl size={40} col={HOT} style={{ letterSpacing: 8 }}>NEXT WEEK</Lbl>
+      <Lbl size={56} col={HOT} style={{ letterSpacing: 8 }}>NEXT WEEK</Lbl>
       <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 120, color: WHITE, lineHeight: 1.02, marginTop: 14, whiteSpace: "nowrap" }}>The Doomsday Burner</div></div>
-    <div style={{ position: "absolute", left: 0, right: 0, bottom: 110, display: "flex", justifyContent: "center", gap: 40 }}>
+    <div style={{ position: "absolute", left: 0, right: 0, bottom: 230, display: "flex", justifyContent: "center", gap: 40 }}>
       {["ONE SCRAP CAN", "BOILS WATER", "5 MINUTES TO MAKE"].map((t, i) => <div key={t} style={{ padding: "14px 34px", background: CREAM, fontFamily: SANS, fontWeight: 900, fontSize: 46, color: INK, opacity: k(f, 20 + i * 8, 8), transform: `translateY(${(1 - k(f, 20 + i * 8, 8)) * 80}px)` }}>{t}</div>)}</div>
   </Plate>;
 };
