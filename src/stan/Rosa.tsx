@@ -38,8 +38,8 @@ const Baldosa: React.FC<{ txt: string; size?: number; f0?: number; style?: React
 };
 // renglón escrito a mano: se "escribe" de izquierda a derecha
 const Escrito: React.FC<{ txt: string; f0: number; size?: number; color?: string; done?: boolean; cross?: boolean }> = ({ txt, f0, size = 46, color = R.pen, done, cross }) => {
-  const f = useCurrentFrame(); const w = interpolate(f, [f0, f0 + Math.max(10, txt.length * 0.9)], [0, 100], { ...CL, easing: ease });
-  const tick = sp(f, f0 + txt.length * 0.9 + 2, 12);
+  const f = useCurrentFrame(); const w = interpolate(f, [f0, f0 + Math.max(10, txt.length * 0.55)], [0, 100], { ...CL, easing: ease });
+  const tick = sp(f, f0 + txt.length * 0.55 + 2, 12);
   return (
     <div style={{ position: "relative", display: "flex", alignItems: "center", gap: 18, height: 53 }}>
       <div style={{ width: 34, fontFamily: HAND, fontWeight: 700, fontSize: size, color: cross ? R.no : R.ok, transform: `scale(${done || cross ? tick : 0})` }}>{cross ? "✗" : "✓"}</div>
@@ -174,7 +174,7 @@ export const VsR: React.FC<{ head: string; mal: { t: string; s: string; src: str
         <Half x={mal} on={m} bad lit={modo === "mal"} />
         <Half x={bien} on={modo === "bien" ? b : m} bad={false} lit={modo === "bien"} />
       </div>
-      <div style={{ position: "absolute", top: 40, width: "100%", textAlign: "center" }}><span style={{ background: R.crema, padding: "10px 34px", fontFamily: SANS, fontWeight: 700, fontSize: 30, letterSpacing: 5, color: R.azul }}>{head}</span></div>
+      <div style={{ position: "absolute", top: 36, left: 0, right: 0, textAlign: "center", zIndex: 5 }}><span style={{ background: R.crema, padding: "14px 44px", fontFamily: SANS, fontWeight: 700, fontSize: 50, letterSpacing: 6, boxShadow: "0 10px 30px rgba(0,0,0,0.45)", color: R.azul }}>{head}</span></div>
     </AbsoluteFill>
   );
 };
