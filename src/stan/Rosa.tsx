@@ -158,7 +158,7 @@ export const NumR: React.FC<{ unit: string; k: number | string; N?: number; titl
 export const VsR: React.FC<{ head: string; mal: { t: string; s: string; src: string }; bien: { t: string; s: string; src: string }; modo: "mal" | "bien"; dur: number }> = ({ head, mal, bien, modo, dur }) => {
   const f = useCurrentFrame(); const o = useOut(dur, 8); const m = sp(f, 4, 15), b = sp(f, modo === "bien" ? 4 : 999, 15); const mark = sp(f, 18, 11);
   const Half: React.FC<{ x: typeof mal; on: number; bad: boolean; lit: boolean }> = ({ x, on, bad, lit }) => (
-    <div style={{ flex: 1, position: "relative", overflow: "hidden", opacity: cl(on) * (lit ? 1 : 0.5), transform: `translateY(${(1 - on) * 80}px)` }}>
+    <div style={{ flex: 1, position: "relative", overflow: "hidden", opacity: cl(on) * (lit ? 1 : 0.82), filter: lit ? undefined : "saturate(0.45) brightness(0.8)", transform: `translateY(${(1 - on) * 80}px)` }}>
       <Img src={staticFile(x.src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(16,10,6,0.85), transparent 55%)" }} />
       <div style={{ position: "absolute", left: 50, bottom: 60, right: 40 }}>
@@ -172,7 +172,7 @@ export const VsR: React.FC<{ head: string; mal: { t: string; s: string; src: str
     <AbsoluteFill style={{ opacity: o, background: R.azul }}>
       <div style={{ display: "flex", position: "absolute", inset: 0, gap: 12 }}>
         <Half x={mal} on={m} bad lit={modo === "mal"} />
-        <Half x={bien} on={modo === "bien" ? b : 0.35} bad={false} lit={modo === "bien"} />
+        <Half x={bien} on={modo === "bien" ? b : m} bad={false} lit={modo === "bien"} />
       </div>
       <div style={{ position: "absolute", top: 40, width: "100%", textAlign: "center" }}><span style={{ background: R.crema, padding: "10px 34px", fontFamily: SANS, fontWeight: 700, fontSize: 30, letterSpacing: 5, color: R.azul }}>{head}</span></div>
     </AbsoluteFill>
