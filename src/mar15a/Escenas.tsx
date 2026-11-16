@@ -15,7 +15,9 @@ export const Fan: React.FC<{ dur: number; fSpin: number }> = ({ dur, fSpin }) =>
   const cam = interpolate(f, [0, dur], [1.02, 1.08], CL);
   const hum = interpolate(f, [4, 14], [0, 1], CL);
   const jx = Math.sin(f * 2.1) * 1.6 * hum, jy = Math.cos(f * 2.7) * 1.2 * hum;
-  const rot = interpolate(f, [fSpin, fSpin + 6, fSpin + 18, fSpin + 30, fSpin + 37, fSpin + 54], [0, 26, 0, 0, 38, 0], { ...CL, easing: EASE });
+  const RK = [fSpin - 6, fSpin, fSpin + 9, fSpin + 12, fSpin + 18, fSpin + 28].map((v) => Math.min(v, dur - 8 - (fSpin + 28 - v)));
+  const rotAt = (g: number) => interpolate(g, RK, [0, 30, 0, 0, 44, 0], { ...CL, easing: EASE });
+  const rot = rotAt(f); const vel = Math.abs(rot - rotAt(f - 1));
   return (
     <AbsoluteFill style={{ backgroundColor: "#1d1c18", overflow: "hidden" }}>
       <div style={{ ...BOX, transform: `scale(${cam})`, transformOrigin: "945px 520px" }}>
@@ -24,7 +26,7 @@ export const Fan: React.FC<{ dur: number; fSpin: number }> = ({ dur, fSpin }) =>
         </div>
         <div style={{ ...BOX, clipPath: "circle(512px at 945px 520px)" }}>
           <div style={{ ...BOX, overflow: "visible", transform: `rotate(${rot}deg)`, transformOrigin: "945px 520px" }}>
-            <Img src={S("e_fan")} style={FULL} />
+            <Img src={S("e_fan")} style={{ ...FULL, filter: `blur(${Math.min(5, vel * 0.9)}px)` }} />
           </div>
         </div>
       </div>
@@ -64,7 +66,7 @@ export const Scope: React.FC<{ dur: number; fRust: number; fNo: number }> = ({ d
 };
 
 // 3 · La pared real de la casa crece al doble anclada en el pie de su esquina (1100,860) en "twice"; el equipo no cambia; al final vuelve.
-const HOUSE = poly([[0, 0], [1300, 0], [1300, 40], [1112, 250], [1104, 862], [0, 872]]);
+const HOUSE = poly([[0, 0], [1300, 0], [1300, 40], [1112, 250], [1104, 700], [1080, 738], [1080, 782], [180, 782], [180, 700], [88, 700], [88, 782], [0, 782]]);
 export const Big: React.FC<{ dur: number; fTwice: number }> = ({ dur, fTwice }) => {
   const f = useCurrentFrame();
   const up = interpolate(f, [fTwice - 44, fTwice + 4], [0, 1], { ...CL, easing: EASE });
@@ -75,7 +77,7 @@ export const Big: React.FC<{ dur: number; fTwice: number }> = ({ dur, fTwice }) 
     <AbsoluteFill style={{ backgroundColor: "#202a1c", overflow: "hidden" }}>
       <div style={{ ...BOX, transform: `scale(${cam})`, transformOrigin: "1300px 640px" }}>
         <Img src={S("e_big")} style={FULL} />
-        <div style={{ ...BOX, overflow: "visible", transform: `scale(${k})`, transformOrigin: "1104px 862px", filter: `drop-shadow(6px 0 10px rgba(0,0,0,${0.35 * up * (1 - down)}))` }}>
+        <div style={{ ...BOX, overflow: "visible", transform: `scale(${k})`, transformOrigin: "1100px 784px", filter: `drop-shadow(6px 0 10px rgba(0,0,0,${0.35 * up * (1 - down)}))` }}>
           <div style={{ ...BOX, clipPath: HOUSE }}>
             <Img src={S("e_big")} style={FULL} />
           </div>
@@ -100,11 +102,7 @@ export const Drive: React.FC<{ dur: number; fOut: number; fBack: number; fAgain:
         <div style={{ ...BOX, clipPath: SHPATCH }}>
           <Img src={S("e_drive")} style={{ ...FULL, transform: "translateY(-72px)" }} />
         </div>
-        {[fOut, fBack, fAgain].map((at, i) => f < at + 12 ? null : (
-          <div key={i} style={{ ...BOX, overflow: "visible", opacity: 0.38, transform: `rotate(${-26 * i}deg)`, transformOrigin: "985px 700px" }}>
-            <div style={{ ...BOX, clipPath: SHADOW }}><Img src={S("e_drive")} style={FULL} /></div>
-          </div>
-        ))}
+        
         <div style={{ ...BOX, overflow: "visible", transform: `rotate(${ang}deg)`, transformOrigin: "985px 700px" }}>
           <div style={{ ...BOX, clipPath: SHADOW }}>
             <Img src={S("e_drive")} style={FULL} />
