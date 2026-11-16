@@ -91,49 +91,49 @@ export const Carousel: React.FC<{ cards: HabCard[]; bg: string; subAt: number; s
 
 // (2) barra de progreso n / 10 en la esquina
 export const Progress: React.FC<{ n: number; title: string; dur: number; of?: number; recap?: boolean; thumbs?: string[] }> = ({ n, title, dur, of = LIST.n, recap, thumbs = [] }) => {
-  // len14c v3 (EVALUADOR v2): insignia 1,5x — disco de latón que cae con rebote, título 52 px, 12 arandelas grandes de progreso
-  // (la actual dorada y más grande). En el repaso: tira de 12 fotos reales abajo, la del paso actual resaltada.
+  // len14 v4 (EVALUADOR d-1): sin arandelas ilegibles; la placa se abre desde el disco en ~0,5 s (no aparece de golpe);
+  // título 56 px. Repaso: grilla 4x3 de las 12 fotos reales 3 s (la actual dorada y al frente), después queda solo la insignia.
   const f = useCurrentFrame();
   const o = interpolate(f, [dur - 8, dur], [1, 0], CL);
-  const e = spring({ frame: f, fps: 30, config: { damping: 15 } });
-  const drop = spring({ frame: f - 4, fps: 30, config: { damping: 9, stiffness: 140 } });
+  const drop = spring({ frame: f, fps: 30, config: { damping: 9, stiffness: 120 } });
+  const w = interpolate(f, [5, 17], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
+  const G = recap && thumbs.length ? Math.min(96, dur - 30) : 0;
+  const go = G > 20 ? interpolate(f, [0, 8, G - 12, G], [0, 1, 1, 0], CL) : 0;
+  const badgeIn = G > 20 ? interpolate(f, [G - 14, G], [0, 1], CL) : 1;
   return (
     <AbsoluteFill style={{ opacity: o, pointerEvents: "none" }}>
-      <div style={{ position: "absolute", right: 64, top: 56, opacity: e, transform: `translateX(${(1 - e) * 160}px)`,
-        display: "flex", alignItems: "center", gap: 26, background: "rgba(18,14,10,0.9)", padding: "18px 34px 20px 20px", borderRadius: 18,
-        boxShadow: "0 12px 30px rgba(0,0,0,0.5)" }}>
-        <div style={{ width: 124, height: 124, borderRadius: 62, background: "radial-gradient(circle at 35% 30%, #F6DE9A 0%, #CDA24C 55%, #8C6A24 100%)",
-          boxShadow: "inset 0 -6px 10px rgba(0,0,0,0.35), 0 5px 10px rgba(0,0,0,0.55)", display: "flex", alignItems: "center", justifyContent: "center",
-          fontFamily: SANS, fontWeight: 900, fontSize: 70, color: "#2A1E0C", transform: `translateY(${(1 - drop) * -70}px)` }}>{n}</div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-          <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 30, letterSpacing: 3, color: "#F2D58A" }}>{recap ? "RECAP · " : ""}STEP {n} OF {of}</div>
-          <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 46, lineHeight: 1.05, color: C.white, whiteSpace: "nowrap" }}>{title}</div>
-          <div style={{ display: "flex", gap: 9, alignItems: "center" }}>
-            {Array.from({ length: of }, (_, i) => {
+      {G > 20 && f < G ? (
+        <AbsoluteFill style={{ opacity: go, background: "rgba(14,10,7,0.88)" }}>
+          <div style={{ position: "absolute", left: 0, right: 0, top: 70, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 60, letterSpacing: 2, color: "#F2D58A" }}>
+            STEP {n} OF {of} · <span style={{ color: C.white }}>{title}</span></div>
+          <div style={{ position: "absolute", left: 150, right: 150, top: 190, display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 26,
+            transform: `scale(${1 + 0.03 * (f / G)})` }}>
+            {thumbs.slice(0, of).map((t, i) => {
               const cur = i === n - 1, done = i < n - 1;
-              return <div key={i} style={{ width: cur ? 30 : 22, height: cur ? 30 : 22, borderRadius: "50%", boxSizing: "border-box",
-                border: `6px solid ${cur ? "#F2D58A" : done ? "#B8913F" : "rgba(255,253,248,0.35)"}`, background: cur ? "rgba(242,213,138,0.25)" : "transparent" }} />;
+              const k = cur ? spring({ frame: f - 10, fps: 30, config: { damping: 11 } }) : 1;
+              return (
+                <div key={i} style={{ height: 248, borderRadius: 12, overflow: "hidden", position: "relative", background: "#2a2018",
+                  border: `${cur ? 8 : 3}px solid ${cur ? "#F2D58A" : "rgba(255,253,248,0.5)"}`, zIndex: cur ? 2 : 1,
+                  boxShadow: cur ? "0 18px 40px rgba(0,0,0,0.7)" : "none", opacity: cur ? k : done ? 0.9 : 0.35,
+                  transform: `scale(${cur ? 0.7 + 0.42 * k : 1})` }}>
+                  {t ? <Img src={staticFile(t)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: cur || done ? "none" : "grayscale(1)" }} /> : null}
+                  <div style={{ position: "absolute", left: 12, top: 6, fontFamily: SANS, fontWeight: 900, fontSize: cur ? 64 : 46, color: C.white, textShadow: shadow }}>{i + 1}</div>
+                </div>
+              );
             })}
           </div>
-        </div>
-      </div>
-      {recap && thumbs.length ? (
-        <div style={{ position: "absolute", left: 0, right: 0, bottom: 56, display: "flex", justifyContent: "center", alignItems: "flex-end", gap: 12 }}>
-          {thumbs.map((t, i) => {
-            const cur = i === n - 1, done = i < n - 1;
-            const k = spring({ frame: f - i * 2, fps: 30, config: { damping: 14 } });
-            const w = cur ? 196 : 128;
-            return (
-              <div key={i} style={{ width: w, height: w * 0.62, borderRadius: 8, overflow: "hidden", position: "relative", background: "#222",
-                border: `${cur ? 6 : 3}px solid ${cur ? "#F2D58A" : "rgba(255,253,248,0.85)"}`, boxShadow: "0 8px 18px rgba(0,0,0,0.55)",
-                opacity: k * (cur ? 1 : done ? 0.85 : 0.55), transform: `translateY(${(1 - k) * 60}px)` }}>
-                {t ? <Img src={staticFile(t)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: cur || done ? "none" : "grayscale(0.7)" }} /> : null}
-                <div style={{ position: "absolute", left: 6, top: 2, fontFamily: SANS, fontWeight: 900, fontSize: cur ? 34 : 24, color: C.white, textShadow: shadow }}>{i + 1}</div>
-              </div>
-            );
-          })}
-        </div>
+        </AbsoluteFill>
       ) : null}
+      <div style={{ position: "absolute", right: 64, top: 56, display: "flex", alignItems: "center", opacity: badgeIn }}>
+        <div style={{ clipPath: `inset(0 0 0 ${(1 - w) * 100}%)`, background: "rgba(18,14,10,0.92)", padding: "20px 96px 22px 34px", marginRight: -80,
+          borderRadius: 18, boxShadow: "0 12px 30px rgba(0,0,0,0.5)", display: "flex", flexDirection: "column", gap: 8 }}>
+          <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 32, letterSpacing: 3, color: "#F2D58A" }}>{recap ? "RECAP · " : ""}STEP {n} OF {of}</div>
+          <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 56, lineHeight: 1.05, color: C.white, whiteSpace: "nowrap" }}>{title}</div>
+        </div>
+        <div style={{ width: 140, height: 140, borderRadius: 70, background: "radial-gradient(circle at 35% 30%, #F6DE9A 0%, #CDA24C 55%, #8C6A24 100%)", flexShrink: 0,
+          boxShadow: "inset 0 -6px 10px rgba(0,0,0,0.35), 0 8px 14px rgba(0,0,0,0.6)", display: "flex", alignItems: "center", justifyContent: "center",
+          fontFamily: SANS, fontWeight: 900, fontSize: 80, color: "#2A1E0C", transform: `translateY(${(1 - drop) * -220}px) rotate(${(1 - drop) * -90}deg)`, zIndex: 2 }}>{n}</div>
+      </div>
     </AbsoluteFill>
   );
 };
@@ -330,29 +330,25 @@ export const RecapGrid: React.FC<{ items: { txt: string; f: number }[]; cards: H
 };
 
 // (10) CTA suave junto al avatar, con la fila de los 10 hábitos
-export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number }> = ({ text, cards, dur }) => {
-  const f = useCurrentFrame(); const p = useIn(0, 20), o = useOut(dur, 12);
+export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number }> = ({ text, dur }) => {
+  // len14 v4 (EVALUADOR d-1): caja de comentario blanca (se lee en el celular) que se escribe sola, con «COMMENT BELOW ↓» que rebota
+  const f = useCurrentFrame(); const o = useOut(dur, 12);
+  const qi = text.indexOf("?"); const q = qi >= 0 ? text.slice(0, qi + 1) : text;
+  const p = spring({ frame: f, fps: 30, config: { damping: 13 } });
+  const typed = q.slice(0, Math.floor(interpolate(f, [10, 10 + q.length * 0.9], [0, q.length], CL)));
+  const bob = Math.abs(Math.sin(f / 7)) * 14;
   return (
     <AbsoluteFill style={{ opacity: o }}>
-      <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(16,11,8,0.72) 0%, rgba(16,11,8,0) 40%)" }} />
-      {/* len14c v2 (EVALUADOR): placa sólida, sans grande, sube con resorte; no depende de la imagen de abajo */}
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 120, display: "flex", justifyContent: "center", opacity: p, transform: `translateY(${(1 - p) * 60}px)` }}>
-        <div style={{ maxWidth: 1500, background: "rgba(18,14,10,0.9)", borderRadius: 16, padding: "22px 40px", borderLeft: "10px solid #E0B85A",
-          fontFamily: SANS, fontWeight: 800, fontSize: 58, lineHeight: 1.18, color: C.white, textAlign: "center", boxShadow: "0 12px 30px rgba(0,0,0,0.5)" }}>
-          {/* corte de renglón controlado (sin huérfanas): pregunta / pedido */}
-          {text.includes("?") ? <>{text.slice(0, text.indexOf("?") + 1)}<br /><span style={{ color: "#F2D58A" }}>{text.slice(text.indexOf("?") + 1).trim()}</span></> : text}
+      <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(16,11,8,0.7) 0%, rgba(16,11,8,0) 45%)" }} />
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 300, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 46, letterSpacing: 4,
+        color: "#F2D58A", textShadow: shadow, opacity: p }}>COMMENT BELOW <span style={{ display: "inline-block", transform: `translateY(${bob}px)` }}>↓</span></div>
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 110, display: "flex", justifyContent: "center", opacity: p, transform: `translateY(${(1 - p) * 80}px)` }}>
+        <div style={{ width: 1440, minHeight: 150, background: "#FFFFFF", borderRadius: 24, padding: "26px 40px", display: "flex", alignItems: "center", gap: 30,
+          boxShadow: "0 18px 40px rgba(0,0,0,0.55)" }}>
+          <div style={{ width: 92, height: 92, borderRadius: 46, background: "#C9C2B8", flexShrink: 0 }} />
+          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 56, lineHeight: 1.15, color: "#1A1410" }}>{typed}
+            <span style={{ display: "inline-block", width: 5, height: 58, background: "#1A1410", marginLeft: 4, verticalAlign: "middle", opacity: Math.floor(f / 12) % 2 ? 0 : 1 }} /></div>
         </div>
-      </div>
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 52, display: "flex", justifyContent: "center", gap: 14 }}>
-        {cards.map((c, i) => {
-          const e = spring({ frame: f - 8 - i * 3, fps: 30, config: { damping: 14 } });
-          return (
-            <div key={i} style={{ width: 170, height: 150, borderRadius: 8, overflow: "hidden", border: `3px solid ${C.paper}`, position: "relative", opacity: e, transform: `translateY(${(1 - e) * 80}px)`, boxShadow: "0 8px 18px rgba(0,0,0,0.45)" }}>
-              <Img src={staticFile(c.src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-              <div style={{ position: "absolute", left: 6, top: 4, fontFamily: SANS, fontWeight: 700, fontSize: 22, color: C.white, textShadow: shadow }}>{String(i + 1).padStart(2, "0")}</div>
-            </div>
-          );
-        })}
       </div>
     </AbsoluteFill>
   );

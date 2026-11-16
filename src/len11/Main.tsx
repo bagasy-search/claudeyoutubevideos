@@ -36,7 +36,8 @@ const Enter: React.FC<{ trans: string; dur: number; children: React.ReactNode; s
   const f = useCurrentFrame();
   const o = 1;
   if (trans === "fade") return <AbsoluteFill style={{ opacity: Math.min(interpolate(f, [0, T], [0, 1], { extrapolateRight: "clamp" }), o) }}>{children}</AbsoluteFill>;
-  if (trans === "push") {
+  if (trans === "push") { // v4: el empuje dejaba ver el fondo vacío tras el avatar → corte
+    return <AbsoluteFill>{children}</AbsoluteFill>;
     const dir = P.hash(seed) % 2 ? 1 : -1;
     const x = interpolate(f, [0, T + 2], [dir * 100, 0], { extrapolateRight: "clamp", easing: (t) => 1 - Math.pow(1 - t, 3) });
     return <AbsoluteFill style={{ transform: `translateX(${x}%)`, opacity: o }}>{children}</AbsoluteFill>;
@@ -52,7 +53,7 @@ const OV: any[] = (() => {
   const out: any[] = [];
   for (const o of src) {
     const last = [...out].reverse().find((x) => x.type === "progress");
-    if (o.type === "progress" && last && last.n === o.n && o.from - (last.from + last.dur) <= 20) { last.dur = o.from + o.dur - last.from; continue; }
+    if (o.type === "progress" && last && last.n === o.n && o.from - (last.from + last.dur) <= 150) { last.dur = o.from + o.dur - last.from; continue; }
     out.push({ ...o });
   }
   const pr = out.filter((x) => x.type === "progress");
@@ -63,7 +64,9 @@ const OV: any[] = (() => {
     const sh = p ? (SHOTS as any[]).find((s) => s.from >= p.from && s.k === "G" && s.src && !/\.mp4$/.test(s.src)) : null;
     thumbs.push(sh ? sh.src : "");
   }
-  if (i12 >= 0) pr.slice(i12 + 1).forEach((x) => { x.recap = true; x.thumbs = thumbs; });
+  // v4: el repaso empieza cuando el número BAJA después de llegar a 12 (antes marcaba repaso el resto del paso 12)
+  const ir = i12 >= 0 ? pr.findIndex((x, j) => j > i12 && x.n < 12) : -1;
+  if (ir >= 0) pr.slice(ir).forEach((x) => { x.recap = true; x.thumbs = thumbs; });
   return out;
 })();
 
