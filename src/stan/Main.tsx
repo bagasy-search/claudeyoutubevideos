@@ -11,6 +11,13 @@ import * as Pi from "./Piso";
 
 export const TOTAL_FRAMES_STAN = TOTAL;
 const TR = 8;
+// EVALUADOR fb14c v1: entradas vacías y escenas quietas → los componentes Piso arrancan SK cuadros adelantados y la cámara empuja despacio
+const SK = 12;
+const PiWrap: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
+  const f = useCurrentFrame(); const z = interpolate(f, [0, dur], [1, 1.055], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const x = interpolate(f, [0, dur], [0, (s.id % 2 ? 1 : -1) * 14], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return <AbsoluteFill style={{ transform: `translateX(${x}px) scale(${z})` }}><Sequence from={-SK} layout="none"><Body s={s} dur={dur + SK} /></Sequence></AbsoluteFill>;
+};
 
 const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   const seed = s.id + 1;
@@ -190,7 +197,7 @@ export const MainStan: React.FC = () => (
       const tail = nx && nx.k !== "A" && nx.trans && nx.trans !== "cut" ? TR + 8 : 0;
       return (
         <Sequence key={"s" + s.id} from={s.from} durationInFrames={Math.min(s.dur + tail, TOTAL - s.from)} premountFor={45}>
-          <Enter trans={s.trans || "cut"} seed={s.id}><Body s={s} dur={s.dur} /></Enter>
+          <Enter trans={s.trans || "cut"} seed={s.id}>{/^[A-Z].*P$/.test(s.view || "") ? <PiWrap s={s} dur={s.dur} /> : <Body s={s} dur={s.dur} />}</Enter>
         </Sequence>
       );
     })}

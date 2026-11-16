@@ -24,20 +24,20 @@ const Base: React.FC<{ bg?: string; dur: number; seed?: number; dim?: number }> 
 );
 const Kick: React.FC<{ txt: string; f0?: number; color?: string; style?: React.CSSProperties }> = ({ txt, f0 = 0, color = P.tiza, style }) => {
   const f = useCurrentFrame(); const p = sp(f, f0, 16);
-  return <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 42, letterSpacing: 5, color, textShadow: tsh, opacity: p, transform: `translateY(${(1 - p) * 18}px)`, ...style }}>{txt}</div>;
+  return <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 46, letterSpacing: 5, color, textShadow: tsh, opacity: p, transform: `translateY(${(1 - p) * 18}px)`, ...style }}>{txt}</div>;
 };
 const Big: React.FC<{ txt: string; f0?: number; size?: number; color?: string; style?: React.CSSProperties }> = ({ txt, f0 = 0, size = 88, color = "#F5F3EE", style }) => {
   const f = useCurrentFrame(); const p = sp(f, f0, 15);
   return <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: size, lineHeight: 1.08, color, textShadow: tsh, opacity: p, transform: `translateY(${(1 - p) * 28}px)`, ...style }}>{txt}</div>;
 };
 // tiza amarilla escrita a mano (se revela de izquierda a derecha como un trazo)
-const Tiza: React.FC<{ txt: string; f0?: number; size?: number; color?: string; len?: number; style?: React.CSSProperties }> = ({ txt, f0 = 0, size = 64, color = P.tiza, len = 16, style }) => {
+const Tiza: React.FC<{ txt: string; f0?: number; size?: number; color?: string; len?: number; style?: React.CSSProperties }> = ({ txt, f0 = 0, size = 64, color = P.tiza, len = 10, style }) => {
   const f = useCurrentFrame(); const w = interpolate(f, [f0, f0 + len], [0, 100], CL);
   return <div style={{ fontFamily: HAND || SANS, fontWeight: 700, fontSize: size, color, clipPath: `inset(-10% ${100 - w}% -10% 0)`, textShadow: "0 2px 6px rgba(0,0,0,0.6)", whiteSpace: "nowrap", ...style }}>{txt}</div>;
 };
 const Sello: React.FC<{ ok: boolean; txt: string; f0: number; style?: React.CSSProperties }> = ({ ok, txt, f0, style }) => {
   const f = useCurrentFrame(); const p = sp(f, f0, 9); const s = interpolate(p, [0, 1], [1.8, 1]);
-  return <div style={{ display: "inline-block", border: `5px solid ${ok ? P.ok : P.no}`, color: ok ? P.ok : P.no, background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "6px 18px", fontFamily: SANS, fontWeight: 800, fontSize: 42, letterSpacing: 2, opacity: cl(p * 1.4), transform: `scale(${s}) rotate(-4deg)`, ...style }}>{txt}</div>;
+  return <div style={{ display: "inline-block", border: `5px solid ${ok ? P.ok : P.no}`, color: ok ? P.ok : P.no, background: "rgba(255,255,255,0.92)", borderRadius: 8, padding: "6px 18px", fontFamily: SANS, fontWeight: 800, fontSize: 46, letterSpacing: 2, opacity: cl(p * 1.4), transform: `scale(${s}) rotate(-4deg)`, ...style }}>{txt}</div>;
 };
 const Pic: React.FC<{ src: string; style?: React.CSSProperties; fit?: "cover" | "contain"; filter?: string }> = ({ src, style, fit = "cover", filter }) => <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: fit, filter, ...style }} />;
 
@@ -51,7 +51,7 @@ export const ChapP: React.FC<{ n: number; N: number; title: string; src: string;
       </div>
       <div style={{ position: "absolute", left: 110, top: 250, width: 640 }}>
         <Tiza txt={`Paso ${n}`} f0={8} size={120} />
-        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 39, letterSpacing: 6, color: "#D8D4CC", opacity: sp(f, 20), marginTop: 6 }}>DE {N}</div>
+        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 44, letterSpacing: 6, color: "#D8D4CC", opacity: sp(f, 20), marginTop: 6 }}>DE {N}</div>
         <Big txt={title} f0={16} size={70} style={{ marginTop: 26 }} />
       </div>
     </AbsoluteFill>
@@ -63,13 +63,13 @@ export const IdxP: React.FC<{ head: string; cards: { n: number; title: string; s
   const f = useCurrentFrame(); const o = useOut(dur, 8); const up = interpolate(f, [8, 34], [0, 105], { ...CL, easing: Easing.inOut(Easing.cubic) });
   return (
     <AbsoluteFill style={{ opacity: o, ...cem(1) }}>
-      <div style={{ position: "absolute", left: 90, top: 60, fontFamily: SANS, fontWeight: 800, fontSize: 40, letterSpacing: 8, color: P.tiza, textShadow: tsh }}>{head}</div>
+      <div style={{ position: "absolute", left: 90, top: 60, fontFamily: SANS, fontWeight: 800, fontSize: 46, letterSpacing: 8, color: P.tiza, textShadow: tsh }}>{head}</div>
       <div style={{ position: "absolute", left: 90, right: 90, top: 140, display: "grid", gridTemplateColumns: "repeat(6, 1fr)", gap: 22 }}>
         {cards.map((c, i) => { const p = sp(f, 24 + i * 2, 15);
           return <div key={i} style={{ background: "#EDEAE3", padding: 8, opacity: p, transform: `translateY(${(1 - p) * 30}px)` }}>
             <div style={{ height: 210, overflow: "hidden" }}><Pic src={c.src} /></div>
-            <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 38, color: P.no, marginTop: 8 }}>{c.n}</div>
-            <div style={{ fontFamily: SERIF, fontSize: 38, color: P.ink, lineHeight: 1.1, height: 62 }}>{c.title}</div>
+            <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 44, color: P.no, marginTop: 8 }}>{c.n}</div>
+            <div style={{ fontFamily: SERIF, fontSize: 44, color: P.ink, lineHeight: 1.1, height: 62 }}>{c.title}</div>
           </div>; })}
       </div>
       <div style={{ position: "absolute", left: 0, right: 0, top: `${-up}%`, height: "100%", background: "repeating-linear-gradient(180deg, #8E9297 0 26px, #6D7176 26px 34px, #A9ADB2 34px 40px)", boxShadow: "0 20px 40px rgba(0,0,0,0.6)" }}>
@@ -85,10 +85,10 @@ export const RepasoP: React.FC<{ cards: { n: number; title: string; f: number }[
   return (
     <AbsoluteFill style={{ opacity: o, ...cem(0) }}>
       <AbsoluteFill style={{ background: "rgba(20,19,18,0.35)" }} />
-      <div style={{ position: "absolute", left: 90, top: 50, fontFamily: SANS, fontWeight: 800, fontSize: 38, letterSpacing: 8, color: P.tiza, textShadow: tsh }}>REPASO · LOS 12 PASOS</div>
+      <div style={{ position: "absolute", left: 90, top: 50, fontFamily: SANS, fontWeight: 800, fontSize: 44, letterSpacing: 8, color: P.tiza, textShadow: tsh }}>REPASO · LOS 12 PASOS</div>
       {cards.map((c, i) => { const col = i < 6 ? 0 : 1, row = i % 6; const x = 120 + col * 860 + (row % 2) * 50, y = 140 + row * 150; const p = sp(f, c.f, 13); const on = f >= c.f;
         return <div key={i} style={{ position: "absolute", left: x, top: y, display: "flex", alignItems: "center", gap: 28, opacity: on ? 1 : 0.18 }}>
-          <div style={{ width: 70, height: 110, borderRadius: "46% 46% 40% 40% / 55% 55% 45% 45%", background: on ? "rgba(30,28,26,0.75)" : "rgba(30,28,26,0.25)", transform: `rotate(${row % 2 ? 12 : -12}deg) scale(${0.7 + 0.3 * p})`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 800, fontSize: 34, color: P.tiza }}>{c.n}</div>
+          <div style={{ width: 70, height: 110, borderRadius: "46% 46% 40% 40% / 55% 55% 45% 45%", background: on ? "rgba(30,28,26,0.75)" : "rgba(30,28,26,0.25)", transform: `rotate(${row % 2 ? 12 : -12}deg) scale(${0.7 + 0.3 * p})`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 800, fontSize: 44, color: P.tiza }}>{c.n}</div>
           <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 44, color: "#F5F3EE", textShadow: tsh, transform: `translateX(${(1 - p) * -24}px)` }}>{c.title}</div>
         </div>; })}
     </AbsoluteFill>
@@ -105,7 +105,7 @@ export const PrecioP: React.FC<{ big: string; sub: string; bg?: string; dur: num
       <div style={{ position: "absolute", left: 960, top: 640, width: 1100 * pool, height: 380 * pool, transform: "translate(-50%,-50%)", borderRadius: "48% 52% 46% 54% / 50% 44% 56% 50%", background: "radial-gradient(ellipse at 40% 35%, rgba(255,245,215,0.85), rgba(227,184,90,0.75) 55%, rgba(150,110,40,0.7))", boxShadow: "0 0 0 6px rgba(255,255,255,0.15)" }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 520, textAlign: "center" }}>
         <Big txt={big} f0={26} size={210} color={P.ink} style={{ textShadow: "0 2px 0 rgba(255,255,255,0.5)" }} />
-        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 36, letterSpacing: 4, color: P.ink, opacity: sp(f, 34) }}>{sub}</div>
+        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 44, letterSpacing: 4, color: P.ink, opacity: sp(f, 34) }}>{sub}</div>
       </div>
     </AbsoluteFill>
   );
@@ -143,8 +143,8 @@ export const ComentP: React.FC<{ items: { txt: string; f: number }[]; head: stri
       {items.map((it, i) => { const p = interpolate(f, [it.f, it.f + 16], [0, 1], { ...CL, easing: Easing.in(Easing.quad) }); const land = sp(f, it.f + 16, 8);
         const x = 150 + i * 560, y = 300 + (i % 2) * 120, rot = (i % 2 ? 4 : -5);
         return <div key={i} style={{ position: "absolute", left: x, top: y, width: 500, opacity: cl(p * 3), transform: `translateZ(${(1 - p) * 700}px) rotate(${rot + (1 - p) * 20}deg) scale(${1 + (1 - land) * 0.03})`, background: P.paper, borderRadius: 14, padding: "30px 32px", boxShadow: `0 ${10 + 30 * p}px ${20 + 40 * p}px rgba(0,0,0,${0.2 + 0.4 * p})` }}>
-          <div style={{ fontFamily: SANS, fontSize: 38, color: "#857F75", marginBottom: 10 }}>comentario del video de la pared</div>
-          <div style={{ fontFamily: SERIF, fontSize: 42, color: P.ink, lineHeight: 1.15 }}>{it.txt}</div>
+          <div style={{ fontFamily: SANS, fontSize: 44, color: "#857F75", marginBottom: 10 }}>comentario del video de la pared</div>
+          <div style={{ fontFamily: SERIF, fontSize: 46, color: P.ink, lineHeight: 1.15 }}>{it.txt}</div>
         </div>; })}
     </AbsoluteFill>
   );
@@ -168,7 +168,7 @@ export const FotoCaeP: React.FC<{ src: string; caption: string; dur: number }> =
 // ---------- álbum final: la foto gira sobre su eje y del otro lado está el mismo taller años después
 export const GiroP: React.FC<{ a: string; b: string; ca: string; cb: string; dur: number }> = ({ a, b, ca, cb, dur }) => {
   const f = useCurrentFrame(); const o = useOut(dur, 8); const r = interpolate(f, [Math.round(dur * 0.35), Math.round(dur * 0.35) + 18], [0, 180], { ...CL, easing: Easing.inOut(Easing.cubic) });
-  const face = (src: string, c: string, back: boolean) => <div style={{ position: "absolute", inset: 0, backfaceVisibility: "hidden", transform: back ? "rotateY(180deg)" : undefined, background: "#F1ECE0", padding: "22px 22px 80px", boxShadow: "0 30px 60px rgba(0,0,0,0.55)" }}><div style={{ width: "100%", height: "100%", overflow: "hidden" }}><Pic src={src} filter={back ? undefined : "sepia(0.25)"} /></div><div style={{ position: "absolute", left: 28, bottom: 18, fontFamily: HAND || SANS, fontSize: 42, color: "#3A3530" }}>{c}</div></div>;
+  const face = (src: string, c: string, back: boolean) => <div style={{ position: "absolute", inset: 0, backfaceVisibility: "hidden", transform: back ? "rotateY(180deg)" : undefined, background: "#F1ECE0", padding: "22px 22px 80px", boxShadow: "0 30px 60px rgba(0,0,0,0.55)" }}><div style={{ width: "100%", height: "100%", overflow: "hidden" }}><Pic src={src} filter={back ? undefined : "sepia(0.25)"} /></div><div style={{ position: "absolute", left: 28, bottom: 18, fontFamily: HAND || SANS, fontSize: 46, color: "#3A3530" }}>{c}</div></div>;
   return (
     <AbsoluteFill style={{ opacity: o, ...cem(1), perspective: 2000 }}>
       <div style={{ position: "absolute", left: 460, top: 140, width: 1000, height: 720, transformStyle: "preserve-3d", transform: `rotateY(${r}deg)` }}>{face(a, ca, false)}{face(b, cb, true)}</div>
@@ -201,10 +201,10 @@ export const HarinaP: React.FC<{ src: string; caption: string; lesson: string; d
         {[[180, 480], [520, 560], [760, 430], [330, 620], [900, 600]].map(([x, y], i) => { const g = interpolate(f, [10 + i * 6, 34 + i * 6], [0, 1], { ...CL, easing: ease });
           return <div key={i} style={{ position: "absolute", left: x - 110 * g, top: y - 50 * g, width: 220 * g, height: 100 * g, borderRadius: "50% 46% 54% 48%", background: "radial-gradient(ellipse at 40% 35%, rgba(255,255,255,0.95), rgba(236,236,232,0.85) 60%, rgba(220,220,214,0.6))" }} />; })}
       </div>
-      <div style={{ position: "absolute", left: 1320, top: 260, width: 520 }}>
-        <Tiza txt={caption} f0={6} size={50} />
-        <Big txt="Lagunas blancas, duras, resbalosas" f0={30} size={58} style={{ marginTop: 26 }} />
-        <div style={{ marginTop: 34 }}><Sello ok txt={lesson} f0={dur - 50} /></div>
+      <div style={{ position: "absolute", left: 175, top: 18 }}><Tiza txt={caption} f0={0} size={62} len={10} /></div>
+      <div style={{ position: "absolute", left: 1320, top: 230, width: 540 }}>
+        <Big txt="Lagunas blancas, duras, resbalosas" f0={4} size={64} />
+        <div style={{ marginTop: 34 }}><Sello ok txt={lesson} f0={dur - 50} style={{ maxWidth: 520, whiteSpace: "normal", fontSize: 40 }} /></div>
       </div>
     </AbsoluteFill>
   );
@@ -236,8 +236,8 @@ export const CapasP: React.FC<{ items: { txt: string; f: number }[]; bg?: string
           <div style={{ position: "absolute", left: 0, right: 0, top: 120 - 70 * w, height: 70 * w, background: "linear-gradient(180deg, rgba(111,176,216,0.75), rgba(111,176,216,0.35))" }} />
           <div style={{ position: "absolute", left: 0, width: `${ll * 100}%`, top: 120, height: 46, background: "linear-gradient(180deg, #D9D4CA, #BDB7AC)", borderBottom: "3px dashed rgba(0,0,0,0.25)" }} />
           <div style={{ position: "absolute", left: `${ll * 100}%`, top: 40, width: 220, height: 30, marginLeft: -110, background: "linear-gradient(180deg,#C8CBD0,#7E8288)", borderRadius: 4, opacity: ll > 0 && ll < 1 ? 1 : 0, boxShadow: "0 8px 12px rgba(0,0,0,0.5)" }}><div style={{ position: "absolute", left: 80, top: -60, width: 60, height: 60, borderRadius: 10, background: "#7A4E2B" }} /></div>
-          <div style={{ position: "absolute", right: 20, top: 128, fontFamily: SANS, fontWeight: 700, fontSize: 38, color: P.ink, opacity: ll }}>capa aguada, débil</div>
-          <div style={{ position: "absolute", right: 20, bottom: 20, fontFamily: SANS, fontWeight: 700, fontSize: 38, color: "#E8E4DC" }}>piso sano</div>
+          <div style={{ position: "absolute", right: 20, top: 128, fontFamily: SANS, fontWeight: 700, fontSize: 44, color: P.ink, opacity: ll }}>capa aguada, débil</div>
+          <div style={{ position: "absolute", right: 20, bottom: 20, fontFamily: SANS, fontWeight: 700, fontSize: 44, color: "#E8E4DC" }}>piso sano</div>
         </div>
       </div>
       <div style={{ position: "absolute", left: 1110, top: 230, width: 700 }}>
@@ -258,7 +258,7 @@ export const CostraP: React.FC<{ bg?: string; dur: number }> = ({ bg, dur }) => 
       {Array.from({ length: 24 }, (_, i) => { const st = 14 + (hash(i) % 60); const t = cl((f - st) / 24); const x = 160 + i * 66.6;
         return <div key={i} style={{ position: "absolute", left: x, top: 400 + t * t * 420, width: 64, height: 40, background: "linear-gradient(180deg,#D7D2C8,#B5AFA4)", clipPath: `polygon(0 ${hash(i) % 30}%, 100% ${hash(i + 1) % 30}%, ${90 - (hash(i + 2) % 20)}% 100%, ${hash(i + 3) % 20}% 100%)`, transform: `rotate(${t * ((hash(i) % 2 ? 1 : -1) * 70)}deg)`, opacity: 1 - t * 0.9 }} />; })}
       <div style={{ position: "absolute", left: 170, top: 330 }}><Kick txt="CASCARITA FLOJA · 2 A 3 MM" color="#F0ECE4" /></div>
-      <div style={{ position: "absolute", left: 200, top: 700, fontFamily: SANS, fontWeight: 700, fontSize: 34, letterSpacing: 4, color: "#ECE8E0" }}>ABAJO: PISO SANO Y DURO</div>
+      <div style={{ position: "absolute", left: 200, top: 700, fontFamily: SANS, fontWeight: 700, fontSize: 44, letterSpacing: 4, color: "#ECE8E0" }}>ABAJO: PISO SANO Y DURO</div>
       <div style={{ position: "absolute", right: 160, top: 160, width: 760, textAlign: "right" }}><Big txt="Como la costra de un pan mal cocido" f0={20} size={60} /></div>
     </AbsoluteFill>
   );
@@ -275,7 +275,7 @@ export const CintaP: React.FC<{ bg?: string; dur: number }> = ({ bg, dur }) => {
         <div style={{ position: "absolute", inset: 10, background: "radial-gradient(circle, rgba(90,86,80,0.7) 0 1.5px, transparent 2px) 0 0 / 8px 9px", opacity: peel }} />
       </div>
       <div style={{ position: "absolute", left: tx - 60, top: 450, width: 120, height: 150, borderRadius: "50% 50% 45% 45%", background: "rgba(205,160,130,0.92)", boxShadow: "0 12px 20px rgba(0,0,0,0.4)", opacity: f > 10 && peel < 0.1 ? 1 : 0 }} />
-      <div style={{ position: "absolute", left: 520, top: 360, fontFamily: SANS, fontWeight: 700, fontSize: 39, color: P.ink }}>← 15 cm →</div>
+      <div style={{ position: "absolute", left: 520, top: 360, fontFamily: SANS, fontWeight: 700, fontSize: 44, color: P.ink }}>← 15 cm →</div>
       <div style={{ position: "absolute", left: 120, top: 100, width: 1600 }}>
         <Kick txt="LA PRUEBA DE LA CINTA" color={P.ink} style={{ textShadow: "none" }} />
         <Big txt={peel > 0.3 ? "Despega de un tirón" : "Aprieta con el pulgar, 3 o 4 veces"} f0={peel > 0.3 ? Math.round(T * 0.55) : 6} size={70} color={P.ink} style={{ textShadow: "none" }} />
@@ -294,7 +294,7 @@ export const EscalaP: React.FC<{ rows: { g: number; t: string; v: string; ok: bo
         return <div key={i} style={{ position: "absolute", left: 160 + i * 560, top: 170, width: 480, height: 640, background: "#FBFAF6", transform: `rotate(${(i - 1) * 4}deg) translateY(${(1 - p) * 600}px)`, boxShadow: "0 20px 40px rgba(0,0,0,0.5)", padding: 36 }}>
           <div style={{ height: 120, background: `rgba(${110 - r.g * 70},${108 - r.g * 70},${104 - r.g * 70},${0.1 + r.g * 0.8})`, border: "2px solid rgba(200,200,200,0.7)", marginTop: 40 }} />
           <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 48, color: P.ink, marginTop: 40 }}>{r.t}</div>
-          <div style={{ fontFamily: SANS, fontSize: 39, color: "#5B5650", marginTop: 12, lineHeight: 1.2 }}>{r.v}</div>
+          <div style={{ fontFamily: SANS, fontSize: 44, color: "#5B5650", marginTop: 12, lineHeight: 1.2 }}>{r.v}</div>
           <div style={{ marginTop: 30 }}><Sello ok={r.ok} txt={r.s} f0={r.f + 12} /></div>
         </div>; })}
     </AbsoluteFill>
@@ -314,7 +314,7 @@ export const DosCintasP: React.FC<{ bg?: string; dur: number }> = ({ bg, dur }) 
           </div>
           <div style={{ fontFamily: HAND || SANS, fontSize: 44, color: i ? P.ok : P.no, marginTop: 18 }}>{i ? "a los 7 días" : "antes"}</div>
         </div>)}
-        <div style={{ position: "absolute", left: 90, top: 50, fontFamily: SANS, fontWeight: 700, fontSize: 39, letterSpacing: 4, color: "#6B665E" }}>MISMO LUGAR · MISMA CINTA · MISMO PULGAR</div>
+        <div style={{ position: "absolute", left: 90, top: 50, fontFamily: SANS, fontWeight: 700, fontSize: 44, letterSpacing: 4, color: "#6B665E" }}>MISMO LUGAR · MISMA CINTA · MISMO PULGAR</div>
       </div>
     </AbsoluteFill>
   );
@@ -358,7 +358,7 @@ export const GotaP: React.FC<{ modo: "antes" | "despues"; bg?: string; dur: numb
       <div style={{ position: "absolute", left: -r, top: -r * 0.85, width: 2 * r * s, height: 1.7 * r * s, borderRadius: "50%", background: perla ? "radial-gradient(circle at 35% 30%, rgba(255,255,255,0.95) 0 10%, rgba(140,190,220,0.65) 30%, rgba(60,100,130,0.6))" : `radial-gradient(circle, rgba(50,46,42,${0.7 * (1 - chupa * 0.6)}), rgba(60,56,52,${0.35 * (1 - chupa)}) 70%, transparent)`, boxShadow: perla ? "6px 14px 18px rgba(0,0,0,0.35)" : "none" }} />
       <div style={{ position: "absolute", left: -200, top: 210, width: 400, textAlign: "center" }}>
         <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 54, color: P.ink }}>{clock}</div>
-        <div style={{ fontFamily: SERIF, fontSize: 36, color: P.ink, marginTop: 6 }}>{lab}</div>
+        <div style={{ fontFamily: SERIF, fontSize: 44, color: P.ink, marginTop: 6 }}>{lab}</div>
         <div style={{ marginTop: 16 }}><Sello ok={ok} txt={ok ? "EL SILICATO ENTRA" : "NO VA A ENTRAR"} f0={f0 + 40} /></div>
       </div>
     </div>;
@@ -388,7 +388,7 @@ export const OrigenP: React.FC<{ bg?: string; dur: number }> = ({ bg, dur }) => 
         {S.map((s, i) => { const p = sp(f, 4 + i * 9, 12); return <React.Fragment key={i}>
           <div style={{ width: 230, textAlign: "center", opacity: p, transform: `scale(${0.6 + 0.4 * p})` }}>
             <div style={{ width: 200, height: 200, margin: "0 auto", borderRadius: "50%", background: `radial-gradient(circle at 35% 30%, #fff 0 6%, ${s.c} 40%, rgba(0,0,0,0.35))`, boxShadow: "0 20px 40px rgba(0,0,0,0.5)" }} />
-            <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 39, color: "#F2EFE8", marginTop: 18, textShadow: tsh }}>{s.t}</div>
+            <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 44, color: "#F2EFE8", marginTop: 18, textShadow: tsh }}>{s.t}</div>
           </div>
           {i < S.length - 1 && <div style={{ width: 70 * sp(f, 8 + i * 9), height: 8, background: P.tiza, borderRadius: 4 }} />}
         </React.Fragment>; })}
@@ -441,9 +441,9 @@ export const FuentesP: React.FC<{ docs: { a: string; b: string; f: number }[]; f
       {docs.map((d, i) => { const p = sp(f, d.f, 14); const hl = interpolate(f, [d.f + 20, d.f + 36], [0, 100], CL);
         return <div key={i} style={{ position: "absolute", left: 180 + i * 820, top: 180, width: 740, height: 560, background: "#EEE7D6", borderTop: "40px solid #C9B78A", padding: "40px 46px", transform: `rotate(${i ? 2 : -2}deg) translateX(${(1 - p) * (i ? 900 : -900)}px)`, boxShadow: "0 30px 50px rgba(0,0,0,0.5)" }}>
           <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 52, color: P.ink }}>{d.a}</div>
-          <div style={{ fontFamily: SERIF, fontSize: 34, color: "#4A453E", marginTop: 12, lineHeight: 1.2 }}>{d.b}</div>
+          <div style={{ fontFamily: SERIF, fontSize: 44, color: "#4A453E", marginTop: 12, lineHeight: 1.2 }}>{d.b}</div>
           {[0, 1, 2].map((k) => <div key={k} style={{ height: 14, background: "rgba(60,55,50,0.18)", marginTop: 26, width: `${90 - k * 12}%` }} />)}
-          <div style={{ position: "relative", marginTop: 26, fontFamily: SERIF, fontSize: 36, color: P.ink }}>
+          <div style={{ position: "relative", marginTop: 26, fontFamily: SERIF, fontSize: 44, color: P.ink }}>
             <div style={{ position: "absolute", left: -8, top: 4, height: 44, width: `${hl}%`, background: "rgba(242,210,58,0.75)" }} /><span style={{ position: "relative" }}>endurecedores químicos: silicatos</span>
           </div>
         </div>; })}
@@ -500,11 +500,11 @@ export const VidrioP: React.FC<{ items: string[]; bg?: string; dur: number }> = 
       <Base bg={bg} dur={dur} dim={0.55} />
       <div style={{ position: "absolute", left: 140, top: 160, width: 760, height: 740, border: "22px solid #B7BCC2", background: "linear-gradient(135deg, rgba(200,225,235,0.35), rgba(255,255,255,0.12) 50%, rgba(200,225,235,0.3))", boxShadow: "0 30px 60px rgba(0,0,0,0.5)", overflow: "hidden" }}>
         <div style={{ position: "absolute", left: 220, top: 260, width: 300 * hit, height: 260 * hit, borderRadius: "46% 54% 40% 60% / 50% 42% 58% 50%", background: `rgba(240,240,236,${0.25 + 0.65 * fr})`, boxShadow: `0 0 ${30 * fr}px rgba(255,255,255,${0.6 * fr})` }} />
-        <div style={{ position: "absolute", left: 30, bottom: 30, fontFamily: SANS, fontWeight: 800, fontSize: 34, color: P.no, background: "rgba(255,255,255,0.9)", padding: "6px 16px", opacity: fr }}>SECO, NO SALE NUNCA</div>
+        <div style={{ position: "absolute", left: 30, bottom: 30, fontFamily: SANS, fontWeight: 800, fontSize: 44, color: P.no, background: "rgba(255,255,255,0.9)", padding: "6px 16px", opacity: fr }}>SECO, NO SALE NUNCA</div>
       </div>
       <div style={{ position: "absolute", left: 990, top: 210, width: 820 }}>
         <Kick txt="TAPA CON NYLON Y CINTA" />
-        {items.map((t, i) => <div key={i} style={{ fontFamily: SERIF, fontSize: 50, color: "#F5F3EE", textShadow: tsh, marginTop: 20, opacity: sp(f, 40 + i * 10, 15) }}>— {t}</div>)}
+        <div style={{ background: "rgba(20,19,18,0.9)", padding: "18px 30px 28px", marginTop: 14, borderLeft: `8px solid ${P.tiza}` }}>{items.map((t, i) => <div key={i} style={{ fontFamily: SERIF, fontSize: 52, color: "#F5F3EE", marginTop: 14, opacity: sp(f, 4 + i * 8, 15) }}>— {t}</div>)}</div>
       </div>
     </AbsoluteFill>
   );
@@ -536,7 +536,7 @@ export const PorosP: React.FC<{ bg?: string; dur: number }> = ({ bg, dur }) => {
       {wet && <div style={{ position: "absolute", left: 40, right: 40, top: 20, height: 26 * fill + 4, borderRadius: 14, background: "rgba(227,184,90,0.7)" }} />}
     </div>
     <div style={{ position: "absolute", left: 125, top: -260 + d * (wet ? 250 : 300), width: 50, height: 64, borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%", background: P.sil, opacity: fill > 0.1 ? 0 : 1 }} />
-    <div style={{ width: 300, textAlign: "center", fontFamily: SERIF, fontSize: 42, color: "#F5F3EE", textShadow: tsh, marginTop: 20 }}>{lab}</div>
+    <div style={{ width: 300, textAlign: "center", fontFamily: SERIF, fontSize: 46, color: "#F5F3EE", textShadow: tsh, marginTop: 20 }}>{lab}</div>
     <div style={{ textAlign: "center", marginTop: 12 }}><Sello ok={ok} txt={ok ? "ENTRA" : "SE QUEDA ARRIBA"} f0={50} /></div>
   </div>;
   return (
@@ -597,10 +597,10 @@ export const ClimaP: React.FC<{ bg?: string; dur: number }> = ({ bg, dur }) => {
     <AbsoluteFill style={{ opacity: o }}>
       <Base bg={bg} dur={dur} dim={0.72} />
       <div style={{ position: "absolute", left: 160, top: 500, width: 1600, height: 70, background: `linear-gradient(90deg, #5A8FD0 0 25%, ${P.ok} 25% 75%, #E0703A 75%)`, borderRadius: 35, boxShadow: "0 20px 40px rgba(0,0,0,0.5)" }} />
-      {[0, 10, 20, 30, 40].map((c) => <div key={c} style={{ position: "absolute", left: X(c) - 60, top: 590, width: 120, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 36, color: "#F2EFE8" }}>{c} °C</div>)}
+      {[0, 10, 20, 30, 40].map((c) => <div key={c} style={{ position: "absolute", left: X(c) - 60, top: 590, width: 120, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 44, color: "#F2EFE8" }}>{c} °C</div>)}
       <div style={{ position: "absolute", left: X(v) - 20, top: 440, width: 40, height: 190, background: "#F5F3EE", borderRadius: 20, boxShadow: "0 8px 18px rgba(0,0,0,0.6)" }} />
-      <div style={{ position: "absolute", left: 160, top: 300, width: 520, fontFamily: SERIF, fontSize: 40, color: "#CFE0F2", textShadow: tsh, opacity: v < 10 ? 1 : 0.35 }}>frío: el líquido se queda arriba</div>
-      <div style={{ position: "absolute", right: 160, top: 300, width: 560, textAlign: "right", fontFamily: SERIF, fontSize: 40, color: "#F5C9A8", textShadow: tsh, opacity: v > 30 ? 1 : 0.35 }}>sol directo: se seca antes de entrar</div>
+      <div style={{ position: "absolute", left: 160, top: 300, width: 520, fontFamily: SERIF, fontSize: 46, color: "#CFE0F2", textShadow: tsh, opacity: v < 10 ? 1 : 0.35 }}>frío: el líquido se queda arriba</div>
+      <div style={{ position: "absolute", right: 160, top: 300, width: 560, textAlign: "right", fontFamily: SERIF, fontSize: 46, color: "#F5C9A8", textShadow: tsh, opacity: v > 30 ? 1 : 0.35 }}>sol directo: se seca antes de entrar</div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 720, textAlign: "center" }}><Big txt="entre 10 y 30 grados" f0={56} size={80} color="#BFE5C3" /></div>
     </AbsoluteFill>
   );
@@ -617,7 +617,7 @@ export const MezclaP: React.FC<{ n: number; note: string; bg?: string; dur: numb
         {Array.from({ length: n + 1 }, (_, i) => { const t = cl((f - 8 - i * step) / step); const last = i === n;
           return <div key={i} style={{ width: 110, height: 200, borderRadius: "14px 14px 20px 20px", border: "5px solid rgba(255,255,255,0.7)", position: "relative", overflow: "hidden", transform: `rotate(${Math.sin(t * Math.PI) * 50}deg) translateY(${Math.sin(t * Math.PI) * -40}px)`, background: "rgba(255,255,255,0.08)" }}>
             <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: `${(1 - t) * 85}%`, background: last ? "rgba(227,184,90,0.9)" : "rgba(111,176,216,0.85)" }} />
-            <div style={{ position: "absolute", left: 0, right: 0, top: 6, textAlign: "center", fontFamily: SANS, fontWeight: 800, fontSize: 38, color: "#fff" }}>{last ? "SILICATO" : "AGUA"}</div>
+            <div style={{ position: "absolute", left: 0, right: 0, top: 6, textAlign: "center", fontFamily: SANS, fontWeight: 800, fontSize: 44, color: "#fff" }}>{last ? "SILICATO" : "AGUA"}</div>
           </div>; })}
       </div>
       <div style={{ position: "absolute", left: 260, top: 500, width: 440, height: 440, borderRadius: "50%", background: "#DCDDDB", boxShadow: "inset 0 0 0 24px #C2C4C2, 0 30px 60px rgba(0,0,0,0.5)", overflow: "hidden" }}>
@@ -682,7 +682,7 @@ export const MojadoP: React.FC<{ bg?: string; dur: number }> = ({ bg, dur }) => 
         <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 180, color: P.ink, lineHeight: 1 }}>{m}<span style={{ fontSize: 56 }}> min</span></div>
         <Big txt="mojado de 15 a 20 minutos" f0={8} size={52} color={P.ink} style={{ textShadow: "none" }} />
         <div style={{ marginTop: 30 }}><Sello ok={false} txt="SIN CHARCOS" f0={40} /></div>
-        <Kick txt="DONDE SE SECA ANTES, OTRO POQUITO" f0={60} color={P.ink} style={{ textShadow: "none", marginTop: 26, fontSize: 38 }} />
+        <Kick txt="DONDE SE SECA ANTES, OTRO POQUITO" f0={60} color={P.ink} style={{ textShadow: "none", marginTop: 26, fontSize: 44 }} />
       </div>
     </AbsoluteFill>
   );
@@ -711,7 +711,7 @@ export const SemanaP: React.FC<{ bg?: string; dur: number }> = ({ bg, dur }) => 
       <div style={{ position: "absolute", left: 120, right: 120, top: 360, display: "flex", gap: 16 }}>
         {Array.from({ length: 7 }, (_, i) => { const h = cl(d - i); return <div key={i} style={{ flex: 1, height: 260, ...cem(0, h), position: "relative", boxShadow: `0 0 0 ${h > 0.98 ? 5 : 0}px ${P.ok}, 0 20px 30px rgba(0,0,0,0.5)` }}>
           <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: `${h * 100}%`, background: "linear-gradient(0deg, rgba(79,162,90,0.35), transparent)" }} />
-          <div style={{ position: "absolute", left: 14, top: 10, fontFamily: SANS, fontWeight: 800, fontSize: 42, color: P.ink }}>día {i + 1}</div>
+          <div style={{ position: "absolute", left: 14, top: 10, fontFamily: SANS, fontWeight: 800, fontSize: 46, color: P.ink }}>día {i + 1}</div>
         </div>; })}
       </div>
       <div style={{ position: "absolute", left: 120, top: 680, fontFamily: SERIF, fontSize: 44, color: "#F5F3EE", textShadow: tsh, opacity: d > 1 ? 1 : 0.3 }}>día 1: zapatos limpios</div>
@@ -799,7 +799,7 @@ export const CostoP: React.FC<{ rows: { t: string; v: string; f: number }[]; bg?
             <div style={{ fontFamily: SERIF, fontSize: 50, color: "#F5F3EE", textShadow: tsh, width: 700 }}>{r.t}</div>
             <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 52, color: P.tiza }}>{r.v}</div>
           </div>
-          <div style={{ position: "absolute", left: 1400 + (i % 3) * 40, top: 200 + t * 330, width: 120, height: 70, borderRadius: 10, background: P.paper, boxShadow: "0 10px 20px rgba(0,0,0,0.4)", opacity: f >= r.f + 14 && t < 1 ? 1 : 0, fontFamily: SANS, fontWeight: 800, fontSize: 38, display: "flex", alignItems: "center", justifyContent: "center", color: P.ink }}>{r.v}</div>
+          <div style={{ position: "absolute", left: 1400 + (i % 3) * 40, top: 200 + t * 330, width: 120, height: 70, borderRadius: 10, background: P.paper, boxShadow: "0 10px 20px rgba(0,0,0,0.4)", opacity: f >= r.f + 14 && t < 1 ? 1 : 0, fontFamily: SANS, fontWeight: 800, fontSize: 44, display: "flex", alignItems: "center", justifyContent: "center", color: P.ink }}>{r.v}</div>
         </React.Fragment>; })}
       <div style={{ position: "absolute", left: 140, top: 90 }}><Kick txt="MI COCHERA · 30 M²" /></div>
     </AbsoluteFill>
