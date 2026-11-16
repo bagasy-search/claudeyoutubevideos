@@ -82,25 +82,23 @@ export const DoorHanger: React.FC<{ text?: string; v?: number; dur: number }> = 
     const P = 30;
     const press = interpolate(f, [P - 4, P, P + 6], [0, 1, 0], K);
     const on = f >= P;
-    const halo = interpolate(f, [P, P + 24], [0, 1], K);
     const btn = (label: string, lit: boolean, col: string, pr: number) => (
-      <div style={{ width: 420, height: 170, borderRadius: 22, background: "linear-gradient(180deg,#2A2A2A,#141414)", boxShadow: `inset 0 3px 8px rgba(0,0,0,0.8), 0 ${8 - pr * 6}px ${14 - pr * 8}px rgba(0,0,0,0.5)`,
+      <div style={{ width: 540, height: 200, borderRadius: 24, background: "linear-gradient(180deg,#2A2A2A,#141414)", boxShadow: `inset 0 3px 8px rgba(0,0,0,0.8), 0 ${8 - pr * 6}px ${14 - pr * 8}px rgba(0,0,0,0.5)`,
         transform: `translateY(${pr * 6}px)`, display: "flex", alignItems: "center", justifyContent: "center", border: "6px solid #6E5226",
-        fontFamily: LABEL, fontWeight: 700, fontSize: 60, letterSpacing: 3, whiteSpace: "nowrap", color: lit ? "#FFFFFF" : "rgba(255,255,255,0.18)",
+        fontFamily: LABEL, fontWeight: 700, fontSize: 70, letterSpacing: 3, whiteSpace: "nowrap", color: lit ? "#FFFFFF" : "rgba(255,255,255,0.18)",
         textShadow: lit ? `0 0 18px ${col}, 0 0 4px ${col}` : "none", backgroundColor: lit ? col : undefined }}>{label}</div>
     );
     return (
-      <AbsoluteFill style={{ transform: `translateY(${lift}px)` }}>
+      <AbsoluteFill style={{ opacity: interpolate(f, [dur - 10, dur], [1, 0], K) }}>
         <AbsoluteFill style={{ background: "linear-gradient(270deg, rgba(19,29,53,0.7) 0%, rgba(19,29,53,0) 55%)" }} />
-        <div style={{ position: "absolute", left: 1300 + dx, top: 170, width: 540, height: 680, borderRadius: 30, background: brass,
+        <div style={{ position: "absolute", left: 1160 + dx, top: 150, width: 660, height: 780, borderRadius: 30, background: brass,
           boxShadow: "0 34px 60px rgba(0,0,0,0.55), inset 0 4px 0 rgba(255,255,255,0.5), inset 0 -10px 16px rgba(0,0,0,0.3)",
           display: "flex", flexDirection: "column", alignItems: "center", gap: 46, paddingTop: 70 }}>
-          {[0, 1, 2, 3].map((k) => <div key={k} style={{ position: "absolute", left: k % 2 ? 500 : 26, top: k < 2 ? 26 : 640, width: 16, height: 16, borderRadius: 8, background: "#7A5A26", boxShadow: "inset 0 2px 3px rgba(0,0,0,0.5)" }} />)}
+          {[0, 1, 2, 3].map((k) => <div key={k} style={{ position: "absolute", left: k % 2 ? 618 : 26, top: k < 2 ? 26 : 738, width: 16, height: 16, borderRadius: 8, background: "#7A5A26", boxShadow: "inset 0 2px 3px rgba(0,0,0,0.5)" }} />)}
           <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: "#3E2C10", textShadow: "0 1px 0 rgba(255,255,255,0.4)" }}>412</div>
           {btn("NO MOLESTAR", !on, "#D23B2E", 0)}
           {btn(on ? "SUSCRITO ✓" : "SUSCRÍBASE", on, "#2FA552", press)}
-          {on && <div style={{ position: "absolute", left: 60, top: 418, width: 420, height: 170, borderRadius: 22, border: `8px solid #5BE37D`,
-            transform: `scale(${1 + halo * 0.5})`, opacity: 1 - halo }} />}
+          
         </div>
       </AbsoluteFill>
     );
@@ -145,7 +143,7 @@ export const DoorHanger: React.FC<{ text?: string; v?: number; dur: number }> = 
         <div style={{ position: "absolute", inset: 0, transformStyle: "preserve-3d", transform: `rotateY(${flip}deg)` }}>
           {face(<>
             <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 70, letterSpacing: 4, color: CL.white, marginTop: 240, textAlign: "center", lineHeight: 1.05 }}>NO<br />MOLESTAR</div>
-            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: CL.yellowSoft, marginTop: 60 }}>habitación 412</div>
+            
           </>, CL.red, 0)}
           {face(<>
             <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: on ? 76 : 62, letterSpacing: on ? 3 : 1, color: on ? CL.navy : CL.white, marginTop: 250, textAlign: "center", lineHeight: 1.05, whiteSpace: "nowrap" }}>{on ? <>SUSCRITO<br />✓</> : "SUSCRÍBASE"}</div>
@@ -168,12 +166,13 @@ export const DoorHanger: React.FC<{ text?: string; v?: number; dur: number }> = 
 // en dos renglones con el lápiz del hotel y al terminar aparece "↓ contésteme en los comentarios".
 export const GuestCard: React.FC<{ text: string; dur: number }> = ({ text, dur }) => {
   const f = useCurrentFrame();
-  const y = interpolate(f, [dur - 12, dur], [0, 700], { ...K, easing: Easing.in(Easing.cubic) });
+  const y = interpolate(f, [dur - 22, dur], [0, 800], { ...K, easing: Easing.in(Easing.cubic) });
+  const tilt = interpolate(f, [dur - 22, dur], [0, 14], K) + (f > 20 ? Math.sin(f / 18) * 0.6 : 0);
   const inn = spring({ frame: f - 4, fps: 30, config: { damping: 18, mass: 1.3 } });
   const T0 = 26, T1 = T0 + Math.round(text.length * 1.5);
   const shown = Math.floor(interpolate(f, [T0, T1], [0, text.length], K));
   const p = shown / Math.max(1, text.length);
-  const L = 1190, T = 560, Wd = 680, H = 470;
+  const L = 1170, T = 470, Wd = 700, H = 450;
   const after = spring({ frame: f - T1 - 4, fps: 30, config: { damping: 14 } });
   return (
     <AbsoluteFill style={{ transform: `translateY(${y}px)` }}>
@@ -183,7 +182,7 @@ export const GuestCard: React.FC<{ text: string; dur: number }> = ({ text, dur }
           transform: `translateY(${(1 - spring({ frame: f - k * 3, fps: 30, config: { damping: 20 } })) * 600}px) rotate(${k * 2.2 - 1}deg)` }} />
       ))}
       <div style={{ position: "absolute", left: L, top: T, width: Wd, height: H, background: CL.white, borderRadius: 8,
-        boxShadow: "0 30px 60px rgba(0,0,0,0.5)", transform: `translateY(${(1 - inn) * 700}px) rotate(${(1 - inn) * 9 - 1.2}deg)`, transformOrigin: "20% 100%",
+        boxShadow: "0 30px 60px rgba(0,0,0,0.5)", transform: `translateY(${(1 - inn) * 700}px) rotate(${(1 - inn) * 9 - 1.2 + tilt}deg)`, transformOrigin: "20% 100%",
         backgroundImage: `repeating-linear-gradient(0deg, transparent 0 92px, ${CL.grout} 92px 94px)`, backgroundPosition: "0 110px", padding: "26px 44px" }}>
         <div style={{ borderBottom: `4px double ${CL.brass}`, paddingBottom: 10, background: CL.white, display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
           <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 32, letterSpacing: 6, color: CL.navy }}>COMENTARIOS</div>
@@ -191,7 +190,7 @@ export const GuestCard: React.FC<{ text: string; dur: number }> = ({ text, dur }
         </div>
         <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 74, lineHeight: "94px", color: CL.navy, marginTop: 14 }}>
           {text.slice(0, shown)}
-          <span style={{ display: "inline-block", position: "relative", width: 0, height: 0, opacity: p < 1 ? 1 : 0 }}>
+          <span style={{ display: "inline-block", position: "relative", width: 0, height: 0, opacity: p < 1 && shown > 0 ? 1 : 0 }}>
             <span style={{ position: "absolute", left: 0, top: -150, width: 26, height: 190, transformOrigin: "13px 190px", transform: `rotate(${28 + Math.sin(f / 2.2) * 3}deg)` }}>
               <span style={{ position: "absolute", left: 0, top: 0, width: 26, height: 22, background: "#E8909A", borderRadius: "6px 6px 0 0" }} />
               <span style={{ position: "absolute", left: 0, top: 22, width: 26, height: 16, background: "linear-gradient(90deg,#9A9A9A,#E6E6E6,#9A9A9A)" }} />
@@ -201,7 +200,7 @@ export const GuestCard: React.FC<{ text: string; dur: number }> = ({ text, dur }
             </span>
           </span>
         </div>
-        <div style={{ position: "absolute", left: 44, bottom: 22, fontFamily: LABEL, fontWeight: 700, fontSize: 34, letterSpacing: 3, color: CL.red,
+        <div style={{ position: "absolute", left: 44, bottom: 22, fontFamily: LABEL, fontWeight: 700, fontSize: 42, letterSpacing: 2, color: CL.red,
           opacity: after, transform: `translateY(${(1 - after) * 20}px)` }}>↓ CONTÉSTEME EN LOS COMENTARIOS</div>
       </div>
     </AbsoluteFill>
@@ -217,10 +216,10 @@ export const ServiceSheet: React.FC<{ items: string[]; marks: number[]; srcs?: s
   [...marks].sort((a, b) => a - b).forEach((m, i) => ms.push(i ? Math.max(m, ms[i - 1] + 8) : Math.max(m, 14)));
   return (
     <AbsoluteFill style={{ opacity: o, background: CL.navyDeep }}>
-      {srcs?.[0] ? <Img src={staticFile(srcs[0])} style={{ position: "absolute", inset: -40, width: 2000, height: 1160, objectFit: "cover", filter: "blur(18px) brightness(0.55)" }} /> : null}
-      <div style={{ position: "absolute", left: 230, top: 30, width: 1460, height: 1030, background: "#8B6A45", borderRadius: 26, boxShadow: `0 40px 70px ${CL.shadow}`,
+      {srcs?.[0] ? <Img src={staticFile(srcs[0])} style={{ position: "absolute", inset: -40, width: 2000, height: 1160, objectFit: "cover", filter: "blur(14px) brightness(0.85)" }} /> : null}
+      <div style={{ position: "absolute", left: 110, top: 20, width: 1700, height: 1045, background: "#8B6A45", borderRadius: 26, boxShadow: `0 40px 70px ${CL.shadow}`,
         transform: `translateX(${(1 - inn) * 1500}px) rotate(${(1 - inn) * 8}deg)` }}>
-        <div style={{ position: "absolute", left: 610, top: -14, width: 240, height: 70, borderRadius: 14, background: brass, boxShadow: "0 6px 12px rgba(0,0,0,0.4)" }} />
+        <div style={{ position: "absolute", left: 730, top: -14, width: 240, height: 70, borderRadius: 14, background: brass, boxShadow: "0 6px 12px rgba(0,0,0,0.4)" }} />
         <div style={{ position: "absolute", left: 40, top: 70, right: 40, bottom: 30, background: CL.white, padding: "16px 44px" }}>
           <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 46, letterSpacing: 6, color: CL.navy, borderBottom: `3px solid ${CL.navy}`, paddingBottom: 8 }}>HOJA DE SERVICIO · LAVADORA</div>
           {items.map((t, i) => {
@@ -231,8 +230,8 @@ export const ServiceSheet: React.FC<{ items: string[]; marks: number[]; srcs?: s
               <div key={i} style={{ display: "flex", alignItems: "center", height: 92, borderBottom: `2px solid ${CL.grout}`, position: "relative" }}>
                 <div style={{ width: 64, fontFamily: SERIF, fontWeight: 900, fontSize: 50, color: lit ? CL.brass : CL.grout }}>{i + 1}</div>
                 {srcs?.[i] ? <Img src={staticFile(srcs[i])} style={{ width: 128, height: 72, objectFit: "cover", borderRadius: 6, marginRight: 26, opacity: lit ? 1 : 0.35, filter: lit ? "none" : "grayscale(1)" }} /> : null}
-                <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 58, color: lit ? CL.ink : CL.inkSoft, opacity: lit ? 1 : 0.5, whiteSpace: "nowrap" }}>{t}</div>
-                {f >= m - 6 && <div style={{ position: "absolute", right: 6, fontFamily: LABEL, fontWeight: 700, fontSize: 40, letterSpacing: 3, color: CL.nitrile,
+                <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 64, color: lit ? CL.ink : CL.inkSoft, opacity: lit ? 1 : 0.5, whiteSpace: "nowrap" }}>{t}</div>
+                {f >= m - 6 && <div style={{ position: "absolute", right: 6, fontFamily: LABEL, fontWeight: 700, fontSize: 52, letterSpacing: 3, color: CL.nitrile,
                   border: `5px solid ${CL.nitrile}`, borderRadius: 8, padding: "2px 16px", transform: `rotate(-8deg) scale(${interpolate(st, [0, 1], [1.9, 1])})`,
                   opacity: lit ? 0.92 : st * 0.5, boxShadow: `0 ${(1 - st) * 30}px ${(1 - st) * 30}px rgba(0,0,0,${0.25 * (1 - st)})` }}>HECHO</div>}
               </div>
