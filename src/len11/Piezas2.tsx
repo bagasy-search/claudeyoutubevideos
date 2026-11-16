@@ -346,9 +346,9 @@ export const CTA: React.FC<{ text: string; cards: HabCard[]; dur: number }> = ({
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(16,11,8,0.7) 0%, rgba(16,11,8,0) 45%)" }} />
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 300, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 46, letterSpacing: 4,
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 420, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 46, letterSpacing: 4,
         color: "#F2D58A", textShadow: shadow, opacity: p * interpolate(f, [dur - 30, dur - 18], [1, 0], CL) }}>{/below/i.test(text) ? "TELL ME BELOW" : "COMMENT BELOW"} <span style={{ display: "inline-block", transform: `translateY(${bob}px)` }}>↓</span></div>
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 110, display: "flex", justifyContent: "center", opacity: p, transform: `translateY(${(1 - p) * 80}px)` }}>
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 230, display: "flex", justifyContent: "center", opacity: p, transform: `translateY(${(1 - p) * 80}px)` }}>
         <div style={{ width: 1440, minHeight: 150, background: "#FFFFFF", borderRadius: 24, padding: "26px 40px", display: "flex", alignItems: "center", gap: 30,
           boxShadow: "0 18px 40px rgba(0,0,0,0.55)" }}>
           <div style={{ width: 92, height: 92, borderRadius: 46, background: "#C9C2B8", flexShrink: 0 }} />
