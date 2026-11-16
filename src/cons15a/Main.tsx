@@ -61,7 +61,7 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "map": return <Q.MapJP a={o.a} b={o.b} la={o.la} ja={o.ja} lb={o.lb} jb={o.jb} dur={d} />;
     case "cta": return <Q.CTA text={o.text} cards={CARDS} dur={d} com={o.com} />;
     case "step": return <Z.StepKey n={o.n} total={o.total} title={o.title} src={o.src} dur={d} />;
-    case "hanger": return <Z.DoorHanger text={o.text} dur={d} />;
+    case "hanger": return <Z.DoorHanger text={o.text} v={o.v} dur={d} />;
     case "guest": return <Z.GuestCard text={o.text} dur={d} />;
     case "sheet": return <Z.ServiceSheet items={o.items} marks={o.marks} srcs={o.srcs} dur={d} />;
     default: return null;
