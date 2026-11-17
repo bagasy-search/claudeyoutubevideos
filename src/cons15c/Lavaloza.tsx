@@ -21,12 +21,12 @@ const dropOut = (f: number, dur: number, n = 12) => interpolate(f, [dur - n, dur
 // borde dentado del papel térmico
 const zig = (n: number) => { const p: string[] = ["0% 0%", "100% 0%", "100% 96%"]; for (let i = n; i >= 0; i--) p.push(`${(i / n) * 100}% ${i % 2 ? 100 : 96}%`); return `polygon(${p.join(",")})`; };
 
-const BgPhoto: React.FC<{ src: string; dur: number; f: number }> = ({ src, dur, f }) => {
-  const z = interpolate(f, [0, dur], [1.05, 1.15]);
+const BgPhoto: React.FC<{ src: string; dur: number; f: number; org?: string }> = ({ src, dur, f, org = "50% 70%" }) => {
+  const z = interpolate(f, [0, dur], [1.0, 1.18]);
   const x = interpolate(f, [0, dur], [12, -12]);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: CL.navyDeep }}>
-      <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `translateX(${x}px) scale(${z})`, transformOrigin: "50% 70%" }} />
+      <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `translateX(${x}px) scale(${z})`, transformOrigin: org }} />
     </AbsoluteFill>
   );
 };
@@ -47,7 +47,7 @@ export const ComandaRail: React.FC<{ n: number; total: number; title: string; sr
   const glow = last ? interpolate(f, [ST, ST + 6, ST + 26], [0, 0.22, 0], K) : 0;
   return (
     <AbsoluteFill style={{ transform: `translateY(${y}px)` }}>
-      <BgPhoto src={src} dur={dur} f={f} />
+      <BgPhoto src={src} dur={dur} f={f} org={n === 2 ? "35% 70%" : n === 6 ? "60% 60%" : "50% 65%"} />
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(19,29,53,0.88) 0%, rgba(19,29,53,0.5) 34%, rgba(19,29,53,0.05) 55%, rgba(19,29,53,0.2) 66%, rgba(19,29,53,0.9) 100%)" }} />
       {/* riel */}
       <div style={{ position: "absolute", left: 80, right: 80, top: 54, height: 46, borderRadius: 10, background: steel, transform: `translateY(${(1 - railIn) * -200}px)`,
@@ -189,7 +189,7 @@ export const VaporText: React.FC<{ text: string; v?: number; dur: number }> = ({
         <div style={{ position: "absolute", left: 160, right: 160, bottom: 60, height: 330, transform: `translateX(${(1 - inn) * -1800}px) rotate(-1deg)`,
           borderRadius: 10, border: "22px solid #7A5230", background: "radial-gradient(ellipse at 40% 40%, #2F4A3A 0%, #24392D 70%, #1C2D23 100%)",
           boxShadow: "0 26px 50px rgba(0,0,0,0.55), inset 0 0 40px rgba(0,0,0,0.5)", padding: "26px 50px", display: "flex", flexDirection: "column" }}>
-                    <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: text.length > 40 ? 100 : 112, lineHeight: 1.05, color: "rgba(250,250,245,0.96)", marginTop: 30,
+                    <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: text.length > 24 ? 128 : 140, lineHeight: 1.05, color: "rgba(250,250,245,0.96)", marginTop: 30,
             textShadow: "0 0 2px rgba(255,255,255,0.6)" }}>{text.slice(0, shown)}<span style={{ opacity: 0 }}>{text.slice(shown)}</span></div>
           <div style={{ position: "absolute", left: 60, right: 60, bottom: -8, height: 16, borderRadius: 4, background: "#5E3E22" }} />
         </div>
@@ -200,17 +200,15 @@ export const VaporText: React.FC<{ text: string; v?: number; dur: number }> = ({
     <AbsoluteFill style={{ transform: `translateY(${y}px)` }}>
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 400, transform: `translateY(${(1 - inn) * 420}px)` }}>
         {/* vidrio empañado */}
-        <div style={{ position: "absolute", inset: 0, backdropFilter: "blur(16px) brightness(1.08)", background: "linear-gradient(180deg, rgba(19,29,53,0.72) 0%, rgba(19,29,53,0.86) 100%)",
+        <div style={{ position: "absolute", inset: 0, backdropFilter: "blur(16px)", background: "rgba(8,14,28,0.72)",
           borderTop: `8px solid ${CL.white}`, boxShadow: "0 -16px 40px rgba(0,0,0,0.3)" }} />
         {/* marco de la ventana */}
         <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 18, background: steel }} />
                 {/* letras limpias sobre el vapor: el vidrio se aclara donde pasa el dedo */}
-        <div style={{ position: "absolute", left: 120, right: 120, top: 90, fontFamily: HAND, fontWeight: 700, fontSize: text.length > 40 ? 104 : 116, lineHeight: 1.04, color: CL.white,
+        <div style={{ position: "absolute", left: 120, right: 120, top: 60, fontFamily: HAND, fontWeight: 700, fontSize: 76, filter: `blur(${interpolate(f, [W0, W0 + 8], [6, 0], K)}px)`, lineHeight: 1.04, color: CL.white,
           WebkitMaskImage: `linear-gradient(90deg, #000 ${rev}%, transparent ${rev + 4}%)`, maskImage: `linear-gradient(90deg, #000 ${rev}%, transparent ${rev + 4}%)`,
           textShadow: "0 3px 10px rgba(0,0,0,0.6)" }}>{text}</div>
-        {/* yema del dedo que va escribiendo */}
-        {rev > 0 && rev < 100 ? <div style={{ position: "absolute", left: 120 + (1680 * rev) / 100 - 30, top: 150 + Math.sin(f / 2) * 30, width: 60, height: 60, borderRadius: 30,
-          background: "radial-gradient(circle, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0) 70%)" }} /> : null}
+        
         </div>
     </AbsoluteFill>
   );
@@ -230,7 +228,7 @@ export const RackRecap: React.FC<{ items: string[]; marks: number[]; srcs?: stri
   return (
     <AbsoluteFill style={{ transform: `translateY(${y}px)` }}>
       <AbsoluteFill style={{ overflow: "hidden", background: CL.navyDeep }}>
-        {bg ? <Img src={staticFile(bg)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(14px) brightness(0.55)", transform: `scale(${1.1 + f * 0.00012}) translate(${Math.sin(f / 70) * 18}px, ${Math.cos(f / 90) * 10}px)` }} /> : null}
+        <div style={{ position: "absolute", inset: -200, background: `radial-gradient(ellipse at ${50 + Math.sin(f / 60) * 12}% ${45 + Math.cos(f / 80) * 8}%, #24324F 0%, #0E1628 60%)` }} />
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(19,29,53,0.55) 0%, rgba(19,29,53,0.25) 50%, rgba(19,29,53,0.7) 100%)" }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 70, display: "flex", flexDirection: "column", alignItems: "center", opacity: inn }}>
@@ -238,16 +236,13 @@ export const RackRecap: React.FC<{ items: string[]; marks: number[]; srcs?: stri
         <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 92, lineHeight: 1.04, color: CL.white, maxWidth: 1600, textAlign: "center", textWrap: "balance" as any,
           textShadow: "0 4px 18px rgba(0,0,0,0.6)", minHeight: 200 }}>{cur >= 0 ? items[cur] : ""}</div>
       </div>
-      {/* escurridor */}
-      <div style={{ position: "absolute", left: X0 - 50, width: N * PW + (N - 1) * GAP + 100, top: 800, height: 150, transform: `translateY(${(1 - inn) * 400}px)`,
-        borderRadius: 20, border: "9px solid #C9CED4", background: "repeating-linear-gradient(90deg, rgba(201,206,212,0.9) 0 7px, rgba(0,0,0,0) 7px 50px)", boxShadow: "0 22px 40px rgba(0,0,0,0.5)" }} />
       {items.map((it, i) => {
         const m = marks[i] ?? 0;
         const d = spring({ frame: f - m, fps: 30, config: { damping: 11, stiffness: 140 } });
         const on = i === cur;
         const sh = interpolate(wave, [i * 11 - 10, i * 11, i * 11 + 10], [0, 1, 0], K);
         return f >= m ? (
-          <div key={i} style={{ position: "absolute", left: X0 + i * (PW + GAP), top: 612, width: PW, height: PW,
+          <div key={i} style={{ position: "absolute", left: X0 + i * (PW + GAP), top: 540, width: PW, height: PW,
             transform: `translateY(${(1 - d) * -700 + Math.sin((f + i * 9) / 16) * 5}px) scale(${on ? 1.08 + Math.sin(f / 8) * 0.025 : 1})`, transformOrigin: "50% 100%" }}>
             <div style={{ position: "absolute", left: 0, top: 0, width: PW, height: PW, borderRadius: PW / 2, overflow: "hidden",
               background: "radial-gradient(circle, #FFFFFF 0%, #F3EFE7 60%, #DCD5C7 100%)", padding: 16, boxSizing: "border-box",
@@ -263,6 +258,9 @@ export const RackRecap: React.FC<{ items: string[]; marks: number[]; srcs?: stri
           </div>
         ) : null;
       })}
+      {/* escurridor delante: tapa el tercio de abajo de los platos */}
+      <div style={{ position: "absolute", left: X0 - 50, width: N * PW + (N - 1) * GAP + 100, top: 668, height: 240, transform: `translateY(${(1 - inn) * 400}px)`, zIndex: 5,
+        borderRadius: "10px 10px 24px 24px", border: "9px solid #C9CED4", background: "repeating-linear-gradient(90deg, rgba(201,206,212,0.92) 0 8px, rgba(0,0,0,0) 8px 46px), linear-gradient(180deg, rgba(14,22,40,0) 0%, rgba(14,22,40,0.55) 100%)", boxShadow: "0 22px 40px rgba(0,0,0,0.5)" }} />
     </AbsoluteFill>
   );
 };
@@ -275,7 +273,7 @@ export const TresTinas: React.FC<{ marks: number[]; dose?: string; dur: number }
   const inn = spring({ frame: f, fps: 30, config: { damping: 17 } });
   const LBL = ["LAVAR", "ENJUAGAR", "DESINFECTAR"], SUB = ["agua caliente + jabón", "agua limpia", "agua fría + cloro"];
   const WATER = ["linear-gradient(180deg, #DCE7EA 0%, #B9CCD2 100%)", "linear-gradient(180deg, #CFE6F2 0%, #9CC7DD 100%)", "linear-gradient(180deg, #D6ECFA 0%, #8FC3E6 100%)"];
-  const doseIn = interpolate(f, [(marks[2] ?? 60) + 24, (marks[2] ?? 60) + 36], [0, 1], K);
+  const doseIn = interpolate(f, [(marks[2] ?? 60) + 4, (marks[2] ?? 60) + 16], [0, 1], K);
   return (
     <AbsoluteFill style={{ transform: `translateY(${y}px)` }}>
       <AbsoluteFill style={{ background: `linear-gradient(180deg, ${CL.tile} 0%, ${CL.white} 55%, #E2DCD0 100%)` }} />
@@ -289,7 +287,7 @@ export const TresTinas: React.FC<{ marks: number[]; dose?: string; dur: number }
         const on = f >= m;
         const x = 180 + i * 540;
         return (
-          <div key={i} style={{ position: "absolute", left: x, top: 450, width: 480, height: 420, transform: `translateY(${(1 - inn) * 600}px)` }}>
+          <div key={i} style={{ position: "absolute", left: x, top: 430, width: 480, height: 380, transform: `translateY(${(1 - inn) * 600}px)` }}>
             {/* tina */}
             <div style={{ position: "absolute", inset: 0, borderRadius: "0 0 36px 36px", background: "linear-gradient(90deg, #7E858D 0%, #B9BFC6 20%, #D9DDE1 50%, #B1B7BE 80%, #7E858D 100%)",
               boxShadow: "inset 0 18px 30px rgba(0,0,0,0.35), 0 20px 30px rgba(0,0,0,0.25)", overflow: "hidden" }}>
@@ -304,7 +302,7 @@ export const TresTinas: React.FC<{ marks: number[]; dose?: string; dur: number }
               </div>
               {/* cucharada que cae en la 3ª */}
               {i === 2 ? (() => { const p = interpolate(f, [m + 10, m + 26], [0, 1], { ...K, easing: Easing.in(Easing.quad) }); return f > m + 8 && p < 1 ? (
-                <div style={{ position: "absolute", left: 210, top: -40 + p * 260, width: 60, height: 60, borderRadius: "50% 50% 50% 0", transform: "rotate(-45deg)", background: "rgba(255,255,255,0.95)" }} />) : null; })() : null}
+                <div style={{ position: "absolute", left: 185, top: -60 + p * 240, width: 110, height: 110, borderRadius: "50% 50% 50% 0", transform: "rotate(-45deg)", background: "rgba(255,255,255,0.95)" }} />) : null; })() : null}
             </div>
             {/* rótulo */}
             <div style={{ position: "absolute", left: 0, right: 0, top: -250, display: "flex", flexDirection: "column", alignItems: "center", opacity: on ? 1 : 0.5, transform: `scale(${on ? 1 : 0.94})` }}>
@@ -317,7 +315,7 @@ export const TresTinas: React.FC<{ marks: number[]; dose?: string; dur: number }
         );
       })}
       <div style={{ position: "absolute", left: 160, right: 160, bottom: 50, padding: "18px 30px", borderRadius: 18, background: CL.navy, color: CL.white, textAlign: "center",
-        fontFamily: LABEL, fontWeight: 600, fontSize: 44, letterSpacing: 1, opacity: doseIn, transform: `translateY(${(1 - doseIn) * 40}px)` }}>{dose}</div>
+        fontFamily: LABEL, fontWeight: 600, fontSize: 60, lineHeight: 1.15, letterSpacing: 1, opacity: doseIn, transform: `translateY(${(1 - doseIn) * 40}px)` }}>{dose.split(" · ").slice(0, 1)}<br />{dose.split(" · ").slice(1).join(" · ")}</div>
     </AbsoluteFill>
   );
 };
@@ -330,7 +328,8 @@ export const NuncaJuntos: React.FC<{ dur: number }> = ({ dur }) => {
   const inn = spring({ frame: f, fps: 30, config: { damping: 16 } });
   const near = interpolate(f, [8, 22], [0, 1], { ...K, easing: Easing.inOut(Easing.cubic) });
   const kick = spring({ frame: f - 26, fps: 30, config: { damping: 10, stiffness: 120 } });
-  const off = near * 240 - (f >= 26 ? kick * 400 : 0);
+  const off = near * 240 - (f >= 26 ? kick * 500 : 0);
+  const t26 = Math.max(0, f - 26), wob = f >= 26 ? 14 * Math.exp(-t26 / 14) * Math.sin(0.9 * t26) : 0;
   const bar = spring({ frame: f - 30, fps: 30, config: { damping: 12 } });
   const B: React.FC<{ label: string; color: string; cap: string; x: number; rot?: number }> = ({ label, color, cap, x, rot = 0 }) => (
     <div style={{ position: "absolute", left: x - 110, top: 420, width: 220, height: 420, transform: `rotate(${rot}deg)`, transformOrigin: "50% 100%" }}>
@@ -343,14 +342,14 @@ export const NuncaJuntos: React.FC<{ dur: number }> = ({ dur }) => {
   );
   return (
     <AbsoluteFill style={{ transform: `translateY(${y}px)` }}>
-      <AbsoluteFill style={{ background: `linear-gradient(180deg, ${CL.white} 0%, ${CL.tile} 100%)`, opacity: inn }} />
-            <div style={{ position: "absolute", left: 0, right: 0, top: 880, height: 30, background: "#C7BCA9" }} />
-      <B label="CLORO" color="#F7F7F2" cap={CL.nitrile} x={960} />
-      <B label="VINAGRE" color="#EDE3C8" cap={CL.red} x={960 - 520 + off} rot={f >= 26 ? -kick * 10 + Math.sin(f / 7) * 3 : 0} />
-      <B label="AMONIACO" color="#DCE8EE" cap="#4A8A5C" x={960 + 520 - off} rot={f >= 26 ? kick * 10 - Math.sin(f / 7) * 3 : 0} />
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 40%, #2A3650 0%, #1B2433 60%, #121925 100%)", opacity: inn }} />
+            <div style={{ position: "absolute", left: 0, right: 0, top: 840, height: 240, background: "linear-gradient(180deg, #5A4A3A 0%, #3A2F25 100%)", boxShadow: "inset 0 6px 0 #7A6650" }} />
+      <B label="CLORO" color="#F7F7F2" cap={CL.nitrile} x={960} rot={wob} />
+      <B label="VINAGRE" color="#EDE3C8" cap={CL.red} x={960 - 520 + off} rot={f >= 26 ? -kick * 35 + Math.sin(f / 7) * 3 : 0} />
+      <B label="AMONIACO" color="#DCE8EE" cap="#4A8A5C" x={960 + 520 - off} rot={f >= 26 ? kick * 35 - Math.sin(f / 7) * 3 : 0} />
       {f >= 30 ? (
-        <div style={{ position: "absolute", left: 960 - 420, top: 170, width: 840, height: 130, borderRadius: 16, background: CL.red, color: CL.white,
-          display: "flex", alignItems: "center", justifyContent: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 72, letterSpacing: 8,
+        <div style={{ position: "absolute", left: 960 - 260, top: 200, width: 520, height: 84, borderRadius: 16, background: CL.red, color: CL.white,
+          display: "flex", alignItems: "center", justifyContent: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 52, letterSpacing: 6,
           transform: `translateY(${(1 - bar) * -400}px)`, boxShadow: "0 18px 30px rgba(0,0,0,0.35)" }}>NUNCA JUNTOS</div>
       ) : null}
     </AbsoluteFill>
