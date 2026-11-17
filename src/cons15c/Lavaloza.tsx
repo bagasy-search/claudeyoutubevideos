@@ -198,18 +198,10 @@ export const VaporText: React.FC<{ text: string; v?: number; dur: number }> = ({
   }
   return (
     <AbsoluteFill style={{ transform: `translateY(${y}px)` }}>
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 400, transform: `translateY(${(1 - inn) * 420}px)` }}>
-        {/* vidrio empañado */}
-        <div style={{ position: "absolute", inset: 0, backdropFilter: "blur(16px)", background: "rgba(8,14,28,0.72)",
-          borderTop: `8px solid ${CL.white}`, boxShadow: "0 -16px 40px rgba(0,0,0,0.3)" }} />
-        {/* marco de la ventana */}
-        <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 18, background: steel }} />
-                {/* letras limpias sobre el vapor: el vidrio se aclara donde pasa el dedo */}
-        <div style={{ position: "absolute", left: 120, right: 120, top: 60, fontFamily: HAND, fontWeight: 700, fontSize: 76, filter: `blur(${interpolate(f, [W0, W0 + 8], [6, 0], K)}px)`, lineHeight: 1.04, color: CL.white,
-          WebkitMaskImage: `linear-gradient(90deg, #000 ${rev}%, transparent ${rev + 4}%)`, maskImage: `linear-gradient(90deg, #000 ${rev}%, transparent ${rev + 4}%)`,
-          textShadow: "0 3px 10px rgba(0,0,0,0.6)" }}>{text}</div>
-        
-        </div>
+      <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(8,14,28,0.55) 0%, rgba(8,14,28,0) 30%)", opacity: inn }} />
+      <div style={{ position: "absolute", left: 80, right: 80, bottom: 90, textAlign: "center", fontFamily: SERIF, fontWeight: 800, fontSize: 64, lineHeight: 1.1, color: CL.white, whiteSpace: "nowrap",
+        WebkitMaskImage: `linear-gradient(90deg, #000 ${rev}%, transparent ${rev + 4}%)`, maskImage: `linear-gradient(90deg, #000 ${rev}%, transparent ${rev + 4}%)`,
+        textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}>{text}</div>
     </AbsoluteFill>
   );
 };
@@ -231,36 +223,21 @@ export const RackRecap: React.FC<{ items: string[]; marks: number[]; srcs?: stri
         <div style={{ position: "absolute", inset: -200, background: `radial-gradient(ellipse at ${50 + Math.sin(f / 60) * 12}% ${45 + Math.cos(f / 80) * 8}%, #24324F 0%, #0E1628 60%)` }} />
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(19,29,53,0.55) 0%, rgba(19,29,53,0.25) 50%, rgba(19,29,53,0.7) 100%)" }} />
-      <div style={{ position: "absolute", left: 0, right: 0, top: 70, display: "flex", flexDirection: "column", alignItems: "center", opacity: inn }}>
-        <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 44, letterSpacing: 10, color: CL.yellow }}>{cur >= 0 ? `ERROR ${cur + 1}` : "LOS NUEVE ERRORES"}</div>
-        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 92, lineHeight: 1.04, color: CL.white, maxWidth: 1600, textAlign: "center", textWrap: "balance" as any,
-          textShadow: "0 4px 18px rgba(0,0,0,0.6)", minHeight: 200 }}>{cur >= 0 ? items[cur] : ""}</div>
-      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 70, textAlign: "center", fontFamily: SERIF, fontWeight: 900, fontSize: 92, color: CL.white, opacity: inn }}>Los nueve errores</div>
       {items.map((it, i) => {
         const m = marks[i] ?? 0;
-        const d = spring({ frame: f - m, fps: 30, config: { damping: 11, stiffness: 140 } });
+        const a = interpolate(f, [m, m + 8], [0, 1], K);
         const on = i === cur;
         const sh = interpolate(wave, [i * 11 - 10, i * 11, i * 11 + 10], [0, 1, 0], K);
-        return f >= m ? (
-          <div key={i} style={{ position: "absolute", left: X0 + i * (PW + GAP), top: 540, width: PW, height: PW,
-            transform: `translateY(${(1 - d) * -700 + Math.sin((f + i * 9) / 16) * 5}px) scale(${on ? 1.08 + Math.sin(f / 8) * 0.025 : 1})`, transformOrigin: "50% 100%" }}>
-            <div style={{ position: "absolute", left: 0, top: 0, width: PW, height: PW, borderRadius: PW / 2, overflow: "hidden",
-              background: "radial-gradient(circle, #FFFFFF 0%, #F3EFE7 60%, #DCD5C7 100%)", padding: 16, boxSizing: "border-box",
-              boxShadow: on ? `0 0 0 6px ${CL.yellow}, 0 16px 26px rgba(0,0,0,0.5)` : "0 14px 22px rgba(0,0,0,0.45)" }}>
-              <div style={{ width: "100%", height: "100%", borderRadius: "50%", overflow: "hidden", background: CL.tile }}>
-                {srcs[i] ? <Img src={staticFile(srcs[i])} style={{ width: "100%", height: "100%", objectFit: "cover" }} /> : null}
-              </div>
-              <div style={{ position: "absolute", inset: 0, borderRadius: "50%", background: `linear-gradient(120deg, rgba(255,255,255,0) 30%, rgba(255,255,255,${0.55 * sh}) 50%, rgba(255,255,255,0) 70%)` }} />
-            </div>
-            <div style={{ position: "absolute", left: PW / 2 - 34, top: -22, width: 68, height: 68, borderRadius: 34, background: on ? CL.yellow : CL.navy, color: on ? CL.navyDeep : CL.white,
-              display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SERIF, fontWeight: 900, fontSize: 40, boxShadow: "0 6px 12px rgba(0,0,0,0.45)" }}>{i + 1}</div>
-            
+        return (
+          <div key={i} style={{ position: "absolute", left: 120 + (i % 3) * 570, top: 250 + Math.floor(i / 3) * 260, width: 540, height: 220, borderRadius: 20,
+            background: on ? "rgba(242,193,46,0.16)" : "rgba(255,255,255,0.06)", border: on ? `4px solid ${CL.yellow}` : "4px solid rgba(255,255,255,0.12)",
+            display: "flex", alignItems: "center", gap: 26, padding: "0 30px", boxSizing: "border-box", opacity: a, transform: `translateY(${(1 - a) * 30}px) scale(${on ? 1.03 + Math.sin(f / 8) * 0.02 : 1})` }}>
+            <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 120, lineHeight: 1, color: on ? CL.yellow : CL.white, opacity: 0.85 + sh * 0.15 }}>{i + 1}</div>
+            <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 40, lineHeight: 1.12, color: CL.white }}>{it}</div>
           </div>
-        ) : null;
+        );
       })}
-      {/* escurridor delante: tapa el tercio de abajo de los platos */}
-      <div style={{ position: "absolute", left: X0 - 50, width: N * PW + (N - 1) * GAP + 100, top: 668, height: 240, transform: `translateY(${(1 - inn) * 400}px)`, zIndex: 5,
-        borderRadius: "10px 10px 24px 24px", border: "9px solid #C9CED4", background: "repeating-linear-gradient(90deg, rgba(201,206,212,0.92) 0 8px, rgba(0,0,0,0) 8px 46px), linear-gradient(180deg, rgba(14,22,40,0) 0%, rgba(14,22,40,0.55) 100%)", boxShadow: "0 22px 40px rgba(0,0,0,0.5)" }} />
     </AbsoluteFill>
   );
 };
@@ -300,9 +277,7 @@ export const TresTinas: React.FC<{ marks: number[]; dose?: string; dur: number }
                 {i === 1 ? [0, 1].map((k) => { const p = ((f - m + k * 20) % 40) / 40; return f > m ? (
                   <div key={k} style={{ position: "absolute", left: 220 - p * 160, top: 20 - p * 10, width: 40 + p * 320, height: 20 + p * 30, borderRadius: "50%", border: "3px solid rgba(255,255,255,0.7)", opacity: 1 - p }} />) : null; }) : null}
               </div>
-              {/* cucharada que cae en la 3ª */}
-              {i === 2 ? (() => { const p = interpolate(f, [m + 10, m + 26], [0, 1], { ...K, easing: Easing.in(Easing.quad) }); return f > m + 8 && p < 1 ? (
-                <div style={{ position: "absolute", left: 185, top: -60 + p * 240, width: 110, height: 110, borderRadius: "50% 50% 50% 0", transform: "rotate(-45deg)", background: "rgba(255,255,255,0.95)" }} />) : null; })() : null}
+              
             </div>
             {/* rótulo */}
             <div style={{ position: "absolute", left: 0, right: 0, top: -250, display: "flex", flexDirection: "column", alignItems: "center", opacity: on ? 1 : 0.5, transform: `scale(${on ? 1 : 0.94})` }}>
@@ -315,7 +290,7 @@ export const TresTinas: React.FC<{ marks: number[]; dose?: string; dur: number }
         );
       })}
       <div style={{ position: "absolute", left: 160, right: 160, bottom: 50, padding: "18px 30px", borderRadius: 18, background: CL.navy, color: CL.white, textAlign: "center",
-        fontFamily: LABEL, fontWeight: 600, fontSize: 60, lineHeight: 1.15, letterSpacing: 1, opacity: doseIn, transform: `translateY(${(1 - doseIn) * 40}px)` }}>{dose.split(" · ").slice(0, 1)}<br />{dose.split(" · ").slice(1).join(" · ")}</div>
+        fontFamily: LABEL, fontWeight: 600, fontSize: 56, lineHeight: 1.15, letterSpacing: 1, opacity: doseIn, transform: `translateY(${(1 - doseIn) * 40}px)` }}>{dose.split(" · ").slice(0, 1)}<br />{dose.split(" · ").slice(1).join(" · ")}</div>
     </AbsoluteFill>
   );
 };
@@ -328,7 +303,7 @@ export const NuncaJuntos: React.FC<{ dur: number }> = ({ dur }) => {
   const inn = spring({ frame: f, fps: 30, config: { damping: 16 } });
   const near = interpolate(f, [8, 22], [0, 1], { ...K, easing: Easing.inOut(Easing.cubic) });
   const kick = spring({ frame: f - 26, fps: 30, config: { damping: 10, stiffness: 120 } });
-  const off = near * 240 - (f >= 26 ? kick * 500 : 0);
+  const off = near * 240 - (f >= 26 ? kick * 460 : 0);
   const t26 = Math.max(0, f - 26), wob = f >= 26 ? 14 * Math.exp(-t26 / 14) * Math.sin(0.9 * t26) : 0;
   const bar = spring({ frame: f - 30, fps: 30, config: { damping: 12 } });
   const B: React.FC<{ label: string; color: string; cap: string; x: number; rot?: number }> = ({ label, color, cap, x, rot = 0 }) => (
@@ -345,10 +320,10 @@ export const NuncaJuntos: React.FC<{ dur: number }> = ({ dur }) => {
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 40%, #2A3650 0%, #1B2433 60%, #121925 100%)", opacity: inn }} />
             <div style={{ position: "absolute", left: 0, right: 0, top: 840, height: 240, background: "linear-gradient(180deg, #5A4A3A 0%, #3A2F25 100%)", boxShadow: "inset 0 6px 0 #7A6650" }} />
       <B label="CLORO" color="#F7F7F2" cap={CL.nitrile} x={960} rot={wob} />
-      <B label="VINAGRE" color="#EDE3C8" cap={CL.red} x={960 - 520 + off} rot={f >= 26 ? -kick * 35 + Math.sin(f / 7) * 3 : 0} />
-      <B label="AMONIACO" color="#DCE8EE" cap="#4A8A5C" x={960 + 520 - off} rot={f >= 26 ? kick * 35 - Math.sin(f / 7) * 3 : 0} />
+      <B label="VINAGRE" color="#EDE3C8" cap={CL.red} x={960 - 520 + off} rot={f >= 26 ? -kick * 12 + Math.sin(f / 7) * 3 : 0} />
+      <B label="AMONIACO" color="#DCE8EE" cap="#4A8A5C" x={960 + 520 - off} rot={f >= 26 ? kick * 12 - Math.sin(f / 7) * 3 : 0} />
       {f >= 30 ? (
-        <div style={{ position: "absolute", left: 960 - 260, top: 200, width: 520, height: 84, borderRadius: 16, background: CL.red, color: CL.white,
+        <div style={{ position: "absolute", left: 960 - 260, top: 200, width: 520, height: 84, borderRadius: 16, background: CL.red, opacity: 0.9, color: CL.white,
           display: "flex", alignItems: "center", justifyContent: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 52, letterSpacing: 6,
           transform: `translateY(${(1 - bar) * -400}px)`, boxShadow: "0 18px 30px rgba(0,0,0,0.35)" }}>NUNCA JUNTOS</div>
       ) : null}
