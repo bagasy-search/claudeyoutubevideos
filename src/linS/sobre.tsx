@@ -1,4 +1,4 @@
-// serie Peggy · piezas que van ENCIMA de la toma o del avatar, cada una sobre su palabra (ov en data.json).
+// serie Linda · piezas que van ENCIMA de la toma o del avatar, cada una sobre su palabra (ov en data.json).
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { C, HAND, Palabras, Pincel, SANS, SERIF, cl, e, eo, lerp, spr, swing } from "./lib";

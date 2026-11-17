@@ -1,4 +1,4 @@
-// serie Peggy (02-07). Base: avatar (ventanas del reel de RunPod) / clip Veo (V) / clip real (Y) / foto (W, G) / escena (S), un plano por tramo (data.json).
+// serie Linda (lin16). Base: avatar (ventanas del reel de RunPod) / clip Veo (V) / clip real (Y) / foto (W, G) / escena (S), un plano por tramo (data.json).
 // Encima: piezas ancladas a la palabra (ov). Cuadro 0 = avatar hablando. El audio (voz + camas + SFX + piano) se monta en la nube (encfin).
 import React from "react";
 import { AbsoluteFill, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";

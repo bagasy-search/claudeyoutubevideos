@@ -1,5 +1,5 @@
-// serie Peggy (02-07) · "Peggy's London" — look "grandes almacenes de Londres, 1960": tarjeta crema de la tienda con filete de latón,
-// verde inglés, borgoña y lápiz (Playfair Display + Jost + Caveat). Todo es función pura de t (segundos): el farm rinde en chunks.
+// serie Linda (lin16) · "Linda, Retired Flight Attendant" — look "cabina de 1985": pase de abordar crema, azul cabina, rojo de aerolínea,
+// latón de las alas del uniforme y birome (Playfair Display + Jost + Caveat). Todo es función pura de t (segundos): el farm rinde en chunks.
 // Los datos de cada video entran por setData() desde su index_<slug>.tsx (una sola rama para toda la serie).
 import React from "react";
 import { AbsoluteFill } from "remotion";
@@ -23,8 +23,8 @@ export const setData = (d: unknown) => { D = d as Data; P = D.slug + "/"; };
 export const FPS = 30;
 export const s = (t: number) => Math.round(t * FPS);
 
-// claves heredadas de la serie base: washi = papel crema · sumi = tinta · hanko = borgoña · ai = verde inglés · bamboo = latón
-export const C = { washi: "#F5EFE3", washi2: "#E9DFCC", sumi: "#1F1B17", kinari: "#E8D6B0", ai: "#1F4433", cha: "#7b4b2a", nezumi: "#8c8b87", hanko: "#7C1F2C", bamboo: "#A9843F", line: "rgba(31,27,23,.18)" };
+// claves heredadas de la serie base: washi = pase de abordar crema · sumi = tinta azul marino · hanko = rojo aerolínea · ai = azul cabina · bamboo = latón de las alas
+export const C = { washi: "#F7F2E6", washi2: "#E8E0CC", sumi: "#14213D", kinari: "#E6D7B4", ai: "#1E3A5F", cha: "#7b4b2a", nezumi: "#7d8590", hanko: "#B3261E", bamboo: "#B08D45", line: "rgba(20,33,61,.18)" };
 export const cl = (x: number) => Math.max(0, Math.min(1, x));
 export const sm = (x: number) => { const c = cl(x); return c * c * (3 - 2 * c); };
 export const e = (t: number, a: number, b: number) => sm((t - a) / (b - a));
@@ -40,7 +40,7 @@ export const h = (n: number, k: number) => {
   return (x >>> 0) / 4294967296;
 };
 
-// tarjeta de la tienda: crema con trama fina de papel verjurado (sólo degradés: nada de feTurbulence, que traba el farm) y doble filete de latón
+// pase de abordar: crema con trama fina de cartulina (sólo degradés: nada de feTurbulence, que traba el farm) y doble filete de latón
 export const Washi: React.FC<{ children?: React.ReactNode; tone?: string }> = ({ children, tone = C.washi }) => (
   <AbsoluteFill style={{ background: `radial-gradient(120% 90% at 30% 20%, #FFFCF5 0%, ${tone} 55%, ${C.washi2} 100%)`, overflow: "hidden" }}>
     <AbsoluteFill style={{ backgroundImage: "repeating-linear-gradient(0deg, rgba(120,95,50,.05) 0 1px, transparent 1px 5px), repeating-linear-gradient(90deg, rgba(120,95,50,.035) 0 1px, transparent 1px 38px)" }} />
@@ -50,7 +50,7 @@ export const Washi: React.FC<{ children?: React.ReactNode; tone?: string }> = ({
   </AbsoluteFill>
 );
 
-// sello de goma redondo de la tienda (borgoña): cae, aplasta y deja tinta despareja
+// sello de control redondo (rojo de aerolínea): cae, aplasta y deja tinta despareja
 export const Hanko: React.FC<{ t: number; at: number; x: number; y: number; size?: number; txt?: string; rot?: number }> = ({ t, at, x, y, size = 150, txt = "1", rot = -8 }) => {
   if (t < at - 0.2) return null;
   const p = eo(t, at - 0.2, 0.2), sc = lerp(2.1, 1, p) * (1 + 0.06 * Math.exp(-9 * Math.max(0, t - at)) * Math.sin(40 * Math.max(0, t - at)));
@@ -62,7 +62,7 @@ export const Hanko: React.FC<{ t: number; at: number; x: number; y: number; size
   </div>;
 };
 
-// trazo de lápiz / tiza de sastre que se dibuja de izquierda a derecha
+// trazo de birome que se dibuja de izquierda a derecha
 export const Pincel: React.FC<{ t: number; at: number; dur?: number; x: number; y: number; w: number; hgt?: number; rot?: number; col?: string; op?: number }> = ({ t, at, dur = 0.35, x, y, w, hgt = 14, rot = 0, col = C.sumi, op = 0.9 }) => {
   const p = eo(t, at, dur); if (p <= 0) return null;
   return <div style={{ position: "absolute", left: x, top: y, width: w, height: hgt, transformOrigin: "0 50%", transform: `rotate(${rot}deg)`, opacity: op }}>
@@ -77,7 +77,7 @@ export const Palabras: React.FC<{ t: number; at: number; txt: string; gap?: numb
   </div>
 );
 
-// paño de lana (trama de sarga por CSS) para los cambios de capítulo y las hojas de las puertas
+// tapizado de asiento de avión (trama de sarga por CSS) para los cambios de capítulo y los paneles de la cabina
 export const tela = (col: string, claro = false): React.CSSProperties => ({
   backgroundColor: col,
   backgroundImage: `repeating-linear-gradient(45deg, rgba(${claro ? "90,70,40" : "255,255,255"},.06) 0 2px, transparent 2px 6px), repeating-linear-gradient(-45deg, rgba(0,0,0,.07) 0 2px, transparent 2px 6px), radial-gradient(120% 100% at 20% 0%, rgba(255,255,255,.14), transparent 60%)`,

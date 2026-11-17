@@ -1,5 +1,5 @@
-// serie Peggy (02-07) · escenas y piezas de la lista. Todo es función pura de t (segundos).
-// Look: tarjeta crema de grandes almacenes + filete de latón + sello de goma borgoña + paño verde inglés entre capítulos.
+// serie Linda (lin16) · escenas y piezas de la lista. Todo es función pura de t (segundos).
+// Look: pase de abordar crema + latón de las alas + sello rojo del control + tapizado azul de cabina entre capítulos.
 import React from "react";
 import { AbsoluteFill, Img, OffthreadVideo, staticFile } from "remotion";
 import { C, D, HAND, Hanko, P, Palabras, Pincel, SANS, SERIF, Washi, cl, e, eo, h, lerp, sm, spr, swing, tela } from "./lib";
@@ -49,7 +49,7 @@ export const Carrusel: React.FC<SP> = ({ t, a, b }) => {
     <Desenfoque f={D.bg} />
     <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, rgba(20,14,8,0) 30%, rgba(20,14,8,.55) 100%)" }} />
     <div style={{ position: "absolute", top: 58, width: "100%", textAlign: "center", opacity: eo(t, a, 0.6), transform: `translateY(${(1 - eo(t, a, 0.6)) * -30}px)` }}>
-      <div style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: 34, color: "#f1d9a8", textShadow: sombra }}>{D.lista_sub || "London, 1960."}</div>
+      <div style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: 34, color: "#f1d9a8", textShadow: sombra }}>{D.lista_sub || "35 years in the aisle."}</div>
       <div style={{ fontFamily: SERIF, fontSize: 92, color: "#FFFCF5", textShadow: sombra, lineHeight: 1.05, marginTop: 8 }}>{D.lista_titulo}</div>
     </div>
     <AbsoluteFill style={{ perspective: 2200, perspectiveOrigin: "50% 42%" }}>
@@ -85,7 +85,7 @@ export const Repaso: React.FC<SP> = ({ t, a }) => {
   </AbsoluteFill>;
 };
 
-// tela índigo (aizome) que barre la pantalla entre capítulos; dir alterna izq/der/abajo
+// tapizado azul de cabina que barre la pantalla entre capítulos; dir alterna izq/der/abajo
 export const Tela: React.FC<OP> = ({ t, a, dir = 0 }) => {
   const d = 0.75, p = cl((t - a) / d); if (p <= 0 || p >= 1) return null;
   const pos = lerp(-1.25, 1.25, sm(p)), v = dir === 2;
@@ -99,55 +99,66 @@ export const Tela: React.FC<OP> = ({ t, a, dir = 0 }) => {
   </AbsoluteFill>;
 };
 
-// (3) APERTURA de cada ítem: un mecanismo distinto por número (puertas de la tienda, cinta métrica, papel de seda de la caja, sello de goma)
+// (3) APERTURA de cada ítem: un mecanismo de cabina distinto por número (compartimiento de arriba, ventanilla con cortina, pase de abordar que se corta, sello del control)
 export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
   const i = Number(arg) - 1, it = D.items[i], k = t - a, dur = b - a, modo = i % 4, der = i % 2 === 1;
   const zoom = 1.06 + 0.07 * cl(k / (dur + 0.4)), foto = <Img src={src(it.f)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${zoom})`, transformOrigin: `${der ? 35 : 65}% 45%` }} />;
   const lado: React.CSSProperties = der ? { right: 130, alignItems: "flex-end", textAlign: "right" } : { left: 130, alignItems: "flex-start" };
   const titulo = <div style={{ position: "absolute", top: 200, width: 900, display: "flex", flexDirection: "column", ...lado }}>
-    <div style={{ ...cap, fontSize: 26, color: "#f1d9a8", textShadow: sombra, opacity: eo(t, a + 0.3, 0.4) }}>{D.item_rotulo || "secret"} · No. {it.n}</div>
+    <div style={{ ...cap, fontSize: 26, color: "#f1d9a8", textShadow: sombra, opacity: eo(t, a + 0.3, 0.4) }}>{D.item_rotulo || "carry-on"} · No. {it.n}</div>
     <svg width="560" height="300" viewBox="0 0 560 300" style={{ overflow: "visible" }}>
       <text x={der ? 560 : 0} y="262" textAnchor={der ? "end" : "start"} fontFamily={SERIF} fontSize="300" fill={`rgba(255,252,245,${eo(t, a + 1.1, 0.4)})`} stroke="#FFFCF5" strokeWidth={3}
         strokeDasharray={1600} strokeDashoffset={1600 * (1 - eo(t, a + 0.35, 0.9))}>{it.n}</text>
     </svg>
     <Palabras t={t} at={a + 0.9} txt={it.t} gap={0.14} style={{ fontFamily: SERIF, fontSize: 84, color: "#FFFCF5", textShadow: sombra, lineHeight: 1.08, justifyContent: der ? "flex-end" : "flex-start", maxWidth: 900 }} />
     {it.sub && <div style={{ fontFamily: HAND, fontSize: 46, color: "#f1d9a8", textShadow: sombra, marginTop: 12, opacity: eo(t, a + 1.6, 0.5) }}>{it.sub}</div>}
-    <div style={{ height: 4, background: C.bamboo, marginTop: 16, width: 260 * eo(t, a + 1.4, 0.5) }} />
+    <div style={{ height: 4, background: C.hanko, marginTop: 16, width: 260 * eo(t, a + 1.4, 0.5) }} />
   </div>;
-  const velo = <AbsoluteFill style={{ background: `linear-gradient(${der ? 270 : 90}deg, rgba(16,12,8,.86) 0%, rgba(16,12,8,.42) 45%, rgba(16,12,8,0) 72%)` }} />;
-  if (modo === 0) { // las dos hojas de la puerta de la tienda (verde inglés, tirador de latón) se abren hacia los lados
-    const p = eo(t, a + 0.1, 0.9);
+  const velo = <AbsoluteFill style={{ background: `linear-gradient(${der ? 270 : 90}deg, rgba(10,16,30,.86) 0%, rgba(10,16,30,.42) 45%, rgba(10,16,30,0) 72%)` }} />;
+  const plastico = "linear-gradient(180deg,#F4F1EA 0%,#E2DDD2 55%,#CFC9BC 100%)";
+  if (modo === 0) { // la tapa del compartimiento de arriba (plástico de cabina, pestillo de latón) bisagra arriba y sube con rebote
+    const p = cl(spr(t, a + 0.15, 0.9));
     return <AbsoluteFill style={{ background: C.sumi }}>{foto}{velo}{titulo}
-      {[0, 1].map((sd) => <div key={sd} style={{ position: "absolute", top: 0, bottom: 0, width: 962, [sd ? "right" : "left"]: 0, ...tela(C.ai), transform: `translateX(${(sd ? 1 : -1) * p * 1010}px)`, boxShadow: "0 0 60px rgba(0,0,0,.5)" }}>
-        <div style={{ position: "absolute", inset: 46, border: `3px solid ${C.bamboo}`, opacity: 0.85 }} />
-        <div style={{ position: "absolute", inset: 62, border: `1px solid ${C.bamboo}`, opacity: 0.6 }} />
-        <div style={{ position: "absolute", top: 440, [sd ? "left" : "right"]: 80, width: 22, height: 200, borderRadius: 11, background: "linear-gradient(90deg,#8a6a2c,#e2c57f,#8a6a2c)", boxShadow: "0 4px 10px rgba(0,0,0,.5)" }} />
-        {!sd && <div style={{ position: "absolute", top: 330, right: 170, fontFamily: SERIF, fontSize: 300, color: "rgba(241,217,168,.92)", lineHeight: 1 }}>{it.n}</div>}
-      </div>)}
-    </AbsoluteFill>;
-  }
-  if (modo === 1) { // la cinta métrica amarilla cruza la pantalla y abre la foto en una franja, después entera
-    const p = eo(t, a + 0.05, 0.7), q = eo(t, a + 0.8, 0.6);
-    return <AbsoluteFill style={{ background: C.washi }}><Washi />
-      <AbsoluteFill style={{ clipPath: `inset(${lerp(40, 0, q)}% ${lerp(100 - p * 100, 0, q)}% ${lerp(40, 0, q)}% 0)` }}>{foto}{velo}</AbsoluteFill>
-      <div style={{ position: "absolute", left: 0, top: `calc(${lerp(40, -4, q)}% - 46px)`, width: `${p * 100}%`, height: 40, opacity: 1 - q, backgroundColor: "#E9C84A", boxShadow: "0 4px 12px rgba(0,0,0,.3)",
-        backgroundImage: "repeating-linear-gradient(90deg, rgba(31,27,23,.85) 0 2px, transparent 2px 19px)", backgroundSize: "19px 14px", backgroundRepeat: "repeat-x", backgroundPosition: "0 100%" }} />
-      {titulo}
-    </AbsoluteFill>;
-  }
-  if (modo === 2) { // papel de seda de la caja de la tienda, doblado en tres, que se despliega
-    const ps = [0, 1, 2].map((j) => eo(t, a + 0.1 + j * 0.28, 0.5));
-    return <AbsoluteFill style={{ background: C.washi }}><Washi />
-      <AbsoluteFill style={{ perspective: 1800 }}>
-        {[0, 1, 2].map((j) => <div key={j} style={{ position: "absolute", top: 0, bottom: 0, left: j * 640, width: 641, overflow: "hidden", transformOrigin: j === 0 ? "100% 50%" : j === 2 ? "0 50%" : "50% 50%",
-          transform: j === 1 ? `scaleY(${lerp(0.6, 1, ps[0])})` : `rotateY(${(j === 0 ? 1 : -1) * (1 - ps[j]) * 100}deg)`, opacity: j === 1 ? ps[0] : cl(ps[j] * 1.5), boxShadow: "0 0 50px rgba(0,0,0,.3)" }}>
-          <div style={{ position: "absolute", top: 0, left: -j * 640, width: 1920, height: 1080 }}>{foto}{velo}</div>
-        </div>)}
+      <AbsoluteFill style={{ perspective: 1600, perspectiveOrigin: "50% 0%", pointerEvents: "none" }}>
+        <div style={{ position: "absolute", left: -20, right: -20, top: -10, height: 1110, background: plastico, transformOrigin: "50% 0%", transform: `rotateX(${p * 100}deg)`, opacity: 1 - e(t, a + 0.9, a + 1.3), boxShadow: "0 30px 80px rgba(0,0,0,.55)" }}>
+          <div style={{ position: "absolute", left: 80, right: 80, top: 70, height: 6, borderRadius: 3, background: "rgba(0,0,0,.12)" }} />
+          <div style={{ position: "absolute", left: 80, right: 80, bottom: 120, height: 6, borderRadius: 3, background: "rgba(0,0,0,.12)" }} />
+          <div style={{ position: "absolute", left: 860, bottom: 160, width: 200, height: 54, borderRadius: 10, background: "linear-gradient(180deg,#e2c57f,#8a6a2c)", boxShadow: "inset 0 2px 3px rgba(255,255,255,.5), 0 4px 10px rgba(0,0,0,.35)" }} />
+          <div style={{ position: "absolute", left: 0, right: 0, top: 360, textAlign: "center", fontFamily: SERIF, fontSize: 300, color: C.ai, lineHeight: 1, opacity: 0.9 }}>{it.n}</div>
+        </div>
       </AbsoluteFill>
-      {titulo}
     </AbsoluteFill>;
   }
-  // modo 3: el sello de goma cae en la tarjeta, la foto se abre en círculo desde el sello
+  if (modo === 1) { // la ventanilla del avión: la cortina sube, y la ventana crece hasta llenar la pantalla
+    const sube = eo(t, a + 0.25, 0.7), crece = eo(t, a + 1.0, 0.8), W = lerp(420, 2400, crece), H = lerp(580, 2200, crece), R = lerp(190, 0, crece);
+    return <AbsoluteFill style={{ background: plastico, overflow: "hidden" }}>
+      <AbsoluteFill style={{ clipPath: `inset(${540 - H / 2}px ${960 - W / 2}px ${540 - H / 2}px ${960 - W / 2}px round ${R}px)` }}>{foto}{velo}</AbsoluteFill>
+      {crece < 1 && <div style={{ position: "absolute", left: 960 - W / 2, top: 540 - H / 2, width: W, height: H, borderRadius: R, overflow: "hidden", boxShadow: `inset 0 0 0 ${lerp(26, 0, crece)}px #DCD6C9, inset 0 0 40px rgba(0,0,0,.35)` }}>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: `${(1 - sube) * 100}%`, background: "linear-gradient(180deg,#EDE8DD,#D6D0C3)", borderBottom: "10px solid #BEB7A8", boxShadow: "0 6px 14px rgba(0,0,0,.3)" }} />
+      </div>}
+      {crece > 0.5 && titulo}
+    </AbsoluteFill>;
+  }
+  if (modo === 2) { // el pase de abordar: la tira se corta por el troquel y la foto aparece detrás
+    const corta = eo(t, a + 0.35, 0.6), cae = e(t, a + 0.8, a + 1.4);
+    const pase: React.CSSProperties = { position: "absolute", top: 300, height: 480, background: "linear-gradient(180deg,#FFFCF5,#EFE7D3)", boxShadow: "0 24px 60px rgba(0,0,0,.45)" };
+    return <AbsoluteFill style={{ background: C.ai }}>
+      <AbsoluteFill style={{ opacity: cae }}>{foto}{velo}</AbsoluteFill>
+      {cae < 1 && <>
+        <div style={{ ...pase, left: 260, width: 1000, transform: `translate(${-cae * 1400}px, ${cae * 200}px) rotate(${-cae * 14}deg)`, borderTop: `40px solid ${C.ai}` }}>
+          <div style={{ ...cap, position: "absolute", left: 50, top: 30, fontSize: 24, color: C.nezumi }}>boarding pass · item</div>
+          <div style={{ position: "absolute", left: 50, top: 70, fontFamily: SERIF, fontSize: 250, color: C.sumi, lineHeight: 1 }}>{String(it.n).padStart(2, "0")}</div>
+          <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, borderRight: `4px dashed ${C.nezumi}` }} />
+        </div>
+        <div style={{ ...pase, left: 1260, width: 400, transform: `translate(${corta * 30 + cae * 1200}px, ${cae * 260}px) rotate(${corta * 4 + cae * 18}deg)`, borderTop: `40px solid ${C.hanko}` }}>
+          <div style={{ ...cap, position: "absolute", left: 40, top: 30, fontSize: 22, color: C.nezumi }}>seat</div>
+          <div style={{ position: "absolute", left: 40, top: 70, fontFamily: SERIF, fontSize: 140, color: C.hanko }}>{it.n}A</div>
+        </div>
+      </>}
+      {cae > 0.4 && titulo}
+    </AbsoluteFill>;
+  }
+  // modo 3: el sello del control cae sobre el pase, la foto se abre en círculo desde el sello
   const r = eo(t, a + 0.55, 0.9) * 130;
   return <AbsoluteFill style={{ background: C.washi }}><Washi />
     <AbsoluteFill style={{ clipPath: `circle(${r}% at ${der ? 70 : 30}% 50%)` }}>{foto}{velo}</AbsoluteFill>
@@ -156,7 +167,7 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
   </AbsoluteFill>;
 };
 
-// (7) MAPA de Kyoto: imagen gpt del barrio con coordenadas en %; la ruta se traza entre los puntos
+// (7) MAPA: imagen del recorrido con coordenadas en %; la ruta se traza entre los puntos
 export const Mapa: React.FC<SP> = ({ t, a, b, arg }) => {
   const R = ((D as any).rutas || {})[arg || "0"]; if (!R) return <Washi />;
   const pts: { x: number; y: number; en: string; jp?: string }[] = R.p, k = t - a, dur = b - a;
@@ -236,7 +247,7 @@ export const Dato: React.FC<OP> = ({ t, a, b, txt, fuente }) => {
   </div>;
 };
 
-// dinero viejo o palabra de la tienda explicada: cifra grande en serif + cómo se dice + cuánto es hoy (sobre material)
+// número o regla explicada (3.4 oz, 1 quart): cifra grande en serif + cómo se dice + cuánto es hoy (sobre material)
 export const Palabra: React.FC<OP> = ({ t, a, b, kan, rom, sig, lado }) => {
   const p = eo(t, a, 0.5) * sale(t, b), der = lado !== "izq", w = (1 - eo(t, a, 0.8)) * 100;
   return <div style={{ position: "absolute", top: 110, [der ? "right" : "left"]: 110, display: "flex", flexDirection: "column", alignItems: der ? "flex-end" : "flex-start", opacity: p, color: "#FFFCF5", textShadow: sombra }}>
@@ -289,7 +300,7 @@ export const Fin: React.FC<OP> = ({ t, a, sub }) => (
   <AbsoluteFill style={{ background: C.washi, opacity: e(t, a, a + 0.8), alignItems: "center", justifyContent: "center" }}>
     <Washi />
     <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
-      <div style={{ fontFamily: SERIF, fontSize: 96, color: C.sumi, opacity: e(t, a + 0.5, a + 1.1) }}>Peggy&rsquo;s London</div>
+      <div style={{ fontFamily: SERIF, fontSize: 84, color: C.sumi, opacity: e(t, a + 0.5, a + 1.1) }}>Linda, Retired Flight Attendant</div>
       <div style={{ ...cap, fontSize: 26, color: C.hanko, marginTop: 26, opacity: e(t, a + 0.8, a + 1.3) }}>{sub}</div>
     </AbsoluteFill>
   </AbsoluteFill>
