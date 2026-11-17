@@ -86,9 +86,9 @@ export const ComandaRail: React.FC<{ n: number; total: number; title: string; sr
           </div>
         </div>
         {/* sello */}
-        <div style={{ position: "absolute", left: 70, top: 300, width: 320, height: 110, border: `8px solid ${CL.red}`, borderRadius: 14, display: "flex", alignItems: "center", justifyContent: "center",
-          fontFamily: LABEL, fontWeight: 700, fontSize: 70, letterSpacing: 10, color: CL.red, mixBlendMode: "multiply",
-          opacity: f >= ST ? Math.min(1, stamp * 1.2) * 0.86 : 0, transform: `rotate(-12deg) scale(${1.9 - 0.9 * Math.min(1, stamp)}) translateX(${shake}px)` }}>ERROR</div>
+        <div style={{ position: "absolute", left: 130, top: 452, width: 200, height: 84, border: `7px solid ${CL.red}`, borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center",
+          fontFamily: LABEL, fontWeight: 700, fontSize: 58, letterSpacing: 10, color: CL.red, mixBlendMode: "multiply",
+          opacity: f >= ST ? Math.min(1, stamp * 1.2) * 0.86 : 0, transform: `rotate(-12deg) scale(${1.9 - 0.9 * Math.min(1, stamp)}) translateX(${shake}px)` }}>MAL</div>
       </div>
       <AbsoluteFill style={{ background: "#FFF3C9", opacity: glow }} />
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 70, display: "flex", justifyContent: "center", opacity: tIn, transform: `translateY(${(1 - tIn) * 50}px)` }}>
@@ -236,7 +236,7 @@ export const RackRecap: React.FC<{ items: string[]; marks: number[]; srcs?: stri
   return (
     <AbsoluteFill style={{ transform: `translateY(${y}px)` }}>
       <AbsoluteFill style={{ overflow: "hidden", background: CL.navyDeep }}>
-        {bg ? <Img src={staticFile(bg)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(14px) brightness(0.55)", transform: "scale(1.1)" }} /> : null}
+        {bg ? <Img src={staticFile(bg)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(14px) brightness(0.55)", transform: `scale(${1.1 + f * 0.00012}) translate(${Math.sin(f / 70) * 18}px, ${Math.cos(f / 90) * 10}px)` }} /> : null}
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(19,29,53,0.55) 0%, rgba(19,29,53,0.25) 50%, rgba(19,29,53,0.7) 100%)" }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 70, display: "flex", flexDirection: "column", alignItems: "center", opacity: inn }}>
@@ -254,7 +254,7 @@ export const RackRecap: React.FC<{ items: string[]; marks: number[]; srcs?: stri
         const sh = interpolate(wave, [i * 11 - 10, i * 11, i * 11 + 10], [0, 1, 0], K);
         return f >= m ? (
           <div key={i} style={{ position: "absolute", left: X0 + i * (PW + GAP), top: 470, width: PW, height: PW * 1.0 + 160,
-            transform: `translateY(${(1 - d) * -700}px) scale(${on ? 1.08 : 1})`, transformOrigin: "50% 100%" }}>
+            transform: `translateY(${(1 - d) * -700 + Math.sin((f + i * 9) / 16) * 5}px) scale(${on ? 1.08 + Math.sin(f / 8) * 0.025 : 1})`, transformOrigin: "50% 100%" }}>
             <div style={{ position: "absolute", left: 0, top: 0, width: PW, height: PW, borderRadius: PW / 2, overflow: "hidden",
               background: "radial-gradient(circle, #FFFFFF 0%, #F3EFE7 60%, #DCD5C7 100%)", padding: 16, boxSizing: "border-box",
               boxShadow: on ? `0 0 0 6px ${CL.yellow}, 0 16px 26px rgba(0,0,0,0.5)` : "0 14px 22px rgba(0,0,0,0.45)" }}>
