@@ -78,12 +78,12 @@ export const Numero: React.FC<{n: number; nombre: string; tier: string; t: numbe
   const op = Math.min(kf(t, [0.05, 0.6], [0, 1]), kf(t, [dur - 0.4, dur], [1, 0]));
   const sub = kf(t, [0.05, 1.2], [60, 0], Easing.out(Easing.cubic));
   return (
-    <div style={{position: 'absolute', left: 90, top: 150, opacity: op, transform: `translateY(${sub}px)`}}>
-      <div style={{fontFamily: SERIF_I, fontSize: 560, lineHeight: 0.8, color: TINTA, opacity: 0.9, letterSpacing: -10}}>{n}</div>
-      <div style={{display: 'flex', alignItems: 'center', gap: 22, marginTop: 30}}>
+    <div style={{position: 'absolute', left: 90, top: 70, opacity: op, transform: `translateY(${sub}px)`}}>
+      <div style={{display: 'flex', alignItems: 'center', gap: 22, marginBottom: 26}}>
         <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 30, color: '#fff', background: TIER_COL[tier], borderRadius: 8, padding: '6px 14px', letterSpacing: 3}}>{tier}</div>
         <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 40, letterSpacing: 9, color: OCRE, fontVariant: 'small-caps', textTransform: 'uppercase', maxWidth: 1100}}>{nombre}</div>
       </div>
+      <div style={{fontFamily: SERIF_I, fontSize: 560, lineHeight: 0.8, color: TINTA, opacity: 0.9, letterSpacing: -10}}>{n}</div>
     </div>
   );
 };
@@ -129,7 +129,7 @@ export const Tablero: React.FC<{filas: FilaT[]; activa?: string; dur: number; la
   const W = lado === 'centro' ? 1500 : 820;
   let chip = 0;
   return (
-    <div style={{position: 'absolute', top: 110, left: lado === 'centro' ? 210 : 1920 - W - 60, width: W, opacity: k, transform: `translateX(${(1 - k) * 120}px)`,
+    <div style={{position: 'absolute', top: 110, left: lado === 'centro' ? 210 : 60, width: W, opacity: k, transform: `translateX(${(1 - k) * -120}px)`,
       background: 'rgba(247,243,236,.94)', borderRadius: 22, padding: 26, boxShadow: '0 20px 60px rgba(40,25,10,.35)'}}>
       <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 22, letterSpacing: 6, color: OCRE, marginBottom: 14}}>BOONE'S EASE RANKING · AFTER 65</div>
       {filas.map((r) => (
@@ -140,7 +140,7 @@ export const Tablero: React.FC<{filas: FilaT[]; activa?: string; dur: number; la
             {r.razas.map((z) => {
               const tz = 0.45 + (chip++) * 0.12;
               const kz = kf(t, [tz, tz + 0.3], [0, 1], Easing.out(Easing.back(1.5)));
-              return <div key={z} style={{transform: `scale(${kz})`, fontFamily: SANS, fontWeight: 700, fontSize: lado === 'centro' ? 28 : 22, color: TINTA, background: '#fff', borderRadius: 999, padding: '8px 16px', border: '1px solid rgba(43,33,26,.15)'}}>{z}</div>;
+              return <div key={z} style={{transform: `scale(${kz})`, fontFamily: SANS, fontWeight: 700, fontSize: lado === 'centro' ? 28 : 25, color: TINTA, background: '#fff', borderRadius: 999, padding: '8px 16px', border: '1px solid rgba(43,33,26,.15)'}}>{z}</div>;
             })}
           </div>
         </div>
