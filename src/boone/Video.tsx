@@ -80,6 +80,7 @@ export const SegRazaC: React.FC<{s: SegRaza}> = ({s}) => {
   const tramos: [number, number, Corral][] = [[fP, o3, s.corral[0]]];
   if (s.bt === 1) tramos.push([o3, o5, s.corral[1]]);
   else if (s.bt === 2) tramos.push([o3, o5, s.corral[2]]);
+  else if (s.corral.length < 3) tramos.push([o3, o5, s.corral[1]]);   // 17-nov: un clip entero por toma (regla Veo ≥6,5 s)
   else tramos.push([o3, mitad, s.corral[1]], [mitad, o5, s.corral[2] ?? s.corral[1]]);
   return (
     <AbsoluteFill style={{background: '#000'}}>
