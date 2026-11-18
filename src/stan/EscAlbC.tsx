@@ -41,7 +41,7 @@ export const EscMonedaCanto: React.FC<{ a: string; b: string; dur: number }> = (
   const R = 97, C0 = [972, 615], C1 = [568, 180], C2 = [568, 245];
   // giro hasta quedar de canto ("canto" 70)
   const giro = spring({ frame: f - 70, fps, config: { damping: 16, mass: 1.2, stiffness: 70 } });
-  const ang = 80 * giro;
+  const ang = 72 * giro;
   // viaje a la grieta ("fuerces" 115) y apoyo ("apóyala" 145) con peso
   const via = spring({ frame: f - 112, fps, config: { damping: 18, mass: 1.6, stiffness: 55 } });
   const apo = spring({ frame: f - 143, fps, config: { damping: 9, mass: 1, stiffness: 140 } });
@@ -57,7 +57,7 @@ export const EscMonedaCanto: React.FC<{ a: string; b: string; dur: number }> = (
   // cámara
   const c = camAt(f, [
     { f: 0, x: 972, y: 615, s: 1.0 }, { f: 62, x: 972, y: 615, s: 1.06 },
-    { f: 112, x: 960, y: 540, s: 1.0 }, { f: 255, x: 960, y: 540, s: 1.0 },
+    { f: 112, x: 760, y: 420, s: 1.3 }, { f: 255, x: 700, y: 380, s: 1.35 },
     { f: 300, x: 590, y: 260, s: 1.9 }, { f: 330, x: 590, y: 260, s: 1.9 },
     { f: 372, x: 960, y: 540, s: 1.0 }, { f: dur, x: 960, y: 540, s: 1.03 },
   ]);
@@ -78,7 +78,7 @@ export const EscMonedaCanto: React.FC<{ a: string; b: string; dur: number }> = (
           transform: `perspective(1400px) rotateY(${ang}deg) scale(${esc})`,
           filter: `drop-shadow(${sombra}px ${sombra * 0.6}px ${6 + sombra * 0.4}px rgba(0,0,0,${0.25 + 0.3 * via}))`,
         }}>
-          <div style={{ position: "absolute", inset: 0, overflow: "hidden", borderRadius: "50%", filter: `brightness(${1 - 0.25 * giro})` }}>
+          <div style={{ position: "absolute", inset: 0, overflow: "hidden", borderRadius: "50%", filter: `brightness(${1 - 0.1 * giro})` }}>
             <Img src={staticFile(a)} style={{ position: "absolute", left: -(C0[0] - R), top: -(C0[1] - R), width: 1920, height: 1080, objectFit: "fill" }} />
           </div>
         </div>
@@ -116,7 +116,7 @@ export const EscCharcoSeco: React.FC<{ a: string; b: string; dur: number }> = ({
     }
     return poly(pts);
   };
-  const mojado: React.CSSProperties = { filter: "brightness(0.6) contrast(0.72) saturate(1.35) blur(3px)" };
+  const mojado: React.CSSProperties = { filter: "brightness(0.5) contrast(0.7) saturate(1.4) blur(5px)" };
   return (
     <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
       <div style={mundo(cBar)}>
@@ -142,8 +142,8 @@ export const EscLosaRespira: React.FC<{ src: string; dur: number }> = ({ src, du
   // escala de la losa: "estira" 82 → "calienta" 134; "encoge" 152 → "enfría" 200; "Poquito" 206 vuelve; respira
   let k = f < 82 ? 1 : f < 140 ? lerp(f, [82, 134], [1, 1.025]) : f < 206 ? lerp(f, [146, 200], [1.025, 0.975]) : lerp(f, [206, 232], [0.975, 1]);
   if (f >= 236) k = 1 + 0.006 * Math.sin(((f - 236) / 26) * Math.PI * 2);
-  const tibio = f < 82 ? 0 : f < 152 ? lerp(f, [82, 120], [0, 0.42]) : lerp(f, [152, 175], [0.42, 0]);
-  const frio = f < 152 ? 0 : f < 206 ? lerp(f, [152, 185], [0, 0.42]) : lerp(f, [206, 236], [0.42, 0]);
+  const tibio = f < 82 ? 0 : f < 152 ? lerp(f, [82, 120], [0, 0.32]) : lerp(f, [152, 175], [0.32, 0]);
+  const frio = f < 152 ? 0 : f < 206 ? lerp(f, [152, 185], [0, 0.32]) : lerp(f, [206, 236], [0.32, 0]);
   const c = camAt(f, [{ f: 0, x: 960, y: 560, s: 1.05 }, { f: dur, x: 960, y: 600, s: 1.1 }]);
   const O = [960, 600];
   return (
