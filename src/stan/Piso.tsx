@@ -878,3 +878,18 @@ export const VotaP: React.FC<{ opts: { t: string; src: string }[]; foot: string;
     </AbsoluteFill>
   );
 };
+
+// ---------- versión SIMPLE (ronda 3 del EVALUADOR): foto viva + placa oscura opaca + texto grande; filas visibles todas
+export const SimpleP: React.FC<{ bg?: string; title: string; sub?: string; rows?: string[]; dur: number }> = ({ bg, title, sub, rows, dur }) => {
+  const f = useCurrentFrame(); const o = useOut(dur, 10); const p = sp(f, 0, 15);
+  return (
+    <AbsoluteFill style={{ opacity: o }}>
+      <Base bg={bg} dur={dur} dim={0.25} />
+      <div style={{ position: "absolute", left: 110, bottom: 100, maxWidth: 1300, background: "rgba(18,16,14,0.9)", borderLeft: `14px solid ${P.tiza}`, padding: "40px 56px 44px", boxShadow: "0 30px 60px rgba(0,0,0,0.5)", transform: `translateY(${(1 - p) * 50}px)`, opacity: cl(p * 2) }}>
+        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: title.length > 30 ? 72 : 86, lineHeight: 1.06, color: "#F5F3EE" }}>{title}</div>
+        {sub ? <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 44, letterSpacing: 4, color: P.tiza, marginTop: 16 }}>{sub}</div> : null}
+        {rows ? rows.map((r, i) => <div key={i} style={{ fontFamily: SANS, fontWeight: 600, fontSize: 50, color: "#F5F3EE", marginTop: i ? 10 : 26, opacity: cl(sp(f, 4 + i * 3, 16) * 2) }}>· {r}</div>) : null}
+      </div>
+    </AbsoluteFill>
+  );
+};

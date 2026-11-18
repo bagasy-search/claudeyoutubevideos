@@ -101,6 +101,7 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
     case "DosBotM": return <Mu.DosBotM {...s.p} dur={dur} />;
     case "PreciosM": return <Mu.PreciosM {...s.p} dur={dur} />;
     case "VotoM": return <Mu.VotoM {...s.p} dur={dur} />;
+    case "SimpleP": return <Pi.SimpleP {...s.p} dur={dur} />;
     case "ChapP": return <Pi.ChapP {...s.p} dur={dur} />;
     case "IdxP": return <Pi.IdxP {...s.p} dur={dur} />;
     case "RepasoP": return <Pi.RepasoP {...s.p} dur={dur} />;
