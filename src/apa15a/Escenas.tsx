@@ -17,7 +17,7 @@ const CAN = poly([[950, 343], [962, 328], [1300, 324], [1316, 338], [1326, 450],
 const rad = (d: number) => (d * Math.PI) / 180;
 export const Roll: React.FC<{ dur: number; fTurn: number }> = ({ dur, fTurn }) => {
   const f = useCurrentFrame();
-  const thAt = (g: number) => interpolate(g, [fTurn - 3, fTurn + 10, fTurn + 22, fTurn + 34], [0, 150, 118, 128], { ...CL, easing: EASE });
+  const thAt = (g: number) => interpolate(g, [fTurn - 3, fTurn + 12, fTurn + 22, fTurn + 32], [0, 196, 172, 180], { ...CL, easing: EASE });
   const th = thAt(f), vel = Math.abs(th - thAt(f - 1));
   const cam = interpolate(f, [0, dur], [1.02, 1.1], CL);
   const bands = [] as React.ReactNode[];
@@ -70,6 +70,8 @@ export const Pop: React.FC<{ dur: number; fBase: number; fGar: number; fPan: num
   return (
     <AbsoluteFill style={{ backgroundColor: "#15120e", overflow: "hidden" }}>
       <div style={{ ...BOX, transform: `scale(${cam})`, transformOrigin: "960px 600px" }}>
+        {/* piso de la escena: el sótano entero, oscuro y fuera de foco; las hojas se levantan sobre él (nunca negro vacío) */}
+        <Img src={S("e_pop1")} style={{ ...FULL, filter: "blur(14px) brightness(0.42) saturate(0.7)", transform: "scale(1.06)" }} />
         {PLACES.map((p, i) => {
           const a = at[i];
           if (f < a - 3) return null;
@@ -77,7 +79,8 @@ export const Pop: React.FC<{ dur: number; fBase: number; fGar: number; fPan: num
           const sh = interpolate(rot, [0, 88], [1, 0.35], CL);
           return (
             <div key={i} style={{ position: "absolute", left: 640 * i, top: 0, width: 640, height: 1080, overflow: "hidden",
-              transform: `perspective(1700px) rotateX(${rot}deg)`, transformOrigin: "50% 100%" }}>
+              transform: `perspective(1700px) rotateX(${rot}deg)`, transformOrigin: "50% 100%",
+              boxShadow: `0 ${30 * (1 - sh)}px 50px rgba(0,0,0,${0.35 + 0.3 * (1 - sh)}), inset 0 0 0 1px rgba(255,240,215,0.18)` }}>
               <Img src={S(p.n)} style={{ ...NOMAX, position: "absolute", left: p.ox, top: p.oy, width: 1920 * p.s, height: 1080 * p.s, filter: `brightness(${sh})` }} />
             </div>
           );
