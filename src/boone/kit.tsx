@@ -9,7 +9,7 @@ export const {fontFamily: SERIF} = loadSerif('normal', {weights: ['400'], subset
 export const {fontFamily: SERIF_I} = loadSerif('italic', {weights: ['400'], subsets: ['latin']});
 export const {fontFamily: SANS} = loadSans('normal', {weights: ['500', '700', '800'], subsets: ['latin']});
 export const TINTA = '#2b211a', OCRE = '#a8742f', CREMA = '#F7F3EC', CUERO = '#7a4a28';
-export const TIER_COL: Record<string, string> = {S: '#c9962b', A: '#5f8f4e', B: '#3f7f86', C: '#d07a2e', D: '#b5432f'};
+export const TIER_COL: Record<string, string> = {S: '#c9962b', A: '#5f8f4e', B: '#3f7f86', C: '#d07a2e', D: '#b5432f', F: '#8e2f22'};
 const IO = Easing.inOut(Easing.cubic);
 export const kf = (s: number, t: number[], v: number[], e = IO) => interpolate(s, t, v, {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: e});
 export const sfx = (n: string) => staticFile(`b16/sfx/${n}.mp3`);
@@ -80,7 +80,7 @@ export const Numero: React.FC<{n: number; nombre: string; tier: string; t: numbe
   return (
     <div style={{position: 'absolute', left: 90, top: 70, opacity: op, transform: `translateY(${sub}px)`}}>
       <div style={{display: 'flex', alignItems: 'center', gap: 22, marginBottom: 26}}>
-        <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 30, color: '#fff', background: TIER_COL[tier], borderRadius: 8, padding: '6px 14px', letterSpacing: 3}}>{tier}</div>
+        {tier && TIER_COL[tier] && <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 30, color: '#fff', background: TIER_COL[tier], borderRadius: 8, padding: '6px 14px', letterSpacing: 3}}>{tier}</div>}
         <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 40, letterSpacing: 9, color: OCRE, fontVariant: 'small-caps', textTransform: 'uppercase', maxWidth: 1100}}>{nombre}</div>
       </div>
       <div style={{fontFamily: SERIF_I, fontSize: 560, lineHeight: 0.8, color: TINTA, opacity: 0.9, letterSpacing: -10}}>{n}</div>
