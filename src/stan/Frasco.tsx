@@ -533,9 +533,9 @@ export const RinconN: React.FC<{ steps: { t: string; f: number }[]; title: strin
 export const LaminaN: React.FC<{ src: string; focus: { x: number; y: number; z: number; f: number }[]; dur: number }> = ({ src, focus, dur }) => {
   const f = useCurrentFrame(); let a = 0; focus.forEach((z, i) => { if (f >= z.f) a = i; });
   const cur = focus[a]; const prev = focus[Math.max(0, a - 1)]; const t = a === 0 ? 1 : interpolate(f, [cur.f, cur.f + 30], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
-  const cz = (v: number) => 1 + (Math.min(v, 2) - 1) * 0.45;
-  const x = prev.x + (cur.x - prev.x) * t; const y = prev.y + (cur.y - prev.y) * t; const z = cz(prev.z) + (cz(cur.z) - cz(prev.z)) * t;
-  const dim = cur.z > 1.05 ? 0.5 * t : 0;
+  const cz = (v: number) => 1 + (Math.min(v, 2) - 1) * 0.3;
+  const x = prev.x + (cur.x - prev.x) * t + Math.sin(f / 40) * 1.6; const y = prev.y + (cur.y - prev.y) * t + Math.cos(f / 47) * 1.3; const z = cz(prev.z) + (cz(cur.z) - cz(prev.z)) * t + 0.03 * Math.sin(f / 55) + 0.012 * Math.sin(f / 13);
+  const dim = 0;
   return (
     <AbsoluteFill style={{ opacity: out(f, dur), background: "#F4EFE4", overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0, transform: `scale(${z})`, transformOrigin: `${x}% ${y}%` }}><Pic src={src} fit="contain" /></div>
@@ -786,5 +786,20 @@ export const PanelN: React.FC<{ src: string; label: string; dur: number }> = ({ 
         <div style={{ position: "absolute", left: 50, right: 50, bottom: 60, background: N.noche, borderLeft: `12px solid ${N.nar}`, padding: "18px 26px", fontFamily: SERIF, fontWeight: 700, fontSize: 52, lineHeight: 1.08, color: "#FFF8EE" }}>{label}</div>
       </div>
     </div>
+  );
+};
+
+// ---------- versión SIMPLE (ronda 3 del EVALUADOR): foto viva + placa oscura opaca + texto grande; filas visibles todas
+export const SimpleN: React.FC<{ bg?: string; title: string; sub?: string; rows?: string[]; dur: number }> = ({ bg, title, sub, rows, dur }) => {
+  const f = useCurrentFrame(); const p = sp(f, 0, 15);
+  return (
+    <AbsoluteFill style={{ opacity: out(f, dur) }}>
+      <Fondo bg={bg} dur={dur} side="all" k={0.25} />
+      <div style={{ position: "absolute", left: 110, bottom: 100, maxWidth: 1300, background: "rgba(24,17,11,0.9)", borderLeft: `14px solid ${N.nar}`, padding: "40px 56px 44px", boxShadow: "0 30px 60px rgba(0,0,0,0.5)", transform: `translateY(${(1 - p) * 50}px)`, opacity: cl(p * 2) }}>
+        <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: title.length > 30 ? 72 : 86, lineHeight: 1.06, color: "#FFF8EE" }}>{title}</div>
+        {sub ? <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 46, letterSpacing: 4, color: N.narL, marginTop: 16 }}>{sub}</div> : null}
+        {rows ? rows.map((r, i) => <div key={i} style={{ fontFamily: SANS, fontWeight: 600, fontSize: 50, color: "#FFF8EE", marginTop: i ? 10 : 26, opacity: cl(sp(f, 4 + i * 3, 16) * 2) }}>{r}</div>) : null}
+      </div>
+    </AbsoluteFill>
   );
 };
