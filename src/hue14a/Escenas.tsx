@@ -1,6 +1,6 @@
 // Escenas sobre fotos de hue14a (D:/rtmp/hue14a/ideas.md). Escritas de cero: solo React y Remotion, sin SVG.
 import React from "react";
-import { AbsoluteFill, Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, Easing } from "remotion";
+import { AbsoluteFill, Img, OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, Easing } from "remotion";
 import { FONTS } from "./Piezas";
 
 const CL = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -27,15 +27,17 @@ const band = (x0: number, y0: number, x1: number, y1: number, w: number, n = 8) 
 };
 const CREAM = "#F6EFDF";
 
-// rótulo corto con raya fina, en coordenadas de la foto
-const Rotulo: React.FC<{ x: number; y: number; w: number; t: string; f0: number; left?: boolean }> = ({ x, y, w, t, f0, left }) => {
+// rótulo: etiqueta kraft atada con hilo al punto (x, y) de la foto; cae y se mece con peso (vuelta 2: grande y legible)
+const Rotulo: React.FC<{ x: number; y: number; w: number; t: string; f0: number; left?: boolean }> = ({ x, y, t, f0, left }) => {
   const f = useCurrentFrame(); if (f < f0) return null;
-  const p = seg(f, f0, f0 + 12), q = seg(f, f0 + 6, f0 + 18);
+  const k = spring({ frame: f - f0, fps: 30, config: { damping: 9, mass: 0.9, stiffness: 150 } });
+  const sw = Math.exp(-(f - f0) / 26) * Math.cos(((f - f0) / 30) * Math.PI * 2) * 6;
   return (
-    <div style={{ position: "absolute", left: left ? x - w : x, top: y - 1, width: w, height: 3 }}>
-      <div style={{ position: "absolute", left: left ? (1 - p) * w : 0, top: 0, width: w * p, height: 3, background: CREAM, boxShadow: "0 1px 4px rgba(0,0,0,0.6)" }} />
-      <div style={{ position: "absolute", [left ? "right" : "left"]: w + 16, top: -30, fontFamily: FONTS.SANS, fontWeight: 700, fontSize: 44, color: CREAM, whiteSpace: "nowrap",
-        textShadow: "0 2px 10px rgba(0,0,0,0.75)", opacity: q, transform: `translateY(${(1 - q) * 10}px)` }}>{t}</div>
+    <div style={{ position: "absolute", left: x, top: y, transformOrigin: "0 0", transform: `rotate(${(left ? 18 : -18) + sw}deg)` }}>
+      <div style={{ position: "absolute", left: -3, top: 0, width: 6, height: 150 * k, backgroundImage: "repeating-linear-gradient(60deg, #D2B07A 0 4px, #A07B45 4px 7px)", borderRadius: 3 }} />
+      <div style={{ position: "absolute", left: left ? -330 : -40, top: 140 * k, padding: "16px 34px 20px", whiteSpace: "nowrap", borderRadius: 8, opacity: k > 0.3 ? 1 : 0,
+        backgroundColor: "#C9A36A", backgroundImage: "repeating-linear-gradient(17deg, rgba(90,60,25,0.07) 0 2px, transparent 2px 7px)", boxShadow: "14px 20px 26px rgba(0,0,0,0.45)",
+        transform: `rotate(${left ? -18 : 18}deg)`, fontFamily: FONTS.SERIF, fontSize: 66, color: "#2B2118" }}>{t}</div>
     </div>
   );
 };
@@ -66,7 +68,7 @@ export const EscDespunte: React.FC<{ src: string; r10: string; veo?: string; dur
   }
   // cámara: sube por el tallo hasta la punta, después sigue la caída
   const a = seg(f, 0, fCut - 4), b = seg(f, fCut + 4, fCut + 40);
-  const cx = lerp(lerp(848, 850, a), 900, b), cy = lerp(lerp(560, 300, a), 640, b), s = lerp(lerp(1.08, 1.85, a), 1.22, b) + 0.02 * (f / dur);
+  const cx = lerp(lerp(848, 850, a), 900, b), cy = lerp(lerp(560, 300, a), 640, b), s = lerp(lerp(1.05, 1.5, a), 1.15, b) + 0.02 * (f / dur);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#8fb3e0" }}>
       <div style={cam(cx, cy, s)}>
@@ -97,7 +99,7 @@ export const EscPoda: React.FC<{ src: string; dur: number }> = ({ src, dur }) =>
   ];
   const back = seg(f, fAc - 2, fAc + 48), push = seg(f, fPar - 8, fPar + 40);
   const cx = lerp(lerp(960, 960, back), 1150, push), cy = lerp(lerp(270, 540, back), 400, push);
-  const s = lerp(lerp(1.9 + 0.06 * Math.min(1, f / fAc), 1.0, back), 1.85, push);
+  const s = lerp(lerp(1.45 + 0.05 * Math.min(1, f / fAc), 1.0, back), 1.4, push);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#55524c" }}>
       <div style={cam(cx, cy, s)}>
@@ -136,9 +138,9 @@ export const EscDedo: React.FC<{ src: string; dur: number }> = ({ src, dur }) =>
   const f = useCurrentFrame();
   const fMet = S(2.8), fSeg = S(6.0), fCm = S(7.54);
   const a = seg(f, 0, fMet + 20), b = seg(f, fMet + 10, fSeg);
-  const cx = lerp(lerp(960, 950, a), 930, b), cy = lerp(lerp(540, 560, a), 590, b), s = lerp(lerp(1.0, 1.15, a), 1.45, b) + 0.025 * (f / dur);
+  const cx = lerp(lerp(960, 950, a), 930, b), cy = lerp(lerp(540, 560, a), 590, b), s = lerp(lerp(1.0, 1.08, a), 1.22, b) + 0.02 * (f / dur);
   const r = seg(f, fSeg, fSeg + 34);
-  const up = -190 * r, sy = 1 + 0.2 * r;
+  const up = -230 * r, sy = 1 + 0.26 * r;
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#3b3a38" }}>
       <div style={cam(cx, cy, s)}>
@@ -147,7 +149,13 @@ export const EscDedo: React.FC<{ src: string; dur: number }> = ({ src, dur }) =>
           filter: r > 0 ? "drop-shadow(0 -6px 6px rgba(0,0,0,0.25))" : undefined }}>
           <Img src={staticFile(src)} style={{ ...FULL, clipPath: poly(SLAB) }} />
         </div>
-        <Rotulo x={985} y={524} w={80} t="3 cm" f0={fCm} />
+        {f >= fCm - 6 && (() => { const k = spring({ frame: f - fCm + 6, fps: 30, config: { damping: 8, mass: 0.9, stiffness: 160 } }); return (
+          <div style={{ position: "absolute", left: 1010, top: 330, width: 64, height: 420, transform: `translateY(${(1 - k) * -700}px) rotate(4deg)`, transformOrigin: "50% 100%" }}>
+            <div style={{ position: "absolute", inset: 0, borderRadius: 6, background: "linear-gradient(90deg, #d9b98a, #f0dcb4 40%, #c9a473)", boxShadow: "14px 16px 20px rgba(0,0,0,0.45), inset -4px 0 0 rgba(90,60,25,0.25)" }} />
+            {Array.from({ length: 21 }).map((_, i) => <div key={i} style={{ position: "absolute", left: 0, top: 10 + i * 19, width: i % 5 === 0 ? 34 : 18, height: 3, background: "#4a3420" }} />)}
+            <div style={{ position: "absolute", left: -30, top: 196, width: 124, height: 6, background: "#B4321C", boxShadow: "0 2px 4px rgba(0,0,0,0.5)" }} />
+            <div style={{ position: "absolute", left: 84, top: 160, padding: "8px 22px 12px", borderRadius: 8, backgroundColor: "#C9A36A", boxShadow: "10px 14px 18px rgba(0,0,0,0.45)", whiteSpace: "nowrap", fontFamily: FONTS.SERIF, fontSize: 64, color: "#2B2118" }}>3 cm</div>
+          </div>); })()}
       </div>
     </AbsoluteFill>
   );

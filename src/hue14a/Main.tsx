@@ -21,7 +21,7 @@ const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
       case "baldosas": return <K.Baldosas img={s.img} foot={s.foot} marks={s.marks} dur={dur} />;
       case "colgantes": return <K.Colgantes img={s.img} seed={s.id} items={s.items} dur={dur} />;
       case "ficha": return <K.Ficha img={s.img} quote={s.quote} source={s.source} dur={dur} />;
-      case "sobre": return <K.Sobre img={s.img} head={s.head} lines={s.lines} dur={dur} />;
+      case "sobre": return <K.Sobre img={s.img} head={s.head} lines={s.lines} holes={s.holes} fHoles={s.fHoles} dur={dur} />;
       case "papelito": return <K.Papelito img={s.img} n={s.n} text={s.text} dur={dur} />;
       case "cta": return <K.CTAsobre img={s.img} next={s.next} nextImg={s.nextImg} dur={dur} />;
       case "esc": { const C = (E as any)[s.name]; return C ? <C dur={dur} {...s.props} /> : null; }
