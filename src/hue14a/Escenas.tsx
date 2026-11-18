@@ -68,7 +68,10 @@ export const EscDespunte: React.FC<{ src: string; r10: string; veo?: string; dur
   }
   // cámara: sube por el tallo hasta la punta, después sigue la caída
   const a = seg(f, 0, fCut - 4), b = seg(f, fCut + 4, fCut + 40);
-  const cx = lerp(lerp(848, 850, a), 900, b), cy = lerp(lerp(560, 300, a), 640, b), s = lerp(lerp(1.05, 1.5, a), 1.15, b) + 0.02 * (f / dur);
+  const cx = lerp(lerp(848, 850, a), 860, b), cy = lerp(lerp(560, 330, a), 400, b), s = lerp(lerp(1.05, 1.4, a), 1.3, b) + 0.015 * (f / dur);
+  // tijera: entra desde la derecha, cierra sobre el corte y se va
+  const tIn = seg(f, fCut - 16, fCut - 5), tCl = seg(f, fCut - 5, fCut), tOut = seg(f, fCut + 8, fCut + 22);
+  const open = 22 * (1 - tCl), tx = lerp(700, 0, tIn) + 760 * tOut;
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#8fb3e0" }}>
       <div style={cam(cx, cy, s)}>
@@ -82,7 +85,18 @@ export const EscDespunte: React.FC<{ src: string; r10: string; veo?: string; dur
           transform: `translate(${dx}px, ${dy}px) rotate(${rot}deg)`, filter: f >= fCut ? "drop-shadow(0 8px 6px rgba(0,0,0,0.35))" : undefined }}>
           <Img src={staticFile(src)} style={{ ...FULL, clipPath: poly(TIP) }} />
         </div>
-        <Rotulo x={906} y={236} w={90} t="último par" f0={fPar} />
+        {f >= fCut - 16 && f < fCut + 24 && (
+          <div style={{ position: "absolute", left: 856, top: 236, transform: `translateX(${tx}px) rotate(-8deg)`, filter: "drop-shadow(10px 14px 8px rgba(0,0,0,0.35))" }}>
+            {[1, -1].map((d) => (
+              <div key={d} style={{ position: "absolute", left: 0, top: 0, transformOrigin: "60px 0", transform: `rotate(${d * open}deg)` }}>
+                <div style={{ position: "absolute", left: -10, top: -7, width: 150, height: 14, borderRadius: "70% 10% 10% 70%", background: "linear-gradient(180deg, #f2f2f2, #9aa0a6 55%, #5b6066)" }} />
+                <div style={{ position: "absolute", left: 140, top: -14, width: 230, height: 28, borderRadius: 14, background: "linear-gradient(180deg, #e0463a, #a3231a 60%, #6b140e)", transform: `rotate(${d * 10}deg)`, transformOrigin: "0 50%" }} />
+              </div>
+            ))}
+            <div style={{ position: "absolute", left: 50, top: -10, width: 20, height: 20, borderRadius: "50%", background: "radial-gradient(circle at 35% 35%, #fff, #777)" }} />
+          </div>
+        )}
+        <Rotulo x={1000} y={330} w={90} t="último par" f0={fPar} />
       </div>
     </AbsoluteFill>
   );
@@ -99,7 +113,7 @@ export const EscPoda: React.FC<{ src: string; dur: number }> = ({ src, dur }) =>
   ];
   const back = seg(f, fAc - 2, fAc + 48), push = seg(f, fPar - 8, fPar + 40);
   const cx = lerp(lerp(960, 960, back), 1150, push), cy = lerp(lerp(270, 540, back), 400, push);
-  const s = lerp(lerp(1.45 + 0.05 * Math.min(1, f / fAc), 1.0, back), 1.4, push);
+  const s = lerp(lerp(1.25 + 0.15 * Math.min(1, f / fAc), 1.0, back), 1.3, push);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#55524c" }}>
       <div style={cam(cx, cy, s)}>
@@ -126,35 +140,36 @@ export const EscPoda: React.FC<{ src: string; dur: number }> = ({ src, dur }) =>
             </React.Fragment>
           );
         })}
-        <Rotulo x={1120} y={420} w={120} t="la mitad" f0={fMit} left />
+        {f >= fMit - 4 && (() => { const r = R[0]; const L = Math.hypot(r.tip[0] - r.cut[0], r.tip[1] - r.cut[1]); const ang = (Math.atan2(r.tip[1] - r.cut[1], r.tip[0] - r.cut[0]) * 180) / Math.PI;
+          const k = seg(f, fMit - 4, fMit + 10); const m = seg(f, fMit + 12, fMit + 18); const land = f > fMit + 10 ? Math.exp(-(f - fMit - 10) / 5) * Math.sin((f - fMit - 10) / 1.8) * 6 : 0; return (
+          <div style={{ position: "absolute", left: r.cut[0], top: r.cut[1] - 40, width: L * k, height: 54, transformOrigin: "0 40px", transform: `rotate(${ang}deg) translateY(${(1 - k) * -120 + land}px)`, overflow: "visible" }}>
+            <div style={{ position: "absolute", inset: 0, borderRadius: 4, background: "linear-gradient(180deg, #f5d34a, #e2b72a 60%, #b98f15)", boxShadow: "8px 14px 14px rgba(0,0,0,0.4)", overflow: "hidden" }}>
+              {Array.from({ length: Math.ceil(L / 14) }).map((_, i) => <div key={i} style={{ position: "absolute", left: i * 14, top: 0, width: 2, height: i % 5 === 0 ? 24 : 12, background: "#2b2118" }} />)}
+            </div>
+            <div style={{ position: "absolute", left: L / 2 - 4, top: -24, width: 8, height: 102, background: "#B4321C", transform: `scaleY(${m})`, boxShadow: "0 2px 4px rgba(0,0,0,0.5)" }} />
+            <div style={{ position: "absolute", left: L / 2 - 150, top: 70, width: 300, textAlign: "center", padding: "10px 0 14px", borderRadius: 8, backgroundColor: "#C9A36A", boxShadow: "10px 14px 18px rgba(0,0,0,0.45)", fontFamily: FONTS.SERIF, fontSize: 60, color: "#2B2118", opacity: m, transform: `rotate(${-ang}deg)` }}>la mitad</div>
+          </div>); })()}
       </div>
     </AbsoluteFill>
   );
 };
 
-// ── Escena 3 · prueba del dedo: la tierra del frente (bajo su línea real y≈712) sube y entierra el dedo hasta el nudillo (885,534)
-const SLAB = [[0, 735], [120, 731], [240, 726], [360, 722], [480, 717], [600, 713], [720, 710], [800, 712], [880, 716], [960, 714], [1060, 710], [1160, 702], [1260, 694], [1360, 690], [1460, 692], [1560, 696], [1680, 700], [1800, 703], [1920, 706], [1920, 1080], [0, 1080]];
+// ── Escena 3 · prueba del dedo (vuelta 3: sin capa de tierra recortada): empuje lento al dedo y en «tres centímetros» se clava una regla de madera al lado
 export const EscDedo: React.FC<{ src: string; dur: number }> = ({ src, dur }) => {
   const f = useCurrentFrame();
-  const fMet = S(2.8), fSeg = S(6.0), fCm = S(7.54);
-  const a = seg(f, 0, fMet + 20), b = seg(f, fMet + 10, fSeg);
-  const cx = lerp(lerp(960, 950, a), 930, b), cy = lerp(lerp(540, 560, a), 590, b), s = lerp(lerp(1.0, 1.08, a), 1.22, b) + 0.02 * (f / dur);
-  const r = seg(f, fSeg, fSeg + 34);
-  const up = -230 * r, sy = 1 + 0.26 * r;
+  const fCm = S(7.54);
+  const a = seg(f, 0, dur);
+  const cx = lerp(900, 880, a), cy = lerp(560, 600, a), s = lerp(1.0, 1.14, a);
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#3b3a38" }}>
       <div style={cam(cx, cy, s)}>
         <Img src={staticFile(src)} style={FULL} />
-        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "960px 712px", transform: `translateY(${up}px) scaleY(${sy})`,
-          filter: r > 0 ? "drop-shadow(0 -6px 6px rgba(0,0,0,0.25))" : undefined }}>
-          <Img src={staticFile(src)} style={{ ...FULL, clipPath: poly(SLAB) }} />
-        </div>
         {f >= fCm - 6 && (() => { const k = spring({ frame: f - fCm + 6, fps: 30, config: { damping: 8, mass: 0.9, stiffness: 160 } }); return (
-          <div style={{ position: "absolute", left: 1010, top: 330, width: 64, height: 420, transform: `translateY(${(1 - k) * -700}px) rotate(4deg)`, transformOrigin: "50% 100%" }}>
+          <div style={{ position: "absolute", left: 990, top: 300, width: 96, height: 440, transform: `translateY(${(1 - k) * -700}px) rotate(3deg)`, transformOrigin: "50% 100%" }}>
             <div style={{ position: "absolute", inset: 0, borderRadius: 6, background: "linear-gradient(90deg, #d9b98a, #f0dcb4 40%, #c9a473)", boxShadow: "14px 16px 20px rgba(0,0,0,0.45), inset -4px 0 0 rgba(90,60,25,0.25)" }} />
-            {Array.from({ length: 21 }).map((_, i) => <div key={i} style={{ position: "absolute", left: 0, top: 10 + i * 19, width: i % 5 === 0 ? 34 : 18, height: 3, background: "#4a3420" }} />)}
-            <div style={{ position: "absolute", left: -30, top: 196, width: 124, height: 6, background: "#B4321C", boxShadow: "0 2px 4px rgba(0,0,0,0.5)" }} />
-            <div style={{ position: "absolute", left: 84, top: 160, padding: "8px 22px 12px", borderRadius: 8, backgroundColor: "#C9A36A", boxShadow: "10px 14px 18px rgba(0,0,0,0.45)", whiteSpace: "nowrap", fontFamily: FONTS.SERIF, fontSize: 64, color: "#2B2118" }}>3 cm</div>
+            {Array.from({ length: 19 }).map((_, i) => <div key={i} style={{ position: "absolute", left: 0, bottom: i * 23, width: i % 5 === 0 ? 44 : 22, height: 3, background: "#4a3420" }} />)}
+            <div style={{ position: "absolute", left: -40, bottom: 69, width: 176, height: 8, background: "#B4321C", boxShadow: "0 2px 4px rgba(0,0,0,0.5)" }} />
+            <div style={{ position: "absolute", left: 120, bottom: 40, padding: "8px 26px 12px", borderRadius: 8, backgroundColor: "#C9A36A", boxShadow: "10px 14px 18px rgba(0,0,0,0.45)", whiteSpace: "nowrap", fontFamily: FONTS.SERIF, fontSize: 72, color: "#2B2118" }}>3 cm</div>
           </div>); })()}
       </div>
     </AbsoluteFill>

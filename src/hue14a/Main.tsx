@@ -6,6 +6,8 @@ import * as E from "./Escenas";
 
 export const TOTAL_FRAMES_HUE14A = TOTAL;
 const T = 8;
+// vuelta 3: los componentes entran con corte seco (el fundido dejaba capas fantasma)
+const tr = (s: any) => (s && s.k === "C" && s.trans === "fade" ? "cut" : s?.trans || "cut");
 
 const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   if (s.k === "C") {
@@ -66,10 +68,10 @@ export const MainHue14a: React.FC = () => (
     {SHOTS.map((s, i) => {
       if (s.k === "A") return null;
       const nx = SHOTS[i + 1];
-      const tail = nx && nx.k !== "A" && nx.trans && nx.trans !== "cut" ? T + 2 : 0;
+      const tail = nx && nx.k !== "A" && tr(nx) !== "cut" ? T + 2 : 0;
       return (
         <Sequence key={"s" + s.id} from={s.from} durationInFrames={Math.min(s.dur + tail, TOTAL - s.from)} premountFor={45}>
-          <Enter trans={s.trans || "cut"} seed={s.id}><ShotBody s={s} dur={s.dur} /></Enter>
+          <Enter trans={tr(s)} seed={s.id}><ShotBody s={s} dur={s.dur} /></Enter>
         </Sequence>
       );
     })}
