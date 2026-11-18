@@ -116,7 +116,7 @@ export const EscCharcoSeco: React.FC<{ a: string; b: string; dur: number }> = ({
     }
     return poly(pts);
   };
-  const mojado: React.CSSProperties = { filter: "brightness(0.5) contrast(0.7) saturate(1.4) blur(5px)" };
+  const mojado: React.CSSProperties = { filter: "brightness(0.55) contrast(0.9) saturate(1.3) blur(1.5px)" };
   return (
     <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
       <div style={mundo(cBar)}>
