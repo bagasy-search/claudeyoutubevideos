@@ -96,7 +96,7 @@ export const EscPoda: React.FC<{ src: string; dur: number }> = ({ src, dur }) =>
     <AbsoluteFill style={{ overflow: "hidden", background: "#55524c" }}>
       <div style={cam(cx, cy, s)}>
         <Img src={staticFile(src)} style={FULL} />
-        <Tablita x={640} y={540} t="la mitad" f0={fMit - 4} />
+        <Tablita x={720} y={860} t="la mitad" f0={fMit - 4} />
       </div>
     </AbsoluteFill>
   );
