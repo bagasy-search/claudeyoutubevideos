@@ -216,7 +216,8 @@ export const RecapPaquetes: React.FC<{ n: number; cards: Card[]; lines: string[]
   const W = 220, gx = 290, gy = 400, x0 = 960 - gx * 2 - W / 2, y0 = 150;
   const sel = n > 0 ? sp(f - 4, 16) : 0;
   return (
-    <AbsoluteFill style={{ ...TABLE, overflow: "hidden", perspective: 1800 }}><Mesa />
+    <AbsoluteFill style={{ ...TABLE, overflow: "hidden", perspective: 1800 }}>
+     <AbsoluteFill style={{ transformOrigin: "62% 48%", transform: `scale(${1 + 0.07 * Math.sin(Math.min(1, f / Math.max(dur, 1)) * Math.PI / 2)}) translateX(${-14 * Math.sin(f / 70)}px)` }}><Mesa />
       {cards.map((c, i) => {
         const k = i + 1; const col = i % 5, row = Math.floor(i / 5);
         const e = n === 0 ? bounce(f, i * 4) : 1; const land = n === 0 ? hit(f, i * 4 + 9, 3) : 0;
@@ -238,9 +239,11 @@ export const RecapPaquetes: React.FC<{ n: number; cards: Card[]; lines: string[]
         <div style={{ position: "absolute", zIndex: 20, left: 760, top: 300, width: 1040, padding: "50px 60px 56px", ...KRAFT, boxShadow: "26px 34px 50px rgba(0,0,0,0.5)", transform: `translateX(${(1 - bounce(f, 10)) * 1300}px) rotate(1deg)` }}>
           <Tack x={520} y={10} c="#3f6b35" />
           <div style={{ fontFamily: SERIF, fontSize: 96, lineHeight: 1.02, color: H.ink }}>{cards[n - 1]?.title}</div>
-          {lines[0] && <div style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: 58, lineHeight: 1.1, color: H.leaf, marginTop: 22, opacity: cl((f - 24) / 8, 0, 1) }}>{lines[0]}</div>}
+          {lines.slice(0, 3).map((l, j) => { const t0 = j === 0 ? 24 : Math.round(dur * (0.25 + 0.22 * j)); const a = sp(f - t0, 14);
+            return <div key={j} style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: 54, lineHeight: 1.1, color: H.leaf, marginTop: 20, opacity: cl((f - t0) / 8, 0, 1), transform: `translateY(${(1 - a) * 30}px)` }}>{l}</div>; })}
         </div>
       )}
+     </AbsoluteFill>
     </AbsoluteFill>
   );
 };
