@@ -85,7 +85,7 @@ cme14c/g/g2920.png
 cme14c/y/y2930.mp4
 cme14c/y/y2940.mp4
 cme14c/g/g2950.png
-cme14c/y/y2980.mp4
+cme14c/g/g2980.png
 cme14c/y/y3010.mp4
 cme14c/y/y3030.mp4
 cme14c/y/y3040.mp4
@@ -117,7 +117,7 @@ cme14c/y/y3730.mp4
 cme14c/y/y3770.mp4
 cme14c/y/y3800.mp4
 cme14c/y/y3840.mp4
-cme14c/y/y3900.mp4
+cme14c/g/g3900.png
 cme14c/y/y3910.mp4
 cme14c/y/y3920.mp4
 cme14c/g/g3950.png
