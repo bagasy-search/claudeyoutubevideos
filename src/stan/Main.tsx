@@ -6,6 +6,7 @@ import { SHOTS, AVATAR, OVERLAYS, TOTAL, MIX, MANO, PLATE } from "./cues.gen";
 import * as K from "./Kit";
 import * as E from "./Escenas";
 import * as E2 from "./EscAlb";
+import * as E3 from "./EscAlbB";
 import * as S from "./Carne";
 import * as A from "./Alb";
 
@@ -71,7 +72,7 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
     case "manualA": return <A.ManualA {...s.p} {...(A.OVA[s.id] ?? {})} bg={s.bg} dur={dur} />;
     case "ctaA": return <A.CtaA {...s.p} {...(A.OVA[s.id] ?? {})} bg={s.bg} dur={dur} />;
     case "proximoA": return <A.ProximoA {...s.p} {...(A.OVA[s.id] ?? {})} bg={s.bg} dur={dur} />;
-    case "escena": { const C = (E2 as any)[s.p.name] ?? (E as any)[s.p.name]; return C ? <C {...s.p} dur={dur} /> : null; }
+    case "escena": { const C = (E3 as any)[s.p.name] ?? (E2 as any)[s.p.name] ?? (E as any)[s.p.name]; return C ? <C {...s.p} dur={dur} /> : null; }
     default: return null;
   }
 };
