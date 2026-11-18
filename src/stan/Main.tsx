@@ -13,7 +13,13 @@ import * as A from "./Alb";
 export const TOTAL_FRAMES_STAN = TOTAL;
 const TR = 8;
 
-const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
+// empuje lento y continuo sobre las placas del kit A: nunca quedan fijas (el AUDITOR las marcaba como congelado)
+const Empuje: React.FC<{ dur: number; seed: number; children: React.ReactNode }> = ({ dur, seed, children }) => {
+  const f = useCurrentFrame(); const t = f / Math.max(1, dur); const dir = seed % 2 ? 1 : -1;
+  return <AbsoluteFill style={{ overflow: "hidden" }}><AbsoluteFill style={{ transform: `scale(${1.0 + 0.06 * t}) translateX(${dir * 14 * t}px) translateY(${-8 * t}px)`, transformOrigin: "50% 50%" }}>{children}</AbsoluteFill></AbsoluteFill>;
+};
+const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => /A$/.test(s.view || "") ? <Empuje dur={dur} seed={s.id + 1}><BodyIn s={s} dur={dur} /></Empuje> : <BodyIn s={s} dur={dur} />;
+const BodyIn: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   const seed = s.id + 1;
   switch (s.view) {
     case "clip": return <K.Clip src={s.src} seed={seed} dur={dur} clipDur={s.clipDur} minRate={s.veo ? 0.42 : 0.6} />;
