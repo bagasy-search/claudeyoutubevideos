@@ -2,7 +2,7 @@
 // Raza: t1 campo → t2 abre la PUERTA DE LUZ al Corral (número detrás del perro + fichas) → t3 Corral (la trampa)
 //       → [t5 campo] → t4 campo (anécdota) con la etiqueta EASE x/5 cayendo cuando la nombra. La voz de Boone nunca se corta.
 import React from 'react';
-import {AbsoluteFill, Audio, OffthreadVideo, Sequence, Series, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, Series, staticFile, useCurrentFrame} from 'remotion';
 import {Capsula, Etiqueta, Ficha, Fichas, FilaT, FPS, Grano, Insignia, LuzPuerta, Numero, Rotulo, Tablero, kf, puerta, sfx, sonidosFichas} from './kit';
 
 export type Toma = {id: string; clip: string; ini: number; dur: number};
@@ -13,7 +13,27 @@ export type Ov =
   | {tipo: 'rotulo'; at: number; dur: number; arriba: string; txt: string}
   | {tipo: 'fichas'; at: number; dur: number; items: Ficha[]};
 export type SegToma = {tipo: 'toma'; t: Toma; ovs?: Ov[]};
-export type Corral = {clip: string; corte?: string; ini?: number};
+export type Corral = {clip?: string; img?: string; bt?: boolean; corte?: string; ini?: number};
+// 18-nov (estilo Ruth): foto del Corral viva. Base 1,12 anclada arriba a la izquierda (tapa la estrellita de Nano Banana abajo a la derecha);
+// push-in con curva (nunca lineal) y deriva distinta por plano; bullet time = órbita falsa (rotateY + paneo contrario) más lenta.
+const FotoCorral: React.FC<{c: Corral; dur: number; k: number}> = ({c, dur, k}) => {
+  const f = useCurrentFrame(); const t = Math.min(1, f / Math.max(1, dur));
+  const e = 1 - Math.pow(1 - t, 2.2);                       // arranca con impulso y se asienta
+  const dir = [1, -1, 1][k % 3], vy = [-1, 1, 0.5][k % 3];
+  if (c.bt) {
+    const o = Math.sin((t - 0.5) * Math.PI) * 0.5 + 0.5;     // curva en S
+    return (<AbsoluteFill style={{perspective: 1400, overflow: 'hidden', background: '#F7F3EC'}}>
+      <Img src={src(c.img!)} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transformOrigin: '0% 0%',
+        transform: `translateX(${(o - 0.5) * -70}px) rotateY(${(o - 0.5) * 7}deg) scale(${1.16 + 0.06 * Math.sin(t * Math.PI)})`}} />
+      <AbsoluteFill style={{background: `linear-gradient(${100 + o * 40}deg, rgba(255,214,150,0) 35%, rgba(255,214,150,${0.16 * Math.sin(t * Math.PI)}) 55%, rgba(255,214,150,0) 75%)`, mixBlendMode: 'screen'}} />
+    </AbsoluteFill>);
+  }
+  const sc = 1.12 + 0.1 * e, tx = dir * 26 * e + Math.sin(t * Math.PI) * 6 * dir, ty = vy * 14 * e;
+  return (<AbsoluteFill style={{overflow: 'hidden', background: '#F7F3EC'}}>
+    <Img src={src(c.img!)} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transformOrigin: '0% 0%',
+      transform: `translate(${tx}px, ${ty}px) scale(${sc})`}} />
+  </AbsoluteFill>);
+};
 export type SegRaza = {tipo: 'raza'; n: number; nombre: string; tier: string; ease: number; ficha: Record<string, string>;
   t1: Toma; t2: Toma; t3: Toma; t5?: Toma; t4: Toma; corral: Corral[]; tagAt: number; bt?: number};
 export type Seg = SegToma | SegRaza;
@@ -95,7 +115,7 @@ export const SegRazaC: React.FC<{s: SegRaza}> = ({s}) => {
       {tramos.map(([a, b, c], i) => (
         <Sequence key={'k' + i} from={a} durationInFrames={b - a}>
           <AbsoluteFill style={{clipPath: i === 0 && p < 1 ? puerta(p).clip : undefined}}>
-            <OffthreadVideo src={src(c.clip)} trimBefore={fr(c.ini ?? 0.2)} volume={0.32} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+            {c.img ? <FotoCorral c={c} dur={b - a} k={i} /> : <OffthreadVideo src={src(c.clip!)} trimBefore={fr(c.ini ?? 0.2)} volume={0.32} style={{width: '100%', height: '100%', objectFit: 'cover'}} />}
             {i === 0 && <Numero n={s.n} nombre={s.nombre} tier={s.tier} t={tC} dur={(o3 - fP) / FPS} />}
             {i === 0 && c.corte && <OffthreadVideo src={src(c.corte)} transparent trimBefore={fr(c.ini ?? 0.2)} muted style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover'}} />}
           </AbsoluteFill>
