@@ -37,7 +37,8 @@ export const EscMuestra: React.FC<{ src: string; fEsc: number; fAfuera?: number;
   const a = interpolate(f, [0, fA - 6], [0, 1], { ...CL, easing: io });
   const b = interpolate(f, [fA - 6, fA + 36], [0, 1], { ...CL, easing: io });
   const cx = lerp(lerp(1150, 790, a), 1080, b), cy = lerp(lerp(560, 520, a), 600, b) - 40 * Math.sin(a * Math.PI) * (1 - b);
-  const s = lerp(lerp(1.08, 1.55, a), 1.12, b) + 0.01 * (f / dur);
+  const s0 = lerp(lerp(1.08, 1.55, a), 1.12, b) + 0.01 * (f / dur);
+  const s = Math.max(s0, 960 / cx, 960 / (1920 - cx), 540 / cy, 540 / (1080 - cy));
   const foco = interpolate(f, [fEsc + 20, fEsc + 44], [0, 1], { ...CL, easing: io });
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#1c2414" }}>

@@ -170,8 +170,8 @@ const Caja: React.FC<{ n: number; title?: string; src: string; w: number; big?: 
       <div style={{ position: "absolute", left: w * 0.08, right: w * 0.08, top: h * 0.07, height: h * (title ? 0.6 : 0.86), overflow: "hidden", boxShadow: "0 4px 8px rgba(0,0,0,0.35)", border: `${Math.max(3, w * 0.01)}px solid #F4E9D2` }}>
         <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </div>
-      <div style={{ position: "absolute", left: w * 0.1, top: h * 0.1, width: w * 0.2, height: w * 0.2, borderRadius: "50%", background: M.paper, border: `${w * 0.012}px solid ${M.stamp}`, display: "flex", alignItems: "center", justifyContent: "center",
-        fontFamily: SERIF, fontSize: w * 0.12, color: M.stamp, boxShadow: "0 4px 6px rgba(0,0,0,0.35)" }}>{n}</div>
+      {n > 0 && <div style={{ position: "absolute", left: w * 0.1, top: h * 0.1, width: w * 0.2, height: w * 0.2, borderRadius: "50%", background: M.paper, border: `${w * 0.012}px solid ${M.stamp}`, display: "flex", alignItems: "center", justifyContent: "center",
+        fontFamily: SERIF, fontSize: w * 0.12, color: M.stamp, boxShadow: "0 4px 6px rgba(0,0,0,0.35)" }}>{n}</div>}
       {title && <div style={{ position: "absolute", left: w * 0.06, right: w * 0.06, top: h * 0.7, height: h * 0.27, display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center",
         fontFamily: SERIF, fontSize: big ? w * 0.075 : w * 0.085, lineHeight: 1.0, color: M.ink }}>{title}</div>}
     </div>
@@ -256,10 +256,10 @@ export const Caballete: React.FC<{ n: number; title: string; img: string; dur: n
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <div style={camC(lerp(900, 980, a), lerp(600, 500, a) - 30 * Math.sin(a * Math.PI), lerp(1.04, 1.14, a))}><Img src={staticFile(img)} style={FOTO} /></div>
-      <Sombra x={1600} y={1010} w={260} h={40} o={k} />
-      <div style={{ position: "absolute", left: 1600, top: 1010, transformOrigin: "0 0", transform: `translateY(${(1 - k) * -1300}px) rotate(${sw}deg)` }}>
+      <Sombra x={1480} y={1010} w={260} h={40} o={k} />
+      <div style={{ position: "absolute", left: 1480, top: 1010, transformOrigin: "0 0", transform: `translateY(${(1 - k) * -1300}px) rotate(${sw}deg)` }}>
         <div style={{ position: "absolute", left: -16, top: -560, width: 32, height: 570, borderRadius: 4, background: "linear-gradient(90deg, #8a5d35, #b07f4e 50%, #6e4626)", boxShadow: "8px 0 12px rgba(0,0,0,0.4)" }} />
-        <div style={{ position: "absolute", left: -380, top: -880, width: 720, padding: "34px 44px 40px", boxSizing: "border-box", ...WOODB, borderRadius: 10, boxShadow: "20px 28px 40px rgba(0,0,0,0.5), inset 0 -8px 0 rgba(0,0,0,0.22)" }}>
+        <div style={{ position: "absolute", left: -360, top: -700, width: 720, padding: "34px 44px 40px", boxSizing: "border-box", ...WOODB, borderRadius: 10, boxShadow: "20px 28px 40px rgba(0,0,0,0.5), inset 0 -8px 0 rgba(0,0,0,0.22)" }}>
           <div style={{ fontFamily: SERIF, fontSize: title.length > 22 ? 70 : 92, lineHeight: 1.02, color: "#FFF4DE", textShadow: "0 3px 0 rgba(0,0,0,0.35)" }}><span style={{ color: "#FFD08A" }}>{n} · </span>{title}</div>
         </div>
       </div>
@@ -406,10 +406,10 @@ export const PizarronMeses: React.FC<{ img: string; foot: string; dur: number }>
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <div style={camC(lerp(900, CAL.x + CAL.w / 2, a), lerp(560, CAL.y + CAL.h / 2 + 10, a), lerp(1.04, 2.2, a) + 0.08 * t)}>
         <Img src={staticFile(img)} style={FOTO} />
-        <div style={{ position: "absolute", left: CAL.x, top: CAL.y + 10, width: CAL.w, textAlign: "center", fontFamily: SERIF, fontSize: 30, color: M.ink, opacity: seg(f, 30, 40) }}>{foot.split("·")[0].trim()}</div>
+        <div style={{ position: "absolute", left: CAL.x, top: CAL.y + 10, width: CAL.w, textAlign: "center", fontFamily: SERIF, fontSize: 22, whiteSpace: "nowrap", color: M.ink, opacity: seg(f, 30, 40) }}>{foot.split("·")[0].trim()}</div>
         {MES.map((m, i) => {
           const col = i % 3, row = Math.floor(i / 3); const f0 = 36 + i * 4; const key = i % 3 === 0; const fk = 36 + 12 * 4 + 10 + (i / 3) * 12;
-          const x = CAL.x + col * cw, y = CAL.y + 60 + row * ch;
+          const x = CAL.x + col * cw, y = CAL.y + 66 + row * ch;
           return (
             <div key={i} style={{ position: "absolute", left: x, top: y, width: cw, height: ch, display: "flex", alignItems: "center", justifyContent: "center" }}>
               <div style={{ fontFamily: SERIF, fontSize: 30, color: key && f >= fk ? M.stamp : "#3a3028", WebkitMaskImage: `linear-gradient(90deg, #000 ${seg(f, f0, f0 + 6) * 100}%, transparent ${seg(f, f0, f0 + 6) * 100 + 5}%)` }}>{m}</div>
@@ -499,12 +499,12 @@ export const CTACaja: React.FC<{ img: string; next: string; nextImg: string; dur
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <div style={camC(lerp(980, 1060, t), lerp(560, 600, t) - 20 * Math.sin(t * Math.PI), lerp(1.04, 1.1, t))}>
         <Img src={staticFile(img)} style={FOTO} />
-        <Sombra x={1440} y={990} w={640} h={50} o={c} />
-        <div style={{ position: "absolute", left: 1130, top: 990 - 620 * 0.78 - 70, transform: `translateY(${(1 - c) * -1100}px) rotate(1deg)` }}>
-          <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 48, letterSpacing: 5, color: "#FFF4DE", textShadow: TXTSH, marginBottom: 14, textAlign: "center", width: 620 }}>EL QUE SIGUE</div>
-          <Caja n={0} title={next} src={nextImg} w={620} big />
+        <Sombra x={1340} y={990} w={580} h={50} o={c} />
+        <div style={{ position: "absolute", left: 1060, top: 990 - 560 * 0.78 - 70, transform: `translateY(${(1 - c) * -1100}px) rotate(1deg)` }}>
+          <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 48, letterSpacing: 5, color: "#FFF4DE", textShadow: TXTSH, marginBottom: 14, textAlign: "center", width: 560 }}>EL QUE SIGUE</div>
+          <Caja n={0} title={next} src={nextImg} w={560} big />
         </div>
-        <Atada x={430} y={560} t="SUSCRÍBETE" f0={34} len={150} size={84} />
+        <Atada x={600} y={560} t="SUSCRÍBETE" f0={34} len={150} size={84} />
       </div>
     </AbsoluteFill>
   );
