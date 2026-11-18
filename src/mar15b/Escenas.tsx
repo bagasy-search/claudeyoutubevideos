@@ -55,7 +55,7 @@ const SX = 195 / 300, SY = 380 / 510;
 export const Hall: React.FC<{ dur: number; fHall: number; fDoor: number }> = ({ dur, fHall, fDoor }) => {
   const f = useCurrentFrame();
   const cam = interpolate(f, [0, fHall, fDoor + 6, dur], [1.0, 1.06, 1.55, 1.6], { ...CL, easing: EASE });
-  const op = interpolate(f, [fHall - 6, fHall + 14, fDoor - 4, fDoor + 8], [0, 0.28, 0.4, 0.86], CL);
+  const op = interpolate(f, [fHall - 6, fHall + 14, fDoor - 4, fDoor + 8], [0, 0.22, 0.32, 0.55], CL);
   const bl = interpolate(f, [fHall, fDoor + 8], [3.5, 0], CL);
   return (
     <AbsoluteFill style={{ backgroundColor: "#16140f", overflow: "hidden" }}>
