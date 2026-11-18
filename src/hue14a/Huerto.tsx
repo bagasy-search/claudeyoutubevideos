@@ -29,7 +29,7 @@ const TABLE: React.CSSProperties = {
   backgroundImage: "repeating-linear-gradient(0deg, rgba(30,18,8,0.28) 0 2px, transparent 2px 120px), repeating-linear-gradient(0deg, rgba(255,220,170,0.05) 0 1px, transparent 1px 6px), linear-gradient(180deg, #74513a, #5a3d27)",
 };
 // mesa: foto real de una mesa de pino vista desde arriba (vuelta 3: el fondo dibujado se veía digital)
-const Mesa: React.FC = () => <Img src={staticFile("hue14a/mesa_tmp.png")} style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, objectFit: "cover" }} />;
+const Mesa: React.FC = () => <Img src={staticFile("hue14a/mesa.jpg")} style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, objectFit: "cover" }} />;
 const BURLAP: React.CSSProperties = {
   backgroundColor: "#A88653",
   backgroundImage: "repeating-linear-gradient(0deg, rgba(60,38,15,0.38) 0 3px, transparent 3px 7px), repeating-linear-gradient(90deg, rgba(60,38,15,0.32) 0 3px, transparent 3px 8px), linear-gradient(180deg, rgba(255,230,180,0.12), rgba(0,0,0,0.12))",
