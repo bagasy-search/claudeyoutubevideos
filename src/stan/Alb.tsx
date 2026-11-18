@@ -1,5 +1,5 @@
-// Kit del Albañil (alb14): cartel de triplay con tornillos, cinta de papel con plumón, cinta métrica, ticket de ferretería,
-// señal amarilla de obra, muestras de material hechas con DOM (ladrillo, block, azulejo, cantera, mármol, madera).
+// Kit de Doña Chayo (ch14): recetario de papel amarillento con tachuelas, cinta de papel escrita a mano, reloj de cocina, ticket del mercado,
+// libro «Las 5 Ollas» que se abre en su página. PURO CSS y DOM: sin SVG ni PNG de textura. Las fotos de fondo van enteras (Fondo del Kit).
 // PURO CSS y DOM: sin SVG, sin PNG de textura, sin blur. Las fotos de fondo van enteras y oscurecidas (Fondo del Kit).
 import React from "react";
 import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, Easing } from "remotion";
@@ -9,7 +9,7 @@ import { Photo, Fondo, CL } from "./Kit";
 
 const { fontFamily: BOLD } = loadBold("normal", { weights: ["600", "800", "900"], subsets: ["latin"] });
 const { fontFamily: HAND } = loadHand("normal", { weights: ["600", "700"], subsets: ["latin"] });
-export const CU = { cal: "#F3F6F8", masa: "#D6E4EE", maiz: "#FFC23A", azul: "#1F5A8C", chile: "#E8432E", tinta: "#0F1B2A", verde: "#3FAE7E", naranja: "#F07A1A", triplay: "#C9A472", triplay2: "#B48D5A", cinta: "#EFE6CF", gris: "#8E9399" };
+export const CU = { cal: "#F3F6F8", masa: "#D6E4EE", maiz: "#FFC23A", azul: "#1F5A8C", chile: "#E8432E", tinta: "#0F1B2A", verde: "#3FAE7E", naranja: "#F07A1A", triplay: "#EAD9A6", triplay2: "#DCC68C", cinta: "#F4EAD0", gris: "#8E9399" };
 const cl = (v: number, a = 0, b = 1) => Math.max(a, Math.min(b, v));
 const ease = Easing.out(Easing.cubic);
 const sp = (f: number, d = 0, damping = 14) => spring({ frame: f - d, fps: 30, config: { damping, mass: 0.8 } });
@@ -19,12 +19,12 @@ const SH = "0 30px 70px rgba(0,0,0,.55), 0 3px 8px rgba(0,0,0,.35)";
 
 // ---------- piezas
 const Tornillo: React.FC<{ x: string; y: string }> = ({ x, y }) => (
-  <div style={{ position: "absolute", left: x, top: y, width: 22, height: 22, borderRadius: "50%", background: "radial-gradient(circle at 35% 35%, #EEF0F2, #7D838A 70%)", boxShadow: "0 2px 3px rgba(0,0,0,.5)" }}>
+  <div style={{ position: "absolute", left: x, top: y, width: 22, height: 22, borderRadius: "50%", background: "radial-gradient(circle at 35% 35%, #FF8A7A, #A8261A 70%)", boxShadow: "0 2px 3px rgba(0,0,0,.5)" }}>
     <div style={{ position: "absolute", left: 4, right: 4, top: 10, height: 2, background: "#4A4F55", transform: "rotate(35deg)" }} />
   </div>
 );
 export const Triplay: React.FC<{ w: number; h?: number; style?: React.CSSProperties; children?: React.ReactNode }> = ({ w, h, style, children }) => (
-  <div style={{ position: "relative", width: w, height: h, borderRadius: 6, background: `repeating-linear-gradient(92deg, ${CU.triplay} 0 22px, #C29B66 22px 26px, ${CU.triplay} 26px 61px, ${CU.triplay2} 61px 64px), linear-gradient(180deg, #D3B07E, #B0874F)`, backgroundBlendMode: "multiply", boxShadow: SH, border: "3px solid #8C6A3E", ...style }}>
+  <div style={{ position: "relative", width: w, height: h, borderRadius: 6, background: `repeating-linear-gradient(180deg, transparent 0 46px, rgba(120,90,40,.16) 46px 48px), radial-gradient(ellipse at 30% 20%, #F3E6BC, ${CU.triplay2} 120%)`, backgroundBlendMode: "multiply", boxShadow: SH, border: "2px solid #B89A5A", ...style }}>
     <Tornillo x="18px" y="18px" /><Tornillo x="calc(100% - 40px)" y="18px" /><Tornillo x="18px" y="calc(100% - 40px)" /><Tornillo x="calc(100% - 40px)" y="calc(100% - 40px)" />
     {children}
   </div>
@@ -77,7 +77,7 @@ export const OVA: Record<number, any> = {
   1120: { botA: { x: 405, y: 200, t: "CLORO" }, botB: { x: 1590, y: 220, t: "VINAGRE" }, mid: { x: 1000, y: 560 } },
 };
 
-// ---------- (1) apertura de paso / regla / error / pregunta / frase de Don Lalo
+// ---------- (1) apertura de paso / regla / error / pregunta / frase de Doña Chayo
 export const PasoA: React.FC<{ kind: string; n?: number; N?: number; title: string; bg?: string; dur: number }> = ({ kind, n = 0, N = 9, title, bg, dur }) => {
   const f = useCurrentFrame(); const o = fade(f, dur); const k = sp(f, 0, 13), k2 = sp(f, 7, 15);
   let body: React.ReactNode;
@@ -87,7 +87,7 @@ export const PasoA: React.FC<{ kind: string; n?: number; N?: number; title: stri
         <div style={{ position: "absolute", left: 120, top: -600, width: 6, height: 600, background: "linear-gradient(90deg,#6B5A40,#CDB993,#6B5A40)" }} />
         <div style={{ position: "absolute", right: 120, top: -600, width: 6, height: 600, background: "linear-gradient(90deg,#6B5A40,#CDB993,#6B5A40)" }} />
         <Triplay w={1180} style={{ padding: "54px 70px 60px", textAlign: "center" }}>
-          <Big size={150}>PASO {n}</Big>
+          <Big size={150}>SECRETO {n}</Big>
           <div style={{ fontFamily: BOLD, fontWeight: 800, fontSize: 70, color: CU.tinta, marginTop: 22, opacity: k2, lineHeight: 1.1 }}>{title}</div>
         </Triplay>
       </div>
@@ -113,7 +113,7 @@ export const PasoA: React.FC<{ kind: string; n?: number; N?: number; title: stri
       <div style={{ maxWidth: 1350, padding: "50px 70px", background: "#FFFDF7", borderRadius: "46px 46px 46px 10px", boxShadow: SH, fontFamily: BOLD, fontWeight: 800, fontSize: title.length > 40 ? 64 : 80, color: CU.tinta, lineHeight: 1.15 }}>{title}</div>
     </div>);
   else body = (
-    <Cuaderno w={1300} rot={-2}><div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 88, color: "#22407A", lineHeight: "64px", paddingTop: 6 }}>{title}</div><div style={{ fontFamily: HAND, fontSize: 46, color: CU.chile, marginTop: 14 }}>— Don Lalo</div></Cuaderno>);
+    <Cuaderno w={1300} rot={-2}><div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 88, color: "#22407A", lineHeight: "64px", paddingTop: 6 }}>{title}</div><div style={{ fontFamily: HAND, fontSize: 46, color: CU.chile, marginTop: 14 }}>— Doña Chayo</div></Cuaderno>);
   return <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={n + 5} dur={dur} /><AbsoluteFill style={{ background: "rgba(10,14,20,.35)", alignItems: "center", justifyContent: "center" }}>{body}</AbsoluteFill></AbsoluteFill>;
 };
 
@@ -139,7 +139,7 @@ export const ListaA: React.FC<{ head: string; rows: { txt: string; mark?: string
   );
 };
 
-// ---------- (3) uno contra otro: la pantalla partida por una regla de albañil
+// ---------- (3) uno contra otro: la pantalla partida por una cuchara de palo
 export const DosA: React.FC<{ title?: string; a: { t: string; s?: string }; b: { t: string; s?: string }; fa: number; fb: number; srcA?: string; srcB?: string; colA?: string; colB?: string; dur: number }> = ({ title, a, b, fa, fb, srcA, srcB, colA = CU.maiz, colB = CU.cal, dur }) => {
   const f = useCurrentFrame(); const o = fade(f, dur); const cut = ease(cl(f / 14));
   const side = (x: { t: string; s?: string }, src: string | undefined, col: string, at: number, left: boolean) => (
@@ -264,7 +264,7 @@ export const MetroA: React.FC<{ big: string; sub?: string; bg?: string; dur: num
   );
 };
 
-// ---------- (9) ticket de ferretería que se imprime renglón por renglón (de costado, nunca encima de la persona)
+// ---------- (9) ticket del mercado que se imprime renglón por renglón (de costado, nunca encima de la persona)
 export const TicketA: React.FC<{ rows: { name: string; price: string; f: number }[]; total?: string; ft?: number; head?: string; bg?: string; dur: number; side?: string }> = ({ rows, total, ft = 999, head = "FERRETERÍA DE LA ESQUINA", bg, dur, side }) => {
   const f = useCurrentFrame(); const o = fade(f, dur); const last = Math.max(...rows.map((r) => r.f), total ? ft : 0);
   const shown = rows.filter((r) => f >= r.f).length + (total && f >= ft ? 1.5 : 0); const h = 190 + shown * 104; const W = side ? 820 : 900;
@@ -452,7 +452,7 @@ export const CorteA: React.FC<{ fa: number; fb: number; dur: number; bg?: string
   return <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={53} dur={dur} /><AbsoluteFill style={{ background: "rgba(10,14,20,.45)" }} />{pared(150, "pared SECA", false, fa)}{pared(1010, "pared MOJADA antes", true, fb)}</AbsoluteFill>;
 };
 
-// ---------- (16) el Manual del Albañil: el libro se abre en su página; o el código para llegar
+// ---------- (16) el libro Las 5 Ollas: el libro se abre en su página; o el código para llegar
 export const ManualA: React.FC<{ arreglo?: string; page?: string; lines: string[]; marks: number[]; qr?: string; bg?: string; dur: number }> = ({ arreglo, page, lines, marks, qr, bg, dur }) => {
   const f = useCurrentFrame(); const o = fade(f, dur); const op = ease(cl((f - 6) / 22));
   return (
@@ -467,10 +467,10 @@ export const ManualA: React.FC<{ arreglo?: string; page?: string; lines: string[
           </div>
           <div style={{ position: "absolute", left: 0, top: 0, width: 500, height: 680, background: "#F3EEE2", borderRadius: "10px 0 0 10px", boxShadow: SH }} />
           <div style={{ position: "absolute", left: 500, top: 0, width: 500, height: 680, transformOrigin: "0 50%", transform: `rotateY(${-180 * op}deg)`, transformStyle: "preserve-3d" }}>
-            <div style={{ position: "absolute", inset: 0, backfaceVisibility: "hidden", background: `linear-gradient(160deg, ${CU.azul}, #143E62)`, borderRadius: "4px 10px 10px 4px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 40, textAlign: "center" }}>
-              <div style={{ fontFamily: BOLD, fontWeight: 900, fontSize: 66, color: CU.maiz, lineHeight: 1.05 }}>MANUAL DEL ALBAÑIL</div>
+            <div style={{ position: "absolute", inset: 0, backfaceVisibility: "hidden", background: `linear-gradient(160deg, #8A2A18, #4E160C)`, borderRadius: "4px 10px 10px 4px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 40, textAlign: "center" }}>
+              <div style={{ fontFamily: BOLD, fontWeight: 900, fontSize: 66, color: CU.maiz, lineHeight: 1.05 }}>LAS 5 OLLAS DE DOÑA CHAYO</div>
               <div style={{ width: 140, height: 8, background: CU.naranja, margin: "26px 0" }} />
-              <div style={{ fontFamily: BOLD, fontWeight: 600, fontSize: 30, color: CU.masa }}>arreglos de la casa, paso a paso</div>
+              <div style={{ fontFamily: BOLD, fontWeight: 600, fontSize: 30, color: CU.masa }}>recetas del rancho, como en mi pueblo</div>
             </div>
             <div style={{ position: "absolute", inset: 0, backfaceVisibility: "hidden", transform: "rotateY(180deg)", background: "#F3EEE2", borderRadius: "10px 4px 4px 10px" }} />
           </div>
@@ -490,12 +490,12 @@ export const CtaA: React.FC<{ kind: string; lines: string[]; marks: number[]; bg
   if (kind === "sub") { const press = cl((f - 26) / 4) - cl((f - 32) / 6); const on = f >= 30;
     return <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={61} dur={dur} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", gap: 46 }}>
-        <div style={{ padding: "30px 80px", borderRadius: 20, background: on ? "#5A5550" : "#E2231A", fontFamily: BOLD, fontWeight: 900, fontSize: 84, color: "#fff", letterSpacing: 3, boxShadow: `0 ${20 - press * 14}px 0 ${on ? "#2E2B28" : "#8A120C"}, 0 34px 60px rgba(0,0,0,.5)`, transform: `translateY(${press * 14}px)` }}>{on ? "SUSCRITO ✓" : "SUSCRÍBETE"}</div>
+        <div style={{ padding: "30px 80px", borderRadius: 20, background: on ? "#5A5550" : "#E2231A", fontFamily: BOLD, fontWeight: 900, fontSize: 84, color: "#fff", letterSpacing: 3, boxShadow: `0 ${20 - press * 14}px 0 ${on ? "#2E2B28" : "#8A120C"}, 0 34px 60px rgba(0,0,0,.5)`, transform: `translateY(${press * 14}px)` }}>{on ? "SUSCRITO ✓" : "SUSCRÍBASE"}</div>
         <div style={{ opacity: cl((f - 36) / 8) }}><Cinta size={60}>{lines[0]}</Cinta></div>
       </AbsoluteFill></AbsoluteFill>; }
   return <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={67} dur={dur} />
     <AbsoluteFill style={{ alignItems: "center", justifyContent: "flex-start", paddingTop: 110, gap: 40 }}>
-      <div style={{ opacity: cl(f / 8), transform: `translateY(${(1 - sp(f, 0, 13)) * -60}px)` }}><Cinta size={86} rot={-2}>cuéntame en los comentarios</Cinta></div>
+      <div style={{ opacity: cl(f / 8), transform: `translateY(${(1 - sp(f, 0, 13)) * -60}px)` }}><Cinta size={86} rot={-2}>cuénteme en los comentarios</Cinta></div>
       {lines.map((l, i) => { const a = sp(f, marks[i], 12); return <div key={i} style={{ position: "relative", maxWidth: 1500, padding: "40px 70px", background: "#FFFDF7", borderRadius: 46, boxShadow: SH, fontFamily: BOLD, fontWeight: 900, fontSize: 88, color: CU.tinta, opacity: cl(a * 1.5), transform: `translateY(${(1 - a) * 160}px) scale(${0.7 + 0.3 * a})` }}>
         {l.split(" ").map((w, j) => <span key={j} style={{ color: /^[¿¡]?[A-ZÁÉÍÓÚÑ]{4,}[?!]?$/.test(w) ? CU.naranja : undefined }}>{w} </span>)}
         <div style={{ position: "absolute", left: 90, bottom: -40, width: 70, height: 50, background: "#FFFDF7", clipPath: "polygon(0 0, 100% 0, 10% 100%)" }} />
@@ -513,8 +513,8 @@ export const ProximoA: React.FC<{ title: string; src?: string; bg?: string; dur:
     </AbsoluteFill></AbsoluteFill>;
 };
 
-// ---------- overlay: PASO N DE 9 en hilada de ladrillos (sobre material, nunca sobre un componente)
-export const ProgA: React.FC<{ n: number; N: number; title: string; dur: number; unit?: string }> = ({ n, N, title, dur, unit = "PASO" }) => {
+// ---------- overlay: SECRETO N DE 12 en hilada de tejas (sobre material, nunca sobre un componente)
+export const ProgA: React.FC<{ n: number; N: number; title: string; dur: number; unit?: string }> = ({ n, N, title, dur, unit = "SECRETO" }) => {
   const f = useCurrentFrame(); const o = interpolate(f, [0, 8, dur - 8, dur], [0, 1, 1, 0], CL);
   return <div style={{ position: "absolute", right: 50, top: 40, opacity: o, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 10 }}>
     <div style={{ fontFamily: BOLD, fontWeight: 800, fontSize: 24, letterSpacing: 3, color: "#FFF8EA", textShadow: "0 2px 10px rgba(0,0,0,.8)" }}>{unit} {n} DE {N} · {title.toUpperCase()}</div>
