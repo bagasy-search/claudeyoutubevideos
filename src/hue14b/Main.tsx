@@ -55,6 +55,9 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
   }
 };
 
+// componentes: sin fundido (fantasma de la toma anterior); entran con su propio movimiento
+const tr = (s: any) => (s && ((s.k === "C" && s.trans === "fade") || s.trans === "seda") ? "cut" : s?.trans || "cut");
+
 export const MainHue14b: React.FC = () => (
   <AbsoluteFill style={{ background: K.M.ink }}>
     {AVATAR.map((a, i) => (
@@ -65,10 +68,10 @@ export const MainHue14b: React.FC = () => (
     {SHOTS.map((s, i) => {
       if (s.k === "A") return null;
       const nx = SHOTS[i + 1];
-      const tail = nx && nx.k !== "A" && nx.trans && nx.trans !== "cut" ? T + 2 : 0;
+      const tail = nx && nx.k !== "A" && tr(nx) !== "cut" ? T + 2 : 0;
       return (
         <Sequence key={"s" + s.id} from={s.from} durationInFrames={Math.min(s.dur + tail, TOTAL - s.from)} premountFor={45}>
-          <Enter trans={s.trans || "cut"} seed={s.id}><ShotBody s={s} dur={s.dur} /></Enter>
+          <Enter trans={tr(s)} seed={s.id}><ShotBody s={s} dur={s.dur} /></Enter>
         </Sequence>
       );
     })}
