@@ -12,7 +12,7 @@ const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   if (s.album) return <Q.Album src={s.src} under={s.under} seed={s.id + 1} dur={dur} />; // foto antigua como objeto
   if (s.k === "C" && s.comp === "recap") return <Q.RecapGrid items={s.items} cards={CARDS} bg={s.bgv || s.bg} dur={dur} />;
   if (s.veo) return <P.Clip src={s.veo} seed={s.id + 1} dur={dur} clipDur={s.veoDur} minRate={0.42} />; // foto animada con Veo (primer cuadro)
-  if (s.k === "Y") return <P.Clip src={s.src} seed={s.id + 1} dur={dur} clipDur={s.clipDur} minRate={s.minRate} />;
+  if (s.k === "Y") return <P.Clip src={s.src} seed={s.id + 1} dur={dur} clipDur={s.clipDur} minRate={s.minRate} skip={s.skip} />;
   if (s.k === "W" || s.k === "G") return <P.Photo src={s.src} seed={s.id + 1} dur={dur} />;
   if (s.k === "C" && s.comp === "shopping") return <P.Shopping items={s.items} bg={s.bg} dur={dur} />;
   if (s.k === "C" && s.comp === "recap") return <P.Recap items={s.items} bg={s.bg} dur={dur} />;
