@@ -52,7 +52,7 @@ cme14d/y/y1520.mp4
 cme14d/y/y1530.mp4
 cme14d/y/y1550.mp4
 cme14d/y/y1570.mp4
-cme14d/y/y1590.mp4
+cme14d/g/g1590.png
 cme14d/y/y1600.mp4
 cme14d/y/y1610.mp4
 cme14d/y/y1650.mp4
