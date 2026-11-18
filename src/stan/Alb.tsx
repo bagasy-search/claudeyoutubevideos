@@ -69,16 +69,10 @@ export const FotoFija: React.FC<{ src?: string; cam?: Cam; tint?: number; childr
   </AbsoluteFill>;
 };
 // overrides por plano (coordenadas leídas con la rejilla sobre la foto de ese plano)
-export const OVA: Record<number, any> = {
-  110: { label: { x: 745, y: 732, w: 92, h: 84 }, cam: { x: 792, y: 770, s: 3.1, a: 0, b: 60 } },
-  720: { at: { x: 1200, y: 716 }, tip: { x: 1197, y: 664 }, cam: { x: 1200, y: 700, s: 3.2, a: 0, b: 175 } },
-  940: { tape: { x0: 60, x1: 1120, y: 940, up: 560 } },
-  1080: { side: "right" },
-  1120: { botA: { x: 405, y: 200, t: "CLORO" }, botB: { x: 1590, y: 220, t: "VINAGRE" }, mid: { x: 1000, y: 560 } },
-};
+export const OVA: Record<number, any> = {}; // ajustes por toma: vacíos en alb14c (los de alb14a eran de sus fotos)
 
 // ---------- (1) apertura de paso / regla / error / pregunta / frase de Don Lalo
-export const PasoA: React.FC<{ kind: string; n?: number; N?: number; title: string; bg?: string; dur: number }> = ({ kind, n = 0, N = 9, title, bg, dur }) => {
+export const PasoA: React.FC<{ kind: string; n?: number; N?: number; title: string; bg?: string; dur: number; label?: string }> = ({ kind, n = 0, N = 9, title, bg, dur, label }) => {
   const f = useCurrentFrame(); const o = fade(f, dur); const k = sp(f, 0, 13), k2 = sp(f, 7, 15);
   let body: React.ReactNode;
   if (kind === "paso") body = (
@@ -87,12 +81,38 @@ export const PasoA: React.FC<{ kind: string; n?: number; N?: number; title: stri
         <div style={{ position: "absolute", left: 120, top: -600, width: 6, height: 600, background: "linear-gradient(90deg,#6B5A40,#CDB993,#6B5A40)" }} />
         <div style={{ position: "absolute", right: 120, top: -600, width: 6, height: 600, background: "linear-gradient(90deg,#6B5A40,#CDB993,#6B5A40)" }} />
         <Triplay w={1180} style={{ padding: "54px 70px 60px", textAlign: "center" }}>
-          <Big size={150}>PASO {n}</Big>
+          <Big size={150}>{label || "PASO"} {n}</Big>
           <div style={{ fontFamily: BOLD, fontWeight: 800, fontSize: 70, color: CU.tinta, marginTop: 22, opacity: k2, lineHeight: 1.1 }}>{title}</div>
         </Triplay>
       </div>
       <div style={{ opacity: k2 }}><Hilada n={n} N={N} f={f} /></div>
     </div>);
+  else if (kind === "camino") body = (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 30, transform: `translateX(${(1 - k) * 900}px)` }}>
+      <Triplay w={1120} style={{ padding: "44px 64px 50px", textAlign: "center" }}>
+        <div style={{ fontFamily: BOLD, fontWeight: 900, fontSize: 60, color: CU.chile, letterSpacing: 10 }}>CAMINO {n} DE {N}</div>
+        <div style={{ fontFamily: BOLD, fontWeight: 800, fontSize: title.length > 24 ? 74 : 92, color: CU.tinta, marginTop: 16, opacity: k2, lineHeight: 1.08 }}>{title}</div>
+      </Triplay>
+    </div>);
+  else if (kind === "zona") body = (
+    <div style={{ display: "flex", alignItems: "center", gap: 46, transform: `translateY(${(1 - k) * 120}px)`, opacity: cl(k * 1.4) }}>
+      <div style={{ display: "flex", flexDirection: "column-reverse", gap: 10 }}>
+        {Array.from({ length: N }, (_, i) => <div key={i} style={{ width: 150, height: 54, borderRadius: 8, background: i + 1 === n ? "#3D7BD9" : "rgba(255,255,255,.18)", border: "4px solid rgba(255,255,255,.75)", fontFamily: BOLD, fontWeight: 900, fontSize: 34, color: "#fff", textAlign: "center", lineHeight: "46px" }}>{i + 1}</div>)}
+      </div>
+      <Triplay w={1000} style={{ padding: "40px 56px 46px" }}>
+        <div style={{ fontFamily: BOLD, fontWeight: 900, fontSize: 56, color: "#2A5DB0", letterSpacing: 8 }}>ZONA {n} DE {N}</div>
+        <div style={{ fontFamily: BOLD, fontWeight: 800, fontSize: 76, color: CU.tinta, marginTop: 14, opacity: k2, lineHeight: 1.1 }}>{title}</div>
+      </Triplay>
+    </div>);
+  else if (kind === "grieta") { const w = ease(cl((f - 4) / 16)); body = (
+    <div style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center", gap: 30 }}>
+      <div style={{ opacity: cl(k * 1.4), transform: `translateY(${(1 - k) * -60}px)` }}><Cinta size={58} rot={-2}>Grieta {n} de {N}</Cinta></div>
+      <div style={{ position: "relative", padding: "10px 40px" }}>
+        <Big size={title.length > 18 ? 110 : 140} col={CU.cal} edge="#2A2118" style={{ transform: `scale(${0.86 + 0.14 * k2})`, opacity: k2 }}>{title}</Big>
+        <div style={{ position: "absolute", left: 0, top: "52%", height: 14, width: `${100 * w}%`, background: "#1A140E", clipPath: "polygon(0 40%,8% 10%,15% 70%,24% 20%,31% 85%,40% 30%,47% 75%,55% 15%,63% 80%,71% 25%,79% 70%,86% 20%,93% 65%,100% 35%,100% 55%,93% 90%,86% 45%,79% 95%,71% 50%,63% 100%,55% 40%,47% 100%,40% 55%,31% 100%,24% 45%,15% 95%,8% 35%,0 65%)", opacity: 0.55, mixBlendMode: "multiply" }} />
+      </div>
+      <div style={{ opacity: k2 }}><Hilada n={n} N={N} f={f} /></div>
+    </div>); }
   else if (kind === "regla") body = (
     <div style={{ transform: `scale(${0.7 + 0.3 * k}) rotate(${(1 - k) * -8}deg)`, width: 1240, background: CU.maiz, border: "16px solid #111", borderRadius: 26, boxShadow: SH, overflow: "hidden" }}>
       <div style={{ height: 70, background: "repeating-linear-gradient(-45deg, #111 0 44px, #FFC23A 44px 88px)" }} />
