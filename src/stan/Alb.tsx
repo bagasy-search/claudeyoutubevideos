@@ -13,7 +13,7 @@ export const CU = { cal: "#F3F6F8", masa: "#D6E4EE", maiz: "#FFC23A", azul: "#1F
 const cl = (v: number, a = 0, b = 1) => Math.max(a, Math.min(b, v));
 const ease = Easing.out(Easing.cubic);
 const sp = (f: number, d = 0, damping = 14) => spring({ frame: f - d, fps: 30, config: { damping, mass: 0.8 } });
-const fade = (f: number, dur: number, n = 9) => interpolate(f, [0, 6, dur - n, dur], [0, 1, 1, 0], CL);
+const fade = (f: number, dur: number, n = 9) => { const a = Math.min(6, dur / 3), b = Math.max(a + 0.01, dur - Math.min(n, dur / 3)); return interpolate(f, [0, a, b, Math.max(b + 0.01, dur)], [0, 1, 1, 0], CL); };
 export const extrude = (n: number, col: string) => Array.from({ length: n }, (_, i) => `${(i + 1) * 0.6}px ${i + 1}px 0 ${col}`).join(", ") + `, ${n * 0.6 + 6}px ${n + 16}px 30px rgba(0,0,0,.6)`;
 const SH = "0 30px 70px rgba(0,0,0,.55), 0 3px 8px rgba(0,0,0,.35)";
 
