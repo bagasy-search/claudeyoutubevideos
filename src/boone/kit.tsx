@@ -80,7 +80,7 @@ export const Numero: React.FC<{n: number; nombre: string; tier: string; t: numbe
   return (
     <div style={{position: 'absolute', left: 90, top: 70, opacity: op, transform: `translateY(${sub}px)`}}>
       <div style={{display: 'flex', alignItems: 'center', gap: 22, marginBottom: 26}}>
-        <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 30, color: '#fff', background: TIER_COL[tier], borderRadius: 8, padding: '6px 14px', letterSpacing: 3}}>{tier}</div>
+        {tier && TIER_COL[tier] && <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 30, color: '#fff', background: TIER_COL[tier], borderRadius: 8, padding: '6px 14px', letterSpacing: 3}}>{tier}</div>}
         <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 40, letterSpacing: 9, color: OCRE, fontVariant: 'small-caps', textTransform: 'uppercase', maxWidth: 1100}}>{nombre}</div>
       </div>
       <div style={{fontFamily: SERIF_I, fontSize: 560, lineHeight: 0.8, color: TINTA, opacity: 0.9, letterSpacing: -10}}>{n}</div>
