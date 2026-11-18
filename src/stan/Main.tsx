@@ -97,7 +97,7 @@ const Enter: React.FC<{ trans: string; children: React.ReactNode; seed: number }
 const Overlay: React.FC<{ o: any }> = ({ o }) => {
   switch (o.type) {
     case "price": return <K.Price text={o.text} dur={o.dur} />;
-    case "progress": return <A.ProgA n={o.n} N={o.N} title={o.title} dur={o.dur} unit={o.unit} />;
+    case "progress": return null; // rótulo de esquina: ilegible en celular y el creador no los quiere (EVALUADOR v2)
     case "pregunta": return <K.Pregunta text={o.text} dur={o.dur} />;
     default: return null;
   }

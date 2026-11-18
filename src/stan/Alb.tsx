@@ -85,7 +85,7 @@ export const PasoA: React.FC<{ kind: string; n?: number; N?: number; title: stri
           <div style={{ fontFamily: BOLD, fontWeight: 800, fontSize: 70, color: CU.tinta, marginTop: 22, opacity: k2, lineHeight: 1.1 }}>{title}</div>
         </Triplay>
       </div>
-      <div style={{ opacity: k2 }}><Hilada n={n} N={N} f={f} /></div>
+      <div style={{ opacity: k2 }}><Hilada n={n} N={N} f={f} w={N > 8 ? 104 : 124} /></div>
     </div>);
   else if (kind === "camino") body = (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 30, transform: `translateX(${(1 - k) * 900}px)` }}>
@@ -111,7 +111,7 @@ export const PasoA: React.FC<{ kind: string; n?: number; N?: number; title: stri
         <Big size={title.length > 18 ? 110 : 140} col={CU.cal} edge="#2A2118" style={{ transform: `scale(${0.86 + 0.14 * k2})`, opacity: k2 }}>{title}</Big>
         <div style={{ position: "absolute", left: 0, top: "52%", height: 14, width: `${100 * w}%`, background: "#1A140E", clipPath: "polygon(0 40%,8% 10%,15% 70%,24% 20%,31% 85%,40% 30%,47% 75%,55% 15%,63% 80%,71% 25%,79% 70%,86% 20%,93% 65%,100% 35%,100% 55%,93% 90%,86% 45%,79% 95%,71% 50%,63% 100%,55% 40%,47% 100%,40% 55%,31% 100%,24% 45%,15% 95%,8% 35%,0 65%)", opacity: 0.55, mixBlendMode: "multiply" }} />
       </div>
-      <div style={{ opacity: k2 }}><Hilada n={n} N={N} f={f} /></div>
+      <div style={{ opacity: k2 }}><Hilada n={n} N={N} f={f} w={N > 8 ? 104 : 124} /></div>
     </div>); }
   else if (kind === "regla") body = (
     <div style={{ transform: `scale(${0.7 + 0.3 * k}) rotate(${(1 - k) * -8}deg)`, width: 1240, background: CU.maiz, border: "16px solid #111", borderRadius: 26, boxShadow: SH, overflow: "hidden" }}>
@@ -201,13 +201,13 @@ export const CadenaA: React.FC<{ steps: string[]; marks: number[]; bg?: string; 
   let cur = 0; for (let i = 0; i < n; i++) if (f >= M[i]) cur = i;
   const txt = (i: number) => { const a = sp(f, M[i], 13); const out = i < cur ? cl((f - M[i + 1]) / 8) : 0;
     return <div key={i} style={{ position: "absolute", left: 0, right: 0, top: 0, opacity: cl(a * 1.5) * (1 - out), transform: `translateY(${(1 - a) * 70 - out * 60}px)` }}>
-      <div style={{ fontFamily: BOLD, fontWeight: 900, fontSize: 52, letterSpacing: 6, color: CU.maiz, textShadow: "0 3px 10px #000" }}>{i + 1} DE {n}</div>
-      <Big size={steps[i].length > 22 ? 84 : 112} col={CU.cal} edge="#111" style={{ whiteSpace: "normal", lineHeight: 1.05, marginTop: 10 }}>{steps[i]}</Big>
+      <div style={{ fontFamily: BOLD, fontWeight: 900, fontSize: 66, letterSpacing: 6, color: CU.maiz, textShadow: "0 3px 10px #000" }}>{i + 1} DE {n}</div>
+      <Big size={steps[i].length > 22 ? 98 : 132} col={CU.cal} edge="#111" style={{ whiteSpace: "normal", lineHeight: 1.05, marginTop: 10 }}>{steps[i]}</Big>
     </div>; };
   if (!loop) return (
     <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={13} dur={dur} /><AbsoluteFill style={{ background: "radial-gradient(ellipse 900px 420px at 50% 50%, rgba(0,0,0,.5), transparent)" }} />
       <div style={{ position: "absolute", left: 160, right: 160, top: 400, height: 300, textAlign: "center" }}>{steps.map((_, i) => (i === cur || i === cur - 1) && f >= M[i] ? txt(i) : null)}</div>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 800, display: "flex", justifyContent: "center", gap: 26 }}>{steps.map((_, i) => <div key={i} style={{ width: 120, height: 14, borderRadius: 7, background: f >= M[i] ? CU.maiz : "rgba(255,255,255,.25)", boxShadow: "0 2px 8px rgba(0,0,0,.6)" }} />)}</div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 800, display: "flex", justifyContent: "center", gap: 26 }}>{steps.map((_, i) => <div key={i} style={{ width: 210, height: 28, borderRadius: 14, background: f >= M[i] ? CU.maiz : "rgba(255,255,255,.25)", boxShadow: "0 2px 8px rgba(0,0,0,.6)" }} />)}</div>
     </AbsoluteFill>);
   // sobre la pared real: la humedad sube desde el piso (pasos 1-2), se seca (3) y la sal de la foto se enciende blanca (4)
   const st = (i: number) => (i < n && f >= M[i] ? ease(cl((f - M[i]) / 24)) : 0);
@@ -372,7 +372,7 @@ export const RelojA: React.FC<{ big: string; sweep?: number; chips?: { t: string
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "row", gap: 110 }}>
         <div style={{ position: "relative", width: 560, height: 560, borderRadius: "50%", background: `conic-gradient(${c ? (c.ok ? "rgba(63,174,126,.92)" : "rgba(232,67,46,.9)") : "rgba(240,122,26,.9)"} 0 ${a}deg, #FFFDF7 ${a}deg 360deg)`, border: "24px solid #E9EDF0", boxShadow: SH, transform: `scale(${0.6 + 0.4 * k})`, opacity: cl(k * 1.5) }}>
           {Array.from({ length: 12 }, (_, i) => <div key={i} style={{ position: "absolute", left: 252, top: 6, width: 8, height: 34, background: CU.tinta, transformOrigin: "4px 250px", transform: `rotate(${i * 30}deg)` }} />)}
-          {[0, 15, 30, 45].map((m, i) => <div key={m} style={{ position: "absolute", left: 256 + Math.sin((i * Math.PI) / 2) * 190 - 40, top: 256 - Math.cos((i * Math.PI) / 2) * 190 - 26, width: 80, textAlign: "center", fontFamily: BOLD, fontWeight: 800, fontSize: 40, color: CU.tinta }}>{m}</div>)}
+          {(cs.length || /min/i.test(big) ? [0, 15, 30, 45] : []).map((m, i) => <div key={m} style={{ position: "absolute", left: 256 + Math.sin((i * Math.PI) / 2) * 190 - 40, top: 256 - Math.cos((i * Math.PI) / 2) * 190 - 26, width: 80, textAlign: "center", fontFamily: BOLD, fontWeight: 800, fontSize: 40, color: CU.tinta }}>{m}</div>)}
           <div style={{ position: "absolute", left: 248, top: 50, width: 16, height: 228, background: CU.tinta, borderRadius: 8, transformOrigin: "8px 206px", transform: `rotate(${a}deg)` }} />
           <div style={{ position: "absolute", left: 236, top: 236, width: 40, height: 40, borderRadius: "50%", background: CU.chile }} />
         </div>
