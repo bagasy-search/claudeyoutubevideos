@@ -45,7 +45,7 @@ const ORDEN = (() => {
   const chicas = idx.filter((i) => GOTAS[i][2] < 16).sort((a, b) => rnd(a) - rnd(b)).slice(0, 40);
   const resto = idx.filter((i) => !chicas.includes(i)).sort((a, b) => GOTAS[a][2] - GOTAS[b][2] || rnd(a) - rnd(b));
   const t: number[] = new Array(GOTAS.length);
-  chicas.forEach((i, k) => (t[i] = 18 + Math.round((k / 40) * 117)));
+  chicas.forEach((i, k) => (t[i] = 3 + Math.round((k / 40) * 90)));
   resto.forEach((i, k) => (t[i] = 290 + Math.round((k / Math.max(1, resto.length - 1)) * 75)));
   return t;
 })();
@@ -57,7 +57,7 @@ export const EscGotasNacen: React.FC<{ src: string; dur: number }> = ({ src, dur
     <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
       <div style={mundo(c)}>
         <Foto src={src} style={{ filter: "blur(36px) brightness(1.05) contrast(0.9)", transform: "scale(1.08)" }} />
-        <Foto src={src} style={{ opacity: lerp(f, [362, dur - 4], [0, 1]) }} />
+        <Foto src={src} style={{ opacity: lerp(f, [0, 60, 362, dur - 4], [0.18, 0.28, 0.4, 1]) }} />
         {GOTAS.map(([x, y, r], i) => {
           const t0 = ORDEN[i];
           if (f < t0) return null;
