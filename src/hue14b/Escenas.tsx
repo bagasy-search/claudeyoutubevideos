@@ -46,23 +46,7 @@ export const EscMuestra: React.FC<{ src: string; fEsc: number; fAfuera?: number;
         <Img src={sf(src)} style={FULL} />
         {foco > 0 && <div style={{ position: "absolute", left: FRUTA.x - 260, top: FRUTA.y - 260, width: 520, height: 520, borderRadius: "50%", opacity: foco * 0.9,
           background: "radial-gradient(circle, rgba(255,214,140,0.42) 0%, rgba(255,200,120,0.18) 45%, rgba(255,200,120,0) 72%)", mixBlendMode: "screen" }} />}
-        {AFUERA.map((p, i) => {
-          const f0 = fA + i * 8; if (f < f0) return null;
-          const dx = p.x - FRUTA.x, dy = p.y - FRUTA.y, L = Math.hypot(dx, dy), ang = (Math.atan2(dy, dx) * 180) / Math.PI;
-          const k = interpolate(f, [f0, f0 + 12], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) });
-          const nudo = spring({ frame: f - f0 - 12, fps: 30, config: { damping: 8, stiffness: 200, mass: 0.8 } });
-          const vib = f > f0 + 12 ? Math.exp(-(f - f0 - 12) / 8) * Math.sin((f - f0) * 1.9) * 3 : 0;
-          return (
-            <React.Fragment key={i}>
-              <div style={{ position: "absolute", left: FRUTA.x, top: FRUTA.y - 5, width: L * k, height: 10, transformOrigin: "0 50%", transform: `rotate(${ang}deg) translateY(${vib}px)`,
-                backgroundImage: CANAMO, borderRadius: 5, boxShadow: "0 6px 6px rgba(0,0,0,0.4)" }} />
-              {f >= f0 + 12 && <div style={{ position: "absolute", left: p.x - 20, top: p.y - 16, width: 40, height: 32, borderRadius: "45% 55% 50% 50%", transform: `scale(${nudo}) rotate(${ang}deg)`,
-                backgroundImage: CANAMO, boxShadow: "0 5px 6px rgba(0,0,0,0.5)" }} />}
-            </React.Fragment>
-          );
-        })}
-        {f >= fA && <div style={{ position: "absolute", left: FRUTA.x - 22, top: FRUTA.y - 18, width: 44, height: 36, borderRadius: "50%", backgroundImage: CANAMO, boxShadow: "0 5px 6px rgba(0,0,0,0.5)" }} />}
-        <Colgada x={FRUTA.x} y={FRUTA.y + FRUTA.r - 6} t="la que manda" f0={fManda - 4} len={70} size={56} />
+        <Colgada x={1060} y={330} t="la que manda" f0={fManda - 4} len={50} size={60} />
       </AbsoluteFill>
     </AbsoluteFill>
   );
@@ -91,8 +75,6 @@ export const EscRiego: React.FC<{ src: string; f3: number; f5: number; fHondo: n
     <AbsoluteFill style={{ overflow: "hidden", background: "#2a2218" }}>
       <AbsoluteFill style={{ transformOrigin: "0 0", transform: `translate(${960 - cx * s}px, ${540 - cy * s}px) scale(${s})` }}>
         <Img src={sf(src)} style={FULL} />
-        {moj > 0 && <div style={{ position: "absolute", inset: 0, clipPath: clip, background: "linear-gradient(180deg, rgba(70,42,20,0.62), rgba(60,36,18,0.5))", mixBlendMode: "multiply" }} />}
-        {moj > 0 && <Img src={sf(src)} style={{ ...FULL, clipPath: `polygon(${RX}px 71px, ${RX + RW}px 71px, ${RX + RW}px ${BASE + 6}px, ${RX}px ${BASE + 6}px)` }} />}
         {f >= f3 - 2 && (
           <>
             <div style={{ position: "absolute", left: RX - 4, top: yLiga - 7, width: RW + 8, height: 14, borderRadius: 6, background: "linear-gradient(180deg, #E0503A, #9E2414 70%, #6E150B)", boxShadow: "0 6px 6px rgba(0,0,0,0.45)" }} />
