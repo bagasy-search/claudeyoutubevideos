@@ -168,14 +168,14 @@ export const DosA: React.FC<{ title?: string; a: { t: string; s?: string }; b: {
       <AbsoluteFill style={{ background: `rgba(8,12,18,${0.32 + 0.18 * cl((f - at) / 8)})` }} />
       <AbsoluteFill style={{ background: "radial-gradient(ellipse 420px 300px at 50% 50%, rgba(0,0,0,.55), transparent)", opacity: cl((f - at) / 8) }} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", padding: 60, textAlign: "center", opacity: cl((f - at) / 8), transform: `translateY(${(1 - sp(f, at, 14)) * 40}px)` }}>
-        <Big size={x.t.length > 10 ? 110 : 160} col={col} edge="#111" style={{ transform: `scale(${0.6 + 0.4 * sp(f, at, 10)})` }}>{x.t}</Big>
+        <Big size={x.t.length > 10 ? 92 : x.t.length > 6 ? 116 : 160} col={col} edge="#111" style={{ transform: `scale(${0.6 + 0.4 * sp(f, at, 10)})` }}>{x.t}</Big>
         {x.s ? <div style={{ marginTop: 34, opacity: cl((f - at - 10) / 8), transform: `translateY(${(1 - sp(f, at + 10, 14)) * 30}px)` }}><Cinta size={86}>{x.s}</Cinta></div> : null}
       </AbsoluteFill>
     </div>);
   return (
     <AbsoluteFill style={{ opacity: o, background: "#111" }}>
       {side(a, srcA, colA, fa, true)}{side(b, srcB, colB, fb, false)}
-      <div style={{ position: "absolute", left: 948, top: 0, width: 24, height: 1080 * cut, background: "linear-gradient(90deg,#9BA3AB,#E9EDF0 45%,#7F878F)", boxShadow: "0 0 18px rgba(0,0,0,.6)" }} />
+      <div style={{ position: "absolute", left: 948, top: title ? 150 : 0, width: 24, height: (title ? 930 : 1080) * cut, background: "linear-gradient(90deg,#9BA3AB,#E9EDF0 45%,#7F878F)", boxShadow: "0 0 18px rgba(0,0,0,.6)" }} />
       {title ? <div style={{ position: "absolute", top: 60, left: 0, right: 0, textAlign: "center" }}><Cinta size={64} rot={1}>{title}</Cinta></div> : null}
     </AbsoluteFill>
   );
@@ -232,7 +232,7 @@ export const PalabraA: React.FC<{ word: string; sub?: string; sub2?: string; bg?
   return (
     <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={17} dur={dur} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", gap: 36, padding: 80, textAlign: "center" }}>
-        <Big size={word.length > 18 ? 110 : 150} col={col} edge="#111" style={{ clipPath: `inset(-40px ${100 - a * 100}% -40px -40px)` }}>{word}</Big>
+        <Big size={word.length > 26 ? 104 : word.length > 16 ? 124 : 150} col={col} edge="#111" style={{ whiteSpace: "normal", maxWidth: 1620, lineHeight: 1.08, clipPath: `inset(-40px ${100 - a * 100}% -40px -40px)` }}>{word}</Big>
         {sub ? <div style={{ opacity: cl((f - 14) / 8) }}><Cinta size={60}>{sub}</Cinta></div> : null}
         {sub2 ? <div style={{ opacity: cl((f - 26) / 8) }}><Cinta size={52} rot={1.5}>{sub2}</Cinta></div> : null}
       </AbsoluteFill>
@@ -287,15 +287,15 @@ export const MetroA: React.FC<{ big: string; sub?: string; bg?: string; dur: num
 // ---------- (9) ticket de ferretería que se imprime renglón por renglón (de costado, nunca encima de la persona)
 export const TicketA: React.FC<{ rows: { name: string; price: string; f: number }[]; total?: string; ft?: number; head?: string; bg?: string; dur: number; side?: string }> = ({ rows, total, ft = 999, head = "FERRETERÍA DE LA ESQUINA", bg, dur, side }) => {
   const f = useCurrentFrame(); const o = fade(f, dur); const last = Math.max(...rows.map((r) => r.f), total ? ft : 0);
-  const shown = rows.filter((r) => f >= r.f).length + (total && f >= ft ? 1.5 : 0); const h = 190 + shown * 104; const W = side ? 820 : 900;
+  const L = Math.max(...rows.map((r) => r.name.length + r.price.length)); const fsz = L > 28 ? 32 : L > 22 ? 38 : side ? 40 : 46; const h = 190 + rows.reduce((s, r) => s + 104 * ease(cl((f - r.f + 2) / 7)), 0) + (total ? 156 * ease(cl((f - ft + 2) / 7)) : 0); const W = side ? 860 : 980;
   const k = sp(f, 0, 15); const teeth = Array.from({ length: 34 }, (_, i) => `${(i * 100) / 33}% ${i % 2 ? "100%" : "calc(100% - 10px)"}`).reverse().join(", ");
   return (
     <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={29} dur={dur} />
       <div style={{ position: "absolute", top: 90, left: side === "right" ? 1920 - W - 30 : side === "left" ? 50 : 960 - W / 2, width: W, opacity: cl(k * 1.6), transform: `translateY(${(1 - k) * -70}px) rotate(${side ? 1.5 : -1}deg)` }}>
-        <div style={{ height: interpolate(f, [0, last + 10], [170, h], CL), overflow: "hidden", background: "#FBFBF7", boxShadow: SH, padding: "30px 40px", fontFamily: "'Courier New', monospace", color: "#222", clipPath: `polygon(0 0, 100% 0, ${teeth})` }}>
+        <div style={{ height: Math.max(170, h), overflow: "hidden", background: "#FBFBF7", boxShadow: SH, padding: "30px 40px", fontFamily: "'Courier New', monospace", color: "#222", clipPath: `polygon(0 0, 100% 0, ${teeth})` }}>
           <div style={{ textAlign: "center", fontSize: 36, fontWeight: 700, letterSpacing: 2 }}>{head}</div>
           <div style={{ borderBottom: "3px dashed #999", margin: "14px 0 16px" }} />
-          {rows.map((r, i) => f >= r.f ? <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 20, fontSize: side ? 40 : 46, whiteSpace: "nowrap", fontWeight: 700, minHeight: 104, alignItems: "center", lineHeight: 1.05, opacity: cl((f - r.f) / 5) }}><span>{r.name}</span><span style={{ whiteSpace: "nowrap" }}>{r.price}</span></div> : null)}
+          {rows.map((r, i) => f >= r.f ? <div key={i} style={{ display: "flex", justifyContent: "space-between", gap: 20, fontSize: fsz, whiteSpace: "nowrap", fontWeight: 700, minHeight: 104, alignItems: "center", lineHeight: 1.05, opacity: cl((f - r.f) / 5) }}><span>{r.name}</span><span style={{ whiteSpace: "nowrap" }}>{r.price}</span></div> : null)}
           {total && f >= ft ? <><div style={{ borderBottom: "3px dashed #999", margin: "6px 0 14px" }} /><div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", fontSize: 50, fontWeight: 700 }}><span style={{ marginRight: 24 }}>TOTAL</span><span style={{ color: CU.chile, fontSize: side ? 62 : 68, transform: `scale(${0.6 + 0.4 * sp(f, ft, 9)})`, display: "inline-block", whiteSpace: "nowrap" }}>{total}</span></div></> : null}
         </div>
       </div>
@@ -325,7 +325,7 @@ export const PrecioA: React.FC<{ item: string; price: string; bg?: string; dur: 
         <div style={{ position: "absolute", left: -300, top: 260, width: 600, padding: "84px 40px 44px", textAlign: "center", background: "linear-gradient(170deg,#FFF4D6,#F4DFA8)", clipPath: "polygon(14% 0, 86% 0, 100% 13%, 100% 100%, 0 100%, 0 13%)", boxShadow: SH }}>
           <div style={{ position: "absolute", left: 282, top: 24, width: 36, height: 36, borderRadius: "50%", background: "#2B211A", boxShadow: "0 0 0 8px #E9DCC2" }} />
           <div style={{ fontFamily: BOLD, fontWeight: 800, fontSize: 52, color: CU.tinta, lineHeight: 1.1 }}>{item}</div>
-          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: price.length > 14 ? 92 : 120, color: CU.chile, lineHeight: 1.05, marginTop: 10 }}>{price}</div>
+          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: price.length > 16 ? 72 : price.length > 11 ? 88 : 120, color: CU.chile, lineHeight: 1.05, marginTop: 10, whiteSpace: "nowrap" }}>{price}</div>
         </div>
       </div>
     </AbsoluteFill>
@@ -350,11 +350,12 @@ export const PeligroA: React.FC<{ line: string; sub?: string; stamp?: string; fs
       </AbsoluteFill>); }
   return (
     <AbsoluteFill style={{ opacity: o }}><Fondo src={bg} seed={37} dur={dur} /><AbsoluteFill style={{ background: "radial-gradient(ellipse 1100px 600px at 50% 50%, rgba(60,8,4,.55), rgba(60,8,4,.2))" }} />
-      <div style={{ position: "absolute", left: 120, right: 120, top: stamp ? 300 : 380, textAlign: "center", opacity: cl((f - 4) / 8), transform: `translateY(${(1 - sp(f, 4, 13)) * 50}px)` }}>
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 52%, rgba(20,4,2,.82) 74%, rgba(20,4,2,.9))", opacity: cl((f - 2) / 8) }} />
+      <div style={{ position: "absolute", left: 120, right: 120, top: stamp ? 600 : 790, textAlign: "center", opacity: cl((f - 4) / 8), transform: `translateY(${(1 - sp(f, 4, 13)) * 50}px)` }}>
         <Big size={line.length > 28 ? 92 : 124} col={CU.cal} edge="#5A0C06" style={{ whiteSpace: "normal", lineHeight: 1.08 }}>{line}</Big>
         {sub ? <div style={{ marginTop: 30, opacity: cl((f - 14) / 8) }}><Cinta size={60}>{sub}</Cinta></div> : null}
       </div>
-      {stamp ? <div style={{ position: "absolute", left: 0, right: 0, top: 760, textAlign: "center" }}><Sello txt={stamp} col={CU.chile} f={f} at={fs} size={120} /></div> : null}
+      {stamp ? <div style={{ position: "absolute", left: 0, right: 0, top: 880, textAlign: "center" }}><Sello txt={stamp} col={CU.chile} f={f} at={fs} size={100} /></div> : null}
     </AbsoluteFill>
   );
 };
@@ -377,9 +378,9 @@ export const RelojA: React.FC<{ big: string; sweep?: number; chips?: { t: string
         </div>
         <div style={{ width: 640, height: 420, position: "relative" }}>
           {c ? <div key={ci} style={{ position: "absolute", left: 0, top: 40, transform: `translateY(${(1 - sp(f, c.f, 12)) * 60}px)`, opacity: cl((f - c.f) / 6) }}>
-            <Big size={150} col={CU.cal} edge="#111">{c.t}</Big>
+            <Big size={c.t.length > 7 ? 112 : 150} col={CU.cal} edge="#111" style={{ whiteSpace: "normal", width: 640, lineHeight: 1.02 }}>{c.t}</Big>
             <div style={{ marginTop: 30, marginLeft: 10 }}><Sello txt={c.ok ? "SÍ" : "NO"} col={c.ok ? CU.verde : CU.chile} f={f} at={c.f + 14} size={170} rot={c.ok ? -4 : -8} /></div>
-          </div> : <div style={{ position: "absolute", left: 0, top: 120, opacity: cl((f - 8) / 8) }}><Big size={170} col={CU.cal} edge="#111">{big}</Big></div>}
+          </div> : <div style={{ position: "absolute", left: 0, top: big.length > 6 ? 70 : 120, width: 640, opacity: cl((f - 8) / 8), transform: `translateY(${(1 - sp(f, 8, 13)) * 50}px)` }}><Big size={big.length > 6 ? 128 : 170} col={CU.cal} edge="#111" style={{ whiteSpace: "normal", lineHeight: 1.02 }}>{big}</Big></div>}
         </div>
       </AbsoluteFill>
     </AbsoluteFill>

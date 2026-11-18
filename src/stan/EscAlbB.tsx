@@ -45,7 +45,7 @@ const ORDEN = (() => {
   const chicas = idx.filter((i) => GOTAS[i][2] < 16).sort((a, b) => rnd(a) - rnd(b)).slice(0, 40);
   const resto = idx.filter((i) => !chicas.includes(i)).sort((a, b) => GOTAS[a][2] - GOTAS[b][2] || rnd(a) - rnd(b));
   const t: number[] = new Array(GOTAS.length);
-  chicas.forEach((i, k) => (t[i] = 75 + Math.round((k / 40) * 60)));
+  chicas.forEach((i, k) => (t[i] = 18 + Math.round((k / 40) * 117)));
   resto.forEach((i, k) => (t[i] = 290 + Math.round((k / Math.max(1, resto.length - 1)) * 75)));
   return t;
 })();
@@ -56,7 +56,7 @@ export const EscGotasNacen: React.FC<{ src: string; dur: number }> = ({ src, dur
   return (
     <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
       <div style={mundo(c)}>
-        <Foto src={src} style={{ filter: "blur(70px) brightness(1.08) contrast(0.8)", transform: "scale(1.08)" }} />
+        <Foto src={src} style={{ filter: "blur(36px) brightness(1.05) contrast(0.9)", transform: "scale(1.08)" }} />
         <Foto src={src} style={{ opacity: lerp(f, [362, dur - 4], [0, 1]) }} />
         {GOTAS.map(([x, y, r], i) => {
           const t0 = ORDEN[i];
@@ -120,7 +120,7 @@ export const EscPieMuro: React.FC<{ src: string; dur: number }> = ({ src, dur })
     return poly(pts);
   };
   const c = camAt(f, [{ f: 0, x: 960, y: 540, s: 1.0 }, { f: 128, x: 1270, y: 520, s: 1.15 }, { f: 300, x: 1230, y: 480, s: 1.12 }, { f: dur, x: 1200, y: 420, s: 1.08 }]);
-  const mojado = { filter: "brightness(0.42) saturate(1.3) contrast(1.15)" };
+  const mojado = { filter: "brightness(0.62) saturate(1.35) contrast(1.1) hue-rotate(-6deg)" };
   const muro = poly([[0, 0], [1690, 0], [1690, 640], [0, 640]]);
   return (
     <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
