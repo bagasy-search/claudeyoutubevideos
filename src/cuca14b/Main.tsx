@@ -1,4 +1,4 @@
-// Montaje cuca14a — capas: avatar · material (clips reales, fotos con Ken Burns, Veo enteros) · escenas Cuca · audio premezclado
+// Montaje cuca14b — capas: avatar · material (clips reales, fotos con Ken Burns, Veo enteros) · escenas Cuca · audio premezclado
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { SHOTS, AVATAR, OVERLAYS, TOTAL } from "./cues.gen";
@@ -6,7 +6,7 @@ import * as P from "../cucakit/Piezas";
 import * as Q from "../cucakit/Piezas2";
 import * as Z from "../cucakit/Cuca";
 
-const SLUG = "cuca14a";
+const SLUG = "cuca14b";
 export const TOTAL_FRAMES = TOTAL;
 const T = 8;
 
