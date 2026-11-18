@@ -7,7 +7,7 @@ import * as K from "./Kit";
 import * as E from "./Escenas";
 import * as S from "./Carne";
 import * as Mu from "./Muro";
-import * as Ro from "./Rosa";
+import * as Ro from "./Lety";
 
 export const TOTAL_FRAMES_STAN = TOTAL;
 const TR = 8;
