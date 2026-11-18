@@ -4,7 +4,8 @@ import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, Easing } f
 
 const CL = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const S = (n: string) => staticFile(`apa15a/g/${n}.jpg`);
-const FULL: React.CSSProperties = { position: "absolute", left: 0, top: 0, width: 1920, height: 1080, objectFit: "fill" };
+const NOMAX: React.CSSProperties = { maxWidth: "none", maxHeight: "none" };   // index.css trae img{max-width:100%}: achica las copias anchas dentro de cajas chicas
+const FULL: React.CSSProperties = { ...NOMAX, position: "absolute", left: 0, top: 0, width: 1920, height: 1080, objectFit: "fill" };
 const BOX: React.CSSProperties = { position: "absolute", left: 0, top: 0, width: 1920, height: 1080, overflow: "hidden" };
 const EASE = Easing.bezier(0.45, 0, 0.2, 1);
 const poly = (p: number[][]) => `polygon(${p.map(([x, y]) => `${x}px ${y}px`).join(",")})`;
@@ -28,7 +29,7 @@ export const Roll: React.FC<{ dur: number; fTurn: number }> = ({ dur, fTurn }) =
       const sa = CY + R * Math.sin(rad(pa - th)), sb = CY + R * Math.sin(rad(pb - th));
       const flip = sb < sa, sh = Math.max(Math.abs(sb - sa), 0.6), kk = hs / sh, top = -Math.min(sa, sb) * kk;
       const back = Math.cos(rad((pa + pb) / 2 - th)) < 0;
-      const im = (left: number) => <Img src={S("e_roll")} style={{ position: "absolute", left, top, width: 1920, height: 1080 * kk, filter: vel > 2 ? `blur(${Math.min(1.6, vel * 0.12)}px)` : undefined }} />;
+      const im = (left: number) => <Img src={S("e_roll")} style={{ ...NOMAX, position: "absolute", left, top, width: 1920, height: 1080 * kk, filter: vel > 2 ? `blur(${Math.min(1.6, vel * 0.12)}px)` : undefined }} />;
       bands.push(
         <div key={k} style={{ position: "absolute", left: X0, top: ya, width: W0, height: hs + 0.6, overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0, transform: flip ? "scaleY(-1)" : undefined }}>
@@ -77,7 +78,7 @@ export const Pop: React.FC<{ dur: number; fBase: number; fGar: number; fPan: num
           return (
             <div key={i} style={{ position: "absolute", left: 640 * i, top: 0, width: 640, height: 1080, overflow: "hidden",
               transform: `perspective(1700px) rotateX(${rot}deg)`, transformOrigin: "50% 100%" }}>
-              <Img src={S(p.n)} style={{ position: "absolute", left: p.ox, top: p.oy, width: 1920 * p.s, height: 1080 * p.s, filter: `brightness(${sh})` }} />
+              <Img src={S(p.n)} style={{ ...NOMAX, position: "absolute", left: p.ox, top: p.oy, width: 1920 * p.s, height: 1080 * p.s, filter: `brightness(${sh})` }} />
             </div>
           );
         })}
