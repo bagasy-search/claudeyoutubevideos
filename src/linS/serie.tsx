@@ -294,7 +294,7 @@ export const Cta: React.FC<OP> = ({ t, a, b, txt }) => {
 
 // cierre: pase de abordar de Linda que sube sobre el living desenfocado; el sello "ARRIVED" cae en el talón
 export const Fin: React.FC<OP> = ({ t, a, sub }) => {
-  const f = eo(t, a, 0.5), p = spr(t, a + 0.3, 0.9);
+  const f = eo(t, a - 0.1, 0.32), p = spr(t, a + 0.3, 0.9);
   return <AbsoluteFill style={{ transform: `translateY(${(1 - f) * 100}%)`, boxShadow: "0 -30px 60px rgba(0,0,0,.55)" }}>
     <Desenfoque f={D.bg} dark={0.3} />
     <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
