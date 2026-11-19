@@ -178,7 +178,7 @@ export type Card = { title: string; src: string };
 const Bodega: React.CSSProperties = { backgroundColor: "#3a2a1e", backgroundImage: "repeating-linear-gradient(0deg, rgba(0,0,0,0.28) 0 4px, transparent 4px 200px), linear-gradient(180deg, #5a4030, #2c2017)" };
 const Piso: React.FC = () => <div style={{ position: "absolute", left: -2000, right: -2000, top: 860, height: 600, background: "linear-gradient(180deg, #4a3526, #2a1d14)", boxShadow: "0 -6px 18px rgba(0,0,0,0.5)" }} />;
 
-const MESA = "hue14c/g/e_preg.png";
+const MESA = "hue14c/g/e_preg.jpg";
 const MesaFoto: React.FC<{ t: number }> = ({ t }) => (
   <div style={camC(lerp(960, 1000, t), lerp(560, 540, t), lerp(1.02, 1.08, t))}><Img src={staticFile(MESA)} style={FOTO} /></div>
 );
