@@ -20,7 +20,7 @@ export const Kin: React.FC<OP> = ({ t, a, b, txt, big, rojo }) => {
       {ws.map((w: string, i: number) => { const at = a + i * 0.26, p = spr(t, at, 1.3), q = cl(p);
         return <span key={i} style={{ position: "relative", display: "inline-block", opacity: eo(t, at, 0.1), transform: `translateY(${(1 - p) * -120}px) scale(${lerp(1.3, 1, q)})`, fontVariantNumeric: "tabular-nums",
           textShadow: `0 ${10 + (1 - q) * 30}px ${24 + (1 - q) * 30}px rgba(0,0,0,.8), 0 3px 4px rgba(0,0,0,.8), 6px 6px 0 rgba(20,33,61,.55)`, color: rojo === i ? "#f6c3b8" : undefined }}>{rueda(w, at)}
-          {i === ws.length - 1 && <div style={{ position: "absolute", left: "-2%", bottom: -fs * 0.16, width: `${104 * eo(t, at + 0.3, 0.35)}%`, height: fs * 0.13, background: C.hanko, borderRadius: `${fs}px ${fs * 0.3}px ${fs}px ${fs * 0.2}px`, boxShadow: "0 4px 10px rgba(0,0,0,.5)", transform: "rotate(-2deg)", zIndex: -1,
+          {i === ws.length - 1 && <div style={{ position: "absolute", left: "-2%", bottom: -fs * 0.2, width: `${104 * eo(t, at + 0.3, 0.35)}%`, height: fs * 0.2, background: C.hanko, borderRadius: `${fs}px ${fs * 0.3}px ${fs}px ${fs * 0.2}px`, boxShadow: "0 4px 10px rgba(0,0,0,.5)", transform: "rotate(-2deg)", zIndex: -1,
             WebkitMaskImage: "linear-gradient(90deg,#000 0%,#000 85%,rgba(0,0,0,.4) 100%)" }} />}
         </span>; })}
     </div>

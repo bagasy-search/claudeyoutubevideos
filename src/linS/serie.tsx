@@ -74,7 +74,7 @@ export const Repaso: React.FC<SP> = ({ t, a }) => {
   const lh = 132, fs = 80, en = cl(spr(t, a, 0.9)), scr = Math.max(0, Math.min(n - 5, (cur < 0 ? 0 : cur) - 2 + (cur >= 0 ? eo(t, at(Math.max(0, cur)), 0.4) - 1 : 0)));
   return <AbsoluteFill>
     <Desenfoque f={D.bg} dark={0.55} />
-    <div style={{ position: "absolute", left: 110, top: 70, width: 980, height: 940, transform: `translateX(${(1 - en) * -700}px) rotate(-1.5deg)`, background: "#FFFDF4", borderRadius: 8, boxShadow: "0 30px 80px rgba(0,0,0,.6)",
+    <div style={{ position: "absolute", left: 110, top: 80, width: 980, height: 870, transform: `translateX(${(1 - en) * -700}px) rotate(-1.5deg)`, background: "#FFFDF4", borderRadius: 8, boxShadow: "0 30px 80px rgba(0,0,0,.6)",
       backgroundImage: `linear-gradient(90deg, transparent 96px, rgba(179,38,30,.55) 96px 99px, transparent 99px), repeating-linear-gradient(180deg, transparent 0 ${lh - 2}px, rgba(30,58,95,.22) ${lh - 2}px ${lh}px)`, backgroundPosition: `0 0, 0 ${170 - lh * 0.15}px`, overflow: "hidden" }}>
       <div style={{ position: "absolute", left: 0, right: 0, top: 8, display: "flex", justifyContent: "space-around", padding: "0 40px" }}>{Array.from({ length: 12 }).map((_, k) => <div key={k} style={{ width: 22, height: 44, borderRadius: 11, border: "4px solid #8d939b" }} />)}</div>
       <div style={{ position: "absolute", left: 120, top: 62, fontFamily: HAND, fontWeight: 700, fontSize: 78, color: C.ai, zIndex: 2, background: "#FFFDF4", right: 20 }}>{D.repaso_titulo || D.lista_titulo}</div>
@@ -86,10 +86,10 @@ export const Repaso: React.FC<SP> = ({ t, a }) => {
         </div>; })}
     </div>
     {D.items.map((it, i) => { if (cur < 0 || i > cur || i < cur - 1) return null; const p = cl(spr(t, at(i), 1)), fuera = i < cur ? e(t, at(cur), at(cur) + 0.4) : 0;
-      return <div key={i} style={{ position: "absolute", left: 1180, top: 170, width: 640, background: "#FFFDF8", padding: "26px 26px 90px", boxShadow: "0 30px 70px rgba(0,0,0,.6)",
+      return <div key={i} style={{ position: "absolute", left: 1180, top: 170, width: 640, background: "#FFFDF8", padding: "26px 26px 110px", boxShadow: "0 30px 70px rgba(0,0,0,.6)",
         transform: `translate(${(1 - p) * 700 + fuera * 900}px, ${fuera * -200}px) rotate(${lerp(14, ((h(i, 9) * 6) | 0) - 3, p) + fuera * 25}deg)`, opacity: 1 - fuera }}>
         <Img src={src(it.f)} style={{ width: "100%", height: 520, objectFit: "cover", display: "block" }} />
-        <div style={{ position: "absolute", left: 30, right: 30, bottom: 18, fontFamily: HAND, fontWeight: 700, fontSize: 52, color: C.sumi, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{it.n}. {it.t}</div>
+        <div style={{ position: "absolute", left: 30, right: 30, bottom: 10, fontFamily: HAND, fontWeight: 700, fontSize: 70, color: C.sumi, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{it.n}. {it.t}</div>
       </div>; })}
   </AbsoluteFill>;
 };
@@ -105,7 +105,7 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
   const titulo = <div style={{ position: "absolute", top: modo === 3 ? 470 : 330, width: 900, display: "flex", flexDirection: "column", ...lado }}>
     <div style={{ ...cap, fontSize: 34, color: "#f1d9a8", textShadow: sombra, opacity: eo(t, a + 0.3, 0.4) }}>{D.item_rotulo || "carry-on"}</div>
     <Palabras t={t} at={a + 0.9} txt={it.t} gap={0.14} style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 104, color: "#FFFCF5", textShadow: sombra, lineHeight: 1.04, justifyContent: der ? "flex-end" : "flex-start", maxWidth: 900 }} />
-    {it.sub && <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 84, color: "#f1d9a8", textShadow: sombra, marginTop: 12, opacity: eo(t, a + 1.6, 0.5) }}>{it.sub}</div>}
+    {it.sub && <div style={{ fontFamily: HAND, fontWeight: 700, whiteSpace: "nowrap", fontSize: Math.min(84, 980 / (String(it.sub).length * 0.44)), color: "#f1d9a8", textShadow: sombra, marginTop: 12, opacity: eo(t, a + 1.6, 0.5) }}>{it.sub}</div>}
     <div style={{ height: 4, background: C.hanko, marginTop: 16, width: 260 * eo(t, a + 1.4, 0.5) }} />
   </div>;
   const velo = <AbsoluteFill style={{ background: `linear-gradient(${der ? 270 : 90}deg, rgba(10,16,30,.82) 0%, rgba(10,16,30,.4) 42%, rgba(10,16,30,0) 66%)` }} />;
@@ -215,13 +215,13 @@ export const Prog: React.FC<OP> = () => null; // retirado tras EVALUADOR v2: el 
 
 // la regla de Linda: tarjeta de cartulina colgada de un hilo rojo; baja con peso, se balancea y al final el hilo la sube
 export const Prueba: React.FC<OP> = ({ t, a, b, txt, lab }) => {
-  const izq = Math.floor(a / 7) % 2 === 0, p = spr(t, a, 1.1), r = swing(t, a + 0.15, 7, 1.4, 5.5) + (izq ? -2 : 2), sube = e(t, b - 0.35, b);
-  return <div style={{ position: "absolute", [izq ? "left" : "right"]: 110, top: 0, transformOrigin: "50% 0", transform: `rotate(${r}deg) translateY(${(cl(p) - 1) * 900 - sube * 1000}px)` } as React.CSSProperties}>
+  const izq = true, p = spr(t, a, 1.1), r = swing(t, a + 0.15, 9, 1.2, 5) - 2, sube = e(t, b - 0.35, b);
+  return <div style={{ position: "absolute", [izq ? "left" : "right"]: 70, top: 0, transformOrigin: "50% 0", transform: `rotate(${r}deg) translateY(${(cl(p) - 1) * 900 - sube * 1000}px)` } as React.CSSProperties}>
     <div style={{ width: 5, height: 120, background: `linear-gradient(90deg, #7d1a15, ${C.hanko}, #7d1a15)`, margin: "0 auto", boxShadow: "2px 0 3px rgba(0,0,0,.4)" }} />
-    <div style={{ ...papel, width: 780, padding: "44px 54px 52px", borderTop: `10px solid ${C.hanko}`, boxShadow: `${-r * 3}px 50px 70px rgba(0,0,0,.6), 0 8px 16px rgba(0,0,0,.35)`, position: "relative" }}>
-      <div style={{ position: "absolute", left: 371, top: -18, width: 32, height: 32, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #f3dc9c, #8a6a2c)", boxShadow: "0 3px 6px rgba(0,0,0,.45)" }} />
+    <div style={{ ...papel, width: 640, padding: "40px 46px 48px", borderTop: `10px solid ${C.hanko}`, boxShadow: `${-r * 3}px 50px 70px rgba(0,0,0,.6), 0 8px 16px rgba(0,0,0,.35)`, position: "relative" }}>
+      <div style={{ position: "absolute", left: 301, top: -18, width: 32, height: 32, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #f3dc9c, #8a6a2c)", boxShadow: "0 3px 6px rgba(0,0,0,.45)" }} />
       <div style={{ ...cap, fontSize: 32, color: C.hanko, fontWeight: 500 }}>{lab || "linda's rule"}</div>
-      <Palabras t={t} at={a + 0.4} txt={txt} gap={0.07} style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 76, color: C.sumi, marginTop: 18, lineHeight: 1.1 }} />
+      <Palabras t={t} at={a + 0.4} txt={txt} gap={0.07} style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 66, color: C.sumi, marginTop: 16, lineHeight: 1.1 }} />
     </div>
   </div>;
 };
