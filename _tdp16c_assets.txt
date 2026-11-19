@@ -23,7 +23,6 @@ tdp16c/g/p_v_brunn_her_son_printed_the.jpg
 tdp16c/g/p_v_brunn_i_dont_have_to.jpg
 tdp16c/g/p_v_brunn_my_husband_used_to.jpg
 tdp16c/g/p_v_brunn_my_rent_is_the.jpg
-tdp16c/g/p_v_brunn_now_there_are_coffee.jpg
 tdp16c/g/p_v_brunn_reads_every_line_slowly.jpg
 tdp16c/g/p_v_brunn_she_took_me_for.jpg
 tdp16c/g/p_v_brunn_the_butcher_is_a.jpg
@@ -217,7 +216,6 @@ tdp16c/v/v_movin_in_a_special_blocked.mp4
 tdp16c/v/v_movin_rental_contracts_can_usually.mp4
 tdp16c/v/v_quest_a_man_who_runs.mp4
 tdp16c/v/v_quest_and_what_about_the.mp4
-tdp16c/v/v_quest_is_renting_cheaper_than.mp4
 tdp16c/v/v_quest_the_swiss_voted_to.mp4
 tdp16c/v/v_quest_they_cross_into_switzerland.mp4
 tdp16c/v/v_quest_what_about_geneva.mp4
@@ -225,5 +223,4 @@ tdp16c/v/v_zimme_after_decades_of_complaining.mp4
 tdp16c/v/v_zimme_my_grandfather_had_a.mp4
 tdp16c/v/v_zimme_owners_can_deduct_the.mp4
 tdp16c/v/v_zimme_ruth_showed_me_the.mp4
-tdp16c/v/v_zimme_the_bank_requires_it.mp4
 tdp16c/v/v_zimme_the_tax_office_calculates.mp4
