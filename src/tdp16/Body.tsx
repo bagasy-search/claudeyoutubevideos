@@ -31,8 +31,9 @@ const Plano: React.FC<{ i: number; t: number }> = ({ i, t }) => {
   }
   if (q.k === "S") { const X = ESCENAS[q.sc as string]; return <X t={t} a={q.s} b={q.e} {...q} />; }
   if (q.f && q.f.endsWith(".mp4")) { // clip Veo: llena el plano; si es corto corre más lento (piso 0,5); arranca en `from` si es la continuación
-    const need = d + TR + 0.1, rest = (q.len || 8) - (q.from || 0), rate = rest < need ? Math.max(0.5, rest / need) : 1;
-    const v = <OffthreadVideo src={staticFile(P + q.f)} startFrom={s(q.from || 0)} muted playbackRate={rate} style={kb(i, t, q.s, q.e, true)} />;
+    // `from` viene en tiempo de PANTALLA y el tramo anterior pudo ir lento: se acota para que el clip nunca arranque pasado su final (congelado)
+    const L = q.len || 8, need = d + TR + 0.1, src0 = Math.max(0, Math.min(q.from || 0, L - 0.5 * need - 0.05)), rest = L - src0, rate = rest < need ? Math.max(0.5, rest / need) : 1;
+    const v = <OffthreadVideo src={staticFile(P + q.f)} startFrom={s(src0)} muted playbackRate={rate} style={kb(i, t, q.s, q.e, true)} />;
     return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>{q.zoom ? <AbsoluteFill style={{ transform: `scale(${q.zoom})`, transformOrigin: `${q.zx}% ${q.zy}%` }}>{v}</AbsoluteFill> : v}</AbsoluteFill>;
   }
   const im = <AbsoluteFill style={{ transform: "scale(1.11)", transformOrigin: "0% 50%" }}><Img src={staticFile(P + q.f)} style={kb(i, t, q.s, q.e)} /></AbsoluteFill>;
