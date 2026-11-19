@@ -1,6 +1,7 @@
 gary14b/gary14b_mix.m4a
 gary14b/man/tapa.png
 gary14b/man/qr.png
+gary14b/v/v0020.mp4
 gary14b/y/y41.mp4
 gary14b/y/y70.mp4
 gary14b/y/y80.mp4
@@ -210,6 +211,7 @@ gary14b/y/y3680.mp4
 gary14b/g/y3690.png
 gary14b/y/y3740.mp4
 gary14b/g/y3750.png
+gary14b/v/v3760.mp4
 gary14b/g/y3790.png
 gary14b/g/g3800.png
 gary14b/y/y3820.mp4
