@@ -12,10 +12,14 @@ le14b/y/p320_0.mp4
 le14b/g/alb_molde.png
 le14b/y/p360_0.mp4
 le14b/g/y0370.jpg
+le14b/g/alb_canasta.png
 le14b/g/y0400.jpg
 le14b/g/y0460.jpg
+le14b/g/g_molde_cura.png
 le14b/g/y0510.jpg
 le14b/g/y0530.jpg
+le14b/g/g_molde_alu.png
+le14b/g/g_molde_hierro.png
 le14b/g/y0610.jpg
 le14b/y/p610_0.mp4
 le14b/y/p650_0.mp4
