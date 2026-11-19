@@ -16,8 +16,8 @@ const lerp = (f: number, ks: number[], vs: number[]) => interpolate(f, ks, vs, {
 export const Twobeans: React.FC<{ dur: number; fThis1: number; fGray: number; fThis2: number; fCreamy: number; fBone: number }> = ({ dur, fThis1, fGray, fThis2, fCreamy, fBone }) => {
   const f = useCurrentFrame();
   const k = [0, fThis1 - 4, fThis1 + 26, fThis2 - 4, fThis2 + 26, fBone, dur];
-  const s = lerp(f, k, [1.05, 1.15, 2.1, 2.1, 2.1, 2.5, 2.55]);
-  const x = lerp(f, k, [900, 900, 755, 755, 1180, 1180, 1180]);
+  const s = lerp(f, k, [1.05, 1.15, 2.1, 2.1, 2.1, 2.5, 2.55]) * (1 + 0.05 * f / dur);
+  const x = lerp(f, k, [900, 900, 755, 755, 1180, 1180, 1180]) + 30 * Math.sin(f / 70);
   const y = lerp(f, k, [600, 600, 615, 615, 630, 640, 640]);
   const gray = lerp(f, [fGray - 6, fGray + 14], [0, 1]);
   const warm = lerp(f, [fCreamy - 4, fCreamy + 18], [0, 1]);
