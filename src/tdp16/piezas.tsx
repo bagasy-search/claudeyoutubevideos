@@ -18,7 +18,7 @@ export const Lower: React.FC<OP> = ({ t, a, b, name, sub }) => {
       <div style={{ width: 8, alignSelf: "stretch", background: C.red }} />
       <div>
         <div style={{ fontFamily: SERIF, fontWeight: 400, fontSize: 96, lineHeight: 1, color: C.ink, whiteSpace: "nowrap" }}>{name}</div>
-        <div style={{ ...cap, fontSize: 46, letterSpacing: "0.1em", marginTop: 12, color: "rgba(29,26,22,.75)", whiteSpace: "nowrap", opacity: eo(t, a + 0.3, 0.4) }}>{sub}</div>
+        <div style={{ ...cap, fontSize: 58, letterSpacing: "0.06em", marginTop: 12, color: "rgba(29,26,22,.75)", whiteSpace: "nowrap", opacity: eo(t, a + 0.3, 0.4) }}>{sub}</div>
       </div>
     </div>
     </div>
@@ -30,10 +30,11 @@ export const Kin: React.FC<OP> = ({ t, a, b, txt }) => {
   const ws = String(txt).split(" "), nk = ws.length > 5 ? 3 : 2, k = t - a, land = cl(spr(t, a - 0.05, 1.1));
   const fs = ws.join(" ").length > 22 ? 104 : 128, lastAt = a + 0.12 + 0.13 * (ws.length - 1);
   return <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: 96, opacity: sale(t, b, 0.3) }}>
-    <div style={{ ...paginaBg, padding: "30px 64px 38px", maxWidth: 1640, textAlign: "center", boxShadow: "0 26px 60px rgba(0,0,0,.6)", display: "flex", flexWrap: "wrap", justifyContent: "center", columnGap: 30,
+    <AbsoluteFill style={{ background: "linear-gradient(180deg, transparent 52%, rgba(5,9,18,.72))", opacity: land }} />
+    <div style={{ padding: "0 64px", maxWidth: 1680, textAlign: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", columnGap: 30, textShadow: "0 6px 26px rgba(0,0,0,.75)",
       transform: `translateY(${(1 - land) * 340 + sacudon(t, lastAt + 0.1, 7)}px) rotate(${-1.6 + (1 - land) * 6 + 0.35 * Math.sin(k * 0.6)}deg) scale(${1 + 0.008 * k})` }}>
       {ws.map((w, i) => { const at = a + 0.12 + 0.13 * i, p = cl(spr(t, at, 1.5)), key = i >= ws.length - nk;
-        return <span key={i} style={{ fontFamily: SERIF, fontWeight: key ? 600 : 400, fontSize: fs, lineHeight: 1.05, color: key ? C.red : C.ink, opacity: t < at ? 0 : 1,
+        return <span key={i} style={{ fontFamily: SERIF, fontWeight: key ? 600 : 400, fontSize: fs, lineHeight: 1.05, color: key ? C.amber : C.cream, opacity: t < at ? 0 : 1,
           display: "inline-block", transform: `translateY(${(1 - p) * -90}px) scale(${lerp(1.35, 1, p)})` }}>{w}</span>; })}
     </div>
   </AbsoluteFill>;
@@ -54,9 +55,9 @@ export const Mitad: React.FC<OP> = ({ t, a, b, f, txt }) => {
 export const Cta: React.FC<OP> = ({ t, a, b, fin }) => {
   const hitAt = a + 0.45, down = e(t, a - 0.1, hitAt), up = e(t, a + 0.8, a + 1.25);
   const y = lerp(-700, 0, down) + lerp(0, -820, up), squash = t > hitAt - 0.03 && t < a + 0.8 ? 0.9 : 1;
-  return <div style={{ position: "absolute", right: 150, bottom: 130, width: 620, height: 330, opacity: sale(t, b, 0.4), transform: `translateY(${sacudon(t, hitAt, 8)}px)` }}>
+  return <div style={{ position: "absolute", right: 170, top: 150, width: 620, height: 330, opacity: sale(t, b, 0.4), transform: `translateY(${sacudon(t, hitAt, 8)}px)` }}>
     <div style={{ position: "absolute", left: 0, right: 0, top: 70, display: "flex", justifyContent: "center", filter: "drop-shadow(0 6px 10px rgba(0,0,0,.55))" }}>
-      <Sello t={t} at={hitAt} top={fin ? `next · ${D.fin_txt || ""}` : "dirty passport"} big="subscribe" bottom="" rot={-6} scale={1.35} />
+      <Sello t={t} at={hitAt} top={fin ? `next · ${D.fin_txt || ""}` : "dirty passport"} big="subscribe" bottom="" rot={-6} scale={1.55} />
     </div>
     {t < a + 1.3 && <div style={{ position: "absolute", left: 170, top: -10, transform: `translateY(${y}px) scaleY(${squash})`, transformOrigin: "50% 100%" }}>
       <div style={{ width: 100, height: 130, margin: "0 auto", borderRadius: "50px 50px 18px 18px", background: "linear-gradient(90deg, #4a2c14, #8a5a2e 40%, #5a3519)", boxShadow: "inset 0 4px 8px rgba(255,220,170,.3)" }} />
@@ -87,7 +88,7 @@ export const Fin: React.FC<OP> = ({ t, a, b }) => {
       <div style={{ ...cap, fontSize: 40, color: C.amber, letterSpacing: "0.3em" }}>{D.fin_top || "next stop"}</div>
       <div style={{ fontFamily: SERIF, fontWeight: 400, fontSize: 176, lineHeight: 1, marginTop: 10 }}>{D.fin_txt || ""}</div>
     </div>
-    <div style={{ position: "absolute", right: 180, top: 170 }}><Sello t={t} at={a + 0.75} top="dirty" big="passport" bottom="see you there" col={C.amber} scale={1.45} rot={-10} /></div>
+    <div style={{ position: "absolute", right: 330, top: 220 }}><Sello t={t} at={a + 0.75} top="dirty" big="passport" bottom="see you there" col={C.amber} scale={1.2} rot={-8} /></div>
   </AbsoluteFill>;
 };
 

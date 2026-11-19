@@ -81,9 +81,11 @@ tdp16b/g/p_v_ole_he_showed_me_his.jpg
 tdp16b/g/p_v_ole_he_still_lives_in.jpg
 tdp16b/g/p_v_ole_his_boat_is_11.jpg
 tdp16b/g/p_v_ole_i_went_out_at.jpg
+tdp16b/g/p_v_ole_in_winter_the_sun.jpg
 tdp16b/g/p_v_ole_just_wind.jpg
 tdp16b/g/p_v_ole_most_of_it_goes.jpg
 tdp16b/g/p_v_ole_shell_probably_have_more.jpg
+tdp16b/g/p_v_ole_the_lofoten_islands.jpg
 tdp16b/g/p_v_ole_they_sell_them_by.jpg
 tdp16b/g/p_v_preg_but_food_is_expensive.jpg
 tdp16b/g/p_v_preg_childcare_is_heavily_subsidi.jpg
@@ -141,7 +143,6 @@ tdp16b/v/v_erik_before_that_norway_was.mp4
 tdp16b/v/v_erik_flying_out_in_a.mp4
 tdp16b/v/v_erik_i_went_to_stavanger.mp4
 tdp16b/v/v_erik_oil_and_gas_are.mp4
-tdp16b/v/v_fondo_and_you_can_watch.mp4
 tdp16b/v/v_fondo_every_year_there_are.mp4
 tdp16b/v/v_fondo_i_asked_a_woman.mp4
 tdp16b/v/v_fondo_it_goes_up_and.mp4
@@ -166,13 +167,10 @@ tdp16b/v/v_ingri_ingrid_laughed_when_she.mp4
 tdp16b/v/v_ingri_it_keeps_everybody_a.mp4
 tdp16b/v/v_ingri_it_moved_to_the.mp4
 tdp16b/v/v_ingri_net_income_net_wealth.mp4
-tdp16b/v/v_ingri_people_looked_up_their.mp4
 tdp16b/v/v_ingri_people_would_go_down.mp4
-tdp16b/v/v_ingri_she_earns_around.mp4
 tdp16b/v/v_ingri_she_works_rotating_shifts.mp4
 tdp16b/v/v_ingri_the_dentist_the_priest.mp4
 tdp16b/v/v_ingri_the_person_you_look.mp4
-tdp16b/v/v_ingri_there_were_websites_that.mp4
 tdp16b/v/v_ingri_you_log_in_with.mp4
 tdp16b/v/v_jante_dont_think_youre_special.mp4
 tdp16b/v/v_jante_everybody_in_scandinavia_kno.mp4

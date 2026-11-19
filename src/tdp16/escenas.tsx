@@ -59,7 +59,8 @@ export const Parada: React.FC<SP> = ({ t, a, b, n }) => {
   const slot = { x: X0 + (izq ? 70 : half + 70), y: Y0 + 80, w: half - 140, h: 520 };
   const rot = (izq ? -2.2 : 2.2) * (0.6 + 0.6 * h(n, 7));
   const dv = deriva(t, a, h(n, 8)), sx = sacudon(t, at, 9), sy = sacudon(t, at + 0.02, 6);
-  const cam = `translate(${dv.x * p1 + sx + (izq ? 1 : -1) * 150 * push}px, ${dv.y * p1 + sy + 30 * push}px) scale(${1 + 0.035 * sm(k / (dur + 0.4)) + 0.13 * push + 0.06 * sal}) rotate(${dv.r * p1}deg)`;
+  const bk = cl(spr(t, a + 0.1, 1.15)), bkY = (1 - bk) * 1150 + (t < a + 0.1 ? 2000 : 0);
+  const cam = `translate(${0.5 * dv.x * p1 + sx}px, ${0.5 * dv.y * p1 + sy}px) scale(${1 + 0.02 * sm(k / (dur + 0.4)) + 0.04 * sal}) rotate(${0.5 * dv.r * p1}deg)`;
   const tilt = `perspective(2600px) rotateX(${lerp(0, 7 - 3 * sm(k / dur), p1)}deg) rotateY(${(izq ? 1 : -1) * lerp(0, 3, p1)}deg)`;
   const pagSello = izq ? X0 + half : X0, prev = D.paradas.slice(0, Math.max(0, n - 1));
   return <AbsoluteFill style={{ ...tapaBg, overflow: "hidden" }}>
@@ -68,15 +69,15 @@ export const Parada: React.FC<SP> = ({ t, a, b, n }) => {
     <AbsoluteFill style={{ transform: cam }}>
       <AbsoluteFill style={{ transform: tilt }}>
         {/* pasaporte abierto: dos páginas, lomo con costura, sombra de contacto */}
-        <div style={{ position: "absolute", left: X0, top: Y0, width: W, height: H, opacity: pp, transform: `scale(${lerp(1.1, 1, pp)})`, boxShadow: `0 ${50 * pp}px ${110 * pp}px rgba(0,0,0,.6)`, borderRadius: 10, overflow: "hidden" }}>
+        <div style={{ position: "absolute", left: X0, top: Y0, width: W, height: H, transform: `translateY(${bkY}px)`, boxShadow: "0 50px 110px rgba(0,0,0,.6)", borderRadius: 10, overflow: "hidden" }}>
           <div style={{ position: "absolute", inset: 0, ...paginaBg }} />
           <div style={{ position: "absolute", left: half - 70, width: 140, top: 0, bottom: 0, background: "linear-gradient(90deg, transparent, rgba(0,0,0,.2) 45%, rgba(0,0,0,.32) 50%, rgba(0,0,0,.2) 55%, transparent)" }} />
           <div style={{ position: "absolute", left: half - 1, width: 2, top: 30, bottom: 30, backgroundImage: "repeating-linear-gradient(180deg, rgba(120,30,30,.55) 0 14px, transparent 14px 26px)" }} />
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, rgba(0,0,0,.14), transparent 8%, transparent 92%, rgba(0,0,0,.14))" }} />
         </div>
         {/* página del sello: número de parada, sellos anteriores, sello nuevo, título */}
-        <div style={{ position: "absolute", left: pagSello, top: Y0, width: half, height: H, opacity: pp }}>
-          <div style={{ position: "absolute", right: 64, top: 40, ...cap, fontSize: 42, color: "rgba(29,26,22,.7)" }}>stop {n} / {NP}</div>
+        <div style={{ position: "absolute", left: pagSello, top: Y0, width: half, height: H, transform: `translateY(${bkY}px)` }}>
+          <div style={{ position: "absolute", right: 64, top: 40, ...cap, fontSize: 54, color: "rgba(29,26,22,.72)" }}>stop {n} / {NP}</div>
           <div style={{ position: "absolute", left: 70, top: 150 }}>
             <Sello t={t} at={at} top={`stop ${String(n).padStart(2, "0")}`} big={String(it.sello || it.city || "")} bottom={String(it.fecha || "entry")} rot={-7 + 5 * h(n, 3)} col={col} scale={Math.min(1.25, 8.5 / Math.max(4, String(it.sello || it.city || "").length))} />
           </div>
@@ -86,7 +87,7 @@ export const Parada: React.FC<SP> = ({ t, a, b, n }) => {
           </div>
         </div>
         {/* página de la foto: rótulo del lugar bajo la foto */}
-        <div style={{ position: "absolute", left: slot.x, top: slot.y + slot.h + 40, ...cap, fontSize: 40, color: "rgba(29,26,22,.72)", opacity: eo(t, a + 1.2, 0.5) }}>{it.city || ""}</div>
+        <div style={{ position: "absolute", left: slot.x, width: slot.w, top: slot.y + slot.h + 36, ...cap, fontSize: 48, lineHeight: 1.12, color: "rgba(29,26,22,.75)", opacity: eo(t, a + 1.2, 0.5) }}>{it.city || ""}</div>
         {/* la foto: arranca a pantalla llena y se pega en su lugar (borde blanco y esquineros crecen al llegar) */}
         <div style={vr === 0 ? { position: "absolute", left: lerp(-20, slot.x, p1), top: lerp(-20, slot.y, p1), width: lerp(1960, slot.w, p1), height: lerp(1120, slot.h, p1),
           padding: 14 * p1, background: "#fbf8f1", transform: `rotate(${rot * p1}deg)`, boxShadow: `0 ${16 * p1}px ${34 * p1}px rgba(20,14,6,${0.45 * p1})` }
@@ -127,7 +128,7 @@ export const Cifra: React.FC<SP> = ({ t, a, b, big, lab, fuente }) => {
     <div style={{ position: "absolute", bottom: 86, width: "100%", textAlign: "center", fontFamily: SERIF, fontStyle: "italic", fontWeight: 300, fontSize: 32, color: "rgba(246,240,228,.85)", opacity: eo(t, a + 1.6, 0.5) }}>Source: {fuente}</div>
   </>;
   if (pr) {
-    const N = +pr[1], M = +pr[2], tw = 148, gap = 26, x0 = 960 - (M * tw + (M - 1) * gap) / 2;
+    const N = +pr[1], M = +pr[2], tw = 158, gap = 18, x0 = 960 - (M * tw + (M - 1) * gap) / 2;
     return <AbsoluteFill style={{ ...tapaBg, overflow: "hidden" }}>
       <FondoFoto f={f} t={t} a={a} o={bgO} />
       {f && <AbsoluteFill style={{ opacity: sharpO }}><Img src={src(f)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>}
@@ -144,19 +145,18 @@ export const Cifra: React.FC<SP> = ({ t, a, b, big, lab, fuente }) => {
               <div style={{ position: "absolute", bottom: 0, left: tw * 0.36, width: tw * 0.28, height: tw * 0.42, background: "#1d1a16", border: "4px solid #f3ecdc", borderBottom: 0 }} />
             </div>
           </div>; })}
-        <div style={{ position: "absolute", left: 0, right: 0, top: 940, height: 40, background: "linear-gradient(180deg, #f4f6f8, #cfd8e0)", boxShadow: "0 -6px 20px rgba(0,0,0,.4)" }} />
       </AbsoluteFill>
     </AbsoluteFill>;
   }
   if (/^(NOK|CHF|\$|€|¥|£)/.test(txt)) {
     const m2 = txt.match(/^([^0-9]*)([0-9][0-9.,]*)(.*)$/) || ["", "", txt, ""], val = parseFloat(m2[2].replace(/,/g, "")), dec = (m2[2].split(".")[1] || "").length;
     const persona = /per /i.test(String(lab)), cols = persona ? 1 : 9, cnt = e(t, a + 0.6, a + 2.6);
-    const shown = (val * sm(cnt)).toFixed(dec);
+    const shown = m2[2]; void cnt; void val; void dec;
     return <AbsoluteFill style={{ ...tapaBg, overflow: "hidden" }}>
       {f && <AbsoluteFill><Img src={src(f)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.11 + 0.02 * k})`, transformOrigin: "0% 50%", filter: `brightness(${lerp(1, 0.42, e(t, a, a + 0.7))})` }} /></AbsoluteFill>}
       <AbsoluteFill style={{ transform: cam }}>
         {pie}
-        <div style={{ position: "absolute", top: 210, width: "100%", textAlign: "center", fontFamily: SERIF, fontSize: 170, color: "#f7e9c8", textShadow: "0 8px 30px rgba(0,0,0,.7)", opacity: eo(t, a + 0.5, 0.4) }}>
+        <div style={{ position: "absolute", top: 210, width: "100%", textAlign: "center", fontFamily: SERIF, fontSize: 170, color: "#f7e9c8", textShadow: "0 8px 30px rgba(0,0,0,.7)", opacity: t < a + 1.6 ? 0 : 1, transform: `scale(${lerp(1.4, 1, cl(spr(t, a + 1.6, 1.4)))})` }}>
           <span style={{ fontFamily: SANS, fontWeight: 800, fontSize: 110, marginRight: 16 }}>{m2[1].trim()}</span>{shown}<span style={{ fontSize: 120, marginLeft: 18 }}>{m2[3]}</span></div>
         {Array.from({ length: cols }, (_, c) => { const alto = persona ? 22 : Math.round(8 + 22 * h(c, 71) + 6 * Math.sin(c)), cx = persona ? 1040 : 960 + (c - (cols - 1) / 2) * 170;
           return Array.from({ length: alto }, (_, j) => { const at = a + 0.5 + (j / alto) * 1.9 + 0.05 * c, p = cl(spr(t, at, 1.4));
@@ -234,7 +234,7 @@ export const Ruta: React.FC<SP> = ({ t, a, b, hasta = 1, titulo }) => {
 
 // (4) REPASO: las fotos de todas las paradas caen en dos filas grandes; el sello VISITED golpea cada una por turno (la foto se enciende)
 export const Repaso: React.FC<SP> = ({ t, a, b, marcas = [], titulo, lista = false }) => {
-  const n = D.paradas.length, cols = Math.ceil(n / 2), gap = 34, w = Math.min(410, (1760 - (cols - 1) * gap) / cols), hh = w * 0.62;
+  const n = D.paradas.length, cols = Math.ceil(n / 2), gap = 34, w = Math.min(390, (1640 - (cols - 1) * gap) / cols), hh = w * 0.62;
   const x0 = 960 - (cols * w + (cols - 1) * gap) / 2, k = t - a, dv0 = deriva(t, a, 0.37), dv = { ...dv0, y: 10 * Math.sin(k * 0.31 + 1.5) };
   const at = (i: number) => marcas[i] ?? a + 1.1 + i * ((b - a - 2.4) / Math.max(1, n - 1));
   let sh = 0; if (!lista) for (let i = 0; i < n; i++) sh += sacudon(t, at(i), 5);
@@ -250,7 +250,7 @@ export const Repaso: React.FC<SP> = ({ t, a, b, marcas = [], titulo, lista = fal
             <div style={{ width: "100%", height: hh, overflow: "hidden" }}><Img src={src(it.f)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.11)", transformOrigin: "0% 50%", filter: `grayscale(${1 - lit}) brightness(${lerp(0.6, 1, lit)})` }} /></div>
             <div style={{ fontFamily: SERIF, fontSize: 44, color: C.ink, marginTop: 10, lineHeight: 1.05, whiteSpace: "nowrap", overflow: "hidden" }}><b style={{ fontFamily: SANS, color: C.red, marginRight: 12 }}>{String(it.n).padStart(2, "0")}</b>{it.corto || it.t}</div>
           </div>
-          {!lista && t >= at(i) && <div style={{ position: "absolute", right: -30, bottom: 34 }}><Sello t={t} at={at(i)} top="stop" big="visited" bottom={String(it.n).padStart(2, "0")} rot={-14 + 10 * h(i, 5)} scale={0.46} col={tinta(i + 1)} /></div>}
+          {false && t >= at(i) && <div style={{ position: "absolute", right: -30, bottom: 34 }}><Sello t={t} at={at(i)} top="stop" big="visited" bottom={String(it.n).padStart(2, "0")} rot={-14 + 10 * h(i, 5)} scale={0.46} col={tinta(i + 1)} /></div>}
         </div>;
       })}
     </AbsoluteFill>
