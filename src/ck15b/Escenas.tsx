@@ -17,7 +17,7 @@ export const Split: React.FC<{ dur: number; fRaw: number; fOven: number; fPuff: 
   const f = useCurrentFrame();
   const raw = lerp(f, [fRaw - 4, fRaw + 14, fOven - 2, fOven + 16], [0, 1, 1, 0]);
   const puff = interpolate(f, [fPuff - 2, fPuff + 10, fPuff + 30], [0, 1, 0.6], { ...CL, easing: Easing.out(Easing.back(1.6)) });
-  const s = lerp(f, [0, fRaw, fPuff, fCut, dur], [1.0, 1.3, 1.35, 1.9, 2.0]);
+  const s = (1 + 0.05 * f / dur) * lerp(f, [0, fRaw, fPuff, fCut, dur], [1.0, 1.3, 1.35, 1.9, 2.0]);
   const x = lerp(f, [0, fRaw, fCut], [880, 820, 1070]);
   const y = lerp(f, [0, fRaw, fCut], [560, 700, 720]);
   return (
@@ -37,7 +37,7 @@ export const Press: React.FC<{ dur: number; fPress1: number; fPress2: number; fD
   const f = useCurrentFrame();
   const push = (t: number) => interpolate(f, [t - 2, t + 6, t + 20], [0, 1, 0.25], { ...CL, easing: EASE });
   const p = Math.max(push(fPress1), push(fPress2));
-  const s = lerp(f, [0, fPress1, fDry - 6, fDry + 24, dur], [1.05, 1.45, 1.5, 2.4, 2.5]);
+  const s = (1 + 0.05 * f / dur) * lerp(f, [0, fPress1, fDry - 6, fDry + 24, dur], [1.05, 1.45, 1.5, 2.4, 2.5]);
   const x = lerp(f, [0, fPress1, fDry - 6, fDry + 24], [980, 1000, 1000, 640]);
   const y = lerp(f, [0, fPress1, fDry - 6, fDry + 24], [600, 760, 760, 700]);
   const toast = lerp(f, [fCrouton - 4, fCrouton + 18], [0, 1]);
