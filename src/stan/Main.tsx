@@ -9,6 +9,7 @@ import * as S from "./Carne";
 import * as Mu from "./Muro";
 import * as Pi from "./Piso";
 import * as Fr from "./Frasco";
+import * as Pl from "./Placa";
 
 export const TOTAL_FRAMES_STAN = TOTAL;
 const TR = 8;
@@ -23,6 +24,8 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   const seed = s.id + 1;
   const FrC = (Fr as any)[s.view || ""];
   if (/N$/.test(s.view || "") && FrC) return <FrC {...s.p} dur={dur} />;
+  const PlC = (Pl as any)[s.view || ""];
+  if (/Pl$/.test(s.view || "") && PlC) return <PlC {...s.p} dur={dur} />;
   switch (s.view) {
     case "clip": return <K.Clip src={s.src} seed={seed} dur={dur} clipDur={s.clipDur} minRate={s.veo ? 0.42 : 0.6} />;
     case "photo": return <K.Photo src={s.src} seed={seed} dur={dur} />;
