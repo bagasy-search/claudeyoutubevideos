@@ -479,8 +479,8 @@ export const EscLuna: React.FC<{ src: string; fMoon: number; dur: number }> = ({
           transform: `translateY(${ty}px) scale(${sc}, ${sc * sq})` }}>
           <div style={{ position: "absolute", left: P.cx - P.rx * 1.9, top: P.cy - P.ry * 1.9, width: P.rx * 3.8, height: P.ry * 3.8, borderRadius: "50%",
             background: "radial-gradient(closest-side, rgba(220,232,255,0.5), rgba(170,195,255,0.15) 60%, transparent)", mixBlendMode: "screen", opacity: noche }} />
-          <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: `ellipse(${P.rx}px ${P.ry}px at ${P.cx}px ${P.cy}px)`,
-            filter: `grayscale(${0.2 * noche}) sepia(${0.25 * noche}) brightness(${1 + 0.3 * noche}) contrast(${1 + 0.1 * noche})` }}>
+          <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, WebkitMaskImage: `radial-gradient(ellipse ${P.rx}px ${P.ry}px at ${P.cx}px ${P.cy}px, #000 82%, transparent 100%)`, maskImage: `radial-gradient(ellipse ${P.rx}px ${P.ry}px at ${P.cx}px ${P.cy}px, #000 82%, transparent 100%)`,
+            filter: `grayscale(${0.2 * noche}) sepia(${0.25 * noche}) brightness(${1 + 0.18 * noche}) contrast(${1 + 0.1 * noche})` }}>
             <Img src={staticFile(src)} style={FOTO} />
           </div>
         </div>
