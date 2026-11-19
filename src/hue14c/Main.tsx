@@ -17,7 +17,7 @@ const ShotBody: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
       case "mapa": return <K.MapaHilo img={s.img} a={s.a} b={s.b} fA={s.fA} fB={s.fB} dur={dur} />;
       case "recuerdo": return <K.Recuerdo img={s.img} head={s.head} quote={s.quote} who={s.who} fQuote={s.fQuote} dur={dur} />;
       case "pizarron": return <K.Pizarron img={s.img} head={s.head} lines={s.lines} seed={s.id} foot={s.foot} dur={dur} />;
-      case "engomados": return <K.Engomados img={s.img} items={s.items} seed={s.id} dur={dur} />;
+      case "engomados": return <K.Engomados img={s.img} items={s.items} seed={s.id} dur={dur} marcas={s.marcas} />;
       case "bolsa": return <K.Bolsa img={s.img} n={s.n} text={s.text} dur={dur} />;
       case "meses": return <K.PizarronMeses img={s.img} foot={s.foot} dur={dur} />;
       case "sellos": return <K.Sellos img={s.img} items={s.items} zoomTo={s.zoomTo} dur={dur} chico={s.chico} />;

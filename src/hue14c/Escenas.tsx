@@ -14,7 +14,7 @@ const rnd = (i: number) => { const x = Math.sin(i * 127.1 + 311.7) * 43758.5453;
 // ── Escena 1 · la prueba del puño. El terrón recortado se aprieta, se desarma en trocitos que caen a la carretilla
 // y los dos fallos quedan hundidos en la mezcla de la carretilla como letras apretadas con el dedo.
 const TERRON = { x: 990, y: 450, r: 150 };
-const TILE = 50;
+const TILE = 60;
 const TROZOS = (() => {
   const out: { x: number; y: number; i: number }[] = []; let i = 0;
   for (let y = TERRON.y - TERRON.r; y < TERRON.y + TERRON.r; y += TILE)
@@ -29,9 +29,9 @@ const Hundida: React.FC<{ t: string; f0: number; f1: number }> = ({ t, f0, f1 })
   const k = interpolate(f, [f0, f0 + 16], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) });
   const out = interpolate(f, [f1, f1 + 14], [1, 0], CL);
   return (
-    <div style={{ position: "absolute", left: 0, width: 1920, top: 905, textAlign: "center", fontFamily: FONTS.SERIF, fontSize: 92, fontWeight: 700, letterSpacing: 2,
-      color: "rgba(38,22,12,0.88)", opacity: out, transform: `scale(${1.18 - 0.18 * k})`, clipPath: `inset(0 ${(1 - k) * 100}% 0 0)`,
-      textShadow: "0 -3px 2px rgba(0,0,0,0.65), 0 3px 2px rgba(255,214,170,0.28)" }}>{t}</div>
+    <div style={{ position: "absolute", left: 0, width: 1920, top: 850, textAlign: "center", fontFamily: FONTS.SERIF, fontSize: 104, fontWeight: 700, letterSpacing: 3,
+      color: "rgba(252,238,212,0.97)", opacity: out, transform: `scale(${1.18 - 0.18 * k})`, clipPath: `inset(-20px ${(1 - k) * 100}% -20px 0)`,
+      textShadow: "0 -3px 2px rgba(0,0,0,0.75), 0 4px 0 rgba(70,40,18,0.9), 0 8px 18px rgba(0,0,0,0.7)" }}>{t}</div>
   );
 };
 export const EscPuno: React.FC<{ src: string; fAprieta: number; fPastel: number; fDesarma: number; fChorrea: number; fBola: number; dur: number }> = ({ src, fAprieta, fPastel, fDesarma, fChorrea, fBola, dur }) => {
@@ -41,28 +41,28 @@ export const EscPuno: React.FC<{ src: string; fAprieta: number; fPastel: number;
   const ux = interpolate(f, [0, dur], [-0.1, 0.05], CL) + Math.sin(f / 70) * 0.05;
   const apr = spring({ frame: f - fAprieta, fps: 30, config: { damping: 11, mass: 1, stiffness: 120 } });
   const suelta = spring({ frame: f - fPastel, fps: 30, config: { damping: 14 } });
-  const sq = 1 - 0.09 * apr + 0.09 * suelta;
+  const sq = 1 - 0.16 * apr + 0.16 * suelta; const tiembla = apr > 0.2 && suelta < 0.5 ? Math.sin(f * 2.3) * 4 * (1 - suelta) : 0;
   const rompe = f >= fDesarma;
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#000" }}>
       <div style={{ ...FULL, transform: cam(s, ux, uy) }}>
         <Img src={S} style={FULL} />
         {!rompe && (
-          <div style={{ ...FULL, clipPath: `circle(${TERRON.r}px at ${TERRON.x}px ${TERRON.y}px)`, transformOrigin: `${TERRON.x}px ${TERRON.y}px`, transform: `scale(${sq})`, filter: "drop-shadow(0 10px 14px rgba(0,0,0,0.5))" }}>
+          <div style={{ ...FULL, clipPath: `circle(${TERRON.r}px at ${TERRON.x}px ${TERRON.y}px)`, transformOrigin: `${TERRON.x}px ${TERRON.y}px`, transform: `translateX(${tiembla}px) scale(${sq})`, filter: "drop-shadow(0 10px 14px rgba(0,0,0,0.5))" }}>
             <Img src={S} style={FULL} />
           </div>
         )}
         {rompe && <div style={{ position: "absolute", left: TERRON.x - TERRON.r, top: TERRON.y - TERRON.r, width: TERRON.r * 2, height: TERRON.r * 2, borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(30,18,10,0.55) 0%, rgba(30,18,10,0.25) 55%, rgba(30,18,10,0) 75%)", opacity: interpolate(f, [fDesarma, fDesarma + 20], [0, 1], CL) }} />}
+          background: "radial-gradient(circle, rgba(30,18,10,0.78) 0%, rgba(30,18,10,0.4) 55%, rgba(30,18,10,0) 78%)", opacity: interpolate(f, [fDesarma, fDesarma + 20], [0, 1], CL) }} />}
         {rompe && TROZOS.map(({ x, y, i }) => {
           const d = Math.floor(rnd(i) * 10) + Math.floor((y - (TERRON.y - TERRON.r)) / TILE) * 2;
           const t = Math.max(0, f - fDesarma - d);
-          const dy = 0.55 * t * t + 2 * t; const dx = (rnd(i + 7) - 0.5) * 3 * t; const rot = (rnd(i + 3) - 0.5) * 14 * t;
+          const dy = 0.22 * t * t + 1.2 * t; const dx = (rnd(i + 7) - 0.5) * 4 * t; const rot = (rnd(i + 3) - 0.5) * 9 * t;
           const op = interpolate(y + dy, [900, 1060], [1, 0], CL);
           if (op <= 0) return null;
           return (
             <div key={i} style={{ position: "absolute", left: x, top: y, width: TILE, height: TILE, overflow: "hidden", borderRadius: 10 + rnd(i + 1) * 12, opacity: op,
-              transform: `translate(${dx}px, ${dy}px) rotate(${rot}deg) scale(${1 - Math.min(0.35, t / 60)})`, boxShadow: t > 0 ? "0 6px 8px rgba(0,0,0,0.45)" : "none" }}>
+              transform: `translate(${dx}px, ${dy}px) rotate(${rot}deg) scale(${1 - Math.min(0.3, t / 80)})`, boxShadow: t > 0 ? "0 10px 12px rgba(0,0,0,0.6)" : "none", outline: t > 0 ? "2px solid rgba(40,24,12,0.5)" : "none" }}>
               <Img src={S} style={{ ...FULL, left: -x, top: -y }} />
             </div>
           );
@@ -83,12 +83,12 @@ export const EscRefri: React.FC<{ src: string; fRefri: number; fEstufa: number; 
   const s = interpolate(f, [0, dur], [1.08, 1.16], CL);
   const ux = interpolate(f, [0, fEstufa - 6, fEstufa + 26], [-0.55, -0.55, 0.15], { ...CL, easing: io });
   const uy = interpolate(f, [0, fEstufa - 6, fEstufa + 13, fEstufa + 26], [0.2, 0.2, 0.45, 0.25], { ...CL, easing: io });
-  const barre = interpolate(f, [fTibio - 6, fTibio + 26], [0, 1], { ...CL, easing: io });
+  const barre = interpolate(f, [fTibio - 6, fTibio + 40], [0, 1], { ...CL, easing: io });
   const tibio = interpolate(f, [fRefri, fRefri + 24], [0, 1], CL) * (1 + 0.15 * Math.sin(Math.max(0, f - fCaliente) / 6) * (f > fCaliente ? 1 : 0));
   const quema = interpolate(f, [fEstufa, fEstufa + 18], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) }) * (1 + 0.12 * Math.sin(f / 3.2));
   const lectura = (f0: number, x: number, y: number, t: string, c: string) => {
     if (f < f0) return null; const k = spring({ frame: f - f0, fps: 30, config: { damping: 13 } });
-    return <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${0.7 + 0.3 * k})`, opacity: k, fontFamily: FONTS.SANS, fontSize: 64, fontWeight: 800,
+    return <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${0.7 + 0.3 * k})`, opacity: k, fontFamily: FONTS.SANS, fontSize: 116, fontWeight: 800,
       color: c, letterSpacing: 1, textShadow: "0 0 18px rgba(0,0,0,0.9), 0 3px 4px rgba(0,0,0,0.9)" }}>{t}</div>;
   };
   return (
@@ -97,15 +97,19 @@ export const EscRefri: React.FC<{ src: string; fRefri: number; fEstufa: number; 
         <Img src={S} style={FULL} />
         <div style={{ ...FULL, clipPath: `inset(0 ${(1 - barre) * 100}% 0 0)` }}>
           <Img src={S} style={{ ...FULL, filter: "grayscale(1) contrast(1.25) brightness(0.72)" }} />
-          <div style={{ ...FULL, backgroundColor: "#1B3FB8", mixBlendMode: "color" }} />
+          <div style={{ ...FULL, background: "linear-gradient(160deg, #3A1C8C 0%, #1B3FB8 35%, #1767C9 60%, #12358E 100%)", mixBlendMode: "color" }} />
+          <div style={{ ...FULL, mixBlendMode: "color", opacity: Math.min(1, tibio),
+            background: `radial-gradient(ellipse 620px 260px at ${VASOS.x}px ${VASOS.y}px, #FFE24A 0%, #FF9A1F 22%, #E8452A 40%, #A12CA8 62%, rgba(40,60,200,0) 85%)` }} />
+          <div style={{ ...FULL, mixBlendMode: "color", opacity: Math.min(1, quema),
+            background: `radial-gradient(ellipse 420px 220px at ${ESTUFA.x}px ${ESTUFA.y}px, #FFFFFF 0%, #FFF27A 14%, #FF8A1F 30%, #E0261F 48%, #8E1FA0 68%, rgba(40,60,200,0) 88%)` }} />
           <div style={{ ...FULL, opacity: Math.min(1, tibio), mixBlendMode: "screen",
             background: `radial-gradient(ellipse 470px 170px at ${VASOS.x}px ${VASOS.y}px, rgba(255,176,48,${0.62 * tibio}) 0%, rgba(255,120,30,${0.35 * tibio}) 45%, rgba(255,90,20,0) 100%)` }} />
           <div style={{ ...FULL, opacity: Math.min(1, quema), mixBlendMode: "screen",
             background: `radial-gradient(ellipse 260px 120px at ${ESTUFA.x}px ${ESTUFA.y}px, rgba(255,255,235,${0.95 * quema}) 0%, rgba(255,210,60,${0.8 * quema}) 25%, rgba(240,40,20,${0.7 * quema}) 55%, rgba(200,20,40,0) 100%)` }} />
         </div>
-        {barre > 0 && barre < 1 && <div style={{ position: "absolute", top: 0, height: 1080, left: barre * 1920 - 2, width: 4, backgroundColor: "#E8F4FF", boxShadow: "0 0 26px 8px rgba(160,210,255,0.8)" }} />}
-        {lectura(fCaliente, VASOS.x, VASOS.y - 230, "≈ 25 °C", "#FFC35A")}
-        {lectura(fCocina, ESTUFA.x, ESTUFA.y - 190, "se cocina", "#FF5A3C")}
+        {barre > 0 && barre < 1 && <div style={{ position: "absolute", top: 0, height: 1080, left: barre * 1920 - 5, width: 10, backgroundColor: "#F2FAFF", boxShadow: "0 0 40px 18px rgba(140,200,255,0.9), 0 0 120px 40px rgba(90,160,255,0.45)" }} />}
+        {lectura(fCaliente, VASOS.x - 40, VASOS.y - 250, "≈ 25 °C", "#FFC35A")}
+        {lectura(fCocina, ESTUFA.x - 60, ESTUFA.y + 300, "se cocina", "#FF6A4C")}
       </div>
     </AbsoluteFill>
   );
@@ -117,7 +121,7 @@ const Ventana: React.FC<{ S: string; x: number; y: number; a: number; L: number;
   if (L <= 1) return null;
   return (
     <div style={{ position: "absolute", left: x, top: y - t / 2, width: L, height: t, transformOrigin: `0 ${t / 2}px`, transform: `rotate(${a}deg)`, overflow: "hidden", borderRadius: t / 2,
-      boxShadow: "0 0 34px 6px rgba(255,236,190,0.28)" }}>
+      WebkitMaskImage: "linear-gradient(180deg, transparent 0%, #000 30%, #000 70%, transparent 100%)", maskImage: "linear-gradient(180deg, transparent 0%, #000 30%, #000 70%, transparent 100%)" }}>
       <div style={{ position: "absolute", left: 0, top: t / 2, width: 0, height: 0, transformOrigin: "0 0", transform: `rotate(${-a}deg)` }}>
         <Img src={S} style={{ ...FULL, left: -x, top: -y }} />
       </div>
@@ -125,9 +129,12 @@ const Ventana: React.FC<{ S: string; x: number; y: number; a: number; L: number;
   );
 };
 const Ojo: React.FC<{ S: string; x: number; y: number; r: number }> = ({ S, x, y, r }) => r <= 1 ? null : (
-  <div style={{ position: "absolute", left: x - r, top: y - r, width: r * 2, height: r * 2, borderRadius: "50%", overflow: "hidden", boxShadow: "0 0 40px 10px rgba(255,240,200,0.4)" }}>
-    <Img src={S} style={{ ...FULL, left: -(x - r), top: -(y - r), filter: "brightness(1.18) saturate(1.15)" }} />
-  </div>
+  <>
+    <div style={{ position: "absolute", left: x - r * 1.6, top: y - r * 1.6, width: r * 3.2, height: r * 3.2, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,246,214,0.55) 0%, rgba(255,236,190,0.22) 40%, rgba(255,236,190,0) 70%)" }} />
+    <div style={{ position: "absolute", left: x - r, top: y - r, width: r * 2, height: r * 2, borderRadius: "50%", overflow: "hidden", WebkitMaskImage: "radial-gradient(circle, #000 62%, transparent 100%)", maskImage: "radial-gradient(circle, #000 62%, transparent 100%)" }}>
+      <Img src={S} style={{ ...FULL, left: -(x - r), top: -(y - r), filter: "brightness(1.25) saturate(1.2)" }} />
+    </div>
+  </>
 );
 const NUDOS = [
   { x: 963, y: 420, tx: 600, ty: 420 }, { x: 963, y: 420, tx: 1284, ty: 470 },
@@ -143,7 +150,7 @@ export const EscPunta: React.FC<{ src: string; fTallo: number; fRamas: number; f
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#000" }}>
       <div style={{ ...FULL, transform: cam(s, ux, uy) }}>
         <Img src={S} style={FULL} />
-        <Img src={S} style={{ ...FULL, opacity: fondo, filter: "blur(9px) brightness(0.42) saturate(0.6)" }} />
+        <Img src={S} style={{ ...FULL, opacity: fondo, filter: "blur(10px) brightness(0.5) saturate(0.6)" }} />
         <Ventana S={S} x={963} y={905} a={-90} L={610 * tallo} t={96} />
         {NUDOS.map((n, i) => {
           const k = spring({ frame: f - fRamas - i * 5, fps: 30, config: { damping: 12, mass: 1, stiffness: 110 } });
@@ -152,7 +159,7 @@ export const EscPunta: React.FC<{ src: string; fTallo: number; fRamas: number; f
         })}
         {NUDOS.map((n, i) => {
           const k = spring({ frame: f - fFlores - i * 4, fps: 30, config: { damping: 10, mass: 0.8, stiffness: 140 } });
-          return <Ojo key={"o" + i} S={S} x={n.x + (n.tx - n.x) * 0.82} y={n.y + (n.ty - n.y) * 0.82} r={78 * k} />;
+          return <Ojo key={"o" + i} S={S} x={n.x + (n.tx - n.x) * 0.82} y={n.y + (n.ty - n.y) * 0.82} r={112 * k} />;
         })}
       </div>
     </AbsoluteFill>
