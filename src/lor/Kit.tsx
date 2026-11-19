@@ -25,7 +25,9 @@ const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 export const hash = (n: number) => { let x = Math.imul(n + 1, 2654435761) >>> 0; x ^= x >>> 16; x = Math.imul(x, 2246822507) >>> 0; x ^= x >>> 13; x = Math.imul(x, 3266489909) >>> 0; x ^= x >>> 16; return x >>> 0; };
 const r01 = (seed: number, k: number) => (hash(seed * 31 + k * 977) % 100000) / 100000;
 export const useIn = (delay = 0, damping = 18) => { const f = useCurrentFrame(); const { fps } = useVideoConfig(); return spring({ frame: f - delay, fps, config: { damping, mass: 0.7 } }); };
-export const useOut = (dur: number, len = 10) => { const f = useCurrentFrame(); return interpolate(f, [dur - len, dur], [1, 0], CL); };
+// 19-nov: si después viene Loretta, el componente NO se desvanece (corte seco al avatar; el fundido dejaba el panel encima de su cara)
+export const OutCtx = React.createContext(true);
+export const useOut = (dur: number, len = 10) => { const f = useCurrentFrame(); const on = React.useContext(OutCtx); return on ? interpolate(f, [dur - len, dur], [1, 0], CL) : 1; };
 // fotos/clips Nano Banana y Veo: ~1 de 5 trae la estrellita abajo a la derecha → recorte scale(1.11) anclado arriba-izquierda
 export const est = (src?: string): React.CSSProperties => (src && /\/(g|g2|v)\//.test(src) ? { transform: "scale(1.11)", transformOrigin: "0 0" } : {});
 export const shadow = "0 2px 16px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.6)";
@@ -586,7 +588,7 @@ export const Cuenta: React.FC<{ rows: { txt: string; amt: string }[]; total: str
           </div>
           <div style={{ height: 4, background: T.ink, margin: "16px 0 10px", width: `${interpolate(f, [34, 48], [0, 100], CL)}%` }} />
           <div style={{ display: "flex", justifyContent: "space-between", opacity: interpolate(f, [46, 58], [0, 1], CL) }}>
-            <span style={{ fontFamily: SANS, fontWeight: 600, fontSize: 30, letterSpacing: 4, color: T.acc, marginTop: 14 }}>{label}</span>
+            <span style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 3, color: T.acc, marginTop: 10 }}>{label}</span>
             <span style={{ fontFamily: HAND, fontWeight: 700, fontSize: total.length > 14 ? 54 : 84, color: T.acc, whiteSpace: "nowrap" }}>{total}</span>
           </div>
         </Paper>
