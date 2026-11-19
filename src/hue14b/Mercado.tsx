@@ -368,10 +368,10 @@ export const Engomados: React.FC<{ img: string; items: Peg[]; seed: number; dur:
   let cx = items[0] ? items[0].x : 960, cy = items[0] ? items[0].y + 140 : 540;
   for (let i = 1; i < items.length; i++) { const u = seg(f, items[i].f - 18, items[i].f + 6); cx = lerp(cx, items[i].x, u); cy = lerp(cy, items[i].y + 140, u); }
   cx = lerp(960, cx, 0.55); cy = lerp(540, cy, 0.55);
-  const s = lerp(1.06, 1.18, seg(f, 0, dur));
+  const s = lerp(1.08, 1.26, seg(f, 0, dur));
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
-      <div style={camC(cx, cy, s)}>
+      <div style={camC(cx + Math.sin(f / 40) * 38, cy + Math.cos(f / 55) * 22, s)}>
         <Img src={staticFile(img)} style={FOTO} />
         {items.map((m, i) => {
           const nx = items[i + 1]; const tx = Math.min(1700, Math.max(240, m.x)); const ty = Math.min(700, Math.max(40, m.y));
@@ -441,10 +441,10 @@ export const Sellos: React.FC<{ img: string; items: Sello[]; dur: number; zoomTo
   const last = items[items.length - 1], prev = items.length > 1 ? items[items.length - 2] : null;
   const u = seg(f, Math.max(0, last.f - 30), last.f);
   const cx = prev ? lerp(prev.x, last.x, u) : lerp(960, last.x, u), cy = (prev ? lerp(prev.y, last.y, u) : lerp(540, last.y, u)) - 40 * Math.sin(u * Math.PI);
-  const s = lerp(1.2, 1.32, seg(f, 0, dur));
+  const s = lerp(1.2, 1.38, seg(f, 0, dur));
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
-      <div style={camC(cx, cy, s)}>
+      <div style={camC(cx + Math.sin(f / 40) * 38, cy + Math.cos(f / 55) * 22, s)}>
         <Img src={staticFile(img)} style={FOTO} />
         {items.map((it, i) => {
           if (f < it.f) return null;
