@@ -16,7 +16,7 @@ const FULL: React.CSSProperties = { position: "absolute", left: 0, top: 0, width
 export const Board: React.FC<{ head: string; rows: { t: string; f: number; st: number }[]; foot?: string; dur: number; seed?: number }> = ({ head, rows, foot, dur, seed = 0 }) => {
   const f = useCurrentFrame();
   const z = interpolate(f, [0, dur], [1.0, 1.045]);
-  const big = rows.length <= 2;
+  const big = rows.length <= 2; const cap = Math.floor(600 / (rows.length * 1.12));
   return (
     <AbsoluteFill style={{ background: "#F1EEE6", backgroundImage: "linear-gradient(rgba(0,0,0,0.07) 2px, transparent 2px), linear-gradient(90deg, rgba(0,0,0,0.07) 2px, transparent 2px)", backgroundSize: "150px 110px", opacity: interpolate(f, [dur - 8, dur], [1, 0], CL) }}>
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 40%, rgba(255,255,255,0) 40%, rgba(60,45,30,0.35) 100%)" }} />
@@ -30,7 +30,7 @@ export const Board: React.FC<{ head: string; rows: { t: string; f: number; st: n
           {rows.map((r, i) => {
             const p = interpolate(f, [i * 3, i * 3 + 12], [0, 1], { ...CL, easing: Easing.out(Easing.quad) }); const hi = f >= r.f;
             const fs = r.st === 2 ? Math.min(big ? 190 : 150, Math.floor(1330 / (r.t.length * 0.62))) : Math.min(124, Math.floor(1330 / (r.t.length * 0.42)));
-            return <div key={i} style={{ ...chalk, fontFamily: r.st === 2 ? SLAB : HAND, fontWeight: r.st === 2 ? 400 : 700, fontSize: fs, lineHeight: 1.08, color: r.st === 2 ? K.gold : K.chalk, opacity: p * (hi ? 1 : 0.42), transform: `scale(${hi ? 1 : 0.97})`, transformOrigin: "0 50%", whiteSpace: "nowrap" }}>{r.t}</div>;
+            return <div key={i} style={{ ...chalk, fontFamily: r.st === 2 ? SLAB : HAND, fontWeight: r.st === 2 ? 400 : 700, fontSize: Math.min(fs, cap), lineHeight: 1.08, color: r.st === 2 ? K.gold : K.chalk, opacity: p * (hi ? 1 : 0.85), transform: `scale(${hi ? 1 : 0.97})`, transformOrigin: "0 50%", whiteSpace: "nowrap" }}>{r.t}</div>;
           })}
         </div>
         {foot ? <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, letterSpacing: 2, color: "rgba(243,239,228,0.7)" }}>Source: {foot}</div> : null}
