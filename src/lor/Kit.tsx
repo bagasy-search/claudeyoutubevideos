@@ -26,6 +26,8 @@ export const hash = (n: number) => { let x = Math.imul(n + 1, 2654435761) >>> 0;
 const r01 = (seed: number, k: number) => (hash(seed * 31 + k * 977) % 100000) / 100000;
 export const useIn = (delay = 0, damping = 18) => { const f = useCurrentFrame(); const { fps } = useVideoConfig(); return spring({ frame: f - delay, fps, config: { damping, mass: 0.7 } }); };
 export const useOut = (dur: number, len = 10) => { const f = useCurrentFrame(); return interpolate(f, [dur - len, dur], [1, 0], CL); };
+// fotos/clips Nano Banana y Veo: ~1 de 5 trae la estrellita abajo a la derecha → recorte scale(1.11) anclado arriba-izquierda
+export const est = (src?: string): React.CSSProperties => (src && /\/(g|g2|v)\//.test(src) ? { transform: "scale(1.11)", transformOrigin: "0 0" } : {});
 export const shadow = "0 2px 16px rgba(0,0,0,0.55), 0 1px 3px rgba(0,0,0,0.6)";
 
 // ---------- encuadre propio (Ken Burns sorteado), nunca quieto
@@ -43,14 +45,14 @@ export const useKB = (seed: number, dur: number, clip = false) => {
 
 export const Photo: React.FC<{ src: string; seed: number; dur: number }> = ({ src, seed, dur }) => {
   const kb = useKB(seed, dur);
-  return <AbsoluteFill style={{ overflow: "hidden", background: "#111" }}><Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} /></AbsoluteFill>;
+  return <AbsoluteFill style={{ overflow: "hidden", background: "#111" }}><AbsoluteFill style={est(src)}><Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} /></AbsoluteFill></AbsoluteFill>;
 };
 
 // clip real: mudo (su ambiente de cocina va premezclado en la pista), encuadre propio
 export const Clip: React.FC<{ src: string; seed: number; dur: number; clipDur?: number; minRate?: number }> = ({ src, seed, dur, clipDur, minRate = 0.75 }) => {
   const kb = useKB(seed, dur, true);
   const rate = clipDur && clipDur < dur / 30 + 0.1 ? Math.max(minRate, (clipDur - 0.15) / (dur / 30)) : 1;
-  return <AbsoluteFill style={{ overflow: "hidden", background: "#111" }}><OffthreadVideo src={staticFile(src)} muted playbackRate={rate} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} /></AbsoluteFill>;
+  return <AbsoluteFill style={{ overflow: "hidden", background: "#111" }}><AbsoluteFill style={est(src)}><OffthreadVideo src={staticFile(src)} muted playbackRate={rate} style={{ width: "100%", height: "100%", objectFit: "cover", ...kb }} /></AbsoluteFill></AbsoluteFill>;
 };
 
 // avatar con encuadres variados: plano normal / cerrado (punch) / corrido para la foto al lado (split); "mano" = vaivén lento de cámara en mano
@@ -226,7 +228,7 @@ export const Carousel: React.FC<{ cards: { title: string; src: string }[]; bg?: 
             <div style={{ marginLeft: 40 + (i * 103) % 560, width: 170, height: 46, background: T.paper2, borderRadius: "10px 10px 0 0", fontFamily: SANS, fontWeight: 700, fontSize: 24, color: T.acc, display: "flex", alignItems: "center", justifyContent: "center" }}>{String(i + 1).padStart(2, "0")}</div>
             <div style={{ background: T.paper, padding: 16, borderRadius: "0 8px 8px 8px", boxShadow: "0 -8px 30px rgba(0,0,0,0.35)", backgroundImage: `repeating-linear-gradient(180deg, transparent 0 38px, ${T.line} 38px 40px)` }}>
               <div style={{ display: "flex", gap: 18, alignItems: "center" }}>
-                <div style={{ width: 380, height: 250, overflow: "hidden", borderRadius: 4, flex: "none" }}><Img src={staticFile(c.src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div style={{ width: 380, height: 250, overflow: "hidden", borderRadius: 4, flex: "none" }}><Img src={staticFile(c.src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...est(c.src) }} /></div>
                 <span style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: T.ink, lineHeight: 1.05 }}>{c.title}</span>
               </div>
             </div>
@@ -276,7 +278,7 @@ export const Album: React.FC<{ src: string; seed: number; dur: number; caption?:
       <AbsoluteFill style={{ transform: `scale(${1 + 0.05 * t}) rotate(${-0.5 * t}deg)` }}>
         <div style={{ position: "absolute", left: 300, top: 70, width: 1320, padding: "34px 34px 90px", background: "#F1E8D4", transform: `rotate(${r}deg)`, boxShadow: "0 34px 80px rgba(0,0,0,0.6)" }}>
           <div style={{ width: 1252, height: 760, overflow: "hidden", position: "relative" }}>
-            <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...est(src) }} />
             {corner({ left: 0, top: 0, borderWidth: "56px 56px 0 0", borderColor: "#1E1914 transparent transparent transparent" })}
             {corner({ right: 0, top: 0, borderWidth: "0 56px 56px 0", borderColor: "transparent #1E1914 transparent transparent" })}
             {corner({ left: 0, bottom: 0, borderWidth: "56px 0 0 56px", borderColor: "transparent transparent transparent #1E1914" })}
@@ -299,7 +301,7 @@ export const PolaroidShot: React.FC<{ src: string; caption: string; bg?: string;
       <Fondo src={bg} seed={seed} dur={dur} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <div style={{ background: "#FBF8F1", padding: "30px 30px 120px", boxShadow: "0 34px 70px rgba(0,0,0,0.55)", transform: `translateY(${(1 - p) * -1100}px) rotate(${r + (1 - p) * 20}deg) scale(${1 + 0.03 * (f / Math.max(1, dur))})`, position: "relative" }}>
-          <div style={{ width: 900, height: 680, overflow: "hidden" }}><Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
+          <div style={{ width: 900, height: 680, overflow: "hidden" }}><Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", ...est(src) }} /></div>
           <div style={{ position: "absolute", left: 0, right: 0, bottom: 28, textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 64, color: "#2A2520" }}>{caption}</div>
         </div>
       </AbsoluteFill>

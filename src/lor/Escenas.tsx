@@ -22,7 +22,7 @@
 //   la textura es la del pote de g5900. Máscara: 5 manchas radiales que crecen con desfase desde 1460,620.
 //   CÁMARA: 1.0 centrada 1100,540 → 1.75 sobre 1470,600. Al final, g5900 entra a la misma escala aparente y abre a 1.02.
 import React from "react";
-import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, Easing } from "remotion";
+import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, Easing, spring } from "remotion";
 import { loadFont } from "@remotion/google-fonts/Kalam";
 
 const { fontFamily: MANO } = loadFont("normal", { weights: ["700"], subsets: ["latin"] });
@@ -292,6 +292,107 @@ export const EscVentaja: React.FC<{ a: string; b: string; fHead: number; fMe: nu
           <Img src={staticFile(a)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scaleX(${1 + 0.06 * blend}) scaleY(${1 - 0.03 * blend})`, filter: `sepia(${0.25 * blend}) contrast(${1 - 0.15 * blend})` }} />
         </div>
       </div>
+    </AbsoluteFill>
+  );
+};
+
+// ---------------- lcf15b · bol y monedas (g0010) · LA IDEA: las tres monedas reales de la mesada se deslizan por la madera
+//   una tras otra (resorte con peso) y quedan apiladas contra el pie del bol: "thirty-eight cents a bowl".
+//   Donde estaban queda la madera (parche de la misma foto, 70 px más abajo). En la 2ª "thirty-eight" la cámara entra al bol.
+//   Encuadre: escala ≥1.11 anclada a la izquierda (tapa la estrellita de la esquina inferior derecha).
+const MONEDAS = [
+  { cx: 1211, cy: 884, rx: 42, ry: 25, to: [1158, 912], sx: 0, sy: -50 },
+  { cx: 1324, cy: 900, rx: 38, ry: 22, to: [1160, 901], sx: 95, sy: 0 },
+  { cx: 1288, cy: 934, rx: 35, ry: 21, to: [1162, 890], sx: 0, sy: 58 },
+];
+export const EscBolMonedas: React.FC<{ src: string; coins: number[]; dur: number }> = ({ src, coins, dur }) => {
+  const f = useCurrentFrame();
+  const { fps } = { fps: 30 };
+  const [m0, m1] = [coins[0] ?? 10, coins[1] ?? Math.round(dur * 0.55)];
+  const push = suave((f - (m1 - 6)) / 42);
+  const drift = suave(f / Math.max(1, m1));
+  const s = 1.11 + 0.04 * drift + 0.30 * push;
+  const px = 865 + 60 * drift + 75 * push, py = 540 + 120 * drift + 200 * push;
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
+      <AbsoluteFill style={camara(px, py, s)}>
+        <Img src={staticFile(src)} style={FOTO} />
+        {MONEDAS.map((c, i) => {
+          const k = spring({ frame: f - (m0 + i * 6), fps, config: { damping: 14, mass: 1.1, stiffness: 90 } });
+          const dx = (c.to[0] - c.cx) * k, dy = (c.to[1] - c.cy) * k;
+          const clip = `ellipse(${c.rx}px ${c.ry}px at ${c.cx}px ${c.cy}px)`;
+          const maskP = `radial-gradient(ellipse ${c.rx + 14}px ${c.ry + 12}px at ${c.cx}px ${c.cy}px, #000 50%, transparent 100%)`;
+          return (
+            <React.Fragment key={i}>
+              {k > 0.01 && (
+                <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, WebkitMaskImage: maskP, maskImage: maskP, opacity: Math.min(1, k * 3) }}>
+                  <Img src={staticFile(src)} style={{ ...FOTO, left: -c.sx, top: -c.sy }} />
+                </div>
+              )}
+              <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `translate(${dx}px, ${dy}px)`, filter: `drop-shadow(3px 5px 4px rgba(40,25,10,${0.25 + 0.25 * k}))` }}>
+                <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: clip }}>
+                  <Img src={staticFile(src)} style={FOTO} />
+                </div>
+              </div>
+            </React.Fragment>
+          );
+        })}
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// 11 EscAmanece · "In the morning, they've doubled in size." (g0830 noche → g0860 mañana): arranca en el frasco de la noche
+//   (la foto de la frase 083); la luz del amanecer entra barriendo en diagonal desde la ventana y del otro lado del barrido
+//   ya es la mañana, con los porotos al doble; en "doubled" la cámara se arrima al frasco lleno.
+export const EscAmanece: React.FC<{ a: string; b: string; fDawn: number; fGrow: number; dur: number }> = ({ a, b, fDawn, fGrow, dur }) => {
+  const f = useCurrentFrame();
+  const w = interpolate(f, [fDawn + 4, fDawn + 30], [0, 1], { ...CLX, easing: Easing.inOut(Easing.cubic) });
+  const barre = `linear-gradient(235deg, #000 ${-12 + 130 * w}%, transparent ${0 + 130 * w}%)`;
+  const brillo = `linear-gradient(235deg, transparent ${-20 + 130 * w}%, rgba(255,236,190,0.7) ${-6 + 130 * w}%, transparent ${4 + 130 * w}%)`;
+  const kA = suave(f / 30), sA = 1.10 + 0.04 * kA;
+  const kB = suave((f - fGrow + 6) / 50), sB = 1.10 + 0.14 * kB;
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
+      {w < 1 && <AbsoluteFill style={camara(1450, 600, sA)}><Img src={staticFile(a)} style={FOTO} /></AbsoluteFill>}
+      <AbsoluteFill style={{ WebkitMaskImage: barre, maskImage: barre }}>
+        <AbsoluteFill style={camara(860 + 10 * kB, 620 - 10 * kB, sB)}><Img src={staticFile(b)} style={FOTO} /></AbsoluteFill>
+      </AbsoluteFill>
+      {w > 0 && w < 1 && <AbsoluteFill style={{ background: brillo, mixBlendMode: "screen" }} />}
+    </AbsoluteFill>
+  );
+};
+
+// 12 EscTapa · "the lid rattling just a bit, the window steaming up" (g1840): la tapa, recortada, tiembla en ráfagas cortas
+//   (se levanta 3-5 px de un costado y cae); en "steaming" el vidrio de la ventana se empaña de abajo hacia arriba.
+export const EscTapa: React.FC<{ src: string; fRattle: number; fSteam: number; dur: number }> = ({ src, fRattle, fSteam, dur }) => {
+  const f = useCurrentFrame();
+  const LID = { cx: 776, cy: 530, rx: 136, ry: 58 };
+  const d = f - fRattle;
+  const rafaga = d < 0 ? 0 : (Math.sin(d / 9) > 0.15 ? 1 : 0) * Math.max(0, 1 - d / 160) + (d >= 0 && d < 40 ? 0.6 : 0);
+  const tilt = rafaga * (Math.sin(d * 2.3) * 1.6), lift = rafaga * (2 + 2.5 * Math.abs(Math.sin(d * 1.7)));
+  const steam = interpolate(f, [fSteam - 6, fSteam + 60], [0, 1], { ...CLX, easing: Easing.out(Easing.quad) });
+  const vapor = `linear-gradient(0deg, #000 ${-20 + 120 * steam}%, transparent ${20 + 120 * steam}%)`;
+  const k = suave(f / Math.max(1, dur));
+  const s = 1.12 + 0.07 * k, px = 800 + 60 * k, py = 470 - 40 * k;
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
+      <AbsoluteFill style={camara(px, py, s)}>
+        <Img src={staticFile(src)} style={FOTO} />
+        {/* vidrio de la ventana: misma foto, desenfocada y más clara, sólo en el vidrio */}
+        <div style={{ position: "absolute", left: 668, top: 84, width: 442, height: 378, overflow: "hidden", WebkitMaskImage: vapor, maskImage: vapor, opacity: 0.9 }}>
+          <Img src={staticFile(src)} style={{ ...FOTO, left: -668, top: -84, filter: "blur(9px) brightness(1.18) contrast(0.8)" }} />
+        </div>
+        {lift > 0.2 && (
+          <div style={{ position: "absolute", left: LID.cx - LID.rx, top: LID.cy + LID.ry * 0.35, width: LID.rx * 2, height: 10, borderRadius: "50%", background: "rgba(25,20,18,0.55)", filter: "blur(3px)" }} />
+        )}
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: `${LID.cx - LID.rx}px ${LID.cy + 20}px`,
+          transform: `translateY(${-lift}px) rotate(${-Math.abs(tilt)}deg)` }}>
+          <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: `ellipse(${LID.rx}px ${LID.ry}px at ${LID.cx}px ${LID.cy}px)` }}>
+            <Img src={staticFile(src)} style={FOTO} />
+          </div>
+        </div>
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
