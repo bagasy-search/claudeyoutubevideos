@@ -14,7 +14,7 @@ export const HAND = loadHand("normal", { weights: ["500", "700"], subsets: ["lat
 
 type Data = Record<string, any> & {
   slug: string; end: number; fr: number[]; items: { n: number; t: string; sub?: string; f: string }[]; bg?: string; mapa?: string;
-  shots: { s: number; e: number; k: string; f?: string; sc?: string; arg?: string; tr?: string; len?: number; off?: number; rate?: number; mods?: { a: number; b: number; k: string; f?: string }[] }[];
+  shots: { s: number; e: number; k: string; f?: string; sc?: string; arg?: string; tr?: string; len?: number; cz?: number; off?: number; rate?: number; mods?: { a: number; b: number; k: string; f?: string }[] }[];
   ov: ({ k: string; a: number; b: number } & Record<string, unknown>)[];
 };
 export let D = { slug: "", end: 1, fr: [], items: [], shots: [], ov: [] } as unknown as Data;

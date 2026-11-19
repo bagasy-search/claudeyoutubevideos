@@ -37,7 +37,7 @@ const Plano: React.FC<{ i: number; t: number }> = ({ i, t }) => {
     return el; }
   if (q.f && q.f.endsWith(".mp4")) { // clip (Veo o real) ENTERO: llena el plano, nunca se congela; si es corto corre más lento (piso 0,42)
     const need = d + TR + 0.1, rate = q.len && q.len < need ? Math.max(0.42, q.len / need) : 1;
-    return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}><OffthreadVideo src={staticFile(P + q.f)} muted playbackRate={rate} style={kb(i, t, q.s, q.e, true)} /></AbsoluteFill>;
+    return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}><OffthreadVideo src={staticFile(P + q.f)} muted playbackRate={rate} style={q.cz ? { width: "100%", height: "100%", objectFit: "cover", transformOrigin: "50% 100%", transform: `scale(${q.cz * (1 + 0.012 * (t - q.s))})` } : kb(i, t, q.s, q.e, true)} /></AbsoluteFill>;
   }
   return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}><Img src={staticFile(P + q.f)} style={kb(i, t, q.s, q.e)} /></AbsoluteFill>;
 };
