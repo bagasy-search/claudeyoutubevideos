@@ -35,7 +35,8 @@ const Plano: React.FC<{ i: number; t: number }> = ({ i, t }) => {
     const v = <OffthreadVideo src={staticFile(P + q.f)} startFrom={s(q.from || 0)} muted playbackRate={rate} style={kb(i, t, q.s, q.e, true)} />;
     return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>{q.zoom ? <AbsoluteFill style={{ transform: `scale(${q.zoom})`, transformOrigin: `${q.zx}% ${q.zy}%` }}>{v}</AbsoluteFill> : v}</AbsoluteFill>;
   }
-  return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}><AbsoluteFill style={{ transform: "scale(1.11)", transformOrigin: "0% 50%" }}><Img src={staticFile(P + q.f)} style={kb(i, t, q.s, q.e)} /></AbsoluteFill></AbsoluteFill>;
+  const im = <AbsoluteFill style={{ transform: "scale(1.11)", transformOrigin: "0% 50%" }}><Img src={staticFile(P + q.f)} style={kb(i, t, q.s, q.e)} /></AbsoluteFill>;
+  return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>{q.zoom ? <AbsoluteFill style={{ transform: `scale(${q.zoom})`, transformOrigin: `${q.zx}% ${q.zy}%` }}>{im}</AbsoluteFill> : im}</AbsoluteFill>;
 };
 
 // entrada de un plano: corte · fundido corto · empuje · HOJA (la página del pasaporte da vuelta y descubre la parada)
