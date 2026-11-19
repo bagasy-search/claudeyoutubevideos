@@ -377,7 +377,7 @@ export const Ask: React.FC<{ text: string; bg: string; dur: number; seed: number
     <AbsoluteFill style={{ opacity: fadeOut(f, dur, 10) }}>
       <AbsoluteFill style={{ overflow: "hidden" }}><Img src={staticFile(bg)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${interpolate(f, [0, dur], [1.05, 1.15])})`, filter: `brightness(${1 - 0.38 * p})` }} /></AbsoluteFill>
       <AbsoluteFill style={{ alignItems: "flex-start", justifyContent: "flex-end", paddingBottom: 80, paddingLeft: 80, flexDirection: "column", gap: 30 }}>
-        <div style={{ ...kraftBg(seed), padding: "44px 90px 50px", clipPath: torn(seed + 5, 30, 1.8), maxWidth: 1000, textAlign: "left", transform: `translateY(${(1 - p) * 80}px) rotate(-1deg)`, opacity: p }}>
+        <div style={{ ...kraftBg(seed), padding: "44px 90px 50px", clipPath: torn(seed + 5, 30, 1.8), maxWidth: 1000, textAlign: "left", transform: `translateY(${(1 - p) * 700}px) rotate(-1deg)`, opacity: f >= qAt ? 1 : 0 }}>
           <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 38, letterSpacing: 6, color: K.redD }}>CUÉNTAME EN LOS COMENTARIOS</div>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 92, color: K.ink, lineHeight: 1.05, marginTop: 8, textWrap: "balance" } as React.CSSProperties}>{text}</div>
         </div>
