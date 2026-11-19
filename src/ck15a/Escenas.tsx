@@ -15,7 +15,7 @@ const lerp = (f: number, ks: number[], vs: number[]) => interpolate(f, ks, vs, {
 export const Pans: React.FC<{ dur: number; fButter: number }> = ({ dur, fButter }) => {
   const f = useCurrentFrame();
   const k = [0, Math.max(10, fButter - 4), dur];
-  const s = lerp(f, k, [2.05, 1.7, 1.12]);
+  const s = (1 + 0.05 * f / dur) * lerp(f, k, [2.05, 1.7, 1.12]);
   const x = lerp(f, k, [720, 1250, 960]);
   const y = lerp(f, k, [585, 590, 560]);
   const lift = lerp(f, [fButter, fButter + 16], [0, 1]);
@@ -39,7 +39,7 @@ export const Pans: React.FC<{ dur: number; fButter: number }> = ({ dur, fButter 
 export const Card: React.FC<{ dur: number; fCard: number; fNine: number; fTin: number; fThree: number }> = ({ dur, fCard, fNine, fTin, fThree }) => {
   const f = useCurrentFrame();
   const up = lerp(f, [fNine - 6, fNine + 22, fTin - 10, fTin + 14], [0, 1, 1, 0]);
-  const s = lerp(f, [0, fCard + 30, fTin - 8, fTin + 24, fThree, dur], [1.08, 1.5, 1.5, 1.75, 1.75, 1.82]);
+  const s = (1 + 0.05 * f / dur) * lerp(f, [0, fCard + 30, fTin - 8, fTin + 24, fThree, dur], [1.08, 1.5, 1.5, 1.75, 1.75, 1.82]);
   const x = lerp(f, [0, fCard + 30, fTin - 8, fTin + 24], [1080, 1005, 1005, 1180]);
   const y = lerp(f, [0, fCard + 30, fTin - 8, fTin + 24], [560, 700, 700, 430]);
   return (
@@ -57,7 +57,7 @@ export const Card: React.FC<{ dur: number; fCard: number; fNine: number; fTin: n
 // 3 · Horno: con «three seventy-five» la perilla real gira de más; con «browned» la cámara entra al horno y la fuente se oscurece en los bordes hasta «hard»
 export const Oven: React.FC<{ dur: number; fDeg: number; fBrown: number; fHard: number }> = ({ dur, fDeg, fBrown, fHard }) => {
   const f = useCurrentFrame();
-  const s = lerp(f, [0, fDeg - 6, fDeg + 20, fBrown - 4, fBrown + 30, dur], [1.05, 1.3, 2.6, 2.6, 2.3, 2.45]);
+  const s = (1 + 0.05 * f / dur) * lerp(f, [0, fDeg - 6, fDeg + 20, fBrown - 4, fBrown + 30, dur], [1.05, 1.3, 2.6, 2.6, 2.3, 2.45]);
   const x = lerp(f, [0, fDeg - 6, fDeg + 20, fBrown - 4, fBrown + 30], [960, 1150, 1335, 1335, 1030]);
   const y = lerp(f, [0, fDeg - 6, fDeg + 20, fBrown - 4, fBrown + 30], [560, 470, 268, 268, 520]);
   const turn = lerp(f, [fDeg + 4, fDeg + 30], [0, 55]);
@@ -81,7 +81,7 @@ export const Oven: React.FC<{ dur: number; fDeg: number; fBrown: number; fHard: 
 export const Snap: React.FC<{ dur: number; fSnap: number; fSandy: number }> = ({ dur, fSnap, fSandy }) => {
   const f = useCurrentFrame();
   const hit = interpolate(f, [fSnap - 1, fSnap + 2, fSnap + 9], [0, 1, 0], CL);
-  const s = lerp(f, [0, fSnap, fSandy - 4, fSandy + 34, dur], [1.0, 1.25, 1.35, 2.3, 2.4]) + 0.05 * hit;
+  const s = (1 + 0.05 * f / dur) * lerp(f, [0, fSnap, fSandy - 4, fSandy + 34, dur], [1.0, 1.25, 1.35, 2.3, 2.4]) + 0.05 * hit;
   const x = lerp(f, [0, fSnap, fSandy + 34], [1000, 1010, 990]);
   const y = lerp(f, [0, fSnap, fSandy + 34], [560, 560, 600]);
   const foc = lerp(f, [fSandy - 4, fSandy + 30], [0, 1]);
@@ -101,7 +101,7 @@ export const Snap: React.FC<{ dur: number; fSnap: number; fSandy: number }> = ({
 // 5 · La lata: cada capa de papel y galletitas se apila de a una sobre su palabra (una / papel / otra) y la lata se llena hasta el borde con «nothing moves»
 export const Tin: React.FC<{ dur: number; fOne: number; fWax: number; fAnother: number; fFill: number }> = ({ dur, fOne, fWax, fAnother, fFill }) => {
   const f = useCurrentFrame();
-  const s = lerp(f, [0, fOne, fFill, dur], [1.18, 1.35, 1.6, 1.7]);
+  const s = (1 + 0.05 * f / dur) * lerp(f, [0, fOne, fFill, dur], [1.18, 1.35, 1.6, 1.7]);
   const lay = (t: number) => lerp(f, [t - 4, t + 14], [0, 1]);
   const a = lay(fOne), b = lay(fWax), c = lay(fAnother), d = lay(fFill);
   return (
