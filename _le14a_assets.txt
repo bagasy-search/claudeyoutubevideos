@@ -5,7 +5,8 @@ le14a/y/p70_0.mp4
 le14a/y/p70_1.mp4
 le14a/g/y0110.jpg
 le14a/g/y0130.jpg
-le14a/g/y0150.jpg
+le14a/g/g_maicena.png
+le14a/g/g_abuela.png
 le14a/y/p150_0.mp4
 le14a/y/p170_0.mp4
 le14a/g/y1100.jpg
@@ -15,15 +16,16 @@ le14a/g/alb_rancho.png
 le14a/g/y0320.jpg
 le14a/y/p321_0.mp4
 le14a/g/y0322.jpg
-le14a/g/y0350.jpg
+le14a/g/alb_techo.png
 le14a/y/p350_0.mp4
 le14a/y/p360_0.mp4
-le14a/g/y0360.jpg
+le14a/g/alb_fogon.png
 le14a/g/alb_banquito.png
 le14a/g/y0410.jpg
 le14a/y/p420_0.mp4
 le14a/y/p460_0.mp4
 le14a/g/y0460.jpg
+le14a/g/g_escoger.png
 le14a/g/y0600.jpg
 le14a/y/p600_0.mp4
 le14a/g/y0630.jpg
@@ -80,7 +82,7 @@ le14a/y/p1850_0.mp4
 le14a/g/y1860.jpg
 le14a/y/p1880_0.mp4
 le14a/y/p1910_0.mp4
-le14a/g/y1910.jpg
+le14a/g/alb_metate.png
 le14a/y/p1940_0.mp4
 le14a/g/y1990.jpg
 le14a/y/p1990_0.mp4
@@ -96,7 +98,6 @@ le14a/g/y2200.jpg
 le14a/y/p2290_0.mp4
 le14a/g/y2340.jpg
 le14a/g/y2390.jpg
-le14a/g/y2400.jpg
 le14a/g/y2410.jpg
 le14a/g/y2440.jpg
 le14a/y/p2460_0.mp4
@@ -149,7 +150,6 @@ le14a/y/p4010_1.mp4
 le14a/y/p4030_0.mp4
 le14a/g/y4030.jpg
 le14a/g/y4040.jpg
-le14a/g/y4050.jpg
 le14a/y/p4080_0.mp4
 le14a/g/y4080.jpg
 le14a/y/p4290_0.mp4
