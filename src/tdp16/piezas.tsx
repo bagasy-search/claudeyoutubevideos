@@ -55,9 +55,9 @@ export const Mitad: React.FC<OP> = ({ t, a, b, f, txt }) => {
 export const Cta: React.FC<OP> = ({ t, a, b, fin }) => {
   const hitAt = a + 0.45, down = e(t, a - 0.1, hitAt), up = e(t, a + 0.8, a + 1.25);
   const y = lerp(-700, 0, down) + lerp(0, -820, up), squash = t > hitAt - 0.03 && t < a + 0.8 ? 0.9 : 1;
-  return <div style={{ position: "absolute", right: 170, top: 150, width: 620, height: 330, opacity: sale(t, b, 0.4), transform: `translateY(${sacudon(t, hitAt, 8)}px)` }}>
+  return <div style={{ position: "absolute", right: 60, top: 60, width: 620, height: 330, opacity: sale(t, b, 0.4), transform: `translateY(${sacudon(t, hitAt, 8)}px)` }}>
     <div style={{ position: "absolute", left: 0, right: 0, top: 70, display: "flex", justifyContent: "center", filter: "drop-shadow(0 6px 10px rgba(0,0,0,.55))" }}>
-      <Sello t={t} at={hitAt} top={fin ? `next · ${D.fin_txt || ""}` : "dirty passport"} big="subscribe" bottom="" rot={-6} scale={1.55} />
+      <Sello t={t} at={hitAt} top={fin ? `next · ${D.fin_txt || ""}` : "dirty passport"} big="subscribe" bottom="" rot={-6} scale={1.12} />
     </div>
     {t < a + 1.3 && <div style={{ position: "absolute", left: 170, top: -10, transform: `translateY(${y}px) scaleY(${squash})`, transformOrigin: "50% 100%" }}>
       <div style={{ width: 100, height: 130, margin: "0 auto", borderRadius: "50px 50px 18px 18px", background: "linear-gradient(90deg, #4a2c14, #8a5a2e 40%, #5a3519)", boxShadow: "inset 0 4px 8px rgba(255,220,170,.3)" }} />

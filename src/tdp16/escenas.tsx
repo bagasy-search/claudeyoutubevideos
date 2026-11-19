@@ -234,7 +234,7 @@ export const Ruta: React.FC<SP> = ({ t, a, b, hasta = 1, titulo }) => {
 
 // (4) REPASO: las fotos de todas las paradas caen en dos filas grandes; el sello VISITED golpea cada una por turno (la foto se enciende)
 export const Repaso: React.FC<SP> = ({ t, a, b, marcas = [], titulo, lista = false }) => {
-  const n = D.paradas.length, cols = Math.ceil(n / 2), gap = 34, w = Math.min(390, (1640 - (cols - 1) * gap) / cols), hh = w * 0.62;
+  const n = D.paradas.length, cols = Math.ceil(n / 2), gap = 30, w = Math.min(420, (1800 - (cols - 1) * gap) / cols), hh = w * 0.64;
   const x0 = 960 - (cols * w + (cols - 1) * gap) / 2, k = t - a, dv0 = deriva(t, a, 0.37), dv = { ...dv0, y: 10 * Math.sin(k * 0.31 + 1.5) };
   const at = (i: number) => marcas[i] ?? a + 1.1 + i * ((b - a - 2.4) / Math.max(1, n - 1));
   let sh = 0; if (!lista) for (let i = 0; i < n; i++) sh += sacudon(t, at(i), 5);
@@ -244,11 +244,11 @@ export const Repaso: React.FC<SP> = ({ t, a, b, marcas = [], titulo, lista = fal
       <div style={{ position: "absolute", top: 120, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 300, fontSize: 80, color: C.cream, textShadow: "0 4px 20px rgba(0,0,0,.6)", opacity: eo(t, a, 0.5) }}>{titulo}</div>
       {D.paradas.map((it, i) => {
         const c = i % cols, r = Math.floor(i / cols), en = cl(spr(t, a + 0.1 + i * 0.07, 1.1)), lit = e(t, at(i), at(i) + 0.15), pop = Math.exp(-Math.max(0, t - at(i)) * 4) * (t >= at(i) ? 1 : 0);
-        return <div key={i} style={{ position: "absolute", left: x0 + c * (w + gap), top: 250 + r * (hh + 140), opacity: en, zIndex: t >= at(i) ? 2 : 1,
+        return <div key={i} style={{ position: "absolute", left: x0 + c * (w + gap), top: 250 + r * (hh + 160), opacity: en, zIndex: t >= at(i) ? 2 : 1,
           transform: `translateY(${(1 - en) * 80}px) rotate(${(h(i, 4) - 0.5) * 4}deg) scale(${1 + 0.07 * pop})` }}>
           <div style={{ width: w, background: "#fbf8f1", padding: 10, paddingBottom: 16, boxShadow: "0 16px 34px rgba(0,0,0,.5)" }}>
             <div style={{ width: "100%", height: hh, overflow: "hidden" }}><Img src={src(it.f)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.11)", transformOrigin: "0% 50%", filter: `grayscale(${1 - lit}) brightness(${lerp(0.6, 1, lit)})` }} /></div>
-            <div style={{ fontFamily: SERIF, fontSize: 44, color: C.ink, marginTop: 10, lineHeight: 1.05, whiteSpace: "nowrap", overflow: "hidden" }}><b style={{ fontFamily: SANS, color: C.red, marginRight: 12 }}>{String(it.n).padStart(2, "0")}</b>{it.corto || it.t}</div>
+            <div style={{ fontFamily: SERIF, fontSize: 40, color: C.ink, marginTop: 10, lineHeight: 1.08, height: 88, overflow: "hidden" }}><b style={{ fontFamily: SANS, color: C.red, marginRight: 12 }}>{String(it.n).padStart(2, "0")}</b>{it.corto || it.t}</div>
           </div>
           {false && t >= at(i) && <div style={{ position: "absolute", right: -30, bottom: 34 }}><Sello t={t} at={at(i)} top="stop" big="visited" bottom={String(it.n).padStart(2, "0")} rot={-14 + 10 * h(i, 5)} scale={0.46} col={tinta(i + 1)} /></div>}
         </div>;
