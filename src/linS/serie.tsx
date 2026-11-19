@@ -71,17 +71,17 @@ export const Carrusel: React.FC<SP> = ({ t, a, b }) => {
 export const Repaso: React.FC<SP> = ({ t, a }) => {
   const n = N(), marcas: number[] = (D as any).repaso || [], at = (i: number) => marcas[i] ?? a + 1 + i * 0.6;
   let cur = -1; for (let i = 0; i < n; i++) if (t >= at(i)) cur = i;
-  const lh = Math.min(66, 800 / n), fs = lh * 0.62, en = cl(spr(t, a, 0.9));
+  const lh = 132, fs = 80, en = cl(spr(t, a, 0.9)), scr = Math.max(0, Math.min(n - 5, (cur < 0 ? 0 : cur) - 2 + (cur >= 0 ? eo(t, at(Math.max(0, cur)), 0.4) - 1 : 0)));
   return <AbsoluteFill>
     <Desenfoque f={D.bg} dark={0.55} />
     <div style={{ position: "absolute", left: 110, top: 70, width: 980, height: 940, transform: `translateX(${(1 - en) * -700}px) rotate(-1.5deg)`, background: "#FFFDF4", borderRadius: 8, boxShadow: "0 30px 80px rgba(0,0,0,.6)",
-      backgroundImage: `linear-gradient(90deg, transparent 96px, rgba(179,38,30,.55) 96px 99px, transparent 99px), repeating-linear-gradient(180deg, transparent 0 ${lh - 2}px, rgba(30,58,95,.22) ${lh - 2}px ${lh}px)`, backgroundPosition: `0 0, 0 ${120 - lh * 0.15}px` }}>
-      <div style={{ position: "absolute", left: 0, right: 0, top: -18, display: "flex", justifyContent: "space-around", padding: "0 40px" }}>{Array.from({ length: 12 }).map((_, k) => <div key={k} style={{ width: 22, height: 44, borderRadius: 11, border: "4px solid #8d939b" }} />)}</div>
-      <div style={{ position: "absolute", left: 120, top: 40, fontFamily: HAND, fontWeight: 700, fontSize: 64, color: C.ai }}>{D.repaso_titulo || D.lista_titulo}</div>
+      backgroundImage: `linear-gradient(90deg, transparent 96px, rgba(179,38,30,.55) 96px 99px, transparent 99px), repeating-linear-gradient(180deg, transparent 0 ${lh - 2}px, rgba(30,58,95,.22) ${lh - 2}px ${lh}px)`, backgroundPosition: `0 0, 0 ${170 - lh * 0.15}px`, overflow: "hidden" }}>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 8, display: "flex", justifyContent: "space-around", padding: "0 40px" }}>{Array.from({ length: 12 }).map((_, k) => <div key={k} style={{ width: 22, height: 44, borderRadius: 11, border: "4px solid #8d939b" }} />)}</div>
+      <div style={{ position: "absolute", left: 120, top: 62, fontFamily: HAND, fontWeight: 700, fontSize: 78, color: C.ai, zIndex: 2, background: "#FFFDF4", right: 20 }}>{D.repaso_titulo || D.lista_titulo}</div>
       {D.items.map((it, i) => { const p = eo(t, a + 0.3 + i * 0.07, 0.35), hecho = t >= at(i), ck = eo(t, at(i), 0.3), act = i === cur;
-        return <div key={i} style={{ position: "absolute", left: 120, top: 120 + i * lh, height: lh, right: 30, display: "flex", alignItems: "center", gap: 18, opacity: p, fontFamily: HAND, fontWeight: 700, fontSize: fs, color: hecho ? C.sumi : "rgba(20,33,61,.45)" }}>
+        return <div key={i} style={{ position: "absolute", left: 120, top: 170 + (i - scr) * lh, height: lh, right: 30, display: "flex", alignItems: "center", gap: 18, opacity: p, fontFamily: HAND, fontWeight: 700, fontSize: fs, color: hecho ? C.sumi : "rgba(20,33,61,.45)" }}>
           <span style={{ width: fs * 1.2, color: C.hanko }}>{it.n}.</span>
-          <span style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", maxWidth: 700, background: act ? "rgba(246,210,120,.45)" : "transparent", padding: "0 8px", borderRadius: 4 }}>{it.t}</span>
+          <span style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", maxWidth: 640, background: act ? "rgba(246,210,120,.45)" : "transparent", padding: "0 8px", borderRadius: 4 }}>{it.t}</span>
           {hecho && <svg width={fs * 1.3} height={fs * 1.1} viewBox="0 0 40 34" style={{ overflow: "visible" }}><path d="M3 18 L15 30 L38 3" fill="none" stroke={C.hanko} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" strokeDasharray={60} strokeDashoffset={60 * (1 - ck)} /></svg>}
         </div>; })}
     </div>
@@ -95,50 +95,33 @@ export const Repaso: React.FC<SP> = ({ t, a }) => {
 };
 
 // respaldo de asiento de cabina que barre la pantalla entre capítulos: tapizado azul acolchado en canales, funda blanca de cabecera y ribete
-export const Tela: React.FC<OP> = ({ t, a, dir = 0 }) => {
-  const d = 0.75, p = cl((t - a) / d); if (p <= 0 || p >= 1) return null;
-  const pos = lerp(-1.25, 1.25, sm(p)), v = dir === 2;
-  const base: React.CSSProperties = { position: "absolute", ...tela(C.ai), boxShadow: "0 0 90px rgba(0,0,0,.6)", overflow: "hidden" };
-  return <AbsoluteFill style={{ pointerEvents: "none", overflow: "hidden" }}>
-    <div style={{ ...base, ...(v ? { left: -100, right: -100, height: 1500, top: 540 + pos * 1300 - 750 } : { top: -100, bottom: -100, width: 2400, left: 960 + (dir === 1 ? -1 : 1) * pos * 2300 - 1200 }),
-      transform: `rotate(${v ? 2 : -3}deg)`, borderRadius: 60 }}>
-      <div style={{ position: "absolute", inset: 0, background: `repeating-linear-gradient(${v ? 0 : 90}deg, rgba(0,0,0,.28) 0 6px, rgba(255,255,255,.10) 6px 10px, transparent 10px 150px), radial-gradient(60% 50% at 40% 50%, rgba(255,255,255,.14), transparent 70%)` }} />
-      <div style={{ position: "absolute", ...(v ? { top: 0, bottom: 0, left: 0, width: 330 } : { left: 0, right: 0, top: 0, height: 330 }), background: "linear-gradient(180deg,#f7f3ea,#e3dccd)", boxShadow: "0 10px 24px rgba(0,0,0,.35)",
-        backgroundImage: "repeating-linear-gradient(45deg, rgba(120,100,70,.08) 0 2px, transparent 2px 7px)" }} />
-      <div style={{ position: "absolute", ...(v ? { top: 0, bottom: 0, left: 340, width: 8 } : { left: 0, right: 0, top: 340, height: 8 }), background: "#0d1a2c" }} />
-    </div>
-  </AbsoluteFill>;
-};
+export const Tela: React.FC<OP> = () => null; // retirado tras EVALUADOR v2: el cambio de capítulo va por corte limpio
 
 // (3) APERTURA de cada ítem: un mecanismo de cabina distinto por número (compartimiento de arriba, ventanilla con cortina, pase de abordar que se corta, sello del control)
 export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
   const i = Number(arg) - 1, it = D.items[i], k = t - a, dur = b - a, modo = i % 4, der = i % 2 === 1;
-  const zoom = 1.06 + 0.07 * cl(k / (dur + 0.4)), foto = <Img src={src(it.f)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${zoom})`, transformOrigin: `${der ? 35 : 65}% 45%` }} />;
+  const zoom = 1.06 + 0.07 * cl(k / (dur + 0.4)), foto = <Img src={src(it.f)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(1.18) saturate(1.05)", transform: `scale(${zoom})`, transformOrigin: `${der ? 35 : 65}% 45%` }} />;
   const lado: React.CSSProperties = der ? { right: 130, alignItems: "flex-end", textAlign: "right" } : { left: 130, alignItems: "flex-start" };
-  const titulo = <div style={{ position: "absolute", top: 200, width: 900, display: "flex", flexDirection: "column", ...lado }}>
-    <div style={{ ...cap, fontSize: 34, color: "#f1d9a8", textShadow: sombra, opacity: eo(t, a + 0.3, 0.4) }}>{D.item_rotulo || "carry-on"} · No. {it.n}</div>
-    <svg width="560" height="300" viewBox="0 0 560 300" style={{ overflow: "visible" }}>
-      <text x={der ? 560 : 0} y="262" textAnchor={der ? "end" : "start"} fontFamily={SERIF} fontSize="300" fill={`rgba(255,252,245,${eo(t, a + 1.1, 0.4)})`} stroke="#FFFCF5" strokeWidth={3}
-        strokeDasharray={1600} strokeDashoffset={1600 * (1 - eo(t, a + 0.35, 0.9))}>{it.n}</text>
-    </svg>
+  const titulo = <div style={{ position: "absolute", top: modo === 3 ? 470 : 330, width: 900, display: "flex", flexDirection: "column", ...lado }}>
+    <div style={{ ...cap, fontSize: 34, color: "#f1d9a8", textShadow: sombra, opacity: eo(t, a + 0.3, 0.4) }}>{D.item_rotulo || "carry-on"}</div>
     <Palabras t={t} at={a + 0.9} txt={it.t} gap={0.14} style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 104, color: "#FFFCF5", textShadow: sombra, lineHeight: 1.04, justifyContent: der ? "flex-end" : "flex-start", maxWidth: 900 }} />
-    {it.sub && <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 60, color: "#f1d9a8", textShadow: sombra, marginTop: 12, opacity: eo(t, a + 1.6, 0.5) }}>{it.sub}</div>}
+    {it.sub && <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 84, color: "#f1d9a8", textShadow: sombra, marginTop: 12, opacity: eo(t, a + 1.6, 0.5) }}>{it.sub}</div>}
     <div style={{ height: 4, background: C.hanko, marginTop: 16, width: 260 * eo(t, a + 1.4, 0.5) }} />
   </div>;
-  const velo = <AbsoluteFill style={{ background: `linear-gradient(${der ? 270 : 90}deg, rgba(10,16,30,.86) 0%, rgba(10,16,30,.42) 45%, rgba(10,16,30,0) 72%)` }} />;
+  const velo = <AbsoluteFill style={{ background: `linear-gradient(${der ? 270 : 90}deg, rgba(10,16,30,.82) 0%, rgba(10,16,30,.4) 42%, rgba(10,16,30,0) 66%)` }} />;
   const plastico = "linear-gradient(180deg,#F4F1EA 0%,#E2DDD2 55%,#CFC9BC 100%)";
   if (modo === 0) { // cartel iluminado de fila (panel de arriba de la cabina) que baja colgando sobre la foto y se balancea
     const p = cl(spr(t, a + 0.1, 0.9)), sw = swing(t, a + 0.45, 5, 2.2, 6), luz = eo(t, a + 0.55, 0.25);
     const pos: React.CSSProperties = der ? { left: 170 } : { right: 170 };
     return <AbsoluteFill style={{ background: C.sumi }}>{foto}{velo}{titulo}
-      <div style={{ position: "absolute", ...pos, top: lerp(-420, 110, p), width: 520, transformOrigin: "50% -100px", transform: `rotate(${sw}deg)` }}>
+      <div style={{ position: "absolute", ...pos, top: lerp(-560, 120, p), width: 780, transformOrigin: "50% -110px", transform: `rotate(${sw}deg)` }}>
         <div style={{ position: "absolute", left: 90, top: -110, width: 6, height: 110, background: "#555" }} /><div style={{ position: "absolute", right: 90, top: -110, width: 6, height: 110, background: "#555" }} />
-        <div style={{ height: 300, borderRadius: 22, background: "linear-gradient(180deg,#e9e5dc,#c9c3b6)", boxShadow: "0 30px 70px rgba(0,0,0,.6), inset 0 2px 0 rgba(255,255,255,.7)", padding: 26, display: "flex", gap: 22 }}>
+        <div style={{ height: 440, borderRadius: 28, background: "linear-gradient(180deg,#e9e5dc,#c9c3b6)", boxShadow: "0 30px 70px rgba(0,0,0,.6), inset 0 2px 0 rgba(255,255,255,.7)", padding: 26, display: "flex", gap: 22 }}>
           <div style={{ flex: 1, borderRadius: 14, background: "#101418", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", boxShadow: "inset 0 4px 12px rgba(0,0,0,.8)" }}>
-            <div style={{ ...cap, fontSize: 26, color: `rgba(246,210,120,${0.35 + 0.65 * luz})` }}>row</div>
-            <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 170, lineHeight: 1, color: `rgba(255,236,190,${0.25 + 0.75 * luz})`, textShadow: `0 0 ${30 * luz}px rgba(246,200,110,.9)` }}>{String(it.n).padStart(2, "0")}</div>
+            <div style={{ ...cap, fontSize: 38, color: `rgba(246,210,120,${0.35 + 0.65 * luz})` }}>row</div>
+            <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 260, lineHeight: 1, color: `rgba(255,236,190,${0.25 + 0.75 * luz})`, textShadow: `0 0 ${30 * luz}px rgba(246,200,110,.9)` }}>{String(it.n).padStart(2, "0")}</div>
           </div>
-          <div style={{ width: 120, display: "flex", flexDirection: "column", gap: 18, justifyContent: "center" }}>{["A", "B", "C"].map((l, k) => <div key={k} style={{ height: 62, borderRadius: 10, background: "#101418", color: `rgba(255,236,190,${0.3 + 0.7 * eo(t, a + 0.7 + k * 0.12, 0.2)})`, fontFamily: SANS, fontWeight: 500, fontSize: 40, display: "flex", alignItems: "center", justifyContent: "center" }}>{l}</div>)}</div>
+          <div style={{ width: 170, display: "flex", flexDirection: "column", gap: 24, justifyContent: "center" }}>{["A", "B", "C"].map((l, k) => <div key={k} style={{ height: 100, borderRadius: 12, background: "#101418", color: `rgba(255,236,190,${0.3 + 0.7 * eo(t, a + 0.7 + k * 0.12, 0.2)})`, fontFamily: SANS, fontWeight: 500, fontSize: 60, display: "flex", alignItems: "center", justifyContent: "center" }}>{l}</div>)}</div>
         </div>
       </div>
     </AbsoluteFill>;
@@ -156,25 +139,25 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
   if (modo === 2) { // el pase de abordar: la tira se corta por el troquel y la foto aparece detrás
     const corta = eo(t, a + 0.35, 0.6), cae = e(t, a + 0.8, a + 1.4);
     const pase: React.CSSProperties = { position: "absolute", top: 300, height: 480, background: "linear-gradient(180deg,#FFFCF5,#EFE7D3)", boxShadow: "0 24px 60px rgba(0,0,0,.45)" };
-    return <AbsoluteFill style={{ background: C.ai }}>
-      <AbsoluteFill style={{ opacity: cae }}>{foto}{velo}</AbsoluteFill>
+    return <AbsoluteFill style={{ background: C.sumi }}>
+      <AbsoluteFill>{foto}{velo}</AbsoluteFill>
       {cae < 1 && <>
-        <div style={{ ...pase, left: 260, width: 1000, transform: `translate(${-cae * 1400}px, ${cae * 200}px) rotate(${-cae * 14}deg)`, borderTop: `40px solid ${C.ai}` }}>
+        <div style={{ ...pase, left: 260, width: 1000, transform: `translate(${-cae * 300}px, ${-cae * 1100}px) rotate(${-cae * 8}deg)`, borderTop: `40px solid ${C.ai}` }}>
           <div style={{ ...cap, position: "absolute", left: 50, top: 30, fontSize: 24, color: C.nezumi }}>boarding pass · item</div>
           <div style={{ position: "absolute", left: 50, top: 70, fontFamily: SERIF, fontSize: 250, color: C.sumi, lineHeight: 1 }}>{String(it.n).padStart(2, "0")}</div>
           <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, borderRight: `4px dashed ${C.nezumi}` }} />
         </div>
-        <div style={{ ...pase, left: 1260, width: 400, transform: `translate(${corta * 30 + cae * 1200}px, ${cae * 260}px) rotate(${corta * 4 + cae * 18}deg)`, borderTop: `40px solid ${C.hanko}` }}>
+        <div style={{ ...pase, left: 1260, width: 400, transform: `translate(${corta * 30 + cae * 300}px, ${cae * 1300}px) rotate(${corta * 4 + cae * 18}deg)`, borderTop: `40px solid ${C.hanko}` }}>
           <div style={{ ...cap, position: "absolute", left: 40, top: 30, fontSize: 22, color: C.nezumi }}>seat</div>
           <div style={{ position: "absolute", left: 40, top: 70, fontFamily: SERIF, fontSize: 140, color: C.hanko }}>{it.n}A</div>
         </div>
       </>}
-      {cae > 0.4 && titulo}
+      {cae > 0.85 && titulo}
     </AbsoluteFill>;
   }
   // modo 3: la foto ya está; el sello rojo del control cae del lado libre, aplasta y deja el número
   return <AbsoluteFill style={{ background: C.sumi }}>{foto}{velo}{titulo}
-    <Hanko t={t} at={a + 0.3} x={der ? 520 : 1400} y={560} size={360} txt={String(it.n)} bl={false} rot={der ? 8 : -8} />
+    <Hanko t={t} at={a + 0.3} x={der ? 1600 : 320} y={300} size={330} txt={String(it.n)} bl={false} rot={der ? 8 : -8} />
   </AbsoluteFill>;
 };
 
@@ -228,26 +211,17 @@ export const Album: React.FC<SP> = ({ t, a, b, arg }) => {
 // ---------------- piezas ENCIMA (ov) ----------------
 
 // (2) progreso de la lista: fila de ventanillas de avión, las ya vistas encendidas, la actual brilla; "03 / 11" grande arriba
-export const Prog: React.FC<OP> = ({ t, a, b, n }) => {
-  const o = eo(t, a, 0.3) * sale(t, b, 0.3), tot = N();
-  return <div style={{ position: "absolute", right: 56, top: 44, opacity: o, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 10, textShadow: sombra }}>
-    <div style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 40, color: "#FFFCF5", lineHeight: 1 }}><span style={{ color: "#f1d9a8" }}>{String(n).padStart(2, "0")}</span><span style={{ fontSize: 28, opacity: 0.8 }}> / {String(tot).padStart(2, "0")}</span></div>
-    <div style={{ display: "flex", gap: 8, padding: "8px 12px", borderRadius: 12, background: "rgba(10,14,24,.45)" }}>{D.items.map((_, i) => { const on = i < n, cur = i === n - 1;
-      return <div key={i} style={{ width: 17, height: 24, borderRadius: 8, border: "2px solid rgba(255,252,245,.75)", background: cur ? "radial-gradient(circle at 50% 40%, #fff3c9, #E9C46A)" : on ? "#c9a24e" : "rgba(30,40,60,.6)",
-        boxShadow: cur ? "0 0 14px rgba(246,210,120,.9)" : "0 1px 3px rgba(0,0,0,.5)" }} />; })}</div>
-  </div>;
-};
+export const Prog: React.FC<OP> = () => null; // retirado tras EVALUADOR v2: el número del ítem ya vive en la apertura
 
 // la regla de Linda: tarjeta de cartulina colgada de un hilo rojo; baja con peso, se balancea y al final el hilo la sube
 export const Prueba: React.FC<OP> = ({ t, a, b, txt, lab }) => {
-  const p = spr(t, a, 1.1), r = swing(t, a, 6, 1.8, 6) - 2, sube = e(t, b - 0.35, b);
-  return <div style={{ position: "absolute", left: 100, top: 0, transformOrigin: "50% 0", transform: `rotate(${r}deg) translateY(${(cl(p) - 1) * 760 - sube * 900}px)` }}>
-    <div style={{ width: 4, height: 110, background: C.hanko, margin: "0 auto" }} />
-    <div style={{ ...papel, width: 700, padding: "40px 48px 46px", borderTop: `8px solid ${C.hanko}`, boxShadow: "0 34px 60px rgba(15,10,0,.55), 0 6px 14px rgba(0,0,0,.3)", position: "relative" }}>
-      <div style={{ position: "absolute", left: 334, top: -16, width: 28, height: 28, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #e2c57f, #8a6a2c)", boxShadow: "0 3px 6px rgba(0,0,0,.45)" }} />
-      <div style={{ ...cap, fontSize: 28, color: C.hanko, fontWeight: 500 }}>{lab || "linda's rule"}</div>
-      <Palabras t={t} at={a + 0.4} txt={txt} gap={0.07} style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 60, color: C.sumi, marginTop: 16, lineHeight: 1.14 }} />
-      <Pincel t={t} at={a + 0.6 + String(txt).split(" ").length * 0.07} x={48} y={0} w={240} hgt={8} col={C.hanko} op={0.85} />
+  const izq = Math.floor(a / 7) % 2 === 0, p = spr(t, a, 1.1), r = swing(t, a + 0.15, 7, 1.4, 5.5) + (izq ? -2 : 2), sube = e(t, b - 0.35, b);
+  return <div style={{ position: "absolute", [izq ? "left" : "right"]: 110, top: 0, transformOrigin: "50% 0", transform: `rotate(${r}deg) translateY(${(cl(p) - 1) * 900 - sube * 1000}px)` } as React.CSSProperties}>
+    <div style={{ width: 5, height: 120, background: `linear-gradient(90deg, #7d1a15, ${C.hanko}, #7d1a15)`, margin: "0 auto", boxShadow: "2px 0 3px rgba(0,0,0,.4)" }} />
+    <div style={{ ...papel, width: 780, padding: "44px 54px 52px", borderTop: `10px solid ${C.hanko}`, boxShadow: `${-r * 3}px 50px 70px rgba(0,0,0,.6), 0 8px 16px rgba(0,0,0,.35)`, position: "relative" }}>
+      <div style={{ position: "absolute", left: 371, top: -18, width: 32, height: 32, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #f3dc9c, #8a6a2c)", boxShadow: "0 3px 6px rgba(0,0,0,.45)" }} />
+      <div style={{ ...cap, fontSize: 32, color: C.hanko, fontWeight: 500 }}>{lab || "linda's rule"}</div>
+      <Palabras t={t} at={a + 0.4} txt={txt} gap={0.07} style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 76, color: C.sumi, marginTop: 18, lineHeight: 1.1 }} />
     </div>
   </div>;
 };
@@ -263,14 +237,15 @@ export const Dato: React.FC<OP> = ({ t, a, b, txt, fuente }) => {
 
 // número o regla explicada: tablero de partidas que se arma letra por letra (cifra) + la ruta en la fila de abajo
 export const Palabra: React.FC<OP> = ({ t, a, b, kan, rom, sig, lado }) => {
-  const der = lado !== "izq", ent = eo(t, a - 0.1, 0.35), sal = e(t, b - 0.3, b), L = String(kan).length;
-  return <div style={{ position: "absolute", top: 90, [der ? "right" : "left"]: 90, display: "flex", flexDirection: "column", alignItems: der ? "flex-end" : "flex-start",
-    opacity: 1 - sal, transform: `translateY(${(1 - ent) * -50 - sal * 30}px)` }}>
-    <Tablero style={{ opacity: ent }}>
-      <Flap t={t} at={a + 0.1} txt={kan} H={L > 7 ? 120 : 150} />
-      {rom && <div style={{ marginTop: 14 }}><Flap t={t} at={a + 0.45} txt={rom} H={String(rom).length > 16 ? 46 : 56} gap={0.03} col="#E9C46A" /></div>}
+  const der = lado !== "izq", ent = eo(t, a - 0.1, 0.3), L = String(kan).length, out = b - 0.45, fuera = e(t, b - 0.12, b);
+  const H1 = Math.min(200, 1150 / Math.max(3, L) / 0.71), R2 = String(rom || "").length, H2 = Math.min(80, 1150 / Math.max(8, R2) / 0.71);
+  return <div style={{ position: "absolute", top: 70, [der ? "right" : "left"]: 70, display: "flex", flexDirection: "column", alignItems: der ? "flex-end" : "flex-start", opacity: 1 - fuera,
+    transform: `translateY(${(1 - ent) * -60}px)` } as React.CSSProperties}>
+    <Tablero style={{ opacity: ent, padding: "26px 30px" }}>
+      <Flap t={t} at={a + 0.1} txt={kan} H={H1} fl={0.05} out={out} />
+      {rom && <div style={{ marginTop: 16 }}><Flap t={t} at={a + 0.35} txt={rom} H={H2} gap={0.02} fl={0.04} col="#E9C46A" out={out} /></div>}
+      {sig && <div style={{ ...cap, fontSize: 36, color: "#FFFCF5", marginTop: 18, opacity: eo(t, a + 0.9, 0.3) * (1 - e(t, out, out + 0.15)), maxWidth: 1400 }}>{sig}</div>}
     </Tablero>
-    {sig && <div style={{ ...cap, fontSize: 30, color: "#FFFCF5", textShadow: sombra, marginTop: 18, opacity: eo(t, a + 1.0, 0.4), maxWidth: 900, textAlign: der ? "right" : "left" }}>{sig}</div>}
   </div>;
 };
 
@@ -296,17 +271,17 @@ export const Mitad: React.FC<OP> = ({ t, a, b, f }) => {
 
 // (10) CTA: un comentario de verdad (globo blanco con la inicial de Linda, la pregunta y responder/me gusta) que sube con resorte
 export const Cta: React.FC<OP> = ({ t, a, b, txt }) => {
-  const p = spr(t, a, 0.9), sal = e(t, b - 0.35, b), bot = cl((t - a - 1.6) / 0.4);
-  return <AbsoluteFill style={{ opacity: 1 - sal }}>
-    <AbsoluteFill style={{ background: `linear-gradient(0deg, rgba(16,12,8,${0.6 * eo(t, a, 0.4)}) 0%, rgba(16,12,8,0) 45%)` }} />
-    <div style={{ position: "absolute", left: 260, right: 260, bottom: 80, transform: `translateY(${(1 - cl(p)) * 420}px) scale(${lerp(0.9, 1, cl(p))})`, transformOrigin: "50% 100%" }}>
+  const p = spr(t, a, 0.9), sal = e(t, b - 0.4, b), bot = cl((t - a - 1.4) / 0.4), lleno = eo(t, a + 2.0, 0.3);
+  return <AbsoluteFill>
+    <AbsoluteFill style={{ background: `linear-gradient(0deg, rgba(16,12,8,${0.6 * eo(t, a, 0.4) * (1 - sal)}) 0%, rgba(16,12,8,0) 45%)` }} />
+    <div style={{ position: "absolute", left: 260, right: 260, bottom: 80, transform: `translateY(${(1 - cl(p)) * 420 - sal * 1100}px) scale(${lerp(0.9, 1, cl(p))}) rotate(${sal * -4}deg)`, transformOrigin: "50% 100%" }}>
       <div style={{ background: "#FFFFFF", borderRadius: 30, padding: "34px 46px 30px", display: "flex", gap: 30, boxShadow: "0 30px 70px rgba(0,0,0,.55)", position: "relative" }}>
         <div style={{ flex: "0 0 auto", width: 96, height: 96, borderRadius: "50%", background: `linear-gradient(160deg, ${C.hanko}, #7d1a15)`, color: "#FFFCF5", fontFamily: SERIF, fontWeight: 600, fontSize: 54, display: "flex", alignItems: "center", justifyContent: "center" }}>L</div>
         <div style={{ flex: 1 }}>
-          <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 28, color: "#333" }}>Linda <span style={{ fontWeight: 400, color: "#888" }}>· tell me below</span></div>
-          <Palabras t={t} at={a + 0.35} txt={txt} gap={0.08} style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 64, color: C.sumi, lineHeight: 1.12, marginTop: 8 }} />
-          <div style={{ display: "flex", gap: 40, marginTop: 18, fontFamily: SANS, fontWeight: 500, fontSize: 28, color: "#555", opacity: bot }}>
-            <span style={{ display: "flex", alignItems: "center", gap: 10 }}><svg width="30" height="28" viewBox="0 0 30 28"><path d="M15 26 C4 18 1 12 2 8 C3 3 9 1 15 7 C21 1 27 3 28 8 C29 12 26 18 15 26 Z" fill={C.hanko} /></svg>{Math.round(lerp(0, 247, eo(t, a + 1.6, 1.2)))}</span>
+          <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 34, color: "#333" }}>Linda <span style={{ fontWeight: 400, color: "#888" }}>· tell me below</span></div>
+          <Palabras t={t} at={a + 0.35} txt={txt} gap={0.08} style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 72, color: C.sumi, lineHeight: 1.1, marginTop: 8 }} />
+          <div style={{ display: "flex", gap: 40, marginTop: 18, fontFamily: SANS, fontWeight: 500, fontSize: 40, color: "#555", opacity: bot }}>
+            <span style={{ display: "flex", alignItems: "center", gap: 10 }}><svg width="48" height="44" viewBox="0 0 30 28" style={{ transform: `scale(${1 + 0.35 * Math.exp(-8 * Math.max(0, t - a - 2.0)) * (t > a + 2 ? 1 : 0)})` }}><path d="M15 26 C4 18 1 12 2 8 C3 3 9 1 15 7 C21 1 27 3 28 8 C29 12 26 18 15 26 Z" fill={`rgba(179,38,30,${lleno})`} stroke={C.hanko} strokeWidth={2} /></svg><span style={{ fontVariantNumeric: "tabular-nums" }}>{t < a + 2.0 ? 247 : 248}</span></span>
             <span style={{ padding: "6px 22px", borderRadius: 24, background: "#f0f0f0", color: "#222", transform: `scale(${1 + 0.06 * Math.sin(Math.max(0, t - a - 2) * 4)})` }}>Reply</span>
           </div>
         </div>
@@ -318,20 +293,20 @@ export const Cta: React.FC<OP> = ({ t, a, b, txt }) => {
 
 // cierre: pase de abordar de Linda que sube sobre el living desenfocado; el sello "ARRIVED" cae en el talón
 export const Fin: React.FC<OP> = ({ t, a, sub }) => {
-  const f = e(t, a, a + 0.6), p = spr(t, a + 0.3, 0.9);
-  return <AbsoluteFill style={{ opacity: f }}>
-    <Desenfoque f={D.bg} dark={0.5} />
+  const f = eo(t, a, 0.5), p = spr(t, a + 0.3, 0.9);
+  return <AbsoluteFill style={{ clipPath: `inset(${(1 - f) * 100}% 0 0 0)` }}>
+    <Desenfoque f={D.bg} dark={0.3} />
     <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
       <div style={{ display: "flex", transform: `translateY(${(1 - cl(p)) * 500}px) rotate(${(1 - cl(p)) * 6 - 1.5}deg)`, boxShadow: "0 40px 90px rgba(0,0,0,.6)" }}>
         <div style={{ ...papel, boxShadow: "none", width: 1060, height: 460, borderTop: `46px solid ${C.ai}`, padding: "40px 60px", position: "relative" }}>
           <div style={{ ...cap, fontSize: 24, color: C.nezumi }}>boarding pass · final call</div>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 118, color: C.sumi, lineHeight: 1.05, marginTop: 24 }}><Palabras t={t} at={a + 0.7} txt={String(sub || "fly safe, my friends")} gap={0.12} /></div>
-          <div style={{ fontFamily: SERIF, fontSize: 42, color: C.sumi, marginTop: 26, opacity: eo(t, a + 1.2, 0.4) }}>Linda · retired flight attendant</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 58, color: C.sumi, marginTop: 26, opacity: eo(t, a + 1.2, 0.4) }}>Linda · retired flight attendant</div>
         </div>
         <div style={{ ...papel, boxShadow: "none", width: 330, height: 460, borderTop: `46px solid ${C.hanko}`, borderLeft: `4px dashed ${C.nezumi}`, padding: "40px 36px", position: "relative" }}>
           <div style={{ ...cap, fontSize: 22, color: C.nezumi }}>years</div>
-          <div style={{ fontFamily: SERIF, fontSize: 150, color: C.hanko, lineHeight: 1 }}>35</div>
-          <Hanko t={t} at={a + 1.3} x={160} y={300} size={190} txt="✓" />
+          <div style={{ fontFamily: SERIF, fontSize: 130, color: C.hanko, lineHeight: 1 }}>35</div>
+          <Hanko t={t} at={a + 1.3} x={165} y={345} size={150} txt="✓" />
         </div>
       </div>
     </AbsoluteFill>

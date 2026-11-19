@@ -10,14 +10,18 @@ const papel: React.CSSProperties = { background: "linear-gradient(180deg,#FFFCF5
 
 // remate kinético: cada palabra cae con peso (resorte), sombra de contacto, y la última se subraya con trazo rojo
 export const Kin: React.FC<OP> = ({ t, a, b, txt, big, rojo }) => {
-  const ws = String(txt).split(" "), fs = big ? 200 : 140, sal = e(t, b - 0.25, b);
-  return <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: 120, opacity: 1 - sal }}>
-    <AbsoluteFill style={{ background: `radial-gradient(70% 45% at 50% 82%, rgba(8,8,12,${0.55 * eo(t, a - 0.1, 0.3)}), rgba(8,8,12,0) 70%)` }} />
-    <div style={{ position: "relative", display: "flex", gap: "0.28em", fontFamily: SERIF, fontWeight: 600, fontSize: fs, color: "#FFFCF5", lineHeight: 1 }}>
-      {ws.map((w: string, i: number) => { const at = a + i * 0.28, p = spr(t, at, 1.3), q = cl(p);
-        return <span key={i} style={{ position: "relative", display: "inline-block", opacity: eo(t, at, 0.1), transform: `translateY(${(1 - p) * -90}px) scale(${lerp(1.25, 1, q)})`,
-          textShadow: `0 ${8 + (1 - q) * 30}px ${20 + (1 - q) * 30}px rgba(0,0,0,.7), 0 2px 3px rgba(0,0,0,.7)`, color: rojo === i ? "#f6c3b8" : undefined }}>{w}
-          {i === ws.length - 1 && <div style={{ position: "absolute", left: "2%", bottom: -fs * 0.12, width: `${96 * eo(t, at + 0.25, 0.3)}%`, height: fs * 0.07, background: C.hanko, borderRadius: fs, boxShadow: "0 3px 8px rgba(0,0,0,.5)", transform: "rotate(-1.5deg)" }} />}
+  // palabras enormes que caen con peso; si hay una cifra, rueda como odómetro y se frena; sale hacia abajo con desenfoque (nunca fundido sobre la cara)
+  const ws = String(txt).split(" "), fs = big ? 250 : 190, sal = e(t, b - 0.3, b);
+  const rueda = (w: string, at: number) => { const n = Number(w.replace(/[^0-9]/g, "")); if (!/\d/.test(w) || !n) return w; const p = eo(t, at, 0.9), v = Math.round(n * p);
+    return w.replace(/[\d,.]+/, n >= 1000 ? v.toLocaleString("en-US") : String(v)); };
+  return <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: 110 }}>
+    <AbsoluteFill style={{ background: `linear-gradient(0deg, rgba(8,8,12,${0.75 * eo(t, a - 0.1, 0.3) * (1 - sal)}) 0%, rgba(8,8,12,0) 55%)` }} />
+    <div style={{ position: "relative", display: "flex", gap: "0.26em", fontFamily: SERIF, fontWeight: 600, fontSize: fs, color: "#FFFCF5", lineHeight: 1, transform: `translateY(${sal * 420}px)`, filter: `blur(${sal * 10}px)` }}>
+      {ws.map((w: string, i: number) => { const at = a + i * 0.26, p = spr(t, at, 1.3), q = cl(p);
+        return <span key={i} style={{ position: "relative", display: "inline-block", opacity: eo(t, at, 0.1), transform: `translateY(${(1 - p) * -120}px) scale(${lerp(1.3, 1, q)})`, fontVariantNumeric: "tabular-nums",
+          textShadow: `0 ${10 + (1 - q) * 30}px ${24 + (1 - q) * 30}px rgba(0,0,0,.8), 0 3px 4px rgba(0,0,0,.8), 6px 6px 0 rgba(20,33,61,.55)`, color: rojo === i ? "#f6c3b8" : undefined }}>{rueda(w, at)}
+          {i === ws.length - 1 && <div style={{ position: "absolute", left: "-2%", bottom: -fs * 0.16, width: `${104 * eo(t, at + 0.3, 0.35)}%`, height: fs * 0.13, background: C.hanko, borderRadius: `${fs}px ${fs * 0.3}px ${fs}px ${fs * 0.2}px`, boxShadow: "0 4px 10px rgba(0,0,0,.5)", transform: "rotate(-2deg)", zIndex: -1,
+            WebkitMaskImage: "linear-gradient(90deg,#000 0%,#000 85%,rgba(0,0,0,.4) 100%)" }} />}
         </span>; })}
     </div>
   </AbsoluteFill>;
@@ -48,18 +52,19 @@ export const Cuenta: React.FC<OP> = ({ t, a, b, n, lab }) => {
 
 // gafete de tripulación de latón con las alas: entra desde la izquierda con resorte, un brillo lo cruza, sale por donde vino
 export const Lower: React.FC<OP> = ({ t, a, b, name, sub }) => {
+  // placa de tripulación de latón: entra con resorte, barrido de brillo, y al final cae hacia abajo entera (nunca cortada por el borde)
   const p = spr(t, a, 1.0), sal = e(t, b - 0.35, b), brillo = cl((t - a - 0.5) / 0.7);
-  return <div style={{ position: "absolute", left: 90, bottom: 90, transform: `translateX(${(1 - cl(p)) * -720 - sal * 760}px) rotate(${(1 - cl(p)) * -4}deg)` }}>
-    <div style={{ position: "relative", display: "flex", alignItems: "center", gap: 28, padding: "24px 46px 26px 32px", borderRadius: 16, overflow: "hidden",
+  return <div style={{ position: "absolute", left: 110, bottom: 90, opacity: 1 - sal, transform: `translate(${(1 - cl(p)) * -900}px, ${sal * 260}px) rotate(${(1 - cl(p)) * -4 + sal * 4}deg)` }}>
+    <div style={{ position: "relative", display: "flex", alignItems: "center", gap: 30, padding: "26px 50px 28px 34px", borderRadius: 18, overflow: "hidden",
       background: "linear-gradient(180deg,#f3dc9c 0%,#d9b866 45%,#a8823a 100%)", border: "3px solid #8a6a2c", boxShadow: "0 26px 50px rgba(0,0,0,.55), inset 0 2px 2px rgba(255,255,255,.6), inset 0 -3px 4px rgba(80,55,15,.5)" }}>
-      <svg width="120" height="56" viewBox="0 0 120 56"><g fill="#5a4214" opacity=".85">
+      <svg width="140" height="66" viewBox="0 0 120 56"><g fill="#5a4214" opacity=".85">
         <path d="M60 18 C48 10 26 8 2 12 C18 18 34 22 52 26 Z" /><path d="M60 18 C72 10 94 8 118 12 C102 18 86 22 68 26 Z" />
         <path d="M54 30 C42 26 28 26 14 30 C28 34 40 36 54 36 Z" /><path d="M66 30 C78 26 92 26 106 30 C92 34 80 36 66 36 Z" /><circle cx="60" cy="27" r="9" /></g></svg>
       <div>
-        <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 78, color: "#3b2a0b", lineHeight: 1.02, textShadow: "0 1px 0 rgba(255,240,200,.6)" }}>{name}</div>
-        <div style={{ ...cap, fontSize: 28, fontWeight: 500, color: "#4a3510", marginTop: 6, letterSpacing: "0.16em" }}>{sub}</div>
+        <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 84, color: "#3b2a0b", lineHeight: 1.02, textShadow: "0 1px 0 rgba(255,240,200,.6)" }}>{name}</div>
+        <div style={{ ...cap, fontSize: 38, fontWeight: 500, color: "#4a3510", marginTop: 8, letterSpacing: "0.12em" }}>{sub}</div>
       </div>
-      <div style={{ position: "absolute", top: -40, bottom: -40, width: 120, left: `${lerp(-20, 110, brillo)}%`, background: "linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,.55), rgba(255,255,255,0))", transform: "rotate(18deg)", opacity: brillo > 0 && brillo < 1 ? 1 : 0 }} />
+      <div style={{ position: "absolute", top: -60, bottom: -60, width: 160, left: `${lerp(-25, 115, brillo)}%`, background: "linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0))", transform: "rotate(18deg)", opacity: brillo > 0 && brillo < 1 ? 1 : 0 }} />
     </div>
   </div>;
 };

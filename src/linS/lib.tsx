@@ -85,13 +85,14 @@ export const tela = (col: string, claro = false): React.CSSProperties => ({
 
 // tablero de partidas de aeropuerto (split-flap): cada letra es una paleta negra que gira por otras letras y se clava en la suya con un rebote
 const POOL = "ABCDEFGHJKLMNPRSTUVWXYZ0123456789";
-export const Flap: React.FC<{ t: number; at: number; txt: string; H?: number; gap?: number; col?: string }> = ({ t, at, txt, H = 140, gap = 0.055, col = "#F6E7BE" }) => (
+export const Flap: React.FC<{ t: number; at: number; txt: string; H?: number; gap?: number; col?: string; fl?: number; out?: number }> = ({ t, at, txt, H = 140, gap = 0.055, col = "#F6E7BE", fl: FL = 0.065, out = 1e9 }) => (
   <div style={{ display: "flex", gap: H * 0.05 }}>
     {String(txt).toUpperCase().split("").map((c, i) => {
       if (c === " ") return <div key={i} style={{ width: H * 0.28 }} />;
-      const st = at + i * gap, k = t - st, nf = c.match(/[A-Z0-9]/) ? 4 + Math.floor(h(i, 11) * 5) : 0, fl = 0.065;
-      const fi = Math.floor(Math.max(0, k) / fl), girando = k >= 0 && fi < nf, ch = girando ? POOL[(Math.floor(h(i, 3) * 97) + fi * 7) % POOL.length] : c;
-      const fase = girando ? (k % fl) / fl : 0, asentado = k - nf * fl, reb = asentado > 0 ? 1 + 0.08 * Math.exp(-14 * asentado) * Math.sin(38 * asentado) : 1;
+      const st = at + i * gap, k = t - st, nf = c.match(/[A-Z0-9]/) ? 3 + Math.floor(h(i, 11) * 3) : 0, fl = FL;
+      const fi = Math.floor(Math.max(0, k) / fl), ko = t - out - i * 0.03, saliendo = ko > 0, fo = Math.floor(Math.max(0, ko) / fl), vacio = saliendo && fo >= 3;
+      const girando = (k >= 0 && fi < nf) || (saliendo && !vacio), ch = vacio ? "" : girando ? POOL[(Math.floor(h(i, 3) * 97) + (saliendo ? fo + 5 : fi) * 7) % POOL.length] : c;
+      const fase = girando ? ((saliendo ? ko : k) % fl) / fl : 0, asentado = k - nf * fl, reb = asentado > 0 ? 1 + 0.08 * Math.exp(-14 * asentado) * Math.sin(38 * asentado) : 1;
       const ap = eo(t, st - 0.12, 0.14);
       return <div key={i} style={{ position: "relative", width: H * 0.66, height: H, borderRadius: H * 0.06, opacity: ap, transform: `translateY(${(1 - ap) * -14}px)`,
         background: "linear-gradient(180deg,#2a2c31 0%,#1b1c20 49.5%,#0c0d0f 50.5%,#1d1e22 100%)", boxShadow: "inset 0 1px 0 rgba(255,255,255,.12), 0 6px 14px rgba(0,0,0,.55)", overflow: "hidden" }}>
