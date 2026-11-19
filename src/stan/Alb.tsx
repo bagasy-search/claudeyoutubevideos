@@ -148,7 +148,7 @@ export const DosA: React.FC<{ title?: string; a: { t: string; s?: string }; b: {
       <AbsoluteFill style={{ background: `rgba(8,12,18,${0.32 + 0.18 * cl((f - at) / 8)})` }} />
       <AbsoluteFill style={{ background: "radial-gradient(ellipse 420px 300px at 50% 50%, rgba(0,0,0,.55), transparent)", opacity: cl((f - at) / 8) }} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", padding: 60, textAlign: "center", opacity: cl((f - at) / 8), transform: `translateY(${(1 - sp(f, at, 14)) * 40}px)` }}>
-        <Big size={x.t.length > 10 ? 110 : 160} col={col} edge="#111" style={{ transform: `scale(${0.6 + 0.4 * sp(f, at, 10)})` }}>{x.t}</Big>
+        <Big size={x.t.length > 10 ? (x.t.length > 16 ? 84 : 110) : 160} col={col} edge="#111" style={{ whiteSpace: "normal", maxWidth: 820, lineHeight: 1.05, transform: `scale(${0.6 + 0.4 * sp(f, at, 10)})` }}>{x.t}</Big>
         {x.s ? <div style={{ marginTop: 34, opacity: cl((f - at - 10) / 8), transform: `translateY(${(1 - sp(f, at + 10, 14)) * 30}px)` }}><Cinta size={86}>{x.s}</Cinta></div> : null}
       </AbsoluteFill>
     </div>);
@@ -359,7 +359,7 @@ export const RelojA: React.FC<{ big: string; sweep?: number; chips?: { t: string
           {c ? <div key={ci} style={{ position: "absolute", left: 0, top: 40, transform: `translateY(${(1 - sp(f, c.f, 12)) * 60}px)`, opacity: cl((f - c.f) / 6) }}>
             <Big size={150} col={CU.cal} edge="#111">{c.t}</Big>
             <div style={{ marginTop: 30, marginLeft: 10 }}><Sello txt={c.ok ? "SÍ" : "NO"} col={c.ok ? CU.verde : CU.chile} f={f} at={c.f + 14} size={170} rot={c.ok ? -4 : -8} /></div>
-          </div> : <div style={{ position: "absolute", left: 0, top: 120, opacity: cl((f - 8) / 8) }}><Big size={170} col={CU.cal} edge="#111">{big}</Big></div>}
+          </div> : <div style={{ position: "absolute", left: 0, top: 120, opacity: cl((f - 8) / 8) }}><Big size={big.length > 7 ? 92 : 170} col={CU.cal} edge="#111" style={{ whiteSpace: "normal", maxWidth: 620, lineHeight: 1.08 }}>{big}</Big></div>}
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
