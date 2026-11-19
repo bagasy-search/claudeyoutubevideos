@@ -126,10 +126,17 @@ export const TableroRecap: React.FC<{ items: string[]; marks: number[]; bg: stri
   const z = interpolate(f, [0, dur], [1.04, 1.14]);
   const inn = sp(f, 16);
   const cur = marks.reduce((a, m, i) => (f >= m ? i : a), -1);
+  // cámara lenta y curva sobre la tarjeta: nunca queda quieta entre marcas (el QC de congelados la veía fija)
+  const q = interpolate(f, [0, dur], [0, 1], { extrapolateRight: "clamp" });
+  const ease = q * q * (3 - 2 * q);
+  const camS = 1 + 0.07 * ease;
+  const camX = Math.sin(q * Math.PI * 1.3) * 26;
+  const camY = -18 * ease + Math.sin(q * Math.PI * 2.1) * 8;
+  const camR = Math.sin(q * Math.PI) * 0.8;
   return (
     <AbsoluteFill style={{ background: "#202328", overflow: "hidden" }}>
       <Img src={staticFile(bg)} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z})`, filter: "brightness(0.45)" }} />
-      <div style={{ position: "absolute", left: 110, right: 110, top: 120, bottom: 120, borderRadius: 26, transform: `translateY(${(1 - inn) * 900}px)`,
+      <div style={{ position: "absolute", left: 110, right: 110, top: 120, bottom: 120, borderRadius: 26, transform: `translate(${camX}px, ${(1 - inn) * 900 + camY}px) scale(${camS}) rotate(${camR}deg)`,
         background: "linear-gradient(180deg,#F4F2EE,#DCD8D0)", boxShadow: "0 40px 80px rgba(0,0,0,0.55), inset 0 0 0 10px #CFCAC0" }}>
         {[0, 1].map((row) => (
           <div key={row} style={{ position: "absolute", left: 50, right: 50, top: 60 + row * 400, height: 360 }}>
