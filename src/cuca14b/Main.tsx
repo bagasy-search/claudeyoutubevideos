@@ -41,6 +41,19 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
   }
 };
 
+// 19-nov: las piezas superpuestas (cuaderno, raíz, recado…) quedaban quietas 4-6 s (el QC las marcó congeladas):
+// cámara lenta y curva sobre toda la pieza (acercamiento suave + vaivén lateral), nunca lineal.
+const OvDrift: React.FC<{ seed: number; dur: number; children: React.ReactNode }> = ({ seed, dur, children }) => {
+  const f = useCurrentFrame();
+  const t = Math.min(1, f / Math.max(1, dur));
+  const e = 0.5 - 0.5 * Math.cos(Math.PI * t);
+  const dir = P.hash(seed) % 2 ? 1 : -1;
+  const sc = 1.03 + 0.05 * e;   // base 1.03: el vaivén (±1 %) nunca deja ver el borde
+  const x = dir * (1.2 * e - 0.6) + 0.35 * Math.sin(f / 37 + seed);
+  const y = -0.5 * e + 0.25 * Math.sin(f / 53 + seed * 2);
+  return <AbsoluteFill style={{ transform: `translate(${x}%, ${y}%) scale(${sc})` }}>{children}</AbsoluteFill>;
+};
+
 export const Main: React.FC = () => (
   <AbsoluteFill style={{ background: "#2B1A10" }}>
     {AVATAR.map((a, i) => (
@@ -60,7 +73,7 @@ export const Main: React.FC = () => (
     })}
     {OVERLAYS.map((o, i) => (
       <Sequence key={"o" + i} from={o.from} durationInFrames={Math.min(o.dur, TOTAL - o.from)}>
-        <Overlay o={o} />
+        <OvDrift seed={i + 7} dur={Math.min(o.dur, TOTAL - o.from)}><Overlay o={o} /></OvDrift>
       </Sequence>
     ))}
     <Audio src={staticFile(SLUG + "_mix.m4a")} />
