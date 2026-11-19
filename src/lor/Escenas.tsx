@@ -295,3 +295,101 @@ export const EscVentaja: React.FC<{ a: string; b: string; fHead: number; fMe: nu
     </AbsoluteFill>
   );
 };
+
+// ======================= lcf15a (registro en D:/rtmp/lcf14_COMPONENTES.md) =======================
+// coordenadas en px del cuadro 1920x1080 (fotos NB estiradas con 'fill')
+
+// 7 EscOla · "Seven different suppers." (g0050): los siete platos recortados por su borde se levantan
+//   uno tras otro de izquierda a derecha, como una ola que corre por la mesa, y vuelven a apoyarse con su sombra.
+const OLA = [
+  { cx: 280, cy: 660, rx: 178, ry: 92 }, { cx: 574, cy: 604, rx: 118, ry: 80 }, { cx: 590, cy: 804, rx: 192, ry: 118 },
+  { cx: 854, cy: 614, rx: 150, ry: 84 }, { cx: 982, cy: 810, rx: 180, ry: 118 }, { cx: 1170, cy: 624, rx: 156, ry: 86 },
+  { cx: 1334, cy: 824, rx: 164, ry: 110 },
+];
+export const EscOla: React.FC<{ src: string; f0: number; dur: number }> = ({ src, f0, dur }) => {
+  const f = useCurrentFrame();
+  const k = suave(f / Math.max(1, dur));
+  const s = 1.11 + 0.05 * k, px = 820 + 60 * k, py = 700;
+  const fila = [0, 1, 3, 5, 2, 4, 6]; // primero la fila de atrás, la de adelante tapa
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
+      <AbsoluteFill style={camara(px, py, s)}>
+        <Img src={staticFile(src)} style={FOTO} />
+        {fila.map((i) => {
+          const p = OLA[i];
+          const orden = [0, 1, 2, 3, 4, 5, 6].sort((a, b) => OLA[a].cx - OLA[b].cx).indexOf(i);
+          const t = (f - (f0 + orden * 4)) / 16;
+          if (t <= 0 || t >= 1.6) return null;
+          const up = t < 1 ? Math.sin(t * Math.PI) : -0.12 * Math.sin((t - 1) * Math.PI / 0.6) * Math.exp(-(t - 1) * 3);
+          return (
+            <React.Fragment key={i}>
+            <div style={{ position: "absolute", left: p.cx - p.rx * 1.08, top: p.cy - p.ry * 1.02, width: p.rx * 2.16, height: p.ry * 2.2, borderRadius: "50%",
+              background: "radial-gradient(ellipse at 50% 55%, rgba(60,38,18,0.92) 68%, rgba(60,38,18,0) 92%)", opacity: Math.min(1, Math.max(0, up) * 1.4), filter: "blur(8px)" }} />
+            <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: `${p.cx}px ${p.cy}px`,
+              transform: `translateY(${-12 * up}px) scale(${1 + 0.1 * up})`, filter: `drop-shadow(0 ${6 + 14 * up}px ${8 + 14 * up}px rgba(30,18,8,${0.25 + 0.3 * up}))` }}>
+              <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: `ellipse(${p.rx}px ${p.ry}px at ${p.cx}px ${p.cy}px)` }}>
+                <Img src={staticFile(src)} style={FOTO} />
+              </div>
+            </div>
+            </React.Fragment>
+          );
+        })}
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// 8 EscCruje · "It crackles when you tap it." (g1720): a cada golpe del dedo, la piel recortada se hunde apenas desde la yema
+//   y un anillo de brillo corre por la piel dorada desde el dedo hacia afuera (sólo dentro del pollo). La cámara da un respingo.
+export const EscCruje: React.FC<{ src: string; taps: number[]; dur: number }> = ({ src, taps, dur }) => {
+  const f = useCurrentFrame();
+  const DX = 930, DY = 680;                      // yema del dedo
+  const POLLO = "ellipse(178px 136px at 880px 772px)";
+  const golpe = (m: number) => { const d = f - m; return d < 0 ? 0 : Math.exp(-d / 5) * Math.cos(d / 2.2); };
+  const g = taps.reduce((a, m) => a + golpe(m), 0);
+  const k = suave(f / Math.max(1, dur));
+  const s = 1.18 + 0.05 * k + 0.012 * g;
+  const anillos = taps.map((m) => { const d = f - m; return d < 0 || d > 22 ? null : { r: 20 + d * 16, o: 1 - d / 22 }; }).filter(Boolean) as { r: number; o: number }[];
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
+      <AbsoluteFill style={camara(895, 690, s)}>
+        <Img src={staticFile(src)} style={FOTO} />
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: POLLO, transformOrigin: `${DX}px ${DY}px`, transform: `scale(${1 - 0.012 * Math.max(0, g)}, ${1 - 0.022 * Math.max(0, g)})` }}>
+          <Img src={staticFile(src)} style={FOTO} />
+          {anillos.map((a, i) => {
+            const mask = `radial-gradient(circle at ${DX}px ${DY}px, transparent ${a.r - 26}px, #000 ${a.r}px, transparent ${a.r + 26}px)`;
+            return <Img key={i} src={staticFile(src)} style={{ ...FOTO, filter: "brightness(1.6) saturate(1.2)", opacity: a.o, WebkitMaskImage: mask, maskImage: mask }} />;
+          })}
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// 9 EscGris · "...I kept buying the whole chicken out of habit, and I threw half of it away." (g0330):
+//   la carne del plato arranca dorada, recién asada; en "threw half" el color se escurre hacia abajo como un líquido
+//   y queda la carne gris real; la cámara baja con el color hasta el tacho.
+export const EscGris: React.FC<{ src: string; fDrain: number; dur: number }> = ({ src, fDrain, dur }) => {
+  const f = useCurrentFrame();
+  const kIn = suave(f / Math.max(1, fDrain));
+  const kDown = suave((f - fDrain) / Math.max(1, Math.min(70, dur - fDrain - 6)));
+  const s = 1.22 + 0.10 * kIn - 0.08 * kDown;
+  const px = 1010 + (930 - 1010) * kDown, py = 690 + (900 - 690) * kDown;
+  const drain = interpolate(f, [fDrain - 2, fDrain + 34], [0, 1], { ...CLX, easing: Easing.in(Easing.quad) });
+  const top = 590 + 280 * drain;              // borde superior del color que queda (baja de la carne al plato)
+  const lin = `linear-gradient(180deg, transparent ${top - 30}px, #000 ${top + 20}px)`;
+  const oval = "radial-gradient(ellipse 125px 98px at 1040px 706px, #000 70%, transparent 100%)";
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
+      <AbsoluteFill style={camara(px, py, s)}>
+        <Img src={staticFile(src)} style={FOTO} />
+        {drain < 1 && (
+          <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, WebkitMaskImage: `${lin}, ${oval}`, maskImage: `${lin}, ${oval}`,
+            WebkitMaskComposite: "source-in", maskComposite: "intersect", opacity: 1 - 0.6 * drain } as React.CSSProperties}>
+            <Img src={staticFile(src)} style={{ ...FOTO, filter: "sepia(0.4) saturate(1.7) hue-rotate(-6deg) brightness(1.06) contrast(1.06)" }} />
+          </div>
+        )}
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
