@@ -125,7 +125,7 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
     </AbsoluteFill>;
   }
   if (modo === 1) { // pincelada sumi que pinta la foto en una franja y después la abre entera
-    const p = eo(t, a + 0.05, 0.7), q = eo(t, a + 0.8, 0.6);
+    const z = Math.min(1, dur / 1.8), p = eo(t, a + 0.05 * z, 0.7 * z), q = eo(t, a + 0.8 * z, 0.6 * z); // apertura corta: que abra entera antes del corte
     return <AbsoluteFill style={{ background: C.washi }}><Washi />
       <AbsoluteFill style={{ clipPath: `inset(${lerp(40, 0, q)}% ${lerp(100 - p * 100, 0, q)}% ${lerp(40, 0, q)}% 0)` }}>{foto}{velo}</AbsoluteFill>
       {titulo}
