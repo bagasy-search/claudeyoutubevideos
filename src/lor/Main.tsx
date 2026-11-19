@@ -78,7 +78,7 @@ export const MainLor: React.FC = () => (
       const tail = nx && nx.k !== "A" && nx.trans && nx.trans !== "cut" ? TR + 8 : 0;
       return (
         <Sequence key={"s" + s.id} from={s.from} durationInFrames={Math.min(s.dur + tail, TOTAL - s.from)} premountFor={45}>
-          <Enter trans={s.trans || "cut"} seed={s.id}><Body s={s} dur={s.dur} /></Enter>
+          <K.OutCtx.Provider value={!(nx && nx.k === "A")}><Enter trans={s.trans || "cut"} seed={s.id}><Body s={s} dur={s.dur} /></Enter></K.OutCtx.Provider>
         </Sequence>
       );
     })}
