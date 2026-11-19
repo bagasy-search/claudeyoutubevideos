@@ -72,11 +72,11 @@ export const PriceTag: React.FC<{ text: string; dur: number }> = ({ text, dur })
   const sw = Math.sin(f / 9) * 2.2 * Math.max(0, 1 - f / 70);
   const parts = text.split(" · ");
   return (
-    <div style={{ position: "absolute", right: 110, bottom: 120, opacity: fadeOut(f, dur), transformOrigin: "88% -30%", transform: `rotate(${lerp(-38, -4, p) + sw}deg)` }}>
+    <div style={{ position: "absolute", right: 200, bottom: 150, opacity: fadeOut(f, dur), transformOrigin: "88% -30%", transform: `rotate(${lerp(-38, -4, p) + sw}deg)` }}>
       <div style={{ position: "absolute", right: 46, top: -150, width: 5, height: 170, background: K.twine, transform: "rotate(9deg)", boxShadow: "1px 0 2px rgba(0,0,0,0.4)" }} />
       <div style={{ ...kraftBg(3), background: K.paper, padding: "30px 84px 32px 52px", clipPath: "polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%)", boxShadow: SH, minWidth: 300 }}>
         {parts.map((t, i) => (
-          <div key={i} style={{ fontFamily: i ? SANS : HAND, fontWeight: 700, fontSize: i ? 44 : (text.length > 26 ? 76 : 96), letterSpacing: i ? 4 : 0, color: i ? K.red : K.ink, lineHeight: 1.05, whiteSpace: "nowrap" }}>{t}</div>
+          <div key={i} style={{ fontFamily: i ? SANS : HAND, fontWeight: 700, fontSize: i ? 44 : Math.min(96, Math.floor(1000 / Math.max(6, t.length * 0.5))), letterSpacing: i ? 4 : 0, color: i ? K.red : K.ink, lineHeight: 1.05, whiteSpace: "nowrap" }}>{t}</div>
         ))}
       </div>
       <div style={{ position: "absolute", right: 30, top: "50%", width: 16, height: 16, marginTop: -8, borderRadius: "50%", background: "#3a2a1a", boxShadow: "inset 0 2px 3px rgba(0,0,0,0.6)" }} />
@@ -188,8 +188,8 @@ export const Rail: React.FC<{ n: number; total: number; title: string; dur: numb
   const num = asc ? n : total - n + 1;
   return (
     <div style={{ position: "absolute", right: 56, top: 48, opacity: o, transform: `translateY(${(1 - o) * -16}px)`, background: "rgba(14,10,7,0.82)", borderRadius: 14, padding: "16px 30px", boxShadow: "0 10px 30px rgba(0,0,0,0.45)", display: "flex", alignItems: "baseline", gap: 18, whiteSpace: "nowrap" }}>
-      <span style={{ fontFamily: SANS, fontWeight: 800, fontSize: 44, letterSpacing: 3, color: K.gold }}>{word} {num}/{total}</span>
-      <span style={{ fontFamily: SANS, fontWeight: 700, fontSize: 44, color: "#FFFFFF" }}>{title}</span>
+      <span style={{ fontFamily: SANS, fontWeight: 800, fontSize: 54, letterSpacing: 3, color: K.gold }}>{word} {num}/{total}</span>
+      <span style={{ fontFamily: SANS, fontWeight: 700, fontSize: 54, color: "#FFFFFF" }}>{title}</span>
     </div>
   );
 };
@@ -210,31 +210,24 @@ export const KraftWipe: React.FC<{ dir: number; len?: number }> = ({ dir, len = 
 // apertura de cada técnica: el papel pasa, la foto del corte llena la pantalla, el número se sella y el título se escribe
 export const TechScene: React.FC<{ n: number; label: string; title: string; src: string; dur: number; total?: number; num?: string }> = ({ n, label, title, src, dur, total = 10, num }) => {
   const f = useCurrentFrame();
-  const v = n, right = v % 2 === 1, mode = v % 3;
-  const k = cl(f / Math.max(1, dur), 0, 1);
-  const z = mode === 0 ? lerp(1.2, 1.06, eout(k)) : mode === 1 ? lerp(1.04, 1.16, k) : 1.12;
-  const px = mode === 2 ? lerp(right ? 3 : -3, right ? -3 : 3, k) : 0;
-  const q = dur < 100 ? 0.55 : 1;   // planos cortos: todo entra antes
-  const st = spring({ frame: f - 8 * q, fps: 30, config: { damping: 12, mass: 0.7 } });
-  const words = title.replace(/\s+[–-]\s+/g, ": ").split(" ");
-  const len = title.length;
-  const fs = Math.round(Math.min(112, 2700 / Math.max(10, len)));   // una sola línea, siempre
-  const side: React.CSSProperties = right ? { right: 100, alignItems: "flex-end", textAlign: "right" } : { left: 100, alignItems: "flex-start" };
-  const fin = cl(f / 8, 0, 1);
+  const k = cl(f / Math.max(1, dur), 0, 1); const z = lerp(1.04, 1.13, k); const px = lerp(n % 2 ? 1.5 : -1.5, n % 2 ? -1.5 : 1.5, k);
+  const p = spring({ frame: f - 2, fps: 30, config: { damping: 16, mass: 0.8 } });
+  const nb = spring({ frame: f - 6, fps: 30, config: { damping: 11, mass: 0.7 } });
+  const t = title.replace(/s+[–-]s+/g, ": ");
+  const fs = Math.round(Math.min(96, 1180 / Math.max(8, t.length * 0.5)));
+  const m = /PASO\s+\d+\s+DE\s+(\d+)/i.exec(label || ""); const lb = m ? "DE " + m[1] + " PASOS" : (label || "");
   return (
     <AbsoluteFill style={{ opacity: fadeOut(f, dur, 8) }}>
       <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
         <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `translateX(${px}%) scale(${z})` }} />
       </AbsoluteFill>
-      <AbsoluteFill style={{ opacity: fin, background: `linear-gradient(${right ? 270 : 90}deg, rgba(12,8,6,0.92) 0%, rgba(12,8,6,0.7) 38%, rgba(12,8,6,0) 70%)` }} />
-      <div style={{ position: "absolute", top: 200, maxWidth: 1250, display: "flex", flexDirection: "column", ...side, background: `rgba(12,8,6,${0.74 * fin})`, padding: "26px 44px 30px", borderRadius: 14 }}>
-        <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 40, letterSpacing: 8, color: K.gold, textShadow: SH, opacity: cl((f - 4) / 8, 0, 1) }}>{label}</div>
-        <div style={{ fontFamily: SLAB, fontSize: 300, lineHeight: 0.92, color: "#FFF8EA", textShadow: SH, opacity: cl(st * 1.6, 0, 1), transform: `scale(${lerp(1.6, 1, st)}) rotate(${lerp(-8, -3, st)}deg)`, transformOrigin: right ? "100% 60%" : "0% 60%" }}>{num ?? (n > total ? "+" : String(n))}</div>
-        <div style={{ display: "flex", flexWrap: "nowrap", whiteSpace: "nowrap", columnGap: fs * 0.24, justifyContent: right ? "flex-end" : "flex-start", marginTop: 6 }}>
-          {words.map((w, i) => { const p = spring({ frame: f - (18 + i * 4) * q, fps: 30, config: { damping: 15, mass: 0.6 } });
-            return <span key={i} style={{ fontFamily: SERIF, fontWeight: 700, fontSize: fs, color: "#FFFFFF", textShadow: "0 3px 0 rgba(0,0,0,0.55), 0 6px 22px rgba(0,0,0,0.85)", display: "inline-block", opacity: p, transform: `translateY(${(1 - p) * 30}px)` }}>{w}</span>; })}
+      <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(10,7,5,0.55) 0%, rgba(10,7,5,0) 34%)" }} />
+      <div style={{ position: "absolute", left: 80, bottom: 80, ...kraftBg(n), display: "flex", alignItems: "center", gap: 34, padding: "22px 54px 24px 34px", borderRadius: 6, boxShadow: "0 24px 60px rgba(0,0,0,0.55)", transform: `translateY(${(1 - p) * 140}px) rotate(-1deg)`, opacity: cl(p * 1.5, 0, 1), whiteSpace: "nowrap" }}>
+        <div style={{ fontFamily: SLAB, fontSize: 170, lineHeight: 0.9, color: K.red, transform: `scale(${lerp(1.5, 1, nb)})`, opacity: cl(nb * 1.5, 0, 1) }}>{num ?? (n > total ? "+" : String(n))}</div>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 36, letterSpacing: 6, color: K.redD }}>{lb}</div>
+          <div style={{ fontFamily: SERIF, fontSize: fs, lineHeight: 1.02, color: K.ink }}>{t}</div>
         </div>
-        <div style={{ height: 7, marginTop: 20, width: 300 * interpolate(f, [30, 48], [0, 1], CL), backgroundImage: `repeating-linear-gradient(60deg, ${K.twine} 0 5px, #CDBF9F 5px 9px)`, borderRadius: 4 }} />
       </div>
     </AbsoluteFill>
   );
@@ -383,10 +376,10 @@ export const Ask: React.FC<{ text: string; bg: string; dur: number; seed: number
   return (
     <AbsoluteFill style={{ opacity: fadeOut(f, dur, 10) }}>
       <AbsoluteFill style={{ overflow: "hidden" }}><Img src={staticFile(bg)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${interpolate(f, [0, dur], [1.05, 1.15])})`, filter: `brightness(${1 - 0.38 * p})` }} /></AbsoluteFill>
-      <AbsoluteFill style={{ alignItems: "center", justifyContent: "flex-end", paddingBottom: 70, flexDirection: "column", gap: 36 }}>
-        <div style={{ ...kraftBg(seed), padding: "44px 90px 50px", clipPath: torn(seed + 5, 30, 1.8), maxWidth: 1500, textAlign: "center", transform: `translateY(${(1 - p) * 80}px) rotate(-1deg)`, opacity: p }}>
+      <AbsoluteFill style={{ alignItems: "flex-start", justifyContent: "flex-end", paddingBottom: 80, paddingLeft: 80, flexDirection: "column", gap: 30 }}>
+        <div style={{ ...kraftBg(seed), padding: "44px 90px 50px", clipPath: torn(seed + 5, 30, 1.8), maxWidth: 1000, textAlign: "left", transform: `translateY(${(1 - p) * 80}px) rotate(-1deg)`, opacity: p }}>
           <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 38, letterSpacing: 6, color: K.redD }}>CUÉNTAME EN LOS COMENTARIOS</div>
-          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 110, color: K.ink, lineHeight: 1.05, marginTop: 8, textWrap: "balance" } as React.CSSProperties}>{text}</div>
+          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 92, color: K.ink, lineHeight: 1.05, marginTop: 8, textWrap: "balance" } as React.CSSProperties}>{text}</div>
         </div>
         <div style={{ transform: `scale(${b * press})`, background: K.red, color: K.paper, fontFamily: SANS, fontWeight: 700, fontSize: 44, letterSpacing: 3, padding: "20px 60px", borderRadius: 50, boxShadow: SH }}>SUSCRÍBETE</div>
       </AbsoluteFill>

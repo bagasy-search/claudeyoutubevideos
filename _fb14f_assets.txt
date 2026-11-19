@@ -161,7 +161,6 @@ fb14f/y/y2520.mp4
 fb14f/g/g2530.png
 fb14f/g/g2550.png
 fb14f/g/g2570.png
-fb14f/y/y2600.mp4
 fb14f/g/g2610.png
 fb14f/g/g2630.png
 fb14f/g/g2650.png
