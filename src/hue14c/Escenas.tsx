@@ -36,8 +36,8 @@ const Hundida: React.FC<{ t: string; f0: number; f1: number }> = ({ t, f0, f1 })
 };
 export const EscPuno: React.FC<{ src: string; fAprieta: number; fPastel: number; fDesarma: number; fChorrea: number; fBola: number; dur: number }> = ({ src, fAprieta, fPastel, fDesarma, fChorrea, fBola, dur }) => {
   const f = useCurrentFrame(); const S = sf(src);
-  const s = interpolate(f, [0, dur], [1.05, 1.14], CL);
-  const uy = interpolate(f, [0, fChorrea - 8, fChorrea + 22], [0.35, 0.35, -1], { ...CL, easing: io });
+  const s = interpolate(f, [0, fDesarma, dur], [1.05, 1.3, 1.36], { ...CL, easing: io });
+  const uy = interpolate(f, [0, fDesarma + 40, fChorrea + 22], [0.15, 0.25, -1], { ...CL, easing: io });
   const ux = interpolate(f, [0, dur], [-0.1, 0.05], CL) + Math.sin(f / 70) * 0.05;
   const apr = spring({ frame: f - fAprieta, fps: 30, config: { damping: 11, mass: 1, stiffness: 120 } });
   const suelta = spring({ frame: f - fPastel, fps: 30, config: { damping: 14 } });
@@ -52,13 +52,15 @@ export const EscPuno: React.FC<{ src: string; fAprieta: number; fPastel: number;
             <Img src={S} style={FULL} />
           </div>
         )}
-        {rompe && <div style={{ position: "absolute", left: TERRON.x - TERRON.r, top: TERRON.y - TERRON.r, width: TERRON.r * 2, height: TERRON.r * 2, borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(30,18,10,0.78) 0%, rgba(30,18,10,0.4) 55%, rgba(30,18,10,0) 78%)", opacity: interpolate(f, [fDesarma, fDesarma + 20], [0, 1], CL) }} />}
+        {rompe && <div style={{ position: "absolute", left: TERRON.x - TERRON.r, top: TERRON.y - TERRON.r, width: TERRON.r * 2, height: TERRON.r * 2, overflow: "hidden", opacity: interpolate(f, [fDesarma + 4, fDesarma + 40], [0, 0.92], CL),
+          WebkitMaskImage: "radial-gradient(circle, #000 45%, transparent 72%)", maskImage: "radial-gradient(circle, #000 45%, transparent 72%)" }}>
+          <Img src={S} style={{ ...FULL, left: -(TERRON.x - TERRON.r) - 360, top: -(TERRON.y - TERRON.r) - 60, filter: "blur(7px) brightness(0.9)" }} />
+        </div>}
         {rompe && TROZOS.map(({ x, y, i }) => {
           const d = Math.floor(rnd(i) * 10) + Math.floor((y - (TERRON.y - TERRON.r)) / TILE) * 2;
           const t = Math.max(0, f - fDesarma - d);
-          const dy = 0.22 * t * t + 1.2 * t; const dx = (rnd(i + 7) - 0.5) * 4 * t; const rot = (rnd(i + 3) - 0.5) * 9 * t;
-          const op = interpolate(y + dy, [900, 1060], [1, 0], CL);
+          const dy = 0.035 * t * t + 0.7 * t; const dx = (rnd(i + 7) - 0.5) * 2.2 * t; const rot = (rnd(i + 3) - 0.5) * 5 * t;
+          const op = interpolate(y + dy, [960, 1100], [1, 0], CL);
           if (op <= 0) return null;
           return (
             <div key={i} style={{ position: "absolute", left: x, top: y, width: TILE, height: TILE, overflow: "hidden", borderRadius: 10 + rnd(i + 1) * 12, opacity: op,
@@ -150,13 +152,12 @@ export const EscPunta: React.FC<{ src: string; fTallo: number; fRamas: number; f
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#000" }}>
       <div style={{ ...FULL, transform: cam(s, ux, uy) }}>
         <Img src={S} style={FULL} />
-        <Img src={S} style={{ ...FULL, opacity: fondo, filter: "blur(10px) brightness(0.5) saturate(0.6)" }} />
-        <Ventana S={S} x={963} y={905} a={-90} L={610 * tallo} t={96} />
-        {NUDOS.map((n, i) => {
-          const k = spring({ frame: f - fRamas - i * 5, fps: 30, config: { damping: 12, mass: 1, stiffness: 110 } });
-          const L = Math.hypot(n.tx - n.x, n.ty - n.y) * k; const a = (Math.atan2(n.ty - n.y, n.tx - n.x) * 180) / Math.PI;
-          return <Ventana key={i} S={S} x={n.x} y={n.y} a={a} L={L} t={118} />;
-        })}
+        <Img src={S} style={{ ...FULL, opacity: fondo, filter: "blur(8px) brightness(0.62) saturate(0.7)" }} />
+        {(() => { const kr = spring({ frame: f - fRamas, fps: 30, config: { damping: 13, mass: 1, stiffness: 90 } });
+          const m = [`radial-gradient(ellipse ${60 + 50 * tallo}px ${120 + 260 * tallo}px at 963px 640px, #000 55%, transparent 100%)`,
+            `radial-gradient(ellipse ${40 + 420 * kr}px ${40 + 120 * kr}px at 963px 470px, #000 50%, transparent 100%)`,
+            `radial-gradient(ellipse ${30 + 300 * kr}px ${30 + 110 * kr}px at 963px 670px, #000 50%, transparent 100%)`].join(", ");
+          return <Img src={S} style={{ ...FULL, filter: "brightness(1.08)", WebkitMaskImage: m, maskImage: m }} />; })()}
         {NUDOS.map((n, i) => {
           const k = spring({ frame: f - fFlores - i * 4, fps: 30, config: { damping: 10, mass: 0.8, stiffness: 140 } });
           return <Ojo key={"o" + i} S={S} x={n.x + (n.tx - n.x) * 0.82} y={n.y + (n.ty - n.y) * 0.82} r={112 * k} />;
