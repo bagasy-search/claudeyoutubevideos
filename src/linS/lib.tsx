@@ -51,11 +51,11 @@ export const Washi: React.FC<{ children?: React.ReactNode; tone?: string }> = ({
 );
 
 // sello de control redondo (rojo de aerolínea): cae, aplasta y deja tinta despareja
-export const Hanko: React.FC<{ t: number; at: number; x: number; y: number; size?: number; txt?: string; rot?: number }> = ({ t, at, x, y, size = 150, txt = "1", rot = -8 }) => {
+export const Hanko: React.FC<{ t: number; at: number; x: number; y: number; size?: number; txt?: string; rot?: number; bl?: boolean }> = ({ t, at, x, y, size = 150, txt = "1", rot = -8, bl = true }) => {
   if (t < at - 0.2) return null;
   const p = eo(t, at - 0.2, 0.2), sc = lerp(2.1, 1, p) * (1 + 0.06 * Math.exp(-9 * Math.max(0, t - at)) * Math.sin(40 * Math.max(0, t - at)));
   return <div style={{ position: "absolute", left: x - size / 2, top: y - size / 2, width: size, height: size, borderRadius: "50%", border: `${size * 0.05}px solid ${C.hanko}`, color: C.hanko,
-    display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", opacity: p * 0.93, transform: `rotate(${rot}deg) scale(${sc.toFixed(4)})`, mixBlendMode: "multiply",
+    display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", opacity: p * 0.93, transform: `rotate(${rot}deg) scale(${sc.toFixed(4)})`, mixBlendMode: bl ? "multiply" : "normal", background: bl ? undefined : "rgba(255,250,240,.9)",
     boxShadow: `inset 0 0 0 ${size * 0.035}px ${C.washi}, inset 0 0 0 ${size * 0.05}px ${C.hanko}`, WebkitMaskImage: "radial-gradient(circle at 30% 25%, #000 55%, rgba(0,0,0,.72) 100%)" }}>
     <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: size * 0.1, letterSpacing: "0.28em", marginLeft: "0.28em" }}>No.</div>
     <div style={{ fontFamily: SERIF, fontWeight: 500, fontSize: size * (String(txt).length > 1 ? 0.42 : 0.5), lineHeight: 0.95 }}>{txt}</div>
@@ -82,3 +82,28 @@ export const tela = (col: string, claro = false): React.CSSProperties => ({
   backgroundColor: col,
   backgroundImage: `repeating-linear-gradient(45deg, rgba(${claro ? "90,70,40" : "255,255,255"},.06) 0 2px, transparent 2px 6px), repeating-linear-gradient(-45deg, rgba(0,0,0,.07) 0 2px, transparent 2px 6px), radial-gradient(120% 100% at 20% 0%, rgba(255,255,255,.14), transparent 60%)`,
 });
+
+// tablero de partidas de aeropuerto (split-flap): cada letra es una paleta negra que gira por otras letras y se clava en la suya con un rebote
+const POOL = "ABCDEFGHJKLMNPRSTUVWXYZ0123456789";
+export const Flap: React.FC<{ t: number; at: number; txt: string; H?: number; gap?: number; col?: string }> = ({ t, at, txt, H = 140, gap = 0.055, col = "#F6E7BE" }) => (
+  <div style={{ display: "flex", gap: H * 0.05 }}>
+    {String(txt).toUpperCase().split("").map((c, i) => {
+      if (c === " ") return <div key={i} style={{ width: H * 0.28 }} />;
+      const st = at + i * gap, k = t - st, nf = c.match(/[A-Z0-9]/) ? 4 + Math.floor(h(i, 11) * 5) : 0, fl = 0.065;
+      const fi = Math.floor(Math.max(0, k) / fl), girando = k >= 0 && fi < nf, ch = girando ? POOL[(Math.floor(h(i, 3) * 97) + fi * 7) % POOL.length] : c;
+      const fase = girando ? (k % fl) / fl : 0, asentado = k - nf * fl, reb = asentado > 0 ? 1 + 0.08 * Math.exp(-14 * asentado) * Math.sin(38 * asentado) : 1;
+      const ap = eo(t, st - 0.12, 0.14);
+      return <div key={i} style={{ position: "relative", width: H * 0.66, height: H, borderRadius: H * 0.06, opacity: ap, transform: `translateY(${(1 - ap) * -14}px)`,
+        background: "linear-gradient(180deg,#2a2c31 0%,#1b1c20 49.5%,#0c0d0f 50.5%,#1d1e22 100%)", boxShadow: "inset 0 1px 0 rgba(255,255,255,.12), 0 6px 14px rgba(0,0,0,.55)", overflow: "hidden" }}>
+        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 500, fontSize: H * 0.74, color: col, lineHeight: 1,
+          transform: `scaleY(${girando ? Math.max(0.08, Math.abs(Math.cos(fase * Math.PI))) : reb})`, textShadow: `0 0 ${H * 0.12}px rgba(246,200,110,.35)` }}>{ch}</div>
+        <div style={{ position: "absolute", left: 0, right: 0, top: "50%", height: Math.max(2, H * 0.018), background: "rgba(0,0,0,.85)" }} />
+        <div style={{ position: "absolute", left: 0, top: "44%", width: H * 0.05, height: "12%", background: "#3a3c42" }} /><div style={{ position: "absolute", right: 0, top: "44%", width: H * 0.05, height: "12%", background: "#3a3c42" }} />
+      </div>;
+    })}
+  </div>
+);
+// marco del tablero
+export const Tablero: React.FC<{ children: React.ReactNode; style?: React.CSSProperties }> = ({ children, style }) => (
+  <div style={{ background: "linear-gradient(180deg,#14161a,#08090b)", padding: "22px 26px", borderRadius: 14, border: "2px solid #2e3137", boxShadow: "0 30px 70px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.08)", ...style }}>{children}</div>
+);

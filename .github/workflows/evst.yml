@@ -1,0 +1,44 @@
+# evst: stills puntuales por componente para el EVALUADOR (rama evst-<slug>; lista en ev/frames_<slug>.txt "nombre f1 f2 f3 f4 f5")
+name: evst
+on:
+  push:
+    branches: ['evst-*']
+permissions:
+  contents: write
+jobs:
+  st:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env: { GH_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20", cache: "npm" }
+      - uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+            ~/.cache/remotion
+          key: rmn-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: rmn-${{ runner.os }}-
+      - run: |
+          if [ -d node_modules ] && node -e "require('@rspack/binding')" 2>/dev/null; then echo ok; else n=0; until npm ci; do n=$((n+1)); [ $n -ge 4 ] && exit 1; rm -rf node_modules; sleep 20; done; fi
+          sudo apt-get install -y -qq ffmpeg >/dev/null || true
+      - run: |
+          S=${GITHUB_REF_NAME#evst-}; echo "S=$S" >> $GITHUB_ENV
+          for n in 1 2 3 4; do gh release download "assets-$S" -R "$GITHUB_REPOSITORY" -p "assets-$S.tar" --clobber && break; sleep $((n*10)); done
+          mkdir -p public && tar -xf "assets-$S.tar" -C public && rm "assets-$S.tar"
+      - run: |
+          K=${S#lin16}; K=${K#lin18}; ID=Lin$K
+          npx remotion bundle src/index_$S.tsx --out-dir=bundle --public-dir=public >/dev/null
+          mkdir -p st out
+          while read n f1 f2 f3 f4 f5; do [ -n "$n" ] || continue; j=0
+            for f in $f1 $f2 $f3 $f4 $f5; do j=$((j+1)); npx remotion still bundle $ID st/${n}_$j.png --frame=$f --scale=0.5 >/dev/null 2>&1 || echo "falla $n $f"; done
+            ffmpeg -v error -y -i st/${n}_%d.png -vf "tile=5x1" -q:v 3 out/sheet_${S}_st_${n}.jpg
+          done < ev/frames_$S.txt
+          ls out
+      - run: |
+          T=$GITHUB_REF_NAME
+          gh release view "$T" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create "$T" -R "$GITHUB_REPOSITORY" --title "$T" --notes "stills evaluador"
+          gh release upload "$T" out/*.jpg -R "$GITHUB_REPOSITORY" --clobber
+          git push "https://x-access-token:${GH_TOKEN}@github.com/$GITHUB_REPOSITORY.git" --delete "$GITHUB_REF_NAME" || true
