@@ -234,13 +234,13 @@ export const Ruta: React.FC<SP> = ({ t, a, b, hasta = 1, titulo }) => {
 
 // (4) REPASO: las fotos de todas las paradas caen en dos filas grandes; el sello VISITED golpea cada una por turno (la foto se enciende)
 export const Repaso: React.FC<SP> = ({ t, a, b, marcas = [], titulo, lista = false }) => {
-  const n = D.paradas.length, cols = Math.ceil(n / 2), gap = 30, w = Math.min(420, (1800 - (cols - 1) * gap) / cols), hh = w * 0.64;
+  const n = D.paradas.length, cols = Math.ceil(n / 2), gap = 30, w = Math.min(380, (1580 - (cols - 1) * gap) / cols), hh = w * 0.66;
   const x0 = 960 - (cols * w + (cols - 1) * gap) / 2, k = t - a, dv0 = deriva(t, a, 0.37), dv = { ...dv0, y: 10 * Math.sin(k * 0.31 + 1.5) };
   const at = (i: number) => marcas[i] ?? a + 1.1 + i * ((b - a - 2.4) / Math.max(1, n - 1));
   let sh = 0; if (!lista) for (let i = 0; i < n; i++) sh += sacudon(t, at(i), 5);
   return <AbsoluteFill style={{ ...tapaBg, overflow: "hidden" }}>
     <FondoFoto f={D.paradas[n - 1]?.f} t={t} a={a} o={0.8} />
-    <AbsoluteFill style={{ transform: `translate(${dv.x}px, ${dv.y + sh}px) scale(${1 + 0.014 * k})` }}>
+    <AbsoluteFill style={{ transform: `translate(${dv.x}px, ${dv.y + sh}px) scale(${1 + 0.005 * Math.min(k, 8)})` }}>
       <div style={{ position: "absolute", top: 120, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 300, fontSize: 80, color: C.cream, textShadow: "0 4px 20px rgba(0,0,0,.6)", opacity: eo(t, a, 0.5) }}>{titulo}</div>
       {D.paradas.map((it, i) => {
         const c = i % cols, r = Math.floor(i / cols), en = cl(spr(t, a + 0.1 + i * 0.07, 1.1)), lit = e(t, at(i), at(i) + 0.15), pop = Math.exp(-Math.max(0, t - at(i)) * 4) * (t >= at(i) ? 1 : 0);
