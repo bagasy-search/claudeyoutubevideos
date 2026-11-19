@@ -568,14 +568,14 @@ export const CounterShot: React.FC<{ src: string; steps: { to: number; f: number
 };
 
 // cuenta del día: libreta de gastos que suma (cifras = las que ella dice)
-export const Cuenta: React.FC<{ rows: { txt: string; amt: string }[]; total: string; bg?: string; dur: number }> = ({ rows, total, bg, dur }) => {
+export const Cuenta: React.FC<{ rows: { txt: string; amt: string }[]; total: string; title?: string; label?: string; bg?: string; dur: number }> = ({ rows, total, title = "The week, for one", label = "THE WEEK, ABOUT", bg, dur }) => {
   const f = useCurrentFrame(); const p = useIn(0, 18), o = useOut(dur, 8);
   return (
     <AbsoluteFill style={{ opacity: o }}>
       <Fondo src={bg} seed={382} dur={dur} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <Paper style={{ width: 1100, padding: "22px 70px 36px 120px", transform: `translateY(${(1 - p) * 700}px) rotate(-0.6deg)` }}>
-          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 64, color: T.ink, height: 92 }}>Thanksgiving, for one</div>
+          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 64, color: T.ink, height: 92 }}>{title}</div>
           <div style={{ marginTop: 22 }}>
             {rows.map((r, i) => (
               <div key={i} style={{ display: "flex", justifyContent: "space-between", height: 49, alignItems: "flex-end", opacity: interpolate(f, [4 + i * 3, 10 + i * 3], [0, 1], CL) }}>
@@ -586,8 +586,8 @@ export const Cuenta: React.FC<{ rows: { txt: string; amt: string }[]; total: str
           </div>
           <div style={{ height: 4, background: T.ink, margin: "16px 0 10px", width: `${interpolate(f, [34, 48], [0, 100], CL)}%` }} />
           <div style={{ display: "flex", justifyContent: "space-between", opacity: interpolate(f, [46, 58], [0, 1], CL) }}>
-            <span style={{ fontFamily: SANS, fontWeight: 600, fontSize: 30, letterSpacing: 4, color: T.acc, marginTop: 14 }}>ONE PLATE, ABOUT</span>
-            <span style={{ fontFamily: HAND, fontWeight: 700, fontSize: 84, color: T.acc }}>{total}</span>
+            <span style={{ fontFamily: SANS, fontWeight: 600, fontSize: 30, letterSpacing: 4, color: T.acc, marginTop: 14 }}>{label}</span>
+            <span style={{ fontFamily: HAND, fontWeight: 700, fontSize: total.length > 14 ? 54 : 84, color: T.acc, whiteSpace: "nowrap" }}>{total}</span>
           </div>
         </Paper>
       </AbsoluteFill>
