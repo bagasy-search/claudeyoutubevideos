@@ -462,7 +462,7 @@ export const EscHueco: React.FC<{ src: string; fShrink: number; fAir: number; du
 //   el cuadro se oscurece a noche azul; arriba queda como luna llena, pálida y con sus cráteres, con un halo frío.
 export const EscLuna: React.FC<{ src: string; fMoon: number; dur: number }> = ({ src, fMoon, dur }) => {
   const f = useCurrentFrame();
-  const P = { cx: 992, cy: 738, rx: 84, ry: 50 };
+  const P = { cx: 998, cy: 776, rx: 96, ry: 40 };
   const sube = spring({ frame: f - fMoon + 6, fps: 30, config: { damping: 18, stiffness: 60, mass: 1.4 } });
   const noche = interpolate(f, [fMoon - 6, fMoon + 30], [0, 1], { ...CLX, easing: Easing.inOut(Easing.quad) });
   const ty = -360 * sube, sc = 1 + 1.0 * sube, sq = 1 + 0.4 * sube; // de óvalo en perspectiva a círculo
@@ -480,7 +480,7 @@ export const EscLuna: React.FC<{ src: string; fMoon: number; dur: number }> = ({
           <div style={{ position: "absolute", left: P.cx - P.rx * 1.9, top: P.cy - P.ry * 1.9, width: P.rx * 3.8, height: P.ry * 3.8, borderRadius: "50%",
             background: "radial-gradient(closest-side, rgba(220,232,255,0.5), rgba(170,195,255,0.15) 60%, transparent)", mixBlendMode: "screen", opacity: noche }} />
           <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: `ellipse(${P.rx}px ${P.ry}px at ${P.cx}px ${P.cy}px)`,
-            filter: `grayscale(${0.55 * noche}) sepia(${0.2 * noche}) brightness(${1 + 0.35 * noche}) contrast(${1 + 0.15 * noche})` }}>
+            filter: `grayscale(${0.2 * noche}) sepia(${0.25 * noche}) brightness(${1 + 0.3 * noche}) contrast(${1 + 0.1 * noche})` }}>
             <Img src={staticFile(src)} style={FOTO} />
           </div>
         </div>
