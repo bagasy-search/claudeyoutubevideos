@@ -13,10 +13,12 @@ const TR = 0.42;
 
 // Ken Burns sorteado por plano: sentido 50/50, 1,8–4 %/s (techo 20 %), foco 35–65 %, paneo en ángulo atado a la escala
 const ZB = 1.06;
-const kb = (i: number, t: number, a: number, b: number, mitad = false): React.CSSProperties => {
+// foto=true (Nano Banana): base 1,12 y foco 0–15 % a la izquierda => la estrellita de marca de agua (x≈92 %, abajo-derecha) nunca entra
+const kb = (i: number, t: number, a: number, b: number, mitad = false, foto = false): React.CSSProperties => {
+  const zb = foto ? 1.12 : ZB;
   const d = b - a + TR, amp = Math.min(0.2, (0.018 + 0.022 * h(i, 1)) * d) * (mitad ? 0.45 : 1), saleZ = h(i, 2) < 0.5;
-  const p = cl((t - a) / d), z = ZB + amp * (saleZ ? 1 - p : p), k = (z - ZB) / amp, ang = h(i, 5) * Math.PI * 2;
-  return { width: "100%", height: "100%", objectFit: "cover", transformOrigin: `${35 + 30 * h(i, 3)}% ${35 + 30 * h(i, 4)}%`, transform: `translate(${Math.cos(ang) * 36 * k}px, ${Math.sin(ang) * 13 * k}px) scale(${z})` };
+  const p = cl((t - a) / d), z = zb + amp * (saleZ ? 1 - p : p), k = (z - zb) / amp, ang = h(i, 5) * Math.PI * 2;
+  return { width: "100%", height: "100%", objectFit: "cover", transformOrigin: `${foto ? 15 * h(i, 3) : 35 + 30 * h(i, 3)}% ${35 + 30 * h(i, 4)}%`, transform: `translate(${Math.cos(ang) * 36 * k}px, ${Math.sin(ang) * 13 * k}px) scale(${z})` };
 };
 
 const Plano: React.FC<{ i: number; t: number }> = ({ i, t }) => {
@@ -39,7 +41,7 @@ const Plano: React.FC<{ i: number; t: number }> = ({ i, t }) => {
     const need = d + TR + 0.1, rate = q.len && q.len < need ? Math.max(0.42, q.len / need) : 1;
     return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}><OffthreadVideo src={staticFile(P + q.f)} muted playbackRate={rate} style={kb(i, t, q.s, q.e, true)} /></AbsoluteFill>;
   }
-  return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}><Img src={staticFile(P + q.f)} style={kb(i, t, q.s, q.e)} /></AbsoluteFill>;
+  return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}><Img src={staticFile(P + q.f)} style={kb(i, t, q.s, q.e, false, true)} /></AbsoluteFill>;
 };
 
 // entrada de un plano sobre el anterior: corte · barrido de papel · empuje · fundido corto
