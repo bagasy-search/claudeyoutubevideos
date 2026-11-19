@@ -213,7 +213,7 @@ export const TechScene: React.FC<{ n: number; label: string; title: string; src:
   const k = cl(f / Math.max(1, dur), 0, 1); const z = lerp(1.04, 1.13, k); const px = lerp(n % 2 ? 1.5 : -1.5, n % 2 ? -1.5 : 1.5, k);
   const p = spring({ frame: f - 2, fps: 30, config: { damping: 16, mass: 0.8 } });
   const nb = spring({ frame: f - 6, fps: 30, config: { damping: 11, mass: 0.7 } });
-  const t = title.replace(/s+[–-]s+/g, ": ");
+  const t = title.replace(/\s+[–-]\s+/g, ": ");
   const fs = Math.round(Math.min(96, 1180 / Math.max(8, t.length * 0.5)));
   const m = /PASO\s+\d+\s+DE\s+(\d+)/i.exec(label || ""); const lb = m ? "DE " + m[1] + " PASOS" : (label || "");
   return (
