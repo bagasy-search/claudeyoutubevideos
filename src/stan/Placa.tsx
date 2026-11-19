@@ -180,7 +180,7 @@ export const TresPl: React.FC<{ items: { t: string; v: string; ok: boolean; c: s
         {items.map((it, i) => { const r = interpolate(f, [it.f, it.f + 10], [0, 180], { ...CL, easing: ease }); const back = r > 90;
           return <div key={i} style={{ flex: 1, height: 600, position: "relative", transformStyle: "preserve-3d", transform: `rotateY(${r}deg)` }}>
             <div style={{ position: "absolute", inset: 0, backfaceVisibility: "hidden", background: it.c, borderRadius: 10, display: back ? "none" : "flex", flexDirection: "column", justifyContent: "flex-end", padding: 40 }}>
-              <Grilla n={3} m={3} cell={140} bg={() => copa} style={{ position: "absolute", left: 60, top: 60, opacity: 0.85 }} />
+              <Grilla n={3} m={3} cell={104} bg={() => copa} style={{ position: "absolute", left: 60, top: 50, opacity: 0.85 }} />
               <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 74, color: C.ink, position: "relative" }}>{it.t}</div>
             </div>
             <div style={{ position: "absolute", inset: 0, transform: "rotateY(180deg)", background: C.crema, borderRadius: 10, display: back ? "flex" : "none", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: 40, gap: 30 }}>
@@ -324,7 +324,7 @@ export const BolsaPl: React.FC<{ marks: { f: number }[]; dur: number }> = ({ mar
     return <div style={{ width: 520, height: 680, transform: `translateY(${(1 - p) * -700}px) rotate(${(1 - p) * 6}deg)`, background: "linear-gradient(170deg,#D8C9A6,#B9A47A)", borderRadius: "24px 24px 40px 40px", boxShadow: "0 30px 50px rgba(0,0,0,0.5)", position: "relative", padding: "120px 40px 0", textAlign: "center" }}>
       <div style={{ position: "absolute", left: 0, right: 0, top: 30, height: 40, background: "repeating-linear-gradient(90deg, #A88F60 0 12px, transparent 12px 24px)" }} />
       <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 40, letterSpacing: 4, color: "#5A4A2E" }}>CEMENTO</div>
-      <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: t.length > 10 ? 74 : 92, color: C.ink, lineHeight: 1 }}>{t}</div>
+      <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: t.length > 10 ? 56 : t.length > 7 ? 68 : 88, color: C.ink, lineHeight: 1 }}>{t}</div>
       <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 46, color: "#5A4A2E", marginTop: 26 }}>{s}</div>
       <Sello ok={ok} f0={f0 + 12} size={170} style={{ position: "absolute", left: 175, bottom: 50 }} />
     </div>; };
@@ -342,7 +342,7 @@ export const ProporPl: React.FC<{ a: number; b: number; bg: string; dur: number 
       <div style={{ position: "absolute", right: 260, bottom: 160, display: "flex", flexDirection: "column-reverse", gap: 10 }}>
         {blocks.map((k, i) => { const p = sp(f, 2 + i * 7, 11); return <div key={i} style={{ width: 380, height: 150, transform: `translateY(${(1 - p) * -500}px)`, opacity: cl(p * 3), background: k === "c" ? CEM() : "radial-gradient(circle, rgba(120,90,40,0.35) 0 2px, transparent 3px) 0 0 / 18px 18px, #D9B97C", backgroundSize: k === "c" ? CEMSZ : undefined, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 700, fontSize: 56, color: C.ink, boxShadow: "0 10px 20px rgba(0,0,0,0.4)" }}>{k === "c" ? "cemento" : "arena"}</div>; })}
       </div>
-      <div style={{ position: "absolute", left: 130, top: 360 }}><Titulo txt={`${a} : ${b}`} size={220} /><Kick txt="MISMO RECIPIENTE, SIEMPRE" /></div>
+      <div style={{ position: "absolute", left: 100, top: 330, background: "rgba(24,21,18,0.78)", padding: "20px 44px 34px", borderRadius: 12 }}><Titulo txt={`${a} : ${b}`} size={220} /><Kick txt="MISMO RECIPIENTE, SIEMPRE" /></div>
     </AbsoluteFill>
   );
 };
@@ -387,11 +387,11 @@ export const GalletaPl: React.FC<{ dur: number }> = ({ dur }) => {
   return (
     <AbsoluteFill style={{ opacity: out(f, dur), background: "linear-gradient(180deg,#E8E2D7,#C9C0B0)" }}>
       <div style={{ position: "absolute", left: 140, top: 200, width: 700, height: 300, transform: `rotate(${lift}deg)`, transformOrigin: "0 100%" }}>{half(true)}{half(false)}</div>
-      <div style={{ position: "absolute", left: 140, top: 600, fontFamily: SERIF, fontWeight: 700, fontSize: 76, color: C.ink }}>Sin nada adentro: galleta</div>
+      <div style={{ position: "absolute", left: 140, top: 600, width: 720, fontFamily: SERIF, fontWeight: 700, fontSize: 66, lineHeight: 1.1, color: C.ink }}>Sin nada adentro:<br />galleta</div>
       <div style={{ position: "absolute", left: 1040, top: 200, opacity: cl(m * 2), transform: `rotate(${-14 * m}deg)`, transformOrigin: "0 100%" }}>
         <Losa w={700} h={300}><div style={{ position: "absolute", inset: 24, background: "repeating-linear-gradient(60deg, transparent 0 34px, rgba(60,55,50,0.55) 34px 38px), repeating-linear-gradient(-60deg, transparent 0 34px, rgba(60,55,50,0.55) 34px 38px)" }} /></Losa>
       </div>
-      <div style={{ position: "absolute", left: 1040, top: 600, fontFamily: SERIF, fontWeight: 700, fontSize: 76, color: C.ink, opacity: cl(m * 2) }}>Con malla: entera</div>
+      <div style={{ position: "absolute", left: 1040, top: 600, width: 720, fontFamily: SERIF, fontWeight: 700, fontSize: 66, lineHeight: 1.1, color: C.ink, opacity: cl(m * 2) }}>Con malla:<br />entera</div>
     </AbsoluteFill>
   );
 };
@@ -434,7 +434,7 @@ export const RomboPl: React.FC<{ bg: string; dur: number }> = ({ bg, dur }) => {
         <Losa w={720} h={720}>
           <div style={{ position: "absolute", inset: 0, clipPath: `inset(0 ${100 - a}% 0 0)`, background: "repeating-linear-gradient(45deg, transparent 0 52px, rgba(40,36,32,0.6) 52px 58px)" }} />
           <div style={{ position: "absolute", inset: 0, clipPath: `inset(0 0 0 ${100 - b}%)`, background: "repeating-linear-gradient(-45deg, transparent 0 52px, rgba(40,36,32,0.6) 52px 58px)" }} />
-          <div style={{ position: "absolute", left: 360 - 260 * g, top: 360 - 260 * g, width: 520 * g, height: 520 * g, borderRadius: "50%", background: "radial-gradient(circle, rgba(225,225,220,0.85), rgba(200,200,195,0.6) 60%, transparent 72%)" }} />
+          <div style={{ position: "absolute", left: 360 - 150 * g, top: 360 - 120 * g, width: 300 * g, height: 240 * g, borderRadius: "46% 54% 50% 50%", background: "#E4E1D9", boxShadow: "inset 0 -10px 18px rgba(0,0,0,0.25), 0 6px 10px rgba(0,0,0,0.3)", opacity: cl(g * 3) }} />
         </Losa>
       </div>
       <div style={{ position: "absolute", left: 120, top: 380, width: 820 }}><Kick txt="LA ESPALDA, RAYADA" /><Titulo txt="El pegamento se agarra en los canales" size={80} style={{ marginTop: 12 }} /></div>
@@ -512,7 +512,7 @@ export const CurvaPl: React.FC<{ marks: { f: number }[]; dur: number }> = ({ mar
     <AbsoluteFill style={{ opacity: out(f, dur), background: "linear-gradient(180deg,#F1ECE3,#D8CFC0)" }}>
       <div style={{ position: "absolute", left: 260, top: 230, width: W, height: H, borderLeft: "6px solid #3A3631", borderBottom: "6px solid #3A3631" }}>
         {Array.from({ length: 57 }).map((_, i) => { const x = i / 2; if (x > d) return null; return <div key={i} style={{ position: "absolute", left: (x / 28) * W - 9, bottom: (pct(x) / 100) * H - 9, width: 18, height: 18, borderRadius: "50%", background: C.teja }} />; })}
-        {[[7, "7 días ≈ 70 %"], [28, "28 días: 100 %"]].map(([x, t], i) => d >= (x as number) ? <div key={i} style={{ position: "absolute", left: ((x as number) / 28) * W - (i ? 520 : 40), bottom: (pct(x as number) / 100) * H + 30, fontFamily: SANS, fontWeight: 700, fontSize: 64, color: C.ink, whiteSpace: "nowrap" }}>{t}</div> : null)}
+        {[[7, "7 días ≈ 70 %"], [28, "28 días: 100 %"]].map(([x, t], i) => d >= (x as number) ? <div key={i} style={{ position: "absolute", left: ((x as number) / 28) * W + (i ? -520 : 50), bottom: (pct(x as number) / 100) * H + (i ? 30 : -110), fontFamily: SANS, fontWeight: 700, fontSize: 64, color: C.ink, whiteSpace: "nowrap" }}>{t}</div> : null)}
         <div style={{ position: "absolute", left: 0, bottom: -90, fontFamily: SANS, fontWeight: 600, fontSize: 48, color: "#55504A" }}>días de curado</div>
       </div>
       <div style={{ position: "absolute", left: 260, top: 70, fontFamily: SERIF, fontWeight: 700, fontSize: 80, color: C.ink }}>La primera semana manda</div>
