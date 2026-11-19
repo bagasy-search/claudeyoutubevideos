@@ -394,8 +394,8 @@ export const Engomados: React.FC<{ img: string; items: Peg[]; seed: number; dur:
   const f = useCurrentFrame(); const out = salir(f, dur);
   let cx = items[0] ? items[0].x : 960, cy = items[0] ? items[0].y + 140 : 540;
   for (let i = 1; i < items.length; i++) { const u = seg(f, items[i].f - 18, items[i].f + 6); cx = lerp(cx, items[i].x, u); cy = lerp(cy, items[i].y + 140, u); }
-  cx = lerp(960, cx, 0.55); cy = lerp(540, cy, 0.55);
-  const s = lerp(1.06, 1.18, seg(f, 0, dur));
+  cx = lerp(960, cx, 0.55); cy = lerp(540, cy, 0.55); cx += Math.sin(f / 40) * 40; cy += Math.cos(f / 55) * 24;
+  const s = lerp(1.08, 1.26, seg(f, 0, dur));
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <div style={camC(cx, cy, s)}>
@@ -482,7 +482,7 @@ export const Sellos: React.FC<{ img: string; items: Sello[]; dur: number; zoomTo
   const golpe = items.reduce((a, it) => { const d = f - it.f - 7; return d >= 0 && d < 10 ? a + Math.exp(-d / 3) * Math.sin(d * 2.4) * 7 : a; }, 0);
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
-      <div style={{ ...camC(cx, cy + golpe, s) }}>
+      <div style={{ ...camC(cx + Math.sin(f / 40) * 36, cy + golpe + Math.cos(f / 55) * 22, s) }}>
         <Img src={staticFile(img)} style={FOTO} />
         {items.map((it, i) => {
           if (f < it.f) return null;
