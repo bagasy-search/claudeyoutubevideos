@@ -396,3 +396,95 @@ export const EscTapa: React.FC<{ src: string; fRattle: number; fSteam: number; d
     </AbsoluteFill>
   );
 };
+
+// ================= lcf15c (las tartitas de la madre) =================
+// 13 EscTarjeta · "the butter stain right in the middle, and her handwriting, a little shaky at the end" (g0060): una luz por
+//   DETRÁS del papel atraviesa sólo la mancha de manteca (papel engrasado = translúcido) y la deja dorada; el resto del cuadro
+//   baja un punto. En "handwriting" la cámara se desliza lento por el último renglón.
+export const EscTarjeta: React.FC<{ src: string; fStain: number; fHand: number; dur: number }> = ({ src, fStain, fHand, dur }) => {
+  const f = useCurrentFrame();
+  const ST = { cx: 962, cy: 508, rx: 88, ry: 82 };
+  const luz = interpolate(f, [fStain - 4, fStain + 26], [0, 1], { ...CLX, easing: Easing.out(Easing.cubic) });
+  const latido = 1 + 0.04 * Math.sin(f / 11);
+  const k0 = suave(f / 40), k1 = suave((f - fHand + 4) / Math.max(30, dur - fHand - 8));
+  const s = 1.18 + 0.22 * k0 + 0.22 * k1;
+  const px = 900 + 160 * suave((f - fHand - 10) / Math.max(30, dur - fHand - 10)), py = 520 + 120 * k1;
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
+      <AbsoluteFill style={camara(px, py, s)}>
+        <Img src={staticFile(src)} style={{ ...FOTO, filter: `brightness(${1 - 0.18 * luz})` }} />
+        {/* el papel, apenas más claro: la luz de atrás lo atraviesa */}
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: "polygon(722px 344px, 1238px 410px, 1222px 690px, 702px 628px)", opacity: luz }}>
+          <Img src={staticFile(src)} style={{ ...FOTO, filter: "brightness(1.08)" }} />
+        </div>
+        {/* la mancha: translúcida y dorada, con halo que respira */}
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: `ellipse(${ST.rx}px ${ST.ry}px at ${ST.cx}px ${ST.cy}px)`, opacity: luz }}>
+          <Img src={staticFile(src)} style={{ ...FOTO, filter: "brightness(1.28) sepia(0.35) saturate(1.3)" }} />
+        </div>
+        <div style={{ position: "absolute", left: ST.cx - ST.rx * 1.6, top: ST.cy - ST.ry * 1.6, width: ST.rx * 3.2, height: ST.ry * 3.2, borderRadius: "50%",
+          background: "radial-gradient(closest-side, rgba(255,214,140,0.28), rgba(255,200,120,0.08) 55%, transparent)", mixBlendMode: "screen", opacity: luz * latido }} />
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// 14 EscHueco · "the apples shrink down to nothing and you've got a cup of air with a lid on it" (g1830): el hueco real bajo la
+//   tapa arranca LLENO de manzana (la textura del relleno de la misma foto, estirada hasta la tapa); en "shrink" el relleno se
+//   encoge hacia el fondo y destapa el hueco oscuro real; en "air" la cámara entra despacio en el hueco.
+export const EscHueco: React.FC<{ src: string; fShrink: number; fAir: number; dur: number }> = ({ src, fShrink, fAir, dur }) => {
+  const f = useCurrentFrame();
+  const CAV = "polygon(700px 598px, 860px 584px, 1040px 590px, 1210px 606px, 1250px 640px, 1236px 712px, 1120px 742px, 900px 744px, 742px 726px, 690px 664px)";
+  const baja = interpolate(f, [fShrink - 2, fShrink + 34], [1, 0], { ...CLX, easing: Easing.inOut(Easing.cubic) });
+  const k = suave((f - fAir + 4) / Math.max(30, dur - fAir));
+  const s = 1.15 + 0.03 * suave(f / 40) + 0.75 * k;
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
+      <AbsoluteFill style={camara(975, 610 + 50 * k, s)}>
+        <Img src={staticFile(src)} style={FOTO} />
+        {baja > 0.06 && (
+          <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: CAV }}>
+            {/* relleno: la franja de manzana del fondo del hueco, estirada hacia arriba hasta la tapa */}
+            <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "960px 744px",
+              transform: `scaleY(${0.02 + 0.98 * baja})` }}>
+              <div style={{ position: "absolute", left: 680, top: 584, width: 580, height: 160, overflow: "hidden" }}>
+                <Img src={staticFile(src)} style={{ position: "absolute", left: -1720 * 2.9, top: -800 * 1.34, width: 1920 * 2.9, height: 1080 * 1.34, objectFit: "fill", filter: "brightness(0.9) saturate(1.1)" }} />
+              </div>
+              <div style={{ position: "absolute", left: 680, top: 584, width: 580, height: 30, background: "linear-gradient(180deg, rgba(20,10,5,0.55), transparent)" }} />
+            </div>
+          </div>
+        )}
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+// 15 EscLuna · "they looked like the moon" (g2650): una tartita hundida (recorte redondo) sube de su hueco del molde mientras
+//   el cuadro se oscurece a noche azul; arriba queda como luna llena, pálida y con sus cráteres, con un halo frío.
+export const EscLuna: React.FC<{ src: string; fMoon: number; dur: number }> = ({ src, fMoon, dur }) => {
+  const f = useCurrentFrame();
+  const P = { cx: 992, cy: 738, rx: 84, ry: 50 };
+  const sube = spring({ frame: f - fMoon + 6, fps: 30, config: { damping: 18, stiffness: 60, mass: 1.4 } });
+  const noche = interpolate(f, [fMoon - 6, fMoon + 30], [0, 1], { ...CLX, easing: Easing.inOut(Easing.quad) });
+  const ty = -360 * sube, sc = 1 + 1.0 * sube, sq = 1 + 0.4 * sube; // de óvalo en perspectiva a círculo
+  const k = suave(f / Math.max(1, dur));
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
+      <AbsoluteFill style={camara(1000, 600 - 60 * sube, 1.12 + 0.05 * k)}>
+        <Img src={staticFile(src)} style={{ ...FOTO, filter: `brightness(${1 - 0.5 * noche}) saturate(${1 - 0.5 * noche}) hue-rotate(${-12 * noche}deg)` }} />
+        <AbsoluteFill style={{ background: "rgba(18,32,70,1)", mixBlendMode: "multiply", opacity: 0.55 * noche }} />
+        {/* el hueco que deja en el molde */}
+        <div style={{ position: "absolute", left: P.cx - P.rx, top: P.cy - P.ry, width: P.rx * 2, height: P.ry * 2, borderRadius: "50%",
+          background: "radial-gradient(closest-side, rgba(8,6,6,0.92), rgba(20,14,10,0.7) 75%, transparent)", opacity: Math.min(1, sube * 3) }} />
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: `${P.cx}px ${P.cy}px`,
+          transform: `translateY(${ty}px) scale(${sc}, ${sc * sq})` }}>
+          <div style={{ position: "absolute", left: P.cx - P.rx * 1.9, top: P.cy - P.ry * 1.9, width: P.rx * 3.8, height: P.ry * 3.8, borderRadius: "50%",
+            background: "radial-gradient(closest-side, rgba(220,232,255,0.5), rgba(170,195,255,0.15) 60%, transparent)", mixBlendMode: "screen", opacity: noche }} />
+          <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: `ellipse(${P.rx}px ${P.ry}px at ${P.cx}px ${P.cy}px)`,
+            filter: `grayscale(${0.55 * noche}) sepia(${0.2 * noche}) brightness(${1 + 0.35 * noche}) contrast(${1 + 0.15 * noche})` }}>
+            <Img src={staticFile(src)} style={FOTO} />
+          </div>
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};

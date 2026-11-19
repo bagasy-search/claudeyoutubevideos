@@ -3,7 +3,7 @@ import { Composition, registerRoot } from "remotion";
 import { MainLor, TOTAL_FRAMES_LOR } from "./lor/Main";
 
 const Root: React.FC = () => (
-  <Composition id="Lcf15b" component={MainLor}
+  <Composition id="Lcf15c" component={MainLor}
     durationInFrames={TOTAL_FRAMES_LOR} fps={30} width={1920} height={1080} />
 );
 registerRoot(Root);
