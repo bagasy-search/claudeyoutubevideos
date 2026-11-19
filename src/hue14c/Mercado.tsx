@@ -16,7 +16,7 @@ const sp = (f: number, d = 14, m = 0.8) => spring({ frame: f, fps: 30, config: {
 const outF = (f: number, dur: number, len = 10) => interpolate(f, [dur - len, dur], [1, 0], CL);
 const seg = (f: number, a: number, b: number, e = io) => interpolate(f, [a, b], [0, 1], { ...CL, easing: e });
 // salida: el objeto se va en los últimos 14 cuadros (la foto queda)
-const salir = (f: number, dur: number) => interpolate(f, [dur - 14, dur - 1], [0, 1], { ...CL, easing: Easing.in(Easing.cubic) });
+const salir = (f: number, dur: number) => (f >= dur - 1 ? 1 : 0);
 
 // ---------- materiales
 const PINE: React.CSSProperties = {
@@ -187,7 +187,7 @@ const MesaFoto: React.FC<{ t: number }> = ({ t }) => (
 // (1) carrusel: sobre la mesa real, de a 3 cajas grandes (x 120 / 700 / 1280); cada caja nueva cae en su lugar y la que estaba ahí se va abajo
 export const MuroCajas: React.FC<{ cards: Card[]; dur: number }> = ({ cards, dur }) => {
   const f = useCurrentFrame();
-  const n = cards.length, W = 520, H = W * 0.78, YB = 800, SL = [120, 700, 1280];
+  const n = cards.length, W = 580, H = W * 0.78, YB = 830, SL = [40, 670, 1300];
   const step = (dur - 20) / n;
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
@@ -196,13 +196,13 @@ export const MuroCajas: React.FC<{ cards: Card[]; dur: number }> = ({ cards, dur
         const g = Math.floor(i / 3), gn = Math.min(3, n - g * 3); const fi = Math.round(4 + i * step); const fo = (g + 1) * 3 < n ? Math.round(4 + (g + 1) * 3 * step) - 6 : dur + 10;
         if (f < fi || f > fo + 14) return null;
         const k = spring({ frame: f - fi, fps: 30, config: { damping: 11, mass: 1.1 } });
-        const out = interpolate(f, [fo, fo + 10], [0, 1], { ...CL, easing: Easing.in(Easing.cubic) });
+        const out = f >= fo + 4 ? 1 : 0;
         const sl = gn === 3 ? i % 3 : gn === 2 ? 0.5 + (i % 3) : 1; const x = SL[0] + sl * (SL[1] - SL[0]);
         return (
           <React.Fragment key={i}>
             <Sombra x={x + W / 2} y={YB + 4} w={W * 1.04} h={40} o={k * (1 - out)} />
-            <div style={{ position: "absolute", left: x, top: YB - H, opacity: Math.min(1, k * 2) * (1 - out), transform: `translateY(${(1 - k) * -240}px) scale(${1 - 0.04 * out}) rotate(${((hash(i + 3) % 5) - 2) * 0.5}deg)`, transformOrigin: "50% 100%" }}>
-              <Caja n={i + 1} title={c.title} src={c.src} w={W} ts={56} ph={0.56} />
+            <div style={{ position: "absolute", left: x, top: YB - H, opacity: 1 - out, transform: `translateY(${(1 - k) * -1000}px) rotate(${((hash(i + 3) % 5) - 2) * 0.5}deg)`, transformOrigin: "50% 100%" }}>
+              <Caja n={i + 1} title={c.title} src={c.src} w={W} ts={66} ph={0.56} />
             </div>
           </React.Fragment>
         );
@@ -217,7 +217,7 @@ export const RecapCajas: React.FC<{ n: number; cards: Card[]; lines: string[]; d
   const f = useCurrentFrame();
   const t = seg(f, 0, dur);
   if (n === 0) {
-    const kk = spring({ frame: f - 3, fps: 30, config: { damping: 10, mass: 1.2, stiffness: 140 } }); const oo = interpolate(f, [dur - 9, dur - 1], [0, 1], CL);
+    const kk = spring({ frame: f - 3, fps: 30, config: { damping: 10, mass: 1.2, stiffness: 140 } }); const oo = 0;
     return (
       <AbsoluteFill style={{ overflow: "hidden" }}>
         <MesaFoto t={t} />
@@ -235,7 +235,7 @@ export const RecapCajas: React.FC<{ n: number; cards: Card[]; lines: string[]; d
           const pas = i < 5 ? 0 : 1, j = i % 5; const fi = (pas ? half : 0) + 4 + j * 6; const fo = pas ? dur + 10 : half - 8;
           if (f < fi || f > fo + 14) return null;
           const k = spring({ frame: f - fi, fps: 30, config: { damping: 11, mass: 1 } });
-          const out = interpolate(f, [fo, fo + 12], [0, 1], { ...CL, easing: Easing.in(Easing.cubic) });
+          const out = f >= fo + 4 ? 2 : 0;
           const x = 90 + j * 370;
           return (
             <React.Fragment key={i}>
@@ -257,12 +257,12 @@ export const RecapCajas: React.FC<{ n: number; cards: Card[]; lines: string[]; d
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <MesaFoto t={t} />
       <Sombra x={200 + W / 2} y={804} w={W} h={40} o={k} />
-      <div style={{ position: "absolute", left: 160, top: 800 - H, opacity: Math.min(1, k * 2), transform: `translateY(${(1 - k) * -260}px) rotate(-1deg)` }}>
+      <div style={{ position: "absolute", left: 160, top: 800 - H, transform: `translateY(${(1 - k) * -900}px) rotate(-1deg)` }}>
         <Caja n={n} title={c?.title} src={c?.src ?? ""} w={W} ts={56} ph={0.56} />
       </div>
       <Sombra x={1290} y={806} w={860} h={36} o={b} />
-      <div style={{ position: "absolute", left: 800, bottom: 1080 - 800, width: 960, opacity: Math.min(1, b * 2), transform: `translateY(${(1 - b) * -260}px) rotate(1deg)`, transformOrigin: "50% 100%", ...BOARD, border: `20px solid ${M.pineD}`, boxSizing: "border-box", boxShadow: "0 24px 40px rgba(0,0,0,0.55)", padding: "34px 44px 40px" }}>
-        {lines.map((l, i) => <Gis key={i} t={l} f0={16 + i * 22} len={16} size={62} font={SERIF} style={{ marginTop: i ? 22 : 0, whiteSpace: "normal", lineHeight: 1.08 }} />)}
+      <div style={{ position: "absolute", left: 800, bottom: 1080 - 800, width: 960, transform: `translateY(${(1 - b) * -1100}px) rotate(1deg)`, transformOrigin: "50% 100%", ...BOARD, border: `20px solid ${M.pineD}`, boxSizing: "border-box", boxShadow: "0 24px 40px rgba(0,0,0,0.55)", padding: "34px 44px 40px" }}>
+        {lines.map((l, i) => <Gis key={i} t={l} f0={16 + i * 22} len={16} size={70} font={SERIF} style={{ marginTop: i ? 22 : 0, whiteSpace: "normal", lineHeight: 1.08 }} />)}
       </div>
     </AbsoluteFill>
   );
@@ -318,7 +318,7 @@ export const LibroCaja: React.FC<{ src: string; tabs: { p: string; t: string; f:
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <MesaFoto t={t} />
       <Sombra x={260 + BW / 2 + 30} y={220 + BH + 4} w={BW + 80} h={50} o={enter} />
-      <div style={{ position: "absolute", left: 260, top: 220, width: BW, height: BH, perspective: 2400, opacity: Math.min(1, enter * 2), transform: `translateY(${(1 - enter) * -240}px) rotate(-3deg)` }}>
+      <div style={{ position: "absolute", left: 260, top: 220, width: BW, height: BH, perspective: 2400, transform: `translateY(${(1 - enter) * -1200}px) rotate(-3deg)` }}>
         <div style={{ position: "absolute", inset: 0, ...PAPER, boxShadow: "24px 34px 44px rgba(0,0,0,0.5)", padding: "64px 56px", boxSizing: "border-box" }}>
           {t0 && <>
             <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 46, letterSpacing: 4, color: M.stamp, opacity: seg(f, t0.f + 6, t0.f + 14) }}>pág. {t0.p}</div>
@@ -409,7 +409,7 @@ export const Engomados: React.FC<{ img: string; items: Peg[]; seed: number; dur:
         {marcas?.regla && (() => { const R = marcas.regla; const L = Math.hypot(R.b[0] - R.a[0], R.b[1] - R.a[1]); const ang = (Math.atan2(R.b[1] - R.a[1], R.b[0] - R.a[0]) * 180) / Math.PI; const g = seg(f, R.f, R.f + 14, eo); if (g <= 0) return null;
           return (
             <div style={{ position: "absolute", left: R.a[0], top: R.a[1], transformOrigin: "0 50%", transform: `translateY(-50%) rotate(${ang}deg)`, opacity: 1 - out }}>
-              <div style={{ width: L * g, height: 56, backgroundColor: "#F2C230", backgroundImage: "repeating-linear-gradient(90deg, #2A1F17 0 2px, transparent 2px 13px)", backgroundSize: "100% 12px", backgroundRepeat: "repeat-x", border: "2px solid #8a6a10", borderRadius: 3, boxShadow: "6px 10px 10px rgba(0,0,0,0.45)", overflow: "hidden" }} />
+              <div style={{ width: L * g, height: 72, backgroundColor: "#F2C230", backgroundImage: "repeating-linear-gradient(90deg, #2A1F17 0 2px, transparent 2px 13px)", backgroundSize: "100% 12px", backgroundRepeat: "repeat-x", border: "2px solid #8a6a10", borderRadius: 3, boxShadow: "6px 10px 10px rgba(0,0,0,0.45)", overflow: "hidden" }} />
               <div style={{ position: "absolute", left: L / 2, top: 60, transform: `translateX(-50%) rotate(${-ang}deg)`, fontFamily: SERIF, fontSize: 88, color: "#FFF4DE", textShadow: "0 3px 10px rgba(0,0,0,0.85), 0 0 2px #000", whiteSpace: "nowrap", opacity: seg(f, R.f + 10, R.f + 18) }}>{R.t}</div>
             </div>
           ); })()}
@@ -433,7 +433,7 @@ export const Pizarron: React.FC<{ img: string; head: string; lines: { t: string;
           {[90, 610].map((x) => <div key={x} style={{ position: "absolute", left: x - 2, top: 0, width: 4, height: 130, background: "#5a3d1e", boxShadow: "3px 4px 4px rgba(0,0,0,0.35)" }} />)}
           <div style={{ position: "absolute", left: 0, top: 120, width: 700, ...BOARD, border: `18px solid ${M.pineD}`, boxSizing: "border-box", boxShadow: "18px 26px 40px rgba(0,0,0,0.55)", padding: "28px 36px 34px" }}>
             <Gis t={head.charAt(0) + head.slice(1).toLowerCase()} f0={fIn + 8} len={8} size={58} font={SERIF} style={{ color: "#FFD08A", whiteSpace: "normal", lineHeight: 1.05 }} />
-            {lines.map((l, i) => <Gis key={i} t={l.t} f0={Math.max(fIn + 16 + i * 8, l.f)} len={8} size={i === 0 ? 88 : 66} font={SERIF} style={{ marginTop: 14, whiteSpace: "normal", lineHeight: 1.05, color: i === 0 ? "#FFF6D8" : M.chalk }} />)}
+            {lines.map((l, i) => <Gis key={i} t={l.t} f0={Math.max(fIn + 16 + i * 8, l.f)} len={8} size={i === 0 ? 92 : 74} font={SERIF} style={{ marginTop: 14, whiteSpace: "normal", lineHeight: 1.05, color: i === 0 ? "#FFF6D8" : M.chalk }} />)}
           </div>
         </div>
       )}
@@ -492,8 +492,8 @@ export const Sellos: React.FC<{ img: string; items: Sello[]; dur: number; zoomTo
           if (chico) { const [big, small] = it.t.split("|"); const ok = !/NO/.test(big); const c = ok ? "#2E7D32" : M.stamp;
             return (
               <div key={i} style={{ position: "absolute", left: px, top: py, transform: `translate(-50%, -50%) rotate(${r}deg) scale(${lerp(2.4, 1, hit) + reb * 2})`, opacity: lerp(0, 1, hit) * (1 - out), background: "rgba(246,238,220,0.95)", border: `7px solid ${c}`, borderRadius: 12, padding: "6px 18px 8px", textAlign: "center", fontFamily: SANS, fontWeight: 800, color: c, whiteSpace: "nowrap", boxShadow: `0 ${lerp(34, 8, hit)}px ${lerp(30, 10, hit)}px rgba(0,0,0,0.5)` }}>
-                <div style={{ fontSize: ok ? 40 : 56, lineHeight: 1, letterSpacing: 3 }}>{big}</div>
-                {small && <div style={{ fontSize: 28, fontWeight: 700, letterSpacing: 2, marginTop: 2 }}>{small}</div>}
+                <div style={{ fontSize: ok ? 58 : 76, lineHeight: 1, letterSpacing: 3 }}>{big}</div>
+                {small && <div style={{ fontSize: 40, fontWeight: 700, letterSpacing: 2, marginTop: 2 }}>{small}</div>}
               </div>
             ); }
           return (
@@ -515,12 +515,12 @@ export const Estarcido: React.FC<{ img: string; quote: string; source: string; d
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <div style={camC(lerp(960, 900, t), lerp(600, 640, t), lerp(1.04, 1.14, t))}><Img src={staticFile(img)} style={FOTO} /></div>
-      <div style={{ position: "absolute", left: 0, top: 54, width: 1920 * line, height: 7, backgroundImage: TWN, boxShadow: "0 5px 5px rgba(0,0,0,0.35)" }} />
+      <div style={{ position: "absolute", left: 0, top: 54, width: 1920 * line, height: 14, borderRadius: 7, background: "repeating-linear-gradient(60deg, #7a5530 0 5px, #4a3018 5px 9px)", boxShadow: "0 5px 5px rgba(0,0,0,0.35)" }} />
       {f >= 6 && (
         <div style={{ position: "absolute", left: 120, top: 50, width: 1000, transformOrigin: "500px 0", opacity: 1 - out, transform: `translateY(${(1 - k) * -500}px) rotate(${sw}deg)` }}>
           {[140, 860].map((x) => <div key={x} style={{ position: "absolute", left: x - 17, top: -26, width: 34, height: 86, borderRadius: 5, background: "linear-gradient(90deg, #8a6236, #c9a16b 45%, #6e4a26)", border: "2px solid #4a3020", boxShadow: "5px 7px 7px rgba(0,0,0,0.5)", zIndex: 2 }}><div style={{ position: "absolute", left: 4, right: 4, top: 30, height: 10, background: "#9a9a9a", borderRadius: 2 }} /></div>)}
           <div style={{ marginTop: 26, padding: "26px 44px 22px", ...KRAFTB, boxShadow: "18px 26px 34px rgba(0,0,0,0.45)", textWrap: "balance" } as React.CSSProperties}>
-            <div style={{ fontFamily: SERIF, fontSize: 72, lineHeight: 1.06, color: M.ink }}>{quote}</div>
+            <div style={{ fontFamily: SERIF, fontSize: 82, lineHeight: 1.06, color: M.ink }}>{quote}</div>
           </div>
         </div>
       )}
@@ -538,12 +538,12 @@ export const Bolsa: React.FC<{ img: string; n: number; text: string; dur: number
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <div style={camC(lerp(900, 820, t), lerp(560, 600, t), lerp(1.02, 1.08, t))}><Img src={staticFile(img)} style={FOTO} /></div>
-      <div style={{ position: "absolute", left: 120, top: 540, width: 820, perspective: 1600, opacity: Math.min(1, k * 2) * (1 - out), transform: `translateY(${(1 - k) * 300}px)` }}>
+      <div style={{ position: "absolute", left: 120, top: 540, width: 860, perspective: 1600, opacity: 1 - out, transform: `translateY(${(1 - k) * 700}px)` }}>
         <div style={{ transformOrigin: "50% 100%", transform: `rotateX(22deg) rotate(${n % 2 ? -3 : -4}deg)`, padding: "26px 40px 34px", boxSizing: "border-box", ...PAPER,
           backgroundImage: "repeating-linear-gradient(180deg, transparent 0 66px, rgba(80,110,160,0.28) 66px 68px)", boxShadow: "18px 24px 26px rgba(0,0,0,0.5)", borderRadius: "2px 2px 2px 26px" }}>
           <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, letterSpacing: 2, color: M.ink, borderBottom: `3px solid ${M.stamp}`, display: "inline-block", paddingBottom: 4 }}>{n ? `Me preguntaron · ${n}` : "Cuéntame en los comentarios"}</div>
           {rows.map((r, i) => { const p = seg(f, 14 + i * 16, 28 + i * 16, Easing.linear);
-            return <div key={i} style={{ fontFamily: SERIF, fontSize: 66, lineHeight: 1.12, color: "#22305A", marginTop: i ? 2 : 12, WebkitMaskImage: `linear-gradient(90deg, #000 ${p * 100}%, transparent ${p * 100 + 3}%)` }}>{r}</div>; })}
+            return <div key={i} style={{ fontFamily: SERIF, fontSize: 74, lineHeight: 1.12, color: "#22305A", marginTop: i ? 2 : 12, WebkitMaskImage: `linear-gradient(90deg, #000 ${p * 100}%, transparent ${p * 100 + 3}%)` }}>{r}</div>; })}
         </div>
       </div>
       <div style={{ position: "absolute", left: 900, top: 820, width: 380, height: 26, opacity: 1 - out, transform: `translateX(${(1 - pen) * 900}px) rotate(-18deg)`, borderRadius: 4, background: "linear-gradient(180deg, #F4C542, #D9A21A)", boxShadow: "8px 12px 10px rgba(0,0,0,0.45)" }}>
@@ -564,10 +564,10 @@ export const CTACaja: React.FC<{ img: string; next: string; nextImg: string; dur
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <div style={camC(lerp(880, 840, t), lerp(560, 580, t), lerp(1.0, 1.05, t))}><Img src={staticFile(img)} style={FOTO} /></div>
       <Sombra x={X + W / 2} y={YB + 6} w={W * 1.06} h={44} o={c * (1 - out)} />
-      <div style={{ position: "absolute", left: X, top: YB - H, opacity: Math.min(1, c * 2) * (1 - out), transform: `translateY(${(1 - c) * -300}px) rotate(-1deg)` }}>
+      <div style={{ position: "absolute", left: X, top: YB - H, opacity: 1 - out, transform: `translateY(${(1 - c) * -1100}px) rotate(-1deg)` }}>
         <Caja n={0} title={next} src={nextImg} w={W} ts={50} ph={0.56} />
-        <div style={{ position: "absolute", left: W * 0.08, top: -84, fontFamily: SERIF, fontSize: 66, color: "#FFF4DE", textShadow: "0 3px 10px rgba(0,0,0,0.85)" }}>El que sigue</div>
-        {f >= fs && <div style={{ position: "absolute", left: W * 0.86, top: H * 0.86, transform: `translate(-50%, -50%) rotate(-9deg) scale(${lerp(2.2, 1, hit) + reb})`, opacity: hit, background: "rgba(246,238,220,0.95)", border: `8px solid ${M.stamp}`, borderRadius: 12, padding: "10px 28px", fontFamily: SANS, fontWeight: 700, fontSize: 58, letterSpacing: 4, color: M.stamp, whiteSpace: "nowrap", boxShadow: `0 ${lerp(34, 8, hit)}px ${lerp(30, 10, hit)}px rgba(0,0,0,0.5)` }}>SUSCRÍBETE</div>}
+        <div style={{ position: "absolute", left: W * 0.08, top: -100, padding: "4px 22px 8px", borderRadius: 8, background: "rgba(30,20,12,0.72)", fontFamily: SERIF, fontSize: 66, color: "#FFF4DE" }}>El que sigue</div>
+        {f >= fs && <div style={{ position: "absolute", left: W + 330, top: H * 0.45, transform: `translate(-50%, -50%) rotate(-7deg) scale(${lerp(2.2, 1, hit) + reb})`, opacity: hit, background: "rgba(246,238,220,0.95)", border: `8px solid ${M.stamp}`, borderRadius: 12, padding: "10px 28px", fontFamily: SANS, fontWeight: 700, fontSize: 76, letterSpacing: 4, color: M.stamp, whiteSpace: "nowrap", boxShadow: `0 ${lerp(34, 8, hit)}px ${lerp(30, 10, hit)}px rgba(0,0,0,0.5)` }}>SUSCRÍBETE</div>}
       </div>
     </AbsoluteFill>
   );

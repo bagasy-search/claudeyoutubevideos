@@ -27,48 +27,21 @@ const TROZOS = (() => {
 const Hundida: React.FC<{ t: string; f0: number; f1: number }> = ({ t, f0, f1 }) => {
   const f = useCurrentFrame(); if (f < f0 || f > f1 + 14) return null;
   const k = interpolate(f, [f0, f0 + 16], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) });
-  const out = interpolate(f, [f1, f1 + 14], [1, 0], CL);
+  const out = f > f1 ? 0 : 1;
   return (
-    <div style={{ position: "absolute", left: 0, width: 1920, top: 850, textAlign: "center", fontFamily: FONTS.SERIF, fontSize: 104, fontWeight: 700, letterSpacing: 3,
+    <div style={{ position: "absolute", left: 0, width: 1920, top: 830, textAlign: "center", fontFamily: FONTS.SERIF, fontSize: 104, fontWeight: 700, letterSpacing: 3,
       color: "rgba(252,238,212,0.97)", opacity: out, transform: `scale(${1.18 - 0.18 * k})`, clipPath: `inset(-20px ${(1 - k) * 100}% -20px 0)`,
       textShadow: "0 -3px 2px rgba(0,0,0,0.75), 0 4px 0 rgba(70,40,18,0.9), 0 8px 18px rgba(0,0,0,0.7)" }}>{t}</div>
   );
 };
-export const EscPuno: React.FC<{ src: string; fAprieta: number; fPastel: number; fDesarma: number; fChorrea: number; fBola: number; dur: number }> = ({ src, fAprieta, fPastel, fDesarma, fChorrea, fBola, dur }) => {
+export const EscPuno: React.FC<{ src: string; fAprieta: number; fPastel: number; fDesarma: number; fChorrea: number; fBola: number; dur: number }> = ({ src, fDesarma, fChorrea, fBola, dur }) => {
   const f = useCurrentFrame(); const S = sf(src);
-  const s = interpolate(f, [0, fDesarma, dur], [1.05, 1.3, 1.36], { ...CL, easing: io });
-  const uy = interpolate(f, [0, fDesarma + 40, fChorrea + 22], [0.15, 0.25, -1], { ...CL, easing: io });
-  const ux = interpolate(f, [0, dur], [-0.1, 0.05], CL) + Math.sin(f / 70) * 0.05;
-  const apr = spring({ frame: f - fAprieta, fps: 30, config: { damping: 11, mass: 1, stiffness: 120 } });
-  const suelta = spring({ frame: f - fPastel, fps: 30, config: { damping: 14 } });
-  const sq = 1 - 0.16 * apr + 0.16 * suelta; const tiembla = apr > 0.2 && suelta < 0.5 ? Math.sin(f * 2.3) * 4 * (1 - suelta) : 0;
-  const rompe = f >= fDesarma;
+  const s = interpolate(f, [0, fDesarma, dur], [1.04, 1.22, 1.28], { ...CL, easing: io });
+  const ux = interpolate(f, [0, dur], [0.02, 0.06], CL) + Math.sin(f / 70) * 0.04; const uy = interpolate(f, [0, dur], [-0.05, -0.2], { ...CL, easing: io });
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#000" }}>
-      <div style={{ ...FULL, transform: cam(s, ux, uy) }}>
-        <Img src={S} style={FULL} />
-        {!rompe && (
-          <div style={{ ...FULL, clipPath: `circle(${TERRON.r}px at ${TERRON.x}px ${TERRON.y}px)`, transformOrigin: `${TERRON.x}px ${TERRON.y}px`, transform: `translateX(${tiembla}px) scale(${sq})`, filter: "drop-shadow(0 10px 14px rgba(0,0,0,0.5))" }}>
-            <Img src={S} style={FULL} />
-          </div>
-        )}
-        {rompe && <div style={{ position: "absolute", left: TERRON.x - TERRON.r, top: TERRON.y - TERRON.r, width: TERRON.r * 2, height: TERRON.r * 2, overflow: "hidden", opacity: interpolate(f, [fDesarma + 4, fDesarma + 40], [0, 0.92], CL),
-          WebkitMaskImage: "radial-gradient(circle, #000 45%, transparent 72%)", maskImage: "radial-gradient(circle, #000 45%, transparent 72%)" }}>
-          <Img src={S} style={{ ...FULL, left: -(TERRON.x - TERRON.r) - 360, top: -(TERRON.y - TERRON.r) - 60, filter: "blur(7px) brightness(0.9)" }} />
-        </div>}
-        {rompe && TROZOS.map(({ x, y, i }) => {
-          const d = Math.floor(rnd(i) * 10) + Math.floor((y - (TERRON.y - TERRON.r)) / TILE) * 2;
-          const t = Math.max(0, f - fDesarma - d);
-          const dy = 0.035 * t * t + 0.7 * t; const dx = (rnd(i + 7) - 0.5) * 2.2 * t; const rot = (rnd(i + 3) - 0.5) * 5 * t;
-          const op = interpolate(y + dy, [960, 1100], [1, 0], CL);
-          if (op <= 0) return null;
-          return (
-            <div key={i} style={{ position: "absolute", left: x, top: y, width: TILE, height: TILE, overflow: "hidden", borderRadius: 10 + rnd(i + 1) * 12, opacity: op,
-              transform: `translate(${dx}px, ${dy}px) rotate(${rot}deg) scale(${1 - Math.min(0.3, t / 80)})`, boxShadow: t > 0 ? "0 10px 12px rgba(0,0,0,0.6)" : "none", outline: t > 0 ? "2px solid rgba(40,24,12,0.5)" : "none" }}>
-              <Img src={S} style={{ ...FULL, left: -x, top: -y }} />
-            </div>
-          );
-        })}
+      <div style={{ ...FULL, transform: cam(s, ux, uy) }}><Img src={S} style={FULL} /></div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 1080 }}>
         <Hundida t="muy mojada" f0={fChorrea + 6} f1={fBola - 4} />
         <Hundida t="le falta tezontle" f0={fBola + 6} f1={dur + 30} />
       </div>
@@ -142,27 +115,13 @@ const NUDOS = [
   { x: 963, y: 420, tx: 600, ty: 420 }, { x: 963, y: 420, tx: 1284, ty: 470 },
   { x: 963, y: 640, tx: 740, ty: 725 }, { x: 963, y: 640, tx: 1170, ty: 620 },
 ];
-export const EscPunta: React.FC<{ src: string; fTallo: number; fRamas: number; fFlores: number; dur: number }> = ({ src, fTallo, fRamas, fFlores, dur }) => {
+export const EscPunta: React.FC<{ src: string; fTallo: number; fRamas: number; fFlores: number; dur: number }> = ({ src, fRamas, dur }) => {
   const f = useCurrentFrame(); const S = sf(src);
-  const s = interpolate(f, [0, dur], [1.04, 1.11], CL);
-  const ux = Math.sin(f / 55) * 0.12; const uy = interpolate(f, [0, dur], [0.15, -0.1], CL);
-  const tallo = interpolate(f, [0, fTallo + 18], [0, 1], { ...CL, easing: io });
-  const fondo = interpolate(f, [0, 14], [0, 1], CL);
+  const s = interpolate(f, [0, fRamas, dur], [1.04, 1.2, 1.26], { ...CL, easing: io });
+  const ux = Math.sin(f / 60) * 0.06; const uy = interpolate(f, [0, fRamas, dur], [0.25, -0.05, -0.15], { ...CL, easing: io });
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#000" }}>
-      <div style={{ ...FULL, transform: cam(s, ux, uy) }}>
-        <Img src={S} style={FULL} />
-        <Img src={S} style={{ ...FULL, opacity: fondo, filter: "blur(8px) brightness(0.62) saturate(0.7)" }} />
-        {(() => { const kr = spring({ frame: f - fRamas, fps: 30, config: { damping: 13, mass: 1, stiffness: 90 } });
-          const m = [`radial-gradient(ellipse ${60 + 50 * tallo}px ${120 + 260 * tallo}px at 963px 640px, #000 55%, transparent 100%)`,
-            `radial-gradient(ellipse ${40 + 420 * kr}px ${40 + 120 * kr}px at 963px 470px, #000 50%, transparent 100%)`,
-            `radial-gradient(ellipse ${30 + 300 * kr}px ${30 + 110 * kr}px at 963px 670px, #000 50%, transparent 100%)`].join(", ");
-          return <Img src={S} style={{ ...FULL, filter: "brightness(1.08)", WebkitMaskImage: m, maskImage: m }} />; })()}
-        {NUDOS.map((n, i) => {
-          const k = spring({ frame: f - fFlores - i * 4, fps: 30, config: { damping: 10, mass: 0.8, stiffness: 140 } });
-          return <Ojo key={"o" + i} S={S} x={n.x + (n.tx - n.x) * 0.82} y={n.y + (n.ty - n.y) * 0.82} r={112 * k} />;
-        })}
-      </div>
+      <div style={{ ...FULL, transform: cam(s, ux, uy) }}><Img src={S} style={FULL} /></div>
     </AbsoluteFill>
   );
 };
