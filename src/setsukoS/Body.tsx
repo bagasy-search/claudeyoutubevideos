@@ -5,10 +5,12 @@ import { AbsoluteFill, Img, OffthreadVideo, Sequence, staticFile, useCurrentFram
 import { C, D, P, cl, e, eo, h, s } from "./lib";
 import * as SOB from "./sobre";
 import * as SER from "./serie";
+import * as FOT from "./fotos";
 
 const ESCENAS: Record<string, React.FC<any>> = { carrusel: SER.Carrusel, apertura: SER.Apertura, mapa: SER.Mapa, album: SER.Album, repaso: SER.Repaso };
 const OVS: Record<string, React.FC<any>> = { Kin: SOB.Kin, Tag: SOB.Tag, Cuenta: SOB.Cuenta, Lower: SOB.Lower, Chip: SOB.Chip,
-  Prog: SER.Prog, Prueba: SER.Prueba, Dato: SER.Dato, Palabra: SER.Palabra, Polaroid: SER.Polaroid, Mitad: SER.Mitad, Cta: SER.Cta, Fin: SER.Fin, Tela: SER.Tela };
+  Prog: SER.Prog, Prueba: SER.Prueba, Dato: SER.Dato, Palabra: SER.Palabra, Polaroid: SER.Polaroid, Mitad: SER.Mitad, Cta: SER.Cta, Fin: SER.Fin, Tela: SER.Tela,
+  FotoEscenario: FOT.FotoEscenario, FotoEspejo: FOT.FotoEspejo, FotoTintas: FOT.FotoTintas };
 const TR = 0.42;
 
 // Ken Burns sorteado por plano: sentido 50/50, 1,8–4 %/s (techo 20 %), foco 35–65 %, paneo en ángulo atado a la escala
