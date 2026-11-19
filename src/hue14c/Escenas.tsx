@@ -29,7 +29,7 @@ const Hundida: React.FC<{ t: string; f0: number; f1: number }> = ({ t, f0, f1 })
   const k = interpolate(f, [f0, f0 + 16], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) });
   const out = interpolate(f, [f1, f1 + 14], [1, 0], CL);
   return (
-    <div style={{ position: "absolute", left: 0, width: 1920, top: 975, textAlign: "center", fontFamily: FONTS.SERIF, fontSize: 92, fontWeight: 700, letterSpacing: 2,
+    <div style={{ position: "absolute", left: 0, width: 1920, top: 905, textAlign: "center", fontFamily: FONTS.SERIF, fontSize: 92, fontWeight: 700, letterSpacing: 2,
       color: "rgba(38,22,12,0.88)", opacity: out, transform: `scale(${1.18 - 0.18 * k})`, clipPath: `inset(0 ${(1 - k) * 100}% 0 0)`,
       textShadow: "0 -3px 2px rgba(0,0,0,0.65), 0 3px 2px rgba(255,214,170,0.28)" }}>{t}</div>
   );
@@ -57,7 +57,7 @@ export const EscPuno: React.FC<{ src: string; fAprieta: number; fPastel: number;
         {rompe && TROZOS.map(({ x, y, i }) => {
           const d = Math.floor(rnd(i) * 10) + Math.floor((y - (TERRON.y - TERRON.r)) / TILE) * 2;
           const t = Math.max(0, f - fDesarma - d);
-          const dy = 0.9 * t * t; const dx = (rnd(i + 7) - 0.5) * 3 * t; const rot = (rnd(i + 3) - 0.5) * 14 * t;
+          const dy = 0.55 * t * t + 2 * t; const dx = (rnd(i + 7) - 0.5) * 3 * t; const rot = (rnd(i + 3) - 0.5) * 14 * t;
           const op = interpolate(y + dy, [900, 1060], [1, 0], CL);
           if (op <= 0) return null;
           return (
@@ -152,7 +152,7 @@ export const EscPunta: React.FC<{ src: string; fTallo: number; fRamas: number; f
         })}
         {NUDOS.map((n, i) => {
           const k = spring({ frame: f - fFlores - i * 4, fps: 30, config: { damping: 10, mass: 0.8, stiffness: 140 } });
-          return <Ojo key={"o" + i} S={S} x={n.tx} y={n.ty} r={105 * k} />;
+          return <Ojo key={"o" + i} S={S} x={n.x + (n.tx - n.x) * 0.82} y={n.y + (n.ty - n.y) * 0.82} r={78 * k} />;
         })}
       </div>
     </AbsoluteFill>

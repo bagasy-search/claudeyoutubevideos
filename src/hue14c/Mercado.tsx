@@ -436,7 +436,7 @@ export const PizarronMeses: React.FC<{ img: string; foot: string; dur: number }>
 
 // mitos: sello de goma que golpea sobre cada remedio, en el plano de la mesa; la cámara viaja en curva del anterior al nuevo
 export type Sello = { x: number; y: number; t: string; f: number; r?: number };
-export const Sellos: React.FC<{ img: string; items: Sello[]; dur: number; zoomTo?: { x: number; y: number } }> = ({ img, items, dur }) => {
+export const Sellos: React.FC<{ img: string; items: Sello[]; dur: number; zoomTo?: { x: number; y: number }; chico?: boolean }> = ({ img, items, dur, chico }) => {
   const f = useCurrentFrame();
   const last = items[items.length - 1], prev = items.length > 1 ? items[items.length - 2] : null;
   const u = seg(f, Math.max(0, last.f - 30), last.f);
@@ -448,12 +448,12 @@ export const Sellos: React.FC<{ img: string; items: Sello[]; dur: number; zoomTo
         <Img src={staticFile(img)} style={FOTO} />
         {items.map((it, i) => {
           if (f < it.f) return null;
-          const px = Math.min(1180, Math.max(700, it.x)), py = Math.min(620, Math.max(500, it.y));
+          const px = chico ? it.x : Math.min(1180, Math.max(700, it.x)), py = chico ? it.y : Math.min(620, Math.max(500, it.y));
           const hit = seg(f, it.f, it.f + 4, Easing.in(Easing.quad)); const reb = f > it.f + 4 ? Math.exp(-(f - it.f - 4) / 4) * Math.sin((f - it.f - 4) / 1.5) * 0.04 : 0;
           const r = it.r ?? (i % 2 ? 7 : -8);
           return (
             <div key={i} style={{ position: "absolute", left: px, top: py, transform: `translate(-50%, -50%) perspective(900px) rotateX(38deg) rotate(${r}deg) scale(${lerp(1.6, 1, hit) + reb})`, opacity: lerp(0, 0.92, hit),
-              border: `8px solid ${M.stamp}`, borderRadius: 10, padding: "12px 30px", fontFamily: SANS, fontWeight: 600, fontSize: 58, letterSpacing: 6, color: M.stamp, whiteSpace: "nowrap",
+              border: `${chico ? 5 : 8}px solid ${M.stamp}`, borderRadius: 10, padding: chico ? "7px 14px" : "12px 30px", fontFamily: SANS, fontWeight: 600, fontSize: chico ? 30 : 58, letterSpacing: chico ? 2 : 6, color: M.stamp, whiteSpace: "nowrap",
               WebkitMaskImage: "repeating-linear-gradient(37deg, #000 0 9px, rgba(0,0,0,0.72) 9px 12px), repeating-linear-gradient(-61deg, #000 0 15px, rgba(0,0,0,0.8) 15px 17px)", mixBlendMode: "multiply" }}>{it.t}</div>
           );
         })}
