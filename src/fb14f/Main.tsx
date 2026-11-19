@@ -54,7 +54,7 @@ export const Overlay: React.FC<{ o: any }> = ({ o }) => {
     case "dial": return <S.Dial deg={o.deg} label={o.label} dur={d} />;
     case "windup": return <S.WindUp min={o.min} label={o.label} dur={d} />;
     case "scale": return <S.Scale to={o.to} suffix={o.suffix} label={o.label} dur={d} />;
-    case "rail": return <S.Rail n={o.n} total={o.total} word={o.word} title={o.title} dur={d} asc />;
+    case "rail": return null; // evaluador v2: pastilla de plantilla 4-5 → fuera (la escena de paso ya dice el número)
     case "qr": return <S.QrCard qr={o.qr} cover={o.cover} dur={d} />;
     default: return null;
   }
