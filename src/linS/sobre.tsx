@@ -15,7 +15,7 @@ export const Kin: React.FC<OP> = ({ t, a, b, txt, big, rojo }) => {
   const rueda = (w: string, at: number) => { const n = Number(w.replace(/[^0-9]/g, "")); if (!/\d/.test(w) || !n) return w; const p = eo(t, at, 0.9), v = Math.round(n * p);
     return w.replace(/[\d,.]+/, n >= 1000 ? v.toLocaleString("en-US") : String(v)); };
   return <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: 110 }}>
-    <AbsoluteFill style={{ background: `linear-gradient(0deg, rgba(8,8,12,${0.88 * eo(t, a - 0.1, 0.3) * (1 - sal)}) 0%, rgba(8,8,12,${0.5 * eo(t, a - 0.1, 0.3) * (1 - sal)}) 35%, rgba(8,8,12,0) 62%)` }} />
+    <AbsoluteFill style={{ background: `linear-gradient(0deg, rgba(8,8,12,${0.92 * eo(t, a - 0.1, 0.3) * (1 - sal)}) 0%, rgba(8,8,12,${0.7 * eo(t, a - 0.1, 0.3) * (1 - sal)}) 30%, rgba(8,8,12,${0.3 * eo(t, a - 0.1, 0.3) * (1 - sal)}) 50%, rgba(8,8,12,0) 66%)` }} />
     <div style={{ position: "relative", display: "flex", gap: "0.26em", fontFamily: SERIF, fontWeight: 600, fontSize: fs, color: "#FFFCF5", lineHeight: 1, transform: `translateY(${sal * 420}px)`, filter: `blur(${sal * 10}px)` }}>
       {ws.map((w: string, i: number) => { const at = a + i * 0.26, p = spr(t, at, 1.3), q = cl(p);
         return <span key={i} style={{ position: "relative", display: "inline-block", opacity: eo(t, at, 0.1), transform: `translateY(${(1 - p) * -120}px) scale(${lerp(1.3, 1, q)})`, fontVariantNumeric: "tabular-nums",
