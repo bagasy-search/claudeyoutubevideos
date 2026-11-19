@@ -79,7 +79,7 @@ export const Repaso: React.FC<SP> = ({ t, a }) => {
       <div style={{ position: "absolute", left: 0, right: 0, top: 8, display: "flex", justifyContent: "space-around", padding: "0 40px" }}>{Array.from({ length: 12 }).map((_, k) => <div key={k} style={{ width: 22, height: 44, borderRadius: 11, border: "4px solid #8d939b" }} />)}</div>
       <div style={{ position: "absolute", left: 120, top: 62, fontFamily: HAND, fontWeight: 700, fontSize: 78, color: C.ai, zIndex: 2, background: "#FFFDF4", right: 20 }}>{D.repaso_titulo || D.lista_titulo}</div>
       {D.items.map((it, i) => { const p = eo(t, a + 0.3 + i * 0.07, 0.35), hecho = t >= at(i), ck = eo(t, at(i), 0.3), act = i === cur;
-        return <div key={i} style={{ position: "absolute", left: 120, top: 170 + (i - scr) * lh, height: lh, right: 30, display: "flex", alignItems: "center", gap: 18, opacity: p, fontFamily: HAND, fontWeight: 700, fontSize: fs, color: hecho ? C.sumi : "rgba(20,33,61,.45)" }}>
+        return <div key={i} style={{ position: "absolute", left: 120, top: 170 + (i - scr) * lh, height: lh, right: 30, display: "flex", alignItems: "center", gap: 18, opacity: p, fontFamily: HAND, fontWeight: 700, fontSize: fs, color: hecho ? C.sumi : "rgba(20,33,61,.72)" }}>
           <span style={{ width: fs * 1.2, color: C.hanko }}>{it.n}.</span>
           <span style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", maxWidth: 640, background: act ? "rgba(246,210,120,.45)" : "transparent", padding: "0 8px", borderRadius: 4 }}>{it.t}</span>
           {hecho && <svg width={fs * 1.3} height={fs * 1.1} viewBox="0 0 40 34" style={{ overflow: "visible" }}><path d="M3 18 L15 30 L38 3" fill="none" stroke={C.hanko} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" strokeDasharray={60} strokeDashoffset={60 * (1 - ck)} /></svg>}
@@ -103,23 +103,23 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
   const zoom = 1.06 + 0.07 * cl(k / (dur + 0.4)), foto = <Img src={src(it.f)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(1.18) saturate(1.05)", transform: `scale(${zoom})`, transformOrigin: `${der ? 35 : 65}% 45%` }} />;
   const lado: React.CSSProperties = der ? { right: 130, alignItems: "flex-end", textAlign: "right" } : { left: 130, alignItems: "flex-start" };
   const titulo = <div style={{ position: "absolute", top: modo === 3 ? 470 : 330, width: 900, display: "flex", flexDirection: "column", ...lado }}>
-    <div style={{ ...cap, fontSize: 34, color: "#f1d9a8", textShadow: sombra, opacity: eo(t, a + 0.3, 0.4) }}>{D.item_rotulo || "carry-on"}</div>
+    <div style={{ ...cap, fontSize: 46, color: "#f1d9a8", textShadow: sombra, opacity: eo(t, a + 0.3, 0.4) }}>{D.item_rotulo || "carry-on"}</div>
     <Palabras t={t} at={a + 0.9} txt={it.t} gap={0.14} style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 104, color: "#FFFCF5", textShadow: sombra, lineHeight: 1.04, justifyContent: der ? "flex-end" : "flex-start", maxWidth: 900 }} />
     {it.sub && <div style={{ fontFamily: HAND, fontWeight: 700, whiteSpace: "nowrap", fontSize: Math.min(84, 980 / (String(it.sub).length * 0.44)), color: "#f1d9a8", textShadow: sombra, marginTop: 12, opacity: eo(t, a + 1.6, 0.5) }}>{it.sub}</div>}
     <div style={{ height: 4, background: C.hanko, marginTop: 16, width: 260 * eo(t, a + 1.4, 0.5) }} />
   </div>;
-  const velo = <AbsoluteFill style={{ background: `linear-gradient(${der ? 270 : 90}deg, rgba(10,16,30,.82) 0%, rgba(10,16,30,.4) 42%, rgba(10,16,30,0) 66%)` }} />;
+  const velo = <AbsoluteFill style={{ background: `linear-gradient(${der ? 270 : 90}deg, rgba(10,16,30,.9) 0%, rgba(10,16,30,.62) 46%, rgba(10,16,30,0) 72%)` }} />;
   const plastico = "linear-gradient(180deg,#F4F1EA 0%,#E2DDD2 55%,#CFC9BC 100%)";
   if (modo === 0) { // cartel iluminado de fila (panel de arriba de la cabina) que baja colgando sobre la foto y se balancea
     const p = cl(spr(t, a + 0.1, 0.9)), sw = swing(t, a + 0.45, 5, 2.2, 6), luz = eo(t, a + 0.55, 0.25);
     const pos: React.CSSProperties = der ? { left: 170 } : { right: 170 };
     return <AbsoluteFill style={{ background: C.sumi }}>{foto}{velo}{titulo}
-      <div style={{ position: "absolute", ...pos, top: lerp(-560, 120, p), width: 780, transformOrigin: "50% -110px", transform: `rotate(${sw}deg)` }}>
+      <div style={{ position: "absolute", ...pos, top: lerp(-480, 90, p), width: 600, transformOrigin: "50% -110px", transform: `rotate(${sw}deg)` }}>
         <div style={{ position: "absolute", left: 90, top: -110, width: 6, height: 110, background: "#555" }} /><div style={{ position: "absolute", right: 90, top: -110, width: 6, height: 110, background: "#555" }} />
-        <div style={{ height: 440, borderRadius: 28, background: "linear-gradient(180deg,#e9e5dc,#c9c3b6)", boxShadow: "0 30px 70px rgba(0,0,0,.6), inset 0 2px 0 rgba(255,255,255,.7)", padding: 26, display: "flex", gap: 22 }}>
+        <div style={{ height: 340, borderRadius: 24, background: "linear-gradient(180deg,#e9e5dc,#c9c3b6)", boxShadow: "0 30px 70px rgba(0,0,0,.6), inset 0 2px 0 rgba(255,255,255,.7)", padding: 26, display: "flex", gap: 22 }}>
           <div style={{ flex: 1, borderRadius: 14, background: "#101418", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", boxShadow: "inset 0 4px 12px rgba(0,0,0,.8)" }}>
             <div style={{ ...cap, fontSize: 38, color: `rgba(246,210,120,${0.35 + 0.65 * luz})` }}>row</div>
-            <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 260, lineHeight: 1, color: `rgba(255,236,190,${0.25 + 0.75 * luz})`, textShadow: `0 0 ${30 * luz}px rgba(246,200,110,.9)` }}>{String(it.n).padStart(2, "0")}</div>
+            <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 200, lineHeight: 1, color: `rgba(255,236,190,${0.25 + 0.75 * luz})`, textShadow: `0 0 ${30 * luz}px rgba(246,200,110,.9)` }}>{String(it.n).padStart(2, "0")}</div>
           </div>
           <div style={{ width: 170, display: "flex", flexDirection: "column", gap: 24, justifyContent: "center" }}>{["A", "B", "C"].map((l, k) => <div key={k} style={{ height: 100, borderRadius: 12, background: "#101418", color: `rgba(255,236,190,${0.3 + 0.7 * eo(t, a + 0.7 + k * 0.12, 0.2)})`, fontFamily: SANS, fontWeight: 500, fontSize: 60, display: "flex", alignItems: "center", justifyContent: "center" }}>{l}</div>)}</div>
         </div>
@@ -238,13 +238,14 @@ export const Dato: React.FC<OP> = ({ t, a, b, txt, fuente }) => {
 // número o regla explicada: tablero de partidas que se arma letra por letra (cifra) + la ruta en la fila de abajo
 export const Palabra: React.FC<OP> = ({ t, a, b, kan, rom, sig, lado }) => {
   const der = lado !== "izq", ent = eo(t, a - 0.1, 0.3), L = String(kan).length, out = b - 0.45, fuera = e(t, b - 0.12, b);
-  const H1 = Math.min(200, 1150 / Math.max(3, L) / 0.71), R2 = String(rom || "").length, H2 = Math.min(80, 1150 / Math.max(8, R2) / 0.71);
-  return <div style={{ position: "absolute", top: 70, [der ? "right" : "left"]: 70, display: "flex", flexDirection: "column", alignItems: der ? "flex-end" : "flex-start", opacity: 1 - fuera,
+  const av = (D.shots || []).some((s: any) => s.k === "A" && s.s < b && s.e > a), W = av ? 560 : 1150, R2 = String(rom || "").length;
+  const H1 = Math.min(av ? 150 : 200, W / Math.max(3, L) / 0.71), H2 = Math.min(av ? 60 : 80, W / Math.max(8, R2) / 0.71);
+  return <div style={{ position: "absolute", top: 70, [der && !av ? "right" : "left"]: av ? 50 : 70, display: "flex", flexDirection: "column", alignItems: der && !av ? "flex-end" : "flex-start", opacity: 1 - fuera,
     transform: `translateY(${(1 - ent) * -60}px)` } as React.CSSProperties}>
     <Tablero style={{ opacity: ent, padding: "26px 30px" }}>
       <Flap t={t} at={a + 0.1} txt={kan} H={H1} fl={0.05} out={out} />
       {rom && <div style={{ marginTop: 16 }}><Flap t={t} at={a + 0.35} txt={rom} H={H2} gap={0.02} fl={0.04} col="#E9C46A" out={out} /></div>}
-      {sig && <div style={{ ...cap, fontSize: 36, color: "#FFFCF5", marginTop: 18, opacity: eo(t, a + 0.9, 0.3) * (1 - e(t, out, out + 0.15)), maxWidth: 1400 }}>{sig}</div>}
+      {sig && <div style={{ ...cap, fontSize: 36, color: "#FFFCF5", marginTop: 18, opacity: eo(t, a + 0.9, 0.3) * (1 - e(t, out, out + 0.15)), maxWidth: av ? 560 : 1400 }}>{sig}</div>}
     </Tablero>
   </div>;
 };
@@ -274,12 +275,12 @@ export const Cta: React.FC<OP> = ({ t, a, b, txt }) => {
   const p = spr(t, a, 0.9), sal = e(t, b - 0.4, b), bot = cl((t - a - 1.4) / 0.4), lleno = eo(t, a + 2.0, 0.3);
   return <AbsoluteFill>
     <AbsoluteFill style={{ background: `linear-gradient(0deg, rgba(16,12,8,${0.6 * eo(t, a, 0.4) * (1 - sal)}) 0%, rgba(16,12,8,0) 45%)` }} />
-    <div style={{ position: "absolute", left: 260, right: 260, bottom: 80, transform: `translateY(${(1 - cl(p)) * 420 - sal * 1100}px) scale(${lerp(0.9, 1, cl(p))}) rotate(${sal * -4}deg)`, transformOrigin: "50% 100%" }}>
+    <div style={{ position: "absolute", left: 170, right: 170, bottom: 80, transform: `translateY(${(1 - cl(p)) * 420 - sal * 1100}px) scale(${lerp(0.9, 1, cl(p))}) rotate(${sal * -4}deg)`, transformOrigin: "50% 100%" }}>
       <div style={{ background: "#FFFFFF", borderRadius: 30, padding: "34px 46px 30px", display: "flex", gap: 30, boxShadow: "0 30px 70px rgba(0,0,0,.55)", position: "relative" }}>
         <div style={{ flex: "0 0 auto", width: 96, height: 96, borderRadius: "50%", background: `linear-gradient(160deg, ${C.hanko}, #7d1a15)`, color: "#FFFCF5", fontFamily: SERIF, fontWeight: 600, fontSize: 54, display: "flex", alignItems: "center", justifyContent: "center" }}>L</div>
         <div style={{ flex: 1 }}>
           <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 34, color: "#333" }}>Linda <span style={{ fontWeight: 400, color: "#888" }}>· tell me below</span></div>
-          <Palabras t={t} at={a + 0.35} txt={txt} gap={0.08} style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 72, color: C.sumi, lineHeight: 1.1, marginTop: 8 }} />
+          <Palabras t={t} at={a + 0.35} txt={String(txt).replace(/ (\S+)$/, " $1")} gap={0.08} style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 72, color: C.sumi, lineHeight: 1.1, marginTop: 8 }} />
           <div style={{ display: "flex", gap: 40, marginTop: 18, fontFamily: SANS, fontWeight: 500, fontSize: 40, color: "#555", opacity: bot }}>
             <span style={{ display: "flex", alignItems: "center", gap: 10 }}><svg width="48" height="44" viewBox="0 0 30 28" style={{ transform: `scale(${1 + 0.35 * Math.exp(-8 * Math.max(0, t - a - 2.0)) * (t > a + 2 ? 1 : 0)})` }}><path d="M15 26 C4 18 1 12 2 8 C3 3 9 1 15 7 C21 1 27 3 28 8 C29 12 26 18 15 26 Z" fill={`rgba(179,38,30,${lleno})`} stroke={C.hanko} strokeWidth={2} /></svg><span style={{ fontVariantNumeric: "tabular-nums" }}>{t < a + 2.0 ? 247 : 248}</span></span>
             <span style={{ padding: "6px 22px", borderRadius: 24, background: "#f0f0f0", color: "#222", transform: `scale(${1 + 0.06 * Math.sin(Math.max(0, t - a - 2) * 4)})` }}>Reply</span>
@@ -294,12 +295,12 @@ export const Cta: React.FC<OP> = ({ t, a, b, txt }) => {
 // cierre: pase de abordar de Linda que sube sobre el living desenfocado; el sello "ARRIVED" cae en el talón
 export const Fin: React.FC<OP> = ({ t, a, sub }) => {
   const f = eo(t, a, 0.5), p = spr(t, a + 0.3, 0.9);
-  return <AbsoluteFill style={{ clipPath: `inset(${(1 - f) * 100}% 0 0 0)` }}>
+  return <AbsoluteFill style={{ transform: `translateY(${(1 - f) * 100}%)`, boxShadow: "0 -30px 60px rgba(0,0,0,.55)" }}>
     <Desenfoque f={D.bg} dark={0.3} />
     <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
       <div style={{ display: "flex", transform: `translateY(${(1 - cl(p)) * 500}px) rotate(${(1 - cl(p)) * 6 - 1.5}deg)`, boxShadow: "0 40px 90px rgba(0,0,0,.6)" }}>
         <div style={{ ...papel, boxShadow: "none", width: 1060, height: 460, borderTop: `46px solid ${C.ai}`, padding: "40px 60px", position: "relative" }}>
-          <div style={{ ...cap, fontSize: 24, color: C.nezumi }}>boarding pass · final call</div>
+          <div style={{ ...cap, fontSize: 34, color: C.nezumi }}>boarding pass · final call</div>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 118, color: C.sumi, lineHeight: 1.05, marginTop: 24 }}><Palabras t={t} at={a + 0.7} txt={String(sub || "fly safe, my friends")} gap={0.12} /></div>
           <div style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 58, color: C.sumi, marginTop: 26, opacity: eo(t, a + 1.2, 0.4) }}>Linda · retired flight attendant</div>
         </div>
