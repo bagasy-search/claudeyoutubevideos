@@ -148,7 +148,7 @@ export const Cifra: React.FC<SP> = ({ t, a, b, big, lab, fuente }) => {
       </AbsoluteFill>
     </AbsoluteFill>;
   }
-  if (/^(NOK|\$|€)/.test(txt)) {
+  if (/^(NOK|CHF|\$|€|¥|£)/.test(txt)) {
     const m2 = txt.match(/^([^0-9]*)([0-9][0-9.,]*)(.*)$/) || ["", "", txt, ""], val = parseFloat(m2[2].replace(/,/g, "")), dec = (m2[2].split(".")[1] || "").length;
     const persona = /per /i.test(String(lab)), cols = persona ? 1 : 9, cnt = e(t, a + 0.6, a + 2.6);
     const shown = (val * sm(cnt)).toFixed(dec);
