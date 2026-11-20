@@ -77,13 +77,14 @@ export const AgujerosD: React.FC<{ head: string; items: { n: number; t: string }
     <AbsoluteFill style={{ opacity: out(f, dur) }}>
       <Muro />
       <div style={{ position: "absolute", left: 0, right: 0, top: 40, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 52, letterSpacing: 6, color: "#5A5246" }}>{head}</div>
-      {items.map((it, i) => { const col = i % 6, row = Math.floor(i / 6); const x = 190 + col * 306, y = 300 + row * 360; const tap = cl(k - i); const now = done === undefined && i === cur;
+      {items.map((it, i) => { const col = i % 6, row = Math.floor(i / 6); const x = 195 + col * 306, y = 290 + row * 330; const tap = cl(k - i); const now = done === undefined && i === cur;
         return <div key={i}>
           <Hueco w={150 + ((i * 37) % 50)} x={x} y={y} style={{ opacity: 1 - tap }} />
           <div style={{ position: "absolute", left: x - 110, top: y - 92, width: 220, height: 184, borderRadius: "48% 52% 46% 54%", background: `radial-gradient(ellipse, ${W.mas} 55%, rgba(247,245,239,0) 72%)`, opacity: tap, transform: `scale(${0.7 + 0.3 * tap})` }} />
           <div style={{ position: "absolute", left: x - 130, top: y - 40, width: 260, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 64, color: tap > 0.5 ? "#B7AD9C" : "#FFF", textShadow: tap > 0.5 ? "none" : tsh }}>{it.n}</div>
-          <div style={{ position: "absolute", left: x - 145, top: y + 100, width: 290, textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 46, lineHeight: 1.02, color: W.ink, opacity: tap > 0.3 || done !== undefined ? 1 : 0.35, transform: now ? "scale(1.12)" : "none" }}>{it.t}</div>
+          {now ? <div style={{ position: "absolute", left: x - 100, top: y - 100, width: 200, height: 200, borderRadius: "50%", boxShadow: `0 0 0 8px ${W.rojo}` }} /> : null}
         </div>; })}
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 70, textAlign: "center" }}><span style={{ background: W.noche, color: "#FFF8EE", fontFamily: SERIF, fontWeight: 700, fontSize: 84, padding: "10px 40px", whiteSpace: "nowrap" }}>{done !== undefined ? "Faltan el 10, el 11 y el 12" : `${items[cur].n} · ${items[cur].t}`}</span></div>
     </AbsoluteFill>
   );
 };
@@ -161,7 +162,7 @@ export const CablesD: React.FC<{ dur: number }> = ({ dur }) => {
       <div style={{ position: "absolute", left: 1010, top: 737, width: 900 * h, height: 16, background: "#F2C230", boxShadow: "0 0 24px rgba(242,194,48,0.85)" }} />
       <div style={{ position: "absolute", left: 860, top: 640, width: 700 * cl(d), height: 16, background: W.rojo, transformOrigin: "0 50%", transform: "rotate(-34deg)", opacity: cl(d * 2) }} />
       <div style={{ position: "absolute", left: 1290, top: 250, opacity: cl(d * 2), transform: `scale(${0.6 + 0.4 * d})` }}><Tilde ok={false} size={140} /></div>
-      <div style={{ position: "absolute", left: 110, top: 110, width: 700 }}><Titulo txt="Derechos, nunca en diagonal" size={86} color={W.ink} /><Kick txt="DESDE EL ENCHUFE O LA LLAVE" color="#6E665A" style={{ textShadow: "none", marginTop: 14 }} /></div>
+      <div style={{ position: "absolute", left: 110, top: 110, width: 700 }}><Titulo txt="Derechos, nunca en diagonal" size={86} color={W.ink} /><Kick txt="DESDE EL ENCHUFE O LA LLAVE" color="#6E665A" style={{ textShadow: "none", marginTop: 14, whiteSpace: "nowrap" }} /></div>
     </AbsoluteFill>
   );
 };
@@ -592,7 +593,7 @@ export const LaminaD: React.FC<{ src: string; focus: { x: number; y: number; z: 
   return (
     <AbsoluteFill style={{ opacity: out(f, dur), background: "#F4EFE4", overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0, transformOrigin: "30px 30px", transform: qrAt === undefined ? "none" : `scale(${1 - 0.45 * interpolate(f, [qrAt, qrAt + 14], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) })})`, boxShadow: qrAt !== undefined && f > qrAt ? "0 30px 60px rgba(0,0,0,0.35)" : "none", overflow: "hidden" }}>
-        <div style={{ position: "absolute", inset: 0, transform: `scale(${qrAt !== undefined && f > qrAt ? 1.02 + (f - qrAt) / 1500 + 0.012 * Math.sin(f / 37) : z})`, transformOrigin: `${x}% ${y}%` }}><Pic src={src} fit="contain" /></div>
+        <div style={{ position: "absolute", inset: 0, transform: qrAt !== undefined && f > qrAt ? `translate(${Math.sin(f / 37) * 8}px, ${Math.cos(f / 43) * 6}px)` : `scale(${z})`, transformOrigin: `${x}% ${y}%` }}><Pic src={src} fit="contain" /></div>
       </div>
     </AbsoluteFill>
   );
@@ -688,8 +689,8 @@ export const RasanteD: React.FC<{ dur: number }> = ({ dur }) => {
         <div style={{ position: "absolute", left: 0, top: 20, width: 300, height: 70, borderRadius: 14, background: "linear-gradient(180deg,#3A3A3A,#121212,#2A2A2A)" }} />
         <div style={{ position: "absolute", left: 290, top: 0, width: 90, height: 110, borderRadius: "10px 40px 40px 10px", background: "linear-gradient(180deg,#5A5A5A,#1C1C1C)", boxShadow: "18px 0 30px rgba(255,236,190,0.9)" }} />
       </div>
-      <div style={{ position: "absolute", left: 600, top: 660, opacity: cl(near(760) * 1.6) }}><Kick txt="BULTO: LIJA" /></div>
-      <div style={{ position: "absolute", left: 1100, top: 660, opacity: cl(near(1270) * 1.6) }}><Kick txt="HUNDIDO: OTRA MANO" /></div>
+      <div style={{ position: "absolute", left: 600, top: 660, opacity: cl(near(760) * 1.6) }}><span style={{ background: W.noche, color: W.luz, fontFamily: SANS, fontWeight: 700, fontSize: 60, padding: "6px 22px", whiteSpace: "nowrap" }}>BULTO: LIJA</span></div>
+      <div style={{ position: "absolute", left: 1060, top: 660, opacity: cl(near(1270) * 1.6) }}><span style={{ background: W.noche, color: W.luz, fontFamily: SANS, fontWeight: 700, fontSize: 60, padding: "6px 22px", whiteSpace: "nowrap" }}>HUNDIDO: OTRA MANO</span></div>
       <div style={{ position: "absolute", left: 120, top: 80 }}><Titulo txt="La linterna de costado te delata" size={88} /></div>
     </AbsoluteFill>
   );
@@ -753,7 +754,7 @@ export const MariposaD: React.FC<{ modo: "teaser" | "medidas" | "alas" | "corte"
         <div style={{ position: "absolute", left: 560, top: 364 - 300 * (1 - k), width: 800, height: 16, background: "#FFFFFF", boxShadow: "0 3px 6px rgba(0,0,0,0.3)" }} />
         <div style={{ position: "absolute", left: 560, top: 356 - 300 * (1 - k), width: 800, height: 8, background: W.mas, opacity: k }} />
         {[[200, "PLACA"], [760, "PARCHE"], [1160, "PLACA"]].map(([x, t], i) => <div key={i} style={{ position: "absolute", left: (x as number), top: 700, width: i === 1 ? 400 : 560, textAlign: "center", opacity: cl(k * 2) }}><Kick txt={t as string} color={i === 1 ? W.luz : "#D9CFBF"} /></div>)}
-        <div style={{ position: "absolute", left: 1380, top: 250 - 300 * (1 - k), opacity: k }}><Kick txt="← PESTAÑA DE PAPEL" color="#FFF8EE" style={{ fontSize: 44 }} /></div>
+        <div style={{ position: "absolute", left: 1380, top: 296 - 300 * (1 - k), opacity: k }}><Kick txt="← PESTAÑA" color="#FFF8EE" style={{ fontSize: 50, whiteSpace: "nowrap" }} /></div>
         <div style={{ position: "absolute", left: 200, top: 110 }}><Titulo txt="El papel hace el trabajo del listón" size={80} /><Kick txt="EL YESO TRABADO · LA PESTAÑA LO SOSTIENE" style={{ marginTop: 14 }} /></div>
       </AbsoluteFill>);
   }
