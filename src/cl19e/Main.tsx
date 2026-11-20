@@ -64,7 +64,7 @@ export const MainCl19e: React.FC = () => (
   <AbsoluteFill style={{ background: S.K.ink }}>
     {/* capa 1: Claudio (ventanas visibles del reel) */}
     {AVATAR.map((a, i) => (
-      <Sequence key={"a" + i} from={a.from} durationInFrames={a.dur} premountFor={30}>
+      <Sequence key={"a" + i} from={a.from} durationInFrames={Math.min(a.dur + T + 2, TOTAL - a.from)} premountFor={30}>
         <S.Avatar src={a.src} seed={i} dur={a.dur} mods={a.mods} />
       </Sequence>
     ))}

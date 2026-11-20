@@ -27,11 +27,12 @@ export const Board: React.FC<{ head: string; rows: { t: string; f: number; st: n
         </div>
         <div style={{ height: 4, background: "rgba(243,239,228,0.5)", margin: "16px 0 10px", borderRadius: 2 }} />
         <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", gap: big ? 26 : 16 }}>
-          {rows.map((r, i) => {
-            const p = interpolate(f, [i * 3, i * 3 + 12], [0, 1], { ...CL, easing: Easing.out(Easing.quad) }); const hi = f >= r.f;
-            const fs = r.st === 2 ? Math.min(big ? 190 : 150, Math.floor(1330 / (r.t.length * 0.62))) : Math.min(124, Math.floor(1330 / (r.t.length * 0.42)));
-            return <div key={i} style={{ ...chalk, fontFamily: r.st === 2 ? SLAB : HAND, fontWeight: r.st === 2 ? 400 : 700, fontSize: Math.min(fs, cap), lineHeight: 1.08, color: r.st === 2 ? K.gold : K.chalk, opacity: p * (hi ? 1 : 0.85), transform: `scale(${hi ? 1 : 0.97})`, transformOrigin: "0 50%", whiteSpace: "nowrap" }}>{r.t}</div>;
-          })}
+          {(() => { let cur = -1; rows.forEach((r: any, i) => { if (!r.ya && f >= r.f) cur = i; }); return rows.map((r: any, i) => {
+            // cada renglón se escribe con tiza en SU palabra (los ya dichos quedan escritos); sólo el que se dice ahora va en oro
+            const t0 = r.ya ? -99 : r.f - 3; const p = interpolate(f, [t0, t0 + 14], [0, 1], { ...CL, easing: Easing.out(Easing.quad) });
+            const now = i === cur; const fs = r.st === 2 ? Math.min(big ? 190 : 150, Math.floor(1330 / (r.t.length * 0.62))) : Math.min(124, Math.floor(1330 / (r.t.length * 0.42)));
+            return <div key={i} style={{ ...chalk, fontFamily: r.st === 2 ? SLAB : HAND, fontWeight: r.st === 2 ? 400 : 700, fontSize: Math.min(fs, cap), lineHeight: 1.08, color: now ? K.gold : K.chalk, opacity: p > 0 ? (now || cur < 0 ? 1 : 0.62) : 0, clipPath: `inset(-10% ${(1 - p) * 100}% -10% 0)`, transform: `scale(${now ? 1.02 : 1})`, transformOrigin: "0 50%", whiteSpace: "nowrap" }}>{r.t}</div>;
+          }); })()}
         </div>
         {foot ? <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, letterSpacing: 2, color: "rgba(243,239,228,0.7)" }}>Source: {foot}</div> : null}
         {/* borrador y tiza en la repisa */}
