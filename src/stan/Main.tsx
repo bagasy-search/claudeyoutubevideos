@@ -9,6 +9,7 @@ import * as S from "./Carne";
 import * as Mu from "./Muro";
 import * as Pi from "./Piso";
 import * as Fr from "./Frasco";
+import * as Pa from "./Pared";
 
 export const TOTAL_FRAMES_STAN = TOTAL;
 const TR = 8;
@@ -23,6 +24,8 @@ const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   const seed = s.id + 1;
   const FrC = (Fr as any)[s.view || ""];
   if (/N$/.test(s.view || "") && FrC) return <FrC {...s.p} dur={dur} />;
+  const PaC = (Pa as any)[s.view || ""];
+  if (/D$/.test(s.view || "") && PaC) return <PaC {...s.p} dur={dur} />;
   switch (s.view) {
     case "clip": return <K.Clip src={s.src} seed={seed} dur={dur} clipDur={s.clipDur} minRate={s.veo ? 0.42 : 0.6} />;
     case "photo": return <K.Photo src={s.src} seed={seed} dur={dur} />;
@@ -183,9 +186,9 @@ const Enter: React.FC<{ trans: string; children: React.ReactNode; seed: number }
 const Overlay: React.FC<{ o: any }> = ({ o }) => {
   switch (o.type) {
     case "price": return <K.Price text={o.text} dur={o.dur} />;
-    case "progress": return <Fr.ProgN n={o.n} N={o.N} title={o.title} dur={o.dur} />;
-    case "qr": return <Fr.QrN qr={o.qr} cover={o.cover} dur={o.dur} />;
-    case "split": return <Fr.PanelN src={o.src} label={o.label} dur={o.dur} />;
+    case "progress": return <Pa.ProgD n={o.n} N={o.N} title={o.title} dur={o.dur} />;
+    case "qr": return <Pa.QrD qr={o.qr} cover={o.cover} dur={o.dur} />;
+    case "split": return <Pa.PanelD src={o.src} label={o.label} dur={o.dur} />;
     case "pregunta": return <K.Pregunta text={o.text} dur={o.dur} />;
     default: return null;
   }
@@ -204,7 +207,7 @@ export const MainStan: React.FC = () => (
       const tail = nx && nx.k !== "A" && nx.trans && nx.trans !== "cut" ? TR + 8 : 0;
       return (
         <Sequence key={"s" + s.id} from={s.from} durationInFrames={Math.min(s.dur + tail, TOTAL - s.from)} premountFor={45}>
-          <Enter trans={s.trans || "cut"} seed={s.id}>{/^[A-Z].*[PN]$/.test(s.view || "") && s.view !== "LaminaN" ? <PiWrap s={s} dur={s.dur} /> : <Body s={s} dur={s.dur} />}</Enter>
+          <Enter trans={s.trans || "cut"} seed={s.id}>{/^[A-Z].*[PND]$/.test(s.view || "") && s.view !== "LaminaN" && s.view !== "LaminaD" ? <PiWrap s={s} dur={s.dur} /> : <Body s={s} dur={s.dur} />}</Enter>
         </Sequence>
       );
     })}
