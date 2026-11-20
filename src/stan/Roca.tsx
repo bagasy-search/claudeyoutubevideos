@@ -56,7 +56,7 @@ export const RBalanzaN: React.FC<{ a: { t: string; v: string }; b: { t: string; 
 // ---------- pila de kilos: bloques que caen sobre la piedra, el contador suma y la piedra no se mueve
 export const RPilaN: React.FC<{ rows: { t: string; kg: number; f: number }[]; total: string; sub: string; dur: number }> = ({ rows, total, sub, dur }) => {
   const f = useCurrentFrame(); let acc = 0; let y = 0;
-  const blocks = rows.map((r, i) => { const p = sp(f, r.f, 11); const h = 70 + r.kg * 1.6; const el = <div key={i} style={{ position: "absolute", left: 360 - (i ? 150 : 210), bottom: 560 + y, width: i ? 300 : 420, height: h, borderRadius: 14, background: i ? "linear-gradient(170deg,#E7DCC2,#BFAE8A)" : "linear-gradient(170deg,#7E8FA3,#4E5D70)", transform: `translateY(${(1 - p) * -700}px)`, opacity: cl(p * 3), display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 700, fontSize: 58, color: i ? R.ink : "#F4F6F8", boxShadow: "0 16px 26px rgba(0,0,0,0.5)" }}>{r.t} · {r.kg} kg</div>; y += h + 6; if (f >= r.f + 6) acc += r.kg; return el; });
+  const blocks = rows.map((r, i) => { const p = sp(f, r.f, 11); const h = 70 + r.kg * 1.6; const el = <div key={i} style={{ position: "absolute", left: 360 - (i ? 250 : 210), bottom: 560 + y, width: i ? 500 : 420, height: h, padding: "0 20px", textAlign: "center", lineHeight: 1.05, borderRadius: 14, background: i ? "linear-gradient(170deg,#E7DCC2,#BFAE8A)" : "linear-gradient(170deg,#7E8FA3,#4E5D70)", transform: `translateY(${(1 - p) * -700}px)`, opacity: cl(p * 3), display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SANS, fontWeight: 700, fontSize: i ? 46 : 58, color: i ? R.ink : "#F4F6F8", boxShadow: "0 16px 26px rgba(0,0,0,0.5)" }}>{r.t} · {r.kg} kg</div>; y += h + 6; if (f >= r.f + 6) acc += r.kg; return el; });
   const land = rows.reduce((m, r) => Math.max(m, cl((f - r.f - 6) / 4)), 0);
   const shake = rows.some((r) => f > r.f + 6 && f < r.f + 12) ? Math.sin(f * 3) * 2 : 0;
   return (
@@ -68,7 +68,7 @@ export const RPilaN: React.FC<{ rows: { t: string; kg: number; f: number }[]; to
       </div>
       <div style={{ position: "absolute", left: 1040, top: 260, width: 800 }}>
         <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 230, lineHeight: 1, color: R.ocreL, textShadow: tsh }}>{acc}<span style={{ fontSize: 110 }}> kg</span></div>
-        <Titulo txt={total} size={86} f0={rows[rows.length - 1].f + 8} style={{ marginTop: 18 }} />
+        {total.replace(/\D/g, "") === String(rows.reduce((m, r) => m + r.kg, 0)) ? null : <Titulo txt={total} size={86} f0={rows[rows.length - 1].f + 8} style={{ marginTop: 18 }} />}
         <Chip txt={sub} c={R.ok} on={land > 0.5 && f > rows[rows.length - 1].f + 20 ? 1 : 0} style={{ marginTop: 26 }} />
       </div>
     </AbsoluteFill>
@@ -143,14 +143,14 @@ export const RReglasN: React.FC<{ items: { t: string; f: number }[]; dur: number
 // ---------- cotas: silueta de la piedra y las líneas de medida que se estiran (largo, ancho, alto) + peso
 export const RCotaN: React.FC<{ marks: { t: string; f: number }[]; title: string; dur: number }> = ({ marks, title, dur }) => {
   const f = useCurrentFrame(); const g = (i: number) => sp(f, marks[i]?.f ?? 0, 14);
-  const Line = ({ l, t, w, h, p, lab, vert }: any) => <div style={{ position: "absolute", left: l, top: t, width: vert ? 6 : w * p, height: vert ? h * p : 6, background: R.ocreL, boxShadow: "0 0 10px rgba(242,201,76,0.6)" }}><div style={{ position: "absolute", left: vert ? 24 : w * p / 2 - 110, top: vert ? h * p / 2 - 40 : -84, width: 260, fontFamily: SANS, fontWeight: 700, fontSize: 64, color: R.ocreL, textShadow: tsh, opacity: cl(p * 2 - 1) }}>{lab}</div></div>;
+  const Line = ({ l, t, w, h, p, lab, vert }: any) => <div style={{ position: "absolute", left: l, top: t, width: vert ? 6 : w * p, height: vert ? h * p : 6, background: R.ocreL, boxShadow: "0 0 10px rgba(242,201,76,0.6)" }}><div style={{ position: "absolute", left: vert ? 24 : w * p / 2 - 110, top: vert ? 30 : -84, width: 260, fontFamily: SANS, fontWeight: 700, fontSize: 64, color: R.ocreL, textShadow: tsh, opacity: cl(p * 2 - 1) }}>{lab}</div></div>;
   return (
     <AbsoluteFill style={{ opacity: out(f, dur) }}>
       <Taller />
       <Rock w={860} h={500} style={{ position: "absolute", left: 300, top: 360 }} />
       <Line l={300} t={900} w={860} p={g(0)} lab={marks[0]?.t} />
       <Line l={1220} t={360} h={500} p={g(2)} lab={marks[2]?.t} vert />
-      <div style={{ position: "absolute", left: 1170, top: 880, width: 300 * g(1), height: 6, background: R.ocreL, transformOrigin: "0 0", transform: "rotate(-32deg)" }}><div style={{ position: "absolute", left: 120, top: -86, fontFamily: SANS, fontWeight: 700, fontSize: 64, color: R.ocreL, textShadow: tsh, opacity: cl(g(1) * 2 - 1), transform: "rotate(32deg)", whiteSpace: "nowrap" }}>{marks[1]?.t}</div></div>
+      <div style={{ position: "absolute", left: 1170, top: 880, width: 300 * g(1), height: 6, background: R.ocreL, transformOrigin: "0 0", transform: "rotate(-32deg)" }}><div style={{ position: "absolute", left: 120, top: 26, fontFamily: SANS, fontWeight: 700, fontSize: 64, color: R.ocreL, textShadow: tsh, opacity: cl(g(1) * 2 - 1), transform: "rotate(32deg)", whiteSpace: "nowrap" }}>{marks[1]?.t}</div></div>
       <Titulo txt={title} size={84} style={{ position: "absolute", left: 300, top: 120 }} />
     </AbsoluteFill>
   );

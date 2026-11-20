@@ -484,9 +484,9 @@ export const PulveN: React.FC<{ items: { t: string; v: string; lvl: number; c: s
 export const SinoN: React.FC<{ yes: string[]; no: string[]; dur: number }> = ({ yes, no, dur }) => {
   const f = useCurrentFrame();
   const Col = ({ head, it, c, x, d }: { head: string; it: string[]; c: string; x: number; d: number }) => (
-    <div style={{ position: "absolute", left: x, top: 70, width: 790 }}>
-      <div style={{ background: c, color: "#FFF", fontFamily: SANS, fontWeight: 600, fontSize: 64, letterSpacing: 4, padding: "14px 30px" }}>{head}</div>
-      {it.map((t, i) => { const p = sp(f, d + i * 3, 15); return <div key={i} style={{ background: i % 2 ? "#FFFDF6" : "#F4EEE2", borderLeft: `14px solid ${c}`, padding: "16px 30px", fontFamily: SERIF, fontWeight: 700, fontSize: 58, color: N.ink, opacity: cl(p * 1.6), transform: `translateX(${(1 - p) * 40}px)` }}>{t}</div>; })}
+    <div style={{ position: "absolute", left: x, top: Math.max(70, 540 - (130 + it.length * 128) / 2), width: 790, boxShadow: "0 30px 60px rgba(60,45,25,0.28)" }}>
+      <div style={{ background: c, color: "#FFF", fontFamily: SANS, fontWeight: 600, fontSize: 72, letterSpacing: 4, padding: "22px 34px" }}>{head}</div>
+      {it.map((t, i) => { const p = sp(f, d + i * 3, 15); return <div key={i} style={{ background: i % 2 ? "#FFFDF6" : "#F4EEE2", borderLeft: `14px solid ${c}`, padding: "28px 34px", fontFamily: SERIF, fontWeight: 700, fontSize: 62, lineHeight: 1.1, color: N.ink, opacity: cl(p * 1.6), transform: `translateX(${(1 - p) * 40}px)` }}>{t}</div>; })}
     </div>
   );
   return <AbsoluteFill style={{ opacity: out(f, dur), background: "repeating-linear-gradient(0deg, #D9D3C8 0 4px, #EEE9E0 4px 160px), #EEE9E0" }}><Col head="DÓNDE SÍ" it={yes} c={N.ok} x={130} d={0} /><Col head="DÓNDE NO" it={no} c={N.no} x={1000} d={6} /></AbsoluteFill>;
