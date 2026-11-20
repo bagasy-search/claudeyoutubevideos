@@ -102,7 +102,7 @@ export const Tela: React.FC<OP> = ({ t, a, dir = 0 }) => {
 // (3) APERTURA de cada ítem: un mecanismo distinto por número (puertas de la tienda, cinta métrica, papel de seda de la caja, sello de goma)
 export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
   const i = Number(arg) - 1, it = D.items[i], k = t - a, dur = b - a, modo = i % 4, der = i % 2 === 1;
-  const zoom = 1.06 + 0.07 * cl(k / (dur + 0.4)), foto = <Img src={src(it.f)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${zoom})`, transformOrigin: `${der ? 35 : 65}% 45%` }} />;
+  const zoom = 1.06 + 0.07 * cl(k / (dur + 0.4)), foto = <Img src={src(it.f)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${zoom * 1.11})`, transformOrigin: `${der ? 35 : 65}% 45%` }} />;
   const lado: React.CSSProperties = der ? { right: 130, alignItems: "flex-end", textAlign: "right" } : { left: 130, alignItems: "flex-start" };
   const titulo = <div style={{ position: "absolute", top: 200, width: 900, display: "flex", flexDirection: "column", ...lado }}>
     <div style={{ ...cap, fontSize: 26, color: "#f1d9a8", textShadow: sombra, opacity: eo(t, a + 0.3, 0.4) }}>{D.item_rotulo || "secret"} · No. {it.n}</div>

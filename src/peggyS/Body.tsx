@@ -39,7 +39,7 @@ const Plano: React.FC<{ i: number; t: number }> = ({ i, t }) => {
     const need = d + TR + 0.1, rate = q.len && q.len < need ? Math.max(0.42, q.len / need) : 1;
     return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}><OffthreadVideo src={staticFile(P + q.f)} muted playbackRate={rate} style={kb(i, t, q.s, q.e, true)} /></AbsoluteFill>;
   }
-  return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}><Img src={staticFile(P + q.f)} style={kb(i, t, q.s, q.e)} /></AbsoluteFill>;
+  return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}><AbsoluteFill style={{ transform: "scale(1.11)", transformOrigin: "0% 50%" }}><Img src={staticFile(P + q.f)} style={kb(i, t, q.s, q.e)} /></AbsoluteFill></AbsoluteFill>; // NB: estrellita abajo-der fuera de cuadro
 };
 
 // entrada de un plano sobre el anterior: corte · barrido de papel · empuje · fundido corto
