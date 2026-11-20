@@ -20,12 +20,22 @@ const PiWrap: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   return <AbsoluteFill style={{ transform: `translateX(${x}px) scale(${z})` }}><Sequence from={-SK} layout="none"><Body s={s} dur={dur + SK} /></Sequence></AbsoluteFill>;
 };
 
+// cl19a: cámara de mano lenta sobre las Placa (empuje con curva + balanceo); sin esto el componente terminado quedaba quieto 3-10 s (freezedetect)
+const PlCam: React.FC<{ id: number; dur: number; children: React.ReactNode }> = ({ id, dur, children }) => {
+  const f = useCurrentFrame(); const p = Math.min(1, Math.max(0, f / Math.max(1, dur)));
+  const z = 1.045 + 0.06 * (1 - Math.cos(Math.PI * p)) / 2;
+  const x = 16 * Math.sin((2 * Math.PI * f) / 210 + id) + 6 * Math.sin((2 * Math.PI * f) / 97 + id * 2.1);
+  const y = 10 * Math.sin((2 * Math.PI * f) / 260 + id * 1.3) + 4 * Math.sin((2 * Math.PI * f) / 131 + id);
+  const r = 0.35 * Math.sin((2 * Math.PI * f) / 330 + id * 0.7);
+  return <AbsoluteFill style={{ transform: `translate(${x}px, ${y}px) rotate(${r}deg) scale(${z})`, transformOrigin: "50% 50%" }}>{children}</AbsoluteFill>;
+};
+
 const Body: React.FC<{ s: any; dur: number }> = ({ s, dur }) => {
   const seed = s.id + 1;
   const FrC = (Fr as any)[s.view || ""];
   if (/N$/.test(s.view || "") && FrC) return <FrC {...s.p} dur={dur} />;
   const PlC = (Pl as any)[s.view || ""];
-  if (/Pl$/.test(s.view || "") && PlC) return <PlC {...s.p} dur={dur} />;
+  if (/Pl$/.test(s.view || "") && PlC) return <PlCam id={s.id} dur={dur}><PlC {...s.p} dur={dur} /></PlCam>;
   switch (s.view) {
     case "clip": return <K.Clip src={s.src} seed={seed} dur={dur} clipDur={s.clipDur} minRate={s.veo ? 0.42 : 0.6} />;
     case "photo": return <K.Photo src={s.src} seed={seed} dur={dur} />;
