@@ -131,7 +131,7 @@ export const Reloj: React.FC<{ label: string; sub: string; unit: "h" | "min"; am
   const p = spring({ frame: f, fps: 30, config: { damping: 18 } });
   const o = 1;
   const run = interpolate(f, [12, dur - 16], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
-  const ang = run * 360 * (unit === "h" ? 1 : amount / 60) ;
+  const ang = Math.min(359.4, run * 360 * (unit === "h" ? 1 : amount / 60));
   const shown = Math.round(run * amount);
   const R = 290;
   return (
