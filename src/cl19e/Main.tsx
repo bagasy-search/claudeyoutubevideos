@@ -70,7 +70,7 @@ export const MainCl19e: React.FC = () => (
     ))}
     {/* capa 2: material (clips reales, fotos, Veo, componentes) */}
     {SHOTS.map((s, i) => {
-      if (s.k === "A") return null;
+      if (s.k === "A" || s.from >= TOTAL) return null;
       const nx = SHOTS[i + 1];
       const tail = nx && nx.k !== "A" && nx.trans && nx.trans !== "cut" ? T + 2 : 0;
       return (
@@ -90,7 +90,7 @@ export const MainCl19e: React.FC = () => (
       </Sequence>
     ))}
     {/* capa 3: rótulos de la casa */}
-    {OVERLAYS.map((o, i) => (
+    {OVERLAYS.filter((o) => o.from < TOTAL).map((o, i) => (
       <Sequence key={"o" + i} from={o.from} durationInFrames={Math.min(o.dur, TOTAL - o.from)}>
         <Overlay o={o} />
       </Sequence>
