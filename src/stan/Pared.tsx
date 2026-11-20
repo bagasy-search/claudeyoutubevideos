@@ -588,7 +588,7 @@ export const LaminaD: React.FC<{ src: string; focus: { x: number; y: number; z: 
   return (
     <AbsoluteFill style={{ opacity: out(f, dur), background: "#F4EFE4", overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0, transformOrigin: "30px 30px", transform: qrAt === undefined ? "none" : `scale(${1 - 0.4 * interpolate(f, [qrAt, qrAt + 14], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) })})`, boxShadow: qrAt !== undefined && f > qrAt ? "0 30px 60px rgba(0,0,0,0.35)" : "none", overflow: "hidden" }}>
-        <div style={{ position: "absolute", inset: 0, transform: `scale(${qrAt !== undefined && f > qrAt ? 1 : z})`, transformOrigin: `${x}% ${y}%` }}><Pic src={src} fit="contain" /></div>
+        <div style={{ position: "absolute", inset: 0, transform: `scale(${qrAt !== undefined && f > qrAt ? 1.02 + (f - qrAt) / 1500 + 0.012 * Math.sin(f / 37) : z})`, transformOrigin: `${x}% ${y}%` }}><Pic src={src} fit="contain" /></div>
       </div>
     </AbsoluteFill>
   );
@@ -911,7 +911,7 @@ export const ProgD: React.FC<{ n: number; N: number; title: string; dur: number 
 export const QrD: React.FC<{ qr: string; cover: string; dur: number }> = ({ qr, cover, dur }) => {
   const f = useCurrentFrame(); const p = sp(f, 0, 13);
   return (
-    <div style={{ position: "absolute", right: 60, bottom: 60, width: 700, opacity: out(f, dur, 6), transform: `translateX(${(1 - p) * 800}px) rotate(${(1 - p) * 8 + 1}deg)` }}>
+    <div style={{ position: "absolute", right: 60, bottom: 60, width: 700, opacity: out(f, dur, 6), transform: `translateX(${(1 - p) * 800}px) translateY(${Math.sin(f / 28) * 6}px) rotate(${(1 - p) * 8 + 1 + Math.sin(f / 45) * 0.6}deg)` }}>
       <div style={{ background: "linear-gradient(170deg,#F4EFE6,#E1D9C9)", padding: "34px 30px 22px", boxShadow: "0 30px 60px rgba(0,0,0,0.55)", position: "relative" }}>
         {[[12, 12], [662, 12], [12, 392], [662, 392]].map(([x, y], i) => <div key={i} style={{ position: "absolute", left: x, top: y, width: 22, height: 22, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #8A8A8A, #262626)" }} />)}
         <div style={{ display: "flex", gap: 22, alignItems: "center" }}>
