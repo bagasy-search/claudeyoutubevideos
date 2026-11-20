@@ -65,7 +65,7 @@ export const CajaCalor: React.FC = () => {
             {Array.from({ length: FRANJAS }, (_, i) => {
               const y = HUECO.y0 + i * h;
               const cerca = 1 - Math.min(1, Math.abs(y - 600) / 260);
-              const dx = amp * (2 + 5 * cerca) * Math.sin(t * 9.5 + i * 0.62) + amp * 1.5 * Math.sin(t * 4.1 - i * 0.31);
+              const dx = amp * (4 + 9 * cerca) * Math.sin(t * 9.5 + i * 0.62) + amp * 2.5 * Math.sin(t * 4.1 - i * 0.31);
               return (
                 <div key={i} style={{ position: "absolute", left: 0, top: y, width: 1920, height: h + 1, overflow: "hidden" }}>
                   <Img src={P("e_cajafoco")} style={{ ...full, top: -y, transform: `translateX(${dx}px)` }} />

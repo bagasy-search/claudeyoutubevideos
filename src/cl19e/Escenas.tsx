@@ -27,7 +27,7 @@ export const Board: React.FC<{ head: string; rows: { t: string; f: number; st: n
         </div>
         <div style={{ height: 4, background: "rgba(243,239,228,0.5)", margin: "16px 0 10px", borderRadius: 2 }} />
         <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", gap: big ? 26 : 16 }}>
-          {(() => { let cur = -1; rows.forEach((r: any, i) => { if (!r.ya && f >= r.f) cur = i; }); return rows.map((r: any, i) => {
+          {(() => { let cur = -1; rows.forEach((r: any, i) => { if (!r.ya && f >= r.f) cur = i; }); if (cur < 0) rows.forEach((r: any, i) => { if (r.ya) cur = i; }); return rows.map((r: any, i) => {
             // cada renglón se escribe con tiza en SU palabra (los ya dichos quedan escritos); sólo el que se dice ahora va en oro
             const t0 = r.ya ? -99 : r.f - 3; const p = interpolate(f, [t0, t0 + 14], [0, 1], { ...CL, easing: Easing.out(Easing.quad) });
             const now = i === cur; const fs = r.st === 2 ? Math.min(big ? 190 : 150, Math.floor(1330 / (r.t.length * 0.62))) : Math.min(124, Math.floor(1330 / (r.t.length * 0.42)));
