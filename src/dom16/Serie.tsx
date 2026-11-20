@@ -34,7 +34,8 @@ export const totalFrames = (e: EdlSerie) => {
 // Recorte anti-destello de Veo = crop=1186:667:0:26 sobre 1280x720 llevado a 1920x1080:
 // escala 1920/1186 → el cuadro de 1280x720 mide 2072,2 x 1165,6 y se corre 26*1,619 = 42 px hacia arriba.
 const K = 1920 / 1186;
-const VEO: React.CSSProperties = { position: "absolute", left: 0, top: -26 * K, width: 1280 * K, height: 720 * K, objectFit: "fill" };
+// Estrellita de marca de agua (Veo la copia del primer cuadro Nano Banana): scale(1.11) anclado arriba a la izquierda.
+const VEO: React.CSSProperties = { position: "absolute", left: 0, top: -26 * K, width: 1280 * K, height: 720 * K, objectFit: "fill", transform: "scale(1.11)", transformOrigin: "0% 0%" };
 // Estrellita de marca de agua de Nano Banana (abajo a la derecha): scale(1.11) anclado a la izquierda.
 const FOTO: React.CSSProperties = { width: 1920, height: 1080, objectFit: "cover", transform: "scale(1.11)", transformOrigin: "0% 50%" };
 
