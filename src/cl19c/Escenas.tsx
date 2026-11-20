@@ -33,7 +33,7 @@ export const Board: React.FC<{ head: string; rows: { t: string; f: number; st: n
             return <div key={i} style={{ ...chalk, fontFamily: r.st === 2 ? SLAB : HAND, fontWeight: r.st === 2 ? 400 : 700, fontSize: Math.min(fs, cap), lineHeight: 1.08, color: r.st === 2 ? K.gold : K.chalk, opacity: p * (hi ? 1 : 0.85), transform: `scale(${hi ? 1 : 0.97})`, transformOrigin: "0 50%", whiteSpace: "nowrap" }}>{r.t}</div>;
           })}
         </div>
-        {foot ? <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, letterSpacing: 2, color: "rgba(243,239,228,0.7)" }}>Source: {foot}</div> : null}
+        {foot ? <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 32, letterSpacing: 1, color: "rgba(243,239,228,0.7)" }}>{foot}</div> : null}
         {/* borrador y tiza en la repisa */}
         <div style={{ position: "absolute", right: 90, bottom: -22, width: 150, height: 36, borderRadius: 5, background: "linear-gradient(180deg,#8E6A46,#5A3E24)", boxShadow: "0 6px 10px rgba(0,0,0,0.5)" }} />
         <div style={{ position: "absolute", right: 270, bottom: -12, width: 70, height: 16, borderRadius: 8, background: K.chalk, transform: "rotate(-6deg)", boxShadow: "0 3px 5px rgba(0,0,0,0.5)" }} />
