@@ -9,7 +9,7 @@ import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, Ea
 import { Photo, FONTS, CL } from "./Kit";
 
 const { SERIF, SANS, HAND } = FONTS as any;
-export const N = { kraft: "#C9A574", kraftD: "#A9844F", ink: "#2A1D12", nar: "#E8812A", narL: "#F5B25C", amb: "#B8661C", ok: "#3E9A55", no: "#D23F2E", crema: "#FBF5E8", azul: "#CFE3EA", noche: "rgba(18,14,10,0.9)" };
+export const N = { kraft: "#BDB7AA", kraftD: "#958F84", ink: "#1E1C1A", nar: "#E0A82E", narL: "#F2C94C", amb: "#9B7A2F", ok: "#3E9A55", no: "#D23F2E", crema: "#FBF5E8", azul: "#CFE3EA", noche: "rgba(18,14,10,0.9)" };
 const cl = (v: number, a = 0, b = 1) => Math.max(a, Math.min(b, v));
 const ease = Easing.out(Easing.cubic);
 const sp = (f: number, d = 0, damping = 15) => spring({ frame: f - d, fps: 30, config: { damping, mass: 0.6 } });
