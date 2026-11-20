@@ -43,15 +43,16 @@ export const ChapterOpen: React.FC<{ n: number; total: number; title: string; sr
         <div style={{ position: "absolute", top: 210, width: 900, display: "flex", flexDirection: "column", ...side }}>
           <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 26, letterSpacing: 10, color: AMBER, opacity: draw }}>MISTAKE · {n} OF {total}</div>
           <svg width="560" height="300" viewBox="0 0 560 300" style={{ overflow: "visible" }}>
-            <text x={right ? 560 : 0} y="262" textAnchor={right ? "end" : "start"} fontFamily={SERIF} fontWeight={700} fontSize="300"
+            <text x={right ? 560 : 0} y="262" textAnchor={right ? "end" : "start"} fontFamily={SANS} fontWeight={700} fontSize="280" style={{ fontVariantNumeric: "lining-nums tabular-nums", fontFeatureSettings: '"lnum" 1, "tnum" 1' }}
               fill={`rgba(255,253,248,${fill})`} stroke={C.white} strokeWidth={3} strokeDasharray={1400} strokeDashoffset={1400 * (1 - draw)}>{String(n).padStart(2, "0")}</text>
           </svg>
-          <div style={{ position: "relative", display: "flex", flexWrap: "wrap", columnGap: 20, justifyContent: right ? "flex-end" : "flex-start", marginTop: 4, maxWidth: 900 }}>
+          <div style={{ position: "relative", display: "flex", flexWrap: "wrap", columnGap: 22, justifyContent: right ? "flex-end" : "flex-start", marginTop: 10, maxWidth: 900, background: `rgba(16,11,8,${0.78 * fill})`, padding: "18px 30px 22px", borderRadius: 10, boxShadow: `0 18px 40px rgba(0,0,0,${0.45 * fill})` }}>
             {words.map((w, i) => {
               const p = spring({ frame: f - 24 - i * 4, fps: 30, config: { damping: 15, mass: 0.6 } });
-              return <span key={i} style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 78, lineHeight: 1.08, color: C.white, textShadow: shadow, display: "inline-block", opacity: p, transform: `translateY(${(1 - p) * 40}px)` }}>{w}</span>;
+              return <span key={i} style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 86, lineHeight: 1.08, color: C.white, textShadow: shadow, display: "inline-block", opacity: p, transform: `translateY(${(1 - p) * 40}px)` }}>{w}</span>;
             })}
-            <div style={{ position: "absolute", left: right ? "auto" : 0, right: right ? 0 : "auto", top: "52%", height: 7, borderRadius: 4, background: C.ver, width: `${strike * 100}%`, boxShadow: "0 2px 8px rgba(0,0,0,0.4)", transform: "rotate(-1.5deg)" }} />
+            <div style={{ position: "absolute", [right ? "left" : "right"]: -70, bottom: -46, padding: "8px 22px", border: `6px solid ${C.ver}`, borderRadius: 8, color: C.ver, background: "rgba(255,253,248,0.94)", fontFamily: SANS, fontWeight: 700, fontSize: 44, letterSpacing: 6,
+              opacity: cl(strike * 3, 0, 1), transform: `rotate(-9deg) scale(${interpolate(strike, [0, 1], [2.4, 1])})`, boxShadow: "0 10px 24px rgba(0,0,0,0.45)" }}>AVOID</div>
           </div>
         </div>
       </AbsoluteFill>
@@ -92,7 +93,7 @@ export const Recap9: React.FC<{ items: { f: number }[]; cards: Card[]; bg: strin
   if (cur >= 0) {
     const t = spring({ frame: f - items[cur].f, ...ease });
     const [px, py] = cur > 0 ? ctr(cur - 1) : [960, 540]; const [qx, qy] = ctr(cur);
-    cx = lerp(px, qx, t); cy = lerp(py, qy, t); sc = cur > 0 ? 1.55 : lerp(1, 1.55, t);
+    cx = lerp(px, qx, t); cy = lerp(py, qy, t); sc = cur > 0 ? 1.32 : lerp(1, 1.32, t);
     const back = spring({ frame: f - (lastF + 75), ...ease });
     if (f > lastF + 75) { cx = lerp(cx, 960, back); cy = lerp(cy, 540, back); sc = lerp(sc, 1.04, back); }
   }
@@ -146,7 +147,7 @@ export const Reloj: React.FC<{ label: string; sub: string; unit: "h" | "min"; am
         </svg>
       </div>
       <div style={{ position: "absolute", left: 900, top: 330, width: 900 }}>
-        <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 28, letterSpacing: 8, color: AMBER, opacity: p }}>{sub}</div>
+        <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 38, letterSpacing: 8, color: AMBER, textShadow: shadow, opacity: p }}>{sub}</div>
         <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 104, color: C.white, textShadow: shadow, lineHeight: 1.02, opacity: p }}>{label}</div>
         <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 150, color: AMBER, textShadow: shadow, marginTop: 10 }}>{shown}<span style={{ fontSize: 70 }}> {unit === "h" ? "hours" : "minutes"}</span></div>
       </div>
