@@ -12,7 +12,7 @@ export const W = { yeso: "#F3EEE4", beige: "#DCCBAA", beigeL: "#E8DCC4", beigeD:
 const cl = (v: number, a = 0, b = 1) => Math.max(a, Math.min(b, v));
 const ease = Easing.out(Easing.cubic);
 const sp = (f: number, d = 0, damping = 15) => spring({ frame: f - d, fps: 30, config: { damping, mass: 0.6 } });
-const out = (f: number, dur: number, len = 8) => interpolate(f, [dur - len, dur], [1, 0], CL);
+const out = (f: number, dur: number, len = 4) => interpolate(f, [dur - len, dur], [1, 0], CL);
 const tsh = "0 3px 14px rgba(0,0,0,0.8), 0 1px 2px rgba(0,0,0,0.9)";
 const Pic: React.FC<{ src: string; style?: React.CSSProperties; fit?: "cover" | "contain" }> = ({ src, style, fit = "cover" }) => <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: fit, ...style }} />;
 const Fondo: React.FC<{ bg?: string; dur: number; seed?: number; side?: "left" | "right" | "bottom" | "all"; k?: number }> = ({ bg, dur, seed = 5, side = "left", k = 0.78 }) => {
@@ -60,8 +60,8 @@ export const MetodoD: React.FC<{ n: number; total: number; title: string; src: s
         <Muro />
         <Hueco w={300} x={380} y={260} style={{ opacity: 1 - cl((ex - 240) / 160) }} />
         <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: cl(ex, 0, 760), background: `linear-gradient(90deg, ${W.mas}, #EFEBE1)`, boxShadow: "inset -10px 0 14px rgba(0,0,0,0.05)" }} />
-        <div style={{ position: "absolute", left: 0, right: 0, top: 70, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 210, lineHeight: 1, color: "#E5DFD2", textShadow: "-3px -3px 0 #FFFFFF, 4px 5px 0 rgba(0,0,0,0.16)", opacity: cl(p * 1.4) }}>{n}</div>
-        <div style={{ position: "absolute", left: 0, right: 0, top: 300, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 52, letterSpacing: 6, color: "#6E665A", opacity: cl(p * 1.4) }}>MÉTODO {n} DE {total}</div>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 70, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 230, lineHeight: 1, color: W.ink, textShadow: "-3px -3px 0 rgba(255,255,255,0.9), 5px 6px 0 rgba(0,0,0,0.22)", opacity: cl(p * 1.4) }}>{n}</div>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 300, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 54, letterSpacing: 6, color: "#3A342C", opacity: cl(p * 1.4) }}>MÉTODO {n} DE {total}</div>
         {pass < 1 ? <Espatula x={ex - 60} y={-30} w={360} a={88} /> : null}
       </div>
       <div style={{ position: "absolute", left: 110, top: 710, width: 1100 }}><Titulo txt={title} size={title.length > 30 ? 74 : 88} f0={10} /></div>
@@ -82,7 +82,7 @@ export const AgujerosD: React.FC<{ head: string; items: { n: number; t: string }
           <Hueco w={150 + ((i * 37) % 50)} x={x} y={y} style={{ opacity: 1 - tap }} />
           <div style={{ position: "absolute", left: x - 110, top: y - 92, width: 220, height: 184, borderRadius: "48% 52% 46% 54%", background: `radial-gradient(ellipse, ${W.mas} 55%, rgba(247,245,239,0) 72%)`, opacity: tap, transform: `scale(${0.7 + 0.3 * tap})` }} />
           <div style={{ position: "absolute", left: x - 130, top: y - 40, width: 260, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 64, color: tap > 0.5 ? "#B7AD9C" : "#FFF", textShadow: tap > 0.5 ? "none" : tsh }}>{it.n}</div>
-          <div style={{ position: "absolute", left: x - 150, top: y + 100, width: 300, textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 38, lineHeight: 1.05, color: W.ink, opacity: tap > 0.3 || done !== undefined ? 1 : 0.35, transform: now ? "scale(1.12)" : "none" }}>{it.t}</div>
+          <div style={{ position: "absolute", left: x - 150, top: y + 100, width: 300, textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 44, lineHeight: 1.02, color: W.ink, opacity: tap > 0.3 || done !== undefined ? 1 : 0.35, transform: now ? "scale(1.12)" : "none" }}>{it.t}</div>
         </div>; })}
     </AbsoluteFill>
   );
@@ -268,15 +268,15 @@ export const AlRevesD: React.FC<{ dur: number }> = ({ dur }) => {
 // ---------- proporción: dos cucharadas de polvo caen en la balanza contra una de agua
 export const ProporD: React.FC<{ dur: number }> = ({ dur }) => {
   const f = useCurrentFrame(); const t = sp(f, 24, 10); const tilt = interpolate(t, [0, 1], [0, -6]);
-  const cubo = (c: string, d: number, k: number) => { const q = sp(f, d, 12); return <div key={k} style={{ width: 170, height: 170, borderRadius: 18, background: c, boxShadow: "0 10px 16px rgba(0,0,0,0.35)", transform: `translateY(${(1 - q) * -500}px)`, opacity: cl(q * 3) }} />; };
+  const cubo = (c: string, d: number, k: number) => { const q = sp(f, d, 12); return <div key={k} style={{ width: 170, height: 170, borderRadius: 18, background: c, boxShadow: "0 10px 16px rgba(0,0,0,0.35)", transform: `translateY(${(1 - q) * -260}px)`, opacity: cl(q * 3) }} />; };
   return (
     <AbsoluteFill style={{ opacity: out(f, dur), background: "linear-gradient(180deg,#2B261F,#16130F)" }}>
       <div style={{ position: "absolute", left: 260, right: 260, top: 640, height: 22, background: "#8A8378", transform: `rotate(${tilt}deg)` }}>
         <div style={{ position: "absolute", left: 60, bottom: 22, display: "flex", gap: 16 }}>{cubo("linear-gradient(160deg,#FBF8F1,#DCD5C6)", 0, 1)}{cubo("linear-gradient(160deg,#FBF8F1,#DCD5C6)", 8, 2)}</div>
         <div style={{ position: "absolute", right: 120, bottom: 22 }}>{cubo("linear-gradient(160deg,#8CC3EC,#3D84C6)", 16, 3)}</div>
       </div>
-      <div style={{ position: "absolute", left: 930, top: 662, width: 60, height: 260, background: "#6A645B" }} />
-      <div style={{ position: "absolute", left: 0, right: 0, top: 110, textAlign: "center" }}><Titulo txt="2 de polvo · 1 de agua" size={110} /><Kick txt="MÁS O MENOS · MANDA LA BOLSA" style={{ marginTop: 12 }} /></div>
+      <div style={{ position: "absolute", left: 930, top: 662, width: 60, height: 110, background: "#6A645B" }} /><div style={{ position: "absolute", left: 820, top: 770, width: 280, height: 18, background: "#6A645B", borderRadius: 6 }} />
+      <div style={{ position: "absolute", left: 0, right: 0, top: 812, textAlign: "center" }}><Titulo txt="2 de polvo · 1 de agua" size={96} /><Kick txt="MÁS O MENOS · MANDA LA BOLSA" style={{ marginTop: 12 }} /></div>
     </AbsoluteFill>
   );
 };
@@ -321,7 +321,7 @@ export const CruzD: React.FC<{ dur: number }> = ({ dur }) => {
       <Hueco w={70} x={960} y={520} style={{ opacity: 1 - a }} />
       {a > 0 && a < 1 ? <Espatula x={800} y={60 + 620 * a} w={320} a={0} carga /> : null}
       {b > 0 && b < 1 ? <Espatula x={500 + 620 * b} y={300} w={320} a={-90} /> : null}
-      <div style={{ position: "absolute", left: 120, top: 120 }}><div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 64, color: W.ink, opacity: a > 0 ? 1 : 0.3 }}>1 · de arriba abajo</div><div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 64, color: W.ink, opacity: b > 0 ? 1 : 0.3, marginTop: 8 }}>2 · de costado</div></div>
+      <div style={{ position: "absolute", left: 1300, top: 700 }}><div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 64, color: W.ink, opacity: a > 0 ? 1 : 0.3 }}>1 · de arriba abajo</div><div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 64, color: W.ink, opacity: b > 0 ? 1 : 0.3, marginTop: 8 }}>2 · de costado</div></div>
       <div style={{ position: "absolute", left: 120, top: 820, opacity: cl(sp(f, 50, 14) * 2) }}><span style={{ background: W.noche, color: "#FFF8EE", fontFamily: SERIF, fontWeight: 700, fontSize: 78, padding: "8px 34px" }}>Dos pasadas. Nada más.</span></div>
     </AbsoluteFill>
   );
@@ -337,8 +337,8 @@ export const EncogeD: React.FC<{ dur: number }> = ({ dur }) => {
       <div style={{ position: "absolute", left: 830, top: 340, width: 260, height: 220, background: "#1A1612", borderRadius: "0 0 40% 40%" }} />
       <div style={{ position: "absolute", left: 830, top: 340 + 36 * dip, width: 260, height: 220 - 36 * dip, background: W.mas, borderRadius: `${50 * dip}% ${50 * dip}% 40% 40% / ${30 * dip}% ${30 * dip}% 40% 40%` }} />
       <div style={{ position: "absolute", left: 790, top: 340, width: 340, height: 40 * two, background: "#FFFFFF", borderRadius: "0 0 50% 50%", opacity: two }} />
-      <div style={{ position: "absolute", left: 1150, top: 200, opacity: dip }}><Kick txt="1ª MANO: QUEDA HUNDIDA" /></div>
-      <div style={{ position: "absolute", left: 1150, top: 720, opacity: two }}><Kick txt="2ª MANO: A NIVEL" color="#9EE0A6" /></div>
+      <div style={{ position: "absolute", left: 1150, top: 250, opacity: dip }}><Kick txt="1ª MANO: QUEDA HUNDIDA" style={{ fontSize: 54 }} /></div>
+      <div style={{ position: "absolute", left: 1150, top: 720, opacity: two }}><Kick txt="2ª MANO: A NIVEL" color="#9EE0A6" style={{ fontSize: 54 }} /></div>
       <div style={{ position: "absolute", left: 200, top: 120 }}><Titulo txt="La masilla se encoge al secar" size={84} /></div>
     </AbsoluteFill>
   );
@@ -441,11 +441,11 @@ export const ManosD: React.FC<{ dur: number }> = ({ dur }) => {
   const f = useCurrentFrame();
   return (
     <AbsoluteFill style={{ opacity: out(f, dur) }}>
-      <Muro />
-      {[3, 2, 1].map((n) => { const d = (n - 1) * 16; const q = sp(f, d, 14); const w = 360 + n * 360, h = 240 + n * 200;
-        return <div key={n} style={{ position: "absolute", left: 960 - w / 2, top: 500 - h / 2, width: w, height: h, borderRadius: "50%", background: `radial-gradient(ellipse, rgba(247,245,239,${0.95 - n * 0.18}) 50%, rgba(247,245,239,0) 72%)`, transform: `scale(${q})` }}>
-          <div style={{ position: "absolute", left: w / 2 - 60, top: 10, fontFamily: SANS, fontWeight: 700, fontSize: 58, color: "#6E665A", opacity: cl(q * 2) }}>{n}ª</div></div>; })}
-      <div style={{ position: "absolute", left: 830, top: 400, width: 260, height: 200, background: "repeating-linear-gradient(0deg, rgba(255,255,255,0.9) 0 3px, transparent 3px 14px), repeating-linear-gradient(90deg, rgba(255,255,255,0.9) 0 3px, transparent 3px 14px)", opacity: 0.6 }} />
+      <Muro tone="#CDBE9F" />
+      {[3, 2, 1].map((n) => { const d = (n - 1) * 16; const q = sp(f, d, 14); const w = 380 + n * 380, h = 240 + n * 190;
+        return <div key={n} style={{ position: "absolute", left: 960 - w / 2, top: 480 - h / 2, width: w, height: h, borderRadius: "50%", background: `radial-gradient(ellipse, rgba(250,248,242,${1 - n * 0.12}) 55%, rgba(250,248,242,${0.85 - n * 0.12}) 70%)`, boxShadow: `0 0 0 5px rgba(60,52,40,${0.35 * q}), 0 12px 24px rgba(0,0,0,0.18)`, transform: `scale(${q})`, opacity: cl(q * 2) }}>
+          <div style={{ position: "absolute", left: w / 2 - 70, top: 14, width: 140, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 66, color: W.ink }}>{n}ª</div></div>; })}
+      <Hueco w={150} x={960} y={540} style={{ opacity: 0.35 }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 880, textAlign: "center" }}><span style={{ background: W.noche, color: "#FFF8EE", fontFamily: SERIF, fontWeight: 700, fontSize: 70, padding: "8px 34px" }}>Cada mano más ancha que la anterior</span></div>
     </AbsoluteFill>
   );
@@ -482,13 +482,13 @@ export const TitereD: React.FC<{ dur: number }> = ({ dur }) => {
   const f = useCurrentFrame(); const pull = interpolate(f, [10, 34], [0, 1], { ...CL, easing: ease }); const st = sp(f, 36, 12);
   return (
     <AbsoluteFill style={{ opacity: out(f, dur), background: "linear-gradient(180deg,#2B261F,#16130F)" }}>
-      <div style={{ position: "absolute", left: 900, top: 100, width: 60, height: 300, background: "#E9E2D3" }} /><div style={{ position: "absolute", left: 900, top: 640, width: 60, height: 340, background: "#E9E2D3" }} />
+      <div style={{ position: "absolute", left: 900, top: 210, width: 60, height: 190, background: "#E9E2D3" }} /><div style={{ position: "absolute", left: 900, top: 640, width: 60, height: 170, background: "#E9E2D3" }} />
       <div style={{ position: "absolute", left: 1200 - 230 * pull, top: 300, width: 30, height: 440, background: "linear-gradient(90deg,#B98C5A,#A5784A)", borderRadius: 4 }} />
       <div style={{ position: "absolute", left: 640, top: 515, width: 560 - 230 * pull + 300 * (1 - pull) * 0, height: 5, background: "#F2EAD8" }} /><div style={{ position: "absolute", left: 640, top: 525, width: 560 - 230 * pull, height: 5, background: "#F2EAD8" }} />
       <div style={{ position: "absolute", left: 600, top: 380, width: 30, height: 280, borderRadius: 10, background: "linear-gradient(90deg,#E7C890,#C9A464)", opacity: cl(st * 2), transform: `translateX(${(1 - st) * -120}px)` }} />
       <div style={{ position: "absolute", left: 1000, top: 120 }}><Kick txt="ATRÁS: EL CARTÓN" color="#E7C890" /></div>
       <div style={{ position: "absolute", left: 120, top: 120 }}><Kick txt="ADELANTE: EL PALITO" color="#E7C890" /></div>
-      <div style={{ position: "absolute", left: 120, top: 860 }}><Titulo txt="El hilo tenso lo aprieta contra la placa" size={70} /></div>
+      <div style={{ position: "absolute", left: 120, top: 870 }}><Placa><Titulo txt="El hilo tenso lo aprieta contra la placa" size={66} /></Placa></div>
     </AbsoluteFill>
   );
 };
@@ -511,14 +511,14 @@ export const CeroD: React.FC<{ bg?: string; dur: number }> = ({ bg, dur }) => {
 
 // ---------- el recorte: tarjeta del corralón con el espesor marcado en grande
 export const PideD: React.FC<{ bg?: string; dur: number }> = ({ bg, dur }) => {
-  const f = useCurrentFrame(); const p = sp(f, 0, 12);
+  const f = useCurrentFrame(); const p = sp(f, 0, 12); const p2 = sp(f, 10, 13); const p3 = sp(f, 20, 13); const fl = Math.sin(f / 22) * 6;
   return (
     <AbsoluteFill style={{ opacity: out(f, dur) }}>
       <Fondo bg={bg} dur={dur} side="left" k={0.7} />
-      <div style={{ position: "absolute", left: 150, top: 250, width: 820, height: 520, background: "linear-gradient(180deg,#F1ECE1,#DCD4C4)", boxShadow: "0 30px 60px rgba(0,0,0,0.55), inset 0 -26px 0 #C9C1B1", transform: `perspective(1600px) rotateX(${(1 - p) * 40}deg)`, transformOrigin: "50% 100%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "0 60px" }}>
-        <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 52, letterSpacing: 5, color: "#6E665A" }}>RECORTE DE PLACA</div>
-        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 190, color: W.ink, lineHeight: 1 }}>12,5 mm</div>
-        <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 70, color: W.rojo }}>$2 a $6</div>
+      <div style={{ position: "absolute", left: 130, top: 220, width: 960, height: 580, background: "linear-gradient(180deg,#F1ECE1,#DCD4C4)", boxShadow: "0 30px 60px rgba(0,0,0,0.55), inset 0 -26px 0 #C9C1B1", transform: `perspective(1600px) rotateX(${(1 - p) * 40}deg) translateY(${fl}px) rotate(${-1 + Math.sin(f / 31)}deg)`, transformOrigin: "50% 100%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "0 70px", boxSizing: "border-box" }}>
+        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 50, letterSpacing: 4, color: "#4A4338", whiteSpace: "nowrap" }}>PEDÍ UN RECORTE DE PLACA</div>
+        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 168, color: W.ink, lineHeight: 1.05, whiteSpace: "nowrap", opacity: cl(p2 * 2), transform: `translateX(${(1 - p2) * 60}px)` }}>12,5 mm</div>
+        <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 80, color: W.rojo, whiteSpace: "nowrap", opacity: cl(p3 * 2), transform: `scale(${0.8 + 0.2 * p3})`, transformOrigin: "0 50%" }}>cuesta de $2 a $6</div>
       </div>
     </AbsoluteFill>
   );
@@ -542,14 +542,18 @@ export const RectD: React.FC<{ dur: number }> = ({ dur }) => {
 
 // ---------- los listones: rayos X de la pared; detrás del hueco aparecen dos listones y los tornillos entran
 export const ListonD: React.FC<{ dur: number }> = ({ dur }) => {
-  const f = useCurrentFrame(); const x = interpolate(f, [4, 20], [0, 1], { ...CL, easing: ease });
-  const tor = (l: number, t: number, d: number) => { const q = sp(f, d, 10); return <div key={l + "" + t} style={{ position: "absolute", left: l, top: t, width: 40, height: 40, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #DADADA, #6A6A6A)", transform: `scale(${q}) rotate(${f * 8}deg)`, boxShadow: "0 4px 8px rgba(0,0,0,0.4)" }} />; };
+  const f = useCurrentFrame(); const x = sp(f, 2, 13); const pl = interpolate(f, [34, 52], [0, 1], { ...CL, easing: ease });
+  const tor = (l: number, t: number, d: number) => { const q = sp(f, d, 10); return <div key={l + "" + t} style={{ position: "absolute", left: l, top: t, width: 44, height: 44, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #EDEDED, #5A5A5A)", transform: `scale(${q}) rotate(${f * 8}deg)`, boxShadow: "0 4px 8px rgba(0,0,0,0.4)", opacity: cl(q * 2) }}><div style={{ position: "absolute", left: 19, top: 6, width: 6, height: 32, background: "#3A3A3A" }} /><div style={{ position: "absolute", left: 6, top: 19, width: 32, height: 6, background: "#3A3A3A" }} /></div>; };
   return (
     <AbsoluteFill style={{ opacity: out(f, dur) }}>
       <Muro />
-      <div style={{ position: "absolute", left: 660, top: 300, width: 600, height: 440, background: "#14110D" }} />
-      {[600, 1200].map((l, i) => <div key={i} style={{ position: "absolute", left: l, top: 200, width: 120, height: 640, background: "linear-gradient(90deg,#C99A62,#A7773F)", opacity: x * 0.9, border: "4px dashed rgba(60,40,20,0.5)" }} />)}
-      {tor(640, 230, 24)}{tor(640, 770, 30)}{tor(1240, 230, 36)}{tor(1240, 770, 42)}
+      <div style={{ position: "absolute", left: 610, top: 260, width: 700, height: 500, background: "radial-gradient(ellipse at 50% 45%, #2E261D, #0E0B08 75%)", boxShadow: "inset 0 0 0 10px #CFC6B4, inset 0 0 40px rgba(0,0,0,0.9)" }}>
+        <div style={{ position: "absolute", left: 300, top: 0, width: 26, height: 500, background: "linear-gradient(90deg,#8F3A26,#C25A3C)", opacity: 0.55 }} />
+      </div>
+      {[600, 1200].map((l, i) => <div key={i} style={{ position: "absolute", left: l + (i ? 1 : -1) * (1 - x) * 160, top: 210, width: 120, height: 600, background: "repeating-linear-gradient(90deg, rgba(120,80,40,0.25) 0 2px, transparent 2px 13px), linear-gradient(90deg,#D9AA6E,#B0804A)", boxShadow: "0 14px 24px rgba(0,0,0,0.5)", opacity: cl(x * 2), borderRadius: 4 }} />)}
+      <div style={{ position: "absolute", left: 610, top: 260, width: 700, height: 500, background: "linear-gradient(170deg,#F2EDE2,#DAD2C1)", clipPath: `inset(0 ${(1 - pl) * 100}% 0 0)`, boxShadow: "0 0 0 4px rgba(0,0,0,0.12)" }} />
+      {tor(638, 290, 52)}{tor(638, 700, 56)}{tor(1238, 290, 60)}{tor(1238, 700, 64)}
+      <div style={{ position: "absolute", left: 610, top: 120, opacity: cl(x * 2) }}><Kick txt="LISTÓN DETRÁS DE CADA BORDE" color={W.ink} style={{ textShadow: "none" }} /></div>
       <div style={{ position: "absolute", left: 110, top: 880 }}><span style={{ background: W.noche, color: "#FFF8EE", fontFamily: SERIF, fontWeight: 700, fontSize: 70, padding: "8px 32px" }}>un listón de cada lado: ya tienes dónde atornillar</span></div>
     </AbsoluteFill>
   );
@@ -557,26 +561,35 @@ export const ListonD: React.FC<{ dur: number }> = ({ dur }) => {
 
 // ---------- la cinta de juntas: el rectángulo de placa nueva y la cinta de papel que se va pegando en las cuatro uniones
 export const CintaD: React.FC<{ dur: number }> = ({ dur }) => {
-  const f = useCurrentFrame(); const k = (i: number) => interpolate(f, [4 + i * 10, 16 + i * 10], [0, 1], { ...CL, easing: ease });
+  const f = useCurrentFrame(); const k = (i: number) => interpolate(f, [4 + i * 12, 18 + i * 12], [0, 1], { ...CL, easing: ease });
+  const T: [number, number, number, number][] = [[620, 270, 680, 56], [620, 714, 680, 56], [620, 270, 56, 500], [1244, 270, 56, 500]];
+  const cur = Math.min(3, Math.floor(cl((f - 4) / 12, 0, 3.99))); const [l, t, w, h] = T[cur]; const kc = k(cur);
+  const ex = w > 56 ? l + w * kc : l + 28; const ey = h > 56 ? t + h * kc : t + 28;
   return (
     <AbsoluteFill style={{ opacity: out(f, dur) }}>
       <Muro />
-      <div style={{ position: "absolute", left: 660, top: 300, width: 600, height: 440, background: "#F1ECE1", boxShadow: "inset 0 0 0 4px rgba(0,0,0,0.15)" }} />
-      {[[630, 280, 660, 50, 0], [630, 710, 660, 50, 1], [630, 280, 50, 480, 2], [1240, 280, 50, 480, 3]].map(([l, t, w, h, i]) => <div key={i} style={{ position: "absolute", left: l, top: t, width: w === 50 ? 50 : w * k(i), height: h === 50 ? 50 : h * k(i), background: "#E6DDC8", boxShadow: "0 3px 6px rgba(0,0,0,0.18)" }} />)}
-      <div style={{ position: "absolute", left: 110, top: 110 }}><Titulo txt="Cinta de papel en las juntas" size={84} color={W.ink} /><Kick txt="MÁS FUERTE QUE LA DE MALLA EN LO RECTO" color="#6E665A" style={{ textShadow: "none", marginTop: 10 }} /></div>
+      <div style={{ position: "absolute", left: 640, top: 290, width: 640, height: 460, background: "linear-gradient(170deg,#F4F0E7,#DED6C6)", boxShadow: "0 0 0 4px rgba(0,0,0,0.18), 0 10px 18px rgba(0,0,0,0.2)" }}>
+        {[[30, 30], [590, 30], [30, 410], [590, 410], [310, 30], [310, 410]].map(([x, y], i) => <div key={i} style={{ position: "absolute", left: x, top: y, width: 20, height: 20, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #BDBDBD, #4A4A4A)" }} />)}
+      </div>
+      {T.map(([l2, t2, w2, h2], i) => <div key={i} style={{ position: "absolute", left: l2, top: t2, width: w2 === 56 ? 56 : w2 * k(i), height: h2 === 56 ? 56 : h2 * k(i), background: "repeating-linear-gradient(90deg, rgba(0,0,0,0.04) 0 2px, transparent 2px 9px), #EADFC6", boxShadow: "0 3px 8px rgba(0,0,0,0.28)" }} />)}
+      {kc > 0 && kc < 1 ? <Espatula x={ex - 150} y={ey - 40} w={300} a={w > 56 ? 90 : 0} /> : null}
+      <div style={{ position: "absolute", left: 110, top: 80 }}><Titulo txt="Cinta de papel en las juntas" size={84} color={W.ink} /></div>
+      <div style={{ position: "absolute", left: 110, top: 860 }}><span style={{ background: W.noche, color: W.luz, fontFamily: SANS, fontWeight: 700, fontSize: 56, padding: "8px 30px" }}>en lo recto, más fuerte que la de malla</span></div>
     </AbsoluteFill>
   );
 };
 
 // ---------- lámina: la página del método se recorre con la cámara (enfoques anclados a la voz)
-export const LaminaD: React.FC<{ src: string; focus: { x: number; y: number; z: number; f: number }[]; dur: number }> = ({ src, focus, dur }) => {
+export const LaminaD: React.FC<{ src: string; focus: { x: number; y: number; z: number; f: number }[]; qrAt?: number; dur: number }> = ({ src, focus, qrAt, dur }) => {
   const f = useCurrentFrame(); let a = 0; focus.forEach((z, i) => { if (f >= z.f) a = i; });
   const cur = focus[a]; const prev = focus[Math.max(0, a - 1)]; const t = a === 0 ? 1 : interpolate(f, [cur.f, cur.f + 30], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
-  const cz = (v: number) => 1 + (Math.min(v, 2) - 1) * 0.3;
+  const cz = (v: number) => 1 + (Math.min(v, 2) - 1) * 0.12;
   const x = prev.x + (cur.x - prev.x) * t + Math.sin(f / 40) * 1.6; const y = prev.y + (cur.y - prev.y) * t + Math.cos(f / 47) * 1.3; const z = cz(prev.z) + (cz(cur.z) - cz(prev.z)) * t + 0.03 * Math.sin(f / 55);
   return (
     <AbsoluteFill style={{ opacity: out(f, dur), background: "#F4EFE4", overflow: "hidden" }}>
-      <div style={{ position: "absolute", inset: 0, transform: `scale(${z})`, transformOrigin: `${x}% ${y}%` }}><Pic src={src} fit="contain" /></div>
+      <div style={{ position: "absolute", inset: 0, transformOrigin: "30px 30px", transform: qrAt === undefined ? "none" : `scale(${1 - 0.4 * interpolate(f, [qrAt, qrAt + 14], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) })})`, boxShadow: qrAt !== undefined && f > qrAt ? "0 30px 60px rgba(0,0,0,0.35)" : "none", overflow: "hidden" }}>
+        <div style={{ position: "absolute", inset: 0, transform: `scale(${qrAt !== undefined && f > qrAt ? 1 : z})`, transformOrigin: `${x}% ${y}%` }}><Pic src={src} fit="contain" /></div>
+      </div>
     </AbsoluteFill>
   );
 };
@@ -638,7 +651,7 @@ export const UnaCaraD: React.FC<{ dur: number }> = ({ dur }) => {
       <div style={{ position: "absolute", left: 640, top: 340, width: 60, height: 540 * a, background: W.mas }} />
       <div style={{ position: "absolute", left: 740, top: 240, width: 640 * b, height: 60, background: W.mas }} />
       <div style={{ position: "absolute", left: 160, top: 420, opacity: a }}><Kick txt="CARA 1" /></div>
-      <div style={{ position: "absolute", left: 1050, top: 150, opacity: b }}><Kick txt="CARA 2, DESPUÉS" /></div>
+      <div style={{ position: "absolute", left: 1000, top: 420, opacity: b }}><Kick txt="CARA 2, DESPUÉS" /></div>
       <div style={{ position: "absolute", left: 140, top: 820, opacity: cl((a - b) * 3 + (f > 30 && f < 48 ? 1 : 0)) }}><span style={{ background: W.noche, color: W.luz, fontFamily: SANS, fontWeight: 700, fontSize: 60, padding: "6px 26px" }}>esperas que fragüe</span></div>
       <div style={{ position: "absolute", left: 140, top: 110 }}><Titulo txt="El canto te hace de regla" size={84} /></div>
     </AbsoluteFill>
@@ -659,16 +672,21 @@ export const LijaD: React.FC<{ dur: number }> = ({ dur }) => {
 
 // ---------- luz rasante: la linterna barre la pared de costado; el bulto hace sombra y el hundido se vuelve un pozo
 export const RasanteD: React.FC<{ dur: number }> = ({ dur }) => {
-  const f = useCurrentFrame(); const x = interpolate(f, [0, dur], [-300, 2200], CL); const near = (cx: number) => cl(1 - Math.abs(x - cx) / 500);
+  const f = useCurrentFrame(); const x = interpolate(f, [6, Math.max(40, Math.min(dur - 10, 120))], [300, 1700], { ...CL, easing: Easing.inOut(Easing.sin) }); const near = (cx: number) => cl(1 - Math.abs(x - cx) / 420);
   return (
-    <AbsoluteFill style={{ opacity: out(f, dur), background: "#2A251E" }}>
-      <Muro tone="#8E8370" />
-      <div style={{ position: "absolute", left: x - 500, top: 0, width: 1000, height: 1080, background: "radial-gradient(ellipse 50% 60% at 50% 50%, rgba(255,236,190,0.75), transparent 70%)" }} />
-      <div style={{ position: "absolute", left: 640, top: 420, width: 220, height: 160, borderRadius: "50%", boxShadow: `${-40 * near(750)}px 0 30px rgba(0,0,0,${0.7 * near(750)})`, background: `rgba(255,240,210,${0.2 * near(750)})` }} />
-      <div style={{ position: "absolute", left: 1200, top: 460, width: 200, height: 140, borderRadius: "50%", boxShadow: `inset ${30 * near(1300)}px 0 30px rgba(0,0,0,${0.75 * near(1300)})` }} />
-      <div style={{ position: "absolute", left: 600, top: 650, opacity: near(750) }}><Kick txt="BULTO: LIJA" /></div>
-      <div style={{ position: "absolute", left: 1160, top: 650, opacity: near(1300) }}><Kick txt="HUNDIDO: OTRA MANO" /></div>
-      <div style={{ position: "absolute", left: 120, top: 100 }}><Titulo txt="La luz que te delata" size={96} /></div>
+    <AbsoluteFill style={{ opacity: out(f, dur), background: "#1E1A15" }}>
+      <Muro tone="#6E6556" />
+      <AbsoluteFill style={{ background: "rgba(10,8,6,0.45)" }} />
+      <div style={{ position: "absolute", left: x - 520, top: 140, width: 1040, height: 760, background: "radial-gradient(ellipse 50% 50% at 50% 50%, rgba(255,236,190,0.85), rgba(255,236,190,0.25) 55%, transparent 72%)" }} />
+      <div style={{ position: "absolute", left: 640, top: 430, width: 240, height: 170, borderRadius: "50%", background: `radial-gradient(ellipse at ${x < 760 ? 30 : 70}% 40%, rgba(255,246,222,${0.25 + 0.6 * near(760)}), rgba(140,128,108,${0.5 * near(760)}) 70%)`, boxShadow: `${(x < 760 ? 1 : -1) * 70 * near(760)}px 10px 26px rgba(0,0,0,${0.85 * near(760)})` }} />
+      <div style={{ position: "absolute", left: 1160, top: 450, width: 220, height: 150, borderRadius: "50%", background: `rgba(30,24,18,${0.15 + 0.5 * near(1270)})`, boxShadow: `inset ${(x < 1270 ? -1 : 1) * 46 * near(1270)}px 0 26px rgba(0,0,0,${0.9 * near(1270)})` }} />
+      <div style={{ position: "absolute", left: x - 900, top: 470, width: 380, height: 110, transform: "rotate(3deg)" }}>
+        <div style={{ position: "absolute", left: 0, top: 20, width: 300, height: 70, borderRadius: 14, background: "linear-gradient(180deg,#3A3A3A,#121212,#2A2A2A)" }} />
+        <div style={{ position: "absolute", left: 290, top: 0, width: 90, height: 110, borderRadius: "10px 40px 40px 10px", background: "linear-gradient(180deg,#5A5A5A,#1C1C1C)", boxShadow: "18px 0 30px rgba(255,236,190,0.9)" }} />
+      </div>
+      <div style={{ position: "absolute", left: 600, top: 660, opacity: cl(near(760) * 1.6) }}><Kick txt="BULTO: LIJA" /></div>
+      <div style={{ position: "absolute", left: 1100, top: 660, opacity: cl(near(1270) * 1.6) }}><Kick txt="HUNDIDO: OTRA MANO" /></div>
+      <div style={{ position: "absolute", left: 120, top: 80 }}><Titulo txt="La linterna de costado te delata" size={88} /></div>
     </AbsoluteFill>
   );
 };
@@ -759,28 +777,32 @@ export const LunasD: React.FC<{ src: string; dur: number }> = ({ src, dur }) => 
 
 // ---------- el poro: la masilla vista de cerca es un colador; la pintura se hunde. El fijador pasa y cierra los poros
 export const PoroD: React.FC<{ dur: number }> = ({ dur }) => {
-  const f = useCurrentFrame(); const fx = interpolate(f, [40, 70], [-200, 2100], CL);
+  const f = useCurrentFrame(); const fx = interpolate(f, [36, 76], [-200, 2100], { ...CL, easing: Easing.inOut(Easing.sin) }); const z = 1.0 + f / 900;
   return (
-    <AbsoluteFill style={{ opacity: out(f, dur) }}>
-      <Muro tone="#F1ECE1" />
-      {Array.from({ length: 96 }, (_, i) => { const x = (i % 16) * 120 + 40 + ((i * 37) % 30); const y = Math.floor(i / 16) * 170 + 60; const sealed = x < fx;
-        return <div key={i} style={{ position: "absolute", left: x, top: y, width: 34, height: 34, borderRadius: "50%", background: sealed ? "rgba(230,224,210,0.4)" : "radial-gradient(circle, #6E6556 30%, #C9C1B1 70%)", transform: `scale(${sealed ? 0.4 : 1 + 0.15 * Math.sin((f + i * 7) / 8)})` }} />; })}
-      <div style={{ position: "absolute", left: fx - 160, top: 0, bottom: 0, width: 160, background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.65))" }} />
-      <div style={{ position: "absolute", left: 120, top: 860 }}><span style={{ background: W.noche, color: "#FFF8EE", fontFamily: SERIF, fontWeight: 700, fontSize: 78, padding: "8px 34px" }}>{fx < 900 ? "La masilla chupa la pintura" : "El fijador cierra el poro"}</span></div>
+    <AbsoluteFill style={{ opacity: out(f, dur), background: "#D9D1C0" }}>
+      <AbsoluteFill style={{ transform: `scale(${z})` }}>
+        <Muro tone="#E8E1D2" />
+        {Array.from({ length: 60 }, (_, i) => { const x = (i % 10) * 190 + 50 + ((i * 53) % 60); const y = Math.floor(i / 10) * 170 + 70 + ((i * 29) % 40); const sealed = x < fx; const r = 50 + ((i * 17) % 30);
+          return <div key={i} style={{ position: "absolute", left: x, top: y, width: r, height: r, borderRadius: "50%", background: sealed ? "radial-gradient(circle, rgba(220,212,196,0.9) 40%, rgba(232,225,210,0) 72%)" : "radial-gradient(circle, #2F2920 28%, #7A6F5E 52%, rgba(200,190,170,0) 72%)", transform: `scale(${sealed ? 0.55 : 1 + 0.12 * Math.sin((f + i * 7) / 8)})` }} />; })}
+      </AbsoluteFill>
+      <div style={{ position: "absolute", left: fx - 260, top: 0, bottom: 0, width: 260, background: "linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.75))" }} />
+      <div style={{ position: "absolute", left: fx - 70, top: 340 + Math.sin(f / 5) * 120, width: 140, height: 360, borderRadius: 30, background: "repeating-linear-gradient(0deg,#F4F1EA 0 6px,#E3DED2 6px 12px)", boxShadow: "0 20px 30px rgba(0,0,0,0.3)", opacity: fx > -100 && fx < 2000 ? 1 : 0 }} />
+      <div style={{ position: "absolute", left: 120, top: 860 }}><span style={{ background: W.noche, color: "#FFF8EE", fontFamily: SERIF, fontWeight: 700, fontSize: 78, padding: "8px 34px" }}>{fx < 900 ? "De cerca, la masilla es un colador" : "El fijador cierra el poro"}</span></div>
     </AbsoluteFill>
   );
 };
 
 // ---------- el paño completo: primero se pinta sólo el parche (se ve el borde); después el rodillo cubre de esquina a esquina
 export const PanoD: React.FC<{ dur: number }> = ({ dur }) => {
-  const f = useCurrentFrame(); const r = interpolate(f, [30, 80], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
+  const f = useCurrentFrame(); const r = interpolate(f, [34, 84], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) }); const e = sp(f, 0, 14);
   return (
     <AbsoluteFill style={{ opacity: out(f, dur) }}>
-      <Muro tone="#D3C4A6" />
-      <div style={{ position: "absolute", left: 760, top: 360, width: 400, height: 300, background: "#E3D6BB", border: "3px solid rgba(255,255,255,0.4)", opacity: 1 - r }} />
-      <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: `${r * 100}%`, background: W.beigeL }} />
+      <Muro tone="#C9B48E" />
+      <div style={{ position: "absolute", left: 740, top: 340, width: 440, height: 320, background: "linear-gradient(160deg,#EFE6D0,#E2D5B6)", boxShadow: `0 0 0 6px rgba(255,255,255,${0.55 * e}), 0 0 40px rgba(255,248,230,${0.6 * e})`, opacity: 1 - r, transform: `scale(${0.9 + 0.1 * e})` }} />
+      <div style={{ position: "absolute", left: 1210, top: 300, opacity: cl(e * 2) * (1 - r) }}><Kick txt="SE NOTA EL BORDE" color={W.ink} style={{ textShadow: "none" }} /></div>
+      <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: `${r * 100}%`, background: "linear-gradient(180deg,#D8C7A5,#CDBB96)" }} />
       {r > 0 && r < 1 ? <div style={{ position: "absolute", left: `calc(${r * 100}% - 70px)`, top: 300 + Math.sin(f / 4) * 200, width: 140, height: 340, borderRadius: 30, background: "repeating-linear-gradient(0deg,#D9CBAE 0 6px,#E7DCC5 6px 12px)", boxShadow: "0 20px 30px rgba(0,0,0,0.3)" }} /> : null}
-      <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 26, background: "#8C7D62" }} /><div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 26, background: "#8C7D62" }} />
+      <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 30, background: "#6E5E44" }} /><div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 30, background: "#6E5E44" }} />
       <div style={{ position: "absolute", left: 120, top: 100 }}><span style={{ background: W.noche, color: "#FFF8EE", fontFamily: SERIF, fontWeight: 700, fontSize: 80, padding: "8px 34px" }}>{r < 0.3 ? "sólo el parche: se ve el borde" : "el paño entero, de esquina a esquina"}</span></div>
     </AbsoluteFill>
   );
@@ -811,7 +833,7 @@ export const CostoD: React.FC<{ rows: { t: string; v: string; f: number }[]; tot
         <div style={{ position: "absolute", left: 300, bottom: 220, width: 360, height: 600 * a, background: `linear-gradient(180deg, ${W.rojo}, #8E2620)` }} />
         <div style={{ position: "absolute", left: 1160, bottom: 220, width: 360, height: 60 * a, background: `linear-gradient(180deg, ${W.ok}, #2F6A37)` }} />
         <div style={{ position: "absolute", left: 300, bottom: 240 + 600 * a, width: 360, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 84, color: "#FFB4A6" }}>$20–50</div>
-        <div style={{ position: "absolute", left: 1160, bottom: 300 * a + 0, width: 360, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 84, color: "#9EE0A6", transform: "translateY(-80px)" }}>minutos</div>
+        <div style={{ position: "absolute", left: 1160, bottom: 300, width: 360, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 84, color: "#9EE0A6", opacity: a }}>minutos</div>
         <div style={{ position: "absolute", left: 300, bottom: 110, width: 360, textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 58, color: "#FFF8EE" }}>que venga alguien</div>
         <div style={{ position: "absolute", left: 1160, bottom: 110, width: 360, textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 58, color: "#FFF8EE" }}>el trabajo</div>
       </AbsoluteFill>);
@@ -889,14 +911,14 @@ export const ProgD: React.FC<{ n: number; N: number; title: string; dur: number 
 export const QrD: React.FC<{ qr: string; cover: string; dur: number }> = ({ qr, cover, dur }) => {
   const f = useCurrentFrame(); const p = sp(f, 0, 13);
   return (
-    <div style={{ position: "absolute", right: 70, top: 150, width: 660, opacity: out(f, dur, 10), transform: `translateX(${(1 - p) * 760}px) rotate(${(1 - p) * 8 + 1}deg)` }}>
-      <div style={{ background: "linear-gradient(170deg,#F4EFE6,#E1D9C9)", padding: "40px 30px 28px", boxShadow: "0 30px 60px rgba(0,0,0,0.55)", position: "relative" }}>
-        {[[14, 14], [610, 14], [14, 560], [610, 560]].map(([x, y], i) => <div key={i} style={{ position: "absolute", left: x, top: y, width: 26, height: 26, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #8A8A8A, #262626)" }} />)}
-        <div style={{ display: "flex", gap: 24, alignItems: "center" }}>
-          <Img src={staticFile(cover)} style={{ width: 230, height: 310, objectFit: "cover", boxShadow: "0 10px 20px rgba(0,0,0,0.35)" }} />
-          <Img src={staticFile(qr)} style={{ width: 300, height: 300, background: "#fff", padding: 10 }} />
+    <div style={{ position: "absolute", right: 60, bottom: 60, width: 700, opacity: out(f, dur, 6), transform: `translateX(${(1 - p) * 800}px) rotate(${(1 - p) * 8 + 1}deg)` }}>
+      <div style={{ background: "linear-gradient(170deg,#F4EFE6,#E1D9C9)", padding: "34px 30px 22px", boxShadow: "0 30px 60px rgba(0,0,0,0.55)", position: "relative" }}>
+        {[[12, 12], [662, 12], [12, 392], [662, 392]].map(([x, y], i) => <div key={i} style={{ position: "absolute", left: x, top: y, width: 22, height: 22, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #8A8A8A, #262626)" }} />)}
+        <div style={{ display: "flex", gap: 22, alignItems: "center" }}>
+          <Img src={staticFile(cover)} style={{ width: 380, height: 212, objectFit: "cover", objectPosition: "50% 30%", boxShadow: "0 10px 20px rgba(0,0,0,0.35)" }} />
+          <Img src={staticFile(qr)} style={{ width: 236, height: 236, background: "#fff", padding: 8 }} />
         </div>
-        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 46, color: W.ink, marginTop: 18, textAlign: "center" }}>constructorlibre.com</div>
+        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 48, color: W.ink, marginTop: 14, textAlign: "center" }}>constructorlibre.com</div>
         <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 44, color: "#8E3B12", textAlign: "center" }}>las láminas de los 12 métodos</div>
       </div>
     </div>
