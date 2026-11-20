@@ -210,7 +210,8 @@ export const KraftWipe: React.FC<{ dir: number; len?: number }> = ({ dir, len = 
 // apertura de cada técnica: el papel pasa, la foto del corte llena la pantalla, el número se sella y el título se escribe
 export const TechScene: React.FC<{ n: number; label: string; title: string; src: string; dur: number; total?: number; num?: string }> = ({ n, label, title, src, dur, total = 10, num }) => {
   const f = useCurrentFrame();
-  const k = cl(f / Math.max(1, dur), 0, 1); const z = lerp(1.04, 1.13, k); const px = lerp(n % 2 ? 1.5 : -1.5, n % 2 ? -1.5 : 1.5, k);
+  const k = Easing.bezier(0.25, 0.1, 0.25, 1)(cl(f / Math.max(1, dur), 0, 1)); const z = lerp(1.0, 1.2, k); const px = lerp(n % 2 ? 2.5 : -2.5, n % 2 ? -2.5 : 2.5, k) + Math.sin(k * Math.PI) * 1.2; const py = -Math.sin(k * Math.PI) * 1.4;
+  const wipe = interpolate(f, [3, 16], [0, 100], CL); const sweep = interpolate(f, [0, 22], [-40, 140], CL); const outC = interpolate(f, [dur - 12, dur - 2], [0, 1], CL);
   const p = spring({ frame: f - 2, fps: 30, config: { damping: 16, mass: 0.8 } });
   const nb = spring({ frame: f - 6, fps: 30, config: { damping: 11, mass: 0.7 } });
   const t = title.replace(/\s+[–-]\s+/g, ": ");
@@ -219,11 +220,12 @@ export const TechScene: React.FC<{ n: number; label: string; title: string; src:
   return (
     <AbsoluteFill style={{ opacity: fadeOut(f, dur, 8) }}>
       <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
-        <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `translateX(${px}%) scale(${z})` }} />
+        <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `translate(${px}%, ${py}%) scale(${z})` }} />
+        <AbsoluteFill style={{ background: `linear-gradient(105deg, rgba(255,236,200,0) ${sweep - 18}%, rgba(255,236,200,0.22) ${sweep}%, rgba(255,236,200,0) ${sweep + 18}%)`, mixBlendMode: "screen" }} />
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(10,7,5,0.55) 0%, rgba(10,7,5,0) 34%)" }} />
-      <div style={{ position: "absolute", left: 80, bottom: 80, ...kraftBg(n), display: "flex", alignItems: "center", gap: 34, padding: "22px 54px 24px 34px", borderRadius: 6, boxShadow: "0 24px 60px rgba(0,0,0,0.55)", transform: `translateY(${(1 - p) * 140}px) rotate(-1deg)`, opacity: cl(p * 1.5, 0, 1), whiteSpace: "nowrap" }}>
-        <div style={{ fontFamily: SLAB, fontSize: 170, lineHeight: 0.9, color: K.red, transform: `scale(${lerp(1.5, 1, nb)})`, opacity: cl(nb * 1.5, 0, 1) }}>{num ?? (n > total ? "+" : String(n))}</div>
+      <div style={{ position: "absolute", left: 80, bottom: 80, ...kraftBg(n), display: "flex", alignItems: "center", gap: 34, padding: "16px 42px 18px 26px", borderRadius: 6, boxShadow: "0 24px 60px rgba(0,0,0,0.55)", transform: `translate(${(1 - p) * -90 - outC * 60}px, ${(1 - p) * 30}px) rotate(${lerp(-4, -1, p)}deg) scale(0.86)`, transformOrigin: "0% 100%", clipPath: `inset(0 ${100 - wipe}% 0 0)`, opacity: cl(p * 1.5, 0, 1) * (1 - outC), whiteSpace: "nowrap" }}>
+        <div style={{ fontFamily: SLAB, fontSize: 150, lineHeight: 0.9, color: K.red, transform: `scale(${lerp(1.5, 1, nb)})`, opacity: cl(nb * 1.5, 0, 1) }}>{num ?? (n > total ? "+" : String(n))}</div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 36, letterSpacing: 6, color: K.redD }}>{lb}</div>
           <div style={{ fontFamily: SERIF, fontSize: fs, lineHeight: 1.02, color: K.ink }}>{t}</div>
@@ -259,7 +261,7 @@ export const Carousel: React.FC<{ cards: TCard[]; bg: string; head: string; sub:
     <AbsoluteFill style={{ opacity: fadeOut(f, dur, 12) }}>
       <DarkPhoto src={bg} dur={dur} dark={0.62} />
       <div style={{ position: "absolute", top: 54, width: "100%", textAlign: "center", opacity: pIn, transform: `translateY(${(1 - pIn) * -40}px)` }}>
-        <div style={{ fontFamily: SLAB, fontSize: 86, color: K.chalk, textShadow: SH, lineHeight: 1 }}><span style={{ color: K.gold }}>{N}</span> {head}</div>
+        <div style={{ fontFamily: SLAB, fontSize: 80, color: K.chalk, textShadow: SH, lineHeight: 1, padding: "0 80px" }}><span style={{ color: K.gold }}>{N}</span> {head}</div>
         <div style={{ ...chalkTxt, fontSize: 72, marginTop: 10, textShadow: SH, opacity: interpolate(f, [subAt, subAt + 10], [0, 1], CL) }}>{sub}</div>
       </div>
       <AbsoluteFill style={{ perspective: 2200, perspectiveOrigin: "50% 40%", transformOrigin: "50% 52%", transform: `scale(${lerp(1.3, 0.8, fanT)})` }}>
@@ -290,16 +292,15 @@ export const Recap: React.FC<{ cards: TCard[]; items: { f: number; lines: string
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: K.ink }}>
       <AbsoluteFill key={"p" + cur} style={{ opacity: cl(lf / 8, 0, 1) }}>
-        <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${lerp(1.04, 1.12, k)})` }} />
+        <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `translate(${(cur % 2 ? -1 : 1) * lerp(1.5, -1.5, k)}%, ${-Math.sin(k * Math.PI)}%) scale(${lerp(1.02, 1.16, Easing.bezier(0.3, 0.05, 0.3, 1)(k))})` }} />
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(12,8,6,0.94) 0%, rgba(12,8,6,0.75) 34%, rgba(12,8,6,0) 60%)" }} />
-      <div style={{ position: "absolute", left: 70, top: 56, fontFamily: SANS, fontWeight: 800, fontSize: 40, letterSpacing: 6, color: K.gold, textShadow: SH }}>RESUMEN · LOS {cards.length} PASOS</div>
       {cur >= 0 && (
         <div key={cur} style={{ position: "absolute", left: 70, right: 70, bottom: 70, display: "flex", gap: 44, alignItems: "flex-end" }}>
-          <div style={{ fontFamily: SLAB, fontSize: 260, color: K.gold, lineHeight: 0.85, textShadow: SH, opacity: cl(lf / 6, 0, 1) }}>{cards[cur].n}</div>
+          <div style={{ fontFamily: SLAB, fontSize: 260, color: K.gold, lineHeight: 0.85, textShadow: SH, opacity: cl(lf / 4, 0, 1), transformOrigin: "50% 100%", transform: `translateY(${(1 - spring({ frame: lf, fps: 30, config: { damping: 12, mass: 0.9 } })) * 160}px) scale(${lerp(1.25, 1, spring({ frame: lf, fps: 30, config: { damping: 12, mass: 0.9 } }))})` }}>{cards[cur].n}</div>
           <div style={{ paddingBottom: 18 }}>
-            <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 96, color: "#FFFFFF", lineHeight: 1, textShadow: SH, whiteSpace: "nowrap", opacity: cl((lf - 3) / 8, 0, 1) }}>{cards[cur].title}</div>
-            {items[cur].lines.map((l, j) => <div key={j} style={{ fontFamily: SANS, fontWeight: 700, fontSize: 58, color: "#F3E6CC", marginTop: 10, textShadow: SH, whiteSpace: "nowrap", opacity: cl((lf - 10 - j * 8) / 8, 0, 1) }}>{l}</div>)}
+            <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 96, color: "#FFFFFF", lineHeight: 1, textShadow: SH, whiteSpace: "nowrap", opacity: cl((lf - 3) / 8, 0, 1), transform: `translateX(${(1 - cl((lf - 3) / 10, 0, 1)) * 40}px)` }}>{cards[cur].title}</div>
+            {items[cur].lines.map((l, j) => <div key={j} style={{ fontFamily: SANS, fontWeight: 700, fontSize: 58, color: "#F3E6CC", marginTop: 10, textShadow: SH, whiteSpace: "nowrap", opacity: cl((lf - 10 - j * 8) / 8, 0, 1) }}>{l.replace(/^\d+\s*·\s*/, "")}</div>)}
           </div>
         </div>
       )}

@@ -10,15 +10,15 @@ export const useKB = (seed: number, dur: number, clip = false) => {
   const f = useCurrentFrame();
   const out = (hash(seed) % 2) === 1;
   const sec = dur / 30;
-  const rate = clip ? 0.006 + r01(seed, 1) * 0.008 : 0.018 + r01(seed, 1) * 0.022; // %/s
-  const amp = Math.min(clip ? 0.08 : 0.2, rate * sec);
+  const rate = clip ? 0.006 + r01(seed, 1) * 0.008 : 0.03 + r01(seed, 1) * 0.025; // %/s (v2: la foto se mueve desde el cuadro 1)
+  const amp = clip ? Math.min(0.08, rate * sec) : Math.min(0.22, Math.max(0.08, rate * sec));
   const zBase = 1.06;
-  const t = Easing.inOut(Easing.sin)(Math.min(1, Math.max(0, f / Math.max(1, dur))));
+  const t = (clip ? Easing.inOut(Easing.sin) : Easing.bezier(0.3, 0.05, 0.3, 1))(Math.min(1, Math.max(0, f / Math.max(1, dur))));
   const k = out ? 1 - t : t;
   const z = zBase + amp * k;
   const ox = 35 + r01(seed, 2) * 30, oy = 35 + r01(seed, 3) * 30;
   const ang = r01(seed, 4) * Math.PI * 2;
-  const tx = Math.cos(ang) * 2 * k, ty = Math.sin(ang) * 1.2 * k;
+  const tx = Math.cos(ang) * 2.4 * k + (clip ? 0 : Math.sin(k * Math.PI) * 0.9), ty = Math.sin(ang) * 1.4 * k;
   return { transform: `translate(${tx}%, ${ty}%) scale(${z})`, transformOrigin: `${ox}% ${oy}%` } as React.CSSProperties;
 };
 

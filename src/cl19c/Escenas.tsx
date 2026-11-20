@@ -88,7 +88,7 @@ export const Mistakes: React.FC<{ items: { f: number; title: string; src: string
                 <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 42, letterSpacing: 9, color: K.red }}>ERROR</div>
                 <div style={{ fontFamily: SLAB, fontSize: 220, color: K.red, lineHeight: 0.9 }}>{it.n}</div>
               </div>
-              <div style={{ fontFamily: SLAB, fontSize: 110, color: K.chalk, textShadow: SH, lineHeight: 1, maxWidth: 1100, clipPath: `inset(-35% ${100 - cl((lf - 14) / 14, 0, 1) * 100}% -25% 0)` }}>{it.title}</div>
+              <div style={{ fontFamily: SLAB, fontSize: 110, color: K.chalk, textShadow: SH, lineHeight: 1, maxWidth: 1100, clipPath: `inset(-35% ${100 - cl((lf - 8) / 8, 0, 1) * 100}% -25% 0)` }}>{it.title}</div>
             </div>
           </AbsoluteFill>
         );
