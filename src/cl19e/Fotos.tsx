@@ -35,7 +35,7 @@ export const Poros: React.FC = () => {
               {/* el bloque vuelve a su luz real */}
               <Img src={P("g2070")} style={{ ...full, clipPath: cp, opacity: Math.min(1, g * 1.4), filter: "brightness(0.9)" }} />
               {/* sus agujeros reales dejan pasar luz: lo oscuro de los poros se invierte en luz cálida */}
-              <Img src={P("g2070")} style={{ ...full, clipPath: cp, mixBlendMode: "screen", opacity: g, filter: "invert(1) contrast(3.2) brightness(0.85) sepia(1) saturate(4) hue-rotate(-12deg)" }} />
+              <Img src={P("g2070")} style={{ ...full, clipPath: cp, mixBlendMode: "screen", opacity: 0.32 * g, filter: "invert(1) contrast(1.6) brightness(0.7) sepia(0.6) saturate(1.3)" }} />
             </React.Fragment>
           );
         })}
@@ -115,7 +115,7 @@ export const BaldeRayas: React.FC = () => {
         )}
         {/* las rayas reales quedan por encima de la mezcla: se ven a través, como marcadas en el plástico */}
         {NIVELES.map(([, , ly], i) => (
-          <Img key={i} src={P("e_balde3b")} style={{ ...full, clipPath: `inset(${ly - 30}px 820px ${1080 - ly - 30}px 660px)`, mixBlendMode: "multiply", opacity: y < ly + 20 ? 0.85 : 0 }} />
+          <Img key={i} src={P("e_balde3b")} style={{ ...full, clipPath: `inset(${ly - 30}px 820px ${1080 - ly - 30}px 660px)`, mixBlendMode: "darken", opacity: y < ly + 20 ? 1 : 0 }} />
         ))}
       </AbsoluteFill>
     </AbsoluteFill>
