@@ -20,7 +20,7 @@ const kb = (i: number, t: number, a: number, b: number, k = 1): React.CSSPropert
 const Plano: React.FC<{ i: number; t: number }> = ({ i, t }) => {
   const q = D.shots[i], d = q.e - q.s;
   if (q.k === "A") { // avatar a cuadro completo, empuje lento + punch-in 110 % en los largos
-    let z = 1.01 + Math.min(0.05, 0.018 + 0.004 * d) * cl((t - q.s) / (d + TR));
+    let z = (q.cz ? 1.14 : 1.01) + Math.min(0.05, 0.018 + 0.004 * d) * cl((t - q.s) / (d + TR));   // cz = segundo encuadre (cerrado) del mismo tramo de avatar
     for (const m of q.mods || []) { const w = e(t, m.a, m.a + 0.18) * (1 - e(t, m.b - 0.3, m.b)); if (m.k === "punch") z *= 1 + 0.1 * w; }
     return <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
       <OffthreadVideo src={staticFile(P + "reel0.mp4")} startFrom={s(q.off || 0)} muted style={{ width: "100%", height: "100%", objectFit: "cover", transformOrigin: "50% 32%", transform: `scale(${z})` }} />
