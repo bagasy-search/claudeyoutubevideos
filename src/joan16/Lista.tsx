@@ -27,11 +27,11 @@ export const Bg: React.FC<{ src: string; blur?: number; dark?: number; z?: numbe
 export const ChapterOpen: React.FC<{ n: number; total: number; title: string; src: string; dur: number }> = ({ n, total, title, src, dur }) => {
   const f = useCurrentFrame();
   const right = n % 2 === 0;
-  const o = interpolate(f, [dur - 10, dur], [1, 0], CL);
+  const o = 1;
   const k = cl(f / dur, 0, 1);
   const z = lerp(1.18, 1.04, Easing.out(Easing.cubic)(k));
-  const draw = interpolate(f, [10, 34], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
-  const fill = interpolate(f, [30, 42], [0, 1], CL);
+  const draw = interpolate(f, [4, 22], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
+  const fill = interpolate(f, [12, 24], [0, 1], CL);
   const strike = interpolate(f, [Math.min(dur - 14, 52), Math.min(dur - 4, 66)], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
   const words = title.split(" ");
   const side: React.CSSProperties = right ? { right: 110, alignItems: "flex-end" } : { left: 110, alignItems: "flex-start" };
@@ -80,13 +80,28 @@ export const PhotoCard: React.FC<{ n: number; title: string; src: string; w: num
 );
 
 // recap de 9 en grilla 5 + 4: cada tarjeta se enciende y se tilda cuando Joan la nombra
-export const Recap9: React.FC<{ items: { f: number }[]; cards: Card[]; bg: string; head: string; dur: number }> = ({ items, cards, bg, head }) => {
+export const Recap9: React.FC<{ items: { f: number }[]; cards: Card[]; bg: string; head: string; dur: number }> = ({ items, cards, bg, head, dur }) => {
   const f = useCurrentFrame();
   const p = spring({ frame: f, fps: 30, config: { damping: 20 } });
   const W = 300;
+  const ctr = (i: number) => { const row = i < 5 ? 0 : 1, col = row ? i - 5 : i, n = row ? 4 : 5; const x0 = (1920 - (n * W + (n - 1) * 40)) / 2; return [x0 + col * (W + 40) + W / 2, 170 + row * 430 + W * 0.45]; };
+  const lastF = Math.max(...items.map((x) => x.f).filter((x) => x < dur), 0);
+  let cur = -1; items.forEach((it, i) => { if (f >= it.f) cur = i; });
+  const ease = { fps: 30, config: { damping: 26, mass: 1.4 } };
+  let cx = 960, cy = 540, sc = 1;
+  if (cur >= 0) {
+    const t = spring({ frame: f - items[cur].f, ...ease });
+    const [px, py] = cur > 0 ? ctr(cur - 1) : [960, 540]; const [qx, qy] = ctr(cur);
+    cx = lerp(px, qx, t); cy = lerp(py, qy, t); sc = cur > 0 ? 1.55 : lerp(1, 1.55, t);
+    const back = spring({ frame: f - (lastF + 75), ...ease });
+    if (f > lastF + 75) { cx = lerp(cx, 960, back); cy = lerp(cy, 540, back); sc = lerp(sc, 1.04, back); }
+  }
+  cx += Math.sin(f / 70) * 10; cy += Math.cos(f / 85) * 7;
+  const tx = 960 - cx * sc, ty = 540 - cy * sc;
   return (
     <AbsoluteFill>
-      <Bg src={bg} blur={22} dark={0.5} />
+      <Bg src={bg} blur={22} dark={0.5} z={1 + 0.06 * Math.sin(f / 120)} />
+      <AbsoluteFill style={{ transform: `translate(${tx}px, ${ty}px) scale(${sc})`, transformOrigin: "0 0" }}>
       <div style={{ position: "absolute", top: 40, width: "100%", textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 68, color: C.white, textShadow: shadow, opacity: p }}>
         <span style={{ color: AMBER }}>{cards.length}</span> {head}
       </div>
@@ -104,6 +119,7 @@ export const Recap9: React.FC<{ items: { f: number }[]; cards: Card[]; bg: strin
           </div>
         );
       })}
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -112,7 +128,7 @@ export const Recap9: React.FC<{ items: { f: number }[]; cards: Card[]; bg: strin
 export const Reloj: React.FC<{ label: string; sub: string; unit: "h" | "min"; amount: number; bg: string; dur: number }> = ({ label, sub, unit, amount, bg, dur }) => {
   const f = useCurrentFrame();
   const p = spring({ frame: f, fps: 30, config: { damping: 18 } });
-  const o = interpolate(f, [dur - 10, dur], [1, 0], CL);
+  const o = 1;
   const run = interpolate(f, [12, dur - 16], [0, 1], { ...CL, easing: Easing.inOut(Easing.cubic) });
   const ang = run * 360 * (unit === "h" ? 1 : amount / 60) ;
   const shown = Math.round(run * amount);
