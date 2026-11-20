@@ -56,7 +56,7 @@ cl19b/g/g0840.png
 cl19b/y/y880.mp4
 cl19b/y/y890.mp4
 cl19b/g/g0910.png
-cl19b/y/y930.mp4
+cl19b/g/g0930.png
 cl19b/y/y940.mp4
 cl19b/y/y960.mp4
 cl19b/g/g0970.png
