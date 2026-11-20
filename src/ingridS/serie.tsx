@@ -105,13 +105,12 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
   const zoom = 1.06 + 0.07 * cl(k / (dur + 0.4)), foto = <Img src={src(it.f)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${zoom})`, transformOrigin: `${der ? 35 : 65}% 45%` }} />;
   const lado: React.CSSProperties = der ? { right: 130, alignItems: "flex-end", textAlign: "right" } : { left: 130, alignItems: "flex-start" };
   const titulo = <div style={{ position: "absolute", top: 200, width: 900, display: "flex", flexDirection: "column", ...lado }}>
-    <div style={{ ...cap, fontSize: 26, color: "#E6DCC9", textShadow: sombra, opacity: eo(t, a + 0.3, 0.4) }}>{D.item_rotulo || "secret"} · No. {it.n}</div>
     <svg width="560" height="300" viewBox="0 0 560 300" style={{ overflow: "visible" }}>
       <text x={der ? 560 : 0} y="262" textAnchor={der ? "end" : "start"} fontFamily={SERIF} fontSize="300" fill={`rgba(255,252,245,${eo(t, a + 1.1, 0.4)})`} stroke="#FFFCF5" strokeWidth={3}
         strokeDasharray={1600} strokeDashoffset={1600 * (1 - eo(t, a + 0.35, 0.9))}>{it.n}</text>
     </svg>
     <Palabras t={t} at={a + 0.9} txt={it.t} gap={0.14} style={{ fontFamily: SERIF, fontSize: 84, color: "#FFFCF5", textShadow: sombra, lineHeight: 1.08, justifyContent: der ? "flex-end" : "flex-start", maxWidth: 900 }} />
-    {it.sub && <div style={{ fontFamily: HAND, fontSize: 46, color: "#E6DCC9", textShadow: sombra, marginTop: 12, opacity: eo(t, a + 1.6, 0.5) }}>{it.sub}</div>}
+    {it.sub && <div style={{ fontFamily: HAND, fontSize: 60, color: "#E6DCC9", textShadow: sombra, marginTop: 12, opacity: eo(t, a + 1.6, 0.5) }}>{it.sub}</div>}
     <div style={{ height: 4, background: C.bamboo, marginTop: 16, width: 260 * eo(t, a + 1.4, 0.5) }} />
   </div>;
   const velo = <AbsoluteFill style={{ background: `linear-gradient(${der ? 270 : 90}deg, rgba(16,12,8,.86) 0%, rgba(16,12,8,.42) 45%, rgba(16,12,8,0) 72%)` }} />;
@@ -127,10 +126,10 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
     </AbsoluteFill>;
   }
   if (modo === 1) { // la cinta métrica amarilla cruza la pantalla y abre la foto en una franja, después entera
-    const p = eo(t, a + 0.05, 0.7), q = eo(t, a + 0.8, 0.6);
+    const p = eo(t, a + 0.0, 0.45), q = eo(t, a + 0.45, 0.55);
     return <AbsoluteFill style={{ background: C.washi }}><Washi />
-      <AbsoluteFill style={{ clipPath: `inset(${lerp(40, 0, q)}% ${lerp(100 - p * 100, 0, q)}% ${lerp(40, 0, q)}% 0)` }}>{foto}{velo}</AbsoluteFill>
-      <div style={{ position: "absolute", left: 0, top: `calc(${lerp(40, -4, q)}% - 46px)`, width: `${p * 100}%`, height: 40, opacity: 1 - q, backgroundColor: "#D8C9B4", boxShadow: "0 4px 12px rgba(0,0,0,.3)",
+      <AbsoluteFill style={{ clipPath: `inset(${lerp(28, 0, q)}% ${lerp(100 - p * 100, 0, q)}% ${lerp(28, 0, q)}% 0)` }}>{foto}{velo}</AbsoluteFill>
+      <div style={{ position: "absolute", left: 0, top: `calc(${lerp(28, -4, q)}% - 46px)`, width: `${p * 100}%`, height: 40, opacity: 1 - q, backgroundColor: "#D8C9B4", boxShadow: "0 4px 12px rgba(0,0,0,.3)",
         backgroundImage: "repeating-linear-gradient(90deg, rgba(31,27,23,.85) 0 2px, transparent 2px 19px)", backgroundSize: "19px 14px", backgroundRepeat: "repeat-x", backgroundPosition: "0 100%" }} />
       {titulo}
     </AbsoluteFill>;

@@ -35,7 +35,7 @@ const Plano: React.FC<{ i: number; t: number }> = ({ i, t }) => {
     </AbsoluteFill>;
   }
   if (q.k === "S") { const X = ESCENAS[q.sc as string], el = <X t={t} a={q.s} b={q.e} arg={q.arg} />;
-    if (q.sc === "carrusel" || q.sc === "repaso") { const k = t - q.s; return <AbsoluteFill style={{ transform: `scale(${1 + 0.004 * k}) translateX(${Math.sin(k * 0.45) * 8}px)` }}>{el}</AbsoluteFill>; } // deriva lenta: sin cuadros congelados
+    if (q.sc === "carrusel" || q.sc === "repaso") { const k = t - q.s; return <AbsoluteFill style={{ transform: `scale(${1 + Math.min(0.04, 0.004 * k)}) translateX(${Math.sin(k * 0.45) * 8}px)` }}>{el}</AbsoluteFill>; } // deriva lenta: sin cuadros congelados
     return el; }
   if (q.f && q.f.endsWith(".mp4")) { // clip (Veo o real) ENTERO: llena el plano, nunca se congela; si es corto corre más lento (piso 0,42)
     const need = d + TR + 0.1, rate = q.len && q.len < need ? Math.max(0.42, q.len / need) : 1;
