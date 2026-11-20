@@ -27,7 +27,7 @@ const Ficha: React.FC<{ i: number; w: number; dim?: number; check?: number; t?: 
   return <div style={{ width: w, ...papel, padding: w * 0.035, paddingBottom: w * 0.03, borderRadius: 3, position: "relative" }}>
     <div style={{ width: "100%", height: w * 0.64, overflow: "hidden", position: "relative", background: C.sumi }}>
       <Img src={src(it.f)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: `grayscale(${dim}) brightness(${1 - dim * 0.35})` }} />
-      <div style={{ position: "absolute", left: w * 0.035, top: w * 0.035, width: w * 0.17, height: w * 0.17, borderRadius: "50%", background: C.hanko, border: `${Math.max(2, w * 0.008)}px solid #f1d9a8`,
+      <div style={{ position: "absolute", left: w * 0.035, top: w * 0.035, width: w * 0.17, height: w * 0.17, borderRadius: "50%", background: C.hanko, border: `${Math.max(2, w * 0.008)}px solid #F9D3DE`,
         color: "#FFFCF5", fontFamily: SERIF, fontWeight: 500, fontSize: w * 0.092, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 2px 8px rgba(0,0,0,.4)" }}>{it.n}</div>
     </div>
     <div style={{ display: "flex", alignItems: "baseline", gap: w * 0.035, marginTop: w * 0.04, minHeight: w * 0.2 }}>
@@ -49,7 +49,7 @@ export const Carrusel: React.FC<SP> = ({ t, a, b }) => {
     <Desenfoque f={D.bg} />
     <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, rgba(20,14,8,0) 30%, rgba(20,14,8,.55) 100%)" }} />
     <div style={{ position: "absolute", top: 58, width: "100%", textAlign: "center", opacity: eo(t, a, 0.6), transform: `translateY(${(1 - eo(t, a, 0.6)) * -30}px)` }}>
-      <div style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: 34, color: "#f1d9a8", textShadow: sombra }}>{D.lista_sub || "Busan, Korea."}</div>
+      <div style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: 34, color: "#F9D3DE", textShadow: sombra }}>{D.lista_sub || "Busan, Korea."}</div>
       <div style={{ fontFamily: SERIF, fontSize: 92, color: "#FFFCF5", textShadow: sombra, lineHeight: 1.05, marginTop: 8 }}>{D.lista_titulo}</div>
     </div>
     <AbsoluteFill style={{ perspective: 2200, perspectiveOrigin: "50% 42%" }}>
@@ -105,13 +105,13 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
   const zoom = 1.06 + 0.07 * cl(k / (dur + 0.4)), foto = <Img src={src(it.f)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${zoom})`, transformOrigin: `${der ? 35 : 65}% 45%` }} />;
   const lado: React.CSSProperties = der ? { right: 130, alignItems: "flex-end", textAlign: "right" } : { left: 130, alignItems: "flex-start" };
   const titulo = <div style={{ position: "absolute", top: 200, width: 900, display: "flex", flexDirection: "column", ...lado }}>
-    <div style={{ ...cap, fontSize: 26, color: "#f1d9a8", textShadow: sombra, opacity: eo(t, a + 0.3, 0.4) }}>{D.item_rotulo || "secret"} · No. {it.n}</div>
+    <div style={{ ...cap, fontSize: 26, color: "#F9D3DE", textShadow: sombra, opacity: eo(t, a + 0.3, 0.4) }}>{D.item_rotulo || "secret"} · No. {it.n}</div>
     <svg width="560" height="300" viewBox="0 0 560 300" style={{ overflow: "visible" }}>
       <text x={der ? 560 : 0} y="262" textAnchor={der ? "end" : "start"} fontFamily={SERIF} fontSize="300" fill={`rgba(255,252,245,${eo(t, a + 1.1, 0.4)})`} stroke="#FFFCF5" strokeWidth={3}
         strokeDasharray={1600} strokeDashoffset={1600 * (1 - eo(t, a + 0.35, 0.9))}>{it.n}</text>
     </svg>
     <Palabras t={t} at={a + 0.9} txt={it.t} gap={0.14} style={{ fontFamily: SERIF, fontSize: 84, color: "#FFFCF5", textShadow: sombra, lineHeight: 1.08, justifyContent: der ? "flex-end" : "flex-start", maxWidth: 900 }} />
-    {it.sub && <div style={{ fontFamily: HAND, fontSize: 46, color: "#f1d9a8", textShadow: sombra, marginTop: 12, opacity: eo(t, a + 1.6, 0.5) }}>{it.sub}</div>}
+    {it.sub && <div style={{ fontFamily: HAND, fontSize: 46, color: "#F9D3DE", textShadow: sombra, marginTop: 12, opacity: eo(t, a + 1.6, 0.5) }}>{it.sub}</div>}
     <div style={{ height: 4, background: C.bamboo, marginTop: 16, width: 260 * eo(t, a + 1.4, 0.5) }} />
   </div>;
   const velo = <AbsoluteFill style={{ background: `linear-gradient(${der ? 270 : 90}deg, rgba(16,12,8,.86) 0%, rgba(16,12,8,.42) 45%, rgba(16,12,8,0) 72%)` }} />;
@@ -209,7 +209,7 @@ export const Album: React.FC<SP> = ({ t, a, b, arg }) => {
 export const Prog: React.FC<OP> = ({ t, a, b, n }) => {
   const o = eo(t, a, 0.3) * sale(t, b, 0.3), tot = N();
   return <div style={{ position: "absolute", right: 60, top: 52, opacity: o, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 10, textShadow: sombra }}>
-    <div style={{ ...cap, fontSize: 19, color: "#FFFCF5", letterSpacing: "0.22em" }}><span style={{ color: "#f1d9a8" }}>{String(n).padStart(2, "0")}</span> / {String(tot).padStart(2, "0")} · {D.items[n - 1]?.t.toUpperCase()}</div>
+    <div style={{ ...cap, fontSize: 19, color: "#FFFCF5", letterSpacing: "0.22em" }}><span style={{ color: "#F9D3DE" }}>{String(n).padStart(2, "0")}</span> / {String(tot).padStart(2, "0")} · {D.items[n - 1]?.t.toUpperCase()}</div>
     <div style={{ display: "flex", gap: 7 }}>{D.items.map((_, i) => <div key={i} style={{ width: 24, height: 5, borderRadius: 3, background: i < n ? C.hanko : "rgba(251,248,241,.45)", boxShadow: "0 1px 4px rgba(0,0,0,.4)" }} />)}</div>
   </div>;
 };
@@ -242,7 +242,7 @@ export const Palabra: React.FC<OP> = ({ t, a, b, kan, rom, sig, lado }) => {
   return <div style={{ position: "absolute", top: 110, [der ? "right" : "left"]: 110, display: "flex", flexDirection: "column", alignItems: der ? "flex-end" : "flex-start", opacity: p, color: "#FFFCF5", textShadow: sombra }}>
     <div style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 150, lineHeight: 1.05, clipPath: `inset(0 ${der ? 0 : w}% 0 ${der ? w : 0}%)` }}>{kan}</div>
     <div style={{ fontFamily: SERIF, fontSize: 54, fontStyle: "italic", marginTop: 6 }}>{rom}</div>
-    <div style={{ width: 110 * eo(t, a + 0.4, 0.4), height: 3, background: "#f1d9a8", margin: "14px 0" }} />
+    <div style={{ width: 110 * eo(t, a + 0.4, 0.4), height: 3, background: "#F9D3DE", margin: "14px 0" }} />
     <div style={{ ...cap, fontSize: 24, maxWidth: 640, textAlign: der ? "right" : "left" }}>{sig}</div>
   </div>;
 };
@@ -273,7 +273,7 @@ export const Cta: React.FC<OP> = ({ t, a, b, txt }) => {
   return <AbsoluteFill style={{ opacity: p }}>
     <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(16,12,8,.75) 0%, rgba(16,12,8,0) 42%)" }} />
     <div style={{ position: "absolute", left: 0, right: 0, bottom: 224, textAlign: "center" }}>
-      <div style={{ ...cap, fontSize: 22, color: "#f1d9a8", textShadow: sombra }}>tell me below</div>
+      <div style={{ ...cap, fontSize: 22, color: "#F9D3DE", textShadow: sombra }}>tell me below</div>
       <Palabras t={t} at={a + 0.3} txt={txt} gap={0.08} style={{ fontFamily: SERIF, fontSize: 60, color: "#FFFCF5", textShadow: sombra, justifyContent: "center", marginTop: 10 }} />
     </div>
     <div style={{ position: "absolute", left: 0, right: 0, bottom: 52, display: "flex", justifyContent: "center", gap: 14 }}>

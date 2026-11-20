@@ -55,7 +55,7 @@ export const Lower: React.FC<OP> = ({ t, a, b, name, sub }) => {
 export const Chip: React.FC<OP> = ({ t, a, b, kan, txt }) => {
   const p = eo(t, a + 0.15, 0.45) * sale(t, b);
   return <div style={{ position: "absolute", left: 84, top: 76, opacity: p, color: "#FFFCF5", textShadow: "0 3px 22px rgba(0,0,0,.75), 0 1px 2px rgba(0,0,0,.7)" }}>
-    <div style={{ width: 70 * eo(t, a + 0.3, 0.4), height: 3, background: "#f1d9a8", marginBottom: 14 }} />
+    <div style={{ width: 70 * eo(t, a + 0.3, 0.4), height: 3, background: "#F9D3DE", marginBottom: 14 }} />
     <div style={{ ...cap, fontSize: 25 }}>{txt}</div>
     {kan && <div style={{ fontFamily: HAND, fontSize: 44, marginTop: 4, opacity: eo(t, a + 0.5, 0.4) }}>{kan}</div>}
   </div>;
