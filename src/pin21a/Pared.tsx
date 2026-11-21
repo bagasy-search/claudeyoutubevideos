@@ -120,7 +120,7 @@ export const MapaRecap: React.FC<{ items: string[]; marks: number[]; bg: string;
         background: `repeating-linear-gradient(0deg, transparent 0 58px, ${PW.line} 58px 60px), ${PW.paper}`,
         transform: `translate(${camX}px, ${(1 - inn) * 1000 + camY}px) scale(${camS}) rotate(${camR}deg)`, boxShadow: "0 40px 80px rgba(0,0,0,0.55)" }}>
         <div style={{ position: "absolute", left: 90, top: 0, bottom: 0, width: 3, background: "rgba(201,48,44,0.5)" }} />
-        <div style={{ position: "absolute", left: 120, top: 22, fontFamily: HAND, fontWeight: 700, fontSize: 56, color: PW.pencil }}>Antes de agujerear</div>
+        <div style={{ position: "absolute", left: 120, top: 22, fontFamily: HAND, fontWeight: 700, fontSize: 56, color: PW.pencil }}>Rígido o flexible</div>
         {items.map((t, i) => {
           const on = f >= marks[i];
           const k = on ? interpolate(f - marks[i], [0, 8], [0, 1], K) : 0;
