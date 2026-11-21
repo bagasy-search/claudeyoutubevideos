@@ -238,7 +238,9 @@ export const Dato: React.FC<OP> = ({ t, a, b, txt, fuente }) => {
 // dinero viejo o palabra de la tienda explicada: cifra grande en serif + cómo se dice + cuánto es hoy (sobre material)
 export const Palabra: React.FC<OP> = ({ t, a, b, kan, rom, sig, lado }) => {
   const p = eo(t, a, 0.5) * sale(t, b), der = lado !== "izq", w = (1 - eo(t, a, 0.8)) * 100;
-  return <div style={{ position: "absolute", top: 110, [der ? "right" : "left"]: 110, display: "flex", flexDirection: "column", alignItems: der ? "flex-end" : "flex-start", opacity: p, color: "#FFFCF5", textShadow: sombra }}>
+  // velo oscuro difuso detrás (sobre percha/camisas blancas el blanco no se leía: evaluador 21-nov)
+  return <div style={{ position: "absolute", top: 70, [der ? "right" : "left"]: 70, padding: "40px 40px 46px", display: "flex", flexDirection: "column", alignItems: der ? "flex-end" : "flex-start", opacity: p, color: "#FFFCF5", textShadow: sombra,
+    background: `radial-gradient(ellipse 75% 70% at ${der ? 70 : 30}% 50%, rgba(16,12,8,.62) 0%, rgba(16,12,8,.38) 55%, rgba(16,12,8,0) 100%)` }}>
     <div style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 150, lineHeight: 1.05, clipPath: `inset(0 ${der ? 0 : w}% 0 ${der ? w : 0}%)` }}>{kan}</div>
     <div style={{ fontFamily: SERIF, fontSize: 54, fontStyle: "italic", marginTop: 6 }}>{rom}</div>
     <div style={{ width: 110 * eo(t, a + 0.4, 0.4), height: 3, background: "#E6DCC9", margin: "14px 0" }} />
