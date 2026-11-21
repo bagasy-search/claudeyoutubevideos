@@ -112,7 +112,7 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
   const plastico = "linear-gradient(180deg,#F4F1EA 0%,#E2DDD2 55%,#CFC9BC 100%)";
   if (modo === 0) { // cartel iluminado de fila (panel de arriba de la cabina) que baja colgando sobre la foto y se balancea
     const p = cl(spr(t, a + 0.1, 0.9)), sw = swing(t, a + 0.45, 5, 2.2, 6), luz = eo(t, a + 0.55, 0.25);
-    const pos: React.CSSProperties = der ? { left: 170 } : { right: 170 };
+    const pos: React.CSSProperties = der ? { right: 150 } : { left: 150 };
     return <AbsoluteFill style={{ background: C.sumi }}>{foto}{velo}{titulo}
       <div style={{ position: "absolute", ...pos, top: lerp(-480, 40, p), width: 600, transformOrigin: "50% -110px", transform: `rotate(${sw}deg) scale(.74)` }}>
         <div style={{ position: "absolute", left: 90, top: -110, width: 6, height: 110, background: "#555" }} /><div style={{ position: "absolute", right: 90, top: -110, width: 6, height: 110, background: "#555" }} />
