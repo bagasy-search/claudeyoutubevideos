@@ -14,7 +14,7 @@ export const Kin: React.FC<OP> = ({ t, a, b, txt, big, rojo }) => {
   const ws = String(txt).split(" "), Lc = String(txt).length + ws.length * 0.3, fs = Math.max(96, Math.min(big ? 250 : 190, 1640 / (Lc * 0.5))), dos = Lc * 0.5 * fs > 1700, sal = e(t, b - 0.3, b);
   const rueda = (w: string, at: number) => { const n = Number(w.replace(/[^0-9]/g, "")); if (!/\d/.test(w) || !n) return w; const p = eo(t, at, 0.9), v = Math.round(n * p);
     return w.replace(/[\d,.]+/, n >= 1000 ? v.toLocaleString("en-US") : String(v)); };
-  return <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: 110 }}>
+  return <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: 150 }}>
     <AbsoluteFill style={{ background: `linear-gradient(0deg, rgba(8,8,12,${0.92 * eo(t, a - 0.1, 0.3) * (1 - sal)}) 0%, rgba(8,8,12,${0.7 * eo(t, a - 0.1, 0.3) * (1 - sal)}) 30%, rgba(8,8,12,${0.3 * eo(t, a - 0.1, 0.3) * (1 - sal)}) 50%, rgba(8,8,12,0) 66%)` }} />
     <div style={{ position: "relative", display: "flex", flexWrap: dos ? "wrap" : "nowrap", justifyContent: "center", maxWidth: 1720, columnGap: "0.26em", rowGap: "0.12em", fontFamily: SERIF, fontWeight: 600, fontSize: fs, color: "#FFFCF5", lineHeight: 1, transform: `translateY(${sal * 420}px)`, filter: `blur(${sal * 10}px)` }}>
       {ws.map((w: string, i: number) => { const at = a + i * 0.26, p = spr(t, at, 1.3), q = cl(p);
@@ -54,7 +54,7 @@ export const Cuenta: React.FC<OP> = ({ t, a, b, n, lab }) => {
 export const Lower: React.FC<OP> = ({ t, a, b, name, sub }) => {
   // placa de tripulación de latón: entra con resorte, barrido de brillo, y al final cae hacia abajo entera (nunca cortada por el borde)
   const p = spr(t, a, 1.0), sal = e(t, b - 0.35, b), brillo = cl((t - a - 0.5) / 0.7);
-  return <div style={{ position: "absolute", left: 110, bottom: 90, opacity: 1 - sal, transform: `translate(${(1 - cl(p)) * -900}px, ${sal * 260}px) rotate(${(1 - cl(p)) * -4 + sal * 4}deg)` }}>
+  return <div style={{ position: "absolute", left: 110, bottom: 90, opacity: eo(t, a, 0.35) * (1 - sal), transform: `translate(${(1 - cl(p)) * -140}px, ${sal * 260}px) rotate(${(1 - cl(p)) * -4 + sal * 4}deg)` }}>
     <div style={{ position: "relative", display: "flex", alignItems: "center", gap: 30, padding: "26px 50px 28px 34px", borderRadius: 18, overflow: "hidden",
       background: "linear-gradient(180deg,#f3dc9c 0%,#d9b866 45%,#a8823a 100%)", border: "3px solid #8a6a2c", boxShadow: "0 26px 50px rgba(0,0,0,.55), inset 0 2px 2px rgba(255,255,255,.6), inset 0 -3px 4px rgba(80,55,15,.5)" }}>
       <svg width="140" height="66" viewBox="0 0 120 56"><g fill="#5a4214" opacity=".85">
@@ -62,7 +62,7 @@ export const Lower: React.FC<OP> = ({ t, a, b, name, sub }) => {
         <path d="M54 30 C42 26 28 26 14 30 C28 34 40 36 54 36 Z" /><path d="M66 30 C78 26 92 26 106 30 C92 34 80 36 66 36 Z" /><circle cx="60" cy="27" r="9" /></g></svg>
       <div>
         <div style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 84, color: "#3b2a0b", lineHeight: 1.02, textShadow: "0 1px 0 rgba(255,240,200,.6)" }}>{name}</div>
-        <div style={{ ...cap, fontSize: 38, fontWeight: 500, color: "#4a3510", marginTop: 8, letterSpacing: "0.12em" }}>{sub}</div>
+        <div style={{ ...cap, fontSize: 46, fontWeight: 600, color: "#3b2a0b", marginTop: 8, letterSpacing: "0.12em" }}>{sub}</div>
       </div>
       <div style={{ position: "absolute", top: -60, bottom: -60, width: 160, left: `${lerp(-25, 115, brillo)}%`, background: "linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,.75), rgba(255,255,255,0))", transform: "rotate(18deg)", opacity: brillo > 0 && brillo < 1 ? 1 : 0 }} />
     </div>

@@ -108,7 +108,7 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
     {it.sub && <div style={{ fontFamily: HAND, fontWeight: 700, whiteSpace: "nowrap", fontSize: Math.min(84, 980 / (String(it.sub).length * 0.44)), color: "#f1d9a8", textShadow: sombra, marginTop: 12, opacity: eo(t, a + 1.6, 0.5) }}>{it.sub}</div>}
     <div style={{ height: 4, background: C.hanko, marginTop: 16, width: 260 * eo(t, a + 1.4, 0.5) }} />
   </div>;
-  const velo = <AbsoluteFill style={{ background: `linear-gradient(${der ? 270 : 90}deg, rgba(10,16,30,.9) 0%, rgba(10,16,30,.62) 46%, rgba(10,16,30,0) 72%)` }} />;
+  const velo = <AbsoluteFill style={{ background: `linear-gradient(${der ? 270 : 90}deg, rgba(10,16,30,.93) 0%, rgba(10,16,30,.8) 40%, rgba(10,16,30,.45) 58%, rgba(10,16,30,0) 78%)` }} />;
   const plastico = "linear-gradient(180deg,#F4F1EA 0%,#E2DDD2 55%,#CFC9BC 100%)";
   if (modo === 0) { // cartel iluminado de fila (panel de arriba de la cabina) que baja colgando sobre la foto y se balancea
     const p = cl(spr(t, a + 0.1, 0.9)), sw = swing(t, a + 0.45, 5, 2.2, 6), luz = eo(t, a + 0.55, 0.25);
@@ -138,18 +138,18 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
   }
   if (modo === 2) { // el pase de abordar: la tira se corta por el troquel y la foto aparece detrás
     const corta = eo(t, a + 0.35, 0.6), cae = e(t, a + 0.8, a + 1.4);
-    const pase: React.CSSProperties = { position: "absolute", top: 300, height: 480, background: "linear-gradient(180deg,#FFFCF5,#EFE7D3)", boxShadow: "0 24px 60px rgba(0,0,0,.45)" };
+    const X0 = der ? 1920 - 130 - 800 : 130, pase: React.CSSProperties = { position: "absolute", top: 300, height: 360, background: "linear-gradient(180deg,#FFFCF5,#EFE7D3)", boxShadow: "0 24px 60px rgba(0,0,0,.45)" };
     return <AbsoluteFill style={{ background: C.sumi }}>
       <AbsoluteFill>{foto}{velo}</AbsoluteFill>
       {cae < 1 && <>
-        <div style={{ ...pase, left: 260, width: 1000, transform: `translate(${-cae * 300}px, ${-cae * 1100}px) rotate(${-cae * 8}deg)`, borderTop: `40px solid ${C.ai}` }}>
+        <div style={{ ...pase, left: X0, width: 580, transform: `translate(${-cae * 300}px, ${-cae * 1100}px) rotate(${-cae * 8}deg)`, borderTop: `40px solid ${C.ai}` }}>
           <div style={{ ...cap, position: "absolute", left: 50, top: 30, fontSize: 24, color: C.nezumi }}>boarding pass · item</div>
-          <div style={{ position: "absolute", left: 50, top: 70, fontFamily: SERIF, fontSize: 250, color: C.sumi, lineHeight: 1 }}>{String(it.n).padStart(2, "0")}</div>
+          <div style={{ position: "absolute", left: 50, top: 70, fontFamily: SERIF, fontSize: 200, color: C.sumi, lineHeight: 1 }}>{String(it.n).padStart(2, "0")}</div>
           <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, borderRight: `4px dashed ${C.nezumi}` }} />
         </div>
-        <div style={{ ...pase, left: 1260, width: 400, transform: `translate(${corta * 30 + cae * 300}px, ${cae * 1300}px) rotate(${corta * 4 + cae * 18}deg)`, borderTop: `40px solid ${C.hanko}` }}>
+        <div style={{ ...pase, left: X0 + 580, width: 220, transform: `translate(${corta * 30 + cae * 300}px, ${cae * 1300}px) rotate(${corta * 4 + cae * 18}deg)`, borderTop: `40px solid ${C.hanko}` }}>
           <div style={{ ...cap, position: "absolute", left: 40, top: 30, fontSize: 22, color: C.nezumi }}>seat</div>
-          <div style={{ position: "absolute", left: 40, top: 70, fontFamily: SERIF, fontSize: 140, color: C.hanko }}>{it.n}A</div>
+          <div style={{ position: "absolute", left: 40, top: 70, fontFamily: SERIF, fontSize: 104, color: C.hanko }}>{it.n}A</div>
         </div>
       </>}
       {cae > 0.85 && titulo}
@@ -214,14 +214,14 @@ export const Album: React.FC<SP> = ({ t, a, b, arg }) => {
 export const Prog: React.FC<OP> = () => null; // retirado tras EVALUADOR v2: el número del ítem ya vive en la apertura
 
 // la regla de Linda: tarjeta de cartulina colgada de un hilo rojo; baja con peso, se balancea y al final el hilo la sube
-export const Prueba: React.FC<OP> = ({ t, a, b, txt, lab }) => {
-  const izq = false, p = spr(t, a, 1.1), r = swing(t, a + 0.15, 9, 1.2, 5) - 2, sube = e(t, b - 0.35, b);
+export const Prueba: React.FC<OP> = ({ t, a, b, txt, lab, lado }) => {
+  const izq = lado === "izq", p = spr(t, a, 1.1), r = swing(t, a + 0.15, 9, 1.2, 5) - 2, sube = e(t, b - 0.35, b);
   return <div style={{ position: "absolute", [izq ? "left" : "right"]: 70, top: 0, transformOrigin: "50% 0", transform: `rotate(${r}deg) translateY(${(cl(p) - 1) * 900 - sube * 1000}px)` } as React.CSSProperties}>
     <div style={{ width: 5, height: 120, background: `linear-gradient(90deg, #7d1a15, ${C.hanko}, #7d1a15)`, margin: "0 auto", boxShadow: "2px 0 3px rgba(0,0,0,.4)" }} />
-    <div style={{ ...papel, width: 640, padding: "40px 46px 48px", borderTop: `10px solid ${C.hanko}`, boxShadow: `${-r * 3}px 50px 70px rgba(0,0,0,.6), 0 8px 16px rgba(0,0,0,.35)`, position: "relative" }}>
-      <div style={{ position: "absolute", left: 301, top: -18, width: 32, height: 32, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #f3dc9c, #8a6a2c)", boxShadow: "0 3px 6px rgba(0,0,0,.45)" }} />
+    <div style={{ ...papel, width: 580, padding: "36px 42px 44px", borderTop: `10px solid ${C.hanko}`, boxShadow: `${-r * 3}px 50px 70px rgba(0,0,0,.6), 0 8px 16px rgba(0,0,0,.35)`, position: "relative" }}>
+      <div style={{ position: "absolute", left: 274, top: -18, width: 32, height: 32, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #f3dc9c, #8a6a2c)", boxShadow: "0 3px 6px rgba(0,0,0,.45)" }} />
       <div style={{ ...cap, fontSize: 32, color: C.hanko, fontWeight: 500 }}>{lab || "linda's rule"}</div>
-      <Palabras t={t} at={a + 0.4} txt={txt} gap={0.07} style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 66, color: C.sumi, marginTop: 16, lineHeight: 1.1 }} />
+      <Palabras t={t} at={a + 0.4} txt={txt} gap={0.07} style={{ fontFamily: SERIF, fontWeight: 600, fontSize: 60, color: C.sumi, marginTop: 16, lineHeight: 1.1 }} />
     </div>
   </div>;
 };
@@ -238,8 +238,8 @@ export const Dato: React.FC<OP> = ({ t, a, b, txt, fuente }) => {
 // número o regla explicada: tablero de partidas que se arma letra por letra (cifra) + la ruta en la fila de abajo
 export const Palabra: React.FC<OP> = ({ t, a, b, kan, rom, sig, lado }) => {
   const der = lado !== "izq", ent = eo(t, a + 0.15, 0.25), L = String(kan).length, out = b - 0.45, fuera = e(t, b - 0.12, b);
-  const av = (D.shots || []).some((s: any) => s.k === "A" && s.s < b && s.e > a), W = av ? 560 : 1150, R2 = String(rom || "").length;
-  const H1 = Math.min(av ? 150 : 200, W / Math.max(3, L) / 0.71), H2 = Math.min(av ? 60 : 80, W / Math.max(8, R2) / 0.71);
+  const av = (D.shots || []).some((s: any) => s.k === "A" && s.s < b && s.e > a), W = av ? 640 : 1150, R2 = String(rom || "").length;
+  const H1 = Math.min(av ? 150 : 200, W / Math.max(3, L) / 0.71), H2 = Math.min(av ? 76 : 92, W / Math.max(8, R2) / 0.71);
   return <div style={{ position: "absolute", top: 70, [der && !av ? "right" : "left"]: av ? 50 : 70, display: "flex", flexDirection: "column", alignItems: der && !av ? "flex-end" : "flex-start", opacity: 1 - fuera,
     transform: `translateY(${(1 - ent) * -60}px)` } as React.CSSProperties}>
     <Tablero style={{ opacity: ent, padding: "26px 30px" }}>

@@ -89,7 +89,7 @@ export const Flap: React.FC<{ t: number; at: number; txt: string; H?: number; ga
   <div style={{ display: "flex", gap: H * 0.05 }}>
     {String(txt).toUpperCase().split("").map((c, i) => {
       if (c === " ") return <div key={i} style={{ width: H * 0.28 }} />;
-      const st = at + i * gap, k = t - st, nf = c.match(/[A-Z0-9]/) ? 3 + Math.floor(h(i, 11) * 3) : 0, fl = FL;
+      const st = at + i * gap, k = t - st, nf = c.match(/[A-Z0-9]/) ? 1 + Math.floor(h(i, 11) * 2) : 0, fl = FL;
       const fi = Math.floor(Math.max(0, k) / fl), ko = t - out - i * 0.03, saliendo = ko > 0, fo = Math.floor(Math.max(0, ko) / fl), vacio = saliendo && fo >= 3;
       const girando = (k >= 0 && fi < nf) || (saliendo && !vacio), ch = vacio ? "" : girando ? POOL[(Math.floor(h(i, 3) * 97) + (saliendo ? fo + 5 : fi) * 7) % POOL.length] : c;
       const fase = girando ? ((saliendo ? ko : k) % fl) / fl : 0, asentado = k - nf * fl, reb = asentado > 0 ? 1 + 0.08 * Math.exp(-14 * asentado) * Math.sin(38 * asentado) : 1;
