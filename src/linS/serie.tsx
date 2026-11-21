@@ -237,14 +237,14 @@ export const Dato: React.FC<OP> = ({ t, a, b, txt, fuente }) => {
 
 // número o regla explicada: tablero de partidas que se arma letra por letra (cifra) + la ruta en la fila de abajo
 export const Palabra: React.FC<OP> = ({ t, a, b, kan, rom, sig, lado }) => {
-  const der = lado !== "izq", ent = eo(t, a + 0.05, 0.25), L = String(kan).length, out = b - 0.45, fuera = e(t, b - 0.12, b);
+  const der = lado !== "izq", ent = eo(t, a + 0.15, 0.25), L = String(kan).length, out = b - 0.45, fuera = e(t, b - 0.12, b);
   const av = (D.shots || []).some((s: any) => s.k === "A" && s.s < b && s.e > a), W = av ? 560 : 1150, R2 = String(rom || "").length;
   const H1 = Math.min(av ? 150 : 200, W / Math.max(3, L) / 0.71), H2 = Math.min(av ? 60 : 80, W / Math.max(8, R2) / 0.71);
   return <div style={{ position: "absolute", top: 70, [der && !av ? "right" : "left"]: av ? 50 : 70, display: "flex", flexDirection: "column", alignItems: der && !av ? "flex-end" : "flex-start", opacity: 1 - fuera,
     transform: `translateY(${(1 - ent) * -60}px)` } as React.CSSProperties}>
     <Tablero style={{ opacity: ent, padding: "26px 30px" }}>
-      <Flap t={t} at={a + 0.12} txt={kan} H={H1} fl={0.03} out={out} />
-      {rom && <div style={{ marginTop: 16 }}><Flap t={t} at={a + 0.25} txt={rom} H={H2} gap={0.015} fl={0.025} col="#E9C46A" out={out} /></div>}
+      <Flap t={t} at={a + 0.2} txt={kan} H={H1} fl={0.03} out={out} />
+      {rom && <div style={{ marginTop: 16 }}><Flap t={t} at={a + 0.32} txt={rom} H={H2} gap={0.015} fl={0.025} col="#E9C46A" out={out} /></div>}
       {sig && <div style={{ ...cap, fontSize: 36, color: "#FFFCF5", marginTop: 18, opacity: eo(t, a + 0.9, 0.3) * (1 - e(t, out, out + 0.15)), maxWidth: av ? 560 : 1400 }}>{sig}</div>}
     </Tablero>
   </div>;
