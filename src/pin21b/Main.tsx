@@ -69,6 +69,8 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
 };
 
 // tomas donde Veo quemó subtítulos inventados (subdet.py + hoja): zoom 1,3 desde arriba los saca del cuadro
+// y210 (tinta roja casi quieta = congelado 3,9 s en 114 s): se ve la toma Veo t017 de abajo
+const SIN_Y = new Set([210]);
 const SUBT = new Set(["t112", "t043", "t130", "t150", "t084", "t061", "t023", "t156", "t102", "t045", "t172", "t151", "t145"]);
 
 export const MainPin21b: React.FC = () => (
@@ -83,7 +85,7 @@ export const MainPin21b: React.FC = () => (
     ))}
     {/* capa 2: material (clips reales, fotos, componentes) */}
     {SHOTS.map((s, i) => {
-      if (s.k === "A") return null;
+      if (s.k === "A" || SIN_Y.has(s.id)) return null;
       // si el plano siguiente entra con fundido/empuje sobre material (no avatar), este se queda T frames debajo
       const nx = SHOTS[i + 1];
       const tail = nx && nx.k !== "A" && nx.trans && nx.trans !== "cut" ? T + 2 : 0;
