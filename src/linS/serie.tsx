@@ -102,7 +102,7 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
   const i = Number(arg) - 1, it = D.items[i], k = t - a, dur = b - a, modo = i % 4, der = it.lado ? it.lado === "der" : i % 2 === 1;
   const zoom = 1.06 + 0.07 * cl(k / (dur + 0.4)), foto = <Img src={src(it.f)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(1.18) saturate(1.05)", transform: `scale(${zoom})`, transformOrigin: `${der ? 35 : 65}% 45%` }} />;
   const lado: React.CSSProperties = der ? { right: 130, alignItems: "flex-end", textAlign: "right" } : { left: 130, alignItems: "flex-start" };
-  const titulo = <div style={{ position: "absolute", top: modo === 3 ? 470 : 330, width: 900, display: "flex", flexDirection: "column", ...lado }}>
+  const titulo = <div style={{ position: "absolute", top: it.top ?? (modo === 3 ? 470 : 330), width: 900, display: "flex", flexDirection: "column", ...lado }}>
     <div style={{ ...cap, fontSize: 46, color: "#f1d9a8", textShadow: sombra, opacity: eo(t, a + 0.3, 0.4) }}>{D.item_rotulo || "carry-on"}</div>
     <Palabras t={t} at={a + 0.9} txt={it.t} gap={0.14} style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 104, color: "#FFFCF5", textShadow: sombra, lineHeight: 1.04, justifyContent: der ? "flex-end" : "flex-start", maxWidth: 900 }} />
     {it.sub && <div style={{ fontFamily: HAND, fontWeight: 700, whiteSpace: "nowrap", fontSize: Math.min(84, 980 / (String(it.sub).length * 0.44)), color: "#f1d9a8", textShadow: sombra, marginTop: 12, opacity: eo(t, a + 1.6, 0.5) }}>{it.sub}</div>}
@@ -245,7 +245,7 @@ export const Palabra: React.FC<OP> = ({ t, a, b, kan, rom, sig, lado }) => {
     <Tablero style={{ opacity: ent, padding: "26px 30px" }}>
       <Flap t={t} at={a + 0.2} txt={kan} H={H1} fl={0.03} out={out} />
       {rom && <div style={{ marginTop: 16 }}><Flap t={t} at={a + 0.32} txt={rom} H={H2} gap={0.015} fl={0.025} col="#E9C46A" out={out} /></div>}
-      {sig && <div style={{ ...cap, fontSize: 46, color: "#FFFCF5", marginTop: 18, opacity: eo(t, a + 0.9, 0.3) * (1 - e(t, out, out + 0.15)), maxWidth: av ? 560 : 1400 }}>{sig}</div>}
+      {sig && <div style={{ ...cap, fontSize: av ? 54 : 48, color: "#FFFCF5", marginTop: 18, opacity: eo(t, a + 0.9, 0.3) * (1 - e(t, out, out + 0.15)), maxWidth: av ? 560 : 1400 }}>{sig}</div>}
     </Tablero>
   </div>;
 };
