@@ -127,7 +127,7 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
     </AbsoluteFill>;
   }
   if (modo === 1) { // la ventanilla del avión: la cortina sube, y la ventana crece hasta llenar la pantalla
-    const sube = eo(t, a + 0.25, 0.7), crece = eo(t, a + 1.0, 0.8), W = lerp(420, 2400, crece), H = lerp(580, 2200, crece), R = lerp(190, 0, crece);
+    const sube = eo(t, a - 0.05, 0.3), crece = eo(t, a + 0.35, 0.75), W = lerp(760, 2400, crece), H = lerp(860, 2200, crece), R = lerp(190, 0, crece);
     return <AbsoluteFill style={{ background: plastico, overflow: "hidden" }}>
       <AbsoluteFill style={{ clipPath: `inset(${540 - H / 2}px ${960 - W / 2}px ${540 - H / 2}px ${960 - W / 2}px round ${R}px)` }}>{foto}{velo}</AbsoluteFill>
       {crece < 1 && <div style={{ position: "absolute", left: 960 - W / 2, top: 540 - H / 2, width: W, height: H, borderRadius: R, overflow: "hidden", boxShadow: `inset 0 0 0 ${lerp(26, 0, crece)}px #DCD6C9, inset 0 0 40px rgba(0,0,0,.35)` }}>
@@ -237,14 +237,14 @@ export const Dato: React.FC<OP> = ({ t, a, b, txt, fuente }) => {
 
 // número o regla explicada: tablero de partidas que se arma letra por letra (cifra) + la ruta en la fila de abajo
 export const Palabra: React.FC<OP> = ({ t, a, b, kan, rom, sig, lado }) => {
-  const der = lado !== "izq", ent = eo(t, a - 0.1, 0.3), L = String(kan).length, out = b - 0.45, fuera = e(t, b - 0.12, b);
+  const der = lado !== "izq", ent = eo(t, a + 0.05, 0.25), L = String(kan).length, out = b - 0.45, fuera = e(t, b - 0.12, b);
   const av = (D.shots || []).some((s: any) => s.k === "A" && s.s < b && s.e > a), W = av ? 560 : 1150, R2 = String(rom || "").length;
   const H1 = Math.min(av ? 150 : 200, W / Math.max(3, L) / 0.71), H2 = Math.min(av ? 60 : 80, W / Math.max(8, R2) / 0.71);
   return <div style={{ position: "absolute", top: 70, [der && !av ? "right" : "left"]: av ? 50 : 70, display: "flex", flexDirection: "column", alignItems: der && !av ? "flex-end" : "flex-start", opacity: 1 - fuera,
     transform: `translateY(${(1 - ent) * -60}px)` } as React.CSSProperties}>
     <Tablero style={{ opacity: ent, padding: "26px 30px" }}>
-      <Flap t={t} at={a + 0.1} txt={kan} H={H1} fl={0.05} out={out} />
-      {rom && <div style={{ marginTop: 16 }}><Flap t={t} at={a + 0.35} txt={rom} H={H2} gap={0.02} fl={0.04} col="#E9C46A" out={out} /></div>}
+      <Flap t={t} at={a + 0.12} txt={kan} H={H1} fl={0.03} out={out} />
+      {rom && <div style={{ marginTop: 16 }}><Flap t={t} at={a + 0.25} txt={rom} H={H2} gap={0.015} fl={0.025} col="#E9C46A" out={out} /></div>}
       {sig && <div style={{ ...cap, fontSize: 36, color: "#FFFCF5", marginTop: 18, opacity: eo(t, a + 0.9, 0.3) * (1 - e(t, out, out + 0.15)), maxWidth: av ? 560 : 1400 }}>{sig}</div>}
     </Tablero>
   </div>;
@@ -284,6 +284,7 @@ export const Cta: React.FC<OP> = ({ t, a, b, txt }) => {
           <div style={{ display: "flex", gap: 40, marginTop: 18, fontFamily: SANS, fontWeight: 500, fontSize: 40, color: "#555", opacity: bot }}>
             <span style={{ display: "flex", alignItems: "center", gap: 10 }}><svg width="48" height="44" viewBox="0 0 30 28" style={{ transform: `scale(${1 + 0.35 * Math.exp(-8 * Math.max(0, t - a - 2.0)) * (t > a + 2 ? 1 : 0)})` }}><path d="M15 26 C4 18 1 12 2 8 C3 3 9 1 15 7 C21 1 27 3 28 8 C29 12 26 18 15 26 Z" fill={`rgba(179,38,30,${lleno})`} stroke={C.hanko} strokeWidth={2} /></svg><span style={{ fontVariantNumeric: "tabular-nums" }}>{t < a + 2.0 ? 247 : 248}</span></span>
             <span style={{ padding: "6px 22px", borderRadius: 24, background: "#f0f0f0", color: "#222", transform: `scale(${1 + 0.06 * Math.sin(Math.max(0, t - a - 2) * 4)})` }}>Reply</span>
+            <span style={{ padding: "6px 26px", borderRadius: 24, background: "#CC0000", color: "#fff", fontWeight: 600, opacity: eo(t, a + 1.7, 0.3) }}>Subscribe</span>
           </div>
         </div>
         <div style={{ position: "absolute", left: 120, bottom: -26, width: 0, height: 0, borderLeft: "26px solid transparent", borderRight: "26px solid transparent", borderTop: "28px solid #FFFFFF" }} />
@@ -294,8 +295,8 @@ export const Cta: React.FC<OP> = ({ t, a, b, txt }) => {
 
 // cierre: pase de abordar de Linda que sube sobre el living desenfocado; el sello "ARRIVED" cae en el talón
 export const Fin: React.FC<OP> = ({ t, a, sub }) => {
-  const f = eo(t, a - 0.1, 0.32), p = spr(t, a + 0.3, 0.9);
-  return <AbsoluteFill style={{ transform: `translateY(${(1 - f) * 100}%)`, boxShadow: "0 -30px 60px rgba(0,0,0,.55)" }}>
+  const f = eo(t, a - 0.15, 0.3), p = spr(t, a + 0.3, 0.9);
+  return <AbsoluteFill style={{ opacity: f }}>
     <Desenfoque f={D.bg} dark={0.3} />
     <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
       <div style={{ display: "flex", transform: `translateY(${(1 - cl(p)) * 500}px) rotate(${(1 - cl(p)) * 6 - 1.5}deg)`, boxShadow: "0 40px 90px rgba(0,0,0,.6)" }}>
