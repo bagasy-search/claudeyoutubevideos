@@ -1,4 +1,4 @@
-// serie Mi-ok (02+) · look "baño público de Busan": azulejo blanco con junta gris-agua, toalla rosa, verde azulejo y tinta. Todo es función pura de t (segundos): el farm rinde en chunks.
+// serie Sal (02+) · look "zapatería de Philadelphia": caja de cartón kraft, madera de estante, cuero coñac y azul marino del chaleco. Todo es función pura de t (segundos): el farm rinde en chunks.
 // Los datos de cada video entran por setData() desde su index_<slug>.tsx (una sola rama para toda la serie).
 import React from "react";
 import { AbsoluteFill } from "remotion";
@@ -23,7 +23,7 @@ export const FPS = 30;
 export const s = (t: number) => Math.round(t * FPS);
 
 // claves heredadas de la serie base: washi = papel crema · sumi = tinta · hanko = borgoña · ai = verde inglés · bamboo = latón
-export const C = { washi: "#F5F8F8", washi2: "#E3ECEC", sumi: "#1E2A30", kinari: "#F6DCE3", ai: "#2E6E78", cha: "#8a5a44", nezumi: "#86979b", hanko: "#D2557A", bamboo: "#9DB9BD", line: "rgba(30,42,48,.16)" };
+export const C = { washi: "#F3EBDD", washi2: "#E2D2B8", sumi: "#1F1A16", kinari: "#E9D9BE", ai: "#1F2E4D", cha: "#8B4A22", nezumi: "#8c8378", hanko: "#A8441C", bamboo: "#B08A55", line: "rgba(31,26,22,.18)" };
 export const cl = (x: number) => Math.max(0, Math.min(1, x));
 export const sm = (x: number) => { const c = cl(x); return c * c * (3 - 2 * c); };
 export const e = (t: number, a: number, b: number) => sm((t - a) / (b - a));
@@ -41,8 +41,8 @@ export const h = (n: number, k: number) => {
 
 // tarjeta de la tienda: crema con trama fina de papel verjurado (sólo degradés: nada de feTurbulence, que traba el farm) y doble filete de latón
 export const Washi: React.FC<{ children?: React.ReactNode; tone?: string }> = ({ children, tone = C.washi }) => (
-  <AbsoluteFill style={{ background: `radial-gradient(120% 90% at 30% 20%, #FFFFFF 0%, ${tone} 55%, ${C.washi2} 100%)`, overflow: "hidden" }}>
-    <AbsoluteFill style={{ backgroundImage: "repeating-linear-gradient(0deg, rgba(90,130,135,.16) 0 2px, transparent 2px 96px), repeating-linear-gradient(90deg, rgba(90,130,135,.16) 0 2px, transparent 2px 96px)" }} />
+  <AbsoluteFill style={{ background: `radial-gradient(120% 90% at 30% 20%, #FBF6EC 0%, ${tone} 55%, ${C.washi2} 100%)`, overflow: "hidden" }}>
+    <AbsoluteFill style={{ backgroundImage: "repeating-linear-gradient(0deg, rgba(120,90,50,.06) 0 1px, transparent 1px 4px), repeating-linear-gradient(90deg, rgba(120,90,50,.04) 0 1px, transparent 1px 7px)" }} />
     <div style={{ position: "absolute", inset: 26, border: `2px solid ${C.bamboo}`, opacity: 0.75 }} />
     <div style={{ position: "absolute", inset: 36, border: `1px solid ${C.bamboo}`, opacity: 0.5 }} />
     {children}
