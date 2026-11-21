@@ -11,12 +11,12 @@ const papel: React.CSSProperties = { background: "linear-gradient(180deg,#FFFCF5
 // remate kinético: cada palabra cae con peso (resorte), sombra de contacto, y la última se subraya con trazo rojo
 export const Kin: React.FC<OP> = ({ t, a, b, txt, big, rojo }) => {
   // palabras enormes que caen con peso; si hay una cifra, rueda como odómetro y se frena; sale hacia abajo con desenfoque (nunca fundido sobre la cara)
-  const ws = String(txt).split(" "), fs = big ? 250 : 190, sal = e(t, b - 0.3, b);
+  const ws = String(txt).split(" "), Lc = String(txt).length + ws.length * 0.3, fs = Math.max(96, Math.min(big ? 250 : 190, 1640 / (Lc * 0.5))), dos = Lc * 0.5 * fs > 1700, sal = e(t, b - 0.3, b);
   const rueda = (w: string, at: number) => { const n = Number(w.replace(/[^0-9]/g, "")); if (!/\d/.test(w) || !n) return w; const p = eo(t, at, 0.9), v = Math.round(n * p);
     return w.replace(/[\d,.]+/, n >= 1000 ? v.toLocaleString("en-US") : String(v)); };
   return <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: 110 }}>
     <AbsoluteFill style={{ background: `linear-gradient(0deg, rgba(8,8,12,${0.92 * eo(t, a - 0.1, 0.3) * (1 - sal)}) 0%, rgba(8,8,12,${0.7 * eo(t, a - 0.1, 0.3) * (1 - sal)}) 30%, rgba(8,8,12,${0.3 * eo(t, a - 0.1, 0.3) * (1 - sal)}) 50%, rgba(8,8,12,0) 66%)` }} />
-    <div style={{ position: "relative", display: "flex", gap: "0.26em", fontFamily: SERIF, fontWeight: 600, fontSize: fs, color: "#FFFCF5", lineHeight: 1, transform: `translateY(${sal * 420}px)`, filter: `blur(${sal * 10}px)` }}>
+    <div style={{ position: "relative", display: "flex", flexWrap: dos ? "wrap" : "nowrap", justifyContent: "center", maxWidth: 1720, columnGap: "0.26em", rowGap: "0.12em", fontFamily: SERIF, fontWeight: 600, fontSize: fs, color: "#FFFCF5", lineHeight: 1, transform: `translateY(${sal * 420}px)`, filter: `blur(${sal * 10}px)` }}>
       {ws.map((w: string, i: number) => { const at = a + i * 0.26, p = spr(t, at, 1.3), q = cl(p);
         return <span key={i} style={{ position: "relative", display: "inline-block", opacity: eo(t, at, 0.1), transform: `translateY(${(1 - p) * -120}px) scale(${lerp(1.3, 1, q)})`, fontVariantNumeric: "tabular-nums",
           textShadow: `0 ${10 + (1 - q) * 30}px ${24 + (1 - q) * 30}px rgba(0,0,0,.8), 0 3px 4px rgba(0,0,0,.8), 6px 6px 0 rgba(20,33,61,.55)`, color: rojo === i ? "#f6c3b8" : undefined }}>{rueda(w, at)}

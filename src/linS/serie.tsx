@@ -81,7 +81,7 @@ export const Repaso: React.FC<SP> = ({ t, a }) => {
       {D.items.map((it, i) => { const p = eo(t, a + 0.3 + i * 0.07, 0.35), hecho = t >= at(i), ck = eo(t, at(i), 0.3), act = i === cur;
         return <div key={i} style={{ position: "absolute", left: 120, top: 170 + (i - scr) * lh, height: lh, right: 30, display: "flex", alignItems: "center", gap: 18, opacity: p, fontFamily: HAND, fontWeight: 700, fontSize: fs, color: hecho ? C.sumi : "rgba(20,33,61,.72)" }}>
           <span style={{ width: fs * 1.2, color: C.hanko }}>{it.n}.</span>
-          <span style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", maxWidth: 640, background: act ? "rgba(246,210,120,.45)" : "transparent", padding: "0 8px", borderRadius: 4 }}>{it.t}</span>
+          <span style={{ whiteSpace: "nowrap", fontSize: Math.min(fs, 700 / (String(it.t).length * 0.44)), maxWidth: 720, background: act ? "rgba(246,210,120,.45)" : "transparent", padding: "0 8px", borderRadius: 4 }}>{it.t}</span>
           {hecho && <svg width={fs * 1.3} height={fs * 1.1} viewBox="0 0 40 34" style={{ overflow: "visible" }}><path d="M3 18 L15 30 L38 3" fill="none" stroke={C.hanko} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" strokeDasharray={60} strokeDashoffset={60 * (1 - ck)} /></svg>}
         </div>; })}
     </div>
@@ -89,7 +89,7 @@ export const Repaso: React.FC<SP> = ({ t, a }) => {
       return <div key={i} style={{ position: "absolute", left: 1180, top: 170, width: 640, background: "#FFFDF8", padding: "26px 26px 110px", boxShadow: "0 30px 70px rgba(0,0,0,.6)",
         transform: `translate(${(1 - p) * 700 + fuera * 900}px, ${fuera * -200}px) rotate(${lerp(14, ((h(i, 9) * 6) | 0) - 3, p) + fuera * 25}deg)`, opacity: 1 - fuera }}>
         <Img src={src(it.f)} style={{ width: "100%", height: 520, objectFit: "cover", display: "block" }} />
-        <div style={{ position: "absolute", left: 30, right: 30, bottom: 10, fontFamily: HAND, fontWeight: 700, fontSize: 70, color: C.sumi, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{it.n}. {it.t}</div>
+        <div style={{ position: "absolute", left: 30, right: 30, bottom: 10, fontFamily: HAND, fontWeight: 700, fontSize: Math.min(70, 580 / ((String(it.t).length + 3) * 0.44)), color: C.sumi, whiteSpace: "nowrap" }}>{it.n}. {it.t}</div>
       </div>; })}
   </AbsoluteFill>;
 };
@@ -99,7 +99,7 @@ export const Tela: React.FC<OP> = () => null; // retirado tras EVALUADOR v2: el 
 
 // (3) APERTURA de cada ítem: un mecanismo de cabina distinto por número (compartimiento de arriba, ventanilla con cortina, pase de abordar que se corta, sello del control)
 export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
-  const i = Number(arg) - 1, it = D.items[i], k = t - a, dur = b - a, modo = i % 4, der = i % 2 === 1;
+  const i = Number(arg) - 1, it = D.items[i], k = t - a, dur = b - a, modo = i % 4, der = it.lado ? it.lado === "der" : i % 2 === 1;
   const zoom = 1.06 + 0.07 * cl(k / (dur + 0.4)), foto = <Img src={src(it.f)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(1.18) saturate(1.05)", transform: `scale(${zoom})`, transformOrigin: `${der ? 35 : 65}% 45%` }} />;
   const lado: React.CSSProperties = der ? { right: 130, alignItems: "flex-end", textAlign: "right" } : { left: 130, alignItems: "flex-start" };
   const titulo = <div style={{ position: "absolute", top: modo === 3 ? 470 : 330, width: 900, display: "flex", flexDirection: "column", ...lado }}>
@@ -114,7 +114,7 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
     const p = cl(spr(t, a + 0.1, 0.9)), sw = swing(t, a + 0.45, 5, 2.2, 6), luz = eo(t, a + 0.55, 0.25);
     const pos: React.CSSProperties = der ? { left: 170 } : { right: 170 };
     return <AbsoluteFill style={{ background: C.sumi }}>{foto}{velo}{titulo}
-      <div style={{ position: "absolute", ...pos, top: lerp(-480, 90, p), width: 600, transformOrigin: "50% -110px", transform: `rotate(${sw}deg)` }}>
+      <div style={{ position: "absolute", ...pos, top: lerp(-480, 40, p), width: 600, transformOrigin: "50% -110px", transform: `rotate(${sw}deg) scale(.74)` }}>
         <div style={{ position: "absolute", left: 90, top: -110, width: 6, height: 110, background: "#555" }} /><div style={{ position: "absolute", right: 90, top: -110, width: 6, height: 110, background: "#555" }} />
         <div style={{ height: 340, borderRadius: 24, background: "linear-gradient(180deg,#e9e5dc,#c9c3b6)", boxShadow: "0 30px 70px rgba(0,0,0,.6), inset 0 2px 0 rgba(255,255,255,.7)", padding: 26, display: "flex", gap: 22 }}>
           <div style={{ flex: 1, borderRadius: 14, background: "#101418", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", boxShadow: "inset 0 4px 12px rgba(0,0,0,.8)" }}>
@@ -157,7 +157,7 @@ export const Apertura: React.FC<SP> = ({ t, a, b, arg }) => {
   }
   // modo 3: la foto ya está; el sello rojo del control cae del lado libre, aplasta y deja el número
   return <AbsoluteFill style={{ background: C.sumi }}>{foto}{velo}{titulo}
-    <Hanko t={t} at={a + 0.3} x={der ? 1600 : 320} y={300} size={330} txt={String(it.n)} bl={false} rot={der ? 8 : -8} />
+    <Hanko t={t} at={a + 0.3} x={der ? 1640 : 280} y={190} size={250} txt={String(it.n)} bl={false} rot={der ? 8 : -8} />
   </AbsoluteFill>;
 };
 
@@ -215,7 +215,7 @@ export const Prog: React.FC<OP> = () => null; // retirado tras EVALUADOR v2: el 
 
 // la regla de Linda: tarjeta de cartulina colgada de un hilo rojo; baja con peso, se balancea y al final el hilo la sube
 export const Prueba: React.FC<OP> = ({ t, a, b, txt, lab }) => {
-  const izq = true, p = spr(t, a, 1.1), r = swing(t, a + 0.15, 9, 1.2, 5) - 2, sube = e(t, b - 0.35, b);
+  const izq = false, p = spr(t, a, 1.1), r = swing(t, a + 0.15, 9, 1.2, 5) - 2, sube = e(t, b - 0.35, b);
   return <div style={{ position: "absolute", [izq ? "left" : "right"]: 70, top: 0, transformOrigin: "50% 0", transform: `rotate(${r}deg) translateY(${(cl(p) - 1) * 900 - sube * 1000}px)` } as React.CSSProperties}>
     <div style={{ width: 5, height: 120, background: `linear-gradient(90deg, #7d1a15, ${C.hanko}, #7d1a15)`, margin: "0 auto", boxShadow: "2px 0 3px rgba(0,0,0,.4)" }} />
     <div style={{ ...papel, width: 640, padding: "40px 46px 48px", borderTop: `10px solid ${C.hanko}`, boxShadow: `${-r * 3}px 50px 70px rgba(0,0,0,.6), 0 8px 16px rgba(0,0,0,.35)`, position: "relative" }}>
@@ -245,7 +245,7 @@ export const Palabra: React.FC<OP> = ({ t, a, b, kan, rom, sig, lado }) => {
     <Tablero style={{ opacity: ent, padding: "26px 30px" }}>
       <Flap t={t} at={a + 0.2} txt={kan} H={H1} fl={0.03} out={out} />
       {rom && <div style={{ marginTop: 16 }}><Flap t={t} at={a + 0.32} txt={rom} H={H2} gap={0.015} fl={0.025} col="#E9C46A" out={out} /></div>}
-      {sig && <div style={{ ...cap, fontSize: 36, color: "#FFFCF5", marginTop: 18, opacity: eo(t, a + 0.9, 0.3) * (1 - e(t, out, out + 0.15)), maxWidth: av ? 560 : 1400 }}>{sig}</div>}
+      {sig && <div style={{ ...cap, fontSize: 46, color: "#FFFCF5", marginTop: 18, opacity: eo(t, a + 0.9, 0.3) * (1 - e(t, out, out + 0.15)), maxWidth: av ? 560 : 1400 }}>{sig}</div>}
     </Tablero>
   </div>;
 };
@@ -284,7 +284,7 @@ export const Cta: React.FC<OP> = ({ t, a, b, txt }) => {
           <div style={{ display: "flex", gap: 40, marginTop: 18, fontFamily: SANS, fontWeight: 500, fontSize: 40, color: "#555", opacity: bot }}>
             <span style={{ display: "flex", alignItems: "center", gap: 10 }}><svg width="48" height="44" viewBox="0 0 30 28" style={{ transform: `scale(${1 + 0.35 * Math.exp(-8 * Math.max(0, t - a - 2.0)) * (t > a + 2 ? 1 : 0)})` }}><path d="M15 26 C4 18 1 12 2 8 C3 3 9 1 15 7 C21 1 27 3 28 8 C29 12 26 18 15 26 Z" fill={`rgba(179,38,30,${lleno})`} stroke={C.hanko} strokeWidth={2} /></svg><span style={{ fontVariantNumeric: "tabular-nums" }}>{t < a + 2.0 ? 247 : 248}</span></span>
             <span style={{ padding: "6px 22px", borderRadius: 24, background: "#f0f0f0", color: "#222", transform: `scale(${1 + 0.06 * Math.sin(Math.max(0, t - a - 2) * 4)})` }}>Reply</span>
-            <span style={{ padding: "6px 26px", borderRadius: 24, background: "#CC0000", color: "#fff", fontWeight: 600, opacity: eo(t, a + 1.7, 0.3) }}>Subscribe</span>
+            <span style={{ padding: "8px 34px", borderRadius: 28, background: "#CC0000", color: "#fff", fontWeight: 600, fontSize: 48, opacity: eo(t, a + 1.7, 0.3) }}>Subscribe</span>
           </div>
         </div>
         <div style={{ position: "absolute", left: 120, bottom: -26, width: 0, height: 0, borderLeft: "26px solid transparent", borderRight: "26px solid transparent", borderTop: "28px solid #FFFFFF" }} />
@@ -303,7 +303,7 @@ export const Fin: React.FC<OP> = ({ t, a, sub }) => {
         <div style={{ ...papel, boxShadow: "none", width: 1060, height: 460, borderTop: `46px solid ${C.ai}`, padding: "40px 60px", position: "relative" }}>
           <div style={{ ...cap, fontSize: 34, color: C.nezumi }}>boarding pass · final call</div>
           <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 118, color: C.sumi, lineHeight: 1.05, marginTop: 24 }}><Palabras t={t} at={a + 0.7} txt={String(sub || "fly safe, my friends")} gap={0.12} /></div>
-          <div style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 58, color: C.sumi, marginTop: 26, opacity: eo(t, a + 1.2, 0.4) }}>Linda · retired flight attendant</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 500, fontSize: 66, color: C.sumi, marginTop: 22, opacity: eo(t, a + 1.2, 0.4) }}>Linda · retired flight attendant</div>
         </div>
         <div style={{ ...papel, boxShadow: "none", width: 330, height: 460, borderTop: `46px solid ${C.hanko}`, borderLeft: `4px dashed ${C.nezumi}`, padding: "40px 36px", position: "relative" }}>
           <div style={{ ...cap, fontSize: 22, color: C.nezumi }}>years</div>

@@ -13,7 +13,7 @@ export const SANS = loadSans("normal", { weights: ["300", "400", "500"], subsets
 export const HAND = loadHand("normal", { weights: ["500", "700"], subsets: ["latin"] }).fontFamily;
 
 type Data = Record<string, any> & {
-  slug: string; end: number; fr: number[]; items: { n: number; t: string; sub?: string; f: string }[]; bg?: string; mapa?: string;
+  slug: string; end: number; fr: number[]; items: { n: number; t: string; sub?: string; f: string; lado?: string }[]; bg?: string; mapa?: string;
   shots: { s: number; e: number; k: string; f?: string; sc?: string; arg?: string; tr?: string; len?: number; cz?: number; off?: number; rate?: number; mods?: { a: number; b: number; k: string; f?: string }[] }[];
   ov: ({ k: string; a: number; b: number } & Record<string, unknown>)[];
 };
