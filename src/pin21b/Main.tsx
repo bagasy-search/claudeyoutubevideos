@@ -68,12 +68,17 @@ const Overlay: React.FC<{ o: any }> = ({ o }) => {
   }
 };
 
+// tomas donde Veo quemó subtítulos inventados (subdet.py + hoja): zoom 1,3 desde arriba los saca del cuadro
+const SUBT = new Set(["t112", "t043", "t130", "t150", "t084", "t061", "t023", "t156", "t102", "t045", "t172", "t151", "t145"]);
+
 export const MainPin21b: React.FC = () => (
   <AbsoluteFill style={{ background: P.C.ink }}>
     {/* capa 1: avatar (ventanas visibles) */}
     {AVATAR.map((a, i) => (
       <Sequence key={"a" + i} from={a.from} durationInFrames={a.dur} premountFor={45}>
-        {a.veo ? <Q.TomaVeo src={a.src} desde={a.desde} seed={i} dur={a.dur} texto={a.texto} picado={a.picado} /> : <Q.AvatarFramed src={a.src} seed={i} dur={a.dur} mods={a.mods} />}
+        {a.veo ? (SUBT.has(String(a.src).slice(-8, -4))
+          ? <AbsoluteFill style={{ transform: "scale(1.3)", transformOrigin: "50% 0%" }}><Q.TomaVeo src={a.src} desde={a.desde} seed={i} dur={a.dur} texto={a.texto} picado={a.picado} /></AbsoluteFill>
+          : <Q.TomaVeo src={a.src} desde={a.desde} seed={i} dur={a.dur} texto={a.texto} picado={a.picado} />) : <Q.AvatarFramed src={a.src} seed={i} dur={a.dur} mods={a.mods} />}
       </Sequence>
     ))}
     {/* capa 2: material (clips reales, fotos, componentes) */}
