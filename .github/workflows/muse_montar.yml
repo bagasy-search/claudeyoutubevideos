@@ -1,0 +1,40 @@
+name: muse-montar
+# Montaje de un video de Muse: baja el paquete (clips elegidos + plan de ffmpeg) del release src-<tag>,
+# encodea segmentos y video final, y deja el mp4 + grilla + capitulos + reporte en el release <tag>.
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "tag de salida (slug con guiones)"
+        required: true
+permissions:
+  contents: write
+jobs:
+  montar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: ${{ inputs.tag }}
+    steps:
+      - name: ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          ffmpeg -version | head -1
+      - name: bajar paquete
+        run: |
+          mkdir w && cd w
+          gh release download "src-$TAG" -R "$GITHUB_REPOSITORY" -p "pack.zip"
+          unzip -q pack.zip && rm pack.zip
+          ls | head -20
+      - name: montar
+        run: cd w && python3 farm_montar.py
+      - name: subir
+        run: |
+          cd w/out
+          mp4=$(ls *.mp4 | head -1)
+          mv "$mp4" "_up_$TAG.mp4"
+          gh release view "$TAG" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create "$TAG" -R "$GITHUB_REPOSITORY" -t "$TAG" -n "render"
+          gh release upload "$TAG" "_up_$TAG.mp4" grilla.jpg capitulos.json reporte.txt -R "$GITHUB_REPOSITORY" --clobber
+          gh release delete "src-$TAG" -R "$GITHUB_REPOSITORY" --yes --cleanup-tag || true
