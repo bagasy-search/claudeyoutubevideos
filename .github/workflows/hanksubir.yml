@@ -1,0 +1,40 @@
+# Subida diaria programada de los shorts de la red (calendario 1-2-3). Corre sola dos veces por día; no depende de ninguna PC.
+# Baja el script y el estado del release "hank-subir", sube lo que se publica en los próximos 3 días y guarda el estado.
+name: hanksubir
+on:
+  schedule:
+    - cron: '25 8 * * *'    # después de que se renueva el cupo diario de YouTube (08:00 UTC)
+    - cron: '25 20 * * *'   # segunda pasada por si algún canal quedó cortado
+  workflow_dispatch:
+    inputs:
+      seco:
+        description: 'poner 1 para simular sin subir'
+        required: false
+        default: ''
+permissions:
+  contents: write
+concurrency:
+  group: hanksubir
+  cancel-in-progress: false
+jobs:
+  subir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+      HANK_SB_URL: ${{ secrets.HANK_SB_URL }}
+      HANK_SB_KEY: ${{ secrets.HANK_SB_KEY }}
+      HORIZONTE: '3'
+      SECO: ${{ github.event.inputs.seco }}
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: bajar script y estado
+        run: gh release download hank-subir -R "$GITHUB_REPOSITORY" -p subir_nube.mjs -p datos.json -p subidos.json
+      - name: subir lo que toca
+        run: node subir_nube.mjs
+      - name: guardar estado
+        if: always()
+        run: |
+          if [ "$SECO" != "1" ] && [ -s subidos.json ]; then gh release upload hank-subir subidos.json -R "$GITHUB_REPOSITORY" --clobber; fi
