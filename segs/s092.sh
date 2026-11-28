@@ -1,0 +1,1 @@
+ffmpeg -v error -y -i in/c092_974050ct.mp4 -filter_complex '[0:v]trim=1.56:8.877683,setpts=PTS-STARTPTS,scale=1920:1080:flags=lanczos,fps=30,setsar=1[v0];[0:a]atrim=1.56:8.877683,asetpts=PTS-STARTPTS,aresample=48000[a]' -map '[v0]' -map '[a]' -t 7.317682999999999 -c:v libx264 -preset veryfast -crf 19 -pix_fmt yuv420p -c:a aac -b:a 256k -ar 48000 -ac 2 seg/s092.mp4
