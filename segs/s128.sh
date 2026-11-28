@@ -1,0 +1,1 @@
+ffmpeg -v error -y -i in/c128_276f881t.mp4 -filter_complex '[0:v]trim=0.12:9.818999999999999,setpts=PTS-STARTPTS,scale=1920:1080:flags=lanczos,fps=30,setsar=1[v0];[0:a]atrim=0.12:9.818999999999999,asetpts=PTS-STARTPTS,aresample=48000[a]' -map '[v0]' -map '[a]' -t 9.699 -c:v libx264 -preset veryfast -crf 19 -pix_fmt yuv420p -c:a aac -b:a 256k -ar 48000 -ac 2 seg/s128.mp4

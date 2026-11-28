@@ -1,0 +1,1 @@
+ffmpeg -v error -y -i in/c158_8c228fdt.mp4 -filter_complex '[0:v]trim=0.12:8.9,setpts=PTS-STARTPTS,scale=1920:1080:flags=lanczos,fps=30,setsar=1[v0];[0:a]atrim=0.12:8.9,asetpts=PTS-STARTPTS,aresample=48000[a]' -map '[v0]' -map '[a]' -t 8.780000000000001 -c:v libx264 -preset veryfast -crf 19 -pix_fmt yuv420p -c:a aac -b:a 256k -ar 48000 -ac 2 seg/s158.mp4
